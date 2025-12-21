@@ -93,10 +93,19 @@ export const useStore = create<AppState>()(
       },
 
       setSelectedState: (state: string) => {
-        // Clear all current tests when switching states
+        // Clear ALL data when switching states
         set({
           selectedState: state,
           currentTests: {},
+          completedTests: [],
+          testAttempts: [],
+          training: {
+            questionsAnswered: [],
+            correctCount: 0,
+            incorrectCount: 0,
+            currentStreak: 0,
+            bestStreak: 0,
+          },
         });
         // Save to Firestore
         get().saveToFirestore();

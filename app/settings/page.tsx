@@ -4,8 +4,9 @@ import { useState, useRef, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { ArrowLeft, Upload, Loader2, User } from "lucide-react";
+import { ArrowLeft, Upload, Loader2, User, Link as LinkIcon } from "lucide-react";
 import Link from "next/link";
 import { useAuth } from "@/contexts/AuthContext";
 import { useStore } from "@/store/useStore";
@@ -22,6 +23,8 @@ export default function SettingsPage() {
 
   const [uploading, setUploading] = useState(false);
   const [loadingGooglePhoto, setLoadingGooglePhoto] = useState(false);
+  const [showUrlInput, setShowUrlInput] = useState(false);
+  const [urlInput, setUrlInput] = useState("");
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   // Redirect if not logged in
@@ -58,9 +61,10 @@ export default function SettingsPage() {
 
       // Update store
       setPhotoURL(downloadURL);
-    } catch (error) {
+      alert("Photo uploaded successfully!");
+    } catch (error: any) {
       console.error("Error uploading photo:", error);
-      alert("Failed to upload photo. Please try again.");
+      alert(`Failed to upload photo: ${error.message || "Unknown error"}. Please try using your Google photo instead.`);
     } finally {
       setUploading(false);
     }
@@ -80,12 +84,25 @@ export default function SettingsPage() {
     try {
       // Use the Google photo URL directly
       setPhotoURL(googlePhotoURL);
+      alert("Google photo set successfully!");
     } catch (error) {
       console.error("Error using Google photo:", error);
       alert("Failed to use Google photo. Please try again.");
     } finally {
       setLoadingGooglePhoto(false);
     }
+  };
+
+  const handleUrlSubmit = () => {
+    if (!urlInput.trim()) {
+      alert("Please enter a valid image URL");
+      return;
+    }
+
+    setPhotoURL(urlInput.trim());
+    setUrlInput("");
+    setShowUrlInput(false);
+    alert("Photo URL set successfully!");
   };
 
   const displayPhotoURL = photoURL || user?.photoURL;
@@ -180,10 +197,46 @@ export default function SettingsPage() {
                     )}
                   </Button>
                 )}
+
+                {/* Use Image URL */}
+                {!showUrlInput ? (
+                  <Button
+                    onClick={() => setShowUrlInput(true)}
+                    className="w-full"
+                    variant="outline"
+                  >
+                    <LinkIcon className="h-4 w-4 mr-2" />
+                    Use Image URL
+                  </Button>
+                ) : (
+                  <div className="space-y-2">
+                    <Input
+                      type="url"
+                      placeholder="https://example.com/photo.jpg"
+                      value={urlInput}
+                      onChange={(e) => setUrlInput(e.target.value)}
+                      onKeyDown={(e) => e.key === "Enter" && handleUrlSubmit()}
+                    />
+                    <div className="flex gap-2">
+                      <Button onClick={handleUrlSubmit} className="flex-1">
+                        Set Photo
+                      </Button>
+                      <Button
+                        onClick={() => {
+                          setShowUrlInput(false);
+                          setUrlInput("");
+                        }}
+                        variant="outline"
+                      >
+                        Cancel
+                      </Button>
+                    </div>
+                  </div>
+                )}
               </div>
 
               <div className="text-xs text-gray-500 text-center">
-                Supported formats: JPG, PNG, GIF (max 5MB)
+                Upload: JPG, PNG, GIF (max 5MB) • URL: Any public image link
               </div>
             </div>
           </CardContent>

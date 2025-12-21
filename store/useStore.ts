@@ -60,6 +60,7 @@ interface AppState {
   setPhotoURL: (photoURL: string | null) => void;
   loadUserData: (userId: string) => Promise<void>;
   saveToFirestore: () => Promise<void>;
+  resetAllData: () => void;
 }
 
 export const useStore = create<AppState>()(
@@ -390,6 +391,22 @@ export const useStore = create<AppState>()(
         } catch (error) {
           console.error('Error saving to Firestore:', error);
         }
+      },
+
+      resetAllData: () => {
+        set({
+          currentTests: {},
+          completedTests: [],
+          testAttempts: [],
+          training: {
+            questionsAnswered: [],
+            correctCount: 0,
+            incorrectCount: 0,
+            currentStreak: 0,
+            bestStreak: 0,
+          },
+        });
+        get().saveToFirestore();
       },
     }),
     {

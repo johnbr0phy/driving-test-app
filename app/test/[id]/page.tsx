@@ -58,6 +58,19 @@ export default function TestPage() {
         // Resume from saved state
         setQuestions(savedTest.questions);
         setAnswers(savedTest.answers);
+
+        // Find the first unanswered question and resume from there
+        const firstUnansweredIndex = savedTest.questions.findIndex(
+          (_, index) => !savedTest.answers[index]
+        );
+
+        // If we found an unanswered question, start there; otherwise start at the beginning
+        if (firstUnansweredIndex !== -1) {
+          setCurrentQuestionIndex(firstUnansweredIndex);
+        } else {
+          // All questions answered, stay at last question
+          setCurrentQuestionIndex(savedTest.questions.length - 1);
+        }
       } else {
         // Generate new test
         const testQuestions = generateTest(testId, state);

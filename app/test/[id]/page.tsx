@@ -6,7 +6,6 @@ import { QuestionCard } from "@/components/QuestionCard";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { Card, CardContent } from "@/components/ui/card";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 import { generateTest } from "@/lib/testGenerator";
 import { Question } from "@/types";
 import { useStore } from "@/store/useStore";
@@ -72,24 +71,24 @@ export default function TestPage() {
   const progress = totalQuestions > 0 ? (answeredCount / totalQuestions) * 100 : 0;
 
   const handleAnswerChange = (answer: string) => {
+    // Don't allow changing previous answers
+    if (answers[currentQuestionIndex]) {
+      return;
+    }
+
     setAnswers((prev) => ({
       ...prev,
       [currentQuestionIndex]: answer,
     }));
     // Save to store
     setAnswer(currentQuestionIndex, answer);
-  };
 
-  const handlePrevious = () => {
-    if (currentQuestionIndex > 0) {
-      setCurrentQuestionIndex(currentQuestionIndex - 1);
-    }
-  };
-
-  const handleNext = () => {
-    if (currentQuestionIndex < totalQuestions - 1) {
-      setCurrentQuestionIndex(currentQuestionIndex + 1);
-    }
+    // Auto-advance to next question after brief delay
+    setTimeout(() => {
+      if (currentQuestionIndex < totalQuestions - 1) {
+        setCurrentQuestionIndex(currentQuestionIndex + 1);
+      }
+    }, 300);
   };
 
   const handleSubmit = () => {
@@ -172,58 +171,41 @@ export default function TestPage() {
           />
         </div>
 
-        {/* Navigation */}
-        <div className="flex items-center justify-between">
-          <Button
-            variant="outline"
-            onClick={handlePrevious}
-            disabled={currentQuestionIndex === 0}
-          >
-            <ChevronLeft className="mr-2 h-4 w-4" />
-            Previous
-          </Button>
-
-          <div className="text-sm text-gray-600">
-            Question {currentQuestionIndex + 1} of {totalQuestions}
-          </div>
-
-          {currentQuestionIndex < totalQuestions - 1 ? (
-            <Button onClick={handleNext}>
-              Next
-              <ChevronRight className="ml-2 h-4 w-4" />
-            </Button>
-          ) : (
+        {/* Navigation - Forward Only */}
+        <div className="flex items-center justify-center mt-6">
+          {answeredCount === totalQuestions && (
             <Button
               onClick={handleSubmit}
-              disabled={!canSubmit}
-              className="bg-green-600 hover:bg-green-700"
+              className="bg-green-600 hover:bg-green-700 text-lg px-8 py-6"
             >
               Submit Test
             </Button>
           )}
         </div>
 
-        {/* Question Grid (for quick navigation) */}
+        {/* Progress Overview - View Only */}
         <div className="mt-8">
-          <div className="text-sm font-semibold mb-3">Quick Navigation</div>
+          <div className="text-sm font-semibold mb-3">Progress Overview</div>
           <div className="grid grid-cols-10 gap-2">
             {questions.map((_, index) => (
-              <button
+              <div
                 key={index}
-                onClick={() => setCurrentQuestionIndex(index)}
                 className={`
-                  aspect-square rounded-lg border-2 text-sm font-semibold transition-colors
+                  aspect-square rounded-lg border-2 text-sm font-semibold transition-colors flex items-center justify-center
                   ${currentQuestionIndex === index
                     ? "border-blue-500 bg-blue-500 text-white"
                     : answers[index]
                     ? "border-green-500 bg-green-50 text-green-700"
-                    : "border-gray-300 bg-white text-gray-700 hover:border-gray-400"
+                    : "border-gray-300 bg-white text-gray-400"
                   }
                 `}
               >
                 {index + 1}
-              </button>
+              </div>
             ))}
+          </div>
+          <div className="text-xs text-gray-500 mt-2 text-center">
+            Select your answer to automatically advance to the next question
           </div>
         </div>
       </div>

@@ -47,7 +47,7 @@ export function Header() {
                   <AvatarFallback className="text-lg">😊</AvatarFallback>
                 </Avatar>
               </Link>
-              <Button variant="outline" onClick={handleLogout} className="border-white text-white hover:bg-orange-700">
+              <Button onClick={handleLogout} className="bg-white text-black hover:bg-gray-100 border-2 border-gray-300">
                 Log Out
               </Button>
             </>

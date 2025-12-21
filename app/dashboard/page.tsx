@@ -66,6 +66,14 @@ export default function DashboardPage() {
     return 0;
   };
 
+  const getLockMessage = (testNumber: number): string => {
+    if (testNumber === 1) return ""; // Test 1 is never locked
+    if (testNumber === 2) return "Score 40/50 on Test 1.";
+    if (testNumber === 3) return "Score 40/50 on Test 1 and 2.";
+    if (testNumber === 4) return "Score 40/50 on Test 1, 2 and 3.";
+    return "Score 40+ on previous tests to unlock";
+  };
+
   return (
     <div className="min-h-screen bg-gray-50">
       <div className="container mx-auto px-4 py-8 max-w-6xl">
@@ -154,6 +162,7 @@ export default function DashboardPage() {
                   attemptCount={attemptStats?.attemptCount}
                   averageScore={averageScore}
                   locked={locked}
+                  lockMessage={getLockMessage(testNumber)}
                   expanded={expandedTest === testNumber}
                   onToggle={() => setExpandedTest(expandedTest === testNumber ? null : testNumber)}
                 />

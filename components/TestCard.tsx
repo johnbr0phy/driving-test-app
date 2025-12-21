@@ -16,11 +16,12 @@ interface TestCardProps {
   attemptCount?: number;
   averageScore?: number;
   locked?: boolean;
+  lockMessage?: string;
   expanded?: boolean;
   onToggle?: () => void;
 }
 
-export function TestCard({ testNumber, status, score, totalQuestions = 50, progress = 0, firstScore, bestScore, attemptCount, averageScore, locked = false, expanded = false, onToggle }: TestCardProps) {
+export function TestCard({ testNumber, status, score, totalQuestions = 50, progress = 0, firstScore, bestScore, attemptCount, averageScore, locked = false, lockMessage, expanded = false, onToggle }: TestCardProps) {
   // Calculate best percentage for badge logic
   const bestPercentage = bestScore ? Math.round((bestScore / totalQuestions) * 100) : 0;
 
@@ -153,7 +154,7 @@ export function TestCard({ testNumber, status, score, totalQuestions = 50, progr
           <div className="text-center py-3 px-4 bg-gray-50 rounded-lg border border-gray-200">
             <Lock className="h-5 w-5 text-gray-400 mx-auto mb-2" />
             <p className="text-sm text-gray-600 font-medium">
-              Score 40+ on previous tests to unlock
+              {lockMessage || "Score 40+ on previous tests to unlock"}
             </p>
           </div>
         ) : (

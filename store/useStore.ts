@@ -54,7 +54,9 @@ interface AppState {
 
   // Firebase sync
   userId: string | null;
+  photoURL: string | null;
   setUserId: (userId: string | null) => void;
+  setPhotoURL: (photoURL: string | null) => void;
   loadUserData: (userId: string) => Promise<void>;
   saveToFirestore: () => Promise<void>;
 }
@@ -75,10 +77,16 @@ export const useStore = create<AppState>()(
         bestStreak: 0,
       },
       userId: null,
+      photoURL: null,
 
       // Actions
       setUserId: (userId: string | null) => {
         set({ userId });
+      },
+
+      setPhotoURL: (photoURL: string | null) => {
+        set({ photoURL });
+        get().saveToFirestore();
       },
 
       setSelectedState: (state: string) => {
@@ -311,6 +319,7 @@ export const useStore = create<AppState>()(
                 currentStreak: 0,
                 bestStreak: 0,
               },
+              photoURL: data.photoURL || null,
               userId,
             });
           } else {
@@ -323,7 +332,7 @@ export const useStore = create<AppState>()(
       },
 
       saveToFirestore: async () => {
-        const { userId, selectedState, currentTests, completedTests, testAttempts, training } = get();
+        const { userId, selectedState, currentTests, completedTests, testAttempts, training, photoURL } = get();
         if (!userId) return; // Don't save if no user is logged in
 
         try {
@@ -339,6 +348,7 @@ export const useStore = create<AppState>()(
 
           await setDoc(doc(db, 'users', userId), {
             selectedState,
+            photoURL,
             currentTests: currentTestsForFirestore,
             completedTests: completedTests.map(test => ({
               ...test,

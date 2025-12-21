@@ -40,6 +40,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [loading, setLoading] = useState(true);
   const loadUserData = useStore((state) => state.loadUserData);
   const setUserId = useStore((state) => state.setUserId);
+  const setPhotoURL = useStore((state) => state.setPhotoURL);
+  const photoURL = useStore((state) => state.photoURL);
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, async (user) => {
@@ -47,6 +49,11 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       if (user) {
         // Load user data from Firestore
         await loadUserData(user.uid);
+
+        // If user has a Google photo and no custom photo is set, use Google photo
+        if (user.photoURL && !photoURL) {
+          setPhotoURL(user.photoURL);
+        }
       } else {
         // Clear user data when logged out
         setUserId(null);
@@ -55,7 +62,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     });
 
     return unsubscribe;
-  }, [loadUserData, setUserId]);
+  }, [loadUserData, setUserId, setPhotoURL, photoURL]);
 
   const signup = async (email: string, password: string) => {
     await createUserWithEmailAndPassword(auth, email, password);

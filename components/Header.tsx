@@ -3,16 +3,22 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { useAuth } from "@/contexts/AuthContext";
+import { useStore } from "@/store/useStore";
 
 export function Header() {
   const { user, logout } = useAuth();
   const router = useRouter();
+  const photoURL = useStore((state) => state.photoURL);
 
   const handleLogout = async () => {
     await logout();
     router.push("/");
   };
+
+  const displayPhotoURL = photoURL || user?.photoURL;
+  const initials = user?.email?.substring(0, 2).toUpperCase() || "U";
 
   return (
     <header className="border-b bg-white">
@@ -24,7 +30,12 @@ export function Header() {
         <div className="flex items-center gap-4">
           {user ? (
             <>
-              <span className="text-sm text-gray-600">{user.email}</span>
+              <Link href="/settings">
+                <Avatar className="h-9 w-9 cursor-pointer hover:opacity-80 transition-opacity">
+                  <AvatarImage src={displayPhotoURL || undefined} alt="Profile" />
+                  <AvatarFallback className="text-sm">{initials}</AvatarFallback>
+                </Avatar>
+              </Link>
               <Button variant="outline" onClick={handleLogout}>
                 Log Out
               </Button>

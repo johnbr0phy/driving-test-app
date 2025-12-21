@@ -3,7 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
-import { CheckCircle2, Circle, PlayCircle, Trophy, Target, Lock } from "lucide-react";
+import { CheckCircle2, Circle, PlayCircle, Trophy, Target, Lock, ChevronDown, ChevronUp } from "lucide-react";
 
 interface TestCardProps {
   testNumber: number;
@@ -16,9 +16,11 @@ interface TestCardProps {
   attemptCount?: number;
   averageScore?: number;
   locked?: boolean;
+  expanded?: boolean;
+  onToggle?: () => void;
 }
 
-export function TestCard({ testNumber, status, score, totalQuestions = 50, progress = 0, firstScore, bestScore, attemptCount, averageScore, locked = false }: TestCardProps) {
+export function TestCard({ testNumber, status, score, totalQuestions = 50, progress = 0, firstScore, bestScore, attemptCount, averageScore, locked = false, expanded = false, onToggle }: TestCardProps) {
   // Calculate best percentage for badge logic
   const bestPercentage = bestScore ? Math.round((bestScore / totalQuestions) * 100) : 0;
 
@@ -81,19 +83,29 @@ export function TestCard({ testNumber, status, score, totalQuestions = 50, progr
 
   return (
     <Card>
-      <CardHeader>
+      <CardHeader
+        className="cursor-pointer hover:bg-gray-50 transition-colors"
+        onClick={onToggle}
+      >
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
             {getStatusIcon()}
             <div>
               <CardTitle>Test {testNumber}</CardTitle>
-              <CardDescription>{totalQuestions} questions</CardDescription>
             </div>
           </div>
-          {getStatusBadge()}
+          <div className="flex items-center gap-2">
+            {getStatusBadge()}
+            {expanded ? (
+              <ChevronUp className="h-5 w-5 text-gray-400" />
+            ) : (
+              <ChevronDown className="h-5 w-5 text-gray-400" />
+            )}
+          </div>
         </div>
       </CardHeader>
-      <CardContent>
+      {expanded && (
+        <CardContent>
         {status === "completed" && (
           <div className="mb-4">
             {bestScore !== undefined && attemptCount !== undefined && averageScore !== undefined ? (
@@ -151,7 +163,8 @@ export function TestCard({ testNumber, status, score, totalQuestions = 50, progr
             </Button>
           </Link>
         )}
-      </CardContent>
+        </CardContent>
+      )}
     </Card>
   );
 }

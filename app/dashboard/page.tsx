@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { TestCard } from "@/components/TestCard";
 import { Button } from "@/components/ui/button";
@@ -20,6 +20,8 @@ export default function DashboardPage() {
   const getTestAverageScore = useStore((state) => state.getTestAverageScore);
   const getCurrentTest = useStore((state) => state.getCurrentTest);
   const isTestUnlocked = useStore((state) => state.isTestUnlocked);
+
+  const [expandedTest, setExpandedTest] = useState<number | null>(null);
 
   // Redirect to onboarding if no state selected
   useEffect(() => {
@@ -76,7 +78,7 @@ export default function DashboardPage() {
         {/* Practice Tests */}
         <div className="mb-6">
           <h2 className="text-2xl font-bold mb-4">Practice Tests</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="space-y-3">
             {[1, 2, 3, 4].map((testNumber) => {
               const status = getTestStatus(testNumber);
               const session = getTestSession(testNumber);
@@ -96,6 +98,8 @@ export default function DashboardPage() {
                   attemptCount={attemptStats?.attemptCount}
                   averageScore={averageScore}
                   locked={locked}
+                  expanded={expandedTest === testNumber}
+                  onToggle={() => setExpandedTest(expandedTest === testNumber ? null : testNumber)}
                 />
               );
             })}

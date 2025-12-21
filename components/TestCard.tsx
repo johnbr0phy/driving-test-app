@@ -11,9 +11,12 @@ interface TestCardProps {
   score?: number;
   totalQuestions?: number;
   progress?: number;
+  firstScore?: number;
+  bestScore?: number;
+  attemptCount?: number;
 }
 
-export function TestCard({ testNumber, status, score, totalQuestions = 50, progress = 0 }: TestCardProps) {
+export function TestCard({ testNumber, status, score, totalQuestions = 50, progress = 0, firstScore, bestScore, attemptCount }: TestCardProps) {
   const getStatusBadge = () => {
     switch (status) {
       case "completed":
@@ -39,7 +42,7 @@ export function TestCard({ testNumber, status, score, totalQuestions = 50, progr
   const getButtonText = () => {
     switch (status) {
       case "completed":
-        return "Review Test";
+        return attemptCount && attemptCount > 0 ? "Retake Test" : "Review Test";
       case "in-progress":
         return "Continue Test";
       default:
@@ -62,14 +65,38 @@ export function TestCard({ testNumber, status, score, totalQuestions = 50, progr
         </div>
       </CardHeader>
       <CardContent>
-        {status === "completed" && score !== undefined && (
+        {status === "completed" && (
           <div className="mb-4">
-            <div className="text-2xl font-bold text-green-600 mb-1">
-              {score}/{totalQuestions}
-            </div>
-            <div className="text-sm text-gray-600">
-              {Math.round((score / totalQuestions) * 100)}% correct
-            </div>
+            {bestScore !== undefined && firstScore !== undefined ? (
+              <div className="space-y-2">
+                <div className="flex justify-between items-center">
+                  <span className="text-sm text-gray-600">Best Score:</span>
+                  <div className="text-xl font-bold text-green-600">
+                    {bestScore}/{totalQuestions}
+                  </div>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-sm text-gray-600">First Score:</span>
+                  <div className="text-lg text-gray-700">
+                    {firstScore}/{totalQuestions}
+                  </div>
+                </div>
+                {attemptCount && attemptCount > 1 && (
+                  <div className="text-xs text-gray-500 text-center mt-1">
+                    {attemptCount} attempts
+                  </div>
+                )}
+              </div>
+            ) : score !== undefined && (
+              <div>
+                <div className="text-2xl font-bold text-green-600 mb-1">
+                  {score}/{totalQuestions}
+                </div>
+                <div className="text-sm text-gray-600">
+                  {Math.round((score / totalQuestions) * 100)}% correct
+                </div>
+              </div>
+            )}
           </div>
         )}
 

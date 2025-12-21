@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 import { persist, createJSONStorage } from 'zustand/middleware';
-import { Question, TestSession, UserAnswer } from '@/types';
+import { Question, TestSession, UserAnswer, TestAttemptStats } from '@/types';
 import { doc, setDoc, getDoc } from 'firebase/firestore';
 import { db } from '@/lib/firebase';
 
@@ -20,10 +20,14 @@ interface AppState {
   setAnswer: (questionIndex: number, answer: string) => void;
   clearCurrentTest: () => void;
 
-  // Completed tests
+  // Completed tests (full history)
   completedTests: TestSession[];
   completeTest: (testId: number, score: number, questions: Question[], answers: { [key: number]: string }) => void;
   getTestSession: (testId: number) => TestSession | undefined;
+
+  // Test attempt statistics (first/best scores)
+  testAttempts: TestAttemptStats[];
+  getTestAttemptStats: (testId: number) => TestAttemptStats | undefined;
 
   // Progress stats
   getProgress: () => {
@@ -53,6 +57,7 @@ export const useStore = create<AppState>()(
         startedAt: null,
       },
       completedTests: [],
+      testAttempts: [],
       userId: null,
 
       // Actions
@@ -133,14 +138,39 @@ export const useStore = create<AppState>()(
           totalQuestions: questions.length,
         };
 
+        // Update testAttempts stats
+        const existingAttempt = get().testAttempts.find(
+          (a) => a.testNumber === testId && a.state === currentState
+        );
+
+        const updatedTestAttempts = existingAttempt
+          ? // Update existing attempt
+            get().testAttempts.map((a) =>
+              a.testNumber === testId && a.state === currentState
+                ? {
+                    ...a,
+                    attemptCount: a.attemptCount + 1,
+                    bestScore: Math.max(a.bestScore, score),
+                    lastAttemptDate: new Date(),
+                  }
+                : a
+            )
+          : // Create new attempt entry
+            [
+              ...get().testAttempts,
+              {
+                testNumber: testId,
+                state: currentState,
+                attemptCount: 1,
+                firstScore: score,
+                bestScore: score,
+                lastAttemptDate: new Date(),
+              },
+            ];
+
         set((state) => ({
-          completedTests: [
-            // Remove previous attempt of THIS test in THIS state only
-            ...state.completedTests.filter(
-              (t) => !(t.testNumber === testId && t.state === currentState)
-            ),
-            session,
-          ],
+          completedTests: [...state.completedTests, session],
+          testAttempts: updatedTestAttempts,
         }));
 
         // Clear current test
@@ -150,17 +180,29 @@ export const useStore = create<AppState>()(
 
       getTestSession: (testId: number) => {
         const { completedTests, selectedState } = get();
-        // Find test session for the current state
-        return completedTests.find(
+        // Find most recent test session for the current state
+        const sessions = completedTests.filter(
           (t) => t.testNumber === testId && t.state === selectedState
+        );
+        // Return the most recent session
+        return sessions.length > 0 ? sessions[sessions.length - 1] : undefined;
+      },
+
+      getTestAttemptStats: (testId: number) => {
+        const { testAttempts, selectedState } = get();
+        return testAttempts.find(
+          (a) => a.testNumber === testId && a.state === selectedState
         );
       },
 
       getProgress: () => {
-        const { completedTests, selectedState } = get();
-        // Filter tests by current state only
+        const { completedTests, testAttempts, selectedState } = get();
+        // Filter tests and attempts by current state only
         const stateTests = completedTests.filter((t) => t.state === selectedState);
-        const testsCompleted = stateTests.length;
+        const stateAttempts = testAttempts.filter((a) => a.state === selectedState);
+
+        // Count unique tests completed (not total attempts)
+        const testsCompleted = stateAttempts.length;
 
         if (testsCompleted === 0) {
           return {
@@ -172,17 +214,22 @@ export const useStore = create<AppState>()(
           };
         }
 
+        // Count all attempts for questions answered and accuracy
         const totalCorrect = stateTests.reduce((sum, test) => sum + (test.score || 0), 0);
         const questionsAnswered = stateTests.reduce((sum, test) => sum + test.totalQuestions, 0);
         const accuracy = questionsAnswered > 0 ? (totalCorrect / questionsAnswered) * 100 : 0;
-        const averageScore = testsCompleted > 0 ? totalCorrect / testsCompleted : 0;
+
+        // Average best score across unique tests
+        const averageBestScore = stateAttempts.length > 0
+          ? stateAttempts.reduce((sum, a) => sum + a.bestScore, 0) / stateAttempts.length
+          : 0;
 
         return {
           testsCompleted,
           questionsAnswered,
           totalCorrect,
           accuracy: Math.round(accuracy),
-          averageScore: Math.round(averageScore * 10) / 10,
+          averageScore: Math.round(averageBestScore * 10) / 10,
         };
       },
 
@@ -201,6 +248,7 @@ export const useStore = create<AppState>()(
                 startedAt: null,
               },
               completedTests: data.completedTests || [],
+              testAttempts: data.testAttempts || [],
               userId,
             });
           } else {
@@ -213,7 +261,7 @@ export const useStore = create<AppState>()(
       },
 
       saveToFirestore: async () => {
-        const { userId, selectedState, currentTest, completedTests } = get();
+        const { userId, selectedState, currentTest, completedTests, testAttempts } = get();
         if (!userId) return; // Don't save if no user is logged in
 
         try {
@@ -232,6 +280,10 @@ export const useStore = create<AppState>()(
                 ...a,
                 answeredAt: a.answeredAt instanceof Date ? a.answeredAt.toISOString() : a.answeredAt,
               })),
+            })),
+            testAttempts: testAttempts.map(attempt => ({
+              ...attempt,
+              lastAttemptDate: attempt.lastAttemptDate instanceof Date ? attempt.lastAttemptDate.toISOString() : attempt.lastAttemptDate,
             })),
             lastUpdated: new Date().toISOString(),
           });

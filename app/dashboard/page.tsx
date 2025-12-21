@@ -17,6 +17,7 @@ export default function DashboardPage() {
   const selectedState = useStore((state) => state.selectedState);
   const getProgress = useStore((state) => state.getProgress);
   const getTestSession = useStore((state) => state.getTestSession);
+  const getTestAttemptStats = useStore((state) => state.getTestAttemptStats);
   const currentTest = useStore((state) => state.currentTest);
 
   // Redirect to onboarding if no state selected
@@ -111,6 +112,7 @@ export default function DashboardPage() {
             {[1, 2, 3, 4].map((testNumber) => {
               const status = getTestStatus(testNumber);
               const session = getTestSession(testNumber);
+              const attemptStats = getTestAttemptStats(testNumber);
               return (
                 <TestCard
                   key={testNumber}
@@ -119,6 +121,9 @@ export default function DashboardPage() {
                   score={session?.score}
                   progress={getTestProgress(testNumber)}
                   totalQuestions={50}
+                  firstScore={attemptStats?.firstScore}
+                  bestScore={attemptStats?.bestScore}
+                  attemptCount={attemptStats?.attemptCount}
                 />
               );
             })}

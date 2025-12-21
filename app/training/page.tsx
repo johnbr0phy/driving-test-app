@@ -144,6 +144,7 @@ export default function TrainingPage() {
         {/* Question Card */}
         {currentQuestion ? (
           <TrainingCard
+            key={currentQuestion.questionId}
             question={currentQuestion}
             selectedAnswer={selectedAnswer}
             onAnswerSelect={handleAnswerSelect}

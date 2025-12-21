@@ -20,10 +20,10 @@ export default function Home() {
               src="/hero-logo.png"
               alt="Tiger Tests"
               width={900}
-              height={260}
+              height={330}
               className="max-w-full h-auto object-cover"
               priority
-              style={{ maxHeight: '260px' }}
+              style={{ maxHeight: '330px' }}
             />
           </div>
           <p className="text-xl md:text-2xl mb-4 text-gray-700 max-w-3xl mx-auto">

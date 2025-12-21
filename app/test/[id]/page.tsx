@@ -183,7 +183,7 @@ export default function TestPage() {
 
           {/* Progress Bar */}
           <div className="space-y-2">
-            <Progress value={progress} className="h-2" />
+            <Progress value={progress} className="h-2 [&>div]:bg-orange-600" />
             <div className="flex justify-between text-xs text-gray-600">
               <span>Progress: {Math.round(progress)}%</span>
               <span>
@@ -228,7 +228,7 @@ export default function TestPage() {
                   ${currentQuestionIndex === index
                     ? "border-orange-500 bg-orange-500 text-white"
                     : answers[index]
-                    ? "border-green-500 bg-green-50 text-green-700"
+                    ? "border-orange-500 bg-orange-50 text-orange-700"
                     : "border-gray-300 bg-white text-gray-400"
                   }
                 `}

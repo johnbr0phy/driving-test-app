@@ -121,7 +121,7 @@ export default function TrainingPage() {
             <Card className="bg-white/80">
               <CardContent className="p-3 text-center">
                 <div className="flex items-center justify-center gap-2 mb-1">
-                  <Target className="h-4 w-4 text-blue-600" />
+                  <Target className="h-4 w-4 text-orange-600" />
                   <div className="text-xs text-gray-600">Questions</div>
                 </div>
                 <div className="text-xl font-bold">{totalAnswered}</div>
@@ -131,7 +131,7 @@ export default function TrainingPage() {
             <Card className="bg-white/80">
               <CardContent className="p-3 text-center">
                 <div className="flex items-center justify-center gap-2 mb-1">
-                  <Trophy className="h-4 w-4 text-green-600" />
+                  <Trophy className="h-4 w-4 text-orange-600" />
                   <div className="text-xs text-gray-600">Accuracy</div>
                 </div>
                 <div className="text-xl font-bold">{accuracy}%</div>

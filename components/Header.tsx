@@ -21,8 +21,8 @@ export function Header() {
 
   const displayPhotoURL = photoURL || user?.photoURL;
 
-  // Hide header on test and training pages
-  const hideHeader = pathname?.startsWith("/test") || pathname === "/training";
+  // Hide header on homepage, test and training pages
+  const hideHeader = pathname === "/" || pathname?.startsWith("/test") || pathname === "/training";
 
   if (hideHeader) {
     return null;

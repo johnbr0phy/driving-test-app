@@ -15,14 +15,15 @@ export default function Home() {
       {/* Hero Section */}
       <div className="container mx-auto px-4 py-20">
         <div className="text-center mb-16">
-          <div className="flex justify-center mb-6">
+          <div className="flex justify-center mb-8">
             <Image
               src="/hero-logo.png"
               alt="Tiger Tests"
-              width={600}
-              height={200}
-              className="max-w-full h-auto"
+              width={900}
+              height={250}
+              className="max-w-full h-auto object-cover"
               priority
+              style={{ maxHeight: '220px' }}
             />
           </div>
           <p className="text-xl md:text-2xl mb-4 text-gray-700 max-w-3xl mx-auto">

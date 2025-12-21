@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { useAuth } from "@/contexts/AuthContext";
@@ -10,6 +10,7 @@ import { useStore } from "@/store/useStore";
 export function Header() {
   const { user, logout } = useAuth();
   const router = useRouter();
+  const pathname = usePathname();
   const photoURL = useStore((state) => state.photoURL);
 
   const handleLogout = async () => {
@@ -18,6 +19,13 @@ export function Header() {
   };
 
   const displayPhotoURL = photoURL || user?.photoURL;
+
+  // Hide header on test and training pages
+  const hideHeader = pathname?.startsWith("/test") || pathname === "/training";
+
+  if (hideHeader) {
+    return null;
+  }
 
   return (
     <header className="border-b bg-white">

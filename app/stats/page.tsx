@@ -127,19 +127,47 @@ export default function StatsPage() {
         </div>
 
         {/* Pass Probability Card */}
-        <Card className="mb-6 bg-gradient-to-r from-green-50 to-emerald-50 border-green-200">
+        <Card className={`mb-6 ${
+          passProbability === 0
+            ? "bg-gradient-to-r from-gray-50 to-gray-100 border-gray-200"
+            : passProbability >= 80
+              ? "bg-gradient-to-r from-green-50 to-emerald-50 border-green-200"
+              : passProbability >= 60
+                ? "bg-gradient-to-r from-orange-50 to-amber-50 border-orange-200"
+                : "bg-gradient-to-r from-red-50 to-rose-50 border-red-200"
+        }`}>
           <CardContent className="p-8">
             <div className="text-center">
-              <TrendingUp className="h-16 w-16 text-green-600 mx-auto mb-4" />
+              <TrendingUp className={`h-16 w-16 mx-auto mb-4 ${
+                passProbability === 0
+                  ? "text-gray-600"
+                  : passProbability >= 80
+                    ? "text-green-600"
+                    : passProbability >= 60
+                      ? "text-orange-600"
+                      : "text-red-600"
+              }`} />
               <h2 className="text-3xl font-bold mb-2">
                 {passProbability === 0 ? "No Data Yet" : `${passProbability}%`}
               </h2>
-              <p className="text-lg text-gray-700">
+              <p className="text-lg text-gray-700 mb-2">
                 {passProbability === 0
                   ? "Complete practice tests to see your pass probability"
                   : "Estimated chance of passing your driving knowledge test"
                 }
               </p>
+              {passProbability > 0 && passProbability < 80 && (
+                <p className="text-sm text-gray-600">
+                  Don&apos;t worry if this is low!{" "}
+                  <a
+                    href="#recommendations"
+                    className="text-blue-600 hover:text-blue-700 underline font-medium"
+                  >
+                    Check your personalized recommendations below
+                  </a>
+                  {" "}to improve.
+                </p>
+              )}
               {passProbability > 0 && (
                 <Progress value={passProbability} className="h-3 mt-4" />
               )}
@@ -245,7 +273,7 @@ export default function StatsPage() {
         </Card>
 
         {/* Recommendations */}
-        <Card className="mb-6">
+        <Card id="recommendations" className="mb-6 scroll-mt-8">
           <CardHeader>
             <CardTitle>Recommendations</CardTitle>
           </CardHeader>

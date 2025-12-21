@@ -3,7 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
-import { CheckCircle2, Circle, PlayCircle, Trophy, Target } from "lucide-react";
+import { CheckCircle2, Circle, PlayCircle, Trophy, Target, Lock } from "lucide-react";
 
 interface TestCardProps {
   testNumber: number;
@@ -15,13 +15,18 @@ interface TestCardProps {
   bestScore?: number;
   attemptCount?: number;
   averageScore?: number;
+  locked?: boolean;
 }
 
-export function TestCard({ testNumber, status, score, totalQuestions = 50, progress = 0, firstScore, bestScore, attemptCount, averageScore }: TestCardProps) {
+export function TestCard({ testNumber, status, score, totalQuestions = 50, progress = 0, firstScore, bestScore, attemptCount, averageScore, locked = false }: TestCardProps) {
   // Calculate best percentage for badge logic
   const bestPercentage = bestScore ? Math.round((bestScore / totalQuestions) * 100) : 0;
 
   const getStatusBadge = () => {
+    if (locked) {
+      return <Badge variant="outline" className="bg-gray-100">Locked</Badge>;
+    }
+
     if (status === "completed" && bestScore !== undefined) {
       if (bestPercentage === 100) {
         return <Badge className="bg-green-500">Mastered</Badge>;
@@ -41,6 +46,10 @@ export function TestCard({ testNumber, status, score, totalQuestions = 50, progr
   };
 
   const getStatusIcon = () => {
+    if (locked) {
+      return <Lock className="h-12 w-12 text-gray-400" />;
+    }
+
     if (status === "completed" && bestScore !== undefined) {
       if (bestPercentage === 100) {
         return <Trophy className="h-12 w-12 text-yellow-500" />;
@@ -128,11 +137,20 @@ export function TestCard({ testNumber, status, score, totalQuestions = 50, progr
           </div>
         )}
 
-        <Link href={`/test/${testNumber}`}>
-          <Button className="w-full">
-            {getButtonText()}
-          </Button>
-        </Link>
+        {locked ? (
+          <div className="text-center py-3 px-4 bg-gray-50 rounded-lg border border-gray-200">
+            <Lock className="h-5 w-5 text-gray-400 mx-auto mb-2" />
+            <p className="text-sm text-gray-600 font-medium">
+              Score 40+ on previous tests to unlock
+            </p>
+          </div>
+        ) : (
+          <Link href={`/test/${testNumber}`}>
+            <Button className="w-full">
+              {getButtonText()}
+            </Button>
+          </Link>
+        )}
       </CardContent>
     </Card>
   );

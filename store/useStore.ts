@@ -31,6 +31,7 @@ interface AppState {
   testAttempts: TestAttemptStats[];
   getTestAttemptStats: (testId: number) => TestAttemptStats | undefined;
   getTestAverageScore: (testId: number) => number;
+  isTestUnlocked: (testId: number) => boolean;
 
   // Training mode
   training: {
@@ -229,6 +230,26 @@ export const useStore = create<AppState>()(
 
         const totalScore = testSessions.reduce((sum, session) => sum + (session.score || 0), 0);
         return Math.round(totalScore / testSessions.length);
+      },
+
+      isTestUnlocked: (testId: number) => {
+        // Test 1 is always unlocked
+        if (testId === 1) return true;
+
+        const { testAttempts, selectedState } = get();
+
+        // For tests 2, 3, 4: check if all previous tests have bestScore >= 40
+        for (let i = 1; i < testId; i++) {
+          const attemptStats = testAttempts.find(
+            (a) => a.testNumber === i && a.state === selectedState
+          );
+          // If previous test not completed or score < 40, this test is locked
+          if (!attemptStats || attemptStats.bestScore < 40) {
+            return false;
+          }
+        }
+
+        return true;
       },
 
       // Training mode functions

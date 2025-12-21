@@ -23,6 +23,7 @@ export default function TestPage() {
   const startTest = useStore((state) => state.startTest);
   const setAnswer = useStore((state) => state.setAnswer);
   const completeTest = useStore((state) => state.completeTest);
+  const isTestUnlocked = useStore((state) => state.isTestUnlocked);
 
   const [questions, setQuestions] = useState<Question[]>([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -40,6 +41,12 @@ export default function TestPage() {
   useEffect(() => {
     if (!hydrated || initialized.current) {
       return; // Wait for hydration or already initialized
+    }
+
+    // Check if test is unlocked
+    if (!isTestUnlocked(testId)) {
+      router.push("/dashboard");
+      return;
     }
 
     try {
@@ -64,7 +71,7 @@ export default function TestPage() {
       console.error("Error loading questions:", error);
       setLoading(false);
     }
-  }, [hydrated, testId, selectedState, getCurrentTest, startTest]);
+  }, [hydrated, testId, selectedState, getCurrentTest, startTest, isTestUnlocked, router]);
 
   const currentQuestion = questions[currentQuestionIndex];
   const totalQuestions = questions.length;

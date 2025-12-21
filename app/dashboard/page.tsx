@@ -19,6 +19,7 @@ export default function DashboardPage() {
   const getTestAttemptStats = useStore((state) => state.getTestAttemptStats);
   const getTestAverageScore = useStore((state) => state.getTestAverageScore);
   const getCurrentTest = useStore((state) => state.getCurrentTest);
+  const isTestUnlocked = useStore((state) => state.isTestUnlocked);
 
   // Redirect to onboarding if no state selected
   useEffect(() => {
@@ -81,6 +82,7 @@ export default function DashboardPage() {
               const session = getTestSession(testNumber);
               const attemptStats = getTestAttemptStats(testNumber);
               const averageScore = getTestAverageScore(testNumber);
+              const locked = !isTestUnlocked(testNumber);
               return (
                 <TestCard
                   key={testNumber}
@@ -93,6 +95,7 @@ export default function DashboardPage() {
                   bestScore={attemptStats?.bestScore}
                   attemptCount={attemptStats?.attemptCount}
                   averageScore={averageScore}
+                  locked={locked}
                 />
               );
             })}

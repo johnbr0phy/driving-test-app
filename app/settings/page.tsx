@@ -5,11 +5,12 @@ import { useRouter } from "next/navigation";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { ArrowLeft, Loader2, User, AlertTriangle } from "lucide-react";
+import { ArrowLeft, Loader2, User, AlertTriangle, MapPin } from "lucide-react";
 import Link from "next/link";
 import { useAuth } from "@/contexts/AuthContext";
 import { useStore } from "@/store/useStore";
 import { useHydration } from "@/hooks/useHydration";
+import { states } from "@/data/states";
 
 export default function SettingsPage() {
   const router = useRouter();
@@ -18,6 +19,9 @@ export default function SettingsPage() {
   const photoURL = useStore((state) => state.photoURL);
   const setPhotoURL = useStore((state) => state.setPhotoURL);
   const resetAllData = useStore((state) => state.resetAllData);
+  const selectedState = useStore((state) => state.selectedState);
+  const setSelectedState = useStore((state) => state.setSelectedState);
+  const getCurrentTest = useStore((state) => state.getCurrentTest);
 
   const [loadingGooglePhoto, setLoadingGooglePhoto] = useState(false);
 
@@ -61,6 +65,28 @@ export default function SettingsPage() {
     }
   };
 
+  const handleStateChange = (newStateCode: string) => {
+    if (newStateCode === selectedState) return;
+
+    // Check if there are any in-progress tests
+    const hasInProgressTests = [1, 2, 3, 4].some(testId => {
+      const test = getCurrentTest(testId);
+      return test && test.questions.length > 0;
+    });
+
+    const warningMessage = hasInProgressTests
+      ? "⚠️ WARNING: Switching states will clear any in-progress tests.\n\nYour completed test history is saved per state, so you can switch back anytime to see your progress.\n\nDo you want to continue?"
+      : "Switching states will show progress for the new state. Your current state's progress is saved and you can switch back anytime.\n\nDo you want to continue?";
+
+    if (confirm(warningMessage)) {
+      setSelectedState(newStateCode);
+      alert(`State changed to ${states.find(s => s.code === newStateCode)?.name}!`);
+      router.push("/dashboard");
+    }
+  };
+
+  const currentStateName = states.find(s => s.code === selectedState)?.name || selectedState;
+
   if (!hydrated || !user) {
     return null;
   }
@@ -78,6 +104,46 @@ export default function SettingsPage() {
           </Link>
           <h1 className="text-4xl font-bold">Settings</h1>
         </div>
+
+        {/* State Selection Card */}
+        <Card className="max-w-2xl mb-6">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <MapPin className="h-5 w-5" />
+              State Selection
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="space-y-4">
+              <div>
+                <div className="text-sm text-gray-600 mb-2">Currently practicing for:</div>
+                <div className="text-2xl font-bold text-blue-600 mb-4">
+                  {currentStateName}
+                </div>
+              </div>
+
+              <div>
+                <label className="text-sm font-medium text-gray-700 mb-2 block">
+                  Change State
+                </label>
+                <select
+                  value={selectedState || ""}
+                  onChange={(e) => handleStateChange(e.target.value)}
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                >
+                  {states.map((state) => (
+                    <option key={state.code} value={state.code}>
+                      {state.name} ({state.code})
+                    </option>
+                  ))}
+                </select>
+                <p className="text-xs text-gray-500 mt-2">
+                  Your progress is saved per state. Switching states will clear in-progress tests but preserve your completed test history.
+                </p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
 
         {/* Profile Photo Card */}
         <Card className="max-w-2xl">

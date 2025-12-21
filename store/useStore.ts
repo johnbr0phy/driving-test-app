@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import { persist } from 'zustand/middleware';
+import { persist, createJSONStorage } from 'zustand/middleware';
 import { Question, TestSession, UserAnswer } from '@/types';
 
 interface AppState {
@@ -148,6 +148,19 @@ export const useStore = create<AppState>()(
     }),
     {
       name: 'driving-test-storage',
+      storage: createJSONStorage(() => {
+        // Only use localStorage on the client side
+        if (typeof window !== 'undefined') {
+          return localStorage;
+        }
+        // Return a dummy storage for SSR
+        return {
+          getItem: () => null,
+          setItem: () => {},
+          removeItem: () => {},
+        };
+      }),
+      skipHydration: false,
     }
   )
 );

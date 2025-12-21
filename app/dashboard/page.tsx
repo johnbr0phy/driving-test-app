@@ -7,14 +7,22 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { CheckCircle2, Target, Trophy, BookOpen, MapPin } from "lucide-react";
 import Link from "next/link";
 import { useStore } from "@/store/useStore";
+import { useHydration } from "@/hooks/useHydration";
 
 export default function DashboardPage() {
+  const hydrated = useHydration();
   const selectedState = useStore((state) => state.selectedState);
   const getProgress = useStore((state) => state.getProgress);
   const getTestSession = useStore((state) => state.getTestSession);
   const currentTest = useStore((state) => state.currentTest);
 
-  const stats = getProgress();
+  const stats = hydrated ? getProgress() : {
+    testsCompleted: 0,
+    questionsAnswered: 0,
+    totalCorrect: 0,
+    accuracy: 0,
+    averageScore: 0,
+  };
 
   // Get status for each test
   const getTestStatus = (testNumber: number): "not-started" | "in-progress" | "completed" => {

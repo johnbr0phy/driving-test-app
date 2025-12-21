@@ -8,26 +8,32 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Trophy, XCircle, ChevronDown, ChevronUp } from "lucide-react";
 import { useStore } from "@/store/useStore";
+import { useHydration } from "@/hooks/useHydration";
 
 export default function ResultsPage() {
   const params = useParams();
   const router = useRouter();
   const testId = parseInt(params.id as string);
+  const hydrated = useHydration();
 
   const getTestSession = useStore((state) => state.getTestSession);
   const [expandedQuestions, setExpandedQuestions] = useState<Set<number>>(new Set());
   const [loading, setLoading] = useState(true);
 
-  const testSession = getTestSession(testId);
+  const testSession = hydrated ? getTestSession(testId) : null;
 
   useEffect(() => {
+    if (!hydrated) {
+      return; // Wait for hydration
+    }
+
     if (!testSession) {
       // No test session found, redirect to test
       router.push(`/test/${testId}`);
     } else {
       setLoading(false);
     }
-  }, [testSession, testId, router]);
+  }, [testSession, testId, router, hydrated]);
 
   if (!testSession) {
     return null;

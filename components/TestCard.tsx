@@ -3,7 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
-import { CheckCircle2, Circle, PlayCircle, ArrowRight } from "lucide-react";
+import { CheckCircle2, Circle, PlayCircle, ArrowRight, Trophy, Target } from "lucide-react";
 import { ImprovementBadge } from "@/components/ImprovementBadge";
 
 interface TestCardProps {
@@ -18,10 +18,21 @@ interface TestCardProps {
 }
 
 export function TestCard({ testNumber, status, score, totalQuestions = 50, progress = 0, firstScore, bestScore, attemptCount }: TestCardProps) {
+  // Calculate best percentage for badge logic
+  const bestPercentage = bestScore ? Math.round((bestScore / totalQuestions) * 100) : 0;
+
   const getStatusBadge = () => {
+    if (status === "completed" && bestScore !== undefined) {
+      if (bestPercentage === 100) {
+        return <Badge className="bg-green-500">Mastered</Badge>;
+      } else if (bestPercentage >= 70) {
+        return <Badge className="bg-blue-500">Passed</Badge>;
+      } else {
+        return <Badge className="bg-orange-500">Keep Practicing</Badge>;
+      }
+    }
+
     switch (status) {
-      case "completed":
-        return <Badge className="bg-green-500">Completed</Badge>;
       case "in-progress":
         return <Badge className="bg-yellow-500">In Progress</Badge>;
       default:
@@ -30,9 +41,17 @@ export function TestCard({ testNumber, status, score, totalQuestions = 50, progr
   };
 
   const getStatusIcon = () => {
+    if (status === "completed" && bestScore !== undefined) {
+      if (bestPercentage === 100) {
+        return <Trophy className="h-12 w-12 text-yellow-500" />;
+      } else if (bestPercentage >= 70) {
+        return <CheckCircle2 className="h-12 w-12 text-blue-500" />;
+      } else {
+        return <Target className="h-12 w-12 text-orange-500" />;
+      }
+    }
+
     switch (status) {
-      case "completed":
-        return <CheckCircle2 className="h-12 w-12 text-green-500" />;
       case "in-progress":
         return <PlayCircle className="h-12 w-12 text-yellow-500" />;
       default:

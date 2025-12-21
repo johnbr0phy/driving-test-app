@@ -24,19 +24,19 @@ export function Header() {
   // Hide header on test and training pages
   const hideHeader = pathname?.startsWith("/test") || pathname === "/training";
 
-  // Use white header on homepage
-  const isHomepage = pathname === "/";
+  // Use white header on homepage, signup, and login pages
+  const useWhiteHeader = pathname === "/" || pathname === "/signup" || pathname === "/login";
 
   if (hideHeader) {
     return null;
   }
 
   return (
-    <header className={`border-b ${isHomepage ? "bg-white" : "bg-orange-600"}`}>
+    <header className={`border-b ${useWhiteHeader ? "bg-white" : "bg-orange-600"}`}>
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <Link href={user ? "/dashboard" : "/"} className="flex items-center gap-2 group">
           <Image src="/tiger.png" alt="Tiger Tests" width={40} height={40} className="w-10 h-10" />
-          <span className={`text-2xl font-bold ${isHomepage ? "text-gray-900" : "text-white"} group-hover:opacity-80 transition-opacity`}>
+          <span className={`text-2xl font-bold ${useWhiteHeader ? "text-gray-900" : "text-white"} group-hover:opacity-80 transition-opacity`}>
             Tiger Tests
           </span>
         </Link>

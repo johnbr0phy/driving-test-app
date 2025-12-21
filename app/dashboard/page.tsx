@@ -118,8 +118,7 @@ export default function DashboardPage() {
                 <div className="flex items-center gap-4">
                   <Zap className="h-10 w-10 text-purple-600" />
                   <div>
-                    <h3 className="font-bold text-lg text-purple-900">Start Training</h3>
-                    <p className="text-sm text-gray-700">Learn at your own pace.</p>
+                    <h3 className="font-bold text-lg text-purple-900">Learn at your own pace.</h3>
                   </div>
                 </div>
                 <Link href="/training">

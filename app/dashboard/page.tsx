@@ -75,9 +75,38 @@ export default function DashboardPage() {
           <span className="text-sm">Practicing for: {selectedState}</span>
         </div>
 
+        {/* Training Mode */}
+        <div className="mb-6">
+          <h2 className="text-2xl font-bold mb-2">Training Mode</h2>
+          <p className="text-sm text-gray-600 mb-4">
+            Learn at your own pace. Practice individual questions with instant feedback after each answer. Perfect for building knowledge and understanding why answers are correct.
+          </p>
+          <Card className="bg-gradient-to-r from-purple-50 to-pink-50 border-purple-200">
+            <CardContent className="p-6">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-4">
+                  <Zap className="h-10 w-10 text-purple-600" />
+                  <div>
+                    <h3 className="font-bold text-lg text-purple-900">Start Training</h3>
+                    <p className="text-sm text-gray-700">Practice with instant feedback</p>
+                  </div>
+                </div>
+                <Link href="/training">
+                  <Button className="bg-purple-600 hover:bg-purple-700">
+                    Start Training
+                  </Button>
+                </Link>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+
         {/* Practice Tests */}
         <div className="mb-6">
-          <h2 className="text-2xl font-bold mb-4">Practice Tests</h2>
+          <h2 className="text-2xl font-bold mb-2">Practice Tests</h2>
+          <p className="text-sm text-gray-600 mb-4">
+            Simulate the real exam. Take full 50-question tests to measure your readiness. Score 40+ to unlock the next test and track your progress.
+          </p>
           <div className="space-y-3">
             {[1, 2, 3, 4].map((testNumber) => {
               const status = getTestStatus(testNumber);
@@ -105,26 +134,6 @@ export default function DashboardPage() {
             })}
           </div>
         </div>
-
-        {/* Training Mode CTA */}
-        <Card className="mb-6 bg-gradient-to-r from-purple-50 to-pink-50 border-purple-200">
-          <CardContent className="p-6">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-4">
-                <Zap className="h-10 w-10 text-purple-600" />
-                <div>
-                  <h3 className="font-bold text-lg text-purple-900">Training Mode</h3>
-                  <p className="text-sm text-gray-700">Practice with instant feedback</p>
-                </div>
-              </div>
-              <Link href="/training">
-                <Button className="bg-purple-600 hover:bg-purple-700">
-                  Start Training
-                </Button>
-              </Link>
-            </div>
-          </CardContent>
-        </Card>
 
         {/* Compact Stats */}
         <div className="grid grid-cols-2 md:grid-cols-5 gap-4">

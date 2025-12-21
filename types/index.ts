@@ -70,6 +70,16 @@ export interface CategoryStats {
   accuracy: number; // percentage
 }
 
+// Test attempt statistics
+export interface TestAttemptStats {
+  testNumber: number;
+  state: string;
+  attemptCount: number;
+  firstScore: number; // Score on first attempt
+  bestScore: number; // Highest score achieved
+  lastAttemptDate: Date;
+}
+
 // State selection
 export interface State {
   name: string;

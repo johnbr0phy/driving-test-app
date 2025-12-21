@@ -77,3 +77,23 @@ function intersperseQuestions(universal: Question[], state: Question[]): Questio
 
   return result;
 }
+
+// Get random question for training mode
+export function getTrainingQuestion(state: string, excludeIds: string[] = []): Question | null {
+  const allQuestions = questionsData as Question[];
+
+  // Get questions for this state (universal + state-specific)
+  const availableQuestions = allQuestions.filter(
+    (q) =>
+      !excludeIds.includes(q.questionId) &&
+      (q.state === "ALL" || q.state === state)
+  );
+
+  if (availableQuestions.length === 0) {
+    return null; // No more questions available
+  }
+
+  // Return a random question
+  const randomIndex = Math.floor(Math.random() * availableQuestions.length);
+  return availableQuestions[randomIndex];
+}

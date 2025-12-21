@@ -3,7 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
-import { CheckCircle2, Circle, PlayCircle } from "lucide-react";
+import { CheckCircle2, Circle, PlayCircle, Trophy, Target, Lock, ChevronDown, ChevronUp } from "lucide-react";
 
 interface TestCardProps {
   testNumber: number;
@@ -11,13 +11,36 @@ interface TestCardProps {
   score?: number;
   totalQuestions?: number;
   progress?: number;
+  firstScore?: number;
+  bestScore?: number;
+  attemptCount?: number;
+  averageScore?: number;
+  locked?: boolean;
+  lockMessage?: string;
+  expanded?: boolean;
+  onToggle?: () => void;
 }
 
-export function TestCard({ testNumber, status, score, totalQuestions = 50, progress = 0 }: TestCardProps) {
+export function TestCard({ testNumber, status, score, totalQuestions = 50, progress = 0, firstScore, bestScore, attemptCount, averageScore, locked = false, lockMessage, expanded = false, onToggle }: TestCardProps) {
+  // Calculate best percentage for badge logic
+  const bestPercentage = bestScore ? Math.round((bestScore / totalQuestions) * 100) : 0;
+
   const getStatusBadge = () => {
+    if (locked) {
+      return <Badge variant="outline" className="bg-gray-100">Locked</Badge>;
+    }
+
+    if (status === "completed" && bestScore !== undefined) {
+      if (bestPercentage === 100) {
+        return <Badge className="bg-green-500">Mastered</Badge>;
+      } else if (bestPercentage >= 70) {
+        return <Badge className="bg-blue-500">Passed</Badge>;
+      } else {
+        return <Badge className="bg-orange-500">Keep Practicing</Badge>;
+      }
+    }
+
     switch (status) {
-      case "completed":
-        return <Badge className="bg-green-500">Completed</Badge>;
       case "in-progress":
         return <Badge className="bg-yellow-500">In Progress</Badge>;
       default:
@@ -26,9 +49,21 @@ export function TestCard({ testNumber, status, score, totalQuestions = 50, progr
   };
 
   const getStatusIcon = () => {
+    if (locked) {
+      return <Lock className="h-12 w-12 text-gray-400" />;
+    }
+
+    if (status === "completed" && bestScore !== undefined) {
+      if (bestPercentage === 100) {
+        return <Trophy className="h-12 w-12 text-yellow-500" />;
+      } else if (bestPercentage >= 70) {
+        return <CheckCircle2 className="h-12 w-12 text-blue-500" />;
+      } else {
+        return <Target className="h-12 w-12 text-orange-500" />;
+      }
+    }
+
     switch (status) {
-      case "completed":
-        return <CheckCircle2 className="h-12 w-12 text-green-500" />;
       case "in-progress":
         return <PlayCircle className="h-12 w-12 text-yellow-500" />;
       default:
@@ -39,7 +74,7 @@ export function TestCard({ testNumber, status, score, totalQuestions = 50, progr
   const getButtonText = () => {
     switch (status) {
       case "completed":
-        return "Review Test";
+        return attemptCount && attemptCount > 0 ? "Retake Test" : "Review Test";
       case "in-progress":
         return "Continue Test";
       default:
@@ -49,27 +84,59 @@ export function TestCard({ testNumber, status, score, totalQuestions = 50, progr
 
   return (
     <Card>
-      <CardHeader>
+      <CardHeader
+        className="cursor-pointer hover:bg-gray-50 transition-colors"
+        onClick={onToggle}
+      >
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
             {getStatusIcon()}
             <div>
               <CardTitle>Test {testNumber}</CardTitle>
-              <CardDescription>{totalQuestions} questions</CardDescription>
             </div>
           </div>
-          {getStatusBadge()}
+          <div className="flex items-center gap-2">
+            {getStatusBadge()}
+            {expanded ? (
+              <ChevronUp className="h-5 w-5 text-gray-400" />
+            ) : (
+              <ChevronDown className="h-5 w-5 text-gray-400" />
+            )}
+          </div>
         </div>
       </CardHeader>
-      <CardContent>
-        {status === "completed" && score !== undefined && (
+      {expanded && (
+        <CardContent>
+        {status === "completed" && (
           <div className="mb-4">
-            <div className="text-2xl font-bold text-green-600 mb-1">
-              {score}/{totalQuestions}
-            </div>
-            <div className="text-sm text-gray-600">
-              {Math.round((score / totalQuestions) * 100)}% correct
-            </div>
+            {bestScore !== undefined && attemptCount !== undefined && averageScore !== undefined ? (
+              <div className="space-y-2">
+                {/* Attempts and Average */}
+                <div className="grid grid-cols-2 gap-4 text-center">
+                  <div>
+                    <div className="text-sm text-gray-600 mb-1">Attempts</div>
+                    <div className="text-2xl font-bold text-gray-900">
+                      {attemptCount}
+                    </div>
+                  </div>
+                  <div>
+                    <div className="text-sm text-gray-600 mb-1">Avg Score</div>
+                    <div className="text-2xl font-bold text-blue-600">
+                      {averageScore}/{totalQuestions}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ) : score !== undefined && (
+              <div>
+                <div className="text-2xl font-bold text-green-600 mb-1">
+                  {score}/{totalQuestions}
+                </div>
+                <div className="text-sm text-gray-600">
+                  {Math.round((score / totalQuestions) * 100)}% correct
+                </div>
+              </div>
+            )}
           </div>
         )}
 
@@ -83,12 +150,22 @@ export function TestCard({ testNumber, status, score, totalQuestions = 50, progr
           </div>
         )}
 
-        <Link href={`/test/${testNumber}`}>
-          <Button className="w-full">
-            {getButtonText()}
-          </Button>
-        </Link>
-      </CardContent>
+        {locked ? (
+          <div className="text-center py-3 px-4 bg-gray-50 rounded-lg border border-gray-200">
+            <Lock className="h-5 w-5 text-gray-400 mx-auto mb-2" />
+            <p className="text-sm text-gray-600 font-medium">
+              {lockMessage || "Score 40+ on previous tests to unlock"}
+            </p>
+          </div>
+        ) : (
+          <Link href={`/test/${testNumber}`}>
+            <Button className="w-full">
+              {getButtonText()}
+            </Button>
+          </Link>
+        )}
+        </CardContent>
+      )}
     </Card>
   );
 }

@@ -1,12 +1,13 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useParams, useRouter } from "next/navigation";
 import { QuestionCard } from "@/components/QuestionCard";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { Card, CardContent } from "@/components/ui/card";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
+import Link from "next/link";
 import { generateTest } from "@/lib/testGenerator";
 import { Question } from "@/types";
 import { useStore } from "@/store/useStore";
@@ -17,44 +18,75 @@ export default function TestPage() {
   const router = useRouter();
   const testId = parseInt(params.id as string);
   const hydrated = useHydration();
+  const initialized = useRef(false);
 
   const selectedState = useStore((state) => state.selectedState);
-  const currentTest = useStore((state) => state.currentTest);
+  const getCurrentTest = useStore((state) => state.getCurrentTest);
   const startTest = useStore((state) => state.startTest);
   const setAnswer = useStore((state) => state.setAnswer);
   const completeTest = useStore((state) => state.completeTest);
+  const isTestUnlocked = useStore((state) => state.isTestUnlocked);
 
   const [questions, setQuestions] = useState<Question[]>([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [answers, setAnswers] = useState<{ [key: number]: string }>({});
   const [loading, setLoading] = useState(true);
 
+  // Reset when test changes
+  useEffect(() => {
+    initialized.current = false;
+    setLoading(true);
+    setCurrentQuestionIndex(0);
+  }, [testId]);
+
   // Load questions on mount (wait for hydration)
   useEffect(() => {
-    if (!hydrated) {
-      return; // Wait for hydration to complete
+    if (!hydrated || initialized.current) {
+      return; // Wait for hydration or already initialized
+    }
+
+    // Check if test is unlocked
+    if (!isTestUnlocked(testId)) {
+      router.push("/dashboard");
+      return;
     }
 
     try {
       const state = selectedState || "CA";
-      const testQuestions = generateTest(testId, state);
-      setQuestions(testQuestions);
 
       // Check if we have a saved test session for this test
-      if (currentTest.testId === testId && currentTest.questions.length > 0) {
+      const savedTest = getCurrentTest(testId);
+      if (savedTest && savedTest.questions.length > 0) {
         // Resume from saved state
-        setAnswers(currentTest.answers);
+        setQuestions(savedTest.questions);
+        setAnswers(savedTest.answers);
+
+        // Find the first unanswered question and resume from there
+        const firstUnansweredIndex = savedTest.questions.findIndex(
+          (_, index) => !savedTest.answers[index]
+        );
+
+        // If we found an unanswered question, start there; otherwise start at the beginning
+        if (firstUnansweredIndex !== -1) {
+          setCurrentQuestionIndex(firstUnansweredIndex);
+        } else {
+          // All questions answered, stay at last question
+          setCurrentQuestionIndex(savedTest.questions.length - 1);
+        }
       } else {
-        // Start new test
+        // Generate new test
+        const testQuestions = generateTest(testId, state);
+        setQuestions(testQuestions);
         startTest(testId, testQuestions);
       }
 
+      initialized.current = true;
       setLoading(false);
     } catch (error) {
       console.error("Error loading questions:", error);
       setLoading(false);
     }
-  }, [testId, selectedState, currentTest, startTest, hydrated]);
+  }, [hydrated, testId, selectedState, getCurrentTest, startTest, isTestUnlocked, router]);
 
   const currentQuestion = questions[currentQuestionIndex];
   const totalQuestions = questions.length;
@@ -62,24 +94,24 @@ export default function TestPage() {
   const progress = totalQuestions > 0 ? (answeredCount / totalQuestions) * 100 : 0;
 
   const handleAnswerChange = (answer: string) => {
+    // Don't allow changing previous answers
+    if (answers[currentQuestionIndex]) {
+      return;
+    }
+
     setAnswers((prev) => ({
       ...prev,
       [currentQuestionIndex]: answer,
     }));
     // Save to store
-    setAnswer(currentQuestionIndex, answer);
-  };
+    setAnswer(testId, currentQuestionIndex, answer);
 
-  const handlePrevious = () => {
-    if (currentQuestionIndex > 0) {
-      setCurrentQuestionIndex(currentQuestionIndex - 1);
-    }
-  };
-
-  const handleNext = () => {
-    if (currentQuestionIndex < totalQuestions - 1) {
-      setCurrentQuestionIndex(currentQuestionIndex + 1);
-    }
+    // Auto-advance to next question after brief delay
+    setTimeout(() => {
+      if (currentQuestionIndex < totalQuestions - 1) {
+        setCurrentQuestionIndex(currentQuestionIndex + 1);
+      }
+    }, 300);
   };
 
   const handleSubmit = () => {
@@ -129,7 +161,17 @@ export default function TestPage() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto px-4 py-8 max-w-6xl">
+        {/* Back Button */}
+        <div className="mb-6">
+          <Link href="/dashboard">
+            <Button variant="ghost" className="mb-4">
+              <ArrowLeft className="h-4 w-4 mr-2" />
+              Back to Dashboard
+            </Button>
+          </Link>
+        </div>
+
         {/* Header */}
         <div className="mb-6">
           <div className="flex items-center justify-between mb-4">
@@ -162,58 +204,41 @@ export default function TestPage() {
           />
         </div>
 
-        {/* Navigation */}
-        <div className="flex items-center justify-between">
-          <Button
-            variant="outline"
-            onClick={handlePrevious}
-            disabled={currentQuestionIndex === 0}
-          >
-            <ChevronLeft className="mr-2 h-4 w-4" />
-            Previous
-          </Button>
-
-          <div className="text-sm text-gray-600">
-            Question {currentQuestionIndex + 1} of {totalQuestions}
-          </div>
-
-          {currentQuestionIndex < totalQuestions - 1 ? (
-            <Button onClick={handleNext}>
-              Next
-              <ChevronRight className="ml-2 h-4 w-4" />
-            </Button>
-          ) : (
+        {/* Navigation - Forward Only */}
+        <div className="flex items-center justify-center mt-6">
+          {answeredCount === totalQuestions && (
             <Button
               onClick={handleSubmit}
-              disabled={!canSubmit}
-              className="bg-green-600 hover:bg-green-700"
+              className="bg-green-600 hover:bg-green-700 text-lg px-8 py-6"
             >
               Submit Test
             </Button>
           )}
         </div>
 
-        {/* Question Grid (for quick navigation) */}
+        {/* Progress Overview - View Only */}
         <div className="mt-8">
-          <div className="text-sm font-semibold mb-3">Quick Navigation</div>
+          <div className="text-sm font-semibold mb-3">Progress Overview</div>
           <div className="grid grid-cols-10 gap-2">
             {questions.map((_, index) => (
-              <button
+              <div
                 key={index}
-                onClick={() => setCurrentQuestionIndex(index)}
                 className={`
-                  aspect-square rounded-lg border-2 text-sm font-semibold transition-colors
+                  aspect-square rounded-lg border-2 text-sm font-semibold transition-colors flex items-center justify-center
                   ${currentQuestionIndex === index
                     ? "border-blue-500 bg-blue-500 text-white"
                     : answers[index]
                     ? "border-green-500 bg-green-50 text-green-700"
-                    : "border-gray-300 bg-white text-gray-700 hover:border-gray-400"
+                    : "border-gray-300 bg-white text-gray-400"
                   }
                 `}
               >
                 {index + 1}
-              </button>
+              </div>
             ))}
+          </div>
+          <div className="text-xs text-gray-500 mt-2 text-center">
+            Select your answer to automatically advance to the next question
           </div>
         </div>
       </div>

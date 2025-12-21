@@ -95,7 +95,7 @@ export function TrainingCard({
               <p className="text-gray-700">{question.explanation}</p>
             </div>
 
-            <Button onClick={onNext} className="w-full" size="lg">
+            <Button onClick={onNext} className="w-full bg-black text-white hover:bg-gray-800" size="lg">
               Next Question
             </Button>
           </div>

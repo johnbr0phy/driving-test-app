@@ -317,12 +317,12 @@ export default function StatsPage() {
         {/* Quick Actions */}
         <div className="flex gap-4 justify-center">
           <Link href="/training">
-            <Button className="bg-purple-600 hover:bg-purple-700">
+            <Button className="bg-black text-white hover:bg-gray-800">
               Start Training Mode
             </Button>
           </Link>
           <Link href="/dashboard">
-            <Button variant="outline">
+            <Button className="bg-white text-black hover:bg-gray-100 border-2 border-gray-300">
               Take Practice Test
             </Button>
           </Link>

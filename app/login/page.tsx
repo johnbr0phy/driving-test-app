@@ -68,8 +68,7 @@ export default function LoginPage() {
             {/* Google Sign-In */}
             <Button
               type="button"
-              variant="outline"
-              className="w-full"
+              className="w-full bg-white text-black hover:bg-gray-100 border-2 border-gray-300"
               onClick={handleGoogleSignIn}
               disabled={loading}
             >
@@ -131,7 +130,7 @@ export default function LoginPage() {
               />
             </div>
 
-            <Button type="submit" className="w-full" disabled={loading}>
+            <Button type="submit" className="w-full bg-black text-white hover:bg-gray-800" disabled={loading}>
               {loading ? "Logging in..." : "Log In"}
             </Button>
 

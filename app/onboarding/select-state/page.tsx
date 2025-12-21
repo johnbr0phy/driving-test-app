@@ -59,7 +59,7 @@ export default function OnboardingSelectStatePage() {
           <Button
             onClick={handleComplete}
             disabled={!selectedState || loading}
-            className="w-full"
+            className="w-full bg-black text-white hover:bg-gray-800"
           >
             {loading ? "Saving..." : "Continue to Dashboard"}
           </Button>

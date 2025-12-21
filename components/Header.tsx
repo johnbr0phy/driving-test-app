@@ -53,7 +53,7 @@ export function Header() {
             </>
           ) : (
             <Link href="/login">
-              <Button className="bg-orange-600 text-white hover:bg-orange-700">Sign In</Button>
+              <Button className="bg-white text-black hover:bg-gray-100 border-2 border-gray-300">Sign In</Button>
             </Link>
           )}
         </div>

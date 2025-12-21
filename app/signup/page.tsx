@@ -106,8 +106,7 @@ export default function SignupPage() {
               {/* Google Sign-In */}
               <Button
                 type="button"
-                variant="outline"
-                className="w-full"
+                className="w-full bg-white text-black hover:bg-gray-100 border-2 border-gray-300"
                 onClick={handleGoogleSignIn}
                 disabled={loading}
               >
@@ -182,7 +181,7 @@ export default function SignupPage() {
                   />
                 </div>
 
-                <Button type="submit" className="w-full" disabled={loading}>
+                <Button type="submit" className="w-full bg-black text-white hover:bg-gray-800" disabled={loading}>
                   Continue
                 </Button>
 
@@ -204,17 +203,16 @@ export default function SignupPage() {
 
               <div className="flex gap-3">
                 <Button
-                  variant="outline"
                   onClick={() => setStep(1)}
                   disabled={loading}
-                  className="w-full"
+                  className="w-full bg-white text-black hover:bg-gray-100 border-2 border-gray-300"
                 >
                   Back
                 </Button>
                 <Button
                   onClick={handleCompleteSignup}
                   disabled={!selectedState || loading}
-                  className="w-full"
+                  className="w-full bg-black text-white hover:bg-gray-800"
                 >
                   {loading ? "Creating account..." : "Complete Signup"}
                 </Button>

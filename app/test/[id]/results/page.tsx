@@ -191,18 +191,18 @@ export default function ResultsPage() {
             )}
 
             <div className="flex gap-4 justify-center mt-6">
-              <Button onClick={() => router.push("/dashboard")}>
+              <Button className="bg-black text-white hover:bg-gray-800" onClick={() => router.push("/dashboard")}>
                 Back to Dashboard
               </Button>
               <Button
-                variant="outline"
+                className="bg-white text-black hover:bg-gray-100 border-2 border-gray-300"
                 onClick={() => router.push(`/test/${testId}`)}
               >
                 Retake Test
               </Button>
               {testId < 4 && (
                 <Button
-                  variant="outline"
+                  className="bg-white text-black hover:bg-gray-100 border-2 border-gray-300"
                   onClick={() => router.push(`/test/${testId + 1}`)}
                 >
                   Next Test
@@ -216,10 +216,10 @@ export default function ResultsPage() {
         <div className="mb-4 flex items-center justify-between">
           <h2 className="text-2xl font-bold">Review Questions</h2>
           <div className="flex gap-2">
-            <Button variant="outline" size="sm" onClick={expandAll}>
+            <Button size="sm" className="bg-white text-black hover:bg-gray-100 border-2 border-gray-300" onClick={expandAll}>
               Expand All
             </Button>
-            <Button variant="outline" size="sm" onClick={collapseAll}>
+            <Button size="sm" className="bg-white text-black hover:bg-gray-100 border-2 border-gray-300" onClick={collapseAll}>
               Collapse All
             </Button>
           </div>

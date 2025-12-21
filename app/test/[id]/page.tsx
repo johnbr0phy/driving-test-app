@@ -150,7 +150,7 @@ export default function TestPage() {
           <CardContent className="p-8 text-center">
             <div className="text-xl font-semibold mb-2">No questions available</div>
             <div className="text-gray-600 mb-4">Unable to load test questions.</div>
-            <Button onClick={() => router.push("/dashboard")}>
+            <Button className="bg-black text-white hover:bg-gray-800" onClick={() => router.push("/dashboard")}>
               Back to Dashboard
             </Button>
           </CardContent>
@@ -209,7 +209,7 @@ export default function TestPage() {
           {answeredCount === totalQuestions && (
             <Button
               onClick={handleSubmit}
-              className="bg-green-600 hover:bg-green-700 text-lg px-8 py-6"
+              className="bg-black hover:bg-gray-800 text-white text-lg px-8 py-6"
             >
               Submit Test
             </Button>

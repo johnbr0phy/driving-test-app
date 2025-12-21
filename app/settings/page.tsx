@@ -178,8 +178,7 @@ export default function SettingsPage() {
                   <Button
                     onClick={handleUseGooglePhoto}
                     disabled={loadingGooglePhoto}
-                    className="w-full"
-                    variant="outline"
+                    className="w-full bg-white text-black hover:bg-gray-100 border-2 border-gray-300"
                   >
                     {loadingGooglePhoto ? (
                       <>
@@ -261,7 +260,7 @@ export default function SettingsPage() {
             </DialogDescription>
           </DialogHeader>
           <DialogFooter className="gap-2 sm:gap-0">
-            <Button variant="outline" onClick={() => setStateChangeDialog(false)}>
+            <Button className="bg-white text-black hover:bg-gray-100 border-2 border-gray-300" onClick={() => setStateChangeDialog(false)}>
               Cancel
             </Button>
             <Button variant="destructive" onClick={confirmStateChange}>
@@ -298,7 +297,7 @@ export default function SettingsPage() {
             </DialogDescription>
           </DialogHeader>
           <DialogFooter className="gap-2 sm:gap-0">
-            <Button variant="outline" onClick={() => setResetDialog(false)}>
+            <Button className="bg-white text-black hover:bg-gray-100 border-2 border-gray-300" onClick={() => setResetDialog(false)}>
               Cancel
             </Button>
             <Button variant="destructive" onClick={confirmReset}>

@@ -130,7 +130,7 @@ export default function DashboardPage() {
                   </div>
                 </div>
                 <Link href="/training">
-                  <Button>
+                  <Button className="bg-black text-white hover:bg-gray-800">
                     Start Training
                   </Button>
                 </Link>

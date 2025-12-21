@@ -159,7 +159,7 @@ export function TestCard({ testNumber, status, score, totalQuestions = 50, progr
           </div>
         ) : (
           <Link href={`/test/${testNumber}`}>
-            <Button className="w-full">
+            <Button className="w-full bg-black text-white hover:bg-gray-800">
               {getButtonText()}
             </Button>
           </Link>

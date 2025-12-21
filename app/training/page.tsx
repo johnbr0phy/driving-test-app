@@ -108,7 +108,7 @@ export default function TrainingPage() {
           <Card className="w-full">
             <CardContent className="p-8 text-center">
               <p className="text-gray-600 mb-4">No more questions available</p>
-              <Button onClick={() => router.push("/dashboard")}>
+              <Button className="bg-black text-white hover:bg-gray-800" onClick={() => router.push("/dashboard")}>
                 Back to Dashboard
               </Button>
             </CardContent>
@@ -161,7 +161,7 @@ export default function TrainingPage() {
 
           {/* End Training Button */}
           <div className="text-center">
-            <Button variant="outline" onClick={handleEndTraining} className="w-full">
+            <Button onClick={handleEndTraining} className="w-full bg-white text-black hover:bg-gray-100 border-2 border-gray-300">
               End Training Session
             </Button>
           </div>

@@ -15,16 +15,6 @@ export default function Home() {
       {/* Hero Section */}
       <div className="container mx-auto px-4 py-12">
         <div className="text-center mb-16">
-          <div className="flex justify-center mb-8">
-            <Image
-              src="/tiger.png"
-              alt="Tiger Tests Mascot"
-              width={200}
-              height={200}
-              className="w-48 h-48"
-              priority
-            />
-          </div>
           <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold text-gray-900 mb-8 max-w-5xl mx-auto leading-tight">
             Pass your US driving knowledge test
           </h1>

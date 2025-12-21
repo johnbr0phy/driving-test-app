@@ -146,7 +146,7 @@ export function TestCard({ testNumber, status, score, totalQuestions = 50, progr
               <span>Progress</span>
               <span>{progress}%</span>
             </div>
-            <Progress value={progress} />
+            <Progress value={progress} className="[&>div]:bg-orange-600" />
           </div>
         )}
 

@@ -141,7 +141,7 @@ export default function DashboardPage() {
 
         {/* Practice Tests */}
         <div className="mb-6">
-          <h2 className="text-2xl font-bold mb-4">Simulate the real exam.</h2>
+          <h2 className="text-2xl font-bold mb-4">Simulate the real exam</h2>
           <div className="space-y-3">
             {[1, 2, 3, 4].map((testNumber) => {
               const status = getTestStatus(testNumber);

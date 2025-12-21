@@ -31,11 +31,15 @@ export function Header() {
   return (
     <header className="border-b bg-orange-600">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <Link href={user ? "/dashboard" : "/"} className="flex items-center gap-2 group">
-          <Image src="/tiger.png" alt="Tiger Tests" width={32} height={32} className="w-8 h-8" />
-          <span className="text-2xl font-bold text-white group-hover:text-orange-100 transition-colors">
-            Tiger Tests
-          </span>
+        <Link href={user ? "/dashboard" : "/"} className="flex items-center group">
+          <Image
+            src="/hero-logo.png"
+            alt="Tiger Tests"
+            width={180}
+            height={60}
+            className="h-10 w-auto"
+            priority
+          />
         </Link>
 
         <div className="flex items-center gap-4">

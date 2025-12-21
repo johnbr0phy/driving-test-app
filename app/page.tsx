@@ -28,17 +28,9 @@ export default function Home() {
       {/* Hero Section */}
       <div className="container mx-auto px-4 py-12">
         <div className="text-center mb-16">
-          <div className="flex justify-center mb-8">
-            <Image
-              src="/hero-logo.png"
-              alt="Tiger Tests"
-              width={900}
-              height={330}
-              className="max-w-full h-auto object-cover"
-              priority
-              style={{ maxHeight: '330px' }}
-            />
-          </div>
+          <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold text-gray-900 mb-8 max-w-5xl mx-auto leading-tight">
+            Pass your US driving knowledge test
+          </h1>
           <p className="text-4xl font-bold text-gray-900 mb-4 max-w-3xl mx-auto">
             Practice with 200 questions per state - completely free
           </p>

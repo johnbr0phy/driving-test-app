@@ -1,14 +1,22 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { states } from "@/data/states";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent } from "@/components/ui/card";
 import { Search } from "lucide-react";
+import { useStore } from "@/store/useStore";
 
 export default function SelectStatePage() {
   const [searchQuery, setSearchQuery] = useState("");
+  const router = useRouter();
+  const setSelectedState = useStore((state) => state.setSelectedState);
+
+  const handleStateSelect = (stateCode: string) => {
+    setSelectedState(stateCode);
+    router.push("/dashboard");
+  };
 
   const filteredStates = states.filter((state) =>
     state.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -41,16 +49,18 @@ export default function SelectStatePage() {
           {/* States Grid */}
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {filteredStates.map((state) => (
-              <Link key={state.code} href={`/dashboard?state=${state.code}`}>
-                <Card className="hover:shadow-lg transition-shadow cursor-pointer h-full">
-                  <CardContent className="p-6 text-center">
-                    <div className="text-3xl font-bold text-blue-600 mb-2">
-                      {state.code}
-                    </div>
-                    <div className="text-sm text-gray-600">{state.name}</div>
-                  </CardContent>
-                </Card>
-              </Link>
+              <Card
+                key={state.code}
+                className="hover:shadow-lg transition-shadow cursor-pointer h-full"
+                onClick={() => handleStateSelect(state.code)}
+              >
+                <CardContent className="p-6 text-center">
+                  <div className="text-3xl font-bold text-blue-600 mb-2">
+                    {state.code}
+                  </div>
+                  <div className="text-sm text-gray-600">{state.name}</div>
+                </CardContent>
+              </Card>
             ))}
           </div>
 

@@ -6,18 +6,31 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle2, Target, Trophy, BookOpen, MapPin } from "lucide-react";
 import Link from "next/link";
-import { useSearchParams } from "next/navigation";
+import { useStore } from "@/store/useStore";
 
 export default function DashboardPage() {
-  const searchParams = useSearchParams();
-  const selectedState = searchParams.get("state") || "CA";
+  const selectedState = useStore((state) => state.selectedState);
+  const getProgress = useStore((state) => state.getProgress);
+  const getTestSession = useStore((state) => state.getTestSession);
+  const currentTest = useStore((state) => state.currentTest);
 
-  // Mock data - will be replaced with real data later
-  const stats = {
-    testsCompleted: 2,
-    questionsAnswered: 100,
-    accuracy: 85,
-    averageScore: 42.5,
+  const stats = getProgress();
+
+  // Get status for each test
+  const getTestStatus = (testNumber: number): "not-started" | "in-progress" | "completed" => {
+    const session = getTestSession(testNumber);
+    if (session) return "completed";
+    if (currentTest.testId === testNumber) return "in-progress";
+    return "not-started";
+  };
+
+  const getTestProgress = (testNumber: number): number => {
+    if (currentTest.testId === testNumber) {
+      const answeredCount = Object.keys(currentTest.answers).length;
+      const totalQuestions = currentTest.questions.length;
+      return totalQuestions > 0 ? Math.round((answeredCount / totalQuestions) * 100) : 0;
+    }
+    return 0;
   };
 
   return (
@@ -30,10 +43,10 @@ export default function DashboardPage() {
               <h1 className="text-4xl font-bold mb-2">Dashboard</h1>
               <div className="flex items-center gap-2 text-gray-600">
                 <MapPin className="h-4 w-4" />
-                <span>Practicing for: {selectedState}</span>
+                <span>Practicing for: {selectedState || "Select a state"}</span>
                 <Link href="/select-state">
                   <Button variant="link" size="sm" className="px-2">
-                    Change State
+                    {selectedState ? "Change State" : "Select State"}
                   </Button>
                 </Link>
               </div>
@@ -77,10 +90,20 @@ export default function DashboardPage() {
         <div className="mb-8">
           <h2 className="text-2xl font-bold mb-6">Your Practice Tests</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <TestCard testNumber={1} status="completed" score={45} totalQuestions={50} />
-            <TestCard testNumber={2} status="in-progress" progress={60} totalQuestions={50} />
-            <TestCard testNumber={3} status="not-started" totalQuestions={50} />
-            <TestCard testNumber={4} status="not-started" totalQuestions={50} />
+            {[1, 2, 3, 4].map((testNumber) => {
+              const status = getTestStatus(testNumber);
+              const session = getTestSession(testNumber);
+              return (
+                <TestCard
+                  key={testNumber}
+                  testNumber={testNumber}
+                  status={status}
+                  score={session?.score}
+                  progress={getTestProgress(testNumber)}
+                  totalQuestions={50}
+                />
+              );
+            })}
           </div>
         </div>
 
@@ -91,9 +114,21 @@ export default function DashboardPage() {
             <CardDescription>Continue your practice or review past tests</CardDescription>
           </CardHeader>
           <CardContent className="flex flex-wrap gap-4">
-            <Link href="/test/2">
-              <Button>Continue Test 2</Button>
-            </Link>
+            {currentTest.testId && (
+              <Link href={`/test/${currentTest.testId}`}>
+                <Button>Continue Test {currentTest.testId}</Button>
+              </Link>
+            )}
+            {!selectedState && (
+              <Link href="/select-state">
+                <Button>Select Your State</Button>
+              </Link>
+            )}
+            {selectedState && !currentTest.testId && (
+              <Link href="/test/1">
+                <Button>Start Test 1</Button>
+              </Link>
+            )}
             <Link href="/progress">
               <Button variant="outline">View Detailed Progress</Button>
             </Link>

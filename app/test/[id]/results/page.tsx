@@ -1,51 +1,44 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useParams, useRouter, useSearchParams } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 import { QuestionCard } from "@/components/QuestionCard";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Trophy, XCircle, ChevronDown, ChevronUp } from "lucide-react";
-import { generateTest } from "@/lib/testGenerator";
-import { Question } from "@/types";
+import { useStore } from "@/store/useStore";
 
 export default function ResultsPage() {
   const params = useParams();
   const router = useRouter();
-  const searchParams = useSearchParams();
   const testId = parseInt(params.id as string);
-  const score = parseInt(searchParams.get("score") || "0");
 
-  const [questions, setQuestions] = useState<Question[]>([]);
+  const getTestSession = useStore((state) => state.getTestSession);
   const [expandedQuestions, setExpandedQuestions] = useState<Set<number>>(new Set());
   const [loading, setLoading] = useState(true);
 
-  // For demo purposes - in production, this would come from saved test state
-  const [answers, setAnswers] = useState<{ [key: number]: string }>({});
+  const testSession = getTestSession(testId);
 
   useEffect(() => {
-    try {
-      const testQuestions = generateTest(testId, "CA");
-      setQuestions(testQuestions);
-
-      // Generate mock answers for demo
-      const mockAnswers: { [key: number]: string } = {};
-      testQuestions.forEach((q, index) => {
-        if (index < score) {
-          mockAnswers[index] = q.correctAnswer;
-        } else {
-          const wrongOptions = ["A", "B", "C", "D"].filter(opt => opt !== q.correctAnswer);
-          mockAnswers[index] = wrongOptions[Math.floor(Math.random() * wrongOptions.length)];
-        }
-      });
-      setAnswers(mockAnswers);
-      setLoading(false);
-    } catch (error) {
-      console.error("Error loading questions:", error);
+    if (!testSession) {
+      // No test session found, redirect to test
+      router.push(`/test/${testId}`);
+    } else {
       setLoading(false);
     }
-  }, [testId, score]);
+  }, [testSession, testId, router]);
+
+  if (!testSession) {
+    return null;
+  }
+
+  const questions = testSession.questions;
+  const score = testSession.score || 0;
+  const answers: { [key: number]: string } = {};
+  testSession.answers.forEach((answer, index) => {
+    answers[index] = answer.userAnswer;
+  });
 
   const totalQuestions = questions.length;
   const percentage = totalQuestions > 0 ? Math.round((score / totalQuestions) * 100) : 0;

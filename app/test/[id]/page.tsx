@@ -9,11 +9,18 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { generateTest } from "@/lib/testGenerator";
 import { Question } from "@/types";
+import { useStore } from "@/store/useStore";
 
 export default function TestPage() {
   const params = useParams();
   const router = useRouter();
   const testId = parseInt(params.id as string);
+
+  const selectedState = useStore((state) => state.selectedState);
+  const currentTest = useStore((state) => state.currentTest);
+  const startTest = useStore((state) => state.startTest);
+  const setAnswer = useStore((state) => state.setAnswer);
+  const completeTest = useStore((state) => state.completeTest);
 
   const [questions, setQuestions] = useState<Question[]>([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -23,15 +30,25 @@ export default function TestPage() {
   // Load questions on mount
   useEffect(() => {
     try {
-      // For now, using "CA" as default state - will be replaced with actual user state later
-      const testQuestions = generateTest(testId, "CA");
+      const state = selectedState || "CA";
+      const testQuestions = generateTest(testId, state);
       setQuestions(testQuestions);
+
+      // Check if we have a saved test session for this test
+      if (currentTest.testId === testId && currentTest.questions.length > 0) {
+        // Resume from saved state
+        setAnswers(currentTest.answers);
+      } else {
+        // Start new test
+        startTest(testId, testQuestions);
+      }
+
       setLoading(false);
     } catch (error) {
       console.error("Error loading questions:", error);
       setLoading(false);
     }
-  }, [testId]);
+  }, [testId, selectedState, currentTest, startTest]);
 
   const currentQuestion = questions[currentQuestionIndex];
   const totalQuestions = questions.length;
@@ -43,6 +60,8 @@ export default function TestPage() {
       ...prev,
       [currentQuestionIndex]: answer,
     }));
+    // Save to store
+    setAnswer(currentQuestionIndex, answer);
   };
 
   const handlePrevious = () => {
@@ -66,8 +85,11 @@ export default function TestPage() {
       }
     });
 
+    // Save completed test to store
+    completeTest(testId, correctCount, questions, answers);
+
     // Navigate to results page with score
-    router.push(`/test/${testId}/results?score=${correctCount}`);
+    router.push(`/test/${testId}/results`);
   };
 
   const canSubmit = answeredCount === totalQuestions;

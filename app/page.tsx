@@ -39,7 +39,7 @@ export default function Home() {
               style={{ maxHeight: '330px' }}
             />
           </div>
-          <p className="text-xl md:text-2xl mb-4 text-gray-700 max-w-3xl mx-auto">
+          <p className="text-4xl font-bold text-gray-900 mb-4 max-w-3xl mx-auto">
             Practice with 200 questions per state - completely free
           </p>
           <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">

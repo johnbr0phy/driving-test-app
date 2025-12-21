@@ -334,18 +334,12 @@ export const useStore = create<AppState>()(
       },
 
       getPassProbability: () => {
-        const { testAttempts, training, selectedState } = get();
+        const { testAttempts, selectedState } = get();
         const stateAttempts = testAttempts.filter((a) => a.state === selectedState);
 
-        // If no tests completed, use training data
+        // If no tests completed, return 0
         if (stateAttempts.length === 0) {
-          const totalTrainingQuestions = training.correctCount + training.incorrectCount;
-          if (totalTrainingQuestions === 0) {
-            return 0; // No data yet
-          }
-          const trainingAccuracy = (training.correctCount / totalTrainingQuestions) * 100;
-          // Training accuracy is a rough estimate, cap at 70% for untested users
-          return Math.min(Math.round(trainingAccuracy * 0.7), 70);
+          return 0;
         }
 
         // Find BEST score across all tests (maximum capability)

@@ -70,6 +70,46 @@ export default function DashboardPage() {
           <span className="text-sm">Practicing for: {selectedState}</span>
         </div>
 
+        {/* Pass Probability */}
+        <Card className={`mb-6 ${
+          passProbability === 0
+            ? "bg-gradient-to-r from-gray-50 to-gray-100 border-gray-200"
+            : passProbability >= 80
+              ? "bg-gradient-to-r from-green-50 to-emerald-50 border-green-200"
+              : passProbability >= 60
+                ? "bg-gradient-to-r from-orange-50 to-amber-50 border-orange-200"
+                : "bg-gradient-to-r from-red-50 to-rose-50 border-red-200"
+        }`}>
+          <CardContent className="p-6">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-4">
+                <TrendingUp className={`h-10 w-10 ${
+                  passProbability === 0
+                    ? "text-gray-600"
+                    : passProbability >= 80
+                      ? "text-green-600"
+                      : passProbability >= 60
+                        ? "text-orange-600"
+                        : "text-red-600"
+                }`} />
+                <div>
+                  <p className="text-lg text-gray-700">
+                    {passProbability === 0
+                      ? "Complete a practice test to see your pass probability"
+                      : `There is a ${passProbability}% chance that you will pass your driving knowledge test.`
+                    }
+                  </p>
+                </div>
+              </div>
+              <Link href="/stats">
+                <Button variant="outline" className="bg-white hover:bg-gray-50">
+                  More Stats
+                </Button>
+              </Link>
+            </div>
+          </CardContent>
+        </Card>
+
         {/* Training Mode */}
         <div className="mb-6">
           <h2 className="text-2xl font-bold mb-2">Training Mode</h2>
@@ -129,30 +169,6 @@ export default function DashboardPage() {
             })}
           </div>
         </div>
-
-        {/* Pass Probability */}
-        <Card className="bg-gradient-to-r from-green-50 to-emerald-50 border-green-200">
-          <CardContent className="p-6">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-4">
-                <TrendingUp className="h-10 w-10 text-green-600" />
-                <div>
-                  <p className="text-lg text-gray-700">
-                    {passProbability === 0
-                      ? "Start practicing to see your pass probability"
-                      : `There is a ${passProbability}% chance that you will pass your driving knowledge test.`
-                    }
-                  </p>
-                </div>
-              </div>
-              <Link href="/stats">
-                <Button variant="outline" className="bg-white hover:bg-gray-50">
-                  More Stats
-                </Button>
-              </Link>
-            </div>
-          </CardContent>
-        </Card>
       </div>
     </div>
   );

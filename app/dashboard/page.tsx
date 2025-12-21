@@ -162,32 +162,6 @@ export default function DashboardPage() {
             </Link>
           </CardContent>
         </Card>
-
-        {/* Quick Actions */}
-        <Card>
-          <CardHeader>
-            <CardTitle>Quick Actions</CardTitle>
-            <CardDescription>Continue your practice or review past tests</CardDescription>
-          </CardHeader>
-          <CardContent className="flex flex-wrap gap-4">
-            {currentTest.testId && (
-              <Link href={`/test/${currentTest.testId}`}>
-                <Button>Continue Test {currentTest.testId}</Button>
-              </Link>
-            )}
-            {selectedState && !currentTest.testId && (
-              <Link href="/test/1">
-                <Button>Start Test 1</Button>
-              </Link>
-            )}
-            <Link href="/progress">
-              <Button variant="outline">View Detailed Progress</Button>
-            </Link>
-            <Link href="/review">
-              <Button variant="outline">Review Questions</Button>
-            </Link>
-          </CardContent>
-        </Card>
       </div>
     </div>
   );

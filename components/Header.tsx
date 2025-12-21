@@ -17,17 +17,9 @@ export function Header() {
   return (
     <header className="border-b bg-white">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <Link href="/" className="text-2xl font-bold text-blue-600">
+        <Link href={user ? "/dashboard" : "/"} className="text-2xl font-bold text-blue-600">
           DrivingTest
         </Link>
-
-        {user && (
-          <nav className="hidden md:flex items-center gap-6">
-            <Link href="/dashboard" className="text-gray-600 hover:text-gray-900">
-              Dashboard
-            </Link>
-          </nav>
-        )}
 
         <div className="flex items-center gap-4">
           {user ? (

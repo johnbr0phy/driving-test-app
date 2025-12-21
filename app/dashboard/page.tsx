@@ -1,5 +1,7 @@
 "use client";
 
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
 import { TestCard } from "@/components/TestCard";
 import { StatsCard } from "@/components/StatsCard";
 import { Button } from "@/components/ui/button";
@@ -10,11 +12,19 @@ import { useStore } from "@/store/useStore";
 import { useHydration } from "@/hooks/useHydration";
 
 export default function DashboardPage() {
+  const router = useRouter();
   const hydrated = useHydration();
   const selectedState = useStore((state) => state.selectedState);
   const getProgress = useStore((state) => state.getProgress);
   const getTestSession = useStore((state) => state.getTestSession);
   const currentTest = useStore((state) => state.currentTest);
+
+  // Redirect to onboarding if no state selected
+  useEffect(() => {
+    if (hydrated && !selectedState) {
+      router.push("/onboarding/select-state");
+    }
+  }, [hydrated, selectedState, router]);
 
   const stats = hydrated ? getProgress() : {
     testsCompleted: 0,

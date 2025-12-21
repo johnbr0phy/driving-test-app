@@ -39,7 +39,8 @@ export default function LoginPage() {
 
     try {
       await loginWithGoogle();
-      router.push("/select-state");
+      // Note: Redirect logic will be handled by checking selectedState in useEffect
+      router.push("/dashboard");
     } catch (err: any) {
       setError(err.message || "Failed to sign in with Google");
     } finally {

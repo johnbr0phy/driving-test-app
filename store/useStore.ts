@@ -226,11 +226,11 @@ export const useStore = create<AppState>()(
             },
             completedTests: completedTests.map(test => ({
               ...test,
-              startedAt: test.startedAt.toISOString(),
-              completedAt: test.completedAt.toISOString(),
+              startedAt: test.startedAt instanceof Date ? test.startedAt.toISOString() : test.startedAt,
+              completedAt: test.completedAt instanceof Date ? test.completedAt.toISOString() : test.completedAt,
               answers: test.answers.map(a => ({
                 ...a,
-                answeredAt: a.answeredAt.toISOString(),
+                answeredAt: a.answeredAt instanceof Date ? a.answeredAt.toISOString() : a.answeredAt,
               })),
             })),
             lastUpdated: new Date().toISOString(),

@@ -1,8 +1,7 @@
 import { Question } from "@/types";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-import { Label } from "@/components/ui/label";
 import { Badge } from "@/components/ui/badge";
+import { CheckCircle2, XCircle } from "lucide-react";
 
 interface QuestionCardProps {
   question: Question;
@@ -30,6 +29,23 @@ export function QuestionCard({
 
   const isCorrect = selectedAnswer === question.correctAnswer;
 
+  const getOptionClasses = (optionValue: string) => {
+    const isThisCorrect = optionValue === question.correctAnswer;
+    const isSelected = selectedAnswer === optionValue;
+
+    if (showResult) {
+      if (isThisCorrect) {
+        return "border-green-500 bg-green-50";
+      } else if (isSelected && !isCorrect) {
+        return "border-red-500 bg-red-50";
+      }
+      return "border-gray-300 opacity-50";
+    }
+
+    // During test - no visual selection indicator
+    return "border-gray-300 hover:border-blue-500 hover:bg-blue-50 cursor-pointer";
+  };
+
   return (
     <Card className="w-full">
       <CardHeader>
@@ -42,47 +58,33 @@ export function QuestionCard({
         <CardTitle className="text-xl">{question.question}</CardTitle>
       </CardHeader>
       <CardContent>
-        <RadioGroup value={selectedAnswer} onValueChange={onAnswerChange}>
-          <div className="space-y-3">
-            {options.map((option) => {
-              const isThisCorrect = option.value === question.correctAnswer;
-              const isSelected = selectedAnswer === option.value;
+        <div className="space-y-3">
+          {options.map((option) => {
+            const isThisCorrect = option.value === question.correctAnswer;
+            const isSelected = selectedAnswer === option.value;
 
-              let itemClassName = "flex items-center space-x-3 p-4 rounded-lg border cursor-pointer hover:bg-gray-50 transition-colors";
-
-              if (showResult) {
-                if (isThisCorrect) {
-                  itemClassName += " bg-green-50 border-green-500";
-                } else if (isSelected && !isCorrect) {
-                  itemClassName += " bg-red-50 border-red-500";
-                }
-              }
-
-              return (
-                <div key={option.value} className={itemClassName}>
-                  <RadioGroupItem
-                    value={option.value}
-                    id={`option-${option.value}`}
-                    disabled={showResult}
-                  />
-                  <Label
-                    htmlFor={`option-${option.value}`}
-                    className="flex-1 cursor-pointer font-normal"
-                  >
-                    <span className="font-semibold mr-2">{option.value}.</span>
-                    {option.label}
-                  </Label>
+            return (
+              <div
+                key={option.value}
+                onClick={() => !showResult && onAnswerChange(option.value)}
+                className={`border-2 rounded-lg p-4 transition-all ${getOptionClasses(option.value)}`}
+              >
+                <div className="flex items-center justify-between">
+                  <div className="flex-1">
+                    <span className="font-bold text-lg mr-2">{option.value}.</span>
+                    <span>{option.label}</span>
+                  </div>
                   {showResult && isThisCorrect && (
-                    <Badge className="bg-green-500">Correct</Badge>
+                    <CheckCircle2 className="h-6 w-6 text-green-600" />
                   )}
                   {showResult && isSelected && !isCorrect && (
-                    <Badge className="bg-red-500">Wrong</Badge>
+                    <XCircle className="h-6 w-6 text-red-600" />
                   )}
                 </div>
-              );
-            })}
-          </div>
-        </RadioGroup>
+              </div>
+            );
+          })}
+        </div>
 
         {showResult && (
           <div className="mt-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">

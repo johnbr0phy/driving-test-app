@@ -9,6 +9,7 @@ import { MapPin, Zap, TrendingUp } from "lucide-react";
 import Link from "next/link";
 import { useStore } from "@/store/useStore";
 import { useHydration } from "@/hooks/useHydration";
+import { states } from "@/data/states";
 
 export default function DashboardPage() {
   const router = useRouter();
@@ -26,6 +27,9 @@ export default function DashboardPage() {
   const [expandedTest, setExpandedTest] = useState<number | null>(null);
 
   const passProbability = hydrated ? getPassProbability() : 0;
+
+  // Get state name from code
+  const stateName = states.find((s) => s.code === selectedState)?.name || selectedState;
 
   // Redirect to onboarding if no state selected
   useEffect(() => {
@@ -65,12 +69,6 @@ export default function DashboardPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       <div className="container mx-auto px-4 py-8 max-w-6xl">
-        {/* State Indicator */}
-        <div className="flex items-center gap-2 text-gray-600 mb-6">
-          <MapPin className="h-4 w-4" />
-          <span className="text-sm">Practicing for: {selectedState}</span>
-        </div>
-
         {/* Pass Probability */}
         <Card className={`mb-6 ${
           passProbability === 0
@@ -97,7 +95,7 @@ export default function DashboardPage() {
                   <p className="text-lg text-gray-700">
                     {passProbability === 0
                       ? "Complete a practice test to see your pass probability"
-                      : `There is a ${passProbability}% chance that you will pass your driving knowledge test.`
+                      : `There is a ${passProbability}% chance that you will pass the ${stateName} driving knowledge test.`
                     }
                   </p>
                 </div>

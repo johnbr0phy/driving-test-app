@@ -9,6 +9,7 @@ import Link from "next/link";
 import { useStore } from "@/store/useStore";
 import { useHydration } from "@/hooks/useHydration";
 import { Progress } from "@/components/ui/progress";
+import { states } from "@/data/states";
 
 export default function StatsPage() {
   const router = useRouter();
@@ -19,6 +20,9 @@ export default function StatsPage() {
   const getPassProbability = useStore((state) => state.getPassProbability);
   const getTestAttemptStats = useStore((state) => state.getTestAttemptStats);
   const training = useStore((state) => state.training);
+
+  // Get state name from code
+  const stateName = states.find((s) => s.code === selectedState)?.name || selectedState;
 
   // Redirect to onboarding if no state selected
   useEffect(() => {
@@ -156,7 +160,7 @@ export default function StatsPage() {
               <p className="text-lg text-gray-700 mb-2">
                 {passProbability === 0
                   ? "Complete practice tests to see your pass probability"
-                  : "Estimated chance of passing your driving knowledge test"
+                  : `Estimated chance of passing the ${stateName} driving knowledge test`
                 }
               </p>
               {passProbability > 0 && passProbability < 80 && (

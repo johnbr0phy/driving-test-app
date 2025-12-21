@@ -62,12 +62,7 @@ export default function DashboardPage() {
               <h1 className="text-4xl font-bold mb-2">Dashboard</h1>
               <div className="flex items-center gap-2 text-gray-600">
                 <MapPin className="h-4 w-4" />
-                <span>Practicing for: {selectedState || "Select a state"}</span>
-                <Link href="/select-state">
-                  <Button variant="link" size="sm" className="px-2">
-                    {selectedState ? "Change State" : "Select State"}
-                  </Button>
-                </Link>
+                <span>Practicing for: {selectedState}</span>
               </div>
             </div>
           </div>
@@ -140,11 +135,6 @@ export default function DashboardPage() {
             {currentTest.testId && (
               <Link href={`/test/${currentTest.testId}`}>
                 <Button>Continue Test {currentTest.testId}</Button>
-              </Link>
-            )}
-            {!selectedState && (
-              <Link href="/select-state">
-                <Button>Select Your State</Button>
               </Link>
             )}
             {selectedState && !currentTest.testId && (

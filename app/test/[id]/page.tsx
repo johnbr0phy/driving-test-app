@@ -10,11 +10,13 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { generateTest } from "@/lib/testGenerator";
 import { Question } from "@/types";
 import { useStore } from "@/store/useStore";
+import { useHydration } from "@/hooks/useHydration";
 
 export default function TestPage() {
   const params = useParams();
   const router = useRouter();
   const testId = parseInt(params.id as string);
+  const hydrated = useHydration();
 
   const selectedState = useStore((state) => state.selectedState);
   const currentTest = useStore((state) => state.currentTest);
@@ -27,8 +29,12 @@ export default function TestPage() {
   const [answers, setAnswers] = useState<{ [key: number]: string }>({});
   const [loading, setLoading] = useState(true);
 
-  // Load questions on mount
+  // Load questions on mount (wait for hydration)
   useEffect(() => {
+    if (!hydrated) {
+      return; // Wait for hydration to complete
+    }
+
     try {
       const state = selectedState || "CA";
       const testQuestions = generateTest(testId, state);
@@ -48,7 +54,7 @@ export default function TestPage() {
       console.error("Error loading questions:", error);
       setLoading(false);
     }
-  }, [testId, selectedState, currentTest, startTest]);
+  }, [testId, selectedState, currentTest, startTest, hydrated]);
 
   const currentQuestion = questions[currentQuestionIndex];
   const totalQuestions = questions.length;

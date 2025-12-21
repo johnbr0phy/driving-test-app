@@ -122,7 +122,7 @@ export default function DashboardPage() {
           <h2 className="text-2xl font-bold mb-4">Training Mode</h2>
           <Card className="bg-gradient-to-r from-orange-50 to-amber-50 border-orange-200">
             <CardContent className="p-6">
-              <div className="flex items-center justify-between">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                 <div className="flex items-center gap-4">
                   <Zap className="h-10 w-10 text-orange-600" />
                   <div>
@@ -130,7 +130,7 @@ export default function DashboardPage() {
                   </div>
                 </div>
                 <Link href="/training">
-                  <Button className="bg-black text-white hover:bg-gray-800">
+                  <Button className="bg-black text-white hover:bg-gray-800 w-full sm:w-auto">
                     Start Training
                   </Button>
                 </Link>

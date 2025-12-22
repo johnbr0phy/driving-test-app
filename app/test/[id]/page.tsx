@@ -196,6 +196,7 @@ export default function TestPage() {
         {/* Question Card */}
         <div className="mb-6">
           <QuestionCard
+            key={currentQuestion.questionId}
             question={currentQuestion}
             questionNumber={currentQuestionIndex + 1}
             totalQuestions={totalQuestions}

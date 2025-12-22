@@ -6,6 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, TrendingUp, Target, Award, BookOpen, AlertCircle, CheckCircle, XCircle } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { useStore } from "@/store/useStore";
 import { useHydration } from "@/hooks/useHydration";
 import { Progress } from "@/components/ui/progress";
@@ -24,6 +25,18 @@ export default function StatsPage() {
 
   // Get state name from code
   const stateName = states.find((s) => s.code === selectedState)?.name || selectedState;
+
+  // Get tiger face image based on percentage
+  const getTigerFace = (percentage: number): string => {
+    if (percentage >= 100) return "/tiger_face_01.png";
+    if (percentage >= 90) return "/tiger_face_02.png";
+    if (percentage >= 80) return "/tiger_face_03.png";
+    if (percentage >= 70) return "/tiger_face_04.png";
+    if (percentage >= 60) return "/tiger_face_05.png";
+    if (percentage >= 50) return "/tiger_face_06.png";
+    if (percentage >= 40) return "/tiger_face_07.png";
+    return "/tiger_face_08.png";
+  };
 
   // Redirect guests to signup (stats require an account)
   useEffect(() => {
@@ -153,21 +166,18 @@ export default function StatsPage() {
         }`}>
           <CardContent className="p-8">
             <div className="text-center">
-              <div className="text-6xl mb-4">
-                {passProbability === 0
-                  ? "❓"
-                  : passProbability >= 90
-                    ? "🎉"
-                    : passProbability >= 80
-                      ? "😄"
-                      : passProbability >= 70
-                        ? "🙂"
-                        : passProbability >= 60
-                          ? "😐"
-                          : passProbability >= 40
-                            ? "😕"
-                            : "😰"
-                }
+              <div className="mb-4 flex justify-center">
+                {passProbability === 0 ? (
+                  <span className="text-6xl">❓</span>
+                ) : (
+                  <Image
+                    src={getTigerFace(passProbability)}
+                    alt="Tiger mascot"
+                    width={80}
+                    height={80}
+                    className="w-20 h-20"
+                  />
+                )}
               </div>
               <h2 className="text-3xl font-bold mb-2">
                 {passProbability === 0
@@ -248,27 +258,22 @@ export default function StatsPage() {
             <div className="space-y-4">
               {testStats.map(({ testNumber, stats }) => {
                 const percentage = stats ? Math.round((stats.bestScore / 50) * 100) : 0;
-                const emoji = !stats
-                  ? "⭕"
-                  : percentage === 100
-                    ? "🏆"
-                    : percentage >= 90
-                      ? "🎉"
-                      : percentage >= 80
-                        ? "😄"
-                        : percentage >= 70
-                          ? "🙂"
-                          : percentage >= 60
-                            ? "😐"
-                            : percentage >= 40
-                              ? "😕"
-                              : "😰";
 
                 return (
                   <div key={testNumber} className="border-b pb-4 last:border-b-0 last:pb-0">
                     <div className="flex items-center justify-between mb-2">
                       <div className="flex items-center gap-3">
-                        <span className="text-2xl">{emoji}</span>
+                        {!stats ? (
+                          <span className="text-2xl">⭕</span>
+                        ) : (
+                          <Image
+                            src={getTigerFace(percentage)}
+                            alt="Tiger mascot"
+                            width={32}
+                            height={32}
+                            className="w-8 h-8"
+                          />
+                        )}
                         <h3 className="font-semibold">Test {testNumber}</h3>
                       </div>
                       <div className="flex gap-4 text-sm">

@@ -80,6 +80,10 @@ export function TrainingCard({
         {/* Feedback */}
         {answered && (
           <div className="space-y-4">
+            <Button onClick={onNext} className="w-full bg-black text-white hover:bg-gray-800" size="lg">
+              Next Question
+            </Button>
+
             <div
               className={`p-4 rounded-lg ${
                 isCorrect ? "bg-green-50 border border-green-200" : "bg-red-50 border border-red-200"
@@ -94,10 +98,6 @@ export function TrainingCard({
               </div>
               <p className="text-gray-700">{question.explanation}</p>
             </div>
-
-            <Button onClick={onNext} className="w-full bg-black text-white hover:bg-gray-800" size="lg">
-              Next Question
-            </Button>
           </div>
         )}
       </CardContent>

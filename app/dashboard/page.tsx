@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { TestCard } from "@/components/TestCard";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { MapPin, Zap, TrendingUp } from "lucide-react";
+import { MapPin, Zap, TrendingUp, Target } from "lucide-react";
 import Link from "next/link";
 import { useStore } from "@/store/useStore";
 import { useHydration } from "@/hooks/useHydration";
@@ -23,10 +23,13 @@ export default function DashboardPage() {
   const isTestUnlocked = useStore((state) => state.isTestUnlocked);
   const training = useStore((state) => state.training);
   const getPassProbability = useStore((state) => state.getPassProbability);
+  const isOnboardingComplete = useStore((state) => state.isOnboardingComplete);
 
   const [expandedTest, setExpandedTest] = useState<number | null>(null);
 
   const passProbability = hydrated ? getPassProbability() : 0;
+  const onboardingComplete = hydrated ? isOnboardingComplete() : true; // Default true to avoid flash
+  const trainingProgress = training.totalCorrectAllTime;
 
   // Get state name from code
   const stateName = states.find((s) => s.code === selectedState)?.name || selectedState;
@@ -37,6 +40,36 @@ export default function DashboardPage() {
       router.push("/onboarding/select-state");
     }
   }, [hydrated, selectedState, router]);
+
+  // Auto-expand the next available test on mobile
+  useEffect(() => {
+    if (!hydrated) return;
+
+    // Find the next test to expand (first test that is in-progress or not started and unlocked)
+    for (let testNumber = 1; testNumber <= 4; testNumber++) {
+      const currentTest = getCurrentTest(testNumber);
+      const session = getTestSession(testNumber);
+      const unlocked = isTestUnlocked(testNumber);
+
+      // If test is in progress, expand it
+      if (currentTest && currentTest.questions.length > 0) {
+        setExpandedTest(testNumber);
+        return;
+      }
+
+      // If test is unlocked and not completed yet, expand it
+      if (unlocked && !session) {
+        setExpandedTest(testNumber);
+        return;
+      }
+
+      // If test is unlocked and completed, continue to next test
+      // If test is locked, continue to next (shouldn't happen)
+    }
+
+    // If all tests are completed, expand the last one
+    setExpandedTest(4);
+  }, [hydrated, getCurrentTest, getTestSession, isTestUnlocked]);
 
   const stats = hydrated ? getProgress() : {
     testsCompleted: 0,
@@ -77,45 +110,80 @@ export default function DashboardPage() {
   return (
     <div className="min-h-screen bg-white">
       <div className="container mx-auto px-4 py-8 max-w-6xl">
-        {/* Pass Probability */}
-        <Card className={`mb-6 ${
-          passProbability === 0
-            ? "bg-gradient-to-r from-gray-50 to-gray-100 border-gray-200"
-            : passProbability >= 80
-              ? "bg-gradient-to-r from-green-50 to-emerald-50 border-green-200"
-              : passProbability >= 60
-                ? "bg-gradient-to-r from-orange-50 to-amber-50 border-orange-200"
-                : "bg-gradient-to-r from-red-50 to-rose-50 border-red-200"
-        }`}>
-          <CardContent className="p-6">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-4">
-                <TrendingUp className={`h-10 w-10 ${
-                  passProbability === 0
-                    ? "text-gray-600"
-                    : passProbability >= 80
-                      ? "text-green-600"
-                      : passProbability >= 60
-                        ? "text-orange-600"
-                        : "text-red-600"
-                }`} />
-                <div>
-                  <p className="text-lg text-gray-700">
-                    {passProbability === 0
-                      ? "Complete a practice test to see your pass probability"
-                      : `There is a ${passProbability}% chance that you will pass the ${stateName} driving knowledge test.`
-                    }
-                  </p>
+        {/* Pass Probability - Only show when onboarding is complete */}
+        {onboardingComplete && (
+          <Card className={`mb-6 ${
+            passProbability === 0
+              ? "bg-gradient-to-r from-gray-50 to-gray-100 border-gray-200"
+              : passProbability >= 80
+                ? "bg-gradient-to-r from-green-50 to-emerald-50 border-green-200"
+                : passProbability >= 60
+                  ? "bg-gradient-to-r from-orange-50 to-amber-50 border-orange-200"
+                  : "bg-gradient-to-r from-red-50 to-rose-50 border-red-200"
+          }`}>
+            <CardContent className="p-6">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-4">
+                  <TrendingUp className={`h-10 w-10 ${
+                    passProbability === 0
+                      ? "text-gray-600"
+                      : passProbability >= 80
+                        ? "text-green-600"
+                        : passProbability >= 60
+                          ? "text-orange-600"
+                          : "text-red-600"
+                  }`} />
+                  <div>
+                    <p className="text-lg text-gray-700">
+                      {passProbability === 0
+                        ? "Complete a practice test to see your pass probability"
+                        : `There is a ${passProbability}% chance that you will pass the ${stateName} driving knowledge test.`
+                      }
+                    </p>
+                  </div>
                 </div>
+                <Link href="/stats">
+                  <Button variant="outline" className="bg-white hover:bg-gray-50">
+                    More Stats
+                  </Button>
+                </Link>
               </div>
-              <Link href="/stats">
-                <Button variant="outline" className="bg-white hover:bg-gray-50">
-                  More Stats
-                </Button>
-              </Link>
-            </div>
-          </CardContent>
-        </Card>
+            </CardContent>
+          </Card>
+        )}
+
+        {/* Onboarding CTA - Show when onboarding is not complete */}
+        {!onboardingComplete && (
+          <Card className="mb-6 bg-gradient-to-r from-orange-100 to-amber-100 border-orange-300">
+            <CardContent className="p-6 md:p-8">
+              <div className="text-center">
+                <Target className="h-12 w-12 text-orange-600 mx-auto mb-4" />
+                <h2 className="text-2xl font-bold text-orange-900 mb-2">
+                  Get Started with Training Mode
+                </h2>
+                <p className="text-orange-800 mb-4 max-w-lg mx-auto">
+                  Answer 10 questions correctly in Training Mode to unlock Practice Tests and track your pass probability.
+                </p>
+                <div className="mb-4">
+                  <div className="text-sm text-orange-700 mb-2">
+                    Progress: {trainingProgress}/10 correct answers
+                  </div>
+                  <div className="w-full bg-orange-200 rounded-full h-3 max-w-xs mx-auto">
+                    <div
+                      className="bg-orange-600 h-3 rounded-full transition-all"
+                      style={{ width: `${Math.min(100, (trainingProgress / 10) * 100)}%` }}
+                    />
+                  </div>
+                </div>
+                <Link href="/training">
+                  <Button size="lg" className="bg-black text-white hover:bg-gray-800 text-lg px-8 py-6">
+                    Start Training
+                  </Button>
+                </Link>
+              </div>
+            </CardContent>
+          </Card>
+        )}
 
         {/* Training Mode */}
         <div className="mb-6">
@@ -129,8 +197,8 @@ export default function DashboardPage() {
                     <h3 className="font-bold text-lg text-orange-900">Learn at your own pace.</h3>
                   </div>
                 </div>
-                <Link href="/training">
-                  <Button className="bg-black text-white hover:bg-gray-800 w-full sm:w-auto">
+                <Link href="/training" className="w-full sm:w-auto">
+                  <Button className="bg-black text-white hover:bg-gray-800 w-full">
                     Start Training
                   </Button>
                 </Link>
@@ -139,37 +207,39 @@ export default function DashboardPage() {
           </Card>
         </div>
 
-        {/* Practice Tests */}
-        <div className="mb-6">
-          <h2 className="text-2xl font-bold mb-4">Simulate the real exam</h2>
-          <div className="space-y-3">
-            {[1, 2, 3, 4].map((testNumber) => {
-              const status = getTestStatus(testNumber);
-              const session = getTestSession(testNumber);
-              const attemptStats = getTestAttemptStats(testNumber);
-              const averageScore = getTestAverageScore(testNumber);
-              const locked = !isTestUnlocked(testNumber);
-              return (
-                <TestCard
-                  key={testNumber}
-                  testNumber={testNumber}
-                  status={status}
-                  score={session?.score}
-                  progress={getTestProgress(testNumber)}
-                  totalQuestions={50}
-                  firstScore={attemptStats?.firstScore}
-                  bestScore={attemptStats?.bestScore}
-                  attemptCount={attemptStats?.attemptCount}
-                  averageScore={averageScore}
-                  locked={locked}
-                  lockMessage={getLockMessage(testNumber)}
-                  expanded={expandedTest === testNumber}
-                  onToggle={() => setExpandedTest(expandedTest === testNumber ? null : testNumber)}
-                />
-              );
-            })}
+        {/* Practice Tests - Only show when onboarding is complete */}
+        {onboardingComplete && (
+          <div className="mb-6">
+            <h2 className="text-2xl font-bold mb-4">Simulate the real exam</h2>
+            <div className="space-y-3">
+              {[1, 2, 3, 4].map((testNumber) => {
+                const status = getTestStatus(testNumber);
+                const session = getTestSession(testNumber);
+                const attemptStats = getTestAttemptStats(testNumber);
+                const averageScore = getTestAverageScore(testNumber);
+                const locked = !isTestUnlocked(testNumber);
+                return (
+                  <TestCard
+                    key={testNumber}
+                    testNumber={testNumber}
+                    status={status}
+                    score={session?.score}
+                    progress={getTestProgress(testNumber)}
+                    totalQuestions={50}
+                    firstScore={attemptStats?.firstScore}
+                    bestScore={attemptStats?.bestScore}
+                    attemptCount={attemptStats?.attemptCount}
+                    averageScore={averageScore}
+                    locked={locked}
+                    lockMessage={getLockMessage(testNumber)}
+                    expanded={expandedTest === testNumber}
+                    onToggle={() => setExpandedTest(expandedTest === testNumber ? null : testNumber)}
+                  />
+                );
+              })}
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </div>
   );

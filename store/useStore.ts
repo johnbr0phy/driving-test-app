@@ -40,9 +40,13 @@ interface AppState {
     incorrectCount: number;
     currentStreak: number;
     bestStreak: number;
+    totalCorrectAllTime: number; // Total correct answers across all training sessions
   };
   answerTrainingQuestion: (questionId: string, isCorrect: boolean) => void;
   resetTrainingSession: () => void;
+
+  // Onboarding
+  isOnboardingComplete: () => boolean;
 
   // Progress stats
   getProgress: () => {
@@ -78,6 +82,7 @@ export const useStore = create<AppState>()(
         incorrectCount: 0,
         currentStreak: 0,
         bestStreak: 0,
+        totalCorrectAllTime: 0,
       },
       userId: null,
       photoURL: null,
@@ -105,6 +110,7 @@ export const useStore = create<AppState>()(
             incorrectCount: 0,
             currentStreak: 0,
             bestStreak: 0,
+            totalCorrectAllTime: 0,
           },
         });
         // Save to Firestore
@@ -275,6 +281,7 @@ export const useStore = create<AppState>()(
               incorrectCount: state.training.incorrectCount + (isCorrect ? 0 : 1),
               currentStreak: newStreak,
               bestStreak: Math.max(state.training.bestStreak, newStreak),
+              totalCorrectAllTime: state.training.totalCorrectAllTime + (isCorrect ? 1 : 0),
             },
           };
         });
@@ -289,10 +296,35 @@ export const useStore = create<AppState>()(
             correctCount: 0,
             incorrectCount: 0,
             currentStreak: 0,
-            // Keep bestStreak
+            // Keep bestStreak and totalCorrectAllTime
           },
         }));
         get().saveToFirestore();
+      },
+
+      // Onboarding check - returns true if user has completed onboarding
+      // (10+ correct training answers OR any existing app usage for backwards compatibility)
+      isOnboardingComplete: () => {
+        const { training, completedTests, testAttempts, selectedState } = get();
+
+        // If user has 10+ correct training answers, onboarding is complete
+        if (training.totalCorrectAllTime >= 10) {
+          return true;
+        }
+
+        // Backwards compatibility: if user has any test history, they're onboarded
+        const hasCompletedTests = completedTests.some((t) => t.state === selectedState);
+        if (hasCompletedTests) {
+          return true;
+        }
+
+        // Backwards compatibility: if user has any test attempt stats, they're onboarded
+        const hasTestAttempts = testAttempts.some((a) => a.state === selectedState);
+        if (hasTestAttempts) {
+          return true;
+        }
+
+        return false;
       },
 
       getProgress: () => {
@@ -371,12 +403,13 @@ export const useStore = create<AppState>()(
               currentTests: data.currentTests || {},
               completedTests: data.completedTests || [],
               testAttempts: data.testAttempts || [],
-              training: data.training || {
-                questionsAnswered: [],
-                correctCount: 0,
-                incorrectCount: 0,
-                currentStreak: 0,
-                bestStreak: 0,
+              training: {
+                questionsAnswered: data.training?.questionsAnswered || [],
+                correctCount: data.training?.correctCount || 0,
+                incorrectCount: data.training?.incorrectCount || 0,
+                currentStreak: data.training?.currentStreak || 0,
+                bestStreak: data.training?.bestStreak || 0,
+                totalCorrectAllTime: data.training?.totalCorrectAllTime || 0,
               },
               photoURL: data.photoURL || null,
               userId,
@@ -441,6 +474,7 @@ export const useStore = create<AppState>()(
             incorrectCount: 0,
             currentStreak: 0,
             bestStreak: 0,
+            totalCorrectAllTime: 0,
           },
         });
         get().saveToFirestore();

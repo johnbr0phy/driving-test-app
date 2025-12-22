@@ -18,7 +18,6 @@ export default function TrainingPage() {
   const selectedState = useStore((state) => state.selectedState);
   const training = useStore((state) => state.training);
   const answerTrainingQuestion = useStore((state) => state.answerTrainingQuestion);
-  const resetTrainingSession = useStore((state) => state.resetTrainingSession);
   const resetMasteredQuestions = useStore((state) => state.resetMasteredQuestions);
 
   const [currentQuestion, setCurrentQuestion] = useState<Question | null>(null);
@@ -83,13 +82,6 @@ export default function TrainingPage() {
 
   const handleNext = () => {
     loadNextQuestion();
-  };
-
-  const handleEndTraining = () => {
-    if (confirm("Are you sure you want to end this training session?")) {
-      resetTrainingSession();
-      router.push("/dashboard");
-    }
   };
 
   if (!hydrated || !selectedState) {
@@ -184,25 +176,17 @@ export default function TrainingPage() {
           </Card>
         )}
 
-        {/* Progress and End Button */}
-        <div className="mt-6 space-y-4">
-          <div className="text-center">
-            <p className="text-lg text-gray-700">
-              <span className="font-bold text-2xl text-orange-600">{training.totalCorrectAllTime}</span>
-              <span className="text-gray-500"> / 200 answered correctly</span>
-            </p>
-            <div className="w-full bg-orange-200 rounded-full h-2 mt-2 max-w-md mx-auto">
-              <div
-                className="bg-orange-600 h-2 rounded-full transition-all"
-                style={{ width: `${Math.min(100, (training.totalCorrectAllTime / 200) * 100)}%` }}
-              />
-            </div>
-          </div>
-
-          <div className="text-center">
-            <Button onClick={handleEndTraining} className="w-full bg-white text-black hover:bg-gray-100 border-2 border-gray-300">
-              End Training Session
-            </Button>
+        {/* Progress */}
+        <div className="mt-6 text-center">
+          <p className="text-lg text-gray-700">
+            <span className="font-bold text-2xl text-orange-600">{training.totalCorrectAllTime}</span>
+            <span className="text-gray-500"> / 200 answered correctly</span>
+          </p>
+          <div className="w-full bg-orange-200 rounded-full h-2 mt-2 max-w-md mx-auto">
+            <div
+              className="bg-orange-600 h-2 rounded-full transition-all"
+              style={{ width: `${Math.min(100, (training.totalCorrectAllTime / 200) * 100)}%` }}
+            />
           </div>
         </div>
       </div>

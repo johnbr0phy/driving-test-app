@@ -47,8 +47,8 @@ export default function SignupPage() {
 
     try {
       await loginWithGoogle();
-      // Save the selected state
-      setStoreState(selectedState);
+      // Save the selected state (we've already validated it's not null above)
+      setStoreState(selectedState!);
       // Wait for user data to load before redirecting
       await new Promise(resolve => setTimeout(resolve, 800));
       router.push("/dashboard");
@@ -76,8 +76,8 @@ export default function SignupPage() {
     try {
       // Create user account
       await signup(email, password);
-      // Save the selected state
-      setStoreState(selectedState);
+      // Save the selected state (validated in step 1)
+      setStoreState(selectedState!);
       router.push("/dashboard");
     } catch (err: any) {
       setError(err.message || "Failed to create account");

@@ -78,19 +78,35 @@ function intersperseQuestions(universal: Question[], state: Question[]): Questio
   return result;
 }
 
-// Get random question for training mode
-export function getTrainingQuestion(state: string, excludeIds: string[] = []): Question | null {
+// Get random question for training mode with mastery system
+// Questions answered correctly are excluded until all questions are mastered
+// lastQuestionId is excluded to prevent immediate repeats (unless it's the only option)
+export function getTrainingQuestion(
+  state: string,
+  masteredQuestionIds: string[] = [],
+  lastQuestionId: string | null = null
+): Question | null {
   const allQuestions = questionsData as Question[];
 
   // Get questions for this state (universal + state-specific)
-  const availableQuestions = allQuestions.filter(
-    (q) =>
-      !excludeIds.includes(q.questionId) &&
-      (q.state === "ALL" || q.state === state)
+  const stateQuestions = allQuestions.filter(
+    (q) => q.state === "ALL" || q.state === state
+  );
+
+  // Filter out mastered questions
+  let availableQuestions = stateQuestions.filter(
+    (q) => !masteredQuestionIds.includes(q.questionId)
   );
 
   if (availableQuestions.length === 0) {
-    return null; // No more questions available
+    return null; // All questions mastered - caller should reset mastered list
+  }
+
+  // Try to avoid the last question (prevent immediate repeats)
+  if (lastQuestionId && availableQuestions.length > 1) {
+    availableQuestions = availableQuestions.filter(
+      (q) => q.questionId !== lastQuestionId
+    );
   }
 
   // Return a random question

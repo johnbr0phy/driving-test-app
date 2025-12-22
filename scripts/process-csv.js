@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 // Read the CSV file
-const csvPath = path.join(__dirname, '..', 'driving_quizbank_data__drivingtestquestions_expanded_1_1.csv');
+const csvPath = path.join(__dirname, '..', 'ultraclean_questions.csv');
 const csvContent = fs.readFileSync(csvPath, 'utf-8');
 
 // Parse CSV

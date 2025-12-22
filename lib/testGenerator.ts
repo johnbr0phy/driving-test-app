@@ -29,37 +29,25 @@ export function generateTest(testNumber: number, state: string): Question[] {
     .sort((a, b) => a.questionId.localeCompare(b.questionId));
 
   // Distribution based on test number (as per spec)
-  // Test 1: 37 universal + 13 state = 50
-  // Test 2: 38 universal + 12 state = 50
-  // Test 3: 37 universal + 13 state = 50
-  // Test 4: 38 universal + 12 state = 50
-  // Total: 150 universal + 50 state = 200 questions
-  const distributions = [
-    { universal: 37, state: 13 }, // Test 1
-    { universal: 38, state: 12 }, // Test 2
-    { universal: 37, state: 13 }, // Test 3
-    { universal: 38, state: 12 }, // Test 4
-  ];
-
-  const distribution = distributions[testNumber - 1] || distributions[0];
+  // Test 1-4: 40 universal + 10 state = 50 each
+  // Total: 160 universal + 40 state = 200 questions
+  const UNIVERSAL_PER_TEST = 40;
+  const STATE_PER_TEST = 10;
 
   // Calculate start indices for fixed question assignment per test
-  // Universal: Test 1 gets 0-36, Test 2 gets 37-74, Test 3 gets 75-111, Test 4 gets 112-149
-  // State: Test 1 gets 0-12, Test 2 gets 13-24, Test 3 gets 25-37, Test 4 gets 38-49
-  const universalStarts = [0, 37, 75, 112];
-  const stateStarts = [0, 13, 25, 38];
-
-  const startUniversal = universalStarts[testNumber - 1] || 0;
-  const startState = stateStarts[testNumber - 1] || 0;
+  // Universal: Test 1 gets 0-39, Test 2 gets 40-79, Test 3 gets 80-119, Test 4 gets 120-159
+  // State: Test 1 gets 0-9, Test 2 gets 10-19, Test 3 gets 20-29, Test 4 gets 30-39
+  const startUniversal = (testNumber - 1) * UNIVERSAL_PER_TEST;
+  const startState = (testNumber - 1) * STATE_PER_TEST;
 
   // Get fixed slices for this test (always the same questions)
   const testUniversal = universalQuestions.slice(
     startUniversal,
-    startUniversal + distribution.universal
+    startUniversal + UNIVERSAL_PER_TEST
   );
   const testState = stateQuestions.slice(
     startState,
-    startState + distribution.state
+    startState + STATE_PER_TEST
   );
 
   // Combine all questions for this test

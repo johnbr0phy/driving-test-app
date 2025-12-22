@@ -42,8 +42,9 @@ export function QuestionCard({
       return "border-gray-300 opacity-50";
     }
 
-    // During test - no visual selection indicator
-    return "border-gray-300 hover:border-orange-500 hover:bg-orange-50 cursor-pointer";
+    // During test - use active for touch feedback, hover only on desktop
+    // The [@media(hover:hover)] prefix ensures hover only applies on devices with true hover support
+    return "border-gray-300 [@media(hover:hover)]:hover:border-orange-500 [@media(hover:hover)]:hover:bg-orange-50 active:border-orange-500 active:bg-orange-50 cursor-pointer";
   };
 
   return (

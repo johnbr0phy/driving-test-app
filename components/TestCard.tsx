@@ -27,24 +27,24 @@ export function TestCard({ testNumber, status, score, totalQuestions = 50, progr
 
   const getStatusBadge = () => {
     if (locked) {
-      return <Badge variant="outline" className="bg-gray-100">Locked</Badge>;
+      return <Badge variant="outline" className="bg-gray-100 hover:bg-gray-100">Locked</Badge>;
     }
 
     if (status === "completed" && bestScore !== undefined) {
       if (bestPercentage === 100) {
-        return <Badge className="bg-green-500">Mastered</Badge>;
+        return <Badge className="bg-green-500 hover:bg-green-500">Mastered</Badge>;
       } else if (bestPercentage >= 70) {
-        return <Badge className="bg-orange-500">Passed</Badge>;
+        return <Badge className="bg-orange-500 hover:bg-orange-500">Passed</Badge>;
       } else {
-        return <Badge className="bg-orange-500">Keep Practicing</Badge>;
+        return <Badge className="bg-orange-500 hover:bg-orange-500">Keep Practicing</Badge>;
       }
     }
 
     switch (status) {
       case "in-progress":
-        return <Badge className="bg-yellow-500">In Progress</Badge>;
+        return <Badge className="bg-yellow-500 hover:bg-yellow-500">In Progress</Badge>;
       default:
-        return <Badge variant="outline">Not Started</Badge>;
+        return <Badge variant="outline" className="hover:bg-white">Not Started</Badge>;
     }
   };
 

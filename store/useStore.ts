@@ -253,20 +253,10 @@ export const useStore = create<AppState>()(
         // Test 1 is always unlocked
         if (testId === 1) return true;
 
-        const { testAttempts, selectedState } = get();
-
-        // For tests 2, 3, 4: check if all previous tests have bestScore >= 40
-        for (let i = 1; i < testId; i++) {
-          const attemptStats = testAttempts.find(
-            (a) => a.testNumber === i && a.state === selectedState
-          );
-          // If previous test not completed or score < 40, this test is locked
-          if (!attemptStats || attemptStats.bestScore < 40) {
-            return false;
-          }
-        }
-
-        return true;
+        // All tests unlock after completing onboarding (10 correct training answers)
+        // or if user has any prior app usage (backwards compatibility)
+        const isOnboarded = get().isOnboardingComplete();
+        return isOnboarded;
       },
 
       // Training mode functions
@@ -374,22 +364,22 @@ export const useStore = create<AppState>()(
           return 0;
         }
 
-        // Find BEST score across all tests (maximum capability)
-        const bestScore = Math.max(...stateAttempts.map(a => a.bestScore));
+        // Each of the 4 tests contributes 25% to the total pass probability
+        // Uncompleted tests contribute 0% (100% fail for that portion)
+        // Completed tests contribute their best score percentage * 25%
+        let totalPassProbability = 0;
 
-        // Simple mapping based on best score
-        if (bestScore === 50) return 99;  // Perfect - feel amazing!
-        if (bestScore >= 48) return 95;   // Nearly perfect
-        if (bestScore >= 45) return 90;   // Excellent
-        if (bestScore >= 42) return 85;   // Very good
-        if (bestScore >= 40) return 80;   // Proven can pass
-        if (bestScore >= 35) return 65;   // Close to passing
-        if (bestScore >= 30) return 50;   // Halfway there
-        if (bestScore >= 25) return 35;   // Needs work
-        if (bestScore >= 20) return 22;   // Significant gap
-        if (bestScore >= 10) return 10;   // Just starting
-        if (bestScore >= 5) return 5;     // Minimal progress
-        return 0;  // No meaningful progress
+        for (let testNum = 1; testNum <= 4; testNum++) {
+          const attempt = stateAttempts.find(a => a.testNumber === testNum);
+          if (attempt) {
+            // Test completed - contribute based on best score (out of 50)
+            const testPassRate = (attempt.bestScore / 50) * 100;
+            totalPassProbability += testPassRate * 0.25;
+          }
+          // If not completed, this test contributes 0% to pass probability
+        }
+
+        return Math.round(totalPassProbability);
       },
 
       // Firebase sync functions

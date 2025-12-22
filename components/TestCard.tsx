@@ -34,7 +34,7 @@ export function TestCard({ testNumber, status, score, totalQuestions = 50, progr
       if (bestPercentage === 100) {
         return <Badge className="bg-green-500 hover:bg-green-500">Mastered</Badge>;
       } else if (bestPercentage >= 70) {
-        return <Badge className="bg-orange-500 hover:bg-orange-500">Passed</Badge>;
+        return <Badge className="bg-green-500 hover:bg-green-500">Passed</Badge>;
       } else {
         return <Badge className="bg-orange-500 hover:bg-orange-500">Keep Practicing</Badge>;
       }
@@ -57,7 +57,7 @@ export function TestCard({ testNumber, status, score, totalQuestions = 50, progr
       if (bestPercentage === 100) {
         return <Trophy className="h-12 w-12 text-yellow-500" />;
       } else if (bestPercentage >= 70) {
-        return <CheckCircle2 className="h-12 w-12 text-orange-500" />;
+        return <CheckCircle2 className="h-12 w-12 text-green-500" />;
       } else {
         return <Target className="h-12 w-12 text-orange-500" />;
       }
@@ -109,9 +109,9 @@ export function TestCard({ testNumber, status, score, totalQuestions = 50, progr
         <CardContent>
         {status === "completed" && (
           <div className="mb-4">
-            {bestScore !== undefined && attemptCount !== undefined && averageScore !== undefined ? (
+            {bestScore !== undefined && attemptCount !== undefined ? (
               <div className="space-y-2">
-                {/* Attempts and Average */}
+                {/* Attempts and Top Score */}
                 <div className="grid grid-cols-2 gap-4 text-center">
                   <div>
                     <div className="text-sm text-gray-600 mb-1">Attempts</div>
@@ -120,9 +120,9 @@ export function TestCard({ testNumber, status, score, totalQuestions = 50, progr
                     </div>
                   </div>
                   <div>
-                    <div className="text-sm text-gray-600 mb-1">Avg Score</div>
-                    <div className="text-2xl font-bold text-orange-600">
-                      {averageScore}/{totalQuestions}
+                    <div className="text-sm text-gray-600 mb-1">Top Score</div>
+                    <div className={`text-2xl font-bold ${bestPercentage >= 70 ? 'text-green-600' : 'text-orange-600'}`}>
+                      {bestScore}/{totalQuestions}
                     </div>
                   </div>
                 </div>

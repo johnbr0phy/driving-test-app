@@ -133,7 +133,7 @@ export default function StatsPage() {
           <p className="text-gray-600">Detailed performance analysis and recommendations</p>
         </div>
 
-        {/* Pass Probability Card */}
+        {/* Fail Probability Card */}
         <Card className={`mb-6 ${
           passProbability === 0
             ? "bg-gradient-to-r from-gray-50 to-gray-100 border-gray-200"
@@ -162,17 +162,17 @@ export default function StatsPage() {
                 }
               </div>
               <h2 className="text-3xl font-bold mb-2">
-                {passProbability === 0 ? "No Data Yet" : `${passProbability}%`}
+                {passProbability === 0 ? "No Data Yet" : <><span className="text-4xl">{100 - passProbability}%</span> chance of failing</>}
               </h2>
               <p className="text-lg text-gray-700 mb-2">
                 {passProbability === 0
-                  ? "Complete practice tests to see your pass probability"
-                  : `Estimated chance of passing the ${stateName} driving knowledge test`
+                  ? "Complete practice tests to see your fail probability"
+                  : `Estimated chance of failing the ${stateName} driving knowledge test`
                 }
               </p>
               {passProbability > 0 && passProbability < 80 && (
                 <p className="text-sm text-gray-600">
-                  Don&apos;t worry if this is low!{" "}
+                  Want to lower this?{" "}
                   <a
                     href="#recommendations"
                     className="text-orange-600 hover:text-orange-700 underline font-medium"
@@ -183,7 +183,7 @@ export default function StatsPage() {
                 </p>
               )}
               {passProbability > 0 && (
-                <Progress value={passProbability} className="h-3 mt-4 [&>div]:bg-orange-600" />
+                <Progress value={100 - passProbability} className="h-3 mt-4 [&>div]:bg-orange-600" />
               )}
             </div>
           </CardContent>

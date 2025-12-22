@@ -253,20 +253,10 @@ export const useStore = create<AppState>()(
         // Test 1 is always unlocked
         if (testId === 1) return true;
 
-        const { testAttempts, selectedState } = get();
-
-        // For tests 2, 3, 4: check if all previous tests have bestScore >= 40
-        for (let i = 1; i < testId; i++) {
-          const attemptStats = testAttempts.find(
-            (a) => a.testNumber === i && a.state === selectedState
-          );
-          // If previous test not completed or score < 40, this test is locked
-          if (!attemptStats || attemptStats.bestScore < 40) {
-            return false;
-          }
-        }
-
-        return true;
+        // All tests unlock after completing onboarding (10 correct training answers)
+        // or if user has any prior app usage (backwards compatibility)
+        const isOnboarded = get().isOnboardingComplete();
+        return isOnboarded;
       },
 
       // Training mode functions

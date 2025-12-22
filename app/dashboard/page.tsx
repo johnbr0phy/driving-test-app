@@ -101,10 +101,8 @@ export default function DashboardPage() {
 
   const getLockMessage = (testNumber: number): string => {
     if (testNumber === 1) return ""; // Test 1 is never locked
-    if (testNumber === 2) return "Score 40/50 on Test 1.";
-    if (testNumber === 3) return "Score 40/50 on Test 1 and 2.";
-    if (testNumber === 4) return "Score 40/50 on Test 1, 2 and 3.";
-    return "Score 40+ on previous tests to unlock";
+    // Tests 2-4 unlock after onboarding
+    return "Complete 10 correct answers in Training Mode to unlock";
   };
 
   return (
@@ -210,7 +208,7 @@ export default function DashboardPage() {
                 </div>
                 <Link href="/training" className="w-full sm:w-auto">
                   <Button className="bg-black text-white hover:bg-gray-800 w-full">
-                    Start Training
+                    {onboardingComplete ? "Continue Training" : "Start Training"}
                   </Button>
                 </Link>
               </div>

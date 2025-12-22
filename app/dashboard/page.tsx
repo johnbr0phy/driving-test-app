@@ -142,7 +142,9 @@ export default function DashboardPage() {
                     <p className="text-lg text-gray-700">
                       {passProbability === 0
                         ? "Complete a practice test to see your fail probability"
-                        : <>There is a <span className="font-bold text-xl">{100 - passProbability}%</span> chance that you will fail the {stateName} driving knowledge test.</>
+                        : passProbability >= 80
+                          ? <>There is a <span className="font-bold text-xl">{passProbability}%</span> chance that you will pass the {stateName} driving knowledge test.</>
+                          : <>There is a <span className="font-bold text-xl">{100 - passProbability}%</span> chance that you will fail the {stateName} driving knowledge test.</>
                       }
                     </p>
                     <p className="text-sm text-gray-500 mt-1">Tap to see detailed stats</p>

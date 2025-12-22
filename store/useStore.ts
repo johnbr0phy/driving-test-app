@@ -41,9 +41,12 @@ interface AppState {
     currentStreak: number;
     bestStreak: number;
     totalCorrectAllTime: number; // Total correct answers across all training sessions
+    masteredQuestionIds: string[]; // Questions answered correctly - won't be asked again until all mastered
+    lastQuestionId: string | null; // Last question asked - to avoid immediate repeats
   };
   answerTrainingQuestion: (questionId: string, isCorrect: boolean) => void;
   resetTrainingSession: () => void;
+  resetMasteredQuestions: () => void;
 
   // Onboarding
   isOnboardingComplete: () => boolean;
@@ -83,6 +86,8 @@ export const useStore = create<AppState>()(
         currentStreak: 0,
         bestStreak: 0,
         totalCorrectAllTime: 0,
+        masteredQuestionIds: [],
+        lastQuestionId: null,
       },
       userId: null,
       photoURL: null,
@@ -111,6 +116,8 @@ export const useStore = create<AppState>()(
             currentStreak: 0,
             bestStreak: 0,
             totalCorrectAllTime: 0,
+            masteredQuestionIds: [],
+            lastQuestionId: null,
           },
         });
         // Save to Firestore
@@ -263,6 +270,19 @@ export const useStore = create<AppState>()(
       answerTrainingQuestion: (questionId: string, isCorrect: boolean) => {
         set((state) => {
           const newStreak = isCorrect ? state.training.currentStreak + 1 : 0;
+
+          // Update mastered questions list
+          let newMasteredIds = [...state.training.masteredQuestionIds];
+          if (isCorrect) {
+            // Add to mastered if not already there
+            if (!newMasteredIds.includes(questionId)) {
+              newMasteredIds.push(questionId);
+            }
+          } else {
+            // Remove from mastered if answered wrong (they need to answer it correctly again)
+            newMasteredIds = newMasteredIds.filter(id => id !== questionId);
+          }
+
           return {
             training: {
               ...state.training,
@@ -272,6 +292,8 @@ export const useStore = create<AppState>()(
               currentStreak: newStreak,
               bestStreak: Math.max(state.training.bestStreak, newStreak),
               totalCorrectAllTime: state.training.totalCorrectAllTime + (isCorrect ? 1 : 0),
+              masteredQuestionIds: newMasteredIds,
+              lastQuestionId: questionId,
             },
           };
         });
@@ -286,7 +308,18 @@ export const useStore = create<AppState>()(
             correctCount: 0,
             incorrectCount: 0,
             currentStreak: 0,
-            // Keep bestStreak and totalCorrectAllTime
+            // Keep bestStreak, totalCorrectAllTime, masteredQuestionIds, lastQuestionId
+          },
+        }));
+        get().saveToFirestore();
+      },
+
+      resetMasteredQuestions: () => {
+        set((state) => ({
+          training: {
+            ...state.training,
+            masteredQuestionIds: [],
+            lastQuestionId: null,
           },
         }));
         get().saveToFirestore();
@@ -400,6 +433,8 @@ export const useStore = create<AppState>()(
                 currentStreak: data.training?.currentStreak || 0,
                 bestStreak: data.training?.bestStreak || 0,
                 totalCorrectAllTime: data.training?.totalCorrectAllTime || 0,
+                masteredQuestionIds: data.training?.masteredQuestionIds || [],
+                lastQuestionId: data.training?.lastQuestionId || null,
               },
               photoURL: data.photoURL || null,
               userId,
@@ -465,6 +500,8 @@ export const useStore = create<AppState>()(
             currentStreak: 0,
             bestStreak: 0,
             totalCorrectAllTime: 0,
+            masteredQuestionIds: [],
+            lastQuestionId: null,
           },
         });
         get().saveToFirestore();

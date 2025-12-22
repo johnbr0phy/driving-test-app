@@ -19,6 +19,7 @@ export default function TrainingPage() {
   const training = useStore((state) => state.training);
   const answerTrainingQuestion = useStore((state) => state.answerTrainingQuestion);
   const resetTrainingSession = useStore((state) => state.resetTrainingSession);
+  const resetMasteredQuestions = useStore((state) => state.resetMasteredQuestions);
 
   const [currentQuestion, setCurrentQuestion] = useState<Question | null>(null);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
@@ -50,15 +51,24 @@ export default function TrainingPage() {
   const loadNextQuestion = () => {
     if (!selectedState) return;
 
-    // Get last 20 questions to avoid repetition
-    const recentQuestions = training.questionsAnswered.slice(-20);
-    const question = getTrainingQuestion(selectedState, recentQuestions);
+    // Use mastery system: exclude correctly answered questions until all are mastered
+    let question = getTrainingQuestion(
+      selectedState,
+      training.masteredQuestionIds,
+      training.lastQuestionId
+    );
+
+    // If all questions are mastered, reset and start fresh
+    if (!question) {
+      resetMasteredQuestions();
+      question = getTrainingQuestion(selectedState, [], training.lastQuestionId);
+    }
 
     if (question) {
       setCurrentQuestion(question);
       setSelectedAnswer(null);
     } else {
-      // No more questions available (unlikely with 2650 questions)
+      // No questions available at all (shouldn't happen)
       setCurrentQuestion(null);
     }
   };

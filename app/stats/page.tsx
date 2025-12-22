@@ -162,12 +162,19 @@ export default function StatsPage() {
                 }
               </div>
               <h2 className="text-3xl font-bold mb-2">
-                {passProbability === 0 ? "No Data Yet" : <><span className="text-4xl">{100 - passProbability}%</span> chance of failing</>}
+                {passProbability === 0
+                  ? "No Data Yet"
+                  : passProbability >= 80
+                    ? <><span className="text-4xl">{passProbability}%</span> chance of passing</>
+                    : <><span className="text-4xl">{100 - passProbability}%</span> chance of failing</>
+                }
               </h2>
               <p className="text-lg text-gray-700 mb-2">
                 {passProbability === 0
-                  ? "Complete practice tests to see your fail probability"
-                  : `Estimated chance of failing the ${stateName} driving knowledge test`
+                  ? "Complete practice tests to see your probability"
+                  : passProbability >= 80
+                    ? `Estimated chance of passing the ${stateName} driving knowledge test`
+                    : `Estimated chance of failing the ${stateName} driving knowledge test`
                 }
               </p>
               {passProbability > 0 && passProbability < 80 && (
@@ -183,7 +190,10 @@ export default function StatsPage() {
                 </p>
               )}
               {passProbability > 0 && (
-                <Progress value={100 - passProbability} className="h-3 mt-4 [&>div]:bg-orange-600" />
+                <Progress
+                  value={passProbability >= 80 ? passProbability : 100 - passProbability}
+                  className={`h-3 mt-4 ${passProbability >= 80 ? '[&>div]:bg-green-500' : '[&>div]:bg-orange-600'}`}
+                />
               )}
             </div>
           </CardContent>

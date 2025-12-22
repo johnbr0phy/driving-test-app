@@ -51,7 +51,10 @@ export default function SignupPage() {
       setStoreState(selectedState!);
       // Wait for user data to load before redirecting
       await new Promise(resolve => setTimeout(resolve, 800));
-      router.push("/dashboard");
+
+      // Redirect to state selection if somehow state wasn't saved
+      const hasState = useStore.getState().selectedState;
+      router.push(hasState ? "/dashboard" : "/onboarding/select-state");
     } catch (err: any) {
       setError(err.message || "Failed to sign in with Google");
     } finally {
@@ -78,7 +81,13 @@ export default function SignupPage() {
       await signup(email, password);
       // Save the selected state (validated in step 1)
       setStoreState(selectedState!);
-      router.push("/dashboard");
+
+      // Small delay to ensure state is saved
+      await new Promise(resolve => setTimeout(resolve, 100));
+
+      // Redirect to state selection if somehow state wasn't saved
+      const hasState = useStore.getState().selectedState;
+      router.push(hasState ? "/dashboard" : "/onboarding/select-state");
     } catch (err: any) {
       setError(err.message || "Failed to create account");
       setLoading(false);

@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { useAuth } from "@/contexts/AuthContext";
+import { useStore } from "@/store/useStore";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -17,6 +18,7 @@ export default function LoginPage() {
 
   const { login, loginWithGoogle } = useAuth();
   const router = useRouter();
+  const selectedState = useStore((state) => state.selectedState);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -27,7 +29,10 @@ export default function LoginPage() {
       await login(email, password);
       // Wait for user data to load before redirecting
       await new Promise(resolve => setTimeout(resolve, 800));
-      router.push("/dashboard");
+
+      // Check if user has a state selected
+      const hasState = useStore.getState().selectedState;
+      router.push(hasState ? "/dashboard" : "/onboarding/select-state");
     } catch (err: any) {
       setError(err.message || "Failed to log in");
     } finally {
@@ -43,7 +48,10 @@ export default function LoginPage() {
       await loginWithGoogle();
       // Wait for user data to load before redirecting
       await new Promise(resolve => setTimeout(resolve, 800));
-      router.push("/dashboard");
+
+      // Check if user has a state selected
+      const hasState = useStore.getState().selectedState;
+      router.push(hasState ? "/dashboard" : "/onboarding/select-state");
     } catch (err: any) {
       setError(err.message || "Failed to sign in with Google");
     } finally {
@@ -139,7 +147,7 @@ export default function LoginPage() {
 
               <div className="text-center text-sm text-gray-600">
                 Don&apos;t have an account?{" "}
-                <Link href="/signup" className="text-blue-600 hover:underline font-semibold">
+                <Link href="/signup" className="text-orange-600 hover:underline font-semibold">
                   Sign up
                 </Link>
               </div>

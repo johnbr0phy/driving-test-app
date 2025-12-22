@@ -1,14 +1,24 @@
 "use client";
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle2, BookOpen, Target, Trophy, Zap, BarChart3, Cloud } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
+import { useStore } from "@/store/useStore";
 import Image from "next/image";
 
 export default function Home() {
   const { user, loading } = useAuth();
+  const router = useRouter();
+  const startGuestSession = useStore((state) => state.startGuestSession);
+  const isGuest = useStore((state) => state.isGuest);
+
+  const handleTryFree = () => {
+    startGuestSession();
+    router.push("/onboarding/select-state");
+  };
 
   return (
     <div className="min-h-screen bg-white">
@@ -25,19 +35,28 @@ export default function Home() {
             The more questions you answer, the better you&apos;ll get. Track your progress and watch your pass probability increase with every practice session.
           </p>
           {!loading && (
-            <div className="flex gap-4 justify-center">
-              {user ? (
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              {user || isGuest ? (
                 <Link href="/dashboard">
                   <Button size="lg" className="text-lg md:text-xl px-8 md:px-12 py-6 md:py-8 bg-black text-white hover:bg-gray-800 shadow-xl hover:shadow-2xl transition-all font-bold rounded-xl border-4 border-gray-900">
                     Go to Dashboard
                   </Button>
                 </Link>
               ) : (
-                <Link href="/signup">
-                  <Button size="lg" className="text-lg md:text-xl px-8 md:px-12 py-6 md:py-8 bg-black text-white hover:bg-gray-800 shadow-xl hover:shadow-2xl transition-all font-bold rounded-xl border-4 border-gray-900">
-                    Get Started Free
+                <>
+                  <Button
+                    onClick={handleTryFree}
+                    size="lg"
+                    className="text-lg md:text-xl px-8 md:px-12 py-6 md:py-8 bg-black text-white hover:bg-gray-800 shadow-xl hover:shadow-2xl transition-all font-bold rounded-xl border-4 border-gray-900"
+                  >
+                    Try it Free
                   </Button>
-                </Link>
+                  <Link href="/signup">
+                    <Button size="lg" variant="outline" className="text-lg md:text-xl px-8 md:px-12 py-6 md:py-8 bg-white text-black hover:bg-gray-100 shadow-lg transition-all font-bold rounded-xl border-2 border-gray-300">
+                      Sign Up
+                    </Button>
+                  </Link>
+                </>
               )}
             </div>
           )}
@@ -184,16 +203,25 @@ export default function Home() {
         </div>
 
         {/* CTA Section */}
-        {!user && (
+        {!user && !isGuest && (
           <div className="mt-20 text-center">
             <div className="bg-gradient-to-br from-orange-600 to-orange-700 rounded-2xl p-12 shadow-xl">
               <h2 className="text-4xl font-bold text-white mb-4">Ready to get started?</h2>
               <p className="text-xl text-orange-100 mb-8">Join thousands preparing for their driving test</p>
-              <Link href="/signup">
-                <Button size="lg" className="text-xl px-12 py-8 bg-black text-white hover:bg-gray-800 shadow-xl hover:shadow-2xl transition-all font-bold rounded-xl border-4 border-gray-900">
-                  Start Practicing Free
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <Button
+                  onClick={handleTryFree}
+                  size="lg"
+                  className="text-xl px-12 py-8 bg-black text-white hover:bg-gray-800 shadow-xl hover:shadow-2xl transition-all font-bold rounded-xl border-4 border-gray-900"
+                >
+                  Try it Free
                 </Button>
-              </Link>
+                <Link href="/signup">
+                  <Button size="lg" variant="outline" className="text-xl px-12 py-8 bg-white text-orange-700 hover:bg-orange-50 shadow-lg transition-all font-bold rounded-xl border-2 border-white">
+                    Sign Up
+                  </Button>
+                </Link>
+              </div>
             </div>
           </div>
         )}

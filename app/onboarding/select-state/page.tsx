@@ -15,6 +15,7 @@ export default function OnboardingSelectStatePage() {
   const router = useRouter();
   const storeSelectedState = useStore((state) => state.selectedState);
   const setStoreState = useStore((state) => state.setSelectedState);
+  const isGuest = useStore((state) => state.isGuest);
 
   // Redirect if user already has a state selected
   useEffect(() => {
@@ -35,16 +36,20 @@ export default function OnboardingSelectStatePage() {
     router.push("/dashboard");
   };
 
-  if (!user) {
-    return null; // Will redirect in ProtectedRoute
+  // Redirect to home if not logged in and not a guest
+  if (!user && !isGuest) {
+    router.push("/");
+    return null;
   }
+
+  const welcomeName = user?.displayName || user?.email || "there";
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center p-4">
       <Card className="w-full max-w-2xl">
         <CardHeader className="space-y-1">
           <CardTitle className="text-2xl font-bold text-center">
-            Welcome, {user.displayName || user.email}!
+            Welcome{isGuest ? "" : `, ${welcomeName}`}!
           </CardTitle>
           <CardDescription className="text-center">
             Which state are you preparing for?

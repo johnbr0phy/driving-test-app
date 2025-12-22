@@ -13,6 +13,7 @@ export function Header() {
   const router = useRouter();
   const pathname = usePathname();
   const photoURL = useStore((state) => state.photoURL);
+  const isGuest = useStore((state) => state.isGuest);
 
   const handleLogout = async () => {
     await logout();
@@ -32,35 +33,55 @@ export function Header() {
   }
 
   return (
-    <header className={`border-b ${useWhiteHeader ? "bg-white" : "bg-orange-600"}`}>
-      <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <Link href={user ? "/dashboard" : "/"} className="flex items-center gap-2 group">
-          <Image src="/tiger.png" alt="tigertest.io" width={40} height={40} className="w-10 h-10" />
-          <span className={`text-2xl font-bold ${useWhiteHeader ? "text-gray-900" : "text-white"} group-hover:opacity-80 transition-opacity`}>
-            tigertest.io
-          </span>
-        </Link>
-
-        <div className="flex items-center gap-4">
-          {user ? (
-            <>
-              <Link href="/settings">
-                <Avatar className="h-9 w-9 cursor-pointer hover:opacity-80 transition-opacity">
-                  <AvatarImage src={displayPhotoURL || undefined} alt="Profile" />
-                  <AvatarFallback className="text-lg">😊</AvatarFallback>
-                </Avatar>
-              </Link>
-              <Button onClick={handleLogout} className="bg-white text-black hover:bg-gray-100 border-2 border-gray-300">
-                Log Out
-              </Button>
-            </>
-          ) : (
-            <Link href="/login">
-              <Button className="bg-white text-black hover:bg-gray-100 border-2 border-gray-300">Sign In</Button>
+    <>
+      {/* Guest signup banner - only show on dashboard and inner pages */}
+      {isGuest && !useWhiteHeader && (
+        <div className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-2 px-4 text-center">
+          <span className="text-sm md:text-base">
+            Your progress is saved locally.{" "}
+            <Link href="/signup" className="font-bold underline hover:no-underline">
+              Sign up
             </Link>
-          )}
+            {" "}to save it to the cloud!
+          </span>
         </div>
-      </div>
-    </header>
+      )}
+      <header className={`border-b ${useWhiteHeader ? "bg-white" : "bg-orange-600"}`}>
+        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+          <Link href={user || isGuest ? "/dashboard" : "/"} className="flex items-center gap-2 group">
+            <Image src="/tiger.png" alt="tigertest.io" width={40} height={40} className="w-10 h-10" />
+            <span className={`text-2xl font-bold ${useWhiteHeader ? "text-gray-900" : "text-white"} group-hover:opacity-80 transition-opacity`}>
+              tigertest.io
+            </span>
+          </Link>
+
+          <div className="flex items-center gap-4">
+            {user ? (
+              <>
+                <Link href="/settings">
+                  <Avatar className="h-9 w-9 cursor-pointer hover:opacity-80 transition-opacity">
+                    <AvatarImage src={displayPhotoURL || undefined} alt="Profile" />
+                    <AvatarFallback className="text-lg">😊</AvatarFallback>
+                  </Avatar>
+                </Link>
+                <Button onClick={handleLogout} className="bg-white text-black hover:bg-gray-100 border-2 border-gray-300">
+                  Log Out
+                </Button>
+              </>
+            ) : isGuest ? (
+              <Link href="/signup">
+                <Button className="bg-white text-black hover:bg-gray-100 border-2 border-gray-300 font-semibold">
+                  Sign Up to Save
+                </Button>
+              </Link>
+            ) : (
+              <Link href="/login">
+                <Button className="bg-white text-black hover:bg-gray-100 border-2 border-gray-300">Sign In</Button>
+              </Link>
+            )}
+          </div>
+        </div>
+      </header>
+    </>
   );
 }

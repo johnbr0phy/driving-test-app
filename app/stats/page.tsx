@@ -16,6 +16,7 @@ export default function StatsPage() {
   const hydrated = useHydration();
 
   const selectedState = useStore((state) => state.selectedState);
+  const isGuest = useStore((state) => state.isGuest);
   const getProgress = useStore((state) => state.getProgress);
   const getPassProbability = useStore((state) => state.getPassProbability);
   const getTestAttemptStats = useStore((state) => state.getTestAttemptStats);
@@ -23,6 +24,13 @@ export default function StatsPage() {
 
   // Get state name from code
   const stateName = states.find((s) => s.code === selectedState)?.name || selectedState;
+
+  // Redirect guests to signup (stats require an account)
+  useEffect(() => {
+    if (hydrated && isGuest) {
+      router.push("/signup");
+    }
+  }, [hydrated, isGuest, router]);
 
   // Redirect to onboarding if no state selected
   useEffect(() => {
@@ -114,7 +122,7 @@ export default function StatsPage() {
 
   const recommendations = getRecommendations();
 
-  if (!hydrated || !selectedState) {
+  if (!hydrated || !selectedState || isGuest) {
     return null;
   }
 

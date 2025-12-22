@@ -27,24 +27,24 @@ export function TestCard({ testNumber, status, score, totalQuestions = 50, progr
 
   const getStatusBadge = () => {
     if (locked) {
-      return <Badge variant="outline" className="bg-gray-100">Locked</Badge>;
+      return <Badge variant="outline" className="bg-gray-100 hover:bg-gray-100">Locked</Badge>;
     }
 
     if (status === "completed" && bestScore !== undefined) {
       if (bestPercentage === 100) {
-        return <Badge className="bg-green-500">Mastered</Badge>;
+        return <Badge className="bg-green-500 hover:bg-green-500">Mastered</Badge>;
       } else if (bestPercentage >= 70) {
-        return <Badge className="bg-blue-500">Passed</Badge>;
+        return <Badge className="bg-orange-500 hover:bg-orange-500">Passed</Badge>;
       } else {
-        return <Badge className="bg-orange-500">Keep Practicing</Badge>;
+        return <Badge className="bg-orange-500 hover:bg-orange-500">Keep Practicing</Badge>;
       }
     }
 
     switch (status) {
       case "in-progress":
-        return <Badge className="bg-yellow-500">In Progress</Badge>;
+        return <Badge className="bg-yellow-500 hover:bg-yellow-500">In Progress</Badge>;
       default:
-        return <Badge variant="outline">Not Started</Badge>;
+        return <Badge variant="outline" className="hover:bg-white">Not Started</Badge>;
     }
   };
 
@@ -57,7 +57,7 @@ export function TestCard({ testNumber, status, score, totalQuestions = 50, progr
       if (bestPercentage === 100) {
         return <Trophy className="h-12 w-12 text-yellow-500" />;
       } else if (bestPercentage >= 70) {
-        return <CheckCircle2 className="h-12 w-12 text-blue-500" />;
+        return <CheckCircle2 className="h-12 w-12 text-orange-500" />;
       } else {
         return <Target className="h-12 w-12 text-orange-500" />;
       }
@@ -121,7 +121,7 @@ export function TestCard({ testNumber, status, score, totalQuestions = 50, progr
                   </div>
                   <div>
                     <div className="text-sm text-gray-600 mb-1">Avg Score</div>
-                    <div className="text-2xl font-bold text-blue-600">
+                    <div className="text-2xl font-bold text-orange-600">
                       {averageScore}/{totalQuestions}
                     </div>
                   </div>
@@ -146,7 +146,7 @@ export function TestCard({ testNumber, status, score, totalQuestions = 50, progr
               <span>Progress</span>
               <span>{progress}%</span>
             </div>
-            <Progress value={progress} />
+            <Progress value={progress} className="[&>div]:bg-orange-600" />
           </div>
         )}
 
@@ -159,7 +159,7 @@ export function TestCard({ testNumber, status, score, totalQuestions = 50, progr
           </div>
         ) : (
           <Link href={`/test/${testNumber}`}>
-            <Button className="w-full">
+            <Button className="w-full bg-black text-white hover:bg-gray-800">
               {getButtonText()}
             </Button>
           </Link>

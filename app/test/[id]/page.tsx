@@ -150,7 +150,7 @@ export default function TestPage() {
           <CardContent className="p-8 text-center">
             <div className="text-xl font-semibold mb-2">No questions available</div>
             <div className="text-gray-600 mb-4">Unable to load test questions.</div>
-            <Button onClick={() => router.push("/dashboard")}>
+            <Button className="bg-black text-white hover:bg-gray-800" onClick={() => router.push("/dashboard")}>
               Back to Dashboard
             </Button>
           </CardContent>
@@ -183,7 +183,7 @@ export default function TestPage() {
 
           {/* Progress Bar */}
           <div className="space-y-2">
-            <Progress value={progress} className="h-2" />
+            <Progress value={progress} className="h-2 [&>div]:bg-orange-600" />
             <div className="flex justify-between text-xs text-gray-600">
               <span>Progress: {Math.round(progress)}%</span>
               <span>
@@ -209,7 +209,7 @@ export default function TestPage() {
           {answeredCount === totalQuestions && (
             <Button
               onClick={handleSubmit}
-              className="bg-green-600 hover:bg-green-700 text-lg px-8 py-6"
+              className="bg-black hover:bg-gray-800 text-white text-lg px-8 py-6"
             >
               Submit Test
             </Button>
@@ -226,9 +226,9 @@ export default function TestPage() {
                 className={`
                   aspect-square rounded-lg border-2 text-sm font-semibold transition-colors flex items-center justify-center
                   ${currentQuestionIndex === index
-                    ? "border-blue-500 bg-blue-500 text-white"
+                    ? "border-orange-500 bg-orange-500 text-white"
                     : answers[index]
-                    ? "border-green-500 bg-green-50 text-green-700"
+                    ? "border-orange-500 bg-orange-50 text-orange-700"
                     : "border-gray-300 bg-white text-gray-400"
                   }
                 `}

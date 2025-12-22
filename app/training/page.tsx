@@ -82,7 +82,7 @@ export default function TrainingPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-pink-50">
+    <div className="min-h-screen bg-gradient-to-br from-orange-50 to-amber-50">
       <div className="container mx-auto px-4 py-4 max-w-6xl">
         {/* Minimal Header */}
         <div className="mb-4">
@@ -108,7 +108,7 @@ export default function TrainingPage() {
           <Card className="w-full">
             <CardContent className="p-8 text-center">
               <p className="text-gray-600 mb-4">No more questions available</p>
-              <Button onClick={() => router.push("/dashboard")}>
+              <Button className="bg-black text-white hover:bg-gray-800" onClick={() => router.push("/dashboard")}>
                 Back to Dashboard
               </Button>
             </CardContent>
@@ -121,7 +121,7 @@ export default function TrainingPage() {
             <Card className="bg-white/80">
               <CardContent className="p-3 text-center">
                 <div className="flex items-center justify-center gap-2 mb-1">
-                  <Target className="h-4 w-4 text-blue-600" />
+                  <Target className="h-4 w-4 text-orange-600" />
                   <div className="text-xs text-gray-600">Questions</div>
                 </div>
                 <div className="text-xl font-bold">{totalAnswered}</div>
@@ -131,7 +131,7 @@ export default function TrainingPage() {
             <Card className="bg-white/80">
               <CardContent className="p-3 text-center">
                 <div className="flex items-center justify-center gap-2 mb-1">
-                  <Trophy className="h-4 w-4 text-green-600" />
+                  <Trophy className="h-4 w-4 text-orange-600" />
                   <div className="text-xs text-gray-600">Accuracy</div>
                 </div>
                 <div className="text-xl font-bold">{accuracy}%</div>
@@ -161,7 +161,7 @@ export default function TrainingPage() {
 
           {/* End Training Button */}
           <div className="text-center">
-            <Button variant="outline" onClick={handleEndTraining} className="w-full">
+            <Button onClick={handleEndTraining} className="w-full bg-white text-black hover:bg-gray-100 border-2 border-gray-300">
               End Training Session
             </Button>
           </div>

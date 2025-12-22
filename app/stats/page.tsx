@@ -119,7 +119,7 @@ export default function StatsPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-white">
       <div className="container mx-auto px-4 py-8 max-w-6xl">
         {/* Header */}
         <div className="mb-8">
@@ -145,15 +145,22 @@ export default function StatsPage() {
         }`}>
           <CardContent className="p-8">
             <div className="text-center">
-              <TrendingUp className={`h-16 w-16 mx-auto mb-4 ${
-                passProbability === 0
-                  ? "text-gray-600"
-                  : passProbability >= 80
-                    ? "text-green-600"
-                    : passProbability >= 60
-                      ? "text-orange-600"
-                      : "text-red-600"
-              }`} />
+              <div className="text-6xl mb-4">
+                {passProbability === 0
+                  ? "❓"
+                  : passProbability >= 90
+                    ? "🎉"
+                    : passProbability >= 80
+                      ? "😄"
+                      : passProbability >= 70
+                        ? "🙂"
+                        : passProbability >= 60
+                          ? "😐"
+                          : passProbability >= 40
+                            ? "😕"
+                            : "😰"
+                }
+              </div>
               <h2 className="text-3xl font-bold mb-2">
                 {passProbability === 0 ? "No Data Yet" : `${passProbability}%`}
               </h2>
@@ -168,7 +175,7 @@ export default function StatsPage() {
                   Don&apos;t worry if this is low!{" "}
                   <a
                     href="#recommendations"
-                    className="text-blue-600 hover:text-blue-700 underline font-medium"
+                    className="text-orange-600 hover:text-orange-700 underline font-medium"
                   >
                     Check your personalized recommendations below
                   </a>
@@ -176,7 +183,7 @@ export default function StatsPage() {
                 </p>
               )}
               {passProbability > 0 && (
-                <Progress value={passProbability} className="h-3 mt-4" />
+                <Progress value={passProbability} className="h-3 mt-4 [&>div]:bg-orange-600" />
               )}
             </div>
           </CardContent>
@@ -186,22 +193,22 @@ export default function StatsPage() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
           <Card>
             <CardContent className="p-6 text-center">
-              <Award className="h-8 w-8 text-blue-600 mx-auto mb-2" />
-              <div className="text-2xl font-bold text-blue-600 mb-1">{masteryPercentage}%</div>
+              <Award className="h-8 w-8 text-orange-600 mx-auto mb-2" />
+              <div className="text-2xl font-bold text-orange-600 mb-1">{masteryPercentage}%</div>
               <div className="text-sm text-gray-600">Overall Mastery</div>
             </CardContent>
           </Card>
           <Card>
             <CardContent className="p-6 text-center">
-              <CheckCircle className="h-8 w-8 text-green-600 mx-auto mb-2" />
-              <div className="text-2xl font-bold text-green-600 mb-1">{testsAttempted}</div>
+              <CheckCircle className="h-8 w-8 text-orange-600 mx-auto mb-2" />
+              <div className="text-2xl font-bold text-orange-600 mb-1">{testsAttempted}</div>
               <div className="text-sm text-gray-600">Tests Attempted</div>
             </CardContent>
           </Card>
           <Card>
             <CardContent className="p-6 text-center">
-              <Target className="h-8 w-8 text-purple-600 mx-auto mb-2" />
-              <div className="text-2xl font-bold text-purple-600 mb-1">{stats.accuracy}%</div>
+              <Target className="h-8 w-8 text-orange-600 mx-auto mb-2" />
+              <div className="text-2xl font-bold text-orange-600 mb-1">{stats.accuracy}%</div>
               <div className="text-sm text-gray-600">Test Accuracy</div>
             </CardContent>
           </Card>
@@ -221,33 +228,55 @@ export default function StatsPage() {
           </CardHeader>
           <CardContent>
             <div className="space-y-4">
-              {testStats.map(({ testNumber, stats }) => (
-                <div key={testNumber} className="border-b pb-4 last:border-b-0 last:pb-0">
-                  <div className="flex items-center justify-between mb-2">
-                    <h3 className="font-semibold">Test {testNumber}</h3>
-                    <div className="flex gap-4 text-sm">
-                      {stats ? (
-                        <>
-                          <span className="text-gray-600">
-                            First: <span className="font-bold text-blue-600">{stats.firstScore}/50</span>
-                          </span>
-                          <span className="text-gray-600">
-                            Best: <span className="font-bold text-green-600">{stats.bestScore}/50</span>
-                          </span>
-                          <span className="text-gray-600">
-                            Attempts: <span className="font-bold">{stats.attemptCount}</span>
-                          </span>
-                        </>
-                      ) : (
-                        <span className="text-gray-400 italic">Not started</span>
-                      )}
+              {testStats.map(({ testNumber, stats }) => {
+                const percentage = stats ? Math.round((stats.bestScore / 50) * 100) : 0;
+                const emoji = !stats
+                  ? "⭕"
+                  : percentage === 100
+                    ? "🏆"
+                    : percentage >= 90
+                      ? "🎉"
+                      : percentage >= 80
+                        ? "😄"
+                        : percentage >= 70
+                          ? "🙂"
+                          : percentage >= 60
+                            ? "😐"
+                            : percentage >= 40
+                              ? "😕"
+                              : "😰";
+
+                return (
+                  <div key={testNumber} className="border-b pb-4 last:border-b-0 last:pb-0">
+                    <div className="flex items-center justify-between mb-2">
+                      <div className="flex items-center gap-3">
+                        <span className="text-2xl">{emoji}</span>
+                        <h3 className="font-semibold">Test {testNumber}</h3>
+                      </div>
+                      <div className="flex gap-4 text-sm">
+                        {stats ? (
+                          <>
+                            <span className="text-gray-600">
+                              First: <span className="font-bold text-orange-600">{stats.firstScore}/50</span>
+                            </span>
+                            <span className="text-gray-600">
+                              Best: <span className="font-bold text-orange-600">{stats.bestScore}/50</span>
+                            </span>
+                            <span className="text-gray-600">
+                              Attempts: <span className="font-bold">{stats.attemptCount}</span>
+                            </span>
+                          </>
+                        ) : (
+                          <span className="text-gray-400 italic">Not started</span>
+                        )}
+                      </div>
                     </div>
+                    {stats && (
+                      <Progress value={percentage} className="h-2 [&>div]:bg-orange-600" />
+                    )}
                   </div>
-                  {stats && (
-                    <Progress value={(stats.bestScore / 50) * 100} className="h-2" />
-                  )}
-                </div>
-              ))}
+                );
+              })}
             </div>
           </CardContent>
         </Card>
@@ -260,15 +289,15 @@ export default function StatsPage() {
           <CardContent>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               <div className="text-center">
-                <div className="text-2xl font-bold text-blue-600">{totalTraining}</div>
+                <div className="text-2xl font-bold text-orange-600">{totalTraining}</div>
                 <div className="text-sm text-gray-600">Questions Practiced</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-green-600">{trainingAccuracy}%</div>
+                <div className="text-2xl font-bold text-orange-600">{trainingAccuracy}%</div>
                 <div className="text-sm text-gray-600">Accuracy</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-purple-600">{training.currentStreak}</div>
+                <div className="text-2xl font-bold text-orange-600">{training.currentStreak}</div>
                 <div className="text-sm text-gray-600">Current Streak</div>
               </div>
               <div className="text-center">
@@ -317,12 +346,12 @@ export default function StatsPage() {
         {/* Quick Actions */}
         <div className="flex gap-4 justify-center">
           <Link href="/training">
-            <Button className="bg-purple-600 hover:bg-purple-700">
+            <Button className="bg-black text-white hover:bg-gray-800">
               Start Training Mode
             </Button>
           </Link>
           <Link href="/dashboard">
-            <Button variant="outline">
+            <Button className="bg-white text-black hover:bg-gray-100 border-2 border-gray-300">
               Take Practice Test
             </Button>
           </Link>

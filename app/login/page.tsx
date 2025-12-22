@@ -25,6 +25,8 @@ export default function LoginPage() {
 
     try {
       await login(email, password);
+      // Wait for user data to load before redirecting
+      await new Promise(resolve => setTimeout(resolve, 800));
       router.push("/dashboard");
     } catch (err: any) {
       setError(err.message || "Failed to log in");
@@ -39,7 +41,8 @@ export default function LoginPage() {
 
     try {
       await loginWithGoogle();
-      // Note: Redirect logic will be handled by checking selectedState in useEffect
+      // Wait for user data to load before redirecting
+      await new Promise(resolve => setTimeout(resolve, 800));
       router.push("/dashboard");
     } catch (err: any) {
       setError(err.message || "Failed to sign in with Google");
@@ -49,7 +52,7 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center p-4">
+    <div className="bg-white flex items-center justify-center py-12 px-4">
       <Card className="w-full max-w-2xl">
         <CardHeader className="space-y-1">
           <CardTitle className="text-2xl font-bold text-center">Welcome Back</CardTitle>
@@ -68,8 +71,7 @@ export default function LoginPage() {
             {/* Google Sign-In */}
             <Button
               type="button"
-              variant="outline"
-              className="w-full"
+              className="w-full bg-white text-black hover:bg-gray-100 border-2 border-gray-300"
               onClick={handleGoogleSignIn}
               disabled={loading}
             >
@@ -131,7 +133,7 @@ export default function LoginPage() {
               />
             </div>
 
-            <Button type="submit" className="w-full" disabled={loading}>
+            <Button type="submit" className="w-full bg-black text-white hover:bg-gray-800" disabled={loading}>
               {loading ? "Logging in..." : "Log In"}
             </Button>
 

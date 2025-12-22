@@ -9,7 +9,7 @@ interface StatsCardProps {
   iconColor?: string;
 }
 
-export function StatsCard({ title, value, description, icon: Icon, iconColor = "text-blue-600" }: StatsCardProps) {
+export function StatsCard({ title, value, description, icon: Icon, iconColor = "text-orange-600" }: StatsCardProps) {
   return (
     <Card>
       <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">

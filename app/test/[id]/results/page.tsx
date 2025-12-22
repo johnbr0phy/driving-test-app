@@ -103,123 +103,139 @@ export default function ResultsPage() {
           </Link>
         </div>
 
-        {/* Results Header */}
-        <Card className="mb-8">
-          <CardHeader>
+        {/* Results Header - Main Score */}
+        <Card className={`mb-6 ${passed ? "bg-gradient-to-br from-green-50 to-emerald-50 border-green-200" : "bg-gradient-to-br from-orange-50 to-amber-50 border-orange-300"}`}>
+          <CardContent className="pt-8 pb-8">
             <div className="text-center">
-              <div className={`inline-flex items-center justify-center w-20 h-20 rounded-full mb-4 ${
-                passed ? "bg-green-100" : "bg-red-100"
+              <div className={`inline-flex items-center justify-center w-24 h-24 rounded-full mb-6 ${
+                passed ? "bg-green-100 border-4 border-green-300" : "bg-orange-100 border-4 border-orange-300"
               }`}>
                 {passed ? (
-                  <Trophy className="w-10 h-10 text-green-600" />
+                  <Trophy className="w-12 h-12 text-green-600" />
                 ) : (
-                  <XCircle className="w-10 h-10 text-red-600" />
+                  <XCircle className="w-12 h-12 text-orange-600" />
                 )}
               </div>
-              <CardTitle className="text-3xl mb-2">
+
+              <h1 className="text-4xl md:text-5xl font-bold mb-3">
                 {passed ? "Congratulations!" : "Keep Practicing!"}
-              </CardTitle>
-              <p className="text-gray-600 mb-4">
+              </h1>
+
+              <p className="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
                 {passed
                   ? "You passed the test with flying colors!"
                   : "You need 70% to pass. Review the questions below and try again."}
               </p>
-            </div>
-          </CardHeader>
-          <CardContent>
-            {/* Main Score */}
-            <div className="text-center mb-6">
-              <div className="text-6xl font-bold text-blue-600 mb-2">
-                {score}/{totalQuestions}
-              </div>
-              <div className="text-3xl font-semibold mb-2">
-                {percentage}%
-              </div>
-              <Badge
-                className={`text-lg px-4 py-2 ${
-                  passed ? "bg-green-500" : "bg-red-500"
-                }`}
-              >
-                {passed ? "PASSED" : "FAILED"}
-              </Badge>
-            </div>
 
-            {/* Improvement Context */}
-            {attemptStats && attemptStats.attemptCount > 1 && (
-              <div className="border-t pt-6 mb-6">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center mb-4">
-                  <div>
-                    <div className="text-sm text-gray-600 mb-1">First Attempt</div>
-                    <div className="text-2xl font-semibold text-gray-700">
-                      {firstScore}/{totalQuestions}
+              {/* Main Score Display */}
+              <div className="mb-6">
+                <div className={`text-7xl md:text-8xl font-bold mb-3 ${passed ? "text-green-600" : "text-orange-600"}`}>
+                  {percentage}%
+                </div>
+                <div className="text-2xl text-gray-700 mb-4">
+                  {score} out of {totalQuestions} correct
+                </div>
+                <Badge
+                  className={`text-lg px-6 py-2 ${
+                    passed ? "bg-green-600 hover:bg-green-700" : "bg-orange-600 hover:bg-orange-700"
+                  }`}
+                >
+                  {passed ? "PASSED" : "FAILED"}
+                </Badge>
+              </div>
+
+              {/* Action Buttons */}
+              <div className="flex flex-col sm:flex-row gap-3 justify-center mt-8 max-w-2xl mx-auto">
+                <Button className="bg-black text-white hover:bg-gray-800 flex-1 sm:flex-initial" onClick={() => router.push("/dashboard")}>
+                  Back to Dashboard
+                </Button>
+                <Button
+                  className="bg-white text-black hover:bg-gray-100 border-2 border-gray-300 flex-1 sm:flex-initial"
+                  onClick={() => router.push(`/test/${testId}`)}
+                >
+                  Retake Test
+                </Button>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Improvement Stats */}
+        {attemptStats && attemptStats.attemptCount > 1 && (
+          <Card className="mb-6">
+            <CardHeader>
+              <CardTitle className="text-center">Your Progress</CardTitle>
+              <p className="text-center text-sm text-gray-600">Attempt #{attemptNumber}</p>
+            </CardHeader>
+            <CardContent>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                {/* First Attempt */}
+                <Card className="bg-gray-50 border-gray-200">
+                  <CardContent className="pt-6 text-center">
+                    <div className="text-sm font-medium text-gray-600 mb-2">First Attempt</div>
+                    <div className="text-4xl font-bold text-gray-700 mb-1">
+                      {firstPercentage}%
                     </div>
-                    <div className="text-sm text-gray-500">{firstPercentage}%</div>
-                  </div>
-                  <div>
-                    <div className="text-sm text-gray-600 mb-1">This Attempt</div>
-                    <div className="text-2xl font-semibold text-blue-600">
-                      {score}/{totalQuestions}
+                    <div className="text-sm text-gray-500">
+                      {firstScore}/{totalQuestions} correct
                     </div>
-                    <div className="text-sm text-gray-500">{percentage}%</div>
+                  </CardContent>
+                </Card>
+
+                {/* This Attempt */}
+                <Card className="bg-orange-50 border-orange-200 border-2">
+                  <CardContent className="pt-6 text-center">
+                    <div className="text-sm font-medium text-orange-700 mb-2">This Attempt</div>
+                    <div className="text-4xl font-bold text-orange-600 mb-1">
+                      {percentage}%
+                    </div>
+                    <div className="text-sm text-gray-600">
+                      {score}/{totalQuestions} correct
+                    </div>
                     {isNewBest && (
-                      <div className="flex items-center justify-center gap-1 text-yellow-600 font-semibold mt-1">
+                      <div className="flex items-center justify-center gap-1 text-yellow-600 font-semibold mt-2">
                         <Sparkles className="h-4 w-4" />
                         <span className="text-sm">NEW BEST!</span>
                       </div>
                     )}
-                  </div>
-                  <div>
-                    <div className="text-sm text-gray-600 mb-1">Best Score</div>
-                    <div className="text-2xl font-semibold text-green-600">
-                      {bestScore}/{totalQuestions}
-                    </div>
-                    <div className="text-sm text-gray-500">{bestPercentage}%</div>
-                  </div>
-                </div>
-                {improvement > 0 && (
-                  <div className="flex items-center justify-center gap-2 bg-green-50 border border-green-200 rounded-lg p-3">
-                    <TrendingUp className="h-5 w-5 text-green-600" />
-                    <span className="font-semibold text-green-700">
-                      Improved by {improvement}% since first attempt! 🚀
-                    </span>
-                  </div>
-                )}
-                <div className="text-center text-sm text-gray-500 mt-3">
-                  Attempt #{attemptNumber}
-                </div>
-              </div>
-            )}
+                  </CardContent>
+                </Card>
 
-            <div className="flex gap-4 justify-center mt-6">
-              <Button onClick={() => router.push("/dashboard")}>
-                Back to Dashboard
-              </Button>
-              <Button
-                variant="outline"
-                onClick={() => router.push(`/test/${testId}`)}
-              >
-                Retake Test
-              </Button>
-              {testId < 4 && (
-                <Button
-                  variant="outline"
-                  onClick={() => router.push(`/test/${testId + 1}`)}
-                >
-                  Next Test
-                </Button>
+                {/* Best Score */}
+                <Card className="bg-green-50 border-green-200">
+                  <CardContent className="pt-6 text-center">
+                    <div className="text-sm font-medium text-green-700 mb-2">Best Score</div>
+                    <div className="text-4xl font-bold text-green-600 mb-1">
+                      {bestPercentage}%
+                    </div>
+                    <div className="text-sm text-gray-600">
+                      {bestScore}/{totalQuestions} correct
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+
+              {/* Improvement Message */}
+              {improvement > 0 && (
+                <div className="flex items-center justify-center gap-2 bg-green-50 border-2 border-green-300 rounded-lg p-4">
+                  <TrendingUp className="h-6 w-6 text-green-600" />
+                  <span className="text-lg font-semibold text-green-700">
+                    Improved by {improvement}% since first attempt! 🚀
+                  </span>
+                </div>
               )}
-            </div>
-          </CardContent>
-        </Card>
+            </CardContent>
+          </Card>
+        )}
 
         {/* Question Review */}
         <div className="mb-4 flex items-center justify-between">
           <h2 className="text-2xl font-bold">Review Questions</h2>
           <div className="flex gap-2">
-            <Button variant="outline" size="sm" onClick={expandAll}>
+            <Button size="sm" className="bg-white text-black hover:bg-gray-100 border-2 border-gray-300" onClick={expandAll}>
               Expand All
             </Button>
-            <Button variant="outline" size="sm" onClick={collapseAll}>
+            <Button size="sm" className="bg-white text-black hover:bg-gray-100 border-2 border-gray-300" onClick={collapseAll}>
               Collapse All
             </Button>
           </div>

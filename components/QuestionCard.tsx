@@ -43,7 +43,7 @@ export function QuestionCard({
     }
 
     // During test - no visual selection indicator
-    return "border-gray-300 hover:border-blue-500 hover:bg-blue-50 cursor-pointer";
+    return "border-gray-300 hover:border-orange-500 hover:bg-orange-50 cursor-pointer";
   };
 
   return (
@@ -87,9 +87,9 @@ export function QuestionCard({
         </div>
 
         {showResult && (
-          <div className="mt-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
-            <div className="font-semibold text-blue-900 mb-2">Explanation:</div>
-            <div className="text-blue-800">{question.explanation}</div>
+          <div className="mt-6 p-4 bg-orange-50 border border-orange-200 rounded-lg">
+            <div className="font-semibold text-orange-900 mb-2">Explanation:</div>
+            <div className="text-orange-800">{question.explanation}</div>
           </div>
         )}
       </CardContent>

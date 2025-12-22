@@ -101,7 +101,7 @@ export default function SettingsPage() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <div className="container mx-auto px-4 py-8 max-w-5xl">
+      <div className="container mx-auto px-4 py-8 max-w-6xl">
         {/* Header */}
         <div className="mb-8">
           <Link href="/dashboard">
@@ -113,100 +113,102 @@ export default function SettingsPage() {
           <h1 className="text-4xl font-bold">Settings</h1>
         </div>
 
-        {/* State Selection Card */}
-        <Card className="max-w-2xl mb-6">
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2">
-              <MapPin className="h-5 w-5" />
-              State Selection
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="space-y-4">
-              <div>
-                <div className="text-sm text-gray-600 mb-2">Currently practicing for:</div>
-                <div className="text-2xl font-bold text-blue-600 mb-4">
-                  {currentStateName}
+        {/* State Selection and Profile Photo Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+          {/* State Selection Card */}
+          <Card>
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <MapPin className="h-5 w-5" />
+                State Selection
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-4">
+                <div>
+                  <div className="text-sm text-gray-600 mb-2">Currently practicing for:</div>
+                  <div className="text-2xl font-bold text-orange-600 mb-4">
+                    {currentStateName}
+                  </div>
                 </div>
-              </div>
 
-              <div>
-                <label className="text-sm font-medium text-gray-700 mb-2 block">
-                  Change State
-                </label>
-                <select
-                  value={selectedState || ""}
-                  onChange={(e) => handleStateChange(e.target.value)}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                >
-                  {states.map((state) => (
-                    <option key={state.code} value={state.code}>
-                      {state.name} ({state.code})
-                    </option>
-                  ))}
-                </select>
-                <p className="text-xs text-gray-500 mt-2">
-                  <strong className="text-orange-600">Warning:</strong> Switching states will permanently delete your current state&apos;s progress.
-                </p>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-
-        {/* Profile Photo Card */}
-        <Card className="max-w-2xl">
-          <CardHeader>
-            <CardTitle>Profile Photo</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="flex flex-col items-center gap-6">
-              {/* Current Photo */}
-              <Avatar className="h-32 w-32">
-                <AvatarImage src={displayPhotoURL || undefined} alt="Profile" />
-                <AvatarFallback className="text-6xl">😊</AvatarFallback>
-              </Avatar>
-
-              {/* User Email */}
-              <div className="text-center">
-                <div className="text-sm text-gray-600 mb-1">Account</div>
-                <div className="font-medium">{user.email}</div>
-              </div>
-
-              {/* Google Photo Option */}
-              {user.photoURL && (
-                <div className="w-full">
-                  <Button
-                    onClick={handleUseGooglePhoto}
-                    disabled={loadingGooglePhoto}
-                    className="w-full"
-                    variant="outline"
+                <div>
+                  <label className="text-sm font-medium text-gray-700 mb-2 block">
+                    Change State
+                  </label>
+                  <select
+                    value={selectedState || ""}
+                    onChange={(e) => handleStateChange(e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                   >
-                    {loadingGooglePhoto ? (
-                      <>
-                        <Loader2 className="h-4 w-4 mr-2 animate-spin" />
-                        Loading...
-                      </>
-                    ) : (
-                      <>
-                        <User className="h-4 w-4 mr-2" />
-                        Use Google Photo
-                      </>
-                    )}
-                  </Button>
+                    {states.map((state) => (
+                      <option key={state.code} value={state.code}>
+                        {state.name} ({state.code})
+                      </option>
+                    ))}
+                  </select>
+                  <p className="text-xs text-gray-500 mt-2">
+                    <strong className="text-orange-600">Warning:</strong> Switching states will permanently delete your current state&apos;s progress.
+                  </p>
                 </div>
-              )}
+              </div>
+            </CardContent>
+          </Card>
 
-              {!user.photoURL && (
-                <div className="text-sm text-gray-500 text-center">
-                  Sign in with Google to use your Google profile photo
+          {/* Profile Photo Card */}
+          <Card>
+            <CardHeader>
+              <CardTitle>Profile Photo</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="flex flex-col items-center gap-6">
+                {/* Current Photo */}
+                <Avatar className="h-32 w-32">
+                  <AvatarImage src={displayPhotoURL || undefined} alt="Profile" />
+                  <AvatarFallback className="text-6xl">😊</AvatarFallback>
+                </Avatar>
+
+                {/* User Email */}
+                <div className="text-center">
+                  <div className="text-sm text-gray-600 mb-1">Account</div>
+                  <div className="font-medium">{user.email}</div>
                 </div>
-              )}
-            </div>
-          </CardContent>
-        </Card>
+
+                {/* Google Photo Option */}
+                {user.photoURL && (
+                  <div className="w-full">
+                    <Button
+                      onClick={handleUseGooglePhoto}
+                      disabled={loadingGooglePhoto}
+                      className="w-full bg-white text-black hover:bg-gray-100 border-2 border-gray-300"
+                    >
+                      {loadingGooglePhoto ? (
+                        <>
+                          <Loader2 className="h-4 w-4 mr-2 animate-spin" />
+                          Loading...
+                        </>
+                      ) : (
+                        <>
+                          <User className="h-4 w-4 mr-2" />
+                          Use Google Photo
+                        </>
+                      )}
+                    </Button>
+                  </div>
+                )}
+
+                {!user.photoURL && (
+                  <div className="text-sm text-gray-500 text-center">
+                    Sign in with Google to use your Google profile photo
+                  </div>
+                )}
+              </div>
+            </CardContent>
+          </Card>
+        </div>
 
         {/* Danger Zone */}
-        <Card className="max-w-2xl mt-6 border-red-200">
+        <Card className="border-red-200">
           <CardHeader>
             <CardTitle className="text-red-600 flex items-center gap-2">
               <AlertTriangle className="h-5 w-5" />
@@ -261,7 +263,7 @@ export default function SettingsPage() {
             </DialogDescription>
           </DialogHeader>
           <DialogFooter className="gap-2 sm:gap-0">
-            <Button variant="outline" onClick={() => setStateChangeDialog(false)}>
+            <Button className="bg-white text-black hover:bg-gray-100 border-2 border-gray-300" onClick={() => setStateChangeDialog(false)}>
               Cancel
             </Button>
             <Button variant="destructive" onClick={confirmStateChange}>
@@ -298,7 +300,7 @@ export default function SettingsPage() {
             </DialogDescription>
           </DialogHeader>
           <DialogFooter className="gap-2 sm:gap-0">
-            <Button variant="outline" onClick={() => setResetDialog(false)}>
+            <Button className="bg-white text-black hover:bg-gray-100 border-2 border-gray-300" onClick={() => setResetDialog(false)}>
               Cancel
             </Button>
             <Button variant="destructive" onClick={confirmReset}>

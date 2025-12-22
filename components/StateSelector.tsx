@@ -43,12 +43,12 @@ export function StateSelector({ onSelect, selectedState }: StateSelectorProps) {
               onClick={() => onSelect(state.code)}
               className={`cursor-pointer transition-all hover:shadow-md ${
                 isSelected
-                  ? "border-blue-500 bg-blue-50 border-2"
-                  : "border-gray-200 hover:border-blue-300"
+                  ? "border-orange-500 bg-orange-50 border-2"
+                  : "border-gray-200 hover:border-orange-300"
               }`}
             >
               <CardContent className="p-4 text-center">
-                <div className="text-2xl font-bold text-blue-600 mb-1">
+                <div className="text-2xl font-bold text-orange-600 mb-1">
                   {state.code}
                 </div>
                 <div className="text-sm text-gray-700">{state.name}</div>

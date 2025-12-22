@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { TrainingCard } from "@/components/TrainingCard";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Flame, Trophy, Target, ArrowLeft } from "lucide-react";
+import { Flame, Trophy, Target, ArrowLeft, PartyPopper, Sparkles } from "lucide-react";
 import { useStore } from "@/store/useStore";
 import { getTrainingQuestion } from "@/lib/testGenerator";
 import { Question } from "@/types";
@@ -22,6 +22,8 @@ export default function TrainingPage() {
 
   const [currentQuestion, setCurrentQuestion] = useState<Question | null>(null);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
+  const [showCelebration, setShowCelebration] = useState(false);
+  const [prevCorrectCount, setPrevCorrectCount] = useState(training.totalCorrectAllTime);
 
   // Redirect to onboarding if no state selected
   useEffect(() => {
@@ -29,6 +31,14 @@ export default function TrainingPage() {
       router.push("/onboarding/select-state");
     }
   }, [hydrated, selectedState, router]);
+
+  // Detect when user unlocks practice tests (crosses 10 correct answers)
+  useEffect(() => {
+    if (training.totalCorrectAllTime >= 10 && prevCorrectCount < 10) {
+      setShowCelebration(true);
+    }
+    setPrevCorrectCount(training.totalCorrectAllTime);
+  }, [training.totalCorrectAllTime, prevCorrectCount]);
 
   // Load first question on mount or after session reset
   useEffect(() => {
@@ -83,6 +93,60 @@ export default function TrainingPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-50 to-amber-50">
+      {/* Celebration Modal */}
+      {showCelebration && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm animate-in fade-in duration-300">
+          <div className="bg-white rounded-2xl p-8 mx-4 max-w-md text-center shadow-2xl animate-in zoom-in-95 duration-300">
+            {/* Confetti Animation */}
+            <div className="relative mb-4">
+              <div className="absolute -top-4 left-1/2 -translate-x-1/2 flex gap-2">
+                {[...Array(8)].map((_, i) => (
+                  <div
+                    key={i}
+                    className="w-3 h-3 rounded-full animate-bounce"
+                    style={{
+                      backgroundColor: ['#f97316', '#eab308', '#22c55e', '#3b82f6', '#a855f7', '#ec4899'][i % 6],
+                      animationDelay: `${i * 0.1}s`,
+                      animationDuration: '0.6s',
+                    }}
+                  />
+                ))}
+              </div>
+              <div className="flex justify-center gap-4 pt-4">
+                <PartyPopper className="h-12 w-12 text-orange-500 animate-pulse" />
+                <Trophy className="h-16 w-16 text-yellow-500 animate-bounce" />
+                <Sparkles className="h-12 w-12 text-orange-500 animate-pulse" />
+              </div>
+            </div>
+
+            <h2 className="text-3xl font-bold text-gray-900 mb-2">
+              Congratulations!
+            </h2>
+            <p className="text-xl text-orange-600 font-semibold mb-4">
+              You unlocked Practice Tests!
+            </p>
+            <p className="text-gray-600 mb-6">
+              You&apos;ve answered 10 questions correctly. Now you can take full practice tests to prepare for the real exam!
+            </p>
+
+            <div className="flex flex-col gap-3">
+              <Link href="/dashboard">
+                <Button className="w-full bg-black text-white hover:bg-gray-800 text-lg py-6">
+                  Take Your First Test
+                </Button>
+              </Link>
+              <Button
+                variant="outline"
+                className="w-full"
+                onClick={() => setShowCelebration(false)}
+              >
+                Keep Training
+              </Button>
+            </div>
+          </div>
+        </div>
+      )}
+
       <div className="container mx-auto px-4 py-4 max-w-6xl">
         {/* Minimal Header */}
         <div className="mb-4">

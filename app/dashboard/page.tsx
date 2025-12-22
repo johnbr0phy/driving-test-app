@@ -194,7 +194,15 @@ export default function DashboardPage() {
                 <div className="flex items-center gap-4">
                   <Zap className="h-10 w-10 text-orange-600" />
                   <div>
-                    <h3 className="font-bold text-lg text-orange-900">Learn at your own pace.</h3>
+                    <h3 className="font-bold text-lg text-orange-900">
+                      {trainingProgress}/200 questions answered correctly
+                    </h3>
+                    <div className="w-full bg-orange-200 rounded-full h-2 mt-2 max-w-xs">
+                      <div
+                        className="bg-orange-600 h-2 rounded-full transition-all"
+                        style={{ width: `${Math.min(100, (trainingProgress / 200) * 100)}%` }}
+                      />
+                    </div>
                   </div>
                 </div>
                 <Link href="/training" className="w-full sm:w-auto">

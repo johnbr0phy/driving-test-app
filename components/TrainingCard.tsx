@@ -34,7 +34,7 @@ export function TrainingCard({
     }
 
     if (optionLetter === question.correctAnswer) {
-      return "border-orange-500 bg-orange-50";
+      return "border-green-500 bg-green-50";
     }
 
     if (optionLetter === selectedAnswer && !isCorrect) {
@@ -67,7 +67,7 @@ export function TrainingCard({
                 <span className="font-bold text-lg">{option.letter})</span>
                 <span className="flex-1">{option.text}</span>
                 {answered && option.letter === question.correctAnswer && (
-                  <CheckCircle2 className="h-6 w-6 text-orange-600" />
+                  <CheckCircle2 className="h-6 w-6 text-green-600" />
                 )}
                 {answered && option.letter === selectedAnswer && !isCorrect && (
                   <XCircle className="h-6 w-6 text-red-600" />
@@ -82,12 +82,12 @@ export function TrainingCard({
           <div className="space-y-4">
             <div
               className={`p-4 rounded-lg ${
-                isCorrect ? "bg-orange-50 border border-orange-200" : "bg-red-50 border border-red-200"
+                isCorrect ? "bg-green-50 border border-green-200" : "bg-red-50 border border-red-200"
               }`}
             >
               <div
                 className={`font-bold mb-2 ${
-                  isCorrect ? "text-orange-700" : "text-red-700"
+                  isCorrect ? "text-green-700" : "text-red-700"
                 }`}
               >
                 {isCorrect ? "✓ Correct!" : "✗ Incorrect"}

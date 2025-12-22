@@ -10,6 +10,7 @@ import { Trophy, XCircle, ChevronDown, ChevronUp, TrendingUp, Sparkles, ArrowLef
 import Link from "next/link";
 import { useStore } from "@/store/useStore";
 import { useHydration } from "@/hooks/useHydration";
+import { Cloud } from "lucide-react";
 
 export default function ResultsPage() {
   const params = useParams();
@@ -19,6 +20,7 @@ export default function ResultsPage() {
 
   const getTestSession = useStore((state) => state.getTestSession);
   const getTestAttemptStats = useStore((state) => state.getTestAttemptStats);
+  const isGuest = useStore((state) => state.isGuest);
   const [expandedQuestions, setExpandedQuestions] = useState<Set<number>>(new Set());
   const [loading, setLoading] = useState(true);
 
@@ -159,6 +161,32 @@ export default function ResultsPage() {
             </div>
           </CardContent>
         </Card>
+
+        {/* Guest Signup Prompt */}
+        {isGuest && (
+          <Card className="mb-6 bg-gradient-to-r from-blue-50 to-indigo-50 border-blue-200">
+            <CardContent className="py-6">
+              <div className="flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
+                <div className="flex-shrink-0">
+                  <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                    <Cloud className="w-6 h-6 text-blue-600" />
+                  </div>
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-1">Save Your Progress</h3>
+                  <p className="text-gray-600">
+                    Your score is only saved on this device. Create a free account to save your progress to the cloud and track your improvement over time.
+                  </p>
+                </div>
+                <Link href="/signup">
+                  <Button className="bg-blue-600 text-white hover:bg-blue-700 whitespace-nowrap">
+                    Sign Up Free
+                  </Button>
+                </Link>
+              </div>
+            </CardContent>
+          </Card>
+        )}
 
         {/* Improvement Stats */}
         {attemptStats && attemptStats.attemptCount > 1 && (

@@ -5,6 +5,10 @@ import { doc, setDoc, getDoc } from 'firebase/firestore';
 import { db } from '@/lib/firebase';
 
 interface AppState {
+  // Guest mode
+  isGuest: boolean;
+  startGuestSession: () => void;
+
   // Selected state
   selectedState: string | null;
   setSelectedState: (state: string) => void;
@@ -69,12 +73,16 @@ interface AppState {
   loadUserData: (userId: string) => Promise<void>;
   saveToFirestore: () => Promise<void>;
   resetAllData: () => void;
+
+  // Guest to user conversion
+  convertGuestToUser: (userId: string) => Promise<void>;
 }
 
 export const useStore = create<AppState>()(
   persist(
     (set, get) => ({
       // Initial state
+      isGuest: false,
       selectedState: null,
       currentTests: {},
       completedTests: [],
@@ -93,6 +101,10 @@ export const useStore = create<AppState>()(
       photoURL: null,
 
       // Actions
+      startGuestSession: () => {
+        set({ isGuest: true });
+      },
+
       setUserId: (userId: string | null) => {
         set({ userId });
       },
@@ -449,8 +461,8 @@ export const useStore = create<AppState>()(
       },
 
       saveToFirestore: async () => {
-        const { userId, selectedState, currentTests, completedTests, testAttempts, training, photoURL } = get();
-        if (!userId) return; // Don't save if no user is logged in
+        const { userId, isGuest, selectedState, currentTests, completedTests, testAttempts, training, photoURL } = get();
+        if (!userId || isGuest) return; // Don't save if no user is logged in or guest mode
 
         try {
           // Convert currentTests dates to timestamps for Firestore
@@ -505,6 +517,14 @@ export const useStore = create<AppState>()(
           },
         });
         get().saveToFirestore();
+      },
+
+      // Convert guest session to registered user
+      convertGuestToUser: async (userId: string) => {
+        // Set user ID and clear guest flag
+        set({ userId, isGuest: false });
+        // Save all existing guest progress to Firestore
+        await get().saveToFirestore();
       },
     }),
     {

@@ -42,17 +42,31 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const setUserId = useStore((state) => state.setUserId);
   const setPhotoURL = useStore((state) => state.setPhotoURL);
   const photoURL = useStore((state) => state.photoURL);
+  const convertGuestToUser = useStore((state) => state.convertGuestToUser);
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, async (user) => {
       setUser(user);
       if (user) {
-        // Load user data from Firestore
-        await loadUserData(user.uid);
+        // Check if this was a guest session being converted
+        const wasGuest = useStore.getState().isGuest;
 
-        // If user has a Google photo and no custom photo is set, use Google photo
-        if (user.photoURL && !photoURL) {
-          setPhotoURL(user.photoURL);
+        if (wasGuest) {
+          // Convert guest session to registered user - keeps existing progress
+          await convertGuestToUser(user.uid);
+
+          // If user has a Google photo and no custom photo is set, use Google photo
+          if (user.photoURL && !photoURL) {
+            setPhotoURL(user.photoURL);
+          }
+        } else {
+          // Load user data from Firestore (normal login)
+          await loadUserData(user.uid);
+
+          // If user has a Google photo and no custom photo is set, use Google photo
+          if (user.photoURL && !photoURL) {
+            setPhotoURL(user.photoURL);
+          }
         }
       } else {
         // Clear user data when logged out
@@ -62,7 +76,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     });
 
     return unsubscribe;
-  }, [loadUserData, setUserId, setPhotoURL, photoURL]);
+  }, [loadUserData, setUserId, setPhotoURL, photoURL, convertGuestToUser]);
 
   const signup = async (email: string, password: string) => {
     await createUserWithEmailAndPassword(auth, email, password);

@@ -14,7 +14,6 @@ import { db } from "@/lib/firebase";
 import { useStore } from "@/store/useStore";
 
 export default function SignupPage() {
-  const [step, setStep] = useState<1 | 2>(1);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
@@ -25,6 +24,12 @@ export default function SignupPage() {
   const { signup, loginWithGoogle } = useAuth();
   const router = useRouter();
   const setStoreState = useStore((state) => state.setSelectedState);
+  const storeSelectedState = useStore((state) => state.selectedState);
+  const isGuest = useStore((state) => state.isGuest);
+
+  // If guest already has a state selected, skip step 1
+  const guestHasState = isGuest && storeSelectedState;
+  const [step, setStep] = useState<1 | 2>(guestHasState ? 2 : 1);
 
   const handleStateSelect = () => {
     if (!selectedState) {
@@ -37,7 +42,9 @@ export default function SignupPage() {
   };
 
   const handleGoogleSignIn = async () => {
-    if (!selectedState) {
+    // For guests, use existing state; otherwise require selection
+    const stateToUse = guestHasState ? storeSelectedState : selectedState;
+    if (!stateToUse) {
       setError("Please select a state first");
       return;
     }
@@ -47,14 +54,15 @@ export default function SignupPage() {
 
     try {
       await loginWithGoogle();
-      // Save the selected state (we've already validated it's not null above)
-      setStoreState(selectedState!);
+      // Only set state if not a guest (guests already have state set)
+      if (!guestHasState) {
+        setStoreState(stateToUse!);
+      }
       // Wait for user data to load before redirecting
       await new Promise(resolve => setTimeout(resolve, 800));
 
-      // Redirect to state selection if somehow state wasn't saved
-      const hasState = useStore.getState().selectedState;
-      router.push(hasState ? "/dashboard" : "/onboarding/select-state");
+      // Redirect to dashboard
+      router.push("/dashboard");
     } catch (err: any) {
       setError(err.message || "Failed to sign in with Google");
     } finally {
@@ -79,15 +87,16 @@ export default function SignupPage() {
     try {
       // Create user account
       await signup(email, password);
-      // Save the selected state (validated in step 1)
-      setStoreState(selectedState!);
+      // Only set state if not a guest (guests already have state set)
+      if (!guestHasState) {
+        setStoreState(selectedState!);
+      }
 
       // Small delay to ensure state is saved
       await new Promise(resolve => setTimeout(resolve, 100));
 
-      // Redirect to state selection if somehow state wasn't saved
-      const hasState = useStore.getState().selectedState;
-      router.push(hasState ? "/dashboard" : "/onboarding/select-state");
+      // Redirect to dashboard
+      router.push("/dashboard");
     } catch (err: any) {
       setError(err.message || "Failed to create account");
       setLoading(false);
@@ -100,12 +109,14 @@ export default function SignupPage() {
       <Card className="w-full max-w-2xl">
         <CardHeader className="space-y-1">
           <CardTitle className="text-2xl font-bold text-center">
-            {step === 1 ? "Select Your State" : "Create Account"}
+            {step === 1 ? "Select Your State" : guestHasState ? "Save Your Progress" : "Create Account"}
           </CardTitle>
           <CardDescription className="text-center">
             {step === 1
               ? "Which state are you preparing for?"
-              : "Sign up to start practicing for your driving test"}
+              : guestHasState
+                ? "Create a free account to save your progress to the cloud"
+                : "Sign up to start practicing for your driving test"}
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -223,14 +234,14 @@ export default function SignupPage() {
                 <div className="flex gap-3">
                   <Button
                     type="button"
-                    onClick={() => setStep(1)}
+                    onClick={() => guestHasState ? router.push("/dashboard") : setStep(1)}
                     disabled={loading}
                     className="w-full bg-white text-black hover:bg-gray-100 border-2 border-gray-300"
                   >
-                    Back
+                    {guestHasState ? "Continue as Guest" : "Back"}
                   </Button>
                   <Button type="submit" className="w-full bg-black text-white hover:bg-gray-800" disabled={loading}>
-                    {loading ? "Creating account..." : "Create Account"}
+                    {loading ? "Creating account..." : guestHasState ? "Save Progress" : "Create Account"}
                   </Button>
                 </div>
               </form>

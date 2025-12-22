@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { TrainingCard } from "@/components/TrainingCard";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Flame, Trophy, Target, ArrowLeft, PartyPopper, Sparkles } from "lucide-react";
+import { Trophy, ArrowLeft, PartyPopper, Sparkles } from "lucide-react";
 import { useStore } from "@/store/useStore";
 import { getTrainingQuestion } from "@/lib/testGenerator";
 import { Question } from "@/types";
@@ -18,7 +18,6 @@ export default function TrainingPage() {
   const selectedState = useStore((state) => state.selectedState);
   const training = useStore((state) => state.training);
   const answerTrainingQuestion = useStore((state) => state.answerTrainingQuestion);
-  const resetTrainingSession = useStore((state) => state.resetTrainingSession);
   const resetMasteredQuestions = useStore((state) => state.resetMasteredQuestions);
 
   const [currentQuestion, setCurrentQuestion] = useState<Question | null>(null);
@@ -84,18 +83,6 @@ export default function TrainingPage() {
   const handleNext = () => {
     loadNextQuestion();
   };
-
-  const handleEndTraining = () => {
-    if (confirm("Are you sure you want to end this training session?")) {
-      resetTrainingSession();
-      router.push("/dashboard");
-    }
-  };
-
-  const totalAnswered = training.correctCount + training.incorrectCount;
-  const accuracy = totalAnswered > 0
-    ? Math.round((training.correctCount / totalAnswered) * 100)
-    : 0;
 
   if (!hydrated || !selectedState) {
     return null;
@@ -176,7 +163,7 @@ export default function TrainingPage() {
             selectedAnswer={selectedAnswer}
             onAnswerSelect={handleAnswerSelect}
             onNext={handleNext}
-            questionNumber={totalAnswered + 1}
+            questionNumber={training.totalCorrectAllTime + 1}
           />
         ) : (
           <Card className="w-full">
@@ -189,55 +176,17 @@ export default function TrainingPage() {
           </Card>
         )}
 
-        {/* Stats at Bottom - Compact */}
-        <div className="mt-6 space-y-4">
-          <div className="grid grid-cols-2 gap-3">
-            <Card className="bg-white/80">
-              <CardContent className="p-3 text-center">
-                <div className="flex items-center justify-center gap-2 mb-1">
-                  <Target className="h-4 w-4 text-orange-600" />
-                  <div className="text-xs text-gray-600">Questions</div>
-                </div>
-                <div className="text-xl font-bold">{totalAnswered}</div>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-white/80">
-              <CardContent className="p-3 text-center">
-                <div className="flex items-center justify-center gap-2 mb-1">
-                  <Trophy className="h-4 w-4 text-orange-600" />
-                  <div className="text-xs text-gray-600">Accuracy</div>
-                </div>
-                <div className="text-xl font-bold">{accuracy}%</div>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-white/80">
-              <CardContent className="p-3 text-center">
-                <div className="flex items-center justify-center gap-2 mb-1">
-                  <Flame className="h-4 w-4 text-orange-600" />
-                  <div className="text-xs text-gray-600">Current</div>
-                </div>
-                <div className="text-xl font-bold">{training.currentStreak}</div>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-white/80">
-              <CardContent className="p-3 text-center">
-                <div className="flex items-center justify-center gap-2 mb-1">
-                  <Flame className="h-4 w-4 text-yellow-600" />
-                  <div className="text-xs text-gray-600">Best</div>
-                </div>
-                <div className="text-xl font-bold">{training.bestStreak}</div>
-              </CardContent>
-            </Card>
-          </div>
-
-          {/* End Training Button */}
-          <div className="text-center">
-            <Button onClick={handleEndTraining} className="w-full bg-white text-black hover:bg-gray-100 border-2 border-gray-300">
-              End Training Session
-            </Button>
+        {/* Progress */}
+        <div className="mt-6 text-center">
+          <p className="text-lg text-gray-700">
+            <span className="font-bold text-2xl text-orange-600">{training.totalCorrectAllTime}</span>
+            <span className="text-gray-500"> / 200 answered correctly</span>
+          </p>
+          <div className="w-full bg-orange-200 rounded-full h-2 mt-2 max-w-md mx-auto">
+            <div
+              className="bg-orange-600 h-2 rounded-full transition-all"
+              style={{ width: `${Math.min(100, (training.totalCorrectAllTime / 200) * 100)}%` }}
+            />
           </div>
         </div>
       </div>

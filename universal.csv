@@ -1,0 +1,161 @@
+Type,State,QuestionID,Category,Question,OptionA,OptionB,OptionC,OptionD,CorrectAnswer,CorrectIndex,Explanation
+Universal,ALL,U-001,roadSigns,What shape is a stop sign?,Octagon,Triangle,Circle,Diamond,A,0,Stop signs are octagonal.
+Universal,ALL,U-002,roadSigns,What shape is a yield sign?,Octagon,Triangle,Square,Diamond,B,1,Yield signs are triangular.
+Universal,ALL,U-003,roadSigns,What shape is a school zone sign?,Octagon,Triangle,Pentagon,Diamond,C,2,School zone signs are pentagon-shaped.
+Universal,ALL,U-004,roadSigns,What shape is a railroad warning sign?,Octagon,Triangle,Pentagon,Circle,D,3,Railroad warning signs are circular.
+Universal,ALL,U-005,roadSigns,What color is a stop sign?,Red,Yellow,Orange,Blue,A,0,Stop signs are red.
+Universal,ALL,U-006,roadSigns,What color are warning signs?,Red,Yellow,Orange,Blue,B,1,Warning signs are yellow.
+Universal,ALL,U-007,roadSigns,What color are construction signs?,Red,Yellow,Orange,Blue,C,2,Construction signs are orange.
+Universal,ALL,U-008,roadSigns,What color are destination guide signs?,Red,Yellow,Orange,Green,D,3,Destination signs are green.
+Universal,ALL,U-009,roadSigns,What color are motorist service signs?,Blue,Brown,Green,White,A,0,Service signs are blue.
+Universal,ALL,U-010,roadSigns,What color are recreation area signs?,Blue,Brown,Green,White,B,1,Recreation signs are brown.
+Universal,ALL,U-011,roadSigns,What does a pennant-shaped sign mark?,School zone,Railroad crossing,No passing zone,Work zone,C,2,Pennant signs mark no passing zones.
+Universal,ALL,U-012,roadSigns,What does a red circle with slash mean?,Speed limit,Required action,Warning ahead,Action prohibited,D,3,Red circle with slash means prohibited.
+Universal,ALL,U-013,roadSigns,What does a flashing red light mean?,Stop,Caution,Yield,Go,A,0,Flashing red means stop then proceed.
+Universal,ALL,U-014,roadSigns,What does a flashing yellow light mean?,Stop,Caution,Yield,Go,B,1,Flashing yellow means proceed with caution.
+Universal,ALL,U-015,roadSigns,What does a green arrow mean?,Yield then turn,Slow then turn,Protected turn,No turn allowed,C,2,Green arrow means protected turn.
+Universal,ALL,U-016,roadSigns,What does a red arrow mean?,Yield then turn,Slow then turn,Turn with caution,No turn allowed,D,3,Red arrow means no turn until green.
+Universal,ALL,U-017,roadSigns,What does a solid yellow arrow mean?,Signal ending,Protected turn,Yield required,No turn,A,0,Yellow arrow means signal ending.
+Universal,ALL,U-018,roadSigns,Double solid yellow lines mean?,Pass with care,No passing allowed,Passing left only,Carpool lane,B,1,Double yellow means no passing.
+Universal,ALL,U-019,roadSigns,Broken white lines between lanes mean?,No lane change,Stay in lane,Lane change allowed,Emergency lane,C,2,Broken white allows lane changes.
+Universal,ALL,U-020,roadSigns,A solid white line between lanes means?,Change freely,Change encouraged,Change required,Change discouraged,D,3,Solid white discourages changes.
+Universal,ALL,U-021,roadSigns,Yellow center lines separate what?,Same direction traffic,Opposite direction traffic,Bike lanes,Carpool lanes,B,1,Yellow separates opposite directions.
+Universal,ALL,U-022,roadSigns,What does a crossbuck sign mark?,School crossing,Bike crossing,Railroad crossing,Deer crossing,C,2,Crossbuck marks railroad crossing.
+Universal,ALL,U-023,roadSigns,Diamond-shaped signs indicate what?,Regulations,Services,Recreation areas,Warnings,D,3,Diamonds indicate warnings.
+Universal,ALL,U-024,roadSigns,What does HOV stand for?,Highway Only Vehicle,High Occupancy Vehicle,Heavy Operating Vehicle,Hazard On Vehicle,B,1,HOV means High Occupancy Vehicle.
+Universal,ALL,U-025,roadSigns,What does a merge sign warn of?,Stop ahead,Road closed,Lanes combining,Speed reduction,C,2,Merge warns of lanes combining.
+Universal,ALL,U-026,roadSigns,What does a yield sign require?,Complete stop,Slowing and giving way,Changing lanes,Using horn,B,1,Yield means slow and give way.
+Universal,ALL,U-027,roadSigns,DO NOT ENTER sign means?,Wrong way,Road closed,Yield required,Stop ahead,A,0,Do not enter means wrong way.
+Universal,ALL,U-028,roadSigns,WRONG WAY sign means?,Against traffic,One way ends,Detour ahead,Road closed,A,0,Wrong way means against traffic.
+Universal,ALL,U-029,roadSigns,White arrows on pavement show?,Suggested route,Optional direction,Required direction,Passing zone,C,2,White arrows show required direction.
+Universal,ALL,U-030,roadSigns,Speed limit signs show?,Minimum speed,Suggested speed,Maximum speed,Average speed,C,2,Speed limits show maximum speed.
+Universal,ALL,U-031,roadSigns,Advisory speed signs show?,Legal limit,Minimum speed,Required speed,Recommended speed,D,3,Advisory shows recommended speed.
+Universal,ALL,U-032,roadSigns,Rumble strips warn of?,Lane edge,Carpool lane,Bus stop,Rest area,A,0,Rumble strips mark lane edge.
+Universal,ALL,U-033,roadSigns,A deer crossing sign warns of?,Zoo ahead,Wildlife in area,Hunting zone,Pet crossing,B,1,Deer signs warn of wildlife.
+Universal,ALL,U-034,roadSigns,A truck on grade sign warns of?,Truck stop,Rest area,Steep hill,Weight station,C,2,Truck sign warns of steep grade.
+Universal,ALL,U-035,roadSigns,A low clearance sign warns of?,Weight limit,Width limit,Speed limit,Height limit,D,3,Low clearance warns of height.
+Universal,ALL,U-036,roadSigns,A divided highway sign means?,Road splitting,Lanes merging,Highway ending,Two-way traffic,A,0,Divided highway means road splits.
+Universal,ALL,U-037,roadSigns,Two-way traffic sign warns of?,One-way street,Opposing traffic ahead,Merge ahead,Pass zone,B,1,Two-way sign warns of opposing traffic.
+Universal,ALL,U-038,roadSigns,Hospital signs are what color?,Red,Green,Blue,Brown,C,2,Hospital signs are blue.
+Universal,ALL,U-039,roadSigns,Keep right sign means?,Turn right,Pass on right,Right lane only,Stay right of obstacle,D,3,Keep right means stay right of obstacle.
+Universal,ALL,U-040,roadSigns,One-way sign indicates?,Traffic one direction,Single lane road,No passing zone,Dead end ahead,A,0,One-way means one direction.
+Universal,ALL,U-041,roadSigns,Lane ends sign warns of?,Speed reduction,Fewer lanes ahead,Road ending,Merge left only,B,1,Lane ends means fewer lanes.
+Universal,ALL,U-042,roadSigns,Signal ahead sign warns of?,Stop sign,Yield sign,Speed camera,Traffic light,D,3,Signal ahead warns of traffic light.
+Universal,ALL,U-043,roadSigns,Stop ahead sign is what shape?,Red octagon,Yellow diamond,White rectangle,Orange square,B,1,Stop ahead is yellow diamond.
+Universal,ALL,U-044,roadSigns,Pedestrian crossing sign is what shape?,Blue circle,Red square,Yellow diamond,Green rectangle,C,2,Pedestrian sign is yellow diamond.
+Universal,ALL,U-045,roadSigns,No U-turn sign shows?,Yellow arrow,Green U shape,White arrow,U with red slash,D,3,No U-turn has red slash.
+Universal,ALL,U-046,roadSigns,A sharrow marking indicates?,Shared bike lane,Sharp turn ahead,Shoulder ending,Shopping area,A,0,Sharrow means shared lane.
+Universal,ALL,U-047,roadSigns,Slippery when wet sign shows?,Rain cloud,Wavy tire tracks,Water droplet,Ice crystals,B,1,Slippery sign shows wavy tracks.
+Universal,ALL,U-048,roadSigns,Curve warning signs are what shape?,Rectangle,Pentagon,Diamond,Circle,C,2,Curve signs are diamond shaped.
+Universal,ALL,U-049,roadSigns,Road narrows sign warns of?,Speed reduction,Weight limit,Lane closure,Width decreasing,D,3,Road narrows warns width decreasing.
+Universal,ALL,U-050,roadSigns,Most regulatory signs are what shape?,Rectangle,Diamond,Pentagon,Circle,A,0,Regulatory signs are rectangular.
+Universal,ALL,U-051,rulesOfRoad,Who has right-of-way at an uncontrolled intersection?,Vehicle on the right,Vehicle on the left,Larger vehicle,Faster vehicle,A,0,Vehicle on right has right-of-way.
+Universal,ALL,U-052,rulesOfRoad,How far before turning must you signal?,50 feet,100 feet,150 feet,200 feet,B,1,Signal at least 100 feet before.
+Universal,ALL,U-053,rulesOfRoad,How far from a fire hydrant must you park?,5 feet,10 feet,15 feet,20 feet,C,2,Park at least 15 feet from hydrant.
+Universal,ALL,U-054,rulesOfRoad,When must you stop for a school bus?,Yellow lights flash,Driver waves,Children visible,Red lights flash,D,3,Stop when red lights flash.
+Universal,ALL,U-055,rulesOfRoad,Parking downhill with curb - turn wheels?,Toward curb,Away from curb,Straight ahead,Either direction,A,0,Turn toward curb going downhill.
+Universal,ALL,U-056,rulesOfRoad,When can you pass on the right?,Never allowed,When left vehicle turns left,Anytime you want,On highways only,B,1,Pass right when vehicle turns left.
+Universal,ALL,U-057,rulesOfRoad,When is passing on a two-lane road illegal?,During rain,At night,On hills or curves,In cities,C,2,No passing on hills or curves.
+Universal,ALL,U-058,rulesOfRoad,At a four-way stop who goes first?,Largest vehicle,Fastest vehicle,Most expensive vehicle,First to arrive,D,3,First to arrive goes first.
+Universal,ALL,U-059,rulesOfRoad,What must you do for an emergency vehicle?,Pull right and stop,Speed up and clear,Stay in your lane,Stop where you are,A,0,Pull to right and stop.
+Universal,ALL,U-060,rulesOfRoad,How far must you stay behind fire trucks?,100 feet,300 feet,500 feet,1000 feet,C,2,Stay 500 feet behind fire trucks.
+Universal,ALL,U-061,rulesOfRoad,When may you use a bike lane?,Never allowed,For right turns only,Anytime you want,To pass traffic,B,1,Use bike lanes for right turns only.
+Universal,ALL,U-062,rulesOfRoad,In a roundabout who has right-of-way?,Entering vehicles,Exiting vehicles,Larger vehicles,Vehicles already inside,D,3,Traffic inside has right-of-way.
+Universal,ALL,U-063,rulesOfRoad,When is a left turn on red legal?,One-way to one-way,Anytime after stopping,Never allowed,After yielding only,A,0,Left on red one-way to one-way.
+Universal,ALL,U-064,rulesOfRoad,Where must you stop at a stop sign?,Before the crosswalk,In the crosswalk,After the crosswalk,Past the sign,A,0,Stop before crosswalk.
+Universal,ALL,U-065,rulesOfRoad,What is a center left-turn lane for?,Passing slower traffic,Through traffic use,Making left turns,Emergency parking,C,2,Center lane for left turns only.
+Universal,ALL,U-066,rulesOfRoad,When can you turn right on red?,Never allowed,Anytime you want,Without stopping,After full stop,D,3,Right on red after full stop.
+Universal,ALL,U-067,rulesOfRoad,Parking uphill with curb - turn wheels?,Away from curb,Toward curb,Straight ahead,Either direction,A,0,Turn away from curb going uphill.
+Universal,ALL,U-068,rulesOfRoad,Solid yellow line on your side means?,Pass with care,No passing allowed,Passing encouraged,Carpool lane,B,1,Solid yellow means no passing.
+Universal,ALL,U-069,rulesOfRoad,When entering a freeway you should?,Stop at the end,Enter very slowly,Match traffic speed,Yield to everyone,C,2,Match speed then merge.
+Universal,ALL,U-070,rulesOfRoad,What is a deceleration lane for?,Speeding up,Passing traffic,Parking briefly,Slowing to exit,D,3,Deceleration lane for slowing to exit.
+Universal,ALL,U-071,rulesOfRoad,When are headlights required?,At night only,In rain only,Low visibility conditions,When you are tired,C,2,Headlights in low visibility.
+Universal,ALL,U-072,rulesOfRoad,When exiting a driveway who yields?,Street traffic yields,You yield to street,Pedestrians yield,Cyclists yield,B,1,Driveway traffic yields to street.
+Universal,ALL,U-073,rulesOfRoad,When can you cross double yellow lines?,Never allowed,To pass traffic,To turn into driveway,Anytime you want,C,2,Cross only to turn into driveway.
+Universal,ALL,U-074,rulesOfRoad,Which lane for normal freeway driving?,Far left lane,Center lane,Any lane works,Far right lane,D,3,Use right lane for normal driving.
+Universal,ALL,U-075,rulesOfRoad,A broken traffic signal should be treated as?,Normal signal,Yield sign,Flashing yellow,Four-way stop,D,3,Treat broken signal as four-way stop.
+Universal,ALL,U-076,rulesOfRoad,Before backing up you must?,Honk horn,Look behind you,Turn on hazards,Roll down window,B,1,Look behind before backing.
+Universal,ALL,U-077,rulesOfRoad,White curb means?,Passenger loading only,No parking anytime,Time limit parking,Disabled parking only,A,0,White curb for passenger loading.
+Universal,ALL,U-078,rulesOfRoad,Yellow curb means?,Passenger loading only,Commercial loading only,Time limit parking,Disabled parking only,B,1,Yellow curb for commercial loading.
+Universal,ALL,U-079,rulesOfRoad,Red curb means?,Loading zone only,Time limit parking,No stopping anytime,Disabled parking only,C,2,Red curb means no stopping.
+Universal,ALL,U-080,rulesOfRoad,Blue curb means?,Loading zone only,Time limit parking,No stopping anytime,Disabled parking only,D,3,Blue curb for disabled parking.
+Universal,ALL,U-081,rulesOfRoad,When changing lanes you must check?,Signal only,Mirrors only,Blind spot only,Mirrors and blind spot,D,3,Check mirrors and blind spot.
+Universal,ALL,U-082,rulesOfRoad,Dim your high beams within what distance?,250 feet,500 feet,750 feet,1000 feet,B,1,Dim within 500 feet of oncoming.
+Universal,ALL,U-083,rulesOfRoad,If you miss your exit you should?,Back up slowly,Stop and wait,Make a U-turn,Go to next exit,D,3,Continue to next exit.
+Universal,ALL,U-084,rulesOfRoad,School bus on divided highway - opposite lanes?,Always stop,Stop if children visible,Stop if not divided,No need to stop,D,3,No need to stop if divided.
+Universal,ALL,U-085,rulesOfRoad,When may you drive on the shoulder?,For passing,For parking,For emergencies only,To avoid traffic,C,2,Shoulder for emergencies only.
+Universal,ALL,U-086,rulesOfRoad,When you hear a siren but cannot see it?,Maintain speed,Pull over and wait,Speed up to clear,Stop in lane,B,1,Pull over until you locate it.
+Universal,ALL,U-087,rulesOfRoad,A flashing yellow arrow means?,Stop then turn,Turn after yielding,Protected turn,No turn allowed,B,1,Yield then turn allowed.
+Universal,ALL,U-088,rulesOfRoad,What is the safest speed in work zones?,Above the limit,Posted limit or below,Whatever traffic does,Minimum speed,B,1,Posted limit or below in work zones.
+Universal,ALL,U-089,rulesOfRoad,Speed limit in school zones when children present?,15 mph,20 mph,25 mph,35 mph,C,2,Usually 25 mph in school zones.
+Universal,ALL,U-090,rulesOfRoad,When should pedestrians use crosswalks?,Always required,Only at signals,Only when marked,When available nearby,D,3,Use crosswalks when available.
+Universal,ALL,U-091,safeDriving,What is the recommended following distance?,1 second,2 seconds,3-4 seconds,6 seconds,C,2,Follow at 3-4 seconds distance.
+Universal,ALL,U-092,safeDriving,In rain or fog increase following distance to?,Same distance,2 seconds,3 seconds,4-6 seconds or more,D,3,Increase to 4-6 seconds in bad weather.
+Universal,ALL,U-093,safeDriving,Where are your blind spots located?,Directly behind you,Directly in front,To the sides,In your mirrors,C,2,Blind spots are to the sides.
+Universal,ALL,U-094,safeDriving,If you hydroplane you should?,Brake hard,Accelerate out,Ease off gas,Turn sharply,C,2,Ease off gas and steer straight.
+Universal,ALL,U-095,safeDriving,During a tire blowout you should?,Brake hard,Grip wheel and slow gradually,Steer sharply,Shift to neutral,B,1,Grip wheel firmly and slow gradually.
+Universal,ALL,U-096,safeDriving,If blinded by headlights look toward?,The headlights,Center of road,Right edge of road,Left edge of road,C,2,Look at right edge of road.
+Universal,ALL,U-097,safeDriving,If your accelerator sticks you should?,Turn off engine,Shift to neutral,Jump out,Pump pedal fast,B,1,Shift to neutral then brake.
+Universal,ALL,U-098,safeDriving,If your brakes fail you should?,Steer off road,Pump brakes use parking brake,Jump out,Turn off engine,B,1,Pump brakes and use parking brake.
+Universal,ALL,U-099,safeDriving,To recover from a rear-wheel skid?,Brake firmly,Steer into the skid,Steer opposite,Accelerate hard,B,1,Steer the direction you want to go.
+Universal,ALL,U-100,safeDriving,Roads are most slippery during rain?,After hours of rain,During heavy rain,First 10-15 minutes,At end of storm,C,2,Most slippery first 10-15 minutes.
+Universal,ALL,U-101,safeDriving,Before entering a curve you should?,Accelerate into it,Brake during curve,Slow before curve,Coast through it,C,2,Slow before curve accelerate through.
+Universal,ALL,U-102,safeDriving,Best hand position on steering wheel?,10 and 2,Top of wheel,9 and 3,Bottom of wheel,C,2,9 and 3 is safest position.
+Universal,ALL,U-103,safeDriving,How often should you check your mirrors?,Every minute,Every 30 seconds,Every 5-8 seconds,Only when turning,C,2,Check mirrors every 5-8 seconds.
+Universal,ALL,U-104,safeDriving,Most rear-end collisions are caused by?,Brake failure,Following too closely,Wet roads,Poor visibility,B,1,Following too close causes most rear-ends.
+Universal,ALL,U-105,safeDriving,When driving near motorcycles give them?,Less space than cars,Same space as cars,More space than cars,No extra space,C,2,Give motorcycles extra space.
+Universal,ALL,U-106,safeDriving,When a large truck is turning right you should?,Pass on the right,Pass on the left,Honk at them,Wait behind it,D,3,Wait behind - trucks swing wide.
+Universal,ALL,U-107,safeDriving,Trucks have blind spots on?,The rear only,The front only,The right only,All four sides,D,3,Trucks have blind spots all sides.
+Universal,ALL,U-108,safeDriving,When should you adjust your mirrors?,While driving,At red lights,Before driving,After parking,C,2,Adjust mirrors before you drive.
+Universal,ALL,U-109,safeDriving,Scanning while driving means?,Staring straight ahead,Checking your phone,Looking around regularly,Watching mirrors only,C,2,Scanning means looking around regularly.
+Universal,ALL,U-110,safeDriving,If confronted by an aggressive driver?,Respond aggressively,Stop and confront,Avoid eye contact,Speed away fast,C,2,Avoid eye contact and stay calm.
+Universal,ALL,U-111,safeDriving,At a blind intersection you should?,Go normal speed,Stop completely,Slow and look carefully,Honk your horn,C,2,Slow and look carefully.
+Universal,ALL,U-112,safeDriving,If your car overheats you should?,Keep driving slowly,Speed up to cool,Pull over and stop,Open all windows,C,2,Pull over and turn off engine.
+Universal,ALL,U-113,safeDriving,Worn tires increase the risk of?,Engine noise,Rough ride,Reduced traction,Lower fuel economy,C,2,Worn tires reduce traction.
+Universal,ALL,U-114,safeDriving,When passing bicyclists give at least?,1 foot,2 feet,3 feet,4 feet,C,2,Give at least 3 feet to bikes.
+Universal,ALL,U-115,safeDriving,If a pedestrian crosses against the light?,Proceed anyway,Yield to them,Honk at them,Flash your lights,B,1,Always yield to pedestrians.
+Universal,ALL,U-116,safeDriving,Safe driving speed depends on?,Posted limit,Traffic flow,Your comfort level,Road conditions,D,3,Safe speed depends on conditions.
+Universal,ALL,U-117,safeDriving,In fog you should use?,High beams,Parking lights,Hazard lights,Low beams,D,3,Use low beams in fog.
+Universal,ALL,U-118,safeDriving,If your car catches fire?,Stay in the car,Pull over and exit fast,Keep driving,Open your windows,B,1,Pull over and exit immediately.
+Universal,ALL,U-119,safeDriving,To prevent fatigue on long drives?,Drink coffee,Play loud music,Drive faster,Take regular breaks,D,3,Take breaks every 2 hours.
+Universal,ALL,U-120,safeDriving,If an animal runs into the road?,Swerve to avoid,Speed up past it,Brake if safe,Honk at it,C,2,Brake if safe don't swerve into traffic.
+Universal,ALL,U-121,safeDriving,Cruise control is safe to use?,In any conditions,On wet roads,In heavy traffic,On dry steady roads,D,3,Cruise control only on dry steady roads.
+Universal,ALL,U-122,safeDriving,If your car slides on ice?,Brake firmly,Turn the wheel hard,Steer gently,Accelerate out,C,2,Steer gently where you want to go.
+Universal,ALL,U-123,safeDriving,When driving through deep water?,Go fast through it,Stop in middle,Drive slow and steady,Rev the engine,C,2,Drive slowly and steadily.
+Universal,ALL,U-124,safeDriving,How often should you check tire pressure?,Once a year,At oil changes,Monthly,When flat,C,2,Check tire pressure monthly.
+Universal,ALL,U-125,safeDriving,Tailgating means?,Driving in left lane,Passing on right,Following too closely,Using high beams,C,2,Tailgating is following too closely.
+Universal,ALL,U-126,specialSituations,At railroad crossing with no signals?,Go normal speed,Honk your horn,Stop completely,Slow and look,D,3,Slow and look both ways.
+Universal,ALL,U-127,specialSituations,You must stop at railroad tracks when?,Lights are flashing,Gates are down,Train is visible,All of these,D,3,Stop for lights gates or train.
+Universal,ALL,U-128,specialSituations,You should never do what on railroad tracks?,Look both ways,Cross slowly,Stop on them,Use the crossing,C,2,Never stop on the tracks.
+Universal,ALL,U-129,specialSituations,If your vehicle stalls on tracks?,Try to restart it,Stay in and call help,Try to push it,Exit and move away,D,3,Exit and move away fast.
+Universal,ALL,U-130,specialSituations,Move over law requires you to?,Stop completely,Yield only,Flash hazards,Slow or change lanes,D,3,Change lanes or slow down.
+Universal,ALL,U-131,specialSituations,In work zones you should expect?,Higher speeds,More lanes,Changing patterns,Wider shoulders,C,2,Expect changing patterns.
+Universal,ALL,U-132,specialSituations,For a funeral procession you should?,Join it,Pass on left,Continue normally,Pull over and wait,D,3,Pull over and wait.
+Universal,ALL,U-133,specialSituations,If you witness a crash you should?,Keep driving,Direct traffic,Chase the cars,Stop safely and call 911,D,3,Stop safely and call 911.
+Universal,ALL,U-134,specialSituations,For winter driving keep in your car?,Nothing extra,First aid kit only,Cell phone only,Emergency kit,D,3,Keep an emergency kit.
+Universal,ALL,U-135,specialSituations,If your headlights fail at night?,Keep driving slowly,Speed home,Use high beams,Pull over safely,D,3,Pull over and turn on hazards.
+Universal,ALL,U-136,specialSituations,In a dust storm you should?,Slow down,Use high beams,Drive through fast,Pull off road completely,D,3,Pull off and turn off lights.
+Universal,ALL,U-137,specialSituations,When approaching a flooded road?,Drive fast through,Follow car ahead,Stay in center,Turn around,D,3,Turn around don't drown.
+Universal,ALL,U-138,specialSituations,Near light rail vehicles you should?,Pass on either side,Cross in front,Treat like cars,Never cross in front,D,3,Never cross in front of light rail.
+Universal,ALL,U-139,specialSituations,Use hazard lights while driving?,In heavy rain,When driving slow,In bad weather,Only when stopped,D,3,Only when stopped for emergency.
+Universal,ALL,U-140,specialSituations,When signaled by police to pull over?,Pull over right away,Stop immediately,Find a safe spot,Ignore until convenient,A,0,Pull over promptly to right.
+Universal,ALL,U-141,specialSituations,When passing a horse-drawn vehicle?,Honk your horn,Flash lights,Pass fast,Pass slowly with room,D,3,Pass slowly with extra room.
+Universal,ALL,U-142,specialSituations,If you have a medical emergency while driving?,Keep driving,Speed to hospital,Pull over safely,Ignore it,C,2,Pull over and assess.
+Universal,ALL,U-143,specialSituations,When approaching slow farm equipment?,Pass right away,Tailgate closely,Honk at them,Follow until safe to pass,D,3,Follow and pass when safe.
+Universal,ALL,U-144,specialSituations,When a school bus is loading children?,Slow to 15 mph,Pass carefully,Honk warning,Stop until lights off,D,3,Stop until red lights turn off.
+Universal,ALL,U-145,specialSituations,If someone is tailgating you?,Brake check them,Speed up,Move over when safe,Slam brakes,C,2,Move over and let them pass.
+Universal,ALL,U-146,alcoholDUI,The BAC limit for drivers 21 and over is?,0.10%,0.08%,0.05%,0.02%,B,1,Legal limit is 0.08%.
+Universal,ALL,U-147,alcoholDUI,The BAC limit for drivers under 21 is?,0.08%,0.05%,0.02% or lower,0.04%,C,2,Zero tolerance is 0.02% or lower.
+Universal,ALL,U-148,alcoholDUI,Implied consent means?,You can refuse any test,Driving consents to testing,Police can search car,You need a lawyer first,B,1,Driving implies consent to testing.
+Universal,ALL,U-149,alcoholDUI,Refusing a breath test results in?,No penalty at all,A warning only,Smaller fines,License suspension,D,3,Refusal means license suspension.
+Universal,ALL,U-150,alcoholDUI,How long to eliminate one drink from your body?,15 minutes,30 minutes,About 1 hour,About 2 hours,C,2,One drink takes about 1 hour.
+Universal,ALL,U-151,alcoholDUI,A DUI conviction can result in?,A warning only,A fine only,Points only,Fines jail and suspension,D,3,DUI brings fines jail and suspension.
+Universal,ALL,U-152,alcoholDUI,Alcohol affects your driving by?,Improving focus,Having no effect,Affecting vision only,Impairing judgment and reactions,D,3,Alcohol impairs judgment and reactions.
+Universal,ALL,U-153,alcoholDUI,If you plan to drink you should?,Eat a big meal first,Drink slowly,Drive extra carefully,Have a sober driver,D,3,Have a designated sober driver.
+Universal,ALL,U-154,alcoholDUI,Alcohol begins affecting driving after?,Reaching 0.08%,Feeling drunk,Having 3 drinks,Any amount at all,D,3,Impairment begins after any amount.
+Universal,ALL,U-155,alcoholDUI,A standard drink is?,Any amount of alcohol,A can of beer only,12oz beer 5oz wine 1.5oz liquor,A large mixed drink,C,2,12oz beer 5oz wine or 1.5oz liquor.
+Universal,ALL,U-156,alcoholDUI,Coffee will sober you up?,Yes quickly,Yes with food,Yes if cold,No only time works,D,3,Only time sobers you up.
+Universal,ALL,U-157,alcoholDUI,If an impaired person wants to drive?,Let them decide,Follow them home,Let them drive slow,Take their keys,D,3,Take keys and arrange safe ride.
+Universal,ALL,U-158,alcoholDUI,Mixing alcohol with medication?,Cancels alcohol effects,Has no effect,Makes alcohol safer,Increases impairment,D,3,Medication can increase impairment.
+Universal,ALL,U-159,alcoholDUI,A driver can be impaired by?,Alcohol only,Illegal drugs only,Prescription drugs only,Alcohol drugs or fatigue,D,3,Impairment from alcohol drugs or fatigue.
+Universal,ALL,U-160,alcoholDUI,The BAC limit for commercial drivers is?,0.08%,0.06%,0.04%,0.02%,C,2,Commercial limit is 0.04%.

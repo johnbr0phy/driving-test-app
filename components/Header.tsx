@@ -25,19 +25,16 @@ export function Header() {
   // Hide header on test and training pages
   const hideHeader = pathname?.startsWith("/test") || pathname === "/training";
 
-  // Use white header on homepage, signup, and login pages
-  const useWhiteHeader = pathname === "/" || pathname === "/signup" || pathname === "/login";
-
   if (hideHeader) {
     return null;
   }
 
   return (
-    <header className={`border-b ${useWhiteHeader ? "bg-white" : "bg-orange-600"}`}>
+    <header className="border-b bg-white">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <Link href={user || isGuest ? "/dashboard" : "/"} className="flex items-center gap-2 group">
             <Image src="/tiger.png" alt="tigertest.io" width={40} height={40} className="w-10 h-10" />
-            <span className={`text-2xl font-bold ${useWhiteHeader ? "text-gray-900" : "text-white"} group-hover:opacity-80 transition-opacity`}>
+            <span className="text-2xl font-bold text-gray-900 group-hover:opacity-80 transition-opacity">
               tigertest.io
             </span>
           </Link>
@@ -51,19 +48,19 @@ export function Header() {
                     <AvatarFallback className="text-lg">😊</AvatarFallback>
                   </Avatar>
                 </Link>
-                <Button onClick={handleLogout} className="bg-white text-black hover:bg-gray-100 border-2 border-gray-300">
+                <Button onClick={handleLogout} variant="outline" className="text-gray-700 border-gray-300 hover:bg-gray-50">
                   Log Out
                 </Button>
               </>
             ) : isGuest ? (
               <Link href="/signup">
-                <Button className="bg-white text-black hover:bg-gray-100 border-2 border-gray-300 font-semibold">
+                <Button variant="outline" className="text-gray-700 border-gray-300 hover:bg-gray-50 font-semibold">
                   Sign Up to Save
                 </Button>
               </Link>
             ) : (
               <Link href="/login">
-                <Button className="bg-white text-black hover:bg-gray-100 border-2 border-gray-300">Sign In</Button>
+                <Button variant="outline" className="text-gray-700 border-gray-300 hover:bg-gray-50">Sign In</Button>
               </Link>
             )}
           </div>

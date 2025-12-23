@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 import { useAuth } from "@/contexts/AuthContext";
 import { Button } from "@/components/ui/button";
 import { useStore } from "@/store/useStore";
@@ -49,8 +50,9 @@ export default function OnboardingSelectStatePage() {
   }
 
   return (
-    <div className="bg-white min-h-[80vh] flex items-center justify-center px-4">
-      <div className="text-center space-y-8">
+    <div className="bg-white relative min-h-[80vh] flex items-center justify-center px-4">
+      <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-orange-50 to-white pointer-events-none" />
+      <div className="relative text-center space-y-8">
         <div className="flex flex-wrap items-center justify-center gap-2 text-2xl md:text-3xl font-medium text-gray-800">
           <span>I need to pass the</span>
           <Select onValueChange={setSelectedState} value={selectedState || undefined}>
@@ -75,6 +77,13 @@ export default function OnboardingSelectStatePage() {
         >
           {loading ? "Loading..." : "Let's go"}
         </Button>
+
+        <div className="text-center text-sm text-gray-600">
+          Already have an account?{" "}
+          <Link href="/login" className="text-orange-600 hover:underline font-semibold">
+            Log in
+          </Link>
+        </div>
       </div>
     </div>
   );

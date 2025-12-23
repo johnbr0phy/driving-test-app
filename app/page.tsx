@@ -170,7 +170,7 @@ export default function Home() {
               <p className="text-sm text-gray-500 mb-3 text-center">Train on mobile</p>
               <div className="rounded-2xl shadow-2xl overflow-hidden border border-gray-200 bg-white">
                 <Image
-                  src="/screenshot-mobile.png"
+                  src="/mobile.png"
                   alt="TigerTest mobile training mode"
                   width={280}
                   height={560}
@@ -184,7 +184,7 @@ export default function Home() {
               <p className="text-sm text-gray-500 mb-3 text-center">Test on desktop</p>
               <div className="rounded-2xl shadow-2xl overflow-hidden border border-gray-200 bg-white">
                 <Image
-                  src="/screenshot-desktop.png"
+                  src="/desktop.png"
                   alt="TigerTest desktop practice test"
                   width={700}
                   height={480}

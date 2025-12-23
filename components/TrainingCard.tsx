@@ -46,31 +46,31 @@ export function TrainingCard({
 
   return (
     <Card className="w-full max-w-3xl mx-auto">
-      <CardContent className="p-8">
+      <CardContent className="p-4 md:p-8">
         {/* Question number */}
-        <div className="text-sm text-gray-500 mb-4">
+        <div className="text-sm text-gray-500 mb-3 md:mb-4">
           Question {questionNumber}
         </div>
 
         {/* Question text */}
-        <h2 className="text-2xl font-semibold mb-6">{question.question}</h2>
+        <h2 className="text-lg md:text-2xl font-semibold mb-4 md:mb-6">{question.question}</h2>
 
         {/* Options */}
-        <div className="space-y-3 mb-6">
+        <div className="space-y-2 md:space-y-3 mb-4 md:mb-6">
           {options.map((option) => (
             <div
               key={option.letter}
               onClick={() => !answered && onAnswerSelect(option.letter)}
-              className={`border-2 rounded-lg p-4 transition-all ${getOptionClasses(option.letter)}`}
+              className={`border-2 rounded-lg p-3 md:p-4 transition-all ${getOptionClasses(option.letter)}`}
             >
-              <div className="flex items-start gap-3">
-                <span className="font-bold text-lg">{option.letter})</span>
-                <span className="flex-1">{option.text}</span>
+              <div className="flex items-start gap-2 md:gap-3">
+                <span className="font-bold text-base md:text-lg">{option.letter})</span>
+                <span className="flex-1 text-sm md:text-base">{option.text}</span>
                 {answered && option.letter === question.correctAnswer && (
-                  <CheckCircle2 className="h-6 w-6 text-green-600" />
+                  <CheckCircle2 className="h-5 w-5 md:h-6 md:w-6 text-green-600 flex-shrink-0" />
                 )}
                 {answered && option.letter === selectedAnswer && !isCorrect && (
-                  <XCircle className="h-6 w-6 text-red-600" />
+                  <XCircle className="h-5 w-5 md:h-6 md:w-6 text-red-600 flex-shrink-0" />
                 )}
               </div>
             </div>
@@ -79,24 +79,24 @@ export function TrainingCard({
 
         {/* Feedback */}
         {answered && (
-          <div className="space-y-4">
+          <div className="space-y-3 md:space-y-4">
             <Button onClick={onNext} className="w-full bg-black text-white hover:bg-gray-800" size="lg">
               Next Question
             </Button>
 
             <div
-              className={`p-4 rounded-lg ${
+              className={`p-3 md:p-4 rounded-lg ${
                 isCorrect ? "bg-green-50 border border-green-200" : "bg-red-50 border border-red-200"
               }`}
             >
               <div
-                className={`font-bold mb-2 ${
+                className={`font-bold mb-1 md:mb-2 text-sm md:text-base ${
                   isCorrect ? "text-green-700" : "text-red-700"
                 }`}
               >
-                {isCorrect ? "✓ Correct!" : "✗ Incorrect"}
+                {isCorrect ? "Correct!" : "Incorrect"}
               </div>
-              <p className="text-gray-700">{question.explanation}</p>
+              <p className="text-gray-700 text-sm md:text-base">{question.explanation}</p>
             </div>
           </div>
         )}

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
@@ -161,22 +162,36 @@ export default function Home() {
               )}
             </>
           )}
-        </div>
-      </div>
 
-      {/* Testimonial 1 */}
-      <div className="max-w-2xl mx-auto px-6 py-12 text-center">
-        <p className="text-xl md:text-2xl text-gray-700 italic mb-4">
-          &quot;i passed in 3 minutes&quot;
-        </p>
-        <a
-          href="https://www.reddit.com/r/driving/comments/1ep1644/comment/m6ndsvp/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-gray-500 hover:text-gray-700 text-sm"
-        >
-          u/Curdled_Cave on Reddit
-        </a>
+          {/* Product Screenshots */}
+          <div className="mt-16 flex flex-col md:flex-row items-center justify-center gap-8">
+            {/* Mobile Screenshot */}
+            <div className="relative">
+              <div className="rounded-2xl shadow-2xl overflow-hidden border border-gray-200 bg-white">
+                <Image
+                  src="/screenshot-mobile.png"
+                  alt="TigerTest mobile training mode"
+                  width={280}
+                  height={560}
+                  className="w-[200px] md:w-[240px]"
+                />
+              </div>
+            </div>
+
+            {/* Desktop Screenshot */}
+            <div className="relative">
+              <div className="rounded-2xl shadow-2xl overflow-hidden border border-gray-200 bg-white">
+                <Image
+                  src="/screenshot-desktop.png"
+                  alt="TigerTest desktop practice test"
+                  width={700}
+                  height={480}
+                  className="w-[320px] md:w-[500px]"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* How it works */}

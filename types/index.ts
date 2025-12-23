@@ -84,4 +84,9 @@ export interface TestAttemptStats {
 export interface State {
   name: string;
   code: string; // 2-letter code
+  slug: string; // URL-friendly name (e.g., "california")
+  dmvName: string; // Official DMV name (e.g., "DMV", "BMV", "RMV")
+  writtenTestQuestions: number; // Number of questions on actual DMV test
+  passingScore: number; // Percentage needed to pass
+  minPermitAge: string; // Minimum age for learner's permit
 }

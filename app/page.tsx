@@ -153,12 +153,19 @@ export default function Home() {
                   </Button>
                 </Link>
               ) : (
-                <Button
-                  onClick={handleTryFree}
-                  className="bg-gray-900 text-white hover:bg-gray-800 px-8 py-6 text-lg rounded-full"
-                >
-                  Start practicing
-                </Button>
+                <div className="flex flex-col items-center gap-3">
+                  <Link href="/signup">
+                    <Button className="bg-gray-900 text-white hover:bg-gray-800 px-8 py-6 text-lg rounded-full">
+                      Start practicing
+                    </Button>
+                  </Link>
+                  <button
+                    onClick={handleTryFree}
+                    className="text-sm text-gray-500 hover:text-gray-700 underline"
+                  >
+                    Try it first
+                  </button>
+                </div>
               )}
             </>
           )}
@@ -350,12 +357,19 @@ export default function Home() {
           </p>
 
           {!loading && !user && !isGuest && (
-            <Button
-              onClick={handleTryFree}
-              className="bg-gray-900 text-white hover:bg-gray-800 px-8 py-6 text-lg rounded-full"
-            >
-              Start practicing
-            </Button>
+            <div className="flex flex-col items-center gap-3">
+              <Link href="/signup">
+                <Button className="bg-gray-900 text-white hover:bg-gray-800 px-8 py-6 text-lg rounded-full">
+                  Start practicing
+                </Button>
+              </Link>
+              <button
+                onClick={handleTryFree}
+                className="text-sm text-gray-500 hover:text-gray-700 underline"
+              >
+                Try it first
+              </button>
+            </div>
           )}
 
           {!loading && (user || isGuest) && (

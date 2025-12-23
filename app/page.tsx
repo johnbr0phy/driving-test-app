@@ -164,9 +164,10 @@ export default function Home() {
           )}
 
           {/* Product Screenshots */}
-          <div className="mt-16 flex flex-col md:flex-row items-center justify-center gap-8">
+          <div className="mt-16 flex flex-col md:flex-row items-end justify-center gap-8">
             {/* Mobile Screenshot */}
             <div className="relative">
+              <p className="text-sm text-gray-500 mb-3 text-center">Train on mobile</p>
               <div className="rounded-2xl shadow-2xl overflow-hidden border border-gray-200 bg-white">
                 <Image
                   src="/screenshot-mobile.png"
@@ -180,6 +181,7 @@ export default function Home() {
 
             {/* Desktop Screenshot */}
             <div className="relative">
+              <p className="text-sm text-gray-500 mb-3 text-center">Test on desktop</p>
               <div className="rounded-2xl shadow-2xl overflow-hidden border border-gray-200 bg-white">
                 <Image
                   src="/screenshot-desktop.png"

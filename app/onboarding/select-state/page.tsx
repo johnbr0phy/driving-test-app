@@ -54,7 +54,7 @@ export default function OnboardingSelectStatePage() {
         <div className="flex flex-wrap items-center justify-center gap-2 text-2xl md:text-3xl font-medium text-gray-800">
           <span>I need to pass the</span>
           <Select onValueChange={setSelectedState} value={selectedState || undefined}>
-            <SelectTrigger className="w-[200px] inline-flex text-xl md:text-2xl font-semibold text-orange-600 border-orange-300 focus:ring-orange-500">
+            <SelectTrigger className="w-auto inline-flex text-xl md:text-2xl font-semibold text-orange-600 border-none shadow-none focus:ring-0 focus:ring-offset-0 px-1 underline decoration-orange-300 decoration-2 underline-offset-4 hover:decoration-orange-500">
               <SelectValue placeholder="select state" />
             </SelectTrigger>
             <SelectContent>

@@ -71,6 +71,7 @@ interface AppState {
   setUserId: (userId: string | null) => void;
   setPhotoURL: (photoURL: string | null) => void;
   loadUserData: (userId: string) => Promise<void>;
+  checkUserHasData: (userId: string) => Promise<boolean>;
   saveToFirestore: () => Promise<void>;
   resetAllData: () => void;
   clearAllDataOnLogout: () => void;
@@ -458,6 +459,24 @@ export const useStore = create<AppState>()(
           }
         } catch (error) {
           console.error('Error loading user data:', error);
+        }
+      },
+
+      checkUserHasData: async (userId: string) => {
+        try {
+          const userDoc = await getDoc(doc(db, 'users', userId));
+          if (userDoc.exists()) {
+            const data = userDoc.data();
+            // Check if user has any meaningful progress data
+            const hasCompletedTests = data.completedTests && data.completedTests.length > 0;
+            const hasTestAttempts = data.testAttempts && data.testAttempts.length > 0;
+            const hasTrainingProgress = data.training?.totalCorrectAllTime > 0;
+            return hasCompletedTests || hasTestAttempts || hasTrainingProgress;
+          }
+          return false;
+        } catch (error) {
+          console.error('Error checking user data:', error);
+          return false;
         }
       },
 

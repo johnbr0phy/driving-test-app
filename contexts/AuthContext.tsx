@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext, useEffect, useState } from "react";
+import { createContext, useContext, useEffect, useState, useCallback } from "react";
 import {
   User,
   createUserWithEmailAndPassword,
@@ -12,6 +12,12 @@ import {
 } from "firebase/auth";
 import { auth } from "@/lib/firebase";
 import { useStore } from "@/store/useStore";
+import { AccountConflictDialog } from "@/components/AccountConflictDialog";
+
+interface AccountConflict {
+  user: User;
+  wasGuest: boolean;
+}
 
 interface AuthContextType {
   user: User | null;
@@ -38,11 +44,44 @@ export function useAuth() {
 export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
   const [loading, setLoading] = useState(true);
+  const [accountConflict, setAccountConflict] = useState<AccountConflict | null>(null);
   const loadUserData = useStore((state) => state.loadUserData);
   const setUserId = useStore((state) => state.setUserId);
   const setPhotoURL = useStore((state) => state.setPhotoURL);
   const photoURL = useStore((state) => state.photoURL);
   const convertGuestToUser = useStore((state) => state.convertGuestToUser);
+  const checkUserHasData = useStore((state) => state.checkUserHasData);
+  const clearAllDataOnLogout = useStore((state) => state.clearAllDataOnLogout);
+
+  const handleUseExistingAccount = useCallback(async () => {
+    if (!accountConflict) return;
+
+    const { user } = accountConflict;
+
+    // Clear guest data and load existing account data
+    clearAllDataOnLogout();
+    if (typeof window !== 'undefined') {
+      localStorage.removeItem('driving-test-storage');
+    }
+
+    // Load existing user data from Firestore
+    await loadUserData(user.uid);
+
+    // If user has a Google photo and no custom photo is set, use Google photo
+    const currentPhotoURL = useStore.getState().photoURL;
+    if (user.photoURL && !currentPhotoURL) {
+      setPhotoURL(user.photoURL);
+    }
+
+    setAccountConflict(null);
+    setLoading(false);
+  }, [accountConflict, clearAllDataOnLogout, loadUserData, setPhotoURL]);
+
+  const handleCancelConflict = useCallback(async () => {
+    // Sign out and let user try with different account
+    setAccountConflict(null);
+    await signOut(auth);
+  }, []);
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, async (user) => {
@@ -52,7 +91,16 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         const wasGuest = useStore.getState().isGuest;
 
         if (wasGuest) {
-          // Convert guest session to registered user - keeps existing progress
+          // Check if this account already has saved data
+          const hasExistingData = await checkUserHasData(user.uid);
+
+          if (hasExistingData) {
+            // Show conflict dialog - don't proceed until user chooses
+            setAccountConflict({ user, wasGuest });
+            return; // Don't set loading to false yet
+          }
+
+          // No existing data - safe to convert guest to user
           await convertGuestToUser(user.uid);
 
           // If user has a Google photo and no custom photo is set, use Google photo
@@ -76,7 +124,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     });
 
     return unsubscribe;
-  }, [loadUserData, setUserId, setPhotoURL, photoURL, convertGuestToUser]);
+  }, [loadUserData, setUserId, setPhotoURL, photoURL, convertGuestToUser, checkUserHasData]);
 
   const signup = async (email: string, password: string) => {
     await createUserWithEmailAndPassword(auth, email, password);
@@ -110,5 +158,15 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     logout,
   };
 
-  return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
+  return (
+    <AuthContext.Provider value={value}>
+      {children}
+      <AccountConflictDialog
+        open={accountConflict !== null}
+        onUseExisting={handleUseExistingAccount}
+        onCancel={handleCancelConflict}
+        userEmail={accountConflict?.user.email || undefined}
+      />
+    </AuthContext.Provider>
+  );
 }

@@ -8,7 +8,14 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { StateSelector } from "@/components/StateSelector";
+import { states } from "@/data/states";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 import { doc, setDoc } from "firebase/firestore";
 import { db } from "@/lib/firebase";
 import { useStore } from "@/store/useStore";
@@ -128,12 +135,24 @@ export default function SignupPage() {
           )}
 
           {step === 1 ? (
-            <div className="space-y-6">
+            <div className="space-y-8 py-4">
               {/* Step 1: State Selection */}
-              <StateSelector
-                onSelect={setSelectedState}
-                selectedState={selectedState}
-              />
+              <div className="flex flex-wrap items-center justify-center gap-2 text-xl md:text-2xl font-medium text-gray-800">
+                <span>I need to pass the</span>
+                <Select onValueChange={setSelectedState} value={selectedState || undefined}>
+                  <SelectTrigger className="w-auto inline-flex text-xl md:text-2xl font-semibold text-orange-600 border-none shadow-none focus:ring-0 focus:ring-offset-0 px-1 underline decoration-orange-300 decoration-2 underline-offset-4 hover:decoration-orange-500 h-auto">
+                    <SelectValue placeholder="select state" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {states.map((state) => (
+                      <SelectItem key={state.code} value={state.code}>
+                        {state.name}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+                <span>driving test.</span>
+              </div>
 
               <Button
                 onClick={handleStateSelect}

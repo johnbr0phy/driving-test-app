@@ -7,7 +7,69 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { CheckCircle2, BookOpen, Target, Trophy, Zap, BarChart3, Cloud } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 import { useStore } from "@/store/useStore";
-import Image from "next/image";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      name: "TigerTest - US Driving Test Practice",
+      description:
+        "Pass your US driving knowledge test with 200 state-specific practice questions. Free training mode, practice tests, and detailed analytics for all 50 states.",
+      url: "https://tigertest.io",
+      applicationCategory: "EducationalApplication",
+      operatingSystem: "Any",
+      offers: {
+        "@type": "Offer",
+        price: "0",
+        priceCurrency: "USD",
+      },
+      featureList: [
+        "200 questions per state",
+        "All 50 US states covered",
+        "Training mode with instant feedback",
+        "Practice tests simulating real exams",
+        "Detailed analytics and progress tracking",
+        "Auto-save progress",
+      ],
+    },
+    {
+      "@type": "Organization",
+      name: "TigerTest",
+      url: "https://tigertest.io",
+      logo: "https://tigertest.io/tiger.png",
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Is TigerTest free to use?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes, TigerTest is 100% free forever. All features are included with no hidden costs or premium tiers.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How many states does TigerTest cover?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "TigerTest covers all 50 US states with 200 state-specific questions tailored to each state's driving laws and regulations.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What learning modes are available?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "TigerTest offers two learning modes: Training Mode for learning at your own pace with instant feedback, and Practice Tests that simulate the real DMV exam with 50-question tests.",
+          },
+        },
+      ],
+    },
+  ],
+};
 
 export default function Home() {
   const { user, loading } = useAuth();
@@ -22,6 +84,10 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* Hero Section */}
       <div className="container mx-auto px-4 py-12">
         <div className="text-center mb-16">

@@ -10,7 +10,7 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Free DMV Practice Test 2025 | Pass Your State Driving Test | TigerTest",
+    default: "TigerTest - The DMV app for studying while watching TV",
     template: "%s | TigerTest",
   },
   description:

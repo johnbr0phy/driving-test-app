@@ -133,7 +133,7 @@ export default function Home() {
       <div className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-orange-50 to-white pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28 text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 tracking-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 tracking-tight min-h-[5rem] md:min-h-[7rem] lg:min-h-[8rem]">
             The DMV app for studying{" "}
             <span className="text-orange-600">{animatedText}</span>
             <span className="animate-pulse">|</span>

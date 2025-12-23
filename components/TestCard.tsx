@@ -19,9 +19,10 @@ interface TestCardProps {
   lockMessage?: string;
   expanded?: boolean;
   onToggle?: () => void;
+  disabled?: boolean;
 }
 
-export function TestCard({ testNumber, status, score, totalQuestions = 50, progress = 0, firstScore, bestScore, attemptCount, averageScore, locked = false, lockMessage, expanded = false, onToggle }: TestCardProps) {
+export function TestCard({ testNumber, status, score, totalQuestions = 50, progress = 0, firstScore, bestScore, attemptCount, averageScore, locked = false, lockMessage, expanded = false, onToggle, disabled = false }: TestCardProps) {
   // Calculate best percentage for badge logic
   const bestPercentage = bestScore ? Math.round((bestScore / totalQuestions) * 100) : 0;
 
@@ -83,10 +84,10 @@ export function TestCard({ testNumber, status, score, totalQuestions = 50, progr
   };
 
   return (
-    <Card>
+    <Card className={disabled ? "pointer-events-none" : ""}>
       <CardHeader
-        className="cursor-pointer hover:bg-gray-50 transition-colors"
-        onClick={onToggle}
+        className={`transition-colors ${disabled ? "" : "cursor-pointer hover:bg-gray-50"}`}
+        onClick={disabled ? undefined : onToggle}
       >
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">

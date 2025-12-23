@@ -194,20 +194,34 @@ export default function DashboardPage() {
                 <div className="flex items-center gap-4">
                   <Zap className="h-10 w-10 text-orange-600" />
                   <div>
-                    <h3 className="font-bold text-lg text-orange-900">
-                      {trainingProgress}/200 questions answered correctly
-                    </h3>
-                    {!onboardingComplete && (
-                      <p className="text-sm text-orange-700 mt-1">
-                        Answer {10 - trainingProgress} more to unlock practice tests
-                      </p>
+                    {!onboardingComplete ? (
+                      <>
+                        <h3 className="font-bold text-lg text-orange-900">
+                          Answer 10 questions to unlock practice tests
+                        </h3>
+                        <p className="text-sm text-orange-700 mt-1">
+                          {trainingProgress}/10 correct answers
+                        </p>
+                        <div className="w-full bg-orange-200 rounded-full h-2 mt-2 max-w-xs">
+                          <div
+                            className="bg-orange-600 h-2 rounded-full transition-all"
+                            style={{ width: `${Math.min(100, (trainingProgress / 10) * 100)}%` }}
+                          />
+                        </div>
+                      </>
+                    ) : (
+                      <>
+                        <h3 className="font-bold text-lg text-orange-900">
+                          {trainingProgress}/200 questions answered correctly
+                        </h3>
+                        <div className="w-full bg-orange-200 rounded-full h-2 mt-2 max-w-xs">
+                          <div
+                            className="bg-orange-600 h-2 rounded-full transition-all"
+                            style={{ width: `${Math.min(100, (trainingProgress / 200) * 100)}%` }}
+                          />
+                        </div>
+                      </>
                     )}
-                    <div className="w-full bg-orange-200 rounded-full h-2 mt-2 max-w-xs">
-                      <div
-                        className="bg-orange-600 h-2 rounded-full transition-all"
-                        style={{ width: `${Math.min(100, (trainingProgress / 200) * 100)}%` }}
-                      />
-                    </div>
                   </div>
                 </div>
                 <Link href="/training" className="w-full sm:w-auto">
@@ -220,39 +234,43 @@ export default function DashboardPage() {
           </Card>
         </div>
 
-        {/* Practice Tests - Only show when onboarding is complete */}
-        {onboardingComplete && (
-          <div className="mb-6">
-            <h2 className="text-2xl font-bold mb-4">Simulate the real exam</h2>
-            <div className="space-y-3">
-              {[1, 2, 3, 4].map((testNumber) => {
-                const status = getTestStatus(testNumber);
-                const session = getTestSession(testNumber);
-                const attemptStats = getTestAttemptStats(testNumber);
-                const averageScore = getTestAverageScore(testNumber);
-                const locked = !isTestUnlocked(testNumber);
-                return (
-                  <TestCard
-                    key={testNumber}
-                    testNumber={testNumber}
-                    status={status}
-                    score={session?.score}
-                    progress={getTestProgress(testNumber)}
-                    totalQuestions={50}
-                    firstScore={attemptStats?.firstScore}
-                    bestScore={attemptStats?.bestScore}
-                    attemptCount={attemptStats?.attemptCount}
-                    averageScore={averageScore}
-                    locked={locked}
-                    lockMessage={getLockMessage(testNumber)}
-                    expanded={expandedTest === testNumber}
-                    onToggle={() => setExpandedTest(expandedTest === testNumber ? null : testNumber)}
-                  />
-                );
-              })}
-            </div>
+        {/* Practice Tests - Always show, greyed out when locked */}
+        <div className="mb-6">
+          <h2 className="text-2xl font-bold mb-4">Simulate the real exam</h2>
+          {!onboardingComplete && (
+            <p className="text-sm text-gray-500 mb-3">
+              Complete training to unlock practice tests
+            </p>
+          )}
+          <div className={`space-y-3 ${!onboardingComplete ? "opacity-60" : ""}`}>
+            {[1, 2, 3, 4].map((testNumber) => {
+              const status = onboardingComplete ? getTestStatus(testNumber) : "not-started";
+              const session = onboardingComplete ? getTestSession(testNumber) : undefined;
+              const attemptStats = onboardingComplete ? getTestAttemptStats(testNumber) : undefined;
+              const averageScore = onboardingComplete ? getTestAverageScore(testNumber) : undefined;
+              const locked = !onboardingComplete || !isTestUnlocked(testNumber);
+              return (
+                <TestCard
+                  key={testNumber}
+                  testNumber={testNumber}
+                  status={status}
+                  score={session?.score}
+                  progress={onboardingComplete ? getTestProgress(testNumber) : 0}
+                  totalQuestions={50}
+                  firstScore={attemptStats?.firstScore}
+                  bestScore={attemptStats?.bestScore}
+                  attemptCount={attemptStats?.attemptCount}
+                  averageScore={averageScore}
+                  locked={locked}
+                  lockMessage={!onboardingComplete ? "Answer 10 training questions to unlock" : getLockMessage(testNumber)}
+                  expanded={onboardingComplete && expandedTest === testNumber}
+                  onToggle={onboardingComplete ? () => setExpandedTest(expandedTest === testNumber ? null : testNumber) : undefined}
+                  disabled={!onboardingComplete}
+                />
+              );
+            })}
           </div>
-        )}
+        </div>
       </div>
     </div>
   );

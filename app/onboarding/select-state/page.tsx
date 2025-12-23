@@ -45,31 +45,47 @@ export default function OnboardingSelectStatePage() {
   const welcomeName = user?.displayName || user?.email || "there";
 
   return (
-    <div className="min-h-screen bg-white flex items-center justify-center p-4">
-      <Card className="w-full max-w-2xl">
-        <CardHeader className="space-y-1">
-          <CardTitle className="text-2xl font-bold text-center">
-            Welcome{isGuest ? "" : `, ${welcomeName}`}!
-          </CardTitle>
-          <CardDescription className="text-center">
-            Which state are you preparing for?
-          </CardDescription>
-        </CardHeader>
-        <CardContent className="space-y-6">
-          <StateSelector
-            onSelect={setSelectedState}
-            selectedState={selectedState}
-          />
+    <div className="min-h-screen bg-white flex flex-col">
+      <div className="flex-1 flex items-center justify-center p-4 pb-24 md:pb-4">
+        <Card className="w-full max-w-2xl">
+          <CardHeader className="space-y-1">
+            <CardTitle className="text-2xl font-bold text-center">
+              Welcome{isGuest ? "" : `, ${welcomeName}`}!
+            </CardTitle>
+            <CardDescription className="text-center">
+              Which state are you preparing for?
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            <StateSelector
+              onSelect={setSelectedState}
+              selectedState={selectedState}
+            />
+          </CardContent>
+        </Card>
+      </div>
 
-          <Button
-            onClick={handleComplete}
-            disabled={!selectedState || loading}
-            className="w-full bg-black text-white hover:bg-gray-800"
-          >
-            {loading ? "Saving..." : "Continue to Dashboard"}
-          </Button>
-        </CardContent>
-      </Card>
+      {/* Sticky bottom button on mobile */}
+      <div className="fixed bottom-0 left-0 right-0 p-4 bg-white border-t border-gray-200 md:hidden">
+        <Button
+          onClick={handleComplete}
+          disabled={!selectedState || loading}
+          className="w-full bg-black text-white hover:bg-gray-800 py-6 text-lg"
+        >
+          {loading ? "Saving..." : "Continue to Dashboard"}
+        </Button>
+      </div>
+
+      {/* Regular button on desktop (hidden on mobile) */}
+      <div className="hidden md:block fixed bottom-8 left-1/2 -translate-x-1/2 w-full max-w-2xl px-4">
+        <Button
+          onClick={handleComplete}
+          disabled={!selectedState || loading}
+          className="w-full bg-black text-white hover:bg-gray-800"
+        >
+          {loading ? "Saving..." : "Continue to Dashboard"}
+        </Button>
+      </div>
     </div>
   );
 }

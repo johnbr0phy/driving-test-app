@@ -2,9 +2,50 @@
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { useAuth } from "@/contexts/AuthContext";
 import { useStore } from "@/store/useStore";
+
+const phrases = [
+  "in bed",
+  "while watching TV",
+  "on the toilet",
+  "in the waiting room",
+  "on your lunch break",
+  "the night before",
+];
+
+function useTypewriter(phrases: string[], typingSpeed = 80, deletingSpeed = 50, pauseDuration = 2000) {
+  const [displayText, setDisplayText] = useState("");
+  const [phraseIndex, setPhraseIndex] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+
+  useEffect(() => {
+    const currentPhrase = phrases[phraseIndex];
+
+    const timeout = setTimeout(() => {
+      if (!isDeleting) {
+        if (displayText.length < currentPhrase.length) {
+          setDisplayText(currentPhrase.slice(0, displayText.length + 1));
+        } else {
+          setTimeout(() => setIsDeleting(true), pauseDuration);
+        }
+      } else {
+        if (displayText.length > 0) {
+          setDisplayText(displayText.slice(0, -1));
+        } else {
+          setIsDeleting(false);
+          setPhraseIndex((prev) => (prev + 1) % phrases.length);
+        }
+      }
+    }, isDeleting ? deletingSpeed : typingSpeed);
+
+    return () => clearTimeout(timeout);
+  }, [displayText, isDeleting, phraseIndex, phrases, typingSpeed, deletingSpeed, pauseDuration]);
+
+  return displayText;
+}
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -74,6 +115,7 @@ export default function Home() {
   const router = useRouter();
   const startGuestSession = useStore((state) => state.startGuestSession);
   const isGuest = useStore((state) => state.isGuest);
+  const animatedText = useTypewriter(phrases);
 
   const handleTryFree = () => {
     startGuestSession();
@@ -92,7 +134,9 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-b from-orange-50 to-white pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 tracking-tight">
-            The free permit test prep<br className="hidden sm:block" /> for people who hate studying
+            The DMV app for studying{" "}
+            <span className="text-orange-600">{animatedText}</span>
+            <span className="animate-pulse">|</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
             200 state-specific questions. Instant feedback. No account needed to start.

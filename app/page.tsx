@@ -291,7 +291,7 @@ export default function Home() {
             alt="Reddit"
             width={72}
             height={24}
-            className="h-10 w-auto inline-block"
+            className="h-[55px] w-auto inline-block"
           />
         </p>
 

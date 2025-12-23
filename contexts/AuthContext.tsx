@@ -92,6 +92,12 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   };
 
   const logout = async () => {
+    // Clear all store data (in-memory state)
+    useStore.getState().clearAllDataOnLogout();
+    // Clear localStorage to remove persisted data
+    if (typeof window !== 'undefined') {
+      localStorage.removeItem('driving-test-storage');
+    }
     await signOut(auth);
   };
 

@@ -73,6 +73,7 @@ interface AppState {
   loadUserData: (userId: string) => Promise<void>;
   saveToFirestore: () => Promise<void>;
   resetAllData: () => void;
+  clearAllDataOnLogout: () => void;
 
   // Guest to user conversion
   convertGuestToUser: (userId: string) => Promise<void>;
@@ -517,6 +518,28 @@ export const useStore = create<AppState>()(
           },
         });
         get().saveToFirestore();
+      },
+
+      clearAllDataOnLogout: () => {
+        set({
+          isGuest: false,
+          selectedState: null,
+          currentTests: {},
+          completedTests: [],
+          testAttempts: [],
+          training: {
+            questionsAnswered: [],
+            correctCount: 0,
+            incorrectCount: 0,
+            currentStreak: 0,
+            bestStreak: 0,
+            totalCorrectAllTime: 0,
+            masteredQuestionIds: [],
+            lastQuestionId: null,
+          },
+          userId: null,
+          photoURL: null,
+        });
       },
 
       // Convert guest session to registered user

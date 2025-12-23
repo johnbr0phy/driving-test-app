@@ -139,7 +139,7 @@ export default function Home() {
             <span className="animate-pulse">|</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
-            200 state-specific questions. Instant feedback. No account needed to start.
+            200 state-specific questions. Tuned for mobile. No account needed.
           </p>
 
           {!loading && (

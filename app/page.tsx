@@ -284,8 +284,15 @@ export default function Home() {
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-4">
           Built for people who just need to pass
         </h2>
-        <p className="text-gray-600 text-center mb-12">
-          From r/driving and r/DMV
+        <p className="text-gray-600 text-center mb-12 flex items-center justify-center gap-2">
+          From r/driving and r/DMV on
+          <Image
+            src="/reddit.png"
+            alt="Reddit"
+            width={72}
+            height={24}
+            className="h-5 w-auto inline-block"
+          />
         </p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

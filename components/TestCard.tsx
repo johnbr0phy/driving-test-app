@@ -83,11 +83,8 @@ export function TestCard({ testNumber, status, score, totalQuestions = 50, progr
   };
 
   return (
-    <Card>
-      <CardHeader
-        className="cursor-pointer hover:bg-gray-50 transition-colors"
-        onClick={onToggle}
-      >
+    <Card className="cursor-pointer hover:bg-gray-50 transition-colors" onClick={onToggle}>
+      <CardHeader>
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
             {getStatusIcon()}
@@ -158,7 +155,7 @@ export function TestCard({ testNumber, status, score, totalQuestions = 50, progr
             </p>
           </div>
         ) : (
-          <Link href={`/test/${testNumber}`}>
+          <Link href={`/test/${testNumber}`} onClick={(e) => e.stopPropagation()}>
             <Button className="w-full bg-black text-white hover:bg-gray-800">
               {getButtonText()}
             </Button>

@@ -25,6 +25,9 @@ export function Header() {
   // Hide header on test and training pages
   const hideHeader = pathname?.startsWith("/test") || pathname === "/training";
 
+  // Hide sign up prompt on onboarding pages (too early in flow)
+  const isOnboarding = pathname?.startsWith("/onboarding");
+
   if (hideHeader) {
     return null;
   }
@@ -52,17 +55,17 @@ export function Header() {
                   Log Out
                 </Button>
               </>
-            ) : isGuest ? (
+            ) : isGuest && !isOnboarding ? (
               <Link href="/signup">
                 <Button variant="outline" className="text-gray-700 border-gray-300 hover:bg-gray-50 font-semibold">
                   Sign Up to Save
                 </Button>
               </Link>
-            ) : (
+            ) : !isGuest ? (
               <Link href="/login">
                 <Button variant="outline" className="text-gray-700 border-gray-300 hover:bg-gray-50">Sign In</Button>
               </Link>
-            )}
+            ) : null}
           </div>
         </div>
     </header>

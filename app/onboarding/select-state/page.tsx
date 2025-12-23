@@ -2,11 +2,18 @@
 
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 import { useAuth } from "@/contexts/AuthContext";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { StateSelector } from "@/components/StateSelector";
 import { useStore } from "@/store/useStore";
+import { states } from "@/data/states";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 export default function OnboardingSelectStatePage() {
   const [selectedState, setSelectedState] = useState<string | null>(null);
@@ -42,35 +49,42 @@ export default function OnboardingSelectStatePage() {
     return null;
   }
 
-  const welcomeName = user?.displayName || user?.email || "there";
-
   return (
-    <div className="bg-white relative flex items-center justify-center py-12 px-4">
+    <div className="bg-white relative min-h-[80vh] flex items-center justify-center px-4">
       <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-orange-50 to-white pointer-events-none" />
-      <Card className="relative w-full max-w-2xl">
-        <CardHeader className="space-y-1">
-          <CardTitle className="text-2xl font-bold text-center">
-            Welcome{isGuest ? "" : `, ${welcomeName}`}!
-          </CardTitle>
-          <CardDescription className="text-center">
-            Which state are you preparing for?
-          </CardDescription>
-        </CardHeader>
-        <CardContent className="space-y-6">
-          <StateSelector
-            onSelect={setSelectedState}
-            selectedState={selectedState}
-          />
+      <div className="relative text-center space-y-8">
+        <div className="flex flex-wrap items-center justify-center gap-2 text-2xl md:text-3xl font-medium text-gray-800">
+          <span>I need to pass the</span>
+          <Select onValueChange={setSelectedState} value={selectedState || undefined}>
+            <SelectTrigger className="w-auto inline-flex text-2xl md:text-3xl font-semibold text-orange-600 border-none shadow-none focus:ring-0 focus:ring-offset-0 px-1 underline decoration-orange-300 decoration-2 underline-offset-4 hover:decoration-orange-500 h-auto">
+              <SelectValue placeholder="select state" />
+            </SelectTrigger>
+            <SelectContent>
+              {states.map((state) => (
+                <SelectItem key={state.code} value={state.code}>
+                  {state.name}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
+          <span>driving test.</span>
+        </div>
 
-          <Button
-            onClick={handleComplete}
-            disabled={!selectedState || loading}
-            className="w-full bg-black text-white hover:bg-gray-800"
-          >
-            {loading ? "Saving..." : "Continue to Dashboard"}
-          </Button>
-        </CardContent>
-      </Card>
+        <Button
+          onClick={handleComplete}
+          disabled={!selectedState || loading}
+          className="bg-black text-white hover:bg-gray-800 px-8 py-3 text-lg"
+        >
+          {loading ? "Loading..." : "Let's go"}
+        </Button>
+
+        <div className="text-center text-sm text-gray-600">
+          Already have an account?{" "}
+          <Link href="/login" className="text-orange-600 hover:underline font-semibold">
+            Log in
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

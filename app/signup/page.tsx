@@ -8,7 +8,14 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { StateSelector } from "@/components/StateSelector";
+import { states } from "@/data/states";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 import { doc, setDoc } from "firebase/firestore";
 import { db } from "@/lib/firebase";
 import { useStore } from "@/store/useStore";
@@ -104,20 +111,65 @@ export default function SignupPage() {
   };
 
 
+  if (step === 1) {
+    return (
+      <div className="bg-white relative min-h-[80vh] flex items-center justify-center px-4">
+        <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-orange-50 to-white pointer-events-none" />
+        <div className="relative text-center space-y-8">
+          {error && (
+            <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded mb-4">
+              {error}
+            </div>
+          )}
+
+          <div className="flex flex-wrap items-center justify-center gap-2 text-2xl md:text-3xl font-medium text-gray-800">
+            <span>I need to pass the</span>
+            <Select onValueChange={setSelectedState} value={selectedState || undefined}>
+              <SelectTrigger className="w-auto inline-flex text-2xl md:text-3xl font-semibold text-orange-600 border-none shadow-none focus:ring-0 focus:ring-offset-0 px-1 underline decoration-orange-300 decoration-2 underline-offset-4 hover:decoration-orange-500 h-auto">
+                <SelectValue placeholder="select state" />
+              </SelectTrigger>
+              <SelectContent>
+                {states.map((state) => (
+                  <SelectItem key={state.code} value={state.code}>
+                    {state.name}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+            <span>driving test.</span>
+          </div>
+
+          <Button
+            onClick={handleStateSelect}
+            disabled={!selectedState || loading}
+            className="bg-black text-white hover:bg-gray-800 px-8 py-3 text-lg"
+          >
+            Continue
+          </Button>
+
+          <div className="text-center text-sm text-gray-600">
+            Already have an account?{" "}
+            <Link href="/login" className="text-orange-600 hover:underline font-semibold">
+              Log in
+            </Link>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="bg-white relative flex items-center justify-center py-12 px-4">
       <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-orange-50 to-white pointer-events-none" />
       <Card className="relative w-full max-w-2xl">
         <CardHeader className="space-y-1">
           <CardTitle className="text-2xl font-bold text-center">
-            {step === 1 ? "Select Your State" : guestHasState ? "Save Your Progress" : "Create Account"}
+            {guestHasState ? "Save Your Progress" : "Create Account"}
           </CardTitle>
           <CardDescription className="text-center">
-            {step === 1
-              ? "Which state are you preparing for?"
-              : guestHasState
-                ? "Create a free account to save your progress to the cloud"
-                : "Sign up to start practicing for your driving test"}
+            {guestHasState
+              ? "Create a free account to save your progress to the cloud"
+              : "Sign up to start practicing for your driving test"}
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -127,34 +179,8 @@ export default function SignupPage() {
             </div>
           )}
 
-          {step === 1 ? (
-            <div className="space-y-6">
-              {/* Step 1: State Selection */}
-              <StateSelector
-                onSelect={setSelectedState}
-                selectedState={selectedState}
-              />
-
-              <Button
-                onClick={handleStateSelect}
-                disabled={!selectedState || loading}
-                className="w-full bg-black text-white hover:bg-gray-800"
-              >
-                Continue
-              </Button>
-
-              <div className="text-center text-sm text-gray-600">
-                Already have an account?{" "}
-                <Link href="/login" className="text-orange-600 hover:underline font-semibold">
-                  Log in
-                </Link>
-              </div>
-            </div>
-          ) : (
-            <div className="space-y-4">
-              {/* Step 2: Create Account */}
-
-              {/* Google Sign-In */}
+          <div className="space-y-4">
+            {/* Google Sign-In */}
               <Button
                 type="button"
                 className="w-full bg-white text-black hover:bg-gray-100 border-2 border-gray-300"
@@ -246,8 +272,7 @@ export default function SignupPage() {
                   </Button>
                 </div>
               </form>
-            </div>
-          )}
+          </div>
         </CardContent>
       </Card>
     </div>

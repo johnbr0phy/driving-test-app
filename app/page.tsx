@@ -135,7 +135,7 @@ export default function Home() {
       <div className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-orange-50 to-white pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28 text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 tracking-tight min-h-[5rem] md:min-h-[7rem] lg:min-h-[8rem]">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 tracking-tight min-h-[10rem] md:min-h-[7rem] lg:min-h-[8rem]">
             The DMV app for studying{" "}
             <span className="text-orange-600">{animatedText}</span>
             <span className="animate-pulse">|</span>
@@ -284,8 +284,15 @@ export default function Home() {
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-4">
           Built for people who just need to pass
         </h2>
-        <p className="text-gray-600 text-center mb-12">
-          From r/driving and r/DMV
+        <p className="text-gray-600 text-center mb-12 flex items-center justify-center gap-2">
+          From r/driving and r/DMV on
+          <Image
+            src="/reddit.png"
+            alt="Reddit"
+            width={72}
+            height={24}
+            className="h-7 w-auto inline-block"
+          />
         </p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

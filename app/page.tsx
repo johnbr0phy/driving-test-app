@@ -167,7 +167,6 @@ export default function Home() {
           <div className="mt-16 flex flex-col md:flex-row items-center justify-center gap-8">
             {/* Mobile Screenshot */}
             <div className="relative">
-              <p className="text-sm text-gray-500 mb-3 text-center">Train on mobile</p>
               <div className="rounded-2xl shadow-2xl overflow-hidden border border-gray-200 bg-white">
                 <Image
                   src="/mobile.png"
@@ -177,11 +176,11 @@ export default function Home() {
                   className="w-[200px] md:w-[240px]"
                 />
               </div>
+              <p className="text-sm text-gray-500 mt-3 text-center">Train on mobile</p>
             </div>
 
             {/* Desktop Screenshot */}
             <div className="relative">
-              <p className="text-sm text-gray-500 mb-3 text-center">Test on desktop</p>
               <div className="rounded-2xl shadow-2xl overflow-hidden border border-gray-200 bg-white">
                 <Image
                   src="/desktop.png"
@@ -191,13 +190,14 @@ export default function Home() {
                   className="w-[320px] md:w-[500px]"
                 />
               </div>
+              <p className="text-sm text-gray-500 mt-3 text-center">Test on desktop</p>
             </div>
           </div>
         </div>
       </div>
 
       {/* How it works */}
-      <div className="max-w-5xl mx-auto px-6 py-16 md:py-24">
+      <div className="max-w-5xl mx-auto px-6 pt-8 pb-16 md:pt-12 md:pb-24">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-16">
           How it works
         </h2>

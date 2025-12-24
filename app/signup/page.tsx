@@ -40,17 +40,18 @@ function SignupPageContent() {
   const recordReferral = useStore((state) => state.recordReferral);
   const trackReferral = useStore((state) => state.trackReferral);
 
-  // If guest already has a state selected, skip step 1
-  const guestHasState = isGuest && storeSelectedState;
-  const [step, setStep] = useState<1 | 2>(guestHasState ? 2 : 1);
-
-  // Get referral code from URL
+  // Capture referral code from URL on mount
   useEffect(() => {
     const ref = searchParams.get('ref');
     if (ref) {
       setReferralCode(ref);
+      console.log('Referral code captured:', ref);
     }
   }, [searchParams]);
+
+  // If guest already has a state selected, skip step 1
+  const guestHasState = isGuest && storeSelectedState;
+  const [step, setStep] = useState<1 | 2>(guestHasState ? 2 : 1);
 
   const handleStateSelect = () => {
     if (!selectedState) {
@@ -74,7 +75,8 @@ function SignupPageContent() {
     setLoading(true);
 
     try {
-      await loginWithGoogle();
+      // Pass referral code to loginWithGoogle
+      await loginWithGoogle(referralCode);
       // Only set state if not a guest (guests already have state set)
       if (!guestHasState) {
         setStoreState(stateToUse!);
@@ -98,8 +100,6 @@ function SignupPageContent() {
         }
 
         // Send welcome email with their referral code
-        const user = useStore.getState();
-        // For Google sign-in, we need to get the email from Firebase auth
         try {
           const { auth } = await import('@/lib/firebase');
           const currentUser = auth.currentUser;
@@ -139,8 +139,8 @@ function SignupPageContent() {
     setLoading(true);
 
     try {
-      // Create user account
-      await signup(email, password);
+      // Create user account with referral code
+      await signup(email, password, referralCode);
       // Only set state if not a guest (guests already have state set)
       if (!guestHasState) {
         setStoreState(selectedState!);

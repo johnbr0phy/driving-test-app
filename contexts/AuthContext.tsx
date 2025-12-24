@@ -14,6 +14,7 @@ import {
 import { auth } from "@/lib/firebase";
 import { useStore } from "@/store/useStore";
 import { AccountConflictDialog } from "@/components/AccountConflictDialog";
+import { findUserByReferralCode, recordReferral, saveReferralCode } from "@/lib/referrals";
 
 interface AccountConflict {
   user: User;
@@ -23,10 +24,11 @@ interface AccountConflict {
 interface AuthContextType {
   user: User | null;
   loading: boolean;
-  signup: (email: string, password: string) => Promise<void>;
+  signup: (email: string, password: string, referralCode?: string | null) => Promise<void>;
   login: (email: string, password: string) => Promise<void>;
-  loginWithGoogle: () => Promise<void>;
+  loginWithGoogle: (referralCode?: string | null) => Promise<void>;
   logout: () => Promise<void>;
+  processReferral: (newUserId: string, referralCode: string) => Promise<void>;
   resetPassword: (email: string) => Promise<void>;
 }
 
@@ -37,6 +39,7 @@ const AuthContext = createContext<AuthContextType>({
   login: async () => {},
   loginWithGoogle: async () => {},
   logout: async () => {},
+  processReferral: async () => {},
   resetPassword: async () => {},
 });
 
@@ -114,6 +117,9 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
           // Load user data from Firestore (normal login)
           await loadUserData(user.uid);
 
+          // Ensure existing user has their referral code saved (for users who existed before referral system)
+          await saveReferralCode(user.uid);
+
           // If user has a Google photo and no custom photo is set, use Google photo
           if (user.photoURL && !photoURL) {
             setPhotoURL(user.photoURL);
@@ -129,17 +135,59 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     return unsubscribe;
   }, [loadUserData, setUserId, setPhotoURL, photoURL, convertGuestToUser, checkUserHasData]);
 
-  const signup = async (email: string, password: string) => {
-    await createUserWithEmailAndPassword(auth, email, password);
+  // Process a referral - called after a new user signs up with a referral code
+  const processReferral = async (newUserId: string, referralCode: string) => {
+    try {
+      // Find the referrer by their referral code
+      const referrerId = await findUserByReferralCode(referralCode);
+      if (referrerId && referrerId !== newUserId) {
+        // Record the referral and unlock Test 4 for the referrer
+        await recordReferral(referrerId, newUserId);
+        console.log('Referral recorded successfully! Referrer:', referrerId);
+      } else {
+        console.log('Referral code not found or self-referral attempted');
+      }
+
+      // Save the new user's own referral code for future referrals
+      await saveReferralCode(newUserId);
+    } catch (error) {
+      console.error('Error processing referral:', error);
+    }
+  };
+
+  const signup = async (email: string, password: string, referralCode?: string | null) => {
+    const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+    const newUserId = userCredential.user.uid;
+
+    // Save the new user's referral code
+    await saveReferralCode(newUserId);
+
+    // Process referral if a code was provided
+    if (referralCode) {
+      await processReferral(newUserId, referralCode);
+    }
   };
 
   const login = async (email: string, password: string) => {
     await signInWithEmailAndPassword(auth, email, password);
   };
 
-  const loginWithGoogle = async () => {
+  const loginWithGoogle = async (referralCode?: string | null) => {
     const provider = new GoogleAuthProvider();
-    await signInWithPopup(auth, provider);
+    const userCredential = await signInWithPopup(auth, provider);
+    const newUserId = userCredential.user.uid;
+
+    // Check if this is a new user (no existing data)
+    const hasData = await checkUserHasData(newUserId);
+    if (!hasData) {
+      // New user - save their referral code
+      await saveReferralCode(newUserId);
+
+      // Process referral if a code was provided
+      if (referralCode) {
+        await processReferral(newUserId, referralCode);
+      }
+    }
   };
 
   const logout = async () => {
@@ -167,6 +215,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     login,
     loginWithGoogle,
     logout,
+    processReferral,
     resetPassword,
   };
 

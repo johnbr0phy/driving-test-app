@@ -77,8 +77,10 @@ interface AppState {
   // Firebase sync
   userId: string | null;
   photoURL: string | null;
+  referralUnlockEarned: boolean;
   setUserId: (userId: string | null) => void;
   setPhotoURL: (photoURL: string | null) => void;
+  setReferralUnlockEarned: (earned: boolean) => void;
   loadUserData: (userId: string) => Promise<void>;
   checkUserHasData: (userId: string) => Promise<boolean>;
   saveToFirestore: () => Promise<void>;
@@ -110,6 +112,7 @@ export const useStore = create<AppState>()(
       },
       userId: null,
       photoURL: null,
+      referralUnlockEarned: false,
       referralCode: null,
       referralCount: 0,
       referredBy: null,
@@ -125,6 +128,11 @@ export const useStore = create<AppState>()(
 
       setPhotoURL: (photoURL: string | null) => {
         set({ photoURL });
+        get().saveToFirestore();
+      },
+
+      setReferralUnlockEarned: (earned: boolean) => {
+        set({ referralUnlockEarned: earned });
         get().saveToFirestore();
       },
 
@@ -530,6 +538,7 @@ export const useStore = create<AppState>()(
                 lastQuestionId: data.training?.lastQuestionId || null,
               },
               photoURL: data.photoURL || null,
+              referralUnlockEarned: data.referralUnlockEarned || false,
               referralCode: data.referralCode || null,
               referralCount: data.referralCount || 0,
               referredBy: data.referredBy || null,
@@ -563,7 +572,7 @@ export const useStore = create<AppState>()(
       },
 
       saveToFirestore: async () => {
-        const { userId, isGuest, selectedState, currentTests, completedTests, testAttempts, training, photoURL, referralCode, referralCount, referredBy } = get();
+        const { userId, isGuest, selectedState, currentTests, completedTests, testAttempts, training, photoURL, referralUnlockEarned, referralCode, referralCount, referredBy } = get();
         if (!userId || isGuest) return; // Don't save if no user is logged in or guest mode
 
         try {
@@ -580,6 +589,7 @@ export const useStore = create<AppState>()(
           await setDoc(doc(db, 'users', userId), {
             selectedState,
             photoURL,
+            referralUnlockEarned,
             currentTests: currentTestsForFirestore,
             completedTests: completedTests.map(test => ({
               ...test,
@@ -643,6 +653,7 @@ export const useStore = create<AppState>()(
           },
           userId: null,
           photoURL: null,
+          referralUnlockEarned: false,
           referralCode: null,
           referralCount: 0,
           referredBy: null,

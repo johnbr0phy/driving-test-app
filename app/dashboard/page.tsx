@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { TestCard } from "@/components/TestCard";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Zap, Lock, BarChart3 } from "lucide-react";
+import { Zap, Lock, BarChart3, Gift, Copy, Check } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { useStore } from "@/store/useStore";
@@ -28,8 +28,33 @@ export default function DashboardPage() {
   const training = useStore((state) => state.training);
   const getPassProbability = useStore((state) => state.getPassProbability);
   const isOnboardingComplete = useStore((state) => state.isOnboardingComplete);
+  const referralCode = useStore((state) => state.referralCode);
+  const referralCount = useStore((state) => state.referralCount);
+  const generateReferralCode = useStore((state) => state.generateReferralCode);
+  const hasUnlockedTest4 = useStore((state) => state.hasUnlockedTest4);
 
   const [expandedTest, setExpandedTest] = useState<number | null>(null);
+  const [copied, setCopied] = useState(false);
+
+  // Generate referral code if user is logged in and doesn't have one
+  useEffect(() => {
+    if (hydrated && user && !isGuest && !referralCode) {
+      generateReferralCode();
+    }
+  }, [hydrated, user, isGuest, referralCode, generateReferralCode]);
+
+  const referralLink = referralCode ? `https://tigertest.io/signup?ref=${referralCode}` : '';
+
+  const copyReferralLink = async () => {
+    if (!referralLink) return;
+    try {
+      await navigator.clipboard.writeText(referralLink);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch (err) {
+      console.error('Failed to copy:', err);
+    }
+  };
 
   const passProbability = hydrated ? getPassProbability() : 0;
   const onboardingComplete = hydrated ? isOnboardingComplete() : true; // Default true to avoid flash
@@ -121,7 +146,11 @@ export default function DashboardPage() {
       return "Complete 10 correct answers in Training Mode to unlock";
     }
     if (testNumber === 1) return ""; // Test 1 is never locked after onboarding
-    // Tests 2-4 unlock after onboarding
+    // Test 4 requires a referral
+    if (testNumber === 4 && !hasUnlockedTest4()) {
+      return "Invite a friend to unlock Test 4";
+    }
+    // Tests 2-3 unlock after onboarding
     return "Complete 10 correct answers in Training Mode to unlock";
   };
 
@@ -277,6 +306,69 @@ export default function DashboardPage() {
             })}
           </div>
         </div>
+
+        {/* Referral Invite Section - Show if Test 4 is locked and user is logged in */}
+        {user && !isGuest && onboardingComplete && !hasUnlockedTest4() && (
+          <div className="mb-6">
+            <Card className="bg-gradient-to-r from-purple-50 to-indigo-50 border-purple-200">
+              <CardContent className="p-6">
+                <div className="flex items-start gap-4">
+                  <div className="p-3 bg-purple-100 rounded-full">
+                    <Gift className="h-6 w-6 text-purple-600" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="font-bold text-lg text-purple-900 mb-1">
+                      Unlock Test 4 - Invite a Friend!
+                    </h3>
+                    <p className="text-purple-700 text-sm mb-4">
+                      Know someone who needs to pass their driving test? TigerTest works in all 50 US states!
+                      Share your link and unlock Test 4 when they sign up.
+                    </p>
+
+                    {referralCode && (
+                      <div className="flex gap-2">
+                        <div className="flex-1 bg-white border border-purple-200 rounded-lg px-3 py-2 text-sm font-mono text-gray-700 truncate">
+                          {referralLink}
+                        </div>
+                        <Button
+                          onClick={copyReferralLink}
+                          variant="outline"
+                          className="border-purple-300 hover:bg-purple-100"
+                        >
+                          {copied ? <Check className="h-4 w-4 text-green-600" /> : <Copy className="h-4 w-4" />}
+                        </Button>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        )}
+
+        {/* Referral Success - Show if Test 4 is unlocked via referral */}
+        {user && !isGuest && onboardingComplete && hasUnlockedTest4() && referralCount > 0 && (
+          <div className="mb-6">
+            <Card className="bg-gradient-to-r from-green-50 to-emerald-50 border-green-200">
+              <CardContent className="p-6">
+                <div className="flex items-center gap-4">
+                  <div className="p-3 bg-green-100 rounded-full">
+                    <Gift className="h-6 w-6 text-green-600" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="font-bold text-lg text-green-900">
+                      Test 4 Unlocked!
+                    </h3>
+                    <p className="text-green-700 text-sm">
+                      Thanks for sharing TigerTest! You&apos;ve referred {referralCount} friend{referralCount > 1 ? 's' : ''}.
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        )}
+
       </div>
     </div>
   );

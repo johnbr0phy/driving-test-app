@@ -1,7 +1,7 @@
 import { create } from 'zustand';
 import { persist, createJSONStorage } from 'zustand/middleware';
 import { Question, TestSession, UserAnswer, TestAttemptStats } from '@/types';
-import { doc, setDoc, getDoc } from 'firebase/firestore';
+import { doc, setDoc, getDoc, collection, query, where, getDocs, updateDoc, increment } from 'firebase/firestore';
 import { db } from '@/lib/firebase';
 
 interface AppState {
@@ -12,6 +12,15 @@ interface AppState {
   // Selected state
   selectedState: string | null;
   setSelectedState: (state: string) => void;
+
+  // Referral system
+  referralCode: string | null;
+  referralCount: number;
+  referredBy: string | null;
+  generateReferralCode: () => string;
+  recordReferral: (referrerCode: string) => Promise<void>;
+  trackReferral: (referrerCode: string, newUserId: string) => Promise<boolean>;
+  hasUnlockedTest4: () => boolean;
 
   // Current test sessions (supports multiple in-progress tests)
   currentTests: {
@@ -104,6 +113,9 @@ export const useStore = create<AppState>()(
       userId: null,
       photoURL: null,
       referralUnlockEarned: false,
+      referralCode: null,
+      referralCount: 0,
+      referredBy: null,
 
       // Actions
       startGuestSession: () => {
@@ -122,6 +134,67 @@ export const useStore = create<AppState>()(
       setReferralUnlockEarned: (earned: boolean) => {
         set({ referralUnlockEarned: earned });
         get().saveToFirestore();
+      },
+
+      // Referral functions
+      generateReferralCode: () => {
+        const existing = get().referralCode;
+        if (existing) return existing;
+
+        // Generate a unique referral code: TIGER-XXXXX (5 alphanumeric chars)
+        const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789'; // Removed confusing chars like 0, O, 1, I
+        let code = 'TIGER-';
+        for (let i = 0; i < 5; i++) {
+          code += chars.charAt(Math.floor(Math.random() * chars.length));
+        }
+        set({ referralCode: code });
+        get().saveToFirestore();
+        return code;
+      },
+
+      recordReferral: async (referrerCode: string) => {
+        // Record who referred this user
+        set({ referredBy: referrerCode });
+        get().saveToFirestore();
+      },
+
+      trackReferral: async (referrerCode: string, newUserId: string) => {
+        // Find the user with this referral code and increment their count
+        // This uses client-side Firebase SDK
+        try {
+          const usersRef = collection(db, 'users');
+          const q = query(usersRef, where('referralCode', '==', referrerCode));
+          const snapshot = await getDocs(q);
+
+          if (snapshot.empty) {
+            console.error('Invalid referral code:', referrerCode);
+            return false;
+          }
+
+          const referrerDoc = snapshot.docs[0];
+          const referrerId = referrerDoc.id;
+
+          // Don't allow self-referral
+          if (referrerId === newUserId) {
+            console.error('Cannot use your own referral code');
+            return false;
+          }
+
+          // Increment the referrer's referral count
+          await updateDoc(referrerDoc.ref, {
+            referralCount: increment(1),
+          });
+
+          return true;
+        } catch (error) {
+          console.error('Error tracking referral:', error);
+          return false;
+        }
+      },
+
+      hasUnlockedTest4: () => {
+        const { referralCount } = get();
+        return referralCount >= 1;
       },
 
       setSelectedState: (state: string) => {
@@ -282,17 +355,16 @@ export const useStore = create<AppState>()(
         // Test 1 is always unlocked
         if (testId === 1) return true;
 
-        // All tests unlock after completing onboarding (10 correct training answers)
+        // Tests 2-3 unlock after completing onboarding (10 correct training answers)
         // or if user has any prior app usage (backwards compatibility)
         const isOnboarded = get().isOnboardingComplete();
-        if (isOnboarded) return true;
 
-        // Test 4 can also be unlocked via referral
-        if (testId === 4 && get().referralUnlockEarned) {
-          return true;
+        // Test 4 requires at least 1 successful referral
+        if (testId === 4) {
+          return isOnboarded && get().hasUnlockedTest4();
         }
 
-        return false;
+        return isOnboarded;
       },
 
       // Training mode functions
@@ -467,6 +539,9 @@ export const useStore = create<AppState>()(
               },
               photoURL: data.photoURL || null,
               referralUnlockEarned: data.referralUnlockEarned || false,
+              referralCode: data.referralCode || null,
+              referralCount: data.referralCount || 0,
+              referredBy: data.referredBy || null,
               userId,
             });
           } else {
@@ -497,7 +572,7 @@ export const useStore = create<AppState>()(
       },
 
       saveToFirestore: async () => {
-        const { userId, isGuest, selectedState, currentTests, completedTests, testAttempts, training, photoURL, referralUnlockEarned } = get();
+        const { userId, isGuest, selectedState, currentTests, completedTests, testAttempts, training, photoURL, referralUnlockEarned, referralCode, referralCount, referredBy } = get();
         if (!userId || isGuest) return; // Don't save if no user is logged in or guest mode
 
         try {
@@ -530,6 +605,9 @@ export const useStore = create<AppState>()(
               lastAttemptDate: attempt.lastAttemptDate instanceof Date ? attempt.lastAttemptDate.toISOString() : attempt.lastAttemptDate,
             })),
             training,
+            referralCode,
+            referralCount,
+            referredBy,
             lastUpdated: new Date().toISOString(),
           });
         } catch (error) {
@@ -576,6 +654,9 @@ export const useStore = create<AppState>()(
           userId: null,
           photoURL: null,
           referralUnlockEarned: false,
+          referralCode: null,
+          referralCount: 0,
+          referredBy: null,
         });
       },
 

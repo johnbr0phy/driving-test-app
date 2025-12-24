@@ -14,15 +14,39 @@ export default function LoginPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+  const [success, setSuccess] = useState("");
   const [loading, setLoading] = useState(false);
+  const [showResetPassword, setShowResetPassword] = useState(false);
 
-  const { login, loginWithGoogle } = useAuth();
+  const { login, loginWithGoogle, resetPassword } = useAuth();
   const router = useRouter();
   const selectedState = useStore((state) => state.selectedState);
+
+  const handleResetPassword = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setError("");
+    setSuccess("");
+    setLoading(true);
+
+    try {
+      await resetPassword(email);
+      setSuccess("Password reset email sent! Check your inbox.");
+      setShowResetPassword(false);
+    } catch (err: any) {
+      if (err.code === "auth/user-not-found") {
+        setError("No account found with this email");
+      } else {
+        setError(err.message || "Failed to send reset email");
+      }
+    } finally {
+      setLoading(false);
+    }
+  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError("");
+    setSuccess("");
     setLoading(true);
 
     try {
@@ -74,6 +98,12 @@ export default function LoginPage() {
             {error && (
               <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded">
                 {error}
+              </div>
+            )}
+
+            {success && (
+              <div className="bg-green-50 border border-green-200 text-green-700 px-4 py-3 rounded">
+                {success}
               </div>
             )}
 
@@ -130,7 +160,16 @@ export default function LoginPage() {
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="password">Password</Label>
+              <div className="flex justify-between items-center">
+                <Label htmlFor="password">Password</Label>
+                <button
+                  type="button"
+                  onClick={() => setShowResetPassword(true)}
+                  className="text-sm text-orange-600 hover:underline"
+                >
+                  Forgot password?
+                </button>
+              </div>
               <Input
                 id="password"
                 type="password"
@@ -153,6 +192,45 @@ export default function LoginPage() {
                 </Link>
               </div>
             </form>
+
+            {/* Password Reset Modal */}
+            {showResetPassword && (
+              <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
+                <div className="bg-white rounded-lg p-6 max-w-md w-full">
+                  <h3 className="text-lg font-semibold mb-2">Reset Password</h3>
+                  <p className="text-gray-600 text-sm mb-4">
+                    Enter your email address and we&apos;ll send you a link to reset your password.
+                  </p>
+                  <form onSubmit={handleResetPassword} className="space-y-4">
+                    <Input
+                      type="email"
+                      placeholder="your@email.com"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      required
+                      disabled={loading}
+                    />
+                    <div className="flex gap-3">
+                      <Button
+                        type="button"
+                        onClick={() => setShowResetPassword(false)}
+                        disabled={loading}
+                        className="w-full bg-white text-black hover:bg-gray-100 border-2 border-gray-300"
+                      >
+                        Cancel
+                      </Button>
+                      <Button
+                        type="submit"
+                        disabled={loading || !email}
+                        className="w-full bg-black text-white hover:bg-gray-800"
+                      >
+                        {loading ? "Sending..." : "Send Reset Link"}
+                      </Button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            )}
           </div>
         </CardContent>
       </Card>

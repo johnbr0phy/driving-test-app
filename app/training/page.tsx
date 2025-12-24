@@ -10,11 +10,13 @@ import { useStore } from "@/store/useStore";
 import { getTrainingQuestion } from "@/lib/testGenerator";
 import { Question } from "@/types";
 import { useHydration } from "@/hooks/useHydration";
+import { useSound } from "@/hooks/useSound";
 import Link from "next/link";
 
 export default function TrainingPage() {
   const router = useRouter();
   const hydrated = useHydration();
+  const { playCorrectSound, playIncorrectSound } = useSound();
   const selectedState = useStore((state) => state.selectedState);
   const training = useStore((state) => state.training);
   const answerTrainingQuestion = useStore((state) => state.answerTrainingQuestion);
@@ -78,6 +80,14 @@ export default function TrainingPage() {
 
     setSelectedAnswer(answer);
     const isCorrect = answer === currentQuestion.correctAnswer;
+
+    // Play sound effect based on answer correctness
+    if (isCorrect) {
+      playCorrectSound();
+    } else {
+      playIncorrectSound();
+    }
+
     answerTrainingQuestion(currentQuestion.questionId, isCorrect);
   };
 

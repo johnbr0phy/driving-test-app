@@ -1,7 +1,7 @@
 "use client";
 
-import { useState, useEffect, Suspense } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useState, Suspense } from "react";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { useAuth } from "@/contexts/AuthContext";
 import { Button } from "@/components/ui/button";
@@ -16,10 +16,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { doc, setDoc } from "firebase/firestore";
-import { db } from "@/lib/firebase";
 import { useStore } from "@/store/useStore";
-import { Gift } from "lucide-react";
 
 function SignupPageContent() {
   const [email, setEmail] = useState("");
@@ -28,26 +25,12 @@ function SignupPageContent() {
   const [selectedState, setSelectedState] = useState<string | null>(null);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
-  const [referralCode, setReferralCode] = useState<string | null>(null);
 
   const { signup, loginWithGoogle } = useAuth();
   const router = useRouter();
-  const searchParams = useSearchParams();
   const setStoreState = useStore((state) => state.setSelectedState);
   const storeSelectedState = useStore((state) => state.selectedState);
   const isGuest = useStore((state) => state.isGuest);
-  const generateReferralCode = useStore((state) => state.generateReferralCode);
-  const recordReferral = useStore((state) => state.recordReferral);
-  const trackReferral = useStore((state) => state.trackReferral);
-
-  // Capture referral code from URL on mount
-  useEffect(() => {
-    const ref = searchParams.get('ref');
-    if (ref) {
-      setReferralCode(ref);
-      console.log('Referral code captured:', ref);
-    }
-  }, [searchParams]);
 
   // If guest already has a state selected, skip step 1
   const guestHasState = isGuest && storeSelectedState;
@@ -75,45 +58,13 @@ function SignupPageContent() {
     setLoading(true);
 
     try {
-      // Pass referral code to loginWithGoogle
-      await loginWithGoogle(referralCode);
+      await loginWithGoogle();
       // Only set state if not a guest (guests already have state set)
       if (!guestHasState) {
         setStoreState(stateToUse!);
       }
       // Wait for user data to load before redirecting
       await new Promise(resolve => setTimeout(resolve, 800));
-
-      // Check if this is a new user (no referral code yet)
-      const existingCode = useStore.getState().referralCode;
-      if (!existingCode) {
-        // Generate a referral code for the new user
-        const newUserCode = generateReferralCode();
-
-        // If user signed up with a referral code, track it
-        if (referralCode) {
-          const userId = useStore.getState().userId;
-          if (userId) {
-            await recordReferral(referralCode);
-            await trackReferral(referralCode, userId);
-          }
-        }
-
-        // Send welcome email with their referral code
-        try {
-          const { auth } = await import('@/lib/firebase');
-          const currentUser = auth.currentUser;
-          if (currentUser?.email) {
-            await fetch('/api/send-welcome-email', {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify({ email: currentUser.email, referralCode: newUserCode }),
-            });
-          }
-        } catch (err) {
-          console.error('Failed to send welcome email:', err);
-        }
-      }
 
       // Redirect to dashboard
       router.push("/dashboard");
@@ -139,38 +90,15 @@ function SignupPageContent() {
     setLoading(true);
 
     try {
-      // Create user account with referral code
-      await signup(email, password, referralCode);
+      // Create user account
+      await signup(email, password);
       // Only set state if not a guest (guests already have state set)
       if (!guestHasState) {
         setStoreState(selectedState!);
       }
 
-      // Small delay to ensure state is saved and user ID is set
-      await new Promise(resolve => setTimeout(resolve, 500));
-
-      // Generate a referral code for the new user
-      const newUserCode = generateReferralCode();
-
-      // If user signed up with a referral code, track it
-      if (referralCode) {
-        const userId = useStore.getState().userId;
-        if (userId) {
-          await recordReferral(referralCode);
-          await trackReferral(referralCode, userId);
-        }
-      }
-
-      // Send welcome email with their referral code
-      try {
-        await fetch('/api/send-welcome-email', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ email, referralCode: newUserCode }),
-        });
-      } catch (err) {
-        console.error('Failed to send welcome email:', err);
-      }
+      // Small delay to ensure state is saved
+      await new Promise(resolve => setTimeout(resolve, 100));
 
       // Redirect to dashboard
       router.push("/dashboard");
@@ -186,12 +114,6 @@ function SignupPageContent() {
       <div className="bg-white relative min-h-[80vh] flex items-center justify-center px-4">
         <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-orange-50 to-white pointer-events-none" />
         <div className="relative text-center space-y-8">
-          {referralCode && (
-            <div className="bg-green-50 border border-green-200 text-green-800 px-4 py-3 rounded-lg flex items-center justify-center gap-2">
-              <Gift className="h-5 w-5" />
-              <span>You were invited by a friend! Sign up to help them unlock Test 4.</span>
-            </div>
-          )}
           {error && (
             <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded mb-4">
               {error}
@@ -249,12 +171,6 @@ function SignupPageContent() {
           </CardDescription>
         </CardHeader>
         <CardContent>
-          {referralCode && (
-            <div className="bg-green-50 border border-green-200 text-green-800 px-4 py-3 rounded-lg flex items-center gap-2 mb-4">
-              <Gift className="h-5 w-5 flex-shrink-0" />
-              <span>You were invited by a friend! Sign up to help them unlock Test 4.</span>
-            </div>
-          )}
           {error && (
             <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded mb-4">
               {error}

@@ -1,7 +1,7 @@
 "use client";
 
-import { useState } from "react";
-import { useRouter } from "next/navigation";
+import { useState, useEffect, Suspense } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { useAuth } from "@/contexts/AuthContext";
 import { Button } from "@/components/ui/button";
@@ -19,24 +19,37 @@ import {
 import { doc, setDoc } from "firebase/firestore";
 import { db } from "@/lib/firebase";
 import { useStore } from "@/store/useStore";
+import { Gift } from "lucide-react";
 
-export default function SignupPage() {
+function SignupPageContent() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [selectedState, setSelectedState] = useState<string | null>(null);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
+  const [referralCode, setReferralCode] = useState<string | null>(null);
 
   const { signup, loginWithGoogle } = useAuth();
   const router = useRouter();
+  const searchParams = useSearchParams();
   const setStoreState = useStore((state) => state.setSelectedState);
   const storeSelectedState = useStore((state) => state.selectedState);
   const isGuest = useStore((state) => state.isGuest);
+  const generateReferralCode = useStore((state) => state.generateReferralCode);
+  const recordReferral = useStore((state) => state.recordReferral);
 
   // If guest already has a state selected, skip step 1
   const guestHasState = isGuest && storeSelectedState;
   const [step, setStep] = useState<1 | 2>(guestHasState ? 2 : 1);
+
+  // Get referral code from URL
+  useEffect(() => {
+    const ref = searchParams.get('ref');
+    if (ref) {
+      setReferralCode(ref);
+    }
+  }, [searchParams]);
 
   const handleStateSelect = () => {
     if (!selectedState) {
@@ -67,6 +80,47 @@ export default function SignupPage() {
       }
       // Wait for user data to load before redirecting
       await new Promise(resolve => setTimeout(resolve, 800));
+
+      // Check if this is a new user (no referral code yet)
+      const existingCode = useStore.getState().referralCode;
+      if (!existingCode) {
+        // Generate a referral code for the new user
+        const newUserCode = generateReferralCode();
+
+        // If user signed up with a referral code, track it
+        if (referralCode) {
+          const userId = useStore.getState().userId;
+          if (userId) {
+            await recordReferral(referralCode);
+            try {
+              await fetch('/api/track-referral', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ referralCode, newUserId: userId }),
+              });
+            } catch (err) {
+              console.error('Failed to track referral:', err);
+            }
+          }
+        }
+
+        // Send welcome email with their referral code
+        const user = useStore.getState();
+        // For Google sign-in, we need to get the email from Firebase auth
+        try {
+          const { auth } = await import('@/lib/firebase');
+          const currentUser = auth.currentUser;
+          if (currentUser?.email) {
+            await fetch('/api/send-welcome-email', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ email: currentUser.email, referralCode: newUserCode }),
+            });
+          }
+        } catch (err) {
+          console.error('Failed to send welcome email:', err);
+        }
+      }
 
       // Redirect to dashboard
       router.push("/dashboard");
@@ -99,8 +153,40 @@ export default function SignupPage() {
         setStoreState(selectedState!);
       }
 
-      // Small delay to ensure state is saved
-      await new Promise(resolve => setTimeout(resolve, 100));
+      // Small delay to ensure state is saved and user ID is set
+      await new Promise(resolve => setTimeout(resolve, 500));
+
+      // Generate a referral code for the new user
+      const newUserCode = generateReferralCode();
+
+      // If user signed up with a referral code, track it
+      if (referralCode) {
+        const userId = useStore.getState().userId;
+        if (userId) {
+          await recordReferral(referralCode);
+          // Track the referral on the server to increment the referrer's count
+          try {
+            await fetch('/api/track-referral', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ referralCode, newUserId: userId }),
+            });
+          } catch (err) {
+            console.error('Failed to track referral:', err);
+          }
+        }
+      }
+
+      // Send welcome email with their referral code
+      try {
+        await fetch('/api/send-welcome-email', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email, referralCode: newUserCode }),
+        });
+      } catch (err) {
+        console.error('Failed to send welcome email:', err);
+      }
 
       // Redirect to dashboard
       router.push("/dashboard");
@@ -116,6 +202,12 @@ export default function SignupPage() {
       <div className="bg-white relative min-h-[80vh] flex items-center justify-center px-4">
         <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-orange-50 to-white pointer-events-none" />
         <div className="relative text-center space-y-8">
+          {referralCode && (
+            <div className="bg-green-50 border border-green-200 text-green-800 px-4 py-3 rounded-lg flex items-center justify-center gap-2">
+              <Gift className="h-5 w-5" />
+              <span>You were invited by a friend! Sign up to help them unlock Test 4.</span>
+            </div>
+          )}
           {error && (
             <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded mb-4">
               {error}
@@ -173,6 +265,12 @@ export default function SignupPage() {
           </CardDescription>
         </CardHeader>
         <CardContent>
+          {referralCode && (
+            <div className="bg-green-50 border border-green-200 text-green-800 px-4 py-3 rounded-lg flex items-center gap-2 mb-4">
+              <Gift className="h-5 w-5 flex-shrink-0" />
+              <span>You were invited by a friend! Sign up to help them unlock Test 4.</span>
+            </div>
+          )}
           {error && (
             <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded mb-4">
               {error}
@@ -276,5 +374,17 @@ export default function SignupPage() {
         </CardContent>
       </Card>
     </div>
+  );
+}
+
+export default function SignupPage() {
+  return (
+    <Suspense fallback={
+      <div className="bg-white relative min-h-[80vh] flex items-center justify-center">
+        <div className="animate-pulse text-gray-400">Loading...</div>
+      </div>
+    }>
+      <SignupPageContent />
+    </Suspense>
   );
 }

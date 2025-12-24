@@ -13,6 +13,14 @@ interface AppState {
   selectedState: string | null;
   setSelectedState: (state: string) => void;
 
+  // Referral system
+  referralCode: string | null;
+  referralCount: number;
+  referredBy: string | null;
+  generateReferralCode: () => string;
+  recordReferral: (referrerCode: string) => Promise<void>;
+  hasUnlockedTest4: () => boolean;
+
   // Current test sessions (supports multiple in-progress tests)
   currentTests: {
     [testId: number]: {
@@ -101,6 +109,9 @@ export const useStore = create<AppState>()(
       },
       userId: null,
       photoURL: null,
+      referralCode: null,
+      referralCount: 0,
+      referredBy: null,
 
       // Actions
       startGuestSession: () => {
@@ -114,6 +125,37 @@ export const useStore = create<AppState>()(
       setPhotoURL: (photoURL: string | null) => {
         set({ photoURL });
         get().saveToFirestore();
+      },
+
+      // Referral functions
+      generateReferralCode: () => {
+        const existing = get().referralCode;
+        if (existing) return existing;
+
+        // Generate a unique referral code: TIGER-XXXXX (5 alphanumeric chars)
+        const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789'; // Removed confusing chars like 0, O, 1, I
+        let code = 'TIGER-';
+        for (let i = 0; i < 5; i++) {
+          code += chars.charAt(Math.floor(Math.random() * chars.length));
+        }
+        set({ referralCode: code });
+        get().saveToFirestore();
+        return code;
+      },
+
+      recordReferral: async (referrerCode: string) => {
+        // Find the user with this referral code and increment their count
+        // This is called when a new user signs up with a referral code
+        set({ referredBy: referrerCode });
+        get().saveToFirestore();
+
+        // Note: The actual incrementing of the referrer's count happens via
+        // a separate API call or cloud function to avoid race conditions
+      },
+
+      hasUnlockedTest4: () => {
+        const { referralCount } = get();
+        return referralCount >= 1;
       },
 
       setSelectedState: (state: string) => {
@@ -274,9 +316,15 @@ export const useStore = create<AppState>()(
         // Test 1 is always unlocked
         if (testId === 1) return true;
 
-        // All tests unlock after completing onboarding (10 correct training answers)
+        // Tests 2-3 unlock after completing onboarding (10 correct training answers)
         // or if user has any prior app usage (backwards compatibility)
         const isOnboarded = get().isOnboardingComplete();
+
+        // Test 4 requires at least 1 successful referral
+        if (testId === 4) {
+          return isOnboarded && get().hasUnlockedTest4();
+        }
+
         return isOnboarded;
       },
 
@@ -451,6 +499,9 @@ export const useStore = create<AppState>()(
                 lastQuestionId: data.training?.lastQuestionId || null,
               },
               photoURL: data.photoURL || null,
+              referralCode: data.referralCode || null,
+              referralCount: data.referralCount || 0,
+              referredBy: data.referredBy || null,
               userId,
             });
           } else {
@@ -481,7 +532,7 @@ export const useStore = create<AppState>()(
       },
 
       saveToFirestore: async () => {
-        const { userId, isGuest, selectedState, currentTests, completedTests, testAttempts, training, photoURL } = get();
+        const { userId, isGuest, selectedState, currentTests, completedTests, testAttempts, training, photoURL, referralCode, referralCount, referredBy } = get();
         if (!userId || isGuest) return; // Don't save if no user is logged in or guest mode
 
         try {
@@ -513,6 +564,9 @@ export const useStore = create<AppState>()(
               lastAttemptDate: attempt.lastAttemptDate instanceof Date ? attempt.lastAttemptDate.toISOString() : attempt.lastAttemptDate,
             })),
             training,
+            referralCode,
+            referralCount,
+            referredBy,
             lastUpdated: new Date().toISOString(),
           });
         } catch (error) {
@@ -558,6 +612,9 @@ export const useStore = create<AppState>()(
           },
           userId: null,
           photoURL: null,
+          referralCode: null,
+          referralCount: 0,
+          referredBy: null,
         });
       },
 

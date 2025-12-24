@@ -18,7 +18,7 @@ export default function LoginPage() {
   const [loading, setLoading] = useState(false);
   const [showResetPassword, setShowResetPassword] = useState(false);
 
-  const { login, loginWithGoogle } = useAuth();
+  const { login, loginWithGoogle, resetPassword } = useAuth();
   const router = useRouter();
   const selectedState = useStore((state) => state.selectedState);
 
@@ -29,22 +29,15 @@ export default function LoginPage() {
     setLoading(true);
 
     try {
-      const response = await fetch('/api/send-password-reset', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email }),
-      });
-
-      const data = await response.json();
-
-      if (!response.ok) {
-        throw new Error(data.error || 'Failed to send reset email');
-      }
-
+      await resetPassword(email);
       setSuccess("Password reset email sent! Check your inbox.");
       setShowResetPassword(false);
     } catch (err: any) {
-      setError(err.message || "Failed to send reset email");
+      if (err.code === "auth/user-not-found") {
+        setError("No account found with this email");
+      } else {
+        setError(err.message || "Failed to send reset email");
+      }
     } finally {
       setLoading(false);
     }

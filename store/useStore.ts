@@ -68,8 +68,10 @@ interface AppState {
   // Firebase sync
   userId: string | null;
   photoURL: string | null;
+  referralUnlockEarned: boolean;
   setUserId: (userId: string | null) => void;
   setPhotoURL: (photoURL: string | null) => void;
+  setReferralUnlockEarned: (earned: boolean) => void;
   loadUserData: (userId: string) => Promise<void>;
   checkUserHasData: (userId: string) => Promise<boolean>;
   saveToFirestore: () => Promise<void>;
@@ -101,6 +103,7 @@ export const useStore = create<AppState>()(
       },
       userId: null,
       photoURL: null,
+      referralUnlockEarned: false,
 
       // Actions
       startGuestSession: () => {
@@ -113,6 +116,11 @@ export const useStore = create<AppState>()(
 
       setPhotoURL: (photoURL: string | null) => {
         set({ photoURL });
+        get().saveToFirestore();
+      },
+
+      setReferralUnlockEarned: (earned: boolean) => {
+        set({ referralUnlockEarned: earned });
         get().saveToFirestore();
       },
 
@@ -277,7 +285,14 @@ export const useStore = create<AppState>()(
         // All tests unlock after completing onboarding (10 correct training answers)
         // or if user has any prior app usage (backwards compatibility)
         const isOnboarded = get().isOnboardingComplete();
-        return isOnboarded;
+        if (isOnboarded) return true;
+
+        // Test 4 can also be unlocked via referral
+        if (testId === 4 && get().referralUnlockEarned) {
+          return true;
+        }
+
+        return false;
       },
 
       // Training mode functions
@@ -451,6 +466,7 @@ export const useStore = create<AppState>()(
                 lastQuestionId: data.training?.lastQuestionId || null,
               },
               photoURL: data.photoURL || null,
+              referralUnlockEarned: data.referralUnlockEarned || false,
               userId,
             });
           } else {
@@ -481,7 +497,7 @@ export const useStore = create<AppState>()(
       },
 
       saveToFirestore: async () => {
-        const { userId, isGuest, selectedState, currentTests, completedTests, testAttempts, training, photoURL } = get();
+        const { userId, isGuest, selectedState, currentTests, completedTests, testAttempts, training, photoURL, referralUnlockEarned } = get();
         if (!userId || isGuest) return; // Don't save if no user is logged in or guest mode
 
         try {
@@ -498,6 +514,7 @@ export const useStore = create<AppState>()(
           await setDoc(doc(db, 'users', userId), {
             selectedState,
             photoURL,
+            referralUnlockEarned,
             currentTests: currentTestsForFirestore,
             completedTests: completedTests.map(test => ({
               ...test,
@@ -558,6 +575,7 @@ export const useStore = create<AppState>()(
           },
           userId: null,
           photoURL: null,
+          referralUnlockEarned: false,
         });
       },
 

@@ -1,7 +1,7 @@
 "use client";
 
-import { useState } from "react";
-import { useRouter } from "next/navigation";
+import { useState, useEffect, Suspense } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { useAuth } from "@/contexts/AuthContext";
 import { Button } from "@/components/ui/button";
@@ -19,20 +19,41 @@ import {
 import { doc, setDoc } from "firebase/firestore";
 import { db } from "@/lib/firebase";
 import { useStore } from "@/store/useStore";
+import { findUserByReferralCode, recordReferral, saveReferralCode } from "@/lib/referrals";
 
+// Wrapper component to provide Suspense boundary for useSearchParams
 export default function SignupPage() {
+  return (
+    <Suspense fallback={<div className="min-h-[80vh] flex items-center justify-center">Loading...</div>}>
+      <SignupPageContent />
+    </Suspense>
+  );
+}
+
+function SignupPageContent() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [selectedState, setSelectedState] = useState<string | null>(null);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
+  const [referralCode, setReferralCode] = useState<string | null>(null);
 
   const { signup, loginWithGoogle } = useAuth();
   const router = useRouter();
+  const searchParams = useSearchParams();
   const setStoreState = useStore((state) => state.setSelectedState);
   const storeSelectedState = useStore((state) => state.selectedState);
   const isGuest = useStore((state) => state.isGuest);
+
+  // Capture referral code from URL on mount
+  useEffect(() => {
+    const ref = searchParams.get('ref');
+    if (ref) {
+      setReferralCode(ref);
+      console.log('Referral code captured:', ref);
+    }
+  }, [searchParams]);
 
   // If guest already has a state selected, skip step 1
   const guestHasState = isGuest && storeSelectedState;
@@ -60,7 +81,8 @@ export default function SignupPage() {
     setLoading(true);
 
     try {
-      await loginWithGoogle();
+      // Pass referral code to loginWithGoogle
+      await loginWithGoogle(referralCode);
       // Only set state if not a guest (guests already have state set)
       if (!guestHasState) {
         setStoreState(stateToUse!);
@@ -92,8 +114,8 @@ export default function SignupPage() {
     setLoading(true);
 
     try {
-      // Create user account
-      await signup(email, password);
+      // Create user account with referral code
+      await signup(email, password, referralCode);
       // Only set state if not a guest (guests already have state set)
       if (!guestHasState) {
         setStoreState(selectedState!);

@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { TestCard } from "@/components/TestCard";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Zap, Lock, BarChart3, Gift, Copy, Check, Share2 } from "lucide-react";
+import { Zap, Lock, BarChart3, Gift, Copy, Check } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { useStore } from "@/store/useStore";
@@ -35,7 +35,6 @@ export default function DashboardPage() {
 
   const [expandedTest, setExpandedTest] = useState<number | null>(null);
   const [copied, setCopied] = useState(false);
-  const [showShareSheet, setShowShareSheet] = useState(false);
 
   // Generate referral code if user is logged in and doesn't have one
   useEffect(() => {
@@ -54,26 +53,6 @@ export default function DashboardPage() {
       setTimeout(() => setCopied(false), 2000);
     } catch (err) {
       console.error('Failed to copy:', err);
-    }
-  };
-
-  const shareReferralLink = async () => {
-    if (!referralLink) return;
-    const shareData = {
-      title: 'TigerTest - Free DMV Practice Tests',
-      text: 'I\'m using TigerTest to prepare for my driving test. It has free practice tests for all 50 US states! Join me:',
-      url: referralLink,
-    };
-
-    if (navigator.share && navigator.canShare(shareData)) {
-      try {
-        await navigator.share(shareData);
-      } catch (err) {
-        // User cancelled or share failed, show fallback
-        setShowShareSheet(true);
-      }
-    } else {
-      setShowShareSheet(true);
     }
   };
 
@@ -347,25 +326,16 @@ export default function DashboardPage() {
                     </p>
 
                     {referralCode && (
-                      <div className="space-y-3">
-                        <div className="flex gap-2">
-                          <div className="flex-1 bg-white border border-purple-200 rounded-lg px-3 py-2 text-sm font-mono text-gray-700 truncate">
-                            {referralLink}
-                          </div>
-                          <Button
-                            onClick={copyReferralLink}
-                            variant="outline"
-                            className="border-purple-300 hover:bg-purple-100"
-                          >
-                            {copied ? <Check className="h-4 w-4 text-green-600" /> : <Copy className="h-4 w-4" />}
-                          </Button>
+                      <div className="flex gap-2">
+                        <div className="flex-1 bg-white border border-purple-200 rounded-lg px-3 py-2 text-sm font-mono text-gray-700 truncate">
+                          {referralLink}
                         </div>
                         <Button
-                          onClick={shareReferralLink}
-                          className="w-full bg-purple-600 hover:bg-purple-700 text-white"
+                          onClick={copyReferralLink}
+                          variant="outline"
+                          className="border-purple-300 hover:bg-purple-100"
                         >
-                          <Share2 className="h-4 w-4 mr-2" />
-                          Share Invite Link
+                          {copied ? <Check className="h-4 w-4 text-green-600" /> : <Copy className="h-4 w-4" />}
                         </Button>
                       </div>
                     )}
@@ -399,38 +369,6 @@ export default function DashboardPage() {
           </div>
         )}
 
-        {/* Share Sheet Modal */}
-        {showShareSheet && (
-          <div className="fixed inset-0 bg-black/50 flex items-end sm:items-center justify-center z-50 p-4">
-            <div className="bg-white rounded-t-xl sm:rounded-xl p-6 w-full max-w-md">
-              <h3 className="text-lg font-semibold mb-4">Share your invite link</h3>
-              <p className="text-gray-600 text-sm mb-4">
-                TigerTest has free practice tests for all 50 US states. Share with friends who need to pass their driving test!
-              </p>
-              <div className="bg-gray-50 border rounded-lg p-3 mb-4">
-                <p className="text-sm font-mono break-all">{referralLink}</p>
-              </div>
-              <div className="flex gap-3">
-                <Button
-                  onClick={() => setShowShareSheet(false)}
-                  variant="outline"
-                  className="flex-1"
-                >
-                  Cancel
-                </Button>
-                <Button
-                  onClick={() => {
-                    copyReferralLink();
-                    setShowShareSheet(false);
-                  }}
-                  className="flex-1 bg-black text-white hover:bg-gray-800"
-                >
-                  {copied ? 'Copied!' : 'Copy Link'}
-                </Button>
-              </div>
-            </div>
-          </div>
-        )}
       </div>
     </div>
   );

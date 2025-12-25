@@ -98,7 +98,8 @@ function TrainingPageContent() {
         setNumber,
         selectedState,
         currentSetData.masteredIds,
-        currentSetData.wrongQueue
+        currentSetData.wrongQueue,
+        currentQuestion?.questionId || null  // Exclude current question to prevent immediate repeat
       );
 
       // If all questions are mastered, show completion

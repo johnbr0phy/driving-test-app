@@ -141,19 +141,27 @@ export function getTrainingSetQuestions(setNumber: number, state: string): Quest
 
 // Get the next unanswered question from a training set
 // wrongQueue: questions answered wrong that should be asked later (after all others)
+// currentQuestionId: the question just answered - explicitly excluded to prevent immediate repeats
 export function getNextTrainingSetQuestion(
   setNumber: number,
   state: string,
   masteredIds: string[],
-  wrongQueue: string[] = []
+  wrongQueue: string[] = [],
+  currentQuestionId: string | null = null
 ): Question | null {
   const questions = getTrainingSetQuestions(setNumber, state);
 
   // Find questions not yet mastered
-  const unmasteredQuestions = questions.filter(q => !masteredIds.includes(q.questionId));
+  let unmasteredQuestions = questions.filter(q => !masteredIds.includes(q.questionId));
 
   if (unmasteredQuestions.length === 0) {
     return null;
+  }
+
+  // Explicitly exclude the current question to prevent immediate repeats
+  // (unless it's the only one left)
+  if (currentQuestionId && unmasteredQuestions.length > 1) {
+    unmasteredQuestions = unmasteredQuestions.filter(q => q.questionId !== currentQuestionId);
   }
 
   // First priority: unmastered questions NOT in the wrong queue

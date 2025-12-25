@@ -117,7 +117,7 @@ export default function SettingsPage() {
         {/* State Selection and Profile Photo Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
           {/* State Selection Card */}
-          <Card>
+          <Card className="bg-gray-50">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <MapPin className="h-5 w-5" />
@@ -157,7 +157,7 @@ export default function SettingsPage() {
           </Card>
 
           {/* Profile Photo Card */}
-          <Card>
+          <Card className="bg-gray-50">
             <CardHeader>
               <CardTitle>Profile Photo</CardTitle>
             </CardHeader>
@@ -209,7 +209,7 @@ export default function SettingsPage() {
         </div>
 
         {/* Danger Zone */}
-        <Card className="border-red-200">
+        <Card className="bg-gray-50 border-red-200">
           <CardHeader>
             <CardTitle className="text-red-600 flex items-center gap-2">
               <AlertTriangle className="h-5 w-5" />

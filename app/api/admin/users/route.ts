@@ -2,12 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getAdminDb } from '@/lib/firebase-admin';
 import { getAuth } from 'firebase-admin/auth';
 import { getApps } from 'firebase-admin/app';
-
-// Admin emails that can access this endpoint
-const ADMIN_EMAILS = [
-  'john.brophy@stensul.com',
-  'johnbrophy@gmail.com',
-];
+import { isAdminEmail } from '@/lib/admin';
 
 export async function GET(request: NextRequest) {
   try {
@@ -30,7 +25,7 @@ export async function GET(request: NextRequest) {
       return NextResponse.json({ error: 'Invalid token' }, { status: 401 });
     }
 
-    if (!decodedToken.email || !ADMIN_EMAILS.includes(decodedToken.email)) {
+    if (!isAdminEmail(decodedToken.email)) {
       return NextResponse.json({ error: 'Forbidden' }, { status: 403 });
     }
 

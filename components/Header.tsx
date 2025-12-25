@@ -6,7 +6,9 @@ import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { useAuth } from "@/contexts/AuthContext";
 import { useStore } from "@/store/useStore";
+import { useAdmin } from "@/hooks/useAdmin";
 import Image from "next/image";
+import { Shield } from "lucide-react";
 
 export function Header() {
   const { user, logout } = useAuth();
@@ -14,6 +16,7 @@ export function Header() {
   const pathname = usePathname();
   const photoURL = useStore((state) => state.photoURL);
   const isGuest = useStore((state) => state.isGuest);
+  const isAdmin = useAdmin();
 
   const handleLogout = async () => {
     await logout();
@@ -45,6 +48,11 @@ export function Header() {
           <div className="flex items-center gap-4">
             {user ? (
               <>
+                {isAdmin && (
+                  <Link href="/admin" className="text-gray-600 hover:text-gray-900 transition-colors" title="Admin Dashboard">
+                    <Shield className="h-5 w-5" />
+                  </Link>
+                )}
                 <Link href="/settings">
                   <Avatar className="h-9 w-9 cursor-pointer hover:opacity-80 transition-opacity">
                     <AvatarImage src={displayPhotoURL || undefined} alt="Profile" />

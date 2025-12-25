@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { useAuth } from "@/contexts/AuthContext";
+import { useAdmin } from "@/hooks/useAdmin";
 import { auth } from "@/lib/firebase";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { states } from "@/data/states";
@@ -28,6 +29,7 @@ interface Stats {
 
 export default function AdminPage() {
   const { user, loading: authLoading } = useAuth();
+  const isAdmin = useAdmin();
   const router = useRouter();
   const [users, setUsers] = useState<UserData[]>([]);
   const [stats, setStats] = useState<Stats | null>(null);
@@ -78,10 +80,16 @@ export default function AdminPage() {
       return;
     }
 
-    if (user) {
+    // Redirect non-admins to dashboard
+    if (!authLoading && user && !isAdmin) {
+      router.push("/dashboard");
+      return;
+    }
+
+    if (user && isAdmin) {
       fetchUsers();
     }
-  }, [user, authLoading, router]);
+  }, [user, authLoading, isAdmin, router]);
 
   const getStateName = (code: string | null): string => {
     if (!code) return "Not selected";

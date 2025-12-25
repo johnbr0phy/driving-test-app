@@ -5,10 +5,10 @@ import { useRouter } from "next/navigation";
 import { useAuth } from "@/contexts/AuthContext";
 import { useAdmin } from "@/hooks/useAdmin";
 import { db } from "@/lib/firebase";
-import { collection, getDocs } from "firebase/firestore";
+import { collection, getDocs, deleteDoc, doc } from "firebase/firestore";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { states } from "@/data/states";
-import { ArrowLeft, Users, MapPin, RefreshCw } from "lucide-react";
+import { ArrowLeft, Users, MapPin, RefreshCw, Trash2 } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
@@ -34,6 +34,7 @@ export default function AdminPage() {
   const [stats, setStats] = useState<Stats | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [deleting, setDeleting] = useState<string | null>(null);
 
   const fetchUsers = async () => {
     setLoading(true);
@@ -79,6 +80,39 @@ export default function AdminPage() {
       setError(err instanceof Error ? err.message : "Failed to load users");
     } finally {
       setLoading(false);
+    }
+  };
+
+  const deleteUser = async (uid: string) => {
+    if (!confirm(`Delete user ${uid}? This cannot be undone.`)) {
+      return;
+    }
+
+    setDeleting(uid);
+    try {
+      await deleteDoc(doc(db, "users", uid));
+      setUsers(users.filter(u => u.uid !== uid));
+      // Update stats
+      const deletedUser = users.find(u => u.uid === uid);
+      if (stats && deletedUser) {
+        const newByState = { ...stats.byState };
+        if (deletedUser.selectedState && newByState[deletedUser.selectedState]) {
+          newByState[deletedUser.selectedState]--;
+          if (newByState[deletedUser.selectedState] === 0) {
+            delete newByState[deletedUser.selectedState];
+          }
+        }
+        setStats({
+          totalUsers: stats.totalUsers - 1,
+          usersWithState: deletedUser.selectedState ? stats.usersWithState - 1 : stats.usersWithState,
+          byState: newByState,
+        });
+      }
+    } catch (err) {
+      console.error("Error deleting user:", err);
+      alert("Failed to delete user");
+    } finally {
+      setDeleting(null);
     }
   };
 
@@ -241,6 +275,7 @@ export default function AdminPage() {
                     <th className="text-left py-3 px-4 font-medium text-gray-500">Last Active</th>
                     <th className="text-left py-3 px-4 font-medium text-gray-500">Training</th>
                     <th className="text-left py-3 px-4 font-medium text-gray-500">Tests</th>
+                    <th className="text-right py-3 px-4 font-medium text-gray-500"></th>
                   </tr>
                 </thead>
                 <tbody>
@@ -267,6 +302,21 @@ export default function AdminPage() {
                       </td>
                       <td className="py-3 px-4">
                         <span className="font-medium">{userData.testsCompleted}</span>
+                      </td>
+                      <td className="py-3 px-4 text-right">
+                        <Button
+                          variant="ghost"
+                          size="sm"
+                          onClick={() => deleteUser(userData.uid)}
+                          disabled={deleting === userData.uid}
+                          className="text-red-500 hover:text-red-700 hover:bg-red-50"
+                        >
+                          {deleting === userData.uid ? (
+                            <RefreshCw className="h-4 w-4 animate-spin" />
+                          ) : (
+                            <Trash2 className="h-4 w-4" />
+                          )}
+                        </Button>
                       </td>
                     </tr>
                   ))}

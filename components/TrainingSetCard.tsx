@@ -19,6 +19,15 @@ export function TrainingSetCard({ set, locked = false }: TrainingSetCardProps) {
   const isComplete = set.correctCount >= set.targetCount;
   const progress = Math.min(100, Math.round((set.correctCount / set.targetCount) * 100));
 
+  const getProgressBadgeColor = () => {
+    // Gradient from red (0%) to green (100%)
+    if (progress < 20) return "bg-red-500 hover:bg-red-500";
+    if (progress < 40) return "bg-orange-500 hover:bg-orange-500";
+    if (progress < 60) return "bg-yellow-500 hover:bg-yellow-500";
+    if (progress < 80) return "bg-lime-500 hover:bg-lime-500";
+    return "bg-green-500 hover:bg-green-500";
+  };
+
   const getBadge = () => {
     if (locked) {
       return <Badge variant="outline" className="bg-gray-100 hover:bg-gray-100 text-xs">Locked</Badge>;
@@ -27,7 +36,7 @@ export function TrainingSetCard({ set, locked = false }: TrainingSetCardProps) {
       return <Badge className="bg-green-500 hover:bg-green-500 text-xs">Complete</Badge>;
     }
     if (set.correctCount > 0) {
-      return <Badge className="bg-orange-500 hover:bg-orange-500 text-xs">{progress}%</Badge>;
+      return <Badge className={`${getProgressBadgeColor()} text-xs`}>{progress}%</Badge>;
     }
     return null;
   };
@@ -35,8 +44,8 @@ export function TrainingSetCard({ set, locked = false }: TrainingSetCardProps) {
   const cardContent = (
     <Card className={`h-full transition-all ${
       locked
-        ? "bg-gray-50 border-gray-200 opacity-60"
-        : "hover:shadow-md hover:border-orange-300 cursor-pointer"
+        ? "bg-gray-100 border-gray-200 opacity-60"
+        : "bg-gray-50 hover:shadow-md hover:border-orange-300 cursor-pointer"
     }`}>
       <CardContent className="p-4 flex items-center justify-between">
         <div className="flex flex-col">

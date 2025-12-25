@@ -68,8 +68,8 @@ export function TestCard({
   const cardContent = (
     <Card className={`h-full transition-all ${
       locked
-        ? "bg-gray-50 border-gray-200 opacity-60"
-        : "hover:shadow-md hover:border-gray-300 cursor-pointer"
+        ? "bg-gray-100 border-gray-200 opacity-60"
+        : "bg-gray-50 hover:shadow-md hover:border-gray-300 cursor-pointer"
     }`}>
       <CardContent className="p-4 flex items-center justify-between">
         <div className="flex flex-col">

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { ChevronRight } from "lucide-react";
 
 export interface TrainingSet {
   id: number;
@@ -37,25 +38,23 @@ export function TrainingSetCard({ set, locked = false }: TrainingSetCardProps) {
         ? "bg-gray-50 border-gray-200 opacity-60"
         : "hover:shadow-md hover:border-orange-300 cursor-pointer"
     }`}>
-      <CardContent className="p-4 flex flex-col items-center text-center">
-        {/* Badge */}
-        <div className="h-5 mb-2">
-          {getBadge()}
+      <CardContent className="p-4 flex items-center justify-between">
+        <div className="flex flex-col">
+          <div className="flex items-center gap-2 mb-1">
+            <h3 className="font-semibold text-sm leading-tight">{set.name}</h3>
+            {getBadge()}
+          </div>
+          <p className="text-xs">
+            {locked ? (
+              <span className="text-gray-400">Locked</span>
+            ) : (
+              <span className={isComplete ? 'text-green-600' : 'text-gray-500'}>
+                {set.correctCount}/{set.targetCount}
+              </span>
+            )}
+          </p>
         </div>
-
-        {/* Title */}
-        <h3 className="font-semibold text-sm mb-1 leading-tight">{set.name}</h3>
-
-        {/* Progress */}
-        <p className="text-xs">
-          {locked ? (
-            <span className="text-gray-400">Locked</span>
-          ) : (
-            <span className={isComplete ? 'text-green-600' : 'text-gray-500'}>
-              {set.correctCount}/{set.targetCount}
-            </span>
-          )}
-        </p>
+        {!locked && <ChevronRight className="h-5 w-5 text-gray-400" />}
       </CardContent>
     </Card>
   );

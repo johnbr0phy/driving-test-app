@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { ChevronRight } from "lucide-react";
 
 interface TestCardProps {
   testNumber: number;
@@ -70,19 +71,17 @@ export function TestCard({
         ? "bg-gray-50 border-gray-200 opacity-60"
         : "hover:shadow-md hover:border-gray-300 cursor-pointer"
     }`}>
-      <CardContent className="p-4 flex flex-col items-center text-center">
-        {/* Badge */}
-        <div className="h-5 mb-2">
-          {getStatusBadge()}
+      <CardContent className="p-4 flex items-center justify-between">
+        <div className="flex flex-col">
+          <div className="flex items-center gap-2 mb-1">
+            <h3 className="font-semibold text-sm leading-tight">Test {testNumber}</h3>
+            {getStatusBadge()}
+          </div>
+          <p className="text-xs">
+            {getSubtext()}
+          </p>
         </div>
-
-        {/* Title */}
-        <h3 className="font-semibold text-base mb-1">Test {testNumber}</h3>
-
-        {/* Subtext */}
-        <p className="text-xs">
-          {getSubtext()}
-        </p>
+        {!locked && <ChevronRight className="h-5 w-5 text-gray-400" />}
       </CardContent>
     </Card>
   );

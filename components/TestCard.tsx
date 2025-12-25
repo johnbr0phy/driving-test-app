@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { CheckCircle2, Circle, PlayCircle, Trophy, Target, Lock } from "lucide-react";
 
 interface TestCardProps {
   testNumber: number;
@@ -48,29 +47,6 @@ export function TestCard({
     }
   };
 
-  const getStatusIcon = () => {
-    if (locked) {
-      return <Lock className="h-10 w-10 text-gray-300" />;
-    }
-
-    if (status === "completed" && bestScore !== undefined) {
-      if (bestPercentage === 100) {
-        return <Trophy className="h-10 w-10 text-yellow-500" />;
-      } else if (bestPercentage >= 70) {
-        return <CheckCircle2 className="h-10 w-10 text-green-500" />;
-      } else {
-        return <Target className="h-10 w-10 text-orange-500" />;
-      }
-    }
-
-    switch (status) {
-      case "in-progress":
-        return <PlayCircle className="h-10 w-10 text-yellow-500" />;
-      default:
-        return <Circle className="h-10 w-10 text-gray-300" />;
-    }
-  };
-
   const getSubtext = () => {
     if (locked) {
       return <span className="text-gray-400">Locked</span>;
@@ -98,11 +74,6 @@ export function TestCard({
         {/* Badge */}
         <div className="h-5 mb-2">
           {getStatusBadge()}
-        </div>
-
-        {/* Icon */}
-        <div className="mb-2">
-          {getStatusIcon()}
         </div>
 
         {/* Title */}

@@ -14,11 +14,11 @@ import { useAuth } from "@/contexts/AuthContext";
 import { states } from "@/data/states";
 
 // Training set definitions
-const TRAINING_SET_NAMES: { [key: number]: { name: string; icon: "signs" | "rules" | "safety" | "state" } } = {
-  1: { name: "Signs & Signals", icon: "signs" },
-  2: { name: "Rules of the Road", icon: "rules" },
-  3: { name: "Safety & Emergencies", icon: "safety" },
-  4: { name: "State Laws", icon: "state" },
+const TRAINING_SET_NAMES: { [key: number]: string } = {
+  1: "Signs & Signals",
+  2: "Rules of the Road",
+  3: "Safety & Emergencies",
+  4: "State Laws",
 };
 
 export default function DashboardPage() {
@@ -47,11 +47,9 @@ export default function DashboardPage() {
   const getTrainingSets = (): TrainingSet[] => {
     return [1, 2, 3, 4].map((id) => {
       const progress = getTrainingSetProgress(id);
-      const meta = TRAINING_SET_NAMES[id];
       return {
         id,
-        name: meta.name,
-        icon: meta.icon,
+        name: TRAINING_SET_NAMES[id],
         correctCount: progress.correct,
         targetCount: progress.total,
       };
@@ -98,8 +96,7 @@ export default function DashboardPage() {
 
   const trainingSets = hydrated ? getTrainingSets() : [1, 2, 3, 4].map((id) => ({
     id,
-    name: TRAINING_SET_NAMES[id].name,
-    icon: TRAINING_SET_NAMES[id].icon,
+    name: TRAINING_SET_NAMES[id],
     correctCount: 0,
     targetCount: 50,
   }));

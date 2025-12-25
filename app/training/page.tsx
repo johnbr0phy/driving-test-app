@@ -76,7 +76,11 @@ function TrainingPageContent() {
 
   const handleFireworksComplete = () => {
     setShowFireworks(false);
-    setShowCelebration(true);
+    if (isSetMode) {
+      setShowSetComplete(true);
+    } else {
+      setShowCelebration(true);
+    }
   };
 
   // Load first question on mount
@@ -106,9 +110,9 @@ function TrainingPageContent() {
         currentQuestionIdRef.current  // Use ref for reliable current question ID
       );
 
-      // If all questions are mastered, show completion
+      // If all questions are mastered, show fireworks then completion
       if (!question) {
-        setShowSetComplete(true);
+        setShowFireworks(true);
         return;
       }
 
@@ -174,14 +178,6 @@ function TrainingPageContent() {
   if (!hydrated || !selectedState) {
     return null;
   }
-
-  // Calculate question number for display
-  const getQuestionNumber = () => {
-    if (isSetMode) {
-      return setMasteredIds.length + 1;
-    }
-    return training.totalCorrectAllTime + 1;
-  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-50 to-amber-50">
@@ -279,7 +275,6 @@ function TrainingPageContent() {
             selectedAnswer={selectedAnswer}
             onAnswerSelect={handleAnswerSelect}
             onNext={handleNext}
-            questionNumber={getQuestionNumber()}
           />
         ) : (
           <Card className="w-full">

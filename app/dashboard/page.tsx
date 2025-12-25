@@ -56,15 +56,15 @@ export default function DashboardPage() {
     });
   };
 
-  // Get tiger face image based on pass probability
+  // Get tiger face image based on pass probability (100% only for happiest)
   const getTigerFace = (probability: number): string => {
     if (probability >= 100) return "/tiger_face_01.png";
-    if (probability >= 90) return "/tiger_face_02.png";
-    if (probability >= 80) return "/tiger_face_03.png";
-    if (probability >= 70) return "/tiger_face_04.png";
-    if (probability >= 60) return "/tiger_face_05.png";
-    if (probability >= 50) return "/tiger_face_06.png";
-    if (probability >= 40) return "/tiger_face_07.png";
+    if (probability >= 85) return "/tiger_face_02.png";
+    if (probability >= 70) return "/tiger_face_03.png";
+    if (probability >= 55) return "/tiger_face_04.png";
+    if (probability >= 40) return "/tiger_face_05.png";
+    if (probability >= 25) return "/tiger_face_06.png";
+    if (probability >= 10) return "/tiger_face_07.png";
     return "/tiger_face_08.png";
   };
 

@@ -3,14 +3,23 @@
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { TestCard } from "@/components/TestCard";
+import { TrainingSetCard, TrainingSet } from "@/components/TrainingSetCard";
 import { Card, CardContent } from "@/components/ui/card";
-import { Zap, Lock, BarChart3, ChevronRight } from "lucide-react";
+import { Lock, BarChart3 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { useStore } from "@/store/useStore";
 import { useHydration } from "@/hooks/useHydration";
 import { useAuth } from "@/contexts/AuthContext";
 import { states } from "@/data/states";
+
+// Training set definitions
+const TRAINING_SETS: Omit<TrainingSet, 'correctCount'>[] = [
+  { id: 1, name: "Signs & Signals", icon: "signs", targetCount: 50 },
+  { id: 2, name: "Rules of the Road", icon: "rules", targetCount: 50 },
+  { id: 3, name: "Safety & Emergencies", icon: "safety", targetCount: 50 },
+  { id: 4, name: "State Laws", icon: "state", targetCount: 50 },
+];
 
 export default function DashboardPage() {
   const router = useRouter();
@@ -27,11 +36,23 @@ export default function DashboardPage() {
   const isOnboardingComplete = useStore((state) => state.isOnboardingComplete);
 
   const passProbability = hydrated ? getPassProbability() : 0;
-  const onboardingComplete = hydrated ? isOnboardingComplete() : true; // Default true to avoid flash
+  const onboardingComplete = hydrated ? isOnboardingComplete() : true;
   const trainingProgress = training.totalCorrectAllTime;
 
   // Get state name from code
   const stateName = states.find((s) => s.code === selectedState)?.name || selectedState;
+
+  // Calculate training set progress (distribute evenly for now)
+  // TODO: Track per-set progress in the store
+  const getTrainingSets = (): TrainingSet[] => {
+    const perSet = Math.floor(trainingProgress / 4);
+    const remainder = trainingProgress % 4;
+
+    return TRAINING_SETS.map((set, index) => ({
+      ...set,
+      correctCount: Math.min(set.targetCount, perSet + (index < remainder ? 1 : 0)),
+    }));
+  };
 
   // Get tiger face image based on pass probability
   const getTigerFace = (probability: number): string => {
@@ -55,7 +76,6 @@ export default function DashboardPage() {
   // Get status for each test
   const getTestStatus = (testNumber: number): "not-started" | "in-progress" | "completed" => {
     const currentTest = getCurrentTest(testNumber);
-    // If there's a test in progress (even if previously completed), show in-progress
     if (currentTest && currentTest.questions.length > 0) return "in-progress";
     const session = getTestSession(testNumber);
     if (session) return "completed";
@@ -72,23 +92,14 @@ export default function DashboardPage() {
     return 0;
   };
 
-  const getLockMessage = (testNumber: number): string => {
-    // During onboarding, all tests show the same message
-    if (!onboardingComplete) {
-      return "Complete 10 correct answers in Training Mode to unlock";
-    }
-    if (testNumber === 1) return ""; // Test 1 is never locked after onboarding
-    // Tests 2-4 unlock after onboarding
-    return "Complete 10 correct answers in Training Mode to unlock";
-  };
+  const trainingSets = hydrated ? getTrainingSets() : TRAINING_SETS.map(s => ({ ...s, correctCount: 0 }));
 
   return (
     <div className="min-h-screen bg-white relative">
       <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-orange-50 to-white pointer-events-none" />
-      <div className="relative container mx-auto px-4 py-8 max-w-6xl">
+      <div className="relative container mx-auto px-4 py-8 max-w-2xl">
         {/* Pass Probability / Stats Card */}
         {!onboardingComplete ? (
-          // Locked stats card during onboarding
           <Card className="mb-6 bg-gradient-to-r from-gray-50 to-gray-100 border-gray-200 opacity-75">
             <CardContent className="p-6">
               <div className="flex items-center gap-4">
@@ -110,7 +121,6 @@ export default function DashboardPage() {
             </CardContent>
           </Card>
         ) : isGuest ? (
-          // Guest users see a prompt to sign up for stats
           <Card className="mb-6 bg-gradient-to-r from-orange-50 to-amber-50 border-orange-200">
             <CardContent className="p-6">
               <div className="flex items-center gap-4">
@@ -167,50 +177,30 @@ export default function DashboardPage() {
           </Link>
         )}
 
-        {/* Training Mode */}
-        <div className="mb-6">
-          <h2 className="text-2xl font-bold mb-4">Training Mode</h2>
-          <Link href="/training" className="block">
-            <Card className="bg-gradient-to-r from-orange-50 to-amber-50 border-orange-200 hover:shadow-md hover:border-orange-300 transition-all cursor-pointer">
-              <CardContent className="p-4 sm:p-5">
-                <div className="flex items-center gap-3 sm:gap-4">
-                  <Zap className="h-8 w-8 sm:h-10 sm:w-10 text-orange-600 flex-shrink-0" />
-                  <div className="flex-1 min-w-0">
-                    <h3 className="font-semibold text-base sm:text-lg text-orange-900">
-                      {trainingProgress}/200 correct
-                    </h3>
-                    {!onboardingComplete ? (
-                      <p className="text-xs sm:text-sm text-orange-700">
-                        {10 - trainingProgress} more to unlock tests
-                      </p>
-                    ) : (
-                      <div className="flex items-center gap-2 mt-1">
-                        <div className="flex-1 bg-orange-200 rounded-full h-2 max-w-32">
-                          <div
-                            className="bg-orange-600 h-2 rounded-full transition-all"
-                            style={{ width: `${Math.min(100, (trainingProgress / 200) * 100)}%` }}
-                          />
-                        </div>
-                        <span className="text-xs text-orange-700">{Math.round((trainingProgress / 200) * 100)}%</span>
-                      </div>
-                    )}
-                  </div>
-                  <ChevronRight className="h-5 w-5 text-orange-400 flex-shrink-0" />
-                </div>
-              </CardContent>
-            </Card>
-          </Link>
+        {/* Training Sets */}
+        <div className="mb-8">
+          <h2 className="text-xl font-bold mb-3">Training</h2>
+          <p className="text-sm text-gray-500 mb-4">Master each topic to prepare for the exam</p>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            {trainingSets.map((set) => (
+              <TrainingSetCard
+                key={set.id}
+                set={set}
+                locked={!onboardingComplete && set.id > 1}
+              />
+            ))}
+          </div>
         </div>
 
-        {/* Practice Tests - Show locked during onboarding */}
+        {/* Practice Tests */}
         <div className="mb-6">
-          <h2 className="text-2xl font-bold mb-4">Simulate the real exam</h2>
-          <div className="space-y-3">
+          <h2 className="text-xl font-bold mb-3">Practice Tests</h2>
+          <p className="text-sm text-gray-500 mb-4">Simulate the real exam experience</p>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
             {[1, 2, 3, 4].map((testNumber) => {
               const status = getTestStatus(testNumber);
               const session = getTestSession(testNumber);
               const attemptStats = getTestAttemptStats(testNumber);
-              // All tests locked during onboarding
               const locked = !onboardingComplete || !isTestUnlocked(testNumber);
               return (
                 <TestCard
@@ -221,9 +211,7 @@ export default function DashboardPage() {
                   progress={getTestProgress(testNumber)}
                   totalQuestions={50}
                   bestScore={attemptStats?.bestScore}
-                  attemptCount={attemptStats?.attemptCount}
                   locked={locked}
-                  lockMessage={getLockMessage(testNumber)}
                 />
               );
             })}

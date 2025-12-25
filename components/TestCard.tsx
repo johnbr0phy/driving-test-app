@@ -1,8 +1,7 @@
 import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Progress } from "@/components/ui/progress";
-import { CheckCircle2, Circle, PlayCircle, Trophy, Target, Lock, ChevronRight } from "lucide-react";
+import { CheckCircle2, Circle, PlayCircle, Trophy, Target, Lock } from "lucide-react";
 
 interface TestCardProps {
   testNumber: number;
@@ -10,10 +9,8 @@ interface TestCardProps {
   score?: number;
   totalQuestions?: number;
   progress?: number;
-  firstScore?: number;
   bestScore?: number;
   attemptCount?: number;
-  averageScore?: number;
   locked?: boolean;
   lockMessage?: string;
 }
@@ -24,9 +21,7 @@ export function TestCard({
   totalQuestions = 50,
   progress = 0,
   bestScore,
-  attemptCount,
   locked = false,
-  lockMessage
 }: TestCardProps) {
   const bestPercentage = bestScore ? Math.round((bestScore / totalQuestions) * 100) : 0;
 
@@ -49,85 +44,74 @@ export function TestCard({
       case "in-progress":
         return <Badge className="bg-yellow-500 hover:bg-yellow-500 text-xs">In Progress</Badge>;
       default:
-        return <Badge variant="outline" className="hover:bg-white text-xs">Not Started</Badge>;
+        return null;
     }
   };
 
   const getStatusIcon = () => {
     if (locked) {
-      return <Lock className="h-8 w-8 sm:h-10 sm:w-10 text-gray-400" />;
+      return <Lock className="h-10 w-10 text-gray-300" />;
     }
 
     if (status === "completed" && bestScore !== undefined) {
       if (bestPercentage === 100) {
-        return <Trophy className="h-8 w-8 sm:h-10 sm:w-10 text-yellow-500" />;
+        return <Trophy className="h-10 w-10 text-yellow-500" />;
       } else if (bestPercentage >= 70) {
-        return <CheckCircle2 className="h-8 w-8 sm:h-10 sm:w-10 text-green-500" />;
+        return <CheckCircle2 className="h-10 w-10 text-green-500" />;
       } else {
-        return <Target className="h-8 w-8 sm:h-10 sm:w-10 text-orange-500" />;
+        return <Target className="h-10 w-10 text-orange-500" />;
       }
     }
 
     switch (status) {
       case "in-progress":
-        return <PlayCircle className="h-8 w-8 sm:h-10 sm:w-10 text-yellow-500" />;
+        return <PlayCircle className="h-10 w-10 text-yellow-500" />;
       default:
-        return <Circle className="h-8 w-8 sm:h-10 sm:w-10 text-gray-300" />;
+        return <Circle className="h-10 w-10 text-gray-300" />;
     }
   };
 
+  const getSubtext = () => {
+    if (locked) {
+      return <span className="text-gray-400">Locked</span>;
+    }
+    if (status === "in-progress") {
+      return <span className="text-yellow-600">{progress}% done</span>;
+    }
+    if (status === "completed" && bestScore !== undefined) {
+      return (
+        <span className={bestPercentage >= 70 ? 'text-green-600' : 'text-orange-600'}>
+          {bestScore}/{totalQuestions}
+        </span>
+      );
+    }
+    return <span className="text-gray-400">50 questions</span>;
+  };
+
   const cardContent = (
-    <Card className={`transition-all ${
+    <Card className={`h-full transition-all ${
       locked
-        ? "bg-gray-50 border-gray-200 opacity-75"
+        ? "bg-gray-50 border-gray-200 opacity-60"
         : "hover:shadow-md hover:border-gray-300 cursor-pointer"
     }`}>
-      <CardContent className="p-4 sm:p-5">
-        <div className="flex items-center gap-3 sm:gap-4">
-          {/* Icon */}
-          <div className="flex-shrink-0">
-            {getStatusIcon()}
-          </div>
-
-          {/* Main content */}
-          <div className="flex-1 min-w-0">
-            <div className="flex items-center gap-2 mb-1">
-              <span className="font-semibold text-base sm:text-lg">Test {testNumber}</span>
-              {getStatusBadge()}
-            </div>
-
-            {/* Status-specific info */}
-            {locked ? (
-              <p className="text-xs sm:text-sm text-gray-500 truncate">
-                {lockMessage || "Complete training to unlock"}
-              </p>
-            ) : status === "in-progress" ? (
-              <div className="flex items-center gap-2">
-                <Progress value={progress} className="h-2 flex-1 max-w-32 [&>div]:bg-yellow-500" />
-                <span className="text-xs sm:text-sm text-gray-600">{progress}%</span>
-              </div>
-            ) : status === "completed" && bestScore !== undefined ? (
-              <p className="text-xs sm:text-sm text-gray-600">
-                <span className="hidden sm:inline">Best: </span>
-                <span className={bestPercentage >= 70 ? 'text-green-600 font-medium' : 'text-orange-600 font-medium'}>
-                  {bestScore}/{totalQuestions}
-                </span>
-                {attemptCount !== undefined && (
-                  <span className="text-gray-400 ml-2">
-                    · {attemptCount} {attemptCount === 1 ? 'attempt' : 'attempts'}
-                  </span>
-                )}
-              </p>
-            ) : (
-              <p className="text-xs sm:text-sm text-gray-500">50 questions</p>
-            )}
-          </div>
-
-          {/* Arrow indicator for clickable cards */}
-          {!locked && (
-            <ChevronRight className="h-5 w-5 text-gray-400 flex-shrink-0" />
-          )}
+      <CardContent className="p-4 flex flex-col items-center text-center">
+        {/* Badge */}
+        <div className="h-5 mb-2">
+          {getStatusBadge()}
         </div>
+
+        {/* Icon */}
+        <div className="mb-2">
+          {getStatusIcon()}
+        </div>
+
+        {/* Title */}
+        <h3 className="font-semibold text-base mb-1">Test {testNumber}</h3>
+
+        {/* Subtext */}
+        <p className="text-xs">
+          {getSubtext()}
+        </p>
       </CardContent>
     </Card>
   );
@@ -137,7 +121,7 @@ export function TestCard({
   }
 
   return (
-    <Link href={`/test/${testNumber}`} className="block">
+    <Link href={`/test/${testNumber}`} className="block h-full">
       {cardContent}
     </Link>
   );

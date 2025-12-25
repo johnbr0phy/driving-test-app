@@ -90,7 +90,10 @@ function TrainingPageContent() {
     if (isSetMode) {
       // Set-based training: get next unmastered question from the set
       // Wrong questions are pushed to the back via wrongQueue
-      const currentSetData = trainingSets[setNumber] || { masteredIds: [], wrongQueue: [] };
+      // IMPORTANT: Get fresh state from store to ensure we have the latest wrongQueue
+      // (the captured trainingSets variable may be stale after answering a question)
+      const freshTrainingSets = useStore.getState().trainingSets;
+      const currentSetData = freshTrainingSets[setNumber] || { masteredIds: [], wrongQueue: [] };
       question = getNextTrainingSetQuestion(
         setNumber,
         selectedState,
@@ -106,21 +109,25 @@ function TrainingPageContent() {
 
       // If this question was previously answered wrong, shuffle the options
       // so users can't just memorize the slot position
-      if (currentSetData.wrongQueue.includes(question.questionId)) {
+      // Note: Use freshTrainingSets here too for consistency
+      const freshWrongQueue = freshTrainingSets[setNumber]?.wrongQueue || [];
+      if (freshWrongQueue.includes(question.questionId)) {
         question = shuffleQuestionOptions(question);
       }
     } else {
       // Onboarding mode: random questions
+      // IMPORTANT: Get fresh state from store to ensure we have the latest masteredQuestionIds
+      const freshTraining = useStore.getState().training;
       question = getTrainingQuestion(
         selectedState,
-        training.masteredQuestionIds,
-        training.lastQuestionId
+        freshTraining.masteredQuestionIds,
+        freshTraining.lastQuestionId
       );
 
       // If all questions are mastered, reset and start fresh
       if (!question) {
         resetMasteredQuestions();
-        question = getTrainingQuestion(selectedState, [], training.lastQuestionId);
+        question = getTrainingQuestion(selectedState, [], freshTraining.lastQuestionId);
       }
     }
 

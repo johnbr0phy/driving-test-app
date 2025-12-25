@@ -72,7 +72,11 @@ function TrainingPageContent() {
 
   const handleFireworksComplete = () => {
     setShowFireworks(false);
-    setShowCelebration(true);
+    if (isSetMode) {
+      setShowSetComplete(true);
+    } else {
+      setShowCelebration(true);
+    }
   };
 
   // Load first question on mount
@@ -102,9 +106,9 @@ function TrainingPageContent() {
         currentQuestion?.questionId || null  // Exclude current question to prevent immediate repeat
       );
 
-      // If all questions are mastered, show completion
+      // If all questions are mastered, show fireworks then completion
       if (!question) {
-        setShowSetComplete(true);
+        setShowFireworks(true);
         return;
       }
 

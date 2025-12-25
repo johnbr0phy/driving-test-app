@@ -11,6 +11,7 @@ import Link from "next/link";
 import { useStore } from "@/store/useStore";
 import { useHydration } from "@/hooks/useHydration";
 import { Cloud } from "lucide-react";
+import { Fireworks } from "@/components/Fireworks";
 
 export default function ResultsPage() {
   const params = useParams();
@@ -23,6 +24,7 @@ export default function ResultsPage() {
   const isGuest = useStore((state) => state.isGuest);
   const [expandedQuestions, setExpandedQuestions] = useState<Set<number>>(new Set());
   const [loading, setLoading] = useState(true);
+  const [showFireworks, setShowFireworks] = useState(false);
 
   const testSession = hydrated ? getTestSession(testId) : null;
   const attemptStats = hydrated ? getTestAttemptStats(testId) : null;
@@ -37,6 +39,13 @@ export default function ResultsPage() {
       router.push(`/test/${testId}`);
     } else {
       setLoading(false);
+      // Show fireworks if passed (70% or higher)
+      const score = testSession.score || 0;
+      const total = testSession.questions.length;
+      const percentage = total > 0 ? Math.round((score / total) * 100) : 0;
+      if (percentage >= 70) {
+        setShowFireworks(true);
+      }
     }
   }, [testSession, testId, router, hydrated]);
 
@@ -94,6 +103,11 @@ export default function ResultsPage() {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      {/* Fireworks Animation */}
+      {showFireworks && (
+        <Fireworks duration={3000} onComplete={() => setShowFireworks(false)} />
+      )}
+
       <div className="container mx-auto px-4 py-8 max-w-6xl">
         {/* Back Button */}
         <div className="mb-6">

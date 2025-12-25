@@ -1,11 +1,10 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { TestCard } from "@/components/TestCard";
-import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Zap, Lock, BarChart3 } from "lucide-react";
+import { Zap, Lock, BarChart3, ChevronRight } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { useStore } from "@/store/useStore";
@@ -16,20 +15,16 @@ import { states } from "@/data/states";
 export default function DashboardPage() {
   const router = useRouter();
   const hydrated = useHydration();
-  const { user } = useAuth();
+  useAuth();
   const isGuest = useStore((state) => state.isGuest);
   const selectedState = useStore((state) => state.selectedState);
-  const getProgress = useStore((state) => state.getProgress);
   const getTestSession = useStore((state) => state.getTestSession);
   const getTestAttemptStats = useStore((state) => state.getTestAttemptStats);
-  const getTestAverageScore = useStore((state) => state.getTestAverageScore);
   const getCurrentTest = useStore((state) => state.getCurrentTest);
   const isTestUnlocked = useStore((state) => state.isTestUnlocked);
   const training = useStore((state) => state.training);
   const getPassProbability = useStore((state) => state.getPassProbability);
   const isOnboardingComplete = useStore((state) => state.isOnboardingComplete);
-
-  const [expandedTest, setExpandedTest] = useState<number | null>(null);
 
   const passProbability = hydrated ? getPassProbability() : 0;
   const onboardingComplete = hydrated ? isOnboardingComplete() : true; // Default true to avoid flash
@@ -56,44 +51,6 @@ export default function DashboardPage() {
       router.push("/onboarding/select-state");
     }
   }, [hydrated, selectedState, router]);
-
-  // Auto-expand the next available test on mobile
-  useEffect(() => {
-    if (!hydrated) return;
-
-    // Find the next test to expand (first test that is in-progress or not started and unlocked)
-    for (let testNumber = 1; testNumber <= 4; testNumber++) {
-      const currentTest = getCurrentTest(testNumber);
-      const session = getTestSession(testNumber);
-      const unlocked = isTestUnlocked(testNumber);
-
-      // If test is in progress, expand it
-      if (currentTest && currentTest.questions.length > 0) {
-        setExpandedTest(testNumber);
-        return;
-      }
-
-      // If test is unlocked and not completed yet, expand it
-      if (unlocked && !session) {
-        setExpandedTest(testNumber);
-        return;
-      }
-
-      // If test is unlocked and completed, continue to next test
-      // If test is locked, continue to next (shouldn't happen)
-    }
-
-    // If all tests are completed, expand the last one
-    setExpandedTest(4);
-  }, [hydrated, getCurrentTest, getTestSession, isTestUnlocked]);
-
-  const stats = hydrated ? getProgress() : {
-    testsCompleted: 0,
-    questionsAnswered: 0,
-    totalCorrect: 0,
-    accuracy: 0,
-    averageScore: 0,
-  };
 
   // Get status for each test
   const getTestStatus = (testNumber: number): "not-started" | "in-progress" | "completed" => {
@@ -213,36 +170,36 @@ export default function DashboardPage() {
         {/* Training Mode */}
         <div className="mb-6">
           <h2 className="text-2xl font-bold mb-4">Training Mode</h2>
-          <Card className="bg-gradient-to-r from-orange-50 to-amber-50 border-orange-200">
-            <CardContent className="p-6">
-              <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-                <div className="flex items-center gap-4">
-                  <Zap className="h-10 w-10 text-orange-600" />
-                  <div>
-                    <h3 className="font-bold text-lg text-orange-900">
-                      {trainingProgress}/200 questions answered correctly
+          <Link href="/training" className="block">
+            <Card className="bg-gradient-to-r from-orange-50 to-amber-50 border-orange-200 hover:shadow-md hover:border-orange-300 transition-all cursor-pointer">
+              <CardContent className="p-4 sm:p-5">
+                <div className="flex items-center gap-3 sm:gap-4">
+                  <Zap className="h-8 w-8 sm:h-10 sm:w-10 text-orange-600 flex-shrink-0" />
+                  <div className="flex-1 min-w-0">
+                    <h3 className="font-semibold text-base sm:text-lg text-orange-900">
+                      {trainingProgress}/200 correct
                     </h3>
-                    {!onboardingComplete && (
-                      <p className="text-sm text-orange-700 mt-1">
-                        Answer {10 - trainingProgress} more to unlock practice tests
+                    {!onboardingComplete ? (
+                      <p className="text-xs sm:text-sm text-orange-700">
+                        {10 - trainingProgress} more to unlock tests
                       </p>
+                    ) : (
+                      <div className="flex items-center gap-2 mt-1">
+                        <div className="flex-1 bg-orange-200 rounded-full h-2 max-w-32">
+                          <div
+                            className="bg-orange-600 h-2 rounded-full transition-all"
+                            style={{ width: `${Math.min(100, (trainingProgress / 200) * 100)}%` }}
+                          />
+                        </div>
+                        <span className="text-xs text-orange-700">{Math.round((trainingProgress / 200) * 100)}%</span>
+                      </div>
                     )}
-                    <div className="w-full bg-orange-200 rounded-full h-2 mt-2 max-w-xs">
-                      <div
-                        className="bg-orange-600 h-2 rounded-full transition-all"
-                        style={{ width: `${Math.min(100, (trainingProgress / 200) * 100)}%` }}
-                      />
-                    </div>
                   </div>
+                  <ChevronRight className="h-5 w-5 text-orange-400 flex-shrink-0" />
                 </div>
-                <Link href="/training" className="w-full sm:w-auto">
-                  <Button className="bg-black text-white hover:bg-gray-800 w-full">
-                    {trainingProgress > 0 ? "Continue Training" : "Start Training"}
-                  </Button>
-                </Link>
-              </div>
-            </CardContent>
-          </Card>
+              </CardContent>
+            </Card>
+          </Link>
         </div>
 
         {/* Practice Tests - Show locked during onboarding */}
@@ -253,7 +210,6 @@ export default function DashboardPage() {
               const status = getTestStatus(testNumber);
               const session = getTestSession(testNumber);
               const attemptStats = getTestAttemptStats(testNumber);
-              const averageScore = getTestAverageScore(testNumber);
               // All tests locked during onboarding
               const locked = !onboardingComplete || !isTestUnlocked(testNumber);
               return (
@@ -264,14 +220,10 @@ export default function DashboardPage() {
                   score={session?.score}
                   progress={getTestProgress(testNumber)}
                   totalQuestions={50}
-                  firstScore={attemptStats?.firstScore}
                   bestScore={attemptStats?.bestScore}
                   attemptCount={attemptStats?.attemptCount}
-                  averageScore={averageScore}
                   locked={locked}
                   lockMessage={getLockMessage(testNumber)}
-                  expanded={!onboardingComplete ? testNumber === 1 : expandedTest === testNumber}
-                  onToggle={() => setExpandedTest(expandedTest === testNumber ? null : testNumber)}
                 />
               );
             })}

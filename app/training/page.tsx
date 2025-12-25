@@ -169,14 +169,6 @@ function TrainingPageContent() {
     return null;
   }
 
-  // Calculate question number for display
-  const getQuestionNumber = () => {
-    if (isSetMode) {
-      return setMasteredIds.length + 1;
-    }
-    return training.totalCorrectAllTime + 1;
-  };
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-50 to-amber-50">
       {/* Fireworks Animation */}
@@ -273,7 +265,6 @@ function TrainingPageContent() {
             selectedAnswer={selectedAnswer}
             onAnswerSelect={handleAnswerSelect}
             onNext={handleNext}
-            questionNumber={getQuestionNumber()}
           />
         ) : (
           <Card className="w-full">

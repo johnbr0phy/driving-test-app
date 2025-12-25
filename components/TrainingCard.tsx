@@ -8,7 +8,6 @@ interface TrainingCardProps {
   selectedAnswer: string | null;
   onAnswerSelect: (answer: string) => void;
   onNext: () => void;
-  questionNumber: number;
 }
 
 export function TrainingCard({
@@ -16,7 +15,6 @@ export function TrainingCard({
   selectedAnswer,
   onAnswerSelect,
   onNext,
-  questionNumber,
 }: TrainingCardProps) {
   const answered = selectedAnswer !== null;
   const isCorrect = selectedAnswer === question.correctAnswer;
@@ -47,11 +45,6 @@ export function TrainingCard({
   return (
     <Card className="w-full max-w-3xl mx-auto">
       <CardContent className="p-4 md:p-8">
-        {/* Question number */}
-        <div className="text-sm text-gray-500 mb-3 md:mb-4">
-          Question {questionNumber}
-        </div>
-
         {/* Question text */}
         <h2 className="text-lg md:text-2xl font-semibold mb-4 md:mb-6">{question.question}</h2>
 

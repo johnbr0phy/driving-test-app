@@ -4,7 +4,8 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { useAuth } from "@/contexts/AuthContext";
 import { useAdmin } from "@/hooks/useAdmin";
-import { auth } from "@/lib/firebase";
+import { db } from "@/lib/firebase";
+import { collection, getDocs } from "firebase/firestore";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { states } from "@/data/states";
 import { ArrowLeft, Users, MapPin, RefreshCw } from "lucide-react";
@@ -13,10 +14,8 @@ import { Button } from "@/components/ui/button";
 
 interface UserData {
   uid: string;
-  email: string;
   selectedState: string | null;
   lastUpdated: string | null;
-  createdAt: string | null;
   testsCompleted: number;
   trainingProgress: number;
 }
@@ -37,37 +36,46 @@ export default function AdminPage() {
   const [error, setError] = useState<string | null>(null);
 
   const fetchUsers = async () => {
-    if (!user) return;
-
     setLoading(true);
     setError(null);
 
     try {
-      const idToken = await auth.currentUser?.getIdToken();
-      if (!idToken) {
-        setError("Not authenticated");
-        return;
-      }
+      const usersSnapshot = await getDocs(collection(db, "users"));
 
-      const response = await fetch("/api/admin/users", {
-        headers: {
-          Authorization: `Bearer ${idToken}`,
-        },
+      const userData: UserData[] = usersSnapshot.docs.map(doc => {
+        const data = doc.data();
+        return {
+          uid: doc.id,
+          selectedState: data.selectedState || null,
+          lastUpdated: data.lastUpdated || null,
+          testsCompleted: data.completedTests?.length || 0,
+          trainingProgress: data.training?.totalCorrectAllTime || 0,
+        };
       });
 
-      if (response.status === 403) {
-        setError("Access denied. Admin privileges required.");
-        return;
-      }
+      // Sort by lastUpdated (newest first)
+      userData.sort((a, b) => {
+        if (!a.lastUpdated) return 1;
+        if (!b.lastUpdated) return -1;
+        return new Date(b.lastUpdated).getTime() - new Date(a.lastUpdated).getTime();
+      });
 
-      if (!response.ok) {
-        throw new Error("Failed to fetch users");
-      }
+      // Calculate stats by state
+      const stateCounts: Record<string, number> = {};
+      userData.forEach(u => {
+        if (u.selectedState) {
+          stateCounts[u.selectedState] = (stateCounts[u.selectedState] || 0) + 1;
+        }
+      });
 
-      const data = await response.json();
-      setUsers(data.users);
-      setStats(data.stats);
+      setUsers(userData);
+      setStats({
+        totalUsers: userData.length,
+        usersWithState: userData.filter(u => u.selectedState).length,
+        byState: stateCounts,
+      });
     } catch (err) {
+      console.error("Error fetching users:", err);
       setError(err instanceof Error ? err.message : "Failed to load users");
     } finally {
       setLoading(false);
@@ -228,9 +236,9 @@ export default function AdminPage() {
               <table className="w-full text-sm">
                 <thead>
                   <tr className="border-b">
-                    <th className="text-left py-3 px-4 font-medium text-gray-500">Email</th>
+                    <th className="text-left py-3 px-4 font-medium text-gray-500">User ID</th>
                     <th className="text-left py-3 px-4 font-medium text-gray-500">State</th>
-                    <th className="text-left py-3 px-4 font-medium text-gray-500">Registered</th>
+                    <th className="text-left py-3 px-4 font-medium text-gray-500">Last Active</th>
                     <th className="text-left py-3 px-4 font-medium text-gray-500">Training</th>
                     <th className="text-left py-3 px-4 font-medium text-gray-500">Tests</th>
                   </tr>
@@ -239,8 +247,7 @@ export default function AdminPage() {
                   {users.map((userData) => (
                     <tr key={userData.uid} className="border-b hover:bg-gray-50">
                       <td className="py-3 px-4">
-                        <div className="font-medium">{userData.email}</div>
-                        <div className="text-xs text-gray-400 font-mono">{userData.uid.slice(0, 12)}...</div>
+                        <div className="text-xs text-gray-600 font-mono">{userData.uid}</div>
                       </td>
                       <td className="py-3 px-4">
                         {userData.selectedState ? (
@@ -252,7 +259,7 @@ export default function AdminPage() {
                         )}
                       </td>
                       <td className="py-3 px-4 text-gray-600">
-                        {formatDate(userData.createdAt)}
+                        {formatDate(userData.lastUpdated)}
                       </td>
                       <td className="py-3 px-4">
                         <span className="font-medium">{userData.trainingProgress}</span>

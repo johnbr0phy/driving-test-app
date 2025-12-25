@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, Suspense } from "react";
+import { useState, useEffect, Suspense, useRef } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { TrainingCard } from "@/components/TrainingCard";
 import { Button } from "@/components/ui/button";
@@ -44,6 +44,10 @@ function TrainingPageContent() {
 
   const [currentQuestion, setCurrentQuestion] = useState<Question | null>(null);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
+
+  // Track current question ID in a ref for reliable access in loadNextQuestion
+  // This avoids stale closure issues with the currentQuestion state
+  const currentQuestionIdRef = useRef<string | null>(null);
   const [showFireworks, setShowFireworks] = useState(false);
   const [showCelebration, setShowCelebration] = useState(false);
   const [showSetComplete, setShowSetComplete] = useState(false);
@@ -99,7 +103,7 @@ function TrainingPageContent() {
         selectedState,
         currentSetData.masteredIds,
         currentSetData.wrongQueue,
-        currentQuestion?.questionId || null  // Exclude current question to prevent immediate repeat
+        currentQuestionIdRef.current  // Use ref for reliable current question ID
       );
 
       // If all questions are mastered, show completion
@@ -134,9 +138,11 @@ function TrainingPageContent() {
 
     if (question) {
       setCurrentQuestion(question);
+      currentQuestionIdRef.current = question.questionId;  // Update ref for next loadNextQuestion call
       setSelectedAnswer(null);
     } else {
       setCurrentQuestion(null);
+      currentQuestionIdRef.current = null;
     }
   };
 

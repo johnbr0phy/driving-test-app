@@ -78,6 +78,54 @@ function intersperseQuestions(universal: Question[], state: Question[]): Questio
   return result;
 }
 
+// Get the fixed 50 questions for a training set
+// Training set N has the same questions as Test N, in a fixed order
+export function getTrainingSetQuestions(setNumber: number, state: string): Question[] {
+  const allQuestions = questionsData as Question[];
+
+  // Get universal questions (type: "Universal", state: "ALL")
+  const universalQuestions = allQuestions
+    .filter((q) => q.type === "Universal" && q.state === "ALL")
+    .sort((a, b) => a.questionId.localeCompare(b.questionId));
+
+  // Get state-specific questions
+  const stateQuestions = allQuestions
+    .filter((q) => q.type === "State-Specific" && q.state === state)
+    .sort((a, b) => a.questionId.localeCompare(b.questionId));
+
+  const UNIVERSAL_PER_SET = 40;
+  const STATE_PER_SET = 10;
+
+  const startUniversal = (setNumber - 1) * UNIVERSAL_PER_SET;
+  const startState = (setNumber - 1) * STATE_PER_SET;
+
+  const setUniversal = universalQuestions.slice(
+    startUniversal,
+    startUniversal + UNIVERSAL_PER_SET
+  );
+  const setStateQuestions = stateQuestions.slice(
+    startState,
+    startState + STATE_PER_SET
+  );
+
+  // Return in fixed order (not shuffled) for consistent training experience
+  return [...setUniversal, ...setStateQuestions];
+}
+
+// Get the next unanswered question from a training set
+export function getNextTrainingSetQuestion(
+  setNumber: number,
+  state: string,
+  masteredIds: string[]
+): Question | null {
+  const questions = getTrainingSetQuestions(setNumber, state);
+
+  // Find first question not yet mastered
+  const nextQuestion = questions.find(q => !masteredIds.includes(q.questionId));
+
+  return nextQuestion || null;
+}
+
 // Get random question for training mode with mastery system
 // Questions answered correctly are excluded until all questions are mastered
 // lastQuestionId is excluded to prevent immediate repeats (unless it's the only option)

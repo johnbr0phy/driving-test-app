@@ -37,7 +37,7 @@ interface AppState {
   getTestAverageScore: (testId: number) => number;
   isTestUnlocked: (testId: number) => boolean;
 
-  // Training mode
+  // Training mode (for onboarding)
   training: {
     questionsAnswered: string[];
     correctCount: number;
@@ -51,6 +51,15 @@ interface AppState {
   answerTrainingQuestion: (questionId: string, isCorrect: boolean) => void;
   resetTrainingSession: () => void;
   resetMasteredQuestions: () => void;
+
+  // Training sets (post-onboarding)
+  trainingSets: {
+    [setId: number]: {
+      masteredIds: string[];
+    };
+  };
+  answerTrainingSetQuestion: (setId: number, questionId: string, isCorrect: boolean) => void;
+  getTrainingSetProgress: (setId: number) => { correct: number; total: number; complete: boolean };
 
   // Onboarding
   isOnboardingComplete: () => boolean;
@@ -99,6 +108,7 @@ export const useStore = create<AppState>()(
         masteredQuestionIds: [],
         lastQuestionId: null,
       },
+      trainingSets: {},
       userId: null,
       photoURL: null,
 
@@ -133,6 +143,7 @@ export const useStore = create<AppState>()(
             masteredQuestionIds: [],
             lastQuestionId: null,
           },
+          trainingSets: {},
         });
         // Save to Firestore
         get().saveToFirestore();
@@ -338,6 +349,44 @@ export const useStore = create<AppState>()(
         get().saveToFirestore();
       },
 
+      // Training sets functions
+      answerTrainingSetQuestion: (setId: number, questionId: string, isCorrect: boolean) => {
+        set((state) => {
+          const currentSet = state.trainingSets[setId] || { masteredIds: [] };
+          let newMasteredIds = [...currentSet.masteredIds];
+
+          if (isCorrect) {
+            // Add to mastered if not already there
+            if (!newMasteredIds.includes(questionId)) {
+              newMasteredIds.push(questionId);
+            }
+          } else {
+            // Remove from mastered if answered wrong
+            newMasteredIds = newMasteredIds.filter(id => id !== questionId);
+          }
+
+          return {
+            trainingSets: {
+              ...state.trainingSets,
+              [setId]: { masteredIds: newMasteredIds },
+            },
+          };
+        });
+        get().saveToFirestore();
+      },
+
+      getTrainingSetProgress: (setId: number) => {
+        const { trainingSets } = get();
+        const setData = trainingSets[setId] || { masteredIds: [] };
+        const correct = setData.masteredIds.length;
+        const total = 50;
+        return {
+          correct,
+          total,
+          complete: correct >= total,
+        };
+      },
+
       // Onboarding check - returns true if user has completed onboarding
       // (10+ correct training answers OR any existing app usage for backwards compatibility)
       isOnboardingComplete: () => {
@@ -449,6 +498,7 @@ export const useStore = create<AppState>()(
                 masteredQuestionIds: data.training?.masteredQuestionIds || [],
                 lastQuestionId: data.training?.lastQuestionId || null,
               },
+              trainingSets: data.trainingSets || {},
               photoURL: data.photoURL || null,
               userId,
             });
@@ -480,7 +530,7 @@ export const useStore = create<AppState>()(
       },
 
       saveToFirestore: async () => {
-        const { userId, isGuest, selectedState, currentTests, completedTests, testAttempts, training, photoURL } = get();
+        const { userId, isGuest, selectedState, currentTests, completedTests, testAttempts, training, trainingSets, photoURL } = get();
         if (!userId || isGuest) return; // Don't save if no user is logged in or guest mode
 
         try {
@@ -512,6 +562,7 @@ export const useStore = create<AppState>()(
               lastAttemptDate: attempt.lastAttemptDate instanceof Date ? attempt.lastAttemptDate.toISOString() : attempt.lastAttemptDate,
             })),
             training,
+            trainingSets,
             lastUpdated: new Date().toISOString(),
           });
         } catch (error) {
@@ -534,6 +585,7 @@ export const useStore = create<AppState>()(
             masteredQuestionIds: [],
             lastQuestionId: null,
           },
+          trainingSets: {},
         });
         get().saveToFirestore();
       },
@@ -555,6 +607,7 @@ export const useStore = create<AppState>()(
             masteredQuestionIds: [],
             lastQuestionId: null,
           },
+          trainingSets: {},
           userId: null,
           photoURL: null,
         });

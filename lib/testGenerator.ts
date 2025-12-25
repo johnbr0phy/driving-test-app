@@ -113,12 +113,12 @@ export function getTrainingSetQuestions(setNumber: number, state: string): Quest
 }
 
 // Get the next unanswered question from a training set
-// skipQuestionId: skip this question (e.g., one just answered wrong) to avoid immediate repeat
+// wrongQueue: questions answered wrong that should be asked later (after all others)
 export function getNextTrainingSetQuestion(
   setNumber: number,
   state: string,
   masteredIds: string[],
-  skipQuestionId?: string | null
+  wrongQueue: string[] = []
 ): Question | null {
   const questions = getTrainingSetQuestions(setNumber, state);
 
@@ -129,15 +129,22 @@ export function getNextTrainingSetQuestion(
     return null;
   }
 
-  // Try to skip the specified question (unless it's the only one left)
-  if (skipQuestionId && unmasteredQuestions.length > 1) {
-    const nextQuestion = unmasteredQuestions.find(q => q.questionId !== skipQuestionId);
-    if (nextQuestion) {
-      return nextQuestion;
+  // First priority: unmastered questions NOT in the wrong queue
+  const freshQuestions = unmasteredQuestions.filter(q => !wrongQueue.includes(q.questionId));
+  if (freshQuestions.length > 0) {
+    return freshQuestions[0];
+  }
+
+  // All remaining questions are in the wrong queue - take the first one (oldest wrong answer)
+  // Find the first question from wrongQueue that's still unmastered
+  for (const qId of wrongQueue) {
+    const question = unmasteredQuestions.find(q => q.questionId === qId);
+    if (question) {
+      return question;
     }
   }
 
-  // Return the first unmastered question
+  // Fallback (shouldn't happen)
   return unmasteredQuestions[0];
 }
 

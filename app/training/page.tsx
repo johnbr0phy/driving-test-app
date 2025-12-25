@@ -51,7 +51,9 @@ function TrainingPageContent() {
 
   // Get current set progress
   const setProgress = isSetMode ? getTrainingSetProgress(setNumber) : null;
-  const setMasteredIds = isSetMode ? (trainingSets[setNumber]?.masteredIds || []) : [];
+  const setData = isSetMode ? (trainingSets[setNumber] || { masteredIds: [], wrongQueue: [] }) : null;
+  const setMasteredIds = setData?.masteredIds || [];
+  const setWrongQueue = setData?.wrongQueue || [];
 
   // Redirect to onboarding if no state selected
   useEffect(() => {
@@ -80,16 +82,21 @@ function TrainingPageContent() {
     }
   }, [hydrated, selectedState, currentQuestion]);
 
-  const loadNextQuestion = (skipQuestionId?: string) => {
+  const loadNextQuestion = () => {
     if (!selectedState) return;
 
     let question: Question | null = null;
 
     if (isSetMode) {
       // Set-based training: get next unmastered question from the set
-      // Skip the provided question ID to avoid immediate repeats after wrong answers
-      const currentMasteredIds = trainingSets[setNumber]?.masteredIds || [];
-      question = getNextTrainingSetQuestion(setNumber, selectedState, currentMasteredIds, skipQuestionId);
+      // Wrong questions are pushed to the back via wrongQueue
+      const currentSetData = trainingSets[setNumber] || { masteredIds: [], wrongQueue: [] };
+      question = getNextTrainingSetQuestion(
+        setNumber,
+        selectedState,
+        currentSetData.masteredIds,
+        currentSetData.wrongQueue
+      );
 
       // If all questions are mastered, show completion
       if (!question) {
@@ -141,9 +148,7 @@ function TrainingPageContent() {
   };
 
   const handleNext = () => {
-    // If the answer was wrong, skip this question to avoid immediate repeat
-    const wasWrong = selectedAnswer && currentQuestion && selectedAnswer !== currentQuestion.correctAnswer;
-    loadNextQuestion(wasWrong ? currentQuestion.questionId : undefined);
+    loadNextQuestion();
   };
 
   if (!hydrated || !selectedState) {

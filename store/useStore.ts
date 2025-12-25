@@ -56,6 +56,7 @@ interface AppState {
   trainingSets: {
     [setId: number]: {
       masteredIds: string[];
+      wrongQueue: string[];  // Questions answered wrong, to be asked later
     };
   };
   answerTrainingSetQuestion: (setId: number, questionId: string, isCorrect: boolean) => void;
@@ -352,23 +353,30 @@ export const useStore = create<AppState>()(
       // Training sets functions
       answerTrainingSetQuestion: (setId: number, questionId: string, isCorrect: boolean) => {
         set((state) => {
-          const currentSet = state.trainingSets[setId] || { masteredIds: [] };
+          const currentSet = state.trainingSets[setId] || { masteredIds: [], wrongQueue: [] };
           let newMasteredIds = [...currentSet.masteredIds];
+          let newWrongQueue = [...(currentSet.wrongQueue || [])];
 
           if (isCorrect) {
             // Add to mastered if not already there
             if (!newMasteredIds.includes(questionId)) {
               newMasteredIds.push(questionId);
             }
+            // Remove from wrong queue
+            newWrongQueue = newWrongQueue.filter(id => id !== questionId);
           } else {
             // Remove from mastered if answered wrong
             newMasteredIds = newMasteredIds.filter(id => id !== questionId);
+            // Add to wrong queue (at the end) if not already there
+            if (!newWrongQueue.includes(questionId)) {
+              newWrongQueue.push(questionId);
+            }
           }
 
           return {
             trainingSets: {
               ...state.trainingSets,
-              [setId]: { masteredIds: newMasteredIds },
+              [setId]: { masteredIds: newMasteredIds, wrongQueue: newWrongQueue },
             },
           };
         });

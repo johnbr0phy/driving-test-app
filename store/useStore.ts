@@ -459,27 +459,37 @@ export const useStore = create<AppState>()(
       },
 
       getPassProbability: () => {
-        const { testAttempts, selectedState } = get();
+        const { testAttempts, trainingSets, training, selectedState } = get();
         const stateAttempts = testAttempts.filter((a) => a.state === selectedState);
 
-        // If no tests completed, return 0
-        if (stateAttempts.length === 0) {
-          return 0;
-        }
-
-        // Each of the 4 tests contributes 25% to the total pass probability
-        // Uncompleted tests contribute 0% (100% fail for that portion)
-        // Completed tests contribute their best score percentage * 25%
+        // 8 components: 4 training sets + 4 practice tests
+        // Each worth 12.5% (total = 100%)
+        const WEIGHT_PER_COMPONENT = 12.5;
         let totalPassProbability = 0;
 
+        // Training sets (4 × 12.5% = 50%)
+        for (let setNum = 1; setNum <= 4; setNum++) {
+          const setData = trainingSets[setNum];
+          let masteredCount = setData?.masteredIds?.length || 0;
+
+          // For set 1, include onboarding progress if no set-specific progress yet
+          if (setNum === 1 && masteredCount === 0 && training.totalCorrectAllTime > 0) {
+            masteredCount = Math.min(50, training.totalCorrectAllTime);
+          }
+
+          if (masteredCount > 0) {
+            const setScore = (masteredCount / 50) * 100;
+            totalPassProbability += setScore * (WEIGHT_PER_COMPONENT / 100);
+          }
+        }
+
+        // Practice tests (4 × 12.5% = 50%)
         for (let testNum = 1; testNum <= 4; testNum++) {
           const attempt = stateAttempts.find(a => a.testNumber === testNum);
           if (attempt) {
-            // Test completed - contribute based on best score (out of 50)
-            const testPassRate = (attempt.bestScore / 50) * 100;
-            totalPassProbability += testPassRate * 0.25;
+            const testScore = (attempt.bestScore / 50) * 100;
+            totalPassProbability += testScore * (WEIGHT_PER_COMPONENT / 100);
           }
-          // If not completed, this test contributes 0% to pass probability
         }
 
         return Math.round(totalPassProbability);

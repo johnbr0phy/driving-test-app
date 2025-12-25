@@ -104,7 +104,7 @@ export default function DashboardPage() {
   return (
     <div className="min-h-screen bg-white relative">
       <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-orange-50 to-white pointer-events-none" />
-      <div className="relative container mx-auto px-4 py-8 max-w-2xl">
+      <div className="relative container mx-auto px-4 py-8 max-w-6xl">
 
         {/* Onboarding Card - shown during onboarding */}
         {!onboardingComplete && (
@@ -192,7 +192,7 @@ export default function DashboardPage() {
           <div className="mb-8">
             <h2 className="text-xl font-bold mb-3">Training</h2>
             <p className="text-sm text-gray-500 mb-4">Get all 50 questions correct to complete each set</p>
-            <div className="flex flex-col gap-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {trainingSets.map((set) => (
                 <TrainingSetCard
                   key={set.id}
@@ -209,7 +209,7 @@ export default function DashboardPage() {
           <p className="text-sm text-gray-500 mb-4">
             {onboardingComplete ? "Simulate the real exam experience" : "Complete onboarding to unlock"}
           </p>
-          <div className="flex flex-col gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {[1, 2, 3, 4].map((testNumber) => {
               const status = getTestStatus(testNumber);
               const session = getTestSession(testNumber);

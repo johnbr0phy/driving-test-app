@@ -327,23 +327,23 @@ export default function Home() {
             href="https://www.reddit.com/r/driving/comments/1ep1644/comment/lxra5co/"
             target="_blank"
             rel="noopener noreferrer"
-            className="block bg-white border border-gray-200 rounded-xl p-6 hover:border-gray-300 transition-colors"
+            className="block bg-gray-50 border border-gray-200 rounded-xl p-6 hover:border-gray-300 transition-colors"
           >
             <p className="text-gray-800 mb-3">&quot;Used this to help me study. Passed today! Thank you :)&quot;</p>
             <p className="text-gray-500 text-sm">u/Naive_Usual1910</p>
           </a>
 
-          <div className="bg-white border border-gray-200 rounded-xl p-6">
+          <div className="bg-gray-50 border border-gray-200 rounded-xl p-6">
             <p className="text-gray-800 mb-3">&quot;passed within seven minutes&quot;</p>
             <p className="text-gray-500 text-sm">vivacious-vi</p>
           </div>
 
-          <div className="bg-white border border-gray-200 rounded-xl p-6">
+          <div className="bg-gray-50 border border-gray-200 rounded-xl p-6">
             <p className="text-gray-800 mb-3">&quot;it was very helpful... I passed the written test this morning&quot;</p>
             <p className="text-gray-500 text-sm">ideapad101</p>
           </div>
 
-          <div className="bg-white border border-gray-200 rounded-xl p-6">
+          <div className="bg-gray-50 border border-gray-200 rounded-xl p-6">
             <p className="text-gray-800 mb-3">&quot;helped a lot&quot;</p>
             <p className="text-gray-500 text-sm">WorthEducational523</p>
           </div>
@@ -352,13 +352,13 @@ export default function Home() {
             href="https://www.reddit.com/r/driving/comments/1ep1644/comment/m6ndsvp/"
             target="_blank"
             rel="noopener noreferrer"
-            className="block bg-white border border-gray-200 rounded-xl p-6 hover:border-gray-300 transition-colors"
+            className="block bg-gray-50 border border-gray-200 rounded-xl p-6 hover:border-gray-300 transition-colors"
           >
             <p className="text-gray-800 mb-3">&quot;i passed in 3 minutes&quot;</p>
             <p className="text-gray-500 text-sm">u/Curdled_Cave</p>
           </a>
 
-          <div className="bg-white border border-gray-200 rounded-xl p-6">
+          <div className="bg-gray-50 border border-gray-200 rounded-xl p-6">
             <p className="text-gray-800 mb-3">&quot;felt confident after just studying the previous day&quot;</p>
             <p className="text-gray-500 text-sm">JayjayX12</p>
           </div>

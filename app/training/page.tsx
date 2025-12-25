@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, CheckCircle2 } from "lucide-react";
 import { useStore } from "@/store/useStore";
-import { getTrainingQuestion, getTrainingSetQuestions, getNextTrainingSetQuestion } from "@/lib/testGenerator";
+import { getTrainingQuestion, getNextTrainingSetQuestion, shuffleQuestionOptions } from "@/lib/testGenerator";
 import { Question } from "@/types";
 import { useHydration } from "@/hooks/useHydration";
 import { useSound } from "@/hooks/useSound";
@@ -102,6 +102,12 @@ function TrainingPageContent() {
       if (!question) {
         setShowSetComplete(true);
         return;
+      }
+
+      // If this question was previously answered wrong, shuffle the options
+      // so users can't just memorize the slot position
+      if (currentSetData.wrongQueue.includes(question.questionId)) {
+        question = shuffleQuestionOptions(question);
       }
     } else {
       // Onboarding mode: random questions

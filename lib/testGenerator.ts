@@ -11,6 +11,33 @@ function shuffle<T>(array: T[]): T[] {
   return shuffled;
 }
 
+// Shuffle the answer options for a question (returns new question with shuffled options)
+export function shuffleQuestionOptions(question: Question): Question {
+  const options = [
+    { letter: 'A', text: question.optionA },
+    { letter: 'B', text: question.optionB },
+    { letter: 'C', text: question.optionC },
+    { letter: 'D', text: question.optionD },
+  ];
+
+  const shuffled = shuffle(options);
+
+  // Find new position of correct answer
+  const correctOptionText = question[`option${question.correctAnswer}` as keyof Question] as string;
+  const newCorrectIndex = shuffled.findIndex(opt => opt.text === correctOptionText);
+  const newCorrectLetter = ['A', 'B', 'C', 'D'][newCorrectIndex];
+
+  return {
+    ...question,
+    optionA: shuffled[0].text,
+    optionB: shuffled[1].text,
+    optionC: shuffled[2].text,
+    optionD: shuffled[3].text,
+    correctAnswer: newCorrectLetter,
+    correctIndex: newCorrectIndex,
+  };
+}
+
 // Get questions for a specific test
 // Each test has a FIXED set of questions, but the order is randomized on each attempt
 export function generateTest(testNumber: number, state: string): Question[] {

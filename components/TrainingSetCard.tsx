@@ -20,12 +20,12 @@ export function TrainingSetCard({ set, locked = false }: TrainingSetCardProps) {
   const progress = Math.min(100, Math.round((set.correctCount / set.targetCount) * 100));
 
   const getProgressBadgeColor = () => {
-    // Gradient from red (0%) to green (100%)
-    if (progress < 20) return "bg-red-500 hover:bg-red-500";
-    if (progress < 40) return "bg-orange-500 hover:bg-orange-500";
-    if (progress < 60) return "bg-yellow-500 hover:bg-yellow-500";
-    if (progress < 80) return "bg-lime-500 hover:bg-lime-500";
-    return "bg-green-500 hover:bg-green-500";
+    // Gradient from red (0%) to green (100%) - pastel shades
+    if (progress < 20) return "bg-red-400 hover:bg-red-400";
+    if (progress < 40) return "bg-orange-400 hover:bg-orange-400";
+    if (progress < 60) return "bg-amber-400 hover:bg-amber-400";
+    if (progress < 80) return "bg-lime-400 hover:bg-lime-400";
+    return "bg-emerald-400 hover:bg-emerald-400";
   };
 
   const getBadge = () => {
@@ -33,7 +33,7 @@ export function TrainingSetCard({ set, locked = false }: TrainingSetCardProps) {
       return <Badge variant="outline" className="bg-gray-100 hover:bg-gray-100 text-xs">Locked</Badge>;
     }
     if (isComplete) {
-      return <Badge className="bg-green-500 hover:bg-green-500 text-xs">Complete</Badge>;
+      return <Badge className="bg-emerald-400 hover:bg-emerald-400 text-xs">Complete</Badge>;
     }
     if (set.correctCount > 0) {
       return <Badge className={`${getProgressBadgeColor()} text-xs`}>{progress}%</Badge>;

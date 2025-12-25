@@ -384,10 +384,16 @@ export const useStore = create<AppState>()(
       },
 
       getTrainingSetProgress: (setId: number) => {
-        const { trainingSets } = get();
+        const { trainingSets, training } = get();
         const setData = trainingSets[setId] || { masteredIds: [] };
-        const correct = setData.masteredIds.length;
+        let correct = setData.masteredIds.length;
         const total = 50;
+
+        // For set 1, include onboarding progress if no set-specific progress yet
+        if (setId === 1 && correct === 0 && training.totalCorrectAllTime > 0) {
+          correct = Math.min(50, training.totalCorrectAllTime);
+        }
+
         return {
           correct,
           total,

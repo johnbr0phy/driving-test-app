@@ -1,7 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { getAdminDb } from '@/lib/firebase-admin';
-import { getAuth } from 'firebase-admin/auth';
-import { getApps } from 'firebase-admin/app';
+import { getAdminDb, getAdminAuth } from '@/lib/firebase-admin';
 import { isAdminEmail } from '@/lib/admin';
 
 export async function GET(request: NextRequest) {
@@ -15,8 +13,7 @@ export async function GET(request: NextRequest) {
     const idToken = authHeader.split('Bearer ')[1];
 
     // Verify the token and check if user is admin
-    const app = getApps()[0];
-    const auth = getAuth(app);
+    const auth = getAdminAuth();
 
     let decodedToken;
     try {

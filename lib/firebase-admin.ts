@@ -1,5 +1,6 @@
 import { initializeApp, getApps, cert, App } from 'firebase-admin/app';
 import { getFirestore, Firestore } from 'firebase-admin/firestore';
+import { getAuth, Auth } from 'firebase-admin/auth';
 
 // Initialize Firebase Admin SDK
 // Uses FIREBASE_SERVICE_ACCOUNT_KEY environment variable (JSON string)
@@ -7,6 +8,7 @@ import { getFirestore, Firestore } from 'firebase-admin/firestore';
 
 let firebaseAdminApp: App | null = null;
 let firestoreDb: Firestore | null = null;
+let adminAuth: Auth | null = null;
 
 function initializeFirebaseAdmin(): App {
   if (getApps().length > 0) {
@@ -34,12 +36,23 @@ function initializeFirebaseAdmin(): App {
   });
 }
 
+function getAdminApp(): App {
+  if (!firebaseAdminApp) {
+    firebaseAdminApp = initializeFirebaseAdmin();
+  }
+  return firebaseAdminApp;
+}
+
 export function getAdminDb(): Firestore {
   if (!firestoreDb) {
-    if (!firebaseAdminApp) {
-      firebaseAdminApp = initializeFirebaseAdmin();
-    }
-    firestoreDb = getFirestore(firebaseAdminApp);
+    firestoreDb = getFirestore(getAdminApp());
   }
   return firestoreDb;
+}
+
+export function getAdminAuth(): Auth {
+  if (!adminAuth) {
+    adminAuth = getAuth(getAdminApp());
+  }
+  return adminAuth;
 }

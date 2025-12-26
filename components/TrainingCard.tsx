@@ -2,6 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { CheckCircle2, XCircle } from "lucide-react";
 import { Question } from "@/types";
+import { useState, useEffect } from "react";
 
 interface TrainingCardProps {
   question: Question;
@@ -16,6 +17,16 @@ export function TrainingCard({
   onAnswerSelect,
   onNext,
 }: TrainingCardProps) {
+  // Prevent ghost clicks on mobile: when tapping "Next Question", the delayed
+  // click event can fire on the new question's answer options. We disable
+  // answer selection briefly after component mounts to prevent this.
+  const [isReady, setIsReady] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setIsReady(true), 300);
+    return () => clearTimeout(timer);
+  }, []);
+
   const answered = selectedAnswer !== null;
   const isCorrect = selectedAnswer === question.correctAnswer;
 
@@ -28,6 +39,9 @@ export function TrainingCard({
 
   const getOptionClasses = (optionLetter: string) => {
     if (!answered) {
+      if (!isReady) {
+        return "border-gray-300";
+      }
       return "border-gray-300 hover:border-orange-500 hover:bg-orange-50 cursor-pointer";
     }
 
@@ -53,7 +67,7 @@ export function TrainingCard({
           {options.map((option) => (
             <div
               key={option.letter}
-              onClick={() => !answered && onAnswerSelect(option.letter)}
+              onClick={() => isReady && !answered && onAnswerSelect(option.letter)}
               className={`border-2 rounded-lg p-3 md:p-4 transition-all ${getOptionClasses(option.letter)}`}
             >
               <div className="flex items-center gap-2 md:gap-3">

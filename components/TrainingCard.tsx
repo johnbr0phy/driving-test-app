@@ -42,7 +42,9 @@ export function TrainingCard({
       if (!isReady) {
         return "border-gray-300";
       }
-      return "border-gray-300 hover:border-orange-500 hover:bg-orange-50 cursor-pointer";
+      // Use [@media(hover:hover)] to prevent sticky hover states on touch devices
+      // Use active: for touch feedback on mobile
+      return "border-gray-300 [@media(hover:hover)]:hover:border-orange-500 [@media(hover:hover)]:hover:bg-orange-50 active:border-orange-500 active:bg-orange-50 cursor-pointer";
     }
 
     if (optionLetter === question.correctAnswer) {

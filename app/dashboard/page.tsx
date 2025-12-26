@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { TestCard } from "@/components/TestCard";
 import { TrainingSetCard, TrainingSet } from "@/components/TrainingSetCard";
 import { Card, CardContent } from "@/components/ui/card";
-import { Lock, BarChart3, Zap } from "lucide-react";
+import { Lock, BarChart3, Zap, ChevronRight } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { useStore } from "@/store/useStore";
@@ -121,6 +121,7 @@ export default function DashboardPage() {
                       {10 - onboardingProgress} more to unlock training & tests
                     </p>
                   </div>
+                  <ChevronRight className="h-6 w-6 text-orange-400 sm:hidden" />
                 </div>
               </CardContent>
             </Card>
@@ -180,6 +181,15 @@ export default function DashboardPage() {
                       </p>
                       <p className="text-sm text-gray-500 mt-1">Tap to see detailed stats</p>
                     </div>
+                    <ChevronRight className={`h-6 w-6 sm:hidden ${
+                      passProbability === 0
+                        ? "text-gray-400"
+                        : passProbability >= 80
+                          ? "text-green-400"
+                          : passProbability >= 60
+                            ? "text-orange-400"
+                            : "text-red-400"
+                    }`} />
                   </div>
                 </CardContent>
               </Card>

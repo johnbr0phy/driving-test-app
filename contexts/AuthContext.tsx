@@ -133,11 +133,9 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const signup = async (email: string, password: string) => {
     const userCredential = await createUserWithEmailAndPassword(auth, email, password);
 
-    // Send verification email (acts as welcome email with link back to app)
+    // Send verification email (acts as welcome email)
     if (userCredential.user) {
-      sendEmailVerification(userCredential.user, {
-        url: 'https://tigertest.io/dashboard',
-      }).catch(err => console.error('Failed to send verification email:', err));
+      sendEmailVerification(userCredential.user).catch(err => console.error('Failed to send verification email:', err));
     }
   };
 
@@ -162,11 +160,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   };
 
   const resetPassword = async (email: string) => {
-    const actionCodeSettings = {
-      url: 'https://tigertest.io/login',
-      handleCodeInApp: false,
-    };
-    await sendPasswordResetEmail(auth, email, actionCodeSettings);
+    await sendPasswordResetEmail(auth, email);
   };
 
   const value = {

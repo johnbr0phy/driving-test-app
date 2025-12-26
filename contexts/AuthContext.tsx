@@ -10,6 +10,7 @@ import {
   GoogleAuthProvider,
   signInWithPopup,
   sendPasswordResetEmail,
+  sendEmailVerification,
 } from "firebase/auth";
 import { auth } from "@/lib/firebase";
 import { useStore } from "@/store/useStore";
@@ -130,18 +131,14 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   }, [loadUserData, setUserId, setPhotoURL, photoURL, convertGuestToUser, checkUserHasData]);
 
   const signup = async (email: string, password: string) => {
-    await createUserWithEmailAndPassword(auth, email, password);
+    const userCredential = await createUserWithEmailAndPassword(auth, email, password);
 
-    // Send welcome email (fire and forget - don't block signup)
-    console.log('Sending welcome email to:', email);
-    fetch('/api/send-welcome-email', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email }),
-    })
-      .then(res => res.json())
-      .then(data => console.log('Welcome email response:', data))
-      .catch(err => console.error('Failed to send welcome email:', err));
+    // Send verification email (acts as welcome email with link back to app)
+    if (userCredential.user) {
+      sendEmailVerification(userCredential.user, {
+        url: 'https://tigertest.io/dashboard',
+      }).catch(err => console.error('Failed to send verification email:', err));
+    }
   };
 
   const login = async (email: string, password: string) => {
@@ -150,27 +147,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
   const loginWithGoogle = async () => {
     const provider = new GoogleAuthProvider();
-    const result = await signInWithPopup(auth, provider);
-
-    // Check if this is a new user (created within last minute)
-    const creationTime = result.user.metadata.creationTime;
-    if (creationTime) {
-      const createdAt = new Date(creationTime).getTime();
-      const now = Date.now();
-      const isNewUser = now - createdAt < 60000; // Within last minute
-
-      if (isNewUser && result.user.email) {
-        // Send welcome email (fire and forget)
-        fetch('/api/send-welcome-email', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            email: result.user.email,
-            name: result.user.displayName,
-          }),
-        }).catch(err => console.error('Failed to send welcome email:', err));
-      }
-    }
+    await signInWithPopup(auth, provider);
+    // Google users' emails are already verified by Google, no need for verification email
   };
 
   const logout = async () => {

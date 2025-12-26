@@ -12,10 +12,14 @@ function getResend() {
 }
 
 export async function POST(request: NextRequest) {
+  console.log('Welcome email API called');
+
   try {
     const { email, name } = await request.json();
+    console.log('Welcome email request for:', email);
 
     if (!email) {
+      console.error('No email provided');
       return NextResponse.json({ error: 'Email is required' }, { status: 400 });
     }
 
@@ -26,6 +30,8 @@ export async function POST(request: NextRequest) {
         error: 'Server configuration error. Please contact support.'
       }, { status: 500 });
     }
+
+    console.log('RESEND_API_KEY is configured, sending email...');
 
     const firstName = name?.split(' ')[0] || 'there';
 
@@ -92,6 +98,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: error.message }, { status: 500 });
     }
 
+    console.log('Welcome email sent successfully to:', email, 'Response:', data);
     return NextResponse.json({ success: true, data });
   } catch (error) {
     console.error('Welcome email error:', error);

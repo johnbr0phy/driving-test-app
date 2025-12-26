@@ -133,11 +133,15 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     await createUserWithEmailAndPassword(auth, email, password);
 
     // Send welcome email (fire and forget - don't block signup)
+    console.log('Sending welcome email to:', email);
     fetch('/api/send-welcome-email', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email }),
-    }).catch(err => console.error('Failed to send welcome email:', err));
+    })
+      .then(res => res.json())
+      .then(data => console.log('Welcome email response:', data))
+      .catch(err => console.error('Failed to send welcome email:', err));
   };
 
   const login = async (email: string, password: string) => {

@@ -26,28 +26,27 @@ export async function GET(request: NextRequest) {
       return NextResponse.json({ error: 'Forbidden' }, { status: 403 });
     }
 
-    // Fetch all users from Firestore
+    // Fetch all users from Firebase Auth (primary source of truth for accounts)
+    const authUsers = await auth.listUsers(1000);
+
+    // Fetch all users from Firestore to get activity data
     const db = getAdminDb();
     const usersSnapshot = await db.collection('users').get();
-
-    // Get Auth users to get emails
-    const authUsers = await auth.listUsers(1000);
-    const authUserMap = new Map(
-      authUsers.users.map(u => [u.uid, { email: u.email, createdAt: u.metadata.creationTime }])
+    const firestoreUserMap = new Map(
+      usersSnapshot.docs.map(doc => [doc.id, doc.data()])
     );
 
-    // Combine Firestore and Auth data
-    const users = usersSnapshot.docs.map(doc => {
-      const data = doc.data();
-      const authData = authUserMap.get(doc.id);
+    // Combine Auth and Firestore data - iterate through Auth users to include all accounts
+    const users = authUsers.users.map(authUser => {
+      const firestoreData = firestoreUserMap.get(authUser.uid);
       return {
-        uid: doc.id,
-        email: authData?.email || 'Unknown',
-        selectedState: data.selectedState || null,
-        lastUpdated: data.lastUpdated || null,
-        createdAt: authData?.createdAt || null,
-        testsCompleted: data.completedTests?.length || 0,
-        trainingProgress: data.training?.totalCorrectAllTime || 0,
+        uid: authUser.uid,
+        email: authUser.email || 'Unknown',
+        selectedState: firestoreData?.selectedState || null,
+        lastUpdated: firestoreData?.lastUpdated || null,
+        createdAt: authUser.metadata.creationTime || null,
+        testsCompleted: firestoreData?.completedTests?.length || 0,
+        trainingProgress: firestoreData?.training?.totalCorrectAllTime || 0,
       };
     });
 

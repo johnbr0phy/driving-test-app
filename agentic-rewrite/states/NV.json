@@ -5,7 +5,7 @@
     "category": "gdlLicensing",
     "question": "At what minimum age can you apply for a learner's permit in Nevada?",
     "answers": [
-      "15 and a half years old",
+      "15.5 years old",
       "16 years old",
       "15 years old",
       "14 years old"
@@ -18,10 +18,10 @@
     "category": "gdlLicensing",
     "question": "Who can supervise a learner's permit holder in Nevada?",
     "answers": [
-      "Any licensed driver over 18",
-      "Licensed driver 21 or older with at least 1 year experience",
+      "Any licensed driver over age 18",
+      "Licensed driver age 21+ with 1 yr exp",
       "Only certified driving instructors",
-      "Any family member with a license"
+      "Any family member with valid license"
     ],
     "correctIndex": 1
   },
@@ -31,10 +31,10 @@
     "category": "gdlLicensing",
     "question": "How many hours of supervised driving practice are required in Nevada before getting an intermediate license?",
     "answers": [
-      "30 hours total",
-      "100 hours total",
-      "50 hours with 10 at night",
-      "40 hours with 5 at night"
+      "30 hours total practice",
+      "100 hours total practice",
+      "50 hours, 10 at night",
+      "40 hours, 5 at night"
     ],
     "correctIndex": 2
   },
@@ -57,10 +57,10 @@
     "category": "gdlLicensing",
     "question": "What is required during the 6-month permit period to qualify for an intermediate license in Nevada?",
     "answers": [
-      "No at-fault crashes, violations, or drug/alcohol offenses",
-      "Perfect attendance at school",
-      "Completion of advanced driving course",
-      "Monthly progress reports"
+      "No crashes, violations, alcohol/drug offenses",
+      "Perfect attendance at school or work location",
+      "Completion of advanced driving course program",
+      "Monthly progress reports to DMV office"
     ],
     "correctIndex": 0
   },
@@ -70,10 +70,10 @@
     "category": "gdlLicensing",
     "question": "What are the nighttime driving restrictions for intermediate license holders in Nevada?",
     "answers": [
-      "No driving after 11 PM",
-      "Cannot drive between 10 PM and 5 AM",
-      "Cannot drive between midnight and 6 AM",
-      "No nighttime restrictions"
+      "No driving after 11 PM only",
+      "Cannot drive 10 PM to 5 AM",
+      "Cannot drive midnight to 6 AM",
+      "No nighttime restrictions apply"
     ],
     "correctIndex": 1
   },
@@ -96,10 +96,10 @@
     "category": "gdlLicensing",
     "question": "What passenger restriction applies during the first 6 months of an intermediate license in Nevada?",
     "answers": [
-      "One passenger under 18",
-      "Two passengers maximum",
-      "Three passengers maximum",
-      "No passengers under 18 except immediate family"
+      "One passenger under age 18 only",
+      "Two passengers maximum total allowed",
+      "Three passengers maximum total allowed",
+      "No passengers under 18 except family"
     ],
     "correctIndex": 3
   },
@@ -122,10 +122,10 @@
     "category": "gdlLicensing",
     "question": "What alternative allows getting a full license before age 18 in Nevada?",
     "answers": [
-      "Completing advanced driver training",
-      "Holding intermediate license for 1 year with no violations",
-      "Passing an advanced road test",
-      "Parent or guardian approval"
+      "Completing advanced driver training course",
+      "Intermediate license 1 year with no violations",
+      "Passing an advanced road test successfully",
+      "Parent or guardian approval documentation"
     ],
     "correctIndex": 1
   },
@@ -135,9 +135,9 @@
     "category": "gdlLicensing",
     "question": "What documentation must drivers aged 14-17 provide when applying for a permit in Nevada?",
     "answers": [
-      "Employment verification",
-      "Parent consent only",
-      "Proof of school enrollment or graduation",
+      "Employment verification documents",
+      "Parent consent only required",
+      "School enrollment or graduation",
       "Character reference letters"
     ],
     "correctIndex": 2
@@ -149,9 +149,9 @@
     "question": "Where must the supervising driver be seated when a learner's permit holder is driving in Nevada?",
     "answers": [
       "Anywhere in the vehicle",
-      "Back seat for better observation",
-      "Either front seat",
-      "Front seat next to the driver"
+      "Back seat for observation",
+      "Either front seat position",
+      "Front seat next to driver"
     ],
     "correctIndex": 3
   },
@@ -161,9 +161,9 @@
     "category": "cellPhone",
     "question": "What does Nevada law prohibit regarding cell phone use while driving?",
     "answers": [
-      "Manually typing or holding phone",
-      "Only texting",
-      "Only video recording",
+      "Manually typing or holding",
+      "Only texting messages sent",
+      "Only video recording tasks",
       "Using Bluetooth devices"
     ],
     "correctIndex": 0
@@ -175,9 +175,9 @@
     "question": "Can you use voice-activated Bluetooth to make calls while driving in Nevada?",
     "answers": [
       "No, all phone use is banned",
-      "Yes, hands-free voice-activated use is allowed",
-      "Only with special permit",
-      "Only on highways"
+      "Yes, hands-free voice-activated",
+      "Only with special permit type",
+      "Only on highways are allowed"
     ],
     "correctIndex": 1
   },
@@ -188,8 +188,8 @@
     "question": "Is it legal to use a handheld phone at a stoplight in Nevada?",
     "answers": [
       "Yes, when stopped it's allowed",
-      "Only for GPS purposes",
-      "No, it's illegal even at stoplights",
+      "Only for GPS purposes allowed",
+      "No, illegal even at stoplights",
       "Yes, but only for emergencies"
     ],
     "correctIndex": 2
@@ -200,10 +200,10 @@
     "category": "cellPhone",
     "question": "Where can you mount your phone in your vehicle under Nevada law?",
     "answers": [
-      "Anywhere convenient",
-      "Only on the steering wheel",
-      "Cannot mount phones",
-      "Dashboard or windshield if it doesn't block view"
+      "Anywhere convenient for you to use",
+      "Only on the steering wheel position",
+      "Cannot mount phones at all legally",
+      "Dashboard/windshield not blocking view"
     ],
     "correctIndex": 3
   },
@@ -213,10 +213,10 @@
     "category": "cellPhone",
     "question": "When can you legally use a handheld phone to report an emergency while driving in Nevada?",
     "answers": [
-      "Anytime to report medical emergencies or criminal activity",
-      "Only when fully stopped",
-      "Only with police permission",
-      "Never while driving"
+      "Anytime for medical or criminal emergencies",
+      "Only when fully stopped completely on road",
+      "Only with police permission granted first",
+      "Never while driving at all on any road"
     ],
     "correctIndex": 0
   },
@@ -227,9 +227,9 @@
     "question": "How is Nevada's cell phone ban enforced?",
     "answers": [
       "Only after another violation occurs",
-      "Primary enforcement - can be stopped for this alone",
-      "Warning only for first offense",
-      "Self-reported violations only"
+      "Primary enforcement, stopped for this",
+      "Warning only for first offense occurs",
+      "Self-reported violations only allowed"
     ],
     "correctIndex": 1
   },
@@ -265,10 +265,10 @@
     "category": "duiStateLaws",
     "question": "What does Nevada's implied consent law require from drivers?",
     "answers": [
-      "Submit to chemical testing when lawfully arrested for DUI",
-      "Consent to vehicle searches",
-      "Agree to field sobriety tests only",
-      "Permission for GPS tracking"
+      "Submit to chemical testing when arrested for DUI",
+      "Consent to vehicle searches when requested",
+      "Agree to field sobriety tests only required",
+      "Permission for GPS tracking of vehicle"
     ],
     "correctIndex": 0
   },
@@ -278,10 +278,10 @@
     "category": "duiStateLaws",
     "question": "What is the consequence of refusing a chemical test for the first time in Nevada?",
     "answers": [
-      "No penalty",
+      "No penalty at all issued",
       "1-year license revocation",
-      "Warning only",
-      "6-month suspension"
+      "Warning only issued first",
+      "6-month suspension period"
     ],
     "correctIndex": 1
   },
@@ -304,7 +304,7 @@
     "category": "duiStateLaws",
     "question": "When does a DUI become a felony in Nevada?",
     "answers": [
-      "Second offense",
+      "Second offense only total",
       "First offense with injury",
       "Any offense with high BAC",
       "Third offense within 7 years"
@@ -317,10 +317,10 @@
     "category": "duiStateLaws",
     "question": "What additional requirement applies if your BAC is 0.18 or higher in Nevada?",
     "answers": [
-      "Mandatory drug and alcohol treatment program",
-      "Extended jail time only",
-      "Permanent license revocation",
-      "Community service only"
+      "Mandatory alcohol treatment program",
+      "Extended jail time only required",
+      "Permanent license revocation imposed",
+      "Community service only required"
     ],
     "correctIndex": 0
   },
@@ -330,10 +330,10 @@
     "category": "duiStateLaws",
     "question": "What can happen if you refuse chemical testing when arrested for DUI in Nevada?",
     "answers": [
-      "Only criminal penalties apply",
-      "License revocation regardless of DUI conviction outcome",
-      "No consequences unless convicted",
-      "Fine but no license impact"
+      "Only criminal penalties apply here total",
+      "License revocation regardless of conviction",
+      "No consequences unless convicted of DUI charge",
+      "Fine but no license impact occurs at all"
     ],
     "correctIndex": 1
   },
@@ -344,9 +344,9 @@
     "question": "What type of insurance system does Nevada use for auto accidents?",
     "answers": [
       "No-fault system",
-      "Hybrid system",
+      "Hybrid system type",
       "At-fault/tort system",
-      "Choice system"
+      "Choice system type"
     ],
     "correctIndex": 2
   },
@@ -356,10 +356,10 @@
     "category": "insurance",
     "question": "What does liability insurance primarily cover in Nevada?",
     "answers": [
-      "Your own vehicle damage",
-      "Your medical expenses",
-      "Rental car costs",
-      "Bodily injury and property damage you cause to others"
+      "Your own vehicle damage only",
+      "Your medical expenses incurred",
+      "Rental car costs for repairs",
+      "Injury and damage you cause others"
     ],
     "correctIndex": 3
   },
@@ -369,10 +369,10 @@
     "category": "insurance",
     "question": "Where must you keep proof of insurance in Nevada?",
     "answers": [
-      "In vehicle or on mobile device",
-      "Only at home",
-      "At DMV office only",
-      "Not required to carry it"
+      "In vehicle or mobile device",
+      "Only at home residence",
+      "At DMV office only location",
+      "Not required to carry at all"
     ],
     "correctIndex": 0
   },
@@ -382,10 +382,10 @@
     "category": "insurance",
     "question": "What is Nevada's policy on insurance coverage lapses?",
     "answers": [
-      "7-day grace period allowed",
-      "No grace period - even 1 day can cause suspension",
-      "30-day grace period",
-      "Grace period only for first lapse"
+      "7-day grace period allowed for all",
+      "No grace period, 1 day causes suspension",
+      "30-day grace period allowed for all",
+      "Grace period only for first lapse ever"
     ],
     "correctIndex": 1
   },
@@ -395,10 +395,10 @@
     "category": "stateUnique",
     "question": "When are headlights required in Nevada?",
     "answers": [
-      "Only at night",
-      "Only in bad weather",
-      "30 minutes after sunset to 30 minutes before sunrise and limited visibility",
-      "Only on highways"
+      "Only at night time driving on roads",
+      "Only in bad weather conditions present",
+      "Sunset/sunrise +/-30 min, low visibility",
+      "Only on highways and freeways present"
     ],
     "correctIndex": 2
   },
@@ -422,8 +422,8 @@
     "question": "What must you do when approaching a stopped emergency vehicle in Nevada?",
     "answers": [
       "Slow down and move over if possible",
-      "Stop completely",
-      "Sound horn to alert them",
+      "Stop completely behind them",
+      "Sound horn to alert them first",
       "Maintain speed and stay in lane"
     ],
     "correctIndex": 0
@@ -434,10 +434,10 @@
     "category": "stateUnique",
     "question": "Which vehicles are now included in Nevada's Move-Over Law?",
     "answers": [
-      "Only police cars",
-      "Emergency vehicles and tow trucks with blue lights",
-      "Fire trucks only",
-      "Ambulances only"
+      "Only police cars on duty responding now here",
+      "Emergency vehicles, tow trucks with blue lights",
+      "Fire trucks only on scene responding now here",
+      "Ambulances only on duty responding now here"
     ],
     "correctIndex": 1
   },
@@ -447,10 +447,10 @@
     "category": "stateUnique",
     "question": "When must you stop for a school bus with flashing red lights in Nevada?",
     "answers": [
-      "Only if directly behind it",
-      "Only on two-lane roads",
-      "Always except on divided highways when bus is on opposite roadway",
-      "Never required to stop"
+      "Only if directly behind it traveling now",
+      "Only on two-lane roads specifically marked",
+      "Always except divided highways, opposite side",
+      "Never required to stop for buses at all"
     ],
     "correctIndex": 2
   },
@@ -460,10 +460,10 @@
     "category": "stateUnique",
     "question": "What technology can Nevada school buses now use to enforce traffic laws?",
     "answers": [
-      "Speed cameras only",
-      "GPS tracking",
-      "Audio recording",
-      "Infraction detection systems for illegal passing"
+      "Speed cameras only allowed by law",
+      "GPS tracking systems only allowed",
+      "Audio recording devices only allowed",
+      "Infraction detection for illegal passing"
     ],
     "correctIndex": 3
   },
@@ -486,10 +486,10 @@
     "category": "stateUnique",
     "question": "Starting July 1, 2028, when will headlights be required in Nevada?",
     "answers": [
-      "Only during rain",
+      "Only during rain conditions present",
       "At all times on two-lane rural highways",
-      "Only in tunnels",
-      "Only for commercial vehicles"
+      "Only in tunnels and underpasses found",
+      "Only for commercial vehicles driving now"
     ],
     "correctIndex": 1
   },
@@ -499,10 +499,10 @@
     "category": "stateUnique",
     "question": "When must you have headlights on based on visibility conditions in Nevada?",
     "answers": [
-      "When visibility is unlimited",
-      "Only in complete darkness",
-      "When unable to clearly see 1,000 feet ahead",
-      "Only in fog"
+      "When visibility is unlimited distance",
+      "Only in complete darkness conditions",
+      "When unable to see 1,000 feet ahead",
+      "Only in fog conditions present"
     ],
     "correctIndex": 2
   },

@@ -18,9 +18,9 @@
     "category": "gdlLicensing",
     "question": "Who can supervise a permit holder under age 16 in Missouri?",
     "answers": [
-      "Any licensed driver over 18",
-      "Qualified driver 25 or older with 3+ years license",
-      "Any family member with a license",
+      "Any licensed driver over age 18",
+      "Driver 25+ with 3+ yrs license",
+      "Any family member with valid license",
       "Only certified driving instructors"
     ],
     "correctIndex": 1
@@ -31,10 +31,10 @@
     "category": "gdlLicensing",
     "question": "How long must you hold an instruction permit before applying for an intermediate license in Missouri?",
     "answers": [
-      "90 days",
-      "One year",
-      "At least 182 days",
-      "120 days"
+      "At least 90 days",
+      "At least one year",
+      "182 days minimum",
+      "At least 120 days"
     ],
     "correctIndex": 2
   },
@@ -70,10 +70,10 @@
     "category": "gdlLicensing",
     "question": "How many hours of behind-the-wheel instruction are required to progress from permit to intermediate license in Missouri?",
     "answers": [
-      "30 hours total",
-      "40 hours with 10 nighttime",
+      "30 hours total practice",
+      "40 hrs with 10 nighttime",
       "50 hours with 15 nighttime",
-      "60 hours total"
+      "60 hours total practice"
     ],
     "correctIndex": 1
   },
@@ -96,10 +96,10 @@
     "category": "gdlLicensing",
     "question": "What are the exceptions to the nighttime driving restriction for intermediate license holders in Missouri?",
     "answers": [
-      "School sports only",
+      "School-related sports only",
       "Any recreational activities",
       "Social events with friends",
-      "Work, school events, or emergencies"
+      "Work, school, or emergencies"
     ],
     "correctIndex": 3
   },
@@ -135,10 +135,10 @@
     "category": "gdlLicensing",
     "question": "What must a teen demonstrate to be eligible for an intermediate license in Missouri?",
     "answers": [
-      "Only passing a road test",
-      "Completion of online course",
-      "No violations in past 6 months and practice hours",
-      "Parent approval only"
+      "Only passing a valid road test",
+      "Completion of online driver course",
+      "No violations past 6 mos + hours",
+      "Parent or guardian approval only"
     ],
     "correctIndex": 2
   },
@@ -148,10 +148,10 @@
     "category": "gdlLicensing",
     "question": "At what age can you bypass the GDL program and obtain a full license immediately in Missouri?",
     "answers": [
-      "17 years old",
-      "19 years old",
-      "21 years old",
-      "18 years old or older"
+      "At least 17 years",
+      "At least 19 years",
+      "At least 21 years",
+      "18 yrs or older"
     ],
     "correctIndex": 3
   },
@@ -161,9 +161,9 @@
     "category": "cellPhone",
     "question": "What does Missouri's Hands-Free Law prohibit while driving?",
     "answers": [
-      "Holding or supporting a device",
-      "Only texting",
-      "Only video calls",
+      "Holding or supporting device",
+      "Only texting text messages",
+      "Only video phone calls",
       "Using Bluetooth devices"
     ],
     "correctIndex": 0
@@ -174,9 +174,9 @@
     "category": "cellPhone",
     "question": "What phone functions are allowed while driving in Missouri?",
     "answers": [
-      "Handheld calls only",
-      "Voice-operated and hands-free features",
-      "Texting if brief",
+      "Handheld phone calls only",
+      "Voice-operated and hands-free",
+      "Texting if brief only",
       "Any use if experienced driver"
     ],
     "correctIndex": 1
@@ -200,10 +200,10 @@
     "category": "cellPhone",
     "question": "What video-related activity is prohibited while driving in Missouri?",
     "answers": [
-      "Viewing GPS maps",
-      "Using backup cameras",
+      "Viewing GPS navigation maps",
+      "Using backup cameras only",
       "Checking weather apps",
-      "Watching or recording videos"
+      "Watching or recording video"
     ],
     "correctIndex": 3
   },
@@ -265,10 +265,10 @@
     "category": "duiStateLaws",
     "question": "What does Missouri's implied consent law require?",
     "answers": [
-      "Agreement to BAC testing when suspected of DWI",
-      "Consent to vehicle searches",
-      "Waiver of legal rights",
-      "Permission for field sobriety only"
+      "Agreement to BAC test if suspected",
+      "Consent to vehicle searches always",
+      "Waiver of all legal rights",
+      "Permission for field sobriety tests only"
     ],
     "correctIndex": 0
   },
@@ -278,8 +278,8 @@
     "category": "duiStateLaws",
     "question": "What is the consequence of refusing a BAC test for the first time in Missouri?",
     "answers": [
-      "Warning only",
-      "One-year license revocation",
+      "Warning only first time",
+      "One-year revocation",
       "Automatic DWI conviction",
       "Court appearance required"
     ],
@@ -343,10 +343,10 @@
     "category": "insurance",
     "question": "What type of insurance system does Missouri follow?",
     "answers": [
-      "No-fault system",
-      "Hybrid system",
-      "At-fault/tort system",
-      "Choice system"
+      "No-fault insurance system",
+      "Hybrid insurance system",
+      "At-fault system",
+      "Choice insurance system"
     ],
     "correctIndex": 2
   },
@@ -356,10 +356,10 @@
     "category": "insurance",
     "question": "What does liability insurance primarily cover in Missouri?",
     "answers": [
-      "Your vehicle repairs",
-      "Your medical expenses",
-      "Rental car costs",
-      "Injuries and damage you cause to others"
+      "Your own vehicle damage repairs",
+      "Your own medical expenses",
+      "Rental car replacement costs",
+      "Injuries/damage you cause others"
     ],
     "correctIndex": 3
   },
@@ -369,10 +369,10 @@
     "category": "insurance",
     "question": "What additional coverage is required by Missouri law?",
     "answers": [
-      "Uninsured motorist coverage",
-      "Comprehensive coverage",
-      "Collision coverage",
-      "Gap insurance"
+      "Uninsured motorist",
+      "Comprehensive coverage always",
+      "Collision coverage always",
+      "Gap insurance coverage"
     ],
     "correctIndex": 0
   },
@@ -382,10 +382,10 @@
     "category": "insurance",
     "question": "When must you show proof of insurance in Missouri?",
     "answers": [
-      "Only if in an accident",
-      "When registering vehicle and if requested by officer",
-      "Only at annual inspection",
-      "Only when purchasing vehicle"
+      "Only if involved in an accident",
+      "Registration and if officer requests",
+      "Only at annual vehicle inspection",
+      "Only when purchasing any vehicle"
     ],
     "correctIndex": 1
   },
@@ -395,10 +395,10 @@
     "category": "stateUnique",
     "question": "When must you use headlights in Missouri?",
     "answers": [
-      "Only between sunset and sunrise",
-      "Only in rain or fog",
-      "When using windshield wipers or insufficient light",
-      "Only on highways at night"
+      "Only between sunset and sunrise times",
+      "Only in rain or fog conditions",
+      "With wipers or low visibility",
+      "Only on highways at night times"
     ],
     "correctIndex": 2
   },
@@ -409,9 +409,9 @@
     "question": "What does Missouri's Move Over Law require on multi-lane highways?",
     "answers": [
       "Honk when passing emergency vehicles",
-      "Flash headlights as warning",
-      "Stop completely",
-      "Change lanes away from stopped emergency vehicle"
+      "Flash headlights as warning signal",
+      "Stop completely and wait safely",
+      "Change lanes away from emergency veh"
     ],
     "correctIndex": 3
   },
@@ -434,10 +434,10 @@
     "category": "stateUnique",
     "question": "On a divided highway with a median, who must stop for a school bus in Missouri?",
     "answers": [
-      "All traffic in both directions",
-      "Only traffic in same direction as bus",
-      "Only traffic within 100 feet",
-      "No vehicles need to stop"
+      "All traffic in both directions stopped",
+      "Only traffic same direction as bus",
+      "Only traffic within 100 feet distance",
+      "No vehicles need to stop at all"
     ],
     "correctIndex": 1
   },
@@ -447,10 +447,10 @@
     "category": "stateUnique",
     "question": "When must school bus drivers activate flashing amber warning lights in rural areas of Missouri?",
     "answers": [
-      "100 feet before stopping",
-      "200 feet before stopping",
-      "At least 500 feet before stopping",
-      "1000 feet before stopping"
+      "At least 100 feet before stop",
+      "At least 200 feet before stop",
+      "At least 500 feet before stop",
+      "At least 1000 feet before stop"
     ],
     "correctIndex": 2
   },
@@ -460,10 +460,10 @@
     "category": "stateUnique",
     "question": "When are right turns on red allowed in Missouri?",
     "answers": [
-      "Never permitted",
-      "Only during daytime",
-      "Always without stopping",
-      "After full stop unless posted otherwise"
+      "Never permitted at all",
+      "Only during daytime hours",
+      "Always without stopping first",
+      "After full stop unless posted"
     ],
     "correctIndex": 3
   },
@@ -473,10 +473,10 @@
     "category": "stateUnique",
     "question": "What is Missouri's seat belt law enforcement type?",
     "answers": [
-      "Primary enforcement for all occupants",
-      "Secondary enforcement only",
+      "Primary enforcement all occupants",
+      "Secondary enforcement for all",
       "Primary for front seats only",
-      "No enforcement for adults"
+      "No enforcement for adults ever"
     ],
     "correctIndex": 0
   },
@@ -486,9 +486,9 @@
     "category": "stateUnique",
     "question": "What must you do if you cannot safely change lanes away from an emergency vehicle in Missouri?",
     "answers": [
-      "Stop completely",
-      "Slow down while maintaining safe speed",
-      "Flash hazard lights",
+      "Stop completely and wait",
+      "Slow down and maintain safe speed",
+      "Flash hazard lights immediately",
       "Honk to alert the emergency vehicle"
     ],
     "correctIndex": 1
@@ -500,9 +500,9 @@
     "question": "When are headlights required during fog in Missouri?",
     "answers": [
       "Only if visibility is severely reduced",
-      "Only if wipers are on",
+      "Only if windshield wipers are on",
       "Always during fog, even without wipers",
-      "Fog lights can replace headlights"
+      "Fog lights can replace headlights safely"
     ],
     "correctIndex": 2
   },

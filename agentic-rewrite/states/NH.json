@@ -5,10 +5,10 @@
     "category": "gdlLicensing",
     "question": "At what minimum age can you begin practicing driving in New Hampshire?",
     "answers": [
-      "15 and a half years old",
-      "16 years old",
-      "15 years old",
-      "14 years old"
+      "15½ years of age",
+      "16 years of age",
+      "15 years of age",
+      "14 years of age"
     ],
     "correctIndex": 0
   },
@@ -44,10 +44,10 @@
     "category": "gdlLicensing",
     "question": "How many supervised driving hours are required for drivers under 18 in New Hampshire?",
     "answers": [
-      "30 hours total",
-      "50 hours total",
-      "60 hours total",
-      "40 hours with 10 at night"
+      "30 total hours required",
+      "50 total hours required",
+      "60 total hours required",
+      "40 hours, 10 at night"
     ],
     "correctIndex": 3
   },
@@ -70,10 +70,10 @@
     "category": "gdlLicensing",
     "question": "What passenger restriction applies during the first six months of a youth operator license in New Hampshire?",
     "answers": [
-      "No passengers under 21 allowed",
-      "Only one non-family passenger under 25",
-      "No more than two passengers total",
-      "No passengers allowed at all"
+      "No passengers under 21 years",
+      "One non-family under 25 only",
+      "Two passengers maximum total",
+      "No passengers at all allowed"
     ],
     "correctIndex": 1
   },
@@ -96,10 +96,10 @@
     "category": "gdlLicensing",
     "question": "What must drivers under 18 complete before applying for a license in New Hampshire?",
     "answers": [
-      "Only a road test",
-      "Online course only",
-      "Defensive driving course",
-      "Approved driver education program"
+      "Road test requirement only",
+      "Online course requirement only",
+      "Defensive driving course required",
+      "Approved driver ed program"
     ],
     "correctIndex": 3
   },
@@ -135,10 +135,10 @@
     "category": "gdlLicensing",
     "question": "What documentation must drivers under 19 provide when applying for a permit in New Hampshire?",
     "answers": [
-      "Only birth certificate",
-      "Employment verification",
-      "Proof of school enrollment or graduation",
-      "Parental consent form only"
+      "Birth certificate document only",
+      "Employment verification document",
+      "School enrollment or graduation proof",
+      "Parental consent form document"
     ],
     "correctIndex": 2
   },
@@ -161,10 +161,10 @@
     "category": "cellPhone",
     "question": "What does New Hampshire's hands-free law prohibit while driving?",
     "answers": [
-      "Holding or supporting any electronic device",
-      "Only texting while driving",
-      "Only video recording",
-      "Using Bluetooth devices"
+      "Holding any electronic device",
+      "Texting while driving vehicles",
+      "Video recording while driving",
+      "Using any Bluetooth devices"
     ],
     "correctIndex": 0
   },
@@ -174,10 +174,10 @@
     "category": "cellPhone",
     "question": "How can drivers legally answer phone calls under New Hampshire's hands-free law?",
     "answers": [
-      "Brief handheld use allowed",
-      "Single touch or voice activation only",
-      "Not allowed while driving",
-      "Two-button press maximum"
+      "Brief handheld use is allowed",
+      "Single touch or voice command",
+      "Not allowed while driving at all",
+      "Two-button press maximum only"
     ],
     "correctIndex": 1
   },
@@ -226,9 +226,9 @@
     "category": "cellPhone",
     "question": "Can you use voice-to-text features while driving in New Hampshire?",
     "answers": [
-      "Never allowed",
-      "Yes, if entirely voice-operated",
-      "Only on highways",
+      "Never allowed while driving",
+      "Yes, if voice-operated only",
+      "Only on highways allowed",
       "Only with passenger present"
     ],
     "correctIndex": 1
@@ -265,10 +265,10 @@
     "category": "duiStateLaws",
     "question": "What does implied consent mean for New Hampshire drivers?",
     "answers": [
-      "Agreement to BAC testing when lawfully stopped",
-      "Permission to search vehicle",
-      "Consent to field sobriety only",
-      "Waiver of legal representation"
+      "Agreement to BAC testing if stopped",
+      "Permission to search vehicle fully",
+      "Consent to field sobriety tests only",
+      "Waiver of all legal representation"
     ],
     "correctIndex": 0
   },
@@ -291,10 +291,10 @@
     "category": "duiStateLaws",
     "question": "How long can an under-21 driver lose their license for refusing a BAC test in New Hampshire?",
     "answers": [
-      "90 days",
-      "One year",
+      "90 days suspension",
+      "One year suspension",
       "Up to two years",
-      "Six months"
+      "Six months suspension"
     ],
     "correctIndex": 2
   },
@@ -304,10 +304,10 @@
     "category": "duiStateLaws",
     "question": "Can prosecutors use your refusal to take a BAC test as evidence in court in New Hampshire?",
     "answers": [
-      "Only in civil cases",
-      "Never allowed",
-      "Only for second offenses",
-      "Yes, refusal can be used at trial"
+      "Only in civil court cases",
+      "Never allowed as evidence",
+      "Only for second offense cases",
+      "Yes, refusal is admissible"
     ],
     "correctIndex": 3
   },
@@ -319,8 +319,8 @@
     "answers": [
       "Ignition interlock device",
       "Ankle monitoring device",
-      "Breathalyzer watch",
-      "Dashboard camera"
+      "Breathalyzer watch device",
+      "Dashboard camera device"
     ],
     "correctIndex": 0
   },
@@ -330,10 +330,10 @@
     "category": "duiStateLaws",
     "question": "What happens if a driver under 21 has a BAC between 0.02% and 0.08% in New Hampshire?",
     "answers": [
-      "Warning only for first offense",
-      "Same penalties as standard DWI",
+      "Warning only for the first offense",
+      "Same penalties as any standard DWI",
       "Longer suspension than over-21 drivers",
-      "Suspension and standard DWI penalties apply"
+      "Suspension and standard DWI penalties"
     ],
     "correctIndex": 3
   },
@@ -356,10 +356,10 @@
     "category": "insurance",
     "question": "What must uninsured drivers in New Hampshire prove after an accident?",
     "answers": [
-      "Vehicle ownership only",
-      "Financial ability to cover damages",
-      "Employment status",
-      "Residency in state"
+      "Vehicle ownership documentation",
+      "Ability to cover damages",
+      "Employment status verification",
+      "Residency in state proof"
     ],
     "correctIndex": 1
   },
@@ -396,9 +396,9 @@
     "question": "What must drivers do when approaching emergency vehicles in New Hampshire?",
     "answers": [
       "Move over or slow down",
-      "Stop completely",
-      "Flash headlights",
-      "Honk horn twice"
+      "Stop completely immediately",
+      "Flash your headlights",
+      "Honk your horn twice"
     ],
     "correctIndex": 0
   },
@@ -408,10 +408,10 @@
     "category": "stateUnique",
     "question": "When must you stop for a school bus in New Hampshire?",
     "answers": [
-      "Only if directly behind",
+      "Only when directly behind bus",
       "Only on two-lane roads",
-      "Only during school hours",
-      "From all directions except divided highways"
+      "Only during regular school hours",
+      "All directions, not divided hwys"
     ],
     "correctIndex": 3
   },
@@ -434,9 +434,9 @@
     "category": "stateUnique",
     "question": "Are right turns on red allowed in New Hampshire?",
     "answers": [
-      "Never permitted",
-      "Yes, after a full stop unless prohibited",
-      "Only on highways",
+      "Never permitted anywhere",
+      "Yes, after stop if allowed",
+      "Only on highways allowed",
       "Only during off-peak hours"
     ],
     "correctIndex": 1
@@ -461,9 +461,9 @@
     "question": "What is required for motorcycle riders under 18 in New Hampshire?",
     "answers": [
       "Parental supervision only",
-      "Daytime riding only",
-      "Reflective vest",
-      "Approved protective headgear"
+      "Daytime riding restriction",
+      "Reflective safety vest",
+      "Approved helmet required"
     ],
     "correctIndex": 3
   },
@@ -487,9 +487,9 @@
     "question": "When should you dim your headlights in New Hampshire?",
     "answers": [
       "Only in residential areas",
-      "When meeting oncoming vehicles or bicyclists",
-      "Only during rain",
-      "Never required"
+      "When meeting oncoming cars",
+      "Only during rainy weather",
+      "Never legally required"
     ],
     "correctIndex": 1
   },
@@ -500,8 +500,8 @@
     "question": "What new rule applies to bicyclists at red lights in New Hampshire as of 2025?",
     "answers": [
       "Must wait for green light",
-      "Can turn right only",
-      "May treat red lights as yield signs",
+      "Can turn right only allowed",
+      "May treat red as yield sign",
       "May proceed after 2 minutes"
     ],
     "correctIndex": 2

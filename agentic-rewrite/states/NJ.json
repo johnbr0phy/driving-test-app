@@ -18,8 +18,8 @@
     "category": "gdlLicensing",
     "question": "Who can supervise a learner's permit holder in New Jersey?",
     "answers": [
-      "Any licensed driver over 18",
-      "Licensed driver 21 or older with 3 years experience",
+      "Any licensed driver over age 18",
+      "Licensed driver 21+ with 3 yrs exp",
       "Only certified driving instructors",
       "Any family member with a license"
     ],
@@ -31,10 +31,10 @@
     "category": "gdlLicensing",
     "question": "How long must you hold a learner's permit before applying for a probationary license in New Jersey?",
     "answers": [
-      "3 months",
-      "1 year",
-      "At least 6 months",
-      "9 months"
+      "At least 3 months",
+      "At least 1 year",
+      "6 months minimum",
+      "At least 9 months"
     ],
     "correctIndex": 2
   },
@@ -57,10 +57,10 @@
     "category": "gdlLicensing",
     "question": "What happens if a probationary license holder violates GDL restrictions in New Jersey?",
     "answers": [
-      "May have to restart the provisional period",
-      "License permanently revoked",
+      "Must restart the provisional period",
+      "License will be permanently revoked",
       "Must restart from learner's permit",
-      "Criminal record is created"
+      "Criminal record will be created"
     ],
     "correctIndex": 0
   },
@@ -96,10 +96,10 @@
     "category": "gdlLicensing",
     "question": "What is required on license plates for permit and probationary drivers under 21 in New Jersey?",
     "answers": [
-      "Special colored plates",
+      "Special colored plates only",
       "Nothing additional required",
-      "Student driver sign",
-      "Reflectorized decals on front and back"
+      "Student driver sign required",
+      "Reflectorized decals front/back"
     ],
     "correctIndex": 3
   },
@@ -109,9 +109,9 @@
     "category": "gdlLicensing",
     "question": "How many hours of supervised practice driving are required for permits issued on or after February 1, 2025 in New Jersey?",
     "answers": [
-      "50 hours total, including 10 at night",
-      "30 hours total",
-      "100 hours total",
+      "50 hrs total, 10 at night",
+      "30 hours total required",
+      "100 hours total required",
       "No specific requirement"
     ],
     "correctIndex": 0
@@ -122,10 +122,10 @@
     "category": "gdlLicensing",
     "question": "What exception allows probationary drivers to drive during curfew hours in New Jersey?",
     "answers": [
-      "Social events only",
-      "Work, school events, religious activities, or emergencies",
-      "Any time with passengers",
-      "No exceptions exist"
+      "Social events only allowed",
+      "Work, school, religious, emergency",
+      "Any time with passengers here",
+      "No exceptions are allowed here"
     ],
     "correctIndex": 1
   },
@@ -161,10 +161,10 @@
     "category": "cellPhone",
     "question": "What does New Jersey's hands-free law prohibit while driving?",
     "answers": [
-      "Physically holding or using a wireless device",
-      "Only texting",
-      "Only video recording",
-      "Using Bluetooth devices"
+      "Holding or using wireless device",
+      "Only texting messages sent here",
+      "Only video recording done here",
+      "Using Bluetooth devices here"
     ],
     "correctIndex": 0
   },
@@ -175,9 +175,9 @@
     "question": "Can drivers over 21 use hands-free devices for phone calls while driving in New Jersey?",
     "answers": [
       "No, all phone use is banned",
-      "Yes, hands-free devices are allowed",
-      "Only on highways",
-      "Only in emergencies"
+      "Yes, hands-free are allowed",
+      "Only on highways allowed",
+      "Only in emergencies allowed"
     ],
     "correctIndex": 1
   },
@@ -189,8 +189,8 @@
     "answers": [
       "Hands-free calls only",
       "Voice-activated texting",
-      "None, all phone use is prohibited",
-      "GPS navigation only"
+      "None, all use prohibited",
+      "GPS navigation only allowed"
     ],
     "correctIndex": 2
   },
@@ -214,9 +214,9 @@
     "question": "When can you legally use a handheld phone to call emergency services while driving in New Jersey?",
     "answers": [
       "To report emergencies or crimes",
-      "Only when fully stopped",
+      "Only when fully stopped first",
       "Never while vehicle is on",
-      "Only on secondary roads"
+      "Only on secondary roads allowed"
     ],
     "correctIndex": 0
   },
@@ -226,10 +226,10 @@
     "category": "cellPhone",
     "question": "What happens if a driver commits a third offense of using a handheld device while driving in New Jersey?",
     "answers": [
-      "Warning issued",
-      "Points added and possible license suspension",
-      "Community service only",
-      "Insurance increase only"
+      "Warning issued only here",
+      "Points added, possible suspension",
+      "Community service requirement here",
+      "Insurance increase only here"
     ],
     "correctIndex": 1
   },
@@ -265,10 +265,10 @@
     "category": "duiStateLaws",
     "question": "What does implied consent mean for New Jersey drivers?",
     "answers": [
-      "Agreement to chemical testing when driving",
+      "Agreement to chemical testing",
       "Permission to search vehicle",
       "Consent to field sobriety only",
-      "Waiver of attorney rights"
+      "Waiver of attorney rights provided"
     ],
     "correctIndex": 0
   },
@@ -278,7 +278,7 @@
     "category": "duiStateLaws",
     "question": "What device is required after every DWI conviction in New Jersey?",
     "answers": [
-      "Dashboard camera",
+      "Dashboard camera device",
       "Ignition interlock device",
       "GPS monitoring system",
       "Breathalyzer attachment"
@@ -291,10 +291,10 @@
     "category": "duiStateLaws",
     "question": "How long does a DWI conviction remain on your driving record in New Jersey?",
     "answers": [
-      "5 years",
-      "10 years",
-      "Permanently, cannot be expunged",
-      "Until age 65"
+      "5 years on record",
+      "10 years on record",
+      "Permanently on record",
+      "Until age 65 years"
     ],
     "correctIndex": 2
   },
@@ -304,10 +304,10 @@
     "category": "duiStateLaws",
     "question": "What happens if you refuse a breath test in New Jersey?",
     "answers": [
-      "No penalty",
+      "No penalty imposed here",
       "Warning for first refusal",
-      "Court appearance only",
-      "Serious administrative penalties"
+      "Court appearance only here",
+      "Administrative penalties"
     ],
     "correctIndex": 3
   },
@@ -317,10 +317,10 @@
     "category": "duiStateLaws",
     "question": "What program is required after a DWI conviction in New Jersey?",
     "answers": [
-      "Intoxicated Driver Resource Center program",
-      "Online traffic school only",
-      "Victim impact panel only",
-      "No program required"
+      "Intoxicated Driver Resource Ctr",
+      "Online traffic school only here",
+      "Victim impact panel only here",
+      "No program is required here"
     ],
     "correctIndex": 0
   },
@@ -343,9 +343,9 @@
     "category": "insurance",
     "question": "What type of insurance system does New Jersey use?",
     "answers": [
-      "Pure no-fault",
-      "Pure at-fault",
-      "Choice no-fault allowing drivers to select",
+      "Pure no-fault system",
+      "Pure at-fault system",
+      "Choice no-fault system",
       "Hybrid mandatory system"
     ],
     "correctIndex": 2
@@ -356,10 +356,10 @@
     "category": "insurance",
     "question": "What does Personal Injury Protection cover in New Jersey?",
     "answers": [
-      "Property damage only",
-      "Other drivers' injuries",
-      "Vehicle theft",
-      "Your medical expenses regardless of fault"
+      "Property damage only here",
+      "Other drivers' injuries here",
+      "Vehicle theft claims only",
+      "Your medical expenses, no-fault"
     ],
     "correctIndex": 3
   },
@@ -371,8 +371,8 @@
     "answers": [
       "Uninsured motorist coverage",
       "Comprehensive coverage",
-      "Collision coverage",
-      "Liability coverage"
+      "Collision coverage only",
+      "Liability coverage only"
     ],
     "correctIndex": 0
   },
@@ -395,10 +395,10 @@
     "category": "stateUnique",
     "question": "When must you turn on headlights in New Jersey?",
     "answers": [
-      "Only at night",
+      "Only at night time",
       "During rain only",
-      "When using windshield wipers",
-      "Only in fog"
+      "When using wipers",
+      "Only in fog conditions"
     ],
     "correctIndex": 2
   },
@@ -408,10 +408,10 @@
     "category": "stateUnique",
     "question": "What must you do when approaching a stationary emergency vehicle with flashing lights in New Jersey?",
     "answers": [
-      "Honk your horn",
-      "Stop completely",
+      "Honk your horn loudly",
+      "Stop completely first",
       "Flash your lights",
-      "Move over one lane or slow down"
+      "Move over or slow down"
     ],
     "correctIndex": 3
   },
@@ -422,9 +422,9 @@
     "question": "How far must you stop from a school bus with flashing red lights on a two-lane road in New Jersey?",
     "answers": [
       "At least 25 feet",
-      "10 feet",
-      "50 feet",
-      "100 feet"
+      "At least 10 feet",
+      "At least 50 feet",
+      "At least 100 feet"
     ],
     "correctIndex": 0
   },
@@ -434,10 +434,10 @@
     "category": "stateUnique",
     "question": "When can you pass a school bus with red flashing lights in New Jersey?",
     "answers": [
-      "Never permitted",
-      "Only when parked in front of school on same side at 10 mph or less",
-      "Anytime on divided highways",
-      "When no children are visible"
+      "Never permitted at all here",
+      "Parked at school, same side, 10 mph",
+      "Anytime on divided highways here",
+      "When no children are visible here"
     ],
     "correctIndex": 1
   },
@@ -460,10 +460,10 @@
     "category": "stateUnique",
     "question": "When are right turns on red allowed in New Jersey?",
     "answers": [
-      "Never permitted",
-      "Always without stopping",
-      "Only during daytime",
-      "After full stop unless posted otherwise"
+      "Never permitted at all",
+      "Always without stopping first",
+      "Only during daytime hours",
+      "After full stop unless posted"
     ],
     "correctIndex": 3
   },
@@ -473,10 +473,10 @@
     "category": "stateUnique",
     "question": "When must headlights be on based on time of day in New Jersey?",
     "answers": [
-      "Half hour after sunset to half hour before sunrise",
-      "Sunset to sunrise",
-      "One hour after sunset to one hour before sunrise",
-      "Only when completely dark"
+      "30 min after sunset to 30 min before sunrise",
+      "From sunset to sunrise only here now",
+      "1 hr after sunset to 1 hr before sunrise",
+      "Only when completely dark outside here"
     ],
     "correctIndex": 0
   },
@@ -486,7 +486,7 @@
     "category": "stateUnique",
     "question": "Why aren't daytime running lights sufficient when wipers are on in New Jersey?",
     "answers": [
-      "They're too dim",
+      "They're too dim always",
       "Tail lights are not activated",
       "They drain the battery",
       "They're illegal in New Jersey"
@@ -501,8 +501,8 @@
     "answers": [
       "Only in complete darkness",
       "When raining heavily",
-      "When you cannot see 500 feet ahead",
-      "Only in snowstorms"
+      "Cannot see 500 feet ahead",
+      "Only in snowstorms occurring"
     ],
     "correctIndex": 2
   },
@@ -513,8 +513,8 @@
     "question": "Is flashing headlights to warn other drivers about a speed trap legal in New Jersey?",
     "answers": [
       "Illegal and heavily fined",
-      "Legal only on highways",
-      "Requires police permission",
+      "Legal only on highways only",
+      "Requires police permission here",
       "Legal, not prohibited by statute"
     ],
     "correctIndex": 3

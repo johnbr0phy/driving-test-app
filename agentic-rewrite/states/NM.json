@@ -18,9 +18,9 @@
     "category": "gdlLicensing",
     "question": "Who can supervise a driver with an instructional permit in New Mexico?",
     "answers": [
-      "Any licensed driver over 18",
-      "Licensed driver 21 or older with 3 years experience",
-      "Any family member with a license",
+      "Any licensed driver over age 18",
+      "Driver 21+ with 3 yrs experience",
+      "Any family member with license",
       "Only certified driving instructors"
     ],
     "correctIndex": 1
@@ -31,10 +31,10 @@
     "category": "gdlLicensing",
     "question": "How long must you hold an instructional permit before applying for a provisional license in New Mexico?",
     "answers": [
-      "3 months",
-      "1 year",
+      "3 months minimum",
+      "1 year minimum",
       "At least 6 months",
-      "9 months"
+      "9 months minimum"
     ],
     "correctIndex": 2
   },
@@ -44,10 +44,10 @@
     "category": "gdlLicensing",
     "question": "How many hours of supervised driving practice are required in New Mexico?",
     "answers": [
-      "30 hours total",
-      "40 hours total",
-      "100 hours total",
-      "50 hours with 10 at night"
+      "30 hours total practice",
+      "40 hours total practice",
+      "100 hours total practice",
+      "50 hrs, 10 at night"
     ],
     "correctIndex": 3
   },
@@ -57,10 +57,10 @@
     "category": "gdlLicensing",
     "question": "When can a provisional license holder drive alone between midnight and 5 AM in New Mexico?",
     "answers": [
-      "For work, school, medical, or religious purposes",
-      "Any time after 6 months",
-      "Only on weekends",
-      "Never allowed"
+      "Work, school, medical, religious",
+      "Anytime after 6 months period",
+      "Only on weekends is allowed",
+      "Never allowed at all times"
     ],
     "correctIndex": 0
   },
@@ -70,10 +70,10 @@
     "category": "gdlLicensing",
     "question": "How many non-family passengers under 21 can a provisional license holder transport in New Mexico?",
     "answers": [
-      "Two passengers maximum",
-      "One passenger unless accompanied by driver 21 or older",
-      "Three passengers maximum",
-      "No passengers allowed"
+      "Two passengers max allowed",
+      "One unless with driver 21+",
+      "Three passengers max allowed",
+      "No passengers at all"
     ],
     "correctIndex": 1
   },
@@ -83,10 +83,10 @@
     "category": "gdlLicensing",
     "question": "At what age can you obtain an unrestricted driver's license in New Mexico?",
     "answers": [
-      "17 years old",
-      "18 years old",
-      "16½ with 12 months violation-free driving",
-      "21 years old"
+      "17 years old at minimum",
+      "18 years old at minimum",
+      "16½ with 1 yr clean record",
+      "21 years old at minimum"
     ],
     "correctIndex": 2
   },
@@ -96,10 +96,10 @@
     "category": "gdlLicensing",
     "question": "What happens if you commit a traffic violation while holding an instructional permit in New Mexico?",
     "answers": [
-      "Permit is revoked",
+      "Permit is revoked immediately",
       "Must restart from beginning",
       "Criminal record is created",
-      "Permit holding period extended by 30 days"
+      "Permit period extended 30 days"
     ],
     "correctIndex": 3
   },
@@ -122,10 +122,10 @@
     "category": "gdlLicensing",
     "question": "How long must a provisional license be held before getting a full license in New Mexico?",
     "answers": [
-      "6 months",
-      "At least 12 months without violations",
-      "18 months",
-      "9 months"
+      "6 months minimum period",
+      "12 months violation-free",
+      "18 months minimum period",
+      "9 months minimum period"
     ],
     "correctIndex": 1
   },
@@ -135,10 +135,10 @@
     "category": "gdlLicensing",
     "question": "What is the curfew restriction for provisional license holders in New Mexico?",
     "answers": [
-      "11 PM to 6 AM",
-      "10 PM to 5 AM",
+      "11 PM to 6 AM hours",
+      "10 PM to 5 AM hours",
       "Midnight to 5 AM",
-      "1 AM to 6 AM"
+      "1 AM to 6 AM hours"
     ],
     "correctIndex": 2
   },
@@ -148,10 +148,10 @@
     "category": "gdlLicensing",
     "question": "What documentation may be required for curfew exceptions in New Mexico?",
     "answers": [
-      "Police permission only",
-      "Court order",
-      "Notarized statement",
-      "Statement from employer, school, or parent"
+      "Police permission only required",
+      "Court order document required",
+      "Notarized statement form required",
+      "Employer, school, or parent letter"
     ],
     "correctIndex": 3
   },
@@ -161,9 +161,9 @@
     "category": "cellPhone",
     "question": "What does New Mexico law prohibit while driving?",
     "answers": [
-      "Reading, viewing, or typing text messages",
-      "Only phone calls",
-      "Only video recording",
+      "Reading, viewing, typing texts",
+      "Only phone calls while driving",
+      "Only video recording done",
       "Using Bluetooth devices"
     ],
     "correctIndex": 0
@@ -174,10 +174,10 @@
     "category": "cellPhone",
     "question": "Can you use voice-operated talk-to-text while driving in New Mexico?",
     "answers": [
-      "No, all texting is banned",
-      "Yes, hands-free voice texting is allowed",
-      "Only on highways",
-      "Only for emergencies"
+      "No, all texting is fully banned",
+      "Yes, hands-free voice texting allowed",
+      "Only on major highways is allowed",
+      "Only for emergencies is allowed"
     ],
     "correctIndex": 1
   },
@@ -187,10 +187,10 @@
     "category": "cellPhone",
     "question": "What phone use is prohibited for learner's permit and provisional license holders in New Mexico?",
     "answers": [
-      "Only handheld calls",
-      "Only texting",
-      "All mobile phone use while driving",
-      "Only video recording"
+      "Only handheld phone calls",
+      "Only texting of messages",
+      "All phone use while driving",
+      "Only video recording use"
     ],
     "correctIndex": 2
   },
@@ -202,8 +202,8 @@
     "answers": [
       "Only texting prohibited",
       "Only hands-free allowed",
-      "No restrictions",
-      "No handheld mobile device use"
+      "No restrictions apply",
+      "No handheld device use"
     ],
     "correctIndex": 3
   },
@@ -216,7 +216,7 @@
       "Anytime to report emergencies",
       "Only when fully stopped",
       "Only with voice commands",
-      "Never while vehicle is on"
+      "Never while vehicle running"
     ],
     "correctIndex": 0
   },
@@ -227,9 +227,9 @@
     "question": "What type of texting is permitted under New Mexico's distracted driving law?",
     "answers": [
       "Manual texting at stoplights",
-      "Voice-operated hands-free texting",
-      "Texting with one hand",
-      "No texting is permitted"
+      "Voice-operated hands-free only",
+      "Texting with one hand only",
+      "No texting permitted at all"
     ],
     "correctIndex": 1
   },
@@ -265,7 +265,7 @@
     "category": "duiStateLaws",
     "question": "What does implied consent mean for New Mexico drivers?",
     "answers": [
-      "Agreement to BAC testing when lawfully arrested",
+      "Agreement to BAC test when arrested",
       "Permission to search vehicle",
       "Consent to field sobriety only",
       "Waiver of legal representation"
@@ -278,10 +278,10 @@
     "category": "duiStateLaws",
     "question": "What is the consequence of refusing a chemical test for the first time in New Mexico?",
     "answers": [
-      "6-month suspension",
+      "6-month license suspension",
       "1-year license revocation",
       "No penalty until convicted",
-      "90-day suspension"
+      "90-day license suspension"
     ],
     "correctIndex": 1
   },
@@ -291,10 +291,10 @@
     "category": "duiStateLaws",
     "question": "At what BAC level is a DWI considered aggravated in New Mexico?",
     "answers": [
-      "0.10 percent",
-      "0.12 percent",
+      "0.10 percent or higher",
+      "0.12 percent or higher",
       "0.16 percent or higher",
-      "0.20 percent"
+      "0.20 percent or higher"
     ],
     "correctIndex": 2
   },
@@ -304,9 +304,9 @@
     "category": "duiStateLaws",
     "question": "What device is required for all DWI convictions in New Mexico?",
     "answers": [
-      "GPS monitoring",
-      "Ankle monitor",
-      "Dash camera",
+      "GPS monitoring device used",
+      "Ankle monitor device used",
+      "Dash camera device used",
       "Ignition interlock device"
     ],
     "correctIndex": 3
@@ -330,10 +330,10 @@
     "category": "duiStateLaws",
     "question": "How long must SR-22 insurance be maintained after a DWI conviction in New Mexico?",
     "answers": [
-      "One year",
-      "Three years",
-      "Two years",
-      "Five years"
+      "One year minimum",
+      "Three years minimum",
+      "Two years minimum",
+      "Five years minimum"
     ],
     "correctIndex": 1
   },
@@ -343,10 +343,10 @@
     "category": "insurance",
     "question": "What type of insurance system does New Mexico follow for auto accidents?",
     "answers": [
-      "No-fault system",
-      "Choice system",
+      "No-fault system used",
+      "Choice-based system",
       "Fault-based system",
-      "Hybrid system"
+      "Hybrid fault system"
     ],
     "correctIndex": 2
   },
@@ -358,7 +358,7 @@
     "answers": [
       "Your vehicle damage only",
       "Your medical bills only",
-      "Rental car expenses",
+      "Rental car expense coverage",
       "Damages you cause to others"
     ],
     "correctIndex": 3
@@ -382,9 +382,9 @@
     "category": "insurance",
     "question": "What additional coverage protects you if hit by an uninsured driver in New Mexico?",
     "answers": [
-      "Comprehensive coverage",
+      "Comprehensive damage coverage",
       "Uninsured motorist coverage",
-      "Collision coverage",
+      "Collision damage coverage",
       "Personal injury protection"
     ],
     "correctIndex": 1
@@ -408,10 +408,10 @@
     "category": "stateUnique",
     "question": "What is required for all motorcyclists in New Mexico besides helmets for minors?",
     "answers": [
-      "Reflective vest",
-      "Daytime headlights",
-      "License plate light",
-      "Eye protection such as goggles or face shield"
+      "Reflective safety vest required",
+      "Daytime headlights are required",
+      "License plate light is required",
+      "Eye protection like goggles or shield"
     ],
     "correctIndex": 3
   },
@@ -421,10 +421,10 @@
     "category": "stateUnique",
     "question": "When must you dim your high beams for oncoming traffic in New Mexico?",
     "answers": [
-      "Within 500 feet of oncoming vehicle",
-      "Within 1000 feet",
-      "Within 300 feet",
-      "Within 200 feet"
+      "Within 500 ft of oncoming car",
+      "Within 1000 ft of oncoming car",
+      "Within 300 ft of oncoming car",
+      "Within 200 ft of oncoming car"
     ],
     "correctIndex": 0
   },
@@ -447,10 +447,10 @@
     "category": "stateUnique",
     "question": "How far must you stop from a school bus with flashing lights in New Mexico?",
     "answers": [
-      "5 feet",
-      "15 feet",
+      "At least 5 feet",
+      "At least 15 feet",
       "At least 10 feet",
-      "20 feet"
+      "At least 20 feet"
     ],
     "correctIndex": 2
   },
@@ -460,10 +460,10 @@
     "category": "stateUnique",
     "question": "Are daytime headlights required in New Mexico?",
     "answers": [
-      "Yes, at all times",
+      "Yes, at all times required",
       "Yes, on highways only",
       "Yes, in bad weather only",
-      "No, not required during daytime"
+      "No, not required in daytime"
     ],
     "correctIndex": 3
   },
@@ -473,10 +473,10 @@
     "category": "stateUnique",
     "question": "When are right turns on red allowed in New Mexico?",
     "answers": [
-      "After complete stop when safe and no sign prohibits",
-      "Never permitted",
-      "Only during off-peak hours",
-      "Only on multi-lane roads"
+      "After stop when safe, if no sign",
+      "Never permitted at all times",
+      "Only during off-peak traffic hours",
+      "Only on multi-lane roads allowed"
     ],
     "correctIndex": 0
   },
@@ -512,10 +512,10 @@
     "category": "stateUnique",
     "question": "What type of headlights are permitted for motorcycles in New Mexico?",
     "answers": [
-      "Only steady headlights",
+      "Only steady headlights allowed",
       "Only high-intensity discharge",
-      "Only LED lights",
-      "Modulating headlights are permitted"
+      "Only LED lights allowed",
+      "Modulating headlights allowed"
     ],
     "correctIndex": 3
   }

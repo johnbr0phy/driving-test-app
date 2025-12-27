@@ -85,7 +85,7 @@
     "answers": [
       "Any supervised driving",
       "Highway driving only",
-      "Driver education vehicles only",
+      "Driver ed vehicles",
       "Family vehicles only"
     ],
     "correctIndex": 2
@@ -123,9 +123,9 @@
     "question": "What happens if a driver violates GDL restrictions in Mississippi?",
     "answers": [
       "Automatic license revocation",
-      "License suspension and possible jail time",
+      "Suspension and possible jail",
       "Points on driving record only",
-      "Warning for first offense"
+      "Warning for first offense only"
     ],
     "correctIndex": 1
   },
@@ -135,9 +135,9 @@
     "category": "gdlLicensing",
     "question": "What must a permit holder do before obtaining a learner's permit in Mississippi?",
     "answers": [
-      "Complete driver education",
+      "Complete driver education course",
       "Take a road test",
-      "Pass vision screening and written test",
+      "Pass vision and written test",
       "Submit proof of insurance"
     ],
     "correctIndex": 2
@@ -148,10 +148,10 @@
     "category": "gdlLicensing",
     "question": "What is required to progress from a learner's permit to an intermediate license in Mississippi?",
     "answers": [
-      "Written test only",
-      "Vision test only",
+      "Written exam only",
+      "Vision exam only",
       "Proof of insurance",
-      "Passing the driving test"
+      "Passing driving test"
     ],
     "correctIndex": 3
   },
@@ -174,8 +174,8 @@
     "category": "cellPhone",
     "question": "Can drivers with a full license make handheld phone calls while driving in Mississippi?",
     "answers": [
-      "Never permitted",
-      "Yes, handheld calls are allowed",
+      "Never permitted at all",
+      "Yes, handheld allowed",
       "Only in emergencies",
       "Only on highways"
     ],
@@ -188,9 +188,9 @@
     "question": "What type of phone use is allowed under Mississippi's distracted driving law?",
     "answers": [
       "Reading emails while stopped",
-      "Browsing social media",
+      "Browsing social media apps",
       "Hands-free and voice-to-text",
-      "Holding phone for GPS"
+      "Holding phone for GPS use"
     ],
     "correctIndex": 2
   },
@@ -203,7 +203,7 @@
       "Texting only prohibited",
       "Handheld calls prohibited",
       "Social media prohibited",
-      "All cell phone use prohibited"
+      "All cell phone use banned"
     ],
     "correctIndex": 3
   },
@@ -213,10 +213,10 @@
     "category": "cellPhone",
     "question": "What activities count as texting under Mississippi law?",
     "answers": [
-      "Text messages, emails, and social media",
+      "Texts, emails, social",
       "Only SMS text messages",
       "Only instant messages",
-      "Only social media posting"
+      "Only social media posts"
     ],
     "correctIndex": 0
   },
@@ -227,8 +227,8 @@
     "question": "Who else is completely banned from cell phone use while driving in Mississippi?",
     "answers": [
       "All commercial drivers",
-      "Bus drivers transporting minors",
-      "Drivers over 65",
+      "Bus drivers with minors",
+      "Drivers over age 65",
       "Motorcycle riders"
     ],
     "correctIndex": 1
@@ -265,10 +265,10 @@
     "category": "duiStateLaws",
     "question": "What does Mississippi's implied consent law require?",
     "answers": [
-      "Submission to BAC testing when lawfully arrested",
+      "BAC testing when arrested",
       "Consent to vehicle searches",
-      "Agreement to field sobriety tests only",
-      "Permission for roadside questioning"
+      "Field sobriety tests only",
+      "Roadside questioning"
     ],
     "correctIndex": 0
   },
@@ -278,9 +278,9 @@
     "category": "duiStateLaws",
     "question": "What is the consequence for a first-time refusal of a BAC test in Mississippi?",
     "answers": [
-      "No penalty",
+      "No penalty at all",
       "90-day license suspension",
-      "One year suspension",
+      "One year suspension period",
       "Automatic DUI conviction"
     ],
     "correctIndex": 1
@@ -317,7 +317,7 @@
     "category": "duiStateLaws",
     "question": "What happens if you refuse a second BAC test in Mississippi?",
     "answers": [
-      "One year license suspension",
+      "One year suspension",
       "6-month suspension",
       "Criminal charges only",
       "180-day suspension"
@@ -345,7 +345,7 @@
     "answers": [
       "No-fault system",
       "Choice system",
-      "Fault-based system",
+      "Fault-based",
       "Hybrid system"
     ],
     "correctIndex": 2
@@ -359,7 +359,7 @@
       "Your own vehicle damage",
       "Your medical expenses",
       "Theft and vandalism",
-      "Damages you cause to others"
+      "Damages you cause others"
     ],
     "correctIndex": 3
   },
@@ -369,10 +369,10 @@
     "category": "insurance",
     "question": "Who does insurance coverage follow in Mississippi?",
     "answers": [
-      "The vehicle, not the driver",
-      "The driver, not the vehicle",
-      "Both equally",
-      "Depends on the policy"
+      "Vehicle, not driver",
+      "Driver, not vehicle",
+      "Both equally here",
+      "Depends on policy"
     ],
     "correctIndex": 0
   },
@@ -395,10 +395,10 @@
     "category": "stateUnique",
     "question": "When must headlights be used in Mississippi?",
     "answers": [
-      "Only after dark",
-      "Only in rain or fog",
-      "Half hour after sunset to half hour before sunrise",
-      "Only on highways"
+      "Only after dark hours pass",
+      "Only in rain or fog weather",
+      "30 min after sunset to sunrise",
+      "Only on state highways here"
     ],
     "correctIndex": 2
   },
@@ -408,10 +408,10 @@
     "category": "stateUnique",
     "question": "How far must you stop from a school bus loading or unloading children in Mississippi?",
     "answers": [
-      "5 feet",
-      "15 feet",
-      "20 feet",
-      "At least 10 feet"
+      "5 feet minimum",
+      "15 feet minimum",
+      "20 feet minimum",
+      "10 feet minimum"
     ],
     "correctIndex": 3
   },
@@ -421,10 +421,10 @@
     "category": "stateUnique",
     "question": "When can you proceed past a stopped school bus in Mississippi?",
     "answers": [
-      "When lights stop flashing and children are safe",
-      "After 30 seconds",
-      "When the bus honks",
-      "Immediately if no children visible"
+      "Lights stop, children safe",
+      "After waiting 30 seconds",
+      "When bus honks twice",
+      "If no children visible"
     ],
     "correctIndex": 0
   },
@@ -449,7 +449,7 @@
     "answers": [
       "Sound your horn",
       "Flash your headlights",
-      "Move to farthest lane or slow down",
+      "Move over or slow down",
       "Maintain current speed"
     ],
     "correctIndex": 2
@@ -460,10 +460,10 @@
     "category": "stateUnique",
     "question": "When are you NOT required to stop for a school bus in Mississippi?",
     "answers": [
-      "When traveling behind the bus",
-      "On residential streets",
-      "During morning hours",
-      "On four-lane divided highways traveling opposite direction"
+      "When traveling behind bus",
+      "On residential streets only",
+      "During morning hours only",
+      "Divided highway, opposite side"
     ],
     "correctIndex": 3
   },
@@ -487,7 +487,7 @@
     "question": "When else must headlights be used besides at night in Mississippi?",
     "answers": [
       "Never required during day",
-      "When visibility is reduced by weather",
+      "Poor weather visibility",
       "Only in school zones",
       "Only on rural roads"
     ],
@@ -501,7 +501,7 @@
     "answers": [
       "Stop in current lane",
       "Speed up and move right",
-      "Pull to extreme right shoulder",
+      "Pull to right shoulder",
       "Flash hazard lights"
     ],
     "correctIndex": 2

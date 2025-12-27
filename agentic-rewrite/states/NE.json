@@ -18,8 +18,8 @@
     "category": "gdlLicensing",
     "question": "Who can supervise a driver with a Learner's Permit in Nebraska?",
     "answers": [
-      "Any licensed driver over 18",
-      "Licensed driver who is at least 21 years old",
+      "Any licensed driver over age 18",
+      "Licensed driver at least 21 years old",
       "Any family member with a license",
       "Only certified driving instructors"
     ],
@@ -31,10 +31,10 @@
     "category": "gdlLicensing",
     "question": "How long must you hold a permit before applying for a Provisional Operator's Permit in Nebraska?",
     "answers": [
-      "3 months",
-      "1 year",
+      "At least 3 months",
+      "At least 1 year",
       "At least 6 months",
-      "9 months"
+      "At least 9 months"
     ],
     "correctIndex": 2
   },
@@ -44,10 +44,10 @@
     "category": "gdlLicensing",
     "question": "What is the nighttime driving restriction for Provisional Operator's Permit holders in Nebraska?",
     "answers": [
-      "10 PM to 6 AM",
-      "11 PM to 5 AM",
-      "9 PM to 6 AM",
-      "Midnight to 6 AM except for work or school"
+      "10 PM to 6 AM except work/school",
+      "11 PM to 5 AM except work/school",
+      "9 PM to 6 AM except work/school",
+      "Midnight to 6 AM (except work/school)"
     ],
     "correctIndex": 3
   },
@@ -70,10 +70,10 @@
     "category": "gdlLicensing",
     "question": "What wireless device restriction applies to Provisional Operator's Permit holders in Nebraska?",
     "answers": [
-      "Can use hands-free devices",
-      "Cannot use any interactive wireless device",
-      "Can text but not call",
-      "Only GPS is prohibited"
+      "Can use hands-free devices only",
+      "Cannot use interactive wireless devices",
+      "Can text but not make phone calls",
+      "Only GPS devices are prohibited here"
     ],
     "correctIndex": 1
   },
@@ -83,10 +83,10 @@
     "category": "gdlLicensing",
     "question": "When can a Provisional Operator's Permit holder obtain an unrestricted license in Nebraska?",
     "answers": [
-      "Age 16 with driver education",
-      "Immediately at age 18",
-      "Age 17 with 6 months violation-free driving",
-      "Age 19 regardless of violations"
+      "Age 16 with driver education course",
+      "Immediately upon reaching age 18",
+      "Age 17 with 6 months violation-free",
+      "Age 19 regardless of any violations"
     ],
     "correctIndex": 2
   },
@@ -96,10 +96,10 @@
     "category": "gdlLicensing",
     "question": "What prevents someone from receiving a Provisional Operator's Permit in Nebraska?",
     "answers": [
-      "Incomplete driver education",
-      "No supervised driving hours",
-      "Parent refuses consent",
-      "Three or more points in the previous 6 months"
+      "Incomplete driver education course",
+      "No supervised driving hours logged",
+      "Parent or guardian refuses consent",
+      "Three or more points in past 6 months"
     ],
     "correctIndex": 3
   },
@@ -109,7 +109,7 @@
     "category": "gdlLicensing",
     "question": "How long do new Nebraska residents have to obtain a Nebraska driver's license?",
     "answers": [
-      "30 days after moving to the state",
+      "30 days after moving",
       "60 days after moving",
       "90 days after moving",
       "6 months after moving"
@@ -122,10 +122,10 @@
     "category": "gdlLicensing",
     "question": "What seatbelt requirement applies to all passengers in vehicles operated by permit holders in Nebraska?",
     "answers": [
-      "Front seat passengers only",
-      "All passengers must use occupant protection systems",
-      "Only children under 12",
-      "No special requirements"
+      "Front seat passengers must use only",
+      "All passengers must use protection",
+      "Only children under age 12 must",
+      "No special requirements apply here"
     ],
     "correctIndex": 1
   },
@@ -148,8 +148,8 @@
     "category": "gdlLicensing",
     "question": "What tests must be passed before receiving a School Learner's Permit in Nebraska?",
     "answers": [
-      "Road test only",
-      "Written test only",
+      "Road skills test only",
+      "Written knowledge test only",
       "Driver education course",
       "Vision and written tests"
     ],
@@ -161,10 +161,10 @@
     "category": "cellPhone",
     "question": "What type of enforcement does Nebraska use for texting while driving violations?",
     "answers": [
-      "Primary enforcement allowing stops for this violation alone",
-      "Community service enforcement",
-      "Warning system only",
-      "No enforcement currently"
+      "Primary enforcement for this violation",
+      "Community service enforcement system",
+      "Warning system enforcement only here",
+      "No enforcement currently active now"
     ],
     "correctIndex": 0
   },
@@ -174,10 +174,10 @@
     "category": "cellPhone",
     "question": "What wireless communication activity is prohibited while driving in Nebraska?",
     "answers": [
-      "Using Bluetooth devices",
-      "Reading, typing, or sending written communications",
-      "Using GPS navigation",
-      "Making hands-free calls"
+      "Using Bluetooth devices while driving",
+      "Reading, typing, or sending messages",
+      "Using GPS navigation while driving",
+      "Making hands-free phone calls"
     ],
     "correctIndex": 1
   },
@@ -187,10 +187,10 @@
     "category": "cellPhone",
     "question": "What restriction applies to commercial drivers and school bus operators regarding phones in Nebraska?",
     "answers": [
-      "Can use phones with two-button operation",
-      "No restrictions beyond regular drivers",
-      "Cannot use handheld devices except in emergencies",
-      "Can text but not call"
+      "Can use phones with two-button operation only",
+      "No restrictions beyond regular drivers here",
+      "Cannot use handheld devices except emergencies",
+      "Can text but not make phone calls here"
     ],
     "correctIndex": 2
   },
@@ -213,9 +213,9 @@
     "category": "cellPhone",
     "question": "Does Nebraska currently have a comprehensive hands-free driving law?",
     "answers": [
-      "No, only texting is specifically prohibited",
-      "Yes, all handheld use is banned",
-      "Yes, for drivers under 21 only",
+      "No, only texting is prohibited",
+      "Yes, all handheld use banned",
+      "Yes, for drivers under 21",
       "Only for commercial vehicles"
     ],
     "correctIndex": 0
@@ -226,9 +226,9 @@
     "category": "cellPhone",
     "question": "What device usage is permitted for GPS navigation while driving in Nebraska?",
     "answers": [
-      "Completely prohibited",
+      "Completely prohibited while driving",
       "Voice-operated and mounted devices",
-      "Handheld devices only",
+      "Handheld devices only allowed",
       "Only factory-installed systems"
     ],
     "correctIndex": 1
@@ -265,10 +265,10 @@
     "category": "duiStateLaws",
     "question": "What does Nebraska's implied consent law require of lawfully arrested drivers?",
     "answers": [
-      "Submit to breath, blood, or urine testing",
-      "Consent to vehicle search",
-      "Field sobriety tests only",
-      "Immediate license surrender"
+      "Submit to breath, blood, or urine test",
+      "Consent to full vehicle search required",
+      "Field sobriety tests only required",
+      "Immediate license surrender required"
     ],
     "correctIndex": 0
   },
@@ -293,7 +293,7 @@
     "answers": [
       "0.10 percent",
       "0.12 percent",
-      "0.15 percent or higher",
+      "0.15 percent",
       "0.20 percent"
     ],
     "correctIndex": 2
@@ -317,10 +317,10 @@
     "category": "duiStateLaws",
     "question": "What happens to drivers who fail a chemical test with no prior revocations in Nebraska?",
     "answers": [
-      "180-day license revocation",
+      "180-day revocation",
       "One-year suspension",
       "90-day revocation",
-      "Warning only"
+      "Warning only first time"
     ],
     "correctIndex": 0
   },
@@ -330,10 +330,10 @@
     "category": "duiStateLaws",
     "question": "What additional requirement applies to all DUI offenders in Nebraska?",
     "answers": [
-      "Community service",
-      "Complete alcohol assessment and treatment program",
-      "Attend victim impact panel",
-      "Install vehicle monitoring system"
+      "Community service hours are required",
+      "Complete alcohol assessment and treatment",
+      "Attend victim impact panel sessions",
+      "Install vehicle monitoring systems"
     ],
     "correctIndex": 1
   },
@@ -369,10 +369,10 @@
     "category": "insurance",
     "question": "What additional coverage is required in Nebraska beyond liability insurance?",
     "answers": [
-      "Uninsured and underinsured motorist coverage",
-      "Comprehensive coverage",
-      "Collision coverage",
-      "Personal injury protection"
+      "Uninsured and underinsured coverage",
+      "Comprehensive vehicle coverage only",
+      "Collision damage coverage only",
+      "Personal injury protection only"
     ],
     "correctIndex": 0
   },
@@ -382,8 +382,8 @@
     "category": "insurance",
     "question": "How can proof of insurance be displayed during a traffic stop in Nebraska?",
     "answers": [
-      "Paper documents only",
-      "Electronic image on phone, tablet, or laptop",
+      "Paper documents only allowed",
+      "Electronic image on phone or tablet",
       "Insurance card must be mailed to officer",
       "Verbal confirmation of policy number"
     ],
@@ -395,10 +395,10 @@
     "category": "stateUnique",
     "question": "When must you turn on headlights while driving in Nebraska?",
     "answers": [
-      "Only at night",
-      "During rain only",
-      "Sunset to sunrise or when visibility is under 500 feet",
-      "Only in fog"
+      "Only during nighttime driving hours",
+      "During rain or wet weather conditions",
+      "Sunset to sunrise or visibility under 500ft",
+      "Only in fog or mist weather conditions"
     ],
     "correctIndex": 2
   },
@@ -408,10 +408,10 @@
     "category": "stateUnique",
     "question": "What does Nebraska's updated move over law require when approaching stopped vehicles?",
     "answers": [
-      "Honk your horn",
-      "Flash your lights",
-      "Stop completely",
-      "Slow down and move over when safe"
+      "Honk your horn loudly",
+      "Flash your headlights",
+      "Stop completely in lane",
+      "Slow down and move over"
     ],
     "correctIndex": 3
   },
@@ -421,10 +421,10 @@
     "category": "stateUnique",
     "question": "Who does Nebraska's move over law apply to as of September 2025?",
     "answers": [
-      "All stopped vehicles, pedestrians, and road users",
-      "Emergency vehicles only",
-      "Police vehicles only",
-      "Tow trucks and emergency vehicles"
+      "All stopped vehicles, pedestrians, users",
+      "Emergency vehicles only on roads here",
+      "Police vehicles only on highways here",
+      "Tow trucks and emergency vehicles only"
     ],
     "correctIndex": 0
   },
@@ -447,9 +447,9 @@
     "category": "stateUnique",
     "question": "What is the seatbelt requirement for passengers under 18 in Nebraska?",
     "answers": [
-      "Front seat only",
-      "Only on highways",
-      "All must wear occupant protection systems",
+      "Front seat only required",
+      "Only on highways required",
+      "All must wear protection systems",
       "Optional with parent permission"
     ],
     "correctIndex": 2
@@ -461,9 +461,9 @@
     "question": "When can drivers 21 or older ride motorcycles without a helmet in Nebraska?",
     "answers": [
       "Never, helmets always required",
-      "Only on rural roads",
+      "Only on rural roads allowed",
       "Anytime with valid license",
-      "After completing motorcycle safety course"
+      "After completing safety course"
     ],
     "correctIndex": 3
   },
@@ -473,10 +473,10 @@
     "category": "stateUnique",
     "question": "Is lane splitting authorized for motorcycles in Nebraska?",
     "answers": [
-      "No, lane splitting is not authorized",
-      "Yes, at speeds under 30 mph",
-      "Yes, on highways only",
-      "Yes, in stopped traffic"
+      "No, lane splitting not authorized",
+      "Yes, at speeds under 30 mph only",
+      "Yes, on highways only allowed",
+      "Yes, in stopped traffic only"
     ],
     "correctIndex": 0
   },
@@ -486,10 +486,10 @@
     "category": "stateUnique",
     "question": "When is using hazard lights while driving permitted in Nebraska?",
     "answers": [
-      "During heavy rain",
-      "Hazard lights while driving are prohibited",
-      "In fog or low visibility",
-      "When driving slowly"
+      "During heavy rain conditions only",
+      "Hazard lights while driving prohibited",
+      "In fog or low visibility conditions",
+      "When driving slowly on roads here"
     ],
     "correctIndex": 1
   },
@@ -499,10 +499,10 @@
     "category": "stateUnique",
     "question": "What eye protection is required for motorcycle riders in Nebraska?",
     "answers": [
-      "No eye protection required",
-      "Prescription glasses only",
-      "Glasses, face shield, goggles, or windshield",
-      "Helmet with built-in visor only"
+      "No eye protection required at all here",
+      "Prescription glasses only allowed here",
+      "Glasses, face shield, goggles, windshield",
+      "Helmet with built-in visor only here"
     ],
     "correctIndex": 2
   },
@@ -512,10 +512,10 @@
     "category": "stateUnique",
     "question": "When are right turns on red allowed in Nebraska?",
     "answers": [
-      "Never permitted",
-      "Only during daytime",
-      "Always without stopping",
-      "After complete stop unless otherwise posted"
+      "Never permitted at all here",
+      "Only during daytime hours only",
+      "Always without stopping first ever",
+      "After complete stop unless posted"
     ],
     "correctIndex": 3
   }

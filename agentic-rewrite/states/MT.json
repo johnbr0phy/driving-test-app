@@ -18,10 +18,10 @@
     "category": "gdlLicensing",
     "question": "How many supervised driving hours are required if you complete driver education in Montana?",
     "answers": [
-      "30 hours total",
-      "50 hours including 10 at night",
-      "75 hours total",
-      "40 hours including 5 at night"
+      "30 hours total driving",
+      "50 hrs with 10 at night",
+      "75 hours total driving",
+      "40 hrs with 5 at night"
     ],
     "correctIndex": 1
   },
@@ -85,7 +85,7 @@
     "answers": [
       "Only parental consent",
       "Road test completion",
-      "Driver education completion",
+      "Driver ed completion",
       "50 hours of practice"
     ],
     "correctIndex": 2
@@ -148,10 +148,10 @@
     "category": "gdlLicensing",
     "question": "What is required for license applicants under 16 in Montana?",
     "answers": [
-      "Only road test",
-      "Only written test",
-      "Only parental consent",
-      "Driver education completion"
+      "Road test only",
+      "Written test only",
+      "Parental consent only",
+      "Driver ed completion"
     ],
     "correctIndex": 3
   },
@@ -176,8 +176,8 @@
     "answers": [
       "No cities have ordinances",
       "Bozeman, Helena, and Libby",
-      "Only Billings",
-      "Only Missoula"
+      "Billings city area only",
+      "Missoula city area only"
     ],
     "correctIndex": 1
   },
@@ -189,8 +189,8 @@
     "answers": [
       "Complete phone ban",
       "Texting only banned",
-      "Hands-free device required",
-      "No restrictions"
+      "Hands-free required",
+      "No restrictions apply"
     ],
     "correctIndex": 2
   },
@@ -201,9 +201,9 @@
     "question": "Where must you be to legally use a handheld phone under Bozeman's ordinance?",
     "answers": [
       "Moving in traffic",
-      "At a stop light",
+      "At stop light only",
       "On residential streets",
-      "Completely off the roadway"
+      "Off roadway completely"
     ],
     "correctIndex": 3
   },
@@ -213,10 +213,10 @@
     "category": "cellPhone",
     "question": "Why is understanding local cell phone ordinances important in Montana?",
     "answers": [
-      "Cities can enforce stricter rules than state law",
+      "Cities enforce stricter local rules",
       "State law overrides all local laws",
       "Federal law applies instead",
-      "No enforcement occurs"
+      "No enforcement occurs locally"
     ],
     "correctIndex": 0
   },
@@ -226,9 +226,9 @@
     "category": "cellPhone",
     "question": "What type of device use is typically allowed under local hands-free laws in Montana?",
     "answers": [
-      "Handheld texting",
-      "Voice-activated and Bluetooth devices",
-      "Video recording",
+      "Handheld texting devices",
+      "Voice-activated Bluetooth",
+      "Video recording devices",
       "Social media browsing"
     ],
     "correctIndex": 1
@@ -265,10 +265,10 @@
     "category": "duiStateLaws",
     "question": "What does Montana's implied consent law require of drivers?",
     "answers": [
-      "Submit to BAC testing when lawfully arrested",
+      "Submit to BAC test if arrested",
       "Consent to vehicle searches",
       "Waive right to attorney",
-      "Admit fault at scene"
+      "Admit fault at accident scene"
     ],
     "correctIndex": 0
   },
@@ -278,10 +278,10 @@
     "category": "duiStateLaws",
     "question": "What is the consequence of refusing a BAC test for the first time in Montana?",
     "answers": [
-      "No penalty",
-      "Six-month license suspension",
+      "No penalty imposed",
+      "Six-month suspension",
       "Automatic DUI conviction",
-      "One-year probation"
+      "1-year probation term"
     ],
     "correctIndex": 1
   },
@@ -317,9 +317,9 @@
     "category": "duiStateLaws",
     "question": "When does a DUI become a felony charge in Montana?",
     "answers": [
-      "Fourth or subsequent offense",
-      "Second offense",
-      "Third offense",
+      "Fourth offense or more",
+      "On second DUI offense",
+      "On third DUI offense",
       "Never becomes felony"
     ],
     "correctIndex": 0
@@ -331,7 +331,7 @@
     "question": "What can result from refusing a second BAC test within five years in Montana?",
     "answers": [
       "Three-month suspension",
-      "One-year license suspension",
+      "One-year suspension",
       "Two-year suspension",
       "Permanent revocation"
     ],
@@ -359,7 +359,7 @@
       "Your vehicle damage",
       "Theft of your vehicle",
       "Your medical bills only",
-      "Damages you cause to others"
+      "Damage you cause others"
     ],
     "correctIndex": 3
   },
@@ -370,8 +370,8 @@
     "question": "What coverage protects you if hit by a driver without insurance in Montana?",
     "answers": [
       "Uninsured motorist coverage",
-      "Comprehensive coverage",
-      "Collision coverage",
+      "Comprehensive coverage plan",
+      "Collision coverage plan",
       "Personal injury protection"
     ],
     "correctIndex": 0
@@ -382,10 +382,10 @@
     "category": "insurance",
     "question": "What is required by law to operate a vehicle on Montana public roads?",
     "answers": [
-      "Only registration",
-      "Liability insurance meeting minimum limits",
+      "Only registration required",
+      "Liability meeting minimums",
       "Comprehensive coverage",
-      "Collision insurance"
+      "Collision insurance only"
     ],
     "correctIndex": 1
   },
@@ -396,9 +396,9 @@
     "question": "What must drivers do when approaching emergency vehicles with flashing lights on an interstate in Montana?",
     "answers": [
       "Maintain current speed",
-      "Stop completely",
-      "Slow by 20 mph and move over if possible",
-      "Flash headlights"
+      "Stop completely now",
+      "Slow 20 mph, move over",
+      "Flash headlights signal"
     ],
     "correctIndex": 2
   },
@@ -411,7 +411,7 @@
       "10 mph below limit",
       "15 mph below limit",
       "20 mph below limit",
-      "30 mph below limit or half the speed limit"
+      "30 mph below or half"
     ],
     "correctIndex": 3
   },
@@ -435,9 +435,9 @@
     "question": "What should you do when a school bus activates flashing amber lights in Montana?",
     "answers": [
       "Maintain current speed",
-      "Slow down and prepare to stop",
+      "Slow and prepare to stop",
       "Speed up to pass quickly",
-      "Stop immediately"
+      "Stop immediately now"
     ],
     "correctIndex": 1
   },
@@ -449,7 +449,7 @@
     "answers": [
       "For all riders",
       "Never required",
-      "For riders under 18",
+      "Riders under 18",
       "Only on highways"
     ],
     "correctIndex": 2
@@ -460,10 +460,10 @@
     "category": "stateUnique",
     "question": "When must motorcycles operate with headlights on in Montana?",
     "answers": [
-      "Only at night",
+      "Only during night",
       "Only in poor visibility",
       "Only on highways",
-      "At all times when riding"
+      "At all times riding"
     ],
     "correctIndex": 3
   },
@@ -473,8 +473,8 @@
     "category": "stateUnique",
     "question": "When is a right turn on red allowed in Montana?",
     "answers": [
-      "After complete stop unless prohibited",
-      "Never allowed",
+      "After full stop if allowed",
+      "Never allowed anywhere",
       "Only on one-way streets",
       "Without stopping if clear"
     ],
@@ -488,8 +488,8 @@
     "answers": [
       "Primary enforcement",
       "Secondary enforcement",
-      "No enforcement",
-      "Warning only"
+      "No enforcement exists",
+      "Warning only given"
     ],
     "correctIndex": 1
   },
@@ -500,9 +500,9 @@
     "question": "What vehicles are now included under Montana's Move Over Law?",
     "answers": [
       "Only police vehicles",
-      "Only ambulances",
-      "Emergency, towing, utility, and maintenance vehicles",
-      "Only fire trucks"
+      "Only ambulance vehicles",
+      "Emergency & utility work",
+      "Only fire truck vehicles"
     ],
     "correctIndex": 2
   },
@@ -515,7 +515,7 @@
       "Yes, at all times",
       "Yes, only in traffic",
       "Yes, only on highways",
-      "No, it is not authorized"
+      "No, not authorized"
     ],
     "correctIndex": 3
   }

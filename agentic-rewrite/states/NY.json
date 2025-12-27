@@ -31,10 +31,10 @@
     "category": "gdlLicensing",
     "question": "How long must you hold a learner's permit before applying for a junior license in New York?",
     "answers": [
-      "3 months",
-      "1 year",
-      "At least 6 months",
-      "9 months"
+      "3 months minimum",
+      "1 year minimum",
+      "6 months minimum",
+      "9 months minimum"
     ],
     "correctIndex": 2
   },
@@ -44,10 +44,10 @@
     "category": "gdlLicensing",
     "question": "How many hours of supervised driving practice are required to qualify for a junior license in New York?",
     "answers": [
-      "30 hours total",
-      "40 hours total",
-      "60 hours total",
-      "50 hours total, including 15 at night"
+      "30 hours total practice",
+      "40 hours total practice",
+      "60 hours total practice",
+      "50 hours, with 15 at night"
     ],
     "correctIndex": 3
   },
@@ -57,10 +57,10 @@
     "category": "gdlLicensing",
     "question": "At what age can you obtain an unrestricted driver's license in New York?",
     "answers": [
-      "18 years old, or 17 with driver education",
-      "17 years old only",
-      "19 years old",
-      "21 years old"
+      "18, or 17 with driver ed",
+      "17 years old minimum",
+      "19 years old minimum",
+      "21 years old minimum"
     ],
     "correctIndex": 0
   },
@@ -83,10 +83,10 @@
     "category": "gdlLicensing",
     "question": "Who can supervise a learner's permit holder during nighttime hours in New York?",
     "answers": [
-      "Any licensed adult",
-      "Any family member",
-      "Parent, guardian, or certified instructor",
-      "Only certified instructors"
+      "Any licensed adult driver",
+      "Any licensed family member",
+      "Parent, guardian, or instructor",
+      "Only state-certified instructors"
     ],
     "correctIndex": 2
   },
@@ -109,10 +109,10 @@
     "category": "gdlLicensing",
     "question": "Where must the supervising driver sit when accompanying a learner's permit holder in New York?",
     "answers": [
-      "In the front passenger seat",
-      "Anywhere in the vehicle",
-      "In the back seat only",
-      "Behind the driver"
+      "Front passenger seat",
+      "Anywhere in vehicle",
+      "Back seat only",
+      "Behind driver seat"
     ],
     "correctIndex": 0
   },
@@ -122,10 +122,10 @@
     "category": "gdlLicensing",
     "question": "How many hours of night driving practice are required for a junior license in New York?",
     "answers": [
-      "10 hours",
-      "15 hours out of 50 total",
-      "20 hours",
-      "No night driving required"
+      "10 hours nighttime",
+      "15 of 50 total hours",
+      "20 hours nighttime",
+      "No nighttime required"
     ],
     "correctIndex": 1
   },
@@ -135,10 +135,10 @@
     "category": "gdlLicensing",
     "question": "What is the consequence of a second cell phone violation within six months for a junior driver in New York?",
     "answers": [
-      "Fine doubled",
-      "Points increased",
-      "License revoked for at least one year",
-      "120-day suspension"
+      "Fine is doubled from first",
+      "Points increased on record",
+      "Revoked for minimum 1 year",
+      "Suspended for 120 days total"
     ],
     "correctIndex": 2
   },
@@ -148,10 +148,10 @@
     "category": "gdlLicensing",
     "question": "How many hours of heavy traffic driving practice are required for a junior license in New York?",
     "answers": [
-      "5 hours",
-      "15 hours",
-      "No specific requirement",
-      "10 hours out of 50 total"
+      "5 hours in traffic",
+      "15 hours in traffic",
+      "No requirement set",
+      "10 of 50 total hours"
     ],
     "correctIndex": 3
   },
@@ -161,9 +161,9 @@
     "category": "cellPhone",
     "question": "What does New York law prohibit while driving?",
     "answers": [
-      "Holding or manually using a phone",
-      "Only texting",
-      "Only video calls",
+      "Holding or using phone",
+      "Only texting messages",
+      "Only video calling",
       "Using Bluetooth devices"
     ],
     "correctIndex": 0
@@ -174,10 +174,10 @@
     "category": "cellPhone",
     "question": "Can you use hands-free technology for phone calls while driving in New York?",
     "answers": [
-      "No, all phone use banned",
-      "Yes, hands-free technology is allowed",
-      "Only for emergencies",
-      "Only with one earbud"
+      "No, all phone use is banned",
+      "Yes, hands-free is allowed",
+      "Only for emergency purposes",
+      "Only with one earbud in"
     ],
     "correctIndex": 1
   },
@@ -187,10 +187,10 @@
     "category": "cellPhone",
     "question": "How many button presses are allowed to initiate a call while driving in New York?",
     "answers": [
-      "Up to three buttons",
-      "Two buttons maximum",
-      "Single button or swipe only",
-      "No touching allowed"
+      "Up to three buttons max",
+      "Two buttons maximum only",
+      "One button or swipe only",
+      "No touching is allowed"
     ],
     "correctIndex": 2
   },
@@ -200,10 +200,10 @@
     "category": "cellPhone",
     "question": "How does New York treat cell phone violations compared to other traffic violations?",
     "answers": [
-      "No points, just a fine",
-      "Same as a minor speeding ticket",
-      "Lower points than DUI",
-      "Among the highest point violations"
+      "No points, just fine only",
+      "Same as minor speeding ticket",
+      "Lower points than DUI charges",
+      "Among highest point violations"
     ],
     "correctIndex": 3
   },
@@ -213,10 +213,10 @@
     "category": "cellPhone",
     "question": "When can you legally hold a phone to contact emergency services while driving in New York?",
     "answers": [
-      "During emergencies to report incidents",
+      "During emergencies only",
       "Only when fully stopped",
       "Only with voice commands",
-      "Never while vehicle is running"
+      "Never while vehicle running"
     ],
     "correctIndex": 0
   },
@@ -227,9 +227,9 @@
     "question": "What restriction applies to commercial drivers stopped in traffic in New York?",
     "answers": [
       "Can use phone if not moving",
-      "Cannot use phone even when temporarily stopped",
-      "Can use hands-free only",
-      "Can text but not call"
+      "Cannot use even when stopped",
+      "Can use hands-free only mode",
+      "Can text but cannot call"
     ],
     "correctIndex": 1
   },
@@ -265,9 +265,9 @@
     "category": "duiStateLaws",
     "question": "What does New York's implied consent law require?",
     "answers": [
-      "Agreement to BAC testing when lawfully stopped",
+      "BAC testing when stopped",
       "Permission to search vehicle",
-      "Consent to field sobriety only",
+      "Consent to field sobriety",
       "Waiver of legal representation"
     ],
     "correctIndex": 0
@@ -278,8 +278,8 @@
     "category": "duiStateLaws",
     "question": "What happens if you refuse a chemical test for the first time in New York?",
     "answers": [
-      "Warning only",
-      "One-year license revocation",
+      "Warning only issued",
+      "One-year revocation",
       "No penalty until convicted",
       "Six-month suspension only"
     ],
@@ -291,8 +291,8 @@
     "category": "duiStateLaws",
     "question": "What BAC level constitutes Aggravated DWI in New York?",
     "answers": [
-      "0.10 percent",
-      "0.15 percent",
+      "0.10 percent level",
+      "0.15 percent level",
       "0.18 percent or higher",
       "0.20 percent or higher"
     ],
@@ -304,10 +304,10 @@
     "category": "duiStateLaws",
     "question": "What is a Zero Tolerance violation classified as in New York for drivers under 21?",
     "answers": [
-      "Felony offense",
-      "Misdemeanor offense",
-      "Criminal violation",
-      "Administrative violation, not criminal"
+      "Felony offense charge",
+      "Misdemeanor offense charge",
+      "Criminal violation charge",
+      "Administrative, not criminal"
     ],
     "correctIndex": 3
   },
@@ -317,10 +317,10 @@
     "category": "duiStateLaws",
     "question": "What happens if an underage driver refuses a chemical test in New York?",
     "answers": [
-      "License revoked for at least one year",
-      "Six-month suspension",
-      "Warning for first offense",
-      "No penalty"
+      "Revoked for minimum 1 year",
+      "Six-month suspension period",
+      "Warning for first offense only",
+      "No penalty at all"
     ],
     "correctIndex": 0
   },
@@ -330,10 +330,10 @@
     "category": "duiStateLaws",
     "question": "Can test refusal be used against you in court even if found not guilty in New York?",
     "answers": [
-      "No, it's inadmissible",
-      "Yes, refusal can be brought up in court",
-      "Only if convicted",
-      "Only for repeat offenses"
+      "No, it's inadmissible evidence",
+      "Yes, can be brought up in court",
+      "Only if convicted of charges",
+      "Only for repeat offenses only"
     ],
     "correctIndex": 1
   },
@@ -356,10 +356,10 @@
     "category": "insurance",
     "question": "What does Personal Injury Protection cover in New York?",
     "answers": [
-      "Property damage only",
-      "Vehicle repairs only",
-      "Rental cars only",
-      "Medical bills and lost wages regardless of fault"
+      "Property damage coverage only",
+      "Vehicle repairs coverage only",
+      "Rental cars coverage only",
+      "Medical bills, lost wages"
     ],
     "correctIndex": 3
   },
@@ -369,8 +369,8 @@
     "category": "insurance",
     "question": "When does fault matter for insurance claims in New York's no-fault system?",
     "answers": [
-      "For property damage claims",
-      "Never matters",
+      "For property damage",
+      "Never matters at all",
       "Only for medical bills",
       "Only for total loss"
     ],
@@ -395,10 +395,10 @@
     "category": "stateUnique",
     "question": "What does New York's Move Over Law require when approaching stopped vehicles on highways?",
     "answers": [
-      "Honk horn only",
-      "Flash lights only",
-      "Move over one lane or slow down",
-      "Stop completely"
+      "Honk horn only first",
+      "Flash lights only first",
+      "Move over or slow down",
+      "Stop completely first"
     ],
     "correctIndex": 2
   },
@@ -409,9 +409,9 @@
     "question": "What vehicles does New York's Move Over Law apply to as of 2024?",
     "answers": [
       "Emergency vehicles only",
-      "Police and fire only",
-      "Tow trucks only",
-      "All stopped vehicles on the roadway"
+      "Police and fire vehicles only",
+      "Tow trucks only on highway",
+      "All stopped vehicles on road"
     ],
     "correctIndex": 3
   },
@@ -421,8 +421,8 @@
     "category": "stateUnique",
     "question": "Are right turns on red allowed in New York City?",
     "answers": [
-      "No, unless a sign permits it",
-      "Yes, after stopping",
+      "No, unless sign permits",
+      "Yes, after stopping first",
       "Yes, without stopping",
       "Only on one-way streets"
     ],
@@ -434,10 +434,10 @@
     "category": "stateUnique",
     "question": "How far must you stop from a school bus with flashing lights in New York?",
     "answers": [
-      "10 feet",
-      "At least 20 feet",
-      "15 feet",
-      "25 feet"
+      "10 feet min",
+      "20 feet min",
+      "15 feet min",
+      "25 feet min"
     ],
     "correctIndex": 1
   },
@@ -447,9 +447,9 @@
     "category": "stateUnique",
     "question": "What is unique about New York's school bus stopping law on divided highways?",
     "answers": [
-      "No stopping required",
+      "No stopping required at all",
       "Stop only if same direction",
-      "Must stop from both directions, even on divided highways",
+      "Stop both directions always",
       "Stop only within 100 feet"
     ],
     "correctIndex": 2
@@ -460,10 +460,10 @@
     "category": "stateUnique",
     "question": "When must you dim headlights for oncoming traffic in New York?",
     "answers": [
-      "100 feet away",
-      "200 feet away",
-      "300 feet away",
-      "Within 500 feet of oncoming vehicle"
+      "Within 100 feet away",
+      "Within 200 feet away",
+      "Within 300 feet away",
+      "Within 500 feet away"
     ],
     "correctIndex": 3
   },
@@ -473,10 +473,10 @@
     "category": "stateUnique",
     "question": "What is New York's seatbelt enforcement classification?",
     "answers": [
-      "Primary enforcement - can stop for seatbelt alone",
+      "Primary enforcement law",
       "Secondary enforcement only",
-      "No enforcement",
-      "Warning only"
+      "No enforcement at all",
+      "Warning only issued"
     ],
     "correctIndex": 0
   },
@@ -486,10 +486,10 @@
     "category": "stateUnique",
     "question": "Can school bus drivers turn right on red in New York?",
     "answers": [
-      "Yes, after stopping",
-      "No, school buses cannot turn right on red",
+      "Yes, after stopping first",
+      "No, never allowed at all",
       "Yes, if no students aboard",
-      "Only in rural areas"
+      "Only in rural areas only"
     ],
     "correctIndex": 1
   },
@@ -499,10 +499,10 @@
     "category": "stateUnique",
     "question": "When must you dim headlights for vehicles ahead of you in New York?",
     "answers": [
-      "100 feet",
-      "300 feet",
-      "Within 200 feet of vehicle traveling ahead",
-      "500 feet"
+      "Within 100 feet ahead",
+      "Within 300 feet ahead",
+      "Within 200 feet ahead",
+      "Within 500 feet ahead"
     ],
     "correctIndex": 2
   },
@@ -512,10 +512,10 @@
     "category": "stateUnique",
     "question": "What is required for charter bus passengers aged 8 and older in New York as of 2025?",
     "answers": [
-      "Adult supervision only",
-      "Special tickets",
-      "Parental consent",
-      "Must wear provided seatbelts"
+      "Adult supervision required",
+      "Special tickets required",
+      "Parental consent required",
+      "Wear provided seatbelts"
     ],
     "correctIndex": 3
   }

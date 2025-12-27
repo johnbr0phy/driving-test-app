@@ -1,0 +1,562 @@
+[
+  {
+    "id": "IL-001",
+    "category": "gdlLicensing",
+    "state": "IL",
+    "question": "What is the minimum age to apply for an instruction permit in Illinois?",
+    "answers": [
+      "15 years old",
+      "16 years old",
+      "14 years old",
+      "17 years old"
+    ],
+    "correctIndex": 0,
+    "explanation": "In Illinois, teens must be at least 15 years old to apply for an instruction permit and must be enrolled in driver education."
+  },
+  {
+    "id": "IL-002",
+    "category": "gdlLicensing",
+    "state": "IL",
+    "question": "Who must accompany an Illinois permit holder while driving?",
+    "answers": [
+      "Any licensed adult",
+      "A licensed driver 21 or older with 1 year experience",
+      "A parent or guardian only",
+      "Any driver over 18"
+    ],
+    "correctIndex": 1,
+    "explanation": "Illinois requires permit holders to be accompanied by a licensed driver at least 21 years old with at least one year of driving experience."
+  },
+  {
+    "id": "IL-003",
+    "category": "gdlLicensing",
+    "state": "IL",
+    "question": "When are Illinois permit holders prohibited from driving on weekdays?",
+    "answers": [
+      "9 PM to 6 AM",
+      "11 PM to 5 AM",
+      "10 PM to 6 AM",
+      "Midnight to 6 AM"
+    ],
+    "correctIndex": 2,
+    "explanation": "Illinois permit holders cannot drive Sunday through Thursday from 10 PM to 6 AM, and Friday through Saturday from 11 PM to 6 AM."
+  },
+  {
+    "id": "IL-004",
+    "category": "gdlLicensing",
+    "state": "IL",
+    "question": "How many hours of supervised practice driving must Illinois teens complete before getting a license?",
+    "answers": [
+      "40 hours total",
+      "30 hours total",
+      "60 hours total",
+      "50 hours, including 10 at night"
+    ],
+    "correctIndex": 3,
+    "explanation": "Illinois requires teens to complete at least 50 hours of supervised driving practice, including a minimum of 10 hours at night."
+  },
+  {
+    "id": "IL-005",
+    "category": "gdlLicensing",
+    "state": "IL",
+    "question": "How long must Illinois teens hold an instruction permit before applying for a license?",
+    "answers": [
+      "At least 9 months",
+      "At least 6 months",
+      "At least 12 months",
+      "At least 3 months"
+    ],
+    "correctIndex": 0,
+    "explanation": "Illinois requires teens to hold an instruction permit for at least 9 months or until they turn 18, whichever comes first."
+  },
+  {
+    "id": "IL-006",
+    "category": "gdlLicensing",
+    "state": "IL",
+    "question": "How many unrelated passengers under 20 can an Illinois teen driver have during the first year?",
+    "answers": [
+      "No passengers under 20",
+      "Only one passenger under 20",
+      "Two passengers under 20",
+      "Three passengers under 20"
+    ],
+    "correctIndex": 1,
+    "explanation": "For the first 12 months or until age 18, Illinois teen drivers can only have one passenger under 20, unless they are siblings or children."
+  },
+  {
+    "id": "IL-007",
+    "category": "gdlLicensing",
+    "state": "IL",
+    "question": "Can Illinois drivers under 19 use hands-free cell phones while driving?",
+    "answers": [
+      "Yes, if properly mounted",
+      "Yes, but only for GPS",
+      "No, not even hands-free devices",
+      "Yes, with parental permission"
+    ],
+    "correctIndex": 2,
+    "explanation": "Illinois prohibits drivers under 19 from using any mobile devices while driving, including hands-free devices, except in emergencies."
+  },
+  {
+    "id": "IL-008",
+    "category": "gdlLicensing",
+    "state": "IL",
+    "question": "What must Illinois teens aged 16-17 provide to obtain a driver's license?",
+    "answers": [
+      "School transcripts",
+      "Driver education certificate only",
+      "Proof of insurance only",
+      "Written parental or guardian consent"
+    ],
+    "correctIndex": 3,
+    "explanation": "Illinois requires written consent from a parent or legal guardian for drivers ages 16-17 to obtain a driver's license."
+  },
+  {
+    "id": "IL-009",
+    "category": "gdlLicensing",
+    "state": "IL",
+    "question": "What happens to an Illinois teen's passenger restrictions if they get a traffic violation in the first year?",
+    "answers": [
+      "Restrictions extended for 6 months",
+      "License suspended immediately",
+      "Must retake the driving test",
+      "Restrictions removed early"
+    ],
+    "correctIndex": 0,
+    "explanation": "A traffic conviction during the first year of licensing extends the passenger limitation by 6 months in Illinois."
+  },
+  {
+    "id": "IL-010",
+    "category": "gdlLicensing",
+    "state": "IL",
+    "question": "What is required for all occupants in a vehicle driven by an Illinois permit holder?",
+    "answers": [
+      "Valid identification",
+      "Must wear safety belts",
+      "Must be family members",
+      "Must be over 16"
+    ],
+    "correctIndex": 1,
+    "explanation": "Illinois law requires all occupants in a vehicle driven by a permit holder to wear safety belts at all times."
+  },
+  {
+    "id": "IL-011",
+    "category": "gdlLicensing",
+    "state": "IL",
+    "question": "How is the number of passengers limited for Illinois permit holders?",
+    "answers": [
+      "Only one total passenger",
+      "Only family members allowed",
+      "One in front, number of seat belts in back",
+      "Two passengers maximum"
+    ],
+    "correctIndex": 2,
+    "explanation": "Illinois permit holders are limited to one passenger in the front seat and the number of safety belts available in the back seat."
+  },
+  {
+    "id": "IL-012",
+    "category": "gdlLicensing",
+    "state": "IL",
+    "question": "What can a parent or guardian do to an Illinois minor's license before they turn 18?",
+    "answers": [
+      "Transfer it to another teen",
+      "Extend the restrictions",
+      "Upgrade it to unrestricted",
+      "Cancel it at any time for any reason"
+    ],
+    "correctIndex": 3,
+    "explanation": "In Illinois, the parent or guardian who gave consent can cancel a minor's license at any time for any reason until age 18."
+  },
+  {
+    "id": "IL-013",
+    "category": "cellPhone",
+    "state": "IL",
+    "question": "What is Illinois's primary rule about cell phone use while driving?",
+    "answers": [
+      "Must use hands-free or voice-activated modes",
+      "Can use at red lights only",
+      "Can use if mounted on dashboard",
+      "Can use for navigation only"
+    ],
+    "correctIndex": 0,
+    "explanation": "Illinois law requires drivers to use hands-free or voice-activated modes when using cell phones, enabling them to keep focus on the road."
+  },
+  {
+    "id": "IL-014",
+    "category": "cellPhone",
+    "state": "IL",
+    "question": "What new restriction went into effect in Illinois on January 1, 2024?",
+    "answers": [
+      "No GPS use allowed",
+      "Prohibition of video calls and social media while driving",
+      "No music streaming allowed",
+      "All cell phones must be turned off"
+    ],
+    "correctIndex": 1,
+    "explanation": "Illinois banned video conferencing and social media access while driving starting January 1, 2024, including Zoom, Teams, Facebook, and Instagram."
+  },
+  {
+    "id": "IL-015",
+    "category": "cellPhone",
+    "state": "IL",
+    "question": "When can Illinois drivers under 19 legally use a cell phone while driving?",
+    "answers": [
+      "With parental permission",
+      "For school-related purposes",
+      "Only to contact emergency services",
+      "Never under any circumstances"
+    ],
+    "correctIndex": 2,
+    "explanation": "Illinois drivers under 19 cannot use cell phones while driving, even hands-free, except to contact law enforcement, healthcare providers, or emergency services."
+  },
+  {
+    "id": "IL-016",
+    "category": "cellPhone",
+    "state": "IL",
+    "question": "What is prohibited in Illinois construction zones and school zones regarding electronic devices?",
+    "answers": [
+      "Only handheld devices",
+      "Only texting",
+      "Only video calls",
+      "Any use of electronic devices, even hands-free"
+    ],
+    "correctIndex": 3,
+    "explanation": "Illinois prohibits any use of electronic devices in construction zones and school zones, regardless of whether hands-free technology is being used."
+  },
+  {
+    "id": "IL-017",
+    "category": "cellPhone",
+    "state": "IL",
+    "question": "When is it legal to use a handheld phone while driving in Illinois?",
+    "answers": [
+      "When reporting an emergency",
+      "At red lights only",
+      "In parking lots only",
+      "When traffic is stopped"
+    ],
+    "correctIndex": 0,
+    "explanation": "Illinois law only permits handheld phone use when the vehicle is parked on the roadway shoulder or when reporting an emergency situation."
+  },
+  {
+    "id": "IL-018",
+    "category": "cellPhone",
+    "state": "IL",
+    "question": "Can Illinois drivers use handheld phones while stopped at a red light or in traffic?",
+    "answers": [
+      "Yes, if traffic is stopped",
+      "No, handheld use is prohibited even when stopped",
+      "Yes, at red lights only",
+      "Yes, if the parking brake is engaged"
+    ],
+    "correctIndex": 1,
+    "explanation": "Illinois prohibits handheld electronic device use while driving, even when stopped at a red light or stuck in traffic."
+  },
+  {
+    "id": "IL-019",
+    "category": "duiStateLaws",
+    "state": "IL",
+    "question": "What is the legal blood alcohol concentration limit for Illinois drivers 21 and older?",
+    "answers": [
+      "0.10%",
+      "0.05%",
+      "0.08%",
+      "0.06%"
+    ],
+    "correctIndex": 2,
+    "explanation": "Illinois law sets the legal blood alcohol concentration limit at 0.08% for drivers 21 years and older."
+  },
+  {
+    "id": "IL-020",
+    "category": "duiStateLaws",
+    "state": "IL",
+    "question": "What BAC level triggers Illinois's zero-tolerance law for drivers under 21?",
+    "answers": [
+      "0.02%",
+      "0.05%",
+      "0.04%",
+      "Any trace of alcohol at all"
+    ],
+    "correctIndex": 3,
+    "explanation": "Illinois zero-tolerance law means drivers under 21 cannot have any trace of alcohol, with violations occurring at any measurable BAC level."
+  },
+  {
+    "id": "IL-021",
+    "category": "duiStateLaws",
+    "state": "IL",
+    "question": "What does Illinois's implied consent law mean when you obtain a driver's license?",
+    "answers": [
+      "You agree to submit to chemical testing if arrested for DUI",
+      "You consent to roadside searches",
+      "You agree to install a breathalyzer",
+      "You consent to GPS tracking"
+    ],
+    "correctIndex": 0,
+    "explanation": "Illinois implied consent law means that by obtaining a driver's license, you automatically agree to chemical testing if arrested for DUI."
+  },
+  {
+    "id": "IL-022",
+    "category": "duiStateLaws",
+    "state": "IL",
+    "question": "What happens if an Illinois driver refuses chemical testing after a first DUI arrest?",
+    "answers": [
+      "No penalty for first refusal",
+      "Automatic 12-month license suspension",
+      "Only a fine is imposed",
+      "Mandatory jail time"
+    ],
+    "correctIndex": 1,
+    "explanation": "Refusing a breath or chemical test after a DUI arrest results in an automatic 12-month license suspension in Illinois for a first refusal."
+  },
+  {
+    "id": "IL-023",
+    "category": "duiStateLaws",
+    "state": "IL",
+    "question": "How long is the license suspension for an Illinois driver under 21 with a first zero-tolerance violation?",
+    "answers": [
+      "1 month",
+      "6 months",
+      "3 months",
+      "1 year"
+    ],
+    "correctIndex": 2,
+    "explanation": "A first zero-tolerance violation in Illinois results in a 3-month suspension of driving privileges for drivers under 21."
+  },
+  {
+    "id": "IL-024",
+    "category": "duiStateLaws",
+    "state": "IL",
+    "question": "What is the minimum license revocation period for a first DUI conviction in Illinois for underage drivers?",
+    "answers": [
+      "1 year",
+      "6 months",
+      "3 years",
+      "2 years"
+    ],
+    "correctIndex": 3,
+    "explanation": "Illinois imposes a minimum 2-year revocation of driving privileges for a first DUI conviction for drivers under age 21."
+  },
+  {
+    "id": "IL-025",
+    "category": "duiStateLaws",
+    "state": "IL",
+    "question": "What are the only exceptions to Illinois's zero-tolerance policy for underage drivers?",
+    "answers": [
+      "Medicine with alcohol or religious ceremony",
+      "Drinking at home only",
+      "Parental permission",
+      "Special occasion exemptions"
+    ],
+    "correctIndex": 0,
+    "explanation": "Illinois only exempts underage drivers from zero-tolerance if they consumed medicine containing alcohol or drank as part of a religious ceremony."
+  },
+  {
+    "id": "IL-026",
+    "category": "duiStateLaws",
+    "state": "IL",
+    "question": "What is the suspension period for a second refusal of chemical testing in Illinois?",
+    "answers": [
+      "1 year",
+      "3 years",
+      "2 years",
+      "5 years"
+    ],
+    "correctIndex": 1,
+    "explanation": "A second refusal to submit to chemical testing within five years results in an automatic 3-year license suspension in Illinois."
+  },
+  {
+    "id": "IL-027",
+    "category": "insurance",
+    "state": "IL",
+    "question": "What type of auto insurance coverage is mandatory in Illinois?",
+    "answers": [
+      "Comprehensive coverage",
+      "Collision coverage",
+      "Liability coverage",
+      "Gap coverage"
+    ],
+    "correctIndex": 2,
+    "explanation": "Illinois requires all drivers to carry liability coverage for both bodily injury and property damage to protect others in accidents."
+  },
+  {
+    "id": "IL-028",
+    "category": "insurance",
+    "state": "IL",
+    "question": "What additional coverage must Illinois auto insurance policies include beyond liability?",
+    "answers": [
+      "Collision coverage",
+      "Comprehensive coverage",
+      "Gap insurance",
+      "Uninsured motorist protection"
+    ],
+    "correctIndex": 3,
+    "explanation": "Illinois requires auto policies to include uninsured motorist coverage in addition to liability coverage to protect against uninsured drivers."
+  },
+  {
+    "id": "IL-029",
+    "category": "insurance",
+    "state": "IL",
+    "question": "What does liability insurance primarily cover in Illinois?",
+    "answers": [
+      "Injuries and damages you cause to others",
+      "Your own vehicle repairs",
+      "Your own medical expenses",
+      "Rental car costs"
+    ],
+    "correctIndex": 0,
+    "explanation": "Liability insurance covers injury-related damages and property damage that you cause to others when you are at fault in an accident."
+  },
+  {
+    "id": "IL-030",
+    "category": "insurance",
+    "state": "IL",
+    "question": "How does Illinois verify that drivers maintain continuous auto insurance coverage?",
+    "answers": [
+      "Random roadside checks",
+      "Electronic verification system that checks twice yearly",
+      "Annual mail-in forms",
+      "Police traffic stops only"
+    ],
+    "correctIndex": 1,
+    "explanation": "Illinois enforces insurance requirements through an electronic verification system that runs continuously and checks active policies twice a year."
+  },
+  {
+    "id": "IL-031",
+    "category": "stateUnique",
+    "state": "IL",
+    "question": "What does Illinois's Scott's Law require when approaching emergency vehicles with lights activated?",
+    "answers": [
+      "Stop completely behind the vehicle",
+      "Turn on hazard lights",
+      "Change lanes or slow down and proceed with caution",
+      "Call 911 to report"
+    ],
+    "correctIndex": 2,
+    "explanation": "Scott's Law requires Illinois drivers to change lanes if possible, or slow down and proceed with caution when approaching emergency vehicles with lights on."
+  },
+  {
+    "id": "IL-032",
+    "category": "stateUnique",
+    "state": "IL",
+    "question": "What major change to Illinois's Scott's Law took effect on January 1, 2025?",
+    "answers": [
+      "Increased fines only",
+      "Applies to more vehicle types",
+      "Drivers must always slow down and move over when possible",
+      "Only applies on highways"
+    ],
+    "correctIndex": 3,
+    "explanation": "As of January 1, 2025, Illinois drivers must always slow down and move over whenever possible, strengthening the previous requirements."
+  },
+  {
+    "id": "IL-033",
+    "category": "stateUnique",
+    "state": "IL",
+    "question": "Which vehicles does Illinois's Scott's Law apply to?",
+    "answers": [
+      "Any vehicle authorized for emergency lights including IDOT and snowplows",
+      "Police vehicles only",
+      "Fire trucks only",
+      "Ambulances only"
+    ],
+    "correctIndex": 0,
+    "explanation": "Scott's Law applies to any authorized emergency vehicle with oscillating, rotating, or flashing lights, including police, fire, IDOT vehicles, and snowplows."
+  },
+  {
+    "id": "IL-034",
+    "category": "stateUnique",
+    "state": "IL",
+    "question": "What worker protection was added to Illinois's Scott's Law in 2025?",
+    "answers": [
+      "Delivery drivers",
+      "Construction and maintenance crews",
+      "Tow truck operators only",
+      "Utility workers only"
+    ],
+    "correctIndex": 1,
+    "explanation": "The 2025 expansion of Scott's Law extended protection to construction and maintenance crews working in highway work zones."
+  },
+  {
+    "id": "IL-035",
+    "category": "stateUnique",
+    "state": "IL",
+    "question": "How are red light camera tickets treated in Chicago and Illinois?",
+    "answers": [
+      "As felonies",
+      "As moving violations",
+      "Like parking tickets, not moving violations",
+      "As misdemeanors"
+    ],
+    "correctIndex": 2,
+    "explanation": "Red light camera tickets in Illinois are treated like parking tickets, not moving violations, so they won't impact your driving record or insurance."
+  },
+  {
+    "id": "IL-036",
+    "category": "stateUnique",
+    "state": "IL",
+    "question": "What violation is captured by Chicago's red light camera system?",
+    "answers": [
+      "Speeding through intersections",
+      "Illegal turns only",
+      "Blocking intersections",
+      "Running red lights or rolling stops on right turns"
+    ],
+    "correctIndex": 3,
+    "explanation": "Chicago red light cameras enforce against drivers who run red lights or perform rolling stops while making right-hand turns on red."
+  },
+  {
+    "id": "IL-037",
+    "category": "stateUnique",
+    "state": "IL",
+    "question": "Who was Illinois's Scott's Law named in honor of?",
+    "answers": [
+      "Lieutenant Scott Gillen of Chicago Fire Department",
+      "A state legislator",
+      "An Illinois State Police officer",
+      "A highway construction worker"
+    ],
+    "correctIndex": 0,
+    "explanation": "Scott's Law honors Lieutenant Scott Gillen of the Chicago Fire Department, who was killed by an impaired driver while assisting at a crash."
+  },
+  {
+    "id": "IL-038",
+    "category": "stateUnique",
+    "state": "IL",
+    "question": "What must Illinois residents ages 18-20 complete if they didn't take driver education in school?",
+    "answers": [
+      "Online driving course",
+      "6-hour adult driver education course",
+      "Defensive driving course",
+      "No additional requirements"
+    ],
+    "correctIndex": 1,
+    "explanation": "Illinois requires license applicants ages 18-20 who didn't complete driver education in school to take a 6-hour adult driver education course."
+  },
+  {
+    "id": "IL-039",
+    "category": "stateUnique",
+    "state": "IL",
+    "question": "What happens to your license plates if convicted of driving without insurance in Illinois?",
+    "answers": [
+      "Nothing happens to the plates",
+      "Plates are replaced with temporary ones",
+      "Plates will be suspended",
+      "Plates must be surrendered permanently"
+    ],
+    "correctIndex": 2,
+    "explanation": "If convicted of driving without insurance in Illinois, your license plates will be suspended until you provide proof of coverage."
+  },
+  {
+    "id": "IL-040",
+    "category": "stateUnique",
+    "state": "IL",
+    "question": "What is the main purpose of Illinois's Scott's Law?",
+    "answers": [
+      "Generate revenue from fines",
+      "Control traffic flow",
+      "Reduce speeding",
+      "Protect emergency workers and reduce roadside crashes"
+    ],
+    "correctIndex": 3,
+    "explanation": "Scott's Law was created to increase safety by protecting emergency workers and reducing dangerous crashes at roadside emergency scenes."
+  }
+]

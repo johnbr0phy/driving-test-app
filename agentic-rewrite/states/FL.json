@@ -1,0 +1,522 @@
+[
+  {
+    "id": "FL-001",
+    "category": "gdlLicensing",
+    "question": "At what age can Florida residents first apply for a learner's license?",
+    "answers": [
+      "15 years old",
+      "14 years old",
+      "16 years old",
+      "17 years old"
+    ],
+    "correctIndex": 0,
+    "explanation": "Florida allows teens to apply for a learner's license at age 15, beginning the graduated licensing process."
+  },
+  {
+    "id": "FL-002",
+    "category": "gdlLicensing",
+    "question": "How many hours of supervised driving practice must Florida learner's permit holders complete?",
+    "answers": [
+      "40 hours total",
+      "50 hours, including 10 at night",
+      "30 hours, including 5 at night",
+      "60 hours, including 15 at night"
+    ],
+    "correctIndex": 1,
+    "explanation": "Florida requires 50 total hours of supervised driving, with at least 10 hours completed at night."
+  },
+  {
+    "id": "FL-003",
+    "category": "gdlLicensing",
+    "question": "What course must Florida teens under 18 complete before applying for a learner's permit as of August 2025?",
+    "answers": [
+      "TLSAE course only",
+      "Defensive driving course",
+      "Driver Education and Traffic Safety (DETS) course",
+      "Advanced driver training"
+    ],
+    "correctIndex": 2,
+    "explanation": "Starting August 1, 2025, Florida teens under 18 must complete the 6-hour DETS course before applying for a learner's permit."
+  },
+  {
+    "id": "FL-004",
+    "category": "gdlLicensing",
+    "question": "During the first three months with a Florida learner's license, when can teens drive?",
+    "answers": [
+      "Until 8 PM",
+      "Until 10 PM",
+      "Until midnight",
+      "Daylight hours only"
+    ],
+    "correctIndex": 3,
+    "explanation": "For the first three months, Florida learner's license holders may only drive during daylight hours."
+  },
+  {
+    "id": "FL-005",
+    "category": "gdlLicensing",
+    "question": "After the first three months, until what time can Florida learner's license holders drive?",
+    "answers": [
+      "10 PM",
+      "11 PM",
+      "Midnight",
+      "9 PM"
+    ],
+    "correctIndex": 0,
+    "explanation": "After three months with a learner's license, Florida teens can drive until 10 PM with a licensed adult."
+  },
+  {
+    "id": "FL-006",
+    "category": "gdlLicensing",
+    "question": "What is the minimum age requirement for the adult supervising a Florida learner's permit holder?",
+    "answers": [
+      "18 years old",
+      "21 years old",
+      "25 years old",
+      "19 years old"
+    ],
+    "correctIndex": 1,
+    "explanation": "Florida requires learner's permit holders to be supervised by a licensed driver who is at least 21 years old."
+  },
+  {
+    "id": "FL-007",
+    "category": "gdlLicensing",
+    "question": "What are the nighttime driving restrictions for 16-year-old Florida drivers with a provisional license?",
+    "answers": [
+      "Cannot drive 10 PM to 6 AM",
+      "Cannot drive midnight to 5 AM",
+      "Cannot drive 11 PM to 6 AM",
+      "Cannot drive 9 PM to 5 AM"
+    ],
+    "correctIndex": 2,
+    "explanation": "Sixteen-year-old Florida drivers with a provisional license cannot drive between 11 PM and 6 AM unless for work or with a 21+ adult."
+  },
+  {
+    "id": "FL-008",
+    "category": "gdlLicensing",
+    "question": "What are the nighttime restrictions for 17-year-old Florida provisional license holders?",
+    "answers": [
+      "11 PM to 6 AM",
+      "Midnight to 5 AM",
+      "10 PM to 6 AM",
+      "1 AM to 5 AM"
+    ],
+    "correctIndex": 3,
+    "explanation": "Seventeen-year-old Florida drivers are restricted from driving between 1 AM and 5 AM unless for work or with a 21+ adult."
+  },
+  {
+    "id": "FL-009",
+    "category": "gdlLicensing",
+    "question": "What is the minimum period a Florida teen must hold a learner's license before getting a provisional license?",
+    "answers": [
+      "12 months or until age 18",
+      "6 months",
+      "9 months",
+      "18 months"
+    ],
+    "correctIndex": 0,
+    "explanation": "Florida requires teens to hold a learner's license for at least 12 months or until their 18th birthday, whichever comes first."
+  },
+  {
+    "id": "FL-010",
+    "category": "gdlLicensing",
+    "question": "Where must the supervising adult sit when accompanying a Florida learner's permit holder?",
+    "answers": [
+      "Anywhere in the vehicle",
+      "Front passenger seat",
+      "Back seat for better observation",
+      "Either front seat"
+    ],
+    "correctIndex": 1,
+    "explanation": "The supervising licensed adult must sit in the front passenger seat when a learner's permit holder is driving in Florida."
+  },
+  {
+    "id": "FL-011",
+    "category": "gdlLicensing",
+    "question": "At what age do Florida drivers receive unrestricted licenses without GDL limitations?",
+    "answers": [
+      "17 years old",
+      "16 years old",
+      "18 years old",
+      "19 years old"
+    ],
+    "correctIndex": 2,
+    "explanation": "At age 18, Florida drivers receive unrestricted licenses, provided they have had no violations during the provisional period."
+  },
+  {
+    "id": "FL-012",
+    "category": "gdlLicensing",
+    "question": "What happens if a Florida teen driver under 18 commits a moving violation?",
+    "answers": [
+      "License suspended for 30 days",
+      "Must pay fine only",
+      "Community service required",
+      "Restrictions may be extended or license suspended"
+    ],
+    "correctIndex": 3,
+    "explanation": "Florida GDL violations can result in extended restrictions or license suspension for drivers under 18."
+  },
+  {
+    "id": "FL-013",
+    "category": "cellPhone",
+    "question": "What type of offense is texting while driving in Florida?",
+    "answers": [
+      "Primary offense allowing stops",
+      "Secondary offense only",
+      "Warning only for first time",
+      "Not currently illegal"
+    ],
+    "correctIndex": 0,
+    "explanation": "Since July 1, 2019, texting while driving is a primary offense in Florida, meaning officers can stop vehicles solely for this violation."
+  },
+  {
+    "id": "FL-014",
+    "category": "cellPhone",
+    "question": "Where is handheld phone use completely prohibited in Florida?",
+    "answers": [
+      "All highways",
+      "School and active construction zones",
+      "Residential areas",
+      "All roads statewide"
+    ],
+    "correctIndex": 1,
+    "explanation": "Florida prohibits handheld phone use in school zones and active construction zones with workers present."
+  },
+  {
+    "id": "FL-015",
+    "category": "cellPhone",
+    "question": "How much is the base fine for a second texting offense in Florida within five years?",
+    "answers": [
+      "No fine, warning only",
+      "Same as first offense",
+      "Higher fine plus points",
+      "License suspension only"
+    ],
+    "correctIndex": 2,
+    "explanation": "A second texting offense within five years becomes a moving violation with a higher fine and three points on the license."
+  },
+  {
+    "id": "FL-016",
+    "category": "cellPhone",
+    "question": "What manual phone activity does Florida's texting law specifically prohibit while driving?",
+    "answers": [
+      "Voice calls only",
+      "GPS navigation",
+      "Social media browsing",
+      "Typing or entering multiple characters"
+    ],
+    "correctIndex": 3,
+    "explanation": "Florida Statute 316.305 prohibits manually typing or entering multiple characters into wireless devices while operating a vehicle."
+  },
+  {
+    "id": "FL-017",
+    "category": "cellPhone",
+    "question": "When did texting while driving become a primary offense in Florida?",
+    "answers": [
+      "July 1, 2019",
+      "January 1, 2020",
+      "July 1, 2018",
+      "January 1, 2019"
+    ],
+    "correctIndex": 0,
+    "explanation": "Florida upgraded texting while driving to a primary offense on July 1, 2019, allowing direct enforcement."
+  },
+  {
+    "id": "FL-018",
+    "category": "cellPhone",
+    "question": "What happens if you use a handheld device in a Florida school zone with active signals?",
+    "answers": [
+      "Warning only",
+      "Enhanced penalties apply",
+      "Standard texting fine",
+      "No penalty if school dismissed"
+    ],
+    "correctIndex": 1,
+    "explanation": "Florida imposes enhanced penalties for handheld device use in school zones when signals are flashing or in active work zones."
+  },
+  {
+    "id": "FL-019",
+    "category": "duiStateLaws",
+    "question": "What is the legal blood alcohol limit for drivers under 21 in Florida?",
+    "answers": [
+      "0.05%",
+      "0.08%",
+      "0.02%",
+      "Zero tolerance"
+    ],
+    "correctIndex": 2,
+    "explanation": "Florida has a zero tolerance policy with a 0.02% BAC limit for drivers under 21 years old."
+  },
+  {
+    "id": "FL-020",
+    "category": "duiStateLaws",
+    "question": "What is the BAC limit for commercial drivers operating commercial vehicles in Florida?",
+    "answers": [
+      "0.08%",
+      "0.02%",
+      "0.06%",
+      "0.04%"
+    ],
+    "correctIndex": 3,
+    "explanation": "Florida commercial drivers must maintain a BAC below 0.04% when operating commercial vehicles."
+  },
+  {
+    "id": "FL-021",
+    "category": "duiStateLaws",
+    "question": "How long do DUI convictions remain on a Florida driving record?",
+    "answers": [
+      "75 years and cannot be sealed",
+      "10 years",
+      "25 years",
+      "Lifetime but can be expunged"
+    ],
+    "correctIndex": 0,
+    "explanation": "Florida DUI convictions remain on driving records for 75 years and cannot be sealed or expunged."
+  },
+  {
+    "id": "FL-022",
+    "category": "duiStateLaws",
+    "question": "What major change did Trenton's Law bring to Florida DUI enforcement in October 2025?",
+    "answers": [
+      "Higher fines only",
+      "Refusing chemical tests is now criminal",
+      "Lower BAC limits",
+      "Mandatory jail time"
+    ],
+    "correctIndex": 1,
+    "explanation": "Trenton's Law, effective October 1, 2025, made refusing chemical testing a criminal charge, not just an administrative penalty."
+  },
+  {
+    "id": "FL-023",
+    "category": "duiStateLaws",
+    "question": "What is the standard BAC limit for drivers 21 and over in Florida?",
+    "answers": [
+      "0.10%",
+      "0.05%",
+      "0.08%",
+      "0.06%"
+    ],
+    "correctIndex": 2,
+    "explanation": "Florida sets the legal BAC limit at 0.08% for drivers who are 21 years of age or older."
+  },
+  {
+    "id": "FL-024",
+    "category": "duiStateLaws",
+    "question": "How long is the license suspension for a first-time refusal of chemical testing in Florida?",
+    "answers": [
+      "6 months",
+      "90 days",
+      "18 months",
+      "1 year"
+    ],
+    "correctIndex": 3,
+    "explanation": "A first refusal to submit to chemical testing results in an automatic one-year license suspension in Florida."
+  },
+  {
+    "id": "FL-025",
+    "category": "duiStateLaws",
+    "question": "What type of insurance certificate must Florida DUI offenders maintain for at least three years?",
+    "answers": [
+      "FR-44 certificate",
+      "SR-22 certificate",
+      "Standard liability",
+      "DUI-specific policy"
+    ],
+    "correctIndex": 0,
+    "explanation": "Florida requires DUI offenders to maintain an FR-44 certificate showing higher insurance coverage for at least three years."
+  },
+  {
+    "id": "FL-026",
+    "category": "duiStateLaws",
+    "question": "Under Trenton's Law, what is the maximum penalty for a second DUI manslaughter conviction?",
+    "answers": [
+      "15 years",
+      "Up to 30 years as first-degree felony",
+      "20 years",
+      "25 years"
+    ],
+    "correctIndex": 1,
+    "explanation": "Trenton's Law elevated second DUI manslaughter convictions from second-degree to first-degree felonies with up to 30 years imprisonment."
+  },
+  {
+    "id": "FL-027",
+    "category": "insurance",
+    "question": "What type of insurance system does Florida operate under?",
+    "answers": [
+      "Fault-based liability",
+      "Hybrid system",
+      "No-fault with PIP coverage",
+      "Tort liability only"
+    ],
+    "correctIndex": 2,
+    "explanation": "Florida operates under a no-fault insurance system requiring Personal Injury Protection (PIP) coverage for all drivers."
+  },
+  {
+    "id": "FL-028",
+    "category": "insurance",
+    "question": "How soon after an accident must you seek medical treatment to qualify for PIP benefits in Florida?",
+    "answers": [
+      "7 days",
+      "30 days",
+      "24 hours",
+      "14 days"
+    ],
+    "correctIndex": 3,
+    "explanation": "Florida requires you to seek medical treatment within 14 days of an accident to qualify for PIP benefits."
+  },
+  {
+    "id": "FL-029",
+    "category": "insurance",
+    "question": "What minimum PIP coverage must Florida drivers carry?",
+    "answers": [
+      "$10,000",
+      "$25,000",
+      "$15,000",
+      "$5,000"
+    ],
+    "correctIndex": 0,
+    "explanation": "Florida law requires all drivers to carry a minimum of $10,000 in Personal Injury Protection coverage."
+  },
+  {
+    "id": "FL-030",
+    "category": "insurance",
+    "question": "What percentage of medical expenses does Florida PIP typically cover?",
+    "answers": [
+      "100% up to limits",
+      "80% of medical expenses",
+      "50% of medical expenses",
+      "60% of medical expenses"
+    ],
+    "correctIndex": 1,
+    "explanation": "Florida PIP covers up to 80% of medical expenses and 60% of lost wages, up to the policy limit."
+  },
+  {
+    "id": "FL-031",
+    "category": "stateUnique",
+    "question": "During hurricane evacuations, which vehicles can use Emergency Shoulder Use lanes in Florida?",
+    "answers": [
+      "All vehicles including motorcycles",
+      "Emergency vehicles only",
+      "Cars and SUVs only, no large trucks or trailers",
+      "Any vehicle under posted weight"
+    ],
+    "correctIndex": 2,
+    "explanation": "Florida's ESU program allows cars and SUVs to use shoulders during evacuations, but prohibits large trucks, buses, and trailers."
+  },
+  {
+    "id": "FL-032",
+    "category": "stateUnique",
+    "question": "How often must Florida drivers age 80 and older renew their licenses?",
+    "answers": [
+      "Every 8 years like other drivers",
+      "Every 4 years",
+      "Annually",
+      "Every 6 years with vision test"
+    ],
+    "correctIndex": 3,
+    "explanation": "Florida requires drivers 80 and older to renew their licenses every 6 years and pass a vision test each renewal."
+  },
+  {
+    "id": "FL-033",
+    "category": "stateUnique",
+    "question": "What is Florida's minimum vision requirement for license holders?",
+    "answers": [
+      "20/50 in at least one eye",
+      "20/40 in both eyes",
+      "20/30 in at least one eye",
+      "20/60 in at least one eye"
+    ],
+    "correctIndex": 0,
+    "explanation": "Florida requires drivers to have at least 20/50 vision in one eye, with or without corrective lenses."
+  },
+  {
+    "id": "FL-034",
+    "category": "stateUnique",
+    "question": "As of January 2025, what triggers Florida's Move Over Law requirements?",
+    "answers": [
+      "Emergency vehicles only",
+      "Any vehicle with hazard lights activated",
+      "Police and fire vehicles only",
+      "Tow trucks and emergency vehicles"
+    ],
+    "correctIndex": 1,
+    "explanation": "Florida's updated Move Over Law now requires drivers to move over or slow down for any vehicle with hazard lights activated."
+  },
+  {
+    "id": "FL-035",
+    "category": "stateUnique",
+    "question": "If you cannot move over for a stopped vehicle in Florida, how much must you reduce speed?",
+    "answers": [
+      "10 mph below limit",
+      "15 mph below limit",
+      "20 mph below limit, or to 5 mph if limit is 20 or less",
+      "Half the posted speed"
+    ],
+    "correctIndex": 2,
+    "explanation": "Florida law requires reducing speed by 20 mph below the limit, or to 5 mph if the speed limit is 20 mph or less."
+  },
+  {
+    "id": "FL-036",
+    "category": "stateUnique",
+    "question": "Which shoulder is used for Emergency Shoulder Use on Florida's four-lane highways?",
+    "answers": [
+      "Left shoulder only",
+      "Either shoulder as needed",
+      "Center median",
+      "Right or outside shoulder"
+    ],
+    "correctIndex": 3,
+    "explanation": "On four-lane Florida highways, ESU uses the right or outside shoulder, while six-lane roads use the left shoulder."
+  },
+  {
+    "id": "FL-037",
+    "category": "stateUnique",
+    "question": "What minimum horizontal field of vision is required for Florida drivers?",
+    "answers": [
+      "130 degrees",
+      "120 degrees",
+      "140 degrees",
+      "110 degrees"
+    ],
+    "correctIndex": 0,
+    "explanation": "Florida requires drivers to have a horizontal field of vision of at least 130 degrees to qualify for a license."
+  },
+  {
+    "id": "FL-038",
+    "category": "stateUnique",
+    "question": "What replaced Florida's contraflow lane reversal system for hurricane evacuations?",
+    "answers": [
+      "Restricted access highways",
+      "Emergency Shoulder Use (ESU)",
+      "Toll road waivers",
+      "Mass transit systems"
+    ],
+    "correctIndex": 1,
+    "explanation": "Florida replaced contraflow with Emergency Shoulder Use (ESU) in 2017, allowing shoulders to become travel lanes during evacuations."
+  },
+  {
+    "id": "FL-039",
+    "category": "stateUnique",
+    "question": "What are the recommended top speeds when using ESU shoulder lanes during evacuations?",
+    "answers": [
+      "45-55 mph",
+      "Same as normal lanes",
+      "30-40 mph due to narrower width",
+      "20-25 mph"
+    ],
+    "correctIndex": 2,
+    "explanation": "ESU shoulders are about 2 feet narrower than regular lanes, so recommended speeds are 30-40 mph for safety."
+  },
+  {
+    "id": "FL-040",
+    "category": "stateUnique",
+    "question": "What is the minimum required PIP coverage amount in Florida for property damage liability?",
+    "answers": [
+      "$5,000",
+      "$15,000",
+      "$25,000",
+      "$10,000"
+    ],
+    "correctIndex": 3,
+    "explanation": "Florida requires both $10,000 in Personal Injury Protection and $10,000 in Property Damage Liability coverage."
+  }
+]

@@ -1,0 +1,482 @@
+[
+  {
+    "id": "DE-001",
+    "category": "gdlLicensing",
+    "question": "What minimum age must you reach to apply for Delaware's Graduated Driver License?",
+    "answers": [
+      "Sixteen years old",
+      "Fifteen and a half years old",
+      "Seventeen years old",
+      "Fifteen years old"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "DE-002",
+    "category": "gdlLicensing",
+    "question": "During Phase 1 of Delaware's GDL program, what is the minimum age requirement for your supervising driver?",
+    "answers": [
+      "At least 21 years old",
+      "At least 25 years old",
+      "At least 23 years old",
+      "At least 18 years old"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "DE-003",
+    "category": "gdlLicensing",
+    "question": "How many total hours must Delaware GDL holders drive during their first six months?",
+    "answers": [
+      "Forty hours minimum",
+      "Thirty hours minimum",
+      "Fifty hours minimum",
+      "Sixty hours minimum"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "DE-004",
+    "category": "gdlLicensing",
+    "question": "What happens to a Delaware GDL after the permit holder completes twelve valid months of driving?",
+    "answers": [
+      "You must schedule a new road test",
+      "You must pay an upgrade fee",
+      "You must complete additional driver education",
+      "It automatically converts to a Class D license"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "DE-005",
+    "category": "gdlLicensing",
+    "question": "During Phase 2 of Delaware's GDL, when can you drive unsupervised?",
+    "answers": [
+      "Between 6 AM and 10 PM only",
+      "Between 5 AM and 11 PM only",
+      "Between 7 AM and 9 PM only",
+      "Anytime without restrictions"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "DE-006",
+    "category": "gdlLicensing",
+    "question": "Who is legally liable for damages caused by a Delaware GDL driver's negligence?",
+    "answers": [
+      "Only the GDL driver",
+      "Both the sponsor and the GDL driver",
+      "Only the sponsor",
+      "The driver's insurance company only"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "DE-007",
+    "category": "gdlLicensing",
+    "question": "How many non-family passengers can a Phase 2 Delaware GDL holder transport unsupervised?",
+    "answers": [
+      "Two passengers maximum",
+      "Three passengers maximum",
+      "One passenger only",
+      "No passengers allowed"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "DE-008",
+    "category": "gdlLicensing",
+    "question": "What document must Delaware GDL applicants present as proof of driver education completion?",
+    "answers": [
+      "Red Certificate from any state",
+      "Online course completion email",
+      "School transcript showing driver's ed",
+      "Blue Certificate from Delaware"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "DE-009",
+    "category": "gdlLicensing",
+    "question": "How many years of licensure must a Delaware GDL supervising driver have?",
+    "answers": [
+      "At least five years",
+      "At least three years",
+      "At least seven years",
+      "At least ten years"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "DE-010",
+    "category": "gdlLicensing",
+    "question": "What happens if a Delaware GDL holder's driving privilege is suspended during the twelve-month period?",
+    "answers": [
+      "The suspension time adds to the twelve months",
+      "The suspension time does not count toward the twelve months",
+      "The GDL is permanently revoked",
+      "The driver must restart from Phase 1"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "DE-011",
+    "category": "gdlLicensing",
+    "question": "How many night driving hours must Delaware GDL holders complete during Phase 1?",
+    "answers": [
+      "Five hours minimum",
+      "Fifteen hours minimum",
+      "Ten hours minimum",
+      "Twenty hours minimum"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "DE-012",
+    "category": "gdlLicensing",
+    "question": "Where must the supervising driver sit when accompanying a Delaware GDL permit holder?",
+    "answers": [
+      "In the back seat directly behind the driver",
+      "Anywhere in the vehicle",
+      "In the front passenger seat",
+      "Beside the driver in the front seat"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "DE-013",
+    "category": "cellPhone",
+    "question": "What type of cell phone use is permitted for all Delaware drivers while operating a vehicle?",
+    "answers": [
+      "Hands-free operation only",
+      "Brief text messages at red lights",
+      "One-handed phone calls",
+      "Emergency calls only"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "DE-014",
+    "category": "cellPhone",
+    "question": "Can Delaware learner permit holders use cell phones in hands-free mode while driving?",
+    "answers": [
+      "Yes, if over age 17",
+      "No, all phone use is prohibited",
+      "Yes, for navigation only",
+      "Yes, but only for emergency calls"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "DE-015",
+    "category": "cellPhone",
+    "question": "What penalty does a Delaware learner driver face for a first cell phone violation?",
+    "answers": [
+      "Warning only",
+      "Two-week suspension",
+      "One-month license suspension",
+      "Six-month suspension"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "DE-016",
+    "category": "cellPhone",
+    "question": "When are Delaware school bus drivers prohibited from using cell phones?",
+    "answers": [
+      "Only during student pickup and dropoff",
+      "During all driving hours",
+      "Only on highways",
+      "When at least one child is aboard"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "DE-017",
+    "category": "cellPhone",
+    "question": "What action can Delaware drivers legally perform with their phone while driving?",
+    "answers": [
+      "Activating or deactivating hands-free equipment",
+      "Checking directions at stoplights",
+      "Reading incoming text messages",
+      "Taking photos of traffic incidents"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "DE-018",
+    "category": "cellPhone",
+    "question": "Do Delaware cell phone violations add points to your driving record?",
+    "answers": [
+      "Yes, two points per violation",
+      "No, they do not add points",
+      "Yes, but only for repeat offenses",
+      "Only if combined with another violation"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "DE-019",
+    "category": "duiStateLaws",
+    "question": "What is the BAC limit for drivers under 21 in Delaware?",
+    "answers": [
+      "0.04 percent",
+      "0.05 percent",
+      "0.02 percent",
+      "0.08 percent"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "DE-020",
+    "category": "duiStateLaws",
+    "question": "What enhanced penalty applies if your BAC is above a certain elevated threshold in Delaware?",
+    "answers": [
+      "Double the standard fine",
+      "Automatic vehicle impoundment",
+      "Mandatory community service",
+      "Automatic enhanced minimum penalties"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "DE-021",
+    "category": "duiStateLaws",
+    "question": "What device must all Delaware first-time DUI offenders install after their revocation period?",
+    "answers": [
+      "Ignition interlock device",
+      "Breath monitoring bracelet",
+      "GPS tracking system",
+      "Speed limiting device"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "DE-022",
+    "category": "duiStateLaws",
+    "question": "What is the BAC limit for Delaware commercial drivers?",
+    "answers": [
+      "0.02 percent",
+      "0.04 percent",
+      "0.06 percent",
+      "0.08 percent"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "DE-023",
+    "category": "duiStateLaws",
+    "question": "What happens if a Delaware driver under 17 is arrested with a BAC of 0.08 percent or higher?",
+    "answers": [
+      "License suspended for one year",
+      "License suspended until age 18",
+      "No license until reaching age 21",
+      "Mandatory DUI school only"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "DE-024",
+    "category": "duiStateLaws",
+    "question": "What program allows eligible Delaware first-time DUI offenders to participate in education and treatment?",
+    "answers": [
+      "DUI Reduction Program",
+      "Alcohol Awareness Initiative",
+      "Safe Driver Program",
+      "First Offense Election program"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "DE-025",
+    "category": "duiStateLaws",
+    "question": "What BAC level must first-time offenders stay below to qualify for Delaware's First Offense Election?",
+    "answers": [
+      "Below 0.15 percent",
+      "Below 0.12 percent",
+      "Below 0.10 percent",
+      "Below 0.08 percent"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "DE-026",
+    "category": "duiStateLaws",
+    "question": "What is the BAC limit for Delaware school bus and daycare drivers?",
+    "answers": [
+      "0.00 percent",
+      "0.02 percent",
+      "0.04 percent",
+      "0.08 percent"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "DE-027",
+    "category": "insurance",
+    "question": "What type of coverage does Delaware require in addition to standard liability insurance?",
+    "answers": [
+      "Collision coverage",
+      "Comprehensive coverage",
+      "Personal Injury Protection",
+      "Rental reimbursement"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "DE-028",
+    "category": "insurance",
+    "question": "Despite requiring PIP coverage, what type of state is Delaware for insurance purposes?",
+    "answers": [
+      "Modified no-fault state",
+      "Pure no-fault state",
+      "Contributory negligence state",
+      "At-fault state"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "DE-029",
+    "category": "insurance",
+    "question": "What coverage must Delaware insurance companies offer but can be rejected by the policyholder?",
+    "answers": [
+      "Uninsured and underinsured motorist coverage",
+      "Collision coverage",
+      "Medical payments coverage",
+      "Comprehensive coverage"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "DE-030",
+    "category": "insurance",
+    "question": "What happens to your vehicle registration if you drive without required Delaware insurance?",
+    "answers": [
+      "You receive a warning letter",
+      "The registration is suspended",
+      "You must take defensive driving",
+      "Nothing on first offense"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "DE-031",
+    "category": "stateUnique",
+    "question": "What is the maximum speed limit for cars on Delaware highways?",
+    "answers": [
+      "65 mph",
+      "60 mph",
+      "55 mph",
+      "70 mph"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "DE-032",
+    "category": "stateUnique",
+    "question": "When do Delaware work zone enhancements apply for moving violations?",
+    "answers": [
+      "Only during weekday rush hours",
+      "Only when workers are actively present",
+      "During daylight hours only",
+      "Whenever work zone signs are posted"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "DE-033",
+    "category": "stateUnique",
+    "question": "How many points accumulated within 24 months triggers mandatory action in Delaware?",
+    "answers": [
+      "Twelve points",
+      "Ten points",
+      "Fifteen points",
+      "Eight points"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "DE-034",
+    "category": "stateUnique",
+    "question": "What type of seatbelt enforcement does Delaware use?",
+    "answers": [
+      "Secondary enforcement only",
+      "Primary enforcement",
+      "Warning-based enforcement",
+      "No enforcement"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "DE-035",
+    "category": "stateUnique",
+    "question": "How long do violation points count at their full value on your Delaware driving record?",
+    "answers": [
+      "Six months",
+      "Twenty-four months",
+      "Twelve months",
+      "Eighteen months"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "DE-036",
+    "category": "stateUnique",
+    "question": "What must Delaware drivers do when traveling slower than the normal speed of traffic?",
+    "answers": [
+      "Use hazard lights continuously",
+      "Pull over every mile",
+      "Drive in the center lane",
+      "Keep right or near the right edge"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "DE-037",
+    "category": "stateUnique",
+    "question": "What happens after violation points count at full value for twelve months in Delaware?",
+    "answers": [
+      "They reduce to half their value",
+      "They are completely removed",
+      "They double in value",
+      "They remain the same indefinitely"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "DE-038",
+    "category": "stateUnique",
+    "question": "What determines a reasonable following distance under Delaware law?",
+    "answers": [
+      "Posted signs only",
+      "Speed, traffic flow, and road conditions",
+      "Vehicle weight and length",
+      "Time of day"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "DE-039",
+    "category": "stateUnique",
+    "question": "Which Delaware city maintains and enforces its own red light cameras?",
+    "answers": [
+      "Wilmington",
+      "Newark",
+      "Dover",
+      "Rehoboth Beach"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "DE-040",
+    "category": "stateUnique",
+    "question": "What must all vehicle occupants wear according to Delaware's strict safety laws?",
+    "answers": [
+      "Reflective vests at night",
+      "Protective eyewear",
+      "Closed-toe shoes",
+      "Seat belts"
+    ],
+    "correctIndex": 3
+  }
+]

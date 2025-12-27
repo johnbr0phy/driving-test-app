@@ -1,0 +1,482 @@
+[
+  {
+    "id": "AZ-001",
+    "question": "What is the minimum age to obtain a Class G graduated driver license in Arizona?",
+    "answers": [
+      "16 years old",
+      "15 years old",
+      "17 years old",
+      "18 years old"
+    ],
+    "correctIndex": 0,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "AZ-002",
+    "question": "How long must a teen hold an instruction permit before applying for a Class G license?",
+    "answers": [
+      "Three months",
+      "Six months or until turning 18",
+      "One year",
+      "Nine months"
+    ],
+    "correctIndex": 1,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "AZ-003",
+    "question": "During the first six months of a Class G license, how many passengers under 18 may a teen driver transport?",
+    "answers": [
+      "Two passengers",
+      "Three passengers",
+      "One passenger, unless they are siblings",
+      "No passengers under any circumstances"
+    ],
+    "correctIndex": 2,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "AZ-004",
+    "question": "What are the curfew hours for Class G license holders during their first six months?",
+    "answers": [
+      "11 p.m. to 6 a.m.",
+      "1 a.m. to 5 a.m.",
+      "10 p.m. to 5 a.m.",
+      "Midnight to 5 a.m."
+    ],
+    "correctIndex": 3,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "AZ-005",
+    "question": "Which situation allows a Class G license holder to drive during curfew hours?",
+    "answers": [
+      "Driving to or from work or school",
+      "Driving to a friend's house",
+      "Driving for recreational activities",
+      "Any driving with another teen present"
+    ],
+    "correctIndex": 0,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "AZ-006",
+    "question": "How many hours of supervised driving practice must teens complete before getting a Class G license?",
+    "answers": [
+      "20 hours total",
+      "30 hours total, including 10 hours at night",
+      "40 hours total",
+      "25 hours total, including 5 hours at night"
+    ],
+    "correctIndex": 1,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "AZ-007",
+    "question": "When do Class G license restrictions expire for teen drivers?",
+    "answers": [
+      "After one year",
+      "After three months",
+      "After six months or when turning 18",
+      "After nine months"
+    ],
+    "correctIndex": 2,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "AZ-008",
+    "question": "A Class G driver can transport multiple passengers under 18 if which condition is met?",
+    "answers": [
+      "The driver has had their license for 3 months",
+      "All passengers wear seatbelts",
+      "It's during daytime hours only",
+      "A parent is in the front passenger seat"
+    ],
+    "correctIndex": 3,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "AZ-009",
+    "question": "What happens after a third violation of Class G license restrictions?",
+    "answers": [
+      "License suspended for 30 days",
+      "License suspended for 60 days",
+      "Restrictions extended for 90 days",
+      "License revoked permanently"
+    ],
+    "correctIndex": 0,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "AZ-010",
+    "question": "At what age does a Class G license automatically become a Class D license?",
+    "answers": [
+      "17 years old",
+      "18 years old",
+      "19 years old",
+      "21 years old"
+    ],
+    "correctIndex": 1,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "AZ-011",
+    "question": "Who must provide written certification of a teen's supervised driving hours?",
+    "answers": [
+      "A driving instructor only",
+      "Any licensed adult",
+      "A parent or legal guardian",
+      "The DMV examiner"
+    ],
+    "correctIndex": 2,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "AZ-012",
+    "question": "What is the primary purpose of Arizona's graduated driver licensing program?",
+    "answers": [
+      "To reduce insurance costs",
+      "To delay full driving privileges",
+      "To increase state revenue",
+      "To allow teens to gain experience gradually"
+    ],
+    "correctIndex": 3,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "AZ-013",
+    "question": "When did Arizona's hands-free driving law begin enforcement with citations?",
+    "answers": [
+      "January 1, 2021",
+      "April 22, 2019",
+      "July 1, 2020",
+      "January 1, 2022"
+    ],
+    "correctIndex": 0,
+    "category": "cellPhone"
+  },
+  {
+    "id": "AZ-014",
+    "question": "Under Arizona's hands-free law, when is it legal to hold a phone while driving?",
+    "answers": [
+      "Only in emergencies",
+      "When the vehicle is completely stopped at a red light",
+      "Never under any circumstances",
+      "When using GPS navigation"
+    ],
+    "correctIndex": 1,
+    "category": "cellPhone"
+  },
+  {
+    "id": "AZ-015",
+    "question": "What type of device use is permitted under Arizona's hands-free law?",
+    "answers": [
+      "Holding phone on speaker",
+      "Texting at stop signs",
+      "Voice-activated hands-free systems",
+      "Reading texts while stopped"
+    ],
+    "correctIndex": 2,
+    "category": "cellPhone"
+  },
+  {
+    "id": "AZ-016",
+    "question": "Arizona's hands-free law prohibits which action while the vehicle is in motion?",
+    "answers": [
+      "Using voice commands",
+      "Listening to music",
+      "Using mounted GPS",
+      "Holding or supporting a phone with your body"
+    ],
+    "correctIndex": 3,
+    "category": "cellPhone"
+  },
+  {
+    "id": "AZ-017",
+    "question": "What makes texting while driving a primary offense in Arizona?",
+    "answers": [
+      "Officers can stop you for texting alone",
+      "It requires a second violation",
+      "It only applies to teen drivers",
+      "It requires witness testimony"
+    ],
+    "correctIndex": 0,
+    "category": "cellPhone"
+  },
+  {
+    "id": "AZ-018",
+    "question": "Which drivers are exempt from Arizona's hands-free law?",
+    "answers": [
+      "Drivers over 65",
+      "Emergency responders performing duties",
+      "Commercial truck drivers",
+      "Rideshare drivers"
+    ],
+    "correctIndex": 1,
+    "category": "cellPhone"
+  },
+  {
+    "id": "AZ-019",
+    "question": "What is the BAC limit for drivers under 21 in Arizona?",
+    "answers": [
+      "0.04%",
+      "0.08%",
+      "0.00% (zero tolerance)",
+      "0.02%"
+    ],
+    "correctIndex": 2,
+    "category": "duiStateLaws"
+  },
+  {
+    "id": "AZ-020",
+    "question": "At what BAC level is a driver charged with Super Extreme DUI in Arizona?",
+    "answers": [
+      "0.15%",
+      "0.18%",
+      "0.12%",
+      "0.20% or higher"
+    ],
+    "correctIndex": 3,
+    "category": "duiStateLaws"
+  },
+  {
+    "id": "AZ-021",
+    "question": "What is required for all DUI convictions in Arizona, including first offenses?",
+    "answers": [
+      "Installation of an ignition interlock device",
+      "License revocation for life",
+      "Community service only",
+      "Alcohol education classes only"
+    ],
+    "correctIndex": 0,
+    "category": "duiStateLaws"
+  },
+  {
+    "id": "AZ-022",
+    "question": "What is the BAC limit for rideshare drivers in Arizona as of 2025?",
+    "answers": [
+      "0.08%",
+      "0.04%",
+      "0.02%",
+      "0.00%"
+    ],
+    "correctIndex": 1,
+    "category": "duiStateLaws"
+  },
+  {
+    "id": "AZ-023",
+    "question": "What BAC level constitutes an Extreme DUI in Arizona?",
+    "answers": [
+      "0.10% to 0.14%",
+      "0.08% to 0.12%",
+      "0.15% to 0.199%",
+      "0.12% to 0.18%"
+    ],
+    "correctIndex": 2,
+    "category": "duiStateLaws"
+  },
+  {
+    "id": "AZ-024",
+    "question": "Under Arizona's implied consent law, what happens if you refuse a breath test?",
+    "answers": [
+      "No penalty if it's your first refusal",
+      "Six-month license suspension",
+      "Warning only",
+      "Automatic 12-month license suspension"
+    ],
+    "correctIndex": 3,
+    "category": "duiStateLaws"
+  },
+  {
+    "id": "AZ-025",
+    "question": "What is the standard BAC limit for most adult drivers in Arizona?",
+    "answers": [
+      "0.08%",
+      "0.10%",
+      "0.05%",
+      "0.06%"
+    ],
+    "correctIndex": 0,
+    "category": "duiStateLaws"
+  },
+  {
+    "id": "AZ-026",
+    "question": "How long does a DUI conviction remain on your driving record in Arizona?",
+    "answers": [
+      "7 years",
+      "Permanently",
+      "10 years",
+      "5 years"
+    ],
+    "correctIndex": 1,
+    "category": "duiStateLaws"
+  },
+  {
+    "id": "AZ-027",
+    "question": "What type of insurance system does Arizona use for auto accidents?",
+    "answers": [
+      "No-fault system",
+      "Shared responsibility",
+      "At-fault system",
+      "Strict liability"
+    ],
+    "correctIndex": 2,
+    "category": "insurance"
+  },
+  {
+    "id": "AZ-028",
+    "question": "What does Arizona's pure comparative fault rule allow?",
+    "answers": [
+      "Only one driver pays all damages",
+      "Insurance companies decide fault",
+      "No claims if you share any fault",
+      "Fault to be divided by percentages"
+    ],
+    "correctIndex": 3,
+    "category": "insurance"
+  },
+  {
+    "id": "AZ-029",
+    "question": "What must drivers provide before registering a vehicle in Arizona?",
+    "answers": [
+      "Proof of insurance with ADOT code",
+      "Vehicle inspection certificate",
+      "Emissions test results only",
+      "Title and registration only"
+    ],
+    "correctIndex": 0,
+    "category": "insurance"
+  },
+  {
+    "id": "AZ-030",
+    "question": "What does liability insurance primarily cover in Arizona?",
+    "answers": [
+      "Your own vehicle repairs",
+      "Injuries and property damage you cause to others",
+      "Your medical bills only",
+      "Theft and vandalism"
+    ],
+    "correctIndex": 1,
+    "category": "insurance"
+  },
+  {
+    "id": "AZ-031",
+    "question": "What does Arizona's \"Pull Aside, Stay Alive\" campaign address?",
+    "answers": [
+      "Tire blowouts on hot pavement",
+      "Flash floods during monsoons",
+      "Safety during dust storms",
+      "Emergency vehicle right-of-way"
+    ],
+    "correctIndex": 2,
+    "category": "stateUnique"
+  },
+  {
+    "id": "AZ-032",
+    "question": "After pulling off the road during a dust storm, what should you do with your vehicle lights?",
+    "answers": [
+      "Turn on hazard flashers",
+      "Keep headlights on low beam",
+      "Turn on high beams",
+      "Turn off all lights including brake lights"
+    ],
+    "correctIndex": 3,
+    "category": "stateUnique"
+  },
+  {
+    "id": "AZ-033",
+    "question": "Why should you turn off all lights when stopped during a dust storm?",
+    "answers": [
+      "Drivers may follow your lights and crash into you",
+      "To save battery power",
+      "To avoid attracting wildlife",
+      "It's required by state law"
+    ],
+    "correctIndex": 0,
+    "category": "stateUnique"
+  },
+  {
+    "id": "AZ-034",
+    "question": "When does Arizona's monsoon season typically occur?",
+    "answers": [
+      "March through May",
+      "June through September",
+      "October through December",
+      "January through March"
+    ],
+    "correctIndex": 1,
+    "category": "stateUnique"
+  },
+  {
+    "id": "AZ-035",
+    "question": "What is the primary cause of tire blowouts in Arizona's extreme heat?",
+    "answers": [
+      "Road construction debris",
+      "Excessive speed limits",
+      "Underinflated tires on hot pavement",
+      "Overuse of air conditioning"
+    ],
+    "correctIndex": 2,
+    "category": "stateUnique"
+  },
+  {
+    "id": "AZ-036",
+    "question": "What temperature can Arizona pavement reach during summer months?",
+    "answers": [
+      "120°F",
+      "130°F",
+      "140°F",
+      "Over 150°F"
+    ],
+    "correctIndex": 3,
+    "category": "stateUnique"
+  },
+  {
+    "id": "AZ-037",
+    "question": "What should you do when encountering a dust storm on the highway?",
+    "answers": [
+      "Exit the highway safely as soon as possible",
+      "Speed up to get through quickly",
+      "Turn on high beams and proceed slowly",
+      "Stop in the emergency lane"
+    ],
+    "correctIndex": 0,
+    "category": "stateUnique"
+  },
+  {
+    "id": "AZ-038",
+    "question": "What does Arizona's \"Stupid Motorist Law\" address?",
+    "answers": [
+      "Speeding in school zones",
+      "Drivers who enter flooded roadways",
+      "Texting while driving",
+      "Running red lights"
+    ],
+    "correctIndex": 1,
+    "category": "stateUnique"
+  },
+  {
+    "id": "AZ-039",
+    "question": "What should drivers carry in their vehicle during Arizona's extreme heat?",
+    "answers": [
+      "Fire extinguisher",
+      "Snow chains",
+      "Extra water and charged cell phone",
+      "Emergency flares only"
+    ],
+    "correctIndex": 2,
+    "category": "stateUnique"
+  },
+  {
+    "id": "AZ-040",
+    "question": "Where is pulled off completely during a dust storm, where should you position your foot?",
+    "answers": [
+      "On the brake pedal",
+      "On the accelerator",
+      "Hovering over the brake",
+      "Off the brake pedal entirely"
+    ],
+    "correctIndex": 3,
+    "category": "stateUnique"
+  }
+]

@@ -1,0 +1,482 @@
+[
+  {
+    "id": "AK-001",
+    "question": "What is the minimum age to apply for an instruction permit in Alaska?",
+    "answers": [
+      "14 years old",
+      "15 years old",
+      "16 years old",
+      "17 years old"
+    ],
+    "correctIndex": 0,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "AK-002",
+    "question": "How long must you hold an instruction permit before applying for a provisional license in Alaska?",
+    "answers": [
+      "3 months",
+      "6 months",
+      "9 months",
+      "12 months"
+    ],
+    "correctIndex": 1,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "AK-003",
+    "question": "How many total hours of driving experience are required before getting a provisional license in Alaska?",
+    "answers": [
+      "20 hours",
+      "30 hours",
+      "40 hours",
+      "50 hours"
+    ],
+    "correctIndex": 2,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "AK-004",
+    "question": "How many hours of the required driving practice must be in challenging conditions like inclement weather or nighttime?",
+    "answers": [
+      "5 hours",
+      "8 hours",
+      "12 hours",
+      "10 hours"
+    ],
+    "correctIndex": 3,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "AK-005",
+    "question": "What is the minimum age of a supervising adult when practicing with an instruction permit in Alaska?",
+    "answers": [
+      "21 years old",
+      "18 years old",
+      "25 years old",
+      "23 years old"
+    ],
+    "correctIndex": 0,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "AK-006",
+    "question": "During what hours can a provisional license holder not drive unless accompanied by someone 21 or older?",
+    "answers": [
+      "Midnight to 6 a.m.",
+      "1 a.m. to 5 a.m.",
+      "2 a.m. to 6 a.m.",
+      "11 p.m. to 5 a.m."
+    ],
+    "correctIndex": 1,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "AK-007",
+    "question": "Who may a provisional license holder carry as passengers under age 21?",
+    "answers": [
+      "Close friends only",
+      "Family members only",
+      "Siblings only",
+      "No one"
+    ],
+    "correctIndex": 2,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "AK-008",
+    "question": "At what age can you obtain a full unrestricted driver's license in Alaska?",
+    "answers": [
+      "16 years old",
+      "17 years old",
+      "19 years old",
+      "18 years old"
+    ],
+    "correctIndex": 3,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "AK-009",
+    "question": "How long must you hold a provisional license before upgrading to a full license if under 18?",
+    "answers": [
+      "6 months",
+      "3 months",
+      "9 months",
+      "12 months"
+    ],
+    "correctIndex": 0,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "AK-010",
+    "question": "What happens if a provisional license holder is convicted of a traffic violation?",
+    "answers": [
+      "They lose their license permanently",
+      "They must wait 6 more months before getting a full license",
+      "They must retake the written test",
+      "Nothing changes"
+    ],
+    "correctIndex": 1,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "AK-011",
+    "question": "How long is an Alaska instruction permit valid?",
+    "answers": [
+      "1 year",
+      "18 months",
+      "2 years",
+      "3 years"
+    ],
+    "correctIndex": 2,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "AK-012",
+    "question": "What type of special license can rural Alaska residents age 16 get without a road skills test?",
+    "answers": [
+      "Farm license",
+      "Restricted license",
+      "Conditional license",
+      "Off-Highway license"
+    ],
+    "correctIndex": 3,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "AK-013",
+    "question": "When is texting while driving illegal in Alaska?",
+    "answers": [
+      "When the vehicle is in motion",
+      "At all times",
+      "Only on highways",
+      "Only in school zones"
+    ],
+    "correctIndex": 0,
+    "category": "cellPhone"
+  },
+  {
+    "id": "AK-014",
+    "question": "What type of cell phone use is permitted while driving in Alaska?",
+    "answers": [
+      "All handheld use",
+      "Voice communication and hands-free devices",
+      "Texting only",
+      "No cell phone use allowed"
+    ],
+    "correctIndex": 1,
+    "category": "cellPhone"
+  },
+  {
+    "id": "AK-015",
+    "question": "What is prohibited regarding screen devices while driving in Alaska?",
+    "answers": [
+      "Using GPS only",
+      "Having any electronics in the car",
+      "Operating screens in full view of the driver",
+      "Listening to music"
+    ],
+    "correctIndex": 2,
+    "category": "cellPhone"
+  },
+  {
+    "id": "AK-016",
+    "question": "Is it legal to text at a red light in Alaska?",
+    "answers": [
+      "No, it is never legal",
+      "Yes, in school zones only",
+      "No, only if traffic is present",
+      "Yes, because the vehicle is not in motion"
+    ],
+    "correctIndex": 3,
+    "category": "cellPhone"
+  },
+  {
+    "id": "AK-017",
+    "question": "What information can be displayed on your phone while driving in Alaska?",
+    "answers": [
+      "Caller identification",
+      "Text messages",
+      "Social media",
+      "Email"
+    ],
+    "correctIndex": 0,
+    "category": "cellPhone"
+  },
+  {
+    "id": "AK-018",
+    "question": "What classification is a distracted driving violation that results in another person's death?",
+    "answers": [
+      "Misdemeanor",
+      "Class A felony",
+      "Traffic infraction",
+      "Civil violation"
+    ],
+    "correctIndex": 1,
+    "category": "cellPhone"
+  },
+  {
+    "id": "AK-019",
+    "question": "What is the standard blood alcohol concentration limit for adult drivers in Alaska?",
+    "answers": [
+      "0.05%",
+      "0.10%",
+      "0.08%",
+      "0.06%"
+    ],
+    "correctIndex": 2,
+    "category": "duiStateLaws"
+  },
+  {
+    "id": "AK-020",
+    "question": "What BAC level results in aggravated DUI charges in Alaska?",
+    "answers": [
+      "0.10% or higher",
+      "0.12% or higher",
+      "0.20% or higher",
+      "0.15% or higher"
+    ],
+    "correctIndex": 3,
+    "category": "duiStateLaws"
+  },
+  {
+    "id": "AK-021",
+    "question": "What does Alaska's implied consent law mean for drivers?",
+    "answers": [
+      "You automatically consent to chemical testing when operating a vehicle",
+      "You can refuse any test without penalty",
+      "You must carry a consent form",
+      "Only commercial drivers must consent to testing"
+    ],
+    "correctIndex": 0,
+    "category": "duiStateLaws"
+  },
+  {
+    "id": "AK-022",
+    "question": "What happens if you refuse a chemical test in Alaska?",
+    "answers": [
+      "You receive a warning only",
+      "You face penalties equal to a DUI conviction",
+      "You must pay a small fine",
+      "Nothing happens"
+    ],
+    "correctIndex": 1,
+    "category": "duiStateLaws"
+  },
+  {
+    "id": "AK-023",
+    "question": "What is the BAC limit for commercial drivers in Alaska?",
+    "answers": [
+      "0.02%",
+      "0.06%",
+      "0.04%",
+      "0.08%"
+    ],
+    "correctIndex": 2,
+    "category": "duiStateLaws"
+  },
+  {
+    "id": "AK-024",
+    "question": "What is Alaska's policy for drivers under 21 regarding alcohol?",
+    "answers": [
+      "0.02% limit",
+      "0.04% limit",
+      "Same as adults",
+      "Zero tolerance for any detectable amount"
+    ],
+    "correctIndex": 3,
+    "category": "duiStateLaws"
+  },
+  {
+    "id": "AK-025",
+    "question": "How long is the license suspension for a first DUI conviction in Alaska?",
+    "answers": [
+      "90 days",
+      "6 months",
+      "1 year",
+      "2 years"
+    ],
+    "correctIndex": 0,
+    "category": "duiStateLaws"
+  },
+  {
+    "id": "AK-026",
+    "question": "How long is an ignition interlock device required after a first DUI conviction in Alaska?",
+    "answers": [
+      "6 months",
+      "12 months",
+      "18 months",
+      "24 months"
+    ],
+    "correctIndex": 1,
+    "category": "duiStateLaws"
+  },
+  {
+    "id": "AK-027",
+    "question": "What does liability insurance cover in Alaska?",
+    "answers": [
+      "Your own vehicle damage",
+      "Your medical bills only",
+      "Other people's expenses if you cause an accident",
+      "All damages regardless of fault"
+    ],
+    "correctIndex": 2,
+    "category": "insurance"
+  },
+  {
+    "id": "AK-028",
+    "question": "What does the third number in Alaska's liability coverage requirement represent?",
+    "answers": [
+      "Medical payments per accident",
+      "Total bodily injury per accident",
+      "Personal injury protection",
+      "Property damage per accident"
+    ],
+    "correctIndex": 3,
+    "category": "insurance"
+  },
+  {
+    "id": "AK-029",
+    "question": "In what format can proof of insurance be presented in Alaska?",
+    "answers": [
+      "Paper or digital",
+      "Paper only",
+      "Digital only",
+      "Video recording"
+    ],
+    "correctIndex": 0,
+    "category": "insurance"
+  },
+  {
+    "id": "AK-030",
+    "question": "What happens if you cannot provide proof of insurance in Anchorage?",
+    "answers": [
+      "You receive a warning",
+      "Your vehicle may be impounded",
+      "You must walk home",
+      "Nothing happens"
+    ],
+    "correctIndex": 1,
+    "category": "insurance"
+  },
+  {
+    "id": "AK-031",
+    "question": "When are studded tires prohibited in most of Alaska south of 60 degrees North?",
+    "answers": [
+      "October through March",
+      "November through April",
+      "April 15 through September 30",
+      "May through August"
+    ],
+    "correctIndex": 2,
+    "category": "stateUnique"
+  },
+  {
+    "id": "AK-032",
+    "question": "When must you turn on your headlights due to reduced visibility in Alaska?",
+    "answers": [
+      "When visibility is less than 500 feet",
+      "When visibility is less than 2000 feet",
+      "When visibility is less than 1500 feet",
+      "When visibility is less than 1000 feet"
+    ],
+    "correctIndex": 3,
+    "category": "stateUnique"
+  },
+  {
+    "id": "AK-033",
+    "question": "What should you do immediately after your vehicle strikes a moose in Alaska?",
+    "answers": [
+      "Get off the road if possible and call police",
+      "Approach the moose to check injuries",
+      "Drive away quickly",
+      "Take photos first"
+    ],
+    "correctIndex": 0,
+    "category": "stateUnique"
+  },
+  {
+    "id": "AK-034",
+    "question": "When are moose-vehicle collisions most likely to occur?",
+    "answers": [
+      "Midday",
+      "Dusk, dawn, and nighttime",
+      "Only during winter",
+      "Afternoon rush hour"
+    ],
+    "correctIndex": 1,
+    "category": "stateUnique"
+  },
+  {
+    "id": "AK-035",
+    "question": "What happens if you hold up five or more vehicles without pulling over in Alaska?",
+    "answers": [
+      "You get a courtesy reminder",
+      "Nothing happens",
+      "You are breaking the law",
+      "You receive a warning only"
+    ],
+    "correctIndex": 2,
+    "category": "stateUnique"
+  },
+  {
+    "id": "AK-036",
+    "question": "When must headlights be turned on in Alaska in relation to sunset and sunrise?",
+    "answers": [
+      "At sunset to sunrise exactly",
+      "1 hour after sunset to 1 hour before sunrise",
+      "15 minutes after sunset to 15 minutes before sunrise",
+      "30 minutes after sunset to 30 minutes before sunrise"
+    ],
+    "correctIndex": 3,
+    "category": "stateUnique"
+  },
+  {
+    "id": "AK-037",
+    "question": "What type of headlights should you use when possible to spot wildlife at night in Alaska?",
+    "answers": [
+      "High beam headlights",
+      "Low beam headlights",
+      "Fog lights",
+      "Parking lights"
+    ],
+    "correctIndex": 0,
+    "category": "stateUnique"
+  },
+  {
+    "id": "AK-038",
+    "question": "Why should you avoid approaching a moose after a collision?",
+    "answers": [
+      "It is illegal",
+      "A frightened wounded moose can hurt you or further injure itself",
+      "The police will fine you",
+      "You might damage evidence"
+    ],
+    "correctIndex": 1,
+    "category": "stateUnique"
+  },
+  {
+    "id": "AK-039",
+    "question": "What is special about certain Alaska roads like the Seward Highway regarding headlights?",
+    "answers": [
+      "Headlights are prohibited",
+      "Only high beams allowed",
+      "Headlights must be on at all times",
+      "Headlights only at night"
+    ],
+    "correctIndex": 2,
+    "category": "stateUnique"
+  },
+  {
+    "id": "AK-040",
+    "question": "What must studded or non-studded winter tires be in Alaska?",
+    "answers": [
+      "Imported from Canada",
+      "Less than two years old",
+      "Brand new only",
+      "Approved by the Alaska Department of Public Safety"
+    ],
+    "correctIndex": 3,
+    "category": "stateUnique"
+  }
+]

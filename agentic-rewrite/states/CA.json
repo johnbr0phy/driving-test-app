@@ -1,0 +1,562 @@
+[
+  {
+    "id": "CA-001",
+    "category": "gdlLicensing",
+    "state": "CA",
+    "question": "What is the minimum age to obtain a learner's permit in California?",
+    "answers": [
+      "15½ years old",
+      "16 years old",
+      "14 years old",
+      "17 years old"
+    ],
+    "correctIndex": 0,
+    "explanation": "In California, teens must be at least 15½ years old to apply for a learner's permit after completing driver education."
+  },
+  {
+    "id": "CA-002",
+    "category": "gdlLicensing",
+    "state": "CA",
+    "question": "Who must accompany a permit holder while driving in California?",
+    "answers": [
+      "Any adult over 18",
+      "A licensed driver 25 or older",
+      "A parent or guardian only",
+      "Any licensed driver"
+    ],
+    "correctIndex": 1,
+    "explanation": "California requires permit holders to be accompanied by a licensed driver who is at least 25 years old, seated in the front passenger seat."
+  },
+  {
+    "id": "CA-003",
+    "category": "gdlLicensing",
+    "state": "CA",
+    "question": "During what hours is a provisional license holder prohibited from driving alone in California?",
+    "answers": [
+      "Midnight to 4 AM",
+      "10 PM to 6 AM",
+      "11 PM to 5 AM",
+      "9 PM to 5 AM"
+    ],
+    "correctIndex": 2,
+    "explanation": "California provisional license holders cannot drive unsupervised between 11 PM and 5 AM unless accompanied by a licensed driver 25 or older."
+  },
+  {
+    "id": "CA-004",
+    "category": "gdlLicensing",
+    "state": "CA",
+    "question": "How many hours of supervised practice driving are required in California before taking the driving test?",
+    "answers": [
+      "40 hours total",
+      "30 hours total",
+      "60 hours total",
+      "50 hours total, including 10 at night"
+    ],
+    "correctIndex": 3,
+    "explanation": "California requires 50 hours of supervised practice driving, including at least 10 hours of nighttime driving, before a teen can take the behind-the-wheel test."
+  },
+  {
+    "id": "CA-005",
+    "category": "gdlLicensing",
+    "state": "CA",
+    "question": "What must California teens complete before applying for a learner's permit?",
+    "answers": [
+      "A 30-hour driver education course",
+      "A 40-hour driver education course",
+      "A 20-hour driver education course",
+      "A 50-hour driver education course"
+    ],
+    "correctIndex": 0,
+    "explanation": "California law requires teens to complete a 30-hour driver education course before they can apply for a learner's permit."
+  },
+  {
+    "id": "CA-006",
+    "category": "gdlLicensing",
+    "state": "CA",
+    "question": "For how long after receiving a provisional license cannot a teen transport passengers under 20 years old alone?",
+    "answers": [
+      "6 months",
+      "12 months",
+      "18 months",
+      "24 months"
+    ],
+    "correctIndex": 1,
+    "explanation": "For the first 12 months after obtaining a provisional license, California teens cannot transport passengers under 20 unless accompanied by a licensed driver 25 or older."
+  },
+  {
+    "id": "CA-007",
+    "category": "gdlLicensing",
+    "state": "CA",
+    "question": "How many phases are in California's Graduated Driver License program?",
+    "answers": [
+      "Two phases",
+      "Four phases",
+      "Three phases",
+      "Five phases"
+    ],
+    "correctIndex": 2,
+    "explanation": "California's GDL program has three phases: learner's permit, provisional license, and full unrestricted license."
+  },
+  {
+    "id": "CA-008",
+    "category": "gdlLicensing",
+    "state": "CA",
+    "question": "What is the minimum period a California learner's permit must be held before applying for a provisional license?",
+    "answers": [
+      "3 months",
+      "4 months",
+      "12 months",
+      "6 months"
+    ],
+    "correctIndex": 3,
+    "explanation": "California requires teens to hold a learner's permit for at least 6 months before they can apply for a provisional license."
+  },
+  {
+    "id": "CA-009",
+    "category": "gdlLicensing",
+    "state": "CA",
+    "question": "What happens if a California teen violates GDL restrictions?",
+    "answers": [
+      "License eligibility may be delayed by a year",
+      "They receive a warning only",
+      "They must retake driver education",
+      "They pay a fine only"
+    ],
+    "correctIndex": 0,
+    "explanation": "Violating California's GDL rules can delay getting a license for at least a year and creates a violation on the driver's record."
+  },
+  {
+    "id": "CA-010",
+    "category": "gdlLicensing",
+    "state": "CA",
+    "question": "Can a California provisional license holder use a cell phone hands-free while driving?",
+    "answers": [
+      "Yes, if mounted properly",
+      "No, not even hands-free",
+      "Yes, but only for GPS",
+      "Yes, but only for emergencies"
+    ],
+    "correctIndex": 1,
+    "explanation": "California provisional license holders under 18 cannot use any electronic communication device while driving, even in hands-free mode, except for emergencies."
+  },
+  {
+    "id": "CA-011",
+    "category": "gdlLicensing",
+    "state": "CA",
+    "question": "What is the minimum age requirement for the licensed driver who supervises a permit holder in California?",
+    "answers": [
+      "18 years old",
+      "21 years old",
+      "25 years old",
+      "23 years old"
+    ],
+    "correctIndex": 2,
+    "explanation": "The supervising driver must be at least 25 years old and hold a valid California driver's license."
+  },
+  {
+    "id": "CA-012",
+    "category": "gdlLicensing",
+    "state": "CA",
+    "question": "What does California's zero-tolerance law mean for provisional license holders?",
+    "answers": [
+      "No speeding violations allowed",
+      "No cell phone use allowed",
+      "No traffic violations allowed",
+      "No alcohol consumption allowed"
+    ],
+    "correctIndex": 3,
+    "explanation": "California's zero-tolerance law means provisional license holders under 21 cannot have any measurable amount of alcohol in their system while driving."
+  },
+  {
+    "id": "CA-013",
+    "category": "cellPhone",
+    "state": "CA",
+    "question": "What is the primary rule of California's hands-free cell phone law?",
+    "answers": [
+      "You cannot hold your phone while driving",
+      "You can hold your phone at red lights",
+      "You can hold your phone for navigation",
+      "You can hold your phone if not talking"
+    ],
+    "correctIndex": 0,
+    "explanation": "California's 'No Touch' law prohibits holding a cell phone for any reason while operating a vehicle, even when stopped at a red light."
+  },
+  {
+    "id": "CA-014",
+    "category": "cellPhone",
+    "state": "CA",
+    "question": "How can California drivers legally use their phone for navigation while driving?",
+    "answers": [
+      "By holding it carefully",
+      "By mounting it and using voice commands",
+      "By placing it on their lap",
+      "Only with a passenger present"
+    ],
+    "correctIndex": 1,
+    "explanation": "California drivers can legally use their phone only when it's securely mounted and controlled through voice commands or a single tap or swipe."
+  },
+  {
+    "id": "CA-015",
+    "category": "cellPhone",
+    "state": "CA",
+    "question": "What is the cell phone restriction for California drivers under 18?",
+    "answers": [
+      "Can use hands-free only",
+      "Can use for GPS only",
+      "Cannot use any device while driving",
+      "Can use with parental permission"
+    ],
+    "correctIndex": 2,
+    "explanation": "California drivers under 18 cannot use any electronic communication device while driving, even hands-free, except for emergency calls."
+  },
+  {
+    "id": "CA-016",
+    "category": "cellPhone",
+    "state": "CA",
+    "question": "How many taps or swipes are allowed on a mounted phone while driving in California?",
+    "answers": [
+      "Two taps or swipes",
+      "Three taps or swipes",
+      "No touching allowed",
+      "One tap or swipe"
+    ],
+    "correctIndex": 3,
+    "explanation": "California law allows only a single tap or swipe on a properly mounted device while driving to minimize distraction."
+  },
+  {
+    "id": "CA-017",
+    "category": "cellPhone",
+    "state": "CA",
+    "question": "Is looking at your phone's screen while holding it illegal in California, even without touching it?",
+    "answers": [
+      "Yes, holding the phone is prohibited",
+      "No, as long as you don't touch it",
+      "Only illegal while moving",
+      "Legal at red lights only"
+    ],
+    "correctIndex": 0,
+    "explanation": "California courts have ruled that holding a phone to look at the screen, even without touching it, violates the hands-free law."
+  },
+  {
+    "id": "CA-018",
+    "category": "cellPhone",
+    "state": "CA",
+    "question": "When is it legal to use a handheld phone while driving in California?",
+    "answers": [
+      "At red lights only",
+      "For emergency calls to 911 or law enforcement",
+      "In parking lots only",
+      "When traffic is stopped"
+    ],
+    "correctIndex": 1,
+    "explanation": "California law permits using a handheld phone only for emergency calls to 911, law enforcement, medical providers, or roadside assistance."
+  },
+  {
+    "id": "CA-019",
+    "category": "duiStateLaws",
+    "state": "CA",
+    "question": "What is the legal BAC limit for drivers 21 and older in California?",
+    "answers": [
+      "0.10%",
+      "0.05%",
+      "0.08%",
+      "0.06%"
+    ],
+    "correctIndex": 2,
+    "explanation": "California law sets the legal blood alcohol concentration limit at 0.08% for standard adult drivers 21 and older."
+  },
+  {
+    "id": "CA-020",
+    "category": "duiStateLaws",
+    "state": "CA",
+    "question": "What is the BAC limit for drivers under 21 in California?",
+    "answers": [
+      "0.02%",
+      "0.05%",
+      "0.04%",
+      "0.01%"
+    ],
+    "correctIndex": 3,
+    "explanation": "California has a zero-tolerance policy for underage drinking and driving, setting the BAC limit at 0.01% for drivers under 21."
+  },
+  {
+    "id": "CA-021",
+    "category": "duiStateLaws",
+    "state": "CA",
+    "question": "What is the BAC limit for commercial and rideshare drivers in California?",
+    "answers": [
+      "0.04%",
+      "0.08%",
+      "0.02%",
+      "0.06%"
+    ],
+    "correctIndex": 0,
+    "explanation": "California law requires a lower BAC limit of 0.04% for commercial drivers and rideshare drivers while transporting passengers."
+  },
+  {
+    "id": "CA-022",
+    "category": "duiStateLaws",
+    "state": "CA",
+    "question": "What does California's implied consent law mean for drivers?",
+    "answers": [
+      "You can refuse any test",
+      "You agree to chemical testing when arrested",
+      "You must consent verbally",
+      "You can choose which test to take"
+    ],
+    "correctIndex": 1,
+    "explanation": "California's implied consent law means by driving, you automatically agree to chemical testing if lawfully arrested for DUI."
+  },
+  {
+    "id": "CA-023",
+    "category": "duiStateLaws",
+    "state": "CA",
+    "question": "What happens if you refuse a chemical test after a DUI arrest in California?",
+    "answers": [
+      "No penalty if it's your first refusal",
+      "Just a fine",
+      "Automatic license suspension",
+      "Court appearance only"
+    ],
+    "correctIndex": 2,
+    "explanation": "Refusing a breath or blood test after a lawful DUI arrest in California results in an automatic one-year license suspension for a first offense."
+  },
+  {
+    "id": "CA-024",
+    "category": "duiStateLaws",
+    "state": "CA",
+    "question": "What device may California require DUI offenders to install in their vehicle?",
+    "answers": [
+      "GPS tracker",
+      "Speed limiter",
+      "Alcohol detector",
+      "Ignition interlock device"
+    ],
+    "correctIndex": 3,
+    "explanation": "California may require DUI offenders to install an ignition interlock device (IID) that prevents the vehicle from starting if alcohol is detected."
+  },
+  {
+    "id": "CA-025",
+    "category": "duiStateLaws",
+    "state": "CA",
+    "question": "What does zero-tolerance for underage DUI mean in California?",
+    "answers": [
+      "No measurable alcohol allowed in the system",
+      "Zero traffic violations allowed",
+      "No second chances given",
+      "Zero points on license"
+    ],
+    "correctIndex": 0,
+    "explanation": "Zero-tolerance means drivers under 21 cannot have any traceable amounts of alcohol (0.01% BAC or higher) in their system while driving."
+  },
+  {
+    "id": "CA-026",
+    "category": "duiStateLaws",
+    "state": "CA",
+    "question": "What is considered an aggravating factor in California DUI cases?",
+    "answers": [
+      "Driving alone",
+      "Having minors in the vehicle",
+      "Driving during daytime",
+      "Using GPS while driving"
+    ],
+    "correctIndex": 1,
+    "explanation": "California considers factors like having minors in the vehicle, excessive speeding, or very high BAC levels as aggravating factors that increase DUI penalties."
+  },
+  {
+    "id": "CA-027",
+    "category": "insurance",
+    "state": "CA",
+    "question": "What type of insurance system does California use?",
+    "answers": [
+      "No-fault system",
+      "Hybrid system",
+      "At-fault system",
+      "Shared fault system"
+    ],
+    "correctIndex": 2,
+    "explanation": "California uses an at-fault insurance system, meaning the driver responsible for causing an accident is liable for damages."
+  },
+  {
+    "id": "CA-028",
+    "category": "insurance",
+    "state": "CA",
+    "question": "What does liability insurance primarily cover in California?",
+    "answers": [
+      "Your own vehicle repairs",
+      "Your own medical bills",
+      "Your own property damage",
+      "Damages you cause to others"
+    ],
+    "correctIndex": 3,
+    "explanation": "Liability insurance covers damages and injuries you cause to other people and their property when you are at fault in an accident."
+  },
+  {
+    "id": "CA-029",
+    "category": "insurance",
+    "state": "CA",
+    "question": "Why is auto insurance mandatory in California?",
+    "answers": [
+      "To ensure drivers can pay for damages they cause",
+      "To protect the insurance companies",
+      "To fund state highway projects",
+      "To reduce traffic congestion"
+    ],
+    "correctIndex": 0,
+    "explanation": "California requires auto insurance to ensure drivers can pay for medical expenses, lost wages, and property repairs they cause in accidents."
+  },
+  {
+    "id": "CA-030",
+    "category": "insurance",
+    "state": "CA",
+    "question": "What are potential consequences of driving uninsured in California?",
+    "answers": [
+      "Warning only",
+      "License suspension and fines",
+      "Increased registration fees only",
+      "Mandatory traffic school only"
+    ],
+    "correctIndex": 1,
+    "explanation": "Driving without insurance in California can result in license suspension, fines up to several hundred dollars, and possible vehicle impoundment."
+  },
+  {
+    "id": "CA-031",
+    "category": "stateUnique",
+    "state": "CA",
+    "question": "Is lane splitting by motorcycles legal in California?",
+    "answers": [
+      "No, it's illegal everywhere",
+      "Only on highways",
+      "Yes, California allows it",
+      "Only in emergencies"
+    ],
+    "correctIndex": 2,
+    "explanation": "California is the only state where lane splitting by motorcyclists is legal, allowing them to ride between lanes of traffic."
+  },
+  {
+    "id": "CA-032",
+    "category": "stateUnique",
+    "state": "CA",
+    "question": "How many occupants are typically required to use California HOV carpool lanes?",
+    "answers": [
+      "3 or more occupants",
+      "4 or more occupants",
+      "1 occupant in an electric vehicle",
+      "2 or more occupants"
+    ],
+    "correctIndex": 3,
+    "explanation": "Most California HOV lanes require at least 2 people in the vehicle (driver included), though some heavily congested areas may require 3."
+  },
+  {
+    "id": "CA-033",
+    "category": "stateUnique",
+    "state": "CA",
+    "question": "How often are smog checks required for most vehicles in California?",
+    "answers": [
+      "Every two years",
+      "Every year",
+      "Every three years",
+      "Every four years"
+    ],
+    "correctIndex": 0,
+    "explanation": "California requires a smog check every two years for vehicle registration renewal for most gasoline and hybrid vehicles 1976 and newer."
+  },
+  {
+    "id": "CA-034",
+    "category": "stateUnique",
+    "state": "CA",
+    "question": "When can you cross the solid lines marking an HOV lane in California?",
+    "answers": [
+      "Anytime if safe",
+      "Only at designated entry/exit areas with dashed lines",
+      "During non-peak hours only",
+      "Never"
+    ],
+    "correctIndex": 1,
+    "explanation": "California law prohibits crossing solid double lines for HOV lanes. You can only enter or exit where there are designated areas with dashed lines."
+  },
+  {
+    "id": "CA-035",
+    "category": "stateUnique",
+    "state": "CA",
+    "question": "Which vehicles are exempt from California's smog check requirement?",
+    "answers": [
+      "Vehicles less than 5 years old",
+      "All hybrid vehicles",
+      "Vehicles 8 model years and newer",
+      "All diesel vehicles"
+    ],
+    "correctIndex": 2,
+    "explanation": "California exempts vehicles eight model years and newer from smog checks, requiring instead a smog abatement fee with registration."
+  },
+  {
+    "id": "CA-036",
+    "category": "stateUnique",
+    "state": "CA",
+    "question": "According to California Highway Patrol guidelines, what is the recommended maximum speed for safe lane splitting?",
+    "answers": [
+      "When traffic is moving faster than 40 mph",
+      "When traffic is moving faster than 50 mph",
+      "When going more than 15 mph faster than traffic",
+      "When traffic is 30 mph or slower and you're within 10 mph of traffic speed"
+    ],
+    "correctIndex": 3,
+    "explanation": "CHP recommends lane splitting only when traffic is moving 30 mph or slower, and motorcyclists should not exceed traffic speed by more than 10 mph."
+  },
+  {
+    "id": "CA-037",
+    "category": "stateUnique",
+    "state": "CA",
+    "question": "Can motorcycles use California HOV lanes regardless of occupancy?",
+    "answers": [
+      "Yes, motorcycles are exempt from occupancy requirements",
+      "No, they need a passenger",
+      "Only during peak hours",
+      "Only on certain highways"
+    ],
+    "correctIndex": 0,
+    "explanation": "California law exempts motorcycles from HOV lane occupancy requirements, allowing them to use carpool lanes even with just the rider."
+  },
+  {
+    "id": "CA-038",
+    "category": "stateUnique",
+    "state": "CA",
+    "question": "What happened to California's Clean Air Vehicle decal program for HOV lanes?",
+    "answers": [
+      "It was extended indefinitely",
+      "It expired on September 30, 2025",
+      "It was expanded to more vehicles",
+      "It only applies to new vehicles"
+    ],
+    "correctIndex": 1,
+    "explanation": "California's Clean Air Vehicle decal program that allowed single-occupant electric vehicles in HOV lanes expired on September 30, 2025."
+  },
+  {
+    "id": "CA-039",
+    "category": "stateUnique",
+    "state": "CA",
+    "question": "How recently must a vehicle have passed a smog check for a private sale in California?",
+    "answers": [
+      "Within the last 6 months",
+      "Within the last year",
+      "Within the last 90 days",
+      "Within the last 30 days"
+    ],
+    "correctIndex": 2,
+    "explanation": "When buying a vehicle from a private seller in California, it must have passed a smog check within the last 90 days."
+  },
+  {
+    "id": "CA-040",
+    "category": "stateUnique",
+    "state": "CA",
+    "question": "What is illegal for drivers to do when a motorcycle is lane splitting in California?",
+    "answers": [
+      "Honk your horn",
+      "Change lanes slowly",
+      "Use your mirrors",
+      "Intentionally block or impede the motorcyclist"
+    ],
+    "correctIndex": 3,
+    "explanation": "California law specifically prohibits intentionally blocking or impeding a motorcyclist who is lane splitting, as it could cause harm to the rider."
+  }
+]

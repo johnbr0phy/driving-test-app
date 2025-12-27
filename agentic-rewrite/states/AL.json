@@ -1,0 +1,522 @@
+[
+  {
+    "id": "AL-001",
+    "state": "AL",
+    "category": "gdlLicensing",
+    "question": "At what minimum age can you apply for a Stage I learner's permit in Alabama?",
+    "answers": [
+      "15 years old",
+      "16 years old",
+      "14 years old",
+      "17 years old"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "AL-002",
+    "state": "AL",
+    "category": "gdlLicensing",
+    "question": "Who can supervise a Stage I learner's permit holder in Alabama?",
+    "answers": [
+      "Any licensed driver over 18",
+      "Parent, guardian, or licensed driver 21 or older",
+      "Any family member with a license",
+      "Only certified driving instructors"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "AL-003",
+    "state": "AL",
+    "category": "gdlLicensing",
+    "question": "How long must you hold a Stage I permit before applying for a Stage II license in Alabama?",
+    "answers": [
+      "3 months",
+      "1 year",
+      "At least 6 months",
+      "9 months"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "AL-004",
+    "state": "AL",
+    "category": "gdlLicensing",
+    "question": "What is the midnight to 6 AM curfew exception for Stage II license holders in Alabama?",
+    "answers": [
+      "School sports events only",
+      "Any recreational activities",
+      "Only emergencies",
+      "Work, school events, or with parent"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "AL-005",
+    "state": "AL",
+    "category": "gdlLicensing",
+    "question": "What happens if a Stage II license holder violates GDL restrictions in Alabama?",
+    "answers": [
+      "Restrictive period extended 6 months or until age 18",
+      "License permanently revoked",
+      "Must restart from Stage I",
+      "Criminal record is created"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "AL-006",
+    "state": "AL",
+    "category": "gdlLicensing",
+    "question": "How many non-family passengers can a 16-year-old Stage II driver have in Alabama?",
+    "answers": [
+      "Two passengers maximum",
+      "One non-family passenger",
+      "Three passengers maximum",
+      "No passengers allowed"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "AL-007",
+    "state": "AL",
+    "category": "gdlLicensing",
+    "question": "At what age can you skip the restricted license and go straight to full privileges in Alabama?",
+    "answers": [
+      "17 years old",
+      "19 years old",
+      "18 years old",
+      "21 years old"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "AL-008",
+    "state": "AL",
+    "category": "gdlLicensing",
+    "question": "What driving practice is required to progress from Stage I to Stage II in Alabama?",
+    "answers": [
+      "30 hours of practice",
+      "Only a road test",
+      "100 hours of practice",
+      "50 hours or driver education course"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "AL-009",
+    "state": "AL",
+    "category": "gdlLicensing",
+    "question": "When can a Stage II driver obtain an unrestricted license in Alabama?",
+    "answers": [
+      "Age 17 with 6 months violation-free driving",
+      "Immediately at age 18",
+      "Age 16 with driver education",
+      "Age 19 regardless of violations"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "AL-010",
+    "state": "AL",
+    "category": "gdlLicensing",
+    "question": "What documentation is required for drivers under 19 applying for a permit in Alabama?",
+    "answers": [
+      "Only birth certificate",
+      "Proof of school enrollment or graduation",
+      "Employment verification",
+      "Parental consent form only"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "AL-011",
+    "state": "AL",
+    "category": "gdlLicensing",
+    "question": "What restriction applies to Stage I permit holders regarding front seat supervision in Alabama?",
+    "answers": [
+      "Supervisor can be in back seat",
+      "No supervision needed during daytime",
+      "Supervisor must occupy front seat",
+      "Supervisor only needed on highways"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "AL-012",
+    "state": "AL",
+    "category": "gdlLicensing",
+    "question": "What is the consequence of GDL violations for license holders in Alabama?",
+    "answers": [
+      "Criminal penalties and court costs",
+      "License suspension for one year",
+      "Points added to driving record",
+      "No criminal penalties or points"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "AL-013",
+    "state": "AL",
+    "category": "cellPhone",
+    "question": "What does Alabama's Hands-Free Law prohibit while driving?",
+    "answers": [
+      "Physically holding or manually using a phone",
+      "Only texting while driving",
+      "Only video recording",
+      "Using Bluetooth devices"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "AL-014",
+    "state": "AL",
+    "category": "cellPhone",
+    "question": "Can you use voice-operated talk-to-text while driving in Alabama?",
+    "answers": [
+      "No, all phone use is banned",
+      "Yes, voice-operated texting is allowed",
+      "Only with hands-free device",
+      "Only for emergencies"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "AL-015",
+    "state": "AL",
+    "category": "cellPhone",
+    "question": "How many button presses are allowed to initiate a call under Alabama's Hands-Free Law?",
+    "answers": [
+      "Up to three buttons",
+      "Two buttons maximum",
+      "Single button or single swipe",
+      "No touching allowed"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "AL-016",
+    "state": "AL",
+    "category": "cellPhone",
+    "question": "What phone use is prohibited for drivers under 18 with a restricted license in Alabama?",
+    "answers": [
+      "Only handheld calls",
+      "Only texting",
+      "Only video recording",
+      "All mobile phone use"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "AL-017",
+    "state": "AL",
+    "category": "cellPhone",
+    "question": "When can you legally contact emergency services with a phone while driving in Alabama?",
+    "answers": [
+      "Anytime to report emergencies",
+      "Only when fully stopped",
+      "Only with voice commands",
+      "Never while vehicle is on"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "AL-018",
+    "state": "AL",
+    "category": "cellPhone",
+    "question": "What devices are permitted for phone conversations while driving in Alabama?",
+    "answers": [
+      "Handheld phones only",
+      "Bluetooth and speakerphones",
+      "No devices allowed",
+      "Only wired headsets"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "AL-019",
+    "state": "AL",
+    "category": "duiStateLaws",
+    "question": "What is the legal BAC limit for drivers under 21 in Alabama?",
+    "answers": [
+      "0.08 percent",
+      "0.04 percent",
+      "0.02 percent",
+      "Zero tolerance"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "AL-020",
+    "state": "AL",
+    "category": "duiStateLaws",
+    "question": "What is the BAC limit for commercial drivers in Alabama?",
+    "answers": [
+      "0.08 percent",
+      "0.02 percent",
+      "0.06 percent",
+      "0.04 percent"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "AL-021",
+    "state": "AL",
+    "category": "duiStateLaws",
+    "question": "What does implied consent mean for Alabama drivers?",
+    "answers": [
+      "Agreement to BAC testing when lawfully stopped",
+      "Permission to search vehicle",
+      "Consent to field sobriety only",
+      "Waiver of legal representation"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "AL-022",
+    "state": "AL",
+    "category": "duiStateLaws",
+    "question": "What happens to minimum jail time if your BAC is 0.15 or higher in Alabama?",
+    "answers": [
+      "It stays the same",
+      "Mandatory minimum sentence doubles",
+      "Only fines increase",
+      "License suspension extends only"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "AL-023",
+    "state": "AL",
+    "category": "duiStateLaws",
+    "question": "How long must you maintain SR-22 insurance after a DUI conviction in Alabama?",
+    "answers": [
+      "One year",
+      "Two years",
+      "Three years",
+      "Five years"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "AL-024",
+    "state": "AL",
+    "category": "duiStateLaws",
+    "question": "When does a fourth DUI become a felony in Alabama?",
+    "answers": [
+      "Within 10 years",
+      "At any time",
+      "Within 3 years",
+      "Within 5 years"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "AL-025",
+    "state": "AL",
+    "category": "duiStateLaws",
+    "question": "What is the consequence of refusing a BAC test for the first time in Alabama?",
+    "answers": [
+      "90-day license suspension",
+      "Automatic DUI conviction",
+      "No penalty",
+      "One year jail time"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "AL-026",
+    "state": "AL",
+    "category": "duiStateLaws",
+    "question": "How many years of prior DUI convictions does Alabama count for sentencing purposes?",
+    "answers": [
+      "5 years",
+      "10 years",
+      "Lifetime",
+      "7 years"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "AL-027",
+    "state": "AL",
+    "category": "insurance",
+    "question": "What type of insurance system does Alabama follow for auto accidents?",
+    "answers": [
+      "No-fault system",
+      "Comparative negligence only",
+      "Fault-based system",
+      "Shared responsibility system"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "AL-028",
+    "state": "AL",
+    "category": "insurance",
+    "question": "What does liability insurance primarily cover in Alabama?",
+    "answers": [
+      "Your vehicle damage only",
+      "Your medical bills only",
+      "Rental car expenses",
+      "Damages you cause to others"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "AL-029",
+    "state": "AL",
+    "category": "insurance",
+    "question": "What coverage protects you if hit by an uninsured driver in Alabama?",
+    "answers": [
+      "Uninsured motorist coverage",
+      "Comprehensive coverage",
+      "Collision coverage",
+      "Personal injury protection"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "AL-030",
+    "state": "AL",
+    "category": "insurance",
+    "question": "What is the penalty classification for driving without insurance in Alabama?",
+    "answers": [
+      "Traffic infraction only",
+      "Class C misdemeanor",
+      "Felony offense",
+      "Civil violation only"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "AL-031",
+    "state": "AL",
+    "category": "stateUnique",
+    "question": "When must you turn on headlights while driving in Alabama?",
+    "answers": [
+      "Only at night",
+      "During rain only",
+      "When using windshield wipers",
+      "Only in fog"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "AL-032",
+    "state": "AL",
+    "category": "stateUnique",
+    "question": "What is required when passing a stopped emergency vehicle on a four-lane road in Alabama?",
+    "answers": [
+      "Honk your horn",
+      "Stop completely",
+      "Flash your lights",
+      "Move over one lane or slow down"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "AL-033",
+    "state": "AL",
+    "category": "stateUnique",
+    "question": "How far must you stay behind emergency vehicles in Alabama?",
+    "answers": [
+      "500 feet",
+      "200 feet",
+      "100 feet",
+      "1000 feet"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "AL-034",
+    "state": "AL",
+    "category": "stateUnique",
+    "question": "What is the seatbelt requirement for children under 15 in Alabama?",
+    "answers": [
+      "Front seat only",
+      "All positions in vehicle",
+      "Only on highways",
+      "Optional with parental consent"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "AL-035",
+    "state": "AL",
+    "category": "stateUnique",
+    "question": "What is the maximum handlebar height for motorcycles in Alabama?",
+    "answers": [
+      "12 inches above seat",
+      "No restriction",
+      "15 inches above seat",
+      "18 inches above seat"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "AL-036",
+    "state": "AL",
+    "category": "stateUnique",
+    "question": "Are helmets required for motorcycle riders in Alabama?",
+    "answers": [
+      "Only for riders under 21",
+      "Only on highways",
+      "Optional with insurance",
+      "Required for all riders"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "AL-037",
+    "state": "AL",
+    "category": "stateUnique",
+    "question": "When must you stop for a school bus with flashing lights in Alabama?",
+    "answers": [
+      "From any direction of approach",
+      "Only if directly behind",
+      "Only on two-lane roads",
+      "Never if on opposite side"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "AL-038",
+    "state": "AL",
+    "category": "stateUnique",
+    "question": "At what age is a bicycle helmet required in Alabama?",
+    "answers": [
+      "Under 18",
+      "Under 16",
+      "Under 12",
+      "All ages"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "AL-039",
+    "state": "AL",
+    "category": "stateUnique",
+    "question": "What right of way do pedestrians have in Alabama?",
+    "answers": [
+      "Only at crosswalks",
+      "Only with walk signals",
+      "Always, even when crossing illegally",
+      "Never in roadways"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "AL-040",
+    "state": "AL",
+    "category": "stateUnique",
+    "question": "When are right turns on red allowed in Alabama?",
+    "answers": [
+      "Never permitted",
+      "Always without stopping",
+      "Only during daytime",
+      "After full stop when safe"
+    ],
+    "correctIndex": 3
+  }
+]

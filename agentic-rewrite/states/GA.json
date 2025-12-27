@@ -1,0 +1,522 @@
+[
+  {
+    "id": "GA-001",
+    "question": "What is Joshua's Law in Georgia?",
+    "options": [
+      "A mandatory driver education program for teens",
+      "A law requiring seat belts for all passengers",
+      "A regulation about school bus safety",
+      "A restriction on nighttime driving for all drivers"
+    ],
+    "correctIndex": 0,
+    "category": "gdlLicensing",
+    "rationale": "Joshua's Law requires 16- and 17-year-olds to complete 30 hours of driver education and specific behind-the-wheel training to obtain a Class D license in Georgia."
+  },
+  {
+    "id": "GA-002",
+    "question": "During the first six months with a Georgia Class D license, who can ride as passengers?",
+    "options": [
+      "Anyone the driver chooses",
+      "Only immediate family members",
+      "Up to three friends",
+      "Only adults over age 21"
+    ],
+    "correctIndex": 1,
+    "category": "gdlLicensing",
+    "rationale": "Georgia law restricts Class D license holders to only immediate family members as passengers during the first six months after receiving the license."
+  },
+  {
+    "id": "GA-003",
+    "question": "What must a Georgia learner's permit holder do while driving?",
+    "options": [
+      "Display a special decal on the vehicle",
+      "Only drive during daylight hours",
+      "Be accompanied by a licensed driver age 21 or older",
+      "Limit speed to 10 mph below posted limits"
+    ],
+    "correctIndex": 2,
+    "category": "gdlLicensing",
+    "rationale": "Georgia law requires learner's permit holders to always be accompanied by a licensed driver who is at least 21 years old and occupying the seat beside the driver."
+  },
+  {
+    "id": "GA-004",
+    "question": "How many hours of supervised driving must Georgia teens complete, including nighttime hours?",
+    "options": [
+      "20 total hours with 4 at night",
+      "30 total hours with 5 at night",
+      "35 total hours with 8 at night",
+      "40 total hours with 6 at night"
+    ],
+    "correctIndex": 3,
+    "category": "gdlLicensing",
+    "rationale": "Joshua's Law requires 40 hours of supervised driving practice, with at least 6 of those hours completed during nighttime, to qualify for a Class D license."
+  },
+  {
+    "id": "GA-005",
+    "question": "Under Joshua's Law, what behind-the-wheel training options satisfy the requirement?",
+    "options": [
+      "Six hours professional or 40 hours parent-taught",
+      "Ten hours with any adult driver",
+      "Twenty hours at a driving school only",
+      "Thirty hours with a family member"
+    ],
+    "correctIndex": 0,
+    "category": "gdlLicensing",
+    "rationale": "Joshua's Law allows teens to complete either 6 hours of professional behind-the-wheel training or 40 hours of parent-taught training using Georgia's Parent/Teen Driving Guide."
+  },
+  {
+    "id": "GA-006",
+    "question": "When are Georgia Class D license holders prohibited from driving?",
+    "options": [
+      "Between 10 PM and 6 AM",
+      "Between midnight and 5 AM",
+      "Between 11 PM and 6 AM",
+      "Between 1 AM and 5 AM"
+    ],
+    "correctIndex": 1,
+    "category": "gdlLicensing",
+    "rationale": "Georgia law prohibits Class D license holders from driving between 12:00 midnight and 5:00 AM with no exceptions, as part of graduated driver licensing restrictions."
+  },
+  {
+    "id": "GA-007",
+    "question": "After the first six months with a Class D license, how many non-family passengers are allowed?",
+    "options": [
+      "No non-family passengers are ever allowed",
+      "Up to three non-family passengers",
+      "One non-family passenger",
+      "Two non-family passengers"
+    ],
+    "correctIndex": 2,
+    "category": "gdlLicensing",
+    "rationale": "During months 7-12 of holding a Class D license, Georgia permits only one non-family passenger to ride in the vehicle with the teen driver."
+  },
+  {
+    "id": "GA-008",
+    "question": "At what minimum age can a Georgia resident apply for a learner's permit?",
+    "options": [
+      "14 years old",
+      "14 and a half years old",
+      "16 years old",
+      "15 years old"
+    ],
+    "correctIndex": 3,
+    "category": "gdlLicensing",
+    "rationale": "Georgia allows residents to apply for an instructional permit (Class CP) at age 15 after successfully passing a written knowledge examination."
+  },
+  {
+    "id": "GA-009",
+    "question": "When can a Georgia driver upgrade from a Class D to a full Class C license?",
+    "options": [
+      "At age 18 after holding Class D for 12 months",
+      "At age 17 after completing advanced training",
+      "At age 19 with no violations",
+      "Immediately after passing a road test"
+    ],
+    "correctIndex": 0,
+    "category": "gdlLicensing",
+    "rationale": "Georgia drivers can upgrade to a full Class C license at age 18, provided they have held a Class D license for at least 12 months without violations."
+  },
+  {
+    "id": "GA-010",
+    "question": "Who qualifies as a supervising driver for someone with a Georgia learner's permit?",
+    "options": [
+      "Any family member with a license",
+      "A licensed driver at least 21 years old",
+      "Anyone who has held a license for 5 years",
+      "A parent or legal guardian only"
+    ],
+    "correctIndex": 1,
+    "category": "gdlLicensing",
+    "rationale": "Georgia requires the supervising driver to be at least 21 years old, hold a valid license, and be capable of exercising control over the vehicle from the seat beside the driver."
+  },
+  {
+    "id": "GA-011",
+    "question": "How many classroom hours of driver education does Joshua's Law require?",
+    "options": [
+      "20 hours",
+      "25 hours",
+      "30 hours",
+      "40 hours"
+    ],
+    "correctIndex": 2,
+    "category": "gdlLicensing",
+    "rationale": "Joshua's Law mandates 30 hours of classroom driver education instruction, which can be completed in-person or through approved online programs."
+  },
+  {
+    "id": "GA-012",
+    "question": "How long must a Georgia teen hold a learner's permit before applying for a Class D license?",
+    "options": [
+      "6 months exactly",
+      "9 months and 1 day",
+      "18 months minimum",
+      "1 year and 1 day"
+    ],
+    "correctIndex": 3,
+    "category": "gdlLicensing",
+    "rationale": "Georgia requires teens to hold a Class CP learner's permit for at least 12 months and 1 day before they are eligible to apply for a Class D provisional license."
+  },
+  {
+    "id": "GA-013",
+    "question": "What is the core principle of Georgia's Hands-Free Law?",
+    "options": [
+      "No part of the driver's body can touch the phone",
+      "Phones must be turned off while driving",
+      "Only emergency calls are permitted",
+      "Bluetooth devices are prohibited"
+    ],
+    "correctIndex": 0,
+    "category": "cellPhone",
+    "rationale": "The Hands-Free Georgia Act prohibits drivers from holding or supporting a phone with any part of their body while driving on public roads."
+  },
+  {
+    "id": "GA-014",
+    "question": "Under Georgia's Hands-Free Law, when is a driver permitted to hold their phone?",
+    "options": [
+      "At stop signs and traffic lights",
+      "Only when legally parked",
+      "During emergency situations only",
+      "When traveling below 25 mph"
+    ],
+    "correctIndex": 1,
+    "category": "cellPhone",
+    "rationale": "Georgia law only permits holding a phone when the vehicle is legally parked, not merely stopped at traffic signals or stop signs on public roads."
+  },
+  {
+    "id": "GA-015",
+    "question": "What type of phone use is permitted while driving in Georgia?",
+    "options": [
+      "Texting at red lights only",
+      "One-handed calling if brief",
+      "Hands-free voice-activated technology",
+      "Holding phone for GPS directions"
+    ],
+    "correctIndex": 2,
+    "category": "cellPhone",
+    "rationale": "Georgia's Hands-Free Law allows drivers to use phones through voice-activated technology, Bluetooth, speakerphone, or other hands-free methods without touching the device."
+  },
+  {
+    "id": "GA-016",
+    "question": "What restriction applies to Georgia drivers under age 18 regarding cell phones?",
+    "options": [
+      "They may use hands-free devices only",
+      "They may text but not call",
+      "They may use phones with parental permission",
+      "They are banned from all cell phone use"
+    ],
+    "correctIndex": 3,
+    "category": "cellPhone",
+    "rationale": "Georgia prohibits all cell phone use, including hands-free devices, for novice drivers under age 18 while operating a vehicle."
+  },
+  {
+    "id": "GA-017",
+    "question": "Can Georgia drivers touch their phone to answer a call while driving?",
+    "options": [
+      "Yes, to initiate or accept a call only",
+      "Yes, if the call is from family",
+      "No, never while the vehicle is in motion",
+      "Yes, but only at intersections"
+    ],
+    "correctIndex": 0,
+    "category": "cellPhone",
+    "rationale": "Georgia law permits touching the phone to make or answer a call, but prohibits holding or supporting the phone with any body part during the conversation."
+  },
+  {
+    "id": "GA-018",
+    "question": "What must drivers do if they need to use their phone while driving in Georgia?",
+    "options": [
+      "Pull over and stop briefly",
+      "Use voice commands or pull over and park legally",
+      "Wait until reaching their destination",
+      "Switch to speaker mode immediately"
+    ],
+    "correctIndex": 1,
+    "category": "cellPhone",
+    "rationale": "Georgia drivers must either use voice-activated hands-free technology or pull over and legally park before holding or manually operating their phone."
+  },
+  {
+    "id": "GA-019",
+    "question": "What BAC level triggers DUI charges for Georgia drivers under age 21?",
+    "options": [
+      "0.00%",
+      "0.01%",
+      "0.02%",
+      "0.05%"
+    ],
+    "correctIndex": 2,
+    "category": "duiStateLaws",
+    "rationale": "Georgia's zero tolerance law prohibits drivers under 21 from having a BAC of 0.02% or higher, significantly lower than the 0.08% limit for adults."
+  },
+  {
+    "id": "GA-020",
+    "question": "What does Georgia's implied consent law require from drivers?",
+    "options": [
+      "Consent to vehicle searches",
+      "Permission for license suspension",
+      "Consent to roadside questioning",
+      "Agreement to chemical testing when arrested for DUI"
+    ],
+    "correctIndex": 3,
+    "category": "duiStateLaws",
+    "rationale": "By operating a vehicle in Georgia, drivers automatically consent to chemical testing of blood, breath, or urine when lawfully arrested for impaired driving."
+  },
+  {
+    "id": "GA-021",
+    "question": "What is the consequence for refusing a chemical test in Georgia?",
+    "options": [
+      "Automatic license suspension",
+      "Increased insurance rates only",
+      "A warning for first refusal",
+      "Mandatory court appearance"
+    ],
+    "correctIndex": 0,
+    "category": "duiStateLaws",
+    "rationale": "Refusing chemical testing under Georgia's implied consent law results in automatic license suspension, and the refusal can be used as evidence in court."
+  },
+  {
+    "id": "GA-022",
+    "question": "What additional consequence do Georgia drivers aged 15-21 face for DUI conviction?",
+    "options": [
+      "Immediate vehicle impoundment",
+      "Delayed eligibility for graduated license advancement",
+      "Mandatory alcohol education classes",
+      "Extended probation period"
+    ],
+    "correctIndex": 1,
+    "category": "duiStateLaws",
+    "rationale": "Georgia drivers between ages 15-21 convicted of DUI must delay obtaining their next graduated license level for 12 months, beyond standard penalties."
+  },
+  {
+    "id": "GA-023",
+    "question": "At what BAC level can adult drivers be charged with DUI in Georgia?",
+    "options": [
+      "0.05%",
+      "0.06%",
+      "0.08%",
+      "0.10%"
+    ],
+    "correctIndex": 2,
+    "category": "duiStateLaws",
+    "rationale": "Georgia law establishes 0.08% BAC as the legal limit for adult drivers age 21 and over, consistent with federal standards."
+  },
+  {
+    "id": "GA-024",
+    "question": "What must Georgia officers provide before requesting a chemical test?",
+    "options": [
+      "A written consent form",
+      "Access to legal counsel",
+      "A warning about penalties",
+      "The implied consent notice"
+    ],
+    "correctIndex": 3,
+    "category": "duiStateLaws",
+    "rationale": "Georgia law requires officers to read the implied consent notice explaining testing requirements, refusal consequences, and rights before requesting any BAC test."
+  },
+  {
+    "id": "GA-025",
+    "question": "Why does Georgia enforce zero tolerance laws for underage drivers?",
+    "options": [
+      "To prevent underage drinking and driving",
+      "To reduce insurance costs",
+      "To increase state revenue",
+      "To simplify traffic enforcement"
+    ],
+    "correctIndex": 0,
+    "category": "duiStateLaws",
+    "rationale": "Georgia's zero tolerance laws specifically target underage drinking and driving by making it illegal for drivers under 21 to operate vehicles with minimal alcohol in their system."
+  },
+  {
+    "id": "GA-026",
+    "question": "How long is the license suspension for a first underage DUI offense in Georgia?",
+    "options": [
+      "Three months minimum",
+      "Six months minimum",
+      "Nine months minimum",
+      "One year minimum"
+    ],
+    "correctIndex": 1,
+    "category": "duiStateLaws",
+    "rationale": "Georgia suspends licenses for a minimum of six months for underage drivers with BAC under 0.08%, with longer suspensions for higher BAC levels."
+  },
+  {
+    "id": "GA-027",
+    "question": "What type of car insurance is legally required in Georgia?",
+    "options": [
+      "Comprehensive coverage",
+      "Collision coverage",
+      "Liability coverage",
+      "Uninsured motorist coverage"
+    ],
+    "correctIndex": 2,
+    "category": "insurance",
+    "rationale": "Georgia law requires all drivers to carry liability insurance, which covers injuries and property damage the driver causes to others in an accident."
+  },
+  {
+    "id": "GA-028",
+    "question": "What does Georgia's required liability insurance NOT cover?",
+    "options": [
+      "Injuries to other drivers",
+      "Damage to other vehicles",
+      "Medical costs for other people",
+      "Your own vehicle repairs"
+    ],
+    "correctIndex": 3,
+    "category": "insurance",
+    "rationale": "Liability insurance only covers injuries and property damage you cause to others; it never pays for your own injuries or damage to your vehicle."
+  },
+  {
+    "id": "GA-029",
+    "question": "Why does Georgia require minimum liability insurance coverage?",
+    "options": [
+      "To ensure drivers can pay for harm they cause",
+      "To fund state highway maintenance",
+      "To reduce vehicle registration fees",
+      "To lower overall insurance premiums"
+    ],
+    "correctIndex": 0,
+    "category": "insurance",
+    "rationale": "Georgia mandates liability coverage to ensure drivers have financial ability to compensate others for injuries and property damage they cause in accidents."
+  },
+  {
+    "id": "GA-030",
+    "question": "What must Georgia drivers provide during a traffic stop?",
+    "options": [
+      "Vehicle registration only",
+      "Proof of insurance and license",
+      "Insurance declaration page",
+      "Recent maintenance records"
+    ],
+    "correctIndex": 1,
+    "category": "insurance",
+    "rationale": "Georgia law requires drivers to present proof of insurance coverage along with their driver's license when requested by law enforcement during traffic stops."
+  },
+  {
+    "id": "GA-031",
+    "question": "What speeds qualify as Super Speeder violations in Georgia?",
+    "options": [
+      "70 mph on any road or 80 mph on highways",
+      "80 mph on any road or 90 mph on highways",
+      "75 mph on two-lane roads or 85 mph on any road",
+      "65 mph on two-lane roads or 80 mph on highways"
+    ],
+    "correctIndex": 2,
+    "category": "stateUnique",
+    "rationale": "Georgia's Super Speeder Law applies to drivers convicted of speeding 75 mph or more on two-lane roads or 85 mph or more on any road or highway."
+  },
+  {
+    "id": "GA-032",
+    "question": "What must drivers do when approaching emergency vehicles with flashing lights in Georgia?",
+    "options": [
+      "Slow down to half the speed limit",
+      "Stop completely until vehicles leave",
+      "Flash headlights to acknowledge",
+      "Move over one lane or slow down"
+    ],
+    "correctIndex": 3,
+    "category": "stateUnique",
+    "rationale": "Georgia's Move Over Law requires drivers to change lanes away from emergency vehicles when possible, or reduce speed below the posted limit if unable to move over."
+  },
+  {
+    "id": "GA-033",
+    "question": "What does Georgia's Slowpoke Law require on multi-lane highways?",
+    "options": [
+      "Exiting the left lane when faster traffic approaches",
+      "Maintaining minimum highway speeds",
+      "Using right lane for all truck traffic",
+      "Keeping left lane clear during rush hour"
+    ],
+    "correctIndex": 0,
+    "category": "stateUnique",
+    "rationale": "Georgia's Slowpoke Law prohibits drivers from continuing in the left lane once they know or should know a faster vehicle is approaching from behind, regardless of speed."
+  },
+  {
+    "id": "GA-034",
+    "question": "When must drivers stop for a school bus in Georgia?",
+    "options": [
+      "Only when children are visible",
+      "When red lights flash and stop arm extends",
+      "When the bus is slowing down",
+      "Only on school property"
+    ],
+    "correctIndex": 1,
+    "category": "stateUnique",
+    "rationale": "Georgia law requires all drivers to stop when a school bus activates its flashing red lights and extends its stop arm, indicating children are loading or unloading."
+  },
+  {
+    "id": "GA-035",
+    "question": "What did Georgia's Addy's Law establish regarding school buses?",
+    "options": [
+      "Mandatory seat belts on all buses",
+      "Camera systems on every bus",
+      "Enhanced penalties for illegally passing buses",
+      "Reduced speed limits near schools"
+    ],
+    "correctIndex": 2,
+    "category": "stateUnique",
+    "rationale": "Addy's Law, enacted in 2024, increased penalties for passing stopped school buses with lights flashing to a high and aggravated misdemeanor with severe consequences."
+  },
+  {
+    "id": "GA-036",
+    "question": "What happens if a Georgia Super Speeder fails to pay the state fee?",
+    "options": [
+      "Increased insurance premiums only",
+      "Additional court appearance required",
+      "Points added to driving record",
+      "License suspension and additional fees"
+    ],
+    "correctIndex": 3,
+    "category": "stateUnique",
+    "rationale": "Failure to pay the Super Speeder fee within 120 days results in license suspension, and reinstatement requires paying both the original fee plus an additional reinstatement fee."
+  },
+  {
+    "id": "GA-037",
+    "question": "Which vehicles are covered under Georgia's Move Over Law?",
+    "options": [
+      "Emergency, tow, utility, and highway maintenance vehicles",
+      "Police and fire vehicles only",
+      "Any vehicle with hazard lights on",
+      "Commercial vehicles and buses"
+    ],
+    "correctIndex": 0,
+    "category": "stateUnique",
+    "rationale": "Georgia's Move Over Law applies to emergency vehicles, tow trucks, utility vehicles, DOT crews, and HERO units displaying flashing yellow, amber, white, red, or blue lights."
+  },
+  {
+    "id": "GA-038",
+    "question": "What do flashing yellow lights on a Georgia school bus indicate?",
+    "options": [
+      "The bus is broken down",
+      "The bus is preparing to stop soon",
+      "Children are boarding",
+      "The bus is in reverse"
+    ],
+    "correctIndex": 1,
+    "category": "stateUnique",
+    "rationale": "Georgia school buses activate flashing yellow lights approximately 200 feet before their intended stop to warn drivers to slow down and prepare to stop."
+  },
+  {
+    "id": "GA-039",
+    "question": "When does Georgia's Slowpoke Law NOT apply to left lane drivers?",
+    "options": [
+      "When driving at the speed limit",
+      "During weekend travel",
+      "When traffic congestion requires using all lanes",
+      "On roads with three or more lanes"
+    ],
+    "correctIndex": 2,
+    "category": "stateUnique",
+    "rationale": "The Slowpoke Law does not apply when traffic conditions or congestion make it necessary to use the left lane, or when preparing to exit or turn left."
+  },
+  {
+    "id": "GA-040",
+    "question": "When can drivers continue without stopping for a school bus on a divided highway?",
+    "options": [
+      "When traveling over 45 mph",
+      "During non-school hours only",
+      "Never on any divided highway",
+      "When traveling opposite direction with median separation"
+    ],
+    "correctIndex": 3,
+    "category": "stateUnique",
+    "rationale": "On highways with a median strip separating directions, only vehicles traveling in the same direction as the bus must stop; opposite-direction traffic may continue."
+  }
+]

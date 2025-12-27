@@ -1,0 +1,522 @@
+[
+  {
+    "id": "MS-001",
+    "state": "MS",
+    "category": "gdlLicensing",
+    "question": "At what age can you obtain a standard learner's permit in Mississippi?",
+    "answers": [
+      "15 years old",
+      "14 years old",
+      "16 years old",
+      "17 years old"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MS-002",
+    "state": "MS",
+    "category": "gdlLicensing",
+    "question": "Who can supervise a learner's permit holder while driving in Mississippi?",
+    "answers": [
+      "Any licensed driver over 18",
+      "Licensed driver at least 21 years old",
+      "Only certified driving instructors",
+      "Any family member with a license"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MS-003",
+    "state": "MS",
+    "category": "gdlLicensing",
+    "question": "How long must a 15-year-old hold a learner's permit before applying for an intermediate license in Mississippi?",
+    "answers": [
+      "3 months minimum",
+      "9 months minimum",
+      "At least 6 months",
+      "1 year minimum"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MS-004",
+    "state": "MS",
+    "category": "gdlLicensing",
+    "question": "What is the nighttime curfew for intermediate license holders in Mississippi on weekdays?",
+    "answers": [
+      "11 PM to 5 AM",
+      "Midnight to 6 AM",
+      "9 PM to 6 AM",
+      "10 PM to 6 AM"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "MS-005",
+    "state": "MS",
+    "category": "gdlLicensing",
+    "question": "At what age can you skip the intermediate license and apply for a full license in Mississippi?",
+    "answers": [
+      "17 years old with no violations",
+      "18 years old regardless of violations",
+      "16 years old with driver education",
+      "19 years old"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MS-006",
+    "state": "MS",
+    "category": "gdlLicensing",
+    "question": "How long must you be violation-free before getting an intermediate license in Mississippi?",
+    "answers": [
+      "3 months",
+      "One year",
+      "6 months",
+      "No requirement"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MS-007",
+    "state": "MS",
+    "category": "gdlLicensing",
+    "question": "What is the limited learner's permit for 14-year-olds in Mississippi restricted to?",
+    "answers": [
+      "Any supervised driving",
+      "Highway driving only",
+      "Driver education vehicles only",
+      "Family vehicles only"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MS-008",
+    "state": "MS",
+    "category": "gdlLicensing",
+    "question": "How long after obtaining an intermediate license can you apply for an unrestricted license in Mississippi?",
+    "answers": [
+      "3 months violation-free",
+      "1 year violation-free",
+      "Immediately at age 18",
+      "6 months violation-free"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "MS-009",
+    "state": "MS",
+    "category": "gdlLicensing",
+    "question": "What minimum age is required to apply for an intermediate license in Mississippi?",
+    "answers": [
+      "16 years old",
+      "15 years old",
+      "17 years old",
+      "14 years old"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MS-010",
+    "state": "MS",
+    "category": "gdlLicensing",
+    "question": "What happens if a driver violates GDL restrictions in Mississippi?",
+    "answers": [
+      "Automatic license revocation",
+      "License suspension and possible jail time",
+      "Points on driving record only",
+      "Warning for first offense"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MS-011",
+    "state": "MS",
+    "category": "gdlLicensing",
+    "question": "What must a permit holder do before obtaining a learner's permit in Mississippi?",
+    "answers": [
+      "Complete driver education",
+      "Take a road test",
+      "Pass vision screening and written test",
+      "Submit proof of insurance"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MS-012",
+    "state": "MS",
+    "category": "gdlLicensing",
+    "question": "What is required to progress from a learner's permit to an intermediate license in Mississippi?",
+    "answers": [
+      "Written test only",
+      "Vision test only",
+      "Proof of insurance",
+      "Passing the driving test"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "MS-013",
+    "state": "MS",
+    "category": "cellPhone",
+    "question": "What activity is prohibited for all drivers in Mississippi?",
+    "answers": [
+      "Texting while driving",
+      "Making hands-free calls",
+      "Using voice commands",
+      "Listening to GPS"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MS-014",
+    "state": "MS",
+    "category": "cellPhone",
+    "question": "Can drivers with a full license make handheld phone calls while driving in Mississippi?",
+    "answers": [
+      "Never permitted",
+      "Yes, handheld calls are allowed",
+      "Only in emergencies",
+      "Only on highways"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MS-015",
+    "state": "MS",
+    "category": "cellPhone",
+    "question": "What type of phone use is allowed under Mississippi's distracted driving law?",
+    "answers": [
+      "Reading emails while stopped",
+      "Browsing social media",
+      "Hands-free and voice-to-text",
+      "Holding phone for GPS"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MS-016",
+    "state": "MS",
+    "category": "cellPhone",
+    "question": "What cell phone restriction applies to learner's permit holders in Mississippi?",
+    "answers": [
+      "Texting only prohibited",
+      "Handheld calls prohibited",
+      "Social media prohibited",
+      "All cell phone use prohibited"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "MS-017",
+    "state": "MS",
+    "category": "cellPhone",
+    "question": "What activities count as texting under Mississippi law?",
+    "answers": [
+      "Text messages, emails, and social media",
+      "Only SMS text messages",
+      "Only instant messages",
+      "Only social media posting"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MS-018",
+    "state": "MS",
+    "category": "cellPhone",
+    "question": "Who else is completely banned from cell phone use while driving in Mississippi?",
+    "answers": [
+      "All commercial drivers",
+      "Bus drivers transporting minors",
+      "Drivers over 65",
+      "Motorcycle riders"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MS-019",
+    "state": "MS",
+    "category": "duiStateLaws",
+    "question": "What is the legal BAC limit for drivers under 21 in Mississippi?",
+    "answers": [
+      "0.08 percent",
+      "0.04 percent",
+      "0.02 percent",
+      "0.01 percent"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MS-020",
+    "state": "MS",
+    "category": "duiStateLaws",
+    "question": "What is the BAC limit for commercial drivers in Mississippi?",
+    "answers": [
+      "0.08 percent",
+      "0.02 percent",
+      "0.06 percent",
+      "0.04 percent"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "MS-021",
+    "state": "MS",
+    "category": "duiStateLaws",
+    "question": "What does Mississippi's implied consent law require?",
+    "answers": [
+      "Submission to BAC testing when lawfully arrested",
+      "Consent to vehicle searches",
+      "Agreement to field sobriety tests only",
+      "Permission for roadside questioning"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MS-022",
+    "state": "MS",
+    "category": "duiStateLaws",
+    "question": "What is the consequence for a first-time refusal of a BAC test in Mississippi?",
+    "answers": [
+      "No penalty",
+      "90-day license suspension",
+      "One year suspension",
+      "Automatic DUI conviction"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MS-023",
+    "state": "MS",
+    "category": "duiStateLaws",
+    "question": "At what point does a DUI become a felony offense in Mississippi?",
+    "answers": [
+      "Second offense",
+      "First offense with injury",
+      "Third offense",
+      "Fourth offense"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MS-024",
+    "state": "MS",
+    "category": "duiStateLaws",
+    "question": "What is the charge for killing or injuring someone while driving under the influence in Mississippi?",
+    "answers": [
+      "Simple DUI",
+      "Vehicular manslaughter",
+      "Reckless endangerment",
+      "Aggravated DUI"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "MS-025",
+    "state": "MS",
+    "category": "duiStateLaws",
+    "question": "What happens if you refuse a second BAC test in Mississippi?",
+    "answers": [
+      "One year license suspension",
+      "6-month suspension",
+      "Criminal charges only",
+      "180-day suspension"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MS-026",
+    "state": "MS",
+    "category": "duiStateLaws",
+    "question": "What additional charge applies for DUI while transporting a child under 16 in Mississippi?",
+    "answers": [
+      "No additional charge",
+      "Child endangerment DUI",
+      "Reckless driving",
+      "Contributing to delinquency"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MS-027",
+    "state": "MS",
+    "category": "insurance",
+    "question": "What type of insurance system does Mississippi follow?",
+    "answers": [
+      "No-fault system",
+      "Choice system",
+      "Fault-based system",
+      "Hybrid system"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MS-028",
+    "state": "MS",
+    "category": "insurance",
+    "question": "What does liability insurance primarily cover in Mississippi?",
+    "answers": [
+      "Your own vehicle damage",
+      "Your medical expenses",
+      "Theft and vandalism",
+      "Damages you cause to others"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "MS-029",
+    "state": "MS",
+    "category": "insurance",
+    "question": "Who does insurance coverage follow in Mississippi?",
+    "answers": [
+      "The vehicle, not the driver",
+      "The driver, not the vehicle",
+      "Both equally",
+      "Depends on the policy"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MS-030",
+    "state": "MS",
+    "category": "insurance",
+    "question": "What type of insurance is legally required for all drivers in Mississippi?",
+    "answers": [
+      "Comprehensive coverage",
+      "Liability coverage",
+      "Collision coverage",
+      "Uninsured motorist coverage"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MS-031",
+    "state": "MS",
+    "category": "stateUnique",
+    "question": "When must headlights be used in Mississippi?",
+    "answers": [
+      "Only after dark",
+      "Only in rain or fog",
+      "Half hour after sunset to half hour before sunrise",
+      "Only on highways"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MS-032",
+    "state": "MS",
+    "category": "stateUnique",
+    "question": "How far must you stop from a school bus loading or unloading children in Mississippi?",
+    "answers": [
+      "5 feet",
+      "15 feet",
+      "20 feet",
+      "At least 10 feet"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "MS-033",
+    "state": "MS",
+    "category": "stateUnique",
+    "question": "When can you proceed past a stopped school bus in Mississippi?",
+    "answers": [
+      "When lights stop flashing and children are safe",
+      "After 30 seconds",
+      "When the bus honks",
+      "Immediately if no children visible"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MS-034",
+    "state": "MS",
+    "category": "stateUnique",
+    "question": "What must you do when an emergency vehicle with lights and sirens approaches in Mississippi?",
+    "answers": [
+      "Speed up to clear the way",
+      "Pull to the right and stop",
+      "Maintain speed in your lane",
+      "Move to the left lane"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MS-035",
+    "state": "MS",
+    "category": "stateUnique",
+    "question": "What should you do when passing a stopped emergency vehicle on a highway in Mississippi?",
+    "answers": [
+      "Sound your horn",
+      "Flash your headlights",
+      "Move to farthest lane or slow down",
+      "Maintain current speed"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MS-036",
+    "state": "MS",
+    "category": "stateUnique",
+    "question": "When are you NOT required to stop for a school bus in Mississippi?",
+    "answers": [
+      "When traveling behind the bus",
+      "On residential streets",
+      "During morning hours",
+      "On four-lane divided highways traveling opposite direction"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "MS-037",
+    "state": "MS",
+    "category": "stateUnique",
+    "question": "What law strengthened school bus safety requirements in Mississippi?",
+    "answers": [
+      "Nathan's Law",
+      "Safe Schools Act",
+      "Child Safety Initiative",
+      "School Zone Protection Law"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MS-038",
+    "state": "MS",
+    "category": "stateUnique",
+    "question": "When else must headlights be used besides at night in Mississippi?",
+    "answers": [
+      "Never required during day",
+      "When visibility is reduced by weather",
+      "Only in school zones",
+      "Only on rural roads"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MS-039",
+    "state": "MS",
+    "category": "stateUnique",
+    "question": "What must drivers do to yield properly to emergency vehicles in Mississippi?",
+    "answers": [
+      "Stop in current lane",
+      "Speed up and move right",
+      "Pull to extreme right shoulder",
+      "Flash hazard lights"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MS-040",
+    "state": "MS",
+    "category": "stateUnique",
+    "question": "What is the severity of passing a stopped school bus if someone is injured in Mississippi?",
+    "answers": [
+      "Traffic infraction only",
+      "Misdemeanor charge",
+      "Civil penalty only",
+      "Felony charge"
+    ],
+    "correctIndex": 3
+  }
+]

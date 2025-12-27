@@ -1,0 +1,522 @@
+[
+  {
+    "id": "ME-001",
+    "state": "ME",
+    "category": "gdlLicensing",
+    "question": "At what minimum age can you apply for a learner's permit in Maine?",
+    "answers": [
+      "15 years old",
+      "16 years old",
+      "14 years old",
+      "17 years old"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "ME-002",
+    "state": "ME",
+    "category": "gdlLicensing",
+    "question": "Who can supervise a learner's permit holder in Maine?",
+    "answers": [
+      "Any licensed driver over 18",
+      "Licensed driver at least 20 years old with 2+ years experience",
+      "Any family member with a license",
+      "Only certified driving instructors"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "ME-003",
+    "state": "ME",
+    "category": "gdlLicensing",
+    "question": "How long must drivers under 21 hold a learner's permit before taking the road test in Maine?",
+    "answers": [
+      "3 months",
+      "1 year",
+      "At least 6 months",
+      "No waiting period"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "ME-004",
+    "state": "ME",
+    "category": "gdlLicensing",
+    "question": "How many supervised driving hours are required for permit holders under 21 in Maine?",
+    "answers": [
+      "50 hours total",
+      "30 hours total",
+      "No specific requirement",
+      "70 hours with 10 after dark"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "ME-005",
+    "state": "ME",
+    "category": "gdlLicensing",
+    "question": "Where must the supervisor sit when supervising a learner's permit holder in Maine?",
+    "answers": [
+      "In the front seat",
+      "Anywhere in the vehicle",
+      "In the back seat",
+      "Either front or back seat"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "ME-006",
+    "state": "ME",
+    "category": "gdlLicensing",
+    "question": "At what age can you apply for a driver's license if you completed driver education in Maine?",
+    "answers": [
+      "15 years old",
+      "16 years old",
+      "17 years old",
+      "18 years old"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "ME-007",
+    "state": "ME",
+    "category": "gdlLicensing",
+    "question": "What type of license do drivers ages 16-20 receive initially in Maine?",
+    "answers": [
+      "Full unrestricted license",
+      "Temporary license",
+      "Juvenile provisional license",
+      "Conditional license"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "ME-008",
+    "state": "ME",
+    "category": "gdlLicensing",
+    "question": "How long does Maine's juvenile provisional license period last?",
+    "answers": [
+      "6 months",
+      "1 year",
+      "18 months",
+      "2 years"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "ME-009",
+    "state": "ME",
+    "category": "gdlLicensing",
+    "question": "At what age is driver education no longer required in Maine?",
+    "answers": [
+      "18 years old",
+      "21 years old",
+      "17 years old",
+      "19 years old"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "ME-010",
+    "state": "ME",
+    "category": "gdlLicensing",
+    "question": "How long is a learner's permit valid in Maine?",
+    "answers": [
+      "1 year",
+      "2 years",
+      "3 years",
+      "Until age 18"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "ME-011",
+    "state": "ME",
+    "category": "gdlLicensing",
+    "question": "What phone restriction applies to all learner's permit holders in Maine?",
+    "answers": [
+      "Hands-free only",
+      "Texting prohibited only",
+      "No handheld or mobile phone use",
+      "GPS use allowed"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "ME-012",
+    "state": "ME",
+    "category": "gdlLicensing",
+    "question": "What happens if your learner's permit expires in Maine?",
+    "answers": [
+      "Automatic renewal",
+      "Must pay late fee only",
+      "License is permanently revoked",
+      "Must take written exam for new permit"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "ME-013",
+    "state": "ME",
+    "category": "cellPhone",
+    "question": "What does Maine's hands-free law prohibit for drivers 18 and older?",
+    "answers": [
+      "Physically holding or manually using a phone",
+      "Only texting while driving",
+      "Only video recording",
+      "All phone use including hands-free"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "ME-014",
+    "state": "ME",
+    "category": "cellPhone",
+    "question": "Can drivers use voice-to-text features while driving in Maine?",
+    "answers": [
+      "No, all texting methods banned",
+      "Yes, voice-operated texting is allowed",
+      "Only for drivers over 21",
+      "Only in emergencies"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "ME-015",
+    "state": "ME",
+    "category": "cellPhone",
+    "question": "What phone interaction is allowed if your phone is mounted in Maine?",
+    "answers": [
+      "Unlimited touching allowed",
+      "No touching allowed",
+      "Single swipe, tap, or push",
+      "Only voice commands"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "ME-016",
+    "state": "ME",
+    "category": "cellPhone",
+    "question": "What phone restriction applies to drivers under 18 in Maine?",
+    "answers": [
+      "Hands-free only",
+      "Texting prohibited only",
+      "GPS use allowed",
+      "All mobile phone use prohibited"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "ME-017",
+    "state": "ME",
+    "category": "cellPhone",
+    "question": "When can you use a handheld phone to call emergency services in Maine?",
+    "answers": [
+      "Anytime during emergencies",
+      "Only when fully stopped",
+      "Only with hands-free device",
+      "Never while vehicle is on"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "ME-018",
+    "state": "ME",
+    "category": "cellPhone",
+    "question": "What devices can drivers 18+ use for phone conversations while driving in Maine?",
+    "answers": [
+      "Handheld phones allowed",
+      "Bluetooth or speakerphone",
+      "No devices permitted",
+      "Only wired headsets"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "ME-019",
+    "state": "ME",
+    "category": "duiStateLaws",
+    "question": "What is Maine's zero tolerance BAC limit for drivers under 21?",
+    "answers": [
+      "0.08 percent",
+      "0.04 percent",
+      "0.00 percent",
+      "0.02 percent"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "ME-020",
+    "state": "ME",
+    "category": "duiStateLaws",
+    "question": "What is the BAC limit for commercial drivers in Maine?",
+    "answers": [
+      "0.08 percent",
+      "0.02 percent",
+      "0.00 percent",
+      "0.04 percent"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "ME-021",
+    "state": "ME",
+    "category": "duiStateLaws",
+    "question": "What does Maine's implied consent law require?",
+    "answers": [
+      "Agreement to chemical testing when lawfully stopped",
+      "Permission to search vehicle",
+      "Consent to field sobriety only",
+      "Waiver of attorney rights"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "ME-022",
+    "state": "ME",
+    "category": "duiStateLaws",
+    "question": "What happens if a driver under 21 refuses a BAC test for the first time in Maine?",
+    "answers": [
+      "90-day suspension",
+      "18-month license suspension",
+      "No penalty until convicted",
+      "One-year suspension"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "ME-023",
+    "state": "ME",
+    "category": "duiStateLaws",
+    "question": "What enhanced penalty applies if your BAC is 0.15% or higher in Maine?",
+    "answers": [
+      "Doubled fines only",
+      "Extended suspension only",
+      "Mandatory minimum jail time",
+      "Community service requirement"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "ME-024",
+    "state": "ME",
+    "category": "duiStateLaws",
+    "question": "What additional consequence applies for OUI with a passenger under 21 in Maine?",
+    "answers": [
+      "Warning only",
+      "Points on license",
+      "Community service",
+      "Additional license suspension and jail time"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "ME-025",
+    "state": "ME",
+    "category": "duiStateLaws",
+    "question": "What is the license suspension for a first-time underage drinking and driving offense in Maine?",
+    "answers": [
+      "One year",
+      "Six months",
+      "90 days",
+      "Two years"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "ME-026",
+    "state": "ME",
+    "category": "duiStateLaws",
+    "question": "Who chooses the type of chemical test under Maine's implied consent law?",
+    "answers": [
+      "The driver",
+      "The officer",
+      "The court",
+      "Either driver or officer"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "ME-027",
+    "state": "ME",
+    "category": "insurance",
+    "question": "What type of insurance system does Maine use for auto accidents?",
+    "answers": [
+      "No-fault system",
+      "Choice system",
+      "Fault-based system",
+      "Comparative negligence only"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "ME-028",
+    "state": "ME",
+    "category": "insurance",
+    "question": "What does liability insurance primarily cover in Maine?",
+    "answers": [
+      "Your vehicle repairs",
+      "Your medical bills",
+      "Rental car costs",
+      "Damages you cause to others"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "ME-029",
+    "state": "ME",
+    "category": "insurance",
+    "question": "What coverage protects you if hit by an uninsured driver in Maine?",
+    "answers": [
+      "Uninsured motorist coverage",
+      "Comprehensive coverage",
+      "Collision coverage",
+      "Personal injury protection"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "ME-030",
+    "state": "ME",
+    "category": "insurance",
+    "question": "What are the consequences of driving without required insurance in Maine?",
+    "answers": [
+      "Warning only",
+      "Fines and possible license suspension",
+      "No penalty unless in accident",
+      "Points on license only"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "ME-031",
+    "state": "ME",
+    "category": "stateUnique",
+    "question": "When must you use headlights in Maine?",
+    "answers": [
+      "Only after dark",
+      "During rain only",
+      "When wipers are in constant use",
+      "Only in fog"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "ME-032",
+    "state": "ME",
+    "category": "stateUnique",
+    "question": "What must you do when passing an emergency vehicle with lights on in Maine?",
+    "answers": [
+      "Honk your horn",
+      "Stop completely",
+      "Flash your lights",
+      "Move over or slow down"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "ME-033",
+    "state": "ME",
+    "category": "stateUnique",
+    "question": "When must you dim your high beams for oncoming traffic in Maine?",
+    "answers": [
+      "Within 500 feet",
+      "Within 300 feet",
+      "Within 1000 feet",
+      "Within 200 feet"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "ME-034",
+    "state": "ME",
+    "category": "stateUnique",
+    "question": "How far before a stop must a school bus activate flashing lights in Maine?",
+    "answers": [
+      "50 feet",
+      "At least 100 feet",
+      "200 feet",
+      "Immediately upon stopping"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "ME-035",
+    "state": "ME",
+    "category": "stateUnique",
+    "question": "When must you stop for a school bus with flashing red lights in Maine?",
+    "answers": [
+      "Only if directly behind",
+      "Only on two-lane roads",
+      "From both directions unless separated by barrier",
+      "Never if on divided highway"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "ME-036",
+    "state": "ME",
+    "category": "stateUnique",
+    "question": "Who must wear a motorcycle helmet in Maine?",
+    "answers": [
+      "All riders",
+      "Only riders under 21",
+      "Optional for all riders",
+      "Riders under 18 and permit holders"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "ME-037",
+    "state": "ME",
+    "category": "stateUnique",
+    "question": "At what age is a bicycle helmet required in Maine?",
+    "answers": [
+      "Under 16 years old",
+      "Under 18 years old",
+      "Under 12 years old",
+      "All ages"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "ME-038",
+    "state": "ME",
+    "category": "stateUnique",
+    "question": "What does Maine's expanded move over law now include?",
+    "answers": [
+      "Emergency vehicles only",
+      "Any disabled vehicle",
+      "Tow trucks only",
+      "Police vehicles only"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "ME-039",
+    "state": "ME",
+    "category": "stateUnique",
+    "question": "At what visibility distance must headlights be on in Maine?",
+    "answers": [
+      "500 feet",
+      "800 feet",
+      "Less than 1000 feet",
+      "2000 feet"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "ME-040",
+    "state": "ME",
+    "category": "stateUnique",
+    "question": "When are right turns on red allowed in Maine?",
+    "answers": [
+      "Never permitted",
+      "Always without stopping",
+      "Only during daytime",
+      "After complete stop unless posted otherwise"
+    ],
+    "correctIndex": 3
+  }
+]

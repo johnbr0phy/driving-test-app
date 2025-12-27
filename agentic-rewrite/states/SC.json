@@ -1,0 +1,522 @@
+[
+  {
+    "id": "SC-001",
+    "state": "SC",
+    "category": "gdlLicensing",
+    "question": "At what minimum age can you apply for a beginner's permit in South Carolina?",
+    "answers": [
+      "15 years old",
+      "16 years old",
+      "14 years old",
+      "17 years old"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "SC-002",
+    "state": "SC",
+    "category": "gdlLicensing",
+    "question": "Who can supervise a beginner's permit holder in South Carolina?",
+    "answers": [
+      "Any licensed driver over 18",
+      "Licensed driver 21 or older with 1 year experience",
+      "Only parents or guardians",
+      "Any family member with a license"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "SC-003",
+    "state": "SC",
+    "category": "gdlLicensing",
+    "question": "How long must you hold a beginner's permit before applying for a conditional license in South Carolina?",
+    "answers": [
+      "90 days",
+      "1 year",
+      "180 days",
+      "6 weeks"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "SC-004",
+    "state": "SC",
+    "category": "gdlLicensing",
+    "question": "Where must the supervising driver sit when supervising a beginner's permit holder in South Carolina?",
+    "answers": [
+      "Anywhere in the vehicle",
+      "Back seat preferred",
+      "Either front or back seat",
+      "Front seat"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "SC-005",
+    "state": "SC",
+    "category": "gdlLicensing",
+    "question": "What are the nighttime driving restrictions for conditional license holders aged 15-16 in South Carolina?",
+    "answers": [
+      "No driving alone from 6 PM to 6 AM",
+      "No driving alone from 10 PM to 5 AM",
+      "No restrictions if with parent",
+      "No driving after midnight only"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "SC-006",
+    "state": "SC",
+    "category": "gdlLicensing",
+    "question": "How many passengers under 21 can a conditional license holder transport without an adult present in South Carolina?",
+    "answers": [
+      "Three passengers maximum",
+      "Two passengers maximum",
+      "One passenger only",
+      "No passengers allowed"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "SC-007",
+    "state": "SC",
+    "category": "gdlLicensing",
+    "question": "When can a driver obtain unrestricted full driving privileges in South Carolina?",
+    "answers": [
+      "Age 16 with driver education",
+      "Immediately at age 19",
+      "Age 17 with 6 months violation-free or age 18",
+      "Age 21 regardless of violations"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "SC-008",
+    "state": "SC",
+    "category": "gdlLicensing",
+    "question": "Between midnight and 6 AM, who must supervise a beginner's permit holder in South Carolina?",
+    "answers": [
+      "Any licensed driver over 25",
+      "Driving instructor only",
+      "Any licensed adult",
+      "Licensed parent or legal guardian"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "SC-009",
+    "state": "SC",
+    "category": "gdlLicensing",
+    "question": "What documentation is required for drivers under 19 applying for a permit in South Carolina?",
+    "answers": [
+      "Proof of school enrollment or graduation",
+      "Employment verification",
+      "Only parental consent",
+      "Birth certificate only"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "SC-010",
+    "state": "SC",
+    "category": "gdlLicensing",
+    "question": "During what hours can a beginner's permit holder drive with any qualified supervisor in South Carolina?",
+    "answers": [
+      "Anytime with parent only",
+      "6 AM to midnight",
+      "Sunrise to sunset only",
+      "24 hours with any supervisor"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "SC-011",
+    "state": "SC",
+    "category": "gdlLicensing",
+    "question": "What is required to lift the nighttime restrictions for a conditional license holder in South Carolina?",
+    "answers": [
+      "Complete driver education course",
+      "Turn 18 years old",
+      "One year of violation-free driving",
+      "Pass additional road test"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "SC-012",
+    "state": "SC",
+    "category": "gdlLicensing",
+    "question": "What type of license can drivers aged 16-17 obtain in South Carolina?",
+    "answers": [
+      "Full unrestricted license",
+      "Conditional license only",
+      "Hardship permit only",
+      "Special restricted license"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "SC-013",
+    "state": "SC",
+    "category": "cellPhone",
+    "question": "When did South Carolina's Hands-Free and Distracted Driving Act take effect?",
+    "answers": [
+      "September 1, 2025",
+      "January 1, 2025",
+      "July 1, 2024",
+      "January 1, 2026"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "SC-014",
+    "state": "SC",
+    "category": "cellPhone",
+    "question": "What does South Carolina's hands-free law prohibit while driving?",
+    "answers": [
+      "All phone conversations",
+      "Holding or manually using a mobile device",
+      "Only texting",
+      "Only video calls"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "SC-015",
+    "state": "SC",
+    "category": "cellPhone",
+    "question": "What phone feature is allowed under South Carolina's hands-free law?",
+    "answers": [
+      "Handheld texting",
+      "Watching videos",
+      "Voice-activated and hands-free mode",
+      "Reading emails while stopped at lights"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "SC-016",
+    "state": "SC",
+    "category": "cellPhone",
+    "question": "When can you legally use a handheld phone while driving in South Carolina?",
+    "answers": [
+      "During emergencies only",
+      "At traffic lights",
+      "On back roads",
+      "When lawfully parked or stopped"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "SC-017",
+    "state": "SC",
+    "category": "cellPhone",
+    "question": "What did South Carolina provide during the first 180 days after the hands-free law took effect?",
+    "answers": [
+      "Grace period with warnings only",
+      "Free hands-free devices",
+      "Reduced fines",
+      "No enforcement at all"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "SC-018",
+    "state": "SC",
+    "category": "cellPhone",
+    "question": "What activities are prohibited while driving under South Carolina's hands-free law?",
+    "answers": [
+      "Only phone calls",
+      "Reading texts, watching videos, or manually using device",
+      "Only social media use",
+      "Only video recording"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "SC-019",
+    "state": "SC",
+    "category": "duiStateLaws",
+    "question": "What is the legal BAC limit for drivers under 21 in South Carolina?",
+    "answers": [
+      "0.08 percent",
+      "0.04 percent",
+      "0.02 percent",
+      "Zero tolerance"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "SC-020",
+    "state": "SC",
+    "category": "duiStateLaws",
+    "question": "What is the BAC limit for commercial drivers in South Carolina?",
+    "answers": [
+      "0.08 percent",
+      "0.02 percent",
+      "0.06 percent",
+      "0.04 percent"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "SC-021",
+    "state": "SC",
+    "category": "duiStateLaws",
+    "question": "What does South Carolina's implied consent law mean?",
+    "answers": [
+      "Agreement to BAC testing when lawfully operating",
+      "Permission to search vehicle",
+      "Consent to field sobriety tests only",
+      "Waiver of attorney rights"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "SC-022",
+    "state": "SC",
+    "category": "duiStateLaws",
+    "question": "What happens if you refuse a BAC test for the first time in South Carolina?",
+    "answers": [
+      "Warning only",
+      "License suspension for 6 months",
+      "Automatic DUI conviction",
+      "Mandatory jail time"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "SC-023",
+    "state": "SC",
+    "category": "duiStateLaws",
+    "question": "What consequence applies to drivers under 21 with a BAC of 0.02 or higher in South Carolina?",
+    "answers": [
+      "Warning for first offense",
+      "Points on license only",
+      "License suspension for 3 to 6 months",
+      "Community service only"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "SC-024",
+    "state": "SC",
+    "category": "duiStateLaws",
+    "question": "At what BAC level do enhanced DUI penalties apply in South Carolina?",
+    "answers": [
+      "0.10 percent",
+      "0.12 percent",
+      "0.20 percent",
+      "0.15 percent"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "SC-025",
+    "state": "SC",
+    "category": "duiStateLaws",
+    "question": "What is the standard BAC limit for adult drivers in South Carolina?",
+    "answers": [
+      "0.08 percent",
+      "0.10 percent",
+      "0.05 percent",
+      "0.07 percent"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "SC-026",
+    "state": "SC",
+    "category": "duiStateLaws",
+    "question": "What triggers automatic license suspension in South Carolina DUI cases?",
+    "answers": [
+      "First offense only",
+      "BAC of 0.15 or higher or refusing testing",
+      "Second offense only",
+      "Any BAC above 0.08"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "SC-027",
+    "state": "SC",
+    "category": "insurance",
+    "question": "What type of insurance system does South Carolina use for auto accidents?",
+    "answers": [
+      "No-fault system",
+      "Shared responsibility",
+      "At-fault or tort system",
+      "Hybrid system"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "SC-028",
+    "state": "SC",
+    "category": "insurance",
+    "question": "What does liability insurance primarily cover in South Carolina?",
+    "answers": [
+      "Your vehicle repairs",
+      "Your medical expenses",
+      "Rental car costs",
+      "Damages you cause to others"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "SC-029",
+    "state": "SC",
+    "category": "insurance",
+    "question": "What coverage protects you if hit by an uninsured driver in South Carolina?",
+    "answers": [
+      "Uninsured motorist coverage",
+      "Comprehensive coverage",
+      "Collision coverage",
+      "Personal injury protection"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "SC-030",
+    "state": "SC",
+    "category": "insurance",
+    "question": "What coverage is offered but not required in South Carolina?",
+    "answers": [
+      "Liability coverage",
+      "Underinsured motorist coverage",
+      "Uninsured motorist coverage",
+      "Property damage coverage"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "SC-031",
+    "state": "SC",
+    "category": "stateUnique",
+    "question": "When must you use headlights in South Carolina?",
+    "answers": [
+      "Only at night",
+      "Only in heavy rain",
+      "When using windshield wipers",
+      "Only on highways"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "SC-032",
+    "state": "SC",
+    "category": "stateUnique",
+    "question": "What must you do when approaching a stopped emergency vehicle on a multi-lane road in South Carolina?",
+    "answers": [
+      "Stop completely",
+      "Honk your horn",
+      "Flash your headlights",
+      "Move over one lane or slow down"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "SC-033",
+    "state": "SC",
+    "category": "stateUnique",
+    "question": "When must you stop for a school bus with flashing red lights on a two-lane road in South Carolina?",
+    "answers": [
+      "From both directions",
+      "Only if directly behind",
+      "Only during school hours",
+      "Never on two-lane roads"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "SC-034",
+    "state": "SC",
+    "category": "stateUnique",
+    "question": "What is prohibited when approaching a school bus with amber lights in South Carolina?",
+    "answers": [
+      "Changing lanes",
+      "Overtaking or passing the bus",
+      "Using your horn",
+      "Driving in adjacent lane"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "SC-035",
+    "state": "SC",
+    "category": "stateUnique",
+    "question": "How far in advance must you signal before turning in South Carolina?",
+    "answers": [
+      "50 feet",
+      "200 feet",
+      "100 feet",
+      "No specific distance"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "SC-036",
+    "state": "SC",
+    "category": "stateUnique",
+    "question": "What must you do when exiting a business onto a public roadway in South Carolina?",
+    "answers": [
+      "Honk before entering",
+      "Yield to bicycles only",
+      "Check for pedestrians only",
+      "Stop before entering roadway"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "SC-037",
+    "state": "SC",
+    "category": "stateUnique",
+    "question": "When must motorcycles have their headlights on in South Carolina?",
+    "answers": [
+      "At all times while operating",
+      "Only at night",
+      "Only on highways",
+      "Only when raining"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "SC-038",
+    "state": "SC",
+    "category": "stateUnique",
+    "question": "Who must wear a helmet when riding a motorcycle in South Carolina?",
+    "answers": [
+      "All riders and passengers",
+      "Riders and passengers under 21",
+      "Only the operator",
+      "No one, helmets are optional"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "SC-039",
+    "state": "SC",
+    "category": "stateUnique",
+    "question": "When are right turns on red permitted in South Carolina?",
+    "answers": [
+      "Never allowed",
+      "Only during off-peak hours",
+      "After complete stop and when safe",
+      "Without stopping if clear"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "SC-040",
+    "state": "SC",
+    "category": "stateUnique",
+    "question": "What was South Carolina the first state in the nation to enact?",
+    "answers": [
+      "Seatbelt law",
+      "Speed limit law",
+      "Texting ban",
+      "Move over law for emergency vehicles"
+    ],
+    "correctIndex": 3
+  }
+]

@@ -1,0 +1,522 @@
+[
+  {
+    "id": "MI-001",
+    "state": "MI",
+    "category": "gdlLicensing",
+    "question": "At what minimum age can you obtain a Level 1 learner's license in Michigan?",
+    "answers": [
+      "14 years and 9 months",
+      "15 years old",
+      "16 years old",
+      "14 years old"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MI-002",
+    "state": "MI",
+    "category": "gdlLicensing",
+    "question": "How long must you hold a Level 1 license before applying for a Level 2 license in Michigan?",
+    "answers": [
+      "3 months minimum",
+      "At least 6 months",
+      "9 months minimum",
+      "1 year minimum"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MI-003",
+    "state": "MI",
+    "category": "gdlLicensing",
+    "question": "How many practice hours are required before taking the road test in Michigan?",
+    "answers": [
+      "30 hours total",
+      "40 hours with 5 at night",
+      "50 hours with 10 at night",
+      "60 hours total"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MI-004",
+    "state": "MI",
+    "category": "gdlLicensing",
+    "question": "What is the nighttime curfew for Level 2 intermediate license holders in Michigan?",
+    "answers": [
+      "11 PM to 6 AM",
+      "Midnight to 5 AM",
+      "9 PM to 5 AM",
+      "10 PM to 5 AM"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "MI-005",
+    "state": "MI",
+    "category": "gdlLicensing",
+    "question": "How many non-family passengers under 21 can a Level 2 driver transport in Michigan?",
+    "answers": [
+      "Only one passenger",
+      "Two passengers maximum",
+      "Three passengers maximum",
+      "No passengers allowed"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MI-006",
+    "state": "MI",
+    "category": "gdlLicensing",
+    "question": "At what age can you obtain a Level 3 unrestricted license in Michigan?",
+    "answers": [
+      "16 years old",
+      "17 years old",
+      "18 years old",
+      "19 years old"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MI-007",
+    "state": "MI",
+    "category": "gdlLicensing",
+    "question": "What violation-free period is required to upgrade from Level 2 to Level 3 in Michigan?",
+    "answers": [
+      "6 months violation-free",
+      "9 months violation-free",
+      "12 consecutive months violation-free",
+      "18 months violation-free"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MI-008",
+    "state": "MI",
+    "category": "gdlLicensing",
+    "question": "When does Michigan's graduated driver licensing program automatically end?",
+    "answers": [
+      "When you obtain Level 3",
+      "After 2 years of driving",
+      "After completing driver education",
+      "When you turn 18"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "MI-009",
+    "state": "MI",
+    "category": "gdlLicensing",
+    "question": "What happens if a Level 2 driver violates GDL restrictions in Michigan?",
+    "answers": [
+      "Restricted period may be extended",
+      "License permanently revoked",
+      "Must restart from Level 1",
+      "Fine only, no license impact"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MI-010",
+    "state": "MI",
+    "category": "gdlLicensing",
+    "question": "At what minimum age can you apply for a Level 2 intermediate license in Michigan?",
+    "answers": [
+      "15 years old",
+      "16 years old",
+      "17 years old",
+      "14 years and 9 months"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MI-011",
+    "state": "MI",
+    "category": "gdlLicensing",
+    "question": "What minimum holding period is required for Level 2 before applying for Level 3 in Michigan?",
+    "answers": [
+      "3 months",
+      "4 months",
+      "6 months",
+      "12 months"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MI-012",
+    "state": "MI",
+    "category": "gdlLicensing",
+    "question": "What type of instruction is included in Michigan's Segment 1 driver education?",
+    "answers": [
+      "Online only",
+      "Behind-the-wheel only",
+      "Parent-supervised only",
+      "Classroom, behind-the-wheel, and observation"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "MI-013",
+    "state": "MI",
+    "category": "cellPhone",
+    "question": "What does Michigan's hands-free law prohibit while driving?",
+    "answers": [
+      "Holding or manually using a phone",
+      "Only texting",
+      "Only video watching",
+      "Using Bluetooth devices"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MI-014",
+    "state": "MI",
+    "category": "cellPhone",
+    "question": "Can drivers use a single touch to activate hands-free mode in Michigan?",
+    "answers": [
+      "No, all touching is prohibited",
+      "Yes, single touch is allowed",
+      "Only with mounted devices",
+      "Only for emergency calls"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MI-015",
+    "state": "MI",
+    "category": "cellPhone",
+    "question": "What phone use is allowed for Level 1 and Level 2 teen drivers in Michigan?",
+    "answers": [
+      "Hands-free calls only",
+      "Texting with voice commands",
+      "Vehicle-integrated voice systems only",
+      "Any hands-free device"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MI-016",
+    "state": "MI",
+    "category": "cellPhone",
+    "question": "Under what circumstance can any driver manually use a phone while driving in Michigan?",
+    "answers": [
+      "When stopped at red lights",
+      "In parking lots only",
+      "When driving below 25 mph",
+      "To call 911 for emergencies"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "MI-017",
+    "state": "MI",
+    "category": "cellPhone",
+    "question": "When did Michigan's hands-free driving law take effect?",
+    "answers": [
+      "June 30, 2023",
+      "January 1, 2024",
+      "July 1, 2022",
+      "January 1, 2023"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MI-018",
+    "state": "MI",
+    "category": "cellPhone",
+    "question": "What is Michigan's special cell phone law for teen drivers called?",
+    "answers": [
+      "Teen Safety Act",
+      "Kelsey's Law",
+      "Youth Protection Law",
+      "GDL Phone Restriction"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MI-019",
+    "state": "MI",
+    "category": "duiStateLaws",
+    "question": "What is the BAC limit for drivers under 21 in Michigan?",
+    "answers": [
+      "0.08 percent",
+      "0.04 percent",
+      "0.02 percent",
+      "Zero tolerance"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MI-020",
+    "state": "MI",
+    "category": "duiStateLaws",
+    "question": "What BAC level triggers Michigan's Super Drunk law with enhanced penalties?",
+    "answers": [
+      "0.10 percent",
+      "0.12 percent",
+      "0.15 percent",
+      "0.17 percent"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "MI-021",
+    "state": "MI",
+    "category": "duiStateLaws",
+    "question": "What does Michigan's implied consent law require?",
+    "answers": [
+      "Agreement to chemical testing when lawfully arrested",
+      "Consent to vehicle searches",
+      "Permission for field sobriety tests only",
+      "Waiver of legal representation"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MI-022",
+    "state": "MI",
+    "category": "duiStateLaws",
+    "question": "What is the license suspension for a first-time BAC test refusal in Michigan?",
+    "answers": [
+      "6 months suspension",
+      "1 year suspension",
+      "2 years suspension",
+      "90 days suspension"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MI-023",
+    "state": "MI",
+    "category": "duiStateLaws",
+    "question": "How long is the lookback period for prior DUI offenses in Michigan?",
+    "answers": [
+      "5 years",
+      "Lifetime",
+      "7 years",
+      "10 years"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MI-024",
+    "state": "MI",
+    "category": "duiStateLaws",
+    "question": "What is the BAC limit for commercial drivers in Michigan?",
+    "answers": [
+      "0.08 percent",
+      "0.02 percent",
+      "0.06 percent",
+      "0.04 percent"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "MI-025",
+    "state": "MI",
+    "category": "duiStateLaws",
+    "question": "What happens if an underage driver refuses a BAC test in Michigan?",
+    "answers": [
+      "6-month license suspension",
+      "1-year license suspension",
+      "2-year license suspension",
+      "Warning for first offense"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MI-026",
+    "state": "MI",
+    "category": "duiStateLaws",
+    "question": "How long is the suspension for a second implied consent refusal in Michigan?",
+    "answers": [
+      "1 year",
+      "2 years",
+      "3 years",
+      "Permanent revocation"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MI-027",
+    "state": "MI",
+    "category": "insurance",
+    "question": "What type of insurance system does Michigan use for auto accidents?",
+    "answers": [
+      "At-fault system",
+      "Comparative negligence",
+      "No-fault system",
+      "Choice system"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MI-028",
+    "state": "MI",
+    "category": "insurance",
+    "question": "What does Michigan's no-fault insurance mean for accident claims?",
+    "answers": [
+      "Other driver always pays",
+      "State pays all claims",
+      "No insurance needed",
+      "Your insurance covers your injuries"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "MI-029",
+    "state": "MI",
+    "category": "insurance",
+    "question": "What Personal Injury Protection options are available in Michigan?",
+    "answers": [
+      "Unlimited, $500k, $250k, or none with qualifying coverage",
+      "Only unlimited coverage",
+      "Only $250k coverage",
+      "Fixed at $100k for everyone"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MI-030",
+    "state": "MI",
+    "category": "insurance",
+    "question": "What is the penalty classification for driving without insurance in Michigan?",
+    "answers": [
+      "Traffic infraction only",
+      "Misdemeanor offense",
+      "Felony offense",
+      "Civil violation only"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MI-031",
+    "state": "MI",
+    "category": "stateUnique",
+    "question": "What is a Michigan Left turn maneuver?",
+    "answers": [
+      "Left turn on red light",
+      "Left from right lane",
+      "Proceed through intersection, then U-turn in median crossover",
+      "Left turn without stopping"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MI-032",
+    "state": "MI",
+    "category": "stateUnique",
+    "question": "How far must you stop from a school bus with flashing red lights in Michigan?",
+    "answers": [
+      "10 feet",
+      "15 feet",
+      "25 feet",
+      "At least 20 feet"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "MI-033",
+    "state": "MI",
+    "category": "stateUnique",
+    "question": "What must you do if you cannot move over for an emergency vehicle in Michigan?",
+    "answers": [
+      "Slow to at least 10 mph below posted speed",
+      "Stop completely",
+      "Flash hazard lights",
+      "Sound horn to alert"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MI-034",
+    "state": "MI",
+    "category": "stateUnique",
+    "question": "When can you make a left turn on red in Michigan?",
+    "answers": [
+      "Never permitted",
+      "From one-way to one-way after stopping",
+      "Any time after midnight",
+      "Only in rural areas"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MI-035",
+    "state": "MI",
+    "category": "stateUnique",
+    "question": "What enforcement technology was authorized for school buses in April 2025?",
+    "answers": [
+      "GPS tracking systems",
+      "Speed cameras only",
+      "Stop-arm camera systems",
+      "Automatic brake systems"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MI-036",
+    "state": "MI",
+    "category": "stateUnique",
+    "question": "What color must headlamps emit according to Michigan law?",
+    "answers": [
+      "Any color",
+      "Yellow or white",
+      "Amber only",
+      "White light"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "MI-037",
+    "state": "MI",
+    "category": "stateUnique",
+    "question": "Are daytime headlights required in Michigan?",
+    "answers": [
+      "No, not required during daytime",
+      "Yes, always required",
+      "Only on highways",
+      "Only in construction zones"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MI-038",
+    "state": "MI",
+    "category": "stateUnique",
+    "question": "Is lane splitting legal for motorcycles in Michigan?",
+    "answers": [
+      "Yes, at all times",
+      "No, lane splitting is not authorized",
+      "Only in traffic jams",
+      "Only at speeds below 30 mph"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MI-039",
+    "state": "MI",
+    "category": "stateUnique",
+    "question": "What is the purpose of Michigan's move over law?",
+    "answers": [
+      "To reduce traffic congestion",
+      "To allow faster commutes",
+      "To protect emergency responders and workers",
+      "To enforce speed limits"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MI-040",
+    "state": "MI",
+    "category": "stateUnique",
+    "question": "When must you stop for a school bus on a divided highway in Michigan?",
+    "answers": [
+      "Always from both directions",
+      "Only if traveling behind it",
+      "Only during school hours",
+      "Not required if separated by barrier"
+    ],
+    "correctIndex": 3
+  }
+]

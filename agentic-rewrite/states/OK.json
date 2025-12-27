@@ -1,0 +1,522 @@
+[
+  {
+    "id": "OK-001",
+    "state": "OK",
+    "category": "gdlLicensing",
+    "question": "At what minimum age can you apply for a learner's permit if you have completed driver education in Oklahoma?",
+    "answers": [
+      "15 years old",
+      "16 years old",
+      "14 years old",
+      "17 years old"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "OK-002",
+    "state": "OK",
+    "category": "gdlLicensing",
+    "question": "Who can supervise a learner's permit holder in Oklahoma?",
+    "answers": [
+      "Any licensed driver over 18",
+      "Fully licensed driver 21 or older",
+      "Any family member with a license",
+      "Only certified driving instructors"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "OK-003",
+    "state": "OK",
+    "category": "gdlLicensing",
+    "question": "How long must you hold a learner's permit before applying for an intermediate license in Oklahoma?",
+    "answers": [
+      "3 months",
+      "1 year",
+      "At least 6 months",
+      "9 months"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "OK-004",
+    "state": "OK",
+    "category": "gdlLicensing",
+    "question": "What is the curfew exception for intermediate license holders in Oklahoma?",
+    "answers": [
+      "School sports events only",
+      "Any recreational activities",
+      "Only emergencies",
+      "Work, school, or church activities"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "OK-005",
+    "state": "OK",
+    "category": "gdlLicensing",
+    "question": "What driving practice is required to progress from a learner's permit to an intermediate license in Oklahoma?",
+    "answers": [
+      "50 hours including 10 at night",
+      "100 hours total",
+      "30 hours with no night requirement",
+      "40 hours including 5 at night"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "OK-006",
+    "state": "OK",
+    "category": "gdlLicensing",
+    "question": "How many non-family passengers can an intermediate license holder have in Oklahoma?",
+    "answers": [
+      "Two passengers maximum",
+      "One non-family passenger",
+      "Three passengers maximum",
+      "No passengers allowed"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "OK-007",
+    "state": "OK",
+    "category": "gdlLicensing",
+    "question": "What course must teens complete before obtaining an intermediate license in Oklahoma?",
+    "answers": [
+      "Defensive driving course",
+      "Advanced skills training",
+      "Oklahoma Work Zone Safe Course",
+      "Highway safety seminar"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "OK-008",
+    "state": "OK",
+    "category": "gdlLicensing",
+    "question": "When can an intermediate license holder obtain an unrestricted license in Oklahoma?",
+    "answers": [
+      "Immediately at age 18",
+      "Age 19 regardless of violations",
+      "Age 16 with driver education",
+      "Age 17 with 6 months violation-free driving"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "OK-009",
+    "state": "OK",
+    "category": "gdlLicensing",
+    "question": "During what hours can a learner's permit holder drive in Oklahoma?",
+    "answers": [
+      "5 a.m. to 10 p.m. with supervision",
+      "Anytime with supervision",
+      "6 a.m. to 9 p.m. with supervision",
+      "Daylight hours only"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "OK-010",
+    "state": "OK",
+    "category": "gdlLicensing",
+    "question": "What documentation is required for drivers under 19 applying for a permit in Oklahoma?",
+    "answers": [
+      "Only birth certificate",
+      "Proof of school enrollment or graduation",
+      "Employment verification",
+      "Parental consent form only"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "OK-011",
+    "state": "OK",
+    "category": "gdlLicensing",
+    "question": "At what minimum age can you apply for a Farm Driving Permit in Oklahoma?",
+    "answers": [
+      "15 years old",
+      "16 years old",
+      "14 years old",
+      "13 years old"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "OK-012",
+    "state": "OK",
+    "category": "gdlLicensing",
+    "question": "What happens if an intermediate license holder violates the passenger restriction in Oklahoma?",
+    "answers": [
+      "License suspended immediately",
+      "Criminal record is created",
+      "Must restart from learner's permit",
+      "May face license restrictions or suspension"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "OK-013",
+    "state": "OK",
+    "category": "cellPhone",
+    "question": "What does Oklahoma law prohibit while driving?",
+    "answers": [
+      "Manually composing, sending, or reading text messages",
+      "All phone use including hands-free",
+      "Only video calls",
+      "Using Bluetooth devices"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "OK-014",
+    "state": "OK",
+    "category": "cellPhone",
+    "question": "Can adult drivers use voice-operated talk-to-text while driving in Oklahoma?",
+    "answers": [
+      "No, all texting is banned",
+      "Yes, speech-to-text is allowed",
+      "Only in emergencies",
+      "Only on highways"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "OK-015",
+    "state": "OK",
+    "category": "cellPhone",
+    "question": "What is the cell phone restriction for drivers under 18 in Oklahoma?",
+    "answers": [
+      "Can use hands-free devices",
+      "Can use for GPS only",
+      "No cell phone use while driving",
+      "Can use for emergency calls only"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "OK-016",
+    "state": "OK",
+    "category": "cellPhone",
+    "question": "Where is holding a phone while driving specifically prohibited under Oklahoma's 2025 law?",
+    "answers": [
+      "On all highways",
+      "In parking lots",
+      "Only on interstates",
+      "In school and construction zones"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "OK-017",
+    "state": "OK",
+    "category": "cellPhone",
+    "question": "When can you legally use a phone to contact emergency services while driving in Oklahoma?",
+    "answers": [
+      "Anytime to report emergencies",
+      "Only when fully stopped",
+      "Only with voice commands",
+      "Never while vehicle is running"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "OK-018",
+    "state": "OK",
+    "category": "cellPhone",
+    "question": "What devices are permitted for phone conversations while driving in Oklahoma?",
+    "answers": [
+      "Handheld phones only",
+      "Bluetooth and hands-free technology",
+      "No devices allowed",
+      "Only wired headsets"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "OK-019",
+    "state": "OK",
+    "category": "duiStateLaws",
+    "question": "What is the legal BAC limit for drivers under 21 in Oklahoma?",
+    "answers": [
+      "0.08 percent",
+      "0.04 percent",
+      "0.02 percent",
+      "Zero tolerance"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "OK-020",
+    "state": "OK",
+    "category": "duiStateLaws",
+    "question": "What is the BAC limit for commercial drivers in Oklahoma?",
+    "answers": [
+      "0.08 percent",
+      "0.02 percent",
+      "0.06 percent",
+      "0.04 percent"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "OK-021",
+    "state": "OK",
+    "category": "duiStateLaws",
+    "question": "What does implied consent mean for Oklahoma drivers?",
+    "answers": [
+      "Agreement to BAC testing when lawfully stopped for DUI",
+      "Permission to search vehicle",
+      "Consent to field sobriety only",
+      "Waiver of legal representation"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "OK-022",
+    "state": "OK",
+    "category": "duiStateLaws",
+    "question": "What happens if you refuse a BAC test for the first time in Oklahoma?",
+    "answers": [
+      "No penalty",
+      "License revoked for 180 days",
+      "Automatic DUI conviction",
+      "One year jail time"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "OK-023",
+    "state": "OK",
+    "category": "duiStateLaws",
+    "question": "How many years of prior DUI convictions does Oklahoma count for sentencing purposes?",
+    "answers": [
+      "5 years",
+      "Lifetime",
+      "10 years",
+      "7 years"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "OK-024",
+    "state": "OK",
+    "category": "duiStateLaws",
+    "question": "What is the consequence of a second BAC test refusal within 10 years in Oklahoma?",
+    "answers": [
+      "Six month revocation",
+      "Two year revocation",
+      "No additional penalty",
+      "One year license revocation"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "OK-025",
+    "state": "OK",
+    "category": "duiStateLaws",
+    "question": "Within how many days must you request an administrative hearing after a DUI arrest in Oklahoma?",
+    "answers": [
+      "15 days",
+      "30 days",
+      "10 days",
+      "20 days"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "OK-026",
+    "state": "OK",
+    "category": "duiStateLaws",
+    "question": "What BAC level is considered aggravated DUI with enhanced penalties in Oklahoma?",
+    "answers": [
+      "0.10 percent or higher",
+      "0.15 percent or higher",
+      "0.12 percent or higher",
+      "0.20 percent or higher"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "OK-027",
+    "state": "OK",
+    "category": "insurance",
+    "question": "What type of insurance system does Oklahoma follow for auto accidents?",
+    "answers": [
+      "No-fault system",
+      "Comparative negligence only",
+      "Fault-based system",
+      "Shared responsibility system"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "OK-028",
+    "state": "OK",
+    "category": "insurance",
+    "question": "What does liability insurance primarily cover in Oklahoma?",
+    "answers": [
+      "Your vehicle damage only",
+      "Your medical bills only",
+      "Rental car expenses",
+      "Damages you cause to others"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "OK-029",
+    "state": "OK",
+    "category": "insurance",
+    "question": "What coverage protects you if hit by an uninsured driver in Oklahoma?",
+    "answers": [
+      "Uninsured motorist coverage",
+      "Comprehensive coverage",
+      "Collision coverage",
+      "Personal injury protection"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "OK-030",
+    "state": "OK",
+    "category": "insurance",
+    "question": "What must Oklahoma drivers carry at all times while driving?",
+    "answers": [
+      "Vehicle registration only",
+      "Proof of insurance",
+      "Driver license only",
+      "Vehicle title"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "OK-031",
+    "state": "OK",
+    "category": "stateUnique",
+    "question": "When must you turn on headlights while driving in Oklahoma?",
+    "answers": [
+      "Only at night",
+      "During rain only",
+      "When using windshield wipers",
+      "Only in fog"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "OK-032",
+    "state": "OK",
+    "category": "stateUnique",
+    "question": "What is required when approaching any stopped vehicle displaying flashing lights in Oklahoma?",
+    "answers": [
+      "Honk your horn",
+      "Stop completely",
+      "Flash your lights",
+      "Move over or slow to safe speed"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "OK-033",
+    "state": "OK",
+    "category": "stateUnique",
+    "question": "Within what distance must you dim high beams when approaching an oncoming vehicle in Oklahoma?",
+    "answers": [
+      "1,000 feet",
+      "500 feet",
+      "800 feet",
+      "1,500 feet"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "OK-034",
+    "state": "OK",
+    "category": "stateUnique",
+    "question": "When must you stop for a school bus with flashing red lights in Oklahoma?",
+    "answers": [
+      "Only if directly behind",
+      "From both directions on undivided roads",
+      "Only on two-lane roads",
+      "Never if on opposite side"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "OK-035",
+    "state": "OK",
+    "category": "stateUnique",
+    "question": "What is the headlight visibility requirement in Oklahoma?",
+    "answers": [
+      "500 feet",
+      "800 feet",
+      "Anytime visibility is less than 1,000 feet",
+      "Only when completely dark"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "OK-036",
+    "state": "OK",
+    "category": "stateUnique",
+    "question": "Are motorcycle helmets required for riders in Oklahoma?",
+    "answers": [
+      "Only for riders under 21",
+      "Optional with insurance",
+      "Required for all riders",
+      "Required only for riders under 18"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "OK-037",
+    "state": "OK",
+    "category": "stateUnique",
+    "question": "When are right turns on red allowed in Oklahoma?",
+    "answers": [
+      "After full stop when safe and not prohibited",
+      "Always without stopping",
+      "Only during daytime",
+      "Never permitted"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "OK-038",
+    "state": "OK",
+    "category": "stateUnique",
+    "question": "What is the primary use of the left lane on a divided highway in Oklahoma?",
+    "answers": [
+      "General travel",
+      "Passing or when traffic necessitates",
+      "Commercial vehicles only",
+      "Emergency vehicles only"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "OK-039",
+    "state": "OK",
+    "category": "stateUnique",
+    "question": "When must motorcycle headlights be on in Oklahoma?",
+    "answers": [
+      "Sunset to sunrise only",
+      "Only in bad weather",
+      "At all times, even during daylight",
+      "Only on highways"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "OK-040",
+    "state": "OK",
+    "category": "stateUnique",
+    "question": "What must motorcyclists wear if they choose not to wear a helmet in Oklahoma?",
+    "answers": [
+      "Protective jacket only",
+      "Reflective vest",
+      "Nothing required",
+      "Eye protection such as goggles or glasses"
+    ],
+    "correctIndex": 3
+  }
+]

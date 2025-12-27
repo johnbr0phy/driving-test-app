@@ -1,0 +1,522 @@
+[
+  {
+    "id": "PA-001",
+    "state": "PA",
+    "category": "gdlLicensing",
+    "question": "At what minimum age can you apply for a learner's permit in Pennsylvania?",
+    "answers": [
+      "16 years old",
+      "15 years old",
+      "17 years old",
+      "14 years old"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "PA-002",
+    "state": "PA",
+    "category": "gdlLicensing",
+    "question": "How many hours of supervised practice are required to advance from a learner's permit to a junior license in Pennsylvania?",
+    "answers": [
+      "50 hours total",
+      "65 hours with specific conditions",
+      "100 hours total",
+      "30 hours total"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "PA-003",
+    "state": "PA",
+    "category": "gdlLicensing",
+    "question": "How long must you hold a learner's permit before applying for a junior license in Pennsylvania?",
+    "answers": [
+      "3 months",
+      "1 year",
+      "At least 6 months",
+      "9 months"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "PA-004",
+    "state": "PA",
+    "category": "gdlLicensing",
+    "question": "Who can supervise a learner's permit holder in Pennsylvania?",
+    "answers": [
+      "Any licensed driver over 18",
+      "Only certified driving instructors",
+      "Any family member with a license",
+      "Licensed driver 21 or older"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "PA-005",
+    "state": "PA",
+    "category": "gdlLicensing",
+    "question": "What is the nighttime driving restriction for junior license holders in Pennsylvania?",
+    "answers": [
+      "11 PM to 5 AM unless with parent or for work",
+      "Midnight to 6 AM only",
+      "10 PM to 6 AM no exceptions",
+      "No nighttime restrictions"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "PA-006",
+    "state": "PA",
+    "category": "gdlLicensing",
+    "question": "How many non-family passengers under 18 can a junior license holder transport in Pennsylvania?",
+    "answers": [
+      "Two passengers maximum",
+      "One non-family passenger",
+      "Three passengers maximum",
+      "No passengers allowed"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "PA-007",
+    "state": "PA",
+    "category": "gdlLicensing",
+    "question": "How many hours of night driving practice are required for a junior license in Pennsylvania?",
+    "answers": [
+      "5 hours",
+      "15 hours",
+      "10 hours",
+      "20 hours"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "PA-008",
+    "state": "PA",
+    "category": "gdlLicensing",
+    "question": "When can a driver obtain an unrestricted license with parental consent and driver education in Pennsylvania?",
+    "answers": [
+      "Age 16 with 6 months violation-free",
+      "Age 18 automatically",
+      "Age 19 regardless of violations",
+      "Age 17.5 with clean record and training"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "PA-009",
+    "state": "PA",
+    "category": "gdlLicensing",
+    "question": "How many hours of bad weather driving practice are required for a junior license in Pennsylvania?",
+    "answers": [
+      "5 hours",
+      "10 hours",
+      "None required",
+      "15 hours"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "PA-010",
+    "state": "PA",
+    "category": "gdlLicensing",
+    "question": "What happens if you violate GDL restrictions as a junior license holder in Pennsylvania?",
+    "answers": [
+      "License revoked permanently",
+      "Extended restriction period",
+      "Criminal record created",
+      "Must restart from learner's permit"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "PA-011",
+    "state": "PA",
+    "category": "gdlLicensing",
+    "question": "At what age can Pennsylvania drivers skip the GDL program entirely?",
+    "answers": [
+      "17 years old",
+      "19 years old",
+      "18 years old",
+      "21 years old"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "PA-012",
+    "state": "PA",
+    "category": "gdlLicensing",
+    "question": "What exception allows junior license holders to drive during restricted hours in Pennsylvania?",
+    "answers": [
+      "Social events only",
+      "Any recreational activities",
+      "No exceptions exist",
+      "Work, school, or accompanied by parent"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "PA-013",
+    "state": "PA",
+    "category": "cellPhone",
+    "question": "What does Pennsylvania's Hands-Free Law prohibit while driving?",
+    "answers": [
+      "Physically holding or manually using a device",
+      "Only texting while driving",
+      "Only video recording",
+      "Using Bluetooth devices"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "PA-014",
+    "state": "PA",
+    "category": "cellPhone",
+    "question": "Can you use voice-operated talk-to-text while driving in Pennsylvania?",
+    "answers": [
+      "No, all phone use is banned",
+      "Yes, voice-operated features are allowed",
+      "Only with a hands-free mount",
+      "Only for emergencies"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "PA-015",
+    "state": "PA",
+    "category": "cellPhone",
+    "question": "How many button presses are allowed to initiate a call under Pennsylvania's Hands-Free Law?",
+    "answers": [
+      "Up to three buttons",
+      "Two buttons maximum",
+      "Single button or single swipe",
+      "No touching allowed"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "PA-016",
+    "state": "PA",
+    "category": "cellPhone",
+    "question": "What phone use is prohibited for drivers under 18 with a junior license in Pennsylvania?",
+    "answers": [
+      "Only handheld calls",
+      "Only texting",
+      "Only video recording",
+      "All mobile phone use"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "PA-017",
+    "state": "PA",
+    "category": "cellPhone",
+    "question": "When can you legally hold a phone to contact emergency services while driving in Pennsylvania?",
+    "answers": [
+      "Anytime to report emergencies",
+      "Only when fully stopped",
+      "Only with voice commands",
+      "Never while vehicle is running"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "PA-018",
+    "state": "PA",
+    "category": "cellPhone",
+    "question": "What devices are permitted for phone conversations while driving in Pennsylvania?",
+    "answers": [
+      "Handheld phones only",
+      "Bluetooth and speakerphones",
+      "No devices allowed",
+      "Only wired headsets"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "PA-019",
+    "state": "PA",
+    "category": "duiStateLaws",
+    "question": "What is the legal BAC limit for drivers under 21 in Pennsylvania?",
+    "answers": [
+      "0.08 percent",
+      "0.04 percent",
+      "0.02 percent",
+      "Zero tolerance"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "PA-020",
+    "state": "PA",
+    "category": "duiStateLaws",
+    "question": "What is the BAC limit for commercial drivers in Pennsylvania?",
+    "answers": [
+      "0.08 percent",
+      "0.02 percent",
+      "0.06 percent",
+      "0.04 percent"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "PA-021",
+    "state": "PA",
+    "category": "duiStateLaws",
+    "question": "What does implied consent mean for Pennsylvania drivers?",
+    "answers": [
+      "Agreement to BAC testing when lawfully stopped",
+      "Permission to search vehicle",
+      "Consent to field sobriety only",
+      "Waiver of legal representation"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "PA-022",
+    "state": "PA",
+    "category": "duiStateLaws",
+    "question": "What BAC level qualifies as the highest tier in Pennsylvania's DUI system?",
+    "answers": [
+      "0.10 percent or higher",
+      "0.16 percent or higher",
+      "0.12 percent or higher",
+      "0.20 percent or higher"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "PA-023",
+    "state": "PA",
+    "category": "duiStateLaws",
+    "question": "What is the consequence of refusing a BAC test for the first time in Pennsylvania?",
+    "answers": [
+      "Warning only",
+      "Automatic DUI conviction",
+      "12-month license suspension",
+      "No penalty"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "PA-024",
+    "state": "PA",
+    "category": "duiStateLaws",
+    "question": "How long is the license suspension for a second refusal of a BAC test in Pennsylvania?",
+    "answers": [
+      "12 months",
+      "6 months",
+      "Lifetime",
+      "18 months"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "PA-025",
+    "state": "PA",
+    "category": "duiStateLaws",
+    "question": "What happens if you refuse a BAC test in Pennsylvania regarding penalty tier?",
+    "answers": [
+      "Placed in highest BAC penalty tier",
+      "Given minimum penalty",
+      "No effect on penalties",
+      "Subject to civil penalties only"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "PA-026",
+    "state": "PA",
+    "category": "duiStateLaws",
+    "question": "What is Pennsylvania's tiered DUI system based on?",
+    "answers": [
+      "Number of prior offenses only",
+      "BAC level and impairment type",
+      "Driver's age",
+      "Time of day"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "PA-027",
+    "state": "PA",
+    "category": "insurance",
+    "question": "What type of insurance system does Pennsylvania use?",
+    "answers": [
+      "Pure fault-based system",
+      "Hybrid no-fault system",
+      "No-fault with tort choice",
+      "Comparative negligence only"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "PA-028",
+    "state": "PA",
+    "category": "insurance",
+    "question": "What does limited tort restrict in Pennsylvania's insurance system?",
+    "answers": [
+      "Coverage amounts only",
+      "Vehicle types covered",
+      "Choice of repair shops",
+      "Right to sue for pain and suffering"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "PA-029",
+    "state": "PA",
+    "category": "insurance",
+    "question": "What additional coverage option protects you if hit by an uninsured driver in Pennsylvania?",
+    "answers": [
+      "Uninsured motorist coverage",
+      "Comprehensive coverage",
+      "Collision coverage",
+      "Personal injury protection only"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "PA-030",
+    "state": "PA",
+    "category": "insurance",
+    "question": "What happens if you drive without required insurance in Pennsylvania?",
+    "answers": [
+      "Warning for first offense",
+      "License and registration suspension",
+      "Points on license only",
+      "Civil fine only"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "PA-031",
+    "state": "PA",
+    "category": "stateUnique",
+    "question": "When must you turn on headlights while driving in Pennsylvania?",
+    "answers": [
+      "Only at night",
+      "During rain only",
+      "When using windshield wipers",
+      "Only in fog"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "PA-032",
+    "state": "PA",
+    "category": "stateUnique",
+    "question": "What is required when approaching an emergency vehicle with flashing lights in Pennsylvania?",
+    "answers": [
+      "Honk your horn",
+      "Stop completely",
+      "Flash your lights",
+      "Move over or slow 20 mph below limit"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "PA-033",
+    "state": "PA",
+    "category": "stateUnique",
+    "question": "How far must you stop from a school bus with flashing red lights in Pennsylvania?",
+    "answers": [
+      "At least 10 feet",
+      "At least 20 feet",
+      "At least 5 feet",
+      "At least 15 feet"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "PA-034",
+    "state": "PA",
+    "category": "stateUnique",
+    "question": "What is the automated camera violation for illegally passing a school bus in Pennsylvania?",
+    "answers": [
+      "Warning only",
+      "Civil fine with no points",
+      "License suspension",
+      "Criminal record"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "PA-035",
+    "state": "PA",
+    "category": "stateUnique",
+    "question": "When are right turns on red allowed in Pennsylvania?",
+    "answers": [
+      "Never permitted",
+      "Always without stopping",
+      "After full stop when safe and not prohibited",
+      "Only during daytime"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "PA-036",
+    "state": "PA",
+    "category": "stateUnique",
+    "question": "What does Pennsylvania's Move Over Law apply to?",
+    "answers": [
+      "Police vehicles only",
+      "Ambulances only",
+      "Fire trucks only",
+      "Emergency vehicles and disabled vehicles"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "PA-037",
+    "state": "PA",
+    "category": "stateUnique",
+    "question": "When must you stop for a school bus on a divided highway in Pennsylvania?",
+    "answers": [
+      "Only if on the same roadway",
+      "From any direction",
+      "Never on divided highways",
+      "Only if directly behind"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "PA-038",
+    "state": "PA",
+    "category": "stateUnique",
+    "question": "What light system indicates a school bus is preparing to stop in Pennsylvania?",
+    "answers": [
+      "Red flashing lights",
+      "Yellow flashing lights",
+      "White flashing lights",
+      "Blue flashing lights"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "PA-039",
+    "state": "PA",
+    "category": "stateUnique",
+    "question": "What is the penalty tier system in Pennsylvania's DUI law based on?",
+    "answers": [
+      "Driver's age only",
+      "Time of offense",
+      "BAC level categories",
+      "Vehicle type"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "PA-040",
+    "state": "PA",
+    "category": "stateUnique",
+    "question": "What additional requirement applies when headlights are used in Pennsylvania?",
+    "answers": [
+      "Must use high beams",
+      "Must use fog lights",
+      "Must use hazard lights",
+      "Must dim within 500 feet of oncoming traffic"
+    ],
+    "correctIndex": 3
+  }
+]

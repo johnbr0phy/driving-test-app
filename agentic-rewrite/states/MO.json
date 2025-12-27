@@ -1,0 +1,522 @@
+[
+  {
+    "id": "MO-001",
+    "state": "MO",
+    "category": "gdlLicensing",
+    "question": "At what minimum age can you apply for an instruction permit in Missouri?",
+    "answers": [
+      "15 years old",
+      "16 years old",
+      "14 years old",
+      "17 years old"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MO-002",
+    "state": "MO",
+    "category": "gdlLicensing",
+    "question": "Who can supervise a permit holder under age 16 in Missouri?",
+    "answers": [
+      "Any licensed driver over 18",
+      "Qualified driver 25 or older with 3+ years license",
+      "Any family member with a license",
+      "Only certified driving instructors"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MO-003",
+    "state": "MO",
+    "category": "gdlLicensing",
+    "question": "How long must you hold an instruction permit before applying for an intermediate license in Missouri?",
+    "answers": [
+      "90 days",
+      "One year",
+      "At least 182 days",
+      "120 days"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MO-004",
+    "state": "MO",
+    "category": "gdlLicensing",
+    "question": "What nighttime restriction applies to intermediate license holders in Missouri?",
+    "answers": [
+      "No driving midnight to 6 AM",
+      "No driving 11 PM to 5 AM",
+      "No driving 10 PM to 6 AM",
+      "No driving alone 1 AM to 5 AM"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "MO-005",
+    "state": "MO",
+    "category": "gdlLicensing",
+    "question": "How many non-family passengers under 19 can an intermediate license holder have during the first 6 months in Missouri?",
+    "answers": [
+      "One passenger maximum",
+      "Two passengers maximum",
+      "Three passengers maximum",
+      "No passengers allowed"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MO-006",
+    "state": "MO",
+    "category": "gdlLicensing",
+    "question": "How many hours of behind-the-wheel instruction are required to progress from permit to intermediate license in Missouri?",
+    "answers": [
+      "30 hours total",
+      "40 hours with 10 nighttime",
+      "50 hours with 15 nighttime",
+      "60 hours total"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MO-007",
+    "state": "MO",
+    "category": "gdlLicensing",
+    "question": "After the first 6 months, how many non-family passengers under 19 can an intermediate license holder transport in Missouri?",
+    "answers": [
+      "One passenger",
+      "Two passengers",
+      "Three passengers",
+      "Four passengers"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MO-008",
+    "state": "MO",
+    "category": "gdlLicensing",
+    "question": "What are the exceptions to the nighttime driving restriction for intermediate license holders in Missouri?",
+    "answers": [
+      "School sports only",
+      "Any recreational activities",
+      "Social events with friends",
+      "Work, school events, or emergencies"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "MO-009",
+    "state": "MO",
+    "category": "gdlLicensing",
+    "question": "At what age can you obtain a full unrestricted license in Missouri?",
+    "answers": [
+      "18 years old",
+      "17 years old",
+      "19 years old",
+      "21 years old"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MO-010",
+    "state": "MO",
+    "category": "gdlLicensing",
+    "question": "Who can supervise a permit holder aged 16 or older in Missouri?",
+    "answers": [
+      "Any licensed driver over 18",
+      "Licensed driver 21 or older",
+      "Parent or guardian only",
+      "Qualified driver 25 or older"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MO-011",
+    "state": "MO",
+    "category": "gdlLicensing",
+    "question": "What must a teen demonstrate to be eligible for an intermediate license in Missouri?",
+    "answers": [
+      "Only passing a road test",
+      "Completion of online course",
+      "No violations in past 6 months and practice hours",
+      "Parent approval only"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MO-012",
+    "state": "MO",
+    "category": "gdlLicensing",
+    "question": "At what age can you bypass the GDL program and obtain a full license immediately in Missouri?",
+    "answers": [
+      "17 years old",
+      "19 years old",
+      "21 years old",
+      "18 years old or older"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "MO-013",
+    "state": "MO",
+    "category": "cellPhone",
+    "question": "What does Missouri's Hands-Free Law prohibit while driving?",
+    "answers": [
+      "Holding or supporting a device",
+      "Only texting",
+      "Only video calls",
+      "Using Bluetooth devices"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MO-014",
+    "state": "MO",
+    "category": "cellPhone",
+    "question": "What phone functions are allowed while driving in Missouri?",
+    "answers": [
+      "Handheld calls only",
+      "Voice-operated and hands-free features",
+      "Texting if brief",
+      "Any use if experienced driver"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MO-015",
+    "state": "MO",
+    "category": "cellPhone",
+    "question": "What is allowed for activating phone functions under Missouri's Hands-Free Law?",
+    "answers": [
+      "Up to three button presses",
+      "Two-finger gestures",
+      "Single swipe or touch",
+      "No touching allowed"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MO-016",
+    "state": "MO",
+    "category": "cellPhone",
+    "question": "What video-related activity is prohibited while driving in Missouri?",
+    "answers": [
+      "Viewing GPS maps",
+      "Using backup cameras",
+      "Checking weather apps",
+      "Watching or recording videos"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "MO-017",
+    "state": "MO",
+    "category": "cellPhone",
+    "question": "When can you legally use a handheld device to contact emergency services in Missouri?",
+    "answers": [
+      "Anytime to report emergencies",
+      "Only when completely stopped",
+      "Only with voice commands",
+      "Never while vehicle is running"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MO-018",
+    "state": "MO",
+    "category": "cellPhone",
+    "question": "How can you legally use GPS navigation while driving in Missouri?",
+    "answers": [
+      "Holding the phone briefly",
+      "Device must be mounted",
+      "Only voice directions allowed",
+      "GPS is prohibited while driving"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MO-019",
+    "state": "MO",
+    "category": "duiStateLaws",
+    "question": "What is the BAC limit for drivers under 21 in Missouri?",
+    "answers": [
+      "0.08 percent",
+      "0.04 percent",
+      "0.02 percent",
+      "Zero tolerance only"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MO-020",
+    "state": "MO",
+    "category": "duiStateLaws",
+    "question": "What is the BAC limit for commercial drivers in Missouri?",
+    "answers": [
+      "0.08 percent",
+      "0.02 percent",
+      "0.06 percent",
+      "0.04 percent"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "MO-021",
+    "state": "MO",
+    "category": "duiStateLaws",
+    "question": "What does Missouri's implied consent law require?",
+    "answers": [
+      "Agreement to BAC testing when suspected of DWI",
+      "Consent to vehicle searches",
+      "Waiver of legal rights",
+      "Permission for field sobriety only"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MO-022",
+    "state": "MO",
+    "category": "duiStateLaws",
+    "question": "What is the consequence of refusing a BAC test for the first time in Missouri?",
+    "answers": [
+      "Warning only",
+      "One-year license revocation",
+      "Automatic DWI conviction",
+      "Court appearance required"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MO-023",
+    "state": "MO",
+    "category": "duiStateLaws",
+    "question": "What enhanced penalty applies if your BAC is 0.15 or higher in Missouri?",
+    "answers": [
+      "Double the standard fine",
+      "Extended probation period",
+      "Minimum 48-hour jail term",
+      "License suspension doubles"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MO-024",
+    "state": "MO",
+    "category": "duiStateLaws",
+    "question": "What classification is a third DWI offense in Missouri?",
+    "answers": [
+      "Class B misdemeanor",
+      "Class A misdemeanor",
+      "Traffic infraction",
+      "Class E felony"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "MO-025",
+    "state": "MO",
+    "category": "duiStateLaws",
+    "question": "What is the minimum jail time for drivers with a BAC of 0.20 or higher in Missouri?",
+    "answers": [
+      "Minimum 5 days",
+      "Minimum 10 days",
+      "Minimum 30 days",
+      "No mandatory minimum"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MO-026",
+    "state": "MO",
+    "category": "duiStateLaws",
+    "question": "How are second DWI offenses determined in Missouri?",
+    "answers": [
+      "Any prior conviction ever",
+      "Prior DWI within 5 years",
+      "Prior DWI within 3 years",
+      "Prior DWI within 10 years"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MO-027",
+    "state": "MO",
+    "category": "insurance",
+    "question": "What type of insurance system does Missouri follow?",
+    "answers": [
+      "No-fault system",
+      "Hybrid system",
+      "At-fault/tort system",
+      "Choice system"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MO-028",
+    "state": "MO",
+    "category": "insurance",
+    "question": "What does liability insurance primarily cover in Missouri?",
+    "answers": [
+      "Your vehicle repairs",
+      "Your medical expenses",
+      "Rental car costs",
+      "Injuries and damage you cause to others"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "MO-029",
+    "state": "MO",
+    "category": "insurance",
+    "question": "What additional coverage is required by Missouri law?",
+    "answers": [
+      "Uninsured motorist coverage",
+      "Comprehensive coverage",
+      "Collision coverage",
+      "Gap insurance"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MO-030",
+    "state": "MO",
+    "category": "insurance",
+    "question": "When must you show proof of insurance in Missouri?",
+    "answers": [
+      "Only if in an accident",
+      "When registering vehicle and if requested by officer",
+      "Only at annual inspection",
+      "Only when purchasing vehicle"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MO-031",
+    "state": "MO",
+    "category": "stateUnique",
+    "question": "When must you use headlights in Missouri?",
+    "answers": [
+      "Only between sunset and sunrise",
+      "Only in rain or fog",
+      "When using windshield wipers or insufficient light",
+      "Only on highways at night"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MO-032",
+    "state": "MO",
+    "category": "stateUnique",
+    "question": "What does Missouri's Move Over Law require on multi-lane highways?",
+    "answers": [
+      "Honk when passing emergency vehicles",
+      "Flash headlights as warning",
+      "Stop completely",
+      "Change lanes away from stopped emergency vehicle"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "MO-033",
+    "state": "MO",
+    "category": "stateUnique",
+    "question": "How far must you stop from a school bus with flashing red lights in Missouri?",
+    "answers": [
+      "At least 15 feet",
+      "At least 25 feet",
+      "At least 50 feet",
+      "At least 10 feet"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MO-034",
+    "state": "MO",
+    "category": "stateUnique",
+    "question": "On a divided highway with a median, who must stop for a school bus in Missouri?",
+    "answers": [
+      "All traffic in both directions",
+      "Only traffic in same direction as bus",
+      "Only traffic within 100 feet",
+      "No vehicles need to stop"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MO-035",
+    "state": "MO",
+    "category": "stateUnique",
+    "question": "When must school bus drivers activate flashing amber warning lights in rural areas of Missouri?",
+    "answers": [
+      "100 feet before stopping",
+      "200 feet before stopping",
+      "At least 500 feet before stopping",
+      "1000 feet before stopping"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MO-036",
+    "state": "MO",
+    "category": "stateUnique",
+    "question": "When are right turns on red allowed in Missouri?",
+    "answers": [
+      "Never permitted",
+      "Only during daytime",
+      "Always without stopping",
+      "After full stop unless posted otherwise"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "MO-037",
+    "state": "MO",
+    "category": "stateUnique",
+    "question": "What is Missouri's seat belt law enforcement type?",
+    "answers": [
+      "Primary enforcement for all occupants",
+      "Secondary enforcement only",
+      "Primary for front seats only",
+      "No enforcement for adults"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MO-038",
+    "state": "MO",
+    "category": "stateUnique",
+    "question": "What must you do if you cannot safely change lanes away from an emergency vehicle in Missouri?",
+    "answers": [
+      "Stop completely",
+      "Slow down while maintaining safe speed",
+      "Flash hazard lights",
+      "Honk to alert the emergency vehicle"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MO-039",
+    "state": "MO",
+    "category": "stateUnique",
+    "question": "When are headlights required during fog in Missouri?",
+    "answers": [
+      "Only if visibility is severely reduced",
+      "Only if wipers are on",
+      "Always during fog, even without wipers",
+      "Fog lights can replace headlights"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MO-040",
+    "state": "MO",
+    "category": "stateUnique",
+    "question": "At what age must children be properly restrained in appropriate car seats in Missouri?",
+    "answers": [
+      "Under 6 years old",
+      "Under 10 years old",
+      "Under 12 years old",
+      "Under 8 years old"
+    ],
+    "correctIndex": 3
+  }
+]

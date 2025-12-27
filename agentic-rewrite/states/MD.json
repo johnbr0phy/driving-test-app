@@ -1,0 +1,522 @@
+[
+  {
+    "id": "MD-001",
+    "state": "MD",
+    "category": "gdlLicensing",
+    "question": "At what minimum age can you apply for a learner's permit in Maryland?",
+    "answers": [
+      "15 years and 9 months",
+      "16 years old",
+      "15 years old",
+      "16 years and 6 months"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MD-002",
+    "state": "MD",
+    "category": "gdlLicensing",
+    "question": "Who can supervise a learner's permit holder while driving in Maryland?",
+    "answers": [
+      "Any licensed driver over 18",
+      "Licensed driver 21 or older with 3 years experience",
+      "Any family member with a license",
+      "Only certified driving instructors"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MD-003",
+    "state": "MD",
+    "category": "gdlLicensing",
+    "question": "How long must drivers under 18 hold a learner's permit before applying for a provisional license in Maryland?",
+    "answers": [
+      "3 months",
+      "6 months",
+      "9 months",
+      "12 months"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MD-004",
+    "state": "MD",
+    "category": "gdlLicensing",
+    "question": "How many hours of supervised driving practice are required for permit holders under 25 in Maryland?",
+    "answers": [
+      "40 hours total",
+      "50 hours total",
+      "30 hours total",
+      "60 hours with 10 at night"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "MD-005",
+    "state": "MD",
+    "category": "gdlLicensing",
+    "question": "At what minimum age can you obtain a provisional license in Maryland?",
+    "answers": [
+      "16 years and 6 months",
+      "16 years old",
+      "17 years old",
+      "15 years and 9 months"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MD-006",
+    "state": "MD",
+    "category": "gdlLicensing",
+    "question": "What passenger restriction applies to new provisional license holders under 18 in Maryland?",
+    "answers": [
+      "No restrictions on passengers",
+      "No passengers under 18 for first 5 months",
+      "Only one passenger allowed",
+      "Family members only"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MD-007",
+    "state": "MD",
+    "category": "gdlLicensing",
+    "question": "What are the night driving curfew hours for provisional license holders under 18 in Maryland?",
+    "answers": [
+      "11 PM to 5 AM",
+      "10 PM to 6 AM",
+      "Midnight to 5 AM",
+      "1 AM to 6 AM"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MD-008",
+    "state": "MD",
+    "category": "gdlLicensing",
+    "question": "When can a provisional driver under 18 drive during curfew hours in Maryland?",
+    "answers": [
+      "For any social activities",
+      "Only for emergencies",
+      "Never permitted",
+      "With licensed adult 21 or older"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "MD-009",
+    "state": "MD",
+    "category": "gdlLicensing",
+    "question": "At what age does a provisional license automatically become unrestricted in Maryland?",
+    "answers": [
+      "18 years old",
+      "17 years old",
+      "19 years old",
+      "21 years old"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MD-010",
+    "state": "MD",
+    "category": "gdlLicensing",
+    "question": "What school attendance requirement exists for applicants under 16 in Maryland?",
+    "answers": [
+      "Perfect attendance required",
+      "No more than 10 unexcused absences per semester",
+      "Minimum GPA requirement",
+      "Must be enrolled in driver education"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MD-011",
+    "state": "MD",
+    "category": "gdlLicensing",
+    "question": "How many nighttime practice hours are required for permit holders under 25 in Maryland?",
+    "answers": [
+      "5 hours",
+      "15 hours",
+      "10 hours",
+      "20 hours"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MD-012",
+    "state": "MD",
+    "category": "gdlLicensing",
+    "question": "How long do passenger restrictions last for provisional license holders in Maryland?",
+    "answers": [
+      "6 months",
+      "Until age 18",
+      "90 days",
+      "151 days"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "MD-013",
+    "state": "MD",
+    "category": "cellPhone",
+    "question": "What type of phone use is prohibited for all drivers in Maryland?",
+    "answers": [
+      "Holding or manually using a handheld device",
+      "Only texting while driving",
+      "Only video recording",
+      "Using Bluetooth devices"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MD-014",
+    "state": "MD",
+    "category": "cellPhone",
+    "question": "What cell phone restriction applies to drivers under 18 in Maryland?",
+    "answers": [
+      "Handheld use only prohibited",
+      "No wireless devices at all, even hands-free",
+      "Texting only prohibited",
+      "Same as adult drivers"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MD-015",
+    "state": "MD",
+    "category": "cellPhone",
+    "question": "How is handheld phone use while driving classified in Maryland?",
+    "answers": [
+      "Secondary offense only",
+      "Warning for first violation",
+      "Primary offense",
+      "Civil infraction only"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MD-016",
+    "state": "MD",
+    "category": "cellPhone",
+    "question": "What phone function is allowed while driving in Maryland?",
+    "answers": [
+      "Texting at red lights",
+      "Reading emails",
+      "Browsing social media",
+      "Using GPS navigation"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "MD-017",
+    "state": "MD",
+    "category": "cellPhone",
+    "question": "When can you use a handheld phone to contact emergency services in Maryland?",
+    "answers": [
+      "To report emergencies or call 911",
+      "Only when fully stopped",
+      "Only with voice commands",
+      "Never while vehicle is running"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MD-018",
+    "state": "MD",
+    "category": "cellPhone",
+    "question": "When is texting while driving prohibited in Maryland?",
+    "answers": [
+      "Only while moving",
+      "At all times, including at red lights",
+      "Only on highways",
+      "Only in school zones"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MD-019",
+    "state": "MD",
+    "category": "duiStateLaws",
+    "question": "What is the legal BAC limit for adult drivers in Maryland?",
+    "answers": [
+      "0.10 percent",
+      "0.05 percent",
+      "0.08 percent",
+      "0.07 percent"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MD-020",
+    "state": "MD",
+    "category": "duiStateLaws",
+    "question": "What is the legal alcohol limit for drivers under 21 in Maryland?",
+    "answers": [
+      "0.08 percent",
+      "0.02 percent",
+      "0.04 percent",
+      "Any detectable alcohol"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "MD-021",
+    "state": "MD",
+    "category": "duiStateLaws",
+    "question": "What does Maryland's implied consent law mean for drivers?",
+    "answers": [
+      "Agreement to BAC testing when lawfully arrested",
+      "Permission to search vehicle",
+      "Consent to field sobriety only",
+      "Waiver of attorney rights"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MD-022",
+    "state": "MD",
+    "category": "duiStateLaws",
+    "question": "What is the license suspension for refusing a BAC test for the first time in Maryland?",
+    "answers": [
+      "30 days",
+      "270 days",
+      "180 days",
+      "One year"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MD-023",
+    "state": "MD",
+    "category": "duiStateLaws",
+    "question": "What is the BAC limit for commercial vehicle drivers in Maryland?",
+    "answers": [
+      "0.08 percent",
+      "0.02 percent",
+      "0.04 percent",
+      "0.06 percent"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MD-024",
+    "state": "MD",
+    "category": "duiStateLaws",
+    "question": "At what BAC level does Maryland require ignition interlock participation?",
+    "answers": [
+      "0.10 percent",
+      "0.12 percent",
+      "0.08 percent",
+      "0.15 percent or higher"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "MD-025",
+    "state": "MD",
+    "category": "duiStateLaws",
+    "question": "What BAC level indicates DWI (driving while impaired) rather than DUI in Maryland?",
+    "answers": [
+      "0.07 percent",
+      "0.05 percent",
+      "0.06 percent",
+      "0.04 percent"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MD-026",
+    "state": "MD",
+    "category": "duiStateLaws",
+    "question": "What is the license suspension for failing a BAC test for the first time in Maryland?",
+    "answers": [
+      "270 days",
+      "180 days",
+      "90 days",
+      "One year"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MD-027",
+    "state": "MD",
+    "category": "insurance",
+    "question": "What type of insurance system does Maryland use for auto accidents?",
+    "answers": [
+      "No-fault system",
+      "Comparative negligence only",
+      "At-fault system",
+      "Shared responsibility system"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MD-028",
+    "state": "MD",
+    "category": "insurance",
+    "question": "What does liability insurance primarily cover in Maryland?",
+    "answers": [
+      "Your own vehicle damage",
+      "Your medical bills only",
+      "Rental car expenses",
+      "Injury and damage you cause to others"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "MD-029",
+    "state": "MD",
+    "category": "insurance",
+    "question": "What coverage is required in Maryland to protect against uninsured drivers?",
+    "answers": [
+      "Uninsured motorist coverage",
+      "Comprehensive coverage",
+      "Collision coverage",
+      "Gap coverage"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MD-030",
+    "state": "MD",
+    "category": "insurance",
+    "question": "What unique coverage does Maryland require despite being an at-fault state?",
+    "answers": [
+      "Gap insurance",
+      "Personal injury protection (PIP)",
+      "Rental reimbursement",
+      "Mechanical breakdown coverage"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MD-031",
+    "state": "MD",
+    "category": "stateUnique",
+    "question": "When must you turn on headlights while driving in Maryland?",
+    "answers": [
+      "Only at night",
+      "During heavy traffic",
+      "When using windshield wipers",
+      "Only in fog"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MD-032",
+    "state": "MD",
+    "category": "stateUnique",
+    "question": "What does Maryland's move over law require when approaching stopped vehicles with warning signals?",
+    "answers": [
+      "Honk your horn",
+      "Flash your lights",
+      "Stop completely",
+      "Change lanes or slow down"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "MD-033",
+    "state": "MD",
+    "category": "stateUnique",
+    "question": "How far must you stop from a school bus with flashing red lights in Maryland?",
+    "answers": [
+      "At least 20 feet",
+      "At least 50 feet",
+      "At least 10 feet",
+      "At least 100 feet"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MD-034",
+    "state": "MD",
+    "category": "stateUnique",
+    "question": "When must you stop for a school bus if traveling in the opposite direction in Maryland?",
+    "answers": [
+      "Always, regardless of road type",
+      "When there is no physical median",
+      "Only on one-lane roads",
+      "Never if on opposite side"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MD-035",
+    "state": "MD",
+    "category": "stateUnique",
+    "question": "What must you do before making a right turn on red in Maryland?",
+    "answers": [
+      "Slow to 5 mph",
+      "Honk your horn",
+      "Come to a complete stop",
+      "Signal for 5 seconds"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MD-036",
+    "state": "MD",
+    "category": "stateUnique",
+    "question": "Who has the right of way when you're turning right on red in Maryland?",
+    "answers": [
+      "The turning vehicle",
+      "No one has priority",
+      "Emergency vehicles only",
+      "Pedestrians and vehicles with green light"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "MD-037",
+    "state": "MD",
+    "category": "stateUnique",
+    "question": "Which vehicles does Maryland's move over law apply to?",
+    "answers": [
+      "All stopped vehicles displaying warning signals",
+      "Only police vehicles",
+      "Only emergency vehicles",
+      "Only disabled vehicles"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MD-038",
+    "state": "MD",
+    "category": "stateUnique",
+    "question": "What action must you take when a school bus extends its stop arm and displays red lights?",
+    "answers": [
+      "Slow down and proceed carefully",
+      "Stop and remain stopped until signals end",
+      "Change lanes if possible",
+      "Stop only if children are visible"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MD-039",
+    "state": "MD",
+    "category": "stateUnique",
+    "question": "When do pedestrians have the right of way at crosswalks in Maryland?",
+    "answers": [
+      "Only with walk signals",
+      "Only at marked crosswalks",
+      "Even if crossing against the signal",
+      "Only during daylight hours"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MD-040",
+    "state": "MD",
+    "category": "stateUnique",
+    "question": "What is notable about right turn on red restrictions in Montgomery County and Baltimore?",
+    "answers": [
+      "Right turns always prohibited",
+      "No special restrictions",
+      "Allowed only during daytime",
+      "Many intersections post NO TURN ON RED signs"
+    ],
+    "correctIndex": 3
+  }
+]

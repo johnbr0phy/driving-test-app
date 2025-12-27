@@ -1,0 +1,522 @@
+[
+  {
+    "id": "KS-001",
+    "state": "KS",
+    "category": "gdlLicensing",
+    "question": "At what minimum age can you apply for a learner's permit in Kansas?",
+    "answers": [
+      "14 years old",
+      "15 years old",
+      "16 years old",
+      "17 years old"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "KS-002",
+    "state": "KS",
+    "category": "gdlLicensing",
+    "question": "Who can supervise a learner's permit holder while driving in Kansas?",
+    "answers": [
+      "Any licensed driver over 18",
+      "Licensed driver 21 or older",
+      "Only certified driving instructors",
+      "Any family member with a license"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "KS-003",
+    "state": "KS",
+    "category": "gdlLicensing",
+    "question": "How long must you hold a learner's permit before applying for a restricted license in Kansas?",
+    "answers": [
+      "6 months",
+      "9 months",
+      "12 months",
+      "18 months"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "KS-004",
+    "state": "KS",
+    "category": "gdlLicensing",
+    "question": "How many hours of supervised driving are required to progress from a learner's permit in Kansas?",
+    "answers": [
+      "25 hours",
+      "30 hours",
+      "40 hours",
+      "50 hours"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "KS-005",
+    "state": "KS",
+    "category": "gdlLicensing",
+    "question": "What driving restriction applies to a 15-year-old restricted license holder in Kansas?",
+    "answers": [
+      "Only to and from school or work unless supervised",
+      "No driving after 9 PM",
+      "Only with parent or guardian",
+      "Highway driving prohibited"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "KS-006",
+    "state": "KS",
+    "category": "gdlLicensing",
+    "question": "What are the nighttime driving hours for 16-17 year olds with a less restricted license in Kansas?",
+    "answers": [
+      "6 AM to 10 PM only",
+      "5 AM to 9 PM unless for work or school activities",
+      "7 AM to 11 PM only",
+      "No nighttime restrictions"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "KS-007",
+    "state": "KS",
+    "category": "gdlLicensing",
+    "question": "How many non-sibling passengers under 18 can a 16-year-old driver have in Kansas?",
+    "answers": [
+      "None allowed",
+      "Two passengers",
+      "One non-sibling passenger",
+      "Three passengers"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "KS-008",
+    "state": "KS",
+    "category": "gdlLicensing",
+    "question": "When can a driver obtain an unrestricted license in Kansas?",
+    "answers": [
+      "At age 16 with driver education",
+      "At age 17 with 6 months violation-free driving",
+      "Immediately at age 18",
+      "After 6 months violation-free or age 17, whichever comes first"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "KS-009",
+    "state": "KS",
+    "category": "gdlLicensing",
+    "question": "At what age can you skip the GDL program entirely in Kansas?",
+    "answers": [
+      "18 years or older",
+      "21 years or older",
+      "17 years or older",
+      "16 years with driver education"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "KS-010",
+    "state": "KS",
+    "category": "gdlLicensing",
+    "question": "What wireless device restriction applies to learner's permit holders in Kansas?",
+    "answers": [
+      "Hands-free only",
+      "Texting prohibited only",
+      "GPS navigation allowed",
+      "All use prohibited"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "KS-011",
+    "state": "KS",
+    "category": "gdlLicensing",
+    "question": "Which passengers can a 15-year-old restricted license holder transport without supervision in Kansas?",
+    "answers": [
+      "No passengers allowed",
+      "Any family members",
+      "Siblings only",
+      "One non-family passenger"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "KS-012",
+    "state": "KS",
+    "category": "gdlLicensing",
+    "question": "What is an exception to the nighttime driving restriction for 16-17 year olds in Kansas?",
+    "answers": [
+      "Recreational activities only",
+      "School sports events only",
+      "Any emergency situation",
+      "Traveling to or from work"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "KS-013",
+    "state": "KS",
+    "category": "cellPhone",
+    "question": "What major change took effect for Kansas drivers on July 1, 2025?",
+    "answers": [
+      "Hands-free law requiring no physical handling of phones",
+      "Complete ban on all phone use",
+      "Texting allowed while driving",
+      "No restrictions for adult drivers"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "KS-014",
+    "state": "KS",
+    "category": "cellPhone",
+    "question": "What phone use is allowed for adult drivers under Kansas hands-free law?",
+    "answers": [
+      "Handheld calls only",
+      "Voice commands and mounted devices",
+      "No phone use permitted",
+      "Texting with voice-to-text only"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "KS-015",
+    "state": "KS",
+    "category": "cellPhone",
+    "question": "What phone restriction applies to learner and intermediate license holders in Kansas?",
+    "answers": [
+      "Hands-free only",
+      "Texting prohibited only",
+      "All phone use prohibited",
+      "Same as adult drivers"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "KS-016",
+    "state": "KS",
+    "category": "cellPhone",
+    "question": "When will Kansas begin issuing fines for hands-free violations instead of warnings?",
+    "answers": [
+      "Immediately July 1, 2025",
+      "October 1, 2025",
+      "December 31, 2025",
+      "January 1, 2026"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "KS-017",
+    "state": "KS",
+    "category": "cellPhone",
+    "question": "When can you legally use your phone while driving in Kansas without hands-free equipment?",
+    "answers": [
+      "To report emergencies or illegal activity",
+      "Never under any circumstances",
+      "Only when parked in a parking lot",
+      "During daytime hours only"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "KS-018",
+    "state": "KS",
+    "category": "cellPhone",
+    "question": "What has been illegal for all Kansas drivers since 2010?",
+    "answers": [
+      "Using GPS navigation",
+      "Manually typing, reading, or sending text messages",
+      "Making phone calls",
+      "Listening to music"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "KS-019",
+    "state": "KS",
+    "category": "duiStateLaws",
+    "question": "What is the legal BAC limit for drivers under 21 in Kansas?",
+    "answers": [
+      "Zero tolerance",
+      "0.04 percent",
+      "0.02 percent",
+      "0.08 percent"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "KS-020",
+    "state": "KS",
+    "category": "duiStateLaws",
+    "question": "What is the BAC limit for commercial vehicle drivers in Kansas?",
+    "answers": [
+      "0.08 percent",
+      "0.02 percent",
+      "0.06 percent",
+      "0.04 percent"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "KS-021",
+    "state": "KS",
+    "category": "duiStateLaws",
+    "question": "What does Kansas's implied consent law require of drivers?",
+    "answers": [
+      "Submit to BAC testing when lawfully arrested",
+      "Consent to vehicle searches",
+      "Accept field sobriety tests only",
+      "Waive right to legal counsel"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "KS-022",
+    "state": "KS",
+    "category": "duiStateLaws",
+    "question": "What is the consequence of refusing a BAC test for the first time in Kansas?",
+    "answers": [
+      "Warning only",
+      "One-year suspension plus two years restricted with IID",
+      "90-day suspension",
+      "No penalty unless convicted of DUI"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "KS-023",
+    "state": "KS",
+    "category": "duiStateLaws",
+    "question": "What BAC level results in stricter DUI penalties in Kansas?",
+    "answers": [
+      "0.10 percent or higher",
+      "0.12 percent or higher",
+      "0.15 percent or higher",
+      "0.20 percent or higher"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "KS-024",
+    "state": "KS",
+    "category": "duiStateLaws",
+    "question": "When does a DUI conviction become a felony in Kansas?",
+    "answers": [
+      "Second offense",
+      "Any third offense",
+      "Third offense only if BAC is 0.15 or higher",
+      "Third offense if prior conviction was within 10 years"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "KS-025",
+    "state": "KS",
+    "category": "duiStateLaws",
+    "question": "How can you get a DUI in Kansas without actually driving?",
+    "answers": [
+      "By attempting to operate a vehicle while impaired",
+      "Sitting in driver's seat only",
+      "Having keys in ignition while parked",
+      "Being near your vehicle while intoxicated"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "KS-026",
+    "state": "KS",
+    "category": "duiStateLaws",
+    "question": "What does an underage BAC violation result in for Kansas drivers under 21?",
+    "answers": [
+      "Criminal offense with jail time",
+      "License penalties but not a criminal offense",
+      "Criminal record and license suspension",
+      "Fine but no license suspension"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "KS-027",
+    "state": "KS",
+    "category": "insurance",
+    "question": "What type of insurance system does Kansas use?",
+    "answers": [
+      "Pure comparative fault",
+      "Hybrid system",
+      "No-fault system",
+      "At-fault tort system"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "KS-028",
+    "state": "KS",
+    "category": "insurance",
+    "question": "What does Personal Injury Protection cover in Kansas?",
+    "answers": [
+      "Damage to other vehicles",
+      "Damage to your vehicle",
+      "Property damage only",
+      "Your medical costs regardless of fault"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "KS-029",
+    "state": "KS",
+    "category": "insurance",
+    "question": "Which coverage types are required by Kansas law?",
+    "answers": [
+      "Liability, PIP, and uninsured motorist coverage",
+      "Liability and collision only",
+      "Comprehensive and collision only",
+      "Liability only"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "KS-030",
+    "state": "KS",
+    "category": "insurance",
+    "question": "What must Kansas drivers carry as proof of insurance?",
+    "answers": [
+      "Only vehicle registration",
+      "Insurance ID card or photo on phone",
+      "Nothing if registered online",
+      "Annual policy declaration only"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "KS-031",
+    "state": "KS",
+    "category": "stateUnique",
+    "question": "When must you turn on headlights while driving in Kansas?",
+    "answers": [
+      "Only at night",
+      "Only in heavy rain",
+      "When windshield wipers are in continuous use",
+      "Only during winter months"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "KS-032",
+    "state": "KS",
+    "category": "stateUnique",
+    "question": "What major expansion was made to Kansas's Move Over Law in 2025?",
+    "answers": [
+      "Applies only to police vehicles",
+      "Applies only to tow trucks",
+      "Applies to utility vehicles only",
+      "Applies to all stopped vehicles with hazard lights"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "KS-033",
+    "state": "KS",
+    "category": "stateUnique",
+    "question": "What must you do when approaching a stopped vehicle with flashing hazard lights in Kansas?",
+    "answers": [
+      "Move over or slow down and proceed with caution",
+      "Stop completely until vehicle moves",
+      "Honk your horn to alert the driver",
+      "Maintain normal speed"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "KS-034",
+    "state": "KS",
+    "category": "stateUnique",
+    "question": "When must you stop for a school bus with flashing red lights in Kansas?",
+    "answers": [
+      "Only if directly behind the bus",
+      "From both directions on all roads except divided highways",
+      "Only on two-lane roads",
+      "Only during school hours"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "KS-035",
+    "state": "KS",
+    "category": "stateUnique",
+    "question": "What does Kansas law require for school buses before stopping?",
+    "answers": [
+      "Honk horn twice",
+      "Stop sign arm deployment only",
+      "Yellow warning lights at least 200 feet before stopping",
+      "Red lights immediately when stopping"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "KS-036",
+    "state": "KS",
+    "category": "stateUnique",
+    "question": "Who is required to wear a motorcycle helmet in Kansas?",
+    "answers": [
+      "All riders regardless of age",
+      "Only operators, not passengers",
+      "Only on interstate highways",
+      "Riders under 18 years old"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "KS-037",
+    "state": "KS",
+    "category": "stateUnique",
+    "question": "What eye protection is required for motorcycle riders in Kansas?",
+    "answers": [
+      "Protective glasses, goggles, or face shield unless 10-inch windscreen",
+      "Sunglasses are sufficient",
+      "None if wearing a helmet",
+      "Only at night"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "KS-038",
+    "state": "KS",
+    "category": "stateUnique",
+    "question": "What must motorcycle helmets meet to be legal in Kansas?",
+    "answers": [
+      "Any protective standard",
+      "DOT and NHTSA minimum safety guidelines",
+      "State-specific requirements only",
+      "Manufacturer recommendations"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "KS-039",
+    "state": "KS",
+    "category": "stateUnique",
+    "question": "When can you proceed past a stopped school bus in Kansas?",
+    "answers": [
+      "When children are clear of roadway",
+      "After waiting 10 seconds",
+      "When bus resumes motion or red lights stop flashing",
+      "When the bus driver signals"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "KS-040",
+    "state": "KS",
+    "category": "stateUnique",
+    "question": "Why did Kansas expand its Move Over Law to include all stopped vehicles in 2025?",
+    "answers": [
+      "To reduce highway congestion",
+      "To generate more revenue",
+      "To match federal requirements",
+      "To protect drivers of stalled vehicles after numerous crashes"
+    ],
+    "correctIndex": 3
+  }
+]

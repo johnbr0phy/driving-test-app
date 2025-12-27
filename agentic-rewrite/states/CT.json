@@ -1,0 +1,522 @@
+[
+  {
+    "id": "CT-001",
+    "category": "gdlLicensing",
+    "question": "What is the minimum age to apply for a learner's permit in Connecticut?",
+    "options": [
+      "16 years old",
+      "15 years old",
+      "17 years old",
+      "18 years old"
+    ],
+    "correctIndex": 0,
+    "explanation": "Connecticut allows residents to apply for a learner's permit starting at age 16."
+  },
+  {
+    "id": "CT-002",
+    "category": "gdlLicensing",
+    "question": "How many hours of supervised driving must Connecticut teen drivers complete?",
+    "options": [
+      "30 hours",
+      "40 hours",
+      "50 hours",
+      "60 hours"
+    ],
+    "correctIndex": 1,
+    "explanation": "Connecticut requires teen drivers to complete 40 hours of supervised driving practice."
+  },
+  {
+    "id": "CT-003",
+    "category": "gdlLicensing",
+    "question": "What is the minimum age for a qualified supervising driver in Connecticut?",
+    "options": [
+      "18 years old with 2 years licensed",
+      "19 years old with 3 years licensed",
+      "20 years old with 4 years licensed",
+      "21 years old with 5 years licensed"
+    ],
+    "correctIndex": 2,
+    "explanation": "A qualified trainer must be at least 20 years old and have held a license for at least 4 years with no suspensions."
+  },
+  {
+    "id": "CT-004",
+    "category": "gdlLicensing",
+    "question": "During what hours are learner's permit holders prohibited from driving in Connecticut?",
+    "options": [
+      "10 PM to 6 AM",
+      "Midnight to 4 AM",
+      "9 PM to 5 AM",
+      "11 PM to 5 AM"
+    ],
+    "correctIndex": 3,
+    "explanation": "Connecticut prohibits learner's permit holders from driving between 11 PM and 5 AM, with limited exceptions."
+  },
+  {
+    "id": "CT-005",
+    "category": "gdlLicensing",
+    "question": "How long must you hold a Connecticut learner's permit if you took commercial driver education?",
+    "options": [
+      "120 days",
+      "90 days",
+      "180 days",
+      "60 days"
+    ],
+    "correctIndex": 0,
+    "explanation": "With commercial or school-based driver education, the permit must be held for 120 days before the road test."
+  },
+  {
+    "id": "CT-006",
+    "category": "gdlLicensing",
+    "question": "How long is a Connecticut learner's permit valid?",
+    "options": [
+      "1 year",
+      "2 years",
+      "3 years",
+      "18 months"
+    ],
+    "correctIndex": 1,
+    "explanation": "A Connecticut learner's permit is valid for 2 years from the date of issuance."
+  },
+  {
+    "id": "CT-007",
+    "category": "gdlLicensing",
+    "question": "What training must parents of 16-17 year old permit holders attend in Connecticut?",
+    "options": [
+      "One-hour online course",
+      "Four-hour safety seminar",
+      "Two-hour training course",
+      "Three-hour parent workshop"
+    ],
+    "correctIndex": 2,
+    "explanation": "Parents or legal guardians of teen permit holders must attend a mandatory two-hour training course with their child."
+  },
+  {
+    "id": "CT-008",
+    "category": "gdlLicensing",
+    "question": "At what age can Connecticut drivers obtain an unrestricted license?",
+    "options": [
+      "16 years old",
+      "17 years old",
+      "19 years old",
+      "18 years old"
+    ],
+    "correctIndex": 3,
+    "explanation": "Connecticut drivers can obtain a full, unrestricted license at age 18."
+  },
+  {
+    "id": "CT-009",
+    "category": "gdlLicensing",
+    "question": "How many questions must you answer correctly on Connecticut's permit test to pass?",
+    "options": [
+      "20 out of 25",
+      "18 out of 25",
+      "22 out of 25",
+      "15 out of 20"
+    ],
+    "correctIndex": 0,
+    "explanation": "Connecticut requires at least 20 correct answers out of 25 questions, which is 80%."
+  },
+  {
+    "id": "CT-010",
+    "category": "gdlLicensing",
+    "question": "How long must you wait to retake Connecticut's permit test if you fail?",
+    "options": [
+      "3 days",
+      "7 days",
+      "14 days",
+      "30 days"
+    ],
+    "correctIndex": 1,
+    "explanation": "If you fail the Connecticut permit test, you must wait 7 calendar days before retaking it."
+  },
+  {
+    "id": "CT-011",
+    "category": "gdlLicensing",
+    "question": "How long must home-trained drivers hold a Connecticut learner's permit before testing?",
+    "options": [
+      "90 days",
+      "120 days",
+      "180 days",
+      "240 days"
+    ],
+    "correctIndex": 2,
+    "explanation": "Drivers who complete home training must hold their permit for 180 days, compared to 120 for commercial training."
+  },
+  {
+    "id": "CT-012",
+    "category": "gdlLicensing",
+    "question": "What exception allows teen drivers to drive during Connecticut's night curfew?",
+    "options": [
+      "Social events only",
+      "Any family trip",
+      "Visiting friends",
+      "Employment or school activities"
+    ],
+    "correctIndex": 3,
+    "explanation": "Connecticut allows exceptions for employment, school, religious activities, medical emergencies, and safe ride programs."
+  },
+  {
+    "id": "CT-013",
+    "category": "cellPhone",
+    "question": "Can Connecticut drivers age 18 and over use hands-free cell phones while driving?",
+    "options": [
+      "Yes, if using hands-free accessories",
+      "No, all phone use is prohibited",
+      "Only on highways",
+      "Only for GPS navigation"
+    ],
+    "correctIndex": 0,
+    "explanation": "Drivers 18 and older may use cell phones with hands-free accessories while driving in Connecticut."
+  },
+  {
+    "id": "CT-014",
+    "category": "cellPhone",
+    "question": "Can Connecticut drivers under 18 use hands-free cell phones while driving?",
+    "options": [
+      "Yes, with parental permission",
+      "No, all phone use is prohibited",
+      "Yes, but only for GPS",
+      "Yes, for emergency calls only"
+    ],
+    "correctIndex": 1,
+    "explanation": "Connecticut prohibits all cell phone use, including hands-free devices, for drivers under 18."
+  },
+  {
+    "id": "CT-015",
+    "category": "cellPhone",
+    "question": "When does Connecticut's hands-free law apply to drivers?",
+    "options": [
+      "Only when the vehicle is moving",
+      "Only on highways and interstates",
+      "When stopped at traffic lights or in traffic",
+      "Only during school hours"
+    ],
+    "correctIndex": 2,
+    "explanation": "Connecticut's distracted driving law applies even when temporarily stopped in traffic, at lights, or stop signs."
+  },
+  {
+    "id": "CT-016",
+    "category": "cellPhone",
+    "question": "Where can Connecticut drivers legally use handheld phones while in their vehicle?",
+    "options": [
+      "In parking lots only",
+      "At red lights",
+      "In driveways only",
+      "Parked safely on the shoulder"
+    ],
+    "correctIndex": 3,
+    "explanation": "Drivers can use handheld phones when safely parked on the side of or shoulder of the road."
+  },
+  {
+    "id": "CT-017",
+    "category": "cellPhone",
+    "question": "What type of devices does Connecticut's distracted driving law cover?",
+    "options": [
+      "All mobile electronic devices",
+      "Only cell phones",
+      "Only smartphones",
+      "Only texting devices"
+    ],
+    "correctIndex": 0,
+    "explanation": "Connecticut's law covers all mobile electronic devices including laptops, PDAs, pagers, and game consoles."
+  },
+  {
+    "id": "CT-018",
+    "category": "cellPhone",
+    "question": "When can Connecticut drivers use handheld phones for calling while driving?",
+    "options": [
+      "During low traffic only",
+      "To report emergencies",
+      "On residential streets",
+      "Never under any circumstances"
+    ],
+    "correctIndex": 1,
+    "explanation": "Connecticut law allows an exception for handheld phone use when communicating with emergency personnel during emergencies."
+  },
+  {
+    "id": "CT-019",
+    "category": "duiStateLaws",
+    "question": "What is the legal BAC limit for drivers under 21 in Connecticut?",
+    "options": [
+      "0.00%",
+      "0.01%",
+      "0.02%",
+      "0.04%"
+    ],
+    "correctIndex": 2,
+    "explanation": "Connecticut has a zero-tolerance policy with a BAC limit of 0.02% for drivers under age 21."
+  },
+  {
+    "id": "CT-020",
+    "category": "duiStateLaws",
+    "question": "What is the standard BAC limit for drivers 21 and over in Connecticut?",
+    "options": [
+      "0.05%",
+      "0.06%",
+      "0.07%",
+      "0.08%"
+    ],
+    "correctIndex": 3,
+    "explanation": "Connecticut sets the legal BAC limit at 0.08% for drivers age 21 and older."
+  },
+  {
+    "id": "CT-021",
+    "category": "duiStateLaws",
+    "question": "How long is the initial license suspension for an under-21 DUI in Connecticut?",
+    "options": [
+      "45 days",
+      "30 days",
+      "60 days",
+      "90 days"
+    ],
+    "correctIndex": 0,
+    "explanation": "Connecticut imposes a 45-day license suspension for drivers under 21 who fail or refuse a chemical test."
+  },
+  {
+    "id": "CT-022",
+    "category": "duiStateLaws",
+    "question": "How long must an ignition interlock device be installed after a first under-21 DUI?",
+    "options": [
+      "6 months",
+      "1 year",
+      "2 years",
+      "3 years"
+    ],
+    "correctIndex": 1,
+    "explanation": "Connecticut requires a 1-year ignition interlock device installation following an under-21 DUI conviction."
+  },
+  {
+    "id": "CT-023",
+    "category": "duiStateLaws",
+    "question": "How many days do you have to request a DMV hearing after a DUI arrest in Connecticut?",
+    "options": [
+      "3 days",
+      "5 days",
+      "7 days",
+      "10 days"
+    ],
+    "correctIndex": 2,
+    "explanation": "Connecticut law allows only 7 days to request an appeal hearing with the DMV after a DUI arrest."
+  },
+  {
+    "id": "CT-024",
+    "category": "duiStateLaws",
+    "question": "How long is the license suspension for a 16-17 year old who refuses a chemical test?",
+    "options": [
+      "6 months",
+      "1 year",
+      "2 years",
+      "18 months"
+    ],
+    "correctIndex": 3,
+    "explanation": "Connecticut imposes an enhanced 18-month suspension for 16-17 year olds who refuse chemical testing."
+  },
+  {
+    "id": "CT-025",
+    "category": "duiStateLaws",
+    "question": "Who must install an ignition interlock device in Connecticut after a DUI?",
+    "options": [
+      "All offenders including first-time",
+      "Only repeat offenders",
+      "Only commercial drivers",
+      "Only those with high BAC"
+    ],
+    "correctIndex": 0,
+    "explanation": "Connecticut requires ignition interlock devices for all DUI offenses, including first-time convictions."
+  },
+  {
+    "id": "CT-026",
+    "category": "duiStateLaws",
+    "question": "How long is the ignition interlock requirement for a second DUI in Connecticut?",
+    "options": [
+      "6 months",
+      "3 years",
+      "2 years",
+      "5 years"
+    ],
+    "correctIndex": 1,
+    "explanation": "A second DUI offense within 10 years requires a 3-year ignition interlock device installation in Connecticut."
+  },
+  {
+    "id": "CT-027",
+    "category": "insurance",
+    "question": "What type of insurance system does Connecticut use for auto accidents?",
+    "options": [
+      "No-fault system",
+      "Modified no-fault",
+      "Tort or at-fault system",
+      "Comparative negligence only"
+    ],
+    "correctIndex": 2,
+    "explanation": "Connecticut changed to a tort (at-fault) system in 1994, meaning the at-fault driver is responsible for damages."
+  },
+  {
+    "id": "CT-028",
+    "category": "insurance",
+    "question": "Is Personal Injury Protection insurance required in Connecticut?",
+    "options": [
+      "Yes, for all drivers",
+      "Only for new drivers",
+      "Only for commercial vehicles",
+      "No, it is not required"
+    ],
+    "correctIndex": 3,
+    "explanation": "Connecticut does not require PIP insurance since switching from no-fault to tort system in 1994."
+  },
+  {
+    "id": "CT-029",
+    "category": "insurance",
+    "question": "What type of motorist coverage does Connecticut require besides liability insurance?",
+    "options": [
+      "Uninsured and underinsured motorist coverage",
+      "Collision coverage",
+      "Comprehensive coverage",
+      "Gap insurance"
+    ],
+    "correctIndex": 0,
+    "explanation": "Connecticut requires uninsured and underinsured motorist coverage in addition to liability insurance."
+  },
+  {
+    "id": "CT-030",
+    "category": "insurance",
+    "question": "What must Connecticut drivers carry in their vehicle at all times?",
+    "options": [
+      "Only registration",
+      "Insurance card and registration",
+      "Only proof of ownership",
+      "Bill of sale only"
+    ],
+    "correctIndex": 1,
+    "explanation": "Connecticut law requires drivers to carry both the insurance identification card and vehicle registration at all times."
+  },
+  {
+    "id": "CT-031",
+    "category": "stateUnique",
+    "question": "What vehicles does Connecticut's Move Over law apply to?",
+    "options": [
+      "Only police vehicles",
+      "Only emergency vehicles",
+      "All stopped vehicles on the roadside",
+      "Only tow trucks"
+    ],
+    "correctIndex": 2,
+    "explanation": "Connecticut's expanded Move Over law applies to any vehicle stopped on the shoulder or roadside, not just emergency vehicles."
+  },
+  {
+    "id": "CT-032",
+    "category": "stateUnique",
+    "question": "When was Connecticut's Move Over law expanded to include all vehicles?",
+    "options": [
+      "2009",
+      "2015",
+      "2019",
+      "2017"
+    ],
+    "correctIndex": 3,
+    "explanation": "Connecticut expanded its Move Over law in 2017 to cover all stationary vehicles, not just emergency responders."
+  },
+  {
+    "id": "CT-033",
+    "category": "stateUnique",
+    "question": "What must you do on a multi-lane road when approaching a stopped vehicle in Connecticut?",
+    "options": [
+      "Move over one lane if safe",
+      "Stop completely",
+      "Turn on hazard lights",
+      "Sound your horn"
+    ],
+    "correctIndex": 0,
+    "explanation": "On multi-lane roads, Connecticut drivers must move over one lane if it is safe and reasonable to do so."
+  },
+  {
+    "id": "CT-034",
+    "category": "stateUnique",
+    "question": "What should you do if you cannot move over for a stopped vehicle in Connecticut?",
+    "options": [
+      "Maintain current speed",
+      "Slow down and proceed with caution",
+      "Stop in your lane",
+      "Speed up to pass quickly"
+    ],
+    "correctIndex": 1,
+    "explanation": "If unable to move over, Connecticut drivers must slow down to a reasonable speed and proceed cautiously."
+  },
+  {
+    "id": "CT-035",
+    "category": "stateUnique",
+    "question": "When should Connecticut drivers use the left lane on multi-lane highways?",
+    "options": [
+      "For cruise control driving",
+      "Anytime they prefer",
+      "Passing, exiting left, or avoiding obstacles",
+      "Only during rush hour"
+    ],
+    "correctIndex": 2,
+    "explanation": "Connecticut's left lane law restricts use to passing, preparing for left exits, or avoiding obstructions."
+  },
+  {
+    "id": "CT-036",
+    "category": "stateUnique",
+    "question": "What overrides Connecticut's left lane restriction when emergency vehicles are present?",
+    "options": [
+      "Heavy traffic conditions",
+      "GPS navigation instructions",
+      "Speed limit changes",
+      "The Move Over law"
+    ],
+    "correctIndex": 3,
+    "explanation": "The Move Over law takes precedence, requiring drivers to use the left lane to move away from stopped emergency vehicles."
+  },
+  {
+    "id": "CT-037",
+    "category": "stateUnique",
+    "question": "How many safe driving course hours are required during Connecticut's permit phase?",
+    "options": [
+      "8 hours",
+      "10 hours",
+      "6 hours",
+      "12 hours"
+    ],
+    "correctIndex": 0,
+    "explanation": "Connecticut requires completion of a mandatory 8-hour safe driving practices course during the learner's permit phase."
+  },
+  {
+    "id": "CT-038",
+    "category": "stateUnique",
+    "question": "What happens if a Connecticut driver under 18 drives another person's non-IID vehicle while restricted?",
+    "options": [
+      "Warning only",
+      "Fine and possible jail time",
+      "Community service",
+      "License points only"
+    ],
+    "correctIndex": 1,
+    "explanation": "Driving another vehicle while IID-restricted carries fines and up to one year jail, including mandatory 30 days."
+  },
+  {
+    "id": "CT-039",
+    "category": "stateUnique",
+    "question": "How often must ignition interlock devices be calibrated in Connecticut?",
+    "options": [
+      "Every week",
+      "Every 60 days",
+      "Every 25 to 30 days",
+      "Every 90 days"
+    ],
+    "correctIndex": 2,
+    "explanation": "Connecticut requires IID calibration every 25 to 30 days by bringing the device to the installer."
+  },
+  {
+    "id": "CT-040",
+    "category": "stateUnique",
+    "question": "During the first year of IID installation, where can Connecticut first-time offenders drive?",
+    "options": [
+      "Anywhere without restriction",
+      "Only within their county",
+      "Only to neighboring states",
+      "Work, school, treatment, and service appointments"
+    ],
+    "correctIndex": 3,
+    "explanation": "First-year IID restrictions limit driving to work, school, treatment, IID service centers, and probation appointments."
+  }
+]

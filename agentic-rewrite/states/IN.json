@@ -1,0 +1,482 @@
+[
+  {
+    "id": "IN-001",
+    "question": "What is the minimum age to obtain a learner's permit in Indiana with driver education?",
+    "answers": [
+      "15 years old",
+      "14 years old",
+      "16 years old",
+      "17 years old"
+    ],
+    "correctIndex": 0,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "IN-002",
+    "question": "How long must you hold a learner's permit before applying for a license in Indiana?",
+    "answers": [
+      "90 days",
+      "180 days",
+      "120 days",
+      "270 days"
+    ],
+    "correctIndex": 1,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "IN-003",
+    "question": "How many total hours of supervised driving practice are required in Indiana?",
+    "answers": [
+      "30 hours",
+      "40 hours",
+      "50 hours",
+      "60 hours"
+    ],
+    "correctIndex": 2,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "IN-004",
+    "question": "What is the minimum age of a supervising driver when practicing with a permit in Indiana?",
+    "answers": [
+      "21 years old",
+      "23 years old",
+      "18 years old",
+      "25 years old"
+    ],
+    "correctIndex": 3,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "IN-005",
+    "question": "At what age can you obtain a probationary license in Indiana with driver education?",
+    "answers": [
+      "16 years and 90 days",
+      "16 years",
+      "15 years and 180 days",
+      "17 years"
+    ],
+    "correctIndex": 0,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "IN-006",
+    "question": "What are the driving hours restrictions for the first 180 days of a probationary license?",
+    "answers": [
+      "Cannot drive 11 p.m. to 6 a.m.",
+      "Cannot drive 10 p.m. to 5 a.m.",
+      "Cannot drive midnight to 5 a.m.",
+      "No restrictions on hours"
+    ],
+    "correctIndex": 1,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "IN-007",
+    "question": "After the first 180 days, when can probationary drivers not drive Sunday through Thursday?",
+    "answers": [
+      "After midnight until 5 a.m.",
+      "After 10 p.m. until 5 a.m.",
+      "After 11 p.m. and before 5 a.m. Monday morning",
+      "After 9 p.m. until 6 a.m."
+    ],
+    "correctIndex": 2,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "IN-008",
+    "question": "At what age do probationary license restrictions end in Indiana?",
+    "answers": [
+      "21 years old",
+      "19 years old",
+      "17 years old",
+      "18 years old"
+    ],
+    "correctIndex": 3,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "IN-009",
+    "question": "How many of the required practice hours must be driven at night in Indiana?",
+    "answers": [
+      "10 hours",
+      "5 hours",
+      "15 hours",
+      "20 hours"
+    ],
+    "correctIndex": 0,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "IN-010",
+    "question": "Who can probationary drivers carry as passengers during the first 180 days?",
+    "answers": [
+      "Any licensed driver",
+      "Only immediate family members",
+      "No passengers allowed",
+      "Friends of any age"
+    ],
+    "correctIndex": 1,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "IN-011",
+    "question": "What is an exception to the nighttime driving restrictions for probationary drivers?",
+    "answers": [
+      "Driving to visit friends",
+      "Going to the movies",
+      "Traveling to or from employment or school activities",
+      "Shopping trips"
+    ],
+    "correctIndex": 2,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "IN-012",
+    "question": "What is the minimum age to get a learner's permit without driver education in Indiana?",
+    "answers": [
+      "15 years old",
+      "15 years and 6 months",
+      "17 years old",
+      "16 years old"
+    ],
+    "correctIndex": 3,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "IN-013",
+    "question": "When did Indiana's hands-free driving law take effect?",
+    "answers": [
+      "July 1, 2020",
+      "January 1, 2020",
+      "March 18, 2020",
+      "July 1, 2019"
+    ],
+    "correctIndex": 0,
+    "category": "cellPhone"
+  },
+  {
+    "id": "IN-014",
+    "question": "What type of phone use is allowed while driving in Indiana?",
+    "answers": [
+      "Holding phone for calls",
+      "Hands-free or voice-operated technology",
+      "Texting at red lights",
+      "No phone use allowed"
+    ],
+    "correctIndex": 1,
+    "category": "cellPhone"
+  },
+  {
+    "id": "IN-015",
+    "question": "What is the cell phone restriction for drivers under 21 in Indiana?",
+    "answers": [
+      "Can use hands-free only",
+      "Can text but not call",
+      "Cannot use phone at all except to call 911",
+      "No special restrictions"
+    ],
+    "correctIndex": 2,
+    "category": "cellPhone"
+  },
+  {
+    "id": "IN-016",
+    "question": "Is it legal to use your handheld phone while stopped at a red light in Indiana?",
+    "answers": [
+      "Yes, if stopped for more than 30 seconds",
+      "Yes, in school zones only",
+      "Yes, but only to check GPS",
+      "No, you cannot hold the phone while driving"
+    ],
+    "correctIndex": 3,
+    "category": "cellPhone"
+  },
+  {
+    "id": "IN-017",
+    "question": "What does Indiana's hands-free law prohibit while operating a vehicle?",
+    "answers": [
+      "Holding or using a mobile device",
+      "Using Bluetooth devices",
+      "Having a phone in the car",
+      "Voice-operated technology"
+    ],
+    "correctIndex": 0,
+    "category": "cellPhone"
+  },
+  {
+    "id": "IN-018",
+    "question": "Can police confiscate your phone without consent to check usage in Indiana?",
+    "answers": [
+      "Yes, always",
+      "No, you are not required to turn over your phone",
+      "Only with a supervisor present",
+      "Yes, if you were texting"
+    ],
+    "correctIndex": 1,
+    "category": "cellPhone"
+  },
+  {
+    "id": "IN-019",
+    "question": "What term does Indiana officially use instead of DUI?",
+    "answers": [
+      "DWI",
+      "DWAI",
+      "OWI",
+      "OMVI"
+    ],
+    "correctIndex": 2,
+    "category": "duiStateLaws"
+  },
+  {
+    "id": "IN-020",
+    "question": "What is the standard blood alcohol concentration limit for most drivers in Indiana?",
+    "answers": [
+      "0.10%",
+      "0.05%",
+      "0.06%",
+      "0.08%"
+    ],
+    "correctIndex": 3,
+    "category": "duiStateLaws"
+  },
+  {
+    "id": "IN-021",
+    "question": "What is the BAC limit for drivers under 21 in Indiana?",
+    "answers": [
+      "0.02%",
+      "0.04%",
+      "0.08%",
+      "0.00%"
+    ],
+    "correctIndex": 0,
+    "category": "duiStateLaws"
+  },
+  {
+    "id": "IN-022",
+    "question": "What is the BAC limit for commercial drivers in Indiana?",
+    "answers": [
+      "0.08%",
+      "0.04%",
+      "0.02%",
+      "0.06%"
+    ],
+    "correctIndex": 1,
+    "category": "duiStateLaws"
+  },
+  {
+    "id": "IN-023",
+    "question": "At what BAC level do enhanced OWI penalties apply in Indiana?",
+    "answers": [
+      "0.10% or higher",
+      "0.12% or higher",
+      "0.15% or higher",
+      "0.20% or higher"
+    ],
+    "correctIndex": 2,
+    "category": "duiStateLaws"
+  },
+  {
+    "id": "IN-024",
+    "question": "Can you be charged with OWI if your BAC is below the legal limit in Indiana?",
+    "answers": [
+      "No, never",
+      "Only if you refuse testing",
+      "Only for commercial drivers",
+      "Yes, if you show signs of impairment"
+    ],
+    "correctIndex": 3,
+    "category": "duiStateLaws"
+  },
+  {
+    "id": "IN-025",
+    "question": "When does a second OWI become a felony in Indiana?",
+    "answers": [
+      "If the prior conviction was within seven years",
+      "If the prior conviction was within ten years",
+      "Always",
+      "Never"
+    ],
+    "correctIndex": 0,
+    "category": "duiStateLaws"
+  },
+  {
+    "id": "IN-026",
+    "question": "What method does Indiana use to test for THC impairment under the new law?",
+    "answers": [
+      "Blood test only",
+      "Oral fluid or saliva test",
+      "Urine test",
+      "Breath test"
+    ],
+    "correctIndex": 1,
+    "category": "duiStateLaws"
+  },
+  {
+    "id": "IN-027",
+    "question": "What does liability insurance primarily cover in Indiana?",
+    "answers": [
+      "Your own vehicle damage",
+      "Your medical bills only",
+      "Other people's expenses if you cause an accident",
+      "All damages regardless of fault"
+    ],
+    "correctIndex": 2,
+    "category": "insurance"
+  },
+  {
+    "id": "IN-028",
+    "question": "What must insurers offer to most drivers in Indiana regarding uninsured motorists?",
+    "answers": [
+      "Nothing, it's not required",
+      "Collision coverage",
+      "Comprehensive coverage",
+      "Uninsured and underinsured motorist coverage"
+    ],
+    "correctIndex": 3,
+    "category": "insurance"
+  },
+  {
+    "id": "IN-029",
+    "question": "In what formats can you present proof of insurance in Indiana?",
+    "answers": [
+      "Paper or electronic",
+      "Paper only",
+      "Electronic only",
+      "Notarized documents only"
+    ],
+    "correctIndex": 0,
+    "category": "insurance"
+  },
+  {
+    "id": "IN-030",
+    "question": "How long must an SR-22 be on file after a license suspension in Indiana?",
+    "answers": [
+      "90 days",
+      "180 days",
+      "One year",
+      "Two years"
+    ],
+    "correctIndex": 1,
+    "category": "insurance"
+  },
+  {
+    "id": "IN-031",
+    "question": "What types of vehicles does Indiana's Move Over law apply to?",
+    "answers": [
+      "Emergency vehicles only",
+      "Police and fire vehicles only",
+      "All disabled vehicles with flashing hazard lights",
+      "Tow trucks only"
+    ],
+    "correctIndex": 2,
+    "category": "stateUnique"
+  },
+  {
+    "id": "IN-032",
+    "question": "How much must you slow down if you cannot move over for a disabled vehicle in Indiana?",
+    "answers": [
+      "5 mph below the speed limit",
+      "15 mph below the speed limit",
+      "20 mph below the speed limit",
+      "10 mph below the posted speed limit"
+    ],
+    "correctIndex": 3,
+    "category": "stateUnique"
+  },
+  {
+    "id": "IN-033",
+    "question": "Where does Indiana's Move Over law apply?",
+    "answers": [
+      "All roadways in Indiana",
+      "Highways only",
+      "Interstates only",
+      "Urban areas only"
+    ],
+    "correctIndex": 0,
+    "category": "stateUnique"
+  },
+  {
+    "id": "IN-034",
+    "question": "When must you use turn signals before turning or changing lanes in Indiana?",
+    "answers": [
+      "200 feet in advance",
+      "At a reasonable time before the maneuver",
+      "Immediately before turning",
+      "Only on highways"
+    ],
+    "correctIndex": 1,
+    "category": "stateUnique"
+  },
+  {
+    "id": "IN-035",
+    "question": "Until what age must children be in an appropriate safety seat in Indiana?",
+    "answers": [
+      "6 years old",
+      "7 years old",
+      "8 years old",
+      "10 years old"
+    ],
+    "correctIndex": 2,
+    "category": "stateUnique"
+  },
+  {
+    "id": "IN-036",
+    "question": "Who must wear a seat belt while in a vehicle in Indiana?",
+    "answers": [
+      "Front seat passengers only",
+      "Children only",
+      "No one, it's optional",
+      "Drivers and all passengers"
+    ],
+    "correctIndex": 3,
+    "category": "stateUnique"
+  },
+  {
+    "id": "IN-037",
+    "question": "What lights must you use when driving in heavy fog in Indiana?",
+    "answers": [
+      "Headlights and emergency flashers",
+      "Fog lights only",
+      "High beams only",
+      "Parking lights only"
+    ],
+    "correctIndex": 0,
+    "category": "stateUnique"
+  },
+  {
+    "id": "IN-038",
+    "question": "How close to a fire hydrant can you legally park in Indiana?",
+    "answers": [
+      "10 feet",
+      "Not within 15 feet",
+      "20 feet",
+      "25 feet"
+    ],
+    "correctIndex": 1,
+    "category": "stateUnique"
+  },
+  {
+    "id": "IN-039",
+    "question": "Until what age is a license considered probationary if obtained while under 21 in Indiana?",
+    "answers": [
+      "18 years old",
+      "19 years old",
+      "21 years old",
+      "22 years old"
+    ],
+    "correctIndex": 2,
+    "category": "stateUnique"
+  },
+  {
+    "id": "IN-040",
+    "question": "What is the maximum speed limit on the Indiana Toll Road?",
+    "answers": [
+      "65 mph",
+      "75 mph",
+      "60 mph",
+      "70 mph"
+    ],
+    "correctIndex": 3,
+    "category": "stateUnique"
+  }
+]

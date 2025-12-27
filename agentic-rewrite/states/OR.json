@@ -1,0 +1,522 @@
+[
+  {
+    "id": "OR-001",
+    "state": "OR",
+    "category": "gdlLicensing",
+    "question": "At what minimum age can you apply for a learner's permit in Oregon?",
+    "answers": [
+      "15 years old",
+      "16 years old",
+      "14 years old",
+      "17 years old"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "OR-002",
+    "state": "OR",
+    "category": "gdlLicensing",
+    "question": "Who must supervise a learner's permit holder in Oregon?",
+    "answers": [
+      "Any licensed driver over 18",
+      "Licensed driver 21 or older in front seat",
+      "Only certified driving instructors",
+      "Any family member with a license"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "OR-003",
+    "state": "OR",
+    "category": "gdlLicensing",
+    "question": "How long must you hold a learner's permit before applying for a provisional license in Oregon?",
+    "answers": [
+      "3 months",
+      "1 year",
+      "At least 6 months",
+      "9 months"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "OR-004",
+    "state": "OR",
+    "category": "gdlLicensing",
+    "question": "What supervised driving practice is required to obtain a provisional license in Oregon?",
+    "answers": [
+      "30 hours of practice",
+      "Only a road test",
+      "100 hours total",
+      "50 hours or driver education course"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "OR-005",
+    "state": "OR",
+    "category": "gdlLicensing",
+    "question": "What is the nighttime driving restriction for provisional license holders in Oregon?",
+    "answers": [
+      "No driving midnight to 5 AM first year",
+      "No driving 11 PM to 6 AM",
+      "No nighttime restrictions",
+      "No driving 10 PM to 5 AM"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "OR-006",
+    "state": "OR",
+    "category": "gdlLicensing",
+    "question": "What passenger restriction applies during the first 6 months of a provisional license in Oregon?",
+    "answers": [
+      "Two non-family passengers maximum",
+      "No passengers under 20 except family",
+      "Three passengers maximum",
+      "No passengers allowed"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "OR-007",
+    "state": "OR",
+    "category": "gdlLicensing",
+    "question": "How many non-family passengers under 20 can ride during months 7-12 of a provisional license in Oregon?",
+    "answers": [
+      "None allowed",
+      "One passenger",
+      "Up to three passengers",
+      "Unlimited passengers"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "OR-008",
+    "state": "OR",
+    "category": "gdlLicensing",
+    "question": "When do provisional license restrictions end in Oregon?",
+    "answers": [
+      "After 6 months",
+      "At age 19",
+      "After 2 years",
+      "After 1 year or at age 18, whichever comes first"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "OR-009",
+    "state": "OR",
+    "category": "gdlLicensing",
+    "question": "At what age can you obtain an unrestricted driver's license in Oregon?",
+    "answers": [
+      "18 years old",
+      "17 years old",
+      "19 years old",
+      "21 years old"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "OR-010",
+    "state": "OR",
+    "category": "gdlLicensing",
+    "question": "What are valid exceptions to the nighttime curfew for provisional license holders in Oregon?",
+    "answers": [
+      "Social events only",
+      "Driving to work, school, or with driver 25 or older",
+      "No exceptions exist",
+      "Only medical emergencies"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "OR-011",
+    "state": "OR",
+    "category": "gdlLicensing",
+    "question": "What requirement applies to the front seat when supervising a learner's permit holder in Oregon?",
+    "answers": [
+      "Supervisor can be anywhere in vehicle",
+      "No supervision needed during daytime",
+      "Supervisor must occupy front passenger seat",
+      "Supervisor only needed on highways"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "OR-012",
+    "state": "OR",
+    "category": "gdlLicensing",
+    "question": "What cell phone restriction applies to provisional license holders under 18 in Oregon?",
+    "answers": [
+      "Only handheld use prohibited",
+      "Only texting prohibited",
+      "Hands-free allowed",
+      "All cell phone use prohibited"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "OR-013",
+    "state": "OR",
+    "category": "cellPhone",
+    "question": "What does Oregon law prohibit while driving a motor vehicle?",
+    "answers": [
+      "Holding or using a mobile electronic device",
+      "Only texting while driving",
+      "Only video recording",
+      "Using navigation systems"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "OR-014",
+    "state": "OR",
+    "category": "cellPhone",
+    "question": "Can drivers 18 or older use voice-to-text features while driving in Oregon?",
+    "answers": [
+      "No, all phone use is banned",
+      "Yes, hands-free voice-to-text is allowed",
+      "Only with passenger present",
+      "Only on highways"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "OR-015",
+    "state": "OR",
+    "category": "cellPhone",
+    "question": "How many touches are allowed to activate a device under Oregon's distracted driving law?",
+    "answers": [
+      "Up to three touches",
+      "Two touches maximum",
+      "Single touch or swipe",
+      "No touching allowed"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "OR-016",
+    "state": "OR",
+    "category": "cellPhone",
+    "question": "What cell phone restriction applies to all drivers under 18 in Oregon?",
+    "answers": [
+      "Only handheld use prohibited",
+      "Only texting prohibited",
+      "Hands-free allowed",
+      "All mobile device use prohibited"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "OR-017",
+    "state": "OR",
+    "category": "cellPhone",
+    "question": "When can you legally use a handheld phone to call for medical help while driving in Oregon?",
+    "answers": [
+      "During emergencies when no one else is available",
+      "Only when fully stopped",
+      "Only with voice commands",
+      "Never while vehicle is on"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "OR-018",
+    "state": "OR",
+    "category": "cellPhone",
+    "question": "How is Oregon's distracted driving law enforced?",
+    "answers": [
+      "Secondary offense only",
+      "Primary enforcement allowed",
+      "Warning only for first offense",
+      "Only enforced after accidents"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "OR-019",
+    "state": "OR",
+    "category": "duiStateLaws",
+    "question": "What is the legal BAC limit for adult drivers in Oregon?",
+    "answers": [
+      "0.10 percent",
+      "0.05 percent",
+      "0.08 percent",
+      "0.04 percent"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "OR-020",
+    "state": "OR",
+    "category": "duiStateLaws",
+    "question": "What is the BAC limit for commercial vehicle drivers in Oregon?",
+    "answers": [
+      "0.08 percent",
+      "0.02 percent",
+      "0.06 percent",
+      "0.04 percent"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "OR-021",
+    "state": "OR",
+    "category": "duiStateLaws",
+    "question": "What BAC level triggers Oregon's zero tolerance law for drivers under 21?",
+    "answers": [
+      "Any measurable amount of alcohol",
+      "0.02 percent or higher",
+      "0.04 percent or higher",
+      "0.08 percent or higher"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "OR-022",
+    "state": "OR",
+    "category": "duiStateLaws",
+    "question": "What does Oregon's implied consent law require of all drivers?",
+    "answers": [
+      "Permission to search vehicle",
+      "Agreement to submit to chemical testing when arrested",
+      "Consent to field sobriety only",
+      "Waiver of legal representation"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "OR-023",
+    "state": "OR",
+    "category": "duiStateLaws",
+    "question": "What is the consequence of refusing chemical testing for the first time in Oregon?",
+    "answers": [
+      "30-day suspension",
+      "6-month suspension",
+      "1-year license suspension",
+      "No penalty"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "OR-024",
+    "state": "OR",
+    "category": "duiStateLaws",
+    "question": "What is the suspension period for a second refusal of chemical testing within 5 years in Oregon?",
+    "answers": [
+      "1 year",
+      "2 years",
+      "Permanent revocation",
+      "3 years"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "OR-025",
+    "state": "OR",
+    "category": "duiStateLaws",
+    "question": "How can refusing a chemical test affect your case in Oregon?",
+    "answers": [
+      "Refusal can be used as evidence of guilt in court",
+      "Refusal cannot be mentioned in court",
+      "Refusal guarantees acquittal",
+      "Refusal only affects administrative penalties"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "OR-026",
+    "state": "OR",
+    "category": "duiStateLaws",
+    "question": "What is the minimum license suspension for underage drivers who violate zero tolerance laws in Oregon?",
+    "answers": [
+      "30 days",
+      "At least 90 days",
+      "6 months",
+      "1 year"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "OR-027",
+    "state": "OR",
+    "category": "insurance",
+    "question": "What type of insurance system does Oregon use for auto accidents?",
+    "answers": [
+      "Pure no-fault system",
+      "Modified comparative fault",
+      "At-fault system",
+      "Shared responsibility"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "OR-028",
+    "state": "OR",
+    "category": "insurance",
+    "question": "What does liability insurance primarily cover in Oregon?",
+    "answers": [
+      "Your vehicle damage only",
+      "Your medical bills only",
+      "Rental car expenses",
+      "Bodily injury and property damage you cause to others"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "OR-029",
+    "state": "OR",
+    "category": "insurance",
+    "question": "What unique insurance coverage is required in Oregon beyond basic liability?",
+    "answers": [
+      "Personal Injury Protection",
+      "Comprehensive coverage",
+      "Collision coverage",
+      "Gap insurance"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "OR-030",
+    "state": "OR",
+    "category": "insurance",
+    "question": "What coverage is legally required to protect you from uninsured drivers in Oregon?",
+    "answers": [
+      "Comprehensive coverage",
+      "Uninsured/underinsured motorist coverage",
+      "Collision coverage",
+      "Medical payments coverage"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "OR-031",
+    "state": "OR",
+    "category": "stateUnique",
+    "question": "When are studded tires legal to use in Oregon?",
+    "answers": [
+      "Year-round",
+      "October 1 to April 30",
+      "November 1 to March 31",
+      "December 1 to February 28"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "OR-032",
+    "state": "OR",
+    "category": "stateUnique",
+    "question": "What must you do when approaching a stopped emergency vehicle on a multi-lane road in Oregon?",
+    "answers": [
+      "Honk your horn",
+      "Stop completely",
+      "Flash your lights",
+      "Move over or slow down significantly"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "OR-033",
+    "state": "OR",
+    "category": "stateUnique",
+    "question": "What is Oregon's helmet requirement for motorcycle riders?",
+    "answers": [
+      "Required for all riders and passengers",
+      "Only riders under 21",
+      "Only on highways",
+      "Optional with insurance"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "OR-034",
+    "state": "OR",
+    "category": "stateUnique",
+    "question": "Is lane splitting or lane filtering legal for motorcycles in Oregon?",
+    "answers": [
+      "Legal in all conditions",
+      "Illegal in all conditions",
+      "Legal only in traffic",
+      "Legal at speeds under 25 mph"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "OR-035",
+    "state": "OR",
+    "category": "stateUnique",
+    "question": "How far must you stop from a school bus with flashing red lights in Oregon?",
+    "answers": [
+      "15 feet or more",
+      "10 feet or more",
+      "20 feet or more",
+      "25 feet or more"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "OR-036",
+    "state": "OR",
+    "category": "stateUnique",
+    "question": "When are right turns on red permitted in Oregon?",
+    "answers": [
+      "Never permitted",
+      "Always without stopping",
+      "Only during daytime",
+      "After complete stop and when safe, unless prohibited"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "OR-037",
+    "state": "OR",
+    "category": "stateUnique",
+    "question": "What is the maximum handlebar height for motorcycles in Oregon?",
+    "answers": [
+      "15 inches above the seat",
+      "12 inches above the seat",
+      "18 inches above the seat",
+      "No restriction"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "OR-038",
+    "state": "OR",
+    "category": "stateUnique",
+    "question": "What child restraint is required for children under 8 years old and under 40 pounds in Oregon?",
+    "answers": [
+      "Regular seatbelt only",
+      "Child safety seat or booster seat",
+      "Lap belt only",
+      "No requirement"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "OR-039",
+    "state": "OR",
+    "category": "stateUnique",
+    "question": "At what age is a bicycle helmet required for riders in Oregon?",
+    "answers": [
+      "Under 12",
+      "Under 18",
+      "Under 16",
+      "All ages"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "OR-040",
+    "state": "OR",
+    "category": "stateUnique",
+    "question": "What lighting requirement applies to motorcycles at all times in Oregon?",
+    "answers": [
+      "Only at night",
+      "Only in rain",
+      "Only in fog",
+      "Headlights must always be on"
+    ],
+    "correctIndex": 3
+  }
+]

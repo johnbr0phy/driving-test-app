@@ -1,0 +1,522 @@
+[
+  {
+    "id": "MA-001",
+    "state": "MA",
+    "category": "gdlLicensing",
+    "question": "At what minimum age can you apply for a learner's permit in Massachusetts?",
+    "answers": [
+      "16 years old",
+      "15 years old",
+      "17 years old",
+      "15 years and 9 months"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MA-002",
+    "state": "MA",
+    "category": "gdlLicensing",
+    "question": "Who can supervise a learner's permit holder while driving in Massachusetts?",
+    "answers": [
+      "Any licensed driver over 18",
+      "Licensed driver 21 or older with at least 1 year experience",
+      "Only certified driving instructors",
+      "Any family member with a license"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MA-003",
+    "state": "MA",
+    "category": "gdlLicensing",
+    "question": "How many hours of supervised practice driving are required with a learner's permit in Massachusetts?",
+    "answers": [
+      "20 hours total",
+      "50 hours total",
+      "40 hours, or 30 with driver education",
+      "60 hours total"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MA-004",
+    "state": "MA",
+    "category": "gdlLicensing",
+    "question": "At what age can you apply for a Junior Operator License (JOL) in Massachusetts?",
+    "answers": [
+      "16 years old exactly",
+      "17 years old",
+      "After completing driver's education",
+      "16 and a half years old"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "MA-005",
+    "state": "MA",
+    "category": "gdlLicensing",
+    "question": "How long must you hold a learner's permit before applying for a JOL in Massachusetts?",
+    "answers": [
+      "At least 6 months",
+      "3 months",
+      "1 year",
+      "9 months"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MA-006",
+    "state": "MA",
+    "category": "gdlLicensing",
+    "question": "What is the passenger restriction for the first 6 months of holding a JOL in Massachusetts?",
+    "answers": [
+      "No passengers at all",
+      "No passengers under 18 except immediate family",
+      "Only one passenger allowed",
+      "Two passengers maximum"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MA-007",
+    "state": "MA",
+    "category": "gdlLicensing",
+    "question": "What are the nighttime driving restrictions for JOL holders in Massachusetts?",
+    "answers": [
+      "Cannot drive 10 PM to 6 AM",
+      "Cannot drive 11 PM to 5 AM",
+      "Cannot drive 12:30 AM to 5 AM unless with parent or guardian",
+      "Cannot drive midnight to 6 AM"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MA-008",
+    "state": "MA",
+    "category": "gdlLicensing",
+    "question": "At what age do passenger restrictions lift for JOL holders in Massachusetts?",
+    "answers": [
+      "16 and a half",
+      "18 years old",
+      "Upon completion of driver's education",
+      "17 years old"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "MA-009",
+    "state": "MA",
+    "category": "gdlLicensing",
+    "question": "At what age do nighttime driving restrictions lift for JOL holders in Massachusetts?",
+    "answers": [
+      "18 years old",
+      "17 years old",
+      "21 years old",
+      "19 years old"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MA-010",
+    "state": "MA",
+    "category": "gdlLicensing",
+    "question": "What is required for drivers under 18 to obtain a license in Massachusetts?",
+    "answers": [
+      "Only a road test",
+      "Approved driver education program",
+      "Parental supervision only",
+      "Online course completion"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MA-011",
+    "state": "MA",
+    "category": "gdlLicensing",
+    "question": "How many hours of classroom instruction are required in a driver education program for those under 18 in Massachusetts?",
+    "answers": [
+      "20 hours",
+      "40 hours",
+      "30 hours",
+      "25 hours"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MA-012",
+    "state": "MA",
+    "category": "gdlLicensing",
+    "question": "How long is a learner's permit valid in Massachusetts?",
+    "answers": [
+      "1 year",
+      "18 months",
+      "3 years",
+      "2 years"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "MA-013",
+    "state": "MA",
+    "category": "cellPhone",
+    "question": "What does Massachusetts' hands-free law require while driving?",
+    "answers": [
+      "Phone must be in hands-free mode, cannot be held",
+      "Only texting is prohibited",
+      "Only applies to drivers under 21",
+      "Phone calls are completely banned"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MA-014",
+    "state": "MA",
+    "category": "cellPhone",
+    "question": "Where must your phone be positioned to comply with Massachusetts' hands-free law?",
+    "answers": [
+      "In your pocket or bag",
+      "Mounted to windshield, dashboard, or center console",
+      "Held below dashboard level",
+      "On passenger seat"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MA-015",
+    "state": "MA",
+    "category": "cellPhone",
+    "question": "What phone use is allowed for drivers under 18 in Massachusetts?",
+    "answers": [
+      "Hands-free calls only",
+      "GPS navigation only",
+      "None, all electronic device use is prohibited",
+      "Voice commands only"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MA-016",
+    "state": "MA",
+    "category": "cellPhone",
+    "question": "Can you legally use GPS navigation while driving in Massachusetts?",
+    "answers": [
+      "Never allowed",
+      "Only with voice commands",
+      "Only on highways",
+      "Yes, if device is properly mounted"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "MA-017",
+    "state": "MA",
+    "category": "cellPhone",
+    "question": "When can you hold your phone while stopped at a red light in Massachusetts?",
+    "answers": [
+      "Never, the law applies even when stationary",
+      "Only for emergencies",
+      "Only to check notifications",
+      "Only for navigation"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MA-018",
+    "state": "MA",
+    "category": "cellPhone",
+    "question": "What is an exception to Massachusetts' hands-free law?",
+    "answers": [
+      "Checking emails at stoplights",
+      "Contacting emergency services",
+      "Using social media",
+      "Watching videos"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MA-019",
+    "state": "MA",
+    "category": "duiStateLaws",
+    "question": "What is the BAC limit for drivers under 21 in Massachusetts?",
+    "answers": [
+      "0.08 percent",
+      "0.04 percent",
+      "0.02 percent",
+      "Zero tolerance"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MA-020",
+    "state": "MA",
+    "category": "duiStateLaws",
+    "question": "What is the BAC limit for commercial drivers in Massachusetts?",
+    "answers": [
+      "0.08 percent",
+      "0.02 percent",
+      "Same as regular drivers",
+      "0.04 percent"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "MA-021",
+    "state": "MA",
+    "category": "duiStateLaws",
+    "question": "What does implied consent mean for Massachusetts drivers?",
+    "answers": [
+      "Agreement to chemical testing when arrested for OUI",
+      "Permission to search your vehicle",
+      "Consent to field sobriety tests only",
+      "Waiver of right to attorney"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MA-022",
+    "state": "MA",
+    "category": "duiStateLaws",
+    "question": "What is the license suspension for refusing a chemical test with no prior OUI in Massachusetts?",
+    "answers": [
+      "30 days",
+      "180 days",
+      "1 year",
+      "90 days"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MA-023",
+    "state": "MA",
+    "category": "duiStateLaws",
+    "question": "How does Massachusetts classify a third OUI offense?",
+    "answers": [
+      "Misdemeanor",
+      "Traffic violation",
+      "Felony",
+      "Civil infraction"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MA-024",
+    "state": "MA",
+    "category": "duiStateLaws",
+    "question": "What device may be required for drivers with OUI convictions in Massachusetts?",
+    "answers": [
+      "Speed governor",
+      "Dashboard camera",
+      "GPS tracker",
+      "Ignition interlock device"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "MA-025",
+    "state": "MA",
+    "category": "duiStateLaws",
+    "question": "What happens if you register a BAC of 0.08% or higher on a chemical test in Massachusetts?",
+    "answers": [
+      "30-day license suspension",
+      "Immediate arrest only",
+      "Warning for first offense",
+      "No penalty until court conviction"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MA-026",
+    "state": "MA",
+    "category": "duiStateLaws",
+    "question": "How long is the license suspension for refusing a chemical test with a prior OUI or if under 21 in Massachusetts?",
+    "answers": [
+      "180 days",
+      "3 years",
+      "1 year",
+      "5 years"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MA-027",
+    "state": "MA",
+    "category": "insurance",
+    "question": "What type of insurance system does Massachusetts use for auto accidents?",
+    "answers": [
+      "Fault-based system",
+      "Hybrid system",
+      "No-fault system",
+      "At-fault tort system"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MA-028",
+    "state": "MA",
+    "category": "insurance",
+    "question": "Which coverage is unique to Massachusetts and other no-fault states?",
+    "answers": [
+      "Liability coverage",
+      "Collision coverage",
+      "Comprehensive coverage",
+      "Personal Injury Protection (PIP)"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "MA-029",
+    "state": "MA",
+    "category": "insurance",
+    "question": "What does Massachusetts require for bodily injury coverage as of July 2025?",
+    "answers": [
+      "Minimum coverage per person and per accident",
+      "Only property damage coverage",
+      "No minimum requirements",
+      "Coverage only for drivers under 21"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MA-030",
+    "state": "MA",
+    "category": "insurance",
+    "question": "How many compulsory insurance coverages does Massachusetts require?",
+    "answers": [
+      "Two coverages",
+      "Four coverages",
+      "Three coverages",
+      "Five coverages"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MA-031",
+    "state": "MA",
+    "category": "stateUnique",
+    "question": "When must you use headlights in Massachusetts?",
+    "answers": [
+      "Only at night",
+      "During bad weather only",
+      "When using windshield wipers or visibility under 500 feet",
+      "Only in tunnels"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MA-032",
+    "state": "MA",
+    "category": "stateUnique",
+    "question": "What must you do when approaching a stationary emergency vehicle with flashing lights on a four-lane highway in Massachusetts?",
+    "answers": [
+      "Honk your horn",
+      "Stop completely",
+      "Flash your lights",
+      "Change lanes away and reduce speed"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "MA-033",
+    "state": "MA",
+    "category": "stateUnique",
+    "question": "How long before sunrise and after sunset must headlights be used in Massachusetts?",
+    "answers": [
+      "30 minutes",
+      "1 hour",
+      "15 minutes",
+      "45 minutes"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MA-034",
+    "state": "MA",
+    "category": "stateUnique",
+    "question": "What must you do when a school bus has red lights flashing and stop sign extended in Massachusetts?",
+    "answers": [
+      "Slow down to 20 mph",
+      "Stop from both directions of travel",
+      "Stop only if directly behind the bus",
+      "Proceed with caution"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MA-035",
+    "state": "MA",
+    "category": "stateUnique",
+    "question": "When are right turns on red allowed in Massachusetts?",
+    "answers": [
+      "Never permitted",
+      "Only during daytime",
+      "After complete stop unless sign prohibits it",
+      "Without stopping if clear"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MA-036",
+    "state": "MA",
+    "category": "stateUnique",
+    "question": "What is the minimum safe passing distance when overtaking a vulnerable user like a cyclist in Massachusetts?",
+    "answers": [
+      "2 feet",
+      "3 feet",
+      "5 feet",
+      "4 feet"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "MA-037",
+    "state": "MA",
+    "category": "stateUnique",
+    "question": "What is the speed limit in school zones in Massachusetts?",
+    "answers": [
+      "20 mph",
+      "15 mph",
+      "25 mph",
+      "30 mph"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MA-038",
+    "state": "MA",
+    "category": "stateUnique",
+    "question": "Where should you use headlights regardless of time of day in Massachusetts?",
+    "answers": [
+      "On all highways",
+      "Inside tunnels",
+      "In parking lots",
+      "On residential streets"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MA-039",
+    "state": "MA",
+    "category": "stateUnique",
+    "question": "What is prohibited for children under 12 in Massachusetts?",
+    "answers": [
+      "Riding in front seat",
+      "Riding without seatbelt",
+      "Riding in the bed of a pickup truck",
+      "Riding a bicycle without helmet"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MA-040",
+    "state": "MA",
+    "category": "stateUnique",
+    "question": "What action must drivers take under the Move Over Law in Massachusetts?",
+    "answers": [
+      "Stop completely",
+      "Turn on hazard lights",
+      "Honk to alert others",
+      "Reduce speed and change lanes if possible"
+    ],
+    "correctIndex": 3
+  }
+]

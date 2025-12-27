@@ -1,0 +1,562 @@
+[
+  {
+    "id": "AR-001",
+    "state": "AR",
+    "category": "gdlLicensing",
+    "question": "At what minimum age can a teen obtain a learner's license in Arkansas?",
+    "answers": [
+      "14 years old",
+      "15 years old",
+      "16 years old",
+      "15 and a half years old"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arkansas allows teens to obtain a learner's license starting at age 14, making it one of the younger ages nationwide."
+  },
+  {
+    "id": "AR-002",
+    "state": "AR",
+    "category": "gdlLicensing",
+    "question": "How long must a teen hold a learner's license before applying for an intermediate license in Arkansas?",
+    "answers": [
+      "3 months",
+      "6 months",
+      "9 months",
+      "1 year"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arkansas requires teens to hold a learner's license for at least 6 months with a clean record before advancing to an intermediate license."
+  },
+  {
+    "id": "AR-003",
+    "state": "AR",
+    "category": "gdlLicensing",
+    "question": "During what hours are intermediate license holders prohibited from driving in Arkansas?",
+    "answers": [
+      "10 PM to 5 AM",
+      "Midnight to 6 AM",
+      "11 PM to 4 AM",
+      "9 PM to 5 AM"
+    ],
+    "correctIndex": 2,
+    "explanation": "Arkansas intermediate license holders cannot drive between 11 PM and 4 AM unless accompanied by a driver 21 or older or for approved purposes."
+  },
+  {
+    "id": "AR-004",
+    "state": "AR",
+    "category": "gdlLicensing",
+    "question": "What is the maximum number of unrelated minor passengers allowed with an intermediate license holder in Arkansas?",
+    "answers": [
+      "Three passengers",
+      "Two passengers",
+      "No passengers",
+      "One passenger"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arkansas restricts intermediate license holders to only one unrelated minor passenger unless supervised by a driver 21 or older."
+  },
+  {
+    "id": "AR-005",
+    "state": "AR",
+    "category": "gdlLicensing",
+    "question": "Who must accompany a learner's license holder while driving in Arkansas?",
+    "answers": [
+      "A licensed driver 21 or older",
+      "Any licensed driver over 18",
+      "A parent or guardian only",
+      "Any licensed adult"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arkansas requires learner's license holders to be accompanied by a licensed driver who is at least 21 years old."
+  },
+  {
+    "id": "AR-006",
+    "state": "AR",
+    "category": "gdlLicensing",
+    "question": "At what age can a teen obtain an unrestricted driver's license in Arkansas?",
+    "answers": [
+      "17 years old",
+      "18 years old",
+      "19 years old",
+      "16 and a half years old"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arkansas issues unrestricted licenses at age 18, provided the driver has maintained a clean record for the previous 12 months."
+  },
+  {
+    "id": "AR-007",
+    "state": "AR",
+    "category": "gdlLicensing",
+    "question": "When does a learner's license expire in Arkansas?",
+    "answers": [
+      "After 2 years",
+      "When the holder turns 18",
+      "On the holder's 16th birthday",
+      "After 18 months"
+    ],
+    "correctIndex": 2,
+    "explanation": "Arkansas learner's licenses automatically expire on the holder's 16th birthday, when they become eligible for an intermediate license."
+  },
+  {
+    "id": "AR-008",
+    "state": "AR",
+    "category": "gdlLicensing",
+    "question": "What must teens under 18 provide proof of to obtain a license in Arkansas?",
+    "answers": [
+      "Employment status",
+      "Vehicle ownership",
+      "Driver education completion",
+      "School attendance or graduation"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arkansas requires teens under 18 to prove they are attending school or have graduated before issuing a driver's license."
+  },
+  {
+    "id": "AR-009",
+    "state": "AR",
+    "category": "gdlLicensing",
+    "question": "What happens if an intermediate license holder has a violation within 12 months of turning 18 in Arkansas?",
+    "answers": [
+      "The intermediate restrictions continue until 12 months violation-free",
+      "They receive a citation but still get their full license",
+      "They must restart the GDL program",
+      "They lose their license for 6 months"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arkansas extends intermediate restrictions until the driver has 12 consecutive months without serious violations or accidents."
+  },
+  {
+    "id": "AR-010",
+    "state": "AR",
+    "category": "gdlLicensing",
+    "question": "Can an intermediate license holder drive alone to work during restricted hours in Arkansas?",
+    "answers": [
+      "No, never during restricted hours",
+      "Yes, work is an approved exception",
+      "Only with written employer verification",
+      "Only on weekends"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arkansas allows intermediate license holders to drive during restricted hours for work, school, or emergency purposes."
+  },
+  {
+    "id": "AR-011",
+    "state": "AR",
+    "category": "gdlLicensing",
+    "question": "What must parents or guardians agree to when a minor applies for a license in Arkansas?",
+    "answers": [
+      "Pay all traffic fines",
+      "Attend driving classes with the teen",
+      "Assume financial responsibility",
+      "Monitor all driving trips"
+    ],
+    "correctIndex": 2,
+    "explanation": "Arkansas requires parents or guardians to agree to financial responsibility for the teen's driving when signing the license application."
+  },
+  {
+    "id": "AR-012",
+    "state": "AR",
+    "category": "gdlLicensing",
+    "question": "Can an intermediate license holder transport siblings who are minors in Arkansas?",
+    "answers": [
+      "No, siblings count toward the passenger limit",
+      "Yes, only one sibling",
+      "No passengers allowed at all",
+      "Yes, siblings are exempt from the passenger restriction"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arkansas passenger restrictions apply only to unrelated minors, so intermediate license holders can transport their own siblings."
+  },
+  {
+    "id": "AR-013",
+    "state": "AR",
+    "category": "cellPhone",
+    "question": "What is Arkansas's law prohibiting texting while driving commonly called?",
+    "answers": [
+      "Paul's Law",
+      "Safe Driving Act",
+      "Distracted Driving Law",
+      "Wireless Device Act"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arkansas's texting ban is known as Paul's Law, named for a father killed in a crash caused by a texting driver."
+  },
+  {
+    "id": "AR-014",
+    "state": "AR",
+    "category": "cellPhone",
+    "question": "Can drivers under 18 use hands-free devices while driving in Arkansas?",
+    "answers": [
+      "Yes, but only for navigation",
+      "No, all phone use is prohibited",
+      "Yes, hands-free is allowed",
+      "Only with parental permission"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arkansas completely prohibits drivers under 18 from using cell phones while driving, regardless of whether the device is hands-free."
+  },
+  {
+    "id": "AR-015",
+    "state": "AR",
+    "category": "cellPhone",
+    "question": "How can drivers aged 21 and older legally talk on a phone in a school zone in Arkansas?",
+    "answers": [
+      "They cannot use phones in school zones",
+      "Only during non-school hours",
+      "By using hands-free technology",
+      "With a passenger in the vehicle"
+    ],
+    "correctIndex": 2,
+    "explanation": "Arkansas drivers 21 and older must use hands-free technology when talking on phones in school zones or work zones."
+  },
+  {
+    "id": "AR-016",
+    "state": "AR",
+    "category": "cellPhone",
+    "question": "What type of offense is texting while driving under Paul's Law in Arkansas?",
+    "answers": [
+      "Secondary offense requiring another violation",
+      "Warning-only offense",
+      "Civil infraction only",
+      "Primary offense allowing traffic stops"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arkansas's Paul's Law is a primary offense, meaning officers can stop drivers solely for texting while driving."
+  },
+  {
+    "id": "AR-017",
+    "state": "AR",
+    "category": "cellPhone",
+    "question": "What phone activity is permitted for all Arkansas drivers while operating a vehicle?",
+    "answers": [
+      "Using GPS navigation apps",
+      "Reading text messages",
+      "Posting to social media",
+      "Watching videos"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arkansas law permits using GPS navigation apps like Google Maps or Apple Maps while driving for all ages."
+  },
+  {
+    "id": "AR-018",
+    "state": "AR",
+    "category": "cellPhone",
+    "question": "When did Arkansas's ban on handheld phones in work zones take effect?",
+    "answers": [
+      "January 1, 2025",
+      "August 5, 2025",
+      "July 1, 2024",
+      "September 1, 2025"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arkansas's prohibition on handheld electronic devices in highway work zones became effective August 5, 2025."
+  },
+  {
+    "id": "AR-019",
+    "state": "AR",
+    "category": "duiStateLaws",
+    "question": "What is the BAC limit for drivers under 21 in Arkansas?",
+    "answers": [
+      "0.00%",
+      "0.01%",
+      "0.02%",
+      "0.04%"
+    ],
+    "correctIndex": 2,
+    "explanation": "Arkansas has a 0.02% BAC limit for drivers under 21, reflecting a near-zero tolerance policy for underage drinking and driving."
+  },
+  {
+    "id": "AR-020",
+    "state": "AR",
+    "category": "duiStateLaws",
+    "question": "What is the BAC limit for commercial drivers in Arkansas?",
+    "answers": [
+      "0.08%",
+      "0.06%",
+      "0.02%",
+      "0.04%"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arkansas sets a 0.04% BAC limit for commercial drivers, which is stricter than the standard 0.08% limit for non-commercial drivers."
+  },
+  {
+    "id": "AR-021",
+    "state": "AR",
+    "category": "duiStateLaws",
+    "question": "How long do DWI convictions remain relevant for counting prior offenses in Arkansas?",
+    "answers": [
+      "10 years",
+      "7 years",
+      "5 years",
+      "Lifetime"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arkansas counts prior DWI convictions for 10 years when determining penalties for subsequent offenses."
+  },
+  {
+    "id": "AR-022",
+    "state": "AR",
+    "category": "duiStateLaws",
+    "question": "When does a DWI become a felony in Arkansas?",
+    "answers": [
+      "Second offense",
+      "Fourth offense or when deaths occur",
+      "Third offense with high BAC",
+      "Any offense with property damage"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arkansas classifies a DWI as a felony on the fourth offense within 10 years or when the offense involves deaths."
+  },
+  {
+    "id": "AR-023",
+    "state": "AR",
+    "category": "duiStateLaws",
+    "question": "How long is the license suspension for a first refusal to submit to a chemical test in Arkansas?",
+    "answers": [
+      "90 days",
+      "120 days",
+      "180 days",
+      "1 year"
+    ],
+    "correctIndex": 2,
+    "explanation": "Arkansas suspends licenses for 180 days on a first refusal to take a chemical test, with longer suspensions for subsequent refusals."
+  },
+  {
+    "id": "AR-024",
+    "state": "AR",
+    "category": "duiStateLaws",
+    "question": "What device is required for most Arkansas DWI convictions to regain driving privileges?",
+    "answers": [
+      "Ankle monitor",
+      "Dashboard camera",
+      "GPS tracker",
+      "Ignition interlock device"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arkansas requires ignition interlock installation for most DWI convictions, especially for restricted licenses and repeat offenses."
+  },
+  {
+    "id": "AR-025",
+    "state": "AR",
+    "category": "duiStateLaws",
+    "question": "How does Arkansas treat DWI convictions on driving records?",
+    "answers": [
+      "They remain permanently",
+      "Removed after 10 years",
+      "Expunged after 15 years",
+      "Hidden after 7 years"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arkansas DWI convictions remain on driving records permanently, though they only count toward enhanced penalties for 10 years."
+  },
+  {
+    "id": "AR-026",
+    "state": "AR",
+    "category": "duiStateLaws",
+    "question": "What is enhanced for drivers with a BAC of 0.15% or higher in Arkansas?",
+    "answers": [
+      "License suspension only",
+      "Penalties including jail time and fines",
+      "Community service hours",
+      "Probation length"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arkansas imposes enhanced penalties, including longer jail time and higher fines, for drivers with BAC of 0.15% or above."
+  },
+  {
+    "id": "AR-027",
+    "state": "AR",
+    "category": "insurance",
+    "question": "What does the first number in Arkansas's 25/50/25 insurance requirement represent?",
+    "answers": [
+      "Property damage coverage",
+      "Total accident coverage",
+      "Bodily injury per person",
+      "Uninsured motorist coverage"
+    ],
+    "correctIndex": 2,
+    "explanation": "The first 25 represents bodily injury coverage per person, covering medical expenses and lost income for one individual."
+  },
+  {
+    "id": "AR-028",
+    "state": "AR",
+    "category": "insurance",
+    "question": "What type of coverage must Arkansas drivers carry in addition to liability insurance?",
+    "answers": [
+      "Collision coverage",
+      "Comprehensive coverage",
+      "Rental reimbursement",
+      "Uninsured motorist coverage"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arkansas requires uninsured/underinsured motorist coverage in addition to standard liability coverage to protect drivers from uninsured motorists."
+  },
+  {
+    "id": "AR-029",
+    "state": "AR",
+    "category": "insurance",
+    "question": "What form of proof of insurance is legally acceptable in Arkansas?",
+    "answers": [
+      "Both physical and electronic proof",
+      "Only paper insurance cards",
+      "Only digital apps",
+      "Verbal confirmation"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arkansas accepts both physical insurance cards and electronic proof displayed on mobile devices when requested by law enforcement."
+  },
+  {
+    "id": "AR-030",
+    "state": "AR",
+    "category": "insurance",
+    "question": "What has Arkansas implemented in 2025 to help verify insurance coverage?",
+    "answers": [
+      "Monthly mailings to drivers",
+      "Digital verification systems for real-time checks",
+      "Annual in-person verification",
+      "Quarterly reporting requirements"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arkansas has strengthened digital verification systems in 2025, allowing law enforcement to check insurance status in real time."
+  },
+  {
+    "id": "AR-031",
+    "state": "AR",
+    "category": "stateUnique",
+    "question": "When must headlights be turned on according to Arkansas law?",
+    "answers": [
+      "At dusk and dawn",
+      "Only at night",
+      "When windshield wipers are in use",
+      "During fog only"
+    ],
+    "correctIndex": 2,
+    "explanation": "Arkansas requires headlights whenever windshield wipers are used for clearing rain, snow, or other precipitation from the windshield."
+  },
+  {
+    "id": "AR-032",
+    "state": "AR",
+    "category": "stateUnique",
+    "question": "What happens to traffic fines in Arkansas work zones?",
+    "answers": [
+      "They remain the same",
+      "They increase by 50%",
+      "They are waived if corrected",
+      "They are doubled"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arkansas doubles all moving traffic violation fines in both static and mobile work zones to enhance worker safety."
+  },
+  {
+    "id": "AR-033",
+    "state": "AR",
+    "category": "stateUnique",
+    "question": "What color lights are authorized on Arkansas roadway construction vehicles as of 2025?",
+    "answers": [
+      "Green lights",
+      "Blue lights",
+      "Purple lights",
+      "White lights"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arkansas authorized green flashing lights on construction vehicles in 2025 to improve visibility in various weather conditions."
+  },
+  {
+    "id": "AR-034",
+    "state": "AR",
+    "category": "stateUnique",
+    "question": "What must now be included in Arkansas's written driver's license test as of 2025?",
+    "answers": [
+      "Motorcycle safety",
+      "Safe operation in highway work zones",
+      "Electric vehicle operation",
+      "Advanced parking techniques"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arkansas amended its driver's license test in 2025 to include questions about driving safely through highway work zones."
+  },
+  {
+    "id": "AR-035",
+    "state": "AR",
+    "category": "stateUnique",
+    "question": "What type of work zones now have doubled fines in Arkansas as of 2025?",
+    "answers": [
+      "Static zones only",
+      "Highway zones only",
+      "Both mobile and static work zones",
+      "School zones only"
+    ],
+    "correctIndex": 2,
+    "explanation": "Arkansas extended doubled fine penalties to mobile work zones in 2025, previously only static work zones had this requirement."
+  },
+  {
+    "id": "AR-036",
+    "state": "AR",
+    "category": "stateUnique",
+    "question": "When are hazard lights permitted while driving in Arkansas?",
+    "answers": [
+      "During heavy rain",
+      "In slow traffic",
+      "When moving below speed limit",
+      "Only to indicate a traffic hazard"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arkansas permits hazard light use while driving only to indicate a traffic hazard, not for general use in rain or slow traffic."
+  },
+  {
+    "id": "AR-037",
+    "state": "AR",
+    "category": "stateUnique",
+    "question": "What is the classification of Arkansas's headlight-wiper law?",
+    "answers": [
+      "Secondary law requiring another violation first",
+      "Primary offense",
+      "Advisory only",
+      "Felony violation"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arkansas's headlight-wiper requirement is a secondary law, meaning officers must have another reason to stop a vehicle before citing this violation."
+  },
+  {
+    "id": "AR-038",
+    "state": "AR",
+    "category": "stateUnique",
+    "question": "What signals that drivers are entering a mobile work zone in Arkansas?",
+    "answers": [
+      "Road cones only",
+      "Signs on the back of work trucks with lights",
+      "Overhead electronic signs",
+      "Flag persons"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arkansas displays mobile work zone/fines double signs on the back of work trucks with flashing lights to alert drivers."
+  },
+  {
+    "id": "AR-039",
+    "state": "AR",
+    "category": "stateUnique",
+    "question": "How did Arkansas test green lights on work vehicles before authorizing them statewide?",
+    "answers": [
+      "Computer simulations",
+      "Nighttime trials only",
+      "Through a pilot program",
+      "Survey of other states"
+    ],
+    "correctIndex": 2,
+    "explanation": "Arkansas conducted a successful pilot program testing green lights on work vehicles before authorizing their statewide use in 2025."
+  },
+  {
+    "id": "AR-040",
+    "state": "AR",
+    "category": "stateUnique",
+    "question": "Why did Arkansas add green lights to construction vehicles?",
+    "answers": [
+      "To match federal standards",
+      "Aesthetic purposes",
+      "Lower energy consumption",
+      "Better visibility in various weather conditions"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arkansas authorized green lights because they improve visibility on bright sunny days, in fog, and during inclement weather."
+  }
+]

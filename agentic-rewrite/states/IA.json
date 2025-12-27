@@ -1,0 +1,562 @@
+[
+  {
+    "id": "IA-001",
+    "category": "gdlLicensing",
+    "state": "IA",
+    "question": "What is the minimum age to apply for an instruction permit in Iowa?",
+    "answers": [
+      "14 years old",
+      "15 years old",
+      "16 years old",
+      "14½ years old"
+    ],
+    "correctIndex": 0,
+    "explanation": "Iowa allows teens to apply for an instruction permit at age 14, making it one of the youngest permit ages in the United States."
+  },
+  {
+    "id": "IA-002",
+    "category": "gdlLicensing",
+    "state": "IA",
+    "question": "What is the minimum age to obtain an intermediate license in Iowa?",
+    "answers": [
+      "15 years old",
+      "16 years old",
+      "17 years old",
+      "15½ years old"
+    ],
+    "correctIndex": 1,
+    "explanation": "Iowa requires applicants to be at least 16 years old before they can obtain an intermediate license."
+  },
+  {
+    "id": "IA-003",
+    "category": "gdlLicensing",
+    "state": "IA",
+    "question": "How many supervised driving hours are required while holding an instruction permit in Iowa?",
+    "answers": [
+      "10 hours total",
+      "30 hours total",
+      "20 hours with 2 at night",
+      "50 hours total"
+    ],
+    "correctIndex": 2,
+    "explanation": "Iowa requires 20 hours of supervised driving, with at least 2 of those hours occurring at night, documented in a driving log."
+  },
+  {
+    "id": "IA-004",
+    "category": "gdlLicensing",
+    "state": "IA",
+    "question": "How long must you hold an instruction permit before applying for an intermediate license in Iowa?",
+    "answers": [
+      "6 months",
+      "9 months",
+      "18 months",
+      "12 months"
+    ],
+    "correctIndex": 3,
+    "explanation": "Iowa requires drivers to hold a valid instruction permit for a total of 12 months before they can apply for an intermediate license."
+  },
+  {
+    "id": "IA-005",
+    "category": "gdlLicensing",
+    "state": "IA",
+    "question": "How long must your driving record be clean before applying for an intermediate license in Iowa?",
+    "answers": [
+      "6 consecutive months",
+      "3 consecutive months",
+      "12 consecutive months",
+      "9 consecutive months"
+    ],
+    "correctIndex": 0,
+    "explanation": "Iowa requires maintaining a clean driving record for at least 6 consecutive months immediately before applying for an intermediate license."
+  },
+  {
+    "id": "IA-006",
+    "category": "gdlLicensing",
+    "state": "IA",
+    "question": "During what hours cannot intermediate license holders drive without adult supervision in Iowa?",
+    "answers": [
+      "11 PM to 5 AM",
+      "12:30 AM to 5 AM",
+      "Midnight to 6 AM",
+      "1 AM to 5 AM"
+    ],
+    "correctIndex": 1,
+    "explanation": "Iowa intermediate license holders cannot drive without adult supervision between 12:30 AM and 5 AM unless they have a waiver for school or work."
+  },
+  {
+    "id": "IA-007",
+    "category": "gdlLicensing",
+    "state": "IA",
+    "question": "For how long does the passenger restriction apply to Iowa intermediate license holders who accept it?",
+    "answers": [
+      "3 months",
+      "12 months",
+      "First 6 months",
+      "9 months"
+    ],
+    "correctIndex": 2,
+    "explanation": "The passenger restriction, if accepted, limits carrying more than one unrelated minor passenger for the first 6 months of the intermediate license."
+  },
+  {
+    "id": "IA-008",
+    "category": "gdlLicensing",
+    "state": "IA",
+    "question": "What is the minimum age to apply for a special minor's restricted license in Iowa?",
+    "answers": [
+      "14 years old",
+      "15 years old",
+      "16 years old",
+      "14½ years old"
+    ],
+    "correctIndex": 3,
+    "explanation": "Iowa allows teens to apply for a special minor's restricted license for school or farm work at age 14½ with proper documentation."
+  },
+  {
+    "id": "IA-009",
+    "category": "gdlLicensing",
+    "state": "IA",
+    "question": "Can Iowa intermediate license holders use electronic devices while driving?",
+    "answers": [
+      "No, any electronic device use is prohibited",
+      "Yes, if hands-free",
+      "Yes, for navigation only",
+      "Yes, for emergency calls only"
+    ],
+    "correctIndex": 0,
+    "explanation": "Iowa intermediate license holders cannot use cell phones, smartphones, tablets, or other electronic communication or entertainment devices while driving."
+  },
+  {
+    "id": "IA-010",
+    "category": "gdlLicensing",
+    "state": "IA",
+    "question": "How long must you hold an intermediate license before advancing to a full license in Iowa?",
+    "answers": [
+      "6 consecutive months",
+      "12 consecutive months",
+      "18 consecutive months",
+      "9 consecutive months"
+    ],
+    "correctIndex": 1,
+    "explanation": "Iowa requires maintaining an intermediate license for 12 consecutive months with a clean record before advancing to a full license."
+  },
+  {
+    "id": "IA-011",
+    "category": "gdlLicensing",
+    "state": "IA",
+    "question": "What happens to your advancement timeline if you violate GDL restrictions in Iowa?",
+    "answers": [
+      "Warning only for first offense",
+      "Small fine only",
+      "12-month clean record period restarts",
+      "3-month delay only"
+    ],
+    "correctIndex": 2,
+    "explanation": "Any conviction, violation, or crash causes the 12-month clean driving record period required to advance to a full license to start over."
+  },
+  {
+    "id": "IA-012",
+    "category": "gdlLicensing",
+    "state": "IA",
+    "question": "What is the maximum driving distance allowed for farm work with a special minor's restricted license in Iowa?",
+    "answers": [
+      "50 miles",
+      "10 miles",
+      "15 miles",
+      "25 miles"
+    ],
+    "correctIndex": 3,
+    "explanation": "Iowa's special minor's restricted license allows driving for farm work using the most direct route when the distance is 25 miles or less."
+  },
+  {
+    "id": "IA-013",
+    "category": "cellPhone",
+    "state": "IA",
+    "question": "When did Iowa's hands-free cell phone law take effect?",
+    "answers": [
+      "July 1, 2025",
+      "January 1, 2025",
+      "April 2, 2025",
+      "September 1, 2025"
+    ],
+    "correctIndex": 0,
+    "explanation": "Iowa's hands-free law took effect on July 1, 2025, prohibiting drivers from holding phones while driving."
+  },
+  {
+    "id": "IA-014",
+    "category": "cellPhone",
+    "state": "IA",
+    "question": "What is prohibited under Iowa's hands-free law?",
+    "answers": [
+      "Talking on speakerphone",
+      "Holding your phone while driving",
+      "Using Bluetooth devices",
+      "Making emergency calls"
+    ],
+    "correctIndex": 1,
+    "explanation": "Iowa's hands-free law prohibits holding a phone to type, scroll, dial, text, or use GPS while driving, at red lights, or at stop signs."
+  },
+  {
+    "id": "IA-015",
+    "category": "cellPhone",
+    "state": "IA",
+    "question": "Who is exempt from Iowa's hands-free law while performing professional duties?",
+    "answers": [
+      "Taxi drivers",
+      "Delivery drivers",
+      "Police officers and emergency responders",
+      "Commercial truck drivers"
+    ],
+    "correctIndex": 2,
+    "explanation": "Police officers, emergency responders, and those operating agricultural equipment like tractors do not need to comply while performing professional duties."
+  },
+  {
+    "id": "IA-016",
+    "category": "cellPhone",
+    "state": "IA",
+    "question": "How can Iowa drivers legally use their phone for navigation while driving?",
+    "answers": [
+      "Holding it in one hand",
+      "Placing it on the dashboard",
+      "Resting it on their lap",
+      "Mounting it and using voice commands"
+    ],
+    "correctIndex": 3,
+    "explanation": "Iowa drivers must mount their phone and use voice-activated or hands-free mode to legally use GPS navigation while driving."
+  },
+  {
+    "id": "IA-017",
+    "category": "cellPhone",
+    "state": "IA",
+    "question": "When did law enforcement begin issuing citations for Iowa's hands-free law violations?",
+    "answers": [
+      "January 1, 2026",
+      "July 1, 2025",
+      "December 31, 2025",
+      "October 1, 2025"
+    ],
+    "correctIndex": 0,
+    "explanation": "Although the law took effect July 1, 2025, there was a warning period through December 31, 2025, with citations beginning January 1, 2026."
+  },
+  {
+    "id": "IA-018",
+    "category": "cellPhone",
+    "state": "IA",
+    "question": "Can you hold your phone while stopped at a red light in Iowa?",
+    "answers": [
+      "Yes, when fully stopped",
+      "No, the hands-free law still applies",
+      "Yes, if in park",
+      "Yes, for less than 30 seconds"
+    ],
+    "correctIndex": 1,
+    "explanation": "Iowa's hands-free law prohibits holding or using a phone while driving, at red lights, or at stop signs, even when the vehicle is stopped."
+  },
+  {
+    "id": "IA-019",
+    "category": "duiStateLaws",
+    "state": "IA",
+    "question": "What does OWI stand for in Iowa?",
+    "answers": [
+      "Operating While Intoxicated",
+      "Offense While Impaired",
+      "Operating While Intoxicated",
+      "Offense With Injury"
+    ],
+    "correctIndex": 2,
+    "explanation": "Iowa uses the term OWI (Operating While Intoxicated) rather than DUI or DWI to describe drunk or impaired driving offenses."
+  },
+  {
+    "id": "IA-020",
+    "category": "duiStateLaws",
+    "state": "IA",
+    "question": "What is the legal BAC limit for adult drivers in Iowa?",
+    "answers": [
+      "0.10%",
+      "0.05%",
+      "0.06%",
+      "0.08%"
+    ],
+    "correctIndex": 3,
+    "explanation": "Iowa law sets the legal blood alcohol concentration at 0.08% for regular motor vehicle drivers age 21 and older."
+  },
+  {
+    "id": "IA-021",
+    "category": "duiStateLaws",
+    "state": "IA",
+    "question": "What is the BAC limit for drivers under age 21 in Iowa?",
+    "answers": [
+      "0.02%",
+      "0.01%",
+      "0.00%",
+      "0.04%"
+    ],
+    "correctIndex": 0,
+    "explanation": "Iowa enforces a zero-tolerance law with a 0.02% BAC limit for drivers under 21, reflecting minimal alcohol consumption is prohibited."
+  },
+  {
+    "id": "IA-022",
+    "category": "duiStateLaws",
+    "state": "IA",
+    "question": "What does Iowa's implied consent law mean?",
+    "answers": [
+      "You can refuse any test",
+      "By driving, you consent to chemical testing if arrested",
+      "You must verbally agree to testing",
+      "Testing is optional"
+    ],
+    "correctIndex": 1,
+    "explanation": "Iowa's implied consent law means that operating a motor vehicle constitutes automatic consent to chemical testing when arrested for OWI."
+  },
+  {
+    "id": "IA-023",
+    "category": "duiStateLaws",
+    "state": "IA",
+    "question": "What is the license revocation period for a first test refusal in Iowa?",
+    "answers": [
+      "6 months",
+      "2 years",
+      "1 year",
+      "90 days"
+    ],
+    "correctIndex": 2,
+    "explanation": "Refusing a chemical test for a first offense in Iowa results in a one-year license revocation, twice as long as for test failures."
+  },
+  {
+    "id": "IA-024",
+    "category": "duiStateLaws",
+    "state": "IA",
+    "question": "What is the BAC limit for commercial drivers in Iowa?",
+    "answers": [
+      "0.08%",
+      "0.02%",
+      "0.06%",
+      "0.04%"
+    ],
+    "correctIndex": 3,
+    "explanation": "Iowa sets a lower BAC limit of 0.04% for commercial drivers operating commercial vehicles to ensure higher safety standards."
+  },
+  {
+    "id": "IA-025",
+    "category": "duiStateLaws",
+    "state": "IA",
+    "question": "What is considered an aggravating factor in Iowa OWI cases?",
+    "answers": [
+      "Having minors in the vehicle",
+      "Driving during daytime",
+      "First-time offense",
+      "Driving alone"
+    ],
+    "correctIndex": 0,
+    "explanation": "Iowa considers factors like having minors in the vehicle or extremely high BAC levels as aggravating circumstances that enhance OWI penalties."
+  },
+  {
+    "id": "IA-026",
+    "category": "duiStateLaws",
+    "state": "IA",
+    "question": "What happens to deferred judgment eligibility if you refuse chemical testing in Iowa?",
+    "answers": [
+      "No effect on eligibility",
+      "You become ineligible for deferred judgment",
+      "Eligibility is delayed 6 months",
+      "You must pay additional fees"
+    ],
+    "correctIndex": 1,
+    "explanation": "Refusing an OWI chemical test in Iowa makes you ineligible for a deferred judgment, meaning you cannot avoid conviction through probation."
+  },
+  {
+    "id": "IA-027",
+    "category": "insurance",
+    "state": "IA",
+    "question": "Why is liability insurance required in Iowa?",
+    "answers": [
+      "To fund state programs",
+      "To protect insurance companies",
+      "To ensure you can pay for damages you cause",
+      "To reduce vehicle registration fees"
+    ],
+    "correctIndex": 2,
+    "explanation": "Iowa requires liability insurance to ensure drivers can pay for medical expenses, property damage, and other losses they cause in accidents."
+  },
+  {
+    "id": "IA-028",
+    "category": "insurance",
+    "state": "IA",
+    "question": "What does liability insurance primarily cover in Iowa?",
+    "answers": [
+      "Your own vehicle repairs",
+      "Your own medical expenses",
+      "Rental car costs",
+      "Injuries and property damage you cause to others"
+    ],
+    "correctIndex": 3,
+    "explanation": "Liability insurance covers bodily injury and property damage that you cause to other people when you are at fault in an accident."
+  },
+  {
+    "id": "IA-029",
+    "category": "insurance",
+    "state": "IA",
+    "question": "What are potential consequences of driving without insurance in Iowa?",
+    "answers": [
+      "License suspension and fines",
+      "Warning letter only",
+      "Increased registration fees only",
+      "Traffic school requirement only"
+    ],
+    "correctIndex": 0,
+    "explanation": "Driving without insurance in Iowa can result in license suspension, fines, vehicle impoundment, and potential jail time for multiple violations."
+  },
+  {
+    "id": "IA-030",
+    "category": "insurance",
+    "state": "IA",
+    "question": "When must you show proof of insurance in Iowa?",
+    "answers": [
+      "At annual vehicle inspection",
+      "Before driving on public roads",
+      "Only when renewing registration",
+      "Only if you're in an accident"
+    ],
+    "correctIndex": 1,
+    "explanation": "While Iowa doesn't require proof when registering your vehicle, you must have liability insurance before driving on the road and show proof when requested."
+  },
+  {
+    "id": "IA-031",
+    "category": "stateUnique",
+    "state": "IA",
+    "question": "When are you exempt from requiring an Iowa driver's license for farm equipment?",
+    "answers": [
+      "Driving within 50 miles of home",
+      "Driving during daylight only",
+      "Driving between home farm and farmland not more than 2 miles away",
+      "Driving on private property only"
+    ],
+    "correctIndex": 2,
+    "explanation": "You don't need an Iowa driver's license when driving farm equipment between your home farm and nearby farmland within 2 miles."
+  },
+  {
+    "id": "IA-032",
+    "category": "stateUnique",
+    "state": "IA",
+    "question": "What is required to operate an ATV for farm purposes beyond 2 miles from the farm in Iowa?",
+    "answers": [
+      "Special farm permit",
+      "DNR registration only",
+      "CDL license",
+      "Class C license"
+    ],
+    "correctIndex": 3,
+    "explanation": "Operating an ATV beyond 2 miles from a farm for agricultural work requires a Class C license, though within 2 miles no license is needed."
+  },
+  {
+    "id": "IA-033",
+    "category": "stateUnique",
+    "state": "IA",
+    "question": "What is the maximum speed for self-propelled implements of husbandry in Iowa?",
+    "answers": [
+      "35 mph or less",
+      "25 mph or less",
+      "40 mph or less",
+      "30 mph or less"
+    ],
+    "correctIndex": 0,
+    "explanation": "To qualify as an implement of husbandry in Iowa, self-propelled agricultural vehicles must be designed to operate at speeds of 35 mph or less."
+  },
+  {
+    "id": "IA-034",
+    "category": "stateUnique",
+    "state": "IA",
+    "question": "What purposes does a special minor's restricted license allow beyond school in Iowa?",
+    "answers": [
+      "Social events only",
+      "Farm work and employment",
+      "Shopping trips",
+      "Recreational activities"
+    ],
+    "correctIndex": 1,
+    "explanation": "Iowa's special minor's restricted license allows driving for school, farm work, farm-related work, employment, and extracurricular activities within 25 miles."
+  },
+  {
+    "id": "IA-035",
+    "category": "stateUnique",
+    "state": "IA",
+    "question": "What can parents complete to waive the nighttime driving restriction for Iowa intermediate license holders?",
+    "answers": [
+      "Nighttime driving permit",
+      "Parental consent affidavit",
+      "Waiver of Intermediate Driver's License Hour Restriction form",
+      "Extended privilege application"
+    ],
+    "correctIndex": 2,
+    "explanation": "Parents can complete form 431170, the Waiver of Intermediate Driver's License Hour Restriction, to allow driving after hours for school or work."
+  },
+  {
+    "id": "IA-036",
+    "category": "stateUnique",
+    "state": "IA",
+    "question": "Who qualifies as a relative under Iowa's intermediate license passenger restriction?",
+    "answers": [
+      "Cousins and aunts",
+      "Parents only",
+      "Anyone in the same grade",
+      "Siblings, step-siblings, or minors in household"
+    ],
+    "correctIndex": 3,
+    "explanation": "Iowa defines relatives as brothers, sisters, step-brothers, step-sisters, or other minors living in the same household for passenger restriction purposes."
+  },
+  {
+    "id": "IA-037",
+    "category": "stateUnique",
+    "state": "IA",
+    "question": "Are farmers exempt from CDL requirements when operating within a certain radius in Iowa?",
+    "answers": [
+      "Yes, within 150 air miles of home farm",
+      "No exemptions exist",
+      "Yes, within 50 miles only",
+      "Yes, within the county only"
+    ],
+    "correctIndex": 0,
+    "explanation": "Federal law exempts farmers and farm helpers from CDL requirements while operating within 150 air miles of the home farm for agricultural purposes."
+  },
+  {
+    "id": "IA-038",
+    "category": "stateUnique",
+    "state": "IA",
+    "question": "What is the suspension period for a traffic violation with a special minor's restricted license in Iowa?",
+    "answers": [
+      "1 month",
+      "3 months",
+      "6 months",
+      "No suspension"
+    ],
+    "correctIndex": 1,
+    "explanation": "Iowa imposes a 3-month suspension for any traffic violation, restriction violation, or accident caused while holding a special minor's restricted license."
+  },
+  {
+    "id": "IA-039",
+    "category": "stateUnique",
+    "state": "IA",
+    "question": "What qualifies as adult supervision for Iowa instruction permit holders?",
+    "answers": [
+      "Any adult over 18",
+      "Any licensed driver",
+      "Licensed driver at least 21 from immediate family or 25 with permission",
+      "Parent or guardian only"
+    ],
+    "correctIndex": 2,
+    "explanation": "Adult supervision means a parent, guardian, custodian, immediate family member at least 21, or a person at least 25 with written parental permission."
+  },
+  {
+    "id": "IA-040",
+    "category": "stateUnique",
+    "state": "IA",
+    "question": "How many additional supervised driving hours are required before advancing from intermediate to full license in Iowa?",
+    "answers": [
+      "5 hours",
+      "20 hours",
+      "15 hours",
+      "10 hours"
+    ],
+    "correctIndex": 3,
+    "explanation": "Iowa requires completing an additional 10 hours of supervised driving while holding the intermediate license before advancing to a full unrestricted license."
+  }
+]

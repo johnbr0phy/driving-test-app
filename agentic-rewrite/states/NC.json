@@ -1,0 +1,522 @@
+[
+  {
+    "id": "NC-001",
+    "state": "NC",
+    "category": "gdlLicensing",
+    "question": "At what minimum age can you apply for a Level 1 learner's permit in North Carolina?",
+    "answers": [
+      "15 years old",
+      "16 years old",
+      "14 years old",
+      "17 years old"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "NC-002",
+    "state": "NC",
+    "category": "gdlLicensing",
+    "question": "How long must you hold a Level 1 permit before applying for a Level 2 license in North Carolina?",
+    "answers": [
+      "6 months",
+      "At least 9 months",
+      "12 months",
+      "3 months"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "NC-003",
+    "state": "NC",
+    "category": "gdlLicensing",
+    "question": "How many supervised driving hours are required to progress from Level 1 to Level 2 in North Carolina?",
+    "answers": [
+      "30 hours total",
+      "50 hours total",
+      "60 hours with 10 at night",
+      "100 hours total"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "NC-004",
+    "state": "NC",
+    "category": "gdlLicensing",
+    "question": "During what hours can Level 1 permit holders drive for the first six months in North Carolina?",
+    "answers": [
+      "Anytime with supervisor",
+      "6 AM to midnight only",
+      "Daytime hours only",
+      "5 AM to 9 PM"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "NC-005",
+    "state": "NC",
+    "category": "gdlLicensing",
+    "question": "At what minimum age can you obtain a Level 2 limited provisional license in North Carolina?",
+    "answers": [
+      "16 years old",
+      "15 years old",
+      "17 years old",
+      "18 years old"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "NC-006",
+    "state": "NC",
+    "category": "gdlLicensing",
+    "question": "How many non-family passengers under 21 can a Level 2 driver transport in North Carolina?",
+    "answers": [
+      "Two passengers maximum",
+      "One non-family passenger",
+      "Three passengers maximum",
+      "No passengers allowed"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "NC-007",
+    "state": "NC",
+    "category": "gdlLicensing",
+    "question": "Where must a supervisor sit when accompanying a Level 1 permit holder in North Carolina?",
+    "answers": [
+      "Back seat is acceptable",
+      "Either front or back seat",
+      "In the front seat",
+      "No specific requirement"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "NC-008",
+    "state": "NC",
+    "category": "gdlLicensing",
+    "question": "What documentation must drivers under 19 provide when applying for a permit in North Carolina?",
+    "answers": [
+      "Only birth certificate",
+      "Only parental consent",
+      "Employment verification",
+      "Proof of school enrollment or graduation"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "NC-009",
+    "state": "NC",
+    "category": "gdlLicensing",
+    "question": "At what age can you obtain a full unrestricted license in North Carolina?",
+    "answers": [
+      "18 years old",
+      "17 years old",
+      "19 years old",
+      "21 years old"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "NC-010",
+    "state": "NC",
+    "category": "gdlLicensing",
+    "question": "How long must you hold a Level 2 license before advancing to Level 3 in North Carolina?",
+    "answers": [
+      "6 months",
+      "At least 9 months",
+      "12 months",
+      "3 months"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "NC-011",
+    "state": "NC",
+    "category": "gdlLicensing",
+    "question": "How many practice hours are required to advance from Level 2 to Level 3 in North Carolina?",
+    "answers": [
+      "30 hours total",
+      "50 hours total",
+      "12 hours with 6 at night",
+      "60 hours total"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "NC-012",
+    "state": "NC",
+    "category": "gdlLicensing",
+    "question": "When can Level 2 drivers operate a vehicle without supervision after 9 PM in North Carolina?",
+    "answers": [
+      "Never until Level 3",
+      "After 6 months violation-free",
+      "Only with parent permission",
+      "Driving to or from work or volunteer activities"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "NC-013",
+    "state": "NC",
+    "category": "cellPhone",
+    "question": "What phone activity is prohibited for all drivers while operating a vehicle in North Carolina?",
+    "answers": [
+      "Manually texting or reading messages",
+      "All phone use",
+      "Only video calls",
+      "Using Bluetooth devices"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "NC-014",
+    "state": "NC",
+    "category": "cellPhone",
+    "question": "Can adult drivers legally make handheld phone calls while driving in North Carolina?",
+    "answers": [
+      "No, all handheld use is banned",
+      "Yes, talking on handheld phones is permitted",
+      "Only with one earbud",
+      "Only on highways"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "NC-015",
+    "state": "NC",
+    "category": "cellPhone",
+    "question": "What phone use is permitted for adult drivers in North Carolina?",
+    "answers": [
+      "Handheld texting",
+      "All activities",
+      "Voice-operated texting and GPS",
+      "No phone use allowed"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "NC-016",
+    "state": "NC",
+    "category": "cellPhone",
+    "question": "What are the cell phone restrictions for drivers under 18 in North Carolina?",
+    "answers": [
+      "Only texting is banned",
+      "Only handheld calls banned",
+      "Hands-free only",
+      "No phone use except emergencies"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "NC-017",
+    "state": "NC",
+    "category": "cellPhone",
+    "question": "Who can drivers under 18 contact by phone during emergencies in North Carolina?",
+    "answers": [
+      "Parents or legal guardians",
+      "Anyone for emergencies",
+      "Only 911",
+      "No calls permitted"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "NC-018",
+    "state": "NC",
+    "category": "cellPhone",
+    "question": "What devices must commercial drivers use for phone conversations in North Carolina?",
+    "answers": [
+      "Any device",
+      "Hands-free devices only",
+      "No devices allowed",
+      "Handheld phones permitted"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "NC-019",
+    "state": "NC",
+    "category": "duiStateLaws",
+    "question": "What is the legal BAC limit for drivers age 21 and over in North Carolina?",
+    "answers": [
+      "0.05 percent",
+      "0.10 percent",
+      "0.08 percent",
+      "Zero tolerance"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "NC-020",
+    "state": "NC",
+    "category": "duiStateLaws",
+    "question": "What is the BAC limit for commercial drivers in North Carolina?",
+    "answers": [
+      "0.08 percent",
+      "0.02 percent",
+      "Zero tolerance",
+      "0.04 percent"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "NC-021",
+    "state": "NC",
+    "category": "duiStateLaws",
+    "question": "What is the alcohol tolerance level for drivers under 21 in North Carolina?",
+    "answers": [
+      "Any detectable amount",
+      "0.02 percent",
+      "0.04 percent",
+      "Same as adults"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "NC-022",
+    "state": "NC",
+    "category": "duiStateLaws",
+    "question": "What happens if you refuse a chemical BAC test in North Carolina?",
+    "answers": [
+      "Warning only",
+      "Automatic 12-month license revocation",
+      "No penalty until convicted",
+      "Three-month suspension"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "NC-023",
+    "state": "NC",
+    "category": "duiStateLaws",
+    "question": "What does North Carolina's implied consent law require?",
+    "answers": [
+      "Permission to search vehicle",
+      "Consent to field tests only",
+      "Submitting to BAC testing when lawfully stopped",
+      "Waiver of attorney rights"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "NC-024",
+    "state": "NC",
+    "category": "duiStateLaws",
+    "question": "What device may be required for drivers with high BAC or multiple DUI convictions in North Carolina?",
+    "answers": [
+      "GPS monitoring",
+      "Ankle monitor",
+      "Dash camera",
+      "Ignition interlock device"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "NC-025",
+    "state": "NC",
+    "category": "duiStateLaws",
+    "question": "What is North Carolina's DWI sentencing system based on?",
+    "answers": [
+      "Level system from Level 5 to Aggravated Level 1",
+      "Points-based system only",
+      "Flat penalties for all offenses",
+      "Judicial discretion only"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "NC-026",
+    "state": "NC",
+    "category": "duiStateLaws",
+    "question": "Can you refuse a field sobriety test without penalty in North Carolina?",
+    "answers": [
+      "No, same as chemical test",
+      "Yes, field tests are voluntary",
+      "Only if you request an attorney",
+      "Only during daytime"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "NC-027",
+    "state": "NC",
+    "category": "insurance",
+    "question": "What type of fault system does North Carolina follow for auto accidents?",
+    "answers": [
+      "No-fault system",
+      "Shared fault system",
+      "At-fault system",
+      "Hybrid system"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "NC-028",
+    "state": "NC",
+    "category": "insurance",
+    "question": "What coverage protects you if hit by an uninsured driver in North Carolina?",
+    "answers": [
+      "Collision coverage",
+      "Comprehensive coverage",
+      "Personal injury protection",
+      "Uninsured motorist coverage"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "NC-029",
+    "state": "NC",
+    "category": "insurance",
+    "question": "What is North Carolina's contributory negligence rule for accident claims?",
+    "answers": [
+      "Even 1% fault bars recovery from other driver",
+      "Fault is split equally",
+      "Damages reduced by fault percentage",
+      "No effect on claims"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "NC-030",
+    "state": "NC",
+    "category": "insurance",
+    "question": "What happens when your insurance is canceled in North Carolina?",
+    "answers": [
+      "Nothing until renewal",
+      "DMV is automatically notified by insurer",
+      "You must notify DMV",
+      "Only affects registration"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "NC-031",
+    "state": "NC",
+    "category": "stateUnique",
+    "question": "When must you turn on headlights while driving in North Carolina?",
+    "answers": [
+      "Only at night",
+      "Only in heavy rain",
+      "When using windshield wipers",
+      "Only in fog"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "NC-032",
+    "state": "NC",
+    "category": "stateUnique",
+    "question": "What must you do when approaching a stopped emergency vehicle on a multi-lane road in North Carolina?",
+    "answers": [
+      "Stop completely",
+      "Flash your lights",
+      "Honk your horn",
+      "Move over one lane or slow down"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "NC-033",
+    "state": "NC",
+    "category": "stateUnique",
+    "question": "When are motorcycle headlights required in North Carolina?",
+    "answers": [
+      "At all times while operating",
+      "Only at night",
+      "Only on highways",
+      "Only in bad weather"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "NC-034",
+    "state": "NC",
+    "category": "stateUnique",
+    "question": "When must you stop for a school bus with flashing red lights on a two-lane road in North Carolina?",
+    "answers": [
+      "Only if directly behind",
+      "From both directions",
+      "Only during school hours",
+      "Never if on opposite side"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "NC-035",
+    "state": "NC",
+    "category": "stateUnique",
+    "question": "On a divided four-lane highway, must opposite direction traffic stop for a school bus in North Carolina?",
+    "answers": [
+      "Yes, always stop",
+      "Only during morning hours",
+      "No, opposite traffic may continue",
+      "Only if median is narrow"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "NC-036",
+    "state": "NC",
+    "category": "stateUnique",
+    "question": "What lane restriction applies to heavy trucks over 26,000 pounds on highways with six or more lanes in North Carolina?",
+    "answers": [
+      "No highway use",
+      "Right lane only",
+      "Middle lanes only",
+      "Prohibited from left lane"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "NC-037",
+    "state": "NC",
+    "category": "stateUnique",
+    "question": "What vehicles does North Carolina's move over law apply to?",
+    "answers": [
+      "Emergency vehicles, tow trucks, and utility vehicles",
+      "Police vehicles only",
+      "Ambulances only",
+      "Fire trucks only"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "NC-038",
+    "state": "NC",
+    "category": "stateUnique",
+    "question": "What must you do when using windshield wipers intermittently in light mist in North Carolina?",
+    "answers": [
+      "Always turn on headlights",
+      "Headlights not required for intermittent use",
+      "Use high beams only",
+      "Use hazard lights"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "NC-039",
+    "state": "NC",
+    "category": "stateUnique",
+    "question": "When can you make a right turn on red in North Carolina?",
+    "answers": [
+      "Never permitted",
+      "Only during daytime",
+      "After complete stop when safe",
+      "Without stopping if clear"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "NC-040",
+    "state": "NC",
+    "category": "stateUnique",
+    "question": "What enforcement method can be used in school zones to detect speeding violations in North Carolina?",
+    "answers": [
+      "Radar guns only",
+      "Officer observation only",
+      "No speed enforcement",
+      "Electronic speed cameras"
+    ],
+    "correctIndex": 3
+  }
+]

@@ -1,0 +1,482 @@
+[
+  {
+    "id": "ID-001",
+    "question": "What is the minimum age to apply for a Supervised Instruction Permit in Idaho?",
+    "answers": [
+      "14 years and 6 months",
+      "15 years old",
+      "16 years old",
+      "14 years old"
+    ],
+    "correctIndex": 0,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "ID-002",
+    "question": "How long must you hold a Supervised Instruction Permit after completing driver's education before getting a license?",
+    "answers": [
+      "3 months",
+      "6 months or until age 17, whichever comes first",
+      "1 year",
+      "9 months"
+    ],
+    "correctIndex": 1,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "ID-003",
+    "question": "How many total supervised driving hours are required during Idaho's GDL program?",
+    "answers": [
+      "30 hours",
+      "40 hours",
+      "50 hours including 10 at night",
+      "60 hours"
+    ],
+    "correctIndex": 2,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "ID-004",
+    "question": "How many hours of behind-the-wheel instruction are required in Idaho's driver education?",
+    "answers": [
+      "4 hours",
+      "8 hours",
+      "10 hours",
+      "6 hours"
+    ],
+    "correctIndex": 3,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "ID-005",
+    "question": "What is the minimum age of a supervising driver when practicing with an Idaho instruction permit?",
+    "answers": [
+      "21 years old with a valid license",
+      "18 years old",
+      "25 years old",
+      "19 years old"
+    ],
+    "correctIndex": 0,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "ID-006",
+    "question": "During the first six months of an underage license, how many non-family passengers under 17 can you carry?",
+    "answers": [
+      "Two passengers",
+      "One passenger",
+      "Three passengers",
+      "No passengers"
+    ],
+    "correctIndex": 1,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "ID-007",
+    "question": "When can drivers under 16 with an underage license drive without supervision?",
+    "answers": [
+      "Never",
+      "Anytime",
+      "Only during daylight hours",
+      "Only on weekends"
+    ],
+    "correctIndex": 2,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "ID-008",
+    "question": "At what age can you obtain a full unrestricted driver's license in Idaho?",
+    "answers": [
+      "16 years old",
+      "16 and a half years old",
+      "18 years old",
+      "17 years old"
+    ],
+    "correctIndex": 3,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "ID-009",
+    "question": "What is the minimum age to apply for an underage driver's license in Idaho?",
+    "answers": [
+      "15 years old",
+      "14 and a half years old",
+      "16 years old",
+      "14 years old"
+    ],
+    "correctIndex": 0,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "ID-010",
+    "question": "What happens to a teen driver's privileges after a second traffic conviction in Idaho?",
+    "answers": [
+      "They receive a warning",
+      "Minimum 30-day driving privilege suspension",
+      "They must retake driver's education",
+      "Nothing changes"
+    ],
+    "correctIndex": 1,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "ID-011",
+    "question": "Where must the supervising driver sit when a permit holder is practicing in Idaho?",
+    "answers": [
+      "Anywhere in the vehicle",
+      "In the back seat",
+      "In the front seat beside the driver",
+      "Either front or back seat"
+    ],
+    "correctIndex": 2,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "ID-012",
+    "question": "How many hours of classroom instruction are required for Idaho driver education?",
+    "answers": [
+      "20 hours",
+      "25 hours",
+      "35 hours",
+      "30 hours"
+    ],
+    "correctIndex": 3,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "ID-013",
+    "question": "What does Idaho's hands-free law prohibit while operating a vehicle?",
+    "answers": [
+      "Touching a mobile device to text, email, or use apps",
+      "All cell phone use",
+      "Only texting",
+      "Only phone calls"
+    ],
+    "correctIndex": 0,
+    "category": "cellPhone"
+  },
+  {
+    "id": "ID-014",
+    "question": "When are you considered to be operating a vehicle under Idaho's distracted driving law?",
+    "answers": [
+      "Only when moving",
+      "Even when temporarily stopped at signals or in traffic",
+      "Only on highways",
+      "Only above 25 mph"
+    ],
+    "correctIndex": 1,
+    "category": "cellPhone"
+  },
+  {
+    "id": "ID-015",
+    "question": "What type of device use is permitted while driving in Idaho?",
+    "answers": [
+      "Any use while at red lights",
+      "Watching videos hands-free",
+      "Hands-free or voice-operated features",
+      "All handheld use"
+    ],
+    "correctIndex": 2,
+    "category": "cellPhone"
+  },
+  {
+    "id": "ID-016",
+    "question": "How can you legally activate a function on your phone while driving in Idaho?",
+    "answers": [
+      "You cannot use it at all",
+      "Only with both hands",
+      "By asking a passenger",
+      "Using a single touch or voice command"
+    ],
+    "correctIndex": 3,
+    "category": "cellPhone"
+  },
+  {
+    "id": "ID-017",
+    "question": "What happens to your insurance after a first distracted driving violation in Idaho?",
+    "answers": [
+      "It cannot be affected",
+      "It increases immediately",
+      "It is cancelled",
+      "You lose coverage"
+    ],
+    "correctIndex": 0,
+    "category": "cellPhone"
+  },
+  {
+    "id": "ID-018",
+    "question": "How many distracted driving violations within three years can affect your insurance rates in Idaho?",
+    "answers": [
+      "One violation",
+      "Two or more violations",
+      "Three violations",
+      "Four violations"
+    ],
+    "correctIndex": 1,
+    "category": "cellPhone"
+  },
+  {
+    "id": "ID-019",
+    "question": "What is the standard blood alcohol concentration limit for adult drivers in Idaho?",
+    "answers": [
+      "0.08%",
+      "0.10%",
+      "0.05%",
+      "0.06%"
+    ],
+    "correctIndex": 0,
+    "category": "duiStateLaws"
+  },
+  {
+    "id": "ID-020",
+    "question": "What BAC level is considered excessive DUI with enhanced penalties in Idaho?",
+    "answers": [
+      "0.10% or higher",
+      "0.15% or higher",
+      "0.18% or higher",
+      "0.20% or higher"
+    ],
+    "correctIndex": 3,
+    "category": "duiStateLaws"
+  },
+  {
+    "id": "ID-021",
+    "question": "What does Idaho's implied consent law require of drivers?",
+    "answers": [
+      "Submit to chemical testing when lawfully arrested for DUI",
+      "Carry a consent form",
+      "Agree to roadside tests",
+      "Allow vehicle searches"
+    ],
+    "correctIndex": 0,
+    "category": "duiStateLaws"
+  },
+  {
+    "id": "ID-022",
+    "question": "What is one consequence of refusing a chemical test in Idaho?",
+    "answers": [
+      "A warning only",
+      "License suspension of 1 to 2 years",
+      "Community service",
+      "No consequences"
+    ],
+    "correctIndex": 1,
+    "category": "duiStateLaws"
+  },
+  {
+    "id": "ID-023",
+    "question": "What is the BAC limit for commercial drivers in Idaho?",
+    "answers": [
+      "0.02%",
+      "0.06%",
+      "0.04%",
+      "0.08%"
+    ],
+    "correctIndex": 2,
+    "category": "duiStateLaws"
+  },
+  {
+    "id": "ID-024",
+    "question": "What is the BAC limit for drivers under 21 in Idaho?",
+    "answers": [
+      "0.00%",
+      "0.04%",
+      "0.08%",
+      "0.02%"
+    ],
+    "correctIndex": 3,
+    "category": "duiStateLaws"
+  },
+  {
+    "id": "ID-025",
+    "question": "How long is the ignition interlock device required after a first DUI in Idaho?",
+    "answers": [
+      "1 year",
+      "6 months",
+      "2 years",
+      "18 months"
+    ],
+    "correctIndex": 0,
+    "category": "duiStateLaws"
+  },
+  {
+    "id": "ID-026",
+    "question": "How many prior DUI convictions within 10 years elevate a DUI to a felony in Idaho?",
+    "answers": [
+      "One prior",
+      "Two or more priors",
+      "Three priors",
+      "Four priors"
+    ],
+    "correctIndex": 1,
+    "category": "duiStateLaws"
+  },
+  {
+    "id": "ID-027",
+    "question": "What does bodily injury liability insurance cover in Idaho?",
+    "answers": [
+      "Other drivers' and passengers' injuries when you're at fault",
+      "Your own medical bills",
+      "Your vehicle damage",
+      "All damages regardless of fault"
+    ],
+    "correctIndex": 0,
+    "category": "insurance"
+  },
+  {
+    "id": "ID-028",
+    "question": "What does property damage liability insurance pay for in Idaho?",
+    "answers": [
+      "Your own vehicle repairs",
+      "Your medical expenses",
+      "Rental car costs",
+      "Damage to others' property when you're at fault"
+    ],
+    "correctIndex": 3,
+    "category": "insurance"
+  },
+  {
+    "id": "ID-029",
+    "question": "In what format can proof of insurance be shown in Idaho?",
+    "answers": [
+      "Paper or digital",
+      "Paper only",
+      "Digital only",
+      "Video recording"
+    ],
+    "correctIndex": 0,
+    "category": "insurance"
+  },
+  {
+    "id": "ID-030",
+    "question": "What happens if you don't have insurance coverage for two consecutive months in Idaho?",
+    "answers": [
+      "Nothing happens",
+      "Your vehicle registration may be suspended",
+      "You receive a warning only",
+      "You lose your license permanently"
+    ],
+    "correctIndex": 1,
+    "category": "insurance"
+  },
+  {
+    "id": "ID-031",
+    "question": "When are studded tires permitted in Idaho?",
+    "answers": [
+      "October 1 through April 30",
+      "November 1 through March 31",
+      "Year-round",
+      "Only during active snowfall"
+    ],
+    "correctIndex": 0,
+    "category": "stateUnique"
+  },
+  {
+    "id": "ID-032",
+    "question": "Who does Idaho's chain-up law on mountain passes primarily apply to?",
+    "answers": [
+      "All vehicles",
+      "Passenger cars only",
+      "Motorcycles",
+      "Commercial vehicles over 26,000 pounds"
+    ],
+    "correctIndex": 3,
+    "category": "stateUnique"
+  },
+  {
+    "id": "ID-033",
+    "question": "What are you required to do if you hit and kill or injure a large animal in Idaho?",
+    "answers": [
+      "Report it to Fish and Game or law enforcement",
+      "Leave the scene immediately",
+      "Call your insurance only",
+      "Nothing is required"
+    ],
+    "correctIndex": 0,
+    "category": "stateUnique"
+  },
+  {
+    "id": "ID-034",
+    "question": "When are deer and elk most active near Idaho roadways?",
+    "answers": [
+      "Midday",
+      "Dawn, dusk, and nighttime",
+      "Only during winter",
+      "Afternoon only"
+    ],
+    "correctIndex": 1,
+    "category": "stateUnique"
+  },
+  {
+    "id": "ID-035",
+    "question": "What should you do when a slow-moving vehicle on a two-lane highway has three or more vehicles behind it?",
+    "answers": [
+      "Flash your lights",
+      "Pass immediately",
+      "Turn off at the nearest safe turnout",
+      "Honk your horn"
+    ],
+    "correctIndex": 2,
+    "category": "stateUnique"
+  },
+  {
+    "id": "ID-036",
+    "question": "What is the maximum speed for slow-moving vehicles on Idaho highways?",
+    "answers": [
+      "15 mph",
+      "20 mph",
+      "30 mph",
+      "25 mph unless designed for higher speeds"
+    ],
+    "correctIndex": 3,
+    "category": "stateUnique"
+  },
+  {
+    "id": "ID-037",
+    "question": "What system should you check before traveling Idaho mountain passes in winter?",
+    "answers": [
+      "Idaho 511 for weather and road conditions",
+      "Social media",
+      "Local radio only",
+      "GPS navigation"
+    ],
+    "correctIndex": 0,
+    "category": "stateUnique"
+  },
+  {
+    "id": "ID-038",
+    "question": "What should you do if you see one deer cross the road in Idaho?",
+    "answers": [
+      "Maintain speed",
+      "Slow down and watch for more animals to follow",
+      "Speed up to pass quickly",
+      "Flash your lights"
+    ],
+    "correctIndex": 1,
+    "category": "stateUnique"
+  },
+  {
+    "id": "ID-039",
+    "question": "What is the safest action if an animal is unavoidable on an Idaho highway?",
+    "answers": [
+      "Swerve into oncoming traffic",
+      "Close your eyes",
+      "Brake and stay on the roadway rather than losing control",
+      "Accelerate through"
+    ],
+    "correctIndex": 2,
+    "category": "stateUnique"
+  },
+  {
+    "id": "ID-040",
+    "question": "Who is liable if you hit livestock on an open-range road in Idaho?",
+    "answers": [
+      "The rancher always",
+      "The state",
+      "No one",
+      "You may be liable if found at fault"
+    ],
+    "correctIndex": 3,
+    "category": "stateUnique"
+  }
+]

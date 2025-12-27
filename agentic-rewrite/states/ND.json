@@ -1,0 +1,522 @@
+[
+  {
+    "id": "ND-001",
+    "state": "ND",
+    "category": "gdlLicensing",
+    "question": "At what minimum age can you apply for a learner's permit in North Dakota?",
+    "answers": [
+      "14 years old",
+      "15 years old",
+      "16 years old",
+      "17 years old"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "ND-002",
+    "state": "ND",
+    "category": "gdlLicensing",
+    "question": "Who can supervise a learner's permit holder in North Dakota?",
+    "answers": [
+      "Any licensed driver over 16",
+      "Licensed adult 18 or older with 3+ years experience",
+      "Only certified driving instructors",
+      "Any family member with a license"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "ND-003",
+    "state": "ND",
+    "category": "gdlLicensing",
+    "question": "How long must a 14-year-old hold an instruction permit before applying for a restricted license in North Dakota?",
+    "answers": [
+      "6 months minimum",
+      "9 months minimum",
+      "12 months minimum",
+      "Until age 16"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "ND-004",
+    "state": "ND",
+    "category": "gdlLicensing",
+    "question": "How many hours of supervised driving are required for permit holders aged 14-15 in North Dakota?",
+    "answers": [
+      "30 hours",
+      "40 hours",
+      "60 hours",
+      "50 hours"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "ND-005",
+    "state": "ND",
+    "category": "gdlLicensing",
+    "question": "At what minimum age can a driver obtain a restricted license in North Dakota?",
+    "answers": [
+      "15 years old",
+      "14 and a half years old",
+      "16 years old",
+      "14 years old"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "ND-006",
+    "state": "ND",
+    "category": "gdlLicensing",
+    "question": "What are the unsupervised driving hours for a restricted license holder in North Dakota?",
+    "answers": [
+      "6 AM to 10 PM only",
+      "5 AM to 9 PM unless for work, school, or religious purposes",
+      "No time restrictions",
+      "7 AM to 7 PM only"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "ND-007",
+    "state": "ND",
+    "category": "gdlLicensing",
+    "question": "At what minimum age can you obtain an unrestricted driver's license in North Dakota?",
+    "answers": [
+      "15 years old",
+      "17 years old",
+      "16 years old",
+      "18 years old"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "ND-008",
+    "state": "ND",
+    "category": "gdlLicensing",
+    "question": "What is the cell phone restriction for drivers under 18 in North Dakota?",
+    "answers": [
+      "Texting only prohibited",
+      "Handheld use only prohibited",
+      "No restrictions",
+      "Complete prohibition of all cell phone use"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "ND-009",
+    "state": "ND",
+    "category": "gdlLicensing",
+    "question": "What vehicle restriction applies to restricted license holders in North Dakota?",
+    "answers": [
+      "Must drive vehicle owned by immediate family member",
+      "Any properly insured vehicle",
+      "Only vehicles with dual controls",
+      "Vehicles under certain weight only"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "ND-010",
+    "state": "ND",
+    "category": "gdlLicensing",
+    "question": "Where must the supervisor sit when supervising a learner's permit holder in North Dakota?",
+    "answers": [
+      "Anywhere in the vehicle",
+      "In the front seat of the vehicle",
+      "Either front or back seat",
+      "Only during highway driving"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "ND-011",
+    "state": "ND",
+    "category": "gdlLicensing",
+    "question": "How long must a 15-year-old hold an instruction permit in North Dakota?",
+    "answers": [
+      "3 months minimum",
+      "12 months minimum",
+      "Until age 16 or 6 months, whichever is longer",
+      "9 months minimum"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "ND-012",
+    "state": "ND",
+    "category": "gdlLicensing",
+    "question": "What driving conditions must be included in the supervised driving log for restricted license applicants in North Dakota?",
+    "answers": [
+      "Highway driving only",
+      "Daytime driving only",
+      "Urban driving only",
+      "Nighttime, dirt/gravel, urban, rural, and winter conditions"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "ND-013",
+    "state": "ND",
+    "category": "cellPhone",
+    "question": "What does North Dakota law prohibit all drivers from doing with wireless devices?",
+    "answers": [
+      "Composing, reading, or sending electronic messages",
+      "Making phone calls only",
+      "Using GPS navigation",
+      "Playing music"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "ND-014",
+    "state": "ND",
+    "category": "cellPhone",
+    "question": "What is the cell phone law for drivers under 18 in North Dakota?",
+    "answers": [
+      "Texting only prohibited",
+      "Complete ban on all electronic devices, including hands-free",
+      "Handheld use only prohibited",
+      "No restrictions if licensed"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "ND-015",
+    "state": "ND",
+    "category": "cellPhone",
+    "question": "Can drivers use voice-to-text features while driving in North Dakota?",
+    "answers": [
+      "No, all texting is prohibited",
+      "Only for emergencies",
+      "Yes, voice-to-text is permitted",
+      "Only drivers over 21"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "ND-016",
+    "state": "ND",
+    "category": "cellPhone",
+    "question": "What restriction applies to commercial motor vehicle drivers in North Dakota?",
+    "answers": [
+      "Complete cell phone ban",
+      "Only speakerphone allowed",
+      "No texting restriction",
+      "Cannot hold phone or press more than one button"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "ND-017",
+    "state": "ND",
+    "category": "cellPhone",
+    "question": "Can drivers 21 and older talk on a handheld phone while driving in North Dakota?",
+    "answers": [
+      "Yes, talking on handheld phones is permitted",
+      "No, hands-free only",
+      "Only in emergency situations",
+      "Only outside city limits"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "ND-018",
+    "state": "ND",
+    "category": "cellPhone",
+    "question": "What does North Dakota's texting law say about accessing web pages while driving?",
+    "answers": [
+      "Permitted if using voice commands",
+      "Prohibited for all drivers",
+      "Allowed for navigation only",
+      "Only restricted for commercial drivers"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "ND-019",
+    "state": "ND",
+    "category": "duiStateLaws",
+    "question": "What is the BAC limit for drivers under 21 in North Dakota?",
+    "answers": [
+      "0.08 percent",
+      "0.04 percent",
+      "0.02 percent",
+      "Zero tolerance"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "ND-020",
+    "state": "ND",
+    "category": "duiStateLaws",
+    "question": "What is the BAC limit for commercial drivers in North Dakota?",
+    "answers": [
+      "0.08 percent",
+      "0.02 percent",
+      "0.06 percent",
+      "0.04 percent"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "ND-021",
+    "state": "ND",
+    "category": "duiStateLaws",
+    "question": "What does North Dakota's implied consent law mean?",
+    "answers": [
+      "Agreement to chemical testing when driving on state roads",
+      "Permission to search vehicle",
+      "Consent to field sobriety only",
+      "Waiver of attorney rights"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "ND-022",
+    "state": "ND",
+    "category": "duiStateLaws",
+    "question": "What is the license suspension period for a first-time chemical test refusal in North Dakota?",
+    "answers": [
+      "90 days",
+      "180 days",
+      "One year",
+      "Two years"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "ND-023",
+    "state": "ND",
+    "category": "duiStateLaws",
+    "question": "At what BAC level does North Dakota impose enhanced DUI penalties?",
+    "answers": [
+      "0.10 percent or higher",
+      "0.12 percent or higher",
+      "0.16 percent or higher",
+      "0.20 percent or higher"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "ND-024",
+    "state": "ND",
+    "category": "duiStateLaws",
+    "question": "When does a fourth DUI offense become a felony in North Dakota?",
+    "answers": [
+      "Within 5 years",
+      "At any time in lifetime",
+      "Within 10 years",
+      "Within 7 years"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "ND-025",
+    "state": "ND",
+    "category": "duiStateLaws",
+    "question": "What is the legal BAC limit for drivers 21 and older in North Dakota?",
+    "answers": [
+      "0.08 percent",
+      "0.10 percent",
+      "0.06 percent",
+      "0.05 percent"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "ND-026",
+    "state": "ND",
+    "category": "duiStateLaws",
+    "question": "What is the minimum charge for a first DUI offense with a minor passenger in North Dakota?",
+    "answers": [
+      "Class C misdemeanor",
+      "Class A misdemeanor",
+      "Infraction only",
+      "Class B misdemeanor"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "ND-027",
+    "state": "ND",
+    "category": "insurance",
+    "question": "What type of insurance system does North Dakota use?",
+    "answers": [
+      "At-fault system",
+      "Choice system",
+      "No-fault system",
+      "Hybrid system"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "ND-028",
+    "state": "ND",
+    "category": "insurance",
+    "question": "What does Personal Injury Protection (PIP) coverage provide in North Dakota?",
+    "answers": [
+      "Property damage only",
+      "Liability coverage",
+      "Coverage for other drivers",
+      "Medical expenses regardless of fault"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "ND-029",
+    "state": "ND",
+    "category": "insurance",
+    "question": "What does uninsured motorist coverage protect you from in North Dakota?",
+    "answers": [
+      "Losses from drivers without insurance",
+      "Your own vehicle damage",
+      "Rental car expenses",
+      "Traffic violations"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "ND-030",
+    "state": "ND",
+    "category": "insurance",
+    "question": "Which coverage types are mandatory in North Dakota?",
+    "answers": [
+      "Liability only",
+      "Liability, PIP, and uninsured motorist",
+      "Comprehensive and collision only",
+      "Liability and collision"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "ND-031",
+    "state": "ND",
+    "category": "stateUnique",
+    "question": "What vehicles are covered under North Dakota's expanded Move Over Law?",
+    "answers": [
+      "Emergency vehicles only",
+      "Police and fire vehicles only",
+      "Any stopped vehicle with flashing hazard lights",
+      "Commercial vehicles only"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "ND-032",
+    "state": "ND",
+    "category": "stateUnique",
+    "question": "When must headlights be used on farm vehicles in North Dakota?",
+    "answers": [
+      "Always when on highways",
+      "Only during winter months",
+      "Only in city limits",
+      "Half hour after sunset to half hour before sunrise"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "ND-033",
+    "state": "ND",
+    "category": "stateUnique",
+    "question": "What type of seat belt enforcement does North Dakota have?",
+    "answers": [
+      "Primary enforcement allowing stops for seat belt violations alone",
+      "Secondary enforcement only",
+      "No enforcement",
+      "Warning only policy"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "ND-034",
+    "state": "ND",
+    "category": "stateUnique",
+    "question": "Who must wear seat belts in North Dakota?",
+    "answers": [
+      "Front seat only",
+      "All front and back seat occupants",
+      "Only drivers",
+      "Only passengers under 18"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "ND-035",
+    "state": "ND",
+    "category": "stateUnique",
+    "question": "When must headlights be used during adverse weather in North Dakota?",
+    "answers": [
+      "Only during night fog",
+      "Only during heavy snow",
+      "When you cannot see vehicles clearly at 1,000 feet",
+      "Only during thunderstorms"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "ND-036",
+    "state": "ND",
+    "category": "stateUnique",
+    "question": "How can law enforcement enforce speed limits during inclement weather in North Dakota?",
+    "answers": [
+      "Only at posted speed limits",
+      "Cannot enforce in bad weather",
+      "Must give warnings only",
+      "Can enforce at speeds lower than posted limits for safety"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "ND-037",
+    "state": "ND",
+    "category": "stateUnique",
+    "question": "What must you do when approaching a school bus with flashing red lights in North Dakota?",
+    "answers": [
+      "Stop from any direction of approach",
+      "Slow down but may proceed",
+      "Stop only if directly behind",
+      "Stop only on two-lane roads"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "ND-038",
+    "state": "ND",
+    "category": "stateUnique",
+    "question": "When is a right turn on red permitted in North Dakota?",
+    "answers": [
+      "Never permitted",
+      "After a complete stop and when safe",
+      "Only during daytime",
+      "Only outside city limits"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "ND-039",
+    "state": "ND",
+    "category": "stateUnique",
+    "question": "What type of violation is disobeying the Move Over Law in North Dakota?",
+    "answers": [
+      "Warning only",
+      "Criminal offense",
+      "Fine and points on driving record",
+      "License suspension"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "ND-040",
+    "state": "ND",
+    "category": "stateUnique",
+    "question": "When must headlights be activated on regular vehicles in North Dakota?",
+    "answers": [
+      "One hour after sunset",
+      "Only when completely dark",
+      "30 minutes before sunrise",
+      "From sunset to sunrise"
+    ],
+    "correctIndex": 3
+  }
+]

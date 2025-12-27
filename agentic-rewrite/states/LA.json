@@ -1,0 +1,522 @@
+[
+  {
+    "id": "LA-001",
+    "state": "LA",
+    "category": "gdlLicensing",
+    "question": "At what minimum age can you apply for a learner's permit in Louisiana?",
+    "answers": [
+      "15 years old",
+      "16 years old",
+      "14 years old",
+      "17 years old"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "LA-002",
+    "state": "LA",
+    "category": "gdlLicensing",
+    "question": "What driver education requirement must be completed before obtaining a learner's permit in Louisiana?",
+    "answers": [
+      "30-hour approved course",
+      "38-hour approved course",
+      "45-hour approved course",
+      "50-hour approved course"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "LA-003",
+    "state": "LA",
+    "category": "gdlLicensing",
+    "question": "How long must you hold a learner's permit before applying for an intermediate license in Louisiana?",
+    "answers": [
+      "90 days",
+      "1 year",
+      "At least 180 days",
+      "120 days"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "LA-004",
+    "state": "LA",
+    "category": "gdlLicensing",
+    "question": "Who can supervise a learner's permit holder in Louisiana?",
+    "answers": [
+      "Any licensed driver over 18",
+      "Only certified driving instructors",
+      "Any family member with a license",
+      "Parent, guardian, adult 21+, or licensed sibling 18+"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "LA-005",
+    "state": "LA",
+    "category": "gdlLicensing",
+    "question": "How many hours of supervised driving practice are required for an intermediate license in Louisiana?",
+    "answers": [
+      "50 hours total, 15 at night",
+      "40 hours total, 10 at night",
+      "60 hours total, 20 at night",
+      "30 hours total, 5 at night"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "LA-006",
+    "state": "LA",
+    "category": "gdlLicensing",
+    "question": "What is the nighttime driving restriction for intermediate license holders in Louisiana?",
+    "answers": [
+      "10 PM to 6 AM",
+      "11 PM to 5 AM unless with qualified supervisor",
+      "Midnight to 6 AM",
+      "No nighttime driving allowed"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "LA-007",
+    "state": "LA",
+    "category": "gdlLicensing",
+    "question": "What passenger restriction applies to intermediate license holders between 6 PM and 5 AM in Louisiana?",
+    "answers": [
+      "No passengers allowed",
+      "Two non-family passengers maximum",
+      "One non-family passenger under 21 unless with adult 21+",
+      "Three passengers maximum"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "LA-008",
+    "state": "LA",
+    "category": "gdlLicensing",
+    "question": "At what age can you obtain a full unrestricted license in Louisiana?",
+    "answers": [
+      "16 years old",
+      "18 years old",
+      "16 and a half",
+      "17 years old"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "LA-009",
+    "state": "LA",
+    "category": "gdlLicensing",
+    "question": "What cell phone restriction applies to drivers age 17 and under in Louisiana?",
+    "answers": [
+      "Prohibited from all wireless device use",
+      "Hands-free calling only",
+      "Texting prohibited only",
+      "GPS use only"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "LA-010",
+    "state": "LA",
+    "category": "gdlLicensing",
+    "question": "What violation record is required to upgrade from a learner's permit to an intermediate license in Louisiana?",
+    "answers": [
+      "Less than 3 violations",
+      "No moving violations or at-fault crashes",
+      "Only one minor violation allowed",
+      "No felony convictions"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "LA-011",
+    "state": "LA",
+    "category": "gdlLicensing",
+    "question": "What must a parent or guardian attest to when a teen applies for an intermediate license in Louisiana?",
+    "answers": [
+      "Financial responsibility only",
+      "Teen attended driver education",
+      "Pre-licensing requirements have been met",
+      "Teen has valid insurance"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "LA-012",
+    "state": "LA",
+    "category": "gdlLicensing",
+    "question": "What happens if an intermediate license holder violates GDL restrictions in Louisiana?",
+    "answers": [
+      "Must restart from learner's permit",
+      "License permanently revoked",
+      "Criminal record is created",
+      "Restrictive period may be extended"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "LA-013",
+    "state": "LA",
+    "category": "cellPhone",
+    "question": "What does Louisiana's hands-free law prohibit while driving?",
+    "answers": [
+      "Holding or manually using a phone",
+      "Only texting",
+      "Only video recording",
+      "Using Bluetooth devices"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "LA-014",
+    "state": "LA",
+    "category": "cellPhone",
+    "question": "When can you legally hold your phone while driving in Louisiana?",
+    "answers": [
+      "During daytime only",
+      "When vehicle is lawfully stationary",
+      "On local roads only",
+      "Never under any circumstances"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "LA-015",
+    "state": "LA",
+    "category": "cellPhone",
+    "question": "What exception allows phone use while driving in Louisiana?",
+    "answers": [
+      "GPS navigation only",
+      "Emergency calls only",
+      "Reporting accidents, hazards, or emergencies",
+      "Hands-free devices only"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "LA-016",
+    "state": "LA",
+    "category": "cellPhone",
+    "question": "Where is distracted driving a primary offense in Louisiana?",
+    "answers": [
+      "Everywhere in the state",
+      "Only on highways",
+      "Only in cities",
+      "School and construction zones"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "LA-017",
+    "state": "LA",
+    "category": "cellPhone",
+    "question": "What type of device use is permitted while driving in Louisiana?",
+    "answers": [
+      "Hands-free and voice-operated devices",
+      "Any device while stopped at red lights",
+      "Handheld devices for GPS only",
+      "No devices allowed"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "LA-018",
+    "state": "LA",
+    "category": "cellPhone",
+    "question": "Who is completely prohibited from using any wireless device while driving in Louisiana?",
+    "answers": [
+      "All drivers",
+      "Drivers under 21 with intermediate licenses",
+      "Commercial drivers only",
+      "No complete prohibition exists"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "LA-019",
+    "state": "LA",
+    "category": "duiStateLaws",
+    "question": "What is the legal BAC limit for drivers under 21 in Louisiana?",
+    "answers": [
+      "0.08 percent",
+      "0.04 percent",
+      "0.02 percent",
+      "Zero tolerance"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "LA-020",
+    "state": "LA",
+    "category": "duiStateLaws",
+    "question": "What is the BAC limit for commercial drivers operating commercial vehicles in Louisiana?",
+    "answers": [
+      "0.08 percent",
+      "0.02 percent",
+      "0.06 percent",
+      "0.04 percent"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "LA-021",
+    "state": "LA",
+    "category": "duiStateLaws",
+    "question": "What does Louisiana's implied consent law require of drivers?",
+    "answers": [
+      "Agreement to BAC testing when lawfully stopped",
+      "Permission to search vehicle",
+      "Consent to field sobriety tests only",
+      "Waiver of attorney rights"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "LA-022",
+    "state": "LA",
+    "category": "duiStateLaws",
+    "question": "What is the consequence of refusing a BAC test for the first time in Louisiana?",
+    "answers": [
+      "No penalty",
+      "One-year license suspension",
+      "Only a warning",
+      "Mandatory jail time"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "LA-023",
+    "state": "LA",
+    "category": "duiStateLaws",
+    "question": "How long is the license suspension for a second test refusal within 10 years in Louisiana?",
+    "answers": [
+      "One year",
+      "Six months",
+      "Two years",
+      "Three years"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "LA-024",
+    "state": "LA",
+    "category": "duiStateLaws",
+    "question": "When does a DWI become a felony offense in Louisiana?",
+    "answers": [
+      "First offense with high BAC",
+      "Second offense",
+      "Any refusal",
+      "Third offense"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "LA-025",
+    "state": "LA",
+    "category": "duiStateLaws",
+    "question": "What is the look-back period for prior DWI convictions in Louisiana?",
+    "answers": [
+      "10 years",
+      "5 years",
+      "Lifetime",
+      "7 years"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "LA-026",
+    "state": "LA",
+    "category": "duiStateLaws",
+    "question": "What enhanced penalty applies for a BAC of 0.15 percent or higher in Louisiana?",
+    "answers": [
+      "Double fine only",
+      "Mandatory minimum jail time increases",
+      "License revocation only",
+      "Community service requirement"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "LA-027",
+    "state": "LA",
+    "category": "insurance",
+    "question": "What type of insurance system does Louisiana follow for auto accidents?",
+    "answers": [
+      "No-fault system",
+      "Modified no-fault",
+      "Hybrid system",
+      "Fault-based system"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "LA-028",
+    "state": "LA",
+    "category": "insurance",
+    "question": "What does Louisiana's comparative fault system allow?",
+    "answers": [
+      "Equal division of damages",
+      "Recovery of damages even if partially at fault",
+      "No recovery if any fault",
+      "Full recovery regardless of fault"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "LA-029",
+    "state": "LA",
+    "category": "insurance",
+    "question": "Under Louisiana's No Pay, No Play law, what happens if you drive uninsured and have an accident?",
+    "answers": [
+      "Warning for first offense",
+      "Criminal charges only",
+      "Blocked from recovering substantial damages even if not at fault",
+      "No penalty if other driver has insurance"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "LA-030",
+    "state": "LA",
+    "category": "insurance",
+    "question": "What does liability insurance primarily cover in Louisiana?",
+    "answers": [
+      "Your vehicle damage",
+      "Damages you cause to others",
+      "Theft of your vehicle",
+      "Rental car expenses"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "LA-031",
+    "state": "LA",
+    "category": "stateUnique",
+    "question": "When are headlights required in Louisiana?",
+    "answers": [
+      "Only at night",
+      "During rain only",
+      "Between sunset and sunrise",
+      "Only in fog"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "LA-032",
+    "state": "LA",
+    "category": "stateUnique",
+    "question": "How far must you stop from a school bus with flashing signals in Louisiana?",
+    "answers": [
+      "15 feet",
+      "20 feet",
+      "25 feet",
+      "At least 30 feet"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "LA-033",
+    "state": "LA",
+    "category": "stateUnique",
+    "question": "When are you NOT required to stop for a school bus in Louisiana?",
+    "answers": [
+      "On divided highway with physical barrier separating directions",
+      "When traveling over 35 mph",
+      "On any four-lane road",
+      "During non-school hours"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "LA-034",
+    "state": "LA",
+    "category": "stateUnique",
+    "question": "What must you do when approaching an emergency vehicle with flashing lights in Louisiana?",
+    "answers": [
+      "Honk to acknowledge",
+      "Move over or slow down significantly",
+      "Maintain speed and position",
+      "Flash headlights"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "LA-035",
+    "state": "LA",
+    "category": "stateUnique",
+    "question": "What is Louisiana's left lane law regarding driving under the speed limit?",
+    "answers": [
+      "Allowed anytime",
+      "Allowed in heavy traffic only",
+      "Prohibited unless actively passing",
+      "Allowed within 5 mph of limit"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "LA-036",
+    "state": "LA",
+    "category": "stateUnique",
+    "question": "What must you do when an emergency vehicle approaches from behind in Louisiana?",
+    "answers": [
+      "Speed up to clear the way",
+      "Stop immediately",
+      "Change lanes if possible",
+      "Pull over and stop"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "LA-037",
+    "state": "LA",
+    "category": "stateUnique",
+    "question": "When can you make a right turn on red in Louisiana?",
+    "answers": [
+      "After complete stop when safe and no sign prohibits",
+      "Never allowed",
+      "Without stopping if clear",
+      "Only on one-way streets"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "LA-038",
+    "state": "LA",
+    "category": "stateUnique",
+    "question": "What percentage at fault prevents you from recovering damages in Louisiana?",
+    "answers": [
+      "Any fault percentage",
+      "51 percent or more",
+      "75 percent or more",
+      "100 percent only"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "LA-039",
+    "state": "LA",
+    "category": "stateUnique",
+    "question": "What is required when a highway has a dedicated center turn lane in Louisiana?",
+    "answers": [
+      "It's considered a passing lane",
+      "It creates a divided highway",
+      "Drivers must still stop for school buses from both directions",
+      "It's for emergency vehicles only"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "LA-040",
+    "state": "LA",
+    "category": "stateUnique",
+    "question": "What consequence can result from violating Louisiana's school bus stop law?",
+    "answers": [
+      "Warning only",
+      "Points on license only",
+      "Community service only",
+      "License suspension and substantial penalties"
+    ],
+    "correctIndex": 3
+  }
+]

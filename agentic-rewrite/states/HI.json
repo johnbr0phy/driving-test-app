@@ -1,0 +1,482 @@
+[
+  {
+    "id": "HI-001",
+    "question": "What is the minimum age to apply for an instructional permit in Hawaii?",
+    "answers": [
+      "15½ years old",
+      "16 years old",
+      "17 years old",
+      "18 years old"
+    ],
+    "correctIndex": 0,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "HI-002",
+    "question": "How long must you hold an instructional permit before applying for a provisional license in Hawaii?",
+    "answers": [
+      "90 days",
+      "180 days",
+      "120 days",
+      "1 year"
+    ],
+    "correctIndex": 1,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "HI-003",
+    "question": "What is the minimum age to obtain a provisional license in Hawaii?",
+    "answers": [
+      "15 years old",
+      "15½ years old",
+      "16 years old",
+      "17 years old"
+    ],
+    "correctIndex": 2,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "HI-004",
+    "question": "At what age can you obtain a full unrestricted driver's license in Hawaii?",
+    "answers": [
+      "16 years old",
+      "16½ years old",
+      "18 years old",
+      "17 years old"
+    ],
+    "correctIndex": 3,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "HI-005",
+    "question": "What is the minimum age of a supervising driver when practicing with an instructional permit in Hawaii?",
+    "answers": [
+      "21 years old",
+      "18 years old",
+      "25 years old",
+      "19 years old"
+    ],
+    "correctIndex": 0,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "HI-006",
+    "question": "During what hours must a parent or guardian supervise a permit holder in Hawaii?",
+    "answers": [
+      "Midnight to 6 a.m.",
+      "11 p.m. to 5 a.m.",
+      "10 p.m. to 6 a.m.",
+      "1 a.m. to 5 a.m."
+    ],
+    "correctIndex": 1,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "HI-007",
+    "question": "At what age does a provisional license expire in Hawaii?",
+    "answers": [
+      "On your 18th birthday",
+      "On your 20th birthday",
+      "On your 19th birthday",
+      "On your 21st birthday"
+    ],
+    "correctIndex": 2,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "HI-008",
+    "question": "What must you complete before applying for a provisional license in Hawaii?",
+    "answers": [
+      "Only a written test",
+      "Only behind-the-wheel training",
+      "Only classroom instruction",
+      "Both classroom and behind-the-wheel driver's education"
+    ],
+    "correctIndex": 3,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "HI-009",
+    "question": "Who must supervise permit holders outside of nighttime hours in Hawaii?",
+    "answers": [
+      "Any licensed driver 21 or older",
+      "Only parents",
+      "Only driving instructors",
+      "Only family members"
+    ],
+    "correctIndex": 0,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "HI-010",
+    "question": "What happens to your permit progression if it is suspended in Hawaii?",
+    "answers": [
+      "Nothing changes",
+      "You must restart the 180-day waiting period",
+      "You lose it permanently",
+      "You pay a reinstatement fee only"
+    ],
+    "correctIndex": 1,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "HI-011",
+    "question": "How many questions must you answer correctly on Hawaii's written knowledge test?",
+    "answers": [
+      "20 out of 30",
+      "25 out of 30",
+      "24 out of 30",
+      "27 out of 30"
+    ],
+    "correctIndex": 2,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "HI-012",
+    "question": "Can drivers 18 or older skip the permit stage in Hawaii?",
+    "answers": [
+      "No, permits are required for all",
+      "Only with driver's education",
+      "Only with parental consent",
+      "Yes, they can apply directly for a license"
+    ],
+    "correctIndex": 3,
+    "category": "gdlLicensing"
+  },
+  {
+    "id": "HI-013",
+    "question": "What type of cell phone use is prohibited for all drivers in Hawaii?",
+    "answers": [
+      "Using handheld mobile devices while driving",
+      "Using hands-free devices",
+      "Using GPS navigation",
+      "Emergency calls"
+    ],
+    "correctIndex": 0,
+    "category": "cellPhone"
+  },
+  {
+    "id": "HI-014",
+    "question": "What type of cell phone use is allowed for adult drivers in Hawaii?",
+    "answers": [
+      "All handheld use",
+      "Hands-free devices only",
+      "Texting only",
+      "No cell phone use allowed"
+    ],
+    "correctIndex": 1,
+    "category": "cellPhone"
+  },
+  {
+    "id": "HI-015",
+    "question": "What restriction applies to drivers under 18 regarding cell phones in Hawaii?",
+    "answers": [
+      "Handheld devices only prohibited",
+      "Texting only prohibited",
+      "All electronic device use prohibited, including hands-free",
+      "No restrictions for under 18"
+    ],
+    "correctIndex": 2,
+    "category": "cellPhone"
+  },
+  {
+    "id": "HI-016",
+    "question": "Is it legal to use a handheld device at a red light in Hawaii?",
+    "answers": [
+      "Yes, always legal at red lights",
+      "No, unless emergency services",
+      "Yes, in school zones only",
+      "Yes, but only if the vehicle is fully stopped"
+    ],
+    "correctIndex": 3,
+    "category": "cellPhone"
+  },
+  {
+    "id": "HI-017",
+    "question": "When is using a handheld cell phone permitted for any driver in Hawaii?",
+    "answers": [
+      "When calling emergency services",
+      "When using GPS",
+      "When hands-free is unavailable",
+      "Never under any circumstances"
+    ],
+    "correctIndex": 0,
+    "category": "cellPhone"
+  },
+  {
+    "id": "HI-018",
+    "question": "What unique pedestrian law does Honolulu have regarding electronic devices?",
+    "answers": [
+      "Drivers must put phones away near crosswalks",
+      "Pedestrians cannot use phones while crossing streets",
+      "All phones must be silenced",
+      "Electronic billboards are banned"
+    ],
+    "correctIndex": 1,
+    "category": "cellPhone"
+  },
+  {
+    "id": "HI-019",
+    "question": "What is the standard blood alcohol concentration limit for adult drivers in Hawaii?",
+    "answers": [
+      "0.05%",
+      "0.10%",
+      "0.08%",
+      "0.06%"
+    ],
+    "correctIndex": 2,
+    "category": "duiStateLaws"
+  },
+  {
+    "id": "HI-020",
+    "question": "What BAC level results in highly intoxicated status with enhanced penalties in Hawaii?",
+    "answers": [
+      "0.10% or higher",
+      "0.12% or higher",
+      "0.20% or higher",
+      "0.15% or higher"
+    ],
+    "correctIndex": 3,
+    "category": "duiStateLaws"
+  },
+  {
+    "id": "HI-021",
+    "question": "What does Hawaii's implied consent law mean for drivers?",
+    "answers": [
+      "You automatically consent to chemical testing when arrested for DUI",
+      "You can refuse testing without penalty",
+      "Only commercial drivers must consent",
+      "You must sign a consent form"
+    ],
+    "correctIndex": 0,
+    "category": "duiStateLaws"
+  },
+  {
+    "id": "HI-022",
+    "question": "How long is the license revocation for refusing a chemical test on a first offense in Hawaii?",
+    "answers": [
+      "1 year",
+      "2 years",
+      "3 years",
+      "6 months"
+    ],
+    "correctIndex": 1,
+    "category": "duiStateLaws"
+  },
+  {
+    "id": "HI-023",
+    "question": "What is the BAC limit for commercial drivers in Hawaii?",
+    "answers": [
+      "0.02%",
+      "0.08%",
+      "0.04%",
+      "0.06%"
+    ],
+    "correctIndex": 2,
+    "category": "duiStateLaws"
+  },
+  {
+    "id": "HI-024",
+    "question": "What is Hawaii's alcohol policy for drivers under 21?",
+    "answers": [
+      "0.02% limit",
+      "Same as adults",
+      "0.04% limit",
+      "Zero tolerance for any detectable amount"
+    ],
+    "correctIndex": 3,
+    "category": "duiStateLaws"
+  },
+  {
+    "id": "HI-025",
+    "question": "When is an ignition interlock device required in Hawaii?",
+    "answers": [
+      "For all DUI offenses, even first offense",
+      "Only for third offense or higher",
+      "Only for commercial drivers",
+      "Never required in Hawaii"
+    ],
+    "correctIndex": 0,
+    "category": "duiStateLaws"
+  },
+  {
+    "id": "HI-026",
+    "question": "How long is the grace period with a temporary permit after a DUI arrest in Hawaii?",
+    "answers": [
+      "7 days",
+      "14 days",
+      "21 days",
+      "30 days"
+    ],
+    "correctIndex": 1,
+    "category": "duiStateLaws"
+  },
+  {
+    "id": "HI-027",
+    "question": "What type of insurance system does Hawaii use for injuries?",
+    "answers": [
+      "At-fault/tort",
+      "Hybrid",
+      "No-fault",
+      "Choice system"
+    ],
+    "correctIndex": 2,
+    "category": "insurance"
+  },
+  {
+    "id": "HI-028",
+    "question": "Who is responsible for property damage in a Hawaii accident?",
+    "answers": [
+      "Your own insurance always",
+      "State compensation fund",
+      "Shared equally between drivers",
+      "The at-fault driver"
+    ],
+    "correctIndex": 3,
+    "category": "insurance"
+  },
+  {
+    "id": "HI-029",
+    "question": "What does Personal Injury Protection primarily cover in Hawaii?",
+    "answers": [
+      "Medical costs for you and your passengers",
+      "Property damage only",
+      "Other drivers' injuries",
+      "Vehicle repairs"
+    ],
+    "correctIndex": 0,
+    "category": "insurance"
+  },
+  {
+    "id": "HI-030",
+    "question": "What threshold must medical expenses exceed before you can sue in Hawaii?",
+    "answers": [
+      "No threshold exists",
+      "Medical expenses must exceed a certain amount",
+      "Any amount allows lawsuit",
+      "Permanent injury only"
+    ],
+    "correctIndex": 1,
+    "category": "insurance"
+  },
+  {
+    "id": "HI-031",
+    "question": "When must drivers stop for pedestrians at crosswalks in Hawaii?",
+    "answers": [
+      "Only at marked crosswalks",
+      "Only when pedestrian waves",
+      "When pedestrian is on your half or approaching closely",
+      "Only at intersections with signals"
+    ],
+    "correctIndex": 2,
+    "category": "stateUnique"
+  },
+  {
+    "id": "HI-032",
+    "question": "Are U-turns legal at signalized intersections in Hawaii?",
+    "answers": [
+      "Yes, always allowed",
+      "Yes, unless posted otherwise",
+      "Yes, during off-peak hours only",
+      "No, prohibited at all signalized intersections"
+    ],
+    "correctIndex": 3,
+    "category": "stateUnique"
+  },
+  {
+    "id": "HI-033",
+    "question": "Where must pedestrians walk when no sidewalk is available in Hawaii?",
+    "answers": [
+      "On the left side facing traffic",
+      "On the right side with traffic",
+      "In the middle of the road",
+      "Either side is acceptable"
+    ],
+    "correctIndex": 0,
+    "category": "stateUnique"
+  },
+  {
+    "id": "HI-034",
+    "question": "What must pedestrians do when crossing outside of a crosswalk in Hawaii?",
+    "answers": [
+      "Cross quickly",
+      "Yield right-of-way to all vehicles",
+      "Wave to drivers",
+      "Nothing, they always have right-of-way"
+    ],
+    "correctIndex": 1,
+    "category": "stateUnique"
+  },
+  {
+    "id": "HI-035",
+    "question": "Is jaywalking legal in Hawaii?",
+    "answers": [
+      "Yes, anywhere outside business districts",
+      "Yes, if no cars are present",
+      "No, it is illegal",
+      "Yes, with caution"
+    ],
+    "correctIndex": 2,
+    "category": "stateUnique"
+  },
+  {
+    "id": "HI-036",
+    "question": "Can you pass a vehicle stopped at a crosswalk for a pedestrian in Hawaii?",
+    "answers": [
+      "Yes, if safe",
+      "Yes, in the left lane only",
+      "Yes, if no pedestrian is visible",
+      "No, you must not overtake and pass"
+    ],
+    "correctIndex": 3,
+    "category": "stateUnique"
+  },
+  {
+    "id": "HI-037",
+    "question": "What should pedestrians do if suddenly needing to cross and vehicles are close in Hawaii?",
+    "answers": [
+      "Wait, do not enter the path of close vehicles",
+      "Cross quickly",
+      "Wave to get driver's attention",
+      "Step out slowly"
+    ],
+    "correctIndex": 0,
+    "category": "stateUnique"
+  },
+  {
+    "id": "HI-038",
+    "question": "What does Hawaii's comparative negligence rule mean for pedestrian accidents?",
+    "answers": [
+      "Pedestrians always recover full compensation",
+      "Pedestrians can recover if less than 50% at fault",
+      "Pedestrians cannot recover if any fault",
+      "Only drivers can be at fault"
+    ],
+    "correctIndex": 1,
+    "category": "stateUnique"
+  },
+  {
+    "id": "HI-039",
+    "question": "When can pedestrians start crossing against a Don't Walk signal in Hawaii?",
+    "answers": [
+      "If no cars are visible",
+      "During off-peak hours",
+      "Never, they must wait for Walk signal",
+      "If they can complete crossing quickly"
+    ],
+    "correctIndex": 2,
+    "category": "stateUnique"
+  },
+  {
+    "id": "HI-040",
+    "question": "What must pedestrians do who have started crossing on a Walk signal when it changes?",
+    "answers": [
+      "Run back to the curb",
+      "Stop in the middle",
+      "Speed up significantly",
+      "Continue to sidewalk or safety island"
+    ],
+    "correctIndex": 3,
+    "category": "stateUnique"
+  }
+]

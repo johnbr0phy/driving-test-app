@@ -1,0 +1,522 @@
+[
+  {
+    "id": "MN-001",
+    "state": "MN",
+    "category": "gdlLicensing",
+    "question": "What is the minimum age to apply for an instruction permit in Minnesota?",
+    "answers": [
+      "15 years old",
+      "16 years old",
+      "14 years old",
+      "17 years old"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MN-002",
+    "state": "MN",
+    "category": "gdlLicensing",
+    "question": "Who can supervise a permit holder while driving in Minnesota?",
+    "answers": [
+      "Any licensed driver over 18",
+      "Licensed driver at least 21 years old",
+      "Any family member with a license",
+      "Only certified driving instructors"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MN-003",
+    "state": "MN",
+    "category": "gdlLicensing",
+    "question": "How long must you hold an instruction permit before applying for a provisional license in Minnesota?",
+    "answers": [
+      "3 months",
+      "1 year",
+      "6 months",
+      "9 months"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MN-004",
+    "state": "MN",
+    "category": "gdlLicensing",
+    "question": "How many supervised driving hours are required to move from instruction permit to provisional license in Minnesota?",
+    "answers": [
+      "20 hours total",
+      "50 hours total",
+      "Only a road test",
+      "30 hours, with 10 at night"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "MN-005",
+    "state": "MN",
+    "category": "gdlLicensing",
+    "question": "What are the nighttime driving restrictions for a provisional license holder in the first six months in Minnesota?",
+    "answers": [
+      "Cannot drive midnight to 5 AM without supervisor age 25+",
+      "Cannot drive 10 PM to 6 AM ever",
+      "Cannot drive 11 PM to 5 AM without parent only",
+      "No nighttime restrictions"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MN-006",
+    "state": "MN",
+    "category": "gdlLicensing",
+    "question": "How many passengers under 20 can a provisional license holder transport during the first six months in Minnesota?",
+    "answers": [
+      "No passengers allowed",
+      "One passenger unless family members",
+      "Two passengers maximum",
+      "Three passengers maximum"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MN-007",
+    "state": "MN",
+    "category": "gdlLicensing",
+    "question": "What phone use is allowed for provisional license holders in Minnesota?",
+    "answers": [
+      "Voice commands only",
+      "Hands-free calling only",
+      "None, except GPS navigation and music",
+      "Emergency calls only"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MN-008",
+    "state": "MN",
+    "category": "gdlLicensing",
+    "question": "At what age can you obtain a full unrestricted license in Minnesota?",
+    "answers": [
+      "16 years old",
+      "17 years old",
+      "19 years old",
+      "18 years old"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "MN-009",
+    "state": "MN",
+    "category": "gdlLicensing",
+    "question": "What does Vanessa's Law in Minnesota address?",
+    "answers": [
+      "Losing license eligibility until 18 for DUI or accident violations",
+      "Cell phone use while driving",
+      "Graduated license fees",
+      "Insurance requirements for teens"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MN-010",
+    "state": "MN",
+    "category": "gdlLicensing",
+    "question": "How long must you hold a provisional license with a clean record before upgrading to a full license in Minnesota?",
+    "answers": [
+      "6 months",
+      "12 months without serious violations",
+      "18 months",
+      "Automatically at age 18"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MN-011",
+    "state": "MN",
+    "category": "gdlLicensing",
+    "question": "How many passengers under 20 can a provisional license holder have during the second six months in Minnesota?",
+    "answers": [
+      "One passenger",
+      "Two passengers",
+      "Three passengers unless family members",
+      "No limit"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MN-012",
+    "state": "MN",
+    "category": "gdlLicensing",
+    "question": "Where must the supervisor sit when supervising a permit holder in Minnesota?",
+    "answers": [
+      "Anywhere in vehicle",
+      "Back seat acceptable",
+      "Either front seat",
+      "Front passenger seat"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "MN-013",
+    "state": "MN",
+    "category": "cellPhone",
+    "question": "What does Minnesota's hands-free law prohibit while driving?",
+    "answers": [
+      "Holding or manually using a phone",
+      "Only texting",
+      "Only video recording",
+      "Using Bluetooth devices"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MN-014",
+    "state": "MN",
+    "category": "cellPhone",
+    "question": "How can adult drivers legally make phone calls while driving in Minnesota?",
+    "answers": [
+      "Cannot make calls at all",
+      "Voice commands or single-touch activation",
+      "Only when parked",
+      "Only with wired headphones"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MN-015",
+    "state": "MN",
+    "category": "cellPhone",
+    "question": "When does Minnesota's hands-free law apply?",
+    "answers": [
+      "Only when vehicle is moving",
+      "Only on highways",
+      "Even when stopped at red lights",
+      "Only in school zones"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MN-016",
+    "state": "MN",
+    "category": "cellPhone",
+    "question": "What phone use is completely prohibited for drivers under 18 in Minnesota?",
+    "answers": [
+      "Handheld calls only",
+      "Texting only",
+      "Video recording only",
+      "All use except GPS and music"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "MN-017",
+    "state": "MN",
+    "category": "cellPhone",
+    "question": "When can you hold a phone to contact emergency services in Minnesota?",
+    "answers": [
+      "Anytime during an emergency",
+      "Only when fully stopped",
+      "Only with voice commands",
+      "Never while in traffic"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MN-018",
+    "state": "MN",
+    "category": "cellPhone",
+    "question": "When did Minnesota's hands-free driving law take effect?",
+    "answers": [
+      "January 1, 2019",
+      "August 1, 2019",
+      "July 1, 2020",
+      "January 1, 2020"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MN-019",
+    "state": "MN",
+    "category": "duiStateLaws",
+    "question": "What is the legal BAC limit for drivers under 21 in Minnesota?",
+    "answers": [
+      "Zero tolerance for any alcohol",
+      "0.02 percent",
+      "0.04 percent",
+      "0.08 percent"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MN-020",
+    "state": "MN",
+    "category": "duiStateLaws",
+    "question": "What is the BAC limit for commercial drivers in Minnesota?",
+    "answers": [
+      "0.08 percent",
+      "0.02 percent",
+      "Zero tolerance",
+      "0.04 percent"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "MN-021",
+    "state": "MN",
+    "category": "duiStateLaws",
+    "question": "What does Minnesota's implied consent law mean for drivers?",
+    "answers": [
+      "Automatic agreement to BAC testing when lawfully arrested",
+      "Permission to search vehicle",
+      "Consent to field sobriety tests only",
+      "Waiver of legal representation"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MN-022",
+    "state": "MN",
+    "category": "duiStateLaws",
+    "question": "What is the consequence of refusing a chemical test for the first time in Minnesota?",
+    "answers": [
+      "No penalty",
+      "License suspension for one year",
+      "Automatic DUI conviction",
+      "Warning only"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MN-023",
+    "state": "MN",
+    "category": "duiStateLaws",
+    "question": "At what BAC level is enhanced sentencing triggered in Minnesota?",
+    "answers": [
+      "0.10 percent",
+      "0.12 percent",
+      "0.16 percent or higher",
+      "0.20 percent"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MN-024",
+    "state": "MN",
+    "category": "duiStateLaws",
+    "question": "How far back does Minnesota look at prior DUI convictions for sentencing purposes?",
+    "answers": [
+      "5 years",
+      "7 years",
+      "Lifetime",
+      "10 years"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "MN-025",
+    "state": "MN",
+    "category": "duiStateLaws",
+    "question": "What is Minnesota's underage drinking and driving law commonly called?",
+    "answers": [
+      "Not-a-Drop law",
+      "Zero Tolerance Act",
+      "Underage DWI Statute",
+      "Youth Protection Law"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MN-026",
+    "state": "MN",
+    "category": "duiStateLaws",
+    "question": "How long is the license suspension for a second chemical test refusal in Minnesota?",
+    "answers": [
+      "One year",
+      "Six months",
+      "Three years",
+      "Two years"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "MN-027",
+    "state": "MN",
+    "category": "insurance",
+    "question": "What type of insurance system does Minnesota use?",
+    "answers": [
+      "At-fault system",
+      "Hybrid system",
+      "No-fault system",
+      "Choice system"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MN-028",
+    "state": "MN",
+    "category": "insurance",
+    "question": "What does Personal Injury Protection cover in Minnesota?",
+    "answers": [
+      "Only vehicle damage",
+      "Only property damage",
+      "Only collision damage",
+      "Medical expenses and lost wages"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "MN-029",
+    "state": "MN",
+    "category": "insurance",
+    "question": "What additional coverage is required in Minnesota beyond liability?",
+    "answers": [
+      "PIP and uninsured motorist coverage",
+      "Only comprehensive coverage",
+      "Only collision coverage",
+      "Gap insurance"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MN-030",
+    "state": "MN",
+    "category": "insurance",
+    "question": "How long do you have to file a PIP claim after an accident in Minnesota?",
+    "answers": [
+      "One year",
+      "Six months",
+      "Ninety days",
+      "Two years"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MN-031",
+    "state": "MN",
+    "category": "stateUnique",
+    "question": "What is Minnesota's Move Over Law named after?",
+    "answers": [
+      "Trooper Ted Foss",
+      "Officer John Smith",
+      "Governor Mark Dayton",
+      "Commissioner Sarah Johnson"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MN-032",
+    "state": "MN",
+    "category": "stateUnique",
+    "question": "What must you do when approaching an emergency vehicle with flashing lights on a multi-lane road in Minnesota?",
+    "answers": [
+      "Honk your horn",
+      "Stop completely",
+      "Flash your lights",
+      "Move over one lane or slow down"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "MN-033",
+    "state": "MN",
+    "category": "stateUnique",
+    "question": "How far must you stop from a school bus with flashing red lights in Minnesota?",
+    "answers": [
+      "At least 20 feet",
+      "At least 10 feet",
+      "At least 50 feet",
+      "At least 100 feet"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MN-034",
+    "state": "MN",
+    "category": "stateUnique",
+    "question": "What does Minnesota's expanded Move Over Law now include?",
+    "answers": [
+      "Only emergency vehicles",
+      "Any vehicle with hazard lights activated",
+      "Only tow trucks",
+      "Only police vehicles"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MN-035",
+    "state": "MN",
+    "category": "stateUnique",
+    "question": "At what age must children remain in a booster seat in Minnesota?",
+    "answers": [
+      "Until age 7",
+      "Until age 8",
+      "Until age 9 or exceeds booster limits",
+      "Until age 10"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MN-036",
+    "state": "MN",
+    "category": "stateUnique",
+    "question": "Until what age must children ride in rear-facing car seats in Minnesota?",
+    "answers": [
+      "Age 1",
+      "Age 3",
+      "Age 6 months",
+      "Age 2 or until exceeding seat limits"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "MN-037",
+    "state": "MN",
+    "category": "stateUnique",
+    "question": "When are right turns on red permitted in Minnesota?",
+    "answers": [
+      "After complete stop unless prohibited by sign",
+      "Never permitted",
+      "Only during daytime",
+      "Only on county roads"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "MN-038",
+    "state": "MN",
+    "category": "stateUnique",
+    "question": "What do yellow flashing lights on a school bus indicate in Minnesota?",
+    "answers": [
+      "Continue at normal speed",
+      "Bus is preparing to stop, slow down",
+      "Pass the bus quickly",
+      "Only stop if children present"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "MN-039",
+    "state": "MN",
+    "category": "stateUnique",
+    "question": "Where should children under 13 sit in a vehicle in Minnesota?",
+    "answers": [
+      "Front seat only",
+      "Either front or back",
+      "Back seat when possible",
+      "No specific requirement"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "MN-040",
+    "state": "MN",
+    "category": "stateUnique",
+    "question": "When must you stop for a school bus on a road with a physical barrier in Minnesota?",
+    "answers": [
+      "Always from both directions",
+      "Only if behind the bus",
+      "Only during school hours",
+      "Only if on same side as bus"
+    ],
+    "correctIndex": 3
+  }
+]

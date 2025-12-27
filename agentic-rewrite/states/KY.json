@@ -1,0 +1,522 @@
+[
+  {
+    "id": "KY-001",
+    "state": "KY",
+    "category": "gdlLicensing",
+    "question": "At what minimum age can you apply for a learner's permit in Kentucky?",
+    "answers": [
+      "15 years old",
+      "16 years old",
+      "14 years old",
+      "17 years old"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "KY-002",
+    "state": "KY",
+    "category": "gdlLicensing",
+    "question": "Who can supervise a learner's permit holder in Kentucky?",
+    "answers": [
+      "Any licensed driver over 18",
+      "Licensed adult at least 21 years old",
+      "Any family member with a license",
+      "Only certified driving instructors"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "KY-003",
+    "state": "KY",
+    "category": "gdlLicensing",
+    "question": "How long must you hold a learner's permit before applying for an intermediate license in Kentucky?",
+    "answers": [
+      "90 days",
+      "One year",
+      "At least 180 days",
+      "120 days"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "KY-004",
+    "state": "KY",
+    "category": "gdlLicensing",
+    "question": "How many hours of supervised driving practice must be documented before advancing from a permit in Kentucky?",
+    "answers": [
+      "40 hours total",
+      "50 hours total",
+      "30 hours total",
+      "60 hours total, 10 at night"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "KY-005",
+    "state": "KY",
+    "category": "gdlLicensing",
+    "question": "At what minimum age can you apply for an intermediate license in Kentucky?",
+    "answers": [
+      "16 years old",
+      "17 years old",
+      "15 years old",
+      "18 years old"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "KY-006",
+    "state": "KY",
+    "category": "gdlLicensing",
+    "question": "What is the nighttime driving restriction for intermediate license holders in Kentucky?",
+    "answers": [
+      "No driving between 10 PM and 5 AM",
+      "No driving between midnight and 6 AM",
+      "No driving between 11 PM and 5 AM",
+      "No nighttime restrictions"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "KY-007",
+    "state": "KY",
+    "category": "gdlLicensing",
+    "question": "What are valid exceptions to the intermediate license curfew in Kentucky?",
+    "answers": [
+      "Social events only",
+      "Any recreational activities",
+      "Emergencies, school activities, or work",
+      "No exceptions allowed"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "KY-008",
+    "state": "KY",
+    "category": "gdlLicensing",
+    "question": "How many unrelated passengers under 20 can an intermediate license holder transport in Kentucky?",
+    "answers": [
+      "Two passengers maximum",
+      "Three passengers maximum",
+      "No passengers allowed",
+      "One unrelated passenger"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "KY-009",
+    "state": "KY",
+    "category": "gdlLicensing",
+    "question": "At what minimum age can you obtain a full unrestricted license in Kentucky?",
+    "answers": [
+      "17 years old",
+      "18 years old",
+      "16 years old",
+      "19 years old"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "KY-010",
+    "state": "KY",
+    "category": "gdlLicensing",
+    "question": "What happens if an intermediate driver is convicted of a moving violation in Kentucky?",
+    "answers": [
+      "Fine only",
+      "Must restart the 180-day waiting period",
+      "License is suspended",
+      "Sent to traffic school"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "KY-011",
+    "state": "KY",
+    "category": "gdlLicensing",
+    "question": "What does Kentucky's No Pass/No Drive Law require for drivers under 18?",
+    "answers": [
+      "Valid insurance only",
+      "Parental permission only",
+      "Proof of school enrollment or graduation",
+      "Community service hours"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "KY-012",
+    "state": "KY",
+    "category": "gdlLicensing",
+    "question": "What can result in license revocation for a 16 or 17-year-old under Kentucky law?",
+    "answers": [
+      "Missing curfew once",
+      "Failing a road test",
+      "Speeding violations only",
+      "Dropping out or being academically delinquent"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "KY-013",
+    "state": "KY",
+    "category": "cellPhone",
+    "question": "What does Kentucky law prohibit for all drivers while operating a moving vehicle?",
+    "answers": [
+      "Texting and reading messages",
+      "Making phone calls",
+      "Using GPS navigation",
+      "Hands-free conversations"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "KY-014",
+    "state": "KY",
+    "category": "cellPhone",
+    "question": "What phone use is allowed for drivers 18 and older in Kentucky?",
+    "answers": [
+      "All phone activities",
+      "Making calls and using GPS",
+      "Only emergency calls",
+      "No phone use allowed"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "KY-015",
+    "state": "KY",
+    "category": "cellPhone",
+    "question": "What is the cell phone restriction for drivers under 18 in Kentucky?",
+    "answers": [
+      "Hands-free calls allowed",
+      "Texting only prohibited",
+      "All personal communication device use prohibited",
+      "GPS use allowed"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "KY-016",
+    "state": "KY",
+    "category": "cellPhone",
+    "question": "What applies to drivers under 18 with instruction permits or intermediate licenses in Kentucky?",
+    "answers": [
+      "Can use GPS only",
+      "Can make emergency calls",
+      "Can use hands-free devices",
+      "Cannot use phones while driving"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "KY-017",
+    "state": "KY",
+    "category": "cellPhone",
+    "question": "Is there currently a hands-free requirement for adult drivers in Kentucky?",
+    "answers": [
+      "No, adults can hold phones to make calls",
+      "Yes, all drivers must use hands-free",
+      "Only on highways",
+      "Only in school zones"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "KY-018",
+    "state": "KY",
+    "category": "cellPhone",
+    "question": "What has been proposed regarding Kentucky's distracted driving laws?",
+    "answers": [
+      "Removing all restrictions",
+      "Phone Down Kentucky Act banning holding phones",
+      "Allowing texting while stopped",
+      "Only affecting commercial drivers"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "KY-019",
+    "state": "KY",
+    "category": "duiStateLaws",
+    "question": "What is the BAC limit for drivers under 21 in Kentucky?",
+    "answers": [
+      "0.08 percent",
+      "0.04 percent",
+      "0.02 percent",
+      "Zero tolerance"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "KY-020",
+    "state": "KY",
+    "category": "duiStateLaws",
+    "question": "What is the BAC limit for commercial drivers operating commercial vehicles in Kentucky?",
+    "answers": [
+      "0.08 percent",
+      "0.02 percent",
+      "0.06 percent",
+      "0.04 percent"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "KY-021",
+    "state": "KY",
+    "category": "duiStateLaws",
+    "question": "What does implied consent mean in Kentucky?",
+    "answers": [
+      "Agreement to chemical BAC testing when licensed",
+      "Permission to search vehicle",
+      "Consent to arrest",
+      "Waiver of attorney rights"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "KY-022",
+    "state": "KY",
+    "category": "duiStateLaws",
+    "question": "What is the consequence of refusing a chemical BAC test for the first time in Kentucky?",
+    "answers": [
+      "Automatic DUI conviction",
+      "License suspension",
+      "Fine only",
+      "No penalty"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "KY-023",
+    "state": "KY",
+    "category": "duiStateLaws",
+    "question": "What right does a driver have regarding blood tests in Kentucky based on a 2021 ruling?",
+    "answers": [
+      "Must submit to blood tests",
+      "Cannot refuse any test",
+      "Can refuse blood test without criminal penalties",
+      "Must pay for blood test"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "KY-024",
+    "state": "KY",
+    "category": "duiStateLaws",
+    "question": "What BAC level is considered an aggravating factor for DUI in Kentucky?",
+    "answers": [
+      "0.10 percent",
+      "0.12 percent",
+      "0.20 percent",
+      "0.15 percent or higher"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "KY-025",
+    "state": "KY",
+    "category": "duiStateLaws",
+    "question": "How long does a DUI conviction remain on your record in Kentucky?",
+    "answers": [
+      "10 years",
+      "5 years",
+      "Lifetime",
+      "7 years"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "KY-026",
+    "state": "KY",
+    "category": "duiStateLaws",
+    "question": "What is an aggravating factor that increases DUI penalties in Kentucky?",
+    "answers": [
+      "Driving at night",
+      "Having a passenger under 12 years old",
+      "Driving alone",
+      "First offense status"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "KY-027",
+    "state": "KY",
+    "category": "insurance",
+    "question": "What type of insurance system does Kentucky use?",
+    "answers": [
+      "Pure no-fault system",
+      "Traditional at-fault only",
+      "Choice no-fault system",
+      "Hybrid fault system"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "KY-028",
+    "state": "KY",
+    "category": "insurance",
+    "question": "What coverage does Personal Injury Protection primarily pay for in Kentucky?",
+    "answers": [
+      "Vehicle damage only",
+      "Other drivers' injuries",
+      "Theft protection",
+      "Your medical costs and lost wages"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "KY-029",
+    "state": "KY",
+    "category": "insurance",
+    "question": "What can Kentucky drivers do regarding Personal Injury Protection coverage?",
+    "answers": [
+      "Reject it in writing on a state form",
+      "Purchase it optionally",
+      "Ignore it completely",
+      "Transfer it to another driver"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "KY-030",
+    "state": "KY",
+    "category": "insurance",
+    "question": "What are the consequences of driving without required insurance in Kentucky?",
+    "answers": [
+      "Warning only",
+      "Fine and possible jail time",
+      "License suspension only",
+      "Vehicle impoundment only"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "KY-031",
+    "state": "KY",
+    "category": "stateUnique",
+    "question": "When must drivers stop for a school bus with flashing red lights on an undivided road in Kentucky?",
+    "answers": [
+      "Only if directly behind",
+      "Only during school hours",
+      "From both directions",
+      "Never required to stop"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "KY-032",
+    "state": "KY",
+    "category": "stateUnique",
+    "question": "How far must you stop from a school bus with its stop arm extended in Kentucky?",
+    "answers": [
+      "5 feet",
+      "15 feet",
+      "20 feet",
+      "At least 10 feet"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "KY-033",
+    "state": "KY",
+    "category": "stateUnique",
+    "question": "What does Kentucky's Move Over Law require when approaching vehicles with flashing lights?",
+    "answers": [
+      "Move over a lane or slow down safely",
+      "Stop completely",
+      "Only honk your horn",
+      "Maintain speed"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "KY-034",
+    "state": "KY",
+    "category": "stateUnique",
+    "question": "What vehicles does Kentucky's expanded Move Over Law apply to as of 2024?",
+    "answers": [
+      "Only police vehicles",
+      "All vehicles with flashing lights, including disabled ones",
+      "Emergency vehicles only",
+      "Tow trucks only"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "KY-035",
+    "state": "KY",
+    "category": "stateUnique",
+    "question": "When must you dim your high beams for oncoming traffic in Kentucky?",
+    "answers": [
+      "Within 1000 feet",
+      "Within 300 feet",
+      "Within 500 feet",
+      "Never required"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "KY-036",
+    "state": "KY",
+    "category": "stateUnique",
+    "question": "When must you dim high beams for a vehicle you are following in Kentucky?",
+    "answers": [
+      "Within 100 feet",
+      "Within 300 feet",
+      "Within 500 feet",
+      "Within 200 feet"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "KY-037",
+    "state": "KY",
+    "category": "stateUnique",
+    "question": "Are daytime headlights required in Kentucky?",
+    "answers": [
+      "No, not required during daytime",
+      "Yes, always required",
+      "Only on highways",
+      "Only in winter months"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "KY-038",
+    "state": "KY",
+    "category": "stateUnique",
+    "question": "What is the rule for right turns on red when approaching a stopped school bus in Kentucky?",
+    "answers": [
+      "Allowed after full stop",
+      "Not allowed, must wait for bus",
+      "Allowed if no children visible",
+      "Allowed with caution"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "KY-039",
+    "state": "KY",
+    "category": "stateUnique",
+    "question": "On a four-lane highway, who must stop for a school bus with flashing red lights in Kentucky?",
+    "answers": [
+      "All traffic from both directions",
+      "No one needs to stop",
+      "Only traffic in the same direction as the bus",
+      "Only traffic behind the bus"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "KY-040",
+    "state": "KY",
+    "category": "stateUnique",
+    "question": "What threshold allows an injured person to sue outside Kentucky's no-fault system?",
+    "answers": [
+      "Any injury amount",
+      "Over $500 in bills",
+      "Any broken bone",
+      "At least $1,000 in medical bills or serious injury"
+    ],
+    "correctIndex": 3
+  }
+]

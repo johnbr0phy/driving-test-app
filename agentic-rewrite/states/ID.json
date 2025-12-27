@@ -3,7 +3,7 @@
     "id": "ID-001",
     "question": "What is the minimum age to apply for a Supervised Instruction Permit in Idaho?",
     "answers": [
-      "14 yrs 6 months",
+      "14 and a half",
       "15 years old",
       "16 years old",
       "14 years old"
@@ -29,7 +29,7 @@
     "answers": [
       "30 hours total",
       "40 hours total",
-      "50 hrs, 10 at night",
+      "50 hrs, 10 night",
       "60 hours total"
     ],
     "correctIndex": 2,
@@ -51,7 +51,7 @@
     "id": "ID-005",
     "question": "What is the minimum age of a supervising driver when practicing with an Idaho instruction permit?",
     "answers": [
-      "21 yrs w/ license",
+      "21 w/ license",
       "18 years old",
       "25 years old",
       "19 years old"
@@ -75,10 +75,10 @@
     "id": "ID-007",
     "question": "When can drivers under 16 with an underage license drive without supervision?",
     "answers": [
-      "Never allowed",
+      "Never permitted",
       "Anytime allowed",
-      "During daylight only",
-      "Only on weekends"
+      "Daylight hours",
+      "Weekends only"
     ],
     "correctIndex": 2,
     "category": "gdlLicensing"
@@ -112,8 +112,8 @@
     "question": "What happens to a teen driver's privileges after a second traffic conviction in Idaho?",
     "answers": [
       "Warning issued only",
-      "30-day suspension minimum",
-      "Must retake driver's ed",
+      "30-day suspension",
+      "Retake driver's ed",
       "No changes occur"
     ],
     "correctIndex": 1,
@@ -125,7 +125,7 @@
     "answers": [
       "Anywhere in vehicle",
       "In the back seat",
-      "Front seat beside driver",
+      "Front passenger seat",
       "Front or back seat"
     ],
     "correctIndex": 2,
@@ -147,8 +147,8 @@
     "id": "ID-013",
     "question": "What does Idaho's hands-free law prohibit while operating a vehicle?",
     "answers": [
-      "Touching device for texts/apps",
-      "All phone use prohibited",
+      "Touching for texts/apps",
+      "All phone use banned",
       "Only texting messages",
       "Only phone calls made"
     ],
@@ -185,8 +185,8 @@
     "answers": [
       "Cannot use it at all",
       "Only with both hands",
-      "By asking a passenger",
-      "Single touch or voice command"
+      "Ask passenger to do it",
+      "Single touch or voice"
     ],
     "correctIndex": 3,
     "category": "cellPhone"
@@ -243,10 +243,10 @@
     "id": "ID-021",
     "question": "What does Idaho's implied consent law require of drivers?",
     "answers": [
-      "Submit to chemical tests if arrested",
-      "Carry a signed consent form",
-      "Agree to all roadside tests",
-      "Allow all vehicle searches"
+      "Submit to tests if arrested",
+      "Carry signed consent form",
+      "Agree to roadside tests",
+      "Allow vehicle searches"
     ],
     "correctIndex": 0,
     "category": "duiStateLaws"
@@ -255,8 +255,8 @@
     "id": "ID-022",
     "question": "What is one consequence of refusing a chemical test in Idaho?",
     "answers": [
-      "A warning only",
-      "1-2 year license suspension",
+      "A warning only issued",
+      "1-2 year suspension",
       "Community service required",
       "No consequences at all"
     ],
@@ -304,7 +304,7 @@
     "question": "How many prior DUI convictions within 10 years elevate a DUI to a felony in Idaho?",
     "answers": [
       "One prior DUI",
-      "Two or more priors",
+      "Two or more DUIs",
       "Three prior DUIs",
       "Four prior DUIs"
     ],
@@ -351,10 +351,10 @@
     "id": "ID-030",
     "question": "What happens if you don't have insurance coverage for two consecutive months in Idaho?",
     "answers": [
-      "Nothing happens",
-      "Registration may be suspended",
+      "Nothing happens at all",
+      "Registration suspended",
       "You receive a warning only",
-      "License suspended permanently"
+      "License suspended forever"
     ],
     "correctIndex": 1,
     "category": "insurance"
@@ -375,10 +375,10 @@
     "id": "ID-032",
     "question": "Who does Idaho's chain-up law on mountain passes primarily apply to?",
     "answers": [
-      "All vehicles on the road",
+      "All vehicles on road",
       "Passenger cars only",
       "Motorcycles only",
-      "Commercial vehicles 26k+ lbs"
+      "Commercial 26k+ lbs"
     ],
     "correctIndex": 3,
     "category": "stateUnique"
@@ -387,10 +387,10 @@
     "id": "ID-033",
     "question": "What are you required to do if you hit and kill or injure a large animal in Idaho?",
     "answers": [
-      "Report to Fish & Game or police",
-      "Leave the scene immediately",
-      "Call your insurance only",
-      "Nothing is required at all"
+      "Report to authorities",
+      "Leave scene immediately",
+      "Call insurance only",
+      "Nothing is required"
     ],
     "correctIndex": 0,
     "category": "stateUnique"
@@ -399,10 +399,10 @@
     "id": "ID-034",
     "question": "When are deer and elk most active near Idaho roadways?",
     "answers": [
-      "Midday hours",
-      "Dawn, dusk, and nighttime",
-      "Only during winter months",
-      "Afternoon hours only"
+      "Midday hours only",
+      "Dawn, dusk, night",
+      "Winter months only",
+      "Afternoon hours"
     ],
     "correctIndex": 1,
     "category": "stateUnique"
@@ -423,10 +423,10 @@
     "id": "ID-036",
     "question": "What is the maximum speed for slow-moving vehicles on Idaho highways?",
     "answers": [
-      "15 mph is maximum",
-      "20 mph is maximum",
-      "30 mph is maximum",
-      "25 mph or design speed"
+      "15 mph maximum",
+      "20 mph maximum",
+      "30 mph maximum",
+      "25 mph maximum"
     ],
     "correctIndex": 3,
     "category": "stateUnique"
@@ -471,10 +471,10 @@
     "id": "ID-040",
     "question": "Who is liable if you hit livestock on an open-range road in Idaho?",
     "answers": [
-      "The rancher is always liable",
+      "Rancher always liable",
       "The state is liable",
       "No one is liable",
-      "You may be liable if at fault"
+      "You if at fault"
     ],
     "correctIndex": 3,
     "category": "stateUnique"

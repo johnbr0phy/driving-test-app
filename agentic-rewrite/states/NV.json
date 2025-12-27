@@ -239,10 +239,10 @@
     "category": "duiStateLaws",
     "question": "What is the legal BAC limit for drivers under 21 in Nevada?",
     "answers": [
-      "0.08 percent",
-      "0.04 percent",
-      "0.02 percent",
-      "0.01 percent"
+      "0.08%",
+      "0.04%",
+      "0.02%",
+      "0.01%"
     ],
     "correctIndex": 2
   },
@@ -252,10 +252,10 @@
     "category": "duiStateLaws",
     "question": "What is the BAC limit for commercial drivers in Nevada?",
     "answers": [
-      "0.08 percent",
-      "0.02 percent",
-      "0.06 percent",
-      "0.04 percent"
+      "0.08%",
+      "0.02%",
+      "0.06%",
+      "0.04%"
     ],
     "correctIndex": 3
   },

@@ -239,9 +239,9 @@
     "category": "duiStateLaws",
     "question": "What is the legal BAC limit for drivers under 21 in Nebraska?",
     "answers": [
-      "0.08 percent",
-      "0.04 percent",
-      "0.02 percent",
+      "0.08%",
+      "0.04%",
+      "0.02%",
       "Zero tolerance"
     ],
     "correctIndex": 2
@@ -252,10 +252,10 @@
     "category": "duiStateLaws",
     "question": "What is the BAC limit for commercial drivers in Nebraska?",
     "answers": [
-      "0.08 percent",
-      "0.02 percent",
-      "0.06 percent",
-      "0.04 percent"
+      "0.08%",
+      "0.02%",
+      "0.06%",
+      "0.04%"
     ],
     "correctIndex": 3
   },
@@ -291,10 +291,10 @@
     "category": "duiStateLaws",
     "question": "At what BAC level is a DUI considered aggravated in Nebraska?",
     "answers": [
-      "0.10 percent",
-      "0.12 percent",
-      "0.15 percent",
-      "0.20 percent"
+      "0.10%",
+      "0.12%",
+      "0.15%",
+      "0.20%"
     ],
     "correctIndex": 2
   },

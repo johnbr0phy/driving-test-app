@@ -239,10 +239,10 @@
     "category": "duiStateLaws",
     "question": "What is the legal BAC limit for drivers under 21 in Texas?",
     "answers": [
-      "0.08 percent BAC limit",
-      "0.04 percent BAC limit",
+      "0.08% BAC limit",
+      "0.04% BAC limit",
       "Any detectable amount",
-      "0.05 percent BAC limit"
+      "0.05% BAC limit"
     ],
     "correctIndex": 2
   },
@@ -252,10 +252,10 @@
     "category": "duiStateLaws",
     "question": "What is the BAC limit for commercial drivers operating CMVs in Texas?",
     "answers": [
-      "0.08 percent BAC",
-      "0.02 percent BAC",
-      "0.06 percent BAC",
-      "0.04 percent BAC"
+      "0.08% BAC",
+      "0.02% BAC",
+      "0.06% BAC",
+      "0.04% BAC"
     ],
     "correctIndex": 3
   },

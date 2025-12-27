@@ -67,7 +67,7 @@
     "id": "UT-009",
     "state": "UT",
     "category": "gdlLicensing",
-    "question": "What percentage must you score on the Utah written knowledge test to pass?",
+    "question": "What%age must you score on the Utah written knowledge test to pass?",
     "answers": ["80% or higher", "75% or higher", "85% or higher", "70% or higher"],
     "correctIndex": 0
   },

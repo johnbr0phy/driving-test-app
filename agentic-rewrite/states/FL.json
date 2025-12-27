@@ -379,7 +379,7 @@
   {
     "id": "FL-030",
     "category": "insurance",
-    "question": "What percentage of medical expenses does Florida PIP typically cover?",
+    "question": "What%age of medical expenses does Florida PIP typically cover?",
     "answers": [
       "100% up to limits",
       "80% of medical expenses",

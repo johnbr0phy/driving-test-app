@@ -239,9 +239,9 @@
     "category": "duiStateLaws",
     "question": "What is the legal BAC limit for drivers under 21 in Louisiana?",
     "answers": [
-      "0.08 percent",
-      "0.04 percent",
-      "0.02 percent",
+      "0.08%",
+      "0.04%",
+      "0.02%",
       "Zero tolerance"
     ],
     "correctIndex": 2
@@ -252,10 +252,10 @@
     "category": "duiStateLaws",
     "question": "What is the BAC limit for commercial drivers operating commercial vehicles in Louisiana?",
     "answers": [
-      "0.08 percent",
-      "0.02 percent",
-      "0.06 percent",
-      "0.04 percent"
+      "0.08%",
+      "0.02%",
+      "0.06%",
+      "0.04%"
     ],
     "correctIndex": 3
   },
@@ -328,7 +328,7 @@
     "id": "LA-026",
     "state": "LA",
     "category": "duiStateLaws",
-    "question": "What enhanced penalty applies for a BAC of 0.15 percent or higher in Louisiana?",
+    "question": "What enhanced penalty applies for a BAC of 0.15% or higher in Louisiana?",
     "answers": [
       "Double fine amount only",
       "Mandatory minimum jail time increases",
@@ -484,12 +484,12 @@
     "id": "LA-038",
     "state": "LA",
     "category": "stateUnique",
-    "question": "What percentage at fault prevents you from recovering damages in Louisiana?",
+    "question": "What%age at fault prevents you from recovering damages in Louisiana?",
     "answers": [
-      "Any fault percentage",
-      "51 percent or more",
-      "75 percent or more",
-      "100 percent only"
+      "Any fault%age",
+      "51% or more",
+      "75% or more",
+      "100% only"
     ],
     "correctIndex": 1
   },

@@ -239,9 +239,9 @@
     "category": "duiStateLaws",
     "question": "What is the legal BAC limit for drivers age 21 and over in South Dakota?",
     "answers": [
-      "0.05 percent",
-      "0.10 percent",
-      "0.08 percent",
+      "0.05%",
+      "0.10%",
+      "0.08%",
       "Zero tolerance"
     ],
     "correctIndex": 2
@@ -252,10 +252,10 @@
     "category": "duiStateLaws",
     "question": "What is the BAC limit for commercial drivers in South Dakota?",
     "answers": [
-      "0.08 percent",
-      "0.02 percent",
+      "0.08%",
+      "0.02%",
       "Zero tolerance",
-      "0.04 percent"
+      "0.04%"
     ],
     "correctIndex": 3
   },
@@ -266,8 +266,8 @@
     "question": "What is the alcohol tolerance level for drivers under 21 in South Dakota?",
     "answers": [
       "Zero tolerance policy",
-      "0.02 percent limit",
-      "0.04 percent limit",
+      "0.02% limit",
+      "0.04% limit",
       "Same as adult limit"
     ],
     "correctIndex": 0

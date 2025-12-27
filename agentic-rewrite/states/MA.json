@@ -239,9 +239,9 @@
     "category": "duiStateLaws",
     "question": "What is the BAC limit for drivers under 21 in Massachusetts?",
     "answers": [
-      "0.08 percent",
-      "0.04 percent",
-      "0.02 percent",
+      "0.08%",
+      "0.04%",
+      "0.02%",
       "Zero tolerance"
     ],
     "correctIndex": 2
@@ -252,10 +252,10 @@
     "category": "duiStateLaws",
     "question": "What is the BAC limit for commercial drivers in Massachusetts?",
     "answers": [
-      "0.08 percent",
-      "0.02 percent",
+      "0.08%",
+      "0.02%",
       "Same as regular drivers",
-      "0.04 percent"
+      "0.04%"
     ],
     "correctIndex": 3
   },

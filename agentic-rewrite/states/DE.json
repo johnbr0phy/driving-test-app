@@ -40,10 +40,10 @@
     "category": "gdlLicensing",
     "question": "What happens to a Delaware GDL after the permit holder completes twelve valid months of driving?",
     "answers": [
-      "You must schedule a new road test",
-      "You must pay an upgrade fee",
-      "You must complete additional driver education",
-      "It automatically converts to a Class D license"
+      "You must schedule and pass a new road test",
+      "You must pay an additional upgrade fee",
+      "You must complete more driver education",
+      "It automatically converts to Class D"
     ],
     "correctIndex": 3
   },
@@ -64,10 +64,10 @@
     "category": "gdlLicensing",
     "question": "Who is legally liable for damages caused by a Delaware GDL driver's negligence?",
     "answers": [
-      "Only the GDL driver",
-      "Both the sponsor and the GDL driver",
-      "Only the sponsor",
-      "The driver's insurance company only"
+      "Only the GDL driver themselves",
+      "Both sponsor and GDL driver",
+      "Only the sponsoring adult",
+      "The insurance company alone"
     ],
     "correctIndex": 1
   },
@@ -112,10 +112,10 @@
     "category": "gdlLicensing",
     "question": "What happens if a Delaware GDL holder's driving privilege is suspended during the twelve-month period?",
     "answers": [
-      "The suspension time adds to the twelve months",
-      "The suspension time does not count toward the twelve months",
+      "Suspension time extends the twelve months",
+      "Suspension time doesn't count toward it",
       "The GDL is permanently revoked",
-      "The driver must restart from Phase 1"
+      "Driver must restart from Phase 1"
     ],
     "correctIndex": 1
   },
@@ -172,9 +172,9 @@
     "category": "cellPhone",
     "question": "What penalty does a Delaware learner driver face for a first cell phone violation?",
     "answers": [
-      "Warning only",
+      "Written warning only",
       "Two-week suspension",
-      "One-month license suspension",
+      "One-month suspension",
       "Six-month suspension"
     ],
     "correctIndex": 2
@@ -196,10 +196,10 @@
     "category": "cellPhone",
     "question": "What action can Delaware drivers legally perform with their phone while driving?",
     "answers": [
-      "Activating or deactivating hands-free equipment",
-      "Checking directions at stoplights",
-      "Reading incoming text messages",
-      "Taking photos of traffic incidents"
+      "Activating hands-free mode",
+      "Checking maps at stoplights",
+      "Reading text messages",
+      "Taking photos of incidents"
     ],
     "correctIndex": 0
   },
@@ -232,10 +232,10 @@
     "category": "duiStateLaws",
     "question": "What enhanced penalty applies if your BAC is above a certain elevated threshold in Delaware?",
     "answers": [
-      "Double the standard fine",
+      "Double the standard fine amount",
       "Automatic vehicle impoundment",
-      "Mandatory community service",
-      "Automatic enhanced minimum penalties"
+      "Mandatory community service hours",
+      "Enhanced minimum penalties"
     ],
     "correctIndex": 3
   },
@@ -281,9 +281,9 @@
     "question": "What program allows eligible Delaware first-time DUI offenders to participate in education and treatment?",
     "answers": [
       "DUI Reduction Program",
-      "Alcohol Awareness Initiative",
-      "Safe Driver Program",
-      "First Offense Election program"
+      "Alcohol Awareness Course",
+      "Safe Driver Initiative",
+      "First Offense Election"
     ],
     "correctIndex": 3
   },
@@ -319,7 +319,7 @@
       "Collision coverage",
       "Comprehensive coverage",
       "Personal Injury Protection",
-      "Rental reimbursement"
+      "Rental reimbursement coverage"
     ],
     "correctIndex": 2
   },
@@ -340,10 +340,10 @@
     "category": "insurance",
     "question": "What coverage must Delaware insurance companies offer but can be rejected by the policyholder?",
     "answers": [
-      "Uninsured and underinsured motorist coverage",
-      "Collision coverage",
+      "Uninsured/underinsured motorist",
+      "Collision damage coverage",
       "Medical payments coverage",
-      "Comprehensive coverage"
+      "Comprehensive loss coverage"
     ],
     "correctIndex": 0
   },
@@ -425,9 +425,9 @@
     "question": "What must Delaware drivers do when traveling slower than the normal speed of traffic?",
     "answers": [
       "Use hazard lights continuously",
-      "Pull over every mile",
-      "Drive in the center lane",
-      "Keep right or near the right edge"
+      "Pull over at every mile marker",
+      "Drive in the center lane only",
+      "Keep right near the edge"
     ],
     "correctIndex": 3
   },
@@ -448,10 +448,10 @@
     "category": "stateUnique",
     "question": "What determines a reasonable following distance under Delaware law?",
     "answers": [
-      "Posted signs only",
-      "Speed, traffic flow, and road conditions",
-      "Vehicle weight and length",
-      "Time of day"
+      "Posted signs and speed limits",
+      "Speed, traffic, and conditions",
+      "Vehicle weight and size",
+      "Time of day and weather"
     ],
     "correctIndex": 1
   },

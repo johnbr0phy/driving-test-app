@@ -111,10 +111,10 @@
     "id": "AK-010",
     "question": "What happens if a provisional license holder is convicted of a traffic violation?",
     "answers": [
-      "They lose their license permanently",
-      "They must wait 6 more months before getting a full license",
-      "They must retake the written test",
-      "Nothing changes"
+      "Permanent license revocation",
+      "Six more months wait time",
+      "Must retake written test",
+      "No consequences apply"
     ],
     "correctIndex": 1,
     "category": "gdlLicensing"
@@ -147,9 +147,9 @@
     "id": "AK-013",
     "question": "When is texting while driving illegal in Alaska?",
     "answers": [
-      "When the vehicle is in motion",
-      "At all times",
-      "Only on highways",
+      "While vehicle is moving",
+      "At all times on roads",
+      "Only on state highways",
       "Only in school zones"
     ],
     "correctIndex": 0,
@@ -159,10 +159,10 @@
     "id": "AK-014",
     "question": "What type of cell phone use is permitted while driving in Alaska?",
     "answers": [
-      "All handheld use",
-      "Voice communication and hands-free devices",
-      "Texting only",
-      "No cell phone use allowed"
+      "All handheld device use",
+      "Voice and hands-free only",
+      "Texting at stoplights",
+      "No phone use permitted"
     ],
     "correctIndex": 1,
     "category": "cellPhone"
@@ -171,10 +171,10 @@
     "id": "AK-015",
     "question": "What is prohibited regarding screen devices while driving in Alaska?",
     "answers": [
-      "Using GPS only",
-      "Having any electronics in the car",
-      "Operating screens in full view of the driver",
-      "Listening to music"
+      "Using GPS navigation system",
+      "Any electronics in the car",
+      "Screens visible to driver",
+      "Listening to audio devices"
     ],
     "correctIndex": 2,
     "category": "cellPhone"
@@ -183,10 +183,10 @@
     "id": "AK-016",
     "question": "Is it legal to text at a red light in Alaska?",
     "answers": [
-      "No, it is never legal",
+      "No, never permitted",
       "Yes, in school zones only",
-      "No, only if traffic is present",
-      "Yes, because the vehicle is not in motion"
+      "No, if other traffic present",
+      "Yes, vehicle not in motion"
     ],
     "correctIndex": 3,
     "category": "cellPhone"
@@ -195,10 +195,10 @@
     "id": "AK-017",
     "question": "What information can be displayed on your phone while driving in Alaska?",
     "answers": [
-      "Caller identification",
-      "Text messages",
-      "Social media",
-      "Email"
+      "Caller ID only",
+      "Text message content",
+      "Social media feeds",
+      "Email notifications"
     ],
     "correctIndex": 0,
     "category": "cellPhone"
@@ -243,10 +243,10 @@
     "id": "AK-021",
     "question": "What does Alaska's implied consent law mean for drivers?",
     "answers": [
-      "You automatically consent to chemical testing when operating a vehicle",
-      "You can refuse any test without penalty",
-      "You must carry a consent form",
-      "Only commercial drivers must consent to testing"
+      "Driving implies consent to testing",
+      "You may refuse tests freely",
+      "Must carry a consent form",
+      "Only commercial drivers consent"
     ],
     "correctIndex": 0,
     "category": "duiStateLaws"
@@ -256,9 +256,9 @@
     "question": "What happens if you refuse a chemical test in Alaska?",
     "answers": [
       "You receive a warning only",
-      "You face penalties equal to a DUI conviction",
+      "Penalties equal to DUI",
       "You must pay a small fine",
-      "Nothing happens"
+      "No consequences result"
     ],
     "correctIndex": 1,
     "category": "duiStateLaws"
@@ -279,10 +279,10 @@
     "id": "AK-024",
     "question": "What is Alaska's policy for drivers under 21 regarding alcohol?",
     "answers": [
-      "0.02% limit",
-      "0.04% limit",
-      "Same as adults",
-      "Zero tolerance for any detectable amount"
+      "0.02% BAC limit",
+      "0.04% BAC limit",
+      "Same limit as adults",
+      "Zero tolerance policy"
     ],
     "correctIndex": 3,
     "category": "duiStateLaws"
@@ -316,9 +316,9 @@
     "question": "What does liability insurance cover in Alaska?",
     "answers": [
       "Your own vehicle damage",
-      "Your medical bills only",
-      "Other people's expenses if you cause an accident",
-      "All damages regardless of fault"
+      "Only your medical bills",
+      "Others' costs you cause",
+      "All damages any fault"
     ],
     "correctIndex": 2,
     "category": "insurance"
@@ -340,9 +340,9 @@
     "question": "In what format can proof of insurance be presented in Alaska?",
     "answers": [
       "Paper or digital",
-      "Paper only",
-      "Digital only",
-      "Video recording"
+      "Paper documents only",
+      "Digital format only",
+      "Video recording only"
     ],
     "correctIndex": 0,
     "category": "insurance"
@@ -352,9 +352,9 @@
     "question": "What happens if you cannot provide proof of insurance in Anchorage?",
     "answers": [
       "You receive a warning",
-      "Your vehicle may be impounded",
-      "You must walk home",
-      "Nothing happens"
+      "Vehicle may be impounded",
+      "Must arrange other ride",
+      "No consequences result"
     ],
     "correctIndex": 1,
     "category": "insurance"
@@ -365,8 +365,8 @@
     "answers": [
       "October through March",
       "November through April",
-      "April 15 through September 30",
-      "May through August"
+      "April 15 to September 30",
+      "May through August only"
     ],
     "correctIndex": 2,
     "category": "stateUnique"
@@ -387,10 +387,10 @@
     "id": "AK-033",
     "question": "What should you do immediately after your vehicle strikes a moose in Alaska?",
     "answers": [
-      "Get off the road if possible and call police",
-      "Approach the moose to check injuries",
-      "Drive away quickly",
-      "Take photos first"
+      "Pull over and call police",
+      "Approach moose to check it",
+      "Leave the scene quickly",
+      "Take photos immediately"
     ],
     "correctIndex": 0,
     "category": "stateUnique"
@@ -399,10 +399,10 @@
     "id": "AK-034",
     "question": "When are moose-vehicle collisions most likely to occur?",
     "answers": [
-      "Midday",
-      "Dusk, dawn, and nighttime",
-      "Only during winter",
-      "Afternoon rush hour"
+      "During midday hours",
+      "Dusk, dawn, and night",
+      "Only in winter months",
+      "Afternoon rush hours"
     ],
     "correctIndex": 1,
     "category": "stateUnique"
@@ -423,10 +423,10 @@
     "id": "AK-036",
     "question": "When must headlights be turned on in Alaska in relation to sunset and sunrise?",
     "answers": [
-      "At sunset to sunrise exactly",
-      "1 hour after sunset to 1 hour before sunrise",
-      "15 minutes after sunset to 15 minutes before sunrise",
-      "30 minutes after sunset to 30 minutes before sunrise"
+      "Exactly sunset to sunrise",
+      "1 hour after/before",
+      "15 minutes after/before",
+      "30 minutes after/before"
     ],
     "correctIndex": 3,
     "category": "stateUnique"
@@ -435,8 +435,8 @@
     "id": "AK-037",
     "question": "What type of headlights should you use when possible to spot wildlife at night in Alaska?",
     "answers": [
-      "High beam headlights",
-      "Low beam headlights",
+      "High beams",
+      "Low beams",
       "Fog lights",
       "Parking lights"
     ],
@@ -447,10 +447,10 @@
     "id": "AK-038",
     "question": "Why should you avoid approaching a moose after a collision?",
     "answers": [
-      "It is illegal",
-      "A frightened wounded moose can hurt you or further injure itself",
-      "The police will fine you",
-      "You might damage evidence"
+      "It is against the law",
+      "Wounded moose are dangerous",
+      "Police will issue a fine",
+      "You may damage evidence"
     ],
     "correctIndex": 1,
     "category": "stateUnique"
@@ -459,10 +459,10 @@
     "id": "AK-039",
     "question": "What is special about certain Alaska roads like the Seward Highway regarding headlights?",
     "answers": [
-      "Headlights are prohibited",
+      "Headlights prohibited here",
       "Only high beams allowed",
-      "Headlights must be on at all times",
-      "Headlights only at night"
+      "Headlights on at all times",
+      "Only needed after dark"
     ],
     "correctIndex": 2,
     "category": "stateUnique"
@@ -473,8 +473,8 @@
     "answers": [
       "Imported from Canada",
       "Less than two years old",
-      "Brand new only",
-      "Approved by the Alaska Department of Public Safety"
+      "Brand new from dealer",
+      "Approved by state DPS"
     ],
     "correctIndex": 3,
     "category": "stateUnique"

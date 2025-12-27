@@ -403,7 +403,7 @@
       "No, it's not available"
     ],
     "correctIndex": 2,
-    "explanation": "Colorado insurers must offer Medical Payments coverage in the minimum amount of $5,000, but drivers can reject it in writing."
+    "explanation": "Colorado insurers must offer Medical Payments coverage at a minimum level, but drivers can reject it in writing."
   },
   {
     "id": "CO-030",
@@ -493,15 +493,15 @@
     "id": "CO-036",
     "category": "stateUnique",
     "state": "CO",
-    "question": "What penalty can Colorado drivers face for crossing solid express lane lines?",
+    "question": "What happens if you illegally cross solid express lane lines in Colorado?",
     "answers": [
-      "$25 fine",
-      "$50 fine",
-      "$100 fine",
-      "$75 fine"
+      "Warning only",
+      "No penalty unless caught by an officer",
+      "Verbal warning from toll booth",
+      "Automated citation from camera enforcement"
     ],
     "correctIndex": 3,
-    "explanation": "Colorado implemented automated enforcement in 2025, issuing $75 citations for illegally crossing double solid lines outside designated express lane entry and exit areas."
+    "explanation": "Colorado uses automated enforcement cameras to issue citations for illegally crossing double solid lines outside designated express lane entry and exit areas."
   },
   {
     "id": "CO-037",
@@ -535,15 +535,15 @@
     "id": "CO-039",
     "category": "stateUnique",
     "state": "CO",
-    "question": "What is the maximum penalty for blocking Colorado roadways due to lack of proper traction equipment?",
+    "question": "What can happen to drivers who block Colorado mountain roadways due to inadequate traction equipment?",
     "answers": [
-      "$250 plus surcharge",
-      "$500 plus surcharge",
-      "$1,000 plus surcharge",
-      "$100 plus surcharge"
+      "Warning only for first offense",
+      "Vehicle towed at owner's expense",
+      "Significant fine plus towing costs",
+      "License suspension"
     ],
     "correctIndex": 2,
-    "explanation": "Colorado drivers who become stuck and block roadways because they lack proper traction equipment face fines up to $1,000 plus a surcharge."
+    "explanation": "Colorado drivers who become stuck and block roadways because they lack proper traction equipment face significant fines plus potential towing costs."
   },
   {
     "id": "CO-040",

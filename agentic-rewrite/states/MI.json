@@ -367,12 +367,12 @@
     "id": "MI-029",
     "state": "MI",
     "category": "insurance",
-    "question": "What Personal Injury Protection options are available in Michigan?",
+    "question": "What PIP options does Michigan offer since the 2019 insurance reform?",
     "answers": [
-      "Unlimited, $500k, $250k, or none with qualifying coverage",
+      "Multiple coverage levels from unlimited to opt-out",
       "Only unlimited coverage",
-      "Only $250k coverage",
-      "Fixed at $100k for everyone"
+      "One fixed coverage level",
+      "No PIP coverage allowed"
     ],
     "correctIndex": 0
   },

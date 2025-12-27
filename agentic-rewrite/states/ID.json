@@ -219,12 +219,12 @@
     "id": "ID-019",
     "question": "What is the standard blood alcohol concentration limit for adult drivers in Idaho?",
     "answers": [
-      "0.08%",
       "0.10%",
       "0.05%",
+      "0.08%",
       "0.06%"
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "category": "duiStateLaws"
   },
   {
@@ -315,12 +315,12 @@
     "id": "ID-027",
     "question": "What does bodily injury liability insurance cover in Idaho?",
     "answers": [
-      "Other drivers' and passengers' injuries when you're at fault",
       "Your own medical bills",
       "Your vehicle damage",
+      "Other drivers' and passengers' injuries when you're at fault",
       "All damages regardless of fault"
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "category": "insurance"
   },
   {
@@ -363,12 +363,12 @@
     "id": "ID-031",
     "question": "When are studded tires permitted in Idaho?",
     "answers": [
-      "October 1 through April 30",
       "November 1 through March 31",
       "Year-round",
+      "October 1 through April 30",
       "Only during active snowfall"
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "category": "stateUnique"
   },
   {

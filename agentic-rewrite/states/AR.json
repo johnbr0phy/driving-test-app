@@ -367,7 +367,7 @@
     "id": "AR-027",
     "state": "AR",
     "category": "insurance",
-    "question": "What does the first number in Arkansas's 25/50/25 insurance requirement represent?",
+    "question": "What does the first number in a liability insurance coverage format represent?",
     "answers": [
       "Property damage coverage",
       "Total accident coverage",
@@ -375,7 +375,7 @@
       "Uninsured motorist coverage"
     ],
     "correctIndex": 2,
-    "explanation": "The first 25 represents bodily injury coverage per person, covering medical expenses and lost income for one individual."
+    "explanation": "The first number in liability coverage represents bodily injury per person, covering medical expenses and lost income for one individual."
   },
   {
     "id": "AR-028",

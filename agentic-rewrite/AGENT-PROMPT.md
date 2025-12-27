@@ -4,6 +4,23 @@ You are generating multiple-choice driving test questions. Your goal: questions 
 
 ---
 
+## CRITICAL: Answer Position Distribution
+
+**You MUST cycle through correct answer positions to ensure even distribution.**
+
+| Question # | Correct Answer |
+|------------|----------------|
+| 1, 5, 9, 13, 17, 21, 25, 29, 33, 37 | A |
+| 2, 6, 10, 14, 18, 22, 26, 30, 34, 38 | B |
+| 3, 7, 11, 15, 19, 23, 27, 31, 35, 39 | C |
+| 4, 8, 12, 16, 20, 24, 28, 32, 36, 40 | D |
+
+This ensures exactly 25% for each position. **DO NOT deviate from this pattern.**
+
+When writing each question, FIRST determine which position (A/B/C/D) must be correct based on the question number, THEN write the question with the correct answer in that position.
+
+---
+
 ## Output Format
 
 Output valid JSON array:
@@ -32,8 +49,8 @@ Output valid JSON array:
 - `state`: "ALL" for universal, or 2-letter state code (CA, TX, etc.)
 - `questionId`: "U-001" format for universal, "CA-001" format for states
 - `question`: Must end with `?`
-- `correctAnswer`: "A", "B", "C", or "D"
-- `correctIndex`: 0, 1, 2, or 3 (must match correctAnswer)
+- `correctAnswer`: "A", "B", "C", or "D" (follows cycling pattern above)
+- `correctIndex`: 0, 1, 2, or 3 (must match: A=0, B=1, C=2, D=3)
 - `explanation`: 1-2 sentences, explains why answer is correct
 
 ---
@@ -82,14 +99,14 @@ D) Fine but no suspension
 ### DO
 - Test understanding of concepts
 - Use the **shortest natural answer** that works
-- Distribute correct answers evenly (roughly 25% each A/B/C/D)
+- **Follow the A/B/C/D cycling pattern strictly**
 - Make all wrong answers plausible
 - Keep explanations brief and useful
 
 ### DO NOT
 - Ask exact dollar amounts ("What is the fine for...")
 - Ask specific point values ("How many points for...")
-- Ask insurance minimums in X/Y/Z format
+- Ask insurance minimums in X/Y/Z format (like 25/50/25)
 - Pad answers to equal length artificially
 - Make correct answer longer/more detailed than others
 - Use "All of the above" or "None of the above"
@@ -137,16 +154,60 @@ D) No penalty if no accident
 
 ---
 
+## Insurance Questions (IMPORTANT)
+
+Insurance questions often lead to memorization. Here's how to avoid it:
+
+### BAD - Tests Memorization
+```
+Q: What are the minimum liability limits in California?
+A) 15/30/5
+B) 25/50/10
+C) 30/60/15
+D) 50/100/25
+```
+
+### GOOD - Tests Understanding
+```
+Q: What type of insurance system does California use?
+A) No-fault
+B) At-fault/tort
+C) Hybrid
+D) Choice system
+
+Q: What does liability insurance primarily cover?
+A) Damage to your own vehicle
+B) Damage you cause to others
+C) Theft of your vehicle
+D) Your own medical bills
+
+Q: What happens if you drive without required insurance?
+A) Warning for first offense
+B) Fine and possible license suspension
+C) No penalty unless in accident
+D) Points on license only
+
+Q: Why do states require liability insurance?
+A) To generate revenue
+B) To protect other drivers from uninsured losses
+C) To reduce traffic
+D) To limit vehicle ownership
+```
+
+**Never ask about specific dollar amounts, X/Y/Z formats, or exact minimums.**
+
+---
+
 ## Validation Checklist
 
 Before submitting, verify:
+- [ ] Answer positions follow the cycling pattern (Q1=A, Q2=B, Q3=C, Q4=D, Q5=A...)
 - [ ] All questions end with `?`
 - [ ] `correctAnswer` letter matches `correctIndex` number
 - [ ] No empty fields
 - [ ] Answers follow length rules for question type
 - [ ] Correct answer is NOT systematically longer
-- [ ] A/B/C/D distribution is roughly even
-- [ ] No exact fines, points, or insurance numbers
+- [ ] No exact fines, points, dollar amounts, or insurance X/Y/Z numbers
 - [ ] All wrong answers are plausible
 
 ---

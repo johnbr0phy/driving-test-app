@@ -510,12 +510,12 @@
     "id": "KY-040",
     "state": "KY",
     "category": "stateUnique",
-    "question": "What threshold allows an injured person to sue outside Kentucky's no-fault system?",
+    "question": "When can an injured person sue outside Kentucky's choice no-fault system?",
     "answers": [
-      "Any injury amount",
-      "Over $500 in bills",
-      "Any broken bone",
-      "At least $1,000 in medical bills or serious injury"
+      "Any injury, no threshold",
+      "Minor injuries only",
+      "Never, it's pure no-fault",
+      "Serious injury or medical bills exceeding the threshold"
     ],
     "correctIndex": 3
   }

@@ -317,8 +317,8 @@
     "category": "duiStateLaws",
     "question": "What is North Carolina's DWI sentencing system based on?",
     "answers": [
-      "Level system from Level 5 to Aggravated Level 1",
-      "Points-based system only",
+      "Tiered level system with severity rankings",
+      "Demerit accumulation system only",
       "Flat penalties for all offenses",
       "Judicial discretion only"
     ],

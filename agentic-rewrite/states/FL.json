@@ -366,15 +366,15 @@
   {
     "id": "FL-029",
     "category": "insurance",
-    "question": "What minimum PIP coverage must Florida drivers carry?",
+    "question": "What type of insurance is uniquely required in Florida's no-fault system?",
     "answers": [
-      "$10,000",
-      "$25,000",
-      "$15,000",
-      "$5,000"
+      "Personal Injury Protection (PIP)",
+      "Collision coverage",
+      "Comprehensive coverage",
+      "Rental car coverage"
     ],
     "correctIndex": 0,
-    "explanation": "Florida law requires all drivers to carry a minimum of $10,000 in Personal Injury Protection coverage."
+    "explanation": "Florida's no-fault system requires all drivers to carry Personal Injury Protection coverage for their own medical expenses regardless of fault."
   },
   {
     "id": "FL-030",
@@ -509,14 +509,14 @@
   {
     "id": "FL-040",
     "category": "stateUnique",
-    "question": "What is the minimum required PIP coverage amount in Florida for property damage liability?",
+    "question": "What two types of coverage are required for all Florida drivers?",
     "answers": [
-      "$5,000",
-      "$15,000",
-      "$25,000",
-      "$10,000"
+      "Liability and collision",
+      "Comprehensive and collision",
+      "Uninsured motorist and liability",
+      "PIP and property damage liability"
     ],
     "correctIndex": 3,
-    "explanation": "Florida requires both $10,000 in Personal Injury Protection and $10,000 in Property Damage Liability coverage."
+    "explanation": "Florida requires both Personal Injury Protection (PIP) and Property Damage Liability coverage as minimum requirements."
   }
 ]

@@ -814,7 +814,7 @@
   {
     "type": "Universal",
     "state": "ALL",
-    "questionId":="U-059",
+    "questionId": "U-059",
     "category": "rulesOfRoad",
     "question": "What is the safest following distance in normal conditions?",
     "optionA": "At least 3-4 seconds behind the vehicle ahead",

@@ -57,8 +57,8 @@ AL-015,AL,cellPhone,"How many button presses are allowed to initiate a call unde
 AL-016,AL,cellPhone,"What phone use is prohibited for drivers under 18 with a restricted license in Alabama?","Only handheld calls","Only texting","Only video recording","All mobile phone use",3,D
 AL-017,AL,cellPhone,"When can you legally contact emergency services with a phone while driving in Alabama?","Anytime for emergencies","Only when fully stopped","Only with voice commands","Never while vehicle on",0,A
 AL-018,AL,cellPhone,"What devices are permitted for phone conversations while driving in Alabama?","Handheld phones only","Bluetooth or speaker","No devices allowed","Wired headsets only",1,B
-AL-019,AL,duiStateLaws,"What is the legal BAC limit for drivers under 21 in Alabama?","0.08 percent","0.04 percent","0.02 percent","Zero tolerance",2,C
-AL-020,AL,duiStateLaws,"What is the BAC limit for commercial drivers in Alabama?","0.08 percent","0.02 percent","0.06 percent","0.04 percent",3,D
+AL-019,AL,duiStateLaws,"What is the legal BAC limit for drivers under 21 in Alabama?","0.08%","0.04%","0.02%","Zero tolerance",2,C
+AL-020,AL,duiStateLaws,"What is the BAC limit for commercial drivers in Alabama?","0.08%","0.02%","0.06%","0.04%",3,D
 AL-021,AL,duiStateLaws,"What does implied consent mean for Alabama drivers?","Agree to BAC testing if stopped","Permission to search vehicle","Consent to field sobriety only","Waiver of legal representation",0,A
 AL-022,AL,duiStateLaws,"What happens to minimum jail time if your BAC is 0.15 or higher in Alabama?","It stays the same","Minimum sentence doubles","Only fines increase","License suspension extends",1,B
 AL-023,AL,duiStateLaws,"How long must you maintain SR-22 insurance after a DUI conviction in Alabama?","One year required","Two years required","Three years required","Five years required",2,C
@@ -146,7 +146,7 @@ AZ-024,AZ,duiStateLaws,"Under Arizona's implied consent law, what happens if you
 AZ-025,AZ,duiStateLaws,"What is the standard BAC limit for most adult drivers in Arizona?","0.08%","0.10%","0.05%","0.06%",0,A
 AZ-026,AZ,duiStateLaws,"How long does a DUI conviction remain on your driving record in Arizona?","7 years total","Permanently","10 years total","5 years total",1,B
 AZ-027,AZ,insurance,"What type of insurance system does Arizona use for auto accidents?","No-fault system","Shared responsibility","At-fault system","Strict liability",2,C
-AZ-028,AZ,insurance,"What does Arizona's pure comparative fault rule allow?","Only one driver pays all damages","Insurance companies decide fault","No claims if you share any fault","Fault to be divided by percentages",3,D
+AZ-028,AZ,insurance,"What does Arizona's pure comparative fault rule allow?","Only one driver pays all damages","Insurance companies decide fault","No claims if you share any fault","Fault to be divided by%ages",3,D
 AZ-029,AZ,insurance,"What must drivers provide before registering a vehicle in Arizona?","Proof of insurance with ADOT code","Vehicle inspection certificate","Emissions test results only","Title and registration only",0,A
 AZ-030,AZ,insurance,"What does liability insurance primarily cover in Arizona?","Your own vehicle repairs","Injuries/damage to others","Your medical bills only","Theft and vandalism damage",1,B
 AZ-031,AZ,stateUnique,"What does Arizona's ""Pull Aside, Stay Alive"" campaign address?","Tire blowouts on hot pavement","Flash floods during monsoons","Safety during dust storms","Emergency vehicle right-of-way",2,C
@@ -297,14 +297,14 @@ DE-015,DE,cellPhone,"What penalty does a Delaware learner driver face for a firs
 DE-016,DE,cellPhone,"When are Delaware school bus drivers prohibited from using cell phones?","Only during student pickup and dropoff","During all driving hours","Only on highways","When at least 1 child aboard",3,D
 DE-017,DE,cellPhone,"What action can Delaware drivers legally perform with their phone while driving?","Activating hands-free mode","Checking maps at stoplights","Reading text messages","Taking photos of incidents",0,A
 DE-018,DE,cellPhone,"Do Delaware cell phone violations add points to your driving record?","Yes, two points per violation","No, they do not add points","Yes, but only for repeat offenses","Only if combined with another violation",1,B
-DE-019,DE,duiStateLaws,"What is the BAC limit for drivers under 21 in Delaware?","0.04 percent","0.05 percent","0.02 percent","0.08 percent",2,C
+DE-019,DE,duiStateLaws,"What is the BAC limit for drivers under 21 in Delaware?","0.04%","0.05%","0.02%","0.08%",2,C
 DE-020,DE,duiStateLaws,"What enhanced penalty applies if your BAC is above a certain elevated threshold in Delaware?","Double the standard fine amount","Automatic vehicle impoundment","Mandatory community service hours","Enhanced minimum penalties",3,D
 DE-021,DE,duiStateLaws,"What device must all Delaware first-time DUI offenders install after their revocation period?","Ignition interlock device","Breath monitoring bracelet","GPS tracking system","Speed limiting device",0,A
-DE-022,DE,duiStateLaws,"What is the BAC limit for Delaware commercial drivers?","0.02 percent","0.04 percent","0.06 percent","0.08 percent",1,B
-DE-023,DE,duiStateLaws,"What happens if a Delaware driver under 17 is arrested with a BAC of 0.08 percent or higher?","License suspended for one year","License suspended until age 18","No license until reaching age 21","Mandatory DUI school only",2,C
+DE-022,DE,duiStateLaws,"What is the BAC limit for Delaware commercial drivers?","0.02%","0.04%","0.06%","0.08%",1,B
+DE-023,DE,duiStateLaws,"What happens if a Delaware driver under 17 is arrested with a BAC of 0.08% or higher?","License suspended for one year","License suspended until age 18","No license until reaching age 21","Mandatory DUI school only",2,C
 DE-024,DE,duiStateLaws,"What program allows eligible Delaware first-time DUI offenders to participate in education and treatment?","DUI Reduction Program","Alcohol Awareness Course","Safe Driver Initiative","First Offense Election",3,D
-DE-025,DE,duiStateLaws,"What BAC level must first-time offenders stay below to qualify for Delaware's First Offense Election?","Below 0.15 percent","Below 0.12 percent","Below 0.10 percent","Below 0.08 percent",0,A
-DE-026,DE,duiStateLaws,"What is the BAC limit for Delaware school bus and daycare drivers?","0.00 percent","0.02 percent","0.04 percent","0.08 percent",1,B
+DE-025,DE,duiStateLaws,"What BAC level must first-time offenders stay below to qualify for Delaware's First Offense Election?","Below 0.15%","Below 0.12%","Below 0.10%","Below 0.08%",0,A
+DE-026,DE,duiStateLaws,"What is the BAC limit for Delaware school bus and daycare drivers?","0.00%","0.02%","0.04%","0.08%",1,B
 DE-027,DE,insurance,"What type of coverage does Delaware require in addition to standard liability insurance?","Collision coverage","Comprehensive coverage","Personal Injury Protection","Rental reimbursement coverage",2,C
 DE-028,DE,insurance,"Despite requiring PIP coverage, what type of state is Delaware for insurance purposes?","Modified no-fault state","Pure no-fault state","Contributory negligence state","At-fault state",3,D
 DE-029,DE,insurance,"What coverage must Delaware insurance companies offer but can be rejected by the policyholder?","Unins./underins. motorist","Collision damage coverage","Medical payments coverage","Comprehensive loss coverage",0,A
@@ -348,7 +348,7 @@ FL-026,FL,duiStateLaws,"Under Trenton's Law, what is the maximum penalty for a s
 FL-027,FL,insurance,"What type of insurance system does Florida operate under?","Fault-based liability system","Hybrid system coverage","No-fault with PIP coverage","Tort liability only system",2,C
 FL-028,FL,insurance,"How soon after an accident must you seek medical treatment to qualify for PIP benefits in Florida?","7 days","30 days","24 hours","14 days",3,D
 FL-029,FL,insurance,"What type of insurance is uniquely required in Florida's no-fault system?","Personal Injury Protection (PIP)","Collision coverage insurance","Comprehensive coverage insurance","Rental car coverage insurance",0,A
-FL-030,FL,insurance,"What percentage of medical expenses does Florida PIP typically cover?","100% up to limits","80% of medical expenses","50% of medical expenses","60% of medical expenses",1,B
+FL-030,FL,insurance,"What%age of medical expenses does Florida PIP typically cover?","100% up to limits","80% of medical expenses","50% of medical expenses","60% of medical expenses",1,B
 FL-031,FL,stateUnique,"During hurricane evacuations, which vehicles can use Emergency Shoulder Use lanes in Florida?","All vehicles including motorcycles","Emergency vehicles only allowed","Cars and SUVs, no trucks/trailers","Any vehicle under posted weight",2,C
 FL-032,FL,stateUnique,"How often must Florida drivers age 80 and older renew their licenses?","Every 8 years like other drivers","Every 4 years with testing","Annually with vision test","Every 6 years with vision test",3,D
 FL-033,FL,stateUnique,"What is Florida's minimum vision requirement for license holders?","20/50 in at least one eye","20/40 in both eyes","20/30 in at least one eye","20/60 in at least one eye",0,A
@@ -617,11 +617,11 @@ KS-015,KS,cellPhone,"What phone restriction applies to learner and intermediate 
 KS-016,KS,cellPhone,"When will Kansas begin issuing fines for hands-free violations instead of warnings?","Immediately July 1, 2025","October 1, 2025","December 31, 2025","January 1, 2026",3,D
 KS-017,KS,cellPhone,"When can you legally use your phone while driving in Kansas without hands-free equipment?","To report emergencies or crime","Never under any circumstances at all","Only when parked in parking lot","During daytime driving hours only",0,A
 KS-018,KS,cellPhone,"What has been illegal for all Kansas drivers since 2010?","Using GPS navigation systems","Texting while driving","Making phone calls while driving","Listening to music while driving",1,B
-KS-019,KS,duiStateLaws,"What is the legal BAC limit for drivers under 21 in Kansas?","Zero tolerance","0.04 percent","0.02 percent","0.08 percent",2,C
-KS-020,KS,duiStateLaws,"What is the BAC limit for commercial vehicle drivers in Kansas?","0.08 percent","0.02 percent","0.06 percent","0.04 percent",3,D
+KS-019,KS,duiStateLaws,"What is the legal BAC limit for drivers under 21 in Kansas?","Zero tolerance","0.04%","0.02%","0.08%",2,C
+KS-020,KS,duiStateLaws,"What is the BAC limit for commercial vehicle drivers in Kansas?","0.08%","0.02%","0.06%","0.04%",3,D
 KS-021,KS,duiStateLaws,"What does Kansas's implied consent law require of drivers?","Submit to BAC test when arrested","Consent to vehicle searches always","Accept field sobriety tests only","Waive right to legal counsel",0,A
 KS-022,KS,duiStateLaws,"What is the consequence of refusing a BAC test for the first time in Kansas?","Warning only issued first time","1-year suspension, 2-year IID","90-day suspension period only","No penalty unless DUI convicted",1,B
-KS-023,KS,duiStateLaws,"What BAC level results in stricter DUI penalties in Kansas?","0.10 percent or higher","0.12 percent or higher","0.15 percent or higher","0.20 percent or higher",2,C
+KS-023,KS,duiStateLaws,"What BAC level results in stricter DUI penalties in Kansas?","0.10% or higher","0.12% or higher","0.15% or higher","0.20% or higher",2,C
 KS-024,KS,duiStateLaws,"When does a DUI conviction become a felony in Kansas?","Second offense conviction","Any third offense conviction","Third offense only if BAC 0.15+","Third offense within 10 years",3,D
 KS-025,KS,duiStateLaws,"How can you get a DUI in Kansas without actually driving?","Attempting to operate while impaired","Sitting in driver's seat while drunk","Keys in ignition while parked drunk","Being near vehicle while intoxicated",0,A
 KS-026,KS,duiStateLaws,"What does an underage BAC violation result in for Kansas drivers under 21?","Criminal offense with jail time","License penalties, not criminal","Criminal record and suspension","Fine but no license suspension",1,B
@@ -657,8 +657,8 @@ KY-015,KY,cellPhone,"What is the cell phone restriction for drivers under 18 in 
 KY-016,KY,cellPhone,"What applies to drivers under 18 with instruction permits or intermediate licenses in Kentucky?","Can use GPS only","Can make emergency calls","Can use hands-free devices","No phone use while driving",3,D
 KY-017,KY,cellPhone,"Is there currently a hands-free requirement for adult drivers in Kentucky?","No, can hold phones for calls","Yes, all must use hands-free","Only on highways allowed","Only in school zone areas",0,A
 KY-018,KY,cellPhone,"What has been proposed regarding Kentucky's distracted driving laws?","Removing all restrictions","Banning holding phones","Allowing texting while stopped","Only affecting commercial drivers",1,B
-KY-019,KY,duiStateLaws,"What is the BAC limit for drivers under 21 in Kentucky?","0.08 percent","0.04 percent","0.02 percent","Zero tolerance",2,C
-KY-020,KY,duiStateLaws,"What is the BAC limit for commercial drivers operating commercial vehicles in Kentucky?","0.08 percent","0.02 percent","0.06 percent","0.04 percent",3,D
+KY-019,KY,duiStateLaws,"What is the BAC limit for drivers under 21 in Kentucky?","0.08%","0.04%","0.02%","Zero tolerance",2,C
+KY-020,KY,duiStateLaws,"What is the BAC limit for commercial drivers operating commercial vehicles in Kentucky?","0.08%","0.02%","0.06%","0.04%",3,D
 KY-021,KY,duiStateLaws,"What does implied consent mean in Kentucky?","Agree to BAC test when licensed","Permission to search vehicle","Consent to legal arrests","Waiver of all attorney rights",0,A
 KY-022,KY,duiStateLaws,"What is the consequence of refusing a chemical BAC test for the first time in Kentucky?","Automatic DUI conviction","License suspension","Monetary fine only","No penalty at all",1,B
 KY-023,KY,duiStateLaws,"What right does a driver have regarding blood tests in Kentucky based on a 2021 ruling?","Must submit to blood tests","Cannot refuse any test","Can refuse blood test","Must pay for blood test",2,C
@@ -697,14 +697,14 @@ LA-015,LA,cellPhone,"What exception allows phone use while driving in Louisiana?
 LA-016,LA,cellPhone,"Where is distracted driving a primary offense in Louisiana?","Everywhere throughout the state","Only on highways and freeways","Only within all city limits","School and construction zones",3,D
 LA-017,LA,cellPhone,"What type of device use is permitted while driving in Louisiana?","Hands-free and voice-operated devices","Any device while stopped at traffic lights","Handheld devices for GPS navigation only","No devices are allowed while driving",0,A
 LA-018,LA,cellPhone,"Who is completely prohibited from using any wireless device while driving in Louisiana?","All drivers throughout the state","Drivers under 21 with intermediate licenses","Only commercial drivers operating vehicles","No complete prohibition exists for anyone",1,B
-LA-019,LA,duiStateLaws,"What is the legal BAC limit for drivers under 21 in Louisiana?","0.08 percent","0.04 percent","0.02 percent","Zero tolerance",2,C
-LA-020,LA,duiStateLaws,"What is the BAC limit for commercial drivers operating commercial vehicles in Louisiana?","0.08 percent","0.02 percent","0.06 percent","0.04 percent",3,D
+LA-019,LA,duiStateLaws,"What is the legal BAC limit for drivers under 21 in Louisiana?","0.08%","0.04%","0.02%","Zero tolerance",2,C
+LA-020,LA,duiStateLaws,"What is the BAC limit for commercial drivers operating commercial vehicles in Louisiana?","0.08%","0.02%","0.06%","0.04%",3,D
 LA-021,LA,duiStateLaws,"What does Louisiana's implied consent law require of drivers?","Agreement to BAC testing when stopped","Permission to search vehicle for evidence","Consent to field sobriety tests only","Waiver of attorney rights during stops",0,A
 LA-022,LA,duiStateLaws,"What is the consequence of refusing a BAC test for the first time in Louisiana?","No penalty for first refusal","One-year license suspension","Only warning for first time","Mandatory jail time is required",1,B
 LA-023,LA,duiStateLaws,"How long is the license suspension for a second test refusal within 10 years in Louisiana?","One year","Six months","Two years","Three years",2,C
 LA-024,LA,duiStateLaws,"When does a DWI become a felony offense in Louisiana?","First offense with high BAC","Second offense","Any refusal","Third offense",3,D
 LA-025,LA,duiStateLaws,"What is the look-back period for prior DWI convictions in Louisiana?","10 years","5 years","Lifetime","7 years",0,A
-LA-026,LA,duiStateLaws,"What enhanced penalty applies for a BAC of 0.15 percent or higher in Louisiana?","Double fine amount only","Mandatory minimum jail time increases","License revocation period increases","Community service hours requirement",1,B
+LA-026,LA,duiStateLaws,"What enhanced penalty applies for a BAC of 0.15% or higher in Louisiana?","Double fine amount only","Mandatory minimum jail time increases","License revocation period increases","Community service hours requirement",1,B
 LA-027,LA,insurance,"What type of insurance system does Louisiana follow for auto accidents?","No-fault system","Modified no-fault","Hybrid system","Fault-based system",2,C
 LA-028,LA,insurance,"What does Louisiana's comparative fault system allow?","Equal division of damages between parties","Recovery of damages even if partially at fault","No recovery if you have any fault at all","Full recovery regardless of your fault level",1,B
 LA-029,LA,insurance,"Under Louisiana's No Pay, No Play law, what happens if you drive uninsured and have an accident?","Warning issued for first offense violation only","Criminal charges will be filed against driver","Cannot recover damages even if not at fault","No penalty when other driver has insurance coverage",2,C
@@ -716,7 +716,7 @@ LA-034,LA,stateUnique,"What must you do when approaching an emergency vehicle wi
 LA-035,LA,stateUnique,"What is Louisiana's left lane law regarding driving under the speed limit?","Allowed anytime you want to use it","Allowed in heavy traffic situations only","Prohibited unless actively passing","Allowed within 5 mph of the speed limit",2,C
 LA-036,LA,stateUnique,"What must you do when an emergency vehicle approaches from behind in Louisiana?","Speed up to clear the way","Stop immediately","Change lanes if possible","Pull over and stop",3,D
 LA-037,LA,stateUnique,"When can you make a right turn on red in Louisiana?","After stop when safe, no sign prohibits","Never allowed under any circumstances at all","Without stopping if roadway is completely clear","Only on one-way streets or at intersections",0,A
-LA-038,LA,stateUnique,"What percentage at fault prevents you from recovering damages in Louisiana?","Any fault percentage","51 percent or more","75 percent or more","100 percent only",1,B
+LA-038,LA,stateUnique,"What%age at fault prevents you from recovering damages in Louisiana?","Any fault%age","51% or more","75% or more","100% only",1,B
 LA-039,LA,stateUnique,"What is required when a highway has a dedicated center turn lane in Louisiana?","It is considered a passing lane for all traffic","It creates a divided highway for legal purposes","Must stop for school buses from both directions","It is for emergency vehicles only to use safely",2,C
 LA-040,LA,stateUnique,"What consequence can result from violating Louisiana's school bus stop law?","Warning only for first offense violation","Points added on license only as penalty","Community service hours only are required","License suspension and substantial penalties",3,D
 MA-001,MA,gdlLicensing,"At what minimum age can you apply for a learner's permit in Massachusetts?","16 years old","15 years old","17 years old","15 years and 9 months",0,A
@@ -737,8 +737,8 @@ MA-015,MA,cellPhone,"What phone use is allowed for drivers under 18 in Massachus
 MA-016,MA,cellPhone,"Can you legally use GPS navigation while driving in Massachusetts?","Never allowed at all","Only with voice commands","Only on highways allowed","Yes, if properly mounted",3,D
 MA-017,MA,cellPhone,"When can you hold your phone while stopped at a red light in Massachusetts?","Never, applies when stopped too","Only for emergency calls made","Only to check notifications","Only when using navigation",0,A
 MA-018,MA,cellPhone,"What is an exception to Massachusetts' hands-free law?","Checking emails at stoplights","Contacting emergency services","Using social media apps","Watching videos while driving",1,B
-MA-019,MA,duiStateLaws,"What is the BAC limit for drivers under 21 in Massachusetts?","0.08 percent","0.04 percent","0.02 percent","Zero tolerance",2,C
-MA-020,MA,duiStateLaws,"What is the BAC limit for commercial drivers in Massachusetts?","0.08 percent","0.02 percent","Same as regular drivers","0.04 percent",3,D
+MA-019,MA,duiStateLaws,"What is the BAC limit for drivers under 21 in Massachusetts?","0.08%","0.04%","0.02%","Zero tolerance",2,C
+MA-020,MA,duiStateLaws,"What is the BAC limit for commercial drivers in Massachusetts?","0.08%","0.02%","Same as regular drivers","0.04%",3,D
 MA-021,MA,duiStateLaws,"What does implied consent mean for Massachusetts drivers?","Agreement to chemical test when arrested","Permission to search your vehicle","Consent to field sobriety tests only","Waiver of right to legal attorney",0,A
 MA-022,MA,duiStateLaws,"What is the license suspension for refusing a chemical test with no prior OUI in Massachusetts?","30 days","180 days","1 year","90 days",1,B
 MA-023,MA,duiStateLaws,"How does Massachusetts classify a third OUI offense?","Misdemeanor","Traffic violation","Felony","Civil infraction",2,C
@@ -777,13 +777,13 @@ MD-015,MD,cellPhone,"How is handheld phone use while driving classified in Maryl
 MD-016,MD,cellPhone,"What phone function is allowed while driving in Maryland?","Texting at red lights","Reading emails","Browsing social media","Using GPS navigation",3,D
 MD-017,MD,cellPhone,"When can you use a handheld phone to contact emergency services in Maryland?","To report emergencies/911","Only when fully stopped","Only with voice commands","Never while vehicle runs",0,A
 MD-018,MD,cellPhone,"When is texting while driving prohibited in Maryland?","Only while moving in traffic","Always, even at red lights","Only on highways and freeways","Only in designated school zones",1,B
-MD-019,MD,duiStateLaws,"What is the legal BAC limit for adult drivers in Maryland?","0.10 percent","0.05 percent","0.08 percent","0.07 percent",2,C
-MD-020,MD,duiStateLaws,"What is the legal alcohol limit for drivers under 21 in Maryland?","0.08 percent BAC level","0.02 percent BAC level","0.04 percent BAC level","Any detectable alcohol",3,D
+MD-019,MD,duiStateLaws,"What is the legal BAC limit for adult drivers in Maryland?","0.10%","0.05%","0.08%","0.07%",2,C
+MD-020,MD,duiStateLaws,"What is the legal alcohol limit for drivers under 21 in Maryland?","0.08% BAC level","0.02% BAC level","0.04% BAC level","Any detectable alcohol",3,D
 MD-021,MD,duiStateLaws,"What does Maryland's implied consent law mean for drivers?","Agreement to BAC testing if arrested","Permission to search your vehicle","Consent to field sobriety testing","Waiver of your attorney rights",0,A
 MD-022,MD,duiStateLaws,"What is the license suspension for refusing a BAC test for the first time in Maryland?","30 days","270 days","180 days","One year",1,B
-MD-023,MD,duiStateLaws,"What is the BAC limit for commercial vehicle drivers in Maryland?","0.08 percent","0.02 percent","0.04 percent","0.06 percent",2,C
-MD-024,MD,duiStateLaws,"At what BAC level does Maryland require ignition interlock participation?","0.10 percent BAC level","0.12 percent BAC level","0.08 percent BAC level","0.15 percent or higher",3,D
-MD-025,MD,duiStateLaws,"What BAC level indicates DWI (driving while impaired) rather than DUI in Maryland?","0.07 percent","0.05 percent","0.06 percent","0.04 percent",0,A
+MD-023,MD,duiStateLaws,"What is the BAC limit for commercial vehicle drivers in Maryland?","0.08%","0.02%","0.04%","0.06%",2,C
+MD-024,MD,duiStateLaws,"At what BAC level does Maryland require ignition interlock participation?","0.10% BAC level","0.12% BAC level","0.08% BAC level","0.15% or higher",3,D
+MD-025,MD,duiStateLaws,"What BAC level indicates DWI (driving while impaired) rather than DUI in Maryland?","0.07%","0.05%","0.06%","0.04%",0,A
 MD-026,MD,duiStateLaws,"What is the license suspension for failing a BAC test for the first time in Maryland?","270 days","180 days","90 days","One year",1,B
 MD-027,MD,insurance,"What type of insurance system does Maryland use for auto accidents?","No-fault system","Comparative negligence only","At-fault system","Shared responsibility system",2,C
 MD-028,MD,insurance,"What does liability insurance primarily cover in Maryland?","Your own vehicle damage costs","Your medical bills only","Rental car expense costs","Injury/damage you cause others",3,D
@@ -817,8 +817,8 @@ ME-015,ME,cellPhone,"What phone interaction is allowed if your phone is mounted 
 ME-016,ME,cellPhone,"What phone restriction applies to drivers under 18 in Maine?","Hands-free devices only","Texting prohibited only","GPS navigation allowed","All phone use prohibited",3,D
 ME-017,ME,cellPhone,"When can you use a handheld phone to call emergency services in Maine?","Anytime during emergencies","Only when fully stopped","Only with hands-free device","Never while vehicle is on",0,A
 ME-018,ME,cellPhone,"What devices can drivers 18+ use for phone conversations while driving in Maine?","Handheld phones allowed","Bluetooth or speakerphone","No devices are permitted","Only wired headset use",1,B
-ME-019,ME,duiStateLaws,"What is Maine's zero tolerance BAC limit for drivers under 21?","0.08 percent","0.04 percent","0.00 percent","0.02 percent",2,C
-ME-020,ME,duiStateLaws,"What is the BAC limit for commercial drivers in Maine?","0.08 percent","0.02 percent","0.00 percent","0.04 percent",3,D
+ME-019,ME,duiStateLaws,"What is Maine's zero tolerance BAC limit for drivers under 21?","0.08%","0.04%","0.00%","0.02%",2,C
+ME-020,ME,duiStateLaws,"What is the BAC limit for commercial drivers in Maine?","0.08%","0.02%","0.00%","0.04%",3,D
 ME-021,ME,duiStateLaws,"What does Maine's implied consent law require?","Agreement to chemical testing if stopped","Permission to search your vehicle","Consent to field sobriety tests only","Waiver of attorney representation",0,A
 ME-022,ME,duiStateLaws,"What happens if a driver under 21 refuses a BAC test for the first time in Maine?","90-day license suspension","18-month license suspension","No penalty until convicted","One-year license suspension",1,B
 ME-023,ME,duiStateLaws,"What enhanced penalty applies if your BAC is 0.15% or higher in Maine?","Doubled fines only","Extended suspension only","Mandatory minimum jail time","Community service requirement",2,C
@@ -857,12 +857,12 @@ MI-015,MI,cellPhone,"What phone use is allowed for Level 1 and Level 2 teen driv
 MI-016,MI,cellPhone,"Under what circumstance can any driver manually use a phone while driving in Michigan?","When stopped at red lights","In parking lots only","When driving below 25 mph","To call 911 for emergencies",3,D
 MI-017,MI,cellPhone,"When did Michigan's hands-free driving law take effect?","June 30, 2023","January 1, 2024","July 1, 2022","January 1, 2023",0,A
 MI-018,MI,cellPhone,"What is Michigan's special cell phone law for teen drivers called?","Teen Safety Act","Kelsey's Law","Youth Protection Law","GDL Phone Restriction",1,B
-MI-019,MI,duiStateLaws,"What is the BAC limit for drivers under 21 in Michigan?","0.08 percent","0.04 percent","0.02 percent","Zero tolerance",2,C
-MI-020,MI,duiStateLaws,"What BAC level triggers Michigan's Super Drunk law with enhanced penalties?","0.10 percent","0.12 percent","0.15 percent","0.17 percent",3,D
+MI-019,MI,duiStateLaws,"What is the BAC limit for drivers under 21 in Michigan?","0.08%","0.04%","0.02%","Zero tolerance",2,C
+MI-020,MI,duiStateLaws,"What BAC level triggers Michigan's Super Drunk law with enhanced penalties?","0.10%","0.12%","0.15%","0.17%",3,D
 MI-021,MI,duiStateLaws,"What does Michigan's implied consent law require?","Chemical testing when arrested","Consent to all vehicle searches","Permission for field sobriety tests only","Waiver of all legal representation",0,A
 MI-022,MI,duiStateLaws,"What is the license suspension for a first-time BAC test refusal in Michigan?","6 months suspension","1 year suspension","2 years suspension","90 days suspension",1,B
 MI-023,MI,duiStateLaws,"How long is the lookback period for prior DUI offenses in Michigan?","5 years","Lifetime","7 years","10 years",2,C
-MI-024,MI,duiStateLaws,"What is the BAC limit for commercial drivers in Michigan?","0.08 percent","0.02 percent","0.06 percent","0.04 percent",3,D
+MI-024,MI,duiStateLaws,"What is the BAC limit for commercial drivers in Michigan?","0.08%","0.02%","0.06%","0.04%",3,D
 MI-025,MI,duiStateLaws,"What happens if an underage driver refuses a BAC test in Michigan?","6-month license suspension","1-year license suspension","2-year license suspension","Warning for first offense",0,A
 MI-026,MI,duiStateLaws,"How long is the suspension for a second implied consent refusal in Michigan?","1 year","2 years","3 years","Permanent revocation",1,B
 MI-027,MI,insurance,"What type of insurance system does Michigan use for auto accidents?","At-fault system","Comparative negligence","No-fault system","Choice system",2,C
@@ -897,11 +897,11 @@ MN-015,MN,cellPhone,"When does Minnesota's hands-free law apply?","Only when veh
 MN-016,MN,cellPhone,"What phone use is completely prohibited for drivers under 18 in Minnesota?","Handheld calls only","Texting messages only","Video recording only","All except GPS and music",3,D
 MN-017,MN,cellPhone,"When can you hold a phone to contact emergency services in Minnesota?","Anytime during an emergency","Only when fully stopped","Only with voice commands","Never while in traffic",0,A
 MN-018,MN,cellPhone,"When did Minnesota's hands-free driving law take effect?","January 1, 2019","August 1, 2019","July 1, 2020","January 1, 2020",1,B
-MN-019,MN,duiStateLaws,"What is the legal BAC limit for drivers under 21 in Minnesota?","Zero tolerance level","0.02 percent BAC level","0.04 percent BAC level","0.08 percent BAC level",0,A
-MN-020,MN,duiStateLaws,"What is the BAC limit for commercial drivers in Minnesota?","0.08 percent","0.02 percent","Zero tolerance","0.04 percent",3,D
+MN-019,MN,duiStateLaws,"What is the legal BAC limit for drivers under 21 in Minnesota?","Zero tolerance level","0.02% BAC level","0.04% BAC level","0.08% BAC level",0,A
+MN-020,MN,duiStateLaws,"What is the BAC limit for commercial drivers in Minnesota?","0.08%","0.02%","Zero tolerance","0.04%",3,D
 MN-021,MN,duiStateLaws,"What does Minnesota's implied consent law mean for drivers?","Agreement to BAC test when arrested","Permission to search vehicle","Consent to field sobriety tests only","Waiver of legal representation",0,A
 MN-022,MN,duiStateLaws,"What is the consequence of refusing a chemical test for the first time in Minnesota?","No penalty at all issued","One year license suspension","Automatic DUI conviction","Warning only, no penalty",1,B
-MN-023,MN,duiStateLaws,"At what BAC level is enhanced sentencing triggered in Minnesota?","0.10 percent BAC level","0.12 percent BAC level","0.16 percent or higher","0.20 percent BAC level",2,C
+MN-023,MN,duiStateLaws,"At what BAC level is enhanced sentencing triggered in Minnesota?","0.10% BAC level","0.12% BAC level","0.16% or higher","0.20% BAC level",2,C
 MN-024,MN,duiStateLaws,"How far back does Minnesota look at prior DUI convictions for sentencing purposes?","5 years","7 years","Lifetime","10 years",3,D
 MN-025,MN,duiStateLaws,"What is Minnesota's underage drinking and driving law commonly called?","Not-a-Drop law","Zero Tolerance Act","Underage DWI Statute","Youth Protection Law",0,A
 MN-026,MN,duiStateLaws,"How long is the license suspension for a second chemical test refusal in Minnesota?","One year","Six months","Three years","Two years",3,D
@@ -937,8 +937,8 @@ MO-015,MO,cellPhone,"What is allowed for activating phone functions under Missou
 MO-016,MO,cellPhone,"What video-related activity is prohibited while driving in Missouri?","Viewing GPS navigation maps","Using backup cameras only","Checking weather apps","Watching or recording video",3,D
 MO-017,MO,cellPhone,"When can you legally use a handheld device to contact emergency services in Missouri?","Anytime to report emergencies","Only when completely stopped","Only with voice commands","Never while vehicle is running",0,A
 MO-018,MO,cellPhone,"How can you legally use GPS navigation while driving in Missouri?","Holding the phone briefly","Device must be mounted","Only voice directions allowed","GPS is prohibited while driving",1,B
-MO-019,MO,duiStateLaws,"What is the BAC limit for drivers under 21 in Missouri?","0.08 percent","0.04 percent","0.02 percent","Zero tolerance only",2,C
-MO-020,MO,duiStateLaws,"What is the BAC limit for commercial drivers in Missouri?","0.08 percent","0.02 percent","0.06 percent","0.04 percent",3,D
+MO-019,MO,duiStateLaws,"What is the BAC limit for drivers under 21 in Missouri?","0.08%","0.04%","0.02%","Zero tolerance only",2,C
+MO-020,MO,duiStateLaws,"What is the BAC limit for commercial drivers in Missouri?","0.08%","0.02%","0.06%","0.04%",3,D
 MO-021,MO,duiStateLaws,"What does Missouri's implied consent law require?","Agreement to BAC test if suspected","Consent to vehicle searches always","Waiver of all legal rights","Permission for field sobriety tests only",0,A
 MO-022,MO,duiStateLaws,"What is the consequence of refusing a BAC test for the first time in Missouri?","Warning only first time","One-year revocation","Automatic DWI conviction","Court appearance required",1,B
 MO-023,MO,duiStateLaws,"What enhanced penalty applies if your BAC is 0.15 or higher in Missouri?","Double the standard fine","Extended probation period","Minimum 48-hour jail term","License suspension doubles",2,C
@@ -977,8 +977,8 @@ MS-015,MS,cellPhone,"What type of phone use is allowed under Mississippi's distr
 MS-016,MS,cellPhone,"What cell phone restriction applies to learner's permit holders in Mississippi?","Texting only prohibited","Handheld calls prohibited","Social media prohibited","All cell phone use banned",3,D
 MS-017,MS,cellPhone,"What activities count as texting under Mississippi law?","Texts, emails, social","Only SMS text messages","Only instant messages","Only social media posts",0,A
 MS-018,MS,cellPhone,"Who else is completely banned from cell phone use while driving in Mississippi?","All commercial drivers","Bus drivers with minors","Drivers over age 65","Motorcycle riders",1,B
-MS-019,MS,duiStateLaws,"What is the legal BAC limit for drivers under 21 in Mississippi?","0.08 percent","0.04 percent","0.02 percent","0.01 percent",2,C
-MS-020,MS,duiStateLaws,"What is the BAC limit for commercial drivers in Mississippi?","0.08 percent","0.02 percent","0.06 percent","0.04 percent",3,D
+MS-019,MS,duiStateLaws,"What is the legal BAC limit for drivers under 21 in Mississippi?","0.08%","0.04%","0.02%","0.01%",2,C
+MS-020,MS,duiStateLaws,"What is the BAC limit for commercial drivers in Mississippi?","0.08%","0.02%","0.06%","0.04%",3,D
 MS-021,MS,duiStateLaws,"What does Mississippi's implied consent law require?","BAC testing when arrested","Consent to vehicle searches","Field sobriety tests only","Roadside questioning",0,A
 MS-022,MS,duiStateLaws,"What is the consequence for a first-time refusal of a BAC test in Mississippi?","No penalty at all","90-day license suspension","One year suspension period","Automatic DUI conviction",1,B
 MS-023,MS,duiStateLaws,"At what point does a DUI become a felony offense in Mississippi?","Second offense","First offense with injury","Third offense","Fourth offense",2,C
@@ -1017,11 +1017,11 @@ MT-015,MT,cellPhone,"What does Bozeman's local ordinance require for cell phone 
 MT-016,MT,cellPhone,"Where must you be to legally use a handheld phone under Bozeman's ordinance?","Moving in traffic","At stop light only","On residential streets","Off roadway completely",3,D
 MT-017,MT,cellPhone,"Why is understanding local cell phone ordinances important in Montana?","Cities enforce stricter local rules","State law overrides all local laws","Federal law applies instead","No enforcement occurs locally",0,A
 MT-018,MT,cellPhone,"What type of device use is typically allowed under local hands-free laws in Montana?","Handheld texting devices","Voice-activated Bluetooth","Video recording devices","Social media browsing",1,B
-MT-019,MT,duiStateLaws,"What is the legal BAC limit for drivers under 21 in Montana?","0.08 percent","Zero tolerance","0.02 percent","0.04 percent",2,C
-MT-020,MT,duiStateLaws,"What is the legal BAC limit for commercial drivers in Montana?","0.08 percent","0.02 percent","0.06 percent","0.04 percent",3,D
+MT-019,MT,duiStateLaws,"What is the legal BAC limit for drivers under 21 in Montana?","0.08%","Zero tolerance","0.02%","0.04%",2,C
+MT-020,MT,duiStateLaws,"What is the legal BAC limit for commercial drivers in Montana?","0.08%","0.02%","0.06%","0.04%",3,D
 MT-021,MT,duiStateLaws,"What does Montana's implied consent law require of drivers?","Submit to BAC test if arrested","Consent to vehicle searches","Waive right to attorney","Admit fault at accident scene",0,A
 MT-022,MT,duiStateLaws,"What is the consequence of refusing a BAC test for the first time in Montana?","No penalty imposed","Six-month suspension","Automatic DUI conviction","1-year probation term",1,B
-MT-023,MT,duiStateLaws,"What BAC level qualifies as aggravated DUI in Montana?","0.08 percent or higher","0.12 percent or higher","0.16 percent or higher","0.20 percent or higher",2,C
+MT-023,MT,duiStateLaws,"What BAC level qualifies as aggravated DUI in Montana?","0.08% or higher","0.12% or higher","0.16% or higher","0.20% or higher",2,C
 MT-024,MT,duiStateLaws,"How far back does Montana look at prior DUI convictions when determining penalties?","5 years","7 years","Lifetime","10 years",3,D
 MT-025,MT,duiStateLaws,"When does a DUI become a felony charge in Montana?","Fourth offense or more","On second DUI offense","On third DUI offense","Never becomes felony",0,A
 MT-026,MT,duiStateLaws,"What can result from refusing a second BAC test within five years in Montana?","Three-month suspension","One-year suspension","Two-year suspension","Permanent revocation",1,B
@@ -1057,9 +1057,9 @@ NC-015,NC,cellPhone,"What phone use is permitted for adult drivers in North Caro
 NC-016,NC,cellPhone,"What are the cell phone restrictions for drivers under 18 in North Carolina?","Only texting is banned","Only handheld calls banned","Hands-free only","No phone but emergencies",3,D
 NC-017,NC,cellPhone,"Who can drivers under 18 contact by phone during emergencies in North Carolina?","Parents or guardians","Anyone for emergencies","Only 911 calls","No calls permitted",0,A
 NC-018,NC,cellPhone,"What devices must commercial drivers use for phone conversations in North Carolina?","Any device allowed","Hands-free only","No devices allowed","Handheld phones permitted",1,B
-NC-019,NC,duiStateLaws,"What is the legal BAC limit for drivers age 21 and over in North Carolina?","0.05 percent","0.10 percent","0.08 percent","Zero tolerance",2,C
-NC-020,NC,duiStateLaws,"What is the BAC limit for commercial drivers in North Carolina?","0.08 percent","0.02 percent","Zero tolerance","0.04 percent",3,D
-NC-021,NC,duiStateLaws,"What is the alcohol tolerance level for drivers under 21 in North Carolina?","Detectable amount","0.02 percent limit","0.04 percent limit","Same as adult limit",0,A
+NC-019,NC,duiStateLaws,"What is the legal BAC limit for drivers age 21 and over in North Carolina?","0.05%","0.10%","0.08%","Zero tolerance",2,C
+NC-020,NC,duiStateLaws,"What is the BAC limit for commercial drivers in North Carolina?","0.08%","0.02%","Zero tolerance","0.04%",3,D
+NC-021,NC,duiStateLaws,"What is the alcohol tolerance level for drivers under 21 in North Carolina?","Detectable amount","0.02% limit","0.04% limit","Same as adult limit",0,A
 NC-022,NC,duiStateLaws,"What happens if you refuse a chemical BAC test in North Carolina?","Warning only issued","12-month license revocation","No penalty until convicted","Three-month suspension period",1,B
 NC-023,NC,duiStateLaws,"What does North Carolina's implied consent law require?","Permission to search vehicle","Consent to field tests only","BAC test when lawfully stopped","Waiver of attorney rights",2,C
 NC-024,NC,duiStateLaws,"What device may be required for drivers with high BAC or multiple DUI convictions in North Carolina?","GPS monitoring device","Ankle monitor device","Dash camera device","Ignition interlock",3,D
@@ -1067,7 +1067,7 @@ NC-025,NC,duiStateLaws,"What is North Carolina's DWI sentencing system based on?
 NC-026,NC,duiStateLaws,"Can you refuse a field sobriety test without penalty in North Carolina?","No, same as chemical test","Yes, field tests are voluntary","Only if you request an attorney","Only during daytime",1,B
 NC-027,NC,insurance,"What type of fault system does North Carolina follow for auto accidents?","No-fault system","Shared fault system","At-fault system","Hybrid system",2,C
 NC-028,NC,insurance,"What coverage protects you if hit by an uninsured driver in North Carolina?","Collision coverage","Comprehensive coverage","Personal injury protection","Uninsured motorist",3,D
-NC-029,NC,insurance,"What is North Carolina's contributory negligence rule for accident claims?","1% fault bars recovery from other","Fault is always split equally","Damages reduced by fault percentage","No effect on claims filed",0,A
+NC-029,NC,insurance,"What is North Carolina's contributory negligence rule for accident claims?","1% fault bars recovery from other","Fault is always split equally","Damages reduced by fault%age","No effect on claims filed",0,A
 NC-030,NC,insurance,"What happens when your insurance is canceled in North Carolina?","Nothing until renewal","Insurer notifies DMV","You must notify DMV","Only affects registration",1,B
 NC-031,NC,stateUnique,"When must you turn on headlights while driving in North Carolina?","Only at nighttime","Only in heavy rain","When wipers are on","Only in fog",2,C
 NC-032,NC,stateUnique,"What must you do when approaching a stopped emergency vehicle on a multi-lane road in North Carolina?","Stop completely first","Flash your lights","Honk your horn loud","Move over or slow down",3,D
@@ -1097,13 +1097,13 @@ ND-015,ND,cellPhone,"Can drivers use voice-to-text features while driving in Nor
 ND-016,ND,cellPhone,"What restriction applies to commercial motor vehicle drivers in North Dakota?","Complete cell phone ban law","Only speakerphone allowed use","No texting restriction at all","Cannot hold phone or press >1 btn",3,D
 ND-017,ND,cellPhone,"Can drivers 21 and older talk on a handheld phone while driving in North Dakota?","Yes, handheld phones permitted","No, hands-free only law","Only in emergency situations","Only outside city limits use",0,A
 ND-018,ND,cellPhone,"What does North Dakota's texting law say about accessing web pages while driving?","Permitted if using voice commands","Prohibited for all drivers","Allowed for navigation only","Only restricted for commercial drivers",1,B
-ND-019,ND,duiStateLaws,"What is the BAC limit for drivers under 21 in North Dakota?","0.08 percent","0.04 percent","0.02 percent","Zero tolerance",2,C
-ND-020,ND,duiStateLaws,"What is the BAC limit for commercial drivers in North Dakota?","0.08 percent","0.02 percent","0.06 percent","0.04 percent",3,D
+ND-019,ND,duiStateLaws,"What is the BAC limit for drivers under 21 in North Dakota?","0.08%","0.04%","0.02%","Zero tolerance",2,C
+ND-020,ND,duiStateLaws,"What is the BAC limit for commercial drivers in North Dakota?","0.08%","0.02%","0.06%","0.04%",3,D
 ND-021,ND,duiStateLaws,"What does North Dakota's implied consent law mean?","Consent to chemical testing on roads","Permission to search vehicle fully","Consent to field sobriety only test","Waiver of attorney rights granted",0,A
 ND-022,ND,duiStateLaws,"What is the license suspension period for a first-time chemical test refusal in North Dakota?","90 days","180 days","One year","Two years",1,B
-ND-023,ND,duiStateLaws,"At what BAC level does North Dakota impose enhanced DUI penalties?","0.10 percent or higher","0.12 percent or higher","0.16 percent or higher","0.20 percent or higher",2,C
+ND-023,ND,duiStateLaws,"At what BAC level does North Dakota impose enhanced DUI penalties?","0.10% or higher","0.12% or higher","0.16% or higher","0.20% or higher",2,C
 ND-024,ND,duiStateLaws,"When does a fourth DUI offense become a felony in North Dakota?","Within 5 years","At any time in lifetime","Within 10 years","Within 7 years",3,D
-ND-025,ND,duiStateLaws,"What is the legal BAC limit for drivers 21 and older in North Dakota?","0.08 percent","0.10 percent","0.06 percent","0.05 percent",0,A
+ND-025,ND,duiStateLaws,"What is the legal BAC limit for drivers 21 and older in North Dakota?","0.08%","0.10%","0.06%","0.05%",0,A
 ND-026,ND,duiStateLaws,"What is the minimum charge for a first DUI offense with a minor passenger in North Dakota?","Class C misdemeanor","Class A misdemeanor","Infraction only","Class B misdemeanor",1,B
 ND-027,ND,insurance,"What type of insurance system does North Dakota use?","At-fault system","Choice system","No-fault system","Hybrid system",2,C
 ND-028,ND,insurance,"What does Personal Injury Protection (PIP) coverage provide in North Dakota?","Property damage only coverage","Liability coverage for others injured","Coverage for other drivers injured","Medical costs regardless of fault",3,D
@@ -1137,11 +1137,11 @@ NE-015,NE,cellPhone,"What restriction applies to commercial drivers and school b
 NE-016,NE,cellPhone,"When can drivers legally use handheld devices while driving in Nebraska?","When stopped at red lights","During highway driving only","For GPS navigation only","To contact emergency services",3,D
 NE-017,NE,cellPhone,"Does Nebraska currently have a comprehensive hands-free driving law?","No, only texting is prohibited","Yes, all handheld use banned","Yes, for drivers under 21","Only for commercial vehicles",0,A
 NE-018,NE,cellPhone,"What device usage is permitted for GPS navigation while driving in Nebraska?","Completely prohibited while driving","Voice-operated and mounted devices","Handheld devices only allowed","Only factory-installed systems",1,B
-NE-019,NE,duiStateLaws,"What is the legal BAC limit for drivers under 21 in Nebraska?","0.08 percent","0.04 percent","0.02 percent","Zero tolerance",2,C
-NE-020,NE,duiStateLaws,"What is the BAC limit for commercial drivers in Nebraska?","0.08 percent","0.02 percent","0.06 percent","0.04 percent",3,D
+NE-019,NE,duiStateLaws,"What is the legal BAC limit for drivers under 21 in Nebraska?","0.08%","0.04%","0.02%","Zero tolerance",2,C
+NE-020,NE,duiStateLaws,"What is the BAC limit for commercial drivers in Nebraska?","0.08%","0.02%","0.06%","0.04%",3,D
 NE-021,NE,duiStateLaws,"What does Nebraska's implied consent law require of lawfully arrested drivers?","Submit to breath, blood, or urine test","Consent to full vehicle search required","Field sobriety tests only required","Immediate license surrender required",0,A
 NE-022,NE,duiStateLaws,"What is the license revocation period for a first-time chemical test refusal in Nebraska?","90 days","One year","180 days","Two years",1,B
-NE-023,NE,duiStateLaws,"At what BAC level is a DUI considered aggravated in Nebraska?","0.10 percent","0.12 percent","0.15 percent","0.20 percent",2,C
+NE-023,NE,duiStateLaws,"At what BAC level is a DUI considered aggravated in Nebraska?","0.10%","0.12%","0.15%","0.20%",2,C
 NE-024,NE,duiStateLaws,"How many years of prior DUI convictions does Nebraska count for sentencing purposes?","5 years","7 years","10 years","15 years",3,D
 NE-025,NE,duiStateLaws,"What happens to drivers who fail a chemical test with no prior revocations in Nebraska?","180-day revocation","One-year suspension","90-day revocation","Warning only first time",0,A
 NE-026,NE,duiStateLaws,"What additional requirement applies to all DUI offenders in Nebraska?","Community service hours are required","Complete alcohol assessment and treatment","Attend victim impact panel sessions","Install vehicle monitoring systems",1,B
@@ -1167,7 +1167,7 @@ NH-005,NH,gdlLicensing,"What are the nighttime driving restrictions for youth op
 NH-006,NH,gdlLicensing,"What passenger restriction applies during the first six months of a youth operator license in New Hampshire?","No passengers under 21 years","One non-family under 25 only","Two passengers maximum total","No passengers at all allowed",1,B
 NH-007,NH,gdlLicensing,"At what age do GDL restrictions no longer apply in New Hampshire?","17 years old","21 years old","18 years old","19 years old",2,C
 NH-008,NH,gdlLicensing,"What must drivers under 18 complete before applying for a license in New Hampshire?","Road test requirement only","Online course requirement only","Defensive driving course required","Approved driver ed program",3,D
-NH-009,NH,gdlLicensing,"What score is required to pass the written knowledge test in New Hampshire?","At least 80 percent","At least 75 percent","At least 85 percent","At least 90 percent",0,A
+NH-009,NH,gdlLicensing,"What score is required to pass the written knowledge test in New Hampshire?","At least 80%","At least 75%","At least 85%","At least 90%",0,A
 NH-010,NH,gdlLicensing,"How many days must you wait between retakes of the written test in New Hampshire?","3 days","10 days","7 days","14 days",1,B
 NH-011,NH,gdlLicensing,"What documentation must drivers under 19 provide when applying for a permit in New Hampshire?","Birth certificate document only","Employment verification document","School enrollment or graduation proof","Parental consent form document",2,C
 NH-012,NH,gdlLicensing,"What time limit applies to the written knowledge test in New Hampshire?","30 minutes","60 minutes","No time limit","40 minutes",3,D
@@ -1177,8 +1177,8 @@ NH-015,NH,cellPhone,"What phone use is allowed for drivers under 18 in New Hamps
 NH-016,NH,cellPhone,"What type of enforcement applies to New Hampshire's hands-free law?","Warning only for first offense","Secondary enforcement","Court appearance required","Primary enforcement",3,D
 NH-017,NH,cellPhone,"When did New Hampshire's hands-free law take effect?","July 1, 2015","January 1, 2016","July 1, 2018","January 1, 2020",0,A
 NH-018,NH,cellPhone,"Can you use voice-to-text features while driving in New Hampshire?","Never allowed while driving","Yes, if voice-operated only","Only on highways allowed","Only with passenger present",1,B
-NH-019,NH,duiStateLaws,"What is the legal BAC limit for drivers under 21 in New Hampshire?","0.08 percent","0.04 percent","0.02 percent","Zero tolerance",2,C
-NH-020,NH,duiStateLaws,"What is the BAC limit for commercial drivers in New Hampshire?","0.08 percent","0.02 percent","0.06 percent","0.04 percent",3,D
+NH-019,NH,duiStateLaws,"What is the legal BAC limit for drivers under 21 in New Hampshire?","0.08%","0.04%","0.02%","Zero tolerance",2,C
+NH-020,NH,duiStateLaws,"What is the BAC limit for commercial drivers in New Hampshire?","0.08%","0.02%","0.06%","0.04%",3,D
 NH-021,NH,duiStateLaws,"What does implied consent mean for New Hampshire drivers?","Agreement to BAC testing if stopped","Permission to search vehicle fully","Consent to field sobriety tests only","Waiver of all legal representation",0,A
 NH-022,NH,duiStateLaws,"What happens if you refuse a BAC test for the first time in New Hampshire?","No penalty until convicted","180-day license suspension","One-year license suspension","Mandatory jail time",1,B
 NH-023,NH,duiStateLaws,"How long can an under-21 driver lose their license for refusing a BAC test in New Hampshire?","90 days suspension","One year suspension","Up to two years","Six months suspension",2,C
@@ -1217,8 +1217,8 @@ NJ-015,NJ,cellPhone,"What phone use is allowed for probationary license holders 
 NJ-016,NJ,cellPhone,"What type of enforcement applies to New Jersey's texting while driving ban?","Warning only for first offense","Secondary enforcement","No enforcement","Primary enforcement",3,D
 NJ-017,NJ,cellPhone,"When can you legally use a handheld phone to call emergency services while driving in New Jersey?","To report emergencies or crimes","Only when fully stopped first","Never while vehicle is on","Only on secondary roads allowed",0,A
 NJ-018,NJ,cellPhone,"What happens if a driver commits a third offense of using a handheld device while driving in New Jersey?","Warning issued only here","Points added, possible suspension","Community service requirement here","Insurance increase only here",1,B
-NJ-019,NJ,duiStateLaws,"What is the legal BAC limit for drivers under 21 in New Jersey?","0.08 percent","0.04 percent","0.01 percent","Zero tolerance",2,C
-NJ-020,NJ,duiStateLaws,"What is the BAC limit for commercial drivers in New Jersey?","0.08 percent","0.02 percent","0.06 percent","0.04 percent",3,D
+NJ-019,NJ,duiStateLaws,"What is the legal BAC limit for drivers under 21 in New Jersey?","0.08%","0.04%","0.01%","Zero tolerance",2,C
+NJ-020,NJ,duiStateLaws,"What is the BAC limit for commercial drivers in New Jersey?","0.08%","0.02%","0.06%","0.04%",3,D
 NJ-021,NJ,duiStateLaws,"What does implied consent mean for New Jersey drivers?","Agreement to chemical testing","Permission to search vehicle","Consent to field sobriety only","Waiver of attorney rights provided",0,A
 NJ-022,NJ,duiStateLaws,"What device is required after every DWI conviction in New Jersey?","Dashboard camera device","Ignition interlock device","GPS monitoring system","Breathalyzer attachment",1,B
 NJ-023,NJ,duiStateLaws,"How long does a DWI conviction remain on your driving record in New Jersey?","5 years on record","10 years on record","Permanently on record","Until age 65 years",2,C
@@ -1257,11 +1257,11 @@ NM-015,NM,cellPhone,"What phone use is prohibited for learner's permit and provi
 NM-016,NM,cellPhone,"What restriction applies to commercial vehicle operators regarding cell phones in New Mexico?","Only texting prohibited","Only hands-free allowed","No restrictions apply","No handheld device use",3,D
 NM-017,NM,cellPhone,"When can you legally use a phone to contact emergency services while driving in New Mexico?","Anytime to report emergencies","Only when fully stopped","Only with voice commands","Never while vehicle running",0,A
 NM-018,NM,cellPhone,"What type of texting is permitted under New Mexico's distracted driving law?","Manual texting at stoplights","Voice-operated hands-free only","Texting with one hand only","No texting permitted at all",1,B
-NM-019,NM,duiStateLaws,"What is the legal BAC limit for drivers under 21 in New Mexico?","0.08 percent","Zero tolerance","0.02 percent","0.04 percent",2,C
-NM-020,NM,duiStateLaws,"What is the BAC limit for commercial drivers in New Mexico?","0.08 percent","0.02 percent","0.06 percent","0.04 percent",3,D
+NM-019,NM,duiStateLaws,"What is the legal BAC limit for drivers under 21 in New Mexico?","0.08%","Zero tolerance","0.02%","0.04%",2,C
+NM-020,NM,duiStateLaws,"What is the BAC limit for commercial drivers in New Mexico?","0.08%","0.02%","0.06%","0.04%",3,D
 NM-021,NM,duiStateLaws,"What does implied consent mean for New Mexico drivers?","Agreement to BAC test when arrested","Permission to search vehicle","Consent to field sobriety only","Waiver of legal representation",0,A
 NM-022,NM,duiStateLaws,"What is the consequence of refusing a chemical test for the first time in New Mexico?","6-month license suspension","1-year license revocation","No penalty until convicted","90-day license suspension",1,B
-NM-023,NM,duiStateLaws,"At what BAC level is a DWI considered aggravated in New Mexico?","0.10 percent or higher","0.12 percent or higher","0.16 percent or higher","0.20 percent or higher",2,C
+NM-023,NM,duiStateLaws,"At what BAC level is a DWI considered aggravated in New Mexico?","0.10% or higher","0.12% or higher","0.16% or higher","0.20% or higher",2,C
 NM-024,NM,duiStateLaws,"What device is required for all DWI convictions in New Mexico?","GPS monitoring device used","Ankle monitor device used","Dash camera device used","Ignition interlock device",3,D
 NM-025,NM,duiStateLaws,"How long does New Mexico track DWI convictions for sentencing enhancement?","55 years","10 years","7 years","Lifetime",0,A
 NM-026,NM,duiStateLaws,"How long must SR-22 insurance be maintained after a DWI conviction in New Mexico?","One year minimum","Three years minimum","Two years minimum","Five years minimum",1,B
@@ -1297,8 +1297,8 @@ NV-015,NV,cellPhone,"Is it legal to use a handheld phone at a stoplight in Nevad
 NV-016,NV,cellPhone,"Where can you mount your phone in your vehicle under Nevada law?","Anywhere convenient for you to use","Only on the steering wheel position","Cannot mount phones at all legally","Dashboard/windshield not blocking view",3,D
 NV-017,NV,cellPhone,"When can you legally use a handheld phone to report an emergency while driving in Nevada?","Anytime for medical or criminal emergencies","Only when fully stopped completely on road","Only with police permission granted first","Never while driving at all on any road",0,A
 NV-018,NV,cellPhone,"How is Nevada's cell phone ban enforced?","Only after another violation occurs","Primary enforcement, stopped for this","Warning only for first offense occurs","Self-reported violations only allowed",1,B
-NV-019,NV,duiStateLaws,"What is the legal BAC limit for drivers under 21 in Nevada?","0.08 percent","0.04 percent","0.02 percent","0.01 percent",2,C
-NV-020,NV,duiStateLaws,"What is the BAC limit for commercial drivers in Nevada?","0.08 percent","0.02 percent","0.06 percent","0.04 percent",3,D
+NV-019,NV,duiStateLaws,"What is the legal BAC limit for drivers under 21 in Nevada?","0.08%","0.04%","0.02%","0.01%",2,C
+NV-020,NV,duiStateLaws,"What is the BAC limit for commercial drivers in Nevada?","0.08%","0.02%","0.06%","0.04%",3,D
 NV-021,NV,duiStateLaws,"What does Nevada's implied consent law require from drivers?","Submit to chemical testing when arrested for DUI","Consent to vehicle searches when requested","Agree to field sobriety tests only required","Permission for GPS tracking of vehicle",0,A
 NV-022,NV,duiStateLaws,"What is the consequence of refusing a chemical test for the first time in Nevada?","No penalty at all issued","1-year license revocation","Warning only issued first","6-month suspension period",1,B
 NV-023,NV,duiStateLaws,"How long is the lookback period for prior DUI offenses in Nevada?","5 years","Lifetime","7 years","10 years",2,C
@@ -1337,11 +1337,11 @@ NY-015,NY,cellPhone,"How many button presses are allowed to initiate a call whil
 NY-016,NY,cellPhone,"How does New York treat cell phone violations compared to other traffic violations?","No points, just fine only","Same as minor speeding ticket","Lower points than DUI charges","Among highest point violations",3,D
 NY-017,NY,cellPhone,"When can you legally hold a phone to contact emergency services while driving in New York?","During emergencies only","Only when fully stopped","Only with voice commands","Never while vehicle running",0,A
 NY-018,NY,cellPhone,"What restriction applies to commercial drivers stopped in traffic in New York?","Can use phone if not moving","Cannot use even when stopped","Can use hands-free only mode","Can text but cannot call",1,B
-NY-019,NY,duiStateLaws,"What is the legal BAC limit for drivers under 21 in New York?","0.08 percent","0.04 percent","0.02 percent","Zero tolerance",2,C
-NY-020,NY,duiStateLaws,"What is the BAC limit for commercial drivers in New York?","0.08 percent","0.02 percent","0.06 percent","0.04 percent",3,D
+NY-019,NY,duiStateLaws,"What is the legal BAC limit for drivers under 21 in New York?","0.08%","0.04%","0.02%","Zero tolerance",2,C
+NY-020,NY,duiStateLaws,"What is the BAC limit for commercial drivers in New York?","0.08%","0.02%","0.06%","0.04%",3,D
 NY-021,NY,duiStateLaws,"What does New York's implied consent law require?","BAC testing when stopped","Permission to search vehicle","Consent to field sobriety","Waiver of legal representation",0,A
 NY-022,NY,duiStateLaws,"What happens if you refuse a chemical test for the first time in New York?","Warning only issued","One-year revocation","No penalty until convicted","Six-month suspension only",1,B
-NY-023,NY,duiStateLaws,"What BAC level constitutes Aggravated DWI in New York?","0.10 percent level","0.15 percent level","0.18 percent or higher","0.20 percent or higher",2,C
+NY-023,NY,duiStateLaws,"What BAC level constitutes Aggravated DWI in New York?","0.10% level","0.15% level","0.18% or higher","0.20% or higher",2,C
 NY-024,NY,duiStateLaws,"What is a Zero Tolerance violation classified as in New York for drivers under 21?","Felony offense charge","Misdemeanor offense charge","Criminal violation charge","Administrative, not criminal",3,D
 NY-025,NY,duiStateLaws,"What happens if an underage driver refuses a chemical test in New York?","Revoked for minimum 1 year","Six-month suspension period","Warning for first offense only","No penalty at all",0,A
 NY-026,NY,duiStateLaws,"Can test refusal be used against you in court even if found not guilty in New York?","No, it's inadmissible evidence","Yes, can be brought up in court","Only if convicted of charges","Only for repeat offenses only",1,B
@@ -1377,11 +1377,11 @@ OH-015,OH,cellPhone,"What type of enforcement applies to Ohio's Hands-Free Law?"
 OH-016,OH,cellPhone,"Can you use your phone at a red light in Ohio?","Yes, when vehicle fully stopped","Yes, for navigation purposes only","Only to make emergency calls now","No, except emergency or road closure",3,D
 OH-017,OH,cellPhone,"How can you legally activate navigation or audio apps while driving in Ohio?","Single touch, swipe, or voice command","Not allowed while driving vehicle","Only when vehicle is stopped","Unlimited touches if done briefly",0,A
 OH-018,OH,cellPhone,"What can help you avoid penalties for violating Ohio's Hands-Free Law?","Paying fine within 30 days time","Complete distracted driving course","First-time offender exemption law","Written apology letter to court",1,B
-OH-019,OH,duiStateLaws,"What is the BAC limit for drivers under 21 in Ohio?","0.08 percent","0.04 percent","0.02 percent","Zero tolerance",2,C
-OH-020,OH,duiStateLaws,"What is the BAC limit for commercial drivers in Ohio?","0.08 percent","0.02 percent","0.06 percent","0.04 percent",3,D
+OH-019,OH,duiStateLaws,"What is the BAC limit for drivers under 21 in Ohio?","0.08%","0.04%","0.02%","Zero tolerance",2,C
+OH-020,OH,duiStateLaws,"What is the BAC limit for commercial drivers in Ohio?","0.08%","0.02%","0.06%","0.04%",3,D
 OH-021,OH,duiStateLaws,"What does Ohio's implied consent law require?","Chemical test when arrested for OVI","Permission to search your vehicle","Consent to field sobriety tests only","Waiver of all attorney rights",0,A
 OH-022,OH,duiStateLaws,"What is the immediate consequence of refusing a chemical test in Ohio?","Warning only for refusal","Admin license suspension","Criminal charges only filed","Fine but no license suspension",1,B
-OH-023,OH,duiStateLaws,"At what BAC level does Ohio impose enhanced Super OVI penalties?","0.10 percent level","0.15 percent level","0.17% or higher","0.20 percent level",2,C
+OH-023,OH,duiStateLaws,"At what BAC level does Ohio impose enhanced Super OVI penalties?","0.10% level","0.15% level","0.17% or higher","0.20% level",2,C
 OH-024,OH,duiStateLaws,"How long does a test refusal remain on your Ohio driving record?","5 years","10 years","15 years","20 years",3,D
 OH-025,OH,duiStateLaws,"What new testing method was introduced in Ohio in April 2025?","Oral fluid test for drugs","Portable breathalyzer only","Mandatory blood test method","Saliva alcohol test only",0,A
 OH-026,OH,duiStateLaws,"What legislation increased minimum OVI fines in Ohio for 2025?","Senate Bill 288 law","Liv's Law (HB 37)","House Bill 101 law","Admin Rule 2025-1 law",1,B
@@ -1417,14 +1417,14 @@ OK-015,OK,cellPhone,"What is the cell phone restriction for drivers under 18 in 
 OK-016,OK,cellPhone,"Where is holding a phone while driving specifically prohibited under Oklahoma's 2025 law?","On all highways","In parking lots","Only on interstates","School & work zones",3,D
 OK-017,OK,cellPhone,"When can you legally use a phone to contact emergency services while driving in Oklahoma?","Anytime to report emergencies","Only when fully stopped","Only with voice commands","Never while vehicle is running",0,A
 OK-018,OK,cellPhone,"What devices are permitted for phone conversations while driving in Oklahoma?","Handheld phones only","Bluetooth & hands-free","No devices allowed","Only wired headsets",1,B
-OK-019,OK,duiStateLaws,"What is the legal BAC limit for drivers under 21 in Oklahoma?","0.08 percent","0.04 percent","0.02 percent","Zero tolerance",2,C
-OK-020,OK,duiStateLaws,"What is the BAC limit for commercial drivers in Oklahoma?","0.08 percent","0.02 percent","0.06 percent","0.04 percent",3,D
+OK-019,OK,duiStateLaws,"What is the legal BAC limit for drivers under 21 in Oklahoma?","0.08%","0.04%","0.02%","Zero tolerance",2,C
+OK-020,OK,duiStateLaws,"What is the BAC limit for commercial drivers in Oklahoma?","0.08%","0.02%","0.06%","0.04%",3,D
 OK-021,OK,duiStateLaws,"What does implied consent mean for Oklahoma drivers?","BAC testing when stopped for DUI","Permission to search vehicle","Consent to field sobriety only","Waiver of legal representation",0,A
 OK-022,OK,duiStateLaws,"What happens if you refuse a BAC test for the first time in Oklahoma?","No penalty at all","180-day license revoked","Automatic DUI conviction","One year jail time",1,B
 OK-023,OK,duiStateLaws,"How many years of prior DUI convictions does Oklahoma count for sentencing purposes?","5 years","Lifetime","10 years","7 years",2,C
 OK-024,OK,duiStateLaws,"What is the consequence of a second BAC test refusal within 10 years in Oklahoma?","Six month revocation","Two year revocation","No additional penalty","One year revocation",3,D
 OK-025,OK,duiStateLaws,"Within how many days must you request an administrative hearing after a DUI arrest in Oklahoma?","15 days","30 days","10 days","20 days",0,A
-OK-026,OK,duiStateLaws,"What BAC level is considered aggravated DUI with enhanced penalties in Oklahoma?","0.10 percent or higher","0.15 percent or higher","0.12 percent or higher","0.20 percent or higher",1,B
+OK-026,OK,duiStateLaws,"What BAC level is considered aggravated DUI with enhanced penalties in Oklahoma?","0.10% or higher","0.15% or higher","0.12% or higher","0.20% or higher",1,B
 OK-027,OK,insurance,"What type of insurance system does Oklahoma follow for auto accidents?","No-fault system","Comparative negligence only","Fault-based system","Shared responsibility system",2,C
 OK-028,OK,insurance,"What does liability insurance primarily cover in Oklahoma?","Your vehicle damage only","Your medical bills only","Rental car expenses","Damages caused to others",3,D
 OK-029,OK,insurance,"What coverage protects you if hit by an uninsured driver in Oklahoma?","Uninsured driver coverage","Comprehensive coverage","Collision coverage","Personal injury protection",0,A
@@ -1457,9 +1457,9 @@ OR-015,OR,cellPhone,"How many touches are allowed to activate a device under Ore
 OR-016,OR,cellPhone,"What cell phone restriction applies to all drivers under 18 in Oregon?","Only handheld use prohibited","Only texting is prohibited","Hands-free devices allowed","All device use prohibited",3,D
 OR-017,OR,cellPhone,"When can you legally use a handheld phone to call for medical help while driving in Oregon?","Emergencies w/ no one else available","Only when fully stopped safely","Only with voice commands enabled","Never while vehicle is running",0,A
 OR-018,OR,cellPhone,"How is Oregon's distracted driving law enforced?","Secondary offense only","Primary enforcement allowed","Warning only for first offense","Only enforced after accidents",1,B
-OR-019,OR,duiStateLaws,"What is the legal BAC limit for adult drivers in Oregon?","0.10 percent","0.05 percent","0.08 percent","0.04 percent",2,C
-OR-020,OR,duiStateLaws,"What is the BAC limit for commercial vehicle drivers in Oregon?","0.08 percent","0.02 percent","0.06 percent","0.04 percent",3,D
-OR-021,OR,duiStateLaws,"What BAC level triggers Oregon's zero tolerance law for drivers under 21?","Any measurable alcohol","0.02 percent or higher level","0.04 percent or higher level","0.08 percent or higher level",0,A
+OR-019,OR,duiStateLaws,"What is the legal BAC limit for adult drivers in Oregon?","0.10%","0.05%","0.08%","0.04%",2,C
+OR-020,OR,duiStateLaws,"What is the BAC limit for commercial vehicle drivers in Oregon?","0.08%","0.02%","0.06%","0.04%",3,D
+OR-021,OR,duiStateLaws,"What BAC level triggers Oregon's zero tolerance law for drivers under 21?","Any measurable alcohol","0.02% or higher level","0.04% or higher level","0.08% or higher level",0,A
 OR-022,OR,duiStateLaws,"What does Oregon's implied consent law require of all drivers?","Permission to search vehicle anytime","Submit to chemical test when arrested","Consent to field sobriety tests only","Waiver of legal representation rights",1,B
 OR-023,OR,duiStateLaws,"What is the consequence of refusing chemical testing for the first time in Oregon?","30-day suspension period","6-month suspension period","1-yr license suspension","No penalty at all",2,C
 OR-024,OR,duiStateLaws,"What is the suspension period for a second refusal of chemical testing within 5 years in Oregon?","1 year","2 years","Permanent revocation","3 years",3,D
@@ -1497,10 +1497,10 @@ PA-015,PA,cellPhone,"How many button presses are allowed to initiate a call unde
 PA-016,PA,cellPhone,"What phone use is prohibited for drivers under 18 with a junior license in Pennsylvania?","Only handheld calls","Only texting","Only video recording","All mobile phone use",3,D
 PA-017,PA,cellPhone,"When can you legally hold a phone to contact emergency services while driving in Pennsylvania?","Anytime to report emergencies","Only when fully stopped","Only with voice commands","Never while vehicle is running",0,A
 PA-018,PA,cellPhone,"What devices are permitted for phone conversations while driving in Pennsylvania?","Handheld phones only permitted","Bluetooth & speakerphones","No devices allowed at all","Only wired headsets permitted",1,B
-PA-019,PA,duiStateLaws,"What is the legal BAC limit for drivers under 21 in Pennsylvania?","0.08 percent","0.04 percent","0.02 percent","Zero tolerance",2,C
-PA-020,PA,duiStateLaws,"What is the BAC limit for commercial drivers in Pennsylvania?","0.08 percent","0.02 percent","0.06 percent","0.04 percent",3,D
+PA-019,PA,duiStateLaws,"What is the legal BAC limit for drivers under 21 in Pennsylvania?","0.08%","0.04%","0.02%","Zero tolerance",2,C
+PA-020,PA,duiStateLaws,"What is the BAC limit for commercial drivers in Pennsylvania?","0.08%","0.02%","0.06%","0.04%",3,D
 PA-021,PA,duiStateLaws,"What does implied consent mean for Pennsylvania drivers?","Agreement to BAC testing when stopped","Permission to search vehicle always","Consent to field sobriety tests only","Waiver of legal representation rights",0,A
-PA-022,PA,duiStateLaws,"What BAC level qualifies as the highest tier in Pennsylvania's DUI system?","0.10 percent or higher","0.16 percent or higher","0.12 percent or higher","0.20 percent or higher",1,B
+PA-022,PA,duiStateLaws,"What BAC level qualifies as the highest tier in Pennsylvania's DUI system?","0.10% or higher","0.16% or higher","0.12% or higher","0.20% or higher",1,B
 PA-023,PA,duiStateLaws,"What is the consequence of refusing a BAC test for the first time in Pennsylvania?","Warning only first time","Automatic DUI conviction","12-month suspension","No penalty at all",2,C
 PA-024,PA,duiStateLaws,"How long is the license suspension for a second refusal of a BAC test in Pennsylvania?","12 months","6 months","Lifetime","18 months",3,D
 PA-025,PA,duiStateLaws,"What happens if you refuse a BAC test in Pennsylvania regarding penalty tier?","Highest BAC penalty tier","Given minimum penalty level","No effect on penalty levels","Subject to civil penalties only",0,A
@@ -1537,8 +1537,8 @@ RI-015,RI,cellPhone,"When does Rhode Island's hands-free law apply?","Only while
 RI-016,RI,cellPhone,"What audio device restriction applies while driving in Rhode Island?","Single earphone allowed only","Any headphones allowed while driving","Only car speakers allowed for audio","Can't wear earphones on both ears",3,D
 RI-017,RI,cellPhone,"What phone use is always permitted while driving in Rhode Island?","Calling emergency services","Quick text messages only","Social media scrolling briefly","Taking photos of scenery",0,A
 RI-018,RI,cellPhone,"How can you legally use GPS navigation while driving in Rhode Island?","Type while driving slowly and carefully","Voice commands or enter before driving","Have passenger enter address for you","GPS use is prohibited while moving",1,B
-RI-019,RI,duiStateLaws,"What is the BAC limit for drivers under 21 in Rhode Island?","0.08 percent","0.04 percent","0.02 percent","0.01 percent",2,C
-RI-020,RI,duiStateLaws,"What is the BAC limit for commercial drivers in Rhode Island?","0.08 percent","0.02 percent","0.06 percent","0.04 percent",3,D
+RI-019,RI,duiStateLaws,"What is the BAC limit for drivers under 21 in Rhode Island?","0.08%","0.04%","0.02%","0.01%",2,C
+RI-020,RI,duiStateLaws,"What is the BAC limit for commercial drivers in Rhode Island?","0.08%","0.02%","0.06%","0.04%",3,D
 RI-021,RI,duiStateLaws,"What does Rhode Island's implied consent law require?","Agree to chemical test when stopped","Consent to vehicle search by police","Permission for roadside questioning by officer","Waiver of attorney rights during arrest",0,A
 RI-022,RI,duiStateLaws,"What is the consequence of refusing a chemical test for the first time in Rhode Island?","Warning only issued","License suspended 6-12 months","Automatic DUI conviction recorded","Court appearance required by law",1,B
 RI-023,RI,duiStateLaws,"How does Rhode Island classify penalties based on BAC levels?","Single penalty for all BAC levels","Two-tier system for penalties","Three-tier system by BAC range","No BAC-based tier system used",2,C
@@ -1577,13 +1577,13 @@ SC-015,SC,cellPhone,"What phone feature is allowed under South Carolina's hands-
 SC-016,SC,cellPhone,"When can you legally use a handheld phone while driving in South Carolina?","During emergencies only","At traffic lights while stopped","On back roads only","When parked or stopped",3,D
 SC-017,SC,cellPhone,"What did South Carolina provide during the first 180 days after the hands-free law took effect?","Grace period w/ warnings","Free hands-free devices provided","Reduced fines only","No enforcement at all",0,A
 SC-018,SC,cellPhone,"What activities are prohibited while driving under South Carolina's hands-free law?","Only phone calls while driving","Reading texts/videos or using device","Only social media use while driving","Only video recording while driving",1,B
-SC-019,SC,duiStateLaws,"What is the legal BAC limit for drivers under 21 in South Carolina?","0.08 percent","0.04 percent","0.02 percent","Zero tolerance",2,C
-SC-020,SC,duiStateLaws,"What is the BAC limit for commercial drivers in South Carolina?","0.08 percent","0.02 percent","0.06 percent","0.04 percent",3,D
+SC-019,SC,duiStateLaws,"What is the legal BAC limit for drivers under 21 in South Carolina?","0.08%","0.04%","0.02%","Zero tolerance",2,C
+SC-020,SC,duiStateLaws,"What is the BAC limit for commercial drivers in South Carolina?","0.08%","0.02%","0.06%","0.04%",3,D
 SC-021,SC,duiStateLaws,"What does South Carolina's implied consent law mean?","Agreement to BAC test when driving","Permission to search vehicle","Consent to field sobriety tests only","Waiver of attorney rights",0,A
 SC-022,SC,duiStateLaws,"What happens if you refuse a BAC test for the first time in South Carolina?","Warning only for first time","License suspended 6 months","Automatic DUI conviction","Mandatory jail time imposed",1,B
 SC-023,SC,duiStateLaws,"What consequence applies to drivers under 21 with a BAC of 0.02 or higher in South Carolina?","Warning for first offense","Points on license only","License suspended 3-6 mos","Community service only",2,C
-SC-024,SC,duiStateLaws,"At what BAC level do enhanced DUI penalties apply in South Carolina?","0.10 percent","0.12 percent","0.20 percent","0.15 percent",3,D
-SC-025,SC,duiStateLaws,"What is the standard BAC limit for adult drivers in South Carolina?","0.08 percent","0.10 percent","0.05 percent","0.07 percent",0,A
+SC-024,SC,duiStateLaws,"At what BAC level do enhanced DUI penalties apply in South Carolina?","0.10%","0.12%","0.20%","0.15%",3,D
+SC-025,SC,duiStateLaws,"What is the standard BAC limit for adult drivers in South Carolina?","0.08%","0.10%","0.05%","0.07%",0,A
 SC-026,SC,duiStateLaws,"What triggers automatic license suspension in South Carolina DUI cases?","First offense DUI only","BAC 0.15+ or refusing test","Second offense DUI only","Any BAC above 0.08 limit",1,B
 SC-027,SC,insurance,"What type of insurance system does South Carolina use for auto accidents?","No-fault insurance system","Shared responsibility system","At-fault tort system","Hybrid system approach",2,C
 SC-028,SC,insurance,"What does liability insurance primarily cover in South Carolina?","Your vehicle repairs","Your medical expenses","Rental car costs","Damages to others",3,D
@@ -1617,9 +1617,9 @@ SD-015,SD,cellPhone,"What are the cell phone restrictions for drivers under 18 i
 SD-016,SD,cellPhone,"What exception exists for the texting ban in South Dakota?","No exceptions allowed","Stopped at red light","Hands-free only","Emergency reporting",3,D
 SD-017,SD,cellPhone,"What device use is permitted for adult drivers in South Dakota?","Voice calls and GPS","All uses permitted","Emergency calls only","No phone use allowed",0,A
 SD-018,SD,cellPhone,"Can you use voice-to-text features while driving in South Dakota?","Only if hands-free","Allowed for all drivers","Only for emergencies","Not allowed, considered texting",1,B
-SD-019,SD,duiStateLaws,"What is the legal BAC limit for drivers age 21 and over in South Dakota?","0.05 percent","0.10 percent","0.08 percent","Zero tolerance",2,C
-SD-020,SD,duiStateLaws,"What is the BAC limit for commercial drivers in South Dakota?","0.08 percent","0.02 percent","Zero tolerance","0.04 percent",3,D
-SD-021,SD,duiStateLaws,"What is the alcohol tolerance level for drivers under 21 in South Dakota?","Zero tolerance policy","0.02 percent limit","0.04 percent limit","Same as adult limit",0,A
+SD-019,SD,duiStateLaws,"What is the legal BAC limit for drivers age 21 and over in South Dakota?","0.05%","0.10%","0.08%","Zero tolerance",2,C
+SD-020,SD,duiStateLaws,"What is the BAC limit for commercial drivers in South Dakota?","0.08%","0.02%","Zero tolerance","0.04%",3,D
+SD-021,SD,duiStateLaws,"What is the alcohol tolerance level for drivers under 21 in South Dakota?","Zero tolerance policy","0.02% limit","0.04% limit","Same as adult limit",0,A
 SD-022,SD,duiStateLaws,"What happens if you refuse a chemical BAC test in South Dakota?","Warning only issued","License revocation imposed","No penalty until convicted","Temporary suspension only",1,B
 SD-023,SD,duiStateLaws,"What does South Dakota's implied consent law require?","Vehicle search consent","Field test consent only","Chemical test submission","Breathalyzer purchase",2,C
 SD-024,SD,duiStateLaws,"What device may be required after a DUI conviction in South Dakota?","GPS monitoring device","Ankle monitor bracelet","Dashboard camera","Ignition interlock",3,D
@@ -1697,8 +1697,8 @@ TX-015,TX,cellPhone,"What electronic communication is banned while driving in Te
 TX-016,TX,cellPhone,"When can you legally use a handheld device while driving in Texas?","At traffic lights only","Low-speed zones only","During daytime only","When stopped or parked",3,D
 TX-017,TX,cellPhone,"What hands-free exception exists for reporting emergencies in Texas?","Can use handheld for 911","Must pull over first","No exceptions allowed","Voice-only permitted",0,A
 TX-018,TX,cellPhone,"What local ordinances can cities enforce regarding cell phones in Texas?","Only state laws apply","Stricter local bans OK","Cities cannot regulate","Federal law preempts",1,B
-TX-019,TX,duiStateLaws,"What is the legal BAC limit for drivers under 21 in Texas?","0.08 percent BAC limit","0.04 percent BAC limit","Any detectable amount","0.05 percent BAC limit",2,C
-TX-020,TX,duiStateLaws,"What is the BAC limit for commercial drivers operating CMVs in Texas?","0.08 percent BAC","0.02 percent BAC","0.06 percent BAC","0.04 percent BAC",3,D
+TX-019,TX,duiStateLaws,"What is the legal BAC limit for drivers under 21 in Texas?","0.08% BAC limit","0.04% BAC limit","Any detectable amount","0.05% BAC limit",2,C
+TX-020,TX,duiStateLaws,"What is the BAC limit for commercial drivers operating CMVs in Texas?","0.08% BAC","0.02% BAC","0.06% BAC","0.04% BAC",3,D
 TX-021,TX,duiStateLaws,"What does implied consent mean when you obtain a license in Texas?","Agree to breath or blood test","Consent to vehicle search","Waive right to attorney","Accept automatic conviction",0,A
 TX-022,TX,duiStateLaws,"What administrative penalty occurs for refusing a BAC test in Texas?","30-day suspension","License suspension","Immediate arrest only","Community service hours",1,B
 TX-023,TX,duiStateLaws,"What device may be required after a DWI conviction in Texas?","GPS tracking device","Alcohol monitoring bracelet","Ignition interlock device","Speed limiting device",2,C
@@ -1727,7 +1727,7 @@ UT-005,UT,gdlLicensing,"What minimum age must a supervising driver be when accom
 UT-006,UT,gdlLicensing,"During what hours are drivers under 17 prohibited from driving in Utah?","11 PM to 6 AM","12 AM to 5 AM","1 AM to 6 AM","10 PM to 5 AM",1,B
 UT-007,UT,gdlLicensing,"How long must newly licensed 16-17 year olds wait before carrying non-family passengers?","3 months","12 months","6 months","9 months",2,C
 UT-008,UT,gdlLicensing,"What is required for all Utah drivers age 18 and younger to obtain a license?","Road skills test only","Written exam only","Medical exam only","Driver ed course",3,D
-UT-009,UT,gdlLicensing,"What percentage must you score on the Utah written knowledge test to pass?","80% or higher","75% or higher","85% or higher","70% or higher",0,A
+UT-009,UT,gdlLicensing,"What%age must you score on the Utah written knowledge test to pass?","80% or higher","75% or higher","85% or higher","70% or higher",0,A
 UT-010,UT,gdlLicensing,"If you are 19 or older, what is the minimum learner permit holding period?","6 months","3 months","1 month","No minimum",1,B
 UT-011,UT,gdlLicensing,"Where must an approved supervising driver sit while supervising a permit holder?","Anywhere in vehicle","In the back seat","Front passenger seat","Either front seat",2,C
 UT-012,UT,gdlLicensing,"At what age can you apply for a full driver license if requirements are met?","15 years old","17 years old","18 years old","16½ years old",3,D
@@ -1817,8 +1817,8 @@ VT-015,VT,cellPhone,"What phone restriction applies to drivers under 18 in Vermo
 VT-016,VT,cellPhone,"What did Vermont's 2023 cell phone law update prohibit?","All phone features","Voice commands only","Emergency calls only","Holding phone at stops",3,D
 VT-017,VT,cellPhone,"When can you legally use a handheld phone while driving in Vermont?","Emergency calls only","At traffic lights","On residential streets","Never while moving",0,A
 VT-018,VT,cellPhone,"What type of enforcement does Vermont use for cell phone violations?","Warning only first time","Primary enforcement","Secondary enforcement","No enforcement at all",1,B
-VT-019,VT,duiStateLaws,"What is the legal BAC limit for drivers under 21 in Vermont?","0.08 percent","0.04 percent","0.02 percent","Zero tolerance",2,C
-VT-020,VT,duiStateLaws,"What is the BAC limit for commercial drivers in Vermont?","0.08 percent","0.02 percent","0.06 percent","0.04 percent",3,D
+VT-019,VT,duiStateLaws,"What is the legal BAC limit for drivers under 21 in Vermont?","0.08%","0.04%","0.02%","Zero tolerance",2,C
+VT-020,VT,duiStateLaws,"What is the BAC limit for commercial drivers in Vermont?","0.08%","0.02%","0.06%","0.04%",3,D
 VT-021,VT,duiStateLaws,"What does implied consent mean for Vermont drivers?","Agree to BAC testing if arrested","Permission to search vehicle","Consent to field sobriety only","Waiver of legal representation",0,A
 VT-022,VT,duiStateLaws,"What is the license suspension for a first BAC test refusal in Vermont?","3 months suspension","6 months suspension","1 year suspension","2 years suspension",1,B
 VT-023,VT,duiStateLaws,"How long is the license suspension for a second test refusal in Vermont?","6 months","1 year","18 mos","2 years",2,C
@@ -1897,8 +1897,8 @@ WI-015,WI,cellPhone,"What phone restrictions apply to probationary license holde
 WI-016,WI,cellPhone,"What phone use is allowed during emergencies while driving in Wisconsin?","Only texting allowed","Only social media allowed","Only navigation allowed","Calling 911 is allowed",3,D
 WI-017,WI,cellPhone,"Can you compose or send emails while driving in Wisconsin?","No, same as texting","Yes, if brief","Yes, if using voice","Yes, at stoplights",0,A
 WI-018,WI,cellPhone,"What is the law for reading text messages while stopped at a red light in Wisconsin?","Allowed when fully stopped","Illegal, still driving","Allowed if in park","Allowed with hazards on",1,B
-WI-019,WI,duiStateLaws,"What is the legal BAC limit for drivers under 21 in Wisconsin?","0.08 percent","0.04 percent","0.02 percent","0.00 percent",2,C
-WI-020,WI,duiStateLaws,"What is the BAC limit for commercial vehicle operators in Wisconsin?","0.08 percent","0.02 percent","0.06 percent","0.04 percent",3,D
+WI-019,WI,duiStateLaws,"What is the legal BAC limit for drivers under 21 in Wisconsin?","0.08%","0.04%","0.02%","0.00%",2,C
+WI-020,WI,duiStateLaws,"What is the BAC limit for commercial vehicle operators in Wisconsin?","0.08%","0.02%","0.06%","0.04%",3,D
 WI-021,WI,duiStateLaws,"What does Wisconsin's implied consent law require of drivers?","Submit to chemical testing","Field sobriety test only","Breath test only required","Blood test consent only",0,A
 WI-022,WI,duiStateLaws,"What happens if you refuse a chemical test in Wisconsin for the first time?","No penalties at all","License revoked 1 yr","Jail time imposed","Community service only",1,B
 WI-023,WI,duiStateLaws,"How does Wisconsin treat a first OWI offense legally?","Felony level offense","Misdemeanor offense","Civil forfeiture","No criminal record",2,C
@@ -1969,7 +1969,7 @@ WY-007,WY,gdlLicensing,"At what age can you obtain a full license with driver's 
 WY-008,WY,gdlLicensing,"At what age can you get a full license without driver's education in Wyoming?","16 years old","16.5 years old","18 years old","17 years old",3,D
 WY-009,WY,gdlLicensing,"What minimum distance from school qualifies you for a hardship permit in Wyoming?","More than 5 miles","More than 10 miles","More than 3 miles","More than 15 miles",0,A
 WY-010,WY,gdlLicensing,"How long must you hold an intermediate permit before getting a full license in Wyoming?","3 months minimum","6 months minimum","1 year minimum","9 months minimum",1,B
-WY-011,WY,gdlLicensing,"What percentage of questions must you answer correctly on Wyoming's permit test?","70 percent correct","75 percent correct","80 percent correct","85 percent correct",2,C
+WY-011,WY,gdlLicensing,"What%age of questions must you answer correctly on Wyoming's permit test?","70% correct","75% correct","80% correct","85% correct",2,C
 WY-012,WY,gdlLicensing,"How many questions are on the Wyoming learner's permit knowledge test?","20 questions total","30 questions total","40 questions total","25 questions total",3,D
 WY-013,WY,cellPhone,"What does Wyoming law prohibit regarding cell phones while driving?","Texting while driving","All handheld phone use","Voice calls prohibited","Bluetooth phone devices",0,A
 WY-014,WY,cellPhone,"Is talking on a handheld cell phone while driving banned statewide in Wyoming?","Yes, completely banned","No, talking allowed","Only for teens","Only on highways",1,B
@@ -1977,8 +1977,8 @@ WY-015,WY,cellPhone,"Can you use voice-operated technology for texting while dri
 WY-016,WY,cellPhone,"When can you legally use a handheld device to contact emergency services while driving in Wyoming?","Only when vehicle stopped","Only off highway roads","Never while vehicle moving","Anytime for emergencies",3,D
 WY-017,WY,cellPhone,"Can you manually enter a phone number to make a call while driving in Wyoming?","Dialing allowed","No, not allowed","Only single digit","Voice dial only",0,A
 WY-018,WY,cellPhone,"Are emergency responders exempt from texting laws while on duty in Wyoming?","No exemptions for anyone","Yes, for official duties","Only for police officers","Only for fire personnel",1,B
-WY-019,WY,duiStateLaws,"What is the BAC limit for drivers under 21 in Wyoming?","0.08 percent","Zero tolerance","0.02 percent","0.04 percent",2,C
-WY-020,WY,duiStateLaws,"What is the legal BAC limit for commercial drivers in Wyoming?","0.08 percent","0.02 percent","0.06 percent","0.04 percent",3,D
+WY-019,WY,duiStateLaws,"What is the BAC limit for drivers under 21 in Wyoming?","0.08%","Zero tolerance","0.02%","0.04%",2,C
+WY-020,WY,duiStateLaws,"What is the legal BAC limit for commercial drivers in Wyoming?","0.08%","0.02%","0.06%","0.04%",3,D
 WY-021,WY,duiStateLaws,"What does Wyoming's implied consent law require when lawfully arrested for DUI?","Submit to BAC testing","Provide vehicle registration","Sign admission form","Contact an attorney",0,A
 WY-022,WY,duiStateLaws,"What is Wyoming's penalty for refusing a BAC test when lawfully arrested?","Automatic license suspension","No direct penalties","Immediate jail time","Vehicle impoundment",1,B
 WY-023,WY,duiStateLaws,"What can happen if you refuse a BAC test in Wyoming?","Nothing happens at all","Court case dismissal","Warrant obtained","Case gets dropped",2,C

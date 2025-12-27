@@ -240,9 +240,9 @@
     "question": "What is the legal BAC limit for drivers under 21 in Minnesota?",
     "answers": [
       "Zero tolerance level",
-      "0.02 percent BAC level",
-      "0.04 percent BAC level",
-      "0.08 percent BAC level"
+      "0.02% BAC level",
+      "0.04% BAC level",
+      "0.08% BAC level"
     ],
     "correctIndex": 0
   },
@@ -252,10 +252,10 @@
     "category": "duiStateLaws",
     "question": "What is the BAC limit for commercial drivers in Minnesota?",
     "answers": [
-      "0.08 percent",
-      "0.02 percent",
+      "0.08%",
+      "0.02%",
       "Zero tolerance",
-      "0.04 percent"
+      "0.04%"
     ],
     "correctIndex": 3
   },
@@ -291,10 +291,10 @@
     "category": "duiStateLaws",
     "question": "At what BAC level is enhanced sentencing triggered in Minnesota?",
     "answers": [
-      "0.10 percent BAC level",
-      "0.12 percent BAC level",
-      "0.16 percent or higher",
-      "0.20 percent BAC level"
+      "0.10% BAC level",
+      "0.12% BAC level",
+      "0.16% or higher",
+      "0.20% BAC level"
     ],
     "correctIndex": 2
   },

@@ -220,10 +220,10 @@
     "category": "duiStateLaws",
     "question": "What is the BAC limit for drivers under 21 in Delaware?",
     "answers": [
-      "0.04 percent",
-      "0.05 percent",
-      "0.02 percent",
-      "0.08 percent"
+      "0.04%",
+      "0.05%",
+      "0.02%",
+      "0.08%"
     ],
     "correctIndex": 2
   },
@@ -256,17 +256,17 @@
     "category": "duiStateLaws",
     "question": "What is the BAC limit for Delaware commercial drivers?",
     "answers": [
-      "0.02 percent",
-      "0.04 percent",
-      "0.06 percent",
-      "0.08 percent"
+      "0.02%",
+      "0.04%",
+      "0.06%",
+      "0.08%"
     ],
     "correctIndex": 1
   },
   {
     "id": "DE-023",
     "category": "duiStateLaws",
-    "question": "What happens if a Delaware driver under 17 is arrested with a BAC of 0.08 percent or higher?",
+    "question": "What happens if a Delaware driver under 17 is arrested with a BAC of 0.08% or higher?",
     "answers": [
       "License suspended for one year",
       "License suspended until age 18",
@@ -292,10 +292,10 @@
     "category": "duiStateLaws",
     "question": "What BAC level must first-time offenders stay below to qualify for Delaware's First Offense Election?",
     "answers": [
-      "Below 0.15 percent",
-      "Below 0.12 percent",
-      "Below 0.10 percent",
-      "Below 0.08 percent"
+      "Below 0.15%",
+      "Below 0.12%",
+      "Below 0.10%",
+      "Below 0.08%"
     ],
     "correctIndex": 0
   },
@@ -304,10 +304,10 @@
     "category": "duiStateLaws",
     "question": "What is the BAC limit for Delaware school bus and daycare drivers?",
     "answers": [
-      "0.00 percent",
-      "0.02 percent",
-      "0.04 percent",
-      "0.08 percent"
+      "0.00%",
+      "0.02%",
+      "0.04%",
+      "0.08%"
     ],
     "correctIndex": 1
   },

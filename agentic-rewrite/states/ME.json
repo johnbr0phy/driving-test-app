@@ -239,10 +239,10 @@
     "category": "duiStateLaws",
     "question": "What is Maine's zero tolerance BAC limit for drivers under 21?",
     "answers": [
-      "0.08 percent",
-      "0.04 percent",
-      "0.00 percent",
-      "0.02 percent"
+      "0.08%",
+      "0.04%",
+      "0.00%",
+      "0.02%"
     ],
     "correctIndex": 2
   },
@@ -252,10 +252,10 @@
     "category": "duiStateLaws",
     "question": "What is the BAC limit for commercial drivers in Maine?",
     "answers": [
-      "0.08 percent",
-      "0.02 percent",
-      "0.00 percent",
-      "0.04 percent"
+      "0.08%",
+      "0.02%",
+      "0.00%",
+      "0.04%"
     ],
     "correctIndex": 3
   },

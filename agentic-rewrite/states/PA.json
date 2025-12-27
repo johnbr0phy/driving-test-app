@@ -239,9 +239,9 @@
     "category": "duiStateLaws",
     "question": "What is the legal BAC limit for drivers under 21 in Pennsylvania?",
     "answers": [
-      "0.08 percent",
-      "0.04 percent",
-      "0.02 percent",
+      "0.08%",
+      "0.04%",
+      "0.02%",
       "Zero tolerance"
     ],
     "correctIndex": 2
@@ -252,10 +252,10 @@
     "category": "duiStateLaws",
     "question": "What is the BAC limit for commercial drivers in Pennsylvania?",
     "answers": [
-      "0.08 percent",
-      "0.02 percent",
-      "0.06 percent",
-      "0.04 percent"
+      "0.08%",
+      "0.02%",
+      "0.06%",
+      "0.04%"
     ],
     "correctIndex": 3
   },
@@ -278,10 +278,10 @@
     "category": "duiStateLaws",
     "question": "What BAC level qualifies as the highest tier in Pennsylvania's DUI system?",
     "answers": [
-      "0.10 percent or higher",
-      "0.16 percent or higher",
-      "0.12 percent or higher",
-      "0.20 percent or higher"
+      "0.10% or higher",
+      "0.16% or higher",
+      "0.12% or higher",
+      "0.20% or higher"
     ],
     "correctIndex": 1
   },

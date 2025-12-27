@@ -239,10 +239,10 @@
     "category": "duiStateLaws",
     "question": "What is the legal BAC limit for adult drivers in Oregon?",
     "answers": [
-      "0.10 percent",
-      "0.05 percent",
-      "0.08 percent",
-      "0.04 percent"
+      "0.10%",
+      "0.05%",
+      "0.08%",
+      "0.04%"
     ],
     "correctIndex": 2
   },
@@ -252,10 +252,10 @@
     "category": "duiStateLaws",
     "question": "What is the BAC limit for commercial vehicle drivers in Oregon?",
     "answers": [
-      "0.08 percent",
-      "0.02 percent",
-      "0.06 percent",
-      "0.04 percent"
+      "0.08%",
+      "0.02%",
+      "0.06%",
+      "0.04%"
     ],
     "correctIndex": 3
   },
@@ -266,9 +266,9 @@
     "question": "What BAC level triggers Oregon's zero tolerance law for drivers under 21?",
     "answers": [
       "Any measurable alcohol",
-      "0.02 percent or higher level",
-      "0.04 percent or higher level",
-      "0.08 percent or higher level"
+      "0.02% or higher level",
+      "0.04% or higher level",
+      "0.08% or higher level"
     ],
     "correctIndex": 0
   },

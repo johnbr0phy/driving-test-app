@@ -133,12 +133,12 @@
     "id": "WY-011",
     "state": "WY",
     "category": "gdlLicensing",
-    "question": "What percentage of questions must you answer correctly on Wyoming's permit test?",
+    "question": "What%age of questions must you answer correctly on Wyoming's permit test?",
     "answers": [
-      "70 percent correct",
-      "75 percent correct",
-      "80 percent correct",
-      "85 percent correct"
+      "70% correct",
+      "75% correct",
+      "80% correct",
+      "85% correct"
     ],
     "correctIndex": 2
   },
@@ -239,10 +239,10 @@
     "category": "duiStateLaws",
     "question": "What is the BAC limit for drivers under 21 in Wyoming?",
     "answers": [
-      "0.08 percent",
+      "0.08%",
       "Zero tolerance",
-      "0.02 percent",
-      "0.04 percent"
+      "0.02%",
+      "0.04%"
     ],
     "correctIndex": 2
   },
@@ -252,10 +252,10 @@
     "category": "duiStateLaws",
     "question": "What is the legal BAC limit for commercial drivers in Wyoming?",
     "answers": [
-      "0.08 percent",
-      "0.02 percent",
-      "0.06 percent",
-      "0.04 percent"
+      "0.08%",
+      "0.02%",
+      "0.06%",
+      "0.04%"
     ],
     "correctIndex": 3
   },

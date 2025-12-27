@@ -426,9 +426,8 @@ export default function AdminPage() {
               <table className="w-full text-sm">
                 <thead>
                   <tr className="border-b">
-                    <th className="text-left py-3 px-4 font-medium text-gray-500">Email</th>
+                    <th className="text-left py-3 px-4 font-medium text-gray-500">ID</th>
                     <th className="text-left py-3 px-4 font-medium text-gray-500">State</th>
-                    <th className="text-left py-3 px-4 font-medium text-gray-500">Created</th>
                     <th className="text-left py-3 px-4 font-medium text-gray-500">Last Active</th>
                     <th className="text-left py-3 px-4 font-medium text-gray-500">Training Qs</th>
                     <th className="text-left py-3 px-4 font-medium text-gray-500">Test Qs</th>
@@ -439,8 +438,7 @@ export default function AdminPage() {
                   {users.map((userData) => (
                     <tr key={userData.uid} className="border-b hover:bg-gray-50">
                       <td className="py-3 px-4">
-                        <div className="text-sm text-gray-900">{userData.email}</div>
-                        <div className="text-xs text-gray-400 font-mono">{userData.uid.substring(0, 8)}...</div>
+                        <span className="text-xs text-gray-600 font-mono">{userData.uid}</span>
                       </td>
                       <td className="py-3 px-4">
                         {userData.selectedState ? (
@@ -450,9 +448,6 @@ export default function AdminPage() {
                         ) : (
                           <span className="text-gray-400">Not selected</span>
                         )}
-                      </td>
-                      <td className="py-3 px-4 text-gray-600">
-                        {formatDate(userData.createdAt)}
                       </td>
                       <td className="py-3 px-4 text-gray-600">
                         {userData.lastUpdated ? formatDate(userData.lastUpdated) : <span className="text-gray-400">Never</span>}

@@ -294,11 +294,8 @@ export const useStore = create<AppState>()(
       },
 
       isTestUnlocked: (testId: number) => {
-        // Test 1 is always unlocked
-        if (testId === 1) return true;
-
-        // All tests (2, 3, 4) unlock after completing onboarding (10 correct training answers)
-        // or if user has any prior app usage (backwards compatibility)
+        // All tests (1, 2, 3, 4) require onboarding completion (10 correct training answers)
+        // or prior app usage (backwards compatibility)
         return get().isOnboardingComplete();
       },
 

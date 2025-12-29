@@ -383,9 +383,9 @@ export default function StatsPage() {
 
         {/* Quick Actions */}
         <div className="flex gap-4 justify-center">
-          <Link href="/test/1">
+          <Link href="/dashboard">
             <Button className="bg-black text-white hover:bg-gray-800">
-              Take practice test
+              Start training or take a practice test
             </Button>
           </Link>
         </div>

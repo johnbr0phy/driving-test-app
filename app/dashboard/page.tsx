@@ -128,81 +128,70 @@ export default function DashboardPage() {
           </Link>
         )}
 
-        {/* Pass Probability / Stats Card - shown after onboarding */}
-        {onboardingComplete && (
-          isGuest ? (
-            <Card className="mb-6 bg-gradient-to-r from-orange-50 to-amber-50 border-orange-200">
+        {/* Pass Probability / Stats Card - shown after onboarding when there's data */}
+        {onboardingComplete && isGuest && (
+          <Card className="mb-6 bg-gradient-to-r from-orange-50 to-amber-50 border-orange-200">
+            <CardContent className="p-6">
+              <div className="flex items-center gap-4">
+                <div className="text-4xl">📊</div>
+                <div className="flex-1">
+                  <p className="text-lg text-gray-700">
+                    <span className="font-bold">Sign up</span> to track your pass probability and detailed statistics
+                  </p>
+                  <Link href="/signup" className="text-sm text-orange-600 hover:text-orange-800 font-medium mt-1 inline-block">
+                    Create free account →
+                  </Link>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        )}
+        {onboardingComplete && !isGuest && passProbability > 0 && (
+          <Link href="/stats" className="block">
+            <Card className={`mb-6 cursor-pointer transition-shadow hover:shadow-lg ${
+              passProbability >= 80
+                ? "bg-gradient-to-r from-emerald-50 to-green-50 border-emerald-200"
+                : passProbability >= 60
+                  ? "bg-gradient-to-r from-lime-50 to-green-50 border-lime-200"
+                  : passProbability >= 40
+                    ? "bg-gradient-to-r from-amber-50 to-yellow-50 border-amber-200"
+                    : passProbability >= 20
+                      ? "bg-gradient-to-r from-orange-50 to-amber-50 border-orange-200"
+                      : "bg-gradient-to-r from-red-50 to-rose-50 border-red-200"
+            }`}>
               <CardContent className="p-6">
                 <div className="flex items-center gap-4">
-                  <div className="text-4xl">📊</div>
+                  <Image
+                    src={getTigerFace(passProbability)}
+                    alt="Tiger mascot"
+                    width={48}
+                    height={48}
+                    className="w-12 h-12"
+                  />
                   <div className="flex-1">
                     <p className="text-lg text-gray-700">
-                      <span className="font-bold">Sign up</span> to track your pass probability and detailed statistics
+                      {passProbability > 50
+                        ? <>You have a <span className="font-bold text-xl">{passProbability}%</span> pass rate for the {stateName} driving knowledge test.</>
+                        : <>There is a <span className="font-bold text-xl">{100 - passProbability}%</span> chance that you will fail the {stateName} driving knowledge test.</>
+                      }
                     </p>
-                    <Link href="/signup" className="text-sm text-orange-600 hover:text-orange-800 font-medium mt-1 inline-block">
-                      Create free account →
-                    </Link>
+                    <p className="text-sm text-gray-500 mt-1">Tap to see detailed stats</p>
                   </div>
+                  <ChevronRight className={`h-6 w-6 ${
+                    passProbability >= 80
+                      ? "text-emerald-400"
+                      : passProbability >= 60
+                        ? "text-lime-400"
+                        : passProbability >= 40
+                          ? "text-amber-400"
+                          : passProbability >= 20
+                            ? "text-orange-400"
+                            : "text-red-400"
+                  }`} />
                 </div>
               </CardContent>
             </Card>
-          ) : (
-            <Link href="/stats" className="block">
-              <Card className={`mb-6 cursor-pointer transition-shadow hover:shadow-lg ${
-                passProbability === 0
-                  ? "bg-gradient-to-r from-gray-50 to-gray-100 border-gray-200"
-                  : passProbability >= 80
-                    ? "bg-gradient-to-r from-emerald-50 to-green-50 border-emerald-200"
-                    : passProbability >= 60
-                      ? "bg-gradient-to-r from-lime-50 to-green-50 border-lime-200"
-                      : passProbability >= 40
-                        ? "bg-gradient-to-r from-amber-50 to-yellow-50 border-amber-200"
-                        : passProbability >= 20
-                          ? "bg-gradient-to-r from-orange-50 to-amber-50 border-orange-200"
-                          : "bg-gradient-to-r from-red-50 to-rose-50 border-red-200"
-              }`}>
-                <CardContent className="p-6">
-                  <div className="flex items-center gap-4">
-                    {passProbability === 0 ? (
-                      <div className="text-4xl">❓</div>
-                    ) : (
-                      <Image
-                        src={getTigerFace(passProbability)}
-                        alt="Tiger mascot"
-                        width={48}
-                        height={48}
-                        className="w-12 h-12"
-                      />
-                    )}
-                    <div className="flex-1">
-                      <p className="text-lg text-gray-700">
-                        {passProbability === 0
-                          ? "Complete a practice test to see your pass rate"
-                          : passProbability > 50
-                            ? <>You have a <span className="font-bold text-xl">{passProbability}%</span> pass rate for the {stateName} driving knowledge test.</>
-                            : <>There is a <span className="font-bold text-xl">{100 - passProbability}%</span> chance that you will fail the {stateName} driving knowledge test.</>
-                        }
-                      </p>
-                      <p className="text-sm text-gray-500 mt-1">Tap to see detailed stats</p>
-                    </div>
-                    <ChevronRight className={`h-6 w-6 ${
-                      passProbability === 0
-                        ? "text-gray-400"
-                        : passProbability >= 80
-                          ? "text-emerald-400"
-                          : passProbability >= 60
-                            ? "text-lime-400"
-                            : passProbability >= 40
-                              ? "text-amber-400"
-                              : passProbability >= 20
-                                ? "text-orange-400"
-                                : "text-red-400"
-                    }`} />
-                  </div>
-                </CardContent>
-              </Card>
-            </Link>
-          )
+          </Link>
         )}
 
         {/* Training Sets - only shown after onboarding */}

@@ -18,7 +18,16 @@ export function Footer() {
           >
             @brophenator
           </a>
-          . Consider a donation if you pass.
+          . Consider a donation or{" "}
+          <a
+            href="https://www.johnbrophy.net/contact"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-orange-600 hover:text-orange-700 font-medium hover:underline"
+          >
+            send me
+          </a>{" "}
+          a quote for the homepage if you pass!
         </p>
       </div>
     </footer>

@@ -9,6 +9,7 @@ import { collection, getDocs, deleteDoc, doc } from "firebase/firestore";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { states } from "@/data/states";
 import { ArrowLeft, Users, RefreshCw, Trash2, HelpCircle, Activity, ClipboardCheck } from "lucide-react";
+import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
@@ -44,6 +45,37 @@ export default function AdminPage() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [deleting, setDeleting] = useState<string | null>(null);
+  const [dailyActiveUsers, setDailyActiveUsers] = useState<{ date: string; count: number; displayDate: string }[]>([]);
+
+  // Helper function to calculate daily active users for the last 30 days
+  const calculateDailyActiveUsers = (userData: UserData[]) => {
+    const days: { date: string; count: number; displayDate: string }[] = [];
+    const today = new Date();
+    today.setHours(23, 59, 59, 999);
+
+    for (let i = 29; i >= 0; i--) {
+      const date = new Date(today);
+      date.setDate(date.getDate() - i);
+      const startOfDay = new Date(date);
+      startOfDay.setHours(0, 0, 0, 0);
+      const endOfDay = new Date(date);
+      endOfDay.setHours(23, 59, 59, 999);
+
+      const activeCount = userData.filter(u => {
+        if (!u.lastUpdated) return false;
+        const lastUpdated = new Date(u.lastUpdated);
+        return lastUpdated >= startOfDay && lastUpdated <= endOfDay;
+      }).length;
+
+      days.push({
+        date: date.toISOString().split('T')[0],
+        count: activeCount,
+        displayDate: date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
+      });
+    }
+
+    return days;
+  };
 
   // Helper function to process Firestore data
   const processFirestoreDoc = (docId: string, data: ReturnType<typeof Object>) => {
@@ -201,6 +233,7 @@ export default function AdminPage() {
         totalTestsCompleted,
         avgQuestionsPerUser,
       });
+      setDailyActiveUsers(calculateDailyActiveUsers(userData));
     } catch (err) {
       console.error("Error fetching users:", err);
       setError(err instanceof Error ? err.message : "Failed to load users");
@@ -396,6 +429,57 @@ export default function AdminPage() {
             </CardContent>
           </Card>
         </div>
+
+        {/* Active Users Graph */}
+        <Card className="mb-6">
+          <CardHeader>
+            <CardTitle>Active Users (Last 30 Days)</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="h-64">
+              <ResponsiveContainer width="100%" height="100%">
+                <AreaChart
+                  data={dailyActiveUsers}
+                  margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
+                >
+                  <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
+                  <XAxis
+                    dataKey="displayDate"
+                    tick={{ fontSize: 12 }}
+                    tickLine={false}
+                    axisLine={{ stroke: '#e5e7eb' }}
+                    interval="preserveStartEnd"
+                    tickMargin={8}
+                  />
+                  <YAxis
+                    tick={{ fontSize: 12 }}
+                    tickLine={false}
+                    axisLine={{ stroke: '#e5e7eb' }}
+                    allowDecimals={false}
+                  />
+                  <Tooltip
+                    contentStyle={{
+                      backgroundColor: 'white',
+                      border: '1px solid #e5e7eb',
+                      borderRadius: '8px',
+                      boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
+                    }}
+                    formatter={(value) => [value ?? 0, 'Active Users']}
+                    labelFormatter={(label) => label}
+                  />
+                  <Area
+                    type="monotone"
+                    dataKey="count"
+                    stroke="#22c55e"
+                    fill="#22c55e"
+                    fillOpacity={0.2}
+                    strokeWidth={2}
+                  />
+                </AreaChart>
+              </ResponsiveContainer>
+            </div>
+          </CardContent>
+        </Card>
 
         {/* Users by State Summary */}
         {sortedStateCounts.length > 0 && (

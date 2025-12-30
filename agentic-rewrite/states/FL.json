@@ -275,15 +275,15 @@
   {
     "id": "FL-022",
     "category": "duiStateLaws",
-    "question": "What major change did Trenton's Law bring to Florida DUI enforcement in October 2025?",
+    "question": "What is the consequence of refusing a chemical test for the second time in Florida?",
     "answers": [
-      "Higher fines for DUI only",
-      "Refusing tests became criminal",
-      "Lower BAC limit standards",
-      "Mandatory jail time for DUI"
+      "1 year suspension",
+      "18 month suspension",
+      "2 year suspension",
+      "Permanent revocation"
     ],
     "correctIndex": 1,
-    "explanation": "Trenton's Law, effective October 1, 2025, made refusing chemical testing a criminal charge, not just an administrative penalty."
+    "explanation": "A second refusal to submit to chemical testing in Florida results in an automatic 18-month license suspension."
   },
   {
     "id": "FL-023",
@@ -327,15 +327,15 @@
   {
     "id": "FL-026",
     "category": "duiStateLaws",
-    "question": "Under Trenton's Law, what is the maximum penalty for a second DUI manslaughter conviction?",
+    "question": "How long must a first-time DUI offender have an ignition interlock device installed in Florida?",
     "answers": [
-      "15 years imprisonment max",
-      "Up to 30 yrs, 1st-deg felony",
-      "20 years imprisonment max",
-      "25 years imprisonment max"
+      "3 months",
+      "6 months",
+      "1 year",
+      "No requirement for first offense"
     ],
     "correctIndex": 1,
-    "explanation": "Trenton's Law elevated second DUI manslaughter convictions from second-degree to first-degree felonies with up to 30 years imprisonment."
+    "explanation": "Florida requires first-time DUI offenders to install an ignition interlock device for at least 6 months."
   },
   {
     "id": "FL-027",

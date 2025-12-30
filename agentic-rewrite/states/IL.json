@@ -507,15 +507,15 @@
     "id": "IL-037",
     "category": "stateUnique",
     "state": "IL",
-    "question": "Who was Illinois's Scott's Law named in honor of?",
+    "question": "What type of seat belt enforcement does Illinois use?",
     "answers": [
-      "Lt. Scott Gillen, Chicago Fire",
-      "A state legislator official",
-      "An Illinois State Police officer",
-      "A highway construction worker on duty"
+      "Secondary enforcement only",
+      "Primary enforcement",
+      "No enforcement",
+      "Warning-only enforcement"
     ],
-    "correctIndex": 0,
-    "explanation": "Scott's Law honors Lieutenant Scott Gillen of the Chicago Fire Department, who was killed by an impaired driver while assisting at a crash."
+    "correctIndex": 1,
+    "explanation": "Illinois uses primary seat belt enforcement, meaning police can stop and ticket drivers solely for not wearing a seat belt."
   },
   {
     "id": "IL-038",

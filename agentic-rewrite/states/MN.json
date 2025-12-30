@@ -393,14 +393,15 @@
     "id": "MN-031",
     "state": "MN",
     "category": "stateUnique",
-    "question": "What is Minnesota's Move Over Law named after?",
+    "question": "What should you do if your vehicle becomes stuck in snow on a Minnesota road?",
     "answers": [
-      "Trooper Ted Foss",
-      "Officer John Smith",
-      "Governor Mark Dayton",
-      "Commissioner Sarah Johnson"
+      "Leave immediately and walk for help",
+      "Stay with vehicle and call for assistance",
+      "Try to push the vehicle out alone",
+      "Turn off all lights to save battery"
     ],
-    "correctIndex": 0
+    "correctIndex": 1,
+    "explanation": "In Minnesota's harsh winters, experts recommend staying with your vehicle, running the engine periodically for heat, and calling for assistance rather than walking in dangerous conditions."
   },
   {
     "id": "MN-032",

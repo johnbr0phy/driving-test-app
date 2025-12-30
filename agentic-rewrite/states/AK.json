@@ -325,15 +325,16 @@
   },
   {
     "id": "AK-028",
-    "question": "What does the third number in Alaska's liability coverage requirement represent?",
+    "question": "What is the minimum property damage liability coverage required in Alaska?",
     "answers": [
-      "Medical payments per accident",
-      "Total bodily injury per accident",
-      "Personal injury protection",
-      "Property damage per accident"
+      "$15,000",
+      "$20,000",
+      "$25,000",
+      "$50,000"
     ],
-    "correctIndex": 3,
-    "category": "insurance"
+    "correctIndex": 2,
+    "category": "insurance",
+    "explanation": "Alaska requires a minimum of $25,000 in property damage liability coverage."
   },
   {
     "id": "AK-029",

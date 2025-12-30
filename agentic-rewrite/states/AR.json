@@ -171,15 +171,15 @@
     "id": "AR-013",
     "state": "AR",
     "category": "cellPhone",
-    "question": "What is Arkansas's law prohibiting texting while driving commonly called?",
+    "question": "What is the minimum age to legally use a handheld phone while driving in Arkansas?",
     "answers": [
-      "Paul's Law",
-      "Safe Driving Act",
-      "Distracted Driving Law",
-      "Wireless Device Act"
+      "18 years old",
+      "21 years old",
+      "16 years old",
+      "No age restriction"
     ],
-    "correctIndex": 0,
-    "explanation": "Arkansas's texting ban is known as Paul's Law, named for a father killed in a crash caused by a texting driver."
+    "correctIndex": 1,
+    "explanation": "Arkansas prohibits handheld phone use for drivers under 21, requiring hands-free technology for younger drivers."
   },
   {
     "id": "AR-014",
@@ -367,15 +367,15 @@
     "id": "AR-027",
     "state": "AR",
     "category": "insurance",
-    "question": "What does the first number in a liability insurance coverage format represent?",
+    "question": "What is the minimum bodily injury liability coverage per person required in Arkansas?",
     "answers": [
-      "Property damage coverage",
-      "Total accident coverage",
-      "Bodily injury per person",
-      "Uninsured motorist coverage"
+      "$15,000",
+      "$20,000",
+      "$25,000",
+      "$50,000"
     ],
     "correctIndex": 2,
-    "explanation": "The first number in liability coverage represents bodily injury per person, covering medical expenses and lost income for one individual."
+    "explanation": "Arkansas requires minimum liability coverage of $25,000 per person for bodily injury."
   },
   {
     "id": "AR-028",
@@ -409,15 +409,15 @@
     "id": "AR-030",
     "state": "AR",
     "category": "insurance",
-    "question": "What has Arkansas implemented in 2025 to help verify insurance coverage?",
+    "question": "What happens if you are caught driving without insurance in Arkansas?",
     "answers": [
-      "Monthly mailings to all drivers",
-      "Digital real-time verification",
-      "Annual in-person verification",
-      "Quarterly reporting requirements"
+      "Warning for first offense",
+      "License and registration suspension",
+      "Vehicle impounded immediately",
+      "Points added to license only"
     ],
     "correctIndex": 1,
-    "explanation": "Arkansas has strengthened digital verification systems in 2025, allowing law enforcement to check insurance status in real time."
+    "explanation": "Driving without insurance in Arkansas results in suspension of your driver's license and vehicle registration."
   },
   {
     "id": "AR-031",
@@ -451,43 +451,43 @@
     "id": "AR-033",
     "state": "AR",
     "category": "stateUnique",
-    "question": "What color lights are authorized on Arkansas roadway construction vehicles as of 2025?",
+    "question": "What is the maximum speed limit on rural interstate highways in Arkansas?",
     "answers": [
-      "Green lights",
-      "Blue lights",
-      "Purple lights",
-      "White lights"
+      "65 mph",
+      "70 mph",
+      "75 mph",
+      "80 mph"
     ],
-    "correctIndex": 0,
-    "explanation": "Arkansas authorized green flashing lights on construction vehicles in 2025 to improve visibility in various weather conditions."
+    "correctIndex": 2,
+    "explanation": "Arkansas allows speeds up to 75 mph on designated rural interstate highways."
   },
   {
     "id": "AR-034",
     "state": "AR",
     "category": "stateUnique",
-    "question": "What must now be included in Arkansas's written driver's license test as of 2025?",
+    "question": "At what age must children in Arkansas use a child safety seat or booster seat?",
     "answers": [
-      "Motorcycle safety procedures",
-      "Highway work zone safe operation",
-      "Electric vehicle operation skills",
-      "Advanced parking lot techniques"
+      "Under 4 years old",
+      "Under 6 years old",
+      "Under 8 years old",
+      "Under 10 years old"
     ],
     "correctIndex": 1,
-    "explanation": "Arkansas amended its driver's license test in 2025 to include questions about driving safely through highway work zones."
+    "explanation": "Arkansas law requires children under 6 years old and under 60 pounds to be secured in an appropriate child restraint system."
   },
   {
     "id": "AR-035",
     "state": "AR",
     "category": "stateUnique",
-    "question": "What type of work zones now have doubled fines in Arkansas as of 2025?",
+    "question": "What is Arkansas's seat belt law for front seat passengers?",
     "answers": [
-      "Static work zones only",
-      "Highway construction zones only",
-      "Mobile and static work zones",
-      "School zones near highways only"
+      "Only the driver must wear a seat belt",
+      "All front seat occupants must wear seat belts",
+      "Seat belts are optional for adults",
+      "Only passengers under 18 must wear seat belts"
     ],
-    "correctIndex": 2,
-    "explanation": "Arkansas extended doubled fine penalties to mobile work zones in 2025, previously only static work zones had this requirement."
+    "correctIndex": 1,
+    "explanation": "Arkansas law requires all front seat occupants to wear seat belts, with the driver responsible for ensuring passengers under 15 are properly restrained."
   },
   {
     "id": "AR-036",
@@ -535,15 +535,15 @@
     "id": "AR-039",
     "state": "AR",
     "category": "stateUnique",
-    "question": "How did Arkansas test green lights on work vehicles before authorizing them statewide?",
+    "question": "What is the default speed limit in Arkansas residential areas unless otherwise posted?",
     "answers": [
-      "Computer simulations",
-      "Nighttime trials only",
-      "Through a pilot program",
-      "Survey of other states"
+      "20 mph",
+      "25 mph",
+      "30 mph",
+      "35 mph"
     ],
     "correctIndex": 2,
-    "explanation": "Arkansas conducted a successful pilot program testing green lights on work vehicles before authorizing their statewide use in 2025."
+    "explanation": "The default speed limit in Arkansas residential areas is 30 mph unless signs indicate a different limit."
   },
   {
     "id": "AR-040",

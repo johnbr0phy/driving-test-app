@@ -445,14 +445,15 @@
     "id": "MI-035",
     "state": "MI",
     "category": "stateUnique",
-    "question": "What enforcement technology was authorized for school buses in April 2025?",
+    "question": "Who is responsible for ensuring passengers under 16 wear seat belts in Michigan?",
     "answers": [
-      "GPS tracking systems",
-      "Speed cameras only",
-      "Stop-arm camera systems",
-      "Automatic brake systems"
+      "The passenger themselves",
+      "The front seat passenger",
+      "The vehicle owner",
+      "The driver"
     ],
-    "correctIndex": 2
+    "correctIndex": 3,
+    "explanation": "In Michigan, the driver is legally responsible for ensuring all passengers under 16 are properly restrained with seat belts or child safety seats."
   },
   {
     "id": "MI-036",

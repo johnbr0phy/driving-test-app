@@ -8,7 +8,7 @@ import { db } from "@/lib/firebase";
 import { collection, getDocs, deleteDoc, doc } from "firebase/firestore";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { states } from "@/data/states";
-import { ArrowLeft, Users, RefreshCw, Trash2, HelpCircle, Activity, ClipboardCheck } from "lucide-react";
+import { ArrowLeft, Users, RefreshCw, Trash2, HelpCircle, Activity, ClipboardCheck, ChevronLeft, ChevronRight } from "lucide-react";
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -46,6 +46,8 @@ export default function AdminPage() {
   const [error, setError] = useState<string | null>(null);
   const [deleting, setDeleting] = useState<string | null>(null);
   const [dailyActiveUsers, setDailyActiveUsers] = useState<{ date: string; count: number; displayDate: string }[]>([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [itemsPerPage] = useState(10);
 
   // Helper function to calculate daily active users for the last 30 days
   const calculateDailyActiveUsers = (userData: UserData[]) => {
@@ -327,6 +329,24 @@ export default function AdminPage() {
         .map(([code, count]) => ({ code, name: getStateName(code), count }))
     : [];
 
+  // Pagination logic
+  const totalPages = Math.ceil(users.length / itemsPerPage);
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  const paginatedUsers = users.slice(startIndex, endIndex);
+
+  // Handle page navigation
+  const handlePageChange = (page: number) => {
+    setCurrentPage(Math.max(1, Math.min(page, totalPages)));
+  };
+
+  // Reset to last valid page if current page becomes invalid (e.g., after delete)
+  useEffect(() => {
+    if (totalPages > 0 && currentPage > totalPages) {
+      setCurrentPage(totalPages);
+    }
+  }, [totalPages, currentPage]);
+
   if (authLoading || loading) {
     return (
       <div className="min-h-screen bg-white flex items-center justify-center">
@@ -524,7 +544,7 @@ export default function AdminPage() {
                   </tr>
                 </thead>
                 <tbody>
-                  {users.map((userData) => (
+                  {paginatedUsers.map((userData) => (
                     <tr key={userData.uid} className="border-b hover:bg-gray-50">
                       <td className="py-3 px-4">
                         <span className="text-xs text-gray-600 font-mono">{userData.uid}</span>
@@ -568,6 +588,66 @@ export default function AdminPage() {
                 </tbody>
               </table>
             </div>
+
+            {/* Pagination Controls */}
+            {totalPages > 1 && (
+              <div className="flex items-center justify-between mt-4 pt-4 border-t">
+                <div className="text-sm text-gray-500">
+                  Showing {startIndex + 1} to {Math.min(endIndex, users.length)} of {users.length} users
+                </div>
+                <div className="flex items-center gap-2">
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    onClick={() => handlePageChange(currentPage - 1)}
+                    disabled={currentPage === 1}
+                  >
+                    <ChevronLeft className="h-4 w-4" />
+                  </Button>
+
+                  {/* Page numbers */}
+                  <div className="flex items-center gap-1">
+                    {Array.from({ length: totalPages }, (_, i) => i + 1)
+                      .filter(page => {
+                        // Show first page, last page, current page, and pages around current
+                        return page === 1 ||
+                               page === totalPages ||
+                               Math.abs(page - currentPage) <= 1;
+                      })
+                      .map((page, index, array) => {
+                        // Add ellipsis if there's a gap
+                        const prevPage = array[index - 1];
+                        const showEllipsisBefore = prevPage && page - prevPage > 1;
+
+                        return (
+                          <span key={page} className="flex items-center">
+                            {showEllipsisBefore && (
+                              <span className="px-2 text-gray-400">...</span>
+                            )}
+                            <Button
+                              variant={currentPage === page ? "default" : "outline"}
+                              size="sm"
+                              onClick={() => handlePageChange(page)}
+                              className="min-w-[32px]"
+                            >
+                              {page}
+                            </Button>
+                          </span>
+                        );
+                      })}
+                  </div>
+
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    onClick={() => handlePageChange(currentPage + 1)}
+                    disabled={currentPage === totalPages}
+                  >
+                    <ChevronRight className="h-4 w-4" />
+                  </Button>
+                </div>
+              </div>
+            )}
           </CardContent>
         </Card>
       </div>

@@ -68,6 +68,7 @@ interface AppState {
   };
   answerTrainingSetQuestion: (setId: number, questionId: string, isCorrect: boolean) => void;
   getTrainingSetProgress: (setId: number) => { correct: number; total: number; complete: boolean };
+  resetTrainingSet: (setId: number) => void;
 
   // Onboarding
   isOnboardingComplete: () => boolean;
@@ -407,6 +408,16 @@ export const useStore = create<AppState>()(
           total,
           complete: correct >= total,
         };
+      },
+
+      resetTrainingSet: (setId: number) => {
+        set((state) => ({
+          trainingSets: {
+            ...state.trainingSets,
+            [setId]: { masteredIds: [], wrongQueue: [] },
+          },
+        }));
+        get().saveToFirestore();
       },
 
       // Onboarding check - returns true if user has completed onboarding

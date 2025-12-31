@@ -35,6 +35,7 @@ function TrainingPageContent() {
   const answerTrainingSetQuestion = useStore((state) => state.answerTrainingSetQuestion);
   const getTrainingSetProgress = useStore((state) => state.getTrainingSetProgress);
   const resetMasteredQuestions = useStore((state) => state.resetMasteredQuestions);
+  const resetTrainingSet = useStore((state) => state.resetTrainingSet);
   const isOnboardingComplete = useStore((state) => state.isOnboardingComplete);
 
   // Get set number from URL if present
@@ -175,6 +176,15 @@ function TrainingPageContent() {
     loadNextQuestion();
   };
 
+  const handlePracticeAgain = () => {
+    if (setNumber) {
+      resetTrainingSet(setNumber);
+      setShowSetComplete(false);
+      // Load the first question after reset
+      setTimeout(() => loadNextQuestion(), 0);
+    }
+  };
+
   if (!hydrated || !selectedState) {
     return null;
   }
@@ -241,8 +251,14 @@ function TrainingPageContent() {
               You&apos;ve correctly answered all 50 questions in this training set!
             </p>
             <div className="flex flex-col gap-3">
+              <Button
+                className="w-full bg-black text-white hover:bg-gray-800 text-lg py-6"
+                onClick={handlePracticeAgain}
+              >
+                Practice Again
+              </Button>
               <Link href="/dashboard">
-                <Button className="w-full bg-black text-white hover:bg-gray-800 text-lg py-6">
+                <Button variant="outline" className="w-full">
                   Back to Dashboard
                 </Button>
               </Link>

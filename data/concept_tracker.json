@@ -1,0 +1,23 @@
+{
+  "general": 3,
+  "cell_phone": 3,
+  "dui_bac": 3,
+  "school_bus": 2,
+  "speed_limit": 2,
+  "yield": 3,
+  "blind_spot": 2,
+  "stop_sign": 2,
+  "turn_signal": 1,
+  "following_distance": 2,
+  "passing": 2,
+  "emergency_vehicle": 1,
+  "railroad": 1,
+  "traffic_lights": 2,
+  "hydroplaning": 2,
+  "fog": 2,
+  "parking": 3,
+  "construction_zone": 1,
+  "pedestrian": 1,
+  "night_driving": 1,
+  "right_of_way": 1
+}

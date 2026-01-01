@@ -70,6 +70,9 @@ interface AppState {
   getTrainingSetProgress: (setId: number) => { correct: number; total: number; complete: boolean };
   resetTrainingSet: (setId: number) => void;
 
+  // Activity tracking for DAU
+  activeDates: string[];
+
   // Onboarding
   isOnboardingComplete: () => boolean;
 
@@ -122,6 +125,7 @@ export const useStore = create<AppState>()(
         lastQuestionId: null,
       },
       trainingSets: {},
+      activeDates: [],
       userId: null,
       photoURL: null,
 
@@ -542,6 +546,7 @@ export const useStore = create<AppState>()(
                 lastQuestionId: data.training?.lastQuestionId || null,
               },
               trainingSets: data.trainingSets || {},
+              activeDates: data.activeDates || [],
               photoURL: data.photoURL || null,
               userId,
             });
@@ -573,7 +578,7 @@ export const useStore = create<AppState>()(
       },
 
       saveToFirestore: async () => {
-        const { userId, isGuest, selectedState, currentTests, completedTests, testAttempts, training, trainingSets, photoURL } = get();
+        const { userId, isGuest, selectedState, currentTests, completedTests, testAttempts, training, trainingSets, activeDates, photoURL } = get();
         if (!userId || isGuest) return; // Don't save if no user is logged in or guest mode
 
         try {
@@ -586,6 +591,15 @@ export const useStore = create<AppState>()(
             };
             return acc;
           }, {} as any);
+
+          // Track today's date for DAU (using UTC to ensure consistency)
+          const today = new Date().toISOString().split('T')[0];
+          const updatedActiveDates = activeDates.includes(today) ? activeDates : [...activeDates, today];
+
+          // Update local state with new active date
+          if (!activeDates.includes(today)) {
+            set({ activeDates: updatedActiveDates });
+          }
 
           await setDoc(doc(db, 'users', userId), {
             selectedState,
@@ -606,6 +620,7 @@ export const useStore = create<AppState>()(
             })),
             training,
             trainingSets,
+            activeDates: updatedActiveDates,
             lastUpdated: new Date().toISOString(),
           });
         } catch (error) {
@@ -629,6 +644,7 @@ export const useStore = create<AppState>()(
             lastQuestionId: null,
           },
           trainingSets: {},
+          activeDates: [],
         });
         get().saveToFirestore();
       },
@@ -651,6 +667,7 @@ export const useStore = create<AppState>()(
             lastQuestionId: null,
           },
           trainingSets: {},
+          activeDates: [],
           userId: null,
           photoURL: null,
         });

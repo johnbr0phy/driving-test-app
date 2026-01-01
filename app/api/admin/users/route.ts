@@ -47,6 +47,7 @@ export async function GET(request: NextRequest) {
         createdAt: authUser.metadata.creationTime || null,
         testsCompleted: firestoreData?.completedTests?.length || 0,
         trainingProgress: firestoreData?.training?.totalCorrectAllTime || 0,
+        activeDates: firestoreData?.activeDates || [],
       };
     });
 

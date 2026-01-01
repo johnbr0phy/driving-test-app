@@ -22,6 +22,7 @@ interface UserData {
   testsCompleted: number;
   trainingQuestionsAnswered: number;
   testQuestionsAnswered: number;
+  activeDates: string[];
 }
 
 interface Stats {
@@ -51,24 +52,33 @@ export default function AdminPage() {
   const calculateDailyActiveUsers = (userData: UserData[]) => {
     const days: { date: string; count: number; displayDate: string }[] = [];
     const today = new Date();
-    today.setHours(23, 59, 59, 999);
 
     for (let i = 29; i >= 0; i--) {
       const date = new Date(today);
       date.setDate(date.getDate() - i);
+      const dateStr = date.toISOString().split('T')[0];
       const startOfDay = new Date(date);
       startOfDay.setHours(0, 0, 0, 0);
       const endOfDay = new Date(date);
       endOfDay.setHours(23, 59, 59, 999);
 
+      // Count users who were active on this date
+      // Use activeDates if available, otherwise fall back to lastUpdated for legacy data
       const activeCount = userData.filter(u => {
-        if (!u.lastUpdated) return false;
-        const lastUpdated = new Date(u.lastUpdated);
-        return lastUpdated >= startOfDay && lastUpdated <= endOfDay;
+        // First check activeDates (accurate tracking)
+        if (u.activeDates && u.activeDates.length > 0) {
+          return u.activeDates.includes(dateStr);
+        }
+        // Fall back to lastUpdated for users without activeDates yet
+        if (u.lastUpdated) {
+          const lastUpdated = new Date(u.lastUpdated);
+          return lastUpdated >= startOfDay && lastUpdated <= endOfDay;
+        }
+        return false;
       }).length;
 
       days.push({
-        date: date.toISOString().split('T')[0],
+        date: dateStr,
         count: activeCount,
         displayDate: date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
       });
@@ -118,6 +128,7 @@ export default function AdminPage() {
       testsCompleted: completedTests.length,
       trainingQuestionsAnswered,
       testQuestionsAnswered,
+      activeDates: data.activeDates || [],
     };
   };
 
@@ -151,7 +162,7 @@ export default function AdminPage() {
             });
 
             // Map API users to UserData with detailed stats from Firestore
-            userData = apiUsers.map((apiUser: { uid: string; email: string; selectedState: string | null; lastUpdated: string | null; createdAt: string | null; testsCompleted: number }) => {
+            userData = apiUsers.map((apiUser: { uid: string; email: string; selectedState: string | null; lastUpdated: string | null; createdAt: string | null; testsCompleted: number; activeDates?: string[] }) => {
               const firestoreData = firestoreDataMap.get(apiUser.uid);
               if (firestoreData) {
                 const processed = processFirestoreDoc(apiUser.uid, firestoreData);
@@ -170,6 +181,7 @@ export default function AdminPage() {
                 testsCompleted: 0,
                 trainingQuestionsAnswered: 0,
                 testQuestionsAnswered: 0,
+                activeDates: apiUser.activeDates || [],
               };
             });
           }
@@ -198,8 +210,6 @@ export default function AdminPage() {
       let totalTrainingQuestions = 0;
       let totalTestQuestions = 0;
       let totalTestsCompleted = 0;
-      const sevenDaysAgo = new Date();
-      sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
 
       userData.forEach(u => {
         if (u.selectedState) {
@@ -211,9 +221,22 @@ export default function AdminPage() {
       });
 
       // Count active users in last 7 days
+      // Use activeDates if available, otherwise fall back to lastUpdated
+      const sevenDaysAgo = new Date();
+      sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
+      const last7Days = Array.from({ length: 7 }, (_, i) => {
+        const date = new Date();
+        date.setDate(date.getDate() - i);
+        return date.toISOString().split('T')[0];
+      });
       const activeUsers7d = userData.filter(u => {
-        if (!u.lastUpdated) return false;
-        return new Date(u.lastUpdated) >= sevenDaysAgo;
+        if (u.activeDates && u.activeDates.length > 0) {
+          return u.activeDates.some(d => last7Days.includes(d));
+        }
+        if (u.lastUpdated) {
+          return new Date(u.lastUpdated) >= sevenDaysAgo;
+        }
+        return false;
       }).length;
 
       const totalQuestionsAnswered = totalTrainingQuestions + totalTestQuestions;

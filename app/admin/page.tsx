@@ -57,11 +57,25 @@ export default function AdminPage() {
       const date = new Date(today);
       date.setDate(date.getDate() - i);
       const dateStr = date.toISOString().split('T')[0];
+      const startOfDay = new Date(date);
+      startOfDay.setHours(0, 0, 0, 0);
+      const endOfDay = new Date(date);
+      endOfDay.setHours(23, 59, 59, 999);
 
-      // Count users who have this date in their activeDates array
-      const activeCount = userData.filter(u =>
-        u.activeDates && u.activeDates.includes(dateStr)
-      ).length;
+      // Count users who were active on this date
+      // Use activeDates if available, otherwise fall back to lastUpdated for legacy data
+      const activeCount = userData.filter(u => {
+        // First check activeDates (accurate tracking)
+        if (u.activeDates && u.activeDates.length > 0) {
+          return u.activeDates.includes(dateStr);
+        }
+        // Fall back to lastUpdated for users without activeDates yet
+        if (u.lastUpdated) {
+          const lastUpdated = new Date(u.lastUpdated);
+          return lastUpdated >= startOfDay && lastUpdated <= endOfDay;
+        }
+        return false;
+      }).length;
 
       days.push({
         date: dateStr,
@@ -206,15 +220,24 @@ export default function AdminPage() {
         totalTestsCompleted += u.testsCompleted;
       });
 
-      // Count active users in last 7 days using activeDates
+      // Count active users in last 7 days
+      // Use activeDates if available, otherwise fall back to lastUpdated
+      const sevenDaysAgo = new Date();
+      sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
       const last7Days = Array.from({ length: 7 }, (_, i) => {
         const date = new Date();
         date.setDate(date.getDate() - i);
         return date.toISOString().split('T')[0];
       });
-      const activeUsers7d = userData.filter(u =>
-        u.activeDates && u.activeDates.some(d => last7Days.includes(d))
-      ).length;
+      const activeUsers7d = userData.filter(u => {
+        if (u.activeDates && u.activeDates.length > 0) {
+          return u.activeDates.some(d => last7Days.includes(d));
+        }
+        if (u.lastUpdated) {
+          return new Date(u.lastUpdated) >= sevenDaysAgo;
+        }
+        return false;
+      }).length;
 
       const totalQuestionsAnswered = totalTrainingQuestions + totalTestQuestions;
       const avgQuestionsPerUser = userData.length > 0

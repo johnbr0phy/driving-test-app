@@ -4,6 +4,7 @@ import { useEffect, useState, useMemo } from "react";
 import { useRouter } from "next/navigation";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
 import { ArrowLeft, ArrowUpDown, CheckCircle, XCircle, HelpCircle } from "lucide-react";
 import Link from "next/link";
 import { useStore } from "@/store/useStore";
@@ -278,25 +279,61 @@ export default function QuestionsPage() {
                         className="border-b last:border-b-0 hover:bg-gray-50"
                       >
                         <td className="py-3 px-4">
-                          <div className="flex items-start gap-2">
-                            {item.timesAnswered === 0 ? (
-                              <HelpCircle className="h-5 w-5 text-gray-400 flex-shrink-0 mt-0.5" />
-                            ) : item.accuracy === 100 ? (
-                              <CheckCircle className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
-                            ) : item.accuracy === 0 ? (
-                              <XCircle className="h-5 w-5 text-red-600 flex-shrink-0 mt-0.5" />
-                            ) : (
-                              <div className="h-5 w-5 rounded-full border-2 border-yellow-500 flex-shrink-0 mt-0.5" />
-                            )}
-                            <div>
-                              <p className="text-sm line-clamp-2">{item.question.question}</p>
-                              <p className="text-xs text-gray-500 mt-1">
-                                {item.question.type === "Universal" ? "Universal" : `${selectedState}-specific`}
-                                {" "}&bull;{" "}
-                                {item.question.category}
-                              </p>
-                            </div>
-                          </div>
+                          <HoverCard openDelay={200} closeDelay={100}>
+                            <HoverCardTrigger asChild>
+                              <div className="flex items-start gap-2 cursor-pointer">
+                                {item.timesAnswered === 0 ? (
+                                  <HelpCircle className="h-5 w-5 text-gray-400 flex-shrink-0 mt-0.5" />
+                                ) : item.accuracy === 100 ? (
+                                  <CheckCircle className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
+                                ) : item.accuracy === 0 ? (
+                                  <XCircle className="h-5 w-5 text-red-600 flex-shrink-0 mt-0.5" />
+                                ) : (
+                                  <div className="h-5 w-5 rounded-full border-2 border-yellow-500 flex-shrink-0 mt-0.5" />
+                                )}
+                                <div>
+                                  <p className="text-sm line-clamp-2">{item.question.question}</p>
+                                  <p className="text-xs text-gray-500 mt-1">
+                                    {item.question.type === "Universal" ? "Universal" : `${selectedState}-specific`}
+                                    {" "}&bull;{" "}
+                                    {item.question.category}
+                                  </p>
+                                </div>
+                              </div>
+                            </HoverCardTrigger>
+                            <HoverCardContent className="w-96" side="right" align="start">
+                              <div className="space-y-2">
+                                <p className="text-sm font-medium mb-3">{item.question.question}</p>
+                                <div className="space-y-2">
+                                  {["A", "B", "C", "D"].map((letter) => {
+                                    const optionKey = `option${letter}` as keyof Question;
+                                    const optionText = item.question[optionKey] as string;
+                                    const isCorrect = item.question.correctAnswer === letter;
+                                    return (
+                                      <div
+                                        key={letter}
+                                        className={`flex items-start gap-2 p-2 rounded text-sm ${
+                                          isCorrect
+                                            ? "bg-green-50 border border-green-200"
+                                            : "bg-gray-50 border border-gray-200"
+                                        }`}
+                                      >
+                                        <span className={`font-semibold ${isCorrect ? "text-green-600" : "text-gray-500"}`}>
+                                          {letter}.
+                                        </span>
+                                        <span className={isCorrect ? "text-green-700" : "text-gray-600"}>
+                                          {optionText}
+                                        </span>
+                                        {isCorrect && (
+                                          <CheckCircle className="h-4 w-4 text-green-600 ml-auto flex-shrink-0" />
+                                        )}
+                                      </div>
+                                    );
+                                  })}
+                                </div>
+                              </div>
+                            </HoverCardContent>
+                          </HoverCard>
                         </td>
                         <td className="text-center py-3 px-4">
                           <span className={item.timesAnswered > 0 ? "font-semibold" : "text-gray-400"}>

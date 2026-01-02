@@ -20,7 +20,7 @@
     "state": "WV",
     "category": "gdlLicensing",
     "question": "What are the permitted driving hours for a Level 1 instruction permit holder?",
-    "answers": ["6 a.m. to 11 p.m.", "Sunrise to sunset only", "5 a.m. to 10 p.m.", "7 a.m. to 9 p.m."],
+    "answers": ["6 AM to 11 PM", "Sunrise to sunset only", "5 AM to 10 PM", "7 AM to 9 PM"],
     "correctIndex": 2
   },
   {

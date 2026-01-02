@@ -20,7 +20,7 @@
     "state": "VA",
     "category": "gdlLicensing",
     "question": "During what hours are learner's permit holders prohibited from driving in Virginia?",
-    "answers": ["10 p.m. to 6 a.m.", "11 p.m. to 5 a.m.", "Midnight to 4 a.m.", "1 a.m. to 5 a.m."],
+    "answers": ["10 PM to 6 AM", "11 PM to 5 AM", "Midnight to 4 AM", "1 AM to 5 AM"],
     "correctIndex": 2
   },
   {
@@ -60,7 +60,7 @@
     "state": "VA",
     "category": "gdlLicensing",
     "question": "During what hours are provisional license holders under 18 prohibited from driving due to curfew restrictions?",
-    "answers": ["11 p.m. to 5 a.m.", "10 p.m. to 6 a.m.", "1 a.m. to 5 a.m.", "Midnight to 4 a.m."],
+    "answers": ["11 PM to 5 AM", "10 PM to 6 AM", "1 AM to 5 AM", "Midnight to 4 AM"],
     "correctIndex": 3
   },
   {

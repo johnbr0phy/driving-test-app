@@ -63,9 +63,9 @@
     "id": "IN-006",
     "question": "What are the driving hours restrictions for the first 180 days of a probationary license?",
     "answers": [
-      "Cannot drive 11 p.m. to 6 a.m.",
-      "Cannot drive 10 p.m. to 5 a.m.",
-      "Cannot drive midnight to 5 a.m.",
+      "Cannot drive 11 PM to 6 AM",
+      "Cannot drive 10 PM to 5 AM",
+      "Cannot drive midnight to 5 AM",
       "No restrictions on hours"
     ],
     "correctIndex": 1,
@@ -75,10 +75,10 @@
     "id": "IN-007",
     "question": "After the first 180 days, when can probationary drivers not drive Sunday through Thursday?",
     "answers": [
-      "After midnight until 5 a.m.",
-      "After 10 p.m. until 5 a.m.",
-      "11 p.m. to 5 a.m. Monday",
-      "After 9 p.m. until 6 a.m."
+      "After midnight until 5 AM",
+      "After 10 PM until 5 AM",
+      "11 PM to 5 AM Monday",
+      "After 9 PM until 6 AM"
     ],
     "correctIndex": 2,
     "category": "gdlLicensing"

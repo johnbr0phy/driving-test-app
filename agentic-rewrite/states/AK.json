@@ -63,10 +63,10 @@
     "id": "AK-006",
     "question": "During what hours can a provisional license holder not drive unless accompanied by someone 21 or older?",
     "answers": [
-      "Midnight to 6 a.m.",
-      "1 a.m. to 5 a.m.",
-      "2 a.m. to 6 a.m.",
-      "11 p.m. to 5 a.m."
+      "Midnight to 6 AM",
+      "1 AM to 5 AM",
+      "2 AM to 6 AM",
+      "11 PM to 5 AM"
     ],
     "correctIndex": 1,
     "category": "gdlLicensing"

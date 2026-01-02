@@ -39,10 +39,10 @@
     "id": "AZ-004",
     "question": "What are the curfew hours for Class G license holders during their first six months?",
     "answers": [
-      "11 p.m. to 6 a.m.",
-      "1 a.m. to 5 a.m.",
-      "10 p.m. to 5 a.m.",
-      "Midnight to 5 a.m."
+      "11 PM to 6 AM",
+      "1 AM to 5 AM",
+      "10 PM to 5 AM",
+      "Midnight to 5 AM"
     ],
     "correctIndex": 3,
     "category": "gdlLicensing"

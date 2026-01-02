@@ -20,7 +20,7 @@
     "state": "VA",
     "category": "gdlLicensing",
     "question": "During what hours are learner's permit holders prohibited from driving in Virginia?",
-    "answers": ["10 p.m. to 6 a.m.", "11 p.m. to 5 a.m.", "Midnight to 4 a.m.", "1 a.m. to 5 a.m."],
+    "answers": ["10 PM to 6 AM", "11 PM to 5 AM", "Midnight to 4 AM", "1 AM to 5 AM"],
     "correctIndex": 2
   },
   {
@@ -60,7 +60,7 @@
     "state": "VA",
     "category": "gdlLicensing",
     "question": "During what hours are provisional license holders under 18 prohibited from driving due to curfew restrictions?",
-    "answers": ["11 p.m. to 5 a.m.", "10 p.m. to 6 a.m.", "1 a.m. to 5 a.m.", "Midnight to 4 a.m."],
+    "answers": ["11 PM to 5 AM", "10 PM to 6 AM", "1 AM to 5 AM", "Midnight to 4 AM"],
     "correctIndex": 3
   },
   {
@@ -107,8 +107,8 @@
     "id": "VA-014",
     "state": "VA",
     "category": "cellPhone",
-    "question": "When did Virginia's hands-free driving law take effect prohibiting drivers from holding phones?",
-    "answers": ["July 1, 2020", "January 1, 2021", "July 1, 2021", "January 1, 2020"],
+    "question": "What is required when passing a bicyclist on a Virginia roadway?",
+    "answers": ["Honk to alert the cyclist", "At least 3 feet of space", "Pass only on multi-lane roads", "Wait until no oncoming traffic"],
     "correctIndex": 1
   },
   {
@@ -203,8 +203,8 @@
     "id": "VA-026",
     "state": "VA",
     "category": "duiStateLaws",
-    "question": "What additional consequence may underage DUI offenders face in 2025 beyond traditional penalties?",
-    "answers": ["Mandatory vehicle forfeiture", "Ignition interlock requirement", "Permanent license revocation", "Criminal record expungement"],
+    "question": "What device may be required after a DUI conviction in Virginia?",
+    "answers": ["GPS tracking device", "Ignition interlock device", "Rearview dashboard camera", "Electronic speed limiter"],
     "correctIndex": 1
   },
   {
@@ -214,14 +214,6 @@
     "question": "What type of insurance system does Virginia use for auto accidents?",
     "answers": ["At-fault tort system", "No-fault insurance", "Hybrid fault system", "Choice no-fault system"],
     "correctIndex": 0
-  },
-  {
-    "id": "VA-028",
-    "state": "VA",
-    "category": "insurance",
-    "question": "What was eliminated in Virginia on July 1, 2024, that previously allowed uninsured driving?",
-    "answers": ["Hardship waivers", "Uninsured motorist fee", "Payment plan options", "Temporary permits"],
-    "correctIndex": 3
   },
   {
     "id": "VA-029",
@@ -235,9 +227,9 @@
     "id": "VA-030",
     "state": "VA",
     "category": "insurance",
-    "question": "What happens if you drive without insurance in Virginia as of 2024?",
-    "answers": ["Warning for first offense", "No longer an option at all", "Higher registration fee", "License suspended 30 days"],
-    "correctIndex": 3
+    "question": "What is the consequence for driving without insurance in Virginia?",
+    "answers": ["Warning for first offense", "Fine of $50 only", "License suspension", "Vehicle registration hold"],
+    "correctIndex": 2
   },
   {
     "id": "VA-031",
@@ -259,9 +251,9 @@
     "id": "VA-033",
     "state": "VA",
     "category": "stateUnique",
-    "question": "How many occupants are required for HOV-3 on I-66 inside the Beltway during peak hours as of December 2022?",
-    "answers": ["3 or more occupants", "2 or more occupants", "4 or more occupants", "Driver only with permit"],
-    "correctIndex": 0
+    "question": "When must you stop for a school bus with flashing red lights in Virginia?",
+    "answers": ["Only within school zones", "Unless separated by median", "Only if children visible", "Always on all roads"],
+    "correctIndex": 1
   },
   {
     "id": "VA-034",
@@ -275,17 +267,17 @@
     "id": "VA-035",
     "state": "VA",
     "category": "stateUnique",
-    "question": "What new type of driving became classified as reckless driving in Virginia effective July 1, 2025?",
-    "answers": ["Aggressive tailgating only", "Distracted driving behaviors", "Exhibition driving behaviors", "Lane weaving only"],
+    "question": "What is the default speed limit in Virginia residential areas when not posted?",
+    "answers": ["20 mph", "30 mph", "25 mph", "35 mph"],
     "correctIndex": 2
   },
   {
     "id": "VA-036",
     "state": "VA",
     "category": "stateUnique",
-    "question": "How long are vehicles impounded if the driver is arrested for exhibition driving in Virginia?",
-    "answers": ["10 days impoundment", "15 days impoundment", "30 days impoundment", "20 days impoundment"],
-    "correctIndex": 3
+    "question": "When are headlights required in Virginia?",
+    "answers": ["Only after midnight", "Sunset to sunrise or low visibility", "Only during heavy rain", "Anytime wipers are active"],
+    "correctIndex": 1
   },
   {
     "id": "VA-037",
@@ -294,14 +286,6 @@
     "question": "What must drivers do when an emergency vehicle with siren and flashing lights approaches?",
     "answers": ["Pull to nearest edge and stop", "Slow down but continue moving", "Change lanes if possible", "Flash lights to acknowledge"],
     "correctIndex": 0
-  },
-  {
-    "id": "VA-038",
-    "state": "VA",
-    "category": "stateUnique",
-    "question": "What are the peak HOV-3 hours eastbound on I-66 inside the Beltway on weekdays?",
-    "answers": ["6 a.m. to 10 a.m.", "5:30am to 9:30am", "7 a.m. to 10 a.m.", "5 a.m. to 9 a.m."],
-    "correctIndex": 1
   },
   {
     "id": "VA-039",

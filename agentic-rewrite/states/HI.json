@@ -63,10 +63,10 @@
     "id": "HI-006",
     "question": "During what hours must a parent or guardian supervise a permit holder in Hawaii?",
     "answers": [
-      "Midnight to 6 a.m.",
-      "11 p.m. to 5 a.m.",
-      "10 p.m. to 6 a.m.",
-      "1 a.m. to 5 a.m."
+      "Midnight to 6 AM",
+      "11 PM to 5 AM",
+      "10 PM to 6 AM",
+      "1 AM to 5 AM"
     ],
     "correctIndex": 1,
     "category": "gdlLicensing"

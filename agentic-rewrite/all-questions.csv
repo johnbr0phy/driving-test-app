@@ -4,7 +4,7 @@ AK-002,AK,gdlLicensing,"How long must you hold an instruction permit before appl
 AK-003,AK,gdlLicensing,"How many total hours of driving experience are required before getting a provisional license in Alaska?","20 hours","30 hours","40 hours","50 hours",2,C
 AK-004,AK,gdlLicensing,"How many hours of the required driving practice must be in challenging conditions like inclement weather or nighttime?","5 hours","8 hours","12 hours","10 hours",3,D
 AK-005,AK,gdlLicensing,"What is the minimum age of a supervising adult when practicing with an instruction permit in Alaska?","21 years old","18 years old","25 years old","23 years old",0,A
-AK-006,AK,gdlLicensing,"During what hours can a provisional license holder not drive unless accompanied by someone 21 or older?","Midnight to 6 a.m.","1 a.m. to 5 a.m.","2 a.m. to 6 a.m.","11 p.m. to 5 a.m.",1,B
+AK-006,AK,gdlLicensing,"During what hours can a provisional license holder not drive unless accompanied by someone 21 or older?","Midnight to 6 AM","1 AM to 5 AM","2 AM to 6 AM","11 PM to 5 AM",1,B
 AK-007,AK,gdlLicensing,"Who may a provisional license holder carry as passengers under age 21?","Close friends only","Family members only","Siblings only","No one",2,C
 AK-008,AK,gdlLicensing,"At what age can you obtain a full unrestricted driver's license in Alaska?","16 years old","17 years old","19 years old","18 years old",3,D
 AK-009,AK,gdlLicensing,"How long must you hold a provisional license before upgrading to a full license if under 18?","6 months","3 months","9 months","12 months",0,A
@@ -122,7 +122,7 @@ AR-040,AR,stateUnique,"Why did Arkansas add green lights to construction vehicle
 AZ-001,AZ,gdlLicensing,"What is the minimum age to obtain a Class G graduated driver license in Arizona?","16 years old","15 years old","17 years old","18 years old",0,A
 AZ-002,AZ,gdlLicensing,"How long must a teen hold an instruction permit before applying for a Class G license?","Three months minimum","Six months or age 18","One full year","Nine months minimum",1,B
 AZ-003,AZ,gdlLicensing,"During the first six months of a Class G license, how many passengers under 18 may a teen driver transport?","Two passengers maximum","Three passengers maximum","One passenger (siblings exempt)","No passengers under any circumstances",2,C
-AZ-004,AZ,gdlLicensing,"What are the curfew hours for Class G license holders during their first six months?","11 p.m. to 6 a.m.","1 a.m. to 5 a.m.","10 p.m. to 5 a.m.","Midnight to 5 a.m.",3,D
+AZ-004,AZ,gdlLicensing,"What are the curfew hours for Class G license holders during their first six months?","11 PM to 6 AM","1 AM to 5 AM","10 PM to 5 AM","Midnight to 5 AM",3,D
 AZ-005,AZ,gdlLicensing,"Which situation allows a Class G license holder to drive during curfew hours?","Driving to or from work or school","Driving to a friend's house","Driving for recreational activities","Any driving with another teen present",0,A
 AZ-006,AZ,gdlLicensing,"How many hours of supervised driving practice must teens complete before getting a Class G license?","20 hours total practice","30 hours (10 at night)","40 hours total practice","25 hours (5 at night)",1,B
 AZ-007,AZ,gdlLicensing,"When do Class G license restrictions expire for teen drivers?","After one full year","After three months","Six months or age 18","After nine full months",2,C
@@ -404,7 +404,7 @@ HI-002,HI,gdlLicensing,"How long must you hold an instructional permit before ap
 HI-003,HI,gdlLicensing,"What is the minimum age to obtain a provisional license in Hawaii?","15 years old","15½ years old","16 years old","17 years old",2,C
 HI-004,HI,gdlLicensing,"At what age can you obtain a full unrestricted driver's license in Hawaii?","16 years old","16½ years old","18 years old","17 years old",3,D
 HI-005,HI,gdlLicensing,"What is the minimum age of a supervising driver when practicing with an instructional permit in Hawaii?","21 years old","18 years old","25 years old","19 years old",0,A
-HI-006,HI,gdlLicensing,"During what hours must a parent or guardian supervise a permit holder in Hawaii?","Midnight to 6 a.m.","11 p.m. to 5 a.m.","10 p.m. to 6 a.m.","1 a.m. to 5 a.m.",1,B
+HI-006,HI,gdlLicensing,"During what hours must a parent or guardian supervise a permit holder in Hawaii?","Midnight to 6 AM","11 PM to 5 AM","10 PM to 6 AM","1 AM to 5 AM",1,B
 HI-007,HI,gdlLicensing,"At what age does a provisional license expire in Hawaii?","On your 18th birthday","On your 20th birthday","On your 19th birthday","On your 21st birthday",2,C
 HI-008,HI,gdlLicensing,"What must you complete before applying for a provisional license in Hawaii?","Only written test is required","Only behind-the-wheel training","Only classroom instruction course","Classroom and behind-wheel education",3,D
 HI-009,HI,gdlLicensing,"Who must supervise permit holders outside of nighttime hours in Hawaii?","Licensed driver 21 or older","Only parents or guardians","Only driving instructors","Only family members",0,A
@@ -564,8 +564,8 @@ IN-002,IN,gdlLicensing,"How long must you hold a learner's permit before applyin
 IN-003,IN,gdlLicensing,"How many total hours of supervised driving practice are required in Indiana?","30 hours","40 hours","50 hours","60 hours",2,C
 IN-004,IN,gdlLicensing,"What is the minimum age of a supervising driver when practicing with a permit in Indiana?","21 years old","23 years old","18 years old","25 years old",3,D
 IN-005,IN,gdlLicensing,"At what age can you obtain a probationary license in Indiana with driver education?","16 yrs and 90 days","Exactly 16 years","15 yrs and 180 days","Exactly 17 years",0,A
-IN-006,IN,gdlLicensing,"What are the driving hours restrictions for the first 180 days of a probationary license?","Cannot drive 11 p.m. to 6 a.m.","Cannot drive 10 p.m. to 5 a.m.","Cannot drive midnight to 5 a.m.","No restrictions on hours",1,B
-IN-007,IN,gdlLicensing,"After the first 180 days, when can probationary drivers not drive Sunday through Thursday?","After midnight until 5 a.m.","After 10 p.m. until 5 a.m.","11 p.m. to 5 a.m. Monday","After 9 p.m. until 6 a.m.",2,C
+IN-006,IN,gdlLicensing,"What are the driving hours restrictions for the first 180 days of a probationary license?","Cannot drive 11 PM to 6 AM","Cannot drive 10 PM to 5 AM","Cannot drive midnight to 5 AM","No restrictions on hours",1,B
+IN-007,IN,gdlLicensing,"After the first 180 days, when can probationary drivers not drive Sunday through Thursday?","After midnight until 5 AM","After 10 PM until 5 AM","11 PM to 5 AM Monday","After 9 PM until 6 AM",2,C
 IN-008,IN,gdlLicensing,"At what age do probationary license restrictions end in Indiana?","21 years old","19 years old","17 years old","18 years old",3,D
 IN-009,IN,gdlLicensing,"How many of the required practice hours must be driven at night in Indiana?","10 hours","5 hours","15 hours","20 hours",0,A
 IN-010,IN,gdlLicensing,"Who can probationary drivers carry as passengers during the first 180 days?","Any licensed driver","Immediate family only","No passengers allowed","Friends of any age",1,B
@@ -1407,7 +1407,7 @@ OK-005,OK,gdlLicensing,"What driving practice is required to progress from a lea
 OK-006,OK,gdlLicensing,"How many non-family passengers can an intermediate license holder have in Oklahoma?","Two passengers maximum","One non-family passenger","Three passengers maximum","No passengers allowed",1,B
 OK-007,OK,gdlLicensing,"What course must teens complete before obtaining an intermediate license in Oklahoma?","Defensive driving course","Advanced skills training","OK Work Zone Safe Course","Highway safety seminar",2,C
 OK-008,OK,gdlLicensing,"When can an intermediate license holder obtain an unrestricted license in Oklahoma?","Immediately at age 18","Age 19 regardless of violations","Age 16 with driver education","Age 17 w/ 6 mos violation-free",3,D
-OK-009,OK,gdlLicensing,"During what hours can a learner's permit holder drive in Oklahoma?","5am-10pm w/ supervision","Anytime with supervision","6 a.m. to 9 p.m. with supervision","Daylight hours only",0,A
+OK-009,OK,gdlLicensing,"During what hours can a learner's permit holder drive in Oklahoma?","5am-10pm w/ supervision","Anytime with supervision","6 AM to 9 PM with supervision","Daylight hours only",0,A
 OK-010,OK,gdlLicensing,"What documentation is required for drivers under 19 applying for a permit in Oklahoma?","Only birth certificate","Enrollment or graduation","Employment verification","Parental consent form only",1,B
 OK-011,OK,gdlLicensing,"At what minimum age can you apply for a Farm Driving Permit in Oklahoma?","15 years old","16 years old","14 years old","13 years old",2,C
 OK-012,OK,gdlLicensing,"What happens if an intermediate license holder violates the passenger restriction in Oklahoma?","License suspended immediately","Criminal record is created","Must restart from learner's permit","License restrictions or suspension",3,D
@@ -1761,18 +1761,18 @@ UT-039,UT,stateUnique,"What technology is Utah implementing at crosswalks for ac
 UT-040,UT,stateUnique,"What must you always do when you see a flagger in a work zone?","Slow to 15 mph","Turn on hazards","Change lanes","Obey flagger",3,D
 VA-001,VA,gdlLicensing,"At what minimum age can a juvenile apply for a learner's permit in Virginia?","15 years and 6 months","15 years old exactly","16 years old exactly","14 years and 6 months",0,A
 VA-002,VA,gdlLicensing,"What is the minimum age requirement to accompany a learner's permit holder as a supervising driver who is NOT a parent or guardian?","18 years old minimum","21 years old minimum","19 years old minimum","25 years old minimum",1,B
-VA-003,VA,gdlLicensing,"During what hours are learner's permit holders prohibited from driving in Virginia?","10 p.m. to 6 a.m.","11 p.m. to 5 a.m.","Midnight to 4 a.m.","1 a.m. to 5 a.m.",2,C
+VA-003,VA,gdlLicensing,"During what hours are learner's permit holders prohibited from driving in Virginia?","10 PM to 6 AM","11 PM to 5 AM","Midnight to 4 AM","1 AM to 5 AM",2,C
 VA-004,VA,gdlLicensing,"How many hours of supervised driving practice must a juvenile complete before applying for a driver's license in Virginia?","30 total hours","40 total hours","50 total hours","45 total hours",3,D
 VA-005,VA,gdlLicensing,"How long must a juvenile hold a learner's permit before applying for a driver's license in Virginia?","9 months minimum","6 months minimum","12 months minimum","3 months minimum",0,A
 VA-006,VA,gdlLicensing,"At what age can a juvenile apply for a provisional driver's license in Virginia?","15 years and 6 months","16 years and 3 months","16 years exactly","17 years exactly",1,B
 VA-007,VA,gdlLicensing,"How many non-family passengers under 18 can a new provisional license holder transport during the first year?","Two passengers max","Three passengers max","One passenger max","No passengers allowed",2,C
-VA-008,VA,gdlLicensing,"During what hours are provisional license holders under 18 prohibited from driving due to curfew restrictions?","11 p.m. to 5 a.m.","10 p.m. to 6 a.m.","1 a.m. to 5 a.m.","Midnight to 4 a.m.",3,D
+VA-008,VA,gdlLicensing,"During what hours are provisional license holders under 18 prohibited from driving due to curfew restrictions?","11 PM to 5 AM","10 PM to 6 AM","1 AM to 5 AM","Midnight to 4 AM",3,D
 VA-009,VA,gdlLicensing,"How many of the required supervised driving hours must be completed after sunset in Virginia?","15 hours minimum","10 hours minimum","20 hours minimum","5 hours minimum",0,A
 VA-010,VA,gdlLicensing,"How long must an adult (18+) who has never held any license hold a learner's permit before applying for a driver's license?","30 days minimum","60 days minimum","90 days minimum","No permit required",1,B
 VA-011,VA,gdlLicensing,"What happens if a juvenile fails the DMV knowledge test three times in Virginia?","Retake immediately available","Wait 30 days to retake","Must complete driver education","License eligibility suspended",2,C
 VA-012,VA,gdlLicensing,"How many non-family passengers under 18 can a provisional license holder transport after holding the license for one full year?","One passenger maximum","Two passengers maximum","Four passengers maximum","Three passengers maximum",3,D
 VA-013,VA,cellPhone,"What is Virginia's law regarding holding a handheld cell phone while driving?","Prohibited for all drivers","Allowed for brief calls","Prohibited only in school zones","Allowed with speakerphone",0,A
-VA-014,VA,cellPhone,"When did Virginia's hands-free driving law take effect prohibiting drivers from holding phones?","July 1, 2020","January 1, 2021","July 1, 2021","January 1, 2020",1,B
+VA-014,VA,cellPhone,"What is required when passing a bicyclist on a Virginia roadway?","Honk to alert the cyclist","At least 3 feet of space","Pass only on multi-lane roads","Wait until no oncoming traffic",1,B
 VA-015,VA,cellPhone,"What type of cell phone use is permitted while driving in Virginia?","Holding phone for navigation","Texting at stoplights only","Hands-free talking only","Brief calls under 30 sec",2,C
 VA-016,VA,cellPhone,"What is the cell phone restriction for drivers under 18 in Virginia?","Hands-free calls permitted","Emergency calls only","Texting only prohibited","No use while moving",3,D
 VA-017,VA,cellPhone,"Is Virginia's handheld cell phone law a primary or secondary offense?","Primary offense violation","Secondary offense only","Warning only for first offense","No enforcement unless reckless",0,A
@@ -1784,19 +1784,17 @@ VA-022,VA,duiStateLaws,"What classification is an underage DUI (BAC 0.02-0.07) i
 VA-023,VA,duiStateLaws,"If an underage driver refuses a breath test or tests at 0.02% or higher, how long is the immediate license suspension?","3 days immediate suspension","5 days immediate suspension","7 days immediate suspension","10 days immediate suspension",2,C
 VA-024,VA,duiStateLaws,"What is the standard BAC legal limit for drivers 21 and older in Virginia?","0.10% BAC limit","0.06% BAC limit","0.05% BAC limit","0.08% BAC limit",3,D
 VA-025,VA,duiStateLaws,"Under Virginia's zero tolerance law, what type of offense is underage DUI?","Criminal misdemeanor offense","Civil infraction only","Felony for first offense","Administrative violation only",0,A
-VA-026,VA,duiStateLaws,"What additional consequence may underage DUI offenders face in 2025 beyond traditional penalties?","Mandatory vehicle forfeiture","Ignition interlock requirement","Permanent license revocation","Criminal record expungement",1,B
+VA-026,VA,duiStateLaws,"What device may be required after a DUI conviction in Virginia?","GPS tracking device","Ignition interlock device","Rearview dashboard camera","Electronic speed limiter",1,B
 VA-027,VA,insurance,"What type of insurance system does Virginia use for auto accidents?","At-fault tort system","No-fault insurance","Hybrid fault system","Choice no-fault system",0,A
-VA-028,VA,insurance,"What was eliminated in Virginia on July 1, 2024, that previously allowed uninsured driving?","Hardship waivers","Uninsured motorist fee","Payment plan options","Temporary permits",3,D
 VA-029,VA,insurance,"What coverage protects you if hit by an uninsured driver in Virginia?","Collision coverage only","Comprehensive coverage","Uninsured motorist","Personal injury protection",2,C
-VA-030,VA,insurance,"What happens if you drive without insurance in Virginia as of 2024?","Warning for first offense","No longer an option at all","Higher registration fee","License suspended 30 days",3,D
+VA-030,VA,insurance,"What is the consequence for driving without insurance in Virginia?","Warning for first offense","Fine of $50 only","License suspension","Vehicle registration hold",2,C
 VA-031,VA,stateUnique,"At what speed does Virginia consider driving to be reckless driving regardless of the posted speed limit?","80 mph or higher","90 mph or higher","100 mph or higher","85 mph or higher",2,C
 VA-032,VA,stateUnique,"What classification is reckless driving in Virginia?","Traffic infraction","Class 2 misdemeanor","Class 3 misdemeanor","Class 1 misdemeanor",3,D
-VA-033,VA,stateUnique,"How many occupants are required for HOV-3 on I-66 inside the Beltway during peak hours as of December 2022?","3 or more occupants","2 or more occupants","4 or more occupants","Driver only with permit",0,A
+VA-033,VA,stateUnique,"When must you stop for a school bus with flashing red lights in Virginia?","Only within school zones","Unless separated by median","Only if children visible","Always on all roads",1,B
 VA-034,VA,stateUnique,"What must drivers do when approaching stationary vehicles with flashing lights on a 4+ lane highway?","Stop completely behind vehicle","Change lanes or slow down","Flash hazard lights","Sound horn as warning",1,B
-VA-035,VA,stateUnique,"What new type of driving became classified as reckless driving in Virginia effective July 1, 2025?","Aggressive tailgating only","Distracted driving behaviors","Exhibition driving behaviors","Lane weaving only",2,C
-VA-036,VA,stateUnique,"How long are vehicles impounded if the driver is arrested for exhibition driving in Virginia?","10 days impoundment","15 days impoundment","30 days impoundment","20 days impoundment",3,D
+VA-035,VA,stateUnique,"What is the default speed limit in Virginia residential areas when not posted?","20 mph","30 mph","25 mph","35 mph",2,C
+VA-036,VA,stateUnique,"When are headlights required in Virginia?","Only after midnight","Sunset to sunrise or low visibility","Only during heavy rain","Anytime wipers are active",1,B
 VA-037,VA,stateUnique,"What must drivers do when an emergency vehicle with siren and flashing lights approaches?","Pull to nearest edge and stop","Slow down but continue moving","Change lanes if possible","Flash lights to acknowledge",0,A
-VA-038,VA,stateUnique,"What are the peak HOV-3 hours eastbound on I-66 inside the Beltway on weekdays?","6 a.m. to 10 a.m.","5:30am to 9:30am","7 a.m. to 10 a.m.","5 a.m. to 9 a.m.",1,B
 VA-039,VA,stateUnique,"What right-of-way privilege do funeral processions have in Virginia?","Only in designated zones","Only with traffic signals","Right-of-way on all highways","No special privileges granted",2,C
 VA-040,VA,stateUnique,"What consequence applies for overtaking or passing a moving emergency vehicle with active lights and siren?","Minor traffic infraction","Class 2 misdemeanor","Warning only first time","Reckless driving charge",3,D
 VT-001,VT,gdlLicensing,"At what minimum age can you apply for a learner's permit in Vermont?","15 years old","16 years old","14 years old","17 years old",0,A
@@ -1921,7 +1919,7 @@ WI-039,WI,stateUnique,"What is Wisconsin's law on studded tires?","Allowed year-
 WI-040,WI,stateUnique,"When following a motorcycle in Wisconsin, what following distance should you maintain?","One second minimum","Two seconds minimum","Three seconds minimum","Same as car, 2 seconds",3,D
 WV-001,WV,gdlLicensing,"What is the minimum age to apply for a Level 1 instruction permit in West Virginia?","15 years old","16 years old","14 years old","17 years old",0,A
 WV-002,WV,gdlLicensing,"How many days must you hold a Level 1 permit before applying for a Level 2 intermediate license?","90 days minimum","180 days minimum","120 days minimum","150 days minimum",1,B
-WV-003,WV,gdlLicensing,"What are the permitted driving hours for a Level 1 instruction permit holder?","6 a.m. to 11 p.m.","Sunrise to sunset only","5 a.m. to 10 p.m.","7 a.m. to 9 p.m.",2,C
+WV-003,WV,gdlLicensing,"What are the permitted driving hours for a Level 1 instruction permit holder?","6 AM to 11 PM","Sunrise to sunset only","5 AM to 10 PM","7 AM to 9 PM",2,C
 WV-004,WV,gdlLicensing,"What minimum age must the supervising driver be for a Level 1 permit holder?","18 years or older","19 years or older","25 years or older","21 years or older",3,D
 WV-005,WV,gdlLicensing,"How many hours of supervised driving practice are required for a Level 2 intermediate license?","50 hrs total, 10 at night","40 hrs total, 5 at night","60 hrs total, 15 at night","30 hrs total, 8 at night",0,A
 WV-006,WV,gdlLicensing,"During the first 6 months of a Level 2 license, how many passengers under 20 can you transport?","Two passengers max","No passengers allowed","Three passengers max","One passenger max",1,B

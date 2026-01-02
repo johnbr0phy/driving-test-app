@@ -216,14 +216,6 @@
     "correctIndex": 0
   },
   {
-    "id": "VA-028",
-    "state": "VA",
-    "category": "insurance",
-    "question": "What was eliminated in Virginia on July 1, 2024, that previously allowed uninsured driving?",
-    "answers": ["Hardship waivers", "Uninsured motorist fee", "Payment plan options", "Temporary permits"],
-    "correctIndex": 3
-  },
-  {
     "id": "VA-029",
     "state": "VA",
     "category": "insurance",
@@ -294,14 +286,6 @@
     "question": "What must drivers do when an emergency vehicle with siren and flashing lights approaches?",
     "answers": ["Pull to nearest edge and stop", "Slow down but continue moving", "Change lanes if possible", "Flash lights to acknowledge"],
     "correctIndex": 0
-  },
-  {
-    "id": "VA-038",
-    "state": "VA",
-    "category": "stateUnique",
-    "question": "What are the peak HOV-3 hours eastbound on I-66 inside the Beltway on weekdays?",
-    "answers": ["6 a.m. to 10 a.m.", "5:30am to 9:30am", "7 a.m. to 10 a.m.", "5 a.m. to 9 a.m."],
-    "correctIndex": 1
   },
   {
     "id": "VA-039",

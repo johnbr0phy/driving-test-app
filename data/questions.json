@@ -27260,20 +27260,6 @@
   {
     "type": "State-Specific",
     "state": "VA",
-    "questionId": "VA-028",
-    "category": "insurance",
-    "question": "What was eliminated in Virginia on July 1, 2024, that previously allowed uninsured driving?",
-    "optionA": "Hardship waivers",
-    "optionB": "Uninsured motorist fee",
-    "optionC": "Payment plan options",
-    "optionD": "Temporary permits",
-    "correctAnswer": "D",
-    "correctIndex": 3,
-    "explanation": "This is the correct answer based on VA driving laws."
-  },
-  {
-    "type": "State-Specific",
-    "state": "VA",
     "questionId": "VA-029",
     "category": "insurance",
     "question": "What coverage protects you if hit by an uninsured driver in Virginia?",
@@ -27395,20 +27381,6 @@
     "optionD": "Flash lights to acknowledge",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "This is the correct answer based on VA driving laws."
-  },
-  {
-    "type": "State-Specific",
-    "state": "VA",
-    "questionId": "VA-038",
-    "category": "stateUnique",
-    "question": "What are the peak HOV-3 hours eastbound on I-66 inside the Beltway on weekdays?",
-    "optionA": "6 a.m. to 10 a.m.",
-    "optionB": "5:30am to 9:30am",
-    "optionC": "7 a.m. to 10 a.m.",
-    "optionD": "5 a.m. to 9 a.m.",
-    "correctAnswer": "B",
-    "correctIndex": 1,
     "explanation": "This is the correct answer based on VA driving laws."
   },
   {

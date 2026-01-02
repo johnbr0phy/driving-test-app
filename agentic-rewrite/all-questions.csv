@@ -1786,7 +1786,6 @@ VA-024,VA,duiStateLaws,"What is the standard BAC legal limit for drivers 21 and 
 VA-025,VA,duiStateLaws,"Under Virginia's zero tolerance law, what type of offense is underage DUI?","Criminal misdemeanor offense","Civil infraction only","Felony for first offense","Administrative violation only",0,A
 VA-026,VA,duiStateLaws,"What additional consequence may underage DUI offenders face in 2025 beyond traditional penalties?","Mandatory vehicle forfeiture","Ignition interlock requirement","Permanent license revocation","Criminal record expungement",1,B
 VA-027,VA,insurance,"What type of insurance system does Virginia use for auto accidents?","At-fault tort system","No-fault insurance","Hybrid fault system","Choice no-fault system",0,A
-VA-028,VA,insurance,"What was eliminated in Virginia on July 1, 2024, that previously allowed uninsured driving?","Hardship waivers","Uninsured motorist fee","Payment plan options","Temporary permits",3,D
 VA-029,VA,insurance,"What coverage protects you if hit by an uninsured driver in Virginia?","Collision coverage only","Comprehensive coverage","Uninsured motorist","Personal injury protection",2,C
 VA-030,VA,insurance,"What happens if you drive without insurance in Virginia as of 2024?","Warning for first offense","No longer an option at all","Higher registration fee","License suspended 30 days",3,D
 VA-031,VA,stateUnique,"At what speed does Virginia consider driving to be reckless driving regardless of the posted speed limit?","80 mph or higher","90 mph or higher","100 mph or higher","85 mph or higher",2,C
@@ -1796,7 +1795,6 @@ VA-034,VA,stateUnique,"What must drivers do when approaching stationary vehicles
 VA-035,VA,stateUnique,"What new type of driving became classified as reckless driving in Virginia effective July 1, 2025?","Aggressive tailgating only","Distracted driving behaviors","Exhibition driving behaviors","Lane weaving only",2,C
 VA-036,VA,stateUnique,"How long are vehicles impounded if the driver is arrested for exhibition driving in Virginia?","10 days impoundment","15 days impoundment","30 days impoundment","20 days impoundment",3,D
 VA-037,VA,stateUnique,"What must drivers do when an emergency vehicle with siren and flashing lights approaches?","Pull to nearest edge and stop","Slow down but continue moving","Change lanes if possible","Flash lights to acknowledge",0,A
-VA-038,VA,stateUnique,"What are the peak HOV-3 hours eastbound on I-66 inside the Beltway on weekdays?","6 a.m. to 10 a.m.","5:30am to 9:30am","7 a.m. to 10 a.m.","5 a.m. to 9 a.m.",1,B
 VA-039,VA,stateUnique,"What right-of-way privilege do funeral processions have in Virginia?","Only in designated zones","Only with traffic signals","Right-of-way on all highways","No special privileges granted",2,C
 VA-040,VA,stateUnique,"What consequence applies for overtaking or passing a moving emergency vehicle with active lights and siren?","Minor traffic infraction","Class 2 misdemeanor","Warning only first time","Reckless driving charge",3,D
 VT-001,VT,gdlLicensing,"At what minimum age can you apply for a learner's permit in Vermont?","15 years old","16 years old","14 years old","17 years old",0,A

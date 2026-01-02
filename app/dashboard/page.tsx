@@ -197,7 +197,14 @@ export default function DashboardPage() {
         {/* Training Sets - only shown after onboarding */}
         {onboardingComplete && (
           <div className="mb-8">
-            <h2 className="text-xl font-bold mb-3">Training</h2>
+            <div className="flex items-center justify-between mb-3">
+              <h2 className="text-xl font-bold">Training</h2>
+              {!isGuest && (
+                <Link href="/questions" className="text-sm text-orange-600 hover:text-orange-800 font-medium">
+                  View question performance →
+                </Link>
+              )}
+            </div>
             <p className="text-sm text-gray-500 mb-4">Get all 50 questions correct to complete each set</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {trainingSets.map((set) => (

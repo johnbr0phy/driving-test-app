@@ -382,7 +382,12 @@ export default function StatsPage() {
         </Card>
 
         {/* Quick Actions */}
-        <div className="flex gap-4 justify-center">
+        <div className="flex gap-4 justify-center flex-wrap">
+          <Link href="/questions">
+            <Button variant="outline">
+              View Question Performance
+            </Button>
+          </Link>
           <Link href="/dashboard">
             <Button className="bg-black text-white hover:bg-gray-800">
               Start training or take a practice test

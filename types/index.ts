@@ -80,6 +80,15 @@ export interface TestAttemptStats {
   lastAttemptDate: Date;
 }
 
+// Per-question performance tracking
+export interface QuestionPerformance {
+  questionId: string;
+  timesAnswered: number;
+  timesCorrect: number;
+  timesWrong: number;
+  accuracy: number; // percentage
+}
+
 // State selection
 export interface State {
   name: string;

@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 import { persist, createJSONStorage } from 'zustand/middleware';
-import { Question, TestSession, UserAnswer, TestAttemptStats } from '@/types';
+import { Question, TestSession, UserAnswer, TestAttemptStats, QuestionPerformance } from '@/types';
 import { doc, setDoc, getDoc } from 'firebase/firestore';
 import { db } from '@/lib/firebase';
 
@@ -70,6 +70,9 @@ interface AppState {
   getTrainingSetProgress: (setId: number) => { correct: number; total: number; complete: boolean };
   resetTrainingSet: (setId: number) => void;
 
+  // Training answer history (for question performance tracking)
+  trainingAnswerHistory: { questionId: string; isCorrect: boolean }[];
+
   // Activity tracking for DAU
   activeDates: string[];
 
@@ -85,6 +88,7 @@ interface AppState {
     averageScore: number;
   };
   getPassProbability: () => number;
+  getQuestionPerformance: () => QuestionPerformance[];
 
   // Firebase sync
   userId: string | null;
@@ -125,6 +129,7 @@ export const useStore = create<AppState>()(
         lastQuestionId: null,
       },
       trainingSets: {},
+      trainingAnswerHistory: [],
       activeDates: [],
       userId: null,
       photoURL: null,
@@ -161,6 +166,7 @@ export const useStore = create<AppState>()(
             lastQuestionId: null,
           },
           trainingSets: {},
+          trainingAnswerHistory: [],
         });
         // Save to Firestore
         get().saveToFirestore();
@@ -333,6 +339,8 @@ export const useStore = create<AppState>()(
               masteredQuestionIds: newMasteredIds,
               lastQuestionId: questionId,
             },
+            // Track answer in history for question performance
+            trainingAnswerHistory: [...state.trainingAnswerHistory, { questionId, isCorrect }],
           };
         });
         get().saveToFirestore();
@@ -391,6 +399,8 @@ export const useStore = create<AppState>()(
               ...state.trainingSets,
               [setId]: { masteredIds: newMasteredIds, wrongQueue: newWrongQueue },
             },
+            // Track answer in history for question performance
+            trainingAnswerHistory: [...state.trainingAnswerHistory, { questionId, isCorrect }],
           };
         });
         get().saveToFirestore();
@@ -524,6 +534,57 @@ export const useStore = create<AppState>()(
         return Math.round(totalPassProbability);
       },
 
+      getQuestionPerformance: () => {
+        const { completedTests, selectedState, trainingAnswerHistory } = get();
+        // Filter tests by current state
+        const stateTests = completedTests.filter((t) => t.state === selectedState);
+
+        // Aggregate answers by questionId
+        const performanceMap: { [questionId: string]: { correct: number; wrong: number } } = {};
+
+        // Include practice test answers
+        for (const test of stateTests) {
+          for (const answer of test.answers) {
+            if (!performanceMap[answer.questionId]) {
+              performanceMap[answer.questionId] = { correct: 0, wrong: 0 };
+            }
+            if (answer.isCorrect) {
+              performanceMap[answer.questionId].correct++;
+            } else {
+              performanceMap[answer.questionId].wrong++;
+            }
+          }
+        }
+
+        // Include training mode answers
+        for (const answer of trainingAnswerHistory) {
+          if (!performanceMap[answer.questionId]) {
+            performanceMap[answer.questionId] = { correct: 0, wrong: 0 };
+          }
+          if (answer.isCorrect) {
+            performanceMap[answer.questionId].correct++;
+          } else {
+            performanceMap[answer.questionId].wrong++;
+          }
+        }
+
+        // Convert to QuestionPerformance array
+        const performance: QuestionPerformance[] = Object.entries(performanceMap).map(
+          ([questionId, data]) => {
+            const timesAnswered = data.correct + data.wrong;
+            return {
+              questionId,
+              timesAnswered,
+              timesCorrect: data.correct,
+              timesWrong: data.wrong,
+              accuracy: timesAnswered > 0 ? Math.round((data.correct / timesAnswered) * 100) : 0,
+            };
+          }
+        );
+
+        return performance;
+      },
+
       // Firebase sync functions
       loadUserData: async (userId: string) => {
         try {
@@ -546,6 +607,7 @@ export const useStore = create<AppState>()(
                 lastQuestionId: data.training?.lastQuestionId || null,
               },
               trainingSets: data.trainingSets || {},
+              trainingAnswerHistory: data.trainingAnswerHistory || [],
               activeDates: data.activeDates || [],
               photoURL: data.photoURL || null,
               userId,
@@ -578,7 +640,7 @@ export const useStore = create<AppState>()(
       },
 
       saveToFirestore: async () => {
-        const { userId, isGuest, selectedState, currentTests, completedTests, testAttempts, training, trainingSets, activeDates, photoURL } = get();
+        const { userId, isGuest, selectedState, currentTests, completedTests, testAttempts, training, trainingSets, trainingAnswerHistory, activeDates, photoURL } = get();
         if (!userId || isGuest) return; // Don't save if no user is logged in or guest mode
 
         try {
@@ -620,6 +682,7 @@ export const useStore = create<AppState>()(
             })),
             training,
             trainingSets,
+            trainingAnswerHistory,
             activeDates: updatedActiveDates,
             lastUpdated: new Date().toISOString(),
           });
@@ -644,6 +707,7 @@ export const useStore = create<AppState>()(
             lastQuestionId: null,
           },
           trainingSets: {},
+          trainingAnswerHistory: [],
           activeDates: [],
         });
         get().saveToFirestore();
@@ -667,6 +731,7 @@ export const useStore = create<AppState>()(
             lastQuestionId: null,
           },
           trainingSets: {},
+          trainingAnswerHistory: [],
           activeDates: [],
           userId: null,
           photoURL: null,
@@ -719,6 +784,7 @@ export const useStore = create<AppState>()(
               lastQuestionId: null,
             },
             trainingSets: {},
+            trainingAnswerHistory: [],
             userId: null,
             photoURL: null,
           };

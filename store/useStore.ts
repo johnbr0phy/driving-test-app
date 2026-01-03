@@ -654,8 +654,8 @@ export const useStore = create<AppState>()(
             return acc;
           }, {} as any);
 
-          // Track today's date for DAU (using UTC to ensure consistency)
-          const today = new Date().toISOString().split('T')[0];
+          // Track today's date for DAU (using local timezone for user-friendly tracking)
+          const today = new Date().toLocaleDateString('en-CA'); // YYYY-MM-DD in local timezone
           const updatedActiveDates = activeDates.includes(today) ? activeDates : [...activeDates, today];
 
           // Update local state with new active date

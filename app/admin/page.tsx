@@ -56,7 +56,8 @@ export default function AdminPage() {
     for (let i = 29; i >= 0; i--) {
       const date = new Date(today);
       date.setDate(date.getDate() - i);
-      const dateStr = date.toISOString().split('T')[0];
+      // Use local timezone for date string (matches how activeDates are stored)
+      const dateStr = date.toLocaleDateString('en-CA'); // YYYY-MM-DD in local timezone
       const startOfDay = new Date(date);
       startOfDay.setHours(0, 0, 0, 0);
       const endOfDay = new Date(date);
@@ -227,7 +228,7 @@ export default function AdminPage() {
       const last7Days = Array.from({ length: 7 }, (_, i) => {
         const date = new Date();
         date.setDate(date.getDate() - i);
-        return date.toISOString().split('T')[0];
+        return date.toLocaleDateString('en-CA'); // YYYY-MM-DD in local timezone
       });
       const activeUsers7d = userData.filter(u => {
         if (u.activeDates && u.activeDates.length > 0) {

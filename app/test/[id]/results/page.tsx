@@ -171,6 +171,14 @@ export default function ResultsPage() {
                 >
                   Retake Test
                 </Button>
+                {!isGuest && (
+                  <Button
+                    className="bg-white text-black hover:bg-gray-100 border-2 border-gray-300 flex-1 sm:flex-initial"
+                    onClick={() => router.push("/stats")}
+                  >
+                    View Stats
+                  </Button>
+                )}
               </div>
             </div>
           </CardContent>

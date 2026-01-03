@@ -29,6 +29,7 @@ function TrainingPageContent() {
   const { playCorrectSound, playIncorrectSound } = useSound();
 
   const selectedState = useStore((state) => state.selectedState);
+  const isGuest = useStore((state) => state.isGuest);
   const training = useStore((state) => state.training);
   const trainingSets = useStore((state) => state.trainingSets);
   const answerTrainingQuestion = useStore((state) => state.answerTrainingQuestion);
@@ -251,17 +252,18 @@ function TrainingPageContent() {
               You&apos;ve correctly answered all 50 questions in this training set!
             </p>
             <div className="flex flex-col gap-3">
-              <Button
-                className="w-full bg-black text-white hover:bg-gray-800 text-lg py-6"
-                onClick={handlePracticeAgain}
-              >
-                Practice Again
-              </Button>
               <Link href="/dashboard">
-                <Button variant="outline" className="w-full">
+                <Button className="w-full bg-black text-white hover:bg-gray-800 text-lg py-6">
                   Back to Dashboard
                 </Button>
               </Link>
+              {!isGuest && (
+                <Link href="/stats">
+                  <Button variant="outline" className="w-full">
+                    View Stats
+                  </Button>
+                </Link>
+              )}
             </div>
           </div>
         </div>
@@ -322,7 +324,7 @@ function TrainingPageContent() {
                 />
               </div>
             </>
-          ) : (
+          ) : !isOnboardingComplete() ? (
             // Onboarding progress
             <>
               <div className="flex items-center justify-center gap-1 text-sm md:text-lg text-gray-700">
@@ -339,6 +341,14 @@ function TrainingPageContent() {
                 />
               </div>
             </>
+          ) : (
+            // Post-onboarding without set - show current streak
+            <div className="flex items-center justify-center gap-1 text-sm md:text-lg text-gray-700">
+              <span className="font-bold text-xl md:text-2xl text-orange-600">{training.currentStreak}</span>
+              <span className="text-gray-500 text-xs md:text-base ml-1">
+                streak
+              </span>
+            </div>
           )}
         </div>
       </div>

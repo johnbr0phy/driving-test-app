@@ -169,13 +169,12 @@ export default function DashboardPage() {
                     className="w-12 h-12"
                   />
                   <div className="flex-1">
-                    <p className="text-lg text-gray-700">
+                    <p className="text-xl font-bold text-gray-900">
                       {passProbability > 50
-                        ? <>You have a <span className="font-bold text-xl">{passProbability}%</span> pass rate for the {stateName} driving knowledge test.</>
-                        : <>There is a <span className="font-bold text-xl">{100 - passProbability}%</span> chance that you will fail the {stateName} driving knowledge test.</>
+                        ? <>{passProbability}% chance of passing</>
+                        : <>{100 - passProbability}% chance of failing</>
                       }
                     </p>
-                    <p className="text-sm text-gray-500 mt-1">Tap to see detailed stats</p>
                   </div>
                   <ChevronRight className={`h-6 w-6 ${
                     passProbability >= 80
@@ -197,13 +196,8 @@ export default function DashboardPage() {
         {/* Training Sets - only shown after onboarding */}
         {onboardingComplete && (
           <div className="mb-8">
-            <div className="flex items-center justify-between mb-3">
+            <div className="mb-3">
               <h2 className="text-xl font-bold">Training</h2>
-              {!isGuest && (
-                <Link href="/questions" className="text-sm text-orange-600 hover:text-orange-800 font-medium">
-                  View question performance →
-                </Link>
-              )}
             </div>
             <p className="text-sm text-gray-500 mb-4">Get all 50 questions correct to complete each set</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">

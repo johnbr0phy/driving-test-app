@@ -211,7 +211,6 @@ export default function QuestionsPage() {
 
         {/* Mobile Sort Controls */}
         <div className="md:hidden flex items-center gap-2 mb-4 overflow-x-auto pb-2 -mx-4 px-4">
-          <span className="text-sm text-gray-500 whitespace-nowrap">Sort by:</span>
           {[
             { field: "timesAnswered" as SortField, label: "Answered" },
             { field: "correct" as SortField, label: "Correct" },

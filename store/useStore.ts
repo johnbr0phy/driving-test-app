@@ -785,6 +785,7 @@ export const useStore = create<AppState>()(
             },
             trainingSets: {},
             trainingAnswerHistory: [],
+            activeDates: [],
             userId: null,
             photoURL: null,
           };

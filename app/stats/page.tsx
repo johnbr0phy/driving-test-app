@@ -57,6 +57,7 @@ export default function StatsPage() {
   const getPassProbability = useStore((state) => state.getPassProbability);
   const getQuestionPerformance = useStore((state) => state.getQuestionPerformance);
   const getTestAttemptStats = useStore((state) => state.getTestAttemptStats);
+  const getTrainingSetProgress = useStore((state) => state.getTrainingSetProgress);
 
   const [sortField, setSortField] = useState<SortField>("wrong");
   const [sortDirection, setSortDirection] = useState<SortDirection>("desc");
@@ -152,20 +153,56 @@ export default function StatsPage() {
   const getRecommendation = useMemo(() => {
     if (!hydrated) return null;
 
-    // Check if any tests have been taken
+    // Check training set progress - prioritize completing all training sets first
+    const trainingProgress = [1, 2, 3, 4].map(setNum => ({
+      setNum,
+      progress: getTrainingSetProgress(setNum),
+    }));
+
+    // Find first training set that hasn't been started (0 correct)
+    const unstartedSet = trainingProgress.find(t => t.progress.correct === 0);
+    if (unstartedSet) {
+      return {
+        title: `Start "${SET_NAMES[unstartedSet.setNum]}"`,
+        description: "Complete all 4 training sets before taking practice tests",
+        href: `/training?set=${unstartedSet.setNum}`,
+      };
+    }
+
+    // Find first incomplete training set (started but not finished)
+    const incompleteSet = trainingProgress.find(t => t.progress.correct < t.progress.total);
+    if (incompleteSet) {
+      const pct = Math.round((incompleteSet.progress.correct / incompleteSet.progress.total) * 100);
+      return {
+        title: `Finish "${SET_NAMES[incompleteSet.setNum]}"`,
+        description: `${pct}% complete - ${incompleteSet.progress.total - incompleteSet.progress.correct} questions left`,
+        href: `/training?set=${incompleteSet.setNum}`,
+      };
+    }
+
+    // All training sets complete - now check test performance
     const testStats = [1, 2, 3, 4].map(t => getTestAttemptStats(t));
     const hasAnyTests = testStats.some(s => s && s.attemptCount > 0);
 
+    // If user is doing well, they're ready
+    if (passProbability >= 80) {
+      return {
+        title: "You're ready!",
+        description: "Take a practice test to confirm",
+        href: "/dashboard",
+      };
+    }
+
+    // If no tests taken yet, recommend first test
     if (!hasAnyTests) {
       return {
         title: "Take Practice Test 1",
         description: "See where you stand with a full practice test",
         href: "/test/1",
-        buttonText: "Start Test",
       };
     }
 
-    // Find worst performing category
+    // Find worst performing category to recommend retraining
     const categoryStats: { [key: string]: { correct: number; wrong: number } } = {};
 
     questionsWithPerformance.forEach((q) => {
@@ -193,16 +230,6 @@ export default function StatsPage() {
       }
     });
 
-    // If user is doing well
-    if (passProbability >= 80) {
-      return {
-        title: "You're ready!",
-        description: "Take a practice test to confirm",
-        href: "/dashboard",
-        buttonText: "Take Practice Test",
-      };
-    }
-
     // Recommend training on worst category
     if (worstCategory && worstWrongCount > 0) {
       const setNumber = CATEGORY_TO_SET[worstCategory] || 1;
@@ -213,7 +240,6 @@ export default function StatsPage() {
         title: `Practice "${setName}"`,
         description: `You're getting ${wrongPercent}% wrong on ${worstCategory.toLowerCase()} questions`,
         href: `/training?set=${setNumber}`,
-        buttonText: "Start Training",
       };
     }
 
@@ -222,9 +248,8 @@ export default function StatsPage() {
       title: "Keep practicing",
       description: "Continue training to improve your score",
       href: "/dashboard",
-      buttonText: "Go to Dashboard",
     };
-  }, [hydrated, questionsWithPerformance, passProbability, getTestAttemptStats]);
+  }, [hydrated, questionsWithPerformance, passProbability, getTestAttemptStats, getTrainingSetProgress]);
 
   const handleSort = (field: SortField) => {
     if (sortField === field) {

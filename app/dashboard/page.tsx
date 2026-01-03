@@ -175,8 +175,11 @@ export default function DashboardPage() {
                         : <>{100 - passProbability}% chance of failing</>
                       }
                     </p>
+                    <p className="text-sm text-gray-500 mt-1 md:hidden">Learn how to improve</p>
                   </div>
-                  <ChevronRight className={`h-6 w-6 ${
+                  <div className="flex items-center gap-2">
+                    <span className="text-sm text-gray-500 hidden md:inline">View stats</span>
+                    <ChevronRight className={`h-6 w-6 ${
                     passProbability >= 80
                       ? "text-emerald-400"
                       : passProbability >= 60
@@ -187,6 +190,7 @@ export default function DashboardPage() {
                             ? "text-orange-400"
                             : "text-red-400"
                   }`} />
+                  </div>
                 </div>
               </CardContent>
             </Card>

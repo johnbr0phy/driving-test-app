@@ -223,7 +223,7 @@ export default function QuestionsPage() {
         </div>
 
         {/* Filter Tabs - Scrollable on mobile */}
-        <div className="flex gap-2 mb-6 overflow-x-auto pb-2 -mx-4 px-4 md:mx-0 md:px-0">
+        <div className="flex gap-2 mb-4 overflow-x-auto pb-2 -mx-4 px-4 md:mx-0 md:px-0">
           <Button
             variant={filterType === "all" ? "default" : "outline"}
             onClick={() => setFilterType("all")}
@@ -248,6 +248,33 @@ export default function QuestionsPage() {
           >
             Unanswered ({questionsWithPerformance.filter((q) => q.timesAnswered === 0).length})
           </Button>
+        </div>
+
+        {/* Mobile Sort Controls */}
+        <div className="md:hidden flex items-center gap-2 mb-4 overflow-x-auto pb-2 -mx-4 px-4">
+          <span className="text-sm text-gray-500 whitespace-nowrap">Sort by:</span>
+          {[
+            { field: "question" as SortField, label: "Question" },
+            { field: "timesAnswered" as SortField, label: "Answered" },
+            { field: "correct" as SortField, label: "Correct" },
+            { field: "wrong" as SortField, label: "Wrong" },
+            { field: "accuracy" as SortField, label: "Accuracy" },
+          ].map(({ field, label }) => (
+            <button
+              key={field}
+              onClick={() => handleSort(field)}
+              className={`whitespace-nowrap text-sm px-3 py-1.5 rounded-full border transition-colors ${
+                sortField === field
+                  ? "bg-orange-100 border-orange-300 text-orange-700 font-medium"
+                  : "bg-white border-gray-200 text-gray-600"
+              }`}
+            >
+              {label}
+              {sortField === field && (
+                <span className="ml-1">{sortDirection === "asc" ? "↑" : "↓"}</span>
+              )}
+            </button>
+          ))}
         </div>
 
         {/* Mobile Card View */}

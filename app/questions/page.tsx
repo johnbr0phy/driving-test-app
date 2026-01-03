@@ -32,9 +32,8 @@ export default function QuestionsPage() {
   const isGuest = useStore((state) => state.isGuest);
   const getQuestionPerformance = useStore((state) => state.getQuestionPerformance);
 
-  const [sortField, setSortField] = useState<SortField>("question");
-  const [sortDirection, setSortDirection] = useState<SortDirection>("asc");
-  const [filterType, setFilterType] = useState<"all" | "answered" | "unanswered">("all");
+  const [sortField, setSortField] = useState<SortField>("timesAnswered");
+  const [sortDirection, setSortDirection] = useState<SortDirection>("desc");
 
   // Get state name from code
   const stateName = states.find((s) => s.code === selectedState)?.name || selectedState;
@@ -83,21 +82,9 @@ export default function QuestionsPage() {
     });
   }, [stateQuestions, getQuestionPerformance, hydrated]);
 
-  // Filter questions
-  const filteredQuestions = useMemo(() => {
-    switch (filterType) {
-      case "answered":
-        return questionsWithPerformance.filter((q) => q.timesAnswered > 0);
-      case "unanswered":
-        return questionsWithPerformance.filter((q) => q.timesAnswered === 0);
-      default:
-        return questionsWithPerformance;
-    }
-  }, [questionsWithPerformance, filterType]);
-
   // Sort questions
   const sortedQuestions = useMemo(() => {
-    const sorted = [...filteredQuestions].sort((a, b) => {
+    const sorted = [...questionsWithPerformance].sort((a, b) => {
       let comparison = 0;
       switch (sortField) {
         case "question":
@@ -119,7 +106,7 @@ export default function QuestionsPage() {
       return sortDirection === "asc" ? comparison : -comparison;
     });
     return sorted;
-  }, [filteredQuestions, sortField, sortDirection]);
+  }, [questionsWithPerformance, sortField, sortDirection]);
 
   // Calculate summary stats
   const summaryStats = useMemo(() => {
@@ -222,39 +209,10 @@ export default function QuestionsPage() {
           </Card>
         </div>
 
-        {/* Filter Tabs - Scrollable on mobile */}
-        <div className="flex gap-2 mb-4 overflow-x-auto pb-2 -mx-4 px-4 md:mx-0 md:px-0">
-          <Button
-            variant={filterType === "all" ? "default" : "outline"}
-            onClick={() => setFilterType("all")}
-            className={`whitespace-nowrap text-sm ${filterType === "all" ? "bg-black text-white" : ""}`}
-            size="sm"
-          >
-            All ({questionsWithPerformance.length})
-          </Button>
-          <Button
-            variant={filterType === "answered" ? "default" : "outline"}
-            onClick={() => setFilterType("answered")}
-            className={`whitespace-nowrap text-sm ${filterType === "answered" ? "bg-black text-white" : ""}`}
-            size="sm"
-          >
-            Answered ({questionsWithPerformance.filter((q) => q.timesAnswered > 0).length})
-          </Button>
-          <Button
-            variant={filterType === "unanswered" ? "default" : "outline"}
-            onClick={() => setFilterType("unanswered")}
-            className={`whitespace-nowrap text-sm ${filterType === "unanswered" ? "bg-black text-white" : ""}`}
-            size="sm"
-          >
-            Unanswered ({questionsWithPerformance.filter((q) => q.timesAnswered === 0).length})
-          </Button>
-        </div>
-
         {/* Mobile Sort Controls */}
         <div className="md:hidden flex items-center gap-2 mb-4 overflow-x-auto pb-2 -mx-4 px-4">
           <span className="text-sm text-gray-500 whitespace-nowrap">Sort by:</span>
           {[
-            { field: "question" as SortField, label: "Question" },
             { field: "timesAnswered" as SortField, label: "Answered" },
             { field: "correct" as SortField, label: "Correct" },
             { field: "wrong" as SortField, label: "Wrong" },
@@ -282,11 +240,7 @@ export default function QuestionsPage() {
           {sortedQuestions.length === 0 ? (
             <Card>
               <CardContent className="p-6 text-center text-gray-500">
-                {filterType === "answered"
-                  ? "You haven't answered any questions yet. Take a practice test to get started!"
-                  : filterType === "unanswered"
-                    ? "You've answered all available questions!"
-                    : "No questions available."}
+                No questions available.
               </CardContent>
             </Card>
           ) : (
@@ -377,11 +331,7 @@ export default function QuestionsPage() {
                   {sortedQuestions.length === 0 ? (
                     <tr>
                       <td colSpan={5} className="text-center py-8 text-gray-500">
-                        {filterType === "answered"
-                          ? "You haven't answered any questions yet. Take a practice test to get started!"
-                          : filterType === "unanswered"
-                            ? "You've answered all available questions!"
-                            : "No questions available."}
+                        No questions available.
                       </td>
                     </tr>
                   ) : (

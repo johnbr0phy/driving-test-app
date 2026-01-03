@@ -32,7 +32,7 @@ export default function QuestionsPage() {
   const isGuest = useStore((state) => state.isGuest);
   const getQuestionPerformance = useStore((state) => state.getQuestionPerformance);
 
-  const [sortField, setSortField] = useState<SortField>("timesAnswered");
+  const [sortField, setSortField] = useState<SortField>("wrong");
   const [sortDirection, setSortDirection] = useState<SortDirection>("desc");
 
   // Get state name from code

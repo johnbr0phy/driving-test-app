@@ -8,10 +8,6 @@ import { db } from '@/lib/firebase';
 const DATA_VERSION = 2;
 
 interface AppState {
-  // Data version notification
-  showDataResetNotification: boolean;
-  dismissDataResetNotification: () => void;
-
   // Guest mode
   isGuest: boolean;
   startGuestSession: () => void;
@@ -108,10 +104,6 @@ interface AppState {
 export const useStore = create<AppState>()(
   persist(
     (set, get) => ({
-      // Data version notification
-      showDataResetNotification: false,
-      dismissDataResetNotification: () => set({ showDataResetNotification: false }),
-
       // Initial state
       isGuest: false,
       selectedState: null,
@@ -767,7 +759,6 @@ export const useStore = create<AppState>()(
         if (version < DATA_VERSION) {
           console.log(`Migrating from version ${version} to ${DATA_VERSION} - resetting data`);
           return {
-            showDataResetNotification: true,
             isGuest: false,
             selectedState: null,
             currentTests: {},

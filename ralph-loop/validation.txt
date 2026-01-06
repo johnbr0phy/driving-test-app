@@ -1,0 +1,6 @@
+# Validation Log
+# Format: Q[number] | Rule [id] FAILED | [what went wrong] | [how fixed]
+# This helps track common failures and learn from mistakes
+
+---
+

@@ -1,77 +1,160 @@
 {
   "rules_checklist": {
-    "description": "Check EVERY rule after generating EACH question. Do not move to the next question until current question passes all 18 rules.",
-    "content_rules": [
-      "1. No dollar amounts (e.g., 'The fine is $150' is NOT allowed)",
-      "2. No insurance X/Y/Z format (e.g., '15/30/5 coverage' is NOT allowed)",
-      "3. No point values (e.g., 'You will receive 4 points' is NOT allowed)",
-      "4. No exact jail times (e.g., 'Up to 6 months in jail' is NOT allowed)"
-    ],
-    "uniqueness_rules": [
-      "5. No >80% similarity to any previous question",
-      "6. Max 3 questions per concept (count as you go)"
-    ],
-    "answer_balance_rules": [
-      "7. Correct answer NOT >40% longer than average of wrong answers",
-      "8. No giveaway qualifiers ('always'/'never' only in correct answer)",
-      "9. Track A/B/C/D distribution as you go (target: 12-13 each for 50, 37-38 each for 150)"
-    ],
-    "format_rules": [
-      "10. Question ends with ?",
-      "11. Has all fields: question, options A-D, correctAnswer, correctIndex, explanation",
-      "12. Letter/Index match: A=1, B=2, C=3, D=4",
-      "13. Time in AM/PM format (not 24-hour)"
-    ],
-    "style_rules": [
-      "14. Question stem not repeated in answers",
-      "15. All 4 answer options similar length"
-    ],
-    "accuracy_rules": [
-      "16. No spelling/grammar errors",
-      "17. Fact verified via web search",
-      "18. (Universal only) True in all 50 states"
+    "description": "Check EACH rule one at a time. If ANY rule fails, log the failure, fix it, then restart from Rule 1.",
+    "rules": [
+      {
+        "id": 1,
+        "rule": "No dollar amounts",
+        "check": "Does the question or any answer mention a specific dollar amount?",
+        "fail_example": "'The fine is $150' or 'costs $50'"
+      },
+      {
+        "id": 2,
+        "rule": "No insurance X/Y/Z format",
+        "check": "Does the question mention insurance coverage numbers?",
+        "fail_example": "'15/30/5 coverage' or '25/50/25'"
+      },
+      {
+        "id": 3,
+        "rule": "No point values",
+        "check": "Does the question mention license points?",
+        "fail_example": "'You will receive 4 points' or '2 points on your license'"
+      },
+      {
+        "id": 4,
+        "rule": "No jail times",
+        "check": "Does the question mention specific jail/prison time?",
+        "fail_example": "'Up to 6 months in jail' or '30 days imprisonment'"
+      },
+      {
+        "id": 5,
+        "rule": "No >80% similarity",
+        "check": "Is this question too similar to any previous question?",
+        "fail_example": "Two questions both asking about school zone speed limits"
+      },
+      {
+        "id": 6,
+        "rule": "Max 3 per concept",
+        "check": "Are there already 3 questions on this topic?",
+        "fail_example": "4th question about stop signs when 3 already exist"
+      },
+      {
+        "id": 7,
+        "rule": "Answer length balance",
+        "check": "Is the correct answer more than 40% longer than the average wrong answer?",
+        "fail_example": "Correct: 'Stop and wait for pedestrians to cross' vs Wrong: 'Go', 'Honk', 'Speed up'"
+      },
+      {
+        "id": 8,
+        "rule": "No giveaway qualifiers",
+        "check": "Does only the correct answer have 'always', 'never', 'all', or 'none'?",
+        "fail_example": "Correct: 'Always stop' when other answers don't use qualifiers"
+      },
+      {
+        "id": 9,
+        "rule": "A/B/C/D distribution",
+        "check": "Is the running count still on track for even distribution?",
+        "fail_example": "After 20 questions: A=8, B=2, C=5, D=5 (B is way behind)"
+      },
+      {
+        "id": 10,
+        "rule": "Ends with ?",
+        "check": "Does the question text end with a question mark?",
+        "fail_example": "'What you should do at a stop sign.' (missing ?)"
+      },
+      {
+        "id": 11,
+        "rule": "All fields present",
+        "check": "Does it have: question, options A-D, correctAnswer, correctIndex, explanation?",
+        "fail_example": "Missing the explanation field"
+      },
+      {
+        "id": 12,
+        "rule": "Index matches letter",
+        "check": "If correctAnswer is B, is correctIndex 2?",
+        "fail_example": "correctAnswer: 'C' but correctIndex: 2"
+      },
+      {
+        "id": 13,
+        "rule": "AM/PM time format",
+        "check": "If time is mentioned, is it in AM/PM format?",
+        "fail_example": "'between 14:00 and 16:00' instead of '2:00 PM and 4:00 PM'"
+      },
+      {
+        "id": 14,
+        "rule": "Stem not in answers",
+        "check": "Is the question stem repeated in the answer options?",
+        "fail_example": "Q: 'What is the speed limit?' A: 'The speed limit is 25'"
+      },
+      {
+        "id": 15,
+        "rule": "Options similar length",
+        "check": "Are all 4 options roughly the same length?",
+        "fail_example": "A: 'Stop' B: 'Go' C: 'Slow down and prepare to stop if necessary' D: 'Yield'"
+      },
+      {
+        "id": 16,
+        "rule": "Spelling/grammar",
+        "check": "Any spelling or grammar errors?",
+        "fail_example": "'Wat is the spead limit' or 'You should stops'"
+      },
+      {
+        "id": 17,
+        "rule": "Fact verified",
+        "check": "Did you web search to confirm this fact is accurate?",
+        "fail_example": "Guessing NJ school zone is 20mph without verifying (it's 25mph)"
+      },
+      {
+        "id": 18,
+        "rule": "Universal truth (if applicable)",
+        "check": "For universal questions: Is this true in ALL 50 states?",
+        "fail_example": "Saying 'right turn on red is always allowed' (some states restrict it)"
+      }
     ]
   },
   "workflow": {
-    "description": "Generate ONE question at a time, validate it, then continue",
-    "steps": [
-      "1. Generate question N",
-      "2. Run through all 18 rules",
-      "3. If any rule fails → fix and re-check",
-      "4. If all rules pass → save to file, increment N",
-      "5. Repeat until target count reached",
-      "6. Final check: verify A/B/C/D distribution is balanced"
-    ]
+    "for_each_question": [
+      "1. Generate the question",
+      "2. Start at Rule 1",
+      "3. Check the rule",
+      "4. If PASS → go to next rule",
+      "5. If FAIL → log to validation.txt: 'Q[N] failed Rule [X]: [reason]' → fix → restart at Rule 1",
+      "6. After all 18 pass → save question to JSON file",
+      "7. Move to next question"
+    ],
+    "on_rule_failure": {
+      "log_format": "Q[number] | Rule [id] FAILED | [what went wrong] | [how you fixed it]",
+      "then": "Fix the issue, then restart validation from Rule 1"
+    }
   },
   "tasks": [
     {
       "id": 1,
       "task": "Generate 50 New Jersey driving test questions",
-      "details": "Search web for current NJ Driver Manual. Generate questions ONE AT A TIME. After each question, check all 18 rules before moving to next. Topics: speed limits, parking distances, BAC limits, GDL restrictions, cell phone laws, turn signal distance, headlight rules. Save to questions/nj-questions.json",
+      "details": "Search web for current NJ Driver Manual. Generate ONE question, validate against all 18 rules (logging any failures to validation.txt), then next question. Save to questions/nj-questions.json",
       "passes": false
     },
     {
       "id": 2,
       "task": "Generate 150 universal driving test questions",
-      "details": "Generate questions ONE AT A TIME. After each question, check all 18 rules before moving to next. Topics: traffic sign shapes/colors, lane markings, defensive driving, emergency procedures, vehicle operation, weather driving. AVOID state-variable topics. Save to questions/universal-questions.json",
+      "details": "Generate ONE question, validate against all 18 rules (logging any failures to validation.txt), then next question. AVOID state-variable topics. Save to questions/universal-questions.json",
       "passes": false
     },
     {
       "id": 3,
-      "task": "Verify NJ questions against DMV manual",
-      "details": "Go through each question ONE AT A TIME. Web search to verify the fact. Fix any wrong answers. Re-check rules if changed.",
+      "task": "Verify NJ questions",
+      "details": "Re-check each question ONE AT A TIME against all 18 rules. Log any failures found.",
       "passes": false
     },
     {
       "id": 4,
-      "task": "Verify universal questions are truly universal",
-      "details": "Go through each question ONE AT A TIME. Confirm answer doesn't vary by state. Fix or remove any state-specific content.",
+      "task": "Verify universal questions",
+      "details": "Re-check each question ONE AT A TIME against all 18 rules. Confirm nothing is state-specific.",
       "passes": false
     }
   ],
   "output_format": {
-    "description": "Each question in the JSON file should look like this:",
-    "example": {
+    "questions_json": {
       "id": 1,
       "topic": "Speed Limits",
       "question": "What is the default speed limit in a New Jersey school zone?",
@@ -85,5 +168,11 @@
       "correctIndex": 3,
       "explanation": "New Jersey school zones have a default speed limit of 25 mph when children are present."
     }
+  },
+  "files": {
+    "questions/nj-questions.json": "Array of validated NJ questions",
+    "questions/universal-questions.json": "Array of validated universal questions",
+    "validation.txt": "Log of all rule failures and fixes",
+    "progress.txt": "Notes between iterations"
   }
 }

@@ -4,3 +4,5 @@
 
 ---
 
+Q7 | Rule 7 FAILED | Answer D "1 passenger plus dependents" (26 chars) is 44% longer than avg of A,B,C (18 chars). Max allowed is 40%. | Fixed by shortening all answers to similar lengths: "None", "One plus dependents", "Two passengers", "Three passengers"
+

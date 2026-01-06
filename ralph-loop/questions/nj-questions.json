@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "topic": "Parking",
+    "question": "How far from a fire hydrant must you park in New Jersey?",
+    "options": {
+      "A": "At least 5 feet",
+      "B": "At least 10 feet",
+      "C": "At least 15 feet",
+      "D": "At least 20 feet"
+    },
+    "correctAnswer": "B",
+    "correctIndex": 2,
+    "explanation": "New Jersey law prohibits parking within 10 feet of a fire hydrant."
+  },
+  {
+    "id": 2,
+    "topic": "Speed Limits",
+    "question": "What is the speed limit in a New Jersey school zone unless otherwise posted?",
+    "options": {
+      "A": "15 mph",
+      "B": "20 mph",
+      "C": "25 mph",
+      "D": "30 mph"
+    },
+    "correctAnswer": "C",
+    "correctIndex": 3,
+    "explanation": "New Jersey law sets the default school zone speed limit at 25 mph when children are present."
+  },
+  {
+    "id": 3,
+    "topic": "Parking",
+    "question": "How far from a stop sign must you park in New Jersey?",
+    "options": {
+      "A": "At least 25 feet",
+      "B": "At least 35 feet",
+      "C": "At least 50 feet",
+      "D": "At least 75 feet"
+    },
+    "correctAnswer": "C",
+    "correctIndex": 3,
+    "explanation": "New Jersey law prohibits parking within 50 feet of a stop sign."
+  },
+  {
+    "id": 4,
+    "topic": "Turn Signals",
+    "question": "How far before turning must you signal in New Jersey?",
+    "options": {
+      "A": "At least 50 feet",
+      "B": "At least 75 feet",
+      "C": "At least 150 feet",
+      "D": "At least 100 feet"
+    },
+    "correctAnswer": "D",
+    "correctIndex": 4,
+    "explanation": "New Jersey law requires signaling continuously for at least 100 feet before turning."
+  },
+  {
+    "id": 5,
+    "topic": "Passing",
+    "question": "When passing a cyclist on a New Jersey road, how much space must you provide?",
+    "options": {
+      "A": "At least 4 feet",
+      "B": "At least 2 feet",
+      "C": "At least 6 feet",
+      "D": "At least 3 feet"
+    },
+    "correctAnswer": "A",
+    "correctIndex": 1,
+    "explanation": "New Jersey's Safe Passing Law requires drivers to provide at least 4 feet of space when passing cyclists."
+  },
+  {
+    "id": 6,
+    "topic": "Cell Phones",
+    "question": "What type of cell phone use is permitted while driving in New Jersey for drivers 21 and older?",
+    "options": {
+      "A": "Any cell phone use is allowed",
+      "B": "Hands-free devices only",
+      "C": "Handheld calls under 2 minutes",
+      "D": "No cell phone use is permitted"
+    },
+    "correctAnswer": "B",
+    "correctIndex": 2,
+    "explanation": "New Jersey allows hands-free cell phone use for drivers 21 and older, but prohibits handheld devices."
+  },
+  {
+    "id": 7,
+    "topic": "GDL",
+    "question": "How many passengers can a New Jersey probationary license holder transport without a parent present?",
+    "options": {
+      "A": "One plus dependents",
+      "B": "None allowed",
+      "C": "Two passengers",
+      "D": "Three passengers"
+    },
+    "correctAnswer": "A",
+    "correctIndex": 1,
+    "explanation": "New Jersey probationary license holders may transport only one additional passenger plus their dependents, unless accompanied by a parent or guardian."
+  },
+  {
+    "id": 8,
+    "topic": "Headlights",
+    "question": "At what distance must you dim your high beams for oncoming traffic in New Jersey?",
+    "options": {
+      "A": "Within 200 feet",
+      "B": "Within 300 feet",
+      "C": "Within 400 feet",
+      "D": "Within 500 feet"
+    },
+    "correctAnswer": "D",
+    "correctIndex": 4,
+    "explanation": "New Jersey law requires drivers to dim high beams when within 500 feet of an oncoming vehicle."
+  },
+  {
+    "id": 9,
+    "topic": "School Buses",
+    "question": "On an undivided road in New Jersey, what must you do when a school bus displays flashing red lights?",
+    "options": {
+      "A": "Slow to 10 mph and proceed",
+      "B": "Stop only if behind the bus",
+      "C": "Stop in both directions",
+      "D": "Yield and pass carefully"
+    },
+    "correctAnswer": "C",
+    "correctIndex": 3,
+    "explanation": "On undivided roads in New Jersey, traffic in both directions must stop when a school bus displays flashing red lights."
+  },
+  {
+    "id": 10,
+    "topic": "Move Over Law",
+    "question": "What does New Jersey's Move Over Law require when approaching a stopped emergency vehicle?",
+    "options": {
+      "A": "Honk to alert the officer",
+      "B": "Change lanes or slow down",
+      "C": "Stop completely behind it",
+      "D": "Flash your headlights"
+    },
+    "correctAnswer": "B",
+    "correctIndex": 2,
+    "explanation": "New Jersey's Move Over Law requires drivers to change lanes away from stopped emergency vehicles, or slow down if a lane change is not possible."
+  }
+]

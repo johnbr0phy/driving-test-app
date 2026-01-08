@@ -1,122 +1,21 @@
 {
   "todo": [
     {
-      "id": "nj-parking-2",
-      "task": "Generate 5 NJ parking questions (crosswalks, intersections, hills, driveways, fire lanes)",
+      "id": "test-nj-parking",
+      "task": "Generate 3 test NJ parking questions, save to test-output/nj-parking.json",
       "status": "todo"
     },
     {
-      "id": "nj-speed-limits",
-      "task": "Generate 5 NJ speed limit questions (residential, business, highway, construction zones)",
+      "id": "test-universal-signs",
+      "task": "Generate 3 test universal traffic sign questions, save to test-output/universal-signs.json",
       "status": "todo"
     },
     {
-      "id": "nj-gdl",
-      "task": "Generate 5 NJ GDL/permit questions (restrictions, curfew, decals, supervision)",
-      "status": "todo"
-    },
-    {
-      "id": "nj-traffic-signals",
-      "task": "Generate 5 NJ traffic signal questions (flashing lights, arrows, pedestrian signals)",
-      "status": "todo"
-    },
-    {
-      "id": "nj-right-of-way",
-      "task": "Generate 5 NJ right-of-way questions (intersections, pedestrians, emergency vehicles)",
-      "status": "todo"
-    },
-    {
-      "id": "nj-alcohol-drugs",
-      "task": "Generate 5 NJ alcohol/drug questions (BAC limits, implied consent, zero tolerance)",
-      "status": "todo"
-    },
-    {
-      "id": "nj-registration",
-      "task": "Generate 5 NJ registration/inspection questions (requirements, deadlines, transfers)",
-      "status": "todo"
-    },
-    {
-      "id": "nj-special-situations",
-      "task": "Generate 5 NJ special situations questions (funerals, construction, toll roads)",
-      "status": "todo"
-    },
-    {
-      "id": "universal-stopping",
-      "task": "Generate 15 universal stopping/braking questions (following distance, reaction time, ABS)",
-      "status": "todo"
-    },
-    {
-      "id": "universal-signs",
-      "task": "Generate 15 universal traffic sign questions (regulatory, warning, guide signs)",
-      "status": "todo"
-    },
-    {
-      "id": "universal-lanes",
-      "task": "Generate 15 universal lane usage questions (passing, turning, HOV, merging)",
-      "status": "todo"
-    },
-    {
-      "id": "universal-intersections",
-      "task": "Generate 15 universal intersection questions (4-way stops, roundabouts, uncontrolled)",
-      "status": "todo"
-    },
-    {
-      "id": "universal-highway",
-      "task": "Generate 15 universal highway driving questions (entering, exiting, lane changes)",
-      "status": "todo"
-    },
-    {
-      "id": "universal-weather",
-      "task": "Generate 15 universal weather driving questions (rain, fog, ice, hydroplaning)",
-      "status": "todo"
-    },
-    {
-      "id": "universal-night",
-      "task": "Generate 15 universal night driving questions (visibility, glare, fatigue)",
-      "status": "todo"
-    },
-    {
-      "id": "universal-emergency",
-      "task": "Generate 15 universal emergency questions (breakdowns, accidents, tire blowouts)",
-      "status": "todo"
-    },
-    {
-      "id": "universal-sharing-road",
-      "task": "Generate 15 universal sharing-the-road questions (cyclists, motorcycles, trucks, pedestrians)",
-      "status": "todo"
-    },
-    {
-      "id": "universal-vehicle-control",
-      "task": "Generate 15 universal vehicle control questions (steering, skids, backing up)",
-      "status": "todo"
-    },
-    {
-      "id": "verify-nj",
-      "task": "Verify all NJ questions against 18 PRD rules",
-      "status": "todo"
-    },
-    {
-      "id": "verify-universal",
-      "task": "Verify all universal questions against 18 PRD rules",
-      "status": "todo"
-    },
-    {
-      "id": "merge-nj",
-      "task": "Merge all NJ category files into nj-questions.json",
-      "status": "todo"
-    },
-    {
-      "id": "merge-universal",
-      "task": "Merge all universal category files into universal-questions.json",
+      "id": "test-verify",
+      "task": "Verify test questions against the 18 PRD rules",
       "status": "todo"
     }
   ],
   "in_progress": [],
-  "done": [
-    {
-      "id": "nj-initial-10",
-      "task": "Generate initial 10 NJ questions (parking, speed, signals, GDL, headlights, buses, move-over)",
-      "status": "done"
-    }
-  ]
+  "done": []
 }

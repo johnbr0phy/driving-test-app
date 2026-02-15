@@ -49,21 +49,12 @@ export const metadata: Metadata = {
     title: "Free DMV Practice Test 2026 | TigerTest",
     description:
       "Free DMV practice tests for all 50 states. 200+ questions per state with instant feedback and detailed explanations.",
-    images: [
-      {
-        url: "/tiger.png",
-        width: 512,
-        height: 512,
-        alt: "TigerTest - US Driving Test Practice",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Free DMV Practice Test 2026 | TigerTest",
     description:
       "Free DMV practice tests for all 50 states. 200+ questions with instant feedback.",
-    images: ["/tiger.png"],
   },
   icons: {
     icon: "/tiger.png",

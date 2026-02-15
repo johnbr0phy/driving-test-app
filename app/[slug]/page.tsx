@@ -70,20 +70,11 @@ export async function generateMetadata({
       type: "website",
       url: canonicalUrl,
       siteName: "TigerTest",
-      images: [
-        {
-          url: "/tiger.png",
-          width: 512,
-          height: 512,
-          alt: `${state.name} DMV Practice Test - TigerTest`,
-        },
-      ],
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      images: ["/tiger.png"],
     },
   };
 }

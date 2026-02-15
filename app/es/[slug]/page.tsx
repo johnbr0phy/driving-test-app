@@ -69,20 +69,11 @@ export async function generateMetadata({
       url: canonicalUrl,
       locale: "es_US",
       siteName: "TigerTest",
-      images: [
-        {
-          url: "/tiger.png",
-          width: 512,
-          height: 512,
-          alt: `Examen de Práctica DMV de ${state.name} - TigerTest`,
-        },
-      ],
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      images: ["/tiger.png"],
     },
   };
 }

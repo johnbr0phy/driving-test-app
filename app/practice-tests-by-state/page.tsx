@@ -23,7 +23,6 @@ export const metadata: Metadata = {
       "Free DMV practice tests for all 50 states. 200 questions per state with instant feedback.",
     type: "website",
     url: `${siteUrl}/practice-tests-by-state`,
-    images: [{ url: "/tiger.png", width: 512, height: 512 }],
   },
 };
 

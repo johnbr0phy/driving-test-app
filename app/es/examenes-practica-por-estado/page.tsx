@@ -25,7 +25,6 @@ export const metadata: Metadata = {
     type: "website",
     locale: "es_US",
     url: `${siteUrl}/es/examenes-practica-por-estado`,
-    images: [{ url: "/tiger.png", width: 512, height: 512 }],
   },
 };
 

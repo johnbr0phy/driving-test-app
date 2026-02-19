@@ -354,28 +354,30 @@ function DashboardContent() {
           </Link>
         )}
 
-        {/* Training Sets - only shown after onboarding */}
-        {onboardingComplete && (
-          <div className="mb-8">
-            <div className="mb-3">
-              <h2 className="text-xl font-bold">{t("dashboard.training")}</h2>
-            </div>
-            <p className="text-sm text-gray-500 mb-4">{t("dashboard.trainingSubtitle")}</p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              {trainingSets.map((set) => {
-                const isPremiumLocked = set.id === 4 && !isPremium && onboardingComplete;
-                return (
-                  <TrainingSetCard
-                    key={set.id}
-                    set={set}
-                    isPremiumLocked={isPremiumLocked}
-                    onPremiumClick={() => handlePremiumClick("training_set_4")}
-                  />
-                );
-              })}
-            </div>
+        {/* Training Sets */}
+        <div className="mb-8">
+          <div className="mb-3">
+            <h2 className="text-xl font-bold">{t("dashboard.training")}</h2>
           </div>
-        )}
+          <p className="text-sm text-gray-500 mb-4">
+            {onboardingComplete ? t("dashboard.trainingSubtitle") : t("dashboard.completeOnboarding")}
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {trainingSets.map((set) => {
+              const isPremiumLocked = set.id === 4 && !isPremium && onboardingComplete;
+              const locked = !onboardingComplete;
+              return (
+                <TrainingSetCard
+                  key={set.id}
+                  set={set}
+                  locked={locked}
+                  isPremiumLocked={isPremiumLocked}
+                  onPremiumClick={() => handlePremiumClick("training_set_4")}
+                />
+              );
+            })}
+          </div>
+        </div>
 
         {/* Practice Tests */}
         <div className="mb-6">

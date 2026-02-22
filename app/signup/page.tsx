@@ -24,6 +24,7 @@ function SignupPageContent() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+  const [emailConsent, setEmailConsent] = useState(true);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
@@ -34,6 +35,7 @@ function SignupPageContent() {
   const setStoreState = useStore((state) => state.setSelectedState);
   const storeSelectedState = useStore((state) => state.selectedState);
   const isGuest = useStore((state) => state.isGuest);
+  const setStoreEmailConsent = useStore((state) => state.setEmailConsent);
 
   // Check for state query param (e.g. /signup?state=OH)
   const stateParam = searchParams.get("state");
@@ -68,6 +70,9 @@ function SignupPageContent() {
     setLoading(true);
 
     try {
+      // Set email consent preference (default true for Google sign-in)
+      setStoreEmailConsent(true);
+      
       await loginWithGoogle();
       // Only set state if not a guest (guests already have state set)
       if (!guestHasState) {
@@ -100,6 +105,9 @@ function SignupPageContent() {
     setLoading(true);
 
     try {
+      // Set email consent preference before creating account
+      setStoreEmailConsent(emailConsent);
+      
       // Create user account
       await signup(email, password);
       // Only set state if not a guest (guests already have state set)
@@ -243,6 +251,22 @@ function SignupPageContent() {
                     disabled={loading}
                   />
                 </div>
+
+                <label className="flex items-start gap-2 text-sm text-gray-600 cursor-pointer">
+                  <input
+                    type="checkbox"
+                    checked={emailConsent}
+                    onChange={(e) => setEmailConsent(e.target.checked)}
+                    className="mt-1 cursor-pointer"
+                    disabled={loading}
+                  />
+                  <span>
+                    I agree to receive helpful emails from TigerTest about my test preparation.{" "}
+                    <Link href="/privacy" className="text-brand underline" target="_blank">
+                      Privacy Policy
+                    </Link>
+                  </span>
+                </label>
 
                 <div className="flex gap-3">
                   <Button

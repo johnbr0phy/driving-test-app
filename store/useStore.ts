@@ -106,8 +106,10 @@ interface AppState {
   // Firebase sync
   userId: string | null;
   photoURL: string | null;
+  emailConsent: boolean;
   setUserId: (userId: string | null) => void;
   setPhotoURL: (photoURL: string | null) => void;
+  setEmailConsent: (consent: boolean) => void;
   loadUserData: (userId: string) => Promise<void>;
   checkUserHasData: (userId: string) => Promise<boolean>;
   saveToFirestore: () => Promise<void>;
@@ -135,6 +137,7 @@ export const useStore = create<AppState>()(
       language: 'en' as Language,
       isGuest: false,
       selectedState: null,
+      emailConsent: true,
       currentTests: {},
       completedTests: [],
       testAttempts: [],
@@ -176,6 +179,10 @@ export const useStore = create<AppState>()(
       setPhotoURL: (photoURL: string | null) => {
         set({ photoURL });
         get().saveToFirestore();
+      },
+
+      setEmailConsent: (consent: boolean) => {
+        set({ emailConsent: consent });
       },
 
       setSelectedState: (state: string) => {
@@ -751,7 +758,7 @@ export const useStore = create<AppState>()(
       },
 
       saveToFirestore: async () => {
-        const { userId, isGuest, selectedState, currentTests, completedTests, testAttempts, training, trainingSets, trainingAnswerHistory, activeDates, photoURL, subscription, language } = get();
+        const { userId, isGuest, selectedState, currentTests, completedTests, testAttempts, training, trainingSets, trainingAnswerHistory, activeDates, photoURL, subscription, language, emailConsent } = get();
         if (!userId || isGuest) return; // Don't save if no user is logged in or guest mode
 
         try {
@@ -777,6 +784,8 @@ export const useStore = create<AppState>()(
           await setDoc(doc(db, 'users', userId), {
             selectedState,
             photoURL,
+            emailConsent,
+            unsubscribed: false,
             currentTests: currentTestsForFirestore,
             completedTests: completedTests.map(test => ({
               ...test,

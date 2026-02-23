@@ -19,6 +19,7 @@ import {
 } from "@/components/ui/select";
 import { useStore } from "@/store/useStore";
 import { WebViewGoogleWarning } from "@/components/WebViewGoogleWarning";
+import { auth } from "@/lib/firebase";
 
 function SignupPageContent() {
   const [email, setEmail] = useState("");
@@ -78,6 +79,22 @@ function SignupPageContent() {
       if (!guestHasState) {
         setStoreState(stateToUse);
       }
+
+      // Fire welcome email for new Google users (deduped server-side)
+      const googleUser = auth.currentUser;
+      if (googleUser) {
+        fetch("/api/send-welcome-email", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            userId: googleUser.uid,
+            email: googleUser.email,
+            displayName: googleUser.displayName,
+            emailConsent: true,
+          }),
+        }).catch(() => {});
+      }
+
       // Wait for user data to load before redirecting
       await new Promise(resolve => setTimeout(resolve, 800));
 
@@ -113,6 +130,21 @@ function SignupPageContent() {
       // Only set state if not a guest (guests already have state set)
       if (!guestHasState) {
         setStoreState(selectedState!);
+      }
+
+      // Fire welcome email (fire-and-forget, don't block redirect)
+      const newUser = auth.currentUser;
+      if (newUser && emailConsent) {
+        fetch("/api/send-welcome-email", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            userId: newUser.uid,
+            email: newUser.email,
+            displayName: newUser.displayName,
+            emailConsent,
+          }),
+        }).catch(() => {}); // silent fail — email is nice-to-have, not critical
       }
 
       // Small delay to ensure state is saved

@@ -254,6 +254,14 @@ export const en = {
     sharing: "Sharing...",
     shareError: "Failed to share",
     tryAgain: "Try Again",
+    nextTestHeadingPass: "Keep the momentum going!",
+    nextTestHeadingFail: "Try a fresh set of questions",
+    nextTestSubPass: "Test {{n}} has 50 brand-new questions. More practice = better odds.",
+    nextTestSubFail: "Test {{n}} has completely different questions — another chance to make it click.",
+    nextTestUnlockHeading: "One more test to go",
+    nextTestUnlockSub: "Test 4 is premium — 50 more questions to lock in your score before the real thing.",
+    nextTestButton: "Try Test {{n}} →",
+    nextTestUnlockButton: "Unlock Test 4 →",
   },
 
   // Settings page

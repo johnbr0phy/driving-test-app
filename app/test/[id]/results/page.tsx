@@ -61,6 +61,8 @@ export default function ResultsPage() {
   const getTestAttemptStats = useStore((state) => state.getTestAttemptStats);
   const getQuestionPerformance = useStore((state) => state.getQuestionPerformance);
   const isGuest = useStore((state) => state.isGuest);
+  const isTestUnlocked = useStore((state) => state.isTestUnlocked);
+  const hasPremiumAccess = useStore((state) => state.hasPremiumAccess);
   const [expandedQuestions, setExpandedQuestions] = useState<Set<number>>(new Set());
   const [loading, setLoading] = useState(true);
   const [showFireworks, setShowFireworks] = useState(false);
@@ -138,6 +140,12 @@ export default function ResultsPage() {
   const improvement = percentage - firstPercentage;
   const isNewBest = score === bestScore && attemptStats && attemptStats.attemptCount > 1;
   const attemptNumber = attemptStats?.attemptCount || 1;
+
+  // Next Test CTA logic
+  const nextTestId = testId + 1;
+  const hasNextTest = testId < 4;
+  const isPremium = hydrated ? hasPremiumAccess() : false;
+  const nextTestIsLocked = nextTestId === 4 && !isPremium;
 
   const toggleQuestion = (index: number) => {
     const newExpanded = new Set(expandedQuestions);
@@ -273,6 +281,39 @@ export default function ResultsPage() {
 
       {/* Stats & Details Section */}
       <div id="stats-section" className="container mx-auto px-4 pb-8 max-w-6xl">
+
+        {/* ── Next Test CTA ─────────────────────────────────────────── */}
+        {hasNextTest && (
+          <Card className={`mb-6 border-2 ${nextTestIsLocked ? "bg-gradient-to-r from-yellow-50 to-orange-50 border-orange-200" : "bg-gradient-to-r from-brand-light to-brand-gradient-to border-brand-border-light"}`}>
+            <CardContent className="py-5">
+              <div className="flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg font-bold text-gray-900 mb-1">
+                    {nextTestIsLocked
+                      ? t("results.nextTestUnlockHeading")
+                      : passed
+                        ? t("results.nextTestHeadingPass")
+                        : t("results.nextTestHeadingFail")}
+                  </h3>
+                  <p className="text-gray-600 text-sm">
+                    {nextTestIsLocked
+                      ? t("results.nextTestUnlockSub")
+                      : (passed ? t("results.nextTestSubPass") : t("results.nextTestSubFail")).replace("{{n}}", String(nextTestId))}
+                  </p>
+                </div>
+                <Button
+                  className={`font-bold whitespace-nowrap px-6 shrink-0 ${nextTestIsLocked ? "bg-brand text-white hover:bg-brand-hover" : "bg-brand text-white hover:bg-brand-hover"}`}
+                  onClick={() => router.push(nextTestIsLocked ? "/dashboard" : `/test/${nextTestId}`)}
+                >
+                  {nextTestIsLocked
+                    ? t("results.nextTestUnlockButton")
+                    : t("results.nextTestButton").replace("{{n}}", String(nextTestId))}
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
+        )}
+
         {/* Guest Signup Prompt */}
         {isGuest && (
           <Card className="mb-6 bg-gradient-to-r from-brand-light to-brand-gradient-to border-brand-border-light">

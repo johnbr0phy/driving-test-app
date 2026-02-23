@@ -2811,7 +2811,7 @@
     "optionD": "17 years old",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "This is the correct answer based on AL driving laws."
+    "explanation": "Alabama's GDL program begins at age 15 with a Stage I learner's permit, giving young drivers supervised practice time before advancing to greater independence on the road."
   },
   {
     "type": "State-Specific",
@@ -2825,7 +2825,7 @@
     "optionD": "Certified driving instructors",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "This is the correct answer based on AL driving laws."
+    "explanation": "Alabama requires the supervising driver to be a parent, legal guardian, or any licensed driver aged 21 or older \u2014 ensuring the supervisor has meaningful driving experience to guide the learner safely."
   },
   {
     "type": "State-Specific",
@@ -2839,7 +2839,7 @@
     "optionD": "9 months minimum",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "This is the correct answer based on AL driving laws."
+    "explanation": "Alabama requires Stage I permit holders to log at least 6 months of supervised driving before they can apply for a Stage II restricted license, building experience gradually."
   },
   {
     "type": "State-Specific",
@@ -2853,7 +2853,7 @@
     "optionD": "Work, school, or parent",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "This is the correct answer based on AL driving laws."
+    "explanation": "Alabama's Stage II nighttime curfew (midnight to 6 AM) includes exceptions for work, school-related activities, or when accompanied by a parent or guardian \u2014 recognizing that teens sometimes have legitimate nighttime obligations."
   },
   {
     "type": "State-Specific",
@@ -2867,7 +2867,7 @@
     "optionD": "Criminal record is created",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "This is the correct answer based on AL driving laws."
+    "explanation": "Instead of criminal punishment, GDL violations in Alabama extend the restricted period by 6 months or until the driver turns 18, whichever is longer \u2014 keeping the focus on experience rather than penalties."
   },
   {
     "type": "State-Specific",
@@ -2881,7 +2881,7 @@
     "optionD": "No passengers allowed",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "This is the correct answer based on AL driving laws."
+    "explanation": "At 16, Alabama Stage II license holders are limited to one non-family passenger. Research consistently shows that carrying multiple peer passengers dramatically increases crash risk for teen drivers."
   },
   {
     "type": "State-Specific",
@@ -2895,7 +2895,7 @@
     "optionD": "21 years old",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "This is the correct answer based on AL driving laws."
+    "explanation": "Drivers who reach age 18 without having held a restricted license can bypass the GDL stages entirely and apply directly for a full unrestricted license, as the GDL system is designed for teens under 18."
   },
   {
     "type": "State-Specific",
@@ -2909,7 +2909,7 @@
     "optionD": "50 hours or driver ed",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "This is the correct answer based on AL driving laws."
+    "explanation": "To advance from Stage I to Stage II in Alabama, teens must complete 50 hours of supervised driving practice or successfully complete a state-approved driver education course."
   },
   {
     "type": "State-Specific",
@@ -2923,7 +2923,7 @@
     "optionD": "Age 19 regardless",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "This is the correct answer based on AL driving laws."
+    "explanation": "Stage II license holders in Alabama can obtain an unrestricted license at age 17 \u2014 provided they have held the Stage II license for at least 6 months and maintained a clean driving record."
   },
   {
     "type": "State-Specific",
@@ -2937,7 +2937,7 @@
     "optionD": "Parental consent only",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "This is the correct answer based on AL driving laws."
+    "explanation": "Alabama requires drivers under 19 applying for a permit to provide proof of current school enrollment, reinforcing the connection between education and driving privilege for minors."
   },
   {
     "type": "State-Specific",
@@ -2951,7 +2951,7 @@
     "optionD": "Supervisor only needed on highways",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "This is the correct answer based on AL driving laws."
+    "explanation": "Alabama requires the supervising adult to sit in the front passenger seat at all times when a Stage I permit holder is driving, ensuring they can intervene quickly if the learner needs guidance."
   },
   {
     "type": "State-Specific",
@@ -2965,7 +2965,7 @@
     "optionD": "No criminal penalties or points",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "This is the correct answer based on AL driving laws."
+    "explanation": "Alabama treats GDL violations differently from standard traffic offenses \u2014 no criminal penalties or points are assessed. Instead, the GDL period is simply extended, keeping the correction educational rather than punitive."
   },
   {
     "type": "State-Specific",
@@ -2979,7 +2979,7 @@
     "optionD": "Using Bluetooth devices",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "This is the correct answer based on AL driving laws."
+    "explanation": "Alabama's Hands-Free Law prohibits physically holding or manually operating a phone while driving. The focus is on manual interaction \u2014 touching the screen to type, swipe, or browse \u2014 not the call itself."
   },
   {
     "type": "State-Specific",
@@ -2993,7 +2993,7 @@
     "optionD": "Only for emergencies",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "This is the correct answer based on AL driving laws."
+    "explanation": "Alabama permits voice-operated features like talk-to-text while driving, since activating them doesn't require taking your eyes off the road or your hands off the wheel in the same way typing does."
   },
   {
     "type": "State-Specific",
@@ -3007,7 +3007,7 @@
     "optionD": "No touching allowed",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "This is the correct answer based on AL driving laws."
+    "explanation": "Under Alabama's Hands-Free Law, you may use a single button press or swipe to initiate or end a call \u2014 but extended manual interaction with the phone while driving is prohibited."
   },
   {
     "type": "State-Specific",
@@ -3021,7 +3021,7 @@
     "optionD": "All mobile phone use",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "This is the correct answer based on AL driving laws."
+    "explanation": "Alabama bans all mobile phone use \u2014 including hands-free \u2014 for drivers under 18 with a restricted license. New drivers need their full attention on the road, without any device-related distraction."
   },
   {
     "type": "State-Specific",
@@ -3035,7 +3035,7 @@
     "optionD": "Never while vehicle on",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "This is the correct answer based on AL driving laws."
+    "explanation": "Alabama allows drivers to use a handheld phone at any time to contact emergency services \u2014 the safety need of reporting an emergency outweighs the usual hands-free requirement."
   },
   {
     "type": "State-Specific",
@@ -3049,7 +3049,7 @@
     "optionD": "Wired headsets only",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "This is the correct answer based on AL driving laws."
+    "explanation": "Bluetooth headsets and speakerphone qualify as hands-free devices in Alabama, making them legal to use while driving as long as you don't hold the phone or manually operate it."
   },
   {
     "type": "State-Specific",
@@ -3063,7 +3063,7 @@
     "optionD": "Zero tolerance",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "This is the correct answer based on AL driving laws."
+    "explanation": "Alabama sets the BAC limit for drivers under 21 at 0.02% \u2014 effectively zero tolerance, since this threshold is below what most people could reach from incidental exposure and leaves no room for even light drinking."
   },
   {
     "type": "State-Specific",
@@ -3077,7 +3077,7 @@
     "optionD": "0.04%",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "This is the correct answer based on AL driving laws."
+    "explanation": "Commercial drivers in Alabama must stay below 0.04% BAC \u2014 half the standard adult limit \u2014 because of the greater potential for harm when large commercial vehicles are operated by impaired drivers."
   },
   {
     "type": "State-Specific",
@@ -3091,7 +3091,7 @@
     "optionD": "Waiver of legal representation",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "This is the correct answer based on AL driving laws."
+    "explanation": "Alabama's implied consent law means that by getting behind the wheel, you automatically consent to chemical BAC testing if a law enforcement officer has stopped you on suspicion of DUI."
   },
   {
     "type": "State-Specific",
@@ -3105,7 +3105,7 @@
     "optionD": "License suspension extends",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "This is the correct answer based on AL driving laws."
+    "explanation": "A BAC of 0.15% or higher in Alabama triggers aggravated DUI penalties, including a doubled minimum jail sentence \u2014 reflecting the significantly higher danger posed by heavily intoxicated drivers."
   },
   {
     "type": "State-Specific",
@@ -3119,7 +3119,7 @@
     "optionD": "Five years required",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "This is the correct answer based on AL driving laws."
+    "explanation": "After a DUI conviction in Alabama, drivers must file SR-22 proof of insurance for 3 years, ensuring they maintain continuous coverage and giving the state a way to monitor compliance."
   },
   {
     "type": "State-Specific",
@@ -3133,7 +3133,7 @@
     "optionD": "Within 5 years",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "This is the correct answer based on AL driving laws."
+    "explanation": "In Alabama, a fourth DUI offense within 5 years is elevated to a felony, carrying substantially harsher penalties including longer incarceration and permanent impacts on the driver's record."
   },
   {
     "type": "State-Specific",
@@ -3147,7 +3147,7 @@
     "optionD": "One year jail time",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "This is the correct answer based on AL driving laws."
+    "explanation": "Refusing to take a BAC test in Alabama results in a 90-day license suspension for a first refusal \u2014 a strong deterrent designed to discourage drivers from avoiding accountability through refusal."
   },
   {
     "type": "State-Specific",
@@ -3161,7 +3161,7 @@
     "optionD": "7 years",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "This is the correct answer based on AL driving laws."
+    "explanation": "Alabama looks back 10 years when evaluating prior DUI convictions for sentencing purposes, meaning past offenses within that window can significantly increase penalties for a new offense."
   },
   {
     "type": "State-Specific",
@@ -3175,7 +3175,7 @@
     "optionD": "Shared responsibility system",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "This is the correct answer based on AL driving laws."
+    "explanation": "Alabama uses a fault-based insurance system, meaning the driver responsible for causing an accident is liable for covering the resulting damages to others involved."
   },
   {
     "type": "State-Specific",
@@ -3189,7 +3189,7 @@
     "optionD": "Damages you cause others",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "This is the correct answer based on AL driving laws."
+    "explanation": "Liability insurance in Alabama covers the costs you cause to other people \u2014 their medical bills, lost wages, and vehicle damage \u2014 not your own expenses, which require additional coverage."
   },
   {
     "type": "State-Specific",
@@ -3203,7 +3203,7 @@
     "optionD": "Personal injury protection",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "This is the correct answer based on AL driving laws."
+    "explanation": "Uninsured motorist coverage protects you when the driver who causes your accident has no insurance. In Alabama, it can be added to your policy to prevent being left with uncovered losses."
   },
   {
     "type": "State-Specific",
@@ -3217,7 +3217,7 @@
     "optionD": "Civil violation only",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "This is the correct answer based on AL driving laws."
+    "explanation": "Driving without insurance in Alabama is a Class C misdemeanor, meaning it carries real criminal consequences \u2014 fines, possible jail time, and license suspension \u2014 not just a traffic ticket."
   },
   {
     "type": "State-Specific",
@@ -3231,7 +3231,7 @@
     "optionD": "Only in fog conditions",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "This is the correct answer based on AL driving laws."
+    "explanation": "Alabama requires headlights to be on whenever windshield wipers are in use, ensuring that other drivers can see you clearly during rain, fog, or other low-visibility conditions."
   },
   {
     "type": "State-Specific",
@@ -3245,7 +3245,7 @@
     "optionD": "Move over or slow down",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "This is the correct answer based on AL driving laws."
+    "explanation": "Alabama's Move Over Law requires drivers approaching a stopped emergency vehicle on a multi-lane road to either change lanes away from it or slow down significantly if changing lanes isn't possible."
   },
   {
     "type": "State-Specific",
@@ -3259,7 +3259,7 @@
     "optionD": "1000 feet",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "This is the correct answer based on AL driving laws."
+    "explanation": "Alabama requires all vehicles to maintain at least 500 feet of following distance behind emergency vehicles with active lights and sirens, giving them clear space to operate safely."
   },
   {
     "type": "State-Specific",
@@ -3273,7 +3273,7 @@
     "optionD": "Optional with parental consent",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "This is the correct answer based on AL driving laws."
+    "explanation": "Alabama law requires all vehicle occupants under age 15 to wear a seatbelt in every seating position \u2014 front and back \u2014 ensuring younger passengers are always properly restrained."
   },
   {
     "type": "State-Specific",
@@ -3287,7 +3287,7 @@
     "optionD": "18 inches above seat",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "This is the correct answer based on AL driving laws."
+    "explanation": "Alabama limits motorcycle handlebars to a maximum height of 15 inches above the seat, ensuring riders can maintain proper control and that the handlebar height doesn't compromise steering."
   },
   {
     "type": "State-Specific",
@@ -3301,7 +3301,7 @@
     "optionD": "Required for all riders",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "This is the correct answer based on AL driving laws."
+    "explanation": "Alabama requires all motorcycle riders and passengers to wear a helmet, regardless of age or experience. The state has one of the stricter helmet laws in the South."
   },
   {
     "type": "State-Specific",
@@ -3315,7 +3315,7 @@
     "optionD": "Never if opposite side",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "This is the correct answer based on AL driving laws."
+    "explanation": "In Alabama, drivers approaching a school bus with flashing lights must stop regardless of which direction they're traveling \u2014 including on divided highways, unless a median barrier is present."
   },
   {
     "type": "State-Specific",
@@ -3329,7 +3329,7 @@
     "optionD": "All ages",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "This is the correct answer based on AL driving laws."
+    "explanation": "Alabama requires bicycle riders under age 16 to wear an approved helmet. Younger children are at greater risk of serious head injury, making helmet use legally mandatory for this age group."
   },
   {
     "type": "State-Specific",
@@ -3343,7 +3343,7 @@
     "optionD": "Never in roadways",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "This is the correct answer based on AL driving laws."
+    "explanation": "Alabama law requires drivers to exercise due care and yield to pedestrians in all situations \u2014 even when pedestrians are crossing outside of a crosswalk or against a signal. Fault does not eliminate the duty of care."
   },
   {
     "type": "State-Specific",
@@ -3357,7 +3357,7 @@
     "optionD": "After stop when safe",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "This is the correct answer based on AL driving laws."
+    "explanation": "In Alabama, right turns on red are permitted after making a complete stop and ensuring the intersection is clear of cross-traffic and pedestrians \u2014 unless a posted sign explicitly prohibits it."
   },
   {
     "type": "State-Specific",

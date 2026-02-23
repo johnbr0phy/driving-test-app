@@ -84,7 +84,7 @@ function TrainingPageContent() {
     setPrevCorrectCount(training.totalCorrectAllTime);
   }, [training.totalCorrectAllTime, prevCorrectCount, isSetMode]);
 
-  // Session question count tracked in handleAnswerSelect — triggers modal at 25
+  // Session question count — triggers John's message modal every 25 questions in any training mode
 
   const handleFireworksComplete = () => {
     setShowFireworks(false);
@@ -184,11 +184,12 @@ function TrainingPageContent() {
       answerTrainingSetQuestion(setNumber, currentQuestion.questionId, isCorrect);
     } else {
       answerTrainingQuestion(currentQuestion.questionId, isCorrect);
-      // Show John's message every 25 questions answered this session
-      sessionQuestionCount.current += 1;
-      if (sessionQuestionCount.current % 25 === 0) {
-        setShowJohnMessage(true);
-      }
+    }
+
+    // Show John's message every 25 questions answered this session (all training modes)
+    sessionQuestionCount.current += 1;
+    if (sessionQuestionCount.current % 25 === 0) {
+      setShowJohnMessage(true);
     }
   };
 

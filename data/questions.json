@@ -4415,10 +4415,10 @@
     "questionId": "AZ-036",
     "category": "stateUnique",
     "question": "What temperature can Arizona pavement reach during summer months?",
-    "optionA": "120°F maximum",
-    "optionB": "130°F maximum",
-    "optionC": "140°F maximum",
-    "optionD": "Over 150°F",
+    "optionA": "120\u00b0F maximum",
+    "optionB": "130\u00b0F maximum",
+    "optionC": "140\u00b0F maximum",
+    "optionD": "Over 150\u00b0F",
     "correctAnswer": "D",
     "correctIndex": 3,
     "explanation": "This is the correct answer based on AZ driving laws."
@@ -4485,13 +4485,13 @@
     "questionId": "CA-001",
     "category": "gdlLicensing",
     "question": "What is the minimum age to obtain a learner's permit in California?",
-    "optionA": "15½ years old",
+    "optionA": "15\u00bd years old",
     "optionB": "16 years old",
     "optionC": "14 years old",
     "optionD": "17 years old",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "In California, teens must be at least 15½ years old to apply for a learner's permit after completing driver education."
+    "explanation": "In California, teens must be at least 15\u00bd years old to apply for a learner's permit after completing driver education."
   },
   {
     "type": "State-Specific",
@@ -4978,7 +4978,7 @@
     "optionA": "Traffic moving faster than 40 mph",
     "optionB": "Traffic moving faster than 50 mph",
     "optionC": "Going 15+ mph faster than traffic flow",
-    "optionD": "Traffic ≤30 mph, within 10 mph difference",
+    "optionD": "Traffic \u226430 mph, within 10 mph difference",
     "correctAnswer": "D",
     "correctIndex": 3,
     "explanation": "CHP recommends lane splitting only when traffic is moving 30 mph or slower, and motorcyclists should not exceed traffic speed by more than 10 mph."
@@ -5058,14 +5058,14 @@
     "state": "CO",
     "questionId": "CO-002",
     "category": "gdlLicensing",
-    "question": "What driver education requirement applies to Colorado teens aged 15 to 15½ years old?",
+    "question": "What driver education requirement applies to Colorado teens aged 15 to 15\u00bd years old?",
     "optionA": "4-hour driver awareness class",
     "optionB": "30-hour driver education course",
     "optionC": "No formal requirement needed",
     "optionD": "12-hour online course option",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Colorado requires drivers aged 15 to 15½ to complete a 30-hour driver education course before applying for a learner's permit."
+    "explanation": "Colorado requires drivers aged 15 to 15\u00bd to complete a 30-hour driver education course before applying for a learner's permit."
   },
   {
     "type": "State-Specific",
@@ -5128,28 +5128,28 @@
     "state": "CO",
     "questionId": "CO-007",
     "category": "gdlLicensing",
-    "question": "What must Colorado teens under 16½ complete to get their driver's license?",
+    "question": "What must Colorado teens under 16\u00bd complete to get their driver's license?",
     "optionA": "100 hours of supervised practice",
     "optionB": "Advanced driving course program",
     "optionC": "Approved behind-the-wheel training",
     "optionD": "Defensive driving course program",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Colorado requires teens under 16½ to provide proof they've completed an approved behind-the-wheel training program before getting their license."
+    "explanation": "Colorado requires teens under 16\u00bd to provide proof they've completed an approved behind-the-wheel training program before getting their license."
   },
   {
     "type": "State-Specific",
     "state": "CO",
     "questionId": "CO-008",
     "category": "gdlLicensing",
-    "question": "What education option can Colorado teens aged 15½ to 16 choose instead of the full driver education course?",
+    "question": "What education option can Colorado teens aged 15\u00bd to 16 choose instead of the full driver education course?",
     "optionA": "Online practice tests option only",
     "optionB": "Parent-taught program alternative",
     "optionC": "No alternative option available",
     "optionD": "4-hour driver awareness class",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Teens between 15½ and 16 years old in Colorado can choose to complete either a 30-hour driver education course or a 4-hour driver awareness class."
+    "explanation": "Teens between 15\u00bd and 16 years old in Colorado can choose to complete either a 30-hour driver education course or a 4-hour driver awareness class."
   },
   {
     "type": "State-Specific",
@@ -5186,9 +5186,9 @@
     "category": "gdlLicensing",
     "question": "What is the minimum age to apply for a learner's permit in Colorado?",
     "optionA": "14 years old",
-    "optionB": "14½ years old",
+    "optionB": "14\u00bd years old",
     "optionC": "15 years old",
-    "optionD": "15½ years old",
+    "optionD": "15\u00bd years old",
     "correctAnswer": "C",
     "correctIndex": 2,
     "explanation": "Colorado allows teens as young as 15 years old to apply for a learner's permit after completing required driver education."
@@ -5202,7 +5202,7 @@
     "optionA": "No, formal education is not required",
     "optionB": "Yes, 30-hour course required",
     "optionC": "Yes, 4-hour class required",
-    "optionD": "Only if under 16½",
+    "optionD": "Only if under 16\u00bd",
     "correctAnswer": "D",
     "correctIndex": 3,
     "explanation": "Colorado drivers who are 16 and older don't require formal driver education before applying for a permit, though supervised practice is still mandatory."
@@ -7845,7 +7845,7 @@
     "questionId": "HI-001",
     "category": "gdlLicensing",
     "question": "What is the minimum age to apply for an instructional permit in Hawaii?",
-    "optionA": "15½ years old",
+    "optionA": "15\u00bd years old",
     "optionB": "16 years old",
     "optionC": "17 years old",
     "optionD": "18 years old",
@@ -7874,7 +7874,7 @@
     "category": "gdlLicensing",
     "question": "What is the minimum age to obtain a provisional license in Hawaii?",
     "optionA": "15 years old",
-    "optionB": "15½ years old",
+    "optionB": "15\u00bd years old",
     "optionC": "16 years old",
     "optionD": "17 years old",
     "correctAnswer": "C",
@@ -7888,7 +7888,7 @@
     "category": "gdlLicensing",
     "question": "At what age can you obtain a full unrestricted driver's license in Hawaii?",
     "optionA": "16 years old",
-    "optionB": "16½ years old",
+    "optionB": "16\u00bd years old",
     "optionC": "18 years old",
     "optionD": "17 years old",
     "correctAnswer": "D",
@@ -8408,7 +8408,7 @@
     "optionA": "14 years old",
     "optionB": "15 years old",
     "optionC": "16 years old",
-    "optionD": "14½ years old",
+    "optionD": "14\u00bd years old",
     "correctAnswer": "A",
     "correctIndex": 0,
     "explanation": "Iowa allows teens to apply for an instruction permit at age 14, making it one of the youngest permit ages in the United States."
@@ -8422,7 +8422,7 @@
     "optionA": "15 years old",
     "optionB": "16 years old",
     "optionC": "17 years old",
-    "optionD": "15½ years old",
+    "optionD": "15\u00bd years old",
     "correctAnswer": "B",
     "correctIndex": 1,
     "explanation": "Iowa requires applicants to be at least 16 years old before they can obtain an intermediate license."
@@ -8506,10 +8506,10 @@
     "optionA": "14 years old",
     "optionB": "15 years old",
     "optionC": "16 years old",
-    "optionD": "14½ years old",
+    "optionD": "14\u00bd years old",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Iowa allows teens to apply for a special minor's restricted license for school or farm work at age 14½ with proper documentation."
+    "explanation": "Iowa allows teens to apply for a special minor's restricted license for school or farm work at age 14\u00bd with proper documentation."
   },
   {
     "type": "State-Specific",
@@ -18485,7 +18485,7 @@
     "questionId": "NH-001",
     "category": "gdlLicensing",
     "question": "At what minimum age can you begin practicing driving in New Hampshire?",
-    "optionA": "15½ years of age",
+    "optionA": "15\u00bd years of age",
     "optionB": "16 years of age",
     "optionC": "15 years of age",
     "optionD": "14 years of age",
@@ -18498,7 +18498,7 @@
     "state": "NH",
     "questionId": "NH-002",
     "category": "gdlLicensing",
-    "question": "Who must supervise a 15½-year-old practicing driver in New Hampshire?",
+    "question": "Who must supervise a 15\u00bd-year-old practicing driver in New Hampshire?",
     "optionA": "Any licensed driver over 18",
     "optionB": "Licensed driver at least 25 years old",
     "optionC": "Any family member with a license",
@@ -19608,7 +19608,7 @@
     "optionA": "15 years old",
     "optionB": "16 years old",
     "optionC": "14 years old",
-    "optionD": "15½ years old",
+    "optionD": "15\u00bd years old",
     "correctAnswer": "A",
     "correctIndex": 0,
     "explanation": "This is the correct answer based on NM driving laws."
@@ -19691,7 +19691,7 @@
     "question": "At what age can you obtain an unrestricted driver's license in New Mexico?",
     "optionA": "17 years old at minimum",
     "optionB": "18 years old at minimum",
-    "optionC": "16½ with 1 yr clean record",
+    "optionC": "16\u00bd with 1 yr clean record",
     "optionD": "21 years old at minimum",
     "correctAnswer": "C",
     "correctIndex": 2,
@@ -22411,7 +22411,7 @@
     "optionD": "17 years old",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "This is the correct answer based on OR driving laws."
+    "explanation": "Oregon allows teens to apply for a learner's permit at age 15, one of the earlier ages in the country, to give young drivers more supervised practice time."
   },
   {
     "type": "State-Specific",
@@ -22420,12 +22420,12 @@
     "category": "gdlLicensing",
     "question": "Who must supervise a learner's permit holder in Oregon?",
     "optionA": "Any licensed driver over 18 years",
-    "optionB": "Driver 21+ in front seat",
+    "optionB": "A licensed driver aged 21 or older seated in the front passenger seat",
     "optionC": "Only certified driving instructors",
-    "optionD": "Any family member w/ a license",
+    "optionD": "Any family member with a valid license",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "This is the correct answer based on OR driving laws."
+    "explanation": "Oregon requires the supervising driver to be at least 21 years old and seated in the front passenger seat so they can take control quickly if needed."
   },
   {
     "type": "State-Specific",
@@ -22435,11 +22435,11 @@
     "question": "How long must you hold a learner's permit before applying for a provisional license in Oregon?",
     "optionA": "3 months minimum",
     "optionB": "1 year minimum",
-    "optionC": "6 months min",
+    "optionC": "6 months minimum",
     "optionD": "9 months minimum",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "This is the correct answer based on OR driving laws."
+    "explanation": "Oregon requires permit holders to accumulate at least 6 months of supervised driving experience before they can apply for a provisional license."
   },
   {
     "type": "State-Specific",
@@ -22447,13 +22447,13 @@
     "questionId": "OR-004",
     "category": "gdlLicensing",
     "question": "What supervised driving practice is required to obtain a provisional license in Oregon?",
-    "optionA": "30 hours of practice time",
-    "optionB": "Only a road test required",
+    "optionA": "30 hours of practice",
+    "optionB": "Only a road test is required",
     "optionC": "100 hours total practice",
-    "optionD": "50 hrs or driver ed course",
+    "optionD": "50 hours of supervised driving or completion of a driver education course",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "This is the correct answer based on OR driving laws."
+    "explanation": "Oregon requires either 50 hours of supervised practice (including 10 hours at night) or a driver education course before earning a provisional license."
   },
   {
     "type": "State-Specific",
@@ -22461,13 +22461,13 @@
     "questionId": "OR-005",
     "category": "gdlLicensing",
     "question": "What is the nighttime driving restriction for provisional license holders in Oregon?",
-    "optionA": "No driving midnight-5 AM first yr",
-    "optionB": "No driving 11 PM to 6 AM period",
+    "optionA": "No driving between midnight and 5 AM during the first year",
+    "optionB": "No driving between 11 PM and 6 AM",
     "optionC": "No nighttime restrictions apply",
-    "optionD": "No driving 10 PM to 5 AM period",
+    "optionD": "No driving between 10 PM and 5 AM",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "This is the correct answer based on OR driving laws."
+    "explanation": "For the first year of a provisional license, Oregon prohibits driving between midnight and 5 AM to reduce the crash risk associated with late-night teen driving."
   },
   {
     "type": "State-Specific",
@@ -22475,13 +22475,13 @@
     "questionId": "OR-006",
     "category": "gdlLicensing",
     "question": "What passenger restriction applies during the first 6 months of a provisional license in Oregon?",
-    "optionA": "Two non-family passengers max",
-    "optionB": "No passengers <20 except family",
+    "optionA": "Two non-family passengers maximum",
+    "optionB": "No passengers under 20 except immediate family",
     "optionC": "Three passengers maximum allowed",
     "optionD": "No passengers allowed at all",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "This is the correct answer based on OR driving laws."
+    "explanation": "During the first 6 months, provisional license holders may not carry non-family passengers under 20 \u2014 peer passengers are a leading factor in teen crash risk."
   },
   {
     "type": "State-Specific",
@@ -22495,7 +22495,7 @@
     "optionD": "Unlimited passengers allowed",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "This is the correct answer based on OR driving laws."
+    "explanation": "From months 7 through 12, Oregon provisional license holders may carry up to 3 non-family passengers under 20, as the driver gains more experience."
   },
   {
     "type": "State-Specific",
@@ -22503,13 +22503,13 @@
     "questionId": "OR-008",
     "category": "gdlLicensing",
     "question": "When do provisional license restrictions end in Oregon?",
-    "optionA": "After 6 months of driving time",
-    "optionB": "At age 19 years exactly",
-    "optionC": "After 2 years of driving time",
-    "optionD": "1 yr or age 18, whichever 1st",
+    "optionA": "After 6 months of driving",
+    "optionB": "At exactly age 19",
+    "optionC": "After 2 years of driving",
+    "optionD": "After 1 year with a provisional license or when the driver turns 18, whichever comes first",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "This is the correct answer based on OR driving laws."
+    "explanation": "Oregon's provisional license restrictions lift after 1 full year of holding the provisional license or when the driver reaches age 18 \u2014 whichever milestone comes first."
   },
   {
     "type": "State-Specific",
@@ -22523,7 +22523,7 @@
     "optionD": "21 years old",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "This is the correct answer based on OR driving laws."
+    "explanation": "At age 18, Oregon drivers who have completed the GDL stages can apply for a full, unrestricted Class C driver's license."
   },
   {
     "type": "State-Specific",
@@ -22531,13 +22531,13 @@
     "questionId": "OR-010",
     "category": "gdlLicensing",
     "question": "What are valid exceptions to the nighttime curfew for provisional license holders in Oregon?",
-    "optionA": "Social events only allowed",
-    "optionB": "Work, school, or w/ driver 25+",
-    "optionC": "No exceptions exist at all",
-    "optionD": "Only medical emergencies allowed",
+    "optionA": "Social events only",
+    "optionB": "Work, school, or when accompanied by a licensed driver aged 25 or older",
+    "optionC": "No exceptions exist",
+    "optionD": "Only medical emergencies",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "This is the correct answer based on OR driving laws."
+    "explanation": "Oregon allows provisional license holders to drive during curfew hours for employment, school activities, or when a licensed driver aged 25 or older is in the vehicle."
   },
   {
     "type": "State-Specific",
@@ -22545,13 +22545,13 @@
     "questionId": "OR-011",
     "category": "gdlLicensing",
     "question": "What requirement applies to the front seat when supervising a learner's permit holder in Oregon?",
-    "optionA": "Supervisor can be anywhere in vehicle",
-    "optionB": "No supervision needed during daytime hours",
-    "optionC": "Must sit in front passenger seat",
-    "optionD": "Supervisor only needed on highways",
+    "optionA": "Supervisor can be anywhere in the vehicle",
+    "optionB": "No supervision is needed during daytime hours",
+    "optionC": "Supervisor must sit in the front passenger seat",
+    "optionD": "Supervisor is only required on highways",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "This is the correct answer based on OR driving laws."
+    "explanation": "Oregon requires the supervising driver to occupy the front passenger seat at all times so they can provide immediate guidance or grab the wheel in an emergency."
   },
   {
     "type": "State-Specific",
@@ -22561,11 +22561,11 @@
     "question": "What cell phone restriction applies to provisional license holders under 18 in Oregon?",
     "optionA": "Only handheld use prohibited",
     "optionB": "Only texting is prohibited",
-    "optionC": "Hands-free devices allowed",
-    "optionD": "All phone use prohibited",
+    "optionC": "Hands-free devices are allowed",
+    "optionD": "All mobile phone use is prohibited",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "This is the correct answer based on OR driving laws."
+    "explanation": "Oregon bans all mobile device use for drivers under 18, including hands-free calls \u2014 the restriction is stricter than the adult rule because new drivers need full focus."
   },
   {
     "type": "State-Specific",
@@ -22573,13 +22573,13 @@
     "questionId": "OR-013",
     "category": "cellPhone",
     "question": "What does Oregon law prohibit while driving a motor vehicle?",
-    "optionA": "Holding or using mobile device",
+    "optionA": "Holding or using a mobile electronic device",
     "optionB": "Only texting while driving",
-    "optionC": "Only video recording devices",
+    "optionC": "Only video-recording devices",
     "optionD": "Using navigation systems",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "This is the correct answer based on OR driving laws."
+    "explanation": "Oregon's distracted driving law (ORS 811.507) prohibits holding or using any mobile electronic device while driving \u2014 not just texting."
   },
   {
     "type": "State-Specific",
@@ -22587,13 +22587,13 @@
     "questionId": "OR-014",
     "category": "cellPhone",
     "question": "Can drivers 18 or older use voice-to-text features while driving in Oregon?",
-    "optionA": "No, all phone use is banned entirely",
-    "optionB": "Yes, hands-free voice-to-text OK",
-    "optionC": "Only with passenger present in car",
+    "optionA": "No, all phone use is completely banned",
+    "optionB": "Yes, hands-free voice-to-text is permitted",
+    "optionC": "Only with a passenger present",
     "optionD": "Only on highways or freeways",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "This is the correct answer based on OR driving laws."
+    "explanation": "Oregon allows drivers 18 and older to use hands-free features including voice-to-text, as long as the device is mounted or otherwise operable without holding it."
   },
   {
     "type": "State-Specific",
@@ -22603,11 +22603,11 @@
     "question": "How many touches are allowed to activate a device under Oregon's distracted driving law?",
     "optionA": "Up to three touches",
     "optionB": "Two touches maximum",
-    "optionC": "Single touch or swipe",
-    "optionD": "No touching allowed",
+    "optionC": "A single touch or swipe",
+    "optionD": "No touching is allowed",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "This is the correct answer based on OR driving laws."
+    "explanation": "Oregon permits a single touch or swipe to activate a hands-free function, such as starting a call or activating voice commands \u2014 anything more is a violation."
   },
   {
     "type": "State-Specific",
@@ -22617,25 +22617,25 @@
     "question": "What cell phone restriction applies to all drivers under 18 in Oregon?",
     "optionA": "Only handheld use prohibited",
     "optionB": "Only texting is prohibited",
-    "optionC": "Hands-free devices allowed",
-    "optionD": "All device use prohibited",
+    "optionC": "Hands-free devices are allowed",
+    "optionD": "All electronic device use is prohibited",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "This is the correct answer based on OR driving laws."
+    "explanation": "Oregon applies a total ban on all mobile device use \u2014 including hands-free \u2014 for drivers under 18, recognizing that new drivers cannot safely manage even hands-free distractions."
   },
   {
     "type": "State-Specific",
     "state": "OR",
     "questionId": "OR-017",
     "category": "cellPhone",
-    "question": "When can you legally use a handheld phone to call for medical help while driving in Oregon?",
-    "optionA": "Emergencies w/ no one else available",
-    "optionB": "Only when fully stopped safely",
-    "optionC": "Only with voice commands enabled",
-    "optionD": "Never while vehicle is running",
+    "question": "When can you legally use a handheld phone to call for help while driving in Oregon?",
+    "optionA": "In emergencies when no one else is available to call",
+    "optionB": "Only when fully stopped",
+    "optionC": "Only with voice commands active",
+    "optionD": "Never while the vehicle is running",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "This is the correct answer based on OR driving laws."
+    "explanation": "Oregon's distracted driving law includes a narrow exception allowing a driver to make an emergency call if no one else in the vehicle can do so."
   },
   {
     "type": "State-Specific",
@@ -22644,12 +22644,12 @@
     "category": "cellPhone",
     "question": "How is Oregon's distracted driving law enforced?",
     "optionA": "Secondary offense only",
-    "optionB": "Primary enforcement allowed",
+    "optionB": "Primary offense \u2014 officers can stop you solely for it",
     "optionC": "Warning only for first offense",
-    "optionD": "Only enforced after accidents",
+    "optionD": "Only enforced after an accident",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "This is the correct answer based on OR driving laws."
+    "explanation": "Oregon's distracted driving law is a primary offense, meaning police can pull you over just for holding a device \u2014 no other violation needs to occur first."
   },
   {
     "type": "State-Specific",
@@ -22663,7 +22663,7 @@
     "optionD": "0.04%",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "This is the correct answer based on OR driving laws."
+    "explanation": "Oregon sets the legal BAC limit for drivers 21 and over at 0.08%, consistent with the federal standard adopted by all U.S. states."
   },
   {
     "type": "State-Specific",
@@ -22677,7 +22677,7 @@
     "optionD": "0.04%",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "This is the correct answer based on OR driving laws."
+    "explanation": "Commercial drivers in Oregon are held to a stricter BAC limit of 0.04% \u2014 half the standard adult limit \u2014 because commercial vehicles pose greater risks when operated impaired."
   },
   {
     "type": "State-Specific",
@@ -22686,12 +22686,12 @@
     "category": "duiStateLaws",
     "question": "What BAC level triggers Oregon's zero tolerance law for drivers under 21?",
     "optionA": "Any measurable alcohol",
-    "optionB": "0.02% or higher level",
-    "optionC": "0.04% or higher level",
-    "optionD": "0.08% or higher level",
+    "optionB": "0.02% or higher",
+    "optionC": "0.04% or higher",
+    "optionD": "0.08% or higher",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "This is the correct answer based on OR driving laws."
+    "explanation": "Oregon has a zero-tolerance policy for underage drivers \u2014 any detectable amount of alcohol in a driver under 21 is grounds for a DUII charge and license suspension."
   },
   {
     "type": "State-Specific",
@@ -22699,27 +22699,27 @@
     "questionId": "OR-022",
     "category": "duiStateLaws",
     "question": "What does Oregon's implied consent law require of all drivers?",
-    "optionA": "Permission to search vehicle anytime",
-    "optionB": "Submit to chemical test when arrested",
+    "optionA": "Permission to search the vehicle at any time",
+    "optionB": "Submission to a chemical test when lawfully arrested for DUII",
     "optionC": "Consent to field sobriety tests only",
     "optionD": "Waiver of legal representation rights",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "This is the correct answer based on OR driving laws."
+    "explanation": "By driving on Oregon roads, all drivers implicitly consent to chemical testing (breath, blood, or urine) if lawfully arrested on suspicion of DUII."
   },
   {
     "type": "State-Specific",
     "state": "OR",
     "questionId": "OR-023",
     "category": "duiStateLaws",
-    "question": "What is the consequence of refusing chemical testing for the first time in Oregon?",
-    "optionA": "30-day suspension period",
-    "optionB": "6-month suspension period",
-    "optionC": "1-yr license suspension",
-    "optionD": "No penalty at all",
+    "question": "What is the consequence of refusing a chemical test for the first time in Oregon?",
+    "optionA": "30-day suspension",
+    "optionB": "6-month suspension",
+    "optionC": "1-year license suspension",
+    "optionD": "No penalty",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "This is the correct answer based on OR driving laws."
+    "explanation": "A first-time refusal to submit to chemical testing in Oregon results in an automatic 1-year license suspension, separate from any criminal DUII penalties."
   },
   {
     "type": "State-Specific",
@@ -22733,7 +22733,7 @@
     "optionD": "3 years",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "This is the correct answer based on OR driving laws."
+    "explanation": "A second refusal within a 5-year period triggers a 3-year license suspension in Oregon, reflecting the state's escalating penalties for repeat impaired driving behavior."
   },
   {
     "type": "State-Specific",
@@ -22741,13 +22741,13 @@
     "questionId": "OR-025",
     "category": "duiStateLaws",
     "question": "How can refusing a chemical test affect your case in Oregon?",
-    "optionA": "Refusal used as evidence in court",
-    "optionB": "Refusal cannot be mentioned in court proceedings",
-    "optionC": "Refusal guarantees acquittal of charges",
+    "optionA": "The refusal can be used as evidence against you in court",
+    "optionB": "Refusal cannot be mentioned in court",
+    "optionC": "Refusal guarantees acquittal",
     "optionD": "Refusal only affects administrative penalties",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "This is the correct answer based on OR driving laws."
+    "explanation": "In Oregon, a driver's refusal to take a chemical test can be introduced as evidence in a DUII prosecution, as courts may interpret refusal as consciousness of guilt."
   },
   {
     "type": "State-Specific",
@@ -22756,12 +22756,12 @@
     "category": "duiStateLaws",
     "question": "What is the minimum license suspension for underage drivers who violate zero tolerance laws in Oregon?",
     "optionA": "30 days minimum",
-    "optionB": "90 days min",
+    "optionB": "90 days minimum",
     "optionC": "6 months minimum",
     "optionD": "1 year minimum",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "This is the correct answer based on OR driving laws."
+    "explanation": "Oregon suspends the license of an underage driver caught with any detectable alcohol for a minimum of 90 days, even for a first offense."
   },
   {
     "type": "State-Specific",
@@ -22772,10 +22772,10 @@
     "optionA": "Pure no-fault system",
     "optionB": "Modified comparative fault",
     "optionC": "At-fault system",
-    "optionD": "Shared responsibility",
+    "optionD": "Shared responsibility system",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "This is the correct answer based on OR driving laws."
+    "explanation": "Oregon uses an at-fault (tort) insurance system, meaning the driver who caused the accident is responsible for paying damages to injured parties."
   },
   {
     "type": "State-Specific",
@@ -22783,13 +22783,13 @@
     "questionId": "OR-028",
     "category": "insurance",
     "question": "What does liability insurance primarily cover in Oregon?",
-    "optionA": "Your vehicle damage costs only",
-    "optionB": "Your medical bills costs only",
-    "optionC": "Rental car expenses costs only",
-    "optionD": "Injury & damage to others",
+    "optionA": "Your vehicle damage only",
+    "optionB": "Your own medical bills only",
+    "optionC": "Rental car expenses only",
+    "optionD": "Injuries and property damage you cause to others",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "This is the correct answer based on OR driving laws."
+    "explanation": "Liability insurance covers bodily injury and property damage that you cause to other people \u2014 it does not cover your own vehicle or medical costs."
   },
   {
     "type": "State-Specific",
@@ -22797,13 +22797,13 @@
     "questionId": "OR-029",
     "category": "insurance",
     "question": "What unique insurance coverage is required in Oregon beyond basic liability?",
-    "optionA": "Personal Injury Protection",
-    "optionB": "Comprehensive coverage plan",
-    "optionC": "Collision coverage plan",
-    "optionD": "Gap insurance coverage",
+    "optionA": "Personal Injury Protection (PIP)",
+    "optionB": "Comprehensive coverage",
+    "optionC": "Collision coverage",
+    "optionD": "Gap insurance",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "This is the correct answer based on OR driving laws."
+    "explanation": "Oregon is one of a handful of states that require Personal Injury Protection (PIP), which covers your own medical expenses regardless of who caused the accident."
   },
   {
     "type": "State-Specific",
@@ -22811,13 +22811,13 @@
     "questionId": "OR-030",
     "category": "insurance",
     "question": "What coverage is legally required to protect you from uninsured drivers in Oregon?",
-    "optionA": "Comprehensive coverage plan",
+    "optionA": "Comprehensive coverage",
     "optionB": "Uninsured motorist coverage",
-    "optionC": "Collision coverage plan",
-    "optionD": "Medical payments coverage plan",
+    "optionC": "Collision coverage",
+    "optionD": "Medical payments coverage",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "This is the correct answer based on OR driving laws."
+    "explanation": "Oregon mandates uninsured motorist coverage to protect drivers in accidents caused by drivers with no insurance \u2014 a common real-world risk on the roads."
   },
   {
     "type": "State-Specific",
@@ -22831,7 +22831,7 @@
     "optionD": "December 1 to February 28",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "This is the correct answer based on OR driving laws."
+    "explanation": "Oregon permits studded snow tires from November 1 through March 31. Outside this window, studs cause unnecessary pavement damage and are prohibited."
   },
   {
     "type": "State-Specific",
@@ -22839,13 +22839,13 @@
     "questionId": "OR-032",
     "category": "stateUnique",
     "question": "What must you do when approaching a stopped emergency vehicle on a multi-lane road in Oregon?",
-    "optionA": "Honk your horn loudly",
-    "optionB": "Stop completely in lane",
-    "optionC": "Flash your lights quickly",
-    "optionD": "Move over or slow down",
+    "optionA": "Honk your horn",
+    "optionB": "Stop completely in your lane",
+    "optionC": "Flash your headlights",
+    "optionD": "Move over one lane or slow down significantly",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "This is the correct answer based on OR driving laws."
+    "explanation": "Oregon's Move Over Law requires drivers to change lanes away from a stopped emergency vehicle or, if that's not possible, to slow down to a safe speed \u2014 protecting emergency responders."
   },
   {
     "type": "State-Specific",
@@ -22853,13 +22853,13 @@
     "questionId": "OR-033",
     "category": "stateUnique",
     "question": "What is Oregon's helmet requirement for motorcycle riders?",
-    "optionA": "All riders & passengers",
-    "optionB": "Only riders under 21 years",
+    "optionA": "All riders and passengers",
+    "optionB": "Only riders under 21",
     "optionC": "Only on highways and freeways",
-    "optionD": "Optional with insurance coverage",
+    "optionD": "Optional with adequate insurance",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "This is the correct answer based on OR driving laws."
+    "explanation": "Oregon requires all motorcycle riders and passengers to wear an approved helmet, regardless of age \u2014 one of the stricter helmet laws in the U.S."
   },
   {
     "type": "State-Specific",
@@ -22869,11 +22869,11 @@
     "question": "Is lane splitting or lane filtering legal for motorcycles in Oregon?",
     "optionA": "Legal in all conditions",
     "optionB": "Illegal in all conditions",
-    "optionC": "Legal only in traffic",
+    "optionC": "Legal only in stopped traffic",
     "optionD": "Legal at speeds under 25 mph",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "This is the correct answer based on OR driving laws."
+    "explanation": "Lane splitting and lane filtering are both illegal in Oregon. Motorcycles must stay within a single lane just like any other vehicle \u2014 unlike California, which permits lane splitting."
   },
   {
     "type": "State-Specific",
@@ -22887,7 +22887,7 @@
     "optionD": "25 feet or more",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "This is the correct answer based on OR driving laws."
+    "explanation": "Oregon law requires drivers to stop at least 20 feet from a school bus displaying flashing red lights and to remain stopped until the lights are off and the bus moves."
   },
   {
     "type": "State-Specific",
@@ -22895,13 +22895,13 @@
     "questionId": "OR-036",
     "category": "stateUnique",
     "question": "When are right turns on red permitted in Oregon?",
-    "optionA": "Never permitted anywhere at all",
-    "optionB": "Always without stopping first ever",
-    "optionC": "Only during daytime hours only",
-    "optionD": "After stop when safe unless prohibited",
+    "optionA": "Never permitted",
+    "optionB": "Always, without stopping first",
+    "optionC": "Only during daytime hours",
+    "optionD": "After a complete stop, when safe, unless a sign prohibits it",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "This is the correct answer based on OR driving laws."
+    "explanation": "In Oregon, right turns on red are allowed after making a complete stop and yielding to all pedestrians and cross-traffic \u2014 unless a posted sign specifically prohibits it."
   },
   {
     "type": "State-Specific",
@@ -22915,21 +22915,21 @@
     "optionD": "No restriction",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "This is the correct answer based on OR driving laws."
+    "explanation": "Oregon limits motorcycle handlebars to no more than 15 inches above the seat level to ensure the rider maintains proper control and posture while operating the vehicle."
   },
   {
     "type": "State-Specific",
     "state": "OR",
     "questionId": "OR-038",
     "category": "stateUnique",
-    "question": "What child restraint is required for children under 8 years old and under 40 pounds in Oregon?",
+    "question": "What child restraint is required for children under 8 years old in Oregon?",
     "optionA": "Regular seatbelt only",
-    "optionB": "Safety seat or booster",
-    "optionC": "Lap belt only required",
-    "optionD": "No requirement exists",
+    "optionB": "An approved child safety seat or booster seat",
+    "optionC": "Lap belt only",
+    "optionD": "No specific requirement",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "This is the correct answer based on OR driving laws."
+    "explanation": "Oregon requires all children under age 8 to be secured in an appropriate child safety seat or booster seat \u2014 a seatbelt alone is not sufficient until they meet the age and size requirements."
   },
   {
     "type": "State-Specific",
@@ -22943,7 +22943,7 @@
     "optionD": "All ages",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "This is the correct answer based on OR driving laws."
+    "explanation": "Oregon requires bicycle riders under age 16 to wear an approved helmet \u2014 teens 16 and older may choose not to, though helmets are strongly recommended for all ages."
   },
   {
     "type": "State-Specific",
@@ -22951,13 +22951,13 @@
     "questionId": "OR-040",
     "category": "stateUnique",
     "question": "What lighting requirement applies to motorcycles at all times in Oregon?",
-    "optionA": "Only at night required",
-    "optionB": "Only in rain required",
-    "optionC": "Only in fog required",
-    "optionD": "Headlights always on",
+    "optionA": "Only required at night",
+    "optionB": "Only required in rain",
+    "optionC": "Only required in fog",
+    "optionD": "Headlights must be on at all times",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "This is the correct answer based on OR driving laws."
+    "explanation": "Oregon requires motorcycle headlights to be illuminated at all times the motorcycle is in motion \u2014 not just at night \u2014 to improve visibility and reduce collisions."
   },
   {
     "type": "State-Specific",
@@ -26482,7 +26482,7 @@
     "optionA": "15 years old",
     "optionB": "17 years old",
     "optionC": "18 years old",
-    "optionD": "16½ years old",
+    "optionD": "16\u00bd years old",
     "correctAnswer": "D",
     "correctIndex": 3,
     "explanation": "This is the correct answer based on UT driving laws."
@@ -30489,7 +30489,7 @@
     "optionD": "Any detectable alcohol",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "DC has a zero-tolerance policy for underage drivers — any measurable amount of alcohol is considered intoxicated."
+    "explanation": "DC has a zero-tolerance policy for underage drivers \u2014 any measurable amount of alcohol is considered intoxicated."
   },
   {
     "type": "State-Specific",

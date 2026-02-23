@@ -55,7 +55,7 @@ function TrainingPageContent() {
   const [showResetConfirm, setShowResetConfirm] = useState(false);
   const [prevCorrectCount, setPrevCorrectCount] = useState(training.totalCorrectAllTime);
   const [showJohnMessage, setShowJohnMessage] = useState(false);
-  const [prevQuestionsAnsweredCount, setPrevQuestionsAnsweredCount] = useState(training.questionsAnswered.length);
+  const sessionQuestionCount = useRef(0);
 
   // Get current set progress
   const setProgress = isSetMode ? getTrainingSetProgress(setNumber) : null;
@@ -84,19 +84,7 @@ function TrainingPageContent() {
     setPrevCorrectCount(training.totalCorrectAllTime);
   }, [training.totalCorrectAllTime, prevCorrectCount, isSetMode]);
 
-  // Show John's personal message every 25 training questions
-  useEffect(() => {
-    const currentCount = training.questionsAnswered.length;
-    if (
-      !isSetMode &&
-      currentCount > 0 &&
-      currentCount % 25 === 0 &&
-      currentCount > prevQuestionsAnsweredCount
-    ) {
-      setShowJohnMessage(true);
-    }
-    setPrevQuestionsAnsweredCount(currentCount);
-  }, [training.questionsAnswered.length, prevQuestionsAnsweredCount, isSetMode]);
+  // Session question count tracked in handleAnswerSelect — triggers modal at 25
 
   const handleFireworksComplete = () => {
     setShowFireworks(false);
@@ -196,6 +184,11 @@ function TrainingPageContent() {
       answerTrainingSetQuestion(setNumber, currentQuestion.questionId, isCorrect);
     } else {
       answerTrainingQuestion(currentQuestion.questionId, isCorrect);
+      // Show John's message every 25 questions answered this session
+      sessionQuestionCount.current += 1;
+      if (sessionQuestionCount.current % 25 === 0) {
+        setShowJohnMessage(true);
+      }
     }
   };
 

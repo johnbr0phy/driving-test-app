@@ -228,19 +228,21 @@ function TrainingPageContent() {
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm animate-in fade-in duration-300">
           <div className="bg-white rounded-2xl p-8 mx-4 max-w-md text-center shadow-2xl animate-in zoom-in-95 duration-300">
             <div className="mb-4 text-4xl">🐯</div>
-            <p className="text-xs font-semibold text-brand uppercase tracking-widest mb-2">A note from John at TigerTest</p>
+            <p className="text-xs font-semibold text-brand uppercase tracking-widest mb-2">A message from John at TigerTest</p>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
-              You&apos;re doing great — now test yourself.
+              Stop training. Take the test.
             </h2>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              Hey! Training questions are a brilliant way to learn, but practice tests are where it really clicks.
-              They replicate the actual DMV exam — same format, same pressure. That&apos;s what builds real confidence on test day.
-              You&apos;ve put in the work. Go take the test. 💪
+              You&apos;ve answered {training.questionsAnswered.length} training questions. That&apos;s not warm-up anymore — that&apos;s avoidance.
+              <br /><br />
+              The practice test feels different. No instant answers. No safety net. Just you and 40 questions.
+              <br /><br />
+              That&apos;s the point. That&apos;s exactly what the real DMV exam feels like. The only way to be ready for it is to practice it.
             </p>
             <div className="flex flex-col gap-3">
               <Link href="/test/1" onClick={() => setShowJohnMessage(false)}>
                 <Button className="w-full bg-brand hover:bg-brand-dark text-white font-semibold py-3 text-base">
-                  Take Practice Test 1 →
+                  Take the test. I&apos;m ready. →
                 </Button>
               </Link>
               <Button

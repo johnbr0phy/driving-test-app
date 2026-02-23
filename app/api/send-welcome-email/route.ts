@@ -49,7 +49,7 @@ const welcomeTemplate = `<!DOCTYPE html>
               </p>
               <p style="margin: 24px 0 0; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
                 Good luck,<br>
-                The TigerTest Team
+                John @ TigerTest.io
               </p>
             </td>
           </tr>

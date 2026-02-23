@@ -54,6 +54,8 @@ function TrainingPageContent() {
   const [showSetComplete, setShowSetComplete] = useState(false);
   const [showResetConfirm, setShowResetConfirm] = useState(false);
   const [prevCorrectCount, setPrevCorrectCount] = useState(training.totalCorrectAllTime);
+  const [showJohnMessage, setShowJohnMessage] = useState(false);
+  const [prevQuestionsAnsweredCount, setPrevQuestionsAnsweredCount] = useState(training.questionsAnswered.length);
 
   // Get current set progress
   const setProgress = isSetMode ? getTrainingSetProgress(setNumber) : null;
@@ -81,6 +83,20 @@ function TrainingPageContent() {
     }
     setPrevCorrectCount(training.totalCorrectAllTime);
   }, [training.totalCorrectAllTime, prevCorrectCount, isSetMode]);
+
+  // Show John's personal message every 25 training questions
+  useEffect(() => {
+    const currentCount = training.questionsAnswered.length;
+    if (
+      !isSetMode &&
+      currentCount > 0 &&
+      currentCount % 25 === 0 &&
+      currentCount > prevQuestionsAnsweredCount
+    ) {
+      setShowJohnMessage(true);
+    }
+    setPrevQuestionsAnsweredCount(currentCount);
+  }, [training.questionsAnswered.length, prevQuestionsAnsweredCount, isSetMode]);
 
   const handleFireworksComplete = () => {
     setShowFireworks(false);
@@ -205,6 +221,38 @@ function TrainingPageContent() {
       {/* Fireworks Animation */}
       {showFireworks && (
         <Fireworks duration={3000} onComplete={handleFireworksComplete} />
+      )}
+
+      {/* John's Personal Message Modal — every 25 training questions */}
+      {showJohnMessage && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm animate-in fade-in duration-300">
+          <div className="bg-white rounded-2xl p-8 mx-4 max-w-md text-center shadow-2xl animate-in zoom-in-95 duration-300">
+            <div className="mb-4 text-4xl">🐯</div>
+            <p className="text-xs font-semibold text-brand uppercase tracking-widest mb-2">A note from John at TigerTest</p>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+              You&apos;re doing great — now test yourself.
+            </h2>
+            <p className="text-gray-600 mb-6 leading-relaxed">
+              Hey! Training questions are a brilliant way to learn, but practice tests are where it really clicks.
+              They replicate the actual DMV exam — same format, same pressure. That&apos;s what builds real confidence on test day.
+              You&apos;ve put in the work. Go take the test. 💪
+            </p>
+            <div className="flex flex-col gap-3">
+              <Link href="/test/1" onClick={() => setShowJohnMessage(false)}>
+                <Button className="w-full bg-brand hover:bg-brand-dark text-white font-semibold py-3 text-base">
+                  Take Practice Test 1 →
+                </Button>
+              </Link>
+              <Button
+                variant="ghost"
+                className="w-full text-gray-500 hover:text-gray-700"
+                onClick={() => setShowJohnMessage(false)}
+              >
+                Keep training
+              </Button>
+            </div>
+          </div>
+        </div>
       )}
 
       {/* Onboarding Celebration Modal */}

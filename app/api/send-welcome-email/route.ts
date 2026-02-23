@@ -29,13 +29,13 @@ const welcomeTemplate = `<!DOCTYPE html>
                 {{greeting}}
               </p>
               <p style="margin: 0 0 20px; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
-                Welcome to TigerTest.
+                Fear not — hundreds of people have used TigerTest to pass their DMV test. And the ones who pass on their first try all have one thing in common: they actually tested themselves.
               </p>
               <p style="margin: 0 0 20px; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
-                Trust us - <strong style="font-weight: 600;">the best way to prep is to spend 30 minutes doing practice tests</strong>. Set some time aside. Practice actually answering questions one after the other where you don't get instant feedback on whether you're right or wrong.
+                <strong style="font-weight: 600;">The best way to prep is to spend 30 minutes doing practice tests.</strong> Answer questions one after the other, without instant feedback — that's exactly what the real test feels like.
               </p>
               <p style="margin: 0 0 20px; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
-                That's what the real test feels like. And after 50 questions, you'll get a really accurate idea of how ready you are.
+                After 50 questions, you'll have a really accurate picture of how ready you are.
               </p>
               <table role="presentation" style="margin: 32px 0; border-collapse: collapse;">
                 <tr>

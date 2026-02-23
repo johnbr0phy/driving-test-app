@@ -2251,7 +2251,7 @@
     "optionD": "17 years old",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "This is the correct answer based on AK driving laws."
+    "explanation": "Alaska allows teens to start driving as early as age 14 with an instruction permit \u2014 one of the youngest eligibility ages in the country, reflecting the state's vast rural distances and early independence needs."
   },
   {
     "type": "State-Specific",
@@ -2265,7 +2265,7 @@
     "optionD": "12 months",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "This is the correct answer based on AK driving laws."
+    "explanation": "Alaska requires permit holders to gain at least 6 months of supervised driving experience before applying for a provisional license, ensuring new drivers build foundational skills over time."
   },
   {
     "type": "State-Specific",
@@ -2279,7 +2279,7 @@
     "optionD": "50 hours",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "This is the correct answer based on AK driving laws."
+    "explanation": "Alaska mandates 40 hours of supervised driving practice before a provisional license \u2014 more than many states \u2014 because road conditions, weather, and wildlife hazards demand well-prepared drivers."
   },
   {
     "type": "State-Specific",
@@ -2293,7 +2293,7 @@
     "optionD": "10 hours",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "This is the correct answer based on AK driving laws."
+    "explanation": "Of the required 40 practice hours, 10 must be in challenging conditions such as nighttime driving or inclement weather, preparing teens for the realities of driving in Alaska's extreme environment."
   },
   {
     "type": "State-Specific",
@@ -2307,7 +2307,7 @@
     "optionD": "23 years old",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "This is the correct answer based on AK driving laws."
+    "explanation": "Alaska requires the supervising adult to be at least 21 years old \u2014 not just any licensed driver \u2014 to ensure the mentor has sufficient experience to guide a new driver safely."
   },
   {
     "type": "State-Specific",
@@ -2321,7 +2321,7 @@
     "optionD": "11 PM to 5 AM",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "This is the correct answer based on AK driving laws."
+    "explanation": "Alaska's provisional license curfew runs from 1 AM to 5 AM, during which the young driver must be accompanied by a licensed adult aged 21 or older. Driving alone is not permitted during those hours."
   },
   {
     "type": "State-Specific",
@@ -2335,7 +2335,7 @@
     "optionD": "No one",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "This is the correct answer based on AK driving laws."
+    "explanation": "Alaska's provisional license rules restrict passengers to siblings only \u2014 not friends \u2014 making the passenger restriction stricter than most states to reduce peer distraction during the early months of solo driving."
   },
   {
     "type": "State-Specific",
@@ -2349,7 +2349,7 @@
     "optionD": "18 years old",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "This is the correct answer based on AK driving laws."
+    "explanation": "Alaska drivers can obtain a full, unrestricted license at age 18 after completing all GDL stages, including holding a provisional license for the required period."
   },
   {
     "type": "State-Specific",
@@ -2363,7 +2363,7 @@
     "optionD": "12 months",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "This is the correct answer based on AK driving laws."
+    "explanation": "After earning a provisional license, Alaska drivers under 18 must hold it for at least 6 months before upgrading to a full license, giving them more supervised experience before full privileges."
   },
   {
     "type": "State-Specific",
@@ -2377,7 +2377,7 @@
     "optionD": "No consequences apply",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "This is the correct answer based on AK driving laws."
+    "explanation": "A traffic violation conviction during the provisional period resets the clock \u2014 the driver must wait an additional six months before upgrading, incentivizing safe driving habits from the start."
   },
   {
     "type": "State-Specific",
@@ -2391,7 +2391,7 @@
     "optionD": "3 years",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "This is the correct answer based on AK driving laws."
+    "explanation": "Alaska instruction permits are valid for 2 years, giving teens plenty of time to accumulate the required 40 supervised hours without feeling rushed to take the road skills test."
   },
   {
     "type": "State-Specific",
@@ -2405,7 +2405,7 @@
     "optionD": "Off-Highway license",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "This is the correct answer based on AK driving laws."
+    "explanation": "Alaska offers an Off-Highway license for rural residents aged 16 who have no access to a road skills testing site. It restricts driving to unpaved roads and off-highway routes near the driver's community."
   },
   {
     "type": "State-Specific",
@@ -2419,7 +2419,7 @@
     "optionD": "Only in school zones",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "This is the correct answer based on AK driving laws."
+    "explanation": "In Alaska, texting is only prohibited while the vehicle is in motion. A driver stopped at a red light is technically not prohibited from texting, though it is strongly discouraged."
   },
   {
     "type": "State-Specific",
@@ -2433,7 +2433,7 @@
     "optionD": "No phone use permitted",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "This is the correct answer based on AK driving laws."
+    "explanation": "Alaska permits voice calls and hands-free device use while driving. Only handheld texting while in motion is explicitly banned \u2014 phone calls via handset are not prohibited for adult drivers."
   },
   {
     "type": "State-Specific",
@@ -2447,7 +2447,7 @@
     "optionD": "Listening to audio devices",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "This is the correct answer based on AK driving laws."
+    "explanation": "Alaska prohibits any screen visible to the driver while the vehicle is in motion \u2014 this covers entertainment displays, video content, and similar distractions, though GPS navigation is generally permitted."
   },
   {
     "type": "State-Specific",
@@ -2461,7 +2461,7 @@
     "optionD": "Yes, vehicle not in motion",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "This is the correct answer based on AK driving laws."
+    "explanation": "Because Alaska's texting ban applies only when the vehicle is in motion, texting at a red light where the vehicle is not moving is technically legal \u2014 though still a serious distraction risk."
   },
   {
     "type": "State-Specific",
@@ -2475,7 +2475,7 @@
     "optionD": "Email notifications",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "This is the correct answer based on AK driving laws."
+    "explanation": "Alaska law limits what can be displayed on a phone while driving \u2014 only caller ID information is permitted. Viewing texts, social media, or other content on the screen while moving is prohibited."
   },
   {
     "type": "State-Specific",
@@ -2489,7 +2489,7 @@
     "optionD": "Civil violation",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "This is the correct answer based on AK driving laws."
+    "explanation": "Alaska treats distracted driving very seriously: if distracted driving causes another person's death, the offense is elevated to a Class A felony \u2014 one of the most serious criminal classifications in the state."
   },
   {
     "type": "State-Specific",
@@ -2503,7 +2503,7 @@
     "optionD": "0.06%",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "This is the correct answer based on AK driving laws."
+    "explanation": "The standard BAC limit for adult drivers in Alaska is 0.08%, consistent with the federal standard adopted by all U.S. states. Drivers at or above this level are legally impaired."
   },
   {
     "type": "State-Specific",
@@ -2517,7 +2517,7 @@
     "optionD": "0.15% or higher",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "This is the correct answer based on AK driving laws."
+    "explanation": "Alaska has an aggravated DUI threshold of 0.15% BAC or higher. Drivers at this level face enhanced penalties beyond a standard DUI, including longer license suspensions and mandatory treatment programs."
   },
   {
     "type": "State-Specific",
@@ -2531,7 +2531,7 @@
     "optionD": "Only commercial drivers consent",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "This is the correct answer based on AK driving laws."
+    "explanation": "Under Alaska's implied consent law, anyone who drives on public roads has already consented to chemical testing (breath, blood, or urine) if a law enforcement officer lawfully arrests them for DUI."
   },
   {
     "type": "State-Specific",
@@ -2545,7 +2545,7 @@
     "optionD": "No consequences result",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "This is the correct answer based on AK driving laws."
+    "explanation": "Refusing a chemical test in Alaska carries penalties equal to those of a DUI conviction \u2014 there is no benefit to refusing, as the refusal itself results in license suspension and other consequences."
   },
   {
     "type": "State-Specific",
@@ -2559,7 +2559,7 @@
     "optionD": "0.08%",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "This is the correct answer based on AK driving laws."
+    "explanation": "Alaska sets a stricter BAC limit of 0.04% for commercial drivers \u2014 half the standard adult threshold \u2014 because commercial vehicles such as trucks and buses pose far greater risks when operated impaired."
   },
   {
     "type": "State-Specific",
@@ -2573,7 +2573,7 @@
     "optionD": "Zero tolerance",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "This is the correct answer based on AK driving laws."
+    "explanation": "Alaska has a zero-tolerance policy for underage drivers: any detectable amount of alcohol in the system of a driver under 21 is grounds for a DUI charge and license suspension."
   },
   {
     "type": "State-Specific",
@@ -2587,7 +2587,7 @@
     "optionD": "2 years",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "This is the correct answer based on AK driving laws."
+    "explanation": "A first DUI conviction in Alaska results in a mandatory 90-day license suspension, along with fines and possible jail time \u2014 consequences that escalate significantly with repeat offenses."
   },
   {
     "type": "State-Specific",
@@ -2601,7 +2601,7 @@
     "optionD": "24 months",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "This is the correct answer based on AK driving laws."
+    "explanation": "After a first DUI conviction, Alaska requires the driver to install an ignition interlock device for 12 months. This device prevents the vehicle from starting if alcohol is detected on the driver's breath."
   },
   {
     "type": "State-Specific",
@@ -2615,7 +2615,7 @@
     "optionD": "All damages any fault",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "This is the correct answer based on AK driving laws."
+    "explanation": "Liability insurance in Alaska covers costs you cause to others \u2014 their medical expenses and property damage \u2014 not your own vehicle or injuries. It is required to protect other road users."
   },
   {
     "type": "State-Specific",
@@ -2629,7 +2629,7 @@
     "optionD": "$50,000",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Alaska requires a minimum of $25,000 in property damage liability coverage."
+    "explanation": "Alaska requires a minimum of $25,000 in property damage liability coverage to compensate others for vehicle or property damage you cause in an at-fault accident."
   },
   {
     "type": "State-Specific",
@@ -2643,7 +2643,7 @@
     "optionD": "Video recording only",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "This is the correct answer based on AK driving laws."
+    "explanation": "Alaska accepts both paper and digital proof of insurance, so drivers can show an insurance card on their phone's screen during a traffic stop without needing a printed document."
   },
   {
     "type": "State-Specific",
@@ -2657,7 +2657,7 @@
     "optionD": "No consequences result",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "This is the correct answer based on AK driving laws."
+    "explanation": "In Anchorage and other parts of Alaska, failure to provide proof of insurance can result in your vehicle being impounded \u2014 a significant consequence designed to enforce the mandatory insurance requirement."
   },
   {
     "type": "State-Specific",
@@ -2671,7 +2671,7 @@
     "optionD": "May through August only",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "This is the correct answer based on AK driving laws."
+    "explanation": "In most of Alaska south of 60 degrees North latitude, studded tires are prohibited from April 15 through September 30 to prevent unnecessary pavement damage during dry months. Northern areas have different rules."
   },
   {
     "type": "State-Specific",
@@ -2685,7 +2685,7 @@
     "optionD": "When visibility is less than 1000 feet",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "This is the correct answer based on AK driving laws."
+    "explanation": "Alaska requires headlights when visibility drops below 1,000 feet \u2014 a practical standard given Alaska's frequent fog, heavy rain, blizzards, and the extreme lighting conditions near the Arctic Circle."
   },
   {
     "type": "State-Specific",
@@ -2699,7 +2699,7 @@
     "optionD": "Take photos immediately",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "This is the correct answer based on AK driving laws."
+    "explanation": "After hitting a moose, you must pull over immediately and call police \u2014 both to report the collision and because moose are state property in Alaska, and the carcass must be reported."
   },
   {
     "type": "State-Specific",
@@ -2713,7 +2713,7 @@
     "optionD": "Afternoon rush hours",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "This is the correct answer based on AK driving laws."
+    "explanation": "Moose-vehicle collisions are most common at dusk, dawn, and nighttime when moose are most active and drivers have reduced visibility. Alaska has more moose per capita than any other state."
   },
   {
     "type": "State-Specific",
@@ -2727,7 +2727,7 @@
     "optionD": "You receive a warning only",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "This is the correct answer based on AK driving laws."
+    "explanation": "Alaska law requires slow drivers to pull over and let faster vehicles pass when five or more vehicles have backed up behind them. Holding up traffic unnecessarily is a moving violation."
   },
   {
     "type": "State-Specific",
@@ -2741,7 +2741,7 @@
     "optionD": "30 minutes after/before",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "This is the correct answer based on AK driving laws."
+    "explanation": "Alaska requires headlights to be turned on 30 minutes after sunset and kept on until 30 minutes before sunrise, ensuring visibility during the twilight periods when lighting conditions are most deceptive."
   },
   {
     "type": "State-Specific",
@@ -2755,7 +2755,7 @@
     "optionD": "Parking lights",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "This is the correct answer based on AK driving laws."
+    "explanation": "High beams illuminate a greater distance and allow drivers to spot wildlife \u2014 including moose, bear, and caribou \u2014 earlier on Alaska's dark, rural roads, providing more time to stop safely."
   },
   {
     "type": "State-Specific",
@@ -2769,7 +2769,7 @@
     "optionD": "You may damage evidence",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "This is the correct answer based on AK driving laws."
+    "explanation": "A moose that has been struck is often injured and unpredictable \u2014 wounded moose are extremely dangerous and may charge. Approaching one is hazardous and should always be avoided."
   },
   {
     "type": "State-Specific",
@@ -2783,7 +2783,7 @@
     "optionD": "Only needed after dark",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "This is the correct answer based on AK driving laws."
+    "explanation": "Certain Alaska highways, including the Seward Highway, require headlights to be on at all times regardless of lighting conditions. These designations exist because of the road's historically high accident rate."
   },
   {
     "type": "State-Specific",
@@ -2797,7 +2797,7 @@
     "optionD": "Approved by state DPS",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "This is the correct answer based on AK driving laws."
+    "explanation": "Alaska requires all winter tires \u2014 studded or non-studded \u2014 to be approved by the state Department of Public Safety (DPS), ensuring they meet safety and performance standards suitable for Alaska's conditions."
   },
   {
     "type": "State-Specific",

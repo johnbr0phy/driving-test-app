@@ -254,6 +254,14 @@ export const es: TranslationKeys = {
     sharing: "Compartiendo...",
     shareError: "Error al compartir",
     tryAgain: "Intentar de nuevo",
+    nextTestHeadingPass: "¡Sigue con el impulso!",
+    nextTestHeadingFail: "Prueba un nuevo conjunto de preguntas",
+    nextTestSubPass: "El Examen {{n}} tiene 50 preguntas completamente nuevas. Más práctica = mejores posibilidades.",
+    nextTestSubFail: "El Examen {{n}} tiene preguntas diferentes — otra oportunidad para que todo tenga sentido.",
+    nextTestUnlockHeading: "Un examen más por hacer",
+    nextTestUnlockSub: "El Examen 4 es premium — 50 preguntas más para asegurar tu puntuación antes del examen real.",
+    nextTestButton: "Probar Examen {{n}} →",
+    nextTestUnlockButton: "Desbloquear Examen 4 →",
   },
 
   // Settings page

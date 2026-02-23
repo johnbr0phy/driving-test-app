@@ -187,7 +187,7 @@ export default function TestPage() {
           <div className="flex items-center justify-between mb-4">
             <h1 className="text-3xl font-bold">{t("testCard.test")} {testId}</h1>
             <div className="text-sm text-gray-600">
-              {answeredCount} {t("questionCard.of")} {totalQuestions} {t("testPage.answered")}
+              {canSubmit ? t("testPage.readyToSubmit") : `${totalQuestions - answeredCount} ${t("testPage.questionsRemaining")}`}
             </div>
           </div>
 
@@ -196,9 +196,6 @@ export default function TestPage() {
             <Progress value={progress} className="h-2 [&>div]:bg-brand" />
             <div className="flex justify-between text-xs text-gray-600">
               <span>{t("testPage.progress")}: {Math.round(progress)}%</span>
-              <span>
-                {canSubmit ? t("testPage.readyToSubmit") : `${totalQuestions - answeredCount} ${t("testPage.questionsRemaining")}`}
-              </span>
             </div>
           </div>
         </div>

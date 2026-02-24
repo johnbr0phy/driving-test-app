@@ -12,19 +12,21 @@ const PREMIUM_ITEM = {
   quantity: 1,
 };
 
-export function trackViewItem() {
+export function trackViewItem(location?: string) {
   window.gtag?.("event", "view_item", {
     currency: "USD",
     value: 9.99,
     items: [PREMIUM_ITEM],
+    ...(location && { location }),
   });
 }
 
-export function trackBeginCheckout() {
+export function trackBeginCheckout(location?: string) {
   window.gtag?.("event", "begin_checkout", {
     currency: "USD",
     value: 9.99,
     items: [PREMIUM_ITEM],
+    ...(location && { location }),
   });
 }
 

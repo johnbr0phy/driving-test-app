@@ -148,7 +148,7 @@ function DashboardContent() {
 
   // Handle paywall click
   const handlePremiumClick = (feature: "training_set_4" | "practice_test_4") => {
-    trackViewItem();
+    trackViewItem(feature);
     setPaywallFeature(feature);
     setPaywallOpen(true);
   };
@@ -176,6 +176,7 @@ function DashboardContent() {
         body: JSON.stringify({
           email: user.email,
           returnUrl: window.location.origin,
+          location: paywallFeature,
         }),
       });
 
@@ -188,7 +189,7 @@ function DashboardContent() {
       }
 
       if (data.checkoutUrl) {
-        trackBeginCheckout();
+        trackBeginCheckout(paywallFeature);
         window.location.href = data.checkoutUrl;
       } else {
         console.error("No checkout URL returned:", data);

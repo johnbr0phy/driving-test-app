@@ -10,6 +10,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useStore } from "@/store/useStore";
 import { useHydration } from "@/hooks/useHydration";
+import { trackBeginCheckout, trackViewItem } from "@/lib/analytics";
 import { useAuth } from "@/contexts/AuthContext";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { auth } from "@/lib/firebase";
@@ -92,6 +93,7 @@ export default function StatsPage() {
         body: JSON.stringify({
           email: user.email,
           returnUrl: window.location.origin,
+          location: "stats_page",
         }),
       });
 
@@ -104,6 +106,7 @@ export default function StatsPage() {
       }
 
       if (data.checkoutUrl) {
+        trackBeginCheckout("stats_page");
         window.location.href = data.checkoutUrl;
       } else {
         console.error("No checkout URL returned:", data);
@@ -614,7 +617,7 @@ export default function StatsPage() {
                         {t("stats.unlockPremiumStats")}
                       </p>
                       <Button
-                        onClick={() => setPaywallOpen(true)}
+                        onClick={() => { trackViewItem("stats_page"); setPaywallOpen(true); }}
                         className="bg-black text-white hover:bg-gray-800"
                       >
                         {t("common.unlockWithPremium")}
@@ -891,7 +894,7 @@ export default function StatsPage() {
                       {t("stats.unlockPremiumStats")}
                     </p>
                     <Button
-                      onClick={() => setPaywallOpen(true)}
+                      onClick={() => { trackViewItem("stats_page"); setPaywallOpen(true); }}
                       className="bg-black text-white hover:bg-gray-800"
                     >
                       {t("common.unlockWithPremium")}

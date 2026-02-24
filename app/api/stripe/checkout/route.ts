@@ -21,7 +21,7 @@ export async function POST(request: NextRequest) {
     const decodedToken = await getAdminAuth().verifyIdToken(token);
 
     const body = await request.json();
-    const { email, returnUrl } = body;
+    const { email, returnUrl, location } = body;
     const userId = decodedToken.uid;
 
     // Validate required fields
@@ -94,6 +94,7 @@ export async function POST(request: NextRequest) {
       metadata: {
         userId,
         email,
+        ...(location && { location }),
       },
     });
 

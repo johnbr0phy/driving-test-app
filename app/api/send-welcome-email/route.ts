@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
-import { getAdminDb } from "@/lib/firebase-admin";
+import { getAdminDb, getAdminAuth } from "@/lib/firebase-admin";
 import { FieldValue } from "firebase-admin/firestore";
 
 const resend = new Resend(process.env.RESEND_API_KEY || "re_ZABm3to6_GzdZQQ58cj5DYftGbtr9ub1a");
@@ -41,6 +41,11 @@ const welcomeTemplate = `<!DOCTYPE html>
                 <tr>
                   <td align="center">
                     <a href="https://tigertest.io/dashboard?utm_source=tigertest&utm_medium=email&utm_campaign=welcome" style="display: inline-block; padding: 14px 28px; background-color: #1a1a1a; color: #ffffff; text-decoration: none; border-radius: 50px; font-weight: 500; font-size: 15px;">Take Your First Practice Test</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" style="padding-top: 16px;">
+                    <a href="{{verifyLink}}" style="color: #FF6B35; font-size: 13px; text-decoration: underline;">Verify your email address →</a>
                   </td>
                 </tr>
               </table>
@@ -97,9 +102,19 @@ export async function POST(request: NextRequest) {
     const greeting = displayName ? `Hey ${displayName},` : "Hey there,";
     const unsubscribeToken = Buffer.from(userId).toString("base64");
 
+    // Generate Firebase email verification link server-side
+    // so we can embed it in the welcome email instead of sending a separate plain-text one
+    let verifyLink = "https://tigertest.io/dashboard";
+    try {
+      verifyLink = await getAdminAuth().generateEmailVerificationLink(email);
+    } catch (err) {
+      console.error("Failed to generate verification link:", err);
+    }
+
     const html = welcomeTemplate
       .replace(/{{greeting}}/g, greeting)
-      .replace(/{{unsubscribeToken}}/g, unsubscribeToken);
+      .replace(/{{unsubscribeToken}}/g, unsubscribeToken)
+      .replace(/{{verifyLink}}/g, verifyLink);
 
     await resend.emails.send({
       from: "TigerTest <noreply@tigertest.io>",

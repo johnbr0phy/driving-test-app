@@ -10,7 +10,6 @@ import {
   GoogleAuthProvider,
   signInWithPopup,
   sendPasswordResetEmail,
-  sendEmailVerification,
 } from "firebase/auth";
 import { auth } from "@/lib/firebase";
 import { useStore } from "@/store/useStore";
@@ -131,12 +130,9 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   }, [loadUserData, setUserId, setPhotoURL, photoURL, convertGuestToUser, checkUserHasData]);
 
   const signup = async (email: string, password: string) => {
-    const userCredential = await createUserWithEmailAndPassword(auth, email, password);
-
-    // Send verification email (acts as welcome email)
-    if (userCredential.user) {
-      sendEmailVerification(userCredential.user).catch(err => console.error('Failed to send verification email:', err));
-    }
+    await createUserWithEmailAndPassword(auth, email, password);
+    // Verification link is now embedded in the HTML welcome email (send-welcome-email route)
+    // so we no longer call sendEmailVerification() here
   };
 
   const login = async (email: string, password: string) => {

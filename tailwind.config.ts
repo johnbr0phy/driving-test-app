@@ -70,6 +70,15 @@ export default {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      animation: {
+        "pulse-subtle": "pulse-subtle 2.5s ease-in-out infinite",
+      },
+      keyframes: {
+        "pulse-subtle": {
+          "0%, 100%": { boxShadow: "0 0 0 0 rgba(74, 222, 128, 0.4)" },
+          "50%": { boxShadow: "0 0 0 4px rgba(74, 222, 128, 0)" },
+        },
+      },
     },
   },
   plugins: [],

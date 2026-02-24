@@ -391,6 +391,13 @@ function DashboardContent() {
               const attemptStats = getTestAttemptStats(testNumber);
               const isPremiumLocked = testNumber === 4 && !isPremium && onboardingComplete;
               const locked = !onboardingComplete;
+              const readyToTest = testNumber === 1
+                && hydrated
+                && onboardingComplete
+                && !isGuest
+                && !locked
+                && status === "not-started"
+                && training.totalCorrectAllTime >= 5;
               return (
                 <TestCard
                   key={testNumber}
@@ -403,6 +410,7 @@ function DashboardContent() {
                   locked={locked}
                   isPremiumLocked={isPremiumLocked}
                   onPremiumClick={() => handlePremiumClick("practice_test_4")}
+                  readyToTest={readyToTest}
                 />
               );
             })}

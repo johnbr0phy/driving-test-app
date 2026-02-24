@@ -40,7 +40,7 @@ const welcomeTemplate = `<!DOCTYPE html>
               <table role="presentation" style="margin: 32px 0; border-collapse: collapse;">
                 <tr>
                   <td align="center">
-                    <a href="https://tigertest.io/dashboard" style="display: inline-block; padding: 14px 28px; background-color: #1a1a1a; color: #ffffff; text-decoration: none; border-radius: 50px; font-weight: 500; font-size: 15px;">Take Your First Practice Test</a>
+                    <a href="https://tigertest.io/dashboard?utm_source=tigertest&utm_medium=email&utm_campaign=welcome" style="display: inline-block; padding: 14px 28px; background-color: #1a1a1a; color: #ffffff; text-decoration: none; border-radius: 50px; font-weight: 500; font-size: 15px;">Take Your First Practice Test</a>
                   </td>
                 </tr>
               </table>

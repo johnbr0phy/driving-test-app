@@ -45,7 +45,7 @@ const templates = {
               <table role="presentation" style="margin: 32px 0; border-collapse: collapse;">
                 <tr>
                   <td align="center">
-                    <a href="https://tigertest.io/dashboard" style="display: inline-block; padding: 14px 28px; background-color: #1a1a1a; color: #ffffff; text-decoration: none; border-radius: 50px; font-weight: 500; font-size: 15px;">Take Your First Practice Test</a>
+                    <a href="https://tigertest.io/dashboard?utm_source=tigertest&utm_medium=email&utm_campaign=welcome" style="display: inline-block; padding: 14px 28px; background-color: #1a1a1a; color: #ffffff; text-decoration: none; border-radius: 50px; font-weight: 500; font-size: 15px;">Take Your First Practice Test</a>
                   </td>
                 </tr>
               </table>
@@ -109,7 +109,7 @@ const templates = {
               <table role="presentation" style="margin: 32px 0; border-collapse: collapse;">
                 <tr>
                   <td align="center">
-                    <a href="https://tigertest.io/dashboard" style="display: inline-block; padding: 14px 28px; background-color: #1a1a1a; color: #ffffff; text-decoration: none; border-radius: 50px; font-weight: 500; font-size: 15px;">Start Practice Test</a>
+                    <a href="https://tigertest.io/dashboard?utm_source=tigertest&utm_medium=email&utm_campaign=first_test_reminder" style="display: inline-block; padding: 14px 28px; background-color: #1a1a1a; color: #ffffff; text-decoration: none; border-radius: 50px; font-weight: 500; font-size: 15px;">Start Practice Test</a>
                   </td>
                 </tr>
               </table>
@@ -161,7 +161,7 @@ const templates = {
                 Nice work finishing your first practice test.
               </p>
               <p style="margin: 0 0 20px; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
-                Want to see what you got wrong? <a href="https://tigertest.io/stats" style="color: #FF6B35; text-decoration: none; font-weight: 500;">Check your stats</a> - it breaks down which question types you're struggling with.
+                Want to see what you got wrong? <a href="https://tigertest.io/stats?utm_source=tigertest&utm_medium=email&utm_campaign=second_test_nudge" style="color: #FF6B35; text-decoration: none; font-weight: 500;">Check your stats</a> - it breaks down which question types you're struggling with.
               </p>
               <p style="margin: 0 0 20px; color: #4a4a4a; font-size: 15px; line-height: 1.7; font-weight: 600;">
                 Here's what matters now: take another one.
@@ -175,7 +175,7 @@ const templates = {
               <table role="presentation" style="margin: 32px 0; border-collapse: collapse;">
                 <tr>
                   <td align="center">
-                    <a href="https://tigertest.io/dashboard" style="display: inline-block; padding: 14px 28px; background-color: #1a1a1a; color: #ffffff; text-decoration: none; border-radius: 50px; font-weight: 500; font-size: 15px;">Take Another Practice Test</a>
+                    <a href="https://tigertest.io/dashboard?utm_source=tigertest&utm_medium=email&utm_campaign=second_test_nudge" style="display: inline-block; padding: 14px 28px; background-color: #1a1a1a; color: #ffffff; text-decoration: none; border-radius: 50px; font-weight: 500; font-size: 15px;">Take Another Practice Test</a>
                   </td>
                 </tr>
               </table>
@@ -243,7 +243,7 @@ const templates = {
               <table role="presentation" style="margin: 32px 0; border-collapse: collapse;">
                 <tr>
                   <td align="center">
-                    <a href="https://tigertest.io/dashboard" style="display: inline-block; padding: 14px 28px; background-color: #1a1a1a; color: #ffffff; text-decoration: none; border-radius: 50px; font-weight: 500; font-size: 15px;">Upgrade to Premium - $9.99</a>
+                    <a href="https://tigertest.io/dashboard?utm_source=tigertest&utm_medium=email&utm_campaign=upgrade_pitch" style="display: inline-block; padding: 14px 28px; background-color: #1a1a1a; color: #ffffff; text-decoration: none; border-radius: 50px; font-weight: 500; font-size: 15px;">Upgrade to Premium - $9.99</a>
                   </td>
                 </tr>
               </table>
@@ -303,12 +303,12 @@ const templates = {
               <table role="presentation" style="margin: 32px 0; border-collapse: collapse;">
                 <tr>
                   <td align="center">
-                    <a href="https://tigertest.io/dashboard" style="display: inline-block; padding: 14px 28px; background-color: #1a1a1a; color: #ffffff; text-decoration: none; border-radius: 50px; font-weight: 500; font-size: 15px;">Continue Practicing</a>
+                    <a href="https://tigertest.io/dashboard?utm_source=tigertest&utm_medium=email&utm_campaign=reengagement" style="display: inline-block; padding: 14px 28px; background-color: #1a1a1a; color: #ffffff; text-decoration: none; border-radius: 50px; font-weight: 500; font-size: 15px;">Continue Practicing</a>
                   </td>
                 </tr>
               </table>
               <p style="margin: 0 0 20px; color: #4a4a4a; font-size: 15px; line-height: 1.7; text-align: center;">
-                or <a href="https://tigertest.io/stats" style="color: #FF6B35; text-decoration: none; font-weight: 500;">review your stats</a> to see where you left off
+                or <a href="https://tigertest.io/stats?utm_source=tigertest&utm_medium=email&utm_campaign=reengagement" style="color: #FF6B35; text-decoration: none; font-weight: 500;">review your stats</a> to see where you left off
               </p>
               <p style="margin: 24px 0 0; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
                 Good luck,<br>

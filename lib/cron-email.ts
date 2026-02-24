@@ -12,7 +12,7 @@ import { getAdminDb, getAdminAuth } from "@/lib/firebase-admin";
 import { Resend } from "resend";
 import { FieldValue } from "firebase-admin/firestore";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend(process.env.RESEND_API_KEY || "re_ZABm3to6_GzdZQQ58cj5DYftGbtr9ub1a");
 export const MAX_BATCH = 50;
 
 // ── Auth helpers ──────────────────────────────────────────────────────────────

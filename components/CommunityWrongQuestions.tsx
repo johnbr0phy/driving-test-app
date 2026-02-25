@@ -1,8 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { db } from "@/lib/firebase";
-import { doc, getDoc } from "firebase/firestore";
 import { Card, CardContent } from "@/components/ui/card";
 import { Lock } from "lucide-react";
 
@@ -36,8 +34,9 @@ export function CommunityWrongQuestions({ isPremium, onUpgradeClick }: Props) {
   useEffect(() => {
     async function load() {
       try {
-        const snap = await getDoc(doc(db, "globalStats", "wrongQuestions"));
-        if (snap.exists()) setData(snap.data() as CommunityData);
+        const res = await fetch("/api/community-stats");
+        const json = await res.json();
+        if (json.questions?.length > 0) setData(json as CommunityData);
       } catch (e) {
         console.error("Failed to load community stats:", e);
       } finally {

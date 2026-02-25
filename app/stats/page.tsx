@@ -642,23 +642,23 @@ export default function StatsPage() {
                       </Card>
                     ))}
                   </div>
-                  <div className="absolute inset-0 flex flex-col items-center justify-center bg-white/60">
+                  <div className="absolute inset-0 flex flex-col items-center justify-center bg-white/70">
                     <div className="text-center px-4">
-                      <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-brand-light mb-3">
-                        <Lock className="h-6 w-6 text-brand" />
+                      <div className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-brand-light mb-3">
+                        <Lock className="h-4 w-4 text-brand" />
                       </div>
-                      <h3 className="text-lg font-bold text-gray-900 mb-1">
+                      <p className="text-sm font-semibold text-gray-900 mb-1">
                         {sortedQuestions.length - FREE_QUESTION_LIMIT} {t("stats.moreQuestions")}
-                      </h3>
-                      <p className="text-sm text-gray-600 mb-4">
+                      </p>
+                      <p className="text-xs text-gray-500 mb-3">
                         {t("stats.unlockPremiumStats")}
                       </p>
-                      <Button
+                      <button
                         onClick={() => { trackViewItem("stats_page"); setPaywallOpen(true); }}
-                        className="bg-black text-white hover:bg-gray-800"
+                        className="inline-flex items-center px-4 py-2 bg-brand text-white text-sm font-medium rounded-full hover:bg-brand-hover transition-colors"
                       >
-                        {t("common.unlockWithPremium")}
-                      </Button>
+                        Unlock Premium — $9.99
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -919,23 +919,23 @@ export default function StatsPage() {
                     </tbody>
                   </table>
                 </div>
-                <div className="absolute inset-0 flex flex-col items-center justify-center bg-white/60">
+                <div className="absolute inset-0 flex flex-col items-center justify-center bg-white/70">
                   <div className="text-center">
-                    <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-brand-light mb-3">
-                      <Lock className="h-6 w-6 text-brand" />
+                    <div className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-brand-light mb-3">
+                      <Lock className="h-4 w-4 text-brand" />
                     </div>
-                    <h3 className="text-lg font-bold text-gray-900 mb-1">
+                    <p className="text-sm font-semibold text-gray-900 mb-1">
                       {sortedQuestions.length - FREE_QUESTION_LIMIT} {t("stats.moreQuestions")}
-                    </h3>
-                    <p className="text-sm text-gray-600 mb-4">
+                    </p>
+                    <p className="text-xs text-gray-500 mb-3">
                       {t("stats.unlockPremiumStats")}
                     </p>
-                    <Button
+                    <button
                       onClick={() => { trackViewItem("stats_page"); setPaywallOpen(true); }}
-                      className="bg-black text-white hover:bg-gray-800"
+                      className="inline-flex items-center px-4 py-2 bg-brand text-white text-sm font-medium rounded-full hover:bg-brand-hover transition-colors"
                     >
-                      {t("common.unlockWithPremium")}
-                    </Button>
+                      Unlock Premium — $9.99
+                    </button>
                   </div>
                 </div>
               </div>

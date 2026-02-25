@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Lock } from "lucide-react";
+import { useTranslation } from "@/contexts/LanguageContext";
 
 interface WrongQuestion {
   questionId: string;
@@ -28,6 +29,7 @@ interface Props {
 }
 
 export function CommunityWrongQuestions({ isPremium, onUpgradeClick }: Props) {
+  const { t } = useTranslation();
   const [data, setData] = useState<CommunityData | null>(null);
   const [loading, setLoading] = useState(true);
 
@@ -59,7 +61,7 @@ export function CommunityWrongQuestions({ isPremium, onUpgradeClick }: Props) {
   if (!data || data.questions.length === 0) {
     return (
       <p className="text-gray-400 text-sm text-center py-8">
-        Not enough data yet — check back soon.
+        {t("stats.notEnoughData")}
       </p>
     );
   }
@@ -72,8 +74,8 @@ export function CommunityWrongQuestions({ isPremium, onUpgradeClick }: Props) {
   return (
     <div className="space-y-4">
       <p className="text-sm text-gray-500">
-        Based on answers from{" "}
-        <span className="font-medium text-gray-700">{data.totalUsers.toLocaleString()} real test takers</span>
+        {t("stats.basedOnAnswers")}{" "}
+        <span className="font-medium text-gray-700">{data.totalUsers.toLocaleString()} {t("stats.realTestTakers")}</span>
       </p>
 
       <div className="space-y-3">
@@ -103,14 +105,14 @@ export function CommunityWrongQuestions({ isPremium, onUpgradeClick }: Props) {
                   />
                 </div>
                 <p className="text-xs text-gray-400 mt-1">
-                  {q.wrong} of {q.total} people got this wrong
+                  {q.wrong} of {q.total} {t("stats.peopleGotWrong")}
                 </p>
               </div>
 
               {/* Correct answer */}
               <div className="ml-7 bg-green-50 border border-green-100 rounded-lg px-3 py-2">
                 <p className="text-xs text-green-700 font-medium mb-0.5">
-                  Correct answer
+                  {t("stats.correctAnswer")}
                 </p>
                 <p className="text-sm text-green-900">{q.correctAnswer}</p>
                 {q.explanation && (
@@ -153,16 +155,16 @@ export function CommunityWrongQuestions({ isPremium, onUpgradeClick }: Props) {
                 <Lock className="h-4 w-4 text-brand" />
               </div>
               <p className="text-sm font-semibold text-gray-900 mb-1">
-                {lockedCount} more questions locked
+                {lockedCount} {t("stats.questionsLocked")}
               </p>
               <p className="text-xs text-gray-500 mb-3">
-                Upgrade to see the full list
+                {t("stats.upgradeToSeeFullList")}
               </p>
               <button
                 onClick={onUpgradeClick}
                 className="inline-flex items-center px-4 py-2 bg-brand text-white text-sm font-medium rounded-full hover:bg-brand-hover transition-colors"
               >
-                Unlock Premium — $9.99
+                {t("common.unlockWithPremium")}
               </button>
             </div>
           </div>

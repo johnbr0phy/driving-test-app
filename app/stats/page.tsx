@@ -450,7 +450,7 @@ export default function StatsPage() {
                 : "text-gray-500 hover:text-gray-700"
             }`}
           >
-            Your Stats
+            {t("stats.yourStats")}
           </button>
           <button
             onClick={() => setActiveTab("community")}
@@ -460,7 +460,7 @@ export default function StatsPage() {
                 : "text-gray-500 hover:text-gray-700"
             }`}
           >
-            Common Mistakes
+            {t("stats.commonMistakes")}
           </button>
         </div>
 

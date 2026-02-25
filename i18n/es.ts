@@ -373,6 +373,15 @@ export const es: TranslationKeys = {
     continueTraining: "Continúa entrenando para mejorar tu puntuación",
     completeAllTrainingSets: "Completa los 4 conjuntos de entrenamiento antes de los exámenes",
     answers: "Respuestas",
+    yourStats: "Tus estadísticas",
+    commonMistakes: "Errores comunes",
+    basedOnAnswers: "Basado en respuestas de",
+    realTestTakers: "examinandos reales",
+    correctAnswer: "Respuesta correcta",
+    peopleGotWrong: "personas fallaron esta pregunta",
+    questionsLocked: "preguntas más bloqueadas",
+    upgradeToSeeFullList: "Actualiza para ver la lista completa",
+    notEnoughData: "Aún no hay suficientes datos — vuelve pronto.",
   },
 
   // Paywall modal

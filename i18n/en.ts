@@ -373,6 +373,15 @@ export const en = {
     continueTraining: "Continue training to improve your score",
     completeAllTrainingSets: "Complete all 4 training sets before taking practice tests",
     answers: "Answers",
+    yourStats: "Your Stats",
+    commonMistakes: "Common Mistakes",
+    basedOnAnswers: "Based on answers from",
+    realTestTakers: "real test takers",
+    correctAnswer: "Correct answer",
+    peopleGotWrong: "people got this wrong",
+    questionsLocked: "more questions locked",
+    upgradeToSeeFullList: "Upgrade to see the full list",
+    notEnoughData: "Not enough data yet — check back soon.",
   },
 
   // Paywall modal

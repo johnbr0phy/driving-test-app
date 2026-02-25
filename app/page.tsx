@@ -273,7 +273,7 @@ export default function Home() {
           </div>
 
           <div className="bg-gray-50 border border-gray-200 rounded-xl p-6">
-            <p className="text-gray-800 mb-3">&quot;The explanations for right and wrong answers are a really nice touch. The interface is smooth and easy to navigate, unlike other free practice tests. I passed with only two mistakes!&quot;</p>
+            <p className="text-gray-800 mb-3">&quot;The interface is smooth and easy to navigate, unlike other free practice tests. I passed with only two mistakes!&quot;</p>
             <p className="text-gray-500 text-sm">Yzabelle</p>
           </div>
 

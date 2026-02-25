@@ -16,7 +16,6 @@ import { auth } from "@/lib/firebase";
 import { states } from "@/data/states";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { trackBeginCheckout, trackPurchase, trackViewItem } from "@/lib/analytics";
-import { TrainingTestNudge } from "@/components/TrainingTestNudge";
 
 function DashboardContent() {
   const router = useRouter();
@@ -377,14 +376,6 @@ function DashboardContent() {
               })}
             </div>
           </div>
-        )}
-
-        {/* Training → Test Nudge: shown when user has trained but hasn't taken Test 1 yet */}
-        {hydrated && onboardingComplete && !isGuest && training.totalCorrectAllTime >= 5 && getTestStatus(1) === "not-started" && (
-          <TrainingTestNudge
-            trainingCorrectCount={training.totalCorrectAllTime}
-            state={stateName || "DMV"}
-          />
         )}
 
         {/* Practice Tests */}

@@ -18,6 +18,7 @@ import { PaywallModal } from "@/components/PaywallModal";
 import { states } from "@/data/states";
 import { Question } from "@/types";
 import { getQuestionsData } from "@/lib/testGenerator";
+import { CommunityWrongQuestions } from "@/components/CommunityWrongQuestions";
 
 type SortField = "question" | "timesAnswered" | "correct" | "wrong" | "accuracy";
 type SortDirection = "asc" | "desc";
@@ -66,6 +67,7 @@ export default function StatsPage() {
   const isPremium = hydrated ? hasPremiumAccess() : false;
   const FREE_QUESTION_LIMIT = 5;
 
+  const [activeTab, setActiveTab] = useState<"yours" | "community">("yours");
   const [sortField, setSortField] = useState<SortField>("wrong");
   const [sortDirection, setSortDirection] = useState<SortDirection>("desc");
   const [paywallOpen, setPaywallOpen] = useState(false);
@@ -437,6 +439,41 @@ export default function StatsPage() {
             </Card>
           </Link>
         )}
+
+        {/* Tab Navigation */}
+        <div className="flex gap-1 mb-6 bg-gray-100 rounded-xl p-1">
+          <button
+            onClick={() => setActiveTab("yours")}
+            className={`flex-1 text-sm font-medium py-2 px-4 rounded-lg transition-all ${
+              activeTab === "yours"
+                ? "bg-white text-gray-900 shadow-sm"
+                : "text-gray-500 hover:text-gray-700"
+            }`}
+          >
+            Your Stats
+          </button>
+          <button
+            onClick={() => setActiveTab("community")}
+            className={`flex-1 text-sm font-medium py-2 px-4 rounded-lg transition-all ${
+              activeTab === "community"
+                ? "bg-white text-gray-900 shadow-sm"
+                : "text-gray-500 hover:text-gray-700"
+            }`}
+          >
+            Common Mistakes
+          </button>
+        </div>
+
+        {/* Community Tab */}
+        {activeTab === "community" && (
+          <CommunityWrongQuestions
+            isPremium={isPremium}
+            onUpgradeClick={() => { trackViewItem("stats_page"); setPaywallOpen(true); }}
+          />
+        )}
+
+        {/* Your Stats Tab */}
+        {activeTab === "yours" && <>
 
         {/* Mobile Sort Controls */}
         <div className="md:hidden flex items-center gap-2 mb-4 overflow-x-auto pb-2 -mx-4 px-4">
@@ -905,6 +942,8 @@ export default function StatsPage() {
             )}
           </CardContent>
         </Card>
+
+        </>}
       </div>
     </div>
   );

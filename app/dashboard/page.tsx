@@ -16,6 +16,7 @@ import { auth } from "@/lib/firebase";
 import { states } from "@/data/states";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { trackBeginCheckout, trackPurchase, trackViewItem } from "@/lib/analytics";
+import { PostTest1ComebackCard } from "@/components/PostTest1ComebackCard";
 
 function DashboardContent() {
   const router = useRouter();
@@ -377,6 +378,26 @@ function DashboardContent() {
             </div>
           </div>
         )}
+
+        {/* Post-Test Comeback Card: shows when user completed test N but not started test N+1 */}
+        {onboardingComplete && !isGuest && hydrated && (() => {
+          // Find the first "completed test → not-started next test" gap (max test 3 → 4)
+          for (let n = 1; n <= 3; n++) {
+            const session = getTestSession(n);
+            const nextStatus = getTestStatus(n + 1);
+            if (session && session.score !== undefined && nextStatus === "not-started") {
+              return (
+                <PostTest1ComebackCard
+                  key={`comeback-${n}`}
+                  test1Score={session.score}
+                  totalQuestions={session.totalQuestions || 50}
+                  nextTestId={n + 1}
+                />
+              );
+            }
+          }
+          return null;
+        })()}
 
         {/* Practice Tests */}
         <div className="mb-6">

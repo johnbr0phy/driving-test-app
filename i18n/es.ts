@@ -64,6 +64,11 @@ export const es: TranslationKeys = {
     readyToPass: "¿Listo para Aprobar tu Examen de Permiso?",
     freeToStart: "Gratis para empezar. No se requiere cuenta.",
     freeToStartLong: "Gratis para empezar. No se requiere cuenta. 200 preguntas para tu estado.",
+    // Short on time / urgency section
+    urgencyEyebrow: "¿Poco tiempo?",
+    urgencyTitle: "Sabemos qué preguntas todos fallan. Empieza por ahí.",
+    urgencyDesc: "TigerTest Premium te muestra las preguntas que más fallan los candidatos reales — para que si tu examen es en unos días, practiques lo que de verdad importa.",
+    urgencyCTA: "Ver las preguntas más difíciles →",
     testimonial1: "me sentí seguro después de estudiar solo el día anterior",
     testimonial2: "realmente me ayudó a prepararme, y aprobé mi examen hoy",
     testimonial3: "Usé esto para estudiar. ¡Aprobé hoy! Gracias :)",

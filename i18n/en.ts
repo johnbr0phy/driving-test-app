@@ -64,6 +64,11 @@ export const en = {
     readyToPass: "Ready to Pass Your Permit Test?",
     freeToStart: "Free to start. No account required.",
     freeToStartLong: "Free to start. No account required. 200 questions for your state.",
+    // Short on time / urgency section
+    urgencyEyebrow: "Short on time?",
+    urgencyTitle: "We know which questions everyone fails. Start there.",
+    urgencyDesc: "TigerTest Premium shows you the questions real test-takers get wrong most — so if your test is in a few days, you're practicing what actually matters, not random filler.",
+    urgencyCTA: "See the hardest questions →",
     testimonial1: "felt confident after just studying the previous day",
     testimonial2: "it really helped me prepare, and I passed my exam today",
     testimonial3: "Used this to help me study. Passed today! Thank you :)",

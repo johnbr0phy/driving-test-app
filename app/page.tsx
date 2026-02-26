@@ -152,6 +152,27 @@ export default function Home() {
         </div>
       </div>
 
+      {/* Short on time? Urgency / Premium hook */}
+      <div className="bg-brand-light py-14">
+        <div className="max-w-2xl mx-auto px-6 text-center">
+          <p className="text-xs font-semibold uppercase tracking-widest text-brand mb-3">
+            <T k="landing.urgencyEyebrow">Short on time?</T>
+          </p>
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+            <T k="landing.urgencyTitle">We know which questions everyone fails. Start there.</T>
+          </h2>
+          <p className="text-gray-600 mb-8 max-w-lg mx-auto">
+            <T k="landing.urgencyDesc">TigerTest Premium shows you the questions real test-takers get wrong most — so if your test is in a few days, you&apos;re practicing what actually matters, not random filler.</T>
+          </p>
+          <Link
+            href="/signup"
+            className="inline-block bg-brand text-white font-semibold px-8 py-3 rounded-xl hover:bg-brand-dark transition-colors"
+          >
+            <T k="landing.urgencyCTA">See the hardest questions →</T>
+          </Link>
+        </div>
+      </div>
+
       {/* Testimonial */}
       <div className="bg-gray-50 py-12">
         <div className="max-w-2xl mx-auto px-6 text-center">

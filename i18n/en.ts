@@ -385,6 +385,7 @@ export const en = {
     basedOnAnswers: "Based on answers from",
     realTestTakers: "real test takers",
     correctAnswer: "Correct answer",
+    outOf: "of",
     peopleGotWrong: "people got this wrong",
     questionsLocked: "more questions locked",
     upgradeToSeeFullList: "Upgrade to see the full list",

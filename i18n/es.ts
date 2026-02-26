@@ -385,6 +385,7 @@ export const es: TranslationKeys = {
     basedOnAnswers: "Basado en respuestas de",
     realTestTakers: "examinandos reales",
     correctAnswer: "Respuesta correcta",
+    outOf: "de",
     peopleGotWrong: "personas fallaron esta pregunta",
     questionsLocked: "preguntas más bloqueadas",
     upgradeToSeeFullList: "Actualiza para ver la lista completa",

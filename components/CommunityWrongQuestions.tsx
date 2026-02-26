@@ -105,7 +105,7 @@ export function CommunityWrongQuestions({ isPremium, onUpgradeClick }: Props) {
                   />
                 </div>
                 <p className="text-xs text-gray-400 mt-1">
-                  {q.wrong} of {q.total} {t("stats.peopleGotWrong")}
+                  {q.wrong} {t("stats.outOf")} {q.total} {t("stats.peopleGotWrong")}
                 </p>
               </div>
 

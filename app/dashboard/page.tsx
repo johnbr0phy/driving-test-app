@@ -416,6 +416,23 @@ function DashboardContent() {
             })}
           </div>
         </div>
+
+        {/* Short on time? Premium hook — free signed-in users only */}
+        {onboardingComplete && !isPremium && !isGuest && (
+          <Link href="/stats" className="block">
+            <div className="rounded-xl bg-brand-light border border-brand-border-light px-5 py-4 flex items-center justify-between gap-4 hover:shadow-sm transition-shadow">
+              <div>
+                <p className="font-semibold text-gray-900 text-sm">
+                  {t("dashboard.urgencyTitle")}
+                </p>
+                <p className="text-xs text-gray-500 mt-0.5">
+                  {t("dashboard.urgencyDesc")}
+                </p>
+              </div>
+              <ChevronRight className="h-5 w-5 text-brand flex-shrink-0" />
+            </div>
+          </Link>
+        )}
       </div>
     </div>
   );

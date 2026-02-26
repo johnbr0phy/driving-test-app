@@ -114,6 +114,8 @@ export const es: TranslationKeys = {
     learnHowToImprove: "Aprende cómo mejorar",
     viewStats: "Ver estadísticas",
     moreToUnlock: "más para desbloquear entrenamiento y exámenes",
+    urgencyTitle: "¿Poco tiempo? Estudia primero las preguntas que todos fallan.",
+    urgencyDesc: "Premium te muestra las preguntas que más fallan los candidatos reales.",
   },
 
   // Question categories (human-friendly display names)

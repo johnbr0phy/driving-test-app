@@ -114,6 +114,8 @@ export const en = {
     learnHowToImprove: "Learn how to improve",
     viewStats: "View stats",
     moreToUnlock: "more to unlock training & tests",
+    urgencyTitle: "Short on time? Study the questions everyone fails first.",
+    urgencyDesc: "Premium shows you the top questions real test-takers get wrong.",
   },
 
   // Question categories (human-friendly display names)

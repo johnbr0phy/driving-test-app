@@ -368,61 +368,6 @@ export default function StatsPage() {
           </Link>
         </div>
 
-        {/* Pass/Fail Probability - YOU ARE SHIT */}
-        <Card className={`mb-6 ${
-          passProbability === 0
-            ? "bg-gradient-to-r from-gray-50 to-gray-100 border-gray-200"
-            : passProbability >= 80
-              ? "bg-gradient-to-r from-emerald-50 to-green-50 border-emerald-200"
-              : passProbability >= 60
-                ? "bg-gradient-to-r from-lime-50 to-green-50 border-lime-200"
-                : passProbability >= 40
-                  ? "bg-gradient-to-r from-amber-50 to-yellow-50 border-amber-200"
-                  : passProbability >= 20
-                    ? "bg-gradient-to-r from-orange-50 to-amber-50 border-orange-200"
-                    : "bg-gradient-to-r from-red-50 to-rose-50 border-red-200"
-        }`}>
-          <CardContent className="p-6">
-            <div className="flex items-center gap-4">
-              {passProbability === 0 ? (
-                <span className="text-4xl">❓</span>
-              ) : (
-                <Image
-                  src={getTigerFace(passProbability)}
-                  alt="Tiger mascot"
-                  width={64}
-                  height={64}
-                  className="w-16 h-16"
-                />
-              )}
-              <div className="flex-1">
-                <h1 className="text-2xl md:text-3xl font-bold">
-                  {passProbability === 0
-                    ? t("stats.noDataYet")
-                    : `${passProbability >= 50 ? passProbability : 100 - passProbability}% ${passProbability >= 50 ? t("stats.chanceOfPassing") : t("stats.chanceOfFailing")}`
-                  }
-                </h1>
-                {passProbability > 0 && (
-                  <Progress
-                    value={passProbability}
-                    className={`h-2 mt-3 ${
-                      passProbability >= 80
-                        ? '[&>div]:bg-emerald-500'
-                        : passProbability >= 60
-                          ? '[&>div]:bg-lime-500'
-                          : passProbability >= 40
-                            ? '[&>div]:bg-amber-500'
-                            : passProbability >= 20
-                              ? '[&>div]:bg-orange-500'
-                              : '[&>div]:bg-red-500'
-                    }`}
-                  />
-                )}
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-
         {/* Smart CTA - DO THIS */}
         {getRecommendation && (
           <Link href={getRecommendation.href} className="block">

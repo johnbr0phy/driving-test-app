@@ -419,7 +419,7 @@ function DashboardContent() {
 
         {/* Short on time? Premium hook — free signed-in users only */}
         {onboardingComplete && !isPremium && !isGuest && (
-          <Link href="/stats" className="block">
+          <Link href="/stats?tab=community" className="block">
             <div className="rounded-xl bg-brand-light border border-brand-border-light px-5 py-4 flex items-center justify-between gap-4 hover:shadow-sm transition-shadow">
               <div>
                 <p className="font-semibold text-gray-900 text-sm">

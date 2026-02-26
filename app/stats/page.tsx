@@ -1,7 +1,7 @@
 "use client";
 
-import { useEffect, useState, useMemo } from "react";
-import { useRouter } from "next/navigation";
+import { useEffect, useState, useMemo, Suspense } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
@@ -50,7 +50,7 @@ const CATEGORY_TO_SET: { [key: string]: number } = {
   general: 2,
 };
 
-export default function StatsPage() {
+function StatsContent() {
   const router = useRouter();
   const hydrated = useHydration();
   const { t, language } = useTranslation();
@@ -67,7 +67,10 @@ export default function StatsPage() {
   const isPremium = hydrated ? hasPremiumAccess() : false;
   const FREE_QUESTION_LIMIT = 5;
 
-  const [activeTab, setActiveTab] = useState<"yours" | "community">("yours");
+  const searchParams = useSearchParams();
+  const [activeTab, setActiveTab] = useState<"yours" | "community">(
+    searchParams.get("tab") === "community" ? "community" : "yours"
+  );
   const [sortField, setSortField] = useState<SortField>("wrong");
   const [sortDirection, setSortDirection] = useState<SortDirection>("desc");
   const [paywallOpen, setPaywallOpen] = useState(false);
@@ -891,5 +894,13 @@ export default function StatsPage() {
         </>}
       </div>
     </div>
+  );
+}
+
+export default function StatsPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-white" />}>
+      <StatsContent />
+    </Suspense>
   );
 }

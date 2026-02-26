@@ -29,14 +29,15 @@ interface Props {
 }
 
 export function CommunityWrongQuestions({ isPremium, onUpgradeClick }: Props) {
-  const { t } = useTranslation();
+  const { t, language } = useTranslation();
   const [data, setData] = useState<CommunityData | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function load() {
       try {
-        const res = await fetch("/api/community-stats");
+        const url = language === "es" ? "/api/community-stats?lang=es" : "/api/community-stats";
+        const res = await fetch(url);
         const json = await res.json();
         if (json.questions?.length > 0) setData(json as CommunityData);
       } catch (e) {
@@ -46,7 +47,7 @@ export function CommunityWrongQuestions({ isPremium, onUpgradeClick }: Props) {
       }
     }
     load();
-  }, []);
+  }, [language]);
 
   if (loading) {
     return (

@@ -1,13 +1,37 @@
 /**
- * GET /api/community-stats
+ * GET /api/community-stats?lang=es
  * Reads globalStats/wrongQuestions via Admin SDK (bypasses Firestore security rules).
  * Returns the pre-aggregated community wrong questions data.
+ * When lang=es, replaces question/answer/explanation with Spanish translations.
  */
 
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { getAdminDb } from "@/lib/firebase-admin";
+import questionsEs from "@/data/questions_es.json";
 
-export async function GET() {
+// Build a lookup map from questionId → Spanish question data
+const esMap = new Map(
+  (questionsEs as Array<{
+    questionId: string;
+    question: string;
+    correctAnswer: string;
+    optionA: string;
+    optionB: string;
+    optionC: string;
+    optionD: string;
+    explanation?: string;
+  }>).map((q) => [q.questionId, q])
+);
+
+function getEsAnswerText(q: ReturnType<typeof esMap.get>): string {
+  if (!q) return "";
+  const map: Record<string, string> = { A: q.optionA, B: q.optionB, C: q.optionC, D: q.optionD };
+  return map[q.correctAnswer] ?? "";
+}
+
+export async function GET(req: NextRequest) {
+  const lang = req.nextUrl.searchParams.get("lang") ?? "en";
+
   try {
     const db = getAdminDb();
     const snap = await db.collection("globalStats").doc("wrongQuestions").get();
@@ -16,7 +40,22 @@ export async function GET() {
       return NextResponse.json({ questions: [], totalUsers: 0, updatedAt: null });
     }
 
-    return NextResponse.json(snap.data());
+    const data = snap.data()!;
+
+    if (lang === "es" && Array.isArray(data.questions)) {
+      data.questions = data.questions.map((q: { questionId: string; question: string; correctAnswer: string; explanation?: string }) => {
+        const esQ = esMap.get(q.questionId);
+        if (!esQ) return q;
+        return {
+          ...q,
+          question: esQ.question,
+          correctAnswer: getEsAnswerText(esQ),
+          explanation: esQ.explanation ?? q.explanation ?? "",
+        };
+      });
+    }
+
+    return NextResponse.json(data);
   } catch (err: any) {
     console.error("[community-stats]", err);
     return NextResponse.json({ error: err.message }, { status: 500 });

@@ -3,21 +3,19 @@ import { getAdminDb, getAdminAuth } from '@/lib/firebase-admin';
 import { isAdminEmail } from '@/lib/admin';
 
 // ─── Server-side in-memory cache ───────────────────────────────────────────
-// Vercel keeps warm instances alive ~15-30 min. This means subsequent loads
-// return in <100ms instead of hitting Firebase every time.
 const CACHE_TTL_MS = 120_000; // 2 minutes
 let cachedPayload: Record<string, unknown> | null = null;
 let cacheTimestamp = 0;
 
-// ─── Firestore document processor ──────────────────────────────────────────
-function processFirestoreDoc(data: Record<string, unknown>) {
+// ─── Per-user stats from full Firestore doc ─────────────────────────────────
+function processFullDoc(data: Record<string, unknown>) {
   const training = (data.training || {}) as Record<string, unknown>;
   const onboardingMastered = (training.masteredQuestionIds || []) as unknown[];
 
   const trainingSets = (data.trainingSets || {}) as Record<string, Record<string, unknown>>;
   let trainingQuestionsAnswered = onboardingMastered.length;
   for (const setId of [1, 2, 3, 4]) {
-    const setData = trainingSets[setId] || {};
+    const setData = trainingSets[String(setId)] || trainingSets[setId as unknown as string] || {};
     const masteredIds = (setData.masteredIds || []) as unknown[];
     const wrongQueue = (setData.wrongQueue || []) as unknown[];
     trainingQuestionsAnswered += masteredIds.length + wrongQueue.length;
@@ -41,7 +39,6 @@ function processFirestoreDoc(data: Record<string, unknown>) {
     testsCompleted: completedTests.length,
     trainingQuestionsAnswered,
     testQuestionsAnswered,
-    activeDates: (data.activeDates || []) as string[],
     isPremium: (data.subscription as Record<string, unknown>)?.isPremium === true,
   };
 }
@@ -67,14 +64,17 @@ function calculateDailyActiveUsers(
       return false;
     }).length;
 
-    return { date: dateStr, count, displayDate: date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) };
+    return {
+      date: dateStr,
+      count,
+      displayDate: date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
+    };
   });
 }
 
 // ─── Route handler ──────────────────────────────────────────────────────────
 export async function GET(request: NextRequest) {
   try {
-    // Auth check
     const authHeader = request.headers.get('authorization');
     if (!authHeader?.startsWith('Bearer ')) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
@@ -97,7 +97,6 @@ export async function GET(request: NextRequest) {
     // ── Cache hit ──────────────────────────────────────────────────────────
     const forceRefresh = request.nextUrl.searchParams.get('refresh') === 'true';
     const cacheAge = Date.now() - cacheTimestamp;
-
     if (!forceRefresh && cachedPayload && cacheAge < CACHE_TTL_MS) {
       const res = NextResponse.json(cachedPayload);
       res.headers.set('X-Cache', 'HIT');
@@ -105,57 +104,46 @@ export async function GET(request: NextRequest) {
       return res;
     }
 
-    // ── Cache miss — fetch from Firebase ──────────────────────────────────
-    // No auth.listUsers() — email not displayed in the table, and it's the
-    // slowest call (~3-6s). Sort by lastUpdated (Firestore) instead.
+    // ── Cache miss — two parallel Firestore queries ────────────────────────
+    //
+    // Query A: lightweight field-masked scan of ALL users (for accurate stats)
+    //   — only fetches: selectedState, lastUpdated, activeDates, subscription
+    //   — no training/test data = much smaller payload
+    //
+    // Query B: full docs for the 100 most recently active users (for the table)
+    //
+    // Query C: analytics/shares doc
+    //
     const db = getAdminDb();
-    const [usersSnapshot, sharesDoc] = await Promise.all([
-      db.collection('users').get(),
+
+    const [lightSnap, fullSnap, sharesDoc] = await Promise.all([
+      db.collection('users')
+        .select('selectedState', 'lastUpdated', 'activeDates', 'subscription', 'email', 'createdAt')
+        .get(),
+      db.collection('users')
+        .orderBy('lastUpdated', 'desc')
+        .limit(100)
+        .get(),
       db.doc('analytics/shares').get(),
     ]);
 
+    // ── Aggregate stats from lightweight scan ──────────────────────────────
     const stateCounts: Record<string, number> = {};
-    let totalTrainingQuestions = 0;
-    let totalTestQuestions = 0;
-    let totalTestsCompleted = 0;
     let payingUsers = 0;
     const usersForDau: { activeDates: string[]; lastUpdated: string | null }[] = [];
 
-    const users = usersSnapshot.docs.map(doc => {
-      const data = doc.data() as Record<string, unknown>;
-      const stats = processFirestoreDoc(data);
-
-      const selectedState = (data.selectedState as string) || null;
-      const lastUpdated = (data.lastUpdated as string) || null;
-      const createdAt = (data.createdAt as string) || null;
-
-      if (selectedState) stateCounts[selectedState] = (stateCounts[selectedState] || 0) + 1;
-      totalTrainingQuestions += stats.trainingQuestionsAnswered;
-      totalTestQuestions += stats.testQuestionsAnswered;
-      totalTestsCompleted += stats.testsCompleted;
-      if (stats.isPremium) payingUsers++;
-      usersForDau.push({ activeDates: stats.activeDates, lastUpdated });
-
-      return {
-        uid: doc.id,
-        email: (data.email as string) || '',
-        selectedState,
-        lastUpdated,
-        createdAt,
-        testsCompleted: stats.testsCompleted,
-        trainingQuestionsAnswered: stats.trainingQuestionsAnswered,
-        testQuestionsAnswered: stats.testQuestionsAnswered,
-        isPremium: stats.isPremium,
-      };
+    lightSnap.docs.forEach(doc => {
+      const d = doc.data() as Record<string, unknown>;
+      const state = d.selectedState as string | null;
+      if (state) stateCounts[state] = (stateCounts[state] || 0) + 1;
+      if ((d.subscription as Record<string, unknown>)?.isPremium === true) payingUsers++;
+      usersForDau.push({
+        activeDates: (d.activeDates as string[]) || [],
+        lastUpdated: (d.lastUpdated as string) || null,
+      });
     });
 
-    // Sort newest first by lastUpdated (no Auth SDK needed)
-    users.sort((a, b) => {
-      if (!a.lastUpdated) return 1;
-      if (!b.lastUpdated) return -1;
-      return new Date(b.lastUpdated).getTime() - new Date(a.lastUpdated).getTime();
-    });
-
+    const totalUsers = lightSnap.size;
     const dailyActiveUsers = calculateDailyActiveUsers(usersForDau);
 
     const last7Days = Array.from({ length: 7 }, (_, i) => {
@@ -169,14 +157,40 @@ export async function GET(request: NextRequest) {
       return false;
     }).length;
 
+    // ── Build user list from top-100 full docs ─────────────────────────────
+    let totalTrainingQuestions = 0;
+    let totalTestQuestions = 0;
+    let totalTestsCompleted = 0;
+
+    const users = fullSnap.docs.map(doc => {
+      const data = doc.data() as Record<string, unknown>;
+      const stats = processFullDoc(data);
+      totalTrainingQuestions += stats.trainingQuestionsAnswered;
+      totalTestQuestions += stats.testQuestionsAnswered;
+      totalTestsCompleted += stats.testsCompleted;
+
+      return {
+        uid: doc.id,
+        email: (data.email as string) || '',
+        selectedState: (data.selectedState as string) || null,
+        lastUpdated: (data.lastUpdated as string) || null,
+        createdAt: (data.createdAt as string) || null,
+        testsCompleted: stats.testsCompleted,
+        trainingQuestionsAnswered: stats.trainingQuestionsAnswered,
+        testQuestionsAnswered: stats.testQuestionsAnswered,
+        isPremium: stats.isPremium,
+      };
+    });
+
     const totalQuestionsAnswered = totalTrainingQuestions + totalTestQuestions;
     const sharesData = sharesDoc.exists ? sharesDoc.data() : null;
 
     const payload = {
       users,
       dailyActiveUsers,
+      totalUsers, // actual total from light scan
       stats: {
-        totalUsers: users.length,
+        totalUsers,
         usersWithState: Object.values(stateCounts).reduce((a, b) => a + b, 0),
         byState: stateCounts,
         totalQuestionsAnswered,
@@ -184,14 +198,13 @@ export async function GET(request: NextRequest) {
         totalTestQuestions,
         activeUsers7d,
         totalTestsCompleted,
-        avgQuestionsPerUser: users.length > 0 ? Math.round(totalQuestionsAnswered / users.length) : 0,
+        avgQuestionsPerUser: totalUsers > 0 ? Math.round(totalQuestionsAnswered / totalUsers) : 0,
         payingUsers,
         totalShareClicks: (sharesData?.total as number) || 0,
         shareClicksDaily: (sharesData?.daily as Record<string, number>) || {},
       },
     };
 
-    // Store in cache
     cachedPayload = payload;
     cacheTimestamp = Date.now();
 
@@ -201,7 +214,7 @@ export async function GET(request: NextRequest) {
     return res;
 
   } catch (error) {
-    console.error('Error fetching users:', error);
+    console.error('[admin/users]', error);
     return NextResponse.json(
       { error: 'Internal server error', details: error instanceof Error ? error.message : 'Unknown' },
       { status: 500 }

@@ -133,7 +133,7 @@ export function CommunityWrongQuestions({ isPremium, onUpgradeClick }: Props) {
           {/* Blurred preview — same structure as real cards */}
           <div className="relative">
             <div className="space-y-3 overflow-hidden max-h-36 blur-sm pointer-events-none select-none">
-              {data.questions.slice(FREE_LIMIT, FREE_LIMIT + 2).map((q, i) => (
+              {data.questions.slice(FREE_LIMIT, FREE_LIMIT + 1).map((q, i) => (
                 <Card key={q.questionId} className="border-gray-100">
                   <CardContent className="p-4">
                     <div className="flex items-start justify-between gap-3 mb-3">

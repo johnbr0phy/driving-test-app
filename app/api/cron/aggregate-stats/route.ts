@@ -96,6 +96,7 @@ export async function GET(req: NextRequest) {
         return {
           questionId: q.questionId,
           question: question?.question || "",
+          options: question ? [question.optionA, question.optionB, question.optionC, question.optionD] : [],
           correctAnswer,
           explanation: question?.explanation || "",
           wrong: q.wrong,

@@ -8,6 +8,7 @@ import { useTranslation } from "@/contexts/LanguageContext";
 interface WrongQuestion {
   questionId: string;
   question: string;
+  options?: string[];
   correctAnswer: string;
   explanation: string;
   errorRate: number; // 0-100
@@ -110,18 +111,47 @@ export function CommunityWrongQuestions({ isPremium, onUpgradeClick }: Props) {
                 </p>
               </div>
 
-              {/* Correct answer */}
-              <div className="ml-7 bg-green-50 border border-green-100 rounded-lg px-3 py-2">
-                <p className="text-xs text-green-700 font-medium mb-0.5">
-                  {t("stats.correctAnswer")}
-                </p>
-                <p className="text-sm text-green-900">{q.correctAnswer}</p>
-                {q.explanation && (
-                  <p className="text-xs text-green-700 mt-1 leading-relaxed">
-                    {q.explanation}
+              {/* Answer options */}
+              {q.options && q.options.length > 0 ? (
+                <div className="ml-7 space-y-1.5">
+                  {q.options.map((opt, idx) => {
+                    const letter = ["A", "B", "C", "D"][idx];
+                    const isCorrect = opt === q.correctAnswer;
+                    return (
+                      <div
+                        key={idx}
+                        className={`flex items-start gap-2 rounded-lg px-3 py-1.5 text-sm ${
+                          isCorrect
+                            ? "bg-green-50 border border-green-100 text-green-900"
+                            : "bg-gray-50 text-gray-500"
+                        }`}
+                      >
+                        <span className={`font-semibold shrink-0 ${isCorrect ? "text-green-700" : "text-gray-400"}`}>
+                          {letter}
+                        </span>
+                        <span>{opt}</span>
+                      </div>
+                    );
+                  })}
+                  {q.explanation && (
+                    <p className="text-xs text-gray-500 pt-1 leading-relaxed px-1">
+                      {q.explanation}
+                    </p>
+                  )}
+                </div>
+              ) : (
+                <div className="ml-7 bg-green-50 border border-green-100 rounded-lg px-3 py-2">
+                  <p className="text-xs text-green-700 font-medium mb-0.5">
+                    {t("stats.correctAnswer")}
                   </p>
-                )}
-              </div>
+                  <p className="text-sm text-green-900">{q.correctAnswer}</p>
+                  {q.explanation && (
+                    <p className="text-xs text-green-700 mt-1 leading-relaxed">
+                      {q.explanation}
+                    </p>
+                  )}
+                </div>
+              )}
             </CardContent>
           </Card>
         ))}
@@ -150,10 +180,25 @@ export function CommunityWrongQuestions({ isPremium, onUpgradeClick }: Props) {
                         <div className="h-full bg-red-400 rounded-full" style={{ width: `${q.errorRate}%` }} />
                       </div>
                     </div>
-                    <div className="ml-7 bg-green-50 border border-green-100 rounded-lg px-3 py-2">
-                      <p className="text-xs text-green-700 font-medium mb-0.5">{t("stats.correctAnswer")}</p>
-                      <p className="text-sm text-green-900">{q.correctAnswer}</p>
-                    </div>
+                    {q.options && q.options.length > 0 ? (
+                      <div className="ml-7 space-y-1.5">
+                        {q.options.map((opt, idx) => {
+                          const letter = ["A", "B", "C", "D"][idx];
+                          const isCorrect = opt === q.correctAnswer;
+                          return (
+                            <div key={idx} className={`flex items-start gap-2 rounded-lg px-3 py-1.5 text-sm ${isCorrect ? "bg-green-50 border border-green-100 text-green-900" : "bg-gray-50 text-gray-500"}`}>
+                              <span className={`font-semibold shrink-0 ${isCorrect ? "text-green-700" : "text-gray-400"}`}>{letter}</span>
+                              <span>{opt}</span>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    ) : (
+                      <div className="ml-7 bg-green-50 border border-green-100 rounded-lg px-3 py-2">
+                        <p className="text-xs text-green-700 font-medium mb-0.5">{t("stats.correctAnswer")}</p>
+                        <p className="text-sm text-green-900">{q.correctAnswer}</p>
+                      </div>
+                    )}
                   </CardContent>
                 </Card>
               ))}

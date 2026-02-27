@@ -2,9 +2,15 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getAdminDb, getAdminAuth } from '@/lib/firebase-admin';
 import { isAdminEmail } from '@/lib/admin';
 
-// Calculate detailed stats from a Firestore user document
+// ─── Server-side in-memory cache ───────────────────────────────────────────
+// Vercel keeps warm instances alive ~15-30 min. This means subsequent loads
+// return in <100ms instead of hitting Firebase every time.
+const CACHE_TTL_MS = 120_000; // 2 minutes
+let cachedPayload: Record<string, unknown> | null = null;
+let cacheTimestamp = 0;
+
+// ─── Firestore document processor ──────────────────────────────────────────
 function processFirestoreDoc(data: Record<string, unknown>) {
-  // Training questions: onboarding + training sets 1-4
   const training = (data.training || {}) as Record<string, unknown>;
   const onboardingMastered = (training.masteredQuestionIds || []) as unknown[];
 
@@ -17,7 +23,6 @@ function processFirestoreDoc(data: Record<string, unknown>) {
     trainingQuestionsAnswered += masteredIds.length + wrongQueue.length;
   }
 
-  // Test questions: completed tests + in-progress tests
   const completedTests = (data.completedTests || []) as Record<string, unknown>[];
   let testQuestionsAnswered = completedTests.reduce((sum: number, test: Record<string, unknown>) => {
     const answers = test.answers as unknown[] | undefined;
@@ -41,54 +46,41 @@ function processFirestoreDoc(data: Record<string, unknown>) {
   };
 }
 
-// Calculate daily active users for the last 30 days (server-side)
+// ─── DAU calculation ────────────────────────────────────────────────────────
 function calculateDailyActiveUsers(
   usersWithDates: { activeDates: string[]; lastUpdated: string | null }[]
 ) {
-  const days: { date: string; count: number; displayDate: string }[] = [];
   const today = new Date();
-
-  for (let i = 29; i >= 0; i--) {
+  return Array.from({ length: 30 }, (_, i) => {
     const date = new Date(today);
-    date.setDate(date.getDate() - i);
-    const dateStr = date.toISOString().split('T')[0]; // YYYY-MM-DD
-    const startOfDay = new Date(date);
-    startOfDay.setHours(0, 0, 0, 0);
-    const endOfDay = new Date(date);
-    endOfDay.setHours(23, 59, 59, 999);
+    date.setDate(date.getDate() - (29 - i));
+    const dateStr = date.toISOString().split('T')[0];
+    const startOfDay = new Date(date); startOfDay.setHours(0, 0, 0, 0);
+    const endOfDay = new Date(date); endOfDay.setHours(23, 59, 59, 999);
 
-    const activeCount = usersWithDates.filter(u => {
-      if (u.activeDates.length > 0) {
-        return u.activeDates.includes(dateStr);
-      }
+    const count = usersWithDates.filter(u => {
+      if (u.activeDates.length > 0) return u.activeDates.includes(dateStr);
       if (u.lastUpdated) {
-        const lastUpdated = new Date(u.lastUpdated);
-        return lastUpdated >= startOfDay && lastUpdated <= endOfDay;
+        const lu = new Date(u.lastUpdated);
+        return lu >= startOfDay && lu <= endOfDay;
       }
       return false;
     }).length;
 
-    days.push({
-      date: dateStr,
-      count: activeCount,
-      displayDate: date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
-    });
-  }
-
-  return days;
+    return { date: dateStr, count, displayDate: date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) };
+  });
 }
 
+// ─── Route handler ──────────────────────────────────────────────────────────
 export async function GET(request: NextRequest) {
   try {
-    // Get the authorization header (Firebase ID token)
+    // Auth check
     const authHeader = request.headers.get('authorization');
     if (!authHeader?.startsWith('Bearer ')) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
     }
 
     const idToken = authHeader.split('Bearer ')[1];
-
-    // Verify the token and check if user is admin
     const auth = getAdminAuth();
 
     let decodedToken;
@@ -102,19 +94,26 @@ export async function GET(request: NextRequest) {
       return NextResponse.json({ error: 'Forbidden' }, { status: 403 });
     }
 
-    // Fetch Auth users, Firestore data, and share analytics in parallel
+    // ── Cache hit ──────────────────────────────────────────────────────────
+    const forceRefresh = request.nextUrl.searchParams.get('refresh') === 'true';
+    const cacheAge = Date.now() - cacheTimestamp;
+
+    if (!forceRefresh && cachedPayload && cacheAge < CACHE_TTL_MS) {
+      const res = NextResponse.json(cachedPayload);
+      res.headers.set('X-Cache', 'HIT');
+      res.headers.set('X-Cache-Age', String(Math.round(cacheAge / 1000)));
+      return res;
+    }
+
+    // ── Cache miss — fetch from Firebase ──────────────────────────────────
+    // No auth.listUsers() — email not displayed in the table, and it's the
+    // slowest call (~3-6s). Sort by lastUpdated (Firestore) instead.
     const db = getAdminDb();
-    const [authUsers, usersSnapshot, sharesDoc] = await Promise.all([
-      auth.listUsers(1000),
+    const [usersSnapshot, sharesDoc] = await Promise.all([
       db.collection('users').get(),
       db.doc('analytics/shares').get(),
     ]);
 
-    const firestoreUserMap = new Map(
-      usersSnapshot.docs.map(doc => [doc.id, doc.data()])
-    );
-
-    // Aggregate stats as we build user list
     const stateCounts: Record<string, number> = {};
     let totalTrainingQuestions = 0;
     let totalTestQuestions = 0;
@@ -122,77 +121,58 @@ export async function GET(request: NextRequest) {
     let payingUsers = 0;
     const usersForDau: { activeDates: string[]; lastUpdated: string | null }[] = [];
 
-    // Combine Auth and Firestore data — omit activeDates from per-user response
-    const users = authUsers.users.map(authUser => {
-      const firestoreData = firestoreUserMap.get(authUser.uid);
-      const stats = firestoreData ? processFirestoreDoc(firestoreData) : null;
+    const users = usersSnapshot.docs.map(doc => {
+      const data = doc.data() as Record<string, unknown>;
+      const stats = processFirestoreDoc(data);
 
-      const selectedState = (firestoreData?.selectedState as string) || null;
-      const lastUpdated = (firestoreData?.lastUpdated as string) || null;
-      const trainingQA = stats?.trainingQuestionsAnswered || 0;
-      const testQA = stats?.testQuestionsAnswered || 0;
-      const testsComp = stats?.testsCompleted || 0;
-      const premium = stats?.isPremium || false;
+      const selectedState = (data.selectedState as string) || null;
+      const lastUpdated = (data.lastUpdated as string) || null;
+      const createdAt = (data.createdAt as string) || null;
 
-      // Accumulate aggregate stats
-      if (selectedState) {
-        stateCounts[selectedState] = (stateCounts[selectedState] || 0) + 1;
-      }
-      totalTrainingQuestions += trainingQA;
-      totalTestQuestions += testQA;
-      totalTestsCompleted += testsComp;
-      if (premium) payingUsers++;
-      usersForDau.push({ activeDates: stats?.activeDates || [], lastUpdated });
+      if (selectedState) stateCounts[selectedState] = (stateCounts[selectedState] || 0) + 1;
+      totalTrainingQuestions += stats.trainingQuestionsAnswered;
+      totalTestQuestions += stats.testQuestionsAnswered;
+      totalTestsCompleted += stats.testsCompleted;
+      if (stats.isPremium) payingUsers++;
+      usersForDau.push({ activeDates: stats.activeDates, lastUpdated });
 
       return {
-        uid: authUser.uid,
-        email: authUser.email || 'Unknown',
+        uid: doc.id,
+        email: (data.email as string) || '',
         selectedState,
         lastUpdated,
-        createdAt: authUser.metadata.creationTime || null,
-        testsCompleted: testsComp,
-        trainingQuestionsAnswered: trainingQA,
-        testQuestionsAnswered: testQA,
-        isPremium: premium,
+        createdAt,
+        testsCompleted: stats.testsCompleted,
+        trainingQuestionsAnswered: stats.trainingQuestionsAnswered,
+        testQuestionsAnswered: stats.testQuestionsAnswered,
+        isPremium: stats.isPremium,
       };
     });
 
-    // Sort by creation date (newest first)
+    // Sort newest first by lastUpdated (no Auth SDK needed)
     users.sort((a, b) => {
-      if (!a.createdAt) return 1;
-      if (!b.createdAt) return -1;
-      return new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime();
+      if (!a.lastUpdated) return 1;
+      if (!b.lastUpdated) return -1;
+      return new Date(b.lastUpdated).getTime() - new Date(a.lastUpdated).getTime();
     });
 
-    // Calculate DAU chart data server-side
     const dailyActiveUsers = calculateDailyActiveUsers(usersForDau);
 
-    // Calculate 7-day active users
     const last7Days = Array.from({ length: 7 }, (_, i) => {
-      const date = new Date();
-      date.setDate(date.getDate() - i);
-      return date.toISOString().split('T')[0];
+      const d = new Date(); d.setDate(d.getDate() - i);
+      return d.toISOString().split('T')[0];
     });
-    const sevenDaysAgo = new Date();
-    sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
+    const sevenDaysAgo = new Date(); sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
     const activeUsers7d = usersForDau.filter(u => {
-      if (u.activeDates.length > 0) {
-        return u.activeDates.some(d => last7Days.includes(d));
-      }
-      if (u.lastUpdated) {
-        return new Date(u.lastUpdated) >= sevenDaysAgo;
-      }
+      if (u.activeDates.length > 0) return u.activeDates.some(d => last7Days.includes(d));
+      if (u.lastUpdated) return new Date(u.lastUpdated) >= sevenDaysAgo;
       return false;
     }).length;
 
     const totalQuestionsAnswered = totalTrainingQuestions + totalTestQuestions;
-
-    // Share analytics
     const sharesData = sharesDoc.exists ? sharesDoc.data() : null;
-    const totalShareClicks = (sharesData?.total as number) || 0;
-    const shareClicksDaily = (sharesData?.daily as Record<string, number>) || {};
 
-    const response = NextResponse.json({
+    const payload = {
       users,
       dailyActiveUsers,
       stats: {
@@ -206,20 +186,24 @@ export async function GET(request: NextRequest) {
         totalTestsCompleted,
         avgQuestionsPerUser: users.length > 0 ? Math.round(totalQuestionsAnswered / users.length) : 0,
         payingUsers,
-        totalShareClicks,
-        shareClicksDaily,
+        totalShareClicks: (sharesData?.total as number) || 0,
+        shareClicksDaily: (sharesData?.daily as Record<string, number>) || {},
       },
-    });
+    };
 
-    // Cache for 30 seconds to avoid redundant Firebase calls on refresh
-    response.headers.set('Cache-Control', 'private, max-age=30');
+    // Store in cache
+    cachedPayload = payload;
+    cacheTimestamp = Date.now();
 
-    return response;
+    const res = NextResponse.json(payload);
+    res.headers.set('Cache-Control', 'private, max-age=120');
+    res.headers.set('X-Cache', 'MISS');
+    return res;
+
   } catch (error) {
     console.error('Error fetching users:', error);
-    const errorMessage = error instanceof Error ? error.message : 'Unknown error';
     return NextResponse.json(
-      { error: 'Internal server error', details: errorMessage },
+      { error: 'Internal server error', details: error instanceof Error ? error.message : 'Unknown' },
       { status: 500 }
     );
   }

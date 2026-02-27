@@ -51,7 +51,7 @@ export default function AdminPage() {
   const [deleting, setDeleting] = useState<string | null>(null);
   const [dailyActiveUsers, setDailyActiveUsers] = useState<{ date: string; count: number; displayDate: string }[]>([]);
 
-  const fetchUsers = async () => {
+  const fetchUsers = async (forceRefresh = false) => {
     setLoading(true);
     setError(null);
 
@@ -62,7 +62,8 @@ export default function AdminPage() {
         return;
       }
 
-      const response = await fetch("/api/admin/users", {
+      const url = forceRefresh ? "/api/admin/users?refresh=true" : "/api/admin/users";
+      const response = await fetch(url, {
         headers: {
           Authorization: `Bearer ${idToken}`,
         },
@@ -212,7 +213,7 @@ export default function AdminPage() {
             </Link>
             <h1 className="text-2xl font-bold">Admin Dashboard</h1>
           </div>
-          <Button onClick={fetchUsers} variant="outline" size="sm">
+          <Button onClick={() => fetchUsers(true)} variant="outline" size="sm">
             <RefreshCw className="h-4 w-4 mr-2" />
             Refresh
           </Button>

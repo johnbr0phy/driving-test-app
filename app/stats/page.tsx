@@ -554,6 +554,7 @@ function StatsContent() {
                 </Card>
               ))}
               {!isPremium && sortedQuestions.length > FREE_QUESTION_LIMIT && (
+                <>
                 <div className="relative">
                   <div className="space-y-3 blur-sm pointer-events-none select-none" aria-hidden="true">
                     {sortedQuestions.slice(FREE_QUESTION_LIMIT, FREE_QUESTION_LIMIT + 3).map((item) => (
@@ -590,26 +591,29 @@ function StatsContent() {
                       </Card>
                     ))}
                   </div>
-                  <div className="absolute inset-0 flex flex-col items-center justify-center bg-white/70">
-                    <div className="text-center px-4">
-                      <div className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-brand-light mb-3">
-                        <Lock className="h-4 w-4 text-brand" />
-                      </div>
-                      <p className="text-sm font-semibold text-gray-900 mb-1">
-                        {sortedQuestions.length - FREE_QUESTION_LIMIT} {t("stats.moreQuestions")}
-                      </p>
-                      <p className="text-xs text-gray-500 mb-3">
-                        {t("stats.unlockPremiumStats")}
-                      </p>
-                      <button
-                        onClick={() => { trackViewItem("stats_page"); setPaywallOpen(true); }}
-                        className="inline-flex items-center px-4 py-2 bg-brand text-white text-sm font-medium rounded-full hover:bg-brand-hover transition-colors"
-                      >
-                        Unlock Premium — $9.99
-                      </button>
-                    </div>
-                  </div>
+                  {/* Gradient fade */}
+                  <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-white to-transparent pointer-events-none" />
                 </div>
+
+                {/* Lock UI — below the fade in clean white space */}
+                <div className="flex flex-col items-center pt-3 pb-2 text-center">
+                  <div className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-brand-light mb-3">
+                    <Lock className="h-4 w-4 text-brand" />
+                  </div>
+                  <p className="text-sm font-semibold text-gray-900 mb-1">
+                    {sortedQuestions.length - FREE_QUESTION_LIMIT} {t("stats.moreQuestions")}
+                  </p>
+                  <p className="text-xs text-gray-500 mb-3">
+                    {t("stats.unlockPremiumStats")}
+                  </p>
+                  <button
+                    onClick={() => { trackViewItem("stats_page"); setPaywallOpen(true); }}
+                    className="inline-flex items-center px-4 py-2 bg-brand text-white text-sm font-medium rounded-full hover:bg-brand-hover transition-colors"
+                  >
+                    Unlock Premium — $9.99
+                  </button>
+                </div>
+                </>
               )}
               {isPremium && sortedQuestions.slice(FREE_QUESTION_LIMIT).map((item) => (
                 <Card

@@ -76,7 +76,7 @@ interface AppState {
   resetTrainingSet: (setId: number) => void;
 
   // Training answer history (for question performance tracking)
-  trainingAnswerHistory: { questionId: string; isCorrect: boolean }[];
+  trainingAnswerHistory: { questionId: string; isCorrect: boolean; answeredAt?: string }[];
 
   // Activity tracking for DAU
   activeDates: string[];
@@ -385,7 +385,7 @@ export const useStore = create<AppState>()(
               lastQuestionId: questionId,
             },
             // Track answer in history for question performance
-            trainingAnswerHistory: [...state.trainingAnswerHistory, { questionId, isCorrect }],
+            trainingAnswerHistory: [...state.trainingAnswerHistory, { questionId, isCorrect, answeredAt: new Date().toISOString() }],
           };
         });
         get().saveToFirestore();
@@ -445,7 +445,7 @@ export const useStore = create<AppState>()(
               [setId]: { masteredIds: newMasteredIds, wrongQueue: newWrongQueue },
             },
             // Track answer in history for question performance
-            trainingAnswerHistory: [...state.trainingAnswerHistory, { questionId, isCorrect }],
+            trainingAnswerHistory: [...state.trainingAnswerHistory, { questionId, isCorrect, answeredAt: new Date().toISOString() }],
           };
         });
         get().saveToFirestore();

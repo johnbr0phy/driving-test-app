@@ -98,6 +98,10 @@ export async function getEligibleUsers(
     if (d.unsubscribed === true) continue;
     if (!includeMissingConsent && d.emailConsent !== true) continue;
 
+    // Skip internal/test accounts
+    const emailLower = authRecord.email.toLowerCase();
+    if (emailLower.includes("@johnbrophy.net") || emailLower.includes("@stensul.com")) continue;
+
     users.push({
       uid: doc.id,
       email: authRecord.email,

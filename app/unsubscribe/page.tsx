@@ -5,20 +5,21 @@ import { useSearchParams } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
+type Status = "loading" | "did-you-pass" | "celebration" | "standard-exit" | "error";
+
 function UnsubscribeContent() {
   const searchParams = useSearchParams();
   const token = searchParams.get("token");
-  const [status, setStatus] = useState<"loading" | "success" | "error">("loading");
-  const [message, setMessage] = useState("");
+  const [status, setStatus] = useState<Status>("loading");
+  const [errorMessage, setErrorMessage] = useState("");
 
   useEffect(() => {
     if (!token) {
+      setErrorMessage("Invalid unsubscribe link. Please use the link from your email.");
       setStatus("error");
-      setMessage("Invalid unsubscribe link. Please use the link from your email.");
       return;
     }
 
-    // Call API to unsubscribe
     async function unsubscribe() {
       try {
         const response = await fetch("/api/unsubscribe", {
@@ -26,28 +27,42 @@ function UnsubscribeContent() {
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ token }),
         });
-
         const data = await response.json();
-
         if (data.success) {
-          setStatus("success");
-          setMessage("You've been unsubscribed from TigerTest emails.");
+          setStatus("did-you-pass");
         } else {
+          setErrorMessage(data.error || "Failed to unsubscribe. Please try again.");
           setStatus("error");
-          setMessage(data.error || "Failed to unsubscribe. Please try again.");
         }
-      } catch (err) {
+      } catch {
+        setErrorMessage("Something went wrong. Please try again later.");
         setStatus("error");
-        setMessage("Something went wrong. Please try again later.");
       }
     }
 
     unsubscribe();
   }, [token]);
 
+  async function handlePassed() {
+    try {
+      await fetch("/api/record-pass", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ token }),
+      });
+    } catch {
+      // fire and forget
+    }
+    setStatus("celebration");
+  }
+
+  const tweetText = encodeURIComponent("Just passed my driving test! 🎉 Studied with TigerTest — free practice tests that actually work. tigertest.io");
+
   return (
-    <div className="min-h-screen bg-white flex items-center justify-center px-6">
+    <div className="flex-1 bg-white flex items-center justify-center px-6">
       <div className="max-w-md w-full text-center">
+
+        {/* State 1: Loading */}
         {status === "loading" && (
           <>
             <div className="w-12 h-12 border-4 border-gray-200 border-t-brand rounded-full animate-spin mx-auto mb-6"></div>
@@ -55,7 +70,57 @@ function UnsubscribeContent() {
           </>
         )}
 
-        {status === "success" && (
+        {/* State 2: Did you pass? */}
+        {status === "did-you-pass" && (
+          <>
+            <div className="text-5xl mb-6">🎓</div>
+            <h1 className="text-2xl font-semibold mb-3">Before you go...</h1>
+            <p className="text-gray-600 mb-8">
+              Did you pass your driving test?
+            </p>
+            <button
+              onClick={handlePassed}
+              className="w-full bg-green-500 hover:bg-green-600 text-white font-semibold text-lg rounded-xl py-4 px-6 mb-4 transition-colors"
+            >
+              🎉 Yes, I passed!
+            </button>
+            <button
+              onClick={() => setStatus("standard-exit")}
+              className="text-sm text-gray-400 hover:text-gray-600 underline underline-offset-2 transition-colors"
+            >
+              Not yet, just unsubscribing
+            </button>
+          </>
+        )}
+
+        {/* State 3: Celebration */}
+        {status === "celebration" && (
+          <>
+            <div className="text-6xl mb-6">🎉</div>
+            <h1 className="text-2xl font-semibold mb-3">Congratulations!</h1>
+            <p className="text-gray-600 mb-2">That&apos;s what TigerTest is all about.</p>
+            <p className="text-gray-500 mb-8">Go enjoy the open road. 🚗</p>
+            <a
+              href={`https://twitter.com/intent/tweet?text=${tweetText}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-black hover:bg-gray-800 text-white font-medium rounded-xl py-3 px-6 mb-4 transition-colors"
+            >
+              <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+              Share the win
+            </a>
+            <div className="mt-4">
+              <Link href="/" className="text-sm text-gray-400 hover:text-gray-600 underline underline-offset-2">
+                Back to TigerTest
+              </Link>
+            </div>
+          </>
+        )}
+
+        {/* State 4: Standard exit */}
+        {status === "standard-exit" && (
           <>
             <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
               <svg className="w-8 h-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -63,18 +128,18 @@ function UnsubscribeContent() {
               </svg>
             </div>
             <h1 className="text-2xl font-semibold mb-3">You&apos;re unsubscribed</h1>
-            <p className="text-gray-600 mb-8">{message}</p>
-            <p className="text-sm text-gray-500 mb-6">
-              You won&apos;t receive any more emails from us. You can still use TigerTest - just log in anytime.
+            <p className="text-gray-600 mb-6">
+              No more emails from us. Good luck with the test — you&apos;ve got this.
             </p>
             <Link href="/dashboard">
               <Button className="bg-gray-900 text-white hover:bg-gray-800">
-                Go to Dashboard
+                Back to TigerTest
               </Button>
             </Link>
           </>
         )}
 
+        {/* Error */}
         {status === "error" && (
           <>
             <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -83,7 +148,7 @@ function UnsubscribeContent() {
               </svg>
             </div>
             <h1 className="text-2xl font-semibold mb-3">Something went wrong</h1>
-            <p className="text-gray-600 mb-8">{message}</p>
+            <p className="text-gray-600 mb-8">{errorMessage}</p>
             <Link href="/">
               <Button className="bg-gray-900 text-white hover:bg-gray-800">
                 Go Home
@@ -91,6 +156,7 @@ function UnsubscribeContent() {
             </Link>
           </>
         )}
+
       </div>
     </div>
   );
@@ -99,7 +165,7 @@ function UnsubscribeContent() {
 export default function UnsubscribePage() {
   return (
     <Suspense fallback={
-      <div className="min-h-screen bg-white flex items-center justify-center">
+      <div className="flex-1 bg-white flex items-center justify-center">
         <div className="w-12 h-12 border-4 border-gray-200 border-t-brand rounded-full animate-spin"></div>
       </div>
     }>

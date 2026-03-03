@@ -98,7 +98,7 @@ const popularStates = popularStateSlugs
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="flex-1 bg-white">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

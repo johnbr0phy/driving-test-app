@@ -199,7 +199,7 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
   ];
 
   return (
-    <div className="min-h-screen bg-white relative">
+    <div className="flex-1 bg-white relative">
       <div className="absolute inset-x-0 top-0 h-72 bg-gradient-to-b from-brand-light to-white pointer-events-none" />
 
       <script

@@ -167,7 +167,7 @@ export default function ResultsPage() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+      <div className="flex-1 bg-gray-50 flex items-center justify-center">
         <div className="text-center">
           <div className="text-xl font-semibold mb-2">{t("results.loadingResults")}</div>
         </div>
@@ -176,7 +176,7 @@ export default function ResultsPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="flex-1 bg-gray-50">
       {/* Fireworks Animation */}
       {showFireworks && (
         <Fireworks duration={3000} onComplete={() => setShowFireworks(false)} />

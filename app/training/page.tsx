@@ -201,7 +201,7 @@ function TrainingPageContent() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-brand-light to-brand-gradient-to">
+    <div className="flex-1 bg-gradient-to-br from-brand-light to-brand-gradient-to">
       {/* Fireworks Animation */}
       {showFireworks && (
         <Fireworks duration={3000} onComplete={handleFireworksComplete} />
@@ -456,7 +456,7 @@ function TrainingPageContent() {
 
 export default function TrainingPage() {
   return (
-    <Suspense fallback={<div className="min-h-screen bg-gradient-to-br from-brand-light to-brand-gradient-to" />}>
+    <Suspense fallback={<div className="flex-1 bg-gradient-to-br from-brand-light to-brand-gradient-to" />}>
       <TrainingPageContent />
     </Suspense>
   );

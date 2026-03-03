@@ -144,7 +144,7 @@ export default function TestPage() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+      <div className="flex-1 bg-gray-50 flex items-center justify-center">
         <div className="text-center">
           <div className="text-xl font-semibold mb-2">{t("testPage.loadingTest")}</div>
           <div className="text-gray-600">{t("testPage.preparingQuestions")}</div>
@@ -155,7 +155,7 @@ export default function TestPage() {
 
   if (questions.length === 0) {
     return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+      <div className="flex-1 bg-gray-50 flex items-center justify-center">
         <Card className="max-w-md">
           <CardContent className="p-8 text-center">
             <div className="text-xl font-semibold mb-2">{t("testPage.noQuestionsAvailable")}</div>
@@ -170,7 +170,7 @@ export default function TestPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="flex-1 bg-gray-50">
       <div className="container mx-auto px-4 py-8 max-w-6xl">
         {/* Back Button */}
         <div className="mb-6">

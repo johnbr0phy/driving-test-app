@@ -178,7 +178,7 @@ export default function AdminPage() {
 
   if (authLoading || loading) {
     return (
-      <div className="min-h-screen bg-white flex items-center justify-center">
+      <div className="flex-1 bg-white flex items-center justify-center">
         <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-brand" />
       </div>
     );
@@ -186,7 +186,7 @@ export default function AdminPage() {
 
   if (error) {
     return (
-      <div className="min-h-screen bg-white">
+      <div className="flex-1 bg-white">
         <div className="container mx-auto px-4 py-8 max-w-6xl">
           <Link href="/dashboard" className="inline-flex items-center text-gray-600 hover:text-gray-900 mb-6">
             <ArrowLeft className="h-4 w-4 mr-2" />
@@ -203,7 +203,7 @@ export default function AdminPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="flex-1 bg-gray-50">
       <div className="container mx-auto px-4 py-8 max-w-6xl">
         <div className="flex items-center justify-between mb-6">
           <div className="flex items-center gap-4">

@@ -13,6 +13,7 @@ import { Button } from "@/components/ui/button";
 import { Lock, Sparkles, CheckCircle } from "lucide-react";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { en, es } from "@/i18n";
+import { SocialProofTicker } from "@/components/SocialProofTicker";
 
 interface PaywallModalProps {
   open: boolean;
@@ -75,7 +76,10 @@ export function PaywallModal({
             </ul>
           </div>
 
-          <div className="text-center">
+          {/* Social proof: live ticker + stats */}
+          <SocialProofTicker />
+
+          <div className="text-center mt-4">
             <div className="text-3xl font-bold text-gray-900">$9.99</div>
             <div className="text-sm text-gray-500">{t("paywall.oneTimePayment")}</div>
           </div>

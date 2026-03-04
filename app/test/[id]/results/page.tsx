@@ -12,10 +12,13 @@ import Link from "next/link";
 import { useStore } from "@/store/useStore";
 import { useHydration } from "@/hooks/useHydration";
 import { Cloud } from "lucide-react";
+import { useAuth } from "@/contexts/AuthContext";
+import { auth } from "@/lib/firebase";
 import { Fireworks } from "@/components/Fireworks";
 import { ShareButton } from "@/components/ShareButton";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { states } from "@/data/states";
+import { FailedTestUpsellModal } from "@/components/FailedTestUpsellModal";
 
 function getTigerFace(percentage: number): string {
   if (percentage >= 100) return "/tiger_face_01.png";
@@ -57,6 +60,7 @@ export default function ResultsPage() {
   const hydrated = useHydration();
   const { t, language } = useTranslation();
 
+  const { user } = useAuth();
   const getTestSession = useStore((state) => state.getTestSession);
   const getTestAttemptStats = useStore((state) => state.getTestAttemptStats);
   const getQuestionPerformance = useStore((state) => state.getQuestionPerformance);
@@ -66,6 +70,7 @@ export default function ResultsPage() {
   const [expandedQuestions, setExpandedQuestions] = useState<Set<number>>(new Set());
   const [loading, setLoading] = useState(true);
   const [showFireworks, setShowFireworks] = useState(false);
+  const [showFailUpsell, setShowFailUpsell] = useState(false);
 
   const testSession = hydrated ? getTestSession(testId) : null;
   const attemptStats = hydrated ? getTestAttemptStats(testId) : null;
@@ -86,6 +91,12 @@ export default function ResultsPage() {
       const percentage = total > 0 ? Math.round((score / total) * 100) : 0;
       if (percentage >= 70) {
         setShowFireworks(true);
+      } else {
+        // Show fail upsell modal after a short delay for non-premium users
+        const isPrem = hasPremiumAccess();
+        if (!isPrem) {
+          setTimeout(() => setShowFailUpsell(true), 1800);
+        }
       }
     }
   }, [testSession, testId, router, hydrated]);
@@ -147,6 +158,41 @@ export default function ResultsPage() {
   const isPremium = hydrated ? hasPremiumAccess() : false;
   const nextTestIsLocked = nextTestId === 4 && !isPremium;
 
+  // Handle upgrade from fail modal
+  const handleFailUpsellUpgrade = async () => {
+    if (!user?.email || !user?.uid) {
+      router.push("/signup");
+      return;
+    }
+    try {
+      const idToken = await auth.currentUser?.getIdToken();
+      if (!idToken) {
+        alert("Authentication error. Please sign in again.");
+        return;
+      }
+      const response = await fetch("/api/stripe/checkout", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${idToken}`,
+        },
+        body: JSON.stringify({
+          email: user.email,
+          returnUrl: window.location.origin,
+          location: "fail_upsell_modal",
+        }),
+      });
+      const data = await response.json();
+      if (data.checkoutUrl) {
+        window.location.href = data.checkoutUrl;
+      } else {
+        alert("Failed to start checkout. Please try again.");
+      }
+    } catch {
+      alert("Something went wrong. Please try again.");
+    }
+  };
+
   const toggleQuestion = (index: number) => {
     const newExpanded = new Set(expandedQuestions);
     if (newExpanded.has(index)) {
@@ -181,6 +227,17 @@ export default function ResultsPage() {
       {showFireworks && (
         <Fireworks duration={3000} onComplete={() => setShowFireworks(false)} />
       )}
+
+      {/* Fail → Premium upsell modal */}
+      <FailedTestUpsellModal
+        open={showFailUpsell}
+        onOpenChange={setShowFailUpsell}
+        percentage={percentage}
+        score={score}
+        totalQuestions={totalQuestions}
+        weakCategories={weakCategories}
+        onUpgrade={handleFailUpsellUpgrade}
+      />
 
       {/* Full-bleed Score Card */}
       <div className={`${passed ? "bg-gradient-to-b from-gray-950 to-green-950" : "bg-gradient-to-b from-gray-950 to-brand-darker"}`}>

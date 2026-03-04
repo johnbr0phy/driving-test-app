@@ -13,6 +13,7 @@ interface QuestionCardProps {
   selectedAnswer?: string;
   onAnswerChange: (answer: string) => void;
   showResult?: boolean;
+  communityWrongCount?: number;
 }
 
 export function QuestionCard({
@@ -22,6 +23,7 @@ export function QuestionCard({
   selectedAnswer,
   onAnswerChange,
   showResult = false,
+  communityWrongCount,
 }: QuestionCardProps) {
   const { t } = useTranslation();
   const options = [
@@ -91,6 +93,12 @@ export function QuestionCard({
           <div className="mt-6 p-4 border rounded-lg bg-brand-light border-brand-border-light">
             <div className="font-semibold mb-2 text-brand-darker">{t("questionCard.explanation")}</div>
             <div className="text-brand-dark">{question.explanation}</div>
+            {communityWrongCount !== undefined && communityWrongCount >= 5 && (
+              <div className="mt-3 text-xs text-gray-500 flex items-center gap-1">
+                <span>👥</span>
+                <span>{communityWrongCount.toLocaleString()} people got this wrong</span>
+              </div>
+            )}
           </div>
         )}
       </CardContent>

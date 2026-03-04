@@ -66,9 +66,45 @@ export default function ResultsPage() {
   const [expandedQuestions, setExpandedQuestions] = useState<Set<number>>(new Set());
   const [loading, setLoading] = useState(true);
   const [showFireworks, setShowFireworks] = useState(false);
+  const [percentileData, setPercentileData] = useState<{ percentile: number | null; totalTests: number } | null>(null);
+  const [wrongCountMap, setWrongCountMap] = useState<Record<string, number>>({});
 
   const testSession = hydrated ? getTestSession(testId) : null;
   const attemptStats = hydrated ? getTestAttemptStats(testId) : null;
+
+  // Fetch community wrong counts for "X people got this wrong" display
+  useEffect(() => {
+    fetch("/api/community-stats")
+      .then((r) => r.json())
+      .then((data) => {
+        if (Array.isArray(data.questions)) {
+          const map: Record<string, number> = {};
+          for (const q of data.questions) {
+            if (q.questionId && typeof q.wrong === "number") {
+              map[q.questionId] = q.wrong;
+            }
+          }
+          setWrongCountMap(map);
+        }
+      })
+      .catch(() => {}); // Non-critical
+  }, []);
+
+  // Record score + fetch percentile after test completes
+  useEffect(() => {
+    if (!hydrated || !testSession) return;
+    const score = testSession.score || 0;
+    const total = testSession.questions.length;
+    const state = testSession.state;
+    fetch("/api/score-percentile", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ score, totalQuestions: total, state }),
+    })
+      .then((r) => r.json())
+      .then((data) => setPercentileData(data))
+      .catch(() => {}); // Non-critical — silently ignore
+  }, [hydrated, testSession]);
 
   useEffect(() => {
     if (!hydrated) {
@@ -238,6 +274,15 @@ export default function ResultsPage() {
           >
             {passed ? t("results.passed") : t("results.failed")}
           </Badge>
+
+          {/* Percentile rank */}
+          {percentileData?.percentile !== null && percentileData?.percentile !== undefined && (
+            <div className="text-green-400 text-sm mb-3">
+              {language === "es"
+                ? `Superaste al ${percentileData.percentile}% de los usuarios`
+                : `You scored higher than ${percentileData.percentile}% of testers`}
+            </div>
+          )}
 
           {/* State + Test label */}
           <div className="text-gray-400 text-base mb-2">
@@ -520,6 +565,7 @@ export default function ResultsPage() {
                       selectedAnswer={userAnswer}
                       onAnswerChange={() => {}}
                       showResult={true}
+                      communityWrongCount={wrongCountMap[question.questionId]}
                     />
                   </CardContent>
                 )}

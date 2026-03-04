@@ -16,6 +16,8 @@ import { auth } from "@/lib/firebase";
 import { states } from "@/data/states";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { trackBeginCheckout, trackPurchase, trackViewItem } from "@/lib/analytics";
+import { usePresence } from "@/hooks/usePresence";
+import { ActiveUsersBadge } from "@/components/ActiveUsersBadge";
 
 function DashboardContent() {
   const router = useRouter();
@@ -37,6 +39,9 @@ function DashboardContent() {
   const getPassProbability = useStore((state) => state.getPassProbability);
   const isOnboardingComplete = useStore((state) => state.isOnboardingComplete);
   const completeTest = useStore((state) => state.completeTest);
+
+  // Presence tracking
+  usePresence(user?.uid ?? null);
 
   // Paywall state
   const [paywallOpen, setPaywallOpen] = useState(false);
@@ -266,6 +271,11 @@ function DashboardContent() {
             </CardContent>
           </Card>
         )}
+
+        {/* Active users presence indicator */}
+        <div className="flex justify-end mb-2">
+          <ActiveUsersBadge />
+        </div>
 
         {/* Onboarding Card - shown during onboarding */}
         {!onboardingComplete && (

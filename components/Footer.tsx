@@ -56,6 +56,13 @@ export function Footer() {
             </Link>
           </div>
         )}
+        {!isCDL && (
+          <p className="text-center text-sm text-gray-500 mt-3">
+            <Link href="/schools" className="text-brand hover:text-brand-dark font-medium hover:underline">
+              🏫 TigerTest for Driving Schools
+            </Link>
+          </p>
+        )}
         <p className={`text-center text-sm text-gray-600 ${isCDL ? "" : "mt-4"}`}>
           {t("footer.madeWith")}{" "}
           <span className="text-red-500" aria-label="love">

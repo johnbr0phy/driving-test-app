@@ -137,7 +137,7 @@ export const en = {
     stepsComplete: "complete",
     gettingStarted: "Getting Started",
     gettingStartedDesc: "Answer 10 questions correctly",
-    need80: "Need 80%+ to complete",
+    need80: "Need 80%+ to pass",
     bestScore: "Best",
     stampComplete: "Complete!",
     stampMastered: "Mastered!",

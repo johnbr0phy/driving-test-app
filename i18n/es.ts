@@ -137,7 +137,7 @@ export const es: TranslationKeys = {
     stepsComplete: "completos",
     gettingStarted: "Primeros pasos",
     gettingStartedDesc: "Responde 10 preguntas correctamente",
-    need80: "Necesitas 80%+ para completar",
+    need80: "Necesitas 80%+ para aprobar",
     bestScore: "Mejor",
     stampComplete: "Completo!",
     stampMastered: "Dominado!",

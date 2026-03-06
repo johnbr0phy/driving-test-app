@@ -186,6 +186,14 @@ export const en = {
     4: "State Laws",
   } as Record<number, string>,
 
+  // Practice test names (dashboard)
+  practiceTests: {
+    1: "Mock Exam A",
+    2: "Mock Exam B",
+    3: "Mock Exam C",
+    4: "Mock Exam D",
+  } as Record<number, string>,
+
   // Test card
   testCard: {
     test: "Test",

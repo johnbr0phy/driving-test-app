@@ -36,6 +36,7 @@ function ProgressCard({
   href,
   onClick,
   isPremiumLocked,
+  stepNumber,
   children,
 }: {
   title: string;
@@ -45,6 +46,7 @@ function ProgressCard({
   href?: string;
   onClick?: () => void;
   isPremiumLocked?: boolean;
+  stepNumber?: number;
   children?: React.ReactNode;
 }) {
   const content = (
@@ -68,6 +70,8 @@ function ProgressCard({
             <Check className="w-4 h-4" strokeWidth={3} />
           ) : isPremiumLocked ? (
             <Lock className="w-3.5 h-3.5" />
+          ) : stepNumber ? (
+            <span className="text-xs font-bold text-gray-400">{stepNumber}</span>
           ) : (
             <div className="w-2 h-2 rounded-full bg-gray-300" />
           )}
@@ -478,6 +482,7 @@ function DashboardContent() {
                         : `${progress.correct}/${progress.total}`
                     }
                     completed={completed}
+                    stepNumber={id}
                     stamp={completed ? { label: t("dashboard.stampComplete"), color: "green" as const } : undefined}
                     isPremiumLocked={isPremiumLocked}
                     href={isPremiumLocked ? undefined : `/training?set=${id}`}
@@ -533,9 +538,10 @@ function DashboardContent() {
                 return (
                   <ProgressCard
                     key={`test-${testNumber}`}
-                    title={`${t("testCard.test")} ${testNumber}`}
+                    title={t(`practiceTests.${testNumber}`)}
                     subtitle={subtitle}
                     completed={completed}
+                    stepNumber={testNumber + 4}
                     stamp={testStamp}
                     isPremiumLocked={isPremiumLocked}
                     href={isPremiumLocked ? undefined : `/test/${testNumber}`}

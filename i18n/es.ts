@@ -186,6 +186,14 @@ export const es: TranslationKeys = {
     4: "Leyes estatales",
   } as Record<number, string>,
 
+  // Practice test names (dashboard)
+  practiceTests: {
+    1: "Simulacro A",
+    2: "Simulacro B",
+    3: "Simulacro C",
+    4: "Simulacro D",
+  } as Record<number, string>,
+
   // Test card
   testCard: {
     test: "Examen",

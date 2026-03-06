@@ -24,7 +24,7 @@ export function Footer() {
   const dataTheme = isCDL ? "cdl" : undefined;
 
   return (
-    <footer className="border-t bg-gray-50 mt-auto" data-theme={dataTheme}>
+    <footer className="border-t bg-white mt-auto" data-theme={dataTheme}>
       <div className="container mx-auto px-4 py-6">
         {!isCDL && (
           <div className="flex flex-wrap justify-center gap-x-3 gap-y-1 text-sm text-gray-500">

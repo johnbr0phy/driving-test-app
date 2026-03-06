@@ -388,10 +388,10 @@ function DashboardContent() {
                 />
                 <div className="flex-1">
                   <h1 className={`text-lg font-bold ${allComplete ? "text-white" : "text-gray-900"}`}>
-                    {t("dashboard.readyForTest")}
+                    {t(`dashboard.heroTitle${completedSteps}`)}
                   </h1>
                   <p className={`text-xs mt-0.5 ${allComplete ? "text-green-100" : "text-gray-500"}`}>
-                    {allComplete ? t("dashboard.readyForTestDesc") : t("dashboard.notReadyYet")}
+                    {t(`dashboard.heroSub${completedSteps}`)}
                   </p>
                 </div>
                 <div className={`text-right ${allComplete ? "text-white" : "text-gray-900"}`}>

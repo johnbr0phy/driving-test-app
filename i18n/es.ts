@@ -139,6 +139,10 @@ export const es: TranslationKeys = {
     gettingStartedDesc: "Responde 10 preguntas correctamente",
     need80: "Necesitas 80%+ para completar",
     bestScore: "Mejor",
+    stampComplete: "Completo!",
+    stampMastered: "Dominado!",
+    stampPassed: "Aprobado!",
+    stampKeepGoing: "Sigue así",
   },
 
   // Question categories (human-friendly display names)

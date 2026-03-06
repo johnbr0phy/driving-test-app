@@ -15,10 +15,24 @@ import { states } from "@/data/states";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { trackBeginCheckout, trackPurchase, trackViewItem } from "@/lib/analytics";
 
+function Stamp({ label, color }: { label: string; color: "green" | "amber" | "red" }) {
+  const colors = {
+    green: "border-green-500 text-green-600 bg-green-50",
+    amber: "border-amber-500 text-amber-600 bg-amber-50",
+    red: "border-red-400 text-red-500 bg-red-50",
+  };
+  return (
+    <div className={`px-2 py-0.5 rounded border text-[10px] font-bold uppercase tracking-wider ${colors[color]} -rotate-3`}>
+      {label}
+    </div>
+  );
+}
+
 function ProgressCard({
   title,
   subtitle,
   completed,
+  stamp,
   href,
   onClick,
   isPremiumLocked,
@@ -27,6 +41,7 @@ function ProgressCard({
   title: string;
   subtitle: string;
   completed: boolean;
+  stamp?: { label: string; color: "green" | "amber" | "red" };
   href?: string;
   onClick?: () => void;
   isPremiumLocked?: boolean;
@@ -69,9 +84,14 @@ function ProgressCard({
           {children}
         </div>
 
-        <ChevronRight className={`h-5 w-5 flex-shrink-0 ${
-          completed ? "text-green-400" : isPremiumLocked ? "text-brand-muted" : "text-gray-300"
-        }`} />
+        {/* Stamp or chevron */}
+        {stamp ? (
+          <Stamp label={stamp.label} color={stamp.color} />
+        ) : (
+          <ChevronRight className={`h-5 w-5 flex-shrink-0 ${
+            completed ? "text-green-400" : isPremiumLocked ? "text-brand-muted" : "text-gray-300"
+          }`} />
+        )}
       </CardContent>
     </Card>
   );
@@ -455,11 +475,10 @@ function DashboardContent() {
                     subtitle={
                       isPremiumLocked
                         ? t("common.unlockWithPremium")
-                        : completed
-                          ? `${progress.correct}/${progress.total}`
-                          : `${progress.correct}/${progress.total}`
+                        : `${progress.correct}/${progress.total}`
                     }
                     completed={completed}
+                    stamp={completed ? { label: t("dashboard.stampComplete"), color: "green" as const } : undefined}
                     isPremiumLocked={isPremiumLocked}
                     href={isPremiumLocked ? undefined : `/training?set=${id}`}
                     onClick={isPremiumLocked ? () => handlePremiumClick("training_set_4") : undefined}
@@ -482,6 +501,7 @@ function DashboardContent() {
               {[1, 2, 3, 4].map((testNumber) => {
                 const completed = testComplete(testNumber);
                 const bestPct = getTestBestPercent(testNumber);
+                const bestRaw = hydrated ? getTestAttemptStats(testNumber)?.bestScore ?? null : null;
                 const inProgress = isTestInProgress(testNumber);
                 const isPremiumLocked = testNumber === 4 && !isPremium;
 
@@ -498,12 +518,25 @@ function DashboardContent() {
                   subtitle = `${answeredCount}/50 ${t("testCard.answered")}`;
                 }
 
+                // Test stamp: MASTERED (50/50), PASSED (80%+), KEEP GOING (<80% with attempts)
+                let testStamp: { label: string; color: "green" | "amber" | "red" } | undefined;
+                if (!isPremiumLocked && bestRaw !== null) {
+                  if (bestRaw === 50) {
+                    testStamp = { label: t("dashboard.stampMastered"), color: "green" };
+                  } else if (bestRaw >= 40) {
+                    testStamp = { label: t("dashboard.stampPassed"), color: "green" };
+                  } else {
+                    testStamp = { label: t("dashboard.stampKeepGoing"), color: "amber" };
+                  }
+                }
+
                 return (
                   <ProgressCard
                     key={`test-${testNumber}`}
                     title={`${t("testCard.test")} ${testNumber}`}
                     subtitle={subtitle}
                     completed={completed}
+                    stamp={testStamp}
                     isPremiumLocked={isPremiumLocked}
                     href={isPremiumLocked ? undefined : `/test/${testNumber}`}
                     onClick={isPremiumLocked ? () => handlePremiumClick("practice_test_4") : undefined}

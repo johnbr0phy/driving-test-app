@@ -139,6 +139,10 @@ export const en = {
     gettingStartedDesc: "Answer 10 questions correctly",
     need80: "Need 80%+ to complete",
     bestScore: "Best",
+    stampComplete: "Complete!",
+    stampMastered: "Mastered!",
+    stampPassed: "Passed!",
+    stampKeepGoing: "Keep going",
   },
 
   // Question categories (human-friendly display names)

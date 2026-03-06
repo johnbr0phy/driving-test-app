@@ -308,7 +308,7 @@ function DashboardContent() {
 
   return (
     <div className="flex-1 bg-gray-50 relative">
-      <div className="relative container mx-auto px-4 py-6 max-w-lg">
+      <div className="relative container mx-auto px-4 py-6 max-w-lg md:max-w-2xl lg:max-w-4xl">
 
         {/* Paywall Modal */}
         <PaywallModal
@@ -436,9 +436,12 @@ function DashboardContent() {
           </div>
         )}
 
-        {/* Training Sets */}
+        {/* Training & Tests — side by side on desktop */}
         {onboardingComplete && (
-          <div className="mb-6">
+          <div className="mb-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+          {/* Training Sets */}
+          <div>
             <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-3 px-1">
               {t("dashboard.training")}
             </h2>
@@ -472,11 +475,9 @@ function DashboardContent() {
               })}
             </div>
           </div>
-        )}
 
-        {/* Practice Tests */}
-        {onboardingComplete && (
-          <div className="mb-6">
+          {/* Practice Tests */}
+          <div>
             <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-3 px-1">
               {t("dashboard.practiceTests")}
             </h2>
@@ -525,6 +526,8 @@ function DashboardContent() {
                 );
               })}
             </div>
+          </div>
+
           </div>
         )}
 

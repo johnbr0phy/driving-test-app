@@ -188,10 +188,10 @@ export const en = {
 
   // Practice test names (dashboard)
   practiceTests: {
-    1: "Mock Exam A",
-    2: "Mock Exam B",
-    3: "Mock Exam C",
-    4: "Mock Exam D",
+    1: "Test A",
+    2: "Test B",
+    3: "Test C",
+    4: "Test D",
   } as Record<number, string>,
 
   // Test card

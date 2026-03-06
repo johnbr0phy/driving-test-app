@@ -188,10 +188,10 @@ export const es: TranslationKeys = {
 
   // Practice test names (dashboard)
   practiceTests: {
-    1: "Simulacro A",
-    2: "Simulacro B",
-    3: "Simulacro C",
-    4: "Simulacro D",
+    1: "Examen A",
+    2: "Examen B",
+    3: "Examen C",
+    4: "Examen D",
   } as Record<number, string>,
 
   // Test card

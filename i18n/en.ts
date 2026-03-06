@@ -116,6 +116,14 @@ export const en = {
     moreToUnlock: "more to unlock training & tests",
     urgencyTitle: "Short on time? Study the questions everyone fails first.",
     urgencyDesc: "Premium shows you the top questions real test-takers get wrong.",
+    readyForTest: "Ready for the DMV Test",
+    readyForTestDesc: "You've completed everything. Go pass that test!",
+    notReadyYet: "Complete all steps to be fully ready",
+    stepsComplete: "complete",
+    gettingStarted: "Getting Started",
+    gettingStartedDesc: "Answer 10 questions correctly",
+    need80: "Need 80%+ to complete",
+    bestScore: "Best",
   },
 
   // Question categories (human-friendly display names)

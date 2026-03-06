@@ -2,11 +2,9 @@
 
 import { useEffect, useState, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
-import { TestCard } from "@/components/TestCard";
-import { TrainingSetCard, TrainingSet } from "@/components/TrainingSetCard";
 import { PaywallModal } from "@/components/PaywallModal";
 import { Card, CardContent } from "@/components/ui/card";
-import { Zap, ChevronRight, CheckCircle } from "lucide-react";
+import { Zap, ChevronRight, CheckCircle, Check, Lock } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { useStore } from "@/store/useStore";
@@ -16,6 +14,101 @@ import { auth } from "@/lib/firebase";
 import { states } from "@/data/states";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { trackBeginCheckout, trackPurchase, trackViewItem } from "@/lib/analytics";
+
+function ProgressCard({
+  title,
+  subtitle,
+  completed,
+  href,
+  onClick,
+  isPremiumLocked,
+  children,
+}: {
+  title: string;
+  subtitle: string;
+  completed: boolean;
+  href?: string;
+  onClick?: () => void;
+  isPremiumLocked?: boolean;
+  children?: React.ReactNode;
+}) {
+  const content = (
+    <Card className={`transition-all ${
+      completed
+        ? "bg-white border-green-200 shadow-sm"
+        : isPremiumLocked
+          ? "bg-white border-gray-100 hover:shadow-md hover:border-brand-border cursor-pointer"
+          : "bg-white border-gray-100 hover:shadow-md cursor-pointer"
+    }`}>
+      <CardContent className="p-4 flex items-center gap-3">
+        {/* Completion indicator */}
+        <div className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center ${
+          completed
+            ? "bg-green-500 text-white"
+            : isPremiumLocked
+              ? "bg-gray-100 text-gray-300"
+              : "bg-gray-100 text-gray-300"
+        }`}>
+          {completed ? (
+            <Check className="w-4 h-4" strokeWidth={3} />
+          ) : isPremiumLocked ? (
+            <Lock className="w-3.5 h-3.5" />
+          ) : (
+            <div className="w-2 h-2 rounded-full bg-gray-300" />
+          )}
+        </div>
+
+        {/* Content */}
+        <div className="flex-1 min-w-0">
+          <h3 className={`font-semibold text-sm ${completed ? "text-gray-900" : isPremiumLocked ? "text-gray-400" : "text-gray-900"}`}>
+            {title}
+          </h3>
+          <p className={`text-xs mt-0.5 ${completed ? "text-green-600" : isPremiumLocked ? "text-brand" : "text-gray-500"}`}>
+            {subtitle}
+          </p>
+          {children}
+        </div>
+
+        <ChevronRight className={`h-5 w-5 flex-shrink-0 ${
+          completed ? "text-green-400" : isPremiumLocked ? "text-brand-muted" : "text-gray-300"
+        }`} />
+      </CardContent>
+    </Card>
+  );
+
+  if (onClick) {
+    return (
+      <button onClick={onClick} className="block w-full text-left">
+        {content}
+      </button>
+    );
+  }
+
+  if (href) {
+    return (
+      <Link href={href} className="block">
+        {content}
+      </Link>
+    );
+  }
+
+  return content;
+}
+
+function ProgressBar({ value, max }: { value: number; max: number }) {
+  const pct = Math.min(100, Math.round((value / max) * 100));
+  return (
+    <div className="mt-1.5 flex items-center gap-2">
+      <div className="flex-1 h-1.5 bg-gray-100 rounded-full overflow-hidden">
+        <div
+          className="h-full bg-brand rounded-full transition-all duration-300"
+          style={{ width: `${pct}%` }}
+        />
+      </div>
+      <span className="text-xs text-gray-400 tabular-nums">{value}/{max}</span>
+    </div>
+  );
+}
 
 function DashboardContent() {
   const router = useRouter();
@@ -28,13 +121,10 @@ function DashboardContent() {
   const getTestSession = useStore((state) => state.getTestSession);
   const getTestAttemptStats = useStore((state) => state.getTestAttemptStats);
   const getCurrentTest = useStore((state) => state.getCurrentTest);
-  const isTestUnlocked = useStore((state) => state.isTestUnlocked);
-  const isTrainingSetUnlocked = useStore((state) => state.isTrainingSetUnlocked);
   const hasPremiumAccess = useStore((state) => state.hasPremiumAccess);
   const setPremiumStatus = useStore((state) => state.setPremiumStatus);
   const training = useStore((state) => state.training);
   const getTrainingSetProgress = useStore((state) => state.getTrainingSetProgress);
-  const getPassProbability = useStore((state) => state.getPassProbability);
   const isOnboardingComplete = useStore((state) => state.isOnboardingComplete);
   const completeTest = useStore((state) => state.completeTest);
 
@@ -43,38 +133,12 @@ function DashboardContent() {
   const [paywallFeature, setPaywallFeature] = useState<"training_set_4" | "practice_test_4">("training_set_4");
   const [showPurchaseSuccess, setShowPurchaseSuccess] = useState(false);
 
-  const passProbability = hydrated ? getPassProbability() : 0;
   const onboardingComplete = hydrated ? isOnboardingComplete() : true;
   const onboardingProgress = training.totalCorrectAllTime;
   const isPremium = hydrated ? hasPremiumAccess() : false;
 
   // Get state name from code
   const stateName = states.find((s) => s.code === selectedState)?.name || selectedState;
-
-  // Build training sets from store
-  const getTrainingSets = (): TrainingSet[] => {
-    return [1, 2, 3, 4].map((id) => {
-      const progress = getTrainingSetProgress(id);
-      return {
-        id,
-        name: t(`trainingSets.${id}`),
-        correctCount: progress.correct,
-        targetCount: progress.total,
-      };
-    });
-  };
-
-  // Get tiger face image based on pass probability (100% only for happiest)
-  const getTigerFace = (probability: number): string => {
-    if (probability >= 100) return "/tiger_face_01.png";
-    if (probability >= 85) return "/tiger_face_02.png";
-    if (probability >= 70) return "/tiger_face_03.png";
-    if (probability >= 55) return "/tiger_face_04.png";
-    if (probability >= 40) return "/tiger_face_05.png";
-    if (probability >= 25) return "/tiger_face_06.png";
-    if (probability >= 10) return "/tiger_face_07.png";
-    return "/tiger_face_08.png";
-  };
 
   // Redirect to onboarding if no state selected
   useEffect(() => {
@@ -107,7 +171,6 @@ function DashboardContent() {
     const canceled = searchParams.get("canceled");
 
     if (sessionId && success === "true" && user?.uid) {
-      // Verify purchase with backend
       const sendVerification = async () => {
         const idToken = await auth.currentUser?.getIdToken();
         if (!idToken) return;
@@ -133,7 +196,6 @@ function DashboardContent() {
               stripePaymentId: sessionId,
             });
             setShowPurchaseSuccess(true);
-            // Clean up URL
             router.replace("/dashboard");
           }
         })
@@ -141,7 +203,6 @@ function DashboardContent() {
     }
 
     if (canceled === "true") {
-      // Clean up URL
       router.replace("/dashboard");
     }
   }, [searchParams, user?.uid, setPremiumStatus, router]);
@@ -201,36 +262,53 @@ function DashboardContent() {
     }
   };
 
-  // Get status for each test
-  const getTestStatus = (testNumber: number): "not-started" | "in-progress" | "completed" => {
-    const currentTest = getCurrentTest(testNumber);
-    if (currentTest && currentTest.questions.length > 0) return "in-progress";
-    const session = getTestSession(testNumber);
-    if (session) return "completed";
-    return "not-started";
+  // Compute completion states
+  const trainingSetComplete = (id: number) => {
+    if (!hydrated) return false;
+    return getTrainingSetProgress(id).complete;
   };
 
-  const getTestProgress = (testNumber: number): number => {
-    const currentTest = getCurrentTest(testNumber);
-    if (currentTest) {
-      const answeredCount = Object.keys(currentTest.answers).length;
-      const totalQuestions = currentTest.questions.length;
-      return totalQuestions > 0 ? Math.round((answeredCount / totalQuestions) * 100) : 0;
-    }
-    return 0;
+  const testComplete = (testNumber: number) => {
+    if (!hydrated) return false;
+    const stats = getTestAttemptStats(testNumber);
+    return stats ? stats.bestScore >= 40 : false; // 40/50 = 80%
   };
 
-  const trainingSets = hydrated ? getTrainingSets() : [1, 2, 3, 4].map((id) => ({
-    id,
-    name: t(`trainingSets.${id}`),
-    correctCount: 0,
-    targetCount: 50,
-  }));
+  const getTestBestPercent = (testNumber: number): number | null => {
+    if (!hydrated) return null;
+    const stats = getTestAttemptStats(testNumber);
+    return stats ? Math.round((stats.bestScore / 50) * 100) : null;
+  };
+
+  const isTestInProgress = (testNumber: number): boolean => {
+    if (!hydrated) return false;
+    const currentTest = getCurrentTest(testNumber);
+    return !!(currentTest && currentTest.questions.length > 0);
+  };
+
+  // Count completed steps
+  const completedSteps = [
+    onboardingComplete,
+    ...[1, 2, 3, 4].map(trainingSetComplete),
+    ...[1, 2, 3, 4].map(testComplete),
+  ].filter(Boolean).length;
+
+  const totalSteps = 9;
+  const allComplete = completedSteps === totalSteps;
+
+  // Get tiger face image based on completion
+  const getTigerFace = (complete: number, total: number): string => {
+    const pct = Math.round((complete / total) * 100);
+    if (pct >= 100) return "/tiger_face_01.png";
+    if (pct >= 75) return "/tiger_face_02.png";
+    if (pct >= 50) return "/tiger_face_04.png";
+    if (pct >= 25) return "/tiger_face_06.png";
+    return "/tiger_face_08.png";
+  };
 
   return (
-    <div className="flex-1 bg-white relative">
-      <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-light to-white pointer-events-none" />
-      <div className="relative container mx-auto px-4 py-8 max-w-6xl">
+    <div className="flex-1 bg-gray-50 relative">
+      <div className="relative container mx-auto px-4 py-6 max-w-lg">
 
         {/* Paywall Modal */}
         <PaywallModal
@@ -244,15 +322,15 @@ function DashboardContent() {
 
         {/* Purchase Success Message */}
         {showPurchaseSuccess && (
-          <Card className="mb-6 bg-gradient-to-r from-green-50 to-emerald-50 border-green-200">
-            <CardContent className="p-6">
-              <div className="flex items-center gap-4">
-                <CheckCircle className="h-12 w-12 text-green-500" />
+          <Card className="mb-4 bg-gradient-to-r from-green-50 to-emerald-50 border-green-200">
+            <CardContent className="p-4">
+              <div className="flex items-center gap-3">
+                <CheckCircle className="h-8 w-8 text-green-500" />
                 <div className="flex-1">
-                  <p className="text-xl font-bold text-green-900">
+                  <p className="text-base font-bold text-green-900">
                     {t("dashboard.welcomePremium")}
                   </p>
-                  <p className="text-sm text-green-700 mt-1">
+                  <p className="text-xs text-green-700 mt-0.5">
                     {t("dashboard.premiumUnlocked")}
                   </p>
                 </div>
@@ -267,39 +345,17 @@ function DashboardContent() {
           </Card>
         )}
 
-        {/* Onboarding Card - shown during onboarding */}
-        {!onboardingComplete && (
-          <Link href="/training" className="block">
-            <Card className="mb-6 bg-gradient-to-r from-brand-light to-brand-gradient-to border-brand-border-light hover:shadow-md transition-all cursor-pointer">
-              <CardContent className="p-6">
-                <div className="flex items-center gap-4">
-                  <Zap className="h-12 w-12 text-brand" />
-                  <div className="flex-1">
-                    <p className="text-2xl font-bold text-brand-darker">
-                      {onboardingProgress}/10
-                    </p>
-                    <p className="text-sm text-brand-dark mt-1">
-                      {10 - onboardingProgress} {t("dashboard.moreToUnlock")}
-                    </p>
-                  </div>
-                  <ChevronRight className="h-6 w-6 text-brand-muted" />
-                </div>
-              </CardContent>
-            </Card>
-          </Link>
-        )}
-
-        {/* Pass Probability / Stats Card - shown after onboarding when there's data */}
+        {/* Sign-up prompt for guests */}
         {onboardingComplete && isGuest && (
-          <Card className="mb-6 bg-gradient-to-r from-brand-light to-brand-gradient-to border-brand-border-light">
-            <CardContent className="p-6">
-              <div className="flex items-center gap-4">
-                <div className="text-4xl">📊</div>
+          <Card className="mb-4 bg-gradient-to-r from-brand-light to-brand-gradient-to border-brand-border-light">
+            <CardContent className="p-4">
+              <div className="flex items-center gap-3">
+                <div className="text-2xl">📊</div>
                 <div className="flex-1">
-                  <p className="text-lg text-gray-700">
+                  <p className="text-sm text-gray-700">
                     <span className="font-bold">{t("common.signUp")}</span> {t("dashboard.signUpPrompt")}
                   </p>
-                  <Link href="/signup" className="text-sm text-brand hover:text-brand-dark font-medium mt-1 inline-block">
+                  <Link href="/signup" className="text-xs text-brand hover:text-brand-dark font-medium mt-1 inline-block">
                     {t("dashboard.createFreeAccount")}
                   </Link>
                 </div>
@@ -307,71 +363,111 @@ function DashboardContent() {
             </CardContent>
           </Card>
         )}
-        {onboardingComplete && !isGuest && passProbability > 0 && (
-          <Link href="/stats" className="block">
-            <Card className={`mb-6 cursor-pointer transition-shadow hover:shadow-lg ${
-              passProbability >= 80
-                ? "bg-gradient-to-r from-emerald-50 to-green-50 border-emerald-200"
-                : passProbability >= 60
-                  ? "bg-gradient-to-r from-lime-50 to-green-50 border-lime-200"
-                  : passProbability >= 40
-                    ? "bg-gradient-to-r from-amber-50 to-yellow-50 border-amber-200"
-                    : passProbability >= 20
-                      ? "bg-gradient-to-r from-orange-50 to-amber-50 border-orange-200"
-                      : "bg-gradient-to-r from-red-50 to-rose-50 border-red-200"
-            }`}>
-              <CardContent className="p-6">
-                <div className="flex items-center gap-4">
-                  <Image
-                    src={getTigerFace(passProbability)}
-                    alt="Tiger mascot"
-                    width={48}
-                    height={48}
-                    className="w-12 h-12"
+
+        {/* Ready for the DMV Test — hero card */}
+        <Link href="/stats" className="block mb-6">
+          <Card className={`transition-all ${
+            allComplete
+              ? "bg-gradient-to-r from-green-500 to-emerald-500 border-green-400 shadow-lg"
+              : "bg-white border-gray-200"
+          }`}>
+            <CardContent className="p-5">
+              <div className="flex items-center gap-4">
+                <Image
+                  src={getTigerFace(completedSteps, totalSteps)}
+                  alt="Tiger mascot"
+                  width={48}
+                  height={48}
+                  className="w-12 h-12"
+                />
+                <div className="flex-1">
+                  <h1 className={`text-lg font-bold ${allComplete ? "text-white" : "text-gray-900"}`}>
+                    {t("dashboard.readyForTest")}
+                  </h1>
+                  <p className={`text-xs mt-0.5 ${allComplete ? "text-green-100" : "text-gray-500"}`}>
+                    {allComplete ? t("dashboard.readyForTestDesc") : t("dashboard.notReadyYet")}
+                  </p>
+                </div>
+                <div className={`text-right ${allComplete ? "text-white" : "text-gray-900"}`}>
+                  <div className="text-2xl font-bold tabular-nums">{completedSteps}/{totalSteps}</div>
+                  <div className={`text-xs ${allComplete ? "text-green-100" : "text-gray-400"}`}>{t("dashboard.stepsComplete")}</div>
+                </div>
+              </div>
+              {/* Overall progress bar */}
+              {!allComplete && (
+                <div className="mt-3 h-2 bg-gray-100 rounded-full overflow-hidden">
+                  <div
+                    className="h-full bg-gradient-to-r from-brand to-green-500 rounded-full transition-all duration-500"
+                    style={{ width: `${Math.round((completedSteps / totalSteps) * 100)}%` }}
                   />
+                </div>
+              )}
+            </CardContent>
+          </Card>
+        </Link>
+
+        {/* Getting Started — onboarding card */}
+        {!onboardingComplete ? (
+          <Link href="/training" className="block mb-6">
+            <Card className="bg-gradient-to-r from-brand-light to-brand-gradient-to border-brand-border-light hover:shadow-md transition-all">
+              <CardContent className="p-4">
+                <div className="flex items-center gap-3">
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-brand/10 flex items-center justify-center">
+                    <Zap className="w-4 h-4 text-brand" />
+                  </div>
                   <div className="flex-1">
-                    <p className="text-xl font-bold text-gray-900">
-                      {passProbability >= 50 ? <>{passProbability}% {t("dashboard.chanceOfPassing")}</> : <>{100 - passProbability}% {t("dashboard.chanceOfFailing")}</>}
-                    </p>
-                    <p className="text-sm text-gray-500 mt-1 md:hidden">{t("dashboard.learnHowToImprove")}</p>
+                    <h3 className="font-semibold text-sm text-brand-darker">{t("dashboard.gettingStarted")}</h3>
+                    <p className="text-xs text-brand-dark mt-0.5">{t("dashboard.gettingStartedDesc")}</p>
+                    <ProgressBar value={Math.min(10, onboardingProgress)} max={10} />
                   </div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-sm text-gray-500 hidden md:inline">{t("dashboard.viewStats")}</span>
-                    <ChevronRight className={`h-6 w-6 ${
-                    passProbability >= 80
-                      ? "text-emerald-400"
-                      : passProbability >= 60
-                        ? "text-lime-400"
-                        : passProbability >= 40
-                          ? "text-amber-400"
-                          : passProbability >= 20
-                            ? "text-orange-400"
-                            : "text-red-400"
-                  }`} />
-                  </div>
+                  <ChevronRight className="h-5 w-5 text-brand-muted" />
                 </div>
               </CardContent>
             </Card>
           </Link>
+        ) : (
+          <div className="mb-6">
+            <ProgressCard
+              title={t("dashboard.gettingStarted")}
+              subtitle={t("dashboard.gettingStartedDesc")}
+              completed={true}
+              href="/training"
+            />
+          </div>
         )}
 
-        {/* Training Sets - only shown after onboarding */}
+        {/* Training Sets */}
         {onboardingComplete && (
-          <div className="mb-8">
-            <div className="mb-3">
-              <h2 className="text-xl font-bold">{t("dashboard.training")}</h2>
-            </div>
-            <p className="text-sm text-gray-500 mb-4">{t("dashboard.trainingSubtitle")}</p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              {trainingSets.map((set) => {
-                const isPremiumLocked = set.id === 4 && !isPremium && onboardingComplete;
+          <div className="mb-6">
+            <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-3 px-1">
+              {t("dashboard.training")}
+            </h2>
+            <div className="space-y-2">
+              {[1, 2, 3, 4].map((id) => {
+                const progress = hydrated ? getTrainingSetProgress(id) : { correct: 0, total: 50, complete: false };
+                const completed = progress.complete;
+                const isPremiumLocked = id === 4 && !isPremium;
+
                 return (
-                  <TrainingSetCard
-                    key={set.id}
-                    set={set}
+                  <ProgressCard
+                    key={`training-${id}`}
+                    title={t(`trainingSets.${id}`)}
+                    subtitle={
+                      isPremiumLocked
+                        ? t("common.unlockWithPremium")
+                        : completed
+                          ? `${progress.correct}/${progress.total}`
+                          : `${progress.correct}/${progress.total}`
+                    }
+                    completed={completed}
                     isPremiumLocked={isPremiumLocked}
-                    onPremiumClick={() => handlePremiumClick("training_set_4")}
-                  />
+                    href={isPremiumLocked ? undefined : `/training?set=${id}`}
+                    onClick={isPremiumLocked ? () => handlePremiumClick("training_set_4") : undefined}
+                  >
+                    {!completed && !isPremiumLocked && progress.correct > 0 && (
+                      <ProgressBar value={progress.correct} max={progress.total} />
+                    )}
+                  </ProgressCard>
                 );
               })}
             </div>
@@ -379,48 +475,63 @@ function DashboardContent() {
         )}
 
         {/* Practice Tests */}
-        <div className="mb-6">
-          <h2 className="text-xl font-bold mb-3">{t("dashboard.practiceTests")}</h2>
-          <p className="text-sm text-gray-500 mb-4">
-            {onboardingComplete ? t("dashboard.simulateExam") : t("dashboard.completeOnboarding")}
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            {[1, 2, 3, 4].map((testNumber) => {
-              const status = getTestStatus(testNumber);
-              const session = getTestSession(testNumber);
-              const attemptStats = getTestAttemptStats(testNumber);
-              const isPremiumLocked = testNumber === 4 && !isPremium && onboardingComplete;
-              const locked = !onboardingComplete;
-              const readyToTest = testNumber === 1
-                && hydrated
-                && onboardingComplete
-                && !isGuest
-                && !locked
-                && status === "not-started"
-                && training.totalCorrectAllTime >= 5;
-              return (
-                <TestCard
-                  key={testNumber}
-                  testNumber={testNumber}
-                  status={locked || isPremiumLocked ? "not-started" : status}
-                  score={session?.score}
-                  progress={getTestProgress(testNumber)}
-                  totalQuestions={50}
-                  bestScore={attemptStats?.bestScore}
-                  locked={locked}
-                  isPremiumLocked={isPremiumLocked}
-                  onPremiumClick={() => handlePremiumClick("practice_test_4")}
-                  readyToTest={readyToTest}
-                />
-              );
-            })}
+        {onboardingComplete && (
+          <div className="mb-6">
+            <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-3 px-1">
+              {t("dashboard.practiceTests")}
+            </h2>
+            <div className="space-y-2">
+              {[1, 2, 3, 4].map((testNumber) => {
+                const completed = testComplete(testNumber);
+                const bestPct = getTestBestPercent(testNumber);
+                const inProgress = isTestInProgress(testNumber);
+                const isPremiumLocked = testNumber === 4 && !isPremium;
+
+                let subtitle = t("testCard.fiftyQuestions");
+                if (isPremiumLocked) {
+                  subtitle = t("common.unlockWithPremium");
+                } else if (completed && bestPct !== null) {
+                  subtitle = `${t("dashboard.bestScore")}: ${bestPct}%`;
+                } else if (bestPct !== null) {
+                  subtitle = `${t("dashboard.bestScore")}: ${bestPct}% — ${t("dashboard.need80")}`;
+                } else if (inProgress) {
+                  const currentTest = getCurrentTest(testNumber);
+                  const answeredCount = currentTest ? Object.keys(currentTest.answers).length : 0;
+                  subtitle = `${answeredCount}/50 ${t("testCard.answered")}`;
+                }
+
+                return (
+                  <ProgressCard
+                    key={`test-${testNumber}`}
+                    title={`${t("testCard.test")} ${testNumber}`}
+                    subtitle={subtitle}
+                    completed={completed}
+                    isPremiumLocked={isPremiumLocked}
+                    href={isPremiumLocked ? undefined : `/test/${testNumber}`}
+                    onClick={isPremiumLocked ? () => handlePremiumClick("practice_test_4") : undefined}
+                  >
+                    {!completed && bestPct !== null && !isPremiumLocked && (
+                      <div className="mt-1.5 flex items-center gap-2">
+                        <div className="flex-1 h-1.5 bg-gray-100 rounded-full overflow-hidden">
+                          <div
+                            className={`h-full rounded-full transition-all duration-300 ${bestPct >= 80 ? "bg-green-500" : bestPct >= 60 ? "bg-amber-400" : "bg-brand"}`}
+                            style={{ width: `${Math.min(100, (bestPct / 80) * 100)}%` }}
+                          />
+                        </div>
+                        <span className="text-xs text-gray-400 tabular-nums">80%</span>
+                      </div>
+                    )}
+                  </ProgressCard>
+                );
+              })}
+            </div>
           </div>
-        </div>
+        )}
 
         {/* Short on time? Premium hook — free signed-in users only */}
         {onboardingComplete && !isPremium && !isGuest && (
           <Link href="/stats?tab=community" className="block">
-            <div className="rounded-xl bg-brand-light border border-brand-border-light px-5 py-4 flex items-center justify-between gap-4 hover:shadow-sm transition-shadow">
+            <div className="rounded-xl bg-white border border-gray-100 px-5 py-4 flex items-center justify-between gap-4 hover:shadow-sm transition-shadow">
               <div>
                 <p className="font-semibold text-gray-900 text-sm">
                   {t("dashboard.urgencyTitle")}
@@ -440,7 +551,7 @@ function DashboardContent() {
 
 export default function DashboardPage() {
   return (
-    <Suspense fallback={<div className="flex-1 bg-white" />}>
+    <Suspense fallback={<div className="flex-1 bg-gray-50" />}>
       <DashboardContent />
     </Suspense>
   );

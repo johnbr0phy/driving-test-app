@@ -116,6 +116,14 @@ export const es: TranslationKeys = {
     moreToUnlock: "más para desbloquear entrenamiento y exámenes",
     urgencyTitle: "¿Poco tiempo? Estudia primero las preguntas que todos fallan.",
     urgencyDesc: "Premium te muestra las preguntas que más fallan los candidatos reales.",
+    readyForTest: "Listo para el examen del DMV",
+    readyForTestDesc: "Has completado todo. ¡Ve a aprobar ese examen!",
+    notReadyYet: "Completa todos los pasos para estar listo",
+    stepsComplete: "completos",
+    gettingStarted: "Primeros pasos",
+    gettingStartedDesc: "Responde 10 preguntas correctamente",
+    need80: "Necesitas 80%+ para completar",
+    bestScore: "Mejor",
   },
 
   // Question categories (human-friendly display names)

@@ -117,7 +117,7 @@ export const es: TranslationKeys = {
     urgencyTitle: "¿Poco tiempo? Estudia primero las preguntas que todos fallan.",
     urgencyDesc: "Premium te muestra las preguntas que más fallan los candidatos reales.",
     heroTitle0: "Aprendiz Nuevo",
-    heroSub0: "Todos empezamos en algún lugar. ¡Vamos!",
+    heroSub0: "Obtén 8/8 para estar completamente preparado.",
     heroTitle1: "Primer Paso Dado",
     heroSub1: "Uno menos, siete por delante. ¡Tú puedes!",
     heroTitle2: "Tomando Impulso",

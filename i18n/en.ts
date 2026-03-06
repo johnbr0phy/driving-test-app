@@ -117,7 +117,7 @@ export const en = {
     urgencyTitle: "Short on time? Study the questions everyone fails first.",
     urgencyDesc: "Premium shows you the top questions real test-takers get wrong.",
     heroTitle0: "Blissfully Unprepared",
-    heroSub0: "Ignorance is bliss. Won't last though.",
+    heroSub0: "Score 8/8 to be fully prepared for the real thing.",
     heroTitle1: "Vaguely Aware of Roads",
     heroSub1: "One down. The DMV remains unimpressed.",
     heroTitle2: "Slightly Less Clueless",

@@ -348,8 +348,8 @@ function StatsContent() {
   }
 
   return (
-    <div className="flex-1 bg-white relative">
-      <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-light to-white pointer-events-none" />
+    <div className="flex-1 bg-gray-50 relative">
+      <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-light to-transparent pointer-events-none" />
       <div className="relative container mx-auto px-4 py-8 max-w-6xl">
         {/* Paywall Modal */}
         <PaywallModal
@@ -592,7 +592,7 @@ function StatsContent() {
                     ))}
                   </div>
                   {/* Gradient fade */}
-                  <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-white to-transparent pointer-events-none" />
+                  <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-gray-50 to-transparent pointer-events-none" />
                 </div>
 
                 {/* Lock UI — below the fade in clean white space */}
@@ -903,7 +903,7 @@ function StatsContent() {
 
 export default function StatsPage() {
   return (
-    <Suspense fallback={<div className="flex-1 bg-white" />}>
+    <Suspense fallback={<div className="flex-1 bg-gray-50" />}>
       <StatsContent />
     </Suspense>
   );

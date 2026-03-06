@@ -337,7 +337,7 @@ function DashboardContent() {
 
   return (
     <div className="flex-1 bg-gray-50 relative">
-      <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-light to-transparent pointer-events-none" />
+      <div className="absolute inset-x-0 top-0 h-96 bg-gradient-to-b from-brand-light to-transparent pointer-events-none" />
       <div className="relative container mx-auto px-4 py-6 max-w-lg md:max-w-2xl lg:max-w-4xl">
 
         {/* Paywall Modal */}

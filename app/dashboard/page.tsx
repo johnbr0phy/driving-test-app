@@ -286,14 +286,13 @@ function DashboardContent() {
     return !!(currentTest && currentTest.questions.length > 0);
   };
 
-  // Count completed steps
+  // Count completed steps (training sets + practice tests)
   const completedSteps = [
-    onboardingComplete,
     ...[1, 2, 3, 4].map(trainingSetComplete),
     ...[1, 2, 3, 4].map(testComplete),
   ].filter(Boolean).length;
 
-  const totalSteps = 9;
+  const totalSteps = 8;
   const allComplete = completedSteps === totalSteps;
 
   // Get tiger face image based on completion
@@ -308,6 +307,7 @@ function DashboardContent() {
 
   return (
     <div className="flex-1 bg-gray-50 relative">
+      <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-light to-transparent pointer-events-none" />
       <div className="relative container mx-auto px-4 py-6 max-w-lg md:max-w-2xl lg:max-w-4xl">
 
         {/* Paywall Modal */}
@@ -406,8 +406,8 @@ function DashboardContent() {
           </Card>
         </Link>
 
-        {/* Getting Started — onboarding card */}
-        {!onboardingComplete ? (
+        {/* Getting Started — inline CTA when not yet complete */}
+        {!onboardingComplete && (
           <Link href="/training" className="block mb-6">
             <Card className="bg-gradient-to-r from-brand-light to-brand-gradient-to border-brand-border-light hover:shadow-md transition-all">
               <CardContent className="p-4">
@@ -425,15 +425,6 @@ function DashboardContent() {
               </CardContent>
             </Card>
           </Link>
-        ) : (
-          <div className="mb-6">
-            <ProgressCard
-              title={t("dashboard.gettingStarted")}
-              subtitle={t("dashboard.gettingStartedDesc")}
-              completed={true}
-              href="/training"
-            />
-          </div>
         )}
 
         {/* Training & Tests — side by side on desktop */}

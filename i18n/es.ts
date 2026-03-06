@@ -137,7 +137,7 @@ export const es: TranslationKeys = {
     stepsComplete: "completos",
     gettingStarted: "Primeros pasos",
     gettingStartedDesc: "Responde 10 preguntas correctamente",
-    need80: "Necesitas 80%+ para completar",
+    need80: "Necesitas 80%+ para aprobar",
     bestScore: "Mejor",
     stampComplete: "Completo!",
     stampMastered: "Dominado!",
@@ -184,6 +184,14 @@ export const es: TranslationKeys = {
     2: "Reglas de tránsito",
     3: "Seguridad y emergencias",
     4: "Leyes estatales",
+  } as Record<number, string>,
+
+  // Practice test names (dashboard)
+  practiceTests: {
+    1: "Examen A",
+    2: "Examen B",
+    3: "Examen C",
+    4: "Examen D",
   } as Record<number, string>,
 
   // Test card

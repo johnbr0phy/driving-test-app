@@ -137,7 +137,7 @@ export const en = {
     stepsComplete: "complete",
     gettingStarted: "Getting Started",
     gettingStartedDesc: "Answer 10 questions correctly",
-    need80: "Need 80%+ to complete",
+    need80: "Need 80%+ to pass",
     bestScore: "Best",
     stampComplete: "Complete!",
     stampMastered: "Mastered!",
@@ -184,6 +184,14 @@ export const en = {
     2: "Rules of the Road",
     3: "Safety & Emergencies",
     4: "State Laws",
+  } as Record<number, string>,
+
+  // Practice test names (dashboard)
+  practiceTests: {
+    1: "Test A",
+    2: "Test B",
+    3: "Test C",
+    4: "Test D",
   } as Record<number, string>,
 
   // Test card

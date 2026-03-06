@@ -35,7 +35,7 @@ function ProgressCard({
   const content = (
     <Card className={`transition-all ${
       completed
-        ? "bg-white border-green-200 shadow-sm"
+        ? "bg-gradient-to-r from-green-50 to-emerald-50 border-green-200 shadow-sm"
         : isPremiumLocked
           ? "bg-white border-gray-100 hover:shadow-md hover:border-brand-border cursor-pointer"
           : "bg-white border-gray-100 hover:shadow-md cursor-pointer"
@@ -60,7 +60,7 @@ function ProgressCard({
 
         {/* Content */}
         <div className="flex-1 min-w-0">
-          <h3 className={`font-semibold text-sm ${completed ? "text-gray-900" : isPremiumLocked ? "text-gray-400" : "text-gray-900"}`}>
+          <h3 className={`font-semibold text-sm ${completed ? "text-green-900" : isPremiumLocked ? "text-gray-400" : "text-gray-900"}`}>
             {title}
           </h3>
           <p className={`text-xs mt-0.5 ${completed ? "text-green-600" : isPremiumLocked ? "text-brand" : "text-gray-500"}`}>
@@ -95,13 +95,19 @@ function ProgressCard({
   return content;
 }
 
+function progressColor(pct: number): string {
+  if (pct >= 75) return "bg-green-500";
+  if (pct >= 50) return "bg-amber-400";
+  return "bg-red-400";
+}
+
 function ProgressBar({ value, max }: { value: number; max: number }) {
   const pct = Math.min(100, Math.round((value / max) * 100));
   return (
     <div className="mt-1.5 flex items-center gap-2">
       <div className="flex-1 h-1.5 bg-gray-100 rounded-full overflow-hidden">
         <div
-          className="h-full bg-brand rounded-full transition-all duration-300"
+          className={`h-full rounded-full transition-all duration-300 ${progressColor(pct)}`}
           style={{ width: `${pct}%` }}
         />
       </div>
@@ -397,7 +403,7 @@ function DashboardContent() {
               {!allComplete && (
                 <div className="mt-3 h-2 bg-gray-100 rounded-full overflow-hidden">
                   <div
-                    className="h-full bg-gradient-to-r from-brand to-green-500 rounded-full transition-all duration-500"
+                    className={`h-full rounded-full transition-all duration-500 ${progressColor(Math.round((completedSteps / totalSteps) * 100))}`}
                     style={{ width: `${Math.round((completedSteps / totalSteps) * 100)}%` }}
                   />
                 </div>
@@ -506,7 +512,7 @@ function DashboardContent() {
                       <div className="mt-1.5 flex items-center gap-2">
                         <div className="flex-1 h-1.5 bg-gray-100 rounded-full overflow-hidden">
                           <div
-                            className={`h-full rounded-full transition-all duration-300 ${bestPct >= 80 ? "bg-green-500" : bestPct >= 60 ? "bg-amber-400" : "bg-brand"}`}
+                            className={`h-full rounded-full transition-all duration-300 ${progressColor(bestPct)}`}
                             style={{ width: `${Math.min(100, (bestPct / 80) * 100)}%` }}
                           />
                         </div>

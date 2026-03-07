@@ -119,10 +119,10 @@ function ProgressCard({
   return content;
 }
 
-function progressColor(pct: number): string {
-  if (pct >= 75) return "bg-green-500";
-  if (pct >= 50) return "bg-amber-400";
-  return "bg-red-400";
+function progressColorHsl(pct: number): string {
+  // Interpolate hue from orange (30) to green (142) based on percentage
+  const hue = 30 + (pct / 100) * (142 - 30);
+  return `hsl(${Math.round(hue)}, 80%, 45%)`;
 }
 
 function ProgressBar({ value, max, hideLabel }: { value: number; max: number; hideLabel?: boolean }) {
@@ -131,8 +131,8 @@ function ProgressBar({ value, max, hideLabel }: { value: number; max: number; hi
     <div className="mt-1.5 flex items-center gap-2">
       <div className="flex-1 h-1.5 bg-gray-100 rounded-full overflow-hidden">
         <div
-          className={`h-full rounded-full transition-all duration-300 ${progressColor(pct)}`}
-          style={{ width: `${pct}%` }}
+          className="h-full rounded-full transition-all duration-300"
+          style={{ width: `${pct}%`, backgroundColor: progressColorHsl(pct) }}
         />
       </div>
       {!hideLabel && <span className="text-xs text-gray-400 tabular-nums">{value}/{max}</span>}
@@ -535,8 +535,8 @@ function DashboardContent() {
                       <div className="mt-1.5 flex items-center gap-2">
                         <div className="flex-1 h-1.5 bg-gray-100 rounded-full overflow-hidden">
                           <div
-                            className={`h-full rounded-full transition-all duration-300 ${progressColor(bestPct)}`}
-                            style={{ width: `${Math.min(100, (bestPct / 80) * 100)}%` }}
+                            className="h-full rounded-full transition-all duration-300"
+                            style={{ width: `${Math.min(100, (bestPct / 80) * 100)}%`, backgroundColor: progressColorHsl(bestPct) }}
                           />
                         </div>
                         <span className="text-xs text-gray-400 tabular-nums">80%</span>

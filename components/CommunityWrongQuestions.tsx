@@ -96,7 +96,7 @@ export function CommunityWrongQuestions({ isPremium, onUpgradeClick }: Props) {
       </p>
 
       <p className="text-xs text-gray-400 italic">
-        {t("stats.tapToReveal") || "Tap a question to reveal answers, tap again to see the correct one."}
+        {t("stats.tapToReveal")}
       </p>
 
       <div className="space-y-3">
@@ -147,7 +147,7 @@ export function CommunityWrongQuestions({ isPremium, onUpgradeClick }: Props) {
                 {/* Hint text when collapsed */}
                 {stage === "collapsed" && (
                   <p className="text-xs text-brand mt-3 ml-7 font-medium">
-                    {t("stats.tapShowOptions") || "Tap to show answer choices"}
+                    {t("stats.tapShowOptions")}
                   </p>
                 )}
 
@@ -172,14 +172,14 @@ export function CommunityWrongQuestions({ isPremium, onUpgradeClick }: Props) {
                         })}
                         <p className="text-xs text-brand mt-2 font-medium flex items-center gap-1">
                           <Eye className="h-3 w-3" />
-                          {t("stats.tapShowAnswer") || "Tap to reveal correct answer"}
+                          {t("stats.tapShowAnswer")}
                         </p>
                       </>
                     ) : (
                       <div className="bg-gray-50 rounded-lg px-3 py-2">
                         <p className="text-sm text-gray-600 flex items-center gap-2">
                           <EyeOff className="h-4 w-4 text-gray-400" />
-                          {t("stats.tapShowAnswer") || "Tap to reveal correct answer"}
+                          {t("stats.tapShowAnswer")}
                         </p>
                       </div>
                     )}
@@ -230,7 +230,7 @@ export function CommunityWrongQuestions({ isPremium, onUpgradeClick }: Props) {
                       </div>
                     )}
                     <p className="text-xs text-gray-400 mt-2 font-medium">
-                      {t("stats.tapToCollapse") || "Tap to collapse"}
+                      {t("stats.tapToCollapse")}
                     </p>
                   </div>
                 )}

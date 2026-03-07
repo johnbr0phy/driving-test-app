@@ -434,6 +434,10 @@ export const es: TranslationKeys = {
     questionsLocked: "preguntas más bloqueadas",
     upgradeToSeeFullList: "Actualiza para ver la lista completa",
     notEnoughData: "Aún no hay suficientes datos — vuelve pronto.",
+    tapToReveal: "Toca una pregunta para ver las opciones, toca de nuevo para ver la respuesta correcta.",
+    tapShowOptions: "Toca para ver las opciones",
+    tapShowAnswer: "Toca para ver la respuesta correcta",
+    tapToCollapse: "Toca para cerrar",
   },
 
   // Paywall modal

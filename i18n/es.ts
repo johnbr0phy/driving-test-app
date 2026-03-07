@@ -118,7 +118,7 @@ export const es: TranslationKeys = {
     urgencyDesc: "Premium te muestra las preguntas que más fallan los candidatos reales.",
     freeBottomYourStats: "Tus Estadísticas",
     freeBottomCommonMistakes: "Errores Comunes",
-    freeBottomDesc: "Mira cómo vas o estudia las preguntas que todos fallan.",
+    freeBottomDesc: "¿Tu examen es pronto? Prepárate con las 20 preguntas que todos fallan.",
     premiumBottomTitle: "¡Todos los tests desbloqueados! Es hora de aprobar.",
     premiumBottomDesc: "Gracias por apoyar TigerTest. Si algo no va bien, ",
     premiumBottomContact: "escríbenos",

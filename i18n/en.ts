@@ -118,7 +118,7 @@ export const en = {
     urgencyDesc: "Premium shows you the top questions real test-takers get wrong.",
     freeBottomYourStats: "Your Stats",
     freeBottomCommonMistakes: "Common Mistakes",
-    freeBottomDesc: "See how you're doing or study the questions everyone gets wrong.",
+    freeBottomDesc: "Testing soon? Prep with the 20 questions people always fail.",
     premiumBottomTitle: "All tests unlocked! Time to ace this thing.",
     premiumBottomDesc: "Thank you for supporting TigerTest. If something feels off, ",
     premiumBottomContact: "give us a shout",

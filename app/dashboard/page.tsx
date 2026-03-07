@@ -578,37 +578,26 @@ function DashboardContent() {
         )}
 
         {onboardingComplete && isPremium && (
-          <div className="rounded-xl bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200 px-5 py-4">
-            <div className="flex items-center gap-3 mb-3">
-              <Image
-                src="/tiger_face_01.png"
-                alt="Tiger with crown"
-                width={36}
-                height={36}
-                className="w-9 h-9 flex-shrink-0"
-              />
-              <div className="flex-1">
-                <p className="text-sm font-bold text-amber-900">
-                  {t("dashboard.premiumBottomTitle")}
-                </p>
-                <p className="text-xs text-amber-700 mt-0.5">
-                  {t("dashboard.premiumBottomDesc")}{" "}
-                  <a href="https://www.johnbrophy.net/contact" className="underline font-medium hover:text-amber-900">
-                    {t("dashboard.premiumBottomContact")}
-                  </a>.
-                </p>
-              </div>
-            </div>
+          <div className="rounded-xl bg-white border border-gray-100 px-5 py-4">
+            <p className="text-sm font-semibold text-gray-900">
+              {t("dashboard.premiumBottomTitle")}
+            </p>
+            <p className="text-xs text-gray-500 mt-1 mb-3">
+              {t("dashboard.premiumBottomDesc")}{" "}
+              <a href="https://www.johnbrophy.net/contact" className="underline font-medium hover:text-gray-700">
+                {t("dashboard.premiumBottomContact")}
+              </a>.
+            </p>
             <div className="flex gap-2">
               <Link
                 href="/stats"
-                className="flex-1 text-center rounded-lg bg-white/70 border border-amber-200 px-3 py-2.5 text-sm font-medium text-amber-800 hover:bg-white transition-colors"
+                className="flex-1 text-center rounded-lg bg-gray-50 border border-gray-200 px-3 py-2.5 text-sm font-medium text-gray-700 hover:bg-gray-100 transition-colors"
               >
                 {t("dashboard.premiumBottomYourStats")}
               </Link>
               <Link
                 href="/stats?tab=community"
-                className="flex-1 text-center rounded-lg bg-white/70 border border-amber-200 px-3 py-2.5 text-sm font-medium text-amber-800 hover:bg-white transition-colors"
+                className="flex-1 text-center rounded-lg bg-gray-50 border border-gray-200 px-3 py-2.5 text-sm font-medium text-gray-700 hover:bg-gray-100 transition-colors"
               >
                 {t("dashboard.premiumBottomCommonMistakes")}
               </Link>

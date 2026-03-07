@@ -263,6 +263,70 @@ export const EMAIL_TEMPLATES: Record<string, string> = {
 </body>
 </html>`,
 
+  inactiveShareRequest: `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Did you pass?</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; background-color: #FFF9F5;">
+  <table role="presentation" style="width: 100%; border-collapse: collapse;">
+    <tr>
+      <td align="center" style="padding: 40px 20px;">
+        <table role="presentation" style="width: 600px; max-width: 100%; border-collapse: collapse; background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+          <tr>
+            <td style="padding: 40px 40px 24px; text-align: center;">
+              <img src="https://tigertest.io/tiger.png" alt="TigerTest" style="width: 48px; height: auto; margin-bottom: 16px;" />
+              <h1 style="margin: 0; color: #1a1a1a; font-size: 24px; font-weight: 600;">Did you pass?</h1>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 24px 40px 40px;">
+              <p style="margin: 0 0 20px; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
+                We haven't seen you on TigerTest in a while - so we're guessing you went out and aced your test.
+              </p>
+              <p style="margin: 0 0 20px; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
+                If you did - congrats! That's awesome.
+              </p>
+              <p style="margin: 0 0 20px; color: #1a1a1a; font-size: 17px; line-height: 1.7; font-weight: 600; text-align: center;">
+                If TigerTest helped you pass, please share TigerTest.io with your friends!
+              </p>
+              <p style="margin: 0 0 20px; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
+                Know someone prepping for their permit or license? Send them our way. Word of mouth is the #1 way people find us, and it really helps.
+              </p>
+              <table role="presentation" style="margin: 32px 0; border-collapse: collapse; width: 100%;">
+                <tr>
+                  <td align="center">
+                    <a href="https://tigertest.io/?utm_source=tigertest&utm_medium=email&utm_campaign=inactive_share" style="display: inline-block; padding: 14px 28px; background-color: #1a1a1a; color: #ffffff; text-decoration: none; border-radius: 50px; font-weight: 500; font-size: 15px;">Share TigerTest.io</a>
+                  </td>
+                </tr>
+              </table>
+              <p style="margin: 0 0 20px; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
+                And if you haven't taken your test yet - no judgment. We're still here whenever you're ready.
+              </p>
+              <p style="margin: 24px 0 0; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
+                Thanks for using TigerTest,<br>
+                The TigerTest Team
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 24px 40px; background-color: #FFF9F5; border-top: 1px solid #eeeeee;">
+              <p style="margin: 0; color: #999999; font-size: 12px; line-height: 1.6; text-align: center;">
+                <a href="https://tigertest.io/unsubscribe?token={{unsubscribeToken}}" style="color: #FF6B35; text-decoration: none;">Unsubscribe</a>
+                &nbsp;•&nbsp;
+                <a href="https://tigertest.io/privacy" style="color: #FF6B35; text-decoration: none;">Privacy Policy</a>
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>`,
+
   reengagement: `<!DOCTYPE html>
 <html lang="en">
 <head>

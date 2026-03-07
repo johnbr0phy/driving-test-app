@@ -125,7 +125,7 @@ function progressColor(pct: number): string {
   return "bg-red-400";
 }
 
-function ProgressBar({ value, max }: { value: number; max: number }) {
+function ProgressBar({ value, max, hideLabel }: { value: number; max: number; hideLabel?: boolean }) {
   const pct = Math.min(100, Math.round((value / max) * 100));
   return (
     <div className="mt-1.5 flex items-center gap-2">
@@ -135,7 +135,7 @@ function ProgressBar({ value, max }: { value: number; max: number }) {
           style={{ width: `${pct}%` }}
         />
       </div>
-      <span className="text-xs text-gray-400 tabular-nums">{value}/{max}</span>
+      {!hideLabel && <span className="text-xs text-gray-400 tabular-nums">{value}/{max}</span>}
     </div>
   );
 }
@@ -394,47 +394,31 @@ function DashboardContent() {
           </Card>
         )}
 
-        {/* Ready for the DMV Test — hero card */}
-        <Link href="/stats" className="block mb-6">
-          <Card className={`transition-all ${
-            allComplete
-              ? "bg-gradient-to-r from-green-500 to-emerald-500 border-green-400 shadow-lg"
-              : "bg-white border-gray-200"
-          }`}>
-            <CardContent className="p-5">
-              <div className="flex items-center gap-4">
-                <Image
-                  src={getTigerFace(completedSteps, totalSteps)}
-                  alt="Tiger mascot"
-                  width={48}
-                  height={48}
-                  className="w-12 h-12"
-                />
-                <div className="flex-1">
-                  <h1 className={`text-lg font-bold ${allComplete ? "text-white" : "text-gray-900"}`}>
-                    {t(`dashboard.heroTitle${completedSteps}`)}
-                  </h1>
-                  <p className={`text-xs mt-0.5 ${allComplete ? "text-green-100" : "text-gray-500"}`}>
-                    {t(`dashboard.heroSub${completedSteps}`)}
-                  </p>
-                </div>
-                <div className={`text-right ${allComplete ? "text-white" : "text-gray-900"}`}>
-                  <div className="text-2xl font-bold tabular-nums">{completedSteps}/{totalSteps}</div>
-                  <div className={`text-xs ${allComplete ? "text-green-100" : "text-gray-400"}`}>{t("dashboard.stepsComplete")}</div>
-                </div>
-              </div>
-              {/* Overall progress bar */}
-              {!allComplete && (
-                <div className="mt-3 h-2 bg-gray-100 rounded-full overflow-hidden">
-                  <div
-                    className={`h-full rounded-full transition-all duration-500 ${progressColor(Math.round((completedSteps / totalSteps) * 100))}`}
-                    style={{ width: `${Math.round((completedSteps / totalSteps) * 100)}%` }}
-                  />
-                </div>
-              )}
-            </CardContent>
-          </Card>
-        </Link>
+        {/* Hero section — card with progress */}
+        <div className="rounded-xl bg-white border border-gray-100 p-4 mb-6">
+          <div className="flex items-center gap-4">
+            <Image
+              src={getTigerFace(completedSteps, totalSteps)}
+              alt="Tiger mascot"
+              width={48}
+              height={48}
+              className="w-12 h-12 flex-shrink-0"
+            />
+            <div className="flex-1 min-w-0">
+              <h1 className="text-lg font-bold text-gray-900 truncate">
+                {t(`dashboard.heroTitle${completedSteps}`)}
+              </h1>
+              <p className="text-xs text-gray-500 mt-0.5">
+                {t(`dashboard.heroSub${completedSteps}`)}
+              </p>
+            </div>
+            <div className="flex-shrink-0 text-right">
+              <div className="text-2xl font-bold tabular-nums text-gray-900">{completedSteps}/{totalSteps}</div>
+              <div className="text-xs text-gray-400">{t("dashboard.stampComplete").toLowerCase()}</div>
+            </div>
+          </div>
+          <ProgressBar value={completedSteps} max={totalSteps} hideLabel />
+        </div>
 
         {/* Getting Started — inline CTA when not yet complete */}
         {!onboardingComplete && (
@@ -567,21 +551,69 @@ function DashboardContent() {
           </div>
         )}
 
-        {/* Short on time? Premium hook — free signed-in users only */}
-        {onboardingComplete && !isPremium && !isGuest && (
-          <Link href="/stats?tab=community" className="block">
-            <div className="rounded-xl bg-white border border-gray-100 px-5 py-4 flex items-center justify-between gap-4 hover:shadow-sm transition-shadow">
-              <div>
-                <p className="font-semibold text-gray-900 text-sm">
-                  {t("dashboard.urgencyTitle")}
+        {/* Bottom banner — urgency upsell for free users, thank-you for premium */}
+        {onboardingComplete && !isGuest && !isPremium && (
+          <div className="rounded-xl bg-white border border-gray-100 px-5 py-4">
+            <p className="text-sm font-semibold text-gray-900">
+              {t("dashboard.urgencyTitle")}
+            </p>
+            <p className="text-xs text-gray-500 mt-1 mb-3">
+              {t("dashboard.urgencyDesc")}
+            </p>
+            <div className="flex gap-2">
+              <Link
+                href="/stats"
+                className="flex-1 text-center rounded-lg bg-gray-50 border border-gray-200 px-3 py-2.5 text-sm font-medium text-gray-700 hover:bg-gray-100 transition-colors"
+              >
+                {t("dashboard.freeBottomYourStats")}
+              </Link>
+              <Link
+                href="/stats?tab=community"
+                className="flex-1 text-center rounded-lg bg-gray-50 border border-gray-200 px-3 py-2.5 text-sm font-medium text-gray-700 hover:bg-gray-100 transition-colors"
+              >
+                {t("dashboard.freeBottomCommonMistakes")}
+              </Link>
+            </div>
+          </div>
+        )}
+
+        {onboardingComplete && isPremium && (
+          <div className="rounded-xl bg-white border border-gray-100 px-5 py-4">
+            <div className="flex items-center gap-3 mb-3">
+              <Image
+                src="/tiger_face_01.png"
+                alt="Tiger with crown"
+                width={36}
+                height={36}
+                className="w-9 h-9 flex-shrink-0"
+              />
+              <div className="flex-1">
+                <p className="text-sm font-semibold text-gray-900">
+                  {t("dashboard.premiumBottomTitle")}
                 </p>
                 <p className="text-xs text-gray-500 mt-0.5">
-                  {t("dashboard.urgencyDesc")}
+                  {t("dashboard.premiumBottomDesc")}{" "}
+                  <a href="https://www.johnbrophy.net/contact" className="underline font-medium hover:text-gray-700">
+                    {t("dashboard.premiumBottomContact")}
+                  </a>.
                 </p>
               </div>
-              <ChevronRight className="h-5 w-5 text-brand flex-shrink-0" />
             </div>
-          </Link>
+            <div className="flex gap-2">
+              <Link
+                href="/stats"
+                className="flex-1 text-center rounded-lg bg-gray-50 border border-gray-200 px-3 py-2.5 text-sm font-medium text-gray-700 hover:bg-gray-100 transition-colors"
+              >
+                {t("dashboard.premiumBottomYourStats")}
+              </Link>
+              <Link
+                href="/stats?tab=community"
+                className="flex-1 text-center rounded-lg bg-gray-50 border border-gray-200 px-3 py-2.5 text-sm font-medium text-gray-700 hover:bg-gray-100 transition-colors"
+              >
+                {t("dashboard.premiumBottomCommonMistakes")}
+              </Link>
+            </div>
+          </div>
         )}
       </div>
     </div>

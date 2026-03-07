@@ -135,6 +135,7 @@ export const en = {
     heroTitle8: "Ready for the DMV Test",
     heroSub8: "Right then. Off you go. Try not to gloat.",
     stepsComplete: "complete",
+    heroViewStats: "View detailed stats",
     gettingStarted: "Getting Started",
     gettingStartedDesc: "Answer 10 questions correctly",
     need80: "Need 80%+ to pass",

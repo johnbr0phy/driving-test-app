@@ -394,46 +394,35 @@ function DashboardContent() {
           </Card>
         )}
 
-        {/* Ready for the DMV Test — hero card */}
+        {/* Ready for the DMV Test — inline banner linking to stats */}
         <Link href="/stats" className="block mb-6">
-          <Card className={`transition-all ${
+          <div className={`rounded-xl px-4 py-3 flex items-center gap-3 transition-all hover:shadow-sm ${
             allComplete
-              ? "bg-gradient-to-r from-green-500 to-emerald-500 border-green-400 shadow-lg"
-              : "bg-white border-gray-200"
+              ? "bg-gradient-to-r from-green-500 to-emerald-500 shadow-md"
+              : "bg-white border border-gray-200"
           }`}>
-            <CardContent className="p-5">
-              <div className="flex items-center gap-4">
-                <Image
-                  src={getTigerFace(completedSteps, totalSteps)}
-                  alt="Tiger mascot"
-                  width={48}
-                  height={48}
-                  className="w-12 h-12"
-                />
-                <div className="flex-1">
-                  <h1 className={`text-lg font-bold ${allComplete ? "text-white" : "text-gray-900"}`}>
-                    {t(`dashboard.heroTitle${completedSteps}`)}
-                  </h1>
-                  <p className={`text-xs mt-0.5 ${allComplete ? "text-green-100" : "text-gray-500"}`}>
-                    {t(`dashboard.heroSub${completedSteps}`)}
-                  </p>
-                </div>
-                <div className={`text-right ${allComplete ? "text-white" : "text-gray-900"}`}>
-                  <div className="text-2xl font-bold tabular-nums">{completedSteps}/{totalSteps}</div>
-                  <div className={`text-xs ${allComplete ? "text-green-100" : "text-gray-400"}`}>{t("dashboard.stepsComplete")}</div>
-                </div>
+            <Image
+              src={getTigerFace(completedSteps, totalSteps)}
+              alt="Tiger mascot"
+              width={40}
+              height={40}
+              className="w-10 h-10 flex-shrink-0"
+            />
+            <div className="flex-1 min-w-0">
+              <div className="flex items-baseline gap-2">
+                <h1 className={`text-sm font-bold truncate ${allComplete ? "text-white" : "text-gray-900"}`}>
+                  {t(`dashboard.heroTitle${completedSteps}`)}
+                </h1>
+                <span className={`text-xs font-semibold tabular-nums flex-shrink-0 ${allComplete ? "text-green-100" : "text-gray-400"}`}>
+                  {completedSteps}/{totalSteps}
+                </span>
               </div>
-              {/* Overall progress bar */}
-              {!allComplete && (
-                <div className="mt-3 h-2 bg-gray-100 rounded-full overflow-hidden">
-                  <div
-                    className={`h-full rounded-full transition-all duration-500 ${progressColor(Math.round((completedSteps / totalSteps) * 100))}`}
-                    style={{ width: `${Math.round((completedSteps / totalSteps) * 100)}%` }}
-                  />
-                </div>
-              )}
-            </CardContent>
-          </Card>
+              <p className={`text-xs mt-0.5 ${allComplete ? "text-green-100" : "text-gray-500"}`}>
+                {t("dashboard.heroViewStats")}
+              </p>
+            </div>
+            <ChevronRight className={`w-5 h-5 flex-shrink-0 ${allComplete ? "text-green-100" : "text-gray-400"}`} />
+          </div>
         </Link>
 
         {/* Getting Started — inline CTA when not yet complete */}

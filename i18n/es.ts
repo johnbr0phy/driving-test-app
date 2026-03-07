@@ -135,6 +135,7 @@ export const es: TranslationKeys = {
     heroTitle8: "Listo para el Examen",
     heroSub8: "Hiciste el trabajo. ¡Ve a aprobar ese examen!",
     stepsComplete: "completos",
+    heroViewStats: "Ver estadísticas detalladas",
     gettingStarted: "Primeros pasos",
     gettingStartedDesc: "Responde 10 preguntas correctamente",
     need80: "Necesitas 80%+ para aprobar",

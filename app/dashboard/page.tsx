@@ -394,26 +394,30 @@ function DashboardContent() {
           </Card>
         )}
 
-        {/* Hero section — embedded in background, not clickable */}
-        <div className="flex items-center gap-4 mb-6 px-1">
-          <Image
-            src={getTigerFace(completedSteps, totalSteps)}
-            alt="Tiger mascot"
-            width={48}
-            height={48}
-            className="w-12 h-12 flex-shrink-0"
-          />
-          <div className="flex-1 min-w-0">
-            <h1 className="text-lg font-bold text-gray-900 truncate">
-              {t(`dashboard.heroTitle${completedSteps}`)}
-            </h1>
-            <p className="text-xs text-gray-500 mt-0.5">
-              {t(`dashboard.heroSub${completedSteps}`)}
-            </p>
+        {/* Hero section — card with progress */}
+        <div className="rounded-xl bg-white border border-gray-100 p-4 mb-6">
+          <div className="flex items-center gap-4">
+            <Image
+              src={getTigerFace(completedSteps, totalSteps)}
+              alt="Tiger mascot"
+              width={48}
+              height={48}
+              className="w-12 h-12 flex-shrink-0"
+            />
+            <div className="flex-1 min-w-0">
+              <h1 className="text-lg font-bold text-gray-900 truncate">
+                {t(`dashboard.heroTitle${completedSteps}`)}
+              </h1>
+              <p className="text-xs text-gray-500 mt-0.5">
+                {t(`dashboard.heroSub${completedSteps}`)}
+              </p>
+            </div>
+            <div className="flex-shrink-0 text-right">
+              <div className="text-2xl font-bold tabular-nums text-gray-900">{completedSteps}/{totalSteps}</div>
+              <div className="text-xs text-gray-400">{t("dashboard.stampComplete").toLowerCase()}</div>
+            </div>
           </div>
-          <div className="flex-shrink-0 text-right">
-            <div className="text-2xl font-bold tabular-nums text-gray-900">{completedSteps}/{totalSteps}</div>
-          </div>
+          <ProgressBar value={completedSteps} max={totalSteps} />
         </div>
 
         {/* Getting Started — inline CTA when not yet complete */}
@@ -547,11 +551,14 @@ function DashboardContent() {
           </div>
         )}
 
-        {/* Bottom banner — stats links for free users, thank-you for premium */}
+        {/* Bottom banner — urgency upsell for free users, thank-you for premium */}
         {onboardingComplete && !isGuest && !isPremium && (
           <div className="rounded-xl bg-white border border-gray-100 px-5 py-4">
-            <p className="text-xs text-gray-500 mb-3">
-              {t("dashboard.freeBottomDesc")}
+            <p className="text-sm font-semibold text-gray-900">
+              {t("dashboard.urgencyTitle")}
+            </p>
+            <p className="text-xs text-gray-500 mt-1 mb-3">
+              {t("dashboard.urgencyDesc")}
             </p>
             <div className="flex gap-2">
               <Link

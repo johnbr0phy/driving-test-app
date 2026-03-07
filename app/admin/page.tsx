@@ -394,7 +394,12 @@ export default function AdminPage() {
                   {users.map((userData) => (
                     <tr key={userData.uid} className="border-b hover:bg-gray-50">
                       <td className="py-3 px-4">
-                        <span className="text-xs text-gray-600 font-mono">{userData.uid}</span>
+                        <div className="flex items-center gap-1.5">
+                          <span className="text-xs text-gray-600 font-mono">{userData.uid}</span>
+                          {userData.isPremium && (
+                            <span title="Premium user" className="text-base leading-none">🐯👑</span>
+                          )}
+                        </div>
                       </td>
                       <td className="py-3 px-4">
                         {userData.selectedState ? (

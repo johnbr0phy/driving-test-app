@@ -88,7 +88,7 @@ export default function LoginPage() {
 
   return (
     <div className="bg-white relative flex items-center justify-center py-12 px-4">
-      <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-light to-white pointer-events-none" />
+      {!loading && <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-light to-white pointer-events-none" />}
       <Card className="relative w-full max-w-2xl">
         <CardHeader className="space-y-1">
           <CardTitle className="text-2xl font-bold text-center">{t("login.welcomeBack")}</CardTitle>

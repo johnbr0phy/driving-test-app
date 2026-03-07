@@ -4,7 +4,7 @@ import { useEffect, useState, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { PaywallModal } from "@/components/PaywallModal";
 import { Card, CardContent } from "@/components/ui/card";
-import { Zap, ChevronRight, CheckCircle, Check, Lock } from "lucide-react";
+import { Zap, ChevronRight, CheckCircle, Check, Lock, Crown } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { useStore } from "@/store/useStore";
@@ -394,36 +394,29 @@ function DashboardContent() {
           </Card>
         )}
 
-        {/* Ready for the DMV Test — inline banner linking to stats */}
-        <Link href="/stats" className="block mb-6">
-          <div className={`rounded-xl px-4 py-3 flex items-center gap-3 transition-all hover:shadow-sm ${
-            allComplete
-              ? "bg-gradient-to-r from-green-500 to-emerald-500 shadow-md"
-              : "bg-white border border-gray-200"
-          }`}>
-            <Image
-              src={getTigerFace(completedSteps, totalSteps)}
-              alt="Tiger mascot"
-              width={40}
-              height={40}
-              className="w-10 h-10 flex-shrink-0"
-            />
-            <div className="flex-1 min-w-0">
-              <div className="flex items-baseline gap-2">
-                <h1 className={`text-sm font-bold truncate ${allComplete ? "text-white" : "text-gray-900"}`}>
-                  {t(`dashboard.heroTitle${completedSteps}`)}
-                </h1>
-                <span className={`text-xs font-semibold tabular-nums flex-shrink-0 ${allComplete ? "text-green-100" : "text-gray-400"}`}>
-                  {completedSteps}/{totalSteps}
-                </span>
-              </div>
-              <p className={`text-xs mt-0.5 ${allComplete ? "text-green-100" : "text-gray-500"}`}>
-                {t("dashboard.heroViewStats")}
-              </p>
+        {/* Hero section — embedded in background, not clickable */}
+        <div className="flex items-center gap-4 mb-6 px-1">
+          <Image
+            src={getTigerFace(completedSteps, totalSteps)}
+            alt="Tiger mascot"
+            width={48}
+            height={48}
+            className="w-12 h-12 flex-shrink-0"
+          />
+          <div className="flex-1 min-w-0">
+            <div className="flex items-baseline gap-2">
+              <h1 className="text-lg font-bold text-gray-900 truncate">
+                {t(`dashboard.heroTitle${completedSteps}`)}
+              </h1>
+              <span className="text-sm font-semibold tabular-nums text-gray-400 flex-shrink-0">
+                {completedSteps}/{totalSteps}
+              </span>
             </div>
-            <ChevronRight className={`w-5 h-5 flex-shrink-0 ${allComplete ? "text-green-100" : "text-gray-400"}`} />
+            <p className="text-xs text-gray-500 mt-0.5">
+              {t(`dashboard.heroSub${completedSteps}`)}
+            </p>
           </div>
-        </Link>
+        </div>
 
         {/* Getting Started — inline CTA when not yet complete */}
         {!onboardingComplete && (
@@ -556,21 +549,67 @@ function DashboardContent() {
           </div>
         )}
 
-        {/* Short on time? Premium hook — free signed-in users only */}
-        {onboardingComplete && !isPremium && !isGuest && (
-          <Link href="/stats?tab=community" className="block">
-            <div className="rounded-xl bg-white border border-gray-100 px-5 py-4 flex items-center justify-between gap-4 hover:shadow-sm transition-shadow">
-              <div>
-                <p className="font-semibold text-gray-900 text-sm">
-                  {t("dashboard.urgencyTitle")}
+        {/* Bottom banner — stats links for free users, thank-you for premium */}
+        {onboardingComplete && !isGuest && !isPremium && (
+          <div className="rounded-xl bg-white border border-gray-100 px-5 py-4">
+            <p className="text-xs text-gray-500 mb-3">
+              {t("dashboard.freeBottomDesc")}
+            </p>
+            <div className="flex gap-2">
+              <Link
+                href="/stats"
+                className="flex-1 text-center rounded-lg bg-gray-50 border border-gray-200 px-3 py-2.5 text-sm font-medium text-gray-700 hover:bg-gray-100 transition-colors"
+              >
+                {t("dashboard.freeBottomYourStats")}
+              </Link>
+              <Link
+                href="/stats?tab=community"
+                className="flex-1 text-center rounded-lg bg-gray-50 border border-gray-200 px-3 py-2.5 text-sm font-medium text-gray-700 hover:bg-gray-100 transition-colors"
+              >
+                {t("dashboard.freeBottomCommonMistakes")}
+              </Link>
+            </div>
+          </div>
+        )}
+
+        {onboardingComplete && isPremium && (
+          <div className="rounded-xl bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200 px-5 py-4">
+            <div className="flex items-center gap-3 mb-3">
+              <Image
+                src="/tiger_face_01.png"
+                alt="Tiger with crown"
+                width={36}
+                height={36}
+                className="w-9 h-9 flex-shrink-0"
+              />
+              <Crown className="w-4 h-4 text-amber-500 -ml-5 -mt-5" />
+              <div className="flex-1">
+                <p className="text-sm font-bold text-amber-900">
+                  {t("dashboard.premiumBottomTitle")}
                 </p>
-                <p className="text-xs text-gray-500 mt-0.5">
-                  {t("dashboard.urgencyDesc")}
+                <p className="text-xs text-amber-700 mt-0.5">
+                  {t("dashboard.premiumBottomDesc")}{" "}
+                  <a href="mailto:john@tigertest.us" className="underline font-medium hover:text-amber-900">
+                    {t("dashboard.premiumBottomContact")}
+                  </a>
                 </p>
               </div>
-              <ChevronRight className="h-5 w-5 text-brand flex-shrink-0" />
             </div>
-          </Link>
+            <div className="flex gap-2">
+              <Link
+                href="/stats"
+                className="flex-1 text-center rounded-lg bg-white/70 border border-amber-200 px-3 py-2.5 text-sm font-medium text-amber-800 hover:bg-white transition-colors"
+              >
+                {t("dashboard.premiumBottomYourStats")}
+              </Link>
+              <Link
+                href="/stats?tab=community"
+                className="flex-1 text-center rounded-lg bg-white/70 border border-amber-200 px-3 py-2.5 text-sm font-medium text-amber-800 hover:bg-white transition-colors"
+              >
+                {t("dashboard.premiumBottomCommonMistakes")}
+              </Link>
+            </div>
+          </div>
         )}
       </div>
     </div>

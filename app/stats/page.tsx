@@ -5,7 +5,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
-import { ArrowLeft, ArrowUpDown, CheckCircle, XCircle, HelpCircle, ChevronRight, Lock, X } from "lucide-react";
+import { ArrowLeft, ArrowUpDown, CheckCircle, XCircle, HelpCircle, Lock, X } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { useStore } from "@/store/useStore";
@@ -31,25 +31,6 @@ interface QuestionWithPerformance {
   accuracy: number;
 }
 
-// Category to training set mapping
-const CATEGORY_TO_SET: { [key: string]: number } = {
-  roadSigns: 1,
-  rulesOfRoad: 2,
-  safeDriving: 3,
-  specialSituations: 3,
-  alcoholDUI: 3,
-  duiStateLaws: 3,
-  duiBac: 3,
-  stateUnique: 4,
-  gdlLicensing: 4,
-  cellPhone: 4,
-  insurance: 4,
-  seatbeltPhone: 4,
-  pointsPenalties: 4,
-  speedLimits: 2,
-  general: 2,
-};
-
 function StatsContent() {
   const router = useRouter();
   const hydrated = useHydration();
@@ -57,10 +38,7 @@ function StatsContent() {
 
   const selectedState = useStore((state) => state.selectedState);
   const isGuest = useStore((state) => state.isGuest);
-  const getPassProbability = useStore((state) => state.getPassProbability);
   const getQuestionPerformance = useStore((state) => state.getQuestionPerformance);
-  const getTestAttemptStats = useStore((state) => state.getTestAttemptStats);
-  const getTrainingSetProgress = useStore((state) => state.getTrainingSetProgress);
   const hasPremiumAccess = useStore((state) => state.hasPremiumAccess);
 
   const { user } = useAuth();
@@ -152,8 +130,6 @@ function StatsContent() {
     }
   }, [hydrated, selectedState, router]);
 
-  const passProbability = hydrated ? getPassProbability() : 0;
-
   // Get all questions for the current state
   const stateQuestions = useMemo(() => {
     if (!selectedState) return [];
@@ -209,107 +185,6 @@ function StatsContent() {
     });
     return sorted;
   }, [questionsWithPerformance, sortField, sortDirection]);
-
-  // Calculate smart CTA recommendation
-  const getRecommendation = useMemo(() => {
-    if (!hydrated) return null;
-
-    // Check training set progress - prioritize completing all training sets first
-    const trainingProgress = [1, 2, 3, 4].map(setNum => ({
-      setNum,
-      progress: getTrainingSetProgress(setNum),
-    }));
-
-    // Find first training set that hasn't been started (0 correct)
-    const unstartedSet = trainingProgress.find(tp => tp.progress.correct === 0);
-    if (unstartedSet) {
-      return {
-        title: `${t("stats.start")} "${t(`trainingSets.${unstartedSet.setNum}`)}"`,
-        description: t("stats.completeAllTrainingSets"),
-        href: `/training?set=${unstartedSet.setNum}`,
-      };
-    }
-
-    // Find first incomplete training set (started but not finished)
-    const incompleteSet = trainingProgress.find(tp => tp.progress.correct < tp.progress.total);
-    if (incompleteSet) {
-      const pct = Math.round((incompleteSet.progress.correct / incompleteSet.progress.total) * 100);
-      return {
-        title: `${t("stats.finish")} "${t(`trainingSets.${incompleteSet.setNum}`)}"`,
-        description: `${pct}% ${t("stats.complete")} - ${incompleteSet.progress.total - incompleteSet.progress.correct} ${t("stats.questionsLeft")}`,
-        href: `/training?set=${incompleteSet.setNum}`,
-      };
-    }
-
-    // All training sets complete - now check test performance
-    const testStats = [1, 2, 3, 4].map(n => getTestAttemptStats(n));
-    const hasAnyTests = testStats.some(s => s && s.attemptCount > 0);
-
-    // If user is doing well, they're ready
-    if (passProbability >= 80) {
-      return {
-        title: t("stats.youreReady"),
-        description: t("stats.takePracticeTest"),
-        href: "/dashboard",
-      };
-    }
-
-    // If no tests taken yet, recommend first test
-    if (!hasAnyTests) {
-      return {
-        title: t("stats.takePracticeTest1"),
-        description: t("stats.seeWhereYouStand"),
-        href: "/test/1",
-      };
-    }
-
-    // Find worst performing category to recommend retraining
-    const categoryStats: { [key: string]: { correct: number; wrong: number } } = {};
-
-    questionsWithPerformance.forEach((q) => {
-      const category = q.question.category;
-      if (!categoryStats[category]) {
-        categoryStats[category] = { correct: 0, wrong: 0 };
-      }
-      categoryStats[category].correct += q.correct;
-      categoryStats[category].wrong += q.wrong;
-    });
-
-    let worstCategory = "";
-    let worstAccuracy = 100;
-    let worstWrongCount = 0;
-
-    Object.entries(categoryStats).forEach(([category, stats]) => {
-      const total = stats.correct + stats.wrong;
-      if (total > 0) {
-        const accuracy = (stats.correct / total) * 100;
-        if (stats.wrong > 0 && (accuracy < worstAccuracy || (accuracy === worstAccuracy && stats.wrong > worstWrongCount))) {
-          worstAccuracy = accuracy;
-          worstCategory = category;
-          worstWrongCount = stats.wrong;
-        }
-      }
-    });
-
-    // Recommend training on worst category
-    if (worstCategory && worstWrongCount > 0) {
-      const setNumber = CATEGORY_TO_SET[worstCategory] || 1;
-      const wrongPercent = Math.round(100 - worstAccuracy);
-
-      return {
-        title: `${t("stats.practice")} "${t(`trainingSets.${setNumber}`)}"`,
-        description: `${t("stats.youreGetting")} ${wrongPercent}% ${t("stats.wrongOn")} ${t(`categories.${worstCategory}`).toLowerCase()} ${t("stats.questions")}`,
-        href: `/training?set=${setNumber}`,
-      };
-    }
-
-    // Default
-    return {
-      title: t("stats.keepPracticing"),
-      description: t("stats.continueTraining"),
-      href: "/dashboard",
-    };
-  }, [hydrated, questionsWithPerformance, passProbability, getTestAttemptStats, getTrainingSetProgress, t]);
 
   const handleSort = (field: SortField) => {
     if (sortField === field) {
@@ -370,23 +245,6 @@ function StatsContent() {
             </Button>
           </Link>
         </div>
-
-        {/* Smart CTA - DO THIS */}
-        {getRecommendation && (
-          <Link href={getRecommendation.href} className="block">
-            <Card className="mb-6 border-brand-border-light bg-brand-light cursor-pointer hover:shadow-md transition-shadow">
-              <CardContent className="p-6">
-                <div className="flex items-center gap-4">
-                  <div className="flex-1">
-                    <h2 className="text-lg font-bold text-gray-900">{getRecommendation.title}</h2>
-                    <p className="text-sm text-gray-600 mt-1">{getRecommendation.description}</p>
-                  </div>
-                  <ChevronRight className="h-6 w-6 text-brand-muted flex-shrink-0" />
-                </div>
-              </CardContent>
-            </Card>
-          </Link>
-        )}
 
         {/* Tab Navigation */}
         <div className="flex gap-1 mb-6 bg-gray-100 rounded-xl p-1">

@@ -405,7 +405,7 @@ function DashboardContent() {
               className="w-12 h-12 flex-shrink-0"
             />
             <div className="flex-1 min-w-0">
-              <h1 className="text-lg font-bold text-gray-900 truncate">
+              <h1 className="text-lg font-bold text-gray-900">
                 {t(`dashboard.heroTitle${completedSteps}`)}
               </h1>
               <p className="text-xs text-gray-500 mt-0.5">

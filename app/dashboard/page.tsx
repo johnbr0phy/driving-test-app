@@ -586,7 +586,7 @@ function DashboardContent() {
                 </p>
                 <p className="text-xs text-amber-700 mt-0.5">
                   {t("dashboard.premiumBottomDesc")}{" "}
-                  <a href="mailto:john@tigertest.us" className="underline font-medium hover:text-amber-900">
+                  <a href="https://www.johnbrophy.net/contact" className="underline font-medium hover:text-amber-900">
                     {t("dashboard.premiumBottomContact")}
                   </a>.
                 </p>

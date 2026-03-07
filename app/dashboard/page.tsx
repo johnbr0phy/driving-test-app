@@ -579,15 +579,26 @@ function DashboardContent() {
 
         {onboardingComplete && isPremium && (
           <div className="rounded-xl bg-white border border-gray-100 px-5 py-4">
-            <p className="text-sm font-semibold text-gray-900">
-              {t("dashboard.premiumBottomTitle")}
-            </p>
-            <p className="text-xs text-gray-500 mt-1 mb-3">
-              {t("dashboard.premiumBottomDesc")}{" "}
-              <a href="https://www.johnbrophy.net/contact" className="underline font-medium hover:text-gray-700">
-                {t("dashboard.premiumBottomContact")}
-              </a>.
-            </p>
+            <div className="flex items-center gap-3 mb-3">
+              <Image
+                src="/tiger_face_01.png"
+                alt="Tiger with crown"
+                width={36}
+                height={36}
+                className="w-9 h-9 flex-shrink-0"
+              />
+              <div className="flex-1">
+                <p className="text-sm font-semibold text-gray-900">
+                  {t("dashboard.premiumBottomTitle")}
+                </p>
+                <p className="text-xs text-gray-500 mt-0.5">
+                  {t("dashboard.premiumBottomDesc")}{" "}
+                  <a href="https://www.johnbrophy.net/contact" className="underline font-medium hover:text-gray-700">
+                    {t("dashboard.premiumBottomContact")}
+                  </a>.
+                </p>
+              </div>
+            </div>
             <div className="flex gap-2">
               <Link
                 href="/stats"

@@ -588,7 +588,7 @@ function DashboardContent() {
                   {t("dashboard.premiumBottomDesc")}{" "}
                   <a href="mailto:john@tigertest.us" className="underline font-medium hover:text-amber-900">
                     {t("dashboard.premiumBottomContact")}
-                  </a>
+                  </a>.
                 </p>
               </div>
             </div>

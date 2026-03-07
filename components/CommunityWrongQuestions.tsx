@@ -95,10 +95,6 @@ export function CommunityWrongQuestions({ isPremium, onUpgradeClick }: Props) {
         <span className="font-medium text-gray-700">{data.totalUsers.toLocaleString()} {t("stats.realTestTakers")}</span>
       </p>
 
-      <p className="text-xs text-gray-400 italic">
-        {t("stats.tapToReveal")}
-      </p>
-
       <div className="space-y-3">
         {visibleQuestions.map((q, i) => {
           const stage = getStage(q.questionId);

@@ -11,6 +11,7 @@ import { states } from "@/data/states";
 import { ArrowLeft, Users, RefreshCw, Trash2, HelpCircle, Activity, ClipboardCheck, Share2 } from "lucide-react";
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
 interface UserData {
@@ -397,7 +398,7 @@ export default function AdminPage() {
                         <div className="flex items-center gap-1.5">
                           <span className="text-xs text-gray-600 font-mono">{userData.uid}</span>
                           {userData.isPremium && (
-                            <span title="Premium user" className="text-base leading-none">🐯👑</span>
+                            <Image src="/tiger_face_01.png" alt="Premium user" width={20} height={20} title="Premium user" className="w-5 h-5" />
                           )}
                         </div>
                       </td>

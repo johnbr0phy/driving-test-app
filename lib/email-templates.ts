@@ -284,10 +284,10 @@ export const EMAIL_TEMPLATES: Record<string, string> = {
           <tr>
             <td style="padding: 24px 40px 40px;">
               <p style="margin: 0 0 20px; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
-                We haven't seen you on TigerTest in a while — so we're guessing you went out and aced your test.
+                We haven't seen you on TigerTest in a while - so we're guessing you went out and aced your test.
               </p>
               <p style="margin: 0 0 20px; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
-                If you did — congrats! That's awesome.
+                If you did - congrats! That's awesome.
               </p>
               <p style="margin: 0 0 20px; color: #1a1a1a; font-size: 17px; line-height: 1.7; font-weight: 600; text-align: center;">
                 If TigerTest helped you pass, please share TigerTest.io with your friends!
@@ -303,7 +303,7 @@ export const EMAIL_TEMPLATES: Record<string, string> = {
                 </tr>
               </table>
               <p style="margin: 0 0 20px; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
-                And if you haven't taken your test yet — no judgment. We're still here whenever you're ready.
+                And if you haven't taken your test yet - no judgment. We're still here whenever you're ready.
               </p>
               <p style="margin: 24px 0 0; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
                 Thanks for using TigerTest,<br>

@@ -125,7 +125,7 @@ function progressColor(pct: number): string {
   return "bg-red-400";
 }
 
-function ProgressBar({ value, max }: { value: number; max: number }) {
+function ProgressBar({ value, max, hideLabel }: { value: number; max: number; hideLabel?: boolean }) {
   const pct = Math.min(100, Math.round((value / max) * 100));
   return (
     <div className="mt-1.5 flex items-center gap-2">
@@ -135,7 +135,7 @@ function ProgressBar({ value, max }: { value: number; max: number }) {
           style={{ width: `${pct}%` }}
         />
       </div>
-      <span className="text-xs text-gray-400 tabular-nums">{value}/{max}</span>
+      {!hideLabel && <span className="text-xs text-gray-400 tabular-nums">{value}/{max}</span>}
     </div>
   );
 }
@@ -417,7 +417,7 @@ function DashboardContent() {
               <div className="text-xs text-gray-400">{t("dashboard.stampComplete").toLowerCase()}</div>
             </div>
           </div>
-          <ProgressBar value={completedSteps} max={totalSteps} />
+          <ProgressBar value={completedSteps} max={totalSteps} hideLabel />
         </div>
 
         {/* Getting Started — inline CTA when not yet complete */}

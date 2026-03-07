@@ -434,6 +434,10 @@ export const en = {
     questionsLocked: "more questions locked",
     upgradeToSeeFullList: "Upgrade to see the full list",
     notEnoughData: "Not enough data yet — check back soon.",
+    tapToReveal: "Tap a question to reveal answers, tap again to see the correct one.",
+    tapShowOptions: "Tap to show answer choices",
+    tapShowAnswer: "Tap to reveal correct answer",
+    tapToCollapse: "Tap to collapse",
   },
 
   // Paywall modal

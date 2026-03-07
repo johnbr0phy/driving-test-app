@@ -119,7 +119,7 @@ export const es: TranslationKeys = {
     freeBottomYourStats: "Tus Estadísticas",
     freeBottomCommonMistakes: "Errores Comunes",
     freeBottomDesc: "Mira cómo vas o estudia las preguntas que todos fallan.",
-    premiumBottomTitle: "¡Eres genial por ser premium!",
+    premiumBottomTitle: "Tienes todo el arsenal a tu disposición.",
     premiumBottomDesc: "Si algo no se siente bien en la app, avísanos.",
     premiumBottomContact: "Contáctanos",
     premiumBottomYourStats: "Tus Estadísticas",

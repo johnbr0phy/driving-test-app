@@ -4,7 +4,7 @@ import { useEffect, useState, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { PaywallModal } from "@/components/PaywallModal";
 import { Card, CardContent } from "@/components/ui/card";
-import { Zap, ChevronRight, CheckCircle, Check, Lock, Crown } from "lucide-react";
+import { Zap, ChevronRight, CheckCircle, Check, Lock } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { useStore } from "@/store/useStore";
@@ -404,17 +404,15 @@ function DashboardContent() {
             className="w-12 h-12 flex-shrink-0"
           />
           <div className="flex-1 min-w-0">
-            <div className="flex items-baseline gap-2">
-              <h1 className="text-lg font-bold text-gray-900 truncate">
-                {t(`dashboard.heroTitle${completedSteps}`)}
-              </h1>
-              <span className="text-sm font-semibold tabular-nums text-gray-400 flex-shrink-0">
-                {completedSteps}/{totalSteps}
-              </span>
-            </div>
+            <h1 className="text-lg font-bold text-gray-900 truncate">
+              {t(`dashboard.heroTitle${completedSteps}`)}
+            </h1>
             <p className="text-xs text-gray-500 mt-0.5">
               {t(`dashboard.heroSub${completedSteps}`)}
             </p>
+          </div>
+          <div className="flex-shrink-0 text-right">
+            <div className="text-2xl font-bold tabular-nums text-gray-900">{completedSteps}/{totalSteps}</div>
           </div>
         </div>
 
@@ -582,7 +580,6 @@ function DashboardContent() {
                 height={36}
                 className="w-9 h-9 flex-shrink-0"
               />
-              <Crown className="w-4 h-4 text-amber-500 -ml-5 -mt-5" />
               <div className="flex-1">
                 <p className="text-sm font-bold text-amber-900">
                   {t("dashboard.premiumBottomTitle")}

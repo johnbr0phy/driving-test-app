@@ -119,7 +119,7 @@ export const en = {
     freeBottomYourStats: "Your Stats",
     freeBottomCommonMistakes: "Common Mistakes",
     freeBottomDesc: "See how you're doing or study the questions everyone gets wrong.",
-    premiumBottomTitle: "You're awesome for going premium!",
+    premiumBottomTitle: "Right then, you've got the full toolkit.",
     premiumBottomDesc: "If anything feels off in the app, let us know.",
     premiumBottomContact: "Contact us",
     premiumBottomYourStats: "Your Stats",

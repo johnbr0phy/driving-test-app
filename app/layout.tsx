@@ -80,7 +80,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased flex flex-col min-h-screen">
+      <body className="antialiased flex flex-col min-h-dvh">
         <Providers>
           <HeaderSwitch />
           <main className="flex-1 flex flex-col">{children}</main>

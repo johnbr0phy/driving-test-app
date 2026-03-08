@@ -284,16 +284,16 @@ export const EMAIL_TEMPLATES: Record<string, string> = {
           <tr>
             <td style="padding: 24px 40px 40px;">
               <p style="margin: 0 0 20px; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
-                We haven't seen you on TigerTest in a while - so we're guessing you went out and aced your test.
+                We haven't seen you on TigerTest in a while - so we're guessing you went out and aced your test!!
               </p>
               <p style="margin: 0 0 20px; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
                 If you did - congrats! That's awesome.
               </p>
-              <p style="margin: 0 0 20px; color: #1a1a1a; font-size: 17px; line-height: 1.7; font-weight: 600; text-align: center;">
-                If TigerTest helped you pass, please share TigerTest.io with your friends!
+              <p style="margin: 0 0 20px; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
+                One small favor from us - if TigerTest helped you pass, please consider sharing it with your friends. Chuck it on your school message board or mention us to anyone looking to pass.
               </p>
               <p style="margin: 0 0 20px; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
-                Know someone prepping for their permit or license? Send them our way. Word of mouth is the #1 way people find us, and it really helps.
+                Word of mouth is the #1 way people find us, and it really helps us grow the site.
               </p>
               <table role="presentation" style="margin: 32px 0; border-collapse: collapse; width: 100%;">
                 <tr>

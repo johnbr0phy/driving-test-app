@@ -121,7 +121,7 @@ export function PaywallModal({
               disabled={loading}
               className="w-full bg-brand hover:bg-brand-hover text-white font-semibold py-6 text-base rounded-full"
             >
-              {loading ? t("common.loading") : `${t("paywall.getPremium")} — $9.99`}
+              {loading ? t("common.loading") : t("paywall.getPremium")}
             </Button>
             <button
               onClick={() => onOpenChange(false)}

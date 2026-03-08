@@ -5,14 +5,14 @@ import {
   Dialog,
   DialogContent,
   DialogDescription,
-  DialogFooter,
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
-import { Lock, Sparkles, CheckCircle } from "lucide-react";
+import { CheckCircle, Star } from "lucide-react";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { en, es } from "@/i18n";
+import Image from "next/image";
 
 interface PaywallModalProps {
   open: boolean;
@@ -46,79 +46,102 @@ export function PaywallModal({
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-md">
-        <DialogHeader>
-          <div className="flex items-center gap-2 mb-2">
-            <div className="p-2 bg-brand-light rounded-full">
-              <Lock className="h-5 w-5 text-brand" />
-            </div>
-            <DialogTitle className="text-xl">{t("paywall.unlockPremiumContent")}</DialogTitle>
+      <DialogContent className="sm:max-w-md p-6 gap-0">
+        <DialogHeader className="pb-4">
+          <div className="flex items-center gap-3">
+            <Image
+              src="/tiger_face_01.png"
+              alt="TigerTest"
+              width={56}
+              height={56}
+              className="flex-shrink-0"
+            />
+            <DialogTitle className="text-2xl font-bold leading-tight text-gray-900">
+              {t("paywall.studySmart")}
+              <br />
+              {t("paywall.passFirstTime")}
+            </DialogTitle>
           </div>
-          <DialogDescription className="pt-2 text-base">
-            {t("paywall.getAccessTo")} <strong>{dict.paywall.featureNames[feature]}</strong> {t("paywall.andCompleteDMVPrep")}
+          <DialogDescription className="sr-only">
+            {t("paywall.unlockPremiumContent")}
           </DialogDescription>
         </DialogHeader>
 
-        <div className="py-4">
-          <div className="bg-gradient-to-r from-brand-light to-brand-gradient-to rounded-lg p-4 mb-4">
-            <div className="flex items-center gap-2 mb-3">
-              <Sparkles className="h-5 w-5 text-brand" />
-              <span className="font-semibold text-gray-900">{t("paywall.tigerTestPremium")}</span>
+        {/* What you get section */}
+        <div className="rounded-xl border border-brand-border-light overflow-hidden mb-5 bg-brand-light">
+          <div className="p-4 pb-3">
+            <div className="text-xs font-bold text-brand tracking-wider mb-3">
+              {t("paywall.whatYouGet")}
             </div>
-            <ul className="space-y-2">
+            <ul className="space-y-2.5">
               {dict.paywall.benefits.map((benefit, index) => (
-                <li key={index} className="flex items-start gap-2 text-sm text-gray-700">
-                  <CheckCircle className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
+                <li key={index} className="flex items-center gap-2.5 text-sm text-gray-800">
+                  <CheckCircle className="h-5 w-5 text-green-600 fill-green-100 flex-shrink-0" />
                   <span>{benefit}</span>
                 </li>
               ))}
             </ul>
           </div>
-
-          <div className="text-center">
-            <div className="text-3xl font-bold text-gray-900">$9.99</div>
-            <div className="text-sm text-gray-500">{t("paywall.oneTimePayment")}</div>
-          </div>
         </div>
 
+        {/* Price section */}
+        <div className="mb-5">
+          <div className="flex items-baseline justify-between">
+            <span className="text-4xl font-bold text-gray-900">$9.99</span>
+            <span className="border border-brand text-brand text-xs font-semibold px-3 py-1 rounded-full">
+              {t("paywall.cheaperThanRetest")}
+            </span>
+          </div>
+          <div className="text-sm text-gray-500 mt-1">{t("paywall.oneTimePayment")}</div>
+        </div>
+
+        {/* CTA section */}
         {isGuest ? (
-          <DialogFooter className="flex flex-col gap-2 sm:flex-col">
-            <p className="text-sm text-gray-600 text-center mb-2">
+          <div className="flex flex-col items-center gap-2">
+            <p className="text-sm text-gray-600 text-center mb-1">
               {t("paywall.createFreeAccountPrompt")}
             </p>
             <Button
               onClick={onSignUp}
-              className="w-full bg-black text-white hover:bg-gray-800"
+              className="w-full bg-brand hover:bg-brand-hover text-white font-semibold py-6 text-base rounded-full"
             >
               {t("common.createAccount")}
             </Button>
-            <Button
-              variant="outline"
+            <button
               onClick={() => onOpenChange(false)}
-              className="w-full"
+              className="text-sm text-gray-400 hover:text-gray-600 py-2 transition-colors"
             >
-              {t("common.maybeLater")}
-            </Button>
-          </DialogFooter>
+              {t("paywall.illTakeMyChances")}
+            </button>
+          </div>
         ) : (
-          <DialogFooter className="flex flex-col gap-2 sm:flex-col">
+          <div className="flex flex-col items-center gap-2">
             <Button
               onClick={handleUpgrade}
               disabled={loading}
-              className="w-full bg-black text-white hover:bg-gray-800"
+              className="w-full bg-brand hover:bg-brand-hover text-white font-semibold py-6 text-base rounded-full"
             >
-              {loading ? t("common.loading") : t("paywall.upgradeNow")}
+              {loading ? t("common.loading") : t("paywall.getPremium")}
             </Button>
-            <Button
-              variant="outline"
+            <button
               onClick={() => onOpenChange(false)}
-              className="w-full"
               disabled={loading}
+              className="text-sm text-gray-400 hover:text-gray-600 py-2 transition-colors disabled:opacity-50"
             >
-              {t("common.maybeLater")}
-            </Button>
-          </DialogFooter>
+              {t("paywall.illTakeMyChances")}
+            </button>
+          </div>
         )}
+
+        {/* Social proof */}
+        <div className="flex items-center justify-center gap-1.5 mt-4 pt-3 border-t border-gray-100">
+          <div className="flex">
+            {[...Array(5)].map((_, i) => (
+              <Star key={i} className="h-3.5 w-3.5 text-yellow-400 fill-yellow-400" />
+            ))}
+          </div>
+          <span className="text-xs text-gray-500">{t("paywall.socialProof")}</span>
+        </div>
       </DialogContent>
     </Dialog>
   );

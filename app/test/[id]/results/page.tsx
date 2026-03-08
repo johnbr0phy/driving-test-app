@@ -14,6 +14,7 @@ import { useHydration } from "@/hooks/useHydration";
 import { Cloud } from "lucide-react";
 import { Fireworks } from "@/components/Fireworks";
 import { ShareButton } from "@/components/ShareButton";
+import { ReferralCard } from "@/components/ReferralCard";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { states } from "@/data/states";
 
@@ -63,6 +64,7 @@ export default function ResultsPage() {
   const isGuest = useStore((state) => state.isGuest);
   const isTestUnlocked = useStore((state) => state.isTestUnlocked);
   const hasPremiumAccess = useStore((state) => state.hasPremiumAccess);
+  const userId = useStore((state) => state.userId);
   const [expandedQuestions, setExpandedQuestions] = useState<Set<number>>(new Set());
   const [loading, setLoading] = useState(true);
   const [showFireworks, setShowFireworks] = useState(false);
@@ -338,6 +340,11 @@ export default function ResultsPage() {
               </div>
             </CardContent>
           </Card>
+        )}
+
+        {/* Referral Card — shown to logged-in users who passed */}
+        {passed && !isGuest && (
+          <ReferralCard userId={userId} isPremium={isPremium} />
         )}
 
         {/* Improvement Stats */}

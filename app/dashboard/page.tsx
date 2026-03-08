@@ -119,9 +119,7 @@ function ProgressCard({
   return content;
 }
 
-function progressColor(pct: number): string {
-  if (pct >= 66) return "bg-green-500";
-  if (pct >= 33) return "bg-orange-400";
+function progressColor(): string {
   return "bg-red-400";
 }
 

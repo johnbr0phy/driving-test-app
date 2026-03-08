@@ -31,6 +31,8 @@ export const es: TranslationKeys = {
     noAccount: "¿No tienes cuenta?",
     alreadyHaveAccount: "¿Ya tienes cuenta?",
     logIn: "Iniciar sesión",
+    or: "O",
+    enterYourEmail: "Ingresa tu email",
   },
 
   // Footer

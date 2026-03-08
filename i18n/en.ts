@@ -29,6 +29,8 @@ export const en = {
     noAccount: "Don't have an account?",
     alreadyHaveAccount: "Already have an account?",
     logIn: "Log in",
+    or: "Or",
+    enterYourEmail: "Enter your email",
   },
 
   // Header is minimal - just the auth buttons covered by common

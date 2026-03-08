@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, Suspense } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { useAuth } from "@/contexts/AuthContext";
@@ -42,12 +42,23 @@ function SignupPageContent() {
   const stateParam = searchParams.get("state");
   const preselectedState = stateParam && states.find((s) => s.code === stateParam) ? stateParam : null;
 
+  // Check for email query param (e.g. /signup?email=user@example.com from homepage inline auth)
+  const emailParam = searchParams.get("email");
+
+  // Pre-fill email from query param (homepage inline auth)
+  useEffect(() => {
+    if (emailParam) {
+      setEmail(emailParam);
+    }
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+
   const [selectedState, setSelectedState] = useState<string | null>(preselectedState);
 
   // If guest already has a state selected, or state was provided via URL, skip step 1
   const guestHasState = isGuest && storeSelectedState;
   const hasPreselectedState = !!preselectedState;
-  const [step, setStep] = useState<1 | 2>(guestHasState || hasPreselectedState ? 2 : 1);
+  const hasEmailFromHomepage = !!emailParam;
+  const [step, setStep] = useState<1 | 2>(guestHasState || hasPreselectedState || hasEmailFromHomepage ? 2 : 1);
 
   const handleStateSelect = () => {
     if (!selectedState) {
@@ -62,10 +73,6 @@ function SignupPageContent() {
   const handleGoogleSignIn = async () => {
     // For guests, use existing state; for preselected from URL or manual selection
     const stateToUse = guestHasState ? storeSelectedState : selectedState;
-    if (!stateToUse) {
-      setError(t("signup.pleaseSelectLocation"));
-      return;
-    }
 
     setError("");
     setLoading(true);
@@ -75,8 +82,8 @@ function SignupPageContent() {
       setStoreEmailConsent(true);
       
       await loginWithGoogle();
-      // Only set state if not a guest (guests already have state set)
-      if (!guestHasState) {
+      // Only set state if not a guest (guests already have state set) and state was selected
+      if (!guestHasState && stateToUse) {
         setStoreState(stateToUse);
       }
 
@@ -98,8 +105,9 @@ function SignupPageContent() {
       // Wait for user data to load before redirecting
       await new Promise(resolve => setTimeout(resolve, 800));
 
-      // Redirect to dashboard
-      router.push("/dashboard");
+      // Redirect: if state is set go to dashboard, otherwise select state first
+      const hasState = useStore.getState().selectedState;
+      router.push(hasState ? "/dashboard" : "/onboarding/select-state");
     } catch (err: any) {
       setError(err.message || "Failed to sign in with Google");
     } finally {
@@ -127,9 +135,9 @@ function SignupPageContent() {
       
       // Create user account
       await signup(email, password);
-      // Only set state if not a guest (guests already have state set)
-      if (!guestHasState) {
-        setStoreState(selectedState!);
+      // Only set state if not a guest (guests already have state set) and state was selected
+      if (!guestHasState && selectedState) {
+        setStoreState(selectedState);
       }
 
       // Fire welcome email (fire-and-forget, don't block redirect)
@@ -150,8 +158,9 @@ function SignupPageContent() {
       // Small delay to ensure state is saved
       await new Promise(resolve => setTimeout(resolve, 100));
 
-      // Redirect to dashboard
-      router.push("/dashboard");
+      // Redirect: if state is set go to dashboard, otherwise select state first
+      const hasState = useStore.getState().selectedState;
+      router.push(hasState ? "/dashboard" : "/onboarding/select-state");
     } catch (err: any) {
       setError(err.message || "Failed to create account");
       setLoading(false);
@@ -303,7 +312,7 @@ function SignupPageContent() {
                 <div className="flex gap-3">
                   <Button
                     type="button"
-                    onClick={() => guestHasState ? router.push("/dashboard") : setStep(1)}
+                    onClick={() => guestHasState ? router.push("/dashboard") : hasEmailFromHomepage ? router.push("/") : setStep(1)}
                     disabled={loading}
                     className="w-full bg-white text-black hover:bg-gray-100 border-2 border-gray-300"
                   >

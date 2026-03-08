@@ -129,7 +129,7 @@ function ProgressBar({ value, max, hideLabel }: { value: number; max: number; hi
     <div className="mt-1.5 flex items-center gap-2">
       <div className="flex-1 h-1.5 bg-gray-100 rounded-full overflow-hidden">
         <div
-          className={`h-full rounded-full transition-all duration-300 ${progressColor(pct)}`}
+          className={`h-full rounded-full transition-all duration-300 ${progressColor()}`}
           style={{ width: `${pct}%` }}
         />
       </div>
@@ -533,7 +533,7 @@ function DashboardContent() {
                       <div className="mt-1.5 flex items-center gap-2">
                         <div className="flex-1 h-1.5 bg-gray-100 rounded-full overflow-hidden">
                           <div
-                            className={`h-full rounded-full transition-all duration-300 ${progressColor(bestPct)}`}
+                            className={`h-full rounded-full transition-all duration-300 ${progressColor()}`}
                             style={{ width: `${Math.min(100, (bestPct / 80) * 100)}%` }}
                           />
                         </div>

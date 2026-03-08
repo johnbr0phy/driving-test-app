@@ -68,7 +68,7 @@ export function PaywallModal({
         </DialogHeader>
 
         {/* What you get section */}
-        <div className="rounded-xl border border-brand-border-light overflow-hidden mb-5" style={{ background: "linear-gradient(to bottom, hsl(var(--brand-light)), white)" }}>
+        <div className="rounded-xl border border-brand-border-light overflow-hidden mb-5 bg-brand-light">
           <div className="p-4 pb-3">
             <div className="text-xs font-bold text-brand tracking-wider mb-3">
               {t("paywall.whatYouGet")}
@@ -86,7 +86,7 @@ export function PaywallModal({
 
         {/* Price section */}
         <div className="mb-5">
-          <div className="flex items-baseline gap-3">
+          <div className="flex items-baseline justify-between">
             <span className="text-4xl font-bold text-gray-900">$9.99</span>
             <span className="border border-brand text-brand text-xs font-semibold px-3 py-1 rounded-full">
               {t("paywall.cheaperThanRetest")}

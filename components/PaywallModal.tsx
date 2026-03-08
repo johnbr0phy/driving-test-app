@@ -10,9 +10,10 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
-import { Lock, Sparkles, CheckCircle } from "lucide-react";
+import { Lock, Sparkles, CheckCircle, Star } from "lucide-react";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { en, es } from "@/i18n";
+import { SocialProofTicker } from "@/components/SocialProofTicker";
 
 interface PaywallModalProps {
   open: boolean;
@@ -60,6 +61,21 @@ export function PaywallModal({
         </DialogHeader>
 
         <div className="py-4">
+          {/* Social proof ticker */}
+          <div className="mb-4">
+            <SocialProofTicker />
+          </div>
+
+          {/* Star rating strip */}
+          <div className="flex items-center justify-center gap-1.5 mb-4">
+            {[1, 2, 3, 4, 5].map((i) => (
+              <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+            ))}
+            <span className="text-sm text-gray-600 ml-1">
+              <span className="font-semibold text-gray-900">4.8</span> · 1,200+ students passed
+            </span>
+          </div>
+
           <div className="bg-gradient-to-r from-brand-light to-brand-gradient-to rounded-lg p-4 mb-4">
             <div className="flex items-center gap-2 mb-3">
               <Sparkles className="h-5 w-5 text-brand" />
@@ -78,6 +94,9 @@ export function PaywallModal({
           <div className="text-center">
             <div className="text-3xl font-bold text-gray-900">$9.99</div>
             <div className="text-sm text-gray-500">{t("paywall.oneTimePayment")}</div>
+            <div className="mt-1 text-xs text-green-600 font-medium">
+              ✓ Less than the cost of failing and rebooking
+            </div>
           </div>
         </div>
 

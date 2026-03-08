@@ -290,7 +290,7 @@ export const EMAIL_TEMPLATES: Record<string, string> = {
                 If you did - congrats! That's awesome.
               </p>
               <p style="margin: 0 0 20px; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
-                One small favor from us - if TigerTest helped you pass, please consider sharing it with your friends. Chuck it on your school message board or mention us to anyone looking to pass.
+                One small favor from us - <strong style="font-weight: 600;">if TigerTest helped you pass, please consider sharing it with your friends</strong>. Chuck it on your school message board or mention us to anyone looking to pass.
               </p>
               <p style="margin: 0 0 20px; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
                 Word of mouth is the #1 way people find us, and it really helps us grow the site.

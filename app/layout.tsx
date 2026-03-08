@@ -1,9 +1,17 @@
 import type { Metadata } from "next";
+import { Poppins } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import { HeaderSwitch } from "@/components/HeaderSwitch";
 import { Footer } from "@/components/Footer";
 import { Providers } from "@/components/Providers";
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
+  variable: "--font-poppins",
+});
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
@@ -79,8 +87,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className="antialiased flex flex-col min-h-dvh">
+    <html lang="en" className={poppins.variable}>
+      <body className="font-poppins antialiased flex flex-col min-h-dvh">
         <Providers>
           <HeaderSwitch />
           <main className="flex-1 flex flex-col">{children}</main>

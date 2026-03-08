@@ -11,6 +11,9 @@ export default {
   safelist: [],
   theme: {
     extend: {
+      fontFamily: {
+        poppins: ["var(--font-poppins)", "sans-serif"],
+      },
       colors: {
         brand: {
           DEFAULT: "hsl(var(--brand))",

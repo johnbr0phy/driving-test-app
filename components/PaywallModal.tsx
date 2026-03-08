@@ -68,23 +68,25 @@ export function PaywallModal({
         </DialogHeader>
 
         {/* What you get section */}
-        <div className="border-2 border-brand rounded-xl p-4 mb-5">
-          <div className="text-xs font-bold text-brand tracking-wider mb-3">
-            {t("paywall.whatYouGet")}
+        <div className="rounded-xl border border-brand-border-light overflow-hidden mb-5" style={{ background: "linear-gradient(to bottom, hsl(var(--brand-light)), white)" }}>
+          <div className="p-4 pb-3">
+            <div className="text-xs font-bold text-brand tracking-wider mb-3">
+              {t("paywall.whatYouGet")}
+            </div>
+            <ul className="space-y-2.5">
+              {dict.paywall.benefits.map((benefit, index) => (
+                <li key={index} className="flex items-center gap-2.5 text-sm text-gray-800">
+                  <CheckCircle className="h-5 w-5 text-green-600 fill-green-100 flex-shrink-0" />
+                  <span>{benefit}</span>
+                </li>
+              ))}
+            </ul>
           </div>
-          <ul className="space-y-2.5">
-            {dict.paywall.benefits.map((benefit, index) => (
-              <li key={index} className="flex items-center gap-2.5 text-sm text-gray-800">
-                <CheckCircle className="h-5 w-5 text-brand fill-brand-light flex-shrink-0" />
-                <span>{benefit}</span>
-              </li>
-            ))}
-          </ul>
         </div>
 
         {/* Price section */}
-        <div className="text-center mb-5">
-          <div className="flex items-baseline justify-center gap-3">
+        <div className="mb-5">
+          <div className="flex items-baseline gap-3">
             <span className="text-4xl font-bold text-gray-900">$9.99</span>
             <span className="border border-brand text-brand text-xs font-semibold px-3 py-1 rounded-full">
               {t("paywall.cheaperThanRetest")}

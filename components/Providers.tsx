@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import { ThemeProvider } from "next-themes";
 import { AuthProvider } from "@/contexts/AuthContext";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import { DataResetNotification } from "@/components/DataResetNotification";
@@ -40,12 +41,14 @@ function PremiumTheme() {
 
 export function Providers({ children }: { children: React.ReactNode }) {
   return (
-    <LanguageProvider>
-      <AuthProvider>
-        {children}
-        <DataResetNotificationWrapper />
-        <PremiumTheme />
-      </AuthProvider>
-    </LanguageProvider>
+    <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
+      <LanguageProvider>
+        <AuthProvider>
+          {children}
+          <DataResetNotificationWrapper />
+          <PremiumTheme />
+        </AuthProvider>
+      </LanguageProvider>
+    </ThemeProvider>
   );
 }

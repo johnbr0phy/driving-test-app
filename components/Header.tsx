@@ -11,6 +11,7 @@ import { useHydration } from "@/hooks/useHydration";
 import { useTranslation } from "@/contexts/LanguageContext";
 import Image from "next/image";
 import { Shield } from "lucide-react";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import type { Language } from "@/i18n";
 
 export function Header() {
@@ -50,26 +51,28 @@ export function Header() {
   }
 
   return (
-    <header className="border-b bg-white">
+    <header className="border-b bg-white dark:bg-gray-950 dark:border-gray-800">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <Link href={user || isGuest ? "/dashboard" : "/"} className="flex items-center gap-2 group flex-shrink-0">
             <Image src={isPremium ? "/tiger_face_01.png" : "/tiger.png"} alt="tigertest.io" width={40} height={40} className="w-10 h-10" />
-            <span className="text-2xl font-bold text-gray-900 group-hover:opacity-80 transition-opacity hidden sm:inline">
+            <span className="text-2xl font-bold text-gray-900 dark:text-gray-100 group-hover:opacity-80 transition-opacity hidden sm:inline">
               tigertest.io
             </span>
           </Link>
 
           <div className="flex items-center gap-2 sm:gap-4">
+            <ThemeToggle />
+
             {/* Language Toggle - hidden on SEO pages which have dedicated /es/ versions */}
             {!isSeoPage && (
-              <div className="flex items-center bg-gray-100 rounded-full p-0.5">
+              <div className="flex items-center bg-gray-100 dark:bg-gray-800 rounded-full p-0.5">
                 {([["en", "\u{1F1FA}\u{1F1F8}"], ["es", "\u{1F1EA}\u{1F1F8}"]] as [Language, string][]).map(([lang, flag]) => (
                   <button
                     key={lang}
                     onClick={() => setLanguage(lang)}
                     className={`px-1.5 py-1 text-sm rounded-full transition-colors ${
                       language === lang
-                        ? "bg-white shadow-sm"
+                        ? "bg-white dark:bg-gray-700 shadow-sm"
                         : "opacity-50 hover:opacity-75"
                     }`}
                   >
@@ -82,7 +85,7 @@ export function Header() {
             {user ? (
               <>
                 {isAdmin && (
-                  <Link href="/admin" className="text-gray-600 hover:text-gray-900 transition-colors" title="Admin Dashboard">
+                  <Link href="/admin" className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100 transition-colors" title="Admin Dashboard">
                     <Shield className="h-5 w-5" />
                   </Link>
                 )}
@@ -92,7 +95,7 @@ export function Header() {
                     <AvatarFallback className="text-lg">😊</AvatarFallback>
                   </Avatar>
                 </Link>
-                <Button onClick={handleLogout} variant="outline" className="text-gray-700 border-gray-300 hover:bg-gray-50">
+                <Button onClick={handleLogout} variant="outline" className="text-gray-700 border-gray-300 hover:bg-gray-50 dark:text-gray-300 dark:border-gray-600 dark:hover:bg-gray-800">
                   {t("common.logOut")}
                 </Button>
               </>
@@ -104,7 +107,7 @@ export function Header() {
               </Link>
             ) : !isGuest ? (
               <Link href="/login">
-                <Button variant="outline" className="text-gray-700 border-gray-300 hover:bg-gray-50">{t("common.signIn")}</Button>
+                <Button variant="outline" className="text-gray-700 border-gray-300 hover:bg-gray-50 dark:text-gray-300 dark:border-gray-600 dark:hover:bg-gray-800">{t("common.signIn")}</Button>
               </Link>
             ) : null}
           </div>

@@ -81,6 +81,31 @@
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
+
+    /* Brand theme tokens - dark mode */
+    --brand: 24 95% 58%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 24 30% 12%;
+    --brand-hover: 24 95% 50%;
+    --brand-dark: 24 90% 65%;
+    --brand-darker: 24 80% 75%;
+    --brand-muted: 24 50% 30%;
+    --brand-border: 24 40% 25%;
+    --brand-border-light: 24 30% 18%;
+    --brand-gradient-to: 24 30% 8%;
+  }
+
+  .dark[data-theme="cdl"] {
+    --brand: 217 91% 65%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 217 30% 12%;
+    --brand-hover: 217 91% 55%;
+    --brand-dark: 217 91% 70%;
+    --brand-darker: 217 80% 75%;
+    --brand-muted: 217 40% 30%;
+    --brand-border: 217 40% 25%;
+    --brand-border-light: 217 30% 18%;
+    --brand-gradient-to: 217 30% 8%;
   }
 }
 
@@ -93,5 +118,9 @@
   }
   body.premium-theme {
     background-color: #f5f3ef;
+  }
+  .dark body.premium-theme,
+  body.premium-theme:is(.dark *) {
+    background-color: hsl(222.2, 84%, 4.9%);
   }
 }

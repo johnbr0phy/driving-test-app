@@ -17,9 +17,9 @@ import { trackBeginCheckout, trackPurchase, trackViewItem } from "@/lib/analytic
 
 function Stamp({ label, color }: { label: string; color: "green" | "amber" | "red" }) {
   const colors = {
-    green: "border-green-500 text-green-600 bg-green-50",
-    amber: "border-amber-500 text-amber-600 bg-amber-50",
-    red: "border-red-400 text-red-500 bg-red-50",
+    green: "border-green-500 text-green-600 bg-green-50 dark:bg-green-950 dark:text-green-400 dark:border-green-700",
+    amber: "border-amber-500 text-amber-600 bg-amber-50 dark:bg-amber-950 dark:text-amber-400 dark:border-amber-700",
+    red: "border-red-400 text-red-500 bg-red-50 dark:bg-red-950 dark:text-red-400 dark:border-red-700",
   };
   return (
     <div className={`px-2 py-0.5 rounded border text-[10px] font-bold uppercase tracking-wider ${colors[color]} -rotate-3`}>
@@ -52,10 +52,10 @@ function ProgressCard({
   const content = (
     <Card className={`transition-all ${
       completed
-        ? "bg-gradient-to-r from-green-50 to-emerald-50 border-green-200 shadow-sm"
+        ? "bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-950 dark:to-emerald-950 border-green-200 dark:border-green-800 shadow-sm"
         : isPremiumLocked
-          ? "bg-white border-gray-100 hover:shadow-md hover:border-brand-border cursor-pointer"
-          : "bg-white border-gray-100 hover:shadow-md cursor-pointer"
+          ? "bg-white dark:bg-gray-900 border-gray-100 dark:border-gray-800 hover:shadow-md hover:border-brand-border cursor-pointer"
+          : "bg-white dark:bg-gray-900 border-gray-100 dark:border-gray-800 hover:shadow-md cursor-pointer"
     }`}>
       <CardContent className="p-4 flex items-center gap-3">
         {/* Completion indicator */}
@@ -63,8 +63,8 @@ function ProgressCard({
           completed
             ? "bg-green-500 text-white"
             : isPremiumLocked
-              ? "bg-gray-100 text-gray-300"
-              : "bg-gray-100 text-gray-300"
+              ? "bg-gray-100 dark:bg-gray-800 text-gray-300 dark:text-gray-600"
+              : "bg-gray-100 dark:bg-gray-800 text-gray-300 dark:text-gray-600"
         }`}>
           {completed ? (
             <Check className="w-4 h-4" strokeWidth={3} />
@@ -79,7 +79,7 @@ function ProgressCard({
 
         {/* Content */}
         <div className="flex-1 min-w-0">
-          <h3 className={`font-semibold text-sm ${completed ? "text-green-900" : isPremiumLocked ? "text-gray-400" : "text-gray-900"}`}>
+          <h3 className={`font-semibold text-sm ${completed ? "text-green-900 dark:text-green-300" : isPremiumLocked ? "text-gray-400 dark:text-gray-500" : "text-gray-900 dark:text-gray-100"}`}>
             {title}
           </h3>
           <p className={`text-xs mt-0.5 ${completed ? "text-green-600" : isPremiumLocked ? "text-brand" : "text-gray-500"}`}>
@@ -334,7 +334,7 @@ function DashboardContent() {
   };
 
   return (
-    <div className="flex-1 bg-gray-50 relative">
+    <div className="flex-1 bg-gray-50 dark:bg-background relative">
       <div className="absolute inset-x-0 top-0 h-96 bg-gradient-to-b from-brand-light to-transparent pointer-events-none" />
       <div className="relative container mx-auto px-4 py-6 max-w-lg md:max-w-2xl lg:max-w-4xl">
 
@@ -393,7 +393,7 @@ function DashboardContent() {
         )}
 
         {/* Hero section — card with progress */}
-        <div className="rounded-xl bg-white border border-gray-100 p-4 mb-6">
+        <div className="rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 p-4 mb-6">
           <div className="flex items-center gap-4">
             <Image
               src={getTigerFace(completedSteps, totalSteps)}
@@ -403,7 +403,7 @@ function DashboardContent() {
               className="w-12 h-12 flex-shrink-0"
             />
             <div className="flex-1 min-w-0">
-              <h1 className="text-lg font-bold text-gray-900">
+              <h1 className="text-lg font-bold text-gray-900 dark:text-gray-100">
                 {t(`dashboard.heroTitle${completedSteps}`)}
               </h1>
               <p className="text-xs text-gray-500 mt-0.5">
@@ -411,7 +411,7 @@ function DashboardContent() {
               </p>
             </div>
             <div className="flex-shrink-0 text-right">
-              <div className="text-2xl font-bold tabular-nums text-gray-900">{completedSteps}/{totalSteps}</div>
+              <div className="text-2xl font-bold tabular-nums text-gray-900 dark:text-gray-100">{completedSteps}/{totalSteps}</div>
               <div className="text-xs text-gray-400">{t("dashboard.stampComplete").toLowerCase()}</div>
             </div>
           </div>
@@ -551,8 +551,8 @@ function DashboardContent() {
 
         {/* Bottom banner — urgency upsell for free users, thank-you for premium */}
         {onboardingComplete && !isGuest && !isPremium && (
-          <div className="rounded-xl bg-white border border-gray-100 px-5 py-4">
-            <p className="text-sm font-semibold text-gray-900">
+          <div className="rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 px-5 py-4">
+            <p className="text-sm font-semibold text-gray-900 dark:text-gray-100">
               {t("dashboard.urgencyTitle")}
             </p>
             <p className="text-xs text-gray-500 mt-1 mb-3">
@@ -561,13 +561,13 @@ function DashboardContent() {
             <div className="flex gap-2">
               <Link
                 href="/stats"
-                className="flex-1 text-center rounded-lg bg-gray-50 border border-gray-200 px-3 py-2.5 text-sm font-medium text-gray-700 hover:bg-gray-100 transition-colors"
+                className="flex-1 text-center rounded-lg bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 px-3 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
               >
                 {t("dashboard.freeBottomYourStats")}
               </Link>
               <Link
                 href="/stats?tab=community"
-                className="flex-1 text-center rounded-lg bg-gray-50 border border-gray-200 px-3 py-2.5 text-sm font-medium text-gray-700 hover:bg-gray-100 transition-colors"
+                className="flex-1 text-center rounded-lg bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 px-3 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
               >
                 {t("dashboard.freeBottomCommonMistakes")}
               </Link>
@@ -576,7 +576,7 @@ function DashboardContent() {
         )}
 
         {onboardingComplete && isPremium && (
-          <div className="rounded-xl bg-white border border-gray-100 px-5 py-4">
+          <div className="rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 px-5 py-4">
             <div className="flex items-center gap-3 mb-3">
               <Image
                 src="/tiger_face_01.png"
@@ -586,7 +586,7 @@ function DashboardContent() {
                 className="w-9 h-9 flex-shrink-0"
               />
               <div className="flex-1">
-                <p className="text-sm font-semibold text-gray-900">
+                <p className="text-sm font-semibold text-gray-900 dark:text-gray-100">
                   {t("dashboard.premiumBottomTitle")}
                 </p>
                 <p className="text-xs text-gray-500 mt-0.5">
@@ -600,13 +600,13 @@ function DashboardContent() {
             <div className="flex gap-2">
               <Link
                 href="/stats"
-                className="flex-1 text-center rounded-lg bg-gray-50 border border-gray-200 px-3 py-2.5 text-sm font-medium text-gray-700 hover:bg-gray-100 transition-colors"
+                className="flex-1 text-center rounded-lg bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 px-3 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
               >
                 {t("dashboard.premiumBottomYourStats")}
               </Link>
               <Link
                 href="/stats?tab=community"
-                className="flex-1 text-center rounded-lg bg-gray-50 border border-gray-200 px-3 py-2.5 text-sm font-medium text-gray-700 hover:bg-gray-100 transition-colors"
+                className="flex-1 text-center rounded-lg bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 px-3 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
               >
                 {t("dashboard.premiumBottomCommonMistakes")}
               </Link>
@@ -620,7 +620,7 @@ function DashboardContent() {
 
 export default function DashboardPage() {
   return (
-    <Suspense fallback={<div className="flex-1 bg-gray-50" />}>
+    <Suspense fallback={<div className="flex-1 bg-gray-50 dark:bg-background" />}>
       <DashboardContent />
     </Suspense>
   );

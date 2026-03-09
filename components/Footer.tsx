@@ -24,10 +24,10 @@ export function Footer() {
   const dataTheme = isCDL ? "cdl" : undefined;
 
   return (
-    <footer className="border-t bg-white mt-auto" data-theme={dataTheme}>
+    <footer className="border-t bg-white dark:bg-gray-950 dark:border-gray-800 mt-auto" data-theme={dataTheme}>
       <div className="container mx-auto px-4 py-6">
         {!isCDL && (
-          <div className="flex flex-wrap justify-center gap-x-3 gap-y-1 text-sm text-gray-500">
+          <div className="flex flex-wrap justify-center gap-x-3 gap-y-1 text-sm text-gray-500 dark:text-gray-400">
             {popularStates.map(
               (state) =>
                 state && (
@@ -56,7 +56,7 @@ export function Footer() {
             </Link>
           </div>
         )}
-        <p className={`text-center text-sm text-gray-600 ${isCDL ? "" : "mt-4"}`}>
+        <p className={`text-center text-sm text-gray-600 dark:text-gray-400 ${isCDL ? "" : "mt-4"}`}>
           {t("footer.madeWith")}{" "}
           <span className="text-red-500" aria-label="love">
             ❤️
@@ -72,7 +72,7 @@ export function Footer() {
           </a>
           .
         </p>
-        <p className="text-center text-sm text-gray-600 mt-1">
+        <p className="text-center text-sm text-gray-600 dark:text-gray-400 mt-1">
           <a
             href="https://www.johnbrophy.net/contact"
             target="_blank"

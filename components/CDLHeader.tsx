@@ -10,6 +10,7 @@ import { useHydration } from "@/hooks/useHydration";
 import { useTestTheme } from "@/contexts/TestThemeContext";
 import { Truck } from "lucide-react";
 import Image from "next/image";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 export function CDLHeader() {
   const { user, logout } = useAuth();
@@ -34,7 +35,7 @@ export function CDLHeader() {
   }
 
   return (
-    <header className="border-b bg-white">
+    <header className="border-b bg-white dark:bg-gray-950 dark:border-gray-800">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <Link href={theme.logoHome} className="flex items-center gap-2 group flex-shrink-0">
           {theme.logoIcon ? (
@@ -44,12 +45,13 @@ export function CDLHeader() {
               <Truck className="h-6 w-6 text-white" />
             </div>
           )}
-          <span className="text-2xl font-bold text-gray-900 group-hover:opacity-80 transition-opacity hidden sm:inline">
+          <span className="text-2xl font-bold text-gray-900 dark:text-gray-100 group-hover:opacity-80 transition-opacity hidden sm:inline">
             {theme.headerTitle}
           </span>
         </Link>
 
         <div className="flex items-center gap-2 sm:gap-4">
+          <ThemeToggle />
           {user ? (
             <>
               <Link href="/settings">
@@ -58,7 +60,7 @@ export function CDLHeader() {
                   <AvatarFallback className="text-lg">😊</AvatarFallback>
                 </Avatar>
               </Link>
-              <Button onClick={handleLogout} variant="outline" className="text-gray-700 border-gray-300 hover:bg-gray-50">
+              <Button onClick={handleLogout} variant="outline" className="text-gray-700 border-gray-300 hover:bg-gray-50 dark:text-gray-300 dark:border-gray-600 dark:hover:bg-gray-800">
                 Log Out
               </Button>
             </>
@@ -70,7 +72,7 @@ export function CDLHeader() {
             </Link>
           ) : (
             <Link href="/login">
-              <Button variant="outline" className="text-gray-700 border-gray-300 hover:bg-gray-50">
+              <Button variant="outline" className="text-gray-700 border-gray-300 hover:bg-gray-50 dark:text-gray-300 dark:border-gray-600 dark:hover:bg-gray-800">
                 Sign In
               </Button>
             </Link>

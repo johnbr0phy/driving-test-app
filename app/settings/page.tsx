@@ -102,8 +102,8 @@ export default function SettingsPage() {
   }
 
   return (
-    <div className="flex-1 bg-white relative">
-      <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-light to-white pointer-events-none" />
+    <div className="flex-1 bg-white dark:bg-background relative">
+      <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-light to-white dark:to-background pointer-events-none" />
       <div className="relative container mx-auto px-4 py-8 max-w-6xl">
         {/* Header */}
         <div className="mb-8">
@@ -119,7 +119,7 @@ export default function SettingsPage() {
         {/* State Selection and Profile Photo Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
           {/* State Selection Card */}
-          <Card className="bg-gray-50">
+          <Card className="bg-gray-50 dark:bg-gray-900">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <MapPin className="h-5 w-5" />
@@ -129,20 +129,20 @@ export default function SettingsPage() {
             <CardContent>
               <div className="space-y-4">
                 <div>
-                  <div className="text-sm text-gray-600 mb-2">{t("settings.currentlyPracticingFor")}</div>
+                  <div className="text-sm text-gray-600 dark:text-gray-400 mb-2">{t("settings.currentlyPracticingFor")}</div>
                   <div className="text-2xl font-bold text-brand mb-4">
                     {currentStateName}
                   </div>
                 </div>
 
                 <div>
-                  <label className="text-sm font-medium text-gray-700 mb-2 block">
+                  <label className="text-sm font-medium text-gray-700 dark:text-gray-300 dark:text-gray-300 mb-2 block">
                     {t("settings.changeState")}
                   </label>
                   <select
                     value={selectedState || ""}
                     onChange={(e) => handleStateChange(e.target.value)}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-800 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
                   >
                     {states.map((state) => (
                       <option key={state.code} value={state.code}>
@@ -150,7 +150,7 @@ export default function SettingsPage() {
                       </option>
                     ))}
                   </select>
-                  <p className="text-xs text-gray-500 mt-2">
+                  <p className="text-xs text-gray-500 dark:text-gray-400 mt-2">
                     <strong className="text-brand">Warning:</strong> {t("settings.switchStateWarning")}
                   </p>
                 </div>
@@ -159,7 +159,7 @@ export default function SettingsPage() {
           </Card>
 
           {/* Profile Photo Card */}
-          <Card className="bg-gray-50">
+          <Card className="bg-gray-50 dark:bg-gray-900">
             <CardHeader>
               <CardTitle>{t("settings.profilePhoto")}</CardTitle>
             </CardHeader>
@@ -173,7 +173,7 @@ export default function SettingsPage() {
 
                 {/* User Email */}
                 <div className="text-center">
-                  <div className="text-sm text-gray-600 mb-1">{t("settings.account")}</div>
+                  <div className="text-sm text-gray-600 dark:text-gray-400 mb-1">{t("settings.account")}</div>
                   <div className="font-medium">{user.email}</div>
                 </div>
 
@@ -222,7 +222,7 @@ export default function SettingsPage() {
             <div className="space-y-4">
               <div>
                 <h3 className="font-semibold mb-2">{t("settings.resetAllData")}</h3>
-                <p className="text-sm text-gray-600 mb-4">
+                <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
                   {t("settings.resetAllDataDesc")}
                 </p>
                 <Button
@@ -248,24 +248,24 @@ export default function SettingsPage() {
               {t("settings.switchState")}
             </DialogTitle>
             <DialogDescription className="space-y-3 pt-2 text-left">
-              <p className="font-semibold text-gray-900 text-base">
+              <p className="font-semibold text-gray-900 dark:text-gray-100 text-base">
                 {t("settings.switchStateConfirm")} {currentStateName} {t("settings.to")} {pendingStateName}.
               </p>
-              <p className="text-gray-700">
+              <p className="text-gray-700 dark:text-gray-300">
                 <strong className="text-brand">{t("settings.switchStateWarningDetail")}</strong> {currentStateName} {t("settings.willNotBeSaved")} {t("settings.willBePermanentlyLost")}. {t("settings.thisIncludes")}
               </p>
-              <ul className="list-disc list-inside space-y-1 text-gray-700 ml-2">
+              <ul className="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300 ml-2">
                 <li>{t("settings.allTestScores")}</li>
                 <li>{t("settings.inProgressTests")}</li>
                 <li>{t("settings.trainingModeStats")}</li>
               </ul>
-              <p className="text-gray-700">
+              <p className="text-gray-700 dark:text-gray-300">
                 {t("settings.startFreshWith")} {pendingStateName} {t("settings.cannotRecover")} {currentStateName} {t("settings.progressSuffix")}
               </p>
             </DialogDescription>
           </DialogHeader>
           <DialogFooter className="gap-2 sm:gap-0">
-            <Button className="bg-white text-black hover:bg-gray-100 border-2 border-gray-300" onClick={() => setStateChangeDialog(false)}>
+            <Button className="bg-white dark:bg-gray-800 text-black dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 border-2 border-gray-300 dark:border-gray-600" onClick={() => setStateChangeDialog(false)}>
               {t("common.cancel")}
             </Button>
             <Button variant="destructive" onClick={confirmStateChange}>
@@ -284,13 +284,13 @@ export default function SettingsPage() {
               {t("settings.resetAllDataConfirm")}
             </DialogTitle>
             <DialogDescription className="space-y-3 pt-2 text-left">
-              <p className="font-semibold text-gray-900 text-base">
+              <p className="font-semibold text-gray-900 dark:text-gray-100 text-base">
                 {t("settings.permanentlyDeleteAll")}
               </p>
-              <p className="text-gray-700">
+              <p className="text-gray-700 dark:text-gray-300">
                 {t("settings.youWillLose")}
               </p>
-              <ul className="list-disc list-inside space-y-1 text-gray-700 ml-2">
+              <ul className="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300 ml-2">
                 <li>{t("settings.allTestProgress")}</li>
                 <li>{t("settings.allTrainingStats")}</li>
                 <li>{t("settings.allAttemptHistory")}</li>
@@ -302,7 +302,7 @@ export default function SettingsPage() {
             </DialogDescription>
           </DialogHeader>
           <DialogFooter className="gap-2 sm:gap-0">
-            <Button className="bg-white text-black hover:bg-gray-100 border-2 border-gray-300" onClick={() => setResetDialog(false)}>
+            <Button className="bg-white dark:bg-gray-800 text-black dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 border-2 border-gray-300 dark:border-gray-600" onClick={() => setResetDialog(false)}>
               {t("common.cancel")}
             </Button>
             <Button variant="destructive" onClick={confirmReset}>

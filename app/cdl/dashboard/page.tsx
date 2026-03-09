@@ -220,8 +220,8 @@ function CDLDashboardContent() {
   }));
 
   return (
-    <div className="flex-1 bg-white relative">
-      <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-light to-white pointer-events-none" />
+    <div className="flex-1 bg-white dark:bg-gray-900 relative">
+      <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-light to-white dark:from-brand-light/20 dark:to-gray-900 pointer-events-none" />
       <div className="relative container mx-auto px-4 py-8 max-w-6xl">
 
         {/* Back to CDL Landing Page */}
@@ -237,10 +237,10 @@ function CDLDashboardContent() {
 
         {/* Page Title */}
         <div className="mb-8">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-2">
             CDL Practice Dashboard
           </h1>
-          <p className="text-gray-600">
+          <p className="text-gray-600 dark:text-gray-400">
             Master your Commercial Driver&apos;s License test with 600 practice questions and 12 comprehensive tests
           </p>
         </div>
@@ -257,21 +257,21 @@ function CDLDashboardContent() {
 
         {/* Purchase Success Message */}
         {showPurchaseSuccess && (
-          <Card className="mb-6 bg-gradient-to-r from-green-50 to-emerald-50 border-green-200">
+          <Card className="mb-6 bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-500/20 dark:to-emerald-500/20 border-green-200 dark:border-green-800">
             <CardContent className="p-6">
               <div className="flex items-center gap-4">
                 <CheckCircle className="h-12 w-12 text-green-500" />
                 <div className="flex-1">
-                  <p className="text-xl font-bold text-green-900">
+                  <p className="text-xl font-bold text-green-900 dark:text-green-100">
                     Welcome to Premium CDL!
                   </p>
-                  <p className="text-sm text-green-700 mt-1">
+                  <p className="text-sm text-green-700 dark:text-green-300 mt-1">
                     All premium CDL features are now unlocked
                   </p>
                 </div>
                 <button
                   onClick={() => setShowPurchaseSuccess(false)}
-                  className="text-green-600 hover:text-green-800"
+                  className="text-green-600 hover:text-green-800 dark:text-green-400 dark:hover:text-green-200"
                 >
                   &times;
                 </button>
@@ -309,7 +309,7 @@ function CDLDashboardContent() {
               <div className="flex items-center gap-4">
                 <div className="text-4xl">📊</div>
                 <div className="flex-1">
-                  <p className="text-lg text-gray-700">
+                  <p className="text-lg text-gray-700 dark:text-gray-300">
                     <span className="font-bold">Sign Up</span> to track your CDL progress and view detailed statistics
                   </p>
                   <Link href="/signup" className="text-sm text-brand hover:text-brand-dark font-medium mt-1 inline-block">
@@ -324,14 +324,14 @@ function CDLDashboardContent() {
           <Link href="/cdl/stats" className="block">
             <Card className={`mb-6 cursor-pointer transition-shadow hover:shadow-lg ${
               passProbability >= 80
-                ? "bg-gradient-to-r from-emerald-50 to-green-50 border-emerald-200"
+                ? "bg-gradient-to-r from-emerald-50 to-green-50 dark:from-emerald-500/20 dark:to-green-500/20 border-emerald-200 dark:border-emerald-800"
                 : passProbability >= 60
-                  ? "bg-gradient-to-r from-lime-50 to-green-50 border-lime-200"
+                  ? "bg-gradient-to-r from-lime-50 to-green-50 dark:from-lime-500/20 dark:to-green-500/20 border-lime-200 dark:border-lime-800"
                   : passProbability >= 40
-                    ? "bg-gradient-to-r from-amber-50 to-yellow-50 border-amber-200"
+                    ? "bg-gradient-to-r from-amber-50 to-yellow-50 dark:from-amber-500/20 dark:to-yellow-500/20 border-amber-200 dark:border-amber-800"
                     : passProbability >= 20
                       ? "bg-gradient-to-r from-brand-light to-brand-gradient-to border-brand-border-light"
-                      : "bg-gradient-to-r from-red-50 to-rose-50 border-red-200"
+                      : "bg-gradient-to-r from-red-50 to-rose-50 dark:from-red-500/20 dark:to-rose-500/20 border-red-200 dark:border-red-800"
             }`}>
               <CardContent className="p-6">
                 <div className="flex items-center gap-4">
@@ -343,16 +343,16 @@ function CDLDashboardContent() {
                     className="w-12 h-12"
                   />
                   <div className="flex-1">
-                    <p className="text-xl font-bold text-gray-900">
+                    <p className="text-xl font-bold text-gray-900 dark:text-gray-100">
                       {passProbability > 50
                         ? <>{passProbability}% chance of passing CDL test</>
                         : <>{100 - passProbability}% chance of failing CDL test</>
                       }
                     </p>
-                    <p className="text-sm text-gray-500 mt-1 md:hidden">Learn how to improve</p>
+                    <p className="text-sm text-gray-500 dark:text-gray-400 mt-1 md:hidden">Learn how to improve</p>
                   </div>
                   <div className="flex items-center gap-2">
-                    <span className="text-sm text-gray-500 hidden md:inline">View Stats</span>
+                    <span className="text-sm text-gray-500 dark:text-gray-400 hidden md:inline">View Stats</span>
                     <ChevronRight className={`h-6 w-6 ${
                     passProbability >= 80
                       ? "text-emerald-400"
@@ -377,7 +377,7 @@ function CDLDashboardContent() {
             <div className="mb-3">
               <h2 className="text-xl font-bold">CDL Training</h2>
             </div>
-            <p className="text-sm text-gray-500 mb-4">Master CDL topics with instant feedback and spaced repetition</p>
+            <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">Master CDL topics with instant feedback and spaced repetition</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
               {cdlTrainingSets.map((set, index) => {
                 const setNumber = index + 1;
@@ -399,7 +399,7 @@ function CDLDashboardContent() {
         {/* CDL Practice Tests */}
         <div className="mb-6">
           <h2 className="text-xl font-bold mb-3">CDL Practice Tests</h2>
-          <p className="text-sm text-gray-500 mb-4">
+          <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">
             {onboardingComplete ? "Simulate the real CDL exam with 50-question tests (80% to pass)" : "Complete onboarding to unlock practice tests"}
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
@@ -436,7 +436,7 @@ function CDLDashboardContent() {
 export default function CDLDashboardPage() {
   return (
     
-      <Suspense fallback={<div className="flex-1 bg-white" />}>
+      <Suspense fallback={<div className="flex-1 bg-white dark:bg-gray-900" />}>
         <CDLDashboardContent />
       </Suspense>
     

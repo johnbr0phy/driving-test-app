@@ -279,8 +279,8 @@ export default function CDLStatsPage() {
   if (!hydrated || isGuest) return null;
 
   return (
-    <div className="flex-1 bg-white relative">
-      <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-light to-white pointer-events-none" />
+    <div className="flex-1 bg-white dark:bg-gray-900 relative">
+      <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-light to-white dark:from-brand-light/20 dark:to-gray-900 pointer-events-none" />
       <div className="relative container mx-auto px-4 py-8 max-w-6xl">
 
         {/* Header */}
@@ -296,16 +296,16 @@ export default function CDLStatsPage() {
         {/* Pass Probability Card */}
         <Card className={`mb-6 ${
           passProbability === 0
-            ? "bg-gradient-to-r from-gray-50 to-gray-100 border-gray-200"
+            ? "bg-gradient-to-r from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-800 border-gray-200 dark:border-gray-700"
             : passProbability >= 80
-              ? "bg-gradient-to-r from-emerald-50 to-green-50 border-emerald-200"
+              ? "bg-gradient-to-r from-emerald-50 to-green-50 dark:from-emerald-500/20 dark:to-green-500/20 border-emerald-200 dark:border-emerald-800"
               : passProbability >= 60
-                ? "bg-gradient-to-r from-lime-50 to-green-50 border-lime-200"
+                ? "bg-gradient-to-r from-lime-50 to-green-50 dark:from-lime-500/20 dark:to-green-500/20 border-lime-200 dark:border-lime-800"
                 : passProbability >= 40
-                  ? "bg-gradient-to-r from-amber-50 to-yellow-50 border-amber-200"
+                  ? "bg-gradient-to-r from-amber-50 to-yellow-50 dark:from-amber-500/20 dark:to-yellow-500/20 border-amber-200 dark:border-amber-800"
                   : passProbability >= 20
-                    ? "bg-gradient-to-r from-orange-50 to-amber-50 border-orange-200"
-                    : "bg-gradient-to-r from-red-50 to-rose-50 border-red-200"
+                    ? "bg-gradient-to-r from-orange-50 to-amber-50 dark:from-orange-500/20 dark:to-amber-500/20 border-orange-200 dark:border-orange-800"
+                    : "bg-gradient-to-r from-red-50 to-rose-50 dark:from-red-500/20 dark:to-rose-500/20 border-red-200 dark:border-red-800"
         }`}>
           <CardContent className="p-6">
             <div className="flex items-center gap-4">
@@ -357,8 +357,8 @@ export default function CDLStatsPage() {
               <CardContent className="p-6">
                 <div className="flex items-center gap-4">
                   <div className="flex-1">
-                    <h2 className="text-lg font-bold text-gray-900">{getRecommendation.title}</h2>
-                    <p className="text-sm text-gray-600 mt-1">{getRecommendation.description}</p>
+                    <h2 className="text-lg font-bold text-gray-900 dark:text-gray-100">{getRecommendation.title}</h2>
+                    <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">{getRecommendation.description}</p>
                   </div>
                   <ChevronRight className="h-6 w-6 text-brand-muted flex-shrink-0" />
                 </div>
@@ -381,7 +381,7 @@ export default function CDLStatsPage() {
               className={`whitespace-nowrap text-sm px-3 py-1.5 rounded-full border transition-colors ${
                 sortField === field
                   ? "bg-brand-light border-brand-border text-brand-dark font-medium"
-                  : "bg-white border-gray-200 text-gray-600"
+                  : "bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-400"
               }`}
             >
               {label}
@@ -396,7 +396,7 @@ export default function CDLStatsPage() {
         <div className="md:hidden space-y-3">
           {sortedQuestions.length === 0 ? (
             <Card>
-              <CardContent className="p-6 text-center text-gray-500">
+              <CardContent className="p-6 text-center text-gray-500 dark:text-gray-400">
                 No CDL questions available
               </CardContent>
             </Card>
@@ -414,7 +414,7 @@ export default function CDLStatsPage() {
                     <StatusIcon item={item} />
                     <div className="flex-1 min-w-0">
                       <p className="text-sm font-medium leading-snug">{item.question.question}</p>
-                      <p className="text-xs text-gray-500 mt-1 capitalize">
+                      <p className="text-xs text-gray-500 dark:text-gray-400 mt-1 capitalize">
                         {item.question.category.replace(/([A-Z])/g, " $1").trim()}
                       </p>
                     </div>
@@ -422,10 +422,10 @@ export default function CDLStatsPage() {
                   {expandedQuestionId === item.question.questionId && (
                     <div className="mb-3 space-y-2">
                       <div className="flex items-center justify-between">
-                        <p className="text-xs font-semibold text-gray-500 uppercase">Answers</p>
+                        <p className="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase">Answers</p>
                         <button
                           onClick={(e) => { e.stopPropagation(); setExpandedQuestionId(null); }}
-                          className="p-1 rounded-full hover:bg-gray-100"
+                          className="p-1 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800"
                         >
                           <X className="h-4 w-4 text-gray-400" />
                         </button>
@@ -439,14 +439,14 @@ export default function CDLStatsPage() {
                             key={letter}
                             className={`flex items-start gap-2 p-2 rounded text-sm ${
                               isCorrect
-                                ? "bg-green-50 border border-green-200"
-                                : "bg-gray-50 border border-gray-200"
+                                ? "bg-green-50 dark:bg-green-500/20 border border-green-200 dark:border-green-800"
+                                : "bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700"
                             }`}
                           >
-                            <span className={`font-semibold ${isCorrect ? "text-green-600" : "text-gray-500"}`}>
+                            <span className={`font-semibold ${isCorrect ? "text-green-600" : "text-gray-500 dark:text-gray-400"}`}>
                               {letter}.
                             </span>
-                            <span className={isCorrect ? "text-green-700" : "text-gray-600"}>
+                            <span className={isCorrect ? "text-green-700" : "text-gray-600 dark:text-gray-400"}>
                               {optionText}
                             </span>
                             {isCorrect && (
@@ -457,24 +457,24 @@ export default function CDLStatsPage() {
                       })}
                     </div>
                   )}
-                  <div className="flex items-center justify-between text-sm bg-gray-50 rounded-lg p-3">
+                  <div className="flex items-center justify-between text-sm bg-gray-50 dark:bg-gray-800 rounded-lg p-3">
                     <div className="text-center">
-                      <div className={`font-semibold ${item.timesAnswered > 0 ? "text-gray-900" : "text-gray-400"}`}>
+                      <div className={`font-semibold ${item.timesAnswered > 0 ? "text-gray-900 dark:text-gray-100" : "text-gray-400"}`}>
                         {item.timesAnswered}
                       </div>
-                      <div className="text-xs text-gray-500">Answered</div>
+                      <div className="text-xs text-gray-500 dark:text-gray-400">Answered</div>
                     </div>
                     <div className="text-center">
                       <div className={`font-semibold ${item.correct > 0 ? "text-green-600" : "text-gray-400"}`}>
                         {item.correct}
                       </div>
-                      <div className="text-xs text-gray-500">Correct</div>
+                      <div className="text-xs text-gray-500 dark:text-gray-400">Correct</div>
                     </div>
                     <div className="text-center">
                       <div className={`font-semibold ${item.wrong > 0 ? "text-red-600" : "text-gray-400"}`}>
                         {item.wrong}
                       </div>
-                      <div className="text-xs text-gray-500">Wrong</div>
+                      <div className="text-xs text-gray-500 dark:text-gray-400">Wrong</div>
                     </div>
                     <div className="text-center">
                       {item.timesAnswered > 0 ? (
@@ -486,7 +486,7 @@ export default function CDLStatsPage() {
                       ) : (
                         <div className="font-semibold text-gray-400">-</div>
                       )}
-                      <div className="text-xs text-gray-500">Accuracy</div>
+                      <div className="text-xs text-gray-500 dark:text-gray-400">Accuracy</div>
                     </div>
                   </div>
                 </CardContent>
@@ -525,7 +525,7 @@ export default function CDLStatsPage() {
                 <tbody>
                   {sortedQuestions.length === 0 ? (
                     <tr>
-                      <td colSpan={5} className="text-center py-8 text-gray-500">
+                      <td colSpan={5} className="text-center py-8 text-gray-500 dark:text-gray-400">
                         No CDL questions available
                       </td>
                     </tr>
@@ -533,7 +533,7 @@ export default function CDLStatsPage() {
                     sortedQuestions.map((item) => (
                       <tr
                         key={item.question.questionId}
-                        className="border-b last:border-b-0 hover:bg-gray-50 cursor-pointer"
+                        className="border-b last:border-b-0 hover:bg-gray-50 dark:hover:bg-gray-800 cursor-pointer"
                         onClick={() => setExpandedQuestionId(
                           expandedQuestionId === item.question.questionId ? null : item.question.questionId
                         )}
@@ -543,16 +543,16 @@ export default function CDLStatsPage() {
                             <StatusIcon item={item} />
                             <div>
                               <p className="text-sm line-clamp-2">{item.question.question}</p>
-                              <p className="text-xs text-gray-500 mt-1 capitalize">
+                              <p className="text-xs text-gray-500 dark:text-gray-400 mt-1 capitalize">
                                 {item.question.category.replace(/([A-Z])/g, " $1").trim()}
                               </p>
                               {expandedQuestionId === item.question.questionId && (
                                 <div className="mt-3 space-y-2">
                                   <div className="flex items-center justify-between">
-                                    <p className="text-xs font-semibold text-gray-500 uppercase">Answers</p>
+                                    <p className="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase">Answers</p>
                                     <button
                                       onClick={(e) => { e.stopPropagation(); setExpandedQuestionId(null); }}
-                                      className="p-1 rounded-full hover:bg-gray-200"
+                                      className="p-1 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700"
                                     >
                                       <X className="h-4 w-4 text-gray-400" />
                                     </button>
@@ -566,14 +566,14 @@ export default function CDLStatsPage() {
                                         key={letter}
                                         className={`flex items-start gap-2 p-2 rounded text-sm ${
                                           isCorrect
-                                            ? "bg-green-50 border border-green-200"
-                                            : "bg-gray-50 border border-gray-200"
+                                            ? "bg-green-50 dark:bg-green-500/20 border border-green-200 dark:border-green-800"
+                                            : "bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700"
                                         }`}
                                       >
-                                        <span className={`font-semibold ${isCorrect ? "text-green-600" : "text-gray-500"}`}>
+                                        <span className={`font-semibold ${isCorrect ? "text-green-600" : "text-gray-500 dark:text-gray-400"}`}>
                                           {letter}.
                                         </span>
-                                        <span className={isCorrect ? "text-green-700" : "text-gray-600"}>
+                                        <span className={isCorrect ? "text-green-700" : "text-gray-600 dark:text-gray-400"}>
                                           {optionText}
                                         </span>
                                         {isCorrect && (

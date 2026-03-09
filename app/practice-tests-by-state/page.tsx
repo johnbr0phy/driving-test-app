@@ -75,8 +75,8 @@ export default function PracticeTestsByStatePage() {
   };
 
   return (
-    <div className="flex-1 bg-white relative">
-      <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-light to-white pointer-events-none" />
+    <div className="flex-1 bg-white dark:bg-background relative">
+      <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-light to-white dark:to-background pointer-events-none" />
 
       <script
         type="application/ld+json"
@@ -89,7 +89,7 @@ export default function PracticeTestsByStatePage() {
 
       <div className="relative container mx-auto px-4 py-8 md:py-12 max-w-5xl">
         {/* Breadcrumb */}
-        <nav className="text-sm text-gray-500 mb-6" aria-label="Breadcrumb">
+        <nav className="text-sm text-gray-500 dark:text-gray-400 mb-6" aria-label="Breadcrumb">
           <ol className="flex items-center gap-1">
             <li>
               <Link href="/" className="hover:text-brand">
@@ -99,7 +99,7 @@ export default function PracticeTestsByStatePage() {
             <li>
               <ChevronRight className="h-3 w-3 inline" />
             </li>
-            <li className="text-gray-900 font-medium">
+            <li className="text-gray-900 dark:text-gray-100 font-medium">
               Practice Tests by State
             </li>
           </ol>
@@ -107,10 +107,10 @@ export default function PracticeTestsByStatePage() {
 
         {/* Hero */}
         <div className="text-center mb-12">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-gray-100 mb-4">
             DMV Practice Tests by State
           </h1>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
             Choose your state below to access free practice questions based on
             your state&apos;s official driver&apos;s manual. All 50 states plus
             Washington D.C. are covered.
@@ -121,7 +121,7 @@ export default function PracticeTestsByStatePage() {
         <div className="space-y-8 mb-16">
           {letters.map((letter) => (
             <div key={letter}>
-              <h2 className="text-xl font-bold text-gray-900 mb-3 border-b border-gray-200 pb-2">
+              <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-3 border-b border-gray-200 dark:border-gray-700 pb-2">
                 {letter}
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
@@ -129,13 +129,13 @@ export default function PracticeTestsByStatePage() {
                   <Link
                     key={state.slug}
                     href={`/${state.slug}-dmv-practice-test`}
-                    className="flex items-center justify-between bg-gray-50 border border-gray-200 rounded-lg p-3 hover:border-brand-border hover:bg-brand-light transition-colors group"
+                    className="flex items-center justify-between bg-gray-50 dark:bg-gray-900/50 border border-gray-200 dark:border-gray-700 rounded-lg p-3 hover:border-brand-border hover:bg-brand-light transition-colors group"
                   >
                     <div>
-                      <span className="font-medium text-gray-900 group-hover:text-brand-dark">
+                      <span className="font-medium text-gray-900 dark:text-gray-100 group-hover:text-brand-dark">
                         {state.name}
                       </span>
-                      <span className="text-sm text-gray-500 ml-2">
+                      <span className="text-sm text-gray-500 dark:text-gray-400 ml-2">
                         {state.writtenTestQuestions}q &middot;{" "}
                         {state.passingScore}%
                       </span>
@@ -149,11 +149,11 @@ export default function PracticeTestsByStatePage() {
         </div>
 
         {/* Summary Section */}
-        <div className="bg-gray-50 rounded-2xl p-6 md:p-8 mb-12">
-          <h2 className="text-xl font-bold text-gray-900 mb-4">
+        <div className="bg-gray-50 dark:bg-gray-900/50 rounded-2xl p-6 md:p-8 mb-12">
+          <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-4">
             About TigerTest State Practice Tests
           </h2>
-          <div className="text-gray-600 space-y-3">
+          <div className="text-gray-600 dark:text-gray-400 space-y-3">
             <p>
               Every state has different driving laws, test formats, and passing
               requirements. TigerTest provides <strong>200 questions per state</strong>,

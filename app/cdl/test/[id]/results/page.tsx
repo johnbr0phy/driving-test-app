@@ -146,7 +146,7 @@ function CDLResultsPageContent() {
 
   if (loading) {
     return (
-      <div className="flex-1 bg-gray-50 flex items-center justify-center">
+      <div className="flex-1 bg-gray-50 dark:bg-background flex items-center justify-center">
         <div className="text-center">
           <div className="text-xl font-semibold mb-2">{t("results.loadingResults")}</div>
         </div>
@@ -155,7 +155,7 @@ function CDLResultsPageContent() {
   }
 
   return (
-    <div className="flex-1 bg-gray-50">
+    <div className="flex-1 bg-gray-50 dark:bg-background">
       {/* Fireworks Animation */}
       {showFireworks && (
         <Fireworks duration={3000} onComplete={() => setShowFireworks(false)} />
@@ -224,7 +224,7 @@ function CDLResultsPageContent() {
           </div>
 
           {/* Branding footer */}
-          <div className="text-gray-600 text-sm tracking-wider mb-8">tigertest.io</div>
+          <div className="text-gray-600 dark:text-gray-400 text-sm tracking-wider mb-8">tigertest.io</div>
 
           {/* SHARE + TRY AGAIN buttons */}
           <div className="flex gap-3 max-w-xs mx-auto">
@@ -235,7 +235,7 @@ function CDLResultsPageContent() {
               passed={passed}
               testId={testId}
               stateCode="CDL"
-              className="flex-1 bg-white text-black hover:bg-gray-100 font-bold uppercase tracking-wide h-12 text-base"
+              className="flex-1 bg-white text-black hover:bg-gray-200 font-bold uppercase tracking-wide h-12 text-base"
             />
             <Button
               className="flex-1 bg-transparent text-white hover:bg-white/10 border border-white/30 font-bold uppercase tracking-wide h-12 text-base"
@@ -248,10 +248,10 @@ function CDLResultsPageContent() {
       </div>
 
       {/* See Stats arrow */}
-      <div className="text-center py-5 bg-gray-50">
+      <div className="text-center py-5 bg-gray-50 dark:bg-background">
         <button
           onClick={() => document.getElementById("stats-section")?.scrollIntoView({ behavior: "smooth" })}
-          className="text-gray-500 hover:text-gray-700 flex flex-col items-center gap-1 mx-auto transition-colors"
+          className="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 flex flex-col items-center gap-1 mx-auto transition-colors"
         >
           <span className="text-sm font-medium">{t("results.viewStats")}</span>
           <ChevronDown className="h-4 w-4 animate-bounce" />
@@ -271,8 +271,8 @@ function CDLResultsPageContent() {
                   </div>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-1">{t("results.saveYourProgress")}</h3>
-                  <p className="text-gray-600">
+                  <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-1">{t("results.saveYourProgress")}</h3>
+                  <p className="text-gray-600 dark:text-gray-400">
                     {t("results.scoreOnlyOnDevice")}
                   </p>
                 </div>
@@ -291,18 +291,18 @@ function CDLResultsPageContent() {
           <Card className="mb-6">
             <CardHeader>
               <CardTitle className="text-center">{t("results.yourProgress")}</CardTitle>
-              <p className="text-center text-sm text-gray-600">{t("results.attempt")} #{attemptNumber}</p>
+              <p className="text-center text-sm text-gray-600 dark:text-gray-400">{t("results.attempt")} #{attemptNumber}</p>
             </CardHeader>
             <CardContent>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
                 {/* First Attempt */}
-                <Card className="bg-gray-50 border-gray-200">
+                <Card className="bg-gray-50 dark:bg-background border-gray-200 dark:border-gray-700">
                   <CardContent className="pt-6 text-center">
-                    <div className="text-sm font-medium text-gray-600 mb-2">{t("results.firstAttempt")}</div>
-                    <div className="text-4xl font-bold text-gray-700 mb-1">
+                    <div className="text-sm font-medium text-gray-600 dark:text-gray-400 mb-2">{t("results.firstAttempt")}</div>
+                    <div className="text-4xl font-bold text-gray-700 dark:text-gray-300 mb-1">
                       {firstPercentage}%
                     </div>
-                    <div className="text-sm text-gray-500">
+                    <div className="text-sm text-gray-500 dark:text-gray-400">
                       {firstScore}/{totalQuestions} {t("results.correctLabel")}
                     </div>
                   </CardContent>
@@ -315,7 +315,7 @@ function CDLResultsPageContent() {
                     <div className="text-4xl font-bold text-brand mb-1">
                       {percentage}%
                     </div>
-                    <div className="text-sm text-gray-600">
+                    <div className="text-sm text-gray-600 dark:text-gray-400">
                       {score}/{totalQuestions} {t("results.correctLabel")}
                     </div>
                     {isNewBest && (
@@ -334,7 +334,7 @@ function CDLResultsPageContent() {
                     <div className="text-4xl font-bold text-brand mb-1">
                       {bestPercentage}%
                     </div>
-                    <div className="text-sm text-gray-600">
+                    <div className="text-sm text-gray-600 dark:text-gray-400">
                       {bestScore}/{totalQuestions} {t("results.correctLabel")}
                     </div>
                   </CardContent>
@@ -364,7 +364,7 @@ function CDLResultsPageContent() {
                     <BarChart3 className="h-5 w-5 text-brand" />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <h3 className="font-bold text-gray-900 mb-2">
+                    <h3 className="font-bold text-gray-900 dark:text-gray-100 mb-2">
                       {passed ? "Your Performance Breakdown" : "Topics to Focus On"}
                     </h3>
                     <div className="space-y-2">
@@ -372,12 +372,12 @@ function CDLResultsPageContent() {
                         <div key={category} className="flex items-center gap-3">
                           <div className="flex-1 min-w-0">
                             <div className="flex items-center justify-between text-sm">
-                              <span className="text-gray-700 font-medium">{t(`categories.${category}`) || category}</span>
+                              <span className="text-gray-700 dark:text-gray-300 font-medium truncate">{t(`categories.${category}`) || category}</span>
                               <span className={`font-semibold ${accuracy >= 80 ? "text-brand" : accuracy >= 60 ? "text-yellow-600" : "text-red-600"}`}>
                                 {accuracy}%
                               </span>
                             </div>
-                            <div className="w-full bg-gray-200 rounded-full h-1.5 mt-1">
+                            <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-1.5 mt-1">
                               <div
                                 className={`h-1.5 rounded-full ${accuracy >= 80 ? "bg-brand" : accuracy >= 60 ? "bg-yellow-500" : "bg-red-500"}`}
                                 style={{ width: `${accuracy}%` }}
@@ -402,10 +402,10 @@ function CDLResultsPageContent() {
         <div className="mb-4 flex items-center justify-between">
           <h2 className="text-2xl font-bold">{t("results.reviewQuestions")}</h2>
           <div className="flex gap-2">
-            <Button size="sm" className="bg-white text-black hover:bg-gray-100 border-2 border-gray-300" onClick={expandAll}>
+            <Button size="sm" className="bg-background border-2 border-gray-300 dark:border-gray-600" onClick={expandAll}>
               {t("results.expandAll")}
             </Button>
-            <Button size="sm" className="bg-white text-black hover:bg-gray-100 border-2 border-gray-300" onClick={collapseAll}>
+            <Button size="sm" className="bg-background border-2 border-gray-300 dark:border-gray-600" onClick={collapseAll}>
               {t("results.collapseAll")}
             </Button>
           </div>
@@ -420,7 +420,7 @@ function CDLResultsPageContent() {
             return (
               <Card key={index}>
                 <CardHeader
-                  className="cursor-pointer hover:bg-gray-50"
+                  className="cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-800"
                   onClick={() => toggleQuestion(index)}
                 >
                   <div className="flex items-center justify-between">
@@ -428,13 +428,13 @@ function CDLResultsPageContent() {
                       <div className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center font-semibold ${
                         isCorrect
                           ? "bg-brand-light text-brand-dark"
-                          : "bg-red-100 text-red-700"
+                          : "bg-red-100 dark:bg-red-500/20 text-red-700 dark:text-red-400"
                       }`}>
                         {index + 1}
                       </div>
                       <div className="flex-1">
                         <div className="font-medium">{question.question}</div>
-                        <div className="text-sm text-gray-600 mt-1">
+                        <div className="text-sm text-gray-600 dark:text-gray-400 mt-1">
                           {t("results.yourAnswer")}: <span className="font-semibold">{userAnswer || t("results.notAnswered")}</span>
                           {!isCorrect && (
                             <span className="ml-2">

@@ -66,7 +66,7 @@ export function CDLHeader() {
             </>
           ) : isGuest ? (
             <Link href="/signup">
-              <Button variant="outline" className="text-gray-700 border-gray-300 hover:bg-gray-50 font-semibold">
+              <Button variant="outline" className="text-gray-700 border-gray-300 hover:bg-gray-50 dark:text-gray-300 dark:border-gray-600 dark:hover:bg-gray-800 font-semibold">
                 Sign Up to Save
               </Button>
             </Link>

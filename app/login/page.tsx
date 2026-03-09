@@ -87,8 +87,8 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="bg-white relative flex flex-1 items-center justify-center py-12 px-4">
-      <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-light to-white pointer-events-none" />
+    <div className="bg-white dark:bg-background relative flex flex-1 items-center justify-center py-12 px-4">
+      <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-light to-white dark:to-background pointer-events-none" />
       <Card className="relative w-full max-w-2xl">
         <CardHeader className="space-y-1">
           <CardTitle className="text-2xl font-bold text-center">{t("login.welcomeBack")}</CardTitle>
@@ -121,7 +121,7 @@ export default function LoginPage() {
                 <span className="w-full border-t" />
               </div>
               <div className="relative flex justify-center text-xs uppercase">
-                <span className="bg-white px-2 text-muted-foreground">{t("common.orContinueWithEmail")}</span>
+                <span className="bg-white dark:bg-background px-2 text-muted-foreground">{t("common.orContinueWithEmail")}</span>
               </div>
             </div>
 
@@ -162,11 +162,11 @@ export default function LoginPage() {
               />
             </div>
 
-            <Button type="submit" className="w-full bg-black text-white hover:bg-gray-800" disabled={loading}>
+            <Button type="submit" className="w-full" disabled={loading}>
               {loading ? t("login.loggingIn") : t("login.logIn")}
             </Button>
 
-              <div className="text-center text-sm text-gray-600">
+              <div className="text-center text-sm text-gray-600 dark:text-gray-400">
                 {t("common.noAccount")}{" "}
                 <Link href="/signup" className="text-brand hover:underline font-semibold">
                   {t("common.signUp")}
@@ -177,9 +177,9 @@ export default function LoginPage() {
             {/* Password Reset Modal */}
             {showResetPassword && (
               <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
-                <div className="bg-white rounded-lg p-6 max-w-md w-full">
-                  <h3 className="text-lg font-semibold mb-2">{t("login.resetPassword")}</h3>
-                  <p className="text-gray-600 text-sm mb-4">
+                <div className="bg-white dark:bg-gray-900 rounded-lg p-6 max-w-md w-full">
+                  <h3 className="text-lg font-semibold mb-2 dark:text-gray-100">{t("login.resetPassword")}</h3>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm mb-4">
                     {t("login.resetPasswordDesc")}
                   </p>
                   <form onSubmit={handleResetPassword} className="space-y-4">
@@ -196,14 +196,14 @@ export default function LoginPage() {
                         type="button"
                         onClick={() => setShowResetPassword(false)}
                         disabled={loading}
-                        className="w-full bg-white text-black hover:bg-gray-100 border-2 border-gray-300"
+                        className="w-full bg-background border-2 border-gray-300 dark:border-gray-600"
                       >
                         {t("common.cancel")}
                       </Button>
                       <Button
                         type="submit"
                         disabled={loading || !email}
-                        className="w-full bg-black text-white hover:bg-gray-800"
+                        className="w-full"
                       >
                         {loading ? t("login.sending") : t("login.sendResetLink")}
                       </Button>

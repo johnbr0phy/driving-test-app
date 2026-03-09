@@ -199,8 +199,8 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
   ];
 
   return (
-    <div className="flex-1 bg-white relative">
-      <div className="absolute inset-x-0 top-0 h-72 bg-gradient-to-b from-brand-light to-white pointer-events-none" />
+    <div className="flex-1 bg-white dark:bg-background relative">
+      <div className="absolute inset-x-0 top-0 h-72 bg-gradient-to-b from-brand-light to-white dark:to-background pointer-events-none" />
 
       <script
         type="application/ld+json"
@@ -213,7 +213,7 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
 
       <div className="relative container mx-auto px-4 py-8 md:py-12 max-w-4xl">
         {/* Breadcrumb */}
-        <nav className="text-sm text-gray-500 mb-6" aria-label="Breadcrumb">
+        <nav className="text-sm text-gray-500 dark:text-gray-400 mb-6" aria-label="Breadcrumb">
           <ol className="flex items-center gap-1 flex-wrap">
             <li>
               <Link href="/" className="hover:text-brand">
@@ -234,16 +234,16 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
             <li>
               <ChevronRight className="h-3 w-3 inline" />
             </li>
-            <li className="text-gray-900 font-medium">{state.name}</li>
+            <li className="text-gray-900 dark:text-gray-100 font-medium">{state.name}</li>
           </ol>
         </nav>
 
         {/* Hero */}
         <div className="text-center mb-12">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-gray-100 mb-6">
             Examen de Práctica DMV Gratis de {state.name} 2026
           </h1>
-          <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto">
             Aprueba tu examen de permiso del {state.dmvName} de {state.name} en
             el primer intento. Practica con 200 preguntas específicas de{" "}
             {state.name} basadas en el manual oficial de conducir.
@@ -251,7 +251,7 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
           <Link href={`/signup?state=${state.code}`}>
             <Button
               size="lg"
-              className="text-lg px-8 py-6 bg-gray-900 text-white hover:bg-gray-800 font-bold rounded-xl"
+              className="text-lg px-8 py-6 font-bold rounded-xl"
             >
               Empezar a Practicar Gratis
             </Button>
@@ -263,40 +263,40 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
           <Card className="bg-gradient-to-br from-brand-light to-brand-gradient-to border-brand-border-light">
             <CardContent className="p-4 md:p-6 text-center">
               <FileText className="h-6 w-6 md:h-8 md:w-8 text-brand mx-auto mb-2" />
-              <div className="text-2xl md:text-3xl font-bold text-gray-900 mb-1">
+              <div className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-1">
                 {state.writtenTestQuestions}
               </div>
-              <div className="text-sm text-gray-600">Preguntas en el Examen</div>
+              <div className="text-sm text-gray-600 dark:text-gray-400">Preguntas en el Examen</div>
             </CardContent>
           </Card>
 
           <Card className="bg-gradient-to-br from-brand-light to-brand-gradient-to border-brand-border-light">
             <CardContent className="p-4 md:p-6 text-center">
               <Target className="h-6 w-6 md:h-8 md:w-8 text-brand mx-auto mb-2" />
-              <div className="text-2xl md:text-3xl font-bold text-gray-900 mb-1">
+              <div className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-1">
                 {state.passingScore}%
               </div>
-              <div className="text-sm text-gray-600">Calificación para Aprobar</div>
+              <div className="text-sm text-gray-600 dark:text-gray-400">Calificación para Aprobar</div>
             </CardContent>
           </Card>
 
           <Card className="bg-gradient-to-br from-brand-light to-brand-gradient-to border-brand-border-light">
             <CardContent className="p-4 md:p-6 text-center">
               <Clock className="h-6 w-6 md:h-8 md:w-8 text-brand mx-auto mb-2" />
-              <div className="text-2xl md:text-3xl font-bold text-gray-900 mb-1">
+              <div className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-1">
                 {state.minPermitAge}
               </div>
-              <div className="text-sm text-gray-600">Edad Mín. para Permiso</div>
+              <div className="text-sm text-gray-600 dark:text-gray-400">Edad Mín. para Permiso</div>
             </CardContent>
           </Card>
 
           <Card className="bg-gradient-to-br from-brand-light to-brand-gradient-to border-brand-border-light">
             <CardContent className="p-4 md:p-6 text-center">
               <AlertCircle className="h-6 w-6 md:h-8 md:w-8 text-brand mx-auto mb-2" />
-              <div className="text-2xl md:text-3xl font-bold text-gray-900 mb-1">
+              <div className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-1">
                 {rawPassing}/{state.writtenTestQuestions}
               </div>
-              <div className="text-sm text-gray-600">Correctas para Aprobar</div>
+              <div className="text-sm text-gray-600 dark:text-gray-400">Correctas para Aprobar</div>
             </CardContent>
           </Card>
         </div>
@@ -304,17 +304,17 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
         {/* State-Specific Content Section */}
         <Card className="mb-12">
           <CardContent className="p-6 md:p-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-6">
               Examen Escrito del {state.dmvName} de {state.name}: Lo Que
               Necesitas Saber
             </h2>
 
             <div className="space-y-6">
               <div>
-                <h3 className="font-semibold text-lg text-gray-900 mb-2">
+                <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-100 mb-2">
                   Formato del Examen
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-gray-600 dark:text-gray-400">
                   El examen escrito de conocimientos del {state.dmvName} de{" "}
                   {state.name} consiste en{" "}
                   <strong>
@@ -331,10 +331,10 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
               </div>
 
               <div>
-                <h3 className="font-semibold text-lg text-gray-900 mb-2">
+                <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-100 mb-2">
                   Edad Mínima y Elegibilidad
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-gray-600 dark:text-gray-400">
                   Debes tener al menos{" "}
                   <strong>{state.minPermitAge} años</strong> para solicitar un
                   permiso de aprendiz en {state.name}. Necesitarás aprobar el
@@ -344,31 +344,31 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
               </div>
 
               <div>
-                <h3 className="font-semibold text-lg text-gray-900 mb-2">
+                <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-100 mb-2">
                   Si Repruebas
                 </h3>
-                <p className="text-gray-600">{landingInfo.retakeInfo}</p>
+                <p className="text-gray-600 dark:text-gray-400">{landingInfo.retakeInfo}</p>
               </div>
 
               <div>
-                <h3 className="font-semibold text-lg text-gray-900 mb-2">
+                <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-100 mb-2">
                   Reglas Específicas de {state.name}
                 </h3>
                 <ul className="space-y-2">
                   {landingInfo.notableRules.map((rule, index) => (
                     <li key={index} className="flex items-start gap-3">
                       <CheckCircle2 className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
-                      <span className="text-gray-600">{rule}</span>
+                      <span className="text-gray-600 dark:text-gray-400">{rule}</span>
                     </li>
                   ))}
                 </ul>
               </div>
 
               <div>
-                <h3 className="font-semibold text-lg text-gray-900 mb-2">
+                <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-100 mb-2">
                   Manual Oficial del Conductor
                 </h3>
-                <p className="text-gray-600 mb-3">
+                <p className="text-gray-600 dark:text-gray-400 mb-3">
                   Estudia el{" "}
                   <strong>{landingInfo.handbookName}</strong> para prepararte
                   para el examen escrito. Las preguntas de práctica de TigerTest
@@ -392,13 +392,13 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
         {/* What's Included */}
         <Card className="mb-12">
           <CardContent className="p-6 md:p-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-6">
               Qué Incluye Nuestro Examen de Práctica de {state.name}
             </h2>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <CheckCircle2 className="h-6 w-6 text-green-600 flex-shrink-0 mt-0.5" />
-                <span className="text-gray-700">
+                <span className="text-gray-700 dark:text-gray-300">
                   <strong>200 preguntas de práctica</strong> que cubren todos los
                   temas del examen escrito del {state.dmvName}, incluyendo leyes
                   específicas de {state.name}
@@ -406,7 +406,7 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle2 className="h-6 w-6 text-green-600 flex-shrink-0 mt-0.5" />
-                <span className="text-gray-700">
+                <span className="text-gray-700 dark:text-gray-300">
                   <strong>4 exámenes de práctica completos</strong> con 50
                   preguntas cada uno, simulando la experiencia real del examen del{" "}
                   {state.dmvName}
@@ -414,21 +414,21 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle2 className="h-6 w-6 text-green-600 flex-shrink-0 mt-0.5" />
-                <span className="text-gray-700">
+                <span className="text-gray-700 dark:text-gray-300">
                   <strong>Modo de entrenamiento</strong> con retroalimentación
                   instantánea y explicaciones detalladas para cada respuesta
                 </span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle2 className="h-6 w-6 text-green-600 flex-shrink-0 mt-0.5" />
-                <span className="text-gray-700">
+                <span className="text-gray-700 dark:text-gray-300">
                   <strong>Seguimiento de progreso</strong> para ver cómo aumenta
                   tu probabilidad de aprobar mientras estudias
                 </span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle2 className="h-6 w-6 text-green-600 flex-shrink-0 mt-0.5" />
-                <span className="text-gray-700">
+                <span className="text-gray-700 dark:text-gray-300">
                   <strong>Compatible con móviles</strong> — estudia en tu
                   teléfono en la cama, en el sofá o donde sea
                 </span>
@@ -449,7 +449,7 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
           <Link href={`/signup?state=${state.code}`}>
             <Button
               size="lg"
-              className="text-lg px-8 py-6 bg-white text-brand-dark hover:bg-gray-100 font-bold rounded-xl"
+              className="text-lg px-8 py-6 bg-white text-brand-dark hover:bg-gray-100 dark:bg-gray-800 dark:text-brand dark:hover:bg-gray-700 font-bold rounded-xl"
             >
               Empezar a Practicar Ahora — Es Gratis
             </Button>
@@ -458,19 +458,19 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
 
         {/* Testimonials */}
         <div className="mb-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-6 text-center">
             Lo Que Dicen los Estudiantes
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             {testimonials.map((t, i) => (
               <div
                 key={i}
-                className="bg-gray-50 border border-gray-200 rounded-xl p-5"
+                className="bg-gray-50 dark:bg-gray-900/50 border border-gray-200 dark:border-gray-700 rounded-xl p-5"
               >
-                <p className="text-gray-800 mb-3 italic">
+                <p className="text-gray-800 dark:text-gray-200 mb-3 italic">
                   &quot;{t.quote}&quot;
                 </p>
-                <p className="text-gray-500 text-sm">{t.author}</p>
+                <p className="text-gray-500 dark:text-gray-400 text-sm">{t.author}</p>
               </div>
             ))}
           </div>
@@ -478,16 +478,16 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
 
         {/* FAQ Section */}
         <div className="mb-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-6">
             Preguntas Frecuentes Sobre el Examen del DMV de {state.name}
           </h2>
           <div className="space-y-6">
             {faqItems.map((item, i) => (
               <div key={i}>
-                <h3 className="font-semibold text-lg text-gray-900 mb-2">
+                <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-100 mb-2">
                   {item.question}
                 </h3>
-                <p className="text-gray-600">{item.answer}</p>
+                <p className="text-gray-600 dark:text-gray-400">{item.answer}</p>
               </div>
             ))}
           </div>
@@ -496,7 +496,7 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
         {/* Related State Pages */}
         {neighboringStates.length > 0 && (
           <div className="mb-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-6">
               Exámenes de Práctica de Estados Cercanos
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
@@ -506,12 +506,12 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
                     <Link
                       key={neighbor.slug}
                       href={`/es/${neighbor.slug}-examen-practica-dmv`}
-                      className="flex items-center justify-between bg-gray-50 border border-gray-200 rounded-xl p-4 hover:border-brand-border hover:bg-brand-light transition-colors"
+                      className="flex items-center justify-between bg-gray-50 dark:bg-gray-900/50 border border-gray-200 dark:border-gray-700 rounded-xl p-4 hover:border-brand-border hover:bg-brand-light transition-colors"
                     >
-                      <span className="font-medium text-gray-900">
+                      <span className="font-medium text-gray-900 dark:text-gray-100">
                         {neighbor.name}
                       </span>
-                      <ChevronRight className="h-4 w-4 text-gray-400" />
+                      <ChevronRight className="h-4 w-4 text-gray-400 dark:text-gray-500" />
                     </Link>
                   )
               )}
@@ -521,19 +521,19 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
 
         {/* Final CTA */}
         <div className="text-center py-8">
-          <p className="text-gray-600 mb-4">
+          <p className="text-gray-600 dark:text-gray-400 mb-4">
             ¿Listo para empezar a estudiar para tu examen de permiso de{" "}
             {state.name}?
           </p>
           <Link href={`/signup?state=${state.code}`}>
             <Button
               size="lg"
-              className="text-lg px-8 py-6 bg-gray-900 text-white hover:bg-gray-800 font-bold rounded-xl"
+              className="text-lg px-8 py-6 font-bold rounded-xl"
             >
               Empezar a Practicar Gratis
             </Button>
           </Link>
-          <p className="text-sm text-gray-500 mt-3">
+          <p className="text-sm text-gray-500 dark:text-gray-400 mt-3">
             No se requiere cuenta. Gratis para empezar.
           </p>
         </div>

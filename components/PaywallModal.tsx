@@ -56,7 +56,7 @@ export function PaywallModal({
               height={56}
               className="flex-shrink-0"
             />
-            <DialogTitle className="text-2xl font-bold leading-tight text-gray-900">
+            <DialogTitle className="text-2xl font-bold leading-tight text-gray-900 dark:text-gray-100">
               {t("paywall.studySmart")}
               <br />
               {t("paywall.passFirstTime")}
@@ -75,7 +75,7 @@ export function PaywallModal({
             </div>
             <ul className="space-y-2.5">
               {dict.paywall.benefits.map((benefit, index) => (
-                <li key={index} className="flex items-center gap-2.5 text-sm text-gray-800">
+                <li key={index} className="flex items-center gap-2.5 text-sm text-gray-800 dark:text-gray-200">
                   <CheckCircle className="h-5 w-5 text-green-600 fill-green-100 flex-shrink-0" />
                   <span>{benefit}</span>
                 </li>
@@ -87,18 +87,18 @@ export function PaywallModal({
         {/* Price section */}
         <div className="mb-5">
           <div className="flex items-baseline justify-between">
-            <span className="text-4xl font-bold text-gray-900">$9.99</span>
+            <span className="text-4xl font-bold text-gray-900 dark:text-gray-100">$9.99</span>
             <span className="border border-brand text-brand text-xs font-semibold px-3 py-1 rounded-full">
               {t("paywall.cheaperThanRetest")}
             </span>
           </div>
-          <div className="text-sm text-gray-500 mt-1">{t("paywall.oneTimePayment")}</div>
+          <div className="text-sm text-gray-500 dark:text-gray-400 mt-1">{t("paywall.oneTimePayment")}</div>
         </div>
 
         {/* CTA section */}
         {isGuest ? (
           <div className="flex flex-col items-center gap-2">
-            <p className="text-sm text-gray-600 text-center mb-1">
+            <p className="text-sm text-gray-600 dark:text-gray-400 text-center mb-1">
               {t("paywall.createFreeAccountPrompt")}
             </p>
             <Button
@@ -109,7 +109,7 @@ export function PaywallModal({
             </Button>
             <button
               onClick={() => onOpenChange(false)}
-              className="text-sm text-gray-400 hover:text-gray-600 py-2 transition-colors"
+              className="text-sm text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 py-2 transition-colors"
             >
               {t("paywall.illTakeMyChances")}
             </button>
@@ -126,7 +126,7 @@ export function PaywallModal({
             <button
               onClick={() => onOpenChange(false)}
               disabled={loading}
-              className="text-sm text-gray-400 hover:text-gray-600 py-2 transition-colors disabled:opacity-50"
+              className="text-sm text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 py-2 transition-colors disabled:opacity-50"
             >
               {t("paywall.illTakeMyChances")}
             </button>
@@ -134,13 +134,13 @@ export function PaywallModal({
         )}
 
         {/* Social proof */}
-        <div className="flex items-center justify-center gap-1.5 mt-4 pt-3 border-t border-gray-100">
+        <div className="flex items-center justify-center gap-1.5 mt-4 pt-3 border-t border-gray-100 dark:border-gray-800">
           <div className="flex">
             {[...Array(5)].map((_, i) => (
               <Star key={i} className="h-3.5 w-3.5 text-yellow-400 fill-yellow-400" />
             ))}
           </div>
-          <span className="text-xs text-gray-500">{t("paywall.socialProof")}</span>
+          <span className="text-xs text-gray-500 dark:text-gray-400">{t("paywall.socialProof")}</span>
         </div>
       </DialogContent>
     </Dialog>

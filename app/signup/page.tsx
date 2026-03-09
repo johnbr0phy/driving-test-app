@@ -161,8 +161,8 @@ function SignupPageContent() {
 
   if (step === 1) {
     return (
-      <div className="bg-white relative min-h-[80vh] flex items-center justify-center px-4">
-        <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-light to-white pointer-events-none" />
+      <div className="bg-white dark:bg-background relative min-h-[80vh] flex items-center justify-center px-4">
+        <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-light to-white dark:to-background pointer-events-none" />
         <div className="relative text-center space-y-8">
           {error && (
             <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded mb-4">
@@ -170,7 +170,7 @@ function SignupPageContent() {
             </div>
           )}
 
-          <div className="flex flex-wrap items-center justify-center gap-2 text-2xl md:text-3xl font-medium text-gray-800">
+          <div className="flex flex-wrap items-center justify-center gap-2 text-2xl md:text-3xl font-medium text-gray-800 dark:text-gray-200">
             <span>{t("signup.iNeedToPass")}</span>
             <Select onValueChange={setSelectedState} value={selectedState || undefined}>
               <SelectTrigger className="w-auto inline-flex text-2xl md:text-3xl font-semibold text-brand border-none shadow-none focus:ring-0 focus:ring-offset-0 px-1 underline decoration-brand-border decoration-2 underline-offset-4 hover:decoration-brand h-auto">
@@ -190,12 +190,12 @@ function SignupPageContent() {
           <Button
             onClick={handleStateSelect}
             disabled={!selectedState || loading}
-            className="bg-black text-white hover:bg-gray-800 px-8 py-3 text-lg"
+            className="px-8 py-3 text-lg"
           >
             {t("common.continue")}
           </Button>
 
-          <div className="text-center text-sm text-gray-600">
+          <div className="text-center text-sm text-gray-600 dark:text-gray-400">
             {t("common.alreadyHaveAccount")}{" "}
             <Link href="/login" className="text-brand hover:underline font-semibold">
               {t("common.logIn")}
@@ -207,8 +207,8 @@ function SignupPageContent() {
   }
 
   return (
-    <div className="bg-white relative flex items-center justify-center py-12 px-4">
-      <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-light to-white pointer-events-none" />
+    <div className="bg-white dark:bg-background relative flex items-center justify-center py-12 px-4">
+      <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-light to-white dark:to-background pointer-events-none" />
       <Card className="relative w-full max-w-2xl">
         <CardHeader className="space-y-1">
           <CardTitle className="text-2xl font-bold text-center">
@@ -239,7 +239,7 @@ function SignupPageContent() {
                   <span className="w-full border-t" />
                 </div>
                 <div className="relative flex justify-center text-xs uppercase">
-                  <span className="bg-white px-2 text-muted-foreground">{t("common.orSignUpWithEmail")}</span>
+                  <span className="bg-white dark:bg-background px-2 text-muted-foreground">{t("common.orSignUpWithEmail")}</span>
                 </div>
               </div>
 
@@ -284,7 +284,7 @@ function SignupPageContent() {
                   />
                 </div>
 
-                <label className="flex items-start gap-2 text-sm text-gray-600 cursor-pointer">
+                <label className="flex items-start gap-2 text-sm text-gray-600 dark:text-gray-400 cursor-pointer">
                   <input
                     type="checkbox"
                     checked={emailConsent}
@@ -305,11 +305,11 @@ function SignupPageContent() {
                     type="button"
                     onClick={() => guestHasState ? router.push("/dashboard") : setStep(1)}
                     disabled={loading}
-                    className="w-full bg-white text-black hover:bg-gray-100 border-2 border-gray-300"
+                    className="w-full bg-background border-2 border-gray-300 dark:border-gray-600"
                   >
                     {guestHasState ? t("signup.continueAsGuest") : t("common.back")}
                   </Button>
-                  <Button type="submit" className="w-full bg-black text-white hover:bg-gray-800" disabled={loading}>
+                  <Button type="submit" className="w-full" disabled={loading}>
                     {loading ? t("signup.creatingAccount") : guestHasState ? t("signup.saveProgress") : t("common.createAccount")}
                   </Button>
                 </div>
@@ -324,7 +324,7 @@ function SignupPageContent() {
 export default function SignupPage() {
   return (
     <Suspense fallback={
-      <div className="bg-white relative min-h-[80vh] flex items-center justify-center">
+      <div className="bg-white dark:bg-background relative min-h-[80vh] flex items-center justify-center">
         <div className="animate-pulse text-gray-400">Loading...</div>
       </div>
     }>

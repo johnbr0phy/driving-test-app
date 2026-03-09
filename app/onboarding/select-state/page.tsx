@@ -52,10 +52,10 @@ export default function OnboardingSelectStatePage() {
   }
 
   return (
-    <div className="bg-white relative min-h-[80vh] flex items-center justify-center px-4">
-      <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-light to-white pointer-events-none" />
+    <div className="bg-white dark:bg-background relative min-h-[80vh] flex items-center justify-center px-4">
+      <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-light to-white dark:to-background pointer-events-none" />
       <div className="relative text-center space-y-8">
-        <div className="flex flex-wrap items-center justify-center gap-2 text-2xl md:text-3xl font-medium text-gray-800">
+        <div className="flex flex-wrap items-center justify-center gap-2 text-2xl md:text-3xl font-medium text-gray-800 dark:text-gray-200">
           <span>{t("onboarding.iNeedToPass")}</span>
           <Select onValueChange={setSelectedState} value={selectedState || undefined}>
             <SelectTrigger className="w-auto inline-flex text-2xl md:text-3xl font-semibold text-brand border-none shadow-none focus:ring-0 focus:ring-offset-0 px-1 underline decoration-brand-border decoration-2 underline-offset-4 hover:decoration-brand h-auto">
@@ -75,12 +75,12 @@ export default function OnboardingSelectStatePage() {
         <Button
           onClick={handleComplete}
           disabled={!selectedState || loading}
-          className="bg-black text-white hover:bg-gray-800 px-8 py-3 text-lg"
+          className="px-8 py-3 text-lg"
         >
           {loading ? t("common.loading") : t("onboarding.letsGo")}
         </Button>
 
-        <div className="text-center text-sm text-gray-600">
+        <div className="text-center text-sm text-gray-600 dark:text-gray-400">
           {t("common.alreadyHaveAccount")}{" "}
           <Link href="/login" className="text-brand hover:underline font-semibold">
             {t("common.logIn")}

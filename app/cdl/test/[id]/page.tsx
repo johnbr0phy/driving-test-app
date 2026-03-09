@@ -143,10 +143,10 @@ function CDLTestPageContent() {
 
   if (loading) {
     return (
-      <div className="flex-1 bg-gray-50 flex items-center justify-center">
+      <div className="flex-1 bg-gray-50 dark:bg-background flex items-center justify-center">
         <div className="text-center">
           <div className="text-xl font-semibold mb-2">{t("testPage.loadingTest")}</div>
-          <div className="text-gray-600">{t("testPage.preparingQuestions")}</div>
+          <div className="text-gray-600 dark:text-gray-400">{t("testPage.preparingQuestions")}</div>
         </div>
       </div>
     );
@@ -154,12 +154,12 @@ function CDLTestPageContent() {
 
   if (questions.length === 0) {
     return (
-      <div className="flex-1 bg-gray-50 flex items-center justify-center">
+      <div className="flex-1 bg-gray-50 dark:bg-background flex items-center justify-center">
         <Card className="max-w-md">
           <CardContent className="p-8 text-center">
             <div className="text-xl font-semibold mb-2">{t("testPage.noQuestionsAvailable")}</div>
-            <div className="text-gray-600 mb-4">{t("testPage.unableToLoad")}</div>
-            <Button className="bg-black text-white hover:bg-gray-800" onClick={() => router.push("/cdl/dashboard")}>
+            <div className="text-gray-600 dark:text-gray-400 mb-4">{t("testPage.unableToLoad")}</div>
+            <Button onClick={() => router.push("/cdl/dashboard")}>
               Back to CDL Dashboard
             </Button>
           </CardContent>
@@ -169,7 +169,7 @@ function CDLTestPageContent() {
   }
 
   return (
-    <div className="flex-1 bg-gray-50">
+    <div className="flex-1 bg-gray-50 dark:bg-background">
       <div className="container mx-auto px-4 py-8 max-w-6xl">
         {/* Back Button */}
         <div className="mb-6">
@@ -185,7 +185,7 @@ function CDLTestPageContent() {
         <div className="mb-6">
           <div className="flex items-center justify-between mb-4">
             <h1 className="text-3xl font-bold">CDL Test {testId}</h1>
-            <div className="text-sm text-gray-600">
+            <div className="text-sm text-gray-600 dark:text-gray-400">
               {answeredCount} {t("questionCard.of")} {totalQuestions} {t("testPage.answered")}
             </div>
           </div>
@@ -193,7 +193,7 @@ function CDLTestPageContent() {
           {/* Progress Bar */}
           <div className="space-y-2">
             <Progress value={progress} className="h-2 [&>div]:bg-brand" />
-            <div className="flex justify-between text-xs text-gray-600">
+            <div className="flex justify-between text-xs text-gray-600 dark:text-gray-400">
               <span>{t("testPage.progress")}: {Math.round(progress)}%</span>
               <span>
                 {canSubmit ? t("testPage.readyToSubmit") : `${totalQuestions - answeredCount} ${t("testPage.questionsRemaining")}`}
@@ -227,7 +227,7 @@ function CDLTestPageContent() {
                     ? "border-brand bg-brand text-white"
                     : answers[index]
                     ? "border-brand bg-brand-light text-brand-dark"
-                    : "border-gray-300 bg-white text-gray-400"
+                    : "border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-400"
                   }
                 `}
               >
@@ -235,7 +235,7 @@ function CDLTestPageContent() {
               </div>
             ))}
           </div>
-          <div className="text-xs text-gray-500 mt-2 text-center">
+          <div className="text-xs text-gray-500 dark:text-gray-400 mt-2 text-center">
             {t("testPage.selectAnswerToAdvance")}
           </div>
         </div>

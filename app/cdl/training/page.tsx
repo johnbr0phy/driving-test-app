@@ -191,7 +191,7 @@ function CDLTrainingPageContent() {
       {/* Onboarding Celebration Modal */}
       {showCelebration && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm animate-in fade-in duration-300">
-          <div className="bg-white rounded-2xl p-8 mx-4 max-w-md text-center shadow-2xl animate-in zoom-in-95 duration-300">
+          <div className="bg-white dark:bg-gray-900 rounded-2xl p-8 mx-4 max-w-md text-center shadow-2xl animate-in zoom-in-95 duration-300">
             <div className="mb-4">
               <img
                 src="/tiger_face_02.png"
@@ -199,18 +199,18 @@ function CDLTrainingPageContent() {
                 className="w-32 h-32 mx-auto"
               />
             </div>
-            <h2 className="text-3xl font-bold text-gray-900 mb-2">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">
               {t("trainingPage.congratulations")}
             </h2>
             <p className="text-xl text-brand font-semibold mb-4">
               You Unlocked CDL Training Sets!
             </p>
-            <p className="text-gray-600 mb-6">
+            <p className="text-gray-600 dark:text-gray-400 mb-6">
               {t("trainingPage.answeredTenCorrectly")}
             </p>
             <div className="flex flex-col gap-3">
               <Link href="/cdl/dashboard">
-                <Button className="w-full bg-black text-white hover:bg-gray-800 text-lg py-6">
+                <Button className="w-full text-lg py-6">
                   Choose CDL Training Set
                 </Button>
               </Link>
@@ -244,7 +244,7 @@ function CDLTrainingPageContent() {
               {/* Branding header */}
               <div className="mb-6">
                 <div className="text-gray-300 text-lg font-bold tracking-widest">tigertest.io</div>
-                <div className="text-gray-500 text-xs uppercase tracking-widest mt-1">
+                <div className="text-gray-500 dark:text-gray-400 text-xs uppercase tracking-widest mt-1">
                   CDL TRAINING
                 </div>
               </div>
@@ -376,8 +376,8 @@ function CDLTrainingPageContent() {
         ) : (
           <Card className="w-full">
             <CardContent className="p-8 text-center">
-              <p className="text-gray-600 mb-4">{t("trainingPage.noMoreQuestions")}</p>
-              <Button className="bg-black text-white hover:bg-gray-800" onClick={() => router.push("/cdl/dashboard")}>
+              <p className="text-gray-600 dark:text-gray-400 mb-4">{t("trainingPage.noMoreQuestions")}</p>
+              <Button onClick={() => router.push("/cdl/dashboard")}>
                 Back to CDL Dashboard
               </Button>
             </CardContent>
@@ -389,10 +389,10 @@ function CDLTrainingPageContent() {
           {isSetMode && setProgress ? (
             // Set-based progress
             <>
-              <div className="flex items-center justify-center gap-1 text-sm md:text-lg text-gray-700">
+              <div className="flex items-center justify-center gap-1 text-sm md:text-lg text-gray-700 dark:text-gray-300">
                 <span className="font-bold text-xl md:text-2xl text-brand">{setProgress.correct}</span>
-                <span className="text-gray-500">/{setProgress.total}</span>
-                <span className="text-gray-500 text-xs md:text-base ml-1">
+                <span className="text-gray-500 dark:text-gray-400">/{setProgress.total}</span>
+                <span className="text-gray-500 dark:text-gray-400 text-xs md:text-base ml-1">
                   {t("trainingPage.questionsCorrect")}
                 </span>
               </div>
@@ -406,10 +406,10 @@ function CDLTrainingPageContent() {
           ) : !isOnboardingComplete ? (
             // Onboarding progress
             <>
-              <div className="flex items-center justify-center gap-1 text-sm md:text-lg text-gray-700">
+              <div className="flex items-center justify-center gap-1 text-sm md:text-lg text-gray-700 dark:text-gray-300">
                 <span className="font-bold text-xl md:text-2xl text-brand">{training.totalCorrectAllTime}</span>
-                <span className="text-gray-500">/10</span>
-                <span className="text-gray-500 text-xs md:text-base ml-1">
+                <span className="text-gray-500 dark:text-gray-400">/10</span>
+                <span className="text-gray-500 dark:text-gray-400 text-xs md:text-base ml-1">
                   ({10 - training.totalCorrectAllTime} more to unlock CDL sets)
                 </span>
               </div>
@@ -422,9 +422,9 @@ function CDLTrainingPageContent() {
             </>
           ) : (
             // Post-onboarding without set - show current streak
-            <div className="flex items-center justify-center gap-1 text-sm md:text-lg text-gray-700">
+            <div className="flex items-center justify-center gap-1 text-sm md:text-lg text-gray-700 dark:text-gray-300">
               <span className="font-bold text-xl md:text-2xl text-brand">{training.currentStreak}</span>
-              <span className="text-gray-500 text-xs md:text-base ml-1">
+              <span className="text-gray-500 dark:text-gray-400 text-xs md:text-base ml-1">
                 {t("trainingPage.streak")}
               </span>
             </div>

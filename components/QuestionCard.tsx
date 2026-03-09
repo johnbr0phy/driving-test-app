@@ -39,21 +39,21 @@ export function QuestionCard({
 
     if (showResult) {
       if (isThisCorrect) {
-        return "border-green-500 bg-green-50";
+        return "border-green-500 bg-green-50 dark:bg-green-900/20";
       } else if (isSelected && !isCorrect) {
-        return "border-red-500 bg-red-50";
+        return "border-red-500 bg-red-50 dark:bg-red-900/20";
       }
-      return "border-gray-300 opacity-50";
+      return "border-gray-300 dark:border-gray-600 opacity-50";
     }
 
-    return "border-gray-300 [@media(hover:hover)]:hover:border-brand [@media(hover:hover)]:hover:bg-brand-light active:border-brand active:bg-brand-light cursor-pointer";
+    return "border-gray-300 dark:border-gray-600 [@media(hover:hover)]:hover:border-brand [@media(hover:hover)]:hover:bg-brand-light active:border-brand active:bg-brand-light cursor-pointer";
   };
 
   return (
     <Card className="w-full">
       <CardHeader>
         <div className="flex items-center justify-between mb-4">
-          <div className="text-sm text-gray-600">
+          <div className="text-sm text-gray-600 dark:text-gray-400">
             {t("questionCard.questionOf")} {questionNumber} {t("questionCard.of")} {totalQuestions}
           </div>
           <Badge variant="outline">{t(`categories.${question.category}`)}</Badge>

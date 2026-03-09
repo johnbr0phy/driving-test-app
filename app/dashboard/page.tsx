@@ -380,7 +380,7 @@ function DashboardContent() {
               <div className="flex items-center gap-3">
                 <div className="text-2xl">📊</div>
                 <div className="flex-1">
-                  <p className="text-sm text-gray-700">
+                  <p className="text-sm text-gray-700 dark:text-gray-300">
                     <span className="font-bold">{t("common.signUp")}</span> {t("dashboard.signUpPrompt")}
                   </p>
                   <Link href="/signup" className="text-xs text-brand hover:text-brand-dark font-medium mt-1 inline-block">
@@ -591,7 +591,7 @@ function DashboardContent() {
                 </p>
                 <p className="text-xs text-gray-500 mt-0.5">
                   {t("dashboard.premiumBottomDesc")}{" "}
-                  <a href="https://www.johnbrophy.net/contact" className="underline font-medium hover:text-gray-700">
+                  <a href="https://www.johnbrophy.net/contact" className="underline font-medium hover:text-gray-700 dark:hover:text-gray-300">
                     {t("dashboard.premiumBottomContact")}
                   </a>.
                 </p>

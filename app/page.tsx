@@ -370,7 +370,7 @@ export default function Home() {
 
         <div className="space-y-8">
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 mb-2">
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-100 mb-2">
               <T k="landing.faq1Q">How many questions are on the DMV written test?</T>
             </h3>
             <p className="text-gray-600 dark:text-gray-400">
@@ -379,7 +379,7 @@ export default function Home() {
           </div>
 
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 mb-2">
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-100 mb-2">
               <T k="landing.faq2Q">Can I use TigerTest for free?</T>
             </h3>
             <p className="text-gray-600 dark:text-gray-400">
@@ -388,7 +388,7 @@ export default function Home() {
           </div>
 
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 mb-2">
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-100 mb-2">
               <T k="landing.faq3Q">What score do I need to pass the DMV test?</T>
             </h3>
             <p className="text-gray-600 dark:text-gray-400">
@@ -397,7 +397,7 @@ export default function Home() {
           </div>
 
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 mb-2">
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-100 mb-2">
               <T k="landing.faq4Q">How should I study for the DMV permit test?</T>
             </h3>
             <p className="text-gray-600 dark:text-gray-400">

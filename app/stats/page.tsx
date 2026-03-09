@@ -223,7 +223,7 @@ function StatsContent() {
   }
 
   return (
-    <div className="flex-1 bg-gray-50 relative">
+    <div className="flex-1 bg-gray-50 dark:bg-background relative">
       <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-light to-transparent pointer-events-none" />
       <div className="relative container mx-auto px-4 py-8 max-w-6xl">
         {/* Paywall Modal */}
@@ -247,13 +247,13 @@ function StatsContent() {
         </div>
 
         {/* Tab Navigation */}
-        <div className="flex gap-1 mb-6 bg-gray-100 rounded-xl p-1">
+        <div className="flex gap-1 mb-6 bg-gray-100 dark:bg-gray-800 rounded-xl p-1">
           <button
             onClick={() => setActiveTab("yours")}
             className={`flex-1 text-sm font-medium py-2 px-4 rounded-lg transition-all ${
               activeTab === "yours"
-                ? "bg-white text-gray-900 shadow-sm"
-                : "text-gray-500 hover:text-gray-700"
+                ? "bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 shadow-sm"
+                : "text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300"
             }`}
           >
             {t("stats.yourStats")}
@@ -262,8 +262,8 @@ function StatsContent() {
             onClick={() => setActiveTab("community")}
             className={`flex-1 text-sm font-medium py-2 px-4 rounded-lg transition-all ${
               activeTab === "community"
-                ? "bg-white text-gray-900 shadow-sm"
-                : "text-gray-500 hover:text-gray-700"
+                ? "bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 shadow-sm"
+                : "text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300"
             }`}
           >
             {t("stats.commonMistakes")}
@@ -295,7 +295,7 @@ function StatsContent() {
               className={`whitespace-nowrap text-sm px-3 py-1.5 rounded-full border transition-colors ${
                 sortField === field
                   ? "bg-brand-light border-brand-border text-brand-dark font-medium"
-                  : "bg-white border-gray-200 text-gray-600"
+                  : "bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-400"
               }`}
             >
               {label}
@@ -310,7 +310,7 @@ function StatsContent() {
         <div className="md:hidden space-y-3">
           {sortedQuestions.length === 0 ? (
             <Card>
-              <CardContent className="p-6 text-center text-gray-500">
+              <CardContent className="p-6 text-center text-gray-500 dark:text-gray-400">
                 {t("stats.noQuestionsAvailable")}
               </CardContent>
             </Card>
@@ -329,7 +329,7 @@ function StatsContent() {
                       <StatusIcon item={item} />
                       <div className="flex-1 min-w-0">
                         <p className="text-sm font-medium leading-snug">{item.question.question}</p>
-                        <p className="text-xs text-gray-500 mt-1">
+                        <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
                           {t(`categories.${item.question.category}`)}
                         </p>
                       </div>
@@ -337,10 +337,10 @@ function StatsContent() {
                     {expandedQuestionId === item.question.questionId && (
                       <div className="mb-3 space-y-2">
                         <div className="flex items-center justify-between">
-                          <p className="text-xs font-semibold text-gray-500 uppercase">{t("stats.answers")}</p>
+                          <p className="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase">{t("stats.answers")}</p>
                           <button
                             onClick={(e) => { e.stopPropagation(); setExpandedQuestionId(null); }}
-                            className="p-1 rounded-full hover:bg-gray-100"
+                            className="p-1 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800"
                           >
                             <X className="h-4 w-4 text-gray-400" />
                           </button>
@@ -355,13 +355,13 @@ function StatsContent() {
                               className={`flex items-start gap-2 p-2 rounded text-sm ${
                                 isCorrect
                                   ? "bg-green-50 border border-green-200"
-                                  : "bg-gray-50 border border-gray-200"
+                                  : "bg-gray-50 dark:bg-gray-800/50 border border-gray-200 dark:border-gray-700"
                               }`}
                             >
-                              <span className={`font-semibold ${isCorrect ? "text-green-600" : "text-gray-500"}`}>
+                              <span className={`font-semibold ${isCorrect ? "text-green-600" : "text-gray-500 dark:text-gray-400"}`}>
                                 {letter}.
                               </span>
-                              <span className={isCorrect ? "text-green-700" : "text-gray-600"}>
+                              <span className={isCorrect ? "text-green-700" : "text-gray-600 dark:text-gray-400"}>
                                 {optionText}
                               </span>
                               {isCorrect && (
@@ -372,24 +372,24 @@ function StatsContent() {
                         })}
                       </div>
                     )}
-                    <div className="flex items-center justify-between text-sm bg-gray-50 rounded-lg p-3">
+                    <div className="flex items-center justify-between text-sm bg-gray-50 dark:bg-gray-800 rounded-lg p-3">
                       <div className="text-center">
-                        <div className={`font-semibold ${item.timesAnswered > 0 ? "text-gray-900" : "text-gray-400"}`}>
+                        <div className={`font-semibold ${item.timesAnswered > 0 ? "text-gray-900 dark:text-gray-100" : "text-gray-400"}`}>
                           {item.timesAnswered}
                         </div>
-                        <div className="text-xs text-gray-500">{t("stats.answered")}</div>
+                        <div className="text-xs text-gray-500 dark:text-gray-400">{t("stats.answered")}</div>
                       </div>
                       <div className="text-center">
                         <div className={`font-semibold ${item.correct > 0 ? "text-green-600" : "text-gray-400"}`}>
                           {item.correct}
                         </div>
-                        <div className="text-xs text-gray-500">{t("stats.correctLabel")}</div>
+                        <div className="text-xs text-gray-500 dark:text-gray-400">{t("stats.correctLabel")}</div>
                       </div>
                       <div className="text-center">
                         <div className={`font-semibold ${item.wrong > 0 ? "text-red-600" : "text-gray-400"}`}>
                           {item.wrong}
                         </div>
-                        <div className="text-xs text-gray-500">{t("stats.wrongLabel")}</div>
+                        <div className="text-xs text-gray-500 dark:text-gray-400">{t("stats.wrongLabel")}</div>
                       </div>
                       <div className="text-center">
                         {item.timesAnswered > 0 ? (
@@ -405,7 +405,7 @@ function StatsContent() {
                         ) : (
                           <div className="font-semibold text-gray-400">-</div>
                         )}
-                        <div className="text-xs text-gray-500">{t("stats.accuracy")}</div>
+                        <div className="text-xs text-gray-500 dark:text-gray-400">{t("stats.accuracy")}</div>
                       </div>
                     </div>
                   </CardContent>
@@ -422,27 +422,27 @@ function StatsContent() {
                             <StatusIcon item={item} />
                             <div className="flex-1 min-w-0">
                               <p className="text-sm font-medium leading-snug">{item.question.question}</p>
-                              <p className="text-xs text-gray-500 mt-1">
+                              <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
                                 {t(`categories.${item.question.category}`)}
                               </p>
                             </div>
                           </div>
-                          <div className="flex items-center justify-between text-sm bg-gray-50 rounded-lg p-3">
+                          <div className="flex items-center justify-between text-sm bg-gray-50 dark:bg-gray-800 rounded-lg p-3">
                             <div className="text-center">
                               <div className="font-semibold text-gray-400">{item.timesAnswered}</div>
-                              <div className="text-xs text-gray-500">{t("stats.answered")}</div>
+                              <div className="text-xs text-gray-500 dark:text-gray-400">{t("stats.answered")}</div>
                             </div>
                             <div className="text-center">
                               <div className="font-semibold text-gray-400">{item.correct}</div>
-                              <div className="text-xs text-gray-500">{t("stats.correctLabel")}</div>
+                              <div className="text-xs text-gray-500 dark:text-gray-400">{t("stats.correctLabel")}</div>
                             </div>
                             <div className="text-center">
                               <div className="font-semibold text-gray-400">{item.wrong}</div>
-                              <div className="text-xs text-gray-500">{t("stats.wrongLabel")}</div>
+                              <div className="text-xs text-gray-500 dark:text-gray-400">{t("stats.wrongLabel")}</div>
                             </div>
                             <div className="text-center">
                               <div className="font-semibold text-gray-400">-</div>
-                              <div className="text-xs text-gray-500">{t("stats.accuracy")}</div>
+                              <div className="text-xs text-gray-500 dark:text-gray-400">{t("stats.accuracy")}</div>
                             </div>
                           </div>
                         </CardContent>
@@ -450,7 +450,7 @@ function StatsContent() {
                     ))}
                   </div>
                   {/* Gradient fade */}
-                  <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-gray-50 to-transparent pointer-events-none" />
+                  <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-gray-50 dark:from-gray-900 to-transparent pointer-events-none" />
                 </div>
 
                 {/* Lock UI — below the fade in clean white space */}
@@ -458,10 +458,10 @@ function StatsContent() {
                   <div className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-brand-light mb-3">
                     <Lock className="h-4 w-4 text-brand" />
                   </div>
-                  <p className="text-sm font-semibold text-gray-900 mb-1">
+                  <p className="text-sm font-semibold text-gray-900 dark:text-gray-100 mb-1">
                     {sortedQuestions.length - FREE_QUESTION_LIMIT} {t("stats.moreQuestions")}
                   </p>
-                  <p className="text-xs text-gray-500 mb-3">
+                  <p className="text-xs text-gray-500 dark:text-gray-400 mb-3">
                     {t("stats.unlockPremiumStats")}
                   </p>
                   <button
@@ -486,7 +486,7 @@ function StatsContent() {
                       <StatusIcon item={item} />
                       <div className="flex-1 min-w-0">
                         <p className="text-sm font-medium leading-snug">{item.question.question}</p>
-                        <p className="text-xs text-gray-500 mt-1">
+                        <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
                           {t(`categories.${item.question.category}`)}
                         </p>
                       </div>
@@ -494,10 +494,10 @@ function StatsContent() {
                     {expandedQuestionId === item.question.questionId && (
                       <div className="mb-3 space-y-2">
                         <div className="flex items-center justify-between">
-                          <p className="text-xs font-semibold text-gray-500 uppercase">{t("stats.answers")}</p>
+                          <p className="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase">{t("stats.answers")}</p>
                           <button
                             onClick={(e) => { e.stopPropagation(); setExpandedQuestionId(null); }}
-                            className="p-1 rounded-full hover:bg-gray-100"
+                            className="p-1 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800"
                           >
                             <X className="h-4 w-4 text-gray-400" />
                           </button>
@@ -512,13 +512,13 @@ function StatsContent() {
                               className={`flex items-start gap-2 p-2 rounded text-sm ${
                                 isCorrect
                                   ? "bg-green-50 border border-green-200"
-                                  : "bg-gray-50 border border-gray-200"
+                                  : "bg-gray-50 dark:bg-gray-800/50 border border-gray-200 dark:border-gray-700"
                               }`}
                             >
-                              <span className={`font-semibold ${isCorrect ? "text-green-600" : "text-gray-500"}`}>
+                              <span className={`font-semibold ${isCorrect ? "text-green-600" : "text-gray-500 dark:text-gray-400"}`}>
                                 {letter}.
                               </span>
-                              <span className={isCorrect ? "text-green-700" : "text-gray-600"}>
+                              <span className={isCorrect ? "text-green-700" : "text-gray-600 dark:text-gray-400"}>
                                 {optionText}
                               </span>
                               {isCorrect && (
@@ -529,24 +529,24 @@ function StatsContent() {
                         })}
                       </div>
                     )}
-                    <div className="flex items-center justify-between text-sm bg-gray-50 rounded-lg p-3">
+                    <div className="flex items-center justify-between text-sm bg-gray-50 dark:bg-gray-800 rounded-lg p-3">
                       <div className="text-center">
-                        <div className={`font-semibold ${item.timesAnswered > 0 ? "text-gray-900" : "text-gray-400"}`}>
+                        <div className={`font-semibold ${item.timesAnswered > 0 ? "text-gray-900 dark:text-gray-100" : "text-gray-400"}`}>
                           {item.timesAnswered}
                         </div>
-                        <div className="text-xs text-gray-500">{t("stats.answered")}</div>
+                        <div className="text-xs text-gray-500 dark:text-gray-400">{t("stats.answered")}</div>
                       </div>
                       <div className="text-center">
                         <div className={`font-semibold ${item.correct > 0 ? "text-green-600" : "text-gray-400"}`}>
                           {item.correct}
                         </div>
-                        <div className="text-xs text-gray-500">{t("stats.correctLabel")}</div>
+                        <div className="text-xs text-gray-500 dark:text-gray-400">{t("stats.correctLabel")}</div>
                       </div>
                       <div className="text-center">
                         <div className={`font-semibold ${item.wrong > 0 ? "text-red-600" : "text-gray-400"}`}>
                           {item.wrong}
                         </div>
-                        <div className="text-xs text-gray-500">{t("stats.wrongLabel")}</div>
+                        <div className="text-xs text-gray-500 dark:text-gray-400">{t("stats.wrongLabel")}</div>
                       </div>
                       <div className="text-center">
                         {item.timesAnswered > 0 ? (
@@ -562,7 +562,7 @@ function StatsContent() {
                         ) : (
                           <div className="font-semibold text-gray-400">-</div>
                         )}
-                        <div className="text-xs text-gray-500">{t("stats.accuracy")}</div>
+                        <div className="text-xs text-gray-500 dark:text-gray-400">{t("stats.accuracy")}</div>
                       </div>
                     </div>
                   </CardContent>
@@ -581,7 +581,7 @@ function StatsContent() {
             <div className="overflow-x-auto">
               <table className="w-full">
                 <thead>
-                  <tr className="border-b">
+                  <tr className="border-b dark:border-gray-700">
                     <th className="text-left py-3 px-4 w-1/2">
                       <SortButton field="question">{t("stats.question")}</SortButton>
                     </th>
@@ -602,7 +602,7 @@ function StatsContent() {
                 <tbody>
                   {sortedQuestions.length === 0 ? (
                     <tr>
-                      <td colSpan={5} className="text-center py-8 text-gray-500">
+                      <td colSpan={5} className="text-center py-8 text-gray-500 dark:text-gray-400">
                         {t("stats.noQuestionsAvailable")}
                       </td>
                     </tr>
@@ -611,7 +611,7 @@ function StatsContent() {
                       {(isPremium ? sortedQuestions : sortedQuestions.slice(0, FREE_QUESTION_LIMIT)).map((item) => (
                         <tr
                           key={item.question.questionId}
-                          className="border-b last:border-b-0 hover:bg-gray-50 cursor-pointer"
+                          className="border-b last:border-b-0 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800 cursor-pointer"
                           onClick={() => setExpandedQuestionId(
                             expandedQuestionId === item.question.questionId ? null : item.question.questionId
                           )}
@@ -621,16 +621,16 @@ function StatsContent() {
                               <StatusIcon item={item} />
                               <div>
                                 <p className="text-sm line-clamp-2">{item.question.question}</p>
-                                <p className="text-xs text-gray-500 mt-1">
+                                <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
                                   {t(`categories.${item.question.category}`)}
                                 </p>
                                 {expandedQuestionId === item.question.questionId && (
                                   <div className="mt-3 space-y-2">
                                     <div className="flex items-center justify-between">
-                                      <p className="text-xs font-semibold text-gray-500 uppercase">{t("stats.answers")}</p>
+                                      <p className="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase">{t("stats.answers")}</p>
                                       <button
                                         onClick={(e) => { e.stopPropagation(); setExpandedQuestionId(null); }}
-                                        className="p-1 rounded-full hover:bg-gray-200"
+                                        className="p-1 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700"
                                       >
                                         <X className="h-4 w-4 text-gray-400" />
                                       </button>
@@ -645,13 +645,13 @@ function StatsContent() {
                                           className={`flex items-start gap-2 p-2 rounded text-sm ${
                                             isCorrect
                                               ? "bg-green-50 border border-green-200"
-                                              : "bg-gray-50 border border-gray-200"
+                                              : "bg-gray-50 dark:bg-gray-800/50 border border-gray-200 dark:border-gray-700"
                                           }`}
                                         >
-                                          <span className={`font-semibold ${isCorrect ? "text-green-600" : "text-gray-500"}`}>
+                                          <span className={`font-semibold ${isCorrect ? "text-green-600" : "text-gray-500 dark:text-gray-400"}`}>
                                             {letter}.
                                           </span>
-                                          <span className={isCorrect ? "text-green-700" : "text-gray-600"}>
+                                          <span className={isCorrect ? "text-green-700" : "text-gray-600 dark:text-gray-400"}>
                                             {optionText}
                                           </span>
                                           {isCorrect && (
@@ -710,13 +710,13 @@ function StatsContent() {
                   <table className="w-full blur-sm pointer-events-none select-none" aria-hidden="true">
                     <tbody>
                       {sortedQuestions.slice(FREE_QUESTION_LIMIT, FREE_QUESTION_LIMIT + 3).map((item) => (
-                        <tr key={item.question.questionId} className="border-b">
+                        <tr key={item.question.questionId} className="border-b dark:border-gray-700">
                           <td className="py-3 px-4 w-1/2">
                             <div className="flex items-start gap-2">
                               <StatusIcon item={item} />
                               <div>
                                 <p className="text-sm line-clamp-2">{item.question.question}</p>
-                                <p className="text-xs text-gray-500 mt-1">{t(`categories.${item.question.category}`)}</p>
+                                <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">{t(`categories.${item.question.category}`)}</p>
                               </div>
                             </div>
                           </td>
@@ -729,15 +729,15 @@ function StatsContent() {
                     </tbody>
                   </table>
                 </div>
-                <div className="absolute inset-0 flex flex-col items-center justify-center bg-white/70">
+                <div className="absolute inset-0 flex flex-col items-center justify-center bg-white/70 dark:bg-gray-900/70">
                   <div className="text-center">
                     <div className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-brand-light mb-3">
                       <Lock className="h-4 w-4 text-brand" />
                     </div>
-                    <p className="text-sm font-semibold text-gray-900 mb-1">
+                    <p className="text-sm font-semibold text-gray-900 dark:text-gray-100 mb-1">
                       {sortedQuestions.length - FREE_QUESTION_LIMIT} {t("stats.moreQuestions")}
                     </p>
-                    <p className="text-xs text-gray-500 mb-3">
+                    <p className="text-xs text-gray-500 dark:text-gray-400 mb-3">
                       {t("stats.unlockPremiumStats")}
                     </p>
                     <button
@@ -761,7 +761,7 @@ function StatsContent() {
 
 export default function StatsPage() {
   return (
-    <Suspense fallback={<div className="flex-1 bg-gray-50" />}>
+    <Suspense fallback={<div className="flex-1 bg-gray-50 dark:bg-background" />}>
       <StatsContent />
     </Suspense>
   );

@@ -11,7 +11,7 @@ import { useHydration } from "@/hooks/useHydration";
 import { useTranslation } from "@/contexts/LanguageContext";
 import Image from "next/image";
 import { Shield } from "lucide-react";
-
+import { ThemeToggle } from "@/components/ThemeToggle";
 import type { Language } from "@/i18n";
 
 export function Header() {
@@ -39,6 +39,9 @@ export function Header() {
   // Hide sign up prompt on onboarding pages (too early in flow)
   const isOnboarding = pathname?.startsWith("/onboarding");
 
+  // Show theme toggle on inner app pages (dashboard, stats, settings, admin) but not homepage/landing/onboarding/SEO
+  const showThemeToggle = pathname === "/dashboard" || pathname === "/stats" || pathname === "/settings" || pathname?.startsWith("/admin");
+
   // Hide language toggle on SEO landing pages (they have dedicated /es/ versions)
   const isSeoPage =
     pathname?.endsWith("-dmv-practice-test") ||
@@ -61,6 +64,8 @@ export function Header() {
           </Link>
 
           <div className="flex items-center gap-2 sm:gap-4">
+            {showThemeToggle && <ThemeToggle />}
+
             {/* Language Toggle - hidden on SEO pages which have dedicated /es/ versions */}
             {!isSeoPage && (
               <div className="flex items-center bg-gray-100 dark:bg-gray-800 rounded-full p-0.5">

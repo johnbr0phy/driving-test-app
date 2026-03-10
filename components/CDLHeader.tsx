@@ -10,7 +10,6 @@ import { useHydration } from "@/hooks/useHydration";
 import { useTestTheme } from "@/contexts/TestThemeContext";
 import { Truck } from "lucide-react";
 import Image from "next/image";
-import { ThemeToggle } from "@/components/ThemeToggle";
 
 export function CDLHeader() {
   const { user, logout } = useAuth();
@@ -51,7 +50,6 @@ export function CDLHeader() {
         </Link>
 
         <div className="flex items-center gap-2 sm:gap-4">
-          <ThemeToggle />
           {user ? (
             <>
               <Link href="/settings">

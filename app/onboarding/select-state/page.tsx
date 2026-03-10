@@ -75,7 +75,7 @@ export default function OnboardingSelectStatePage() {
         <Button
           onClick={handleComplete}
           disabled={!selectedState || loading}
-          className="px-8 py-3 text-lg"
+          className="px-8 py-3 text-lg bg-black hover:bg-black/90"
         >
           {loading ? t("common.loading") : t("onboarding.letsGo")}
         </Button>

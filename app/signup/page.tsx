@@ -190,7 +190,7 @@ function SignupPageContent() {
           <Button
             onClick={handleStateSelect}
             disabled={!selectedState || loading}
-            className="px-8 py-3 text-lg"
+            className="px-8 py-3 text-lg bg-black hover:bg-black/90"
           >
             {t("common.continue")}
           </Button>
@@ -309,7 +309,7 @@ function SignupPageContent() {
                   >
                     {guestHasState ? t("signup.continueAsGuest") : t("common.back")}
                   </Button>
-                  <Button type="submit" className="w-full" disabled={loading}>
+                  <Button type="submit" className="w-full bg-black hover:bg-black/90" disabled={loading}>
                     {loading ? t("signup.creatingAccount") : guestHasState ? t("signup.saveProgress") : t("common.createAccount")}
                   </Button>
                 </div>

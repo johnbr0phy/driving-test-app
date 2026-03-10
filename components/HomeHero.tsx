@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { useAuth } from "@/contexts/AuthContext";
@@ -48,34 +47,6 @@ export function HomeHero() {
         </div>
       )}
 
-      {/* Product Screenshots */}
-      <div className="mt-16 flex flex-col md:flex-row items-center justify-center gap-8">
-        <div className="relative">
-          <div className="rounded-2xl shadow-2xl overflow-hidden border border-gray-200 bg-white">
-            <Image
-              src="/mobile.png"
-              alt="TigerTest mobile DMV practice test training mode"
-              width={280}
-              height={560}
-              className="w-[200px] md:w-[240px]"
-            />
-          </div>
-          <p className="text-sm text-gray-500 mt-6 text-center">{t("landing.trainOnMobile")}</p>
-        </div>
-
-        <div className="relative">
-          <div className="rounded-2xl shadow-2xl overflow-hidden border border-gray-200 bg-white">
-            <Image
-              src="/desktop.png"
-              alt="TigerTest desktop DMV practice test interface"
-              width={700}
-              height={480}
-              className="w-[320px] md:w-[500px]"
-            />
-          </div>
-          <p className="text-sm text-gray-500 mt-6 text-center">{t("landing.testOnDesktop")}</p>
-        </div>
-      </div>
     </>
   );
 }

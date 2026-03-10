@@ -115,6 +115,19 @@ export default function Home() {
         </div>
       </div>
 
+      {/* Dashboard Screenshot */}
+      <div className="max-w-4xl mx-auto px-6 pb-16 md:pb-24">
+        <div className="rounded-2xl shadow-2xl overflow-hidden border border-gray-200 bg-white">
+          <Image
+            src="/dashboard.png"
+            alt="TigerTest dashboard showing training sets and practice tests"
+            width={900}
+            height={600}
+            className="w-full"
+          />
+        </div>
+      </div>
+
       {/* How it works */}
       <div className="max-w-5xl mx-auto px-6 pt-8 pb-16 md:pt-12 md:pb-24">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-16">
@@ -253,6 +266,41 @@ export default function Home() {
             &quot;<T k="landing.testimonial2">it really helped me prepare, and I passed my exam today</T>&quot;
           </p>
           <p className="text-gray-500 text-sm">Big-Burrito-8765</p>
+        </div>
+      </div>
+
+      {/* Product Screenshots - Mobile & Desktop */}
+      <div className="max-w-5xl mx-auto px-6 py-16 md:py-24">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-8">
+          <div className="relative">
+            <div className="rounded-2xl shadow-2xl overflow-hidden border border-gray-200 bg-white">
+              <Image
+                src="/mobile.png"
+                alt="TigerTest mobile DMV practice test training mode"
+                width={280}
+                height={560}
+                className="w-[200px] md:w-[240px]"
+              />
+            </div>
+            <p className="text-sm text-gray-500 mt-6 text-center">
+              <T k="landing.trainOnMobile">Train on your phone</T>
+            </p>
+          </div>
+
+          <div className="relative">
+            <div className="rounded-2xl shadow-2xl overflow-hidden border border-gray-200 bg-white">
+              <Image
+                src="/desktop.png"
+                alt="TigerTest desktop DMV practice test interface"
+                width={700}
+                height={480}
+                className="w-[320px] md:w-[500px]"
+              />
+            </div>
+            <p className="text-sm text-gray-500 mt-6 text-center">
+              <T k="landing.testOnDesktop">Test on desktop</T>
+            </p>
+          </div>
         </div>
       </div>
 

@@ -167,7 +167,7 @@ export default function ResultsPage() {
 
   if (loading) {
     return (
-      <div className="flex-1 bg-gray-50 dark:bg-background flex items-center justify-center">
+      <div className="flex-1 bg-gray-50 flex items-center justify-center">
         <div className="text-center">
           <div className="text-xl font-semibold mb-2">{t("results.loadingResults")}</div>
         </div>
@@ -176,7 +176,7 @@ export default function ResultsPage() {
   }
 
   return (
-    <div className="flex-1 bg-gray-50 dark:bg-background">
+    <div className="flex-1 bg-gray-50">
       {/* Fireworks Animation */}
       {showFireworks && (
         <Fireworks duration={3000} onComplete={() => setShowFireworks(false)} />
@@ -256,7 +256,7 @@ export default function ResultsPage() {
               passed={passed}
               testId={testId}
               stateCode={testSession.state}
-              className="flex-1 bg-background border border-gray-300 dark:border-gray-600 font-bold uppercase tracking-wide h-12 text-base"
+              className="flex-1 bg-white text-black hover:bg-gray-100 font-bold uppercase tracking-wide h-12 text-base"
             />
             <Button
               className="flex-1 bg-transparent text-white hover:bg-white/10 border border-white/30 font-bold uppercase tracking-wide h-12 text-base"
@@ -269,10 +269,10 @@ export default function ResultsPage() {
       </div>
 
       {/* See Stats arrow */}
-      <div className="text-center py-5 bg-gray-50 dark:bg-background">
+      <div className="text-center py-5 bg-gray-50">
         <button
           onClick={() => document.getElementById("stats-section")?.scrollIntoView({ behavior: "smooth" })}
-          className="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 flex flex-col items-center gap-1 mx-auto transition-colors"
+          className="text-gray-500 hover:text-gray-700 flex flex-col items-center gap-1 mx-auto transition-colors"
         >
           <span className="text-sm font-medium">{t("results.viewStats")}</span>
           <ChevronDown className="h-4 w-4 animate-bounce" />
@@ -284,18 +284,18 @@ export default function ResultsPage() {
 
         {/* ── Next Test CTA ─────────────────────────────────────────── */}
         {hasNextTest && (
-          <Card className={`mb-6 border-2 ${nextTestIsLocked ? "bg-gradient-to-r from-yellow-50 to-orange-50 dark:from-yellow-900/20 dark:to-orange-900/20 border-orange-200 dark:border-orange-800" : "bg-gradient-to-r from-brand-light to-brand-gradient-to border-brand-border-light"}`}>
+          <Card className={`mb-6 border-2 ${nextTestIsLocked ? "bg-gradient-to-r from-yellow-50 to-orange-50 border-orange-200" : "bg-gradient-to-r from-brand-light to-brand-gradient-to border-brand-border-light"}`}>
             <CardContent className="py-5">
               <div className="flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
                 <div className="flex-1 min-w-0">
-                  <h3 className="text-lg font-bold text-gray-900 dark:text-gray-100 mb-1">
+                  <h3 className="text-lg font-bold text-gray-900 mb-1">
                     {nextTestIsLocked
                       ? t("results.nextTestUnlockHeading")
                       : passed
                         ? t("results.nextTestHeadingPass")
                         : t("results.nextTestHeadingFail")}
                   </h3>
-                  <p className="text-gray-600 dark:text-gray-400 text-sm">
+                  <p className="text-gray-600 text-sm">
                     {nextTestIsLocked
                       ? t("results.nextTestUnlockSub")
                       : (passed ? t("results.nextTestSubPass") : t("results.nextTestSubFail")).replace("{{n}}", String(nextTestId))}
@@ -325,8 +325,8 @@ export default function ResultsPage() {
                   </div>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-1">{t("results.saveYourProgress")}</h3>
-                  <p className="text-gray-600 dark:text-gray-400">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-1">{t("results.saveYourProgress")}</h3>
+                  <p className="text-gray-600">
                     {t("results.scoreOnlyOnDevice")}
                   </p>
                 </div>
@@ -345,18 +345,18 @@ export default function ResultsPage() {
           <Card className="mb-6">
             <CardHeader>
               <CardTitle className="text-center">{t("results.yourProgress")}</CardTitle>
-              <p className="text-center text-sm text-gray-600 dark:text-gray-400">{t("results.attempt")} #{attemptNumber}</p>
+              <p className="text-center text-sm text-gray-600">{t("results.attempt")} #{attemptNumber}</p>
             </CardHeader>
             <CardContent>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
                 {/* First Attempt */}
-                <Card className="bg-gray-50 dark:bg-gray-800 border-gray-200 dark:border-gray-700">
+                <Card className="bg-gray-50 border-gray-200">
                   <CardContent className="pt-6 text-center">
-                    <div className="text-sm font-medium text-gray-600 dark:text-gray-400 mb-2">{t("results.firstAttempt")}</div>
-                    <div className="text-4xl font-bold text-gray-700 dark:text-gray-300 mb-1">
+                    <div className="text-sm font-medium text-gray-600 mb-2">{t("results.firstAttempt")}</div>
+                    <div className="text-4xl font-bold text-gray-700 mb-1">
                       {firstPercentage}%
                     </div>
-                    <div className="text-sm text-gray-500 dark:text-gray-400">
+                    <div className="text-sm text-gray-500">
                       {firstScore}/{totalQuestions} {t("results.correctLabel")}
                     </div>
                   </CardContent>
@@ -369,7 +369,7 @@ export default function ResultsPage() {
                     <div className="text-4xl font-bold text-brand mb-1">
                       {percentage}%
                     </div>
-                    <div className="text-sm text-gray-600 dark:text-gray-400">
+                    <div className="text-sm text-gray-600">
                       {score}/{totalQuestions} {t("results.correctLabel")}
                     </div>
                     {isNewBest && (
@@ -382,13 +382,13 @@ export default function ResultsPage() {
                 </Card>
 
                 {/* Best Score */}
-                <Card className="bg-green-50 dark:bg-green-900/20 border-green-200 dark:border-green-800">
+                <Card className="bg-green-50 border-green-200">
                   <CardContent className="pt-6 text-center">
-                    <div className="text-sm font-medium text-green-700 dark:text-green-400 mb-2">{t("results.bestScore")}</div>
-                    <div className="text-4xl font-bold text-green-600 dark:text-green-400 mb-1">
+                    <div className="text-sm font-medium text-green-700 mb-2">{t("results.bestScore")}</div>
+                    <div className="text-4xl font-bold text-green-600 mb-1">
                       {bestPercentage}%
                     </div>
-                    <div className="text-sm text-gray-600 dark:text-gray-400">
+                    <div className="text-sm text-gray-600">
                       {bestScore}/{totalQuestions} {t("results.correctLabel")}
                     </div>
                   </CardContent>
@@ -397,9 +397,9 @@ export default function ResultsPage() {
 
               {/* Improvement Message */}
               {improvement > 0 && (
-                <div className="flex items-center justify-center gap-2 bg-green-50 dark:bg-green-900/20 border-2 border-green-300 dark:border-green-800 rounded-lg p-4">
-                  <TrendingUp className="h-6 w-6 text-green-600 dark:text-green-400" />
-                  <span className="text-lg font-semibold text-green-700 dark:text-green-400">
+                <div className="flex items-center justify-center gap-2 bg-green-50 border-2 border-green-300 rounded-lg p-4">
+                  <TrendingUp className="h-6 w-6 text-green-600" />
+                  <span className="text-lg font-semibold text-green-700">
                     {t("results.improvedBy")} {improvement}% {t("results.sinceFirstAttempt")} 🚀
                   </span>
                 </div>
@@ -418,7 +418,7 @@ export default function ResultsPage() {
                     <BarChart3 className="h-5 w-5 text-brand" />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <h3 className="font-bold text-gray-900 dark:text-gray-100 mb-2">
+                    <h3 className="font-bold text-gray-900 mb-2">
                       {passed ? t("results.yourPerformanceBreakdown") : t("results.topicsToFocusOn")}
                     </h3>
                     <div className="space-y-2">
@@ -426,12 +426,12 @@ export default function ResultsPage() {
                         <div key={category} className="flex items-center gap-3">
                           <div className="flex-1 min-w-0">
                             <div className="flex items-center justify-between text-sm">
-                              <span className="text-gray-700 dark:text-gray-300 font-medium">{t(`categories.${category}`)}</span>
-                              <span className={`font-semibold ${accuracy >= 70 ? "text-green-600 dark:text-green-400" : accuracy >= 50 ? "text-yellow-600 dark:text-yellow-400" : "text-red-600 dark:text-red-400"}`}>
+                              <span className="text-gray-700 font-medium">{t(`categories.${category}`)}</span>
+                              <span className={`font-semibold ${accuracy >= 70 ? "text-green-600" : accuracy >= 50 ? "text-yellow-600" : "text-red-600"}`}>
                                 {accuracy}%
                               </span>
                             </div>
-                            <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-1.5 mt-1">
+                            <div className="w-full bg-gray-200 rounded-full h-1.5 mt-1">
                               <div
                                 className={`h-1.5 rounded-full ${accuracy >= 70 ? "bg-green-500" : accuracy >= 50 ? "bg-yellow-500" : "bg-red-500"}`}
                                 style={{ width: `${accuracy}%` }}
@@ -456,10 +456,10 @@ export default function ResultsPage() {
         <div className="mb-4 flex items-center justify-between">
           <h2 className="text-2xl font-bold">{t("results.reviewQuestions")}</h2>
           <div className="flex gap-2">
-            <Button size="sm" className="bg-background border-2 border-gray-300 dark:border-gray-600" onClick={expandAll}>
+            <Button size="sm" className="bg-white text-black hover:bg-gray-100 border-2 border-gray-300" onClick={expandAll}>
               {t("results.expandAll")}
             </Button>
-            <Button size="sm" className="bg-background border-2 border-gray-300 dark:border-gray-600" onClick={collapseAll}>
+            <Button size="sm" className="bg-white text-black hover:bg-gray-100 border-2 border-gray-300" onClick={collapseAll}>
               {t("results.collapseAll")}
             </Button>
           </div>
@@ -474,25 +474,25 @@ export default function ResultsPage() {
             return (
               <Card key={index}>
                 <CardHeader
-                  className="cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-800"
+                  className="cursor-pointer hover:bg-gray-50"
                   onClick={() => toggleQuestion(index)}
                 >
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-4 flex-1">
                       <div className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center font-semibold ${
                         isCorrect
-                          ? "bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400"
-                          : "bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-400"
+                          ? "bg-green-100 text-green-700"
+                          : "bg-red-100 text-red-700"
                       }`}>
                         {index + 1}
                       </div>
                       <div className="flex-1">
                         <div className="font-medium">{question.question}</div>
-                        <div className="text-sm text-gray-600 dark:text-gray-400 mt-1">
+                        <div className="text-sm text-gray-600 mt-1">
                           {t("results.yourAnswer")}: <span className="font-semibold">{userAnswer || t("results.notAnswered")}</span>
                           {!isCorrect && (
                             <span className="ml-2">
-                              • {t("results.correctAnswer")}: <span className="font-semibold text-green-600 dark:text-green-400">{question.correctAnswer}</span>
+                              • {t("results.correctAnswer")}: <span className="font-semibold text-green-600">{question.correctAnswer}</span>
                             </span>
                           )}
                         </div>
@@ -503,9 +503,9 @@ export default function ResultsPage() {
                         {isCorrect ? t("results.correctAnswer") : t("results.wrong")}
                       </Badge>
                       {isExpanded ? (
-                        <ChevronUp className="w-5 h-5 text-gray-400 dark:text-gray-500" />
+                        <ChevronUp className="w-5 h-5 text-gray-400" />
                       ) : (
-                        <ChevronDown className="w-5 h-5 text-gray-400 dark:text-gray-500" />
+                        <ChevronDown className="w-5 h-5 text-gray-400" />
                       )}
                     </div>
                   </div>

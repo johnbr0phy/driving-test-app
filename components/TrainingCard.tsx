@@ -83,7 +83,7 @@ export function TrainingCard({
 
         {answered && (
           <div className="space-y-3 md:space-y-4">
-            <Button onClick={onNext} className="w-full bg-black text-white hover:bg-gray-800" size="lg">
+            <Button onClick={onNext} className="w-full bg-black text-white hover:bg-gray-800 dark:bg-brand dark:hover:bg-brand-hover dark:text-white" size="lg">
               {t("trainingCard.nextQuestion")}
             </Button>
 

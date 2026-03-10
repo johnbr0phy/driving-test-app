@@ -5,6 +5,7 @@ import { ThemeProvider } from "next-themes";
 import { AuthProvider } from "@/contexts/AuthContext";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import { DataResetNotification } from "@/components/DataResetNotification";
+import { ForceLightTheme } from "@/components/ForceLightTheme";
 import { useStore } from "@/store/useStore";
 
 function DataResetNotificationWrapper() {
@@ -41,9 +42,10 @@ function PremiumTheme() {
 
 export function Providers({ children }: { children: React.ReactNode }) {
   return (
-    <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
+    <ThemeProvider attribute="class" defaultTheme="light" disableTransitionOnChange>
       <LanguageProvider>
         <AuthProvider>
+          <ForceLightTheme />
           {children}
           <DataResetNotificationWrapper />
           <PremiumTheme />

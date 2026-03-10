@@ -28,14 +28,14 @@ export function HomeHero() {
 
       {!loading && (user || isGuest) ? (
         <Link href="/dashboard">
-          <Button className="px-8 py-6 text-lg rounded-full">
+          <Button className="px-8 py-6 text-lg rounded-full bg-black hover:bg-black/90">
             {t("common.goToDashboard")}
           </Button>
         </Link>
       ) : (
         <div className="flex flex-col items-center gap-3">
           <Link href="/signup">
-            <Button className="px-8 py-6 text-lg rounded-full">
+            <Button className="px-8 py-6 text-lg rounded-full bg-black hover:bg-black/90">
               {t("common.startPracticing")}
             </Button>
           </Link>
@@ -96,14 +96,14 @@ export function HomeCTA() {
     <>
       {!loading && (user || isGuest) ? (
         <Link href="/dashboard">
-          <Button className="px-8 py-6 text-lg rounded-full">
+          <Button className="px-8 py-6 text-lg rounded-full bg-black hover:bg-black/90">
             {t("common.goToDashboard")}
           </Button>
         </Link>
       ) : (
         <div className="flex flex-col items-center gap-3">
           <Link href="/signup">
-            <Button className="px-8 py-6 text-lg rounded-full">
+            <Button className="px-8 py-6 text-lg rounded-full bg-black hover:bg-black/90">
               {t("common.startPracticing")}
             </Button>
           </Link>

@@ -5,7 +5,7 @@ import { useTheme } from "next-themes";
 import { usePathname } from "next/navigation";
 
 // Pages where dark mode is allowed (inner app pages with the theme toggle)
-const DARK_MODE_PAGES = ["/dashboard", "/stats", "/settings", "/admin"];
+const DARK_MODE_PAGES = ["/dashboard", "/stats", "/settings", "/admin", "/training", "/test"];
 
 export function ForceLightTheme() {
   const { resolvedTheme, setTheme } = useTheme();

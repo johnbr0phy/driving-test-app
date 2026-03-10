@@ -11,7 +11,7 @@ import { useHydration } from "@/hooks/useHydration";
 import { useTranslation } from "@/contexts/LanguageContext";
 import Image from "next/image";
 import { Shield } from "lucide-react";
-import { ThemeToggle } from "@/components/ThemeToggle";
+
 import type { Language } from "@/i18n";
 
 export function Header() {
@@ -61,8 +61,6 @@ export function Header() {
           </Link>
 
           <div className="flex items-center gap-2 sm:gap-4">
-            <ThemeToggle />
-
             {/* Language Toggle - hidden on SEO pages which have dedicated /es/ versions */}
             {!isSeoPage && (
               <div className="flex items-center bg-gray-100 dark:bg-gray-800 rounded-full p-0.5">

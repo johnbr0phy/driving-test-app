@@ -39,20 +39,20 @@ export function TrainingCard({
   const getOptionClasses = (optionLetter: string) => {
     if (!answered) {
       if (!isReady) {
-        return "border-gray-300";
+        return "border-gray-300 dark:border-gray-600";
       }
-      return "border-gray-300 [@media(hover:hover)]:hover:border-brand [@media(hover:hover)]:hover:bg-brand-light active:border-brand active:bg-brand-light cursor-pointer";
+      return "border-gray-300 dark:border-gray-600 [@media(hover:hover)]:hover:border-brand [@media(hover:hover)]:hover:bg-brand-light active:border-brand active:bg-brand-light cursor-pointer";
     }
 
     if (optionLetter === question.correctAnswer) {
-      return "border-green-500 bg-green-50";
+      return "border-green-500 bg-green-50 dark:bg-green-900/30 dark:border-green-600";
     }
 
     if (optionLetter === selectedAnswer && !isCorrect) {
-      return "border-red-500 bg-red-50";
+      return "border-red-500 bg-red-50 dark:bg-red-900/30 dark:border-red-600";
     }
 
-    return "border-gray-300 opacity-50";
+    return "border-gray-300 dark:border-gray-600 opacity-50";
   };
 
   return (
@@ -89,17 +89,17 @@ export function TrainingCard({
 
             <div
               className={`p-3 md:p-4 rounded-lg ${
-                isCorrect ? "bg-green-50 border border-green-200" : "bg-red-50 border border-red-200"
+                isCorrect ? "bg-green-50 dark:bg-green-900/30 border border-green-200 dark:border-green-800" : "bg-red-50 dark:bg-red-900/30 border border-red-200 dark:border-red-800"
               }`}
             >
               <div
                 className={`font-bold mb-1 md:mb-2 text-sm md:text-base ${
-                  isCorrect ? "text-green-700" : "text-red-700"
+                  isCorrect ? "text-green-700 dark:text-green-400" : "text-red-700 dark:text-red-400"
                 }`}
               >
                 {isCorrect ? t("trainingCard.correct") : t("trainingCard.incorrect")}
               </div>
-              <p className="text-gray-700 text-sm md:text-base">{question.explanation}</p>
+              <p className="text-gray-700 dark:text-gray-300 text-sm md:text-base">{question.explanation}</p>
             </div>
           </div>
         )}

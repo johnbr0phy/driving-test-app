@@ -4,82 +4,157 @@ import { useState, useEffect, Suspense } from "react";
 import { useRouter } from "next/navigation";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, CheckCircle2, XCircle, PartyPopper, Trophy } from "lucide-react";
+import { ArrowLeft, Trophy } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useStore } from "@/store/useStore";
 import { useHydration } from "@/hooks/useHydration";
 import { useSound } from "@/hooks/useSound";
 import { Fireworks } from "@/components/Fireworks";
+import { TrainingCard } from "@/components/TrainingCard";
 import { useTranslation } from "@/contexts/LanguageContext";
+import { Question } from "@/types";
 
-interface OutroQuestion {
-  question: string;
-  options: string[];
-  correctIndex: number;
-  explanation: string;
-}
-
-const outroQuestions: OutroQuestion[] = [
+const outroQuestions: Question[] = [
   {
+    type: "Universal",
+    state: "ALL",
+    questionId: "outro-1",
+    category: "general",
     question: "You just mastered 200 practice questions. What's the technical term for that?",
-    options: ["Overachiever", "Road scholar", "DMV's worst nightmare", "All of the above"],
+    optionA: "Overachiever",
+    optionB: "Road scholar",
+    optionC: "DMV's worst nightmare",
+    optionD: "All of the above",
+    correctAnswer: "D",
     correctIndex: 3,
     explanation: "All of the above, obviously. You're a certified road scholar and the DMV should be nervous.",
   },
   {
+    type: "Universal",
+    state: "ALL",
+    questionId: "outro-2",
+    category: "general",
     question: "What should you do the night before your DMV test?",
-    options: ["Cram for 12 hours straight", "Get a good night's sleep — you already studied", "Panic and question all your life choices", "Build a time machine to skip to the results"],
+    optionA: "Cram for 12 hours straight",
+    optionB: "Get a good night's sleep — you already studied",
+    optionC: "Panic and question all your life choices",
+    optionD: "Build a time machine to skip to the results",
+    correctAnswer: "B",
     correctIndex: 1,
     explanation: "You've already put in the work. Sleep well and trust your preparation!",
   },
   {
+    type: "Universal",
+    state: "ALL",
+    questionId: "outro-3",
+    category: "general",
     question: "When you pass your driving test, what's the correct celebration?",
-    options: ["A subtle fist pump", "Tell literally everyone you know", "Update your social media bio to 'Licensed Driver'", "All celebrations are valid"],
+    optionA: "A subtle fist pump",
+    optionB: "Tell literally everyone you know",
+    optionC: "Update your social media bio to 'Licensed Driver'",
+    optionD: "All celebrations are valid",
+    correctAnswer: "D",
     correctIndex: 3,
     explanation: "You earned it. Celebrate however feels right — you put in serious effort to get here!",
   },
   {
+    type: "Universal",
+    state: "ALL",
+    questionId: "outro-4",
+    category: "general",
     question: "How many questions did you practice across all training sets?",
-    options: ["50", "100", "150", "200"],
+    optionA: "50",
+    optionB: "100",
+    optionC: "150",
+    optionD: "200",
+    correctAnswer: "D",
     correctIndex: 3,
     explanation: "200 questions across 4 training sets! That's dedication that pays off at the DMV.",
   },
   {
+    type: "Universal",
+    state: "ALL",
+    questionId: "outro-5",
+    category: "general",
     question: "What's the most important thing to bring to the DMV on test day?",
-    options: ["Your lucky socks", "Required ID and documents", "A four-leaf clover", "Snacks for the wait"],
+    optionA: "Your lucky socks",
+    optionB: "Required ID and documents",
+    optionC: "A four-leaf clover",
+    optionD: "Snacks for the wait",
+    correctAnswer: "B",
     correctIndex: 1,
     explanation: "Bring your valid ID and any required documents. The lucky socks are optional but encouraged.",
   },
   {
+    type: "Universal",
+    state: "ALL",
+    questionId: "outro-6",
+    category: "general",
     question: "After passing, what will your friends ask you for?",
-    options: ["Rides. Lots of rides.", "Driving tips", "To borrow your car", "All of the above, immediately"],
+    optionA: "Rides. Lots of rides.",
+    optionB: "Driving tips",
+    optionC: "To borrow your car",
+    optionD: "All of the above, immediately",
+    correctAnswer: "D",
     correctIndex: 3,
     explanation: "Congratulations — you're about to become everyone's favorite taxi service.",
   },
   {
+    type: "Universal",
+    state: "ALL",
+    questionId: "outro-7",
+    category: "general",
     question: "You scored 80%+ on all 4 practice tests. That makes you…",
-    options: ["Statistically very likely to pass the real test", "More prepared than most people at the DMV", "Someone who takes things seriously", "All of the above"],
+    optionA: "Statistically very likely to pass the real test",
+    optionB: "More prepared than most people at the DMV",
+    optionC: "Someone who takes things seriously",
+    optionD: "All of the above",
+    correctAnswer: "D",
     correctIndex: 3,
     explanation: "Studies show that students who consistently score 80%+ on practice tests have a very high pass rate. You're ready!",
   },
   {
+    type: "Universal",
+    state: "ALL",
+    questionId: "outro-8",
+    category: "general",
     question: "What's the biggest mistake people make at the DMV?",
-    options: ["Not studying at all", "Only studying the night before", "Overthinking easy questions", "Showing up without the right documents"],
+    optionA: "Not studying at all",
+    optionB: "Only studying the night before",
+    optionC: "Overthinking easy questions",
+    optionD: "Showing up without the right documents",
+    correctAnswer: "A",
     correctIndex: 0,
     explanation: "The #1 reason people fail is not studying enough. That's clearly NOT your problem!",
   },
   {
+    type: "Universal",
+    state: "ALL",
+    questionId: "outro-9",
+    category: "general",
     question: "Quick — what does a red octagonal sign mean?",
-    options: ["Speed up", "Stop", "Yield", "You should know this by now!"],
+    optionA: "Speed up",
+    optionB: "Stop",
+    optionC: "Yield",
+    optionD: "You should know this by now!",
+    correctAnswer: "B",
     correctIndex: 1,
     explanation: "Stop! You knew that instantly. See? All that practice is locked in your brain.",
   },
   {
+    type: "Universal",
+    state: "ALL",
+    questionId: "outro-10",
+    category: "general",
     question: "Final question: Are you ready to pass your driving test?",
-    options: ["Absolutely, let's do this!", "Born ready", "The DMV is not ready for ME", "All of the above — let's go!"],
+    optionA: "Absolutely, let's do this!",
+    optionB: "Born ready",
+    optionC: "The DMV is not ready for ME",
+    optionD: "All of the above — let's go!",
+    correctAnswer: "D",
     correctIndex: 3,
-    explanation: "That's the spirit! You've completed every training set, passed every practice test, and now you're finishing the victory lap. Go ace that test! 🎉",
+    explanation: "That's the spirit! You've completed every training set, passed every practice test, and now you're finishing the victory lap. Go ace that test!",
   },
 ];
 
@@ -95,7 +170,7 @@ function OutroContent() {
   const completeOutro = useStore((s) => s.completeOutro);
 
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
+  const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
   const [score, setScore] = useState(0);
   const [finished, setFinished] = useState(false);
   const [showFireworks, setShowFireworks] = useState(false);
@@ -124,13 +199,11 @@ function OutroContent() {
   }
 
   const question = outroQuestions[currentIndex];
-  const answered = selectedAnswer !== null;
-  const isCorrect = selectedAnswer === question?.correctIndex;
 
-  const handleAnswer = (index: number) => {
-    if (answered) return;
-    setSelectedAnswer(index);
-    if (index === question.correctIndex) {
+  const handleAnswerSelect = (answer: string) => {
+    if (selectedAnswer) return;
+    setSelectedAnswer(answer);
+    if (answer === question.correctAnswer) {
       setScore((s) => s + 1);
       playCorrectSound();
     } else {
@@ -224,94 +297,18 @@ function OutroContent() {
         <div className="h-1.5 bg-gray-100 rounded-full overflow-hidden mb-6">
           <div
             className="h-full rounded-full bg-brand transition-all duration-300"
-            style={{ width: `${((currentIndex + (answered ? 1 : 0)) / outroQuestions.length) * 100}%` }}
+            style={{ width: `${((currentIndex + (selectedAnswer ? 1 : 0)) / outroQuestions.length) * 100}%` }}
           />
         </div>
 
-        {/* Question */}
-        <Card className="mb-4">
-          <CardContent className="p-5">
-            <p className="text-base font-semibold text-gray-900 leading-relaxed">
-              {question.question}
-            </p>
-          </CardContent>
-        </Card>
-
-        {/* Options */}
-        <div className="space-y-2 mb-4">
-          {question.options.map((option, index) => {
-            let classes = "border-gray-300";
-            if (answered) {
-              if (index === question.correctIndex) {
-                classes = "border-green-500 bg-green-50";
-              } else if (index === selectedAnswer) {
-                classes = "border-red-400 bg-red-50";
-              } else {
-                classes = "border-gray-200 opacity-50";
-              }
-            } else {
-              classes = "border-gray-300 [@media(hover:hover)]:hover:border-brand [@media(hover:hover)]:hover:bg-brand-light active:border-brand active:bg-brand-light cursor-pointer";
-            }
-
-            return (
-              <button
-                key={index}
-                onClick={() => handleAnswer(index)}
-                disabled={answered}
-                className={`w-full text-left p-3.5 rounded-xl border-2 transition-all ${classes}`}
-              >
-                <div className="flex items-start gap-3">
-                  <div className={`flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold ${
-                    answered && index === question.correctIndex
-                      ? "bg-green-500 text-white"
-                      : answered && index === selectedAnswer
-                        ? "bg-red-400 text-white"
-                        : "bg-gray-100 text-gray-500"
-                  }`}>
-                    {answered && index === question.correctIndex ? (
-                      <CheckCircle2 className="w-4 h-4" />
-                    ) : answered && index === selectedAnswer && index !== question.correctIndex ? (
-                      <XCircle className="w-4 h-4" />
-                    ) : (
-                      String.fromCharCode(65 + index)
-                    )}
-                  </div>
-                  <span className={`text-sm ${answered && index !== question.correctIndex && index !== selectedAnswer ? "text-gray-400" : "text-gray-800"}`}>
-                    {option}
-                  </span>
-                </div>
-              </button>
-            );
-          })}
-        </div>
-
-        {/* Explanation + Next */}
-        {answered && (
-          <div className="space-y-3">
-            <Card className={isCorrect ? "bg-green-50 border-green-200" : "bg-amber-50 border-amber-200"}>
-              <CardContent className="p-4">
-                <div className="flex items-start gap-2">
-                  {isCorrect ? (
-                    <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                  ) : (
-                    <XCircle className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
-                  )}
-                  <p className={`text-sm ${isCorrect ? "text-green-800" : "text-amber-800"}`}>
-                    {question.explanation}
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-            <Button
-              onClick={handleNext}
-              className="w-full bg-brand hover:bg-brand-dark text-white"
-            >
-              {currentIndex < outroQuestions.length - 1
-                ? t("trainingCard.nextQuestion")
-                : t("outro.finishButton")}
-            </Button>
-          </div>
-        )}
+        {/* Question Card — same TrainingCard used in training mode */}
+        <TrainingCard
+          key={question.questionId}
+          question={question}
+          selectedAnswer={selectedAnswer}
+          onAnswerSelect={handleAnswerSelect}
+          onNext={handleNext}
+        />
       </div>
     </div>
   );

@@ -165,7 +165,6 @@ function OutroContent() {
   const { t } = useTranslation();
 
   const selectedState = useStore((s) => s.selectedState);
-  const isOutroUnlocked = useStore((s) => s.isOutroUnlocked);
   const outroComplete = useStore((s) => s.outroComplete);
   const completeOutro = useStore((s) => s.completeOutro);
 
@@ -178,13 +177,8 @@ function OutroContent() {
   useEffect(() => {
     if (hydrated && !selectedState) {
       router.push("/onboarding/select-state");
-      return;
     }
-    if (hydrated && !isOutroUnlocked()) {
-      router.push("/dashboard");
-      return;
-    }
-  }, [hydrated, selectedState, isOutroUnlocked, router]);
+  }, [hydrated, selectedState, router]);
 
   // If already complete, show the celebration screen directly
   useEffect(() => {

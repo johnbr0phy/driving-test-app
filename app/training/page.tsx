@@ -74,6 +74,13 @@ function TrainingPageContent() {
     }
   }, [hydrated, selectedState, setNumber, isTrainingSetUnlocked, router]);
 
+  // Show celebration when arriving via ?celebrate (e.g. clicking completed Getting Started card)
+  useEffect(() => {
+    if (hydrated && searchParams.get('celebrate') === '1' && isOnboardingComplete()) {
+      setShowFireworks(true);
+    }
+  }, [hydrated]); // eslint-disable-line react-hooks/exhaustive-deps
+
   // Detect when user unlocks practice tests (crosses 10 correct answers) - onboarding only
   useEffect(() => {
     if (!isSetMode && training.totalCorrectAllTime >= 10 && prevCorrectCount < 10) {

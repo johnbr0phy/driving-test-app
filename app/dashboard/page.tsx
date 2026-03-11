@@ -315,7 +315,6 @@ function DashboardContent() {
   };
 
   const outroComplete = useStore((state) => state.outroComplete);
-  const isOutroUnlocked = useStore((state) => state.isOutroUnlocked);
 
   // Count completed steps: 1 onboarding + 4 training + 4 tests + 1 outro = 10
   const completedSteps = [
@@ -327,8 +326,6 @@ function DashboardContent() {
 
   const totalSteps = 10;
   const allComplete = completedSteps === totalSteps;
-
-  const outroUnlocked = hydrated ? isOutroUnlocked() : false;
 
   // Get tiger face image based on completion
   const getTigerFace = (complete: number, total: number): string => {
@@ -461,6 +458,7 @@ function DashboardContent() {
                 subtitle={t("dashboard.gettingStartedComplete")}
                 completed={true}
                 stamp={{ label: t("dashboard.stampComplete"), color: "green" as const }}
+                href="/training?celebrate=1"
               />
               {[1, 2, 3, 4].map((id) => {
                 const progress = hydrated ? getTrainingSetProgress(id) : { correct: 0, total: 50, complete: false };
@@ -477,7 +475,7 @@ function DashboardContent() {
                         : `${progress.correct}/${progress.total}`
                     }
                     completed={completed}
-                    stepNumber={id}
+                    stepNumber={id + 1}
                     stamp={completed ? { label: t("dashboard.stampComplete"), color: "green" as const } : undefined}
                     isPremiumLocked={isPremiumLocked}
                     href={isPremiumLocked ? undefined : `/training?set=${id}`}
@@ -536,7 +534,7 @@ function DashboardContent() {
                     title={t(`practiceTests.${testNumber}`)}
                     subtitle={subtitle}
                     completed={completed}
-                    stepNumber={testNumber + 4}
+                    stepNumber={testNumber + 5}
                     stamp={testStamp}
                     isPremiumLocked={isPremiumLocked}
                     href={isPremiumLocked ? undefined : `/test/${testNumber}`}
@@ -561,14 +559,12 @@ function DashboardContent() {
                 subtitle={
                   outroComplete
                     ? t("outro.complete")
-                    : outroUnlocked
-                      ? t("outro.readyToStart")
-                      : t("outro.locked")
+                    : t("outro.readyToStart")
                 }
                 completed={outroComplete}
-                stepNumber={outroComplete || outroUnlocked ? undefined : 10}
+                stepNumber={outroComplete ? undefined : 10}
                 stamp={outroComplete ? { label: t("dashboard.stampComplete"), color: "green" as const } : undefined}
-                href={outroUnlocked ? "/outro" : undefined}
+                href="/outro"
               />
             </div>
           </div>

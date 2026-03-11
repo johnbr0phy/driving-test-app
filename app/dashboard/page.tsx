@@ -458,7 +458,7 @@ function DashboardContent() {
                 subtitle={t("dashboard.gettingStartedComplete")}
                 completed={true}
                 stamp={{ label: t("dashboard.stampComplete"), color: "green" as const }}
-                href="/training?celebrate=1"
+                href="/training"
               />
               {[1, 2, 3, 4].map((id) => {
                 const progress = hydrated ? getTrainingSetProgress(id) : { correct: 0, total: 50, complete: false };

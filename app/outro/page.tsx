@@ -1,11 +1,9 @@
 "use client";
 
-import { useState, useEffect, Suspense } from "react";
+import { useState, useEffect, useRef, Suspense } from "react";
 import { useRouter } from "next/navigation";
-import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, Trophy } from "lucide-react";
-import Image from "next/image";
+import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import { useStore } from "@/store/useStore";
 import { useHydration } from "@/hooks/useHydration";
@@ -14,6 +12,7 @@ import { Fireworks } from "@/components/Fireworks";
 import { TrainingCard } from "@/components/TrainingCard";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { Question } from "@/types";
+import { shuffleQuestionOptions } from "@/lib/testGenerator";
 
 const outroQuestions: Question[] = [
   {
@@ -158,6 +157,10 @@ const outroQuestions: Question[] = [
   },
 ];
 
+// The final question (outro-10) is always last — wrong answers get re-asked before it
+const FINAL_QUESTION = outroQuestions[outroQuestions.length - 1];
+const MAIN_QUESTIONS = outroQuestions.slice(0, -1);
+
 function OutroContent() {
   const router = useRouter();
   const hydrated = useHydration();
@@ -168,11 +171,15 @@ function OutroContent() {
   const outroComplete = useStore((s) => s.outroComplete);
   const completeOutro = useStore((s) => s.completeOutro);
 
+  // Build the question queue: main questions in order, wrong answers re-queued before the final question
+  const [questionQueue, setQuestionQueue] = useState<Question[]>(() => [...MAIN_QUESTIONS]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
-  const [score, setScore] = useState(0);
-  const [finished, setFinished] = useState(false);
+  const [correctCount, setCorrectCount] = useState(0);
+  const [totalAsked, setTotalAsked] = useState(0);
   const [showFireworks, setShowFireworks] = useState(false);
+  const [replayMode, setReplayMode] = useState(false);
+  const wrongQueueRef = useRef<Question[]>([]);
 
   useEffect(() => {
     if (hydrated && !selectedState) {
@@ -180,129 +187,123 @@ function OutroContent() {
     }
   }, [hydrated, selectedState, router]);
 
-  // If already complete, show the celebration screen directly
+  // If already complete, start in replay mode (re-answering all questions)
   useEffect(() => {
     if (hydrated && outroComplete) {
-      setFinished(true);
-      setScore(10);
+      setReplayMode(true);
     }
   }, [hydrated, outroComplete]);
 
   if (!hydrated || !selectedState) {
-    return <div className="flex-1 bg-gray-50" />;
+    return <div className="flex-1 bg-gradient-to-br from-brand-light to-brand-gradient-to" />;
   }
 
-  const question = outroQuestions[currentIndex];
+  const currentQuestion = questionQueue[currentIndex];
+  // We're done with main + retries when currentIndex is past the queue
+  const mainQueueDone = currentIndex >= questionQueue.length;
+
+  // Show the final question after all main + retries are done
+  const showingFinalQuestion = mainQueueDone;
+  const displayQuestion = showingFinalQuestion ? FINAL_QUESTION : currentQuestion;
+
+  // Total questions = original 9 main + however many retries + 1 final
+  const progressTotal = questionQueue.length + 1;
+  const progressCurrent = showingFinalQuestion ? progressTotal : currentIndex + 1;
 
   const handleAnswerSelect = (answer: string) => {
-    if (selectedAnswer) return;
+    if (selectedAnswer || !displayQuestion) return;
     setSelectedAnswer(answer);
-    if (answer === question.correctAnswer) {
-      setScore((s) => s + 1);
+    const isCorrect = answer === displayQuestion.correctAnswer;
+
+    if (isCorrect) {
       playCorrectSound();
+      setCorrectCount((c) => c + 1);
     } else {
       playIncorrectSound();
+      // If this is a main question (not the final), queue it for retry with shuffled options
+      if (!showingFinalQuestion) {
+        wrongQueueRef.current.push(displayQuestion);
+      }
     }
+    setTotalAsked((t) => t + 1);
   };
 
   const handleNext = () => {
-    if (currentIndex < outroQuestions.length - 1) {
-      setCurrentIndex((i) => i + 1);
-      setSelectedAnswer(null);
-    } else {
-      setFinished(true);
-      setShowFireworks(true);
+    setSelectedAnswer(null);
+
+    if (showingFinalQuestion) {
+      // All done — complete outro and redirect to dashboard with fireworks
       if (!outroComplete) {
         completeOutro();
       }
+      setShowFireworks(true);
+      return;
+    }
+
+    const nextIndex = currentIndex + 1;
+
+    if (nextIndex >= questionQueue.length) {
+      // We've gone through the main queue — append any wrong answers (shuffled) before final
+      if (wrongQueueRef.current.length > 0) {
+        const retries = wrongQueueRef.current.map((q) => shuffleQuestionOptions(q));
+        wrongQueueRef.current = [];
+        setQuestionQueue((prev) => [...prev, ...retries]);
+      }
+      // Move index forward (will trigger showingFinalQuestion or show retries)
+      setCurrentIndex(nextIndex);
+    } else {
+      setCurrentIndex(nextIndex);
     }
   };
 
-  if (finished) {
-    return (
-      <div className="flex-1 bg-gray-50 relative">
-        {showFireworks && <Fireworks />}
-        <div className="absolute inset-x-0 top-0 h-96 bg-gradient-to-b from-green-50 to-transparent pointer-events-none" />
-        <div className="relative container mx-auto px-4 py-6 max-w-lg">
-          <div className="text-center py-8">
-            <Image
-              src="/tiger_face_01.png"
-              alt="Tiger mascot celebrating"
-              width={96}
-              height={96}
-              className="w-24 h-24 mx-auto mb-4"
-            />
-            <h1 className="text-2xl font-bold text-gray-900 mb-2">
-              {t("outro.congratsTitle")}
-            </h1>
-            <p className="text-gray-600 mb-6">
-              {t("outro.congratsDesc")}
-            </p>
-
-            <Card className="bg-gradient-to-r from-green-50 to-emerald-50 border-green-200 mb-6">
-              <CardContent className="p-6 text-center">
-                <div className="text-4xl font-bold text-green-700 mb-1">10/10</div>
-                <p className="text-sm text-green-600">{t("outro.allComplete")}</p>
-              </CardContent>
-            </Card>
-
-            <div className="space-y-3">
-              <Link href="/dashboard" className="block">
-                <Button className="w-full bg-brand hover:bg-brand-dark text-white">
-                  {t("common.goToDashboard")}
-                </Button>
-              </Link>
-              <Link href="/stats" className="block">
-                <Button variant="outline" className="w-full">
-                  {t("results.viewStats")}
-                </Button>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  }
+  const handleFireworksComplete = () => {
+    router.push("/dashboard");
+  };
 
   return (
-    <div className="flex-1 bg-gray-50 relative">
-      <div className="absolute inset-x-0 top-0 h-96 bg-gradient-to-b from-brand-light to-transparent pointer-events-none" />
-      <div className="relative container mx-auto px-4 py-6 max-w-lg">
-        {/* Header */}
-        <div className="flex items-center gap-3 mb-6">
+    <div className="flex-1 bg-gradient-to-br from-brand-light to-brand-gradient-to">
+      {showFireworks && (
+        <Fireworks duration={3000} onComplete={handleFireworksComplete} />
+      )}
+
+      <div className="container mx-auto px-4 py-4 max-w-6xl">
+        {/* Header — matches training page */}
+        <div className="mb-4 flex items-center justify-between">
           <Link href="/dashboard">
-            <Button variant="ghost" size="icon" className="h-8 w-8">
-              <ArrowLeft className="h-4 w-4" />
+            <Button variant="ghost" size="sm">
+              <ArrowLeft className="h-4 w-4 mr-2" />
+              {t("common.back")}
             </Button>
           </Link>
-          <div className="flex-1">
-            <h1 className="text-sm font-semibold text-gray-900">{t("outro.title")}</h1>
-            <p className="text-xs text-gray-500">
-              {currentIndex + 1} / {outroQuestions.length}
-            </p>
-          </div>
-          <div className="flex items-center gap-1.5">
-            <Trophy className="w-4 h-4 text-amber-500" />
-            <span className="text-sm font-bold tabular-nums text-gray-700">{score}/{outroQuestions.length}</span>
-          </div>
         </div>
 
-        {/* Progress bar */}
-        <div className="h-1.5 bg-gray-100 rounded-full overflow-hidden mb-6">
-          <div
-            className="h-full rounded-full bg-brand transition-all duration-300"
-            style={{ width: `${((currentIndex + (selectedAnswer ? 1 : 0)) / outroQuestions.length) * 100}%` }}
+        {/* Question Card */}
+        {displayQuestion && (
+          <TrainingCard
+            key={`${displayQuestion.questionId}-${currentIndex}`}
+            question={displayQuestion}
+            selectedAnswer={selectedAnswer}
+            onAnswerSelect={handleAnswerSelect}
+            onNext={handleNext}
           />
-        </div>
+        )}
 
-        {/* Question Card — same TrainingCard used in training mode */}
-        <TrainingCard
-          key={question.questionId}
-          question={question}
-          selectedAnswer={selectedAnswer}
-          onAnswerSelect={handleAnswerSelect}
-          onNext={handleNext}
-        />
+        {/* Progress */}
+        <div className="mt-4 md:mt-6 text-center">
+          <div className="flex items-center justify-center gap-1 text-sm md:text-lg text-gray-700">
+            <span className="font-bold text-xl md:text-2xl text-brand">{correctCount}</span>
+            <span className="text-gray-500">/{totalAsked || 0}</span>
+            <span className="text-gray-500 text-xs md:text-base ml-1">
+              {t("trainingPage.questionsCorrect")}
+            </span>
+          </div>
+          <div className="w-full bg-brand-border-light rounded-full h-2 mt-2 max-w-md mx-auto">
+            <div
+              className="bg-brand h-2 rounded-full transition-all"
+              style={{ width: `${(progressCurrent / progressTotal) * 100}%` }}
+            />
+          </div>
+        </div>
       </div>
     </div>
   );
@@ -310,7 +311,7 @@ function OutroContent() {
 
 export default function OutroPage() {
   return (
-    <Suspense fallback={<div className="flex-1 bg-gray-50" />}>
+    <Suspense fallback={<div className="flex-1 bg-gradient-to-br from-brand-light to-brand-gradient-to" />}>
       <OutroContent />
     </Suspense>
   );

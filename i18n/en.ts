@@ -146,6 +146,7 @@ export const en = {
     heroViewStats: "View detailed stats",
     gettingStarted: "Getting Started",
     gettingStartedDesc: "Answer 10 questions correctly",
+    gettingStartedComplete: "Onboarding complete",
     need80: "Need 80%+ to pass",
     bestScore: "Best",
     stampComplete: "Complete!",

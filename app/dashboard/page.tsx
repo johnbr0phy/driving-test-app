@@ -418,8 +418,8 @@ function DashboardContent() {
           <ProgressBar value={completedSteps} max={totalSteps} hideLabel />
         </div>
 
-        {/* Getting Started — inline CTA when not yet complete */}
-        {!onboardingComplete && (
+        {/* Getting Started — inline CTA when not yet complete, completed card when done */}
+        {!onboardingComplete ? (
           <Link href="/training" className="block mb-6">
             <Card className="bg-gradient-to-r from-brand-light to-brand-gradient-to border-brand-border-light hover:shadow-md transition-all">
               <CardContent className="p-4">
@@ -437,6 +437,15 @@ function DashboardContent() {
               </CardContent>
             </Card>
           </Link>
+        ) : (
+          <div className="mb-6">
+            <ProgressCard
+              title={t("dashboard.gettingStarted")}
+              subtitle={t("dashboard.gettingStartedComplete")}
+              completed={true}
+              stamp={{ label: t("dashboard.stampComplete"), color: "green" as const }}
+            />
+          </div>
         )}
 
         {/* Training & Tests — side by side on desktop */}

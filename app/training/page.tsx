@@ -207,39 +207,66 @@ function TrainingPageContent() {
         <Fireworks duration={3000} onComplete={handleFireworksComplete} />
       )}
 
-      {/* Onboarding Celebration Modal */}
+      {/* Onboarding Complete — Full-bleed Score Card */}
       {showCelebration && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm animate-in fade-in duration-300">
-          <div className="bg-white rounded-2xl p-8 mx-4 max-w-md text-center shadow-2xl animate-in zoom-in-95 duration-300">
-            <div className="mb-4">
-              <img
-                src="/tiger_face_02.png"
-                alt="Happy celebrating tiger"
-                className="w-32 h-32 mx-auto"
-              />
-            </div>
-            <h2 className="text-3xl font-bold text-gray-900 mb-2">
-              {t("trainingPage.congratulations")}
-            </h2>
-            <p className="text-xl text-brand font-semibold mb-4">
-              {t("trainingPage.youUnlocked")}
-            </p>
-            <p className="text-gray-600 mb-6">
-              {t("trainingPage.answeredTenCorrectly")}
-            </p>
-            <div className="flex flex-col gap-3">
-              <Link href="/dashboard">
-                <Button className="w-full bg-black text-white hover:bg-gray-800 text-lg py-6">
-                  {t("trainingPage.chooseTrainingSet")}
-                </Button>
-              </Link>
-              <Button
-                variant="outline"
-                className="w-full"
-                onClick={() => setShowCelebration(false)}
-              >
-                {t("trainingPage.keepGoing")}
-              </Button>
+        <div className="fixed inset-0 z-50 overflow-y-auto animate-in fade-in duration-300">
+          <div className="min-h-screen bg-gradient-to-b from-gray-950 to-green-950">
+            <div className="text-center px-6 pt-16 pb-10 max-w-lg mx-auto">
+              {/* Branding header */}
+              <div className="mb-6">
+                <div className="text-gray-300 text-lg font-bold tracking-widest">tigertest.io</div>
+                <div className="text-gray-500 text-xs uppercase tracking-widest mt-1">
+                  {language === "es" ? "ENTRENAMIENTO DMV" : "DMV TRAINING"}
+                </div>
+              </div>
+
+              {/* Tiger face */}
+              <div className="flex justify-center mb-5">
+                <Image
+                  src="/tiger_face_02.png"
+                  alt="Happy celebrating tiger"
+                  width={160}
+                  height={160}
+                  className="w-[120px] h-[120px] md:w-[160px] md:h-[160px]"
+                />
+              </div>
+
+              {/* Tagline */}
+              <div className="text-base md:text-lg font-extrabold uppercase tracking-widest mb-4 text-green-300">
+                {t("trainingPage.congratulations")}
+              </div>
+
+              {/* Main message */}
+              <div className="text-3xl md:text-4xl font-black mb-3 leading-tight text-white">
+                {t("trainingPage.youUnlocked")}
+              </div>
+
+              {/* Sub-message */}
+              <div className="text-lg md:text-xl text-gray-400 mb-5">
+                {t("trainingPage.answeredTenCorrectly")}
+              </div>
+
+              {/* COMPLETE badge */}
+              <Badge className="text-lg px-6 py-2 mb-5 bg-green-600 hover:bg-green-700">
+                {language === "es" ? "COMPLETADO" : "COMPLETE"}
+              </Badge>
+
+              {/* State name */}
+              <div className="text-gray-400 text-base mb-2">
+                {states.find((s) => s.code === selectedState)?.name || selectedState}
+              </div>
+
+              {/* Branding footer */}
+              <div className="text-gray-600 text-sm tracking-wider mb-8">tigertest.io</div>
+
+              {/* Go to Dashboard button */}
+              <div className="max-w-xs mx-auto">
+                <Link href="/dashboard">
+                  <Button className="w-full bg-white text-black hover:bg-gray-100 font-bold uppercase tracking-wide h-12 text-base">
+                    {t("common.backToDashboard")}
+                  </Button>
+                </Link>
+              </div>
             </div>
           </div>
         </div>

@@ -146,6 +146,7 @@ export const es: TranslationKeys = {
     heroViewStats: "Ver estadísticas detalladas",
     gettingStarted: "Primeros pasos",
     gettingStartedDesc: "Responde 10 preguntas correctamente",
+    gettingStartedComplete: "Incorporación completada",
     need80: "Necesitas 80%+ para aprobar",
     bestScore: "Mejor",
     stampComplete: "Completo!",

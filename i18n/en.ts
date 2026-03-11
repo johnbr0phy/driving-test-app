@@ -125,7 +125,7 @@ export const en = {
     premiumBottomYourStats: "Your Stats",
     premiumBottomCommonMistakes: "Common Mistakes",
     heroTitle0: "Blissfully Unprepared",
-    heroSub0: "Score 10/10 to be fully prepared for the real thing.",
+    heroSub0: "Complete 10/10 to be fully prepared for the real thing.",
     heroTitle1: "Vaguely Aware of Roads",
     heroSub1: "One down. The DMV remains unimpressed.",
     heroTitle2: "Slightly Less Clueless",

@@ -125,7 +125,7 @@ export const es: TranslationKeys = {
     premiumBottomYourStats: "Tus Estadísticas",
     premiumBottomCommonMistakes: "Errores Comunes",
     heroTitle0: "Aprendiz Nuevo",
-    heroSub0: "Obtén 10/10 para estar completamente preparado.",
+    heroSub0: "Completa 10/10 para estar completamente preparado.",
     heroTitle1: "Primer Paso Dado",
     heroSub1: "Uno menos, siete por delante. ¡Tú puedes!",
     heroTitle2: "Tomando Impulso",

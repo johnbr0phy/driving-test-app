@@ -125,7 +125,7 @@ export const en = {
     premiumBottomYourStats: "Your Stats",
     premiumBottomCommonMistakes: "Common Mistakes",
     heroTitle0: "Blissfully Unprepared",
-    heroSub0: "Score 8/8 to be fully prepared for the real thing.",
+    heroSub0: "Score 10/10 to be fully prepared for the real thing.",
     heroTitle1: "Vaguely Aware of Roads",
     heroSub1: "One down. The DMV remains unimpressed.",
     heroTitle2: "Slightly Less Clueless",
@@ -140,8 +140,12 @@ export const en = {
     heroSub6: "Six done. The DMV is getting nervous.",
     heroTitle7: "One More, Show-Off",
     heroSub7: "Finish this and there's really no stopping you.",
-    heroTitle8: "Ready for the DMV Test",
-    heroSub8: "Right then. Off you go. Try not to gloat.",
+    heroTitle8: "Nearly There",
+    heroSub8: "Eight down. Just the final touches remain.",
+    heroTitle9: "Ready for the DMV Test",
+    heroSub9: "One last victory lap and you're done.",
+    heroTitle10: "Fully Prepared",
+    heroSub10: "10/10. You've done everything. Go ace that test.",
     stepsComplete: "complete",
     heroViewStats: "View detailed stats",
     gettingStarted: "Getting Started",
@@ -512,6 +516,18 @@ export const en = {
     copyLink: "Copy Link",
     linkCopied: "Link Copied!",
     useEmailInstead: "Use Email Instead",
+  },
+
+  // Outro (completion celebration)
+  outro: {
+    title: "Victory Lap",
+    complete: "Victory lap complete!",
+    readyToStart: "You unlocked this!",
+    locked: "Complete everything to unlock",
+    congratsTitle: "You Did It!",
+    congratsDesc: "You've completed every training set, passed every test, and finished your victory lap. You're fully prepared for the real DMV test!",
+    allComplete: "All steps complete",
+    finishButton: "See My Results",
   },
 
   // Language

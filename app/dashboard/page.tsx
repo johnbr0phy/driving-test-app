@@ -314,14 +314,21 @@ function DashboardContent() {
     return !!(currentTest && currentTest.questions.length > 0);
   };
 
-  // Count completed steps (training sets + practice tests)
+  const outroComplete = useStore((state) => state.outroComplete);
+  const isOutroUnlocked = useStore((state) => state.isOutroUnlocked);
+
+  // Count completed steps: 1 onboarding + 4 training + 4 tests + 1 outro = 10
   const completedSteps = [
+    onboardingComplete,
     ...[1, 2, 3, 4].map(trainingSetComplete),
     ...[1, 2, 3, 4].map(testComplete),
+    outroComplete,
   ].filter(Boolean).length;
 
-  const totalSteps = 8;
+  const totalSteps = 10;
   const allComplete = completedSteps === totalSteps;
+
+  const outroUnlocked = hydrated ? isOutroUnlocked() : false;
 
   // Get tiger face image based on completion
   const getTigerFace = (complete: number, total: number): string => {
@@ -404,10 +411,10 @@ function DashboardContent() {
             />
             <div className="flex-1 min-w-0">
               <h1 className="text-lg font-bold text-gray-900">
-                {t(`dashboard.heroTitle${completedSteps}`)}
+                {t(`dashboard.heroTitle${Math.min(completedSteps, 10)}`)}
               </h1>
               <p className="text-xs text-gray-500 mt-0.5">
-                {t(`dashboard.heroSub${completedSteps}`)}
+                {t(`dashboard.heroSub${Math.min(completedSteps, 10)}`)}
               </p>
             </div>
             <div className="flex-shrink-0 text-right">
@@ -549,6 +556,20 @@ function DashboardContent() {
                   </ProgressCard>
                 );
               })}
+              <ProgressCard
+                title={t("outro.title")}
+                subtitle={
+                  outroComplete
+                    ? t("outro.complete")
+                    : outroUnlocked
+                      ? t("outro.readyToStart")
+                      : t("outro.locked")
+                }
+                completed={outroComplete}
+                stepNumber={outroComplete || outroUnlocked ? undefined : 10}
+                stamp={outroComplete ? { label: t("dashboard.stampComplete"), color: "green" as const } : undefined}
+                href={outroUnlocked ? "/outro" : undefined}
+              />
             </div>
           </div>
 

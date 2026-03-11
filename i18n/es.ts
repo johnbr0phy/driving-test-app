@@ -125,7 +125,7 @@ export const es: TranslationKeys = {
     premiumBottomYourStats: "Tus Estadísticas",
     premiumBottomCommonMistakes: "Errores Comunes",
     heroTitle0: "Aprendiz Nuevo",
-    heroSub0: "Obtén 8/8 para estar completamente preparado.",
+    heroSub0: "Obtén 10/10 para estar completamente preparado.",
     heroTitle1: "Primer Paso Dado",
     heroSub1: "Uno menos, siete por delante. ¡Tú puedes!",
     heroTitle2: "Tomando Impulso",
@@ -140,8 +140,12 @@ export const es: TranslationKeys = {
     heroSub6: "Seis listos. La meta está a la vista.",
     heroTitle7: "Uno Más...",
     heroSub7: "Tan cerca que casi puedes oler la licencia nueva.",
-    heroTitle8: "Listo para el Examen",
-    heroSub8: "Hiciste el trabajo. ¡Ve a aprobar ese examen!",
+    heroTitle8: "Casi Listo",
+    heroSub8: "Ocho listos. Solo faltan los toques finales.",
+    heroTitle9: "Listo para el Examen",
+    heroSub9: "Una última vuelta de la victoria y listo.",
+    heroTitle10: "Completamente Preparado",
+    heroSub10: "10/10. Lo hiciste todo. ¡Ve a aprobar ese examen!",
     stepsComplete: "completos",
     heroViewStats: "Ver estadísticas detalladas",
     gettingStarted: "Primeros pasos",
@@ -512,6 +516,18 @@ export const es: TranslationKeys = {
     copyLink: "Copiar enlace",
     linkCopied: "¡Enlace copiado!",
     useEmailInstead: "Usar correo en su lugar",
+  },
+
+  // Outro (completion celebration)
+  outro: {
+    title: "Vuelta de la Victoria",
+    complete: "¡Vuelta de la victoria completa!",
+    readyToStart: "¡Lo desbloqueaste!",
+    locked: "Completa todo para desbloquear",
+    congratsTitle: "¡Lo Lograste!",
+    congratsDesc: "Completaste todos los conjuntos de entrenamiento, aprobaste todos los exámenes y terminaste tu vuelta de la victoria. ¡Estás completamente preparado para el examen real del DMV!",
+    allComplete: "Todos los pasos completos",
+    finishButton: "Ver Mis Resultados",
   },
 
   // Language

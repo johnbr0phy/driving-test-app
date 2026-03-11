@@ -75,6 +75,11 @@ interface AppState {
   getTrainingSetProgress: (setId: number) => { correct: number; total: number; complete: boolean };
   resetTrainingSet: (setId: number) => void;
 
+  // Outro (completion celebration)
+  outroComplete: boolean;
+  completeOutro: () => void;
+  isOutroUnlocked: () => boolean;
+
   // Training answer history (for question performance tracking)
   trainingAnswerHistory: { questionId: string; isCorrect: boolean; answeredAt?: string }[];
 
@@ -153,6 +158,7 @@ export const useStore = create<AppState>()(
       },
       trainingSets: {},
       trainingAnswerHistory: [],
+      outroComplete: false,
       activeDates: [],
       userId: null,
       photoURL: null,
@@ -204,6 +210,7 @@ export const useStore = create<AppState>()(
           },
           trainingSets: {},
           trainingAnswerHistory: [],
+          outroComplete: false,
         });
         // Save to Firestore
         get().saveToFirestore();
@@ -479,6 +486,27 @@ export const useStore = create<AppState>()(
         get().saveToFirestore();
       },
 
+      // Outro (completion celebration)
+      completeOutro: () => {
+        set({ outroComplete: true });
+        get().saveToFirestore();
+      },
+
+      isOutroUnlocked: () => {
+        const state = get();
+        // All 4 training sets must be complete
+        for (let i = 1; i <= 4; i++) {
+          const progress = state.getTrainingSetProgress(i);
+          if (!progress.complete) return false;
+        }
+        // All 4 tests must be passed (80%+)
+        for (let i = 1; i <= 4; i++) {
+          const stats = state.getTestAttemptStats(i);
+          if (!stats || stats.bestScore < 40) return false;
+        }
+        return true;
+      },
+
       // Onboarding check - returns true if user has completed onboarding
       // (10+ correct training answers OR any existing app usage for backwards compatibility)
       isOnboardingComplete: () => {
@@ -720,6 +748,7 @@ export const useStore = create<AppState>()(
               },
               trainingSets: data.trainingSets || {},
               trainingAnswerHistory: data.trainingAnswerHistory || [],
+              outroComplete: data.outroComplete || false,
               activeDates: data.activeDates || [],
               photoURL: data.photoURL || null,
               userId,
@@ -758,7 +787,7 @@ export const useStore = create<AppState>()(
       },
 
       saveToFirestore: async () => {
-        const { userId, isGuest, selectedState, currentTests, completedTests, testAttempts, training, trainingSets, trainingAnswerHistory, activeDates, photoURL, subscription, language, emailConsent } = get();
+        const { userId, isGuest, selectedState, currentTests, completedTests, testAttempts, training, trainingSets, trainingAnswerHistory, outroComplete, activeDates, photoURL, subscription, language, emailConsent } = get();
         if (!userId || isGuest) return; // Don't save if no user is logged in or guest mode
 
         try {
@@ -803,6 +832,7 @@ export const useStore = create<AppState>()(
             training,
             trainingSets,
             trainingAnswerHistory,
+            outroComplete,
             activeDates: updatedActiveDates,
             subscription,
             language,
@@ -830,6 +860,7 @@ export const useStore = create<AppState>()(
           },
           trainingSets: {},
           trainingAnswerHistory: [],
+          outroComplete: false,
           activeDates: [],
         });
         get().saveToFirestore();
@@ -854,6 +885,7 @@ export const useStore = create<AppState>()(
           },
           trainingSets: {},
           trainingAnswerHistory: [],
+          outroComplete: false,
           activeDates: [],
           userId: null,
           photoURL: null,
@@ -945,6 +977,7 @@ export const useStore = create<AppState>()(
             },
             trainingSets: {},
             trainingAnswerHistory: [],
+            outroComplete: false,
             activeDates: [],
             userId: null,
             photoURL: null,

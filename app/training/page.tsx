@@ -50,7 +50,6 @@ function TrainingPageContent() {
   // This avoids stale closure issues with the currentQuestion state
   const currentQuestionIdRef = useRef<string | null>(null);
   const [showFireworks, setShowFireworks] = useState(false);
-  const [showCelebration, setShowCelebration] = useState(false);
   const [showSetComplete, setShowSetComplete] = useState(false);
   const [showResetConfirm, setShowResetConfirm] = useState(false);
   const [prevCorrectCount, setPrevCorrectCount] = useState(training.totalCorrectAllTime);
@@ -74,28 +73,18 @@ function TrainingPageContent() {
     }
   }, [hydrated, selectedState, setNumber, isTrainingSetUnlocked, router]);
 
-  // Show celebration when arriving via ?celebrate (e.g. clicking completed Getting Started card)
-  useEffect(() => {
-    if (hydrated && searchParams.get('celebrate') === '1' && isOnboardingComplete()) {
-      setShowFireworks(true);
-    }
-  }, [hydrated]); // eslint-disable-line react-hooks/exhaustive-deps
-
-  // Detect when user unlocks practice tests (crosses 10 correct answers) - onboarding only
+  // When onboarding completes (10 correct answers), redirect straight to dashboard
   useEffect(() => {
     if (!isSetMode && training.totalCorrectAllTime >= 10 && prevCorrectCount < 10) {
-      setShowFireworks(true);
+      router.push("/dashboard");
     }
     setPrevCorrectCount(training.totalCorrectAllTime);
-  }, [training.totalCorrectAllTime, prevCorrectCount, isSetMode]);
+  }, [training.totalCorrectAllTime, prevCorrectCount, isSetMode, router]);
 
   const handleFireworksComplete = () => {
     setShowFireworks(false);
     if (isSetMode) {
-      // Set complete overlay is already showing — just dismiss fireworks
       if (!showSetComplete) setShowSetComplete(true);
-    } else {
-      setShowCelebration(true);
     }
   };
 
@@ -212,71 +201,6 @@ function TrainingPageContent() {
       {/* Fireworks Animation */}
       {showFireworks && (
         <Fireworks duration={3000} onComplete={handleFireworksComplete} />
-      )}
-
-      {/* Onboarding Complete — Full-bleed Score Card */}
-      {showCelebration && (
-        <div className="fixed inset-0 z-50 overflow-y-auto animate-in fade-in duration-300">
-          <div className="min-h-screen bg-gradient-to-b from-gray-950 to-green-950">
-            <div className="text-center px-6 pt-16 pb-10 max-w-lg mx-auto">
-              {/* Branding header */}
-              <div className="mb-6">
-                <div className="text-gray-300 text-lg font-bold tracking-widest">tigertest.io</div>
-                <div className="text-gray-500 text-xs uppercase tracking-widest mt-1">
-                  {language === "es" ? "ENTRENAMIENTO DMV" : "DMV TRAINING"}
-                </div>
-              </div>
-
-              {/* Tiger face */}
-              <div className="flex justify-center mb-5">
-                <Image
-                  src="/tiger_face_02.png"
-                  alt="Happy celebrating tiger"
-                  width={160}
-                  height={160}
-                  className="w-[120px] h-[120px] md:w-[160px] md:h-[160px]"
-                />
-              </div>
-
-              {/* Tagline */}
-              <div className="text-base md:text-lg font-extrabold uppercase tracking-widest mb-4 text-green-300">
-                {t("trainingPage.congratulations")}
-              </div>
-
-              {/* Main message */}
-              <div className="text-3xl md:text-4xl font-black mb-3 leading-tight text-white">
-                {t("trainingPage.youUnlocked")}
-              </div>
-
-              {/* Sub-message */}
-              <div className="text-lg md:text-xl text-gray-400 mb-5">
-                {t("trainingPage.answeredTenCorrectly")}
-              </div>
-
-              {/* COMPLETE badge */}
-              <Badge className="text-lg px-6 py-2 mb-5 bg-green-600 hover:bg-green-700">
-                {language === "es" ? "COMPLETADO" : "COMPLETE"}
-              </Badge>
-
-              {/* State name */}
-              <div className="text-gray-400 text-base mb-2">
-                {states.find((s) => s.code === selectedState)?.name || selectedState}
-              </div>
-
-              {/* Branding footer */}
-              <div className="text-gray-600 text-sm tracking-wider mb-8">tigertest.io</div>
-
-              {/* Go to Dashboard button */}
-              <div className="max-w-xs mx-auto">
-                <Link href="/dashboard">
-                  <Button className="w-full bg-white text-black hover:bg-gray-100 font-bold uppercase tracking-wide h-12 text-base">
-                    {t("common.backToDashboard")}
-                  </Button>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
       )}
 
       {/* Set Complete - Full-bleed Score Card */}

@@ -437,16 +437,7 @@ function DashboardContent() {
               </CardContent>
             </Card>
           </Link>
-        ) : (
-          <div className="mb-6">
-            <ProgressCard
-              title={t("dashboard.gettingStarted")}
-              subtitle={t("dashboard.gettingStartedComplete")}
-              completed={true}
-              stamp={{ label: t("dashboard.stampComplete"), color: "green" as const }}
-            />
-          </div>
-        )}
+        ) : null}
 
         {/* Training & Tests — side by side on desktop */}
         {onboardingComplete && (
@@ -458,6 +449,12 @@ function DashboardContent() {
               {t("dashboard.training")}
             </h2>
             <div className="space-y-2">
+              <ProgressCard
+                title={t("dashboard.gettingStarted")}
+                subtitle={t("dashboard.gettingStartedComplete")}
+                completed={true}
+                stamp={{ label: t("dashboard.stampComplete"), color: "green" as const }}
+              />
               {[1, 2, 3, 4].map((id) => {
                 const progress = hydrated ? getTrainingSetProgress(id) : { correct: 0, total: 50, complete: false };
                 const completed = progress.complete;

@@ -3,6 +3,7 @@
 import { useEffect, useState, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { PaywallModal } from "@/components/PaywallModal";
+import { StreakBanner } from "@/components/StreakBanner";
 import { Card, CardContent } from "@/components/ui/card";
 import { Zap, ChevronRight, CheckCircle, Check, Lock } from "lucide-react";
 import Link from "next/link";
@@ -417,6 +418,17 @@ function DashboardContent() {
           </div>
           <ProgressBar value={completedSteps} max={totalSteps} hideLabel />
         </div>
+
+        {/* Daily Streak + Shield Upsell */}
+        {onboardingComplete && (
+          <StreakBanner
+            isPremium={isPremium}
+            onUpgradeClick={() => {
+              setPaywallFeature("training_set_4");
+              setPaywallOpen(true);
+            }}
+          />
+        )}
 
         {/* Getting Started — inline CTA when not yet complete */}
         {!onboardingComplete && (

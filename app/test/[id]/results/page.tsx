@@ -265,6 +265,19 @@ export default function ResultsPage() {
               {t("results.tryAgain")}
             </Button>
           </div>
+
+          {/* Flashcard CTA — only show if they got some wrong */}
+          {percentage < 100 && (
+            <div className="mt-5 max-w-xs mx-auto">
+              <button
+                onClick={() => router.push(`/flashcards/${testId}`)}
+                className="w-full flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 border border-white/20 text-white rounded-xl px-5 py-3 text-sm font-semibold transition-colors"
+              >
+                <span>🃏</span>
+                <span>Drill wrong answers with flashcards</span>
+              </button>
+            </div>
+          )}
         </div>
       </div>
 

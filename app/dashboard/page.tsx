@@ -59,31 +59,23 @@ function ProgressCard({
     }`}>
       <CardContent className="p-4 flex items-center gap-3">
         {/* Completion indicator */}
-        <div className="flex-shrink-0 relative w-8 h-8">
-          <div className={`w-8 h-8 rounded-full flex items-center justify-center ${
-            completed
-              ? "bg-green-500 text-white"
-              : "bg-gray-100 text-gray-300"
-          }`}>
-            {completed ? (
-              <Check className="w-4 h-4" strokeWidth={3} />
-            ) : stepNumber ? (
-              <span className="text-xs font-bold text-gray-400">{stepNumber}</span>
-            ) : (
-              <div className="w-2 h-2 rounded-full bg-gray-300" />
-            )}
-          </div>
-          {isPremiumLocked && (
-            <div className="absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-brand flex items-center justify-center">
-              <Lock className="w-2.5 h-2.5 text-white" />
-            </div>
+        <div className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center ${
+          completed ? "bg-green-500 text-white" : "bg-gray-100 text-gray-300"
+        }`}>
+          {completed ? (
+            <Check className="w-4 h-4" strokeWidth={3} />
+          ) : stepNumber ? (
+            <span className="text-xs font-bold text-gray-400">{stepNumber}</span>
+          ) : (
+            <div className="w-2 h-2 rounded-full bg-gray-300" />
           )}
         </div>
 
         {/* Content */}
         <div className="flex-1 min-w-0">
-          <h3 className={`font-semibold text-sm ${completed ? "text-green-900" : isPremiumLocked ? "text-gray-400" : "text-gray-900"}`}>
+          <h3 className={`font-semibold text-sm flex items-center gap-1.5 ${completed ? "text-green-900" : "text-gray-900"}`}>
             {title}
+            {isPremiumLocked && <Lock className="w-3.5 h-3.5 text-gray-400 flex-shrink-0" />}
           </h3>
           <p className={`text-xs mt-0.5 ${completed ? "text-green-600" : "text-gray-500"}`}>
             {subtitle}
@@ -95,9 +87,7 @@ function ProgressCard({
         {stamp ? (
           <Stamp label={stamp.label} color={stamp.color} />
         ) : (
-          <ChevronRight className={`h-5 w-5 flex-shrink-0 ${
-            completed ? "text-green-400" : isPremiumLocked ? "text-brand-muted" : "text-gray-300"
-          }`} />
+          <ChevronRight className={`h-5 w-5 flex-shrink-0 ${completed ? "text-green-400" : "text-gray-300"}`} />
         )}
       </CardContent>
     </Card>

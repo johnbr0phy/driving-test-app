@@ -85,7 +85,7 @@ function ProgressCard({
           <h3 className={`font-semibold text-sm ${completed ? "text-green-900" : isPremiumLocked ? "text-gray-400" : "text-gray-900"}`}>
             {title}
           </h3>
-          <p className={`text-xs mt-0.5 ${completed ? "text-green-600" : isPremiumLocked ? "text-brand" : "text-gray-500"}`}>
+          <p className={`text-xs mt-0.5 ${completed ? "text-green-600" : "text-gray-500"}`}>
             {subtitle}
           </p>
           {children}
@@ -461,11 +461,7 @@ function DashboardContent() {
                   <ProgressCard
                     key={`training-${id}`}
                     title={t(`trainingSets.${id}`)}
-                    subtitle={
-                      isPremiumLocked
-                        ? t("common.unlockWithPremium")
-                        : `${progress.correct}/${progress.total}`
-                    }
+                    subtitle={`${isPremiumLocked ? 0 : progress.correct}/${progress.total}`}
                     completed={completed}
                     stepNumber={id}
                     stamp={completed ? { label: t("dashboard.stampComplete"), color: "green" as const } : undefined}
@@ -496,9 +492,7 @@ function DashboardContent() {
                 const isPremiumLocked = testNumber === 4 && !isPremium;
 
                 let subtitle = t("testCard.fiftyQuestions");
-                if (isPremiumLocked) {
-                  subtitle = t("common.unlockWithPremium");
-                } else if (completed && bestPct !== null) {
+                if (completed && bestPct !== null) {
                   subtitle = `${t("dashboard.bestScore")}: ${bestPct}%`;
                 } else if (bestPct !== null) {
                   subtitle = `${t("dashboard.bestScore")}: ${bestPct}% — ${t("dashboard.need80")}`;

@@ -379,7 +379,7 @@ function TrainingPageContent() {
           </Link>
           {!isGuest && (
             <Link href="/stats?tab=community" className="text-sm font-medium text-brand hover:text-brand-dark transition-colors">
-              Testing soon? &rsaquo;
+              Testing soon?
             </Link>
           )}
         </div>

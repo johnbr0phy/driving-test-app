@@ -621,7 +621,7 @@ function DashboardContent() {
                 alt="Tiger with crown"
                 width={36}
                 height={36}
-                className="w-9 h-9 flex-shrink-0"
+                className="w-9 h-9 flex-shrink-0 hidden sm:block"
               />
               <div className="flex-1">
                 <p className="text-sm font-semibold text-gray-900">

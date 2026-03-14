@@ -510,7 +510,7 @@ function DashboardContent() {
         {/* Bottom banner — urgency upsell for free users, thank-you for premium */}
         {!isGuest && !isPremium && (
           <div className="rounded-xl bg-white border border-gray-100 px-5 py-4">
-            <div className="flex items-center gap-3 mb-3">
+            <div className="flex items-center gap-3">
               <Image
                 src="/tiger_face_01.png"
                 alt="Tiger with crown"
@@ -526,11 +526,9 @@ function DashboardContent() {
                   See the questions most people get wrong first.
                 </p>
               </div>
-            </div>
-            <div className="flex justify-end">
               <Link
                 href="/stats?tab=community"
-                className="inline-block rounded-lg bg-gray-50 border border-gray-200 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 transition-colors"
+                className="flex-shrink-0 rounded-lg bg-gray-50 border border-gray-200 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 transition-colors"
               >
                 View Hardest Questions
               </Link>

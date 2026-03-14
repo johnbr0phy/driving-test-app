@@ -151,7 +151,7 @@ export const en = {
     stampComplete: "Complete!",
     stampMastered: "Mastered!",
     stampPassed: "Passed!",
-    stampKeepGoing: "Keep going",
+    stampKeepGoing: "Retake it",
   },
 
   // Question categories (human-friendly display names)

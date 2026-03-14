@@ -151,7 +151,7 @@ export const es: TranslationKeys = {
     stampComplete: "Completo!",
     stampMastered: "Dominado!",
     stampPassed: "Aprobado!",
-    stampKeepGoing: "Sigue así",
+    stampKeepGoing: "Repítelo",
   },
 
   // Question categories (human-friendly display names)

@@ -435,13 +435,17 @@ function DashboardContent() {
             }
 
             let testStamp: { label: string; color: "green" | "amber" | "red" } | undefined;
-            if (!testLocked && bestRaw !== null) {
-              if (bestRaw === 50) {
-                testStamp = { label: t("dashboard.stampMastered"), color: "green" };
-              } else if (bestRaw >= 40) {
-                testStamp = { label: t("dashboard.stampPassed"), color: "green" };
-              } else {
-                testStamp = { label: t("dashboard.stampKeepGoing"), color: "amber" };
+            if (!testLocked) {
+              if (inProgress && bestRaw === null) {
+                testStamp = { label: "Keep going", color: "amber" };
+              } else if (bestRaw !== null) {
+                if (bestRaw === 50) {
+                  testStamp = { label: t("dashboard.stampMastered"), color: "green" };
+                } else if (bestRaw >= 40) {
+                  testStamp = { label: t("dashboard.stampPassed"), color: "green" };
+                } else {
+                  testStamp = { label: t("dashboard.stampKeepGoing"), color: "amber" };
+                }
               }
             }
 

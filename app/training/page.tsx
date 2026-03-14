@@ -320,12 +320,15 @@ function TrainingPageContent() {
                     className="flex-1 bg-white text-black hover:bg-gray-100 font-bold uppercase tracking-wide h-12 text-base"
                   />
                 )}
-                <Button
-                  className="flex-1 bg-transparent text-white hover:bg-white/10 border border-white/30 font-bold uppercase tracking-wide h-12 text-base"
-                  onClick={() => setShowResetConfirm(true)}
-                >
-                  {t("results.tryAgain")}
-                </Button>
+                {!isGuest && (
+                  <Link href="/stats" className="flex-1">
+                    <Button
+                      className="w-full bg-transparent text-white hover:bg-white/10 border border-white/30 font-bold uppercase tracking-wide h-12 text-base"
+                    >
+                      {t("results.viewStats")}
+                    </Button>
+                  </Link>
+                )}
               </div>
 
               {/* Reset confirmation */}
@@ -352,17 +355,15 @@ function TrainingPageContent() {
               )}
             </div>
 
-            {/* See Stats link */}
-            {!isGuest && (
-              <div className="text-center py-5">
-                <Link
-                  href="/stats"
-                  className="text-gray-500 hover:text-gray-300 text-sm font-medium transition-colors"
-                >
-                  {t("results.viewStats")} →
-                </Link>
-              </div>
-            )}
+            {/* Try Again link */}
+            <div className="text-center py-5">
+              <button
+                onClick={() => setShowResetConfirm(true)}
+                className="text-gray-500 hover:text-gray-300 text-sm font-medium transition-colors"
+              >
+                {t("results.tryAgain")} →
+              </button>
+            </div>
           </div>
         </div>
       )}

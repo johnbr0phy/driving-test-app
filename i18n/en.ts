@@ -133,7 +133,7 @@ export const en = {
     heroTitle3: "Getting Suspiciously Competent",
     heroSub3: "Three done. People are starting to talk.",
     heroTitle4: "Halfway There",
-    heroSub4: "The glass is half full. Of road knowledge.",
+    heroSub4: "Each step builds real confidence. Keep it up.",
     heroTitle5: "Annoyingly Good",
     heroSub5: "Five down. At this rate you'll be unbearable.",
     heroTitle6: "Nearly Roadworthy",

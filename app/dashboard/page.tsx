@@ -57,11 +57,18 @@ function ProgressCard({
     }`}>
       <CardContent className="p-4 flex items-center gap-3">
         {/* Completion indicator */}
-        <div className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center ${
+        <div className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center relative ${
           completed ? "bg-green-500 text-white" : "bg-gray-100 text-gray-300"
         }`}>
           {completed ? (
-            <Check className="w-4 h-4" strokeWidth={3} />
+            <>
+              <Check className="w-3.5 h-3.5" strokeWidth={3} />
+              {stepNumber && (
+                <span className="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-white border border-green-200 flex items-center justify-center text-[9px] font-bold text-green-700 leading-none">
+                  {stepNumber}
+                </span>
+              )}
+            </>
           ) : stepNumber ? (
             <span className="text-xs font-bold text-gray-400">{stepNumber}</span>
           ) : (

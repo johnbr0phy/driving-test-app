@@ -21,6 +21,27 @@ export default function robots(): MetadataRoute.Robots {
           "/signup",
         ],
       },
+      // Explicitly allow major AI crawlers
+      {
+        userAgent: "GPTBot",
+        allow: "/",
+        disallow: ["/api/", "/admin/"],
+      },
+      {
+        userAgent: "ClaudeBot",
+        allow: "/",
+        disallow: ["/api/", "/admin/"],
+      },
+      {
+        userAgent: "PerplexityBot",
+        allow: "/",
+        disallow: ["/api/", "/admin/"],
+      },
+      {
+        userAgent: "anthropic-ai",
+        allow: "/",
+        disallow: ["/api/", "/admin/"],
+      },
     ],
     sitemap: `${siteUrl}/sitemap.xml`,
   };

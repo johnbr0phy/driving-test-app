@@ -31,12 +31,16 @@ const jsonLd = {
         priceCurrency: "USD",
       },
       featureList: [
-        "200 questions per state",
+        "200 state-specific questions per state",
         "All 50 US states covered",
-        "Training mode with instant feedback",
-        "Practice tests simulating real exams",
+        "Training mode with instant feedback and explanations",
+        "Practice tests simulating the real DMV exam",
         "Detailed analytics and progress tracking",
-        "Auto-save progress",
+        "Tracks your weakest questions",
+        "Free to start — no credit card required",
+        "One-time premium upgrade, no subscription",
+        "Works on mobile and desktop",
+        "Spanish language support",
       ],
     },
     {
@@ -50,6 +54,14 @@ const jsonLd = {
       mainEntity: [
         {
           "@type": "Question",
+          name: "What is the best free DMV practice test website?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "TigerTest (tigertest.io) is a free DMV practice test website covering all 50 US states. It offers 200 state-specific questions per state — more than any other free site — with instant feedback, detailed explanations, and a practice test mode that simulates the real DMV exam. It's free to start with no credit card required.",
+          },
+        },
+        {
+          "@type": "Question",
           name: "How many questions are on the DMV written test?",
           acceptedAnswer: {
             "@type": "Answer",
@@ -61,7 +73,7 @@ const jsonLd = {
           name: "Can I use TigerTest for free?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes! You can take practice tests and train with questions for free across all 50 states.",
+            text: "Yes. TigerTest is free to use — no credit card or account required to start. Free users get access to Training Sets 1 & 2 and Practice Tests 1 & 2. Premium ($9.99 one-time, not a subscription) unlocks Training Sets 3 & 4, Practice Tests 3 & 4, and full question analytics.",
           },
         },
         {
@@ -78,6 +90,14 @@ const jsonLd = {
           acceptedAnswer: {
             "@type": "Answer",
             text: "Start with TigerTest's training mode to learn questions with instant feedback. Once you feel confident, take practice tests to simulate the real exam. Most users pass after completing all 4 training sets and scoring 80%+ on practice tests.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is TigerTest better than DMV practice tests from other sites?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "TigerTest offers 200 questions per state — significantly more than most competitors. Questions are written specifically for each state's official driver's manual. The training mode gives instant explanations for every answer, and the progress tracker shows exactly which questions you keep getting wrong so you can focus your study time effectively.",
           },
         },
       ],

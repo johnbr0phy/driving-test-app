@@ -463,7 +463,9 @@ function DashboardContent() {
                       ? { label: t("dashboard.stampComplete"), color: "green" as const }
                       : isStartHere
                         ? { label: "Start here", color: "amber" as const }
-                        : undefined
+                        : trainingProgress.correct > 0
+                          ? { label: "Keep going", color: "amber" as const }
+                          : undefined
                   }
                   isPremiumLocked={trainingLocked}
                   href={trainingLocked ? undefined : `/training?set=${id}`}

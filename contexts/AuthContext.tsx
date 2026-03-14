@@ -45,6 +45,18 @@ export function useAuth() {
   return useContext(AuthContext);
 }
 
+async function sendWelcomeEmail(userId: string, email: string, displayName: string | null, emailConsent: boolean) {
+  try {
+    await fetch("/api/send-welcome-email", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ userId, email, displayName, emailConsent }),
+    });
+  } catch (err) {
+    console.error("Failed to send welcome email:", err);
+  }
+}
+
 export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
   const [loading, setLoading] = useState(true);
@@ -133,9 +145,11 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const signup = async (email: string, password: string) => {
     const userCredential = await createUserWithEmailAndPassword(auth, email, password);
 
-    // Send verification email (acts as welcome email)
     if (userCredential.user) {
+      // Send verification email
       sendEmailVerification(userCredential.user).catch(err => console.error('Failed to send verification email:', err));
+      // Send welcome email via Resend
+      sendWelcomeEmail(userCredential.user.uid, email, userCredential.user.displayName, true);
     }
   };
 
@@ -145,8 +159,11 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
   const loginWithGoogle = async () => {
     const provider = new GoogleAuthProvider();
-    await signInWithPopup(auth, provider);
-    // Google users' emails are already verified by Google, no need for verification email
+    const result = await signInWithPopup(auth, provider);
+    // Send welcome email for new Google signups only
+    if (result.user && result.additionalUserInfo?.isNewUser) {
+      sendWelcomeEmail(result.user.uid, result.user.email!, result.user.displayName, true);
+    }
   };
 
   const logout = async () => {

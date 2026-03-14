@@ -62,11 +62,15 @@ function ProgressCard({
         }`}>
           {completed ? (
             <>
-              <Check className="w-3.5 h-3.5" strokeWidth={3} />
-              {stepNumber && (
-                <span className="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-white border border-green-200 flex items-center justify-center text-[9px] font-bold text-green-700 leading-none">
-                  {stepNumber}
-                </span>
+              {stepNumber ? (
+                <>
+                  <span className="text-xs font-bold text-white">{stepNumber}</span>
+                  <span className="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-white border border-green-200 flex items-center justify-center leading-none">
+                    <Check className="w-2.5 h-2.5 text-green-700" strokeWidth={3} />
+                  </span>
+                </>
+              ) : (
+                <Check className="w-3.5 h-3.5" strokeWidth={3} />
               )}
             </>
           ) : stepNumber ? (
@@ -153,6 +157,83 @@ function DashboardContent() {
   const getTrainingSetProgress = useStore((state) => state.getTrainingSetProgress);
   const isOnboardingComplete = useStore((state) => state.isOnboardingComplete);
   const completeTest = useStore((state) => state.completeTest);
+
+  // Hero subtitle variants (5 per progress state, picked randomly on mount)
+  const heroSubVariants: string[][] = [
+    [ // 0 complete
+      "...and you'll be ready to ace your DMV test.",
+      "Each step gets you closer to passing first time.",
+      "Work through them in any order. Every one counts.",
+      "Start anywhere. Finish everything. Pass your test.",
+      "The steps are here. Your DMV test is waiting.",
+    ],
+    [ // 1 complete
+      "Keep going. Each step builds real knowledge.",
+      "One down. Pick your next module and keep the momentum.",
+      "You've started. That's the hardest part. Keep it going.",
+      "7 more and you'll be test-ready.",
+      "Nice work. Head back and pick another.",
+    ],
+    [ // 2 complete
+      "You're making progress. Pick another and keep going.",
+      "Two steps in. You're building a solid base.",
+      "Good progress. Keep ticking them off.",
+      "6 to go. You're on your way.",
+      "You're moving. Don't stop now.",
+    ],
+    [ // 3 complete
+      "3 down. Head back and knock out another one.",
+      "You're nearly at the halfway mark. Keep going.",
+      "Three done. You're getting genuinely prepared.",
+      "Almost halfway. Each step builds real confidence.",
+      "You're doing great. Keep it up.",
+    ],
+    [ // 4 complete
+      "4 of 8 complete. You're building serious knowledge.",
+      "Halfway done. The second half goes faster.",
+      "Four complete. You're in good shape. Keep pushing.",
+      "You know more than most people walking into the DMV.",
+      "4 down, 4 to go. You've got this.",
+    ],
+    [ // 5 complete
+      "5 done. The finish line is coming into view.",
+      "Five complete. Three more and you're test-ready.",
+      "You're past halfway. Keep that momentum.",
+      "You're doing really well. Almost there.",
+      "5 of 8 done. Don't stop now.",
+    ],
+    [ // 6 complete
+      "Two more and you'll be fully prepared.",
+      "Six done. You can see the finish line from here.",
+      "Nearly there. Two more modules and you're ready.",
+      "6 complete. You're so close.",
+      "Two left. Knock them out and you're test-ready.",
+    ],
+    [ // 7 complete
+      "One more module and you're test-ready.",
+      "You're one step away from being fully prepared.",
+      "Finish the last one and go pass your test.",
+      "One more. You've come too far to stop now.",
+      "Last one. You've got this.",
+    ],
+    [ // 8 complete
+      "You've done the work. Go pass that test.",
+      "All 8 complete. You're as prepared as you can be.",
+      "That's everything. Time to go book your DMV test.",
+      "Full prep done. Go show the DMV what you know.",
+      "Nothing left to do here. Go pass your test.",
+    ],
+  ];
+
+  const trainingNudgeVariants: string[] = [
+    "You've nailed the training. Try a practice test. It's the closest thing to the real exam.",
+    "Great training work. A practice test will show you how ready you really are.",
+    "Strong on training. The practice test is a different experience. Worth trying.",
+    "Ready to test yourself? Practice tests feel much more like the real thing.",
+    "Training builds knowledge. Practice tests build confidence. Give one a go.",
+  ];
+
+  const [heroVariantIndex] = useState(() => Math.floor(Math.random() * 5));
 
   // Paywall state
   const [paywallOpen, setPaywallOpen] = useState(false);
@@ -321,6 +402,23 @@ function DashboardContent() {
   const totalSteps = 8;
   const allComplete = completedSteps === totalSteps;
 
+  // Training-heavy nudge: 2+ training sets done, no completed tests, <10 test questions answered
+  const trainingSetsCompleted = hydrated ? [1, 2, 3, 4].filter(trainingSetComplete).length : 0;
+  const anyTestCompleted = hydrated ? [1, 2, 3, 4].some((id) => !!getTestAttemptStats(id)) : false;
+  const totalTestQuestionsAnswered = hydrated
+    ? [1, 2, 3, 4].reduce((sum, id) => {
+        if (getTestAttemptStats(id)) return sum + 50;
+        const current = getCurrentTest(id);
+        return sum + (current ? Object.keys(current.answers).length : 0);
+      }, 0)
+    : 0;
+  const isTrainingHeavy =
+    hydrated && trainingSetsCompleted >= 2 && !anyTestCompleted && totalTestQuestionsAnswered < 10;
+
+  const heroSub = isTrainingHeavy
+    ? trainingNudgeVariants[heroVariantIndex]
+    : (heroSubVariants[completedSteps] ?? heroSubVariants[0])[heroVariantIndex];
+
   // Get tiger face image based on completion
   const getTigerFace = (complete: number, total: number): string => {
     const pct = Math.round((complete / total) * 100);
@@ -405,7 +503,7 @@ function DashboardContent() {
                 {t(`dashboard.heroTitle${completedSteps}`)}
               </h1>
               <p className="text-xs text-gray-500 mt-0.5">
-                {t(`dashboard.heroSub${completedSteps}`)}
+                {heroSub}
               </p>
             </div>
             <div className="flex-shrink-0 text-right">
@@ -438,7 +536,7 @@ function DashboardContent() {
             } else if (testCompleted && bestPct !== null) {
               testSubtitle = `${t("dashboard.bestScore")}: ${bestPct}%`;
             } else if (bestPct !== null) {
-              testSubtitle = `${t("dashboard.bestScore")}: ${bestPct}% — ${t("dashboard.need80")}`;
+              testSubtitle = `${t("dashboard.bestScore")}: ${bestPct}%. ${t("dashboard.need80")}`;
             }
 
             let testStamp: { label: string; color: "green" | "amber" | "red" } | undefined;

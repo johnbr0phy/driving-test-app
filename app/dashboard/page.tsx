@@ -447,18 +447,13 @@ function DashboardContent() {
 
             return (
               <div key={id}>
-                {/* Section label */}
-                <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide px-1 mb-1.5 mt-4 first:mt-0">
-                  {t("dashboard.training")} {id}
-                </p>
-
                 {/* Training card */}
                 <ProgressCard
                   key={`training-${id}`}
                   title={t(`trainingSets.${id}`)}
                   subtitle={`${trainingLocked ? 0 : trainingProgress.correct}/${trainingProgress.total}`}
                   completed={trainingComplete}
-                  stepNumber={undefined}
+                  stepNumber={(id - 1) * 2 + 1}
                   stamp={
                     trainingComplete
                       ? { label: t("dashboard.stampComplete"), color: "green" as const }
@@ -482,7 +477,7 @@ function DashboardContent() {
                     title={`🎯 ${t(`practiceTests.${id}`)}`}
                     subtitle={testSubtitle}
                     completed={testCompleted}
-                    stepNumber={undefined}
+                    stepNumber={(id - 1) * 2 + 2}
                     stamp={testStamp}
                     isPremiumLocked={testLocked}
                     href={testLocked ? undefined : `/test/${id}`}

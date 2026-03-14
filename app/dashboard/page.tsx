@@ -59,21 +59,24 @@ function ProgressCard({
     }`}>
       <CardContent className="p-4 flex items-center gap-3">
         {/* Completion indicator */}
-        <div className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center ${
-          completed
-            ? "bg-green-500 text-white"
-            : isPremiumLocked
-              ? "bg-gray-100 text-gray-300"
+        <div className="flex-shrink-0 relative w-8 h-8">
+          <div className={`w-8 h-8 rounded-full flex items-center justify-center ${
+            completed
+              ? "bg-green-500 text-white"
               : "bg-gray-100 text-gray-300"
-        }`}>
-          {completed ? (
-            <Check className="w-4 h-4" strokeWidth={3} />
-          ) : isPremiumLocked ? (
-            <Lock className="w-3.5 h-3.5" />
-          ) : stepNumber ? (
-            <span className="text-xs font-bold text-gray-400">{stepNumber}</span>
-          ) : (
-            <div className="w-2 h-2 rounded-full bg-gray-300" />
+          }`}>
+            {completed ? (
+              <Check className="w-4 h-4" strokeWidth={3} />
+            ) : stepNumber ? (
+              <span className="text-xs font-bold text-gray-400">{stepNumber}</span>
+            ) : (
+              <div className="w-2 h-2 rounded-full bg-gray-300" />
+            )}
+          </div>
+          {isPremiumLocked && (
+            <div className="absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-brand flex items-center justify-center">
+              <Lock className="w-2.5 h-2.5 text-white" />
+            </div>
           )}
         </div>
 

@@ -163,14 +163,14 @@ function DashboardContent() {
     [ // 0 complete
       "...and you'll be ready to ace your DMV test.",
       "Each step gets you closer to passing first time.",
-      "Work through them in any order — every one counts.",
+      "Work through them in any order. Every one counts.",
       "Start anywhere. Finish everything. Pass your test.",
       "The steps are here. Your DMV test is waiting.",
     ],
     [ // 1 complete
       "Keep going. Each step builds real knowledge.",
       "One down. Pick your next module and keep the momentum.",
-      "You've started — that's the hardest part. Keep it going.",
+      "You've started. That's the hardest part. Keep it going.",
       "7 more and you'll be test-ready.",
       "Nice work. Head back and pick another.",
     ],
@@ -186,12 +186,12 @@ function DashboardContent() {
       "You're nearly at the halfway mark. Keep going.",
       "Three done. You're getting genuinely prepared.",
       "Almost halfway. Each step builds real confidence.",
-      "You're doing great — keep it up.",
+      "You're doing great. Keep it up.",
     ],
     [ // 4 complete
       "4 of 8 complete. You're building serious knowledge.",
       "Halfway done. The second half goes faster.",
-      "Four complete. You're in good shape — keep pushing.",
+      "Four complete. You're in good shape. Keep pushing.",
       "You know more than most people walking into the DMV.",
       "4 down, 4 to go. You've got this.",
     ],
@@ -226,9 +226,9 @@ function DashboardContent() {
   ];
 
   const trainingNudgeVariants: string[] = [
-    "You've nailed the training. Try a practice test — it's the closest thing to the real exam.",
+    "You've nailed the training. Try a practice test. It's the closest thing to the real exam.",
     "Great training work. A practice test will show you how ready you really are.",
-    "Strong on training. The practice test is a different experience — worth trying.",
+    "Strong on training. The practice test is a different experience. Worth trying.",
     "Ready to test yourself? Practice tests feel much more like the real thing.",
     "Training builds knowledge. Practice tests build confidence. Give one a go.",
   ];
@@ -536,7 +536,7 @@ function DashboardContent() {
             } else if (testCompleted && bestPct !== null) {
               testSubtitle = `${t("dashboard.bestScore")}: ${bestPct}%`;
             } else if (bestPct !== null) {
-              testSubtitle = `${t("dashboard.bestScore")}: ${bestPct}% — ${t("dashboard.need80")}`;
+              testSubtitle = `${t("dashboard.bestScore")}: ${bestPct}%. ${t("dashboard.need80")}`;
             }
 
             let testStamp: { label: string; color: "green" | "amber" | "red" } | undefined;

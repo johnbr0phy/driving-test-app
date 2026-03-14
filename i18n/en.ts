@@ -102,7 +102,7 @@ export const en = {
   dashboard: {
     training: "Training (Easy)",
     trainingSubtitle: "Get all 50 questions correct to complete each set",
-    practiceTests: "Practice Tests (Hard - but worth doing)",
+    practiceTests: "Practice Tests (Hard)",
     simulateExam: "Simulate the real exam experience",
     completeOnboarding: "Complete onboarding to unlock",
     welcomePremium: "Welcome to Premium!",

@@ -436,7 +436,7 @@ function DashboardContent() {
 
             let testStamp: { label: string; color: "green" | "amber" | "red" } | undefined;
             if (!testLocked) {
-              if (inProgress && bestRaw === null) {
+              if (inProgress) {
                 testStamp = { label: "Keep going", color: "amber" };
               } else if (bestRaw !== null) {
                 if (bestRaw === 50) {

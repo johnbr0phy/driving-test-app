@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import {
   Dialog,
   DialogContent,
@@ -9,7 +10,7 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
-import { CheckCircle, Star } from "lucide-react";
+import { CheckCircle, Star, Package } from "lucide-react";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { en, es } from "@/i18n";
 import Image from "next/image";
@@ -130,6 +131,20 @@ export function PaywallModal({
             >
               {t("paywall.illTakeMyChances")}
             </button>
+          </div>
+        )}
+
+        {/* Bundle upsell nudge */}
+        {!isGuest && (
+          <div className="mt-3 pt-3 border-t border-gray-100 text-center">
+            <Link
+              href="/pass-pack"
+              onClick={() => onOpenChange(false)}
+              className="inline-flex items-center gap-1.5 text-xs text-gray-500 hover:text-brand transition-colors"
+            >
+              <Package className="h-3.5 w-3.5" />
+              Want more? Pass Pack adds road signs guide + support — $14.99
+            </Link>
           </div>
         )}
 

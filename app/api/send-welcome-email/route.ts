@@ -86,11 +86,24 @@ export async function POST(request: NextRequest) {
     }
 
     const db = getAdminDb();
-    const userDoc = await db.collection("users").doc(userId).get();
-    const userData = userDoc.data();
+    const userRef = db.collection("users").doc(userId);
 
-    // Don't send duplicate welcome emails
-    if (userData?.emailsSent?.includes("welcome")) {
+    // Atomic check-and-set to prevent race conditions
+    let alreadySent = false;
+    await db.runTransaction(async (tx) => {
+      const doc = await tx.get(userRef);
+      const data = doc.data();
+      if (data?.emailsSent?.includes("welcome")) {
+        alreadySent = true;
+        return;
+      }
+      tx.set(userRef, {
+        lastEmailSent: new Date().toISOString(),
+        emailsSent: FieldValue.arrayUnion("welcome"),
+      }, { merge: true });
+    });
+
+    if (alreadySent) {
       return NextResponse.json({ success: false, reason: "already_sent" });
     }
 
@@ -107,15 +120,6 @@ export async function POST(request: NextRequest) {
       subject: "Welcome to TigerTest",
       html,
     });
-
-    // Mark as sent
-    await db.collection("users").doc(userId).set(
-      {
-        lastEmailSent: new Date().toISOString(),
-        emailsSent: FieldValue.arrayUnion("welcome"),
-      },
-      { merge: true }
-    );
 
     return NextResponse.json({ success: true });
   } catch (error: any) {

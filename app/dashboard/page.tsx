@@ -53,9 +53,7 @@ function ProgressCard({
     <Card className={`transition-all ${
       completed
         ? "bg-gradient-to-r from-green-50 to-emerald-50 border-green-200 shadow-sm"
-        : isPremiumLocked
-          ? "bg-white border-gray-100 hover:shadow-md hover:border-brand-border cursor-pointer"
-          : "bg-white border-gray-100 hover:shadow-md cursor-pointer"
+        : "bg-white border-gray-100 hover:shadow-md cursor-pointer"
     }`}>
       <CardContent className="p-4 flex items-center gap-3">
         {/* Completion indicator */}

@@ -378,8 +378,8 @@ function TrainingPageContent() {
             </Button>
           </Link>
           {!isGuest && (
-            <Link href="/stats" className="text-sm font-medium text-brand hover:text-brand-dark transition-colors">
-              {t("trainingPage.viewStats")}
+            <Link href="/stats?tab=community" className="text-sm font-medium text-brand hover:text-brand-dark transition-colors">
+              Testing soon? &rsaquo;
             </Link>
           )}
         </div>

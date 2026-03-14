@@ -9,6 +9,7 @@ import {
   onAuthStateChanged,
   GoogleAuthProvider,
   signInWithPopup,
+  getAdditionalUserInfo,
   sendPasswordResetEmail,
   sendEmailVerification,
 } from "firebase/auth";
@@ -161,7 +162,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     const provider = new GoogleAuthProvider();
     const result = await signInWithPopup(auth, provider);
     // Send welcome email for new Google signups only
-    if (result.user && result.additionalUserInfo?.isNewUser) {
+    const additionalInfo = getAdditionalUserInfo(result);
+    if (result.user && additionalInfo?.isNewUser) {
       sendWelcomeEmail(result.user.uid, result.user.email!, result.user.displayName, true);
     }
   };

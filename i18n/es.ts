@@ -100,9 +100,9 @@ export const es: TranslationKeys = {
 
   // Dashboard
   dashboard: {
-    training: "Entrenamiento",
+    training: "Entrenamiento (Fácil)",
     trainingSubtitle: "Responde correctamente las 50 preguntas para completar cada conjunto",
-    practiceTests: "Exámenes de práctica",
+    practiceTests: "Exámenes de práctica (Difícil - pero vale la pena)",
     simulateExam: "Simula la experiencia del examen real",
     completeOnboarding: "Completa la introducción para desbloquear",
     welcomePremium: "¡Bienvenido a Premium!",

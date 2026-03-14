@@ -62,11 +62,15 @@ function ProgressCard({
         }`}>
           {completed ? (
             <>
-              <Check className="w-3.5 h-3.5" strokeWidth={3} />
-              {stepNumber && (
-                <span className="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-white border border-green-200 flex items-center justify-center text-[9px] font-bold text-green-700 leading-none">
-                  {stepNumber}
-                </span>
+              {stepNumber ? (
+                <>
+                  <span className="text-xs font-bold text-white">{stepNumber}</span>
+                  <span className="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-white border border-green-200 flex items-center justify-center leading-none">
+                    <Check className="w-2.5 h-2.5 text-green-700" strokeWidth={3} />
+                  </span>
+                </>
+              ) : (
+                <Check className="w-3.5 h-3.5" strokeWidth={3} />
               )}
             </>
           ) : stepNumber ? (

@@ -365,7 +365,7 @@ function DashboardContent() {
         )}
 
         {/* Sign-up prompt for guests */}
-        {onboardingComplete && isGuest && (
+        {isGuest && (
           <Card className="mb-4 bg-gradient-to-r from-brand-light to-brand-gradient-to border-brand-border-light">
             <CardContent className="p-4">
               <div className="flex items-center gap-3">
@@ -409,30 +409,8 @@ function DashboardContent() {
           <ProgressBar value={completedSteps} max={totalSteps} hideLabel />
         </div>
 
-        {/* Getting Started — inline CTA when not yet complete */}
-        {!onboardingComplete && (
-          <Link href="/training" className="block mb-6">
-            <Card className="bg-gradient-to-r from-brand-light to-brand-gradient-to border-brand-border-light hover:shadow-md transition-all">
-              <CardContent className="p-4">
-                <div className="flex items-center gap-3">
-                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-brand/10 flex items-center justify-center">
-                    <Zap className="w-4 h-4 text-brand" />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="font-semibold text-sm text-brand-darker">{t("dashboard.gettingStarted")}</h3>
-                    <p className="text-xs text-brand-dark mt-0.5">{t("dashboard.gettingStartedDesc")}</p>
-                    <ProgressBar value={Math.min(10, onboardingProgress)} max={10} />
-                  </div>
-                  <ChevronRight className="h-5 w-5 text-brand-muted" />
-                </div>
-              </CardContent>
-            </Card>
-          </Link>
-        )}
-
         {/* Training & Tests — side by side on desktop */}
-        {onboardingComplete && (
-          <div className="mb-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div className="mb-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
 
           {/* Training Sets */}
           <div>
@@ -444,6 +422,7 @@ function DashboardContent() {
                 const progress = hydrated ? getTrainingSetProgress(id) : { correct: 0, total: 50, complete: false };
                 const completed = progress.complete;
                 const isPremiumLocked = id === 4 && !isPremium;
+                const isStartHere = id === 1 && !completed && progress.correct === 0;
 
                 return (
                   <ProgressCard
@@ -452,7 +431,13 @@ function DashboardContent() {
                     subtitle={`${isPremiumLocked ? 0 : progress.correct}/${progress.total}`}
                     completed={completed}
                     stepNumber={id}
-                    stamp={completed ? { label: t("dashboard.stampComplete"), color: "green" as const } : undefined}
+                    stamp={
+                      completed
+                        ? { label: t("dashboard.stampComplete"), color: "green" as const }
+                        : isStartHere
+                          ? { label: "Start here", color: "amber" as const }
+                          : undefined
+                    }
                     isPremiumLocked={isPremiumLocked}
                     href={isPremiumLocked ? undefined : `/training?set=${id}`}
                     onClick={isPremiumLocked ? () => handlePremiumClick("training_set_4") : undefined}
@@ -531,11 +516,10 @@ function DashboardContent() {
             </div>
           </div>
 
-          </div>
-        )}
+        </div>
 
         {/* Bottom banner — urgency upsell for free users, thank-you for premium */}
-        {onboardingComplete && !isGuest && !isPremium && (
+        {!isGuest && !isPremium && (
           <div className="rounded-xl bg-white border border-gray-100 px-5 py-4">
             <p className="text-sm font-semibold text-gray-900">
               {t("dashboard.urgencyTitle")}
@@ -560,7 +544,7 @@ function DashboardContent() {
           </div>
         )}
 
-        {onboardingComplete && isPremium && (
+        {isPremium && (
           <div className="rounded-xl bg-white border border-gray-100 px-5 py-4">
             <div className="flex items-center gap-3 mb-3">
               <Image

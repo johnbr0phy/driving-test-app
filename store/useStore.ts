@@ -345,9 +345,6 @@ export const useStore = create<AppState>()(
       },
 
       isTestUnlocked: (testId: number) => {
-        // All tests require onboarding completion (10 correct training answers)
-        // or prior app usage (backwards compatibility)
-        if (!get().isOnboardingComplete()) return false;
         // CDL tests (101+) are all free - no premium gate
         if (testId >= 101) return true;
         // DMV Test 4 requires premium
@@ -479,30 +476,8 @@ export const useStore = create<AppState>()(
         get().saveToFirestore();
       },
 
-      // Onboarding check - returns true if user has completed onboarding
-      // (10+ correct training answers OR any existing app usage for backwards compatibility)
-      isOnboardingComplete: () => {
-        const { training, completedTests, testAttempts, selectedState } = get();
-
-        // If user has 10+ correct training answers, onboarding is complete
-        if (training.totalCorrectAllTime >= 10) {
-          return true;
-        }
-
-        // Backwards compatibility: if user has any test history, they're onboarded
-        const hasCompletedTests = completedTests.some((t) => t.state === selectedState);
-        if (hasCompletedTests) {
-          return true;
-        }
-
-        // Backwards compatibility: if user has any test attempt stats, they're onboarded
-        const hasTestAttempts = testAttempts.some((a) => a.state === selectedState);
-        if (hasTestAttempts) {
-          return true;
-        }
-
-        return false;
-      },
+      // Onboarding is always complete — full dashboard shown from day 1
+      isOnboardingComplete: () => true,
 
       getProgress: () => {
         const { completedTests, testAttempts, selectedState } = get();
@@ -897,8 +872,6 @@ export const useStore = create<AppState>()(
 
       // Check if a training set is unlocked
       isTrainingSetUnlocked: (setId: number) => {
-        // All training sets require onboarding completion
-        if (!get().isOnboardingComplete()) return false;
         // CDL sets (101+) are all free
         if (setId >= 101) return true;
         // DMV Set 4 requires premium

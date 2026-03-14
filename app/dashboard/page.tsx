@@ -424,14 +424,14 @@ function DashboardContent() {
             const testLocked = id >= 3 && !isPremium;
 
             let testSubtitle = t("testCard.fiftyQuestions");
-            if (testCompleted && bestPct !== null) {
-              testSubtitle = `${t("dashboard.bestScore")}: ${bestPct}%`;
-            } else if (bestPct !== null) {
-              testSubtitle = `${t("dashboard.bestScore")}: ${bestPct}% — ${t("dashboard.need80")}`;
-            } else if (inProgress) {
+            if (inProgress) {
               const currentTest = getCurrentTest(id);
               const answeredCount = currentTest ? Object.keys(currentTest.answers).length : 0;
               testSubtitle = `${answeredCount}/50 ${t("testCard.answered")}`;
+            } else if (testCompleted && bestPct !== null) {
+              testSubtitle = `${t("dashboard.bestScore")}: ${bestPct}%`;
+            } else if (bestPct !== null) {
+              testSubtitle = `${t("dashboard.bestScore")}: ${bestPct}% — ${t("dashboard.need80")}`;
             }
 
             let testStamp: { label: string; color: "green" | "amber" | "red" } | undefined;
@@ -489,7 +489,7 @@ function DashboardContent() {
                     href={testLocked ? undefined : `/test/${id}`}
                     onClick={testLocked ? () => handlePremiumClick("practice_test_4") : undefined}
                   >
-                    {!testCompleted && bestPct !== null && !testLocked && (
+                    {!testCompleted && !inProgress && bestPct !== null && !testLocked && (
                       <div className="mt-1.5 flex items-center gap-2">
                         <div className="flex-1 h-1.5 bg-gray-100 rounded-full overflow-hidden">
                           <div

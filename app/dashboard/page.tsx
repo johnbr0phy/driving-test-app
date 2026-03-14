@@ -409,97 +409,86 @@ function DashboardContent() {
           <ProgressBar value={completedSteps} max={totalSteps} hideLabel />
         </div>
 
-        {/* Training & Tests — side by side on desktop */}
-        <div className="mb-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
+        {/* Interleaved Training + Tests */}
+        <div className="mb-6 space-y-2">
+          {[1, 2, 3, 4].map((id) => {
+            const trainingProgress = hydrated ? getTrainingSetProgress(id) : { correct: 0, total: 50, complete: false };
+            const trainingComplete = trainingProgress.complete;
+            const trainingLocked = id === 4 && !isPremium;
+            const isStartHere = id === 1 && !trainingComplete && trainingProgress.correct === 0;
 
-          {/* Training Sets */}
-          <div>
-            <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-3 px-1">
-              {t("dashboard.training")}
-            </h2>
-            <div className="space-y-2">
-              {[1, 2, 3, 4].map((id) => {
-                const progress = hydrated ? getTrainingSetProgress(id) : { correct: 0, total: 50, complete: false };
-                const completed = progress.complete;
-                const isPremiumLocked = id === 4 && !isPremium;
-                const isStartHere = id === 1 && !completed && progress.correct === 0;
+            const testCompleted = testComplete(id);
+            const bestPct = getTestBestPercent(id);
+            const bestRaw = hydrated ? getTestAttemptStats(id)?.bestScore ?? null : null;
+            const inProgress = isTestInProgress(id);
+            const testLocked = id === 4 && !isPremium;
 
-                return (
-                  <ProgressCard
-                    key={`training-${id}`}
-                    title={t(`trainingSets.${id}`)}
-                    subtitle={`${isPremiumLocked ? 0 : progress.correct}/${progress.total}`}
-                    completed={completed}
-                    stepNumber={id}
-                    stamp={
-                      completed
-                        ? { label: t("dashboard.stampComplete"), color: "green" as const }
-                        : isStartHere
-                          ? { label: "Start here", color: "amber" as const }
-                          : undefined
-                    }
-                    isPremiumLocked={isPremiumLocked}
-                    href={isPremiumLocked ? undefined : `/training?set=${id}`}
-                    onClick={isPremiumLocked ? () => handlePremiumClick("training_set_4") : undefined}
-                  >
-                    {!completed && !isPremiumLocked && progress.correct > 0 && (
-                      <ProgressBar value={progress.correct} max={progress.total} />
-                    )}
-                  </ProgressCard>
-                );
-              })}
-            </div>
-          </div>
+            let testSubtitle = t("testCard.fiftyQuestions");
+            if (testCompleted && bestPct !== null) {
+              testSubtitle = `${t("dashboard.bestScore")}: ${bestPct}%`;
+            } else if (bestPct !== null) {
+              testSubtitle = `${t("dashboard.bestScore")}: ${bestPct}% — ${t("dashboard.need80")}`;
+            } else if (inProgress) {
+              const currentTest = getCurrentTest(id);
+              const answeredCount = currentTest ? Object.keys(currentTest.answers).length : 0;
+              testSubtitle = `${answeredCount}/50 ${t("testCard.answered")}`;
+            }
 
-          {/* Practice Tests */}
-          <div>
-            <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-3 px-1">
-              {t("dashboard.practiceTests")}
-            </h2>
-            <div className="space-y-2">
-              {[1, 2, 3, 4].map((testNumber) => {
-                const completed = testComplete(testNumber);
-                const bestPct = getTestBestPercent(testNumber);
-                const bestRaw = hydrated ? getTestAttemptStats(testNumber)?.bestScore ?? null : null;
-                const inProgress = isTestInProgress(testNumber);
-                const isPremiumLocked = testNumber === 4 && !isPremium;
+            let testStamp: { label: string; color: "green" | "amber" | "red" } | undefined;
+            if (!testLocked && bestRaw !== null) {
+              if (bestRaw === 50) {
+                testStamp = { label: t("dashboard.stampMastered"), color: "green" };
+              } else if (bestRaw >= 40) {
+                testStamp = { label: t("dashboard.stampPassed"), color: "green" };
+              } else {
+                testStamp = { label: t("dashboard.stampKeepGoing"), color: "amber" };
+              }
+            }
 
-                let subtitle = t("testCard.fiftyQuestions");
-                if (completed && bestPct !== null) {
-                  subtitle = `${t("dashboard.bestScore")}: ${bestPct}%`;
-                } else if (bestPct !== null) {
-                  subtitle = `${t("dashboard.bestScore")}: ${bestPct}% — ${t("dashboard.need80")}`;
-                } else if (inProgress) {
-                  const currentTest = getCurrentTest(testNumber);
-                  const answeredCount = currentTest ? Object.keys(currentTest.answers).length : 0;
-                  subtitle = `${answeredCount}/50 ${t("testCard.answered")}`;
-                }
+            return (
+              <div key={id}>
+                {/* Section label */}
+                <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide px-1 mb-1.5 mt-4 first:mt-0">
+                  {t("dashboard.training")} {id}
+                </p>
 
-                // Test stamp: MASTERED (50/50), PASSED (80%+), KEEP GOING (<80% with attempts)
-                let testStamp: { label: string; color: "green" | "amber" | "red" } | undefined;
-                if (!isPremiumLocked && bestRaw !== null) {
-                  if (bestRaw === 50) {
-                    testStamp = { label: t("dashboard.stampMastered"), color: "green" };
-                  } else if (bestRaw >= 40) {
-                    testStamp = { label: t("dashboard.stampPassed"), color: "green" };
-                  } else {
-                    testStamp = { label: t("dashboard.stampKeepGoing"), color: "amber" };
+                {/* Training card */}
+                <ProgressCard
+                  key={`training-${id}`}
+                  title={t(`trainingSets.${id}`)}
+                  subtitle={`${trainingLocked ? 0 : trainingProgress.correct}/${trainingProgress.total}`}
+                  completed={trainingComplete}
+                  stepNumber={undefined}
+                  stamp={
+                    trainingComplete
+                      ? { label: t("dashboard.stampComplete"), color: "green" as const }
+                      : isStartHere
+                        ? { label: "Start here", color: "amber" as const }
+                        : undefined
                   }
-                }
+                  isPremiumLocked={trainingLocked}
+                  href={trainingLocked ? undefined : `/training?set=${id}`}
+                  onClick={trainingLocked ? () => handlePremiumClick("training_set_4") : undefined}
+                >
+                  {!trainingComplete && !trainingLocked && trainingProgress.correct > 0 && (
+                    <ProgressBar value={trainingProgress.correct} max={trainingProgress.total} />
+                  )}
+                </ProgressCard>
 
-                return (
+                {/* Practice test card */}
+                <div className="mt-1.5">
                   <ProgressCard
-                    key={`test-${testNumber}`}
-                    title={t(`practiceTests.${testNumber}`)}
-                    subtitle={subtitle}
-                    completed={completed}
-                    stepNumber={testNumber + 4}
+                    key={`test-${id}`}
+                    title={`🎯 ${t(`practiceTests.${id}`)}`}
+                    subtitle={testSubtitle}
+                    completed={testCompleted}
+                    stepNumber={undefined}
                     stamp={testStamp}
-                    isPremiumLocked={isPremiumLocked}
-                    href={isPremiumLocked ? undefined : `/test/${testNumber}`}
-                    onClick={isPremiumLocked ? () => handlePremiumClick("practice_test_4") : undefined}
+                    isPremiumLocked={testLocked}
+                    href={testLocked ? undefined : `/test/${id}`}
+                    onClick={testLocked ? () => handlePremiumClick("practice_test_4") : undefined}
                   >
-                    {!completed && bestPct !== null && !isPremiumLocked && (
+                    {!testCompleted && bestPct !== null && !testLocked && (
                       <div className="mt-1.5 flex items-center gap-2">
                         <div className="flex-1 h-1.5 bg-gray-100 rounded-full overflow-hidden">
                           <div
@@ -511,11 +500,10 @@ function DashboardContent() {
                       </div>
                     )}
                   </ProgressCard>
-                );
-              })}
-            </div>
-          </div>
-
+                </div>
+              </div>
+            );
+          })}
         </div>
 
         {/* Bottom banner — urgency upsell for free users, thank-you for premium */}

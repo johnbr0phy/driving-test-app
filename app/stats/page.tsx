@@ -10,7 +10,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useStore } from "@/store/useStore";
 import { useHydration } from "@/hooks/useHydration";
-import { trackBeginCheckout, trackViewItem } from "@/lib/analytics";
+import { trackBeginCheckout, trackPaywallDismissed, trackPaywallHit, trackViewItem } from "@/lib/analytics";
 import { useAuth } from "@/contexts/AuthContext";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { auth } from "@/lib/firebase";
@@ -229,7 +229,11 @@ function StatsContent() {
         {/* Paywall Modal */}
         <PaywallModal
           open={paywallOpen}
-          onOpenChange={setPaywallOpen}
+          onOpenChange={(open) => {
+            if (open) trackPaywallHit("full_stats", "Full Stats", "stats_page");
+            if (!open && paywallOpen) trackPaywallDismissed("stats_page");
+            setPaywallOpen(open);
+          }}
           feature="full_stats"
           onUpgrade={handleUpgrade}
           isGuest={isGuest}
@@ -274,7 +278,7 @@ function StatsContent() {
         {activeTab === "community" && (
           <CommunityWrongQuestions
             isPremium={isPremium}
-            onUpgradeClick={() => { trackViewItem("stats_page"); setPaywallOpen(true); }}
+            onUpgradeClick={() => { trackPaywallHit("community_wrong_questions", "Community Wrong Questions", "stats_page"); trackViewItem("stats_page"); setPaywallOpen(true); }}
           />
         )}
 
@@ -465,7 +469,7 @@ function StatsContent() {
                     {t("stats.unlockPremiumStats")}
                   </p>
                   <button
-                    onClick={() => { trackViewItem("stats_page"); setPaywallOpen(true); }}
+                    onClick={() => { trackPaywallHit("stats_question_list", "Stats Question List", "stats_page"); trackViewItem("stats_page"); setPaywallOpen(true); }}
                     className="inline-flex items-center px-4 py-2 bg-brand text-white text-sm font-medium rounded-full hover:bg-brand-hover transition-colors"
                   >
                     Unlock Premium — $9.99
@@ -741,7 +745,7 @@ function StatsContent() {
                       {t("stats.unlockPremiumStats")}
                     </p>
                     <button
-                      onClick={() => { trackViewItem("stats_page"); setPaywallOpen(true); }}
+                      onClick={() => { trackPaywallHit("stats_question_list", "Stats Question List", "stats_page"); trackViewItem("stats_page"); setPaywallOpen(true); }}
                       className="inline-flex items-center px-4 py-2 bg-brand text-white text-sm font-medium rounded-full hover:bg-brand-hover transition-colors"
                     >
                       Unlock Premium — $9.99

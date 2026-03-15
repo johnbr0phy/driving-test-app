@@ -13,7 +13,7 @@ import { useAuth } from "@/contexts/AuthContext";
 import { auth } from "@/lib/firebase";
 import { states } from "@/data/states";
 import { useTranslation } from "@/contexts/LanguageContext";
-import { trackBeginCheckout, trackPurchase, trackViewItem } from "@/lib/analytics";
+import { trackBeginCheckout, trackPaywallDismissed, trackPaywallHit, trackPurchase, trackViewItem } from "@/lib/analytics";
 
 function Stamp({ label, color }: { label: string; color: "green" | "amber" | "red" }) {
   const colors = {
@@ -315,8 +315,9 @@ function DashboardContent() {
   }, [searchParams, user?.uid, setPremiumStatus, router]);
 
   // Handle paywall click
-  const handlePremiumClick = (feature: "training_set_4" | "practice_test_4") => {
+  const handlePremiumClick = (feature: "training_set_4" | "practice_test_4", cardId: string, cardLabel: string) => {
     trackViewItem(feature);
+    trackPaywallHit(cardId, cardLabel);
     setPaywallFeature(feature);
     setPaywallOpen(true);
   };
@@ -437,7 +438,10 @@ function DashboardContent() {
         {/* Paywall Modal */}
         <PaywallModal
           open={paywallOpen}
-          onOpenChange={setPaywallOpen}
+          onOpenChange={(open) => {
+            if (!open && paywallOpen) trackPaywallDismissed();
+            setPaywallOpen(open);
+          }}
           feature={paywallFeature}
           onUpgrade={handleUpgrade}
           isGuest={isGuest}
@@ -574,7 +578,7 @@ function DashboardContent() {
                   }
                   isPremiumLocked={trainingLocked}
                   href={trainingLocked ? undefined : `/training?set=${id}`}
-                  onClick={trainingLocked ? () => handlePremiumClick("training_set_4") : undefined}
+                  onClick={trainingLocked ? () => handlePremiumClick("training_set_4", `set_${id}`, `Training Set ${id}`) : undefined}
                 >
                   {!trainingComplete && !trainingLocked && trainingProgress.correct > 0 && (
                     <ProgressBar value={trainingProgress.correct} max={trainingProgress.total} />
@@ -592,7 +596,7 @@ function DashboardContent() {
                     stamp={testStamp}
                     isPremiumLocked={testLocked}
                     href={testLocked ? undefined : `/test/${id}`}
-                    onClick={testLocked ? () => handlePremiumClick("practice_test_4") : undefined}
+                    onClick={testLocked ? () => handlePremiumClick("practice_test_4", `test_${id}`, `Practice Test ${id}`) : undefined}
                   >
                     {!testCompleted && !inProgress && bestPct !== null && !testLocked && (
                       <div className="mt-1.5 flex items-center gap-2">

@@ -30,6 +30,18 @@ export function trackBeginCheckout(location?: string) {
   });
 }
 
+export function trackPaywallHit(itemId: string, itemName: string, location = "dashboard") {
+  window.gtag?.("event", "paywall_hit", {
+    item_id: itemId,
+    item_name: itemName,
+    location,
+  });
+}
+
+export function trackPaywallDismissed(location = "dashboard") {
+  window.gtag?.("event", "paywall_dismissed", { location });
+}
+
 export function trackPurchase(transactionId: string) {
   window.gtag?.("event", "purchase", {
     transaction_id: transactionId,

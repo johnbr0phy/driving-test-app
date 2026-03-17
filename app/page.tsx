@@ -128,6 +128,16 @@ export default function Home() {
       <div className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28 text-center">
+          <div className="mb-6 flex justify-center">
+            <Image
+              src="/tiger_face_01.png"
+              alt="TigerTest tiger mascot"
+              width={120}
+              height={120}
+              className="w-[80px] h-[80px] md:w-[120px] md:h-[120px] drop-shadow-lg"
+              priority
+            />
+          </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 tracking-tight">
             <T k="landing.heroTitle">Free DMV Practice Tests for All 50 States</T>
           </h1>

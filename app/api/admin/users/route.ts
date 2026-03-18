@@ -151,17 +151,21 @@ export async function GET(request: NextRequest) {
       if (state) stateCounts[state] = (stateCounts[state] || 0) + 1;
       if ((data.subscription as Record<string, unknown>)?.isPremium === true) payingUsers++;
 
-      // Track signup dates for chart + count new signups
+      // Determine signup date: createdAt > earliest activeDates > lastUpdated
+      const activeDates = (data.activeDates as string[]) || [];
       const createdAt = data.createdAt as string | null;
-      if (createdAt) {
-        signupDates.push(createdAt.split('T')[0]);
-        if (new Date(createdAt) >= sevenDaysAgo) newUsers7d++;
+      const lastUpdated = (data.lastUpdated as string) || null;
+      const signupDate = createdAt?.split('T')[0]
+        || (activeDates.length > 0 ? [...activeDates].sort()[0] : null)
+        || lastUpdated?.split('T')[0]
+        || null;
+
+      if (signupDate) {
+        signupDates.push(signupDate);
+        if (new Date(signupDate) >= sevenDaysAgo) newUsers7d++;
       }
 
-      usersForDau.push({
-        activeDates: (data.activeDates as string[]) || [],
-        lastUpdated: (data.lastUpdated as string) || null,
-      });
+      usersForDau.push({ activeDates, lastUpdated });
     });
 
     // ── Build user list from top-100 full docs ─────────────────────────────

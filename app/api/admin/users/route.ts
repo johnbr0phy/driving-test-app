@@ -104,18 +104,28 @@ export async function GET(request: NextRequest) {
       return res;
     }
 
-    // ── Cache miss — two parallel Firestore queries ────────────────────────
+    // ── Cache miss — three parallel Firestore queries ───────────────────────
     //
-    // Query A: full docs of ALL users (for accurate stats + table)
-    //   — sorted by lastUpdated desc so the first 100 are the table rows
+    // Query A: field-masked scan of ALL users for accurate stats
+    //   — includes training/test fields for question counts
+    //   — excludes large fields not needed for aggregation
     //
-    // Query B: analytics/shares doc
+    // Query B: full docs for the 100 most recently active users (table)
+    //
+    // Query C: analytics/shares doc
     //
     const db = getAdminDb();
 
-    const [allUsersSnap, sharesDoc] = await Promise.all([
+    const [statsSnap, fullSnap, sharesDoc] = await Promise.all([
+      db.collection('users')
+        .select(
+          'selectedState', 'lastUpdated', 'activeDates', 'subscription',
+          'training', 'trainingSets', 'completedTests', 'currentTests'
+        )
+        .get(),
       db.collection('users')
         .orderBy('lastUpdated', 'desc')
+        .limit(100)
         .get(),
       db.doc('analytics/shares').get(),
     ]);
@@ -127,19 +137,8 @@ export async function GET(request: NextRequest) {
     let totalTestQuestions = 0;
     let totalTestsCompleted = 0;
     const usersForDau: { activeDates: string[]; lastUpdated: string | null }[] = [];
-    const users: {
-      uid: string;
-      email: string;
-      selectedState: string | null;
-      lastUpdated: string | null;
-      createdAt: string | null;
-      testsCompleted: number;
-      trainingQuestionsAnswered: number;
-      testQuestionsAnswered: number;
-      isPremium: boolean;
-    }[] = [];
 
-    allUsersSnap.docs.forEach((doc, index) => {
+    statsSnap.docs.forEach((doc) => {
       const data = doc.data() as Record<string, unknown>;
       const state = data.selectedState as string | null;
       if (state) stateCounts[state] = (stateCounts[state] || 0) + 1;
@@ -154,24 +153,26 @@ export async function GET(request: NextRequest) {
         activeDates: (data.activeDates as string[]) || [],
         lastUpdated: (data.lastUpdated as string) || null,
       });
-
-      // Only include the top 100 most recent users in the table
-      if (index < 100) {
-        users.push({
-          uid: doc.id,
-          email: (data.email as string) || '',
-          selectedState: state,
-          lastUpdated: (data.lastUpdated as string) || null,
-          createdAt: (data.createdAt as string) || null,
-          testsCompleted: userStats.testsCompleted,
-          trainingQuestionsAnswered: userStats.trainingQuestionsAnswered,
-          testQuestionsAnswered: userStats.testQuestionsAnswered,
-          isPremium: userStats.isPremium,
-        });
-      }
     });
 
-    const totalUsers = allUsersSnap.size;
+    // ── Build user list from top-100 full docs ─────────────────────────────
+    const users = fullSnap.docs.map(doc => {
+      const data = doc.data() as Record<string, unknown>;
+      const stats = processFullDoc(data);
+      return {
+        uid: doc.id,
+        email: (data.email as string) || '',
+        selectedState: (data.selectedState as string) || null,
+        lastUpdated: (data.lastUpdated as string) || null,
+        createdAt: (data.createdAt as string) || null,
+        testsCompleted: stats.testsCompleted,
+        trainingQuestionsAnswered: stats.trainingQuestionsAnswered,
+        testQuestionsAnswered: stats.testQuestionsAnswered,
+        isPremium: stats.isPremium,
+      };
+    });
+
+    const totalUsers = statsSnap.size;
     const dailyActiveUsers = calculateDailyActiveUsers(usersForDau);
 
     const last7Days = Array.from({ length: 7 }, (_, i) => {

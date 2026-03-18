@@ -8,7 +8,7 @@ import { db } from "@/lib/firebase";
 import { deleteDoc, doc } from "firebase/firestore";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { states } from "@/data/states";
-import { ArrowLeft, Users, RefreshCw, Trash2, HelpCircle, Activity, ClipboardCheck, Share2 } from "lucide-react";
+import { ArrowLeft, Users, RefreshCw, Trash2, UserPlus, Activity, TrendingUp, TrendingDown, Minus, Share2 } from "lucide-react";
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
 import Link from "next/link";
 import Image from "next/image";
@@ -30,12 +30,9 @@ interface Stats {
   totalUsers: number;
   usersWithState: number;
   byState: Record<string, number>;
-  totalQuestionsAnswered: number;
-  totalTrainingQuestions: number;
-  totalTestQuestions: number;
   activeUsers7d: number;
-  totalTestsCompleted: number;
-  avgQuestionsPerUser: number;
+  activeUsersPrev7d: number;
+  newUsers7d: number;
   payingUsers: number;
   totalShareClicks: number;
   shareClicksDaily: Record<string, number>;
@@ -51,6 +48,9 @@ export default function AdminPage() {
   const [error, setError] = useState<string | null>(null);
   const [deleting, setDeleting] = useState<string | null>(null);
   const [dailyActiveUsers, setDailyActiveUsers] = useState<{ date: string; count: number; displayDate: string }[]>([]);
+  const [dailyNewUsers, setDailyNewUsers] = useState<{ date: string; count: number; displayDate: string }[]>([]);
+  const [dailyCumulativeUsers, setDailyCumulativeUsers] = useState<{ date: string; count: number; displayDate: string }[]>([]);
+  const [graphMetric, setGraphMetric] = useState<'active' | 'newUsers' | 'cumulative'>('active');
 
   const fetchUsers = async (forceRefresh = false) => {
     setLoading(true);
@@ -77,10 +77,12 @@ export default function AdminPage() {
 
       const data = await response.json();
 
-      // API returns pre-computed stats, DAU chart data, and user list
+      // API returns pre-computed stats, chart data, and user list
       setUsers(data.users);
       setStats(data.stats);
       setDailyActiveUsers(data.dailyActiveUsers);
+      setDailyNewUsers(data.dailyNewUsers || []);
+      setDailyCumulativeUsers(data.dailyCumulativeUsers || []);
     } catch (err) {
       console.error("Error fetching users:", err);
       setError(err instanceof Error ? err.message : "Failed to load users");
@@ -108,22 +110,18 @@ export default function AdminPage() {
             delete newByState[deletedUser.selectedState];
           }
         }
-        const newTotalUsers = stats.totalUsers - 1;
-        const newTotalQuestions = stats.totalQuestionsAnswered - deletedUser.trainingQuestionsAnswered - deletedUser.testQuestionsAnswered;
         const sevenDaysAgo = new Date();
         sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
         const wasActive = deletedUser.lastUpdated && new Date(deletedUser.lastUpdated) >= sevenDaysAgo;
+        const wasNew = deletedUser.createdAt && new Date(deletedUser.createdAt) >= sevenDaysAgo;
 
         setStats({
-          totalUsers: newTotalUsers,
+          totalUsers: stats.totalUsers - 1,
           usersWithState: deletedUser.selectedState ? stats.usersWithState - 1 : stats.usersWithState,
           byState: newByState,
-          totalQuestionsAnswered: newTotalQuestions,
-          totalTrainingQuestions: stats.totalTrainingQuestions - deletedUser.trainingQuestionsAnswered,
-          totalTestQuestions: stats.totalTestQuestions - deletedUser.testQuestionsAnswered,
           activeUsers7d: wasActive ? stats.activeUsers7d - 1 : stats.activeUsers7d,
-          totalTestsCompleted: stats.totalTestsCompleted - deletedUser.testsCompleted,
-          avgQuestionsPerUser: newTotalUsers > 0 ? Math.round(newTotalQuestions / newTotalUsers) : 0,
+          activeUsersPrev7d: stats.activeUsersPrev7d,
+          newUsers7d: wasNew ? stats.newUsers7d - 1 : stats.newUsers7d,
           payingUsers: stats.payingUsers - (deletedUser.isPremium ? 1 : 0),
           totalShareClicks: stats.totalShareClicks,
           shareClicksDaily: stats.shareClicksDaily,
@@ -230,7 +228,7 @@ export default function AdminPage() {
                   <p className="text-2xl font-bold">{stats?.totalUsers || 0}</p>
                   <p className="text-sm text-gray-500">Total Users</p>
                   <p className="text-xs text-gray-400">
-                    {stats?.payingUsers || 0} paying · {stats?.avgQuestionsPerUser || 0} avg qs/user
+                    {stats?.payingUsers || 0} paying
                   </p>
                 </div>
               </div>
@@ -253,12 +251,12 @@ export default function AdminPage() {
           <Card>
             <CardContent className="p-6">
               <div className="flex items-center gap-4">
-                <HelpCircle className="h-8 w-8 text-purple-500" />
+                <UserPlus className="h-8 w-8 text-purple-500" />
                 <div>
-                  <p className="text-2xl font-bold">{(stats?.totalQuestionsAnswered || 0).toLocaleString()}</p>
-                  <p className="text-sm text-gray-500">Questions Answered</p>
+                  <p className="text-2xl font-bold">{stats?.newUsers7d || 0}</p>
+                  <p className="text-sm text-gray-500">New Users (7d)</p>
                   <p className="text-xs text-gray-400">
-                    {stats?.totalTrainingQuestions || 0} training · {stats?.totalTestQuestions || 0} tests
+                    {stats?.totalUsers ? ((stats.newUsers7d / stats.totalUsers) * 100).toFixed(1) : 0}% of total
                   </p>
                 </div>
               </div>
@@ -267,14 +265,29 @@ export default function AdminPage() {
           <Card>
             <CardContent className="p-6">
               <div className="flex items-center gap-4">
-                <ClipboardCheck className="h-8 w-8 text-blue-500" />
-                <div>
-                  <p className="text-2xl font-bold">{stats?.totalTestsCompleted || 0}</p>
-                  <p className="text-sm text-gray-500">Tests Completed</p>
-                  <p className="text-xs text-gray-400">
-                    {stats?.totalUsers ? (stats.totalTestsCompleted / stats.totalUsers).toFixed(1) : 0} avg/user
-                  </p>
-                </div>
+                {(() => {
+                  const prev = stats?.activeUsersPrev7d || 0;
+                  const curr = stats?.activeUsers7d || 0;
+                  const pct = prev > 0 ? Math.round(((curr - prev) / prev) * 100) : (curr > 0 ? 100 : 0);
+                  const isUp = pct > 0;
+                  const isDown = pct < 0;
+                  const Icon = isUp ? TrendingUp : isDown ? TrendingDown : Minus;
+                  const color = isUp ? 'text-green-500' : isDown ? 'text-red-500' : 'text-gray-400';
+                  return (
+                    <>
+                      <Icon className={`h-8 w-8 ${color}`} />
+                      <div>
+                        <p className={`text-2xl font-bold ${color}`}>
+                          {isUp ? '+' : ''}{pct}%
+                        </p>
+                        <p className="text-sm text-gray-500">7d Trend</p>
+                        <p className="text-xs text-gray-400">
+                          {prev} → {curr} active
+                        </p>
+                      </div>
+                    </>
+                  );
+                })()}
               </div>
             </CardContent>
           </Card>
@@ -298,16 +311,44 @@ export default function AdminPage() {
           </Card>
         </div>
 
-        {/* Active Users Graph */}
+        {/* Switchable Graph */}
         <Card className="mb-6">
           <CardHeader>
-            <CardTitle>Active Users (Last 30 Days)</CardTitle>
+            <div className="flex items-center justify-between">
+              <CardTitle>
+                {graphMetric === 'active' && 'Active Users'}
+                {graphMetric === 'newUsers' && 'New Signups'}
+                {graphMetric === 'cumulative' && 'Total Users'}
+                {' '}(Last 30 Days)
+              </CardTitle>
+              <div className="flex gap-1">
+                {([
+                  { key: 'active', label: 'Active' },
+                  { key: 'newUsers', label: 'Signups' },
+                  { key: 'cumulative', label: 'Total' },
+                ] as const).map(({ key, label }) => (
+                  <Button
+                    key={key}
+                    variant={graphMetric === key ? 'default' : 'outline'}
+                    size="sm"
+                    onClick={() => setGraphMetric(key)}
+                    className="text-xs"
+                  >
+                    {label}
+                  </Button>
+                ))}
+              </div>
+            </div>
           </CardHeader>
           <CardContent>
             <div className="h-64">
               <ResponsiveContainer width="100%" height="100%">
                 <AreaChart
-                  data={dailyActiveUsers}
+                  data={
+                    graphMetric === 'active' ? dailyActiveUsers :
+                    graphMetric === 'newUsers' ? dailyNewUsers :
+                    dailyCumulativeUsers
+                  }
                   margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
                 >
                   <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
@@ -332,14 +373,26 @@ export default function AdminPage() {
                       borderRadius: '8px',
                       boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
                     }}
-                    formatter={(value) => [value ?? 0, 'Active Users']}
+                    formatter={(value) => [value ?? 0,
+                      graphMetric === 'active' ? 'Active Users' :
+                      graphMetric === 'newUsers' ? 'New Signups' :
+                      'Total Users'
+                    ]}
                     labelFormatter={(label) => label}
                   />
                   <Area
                     type="monotone"
                     dataKey="count"
-                    stroke="#22c55e"
-                    fill="#22c55e"
+                    stroke={
+                      graphMetric === 'active' ? '#22c55e' :
+                      graphMetric === 'newUsers' ? '#a855f7' :
+                      '#f97316'
+                    }
+                    fill={
+                      graphMetric === 'active' ? '#22c55e' :
+                      graphMetric === 'newUsers' ? '#a855f7' :
+                      '#f97316'
+                    }
                     fillOpacity={0.2}
                     strokeWidth={2}
                   />

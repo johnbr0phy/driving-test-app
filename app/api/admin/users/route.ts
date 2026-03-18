@@ -107,8 +107,7 @@ export async function GET(request: NextRequest) {
     // ── Cache miss — three parallel Firestore queries ───────────────────────
     //
     // Query A: lightweight scan of ALL users for stats
-    //   — uses _stats counters (denormalized on save) for question/test counts
-    //   — falls back to processFullDoc for users without _stats
+    //   — only small fields: no training/test data
     //
     // Query B: full docs for the 100 most recently active users (table)
     //
@@ -118,9 +117,7 @@ export async function GET(request: NextRequest) {
 
     const [lightSnap, fullSnap, sharesDoc] = await Promise.all([
       db.collection('users')
-        .select(
-          'selectedState', 'lastUpdated', 'activeDates', 'subscription', '_stats'
-        )
+        .select('selectedState', 'lastUpdated', 'activeDates', 'subscription', 'createdAt')
         .get(),
       db.collection('users')
         .orderBy('lastUpdated', 'desc')
@@ -132,12 +129,21 @@ export async function GET(request: NextRequest) {
     // ── Aggregate stats from ALL users ─────────────────────────────────────
     const stateCounts: Record<string, number> = {};
     let payingUsers = 0;
-    let totalTrainingQuestions = 0;
-    let totalTestQuestions = 0;
-    let totalTestsCompleted = 0;
+    let newUsers7d = 0;
     const usersForDau: { activeDates: string[]; lastUpdated: string | null }[] = [];
-    // Track users missing _stats so we can compute from full docs
-    const usersNeedingFullStats = new Set<string>();
+    const signupDates: string[] = [];
+
+    const now = new Date();
+    const last7Days = Array.from({ length: 7 }, (_, i) => {
+      const d = new Date(now); d.setDate(d.getDate() - i);
+      return d.toISOString().split('T')[0];
+    });
+    const prev7Days = Array.from({ length: 7 }, (_, i) => {
+      const d = new Date(now); d.setDate(d.getDate() - 7 - i);
+      return d.toISOString().split('T')[0];
+    });
+    const sevenDaysAgo = new Date(now); sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
+    const fourteenDaysAgo = new Date(now); fourteenDaysAgo.setDate(fourteenDaysAgo.getDate() - 14);
 
     lightSnap.docs.forEach((doc) => {
       const data = doc.data() as Record<string, unknown>;
@@ -145,13 +151,11 @@ export async function GET(request: NextRequest) {
       if (state) stateCounts[state] = (stateCounts[state] || 0) + 1;
       if ((data.subscription as Record<string, unknown>)?.isPremium === true) payingUsers++;
 
-      const stats = data._stats as Record<string, number> | undefined;
-      if (stats) {
-        totalTrainingQuestions += stats.trainingQuestionsAnswered || 0;
-        totalTestQuestions += stats.testQuestionsAnswered || 0;
-        totalTestsCompleted += stats.testsCompleted || 0;
-      } else {
-        usersNeedingFullStats.add(doc.id);
+      // Track signup dates for chart + count new signups
+      const createdAt = data.createdAt as string | null;
+      if (createdAt) {
+        signupDates.push(createdAt.split('T')[0]);
+        if (new Date(createdAt) >= sevenDaysAgo) newUsers7d++;
       }
 
       usersForDau.push({
@@ -161,19 +165,9 @@ export async function GET(request: NextRequest) {
     });
 
     // ── Build user list from top-100 full docs ─────────────────────────────
-    // Also backfill stats for users that don't have _stats yet
     const users = fullSnap.docs.map(doc => {
       const data = doc.data() as Record<string, unknown>;
       const stats = processFullDoc(data);
-
-      // Backfill aggregate totals for users missing _stats
-      if (usersNeedingFullStats.has(doc.id)) {
-        totalTrainingQuestions += stats.trainingQuestionsAnswered;
-        totalTestQuestions += stats.testQuestionsAnswered;
-        totalTestsCompleted += stats.testsCompleted;
-        usersNeedingFullStats.delete(doc.id);
-      }
-
       return {
         uid: doc.id,
         email: (data.email as string) || '',
@@ -190,34 +184,64 @@ export async function GET(request: NextRequest) {
     const totalUsers = lightSnap.size;
     const dailyActiveUsers = calculateDailyActiveUsers(usersForDau);
 
-    const last7Days = Array.from({ length: 7 }, (_, i) => {
-      const d = new Date(); d.setDate(d.getDate() - i);
-      return d.toISOString().split('T')[0];
-    });
-    const sevenDaysAgo = new Date(); sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
     const activeUsers7d = usersForDau.filter(u => {
       if (u.activeDates.length > 0) return u.activeDates.some(d => last7Days.includes(d));
       if (u.lastUpdated) return new Date(u.lastUpdated) >= sevenDaysAgo;
       return false;
     }).length;
 
-    const totalQuestionsAnswered = totalTrainingQuestions + totalTestQuestions;
+    const activeUsersPrev7d = usersForDau.filter(u => {
+      if (u.activeDates.length > 0) return u.activeDates.some(d => prev7Days.includes(d));
+      if (u.lastUpdated) {
+        const lu = new Date(u.lastUpdated);
+        return lu >= fourteenDaysAgo && lu < sevenDaysAgo;
+      }
+      return false;
+    }).length;
+
+    // ── Build daily new signups + cumulative users chart data ───────────────
+    const dailyNewUsers = Array.from({ length: 30 }, (_, i) => {
+      const date = new Date(now);
+      date.setDate(date.getDate() - (29 - i));
+      const dateStr = date.toISOString().split('T')[0];
+      return {
+        date: dateStr,
+        count: signupDates.filter(d => d === dateStr).length,
+        displayDate: date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
+      };
+    });
+
+    const dailyCumulativeUsers = (() => {
+      const sorted = [...signupDates].sort();
+      return Array.from({ length: 30 }, (_, i) => {
+        const date = new Date(now);
+        date.setDate(date.getDate() - (29 - i));
+        const dateStr = date.toISOString().split('T')[0];
+        // Count users created on or before this date
+        const cumulative = sorted.filter(d => d <= dateStr).length;
+        return {
+          date: dateStr,
+          count: cumulative,
+          displayDate: date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
+        };
+      });
+    })();
+
     const sharesData = sharesDoc.exists ? sharesDoc.data() : null;
 
     const payload = {
       users,
       dailyActiveUsers,
+      dailyNewUsers,
+      dailyCumulativeUsers,
       totalUsers,
       stats: {
         totalUsers,
         usersWithState: Object.values(stateCounts).reduce((a, b) => a + b, 0),
         byState: stateCounts,
-        totalQuestionsAnswered,
-        totalTrainingQuestions,
-        totalTestQuestions,
         activeUsers7d,
-        totalTestsCompleted,
-        avgQuestionsPerUser: totalUsers > 0 ? Math.round(totalQuestionsAnswered / totalUsers) : 0,
+        activeUsersPrev7d,
+        newUsers7d,
         payingUsers,
         totalShareClicks: (sharesData?.total as number) || 0,
         shareClicksDaily: (sharesData?.daily as Record<string, number>) || {},

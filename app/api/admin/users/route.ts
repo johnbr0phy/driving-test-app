@@ -106,44 +106,72 @@ export async function GET(request: NextRequest) {
 
     // ── Cache miss — two parallel Firestore queries ────────────────────────
     //
-    // Query A: lightweight field-masked scan of ALL users (for accurate stats)
-    //   — only fetches: selectedState, lastUpdated, activeDates, subscription
-    //   — no training/test data = much smaller payload
+    // Query A: full docs of ALL users (for accurate stats + table)
+    //   — sorted by lastUpdated desc so the first 100 are the table rows
     //
-    // Query B: full docs for the 100 most recently active users (for the table)
-    //
-    // Query C: analytics/shares doc
+    // Query B: analytics/shares doc
     //
     const db = getAdminDb();
 
-    const [lightSnap, fullSnap, sharesDoc] = await Promise.all([
-      db.collection('users')
-        .select('selectedState', 'lastUpdated', 'activeDates', 'subscription', 'email', 'createdAt')
-        .get(),
+    const [allUsersSnap, sharesDoc] = await Promise.all([
       db.collection('users')
         .orderBy('lastUpdated', 'desc')
-        .limit(100)
         .get(),
       db.doc('analytics/shares').get(),
     ]);
 
-    // ── Aggregate stats from lightweight scan ──────────────────────────────
+    // ── Aggregate stats from ALL users ─────────────────────────────────────
     const stateCounts: Record<string, number> = {};
     let payingUsers = 0;
+    let totalTrainingQuestions = 0;
+    let totalTestQuestions = 0;
+    let totalTestsCompleted = 0;
     const usersForDau: { activeDates: string[]; lastUpdated: string | null }[] = [];
+    const users: {
+      uid: string;
+      email: string;
+      selectedState: string | null;
+      lastUpdated: string | null;
+      createdAt: string | null;
+      testsCompleted: number;
+      trainingQuestionsAnswered: number;
+      testQuestionsAnswered: number;
+      isPremium: boolean;
+    }[] = [];
 
-    lightSnap.docs.forEach(doc => {
-      const d = doc.data() as Record<string, unknown>;
-      const state = d.selectedState as string | null;
+    allUsersSnap.docs.forEach((doc, index) => {
+      const data = doc.data() as Record<string, unknown>;
+      const state = data.selectedState as string | null;
       if (state) stateCounts[state] = (stateCounts[state] || 0) + 1;
-      if ((d.subscription as Record<string, unknown>)?.isPremium === true) payingUsers++;
+
+      const userStats = processFullDoc(data);
+      totalTrainingQuestions += userStats.trainingQuestionsAnswered;
+      totalTestQuestions += userStats.testQuestionsAnswered;
+      totalTestsCompleted += userStats.testsCompleted;
+      if (userStats.isPremium) payingUsers++;
+
       usersForDau.push({
-        activeDates: (d.activeDates as string[]) || [],
-        lastUpdated: (d.lastUpdated as string) || null,
+        activeDates: (data.activeDates as string[]) || [],
+        lastUpdated: (data.lastUpdated as string) || null,
       });
+
+      // Only include the top 100 most recent users in the table
+      if (index < 100) {
+        users.push({
+          uid: doc.id,
+          email: (data.email as string) || '',
+          selectedState: state,
+          lastUpdated: (data.lastUpdated as string) || null,
+          createdAt: (data.createdAt as string) || null,
+          testsCompleted: userStats.testsCompleted,
+          trainingQuestionsAnswered: userStats.trainingQuestionsAnswered,
+          testQuestionsAnswered: userStats.testQuestionsAnswered,
+          isPremium: userStats.isPremium,
+        });
+      }
     });
 
-    const totalUsers = lightSnap.size;
+    const totalUsers = allUsersSnap.size;
     const dailyActiveUsers = calculateDailyActiveUsers(usersForDau);
 
     const last7Days = Array.from({ length: 7 }, (_, i) => {
@@ -157,38 +185,13 @@ export async function GET(request: NextRequest) {
       return false;
     }).length;
 
-    // ── Build user list from top-100 full docs ─────────────────────────────
-    let totalTrainingQuestions = 0;
-    let totalTestQuestions = 0;
-    let totalTestsCompleted = 0;
-
-    const users = fullSnap.docs.map(doc => {
-      const data = doc.data() as Record<string, unknown>;
-      const stats = processFullDoc(data);
-      totalTrainingQuestions += stats.trainingQuestionsAnswered;
-      totalTestQuestions += stats.testQuestionsAnswered;
-      totalTestsCompleted += stats.testsCompleted;
-
-      return {
-        uid: doc.id,
-        email: (data.email as string) || '',
-        selectedState: (data.selectedState as string) || null,
-        lastUpdated: (data.lastUpdated as string) || null,
-        createdAt: (data.createdAt as string) || null,
-        testsCompleted: stats.testsCompleted,
-        trainingQuestionsAnswered: stats.trainingQuestionsAnswered,
-        testQuestionsAnswered: stats.testQuestionsAnswered,
-        isPremium: stats.isPremium,
-      };
-    });
-
     const totalQuestionsAnswered = totalTrainingQuestions + totalTestQuestions;
     const sharesData = sharesDoc.exists ? sharesDoc.data() : null;
 
     const payload = {
       users,
       dailyActiveUsers,
-      totalUsers, // actual total from light scan
+      totalUsers,
       stats: {
         totalUsers,
         usersWithState: Object.values(stateCounts).reduce((a, b) => a + b, 0),

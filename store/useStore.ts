@@ -756,6 +756,21 @@ export const useStore = create<AppState>()(
             set({ activeDates: updatedActiveDates });
           }
 
+          // Compute denormalized stats counters for fast admin queries
+          const onboardingMastered = training?.masteredQuestionIds?.length || 0;
+          let trainingQCount = onboardingMastered;
+          for (const setId of [1, 2, 3, 4]) {
+            const s = trainingSets?.[setId];
+            if (s) {
+              trainingQCount += (s.masteredIds?.length || 0) + (s.wrongQueue?.length || 0);
+            }
+          }
+          let testQCount = completedTests.reduce((sum, t) => sum + (t.answers?.length || 0), 0);
+          for (const testId of Object.keys(currentTestsForFirestore)) {
+            const t = currentTestsForFirestore[testId];
+            if (t?.answers) testQCount += Object.keys(t.answers).length;
+          }
+
           await setDoc(doc(db, 'users', userId), {
             selectedState,
             photoURL,
@@ -782,6 +797,12 @@ export const useStore = create<AppState>()(
             subscription,
             language,
             lastUpdated: new Date().toISOString(),
+            // Denormalized counters for admin dashboard
+            _stats: {
+              trainingQuestionsAnswered: trainingQCount,
+              testQuestionsAnswered: testQCount,
+              testsCompleted: completedTests.length,
+            },
           });
         } catch (error) {
           console.error('Error saving to Firestore:', error);

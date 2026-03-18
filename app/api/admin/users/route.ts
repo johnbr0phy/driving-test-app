@@ -132,6 +132,8 @@ export async function GET(request: NextRequest) {
     let newUsers7d = 0;
     const usersForDau: { activeDates: string[]; lastUpdated: string | null }[] = [];
     const signupDates: string[] = [];
+    // Per-user data for advanced charts
+    const userRecords: { activeDates: string[]; lastUpdated: string | null; state: string | null; signupDate: string | null }[] = [];
 
     const now = new Date();
     const last7Days = Array.from({ length: 7 }, (_, i) => {
@@ -144,6 +146,12 @@ export async function GET(request: NextRequest) {
     });
     const sevenDaysAgo = new Date(now); sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
     const fourteenDaysAgo = new Date(now); fourteenDaysAgo.setDate(fourteenDaysAgo.getDate() - 14);
+
+    // Build 30-day date range for chart computations
+    const last30Dates = Array.from({ length: 30 }, (_, i) => {
+      const d = new Date(now); d.setDate(d.getDate() - (29 - i));
+      return d.toISOString().split('T')[0];
+    });
 
     lightSnap.docs.forEach((doc) => {
       const data = doc.data() as Record<string, unknown>;
@@ -166,6 +174,7 @@ export async function GET(request: NextRequest) {
       }
 
       usersForDau.push({ activeDates, lastUpdated });
+      userRecords.push({ activeDates, lastUpdated, state, signupDate });
     });
 
     // ── Build user list from top-100 full docs ─────────────────────────────
@@ -203,41 +212,111 @@ export async function GET(request: NextRequest) {
       return false;
     }).length;
 
-    // ── Build daily new signups + cumulative users chart data ───────────────
-    const dailyNewUsers = Array.from({ length: 30 }, (_, i) => {
-      const date = new Date(now);
-      date.setDate(date.getDate() - (29 - i));
-      const dateStr = date.toISOString().split('T')[0];
-      return {
-        date: dateStr,
-        count: signupDates.filter(d => d === dateStr).length,
-        displayDate: date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
+    // ── Chart data ─────────────────────────────────────────────────────────
+
+    // Helper: is user active on a given date?
+    function isActiveOnDate(u: { activeDates: string[]; lastUpdated: string | null }, dateStr: string) {
+      if (u.activeDates.length > 0) return u.activeDates.includes(dateStr);
+      if (u.lastUpdated) {
+        const luDate = u.lastUpdated.split('T')[0];
+        return luDate === dateStr;
+      }
+      return false;
+    }
+
+    // 1. Cumulative total users
+    const sortedSignups = [...signupDates].sort();
+    const dailyCumulativeUsers = last30Dates.map(dateStr => ({
+      date: dateStr,
+      count: sortedSignups.filter(d => d <= dateStr).length,
+      displayDate: new Date(dateStr + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
+    }));
+
+    // 2. Weekly retention (8 weeks: what % of week N users returned in week N+1)
+    const weeklyRetention = (() => {
+      const weeks: string[][] = [];
+      for (let w = 7; w >= 0; w--) {
+        const weekDates: string[] = [];
+        for (let d = 0; d < 7; d++) {
+          const date = new Date(now);
+          date.setDate(date.getDate() - (w * 7 + (6 - d)));
+          weekDates.push(date.toISOString().split('T')[0]);
+        }
+        weeks.push(weekDates);
+      }
+
+      const result: { displayDate: string; count: number }[] = [];
+      for (let i = 0; i < weeks.length - 1; i++) {
+        const thisWeek = weeks[i];
+        const nextWeek = weeks[i + 1];
+        const activeThisWeek = userRecords.filter(u =>
+          thisWeek.some(d => isActiveOnDate(u, d))
+        );
+        if (activeThisWeek.length === 0) {
+          result.push({
+            displayDate: new Date(thisWeek[0] + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
+            count: 0,
+          });
+          continue;
+        }
+        const retained = activeThisWeek.filter(u =>
+          nextWeek.some(d => isActiveOnDate(u, d))
+        );
+        result.push({
+          displayDate: new Date(thisWeek[0] + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
+          count: Math.round((retained.length / activeThisWeek.length) * 100),
+        });
+      }
+      return result;
+    })();
+
+    // 3. By State — top 5 states daily active users
+    const top5States = Object.entries(stateCounts)
+      .sort(([, a], [, b]) => b - a)
+      .slice(0, 5)
+      .map(([code]) => code);
+
+    const dailyByState = last30Dates.map(dateStr => {
+      const entry: Record<string, unknown> = {
+        displayDate: new Date(dateStr + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
       };
+      for (const stateCode of top5States) {
+        entry[stateCode] = userRecords.filter(u =>
+          u.state === stateCode && isActiveOnDate(u, dateStr)
+        ).length;
+      }
+      return entry;
     });
 
-    const dailyCumulativeUsers = (() => {
-      const sorted = [...signupDates].sort();
-      return Array.from({ length: 30 }, (_, i) => {
-        const date = new Date(now);
-        date.setDate(date.getDate() - (29 - i));
-        const dateStr = date.toISOString().split('T')[0];
-        // Count users created on or before this date
-        const cumulative = sorted.filter(d => d <= dateStr).length;
-        return {
-          date: dateStr,
-          count: cumulative,
-          displayDate: date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
-        };
-      });
-    })();
+    // 4. New vs Returning daily
+    const dailyNewVsReturning = last30Dates.map(dateStr => {
+      let newCount = 0;
+      let returningCount = 0;
+      for (const u of userRecords) {
+        if (!isActiveOnDate(u, dateStr)) continue;
+        if (u.signupDate === dateStr) {
+          newCount++;
+        } else {
+          returningCount++;
+        }
+      }
+      return {
+        displayDate: new Date(dateStr + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
+        new: newCount,
+        returning: returningCount,
+      };
+    });
 
     const sharesData = sharesDoc.exists ? sharesDoc.data() : null;
 
     const payload = {
       users,
       dailyActiveUsers,
-      dailyNewUsers,
       dailyCumulativeUsers,
+      weeklyRetention,
+      dailyByState,
+      dailyNewVsReturning,
+      top5States,
       totalUsers,
       stats: {
         totalUsers,

@@ -106,9 +106,9 @@ export async function GET(request: NextRequest) {
 
     // ── Cache miss — three parallel Firestore queries ───────────────────────
     //
-    // Query A: field-masked scan of ALL users for accurate stats
-    //   — includes training/test fields for question counts
-    //   — excludes large fields not needed for aggregation
+    // Query A: lightweight scan of ALL users for stats
+    //   — uses _stats counters (denormalized on save) for question/test counts
+    //   — falls back to processFullDoc for users without _stats
     //
     // Query B: full docs for the 100 most recently active users (table)
     //
@@ -116,11 +116,10 @@ export async function GET(request: NextRequest) {
     //
     const db = getAdminDb();
 
-    const [statsSnap, fullSnap, sharesDoc] = await Promise.all([
+    const [lightSnap, fullSnap, sharesDoc] = await Promise.all([
       db.collection('users')
         .select(
-          'selectedState', 'lastUpdated', 'activeDates', 'subscription',
-          'training', 'trainingSets', 'completedTests', 'currentTests'
+          'selectedState', 'lastUpdated', 'activeDates', 'subscription', '_stats'
         )
         .get(),
       db.collection('users')
@@ -137,17 +136,23 @@ export async function GET(request: NextRequest) {
     let totalTestQuestions = 0;
     let totalTestsCompleted = 0;
     const usersForDau: { activeDates: string[]; lastUpdated: string | null }[] = [];
+    // Track users missing _stats so we can compute from full docs
+    const usersNeedingFullStats = new Set<string>();
 
-    statsSnap.docs.forEach((doc) => {
+    lightSnap.docs.forEach((doc) => {
       const data = doc.data() as Record<string, unknown>;
       const state = data.selectedState as string | null;
       if (state) stateCounts[state] = (stateCounts[state] || 0) + 1;
+      if ((data.subscription as Record<string, unknown>)?.isPremium === true) payingUsers++;
 
-      const userStats = processFullDoc(data);
-      totalTrainingQuestions += userStats.trainingQuestionsAnswered;
-      totalTestQuestions += userStats.testQuestionsAnswered;
-      totalTestsCompleted += userStats.testsCompleted;
-      if (userStats.isPremium) payingUsers++;
+      const stats = data._stats as Record<string, number> | undefined;
+      if (stats) {
+        totalTrainingQuestions += stats.trainingQuestionsAnswered || 0;
+        totalTestQuestions += stats.testQuestionsAnswered || 0;
+        totalTestsCompleted += stats.testsCompleted || 0;
+      } else {
+        usersNeedingFullStats.add(doc.id);
+      }
 
       usersForDau.push({
         activeDates: (data.activeDates as string[]) || [],
@@ -156,9 +161,19 @@ export async function GET(request: NextRequest) {
     });
 
     // ── Build user list from top-100 full docs ─────────────────────────────
+    // Also backfill stats for users that don't have _stats yet
     const users = fullSnap.docs.map(doc => {
       const data = doc.data() as Record<string, unknown>;
       const stats = processFullDoc(data);
+
+      // Backfill aggregate totals for users missing _stats
+      if (usersNeedingFullStats.has(doc.id)) {
+        totalTrainingQuestions += stats.trainingQuestionsAnswered;
+        totalTestQuestions += stats.testQuestionsAnswered;
+        totalTestsCompleted += stats.testsCompleted;
+        usersNeedingFullStats.delete(doc.id);
+      }
+
       return {
         uid: doc.id,
         email: (data.email as string) || '',
@@ -172,7 +187,7 @@ export async function GET(request: NextRequest) {
       };
     });
 
-    const totalUsers = statsSnap.size;
+    const totalUsers = lightSnap.size;
     const dailyActiveUsers = calculateDailyActiveUsers(usersForDau);
 
     const last7Days = Array.from({ length: 7 }, (_, i) => {

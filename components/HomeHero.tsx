@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
@@ -14,6 +15,14 @@ export function HomeHero() {
   const startGuestSession = useStore((state) => state.startGuestSession);
   const isGuest = useStore((state) => state.isGuest);
   const { t } = useTranslation();
+
+  useEffect(() => {
+    fetch('/api/analytics/event', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ event: 'homepage_visit' }),
+    }).catch(() => {});
+  }, []);
 
   const handleTryFree = () => {
     startGuestSession();

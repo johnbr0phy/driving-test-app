@@ -9,7 +9,7 @@ import { deleteDoc, doc } from "firebase/firestore";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { states } from "@/data/states";
 import { ArrowLeft, Users, RefreshCw, Trash2, UserPlus, Activity, TrendingUp, TrendingDown, Minus, Share2 } from "lucide-react";
-import { AreaChart, Area, BarChart, Bar, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from "recharts";
+import { BarChart, Bar, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend, ComposedChart, Area } from "recharts";
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
@@ -47,13 +47,10 @@ export default function AdminPage() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [deleting, setDeleting] = useState<string | null>(null);
-  const [dailyActiveUsers, setDailyActiveUsers] = useState<{ date: string; count: number; displayDate: string }[]>([]);
-  const [dailyCumulativeUsers, setDailyCumulativeUsers] = useState<{ date: string; count: number; displayDate: string }[]>([]);
-  const [weeklyRetention, setWeeklyRetention] = useState<{ displayDate: string; count: number }[]>([]);
-  const [dailyByState, setDailyByState] = useState<Record<string, unknown>[]>([]);
-  const [dailyNewVsReturning, setDailyNewVsReturning] = useState<{ displayDate: string; new: number; returning: number }[]>([]);
-  const [top5States, setTop5States] = useState<string[]>([]);
-  const [graphMetric, setGraphMetric] = useState<'active' | 'retention' | 'cumulative' | 'byState' | 'newVsReturning'>('active');
+  const [dailyNewUsers, setDailyNewUsers] = useState<{ date: string; count: number; displayDate: string }[]>([]);
+  const [dailyPaywallViews, setDailyPaywallViews] = useState<{ date: string; count: number; displayDate: string }[]>([]);
+  const [dailyConversion, setDailyConversion] = useState<{ date: string; visits: number; signups: number; rate: number; displayDate: string }[]>([]);
+  const [graphMetric, setGraphMetric] = useState<'newUsers' | 'paywall' | 'conversion'>('newUsers');
 
   const fetchUsers = async (forceRefresh = false) => {
     setLoading(true);
@@ -83,12 +80,9 @@ export default function AdminPage() {
       // API returns pre-computed stats, chart data, and user list
       setUsers(data.users);
       setStats(data.stats);
-      setDailyActiveUsers(data.dailyActiveUsers);
-      setDailyCumulativeUsers(data.dailyCumulativeUsers || []);
-      setWeeklyRetention(data.weeklyRetention || []);
-      setDailyByState(data.dailyByState || []);
-      setDailyNewVsReturning(data.dailyNewVsReturning || []);
-      setTop5States(data.top5States || []);
+      setDailyNewUsers(data.dailyNewUsers || []);
+      setDailyPaywallViews(data.dailyPaywallViews || []);
+      setDailyConversion(data.dailyConversion || []);
     } catch (err) {
       console.error("Error fetching users:", err);
       setError(err instanceof Error ? err.message : "Failed to load users");
@@ -322,19 +316,15 @@ export default function AdminPage() {
           <CardHeader>
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
               <CardTitle>
-                {graphMetric === 'active' && 'Active Users (30 Days)'}
-                {graphMetric === 'retention' && 'Weekly Retention'}
-                {graphMetric === 'cumulative' && 'Total Users (30 Days)'}
-                {graphMetric === 'byState' && 'Active by State (30 Days)'}
-                {graphMetric === 'newVsReturning' && 'New vs Returning (30 Days)'}
+                {graphMetric === 'newUsers' && 'New Users (30 Days)'}
+                {graphMetric === 'paywall' && 'Paywall Views (30 Days)'}
+                {graphMetric === 'conversion' && 'Homepage Conversion (30 Days)'}
               </CardTitle>
               <div className="flex flex-wrap gap-1">
                 {([
-                  { key: 'active', label: 'Active' },
-                  { key: 'retention', label: 'Retention' },
-                  { key: 'cumulative', label: 'Total' },
-                  { key: 'byState', label: 'By State' },
-                  { key: 'newVsReturning', label: 'New vs Ret.' },
+                  { key: 'newUsers', label: 'New Users' },
+                  { key: 'paywall', label: 'Paywall' },
+                  { key: 'conversion', label: 'Conversion' },
                 ] as const).map(({ key, label }) => (
                   <Button
                     key={key}
@@ -352,10 +342,10 @@ export default function AdminPage() {
           <CardContent>
             <div className="h-64">
               <ResponsiveContainer width="100%" height="100%">
-                {/* Active Users / Cumulative — simple area chart */}
-                {(graphMetric === 'active' || graphMetric === 'cumulative') ? (
-                  <AreaChart
-                    data={graphMetric === 'active' ? dailyActiveUsers : dailyCumulativeUsers}
+                {/* New Users — bar chart */}
+                {graphMetric === 'newUsers' ? (
+                  <BarChart
+                    data={dailyNewUsers}
                     margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
                   >
                     <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
@@ -363,38 +353,15 @@ export default function AdminPage() {
                     <YAxis tick={{ fontSize: 12 }} tickLine={false} axisLine={{ stroke: '#e5e7eb' }} allowDecimals={false} />
                     <Tooltip
                       contentStyle={{ backgroundColor: 'white', border: '1px solid #e5e7eb', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}
-                      formatter={(value) => [value ?? 0, graphMetric === 'active' ? 'Active Users' : 'Total Users']}
+                      formatter={(value) => [value ?? 0, 'New Users']}
                     />
-                    <Area
-                      type="monotone"
-                      dataKey="count"
-                      stroke={graphMetric === 'active' ? '#22c55e' : '#f97316'}
-                      fill={graphMetric === 'active' ? '#22c55e' : '#f97316'}
-                      fillOpacity={0.2}
-                      strokeWidth={2}
-                    />
-                  </AreaChart>
-
-                /* Retention — bar chart with % */
-                ) : graphMetric === 'retention' ? (
-                  <BarChart
-                    data={weeklyRetention}
-                    margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
-                  >
-                    <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
-                    <XAxis dataKey="displayDate" tick={{ fontSize: 12 }} tickLine={false} axisLine={{ stroke: '#e5e7eb' }} tickMargin={8} />
-                    <YAxis tick={{ fontSize: 12 }} tickLine={false} axisLine={{ stroke: '#e5e7eb' }} allowDecimals={false} unit="%" domain={[0, 100]} />
-                    <Tooltip
-                      contentStyle={{ backgroundColor: 'white', border: '1px solid #e5e7eb', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}
-                      formatter={(value) => [`${value}%`, 'Retained']}
-                    />
-                    <Bar dataKey="count" fill="#3b82f6" radius={[4, 4, 0, 0]} />
+                    <Bar dataKey="count" fill="#a855f7" radius={[4, 4, 0, 0]} />
                   </BarChart>
 
-                /* By State — multi-line chart */
-                ) : graphMetric === 'byState' ? (
+                /* Paywall Views — line chart */
+                ) : graphMetric === 'paywall' ? (
                   <LineChart
-                    data={dailyByState}
+                    data={dailyPaywallViews}
                     margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
                   >
                     <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
@@ -402,40 +369,33 @@ export default function AdminPage() {
                     <YAxis tick={{ fontSize: 12 }} tickLine={false} axisLine={{ stroke: '#e5e7eb' }} allowDecimals={false} />
                     <Tooltip
                       contentStyle={{ backgroundColor: 'white', border: '1px solid #e5e7eb', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}
+                      formatter={(value) => [value ?? 0, 'Paywall Views']}
                     />
-                    <Legend />
-                    {top5States.map((stateCode, i) => {
-                      const colors = ['#22c55e', '#3b82f6', '#f97316', '#a855f7', '#ef4444'];
-                      return (
-                        <Line
-                          key={stateCode}
-                          type="monotone"
-                          dataKey={stateCode}
-                          name={getStateName(stateCode)}
-                          stroke={colors[i]}
-                          strokeWidth={2}
-                          dot={false}
-                        />
-                      );
-                    })}
+                    <Line type="monotone" dataKey="count" stroke="#f97316" strokeWidth={2} dot={{ r: 3 }} />
                   </LineChart>
 
-                /* New vs Returning — stacked area chart */
+                /* Conversion — composed chart: bars for visits/signups + line for rate */
                 ) : (
-                  <AreaChart
-                    data={dailyNewVsReturning}
+                  <ComposedChart
+                    data={dailyConversion}
                     margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
                   >
                     <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
                     <XAxis dataKey="displayDate" tick={{ fontSize: 12 }} tickLine={false} axisLine={{ stroke: '#e5e7eb' }} interval="preserveStartEnd" tickMargin={8} />
-                    <YAxis tick={{ fontSize: 12 }} tickLine={false} axisLine={{ stroke: '#e5e7eb' }} allowDecimals={false} />
+                    <YAxis yAxisId="left" tick={{ fontSize: 12 }} tickLine={false} axisLine={{ stroke: '#e5e7eb' }} allowDecimals={false} />
+                    <YAxis yAxisId="right" orientation="right" tick={{ fontSize: 12 }} tickLine={false} axisLine={{ stroke: '#e5e7eb' }} unit="%" domain={[0, 100]} />
                     <Tooltip
                       contentStyle={{ backgroundColor: 'white', border: '1px solid #e5e7eb', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}
+                      formatter={(value: number, name: string) => {
+                        if (name === 'rate') return [`${value}%`, 'Conv. Rate'];
+                        return [value, name === 'visits' ? 'Visits' : 'Signups'];
+                      }}
                     />
                     <Legend />
-                    <Area type="monotone" dataKey="returning" name="Returning" stackId="1" stroke="#3b82f6" fill="#3b82f6" fillOpacity={0.3} strokeWidth={2} />
-                    <Area type="monotone" dataKey="new" name="New" stackId="1" stroke="#22c55e" fill="#22c55e" fillOpacity={0.3} strokeWidth={2} />
-                  </AreaChart>
+                    <Bar yAxisId="left" dataKey="visits" name="Visits" fill="#e5e7eb" radius={[4, 4, 0, 0]} />
+                    <Bar yAxisId="left" dataKey="signups" name="Signups" fill="#22c55e" radius={[4, 4, 0, 0]} />
+                    <Line yAxisId="right" type="monotone" dataKey="rate" name="Conv. Rate" stroke="#3b82f6" strokeWidth={2} dot={{ r: 3 }} />
+                  </ComposedChart>
                 )}
               </ResponsiveContainer>
             </div>

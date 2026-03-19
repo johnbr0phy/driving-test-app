@@ -115,7 +115,7 @@ export async function GET(request: NextRequest) {
     //
     const db = getAdminDb();
 
-    const [lightSnap, fullSnap, sharesDoc] = await Promise.all([
+    const [lightSnap, fullSnap, sharesDoc, paywallDoc, homepageDoc] = await Promise.all([
       db.collection('users')
         .select('selectedState', 'lastUpdated', 'activeDates', 'subscription', 'createdAt')
         .get(),
@@ -124,6 +124,8 @@ export async function GET(request: NextRequest) {
         .limit(100)
         .get(),
       db.doc('analytics/shares').get(),
+      db.doc('analytics/paywall_view').get(),
+      db.doc('analytics/homepage_visit').get(),
     ]);
 
     // ── Aggregate stats from ALL users ─────────────────────────────────────
@@ -214,96 +216,34 @@ export async function GET(request: NextRequest) {
 
     // ── Chart data ─────────────────────────────────────────────────────────
 
-    // Helper: is user active on a given date?
-    function isActiveOnDate(u: { activeDates: string[]; lastUpdated: string | null }, dateStr: string) {
-      if (u.activeDates.length > 0) return u.activeDates.includes(dateStr);
-      if (u.lastUpdated) {
-        const luDate = u.lastUpdated.split('T')[0];
-        return luDate === dateStr;
-      }
-      return false;
-    }
-
-    // 1. Cumulative total users
-    const sortedSignups = [...signupDates].sort();
-    const dailyCumulativeUsers = last30Dates.map(dateStr => ({
+    // 1. Daily new signups (bar chart)
+    const dailyNewUsers = last30Dates.map(dateStr => ({
       date: dateStr,
-      count: sortedSignups.filter(d => d <= dateStr).length,
+      count: signupDates.filter(d => d === dateStr).length,
       displayDate: new Date(dateStr + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
     }));
 
-    // 2. Weekly retention (8 weeks: what % of week N users returned in week N+1)
-    const weeklyRetention = (() => {
-      const weeks: string[][] = [];
-      for (let w = 7; w >= 0; w--) {
-        const weekDates: string[] = [];
-        for (let d = 0; d < 7; d++) {
-          const date = new Date(now);
-          date.setDate(date.getDate() - (w * 7 + (6 - d)));
-          weekDates.push(date.toISOString().split('T')[0]);
-        }
-        weeks.push(weekDates);
-      }
+    // 2. Paywall views per day (line chart) — from analytics/paywall_view doc
+    const paywallData = paywallDoc.exists ? paywallDoc.data() : null;
+    const paywallDaily = (paywallData?.daily as Record<string, number>) || {};
+    const dailyPaywallViews = last30Dates.map(dateStr => ({
+      date: dateStr,
+      count: paywallDaily[dateStr] || 0,
+      displayDate: new Date(dateStr + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
+    }));
 
-      const result: { displayDate: string; count: number }[] = [];
-      for (let i = 0; i < weeks.length - 1; i++) {
-        const thisWeek = weeks[i];
-        const nextWeek = weeks[i + 1];
-        const activeThisWeek = userRecords.filter(u =>
-          thisWeek.some(d => isActiveOnDate(u, d))
-        );
-        if (activeThisWeek.length === 0) {
-          result.push({
-            displayDate: new Date(thisWeek[0] + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
-            count: 0,
-          });
-          continue;
-        }
-        const retained = activeThisWeek.filter(u =>
-          nextWeek.some(d => isActiveOnDate(u, d))
-        );
-        result.push({
-          displayDate: new Date(thisWeek[0] + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
-          count: Math.round((retained.length / activeThisWeek.length) * 100),
-        });
-      }
-      return result;
-    })();
-
-    // 3. By State — top 5 states daily active users
-    const top5States = Object.entries(stateCounts)
-      .sort(([, a], [, b]) => b - a)
-      .slice(0, 5)
-      .map(([code]) => code);
-
-    const dailyByState = last30Dates.map(dateStr => {
-      const entry: Record<string, unknown> = {
-        displayDate: new Date(dateStr + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
-      };
-      for (const stateCode of top5States) {
-        entry[stateCode] = userRecords.filter(u =>
-          u.state === stateCode && isActiveOnDate(u, dateStr)
-        ).length;
-      }
-      return entry;
-    });
-
-    // 4. New vs Returning daily
-    const dailyNewVsReturning = last30Dates.map(dateStr => {
-      let newCount = 0;
-      let returningCount = 0;
-      for (const u of userRecords) {
-        if (!isActiveOnDate(u, dateStr)) continue;
-        if (u.signupDate === dateStr) {
-          newCount++;
-        } else {
-          returningCount++;
-        }
-      }
+    // 3. Homepage conversion rate (homepage visits → signups that day)
+    const homepageData = homepageDoc.exists ? homepageDoc.data() : null;
+    const homepageDaily = (homepageData?.daily as Record<string, number>) || {};
+    const dailyConversion = last30Dates.map(dateStr => {
+      const visits = homepageDaily[dateStr] || 0;
+      const signups = signupDates.filter(d => d === dateStr).length;
       return {
+        date: dateStr,
+        visits,
+        signups,
+        rate: visits > 0 ? Math.round((signups / visits) * 100) : 0,
         displayDate: new Date(dateStr + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
-        new: newCount,
-        returning: returningCount,
       };
     });
 
@@ -312,11 +252,9 @@ export async function GET(request: NextRequest) {
     const payload = {
       users,
       dailyActiveUsers,
-      dailyCumulativeUsers,
-      weeklyRetention,
-      dailyByState,
-      dailyNewVsReturning,
-      top5States,
+      dailyNewUsers,
+      dailyPaywallViews,
+      dailyConversion,
       totalUsers,
       stats: {
         totalUsers,

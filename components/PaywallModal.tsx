@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import {
   Dialog,
   DialogContent,
@@ -34,6 +34,19 @@ export function PaywallModal({
   const { t, language } = useTranslation();
   const dict = language === "es" ? es : en;
   const [loading, setLoading] = useState(false);
+  const tracked = useRef(false);
+
+  useEffect(() => {
+    if (open && !tracked.current) {
+      tracked.current = true;
+      fetch('/api/analytics/event', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ event: 'paywall_view' }),
+      }).catch(() => {});
+    }
+    if (!open) tracked.current = false;
+  }, [open]);
 
   const handleUpgrade = async () => {
     setLoading(true);

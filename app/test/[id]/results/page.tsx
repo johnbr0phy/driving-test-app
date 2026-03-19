@@ -452,6 +452,28 @@ export default function ResultsPage() {
           </Link>
         )}
 
+        {/* Drill Weak Spots CTA */}
+        {weakCategories.length > 0 && (
+          <Link href="/drill" className="block">
+            <Card className="mb-6 border-2 border-orange-200 bg-gradient-to-r from-orange-50 to-yellow-50 cursor-pointer hover:shadow-md transition-shadow">
+              <CardContent className="p-5">
+                <div className="flex items-center gap-4">
+                  <div className="text-3xl flex-shrink-0">🎯</div>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="font-bold text-gray-900 mb-1">
+                      Drill your weak spots
+                    </h3>
+                    <p className="text-sm text-gray-600">
+                      Focused questions on exactly what tripped you up — the fastest way to improve your score.
+                    </p>
+                  </div>
+                  <ChevronRight className="h-5 w-5 text-orange-400 flex-shrink-0" />
+                </div>
+              </CardContent>
+            </Card>
+          </Link>
+        )}
+
         {/* Question Review */}
         <div className="mb-4 flex items-center justify-between">
           <h2 className="text-2xl font-bold">{t("results.reviewQuestions")}</h2>

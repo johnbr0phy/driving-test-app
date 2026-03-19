@@ -134,8 +134,6 @@ export async function GET(request: NextRequest) {
     let newUsers7d = 0;
     const usersForDau: { activeDates: string[]; lastUpdated: string | null }[] = [];
     const signupDates: string[] = [];
-    // Per-user data for advanced charts
-    const userRecords: { activeDates: string[]; lastUpdated: string | null; state: string | null; signupDate: string | null }[] = [];
 
     const now = new Date();
     const last7Days = Array.from({ length: 7 }, (_, i) => {
@@ -176,7 +174,6 @@ export async function GET(request: NextRequest) {
       }
 
       usersForDau.push({ activeDates, lastUpdated });
-      userRecords.push({ activeDates, lastUpdated, state, signupDate });
     });
 
     // ── Build user list from top-100 full docs ─────────────────────────────

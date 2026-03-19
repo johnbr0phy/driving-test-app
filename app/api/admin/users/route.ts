@@ -159,13 +159,13 @@ export async function GET(request: NextRequest) {
       if (state) stateCounts[state] = (stateCounts[state] || 0) + 1;
       if ((data.subscription as Record<string, unknown>)?.isPremium === true) payingUsers++;
 
-      // Determine signup date: createdAt > earliest activeDates > lastUpdated
+      // Determine signup date: createdAt > earliest activeDates
+      // Do NOT fall back to lastUpdated — it's the user's last activity, not signup
       const activeDates = (data.activeDates as string[]) || [];
       const createdAt = data.createdAt as string | null;
       const lastUpdated = (data.lastUpdated as string) || null;
       const signupDate = createdAt?.split('T')[0]
         || (activeDates.length > 0 ? [...activeDates].sort()[0] : null)
-        || lastUpdated?.split('T')[0]
         || null;
 
       if (signupDate) {

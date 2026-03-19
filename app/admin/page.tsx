@@ -386,7 +386,7 @@ export default function AdminPage() {
                     <YAxis yAxisId="right" orientation="right" tick={{ fontSize: 12 }} tickLine={false} axisLine={{ stroke: '#e5e7eb' }} unit="%" domain={[0, 100]} />
                     <Tooltip
                       contentStyle={{ backgroundColor: 'white', border: '1px solid #e5e7eb', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}
-                      formatter={(value: number | undefined, name: string) => {
+                      formatter={(value, name) => {
                         if (name === 'rate') return [`${value ?? 0}%`, 'Conv. Rate'];
                         return [value ?? 0, name === 'visits' ? 'Visits' : 'Signups'];
                       }}

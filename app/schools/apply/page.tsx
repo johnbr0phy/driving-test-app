@@ -48,14 +48,28 @@ export default function SchoolApplyPage() {
   if (submitted) {
     return (
       <div className="max-w-lg mx-auto px-6 py-20 text-center">
-        <div className="bg-green-50 border border-green-200 rounded-2xl p-10">
-          <h2 className="text-2xl font-bold text-gray-900 mb-3">
-            Thanks! We&apos;ll be in touch.
+        <div className="bg-green-50 border border-green-200 rounded-2xl p-10 space-y-6">
+          <div className="text-5xl">🎉</div>
+          <h2 className="text-2xl font-bold text-gray-900">
+            You&apos;re on the list.
           </h2>
           <p className="text-gray-600">
-            Expect a response within one business day with a custom quote for
-            your school.
+            We&apos;ll send a custom quote within one business day. In the meantime, try TigerTest yourself — it&apos;s the same experience your students will get.
           </p>
+          <div className="flex flex-col gap-3 pt-2">
+            <a
+              href="/"
+              className="inline-block bg-brand text-white font-semibold px-6 py-3 rounded-xl hover:bg-brand-dark transition-colors"
+            >
+              Try TigerTest →
+            </a>
+            <a
+              href="/schools"
+              className="inline-block text-brand text-sm font-medium hover:underline"
+            >
+              ← Back to the Schools page
+            </a>
+          </div>
         </div>
       </div>
     );

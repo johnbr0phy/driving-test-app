@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import Link from 'next/link';
 
 export default function SchoolsPage() {
   const [submitted, setSubmitted] = useState(false);
@@ -49,8 +48,9 @@ export default function SchoolsPage() {
 
   return (
     <>
+      {/* Hero */}
       <section className="max-w-4xl mx-auto px-6 py-20 text-center">
-        <span className="inline-block bg-blue-50 text-blue-700 text-sm font-medium px-3 py-1 rounded-full mb-6">
+        <span className="inline-block bg-brand-light text-brand text-sm font-medium px-3 py-1 rounded-full mb-6">
           For driving schools &amp; instructors
         </span>
         <h1 className="text-5xl font-bold text-gray-900 mb-6 leading-tight">
@@ -59,12 +59,16 @@ export default function SchoolsPage() {
         <p className="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
           TigerTest for Schools gives your students unlimited practice with the same questions that appear on the real permit exam — with a class dashboard so you can track their progress.
         </p>
-        <a href="#contact" className="inline-block bg-blue-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-blue-700 transition-colors">
+        <a
+          href="#contact"
+          className="inline-block bg-brand text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-brand-dark transition-colors"
+        >
           Start a free school trial →
         </a>
       </section>
 
-      <section className="bg-gray-50 py-16">
+      {/* Why schools */}
+      <section className="bg-brand-light py-16">
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Why schools choose TigerTest</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -83,6 +87,7 @@ export default function SchoolsPage() {
         </div>
       </section>
 
+      {/* Pricing */}
       <section className="py-20 max-w-5xl mx-auto px-6">
         <h2 className="text-3xl font-bold text-gray-900 text-center mb-4">Simple school pricing</h2>
         <p className="text-gray-600 text-center mb-12">All plans include a 14-day free trial. No credit card required.</p>
@@ -90,10 +95,14 @@ export default function SchoolsPage() {
           {plans.map((plan) => (
             <div
               key={plan.name}
-              className={`rounded-2xl p-8 border-2 ${plan.highlight ? 'border-blue-600 bg-blue-50' : 'border-gray-200 bg-white'}`}
+              className={`rounded-2xl p-8 border-2 ${
+                plan.highlight
+                  ? 'border-brand bg-brand-light'
+                  : 'border-gray-200 bg-white'
+              }`}
             >
               {plan.highlight && (
-                <span className="inline-block bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full mb-4">
+                <span className="inline-block bg-brand text-white text-xs font-semibold px-3 py-1 rounded-full mb-4">
                   Most popular
                 </span>
               )}
@@ -115,7 +124,7 @@ export default function SchoolsPage() {
                 href="#contact"
                 className={`block text-center py-3 rounded-xl font-semibold text-sm transition-colors ${
                   plan.highlight
-                    ? 'bg-blue-600 text-white hover:bg-blue-700'
+                    ? 'bg-brand text-white hover:bg-brand-dark'
                     : 'bg-gray-900 text-white hover:bg-gray-800'
                 }`}
               >
@@ -126,7 +135,8 @@ export default function SchoolsPage() {
         </div>
       </section>
 
-      <section id="contact" className="bg-gray-50 py-20">
+      {/* Contact form */}
+      <section id="contact" className="bg-brand-light py-20">
         <div className="max-w-lg mx-auto px-6">
           <h2 className="text-3xl font-bold text-gray-900 text-center mb-4">Get started today</h2>
           <p className="text-gray-600 text-center mb-10">Tell us about your school and we will set you up with a free trial.</p>
@@ -145,7 +155,7 @@ export default function SchoolsPage() {
                   type="text"
                   value={form.name}
                   onChange={(e) => setForm({ ...form, name: e.target.value })}
-                  className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand"
                   placeholder="Jane Smith"
                 />
               </div>
@@ -156,7 +166,7 @@ export default function SchoolsPage() {
                   type="text"
                   value={form.school}
                   onChange={(e) => setForm({ ...form, school: e.target.value })}
-                  className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand"
                   placeholder="Smith Driving Academy"
                 />
               </div>
@@ -167,7 +177,7 @@ export default function SchoolsPage() {
                   type="email"
                   value={form.email}
                   onChange={(e) => setForm({ ...form, email: e.target.value })}
-                  className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand"
                   placeholder="jane@smithdriving.com"
                 />
               </div>
@@ -176,7 +186,7 @@ export default function SchoolsPage() {
                 <select
                   value={form.students}
                   onChange={(e) => setForm({ ...form, students: e.target.value })}
-                  className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand"
                 >
                   <option value="">Select...</option>
                   <option value="1-10">1 to 10 students</option>
@@ -186,7 +196,7 @@ export default function SchoolsPage() {
               </div>
               <button
                 type="submit"
-                className="w-full bg-blue-600 text-white py-3 rounded-xl font-semibold hover:bg-blue-700 transition-colors"
+                className="w-full bg-brand text-white py-3 rounded-xl font-semibold hover:bg-brand-dark transition-colors"
               >
                 Get my free school trial →
               </button>

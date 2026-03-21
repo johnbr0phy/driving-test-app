@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { Check } from "lucide-react";
+import { Check, LayoutDashboard, RefreshCw, BarChart2 } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "TigerTest for Driving Schools — Bulk DMV Practice Test Pricing",
@@ -69,10 +69,7 @@ export default function SchoolsPage() {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 py-20 text-center">
-        <span className="inline-block bg-brand-light text-brand text-sm font-medium px-3 py-1 rounded-full mb-6">
-          For driving schools &amp; instructors
-        </span>
-        <h1 className="text-5xl font-bold text-gray-900 mb-6 leading-tight">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 tracking-tight">
           Prepare every student. Pass every time.
         </h1>
         <p className="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
@@ -99,9 +96,9 @@ export default function SchoolsPage() {
       </section>
 
       {/* Key benefits */}
-      <section className="bg-brand-light py-16">
+      <section className="py-20">
         <div className="max-w-4xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">
+          <h2 className="text-3xl font-bold text-gray-900 text-center mb-16">
             Why schools choose TigerTest
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -109,24 +106,30 @@ export default function SchoolsPage() {
               {
                 title: "Admin dashboard",
                 desc: "See every student's progress, tests taken, and pass-readiness at a glance.",
+                icon: <LayoutDashboard className="w-7 h-7 text-brand" />,
+                highlight: true,
               },
               {
                 title: "Reusable seats",
                 desc: "When a student graduates, free up their seat for the next one. No per-student fees.",
+                icon: <RefreshCw className="w-7 h-7 text-gray-500" />,
+                highlight: false,
               },
               {
                 title: "Usage tracking",
                 desc: "Know exactly how your investment is being used with detailed activity reports.",
+                icon: <BarChart2 className="w-7 h-7 text-gray-500" />,
+                highlight: false,
               },
             ].map((item) => (
-              <div
-                key={item.title}
-                className="bg-white rounded-xl p-6 shadow-sm"
-              >
-                <h3 className="font-semibold text-gray-900 mb-2">
-                  {item.title}
-                </h3>
-                <p className="text-gray-600 text-sm">{item.desc}</p>
+              <div key={item.title} className="relative pt-8">
+                <div className={`absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16 bg-white ${item.highlight ? "border-2 border-brand-border-light" : "border-2 border-gray-200"} rounded-full flex items-center justify-center shadow-sm`}>
+                  {item.icon}
+                </div>
+                <div className="bg-gray-50 rounded-2xl p-8 pt-12 text-center">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3">{item.title}</h3>
+                  <p className="text-gray-600">{item.desc}</p>
+                </div>
               </div>
             ))}
           </div>

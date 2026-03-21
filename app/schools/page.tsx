@@ -79,7 +79,7 @@ export default function SchoolsPage() {
         </p>
         <Link
           href="/schools/apply"
-          className="inline-block bg-brand text-white px-8 py-3 rounded-xl font-semibold hover:bg-brand-dark transition-colors"
+          className="inline-block bg-gray-900 text-white px-8 py-3 rounded-full font-semibold hover:bg-gray-800 transition-colors"
         >
           Get a quote
         </Link>
@@ -264,7 +264,7 @@ export default function SchoolsPage() {
         </p>
         <Link
           href="/schools/apply"
-          className="inline-block bg-brand text-white px-8 py-3 rounded-xl font-semibold hover:bg-brand-dark transition-colors"
+          className="inline-block bg-gray-900 text-white px-8 py-3 rounded-full font-semibold hover:bg-gray-800 transition-colors"
         >
           Get a quote
         </Link>

@@ -23,7 +23,7 @@ export default function SchoolsPage() {
       period: '/month',
       students: 'Up to 10 students',
       features: ['Full question bank access', 'Progress tracking', 'Pass prediction scores', 'Email support'],
-      cta: 'Start free trial',
+      cta: 'Get started',
       highlight: false,
     },
     {
@@ -32,7 +32,7 @@ export default function SchoolsPage() {
       period: '/month',
       students: 'Up to 30 students',
       features: ['Everything in Starter', 'Class dashboard', 'Bulk student invites', 'Priority support'],
-      cta: 'Start free trial',
+      cta: 'Get started',
       highlight: true,
     },
     {
@@ -63,7 +63,7 @@ export default function SchoolsPage() {
           href="#contact"
           className="inline-block bg-brand text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-brand-dark transition-colors"
         >
-          Start a free school trial →
+          Get school pricing →
         </a>
       </section>
 
@@ -90,7 +90,7 @@ export default function SchoolsPage() {
       {/* Pricing */}
       <section className="py-20 max-w-5xl mx-auto px-6">
         <h2 className="text-3xl font-bold text-gray-900 text-center mb-4">Simple school pricing</h2>
-        <p className="text-gray-600 text-center mb-12">All plans include a 14-day free trial. No credit card required.</p>
+        <p className="text-gray-600 text-center mb-12">Simple, transparent pricing for schools and driving instructors.</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {plans.map((plan) => (
             <div
@@ -198,7 +198,7 @@ export default function SchoolsPage() {
                 type="submit"
                 className="w-full bg-brand text-white py-3 rounded-xl font-semibold hover:bg-brand-dark transition-colors"
               >
-                Get my free school trial →
+                Get school pricing →
               </button>
             </form>
           )}

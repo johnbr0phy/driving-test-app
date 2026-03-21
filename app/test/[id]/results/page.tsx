@@ -14,6 +14,7 @@ import { useHydration } from "@/hooks/useHydration";
 import { Cloud } from "lucide-react";
 import { Fireworks } from "@/components/Fireworks";
 import { ShareButton } from "@/components/ShareButton";
+import { ChallengeButton } from "@/components/ChallengeButton";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { states } from "@/data/states";
 
@@ -247,23 +248,34 @@ export default function ResultsPage() {
           {/* Branding footer */}
           <div className="text-gray-600 text-sm tracking-wider mb-8">tigertest.io</div>
 
-          {/* SHARE + TRY AGAIN buttons */}
-          <div className="flex gap-3 max-w-xs mx-auto">
-            <ShareButton
+          {/* SHARE + CHALLENGE + TRY AGAIN buttons */}
+          <div className="flex flex-col gap-3 max-w-xs mx-auto">
+            <ChallengeButton
               score={score}
               totalQuestions={totalQuestions}
               percentage={percentage}
               passed={passed}
               testId={testId}
               stateCode={testSession.state}
-              className="flex-1 bg-white text-black hover:bg-gray-100 font-bold uppercase tracking-wide h-12 text-base"
+              className="w-full bg-orange-500 text-white hover:bg-orange-600 font-bold uppercase tracking-wide h-12 text-sm flex items-center justify-center gap-2"
             />
-            <Button
-              className="flex-1 bg-transparent text-white hover:bg-white/10 border border-white/30 font-bold uppercase tracking-wide h-12 text-base"
-              onClick={() => router.push(`/test/${testId}`)}
-            >
-              {t("results.tryAgain")}
-            </Button>
+            <div className="flex gap-3">
+              <ShareButton
+                score={score}
+                totalQuestions={totalQuestions}
+                percentage={percentage}
+                passed={passed}
+                testId={testId}
+                stateCode={testSession.state}
+                className="flex-1 bg-white text-black hover:bg-gray-100 font-bold uppercase tracking-wide h-12 text-base"
+              />
+              <Button
+                className="flex-1 bg-transparent text-white hover:bg-white/10 border border-white/30 font-bold uppercase tracking-wide h-12 text-base"
+                onClick={() => router.push(`/test/${testId}`)}
+              >
+                {t("results.tryAgain")}
+              </Button>
+            </div>
           </div>
         </div>
       </div>

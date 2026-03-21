@@ -66,7 +66,9 @@ export default function SchoolsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="max-w-4xl mx-auto px-6 py-20 text-center">
+      <section className="relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white pointer-events-none" />
+        <div className="relative max-w-4xl mx-auto px-6 py-20 text-center">
         <span className="inline-block bg-brand-light text-brand text-sm font-medium px-3 py-1 rounded-full mb-6">
           For driving schools &amp; instructors
         </span>
@@ -92,6 +94,7 @@ export default function SchoolsPage() {
             height={900}
             className="w-full h-auto"
           />
+        </div>
         </div>
       </section>
 

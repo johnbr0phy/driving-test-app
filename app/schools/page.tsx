@@ -48,14 +48,7 @@ export default function SchoolsPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
-      <nav className="border-b border-gray-100 px-6 py-4 flex items-center justify-between">
-        <Link href="/" className="text-xl font-bold text-blue-600">TigerTest</Link>
-        <a href="#contact" className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors">
-          Get school pricing
-        </a>
-      </nav>
-
+    <>
       <section className="max-w-4xl mx-auto px-6 py-20 text-center">
         <span className="inline-block bg-blue-50 text-blue-700 text-sm font-medium px-3 py-1 rounded-full mb-6">
           For driving schools &amp; instructors
@@ -201,10 +194,6 @@ export default function SchoolsPage() {
           )}
         </div>
       </section>
-
-      <footer className="border-t border-gray-100 py-8 text-center text-sm text-gray-400">
-        © 2026 TigerTest · <Link href="/" className="hover:text-gray-600">Back to TigerTest</Link>
-      </footer>
-    </div>
+    </>
   );
 }

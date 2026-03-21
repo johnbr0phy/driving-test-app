@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
 const initialForm = {
   schoolName: "",
@@ -67,18 +68,18 @@ export default function SchoolApplyPage() {
             We&apos;ll send a custom quote within one business day. In the meantime, try TigerTest yourself — it&apos;s the same experience your students will get.
           </p>
           <div className="flex flex-col gap-3 pt-2">
-            <a
+            <Link
               href="/"
               className="inline-block bg-brand text-white font-semibold px-6 py-3 rounded-xl hover:bg-brand-dark transition-colors"
             >
               Try TigerTest →
-            </a>
-            <a
+            </Link>
+            <Link
               href="/schools"
               className="inline-block text-brand text-sm font-medium hover:underline"
             >
               ← Back to the Schools page
-            </a>
+            </Link>
           </div>
         </div>
       </div>

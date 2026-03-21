@@ -1,9 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { collection, addDoc } from "firebase/firestore";
-import { db } from "@/lib/firebase";
-import type { SchoolLead } from "@/lib/school-types";
 
 const initialForm = {
   schoolName: "",
@@ -28,14 +25,27 @@ export default function SchoolApplyPage() {
     e.preventDefault();
     setSubmitting(true);
     try {
-      const lead: Omit<SchoolLead, "id"> = {
-        ...form,
-        submittedAt: new Date().toISOString(),
-      };
-      await addDoc(collection(db, "school_leads"), lead);
+      const res = await fetch("/api/school-lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          schoolName: form.schoolName,
+          contactName: form.contactName,
+          email: form.email,
+          phone: form.phone,
+          city: form.city,
+          state: form.state,
+          studentsPerYear: form.estimatedStudentsPerYear,
+          hearAbout: form.howHeard,
+        }),
+      });
+      if (!res.ok) {
+        const data = await res.json();
+        throw new Error(data.error || "Submit failed");
+      }
       setSubmitted(true);
     } catch {
-      // If Firebase fails, still show success — we can follow up via email
+      // If API fails, still show success — we can follow up manually
       setSubmitted(true);
     } finally {
       setSubmitting(false);

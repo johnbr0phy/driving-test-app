@@ -84,6 +84,15 @@ export default function SchoolsPage() {
         >
           Get a quote
         </Link>
+        <div className="mt-16 rounded-2xl overflow-hidden shadow-2xl border border-gray-200 max-w-4xl mx-auto">
+          <Image
+            src="/schools-dashboard-preview.png"
+            alt="TigerTest school dashboard showing student progress"
+            width={1200}
+            height={900}
+            className="w-full h-auto"
+          />
+        </div>
       </section>
 
       {/* Key benefits */}
@@ -236,25 +245,6 @@ export default function SchoolsPage() {
               </tbody>
             </table>
           </div>
-        </div>
-      </section>
-
-      {/* Dashboard preview */}
-      <section className="py-20 max-w-5xl mx-auto px-6 text-center">
-        <h2 className="text-3xl font-bold text-gray-900 mb-4">
-          See exactly where every student stands
-        </h2>
-        <p className="text-gray-600 mb-10 max-w-xl mx-auto">
-          Your school dashboard shows progress, activity, and pass-readiness at a glance — no chasing students for updates.
-        </p>
-        <div className="rounded-2xl overflow-hidden shadow-2xl border border-gray-200">
-          <Image
-            src="/schools-dashboard-preview.png"
-            alt="TigerTest school dashboard showing student progress"
-            width={1200}
-            height={900}
-            className="w-full h-auto"
-          />
         </div>
       </section>
 

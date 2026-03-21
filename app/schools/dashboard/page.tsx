@@ -16,16 +16,16 @@ const TOTAL_SEATS = 30;
 const mockStudents: SchoolStudent[] = [
   { uid: "1", name: "Alex Johnson", email: "alex.j@email.com", testsTaken: 8, lastActive: "2026-03-21", active: true },
   { uid: "2", name: "Maria Garcia", email: "maria.g@email.com", testsTaken: 5, lastActive: "2026-03-20", active: true },
-  { uid: "3", name: "James Wilson", email: "james.w@email.com", testsTaken: 12, lastActive: "2026-03-19", active: true },
+  { uid: "3", name: "James Wilson", email: "james.w@email.com", testsTaken: 8, lastActive: "2026-03-19", active: true },
   { uid: "4", name: "Sarah Chen", email: "sarah.c@email.com", testsTaken: 3, lastActive: "2026-03-18", active: true },
   { uid: "5", name: "David Kim", email: "david.k@email.com", testsTaken: 1, lastActive: "2026-03-15", active: true },
   { uid: "6", name: "Emily Davis", email: "emily.d@email.com", testsTaken: 7, lastActive: "2026-03-21", active: true },
   { uid: "7", name: "Ryan Martinez", email: "ryan.m@email.com", testsTaken: 4, lastActive: "2026-03-17", active: true },
   { uid: "8", name: "Olivia Brown", email: "olivia.b@email.com", testsTaken: 0, lastActive: "2026-03-10", active: false },
   { uid: "9", name: "Ethan Taylor", email: "ethan.t@email.com", testsTaken: 6, lastActive: "2026-03-20", active: true },
-  { uid: "10", name: "Sophia Lee", email: "sophia.l@email.com", testsTaken: 10, lastActive: "2026-03-21", active: true },
+  { uid: "10", name: "Sophia Lee", email: "sophia.l@email.com", testsTaken: 8, lastActive: "2026-03-21", active: true },
   { uid: "11", name: "Daniel Harris", email: "daniel.h@email.com", testsTaken: 2, lastActive: "2026-03-14", active: true },
-  { uid: "12", name: "Ava Robinson", email: "ava.r@email.com", testsTaken: 9, lastActive: "2026-03-19", active: true },
+  { uid: "12", name: "Ava Robinson", email: "ava.r@email.com", testsTaken: 8, lastActive: "2026-03-19", active: true },
 ];
 
 function getStats(students: SchoolStudent[]) {
@@ -206,7 +206,7 @@ export default function SchoolDashboardPage() {
                   <th className="px-6 py-3 font-medium text-gray-500">Name</th>
                   <th className="px-6 py-3 font-medium text-gray-500">Email</th>
                   <th className="px-6 py-3 font-medium text-gray-500 text-center">
-                    Tests taken
+                    Progress
                   </th>
                   <th className="px-6 py-3 font-medium text-gray-500">
                     Last active
@@ -229,8 +229,13 @@ export default function SchoolDashboardPage() {
                     <td className="px-6 py-4 text-gray-500">
                       {student.email}
                     </td>
-                    <td className="px-6 py-4 text-center text-gray-700">
-                      {student.testsTaken}
+                    <td className="px-6 py-4 text-center">
+                      <span className={`font-semibold ${Math.min(student.testsTaken, 8) >= 8 ? "text-green-600" : "text-gray-700"}`}>
+                        {Math.min(student.testsTaken, 8)}/8
+                      </span>
+                      {Math.min(student.testsTaken, 8) >= 8 && (
+                        <span className="ml-1 text-green-600">✓</span>
+                      )}
                     </td>
                     <td className="px-6 py-4 text-gray-500">
                       {student.lastActive}

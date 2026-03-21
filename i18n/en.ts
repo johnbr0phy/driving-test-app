@@ -44,8 +44,8 @@ export const en = {
 
   // Landing page
   landing: {
-    heroTitle: "Free DMV Practice Tests for All 50 States",
-    heroSubtitle: "200 state-specific questions. Tuned for mobile. No account needed.",
+    heroTitle: "Pass Your DMV Test on the First Try",
+    heroSubtitle: "200 state-specific questions. Free to start. $9.99 one-time premium.",
     trainOnMobile: "Train on mobile",
     testOnDesktop: "Test on desktop",
     howItWorks: "How It Works",

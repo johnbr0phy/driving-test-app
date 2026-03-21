@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { Smartphone, Monitor } from "lucide-react";
+import { Smartphone, Monitor, GraduationCap } from "lucide-react";
 import { states } from "@/data/states";
 import { HomeHero, HomeCTA } from "@/components/HomeHero";
 import { T } from "@/components/T";
@@ -9,6 +9,9 @@ import { T } from "@/components/T";
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
 export const metadata: Metadata = {
+  title: "TigerTest — Free DMV Practice Tests for All 50 States",
+  description:
+    "Pass your DMV permit test on the first try. 200 state-specific practice questions based on your state's driver's manual. Free to start, $9.99 one-time premium — no subscription.",
   alternates: {
     canonical: siteUrl,
   },
@@ -19,9 +22,9 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "WebApplication",
-      name: "TigerTest - Free DMV Practice Tests",
+      name: "TigerTest — Pass Your DMV Test on the First Try",
       description:
-        "Pass your US driving knowledge test with 200 state-specific practice questions. Free training mode, practice tests, and detailed analytics for all 50 states.",
+        "Pass your DMV permit test on the first try. 200 state-specific practice questions based on your state's driver's manual. Free to start, $9.99 one-time premium — no subscription.",
       url: siteUrl,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
@@ -129,8 +132,11 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 tracking-tight">
-            <T k="landing.heroTitle">Free DMV Practice Tests for All 50 States</T>
+            <T k="landing.heroTitle">Pass Your DMV Test on the First Try</T>
           </h1>
+          <p className="text-base md:text-lg text-gray-500 mb-2 max-w-xl mx-auto">
+            200 state-specific questions &middot; Free to start &middot; $9.99 one-time premium
+          </p>
           <HomeHero />
         </div>
       </div>
@@ -424,6 +430,25 @@ export default function Home() {
               <T k="landing.faq4A">Start with TigerTest&apos;s training mode to learn questions with instant feedback. Once you feel confident, take practice tests to simulate the real exam. Most users pass after completing all 4 training sets and scoring 80%+ on practice tests.</T>
             </p>
           </div>
+        </div>
+      </div>
+
+      {/* For Driving Schools */}
+      <div className="bg-white border-t border-b border-gray-100 py-8">
+        <div className="max-w-3xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="flex items-center gap-3">
+            <GraduationCap className="w-6 h-6 text-brand flex-shrink-0" />
+            <p className="text-gray-700">
+              <span className="font-semibold">Run a driving school?</span>{" "}
+              Give your students state-specific practice tests — bulk pricing available.
+            </p>
+          </div>
+          <Link
+            href="/schools"
+            className="text-brand hover:text-brand-dark font-medium whitespace-nowrap hover:underline"
+          >
+            Learn more &rarr;
+          </Link>
         </div>
       </div>
 

@@ -44,8 +44,8 @@ export const es: TranslationKeys = {
 
   // Landing page
   landing: {
-    heroTitle: "Exámenes de Práctica Gratuitos del DMV para los 50 Estados",
-    heroSubtitle: "200 preguntas específicas por estado. Optimizada para móvil. Sin necesidad de cuenta.",
+    heroTitle: "Aprueba Tu Examen del DMV al Primer Intento",
+    heroSubtitle: "200 preguntas específicas por estado. Gratis para empezar. $9.99 pago único premium.",
     trainOnMobile: "Entrena en el móvil",
     testOnDesktop: "Examínate en el escritorio",
     howItWorks: "Cómo Funciona",

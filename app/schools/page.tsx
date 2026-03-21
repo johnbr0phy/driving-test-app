@@ -238,17 +238,6 @@ export default function SchoolsPage() {
         </div>
       </section>
 
-      {/* Testimonial placeholder */}
-      <section className="py-20 max-w-3xl mx-auto px-6 text-center">
-        <blockquote className="text-xl text-gray-700 italic mb-6">
-          &ldquo;Since switching to TigerTest, our first-time pass rate went
-          from 68% to 91%. The admin dashboard saves me hours every week.&rdquo;
-        </blockquote>
-        <p className="text-sm text-gray-500">
-          — Driving school instructor (placeholder testimonial)
-        </p>
-      </section>
-
       {/* Bottom CTA */}
       <section className="bg-brand-light py-16 text-center">
         <h2 className="text-3xl font-bold text-gray-900 mb-4">

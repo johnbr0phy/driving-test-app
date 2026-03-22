@@ -16,6 +16,7 @@ import { Fireworks } from "@/components/Fireworks";
 import { ShareButton } from "@/components/ShareButton";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { states } from "@/data/states";
+import { EmailResultsCapture } from "@/components/EmailResultsCapture";
 
 function getTigerFace(percentage: number): string {
   if (percentage >= 100) return "/tiger_face_01.png";
@@ -338,6 +339,19 @@ export default function ResultsPage() {
               </div>
             </CardContent>
           </Card>
+        )}
+
+        {/* Email Results Capture — shown to all non-premium users */}
+        {!hasPremiumAccess && hydrated && testSession && (
+          <EmailResultsCapture
+            score={score}
+            totalQuestions={totalQuestions}
+            percentage={percentage}
+            passed={passed}
+            stateName={stateName}
+            testId={testId}
+            weakCategories={weakCategories}
+          />
         )}
 
         {/* Improvement Stats */}

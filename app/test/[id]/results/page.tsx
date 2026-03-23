@@ -452,6 +452,26 @@ export default function ResultsPage() {
           </Link>
         )}
 
+        {/* Cheat Sheet CTA */}
+        {!isGuest && (
+          <Link href="/cheat-sheet" className="block mb-6">
+            <Card className="border-brand-border-light bg-gradient-to-r from-brand-light to-brand-gradient-to cursor-pointer hover:shadow-md transition-shadow">
+              <CardContent className="py-4">
+                <div className="flex items-center gap-4">
+                  <div className="flex-shrink-0 w-10 h-10 bg-white rounded-full flex items-center justify-center">
+                    <span className="text-xl">📋</span>
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="font-bold text-gray-900 text-sm mb-0.5">Your Personal Study Guide</h3>
+                    <p className="text-xs text-gray-600">Every question you&apos;ve missed, grouped by topic — ready to print.</p>
+                  </div>
+                  <ChevronRight className="h-5 w-5 text-brand-muted flex-shrink-0" />
+                </div>
+              </CardContent>
+            </Card>
+          </Link>
+        )}
+
         {/* Question Review */}
         <div className="mb-4 flex items-center justify-between">
           <h2 className="text-2xl font-bold">{t("results.reviewQuestions")}</h2>

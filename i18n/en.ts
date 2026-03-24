@@ -455,8 +455,8 @@ export const en = {
       full_stats: "Full Question Stats",
     } as Record<string, string>,
     benefits: [
-      "Unlock Training Sets 3 & 4",
-      "Unlock Practice Tests 3 & 4",
+      "Unlock 50 state laws questions",
+      "Unlock 50 safety and emergencies questions",
       "See what you keep getting wrong",
       "See your accuracy on every question",
       "See the 20 questions most people fail",

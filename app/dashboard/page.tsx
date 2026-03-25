@@ -160,34 +160,23 @@ function DashboardContent() {
 
   // Hero subtitle variants (5 per progress state, picked randomly on mount)
   const heroSubVariants: string[][] = [
-    [ // 0 complete
-      t("dashboard.heroSub0"),
-    ],
-    [ // 1 complete
-      t("dashboard.heroSub1"),
-    ],
-    [ // 2 complete
-      t("dashboard.heroSub2"),
-    ],
-    [ // 3 complete
-      t("dashboard.heroSub3"),
-    ],
-    [ // 4 complete
-      t("dashboard.heroSub4"),
-    ],
-    [ // 5 complete
-      t("dashboard.heroSub5"),
-    ],
-    [ // 6 complete
-      t("dashboard.heroSub6"),
-    ],
-    [ // 7 complete
-      t("dashboard.heroSub7"),
-    ],
-    [ // 8 complete
-      t("dashboard.heroSub8"),
-    ],
+    [t("dashboard.heroSub0_0"), t("dashboard.heroSub0_1"), t("dashboard.heroSub0_2"), t("dashboard.heroSub0_3"), t("dashboard.heroSub0_4")],
+    [t("dashboard.heroSub1_0"), t("dashboard.heroSub1_1"), t("dashboard.heroSub1_2"), t("dashboard.heroSub1_3"), t("dashboard.heroSub1_4")],
+    [t("dashboard.heroSub2_0"), t("dashboard.heroSub2_1"), t("dashboard.heroSub2_2"), t("dashboard.heroSub2_3"), t("dashboard.heroSub2_4")],
+    [t("dashboard.heroSub3_0"), t("dashboard.heroSub3_1"), t("dashboard.heroSub3_2"), t("dashboard.heroSub3_3"), t("dashboard.heroSub3_4")],
+    [t("dashboard.heroSub4_0"), t("dashboard.heroSub4_1"), t("dashboard.heroSub4_2"), t("dashboard.heroSub4_3"), t("dashboard.heroSub4_4")],
+    [t("dashboard.heroSub5_0"), t("dashboard.heroSub5_1"), t("dashboard.heroSub5_2"), t("dashboard.heroSub5_3"), t("dashboard.heroSub5_4")],
+    [t("dashboard.heroSub6_0"), t("dashboard.heroSub6_1"), t("dashboard.heroSub6_2"), t("dashboard.heroSub6_3"), t("dashboard.heroSub6_4")],
+    [t("dashboard.heroSub7_0"), t("dashboard.heroSub7_1"), t("dashboard.heroSub7_2"), t("dashboard.heroSub7_3"), t("dashboard.heroSub7_4")],
+    [t("dashboard.heroSub8_0"), t("dashboard.heroSub8_1"), t("dashboard.heroSub8_2"), t("dashboard.heroSub8_3"), t("dashboard.heroSub8_4")],
   ];
+
+  const trainingNudgeVariants: string[] = [
+    t("dashboard.trainingNudge0"), t("dashboard.trainingNudge1"), t("dashboard.trainingNudge2"),
+    t("dashboard.trainingNudge3"), t("dashboard.trainingNudge4"),
+  ];
+
+  const [heroVariantIndex] = useState(() => Math.floor(Math.random() * 5));
 
   // Paywall state
   const [paywallOpen, setPaywallOpen] = useState(false);
@@ -371,8 +360,8 @@ function DashboardContent() {
     hydrated && trainingSetsCompleted >= 2 && !anyTestCompleted && totalTestQuestionsAnswered < 10;
 
   const heroSub = isTrainingHeavy
-    ? t("dashboard.trainingNudge")
-    : (heroSubVariants[completedSteps] ?? heroSubVariants[0])[0];
+    ? trainingNudgeVariants[heroVariantIndex]
+    : (heroSubVariants[completedSteps] ?? heroSubVariants[0])[heroVariantIndex];
 
   // Get tiger face image based on completion
   const getTigerFace = (complete: number, total: number): string => {

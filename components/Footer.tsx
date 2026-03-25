@@ -27,7 +27,7 @@ export function Footer() {
     <footer className="border-t bg-white mt-auto" data-theme={dataTheme}>
       <div className="container mx-auto px-4 py-6">
         {!isCDL && (
-          <div className="flex flex-wrap justify-center gap-x-3 gap-y-1 text-sm text-gray-500">
+          <div className="flex flex-wrap justify-center md:justify-between gap-x-3 gap-y-1 text-sm text-gray-500">
             {popularStates.map(
               (state) =>
                 state && (

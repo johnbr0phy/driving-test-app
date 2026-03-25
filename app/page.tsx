@@ -437,7 +437,7 @@ export default function Home() {
               I run a driving school. Can my students use TigerTest?
             </h3>
             <p className="text-gray-600">
-              Absolutely! We partner with driving schools to help students prepare for their permit test. Visit our <a href="/schools" className="text-brand hover:text-brand-dark underline">driving schools page</a> to learn more and get your school listed.
+              Absolutely! We partner with driving schools to help students prepare for their permit test. Visit our <Link href="/schools" className="text-brand hover:text-brand-dark underline">driving schools page</Link> to learn more and get your school listed.
             </p>
           </div>
         </div>

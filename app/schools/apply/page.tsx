@@ -58,7 +58,9 @@ export default function SchoolApplyPage() {
 
   if (submitted) {
     return (
-      <div className="max-w-lg mx-auto px-6 py-20 text-center">
+      <div className="flex-1 relative">
+        <div className="absolute inset-x-0 top-0 h-96 bg-gradient-to-b from-brand-light to-transparent pointer-events-none" />
+      <div className="relative max-w-lg mx-auto px-6 py-20 text-center">
         <div className="bg-green-50 border border-green-200 rounded-2xl p-10 space-y-6">
           <div className="text-5xl">🎉</div>
           <h2 className="text-2xl font-bold text-gray-900">
@@ -83,11 +85,14 @@ export default function SchoolApplyPage() {
           </div>
         </div>
       </div>
+      </div>
     );
   }
 
   return (
-    <div className="max-w-lg mx-auto px-6 py-20">
+    <div className="flex-1 relative">
+      <div className="absolute inset-x-0 top-0 h-96 bg-gradient-to-b from-brand-light to-transparent pointer-events-none" />
+    <div className="relative max-w-lg mx-auto px-6 py-20">
       <h1 className="text-3xl font-bold text-gray-900 text-center mb-3">
         Get a quote
       </h1>
@@ -225,6 +230,7 @@ export default function SchoolApplyPage() {
           {submitting ? "Submitting..." : "Request a quote"}
         </button>
       </form>
+    </div>
     </div>
   );
 }

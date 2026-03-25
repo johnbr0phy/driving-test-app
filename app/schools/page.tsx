@@ -70,7 +70,7 @@ export default function SchoolsPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 py-20 text-center">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 tracking-tight">
-          Prepare every student. Pass every time.
+          Prepare every student.<br />Pass every time.
         </h1>
         <p className="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
           TigerTest for Schools gives your students unlimited DMV practice with

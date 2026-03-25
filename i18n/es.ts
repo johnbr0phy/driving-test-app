@@ -152,6 +152,9 @@ export const es: TranslationKeys = {
     stampMastered: "Dominado!",
     stampPassed: "Aprobado!",
     stampKeepGoing: "Repítelo",
+    stampContinue: "Continúa",
+    stampStartHere: "Empieza aquí",
+    trainingNudge: "Dominaste el entrenamiento. Prueba un examen de práctica. Es lo más parecido al examen real.",
   },
 
   // Question categories (human-friendly display names)

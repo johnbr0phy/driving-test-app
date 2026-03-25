@@ -152,6 +152,9 @@ export const en = {
     stampMastered: "Mastered!",
     stampPassed: "Passed!",
     stampKeepGoing: "Retake it",
+    stampContinue: "Keep going",
+    stampStartHere: "Start here",
+    trainingNudge: "You've nailed the training. Try a practice test. It's the closest thing to the real exam.",
   },
 
   // Question categories (human-friendly display names)

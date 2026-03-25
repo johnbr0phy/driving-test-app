@@ -94,6 +94,14 @@ const jsonLd = {
         },
         {
           "@type": "Question",
+          name: "I run a driving school. Can my students use TigerTest?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes! TigerTest partners with driving schools to help students prepare for their permit test. Visit tigertest.io/schools to learn more about our driving school program and get your school listed.",
+          },
+        },
+        {
+          "@type": "Question",
           name: "Is TigerTest better than DMV practice tests from other sites?",
           acceptedAnswer: {
             "@type": "Answer",
@@ -422,6 +430,14 @@ export default function Home() {
             </h3>
             <p className="text-gray-600">
               <T k="landing.faq4A">Start with TigerTest&apos;s training mode to learn questions with instant feedback. Once you feel confident, take practice tests to simulate the real exam. Most users pass after completing all 4 training sets and scoring 80%+ on practice tests.</T>
+            </p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-lg text-gray-900 mb-2">
+              I run a driving school. Can my students use TigerTest?
+            </h3>
+            <p className="text-gray-600">
+              Absolutely! We partner with driving schools to help students prepare for their permit test. Visit our <a href="/schools" className="text-brand hover:text-brand-dark underline">driving schools page</a> to learn more and get your school listed.
             </p>
           </div>
         </div>

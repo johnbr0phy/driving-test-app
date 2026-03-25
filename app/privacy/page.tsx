@@ -71,7 +71,7 @@ export default function PrivacyPage() {
               <li>Request a copy of your data</li>
             </ul>
             <p className="text-gray-700 leading-relaxed mt-4">
-              To exercise these rights, email us at <a href="mailto:hello@tigertest.io" className="text-brand underline">hello@tigertest.io</a>
+              To exercise these rights, email us at <a href="mailto:john@johnbrophy.net" className="text-brand underline">john@johnbrophy.net</a>
             </p>
           </section>
 
@@ -113,8 +113,8 @@ export default function PrivacyPage() {
             <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
             <p className="text-gray-700 leading-relaxed">
               Questions about this privacy policy? Email us at{" "}
-              <a href="mailto:hello@tigertest.io" className="text-brand underline">
-                hello@tigertest.io
+              <a href="mailto:john@johnbrophy.net" className="text-brand underline">
+                john@johnbrophy.net
               </a>
             </p>
           </section>

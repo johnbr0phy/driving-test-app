@@ -27,7 +27,7 @@ export function Footer() {
     <footer className="border-t bg-white mt-auto" data-theme={dataTheme}>
       <div className="container mx-auto px-4 py-6">
         {!isCDL && (
-          <div className="flex flex-wrap justify-center gap-x-3 gap-y-1 text-sm text-gray-500">
+          <div className="flex flex-wrap justify-center md:justify-between gap-x-3 gap-y-1 text-sm text-gray-500">
             {popularStates.map(
               (state) =>
                 state && (
@@ -56,33 +56,32 @@ export function Footer() {
             </Link>
           </div>
         )}
-        <p className={`text-center text-sm text-gray-600 ${isCDL ? "" : "mt-4"}`}>
-          {t("footer.madeWith")}{" "}
-          <span className="text-red-500" aria-label="love">
-            ❤️
-          </span>{" "}
-          {t("footer.by")}{" "}
-          <a
-            href="https://x.com/JohnBr0"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-brand hover:text-brand-dark font-medium hover:underline"
-          >
-            @JohnBr0
-          </a>
-          .
-        </p>
-        <p className="text-center text-sm text-gray-600 mt-1">
-          <a
-            href="https://www.johnbrophy.net/contact"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-brand hover:text-brand-dark font-medium hover:underline"
-          >
-            {t("footer.sendMe")}
-          </a>{" "}
-          {t("footer.quoteIfPass")}
-        </p>
+        <div className={`flex flex-col md:flex-row md:items-center md:justify-between gap-2 text-sm text-gray-600 ${isCDL ? "" : "mt-4"}`}>
+          <p className="text-center md:text-left">
+            {t("footer.madeWith")}{" "}
+            <span className="text-red-500" aria-label="love">
+              ❤️
+            </span>{" "}
+            {t("footer.by")}{" "}
+            <a
+              href="https://x.com/JohnBr0"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-brand hover:text-brand-dark font-medium hover:underline"
+            >
+              @JohnBr0
+            </a>
+            .
+          </p>
+          <div className="flex justify-center md:justify-end gap-x-4 text-gray-500">
+            <Link href="/schools" className="hover:text-brand hover:underline">
+              Driving Schools
+            </Link>
+            <Link href="/privacy" className="hover:text-brand hover:underline">
+              Privacy Policy
+            </Link>
+          </div>
+        </div>
       </div>
     </footer>
   );

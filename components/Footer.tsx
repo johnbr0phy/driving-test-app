@@ -72,17 +72,14 @@ export function Footer() {
           </a>
           .
         </p>
-        <p className="text-center text-sm text-gray-600 mt-1">
-          <a
-            href="https://www.johnbrophy.net/contact"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-brand hover:text-brand-dark font-medium hover:underline"
-          >
-            {t("footer.sendMe")}
-          </a>{" "}
-          {t("footer.quoteIfPass")}
-        </p>
+        <div className="flex justify-center gap-x-4 text-sm text-gray-500 mt-2">
+          <Link href="/schools" className="hover:text-brand hover:underline">
+            Driving Schools
+          </Link>
+          <Link href="/privacy" className="hover:text-brand hover:underline">
+            Privacy Policy
+          </Link>
+        </div>
       </div>
     </footer>
   );

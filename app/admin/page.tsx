@@ -8,7 +8,7 @@ import { db } from "@/lib/firebase";
 import { deleteDoc, doc } from "firebase/firestore";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { states } from "@/data/states";
-import { ArrowLeft, Users, RefreshCw, Trash2, UserPlus, Activity, TrendingUp, TrendingDown, Minus, Share2 } from "lucide-react";
+import { ArrowLeft, Users, RefreshCw, Trash2, UserPlus, Activity, TrendingUp, TrendingDown, Minus, Share2, DollarSign } from "lucide-react";
 import { AreaChart, Area, BarChart, Bar, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from "recharts";
 import Link from "next/link";
 import Image from "next/image";
@@ -52,8 +52,9 @@ export default function AdminPage() {
   const [weeklyRetention, setWeeklyRetention] = useState<{ displayDate: string; count: number }[]>([]);
   const [dailyByState, setDailyByState] = useState<Record<string, unknown>[]>([]);
   const [dailyNewVsReturning, setDailyNewVsReturning] = useState<{ displayDate: string; new: number; returning: number }[]>([]);
+  const [paywallFunnel, setPaywallFunnel] = useState<{ displayDate: string; date: string; paywall_hit: number; paywall_training_set_4: number; paywall_practice_test_4: number; paywall_full_stats: number; paywall_cdl_training: number; paywall_cdl_test: number; checkout_start: number; purchase: number }[]>([]);
   const [top5States, setTop5States] = useState<string[]>([]);
-  const [graphMetric, setGraphMetric] = useState<'active' | 'retention' | 'cumulative' | 'byState' | 'newVsReturning'>('active');
+  const [graphMetric, setGraphMetric] = useState<'active' | 'retention' | 'cumulative' | 'byState' | 'newVsReturning' | 'paywall'>('active');
 
   const fetchUsers = async (forceRefresh = false) => {
     setLoading(true);
@@ -88,6 +89,7 @@ export default function AdminPage() {
       setWeeklyRetention(data.weeklyRetention || []);
       setDailyByState(data.dailyByState || []);
       setDailyNewVsReturning(data.dailyNewVsReturning || []);
+      setPaywallFunnel(data.paywallFunnel || []);
       setTop5States(data.top5States || []);
     } catch (err) {
       console.error("Error fetching users:", err);
@@ -327,6 +329,7 @@ export default function AdminPage() {
                 {graphMetric === 'cumulative' && 'Total Users (30 Days)'}
                 {graphMetric === 'byState' && 'Active by State (30 Days)'}
                 {graphMetric === 'newVsReturning' && 'New vs Returning (30 Days)'}
+                {graphMetric === 'paywall' && 'Paywall Funnel (30 Days)'}
               </CardTitle>
               <div className="flex flex-wrap gap-1">
                 {([
@@ -335,6 +338,7 @@ export default function AdminPage() {
                   { key: 'cumulative', label: 'Total' },
                   { key: 'byState', label: 'By State' },
                   { key: 'newVsReturning', label: 'New vs Ret.' },
+                  { key: 'paywall', label: 'Paywall' },
                 ] as const).map(({ key, label }) => (
                   <Button
                     key={key}
@@ -352,8 +356,43 @@ export default function AdminPage() {
           <CardContent>
             <div className="h-64">
               <ResponsiveContainer width="100%" height="100%">
-                {/* Active Users / Cumulative — simple area chart */}
-                {(graphMetric === 'active' || graphMetric === 'cumulative') ? (
+                {/* Paywall Funnel — bar chart */}
+                {graphMetric === 'paywall' ? (
+                  <BarChart
+                    data={paywallFunnel}
+                    margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
+                  >
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
+                    <XAxis dataKey="displayDate" tick={{ fontSize: 12 }} tickLine={false} axisLine={{ stroke: '#e5e7eb' }} interval="preserveStartEnd" tickMargin={8} />
+                    <YAxis tick={{ fontSize: 12 }} tickLine={false} axisLine={{ stroke: '#e5e7eb' }} allowDecimals={false} />
+                    <Tooltip
+                      contentStyle={{ backgroundColor: 'white', border: '1px solid #e5e7eb', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}
+                      formatter={(value, name) => {
+                        const labels: Record<string, string> = {
+                          paywall_hit: 'Paywall Views',
+                          checkout_start: 'Checkout Started',
+                          purchase: 'Purchased',
+                        };
+                        return [value, labels[name as string] || name];
+                      }}
+                    />
+                    <Legend
+                      formatter={(value) => {
+                        const labels: Record<string, string> = {
+                          paywall_hit: 'Paywall Views',
+                          checkout_start: 'Checkout Started',
+                          purchase: 'Purchased',
+                        };
+                        return labels[value] || value;
+                      }}
+                    />
+                    <Bar dataKey="paywall_hit" fill="#f59e0b" radius={[4, 4, 0, 0]} />
+                    <Bar dataKey="checkout_start" fill="#3b82f6" radius={[4, 4, 0, 0]} />
+                    <Bar dataKey="purchase" fill="#22c55e" radius={[4, 4, 0, 0]} />
+                  </BarChart>
+
+                /* Active Users / Cumulative — simple area chart */
+                ) : (graphMetric === 'active' || graphMetric === 'cumulative') ? (
                   <AreaChart
                     data={graphMetric === 'active' ? dailyActiveUsers : dailyCumulativeUsers}
                     margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
@@ -441,6 +480,109 @@ export default function AdminPage() {
             </div>
           </CardContent>
         </Card>
+
+        {/* Paywall Breakdown — only shown when paywall graph is active */}
+        {graphMetric === 'paywall' && (() => {
+          const totals = paywallFunnel.reduce((acc, day) => ({
+            paywall_hit: acc.paywall_hit + day.paywall_hit,
+            training_set_4: acc.training_set_4 + day.paywall_training_set_4,
+            practice_test_4: acc.practice_test_4 + day.paywall_practice_test_4,
+            full_stats: acc.full_stats + day.paywall_full_stats,
+            cdl_training: acc.cdl_training + day.paywall_cdl_training,
+            cdl_test: acc.cdl_test + day.paywall_cdl_test,
+            checkout_start: acc.checkout_start + day.checkout_start,
+            purchase: acc.purchase + day.purchase,
+          }), { paywall_hit: 0, training_set_4: 0, practice_test_4: 0, full_stats: 0, cdl_training: 0, cdl_test: 0, checkout_start: 0, purchase: 0 });
+
+          const convCheckout = totals.paywall_hit > 0 ? ((totals.checkout_start / totals.paywall_hit) * 100).toFixed(1) : '0';
+          const convPurchase = totals.checkout_start > 0 ? ((totals.purchase / totals.checkout_start) * 100).toFixed(1) : '0';
+          const convOverall = totals.paywall_hit > 0 ? ((totals.purchase / totals.paywall_hit) * 100).toFixed(1) : '0';
+
+          const paywallBreakdown = [
+            { label: 'Training Set 4', count: totals.training_set_4 },
+            { label: 'Practice Test 4', count: totals.practice_test_4 },
+            { label: 'Full Stats', count: totals.full_stats },
+            { label: 'CDL Training', count: totals.cdl_training },
+            { label: 'CDL Test', count: totals.cdl_test },
+          ].filter(p => p.count > 0);
+
+          return (
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+              {/* Funnel summary */}
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-base">30-Day Funnel</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-3">
+                    <div className="flex items-center justify-between">
+                      <span className="text-sm text-gray-600">Paywall Views</span>
+                      <span className="font-bold text-lg">{totals.paywall_hit}</span>
+                    </div>
+                    <div className="w-full bg-gray-100 rounded-full h-2">
+                      <div className="bg-amber-400 h-2 rounded-full" style={{ width: '100%' }} />
+                    </div>
+
+                    <div className="flex items-center justify-between">
+                      <span className="text-sm text-gray-600">Checkout Started</span>
+                      <span className="font-bold text-lg">{totals.checkout_start} <span className="text-sm font-normal text-gray-400">({convCheckout}%)</span></span>
+                    </div>
+                    <div className="w-full bg-gray-100 rounded-full h-2">
+                      <div className="bg-blue-500 h-2 rounded-full" style={{ width: `${totals.paywall_hit > 0 ? (totals.checkout_start / totals.paywall_hit) * 100 : 0}%` }} />
+                    </div>
+
+                    <div className="flex items-center justify-between">
+                      <span className="text-sm text-gray-600">Purchased</span>
+                      <span className="font-bold text-lg">{totals.purchase} <span className="text-sm font-normal text-gray-400">({convPurchase}% of checkout)</span></span>
+                    </div>
+                    <div className="w-full bg-gray-100 rounded-full h-2">
+                      <div className="bg-green-500 h-2 rounded-full" style={{ width: `${totals.paywall_hit > 0 ? (totals.purchase / totals.paywall_hit) * 100 : 0}%` }} />
+                    </div>
+
+                    <div className="pt-2 border-t">
+                      <div className="flex items-center justify-between">
+                        <span className="text-sm font-medium text-gray-700">Overall Conversion</span>
+                        <span className="font-bold text-brand">{convOverall}%</span>
+                      </div>
+                      <p className="text-xs text-gray-400 mt-1">
+                        Revenue (30d): ${(totals.purchase * 9.99).toFixed(2)}
+                      </p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Paywall breakdown by type */}
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-base">Paywall Views by Type</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  {paywallBreakdown.length > 0 ? (
+                    <div className="space-y-3">
+                      {paywallBreakdown.sort((a, b) => b.count - a.count).map(({ label, count }) => (
+                        <div key={label}>
+                          <div className="flex items-center justify-between mb-1">
+                            <span className="text-sm text-gray-600">{label}</span>
+                            <span className="font-medium">{count}</span>
+                          </div>
+                          <div className="w-full bg-gray-100 rounded-full h-2">
+                            <div
+                              className="bg-amber-400 h-2 rounded-full"
+                              style={{ width: `${totals.paywall_hit > 0 ? (count / totals.paywall_hit) * 100 : 0}%` }}
+                            />
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  ) : (
+                    <p className="text-sm text-gray-400">No paywall breakdown data yet. Data will appear as users encounter paywalls.</p>
+                  )}
+                </CardContent>
+              </Card>
+            </div>
+          );
+        })()}
 
         {/* Users by State Summary */}
         {sortedStateCounts.length > 0 && (

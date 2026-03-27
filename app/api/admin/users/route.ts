@@ -115,7 +115,7 @@ export async function GET(request: NextRequest) {
     //
     const db = getAdminDb();
 
-    const [lightSnap, fullSnap, sharesDoc] = await Promise.all([
+    const [lightSnap, fullSnap, sharesDoc, paywallDoc, paymentsSnap] = await Promise.all([
       db.collection('users')
         .select('selectedState', 'lastUpdated', 'activeDates', 'subscription', 'createdAt')
         .get(),
@@ -124,6 +124,11 @@ export async function GET(request: NextRequest) {
         .limit(100)
         .get(),
       db.doc('analytics/shares').get(),
+      db.doc('analytics/paywall').get(),
+      db.collection('payments')
+        .orderBy('createdAt', 'desc')
+        .limit(500)
+        .get(),
     ]);
 
     // ── Aggregate stats from ALL users ─────────────────────────────────────
@@ -309,6 +314,37 @@ export async function GET(request: NextRequest) {
 
     const sharesData = sharesDoc.exists ? sharesDoc.data() : null;
 
+    // ── Paywall funnel chart data ────────────────────────────────────────────
+    const paywallData = paywallDoc.exists ? (paywallDoc.data()?.daily as Record<string, Record<string, number>> || {}) : {};
+
+    // Build daily payment counts from the payments collection
+    const dailyPaymentCounts: Record<string, number> = {};
+    paymentsSnap.docs.forEach(doc => {
+      const data = doc.data();
+      const date = (data.createdAt as string)?.split('T')[0];
+      if (date) {
+        dailyPaymentCounts[date] = (dailyPaymentCounts[date] || 0) + 1;
+      }
+    });
+
+    const paywallFunnel = last30Dates.map(dateStr => {
+      const dayData = paywallData[dateStr] || {};
+      // Use payment collection as source of truth for purchases, fall back to analytics event
+      const purchaseCount = dailyPaymentCounts[dateStr] || dayData.purchase || 0;
+      return {
+        displayDate: new Date(dateStr + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
+        date: dateStr,
+        paywall_hit: dayData.paywall_hit || 0,
+        paywall_training_set_4: dayData.paywall_training_set_4 || 0,
+        paywall_practice_test_4: dayData.paywall_practice_test_4 || 0,
+        paywall_full_stats: dayData.paywall_full_stats || 0,
+        paywall_cdl_training: dayData.paywall_cdl_training || 0,
+        paywall_cdl_test: dayData.paywall_cdl_test || 0,
+        checkout_start: dayData.checkout_start || 0,
+        purchase: purchaseCount,
+      };
+    });
+
     const payload = {
       users,
       dailyActiveUsers,
@@ -316,6 +352,7 @@ export async function GET(request: NextRequest) {
       weeklyRetention,
       dailyByState,
       dailyNewVsReturning,
+      paywallFunnel,
       top5States,
       totalUsers,
       stats: {

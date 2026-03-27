@@ -12,6 +12,14 @@ const PREMIUM_ITEM = {
   quantity: 1,
 };
 
+function trackPaywallEvent(event: string, paywall?: string) {
+  fetch("/api/analytics/paywall", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ event, paywall }),
+  }).catch(() => {});
+}
+
 export function trackViewItem(location?: string) {
   window.gtag?.("event", "view_item", {
     currency: "USD",
@@ -28,6 +36,7 @@ export function trackBeginCheckout(location?: string) {
     items: [PREMIUM_ITEM],
     ...(location && { location }),
   });
+  trackPaywallEvent("checkout_start");
 }
 
 export function trackPaywallHit(itemId: string, itemName: string, location = "dashboard") {
@@ -36,6 +45,7 @@ export function trackPaywallHit(itemId: string, itemName: string, location = "da
     item_name: itemName,
     location,
   });
+  trackPaywallEvent("paywall_hit", itemId);
 }
 
 export function trackPaywallDismissed(location = "dashboard") {
@@ -49,4 +59,5 @@ export function trackPurchase(transactionId: string) {
     value: 9.99,
     items: [PREMIUM_ITEM],
   });
+  trackPaywallEvent("purchase");
 }

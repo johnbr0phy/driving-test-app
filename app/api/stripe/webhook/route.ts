@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getStripe } from '@/lib/stripe';
 import { getAdminDb } from '@/lib/firebase-admin';
+import { FieldValue } from 'firebase-admin/firestore';
 import Stripe from 'stripe';
 
 export async function POST(request: NextRequest) {
@@ -76,6 +77,12 @@ export async function POST(request: NextRequest) {
         email: session.metadata?.email || session.customer_email,
         createdAt: new Date().toISOString(),
       });
+
+      // Track purchase event in Firestore analytics
+      const today = new Date().toISOString().split('T')[0];
+      adminDb.doc('analytics/paywall').set({
+        [`daily.${today}.purchase`]: FieldValue.increment(1),
+      }, { merge: true }).catch(() => {});
 
       console.log(`Premium activated for user ${userId}`);
       break;

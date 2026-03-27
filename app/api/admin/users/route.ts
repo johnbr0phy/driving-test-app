@@ -330,17 +330,21 @@ export async function GET(request: NextRequest) {
     const paywallFunnel = last30Dates.map(dateStr => {
       const dayData = paywallData[dateStr] || {};
       // Use payment collection as source of truth for purchases, fall back to analytics event
-      const purchaseCount = dailyPaymentCounts[dateStr] || dayData.purchase || 0;
+      const purchaseCount = Math.max(dailyPaymentCounts[dateStr] || 0, dayData.purchase || 0);
+      // Checkout starts: use tracked data, but backfill from payments (every purchase had a checkout)
+      const checkoutCount = Math.max(dayData.checkout_start || 0, purchaseCount);
+      // Paywall hits: use tracked data, but backfill from checkouts (every checkout had a paywall view)
+      const paywallHitCount = Math.max(dayData.paywall_hit || 0, checkoutCount);
       return {
         displayDate: new Date(dateStr + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
         date: dateStr,
-        paywall_hit: dayData.paywall_hit || 0,
+        paywall_hit: paywallHitCount,
         paywall_training_set_4: dayData.paywall_training_set_4 || 0,
         paywall_practice_test_4: dayData.paywall_practice_test_4 || 0,
         paywall_full_stats: dayData.paywall_full_stats || 0,
         paywall_cdl_training: dayData.paywall_cdl_training || 0,
         paywall_cdl_test: dayData.paywall_cdl_test || 0,
-        checkout_start: dayData.checkout_start || 0,
+        checkout_start: checkoutCount,
         purchase: purchaseCount,
       };
     });

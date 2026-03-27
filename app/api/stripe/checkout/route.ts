@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getStripe, PREMIUM_PRICE_ID, PREMIUM_PRODUCT } from '@/lib/stripe';
 import { getAdminDb, getAdminAuth } from '@/lib/firebase-admin';
+import { FieldValue } from 'firebase-admin/firestore';
 
 export async function POST(request: NextRequest) {
   try {
@@ -97,6 +98,12 @@ export async function POST(request: NextRequest) {
         ...(location && { location }),
       },
     });
+
+    // Track checkout_start event in Firestore
+    const today = new Date().toISOString().split('T')[0];
+    adminDb.doc('analytics/paywall').set({
+      [`daily.${today}.checkout_start`]: FieldValue.increment(1),
+    }, { merge: true }).catch(() => {});
 
     return NextResponse.json({ checkoutUrl: session.url });
   } catch (error) {

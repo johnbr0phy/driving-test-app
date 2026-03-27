@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getAdminDb, getAdminAuth } from '@/lib/firebase-admin';
 import { isAdminEmail } from '@/lib/admin';
+import { getStripe } from '@/lib/stripe';
 
 // ─── Server-side in-memory cache ───────────────────────────────────────────
 const CACHE_TTL_MS = 120_000; // 2 minutes
@@ -317,23 +318,55 @@ export async function GET(request: NextRequest) {
     // ── Paywall funnel chart data ────────────────────────────────────────────
     const paywallData = paywallDoc.exists ? (paywallDoc.data()?.daily as Record<string, Record<string, number>> || {}) : {};
 
-    // Build daily payment counts from the payments collection
-    const dailyPaymentCounts: Record<string, number> = {};
-    paymentsSnap.docs.forEach(doc => {
-      const data = doc.data();
-      const date = (data.createdAt as string)?.split('T')[0];
-      if (date) {
-        dailyPaymentCounts[date] = (dailyPaymentCounts[date] || 0) + 1;
+    // Fetch checkout sessions and payments from Stripe for the last 30 days
+    const thirtyDaysAgoTs = Math.floor(new Date(last30Dates[0] + 'T00:00:00').getTime() / 1000);
+    const stripeCheckoutCounts: Record<string, number> = {};
+    const stripePurchaseCounts: Record<string, number> = {};
+
+    try {
+      const stripe = getStripe();
+
+      // Fetch all checkout sessions (both completed and incomplete) from last 30 days
+      const allSessions: { created: number; payment_status: string }[] = [];
+      let hasMore = true;
+      let startingAfter: string | undefined;
+      while (hasMore) {
+        const params: Record<string, unknown> = {
+          created: { gte: thirtyDaysAgoTs },
+          limit: 100,
+        };
+        if (startingAfter) params.starting_after = startingAfter;
+        const batch = await stripe.checkout.sessions.list(params as Parameters<typeof stripe.checkout.sessions.list>[0]);
+        allSessions.push(...batch.data.map(s => ({ created: s.created, payment_status: s.payment_status })));
+        hasMore = batch.has_more;
+        if (batch.data.length > 0) startingAfter = batch.data[batch.data.length - 1].id;
       }
-    });
+
+      for (const session of allSessions) {
+        const dateStr = new Date(session.created * 1000).toISOString().split('T')[0];
+        stripeCheckoutCounts[dateStr] = (stripeCheckoutCounts[dateStr] || 0) + 1;
+        if (session.payment_status === 'paid') {
+          stripePurchaseCounts[dateStr] = (stripePurchaseCounts[dateStr] || 0) + 1;
+        }
+      }
+    } catch (e) {
+      // Stripe not configured or API error — fall back to Firestore payments collection
+      console.error('[admin/users] Stripe fetch failed, using Firestore fallback:', e);
+      paymentsSnap.docs.forEach(doc => {
+        const data = doc.data();
+        const date = (data.createdAt as string)?.split('T')[0];
+        if (date) {
+          stripePurchaseCounts[date] = (stripePurchaseCounts[date] || 0) + 1;
+          stripeCheckoutCounts[date] = (stripeCheckoutCounts[date] || 0) + 1;
+        }
+      });
+    }
 
     const paywallFunnel = last30Dates.map(dateStr => {
       const dayData = paywallData[dateStr] || {};
-      // Use payment collection as source of truth for purchases, fall back to analytics event
-      const purchaseCount = Math.max(dailyPaymentCounts[dateStr] || 0, dayData.purchase || 0);
-      // Checkout starts: use tracked data, but backfill from payments (every purchase had a checkout)
-      const checkoutCount = Math.max(dayData.checkout_start || 0, purchaseCount);
-      // Paywall hits: use tracked data, but backfill from checkouts (every checkout had a paywall view)
+      const purchaseCount = stripePurchaseCounts[dateStr] || 0;
+      const checkoutCount = stripeCheckoutCounts[dateStr] || 0;
+      // Paywall hits: use Firestore tracking, but at minimum equal to checkout count
       const paywallHitCount = Math.max(dayData.paywall_hit || 0, checkoutCount);
       return {
         displayDate: new Date(dateStr + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),

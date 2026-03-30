@@ -9,6 +9,12 @@ export interface SchoolAccount {
   active: boolean;
 }
 
+export interface TopicScore {
+  topic: string;
+  correct: number;
+  total: number;
+}
+
 export interface SchoolStudent {
   uid: string;
   name: string;
@@ -16,6 +22,9 @@ export interface SchoolStudent {
   testsTaken: number;
   lastActive: string;
   active: boolean;
+  avgScore?: number; // 0–100
+  topicScores?: TopicScore[];
+  trend?: "improving" | "declining" | "steady" | "new";
 }
 
 export interface SchoolLead {

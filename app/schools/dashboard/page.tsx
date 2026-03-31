@@ -110,7 +110,7 @@ export default function SchoolDashboardPage() {
                   <th className="px-6 py-3 text-left text-xs font-medium text-gray-500">
                     Student
                   </th>
-                  <th className="px-6 py-3 text-center text-xs font-medium text-gray-500">
+                  <th className="px-6 py-3 text-center text-xs font-medium text-gray-500 min-w-[180px]">
                     Progress
                   </th>
                   <th className="px-6 py-3 w-16" />
@@ -132,17 +132,33 @@ export default function SchoolDashboardPage() {
                         <p className="text-xs text-gray-400 mt-0.5">{student.email}</p>
                       </td>
 
-                      {/* Progress: X/8 */}
-                      <td className="px-6 py-4 text-center">
-                        <span
-                          className={`text-sm font-semibold tabular-nums ${
-                            done >= TOTAL_SECTIONS
-                              ? "text-green-600"
-                              : "text-gray-700"
-                          }`}
-                        >
-                          {done}/{TOTAL_SECTIONS}
-                        </span>
+                      {/* Progress: bar + X/8 */}
+                      <td className="px-6 py-4">
+                        <div className="flex items-center gap-3 justify-center">
+                          {/* Mini progress bar */}
+                          <div className="w-24 h-2 bg-gray-100 rounded-full overflow-hidden flex-shrink-0">
+                            <div
+                              className={`h-full rounded-full transition-all ${
+                                done >= TOTAL_SECTIONS
+                                  ? "bg-green-500"
+                                  : done >= TOTAL_SECTIONS / 2
+                                  ? "bg-brand"
+                                  : "bg-gray-300"
+                              }`}
+                              style={{ width: `${(done / TOTAL_SECTIONS) * 100}%` }}
+                            />
+                          </div>
+                          {/* Fraction */}
+                          <span
+                            className={`text-sm font-semibold tabular-nums w-8 text-right flex-shrink-0 ${
+                              done >= TOTAL_SECTIONS
+                                ? "text-green-600"
+                                : "text-gray-700"
+                            }`}
+                          >
+                            {done}/{TOTAL_SECTIONS}
+                          </span>
+                        </div>
                       </td>
 
                       {/* Remove */}

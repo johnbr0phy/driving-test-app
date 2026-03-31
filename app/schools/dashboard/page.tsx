@@ -105,12 +105,10 @@ export default function SchoolDashboardPage() {
   return (
     <div className="max-w-3xl mx-auto px-6 py-10">
       {/* Header */}
-      <div className="flex items-start justify-between gap-4 mb-8">
+      <div className="flex items-start justify-between gap-4 mb-6">
         <div>
           <h1 className="text-2xl font-bold text-gray-900">{SCHOOL_NAME}</h1>
-          <p className="text-sm text-gray-500 mt-0.5">
-            {PLAN_TIER} plan &middot; {activeStudents.length}/{TOTAL_SEATS} seats used
-          </p>
+          <p className="text-sm text-gray-500 mt-0.5">{PLAN_TIER} plan &middot; Instructor Dashboard</p>
         </div>
         <Button
           onClick={() => setShowInvite(true)}
@@ -121,6 +119,38 @@ export default function SchoolDashboardPage() {
           Add students
         </Button>
       </div>
+
+      {/* Seat counter */}
+      {(() => {
+        const used = activeStudents.length;
+        const pct = Math.round((used / TOTAL_SEATS) * 100);
+        const remaining = TOTAL_SEATS - used;
+        const barColor =
+          pct >= 90 ? "bg-red-500" : pct >= 70 ? "bg-yellow-400" : "bg-brand";
+        const textColor =
+          pct >= 90 ? "text-red-600" : pct >= 70 ? "text-yellow-600" : "text-gray-700";
+        return (
+          <div className="mb-8 bg-white border border-gray-200 rounded-xl px-5 py-4 shadow-sm">
+            <div className="flex items-center justify-between mb-2">
+              <span className="text-sm font-semibold text-gray-700">Seats used</span>
+              <span className={`text-sm font-bold tabular-nums ${textColor}`}>
+                {used} / {TOTAL_SEATS}
+              </span>
+            </div>
+            <div className="w-full h-2.5 bg-gray-100 rounded-full overflow-hidden">
+              <div
+                className={`h-full rounded-full transition-all ${barColor}`}
+                style={{ width: `${pct}%` }}
+              />
+            </div>
+            <p className="text-xs text-gray-400 mt-2">
+              {remaining > 0
+                ? `${remaining} seat${remaining !== 1 ? "s" : ""} remaining on your ${PLAN_TIER} plan`
+                : `All ${TOTAL_SEATS} seats filled — upgrade to add more students`}
+            </p>
+          </div>
+        );
+      })()}
 
       {/* Student table */}
       <Card>

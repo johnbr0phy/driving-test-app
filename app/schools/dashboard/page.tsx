@@ -1,9 +1,10 @@
 "use client";
 
-import { useState, useMemo, useRef } from "react";
+import { useState, useMemo, useRef, useEffect, useCallback, Suspense } from "react";
+import { useSearchParams } from "next/navigation";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { UserPlus, Trash2, AlertTriangle, CheckCircle2, X, Clock, Check } from "lucide-react";
+import { UserPlus, Trash2, AlertTriangle, CheckCircle2, X, Clock, Check, Loader2 } from "lucide-react";
 import type { SchoolStudent } from "@/lib/school-types";
 
 // --- Config ---
@@ -136,11 +137,59 @@ function StatusBadge({ status }: { status: "active" | "pending" }) {
   );
 }
 
+// Wrap in Suspense at the export level so useSearchParams doesn't block prerender
 export default function SchoolDashboardPage() {
-  const [students, setStudents] = useState<SchoolStudent[]>(mockStudents);
+  return (
+    <Suspense fallback={
+      <div className="max-w-3xl mx-auto px-6 py-24 flex flex-col items-center gap-4 text-gray-400">
+        <Loader2 className="h-8 w-8 animate-spin text-brand" />
+        <p className="text-sm">Loading…</p>
+      </div>
+    }>
+      <DashboardInner />
+    </Suspense>
+  );
+}
+
+function DashboardInner() {
+  const searchParams = useSearchParams();
+  // schoolId comes from ?school=<id> query param when a real school is logged in.
+  // Falls back to null → mock data mode.
+  const schoolId = searchParams.get("school");
+
+  const [students, setStudents] = useState<SchoolStudent[]>(
+    schoolId ? [] : mockStudents
+  );
+  const [loading, setLoading] = useState(!!schoolId);
+  const [error, setError] = useState<string | null>(null);
+
   const [showInvite, setShowInvite] = useState(false);
   const [inviteEmails, setInviteEmails] = useState("");
+  const [inviting, setInviting] = useState(false);
   const [removeConfirm, setRemoveConfirm] = useState<string | null>(null);
+
+  // ── Load students from Firestore (via API) when schoolId is present ──────
+  const fetchStudents = useCallback(async () => {
+    if (!schoolId) return;
+    setLoading(true);
+    setError(null);
+    try {
+      const res = await fetch(`/api/schools/${schoolId}/students`);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = await res.json();
+      setStudents(data.students ?? []);
+    } catch (err) {
+      console.error("[fetchStudents]", err);
+      setError("Couldn't load students. Showing demo data.");
+      setStudents(mockStudents);
+    } finally {
+      setLoading(false);
+    }
+  }, [schoolId]);
+
+  useEffect(() => {
+    fetchStudents();
+  }, [fetchStudents]);
 
   const activeStudents = students.filter((s) => s.active);
 
@@ -161,29 +210,75 @@ export default function SchoolDashboardPage() {
   ).length;
   const overSeatLimit = newEmailCount > seatsRemaining;
 
-  const handleInvite = () => {
+  const handleInvite = async () => {
     const emails = parsedEmails.filter(
       (e) => !students.some((s) => s.active && s.email.toLowerCase() === e)
     );
-    const newStudents: SchoolStudent[] = emails.map((email, i) => ({
-      uid: `new-${Date.now()}-${i}`,
-      name: email.split("@")[0],
-      email,
-      testsTaken: 0,
-      lastActive: new Date().toISOString().split("T")[0],
-      active: true,
-    }));
-    setStudents((prev) => [...prev, ...newStudents]);
+    if (!emails.length) return;
+
+    if (schoolId) {
+      // Firebase write
+      setInviting(true);
+      try {
+        const res = await fetch(`/api/schools/${schoolId}/students`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ emails }),
+        });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        await fetchStudents(); // re-sync from Firestore
+      } catch (err) {
+        console.error("[handleInvite]", err);
+        setError("Failed to add students. Please try again.");
+      } finally {
+        setInviting(false);
+      }
+    } else {
+      // Mock mode: optimistic update
+      const newStudents: SchoolStudent[] = emails.map((email, i) => ({
+        uid: `new-${Date.now()}-${i}`,
+        name: email.split("@")[0],
+        email,
+        testsTaken: 0,
+        lastActive: new Date().toISOString().split("T")[0],
+        active: true,
+      }));
+      setStudents((prev) => [...prev, ...newStudents]);
+    }
+
     setInviteEmails("");
     setShowInvite(false);
   };
 
-  const handleRemove = (uid: string) => {
-    setStudents((prev) =>
-      prev.map((s) => (s.uid === uid ? { ...s, active: false } : s))
-    );
+  const handleRemove = async (uid: string) => {
+    if (schoolId) {
+      // Firebase soft-delete
+      try {
+        const res = await fetch(`/api/schools/${schoolId}/students/${uid}`, {
+          method: "DELETE",
+        });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        // Optimistic: remove from local state immediately
+        setStudents((prev) => prev.map((s) => (s.uid === uid ? { ...s, active: false } : s)));
+      } catch (err) {
+        console.error("[handleRemove]", err);
+        setError("Failed to remove student. Please try again.");
+      }
+    } else {
+      // Mock mode
+      setStudents((prev) => prev.map((s) => (s.uid === uid ? { ...s, active: false } : s)));
+    }
     setRemoveConfirm(null);
   };
+
+  if (loading) {
+    return (
+      <div className="max-w-3xl mx-auto px-6 py-24 flex flex-col items-center gap-4 text-gray-400">
+        <Loader2 className="h-8 w-8 animate-spin text-brand" />
+        <p className="text-sm">Loading student data…</p>
+      </div>
+    );
+  }
 
   return (
     <div className="max-w-3xl mx-auto px-6 py-10">
@@ -191,7 +286,14 @@ export default function SchoolDashboardPage() {
       <div className="flex items-start justify-between gap-4 mb-6">
         <div>
           <h1 className="text-2xl font-bold text-gray-900">{SCHOOL_NAME}</h1>
-          <p className="text-sm text-gray-500 mt-0.5">{PLAN_TIER} plan &middot; Instructor Dashboard</p>
+          <p className="text-sm text-gray-500 mt-0.5">
+            {PLAN_TIER} plan &middot; Instructor Dashboard
+            {schoolId ? null : (
+              <span className="ml-2 text-xs bg-amber-100 text-amber-700 px-2 py-0.5 rounded-full font-medium">
+                Demo mode
+              </span>
+            )}
+          </p>
         </div>
         <Button
           onClick={() => setShowInvite(true)}
@@ -202,6 +304,19 @@ export default function SchoolDashboardPage() {
           Add students
         </Button>
       </div>
+
+      {/* Error banner */}
+      {error && (
+        <div className="mb-5 bg-amber-50 border border-amber-200 rounded-xl px-4 py-3 flex items-center justify-between gap-3">
+          <div className="flex items-center gap-2 text-sm text-amber-800">
+            <AlertTriangle className="h-4 w-4 text-amber-500 flex-shrink-0" />
+            {error}
+          </div>
+          <button onClick={() => setError(null)} className="text-amber-500 hover:text-amber-700">
+            <X className="h-4 w-4" />
+          </button>
+        </div>
+      )}
 
       {/* Seat counter */}
       {(() => {
@@ -409,13 +524,20 @@ export default function SchoolDashboardPage() {
                 Cancel
               </Button>
               <Button
-                className="flex-1 bg-brand text-white hover:bg-brand-dark"
+                className="flex-1 bg-brand text-white hover:bg-brand-dark gap-1.5"
                 onClick={handleInvite}
-                disabled={newEmailCount === 0 || overSeatLimit}
+                disabled={newEmailCount === 0 || overSeatLimit || inviting}
               >
-                {newEmailCount > 0
-                  ? `Invite ${newEmailCount} student${newEmailCount !== 1 ? "s" : ""}`
-                  : "Invite"}
+                {inviting ? (
+                  <>
+                    <Loader2 className="h-4 w-4 animate-spin" />
+                    Inviting…
+                  </>
+                ) : newEmailCount > 0 ? (
+                  `Invite ${newEmailCount} student${newEmailCount !== 1 ? "s" : ""}`
+                ) : (
+                  "Invite"
+                )}
               </Button>
             </div>
           </div>

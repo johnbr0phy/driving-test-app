@@ -3,7 +3,7 @@
 import { useState, useMemo } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { UserPlus, Trash2, AlertTriangle, CheckCircle2, X } from "lucide-react";
+import { UserPlus, Trash2, AlertTriangle, CheckCircle2, X, Clock } from "lucide-react";
 import type { SchoolStudent } from "@/lib/school-types";
 
 // --- Config ---
@@ -27,6 +27,31 @@ const mockStudents: SchoolStudent[] = [
   { uid: "11", name: "Daniel Harris",   email: "daniel.h@email.com", testsTaken: 2, lastActive: "2026-03-18", active: true },
   { uid: "12", name: "Ava Robinson",    email: "ava.r@email.com",    testsTaken: 8, lastActive: "2026-03-27", active: true },
 ];
+
+/** Determine if a student is "Active" (tested in last 14 days) or "Pending" (not started / inactive) */
+function getStudentStatus(student: SchoolStudent): "active" | "pending" {
+  if (student.testsTaken === 0) return "pending";
+  const lastDate = new Date(student.lastActive);
+  const diffDays = (Date.now() - lastDate.getTime()) / (1000 * 60 * 60 * 24);
+  return diffDays <= 14 ? "active" : "pending";
+}
+
+function StatusBadge({ status }: { status: "active" | "pending" }) {
+  if (status === "active") {
+    return (
+      <span className="inline-flex items-center gap-1 text-xs font-medium px-2 py-0.5 rounded-full bg-green-100 text-green-700">
+        <span className="w-1.5 h-1.5 rounded-full bg-green-500 inline-block" />
+        Active
+      </span>
+    );
+  }
+  return (
+    <span className="inline-flex items-center gap-1 text-xs font-medium px-2 py-0.5 rounded-full bg-gray-100 text-gray-500">
+      <Clock className="h-3 w-3" />
+      Pending
+    </span>
+  );
+}
 
 export default function SchoolDashboardPage() {
   const [students, setStudents] = useState<SchoolStudent[]>(mockStudents);
@@ -129,6 +154,9 @@ export default function SchoolDashboardPage() {
                   <th className="px-6 py-3 text-center text-xs font-medium text-gray-500 min-w-[180px]">
                     Progress
                   </th>
+                  <th className="px-6 py-3 text-center text-xs font-medium text-gray-500">
+                    Status
+                  </th>
                   <th className="px-6 py-3 w-16" />
                 </tr>
               </thead>
@@ -136,6 +164,7 @@ export default function SchoolDashboardPage() {
                 {activeStudents.map((student) => {
                   const done = Math.min(student.testsTaken, TOTAL_SECTIONS);
                   const isConfirming = removeConfirm === student.uid;
+                  const status = getStudentStatus(student);
 
                   return (
                     <tr
@@ -175,6 +204,11 @@ export default function SchoolDashboardPage() {
                             {done}/{TOTAL_SECTIONS}
                           </span>
                         </div>
+                      </td>
+
+                      {/* Status badge */}
+                      <td className="px-6 py-4 text-center">
+                        <StatusBadge status={status} />
                       </td>
 
                       {/* Remove */}

@@ -1,9 +1,9 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useRef } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { UserPlus, Trash2, AlertTriangle, CheckCircle2, X, Clock } from "lucide-react";
+import { UserPlus, Trash2, AlertTriangle, CheckCircle2, X, Clock, Check } from "lucide-react";
 import type { SchoolStudent } from "@/lib/school-types";
 
 // --- Config ---
@@ -27,6 +27,89 @@ const mockStudents: SchoolStudent[] = [
   { uid: "11", name: "Daniel Harris",   email: "daniel.h@email.com", testsTaken: 2, lastActive: "2026-03-18", active: true },
   { uid: "12", name: "Ava Robinson",    email: "ava.r@email.com",    testsTaken: 8, lastActive: "2026-03-27", active: true },
 ];
+
+const DMV_SECTIONS = [
+  "Road Signs",
+  "Traffic Laws",
+  "Right of Way",
+  "Parking",
+  "Speed Limits",
+  "Safe Driving",
+  "Alcohol & Drugs",
+  "Special Situations",
+];
+
+function SectionTooltip({ done, totalSections }: { done: number; totalSections: number }) {
+  const [visible, setVisible] = useState(false);
+
+  return (
+    <div
+      className="relative inline-flex items-center gap-3 justify-center group"
+      onMouseEnter={() => setVisible(true)}
+      onMouseLeave={() => setVisible(false)}
+    >
+      {/* Mini progress bar */}
+      <div className="w-24 h-2 bg-gray-100 rounded-full overflow-hidden flex-shrink-0">
+        <div
+          className={`h-full rounded-full transition-all ${
+            done >= totalSections
+              ? "bg-green-500"
+              : done >= totalSections / 2
+              ? "bg-brand"
+              : "bg-gray-300"
+          }`}
+          style={{ width: `${(done / totalSections) * 100}%` }}
+        />
+      </div>
+      {/* Fraction */}
+      <span
+        className={`text-sm font-semibold tabular-nums w-8 text-right flex-shrink-0 cursor-default ${
+          done >= totalSections ? "text-green-600" : "text-gray-700"
+        }`}
+      >
+        {done}/{totalSections}
+      </span>
+
+      {/* Tooltip popover */}
+      {visible && (
+        <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 z-50 pointer-events-none">
+          <div className="bg-gray-900 text-white rounded-xl shadow-xl px-4 py-3 w-48">
+            <p className="text-xs font-semibold text-gray-300 uppercase tracking-wide mb-2">
+              Sections
+            </p>
+            <ul className="space-y-1.5">
+              {DMV_SECTIONS.map((section, i) => {
+                const isDone = i < done;
+                return (
+                  <li key={section} className="flex items-center gap-2">
+                    {isDone ? (
+                      <Check className="h-3.5 w-3.5 text-green-400 flex-shrink-0" />
+                    ) : (
+                      <span className="h-3.5 w-3.5 flex-shrink-0 flex items-center justify-center">
+                        <span className="w-1.5 h-1.5 rounded-full bg-gray-600 inline-block" />
+                      </span>
+                    )}
+                    <span
+                      className={`text-xs ${
+                        isDone ? "text-white" : "text-gray-500"
+                      }`}
+                    >
+                      {section}
+                    </span>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+          {/* Arrow */}
+          <div className="flex justify-center">
+            <div className="w-2.5 h-2.5 bg-gray-900 rotate-45 -mt-1.5" />
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
 
 /** Determine if a student is "Active" (tested in last 14 days) or "Pending" (not started / inactive) */
 function getStudentStatus(student: SchoolStudent): "active" | "pending" {
@@ -207,33 +290,9 @@ export default function SchoolDashboardPage() {
                         <p className="text-xs text-gray-400 mt-0.5">{student.email}</p>
                       </td>
 
-                      {/* Progress: bar + X/8 */}
+                      {/* Progress: bar + X/8 + hover tooltip */}
                       <td className="px-6 py-4">
-                        <div className="flex items-center gap-3 justify-center">
-                          {/* Mini progress bar */}
-                          <div className="w-24 h-2 bg-gray-100 rounded-full overflow-hidden flex-shrink-0">
-                            <div
-                              className={`h-full rounded-full transition-all ${
-                                done >= TOTAL_SECTIONS
-                                  ? "bg-green-500"
-                                  : done >= TOTAL_SECTIONS / 2
-                                  ? "bg-brand"
-                                  : "bg-gray-300"
-                              }`}
-                              style={{ width: `${(done / TOTAL_SECTIONS) * 100}%` }}
-                            />
-                          </div>
-                          {/* Fraction */}
-                          <span
-                            className={`text-sm font-semibold tabular-nums w-8 text-right flex-shrink-0 ${
-                              done >= TOTAL_SECTIONS
-                                ? "text-green-600"
-                                : "text-gray-700"
-                            }`}
-                          >
-                            {done}/{TOTAL_SECTIONS}
-                          </span>
-                        </div>
+                        <SectionTooltip done={done} totalSections={TOTAL_SECTIONS} />
                       </td>
 
                       {/* Status badge */}

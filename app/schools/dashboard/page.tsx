@@ -1,9 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { UserPlus, Trash2 } from "lucide-react";
+import { UserPlus, Trash2, AlertTriangle, CheckCircle2, X } from "lucide-react";
 import type { SchoolStudent } from "@/lib/school-types";
 
 // --- Config ---
@@ -36,11 +36,27 @@ export default function SchoolDashboardPage() {
 
   const activeStudents = students.filter((s) => s.active);
 
+  // Parse emails live as user types
+  const parsedEmails = useMemo(() => {
+    return inviteEmails
+      .split(/[,\n\s]+/)
+      .map((e) => e.trim().toLowerCase())
+      .filter((e) => e.includes("@") && e.includes("."));
+  }, [inviteEmails]);
+
+  const seatsRemaining = TOTAL_SEATS - activeStudents.length;
+  const duplicateEmails = parsedEmails.filter((e) =>
+    students.some((s) => s.active && s.email.toLowerCase() === e)
+  );
+  const newEmailCount = parsedEmails.filter(
+    (e) => !students.some((s) => s.active && s.email.toLowerCase() === e)
+  ).length;
+  const overSeatLimit = newEmailCount > seatsRemaining;
+
   const handleInvite = () => {
-    const emails = inviteEmails
-      .split(/[,\n]+/)
-      .map((e) => e.trim())
-      .filter(Boolean);
+    const emails = parsedEmails.filter(
+      (e) => !students.some((s) => s.active && s.email.toLowerCase() === e)
+    );
     const newStudents: SchoolStudent[] = emails.map((email, i) => ({
       uid: `new-${Date.now()}-${i}`,
       name: email.split("@")[0],
@@ -201,34 +217,82 @@ export default function SchoolDashboardPage() {
       {showInvite && (
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
           <div className="bg-white rounded-2xl p-6 w-full max-w-md shadow-xl">
-            <h2 className="text-lg font-bold text-gray-900 mb-1">Add students</h2>
-            <p className="text-sm text-gray-500 mb-4">
-              Paste one email per line, or separate with commas.
+            {/* Header */}
+            <div className="flex items-start justify-between mb-1">
+              <h2 className="text-lg font-bold text-gray-900">Add students</h2>
+              <button
+                onClick={() => { setShowInvite(false); setInviteEmails(""); }}
+                className="text-gray-400 hover:text-gray-600 transition-colors -mr-1 -mt-1 p-1 rounded"
+              >
+                <X className="h-4 w-4" />
+              </button>
+            </div>
+            <p className="text-sm text-gray-500 mb-1">
+              Paste email addresses — one per line or comma-separated.
             </p>
+
+            {/* Seats remaining hint */}
+            <p className="text-xs text-gray-400 mb-4">
+              {seatsRemaining} seat{seatsRemaining !== 1 ? "s" : ""} remaining on your plan.
+            </p>
+
             <textarea
               autoFocus
               value={inviteEmails}
               onChange={(e) => setInviteEmails(e.target.value)}
-              className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm h-32 focus:outline-none focus:ring-2 focus:ring-brand resize-none"
-              placeholder={"student1@email.com\nstudent2@email.com"}
+              className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm h-36 focus:outline-none focus:ring-2 focus:ring-brand resize-none font-mono"
+              placeholder={"student1@school.com\nstudent2@school.com\nstudent3@school.com"}
             />
+
+            {/* Live feedback */}
+            {parsedEmails.length > 0 && (
+              <div className="mt-3 space-y-1.5">
+                {/* Valid count */}
+                <div className="flex items-center gap-1.5 text-xs text-green-700">
+                  <CheckCircle2 className="h-3.5 w-3.5 text-green-500 flex-shrink-0" />
+                  {newEmailCount} valid email{newEmailCount !== 1 ? "s" : ""} ready to invite
+                </div>
+
+                {/* Duplicates */}
+                {duplicateEmails.length > 0 && (
+                  <div className="flex items-start gap-1.5 text-xs text-amber-700">
+                    <AlertTriangle className="h-3.5 w-3.5 text-amber-500 flex-shrink-0 mt-0.5" />
+                    <span>
+                      {duplicateEmails.length} already enrolled (will be skipped):{" "}
+                      <span className="text-amber-600">{duplicateEmails.join(", ")}</span>
+                    </span>
+                  </div>
+                )}
+
+                {/* Over seat limit */}
+                {overSeatLimit && (
+                  <div className="flex items-start gap-1.5 text-xs text-red-700">
+                    <AlertTriangle className="h-3.5 w-3.5 text-red-500 flex-shrink-0 mt-0.5" />
+                    <span>
+                      Only {seatsRemaining} seat{seatsRemaining !== 1 ? "s" : ""} available.
+                      Upgrade your plan to add all {newEmailCount} students.
+                    </span>
+                  </div>
+                )}
+              </div>
+            )}
+
             <div className="flex gap-3 mt-4">
               <Button
                 variant="outline"
                 className="flex-1"
-                onClick={() => {
-                  setShowInvite(false);
-                  setInviteEmails("");
-                }}
+                onClick={() => { setShowInvite(false); setInviteEmails(""); }}
               >
                 Cancel
               </Button>
               <Button
                 className="flex-1 bg-brand text-white hover:bg-brand-dark"
                 onClick={handleInvite}
-                disabled={!inviteEmails.trim()}
+                disabled={newEmailCount === 0 || overSeatLimit}
               >
-                Invite
+                {newEmailCount > 0
+                  ? `Invite ${newEmailCount} student${newEmailCount !== 1 ? "s" : ""}`
+                  : "Invite"}
               </Button>
             </div>
           </div>

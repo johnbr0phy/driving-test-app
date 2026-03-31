@@ -25,6 +25,7 @@ export interface SchoolStudent {
   avgScore?: number; // 0–100
   topicScores?: TopicScore[];
   trend?: "improving" | "declining" | "steady" | "new";
+  inviteStatus?: "pending" | "accepted";
 }
 
 export interface SchoolLead {

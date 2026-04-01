@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import {
   UserPlus, Trash2, AlertTriangle, CheckCircle2, X, Clock, Check,
   Loader2, LogIn, School, Settings, Upload, ImageIcon, UserX, Eye, EyeOff,
+  Copy, ExternalLink,
 } from "lucide-react";
 import type { SchoolStudent } from "@/lib/school-types";
 import { useSchoolAuth } from "@/lib/hooks/useSchoolAuth";
@@ -53,48 +54,116 @@ const DMV_SECTIONS = [
 interface SettingsPanelProps {
   onClose: () => void;
   schoolId: string | null;
+  schoolData: import("@/lib/school-types").SchoolAccount | null;
   currentLogoUrl: string | undefined;
   onLogoUpdated: (url: string) => void;
+  onSchoolInfoUpdated: (patch: { schoolName?: string; adminName?: string; adminEmail?: string }) => void;
   isDemoMode: boolean;
 }
 
-function SettingsPanel({ onClose, schoolId, currentLogoUrl, onLogoUpdated, isDemoMode }: SettingsPanelProps) {
+type SettingsTab = "school" | "logo" | "danger";
+
+function SettingsPanel({
+  onClose,
+  schoolId,
+  schoolData,
+  currentLogoUrl,
+  onLogoUpdated,
+  onSchoolInfoUpdated,
+  isDemoMode,
+}: SettingsPanelProps) {
   const fileInputRef = useRef<HTMLInputElement>(null);
+  const [activeTab, setActiveTab] = useState<SettingsTab>("school");
+
+  // ── Logo state ──
   const [uploading, setUploading] = useState(false);
   const [uploadError, setUploadError] = useState<string | null>(null);
   const [previewUrl, setPreviewUrl] = useState<string | null>(currentLogoUrl ?? null);
-  const [successMsg, setSuccessMsg] = useState<string | null>(null);
+  const [logoSuccess, setLogoSuccess] = useState<string | null>(null);
 
+  // ── School info state ──
+  const [schoolName, setSchoolName] = useState(schoolData?.schoolName ?? "");
+  const [adminName, setAdminName] = useState(schoolData?.adminName ?? "");
+  const [adminEmail, setAdminEmail] = useState(schoolData?.adminEmail ?? "");
+  const [savingInfo, setSavingInfo] = useState(false);
+  const [infoError, setInfoError] = useState<string | null>(null);
+  const [infoSuccess, setInfoSuccess] = useState<string | null>(null);
+
+  // ── Delete state ──
+  const [deleteConfirmText, setDeleteConfirmText] = useState("");
+  const [deleting, setDeleting] = useState(false);
+  const [deleteError, setDeleteError] = useState<string | null>(null);
+
+  // ── Copy URL state ──
+  const [copied, setCopied] = useState(false);
+  const publicUrl = schoolId ? `https://tigertest.io/schools/${schoolId}` : "";
+
+  const handleCopyUrl = async () => {
+    if (!publicUrl) return;
+    try {
+      await navigator.clipboard.writeText(publicUrl);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch {
+      // Fallback
+      const el = document.createElement("input");
+      el.value = publicUrl;
+      document.body.appendChild(el);
+      el.select();
+      document.execCommand("copy");
+      document.body.removeChild(el);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    }
+  };
+
+  // ── Save school info ──
+  const handleSaveInfo = async () => {
+    if (!schoolId || isDemoMode) {
+      setInfoSuccess("Changes previewed (demo mode — log in to save).");
+      onSchoolInfoUpdated({ schoolName, adminName, adminEmail });
+      return;
+    }
+    setSavingInfo(true);
+    setInfoError(null);
+    setInfoSuccess(null);
+    try {
+      const res = await fetch(`/api/schools/${schoolId}`, {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ schoolName, adminName, adminEmail }),
+      });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      onSchoolInfoUpdated({ schoolName, adminName, adminEmail });
+      setInfoSuccess("School info saved.");
+    } catch (err) {
+      console.error("[save school info]", err);
+      setInfoError("Failed to save. Please try again.");
+    } finally {
+      setSavingInfo(false);
+    }
+  };
+
+  // ── Logo upload ──
   const handleFileChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (!file) return;
-
-    // Validate type
     if (!["image/png", "image/jpeg", "image/jpg"].includes(file.type)) {
       setUploadError("Only PNG or JPG files are supported.");
       return;
     }
-
-    // Validate size (2MB)
     if (file.size > 2 * 1024 * 1024) {
       setUploadError("File must be under 2MB.");
       return;
     }
-
     setUploadError(null);
-    setSuccessMsg(null);
-
-    // Local preview immediately
+    setLogoSuccess(null);
     const localUrl = URL.createObjectURL(file);
     setPreviewUrl(localUrl);
-
     if (isDemoMode || !schoolId) {
-      // Demo mode: just show the preview, don't persist
-      setSuccessMsg("Logo preview updated (demo mode — log in to save).");
+      setLogoSuccess("Logo preview updated (demo mode — log in to save).");
       return;
     }
-
-    // Upload to Firebase Storage
     setUploading(true);
     try {
       const ext = file.type === "image/png" ? "png" : "jpg";
@@ -102,14 +171,11 @@ function SettingsPanel({ onClose, schoolId, currentLogoUrl, onLogoUpdated, isDem
       const sRef = storageRef(storage, path);
       await uploadBytes(sRef, file, { contentType: file.type });
       const downloadUrl = await getDownloadURL(sRef);
-
-      // Update Firestore doc
       const schoolDocRef = doc(db, "school_accounts", schoolId);
       await updateDoc(schoolDocRef, { logoUrl: downloadUrl });
-
       onLogoUpdated(downloadUrl);
       setPreviewUrl(downloadUrl);
-      setSuccessMsg("Logo saved successfully.");
+      setLogoSuccess("Logo saved successfully.");
     } catch (err) {
       console.error("[logo upload]", err);
       setUploadError("Upload failed. Please try again.");
@@ -119,11 +185,39 @@ function SettingsPanel({ onClose, schoolId, currentLogoUrl, onLogoUpdated, isDem
     }
   };
 
+  // ── Delete account ──
+  const handleDelete = async () => {
+    if (!schoolId || isDemoMode) return;
+    setDeleting(true);
+    setDeleteError(null);
+    try {
+      const res = await fetch(`/api/schools/${schoolId}`, { method: "DELETE" });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      // Redirect to home after deletion
+      window.location.href = "/schools";
+    } catch (err) {
+      console.error("[delete school]", err);
+      setDeleteError("Failed to delete account. Please try again.");
+      setDeleting(false);
+    }
+  };
+
+  const planLabel =
+    schoolData?.planTier
+      ? schoolData.planTier.charAt(0).toUpperCase() + schoolData.planTier.slice(1)
+      : "Free";
+
+  const tabs: { id: SettingsTab; label: string }[] = [
+    { id: "school", label: "School Info" },
+    { id: "logo", label: "Logo" },
+    { id: "danger", label: "Account" },
+  ];
+
   return (
     <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
-      <div className="bg-white rounded-2xl p-6 w-full max-w-md shadow-xl">
+      <div className="bg-white rounded-2xl w-full max-w-lg shadow-xl flex flex-col max-h-[90vh]">
         {/* Header */}
-        <div className="flex items-center justify-between mb-6">
+        <div className="flex items-center justify-between px-6 pt-6 pb-4 border-b border-gray-100 flex-shrink-0">
           <h2 className="text-lg font-bold text-gray-900">School Settings</h2>
           <button
             onClick={onClose}
@@ -133,86 +227,310 @@ function SettingsPanel({ onClose, schoolId, currentLogoUrl, onLogoUpdated, isDem
           </button>
         </div>
 
-        {/* Logo section */}
-        <div className="space-y-4">
-          <div>
-            <h3 className="text-sm font-semibold text-gray-700 mb-3">School Logo</h3>
+        {/* Tabs */}
+        <div className="flex gap-1 px-6 pt-3 border-b border-gray-100 flex-shrink-0">
+          {tabs.map((tab) => (
+            <button
+              key={tab.id}
+              onClick={() => setActiveTab(tab.id)}
+              className={`px-3 py-2 text-sm font-medium rounded-t-lg transition-colors ${
+                activeTab === tab.id
+                  ? "text-brand border-b-2 border-brand"
+                  : "text-gray-500 hover:text-gray-700"
+              }`}
+            >
+              {tab.label}
+            </button>
+          ))}
+        </div>
 
-            {/* Logo preview */}
-            <div className="flex items-center gap-4 mb-4">
-              <div className="w-20 h-20 rounded-xl border-2 border-dashed border-gray-200 flex items-center justify-center bg-gray-50 overflow-hidden flex-shrink-0">
-                {previewUrl ? (
-                  <Image
-                    src={previewUrl}
-                    alt="School logo"
-                    width={80}
-                    height={80}
-                    className="object-contain w-full h-full"
-                    unoptimized
-                  />
-                ) : (
-                  <ImageIcon className="h-8 w-8 text-gray-300" />
+        {/* Tab content */}
+        <div className="overflow-y-auto flex-1 px-6 py-5">
+          {/* ── School Info tab ── */}
+          {activeTab === "school" && (
+            <div className="space-y-5">
+              {/* Plan display */}
+              <div className="bg-gray-50 rounded-xl px-4 py-3 flex items-center justify-between">
+                <div>
+                  <p className="text-xs text-gray-500 uppercase tracking-wide font-medium">Current plan</p>
+                  <p className="text-sm font-semibold text-gray-900 mt-0.5">{planLabel}</p>
+                </div>
+                {(schoolData?.planTier === "free" || !schoolData?.planTier) && (
+                  <span className="text-xs bg-brand/10 text-brand px-2.5 py-1 rounded-full font-medium">
+                    Upgrade available
+                  </span>
                 )}
               </div>
+
+              {/* Public URL */}
+              {schoolId && (
+                <div>
+                  <label className="block text-xs font-semibold text-gray-700 mb-2">
+                    Your public school page
+                  </label>
+                  <div className="flex items-center gap-2">
+                    <div className="flex-1 bg-gray-50 border border-gray-200 rounded-lg px-3 py-2 text-xs text-gray-600 font-mono truncate">
+                      {publicUrl}
+                    </div>
+                    <button
+                      onClick={handleCopyUrl}
+                      className="flex items-center gap-1.5 px-3 py-2 text-xs font-medium rounded-lg border border-gray-200 hover:bg-gray-50 transition-colors shrink-0"
+                    >
+                      {copied ? (
+                        <>
+                          <CheckCircle2 className="h-3.5 w-3.5 text-green-500" />
+                          Copied
+                        </>
+                      ) : (
+                        <>
+                          <Copy className="h-3.5 w-3.5" />
+                          Copy
+                        </>
+                      )}
+                    </button>
+                    <a
+                      href={publicUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-2 rounded-lg border border-gray-200 hover:bg-gray-50 transition-colors text-gray-500"
+                      title="Open school page"
+                    >
+                      <ExternalLink className="h-3.5 w-3.5" />
+                    </a>
+                  </div>
+                  <p className="text-xs text-gray-400 mt-1.5">Share this link with your students to enroll them.</p>
+                </div>
+              )}
+
+              {/* School name */}
               <div>
-                <p className="text-xs text-gray-500 mb-2">
-                  PNG or JPG, max 2MB. Shown on your public school page and dashboard header.
+                <label className="block text-xs font-semibold text-gray-700 mb-1.5">
+                  School name
+                </label>
+                <input
+                  type="text"
+                  value={schoolName}
+                  onChange={(e) => setSchoolName(e.target.value)}
+                  className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand/30 focus:border-brand"
+                  placeholder="Smith Driving Academy"
+                  disabled={isDemoMode}
+                />
+              </div>
+
+              {/* Contact name */}
+              <div>
+                <label className="block text-xs font-semibold text-gray-700 mb-1.5">
+                  Contact name
+                </label>
+                <input
+                  type="text"
+                  value={adminName}
+                  onChange={(e) => setAdminName(e.target.value)}
+                  className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand/30 focus:border-brand"
+                  placeholder="Jane Smith"
+                  disabled={isDemoMode}
+                />
+              </div>
+
+              {/* Contact email */}
+              <div>
+                <label className="block text-xs font-semibold text-gray-700 mb-1.5">
+                  Contact email
+                </label>
+                <input
+                  type="email"
+                  value={adminEmail}
+                  onChange={(e) => setAdminEmail(e.target.value)}
+                  className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand/30 focus:border-brand"
+                  placeholder="jane@smithdriving.com"
+                  disabled={isDemoMode}
+                />
+              </div>
+
+              {infoError && (
+                <div className="flex items-center gap-2 text-xs text-red-600 bg-red-50 border border-red-200 rounded-lg px-3 py-2">
+                  <AlertTriangle className="h-3.5 w-3.5 flex-shrink-0" />
+                  {infoError}
+                </div>
+              )}
+              {infoSuccess && (
+                <div className="flex items-center gap-2 text-xs text-green-700 bg-green-50 border border-green-200 rounded-lg px-3 py-2">
+                  <CheckCircle2 className="h-3.5 w-3.5 flex-shrink-0" />
+                  {infoSuccess}
+                </div>
+              )}
+
+              {isDemoMode && (
+                <div className="bg-amber-50 border border-amber-200 rounded-xl px-4 py-3 text-xs text-amber-800">
+                  You&apos;re in demo mode.{" "}
+                  <Link href="/schools/login" className="underline font-medium">Log in</Link>{" "}
+                  to save changes.
+                </div>
+              )}
+
+              <Button
+                onClick={handleSaveInfo}
+                disabled={savingInfo || !schoolName.trim()}
+                className="w-full bg-brand text-white hover:bg-brand/90 gap-2"
+              >
+                {savingInfo ? (
+                  <>
+                    <Loader2 className="h-4 w-4 animate-spin" />
+                    Saving…
+                  </>
+                ) : (
+                  "Save changes"
+                )}
+              </Button>
+            </div>
+          )}
+
+          {/* ── Logo tab ── */}
+          {activeTab === "logo" && (
+            <div className="space-y-4">
+              <div>
+                <h3 className="text-sm font-semibold text-gray-700 mb-3">School Logo</h3>
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-20 h-20 rounded-xl border-2 border-dashed border-gray-200 flex items-center justify-center bg-gray-50 overflow-hidden flex-shrink-0">
+                    {previewUrl ? (
+                      <Image
+                        src={previewUrl}
+                        alt="School logo"
+                        width={80}
+                        height={80}
+                        className="object-contain w-full h-full"
+                        unoptimized
+                      />
+                    ) : (
+                      <ImageIcon className="h-8 w-8 text-gray-300" />
+                    )}
+                  </div>
+                  <div>
+                    <p className="text-xs text-gray-500 mb-2">
+                      PNG or JPG, max 2MB. Shown on your public school page and dashboard header.
+                    </p>
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      className="gap-1.5 text-xs"
+                      onClick={() => fileInputRef.current?.click()}
+                      disabled={uploading}
+                    >
+                      {uploading ? (
+                        <>
+                          <Loader2 className="h-3.5 w-3.5 animate-spin" />
+                          Uploading…
+                        </>
+                      ) : (
+                        <>
+                          <Upload className="h-3.5 w-3.5" />
+                          {previewUrl ? "Replace logo" : "Upload logo"}
+                        </>
+                      )}
+                    </Button>
+                    <input
+                      ref={fileInputRef}
+                      type="file"
+                      accept="image/png,image/jpeg"
+                      className="hidden"
+                      onChange={handleFileChange}
+                    />
+                  </div>
+                </div>
+                {uploadError && (
+                  <div className="flex items-center gap-2 text-xs text-red-600 bg-red-50 border border-red-200 rounded-lg px-3 py-2">
+                    <AlertTriangle className="h-3.5 w-3.5 flex-shrink-0" />
+                    {uploadError}
+                  </div>
+                )}
+                {logoSuccess && (
+                  <div className="flex items-center gap-2 text-xs text-green-700 bg-green-50 border border-green-200 rounded-lg px-3 py-2">
+                    <CheckCircle2 className="h-3.5 w-3.5 flex-shrink-0" />
+                    {logoSuccess}
+                  </div>
+                )}
+              </div>
+              {isDemoMode && (
+                <div className="bg-amber-50 border border-amber-200 rounded-xl px-4 py-3 text-xs text-amber-800">
+                  You&apos;re in demo mode.{" "}
+                  <Link href="/schools/login" className="underline font-medium">Log in</Link>{" "}
+                  to save changes.
+                </div>
+              )}
+            </div>
+          )}
+
+          {/* ── Account / Danger tab ── */}
+          {activeTab === "danger" && (
+            <div className="space-y-5">
+              {/* School slug info */}
+              {schoolId && (
+                <div className="bg-gray-50 rounded-xl px-4 py-3">
+                  <p className="text-xs text-gray-500 uppercase tracking-wide font-medium mb-1">School slug</p>
+                  <p className="text-sm font-mono text-gray-800">{schoolId}</p>
+                  <p className="text-xs text-gray-400 mt-1">Your slug cannot be changed after signup.</p>
+                </div>
+              )}
+
+              {/* Delete account */}
+              <div className="border border-red-200 rounded-xl p-4">
+                <h3 className="text-sm font-semibold text-red-700 mb-2">Delete account</h3>
+                <p className="text-xs text-gray-600 mb-3">
+                  Permanently deletes your school account and all student data. This cannot be undone.
                 </p>
+                <label className="block text-xs font-medium text-gray-700 mb-1.5">
+                  Type <span className="font-mono font-bold">{schoolId ?? "your-school-slug"}</span> to confirm
+                </label>
+                <input
+                  type="text"
+                  value={deleteConfirmText}
+                  onChange={(e) => setDeleteConfirmText(e.target.value)}
+                  placeholder={schoolId ?? "school-slug"}
+                  disabled={isDemoMode || deleting}
+                  className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm mb-3 focus:outline-none focus:ring-2 focus:ring-red-300 focus:border-red-400"
+                />
+                {deleteError && (
+                  <div className="flex items-center gap-2 text-xs text-red-600 bg-red-50 border border-red-200 rounded-lg px-3 py-2 mb-3">
+                    <AlertTriangle className="h-3.5 w-3.5 flex-shrink-0" />
+                    {deleteError}
+                  </div>
+                )}
                 <Button
-                  size="sm"
                   variant="outline"
-                  className="gap-1.5 text-xs"
-                  onClick={() => fileInputRef.current?.click()}
-                  disabled={uploading}
+                  onClick={handleDelete}
+                  disabled={
+                    isDemoMode ||
+                    deleting ||
+                    deleteConfirmText !== schoolId
+                  }
+                  className="w-full border-red-300 text-red-600 hover:bg-red-50 gap-2 disabled:opacity-40"
                 >
-                  {uploading ? (
+                  {deleting ? (
                     <>
-                      <Loader2 className="h-3.5 w-3.5 animate-spin" />
-                      Uploading…
+                      <Loader2 className="h-4 w-4 animate-spin" />
+                      Deleting…
                     </>
                   ) : (
                     <>
-                      <Upload className="h-3.5 w-3.5" />
-                      {previewUrl ? "Replace logo" : "Upload logo"}
+                      <Trash2 className="h-4 w-4" />
+                      Delete school account
                     </>
                   )}
                 </Button>
-                <input
-                  ref={fileInputRef}
-                  type="file"
-                  accept="image/png,image/jpeg"
-                  className="hidden"
-                  onChange={handleFileChange}
-                />
+                {isDemoMode && (
+                  <p className="text-xs text-gray-400 mt-2 text-center">
+                    Log in to manage your account.
+                  </p>
+                )}
               </div>
-            </div>
-
-            {/* Status messages */}
-            {uploadError && (
-              <div className="flex items-center gap-2 text-xs text-red-600 bg-red-50 border border-red-200 rounded-lg px-3 py-2">
-                <AlertTriangle className="h-3.5 w-3.5 flex-shrink-0" />
-                {uploadError}
-              </div>
-            )}
-            {successMsg && (
-              <div className="flex items-center gap-2 text-xs text-green-700 bg-green-50 border border-green-200 rounded-lg px-3 py-2">
-                <CheckCircle2 className="h-3.5 w-3.5 flex-shrink-0" />
-                {successMsg}
-              </div>
-            )}
-          </div>
-
-          {/* Demo mode note */}
-          {isDemoMode && (
-            <div className="bg-amber-50 border border-amber-200 rounded-xl px-4 py-3 text-xs text-amber-800">
-              You&apos;re in demo mode. <Link href="/schools/login" className="underline font-medium">Log in</Link> to save changes.
             </div>
           )}
         </div>
 
-        <div className="mt-6 flex justify-end">
+        {/* Footer */}
+        <div className="px-6 py-4 border-t border-gray-100 flex justify-end flex-shrink-0">
           <Button variant="outline" onClick={onClose}>
-            Done
+            Close
           </Button>
         </div>
       </div>
@@ -355,11 +673,18 @@ function DashboardInner() {
 
   // Local logo URL — can be updated optimistically after upload
   const [localLogoUrl, setLocalLogoUrl] = useState<string | undefined>(schoolData?.logoUrl);
+  // Local school info — can be updated optimistically after settings save
+  const [localSchoolName, setLocalSchoolName] = useState<string | undefined>(schoolData?.schoolName);
+  const [localAdminName, setLocalAdminName] = useState<string | undefined>(schoolData?.adminName);
+  const [localAdminEmail, setLocalAdminEmail] = useState<string | undefined>(schoolData?.adminEmail);
 
-  // Sync localLogoUrl when schoolData loads
+  // Sync local state when schoolData loads
   useEffect(() => {
     if (schoolData?.logoUrl) setLocalLogoUrl(schoolData.logoUrl);
-  }, [schoolData?.logoUrl]);
+    if (schoolData?.schoolName) setLocalSchoolName(schoolData.schoolName);
+    if (schoolData?.adminName) setLocalAdminName(schoolData.adminName);
+    if (schoolData?.adminEmail) setLocalAdminEmail(schoolData.adminEmail);
+  }, [schoolData?.logoUrl, schoolData?.schoolName, schoolData?.adminName, schoolData?.adminEmail]);
 
   const [showInvite, setShowInvite] = useState(false);
   const [inviteEmails, setInviteEmails] = useState("");
@@ -540,7 +865,7 @@ function DashboardInner() {
     );
   }
 
-  const displayName = schoolData?.schoolName ?? SCHOOL_NAME;
+  const displayName = localSchoolName ?? schoolData?.schoolName ?? SCHOOL_NAME;
 
   return (
     <div className="max-w-3xl mx-auto px-6 py-10">
@@ -549,8 +874,19 @@ function DashboardInner() {
         <SettingsPanel
           onClose={() => setShowSettings(false)}
           schoolId={schoolId}
+          schoolData={schoolData ? {
+            ...schoolData,
+            schoolName: localSchoolName ?? schoolData.schoolName,
+            adminName: localAdminName ?? schoolData.adminName,
+            adminEmail: localAdminEmail ?? schoolData.adminEmail,
+          } : null}
           currentLogoUrl={localLogoUrl}
           onLogoUpdated={(url) => setLocalLogoUrl(url)}
+          onSchoolInfoUpdated={(patch) => {
+            if (patch.schoolName !== undefined) setLocalSchoolName(patch.schoolName);
+            if (patch.adminName !== undefined) setLocalAdminName(patch.adminName);
+            if (patch.adminEmail !== undefined) setLocalAdminEmail(patch.adminEmail);
+          }}
           isDemoMode={isDemoMode}
         />
       )}

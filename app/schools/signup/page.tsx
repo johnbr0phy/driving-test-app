@@ -58,6 +58,15 @@ export default function SchoolSignupPage() {
 
     setLoading(true);
     try {
+      // Rate-limit check — 3 attempts per IP per hour
+      const rlRes = await fetch("/api/schools/signup-attempt", { method: "POST" });
+      if (rlRes.status === 429) {
+        const rlData = await rlRes.json();
+        setError(rlData.message ?? "Too many signup attempts. Please try again later.");
+        setLoading(false);
+        return;
+      }
+
       // Resolve final slug — check if base slug is taken and find a free suffix
       let finalSlug = schoolId;
       const existingDoc = await getDoc(doc(db, "school_accounts", schoolId));

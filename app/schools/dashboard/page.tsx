@@ -1298,6 +1298,24 @@ function DashboardInner() {
     setRemoveConfirm(null);
   };
 
+  // ── Upgrade handler ───────────────────────────────────────────────────
+  const handleUpgrade = async () => {
+    if (!schoolId) return;
+    try {
+      const res = await fetch(`/api/schools/${schoolId}/billing/checkout`, {
+        method: "POST",
+      });
+      const data = await res.json();
+      if (data.url) {
+        window.location.href = data.url;
+      } else {
+        setError(data.error ?? "Failed to start checkout");
+      }
+    } catch {
+      setError("Failed to start checkout");
+    }
+  };
+
   // ── Auth loading ────────────────────────────────────────────────────────
   if (authLoading) {
     return (
@@ -1484,6 +1502,21 @@ function DashboardInner() {
       {/* Class overview stat cards */}
       <ClassOverview students={students} totalSections={TOTAL_SECTIONS} />
 
+      {/* Upgrade CTA — shown when on free tier */}
+      {(!schoolData?.planTier || schoolData.planTier === "free") && !isDemoMode && (
+        <div className="mb-6 bg-amber-50 border border-amber-200 rounded-xl px-5 py-4 flex items-center justify-between gap-4">
+          <p className="text-sm text-amber-800">
+            Unlock 20 seats for <span className="font-semibold">$49/mo</span> — upgrade your school plan
+          </p>
+          <button
+            onClick={handleUpgrade}
+            className="shrink-0 text-sm font-semibold text-amber-700 hover:text-amber-900 transition-colors"
+          >
+            Upgrade →
+          </button>
+        </div>
+      )}
+
       {/* Seat counter */}
       {(() => {
         const used = activeStudents.length;
@@ -1618,13 +1651,16 @@ function DashboardInner() {
                   <th className="px-4 sm:px-6 py-3 text-center text-xs font-medium text-gray-500 hidden sm:table-cell">
                     Status
                   </th>
+                  <th className="px-4 sm:px-6 py-3 text-center text-xs font-medium text-gray-500 hidden sm:table-cell">
+                    Tier
+                  </th>
                   <th className="px-4 sm:px-6 py-3 text-right text-xs font-medium text-gray-500 pr-4 sm:pr-6 w-24 sm:w-36">
                     Actions
                   </th>
                 </tr>
               </thead>
               <tbody>
-                {displayedStudents.map((student) => {
+                {displayedStudents.map((student, studentIndex) => {
                   const isInactive = !student.active;
                   const done = Math.min(student.testsTaken, TOTAL_SECTIONS);
                   const isDeactivating = deactivateConfirm === student.uid;
@@ -1668,6 +1704,19 @@ function DashboardInner() {
                           </span>
                         ) : (
                           <StatusBadge status={status} />
+                        )}
+                      </td>
+
+                      {/* Tier badge — hidden on mobile */}
+                      <td className="px-4 sm:px-6 py-3 sm:py-4 text-center hidden sm:table-cell">
+                        {(schoolData?.paidSeats ?? 0) > 0 && studentIndex < (schoolData?.paidSeats ?? 0) ? (
+                          <span className="inline-flex items-center text-xs font-medium px-2 py-0.5 rounded-full bg-green-100 text-green-700">
+                            Premium
+                          </span>
+                        ) : (
+                          <span className="inline-flex items-center text-xs font-medium px-2 py-0.5 rounded-full bg-gray-100 text-gray-500">
+                            Free
+                          </span>
                         )}
                       </td>
 

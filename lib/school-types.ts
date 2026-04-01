@@ -10,6 +10,8 @@ export interface SchoolAccount {
   createdAt: string;
   active: boolean;
   logoUrl?: string;
+  stripeCustomerId?: string;
+  stripeSubscriptionId?: string;
 }
 
 export interface TopicScore {

@@ -2,10 +2,12 @@
 
 import { useState, useMemo, useRef, useEffect, useCallback, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
+import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { UserPlus, Trash2, AlertTriangle, CheckCircle2, X, Clock, Check, Loader2 } from "lucide-react";
+import { UserPlus, Trash2, AlertTriangle, CheckCircle2, X, Clock, Check, Loader2, LogIn, School } from "lucide-react";
 import type { SchoolStudent } from "@/lib/school-types";
+import { useSchoolAuth } from "@/lib/hooks/useSchoolAuth";
 
 // --- Config ---
 const SCHOOL_NAME = "Smith Driving Academy";
@@ -153,15 +155,22 @@ export default function SchoolDashboardPage() {
 
 function DashboardInner() {
   const searchParams = useSearchParams();
-  // schoolId comes from ?school=<id> query param when a real school is logged in.
-  // Falls back to null → mock data mode.
-  const schoolId = searchParams.get("school");
+  const { user, schoolId: authSchoolId, schoolData, loading: authLoading, error: authError } = useSchoolAuth();
+
+  // ?school= param acts as admin override; otherwise use auth-derived schoolId
+  const schoolIdOverride = searchParams.get("school");
+  const schoolId = schoolIdOverride ?? authSchoolId;
+
+  // Determine mode
+  const isAuthenticated = !!user;
+  const hasSchool = !!schoolId;
+  const isDemoMode = !isAuthenticated || !hasSchool;
 
   const [students, setStudents] = useState<SchoolStudent[]>(
-    schoolId ? [] : mockStudents
+    isDemoMode ? mockStudents : []
   );
-  const [loading, setLoading] = useState(!!schoolId);
-  const [error, setError] = useState<string | null>(null);
+  const [loading, setLoading] = useState(!isDemoMode);
+  const [error, setError] = useState<string | null>(authError);
 
   const [showInvite, setShowInvite] = useState(false);
   const [inviteEmails, setInviteEmails] = useState("");
@@ -170,7 +179,11 @@ function DashboardInner() {
 
   // ── Load students from Firestore (via API) when schoolId is present ──────
   const fetchStudents = useCallback(async () => {
-    if (!schoolId) return;
+    if (!schoolId) {
+      setStudents(mockStudents);
+      setLoading(false);
+      return;
+    }
     setLoading(true);
     setError(null);
     try {
@@ -188,8 +201,11 @@ function DashboardInner() {
   }, [schoolId]);
 
   useEffect(() => {
-    fetchStudents();
-  }, [fetchStudents]);
+    if (!authLoading) {
+      fetchStudents();
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [authLoading, schoolId]);
 
   const activeStudents = students.filter((s) => s.active);
 
@@ -201,7 +217,8 @@ function DashboardInner() {
       .filter((e) => e.includes("@") && e.includes("."));
   }, [inviteEmails]);
 
-  const seatsRemaining = TOTAL_SEATS - activeStudents.length;
+  const totalSeats = schoolData?.totalSeats ?? TOTAL_SEATS;
+  const seatsRemaining = totalSeats - activeStudents.length;
   const duplicateEmails = parsedEmails.filter((e) =>
     students.some((s) => s.active && s.email.toLowerCase() === e)
   );
@@ -216,7 +233,7 @@ function DashboardInner() {
     );
     if (!emails.length) return;
 
-    if (schoolId) {
+    if (!isDemoMode && schoolId) {
       // Firebase write
       setInviting(true);
       try {
@@ -251,7 +268,7 @@ function DashboardInner() {
   };
 
   const handleRemove = async (uid: string) => {
-    if (schoolId) {
+    if (!isDemoMode && schoolId) {
       // Firebase soft-delete
       try {
         const res = await fetch(`/api/schools/${schoolId}/students/${uid}`, {
@@ -271,6 +288,39 @@ function DashboardInner() {
     setRemoveConfirm(null);
   };
 
+  // ── Auth loading ────────────────────────────────────────────────────────
+  if (authLoading) {
+    return (
+      <div className="max-w-3xl mx-auto px-6 py-24 flex flex-col items-center gap-4 text-gray-400">
+        <Loader2 className="h-8 w-8 animate-spin text-brand" />
+        <p className="text-sm">Checking your account…</p>
+      </div>
+    );
+  }
+
+  // ── Authenticated but no school doc found ────────────────────────────────
+  if (isAuthenticated && !hasSchool && !schoolIdOverride) {
+    return (
+      <div className="max-w-lg mx-auto px-6 py-24 flex flex-col items-center text-center gap-6">
+        <div className="bg-brand/10 rounded-full p-4">
+          <School className="h-8 w-8 text-brand" />
+        </div>
+        <div>
+          <h2 className="text-xl font-bold text-gray-900 mb-2">No school account found</h2>
+          <p className="text-gray-500 text-sm">
+            Your account is linked but we couldn&apos;t find a school profile. Let&apos;s set one up.
+          </p>
+        </div>
+        <Link href="/schools/signup">
+          <Button className="bg-brand text-white hover:bg-brand/90">
+            Set up your school →
+          </Button>
+        </Link>
+      </div>
+    );
+  }
+
+  // ── Student list loading ─────────────────────────────────────────────────
   if (loading) {
     return (
       <div className="max-w-3xl mx-auto px-6 py-24 flex flex-col items-center gap-4 text-gray-400">
@@ -282,15 +332,36 @@ function DashboardInner() {
 
   return (
     <div className="max-w-3xl mx-auto px-6 py-10">
+      {/* Login banner — shown when not authenticated */}
+      {!isAuthenticated && (
+        <div className="mb-6 bg-brand/5 border border-brand/20 rounded-xl px-5 py-4 flex items-center justify-between gap-4">
+          <div>
+            <p className="text-sm font-semibold text-gray-900">You&apos;re viewing a demo</p>
+            <p className="text-xs text-gray-500 mt-0.5">Log in to manage your real school and students.</p>
+          </div>
+          <Link href="/schools/login">
+            <Button size="sm" className="bg-brand text-white hover:bg-brand/90 gap-1.5 shrink-0">
+              <LogIn className="h-4 w-4" />
+              Log in to your school →
+            </Button>
+          </Link>
+        </div>
+      )}
+
       {/* Header */}
       <div className="flex items-start justify-between gap-4 mb-6">
         <div>
-          <h1 className="text-2xl font-bold text-gray-900">{SCHOOL_NAME}</h1>
+          <h1 className="text-2xl font-bold text-gray-900">
+            {schoolData?.schoolName ?? SCHOOL_NAME}
+          </h1>
           <p className="text-sm text-gray-500 mt-0.5">
-            {PLAN_TIER} plan &middot; Instructor Dashboard
-            {schoolId ? null : (
+            {schoolData?.planTier
+              ? schoolData.planTier.charAt(0).toUpperCase() + schoolData.planTier.slice(1)
+              : PLAN_TIER}{" "}
+            plan &middot; Instructor Dashboard
+            {isDemoMode && (
               <span className="ml-2 text-xs bg-amber-100 text-amber-700 px-2 py-0.5 rounded-full font-medium">
-                Demo mode
+                Demo
               </span>
             )}
           </p>
@@ -321,8 +392,12 @@ function DashboardInner() {
       {/* Seat counter */}
       {(() => {
         const used = activeStudents.length;
-        const pct = Math.round((used / TOTAL_SEATS) * 100);
-        const remaining = TOTAL_SEATS - used;
+        const totalSeats = schoolData?.totalSeats ?? TOTAL_SEATS;
+        const planName = schoolData?.planTier
+          ? schoolData.planTier.charAt(0).toUpperCase() + schoolData.planTier.slice(1)
+          : PLAN_TIER;
+        const pct = Math.round((used / totalSeats) * 100);
+        const remaining = totalSeats - used;
         const barColor =
           pct >= 90 ? "bg-red-500" : pct >= 70 ? "bg-yellow-400" : "bg-brand";
         const textColor =
@@ -332,7 +407,7 @@ function DashboardInner() {
             <div className="flex items-center justify-between mb-2">
               <span className="text-sm font-semibold text-gray-700">Seats used</span>
               <span className={`text-sm font-bold tabular-nums ${textColor}`}>
-                {used} / {TOTAL_SEATS}
+                {used} / {totalSeats}
               </span>
             </div>
             <div className="w-full h-2.5 bg-gray-100 rounded-full overflow-hidden">
@@ -343,8 +418,8 @@ function DashboardInner() {
             </div>
             <p className="text-xs text-gray-400 mt-2">
               {remaining > 0
-                ? `${remaining} seat${remaining !== 1 ? "s" : ""} remaining on your ${PLAN_TIER} plan`
-                : `All ${TOTAL_SEATS} seats filled — upgrade to add more students`}
+                ? `${remaining} seat${remaining !== 1 ? "s" : ""} remaining on your ${planName} plan`
+                : `All ${totalSeats} seats filled — upgrade to add more students`}
             </p>
           </div>
         );

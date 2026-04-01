@@ -115,7 +115,7 @@ export default async function SchoolLandingPage({ params }: Props) {
             <div className="flex gap-3">
               <Link
                 href="/schools/login"
-                className="text-sm text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md hover:bg-gray-100 transition-colors"
+                className="text-sm text-gray-600 hover:text-gray-900 px-3 py-2 min-h-[40px] flex items-center rounded-md hover:bg-gray-100 transition-colors"
               >
                 School login
               </Link>

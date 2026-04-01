@@ -1200,7 +1200,7 @@ function DashboardInner() {
   const displayName = localSchoolName ?? schoolData?.schoolName ?? SCHOOL_NAME;
 
   return (
-    <div className="max-w-3xl mx-auto px-6 py-10">
+    <div className="max-w-3xl mx-auto px-4 sm:px-6 py-6 sm:py-10">
       {/* Settings panel */}
       {showSettings && (
         <SettingsPanel
@@ -1226,13 +1226,13 @@ function DashboardInner() {
 
       {/* Login banner — shown when not authenticated */}
       {!isAuthenticated && (
-        <div className="mb-6 bg-brand/5 border border-brand/20 rounded-xl px-5 py-4 flex items-center justify-between gap-4">
+        <div className="mb-6 bg-brand/5 border border-brand/20 rounded-xl px-4 sm:px-5 py-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4">
           <div>
             <p className="text-sm font-semibold text-gray-900">You&apos;re viewing a demo</p>
             <p className="text-xs text-gray-500 mt-0.5">Log in to manage your real school and students.</p>
           </div>
-          <Link href="/schools/login">
-            <Button size="sm" className="bg-brand text-white hover:bg-brand/90 gap-1.5 shrink-0">
+          <Link href="/schools/login" className="self-stretch sm:self-auto">
+            <Button size="sm" className="bg-brand text-white hover:bg-brand/90 gap-1.5 w-full sm:w-auto min-h-[40px]">
               <LogIn className="h-4 w-4" />
               Log in to your school →
             </Button>
@@ -1254,7 +1254,7 @@ function DashboardInner() {
       />
 
       {/* Header */}
-      <div className="flex items-start justify-between gap-4 mb-6">
+      <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-3 sm:gap-4 mb-6">
         <div className="flex items-center gap-3">
           {/* School logo */}
           {localLogoUrl ? (
@@ -1274,7 +1274,7 @@ function DashboardInner() {
             </div>
           )}
           <div>
-            <h1 className="text-2xl font-bold text-gray-900">{displayName}</h1>
+            <h1 className="text-xl sm:text-2xl font-bold text-gray-900 leading-tight">{displayName}</h1>
             <p className="text-sm text-gray-500 mt-0.5">
               {schoolData?.planTier
                 ? schoolData.planTier.charAt(0).toUpperCase() + schoolData.planTier.slice(1)
@@ -1290,7 +1290,7 @@ function DashboardInner() {
         </div>
 
         {/* Action buttons */}
-        <div className="flex items-center gap-2 shrink-0">
+        <div className="flex items-center gap-2 sm:shrink-0">
           <button
             onClick={() => setShowSettings(true)}
             className="p-2 rounded-lg text-gray-400 hover:text-gray-600 hover:bg-gray-100 transition-colors"
@@ -1399,19 +1399,20 @@ function DashboardInner() {
               </Button>
             </div>
           ) : (
-            <table className="w-full text-sm">
+            <div className="overflow-x-auto">
+            <table className="w-full text-sm min-w-[480px]">
               <thead>
                 <tr className="border-b border-gray-200 bg-gray-50/50">
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500">
+                  <th className="px-4 sm:px-6 py-3 text-left text-xs font-medium text-gray-500">
                     Student
                   </th>
-                  <th className="px-6 py-3 text-center text-xs font-medium text-gray-500 min-w-[180px]">
+                  <th className="px-4 sm:px-6 py-3 text-center text-xs font-medium text-gray-500 min-w-[140px] sm:min-w-[180px]">
                     Progress
                   </th>
-                  <th className="px-6 py-3 text-center text-xs font-medium text-gray-500">
+                  <th className="px-4 sm:px-6 py-3 text-center text-xs font-medium text-gray-500 hidden sm:table-cell">
                     Status
                   </th>
-                  <th className="px-6 py-3 text-right text-xs font-medium text-gray-500 pr-6 w-36">
+                  <th className="px-4 sm:px-6 py-3 text-right text-xs font-medium text-gray-500 pr-4 sm:pr-6 w-24 sm:w-36">
                     Actions
                   </th>
                 </tr>
@@ -1432,13 +1433,13 @@ function DashboardInner() {
                       }`}
                     >
                       {/* Name / Email */}
-                      <td className="px-6 py-4">
+                      <td className="px-4 sm:px-6 py-3 sm:py-4">
                         <div className="flex items-center gap-2">
-                          <div>
-                            <p className={`font-medium ${isInactive ? "text-gray-400 line-through" : "text-gray-900"}`}>
+                          <div className="min-w-0">
+                            <p className={`font-medium truncate ${isInactive ? "text-gray-400 line-through" : "text-gray-900"}`}>
                               {student.name}
                             </p>
-                            <p className="text-xs text-gray-400 mt-0.5">{student.email}</p>
+                            <p className="text-xs text-gray-400 mt-0.5 truncate max-w-[140px] sm:max-w-none">{student.email}</p>
                           </div>
                           {isInactive && (
                             <span className="text-xs font-medium px-1.5 py-0.5 rounded bg-gray-200 text-gray-500 shrink-0">
@@ -1449,12 +1450,12 @@ function DashboardInner() {
                       </td>
 
                       {/* Progress: bar + X/8 + hover tooltip */}
-                      <td className="px-6 py-4">
+                      <td className="px-4 sm:px-6 py-3 sm:py-4">
                         <SectionTooltip done={done} totalSections={TOTAL_SECTIONS} />
                       </td>
 
-                      {/* Status badge */}
-                      <td className="px-6 py-4 text-center">
+                      {/* Status badge — hidden on mobile */}
+                      <td className="px-4 sm:px-6 py-3 sm:py-4 text-center hidden sm:table-cell">
                         {isInactive ? (
                           <span className="inline-flex items-center gap-1 text-xs font-medium px-2 py-0.5 rounded-full bg-gray-100 text-gray-400">
                             Deactivated
@@ -1465,7 +1466,7 @@ function DashboardInner() {
                       </td>
 
                       {/* Actions — deactivate (soft) or remove (hard) */}
-                      <td className="px-6 py-4 text-right">
+                      <td className="px-4 sm:px-6 py-3 sm:py-4 text-right">
                         {isDeactivating ? (
                           <div className="flex items-center justify-end gap-2">
                             <button
@@ -1530,6 +1531,7 @@ function DashboardInner() {
                 })}
               </tbody>
             </table>
+            </div>
           )}
         </CardContent>
       </Card>

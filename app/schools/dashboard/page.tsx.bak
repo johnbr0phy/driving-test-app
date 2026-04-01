@@ -900,10 +900,8 @@ function DashboardInner() {
     if (schoolData?.adminEmail) setLocalAdminEmail(schoolData.adminEmail);
   }, [schoolData?.logoUrl, schoolData?.schoolName, schoolData?.adminName, schoolData?.adminEmail]);
 
-  const MAX_BULK_INVITE = 50;
   const [showInvite, setShowInvite] = useState(false);
   const [inviteEmails, setInviteEmails] = useState("");
-  const csvInputRef = useRef<HTMLInputElement>(null);
   const [inviting, setInviting] = useState(false);
   // deactivate = soft (sets active:false); remove = hard delete with confirm dialog
   const [deactivateConfirm, setDeactivateConfirm] = useState<string | null>(null);
@@ -956,35 +954,10 @@ function DashboardInner() {
   const duplicateEmails = parsedEmails.filter((e) =>
     students.some((s) => s.active && s.email.toLowerCase() === e)
   );
-  const uniqueNewEmails = parsedEmails.filter(
+  const newEmailCount = parsedEmails.filter(
     (e) => !students.some((s) => s.active && s.email.toLowerCase() === e)
-  );
-  const newEmailCount = uniqueNewEmails.length;
-  const overBulkLimit = parsedEmails.length > MAX_BULK_INVITE;
-  const overSeatLimit = !overBulkLimit && newEmailCount > seatsRemaining;
-
-  // Handle CSV file upload into invite textarea
-  const handleCsvUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    if (!file) return;
-    const reader = new FileReader();
-    reader.onload = (ev) => {
-      const text = ev.target?.result as string;
-      // Extract anything that looks like an email from any CSV column
-      const emails = text
-        .split(/[\n\r]+/)
-        .flatMap((line) => line.split(","))
-        .map((cell) => cell.replace(/["\'\s]/g, "").toLowerCase())
-        .filter((v) => v.includes("@") && v.includes("."));
-      setInviteEmails((prev) => {
-        const existing = prev.trim();
-        return existing ? `${existing}\n${emails.join("\n")}` : emails.join("\n");
-      });
-    };
-    reader.readAsText(file);
-    // reset so same file can be re-uploaded
-    e.target.value = "";
-  };
+  ).length;
+  const overSeatLimit = newEmailCount > seatsRemaining;
 
   const handleInvite = async () => {
     const emails = parsedEmails.filter(
@@ -1454,26 +1427,9 @@ function DashboardInner() {
                 <X className="h-4 w-4" />
               </button>
             </div>
-            {/* subtitle row with CSV upload */}
-            <div className="flex items-center justify-between mb-1">
-              <p className="text-sm text-gray-500">
-                Paste emails — one per line or comma-separated. Max {MAX_BULK_INVITE}.
-              </p>
-              <button
-                type="button"
-                onClick={() => csvInputRef.current?.click()}
-                className="text-xs text-brand hover:text-brand/80 font-medium underline underline-offset-2 shrink-0 ml-3"
-              >
-                Upload CSV
-              </button>
-              <input
-                ref={csvInputRef}
-                type="file"
-                accept=".csv,text/csv"
-                className="hidden"
-                onChange={handleCsvUpload}
-              />
-            </div>
+            <p className="text-sm text-gray-500 mb-1">
+              Paste email addresses — one per line or comma-separated.
+            </p>
 
             {/* Seats remaining hint */}
             <p className="text-xs text-gray-400 mb-4">
@@ -1491,23 +1447,11 @@ function DashboardInner() {
             {/* Live feedback */}
             {parsedEmails.length > 0 && (
               <div className="mt-3 space-y-1.5">
-                {/* Over 50-email bulk cap */}
-                {overBulkLimit && (
-                  <div className="flex items-start gap-1.5 text-xs text-red-700">
-                    <AlertTriangle className="h-3.5 w-3.5 text-red-500 flex-shrink-0 mt-0.5" />
-                    <span>
-                      Too many emails — max {MAX_BULK_INVITE} per batch. You have {parsedEmails.length}. Remove some and invite in batches.
-                    </span>
-                  </div>
-                )}
-
                 {/* Valid count */}
-                {!overBulkLimit && (
-                  <div className="flex items-center gap-1.5 text-xs text-green-700">
-                    <CheckCircle2 className="h-3.5 w-3.5 text-green-500 flex-shrink-0" />
-                    {newEmailCount} valid email{newEmailCount !== 1 ? "s" : ""} ready to invite
-                  </div>
-                )}
+                <div className="flex items-center gap-1.5 text-xs text-green-700">
+                  <CheckCircle2 className="h-3.5 w-3.5 text-green-500 flex-shrink-0" />
+                  {newEmailCount} valid email{newEmailCount !== 1 ? "s" : ""} ready to invite
+                </div>
 
                 {/* Duplicates */}
                 {duplicateEmails.length > 0 && (
@@ -1544,7 +1488,7 @@ function DashboardInner() {
               <Button
                 className="flex-1 bg-brand text-white hover:bg-brand-dark gap-1.5"
                 onClick={handleInvite}
-                disabled={newEmailCount === 0 || overSeatLimit || overBulkLimit || inviting}
+                disabled={newEmailCount === 0 || overSeatLimit || inviting}
               >
                 {inviting ? (
                   <>

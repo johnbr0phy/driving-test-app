@@ -74,7 +74,7 @@ export default function SchoolNotFound() {
 
           <p className="text-xs text-gray-400 mt-8">
             Are you an instructor?{" "}
-            <Link href="/schools/signup" className="text-indigo-600 hover:underline font-medium">
+            <Link href="/schools/create" className="text-indigo-600 hover:underline font-medium">
               Create your school page →
             </Link>
           </p>

@@ -1,0 +1,218 @@
+"use client";
+
+import { useState } from "react";
+import { useRouter } from "next/navigation";
+import Link from "next/link";
+import { createUserWithEmailAndPassword } from "firebase/auth";
+import { doc, setDoc, serverTimestamp } from "firebase/firestore";
+import { auth, db } from "@/lib/firebase";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Loader2 } from "lucide-react";
+
+function slugify(name: string): string {
+  return name
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9\s-]/g, "")
+    .replace(/\s+/g, "-")
+    .replace(/-+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+
+export default function SchoolSignupPage() {
+  const router = useRouter();
+  const [form, setForm] = useState({
+    schoolName: "",
+    contactName: "",
+    email: "",
+    password: "",
+  });
+  const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
+
+  const set = (field: string) =>
+    (e: React.ChangeEvent<HTMLInputElement>) =>
+      setForm((prev) => ({ ...prev, [field]: e.target.value }));
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setError("");
+
+    if (!form.schoolName.trim() || !form.contactName.trim() || !form.email.trim() || !form.password) {
+      setError("All fields are required.");
+      return;
+    }
+    if (form.password.length < 6) {
+      setError("Password must be at least 6 characters.");
+      return;
+    }
+
+    const schoolId = slugify(form.schoolName);
+    if (!schoolId) {
+      setError("School name must contain at least one letter or number.");
+      return;
+    }
+
+    setLoading(true);
+    try {
+      // Create Firebase Auth user
+      const userCredential = await createUserWithEmailAndPassword(
+        auth,
+        form.email.trim(),
+        form.password
+      );
+      const uid = userCredential.user.uid;
+
+      // Create school_accounts Firestore doc
+      await setDoc(doc(db, "school_accounts", schoolId), {
+        id: schoolId,
+        schoolName: form.schoolName.trim(),
+        adminEmail: form.email.trim().toLowerCase(),
+        adminName: form.contactName.trim(),
+        adminUid: uid,
+        planTier: "free",
+        totalSeats: 0,
+        paidSeats: 0,
+        active: true,
+        logoUrl: null,
+        createdAt: serverTimestamp(),
+      });
+
+      // Redirect to dashboard
+      router.push("/schools/dashboard");
+    } catch (err: unknown) {
+      const code = (err as { code?: string })?.code;
+      if (code === "auth/email-already-in-use") {
+        setError("An account with that email already exists. Try logging in.");
+      } else if (code === "auth/invalid-email") {
+        setError("Please enter a valid email address.");
+      } else if (code === "auth/weak-password") {
+        setError("Password must be at least 6 characters.");
+      } else {
+        setError("Something went wrong. Please try again.");
+      }
+      setLoading(false);
+    }
+  };
+
+  return (
+    <div className="min-h-screen bg-gradient-to-b from-brand-light to-white flex items-center justify-center px-4 py-16">
+      <div className="w-full max-w-md">
+        {/* Logo / Brand */}
+        <div className="text-center mb-8">
+          <Link href="/" className="inline-block">
+            <span className="text-2xl font-bold text-gray-900">
+              Tiger<span className="text-brand">Test</span>
+            </span>
+          </Link>
+          <p className="text-sm text-gray-500 mt-1">for Driving Schools</p>
+        </div>
+
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-xl">Create your school account</CardTitle>
+            <CardDescription>
+              Free to start — invite students and track their progress.
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            <form onSubmit={handleSubmit} className="space-y-4">
+              <div className="space-y-1.5">
+                <Label htmlFor="schoolName">School name</Label>
+                <Input
+                  id="schoolName"
+                  placeholder="Smith Driving Academy"
+                  value={form.schoolName}
+                  onChange={set("schoolName")}
+                  disabled={loading}
+                  autoComplete="organization"
+                />
+                {form.schoolName && (
+                  <p className="text-xs text-gray-400">
+                    Your school URL: tigertest.io/schools/{slugify(form.schoolName) || "…"}
+                  </p>
+                )}
+              </div>
+
+              <div className="space-y-1.5">
+                <Label htmlFor="contactName">Your name</Label>
+                <Input
+                  id="contactName"
+                  placeholder="Jane Smith"
+                  value={form.contactName}
+                  onChange={set("contactName")}
+                  disabled={loading}
+                  autoComplete="name"
+                />
+              </div>
+
+              <div className="space-y-1.5">
+                <Label htmlFor="email">Work email</Label>
+                <Input
+                  id="email"
+                  type="email"
+                  placeholder="jane@smithdriving.com"
+                  value={form.email}
+                  onChange={set("email")}
+                  disabled={loading}
+                  autoComplete="email"
+                />
+              </div>
+
+              <div className="space-y-1.5">
+                <Label htmlFor="password">Password</Label>
+                <Input
+                  id="password"
+                  type="password"
+                  placeholder="Min. 6 characters"
+                  value={form.password}
+                  onChange={set("password")}
+                  disabled={loading}
+                  autoComplete="new-password"
+                />
+              </div>
+
+              {error && (
+                <p className="text-sm text-red-600 bg-red-50 border border-red-200 rounded px-3 py-2">
+                  {error}
+                </p>
+              )}
+
+              <Button
+                type="submit"
+                className="w-full bg-brand hover:bg-brand/90 text-white"
+                disabled={loading}
+              >
+                {loading ? (
+                  <>
+                    <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                    Creating account…
+                  </>
+                ) : (
+                  "Create free account"
+                )}
+              </Button>
+            </form>
+
+            <p className="text-center text-sm text-gray-500 mt-4">
+              Already have an account?{" "}
+              <Link href="/schools/login" className="text-brand hover:underline font-medium">
+                Log in
+              </Link>
+            </p>
+          </CardContent>
+        </Card>
+
+        <p className="text-center text-xs text-gray-400 mt-6">
+          Free plan includes unlimited student invites. Students practice for free.{" "}
+          <Link href="/schools" className="underline hover:text-gray-600">
+            See plans
+          </Link>
+        </p>
+      </div>
+    </div>
+  );
+}

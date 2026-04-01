@@ -77,12 +77,20 @@ export default function SchoolsPage() {
           an admin dashboard so you can track who&apos;s ready — and who needs
           more time.
         </p>
-        <Link
-          href="/schools/apply"
-          className="inline-block bg-gray-900 text-white px-8 py-3 rounded-full font-semibold hover:bg-gray-800 transition-colors"
-        >
-          Get a quote
-        </Link>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <Link
+            href="/schools/signup"
+            className="inline-block bg-brand text-white px-8 py-3 rounded-full font-semibold hover:bg-brand/90 transition-colors"
+          >
+            Create free account
+          </Link>
+          <Link
+            href="/schools/login"
+            className="inline-block text-gray-700 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors border border-gray-300"
+          >
+            Log in
+          </Link>
+        </div>
         <div className="mt-16 rounded-2xl overflow-hidden shadow-2xl border border-gray-200 max-w-4xl mx-auto">
           <Image
             src="/schools-dashboard-preview.png"
@@ -181,14 +189,14 @@ export default function SchoolsPage() {
                 ))}
               </ul>
               <Link
-                href="/schools/apply"
+                href="/schools/signup"
                 className={`block text-center py-3 rounded-xl font-semibold text-sm transition-colors ${
                   plan.highlight
-                    ? "bg-brand text-white hover:bg-brand-dark"
+                    ? "bg-brand text-white hover:bg-brand/90"
                     : "bg-gray-900 text-white hover:bg-gray-800"
                 }`}
               >
-                Get a quote
+                Create free account
               </Link>
             </div>
           ))}
@@ -260,13 +268,13 @@ export default function SchoolsPage() {
           Ready to boost your pass rates?
         </h2>
         <p className="text-gray-600 mb-8">
-          Get a custom quote for your school in under 24 hours.
+          Free to start. Invite students and track their progress today.
         </p>
         <Link
-          href="/schools/apply"
-          className="inline-block bg-gray-900 text-white px-8 py-3 rounded-full font-semibold hover:bg-gray-800 transition-colors"
+          href="/schools/signup"
+          className="inline-block bg-brand text-white px-8 py-3 rounded-full font-semibold hover:bg-brand/90 transition-colors"
         >
-          Get a quote
+          Create free account
         </Link>
       </section>
     </>

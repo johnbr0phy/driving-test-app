@@ -1,12 +1,15 @@
 export interface SchoolAccount {
   id: string;
   schoolName: string;
-  planTier: "starter" | "growth" | "school";
+  planTier: "free" | "starter" | "growth" | "school";
   totalSeats: number;
+  paidSeats: number;
   adminEmail: string;
   adminName: string;
+  adminUid: string;
   createdAt: string;
   active: boolean;
+  logoUrl?: string;
 }
 
 export interface TopicScore {

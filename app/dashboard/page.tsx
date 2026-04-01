@@ -182,6 +182,8 @@ function DashboardContent() {
   const [paywallOpen, setPaywallOpen] = useState(false);
   const [paywallFeature, setPaywallFeature] = useState<"training_set_4" | "practice_test_4">("training_set_4");
   const [showPurchaseSuccess, setShowPurchaseSuccess] = useState(false);
+  const schoolJoinedSlug = searchParams.get("school_joined");
+  const [showSchoolJoined, setShowSchoolJoined] = useState(!!schoolJoinedSlug);
 
   const onboardingComplete = hydrated ? isOnboardingComplete() : true;
   const onboardingProgress = training.totalCorrectAllTime;
@@ -408,6 +410,34 @@ function DashboardContent() {
                 <button
                   onClick={() => setShowPurchaseSuccess(false)}
                   className="text-green-600 hover:text-green-800"
+                >
+                  &times;
+                </button>
+              </div>
+            </CardContent>
+          </Card>
+        )}
+
+        {/* School joined banner */}
+        {showSchoolJoined && schoolJoinedSlug && (
+          <Card className="mb-4 bg-gradient-to-r from-blue-50 to-sky-50 border-blue-200">
+            <CardContent className="p-4">
+              <div className="flex items-center gap-3">
+                <span className="text-2xl">🏫</span>
+                <div className="flex-1">
+                  <p className="text-base font-bold text-blue-900">
+                    You&apos;ve joined {schoolJoinedSlug}!
+                  </p>
+                  <p className="text-xs text-blue-700 mt-0.5">
+                    Your instructor can now track your progress. Good luck on your test!
+                  </p>
+                </div>
+                <button
+                  onClick={() => {
+                    setShowSchoolJoined(false);
+                    router.replace("/dashboard");
+                  }}
+                  className="text-blue-600 hover:text-blue-800"
                 >
                   &times;
                 </button>

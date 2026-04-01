@@ -121,13 +121,23 @@ export async function POST(
     return NextResponse.json({ error: "Invalid JSON body" }, { status: 400 });
   }
 
-  const emails = (body.emails ?? [])
+  const MAX_BULK_INVITE = 50;
+  const rawEmails = (body.emails ?? [])
     .map((e) => e.trim().toLowerCase())
     .filter((e) => e.includes("@"));
 
-  if (!emails.length) {
+  if (!rawEmails.length) {
     return NextResponse.json({ error: "No valid emails provided" }, { status: 400 });
   }
+
+  if (rawEmails.length > MAX_BULK_INVITE) {
+    return NextResponse.json(
+      { error: `Too many emails — max ${MAX_BULK_INVITE} per batch. Got ${rawEmails.length}.` },
+      { status: 400 }
+    );
+  }
+
+  const emails = rawEmails;
 
   try {
     const db = getAdminDb();

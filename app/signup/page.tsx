@@ -19,7 +19,29 @@ import {
 } from "@/components/ui/select";
 import { useStore } from "@/store/useStore";
 import { WebViewGoogleWarning } from "@/components/WebViewGoogleWarning";
-import { auth } from "@/lib/firebase";
+import { auth, db } from "@/lib/firebase";
+import { doc, getDoc, setDoc, serverTimestamp } from "firebase/firestore";
+
+// Enroll the newly-signed-up user into a school's students subcollection.
+// Fires-and-forgets: if the school slug doesn't exist we just skip.
+async function enrollInSchool(slug: string, uid: string, email: string): Promise<void> {
+  try {
+    const schoolRef = doc(db, "school_accounts", slug);
+    const schoolSnap = await getDoc(schoolRef);
+    if (!schoolSnap.exists()) return; // unknown slug — silently skip
+
+    const studentRef = doc(db, "school_accounts", slug, "students", uid);
+    await setDoc(studentRef, {
+      uid,
+      email,
+      createdAt: serverTimestamp(),
+      active: true,
+      tier: "free",
+    });
+  } catch {
+    // best-effort — don't block signup if this fails
+  }
+}
 
 function SignupPageContent() {
   const [email, setEmail] = useState("");
@@ -42,12 +64,16 @@ function SignupPageContent() {
   const stateParam = searchParams.get("state");
   const preselectedState = stateParam && states.find((s) => s.code === stateParam) ? stateParam : null;
 
+  // Check for school slug param (e.g. /signup?school=smith-driving)
+  const schoolSlug = searchParams.get("school") ?? null;
+
   const [selectedState, setSelectedState] = useState<string | null>(preselectedState);
 
   // If guest already has a state selected, or state was provided via URL, skip step 1
   const guestHasState = isGuest && storeSelectedState;
   const hasPreselectedState = !!preselectedState;
-  const [step, setStep] = useState<1 | 2>(guestHasState || hasPreselectedState ? 2 : 1);
+  // If arriving from a school page, jump straight to credentials
+  const [step, setStep] = useState<1 | 2>(guestHasState || hasPreselectedState || !!schoolSlug ? 2 : 1);
 
   const handleStateSelect = () => {
     if (!selectedState) {
@@ -59,10 +85,21 @@ function SignupPageContent() {
     setStep(2);
   };
 
+  /** After any successful auth, optionally enroll in a school then redirect. */
+  const handlePostSignup = async (uid: string, userEmail: string) => {
+    if (schoolSlug) {
+      await enrollInSchool(schoolSlug, uid, userEmail);
+      router.push(`/dashboard?school_joined=${encodeURIComponent(schoolSlug)}`);
+    } else {
+      router.push("/dashboard");
+    }
+  };
+
   const handleGoogleSignIn = async () => {
     // For guests, use existing state; for preselected from URL or manual selection
     const stateToUse = guestHasState ? storeSelectedState : selectedState;
-    if (!stateToUse) {
+    // When arriving via a school link we don't need a state choice up front
+    if (!stateToUse && !schoolSlug) {
       setError(t("signup.pleaseSelectLocation"));
       return;
     }
@@ -73,18 +110,19 @@ function SignupPageContent() {
     try {
       // Set email consent preference (default true for Google sign-in)
       setStoreEmailConsent(true);
-      
+
       await loginWithGoogle();
       // Only set state if not a guest (guests already have state set)
-      if (!guestHasState) {
+      if (!guestHasState && stateToUse) {
         setStoreState(stateToUse);
       }
 
       // Wait for user data to load before redirecting
       await new Promise(resolve => setTimeout(resolve, 800));
 
-      // Redirect to dashboard
-      router.push("/dashboard");
+      const uid = auth.currentUser?.uid ?? "";
+      const userEmail = auth.currentUser?.email ?? "";
+      await handlePostSignup(uid, userEmail);
     } catch (err: any) {
       setError(err.message || "Failed to sign in with Google");
     } finally {
@@ -109,25 +147,31 @@ function SignupPageContent() {
     try {
       // Set email consent preference before creating account
       setStoreEmailConsent(emailConsent);
-      
+
       // Create user account
       await signup(email, password);
       // Only set state if not a guest (guests already have state set)
-      if (!guestHasState) {
-        setStoreState(selectedState!);
+      if (!guestHasState && selectedState) {
+        setStoreState(selectedState);
       }
 
       // Small delay to ensure state is saved
       await new Promise(resolve => setTimeout(resolve, 100));
 
-      // Redirect to dashboard
-      router.push("/dashboard");
+      const uid = auth.currentUser?.uid ?? "";
+      await handlePostSignup(uid, email);
     } catch (err: any) {
       setError(err.message || "Failed to create account");
       setLoading(false);
     }
   };
 
+  // School-context banner shown on the credentials step
+  const schoolBanner = schoolSlug ? (
+    <div className="bg-blue-50 border border-blue-200 text-blue-800 px-4 py-3 rounded-lg mb-4 text-sm">
+      🏫 You&apos;re joining a school on TigerTest. Create a free account to get started.
+    </div>
+  ) : null;
 
   if (step === 1) {
     return (
@@ -191,6 +235,8 @@ function SignupPageContent() {
           </CardDescription>
         </CardHeader>
         <CardContent>
+          {schoolBanner}
+
           {error && (
             <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded mb-4">
               {error}

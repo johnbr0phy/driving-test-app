@@ -1,7 +1,25 @@
 import { MetadataRoute } from "next";
 import { states } from "@/data/states";
 
-export default function sitemap(): MetadataRoute.Sitemap {
+// Fetch active school slugs for sitemap entries (best-effort — returns [] on error)
+async function getActiveSchoolSlugs(): Promise<string[]> {
+  try {
+    // Only available server-side at build/request time
+    const { getAdminDb } = await import("@/lib/firebase-admin");
+    const db = getAdminDb();
+    const snap = await db
+      .collection("school_accounts")
+      .where("active", "==", true)
+      .select() // fetch doc IDs only — no field data needed
+      .get();
+    return snap.docs.map((doc) => doc.id);
+  } catch {
+    // Silently degrade — sitemap works without school pages
+    return [];
+  }
+}
+
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
   // Core pages
@@ -56,5 +74,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
-  return [...corePages, ...cdlPages, ...stateDmvPages, ...stateDmvPagesEs, ...spanishIndexPage];
+  // School landing pages — dynamically from Firestore
+  const schoolSlugs = await getActiveSchoolSlugs();
+  const schoolPages: MetadataRoute.Sitemap = schoolSlugs.map((slug) => ({
+    url: `${siteUrl}/schools/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly" as const,
+    priority: 0.6,
+  }));
+
+  return [
+    ...corePages,
+    ...cdlPages,
+    ...stateDmvPages,
+    ...stateDmvPagesEs,
+    ...spanishIndexPage,
+    ...schoolPages,
+  ];
 }

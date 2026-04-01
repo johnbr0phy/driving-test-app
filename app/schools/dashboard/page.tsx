@@ -12,6 +12,7 @@ import {
   Copy, ExternalLink, ChevronDown, ChevronUp, Share2,
   Users, TrendingUp, Award, AlertCircle,
 } from "lucide-react";
+import { QRCodeSVG } from "qrcode.react";
 import type { SchoolStudent } from "@/lib/school-types";
 import { useSchoolAuth } from "@/lib/hooks/useSchoolAuth";
 import { ref as storageRef, uploadBytes, getDownloadURL } from "firebase/storage";
@@ -752,6 +753,147 @@ function SettingsPanel({
   );
 }
 
+// ── Share School Page Panel ─────────────────────────────────────────────────
+interface SharePanelProps {
+  onClose: () => void;
+  schoolId: string | null;
+  schoolName: string;
+}
+
+function SharePanel({ onClose, schoolId, schoolName }: SharePanelProps) {
+  const publicUrl = schoolId ? `https://tigertest.io/schools/${schoolId}` : "";
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = async () => {
+    if (!publicUrl) return;
+    try {
+      await navigator.clipboard.writeText(publicUrl);
+    } catch {
+      const el = document.createElement("input");
+      el.value = publicUrl;
+      document.body.appendChild(el);
+      el.select();
+      document.execCommand("copy");
+      document.body.removeChild(el);
+    }
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2500);
+  };
+
+  return (
+    <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
+      <div className="bg-white rounded-2xl w-full max-w-sm shadow-xl">
+        {/* Header */}
+        <div className="flex items-center justify-between px-6 pt-6 pb-4 border-b border-gray-100">
+          <div className="flex items-center gap-2">
+            <Share2 className="h-4 w-4 text-brand" />
+            <h2 className="text-base font-bold text-gray-900">Share your school page</h2>
+          </div>
+          <button
+            onClick={onClose}
+            className="text-gray-400 hover:text-gray-600 transition-colors p-1 rounded"
+          >
+            <X className="h-4 w-4" />
+          </button>
+        </div>
+
+        <div className="px-6 py-5 space-y-5">
+          {/* Explanation */}
+          <p className="text-sm text-gray-500">
+            Students who visit your school page and sign up are automatically enrolled under{" "}
+            <span className="font-medium text-gray-700">{schoolName}</span>.
+          </p>
+
+          {/* QR Code */}
+          {publicUrl ? (
+            <div className="flex flex-col items-center gap-3 py-2">
+              <div className="p-3 bg-white border border-gray-200 rounded-xl shadow-sm">
+                <QRCodeSVG
+                  value={publicUrl}
+                  size={160}
+                  bgColor="#ffffff"
+                  fgColor="#111827"
+                  level="M"
+                  includeMargin={false}
+                />
+              </div>
+              <p className="text-xs text-gray-400 text-center">
+                Print this and hand it out — or drop it in your course materials.
+              </p>
+            </div>
+          ) : (
+            <div className="flex flex-col items-center gap-2 py-4 text-gray-400">
+              <School className="h-10 w-10 opacity-30" />
+              <p className="text-sm">Log in to generate your QR code.</p>
+            </div>
+          )}
+
+          {/* URL + copy */}
+          {publicUrl && (
+            <div>
+              <label className="block text-xs font-semibold text-gray-600 mb-1.5">
+                Your public link
+              </label>
+              <div className="flex items-center gap-2">
+                <div className="flex-1 bg-gray-50 border border-gray-200 rounded-lg px-3 py-2 text-xs text-gray-600 font-mono truncate">
+                  {publicUrl}
+                </div>
+                <button
+                  onClick={handleCopy}
+                  className="flex items-center gap-1.5 px-3 py-2 text-xs font-medium rounded-lg border border-gray-200 hover:bg-gray-50 transition-colors shrink-0"
+                >
+                  {copied ? (
+                    <>
+                      <CheckCircle2 className="h-3.5 w-3.5 text-green-500" />
+                      Copied!
+                    </>
+                  ) : (
+                    <>
+                      <Copy className="h-3.5 w-3.5" />
+                      Copy
+                    </>
+                  )}
+                </button>
+              </div>
+            </div>
+          )}
+
+          {/* Tips */}
+          {publicUrl && (
+            <ul className="text-xs text-gray-400 space-y-1 border-t border-gray-100 pt-4">
+              <li className="flex items-start gap-1.5">
+                <Check className="h-3.5 w-3.5 text-green-400 mt-0.5 shrink-0" />
+                Add the link to your course syllabus
+              </li>
+              <li className="flex items-start gap-1.5">
+                <Check className="h-3.5 w-3.5 text-green-400 mt-0.5 shrink-0" />
+                Print the QR code and put it in your classroom
+              </li>
+              <li className="flex items-start gap-1.5">
+                <Check className="h-3.5 w-3.5 text-green-400 mt-0.5 shrink-0" />
+                Share it in your school&apos;s group chat or email
+              </li>
+            </ul>
+          )}
+
+          {/* Open in new tab */}
+          {publicUrl && (
+            <a
+              href={publicUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-1.5 w-full text-sm font-medium text-brand border border-brand/30 rounded-xl py-2.5 hover:bg-brand/5 transition-colors"
+            >
+              <ExternalLink className="h-4 w-4" />
+              Preview your school page
+            </a>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 // ── Class Overview Stat Cards ───────────────────────────────────────────────
 interface ClassOverviewProps {
   students: SchoolStudent[];
@@ -974,6 +1116,7 @@ function DashboardInner() {
   const [error, setError] = useState<string | null>(authError);
   const [showSettings, setShowSettings] = useState(false);
   const [settingsOpenTab, setSettingsOpenTab] = useState<"school" | "logo" | "danger">("school");
+  const [showShare, setShowShare] = useState(false);
   const [showInactive, setShowInactive] = useState(false);
 
   // Local logo URL — can be updated optimistically after upload
@@ -1201,6 +1344,15 @@ function DashboardInner() {
 
   return (
     <div className="max-w-3xl mx-auto px-4 sm:px-6 py-6 sm:py-10">
+      {/* Share panel */}
+      {showShare && (
+        <SharePanel
+          onClose={() => setShowShare(false)}
+          schoolId={schoolId}
+          schoolName={displayName}
+        />
+      )}
+
       {/* Settings panel */}
       {showSettings && (
         <SettingsPanel
@@ -1291,6 +1443,13 @@ function DashboardInner() {
 
         {/* Action buttons */}
         <div className="flex items-center gap-2 sm:shrink-0">
+          <button
+            onClick={() => setShowShare(true)}
+            className="p-2 rounded-lg text-gray-400 hover:text-brand hover:bg-brand/5 transition-colors"
+            title="Share your school page"
+          >
+            <Share2 className="h-5 w-5" />
+          </button>
           <button
             onClick={() => setShowSettings(true)}
             className="p-2 rounded-lg text-gray-400 hover:text-gray-600 hover:bg-gray-100 transition-colors"

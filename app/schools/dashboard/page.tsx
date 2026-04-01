@@ -3,11 +3,18 @@
 import { useState, useMemo, useRef, useEffect, useCallback, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { UserPlus, Trash2, AlertTriangle, CheckCircle2, X, Clock, Check, Loader2, LogIn, School } from "lucide-react";
+import {
+  UserPlus, Trash2, AlertTriangle, CheckCircle2, X, Clock, Check,
+  Loader2, LogIn, School, Settings, Upload, ImageIcon,
+} from "lucide-react";
 import type { SchoolStudent } from "@/lib/school-types";
 import { useSchoolAuth } from "@/lib/hooks/useSchoolAuth";
+import { ref as storageRef, uploadBytes, getDownloadURL } from "firebase/storage";
+import { doc, updateDoc } from "firebase/firestore";
+import { storage, db } from "@/lib/firebase";
 
 // --- Config ---
 const SCHOOL_NAME = "Smith Driving Academy";
@@ -42,6 +49,178 @@ const DMV_SECTIONS = [
   "Special Situations",
 ];
 
+// ── Settings Panel ──────────────────────────────────────────────────────────
+interface SettingsPanelProps {
+  onClose: () => void;
+  schoolId: string | null;
+  currentLogoUrl: string | undefined;
+  onLogoUpdated: (url: string) => void;
+  isDemoMode: boolean;
+}
+
+function SettingsPanel({ onClose, schoolId, currentLogoUrl, onLogoUpdated, isDemoMode }: SettingsPanelProps) {
+  const fileInputRef = useRef<HTMLInputElement>(null);
+  const [uploading, setUploading] = useState(false);
+  const [uploadError, setUploadError] = useState<string | null>(null);
+  const [previewUrl, setPreviewUrl] = useState<string | null>(currentLogoUrl ?? null);
+  const [successMsg, setSuccessMsg] = useState<string | null>(null);
+
+  const handleFileChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    // Validate type
+    if (!["image/png", "image/jpeg", "image/jpg"].includes(file.type)) {
+      setUploadError("Only PNG or JPG files are supported.");
+      return;
+    }
+
+    // Validate size (2MB)
+    if (file.size > 2 * 1024 * 1024) {
+      setUploadError("File must be under 2MB.");
+      return;
+    }
+
+    setUploadError(null);
+    setSuccessMsg(null);
+
+    // Local preview immediately
+    const localUrl = URL.createObjectURL(file);
+    setPreviewUrl(localUrl);
+
+    if (isDemoMode || !schoolId) {
+      // Demo mode: just show the preview, don't persist
+      setSuccessMsg("Logo preview updated (demo mode — log in to save).");
+      return;
+    }
+
+    // Upload to Firebase Storage
+    setUploading(true);
+    try {
+      const ext = file.type === "image/png" ? "png" : "jpg";
+      const path = `schools/${schoolId}/logo.${ext}`;
+      const sRef = storageRef(storage, path);
+      await uploadBytes(sRef, file, { contentType: file.type });
+      const downloadUrl = await getDownloadURL(sRef);
+
+      // Update Firestore doc
+      const schoolDocRef = doc(db, "school_accounts", schoolId);
+      await updateDoc(schoolDocRef, { logoUrl: downloadUrl });
+
+      onLogoUpdated(downloadUrl);
+      setPreviewUrl(downloadUrl);
+      setSuccessMsg("Logo saved successfully.");
+    } catch (err) {
+      console.error("[logo upload]", err);
+      setUploadError("Upload failed. Please try again.");
+      setPreviewUrl(currentLogoUrl ?? null);
+    } finally {
+      setUploading(false);
+    }
+  };
+
+  return (
+    <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
+      <div className="bg-white rounded-2xl p-6 w-full max-w-md shadow-xl">
+        {/* Header */}
+        <div className="flex items-center justify-between mb-6">
+          <h2 className="text-lg font-bold text-gray-900">School Settings</h2>
+          <button
+            onClick={onClose}
+            className="text-gray-400 hover:text-gray-600 transition-colors p-1 rounded"
+          >
+            <X className="h-4 w-4" />
+          </button>
+        </div>
+
+        {/* Logo section */}
+        <div className="space-y-4">
+          <div>
+            <h3 className="text-sm font-semibold text-gray-700 mb-3">School Logo</h3>
+
+            {/* Logo preview */}
+            <div className="flex items-center gap-4 mb-4">
+              <div className="w-20 h-20 rounded-xl border-2 border-dashed border-gray-200 flex items-center justify-center bg-gray-50 overflow-hidden flex-shrink-0">
+                {previewUrl ? (
+                  <Image
+                    src={previewUrl}
+                    alt="School logo"
+                    width={80}
+                    height={80}
+                    className="object-contain w-full h-full"
+                    unoptimized
+                  />
+                ) : (
+                  <ImageIcon className="h-8 w-8 text-gray-300" />
+                )}
+              </div>
+              <div>
+                <p className="text-xs text-gray-500 mb-2">
+                  PNG or JPG, max 2MB. Shown on your public school page and dashboard header.
+                </p>
+                <Button
+                  size="sm"
+                  variant="outline"
+                  className="gap-1.5 text-xs"
+                  onClick={() => fileInputRef.current?.click()}
+                  disabled={uploading}
+                >
+                  {uploading ? (
+                    <>
+                      <Loader2 className="h-3.5 w-3.5 animate-spin" />
+                      Uploading…
+                    </>
+                  ) : (
+                    <>
+                      <Upload className="h-3.5 w-3.5" />
+                      {previewUrl ? "Replace logo" : "Upload logo"}
+                    </>
+                  )}
+                </Button>
+                <input
+                  ref={fileInputRef}
+                  type="file"
+                  accept="image/png,image/jpeg"
+                  className="hidden"
+                  onChange={handleFileChange}
+                />
+              </div>
+            </div>
+
+            {/* Status messages */}
+            {uploadError && (
+              <div className="flex items-center gap-2 text-xs text-red-600 bg-red-50 border border-red-200 rounded-lg px-3 py-2">
+                <AlertTriangle className="h-3.5 w-3.5 flex-shrink-0" />
+                {uploadError}
+              </div>
+            )}
+            {successMsg && (
+              <div className="flex items-center gap-2 text-xs text-green-700 bg-green-50 border border-green-200 rounded-lg px-3 py-2">
+                <CheckCircle2 className="h-3.5 w-3.5 flex-shrink-0" />
+                {successMsg}
+              </div>
+            )}
+          </div>
+
+          {/* Demo mode note */}
+          {isDemoMode && (
+            <div className="bg-amber-50 border border-amber-200 rounded-xl px-4 py-3 text-xs text-amber-800">
+              You&apos;re in demo mode. <Link href="/schools/login" className="underline font-medium">Log in</Link> to save changes.
+            </div>
+          )}
+        </div>
+
+        <div className="mt-6 flex justify-end">
+          <Button variant="outline" onClick={onClose}>
+            Done
+          </Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ── Section tooltip ─────────────────────────────────────────────────────────
 function SectionTooltip({ done, totalSections }: { done: number; totalSections: number }) {
   const [visible, setVisible] = useState(false);
 
@@ -171,6 +350,15 @@ function DashboardInner() {
   );
   const [loading, setLoading] = useState(!isDemoMode);
   const [error, setError] = useState<string | null>(authError);
+  const [showSettings, setShowSettings] = useState(false);
+
+  // Local logo URL — can be updated optimistically after upload
+  const [localLogoUrl, setLocalLogoUrl] = useState<string | undefined>(schoolData?.logoUrl);
+
+  // Sync localLogoUrl when schoolData loads
+  useEffect(() => {
+    if (schoolData?.logoUrl) setLocalLogoUrl(schoolData.logoUrl);
+  }, [schoolData?.logoUrl]);
 
   const [showInvite, setShowInvite] = useState(false);
   const [inviteEmails, setInviteEmails] = useState("");
@@ -330,8 +518,21 @@ function DashboardInner() {
     );
   }
 
+  const displayName = schoolData?.schoolName ?? SCHOOL_NAME;
+
   return (
     <div className="max-w-3xl mx-auto px-6 py-10">
+      {/* Settings panel */}
+      {showSettings && (
+        <SettingsPanel
+          onClose={() => setShowSettings(false)}
+          schoolId={schoolId}
+          currentLogoUrl={localLogoUrl}
+          onLogoUpdated={(url) => setLocalLogoUrl(url)}
+          isDemoMode={isDemoMode}
+        />
+      )}
+
       {/* Login banner — shown when not authenticated */}
       {!isAuthenticated && (
         <div className="mb-6 bg-brand/5 border border-brand/20 rounded-xl px-5 py-4 flex items-center justify-between gap-4">
@@ -350,30 +551,58 @@ function DashboardInner() {
 
       {/* Header */}
       <div className="flex items-start justify-between gap-4 mb-6">
-        <div>
-          <h1 className="text-2xl font-bold text-gray-900">
-            {schoolData?.schoolName ?? SCHOOL_NAME}
-          </h1>
-          <p className="text-sm text-gray-500 mt-0.5">
-            {schoolData?.planTier
-              ? schoolData.planTier.charAt(0).toUpperCase() + schoolData.planTier.slice(1)
-              : PLAN_TIER}{" "}
-            plan &middot; Instructor Dashboard
-            {isDemoMode && (
-              <span className="ml-2 text-xs bg-amber-100 text-amber-700 px-2 py-0.5 rounded-full font-medium">
-                Demo
-              </span>
-            )}
-          </p>
+        <div className="flex items-center gap-3">
+          {/* School logo */}
+          {localLogoUrl ? (
+            <div className="w-10 h-10 rounded-lg overflow-hidden border border-gray-200 bg-gray-50 flex-shrink-0">
+              <Image
+                src={localLogoUrl}
+                alt={`${displayName} logo`}
+                width={40}
+                height={40}
+                className="object-contain w-full h-full"
+                unoptimized
+              />
+            </div>
+          ) : (
+            <div className="w-10 h-10 rounded-lg bg-brand/10 flex items-center justify-center flex-shrink-0">
+              <School className="h-5 w-5 text-brand" />
+            </div>
+          )}
+          <div>
+            <h1 className="text-2xl font-bold text-gray-900">{displayName}</h1>
+            <p className="text-sm text-gray-500 mt-0.5">
+              {schoolData?.planTier
+                ? schoolData.planTier.charAt(0).toUpperCase() + schoolData.planTier.slice(1)
+                : PLAN_TIER}{" "}
+              plan &middot; Instructor Dashboard
+              {isDemoMode && (
+                <span className="ml-2 text-xs bg-amber-100 text-amber-700 px-2 py-0.5 rounded-full font-medium">
+                  Demo
+                </span>
+              )}
+            </p>
+          </div>
         </div>
-        <Button
-          onClick={() => setShowInvite(true)}
-          size="sm"
-          className="bg-brand text-white hover:bg-brand-dark gap-1.5 text-sm shrink-0"
-        >
-          <UserPlus className="h-4 w-4" />
-          Add students
-        </Button>
+
+        {/* Action buttons */}
+        <div className="flex items-center gap-2 shrink-0">
+          <button
+            onClick={() => setShowSettings(true)}
+            className="p-2 rounded-lg text-gray-400 hover:text-gray-600 hover:bg-gray-100 transition-colors"
+            title="School settings"
+          >
+            <Settings className="h-5 w-5" />
+          </button>
+          <Button
+            onClick={() => setShowInvite(true)}
+            size="sm"
+            className="bg-brand text-white hover:bg-brand-dark gap-1.5 text-sm"
+          >
+            <UserPlus className="h-4 w-4" />
+            Add students
+          </Button>
+        </div>
       </div>
 
       {/* Error banner */}

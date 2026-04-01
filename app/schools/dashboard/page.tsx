@@ -8,7 +8,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import {
   UserPlus, Trash2, AlertTriangle, CheckCircle2, X, Clock, Check,
-  Loader2, LogIn, School, Settings, Upload, ImageIcon,
+  Loader2, LogIn, School, Settings, Upload, ImageIcon, UserX, Eye, EyeOff,
 } from "lucide-react";
 import type { SchoolStudent } from "@/lib/school-types";
 import { useSchoolAuth } from "@/lib/hooks/useSchoolAuth";
@@ -351,6 +351,7 @@ function DashboardInner() {
   const [loading, setLoading] = useState(!isDemoMode);
   const [error, setError] = useState<string | null>(authError);
   const [showSettings, setShowSettings] = useState(false);
+  const [showInactive, setShowInactive] = useState(false);
 
   // Local logo URL — can be updated optimistically after upload
   const [localLogoUrl, setLocalLogoUrl] = useState<string | undefined>(schoolData?.logoUrl);
@@ -363,6 +364,8 @@ function DashboardInner() {
   const [showInvite, setShowInvite] = useState(false);
   const [inviteEmails, setInviteEmails] = useState("");
   const [inviting, setInviting] = useState(false);
+  // deactivate = soft (sets active:false); remove = hard delete with confirm dialog
+  const [deactivateConfirm, setDeactivateConfirm] = useState<string | null>(null);
   const [removeConfirm, setRemoveConfirm] = useState<string | null>(null);
 
   // ── Load students from Firestore (via API) when schoolId is present ──────
@@ -396,6 +399,8 @@ function DashboardInner() {
   }, [authLoading, schoolId]);
 
   const activeStudents = students.filter((s) => s.active);
+  const inactiveStudents = students.filter((s) => !s.active);
+  const displayedStudents = showInactive ? students : activeStudents;
 
   // Parse emails live as user types
   const parsedEmails = useMemo(() => {
@@ -455,23 +460,40 @@ function DashboardInner() {
     setShowInvite(false);
   };
 
+  // Soft deactivate — keeps record in Firestore, sets active:false
+  const handleDeactivate = async (uid: string) => {
+    if (!isDemoMode && schoolId) {
+      try {
+        const res = await fetch(`/api/schools/${schoolId}/students/${uid}`, {
+          method: "PATCH",
+        });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        setStudents((prev) => prev.map((s) => (s.uid === uid ? { ...s, active: false } : s)));
+      } catch (err) {
+        console.error("[handleDeactivate]", err);
+        setError("Failed to deactivate student. Please try again.");
+      }
+    } else {
+      setStudents((prev) => prev.map((s) => (s.uid === uid ? { ...s, active: false } : s)));
+    }
+    setDeactivateConfirm(null);
+  };
+
+  // Hard remove — permanently deletes from subcollection
   const handleRemove = async (uid: string) => {
     if (!isDemoMode && schoolId) {
-      // Firebase soft-delete
       try {
         const res = await fetch(`/api/schools/${schoolId}/students/${uid}`, {
           method: "DELETE",
         });
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        // Optimistic: remove from local state immediately
-        setStudents((prev) => prev.map((s) => (s.uid === uid ? { ...s, active: false } : s)));
+        setStudents((prev) => prev.filter((s) => s.uid !== uid));
       } catch (err) {
         console.error("[handleRemove]", err);
         setError("Failed to remove student. Please try again.");
       }
     } else {
-      // Mock mode
-      setStudents((prev) => prev.map((s) => (s.uid === uid ? { ...s, active: false } : s)));
+      setStudents((prev) => prev.filter((s) => s.uid !== uid));
     }
     setRemoveConfirm(null);
   };
@@ -657,15 +679,30 @@ function DashboardInner() {
       {/* Student table */}
       <Card>
         <CardHeader className="pb-3 pt-5 px-6">
-          <CardTitle className="text-base font-semibold text-gray-900">
-            Students
-            <span className="ml-2 text-sm font-normal text-gray-400">
-              ({activeStudents.length})
-            </span>
-          </CardTitle>
+          <div className="flex items-center justify-between">
+            <CardTitle className="text-base font-semibold text-gray-900">
+              Students
+              <span className="ml-2 text-sm font-normal text-gray-400">
+                ({activeStudents.length})
+              </span>
+            </CardTitle>
+            {inactiveStudents.length > 0 && (
+              <button
+                onClick={() => setShowInactive((v) => !v)}
+                className="flex items-center gap-1.5 text-xs text-gray-400 hover:text-gray-600 transition-colors"
+                title={showInactive ? "Hide inactive students" : "Show inactive students"}
+              >
+                {showInactive ? (
+                  <><EyeOff className="h-3.5 w-3.5" /> Hide inactive ({inactiveStudents.length})</>
+                ) : (
+                  <><Eye className="h-3.5 w-3.5" /> Show inactive ({inactiveStudents.length})</>
+                )}
+              </button>
+            )}
+          </div>
         </CardHeader>
         <CardContent className="p-0">
-          {activeStudents.length === 0 ? (
+          {activeStudents.length === 0 && inactiveStudents.length === 0 ? (
             <div className="px-6 py-16 text-center">
               <p className="text-gray-400 text-sm mb-4">No students yet.</p>
               <Button
@@ -689,24 +726,41 @@ function DashboardInner() {
                   <th className="px-6 py-3 text-center text-xs font-medium text-gray-500">
                     Status
                   </th>
-                  <th className="px-6 py-3 w-16" />
+                  <th className="px-6 py-3 text-right text-xs font-medium text-gray-500 pr-6 w-36">
+                    Actions
+                  </th>
                 </tr>
               </thead>
               <tbody>
-                {activeStudents.map((student) => {
+                {displayedStudents.map((student) => {
+                  const isInactive = !student.active;
                   const done = Math.min(student.testsTaken, TOTAL_SECTIONS);
-                  const isConfirming = removeConfirm === student.uid;
+                  const isDeactivating = deactivateConfirm === student.uid;
+                  const isRemoving = removeConfirm === student.uid;
                   const status = getStudentStatus(student);
 
                   return (
                     <tr
                       key={student.uid}
-                      className="border-b border-gray-100 last:border-0 hover:bg-gray-50/50"
+                      className={`border-b border-gray-100 last:border-0 ${
+                        isInactive ? "opacity-50 bg-gray-50/80" : "hover:bg-gray-50/50"
+                      }`}
                     >
                       {/* Name / Email */}
                       <td className="px-6 py-4">
-                        <p className="font-medium text-gray-900">{student.name}</p>
-                        <p className="text-xs text-gray-400 mt-0.5">{student.email}</p>
+                        <div className="flex items-center gap-2">
+                          <div>
+                            <p className={`font-medium ${isInactive ? "text-gray-400 line-through" : "text-gray-900"}`}>
+                              {student.name}
+                            </p>
+                            <p className="text-xs text-gray-400 mt-0.5">{student.email}</p>
+                          </div>
+                          {isInactive && (
+                            <span className="text-xs font-medium px-1.5 py-0.5 rounded bg-gray-200 text-gray-500 shrink-0">
+                              Inactive
+                            </span>
+                          )}
+                        </div>
                       </td>
 
                       {/* Progress: bar + X/8 + hover tooltip */}
@@ -716,12 +770,33 @@ function DashboardInner() {
 
                       {/* Status badge */}
                       <td className="px-6 py-4 text-center">
-                        <StatusBadge status={status} />
+                        {isInactive ? (
+                          <span className="inline-flex items-center gap-1 text-xs font-medium px-2 py-0.5 rounded-full bg-gray-100 text-gray-400">
+                            Deactivated
+                          </span>
+                        ) : (
+                          <StatusBadge status={status} />
+                        )}
                       </td>
 
-                      {/* Remove */}
+                      {/* Actions — deactivate (soft) or remove (hard) */}
                       <td className="px-6 py-4 text-right">
-                        {isConfirming ? (
+                        {isDeactivating ? (
+                          <div className="flex items-center justify-end gap-2">
+                            <button
+                              onClick={() => setDeactivateConfirm(null)}
+                              className="text-xs text-gray-400 hover:text-gray-600"
+                            >
+                              Cancel
+                            </button>
+                            <button
+                              onClick={() => handleDeactivate(student.uid)}
+                              className="text-xs font-medium text-amber-600 hover:text-amber-700"
+                            >
+                              Deactivate
+                            </button>
+                          </div>
+                        ) : isRemoving ? (
                           <div className="flex items-center justify-end gap-2">
                             <button
                               onClick={() => setRemoveConfirm(null)}
@@ -733,17 +808,36 @@ function DashboardInner() {
                               onClick={() => handleRemove(student.uid)}
                               className="text-xs font-medium text-red-600 hover:text-red-700"
                             >
-                              Remove
+                              Delete
                             </button>
                           </div>
-                        ) : (
+                        ) : isInactive ? (
+                          // Inactive students: only show hard remove
                           <button
                             onClick={() => setRemoveConfirm(student.uid)}
                             className="text-gray-300 hover:text-red-500 transition-colors"
-                            title="Remove student"
+                            title="Permanently remove student"
                           >
                             <Trash2 className="h-4 w-4" />
                           </button>
+                        ) : (
+                          // Active students: deactivate (soft) + remove (hard)
+                          <div className="flex items-center justify-end gap-1">
+                            <button
+                              onClick={() => setDeactivateConfirm(student.uid)}
+                              className="text-gray-300 hover:text-amber-500 transition-colors p-1 rounded"
+                              title="Deactivate student (keeps record)"
+                            >
+                              <UserX className="h-4 w-4" />
+                            </button>
+                            <button
+                              onClick={() => setRemoveConfirm(student.uid)}
+                              className="text-gray-300 hover:text-red-500 transition-colors p-1 rounded"
+                              title="Permanently remove student"
+                            >
+                              <Trash2 className="h-4 w-4" />
+                            </button>
+                          </div>
                         )}
                       </td>
                     </tr>

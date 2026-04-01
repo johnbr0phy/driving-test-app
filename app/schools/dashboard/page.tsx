@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button";
 import {
   UserPlus, Trash2, AlertTriangle, CheckCircle2, X, Clock, Check,
   Loader2, LogIn, School, Settings, Upload, ImageIcon, UserX, Eye, EyeOff,
-  Copy, ExternalLink,
+  Copy, ExternalLink, ChevronDown, ChevronUp, Share2,
 } from "lucide-react";
 import type { SchoolStudent } from "@/lib/school-types";
 import { useSchoolAuth } from "@/lib/hooks/useSchoolAuth";
@@ -50,6 +50,217 @@ const DMV_SECTIONS = [
   "Special Situations",
 ];
 
+// ── Onboarding Checklist ────────────────────────────────────────────────────
+interface OnboardingChecklistProps {
+  schoolId: string | null;
+  hasLogo: boolean;
+  hasStudents: boolean;
+  isDemoMode: boolean;
+  onOpenSettings: () => void;
+  onOpenInvite: () => void;
+}
+
+const CHECKLIST_DISMISSED_KEY = "tt_school_checklist_dismissed";
+const CHECKLIST_COLLAPSED_KEY = "tt_school_checklist_collapsed";
+
+function OnboardingChecklist({
+  schoolId,
+  hasLogo,
+  hasStudents,
+  isDemoMode,
+  onOpenSettings,
+  onOpenInvite,
+}: OnboardingChecklistProps) {
+  const [dismissed, setDismissed] = useState(false);
+  const [collapsed, setCollapsed] = useState(false);
+
+  // Read persisted state on mount
+  useEffect(() => {
+    try {
+      const key = schoolId ? `${CHECKLIST_DISMISSED_KEY}_${schoolId}` : CHECKLIST_DISMISSED_KEY;
+      if (localStorage.getItem(key) === "1") setDismissed(true);
+      const collKey = schoolId ? `${CHECKLIST_COLLAPSED_KEY}_${schoolId}` : CHECKLIST_COLLAPSED_KEY;
+      if (localStorage.getItem(collKey) === "1") setCollapsed(true);
+    } catch {
+      // localStorage unavailable (SSR / private mode)
+    }
+  }, [schoolId]);
+
+  const publicUrl = schoolId ? `https://tigertest.io/schools/${schoolId}` : null;
+
+  const items = [
+    {
+      id: "logo",
+      label: "Upload your logo",
+      description: "Shown on your public school page",
+      done: hasLogo,
+      action: () => onOpenSettings(),
+      actionLabel: "Upload logo",
+      icon: <ImageIcon className="h-4 w-4" />,
+    },
+    {
+      id: "student",
+      label: "Invite your first student",
+      description: "Add a student email to get them started",
+      done: hasStudents,
+      action: () => onOpenInvite(),
+      actionLabel: "Add student",
+      icon: <UserPlus className="h-4 w-4" />,
+    },
+    {
+      id: "share",
+      label: "Share your school page",
+      description: publicUrl
+        ? `tigertest.io/schools/${schoolId}`
+        : "Your public sign-up link",
+      done: false, // never auto-ticked — manual step
+      action: publicUrl
+        ? async () => {
+            try {
+              await navigator.clipboard.writeText(publicUrl);
+              // Brief visual feedback handled by parent
+            } catch {
+              // ignore
+            }
+          }
+        : undefined,
+      actionLabel: "Copy link",
+      icon: <Share2 className="h-4 w-4" />,
+    },
+  ];
+
+  const allDone = items.every((i) => i.done);
+  const completedCount = items.filter((i) => i.done).length;
+
+  const handleDismiss = () => {
+    setDismissed(true);
+    try {
+      const key = schoolId ? `${CHECKLIST_DISMISSED_KEY}_${schoolId}` : CHECKLIST_DISMISSED_KEY;
+      localStorage.setItem(key, "1");
+    } catch { /* ignore */ }
+  };
+
+  const handleToggleCollapse = () => {
+    const next = !collapsed;
+    setCollapsed(next);
+    try {
+      const key = schoolId ? `${CHECKLIST_COLLAPSED_KEY}_${schoolId}` : CHECKLIST_COLLAPSED_KEY;
+      localStorage.setItem(key, next ? "1" : "0");
+    } catch { /* ignore */ }
+  };
+
+  // Auto-dismiss once all items are done
+  useEffect(() => {
+    if (allDone) handleDismiss();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [allDone]);
+
+  if (dismissed) return null;
+
+  // In demo mode, always show (educational value) but note login required
+  return (
+    <div className="mb-6 bg-gradient-to-br from-brand/5 to-brand/10 border border-brand/20 rounded-xl overflow-hidden">
+      {/* Header row */}
+      <div className="flex items-center justify-between px-5 py-3.5">
+        <div className="flex items-center gap-3">
+          <div className="flex items-center gap-1.5">
+            {items.map((item) => (
+              <div
+                key={item.id}
+                className={`w-2 h-2 rounded-full transition-colors ${
+                  item.done ? "bg-green-500" : "bg-brand/30"
+                }`}
+              />
+            ))}
+          </div>
+          <span className="text-sm font-semibold text-gray-800">
+            Getting started
+          </span>
+          <span className="text-xs text-gray-500">
+            {completedCount}/{items.length} done
+          </span>
+        </div>
+        <div className="flex items-center gap-1">
+          <button
+            onClick={handleToggleCollapse}
+            className="p-1.5 rounded-lg text-gray-400 hover:text-gray-600 hover:bg-white/60 transition-colors"
+            title={collapsed ? "Expand" : "Collapse"}
+          >
+            {collapsed ? (
+              <ChevronDown className="h-4 w-4" />
+            ) : (
+              <ChevronUp className="h-4 w-4" />
+            )}
+          </button>
+          <button
+            onClick={handleDismiss}
+            className="p-1.5 rounded-lg text-gray-400 hover:text-gray-600 hover:bg-white/60 transition-colors"
+            title="Dismiss checklist"
+          >
+            <X className="h-3.5 w-3.5" />
+          </button>
+        </div>
+      </div>
+
+      {/* Item list */}
+      {!collapsed && (
+        <div className="border-t border-brand/10 divide-y divide-brand/10">
+          {items.map((item) => (
+            <div
+              key={item.id}
+              className={`flex items-center gap-4 px-5 py-3 bg-white/40 ${
+                item.done ? "opacity-60" : ""
+              }`}
+            >
+              {/* Checkbox visual */}
+              <div
+                className={`w-5 h-5 rounded-full border-2 flex items-center justify-center flex-shrink-0 transition-all ${
+                  item.done
+                    ? "bg-green-500 border-green-500"
+                    : "border-gray-300 bg-white"
+                }`}
+              >
+                {item.done && <Check className="h-3 w-3 text-white" />}
+              </div>
+
+              {/* Text */}
+              <div className="flex-1 min-w-0">
+                <p
+                  className={`text-sm font-medium ${
+                    item.done ? "line-through text-gray-400" : "text-gray-800"
+                  }`}
+                >
+                  {item.label}
+                </p>
+                <p className="text-xs text-gray-400 truncate">{item.description}</p>
+              </div>
+
+              {/* Action button */}
+              {!item.done && item.action && (
+                <button
+                  onClick={item.action}
+                  disabled={isDemoMode && item.id !== "share"}
+                  className="flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-lg bg-brand text-white hover:bg-brand/90 transition-colors disabled:opacity-50 shrink-0"
+                >
+                  {item.icon}
+                  {item.actionLabel}
+                </button>
+              )}
+            </div>
+          ))}
+        </div>
+      )}
+
+      {/* Demo mode note */}
+      {isDemoMode && !collapsed && (
+        <div className="px-5 py-2.5 bg-amber-50/80 border-t border-amber-100 text-xs text-amber-700">
+          <Link href="/schools/login" className="underline font-medium">Log in</Link> to save your progress.
+        </div>
+      )}
+    </div>
+  );
+}
+
 // ── Settings Panel ──────────────────────────────────────────────────────────
 interface SettingsPanelProps {
   onClose: () => void;
@@ -59,6 +270,7 @@ interface SettingsPanelProps {
   onLogoUpdated: (url: string) => void;
   onSchoolInfoUpdated: (patch: { schoolName?: string; adminName?: string; adminEmail?: string }) => void;
   isDemoMode: boolean;
+  initialTab?: "school" | "logo" | "danger";
 }
 
 type SettingsTab = "school" | "logo" | "danger";
@@ -71,9 +283,10 @@ function SettingsPanel({
   onLogoUpdated,
   onSchoolInfoUpdated,
   isDemoMode,
+  initialTab = "school",
 }: SettingsPanelProps) {
   const fileInputRef = useRef<HTMLInputElement>(null);
-  const [activeTab, setActiveTab] = useState<SettingsTab>("school");
+  const [activeTab, setActiveTab] = useState<SettingsTab>(initialTab);
 
   // ── Logo state ──
   const [uploading, setUploading] = useState(false);
@@ -669,6 +882,7 @@ function DashboardInner() {
   const [loading, setLoading] = useState(!isDemoMode);
   const [error, setError] = useState<string | null>(authError);
   const [showSettings, setShowSettings] = useState(false);
+  const [settingsOpenTab, setSettingsOpenTab] = useState<"school" | "logo" | "danger">("school");
   const [showInactive, setShowInactive] = useState(false);
 
   // Local logo URL — can be updated optimistically after upload
@@ -888,6 +1102,7 @@ function DashboardInner() {
             if (patch.adminEmail !== undefined) setLocalAdminEmail(patch.adminEmail);
           }}
           isDemoMode={isDemoMode}
+          initialTab={settingsOpenTab}
         />
       )}
 
@@ -906,6 +1121,19 @@ function DashboardInner() {
           </Link>
         </div>
       )}
+
+      {/* Onboarding checklist — shown until all steps done or dismissed */}
+      <OnboardingChecklist
+        schoolId={schoolId}
+        hasLogo={!!localLogoUrl}
+        hasStudents={activeStudents.length > 0}
+        isDemoMode={isDemoMode}
+        onOpenSettings={() => {
+          setSettingsOpenTab("logo");
+          setShowSettings(true);
+        }}
+        onOpenInvite={() => setShowInvite(true)}
+      />
 
       {/* Header */}
       <div className="flex items-start justify-between gap-4 mb-6">

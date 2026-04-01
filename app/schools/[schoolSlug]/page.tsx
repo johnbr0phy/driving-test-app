@@ -107,33 +107,16 @@ export default async function SchoolLandingPage({ params }: Props) {
               contactType: "instructor",
               email: school.adminEmail,
             },
-            sameAs: [`${canonicalUrl}`],
+            sameAs: [canonicalUrl],
           }),
         }}
       />
 
-      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex flex-col">
-        {/* Header */}
-        <header className="w-full bg-white border-b border-gray-200 px-4 py-4">
-          <div className="max-w-4xl mx-auto flex items-center justify-between">
-            <Link href="/" className="flex items-center gap-2">
-              <span className="text-2xl font-bold text-indigo-600">TigerTest</span>
-            </Link>
-            <div className="flex gap-3">
-              <Link
-                href="/login?redirect=/schools/dashboard"
-                className="text-sm text-gray-600 hover:text-gray-900 px-3 py-2 min-h-[40px] flex items-center rounded-md hover:bg-gray-100 transition-colors"
-              >
-                School dashboard
-              </Link>
-            </div>
-          </div>
-        </header>
-
-        {/* Main content */}
-        <main className="flex-1 flex flex-col items-center justify-center px-4 py-16">
+      <div className="bg-gradient-to-b from-brand-light to-white">
+        <div className="flex flex-col items-center px-4 py-20">
           <div className="max-w-2xl w-full text-center">
-            {/* School logo or placeholder */}
+
+            {/* School logo or initial avatar */}
             <div className="flex justify-center mb-8">
               {school.logoUrl ? (
                 <div className="relative w-24 h-24 rounded-2xl overflow-hidden shadow-md border border-gray-200 bg-white">
@@ -145,7 +128,7 @@ export default async function SchoolLandingPage({ params }: Props) {
                   />
                 </div>
               ) : (
-                <div className="w-24 h-24 rounded-2xl bg-indigo-600 flex items-center justify-center shadow-md">
+                <div className="w-24 h-24 rounded-2xl bg-brand flex items-center justify-center shadow-md">
                   <span className="text-4xl font-bold text-white">
                     {school.schoolName.charAt(0).toUpperCase()}
                   </span>
@@ -153,29 +136,31 @@ export default async function SchoolLandingPage({ params }: Props) {
               )}
             </div>
 
-            {/* School name */}
-            <p className="text-sm font-medium text-indigo-600 uppercase tracking-wider mb-2">
+            {/* Eyebrow */}
+            <p className="text-sm font-medium text-brand uppercase tracking-wider mb-2">
               Practice test — provided by
             </p>
-            <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
+
+            {/* School name */}
+            <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
               {school.schoolName}
             </h1>
 
             {/* Value prop */}
-            <p className="text-xl sm:text-2xl text-gray-600 mb-8 leading-relaxed">
-              Practice your DMV test — set up by{" "}
-              <span className="text-indigo-600 font-semibold">{school.schoolName}</span>
+            <p className="text-xl text-gray-600 mb-6 leading-relaxed">
+              Free DMV practice tests, set up by{" "}
+              <span className="text-brand font-semibold">{school.schoolName}</span>
             </p>
 
             <p className="text-gray-500 mb-10 max-w-lg mx-auto">
-              Free DMV practice tests covering all 8 sections. Trusted by driving schools
-              across the US to help students pass first time.
+              Covers all sections of the real DMV test. Trusted by driving schools across
+              the US to help students pass first time.
             </p>
 
-            {/* CTA */}
+            {/* Primary CTA */}
             <Link
               href={signupUrl}
-              className="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-10 py-4 rounded-xl text-lg shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5"
+              className="inline-block bg-brand hover:bg-brand/90 text-white font-semibold px-10 py-4 rounded-full text-lg shadow-md hover:shadow-lg transition-all"
             >
               Start practising free →
             </Link>
@@ -186,38 +171,23 @@ export default async function SchoolLandingPage({ params }: Props) {
           </div>
 
           {/* Feature highlights */}
-          <div className="max-w-2xl w-full mt-16 grid grid-cols-1 sm:grid-cols-3 gap-6 px-4">
+          <div className="max-w-2xl w-full mt-16 grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
               { icon: "📝", title: "8 sections covered", desc: "All topics on the real DMV test" },
               { icon: "🎯", title: "Track your progress", desc: "See which sections you need to work on" },
               { icon: "✅", title: "Pass first time", desc: "Students who practise score 40% better" },
             ].map((item) => (
-              <div key={item.title} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 text-center">
+              <div
+                key={item.title}
+                className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 text-center"
+              >
                 <div className="text-3xl mb-3">{item.icon}</div>
                 <h3 className="font-semibold text-gray-900 mb-1">{item.title}</h3>
                 <p className="text-sm text-gray-500">{item.desc}</p>
               </div>
             ))}
           </div>
-        </main>
-
-        {/* Footer */}
-        <footer className="w-full bg-white border-t border-gray-200 px-4 py-6">
-          <div className="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-gray-500">
-            <p>
-              Powered by{" "}
-              <Link href="/" className="text-indigo-600 hover:underline font-medium">
-                TigerTest
-              </Link>{" "}
-              — Free DMV practice tests
-            </p>
-            <div className="flex gap-4">
-              <Link href="/privacy" className="hover:text-gray-700 transition-colors">Privacy</Link>
-              <Link href="/terms" className="hover:text-gray-700 transition-colors">Terms</Link>
-              <Link href="/schools" className="hover:text-gray-700 transition-colors">For schools</Link>
-            </div>
-          </div>
-        </footer>
+        </div>
       </div>
     </>
   );

@@ -101,6 +101,13 @@ export default async function SchoolLandingPage({ params }: Props) {
             name: school.schoolName,
             url: canonicalUrl,
             description: `Practice your DMV test — set up by ${school.schoolName}`,
+            ...(school.logoUrl ? { logo: school.logoUrl } : {}),
+            contactPoint: {
+              "@type": "ContactPoint",
+              contactType: "instructor",
+              email: school.adminEmail,
+            },
+            sameAs: [`${canonicalUrl}`],
           }),
         }}
       />

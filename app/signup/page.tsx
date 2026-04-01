@@ -67,13 +67,16 @@ function SignupPageContent() {
   // Check for school slug param (e.g. /signup?school=smith-driving)
   const schoolSlug = searchParams.get("school") ?? null;
 
+  // Check for redirect param (e.g. /signup?redirect=/schools/create)
+  const redirectTo = searchParams.get("redirect");
+
   const [selectedState, setSelectedState] = useState<string | null>(preselectedState);
 
   // If guest already has a state selected, or state was provided via URL, skip step 1
   const guestHasState = isGuest && storeSelectedState;
   const hasPreselectedState = !!preselectedState;
   // If arriving from a school page, jump straight to credentials
-  const [step, setStep] = useState<1 | 2>(guestHasState || hasPreselectedState || !!schoolSlug ? 2 : 1);
+  const [step, setStep] = useState<1 | 2>(guestHasState || hasPreselectedState || !!schoolSlug || !!redirectTo ? 2 : 1);
 
   const handleStateSelect = () => {
     if (!selectedState) {
@@ -90,6 +93,8 @@ function SignupPageContent() {
     if (schoolSlug) {
       await enrollInSchool(schoolSlug, uid, userEmail);
       router.push(`/dashboard?school_joined=${encodeURIComponent(schoolSlug)}`);
+    } else if (redirectTo) {
+      router.push(redirectTo);
     } else {
       router.push("/dashboard");
     }
@@ -98,8 +103,8 @@ function SignupPageContent() {
   const handleGoogleSignIn = async () => {
     // For guests, use existing state; for preselected from URL or manual selection
     const stateToUse = guestHasState ? storeSelectedState : selectedState;
-    // When arriving via a school link we don't need a state choice up front
-    if (!stateToUse && !schoolSlug) {
+    // When arriving via a school link or redirect we don't need a state choice up front
+    if (!stateToUse && !schoolSlug && !redirectTo) {
       setError(t("signup.pleaseSelectLocation"));
       return;
     }
@@ -211,7 +216,7 @@ function SignupPageContent() {
 
           <div className="text-center text-sm text-gray-600">
             {t("common.alreadyHaveAccount")}{" "}
-            <Link href="/login" className="text-brand hover:underline font-semibold">
+            <Link href={redirectTo ? `/login?redirect=${encodeURIComponent(redirectTo)}` : "/login"} className="text-brand hover:underline font-semibold">
               {t("common.logIn")}
             </Link>
           </div>

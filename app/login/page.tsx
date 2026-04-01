@@ -1,7 +1,7 @@
 "use client";
 
-import { useState } from "react";
-import { useRouter } from "next/navigation";
+import { useState, Suspense } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { useAuth } from "@/contexts/AuthContext";
 import { useTranslation } from "@/contexts/LanguageContext";
@@ -13,6 +13,18 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { WebViewGoogleWarning } from "@/components/WebViewGoogleWarning";
 
 export default function LoginPage() {
+  return (
+    <Suspense fallback={
+      <div className="bg-white relative min-h-[80vh] flex items-center justify-center">
+        <div className="animate-pulse text-gray-400">Loading...</div>
+      </div>
+    }>
+      <LoginPageContent />
+    </Suspense>
+  );
+}
+
+function LoginPageContent() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -22,8 +34,11 @@ export default function LoginPage() {
 
   const { login, loginWithGoogle, resetPassword } = useAuth();
   const router = useRouter();
+  const searchParams = useSearchParams();
   const selectedState = useStore((state) => state.selectedState);
   const { t } = useTranslation();
+
+  const redirectTo = searchParams.get("redirect");
 
   const handleResetPassword = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -58,8 +73,12 @@ export default function LoginPage() {
       await new Promise(resolve => setTimeout(resolve, 800));
 
       // Check if user has a state selected
-      const hasState = useStore.getState().selectedState;
-      router.push(hasState ? "/dashboard" : "/onboarding/select-state");
+      if (redirectTo) {
+        router.push(redirectTo);
+      } else {
+        const hasState = useStore.getState().selectedState;
+        router.push(hasState ? "/dashboard" : "/onboarding/select-state");
+      }
     } catch (err: any) {
       setError(err.message || "Failed to log in");
     } finally {
@@ -77,8 +96,12 @@ export default function LoginPage() {
       await new Promise(resolve => setTimeout(resolve, 800));
 
       // Check if user has a state selected
-      const hasState = useStore.getState().selectedState;
-      router.push(hasState ? "/dashboard" : "/onboarding/select-state");
+      if (redirectTo) {
+        router.push(redirectTo);
+      } else {
+        const hasState = useStore.getState().selectedState;
+        router.push(hasState ? "/dashboard" : "/onboarding/select-state");
+      }
     } catch (err: any) {
       setError(err.message || "Failed to sign in with Google");
     } finally {
@@ -168,7 +191,7 @@ export default function LoginPage() {
 
               <div className="text-center text-sm text-gray-600">
                 {t("common.noAccount")}{" "}
-                <Link href="/signup" className="text-brand hover:underline font-semibold">
+                <Link href={redirectTo ? `/signup?redirect=${encodeURIComponent(redirectTo)}` : "/signup"} className="text-brand hover:underline font-semibold">
                   {t("common.signUp")}
                 </Link>
               </div>

@@ -256,7 +256,7 @@ function OnboardingChecklist({
       {/* Demo mode note */}
       {isDemoMode && !collapsed && (
         <div className="px-5 py-2.5 bg-amber-50/80 border-t border-amber-100 text-xs text-amber-700">
-          <Link href="/schools/login" className="underline font-medium">Log in</Link> to save your progress.
+          <Link href="/login?redirect=/schools/dashboard" className="underline font-medium">Log in</Link> to save your progress.
         </div>
       )}
     </div>
@@ -578,7 +578,7 @@ function SettingsPanel({
               {isDemoMode && (
                 <div className="bg-amber-50 border border-amber-200 rounded-xl px-4 py-3 text-xs text-amber-800">
                   You&apos;re in demo mode.{" "}
-                  <Link href="/schools/login" className="underline font-medium">Log in</Link>{" "}
+                  <Link href="/login?redirect=/schools/dashboard" className="underline font-medium">Log in</Link>{" "}
                   to save changes.
                 </div>
               )}
@@ -668,7 +668,7 @@ function SettingsPanel({
               {isDemoMode && (
                 <div className="bg-amber-50 border border-amber-200 rounded-xl px-4 py-3 text-xs text-amber-800">
                   You&apos;re in demo mode.{" "}
-                  <Link href="/schools/login" className="underline font-medium">Log in</Link>{" "}
+                  <Link href="/login?redirect=/schools/dashboard" className="underline font-medium">Log in</Link>{" "}
                   to save changes.
                 </div>
               )}
@@ -1339,7 +1339,7 @@ function DashboardInner() {
             Your account is linked but we couldn&apos;t find a school profile. Let&apos;s set one up.
           </p>
         </div>
-        <Link href="/schools/signup">
+        <Link href="/schools/create">
           <Button className="bg-brand text-white hover:bg-brand/90">
             Set up your school →
           </Button>
@@ -1401,7 +1401,7 @@ function DashboardInner() {
             <p className="text-sm font-semibold text-gray-900">You&apos;re viewing a demo</p>
             <p className="text-xs text-gray-500 mt-0.5">Log in to manage your real school and students.</p>
           </div>
-          <Link href="/schools/login" className="self-stretch sm:self-auto">
+          <Link href="/login?redirect=/schools/dashboard" className="self-stretch sm:self-auto">
             <Button size="sm" className="bg-brand text-white hover:bg-brand/90 gap-1.5 w-full sm:w-auto min-h-[40px]">
               <LogIn className="h-4 w-4" />
               Log in to your school →

@@ -79,13 +79,13 @@ export default function SchoolsPage() {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Link
-            href="/schools/signup"
+            href="/schools/create"
             className="inline-block bg-brand text-white px-8 py-3 rounded-full font-semibold hover:bg-brand/90 transition-colors"
           >
             Create free account
           </Link>
           <Link
-            href="/schools/login"
+            href="/login?redirect=/schools/dashboard"
             className="inline-block text-gray-700 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors border border-gray-300"
           >
             Log in
@@ -189,7 +189,7 @@ export default function SchoolsPage() {
                 ))}
               </ul>
               <Link
-                href="/schools/signup"
+                href="/schools/create"
                 className={`block text-center py-3 rounded-xl font-semibold text-sm transition-colors ${
                   plan.highlight
                     ? "bg-brand text-white hover:bg-brand/90"
@@ -271,7 +271,7 @@ export default function SchoolsPage() {
           Free to start. Invite students and track their progress today.
         </p>
         <Link
-          href="/schools/signup"
+          href="/schools/create"
           className="inline-block bg-brand text-white px-8 py-3 rounded-full font-semibold hover:bg-brand/90 transition-colors"
         >
           Create free account

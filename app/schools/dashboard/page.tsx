@@ -10,6 +10,7 @@ import {
   UserPlus, Trash2, AlertTriangle, CheckCircle2, X, Clock, Check,
   Loader2, LogIn, School, Settings, Upload, ImageIcon, UserX, Eye, EyeOff,
   Copy, ExternalLink, ChevronDown, ChevronUp, Share2,
+  Users, TrendingUp, Award, AlertCircle,
 } from "lucide-react";
 import type { SchoolStudent } from "@/lib/school-types";
 import { useSchoolAuth } from "@/lib/hooks/useSchoolAuth";
@@ -751,6 +752,96 @@ function SettingsPanel({
   );
 }
 
+// ── Class Overview Stat Cards ───────────────────────────────────────────────
+interface ClassOverviewProps {
+  students: SchoolStudent[];
+  totalSections: number;
+}
+
+function ClassOverview({ students, totalSections }: ClassOverviewProps) {
+  const active = students.filter((s) => s.active);
+
+  const totalStudents = active.length;
+
+  const avgSections =
+    totalStudents === 0
+      ? 0
+      : Math.round(
+          (active.reduce((sum, s) => sum + Math.min(s.testsTaken, totalSections), 0) /
+            totalStudents) *
+            10
+        ) / 10;
+
+  const passedAll = active.filter(
+    (s) => Math.min(s.testsTaken, totalSections) >= totalSections
+  ).length;
+
+  const sevenDaysAgo = new Date();
+  sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
+  const atRisk = active.filter((s) => {
+    if (s.testsTaken === 0) return true;
+    const last = new Date(s.lastActive);
+    return last < sevenDaysAgo;
+  }).length;
+
+  const cards = [
+    {
+      label: "Total Students",
+      value: totalStudents,
+      sub: totalStudents === 1 ? "active student" : "active students",
+      icon: <Users className="h-5 w-5" />,
+      color: "text-brand",
+      bg: "bg-brand/10",
+    },
+    {
+      label: "Avg Sections Done",
+      value: `${avgSections}/${totalSections}`,
+      sub: "sections completed on avg",
+      icon: <TrendingUp className="h-5 w-5" />,
+      color: "text-blue-600",
+      bg: "bg-blue-50",
+    },
+    {
+      label: "Passed All 8",
+      value: passedAll,
+      sub: totalStudents > 0 ? `${Math.round((passedAll / totalStudents) * 100)}% of students` : "no students yet",
+      icon: <Award className="h-5 w-5" />,
+      color: "text-green-600",
+      bg: "bg-green-50",
+    },
+    {
+      label: "At-Risk",
+      value: atRisk,
+      sub: "0 activity in 7+ days",
+      icon: <AlertCircle className="h-5 w-5" />,
+      color: atRisk > 0 ? "text-amber-600" : "text-gray-400",
+      bg: atRisk > 0 ? "bg-amber-50" : "bg-gray-50",
+    },
+  ];
+
+  return (
+    <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
+      {cards.map((card) => (
+        <div
+          key={card.label}
+          className="bg-white border border-gray-200 rounded-xl px-4 py-4 shadow-sm flex flex-col gap-2"
+        >
+          <div className={`w-8 h-8 rounded-lg flex items-center justify-center ${card.bg} ${card.color}`}>
+            {card.icon}
+          </div>
+          <div>
+            <p className={`text-2xl font-bold tabular-nums leading-tight ${card.color}`}>
+              {card.value}
+            </p>
+            <p className="text-xs font-medium text-gray-500 mt-0.5 leading-tight">{card.label}</p>
+            <p className="text-xs text-gray-400 mt-0.5 leading-tight">{card.sub}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
 // ── Section tooltip ─────────────────────────────────────────────────────────
 function SectionTooltip({ done, totalSections }: { done: number; totalSections: number }) {
   const [visible, setVisible] = useState(false);
@@ -1230,6 +1321,9 @@ function DashboardInner() {
           </button>
         </div>
       )}
+
+      {/* Class overview stat cards */}
+      <ClassOverview students={students} totalSections={TOTAL_SECTIONS} />
 
       {/* Seat counter */}
       {(() => {

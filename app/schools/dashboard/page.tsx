@@ -1388,15 +1388,62 @@ function DashboardInner() {
         </CardHeader>
         <CardContent className="p-0">
           {activeStudents.length === 0 && inactiveStudents.length === 0 ? (
-            <div className="px-6 py-16 text-center">
-              <p className="text-gray-400 text-sm mb-4">No students yet.</p>
-              <Button
-                onClick={() => setShowInvite(true)}
-                className="bg-brand text-white hover:bg-brand-dark gap-1.5"
-              >
-                <UserPlus className="h-4 w-4" />
-                Add your first student
-              </Button>
+            <div className="px-6 py-16 flex flex-col items-center text-center gap-4">
+              {/* Illustration */}
+              <div className="relative mb-2">
+                <div className="w-20 h-20 rounded-2xl bg-brand/10 flex items-center justify-center">
+                  <Users className="h-10 w-10 text-brand/40" />
+                </div>
+                <div className="absolute -bottom-1.5 -right-1.5 w-7 h-7 bg-white border-2 border-brand/20 rounded-full flex items-center justify-center">
+                  <UserPlus className="h-3.5 w-3.5 text-brand" />
+                </div>
+              </div>
+
+              <div>
+                <h3 className="text-base font-semibold text-gray-800 mb-1">
+                  No students yet
+                </h3>
+                <p className="text-sm text-gray-400 max-w-xs">
+                  Invite your first student and start tracking their DMV prep progress.
+                </p>
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-2 mt-1">
+                <Button
+                  onClick={() => setShowInvite(true)}
+                  className="bg-brand text-white hover:bg-brand-dark gap-1.5"
+                >
+                  <UserPlus className="h-4 w-4" />
+                  Invite your first student
+                </Button>
+                {schoolId && (
+                  <button
+                    onClick={async () => {
+                      const url = `https://tigertest.io/schools/${schoolId}`;
+                      try { await navigator.clipboard.writeText(url); } catch { /* ignore */ }
+                    }}
+                    className="flex items-center justify-center gap-1.5 text-sm text-brand border border-brand/30 rounded-lg px-4 py-2 hover:bg-brand/5 transition-colors"
+                  >
+                    <Share2 className="h-4 w-4" />
+                    Copy school link
+                  </button>
+                )}
+              </div>
+
+              {schoolId && (
+                <p className="text-xs text-gray-400 mt-1">
+                  Or share{" "}
+                  <a
+                    href={`/schools/${schoolId}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-brand hover:underline"
+                  >
+                    your school page
+                  </a>{" "}
+                  and students can sign up themselves.
+                </p>
+              )}
             </div>
           ) : (
             <div className="overflow-x-auto">

@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { createUserWithEmailAndPassword } from "firebase/auth";
-import { doc, setDoc, serverTimestamp } from "firebase/firestore";
+import { doc, setDoc, getDoc, serverTimestamp } from "firebase/firestore";
 import { auth, db } from "@/lib/firebase";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -58,6 +58,27 @@ export default function SchoolSignupPage() {
 
     setLoading(true);
     try {
+      // Resolve final slug — check if base slug is taken and find a free suffix
+      let finalSlug = schoolId;
+      const existingDoc = await getDoc(doc(db, "school_accounts", schoolId));
+      if (existingDoc.exists()) {
+        let found = false;
+        for (let i = 2; i <= 20; i++) {
+          const candidate = `${schoolId}-${i}`;
+          const check = await getDoc(doc(db, "school_accounts", candidate));
+          if (!check.exists()) {
+            finalSlug = candidate;
+            found = true;
+            break;
+          }
+        }
+        if (!found) {
+          setError(`The school name "${form.schoolName.trim()}" is already taken. Please choose a different name.`);
+          setLoading(false);
+          return;
+        }
+      }
+
       // Create Firebase Auth user
       const userCredential = await createUserWithEmailAndPassword(
         auth,
@@ -67,8 +88,8 @@ export default function SchoolSignupPage() {
       const uid = userCredential.user.uid;
 
       // Create school_accounts Firestore doc
-      await setDoc(doc(db, "school_accounts", schoolId), {
-        id: schoolId,
+      await setDoc(doc(db, "school_accounts", finalSlug), {
+        id: finalSlug,
         schoolName: form.schoolName.trim(),
         adminEmail: form.email.trim().toLowerCase(),
         adminName: form.contactName.trim(),

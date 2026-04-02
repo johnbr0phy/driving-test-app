@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: "export",
+  ...(process.env.APP_BUILD === "true" ? { output: "export" } : {}),
   images: {
     formats: ["image/avif", "image/webp"],
     unoptimized: true,

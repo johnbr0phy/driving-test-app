@@ -117,17 +117,8 @@ export default function CreateSchoolPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-brand-light to-white flex items-center justify-center px-4 py-16">
+    <div className="min-h-screen bg-gradient-to-b from-brand-light to-white flex items-center justify-center px-4 py-8">
       <div className="w-full max-w-md">
-        {/* Logo / Brand */}
-        <div className="text-center mb-8">
-          <Link href="/" className="inline-block">
-            <span className="text-2xl font-bold text-gray-900">
-              Tiger<span className="text-brand">Test</span>
-            </span>
-          </Link>
-          <p className="text-sm text-gray-500 mt-1">for Driving Schools</p>
-        </div>
 
         <Card>
           <CardHeader>

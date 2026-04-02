@@ -2,6 +2,29 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getAdminDb } from "@/lib/firebase-admin";
 
+const TIERS = {
+  starter: {
+    name: "TigerTest School — Starter (10 seats)",
+    description: "Up to 10 reusable student seats, admin dashboard, progress tracking",
+    unit_amount: 14900, // $149.00
+    seats: 10,
+  },
+  growth: {
+    name: "TigerTest School — Growth (30 seats)",
+    description: "Up to 30 reusable student seats, bulk invites, priority support",
+    unit_amount: 34900, // $349.00
+    seats: 30,
+  },
+  school: {
+    name: "TigerTest School — School (Unlimited seats)",
+    description: "Unlimited student seats, dedicated account manager, custom reporting",
+    unit_amount: 69900, // $699.00
+    seats: null,
+  },
+} as const;
+
+type Tier = keyof typeof TIERS;
+
 export async function POST(
   req: NextRequest,
   { params }: { params: Promise<{ schoolId: string }> }
@@ -23,12 +46,15 @@ export async function POST(
   const Stripe = (await import("stripe")).default;
   const stripe = new Stripe(stripeKey, { apiVersion: "2025-12-15.clover" });
 
-  let body: { successUrl?: string; cancelUrl?: string } = {};
+  let body: { successUrl?: string; cancelUrl?: string; tier?: string } = {};
   try {
     body = await req.json();
   } catch {
     // ignore
   }
+
+  const tier: Tier = (body.tier as Tier) in TIERS ? (body.tier as Tier) : "starter";
+  const tierConfig = TIERS[tier];
 
   const successUrl =
     body.successUrl ??
@@ -57,17 +83,16 @@ export async function POST(
         price_data: {
           currency: "usd",
           product_data: {
-            name: "TigerTest School — 20 seats",
-            description:
-              "Up to 20 student seats, instructor dashboard, progress tracking",
+            name: tierConfig.name,
+            description: tierConfig.description,
           },
-          unit_amount: 4900, // $49.00
-          recurring: { interval: "month" },
+          unit_amount: tierConfig.unit_amount,
+          recurring: { interval: "year" },
         },
         quantity: 1,
       },
     ],
-    metadata: { schoolId },
+    metadata: { schoolId, tier },
     success_url: successUrl,
     cancel_url: cancelUrl,
   });

@@ -27,9 +27,11 @@ export interface SchoolStudent {
   testsTaken: number;
   lastActive: string;
   active: boolean;
-  avgScore?: number; // 0–100
+  latestScore?: number;       // 0–100, most recent test score
+  inviteStatus?: "pending" | "accepted"; // pending = invited, not yet signed in
+  avgScore?: number;          // legacy — kept for API compat
   topicScores?: TopicScore[];
-  trend?: "improving" | "declining" | "steady" | "new";
+  trend?: "improving" | "declining" | "steady" | "new"; // legacy
 }
 
 export interface SchoolLead {

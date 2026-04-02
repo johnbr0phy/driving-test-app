@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import Link from "next/link";
+import { SchoolLandingCta } from "@/components/SchoolLandingCta";
 import Image from "next/image";
 import { initializeApp, getApps, cert } from "firebase-admin/app";
 import { getFirestore } from "firebase-admin/firestore";
@@ -158,12 +159,7 @@ export default async function SchoolLandingPage({ params }: Props) {
             </p>
 
             {/* Primary CTA */}
-            <Link
-              href={signupUrl}
-              className="inline-block bg-brand hover:bg-brand/90 text-white font-semibold px-10 py-4 rounded-full text-lg shadow-md hover:shadow-lg transition-all"
-            >
-              Start practising free →
-            </Link>
+            <SchoolLandingCta signupUrl={signupUrl} />
 
             <p className="mt-4 text-sm text-gray-400">
               No credit card required. Takes 30 seconds to sign up.

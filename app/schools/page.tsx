@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { Check, LayoutDashboard, RefreshCw, BarChart2 } from "lucide-react";
+import { SchoolsHeroCta } from "@/components/SchoolsHeroCta";
 
 export const metadata: Metadata = {
   title: "TigerTest for Driving Schools — Bulk DMV Practice Test Pricing",
@@ -77,20 +78,7 @@ export default function SchoolsPage() {
           an admin dashboard so you can track who&apos;s ready — and who needs
           more time.
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Link
-            href="/schools/create"
-            className="inline-block bg-brand text-white px-8 py-3 rounded-full font-semibold hover:bg-brand/90 transition-colors"
-          >
-            Create free account
-          </Link>
-          <Link
-            href="/login?redirect=/schools/dashboard"
-            className="inline-block text-gray-700 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors border border-gray-300"
-          >
-            Log in
-          </Link>
-        </div>
+        <SchoolsHeroCta />
         <div className="mt-16 rounded-2xl overflow-hidden shadow-2xl border border-gray-200 max-w-4xl mx-auto">
           <Image
             src="/schools-dashboard-preview.png"

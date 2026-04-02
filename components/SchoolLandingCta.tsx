@@ -7,19 +7,12 @@ interface Props {
   signupUrl: string;
 }
 
-/**
- * Smart CTA for /schools/[schoolSlug] landing pages.
- *
- * - School admin    → "Return to dashboard" (→ /schools/dashboard)
- * - Everyone else   → "Start practising free →" (→ signupUrl)
- */
 export function SchoolLandingCta({ signupUrl }: Props) {
   const { user, schoolId, loading } = useSchoolAuth();
 
-  if (loading) {
-    return <div className="h-14" />;
-  }
+  if (loading) return <div className="h-14" />;
 
+  // School admin → back to their dashboard
   if (user && schoolId) {
     return (
       <Link
@@ -31,6 +24,7 @@ export function SchoolLandingCta({ signupUrl }: Props) {
     );
   }
 
+  // Logged in (student) or not logged in → signup flow
   return (
     <Link
       href={signupUrl}

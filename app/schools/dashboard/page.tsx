@@ -1299,11 +1299,13 @@ function DashboardInner() {
   };
 
   // ── Upgrade handler ───────────────────────────────────────────────────
-  const handleUpgrade = async () => {
+  const handleUpgrade = async (tier: "starter" | "growth" | "school" = "starter") => {
     if (!schoolId) return;
     try {
       const res = await fetch(`/api/schools/${schoolId}/billing/checkout`, {
         method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ tier }),
       });
       const data = await res.json();
       if (data.url) {
@@ -1504,16 +1506,35 @@ function DashboardInner() {
 
       {/* Upgrade CTA — shown when on free tier */}
       {(!schoolData?.planTier || schoolData.planTier === "free") && !isDemoMode && (
-        <div className="mb-6 bg-amber-50 border border-amber-200 rounded-xl px-5 py-4 flex items-center justify-between gap-4">
-          <p className="text-sm text-amber-800">
-            Unlock 20 seats for <span className="font-semibold">$49/mo</span> — upgrade your school plan
-          </p>
-          <button
-            onClick={handleUpgrade}
-            className="shrink-0 text-sm font-semibold text-amber-700 hover:text-amber-900 transition-colors"
-          >
-            Upgrade →
-          </button>
+        <div className="mb-6 bg-amber-50 border border-amber-200 rounded-xl px-5 py-4">
+          <p className="text-sm font-semibold text-amber-800 mb-3">Upgrade your school plan</p>
+          <div className="flex flex-wrap gap-3">
+            <button
+              onClick={() => handleUpgrade("starter")}
+              className="flex-1 min-w-[140px] rounded-lg border border-amber-300 bg-white px-4 py-3 text-left hover:bg-amber-50 transition-colors"
+            >
+              <p className="text-xs font-semibold text-amber-700 uppercase tracking-wide">Starter</p>
+              <p className="text-sm font-bold text-gray-900">$149 / yr</p>
+              <p className="text-xs text-gray-500">10 reusable seats</p>
+            </button>
+            <button
+              onClick={() => handleUpgrade("growth")}
+              className="flex-1 min-w-[140px] rounded-lg border border-amber-400 bg-amber-100 px-4 py-3 text-left hover:bg-amber-200 transition-colors relative"
+            >
+              <span className="absolute top-2 right-2 text-[10px] font-semibold text-amber-700 bg-amber-200 rounded-full px-1.5 py-0.5">Popular</span>
+              <p className="text-xs font-semibold text-amber-700 uppercase tracking-wide">Growth</p>
+              <p className="text-sm font-bold text-gray-900">$349 / yr</p>
+              <p className="text-xs text-gray-500">30 reusable seats</p>
+            </button>
+            <button
+              onClick={() => handleUpgrade("school")}
+              className="flex-1 min-w-[140px] rounded-lg border border-amber-300 bg-white px-4 py-3 text-left hover:bg-amber-50 transition-colors"
+            >
+              <p className="text-xs font-semibold text-amber-700 uppercase tracking-wide">School</p>
+              <p className="text-sm font-bold text-gray-900">$699 / yr</p>
+              <p className="text-xs text-gray-500">Unlimited seats</p>
+            </button>
+          </div>
         </div>
       )}
 

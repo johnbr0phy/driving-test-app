@@ -35,7 +35,7 @@ export const es: TranslationKeys = {
 
   // Footer
   footer: {
-    madeWith: "Este sitio fue hecho con IA y",
+    madeWith: "Este sitio fue hecho con",
     by: "por",
     allStates: "Todos los estados →",
     sendMe: "Envíame",

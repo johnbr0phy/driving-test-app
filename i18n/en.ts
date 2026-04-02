@@ -35,7 +35,7 @@ export const en = {
 
   // Footer
   footer: {
-    madeWith: "This site was made with AI and",
+    madeWith: "This site was made with",
     by: "by",
     allStates: "All States →",
     sendMe: "Send me",

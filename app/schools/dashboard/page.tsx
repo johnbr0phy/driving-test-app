@@ -951,7 +951,7 @@ function DashboardInner() {
       {(!schoolData?.planTier || schoolData.planTier === "free") && !isDemoMode && (
         <div className="mb-6 bg-amber-50 border border-amber-200 rounded-xl px-5 py-4 flex items-center justify-between gap-4">
           <p className="text-sm text-amber-800">
-            Unlock 20 seats for <span className="font-semibold">$49/mo</span> — upgrade your school plan
+            Upgrade to Starter — 10 seats for <span className="font-semibold">$149/yr</span>. Growth (30 seats) from $349/yr.
           </p>
           <button onClick={handleUpgrade} className="shrink-0 text-sm font-semibold text-amber-700 hover:text-amber-900 transition-colors">
             Upgrade →

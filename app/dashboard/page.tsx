@@ -496,14 +496,14 @@ function DashboardContent() {
           {[1, 2, 3, 4].map((id) => {
             const trainingProgress = hydrated ? getTrainingSetProgress(id) : { correct: 0, total: 50, complete: false };
             const trainingComplete = trainingProgress.complete;
-            const trainingLocked = id === 4 && !isPremium;
+            const trainingLocked = id >= 3 && !isPremium;
             const isStartHere = id === 1 && !trainingComplete && trainingProgress.correct === 0;
 
             const testCompleted = testComplete(id);
             const bestPct = getTestBestPercent(id);
             const bestRaw = hydrated ? getTestAttemptStats(id)?.bestScore ?? null : null;
             const inProgress = isTestInProgress(id);
-            const testLocked = id === 4 && !isPremium;
+            const testLocked = id >= 3 && !isPremium;
 
             let testSubtitle = t("testCard.fiftyQuestions");
             if (inProgress) {

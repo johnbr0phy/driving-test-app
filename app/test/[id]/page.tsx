@@ -58,7 +58,8 @@ export default function TestPage() {
 
       // Check if we have a saved test session for this test
       const savedTest = getCurrentTest(testId);
-      if (savedTest && savedTest.questions.length > 0) {
+      const languageMatches = savedTest?.language === language;
+      if (savedTest && savedTest.questions.length > 0 && languageMatches) {
         // Resume from saved state
         setQuestions(savedTest.questions);
         setAnswers(savedTest.answers);
@@ -76,10 +77,10 @@ export default function TestPage() {
           setCurrentQuestionIndex(savedTest.questions.length - 1);
         }
       } else {
-        // Generate new test
+        // Generate new test (or regenerate if language changed)
         const testQuestions = generateTest(testId, state, language).map(shuffleQuestionOptions);
         setQuestions(testQuestions);
-        startTest(testId, testQuestions);
+        startTest(testId, testQuestions, language);
       }
 
       initialized.current = true;

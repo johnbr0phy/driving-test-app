@@ -31,10 +31,11 @@ interface AppState {
       questions: Question[];
       answers: { [key: number]: string };
       startedAt: Date | null;
+      language?: Language;
     };
   };
-  getCurrentTest: (testId: number) => { questions: Question[]; answers: { [key: number]: string }; startedAt: Date | null } | undefined;
-  startTest: (testId: number, questions: Question[]) => void;
+  getCurrentTest: (testId: number) => { questions: Question[]; answers: { [key: number]: string }; startedAt: Date | null; language?: Language } | undefined;
+  startTest: (testId: number, questions: Question[], language?: Language) => void;
   setAnswer: (testId: number, questionIndex: number, answer: string) => void;
   clearCurrentTest: (testId: number) => void;
 
@@ -213,7 +214,7 @@ export const useStore = create<AppState>()(
         return get().currentTests[testId];
       },
 
-      startTest: (testId: number, questions: Question[]) => {
+      startTest: (testId: number, questions: Question[], language?: Language) => {
         set((state) => ({
           currentTests: {
             ...state.currentTests,
@@ -221,6 +222,7 @@ export const useStore = create<AppState>()(
               questions,
               answers: {},
               startedAt: new Date(),
+              language,
             },
           },
         }));

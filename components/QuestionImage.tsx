@@ -24,7 +24,7 @@ export function QuestionImage({ questionId, state }: QuestionImageProps) {
   const stateCode = effectiveState.toUpperCase();
   const backgroundUrl = bgFailed
     ? FALLBACK_BACKGROUND
-    : `/backgrounds/${stateCode}.webp`;
+    : `/backgrounds/${stateCode}.svg`;
   const signUrl = `/signs/${signId}.svg`;
 
   return (

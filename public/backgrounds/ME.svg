@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice"><defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#F5DCC8"/><stop offset="55%" stop-color="#F0B8A8"/><stop offset="100%" stop-color="#E89090"/>
+</linearGradient></defs><rect width="1600" height="900" fill="url(#g)"/>
+<circle cx="1300" cy="180" r="70" fill="#FFE9C9" opacity="0.85"/>
+<rect x="400" y="720" width="800" height="40" fill="#C8B488" opacity="0.5"/>
+<polygon points="780,500 780,720 860,720 860,500 820,460" fill="#F5F0E8"/>
+<rect x="780" y="540" width="80" height="30" fill="#6E5B3A"/>
+<rect x="780" y="620" width="80" height="30" fill="#6E5B3A"/>
+<rect x="800" y="480" width="40" height="30" fill="#6E5B3A"/>
+<polygon points="800,480 840,480 820,450" fill="#6E5B3A"/>
+<g fill="#6E5B3A" opacity="0.85">
+<polygon points="180,720 250,520 320,720"/>
+<polygon points="200,720 250,580 300,720"/>
+<polygon points="380,720 460,500 540,720"/>
+<polygon points="400,720 460,560 520,720"/>
+<polygon points="900,720 970,540 1040,720"/>
+<polygon points="1180,720 1260,510 1340,720"/>
+<polygon points="1380,720 1450,560 1520,720"/>
+</g><path d="M0 720 Q 400 690 800 705 T 1600 700 L 1600 900 L 0 900 Z" fill="#D8C898"/>
+<path d="M0 760 Q 500 740 1000 755 T 1600 750 L 1600 900 L 0 900 Z" fill="#D8C898" opacity="0.7"/></svg>

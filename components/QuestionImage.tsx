@@ -38,15 +38,17 @@ export function QuestionImage({ questionId, state }: QuestionImageProps) {
         onError={() => setBgFailed(true)}
         priority={false}
       />
-      <div className="absolute inset-0 flex items-center justify-center">
-        <Image
-          src={signUrl}
-          alt=""
-          width={220}
-          height={220}
-          className="drop-shadow-[0_4px_12px_rgba(0,0,0,0.35)] max-w-[55%] max-h-[80%] w-auto h-auto relative"
-          priority={false}
-        />
+      <div className="absolute inset-0 flex items-center justify-center p-4">
+        <div className="relative w-[70%] h-[90%]">
+          <Image
+            src={signUrl}
+            alt=""
+            fill
+            sizes="(max-width: 768px) 70vw, 500px"
+            className="object-contain drop-shadow-[0_4px_12px_rgba(0,0,0,0.35)]"
+            priority={false}
+          />
+        </div>
       </div>
     </div>
   );

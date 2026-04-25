@@ -31,43 +31,47 @@ const REAL_SVG_MIN_BYTES = 4096;
 const REQUEST_DELAY_MS = 1500;
 const RETRY_BACKOFFS_MS = [10_000, 30_000, 90_000];
 
-// signId (matches lib/signImages.ts) -> Wikimedia filename
-const MUTCD_FILENAMES: Record<string, string> = {
-  stop: "MUTCD_R1-1.svg",
-  yield: "MUTCD_R1-2.svg",
-  "speed-limit": "MUTCD_R2-1.svg",
-  "do-not-enter": "MUTCD_R5-1.svg",
-  "wrong-way": "MUTCD_R5-1a.svg",
-  "one-way": "MUTCD_R6-1R.svg",
-  "no-u-turn": "MUTCD_R3-4.svg",
-  "no-turn-on-red": "MUTCD_R10-11.svg",
-  "school-zone": "MUTCD_S1-1.svg",
-  "railroad-crossbuck": "MUTCD_R15-1.svg",
-  "railroad-crossing-circle": "MUTCD_W10-1.svg",
-  "warning-diamond": "MUTCD_W1-2_R.svg",
-  "construction-zone": "MUTCD_W21-1.svg",
-  "regulatory-rect": "MUTCD_R7-1.svg",
-  "no-passing-pennant": "MUTCD_W14-3.svg",
-  "curve-left": "MUTCD_W1-2_L.svg",
-  "two-way-traffic": "MUTCD_W6-3.svg",
-  merge: "MUTCD_W4-1.svg",
-  "deer-crossing": "MUTCD_W11-3.svg",
-  "slippery-road": "MUTCD_W8-5.svg",
-  "steep-grade": "MUTCD_W7-1.svg",
-  "divided-highway": "MUTCD_W6-1.svg",
-  bumps: "MUTCD_W8-1.svg",
-  crosswalk: "MUTCD_W11-2.svg",
-  "handicap-parking": "MUTCD_R7-8.svg",
-  "hov-lane": "MUTCD_R3-10.svg",
-  "keep-right": "MUTCD_R4-7.svg",
-  "lane-ends": "MUTCD_W4-2.svg",
-  "winding-road": "MUTCD_W1-5.svg",
-  "side-road": "MUTCD_W2-2.svg",
-  "stop-ahead": "MUTCD_W3-1.svg",
-  "signal-ahead": "MUTCD_W3-3.svg",
-  chevron: "MUTCD_W1-8.svg",
-  "low-clearance": "MUTCD_W12-2.svg",
-  "bike-lane": "MUTCD_D11-1.svg",
+// signId (matches lib/signImages.ts) -> ordered list of Wikimedia filenames to try.
+// Wikimedia is inconsistent about underscore vs no-underscore for L/R variants,
+// so we list candidates and use the first that returns 200.
+const MUTCD_FILENAMES: Record<string, string[]> = {
+  stop: ["MUTCD_R1-1.svg"],
+  yield: ["MUTCD_R1-2.svg"],
+  "speed-limit": ["MUTCD_R2-1.svg"],
+  "do-not-enter": ["MUTCD_R5-1.svg"],
+  "wrong-way": ["MUTCD_R5-1a.svg"],
+  "one-way": ["MUTCD_R6-1R.svg", "MUTCD_R6-1_R.svg", "MUTCD_R6-2R.svg"],
+  "no-u-turn": ["MUTCD_R3-4.svg"],
+  "no-turn-on-red": ["MUTCD_R10-11.svg"],
+  "school-zone": ["MUTCD_S1-1.svg"],
+  "railroad-crossbuck": ["MUTCD_R15-1.svg"],
+  "railroad-crossing-circle": ["MUTCD_W10-1.svg"],
+  // Iconic yellow diamond — use the simple right-turn warning.
+  "warning-diamond": ["MUTCD_W1-1R.svg", "MUTCD_W1-1_R.svg", "MUTCD_W1-1.svg"],
+  // "Road Work Ahead" is the most recognizable orange diamond; W21-1 is "Workers".
+  "construction-zone": ["MUTCD_W20-1.svg", "MUTCD_W21-1.svg", "MUTCD_W21-1a.svg"],
+  "regulatory-rect": ["MUTCD_R7-1.svg"],
+  "no-passing-pennant": ["MUTCD_W14-3.svg"],
+  "curve-left": ["MUTCD_W1-2L.svg", "MUTCD_W1-2_L.svg"],
+  "two-way-traffic": ["MUTCD_W6-3.svg"],
+  merge: ["MUTCD_W4-1.svg", "MUTCD_W4-1R.svg"],
+  "deer-crossing": ["MUTCD_W11-3.svg"],
+  "slippery-road": ["MUTCD_W8-5.svg"],
+  "steep-grade": ["MUTCD_W7-1.svg", "MUTCD_W7-1a.svg"],
+  "divided-highway": ["MUTCD_W6-1.svg"],
+  bumps: ["MUTCD_W8-1.svg"],
+  crosswalk: ["MUTCD_W11-2.svg"],
+  "handicap-parking": ["MUTCD_R7-8.svg"],
+  "hov-lane": ["MUTCD_R3-10.svg", "MUTCD_R3-10a.svg"],
+  "keep-right": ["MUTCD_R4-7.svg", "MUTCD_R4-7a.svg"],
+  "lane-ends": ["MUTCD_W4-2.svg", "MUTCD_W4-2R.svg"],
+  "winding-road": ["MUTCD_W1-5.svg", "MUTCD_W1-5R.svg"],
+  "side-road": ["MUTCD_W2-2.svg", "MUTCD_W2-2R.svg"],
+  "stop-ahead": ["MUTCD_W3-1.svg"],
+  "signal-ahead": ["MUTCD_W3-3.svg"],
+  chevron: ["MUTCD_W1-8.svg", "MUTCD_W1-8R.svg"],
+  "low-clearance": ["MUTCD_W12-2.svg"],
+  "bike-lane": ["MUTCD_D11-1.svg", "MUTCD_R3-17.svg"],
   // signal-flashing-red / signal-flashing-yellow are signal heads, not signs;
   // they have no MUTCD code and stay as their hand-coded versions.
 };
@@ -128,11 +132,11 @@ async function main() {
 
   let ok = 0;
   let skipped = 0;
-  const failed: Array<{ id: string; filename: string; reason: string }> = [];
+  const failed: Array<{ id: string; tried: string[]; reason: string }> = [];
 
   for (const id of ids) {
-    const filename = MUTCD_FILENAMES[id];
-    if (!filename) {
+    const candidates = MUTCD_FILENAMES[id];
+    if (!candidates || candidates.length === 0) {
       console.warn(`  ${id}: no MUTCD mapping — skipping`);
       continue;
     }
@@ -143,18 +147,37 @@ async function main() {
       continue;
     }
 
-    process.stdout.write(`  ${id} (${filename})... `);
-    const url = `https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(filename)}`;
+    process.stdout.write(`  ${id}... `);
 
-    try {
-      const text = await fetchWithRetry(url);
-      await writeFile(join(OUT_DIR, `${id}.svg`), text);
-      console.log(`ok (${(text.length / 1024).toFixed(1)}kb)`);
-      ok++;
-    } catch (err) {
-      const reason = (err as Error).message;
-      console.log(`FAILED — ${reason}`);
-      failed.push({ id, filename, reason });
+    let downloaded = false;
+    let lastReason = "";
+    const tried: string[] = [];
+
+    for (const filename of candidates) {
+      tried.push(filename);
+      const url = `https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(filename)}`;
+
+      try {
+        const text = await fetchWithRetry(url);
+        await writeFile(join(OUT_DIR, `${id}.svg`), text);
+        console.log(`ok via ${filename} (${(text.length / 1024).toFixed(1)}kb)`);
+        ok++;
+        downloaded = true;
+        break;
+      } catch (err) {
+        lastReason = (err as Error).message;
+        if (lastReason !== "HTTP 404") {
+          // Non-404 (likely transient) — don't burn through other candidates
+          break;
+        }
+        // 404: try the next candidate
+        await sleep(REQUEST_DELAY_MS);
+      }
+    }
+
+    if (!downloaded) {
+      console.log(`FAILED — ${lastReason} (tried: ${tried.join(", ")})`);
+      failed.push({ id, tried, reason: lastReason });
     }
 
     await sleep(REQUEST_DELAY_MS);
@@ -167,7 +190,7 @@ async function main() {
   if (failed.length > 0) {
     console.log("\nFailures (paste this back if any are 404s):");
     for (const f of failed) {
-      console.log(`  ${f.id} → ${f.filename} (${f.reason})`);
+      console.log(`  ${f.id} (${f.reason}) — tried: ${f.tried.join(", ")}`);
     }
   }
 }

@@ -2,10 +2,13 @@
 <stop offset="0%" stop-color="#F5E5B8"/><stop offset="55%" stop-color="#F0C898"/><stop offset="100%" stop-color="#D89878"/>
 </linearGradient></defs><rect width="1600" height="900" fill="url(#g)"/>
 <circle cx="1300" cy="180" r="70" fill="#FFE9A8" opacity="0.85"/>
-<rect x="380" y="720" width="900" height="20" fill="#9E7E4A" opacity="0.4"/>
-<rect x="500" y="540" width="80" height="200" fill="#E8DCC0"/>
-<polygon points="500,540 580,540 540,500" fill="#5E4528"/>
-<polygon points="700,720 700,580 800,540 900,580 900,720" fill="#5E4528"/>
-<polygon points="700,580 800,540 900,580 800,540" fill="#5E4528"/>
-<rect x="780" y="640" width="40" height="80" fill="#B89878"/><path d="M0 720 Q 400 690 800 705 T 1600 700 L 1600 900 L 0 900 Z" fill="#C8A868"/>
+<rect x="0" y="715" width="1600" height="20" fill="#9E7E4A" opacity="0.4"/>
+<rect x="120" y="540" width="70" height="200" fill="#E8DCC0"/>
+<polygon points="120,540 190,540 155,500" fill="#5E4528"/>
+<polygon points="200,740 200,610 280,580 360,610 360,740" fill="#5E4528"/>
+<rect x="270" y="660" width="32" height="80" fill="#B89878"/>
+<polygon points="1260,740 1260,610 1340,580 1420,610 1500,610 1500,740" fill="#5E4528"/>
+<rect x="1330" y="660" width="32" height="80" fill="#B89878"/>
+<rect x="1430" y="540" width="60" height="200" fill="#E8DCC0"/>
+<polygon points="1430,540 1490,540 1460,505" fill="#5E4528"/><path d="M0 720 Q 400 690 800 705 T 1600 700 L 1600 900 L 0 900 Z" fill="#C8A868"/>
 <path d="M0 760 Q 500 740 1000 755 T 1600 750 L 1600 900 L 0 900 Z" fill="#C8A868" opacity="0.7"/></svg>

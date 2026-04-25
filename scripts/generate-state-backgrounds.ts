@@ -16,7 +16,7 @@ const P = {
   cool:    { skyTop: "#DCE8EE", skyMid: "#B8D0DD", skyBot: "#8FB4C6", ground: "#A6BFA8", hill: "#7E94A2", far: "#9BAEBA", accent: "#4A5C68", sun: "#F5F1E5", sunTone: "cool" },
   desert:  { skyTop: "#F8E0B8", skyMid: "#F0B898", skyBot: "#D88078", ground: "#C8956D", hill: "#A66848", far: "#C99078", accent: "#7A3F2D", sun: "#FFE4A8", sunTone: "warm" },
   forest:  { skyTop: "#E8E5C8", skyMid: "#C8C695", skyBot: "#9BAA78", ground: "#6E8A5C", hill: "#5A7048", far: "#7A8E6C", accent: "#3D4D32", sun: "#FFF4D0", sunTone: "warm" },
-  coast:   { skyTop: "#F5DCC8", skyMid: "#F0B8A8", skyBot: "#E89090", ground: "#D8C898", hill: "#B0AE82", far: "#C8B488", accent: "#6E5B3A", sun: "#FFE9C9", sunTone: "warm" },
+  coast:   { skyTop: "#DCE8E8", skyMid: "#B8D0D0", skyBot: "#88B0B8", ground: "#A8C0A0", hill: "#8AA098", far: "#9CB8B0", accent: "#3E5A5C", sun: "#F5F1E5", sunTone: "cool" },
   alpine:  { skyTop: "#D8E4ED", skyMid: "#B0C4D5", skyBot: "#88A4BC", ground: "#9EB098", hill: "#7E948A", far: "#9CB0B8", accent: "#3E5060", sun: "#F8F2E0", sunTone: "cool" },
   prairie: { skyTop: "#F5E5B8", skyMid: "#F0C898", skyBot: "#D89878", ground: "#C8A868", hill: "#9E7E4A", far: "#B89878", accent: "#5E4528", sun: "#FFE9A8", sunTone: "warm" },
   bayou:   { skyTop: "#E8DCB8", skyMid: "#C8B898", skyBot: "#A89870", ground: "#788868", hill: "#5E6E50", far: "#7A8870", accent: "#384028", sun: "#F8E8C0", sunTone: "warm" },
@@ -77,20 +77,27 @@ const palms = (p: Palette) => `
 </g>`;
 
 const lighthouse = (p: Palette) => `
-<rect x="400" y="720" width="800" height="40" fill="${p.far}" opacity="0.5"/>
-<polygon points="780,500 780,720 860,720 860,500 820,460" fill="#F5F0E8"/>
-<rect x="780" y="540" width="80" height="30" fill="${p.accent}"/>
-<rect x="780" y="620" width="80" height="30" fill="${p.accent}"/>
-<rect x="800" y="480" width="40" height="30" fill="${p.accent}"/>
-<polygon points="800,480 840,480 820,450" fill="${p.accent}"/>`;
+<rect x="0" y="650" width="1600" height="60" fill="${p.far}" opacity="0.55"/>
+<g stroke="#FFFFFF" stroke-width="2" opacity="0.35" fill="none">
+<path d="M0 680 Q 400 668 800 680 T 1600 680"/>
+</g>
+<rect x="60" y="690" width="320" height="40" fill="${p.hill}" opacity="0.7"/>
+<polygon points="180,500 180,690 260,690 260,500 220,460" fill="#F5F0E8"/>
+<rect x="180" y="540" width="80" height="26" fill="${p.accent}"/>
+<rect x="180" y="610" width="80" height="26" fill="${p.accent}"/>
+<rect x="200" y="480" width="40" height="30" fill="${p.accent}"/>
+<polygon points="200,480 240,480 220,450" fill="${p.accent}"/>`;
 
 const silo = (p: Palette) => `
-<rect x="380" y="720" width="900" height="20" fill="${p.hill}" opacity="0.4"/>
-<rect x="500" y="540" width="80" height="200" fill="#E8DCC0"/>
-<polygon points="500,540 580,540 540,500" fill="${p.accent}"/>
-<polygon points="700,720 700,580 800,540 900,580 900,720" fill="${p.accent}"/>
-<polygon points="700,580 800,540 900,580 800,540" fill="${p.accent}"/>
-<rect x="780" y="640" width="40" height="80" fill="${p.far}"/>`;
+<rect x="0" y="715" width="1600" height="20" fill="${p.hill}" opacity="0.4"/>
+<rect x="120" y="540" width="70" height="200" fill="#E8DCC0"/>
+<polygon points="120,540 190,540 155,500" fill="${p.accent}"/>
+<polygon points="200,740 200,610 280,580 360,610 360,740" fill="${p.accent}"/>
+<rect x="270" y="660" width="32" height="80" fill="${p.far}"/>
+<polygon points="1260,740 1260,610 1340,580 1420,610 1500,610 1500,740" fill="${p.accent}"/>
+<rect x="1330" y="660" width="32" height="80" fill="${p.far}"/>
+<rect x="1430" y="540" width="60" height="200" fill="#E8DCC0"/>
+<polygon points="1430,540 1490,540 1460,505" fill="${p.accent}"/>`;
 
 const cypress = (p: Palette) => `
 <g fill="${p.accent}" opacity="0.85">
@@ -146,12 +153,18 @@ const goldenHills = (p: Palette) => `
 </g>`;
 
 const windmill = (p: Palette) => `
-<rect x="380" y="720" width="900" height="20" fill="${p.hill}" opacity="0.3"/>
-<polygon points="836,720 844,500 856,500 864,720" fill="${p.accent}"/>
-<g transform="translate(850 500)" fill="${p.accent}">
+<rect x="0" y="715" width="1600" height="20" fill="${p.hill}" opacity="0.3"/>
+<polygon points="186,720 194,490 206,490 214,720" fill="${p.accent}"/>
+<g transform="translate(200 490)" fill="${p.accent}">
+<ellipse cx="0" cy="0" rx="7" ry="7"/>
+<polygon points="0,0 70,-18 82,0"/><polygon points="0,0 -18,70 0,82"/>
+<polygon points="0,0 -70,18 -82,0"/><polygon points="0,0 18,-70 0,-82"/>
+</g>
+<polygon points="1386,720 1394,520 1406,520 1414,720" fill="${p.accent}" opacity="0.85"/>
+<g transform="translate(1400 520)" fill="${p.accent}" opacity="0.85">
 <ellipse cx="0" cy="0" rx="6" ry="6"/>
-<polygon points="0,0 60,-15 70,0"/><polygon points="0,0 -15,60 0,70"/>
-<polygon points="0,0 -60,15 -70,0"/><polygon points="0,0 15,-60 0,-70"/>
+<polygon points="0,0 56,-14 66,0"/><polygon points="0,0 -14,56 0,66"/>
+<polygon points="0,0 -56,14 -66,0"/><polygon points="0,0 14,-56 0,-66"/>
 </g>`;
 
 const skylineDome = (p: Palette) => `
@@ -163,13 +176,15 @@ const skylineDome = (p: Palette) => `
 </g>`;
 
 const arch = (p: Palette) => `
-<rect x="100" y="500" width="500" height="240" fill="${p.far}"/>
-<path d="M 700 720 Q 700 480 900 480 Q 1100 480 1100 720 L 1040 720 Q 1040 540 900 540 Q 760 540 760 720 Z" fill="${p.hill}"/>
-<rect x="1180" y="560" width="280" height="160" fill="${p.far}" opacity="0.85"/>`;
+<rect x="0" y="540" width="160" height="200" fill="${p.far}" opacity="0.85"/>
+<path d="M 60 740 Q 60 460 240 460 Q 420 460 420 740 L 360 740 Q 360 530 240 530 Q 120 530 120 740 Z" fill="${p.hill}"/>
+<rect x="1240" y="540" width="320" height="200" fill="${p.far}"/>
+<polygon points="1240,540 1560,540 1540,520 1260,520" fill="${p.hill}"/>
+<rect x="1380" y="600" width="120" height="140" fill="${p.far}" opacity="0.85"/>`;
 
 const volcanoPalm = (p: Palette) => `
-<polygon points="600,720 900,400 1200,720" fill="${p.hill}"/>
-<polygon points="850,460 900,400 950,460 920,470 880,470" fill="${p.accent}"/>
+<polygon points="1100,720 1380,440 1600,720 1600,720" fill="${p.hill}"/>
+<polygon points="1340,490 1380,440 1420,490 1400,500 1360,500" fill="${p.accent}"/>
 <g stroke="${p.accent}" stroke-width="12" stroke-linecap="round" fill="none">
 <path d="M240 740 Q 250 620 260 510"/>
 </g>

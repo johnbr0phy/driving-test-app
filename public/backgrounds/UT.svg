@@ -2,7 +2,9 @@
 <stop offset="0%" stop-color="#F8E0B8"/><stop offset="55%" stop-color="#F0B898"/><stop offset="100%" stop-color="#D88078"/>
 </linearGradient></defs><rect width="1600" height="900" fill="url(#g)"/>
 <circle cx="1300" cy="180" r="70" fill="#FFE4A8" opacity="0.85"/>
-<rect x="100" y="500" width="500" height="240" fill="#C99078"/>
-<path d="M 700 720 Q 700 480 900 480 Q 1100 480 1100 720 L 1040 720 Q 1040 540 900 540 Q 760 540 760 720 Z" fill="#A66848"/>
-<rect x="1180" y="560" width="280" height="160" fill="#C99078" opacity="0.85"/><path d="M0 720 Q 400 690 800 705 T 1600 700 L 1600 900 L 0 900 Z" fill="#C8956D"/>
+<rect x="0" y="540" width="160" height="200" fill="#C99078" opacity="0.85"/>
+<path d="M 60 740 Q 60 460 240 460 Q 420 460 420 740 L 360 740 Q 360 530 240 530 Q 120 530 120 740 Z" fill="#A66848"/>
+<rect x="1240" y="540" width="320" height="200" fill="#C99078"/>
+<polygon points="1240,540 1560,540 1540,520 1260,520" fill="#A66848"/>
+<rect x="1380" y="600" width="120" height="140" fill="#C99078" opacity="0.85"/><path d="M0 720 Q 400 690 800 705 T 1600 700 L 1600 900 L 0 900 Z" fill="#C8956D"/>
 <path d="M0 760 Q 500 740 1000 755 T 1600 750 L 1600 900 L 0 900 Z" fill="#C8956D" opacity="0.7"/></svg>

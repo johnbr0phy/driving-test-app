@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 140">
+  <polygon points="6,10 274,70 6,130" fill="#FBE10E" stroke="#000000" stroke-width="4"/>
+  <text x="80" y="80" font-family="Helvetica, Arial, sans-serif" font-weight="800" font-size="22" fill="#000000">NO PASSING</text>
+  <text x="100" y="106" font-family="Helvetica, Arial, sans-serif" font-weight="800" font-size="20" fill="#000000">ZONE</text>
+</svg>

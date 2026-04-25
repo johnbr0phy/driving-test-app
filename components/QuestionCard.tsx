@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { CheckCircle2, XCircle } from "lucide-react";
 import { useTranslation } from "@/contexts/LanguageContext";
+import { QuestionImage } from "@/components/QuestionImage";
 
 interface QuestionCardProps {
   question: Question;
@@ -61,6 +62,7 @@ export function QuestionCard({
         <CardTitle className="text-xl">{question.question}</CardTitle>
       </CardHeader>
       <CardContent>
+        <QuestionImage questionId={question.questionId} state={question.state} />
         <div className="space-y-3">
           {options.map((option) => {
             const isThisCorrect = option.value === question.correctAnswer;

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <polygon points="100,180 10,25 190,25" fill="#C8102E" stroke="#FFFFFF" stroke-width="6"/>
+  <polygon points="100,160 30,38 170,38" fill="#FFFFFF"/>
+  <text x="100" y="115" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-weight="700" font-size="38" fill="#C8102E" letter-spacing="2">YIELD</text>
+</svg>

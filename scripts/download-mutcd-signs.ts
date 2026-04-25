@@ -1,24 +1,35 @@
 /**
  * Download official MUTCD road sign SVGs from Wikimedia Commons into
- * /public/signs/, overwriting any existing files.
+ * /public/signs/.
  *
- * Run locally — Wikimedia is blocked from CI/sandboxed environments:
+ * Run locally — Wikimedia is blocked from sandboxed environments:
  *   npx tsx scripts/download-mutcd-signs.ts
  *
- * Optional flags:
- *   ONLY=stop,yield   Only download these signIds
- *   FORCE=0           Skip files that already exist (default: overwrite)
+ * Behavior:
+ *   - Skips signs that already have a "real" SVG on disk (>4kb), so re-runs
+ *     after a partial / rate-limited run only fetch what's missing.
+ *   - 1.5s delay between requests, retries 429s with backoff (10s, 30s, 90s).
+ *   - On 404 (filename mismatch), logs and moves on so you can paste the list
+ *     back to me to fix the mapping.
  *
- * Wikimedia's Special:FilePath endpoint redirects to the actual file URL.
- * Their User-Agent policy requires a contact string.
+ * Optional flags:
+ *   ONLY=stop,yield   Only attempt these signIds
+ *   FORCE=1           Re-download even if a real SVG already exists
  */
 
-import { writeFile, mkdir } from "node:fs/promises";
+import { writeFile, mkdir, stat } from "node:fs/promises";
 import { join } from "node:path";
 
 const OUT_DIR = join(process.cwd(), "public", "signs");
 const ONLY = process.env.ONLY?.split(",").map((s) => s.trim());
-const FORCE = process.env.FORCE !== "0";
+const FORCE = process.env.FORCE === "1";
+
+// Hand-coded SVGs are all <2kb. Real Wikimedia MUTCD SVGs are 5–80kb.
+// Anything over this threshold is treated as already-downloaded.
+const REAL_SVG_MIN_BYTES = 4096;
+
+const REQUEST_DELAY_MS = 1500;
+const RETRY_BACKOFFS_MS = [10_000, 30_000, 90_000];
 
 // signId (matches lib/signImages.ts) -> Wikimedia filename
 const MUTCD_FILENAMES: Record<string, string> = {
@@ -57,44 +68,67 @@ const MUTCD_FILENAMES: Record<string, string> = {
   chevron: "MUTCD_W1-8.svg",
   "low-clearance": "MUTCD_W12-2.svg",
   "bike-lane": "MUTCD_D11-1.svg",
-  // signal-flashing-red and signal-flashing-yellow are signal heads, not signs.
-  // Wikimedia doesn't have direct MUTCD entries for these — they stay as the
-  // existing hand-coded SVGs unless you replace them manually.
+  // signal-flashing-red / signal-flashing-yellow are signal heads, not signs;
+  // they have no MUTCD code and stay as their hand-coded versions.
 };
 
 const USER_AGENT =
   "TigerTest-AssetDownloader/1.0 (https://tigertest.io; admin@tigertest.io)";
 
-async function downloadOne(signId: string, filename: string) {
-  const outPath = join(OUT_DIR, `${signId}.svg`);
-  const url = `https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(filename)}`;
+const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
-  const res = await fetch(url, {
-    headers: { "User-Agent": USER_AGENT, Accept: "image/svg+xml,*/*" },
-    redirect: "follow",
-  });
+async function alreadyDownloaded(signId: string): Promise<boolean> {
+  if (FORCE) return false;
+  try {
+    const s = await stat(join(OUT_DIR, `${signId}.svg`));
+    return s.size > REAL_SVG_MIN_BYTES;
+  } catch {
+    return false;
+  }
+}
 
-  if (!res.ok) {
-    throw new Error(`HTTP ${res.status}`);
+async function fetchWithRetry(url: string): Promise<string> {
+  let lastErr: Error | null = null;
+
+  for (let attempt = 0; attempt <= RETRY_BACKOFFS_MS.length; attempt++) {
+    const res = await fetch(url, {
+      headers: { "User-Agent": USER_AGENT, Accept: "image/svg+xml,*/*" },
+      redirect: "follow",
+    });
+
+    if (res.ok) {
+      const text = await res.text();
+      if (!text.includes("<svg")) {
+        throw new Error("response is not SVG");
+      }
+      return text;
+    }
+
+    // Don't retry 404s — that's a wrong filename, not a transient error
+    if (res.status === 404) {
+      throw new Error("HTTP 404");
+    }
+
+    lastErr = new Error(`HTTP ${res.status}`);
+    const backoff = RETRY_BACKOFFS_MS[attempt];
+    if (backoff === undefined) break;
+
+    process.stdout.write(`(${res.status}, retry in ${backoff / 1000}s) `);
+    await sleep(backoff);
   }
 
-  const text = await res.text();
-  if (!text.includes("<svg")) {
-    throw new Error("response is not SVG");
-  }
-
-  await writeFile(outPath, text);
-  return text.length;
+  throw lastErr ?? new Error("unknown error");
 }
 
 async function main() {
   await mkdir(OUT_DIR, { recursive: true });
 
   const ids = ONLY ?? Object.keys(MUTCD_FILENAMES);
-  console.log(`Downloading ${ids.length} MUTCD signs to ${OUT_DIR}\n`);
+  console.log(`Checking ${ids.length} MUTCD signs in ${OUT_DIR}\n`);
 
   let ok = 0;
-  let fail = 0;
+  let skipped = 0;
+  const failed: Array<{ id: string; filename: string; reason: string }> = [];
 
   for (const id of ids) {
     const filename = MUTCD_FILENAMES[id];
@@ -103,23 +137,38 @@ async function main() {
       continue;
     }
 
-    process.stdout.write(`  ${id} (${filename})... `);
-    try {
-      const bytes = await downloadOne(id, filename);
-      console.log(`ok (${(bytes / 1024).toFixed(1)}kb)`);
-      ok++;
-    } catch (err) {
-      console.log(`FAILED — ${(err as Error).message}`);
-      fail++;
+    if (await alreadyDownloaded(id)) {
+      console.log(`  ${id}: already downloaded, skipping`);
+      skipped++;
+      continue;
     }
 
-    // Be polite to Wikimedia
-    await new Promise((r) => setTimeout(r, 250));
+    process.stdout.write(`  ${id} (${filename})... `);
+    const url = `https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(filename)}`;
+
+    try {
+      const text = await fetchWithRetry(url);
+      await writeFile(join(OUT_DIR, `${id}.svg`), text);
+      console.log(`ok (${(text.length / 1024).toFixed(1)}kb)`);
+      ok++;
+    } catch (err) {
+      const reason = (err as Error).message;
+      console.log(`FAILED — ${reason}`);
+      failed.push({ id, filename, reason });
+    }
+
+    await sleep(REQUEST_DELAY_MS);
   }
 
-  console.log(`\nDone. ${ok} ok, ${fail} failed.`);
-  if (!FORCE) {
-    console.log("(FORCE=0 was set, but this script always overwrites)");
+  console.log(
+    `\n${ok} downloaded, ${skipped} already had real SVGs, ${failed.length} failed.`,
+  );
+
+  if (failed.length > 0) {
+    console.log("\nFailures (paste this back if any are 404s):");
+    for (const f of failed) {
+      console.log(`  ${f.id} → ${f.filename} (${f.reason})`);
+    }
   }
 }
 

@@ -38,12 +38,8 @@ export function Header() {
   // Hide sign up prompt on onboarding pages (too early in flow)
   const isOnboarding = pathname?.startsWith("/onboarding");
 
-  // Hide language toggle on SEO landing pages (they have dedicated /es/ versions)
-  const isSeoPage =
-    pathname?.endsWith("-dmv-practice-test") ||
-    pathname?.endsWith("-examen-practica-dmv") ||
-    pathname === "/practice-tests-by-state" ||
-    pathname === "/es/examenes-practica-por-estado";
+  // Language toggle lives in the header only on the homepage; the footer renders it elsewhere.
+  const isHomepage = pathname === "/";
 
   if (hideHeader) {
     return null;
@@ -60,8 +56,8 @@ export function Header() {
           </Link>
 
           <div className="flex items-center gap-2 sm:gap-4">
-            {/* Language Toggle - hidden on SEO pages which have dedicated /es/ versions */}
-            {!isSeoPage && (
+            {/* Language Toggle - shown only on the homepage; other pages render it in the footer */}
+            {isHomepage && (
               <div className="flex items-center bg-gray-100 rounded-full p-0.5">
                 {([["en", "\u{1F1FA}\u{1F1F8}"], ["es", "\u{1F1EA}\u{1F1F8}"]] as [Language, string][]).map(([lang, flag]) => (
                   <button

@@ -943,13 +943,9 @@ export const useStore = create<AppState>()(
       },
 
       hasReferralUnlock: () => {
-        const { qualifiedReferralCount, referredBy, isGuest, userId } = get();
+        const { qualifiedReferralCount, isGuest, userId } = get();
         if (isGuest || !userId) return false;
-        // Referrer side: hit the threshold of qualifying friend signups
-        if ((qualifiedReferralCount ?? 0) >= REFERRALS_REQUIRED) return true;
-        // Referee side: arriving via a friend's link grants the bonus
-        if (referredBy) return true;
-        return false;
+        return (qualifiedReferralCount ?? 0) >= REFERRALS_REQUIRED;
       },
     }),
     {

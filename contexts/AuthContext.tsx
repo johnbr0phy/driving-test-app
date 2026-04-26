@@ -47,27 +47,12 @@ export function useAuth() {
   return useContext(AuthContext);
 }
 
-function readPendingReferralCode(): string | null {
-  if (typeof window === "undefined") return null;
-  try {
-    return localStorage.getItem(PENDING_REFERRAL_KEY);
-  } catch {
-    return null;
-  }
-}
-
 async function sendWelcomeEmail(userId: string, email: string, displayName: string | null, emailConsent: boolean) {
   try {
     await fetch("/api/send-welcome-email", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        userId,
-        email,
-        displayName,
-        emailConsent,
-        referralCode: readPendingReferralCode(),
-      }),
+      body: JSON.stringify({ userId, email, displayName, emailConsent }),
     });
   } catch (err) {
     console.error("Failed to send welcome email:", err);

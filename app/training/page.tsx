@@ -19,6 +19,11 @@ import { TestPageHeader } from "@/components/TestPageHeader";
 import Link from "next/link";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { states } from "@/data/states";
+import { en, es } from "@/i18n";
+import { PaywallModal } from "@/components/PaywallModal";
+import { useAuth } from "@/contexts/AuthContext";
+import { auth } from "@/lib/firebase";
+import { trackBeginCheckout } from "@/lib/analytics";
 
 function TrainingPageContent() {
   const router = useRouter();
@@ -29,6 +34,47 @@ function TrainingPageContent() {
 
   const selectedState = useStore((state) => state.selectedState);
   const isGuest = useStore((state) => state.isGuest);
+  const { user } = useAuth();
+  const [paywallOpen, setPaywallOpen] = useState(false);
+  const [ctaIndex] = useState(() => Math.floor(Math.random() * en.testCtas.length));
+  const ctaText = (language === "es" ? es.testCtas : en.testCtas)[ctaIndex];
+
+  const handleUpgrade = async () => {
+    if (!user?.email || !user?.uid) {
+      router.push("/signup");
+      return;
+    }
+    try {
+      const idToken = await auth.currentUser?.getIdToken();
+      if (!idToken) {
+        alert("Authentication error. Please sign in again.");
+        return;
+      }
+      const response = await fetch("/api/stripe/checkout", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${idToken}`,
+        },
+        body: JSON.stringify({
+          email: user.email,
+          returnUrl: window.location.origin,
+          location: "training_set_4",
+        }),
+      });
+      const data = await response.json();
+      if (data.error) {
+        alert(`Error: ${data.error}`);
+        return;
+      }
+      if (data.checkoutUrl) {
+        trackBeginCheckout("training_set_4");
+        window.location.href = data.checkoutUrl;
+      }
+    } catch {
+      alert("Failed to start checkout. Please check your connection and try again.");
+    }
+  };
   const training = useStore((state) => state.training);
   const trainingSets = useStore((state) => state.trainingSets);
   const answerTrainingQuestion = useStore((state) => state.answerTrainingQuestion);
@@ -372,14 +418,13 @@ function TrainingPageContent() {
       <TestPageHeader
         backHref="/dashboard"
         right={
-          !isGuest ? (
-            <Link
-              href="/stats?tab=community"
-              className="text-sm font-medium text-brand hover:text-brand-dark transition-colors"
-            >
-              Testing soon?
-            </Link>
-          ) : undefined
+          <button
+            type="button"
+            onClick={() => setPaywallOpen(true)}
+            className="text-sm font-medium text-brand hover:text-brand-dark transition-colors"
+          >
+            {ctaText}
+          </button>
         }
       />
       <div className="container mx-auto px-4 py-4 max-w-lg md:max-w-2xl lg:max-w-4xl">
@@ -451,6 +496,15 @@ function TrainingPageContent() {
           )}
         </div>
       </div>
+
+      <PaywallModal
+        open={paywallOpen}
+        onOpenChange={setPaywallOpen}
+        feature="training_set_4"
+        onUpgrade={handleUpgrade}
+        isGuest={isGuest}
+        onSignUp={() => router.push("/signup")}
+      />
     </div>
   );
 }

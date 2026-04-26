@@ -3,6 +3,7 @@
 import { useEffect, useState, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { PaywallModal } from "@/components/PaywallModal";
+import { ReferralModal } from "@/components/ReferralModal";
 import { Card, CardContent } from "@/components/ui/card";
 import { Zap, ChevronRight, CheckCircle, Check, Lock } from "lucide-react";
 import Link from "next/link";
@@ -152,6 +153,7 @@ function DashboardContent() {
   const getTestAttemptStats = useStore((state) => state.getTestAttemptStats);
   const getCurrentTest = useStore((state) => state.getCurrentTest);
   const hasPremiumAccess = useStore((state) => state.hasPremiumAccess);
+  const hasReferralUnlock = useStore((state) => state.hasReferralUnlock);
   const setPremiumStatus = useStore((state) => state.setPremiumStatus);
   const training = useStore((state) => state.training);
   const getTrainingSetProgress = useStore((state) => state.getTrainingSetProgress);
@@ -181,6 +183,7 @@ function DashboardContent() {
   // Paywall state
   const [paywallOpen, setPaywallOpen] = useState(false);
   const [paywallFeature, setPaywallFeature] = useState<"training_set_4" | "practice_test_4">("training_set_4");
+  const [referralModalOpen, setReferralModalOpen] = useState(false);
   const [showPurchaseSuccess, setShowPurchaseSuccess] = useState(false);
   const schoolJoinedSlug = searchParams.get("school_joined");
   const [showSchoolJoined, setShowSchoolJoined] = useState(!!schoolJoinedSlug);
@@ -188,6 +191,7 @@ function DashboardContent() {
   const onboardingComplete = hydrated ? isOnboardingComplete() : true;
   const onboardingProgress = training.totalCorrectAllTime;
   const isPremium = hydrated ? hasPremiumAccess() : false;
+  const referralUnlocked = hydrated ? hasReferralUnlock() : false;
 
   // Get state name from code
   const stateName = states.find((s) => s.code === selectedState)?.name || selectedState;
@@ -265,6 +269,12 @@ function DashboardContent() {
     trackPaywallHit(cardId, cardLabel);
     setPaywallFeature(feature);
     setPaywallOpen(true);
+  };
+
+  // Handle referral-unlock click (training set 3)
+  const handleReferralClick = (cardId: string, cardLabel: string) => {
+    trackPaywallHit(cardId, cardLabel);
+    setReferralModalOpen(true);
   };
 
   // Handle upgrade (redirect to Stripe)
@@ -393,6 +403,15 @@ function DashboardContent() {
           onSignUp={() => router.push("/signup")}
         />
 
+        {/* Referral Modal — for training set 3 unlock */}
+        <ReferralModal
+          open={referralModalOpen}
+          onOpenChange={setReferralModalOpen}
+          isGuest={isGuest}
+          onSignUp={() => router.push("/signup")}
+          onUpgrade={handleUpgrade}
+        />
+
         {/* Purchase Success Message */}
         {showPurchaseSuccess && (
           <Card className="mb-4 bg-gradient-to-r from-green-50 to-emerald-50 border-green-200">
@@ -496,7 +515,12 @@ function DashboardContent() {
           {[1, 2, 3, 4].map((id) => {
             const trainingProgress = hydrated ? getTrainingSetProgress(id) : { correct: 0, total: 50, complete: false };
             const trainingComplete = trainingProgress.complete;
-            const trainingLocked = id >= 3 && !isPremium;
+            // Training set 3 unlocks via referrals OR premium; set 4 stays premium-only.
+            const trainingLocked =
+              id === 3
+                ? !isPremium && !referralUnlocked
+                : id >= 4 && !isPremium;
+            const trainingLockKind: "premium" | "referral" = id === 3 ? "referral" : "premium";
             const isStartHere = id === 1 && !trainingComplete && trainingProgress.correct === 0;
 
             const testCompleted = testComplete(id);
@@ -551,7 +575,13 @@ function DashboardContent() {
                   }
                   isPremiumLocked={trainingLocked}
                   href={trainingLocked ? undefined : `/training?set=${id}`}
-                  onClick={trainingLocked ? () => handlePremiumClick("training_set_4", `set_${id}`, `Training Set ${id}`) : undefined}
+                  onClick={
+                    trainingLocked
+                      ? trainingLockKind === "referral"
+                        ? () => handleReferralClick(`set_${id}`, `Training Set ${id}`)
+                        : () => handlePremiumClick("training_set_4", `set_${id}`, `Training Set ${id}`)
+                      : undefined
+                  }
                 >
                   {!trainingComplete && !trainingLocked && trainingProgress.correct > 0 && (
                     <ProgressBar value={trainingProgress.correct} max={trainingProgress.total} />

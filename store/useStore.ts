@@ -124,7 +124,18 @@ interface AppState {
   hasPremiumAccess: () => boolean;
   setPremiumStatus: (status: { isPremium: boolean; purchasedAt: string; stripeCustomerId: string; stripePaymentId: string }) => void;
   isTrainingSetUnlocked: (setId: number) => boolean;
+
+  // Referrals (friend invites unlock training set 3)
+  referralCode: string | null;
+  referredBy: string | null;
+  referralCount: number;
+  qualifiedReferralCount: number;
+  setReferralData: (data: { referralCode?: string | null; referredBy?: string | null; referralCount?: number; qualifiedReferralCount?: number }) => void;
+  hasReferralUnlock: () => boolean;
 }
+
+// Number of qualified friend signups required to unlock Training Set 3
+export const REFERRALS_REQUIRED = 3;
 
 export const useStore = create<AppState>()(
   persist(
@@ -162,6 +173,10 @@ export const useStore = create<AppState>()(
         stripeCustomerId: null,
         stripePaymentId: null,
       },
+      referralCode: null,
+      referredBy: null,
+      referralCount: 0,
+      qualifiedReferralCount: 0,
 
       // Actions
       setLanguage: (lang: Language) => {
@@ -696,6 +711,10 @@ export const useStore = create<AppState>()(
               trainingSets: data.trainingSets || {},
               trainingAnswerHistory: data.trainingAnswerHistory || [],
               activeDates: data.activeDates || [],
+              referralCode: data.referralCode || null,
+              referredBy: data.referredBy || null,
+              referralCount: data.referralCount || 0,
+              qualifiedReferralCount: data.qualifiedReferralCount || 0,
               photoURL: data.photoURL || null,
               userId,
               subscription: data.subscription || {
@@ -733,7 +752,7 @@ export const useStore = create<AppState>()(
       },
 
       saveToFirestore: async () => {
-        const { userId, isGuest, selectedState, currentTests, completedTests, testAttempts, training, trainingSets, trainingAnswerHistory, activeDates, photoURL, subscription, language, emailConsent } = get();
+        const { userId, isGuest, selectedState, currentTests, completedTests, testAttempts, training, trainingSets, trainingAnswerHistory, activeDates, photoURL, subscription, language, emailConsent, referralCode, referredBy, referralCount, qualifiedReferralCount } = get();
         if (!userId || isGuest) return; // Don't save if no user is logged in or guest mode
 
         try {
@@ -796,6 +815,10 @@ export const useStore = create<AppState>()(
             activeDates: updatedActiveDates,
             subscription,
             language,
+            referralCode: referralCode ?? null,
+            referredBy: referredBy ?? null,
+            referralCount: referralCount ?? 0,
+            qualifiedReferralCount: qualifiedReferralCount ?? 0,
             lastUpdated: new Date().toISOString(),
             // Denormalized counters for admin dashboard
             _stats: {
@@ -859,6 +882,10 @@ export const useStore = create<AppState>()(
             stripeCustomerId: null,
             stripePaymentId: null,
           },
+          referralCode: null,
+          referredBy: null,
+          referralCount: 0,
+          qualifiedReferralCount: 0,
         });
       },
 
@@ -895,9 +922,34 @@ export const useStore = create<AppState>()(
       isTrainingSetUnlocked: (setId: number) => {
         // CDL sets (101+) are all free
         if (setId >= 101) return true;
-        // DMV Set 4 requires premium
-        if (setId === 4 && !get().hasPremiumAccess()) return false;
-        return true;
+        // Sets 1 and 2 are always free
+        if (setId <= 2) return true;
+        // Premium unlocks everything
+        if (get().hasPremiumAccess()) return true;
+        // Set 3 also unlocks via referrals (3 friends signed up + picked a state),
+        // or for users who arrived via someone else's referral link
+        if (setId === 3) return get().hasReferralUnlock();
+        // Set 4 (and beyond) stay premium-only
+        return false;
+      },
+
+      setReferralData: (data) => {
+        const updates: Partial<AppState> = {};
+        if (data.referralCode !== undefined) updates.referralCode = data.referralCode;
+        if (data.referredBy !== undefined) updates.referredBy = data.referredBy;
+        if (data.referralCount !== undefined) updates.referralCount = data.referralCount;
+        if (data.qualifiedReferralCount !== undefined) updates.qualifiedReferralCount = data.qualifiedReferralCount;
+        set(updates);
+      },
+
+      hasReferralUnlock: () => {
+        const { qualifiedReferralCount, referredBy, isGuest, userId } = get();
+        if (isGuest || !userId) return false;
+        // Referrer side: hit the threshold of qualifying friend signups
+        if ((qualifiedReferralCount ?? 0) >= REFERRALS_REQUIRED) return true;
+        // Referee side: arriving via a friend's link grants the bonus
+        if (referredBy) return true;
+        return false;
       },
     }),
     {

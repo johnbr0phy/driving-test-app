@@ -512,6 +512,26 @@ export const en = {
     tapToCollapse: "Tap to collapse",
   },
 
+  // Referral modal — invite friends to unlock Training Set 3
+  referral: {
+    title: "Unlock with friends",
+    subtitle: "Invite 3 friends to TigerTest and Safety & Emergencies is yours — free.",
+    progressLabel: "FRIENDS WHO JOINED",
+    unlocked: "All set! Safety & Emergencies is unlocked.",
+    oneFriendLeft: "1 more friend and you're in.",
+    friendsLeft: "{n} more friends to unlock.",
+    shareCta: "Invite friends",
+    copyLinkCta: "Copy invite link",
+    copyLinkSecondary: "Copy link",
+    copied: "Copied!",
+    yourLinkLabel: "Your link",
+    qualifyNote: "Counts when a friend signs up and picks their state.",
+    payInstead: "Or unlock with Premium →",
+    shareText: "I'm using TigerTest to study for my driving test. It's actually good — try it:",
+    signupPrompt: "Create a free account to get your invite link.",
+    maybeLater: "Maybe later",
+  },
+
   // Paywall modal
   paywall: {
     unlockPremiumContent: "Unlock Premium Content",

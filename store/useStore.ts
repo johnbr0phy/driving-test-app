@@ -130,8 +130,15 @@ interface AppState {
   referredBy: string | null;
   referralCount: number;
   qualifiedReferralCount: number;
-  setReferralData: (data: { referralCode?: string | null; referredBy?: string | null; referralCount?: number; qualifiedReferralCount?: number }) => void;
+  referralQualifiedAt: string | null;
+  setReferralData: (data: { referralCode?: string | null; referredBy?: string | null; referralCount?: number; qualifiedReferralCount?: number; referralQualifiedAt?: string | null }) => void;
   hasReferralUnlock: () => boolean;
+
+  // True once loadUserData() has resolved against Firestore. Lets gated UI
+  // (e.g., dashboard onboarding redirect) wait for the real value instead of
+  // bouncing logged-in users on a fresh browsing context where localStorage
+  // is empty but Firestore has their state.
+  firestoreLoaded: boolean;
 }
 
 // Number of qualified friend signups required to unlock Training Set 3
@@ -177,6 +184,8 @@ export const useStore = create<AppState>()(
       referredBy: null,
       referralCount: 0,
       qualifiedReferralCount: 0,
+      referralQualifiedAt: null,
+      firestoreLoaded: false,
 
       // Actions
       setLanguage: (lang: Language) => {
@@ -715,6 +724,11 @@ export const useStore = create<AppState>()(
               referredBy: data.referredBy || null,
               referralCount: data.referralCount || 0,
               qualifiedReferralCount: data.qualifiedReferralCount || 0,
+              referralQualifiedAt: data.referralQualifiedAt
+                ? (typeof data.referralQualifiedAt?.toDate === 'function'
+                    ? data.referralQualifiedAt.toDate().toISOString()
+                    : String(data.referralQualifiedAt))
+                : null,
               photoURL: data.photoURL || null,
               userId,
               subscription: data.subscription || {
@@ -723,13 +737,16 @@ export const useStore = create<AppState>()(
                 stripeCustomerId: null,
                 stripePaymentId: null,
               },
+              firestoreLoaded: true,
             });
           } else {
             // New user - set userId
-            set({ userId });
+            set({ userId, firestoreLoaded: true });
           }
         } catch (error) {
           console.error('Error loading user data:', error);
+          // Mark as loaded even on failure so gated UI doesn't hang forever
+          set({ firestoreLoaded: true });
         }
       },
 
@@ -886,13 +903,17 @@ export const useStore = create<AppState>()(
           referredBy: null,
           referralCount: 0,
           qualifiedReferralCount: 0,
+          referralQualifiedAt: null,
+          firestoreLoaded: false,
         });
       },
 
       // Convert guest session to registered user
       convertGuestToUser: async (userId: string) => {
-        // Set user ID and clear guest flag
-        set({ userId, isGuest: false });
+        // Set user ID and clear guest flag. Treat Firestore as "loaded" since
+        // we're about to push the local guest state up — there's no remote
+        // record to wait on, and gated UI shouldn't block.
+        set({ userId, isGuest: false, firestoreLoaded: true });
         // Save all existing guest progress to Firestore
         await get().saveToFirestore();
       },
@@ -939,6 +960,7 @@ export const useStore = create<AppState>()(
         if (data.referredBy !== undefined) updates.referredBy = data.referredBy;
         if (data.referralCount !== undefined) updates.referralCount = data.referralCount;
         if (data.qualifiedReferralCount !== undefined) updates.qualifiedReferralCount = data.qualifiedReferralCount;
+        if (data.referralQualifiedAt !== undefined) updates.referralQualifiedAt = data.referralQualifiedAt;
         set(updates);
       },
 

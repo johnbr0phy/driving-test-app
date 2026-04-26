@@ -183,6 +183,10 @@ function DashboardContent() {
   const { t } = useTranslation();
   const isGuest = useStore((state) => state.isGuest);
   const selectedState = useStore((state) => state.selectedState);
+  const firestoreLoaded = useStore((state) => state.firestoreLoaded);
+  const referredBy = useStore((state) => state.referredBy);
+  const referralQualifiedAt = useStore((state) => state.referralQualifiedAt);
+  const setReferralData = useStore((state) => state.setReferralData);
   const getTestSession = useStore((state) => state.getTestSession);
   const getTestAttemptStats = useStore((state) => state.getTestAttemptStats);
   const getCurrentTest = useStore((state) => state.getCurrentTest);
@@ -231,12 +235,49 @@ function DashboardContent() {
   // Get state name from code
   const stateName = states.find((s) => s.code === selectedState)?.name || selectedState;
 
-  // Redirect to onboarding if no state selected
+  // Redirect to onboarding if no state selected. For logged-in users, wait
+  // for Firestore to load first — otherwise a fresh browsing context (e.g.
+  // clicking the welcome email on a different device) bounces them back to
+  // onboarding while their actual state is still in flight from Firestore.
   useEffect(() => {
-    if (hydrated && !selectedState) {
+    if (!hydrated) return;
+    if (user && !firestoreLoaded) return;
+    if (!selectedState) {
       router.push("/onboarding/select-state");
     }
-  }, [hydrated, selectedState, router]);
+  }, [hydrated, firestoreLoaded, user, selectedState, router]);
+
+  // Backfill: if this user signed up via a referral link and picked their
+  // state on /signup (the common path), the qualify endpoint never fired
+  // because that's only triggered from /onboarding/select-state. Catch them
+  // here on first dashboard load. Idempotent server-side, but we also guard
+  // locally so we don't hit the endpoint on every dashboard visit.
+  useEffect(() => {
+    if (!hydrated || !firestoreLoaded || !user) return;
+    if (!referredBy || !selectedState) return;
+    if (referralQualifiedAt) return;
+    let cancelled = false;
+    (async () => {
+      try {
+        const idToken = await auth.currentUser?.getIdToken();
+        if (!idToken || cancelled) return;
+        await fetch("/api/referrals/qualify", {
+          method: "POST",
+          headers: { Authorization: `Bearer ${idToken}` },
+        });
+        if (!cancelled) {
+          // Stamp locally so we don't re-fire on the next mount in this session.
+          // Server is the source of truth; loadUserData will refresh it next time.
+          setReferralData({ referralQualifiedAt: new Date().toISOString() });
+        }
+      } catch {
+        // Non-fatal — user can be qualified later via a manual backfill.
+      }
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, [hydrated, firestoreLoaded, user, referredBy, selectedState, referralQualifiedAt, setReferralData]);
 
   // Auto-complete any test where all questions are answered (handles stuck state)
   useEffect(() => {

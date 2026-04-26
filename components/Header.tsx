@@ -10,7 +10,7 @@ import { useAdmin } from "@/hooks/useAdmin";
 import { useHydration } from "@/hooks/useHydration";
 import { useTranslation } from "@/contexts/LanguageContext";
 import Image from "next/image";
-import { Shield } from "lucide-react";
+import { Shield, BarChart3 } from "lucide-react";
 import type { Language } from "@/i18n";
 
 export function Header() {
@@ -77,6 +77,16 @@ export function Header() {
                   </button>
                 ))}
               </div>
+            )}
+
+            {(user || isGuest) && (
+              <Link
+                href="/stats"
+                className="text-gray-600 hover:text-gray-900 transition-colors"
+                title={t("stats.yourStats")}
+              >
+                <BarChart3 className="h-5 w-5" />
+              </Link>
             )}
 
             {user ? (

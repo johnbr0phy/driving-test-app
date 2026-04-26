@@ -7,6 +7,12 @@ const CACHE_TTL_MS = 120_000; // 2 minutes
 let cachedPayload: Record<string, unknown> | null = null;
 let cacheTimestamp = 0;
 
+// Internal accounts whose data should never appear in admin analytics.
+const EXCLUDED_EMAIL_DOMAIN = '@johnbrophy.net';
+function isExcludedEmail(email: unknown): boolean {
+  return typeof email === 'string' && email.toLowerCase().endsWith(EXCLUDED_EMAIL_DOMAIN);
+}
+
 // ─── Per-user stats from full Firestore doc ─────────────────────────────────
 function processFullDoc(data: Record<string, unknown>) {
   const training = (data.training || {}) as Record<string, unknown>;
@@ -117,7 +123,7 @@ export async function GET(request: NextRequest) {
 
     const [lightSnap, fullSnap, sharesDoc] = await Promise.all([
       db.collection('users')
-        .select('selectedState', 'lastUpdated', 'activeDates', 'subscription', 'createdAt', 'referredBy', 'referralQualifiedAt', 'referredAt', 'qualifiedReferralCount', 'referralCount')
+        .select('email', 'selectedState', 'lastUpdated', 'activeDates', 'subscription', 'createdAt', 'referredBy', 'referralQualifiedAt', 'referredAt', 'qualifiedReferralCount', 'referralCount')
         .get(),
       db.collection('users')
         .orderBy('lastUpdated', 'desc')
@@ -125,6 +131,16 @@ export async function GET(request: NextRequest) {
         .get(),
       db.doc('analytics/shares').get(),
     ]);
+
+    // Scrub internal @johnbrophy.net accounts from all admin analytics.
+    const excludedUids = new Set<string>();
+    lightSnap.docs.forEach((doc) => {
+      if (isExcludedEmail(doc.data().email)) excludedUids.add(doc.id);
+    });
+    const lightDocs = lightSnap.docs.filter((doc) => !excludedUids.has(doc.id));
+    const fullDocs = fullSnap.docs.filter(
+      (doc) => !excludedUids.has(doc.id) && !isExcludedEmail(doc.data().email),
+    );
 
     // ── Aggregate stats from ALL users ─────────────────────────────────────
     const stateCounts: Record<string, number> = {};
@@ -158,7 +174,7 @@ export async function GET(request: NextRequest) {
       return d.toISOString().split('T')[0];
     });
 
-    lightSnap.docs.forEach((doc) => {
+    lightDocs.forEach((doc) => {
       const data = doc.data() as Record<string, unknown>;
       const state = data.selectedState as string | null;
       if (state) stateCounts[state] = (stateCounts[state] || 0) + 1;
@@ -205,7 +221,7 @@ export async function GET(request: NextRequest) {
     });
 
     // ── Build user list from top-100 full docs ─────────────────────────────
-    const users = fullSnap.docs.map(doc => {
+    const users = fullDocs.map(doc => {
       const data = doc.data() as Record<string, unknown>;
       const stats = processFullDoc(data);
       return {
@@ -221,7 +237,7 @@ export async function GET(request: NextRequest) {
       };
     });
 
-    const totalUsers = lightSnap.size;
+    const totalUsers = lightDocs.length;
     const dailyActiveUsers = calculateDailyActiveUsers(usersForDau);
 
     const activeUsers7d = usersForDau.filter(u => {
@@ -345,6 +361,7 @@ export async function GET(request: NextRequest) {
 
     // Top referrers, sorted by qualified count desc
     const topReferrers = Object.entries(referrerCounts)
+      .filter(([uid]) => !excludedUids.has(uid))
       .sort(([, a], [, b]) => b - a)
       .slice(0, 10)
       .map(([uid, count]) => ({ uid, qualifiedCount: count }));

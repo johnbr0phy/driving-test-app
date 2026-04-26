@@ -23,9 +23,17 @@ interface ReferralModalProps {
   onUpgrade?: () => Promise<void>;
 }
 
-const SITE_URL =
-  (typeof process !== "undefined" && process.env.NEXT_PUBLIC_SITE_URL) ||
-  "https://tigertest.io";
+// Build the share link from the current origin so it works on prod, Vercel
+// previews, and localhost equally — never hardcoded to production.
+function buildShareLink(code: string): string {
+  if (typeof window !== "undefined" && window.location?.origin) {
+    return `${window.location.origin}/?ref=${code}`;
+  }
+  const fallback =
+    (typeof process !== "undefined" && process.env.NEXT_PUBLIC_SITE_URL) ||
+    "https://tigertest.io";
+  return `${fallback}/?ref=${code}`;
+}
 
 export function ReferralModal({
   open,
@@ -82,7 +90,7 @@ export function ReferralModal({
     };
   }, [open, isGuest, referralCode, setReferralData]);
 
-  const link = referralCode ? `${SITE_URL}/?ref=${referralCode}` : "";
+  const link = referralCode ? buildShareLink(referralCode) : "";
   const shareText = t("referral.shareText");
   const remaining = Math.max(0, REFERRALS_REQUIRED - (qualifiedReferralCount ?? 0));
   const filled = Math.min(REFERRALS_REQUIRED, qualifiedReferralCount ?? 0);

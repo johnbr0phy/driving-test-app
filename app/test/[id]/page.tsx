@@ -172,7 +172,7 @@ export default function TestPage() {
           <Link href="/dashboard">
             <Button variant="ghost">
               <ArrowLeft className="h-4 w-4 mr-2" />
-              {t("common.backToDashboard")}
+              {t("common.back")}
             </Button>
           </Link>
           <h1 className="text-xl md:text-2xl font-bold">🎯 {t(`practiceTests.${testId}`)}</h1>

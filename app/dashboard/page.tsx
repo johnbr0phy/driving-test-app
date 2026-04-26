@@ -8,7 +8,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Zap, ChevronRight, CheckCircle, Check, Lock } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-import { useStore } from "@/store/useStore";
+import { REFERRALS_REQUIRED, useStore } from "@/store/useStore";
 import { useHydration } from "@/hooks/useHydration";
 import { useAuth } from "@/contexts/AuthContext";
 import { auth } from "@/lib/firebase";
@@ -38,6 +38,7 @@ function ProgressCard({
   onClick,
   isPremiumLocked,
   stepNumber,
+  rightSlot,
   children,
 }: {
   title: string;
@@ -48,6 +49,7 @@ function ProgressCard({
   onClick?: () => void;
   isPremiumLocked?: boolean;
   stepNumber?: number;
+  rightSlot?: React.ReactNode;
   children?: React.ReactNode;
 }) {
   const content = (
@@ -93,12 +95,12 @@ function ProgressCard({
           {children}
         </div>
 
-        {/* Stamp or chevron */}
-        {stamp ? (
+        {/* rightSlot wins over stamp/chevron when provided */}
+        {rightSlot ?? (stamp ? (
           <Stamp label={stamp.label} color={stamp.color} />
         ) : (
           <ChevronRight className={`h-5 w-5 flex-shrink-0 ${completed ? "text-green-400" : "text-gray-300"}`} />
-        )}
+        ))}
       </CardContent>
     </Card>
   );
@@ -124,6 +126,38 @@ function ProgressCard({
 
 function progressColor(): string {
   return "bg-red-400";
+}
+
+function ReferralDots({ filled, total }: { filled: number; total: number }) {
+  const safeFilled = Math.max(0, Math.min(total, filled));
+  return (
+    <div className="flex flex-col items-end gap-1 flex-shrink-0">
+      <div className="flex items-center gap-1">
+        {Array.from({ length: total }).map((_, i) => {
+          const done = i < safeFilled;
+          return (
+            <div
+              key={i}
+              className={`w-5 h-5 rounded-full flex items-center justify-center border ${
+                done
+                  ? "bg-green-500 border-green-500 text-white"
+                  : "bg-white border-gray-200 text-gray-300"
+              }`}
+            >
+              {done ? (
+                <Check className="w-3 h-3" strokeWidth={3} />
+              ) : (
+                <Lock className="w-2.5 h-2.5" />
+              )}
+            </div>
+          );
+        })}
+      </div>
+      <span className="text-[10px] font-semibold tabular-nums text-gray-500">
+        {safeFilled}/{total} friends
+      </span>
+    </div>
+  );
 }
 
 function ProgressBar({ value, max, hideLabel }: { value: number; max: number; hideLabel?: boolean }) {
@@ -154,6 +188,7 @@ function DashboardContent() {
   const getCurrentTest = useStore((state) => state.getCurrentTest);
   const hasPremiumAccess = useStore((state) => state.hasPremiumAccess);
   const hasReferralUnlock = useStore((state) => state.hasReferralUnlock);
+  const qualifiedReferralCount = useStore((state) => state.qualifiedReferralCount);
   const setPremiumStatus = useStore((state) => state.setPremiumStatus);
   const training = useStore((state) => state.training);
   const getTrainingSetProgress = useStore((state) => state.getTrainingSetProgress);
@@ -580,6 +615,11 @@ function DashboardContent() {
                       ? trainingLockKind === "referral"
                         ? () => handleReferralClick(`set_${id}`, `Training Set ${id}`)
                         : () => handlePremiumClick("training_set_4", `set_${id}`, `Training Set ${id}`)
+                      : undefined
+                  }
+                  rightSlot={
+                    trainingLocked && trainingLockKind === "referral"
+                      ? <ReferralDots filled={qualifiedReferralCount ?? 0} total={REFERRALS_REQUIRED} />
                       : undefined
                   }
                 >

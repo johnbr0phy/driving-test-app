@@ -461,8 +461,6 @@ function CDLResultsPageContent() {
                   <CardContent>
                     <QuestionCard
                       question={question}
-                      questionNumber={index + 1}
-                      totalQuestions={totalQuestions}
                       selectedAnswer={userAnswer}
                       onAnswerChange={() => {}}
                       showResult={true}

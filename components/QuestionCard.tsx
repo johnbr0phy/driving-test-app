@@ -2,14 +2,12 @@
 
 import { Question } from "@/types";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { CheckCircle2, XCircle } from "lucide-react";
 import { useTranslation } from "@/contexts/LanguageContext";
+import { QuestionImage } from "@/components/QuestionImage";
 
 interface QuestionCardProps {
   question: Question;
-  questionNumber: number;
-  totalQuestions: number;
   selectedAnswer?: string;
   onAnswerChange: (answer: string) => void;
   showResult?: boolean;
@@ -17,8 +15,6 @@ interface QuestionCardProps {
 
 export function QuestionCard({
   question,
-  questionNumber,
-  totalQuestions,
   selectedAnswer,
   onAnswerChange,
   showResult = false,
@@ -52,13 +48,10 @@ export function QuestionCard({
   return (
     <Card className="w-full">
       <CardHeader>
-        <div className="flex items-center justify-between mb-4">
-          <div className="text-sm text-gray-600">
-            {t("questionCard.questionOf")} {questionNumber} {t("questionCard.of")} {totalQuestions}
-          </div>
-          <Badge variant="outline">{t(`categories.${question.category}`)}</Badge>
+        <div className="flex items-start gap-4">
+          <CardTitle className="text-xl flex-1">{question.question}</CardTitle>
+          <QuestionImage questionId={question.questionId} />
         </div>
-        <CardTitle className="text-xl">{question.question}</CardTitle>
       </CardHeader>
       <CardContent>
         <div className="space-y-3">

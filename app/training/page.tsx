@@ -368,7 +368,7 @@ function TrainingPageContent() {
         </div>
       )}
 
-      <div className="container mx-auto px-4 py-4 max-w-6xl">
+      <div className="container mx-auto px-4 py-4 max-w-lg md:max-w-2xl lg:max-w-4xl">
         {/* Header */}
         <div className="mb-4 flex items-center justify-between">
           <Link href="/dashboard">

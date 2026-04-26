@@ -4,6 +4,7 @@ import { CheckCircle2, XCircle } from "lucide-react";
 import { Question } from "@/types";
 import { useState, useEffect } from "react";
 import { useTranslation } from "@/contexts/LanguageContext";
+import { QuestionImage } from "@/components/QuestionImage";
 
 interface TrainingCardProps {
   question: Question;
@@ -56,9 +57,12 @@ export function TrainingCard({
   };
 
   return (
-    <Card className="w-full max-w-3xl mx-auto">
+    <Card className="w-full">
       <CardContent className="p-4 md:p-8">
-        <h2 className="text-lg md:text-2xl font-semibold mb-4 md:mb-6">{question.question}</h2>
+        <div className="flex items-start gap-4 mb-4 md:mb-6">
+          <h2 className="text-lg md:text-2xl font-semibold flex-1">{question.question}</h2>
+          <QuestionImage questionId={question.questionId} />
+        </div>
 
         <div className="space-y-2 md:space-y-3 mb-4 md:mb-6">
           {options.map((option) => (

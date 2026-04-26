@@ -57,7 +57,7 @@ export function TrainingCard({
   };
 
   return (
-    <Card className="w-full max-w-3xl mx-auto">
+    <Card className="w-full">
       <CardContent className="p-4 md:p-8">
         <div className="flex items-start gap-4 mb-4 md:mb-6">
           <h2 className="text-lg md:text-2xl font-semibold flex-1">{question.question}</h2>

@@ -23,16 +23,15 @@ interface ReferralModalProps {
   onUpgrade?: () => Promise<void>;
 }
 
-// Build the share link from the current origin so it works on prod, Vercel
-// previews, and localhost equally - never hardcoded to production.
+// Always point share links at production so handed-off invites never break
+// when a preview deploy goes away. Falls back to tigertest.io if the env
+// var isn't set.
+const SHARE_BASE_URL =
+  (typeof process !== "undefined" && process.env.NEXT_PUBLIC_SITE_URL) ||
+  "https://tigertest.io";
+
 function buildShareLink(code: string): string {
-  if (typeof window !== "undefined" && window.location?.origin) {
-    return `${window.location.origin}/?ref=${code}`;
-  }
-  const fallback =
-    (typeof process !== "undefined" && process.env.NEXT_PUBLIC_SITE_URL) ||
-    "https://tigertest.io";
-  return `${fallback}/?ref=${code}`;
+  return `${SHARE_BASE_URL}/?ref=${code}`;
 }
 
 export function ReferralModal({

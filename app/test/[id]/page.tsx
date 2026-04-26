@@ -4,7 +4,6 @@ import { useState, useEffect, useRef } from "react";
 import { useParams, useRouter } from "next/navigation";
 import { QuestionCard } from "@/components/QuestionCard";
 import { Button } from "@/components/ui/button";
-import { Progress } from "@/components/ui/progress";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
@@ -92,8 +91,6 @@ export default function TestPage() {
 
   const currentQuestion = questions[currentQuestionIndex];
   const totalQuestions = questions.length;
-  const answeredCount = Object.keys(answers).length;
-  const progress = totalQuestions > 0 ? (answeredCount / totalQuestions) * 100 : 0;
 
   const handleAnswerChange = (answer: string) => {
     // Don't allow changing previous answers
@@ -140,8 +137,6 @@ export default function TestPage() {
     router.push(`/test/${testId}/results`);
   };
 
-  const canSubmit = answeredCount === totalQuestions;
-
   if (loading) {
     return (
       <div className="flex-1 bg-gray-50 flex items-center justify-center">
@@ -172,32 +167,15 @@ export default function TestPage() {
   return (
     <div className="flex-1 bg-gray-50">
       <div className="container mx-auto px-4 py-8 max-w-3xl">
-        {/* Back Button */}
-        <div className="mb-6">
+        {/* Header: back button + test number */}
+        <div className="flex items-center justify-between mb-6">
           <Link href="/dashboard">
-            <Button variant="ghost" className="mb-4">
+            <Button variant="ghost">
               <ArrowLeft className="h-4 w-4 mr-2" />
               {t("common.backToDashboard")}
             </Button>
           </Link>
-        </div>
-
-        {/* Header */}
-        <div className="mb-6">
-          <div className="flex items-center justify-between mb-4">
-            <h1 className="text-3xl font-bold">{t("testCard.test")} {testId}</h1>
-            <div className="text-sm text-gray-600">
-              {canSubmit ? t("testPage.readyToSubmit") : `${totalQuestions - answeredCount} ${t("testPage.questionsRemaining")}`}
-            </div>
-          </div>
-
-          {/* Progress Bar */}
-          <div className="space-y-2">
-            <Progress value={progress} className="h-2 [&>div]:bg-brand" />
-            <div className="flex justify-between text-xs text-gray-600">
-              <span>{t("testPage.progress")}: {Math.round(progress)}%</span>
-            </div>
-          </div>
+          <h1 className="text-xl md:text-2xl font-bold">{t("testCard.test")} {testId}</h1>
         </div>
 
         {/* Question Card */}
@@ -205,8 +183,6 @@ export default function TestPage() {
           <QuestionCard
             key={currentQuestion.questionId}
             question={currentQuestion}
-            questionNumber={currentQuestionIndex + 1}
-            totalQuestions={totalQuestions}
             selectedAnswer={answers[currentQuestionIndex]}
             onAnswerChange={handleAnswerChange}
           />

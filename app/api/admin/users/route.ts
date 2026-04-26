@@ -104,10 +104,10 @@ export async function GET(request: NextRequest) {
       return res;
     }
 
-    // ── Cache miss — three parallel Firestore queries ───────────────────────
+    // ── Cache miss - three parallel Firestore queries ───────────────────────
     //
     // Query A: lightweight scan of ALL users for stats
-    //   — only small fields: no training/test data
+    //   - only small fields: no training/test data
     //
     // Query B: full docs for the 100 most recently active users (table)
     //
@@ -117,7 +117,7 @@ export async function GET(request: NextRequest) {
 
     const [lightSnap, fullSnap, sharesDoc] = await Promise.all([
       db.collection('users')
-        .select('selectedState', 'lastUpdated', 'activeDates', 'subscription', 'createdAt')
+        .select('selectedState', 'lastUpdated', 'activeDates', 'subscription', 'createdAt', 'referredBy', 'referralQualifiedAt', 'referredAt', 'qualifiedReferralCount', 'referralCount')
         .get(),
       db.collection('users')
         .orderBy('lastUpdated', 'desc')
@@ -134,6 +134,11 @@ export async function GET(request: NextRequest) {
     const signupDates: string[] = [];
     // Per-user data for advanced charts
     const userRecords: { activeDates: string[]; lastUpdated: string | null; state: string | null; signupDate: string | null }[] = [];
+    // Referral aggregates
+    let referredUsers = 0;
+    let qualifiedReferredUsers = 0;
+    const referredAtDates: string[] = [];
+    const referrerCounts: Record<string, number> = {}; // ownerUid → qualified count
 
     const now = new Date();
     const last7Days = Array.from({ length: 7 }, (_, i) => {
@@ -175,6 +180,28 @@ export async function GET(request: NextRequest) {
 
       usersForDau.push({ activeDates, lastUpdated });
       userRecords.push({ activeDates, lastUpdated, state, signupDate });
+
+      // Referral aggregates - every user with a `referredBy` was invited;
+      // those with `referralQualifiedAt` actually started using TigerTest
+      // (i.e., picked a state).
+      const referredBy = data.referredBy as string | null;
+      if (referredBy) {
+        referredUsers++;
+        const referredAtRaw = data.referredAt as { toDate?: () => Date } | string | null;
+        const referredAtIso =
+          typeof referredAtRaw === 'string'
+            ? referredAtRaw
+            : referredAtRaw && typeof referredAtRaw.toDate === 'function'
+              ? referredAtRaw.toDate().toISOString()
+              : null;
+        const day = referredAtIso?.split('T')[0];
+        if (day) referredAtDates.push(day);
+
+        if (data.referralQualifiedAt) {
+          qualifiedReferredUsers++;
+          referrerCounts[referredBy] = (referrerCounts[referredBy] || 0) + 1;
+        }
+      }
     });
 
     // ── Build user list from top-100 full docs ─────────────────────────────
@@ -270,7 +297,7 @@ export async function GET(request: NextRequest) {
       return result;
     })();
 
-    // 3. By State — top 5 states daily active users
+    // 3. By State - top 5 states daily active users
     const top5States = Object.entries(stateCounts)
       .sort(([, a], [, b]) => b - a)
       .slice(0, 5)
@@ -309,6 +336,19 @@ export async function GET(request: NextRequest) {
 
     const sharesData = sharesDoc.exists ? sharesDoc.data() : null;
 
+    // Referral charts: daily count of new referred signups (last 30 days)
+    const dailyReferredSignups = last30Dates.map((dateStr) => ({
+      date: dateStr,
+      count: referredAtDates.filter((d) => d === dateStr).length,
+      displayDate: new Date(dateStr + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
+    }));
+
+    // Top referrers, sorted by qualified count desc
+    const topReferrers = Object.entries(referrerCounts)
+      .sort(([, a], [, b]) => b - a)
+      .slice(0, 10)
+      .map(([uid, count]) => ({ uid, qualifiedCount: count }));
+
     const payload = {
       users,
       dailyActiveUsers,
@@ -317,6 +357,8 @@ export async function GET(request: NextRequest) {
       dailyByState,
       dailyNewVsReturning,
       top5States,
+      dailyReferredSignups,
+      topReferrers,
       totalUsers,
       stats: {
         totalUsers,
@@ -328,6 +370,8 @@ export async function GET(request: NextRequest) {
         payingUsers,
         totalShareClicks: (sharesData?.total as number) || 0,
         shareClicksDaily: (sharesData?.daily as Record<string, number>) || {},
+        referredUsers,
+        qualifiedReferredUsers,
       },
     };
 

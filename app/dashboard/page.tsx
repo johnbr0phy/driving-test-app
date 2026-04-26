@@ -3,11 +3,12 @@
 import { useEffect, useState, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { PaywallModal } from "@/components/PaywallModal";
+import { ReferralModal } from "@/components/ReferralModal";
 import { Card, CardContent } from "@/components/ui/card";
 import { Zap, ChevronRight, CheckCircle, Check, Lock } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-import { useStore } from "@/store/useStore";
+import { REFERRALS_REQUIRED, useStore } from "@/store/useStore";
 import { useHydration } from "@/hooks/useHydration";
 import { useAuth } from "@/contexts/AuthContext";
 import { auth } from "@/lib/firebase";
@@ -37,6 +38,7 @@ function ProgressCard({
   onClick,
   isPremiumLocked,
   stepNumber,
+  rightSlot,
   children,
 }: {
   title: string;
@@ -47,6 +49,7 @@ function ProgressCard({
   onClick?: () => void;
   isPremiumLocked?: boolean;
   stepNumber?: number;
+  rightSlot?: React.ReactNode;
   children?: React.ReactNode;
 }) {
   const content = (
@@ -92,12 +95,12 @@ function ProgressCard({
           {children}
         </div>
 
-        {/* Stamp or chevron */}
-        {stamp ? (
+        {/* rightSlot wins over stamp/chevron when provided */}
+        {rightSlot ?? (stamp ? (
           <Stamp label={stamp.label} color={stamp.color} />
         ) : (
           <ChevronRight className={`h-5 w-5 flex-shrink-0 ${completed ? "text-green-400" : "text-gray-300"}`} />
-        )}
+        ))}
       </CardContent>
     </Card>
   );
@@ -123,6 +126,38 @@ function ProgressCard({
 
 function progressColor(): string {
   return "bg-red-400";
+}
+
+function ReferralDots({ filled, total }: { filled: number; total: number }) {
+  const safeFilled = Math.max(0, Math.min(total, filled));
+  return (
+    <div className="flex flex-col items-end gap-1 flex-shrink-0">
+      <div className="flex items-center gap-1">
+        {Array.from({ length: total }).map((_, i) => {
+          const done = i < safeFilled;
+          return (
+            <div
+              key={i}
+              className={`w-5 h-5 rounded-full flex items-center justify-center border ${
+                done
+                  ? "bg-green-500 border-green-500 text-white"
+                  : "bg-white border-gray-200 text-gray-300"
+              }`}
+            >
+              {done ? (
+                <Check className="w-3 h-3" strokeWidth={3} />
+              ) : (
+                <Lock className="w-2.5 h-2.5" />
+              )}
+            </div>
+          );
+        })}
+      </div>
+      <span className="text-[10px] font-semibold tabular-nums text-gray-500">
+        {safeFilled}/{total} friends
+      </span>
+    </div>
+  );
 }
 
 function ProgressBar({ value, max, hideLabel }: { value: number; max: number; hideLabel?: boolean }) {
@@ -152,6 +187,8 @@ function DashboardContent() {
   const getTestAttemptStats = useStore((state) => state.getTestAttemptStats);
   const getCurrentTest = useStore((state) => state.getCurrentTest);
   const hasPremiumAccess = useStore((state) => state.hasPremiumAccess);
+  const hasReferralUnlock = useStore((state) => state.hasReferralUnlock);
+  const qualifiedReferralCount = useStore((state) => state.qualifiedReferralCount);
   const setPremiumStatus = useStore((state) => state.setPremiumStatus);
   const training = useStore((state) => state.training);
   const getTrainingSetProgress = useStore((state) => state.getTrainingSetProgress);
@@ -181,6 +218,7 @@ function DashboardContent() {
   // Paywall state
   const [paywallOpen, setPaywallOpen] = useState(false);
   const [paywallFeature, setPaywallFeature] = useState<"training_set_4" | "practice_test_4">("training_set_4");
+  const [referralModalOpen, setReferralModalOpen] = useState(false);
   const [showPurchaseSuccess, setShowPurchaseSuccess] = useState(false);
   const schoolJoinedSlug = searchParams.get("school_joined");
   const [showSchoolJoined, setShowSchoolJoined] = useState(!!schoolJoinedSlug);
@@ -188,6 +226,7 @@ function DashboardContent() {
   const onboardingComplete = hydrated ? isOnboardingComplete() : true;
   const onboardingProgress = training.totalCorrectAllTime;
   const isPremium = hydrated ? hasPremiumAccess() : false;
+  const referralUnlocked = hydrated ? hasReferralUnlock() : false;
 
   // Get state name from code
   const stateName = states.find((s) => s.code === selectedState)?.name || selectedState;
@@ -265,6 +304,12 @@ function DashboardContent() {
     trackPaywallHit(cardId, cardLabel);
     setPaywallFeature(feature);
     setPaywallOpen(true);
+  };
+
+  // Handle referral-unlock click (training set 3)
+  const handleReferralClick = (cardId: string, cardLabel: string) => {
+    trackPaywallHit(cardId, cardLabel);
+    setReferralModalOpen(true);
   };
 
   // Handle upgrade (redirect to Stripe)
@@ -393,6 +438,15 @@ function DashboardContent() {
           onSignUp={() => router.push("/signup")}
         />
 
+        {/* Referral Modal - for training set 3 unlock */}
+        <ReferralModal
+          open={referralModalOpen}
+          onOpenChange={setReferralModalOpen}
+          isGuest={isGuest}
+          onSignUp={() => router.push("/signup")}
+          onUpgrade={handleUpgrade}
+        />
+
         {/* Purchase Success Message */}
         {showPurchaseSuccess && (
           <Card className="mb-4 bg-gradient-to-r from-green-50 to-emerald-50 border-green-200">
@@ -465,7 +519,7 @@ function DashboardContent() {
           </Card>
         )}
 
-        {/* Hero section — card with progress */}
+        {/* Hero section - card with progress */}
         <div className="rounded-xl bg-white border border-gray-100 p-4 mb-6">
           <div className="flex items-center gap-4">
             <Image
@@ -496,7 +550,12 @@ function DashboardContent() {
           {[1, 2, 3, 4].map((id) => {
             const trainingProgress = hydrated ? getTrainingSetProgress(id) : { correct: 0, total: 50, complete: false };
             const trainingComplete = trainingProgress.complete;
-            const trainingLocked = id >= 3 && !isPremium;
+            // Training set 3 unlocks via referrals OR premium; set 4 stays premium-only.
+            const trainingLocked =
+              id === 3
+                ? !isPremium && !referralUnlocked
+                : id >= 4 && !isPremium;
+            const trainingLockKind: "premium" | "referral" = id === 3 ? "referral" : "premium";
             const isStartHere = id === 1 && !trainingComplete && trainingProgress.correct === 0;
 
             const testCompleted = testComplete(id);
@@ -551,7 +610,18 @@ function DashboardContent() {
                   }
                   isPremiumLocked={trainingLocked}
                   href={trainingLocked ? undefined : `/training?set=${id}`}
-                  onClick={trainingLocked ? () => handlePremiumClick("training_set_4", `set_${id}`, `Training Set ${id}`) : undefined}
+                  onClick={
+                    trainingLocked
+                      ? trainingLockKind === "referral"
+                        ? () => handleReferralClick(`set_${id}`, `Training Set ${id}`)
+                        : () => handlePremiumClick("training_set_4", `set_${id}`, `Training Set ${id}`)
+                      : undefined
+                  }
+                  rightSlot={
+                    trainingLocked && trainingLockKind === "referral"
+                      ? <ReferralDots filled={qualifiedReferralCount ?? 0} total={REFERRALS_REQUIRED} />
+                      : undefined
+                  }
                 >
                   {!trainingComplete && !trainingLocked && trainingProgress.correct > 0 && (
                     <ProgressBar value={trainingProgress.correct} max={trainingProgress.total} />
@@ -589,7 +659,7 @@ function DashboardContent() {
           })}
         </div>
 
-        {/* Bottom banner — urgency upsell for free users, thank-you for premium */}
+        {/* Bottom banner - urgency upsell for free users, thank-you for premium */}
         {!isGuest && !isPremium && (
           <div className="rounded-xl bg-white border border-gray-100 px-5 py-4">
             <div className="flex items-center gap-3">

@@ -5,8 +5,8 @@ import { useParams, useRouter } from "next/navigation";
 import { QuestionCard } from "@/components/QuestionCard";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
+import { TestPageHeader } from "@/components/TestPageHeader";
 import { generateTest, shuffleQuestionOptions } from "@/lib/testGenerator";
 import { Question } from "@/types";
 import { useStore } from "@/store/useStore";
@@ -166,17 +166,15 @@ export default function TestPage() {
 
   return (
     <div className="flex-1 bg-gray-50">
+      <TestPageHeader
+        backHref="/dashboard"
+        right={
+          <span className="text-base md:text-lg font-bold">
+            🎯 {t(`practiceTests.${testId}`)}
+          </span>
+        }
+      />
       <div className="container mx-auto px-4 py-8 max-w-lg md:max-w-2xl lg:max-w-4xl">
-        {/* Header: back button + test number */}
-        <div className="flex items-center justify-between mb-6">
-          <Link href="/dashboard">
-            <Button variant="ghost">
-              <ArrowLeft className="h-4 w-4 mr-2" />
-              {t("common.back")}
-            </Button>
-          </Link>
-          <h1 className="text-xl md:text-2xl font-bold">🎯 {t(`practiceTests.${testId}`)}</h1>
-        </div>
 
         {/* Question Card */}
         <div className="mb-6">

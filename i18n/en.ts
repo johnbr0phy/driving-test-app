@@ -246,6 +246,35 @@ export const en = {
     4: "Test D",
   } as Record<number, string>,
 
+  // Rotating CTAs shown in the practice-test header (opens paywall on click)
+  testCtas: [
+    "Need to pass tomorrow?",
+    "Test this week?",
+    "Down to the wire?",
+    "Last-minute cram?",
+    "Cramming for tomorrow?",
+    "Test in 24 hours?",
+    "Need faster prep?",
+    "Want to cram smarter?",
+    "Skip the guesswork",
+    "Prep in half the time",
+    "Fast-track your prep",
+    "Pass on the first try",
+    "Boost your pass odds",
+    "Don't leave it to chance",
+    "Want to pass for sure?",
+    "Tired of failing?",
+    "Stuck on the same questions?",
+    "Sick of guessing?",
+    "Unlock the full bank",
+    "Want every question?",
+    "Go Premium →",
+    "Get serious about passing",
+  ] as string[],
+
+  // Progress overview heading on test pages
+  progressOverviewWithTest: "{test}: Progress Overview",
+
   // Test card
   testCard: {
     test: "Test",

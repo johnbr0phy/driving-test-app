@@ -246,6 +246,35 @@ export const es: TranslationKeys = {
     4: "Examen D",
   } as Record<number, string>,
 
+  // Rotating CTAs shown in the practice-test header (opens paywall on click)
+  testCtas: [
+    "¿Necesitas aprobar mañana?",
+    "¿Examen esta semana?",
+    "¿Se te acaba el tiempo?",
+    "¿Estudio de última hora?",
+    "¿Estudiando para mañana?",
+    "¿Examen en 24 horas?",
+    "¿Necesitas estudiar más rápido?",
+    "¿Quieres estudiar mejor?",
+    "Deja de adivinar",
+    "Estudia en la mitad del tiempo",
+    "Acelera tu preparación",
+    "Aprueba en el primer intento",
+    "Aumenta tus probabilidades de aprobar",
+    "No lo dejes al azar",
+    "¿Quieres aprobar seguro?",
+    "¿Cansado de reprobar?",
+    "¿Atascado en las mismas preguntas?",
+    "¿Harto de adivinar?",
+    "Desbloquea todas las preguntas",
+    "¿Quieres todas las preguntas?",
+    "Hazte Premium →",
+    "Toma el examen en serio",
+  ] as string[],
+
+  // Progress overview heading on test pages
+  progressOverviewWithTest: "{test}: Resumen de progreso",
+
   // Test card
   testCard: {
     test: "Examen",

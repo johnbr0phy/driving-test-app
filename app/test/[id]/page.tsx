@@ -12,6 +12,11 @@ import { Question } from "@/types";
 import { useStore } from "@/store/useStore";
 import { useHydration } from "@/hooks/useHydration";
 import { useTranslation } from "@/contexts/LanguageContext";
+import { en, es } from "@/i18n";
+import { PaywallModal } from "@/components/PaywallModal";
+import { useAuth } from "@/contexts/AuthContext";
+import { auth } from "@/lib/firebase";
+import { trackBeginCheckout } from "@/lib/analytics";
 
 export default function TestPage() {
   const params = useParams();
@@ -20,6 +25,52 @@ export default function TestPage() {
   const hydrated = useHydration();
   const initialized = useRef(false);
   const { t, language } = useTranslation();
+  const [paywallOpen, setPaywallOpen] = useState(false);
+
+  // Pick a rotating CTA once per page load. Both en/es lists have the same
+  // length and align by index, so we pick from the active language's array.
+  const [ctaIndex] = useState(() => Math.floor(Math.random() * en.testCtas.length));
+  const ctaText = (language === "es" ? es.testCtas : en.testCtas)[ctaIndex];
+
+  const isGuest = useStore((state) => state.isGuest);
+  const { user } = useAuth();
+
+  const handleUpgrade = async () => {
+    if (!user?.email || !user?.uid) {
+      router.push("/signup");
+      return;
+    }
+    try {
+      const idToken = await auth.currentUser?.getIdToken();
+      if (!idToken) {
+        alert("Authentication error. Please sign in again.");
+        return;
+      }
+      const response = await fetch("/api/stripe/checkout", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${idToken}`,
+        },
+        body: JSON.stringify({
+          email: user.email,
+          returnUrl: window.location.origin,
+          location: "practice_test_4",
+        }),
+      });
+      const data = await response.json();
+      if (data.error) {
+        alert(`Error: ${data.error}`);
+        return;
+      }
+      if (data.checkoutUrl) {
+        trackBeginCheckout("practice_test_4");
+        window.location.href = data.checkoutUrl;
+      }
+    } catch {
+      alert("Failed to start checkout. Please check your connection and try again.");
+    }
+  };
 
   const selectedState = useStore((state) => state.selectedState);
   const getCurrentTest = useStore((state) => state.getCurrentTest);
@@ -169,9 +220,13 @@ export default function TestPage() {
       <TestPageHeader
         backHref="/dashboard"
         right={
-          <span className="text-base md:text-lg font-bold">
-            🎯 {t(`practiceTests.${testId}`)}
-          </span>
+          <button
+            type="button"
+            onClick={() => setPaywallOpen(true)}
+            className="text-sm font-medium text-brand hover:text-brand-dark transition-colors"
+          >
+            {ctaText}
+          </button>
         }
       />
       <div className="container mx-auto px-4 py-8 max-w-lg md:max-w-2xl lg:max-w-4xl">
@@ -188,7 +243,9 @@ export default function TestPage() {
 
         {/* Progress Overview - View Only */}
         <div className="mt-8">
-          <div className="text-sm font-semibold mb-3">{t("testPage.progressOverview")}</div>
+          <div className="text-sm font-semibold mb-3">
+            🎯 {t("progressOverviewWithTest").replace("{test}", t(`practiceTests.${testId}`))}
+          </div>
           <div className="grid grid-cols-10 gap-2">
             {questions.map((_, index) => (
               <div
@@ -212,6 +269,15 @@ export default function TestPage() {
           </div>
         </div>
       </div>
+
+      <PaywallModal
+        open={paywallOpen}
+        onOpenChange={setPaywallOpen}
+        feature="practice_test_4"
+        onUpgrade={handleUpgrade}
+        isGuest={isGuest}
+        onSignUp={() => router.push("/signup")}
+      />
     </div>
   );
 }

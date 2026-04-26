@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { states } from "@/data/states";
+import type { Language } from "@/i18n";
 
 const popularStateSlugs = [
   "california", "texas", "florida", "new-york", "pennsylvania",
@@ -16,10 +17,20 @@ const popularStates = popularStateSlugs
   .filter(Boolean);
 
 export function Footer() {
-  const { t, language } = useTranslation();
+  const { t, language, setLanguage } = useTranslation();
   const pathname = usePathname();
   const isEs = language === "es";
   const isCDL = pathname?.startsWith("/cdl") || pathname === "/cdl-practice-test";
+  const isHomepage = pathname === "/";
+
+  // SEO landing pages have dedicated /es/ URLs, so they manage language by routing.
+  const isSeoPage =
+    pathname?.endsWith("-dmv-practice-test") ||
+    pathname?.endsWith("-examen-practica-dmv") ||
+    pathname === "/practice-tests-by-state" ||
+    pathname === "/es/examenes-practica-por-estado";
+
+  const showLanguageToggle = !isHomepage && !isCDL && !isSeoPage;
 
   const dataTheme = isCDL ? "cdl" : undefined;
 
@@ -73,7 +84,25 @@ export function Footer() {
             </a>
             .
           </p>
-          <div className="flex justify-center md:justify-end gap-x-4 text-gray-500">
+          <div className="flex items-center justify-center md:justify-end gap-x-4 text-gray-500">
+            {showLanguageToggle && (
+              <div className="flex items-center bg-gray-100 rounded-full p-0.5">
+                {([["en", "\u{1F1FA}\u{1F1F8}"], ["es", "\u{1F1EA}\u{1F1F8}"]] as [Language, string][]).map(([lang, flag]) => (
+                  <button
+                    key={lang}
+                    onClick={() => setLanguage(lang)}
+                    className={`px-1.5 py-1 text-sm rounded-full transition-colors ${
+                      language === lang
+                        ? "bg-white shadow-sm"
+                        : "opacity-50 hover:opacity-75"
+                    }`}
+                    aria-label={`Switch to ${lang === "en" ? "English" : "Spanish"}`}
+                  >
+                    {flag}
+                  </button>
+                ))}
+              </div>
+            )}
             <Link href="/schools" className="hover:text-brand hover:underline">
               Driving Schools
             </Link>

@@ -223,7 +223,7 @@ export default function TestPage() {
           <button
             type="button"
             onClick={() => setPaywallOpen(true)}
-            className="text-sm md:text-base font-medium text-brand hover:text-brand-dark transition-colors"
+            className="text-sm font-medium text-brand hover:text-brand-dark transition-colors"
           >
             {ctaText}
           </button>

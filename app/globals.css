@@ -88,10 +88,14 @@
   * {
     @apply border-border;
   }
-  html {
-    /* Reserve scrollbar space so showing/hiding it (e.g. when an answer
-       expands the explanation) doesn't cause horizontal layout shift. */
-    scrollbar-gutter: stable;
+  /* Reserve scrollbar space on desktop so showing/hiding it (e.g. when an
+     answer expands the explanation) doesn't cause horizontal layout shift.
+     Excluded on touch devices where it can cause overscroll glitches at the
+     end of the page. */
+  @media (hover: hover) and (pointer: fine) {
+    html {
+      scrollbar-gutter: stable;
+    }
   }
   body {
     @apply bg-background text-foreground;

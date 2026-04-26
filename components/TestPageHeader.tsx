@@ -16,7 +16,7 @@ export function TestPageHeader({ backHref, right }: TestPageHeaderProps) {
     <header className="border-b bg-white">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <Link href={backHref}>
-          <Button variant="ghost" size="sm">
+          <Button variant="ghost">
             <ArrowLeft className="h-4 w-4 mr-2" />
             {t("common.back")}
           </Button>

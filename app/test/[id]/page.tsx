@@ -175,7 +175,7 @@ export default function TestPage() {
               {t("common.backToDashboard")}
             </Button>
           </Link>
-          <h1 className="text-xl md:text-2xl font-bold">{t("testCard.test")} {testId}</h1>
+          <h1 className="text-xl md:text-2xl font-bold">🎯 {t(`practiceTests.${testId}`)}</h1>
         </div>
 
         {/* Question Card */}

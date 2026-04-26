@@ -171,7 +171,7 @@ function CDLTestPageContent() {
           <Link href="/cdl/dashboard">
             <Button variant="ghost">
               <ArrowLeft className="h-4 w-4 mr-2" />
-              Back to CDL Dashboard
+              {t("common.back")}
             </Button>
           </Link>
           <h1 className="text-xl md:text-2xl font-bold">CDL Test {testId}</h1>

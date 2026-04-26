@@ -15,6 +15,7 @@ import { Question } from "@/types";
 import { useHydration } from "@/hooks/useHydration";
 import { useSound } from "@/hooks/useSound";
 import { Fireworks } from "@/components/Fireworks";
+import { TestPageHeader } from "@/components/TestPageHeader";
 import Link from "next/link";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { states } from "@/data/states";
@@ -368,21 +369,20 @@ function TrainingPageContent() {
         </div>
       )}
 
-      <div className="container mx-auto px-4 py-4 max-w-lg md:max-w-2xl lg:max-w-4xl">
-        {/* Header */}
-        <div className="mb-4 flex items-center justify-between">
-          <Link href="/dashboard">
-            <Button variant="ghost" size="sm">
-              <ArrowLeft className="h-4 w-4 mr-2" />
-              {t("common.back")}
-            </Button>
-          </Link>
-          {!isGuest && (
-            <Link href="/stats?tab=community" className="text-sm font-medium text-brand hover:text-brand-dark transition-colors">
+      <TestPageHeader
+        backHref="/dashboard"
+        right={
+          !isGuest ? (
+            <Link
+              href="/stats?tab=community"
+              className="text-sm font-medium text-brand hover:text-brand-dark transition-colors"
+            >
               Testing soon?
             </Link>
-          )}
-        </div>
+          ) : undefined
+        }
+      />
+      <div className="container mx-auto px-4 py-4 max-w-lg md:max-w-2xl lg:max-w-4xl">
 
         {/* Question Card */}
         {currentQuestion ? (

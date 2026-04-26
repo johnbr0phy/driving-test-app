@@ -117,16 +117,22 @@ function SignupPageContent() {
       setStoreEmailConsent(true);
 
       await loginWithGoogle();
+
+      // Seed userId in the store so setSelectedState's saveToFirestore
+      // doesn't bail before AuthContext's listener has populated it.
+      const uid = auth.currentUser?.uid ?? "";
+      const userEmail = auth.currentUser?.email ?? "";
+      if (uid) useStore.getState().setUserId(uid);
+
       // Only set state if not a guest (guests already have state set)
       if (!guestHasState && stateToUse) {
         setStoreState(stateToUse);
       }
 
-      // Wait for user data to load before redirecting
-      await new Promise(resolve => setTimeout(resolve, 800));
+      // Wait for the Firestore write to settle so a fresh tab opened from
+      // the welcome email reads back the correct selectedState.
+      await useStore.getState().saveToFirestore();
 
-      const uid = auth.currentUser?.uid ?? "";
-      const userEmail = auth.currentUser?.email ?? "";
       await handlePostSignup(uid, userEmail);
     } catch (err: any) {
       setError(err.message || "Failed to sign in with Google");
@@ -155,15 +161,24 @@ function SignupPageContent() {
 
       // Create user account
       await signup(email, password);
+
+      // Seed userId in the store before saving state. Without this,
+      // saveToFirestore (called by setSelectedState) bails because the
+      // AuthContext's onAuthStateChanged listener hasn't populated userId
+      // yet, leaving Firestore without a selectedState. The welcome email
+      // link would then bounce the user back to onboarding.
+      const uid = auth.currentUser?.uid ?? "";
+      if (uid) useStore.getState().setUserId(uid);
+
       // Only set state if not a guest (guests already have state set)
       if (!guestHasState && selectedState) {
         setStoreState(selectedState);
       }
 
-      // Small delay to ensure state is saved
-      await new Promise(resolve => setTimeout(resolve, 100));
+      // Wait for the Firestore write to settle so a fresh tab opened from
+      // the welcome email reads back the correct selectedState.
+      await useStore.getState().saveToFirestore();
 
-      const uid = auth.currentUser?.uid ?? "";
       await handlePostSignup(uid, email);
     } catch (err: any) {
       setError(err.message || "Failed to create account");

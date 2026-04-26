@@ -59,10 +59,12 @@ export function QuestionCard({
           </div>
           <Badge variant="outline">{t(`categories.${question.category}`)}</Badge>
         </div>
-        <CardTitle className="text-xl">{question.question}</CardTitle>
+        <div className="flex items-start gap-4">
+          <CardTitle className="text-xl flex-1">{question.question}</CardTitle>
+          <QuestionImage questionId={question.questionId} />
+        </div>
       </CardHeader>
       <CardContent>
-        <QuestionImage questionId={question.questionId} state={question.state} />
         <div className="space-y-3">
           {options.map((option) => {
             const isThisCorrect = option.value === question.correctAnswer;

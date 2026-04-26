@@ -171,7 +171,7 @@ export default function TestPage() {
 
   return (
     <div className="flex-1 bg-gray-50">
-      <div className="container mx-auto px-4 py-8 max-w-6xl">
+      <div className="container mx-auto px-4 py-8 max-w-3xl">
         {/* Back Button */}
         <div className="mb-6">
           <Link href="/dashboard">

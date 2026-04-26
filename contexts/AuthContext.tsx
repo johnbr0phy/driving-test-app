@@ -78,7 +78,7 @@ async function claimPendingReferral(user: User) {
       },
       body: JSON.stringify({ code }),
     });
-    // Clear regardless of outcome — we don't want the code to live forever and
+    // Clear regardless of outcome - we don't want the code to live forever and
     // self-referrals / invalid codes shouldn't be re-attempted.
     if (res.ok || res.status === 400 || res.status === 404) {
       localStorage.removeItem(PENDING_REFERRAL_KEY);
@@ -162,7 +162,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
             setPhotoURL(user.photoURL);
           }
 
-          // Brand-new account from guest — try to claim a pending referral
+          // Brand-new account from guest - try to claim a pending referral
           await claimPendingReferral(user);
         } else {
           // Load user data from Firestore (normal login)

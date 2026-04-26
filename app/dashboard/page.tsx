@@ -438,7 +438,7 @@ function DashboardContent() {
           onSignUp={() => router.push("/signup")}
         />
 
-        {/* Referral Modal — for training set 3 unlock */}
+        {/* Referral Modal - for training set 3 unlock */}
         <ReferralModal
           open={referralModalOpen}
           onOpenChange={setReferralModalOpen}
@@ -519,7 +519,7 @@ function DashboardContent() {
           </Card>
         )}
 
-        {/* Hero section — card with progress */}
+        {/* Hero section - card with progress */}
         <div className="rounded-xl bg-white border border-gray-100 p-4 mb-6">
           <div className="flex items-center gap-4">
             <Image
@@ -659,7 +659,7 @@ function DashboardContent() {
           })}
         </div>
 
-        {/* Bottom banner — urgency upsell for free users, thank-you for premium */}
+        {/* Bottom banner - urgency upsell for free users, thank-you for premium */}
         {!isGuest && !isPremium && (
           <div className="rounded-xl bg-white border border-gray-100 px-5 py-4">
             <div className="flex items-center gap-3">

@@ -54,7 +54,7 @@ export default function OnboardingSelectStatePage() {
           })
         )
         .catch(() => {
-          // Non-fatal — referrer can also be qualified later via a backfill.
+          // Non-fatal - referrer can also be qualified later via a backfill.
         });
     }
 

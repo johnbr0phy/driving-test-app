@@ -4,13 +4,13 @@ import { getAdminAuth, getAdminDb } from '@/lib/firebase-admin';
 import { sendReferralProgressEmail } from '@/lib/referral-emails';
 
 // Called when a referred user crosses the qualification bar (currently:
-// selecting their state). Idempotent — only bumps the referrer's
+// selecting their state). Idempotent - only bumps the referrer's
 // `qualifiedReferralCount` the first time, by setting `referralQualifiedAt`
 // on the referee inside a transaction.
 //
 // On the first qualifying referral, fires a notification email to the inviter
 // so they can watch their progress fill up. Capped at the unlock threshold
-// inside `sendReferralProgressEmail` — additional referrals still credit the
+// inside `sendReferralProgressEmail` - additional referrals still credit the
 // counter but no further emails go out.
 export async function POST(request: NextRequest) {
   try {
@@ -53,7 +53,7 @@ export async function POST(request: NextRequest) {
       tx.set(referrerRef, { qualifiedReferralCount: FieldValue.increment(1) }, { merge: true });
     });
 
-    // Fire the email after the transaction commits. Don't await — the qualify
+    // Fire the email after the transaction commits. Don't await - the qualify
     // response shouldn't be blocked on Resend latency.
     if (qualified && referrerUid) {
       sendReferralProgressEmail({

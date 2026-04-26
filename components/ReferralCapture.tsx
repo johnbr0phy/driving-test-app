@@ -22,7 +22,7 @@ export function ReferralCapture() {
       if (!code) return;
       localStorage.setItem(PENDING_REFERRAL_KEY, code);
     } catch {
-      // localStorage can throw in private mode — non-fatal
+      // localStorage can throw in private mode - non-fatal
     }
   }, []);
 

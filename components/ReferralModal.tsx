@@ -24,7 +24,7 @@ interface ReferralModalProps {
 }
 
 // Build the share link from the current origin so it works on prod, Vercel
-// previews, and localhost equally — never hardcoded to production.
+// previews, and localhost equally - never hardcoded to production.
 function buildShareLink(code: string): string {
   if (typeof window !== "undefined" && window.location?.origin) {
     return `${window.location.origin}/?ref=${code}`;

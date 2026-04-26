@@ -512,10 +512,10 @@ export const es: TranslationKeys = {
     tapToCollapse: "Toca para cerrar",
   },
 
-  // Referral modal — invite friends to unlock Training Set 3
+  // Referral modal - invite friends to unlock Training Set 3
   referral: {
     title: "Desbloquea con amigos",
-    subtitle: "Invita a 3 amigos a TigerTest y Seguridad y Emergencias es tuyo — gratis.",
+    subtitle: "Invita a 3 amigos a TigerTest y Seguridad y Emergencias es tuyo, gratis.",
     progressLabel: "AMIGOS QUE SE UNIERON",
     unlocked: "¡Listo! Seguridad y Emergencias desbloqueado.",
     oneFriendLeft: "Un amigo más y lo tienes.",
@@ -527,7 +527,7 @@ export const es: TranslationKeys = {
     yourLinkLabel: "Tu enlace",
     qualifyNote: "Cuenta cuando un amigo se registra y elige su estado.",
     payInstead: "O desbloquea con Premium →",
-    shareText: "Estoy usando TigerTest para estudiar para mi examen de manejo. Está muy bueno — pruébalo:",
+    shareText: "Estoy usando TigerTest para estudiar para mi examen de manejo. Está muy bueno, pruébalo:",
     signupPrompt: "Crea una cuenta gratis para obtener tu enlace de invitación.",
     maybeLater: "Quizás luego",
   },

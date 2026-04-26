@@ -104,10 +104,10 @@ export async function GET(request: NextRequest) {
       return res;
     }
 
-    // ── Cache miss — three parallel Firestore queries ───────────────────────
+    // ── Cache miss - three parallel Firestore queries ───────────────────────
     //
     // Query A: lightweight scan of ALL users for stats
-    //   — only small fields: no training/test data
+    //   - only small fields: no training/test data
     //
     // Query B: full docs for the 100 most recently active users (table)
     //
@@ -181,7 +181,7 @@ export async function GET(request: NextRequest) {
       usersForDau.push({ activeDates, lastUpdated });
       userRecords.push({ activeDates, lastUpdated, state, signupDate });
 
-      // Referral aggregates — every user with a `referredBy` was invited;
+      // Referral aggregates - every user with a `referredBy` was invited;
       // those with `referralQualifiedAt` actually started using TigerTest
       // (i.e., picked a state).
       const referredBy = data.referredBy as string | null;
@@ -297,7 +297,7 @@ export async function GET(request: NextRequest) {
       return result;
     })();
 
-    // 3. By State — top 5 states daily active users
+    // 3. By State - top 5 states daily active users
     const top5States = Object.entries(stateCounts)
       .sort(([, a], [, b]) => b - a)
       .slice(0, 5)

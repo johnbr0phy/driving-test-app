@@ -42,7 +42,7 @@ export async function POST(request: NextRequest) {
     const refereeSnap = await refereeRef.get();
     const existingReferredBy = refereeSnap.exists ? refereeSnap.data()?.referredBy : null;
     if (existingReferredBy) {
-      // Already credited — return current state without double-counting
+      // Already credited - return current state without double-counting
       return NextResponse.json({ ok: true, alreadyClaimed: true, referredBy: existingReferredBy });
     }
 

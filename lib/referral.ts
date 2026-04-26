@@ -1,4 +1,4 @@
-// Referral code helpers — small, dependency-free.
+// Referral code helpers - small, dependency-free.
 // Codes are 6 chars, alphanumeric without ambiguous characters (no 0/O, 1/I/L).
 
 const ALPHABET = 'ABCDEFGHJKMNPQRSTUVWXYZ23456789';

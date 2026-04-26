@@ -392,7 +392,7 @@ export default function AdminPage() {
           <CardContent>
             <div className="h-64">
               <ResponsiveContainer width="100%" height="100%">
-                {/* Active Users / Cumulative — simple area chart */}
+                {/* Active Users / Cumulative - simple area chart */}
                 {(graphMetric === 'active' || graphMetric === 'cumulative') ? (
                   <AreaChart
                     data={graphMetric === 'active' ? dailyActiveUsers : dailyCumulativeUsers}
@@ -415,7 +415,7 @@ export default function AdminPage() {
                     />
                   </AreaChart>
 
-                /* Retention — bar chart with % */
+                /* Retention - bar chart with % */
                 ) : graphMetric === 'retention' ? (
                   <BarChart
                     data={weeklyRetention}
@@ -431,7 +431,7 @@ export default function AdminPage() {
                     <Bar dataKey="count" fill="#3b82f6" radius={[4, 4, 0, 0]} />
                   </BarChart>
 
-                /* By State — multi-line chart */
+                /* By State - multi-line chart */
                 ) : graphMetric === 'byState' ? (
                   <LineChart
                     data={dailyByState}
@@ -460,7 +460,7 @@ export default function AdminPage() {
                     })}
                   </LineChart>
 
-                /* Referred signups — bar chart */
+                /* Referred signups - bar chart */
                 ) : graphMetric === 'referrals' ? (
                   <BarChart
                     data={dailyReferredSignups}
@@ -476,7 +476,7 @@ export default function AdminPage() {
                     <Bar dataKey="count" fill="#f59e0b" radius={[4, 4, 0, 0]} />
                   </BarChart>
 
-                /* New vs Returning — stacked area chart */
+                /* New vs Returning - stacked area chart */
                 ) : (
                   <AreaChart
                     data={dailyNewVsReturning}

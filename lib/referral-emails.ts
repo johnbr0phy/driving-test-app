@@ -1,4 +1,4 @@
-// Inviter notification email — sent each time a referred friend qualifies
+// Inviter notification email - sent each time a referred friend qualifies
 // (i.e., picks a state). Only fires for the first 3 qualified signups; the
 // referral code itself keeps working past that, but no further emails go out.
 
@@ -15,6 +15,18 @@ function firstName(displayName: string | null | undefined): string | null {
   const trimmed = displayName.trim();
   if (!trimmed) return null;
   return trimmed.split(/\s+/)[0];
+}
+
+// Ordinal suffix for the no-name fallback ("Your 1st friend", "Your 2nd friend"...)
+function ordinal(n: number): string {
+  const v = n % 100;
+  if (v >= 11 && v <= 13) return `${n}th`;
+  switch (n % 10) {
+    case 1: return `${n}st`;
+    case 2: return `${n}nd`;
+    case 3: return `${n}rd`;
+    default: return `${n}th`;
+  }
 }
 
 function dotsHtml(filled: number, total: number): string {
@@ -40,18 +52,20 @@ function buildEmail(opts: {
   const { inviterFirstName, refereeFirstName, newCount, shareLink, unsubscribeToken } = opts;
   const remaining = Math.max(0, REFERRALS_REQUIRED - newCount);
   const isUnlock = newCount >= REFERRALS_REQUIRED;
-  const referee = refereeFirstName || "Someone";
+  // When we don't have a display name (true for most email/password signups),
+  // fall back to "Your Nth friend" so the email still feels concrete.
+  const referee = refereeFirstName || `Your ${ordinal(newCount)} friend`;
   const greeting = inviterFirstName ? `Hey ${inviterFirstName},` : "Hey there,";
 
   const subject = isUnlock
     ? "Unlocked! Safety & Emergencies is yours"
     : remaining === 1
-      ? `${referee} joined — one more friend to unlock Safety & Emergencies`
+      ? `${referee} joined, one more to unlock Safety & Emergencies`
       : `${referee} just joined TigerTest with your link`;
 
   const lead = isUnlock
-    ? `${referee} just joined TigerTest using your invite link — and that's 3/3. <strong style="font-weight:600;">Safety &amp; Emergencies is now unlocked on your dashboard.</strong>`
-    : `${referee} just joined TigerTest using your invite link. That's <strong style="font-weight:600;">${newCount}/${REFERRALS_REQUIRED}</strong> — ${remaining === 1 ? "one more friend" : `${remaining} more friends`} and Safety &amp; Emergencies unlocks for you.`;
+    ? `${referee} just joined TigerTest using your invite link, and that's 3/3. <strong style="font-weight:600;">Safety &amp; Emergencies is now unlocked on your dashboard.</strong>`
+    : `${referee} just joined TigerTest using your invite link. That's <strong style="font-weight:600;">${newCount}/${REFERRALS_REQUIRED}</strong>. ${remaining === 1 ? "One more friend" : `${remaining} more friends`} and Safety &amp; Emergencies unlocks for you.`;
 
   const ctaLabel = isUnlock ? "Open Safety & Emergencies →" : "See your progress →";
   const ctaUrl = `${SITE_URL}/dashboard?utm_source=tigertest&utm_medium=email&utm_campaign=referral_progress&n=${newCount}`;
@@ -132,7 +146,7 @@ export async function sendReferralProgressEmail(opts: {
   newCount: number;
   referrerReferralCode: string | null;
 }): Promise<{ sent: boolean; reason?: string }> {
-  // Cap at 3 — additional referrals still credit the counter but no more emails
+  // Cap at 3 - additional referrals still credit the counter but no more emails
   if (opts.newCount > REFERRALS_REQUIRED) {
     return { sent: false, reason: "over_cap" };
   }

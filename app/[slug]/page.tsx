@@ -138,6 +138,18 @@ export default async function StateDMVPracticeTestPage({
       question: `What happens if I fail the ${state.name} permit test?`,
       answer: landingInfo.retakeInfo,
     },
+    {
+      question: `What topics does the ${state.name} DMV permit test cover?`,
+      answer: `The ${state.name} ${state.dmvName} written knowledge test covers traffic laws, road signs and signals, right-of-way rules, signaling and turning, parking, safe driving practices, alcohol and drug regulations, and ${state.name}-specific rules. Every question is drawn directly from the ${landingInfo.handbookName}, which is the only official study source.`,
+    },
+    {
+      question: `How long does the ${state.name} DMV permit test take?`,
+      answer: `Most applicants finish the ${state.name} ${state.dmvName} written knowledge test in 15 to 30 minutes. Most ${state.name} DMV offices do not enforce a strict time limit, so you can read each of the ${state.writtenTestQuestions} questions carefully before answering.`,
+    },
+    {
+      question: `Are TigerTest practice questions the same as the real ${state.name} DMV test?`,
+      answer: `TigerTest's 200 ${state.name} practice questions are written from the same ${landingInfo.handbookName} that the ${state.dmvName} uses to write the official test. The exact wording differs because the real test bank is not public, but every topic, question format, and difficulty level matches. Studying TigerTest is the closest legal preparation you can do for the ${state.name} permit test.`,
+    },
   ];
 
   // JSON-LD: FAQ schema

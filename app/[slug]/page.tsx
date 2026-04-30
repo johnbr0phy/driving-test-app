@@ -18,6 +18,10 @@ import { stateLandingData, getStateLandingInfo } from "@/data/stateLandingData";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
+// Original publish date for state DMV practice test pages. Bump only on a
+// major content refactor — schema requires a real, stable publishedAt.
+const STATE_PAGE_PUBLISHED_AT = "2026-03-13";
+
 interface PageProps {
   params: Promise<{ slug: string }>;
 }
@@ -150,20 +154,93 @@ export default async function StateDMVPracticeTestPage({
     })),
   };
 
-  // JSON-LD: Course/WebApplication schema with AggregateRating
+  // Build-time timestamp; baked into the static page on each deploy.
+  const lastModifiedIso = new Date().toISOString();
+
+  // JSON-LD: WebApplication / LearningResource schema with publish + modified
+  // dates so AI engines treat the page as fresh and citable.
   const courseJsonLd = {
     "@context": "https://schema.org",
-    "@type": "WebApplication",
+    "@type": ["WebApplication", "LearningResource"],
     name: `${state.name} DMV Practice Test - TigerTest`,
     description: `Free ${state.name} DMV practice test with 200 questions based on the official ${state.dmvName} driver's manual.`,
     url: `${siteUrl}/${state.slug}-dmv-practice-test`,
+    inLanguage: "en-US",
     applicationCategory: "EducationalApplication",
     operatingSystem: "Any",
+    educationalLevel: "Beginner",
+    learningResourceType: "Practice test",
+    teaches: `${state.name} DMV written knowledge test material`,
+    datePublished: STATE_PAGE_PUBLISHED_AT,
+    dateModified: lastModifiedIso,
+    author: {
+      "@type": "Organization",
+      name: "TigerTest",
+      url: siteUrl,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "TigerTest",
+      url: siteUrl,
+      logo: `${siteUrl}/tiger.png`,
+    },
     offers: {
       "@type": "Offer",
       price: "0",
       priceCurrency: "USD",
     },
+  };
+
+  // JSON-LD: HowTo schema — targets "how to pass the [state] DMV test" queries.
+  const howToJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: `How to Pass the ${state.name} DMV Permit Test`,
+    description: `Step-by-step guide to passing the ${state.name} ${state.dmvName} written knowledge test on your first try.`,
+    totalTime: "PT2H",
+    estimatedCost: {
+      "@type": "MonetaryAmount",
+      currency: "USD",
+      value: "0",
+    },
+    supply: [
+      { "@type": "HowToSupply", name: `${landingInfo.handbookName}` },
+      { "@type": "HowToSupply", name: "TigerTest practice questions" },
+    ],
+    step: [
+      {
+        "@type": "HowToStep",
+        position: 1,
+        name: "Read the official driver's manual",
+        text: `Download and read the ${landingInfo.handbookName}. Every question on the ${state.name} permit test is drawn from this manual.`,
+        url: landingInfo.handbookUrl,
+      },
+      {
+        "@type": "HowToStep",
+        position: 2,
+        name: "Practice in training mode",
+        text: `Work through TigerTest's 200 ${state.name}-specific practice questions one at a time with instant feedback and explanations for every answer.`,
+        url: `${siteUrl}/${state.slug}-dmv-practice-test`,
+      },
+      {
+        "@type": "HowToStep",
+        position: 3,
+        name: "Take a full timed practice test",
+        text: `Simulate the real exam with a 50-question practice test. The ${state.name} ${state.dmvName} test requires ${state.passingScore}% (${rawPassing} of ${state.writtenTestQuestions}) to pass.`,
+      },
+      {
+        "@type": "HowToStep",
+        position: 4,
+        name: "Review every wrong answer",
+        text: "Re-read the explanation for any question you miss. TigerTest queues missed questions for spaced repetition so you study them more often.",
+      },
+      {
+        "@type": "HowToStep",
+        position: 5,
+        name: `Schedule your ${state.name} ${state.dmvName} appointment`,
+        text: `When you're consistently scoring above ${state.passingScore}% in practice, book your in-person ${state.dmvName} test. Bring required ID, proof of residency, and the application fee.`,
+      },
+    ],
   };
 
   // JSON-LD: BreadcrumbList schema
@@ -236,6 +313,10 @@ export default async function StateDMVPracticeTestPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(courseJsonLd) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }}
+      />
 
       <div className="relative container mx-auto px-4 py-8 md:py-12 max-w-4xl">
         {/* Breadcrumb */}
@@ -272,10 +353,14 @@ export default async function StateDMVPracticeTestPage({
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
             Free {state.name} DMV Practice Test 2026
           </h1>
-          <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Pass your {state.name} {state.dmvName} permit test on the first
-            try. Practice with 200 {state.name}-specific questions based on
-            the official driver&apos;s manual.
+          <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
+            The {state.name} {state.dmvName} permit test has{" "}
+            <strong>{state.writtenTestQuestions} multiple-choice questions</strong>{" "}
+            and requires a <strong>{state.passingScore}% score</strong> ({rawPassing}{" "}
+            correct) to pass. Applicants must be at least{" "}
+            <strong>{state.minPermitAge}</strong> years old. TigerTest offers 200
+            free practice questions drawn from the official{" "}
+            {landingInfo.handbookName} so you pass on your first try.
           </p>
           <Link href={`/signup?state=${state.code}`}>
             <Button

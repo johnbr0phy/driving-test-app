@@ -69,4 +69,6 @@ Guest mode allows using the app without an account; guest data converts on signu
 RESEND_API_KEY                  # Email sending (Resend)
 FIREBASE_SERVICE_ACCOUNT_KEY    # Server-side Firebase admin SDK (JSON)
 NEXT_PUBLIC_SITE_URL            # Site URL for metadata
+CRON_SECRET                     # Bearer token for /api/cron/* and /api/indexnow/ping
+INDEXNOW_KEY                    # 8–128 char hex key for IndexNow (Bing) submissions
 ```

@@ -46,6 +46,8 @@ export default function PracticeTestsByStatePage() {
     "@context": "https://schema.org",
     "@type": "ItemList",
     name: "DMV Practice Tests by State",
+    description:
+      "Comparison of DMV written knowledge test requirements across all 50 US states plus Washington D.C., including the number of questions, passing score, and minimum permit age.",
     numberOfItems: states.length,
     itemListElement: states.map((state, index) => ({
       "@type": "ListItem",
@@ -54,6 +56,12 @@ export default function PracticeTestsByStatePage() {
       url: `${siteUrl}/${state.slug}-dmv-practice-test`,
     })),
   };
+
+  // Computed total used in the answer-first lead and the table caption.
+  const totalQuestions = states.reduce(
+    (sum, s) => sum + s.writtenTestQuestions,
+    0
+  );
 
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
@@ -110,11 +118,85 @@ export default function PracticeTestsByStatePage() {
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             DMV Practice Tests by State
           </h1>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Choose your state below to access free practice questions based on
-            your state&apos;s official driver&apos;s manual. All 50 states plus
-            Washington D.C. are covered.
+          <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+            DMV written knowledge tests vary by state: most require a{" "}
+            <strong>20–50 question</strong> exam with a{" "}
+            <strong>70%–85% passing score</strong>. Minimum permit age ranges
+            from <strong>14 to 16</strong>. The table below compares all 50
+            states plus Washington D.C., and TigerTest provides 200 free
+            practice questions for each.
           </p>
+        </div>
+
+        {/* Comparison Table — all states at a glance (AI-parseable) */}
+        <div className="mb-12 overflow-x-auto rounded-xl border border-gray-200">
+          <table className="min-w-full text-sm text-left">
+            <caption className="sr-only">
+              DMV written knowledge test requirements for all {states.length}{" "}
+              US states and territories ({totalQuestions} total questions
+              across all official state exams). Sorted alphabetically.
+            </caption>
+            <thead className="bg-gray-50 text-gray-700">
+              <tr>
+                <th scope="col" className="px-4 py-3 font-semibold">
+                  State
+                </th>
+                <th scope="col" className="px-4 py-3 font-semibold text-right">
+                  Questions
+                </th>
+                <th scope="col" className="px-4 py-3 font-semibold text-right">
+                  Passing Score
+                </th>
+                <th scope="col" className="px-4 py-3 font-semibold text-right">
+                  Correct to Pass
+                </th>
+                <th scope="col" className="px-4 py-3 font-semibold">
+                  Min. Permit Age
+                </th>
+                <th scope="col" className="px-4 py-3 font-semibold">
+                  Practice Test
+                </th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-200 bg-white">
+              {states.map((state) => {
+                const correctToPass = Math.ceil(
+                  (state.writtenTestQuestions * state.passingScore) / 100
+                );
+                return (
+                  <tr key={state.slug} className="hover:bg-brand-light">
+                    <th
+                      scope="row"
+                      className="px-4 py-3 font-medium text-gray-900 whitespace-nowrap"
+                    >
+                      {state.name}
+                    </th>
+                    <td className="px-4 py-3 text-right text-gray-700 tabular-nums">
+                      {state.writtenTestQuestions}
+                    </td>
+                    <td className="px-4 py-3 text-right text-gray-700 tabular-nums">
+                      {state.passingScore}%
+                    </td>
+                    <td className="px-4 py-3 text-right text-gray-700 tabular-nums">
+                      {correctToPass}/{state.writtenTestQuestions}
+                    </td>
+                    <td className="px-4 py-3 text-gray-700 whitespace-nowrap">
+                      {state.minPermitAge}
+                    </td>
+                    <td className="px-4 py-3">
+                      <Link
+                        href={`/${state.slug}-dmv-practice-test`}
+                        className="text-brand hover:text-brand-dark font-medium inline-flex items-center gap-1"
+                      >
+                        Start free
+                        <ChevronRight className="h-3 w-3" />
+                      </Link>
+                    </td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
         </div>
 
         {/* State Grid */}

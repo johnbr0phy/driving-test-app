@@ -22,17 +22,19 @@ async function getActiveSchoolSlugs(): Promise<string[]> {
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
+  const now = new Date();
+
   // Core pages
   const corePages: MetadataRoute.Sitemap = [
     {
       url: siteUrl,
-      lastModified: new Date("2026-02-12"),
+      lastModified: now,
       changeFrequency: "weekly",
       priority: 1,
     },
     {
       url: `${siteUrl}/practice-tests-by-state`,
-      lastModified: new Date("2026-02-12"),
+      lastModified: now,
       changeFrequency: "weekly",
       priority: 0.9,
     },
@@ -41,7 +43,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // State DMV practice test landing pages (primary SEO pages)
   const stateDmvPages: MetadataRoute.Sitemap = states.map((state) => ({
     url: `${siteUrl}/${state.slug}-dmv-practice-test`,
-    lastModified: new Date("2026-02-12"),
+    lastModified: now,
     changeFrequency: "monthly" as const,
     priority: 0.8,
   }));
@@ -49,7 +51,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Spanish state DMV practice test landing pages
   const stateDmvPagesEs: MetadataRoute.Sitemap = states.map((state) => ({
     url: `${siteUrl}/es/${state.slug}-examen-practica-dmv`,
-    lastModified: new Date("2026-02-12"),
+    lastModified: now,
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
@@ -58,7 +60,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const spanishIndexPage: MetadataRoute.Sitemap = [
     {
       url: `${siteUrl}/es/examenes-practica-por-estado`,
-      lastModified: new Date("2026-02-12"),
+      lastModified: now,
       changeFrequency: "weekly" as const,
       priority: 0.8,
     },
@@ -68,7 +70,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const cdlPages: MetadataRoute.Sitemap = [
     {
       url: `${siteUrl}/cdl-practice-test`,
-      lastModified: new Date("2026-02-17"),
+      lastModified: now,
       changeFrequency: "weekly" as const,
       priority: 0.9,
     },
@@ -78,7 +80,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const schoolSlugs = await getActiveSchoolSlugs();
   const schoolPages: MetadataRoute.Sitemap = schoolSlugs.map((slug) => ({
     url: `${siteUrl}/schools/${slug}`,
-    lastModified: new Date(),
+    lastModified: now,
     changeFrequency: "weekly" as const,
     priority: 0.6,
   }));

@@ -10,7 +10,7 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
         disallow: [
           "/api/",
-          "/test/",
+          "/test",
           "/training",
           "/dashboard",
           "/settings",
@@ -19,6 +19,11 @@ export default function robots(): MetadataRoute.Robots {
           "/onboarding",
           "/login",
           "/signup",
+          "/unsubscribe",
+          "/cdl/dashboard",
+          "/cdl/stats",
+          "/cdl/test",
+          "/cdl/training",
         ],
       },
       // Explicitly allow major AI crawlers

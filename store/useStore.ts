@@ -1,7 +1,7 @@
 import { create } from 'zustand';
 import { persist, createJSONStorage } from 'zustand/middleware';
 import { Question, TestSession, UserAnswer, TestAttemptStats, QuestionPerformance, Subscription } from '@/types';
-import { doc, setDoc, getDoc } from 'firebase/firestore';
+import { doc, setDoc, getDoc, updateDoc } from 'firebase/firestore';
 import { db } from '@/lib/firebase';
 import type { Language } from '@/i18n';
 
@@ -776,7 +776,7 @@ export const useStore = create<AppState>()(
       },
 
       saveToFirestore: async () => {
-        const { userId, isGuest, selectedState, currentTests, completedTests, testAttempts, training, trainingSets, trainingAnswerHistory, activeDates, photoURL, subscription, language, emailConsent, referralCode, referredBy, referralCount, qualifiedReferralCount, referredAt, referralQualifiedAt } = get();
+        const { userId, isGuest, selectedState, currentTests, completedTests, testAttempts, training, trainingSets, trainingAnswerHistory, activeDates, photoURL, subscription, language, emailConsent } = get();
         if (!userId || isGuest) return; // Don't save if no user is logged in or guest mode
 
         try {
@@ -814,11 +814,35 @@ export const useStore = create<AppState>()(
             if (t?.answers) testQCount += Object.keys(t.answers).length;
           }
 
-          await setDoc(doc(db, 'users', userId), {
+          // Per-field write that leaves server-owned fields untouched.
+          //
+          // Background: this used to be a `setDoc` (full-doc replace), which
+          // stomped on fields the server writes asynchronously - notably the
+          // referral counters (referralCount, qualifiedReferralCount) and
+          // attribution stamps (referredBy, referredAt, referralQualifiedAt).
+          // The inviter-side counters are incremented atomically in
+          // /api/referrals/{claim,qualify}; if the inviter then took any
+          // action that triggered saveToFirestore, we'd write back the stale
+          // in-memory value and silently undo the server's increment. That
+          // produced impossible totals like qualifiedCount > referralCount
+          // on the admin dashboard.
+          //
+          // We deliberately omit:
+          //   - referralCode, referredBy, referredAt, referralCount,
+          //     qualifiedReferralCount, referralQualifiedAt (server-owned)
+          //   - unsubscribed (set by /api/unsubscribe; was hardcoded to false
+          //     here, which would auto-resubscribe users on their next save)
+          //   - createdAt (set once by /api/send-welcome-email)
+          //
+          // updateDoc replaces top-level fields entirely (no deep merge), so
+          // setSelectedState's reset-to-empty for currentTests/trainingSets
+          // still clears them as expected. updateDoc requires the doc to
+          // exist; on first save for a new user we fall back to setDoc.
+          const userRef = doc(db, 'users', userId);
+          const payload = {
             selectedState,
             photoURL,
             emailConsent,
-            unsubscribed: false,
             currentTests: currentTestsForFirestore,
             completedTests: completedTests.map(test => ({
               ...test,
@@ -839,16 +863,6 @@ export const useStore = create<AppState>()(
             activeDates: updatedActiveDates,
             subscription,
             language,
-            referralCode: referralCode ?? null,
-            referredBy: referredBy ?? null,
-            referralCount: referralCount ?? 0,
-            qualifiedReferralCount: qualifiedReferralCount ?? 0,
-            // Preserve server-stamped timestamps across full-doc replaces.
-            // Without these the admin "Referred Signups" chart loses its
-            // bucket date the first time the user does anything that triggers
-            // a saveToFirestore after being credited.
-            ...(referredAt ? { referredAt } : {}),
-            ...(referralQualifiedAt ? { referralQualifiedAt } : {}),
             lastUpdated: new Date().toISOString(),
             // Denormalized counters for admin dashboard
             _stats: {
@@ -856,7 +870,20 @@ export const useStore = create<AppState>()(
               testQuestionsAnswered: testQCount,
               testsCompleted: completedTests.length,
             },
-          });
+          };
+          try {
+            await updateDoc(userRef, payload);
+          } catch (err) {
+            // Doc doesn't exist yet (first save for a new user) - fall back to
+            // setDoc with merge so we don't accidentally overwrite anything
+            // the server may have stamped (e.g., referredBy from a claim that
+            // raced ahead of the first save).
+            if ((err as { code?: string })?.code === 'not-found') {
+              await setDoc(userRef, payload, { merge: true });
+            } else {
+              throw err;
+            }
+          }
         } catch (error) {
           console.error('Error saving to Firestore:', error);
         }

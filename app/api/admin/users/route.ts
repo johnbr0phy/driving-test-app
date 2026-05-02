@@ -134,10 +134,17 @@ export async function GET(request: NextRequest) {
     const signupDates: string[] = [];
     // Per-user data for advanced charts
     const userRecords: { activeDates: string[]; lastUpdated: string | null; state: string | null; signupDate: string | null }[] = [];
-    // Referral aggregates
+    // Referral aggregates.
+    //
+    // Counts are computed from the *inviter side* (`referralCount`,
+    // `qualifiedReferralCount` on each user). Those fields are written by
+    // atomic merged transactions in /api/referrals/{claim,qualify} and have
+    // never been clobbered, so they're accurate even for historical data.
+    // The referee-side `referredBy` field used to get wiped by the signup
+    // race fixed in the prior commit, so summing it would undercount.
     let referredUsers = 0;
     let qualifiedReferredUsers = 0;
-    const referredAtDates: string[] = [];
+    const referredSignupDates: string[] = []; // per-day chart bucket dates
     const referrerCounts: Record<string, number> = {}; // ownerUid → qualified count
 
     const now = new Date();
@@ -181,12 +188,21 @@ export async function GET(request: NextRequest) {
       usersForDau.push({ activeDates, lastUpdated });
       userRecords.push({ activeDates, lastUpdated, state, signupDate });
 
-      // Referral aggregates - every user with a `referredBy` was invited;
-      // those with `referralQualifiedAt` actually started using TigerTest
-      // (i.e., picked a state).
+      // Inviter-side counters (accurate; see comment above the aggregates).
+      const inviterReferralCount = (data.referralCount as number) || 0;
+      const inviterQualifiedCount = (data.qualifiedReferralCount as number) || 0;
+      if (inviterReferralCount > 0) referredUsers += inviterReferralCount;
+      if (inviterQualifiedCount > 0) {
+        qualifiedReferredUsers += inviterQualifiedCount;
+        referrerCounts[doc.id] = inviterQualifiedCount;
+      }
+
+      // Per-day chart bucket: prefer the actual `referredAt` stamp; fall back
+      // to `createdAt` (≈ signup date) for the historical cohort whose
+      // referredAt was wiped by the pre-fix saveToFirestore. Only consider
+      // referees (users with `referredBy` set).
       const referredBy = data.referredBy as string | null;
       if (referredBy) {
-        referredUsers++;
         const referredAtRaw = data.referredAt as { toDate?: () => Date } | string | null;
         const referredAtIso =
           typeof referredAtRaw === 'string'
@@ -194,13 +210,10 @@ export async function GET(request: NextRequest) {
             : referredAtRaw && typeof referredAtRaw.toDate === 'function'
               ? referredAtRaw.toDate().toISOString()
               : null;
-        const day = referredAtIso?.split('T')[0];
-        if (day) referredAtDates.push(day);
-
-        if (data.referralQualifiedAt) {
-          qualifiedReferredUsers++;
-          referrerCounts[referredBy] = (referrerCounts[referredBy] || 0) + 1;
-        }
+        const bucketDay = referredAtIso?.split('T')[0]
+          || (createdAt as string | null)?.split('T')[0]
+          || null;
+        if (bucketDay) referredSignupDates.push(bucketDay);
       }
     });
 
@@ -339,7 +352,7 @@ export async function GET(request: NextRequest) {
     // Referral charts: daily count of new referred signups (last 30 days)
     const dailyReferredSignups = last30Dates.map((dateStr) => ({
       date: dateStr,
-      count: referredAtDates.filter((d) => d === dateStr).length,
+      count: referredSignupDates.filter((d) => d === dateStr).length,
       displayDate: new Date(dateStr + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
     }));
 

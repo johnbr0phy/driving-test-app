@@ -43,7 +43,17 @@ export async function POST(request: NextRequest) {
     const existingReferredBy = refereeSnap.exists ? refereeSnap.data()?.referredBy : null;
     if (existingReferredBy) {
       // Already credited - return current state without double-counting
-      return NextResponse.json({ ok: true, alreadyClaimed: true, referredBy: existingReferredBy });
+      const existingReferredAtRaw = refereeSnap.data()?.referredAt;
+      const existingReferredAt =
+        existingReferredAtRaw && typeof existingReferredAtRaw.toDate === 'function'
+          ? existingReferredAtRaw.toDate().toISOString()
+          : (typeof existingReferredAtRaw === 'string' ? existingReferredAtRaw : null);
+      return NextResponse.json({
+        ok: true,
+        alreadyClaimed: true,
+        referredBy: existingReferredBy,
+        referredAt: existingReferredAt,
+      });
     }
 
     // Use a transaction so the referrer's counter and the referee's stamp move together
@@ -53,7 +63,12 @@ export async function POST(request: NextRequest) {
       tx.set(referrerRef, { referralCount: FieldValue.increment(1) }, { merge: true });
     });
 
-    return NextResponse.json({ ok: true, referredBy: ownerUid });
+    // Echo a client-side timestamp back so the store can persist it through
+    // the next saveToFirestore. The server's serverTimestamp resolves
+    // post-commit and isn't available here without an extra read; using
+    // ISO-now is close enough — loadUserData will reconcile on next session.
+    const referredAt = new Date().toISOString();
+    return NextResponse.json({ ok: true, referredBy: ownerUid, referredAt });
   } catch (error) {
     console.error('Referral claim error:', error);
     return NextResponse.json({ error: 'Failed to claim referral' }, { status: 500 });

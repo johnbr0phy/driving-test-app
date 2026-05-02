@@ -59,7 +59,11 @@ async function sendWelcomeEmail(userId: string, email: string, displayName: stri
   }
 }
 
-async function claimPendingReferral(user: User) {
+// Exported so the signup page can run the claim *before* its own
+// saveToFirestore. The auth listener also calls this, but the claim API is
+// idempotent and clears the localStorage marker on first success so the
+// second call short-circuits.
+export async function claimPendingReferral(user: User) {
   if (typeof window === "undefined") return;
   let code: string | null = null;
   try {
@@ -86,8 +90,14 @@ async function claimPendingReferral(user: User) {
     if (res.ok) {
       const data = await res.json().catch(() => ({}));
       const referredBy = data?.referredBy;
+      const referredAt = data?.referredAt;
       if (referredBy) {
-        useStore.getState().setReferralData({ referredBy });
+        // Stamp both fields in memory so the next saveToFirestore (which does
+        // a full-doc replace) writes them back instead of clobbering them.
+        useStore.getState().setReferralData({
+          referredBy,
+          ...(referredAt ? { referredAt } : {}),
+        });
       }
     }
   } catch (err) {

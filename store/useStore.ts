@@ -131,7 +131,8 @@ interface AppState {
   referralCount: number;
   qualifiedReferralCount: number;
   referralQualifiedAt: string | null;
-  setReferralData: (data: { referralCode?: string | null; referredBy?: string | null; referralCount?: number; qualifiedReferralCount?: number; referralQualifiedAt?: string | null }) => void;
+  referredAt: string | null;
+  setReferralData: (data: { referralCode?: string | null; referredBy?: string | null; referralCount?: number; qualifiedReferralCount?: number; referralQualifiedAt?: string | null; referredAt?: string | null }) => void;
   hasReferralUnlock: () => boolean;
 
   // True once loadUserData() has resolved against Firestore. Lets gated UI
@@ -185,6 +186,7 @@ export const useStore = create<AppState>()(
       referralCount: 0,
       qualifiedReferralCount: 0,
       referralQualifiedAt: null,
+      referredAt: null,
       firestoreLoaded: false,
 
       // Actions
@@ -729,6 +731,11 @@ export const useStore = create<AppState>()(
                     ? data.referralQualifiedAt.toDate().toISOString()
                     : String(data.referralQualifiedAt))
                 : null,
+              referredAt: data.referredAt
+                ? (typeof data.referredAt?.toDate === 'function'
+                    ? data.referredAt.toDate().toISOString()
+                    : String(data.referredAt))
+                : null,
               photoURL: data.photoURL || null,
               userId,
               subscription: data.subscription || {
@@ -769,7 +776,7 @@ export const useStore = create<AppState>()(
       },
 
       saveToFirestore: async () => {
-        const { userId, isGuest, selectedState, currentTests, completedTests, testAttempts, training, trainingSets, trainingAnswerHistory, activeDates, photoURL, subscription, language, emailConsent, referralCode, referredBy, referralCount, qualifiedReferralCount } = get();
+        const { userId, isGuest, selectedState, currentTests, completedTests, testAttempts, training, trainingSets, trainingAnswerHistory, activeDates, photoURL, subscription, language, emailConsent, referralCode, referredBy, referralCount, qualifiedReferralCount, referredAt, referralQualifiedAt } = get();
         if (!userId || isGuest) return; // Don't save if no user is logged in or guest mode
 
         try {
@@ -836,6 +843,12 @@ export const useStore = create<AppState>()(
             referredBy: referredBy ?? null,
             referralCount: referralCount ?? 0,
             qualifiedReferralCount: qualifiedReferralCount ?? 0,
+            // Preserve server-stamped timestamps across full-doc replaces.
+            // Without these the admin "Referred Signups" chart loses its
+            // bucket date the first time the user does anything that triggers
+            // a saveToFirestore after being credited.
+            ...(referredAt ? { referredAt } : {}),
+            ...(referralQualifiedAt ? { referralQualifiedAt } : {}),
             lastUpdated: new Date().toISOString(),
             // Denormalized counters for admin dashboard
             _stats: {
@@ -904,6 +917,7 @@ export const useStore = create<AppState>()(
           referralCount: 0,
           qualifiedReferralCount: 0,
           referralQualifiedAt: null,
+          referredAt: null,
           firestoreLoaded: false,
         });
       },
@@ -961,6 +975,7 @@ export const useStore = create<AppState>()(
         if (data.referralCount !== undefined) updates.referralCount = data.referralCount;
         if (data.qualifiedReferralCount !== undefined) updates.qualifiedReferralCount = data.qualifiedReferralCount;
         if (data.referralQualifiedAt !== undefined) updates.referralQualifiedAt = data.referralQualifiedAt;
+        if (data.referredAt !== undefined) updates.referredAt = data.referredAt;
         set(updates);
       },
 

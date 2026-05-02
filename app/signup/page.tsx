@@ -3,7 +3,7 @@
 import { useState, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
-import { useAuth } from "@/contexts/AuthContext";
+import { useAuth, claimPendingReferral } from "@/contexts/AuthContext";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -124,6 +124,14 @@ function SignupPageContent() {
       const userEmail = auth.currentUser?.email ?? "";
       if (uid) useStore.getState().setUserId(uid);
 
+      // Claim the pending referral *before* the saveToFirestore below.
+      // saveToFirestore does a full-doc replace; if we don't stamp
+      // referredBy/referredAt into the in-memory store first, the save
+      // overwrites them with null and the admin loses the attribution.
+      if (auth.currentUser) {
+        await claimPendingReferral(auth.currentUser);
+      }
+
       // Only set state if not a guest (guests already have state set)
       if (!guestHasState && stateToUse) {
         setStoreState(stateToUse);
@@ -169,6 +177,14 @@ function SignupPageContent() {
       // link would then bounce the user back to onboarding.
       const uid = auth.currentUser?.uid ?? "";
       if (uid) useStore.getState().setUserId(uid);
+
+      // Claim the pending referral *before* the saveToFirestore below.
+      // saveToFirestore does a full-doc replace; if we don't stamp
+      // referredBy/referredAt into the in-memory store first, the save
+      // overwrites them with null and the admin loses the attribution.
+      if (auth.currentUser) {
+        await claimPendingReferral(auth.currentUser);
+      }
 
       // Only set state if not a guest (guests already have state set)
       if (!guestHasState && selectedState) {

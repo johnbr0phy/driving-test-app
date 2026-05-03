@@ -2,7 +2,7 @@ import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
 import { z } from 'zod';
 import { ok, fail, formatStateRequiredError } from '@/lib/server/mcp-tool-helpers';
 import { states } from '@/data/states';
-import { getUser, getProgress, getTestAttemptStats, getTrainingSetProgress, getQuestionPerformance } from '@/lib/server/progress';
+import { getUser, getProgress, getTestAttemptStats, getTrainingSetProgress, getQuestionPerformance, setSelectedState, setLanguage } from '@/lib/server/progress';
 import questionsRaw from '@/data/questions.json';
 
 const questionMeta = new Map<string, { question: string; category: string }>(
@@ -220,6 +220,50 @@ const tools: ToolEntry[] = [
             };
           });
           return ok(enriched);
+        }
+      );
+    },
+  },
+  {
+    name: 'set_user_state',
+    description:
+      "Sets the user's DMV state. DESTRUCTIVE: clears all test history, training progress, and mastery data. You MUST confirm with the user before calling this — explain that their progress will be reset. The `confirm: true` argument is required and forces you to obtain that confirmation first.",
+    register(server, ctx) {
+      server.registerTool(
+        'set_user_state',
+        {
+          description: this.description,
+          inputSchema: {
+            stateCode: z.string().length(2).toUpperCase(),
+            confirm: z.literal(true),
+          },
+        },
+        async (args) => {
+          const stateCode = (args.stateCode as string).toUpperCase();
+          const valid = states.some((s) => s.code === stateCode);
+          if (!valid) return fail('INVALID_STATE', `Unknown state code: ${stateCode}. Call list_states to see valid codes.`);
+          const result = await setSelectedState(ctx.userId, stateCode);
+          if (!result.ok) return fail(result.code, result.message);
+          return ok(result.data);
+        }
+      );
+    },
+  },
+  {
+    name: 'set_language',
+    description:
+      'Sets the question language to English ("en") or Spanish ("es"). Non-destructive — does not clear any progress. The web app will immediately reflect the change.',
+    register(server, ctx) {
+      server.registerTool(
+        'set_language',
+        {
+          description: this.description,
+          inputSchema: { lang: z.enum(['en', 'es']) },
+        },
+        async (args) => {
+          const result = await setLanguage(ctx.userId, args.lang as 'en' | 'es');
+          if (!result.ok) return fail(result.code, result.message);
+          return ok(result.data);
         }
       );
     },

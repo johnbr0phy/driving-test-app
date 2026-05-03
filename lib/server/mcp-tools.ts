@@ -1,6 +1,4 @@
 import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
-import fs from 'fs';
-import path from 'path';
 import { z } from 'zod';
 import { ok, fail, formatStateRequiredError } from '@/lib/server/mcp-tool-helpers';
 import { states } from '@/data/states';
@@ -62,36 +60,25 @@ type ToolEntry = {
 // Re-export for convenience so tool modules only need to import from mcp-tools.ts if desired.
 export { z, ok, fail };
 
-function readSignSvg(signId: string): string | null {
-  try {
-    const filePath = path.join(process.cwd(), 'public', 'signs', `${signId}.svg`);
-    return fs.readFileSync(filePath, 'utf-8');
-  } catch {
-    return null;
-  }
-}
-
-function formatQuestionForTest(q: ReturnType<typeof shuffleQuestionOptions>, _issuerUrl: string) {
+function formatQuestionForTest(q: ReturnType<typeof shuffleQuestionOptions>, issuerUrl: string) {
   const signId = SIGN_BY_QUESTION_ID[q.questionId];
-  const svg = signId ? readSignSvg(signId) : null;
   return {
     questionId: q.questionId,
     question: q.question,
     category: q.category,
     options: { A: q.optionA, B: q.optionB, C: q.optionC, D: q.optionD },
-    ...(svg ? { imageSvg: svg } : {}),
+    ...(signId ? { imageUrl: `${issuerUrl}/signs/${signId}.svg` } : {}),
   };
 }
 
-function formatQuestion(q: ReturnType<typeof shuffleQuestionOptions>, _issuerUrl: string) {
+function formatQuestion(q: ReturnType<typeof shuffleQuestionOptions>, issuerUrl: string) {
   const signId = SIGN_BY_QUESTION_ID[q.questionId];
-  const svg = signId ? readSignSvg(signId) : null;
   return {
     questionId: q.questionId,
     question: q.question,
     category: q.category,
     options: { A: q.optionA, B: q.optionB, C: q.optionC, D: q.optionD },
-    ...(svg ? { imageSvg: svg } : {}),
+    ...(signId ? { imageUrl: `${issuerUrl}/signs/${signId}.svg` } : {}),
   };
 }
 
@@ -264,7 +251,7 @@ const tools: ToolEntry[] = [
   {
     name: 'start_training_set',
     description:
-      'Begins a training set session (setId 1-4). Validates the user has a state selected and, for set 4, a premium subscription. Returns the first question without the correct answer. ALWAYS display all 4 answer options (A, B, C, D) with every question — never omit them. Display without bullet points, just letter and text on each line (e.g. "A. Option text"). After the user answers, call submit_training_answer. Keep looping with get_next_training_question until complete:true.',
+      'Begins a training set session (setId 1-4). Validates the user has a state selected and, for set 4, a premium subscription. Returns the first question without the correct answer. ALWAYS display all 4 answer options (A, B, C, D) with every question — never omit them. Display without bullet points, just letter and text on each line (e.g. "A. Option text"). If the question has an imageUrl field, fetch and display the image inline before showing the options. After the user answers, call submit_training_answer. Keep looping with get_next_training_question until complete:true.',
     register(server, ctx) {
       server.registerTool(
         'start_training_set',
@@ -300,7 +287,7 @@ const tools: ToolEntry[] = [
   {
     name: 'get_next_training_question',
     description:
-      'Returns the next question in a training set. Call this after submit_training_answer to continue the loop. Returns complete:true when the set is fully mastered. ALWAYS display all 4 answer options (A, B, C, D) with every question — never omit them. Display without bullet points, just letter and text on each line (e.g. "A. Option text").',
+      'Returns the next question in a training set. Call this after submit_training_answer to continue the loop. Returns complete:true when the set is fully mastered. ALWAYS display all 4 answer options (A, B, C, D) with every question — never omit them. Display without bullet points, just letter and text on each line (e.g. "A. Option text"). If the question has an imageUrl field, fetch and display the image inline before showing the options.',
     register(server, ctx) {
       server.registerTool(
         'get_next_training_question',

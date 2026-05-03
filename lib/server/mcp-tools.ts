@@ -4,7 +4,7 @@ import path from 'path';
 import { z } from 'zod';
 import { ok, fail, formatStateRequiredError } from '@/lib/server/mcp-tool-helpers';
 import { states } from '@/data/states';
-import { getUser, getProgress, getTestAttemptStats, getTrainingSetProgress, getQuestionPerformance, setSelectedState, setLanguage, answerTrainingSetQuestion, resetTrainingSet, startTest, setTestAnswer, clearCurrentTest, completeTest, getCurrentTest, getRecentTestSession } from '@/lib/server/progress';
+import { getUser, getProgress, getTestAttemptStats, getTrainingSetProgress, getTrainingSetData, getQuestionPerformance, setSelectedState, setLanguage, answerTrainingSetQuestion, resetTrainingSet, startTest, setTestAnswer, clearCurrentTest, completeTest, getCurrentTest, getRecentTestSession } from '@/lib/server/progress';
 import { generateTest, getNextTrainingSetQuestion, getTrainingSetQuestions, shuffleQuestionOptions } from '@/lib/testGenerator';
 import { SIGN_BY_QUESTION_ID } from '@/lib/signImages';
 import questionsRaw from '@/data/questions.json';
@@ -277,14 +277,13 @@ const tools: ToolEntry[] = [
           if (setId === 4 && !user.subscription?.isPremium) {
             return fail('PREMIUM_REQUIRED', 'Training set 4 requires a premium subscription.');
           }
-          const progress = await getTrainingSetProgress(ctx.userId, setId);
-          if (!progress) return fail('USER_NOT_FOUND', 'User not found.');
+          const [progress, setData] = await Promise.all([
+            getTrainingSetProgress(ctx.userId, setId),
+            getTrainingSetData(ctx.userId, setId),
+          ]);
+          if (!progress || !setData) return fail('USER_NOT_FOUND', 'User not found.');
 
-          const setData = (user as unknown as { trainingSets?: Record<string, { masteredIds: string[]; wrongQueue: string[] }> }).trainingSets?.[String(setId)];
-          const masteredIds = setData?.masteredIds ?? [];
-          const wrongQueue = setData?.wrongQueue ?? [];
-
-          const raw = getNextTrainingSetQuestion(setId, user.selectedState, masteredIds, wrongQueue, null, user.language as 'en' | 'es');
+          const raw = getNextTrainingSetQuestion(setId, user.selectedState, setData.masteredIds, setData.wrongQueue, null, user.language as 'en' | 'es');
           if (!raw) {
             return ok({ complete: true, progress: { mastered: progress.masteredCount, total: progress.total, wrongQueueSize: progress.wrongQueueLength } });
           }
@@ -313,14 +312,13 @@ const tools: ToolEntry[] = [
           if (!user) return fail('USER_NOT_FOUND', 'User not found.');
           if (!user.selectedState) return formatStateRequiredError();
 
-          const progress = await getTrainingSetProgress(ctx.userId, setId);
-          if (!progress) return fail('USER_NOT_FOUND', 'User not found.');
+          const [progress, setData] = await Promise.all([
+            getTrainingSetProgress(ctx.userId, setId),
+            getTrainingSetData(ctx.userId, setId),
+          ]);
+          if (!progress || !setData) return fail('USER_NOT_FOUND', 'User not found.');
 
-          const setData = (user as unknown as { trainingSets?: Record<string, { masteredIds: string[]; wrongQueue: string[] }> }).trainingSets?.[String(setId)];
-          const masteredIds = setData?.masteredIds ?? [];
-          const wrongQueue = setData?.wrongQueue ?? [];
-
-          const raw = getNextTrainingSetQuestion(setId, user.selectedState, masteredIds, wrongQueue, null, user.language as 'en' | 'es');
+          const raw = getNextTrainingSetQuestion(setId, user.selectedState, setData.masteredIds, setData.wrongQueue, null, user.language as 'en' | 'es');
           if (!raw) {
             return ok({ complete: true, progress: { mastered: progress.masteredCount, total: progress.total, wrongQueueSize: progress.wrongQueueLength } });
           }

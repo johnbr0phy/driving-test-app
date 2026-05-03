@@ -845,6 +845,19 @@ export async function resetTrainingSet(
   return { ok: true, data: { setId } };
 }
 
+export async function getTrainingSetData(
+  userId: string,
+  setId: 1 | 2 | 3 | 4
+): Promise<{ masteredIds: string[]; wrongQueue: string[] } | null> {
+  const data = await fetchUserDoc(userId);
+  if (!data) return null;
+  const setData = data.trainingSets?.[String(setId)];
+  return {
+    masteredIds: setData?.masteredIds ?? [],
+    wrongQueue: setData?.wrongQueue ?? [],
+  };
+}
+
 export interface CurrentTestSnapshot {
   questions: Question[];
   answers: { [questionIndex: string]: string };

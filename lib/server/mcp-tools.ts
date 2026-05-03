@@ -264,7 +264,7 @@ const tools: ToolEntry[] = [
   {
     name: 'start_training_set',
     description:
-      'Begins a training set session (setId 1-4). Validates the user has a state selected and, for set 4, a premium subscription. Returns the first question without the correct answer. When displaying the question, show the options WITHOUT bullet points — just the letter and text on each line (e.g. "A. Option text"). After the user answers, call submit_training_answer. Keep looping with get_next_training_question until complete:true.',
+      'Begins a training set session (setId 1-4). Validates the user has a state selected and, for set 4, a premium subscription. Returns the first question without the correct answer. ALWAYS display all 4 answer options (A, B, C, D) with every question — never omit them. Display without bullet points, just letter and text on each line (e.g. "A. Option text"). After the user answers, call submit_training_answer. Keep looping with get_next_training_question until complete:true.',
     register(server, ctx) {
       server.registerTool(
         'start_training_set',
@@ -302,7 +302,7 @@ const tools: ToolEntry[] = [
   {
     name: 'get_next_training_question',
     description:
-      'Returns the next question in a training set. Call this after submit_training_answer to continue the loop. Returns complete:true when the set is fully mastered. Display options WITHOUT bullet points — just letter and text on each line (e.g. "A. Option text").',
+      'Returns the next question in a training set. Call this after submit_training_answer to continue the loop. Returns complete:true when the set is fully mastered. ALWAYS display all 4 answer options (A, B, C, D) with every question — never omit them. Display without bullet points, just letter and text on each line (e.g. "A. Option text").',
     register(server, ctx) {
       server.registerTool(
         'get_next_training_question',
@@ -405,7 +405,7 @@ const tools: ToolEntry[] = [
   {
     name: 'start_practice_test',
     description:
-      'Begins one of the 4 DMV practice tests. Idempotent — if a session already exists for this testId it is left intact. Generates and stores 50 questions on first call. Returns the first question WITHOUT the correct answer or explanation (those are withheld until submit_practice_test). Test 4 requires premium. Display options WITHOUT bullet points — just letter and text on each line (e.g. "A. Option text").',
+      'Begins one of the 4 DMV practice tests. Idempotent — if a session already exists for this testId it is left intact. Generates and stores 50 questions on first call. Returns the first question WITHOUT the correct answer or explanation (those are withheld until submit_practice_test). Test 4 requires premium. ALWAYS display all 4 answer options (A, B, C, D) with every question — never omit them. Display without bullet points, just letter and text on each line (e.g. "A. Option text").',
     register(server, ctx) {
       server.registerTool(
         'start_practice_test',
@@ -443,7 +443,7 @@ const tools: ToolEntry[] = [
   {
     name: 'get_next_test_question',
     description:
-      'Returns the next unanswered question in a practice test, or complete:true when all 50 are answered. Call submit_practice_test once complete:true is returned. Display options WITHOUT bullet points — just letter and text on each line (e.g. "A. Option text").',
+      'Returns the next unanswered question in a practice test, or complete:true when all 50 are answered. Call submit_practice_test once complete:true is returned. ALWAYS display all 4 answer options (A, B, C, D) with every question — never omit them. Display without bullet points, just letter and text on each line (e.g. "A. Option text").',
     register(server, ctx) {
       server.registerTool(
         'get_next_test_question',
@@ -477,7 +477,7 @@ const tools: ToolEntry[] = [
   {
     name: 'submit_test_answer',
     description:
-      'Records the user\'s answer for a practice test question. Does NOT reveal whether the answer is correct — that is withheld until submit_practice_test. Returns the next question (or complete:true) in the same response to save a round trip. Display options WITHOUT bullet points — just letter and text on each line (e.g. "A. Option text").',
+      'Records the user\'s answer for a practice test question. Does NOT reveal whether the answer is correct — that is withheld until submit_practice_test. Returns the next question (or complete:true) in the same response to save a round trip. ALWAYS display all 4 answer options (A, B, C, D) with every question — never omit them. Display without bullet points, just letter and text on each line (e.g. "A. Option text").',
     register(server, ctx) {
       server.registerTool(
         'submit_test_answer',

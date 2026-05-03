@@ -2,7 +2,9 @@ import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
 import { z } from 'zod';
 import { ok, fail, formatStateRequiredError } from '@/lib/server/mcp-tool-helpers';
 import { states } from '@/data/states';
-import { getUser, getProgress, getTestAttemptStats, getTrainingSetProgress, getQuestionPerformance, setSelectedState, setLanguage } from '@/lib/server/progress';
+import { getUser, getProgress, getTestAttemptStats, getTrainingSetProgress, getQuestionPerformance, setSelectedState, setLanguage, answerTrainingSetQuestion, resetTrainingSet } from '@/lib/server/progress';
+import { getNextTrainingSetQuestion, getTrainingSetQuestions, shuffleQuestionOptions } from '@/lib/testGenerator';
+import { SIGN_BY_QUESTION_ID } from '@/lib/signImages';
 import questionsRaw from '@/data/questions.json';
 
 const questionMeta = new Map<string, { question: string; category: string }>(
@@ -57,6 +59,17 @@ type ToolEntry = {
 
 // Re-export for convenience so tool modules only need to import from mcp-tools.ts if desired.
 export { z, ok, fail };
+
+function formatQuestion(q: ReturnType<typeof shuffleQuestionOptions>, issuerUrl: string) {
+  const signId = SIGN_BY_QUESTION_ID[q.questionId];
+  return {
+    questionId: q.questionId,
+    question: q.question,
+    category: q.category,
+    options: { A: q.optionA, B: q.optionB, C: q.optionC, D: q.optionD },
+    ...(signId ? { imageUrl: `${issuerUrl}/signs/${signId}.svg` } : {}),
+  };
+}
 
 const tools: ToolEntry[] = [
   {
@@ -220,6 +233,147 @@ const tools: ToolEntry[] = [
             };
           });
           return ok(enriched);
+        }
+      );
+    },
+  },
+  {
+    name: 'start_training_set',
+    description:
+      'Begins a training set session (setId 1-4). Validates the user has a state selected and, for set 4, a premium subscription. Returns the first question without the correct answer. After the user answers, call submit_training_answer. Keep looping with get_next_training_question until complete:true.',
+    register(server, ctx) {
+      server.registerTool(
+        'start_training_set',
+        { description: this.description, inputSchema: { setId: z.number().int().min(1).max(4) } },
+        async (args) => {
+          const setId = args.setId as 1 | 2 | 3 | 4;
+          const user = await getUser(ctx.userId);
+          if (!user) return fail('USER_NOT_FOUND', 'User not found.');
+          if (!user.selectedState) return formatStateRequiredError();
+          if (setId === 4 && !user.subscription?.isPremium) {
+            return fail('PREMIUM_REQUIRED', 'Training set 4 requires a premium subscription.');
+          }
+          const progress = await getTrainingSetProgress(ctx.userId, setId);
+          if (!progress) return fail('USER_NOT_FOUND', 'User not found.');
+
+          const setData = (user as unknown as { trainingSets?: Record<string, { masteredIds: string[]; wrongQueue: string[] }> }).trainingSets?.[String(setId)];
+          const masteredIds = setData?.masteredIds ?? [];
+          const wrongQueue = setData?.wrongQueue ?? [];
+
+          const raw = getNextTrainingSetQuestion(setId, user.selectedState, masteredIds, wrongQueue, null, user.language as 'en' | 'es');
+          if (!raw) {
+            return ok({ complete: true, progress: { mastered: progress.masteredCount, total: progress.total, wrongQueueSize: progress.wrongQueueLength } });
+          }
+          const q = shuffleQuestionOptions(raw);
+          const issuerUrl = process.env.MCP_OAUTH_ISSUER_URL ?? '';
+          return ok({
+            complete: false,
+            question: formatQuestion(q, issuerUrl),
+            progress: { mastered: progress.masteredCount, total: progress.total, wrongQueueSize: progress.wrongQueueLength },
+          });
+        }
+      );
+    },
+  },
+  {
+    name: 'get_next_training_question',
+    description:
+      'Returns the next question in a training set. Call this after submit_training_answer to continue the loop. Returns complete:true when the set is fully mastered.',
+    register(server, ctx) {
+      server.registerTool(
+        'get_next_training_question',
+        { description: this.description, inputSchema: { setId: z.number().int().min(1).max(4) } },
+        async (args) => {
+          const setId = args.setId as 1 | 2 | 3 | 4;
+          const user = await getUser(ctx.userId);
+          if (!user) return fail('USER_NOT_FOUND', 'User not found.');
+          if (!user.selectedState) return formatStateRequiredError();
+
+          const progress = await getTrainingSetProgress(ctx.userId, setId);
+          if (!progress) return fail('USER_NOT_FOUND', 'User not found.');
+
+          const setData = (user as unknown as { trainingSets?: Record<string, { masteredIds: string[]; wrongQueue: string[] }> }).trainingSets?.[String(setId)];
+          const masteredIds = setData?.masteredIds ?? [];
+          const wrongQueue = setData?.wrongQueue ?? [];
+
+          const raw = getNextTrainingSetQuestion(setId, user.selectedState, masteredIds, wrongQueue, null, user.language as 'en' | 'es');
+          if (!raw) {
+            return ok({ complete: true, progress: { mastered: progress.masteredCount, total: progress.total, wrongQueueSize: progress.wrongQueueLength } });
+          }
+          const q = shuffleQuestionOptions(raw);
+          const issuerUrl = process.env.MCP_OAUTH_ISSUER_URL ?? '';
+          return ok({
+            complete: false,
+            question: formatQuestion(q, issuerUrl),
+            progress: { mastered: progress.masteredCount, total: progress.total, wrongQueueSize: progress.wrongQueueLength },
+          });
+        }
+      );
+    },
+  },
+  {
+    name: 'submit_training_answer',
+    description:
+      'Submits the user\'s answer for a training set question. Unlike practice tests, training mode reveals correctness immediately. Returns isCorrect, correctAnswer, explanation, and updated progress. Then call get_next_training_question.',
+    register(server, ctx) {
+      server.registerTool(
+        'submit_training_answer',
+        {
+          description: this.description,
+          inputSchema: {
+            setId: z.number().int().min(1).max(4),
+            questionId: z.string(),
+            answer: z.enum(['A', 'B', 'C', 'D']),
+          },
+        },
+        async (args) => {
+          const setId = args.setId as 1 | 2 | 3 | 4;
+          const user = await getUser(ctx.userId);
+          if (!user) return fail('USER_NOT_FOUND', 'User not found.');
+          if (!user.selectedState) return formatStateRequiredError();
+
+          const setQuestions = getTrainingSetQuestions(setId, user.selectedState, user.language as 'en' | 'es');
+          const question = setQuestions.find((q) => q.questionId === args.questionId);
+          if (!question) return fail('QUESTION_NOT_FOUND', `Question ${args.questionId} not found in set ${setId}.`);
+
+          const isCorrect = args.answer === question.correctAnswer;
+          const result = await answerTrainingSetQuestion(ctx.userId, setId, args.questionId as string, isCorrect);
+          if (!result.ok) return fail(result.code, result.message);
+
+          return ok({
+            isCorrect,
+            correctAnswer: question.correctAnswer,
+            explanation: question.explanation,
+            progress: {
+              mastered: result.data.masteredCount,
+              total: 50,
+              wrongQueueSize: result.data.wrongQueueLength,
+              complete: result.data.complete,
+            },
+          });
+        }
+      );
+    },
+  },
+  {
+    name: 'reset_training_set',
+    description:
+      'Resets a training set — clears all mastery and wrong queue data for that set. DESTRUCTIVE. You MUST confirm with the user before calling. The `confirm: true` argument is required.',
+    register(server, ctx) {
+      server.registerTool(
+        'reset_training_set',
+        {
+          description: this.description,
+          inputSchema: {
+            setId: z.number().int().min(1).max(4),
+            confirm: z.literal(true),
+          },
+        },
+        async (args) => {
+          const setId = args.setId as 1 | 2 | 3 | 4;
+          const result = await resetTrainingSet(ctx.userId, setId);
+          if (!result.ok) return fail(result.code, result.message);
+          return ok(result.data);
         }
       );
     },

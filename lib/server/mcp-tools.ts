@@ -287,11 +287,10 @@ const tools: ToolEntry[] = [
           if (!raw) {
             return ok({ complete: true, progress: { mastered: progress.masteredCount, total: progress.total, wrongQueueSize: progress.wrongQueueLength } });
           }
-          const q = shuffleQuestionOptions(raw);
           const issuerUrl = process.env.MCP_OAUTH_ISSUER_URL ?? '';
           return ok({
             complete: false,
-            question: formatQuestion(q, issuerUrl),
+            question: formatQuestion(raw, issuerUrl),
             progress: { mastered: progress.masteredCount, total: progress.total, wrongQueueSize: progress.wrongQueueLength },
           });
         }
@@ -322,11 +321,10 @@ const tools: ToolEntry[] = [
           if (!raw) {
             return ok({ complete: true, progress: { mastered: progress.masteredCount, total: progress.total, wrongQueueSize: progress.wrongQueueLength } });
           }
-          const q = shuffleQuestionOptions(raw);
           const issuerUrl = process.env.MCP_OAUTH_ISSUER_URL ?? '';
           return ok({
             complete: false,
-            question: formatQuestion(q, issuerUrl),
+            question: formatQuestion(raw, issuerUrl),
             progress: { mastered: progress.masteredCount, total: progress.total, wrongQueueSize: progress.wrongQueueLength },
           });
         }

@@ -844,3 +844,41 @@ export async function resetTrainingSet(
 
   return { ok: true, data: { setId } };
 }
+
+export interface CurrentTestSnapshot {
+  questions: Question[];
+  answers: { [questionIndex: string]: string };
+  startedAt: string;
+}
+
+export async function getCurrentTest(
+  userId: string,
+  testId: 1 | 2 | 3 | 4
+): Promise<CurrentTestSnapshot | null> {
+  const data = await fetchUserDoc(userId);
+  if (!data) return null;
+  return (data.currentTests?.[String(testId)] as CurrentTestSnapshot) ?? null;
+}
+
+export interface CompletedTestSession {
+  id: string;
+  testNumber: number;
+  state: string;
+  questions: Question[];
+  answers: { questionId: string; userAnswer: string; isCorrect: boolean; answeredAt: string }[];
+  startedAt: string;
+  completedAt: string;
+  score: number;
+  totalQuestions: number;
+}
+
+export async function getRecentTestSession(
+  userId: string,
+  testId: 1 | 2 | 3 | 4
+): Promise<CompletedTestSession | null> {
+  const data = await fetchUserDoc(userId);
+  if (!data) return null;
+  const sessions = (data.completedTests ?? []).filter((s) => s.testNumber === testId);
+  if (sessions.length === 0) return null;
+  return sessions[sessions.length - 1] as CompletedTestSession;
+}

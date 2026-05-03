@@ -1,4 +1,6 @@
 import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
+import fs from 'fs';
+import path from 'path';
 import { z } from 'zod';
 import { ok, fail, formatStateRequiredError } from '@/lib/server/mcp-tool-helpers';
 import { states } from '@/data/states';
@@ -60,25 +62,36 @@ type ToolEntry = {
 // Re-export for convenience so tool modules only need to import from mcp-tools.ts if desired.
 export { z, ok, fail };
 
-function formatQuestionForTest(q: ReturnType<typeof shuffleQuestionOptions>, issuerUrl: string) {
+function readSignSvg(signId: string): string | null {
+  try {
+    const filePath = path.join(process.cwd(), 'public', 'signs', `${signId}.svg`);
+    return fs.readFileSync(filePath, 'utf-8');
+  } catch {
+    return null;
+  }
+}
+
+function formatQuestionForTest(q: ReturnType<typeof shuffleQuestionOptions>, _issuerUrl: string) {
   const signId = SIGN_BY_QUESTION_ID[q.questionId];
+  const svg = signId ? readSignSvg(signId) : null;
   return {
     questionId: q.questionId,
     question: q.question,
     category: q.category,
     options: { A: q.optionA, B: q.optionB, C: q.optionC, D: q.optionD },
-    ...(signId ? { imageUrl: `${issuerUrl}/signs/${signId}.svg` } : {}),
+    ...(svg ? { imageSvg: svg } : {}),
   };
 }
 
-function formatQuestion(q: ReturnType<typeof shuffleQuestionOptions>, issuerUrl: string) {
+function formatQuestion(q: ReturnType<typeof shuffleQuestionOptions>, _issuerUrl: string) {
   const signId = SIGN_BY_QUESTION_ID[q.questionId];
+  const svg = signId ? readSignSvg(signId) : null;
   return {
     questionId: q.questionId,
     question: q.question,
     category: q.category,
     options: { A: q.optionA, B: q.optionB, C: q.optionC, D: q.optionD },
-    ...(signId ? { imageUrl: `${issuerUrl}/signs/${signId}.svg` } : {}),
+    ...(svg ? { imageSvg: svg } : {}),
   };
 }
 

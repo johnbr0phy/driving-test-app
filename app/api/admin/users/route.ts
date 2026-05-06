@@ -115,7 +115,7 @@ export async function GET(request: NextRequest) {
     //
     const db = getAdminDb();
 
-    const [lightSnap, fullSnap, sharesDoc] = await Promise.all([
+    const [lightSnap, fullSnap, sharesDoc, referralVisitsDoc] = await Promise.all([
       db.collection('users')
         .select('selectedState', 'lastUpdated', 'activeDates', 'subscription', 'createdAt', 'referredBy', 'referralQualifiedAt', 'referredAt', 'qualifiedReferralCount', 'referralCount')
         .get(),
@@ -124,6 +124,7 @@ export async function GET(request: NextRequest) {
         .limit(100)
         .get(),
       db.doc('analytics/shares').get(),
+      db.doc('analytics/referralVisits').get(),
     ]);
 
     // ── Aggregate stats from ALL users ─────────────────────────────────────
@@ -356,6 +357,23 @@ export async function GET(request: NextRequest) {
       displayDate: new Date(dateStr + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
     }));
 
+    // Top-of-funnel referral visits (written by /api/referrals/track-visit on
+    // every ?ref= landing). Independent of whether the visitor signs up.
+    const referralVisitsData = referralVisitsDoc.exists ? referralVisitsDoc.data() : null;
+    const referralVisitsDaily = (referralVisitsData?.daily as Record<string, number>) || {};
+    const referralVisitsValidDaily = (referralVisitsData?.validDaily as Record<string, number>) || {};
+    const dailyReferralVisits = last30Dates.map((dateStr) => {
+      const total = referralVisitsDaily[dateStr] || 0;
+      const valid = referralVisitsValidDaily[dateStr] || 0;
+      return {
+        date: dateStr,
+        count: total,
+        validCount: valid,
+        invalidCount: Math.max(0, total - valid),
+        displayDate: new Date(dateStr + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
+      };
+    });
+
     // Top referrers, sorted by qualified count desc
     const topReferrers = Object.entries(referrerCounts)
       .sort(([, a], [, b]) => b - a)
@@ -371,6 +389,7 @@ export async function GET(request: NextRequest) {
       dailyNewVsReturning,
       top5States,
       dailyReferredSignups,
+      dailyReferralVisits,
       topReferrers,
       totalUsers,
       stats: {
@@ -385,6 +404,9 @@ export async function GET(request: NextRequest) {
         shareClicksDaily: (sharesData?.daily as Record<string, number>) || {},
         referredUsers,
         qualifiedReferredUsers,
+        totalReferralVisits: (referralVisitsData?.total as number) || 0,
+        totalValidReferralVisits: (referralVisitsData?.validTotal as number) || 0,
+        referralVisitsDaily,
       },
     };
 

@@ -766,7 +766,9 @@ export const useStore = create<AppState>()(
             const hasCompletedTests = data.completedTests && data.completedTests.length > 0;
             const hasTestAttempts = data.testAttempts && data.testAttempts.length > 0;
             const hasTrainingProgress = data.training?.totalCorrectAllTime > 0;
-            return hasCompletedTests || hasTestAttempts || hasTrainingProgress;
+            const hasSelectedState = !!data.selectedState;
+            const hasPremium = data.subscription?.isPremium === true;
+            return hasCompletedTests || hasTestAttempts || hasTrainingProgress || hasSelectedState || hasPremium;
           }
           return false;
         } catch (error) {
@@ -776,7 +778,7 @@ export const useStore = create<AppState>()(
       },
 
       saveToFirestore: async () => {
-        const { userId, isGuest, selectedState, currentTests, completedTests, testAttempts, training, trainingSets, trainingAnswerHistory, activeDates, photoURL, subscription, language, emailConsent } = get();
+        const { userId, isGuest, selectedState, currentTests, completedTests, testAttempts, training, trainingSets, trainingAnswerHistory, activeDates, photoURL, language, emailConsent } = get();
         if (!userId || isGuest) return; // Don't save if no user is logged in or guest mode
 
         try {
@@ -833,6 +835,8 @@ export const useStore = create<AppState>()(
           //   - unsubscribed (set by /api/unsubscribe; was hardcoded to false
           //     here, which would auto-resubscribe users on their next save)
           //   - createdAt (set once by /api/send-welcome-email)
+          //   - subscription (set by Stripe webhook; client writing isPremium:false
+          //     would silently undo a webhook-granted premium on the next save)
           //
           // updateDoc replaces top-level fields entirely (no deep merge), so
           // setSelectedState's reset-to-empty for currentTests/trainingSets
@@ -861,7 +865,6 @@ export const useStore = create<AppState>()(
             trainingSets,
             trainingAnswerHistory,
             activeDates: updatedActiveDates,
-            subscription,
             language,
             lastUpdated: new Date().toISOString(),
             // Denormalized counters for admin dashboard

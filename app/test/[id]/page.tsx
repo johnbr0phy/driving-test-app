@@ -33,6 +33,8 @@ export default function TestPage() {
   const ctaText = (language === "es" ? es.testCtas : en.testCtas)[ctaIndex];
 
   const isGuest = useStore((state) => state.isGuest);
+  const hasPremiumAccess = useStore((state) => state.hasPremiumAccess);
+  const isPremium = hydrated ? hasPremiumAccess() : false;
   const { user } = useAuth();
 
   const handleUpgrade = async () => {
@@ -220,13 +222,22 @@ export default function TestPage() {
       <TestPageHeader
         backHref="/dashboard"
         right={
-          <button
-            type="button"
-            onClick={() => setPaywallOpen(true)}
-            className="text-sm font-medium text-brand hover:text-brand-dark transition-colors"
-          >
-            {ctaText}
-          </button>
+          isPremium ? (
+            <Link
+              href="/stats"
+              className="text-sm font-medium text-brand hover:text-brand-dark transition-colors"
+            >
+              {t("dashboard.viewStats")}
+            </Link>
+          ) : (
+            <button
+              type="button"
+              onClick={() => setPaywallOpen(true)}
+              className="text-sm font-medium text-brand hover:text-brand-dark transition-colors"
+            >
+              {ctaText}
+            </button>
+          )
         }
       />
       <div className="container mx-auto px-4 py-8 max-w-lg md:max-w-2xl lg:max-w-4xl">

@@ -526,6 +526,7 @@ export const es: TranslationKeys = {
     copied: "¡Copiado!",
     yourLinkLabel: "Tu enlace",
     qualifyNote: "Cuenta cuando un amigo se registra y elige su estado.",
+    humanNote: "Por favor, no agregues tus 3 Gmails al azar que nunca usas. TigerTest crece de un amigo a la vez, así que pégalo en el tablón de tu escuela y haznos un favor. ¡Gracias! 🙏",
     payInstead: "O desbloquea con Premium →",
     shareText: "Estoy usando TigerTest para estudiar para mi examen de manejo. Está muy bueno, pruébalo:",
     signupPrompt: "Crea una cuenta gratis para obtener tu enlace de invitación.",

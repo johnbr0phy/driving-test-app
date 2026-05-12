@@ -526,6 +526,7 @@ export const en = {
     copied: "Copied!",
     yourLinkLabel: "Your link",
     qualifyNote: "Counts when a friend signs up and picks their state.",
+    humanNote: "Please don't just add your 3 random Gmails you never use. TigerTest grows one friend at a time, so pin this to the school message board and do us a favor. Thank you 🙏",
     payInstead: "Or unlock with Premium →",
     shareText: "I'm using TigerTest to study for my driving test. It's actually good, try it:",
     signupPrompt: "Create a free account to get your invite link.",

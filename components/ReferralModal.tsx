@@ -251,8 +251,11 @@ export function ReferralModal({
               </button>
             )}
 
-            <p className="text-xs text-gray-500 text-center mb-3">
+            <p className="text-xs text-gray-500 text-center mb-2">
               {t("referral.qualifyNote")}
+            </p>
+            <p className="text-xs text-gray-500 text-center mb-3 leading-relaxed">
+              {t("referral.humanNote")}
             </p>
 
             {/* Pay-instead escape hatch */}

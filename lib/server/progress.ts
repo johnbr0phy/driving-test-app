@@ -6,8 +6,7 @@
  * All Date values are stored as ISO 8601 strings (toISOString()).
  * updateDoc is used for existing docs; setDoc with merge: true for first-time saves.
  * Server-owned fields are NOT written by saveToFirestore (they must not be overwritten here):
- *   referralCode, referredBy, referredAt, referralCount, qualifiedReferralCount,
- *   referralQualifiedAt, unsubscribed, createdAt
+ *   unsubscribed, createdAt
  *
  * ─── Top-level fields ────────────────────────────────────────────────────────
  *
@@ -106,8 +105,7 @@
  *   }
  *
  * ─── Premium / unlock rules ──────────────────────────────────────────────────
- *   Test 4 and Training Set 4 require subscription.isPremium === true.
- *   Training Set 3 additionally unlocks via qualifiedReferralCount >= 3 (server-owned field).
+ *   Tests 3-4 and Training Sets 3-4 require subscription.isPremium === true.
  *   Sets 1 and 2 are always free.
  *   CDL tests (101+) are out of scope for v1.
  *
@@ -196,7 +194,6 @@ interface FirestoreUserDoc {
   trainingSets?: { [setId: string]: FirestoreTrainingSet };
   trainingAnswerHistory?: FirestoreTrainingAnswerHistory[];
   dailyQuestionCounts?: { [date: string]: number };
-  qualifiedReferralCount?: number;
 }
 
 // ─── Public return types ──────────────────────────────────────────────────────

@@ -16,7 +16,6 @@ import {
 import { auth } from "@/lib/firebase";
 import { useStore } from "@/store/useStore";
 import { AccountConflictDialog } from "@/components/AccountConflictDialog";
-import { PENDING_REFERRAL_KEY } from "@/components/ReferralCapture";
 
 interface AccountConflict {
   user: User;
@@ -56,52 +55,6 @@ async function sendWelcomeEmail(userId: string, email: string, displayName: stri
     });
   } catch (err) {
     console.error("Failed to send welcome email:", err);
-  }
-}
-
-// Exported so the signup page can run the claim *before* its own
-// saveToFirestore. The auth listener also calls this, but the claim API is
-// idempotent and clears the localStorage marker on first success so the
-// second call short-circuits.
-export async function claimPendingReferral(user: User) {
-  if (typeof window === "undefined") return;
-  let code: string | null = null;
-  try {
-    code = localStorage.getItem(PENDING_REFERRAL_KEY);
-  } catch {
-    return;
-  }
-  if (!code) return;
-  try {
-    const idToken = await user.getIdToken();
-    const res = await fetch("/api/referrals/claim", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${idToken}`,
-      },
-      body: JSON.stringify({ code }),
-    });
-    // Clear regardless of outcome - we don't want the code to live forever and
-    // self-referrals / invalid codes shouldn't be re-attempted.
-    if (res.ok || res.status === 400 || res.status === 404) {
-      localStorage.removeItem(PENDING_REFERRAL_KEY);
-    }
-    if (res.ok) {
-      const data = await res.json().catch(() => ({}));
-      const referredBy = data?.referredBy;
-      const referredAt = data?.referredAt;
-      if (referredBy) {
-        // Stamp both fields in memory so the next saveToFirestore (which does
-        // a full-doc replace) writes them back instead of clobbering them.
-        useStore.getState().setReferralData({
-          referredBy,
-          ...(referredAt ? { referredAt } : {}),
-        });
-      }
-    }
-  } catch (err) {
-    console.error("Failed to claim referral:", err);
   }
 }
 
@@ -171,9 +124,6 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
           if (user.photoURL && !photoURL) {
             setPhotoURL(user.photoURL);
           }
-
-          // Brand-new account from guest - try to claim a pending referral
-          await claimPendingReferral(user);
         } else {
           // Load user data from Firestore (normal login)
           await loadUserData(user.uid);
@@ -181,11 +131,6 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
           // If user has a Google photo and no custom photo is set, use Google photo
           if (user.photoURL && !photoURL) {
             setPhotoURL(user.photoURL);
-          }
-
-          // Only attempt the claim if this user hasn't already been credited
-          if (!useStore.getState().referredBy) {
-            await claimPendingReferral(user);
           }
         }
       } else {

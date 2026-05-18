@@ -8,7 +8,7 @@ import { db } from "@/lib/firebase";
 import { deleteDoc, doc } from "firebase/firestore";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { states } from "@/data/states";
-import { ArrowLeft, Users, RefreshCw, Trash2, UserPlus, Activity, TrendingUp, TrendingDown, Minus, Share2, Gift, MousePointerClick } from "lucide-react";
+import { ArrowLeft, Users, RefreshCw, Trash2, UserPlus, Activity, TrendingUp, TrendingDown, Minus, Share2 } from "lucide-react";
 import { AreaChart, Area, BarChart, Bar, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from "recharts";
 import Link from "next/link";
 import Image from "next/image";
@@ -36,30 +36,6 @@ interface Stats {
   payingUsers: number;
   totalShareClicks: number;
   shareClicksDaily: Record<string, number>;
-  referredUsers: number;
-  qualifiedReferredUsers: number;
-  totalReferralVisits: number;
-  totalValidReferralVisits: number;
-  referralVisitsDaily: Record<string, number>;
-}
-
-interface DailyReferredSignup {
-  date: string;
-  count: number;
-  displayDate: string;
-}
-
-interface DailyReferralVisit {
-  date: string;
-  count: number;
-  validCount: number;
-  invalidCount: number;
-  displayDate: string;
-}
-
-interface TopReferrer {
-  uid: string;
-  qualifiedCount: number;
 }
 
 export default function AdminPage() {
@@ -77,10 +53,7 @@ export default function AdminPage() {
   const [dailyByState, setDailyByState] = useState<Record<string, unknown>[]>([]);
   const [dailyNewVsReturning, setDailyNewVsReturning] = useState<{ displayDate: string; new: number; returning: number }[]>([]);
   const [top5States, setTop5States] = useState<string[]>([]);
-  const [dailyReferredSignups, setDailyReferredSignups] = useState<DailyReferredSignup[]>([]);
-  const [dailyReferralVisits, setDailyReferralVisits] = useState<DailyReferralVisit[]>([]);
-  const [topReferrers, setTopReferrers] = useState<TopReferrer[]>([]);
-  const [graphMetric, setGraphMetric] = useState<'active' | 'retention' | 'cumulative' | 'byState' | 'newVsReturning' | 'referrals' | 'referralVisits'>('active');
+  const [graphMetric, setGraphMetric] = useState<'active' | 'retention' | 'cumulative' | 'byState' | 'newVsReturning'>('active');
 
   const fetchUsers = async (forceRefresh = false) => {
     setLoading(true);
@@ -116,9 +89,6 @@ export default function AdminPage() {
       setDailyByState(data.dailyByState || []);
       setDailyNewVsReturning(data.dailyNewVsReturning || []);
       setTop5States(data.top5States || []);
-      setDailyReferredSignups(data.dailyReferredSignups || []);
-      setDailyReferralVisits(data.dailyReferralVisits || []);
-      setTopReferrers(data.topReferrers || []);
     } catch (err) {
       console.error("Error fetching users:", err);
       setError(err instanceof Error ? err.message : "Failed to load users");
@@ -161,11 +131,6 @@ export default function AdminPage() {
           payingUsers: stats.payingUsers - (deletedUser.isPremium ? 1 : 0),
           totalShareClicks: stats.totalShareClicks,
           shareClicksDaily: stats.shareClicksDaily,
-          referredUsers: stats.referredUsers,
-          qualifiedReferredUsers: stats.qualifiedReferredUsers,
-          totalReferralVisits: stats.totalReferralVisits,
-          totalValidReferralVisits: stats.totalValidReferralVisits,
-          referralVisitsDaily: stats.referralVisitsDaily,
         });
       }
     } catch (err) {
@@ -350,46 +315,6 @@ export default function AdminPage() {
               </div>
             </CardContent>
           </Card>
-          <Card>
-            <CardContent className="p-6">
-              <div className="flex items-center gap-4">
-                <MousePointerClick className="h-8 w-8 text-blue-500" />
-                <div>
-                  <p className="text-2xl font-bold">{stats?.totalReferralVisits || 0}</p>
-                  <p className="text-sm text-gray-500">Referral Visits</p>
-                  <p className="text-xs text-gray-400">
-                    {(() => {
-                      const today = new Date().toISOString().split('T')[0];
-                      const todayCount = stats?.referralVisitsDaily?.[today] || 0;
-                      const valid = stats?.totalValidReferralVisits || 0;
-                      const total = stats?.totalReferralVisits || 0;
-                      if (todayCount > 0) return `${todayCount} today · ${valid}/${total} valid`;
-                      return total > 0 ? `${valid}/${total} valid` : 'none yet';
-                    })()}
-                  </p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardContent className="p-6">
-              <div className="flex items-center gap-4">
-                <Gift className="h-8 w-8 text-amber-500" />
-                <div>
-                  <p className="text-2xl font-bold">
-                    {stats?.qualifiedReferredUsers || 0}
-                    <span className="text-base font-normal text-gray-400">/{stats?.referredUsers || 0}</span>
-                  </p>
-                  <p className="text-sm text-gray-500">Referrals Activated</p>
-                  <p className="text-xs text-gray-400">
-                    {stats?.referredUsers
-                      ? `${Math.round((stats.qualifiedReferredUsers / stats.referredUsers) * 100)}% picked a state`
-                      : 'no referrals yet'}
-                  </p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
         </div>
 
         {/* Switchable Graph */}
@@ -402,8 +327,6 @@ export default function AdminPage() {
                 {graphMetric === 'cumulative' && 'Total Users (30 Days)'}
                 {graphMetric === 'byState' && 'Active by State (30 Days)'}
                 {graphMetric === 'newVsReturning' && 'New vs Returning (30 Days)'}
-                {graphMetric === 'referrals' && 'Referred Signups (30 Days)'}
-                {graphMetric === 'referralVisits' && 'Referral Visits (30 Days)'}
               </CardTitle>
               <div className="flex flex-wrap gap-1">
                 {([
@@ -412,8 +335,6 @@ export default function AdminPage() {
                   { key: 'cumulative', label: 'Total' },
                   { key: 'byState', label: 'By State' },
                   { key: 'newVsReturning', label: 'New vs Ret.' },
-                  { key: 'referralVisits', label: 'Ref. Visits' },
-                  { key: 'referrals', label: 'Referrals' },
                 ] as const).map(({ key, label }) => (
                   <Button
                     key={key}
@@ -499,39 +420,6 @@ export default function AdminPage() {
                     })}
                   </LineChart>
 
-                /* Referred signups - bar chart */
-                ) : graphMetric === 'referrals' ? (
-                  <BarChart
-                    data={dailyReferredSignups}
-                    margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
-                  >
-                    <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
-                    <XAxis dataKey="displayDate" tick={{ fontSize: 12 }} tickLine={false} axisLine={{ stroke: '#e5e7eb' }} interval="preserveStartEnd" tickMargin={8} />
-                    <YAxis tick={{ fontSize: 12 }} tickLine={false} axisLine={{ stroke: '#e5e7eb' }} allowDecimals={false} />
-                    <Tooltip
-                      contentStyle={{ backgroundColor: 'white', border: '1px solid #e5e7eb', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}
-                      formatter={(value) => [value ?? 0, 'Referred Signups']}
-                    />
-                    <Bar dataKey="count" fill="#f59e0b" radius={[4, 4, 0, 0]} />
-                  </BarChart>
-
-                /* Referral visits - stacked bar (valid + invalid) */
-                ) : graphMetric === 'referralVisits' ? (
-                  <BarChart
-                    data={dailyReferralVisits}
-                    margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
-                  >
-                    <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
-                    <XAxis dataKey="displayDate" tick={{ fontSize: 12 }} tickLine={false} axisLine={{ stroke: '#e5e7eb' }} interval="preserveStartEnd" tickMargin={8} />
-                    <YAxis tick={{ fontSize: 12 }} tickLine={false} axisLine={{ stroke: '#e5e7eb' }} allowDecimals={false} />
-                    <Tooltip
-                      contentStyle={{ backgroundColor: 'white', border: '1px solid #e5e7eb', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}
-                    />
-                    <Legend />
-                    <Bar dataKey="validCount" name="Valid Code" stackId="visits" fill="#3b82f6" radius={[0, 0, 0, 0]} />
-                    <Bar dataKey="invalidCount" name="Invalid / Stale" stackId="visits" fill="#cbd5e1" radius={[4, 4, 0, 0]} />
-                  </BarChart>
-
                 /* New vs Returning - stacked area chart */
                 ) : (
                   <AreaChart
@@ -573,35 +461,6 @@ export default function AdminPage() {
                     </span>
                   </div>
                 ))}
-              </div>
-            </CardContent>
-          </Card>
-        )}
-
-        {/* Top Referrers */}
-        {topReferrers.length > 0 && (
-          <Card className="mb-6">
-            <CardHeader>
-              <CardTitle>Top Referrers</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="overflow-x-auto">
-                <table className="w-full text-sm">
-                  <thead>
-                    <tr className="border-b">
-                      <th className="text-left py-2 px-4 font-medium text-gray-500">User ID</th>
-                      <th className="text-right py-2 px-4 font-medium text-gray-500">Activated Friends</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {topReferrers.map((r) => (
-                      <tr key={r.uid} className="border-b hover:bg-gray-50">
-                        <td className="py-2 px-4 font-mono text-xs text-gray-700">{r.uid}</td>
-                        <td className="py-2 px-4 text-right font-bold text-amber-600">{r.qualifiedCount}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
               </div>
             </CardContent>
           </Card>

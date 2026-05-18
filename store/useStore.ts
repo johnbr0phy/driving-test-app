@@ -125,25 +125,12 @@ interface AppState {
   setPremiumStatus: (status: { isPremium: boolean; purchasedAt: string; stripeCustomerId: string; stripePaymentId: string }) => void;
   isTrainingSetUnlocked: (setId: number) => boolean;
 
-  // Referrals (friend invites unlock training set 3)
-  referralCode: string | null;
-  referredBy: string | null;
-  referralCount: number;
-  qualifiedReferralCount: number;
-  referralQualifiedAt: string | null;
-  referredAt: string | null;
-  setReferralData: (data: { referralCode?: string | null; referredBy?: string | null; referralCount?: number; qualifiedReferralCount?: number; referralQualifiedAt?: string | null; referredAt?: string | null }) => void;
-  hasReferralUnlock: () => boolean;
-
   // True once loadUserData() has resolved against Firestore. Lets gated UI
   // (e.g., dashboard onboarding redirect) wait for the real value instead of
   // bouncing logged-in users on a fresh browsing context where localStorage
   // is empty but Firestore has their state.
   firestoreLoaded: boolean;
 }
-
-// Number of qualified friend signups required to unlock Training Set 3
-export const REFERRALS_REQUIRED = 3;
 
 export const useStore = create<AppState>()(
   persist(
@@ -181,12 +168,6 @@ export const useStore = create<AppState>()(
         stripeCustomerId: null,
         stripePaymentId: null,
       },
-      referralCode: null,
-      referredBy: null,
-      referralCount: 0,
-      qualifiedReferralCount: 0,
-      referralQualifiedAt: null,
-      referredAt: null,
       firestoreLoaded: false,
 
       // Actions
@@ -722,20 +703,6 @@ export const useStore = create<AppState>()(
               trainingSets: data.trainingSets || {},
               trainingAnswerHistory: data.trainingAnswerHistory || [],
               activeDates: data.activeDates || [],
-              referralCode: data.referralCode || null,
-              referredBy: data.referredBy || null,
-              referralCount: data.referralCount || 0,
-              qualifiedReferralCount: data.qualifiedReferralCount || 0,
-              referralQualifiedAt: data.referralQualifiedAt
-                ? (typeof data.referralQualifiedAt?.toDate === 'function'
-                    ? data.referralQualifiedAt.toDate().toISOString()
-                    : String(data.referralQualifiedAt))
-                : null,
-              referredAt: data.referredAt
-                ? (typeof data.referredAt?.toDate === 'function'
-                    ? data.referredAt.toDate().toISOString()
-                    : String(data.referredAt))
-                : null,
               photoURL: data.photoURL || null,
               userId,
               subscription: data.subscription || {
@@ -818,20 +785,7 @@ export const useStore = create<AppState>()(
 
           // Per-field write that leaves server-owned fields untouched.
           //
-          // Background: this used to be a `setDoc` (full-doc replace), which
-          // stomped on fields the server writes asynchronously - notably the
-          // referral counters (referralCount, qualifiedReferralCount) and
-          // attribution stamps (referredBy, referredAt, referralQualifiedAt).
-          // The inviter-side counters are incremented atomically in
-          // /api/referrals/{claim,qualify}; if the inviter then took any
-          // action that triggered saveToFirestore, we'd write back the stale
-          // in-memory value and silently undo the server's increment. That
-          // produced impossible totals like qualifiedCount > referralCount
-          // on the admin dashboard.
-          //
           // We deliberately omit:
-          //   - referralCode, referredBy, referredAt, referralCount,
-          //     qualifiedReferralCount, referralQualifiedAt (server-owned)
           //   - unsubscribed (set by /api/unsubscribe; was hardcoded to false
           //     here, which would auto-resubscribe users on their next save)
           //   - createdAt (set once by /api/send-welcome-email)
@@ -942,12 +896,6 @@ export const useStore = create<AppState>()(
             stripeCustomerId: null,
             stripePaymentId: null,
           },
-          referralCode: null,
-          referredBy: null,
-          referralCount: 0,
-          qualifiedReferralCount: 0,
-          referralQualifiedAt: null,
-          referredAt: null,
           firestoreLoaded: false,
         });
       },
@@ -989,30 +937,8 @@ export const useStore = create<AppState>()(
         if (setId >= 101) return true;
         // Sets 1 and 2 are always free
         if (setId <= 2) return true;
-        // Premium unlocks everything
-        if (get().hasPremiumAccess()) return true;
-        // Set 3 also unlocks via referrals (3 friends signed up + picked a state),
-        // or for users who arrived via someone else's referral link
-        if (setId === 3) return get().hasReferralUnlock();
-        // Set 4 (and beyond) stay premium-only
-        return false;
-      },
-
-      setReferralData: (data) => {
-        const updates: Partial<AppState> = {};
-        if (data.referralCode !== undefined) updates.referralCode = data.referralCode;
-        if (data.referredBy !== undefined) updates.referredBy = data.referredBy;
-        if (data.referralCount !== undefined) updates.referralCount = data.referralCount;
-        if (data.qualifiedReferralCount !== undefined) updates.qualifiedReferralCount = data.qualifiedReferralCount;
-        if (data.referralQualifiedAt !== undefined) updates.referralQualifiedAt = data.referralQualifiedAt;
-        if (data.referredAt !== undefined) updates.referredAt = data.referredAt;
-        set(updates);
-      },
-
-      hasReferralUnlock: () => {
-        const { qualifiedReferralCount, isGuest, userId } = get();
-        if (isGuest || !userId) return false;
-        return (qualifiedReferralCount ?? 0) >= REFERRALS_REQUIRED;
+        // Sets 3+ require premium
+        return get().hasPremiumAccess();
       },
     }),
     {

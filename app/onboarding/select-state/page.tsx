@@ -7,7 +7,6 @@ import { useAuth } from "@/contexts/AuthContext";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
 import { useStore } from "@/store/useStore";
-import { auth } from "@/lib/firebase";
 import { states } from "@/data/states";
 import {
   Select,
@@ -41,22 +40,6 @@ export default function OnboardingSelectStatePage() {
 
     // Save state to store (which will sync to Firestore)
     setStoreState(selectedState);
-
-    // Fire-and-forget: if this user was referred, credit the referrer.
-    // The endpoint is idempotent + a no-op for non-referred users.
-    if (user) {
-      auth.currentUser
-        ?.getIdToken()
-        .then((idToken) =>
-          fetch("/api/referrals/qualify", {
-            method: "POST",
-            headers: { Authorization: `Bearer ${idToken}` },
-          })
-        )
-        .catch(() => {
-          // Non-fatal - referrer can also be qualified later via a backfill.
-        });
-    }
 
     // Redirect to dashboard
     router.push("/dashboard");

@@ -105,11 +105,27 @@ export function ParentPayShareModal({ open, onOpenChange }: ParentPayShareModalP
         </DialogHeader>
 
         {loading ? (
-          <div className="py-10 text-center text-sm text-gray-500">Generating link…</div>
+          <div className="flex flex-col gap-3" aria-busy="true" aria-label="Generating link">
+            {[0, 1, 2].map((i) => (
+              <div
+                key={i}
+                className="h-[72px] w-full rounded-2xl bg-gray-100 animate-pulse"
+              />
+            ))}
+            <div className="mt-2 text-center text-xs text-gray-400">
+              Generating link…
+            </div>
+          </div>
         ) : error ? (
-          <div className="py-6 text-center">
-            <div className="text-sm text-red-600 mb-3">{error}</div>
-            <Button variant="outline" onClick={() => onOpenChange(false)}>Close</Button>
+          <div className="flex flex-col gap-3">
+            <div className="flex items-center justify-center min-h-[216px] rounded-2xl bg-red-50 border border-red-100 px-5 text-center">
+              <div className="text-sm text-red-600">{error}</div>
+            </div>
+            <div className="mt-2 text-center">
+              <Button variant="outline" size="sm" onClick={() => onOpenChange(false)}>
+                Close
+              </Button>
+            </div>
           </div>
         ) : data ? (
           <div className="flex flex-col gap-3">

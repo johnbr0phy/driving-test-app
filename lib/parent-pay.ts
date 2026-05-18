@@ -30,21 +30,19 @@ export function buildSmsShareBody(siteUrl: string, token: string): string {
 }
 
 export function buildEmailShareSubject(): string {
-  return "your teen is studying for their permit test — can you help?";
+  return "can you unlock this for me?";
 }
 
 export function buildEmailShareBody(siteUrl: string, token: string): string {
   const link = buildParentPayUrl(siteUrl, token);
   return [
-    "Hi,",
+    "hey,",
     "",
-    "Your teen is studying for their permit test using TigerTest and asked you to unlock the full study material.",
+    "im using tigertest to study for my DMV permit test and i need premium to keep going with the rest of the practice questions.",
     "",
-    `Tap here to see what they've been working on and unlock it: ${link}`,
+    `can you unlock it for me? its $9.99 one time, no subscription. heres the link → ${link}`,
     "",
-    "$9.99 one-time, no subscription, secure Stripe checkout.",
-    "",
-    "— TigerTest",
+    "thanks!",
   ].join("\n");
 }
 

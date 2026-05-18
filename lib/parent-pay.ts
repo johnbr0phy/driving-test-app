@@ -26,7 +26,7 @@ export function buildParentPayUrl(siteUrl: string, token: string): string {
 
 export function buildSmsShareBody(siteUrl: string, token: string): string {
   // Lowercase, no salutation — works for whoever the teen sends it to.
-  return `hey can you unlock this for me, im studying for my permit test. $9.99 one time → ${buildParentPayUrl(siteUrl, token)}`;
+  return `hey can you unlock this for me, im studying for my DMV permit test. $9.99 one time → ${buildParentPayUrl(siteUrl, token)}`;
 }
 
 export function buildEmailShareSubject(): string {

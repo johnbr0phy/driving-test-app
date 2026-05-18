@@ -47,9 +47,17 @@ export function buildEmailShareBody(siteUrl: string, token: string): string {
 }
 
 // Counts every question the teen has interacted with — used on the parent
-// landing page to show "your teen has practiced X questions". Mirrors the
-// per-user math in app/api/admin/users/route.ts so the numbers match.
+// landing page to show "your teen has practiced X questions". Prefers the
+// `_stats` denormalized counters written by the web client's saveToFirestore;
+// falls back to recomputing from raw fields if `_stats` is missing.
 export function countQuestionsPracticed(userData: Record<string, unknown>): number {
+  const stats = userData._stats as
+    | { trainingQuestionsAnswered?: number; testQuestionsAnswered?: number }
+    | undefined;
+  if (stats && (stats.trainingQuestionsAnswered != null || stats.testQuestionsAnswered != null)) {
+    return (stats.trainingQuestionsAnswered ?? 0) + (stats.testQuestionsAnswered ?? 0);
+  }
+
   let total = 0;
 
   const training = (userData.training as Record<string, unknown> | undefined) ?? {};
@@ -57,8 +65,10 @@ export function countQuestionsPracticed(userData: Record<string, unknown>): numb
   total += onboardingMastered.length;
 
   const trainingSets = (userData.trainingSets as Record<string, Record<string, unknown>> | undefined) ?? {};
-  for (const setId of ["1", "2", "3", "4"]) {
-    const s = trainingSets[setId] || {};
+  // Tolerate both numeric ("1") and number-typed keys defensively — admin uses
+  // the same dual lookup, and an older code path wrote sets with number keys.
+  for (const setId of [1, 2, 3, 4]) {
+    const s = trainingSets[String(setId)] || trainingSets[setId as unknown as string] || {};
     total += ((s.masteredIds as unknown[] | undefined) ?? []).length;
     total += ((s.wrongQueue as unknown[] | undefined) ?? []).length;
   }

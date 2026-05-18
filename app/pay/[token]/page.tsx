@@ -89,7 +89,8 @@ export default async function ParentPayPage({ params, searchParams }: PageProps)
               </div>
               <ul className="space-y-2 text-sm text-gray-800 mb-6">
                 <li className="flex gap-2"><span className="text-green-600">✓</span> The remaining 100 practice questions</li>
-                <li className="flex gap-2"><span className="text-green-600">✓</span> Practice Test 4 (full 50-question exam)</li>
+                <li className="flex gap-2"><span className="text-green-600">✓</span> Practice Test C (full 50-question exam)</li>
+                <li className="flex gap-2"><span className="text-green-600">✓</span> Practice Test D (full 50-question exam)</li>
                 <li className="flex gap-2"><span className="text-green-600">✓</span> Stats page — see exactly which questions they keep getting wrong</li>
               </ul>
 

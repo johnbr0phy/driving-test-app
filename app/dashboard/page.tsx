@@ -383,7 +383,7 @@ function DashboardContent() {
   return (
     <div className="flex-1 bg-gray-50 relative">
       <div className="absolute inset-x-0 top-0 h-96 bg-gradient-to-b from-brand-light to-transparent pointer-events-none" />
-      <div className="relative container mx-auto px-4 py-6 max-w-lg md:max-w-2xl lg:max-w-4xl">
+      <div className="relative container mx-auto px-4 sm:px-6 py-6 pb-10 max-w-lg md:max-w-2xl lg:max-w-4xl">
 
         {/* Paywall Modal */}
         <PaywallModal
@@ -600,7 +600,7 @@ function DashboardContent() {
 
         {/* Bottom banner - urgency upsell for free users, thank-you for premium */}
         {!isGuest && !isPremium && (
-          <div className="rounded-xl bg-white border border-gray-100 px-5 py-4">
+          <div className="rounded-xl bg-white border border-gray-100 p-4">
             <div className="flex items-center gap-3">
               <Image
                 src="/tiger_face_01.png"
@@ -628,7 +628,7 @@ function DashboardContent() {
         )}
 
         {isPremium && (
-          <div className="rounded-xl bg-white border border-gray-100 px-5 py-4">
+          <div className="rounded-xl bg-white border border-gray-100 p-4">
             <div className="flex items-center gap-3 mb-3">
               <Image
                 src="/tiger_face_01.png"

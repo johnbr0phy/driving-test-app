@@ -13,6 +13,7 @@ import { CheckCircle, Star } from "lucide-react";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { en, es } from "@/i18n";
 import Image from "next/image";
+import { ParentPayShareModal } from "@/components/ParentPayShareModal";
 
 interface PaywallModalProps {
   open: boolean;
@@ -34,6 +35,7 @@ export function PaywallModal({
   const { t, language } = useTranslation();
   const dict = language === "es" ? es : en;
   const [loading, setLoading] = useState(false);
+  const [parentPayOpen, setParentPayOpen] = useState(false);
 
   const handleUpgrade = async () => {
     setLoading(true);
@@ -124,6 +126,13 @@ export function PaywallModal({
               {loading ? t("common.loading") : t("paywall.getPremium")}
             </Button>
             <button
+              onClick={() => setParentPayOpen(true)}
+              disabled={loading}
+              className="w-full border border-gray-300 hover:bg-gray-50 text-gray-900 font-semibold py-3 px-5 text-sm rounded-full transition-colors disabled:opacity-50"
+            >
+              Make your parents pay
+            </button>
+            <button
               onClick={() => onOpenChange(false)}
               disabled={loading}
               className="text-sm text-gray-400 hover:text-gray-600 py-2 transition-colors disabled:opacity-50"
@@ -142,6 +151,8 @@ export function PaywallModal({
           </div>
           <span className="text-xs text-gray-500">{t("paywall.socialProof")}</span>
         </div>
+
+        <ParentPayShareModal open={parentPayOpen} onOpenChange={setParentPayOpen} />
       </DialogContent>
     </Dialog>
   );

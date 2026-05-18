@@ -34,13 +34,6 @@ export default async function ParentPayPage({ params, searchParams }: PageProps)
   return (
     <div className="min-h-screen bg-gradient-to-b from-orange-50 to-white px-4 py-12">
       <div className="mx-auto max-w-md">
-        <div className="text-center mb-6">
-          <div className="text-2xl font-bold text-orange-600">TigerTest</div>
-          <div className="text-xs text-gray-500 uppercase tracking-wider mt-1">
-            DMV Permit Practice
-          </div>
-        </div>
-
         {alreadyPaid ? (
           <div className="bg-white rounded-2xl shadow-sm border border-green-200 p-6 text-center">
             <div className="text-4xl mb-2">✅</div>

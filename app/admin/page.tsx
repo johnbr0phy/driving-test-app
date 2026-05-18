@@ -198,7 +198,7 @@ export default function AdminPage() {
             Back to Dashboard
           </Link>
           <Card className="border-red-200 bg-red-50">
-            <CardContent className="p-6">
+            <CardContent className="p-4">
               <p className="text-red-600 font-medium">{error}</p>
             </CardContent>
           </Card>
@@ -225,9 +225,9 @@ export default function AdminPage() {
         </div>
 
         {/* Summary Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-7 gap-4 mb-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 mb-6">
           <Card>
-            <CardContent className="p-6">
+            <CardContent className="p-4">
               <div className="flex items-center gap-4">
                 <Users className="h-8 w-8 text-brand" />
                 <div>
@@ -241,7 +241,7 @@ export default function AdminPage() {
             </CardContent>
           </Card>
           <Card>
-            <CardContent className="p-6">
+            <CardContent className="p-4">
               <div className="flex items-center gap-4">
                 <Activity className="h-8 w-8 text-green-500" />
                 <div>
@@ -255,7 +255,7 @@ export default function AdminPage() {
             </CardContent>
           </Card>
           <Card>
-            <CardContent className="p-6">
+            <CardContent className="p-4">
               <div className="flex items-center gap-4">
                 <UserPlus className="h-8 w-8 text-purple-500" />
                 <div>
@@ -269,7 +269,7 @@ export default function AdminPage() {
             </CardContent>
           </Card>
           <Card>
-            <CardContent className="p-6">
+            <CardContent className="p-4">
               <div className="flex items-center gap-4">
                 {(() => {
                   const prev = stats?.activeUsersPrev7d || 0;
@@ -298,7 +298,7 @@ export default function AdminPage() {
             </CardContent>
           </Card>
           <Card>
-            <CardContent className="p-6">
+            <CardContent className="p-4">
               <div className="flex items-center gap-4">
                 <Share2 className="h-8 w-8 text-pink-500" />
                 <div>

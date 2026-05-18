@@ -36,8 +36,14 @@ export async function POST(request: NextRequest) {
     case 'checkout.session.completed': {
       const session = event.data.object as Stripe.Checkout.Session;
 
-      // Get user ID from metadata
-      const userId = session.metadata?.userId;
+      // Parent-pay flow: the buyer is the parent, the user to upgrade is the
+      // teen identified by metadata.teenUid (with metadata.parentPayToken so
+      // we can mark the request doc paid). Self-checkout uses metadata.userId.
+      const parentPayToken = session.metadata?.parentPayToken;
+      const teenUid = session.metadata?.teenUid;
+      const selfUserId = session.metadata?.userId;
+      const userId = parentPayToken && teenUid ? teenUid : selfUserId;
+
       if (!userId) {
         console.error('No userId in session metadata');
         return NextResponse.json(
@@ -46,7 +52,7 @@ export async function POST(request: NextRequest) {
         );
       }
 
-      // Update user's premium status in Firestore
+      // Update the (teen or self) user's premium status in Firestore.
       const adminDb = getAdminDb();
       const userRef = adminDb.collection('users').doc(userId);
       const userDoc = await userRef.get();
@@ -59,9 +65,24 @@ export async function POST(request: NextRequest) {
           purchasedAt: new Date().toISOString(),
           stripeCustomerId: session.customer as string,
           stripePaymentId: session.payment_intent as string,
+          ...(parentPayToken ? { paidVia: 'parent_pay' } : {}),
         },
         lastUpdated: new Date().toISOString(),
       });
+
+      // Mark the parent-pay request as paid so the landing page reflects it
+      // and we can build follow-up analytics later.
+      if (parentPayToken) {
+        await adminDb.collection('parentPayRequests').doc(parentPayToken).set(
+          {
+            status: 'paid',
+            paidAt: new Date().toISOString(),
+            paidStripeCustomerId: session.customer as string,
+            paidStripePaymentIntentId: session.payment_intent as string,
+          },
+          { merge: true },
+        );
+      }
 
       // Create payment record for audit trail
       const paymentRef = adminDb.collection('payments').doc(session.payment_intent as string);
@@ -75,9 +96,10 @@ export async function POST(request: NextRequest) {
         status: 'succeeded',
         email: session.metadata?.email || session.customer_email,
         createdAt: new Date().toISOString(),
+        ...(parentPayToken ? { flow: 'parent_pay', parentPayToken } : {}),
       });
 
-      console.log(`Premium activated for user ${userId}`);
+      console.log(`Premium activated for user ${userId}${parentPayToken ? ' (parent-pay)' : ''}`);
       break;
     }
 

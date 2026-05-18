@@ -4,7 +4,6 @@ import { useEffect } from "react";
 import { AuthProvider } from "@/contexts/AuthContext";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import { DataResetNotification } from "@/components/DataResetNotification";
-import { ReferralCapture } from "@/components/ReferralCapture";
 import { useStore } from "@/store/useStore";
 
 function DataResetNotificationWrapper() {
@@ -46,7 +45,6 @@ export function Providers({ children }: { children: React.ReactNode }) {
         {children}
         <DataResetNotificationWrapper />
         <PremiumTheme />
-        <ReferralCapture />
       </AuthProvider>
     </LanguageProvider>
   );

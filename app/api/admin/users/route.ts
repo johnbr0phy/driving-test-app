@@ -115,16 +115,15 @@ export async function GET(request: NextRequest) {
     //
     const db = getAdminDb();
 
-    const [lightSnap, fullSnap, sharesDoc, referralVisitsDoc] = await Promise.all([
+    const [lightSnap, fullSnap, sharesDoc] = await Promise.all([
       db.collection('users')
-        .select('selectedState', 'lastUpdated', 'activeDates', 'subscription', 'createdAt', 'referredBy', 'referralQualifiedAt', 'referredAt', 'qualifiedReferralCount', 'referralCount')
+        .select('selectedState', 'lastUpdated', 'activeDates', 'subscription', 'createdAt')
         .get(),
       db.collection('users')
         .orderBy('lastUpdated', 'desc')
         .limit(100)
         .get(),
       db.doc('analytics/shares').get(),
-      db.doc('analytics/referralVisits').get(),
     ]);
 
     // ── Aggregate stats from ALL users ─────────────────────────────────────
@@ -135,18 +134,6 @@ export async function GET(request: NextRequest) {
     const signupDates: string[] = [];
     // Per-user data for advanced charts
     const userRecords: { activeDates: string[]; lastUpdated: string | null; state: string | null; signupDate: string | null }[] = [];
-    // Referral aggregates.
-    //
-    // Counts are computed from the *inviter side* (`referralCount`,
-    // `qualifiedReferralCount` on each user). Those fields are written by
-    // atomic merged transactions in /api/referrals/{claim,qualify} and have
-    // never been clobbered, so they're accurate even for historical data.
-    // The referee-side `referredBy` field used to get wiped by the signup
-    // race fixed in the prior commit, so summing it would undercount.
-    let referredUsers = 0;
-    let qualifiedReferredUsers = 0;
-    const referredSignupDates: string[] = []; // per-day chart bucket dates
-    const referrerCounts: Record<string, number> = {}; // ownerUid → qualified count
 
     const now = new Date();
     const last7Days = Array.from({ length: 7 }, (_, i) => {
@@ -188,34 +175,6 @@ export async function GET(request: NextRequest) {
 
       usersForDau.push({ activeDates, lastUpdated });
       userRecords.push({ activeDates, lastUpdated, state, signupDate });
-
-      // Inviter-side counters (accurate; see comment above the aggregates).
-      const inviterReferralCount = (data.referralCount as number) || 0;
-      const inviterQualifiedCount = (data.qualifiedReferralCount as number) || 0;
-      if (inviterReferralCount > 0) referredUsers += inviterReferralCount;
-      if (inviterQualifiedCount > 0) {
-        qualifiedReferredUsers += inviterQualifiedCount;
-        referrerCounts[doc.id] = inviterQualifiedCount;
-      }
-
-      // Per-day chart bucket: prefer the actual `referredAt` stamp; fall back
-      // to `createdAt` (≈ signup date) for the historical cohort whose
-      // referredAt was wiped by the pre-fix saveToFirestore. Only consider
-      // referees (users with `referredBy` set).
-      const referredBy = data.referredBy as string | null;
-      if (referredBy) {
-        const referredAtRaw = data.referredAt as { toDate?: () => Date } | string | null;
-        const referredAtIso =
-          typeof referredAtRaw === 'string'
-            ? referredAtRaw
-            : referredAtRaw && typeof referredAtRaw.toDate === 'function'
-              ? referredAtRaw.toDate().toISOString()
-              : null;
-        const bucketDay = referredAtIso?.split('T')[0]
-          || (createdAt as string | null)?.split('T')[0]
-          || null;
-        if (bucketDay) referredSignupDates.push(bucketDay);
-      }
     });
 
     // ── Build user list from top-100 full docs ─────────────────────────────
@@ -350,36 +309,6 @@ export async function GET(request: NextRequest) {
 
     const sharesData = sharesDoc.exists ? sharesDoc.data() : null;
 
-    // Referral charts: daily count of new referred signups (last 30 days)
-    const dailyReferredSignups = last30Dates.map((dateStr) => ({
-      date: dateStr,
-      count: referredSignupDates.filter((d) => d === dateStr).length,
-      displayDate: new Date(dateStr + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
-    }));
-
-    // Top-of-funnel referral visits (written by /api/referrals/track-visit on
-    // every ?ref= landing). Independent of whether the visitor signs up.
-    const referralVisitsData = referralVisitsDoc.exists ? referralVisitsDoc.data() : null;
-    const referralVisitsDaily = (referralVisitsData?.daily as Record<string, number>) || {};
-    const referralVisitsValidDaily = (referralVisitsData?.validDaily as Record<string, number>) || {};
-    const dailyReferralVisits = last30Dates.map((dateStr) => {
-      const total = referralVisitsDaily[dateStr] || 0;
-      const valid = referralVisitsValidDaily[dateStr] || 0;
-      return {
-        date: dateStr,
-        count: total,
-        validCount: valid,
-        invalidCount: Math.max(0, total - valid),
-        displayDate: new Date(dateStr + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
-      };
-    });
-
-    // Top referrers, sorted by qualified count desc
-    const topReferrers = Object.entries(referrerCounts)
-      .sort(([, a], [, b]) => b - a)
-      .slice(0, 10)
-      .map(([uid, count]) => ({ uid, qualifiedCount: count }));
-
     const payload = {
       users,
       dailyActiveUsers,
@@ -388,9 +317,6 @@ export async function GET(request: NextRequest) {
       dailyByState,
       dailyNewVsReturning,
       top5States,
-      dailyReferredSignups,
-      dailyReferralVisits,
-      topReferrers,
       totalUsers,
       stats: {
         totalUsers,
@@ -402,11 +328,6 @@ export async function GET(request: NextRequest) {
         payingUsers,
         totalShareClicks: (sharesData?.total as number) || 0,
         shareClicksDaily: (sharesData?.daily as Record<string, number>) || {},
-        referredUsers,
-        qualifiedReferredUsers,
-        totalReferralVisits: (referralVisitsData?.total as number) || 0,
-        totalValidReferralVisits: (referralVisitsData?.validTotal as number) || 0,
-        referralVisitsDaily,
       },
     };
 

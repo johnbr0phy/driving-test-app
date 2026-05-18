@@ -34,13 +34,6 @@ export default async function ParentPayPage({ params, searchParams }: PageProps)
   return (
     <div className="min-h-screen bg-gradient-to-b from-orange-50 to-white px-4 py-12">
       <div className="mx-auto max-w-md">
-        <div className="text-center mb-6">
-          <div className="text-2xl font-bold text-orange-600">TigerTest</div>
-          <div className="text-xs text-gray-500 uppercase tracking-wider mt-1">
-            DMV Permit Practice
-          </div>
-        </div>
-
         {alreadyPaid ? (
           <div className="bg-white rounded-2xl shadow-sm border border-green-200 p-6 text-center">
             <div className="text-4xl mb-2">✅</div>
@@ -89,7 +82,8 @@ export default async function ParentPayPage({ params, searchParams }: PageProps)
               </div>
               <ul className="space-y-2 text-sm text-gray-800 mb-6">
                 <li className="flex gap-2"><span className="text-green-600">✓</span> The remaining 100 practice questions</li>
-                <li className="flex gap-2"><span className="text-green-600">✓</span> Practice Test 4 (full 50-question exam)</li>
+                <li className="flex gap-2"><span className="text-green-600">✓</span> Practice Test C (full 50-question exam)</li>
+                <li className="flex gap-2"><span className="text-green-600">✓</span> Practice Test D (full 50-question exam)</li>
                 <li className="flex gap-2"><span className="text-green-600">✓</span> Stats page — see exactly which questions they keep getting wrong</li>
               </ul>
 

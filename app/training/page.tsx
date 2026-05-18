@@ -21,10 +21,9 @@ import { useTranslation } from "@/contexts/LanguageContext";
 import { states } from "@/data/states";
 import { en, es } from "@/i18n";
 import { PaywallModal } from "@/components/PaywallModal";
-import { ReferralModal } from "@/components/ReferralModal";
 import { useAuth } from "@/contexts/AuthContext";
 import { auth } from "@/lib/firebase";
-import { trackBeginCheckout, trackPaywallHit } from "@/lib/analytics";
+import { trackBeginCheckout } from "@/lib/analytics";
 
 function TrainingPageContent() {
   const router = useRouter();
@@ -38,7 +37,6 @@ function TrainingPageContent() {
   const hasPremiumAccess = useStore((state) => state.hasPremiumAccess);
   const { user } = useAuth();
   const [paywallOpen, setPaywallOpen] = useState(false);
-  const [referralGateOpen, setReferralGateOpen] = useState(false);
   const [ctaIndex] = useState(() => Math.floor(Math.random() * en.testCtas.length));
   const ctaText = (language === "es" ? es.testCtas : en.testCtas)[ctaIndex];
   const isPremium = hydrated ? hasPremiumAccess() : false;
@@ -122,15 +120,7 @@ function TrainingPageContent() {
       return;
     }
     if (!hydrated || setNumber === null) return;
-    // Set 3 is referral-gated: prompt the user to invite friends instead of
-    // silently bouncing them when they hit /training?set=3 directly.
-    if (setNumber === 3 && !isTrainingSetUnlocked(3)) {
-      trackPaywallHit("training-set-3", "Training Set 3", "training_direct");
-      setReferralGateOpen(true);
-      return;
-    }
-    // Set 4 stays premium-only — keep the existing redirect.
-    if (setNumber === 4 && !isTrainingSetUnlocked(4)) {
+    if (!isTrainingSetUnlocked(setNumber)) {
       router.push("/dashboard");
       return;
     }
@@ -454,19 +444,7 @@ function TrainingPageContent() {
       <div className="container mx-auto px-4 py-4 max-w-lg md:max-w-2xl lg:max-w-4xl">
 
         {/* Question Card */}
-        {accessLocked ? (
-          <Card className="w-full">
-            <CardContent className="p-8 text-center">
-              <p className="text-gray-600 mb-4">{t("referral.subtitle")}</p>
-              <Button
-                className="bg-black text-white hover:bg-gray-800"
-                onClick={() => setReferralGateOpen(true)}
-              >
-                {t("referral.shareCta")}
-              </Button>
-            </CardContent>
-          </Card>
-        ) : currentQuestion ? (
+        {accessLocked ? null : currentQuestion ? (
           <TrainingCard
             key={currentQuestion.questionId}
             question={currentQuestion}
@@ -540,19 +518,6 @@ function TrainingPageContent() {
         onUpgrade={handleUpgrade}
         isGuest={isGuest}
         onSignUp={() => router.push("/signup")}
-      />
-
-      <ReferralModal
-        open={referralGateOpen}
-        onOpenChange={(open) => {
-          setReferralGateOpen(open);
-          // When dismissed while still locked, send them back to the dashboard
-          // so they can't keep staring at an empty training screen.
-          if (!open && accessLocked) router.push("/dashboard");
-        }}
-        isGuest={isGuest}
-        onSignUp={() => router.push("/signup")}
-        onUpgrade={handleUpgrade}
       />
     </div>
   );

@@ -8,7 +8,7 @@ import { db } from "@/lib/firebase";
 import { deleteDoc, doc } from "firebase/firestore";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { states } from "@/data/states";
-import { ArrowLeft, Users, RefreshCw, Trash2, UserPlus, Activity, TrendingUp, TrendingDown, Minus, Share2, CreditCard } from "lucide-react";
+import { ArrowLeft, Users, RefreshCw, Trash2, UserPlus, Activity, TrendingUp, TrendingDown, Minus, Share2, CreditCard, ChevronLeft, ChevronRight } from "lucide-react";
 import { AreaChart, Area, BarChart, Bar, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from "recharts";
 import Link from "next/link";
 import Image from "next/image";
@@ -79,6 +79,9 @@ export default function AdminPage() {
   const [paymentsSummary, setPaymentsSummary] = useState<PaymentsSummary | null>(null);
   const [paymentsLoading, setPaymentsLoading] = useState(false);
   const [paymentsError, setPaymentsError] = useState<string | null>(null);
+  const [paymentsPage, setPaymentsPage] = useState(0);
+  const [usersPage, setUsersPage] = useState(0);
+  const PAGE_SIZE = 20;
 
   const fetchPayments = async () => {
     setPaymentsLoading(true);
@@ -227,12 +230,18 @@ export default function AdminPage() {
     });
   };
 
-  // Sort states by count for the summary
-  const sortedStateCounts = stats
-    ? Object.entries(stats.byState)
-        .sort(([, a], [, b]) => b - a)
-        .map(([code, count]) => ({ code, name: getStateName(code), count }))
-    : [];
+  const paymentsPageCount = Math.max(1, Math.ceil(payments.length / PAGE_SIZE));
+  const usersPageCount = Math.max(1, Math.ceil(users.length / PAGE_SIZE));
+  const paymentsPageSafe = Math.min(paymentsPage, paymentsPageCount - 1);
+  const usersPageSafe = Math.min(usersPage, usersPageCount - 1);
+  const visiblePayments = payments.slice(
+    paymentsPageSafe * PAGE_SIZE,
+    paymentsPageSafe * PAGE_SIZE + PAGE_SIZE,
+  );
+  const visibleUsers = users.slice(
+    usersPageSafe * PAGE_SIZE,
+    usersPageSafe * PAGE_SIZE + PAGE_SIZE,
+  );
 
   if (authLoading || loading) {
     return (
@@ -495,30 +504,6 @@ export default function AdminPage() {
           </CardContent>
         </Card>
 
-        {/* Users by State Summary */}
-        {sortedStateCounts.length > 0 && (
-          <Card className="mb-6">
-            <CardHeader>
-              <CardTitle>Users by State</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="flex flex-wrap gap-2">
-                {sortedStateCounts.map(({ code, name, count }) => (
-                  <div
-                    key={code}
-                    className="inline-flex items-center gap-2 px-3 py-1.5 bg-brand-light text-brand-dark rounded-full text-sm"
-                  >
-                    <span className="font-medium">{name}</span>
-                    <span className="bg-brand-border-light px-2 py-0.5 rounded-full text-xs font-bold">
-                      {count}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </CardContent>
-          </Card>
-        )}
-
         {/* Payments */}
         <Card className="mb-6">
           <CardHeader>
@@ -566,7 +551,7 @@ export default function AdminPage() {
                     </tr>
                   </thead>
                   <tbody>
-                    {payments.map((p) => (
+                    {visiblePayments.map((p) => (
                       <tr key={p.id} className="border-b hover:bg-gray-50">
                         <td className="py-3 px-4 text-gray-600">
                           {p.createdAt ? formatDate(p.createdAt) : <span className="text-gray-400">Unknown</span>}
@@ -611,6 +596,35 @@ export default function AdminPage() {
                     ))}
                   </tbody>
                 </table>
+                {paymentsPageCount > 1 && (
+                  <div className="flex items-center justify-between mt-4 text-sm text-gray-600">
+                    <span>
+                      Showing {paymentsPageSafe * PAGE_SIZE + 1}–
+                      {Math.min((paymentsPageSafe + 1) * PAGE_SIZE, payments.length)} of {payments.length}
+                    </span>
+                    <div className="flex items-center gap-2">
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        onClick={() => setPaymentsPage((p) => Math.max(0, p - 1))}
+                        disabled={paymentsPageSafe === 0}
+                      >
+                        <ChevronLeft className="h-4 w-4" />
+                      </Button>
+                      <span className="text-xs">
+                        Page {paymentsPageSafe + 1} of {paymentsPageCount}
+                      </span>
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        onClick={() => setPaymentsPage((p) => Math.min(paymentsPageCount - 1, p + 1))}
+                        disabled={paymentsPageSafe >= paymentsPageCount - 1}
+                      >
+                        <ChevronRight className="h-4 w-4" />
+                      </Button>
+                    </div>
+                  </div>
+                )}
               </div>
             )}
           </CardContent>
@@ -635,7 +649,7 @@ export default function AdminPage() {
                   </tr>
                 </thead>
                 <tbody>
-                  {users.map((userData) => (
+                  {visibleUsers.map((userData) => (
                     <tr key={userData.uid} className="border-b hover:bg-gray-50">
                       <td className="py-3 px-4">
                         <div className="flex items-center gap-1.5">
@@ -683,6 +697,35 @@ export default function AdminPage() {
                   ))}
                 </tbody>
               </table>
+              {usersPageCount > 1 && (
+                <div className="flex items-center justify-between mt-4 text-sm text-gray-600">
+                  <span>
+                    Showing {usersPageSafe * PAGE_SIZE + 1}–
+                    {Math.min((usersPageSafe + 1) * PAGE_SIZE, users.length)} of {users.length}
+                  </span>
+                  <div className="flex items-center gap-2">
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      onClick={() => setUsersPage((p) => Math.max(0, p - 1))}
+                      disabled={usersPageSafe === 0}
+                    >
+                      <ChevronLeft className="h-4 w-4" />
+                    </Button>
+                    <span className="text-xs">
+                      Page {usersPageSafe + 1} of {usersPageCount}
+                    </span>
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      onClick={() => setUsersPage((p) => Math.min(usersPageCount - 1, p + 1))}
+                      disabled={usersPageSafe >= usersPageCount - 1}
+                    >
+                      <ChevronRight className="h-4 w-4" />
+                    </Button>
+                  </div>
+                </div>
+              )}
             </div>
           </CardContent>
         </Card>

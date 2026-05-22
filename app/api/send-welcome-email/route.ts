@@ -97,10 +97,15 @@ export async function POST(request: NextRequest) {
         alreadySent = true;
         return;
       }
-      tx.set(userRef, {
+      const updates: Record<string, unknown> = {
         lastEmailSent: new Date().toISOString(),
         emailsSent: FieldValue.arrayUnion("welcome"),
-      }, { merge: true });
+      };
+      // First-time stamp so admin conversion stats can compute time-to-purchase.
+      if (!data?.createdAt) {
+        updates.createdAt = new Date().toISOString();
+      }
+      tx.set(userRef, updates, { merge: true });
     });
 
     if (alreadySent) {

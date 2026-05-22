@@ -8,7 +8,7 @@ import { db } from "@/lib/firebase";
 import { deleteDoc, doc } from "firebase/firestore";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { states } from "@/data/states";
-import { ArrowLeft, Users, RefreshCw, Trash2, UserPlus, Activity, TrendingUp, TrendingDown, Minus, Share2 } from "lucide-react";
+import { ArrowLeft, Users, RefreshCw, Trash2, UserPlus, Activity, TrendingUp, TrendingDown, Minus, Share2, CreditCard } from "lucide-react";
 import { AreaChart, Area, BarChart, Bar, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from "recharts";
 import Link from "next/link";
 import Image from "next/image";
@@ -38,6 +38,27 @@ interface Stats {
   shareClicksDaily: Record<string, number>;
 }
 
+interface PaymentRow {
+  id: string;
+  userId: string | null;
+  email: string | null;
+  amount: number | null;
+  currency: string | null;
+  status: string | null;
+  flow: 'parent_pay' | 'self';
+  parentPayToken: string | null;
+  stripeCustomerId: string | null;
+  stripePaymentIntentId: string | null;
+  createdAt: string | null;
+}
+
+interface PaymentsSummary {
+  total: number;
+  parentPay: number;
+  self: number;
+  last7d: { total: number; parentPay: number; self: number };
+}
+
 export default function AdminPage() {
   const { user, loading: authLoading } = useAuth();
   const isAdmin = useAdmin();
@@ -54,6 +75,37 @@ export default function AdminPage() {
   const [dailyNewVsReturning, setDailyNewVsReturning] = useState<{ displayDate: string; new: number; returning: number }[]>([]);
   const [top5States, setTop5States] = useState<string[]>([]);
   const [graphMetric, setGraphMetric] = useState<'active' | 'retention' | 'cumulative' | 'byState' | 'newVsReturning'>('active');
+  const [payments, setPayments] = useState<PaymentRow[]>([]);
+  const [paymentsSummary, setPaymentsSummary] = useState<PaymentsSummary | null>(null);
+  const [paymentsLoading, setPaymentsLoading] = useState(false);
+  const [paymentsError, setPaymentsError] = useState<string | null>(null);
+
+  const fetchPayments = async () => {
+    setPaymentsLoading(true);
+    setPaymentsError(null);
+    try {
+      const idToken = await user?.getIdToken();
+      if (!idToken) {
+        setPaymentsError("Not authenticated");
+        return;
+      }
+      const response = await fetch("/api/admin/payments", {
+        headers: { Authorization: `Bearer ${idToken}` },
+      });
+      if (!response.ok) {
+        const errorData = await response.json().catch(() => ({}));
+        throw new Error(errorData.error || errorData.details || `API error: ${response.status}`);
+      }
+      const data = await response.json();
+      setPayments(data.payments || []);
+      setPaymentsSummary(data.summary || null);
+    } catch (err) {
+      console.error("Error fetching payments:", err);
+      setPaymentsError(err instanceof Error ? err.message : "Failed to load payments");
+    } finally {
+      setPaymentsLoading(false);
+    }
+  };
 
   const fetchUsers = async (forceRefresh = false) => {
     setLoading(true);
@@ -155,6 +207,7 @@ export default function AdminPage() {
 
     if (user && isAdmin) {
       fetchUsers();
+      fetchPayments();
     }
   }, [user, authLoading, isAdmin, router]);
 
@@ -465,6 +518,103 @@ export default function AdminPage() {
             </CardContent>
           </Card>
         )}
+
+        {/* Payments */}
+        <Card className="mb-6">
+          <CardHeader>
+            <div className="flex items-center justify-between gap-2">
+              <CardTitle className="flex items-center gap-2">
+                <CreditCard className="h-5 w-5 text-brand" />
+                Recent Payments
+                {paymentsSummary && (
+                  <span className="text-sm font-normal text-gray-500">
+                    ({paymentsSummary.last7d.total} in last 7d
+                    {paymentsSummary.last7d.total > 0 && (
+                      <>
+                        : {paymentsSummary.last7d.parentPay} parent-pay,{" "}
+                        {paymentsSummary.last7d.self} self
+                      </>
+                    )}
+                    )
+                  </span>
+                )}
+              </CardTitle>
+              <Button onClick={fetchPayments} variant="outline" size="sm" disabled={paymentsLoading}>
+                <RefreshCw className={`h-4 w-4 mr-2 ${paymentsLoading ? "animate-spin" : ""}`} />
+                Refresh
+              </Button>
+            </div>
+          </CardHeader>
+          <CardContent>
+            {paymentsError ? (
+              <p className="text-sm text-red-600">{paymentsError}</p>
+            ) : payments.length === 0 ? (
+              <p className="text-sm text-gray-500">
+                {paymentsLoading ? "Loading…" : "No payments found."}
+              </p>
+            ) : (
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="border-b">
+                      <th className="text-left py-3 px-4 font-medium text-gray-500">When</th>
+                      <th className="text-left py-3 px-4 font-medium text-gray-500">Flow</th>
+                      <th className="text-left py-3 px-4 font-medium text-gray-500">Amount</th>
+                      <th className="text-left py-3 px-4 font-medium text-gray-500">Email</th>
+                      <th className="text-left py-3 px-4 font-medium text-gray-500">User</th>
+                      <th className="text-left py-3 px-4 font-medium text-gray-500">Stripe</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {payments.map((p) => (
+                      <tr key={p.id} className="border-b hover:bg-gray-50">
+                        <td className="py-3 px-4 text-gray-600">
+                          {p.createdAt ? formatDate(p.createdAt) : <span className="text-gray-400">Unknown</span>}
+                        </td>
+                        <td className="py-3 px-4">
+                          {p.flow === "parent_pay" ? (
+                            <span className="inline-flex items-center px-2 py-1 bg-pink-100 text-pink-800 rounded text-xs font-medium">
+                              Parent-pay
+                            </span>
+                          ) : (
+                            <span className="inline-flex items-center px-2 py-1 bg-gray-100 text-gray-700 rounded text-xs font-medium">
+                              Self
+                            </span>
+                          )}
+                        </td>
+                        <td className="py-3 px-4">
+                          {p.amount != null
+                            ? `$${(p.amount / 100).toFixed(2)}${p.currency ? ` ${p.currency.toUpperCase()}` : ""}`
+                            : <span className="text-gray-400">—</span>}
+                        </td>
+                        <td className="py-3 px-4 text-gray-700">
+                          {p.email || <span className="text-gray-400">—</span>}
+                        </td>
+                        <td className="py-3 px-4">
+                          <span className="text-xs text-gray-600 font-mono">{p.userId || "—"}</span>
+                        </td>
+                        <td className="py-3 px-4">
+                          {p.stripePaymentIntentId ? (
+                            <a
+                              href={`https://dashboard.stripe.com/payments/${p.stripePaymentIntentId}`}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-xs text-blue-600 hover:underline font-mono"
+                            >
+                              {p.stripePaymentIntentId.slice(0, 14)}…
+                            </a>
+                          ) : (
+                            <span className="text-gray-400">—</span>
+                          )}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            )}
+          </CardContent>
+        </Card>
 
         {/* User List */}
         <Card>

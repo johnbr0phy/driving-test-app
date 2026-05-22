@@ -167,16 +167,25 @@ export async function GET(request: NextRequest) {
     ]);
 
     // ── Conversion stats: time from signup → purchase ──────────────────────
+    // `createdAt` is sparsely populated (older accounts predate it), so we
+    // fall back to the earliest activeDate or lastUpdated as a signup proxy.
+    // This keeps the conversion card meaningful instead of stuck at 0.0%.
     const daysToPurchase: number[] = [];
-    let usersWithSignup = 0;
     lightSnap.docs.forEach((doc) => {
       const data = doc.data() as Record<string, unknown>;
       const createdAt = data.createdAt as string | undefined;
+      const activeDatesRaw = (data.activeDates as string[]) || [];
+      const lastUpdated = data.lastUpdated as string | undefined;
+      const signupISO =
+        createdAt ||
+        (activeDatesRaw.length > 0
+          ? [...activeDatesRaw].sort()[0] + 'T00:00:00.000Z'
+          : undefined) ||
+        lastUpdated;
       const sub = (data.subscription || {}) as Record<string, unknown>;
       const purchasedAt = sub.purchasedAt as string | undefined;
-      if (createdAt) usersWithSignup++;
-      if (createdAt && purchasedAt) {
-        const ms = new Date(purchasedAt).getTime() - new Date(createdAt).getTime();
+      if (signupISO && purchasedAt) {
+        const ms = new Date(purchasedAt).getTime() - new Date(signupISO).getTime();
         if (ms >= 0) daysToPurchase.push(ms / (1000 * 60 * 60 * 24));
       }
     });
@@ -403,8 +412,8 @@ export async function GET(request: NextRequest) {
         shareClicksDaily: (sharesData?.daily as Record<string, number>) || {},
         conversion: {
           paidCount: payingUsers,
-          baselineUsers: usersWithSignup,
-          conversionRate: usersWithSignup > 0 ? payingUsers / usersWithSignup : 0,
+          baselineUsers: totalUsers,
+          conversionRate: totalUsers > 0 ? payingUsers / totalUsers : 0,
           medianDaysToPurchase: median(daysToPurchase),
           purchasesWithKnownSignup: daysToPurchase.length,
         },

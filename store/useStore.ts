@@ -834,9 +834,11 @@ export const useStore = create<AppState>()(
             // Doc doesn't exist yet (first save for a new user) - fall back to
             // setDoc with merge so we don't accidentally overwrite anything
             // the server may have stamped (e.g., referredBy from a claim that
-            // raced ahead of the first save).
+            // raced ahead of the first save). Stamp createdAt here too so
+            // users who skip the welcome email (no consent / network error)
+            // still get a signup timestamp for conversion analytics.
             if ((err as { code?: string })?.code === 'not-found') {
-              await setDoc(userRef, payload, { merge: true });
+              await setDoc(userRef, { ...payload, createdAt: new Date().toISOString() }, { merge: true });
             } else {
               throw err;
             }

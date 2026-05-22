@@ -8,7 +8,7 @@ import { db } from "@/lib/firebase";
 import { deleteDoc, doc } from "firebase/firestore";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { states } from "@/data/states";
-import { ArrowLeft, Users, RefreshCw, Trash2, UserPlus, Activity, TrendingUp, TrendingDown, Minus, Share2, CreditCard, ChevronLeft, ChevronRight } from "lucide-react";
+import { ArrowLeft, Users, RefreshCw, Trash2, UserPlus, Activity, TrendingUp, TrendingDown, Minus, Share2, CreditCard, ChevronLeft, ChevronRight, Search, DollarSign, GraduationCap, Heart } from "lucide-react";
 import { AreaChart, Area, BarChart, Bar, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from "recharts";
 import Link from "next/link";
 import Image from "next/image";
@@ -26,6 +26,14 @@ interface UserData {
   isPremium: boolean;
 }
 
+interface ConversionStats {
+  paidCount: number;
+  baselineUsers: number;
+  conversionRate: number;
+  medianDaysToPurchase: number | null;
+  purchasesWithKnownSignup: number;
+}
+
 interface Stats {
   totalUsers: number;
   usersWithState: number;
@@ -36,6 +44,26 @@ interface Stats {
   payingUsers: number;
   totalShareClicks: number;
   shareClicksDaily: Record<string, number>;
+  conversion?: ConversionStats;
+}
+
+interface PassRateByState {
+  code: string;
+  attempts: number;
+  passed: number;
+  passRate: number;
+}
+
+interface ParentPayFunnel {
+  requestsSent: number;
+  pending: number;
+  paid: number;
+  expired: number;
+  cancelled: number;
+  conversionRate: number;
+  medianHoursToPay: number | null;
+  last30dRequests: number;
+  last30dPaid: number;
 }
 
 interface PaymentRow {
@@ -77,10 +105,15 @@ export default function AdminPage() {
   const [graphMetric, setGraphMetric] = useState<'active' | 'retention' | 'cumulative' | 'byState' | 'newVsReturning'>('active');
   const [payments, setPayments] = useState<PaymentRow[]>([]);
   const [paymentsSummary, setPaymentsSummary] = useState<PaymentsSummary | null>(null);
+  const [parentPayFunnel, setParentPayFunnel] = useState<ParentPayFunnel | null>(null);
   const [paymentsLoading, setPaymentsLoading] = useState(false);
   const [paymentsError, setPaymentsError] = useState<string | null>(null);
   const [paymentsPage, setPaymentsPage] = useState(0);
   const [usersPage, setUsersPage] = useState(0);
+  const [passRateByState, setPassRateByState] = useState<PassRateByState[]>([]);
+  const [userSearch, setUserSearch] = useState("");
+  const [stateFilter, setStateFilter] = useState<string>("all");
+  const [premiumOnly, setPremiumOnly] = useState(false);
   const PAGE_SIZE = 20;
 
   const fetchPayments = async () => {
@@ -102,6 +135,7 @@ export default function AdminPage() {
       const data = await response.json();
       setPayments(data.payments || []);
       setPaymentsSummary(data.summary || null);
+      setParentPayFunnel(data.parentPayFunnel || null);
     } catch (err) {
       console.error("Error fetching payments:", err);
       setPaymentsError(err instanceof Error ? err.message : "Failed to load payments");
@@ -144,6 +178,7 @@ export default function AdminPage() {
       setDailyByState(data.dailyByState || []);
       setDailyNewVsReturning(data.dailyNewVsReturning || []);
       setTop5States(data.top5States || []);
+      setPassRateByState(data.passRateByState || []);
     } catch (err) {
       console.error("Error fetching users:", err);
       setError(err instanceof Error ? err.message : "Failed to load users");
@@ -214,6 +249,10 @@ export default function AdminPage() {
     }
   }, [user, authLoading, isAdmin, router]);
 
+  useEffect(() => {
+    setUsersPage(0);
+  }, [userSearch, stateFilter, premiumOnly]);
+
   const getStateName = (code: string | null): string => {
     if (!code) return "Not selected";
     return states.find(s => s.code === code)?.name || code;
@@ -230,18 +269,33 @@ export default function AdminPage() {
     });
   };
 
+  const filteredUsers = users.filter((u) => {
+    if (premiumOnly && !u.isPremium) return false;
+    if (stateFilter !== "all" && u.selectedState !== stateFilter) return false;
+    if (userSearch.trim()) {
+      const q = userSearch.trim().toLowerCase();
+      const haystack = `${u.email || ""} ${u.uid}`.toLowerCase();
+      if (!haystack.includes(q)) return false;
+    }
+    return true;
+  });
+
   const paymentsPageCount = Math.max(1, Math.ceil(payments.length / PAGE_SIZE));
-  const usersPageCount = Math.max(1, Math.ceil(users.length / PAGE_SIZE));
+  const usersPageCount = Math.max(1, Math.ceil(filteredUsers.length / PAGE_SIZE));
   const paymentsPageSafe = Math.min(paymentsPage, paymentsPageCount - 1);
   const usersPageSafe = Math.min(usersPage, usersPageCount - 1);
   const visiblePayments = payments.slice(
     paymentsPageSafe * PAGE_SIZE,
     paymentsPageSafe * PAGE_SIZE + PAGE_SIZE,
   );
-  const visibleUsers = users.slice(
+  const visibleUsers = filteredUsers.slice(
     usersPageSafe * PAGE_SIZE,
     usersPageSafe * PAGE_SIZE + PAGE_SIZE,
   );
+
+  const availableStateCodes = Array.from(
+    new Set(users.map((u) => u.selectedState).filter((s): s is string => Boolean(s))),
+  ).sort();
 
   if (authLoading || loading) {
     return (
@@ -287,7 +341,7 @@ export default function AdminPage() {
         </div>
 
         {/* Summary Stats */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 mb-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 mb-6">
           <Card>
             <CardContent className="p-4">
               <div className="flex items-center gap-4">
@@ -356,6 +410,26 @@ export default function AdminPage() {
                     </>
                   );
                 })()}
+              </div>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardContent className="p-4">
+              <div className="flex items-center gap-4">
+                <DollarSign className="h-8 w-8 text-emerald-500" />
+                <div>
+                  <p className="text-2xl font-bold">
+                    {stats?.conversion
+                      ? `${(stats.conversion.conversionRate * 100).toFixed(1)}%`
+                      : "—"}
+                  </p>
+                  <p className="text-sm text-gray-500">Conversion</p>
+                  <p className="text-xs text-gray-400">
+                    {stats?.conversion?.medianDaysToPurchase != null
+                      ? `~${stats.conversion.medianDaysToPurchase.toFixed(1)}d to upgrade`
+                      : "no purchases yet"}
+                  </p>
+                </div>
               </div>
             </CardContent>
           </Card>
@@ -504,6 +578,120 @@ export default function AdminPage() {
           </CardContent>
         </Card>
 
+        {/* Parent-Pay Funnel + Pass Rate by State */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-6">
+          <Card>
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <Heart className="h-5 w-5 text-pink-500" />
+                Parent-Pay Funnel
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              {parentPayFunnel ? (
+                parentPayFunnel.requestsSent === 0 ? (
+                  <p className="text-sm text-gray-500">No parent-pay requests yet.</p>
+                ) : (
+                  <div className="space-y-4">
+                    <div className="grid grid-cols-3 gap-3">
+                      <div className="rounded-lg bg-blue-50 p-3 text-center">
+                        <p className="text-2xl font-bold text-blue-700">{parentPayFunnel.requestsSent}</p>
+                        <p className="text-xs text-blue-700/70">Links Created</p>
+                      </div>
+                      <div className="rounded-lg bg-amber-50 p-3 text-center">
+                        <p className="text-2xl font-bold text-amber-700">{parentPayFunnel.pending}</p>
+                        <p className="text-xs text-amber-700/70">Pending</p>
+                      </div>
+                      <div className="rounded-lg bg-emerald-50 p-3 text-center">
+                        <p className="text-2xl font-bold text-emerald-700">{parentPayFunnel.paid}</p>
+                        <p className="text-xs text-emerald-700/70">Parents Paid</p>
+                      </div>
+                    </div>
+                    <div className="h-3 w-full bg-gray-100 rounded overflow-hidden flex">
+                      <div
+                        className="bg-emerald-500 h-full"
+                        style={{ width: `${parentPayFunnel.conversionRate * 100}%` }}
+                        title={`${(parentPayFunnel.conversionRate * 100).toFixed(1)}% converted`}
+                      />
+                    </div>
+                    <div className="grid grid-cols-2 gap-4 text-sm">
+                      <div>
+                        <p className="text-gray-500">Conversion rate</p>
+                        <p className="font-semibold">
+                          {(parentPayFunnel.conversionRate * 100).toFixed(1)}%
+                        </p>
+                      </div>
+                      <div>
+                        <p className="text-gray-500">Median time to pay</p>
+                        <p className="font-semibold">
+                          {parentPayFunnel.medianHoursToPay != null
+                            ? parentPayFunnel.medianHoursToPay < 24
+                              ? `${parentPayFunnel.medianHoursToPay.toFixed(1)}h`
+                              : `${(parentPayFunnel.medianHoursToPay / 24).toFixed(1)}d`
+                            : "—"}
+                        </p>
+                      </div>
+                      <div>
+                        <p className="text-gray-500">Expired</p>
+                        <p className="font-semibold">{parentPayFunnel.expired}</p>
+                      </div>
+                      <div>
+                        <p className="text-gray-500">Last 30 days</p>
+                        <p className="font-semibold">
+                          {parentPayFunnel.last30dPaid} / {parentPayFunnel.last30dRequests} paid
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                )
+              ) : (
+                <p className="text-sm text-gray-500">Loading…</p>
+              )}
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <GraduationCap className="h-5 w-5 text-emerald-500" />
+                Pass Rate by State
+                <span className="text-xs font-normal text-gray-400 ml-1">
+                  (top 100 active users)
+                </span>
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              {passRateByState.length === 0 ? (
+                <p className="text-sm text-gray-500">No completed tests yet.</p>
+              ) : (
+                <div className="space-y-2 max-h-72 overflow-y-auto pr-1">
+                  {passRateByState.slice(0, 12).map((s) => {
+                    const pct = s.passRate * 100;
+                    const color = pct >= 80 ? "bg-emerald-500" : pct >= 60 ? "bg-amber-500" : "bg-red-500";
+                    return (
+                      <div key={s.code}>
+                        <div className="flex items-center justify-between text-sm mb-1">
+                          <span className="font-medium">
+                            {getStateName(s.code)}{" "}
+                            <span className="text-gray-400 text-xs">({s.code})</span>
+                          </span>
+                          <span className="text-gray-600 tabular-nums">
+                            {pct.toFixed(0)}%{" "}
+                            <span className="text-gray-400 text-xs">({s.passed}/{s.attempts})</span>
+                          </span>
+                        </div>
+                        <div className="h-2 w-full bg-gray-100 rounded overflow-hidden">
+                          <div className={`${color} h-full`} style={{ width: `${pct}%` }} />
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
+            </CardContent>
+          </Card>
+        </div>
+
         {/* Payments */}
         <Card className="mb-6">
           <CardHeader>
@@ -633,7 +821,48 @@ export default function AdminPage() {
         {/* User List */}
         <Card>
           <CardHeader>
-            <CardTitle>All Users ({users.length})</CardTitle>
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+              <CardTitle>
+                All Users{" "}
+                <span className="text-sm font-normal text-gray-500">
+                  ({filteredUsers.length}
+                  {filteredUsers.length !== users.length ? ` of ${users.length}` : ""})
+                </span>
+              </CardTitle>
+              <div className="flex flex-wrap items-center gap-2">
+                <div className="relative">
+                  <Search className="h-4 w-4 absolute left-2 top-1/2 -translate-y-1/2 text-gray-400" />
+                  <input
+                    type="text"
+                    value={userSearch}
+                    onChange={(e) => setUserSearch(e.target.value)}
+                    placeholder="Search email or UID"
+                    className="pl-8 pr-3 py-1.5 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-brand w-56"
+                  />
+                </div>
+                <select
+                  value={stateFilter}
+                  onChange={(e) => setStateFilter(e.target.value)}
+                  className="text-sm border border-gray-300 rounded-md px-2 py-1.5 bg-white focus:outline-none focus:ring-1 focus:ring-brand"
+                >
+                  <option value="all">All states</option>
+                  {availableStateCodes.map((code) => (
+                    <option key={code} value={code}>
+                      {getStateName(code)} ({code})
+                    </option>
+                  ))}
+                </select>
+                <label className="inline-flex items-center gap-1.5 text-sm text-gray-700 cursor-pointer select-none">
+                  <input
+                    type="checkbox"
+                    checked={premiumOnly}
+                    onChange={(e) => setPremiumOnly(e.target.checked)}
+                    className="rounded"
+                  />
+                  Premium only
+                </label>
+              </div>
+            </div>
           </CardHeader>
           <CardContent>
             <div className="overflow-x-auto">
@@ -701,7 +930,7 @@ export default function AdminPage() {
                 <div className="flex items-center justify-between mt-4 text-sm text-gray-600">
                   <span>
                     Showing {usersPageSafe * PAGE_SIZE + 1}–
-                    {Math.min((usersPageSafe + 1) * PAGE_SIZE, users.length)} of {users.length}
+                    {Math.min((usersPageSafe + 1) * PAGE_SIZE, filteredUsers.length)} of {filteredUsers.length}
                   </span>
                   <div className="flex items-center gap-2">
                     <Button

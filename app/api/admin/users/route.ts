@@ -1,6 +1,24 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getAdminDb, getAdminAuth } from '@/lib/firebase-admin';
 import { isAdminEmail } from '@/lib/admin';
+import { states } from '@/data/states';
+
+const STATE_PASS_PCT: Record<string, number> = states.reduce(
+  (acc, s) => {
+    acc[s.code] = s.passingScore;
+    return acc;
+  },
+  {} as Record<string, number>,
+);
+
+function median(values: number[]): number | null {
+  if (values.length === 0) return null;
+  const sorted = [...values].sort((a, b) => a - b);
+  const mid = Math.floor(sorted.length / 2);
+  return sorted.length % 2 === 0
+    ? (sorted[mid - 1] + sorted[mid]) / 2
+    : sorted[mid];
+}
 
 // ─── Server-side in-memory cache ───────────────────────────────────────────
 const CACHE_TTL_MS = 120_000; // 2 minutes
@@ -35,11 +53,33 @@ function processFullDoc(data: Record<string, unknown>) {
     }
   }
 
+  // Per-state pass/fail tally across this user's completed tests
+  const stateResults: Record<string, { passed: number; failed: number }> = {};
+  for (const test of completedTests) {
+    const stateCode = test.state as string | undefined;
+    if (!stateCode) continue;
+    const passPct = STATE_PASS_PCT[stateCode];
+    if (passPct == null) continue; // skip CDL / unknown
+    const total = (test.totalQuestions as number) || 50;
+    let score = test.score as number | undefined;
+    if (score == null) {
+      // Fall back to counting correct answers
+      const answers = (test.answers || []) as Record<string, unknown>[];
+      score = answers.filter((a) => a.isCorrect === true).length;
+    }
+    if (total <= 0) continue;
+    const pct = (score / total) * 100;
+    const bucket = (stateResults[stateCode] ||= { passed: 0, failed: 0 });
+    if (pct >= passPct) bucket.passed++;
+    else bucket.failed++;
+  }
+
   return {
     testsCompleted: completedTests.length,
     trainingQuestionsAnswered,
     testQuestionsAnswered,
     isPremium: (data.subscription as Record<string, unknown>)?.isPremium === true,
+    stateResults,
   };
 }
 
@@ -126,6 +166,21 @@ export async function GET(request: NextRequest) {
       db.doc('analytics/shares').get(),
     ]);
 
+    // ── Conversion stats: time from signup → purchase ──────────────────────
+    const daysToPurchase: number[] = [];
+    let usersWithSignup = 0;
+    lightSnap.docs.forEach((doc) => {
+      const data = doc.data() as Record<string, unknown>;
+      const createdAt = data.createdAt as string | undefined;
+      const sub = (data.subscription || {}) as Record<string, unknown>;
+      const purchasedAt = sub.purchasedAt as string | undefined;
+      if (createdAt) usersWithSignup++;
+      if (createdAt && purchasedAt) {
+        const ms = new Date(purchasedAt).getTime() - new Date(createdAt).getTime();
+        if (ms >= 0) daysToPurchase.push(ms / (1000 * 60 * 60 * 24));
+      }
+    });
+
     // ── Aggregate stats from ALL users ─────────────────────────────────────
     const stateCounts: Record<string, number> = {};
     let payingUsers = 0;
@@ -177,10 +232,16 @@ export async function GET(request: NextRequest) {
       userRecords.push({ activeDates, lastUpdated, state, signupDate });
     });
 
-    // ── Build user list from top-100 full docs ─────────────────────────────
+    // ── Build user list from top-100 full docs + aggregate pass-by-state ──
+    const passByStateAgg: Record<string, { passed: number; failed: number }> = {};
     const users = fullSnap.docs.map(doc => {
       const data = doc.data() as Record<string, unknown>;
       const stats = processFullDoc(data);
+      for (const [code, r] of Object.entries(stats.stateResults)) {
+        const bucket = (passByStateAgg[code] ||= { passed: 0, failed: 0 });
+        bucket.passed += r.passed;
+        bucket.failed += r.failed;
+      }
       return {
         uid: doc.id,
         email: (data.email as string) || '',
@@ -193,6 +254,18 @@ export async function GET(request: NextRequest) {
         isPremium: stats.isPremium,
       };
     });
+
+    const passRateByState = Object.entries(passByStateAgg)
+      .map(([code, r]) => {
+        const attempts = r.passed + r.failed;
+        return {
+          code,
+          attempts,
+          passed: r.passed,
+          passRate: attempts > 0 ? r.passed / attempts : 0,
+        };
+      })
+      .sort((a, b) => b.attempts - a.attempts);
 
     const totalUsers = lightSnap.size;
     const dailyActiveUsers = calculateDailyActiveUsers(usersForDau);
@@ -328,7 +401,15 @@ export async function GET(request: NextRequest) {
         payingUsers,
         totalShareClicks: (sharesData?.total as number) || 0,
         shareClicksDaily: (sharesData?.daily as Record<string, number>) || {},
+        conversion: {
+          paidCount: payingUsers,
+          baselineUsers: usersWithSignup,
+          conversionRate: usersWithSignup > 0 ? payingUsers / usersWithSignup : 0,
+          medianDaysToPurchase: median(daysToPurchase),
+          purchasesWithKnownSignup: daysToPurchase.length,
+        },
       },
+      passRateByState,
     };
 
     cachedPayload = payload;

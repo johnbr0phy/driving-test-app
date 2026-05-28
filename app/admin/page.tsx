@@ -8,7 +8,7 @@ import { db } from "@/lib/firebase";
 import { deleteDoc, doc } from "firebase/firestore";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { states } from "@/data/states";
-import { ArrowLeft, Users, RefreshCw, Trash2, UserPlus, Activity, TrendingUp, TrendingDown, Minus, Share2, CreditCard, ChevronLeft, ChevronRight, Search, DollarSign, GraduationCap, Heart } from "lucide-react";
+import { ArrowLeft, Users, RefreshCw, Trash2, UserPlus, Activity, TrendingUp, TrendingDown, Minus, Share2, CreditCard, ChevronLeft, ChevronRight, Search, DollarSign, GraduationCap, Heart, Lock } from "lucide-react";
 import { AreaChart, Area, BarChart, Bar, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from "recharts";
 import Link from "next/link";
 import Image from "next/image";
@@ -87,6 +87,16 @@ interface PaymentsSummary {
   last7d: { total: number; parentPay: number; self: number };
 }
 
+interface PaywallStat {
+  key: string;
+  label: string;
+  location: string;
+  totalHits: number;
+  uniqueUsers: number;
+  converted: number;
+  conversionRate: number;
+}
+
 export default function AdminPage() {
   const { user, loading: authLoading } = useAuth();
   const isAdmin = useAdmin();
@@ -111,6 +121,7 @@ export default function AdminPage() {
   const [paymentsPage, setPaymentsPage] = useState(0);
   const [usersPage, setUsersPage] = useState(0);
   const [passRateByState, setPassRateByState] = useState<PassRateByState[]>([]);
+  const [paywallStats, setPaywallStats] = useState<PaywallStat[]>([]);
   const [userSearch, setUserSearch] = useState("");
   const [stateFilter, setStateFilter] = useState<string>("all");
   const [premiumOnly, setPremiumOnly] = useState(false);
@@ -179,6 +190,7 @@ export default function AdminPage() {
       setDailyNewVsReturning(data.dailyNewVsReturning || []);
       setTop5States(data.top5States || []);
       setPassRateByState(data.passRateByState || []);
+      setPaywallStats(data.paywallStats || []);
     } catch (err) {
       console.error("Error fetching users:", err);
       setError(err instanceof Error ? err.message : "Failed to load users");
@@ -691,6 +703,74 @@ export default function AdminPage() {
             </CardContent>
           </Card>
         </div>
+
+        {/* Paywall Performance */}
+        <Card className="mb-6">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <Lock className="h-5 w-5 text-amber-500" />
+              Paywall Performance
+              {paywallStats.length > 0 && (
+                <span className="text-sm font-normal text-gray-500">
+                  ({paywallStats.reduce((sum, p) => sum + p.totalHits, 0).toLocaleString()} total hits)
+                </span>
+              )}
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            {paywallStats.length === 0 ? (
+              <p className="text-sm text-gray-500">No paywall hits recorded yet.</p>
+            ) : (
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="border-b">
+                      <th className="text-left py-3 px-4 font-medium text-gray-500">Paywall</th>
+                      <th className="text-left py-3 px-4 font-medium text-gray-500">Location</th>
+                      <th className="text-right py-3 px-4 font-medium text-gray-500">Hits</th>
+                      <th className="text-right py-3 px-4 font-medium text-gray-500">Users</th>
+                      <th className="text-right py-3 px-4 font-medium text-gray-500">Premium</th>
+                      <th className="text-left py-3 px-4 font-medium text-gray-500">Conversion</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {paywallStats.map((p) => {
+                      const pct = p.conversionRate * 100;
+                      const color = pct >= 15 ? "bg-emerald-500" : pct >= 5 ? "bg-amber-500" : "bg-red-500";
+                      return (
+                        <tr key={p.key} className="border-b hover:bg-gray-50">
+                          <td className="py-3 px-4 font-medium">{p.label}</td>
+                          <td className="py-3 px-4">
+                            <span className="inline-flex items-center px-2 py-1 bg-gray-100 text-gray-700 rounded text-xs font-medium">
+                              {p.location}
+                            </span>
+                          </td>
+                          <td className="py-3 px-4 text-right tabular-nums">{p.totalHits.toLocaleString()}</td>
+                          <td className="py-3 px-4 text-right tabular-nums">{p.uniqueUsers.toLocaleString()}</td>
+                          <td className="py-3 px-4 text-right tabular-nums">{p.converted.toLocaleString()}</td>
+                          <td className="py-3 px-4">
+                            <div className="flex items-center gap-2">
+                              <div className="h-2 w-24 bg-gray-100 rounded overflow-hidden">
+                                <div className={`${color} h-full`} style={{ width: `${Math.min(100, pct)}%` }} />
+                              </div>
+                              <span className="text-gray-600 tabular-nums text-xs w-10 text-right">
+                                {p.uniqueUsers > 0 ? `${pct.toFixed(1)}%` : "—"}
+                              </span>
+                            </div>
+                          </td>
+                        </tr>
+                      );
+                    })}
+                  </tbody>
+                </table>
+                <p className="mt-3 text-xs text-gray-400">
+                  Conversion = signed-in users who hit a paywall and later became premium. Anonymous hits count toward
+                  &ldquo;Hits&rdquo; but not &ldquo;Users&rdquo;. Attribution starts accumulating from first deploy.
+                </p>
+              </div>
+            )}
+          </CardContent>
+        </Card>
 
         {/* Payments */}
         <Card className="mb-6">

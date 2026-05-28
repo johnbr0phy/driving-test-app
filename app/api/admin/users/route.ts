@@ -155,15 +155,16 @@ export async function GET(request: NextRequest) {
     //
     const db = getAdminDb();
 
-    const [lightSnap, fullSnap, sharesDoc] = await Promise.all([
+    const [lightSnap, fullSnap, sharesDoc, paywallsDoc] = await Promise.all([
       db.collection('users')
-        .select('selectedState', 'lastUpdated', 'activeDates', 'subscription', 'createdAt')
+        .select('selectedState', 'lastUpdated', 'activeDates', 'subscription', 'createdAt', 'paywallHits')
         .get(),
       db.collection('users')
         .orderBy('lastUpdated', 'desc')
         .limit(100)
         .get(),
       db.doc('analytics/shares').get(),
+      db.doc('analytics/paywalls').get(),
     ]);
 
     // ── Conversion stats: time from signup → purchase ──────────────────────
@@ -198,6 +199,9 @@ export async function GET(request: NextRequest) {
     const signupDates: string[] = [];
     // Per-user data for advanced charts
     const userRecords: { activeDates: string[]; lastUpdated: string | null; state: string | null; signupDate: string | null }[] = [];
+    // Per-paywall attribution: distinct logged-in users who hit it, and how
+    // many of those became premium.
+    const paywallConversion: Record<string, { label: string; location: string; uniqueUsers: number; converted: number }> = {};
 
     const now = new Date();
     const last7Days = Array.from({ length: 7 }, (_, i) => {
@@ -221,7 +225,22 @@ export async function GET(request: NextRequest) {
       const data = doc.data() as Record<string, unknown>;
       const state = data.selectedState as string | null;
       if (state) stateCounts[state] = (stateCounts[state] || 0) + 1;
-      if ((data.subscription as Record<string, unknown>)?.isPremium === true) payingUsers++;
+      const isPremium = (data.subscription as Record<string, unknown>)?.isPremium === true;
+      if (isPremium) payingUsers++;
+
+      // Attribute this user's paywall hits for conversion-by-paywall stats.
+      const userPaywallHits = (data.paywallHits || {}) as Record<string, Record<string, unknown>>;
+      for (const [key, rec] of Object.entries(userPaywallHits)) {
+        if (!rec || typeof rec.count !== 'number' || rec.count <= 0) continue;
+        const agg = (paywallConversion[key] ||= {
+          label: (rec.label as string) || key,
+          location: (rec.location as string) || key.split(':')[0],
+          uniqueUsers: 0,
+          converted: 0,
+        });
+        agg.uniqueUsers++;
+        if (isPremium) agg.converted++;
+      }
 
       // Determine signup date: createdAt > earliest activeDates > lastUpdated
       const activeDates = (data.activeDates as string[]) || [];
@@ -391,6 +410,35 @@ export async function GET(request: NextRequest) {
 
     const sharesData = sharesDoc.exists ? sharesDoc.data() : null;
 
+    // ── Paywall stats: total hits (aggregate, incl. guests) merged with
+    //    per-user conversion attribution ──────────────────────────────────────
+    const paywallsData = paywallsDoc.exists ? paywallsDoc.data() : null;
+    const byPaywall = (paywallsData?.byPaywall || {}) as Record<
+      string,
+      { total?: number; label?: string; location?: string }
+    >;
+    const paywallKeys = new Set([
+      ...Object.keys(byPaywall),
+      ...Object.keys(paywallConversion),
+    ]);
+    const paywallStats = Array.from(paywallKeys)
+      .map((key) => {
+        const meta = byPaywall[key] || {};
+        const conv = paywallConversion[key];
+        const uniqueUsers = conv?.uniqueUsers || 0;
+        const converted = conv?.converted || 0;
+        return {
+          key,
+          label: meta.label || conv?.label || key,
+          location: meta.location || conv?.location || key.split(':')[0],
+          totalHits: meta.total || 0,
+          uniqueUsers,
+          converted,
+          conversionRate: uniqueUsers > 0 ? converted / uniqueUsers : 0,
+        };
+      })
+      .sort((a, b) => b.totalHits - a.totalHits);
+
     const payload = {
       users,
       dailyActiveUsers,
@@ -419,6 +467,7 @@ export async function GET(request: NextRequest) {
         },
       },
       passRateByState,
+      paywallStats,
     };
 
     cachedPayload = payload;

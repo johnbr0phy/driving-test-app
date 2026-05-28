@@ -1,3 +1,5 @@
+import { auth } from "@/lib/firebase";
+
 declare global {
   interface Window {
     gtag?: (...args: unknown[]) => void;
@@ -36,6 +38,31 @@ export function trackPaywallHit(itemId: string, itemName: string, location = "da
     item_name: itemName,
     location,
   });
+  void recordPaywallHit(itemId, itemName, location);
+}
+
+// Persist the hit to Firestore (via API) so the admin dashboard can report
+// paywall hits and per-paywall conversion. Fire-and-forget; never blocks UI.
+async function recordPaywallHit(itemId: string, itemName: string, location: string) {
+  try {
+    const headers: Record<string, string> = { "Content-Type": "application/json" };
+    const user = auth.currentUser;
+    if (user) {
+      try {
+        headers.Authorization = `Bearer ${await user.getIdToken()}`;
+      } catch {
+        // Not signed in or token refresh failed; record as an anonymous hit.
+      }
+    }
+    await fetch("/api/analytics/paywall", {
+      method: "POST",
+      headers,
+      body: JSON.stringify({ itemId, itemName, location }),
+      keepalive: true,
+    });
+  } catch {
+    // Analytics must never surface errors to the user.
+  }
 }
 
 export function trackPaywallDismissed(location = "dashboard") {

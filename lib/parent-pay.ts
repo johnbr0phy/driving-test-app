@@ -13,6 +13,27 @@ export interface ParentPayRequest {
   paidAt?: string;
   paidStripeCustomerId?: string;
   paidStripePaymentIntentId?: string;
+  // Click/open tracking — recorded when the /pay/[token] landing page is
+  // opened by a non-bot visitor. firstViewedAt drives the funnel "Clicked"
+  // stage; viewCount is total (re)opens for engagement context.
+  firstViewedAt?: string;
+  lastViewedAt?: string;
+  viewCount?: number;
+}
+
+// Link-preview crawlers and security scanners auto-fetch the parent-pay URL
+// the moment it lands in a text or email (iMessage, WhatsApp, Slack, Facebook,
+// and corporate email scanners all do this). We exclude these so the "Clicked"
+// funnel stage reflects a real person opening the link rather than a preview
+// bot. This will still over-count somewhat — that's an acceptable trade for
+// knowing clicks are happening at all.
+const LINK_PREVIEW_BOT_RE =
+  /bot|crawler|spider|preview|facebookexternalhit|whatsapp|telegram|slack|discord|twitter|bing|google|apple|skype|linkedin|embedly|pinterest|reddit|curl|wget|python-requests|axios|node-fetch|go-http|java\/|okhttp|headless|phantom|monit|pingdom|proofpoint|barracuda|mimecast|microsoft office/i;
+
+export function isLinkPreviewBot(userAgent: string | null | undefined): boolean {
+  // A missing User-Agent is almost always automated traffic, not a browser.
+  if (!userAgent) return true;
+  return LINK_PREVIEW_BOT_RE.test(userAgent);
 }
 
 export function generateParentPayToken(): string {

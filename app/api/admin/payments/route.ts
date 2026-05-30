@@ -18,6 +18,7 @@ export interface PaymentRow {
 
 export interface ParentPayFunnel {
   requestsSent: number;
+  clicked: number; // links opened by a non-bot visitor (firstViewedAt set)
   pending: number;
   paid: number;
   expired: number;
@@ -96,10 +97,11 @@ export async function GET(request: NextRequest) {
       (p) => p.createdAt && new Date(p.createdAt) >= sevenDaysAgo,
     );
 
+    const now = new Date();
     const thirtyDaysAgo = new Date();
     thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
 
-    let pending = 0, paid = 0, expired = 0, cancelled = 0;
+    let clicked = 0, pending = 0, paid = 0, expired = 0, cancelled = 0;
     let last30dRequests = 0, last30dPaid = 0;
     const hoursToPay: number[] = [];
 
@@ -108,11 +110,19 @@ export async function GET(request: NextRequest) {
       const status = d.status as string;
       const createdAt = d.createdAt as string | undefined;
       const paidAt = d.paidAt as string | undefined;
+      const expiresAt = d.expiresAt as string | undefined;
       const createdDate = createdAt ? new Date(createdAt) : null;
 
+      // A link's `status` is only ever written as 'pending' or 'paid'; nothing
+      // back-fills 'expired'. So derive expiry from expiresAt at read time —
+      // otherwise dead links masquerade as "Pending" forever.
+      const isExpired = !!expiresAt && new Date(expiresAt).getTime() < now.getTime();
+
+      if (d.firstViewedAt) clicked++;
+
       if (status === 'paid') paid++;
-      else if (status === 'expired') expired++;
       else if (status === 'cancelled') cancelled++;
+      else if (status === 'expired' || isExpired) expired++;
       else pending++;
 
       if (createdDate && createdDate >= thirtyDaysAgo) {
@@ -129,6 +139,7 @@ export async function GET(request: NextRequest) {
     const totalRequests = parentReqSnap.size;
     const parentPayFunnel: ParentPayFunnel = {
       requestsSent: totalRequests,
+      clicked,
       pending,
       paid,
       expired,

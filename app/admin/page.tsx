@@ -56,6 +56,7 @@ interface PassRateByState {
 
 interface ParentPayFunnel {
   requestsSent: number;
+  clicked: number;
   pending: number;
   paid: number;
   expired: number;
@@ -605,10 +606,14 @@ export default function AdminPage() {
                   <p className="text-sm text-gray-500">No parent-pay requests yet.</p>
                 ) : (
                   <div className="space-y-4">
-                    <div className="grid grid-cols-3 gap-3">
+                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
                       <div className="rounded-lg bg-blue-50 p-3 text-center">
                         <p className="text-2xl font-bold text-blue-700">{parentPayFunnel.requestsSent}</p>
                         <p className="text-xs text-blue-700/70">Links Created</p>
+                      </div>
+                      <div className="rounded-lg bg-indigo-50 p-3 text-center">
+                        <p className="text-2xl font-bold text-indigo-700">{parentPayFunnel.clicked}</p>
+                        <p className="text-xs text-indigo-700/70">Clicked</p>
                       </div>
                       <div className="rounded-lg bg-amber-50 p-3 text-center">
                         <p className="text-2xl font-bold text-amber-700">{parentPayFunnel.pending}</p>
@@ -631,6 +636,23 @@ export default function AdminPage() {
                         <p className="text-gray-500">Conversion rate</p>
                         <p className="font-semibold">
                           {(parentPayFunnel.conversionRate * 100).toFixed(1)}%
+                          <span className="text-gray-400 font-normal"> of links</span>
+                        </p>
+                      </div>
+                      <div>
+                        <p className="text-gray-500">Click-through rate</p>
+                        <p className="font-semibold">
+                          {parentPayFunnel.requestsSent > 0
+                            ? `${((parentPayFunnel.clicked / parentPayFunnel.requestsSent) * 100).toFixed(1)}%`
+                            : "—"}
+                        </p>
+                      </div>
+                      <div>
+                        <p className="text-gray-500">Clicked → paid</p>
+                        <p className="font-semibold">
+                          {parentPayFunnel.clicked > 0
+                            ? `${((parentPayFunnel.paid / parentPayFunnel.clicked) * 100).toFixed(1)}%`
+                            : "—"}
                         </p>
                       </div>
                       <div>

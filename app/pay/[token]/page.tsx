@@ -1,6 +1,12 @@
 import { notFound } from "next/navigation";
+import { headers } from "next/headers";
+import { FieldValue } from "firebase-admin/firestore";
 import { getAdminDb } from "@/lib/firebase-admin";
-import { countQuestionsPracticed, type ParentPayRequest } from "@/lib/parent-pay";
+import {
+  countQuestionsPracticed,
+  isLinkPreviewBot,
+  type ParentPayRequest,
+} from "@/lib/parent-pay";
 import { ParentPayCheckoutButton } from "./parent-pay-checkout-button";
 
 export const dynamic = "force-dynamic";
@@ -20,6 +26,25 @@ export default async function ParentPayPage({ params, searchParams }: PageProps)
   const reqSnap = await db.collection("parentPayRequests").doc(token).get();
   if (!reqSnap.exists) notFound();
   const req = reqSnap.data() as ParentPayRequest;
+
+  // Record the open as a "click" unless it's a link-preview bot. Best-effort:
+  // tracking must never break the page the parent is trying to pay on.
+  const userAgent = (await headers()).get("user-agent");
+  if (!isLinkPreviewBot(userAgent)) {
+    const nowIso = new Date().toISOString();
+    try {
+      await reqSnap.ref.set(
+        {
+          lastViewedAt: nowIso,
+          viewCount: FieldValue.increment(1),
+          ...(req.firstViewedAt ? {} : { firstViewedAt: nowIso }),
+        },
+        { merge: true },
+      );
+    } catch (err) {
+      console.error("[parent-pay/view]", err);
+    }
+  }
 
   const expired = new Date(req.expiresAt).getTime() < Date.now();
   const userSnap = await db.collection("users").doc(req.teenUid).get();

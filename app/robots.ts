@@ -47,6 +47,37 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
         disallow: ["/api/", "/admin/"],
       },
+      // Google's AI training/grounding crawler (Gemini, AI Overviews). Gated
+      // separately from Googlebot, so it must be allowed explicitly.
+      {
+        userAgent: "Google-Extended",
+        allow: "/",
+        disallow: ["/api/", "/admin/"],
+      },
+      // OpenAI's search crawler (ChatGPT Search), distinct from GPTBot.
+      {
+        userAgent: "OAI-SearchBot",
+        allow: "/",
+        disallow: ["/api/", "/admin/"],
+      },
+      // Perplexity's user-initiated fetch agent, distinct from PerplexityBot.
+      {
+        userAgent: "Perplexity-User",
+        allow: "/",
+        disallow: ["/api/", "/admin/"],
+      },
+      // Apple Intelligence / Siri grounding crawler.
+      {
+        userAgent: "Applebot-Extended",
+        allow: "/",
+        disallow: ["/api/", "/admin/"],
+      },
+      // Common Crawl — feeds many downstream LLM training sets.
+      {
+        userAgent: "CCBot",
+        allow: "/",
+        disallow: ["/api/", "/admin/"],
+      },
     ],
     sitemap: `${siteUrl}/sitemap.xml`,
   };

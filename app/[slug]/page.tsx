@@ -499,6 +499,17 @@ export default async function StateDMVPracticeTestPage({
                   <ExternalLink className="h-3 w-3" />
                 </a>
               </div>
+
+              {landingInfo.examManualChapters && (
+                <div>
+                  <h3 className="font-semibold text-lg text-gray-900 mb-2">
+                    Which Manual Chapters the Test Covers
+                  </h3>
+                  <p className="text-gray-600">
+                    {landingInfo.examManualChapters}
+                  </p>
+                </div>
+              )}
             </div>
           </CardContent>
         </Card>

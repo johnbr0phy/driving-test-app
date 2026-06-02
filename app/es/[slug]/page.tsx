@@ -18,6 +18,10 @@ import { getStateLandingInfoEs } from "@/data/stateLandingDataEs";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
+// Mirrors the English state page so AI engines see a consistent publish date
+// across language variants.
+const STATE_PAGE_PUBLISHED_AT = "2026-03-13";
+
 interface PageProps {
   params: Promise<{ slug: string }>;
 }
@@ -171,6 +175,95 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
     ],
   };
 
+  // Build-time timestamp; baked into the static page on each deploy.
+  const lastModifiedIso = new Date().toISOString();
+
+  // JSON-LD: WebApplication / LearningResource — mirrors the English page so
+  // Spanish results are equally citable in AI answers.
+  const courseJsonLd = {
+    "@context": "https://schema.org",
+    "@type": ["WebApplication", "LearningResource"],
+    name: `Examen de Práctica DMV de ${state.name} - TigerTest`,
+    description: `Examen de práctica gratuito del DMV de ${state.name} con 200 preguntas basadas en el manual oficial de conducir del ${state.dmvName} de ${state.name}.`,
+    url: `${siteUrl}/es/${state.slug}-examen-practica-dmv`,
+    inLanguage: "es-US",
+    applicationCategory: "EducationalApplication",
+    operatingSystem: "Any",
+    educationalLevel: "Beginner",
+    learningResourceType: "Practice test",
+    teaches: `Material del examen escrito de conocimientos del DMV de ${state.name}`,
+    datePublished: STATE_PAGE_PUBLISHED_AT,
+    dateModified: lastModifiedIso,
+    author: {
+      "@type": "Organization",
+      name: "TigerTest",
+      url: siteUrl,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "TigerTest",
+      url: siteUrl,
+      logo: `${siteUrl}/tiger.png`,
+    },
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "USD",
+    },
+  };
+
+  // JSON-LD: HowTo — targets "cómo aprobar el examen del DMV de [estado]" queries.
+  const howToJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: `Cómo Aprobar el Examen de Permiso del DMV de ${state.name}`,
+    description: `Guía paso a paso para aprobar el examen escrito de conocimientos del ${state.dmvName} de ${state.name} en tu primer intento.`,
+    totalTime: "PT2H",
+    estimatedCost: {
+      "@type": "MonetaryAmount",
+      currency: "USD",
+      value: "0",
+    },
+    supply: [
+      { "@type": "HowToSupply", name: `${landingInfo.handbookName}` },
+      { "@type": "HowToSupply", name: "Preguntas de práctica de TigerTest" },
+    ],
+    step: [
+      {
+        "@type": "HowToStep",
+        position: 1,
+        name: "Lee el manual oficial del conductor",
+        text: `Descarga y lee el ${landingInfo.handbookName}. Cada pregunta del examen de permiso de ${state.name} proviene de este manual.`,
+        url: landingInfo.handbookUrl,
+      },
+      {
+        "@type": "HowToStep",
+        position: 2,
+        name: "Practica en el modo de entrenamiento",
+        text: `Repasa las 200 preguntas de práctica específicas de ${state.name} de TigerTest una por una, con retroalimentación instantánea y explicaciones para cada respuesta.`,
+        url: `${siteUrl}/es/${state.slug}-examen-practica-dmv`,
+      },
+      {
+        "@type": "HowToStep",
+        position: 3,
+        name: "Toma un examen de práctica completo y cronometrado",
+        text: `Simula el examen real con un examen de práctica de 50 preguntas. El examen del ${state.dmvName} de ${state.name} requiere ${state.passingScore}% (${rawPassing} de ${state.writtenTestQuestions}) para aprobar.`,
+      },
+      {
+        "@type": "HowToStep",
+        position: 4,
+        name: "Repasa cada respuesta incorrecta",
+        text: "Vuelve a leer la explicación de cualquier pregunta que falles. TigerTest pone en cola las preguntas falladas para repetición espaciada, para que las estudies con más frecuencia.",
+      },
+      {
+        "@type": "HowToStep",
+        position: 5,
+        name: `Agenda tu cita en el ${state.dmvName} de ${state.name}`,
+        text: `Cuando estés obteniendo constantemente más del ${state.passingScore}% en la práctica, reserva tu examen presencial del ${state.dmvName}. Lleva la identificación requerida, comprobante de domicilio y la tarifa de solicitud.`,
+      },
+    ],
+  };
+
   const testimonials = [
     {
       quote: "Usé esto para estudiar. ¡Aprobé hoy! Gracias :)",
@@ -209,6 +302,14 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(courseJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }}
       />
 
       <div className="relative container mx-auto px-4 py-8 md:py-12 max-w-4xl">

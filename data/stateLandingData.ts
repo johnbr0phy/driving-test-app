@@ -6,6 +6,10 @@ export interface StateLandingInfo {
   notableRules: string[];
   neighboringSlugs: string[];
   onlineTestInfo: string;
+  // Optional: which chapters of the official manual the written test draws
+  // from. When present, the state page renders a manual-citation block that
+  // anchors TigerTest to the official source (GEO/authority signal).
+  examManualChapters?: string;
 }
 
 export const stateLandingData: Record<string, StateLandingInfo> = {
@@ -436,7 +440,8 @@ export const stateLandingData: Record<string, StateLandingInfo> = {
       "Junior license holders (under 18) have geographic and time-of-day restrictions that vary by region."
     ],
     neighboringSlugs: ["new-jersey", "pennsylvania", "connecticut", "massachusetts", "vermont"],
-    onlineTestInfo: "No, the New York DMV knowledge test must be taken in person at a DMV office."
+    onlineTestInfo: "No, the New York DMV knowledge test must be taken in person at a DMV office.",
+    examManualChapters: "According to the New York State DMV, the material on the written knowledge test is drawn from Chapters 4 through 11 of the New York State Driver's Manual — covering traffic signs, signals and lane markings, intersections and turns, safe driving and passing techniques, defensive driving, sharing the road, the effects of alcohol and other drugs, parking rules, and handling emergencies. TigerTest's 200 New York practice questions are built from this same material, so anything you miss can be cross-checked directly against the official manual."
   },
   NC: {
     retakeWaitTime: "1 day",

@@ -27,8 +27,15 @@ export interface ParentPayRequest {
 // funnel stage reflects a real person opening the link rather than a preview
 // bot. This will still over-count somewhat — that's an acceptable trade for
 // knowing clicks are happening at all.
+//
+// CAUTION: every token here is a substring match against the User-Agent, so it
+// MUST NOT appear in normal browser UAs. In particular do NOT add bare "apple"
+// (matches "AppleWebKit" in Safari/Chrome/Edge), "google" (Chrome on some
+// platforms), "safari", or "mobile" — use the specific bot name instead
+// (e.g. "applebot", "googlebot"). A too-broad token silently classifies real
+// visitors as bots and zeroes out the "Clicked" funnel stage.
 const LINK_PREVIEW_BOT_RE =
-  /bot|crawler|spider|preview|facebookexternalhit|whatsapp|telegram|slack|discord|twitter|bing|google|apple|skype|linkedin|embedly|pinterest|reddit|curl|wget|python-requests|axios|node-fetch|go-http|java\/|okhttp|headless|phantom|monit|pingdom|proofpoint|barracuda|mimecast|microsoft office/i;
+  /bot|crawler|spider|preview|facebookexternalhit|whatsapp|telegram|slack|discord|twitter|bingbot|googlebot|google-inspectiontool|applebot|skypeuripreview|linkedinbot|embedly|pinterest|redditbot|curl|wget|python-requests|axios|node-fetch|go-http|java\/|okhttp|headless|phantom|monit|pingdom|proofpoint|barracuda|mimecast|microsoft office/i;
 
 export function isLinkPreviewBot(userAgent: string | null | undefined): boolean {
   // A missing User-Agent is almost always automated traffic, not a browser.

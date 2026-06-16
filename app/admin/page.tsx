@@ -8,7 +8,7 @@ import { db } from "@/lib/firebase";
 import { deleteDoc, doc } from "firebase/firestore";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { states } from "@/data/states";
-import { ArrowLeft, Users, RefreshCw, Trash2, UserPlus, Activity, TrendingUp, TrendingDown, Minus, Share2, CreditCard, ChevronLeft, ChevronRight, Search, DollarSign, GraduationCap, Heart, Lock } from "lucide-react";
+import { ArrowLeft, Users, RefreshCw, Trash2, UserPlus, Activity, TrendingUp, TrendingDown, Minus, Share2, ChevronLeft, ChevronRight, Search, DollarSign, GraduationCap, Lock } from "lucide-react";
 import { AreaChart, Area, BarChart, Bar, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from "recharts";
 import Link from "next/link";
 import Image from "next/image";
@@ -54,40 +54,6 @@ interface PassRateByState {
   passRate: number;
 }
 
-interface ParentPayFunnel {
-  requestsSent: number;
-  clicked: number;
-  pending: number;
-  paid: number;
-  expired: number;
-  cancelled: number;
-  conversionRate: number;
-  medianHoursToPay: number | null;
-  last30dRequests: number;
-  last30dPaid: number;
-}
-
-interface PaymentRow {
-  id: string;
-  userId: string | null;
-  email: string | null;
-  amount: number | null;
-  currency: string | null;
-  status: string | null;
-  flow: 'parent_pay' | 'self';
-  parentPayToken: string | null;
-  stripeCustomerId: string | null;
-  stripePaymentIntentId: string | null;
-  createdAt: string | null;
-}
-
-interface PaymentsSummary {
-  total: number;
-  parentPay: number;
-  self: number;
-  last7d: { total: number; parentPay: number; self: number };
-}
-
 interface PaywallStat {
   key: string;
   label: string;
@@ -114,12 +80,6 @@ export default function AdminPage() {
   const [dailyNewVsReturning, setDailyNewVsReturning] = useState<{ displayDate: string; new: number; returning: number }[]>([]);
   const [top5States, setTop5States] = useState<string[]>([]);
   const [graphMetric, setGraphMetric] = useState<'active' | 'retention' | 'cumulative' | 'byState' | 'newVsReturning'>('active');
-  const [payments, setPayments] = useState<PaymentRow[]>([]);
-  const [paymentsSummary, setPaymentsSummary] = useState<PaymentsSummary | null>(null);
-  const [parentPayFunnel, setParentPayFunnel] = useState<ParentPayFunnel | null>(null);
-  const [paymentsLoading, setPaymentsLoading] = useState(false);
-  const [paymentsError, setPaymentsError] = useState<string | null>(null);
-  const [paymentsPage, setPaymentsPage] = useState(0);
   const [usersPage, setUsersPage] = useState(0);
   const [passRateByState, setPassRateByState] = useState<PassRateByState[]>([]);
   const [paywallStats, setPaywallStats] = useState<PaywallStat[]>([]);
@@ -127,34 +87,6 @@ export default function AdminPage() {
   const [stateFilter, setStateFilter] = useState<string>("all");
   const [premiumOnly, setPremiumOnly] = useState(false);
   const PAGE_SIZE = 20;
-
-  const fetchPayments = async () => {
-    setPaymentsLoading(true);
-    setPaymentsError(null);
-    try {
-      const idToken = await user?.getIdToken();
-      if (!idToken) {
-        setPaymentsError("Not authenticated");
-        return;
-      }
-      const response = await fetch("/api/admin/payments", {
-        headers: { Authorization: `Bearer ${idToken}` },
-      });
-      if (!response.ok) {
-        const errorData = await response.json().catch(() => ({}));
-        throw new Error(errorData.error || errorData.details || `API error: ${response.status}`);
-      }
-      const data = await response.json();
-      setPayments(data.payments || []);
-      setPaymentsSummary(data.summary || null);
-      setParentPayFunnel(data.parentPayFunnel || null);
-    } catch (err) {
-      console.error("Error fetching payments:", err);
-      setPaymentsError(err instanceof Error ? err.message : "Failed to load payments");
-    } finally {
-      setPaymentsLoading(false);
-    }
-  };
 
   const fetchUsers = async (forceRefresh = false) => {
     setLoading(true);
@@ -258,7 +190,6 @@ export default function AdminPage() {
 
     if (user && isAdmin) {
       fetchUsers();
-      fetchPayments();
     }
   }, [user, authLoading, isAdmin, router]);
 
@@ -293,14 +224,8 @@ export default function AdminPage() {
     return true;
   });
 
-  const paymentsPageCount = Math.max(1, Math.ceil(payments.length / PAGE_SIZE));
   const usersPageCount = Math.max(1, Math.ceil(filteredUsers.length / PAGE_SIZE));
-  const paymentsPageSafe = Math.min(paymentsPage, paymentsPageCount - 1);
   const usersPageSafe = Math.min(usersPage, usersPageCount - 1);
-  const visiblePayments = payments.slice(
-    paymentsPageSafe * PAGE_SIZE,
-    paymentsPageSafe * PAGE_SIZE + PAGE_SIZE,
-  );
   const visibleUsers = filteredUsers.slice(
     usersPageSafe * PAGE_SIZE,
     usersPageSafe * PAGE_SIZE + PAGE_SIZE,
@@ -591,100 +516,8 @@ export default function AdminPage() {
           </CardContent>
         </Card>
 
-        {/* Parent-Pay Funnel + Pass Rate by State */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-6">
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <Heart className="h-5 w-5 text-pink-500" />
-                Parent-Pay Funnel
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              {parentPayFunnel ? (
-                parentPayFunnel.requestsSent === 0 ? (
-                  <p className="text-sm text-gray-500">No parent-pay requests yet.</p>
-                ) : (
-                  <div className="space-y-4">
-                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
-                      <div className="rounded-lg bg-blue-50 p-3 text-center">
-                        <p className="text-2xl font-bold text-blue-700">{parentPayFunnel.requestsSent}</p>
-                        <p className="text-xs text-blue-700/70">Links Created</p>
-                      </div>
-                      <div className="rounded-lg bg-indigo-50 p-3 text-center">
-                        <p className="text-2xl font-bold text-indigo-700">{parentPayFunnel.clicked}</p>
-                        <p className="text-xs text-indigo-700/70">Clicked</p>
-                      </div>
-                      <div className="rounded-lg bg-amber-50 p-3 text-center">
-                        <p className="text-2xl font-bold text-amber-700">{parentPayFunnel.pending}</p>
-                        <p className="text-xs text-amber-700/70">Pending</p>
-                      </div>
-                      <div className="rounded-lg bg-emerald-50 p-3 text-center">
-                        <p className="text-2xl font-bold text-emerald-700">{parentPayFunnel.paid}</p>
-                        <p className="text-xs text-emerald-700/70">Parents Paid</p>
-                      </div>
-                    </div>
-                    <div className="h-3 w-full bg-gray-100 rounded overflow-hidden flex">
-                      <div
-                        className="bg-emerald-500 h-full"
-                        style={{ width: `${parentPayFunnel.conversionRate * 100}%` }}
-                        title={`${(parentPayFunnel.conversionRate * 100).toFixed(1)}% converted`}
-                      />
-                    </div>
-                    <div className="grid grid-cols-2 gap-4 text-sm">
-                      <div>
-                        <p className="text-gray-500">Conversion rate</p>
-                        <p className="font-semibold">
-                          {(parentPayFunnel.conversionRate * 100).toFixed(1)}%
-                          <span className="text-gray-400 font-normal"> of links</span>
-                        </p>
-                      </div>
-                      <div>
-                        <p className="text-gray-500">Click-through rate</p>
-                        <p className="font-semibold">
-                          {parentPayFunnel.requestsSent > 0
-                            ? `${((parentPayFunnel.clicked / parentPayFunnel.requestsSent) * 100).toFixed(1)}%`
-                            : "—"}
-                        </p>
-                      </div>
-                      <div>
-                        <p className="text-gray-500">Clicked → paid</p>
-                        <p className="font-semibold">
-                          {parentPayFunnel.clicked > 0
-                            ? `${((parentPayFunnel.paid / parentPayFunnel.clicked) * 100).toFixed(1)}%`
-                            : "—"}
-                        </p>
-                      </div>
-                      <div>
-                        <p className="text-gray-500">Median time to pay</p>
-                        <p className="font-semibold">
-                          {parentPayFunnel.medianHoursToPay != null
-                            ? parentPayFunnel.medianHoursToPay < 24
-                              ? `${parentPayFunnel.medianHoursToPay.toFixed(1)}h`
-                              : `${(parentPayFunnel.medianHoursToPay / 24).toFixed(1)}d`
-                            : "—"}
-                        </p>
-                      </div>
-                      <div>
-                        <p className="text-gray-500">Expired</p>
-                        <p className="font-semibold">{parentPayFunnel.expired}</p>
-                      </div>
-                      <div>
-                        <p className="text-gray-500">Last 30 days</p>
-                        <p className="font-semibold">
-                          {parentPayFunnel.last30dPaid} / {parentPayFunnel.last30dRequests} paid
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                )
-              ) : (
-                <p className="text-sm text-gray-500">Loading…</p>
-              )}
-            </CardContent>
-          </Card>
-
-          <Card>
+        {/* Pass Rate by State */}
+        <Card className="mb-6">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <GraduationCap className="h-5 w-5 text-emerald-500" />
@@ -723,8 +556,7 @@ export default function AdminPage() {
                 </div>
               )}
             </CardContent>
-          </Card>
-        </div>
+        </Card>
 
         {/* Paywall Performance */}
         <Card className="mb-6">
@@ -789,132 +621,6 @@ export default function AdminPage() {
                   Conversion = signed-in users who hit a paywall and later became premium. Anonymous hits count toward
                   &ldquo;Hits&rdquo; but not &ldquo;Users&rdquo;. Attribution starts accumulating from first deploy.
                 </p>
-              </div>
-            )}
-          </CardContent>
-        </Card>
-
-        {/* Payments */}
-        <Card className="mb-6">
-          <CardHeader>
-            <div className="flex items-center justify-between gap-2">
-              <CardTitle className="flex items-center gap-2">
-                <CreditCard className="h-5 w-5 text-brand" />
-                Recent Payments
-                {paymentsSummary && (
-                  <span className="text-sm font-normal text-gray-500">
-                    ({paymentsSummary.last7d.total} in last 7d
-                    {paymentsSummary.last7d.total > 0 && (
-                      <>
-                        : {paymentsSummary.last7d.parentPay} parent-pay,{" "}
-                        {paymentsSummary.last7d.self} self
-                      </>
-                    )}
-                    )
-                  </span>
-                )}
-              </CardTitle>
-              <Button onClick={fetchPayments} variant="outline" size="sm" disabled={paymentsLoading}>
-                <RefreshCw className={`h-4 w-4 mr-2 ${paymentsLoading ? "animate-spin" : ""}`} />
-                Refresh
-              </Button>
-            </div>
-          </CardHeader>
-          <CardContent>
-            {paymentsError ? (
-              <p className="text-sm text-red-600">{paymentsError}</p>
-            ) : payments.length === 0 ? (
-              <p className="text-sm text-gray-500">
-                {paymentsLoading ? "Loading…" : "No payments found."}
-              </p>
-            ) : (
-              <div className="overflow-x-auto">
-                <table className="w-full text-sm">
-                  <thead>
-                    <tr className="border-b">
-                      <th className="text-left py-3 px-4 font-medium text-gray-500">When</th>
-                      <th className="text-left py-3 px-4 font-medium text-gray-500">Flow</th>
-                      <th className="text-left py-3 px-4 font-medium text-gray-500">Amount</th>
-                      <th className="text-left py-3 px-4 font-medium text-gray-500">Email</th>
-                      <th className="text-left py-3 px-4 font-medium text-gray-500">User</th>
-                      <th className="text-left py-3 px-4 font-medium text-gray-500">Stripe</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {visiblePayments.map((p) => (
-                      <tr key={p.id} className="border-b hover:bg-gray-50">
-                        <td className="py-3 px-4 text-gray-600">
-                          {p.createdAt ? formatDate(p.createdAt) : <span className="text-gray-400">Unknown</span>}
-                        </td>
-                        <td className="py-3 px-4">
-                          {p.flow === "parent_pay" ? (
-                            <span className="inline-flex items-center px-2 py-1 bg-pink-100 text-pink-800 rounded text-xs font-medium">
-                              Parent-pay
-                            </span>
-                          ) : (
-                            <span className="inline-flex items-center px-2 py-1 bg-gray-100 text-gray-700 rounded text-xs font-medium">
-                              Self
-                            </span>
-                          )}
-                        </td>
-                        <td className="py-3 px-4">
-                          {p.amount != null
-                            ? `$${(p.amount / 100).toFixed(2)}${p.currency ? ` ${p.currency.toUpperCase()}` : ""}`
-                            : <span className="text-gray-400">—</span>}
-                        </td>
-                        <td className="py-3 px-4 text-gray-700">
-                          {p.email || <span className="text-gray-400">—</span>}
-                        </td>
-                        <td className="py-3 px-4">
-                          <span className="text-xs text-gray-600 font-mono">{p.userId || "—"}</span>
-                        </td>
-                        <td className="py-3 px-4">
-                          {p.stripePaymentIntentId ? (
-                            <a
-                              href={`https://dashboard.stripe.com/payments/${p.stripePaymentIntentId}`}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="text-xs text-blue-600 hover:underline font-mono"
-                            >
-                              {p.stripePaymentIntentId.slice(0, 14)}…
-                            </a>
-                          ) : (
-                            <span className="text-gray-400">—</span>
-                          )}
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-                {paymentsPageCount > 1 && (
-                  <div className="flex items-center justify-between mt-4 text-sm text-gray-600">
-                    <span>
-                      Showing {paymentsPageSafe * PAGE_SIZE + 1}–
-                      {Math.min((paymentsPageSafe + 1) * PAGE_SIZE, payments.length)} of {payments.length}
-                    </span>
-                    <div className="flex items-center gap-2">
-                      <Button
-                        variant="outline"
-                        size="sm"
-                        onClick={() => setPaymentsPage((p) => Math.max(0, p - 1))}
-                        disabled={paymentsPageSafe === 0}
-                      >
-                        <ChevronLeft className="h-4 w-4" />
-                      </Button>
-                      <span className="text-xs">
-                        Page {paymentsPageSafe + 1} of {paymentsPageCount}
-                      </span>
-                      <Button
-                        variant="outline"
-                        size="sm"
-                        onClick={() => setPaymentsPage((p) => Math.min(paymentsPageCount - 1, p + 1))}
-                        disabled={paymentsPageSafe >= paymentsPageCount - 1}
-                      >
-                        <ChevronRight className="h-4 w-4" />
-                      </Button>
-                    </div>
-                  </div>
-                )}
               </div>
             )}
           </CardContent>

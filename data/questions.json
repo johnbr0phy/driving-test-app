@@ -1167,13 +1167,13 @@
     "questionId": "U-084",
     "category": "rulesOfRoad",
     "question": "When can you drive in the left lane on a multi-lane highway?",
-    "optionA": "Anytime",
-    "optionB": "Only when passing",
-    "optionC": "Only when turning left",
-    "optionD": "A and B",
-    "correctAnswer": "D",
-    "correctIndex": 3,
-    "explanation": "The left lane should be used for passing and preparing for left turns."
+    "optionA": "Anytime you want",
+    "optionB": "When passing or preparing to turn left",
+    "optionC": "Only during heavy traffic",
+    "optionD": "Never under any circumstances",
+    "correctAnswer": "B",
+    "correctIndex": 1,
+    "explanation": "The left lane should be used for passing and preparing for left turns, not for general cruising."
   },
   {
     "type": "Universal",

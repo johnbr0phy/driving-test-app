@@ -65,6 +65,10 @@ async function recordPaywallHit(itemId: string, itemName: string, location: stri
   }
 }
 
+export function trackStatsEntry(source: string, tab: "yours" | "community" = "yours") {
+  window.gtag?.("event", "stats_entry", { source, tab });
+}
+
 export function trackPaywallDismissed(location = "dashboard") {
   window.gtag?.("event", "paywall_dismissed", { location });
 }

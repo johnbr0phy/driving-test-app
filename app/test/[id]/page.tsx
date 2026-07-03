@@ -16,7 +16,7 @@ import { en, es } from "@/i18n";
 import { PaywallModal } from "@/components/PaywallModal";
 import { useAuth } from "@/contexts/AuthContext";
 import { auth } from "@/lib/firebase";
-import { trackBeginCheckout } from "@/lib/analytics";
+import { trackBeginCheckout, trackStatsEntry } from "@/lib/analytics";
 
 export default function TestPage() {
   const params = useParams();
@@ -229,7 +229,7 @@ export default function TestPage() {
             >
               {t("dashboard.viewStats")}
             </Link>
-          ) : (
+          ) : isGuest ? (
             <button
               type="button"
               onClick={() => setPaywallOpen(true)}
@@ -237,6 +237,16 @@ export default function TestPage() {
             >
               {ctaText}
             </button>
+          ) : (
+            // Free users go to the stats page — its in-context locked list
+            // converts better than the bare paywall modal
+            <Link
+              href="/stats"
+              onClick={() => trackStatsEntry("test_header")}
+              className="text-sm font-medium text-brand hover:text-brand-dark transition-colors"
+            >
+              {ctaText}
+            </Link>
           )
         }
       />

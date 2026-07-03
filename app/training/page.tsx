@@ -23,7 +23,7 @@ import { en, es } from "@/i18n";
 import { PaywallModal } from "@/components/PaywallModal";
 import { useAuth } from "@/contexts/AuthContext";
 import { auth } from "@/lib/firebase";
-import { trackBeginCheckout } from "@/lib/analytics";
+import { trackBeginCheckout, trackStatsEntry } from "@/lib/analytics";
 
 function TrainingPageContent() {
   const router = useRouter();
@@ -383,6 +383,17 @@ function TrainingPageContent() {
                 )}
               </div>
 
+              {/* Community wrong-questions challenge */}
+              {!isGuest && (
+                <Link
+                  href="/stats?tab=community"
+                  onClick={() => trackStatsEntry("training_complete", "community")}
+                  className="inline-block mt-5 text-sm font-medium text-green-200/80 hover:text-white transition-colors"
+                >
+                  {t("trainingPage.beatMostMissed")} →
+                </Link>
+              )}
+
               {/* Reset confirmation */}
               {showResetConfirm && (
                 <div className="mt-4 bg-white/10 backdrop-blur-sm rounded-xl p-4 max-w-xs mx-auto animate-in fade-in duration-200">
@@ -430,7 +441,7 @@ function TrainingPageContent() {
             >
               {t("dashboard.viewStats")}
             </Link>
-          ) : (
+          ) : isGuest ? (
             <button
               type="button"
               onClick={() => setPaywallOpen(true)}
@@ -438,6 +449,16 @@ function TrainingPageContent() {
             >
               {ctaText}
             </button>
+          ) : (
+            // Free users go to the stats page — its in-context locked list
+            // converts better than the bare paywall modal
+            <Link
+              href="/stats"
+              onClick={() => trackStatsEntry("training_header")}
+              className="text-sm font-medium text-brand hover:text-brand-dark transition-colors"
+            >
+              {ctaText}
+            </Link>
           )
         }
       />

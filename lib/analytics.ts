@@ -69,6 +69,10 @@ export function trackStatsEntry(source: string, tab: "yours" | "community" = "yo
   window.gtag?.("event", "stats_entry", { source, tab });
 }
 
+export function trackDailyQuizAnswer(correct: boolean) {
+  window.gtag?.("event", "daily_quiz_answer", { correct });
+}
+
 export function trackPaywallDismissed(location = "dashboard") {
   window.gtag?.("event", "paywall_dismissed", { location });
 }

@@ -497,8 +497,8 @@ function DashboardContent() {
           <ProgressBar value={completedSteps} max={totalSteps} hideLabel />
         </div>
 
-        {/* Most-missed question of the day — free daily content that doubles
-            as the doorway into the community wrong-questions page */}
+        {/* Most-missed question of the day — a one-tap quiz that doubles as
+            the doorway into the community wrong-questions page */}
         {!isGuest && <DailyMissedQuestion className="mb-6" />}
 
         {/* Interleaved Training + Tests */}

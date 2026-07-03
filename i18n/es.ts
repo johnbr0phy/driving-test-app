@@ -125,6 +125,8 @@ export const es: TranslationKeys = {
     premiumBottomYourStats: "Tus Estadísticas",
     premiumBottomCommonMistakes: "Errores Comunes",
     dailyMissedTitle: "La pregunta más fallada del día",
+    dailyMissedToday: "La más fallada hoy",
+    dailyMissedGetWrong: "la fallan",
     dailyMissedSeeAll: "Ver todas las preguntas más falladas →",
     heroTitle0: "Aprendiz Nuevo",
     heroTitle1: "Primer Paso Dado",

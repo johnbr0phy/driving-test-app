@@ -7,17 +7,53 @@ import { useCommunityStats } from "@/hooks/useCommunityStats";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { trackDailyQuizAnswer, trackStatsEntry } from "@/lib/analytics";
 
+// questionId -> local day number it was answered on
+const STORAGE_KEY = "dailyQuizAnswers";
+
+function loadPastAnswers(): Record<string, number> {
+  if (typeof window === "undefined") return {};
+  try {
+    return JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
+  } catch {
+    return {};
+  }
+}
+
+function localDayNumber(): number {
+  const now = new Date();
+  return Math.floor((now.getTime() - now.getTimezoneOffset() * 60_000) / 86_400_000);
+}
+
 export function DailyMissedQuestion({ className }: { className?: string }) {
   const { t } = useTranslation();
   const { data } = useCommunityStats();
   const [expanded, setExpanded] = useState(false);
   const [picked, setPicked] = useState<number | null>(null);
+  // Snapshot past answers once on mount so answering doesn't hide the strip
+  // mid-session — it disappears on the next dashboard load instead
+  const [pastAnswers] = useState<Record<string, number>>(loadPastAnswers);
 
   if (!data || data.questions.length === 0) return null;
 
-  // Rotate through the community list, one question per day
-  const dayNumber = Math.floor(Date.now() / 86_400_000);
-  const q = data.questions[dayNumber % data.questions.length];
+  const dayNumber = localDayNumber();
+
+  // Already answered today's question — gone until tomorrow
+  if (Object.values(pastAnswers).some((day) => day === dayNumber)) return null;
+
+  // Rotate daily through the community list, skipping questions already
+  // answered on earlier days; once every question is answered, cycle again
+  const list = data.questions;
+  const allAnswered = list.every((c) => c.questionId in pastAnswers);
+  let q = list[dayNumber % list.length];
+  if (!allAnswered) {
+    for (let i = 0; i < list.length; i++) {
+      const candidate = list[(dayNumber + i) % list.length];
+      if (!(candidate.questionId in pastAnswers)) {
+        q = candidate;
+        break;
+      }
+    }
+  }
 
   const options = q.options ?? [];
   const hasOptions = options.length > 0;
@@ -30,6 +66,13 @@ export function DailyMissedQuestion({ className }: { className?: string }) {
     if (answered) return;
     setPicked(idx);
     trackDailyQuizAnswer(options[idx] === q.correctAnswer);
+    try {
+      const stored = loadPastAnswers();
+      stored[q.questionId] = dayNumber;
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(stored));
+    } catch {
+      // localStorage unavailable — the quiz just reappears on reload
+    }
   };
 
   return (
@@ -149,12 +192,12 @@ export function DailyMissedQuestion({ className }: { className?: string }) {
                         "community"
                       );
                     }}
-                    className="flex items-center justify-center gap-2 rounded-full bg-gray-900 text-white hover:bg-gray-800 px-5 py-2.5 transition-colors"
+                    className="block w-full rounded-full bg-gray-900 text-white hover:bg-gray-800 px-6 py-3 text-center transition-colors"
                   >
-                    <span className="text-sm font-medium leading-snug">
+                    <span className="text-sm font-medium leading-snug [text-wrap:balance]">
                       {t("dashboard.dailyMissedCta")}
+                      <ArrowRight className="inline h-4 w-4 ml-1.5 -mt-0.5" />
                     </span>
-                    <ArrowRight className="h-4 w-4 shrink-0" />
                   </Link>
                 </div>
               )}

@@ -158,6 +158,7 @@ function DashboardContent() {
   const getTrainingSetProgress = useStore((state) => state.getTrainingSetProgress);
   const isOnboardingComplete = useStore((state) => state.isOnboardingComplete);
   const completeTest = useStore((state) => state.completeTest);
+  const getQuestionPerformance = useStore((state) => state.getQuestionPerformance);
 
   // Hero subtitle variants (5 per progress state, picked randomly on mount)
   const heroSubVariants: string[][] = [
@@ -345,6 +346,13 @@ function DashboardContent() {
     return !!(currentTest && currentTest.questions.length > 0);
   };
 
+  // Daily quiz is for engaged users only — new users go straight into
+  // training/tests without an extra element to decode
+  const totalQuestionsAnswered = hydrated
+    ? getQuestionPerformance().reduce((sum, p) => sum + p.timesAnswered, 0)
+    : 0;
+  const showDailyQuiz = !isGuest && totalQuestionsAnswered > 50;
+
   // Count completed steps (training sets + practice tests)
   const completedSteps = [
     ...[1, 2, 3, 4].map(trainingSetComplete),
@@ -499,7 +507,7 @@ function DashboardContent() {
 
         {/* Most-missed question of the day — a one-tap quiz that doubles as
             the doorway into the community wrong-questions page */}
-        {!isGuest && <DailyMissedQuestion className="mb-6" />}
+        {showDailyQuiz && <DailyMissedQuestion className="mb-6" />}
 
         {/* Interleaved Training + Tests */}
         <div className="mb-6 space-y-2">

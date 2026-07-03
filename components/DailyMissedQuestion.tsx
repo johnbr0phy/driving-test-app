@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Check, ChevronDown, X } from "lucide-react";
+import { ArrowRight, Check, ChevronDown, X } from "lucide-react";
 import { useCommunityStats } from "@/hooks/useCommunityStats";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { trackDailyQuizAnswer, trackStatsEntry } from "@/lib/analytics";
@@ -137,33 +137,42 @@ export function DailyMissedQuestion({ className }: { className?: string }) {
 
               {/* Post-answer feedback + doorway to the full list */}
               {(answered || !hasOptions) && (
-                <div className="flex items-start justify-between gap-3 pt-1.5">
-                  <div className="min-w-0">
-                    {answered && (
-                      <p
-                        className={`text-xs font-medium ${
-                          pickedCorrect ? "text-green-700" : "text-red-600"
-                        }`}
-                      >
-                        {(pickedCorrect
-                          ? t("dashboard.dailyMissedCorrect")
-                          : t("dashboard.dailyMissedWrong")
-                        ).replace("{{pct}}", String(q.errorRate))}
-                      </p>
-                    )}
-                    {q.explanation && (
-                      <p className="text-xs text-gray-500 mt-1 leading-relaxed">{q.explanation}</p>
-                    )}
-                  </div>
+                <div className="pt-1.5 animate-in fade-in duration-300">
+                  {answered && (
+                    <p
+                      className={`text-xs font-medium ${
+                        pickedCorrect ? "text-green-700" : "text-red-600"
+                      }`}
+                    >
+                      {(pickedCorrect
+                        ? t("dashboard.dailyMissedCorrect")
+                        : t("dashboard.dailyMissedWrong")
+                      ).replace("{{pct}}", String(q.errorRate))}
+                    </p>
+                  )}
+                  {q.explanation && (
+                    <p className="text-xs text-gray-500 mt-1 leading-relaxed">{q.explanation}</p>
+                  )}
                   <Link
                     href="/stats?tab=community"
                     onClick={(e) => {
                       e.stopPropagation();
-                      trackStatsEntry("dashboard_daily_quiz", "community");
+                      trackStatsEntry(
+                        answered
+                          ? `dashboard_daily_quiz_${pickedCorrect ? "correct" : "wrong"}`
+                          : "dashboard_daily_quiz",
+                        "community"
+                      );
                     }}
-                    className="text-xs font-medium text-brand hover:text-brand-dark whitespace-nowrap shrink-0"
+                    className="mt-2.5 flex items-center justify-between gap-2 rounded-lg bg-brand-light border border-brand-border-light px-3 py-2.5 hover:bg-brand-gradient-to transition-colors"
                   >
-                    {t("dashboard.dailyMissedSeeAllShort")}
+                    <span className="text-sm font-medium text-brand-dark leading-snug">
+                      {(pickedCorrect
+                        ? t("dashboard.dailyMissedCtaCorrect")
+                        : t("dashboard.dailyMissedCtaWrong")
+                      ).replace("{{n}}", String(data.questions.length))}
+                    </span>
+                    <ArrowRight className="h-4 w-4 text-brand shrink-0" />
                   </Link>
                 </div>
               )}

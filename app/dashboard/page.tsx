@@ -188,8 +188,11 @@ function DashboardContent() {
 
   // Daily most-missed question design variant, switchable via ?dq= for testing
   const dqParam = searchParams.get("dq");
-  const dqVariant: DailyMissedVariant =
-    dqParam === "strip" || dqParam === "hero" ? dqParam : "stat";
+  const dqVariant: DailyMissedVariant = (
+    ["stat", "strip", "hero", "unfold", "swap", "unblur"] as DailyMissedVariant[]
+  ).includes(dqParam as DailyMissedVariant)
+    ? (dqParam as DailyMissedVariant)
+    : "unfold";
 
   const onboardingComplete = hydrated ? isOnboardingComplete() : true;
   const onboardingProgress = training.totalCorrectAllTime;

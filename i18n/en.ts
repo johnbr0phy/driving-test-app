@@ -128,6 +128,7 @@ export const en = {
     dailyMissedToday: "Most-missed today",
     dailyMissedGetWrong: "get this wrong",
     dailyMissedSeeAll: "See all most-missed questions →",
+    dailyMissedSeeAllShort: "See all →",
     heroTitle0: "Complete all 8 steps",
     heroTitle1: "Good start. 1 of 8 done",
     heroTitle2: "2 of 8 done",

@@ -128,6 +128,7 @@ export const es: TranslationKeys = {
     dailyMissedToday: "La más fallada hoy",
     dailyMissedGetWrong: "la fallan",
     dailyMissedSeeAll: "Ver todas las preguntas más falladas →",
+    dailyMissedSeeAllShort: "Ver todas →",
     heroTitle0: "Aprendiz Nuevo",
     heroTitle1: "Primer Paso Dado",
     heroTitle2: "Tomando Impulso",

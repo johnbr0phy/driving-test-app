@@ -135,24 +135,9 @@ export function DailyMissedQuestion({ className }: { className?: string }) {
                 </p>
               )}
 
-              {/* Post-answer feedback + doorway to the full list */}
+              {/* Post-answer doorway to the full list */}
               {(answered || !hasOptions) && (
-                <div className="pt-1.5 animate-in fade-in duration-300">
-                  {answered && (
-                    <p
-                      className={`text-xs font-medium ${
-                        pickedCorrect ? "text-green-700" : "text-red-600"
-                      }`}
-                    >
-                      {(pickedCorrect
-                        ? t("dashboard.dailyMissedCorrect")
-                        : t("dashboard.dailyMissedWrong")
-                      ).replace("{{pct}}", String(q.errorRate))}
-                    </p>
-                  )}
-                  {q.explanation && (
-                    <p className="text-xs text-gray-500 mt-1 leading-relaxed">{q.explanation}</p>
-                  )}
+                <div className="pt-1 animate-in fade-in duration-300">
                   <Link
                     href="/stats?tab=community"
                     onClick={(e) => {
@@ -164,13 +149,10 @@ export function DailyMissedQuestion({ className }: { className?: string }) {
                         "community"
                       );
                     }}
-                    className="mt-2.5 flex items-center justify-between gap-2 rounded-lg bg-brand-light border border-brand-border-light px-3 py-2.5 hover:bg-brand-gradient-to transition-colors"
+                    className="flex items-center justify-between gap-2 rounded-lg bg-brand-light border border-brand-border-light px-3 py-2.5 hover:bg-brand-gradient-to transition-colors"
                   >
                     <span className="text-sm font-medium text-brand-dark leading-snug">
-                      {(pickedCorrect
-                        ? t("dashboard.dailyMissedCtaCorrect")
-                        : t("dashboard.dailyMissedCtaWrong")
-                      ).replace("{{n}}", String(data.questions.length))}
+                      {t("dashboard.dailyMissedCta")}
                     </span>
                     <ArrowRight className="h-4 w-4 text-brand shrink-0" />
                   </Link>

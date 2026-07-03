@@ -149,12 +149,12 @@ export function DailyMissedQuestion({ className }: { className?: string }) {
                         "community"
                       );
                     }}
-                    className="flex items-center justify-between gap-2 rounded-lg bg-brand-light border border-brand-border-light px-3 py-2.5 hover:bg-brand-gradient-to transition-colors"
+                    className="flex items-center justify-center gap-2 rounded-full bg-gray-900 text-white hover:bg-gray-800 px-5 py-2.5 transition-colors"
                   >
-                    <span className="text-sm font-medium text-brand-dark leading-snug">
+                    <span className="text-sm font-medium leading-snug">
                       {t("dashboard.dailyMissedCta")}
                     </span>
-                    <ArrowRight className="h-4 w-4 text-brand shrink-0" />
+                    <ArrowRight className="h-4 w-4 shrink-0" />
                   </Link>
                 </div>
               )}

@@ -1,26 +1,10 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Lock, ChevronDown, Eye, EyeOff } from "lucide-react";
 import { useTranslation } from "@/contexts/LanguageContext";
-
-interface WrongQuestion {
-  questionId: string;
-  question: string;
-  options?: string[];
-  correctAnswer: string;
-  explanation: string;
-  errorRate: number; // 0-100
-  wrong: number;
-  total: number;
-}
-
-interface CommunityData {
-  questions: WrongQuestion[];
-  totalUsers: number;
-  updatedAt: string;
-}
+import { useCommunityStats } from "@/hooks/useCommunityStats";
 
 const FREE_LIMIT = 2;
 
@@ -33,9 +17,8 @@ interface Props {
 }
 
 export function CommunityWrongQuestions({ isPremium, onUpgradeClick }: Props) {
-  const { t, language } = useTranslation();
-  const [data, setData] = useState<CommunityData | null>(null);
-  const [loading, setLoading] = useState(true);
+  const { t } = useTranslation();
+  const { data, loading } = useCommunityStats();
   const [revealState, setRevealState] = useState<Record<string, RevealStage>>({});
 
   const getStage = (id: string): RevealStage => revealState[id] || "collapsed";
@@ -48,22 +31,6 @@ export function CommunityWrongQuestions({ isPremium, onUpgradeClick }: Props) {
       return { ...prev, [id]: next };
     });
   };
-
-  useEffect(() => {
-    async function load() {
-      try {
-        const url = language === "es" ? "/api/community-stats?lang=es" : "/api/community-stats";
-        const res = await fetch(url);
-        const json = await res.json();
-        if (json.questions?.length > 0) setData(json as CommunityData);
-      } catch (e) {
-        console.error("Failed to load community stats:", e);
-      } finally {
-        setLoading(false);
-      }
-    }
-    load();
-  }, [language]);
 
   if (loading) {
     return (

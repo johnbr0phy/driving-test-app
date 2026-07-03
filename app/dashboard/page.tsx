@@ -3,6 +3,7 @@
 import { useEffect, useState, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { PaywallModal } from "@/components/PaywallModal";
+import { DailyMissedQuestion } from "@/components/DailyMissedQuestion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Zap, ChevronRight, CheckCircle, Check, Lock } from "lucide-react";
 import Link from "next/link";
@@ -496,6 +497,10 @@ function DashboardContent() {
           <ProgressBar value={completedSteps} max={totalSteps} hideLabel />
         </div>
 
+        {/* Most-missed question of the day — free daily content that doubles
+            as the doorway into the community wrong-questions page */}
+        {!isGuest && <DailyMissedQuestion className="mb-6" />}
+
         {/* Interleaved Training + Tests */}
         <div className="mb-6 space-y-2">
           {[1, 2, 3, 4].map((id) => {
@@ -598,35 +603,7 @@ function DashboardContent() {
           })}
         </div>
 
-        {/* Bottom banner - urgency upsell for free users, thank-you for premium */}
-        {!isGuest && !isPremium && (
-          <div className="rounded-xl bg-white border border-gray-100 p-4">
-            <div className="flex items-center gap-3">
-              <Image
-                src="/tiger_face_01.png"
-                alt="Tiger with crown"
-                width={36}
-                height={36}
-                className="w-9 h-9 flex-shrink-0 hidden sm:block"
-              />
-              <div className="flex-1">
-                <p className="text-sm font-semibold text-gray-900">
-                  Test soon?
-                </p>
-                <p className="text-xs text-gray-500 mt-0.5">
-                  See the questions most people get wrong first.
-                </p>
-              </div>
-              <Link
-                href="/stats?tab=community"
-                className="flex-shrink-0 rounded-lg bg-gray-50 border border-gray-200 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 transition-colors"
-              >
-                View Hardest Questions
-              </Link>
-            </div>
-          </div>
-        )}
-
+        {/* Bottom banner - thank-you for premium */}
         {isPremium && (
           <div className="rounded-xl bg-white border border-gray-100 p-4">
             <div className="flex items-center gap-3 mb-3">

@@ -124,6 +124,8 @@ export const es: TranslationKeys = {
     premiumBottomContact: "escríbenos",
     premiumBottomYourStats: "Tus Estadísticas",
     premiumBottomCommonMistakes: "Errores Comunes",
+    dailyMissedTitle: "La pregunta más fallada del día",
+    dailyMissedSeeAll: "Ver todas las preguntas más falladas →",
     heroTitle0: "Aprendiz Nuevo",
     heroTitle1: "Primer Paso Dado",
     heroTitle2: "Tomando Impulso",
@@ -320,6 +322,7 @@ export const es: TranslationKeys = {
     answeredAll50: "¡Has respondido correctamente las 50 preguntas de este conjunto!",
     seeYourStats: "Ver tus estadísticas",
     practiceAgain: "Practicar de nuevo",
+    beatMostMissed: "¿Crees que puedes con las preguntas que la mayoría falla?",
   },
 
   // Test page
@@ -385,6 +388,8 @@ export const es: TranslationKeys = {
     nextTestUnlockSub: "El Examen 4 es premium — 50 preguntas más para asegurar tu puntuación antes del examen real.",
     nextTestButton: "Probar Examen {{n}} →",
     nextTestUnlockButton: "Desbloquear Examen 4 →",
+    communityAlsoMissed: "El {{pct}}% de los examinados también falla esta pregunta",
+    seeMostMissed: "Ver las preguntas más falladas →",
   },
 
   // Settings page

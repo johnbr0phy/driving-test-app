@@ -16,6 +16,8 @@ import { Fireworks } from "@/components/Fireworks";
 import { ShareButton } from "@/components/ShareButton";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { states } from "@/data/states";
+import { useCommunityStats } from "@/hooks/useCommunityStats";
+import { trackStatsEntry } from "@/lib/analytics";
 
 function getTigerFace(percentage: number): string {
   if (percentage >= 100) return "/tiger_face_01.png";
@@ -69,6 +71,12 @@ export default function ResultsPage() {
 
   const testSession = hydrated ? getTestSession(testId) : null;
   const attemptStats = hydrated ? getTestAttemptStats(testId) : null;
+
+  const { data: communityData } = useCommunityStats();
+  const communityMap = useMemo(
+    () => new Map((communityData?.questions ?? []).map((q) => [q.questionId, q])),
+    [communityData]
+  );
 
   useEffect(() => {
     if (!hydrated) {
@@ -470,6 +478,7 @@ export default function ResultsPage() {
             const userAnswer = answers[index];
             const isCorrect = userAnswer === question.correctAnswer;
             const isExpanded = expandedQuestions.has(index);
+            const communityQ = !isCorrect && !isGuest ? communityMap.get(question.questionId) : undefined;
 
             return (
               <Card key={index}>
@@ -496,6 +505,22 @@ export default function ResultsPage() {
                             </span>
                           )}
                         </div>
+                        {communityQ && (
+                          <div className="text-xs text-gray-500 mt-1.5">
+                            {t("results.communityAlsoMissed").replace("{{pct}}", String(communityQ.errorRate))}
+                            {" · "}
+                            <Link
+                              href="/stats?tab=community"
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                trackStatsEntry("results_review", "community");
+                              }}
+                              className="font-medium text-brand hover:text-brand-dark"
+                            >
+                              {t("results.seeMostMissed")}
+                            </Link>
+                          </div>
+                        )}
                       </div>
                     </div>
                     <div className="flex items-center gap-3">

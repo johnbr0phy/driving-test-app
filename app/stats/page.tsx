@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, useMemo, Suspense } from "react";
+import { useEffect, useState, useMemo, useRef, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -49,6 +49,17 @@ function StatsContent() {
   const [activeTab, setActiveTab] = useState<"yours" | "community">(
     searchParams.get("tab") === "community" ? "community" : "yours"
   );
+  // Users with no answers recorded see an empty "Your Stats" grid — default
+  // them to the community tab instead (unless a tab was explicitly requested).
+  const autoTabbed = useRef(false);
+  useEffect(() => {
+    if (!hydrated || autoTabbed.current) return;
+    autoTabbed.current = true;
+    if (searchParams.get("tab")) return;
+    const totalAnswered = getQuestionPerformance().reduce((sum, p) => sum + p.timesAnswered, 0);
+    if (totalAnswered === 0) setActiveTab("community");
+  }, [hydrated, searchParams, getQuestionPerformance]);
+
   const [sortField, setSortField] = useState<SortField>("wrong");
   const [sortDirection, setSortDirection] = useState<SortDirection>("desc");
   const [paywallOpen, setPaywallOpen] = useState(false);

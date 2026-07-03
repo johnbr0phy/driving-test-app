@@ -124,6 +124,8 @@ export const en = {
     premiumBottomContact: "give us a shout",
     premiumBottomYourStats: "Your Stats",
     premiumBottomCommonMistakes: "Common Mistakes",
+    dailyMissedTitle: "Most-missed question of the day",
+    dailyMissedSeeAll: "See all most-missed questions →",
     heroTitle0: "Complete all 8 steps",
     heroTitle1: "Good start. 1 of 8 done",
     heroTitle2: "2 of 8 done",
@@ -320,6 +322,7 @@ export const en = {
     answeredAll50: "You've correctly answered all 50 questions in this training set!",
     seeYourStats: "See Your Stats",
     practiceAgain: "Practice Again",
+    beatMostMissed: "Think you can beat the questions most people miss?",
   },
 
   // Test page
@@ -385,6 +388,8 @@ export const en = {
     nextTestUnlockSub: "Test 4 is premium — 50 more questions to lock in your score before the real thing.",
     nextTestButton: "Try Test {{n}} →",
     nextTestUnlockButton: "Unlock Test 4 →",
+    communityAlsoMissed: "{{pct}}% of test takers miss this one too",
+    seeMostMissed: "See the most-missed questions →",
   },
 
   // Settings page

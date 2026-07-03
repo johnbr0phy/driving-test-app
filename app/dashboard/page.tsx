@@ -3,7 +3,7 @@
 import { useEffect, useState, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { PaywallModal } from "@/components/PaywallModal";
-import { DailyMissedQuestion, DailyMissedVariant } from "@/components/DailyMissedQuestion";
+import { DailyMissedQuestion } from "@/components/DailyMissedQuestion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Zap, ChevronRight, CheckCircle, Check, Lock } from "lucide-react";
 import Link from "next/link";
@@ -185,14 +185,6 @@ function DashboardContent() {
   const [showPurchaseSuccess, setShowPurchaseSuccess] = useState(false);
   const schoolJoinedSlug = searchParams.get("school_joined");
   const [showSchoolJoined, setShowSchoolJoined] = useState(!!schoolJoinedSlug);
-
-  // Daily most-missed question design variant, switchable via ?dq= for testing
-  const dqParam = searchParams.get("dq");
-  const dqVariant: DailyMissedVariant = (
-    ["stat", "strip", "hero", "unfold", "swap", "unblur"] as DailyMissedVariant[]
-  ).includes(dqParam as DailyMissedVariant)
-    ? (dqParam as DailyMissedVariant)
-    : "unfold";
 
   const onboardingComplete = hydrated ? isOnboardingComplete() : true;
   const onboardingProgress = training.totalCorrectAllTime;
@@ -503,14 +495,11 @@ function DashboardContent() {
             </div>
           </div>
           <ProgressBar value={completedSteps} max={totalSteps} hideLabel />
-          {!isGuest && dqVariant === "hero" && <DailyMissedQuestion variant="hero" />}
         </div>
 
-        {/* Most-missed question of the day — free daily content that doubles
-            as the doorway into the community wrong-questions page */}
-        {!isGuest && dqVariant !== "hero" && (
-          <DailyMissedQuestion variant={dqVariant} className="mb-6" />
-        )}
+        {/* Most-missed question of the day — a one-tap quiz that doubles as
+            the doorway into the community wrong-questions page */}
+        {!isGuest && <DailyMissedQuestion className="mb-6" />}
 
         {/* Interleaved Training + Tests */}
         <div className="mb-6 space-y-2">

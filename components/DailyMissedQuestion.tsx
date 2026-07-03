@@ -2,30 +2,16 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Card, CardContent } from "@/components/ui/card";
-import { Check, ChevronDown, ChevronRight, Eye } from "lucide-react";
+import { Check, ChevronDown, X } from "lucide-react";
 import { useCommunityStats } from "@/hooks/useCommunityStats";
 import { useTranslation } from "@/contexts/LanguageContext";
-import { trackStatsEntry } from "@/lib/analytics";
+import { trackDailyQuizAnswer, trackStatsEntry } from "@/lib/analytics";
 
-export type DailyMissedVariant =
-  | "stat"
-  | "strip"
-  | "hero"
-  | "unfold"
-  | "swap"
-  | "unblur";
-
-export function DailyMissedQuestion({
-  variant = "unfold",
-  className,
-}: {
-  variant?: DailyMissedVariant;
-  className?: string;
-}) {
+export function DailyMissedQuestion({ className }: { className?: string }) {
   const { t } = useTranslation();
   const { data } = useCommunityStats();
-  const [revealed, setRevealed] = useState(false);
+  const [expanded, setExpanded] = useState(false);
+  const [picked, setPicked] = useState<number | null>(null);
 
   if (!data || data.questions.length === 0) return null;
 
@@ -33,206 +19,158 @@ export function DailyMissedQuestion({
   const dayNumber = Math.floor(Date.now() / 86_400_000);
   const q = data.questions[dayNumber % data.questions.length];
 
-  const track = () => trackStatsEntry(`dashboard_daily_${variant}`, "community");
+  const options = q.options ?? [];
+  const hasOptions = options.length > 0;
+  const answered = picked !== null;
+  const pickedCorrect = answered && options[picked] === q.correctAnswer;
 
-  const pctBlock = (
-    <div className="shrink-0 text-center">
-      <div className="text-base font-bold text-red-500 tabular-nums leading-none">
-        {q.errorRate}%
-      </div>
-      <div className="text-[9px] uppercase tracking-wide text-gray-400 mt-0.5 whitespace-nowrap">
-        {t("dashboard.dailyMissedGetWrong")}
-      </div>
-    </div>
-  );
+  const toggle = () => setExpanded((e) => !e);
 
-  const seeAllLink = (
-    <Link
-      href="/stats?tab=community"
-      onClick={(e) => {
-        e.stopPropagation();
-        track();
-      }}
-      className="text-xs font-medium text-brand hover:text-brand-dark whitespace-nowrap shrink-0"
-    >
-      {t("dashboard.dailyMissedSeeAllShort")}
-    </Link>
-  );
-
-  const stripShell =
-    "rounded-xl bg-white border border-gray-100 hover:shadow-md transition-shadow cursor-pointer";
-
-  const toggleProps = {
-    role: "button" as const,
-    tabIndex: 0,
-    onClick: () => setRevealed((r) => !r),
-    onKeyDown: (e: React.KeyboardEvent) => {
-      if (e.key === "Enter" || e.key === " ") {
-        e.preventDefault();
-        setRevealed((r) => !r);
-      }
-    },
+  const pickOption = (idx: number) => {
+    if (answered) return;
+    setPicked(idx);
+    trackDailyQuizAnswer(options[idx] === q.correctAnswer);
   };
 
-  // Tap to unfold: strip expands and the answer slides in below the question
-  if (variant === "unfold") {
-    return (
-      <div className={className}>
-        <div {...toggleProps} className={`${stripShell} px-4 py-3`}>
-          <div className="flex items-center gap-4">
-            {pctBlock}
-            <p className="flex-1 min-w-0 text-sm leading-snug font-medium text-gray-900 line-clamp-2">
-              {q.question}
-            </p>
-            <ChevronDown
-              className={`h-4 w-4 text-gray-400 shrink-0 transition-transform duration-300 motion-reduce:transition-none ${
-                revealed ? "rotate-180" : ""
-              }`}
-            />
+  return (
+    <div className={className}>
+      <div className="rounded-xl bg-white border border-gray-100 px-4 py-3 hover:shadow-md transition-shadow">
+        {/* Header row — toggles the quiz open/closed */}
+        <div
+          role="button"
+          tabIndex={0}
+          onClick={toggle}
+          onKeyDown={(e) => {
+            if (e.key === "Enter" || e.key === " ") {
+              e.preventDefault();
+              toggle();
+            }
+          }}
+          className="flex items-center gap-4 cursor-pointer"
+          aria-expanded={expanded}
+        >
+          <div className="shrink-0 text-center">
+            <div className="text-base font-bold text-red-500 tabular-nums leading-none">
+              {q.errorRate}%
+            </div>
+            <div className="text-[9px] uppercase tracking-wide text-gray-400 mt-0.5 whitespace-nowrap">
+              {t("dashboard.dailyMissedGetWrong")}
+            </div>
           </div>
-          <div
-            className={`grid transition-[grid-template-rows] duration-300 ease-out motion-reduce:transition-none ${
-              revealed ? "[grid-template-rows:1fr]" : "[grid-template-rows:0fr]"
+          <p className="flex-1 min-w-0 text-sm leading-snug font-medium text-gray-900 line-clamp-2">
+            {q.question}
+          </p>
+          <ChevronDown
+            className={`h-4 w-4 text-gray-400 shrink-0 transition-transform duration-300 motion-reduce:transition-none ${
+              expanded ? "rotate-180" : ""
             }`}
-          >
-            <div className="overflow-hidden">
-              <div
-                className={`pt-2.5 flex items-start justify-between gap-3 transition-opacity duration-300 motion-reduce:transition-none ${
-                  revealed ? "opacity-100 delay-100" : "opacity-0"
-                }`}
-              >
+          />
+        </div>
+
+        {/* Expanding quiz panel */}
+        <div
+          className={`grid transition-[grid-template-rows] duration-300 ease-out motion-reduce:transition-none ${
+            expanded ? "[grid-template-rows:1fr]" : "[grid-template-rows:0fr]"
+          }`}
+        >
+          <div className="overflow-hidden">
+            <div className="pt-3 space-y-1.5">
+              {hasOptions ? (
+                options.map((opt, idx) => {
+                  const isCorrect = opt === q.correctAnswer;
+                  const isPicked = picked === idx;
+                  const letter = ["A", "B", "C", "D"][idx];
+
+                  let optionStyle = "bg-gray-50 border-gray-200 text-gray-700";
+                  if (answered) {
+                    if (isCorrect) {
+                      optionStyle = "bg-green-50 border-green-200 text-green-900";
+                    } else if (isPicked) {
+                      optionStyle = "bg-red-50 border-red-200 text-red-700";
+                    } else {
+                      optionStyle = "bg-gray-50 border-gray-100 text-gray-400";
+                    }
+                  }
+
+                  return (
+                    <button
+                      key={idx}
+                      type="button"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        pickOption(idx);
+                      }}
+                      disabled={answered}
+                      style={{ transitionDelay: expanded && !answered ? `${idx * 50}ms` : "0ms" }}
+                      className={`w-full flex items-start gap-2 rounded-lg border px-3 py-2 text-sm text-left transition-all duration-300 motion-reduce:transition-none ${
+                        expanded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-1"
+                      } ${optionStyle} ${!answered ? "hover:border-brand-border hover:bg-white cursor-pointer" : "cursor-default"}`}
+                    >
+                      <span
+                        className={`font-semibold shrink-0 ${
+                          answered && isCorrect
+                            ? "text-green-700"
+                            : answered && isPicked
+                              ? "text-red-500"
+                              : "text-gray-500"
+                        }`}
+                      >
+                        {letter}
+                      </span>
+                      <span className="flex-1 min-w-0">{opt}</span>
+                      {answered && isCorrect && (
+                        <Check className="h-4 w-4 text-green-600 shrink-0 mt-0.5" strokeWidth={3} />
+                      )}
+                      {answered && isPicked && !isCorrect && (
+                        <X className="h-4 w-4 text-red-500 shrink-0 mt-0.5" strokeWidth={3} />
+                      )}
+                    </button>
+                  );
+                })
+              ) : (
+                // No option data for this question — fall back to showing the answer
                 <p className="text-sm font-medium text-green-700 leading-snug flex items-start gap-1.5">
                   <Check className="h-4 w-4 mt-0.5 shrink-0" strokeWidth={3} />
                   <span>{q.correctAnswer}</span>
                 </p>
-                {seeAllLink}
-              </div>
+              )}
+
+              {/* Post-answer feedback + doorway to the full list */}
+              {(answered || !hasOptions) && (
+                <div className="flex items-start justify-between gap-3 pt-1.5">
+                  <div className="min-w-0">
+                    {answered && (
+                      <p
+                        className={`text-xs font-medium ${
+                          pickedCorrect ? "text-green-700" : "text-red-600"
+                        }`}
+                      >
+                        {(pickedCorrect
+                          ? t("dashboard.dailyMissedCorrect")
+                          : t("dashboard.dailyMissedWrong")
+                        ).replace("{{pct}}", String(q.errorRate))}
+                      </p>
+                    )}
+                    {q.explanation && (
+                      <p className="text-xs text-gray-500 mt-1 leading-relaxed">{q.explanation}</p>
+                    )}
+                  </div>
+                  <Link
+                    href="/stats?tab=community"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      trackStatsEntry("dashboard_daily_quiz", "community");
+                    }}
+                    className="text-xs font-medium text-brand hover:text-brand-dark whitespace-nowrap shrink-0"
+                  >
+                    {t("dashboard.dailyMissedSeeAllShort")}
+                  </Link>
+                </div>
+              )}
             </div>
           </div>
         </div>
       </div>
-    );
-  }
-
-  // Tap to swap: question slides out left, answer slides in from the right
-  if (variant === "swap") {
-    return (
-      <div className={className}>
-        <div {...toggleProps} className={`${stripShell} px-4 py-3 flex items-center gap-4 overflow-hidden`}>
-          {pctBlock}
-          <div className="flex-1 min-w-0 grid">
-            <p
-              aria-hidden={revealed}
-              className={`col-start-1 row-start-1 text-sm leading-snug font-medium text-gray-900 transition-all duration-300 ease-out motion-reduce:transition-none ${
-                revealed ? "opacity-0 -translate-x-3 pointer-events-none" : "opacity-100 translate-x-0"
-              }`}
-            >
-              {q.question}
-            </p>
-            <p
-              aria-hidden={!revealed}
-              className={`col-start-1 row-start-1 text-sm leading-snug font-medium text-green-700 transition-all duration-300 ease-out motion-reduce:transition-none ${
-                revealed ? "opacity-100 translate-x-0 delay-75" : "opacity-0 translate-x-3 pointer-events-none"
-              }`}
-            >
-              <Check className="inline h-4 w-4 -mt-0.5 mr-1" strokeWidth={3} />
-              {q.correctAnswer}
-            </p>
-          </div>
-          {revealed ? seeAllLink : <ChevronRight className="h-4 w-4 text-gray-300 shrink-0" />}
-        </div>
-      </div>
-    );
-  }
-
-  // Tap to unblur: the answer is teased behind a blur and sharpens on tap
-  if (variant === "unblur") {
-    return (
-      <div className={className}>
-        <div {...toggleProps} className={`${stripShell} px-4 py-3 flex items-center gap-4`}>
-          {pctBlock}
-          <p className="flex-1 min-w-0 text-sm leading-snug">
-            <span className="font-medium text-gray-900">{q.question}</span>{" "}
-            <span
-              aria-hidden={!revealed}
-              className={`font-medium text-green-700 transition-all duration-500 motion-reduce:transition-none ${
-                revealed ? "blur-0 opacity-100" : "blur-[5px] opacity-60 select-none"
-              }`}
-            >
-              {q.correctAnswer}
-            </span>
-          </p>
-          {revealed ? seeAllLink : <Eye className="h-4 w-4 text-gray-400 shrink-0" />}
-        </div>
-      </div>
-    );
-  }
-
-  // Static strip: answer always visible, whole row links to the community tab
-  if (variant === "strip") {
-    return (
-      <Link href="/stats?tab=community" onClick={track} className={`block ${className ?? ""}`}>
-        <div className={`${stripShell} px-4 py-3 flex items-center gap-4`}>
-          {pctBlock}
-          <p className="flex-1 min-w-0 text-sm leading-snug line-clamp-2">
-            <span className="font-medium text-gray-900">{q.question}</span>{" "}
-            <span className="font-medium text-green-700">{q.correctAnswer}</span>
-          </p>
-          <ChevronRight className="h-4 w-4 text-gray-300 shrink-0" />
-        </div>
-      </Link>
-    );
-  }
-
-  // Footer row rendered inside the dashboard hero card
-  if (variant === "hero") {
-    return (
-      <Link href="/stats?tab=community" onClick={track} className="block group mt-4 pt-3 border-t border-gray-100">
-        <p className="text-[10px] font-semibold uppercase tracking-wider text-gray-400 mb-1">
-          {t("dashboard.dailyMissedToday")} ·{" "}
-          <span className="text-red-500">
-            {q.errorRate}% {t("dashboard.dailyMissedGetWrong")}
-          </span>
-        </p>
-        <p className="text-sm leading-snug line-clamp-2">
-          <span className="font-medium text-gray-900">{q.question}</span>{" "}
-          <span className="font-medium text-green-700">{q.correctAnswer}</span>
-          <ChevronRight className="inline h-3.5 w-3.5 text-gray-300 ml-0.5 -mt-0.5 group-hover:text-brand transition-colors" />
-        </p>
-      </Link>
-    );
-  }
-
-  // stat: editorial card
-  return (
-    <Link href="/stats?tab=community" onClick={track} className={`block ${className ?? ""}`}>
-      <Card className="border-gray-100 hover:shadow-md transition-shadow">
-        <CardContent className="p-4">
-          <p className="text-[11px] font-bold uppercase tracking-wider text-gray-400 mb-3">
-            {t("dashboard.dailyMissedTitle")}
-          </p>
-          <div className="flex gap-4">
-            <div className="shrink-0 w-16 text-center">
-              <div className="text-2xl font-bold text-red-500 tabular-nums leading-none">
-                {q.errorRate}%
-              </div>
-              <div className="text-[10px] text-gray-400 mt-1 leading-tight">
-                {t("dashboard.dailyMissedGetWrong")}
-              </div>
-            </div>
-            <div className="flex-1 min-w-0 border-l border-gray-100 pl-4">
-              <p className="text-sm font-medium text-gray-900 leading-snug">{q.question}</p>
-              <p className="text-sm text-green-700 mt-1.5 flex items-start gap-1.5">
-                <Check className="h-4 w-4 mt-0.5 shrink-0" strokeWidth={3} />
-                <span>{q.correctAnswer}</span>
-              </p>
-            </div>
-          </div>
-          <p className="mt-3 text-right text-xs font-medium text-brand">
-            {t("dashboard.dailyMissedSeeAll")}
-          </p>
-        </CardContent>
-      </Card>
-    </Link>
+    </div>
   );
 }

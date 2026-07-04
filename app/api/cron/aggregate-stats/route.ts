@@ -2,10 +2,12 @@
  * Cron: Aggregate Community Stats
  * Schedule: daily at 03:00 UTC (vercel.json)
  *
- * Reads all real users' trainingAnswerHistory, computes the top 20 most-missed
- * universal questions, and writes the result to Firestore: globalStats/wrongQuestions
+ * Reads all real users' trainingAnswerHistory and writes two docs to Firestore:
+ * - globalStats/wrongQuestions — top 20 most-missed universal questions (stats page)
+ * - globalStats/questionDifficulty — per-question attempt count + error rate for
+ *   every question (universal and state-specific) with enough attempts (FastPass)
  *
- * The stats page reads this one doc — fast, cheap, always fresh.
+ * Each consumer reads one doc — fast, cheap, always fresh.
  */
 
 import { NextRequest, NextResponse } from "next/server";
@@ -58,7 +60,7 @@ export async function GET(req: NextRequest) {
       const history: any[] = doc.data().trainingAnswerHistory || [];
       for (const entry of history) {
         const id: string = entry.questionId;
-        if (!id || !id.startsWith("U-")) continue; // universal questions only
+        if (!id) continue;
         if (!counts[id]) counts[id] = { correct: 0, wrong: 0 };
         if (entry.isCorrect) counts[id].correct++;
         else counts[id].wrong++;
@@ -77,6 +79,7 @@ export async function GET(req: NextRequest) {
     const TOP_N = 20;
 
     const ranked = Object.entries(counts)
+      .filter(([id]) => id.startsWith("U-")) // wrongQuestions doc is universal-only
       .map(([id, c]) => ({
         questionId: id,
         wrong: c.wrong,
@@ -105,7 +108,27 @@ export async function GET(req: NextRequest) {
         };
       });
 
-    // Write to Firestore — single doc, stats page reads this
+    // Full difficulty table for FastPass: every question (universal + state-specific)
+    // with enough attempts to be meaningful. State-specific questions get far less
+    // traffic per state, so they clear a lower bar.
+    const MIN_ATTEMPTS_UNIVERSAL = 10;
+    const MIN_ATTEMPTS_STATE = 5;
+
+    const difficulty: Record<string, { total: number; errorRate: number }> = {};
+    for (const [id, c] of Object.entries(counts)) {
+      if (!qMap[id]) continue; // skip retired/unknown question ids
+      const total = c.correct + c.wrong;
+      const minAttempts = id.startsWith("U-")
+        ? MIN_ATTEMPTS_UNIVERSAL
+        : MIN_ATTEMPTS_STATE;
+      if (total < minAttempts) continue;
+      difficulty[id] = {
+        total,
+        errorRate: Math.round((c.wrong / total) * 100), // integer percent
+      };
+    }
+
+    // Write to Firestore — one doc per consumer
     await db
       .collection("globalStats")
       .doc("wrongQuestions")
@@ -115,10 +138,27 @@ export async function GET(req: NextRequest) {
         updatedAt: new Date().toISOString(),
       });
 
+    await db
+      .collection("globalStats")
+      .doc("questionDifficulty")
+      .set({
+        questions: difficulty,
+        minAttempts: {
+          universal: MIN_ATTEMPTS_UNIVERSAL,
+          stateSpecific: MIN_ATTEMPTS_STATE,
+        },
+        totalUsers: realUids.size,
+        updatedAt: new Date().toISOString(),
+      });
+
     console.log(
-      `[aggregate-stats] computed ${ranked.length} questions from ${realUids.size} users`
+      `[aggregate-stats] computed ${ranked.length} wrong questions, ${Object.keys(difficulty).length} difficulty entries from ${realUids.size} users`
     );
-    return NextResponse.json({ computed: ranked.length, users: realUids.size });
+    return NextResponse.json({
+      computed: ranked.length,
+      difficultyEntries: Object.keys(difficulty).length,
+      users: realUids.size,
+    });
   } catch (err: any) {
     console.error("[aggregate-stats] Error:", err);
     return NextResponse.json({ error: err.message }, { status: 500 });

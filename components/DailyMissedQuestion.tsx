@@ -10,16 +10,37 @@ import { Question } from "@/types";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { trackDailyQuizAnswer, trackStatsEntry } from "@/lib/analytics";
 
-// questionId -> local day number it was answered on
+// questionId -> { d: local day number answered, k: quiz kind }
 const STORAGE_KEY = "dailyQuizAnswers";
+// total recorded answers at the moment the nemesis quiz was last answered;
+// another nemesis unlocks after 50 more answers, even on the same day
+const BASELINE_KEY = "nemesisAnswerBaseline";
+const NEMESIS_REFRESH_EVERY = 50;
 
-function loadPastAnswers(): Record<string, number> {
+type PastAnswer = { d: number; k: "c" | "n" };
+
+function loadPastAnswers(): Record<string, PastAnswer> {
   if (typeof window === "undefined") return {};
   try {
-    return JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
+    const raw: Record<string, number | PastAnswer> = JSON.parse(
+      localStorage.getItem(STORAGE_KEY) || "{}"
+    );
+    // Migrate pre-nemesis entries, which stored a bare day number
+    const normalized: Record<string, PastAnswer> = {};
+    for (const [id, v] of Object.entries(raw)) {
+      normalized[id] = typeof v === "number" ? { d: v, k: "c" } : v;
+    }
+    return normalized;
   } catch {
     return {};
   }
+}
+
+function loadNemesisBaseline(): number | null {
+  if (typeof window === "undefined") return null;
+  const raw = localStorage.getItem(BASELINE_KEY);
+  const n = raw === null ? NaN : Number(raw);
+  return Number.isFinite(n) ? n : null;
 }
 
 function localDayNumber(): number {
@@ -58,38 +79,57 @@ export function DailyMissedQuestion({ className }: { className?: string }) {
   const getQuestionPerformance = useStore((state) => state.getQuestionPerformance);
   const [expanded, setExpanded] = useState(false);
   const [picked, setPicked] = useState<number | null>(null);
-  // Snapshot past answers once on mount so answering doesn't hide the strip
-  // mid-session — it disappears on the next dashboard load instead
-  const [pastAnswers] = useState<Record<string, number>>(loadPastAnswers);
+  // Snapshot past answers once on mount so answering doesn't swap or hide the
+  // strip mid-session — the next quiz appears on the next dashboard load
+  const [pastAnswers] = useState<Record<string, PastAnswer>>(loadPastAnswers);
+  const [nemesisBaseline] = useState<number | null>(loadNemesisBaseline);
 
   // Questions this user has gotten wrong more than once, worst first
-  const nemesisPool = useMemo(() => {
-    if (!selectedState) return [];
-    const repeatMisses = getQuestionPerformance()
+  const { nemesisPool, totalAnswered } = useMemo(() => {
+    const perf = getQuestionPerformance();
+    const total = perf.reduce((sum, p) => sum + p.timesAnswered, 0);
+    const repeatMisses = perf
       .filter((p) => p.timesWrong >= 2)
       .sort((a, b) => b.timesWrong - a.timesWrong);
-    if (repeatMisses.length === 0) return [];
+    if (!selectedState || repeatMisses.length === 0) {
+      return { nemesisPool: [], totalAnswered: total };
+    }
     const byId = new Map(
       getQuestionsData(language)
         .filter((q) => q.state === "ALL" || q.state === selectedState)
         .map((q) => [q.questionId, q])
     );
-    return repeatMisses.flatMap((perf) => {
-      const question = byId.get(perf.questionId);
-      return question ? [{ perf, question }] : [];
+    const pool = repeatMisses.flatMap((p) => {
+      const question = byId.get(p.questionId);
+      return question ? [{ perf: p, question }] : [];
     });
+    return { nemesisPool: pool, totalAnswered: total };
   }, [selectedState, getQuestionPerformance, language]);
 
   const dayNumber = localDayNumber();
 
-  // Already answered today's question — gone until tomorrow
-  if (Object.values(pastAnswers).some((day) => day === dayNumber)) return null;
+  const answeredCommunityToday = Object.values(pastAnswers).some(
+    (a) => a.d === dayNumber && a.k === "c"
+  );
+  const answeredNemesisToday = Object.values(pastAnswers).some(
+    (a) => a.d === dayNumber && a.k === "n"
+  );
+  // A heavy session earns another nemesis question the same day
+  const nemesisRefreshEarned =
+    answeredNemesisToday &&
+    nemesisBaseline !== null &&
+    totalAnswered - nemesisBaseline >= NEMESIS_REFRESH_EVERY;
 
-  const pickNemesis = (): StripQuiz | null => {
+  const pickNemesis = (allowRepeats: boolean): StripQuiz | null => {
     if (nemesisPool.length === 0) return null;
+    const fresh = nemesisPool.find(
+      ({ question }) => !(question.questionId in pastAnswers)
+    );
+    // Same-day refresh only serves questions not quizzed before; the daily
+    // showing may cycle through the pool again once it's exhausted
     const entry =
-      nemesisPool.find(({ question }) => !(question.questionId in pastAnswers)) ??
-      nemesisPool[dayNumber % nemesisPool.length];
+      fresh ?? (allowRepeats ? nemesisPool[dayNumber % nemesisPool.length] : null);
+    if (!entry) return null;
     const { perf, question } = entry;
     const others = nemesisPool.length - 1;
     return {
@@ -142,12 +182,14 @@ export function DailyMissedQuestion({ className }: { className?: string }) {
     };
   };
 
-  // Alternate days between the community quiz and the user's own nemesis
-  // question, falling back to whichever is available
-  const preferNemesis = dayNumber % 2 === 0;
-  const quiz = preferNemesis
-    ? pickNemesis() ?? pickCommunity()
-    : pickCommunity() ?? pickNemesis();
+  // One quiz at a time: the community question leads each day, and once it's
+  // answered the user's own nemesis question takes the slot on the next
+  // load. A heavy session (50+ more answers) unlocks another nemesis.
+  let quiz: StripQuiz | null = null;
+  if (!answeredCommunityToday) quiz = pickCommunity();
+  if (!quiz && (!answeredNemesisToday || nemesisRefreshEarned)) {
+    quiz = pickNemesis(!answeredNemesisToday);
+  }
 
   if (!quiz) return null;
 
@@ -163,8 +205,11 @@ export function DailyMissedQuestion({ className }: { className?: string }) {
     trackDailyQuizAnswer(quiz.options[idx] === quiz.correctAnswer, quiz.kind);
     try {
       const stored = loadPastAnswers();
-      stored[quiz.id] = dayNumber;
+      stored[quiz.id] = { d: dayNumber, k: quiz.kind === "nemesis" ? "n" : "c" };
       localStorage.setItem(STORAGE_KEY, JSON.stringify(stored));
+      if (quiz.kind === "nemesis") {
+        localStorage.setItem(BASELINE_KEY, String(totalAnswered));
+      }
     } catch {
       // localStorage unavailable — the quiz just reappears on reload
     }

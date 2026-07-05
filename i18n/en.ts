@@ -125,7 +125,7 @@ export const en = {
     premiumBottomYourStats: "Your Stats",
     premiumBottomCommonMistakes: "Common Mistakes",
     dailyMissedGetWrong: "get this wrong",
-    dailyMissedCta: "View all the hardest questions people get wrong",
+    dailyMissedCta: "See the hardest questions",
     heroTitle0: "Complete all 8 steps",
     heroTitle1: "Good start. 1 of 8 done",
     heroTitle2: "2 of 8 done",

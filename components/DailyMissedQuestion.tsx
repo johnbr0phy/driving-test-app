@@ -1,9 +1,12 @@
 "use client";
 
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import Link from "next/link";
 import { ArrowRight, Check, ChevronDown, X } from "lucide-react";
 import { useCommunityStats } from "@/hooks/useCommunityStats";
+import { useStore } from "@/store/useStore";
+import { getQuestionsData } from "@/lib/testGenerator";
+import { Question } from "@/types";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { trackDailyQuizAnswer, trackStatsEntry } from "@/lib/analytics";
 
@@ -24,56 +27,152 @@ function localDayNumber(): number {
   return Math.floor((now.getTime() - now.getTimezoneOffset() * 60_000) / 86_400_000);
 }
 
+function optionText(q: Question, letter: string): string {
+  const map: Record<string, string> = {
+    A: q.optionA,
+    B: q.optionB,
+    C: q.optionC,
+    D: q.optionD,
+  };
+  return map[letter] ?? "";
+}
+
+// One day's quiz for the strip, in either mode
+interface StripQuiz {
+  kind: "community" | "nemesis";
+  id: string;
+  chipValue: string;
+  chipLabel: string;
+  question: string;
+  options: string[];
+  correctAnswer: string;
+  ctaHref: string;
+  ctaTab: "yours" | "community";
+  ctaLabel: (correct: boolean | null) => string;
+}
+
 export function DailyMissedQuestion({ className }: { className?: string }) {
-  const { t } = useTranslation();
+  const { t, language } = useTranslation();
   const { data } = useCommunityStats();
+  const selectedState = useStore((state) => state.selectedState);
+  const getQuestionPerformance = useStore((state) => state.getQuestionPerformance);
   const [expanded, setExpanded] = useState(false);
   const [picked, setPicked] = useState<number | null>(null);
   // Snapshot past answers once on mount so answering doesn't hide the strip
   // mid-session — it disappears on the next dashboard load instead
   const [pastAnswers] = useState<Record<string, number>>(loadPastAnswers);
 
-  if (!data || data.questions.length === 0) return null;
+  // Questions this user has gotten wrong more than once, worst first
+  const nemesisPool = useMemo(() => {
+    if (!selectedState) return [];
+    const repeatMisses = getQuestionPerformance()
+      .filter((p) => p.timesWrong >= 2)
+      .sort((a, b) => b.timesWrong - a.timesWrong);
+    if (repeatMisses.length === 0) return [];
+    const byId = new Map(
+      getQuestionsData(language)
+        .filter((q) => q.state === "ALL" || q.state === selectedState)
+        .map((q) => [q.questionId, q])
+    );
+    return repeatMisses.flatMap((perf) => {
+      const question = byId.get(perf.questionId);
+      return question ? [{ perf, question }] : [];
+    });
+  }, [selectedState, getQuestionPerformance, language]);
 
   const dayNumber = localDayNumber();
 
   // Already answered today's question — gone until tomorrow
   if (Object.values(pastAnswers).some((day) => day === dayNumber)) return null;
 
-  // Rotate daily through the community list, skipping questions already
-  // answered on earlier days; once every question is answered, cycle again
-  const list = data.questions;
-  const allAnswered = list.every((c) => c.questionId in pastAnswers);
-  let q = list[dayNumber % list.length];
-  if (!allAnswered) {
-    for (let i = 0; i < list.length; i++) {
-      const candidate = list[(dayNumber + i) % list.length];
-      if (!(candidate.questionId in pastAnswers)) {
-        q = candidate;
-        break;
+  const pickNemesis = (): StripQuiz | null => {
+    if (nemesisPool.length === 0) return null;
+    const entry =
+      nemesisPool.find(({ question }) => !(question.questionId in pastAnswers)) ??
+      nemesisPool[dayNumber % nemesisPool.length];
+    const { perf, question } = entry;
+    const others = nemesisPool.length - 1;
+    return {
+      kind: "nemesis",
+      id: question.questionId,
+      chipValue: `${perf.timesWrong}×`,
+      chipLabel: t("dashboard.nemesisMissedByYou"),
+      question: question.question,
+      options: [question.optionA, question.optionB, question.optionC, question.optionD].filter(Boolean),
+      correctAnswer: optionText(question, question.correctAnswer),
+      ctaHref: "/stats",
+      ctaTab: "yours",
+      ctaLabel: (correct) => {
+        if (others === 0) return t("dashboard.nemesisCtaLast");
+        return (correct
+          ? t("dashboard.nemesisCtaWin")
+          : t("dashboard.nemesisCtaMore")
+        ).replace("{{n}}", String(others));
+      },
+    };
+  };
+
+  const pickCommunity = (): StripQuiz | null => {
+    const list = data?.questions ?? [];
+    if (list.length === 0) return null;
+    // Rotate daily, skipping questions answered on earlier days; once every
+    // question is answered, cycle again
+    const allAnswered = list.every((c) => c.questionId in pastAnswers);
+    let q = list[dayNumber % list.length];
+    if (!allAnswered) {
+      for (let i = 0; i < list.length; i++) {
+        const candidate = list[(dayNumber + i) % list.length];
+        if (!(candidate.questionId in pastAnswers)) {
+          q = candidate;
+          break;
+        }
       }
     }
-  }
+    return {
+      kind: "community",
+      id: q.questionId,
+      chipValue: `${q.errorRate}%`,
+      chipLabel: t("dashboard.dailyMissedGetWrong"),
+      question: q.question,
+      options: q.options ?? [],
+      correctAnswer: q.correctAnswer,
+      ctaHref: "/stats?tab=community",
+      ctaTab: "community",
+      ctaLabel: () => t("dashboard.dailyMissedCta"),
+    };
+  };
 
-  const options = q.options ?? [];
-  const hasOptions = options.length > 0;
+  // Alternate days between the community quiz and the user's own nemesis
+  // question, falling back to whichever is available
+  const preferNemesis = dayNumber % 2 === 0;
+  const quiz = preferNemesis
+    ? pickNemesis() ?? pickCommunity()
+    : pickCommunity() ?? pickNemesis();
+
+  if (!quiz) return null;
+
+  const hasOptions = quiz.options.length > 0;
   const answered = picked !== null;
-  const pickedCorrect = answered && options[picked] === q.correctAnswer;
+  const pickedCorrect = answered && quiz.options[picked] === quiz.correctAnswer;
 
   const toggle = () => setExpanded((e) => !e);
 
   const pickOption = (idx: number) => {
     if (answered) return;
     setPicked(idx);
-    trackDailyQuizAnswer(options[idx] === q.correctAnswer);
+    trackDailyQuizAnswer(quiz.options[idx] === quiz.correctAnswer, quiz.kind);
     try {
       const stored = loadPastAnswers();
-      stored[q.questionId] = dayNumber;
+      stored[quiz.id] = dayNumber;
       localStorage.setItem(STORAGE_KEY, JSON.stringify(stored));
     } catch {
       // localStorage unavailable — the quiz just reappears on reload
     }
   };
+
+  const ctaSource = `dashboard_${quiz.kind === "nemesis" ? "nemesis" : "daily_quiz"}${
+    answered ? (pickedCorrect ? "_correct" : "_wrong") : ""
+  }`;
 
   return (
     <div className={className}>
@@ -94,14 +193,14 @@ export function DailyMissedQuestion({ className }: { className?: string }) {
         >
           <div className="shrink-0 text-center">
             <div className="text-base font-bold text-red-500 tabular-nums leading-none">
-              {q.errorRate}%
+              {quiz.chipValue}
             </div>
             <div className="text-[9px] uppercase tracking-wide text-gray-400 mt-0.5 whitespace-nowrap">
-              {t("dashboard.dailyMissedGetWrong")}
+              {quiz.chipLabel}
             </div>
           </div>
           <p className="flex-1 min-w-0 text-sm leading-snug font-medium text-gray-900 line-clamp-2">
-            {q.question}
+            {quiz.question}
           </p>
           <ChevronDown
             className={`h-4 w-4 text-gray-400 shrink-0 transition-transform duration-300 motion-reduce:transition-none ${
@@ -119,8 +218,8 @@ export function DailyMissedQuestion({ className }: { className?: string }) {
           <div className="overflow-hidden">
             <div className="pt-3 space-y-1.5">
               {hasOptions ? (
-                options.map((opt, idx) => {
-                  const isCorrect = opt === q.correctAnswer;
+                quiz.options.map((opt, idx) => {
+                  const isCorrect = opt === quiz.correctAnswer;
                   const isPicked = picked === idx;
                   const letter = ["A", "B", "C", "D"][idx];
 
@@ -174,28 +273,23 @@ export function DailyMissedQuestion({ className }: { className?: string }) {
                 // No option data for this question — fall back to showing the answer
                 <p className="text-sm font-medium text-green-700 leading-snug flex items-start gap-1.5">
                   <Check className="h-4 w-4 mt-0.5 shrink-0" strokeWidth={3} />
-                  <span>{q.correctAnswer}</span>
+                  <span>{quiz.correctAnswer}</span>
                 </p>
               )}
 
-              {/* Post-answer doorway to the full list */}
+              {/* Post-answer doorway */}
               {(answered || !hasOptions) && (
                 <div className="pt-1 animate-in fade-in duration-300">
                   <Link
-                    href="/stats?tab=community"
+                    href={quiz.ctaHref}
                     onClick={(e) => {
                       e.stopPropagation();
-                      trackStatsEntry(
-                        answered
-                          ? `dashboard_daily_quiz_${pickedCorrect ? "correct" : "wrong"}`
-                          : "dashboard_daily_quiz",
-                        "community"
-                      );
+                      trackStatsEntry(ctaSource, quiz.ctaTab);
                     }}
                     className="block w-full rounded-full bg-gray-900 text-white hover:bg-gray-800 px-6 py-3 text-center transition-colors"
                   >
                     <span className="text-sm font-medium leading-snug [text-wrap:balance]">
-                      {t("dashboard.dailyMissedCta")}
+                      {quiz.ctaLabel(answered ? pickedCorrect : null)}
                       <ArrowRight className="inline h-4 w-4 ml-1.5 -mt-0.5" />
                     </span>
                   </Link>

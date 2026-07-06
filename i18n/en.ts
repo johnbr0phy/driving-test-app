@@ -540,7 +540,7 @@ export const en = {
       "Unlock 50 Safety & Emergencies questions",
       "See what you keep getting wrong",
       "See your accuracy on every question",
-      "See the 20 questions most people fail",
+      "See the 50 questions most people fail",
       "One payment, yours forever",
     ],
     oneTimePayment: "one-time payment",

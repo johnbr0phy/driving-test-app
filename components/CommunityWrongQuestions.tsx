@@ -6,7 +6,7 @@ import { useTranslation } from "@/contexts/LanguageContext";
 import { useCommunityStats } from "@/hooks/useCommunityStats";
 import { trackDailyQuizAnswer } from "@/lib/analytics";
 
-const FREE_LIMIT = 2;
+const FREE_LIMIT = 5;
 
 interface Props {
   isPremium: boolean;

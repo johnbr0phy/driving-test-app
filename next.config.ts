@@ -19,6 +19,25 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  // Serve the Firebase Auth helper from our own domain so the Google
+  // sign-in round trip stays same-origin. Browsers that partition
+  // third-party storage (notably Chrome on iOS) intermittently drop the
+  // cross-origin handoff from firebaseapp.com back to tigertest.io.
+  // Pairs with authDomain: "tigertest.io" in lib/firebase.ts.
+  async rewrites() {
+    return [
+      {
+        source: "/__/auth/:path*",
+        destination:
+          "https://driving-test-app-a5c67.firebaseapp.com/__/auth/:path*",
+      },
+      {
+        source: "/__/firebase/:path*",
+        destination:
+          "https://driving-test-app-a5c67.firebaseapp.com/__/firebase/:path*",
+      },
+    ];
+  },
   async redirects() {
     return [
       {
@@ -62,6 +81,18 @@ const nextConfig: NextConfig = {
           {
             key: "Strict-Transport-Security",
             value: "max-age=63072000; includeSubDomains; preload",
+          },
+        ],
+      },
+      {
+        // The Firebase Auth helper (proxied via rewrites above) loads
+        // /__/auth/iframe inside an iframe on our own pages, which the
+        // global DENY would block. Later rules override earlier ones.
+        source: "/__/auth/:path*",
+        headers: [
+          {
+            key: "X-Frame-Options",
+            value: "SAMEORIGIN",
           },
         ],
       },

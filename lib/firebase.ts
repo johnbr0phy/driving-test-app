@@ -5,7 +5,11 @@ import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
   apiKey: "AIzaSyAXlabfPBleAxKoNrUtyHus-SBlG4HuKnM",
-  authDomain: "driving-test-app-a5c67.firebaseapp.com",
+  // Our own domain (not the default *.firebaseapp.com) so the Google
+  // sign-in popup flow stays same-origin — Chrome on iOS partitions
+  // third-party storage and intermittently breaks the cross-origin
+  // handoff. next.config.ts proxies /__/auth/* to the Firebase helper.
+  authDomain: "tigertest.io",
   projectId: "driving-test-app-a5c67",
   storageBucket: "driving-test-app-a5c67.firebasestorage.app",
   messagingSenderId: "1089627691384",

@@ -69,7 +69,9 @@ export function trackStatsEntry(source: string, tab: "yours" | "community" = "yo
   window.gtag?.("event", "stats_entry", { source, tab });
 }
 
-export function trackDailyQuizAnswer(correct: boolean, kind: "community" | "nemesis" = "community") {
+// kind: which surface the quiz row lives on — "community" | "nemesis"
+// (dashboard daily quiz) | "stats_yours" | "stats_community"
+export function trackDailyQuizAnswer(correct: boolean, kind: string = "community") {
   window.gtag?.("event", "daily_quiz_answer", { correct, kind });
 }
 

@@ -3,7 +3,7 @@
  * Schedule: daily at 03:00 UTC (vercel.json)
  *
  * Reads all real users' trainingAnswerHistory and writes two docs to Firestore:
- * - globalStats/wrongQuestions — top 20 most-missed universal questions (stats page)
+ * - globalStats/wrongQuestions — top 50 most-missed universal questions (stats page)
  * - globalStats/questionDifficulty — per-question attempt count + error rate for
  *   every question (universal and state-specific) with enough attempts (FastPass)
  *
@@ -76,7 +76,7 @@ export async function GET(req: NextRequest) {
 
     // Rank by wrong count, require 5+ attempts for statistical significance
     const MIN_ATTEMPTS = 5;
-    const TOP_N = 20;
+    const TOP_N = 50;
 
     const ranked = Object.entries(counts)
       .filter(([id]) => id.startsWith("U-")) // wrongQuestions doc is universal-only

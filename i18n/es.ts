@@ -540,7 +540,7 @@ export const es: TranslationKeys = {
       "Desbloquea los Exámenes de Práctica 3 y 4",
       "Ve lo que sigues fallando",
       "Ve tu precisión en cada pregunta",
-      "Las 20 preguntas que más gente falla",
+      "Las 50 preguntas que más gente falla",
       "Un solo pago, tuyo para siempre",
     ],
     oneTimePayment: "pago único",

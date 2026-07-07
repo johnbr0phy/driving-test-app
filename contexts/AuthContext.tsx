@@ -9,6 +9,8 @@ import {
   onAuthStateChanged,
   GoogleAuthProvider,
   signInWithPopup,
+  signInWithRedirect,
+  getRedirectResult,
   getAdditionalUserInfo,
   sendPasswordResetEmail,
   sendEmailVerification,
@@ -44,6 +46,16 @@ const AuthContext = createContext<AuthContextType>({
 
 export function useAuth() {
   return useContext(AuthContext);
+}
+
+// Mobile browsers (Chrome on iOS especially) don't reliably preserve the
+// popup tab's sessionStorage across the Google round trip, which breaks
+// signInWithPopup with auth/missing-initial-state. The auth helper is
+// served same-origin (see lib/firebase.ts + next.config.ts rewrites), so
+// the full-page redirect flow is reliable there — use it on mobile.
+function shouldUseRedirectSignIn(): boolean {
+  if (typeof navigator === "undefined") return false;
+  return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 }
 
 async function sendWelcomeEmail(userId: string, email: string, displayName: string | null, emailConsent: boolean) {
@@ -143,6 +155,24 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     return unsubscribe;
   }, [loadUserData, setUserId, setPhotoURL, photoURL, convertGuestToUser, checkUserHasData]);
 
+  useEffect(() => {
+    // Completes the mobile signInWithRedirect flow. Resolves null on
+    // ordinary loads; only returns a result right after the auth handler
+    // redirects back. Signed-in state itself arrives via onAuthStateChanged.
+    getRedirectResult(auth)
+      .then((result) => {
+        if (result?.user) {
+          const additionalInfo = getAdditionalUserInfo(result);
+          if (additionalInfo?.isNewUser) {
+            sendWelcomeEmail(result.user.uid, result.user.email!, result.user.displayName, true);
+          }
+        }
+      })
+      .catch((err) => {
+        console.error("Google redirect sign-in failed:", err);
+      });
+  }, []);
+
   const signup = async (email: string, password: string) => {
     const userCredential = await createUserWithEmailAndPassword(auth, email, password);
 
@@ -160,6 +190,13 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
   const loginWithGoogle = async () => {
     const provider = new GoogleAuthProvider();
+    if (shouldUseRedirectSignIn()) {
+      // Full-page redirect: this promise never resolves — the browser
+      // navigates away, and the result is picked up by the
+      // getRedirectResult effect when the app loads again.
+      await signInWithRedirect(auth, provider);
+      return;
+    }
     const result = await signInWithPopup(auth, provider);
     // Send welcome email for new Google signups only
     const additionalInfo = getAdditionalUserInfo(result);

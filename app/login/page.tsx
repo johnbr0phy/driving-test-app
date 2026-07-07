@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, Suspense } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { useAuth } from "@/contexts/AuthContext";
@@ -32,13 +32,26 @@ function LoginPageContent() {
   const [loading, setLoading] = useState(false);
   const [showResetPassword, setShowResetPassword] = useState(false);
 
-  const { login, loginWithGoogle, resetPassword } = useAuth();
+  const { login, loginWithGoogle, resetPassword, user, loading: authLoading } = useAuth();
   const router = useRouter();
   const searchParams = useSearchParams();
   const selectedState = useStore((state) => state.selectedState);
   const { t } = useTranslation();
 
   const redirectTo = searchParams.get("redirect");
+
+  // Route signed-in users onward. This is what completes the mobile
+  // signInWithRedirect flow: the page reloads after the Google round trip
+  // with no click handler in flight, so navigation has to happen here.
+  useEffect(() => {
+    if (authLoading || !user) return;
+    if (redirectTo) {
+      router.push(redirectTo);
+    } else {
+      const hasState = useStore.getState().selectedState;
+      router.push(hasState ? "/dashboard" : "/onboarding/select-state");
+    }
+  }, [authLoading, user, redirectTo, router]);
 
   const handleResetPassword = async (e: React.FormEvent) => {
     e.preventDefault();

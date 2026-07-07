@@ -13,8 +13,8 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
-import { ArrowLeft, Loader2, User, AlertTriangle, MapPin } from "lucide-react";
-import Link from "next/link";
+import { Loader2, User, AlertTriangle, MapPin } from "lucide-react";
+import { TestPageHeader } from "@/components/TestPageHeader";
 import { useAuth } from "@/contexts/AuthContext";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { useStore } from "@/store/useStore";
@@ -102,20 +102,11 @@ export default function SettingsPage() {
   }
 
   return (
-    <div className="flex-1 bg-white relative">
-      <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-light to-white pointer-events-none" />
-      <div className="relative container mx-auto px-4 py-8 max-w-6xl">
-        {/* Header */}
-        <div className="mb-8">
-          <Link href="/dashboard">
-            <Button variant="ghost" className="mb-4">
-              <ArrowLeft className="h-4 w-4 mr-2" />
-              {t("common.backToDashboard")}
-            </Button>
-          </Link>
-          <h1 className="text-4xl font-bold">{t("settings.settings")}</h1>
-        </div>
-
+    <div className="flex-1 bg-white">
+      <TestPageHeader backHref="/dashboard" />
+      <div className="relative">
+        <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-light to-white pointer-events-none" />
+        <div className="relative container mx-auto px-4 py-8 max-w-6xl">
         {/* State Selection and Profile Photo Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
           {/* State Selection Card */}
@@ -237,6 +228,7 @@ export default function SettingsPage() {
             </div>
           </CardContent>
         </Card>
+        </div>
       </div>
 
       {/* State Change Confirmation Dialog */}

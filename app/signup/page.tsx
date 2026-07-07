@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, Suspense } from "react";
+import { useState, useEffect, useRef, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { useAuth } from "@/contexts/AuthContext";
@@ -21,6 +21,11 @@ import { useStore } from "@/store/useStore";
 import { WebViewGoogleWarning } from "@/components/WebViewGoogleWarning";
 import { auth, db } from "@/lib/firebase";
 import { doc, getDoc, setDoc, serverTimestamp } from "firebase/firestore";
+
+// Marks a Google signup that continues via the mobile full-page redirect
+// flow: the page reloads when Google sends the user back, so the chosen
+// state has to survive in sessionStorage rather than component state.
+const PENDING_GOOGLE_SIGNUP_KEY = "tigertest-pending-google-signup";
 
 // Enroll the newly-signed-up user into a school's students subcollection.
 // Fires-and-forgets: if the school slug doesn't exist we just skip.
@@ -51,7 +56,7 @@ function SignupPageContent() {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
-  const { signup, loginWithGoogle } = useAuth();
+  const { signup, loginWithGoogle, user, loading: authLoading } = useAuth();
   const router = useRouter();
   const searchParams = useSearchParams();
   const { t } = useTranslation();
@@ -100,6 +105,38 @@ function SignupPageContent() {
     }
   };
 
+  // Finishes a Google signup that went through the mobile full-page
+  // redirect flow: the page reloads on return from Google, so the
+  // post-signup work in handleGoogleSignIn never ran. Runs at most once,
+  // and only when a redirect signup is pending in sessionStorage.
+  const pendingSignupHandled = useRef(false);
+  useEffect(() => {
+    if (authLoading || !user || pendingSignupHandled.current) return;
+    const raw = sessionStorage.getItem(PENDING_GOOGLE_SIGNUP_KEY);
+    if (!raw) return;
+    pendingSignupHandled.current = true;
+    sessionStorage.removeItem(PENDING_GOOGLE_SIGNUP_KEY);
+
+    let stateToUse: string | null = null;
+    try {
+      stateToUse = (JSON.parse(raw) as { stateToUse: string | null }).stateToUse;
+    } catch {
+      // corrupt stash — fall through and just route the signed-in user
+    }
+
+    (async () => {
+      setLoading(true);
+      useStore.getState().setUserId(user.uid);
+      if (stateToUse) {
+        setStoreState(stateToUse);
+      }
+      // Wait for the Firestore write to settle so a fresh tab opened from
+      // the welcome email reads back the correct selectedState.
+      await useStore.getState().saveToFirestore();
+      await handlePostSignup(user.uid, user.email ?? "");
+    })();
+  });
+
   const handleGoogleSignIn = async () => {
     // For guests, use existing state; for preselected from URL or manual selection
     const stateToUse = guestHasState ? storeSelectedState : selectedState;
@@ -116,7 +153,18 @@ function SignupPageContent() {
       // Set email consent preference (default true for Google sign-in)
       setStoreEmailConsent(true);
 
+      // On mobile, loginWithGoogle never returns — it navigates to the
+      // Google redirect flow. Stash the chosen state so the effect below
+      // can finish the signup when the page reloads on the way back.
+      sessionStorage.setItem(
+        PENDING_GOOGLE_SIGNUP_KEY,
+        JSON.stringify({ stateToUse: guestHasState ? null : stateToUse })
+      );
+
       await loginWithGoogle();
+
+      // Popup flow (desktop) continues here — the redirect stash is unused.
+      sessionStorage.removeItem(PENDING_GOOGLE_SIGNUP_KEY);
 
       // Seed userId in the store so setSelectedState's saveToFirestore
       // doesn't bail before AuthContext's listener has populated it.

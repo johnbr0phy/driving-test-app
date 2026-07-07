@@ -262,21 +262,7 @@ export default function AdminPage() {
 
   return (
     <div className="flex-1 bg-gray-50">
-      <div className="container mx-auto px-4 py-8 max-w-6xl">
-        <div className="flex items-center justify-between mb-6">
-          <div className="flex items-center gap-4">
-            <Link href="/dashboard" className="inline-flex items-center text-gray-600 hover:text-gray-900">
-              <ArrowLeft className="h-4 w-4 mr-2" />
-              Back
-            </Link>
-            <h1 className="text-2xl font-bold">Admin Dashboard</h1>
-          </div>
-          <Button onClick={() => fetchUsers(true)} variant="outline" size="sm">
-            <RefreshCw className="h-4 w-4 mr-2" />
-            Refresh
-          </Button>
-        </div>
-
+      <div className="container mx-auto px-4 py-6 max-w-6xl">
         {/* Summary Stats */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 mb-6">
           <Card>

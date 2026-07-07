@@ -3,7 +3,6 @@
 import { useEffect, useState, useMemo, useRef, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { BarChart3, Lock, Users } from "lucide-react";
-import { TestPageHeader } from "@/components/TestPageHeader";
 import { useStore } from "@/store/useStore";
 import { useHydration } from "@/hooks/useHydration";
 import {
@@ -259,7 +258,6 @@ function StatsContent() {
 
   return (
     <div className="flex-1 bg-gray-50">
-      <TestPageHeader backHref="/dashboard" />
       <div className="relative">
         <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-light to-transparent pointer-events-none" />
         <div className="relative container mx-auto px-4 py-6 max-w-3xl">

@@ -2,9 +2,8 @@
 
 import { useEffect, useState, useMemo, useRef, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
-import { Button } from "@/components/ui/button";
-import { ArrowLeft, Lock } from "lucide-react";
-import Link from "next/link";
+import { BarChart3, Lock, Users } from "lucide-react";
+import { TestPageHeader } from "@/components/TestPageHeader";
 import { useStore } from "@/store/useStore";
 import { useHydration } from "@/hooks/useHydration";
 import {
@@ -259,9 +258,11 @@ function StatsContent() {
   }
 
   return (
-    <div className="flex-1 bg-gray-50 relative">
-      <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-light to-transparent pointer-events-none" />
-      <div className="relative container mx-auto px-4 py-8 max-w-3xl">
+    <div className="flex-1 bg-gray-50">
+      <TestPageHeader backHref="/dashboard" />
+      <div className="relative">
+        <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-light to-transparent pointer-events-none" />
+        <div className="relative container mx-auto px-4 py-6 max-w-3xl">
         {/* Paywall Modal */}
         <PaywallModal
           open={paywallOpen}
@@ -276,36 +277,30 @@ function StatsContent() {
           onSignUp={() => router.push("/signup")}
         />
 
-        {/* Header */}
-        <div className="mb-6">
-          <Link href="/dashboard">
-            <Button variant="ghost" className="mb-4 -ml-2">
-              <ArrowLeft className="h-4 w-4 mr-2" />
-              {t("common.back")}
-            </Button>
-          </Link>
-        </div>
-
         {/* Tab Navigation */}
-        <div className="flex gap-1 mb-6 bg-gray-100 rounded-xl p-1">
+        <div className="flex gap-1.5 mb-6 bg-white border border-gray-200 rounded-xl p-1.5 shadow-sm">
           <button
             onClick={() => setActiveTab("yours")}
-            className={`flex-1 text-sm font-medium py-2 px-4 rounded-lg transition-all ${
+            aria-pressed={activeTab === "yours"}
+            className={`flex-1 flex items-center justify-center gap-2 text-sm font-semibold py-2.5 px-4 rounded-lg transition-all ${
               activeTab === "yours"
-                ? "bg-white text-gray-900 shadow-sm"
-                : "text-gray-500 hover:text-gray-700"
+                ? "bg-brand text-white shadow-sm"
+                : "text-gray-500 hover:text-gray-900 hover:bg-gray-50"
             }`}
           >
+            <BarChart3 className="h-4 w-4" />
             {t("stats.yourStats")}
           </button>
           <button
             onClick={() => setActiveTab("community")}
-            className={`flex-1 text-sm font-medium py-2 px-4 rounded-lg transition-all ${
+            aria-pressed={activeTab === "community"}
+            className={`flex-1 flex items-center justify-center gap-2 text-sm font-semibold py-2.5 px-4 rounded-lg transition-all ${
               activeTab === "community"
-                ? "bg-white text-gray-900 shadow-sm"
-                : "text-gray-500 hover:text-gray-700"
+                ? "bg-brand text-white shadow-sm"
+                : "text-gray-500 hover:text-gray-900 hover:bg-gray-50"
             }`}
           >
+            <Users className="h-4 w-4" />
             {t("stats.commonMistakes")}
           </button>
         </div>
@@ -412,6 +407,7 @@ function StatsContent() {
             )}
           </div>
         )}
+        </div>
       </div>
     </div>
   );

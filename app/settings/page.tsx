@@ -14,7 +14,6 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { Loader2, User, AlertTriangle, MapPin } from "lucide-react";
-import { TestPageHeader } from "@/components/TestPageHeader";
 import { useAuth } from "@/contexts/AuthContext";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { useStore } from "@/store/useStore";
@@ -103,7 +102,6 @@ export default function SettingsPage() {
 
   return (
     <div className="flex-1 bg-white">
-      <TestPageHeader backHref="/dashboard" />
       <div className="relative">
         <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-light to-white pointer-events-none" />
         <div className="relative container mx-auto px-4 py-8 max-w-6xl">

@@ -9,7 +9,10 @@ const firebaseConfig = {
   // sign-in popup flow stays same-origin — Chrome on iOS partitions
   // third-party storage and intermittently breaks the cross-origin
   // handoff. next.config.ts proxies /__/auth/* to the Firebase helper.
-  authDomain: "tigertest.io",
+  // Must be the exact origin the app is served on (www — Vercel
+  // redirects the apex there, and the SDK drops popup responses that
+  // arrive from a different origin than this value).
+  authDomain: "www.tigertest.io",
   projectId: "driving-test-app-a5c67",
   storageBucket: "driving-test-app-a5c67.firebasestorage.app",
   messagingSenderId: "1089627691384",

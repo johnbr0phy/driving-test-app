@@ -19,12 +19,13 @@ import {
 export default function OnboardingSelectStatePage() {
   const [selectedState, setSelectedState] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
-  const { user } = useAuth();
+  const { user, loading: authLoading } = useAuth();
   const router = useRouter();
   const { t } = useTranslation();
   const storeSelectedState = useStore((state) => state.selectedState);
   const setStoreState = useStore((state) => state.setSelectedState);
   const isGuest = useStore((state) => state.isGuest);
+  const firestoreLoaded = useStore((state) => state.firestoreLoaded);
 
   // Redirect if user already has a state selected
   useEffect(() => {
@@ -44,6 +45,13 @@ export default function OnboardingSelectStatePage() {
     // Redirect to dashboard
     router.push("/dashboard");
   };
+
+  // Don't render the selector until auth has resolved and, for signed-in
+  // users, their Firestore data has loaded — they may already have a state,
+  // and rendering early flashes the selector before the redirect above fires.
+  if (authLoading || (user && !firestoreLoaded)) {
+    return null;
+  }
 
   // Redirect to home if not logged in and not a guest
   if (!user && !isGuest) {

@@ -35,7 +35,7 @@ function LoginPageContent() {
   const { login, loginWithGoogle, resetPassword, user, loading: authLoading } = useAuth();
   const router = useRouter();
   const searchParams = useSearchParams();
-  const selectedState = useStore((state) => state.selectedState);
+  const firestoreLoaded = useStore((state) => state.firestoreLoaded);
   const { t } = useTranslation();
 
   const redirectTo = searchParams.get("redirect");
@@ -43,15 +43,26 @@ function LoginPageContent() {
   // Route signed-in users onward. This is what completes the mobile
   // signInWithRedirect flow: the page reloads after the Google round trip
   // with no click handler in flight, so navigation has to happen here.
+  // Don't decide between dashboard and onboarding until Firestore has
+  // loaded — routing on a not-yet-loaded store briefly flashes the state
+  // selector for users who already have a state.
   useEffect(() => {
     if (authLoading || !user) return;
     if (redirectTo) {
       router.push(redirectTo);
-    } else {
-      const hasState = useStore.getState().selectedState;
-      router.push(hasState ? "/dashboard" : "/onboarding/select-state");
+      return;
     }
-  }, [authLoading, user, redirectTo, router]);
+    if (!firestoreLoaded) return;
+    const hasState = useStore.getState().selectedState;
+    router.push(hasState ? "/dashboard" : "/onboarding/select-state");
+  }, [authLoading, user, redirectTo, firestoreLoaded, router]);
+
+  // If sign-in ends without a user (e.g. cancelling the guest-conflict
+  // dialog signs the user back out), release the button loading state —
+  // the submit handlers intentionally leave it on while awaiting redirect.
+  useEffect(() => {
+    if (!authLoading && !user) setLoading(false);
+  }, [authLoading, user]);
 
   const handleResetPassword = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -82,19 +93,10 @@ function LoginPageContent() {
 
     try {
       await login(email, password);
-      // Wait for user data to load before redirecting
-      await new Promise(resolve => setTimeout(resolve, 800));
-
-      // Check if user has a state selected
-      if (redirectTo) {
-        router.push(redirectTo);
-      } else {
-        const hasState = useStore.getState().selectedState;
-        router.push(hasState ? "/dashboard" : "/onboarding/select-state");
-      }
+      // Navigation happens in the effect above once Firestore data has
+      // loaded; keep the button in its loading state until then.
     } catch (err: any) {
       setError(err.message || "Failed to log in");
-    } finally {
       setLoading(false);
     }
   };
@@ -105,19 +107,10 @@ function LoginPageContent() {
 
     try {
       await loginWithGoogle();
-      // Wait for user data to load before redirecting
-      await new Promise(resolve => setTimeout(resolve, 800));
-
-      // Check if user has a state selected
-      if (redirectTo) {
-        router.push(redirectTo);
-      } else {
-        const hasState = useStore.getState().selectedState;
-        router.push(hasState ? "/dashboard" : "/onboarding/select-state");
-      }
+      // Navigation happens in the effect above once Firestore data has
+      // loaded; keep the button in its loading state until then.
     } catch (err: any) {
       setError(err.message || "Failed to sign in with Google");
-    } finally {
       setLoading(false);
     }
   };

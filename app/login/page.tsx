@@ -57,6 +57,13 @@ function LoginPageContent() {
     router.push(hasState ? "/dashboard" : "/onboarding/select-state");
   }, [authLoading, user, redirectTo, firestoreLoaded, router]);
 
+  // If sign-in ends without a user (e.g. cancelling the guest-conflict
+  // dialog signs the user back out), release the button loading state —
+  // the submit handlers intentionally leave it on while awaiting redirect.
+  useEffect(() => {
+    if (!authLoading && !user) setLoading(false);
+  }, [authLoading, user]);
+
   const handleResetPassword = async (e: React.FormEvent) => {
     e.preventDefault();
     setError("");

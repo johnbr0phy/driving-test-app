@@ -128,7 +128,7 @@ export const es: TranslationKeys = {
     dailyMissedCta: "Ver las preguntas más difíciles",
     nemesisMissedByYou: "fallada por ti",
     nemesisCtaMore: "Tienes {{n}} más como esta. Verlas",
-    nemesisCtaWin: "1 menos. Quedan {{n}}",
+    nemesisCtaWin: "¡Bien hecho! Repasa {{n}} más que fallaste",
     nemesisCtaLast: "Ver tus respuestas incorrectas",
     heroTitle0: "Aprendiz Nuevo",
     heroTitle1: "Primer Paso Dado",

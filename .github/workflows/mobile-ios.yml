@@ -1,14 +1,18 @@
 name: Mobile iOS Build
 
-# Manual-only: macOS runners bill at 10x, and a signed IPA requires
-# Apple Developer certificates anyway. This validates that the iOS
-# project compiles; archive/upload happens from Xcode or via fastlane
-# (see docs/APP_STORE_DEPLOYMENT.md).
+# Builds the iOS app for the iPhone Simulator on GitHub's macOS runners
+# and uploads it as an artifact. The .app zip can be run without a Mac at
+# https://appetize.io (browser-based simulator) or dropped onto a local
+# simulator. A signed device/App Store build requires Apple Developer
+# certificates — see docs/APP_STORE_DEPLOYMENT.md.
 on:
   workflow_dispatch:
+  push:
+    branches: [main, claude/tigertest-mobile-app-so7lbd]
+    paths: ["mobile/**", ".github/workflows/mobile-ios.yml"]
 
 jobs:
-  ios:
+  ios-simulator:
     runs-on: macos-latest
     defaults:
       run:
@@ -28,11 +32,24 @@ jobs:
       - name: Capacitor sync
         run: npx cap sync ios
 
-      - name: Build (unsigned)
+      - name: Build for iPhone Simulator
         run: |
           cd ios/App
           xcodebuild -project App.xcodeproj \
             -scheme App \
-            -destination 'generic/platform=iOS' \
+            -configuration Debug \
+            -sdk iphonesimulator \
+            -derivedDataPath DerivedData \
             CODE_SIGNING_ALLOWED=NO \
             build
+
+      - name: Zip simulator app
+        run: |
+          cd ios/App/DerivedData/Build/Products/Debug-iphonesimulator
+          zip -r TigerTest-Simulator.zip App.app
+
+      - name: Upload simulator app
+        uses: actions/upload-artifact@v4
+        with:
+          name: tigertest-ios-simulator
+          path: mobile/ios/App/DerivedData/Build/Products/Debug-iphonesimulator/TigerTest-Simulator.zip

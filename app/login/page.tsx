@@ -11,6 +11,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { WebViewGoogleWarning } from "@/components/WebViewGoogleWarning";
+import { useIsNativeApp } from "@/hooks/useIsNativeApp";
 
 export default function LoginPage() {
   return (
@@ -37,6 +38,7 @@ function LoginPageContent() {
   const searchParams = useSearchParams();
   const firestoreLoaded = useStore((state) => state.firestoreLoaded);
   const { t } = useTranslation();
+  const isNative = useIsNativeApp();
 
   const redirectTo = searchParams.get("redirect");
 
@@ -139,20 +141,26 @@ function LoginPageContent() {
               </div>
             )}
 
-            {/* Google Sign-In */}
-            <WebViewGoogleWarning
-              onGoogleSignIn={handleGoogleSignIn}
-              disabled={loading}
-            />
+            {/* Google Sign-In — hidden in the native app: Google blocks
+                OAuth inside embedded WebViews, and offering it on iOS
+                would require adding Sign in with Apple (guideline 4.8) */}
+            {!isNative && (
+              <>
+                <WebViewGoogleWarning
+                  onGoogleSignIn={handleGoogleSignIn}
+                  disabled={loading}
+                />
 
-            <div className="relative">
-              <div className="absolute inset-0 flex items-center">
-                <span className="w-full border-t" />
-              </div>
-              <div className="relative flex justify-center text-xs uppercase">
-                <span className="bg-white px-2 text-muted-foreground">{t("common.orContinueWithEmail")}</span>
-              </div>
-            </div>
+                <div className="relative">
+                  <div className="absolute inset-0 flex items-center">
+                    <span className="w-full border-t" />
+                  </div>
+                  <div className="relative flex justify-center text-xs uppercase">
+                    <span className="bg-white px-2 text-muted-foreground">{t("common.orContinueWithEmail")}</span>
+                  </div>
+                </div>
+              </>
+            )}
 
             {/* Email/Password Form */}
             <form onSubmit={handleSubmit} className="space-y-4">

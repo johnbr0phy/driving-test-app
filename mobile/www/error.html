@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>TigerTest — Offline</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #ffffff;
+      font-family: -apple-system, system-ui, sans-serif;
+      color: #111827;
+      padding: env(safe-area-inset-top) 24px env(safe-area-inset-bottom);
+    }
+    .card { text-align: center; max-width: 320px; }
+    h1 { font-size: 1.25rem; margin: 0 0 8px; }
+    p { color: #6b7280; font-size: 0.95rem; margin: 0 0 20px; }
+    button {
+      background: #f97316;
+      color: #fff;
+      border: 0;
+      border-radius: 9999px;
+      padding: 14px 32px;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>You're offline</h1>
+    <p>TigerTest needs an internet connection. Check your connection and try again.</p>
+    <button onclick="location.replace('https://www.tigertest.io')">Try again</button>
+  </div>
+</body>
+</html>

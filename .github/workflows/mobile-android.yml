@@ -1,0 +1,66 @@
+name: Mobile Android Build
+
+on:
+  push:
+    branches: [main]
+    paths: ["mobile/**", ".github/workflows/mobile-android.yml"]
+  pull_request:
+    paths: ["mobile/**", ".github/workflows/mobile-android.yml"]
+  workflow_dispatch:
+
+jobs:
+  android:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: mobile
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: mobile/package-lock.json
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Capacitor sync
+        run: npx cap sync android
+
+      - name: Build debug APK
+        run: cd android && ./gradlew assembleDebug --no-daemon
+
+      - name: Upload debug APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: tigertest-debug-apk
+          path: mobile/android/app/build/outputs/apk/debug/app-debug.apk
+
+      # Signed release bundle for the Play Store. Runs only when the
+      # signing secrets are configured (see docs/APP_STORE_DEPLOYMENT.md).
+      - name: Decode keystore
+        if: github.event_name != 'pull_request' && vars.ANDROID_RELEASE_ENABLED == 'true'
+        run: echo "${{ secrets.ANDROID_KEYSTORE_BASE64 }}" | base64 -d > /tmp/release.keystore
+
+      - name: Build signed release AAB
+        if: github.event_name != 'pull_request' && vars.ANDROID_RELEASE_ENABLED == 'true'
+        env:
+          ANDROID_KEYSTORE_PATH: /tmp/release.keystore
+          ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          ANDROID_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+          ANDROID_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
+        run: cd android && ./gradlew bundleRelease --no-daemon
+
+      - name: Upload release AAB
+        if: github.event_name != 'pull_request' && vars.ANDROID_RELEASE_ENABLED == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: tigertest-release-aab
+          path: mobile/android/app/build/outputs/bundle/release/app-release.aab

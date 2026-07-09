@@ -13,6 +13,7 @@ import { CheckCircle, Star } from "lucide-react";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { en, es } from "@/i18n";
 import Image from "next/image";
+import { useIsNativeApp } from "@/hooks/useIsNativeApp";
 
 interface PaywallModalProps {
   open: boolean;
@@ -34,6 +35,9 @@ export function PaywallModal({
   const { t, language } = useTranslation();
   const dict = language === "es" ? es : en;
   const [loading, setLoading] = useState(false);
+  // In the native app, Stripe checkout would violate Apple's/Google's
+  // in-app purchase rules — show an informational notice instead.
+  const isNative = useIsNativeApp();
 
   const handleUpgrade = async () => {
     setLoading(true);
@@ -85,18 +89,32 @@ export function PaywallModal({
         </div>
 
         {/* Price section */}
-        <div className="mb-5">
-          <div className="flex items-baseline justify-between">
-            <span className="text-4xl font-bold text-gray-900">$9.99</span>
-            <span className="border border-brand text-brand text-xs font-semibold px-3 py-1 rounded-full">
-              {t("paywall.cheaperThanRetest")}
-            </span>
+        {!(isNative && !isGuest) && (
+          <div className="mb-5">
+            <div className="flex items-baseline justify-between">
+              <span className="text-4xl font-bold text-gray-900">$9.99</span>
+              <span className="border border-brand text-brand text-xs font-semibold px-3 py-1 rounded-full">
+                {t("paywall.cheaperThanRetest")}
+              </span>
+            </div>
+            <div className="text-sm text-gray-500 mt-1">{t("paywall.oneTimePayment")}</div>
           </div>
-          <div className="text-sm text-gray-500 mt-1">{t("paywall.oneTimePayment")}</div>
-        </div>
+        )}
 
         {/* CTA section */}
-        {isGuest ? (
+        {isNative && !isGuest ? (
+          <div className="flex flex-col items-center gap-2">
+            <p className="text-sm text-gray-600 text-center mb-1">
+              {t("paywall.notAvailableInApp")}
+            </p>
+            <Button
+              onClick={() => onOpenChange(false)}
+              className="w-full bg-brand hover:bg-brand-hover text-white font-semibold py-6 text-base rounded-full"
+            >
+              {t("paywall.okGotIt")}
+            </Button>
+          </div>
+        ) : isGuest ? (
           <div className="flex flex-col items-center gap-2">
             <p className="text-sm text-gray-600 text-center mb-1">
               {t("paywall.createFreeAccountPrompt")}

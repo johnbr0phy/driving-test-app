@@ -1,0 +1,38 @@
+name: Mobile iOS Build
+
+# Manual-only: macOS runners bill at 10x, and a signed IPA requires
+# Apple Developer certificates anyway. This validates that the iOS
+# project compiles; archive/upload happens from Xcode or via fastlane
+# (see docs/APP_STORE_DEPLOYMENT.md).
+on:
+  workflow_dispatch:
+
+jobs:
+  ios:
+    runs-on: macos-latest
+    defaults:
+      run:
+        working-directory: mobile
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: mobile/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Capacitor sync
+        run: npx cap sync ios
+
+      - name: Build (unsigned)
+        run: |
+          cd ios/App
+          xcodebuild -project App.xcodeproj \
+            -scheme App \
+            -destination 'generic/platform=iOS' \
+            CODE_SIGNING_ALLOWED=NO \
+            build

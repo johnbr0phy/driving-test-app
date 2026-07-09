@@ -83,6 +83,25 @@ function processFullDoc(data: Record<string, unknown>) {
     }
   }
 
+  // Per-day answered-question counts for the questions chart. Training answers
+  // carry their own answeredAt; test answers fall back to the test's completedAt.
+  const answersByDay: Record<string, number> = {};
+  const bumpDay = (iso: unknown, n = 1) => {
+    if (typeof iso !== 'string' || !iso) return;
+    const day = iso.split('T')[0];
+    answersByDay[day] = (answersByDay[day] || 0) + n;
+  };
+  const answerHistory = (data.trainingAnswerHistory || []) as Record<string, unknown>[];
+  for (const h of answerHistory) bumpDay(h?.answeredAt);
+  for (const test of completedTests) {
+    const answers = (test.answers || []) as Record<string, unknown>[];
+    if (answers.length > 0) {
+      for (const a of answers) bumpDay(a?.answeredAt ?? test.completedAt);
+    } else if (typeof test.totalQuestions === 'number' && test.totalQuestions > 0) {
+      bumpDay(test.completedAt, test.totalQuestions);
+    }
+  }
+
   // Per-state pass/fail tally across this user's completed tests
   const stateResults: Record<string, { passed: number; failed: number }> = {};
   for (const test of completedTests) {
@@ -111,6 +130,7 @@ function processFullDoc(data: Record<string, unknown>) {
     isPremium: (data.subscription as Record<string, unknown>)?.isPremium === true,
     convertedPaywall: deriveConvertedPaywall(data),
     stateResults,
+    answersByDay,
   };
 }
 
@@ -244,7 +264,7 @@ export async function GET(request: NextRequest) {
 
     const [lightSnap, fullSnap, sharesDoc, paywallsDoc] = await Promise.all([
       db.collection('users')
-        .select('selectedState', 'lastUpdated', 'activeDates', 'subscription', 'createdAt', 'paywallHits')
+        .select('selectedState', 'lastUpdated', 'activeDates', 'subscription', 'createdAt', 'paywallHits', '_stats')
         .get(),
       db.collection('users')
         .orderBy('lastUpdated', 'desc')
@@ -282,6 +302,9 @@ export async function GET(request: NextRequest) {
     const stateCounts: Record<string, number> = {};
     let payingUsers = 0;
     let newUsers7d = 0;
+    // All-time questions answered, summed from every user's denormalized
+    // _stats counters (written on each client save).
+    let totalQuestionsAnswered = 0;
     const usersForDau: { activeDates: string[]; lastUpdated: string | null }[] = [];
     const signupDates: string[] = [];
     // Per-paywall attribution: distinct logged-in users who hit it, and how
@@ -306,6 +329,11 @@ export async function GET(request: NextRequest) {
       if (state) stateCounts[state] = (stateCounts[state] || 0) + 1;
       const isPremium = (data.subscription as Record<string, unknown>)?.isPremium === true;
       if (isPremium) payingUsers++;
+
+      const denormStats = (data._stats || {}) as Record<string, unknown>;
+      totalQuestionsAnswered +=
+        ((denormStats.trainingQuestionsAnswered as number) || 0) +
+        ((denormStats.testQuestionsAnswered as number) || 0);
 
       // Attribute this user's paywall hits for conversion-by-paywall stats.
       const userPaywallHits = (data.paywallHits || {}) as Record<string, Record<string, unknown>>;
@@ -340,6 +368,7 @@ export async function GET(request: NextRequest) {
 
     // ── Build user list from top-100 full docs + aggregate pass-by-state ──
     const passByStateAgg: Record<string, { passed: number; failed: number }> = {};
+    const questionsByDay: Record<string, number> = {};
     const users = fullSnap.docs.map(doc => {
       const data = doc.data() as Record<string, unknown>;
       const stats = processFullDoc(data);
@@ -347,6 +376,9 @@ export async function GET(request: NextRequest) {
         const bucket = (passByStateAgg[code] ||= { passed: 0, failed: 0 });
         bucket.passed += r.passed;
         bucket.failed += r.failed;
+      }
+      for (const [day, count] of Object.entries(stats.answersByDay)) {
+        questionsByDay[day] = (questionsByDay[day] || 0) + count;
       }
       return {
         uid: doc.id,
@@ -399,6 +431,10 @@ export async function GET(request: NextRequest) {
     for (const d of signupDates) signupsByDay[d] = (signupsByDay[d] || 0) + 1;
     const newUsersSeries = buildSeries(signupsByDay);
 
+    // Questions answered over time, from the top-100 full docs (same sample
+    // as pass-rate-by-state).
+    const questionsAnsweredSeries = buildSeries(questionsByDay);
+
     const sharesData = sharesDoc.exists ? sharesDoc.data() : null;
 
     // ── Paywall stats: total hits (aggregate, incl. guests) merged with
@@ -439,6 +475,7 @@ export async function GET(request: NextRequest) {
       dailyActiveUsers,
       newUsersSeries,
       paywallViewsSeries,
+      questionsAnsweredSeries,
       totalUsers,
       stats: {
         totalUsers,
@@ -448,6 +485,7 @@ export async function GET(request: NextRequest) {
         activeUsersPrev7d,
         newUsers7d,
         payingUsers,
+        totalQuestionsAnswered,
         totalShareClicks: (sharesData?.total as number) || 0,
         shareClicksDaily: (sharesData?.daily as Record<string, number>) || {},
         conversion: {

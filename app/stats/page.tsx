@@ -378,8 +378,8 @@ function StatsContent() {
                         })}
                     </div>
 
-                    {/* Lock UI */}
-                    <div className="flex flex-col items-center pt-3 pb-2 text-center">
+                    {/* Lock UI — overlaps the fading preview */}
+                    <div className="relative z-10 -mt-20 flex flex-col items-center pb-2 text-center">
                       <div className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-brand-light mb-3">
                         <Lock className="h-4 w-4 text-brand" />
                       </div>

@@ -576,7 +576,7 @@ function DashboardContent() {
                   }
                 >
                   {!trainingComplete && !trainingLocked && trainingProgress.correct > 0 && (
-                    <ProgressBar value={trainingProgress.correct} max={trainingProgress.total} />
+                    <ProgressBar value={trainingProgress.correct} max={trainingProgress.total} hideLabel />
                   )}
                 </ProgressCard>
 

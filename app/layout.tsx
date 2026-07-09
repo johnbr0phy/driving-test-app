@@ -1,9 +1,20 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import "./globals.css";
 import { HeaderSwitch } from "@/components/HeaderSwitch";
 import { Footer } from "@/components/Footer";
 import { Providers } from "@/components/Providers";
+import { NativeAppShell } from "@/components/NativeAppShell";
+
+// viewportFit: "cover" lets the page extend behind the notch/home
+// indicator in the native app shell; env(safe-area-inset-*) padding is
+// applied via the .native-app class (globals.css) so the web experience
+// is unchanged.
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+};
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
@@ -81,6 +92,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased flex flex-col min-h-dvh">
+        <NativeAppShell />
         <Providers>
           <HeaderSwitch />
           <main className="flex-1 flex flex-col">{children}</main>

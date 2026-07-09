@@ -550,6 +550,9 @@ export const es: TranslationKeys = {
     socialProof: "Más de 2,000 estudiantes aprobaron con TigerTest",
     createFreeAccountPrompt: "Crea una cuenta gratuita para desbloquear funciones premium",
     upgradeNow: "Actualizar ahora",
+    notAvailableInApp:
+      "Las compras premium no están disponibles en la aplicación. Puedes actualizar en tigertest.io desde tu navegador web — tu cuenta se sincroniza automáticamente.",
+    okGotIt: "Entendido",
   },
 
   // Data reset notification

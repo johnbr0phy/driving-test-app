@@ -19,6 +19,7 @@ import {
 } from "@/components/ui/select";
 import { useStore } from "@/store/useStore";
 import { WebViewGoogleWarning } from "@/components/WebViewGoogleWarning";
+import { useIsNativeApp } from "@/hooks/useIsNativeApp";
 import { auth, db } from "@/lib/firebase";
 import { doc, getDoc, setDoc, serverTimestamp } from "firebase/firestore";
 
@@ -60,6 +61,7 @@ function SignupPageContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const { t } = useTranslation();
+  const isNative = useIsNativeApp();
   const setStoreState = useStore((state) => state.setSelectedState);
   const storeSelectedState = useStore((state) => state.selectedState);
   const isGuest = useStore((state) => state.isGuest);
@@ -312,20 +314,26 @@ function SignupPageContent() {
           )}
 
           <div className="space-y-4">
-            {/* Google Sign-In */}
-            <WebViewGoogleWarning
-              onGoogleSignIn={handleGoogleSignIn}
-              disabled={loading}
-            />
+            {/* Google Sign-In — hidden in the native app: Google blocks
+                OAuth inside embedded WebViews, and offering it on iOS
+                would require adding Sign in with Apple (guideline 4.8) */}
+            {!isNative && (
+              <>
+                <WebViewGoogleWarning
+                  onGoogleSignIn={handleGoogleSignIn}
+                  disabled={loading}
+                />
 
-              <div className="relative">
-                <div className="absolute inset-0 flex items-center">
-                  <span className="w-full border-t" />
+                <div className="relative">
+                  <div className="absolute inset-0 flex items-center">
+                    <span className="w-full border-t" />
+                  </div>
+                  <div className="relative flex justify-center text-xs uppercase">
+                    <span className="bg-white px-2 text-muted-foreground">{t("common.orSignUpWithEmail")}</span>
+                  </div>
                 </div>
-                <div className="relative flex justify-center text-xs uppercase">
-                  <span className="bg-white px-2 text-muted-foreground">{t("common.orSignUpWithEmail")}</span>
-                </div>
-              </div>
+              </>
+            )}
 
               {/* Email/Password Form */}
               <form onSubmit={handleStep2Submit} className="space-y-4">

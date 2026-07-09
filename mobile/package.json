@@ -1,0 +1,30 @@
+{
+  "name": "tigertest-mobile",
+  "version": "1.0.0",
+  "private": true,
+  "description": "TigerTest iOS/Android app — Capacitor shell around https://www.tigertest.io",
+  "scripts": {
+    "sync": "cap sync",
+    "assets": "capacitor-assets generate --iconBackgroundColor '#ffffff' --splashBackgroundColor '#ffffff'",
+    "open:ios": "cap open ios",
+    "open:android": "cap open android",
+    "build:android": "cd android && ./gradlew assembleDebug",
+    "build:android:release": "cd android && ./gradlew bundleRelease"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.4.1",
+    "@capacitor/app": "^8.0.0",
+    "@capacitor/core": "^8.4.1",
+    "@capacitor/ios": "^8.4.1",
+    "@capacitor/splash-screen": "^8.0.0",
+    "@capacitor/status-bar": "^8.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^3.0.5",
+    "@capacitor/cli": "^8.4.1",
+    "typescript": "^5.9.3"
+  },
+  "overrides": {
+    "sharp": "^0.33.5"
+  }
+}

@@ -59,6 +59,16 @@ App Router pages in `/app/`. Key routes:
 
 Guest mode allows using the app without an account; guest data converts on signup.
 
+### Mobile Apps
+
+`/mobile/` contains a Capacitor 8 shell (app id `io.tigertest.app`) that loads
+the production site in a native WebView for iOS and Android. The site detects
+the shell via a `TigerTestApp` user-agent token (`lib/native-app.ts`,
+`hooks/useIsNativeApp.ts`) and hides Google Sign-In and Stripe checkout
+(store-policy compliance) and applies safe-area CSS. After changing
+`mobile/capacitor.config.ts`, run `npx cap sync` in `/mobile` and commit the
+result. Store submission guide: `docs/APP_STORE_DEPLOYMENT.md`.
+
 ### Agentic Question Rewrite System
 
 `/agentic-rewrite/` contains a multi-agent pipeline for generating and validating questions. A supervisor agent orchestrates generators and four validator agents (distribution, memorization, format, answer-length) with a fixer agent for corrections. State question files live in `/agentic-rewrite/states/`.

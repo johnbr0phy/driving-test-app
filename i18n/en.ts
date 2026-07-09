@@ -550,6 +550,9 @@ export const en = {
     socialProof: "2,000+ students passed with TigerTest",
     createFreeAccountPrompt: "Create a free account to unlock premium features",
     upgradeNow: "Upgrade Now",
+    notAvailableInApp:
+      "Premium purchases aren't available in the app. You can upgrade on tigertest.io in your web browser — your account syncs automatically.",
+    okGotIt: "Got it",
   },
 
   // Data reset notification

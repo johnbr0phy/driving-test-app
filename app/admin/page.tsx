@@ -43,6 +43,7 @@ interface Stats {
   activeUsersPrev7d: number;
   newUsers7d: number;
   payingUsers: number;
+  totalQuestionsAnswered: number;
   totalShareClicks: number;
   shareClicksDaily: Record<string, number>;
   conversion?: ConversionStats;
@@ -81,7 +82,8 @@ export default function AdminPage() {
   const [dailyActiveUsers, setDailyActiveUsers] = useState<{ date: string; count: number; displayDate: string }[]>([]);
   const [newUsersSeries, setNewUsersSeries] = useState<TimeSeries>(EMPTY_SERIES);
   const [paywallViewsSeries, setPaywallViewsSeries] = useState<TimeSeries>(EMPTY_SERIES);
-  const [graphMetric, setGraphMetric] = useState<'active' | 'newUsers' | 'paywall'>('active');
+  const [questionsAnsweredSeries, setQuestionsAnsweredSeries] = useState<TimeSeries>(EMPTY_SERIES);
+  const [graphMetric, setGraphMetric] = useState<'active' | 'newUsers' | 'paywall' | 'questions'>('active');
   const [graphGranularity, setGraphGranularity] = useState<'day' | 'week' | 'month'>('day');
   const [usersPage, setUsersPage] = useState(0);
   const [passRateByState, setPassRateByState] = useState<PassRateByState[]>([]);
@@ -122,6 +124,7 @@ export default function AdminPage() {
       setDailyActiveUsers(data.dailyActiveUsers);
       setNewUsersSeries(data.newUsersSeries || EMPTY_SERIES);
       setPaywallViewsSeries(data.paywallViewsSeries || EMPTY_SERIES);
+      setQuestionsAnsweredSeries(data.questionsAnsweredSeries || EMPTY_SERIES);
       setPassRateByState(data.passRateByState || []);
       setPaywallStats(data.paywallStats || []);
     } catch (err) {
@@ -164,6 +167,10 @@ export default function AdminPage() {
           activeUsersPrev7d: stats.activeUsersPrev7d,
           newUsers7d: wasNew ? stats.newUsers7d - 1 : stats.newUsers7d,
           payingUsers: stats.payingUsers - (deletedUser.isPremium ? 1 : 0),
+          totalQuestionsAnswered: Math.max(
+            0,
+            stats.totalQuestionsAnswered - deletedUser.trainingQuestionsAnswered - deletedUser.testQuestionsAnswered,
+          ),
           totalShareClicks: stats.totalShareClicks,
           shareClicksDaily: stats.shareClicksDaily,
         });
@@ -386,12 +393,21 @@ export default function AdminPage() {
                   {graphMetric === 'active' && 'Active Users (30 Days)'}
                   {graphMetric === 'newUsers' && `New Users (${({ day: 'Daily', week: 'Weekly', month: 'Monthly' } as const)[graphGranularity]})`}
                   {graphMetric === 'paywall' && `Paywall Views (${({ day: 'Daily', week: 'Weekly', month: 'Monthly' } as const)[graphGranularity]})`}
+                  {graphMetric === 'questions' && (
+                    <>
+                      {`Questions Answered (${({ day: 'Daily', week: 'Weekly', month: 'Monthly' } as const)[graphGranularity]})`}
+                      <span className="text-sm font-normal text-gray-500 ml-2">
+                        {(stats?.totalQuestionsAnswered ?? 0).toLocaleString()} all-time
+                      </span>
+                    </>
+                  )}
                 </CardTitle>
                 <div className="flex flex-wrap gap-1">
                   {([
                     { key: 'active', label: 'Active Users' },
                     { key: 'newUsers', label: 'New Users' },
                     { key: 'paywall', label: 'Paywall Views' },
+                    { key: 'questions', label: 'Questions Answered' },
                   ] as const).map(({ key, label }) => (
                     <Button
                       key={key}
@@ -446,10 +462,10 @@ export default function AdminPage() {
                     <Area type="monotone" dataKey="count" stroke="#22c55e" fill="#22c55e" fillOpacity={0.2} strokeWidth={2} />
                   </AreaChart>
 
-                /* New Users / Paywall Views - bar chart, day / week / month */
+                /* New Users / Paywall Views / Questions Answered - bar chart, day / week / month */
                 ) : (
                   <BarChart
-                    data={(graphMetric === 'newUsers' ? newUsersSeries : paywallViewsSeries)[graphGranularity]}
+                    data={({ newUsers: newUsersSeries, paywall: paywallViewsSeries, questions: questionsAnsweredSeries } as const)[graphMetric][graphGranularity]}
                     margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
                   >
                     <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
@@ -457,13 +473,18 @@ export default function AdminPage() {
                     <YAxis tick={{ fontSize: 12 }} tickLine={false} axisLine={{ stroke: '#e5e7eb' }} allowDecimals={false} />
                     <Tooltip
                       contentStyle={{ backgroundColor: 'white', border: '1px solid #e5e7eb', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}
-                      formatter={(value) => [value ?? 0, graphMetric === 'newUsers' ? 'New Users' : 'Paywall Views']}
+                      formatter={(value) => [value ?? 0, ({ newUsers: 'New Users', paywall: 'Paywall Views', questions: 'Questions Answered' } as const)[graphMetric]]}
                     />
-                    <Bar dataKey="count" fill={graphMetric === 'newUsers' ? '#22c55e' : '#a855f7'} radius={[4, 4, 0, 0]} />
+                    <Bar dataKey="count" fill={({ newUsers: '#22c55e', paywall: '#a855f7', questions: '#3b82f6' } as const)[graphMetric]} radius={[4, 4, 0, 0]} />
                   </BarChart>
                 )}
               </ResponsiveContainer>
             </div>
+            {graphMetric === 'questions' && (
+              <p className="mt-2 text-xs text-gray-400">
+                Chart counts training + test answers from the 100 most recently active users; the all-time total covers all users.
+              </p>
+            )}
           </CardContent>
         </Card>
 

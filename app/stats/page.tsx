@@ -353,15 +353,14 @@ function StatsContent() {
                 {/* Paywall for free users */}
                 {!isPremium && sortedQuestions.length > FREE_QUESTION_LIMIT && (
                   <div>
-                    {/* Blurred preview */}
-                    <div className="relative">
-                      <div className="space-y-2 overflow-hidden max-h-32 blur-sm pointer-events-none select-none" aria-hidden="true">
-                        {sortedQuestions.slice(FREE_QUESTION_LIMIT, FREE_QUESTION_LIMIT + 2).map((item) => {
+                    {/* Blurred preview — three cards fading out gradually */}
+                    <div className="space-y-2 blur-sm pointer-events-none select-none" aria-hidden="true">
+                      {sortedQuestions.slice(FREE_QUESTION_LIMIT, FREE_QUESTION_LIMIT + 3).map((item, i) => {
                           const chip = chipFor(item);
                           return (
                             <div
                               key={item.question.questionId}
-                              className="rounded-xl bg-white border border-gray-100 px-4 py-3 flex items-center gap-4"
+                              className={`rounded-xl bg-white border border-gray-100 px-4 py-3 flex items-center gap-4 ${["opacity-60", "opacity-35", "opacity-15"][i]}`}
                             >
                               <div className="shrink-0 text-center min-w-[3rem]">
                                 <div className={`text-base font-bold tabular-nums leading-none ${chip.color}`}>
@@ -377,8 +376,6 @@ function StatsContent() {
                             </div>
                           );
                         })}
-                      </div>
-                      <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-gray-50 via-gray-50/90 to-transparent pointer-events-none" />
                     </div>
 
                     {/* Lock UI */}

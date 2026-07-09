@@ -78,26 +78,23 @@ export function CommunityWrongQuestions({ isPremium, onUpgradeClick }: Props) {
       {/* Paywall for free users */}
       {!isPremium && lockedCount > 0 && (
         <div>
-          {/* Blurred preview */}
-          <div className="relative">
-            <div className="space-y-2 overflow-hidden max-h-32 blur-sm pointer-events-none select-none" aria-hidden="true">
-              {data.questions.slice(FREE_LIMIT, FREE_LIMIT + 2).map((q) => (
-                <div key={q.questionId} className="rounded-xl bg-white border border-gray-100 px-4 py-3 flex items-center gap-4">
-                  <div className="shrink-0 text-center min-w-[3rem]">
-                    <div className="text-base font-bold text-red-500 tabular-nums leading-none">
-                      {q.errorRate}%
-                    </div>
-                    <div className="text-[9px] uppercase tracking-wide text-gray-400 mt-0.5">
-                      {t("dashboard.dailyMissedGetWrong")}
-                    </div>
+          {/* Blurred preview — three cards fading out gradually */}
+          <div className="space-y-2 blur-sm pointer-events-none select-none" aria-hidden="true">
+            {data.questions.slice(FREE_LIMIT, FREE_LIMIT + 3).map((q, i) => (
+              <div key={q.questionId} className={`rounded-xl bg-white border border-gray-100 px-4 py-3 flex items-center gap-4 ${["opacity-60", "opacity-35", "opacity-15"][i]}`}>
+                <div className="shrink-0 text-center min-w-[3rem]">
+                  <div className="text-base font-bold text-red-500 tabular-nums leading-none">
+                    {q.errorRate}%
                   </div>
-                  <p className="flex-1 min-w-0 text-sm leading-snug font-medium text-gray-900 line-clamp-2">
-                    {q.question}
-                  </p>
+                  <div className="text-[9px] uppercase tracking-wide text-gray-400 mt-0.5">
+                    {t("dashboard.dailyMissedGetWrong")}
+                  </div>
                 </div>
-              ))}
-            </div>
-            <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-white to-transparent pointer-events-none" />
+                <p className="flex-1 min-w-0 text-sm leading-snug font-medium text-gray-900 line-clamp-2">
+                  {q.question}
+                </p>
+              </div>
+            ))}
           </div>
 
           {/* Lock UI */}

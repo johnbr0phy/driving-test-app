@@ -79,7 +79,11 @@ export function QuizRow({
           </div>
         </div>
         <div className="flex-1 min-w-0">
-          <p className="text-sm leading-snug font-medium text-gray-900 line-clamp-2">{question}</p>
+          <p
+            className={`text-sm leading-snug font-medium text-gray-900 ${expanded ? "" : "line-clamp-2"}`}
+          >
+            {question}
+          </p>
           {subtitle && <p className="text-xs text-gray-400 mt-0.5">{subtitle}</p>}
         </div>
         <ChevronDown

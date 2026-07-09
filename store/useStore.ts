@@ -783,6 +783,21 @@ export const useStore = create<AppState>()(
             if (t?.answers) testQCount += Object.keys(t.answers).length;
           }
 
+          // Per-day answered-question counts (training + test), denormalized
+          // so the admin dashboard can chart activity across all users
+          // without reading the heavy history arrays.
+          const answersByDay: Record<string, number> = {};
+          const bumpDay = (at: Date | string | undefined) => {
+            const iso = at instanceof Date ? at.toISOString() : at;
+            if (!iso) return;
+            const day = iso.split('T')[0];
+            answersByDay[day] = (answersByDay[day] || 0) + 1;
+          };
+          for (const h of trainingAnswerHistory) bumpDay(h.answeredAt);
+          for (const test of completedTests) {
+            for (const a of test.answers || []) bumpDay(a.answeredAt || test.completedAt);
+          }
+
           // Per-field write that leaves server-owned fields untouched.
           //
           // We deliberately omit:
@@ -826,6 +841,7 @@ export const useStore = create<AppState>()(
               trainingQuestionsAnswered: trainingQCount,
               testQuestionsAnswered: testQCount,
               testsCompleted: completedTests.length,
+              answersByDay,
             },
           };
           try {

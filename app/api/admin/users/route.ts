@@ -305,6 +305,12 @@ export async function GET(request: NextRequest) {
     // All-time questions answered, summed from every user's denormalized
     // _stats counters (written on each client save).
     let totalQuestionsAnswered = 0;
+    // Per-day answered-question counts. Primary source: each user's
+    // denormalized _stats.answersByDay from the all-users scan. Users who
+    // haven't synced since that field shipped fall back to the top-100
+    // full-doc computation below.
+    const questionsByDay: Record<string, number> = {};
+    const uidsWithAnswersByDay = new Set<string>();
     const usersForDau: { activeDates: string[]; lastUpdated: string | null }[] = [];
     const signupDates: string[] = [];
     // Per-paywall attribution: distinct logged-in users who hit it, and how
@@ -334,6 +340,14 @@ export async function GET(request: NextRequest) {
       totalQuestionsAnswered +=
         ((denormStats.trainingQuestionsAnswered as number) || 0) +
         ((denormStats.testQuestionsAnswered as number) || 0);
+
+      const denormByDay = denormStats.answersByDay as Record<string, number> | undefined;
+      if (denormByDay && typeof denormByDay === 'object') {
+        uidsWithAnswersByDay.add(doc.id);
+        for (const [day, count] of Object.entries(denormByDay)) {
+          if (typeof count === 'number') questionsByDay[day] = (questionsByDay[day] || 0) + count;
+        }
+      }
 
       // Attribute this user's paywall hits for conversion-by-paywall stats.
       const userPaywallHits = (data.paywallHits || {}) as Record<string, Record<string, unknown>>;
@@ -368,7 +382,6 @@ export async function GET(request: NextRequest) {
 
     // ── Build user list from top-100 full docs + aggregate pass-by-state ──
     const passByStateAgg: Record<string, { passed: number; failed: number }> = {};
-    const questionsByDay: Record<string, number> = {};
     const users = fullSnap.docs.map(doc => {
       const data = doc.data() as Record<string, unknown>;
       const stats = processFullDoc(data);
@@ -377,8 +390,12 @@ export async function GET(request: NextRequest) {
         bucket.passed += r.passed;
         bucket.failed += r.failed;
       }
-      for (const [day, count] of Object.entries(stats.answersByDay)) {
-        questionsByDay[day] = (questionsByDay[day] || 0) + count;
+      // Only users without a denormalized answersByDay (not yet synced since
+      // that field shipped) — otherwise they'd be double-counted.
+      if (!uidsWithAnswersByDay.has(doc.id)) {
+        for (const [day, count] of Object.entries(stats.answersByDay)) {
+          questionsByDay[day] = (questionsByDay[day] || 0) + count;
+        }
       }
       return {
         uid: doc.id,
@@ -431,8 +448,6 @@ export async function GET(request: NextRequest) {
     for (const d of signupDates) signupsByDay[d] = (signupsByDay[d] || 0) + 1;
     const newUsersSeries = buildSeries(signupsByDay);
 
-    // Questions answered over time, from the top-100 full docs (same sample
-    // as pass-rate-by-state).
     const questionsAnsweredSeries = buildSeries(questionsByDay);
 
     const sharesData = sharesDoc.exists ? sharesDoc.data() : null;

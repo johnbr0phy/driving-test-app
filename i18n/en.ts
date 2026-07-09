@@ -128,7 +128,7 @@ export const en = {
     dailyMissedCta: "See the hardest questions",
     nemesisMissedByYou: "missed by you",
     nemesisCtaMore: "You have {{n}} more like this. See them",
-    nemesisCtaWin: "1 down. {{n}} to go",
+    nemesisCtaWin: "Nailed it! Review {{n}} more you've missed",
     nemesisCtaLast: "See your wrong answers",
     heroTitle0: "Complete all 8 steps",
     heroTitle1: "Good start. 1 of 8 done",

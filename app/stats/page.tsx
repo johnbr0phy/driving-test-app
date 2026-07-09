@@ -355,8 +355,8 @@ function StatsContent() {
                   <div>
                     {/* Blurred preview */}
                     <div className="relative">
-                      <div className="space-y-2 overflow-hidden max-h-40 blur-sm pointer-events-none select-none" aria-hidden="true">
-                        {sortedQuestions.slice(FREE_QUESTION_LIMIT, FREE_QUESTION_LIMIT + 3).map((item) => {
+                      <div className="space-y-2 overflow-hidden max-h-32 blur-sm pointer-events-none select-none" aria-hidden="true">
+                        {sortedQuestions.slice(FREE_QUESTION_LIMIT, FREE_QUESTION_LIMIT + 2).map((item) => {
                           const chip = chipFor(item);
                           return (
                             <div
@@ -378,7 +378,7 @@ function StatsContent() {
                           );
                         })}
                       </div>
-                      <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-gray-50 to-transparent pointer-events-none" />
+                      <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-gray-50 via-gray-50/90 to-transparent pointer-events-none" />
                     </div>
 
                     {/* Lock UI */}

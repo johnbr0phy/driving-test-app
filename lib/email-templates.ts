@@ -327,6 +327,75 @@ export const EMAIL_TEMPLATES: Record<string, string> = {
 </body>
 </html>`,
 
+  paywallFollowUp: `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About that locked feature</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; background-color: #FFF9F5;">
+  <table role="presentation" style="width: 100%; border-collapse: collapse;">
+    <tr>
+      <td align="center" style="padding: 40px 0;">
+        <table role="presentation" style="width: 600px; max-width: 100%; border-collapse: collapse; background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+          <tr>
+            <td style="padding: 40px 40px 24px; text-align: center;">
+              <img src="https://tigertest.io/tiger.png" alt="TigerTest" style="width: 48px; height: auto; margin-bottom: 16px;" />
+              <h1 style="margin: 0; color: #1a1a1a; font-size: 24px; font-weight: 600;">About that locked feature</h1>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 24px 40px 40px;">
+              <p style="margin: 0 0 20px; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
+                You bumped into the edge of the free tier recently - {{featureName}} is behind the premium wall. We figured we'd explain what's actually back there, once, and then leave you alone.
+              </p>
+              <p style="margin: 0 0 20px; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
+                {{featureBlurb}}
+              </p>
+              <p style="margin: 0 0 12px; color: #4a4a4a; font-size: 15px; line-height: 1.7; font-weight: 600;">
+                Premium unlocks everything at once:
+              </p>
+              <ul style="margin: 0 0 20px; padding-left: 24px; color: #333333; font-size: 16px; line-height: 1.8;">
+                <li>Practice test 4 (one more full 50-question exam)</li>
+                <li>Training set 4 (50 more questions with instant feedback)</li>
+                <li>Full stats (see exactly which questions keep tripping you up)</li>
+              </ul>
+              <p style="margin: 0 0 20px; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
+                It's <strong style="font-weight: 600;">$9.99, one time</strong>. No subscription, no monthly charge. Most states charge more than that just to retake the test.
+              </p>
+              <table role="presentation" style="margin: 32px 0; border-collapse: collapse;">
+                <tr>
+                  <td align="center">
+                    <a href="https://tigertest.io/dashboard?utm_source=tigertest&utm_medium=email&utm_campaign=paywall_followup" style="display: inline-block; padding: 14px 28px; background-color: #1a1a1a; color: #ffffff; text-decoration: none; border-radius: 50px; font-weight: 500; font-size: 15px;">Unlock Everything - $9.99</a>
+                  </td>
+                </tr>
+              </table>
+              <p style="margin: 0 0 20px; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
+                And if the free tier is enough for you, genuinely - no hard feelings. This is the only email we'll send about it.
+              </p>
+              <p style="margin: 24px 0 0; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
+                Good luck on the test,<br>
+                The TigerTest Team
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 30px 40px; background-color: #FFF9F5; border-top: 1px solid #eeeeee;">
+              <p style="margin: 0; color: #999999; font-size: 12px; line-height: 1.6; text-align: center;">
+                <a href="https://tigertest.io/unsubscribe?token={{unsubscribeToken}}" style="color: #FF6B35; text-decoration: none;">Unsubscribe</a>
+                &nbsp;•&nbsp;
+                <a href="https://tigertest.io/privacy" style="color: #FF6B35; text-decoration: none;">Privacy Policy</a>
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>`,
+
   reengagement: `<!DOCTYPE html>
 <html lang="en">
 <head>

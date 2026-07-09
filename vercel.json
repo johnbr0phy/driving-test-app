@@ -17,6 +17,10 @@
       "schedule": "0 11 * * *"
     },
     {
+      "path": "/api/cron/paywall-followup",
+      "schedule": "0 12 * * *"
+    },
+    {
       "path": "/api/cron/second-test-nudge",
       "schedule": "0 14 * * *"
     },

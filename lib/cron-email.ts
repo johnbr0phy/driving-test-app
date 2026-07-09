@@ -49,6 +49,14 @@ export async function buildAuthMap(): Promise<Map<string, AuthRecord>> {
 
 // ── Firestore helpers ─────────────────────────────────────────────────────────
 
+export interface PaywallHit {
+  count: number;
+  lastAt: string; // ISO timestamp
+  label: string;
+  location: string;
+  itemId: string;
+}
+
 export interface UserDoc {
   uid: string;
   email: string;
@@ -58,6 +66,7 @@ export interface UserDoc {
   subscription: any;
   lastEmailSent: Date | null;
   lastUpdated: Date | null;
+  paywallHits: Record<string, PaywallHit>;
 }
 
 /**
@@ -111,6 +120,7 @@ export async function getEligibleUsers(
       subscription: d.subscription || {},
       lastEmailSent: d.lastEmailSent?.toDate?.() ?? null,
       lastUpdated: d.lastUpdated?.toDate?.() ?? null,
+      paywallHits: d.paywallHits && typeof d.paywallHits === "object" ? d.paywallHits : {},
     });
   }
 

@@ -24,6 +24,7 @@ interface UserData {
   trainingQuestionsAnswered: number;
   testQuestionsAnswered: number;
   isPremium: boolean;
+  convertedPaywall: { key: string; label: string; location: string } | null;
 }
 
 interface ConversionStats {
@@ -632,6 +633,7 @@ export default function AdminPage() {
                     <th className="text-left py-3 px-4 font-medium text-gray-500">Last Active</th>
                     <th className="text-left py-3 px-4 font-medium text-gray-500">Training Qs</th>
                     <th className="text-left py-3 px-4 font-medium text-gray-500">Test Qs</th>
+                    <th className="text-left py-3 px-4 font-medium text-gray-500">Converted Via</th>
                     <th className="text-right py-3 px-4 font-medium text-gray-500"></th>
                   </tr>
                 </thead>
@@ -664,6 +666,20 @@ export default function AdminPage() {
                       <td className="py-3 px-4">
                         <span className="font-medium">{userData.testQuestionsAnswered}</span>
                         <span className="text-gray-400 text-xs ml-1">({userData.testsCompleted} tests)</span>
+                      </td>
+                      <td className="py-3 px-4">
+                        {userData.convertedPaywall ? (
+                          <span
+                            className="inline-flex items-center px-2 py-1 bg-amber-100 text-amber-800 rounded text-xs font-medium"
+                            title={userData.convertedPaywall.key}
+                          >
+                            {userData.convertedPaywall.label}
+                          </span>
+                        ) : userData.isPremium ? (
+                          <span className="text-gray-400 text-xs">Unknown</span>
+                        ) : (
+                          <span className="text-gray-400">—</span>
+                        )}
                       </td>
                       <td className="py-3 px-4 text-right">
                         <Button

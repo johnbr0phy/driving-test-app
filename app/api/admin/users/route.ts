@@ -25,6 +25,36 @@ const CACHE_TTL_MS = 120_000; // 2 minutes
 let cachedPayload: Record<string, unknown> | null = null;
 let cacheTimestamp = 0;
 
+// ─── Conversion paywall: which paywall a premium user converted through ─────
+// Best available attribution: the paywall the user last hit before purchase
+// (per-key `lastAt` timestamps). If no hit precedes the purchase (or the
+// purchase time is unknown), fall back to the earliest recorded hit.
+function deriveConvertedPaywall(data: Record<string, unknown>) {
+  const sub = (data.subscription || {}) as Record<string, unknown>;
+  if (sub.isPremium !== true) return null;
+
+  const hits = (data.paywallHits || {}) as Record<string, Record<string, unknown>>;
+  const entries = Object.entries(hits)
+    .map(([key, rec]) => ({
+      key,
+      label: ((rec?.label as string) || key),
+      location: ((rec?.location as string) || key.split(':')[0]),
+      lastAt: typeof rec?.lastAt === 'string' ? Date.parse(rec.lastAt as string) : NaN,
+    }))
+    .filter((e) => !Number.isNaN(e.lastAt));
+  if (entries.length === 0) return null;
+
+  const purchasedAtMs = typeof sub.purchasedAt === 'string' ? Date.parse(sub.purchasedAt as string) : NaN;
+  const before = Number.isNaN(purchasedAtMs)
+    ? entries
+    : entries.filter((e) => e.lastAt <= purchasedAtMs);
+
+  const pick = before.length > 0
+    ? before.reduce((a, b) => (b.lastAt > a.lastAt ? b : a))
+    : entries.reduce((a, b) => (b.lastAt < a.lastAt ? b : a));
+  return { key: pick.key, label: pick.label, location: pick.location };
+}
+
 // ─── Per-user stats from full Firestore doc ─────────────────────────────────
 function processFullDoc(data: Record<string, unknown>) {
   const training = (data.training || {}) as Record<string, unknown>;
@@ -79,6 +109,7 @@ function processFullDoc(data: Record<string, unknown>) {
     trainingQuestionsAnswered,
     testQuestionsAnswered,
     isPremium: (data.subscription as Record<string, unknown>)?.isPremium === true,
+    convertedPaywall: deriveConvertedPaywall(data),
     stateResults,
   };
 }
@@ -327,6 +358,7 @@ export async function GET(request: NextRequest) {
         trainingQuestionsAnswered: stats.trainingQuestionsAnswered,
         testQuestionsAnswered: stats.testQuestionsAnswered,
         isPremium: stats.isPremium,
+        convertedPaywall: stats.convertedPaywall,
       };
     });
 

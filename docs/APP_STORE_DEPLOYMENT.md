@@ -98,8 +98,36 @@ for every upload — Play rejects duplicate version codes.
 
 ## iOS — App Store
 
-Requires a Mac with Xcode 16+ (or Xcode Cloud). No CocoaPods needed —
-Capacitor 8 uses Swift Package Manager.
+Two paths: **CI release (no Mac needed)** or local Xcode. No CocoaPods
+either way — Capacitor 8 uses Swift Package Manager.
+
+### Path A: release from CI (no Mac)
+
+One-time setup after enrolling in the Apple Developer Program:
+
+1. **Team ID:** https://developer.apple.com/account → Membership details →
+   copy the 10-character Team ID.
+2. **API key:** https://appstoreconnect.apple.com → Users and Access →
+   Integrations → App Store Connect API → Team Keys → **+**. Name it
+   `github-ci`, role **Admin** (needed so CI can create the distribution
+   certificate). Download the `.p8` file (one chance only) and note the
+   **Key ID** and **Issuer ID** shown on that page.
+3. **GitHub secrets:** repo → Settings → Secrets and variables → Actions →
+   add `APPLE_TEAM_ID`, `APPSTORE_KEY_ID`, `APPSTORE_ISSUER_ID`, and
+   `APPSTORE_P8_BASE64` (`base64 -i AuthKey_XXXX.p8 | pbcopy` on macOS).
+4. **App record:** in App Store Connect → My Apps → **+** → New App:
+   platform iOS, name **TigerTest: DMV Practice Test**, bundle id
+   `io.tigertest.app` (register it at developer.apple.com → Identifiers if
+   it's not in the dropdown), SKU `tigertest-ios`.
+
+Then run the **Mobile iOS Release (TestFlight)** workflow (Actions tab →
+Run workflow). It archives with cloud-managed signing and uploads straight
+to App Store Connect; the build appears in TestFlight ~10–15 minutes later
+(Apple runs a brief automated processing pass). Each run auto-increments
+the build number; bump the repo variable `IOS_MARKETING_VERSION` for new
+user-facing versions.
+
+### Path B: local Xcode
 
 ### 1. Local setup
 

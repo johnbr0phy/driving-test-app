@@ -514,6 +514,27 @@ export async function incrementDailyQuestionCount(
     return { ok: true as const, data: { count: newCount } };
   });
 
+  // Every answer that passes the cap also bumps the global answered-questions
+  // aggregate (analytics/questions) that feeds the admin chart. Best-effort:
+  // never blocks or fails the user's action.
+  if (result.ok) {
+    try {
+      const { FieldValue } = await import('firebase-admin/firestore');
+      void db
+        .doc('analytics/questions')
+        .set(
+          {
+            total: FieldValue.increment(1),
+            daily: { [todayUtc()]: FieldValue.increment(1) },
+          },
+          { merge: true }
+        )
+        .catch(() => {});
+    } catch {
+      // ignore
+    }
+  }
+
   return result;
 }
 

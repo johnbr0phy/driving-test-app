@@ -65,6 +65,50 @@ async function recordPaywallHit(itemId: string, itemName: string, location: stri
   }
 }
 
+// ─── Answered-question counter ───────────────────────────────────────────────
+// Feeds the persistent analytics/questions aggregate (total + per-day counts)
+// behind the admin "Questions Answered" chart. Counts are batched locally and
+// flushed after a short delay (or when the tab is hidden) so answering a
+// question never costs a network round-trip of its own.
+
+let pendingAnswerCount = 0;
+let answerFlushTimer: ReturnType<typeof setTimeout> | null = null;
+
+export function trackQuestionsAnswered(count = 1) {
+  if (count <= 0) return;
+  pendingAnswerCount += count;
+  if (!answerFlushTimer) {
+    answerFlushTimer = setTimeout(() => void flushAnsweredQuestions(), 10_000);
+  }
+}
+
+async function flushAnsweredQuestions() {
+  if (answerFlushTimer) {
+    clearTimeout(answerFlushTimer);
+    answerFlushTimer = null;
+  }
+  const count = pendingAnswerCount;
+  if (count <= 0) return;
+  pendingAnswerCount = 0;
+  try {
+    await fetch("/api/analytics/questions", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ count }),
+      keepalive: true,
+    });
+  } catch {
+    // Re-queue so the count rides along with the next flush.
+    pendingAnswerCount += count;
+  }
+}
+
+if (typeof document !== "undefined") {
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "hidden") void flushAnsweredQuestions();
+  });
+}
+
 export function trackStatsEntry(source: string, tab: "yours" | "community" = "yours") {
   window.gtag?.("event", "stats_entry", { source, tab });
 }

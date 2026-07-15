@@ -3,6 +3,7 @@ import { persist, createJSONStorage } from 'zustand/middleware';
 import { Question, TestSession, UserAnswer, TestAttemptStats, QuestionPerformance, Subscription } from '@/types';
 import { doc, setDoc, getDoc, updateDoc } from 'firebase/firestore';
 import { db } from '@/lib/firebase';
+import { trackQuestionsAnswered } from '@/lib/analytics';
 import type { Language } from '@/i18n';
 
 // Current data version - increment this when question data changes
@@ -314,6 +315,8 @@ export const useStore = create<AppState>()(
           testAttempts: updatedTestAttempts,
         }));
 
+        trackQuestionsAnswered(questions.length);
+
         // Clear current test
         get().clearCurrentTest(testId);
         get().saveToFirestore();
@@ -392,6 +395,7 @@ export const useStore = create<AppState>()(
             trainingAnswerHistory: [...state.trainingAnswerHistory, { questionId, isCorrect, answeredAt: new Date().toISOString() }],
           };
         });
+        trackQuestionsAnswered();
         get().saveToFirestore();
       },
 
@@ -452,6 +456,7 @@ export const useStore = create<AppState>()(
             trainingAnswerHistory: [...state.trainingAnswerHistory, { questionId, isCorrect, answeredAt: new Date().toISOString() }],
           };
         });
+        trackQuestionsAnswered();
         get().saveToFirestore();
       },
 

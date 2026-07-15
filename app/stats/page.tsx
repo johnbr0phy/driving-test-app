@@ -54,7 +54,7 @@ function StatsContent() {
 
   const { user } = useAuth();
   const isPremium = hydrated ? hasPremiumAccess() : false;
-  const FREE_QUESTION_LIMIT = 5;
+  const FREE_QUESTION_LIMIT = 2;
 
   const searchParams = useSearchParams();
   const [activeTab, setActiveTab] = useState<"yours" | "community">(
@@ -355,7 +355,7 @@ function StatsContent() {
                   <div>
                     {/* Blurred preview */}
                     <div className="relative">
-                      <div className="space-y-2 overflow-hidden max-h-32 blur-sm pointer-events-none select-none" aria-hidden="true">
+                      <div className="space-y-2 overflow-hidden max-h-24 blur-sm pointer-events-none select-none" aria-hidden="true">
                         {sortedQuestions.slice(FREE_QUESTION_LIMIT, FREE_QUESTION_LIMIT + 2).map((item) => {
                           const chip = chipFor(item);
                           return (
@@ -378,18 +378,18 @@ function StatsContent() {
                           );
                         })}
                       </div>
-                      <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-gray-50 via-gray-50/90 to-transparent pointer-events-none" />
+                      <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-gray-50 via-gray-50/90 to-transparent pointer-events-none" />
                     </div>
 
                     {/* Lock UI */}
-                    <div className="flex flex-col items-center pt-3 pb-2 text-center">
-                      <div className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-brand-light mb-3">
+                    <div className="flex flex-col items-center pt-2 pb-2 text-center">
+                      <div className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-brand-light mb-2">
                         <Lock className="h-4 w-4 text-brand" />
                       </div>
                       <p className="text-sm font-semibold text-gray-900 mb-1">
                         {sortedQuestions.length - FREE_QUESTION_LIMIT} {t("stats.moreQuestions")}
                       </p>
-                      <p className="text-xs text-gray-500 mb-3">
+                      <p className="text-xs text-gray-500 mb-2.5">
                         {t("stats.unlockPremiumStats")}
                       </p>
                       <button

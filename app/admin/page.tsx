@@ -482,7 +482,7 @@ export default function AdminPage() {
             </div>
             {graphMetric === 'questions' && (
               <p className="mt-2 text-xs text-gray-400">
-                Chart counts training + test answers from the 100 most recently active users; the all-time total covers all users.
+                Counts every training + test answer across all users (guests included), recorded permanently as questions are answered.
               </p>
             )}
           </CardContent>

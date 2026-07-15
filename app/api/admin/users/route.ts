@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getAdminDb, getAdminAuth } from '@/lib/firebase-admin';
-import { FieldValue } from 'firebase-admin/firestore';
 import { isAdminEmail } from '@/lib/admin';
+import { computeAnswersByDay } from '@/lib/server/answersByDay';
 import { states } from '@/data/states';
 
 const STATE_PASS_PCT: Record<string, number> = states.reduce(
@@ -113,84 +113,6 @@ function processFullDoc(data: Record<string, unknown>) {
     convertedPaywall: deriveConvertedPaywall(data),
     stateResults,
   };
-}
-
-// ─── Per-day answered-question counts from a user's stored history ──────────
-// Training answers carry their own answeredAt; test answers fall back to the
-// test's completedAt. Used only by the one-time backfill of the persistent
-// analytics/questions aggregate — live counts come from increments as users
-// answer questions.
-function computeAnswersByDay(data: Record<string, unknown>): Record<string, number> {
-  const answersByDay: Record<string, number> = {};
-  const bumpDay = (iso: unknown, n = 1) => {
-    if (typeof iso !== 'string' || !iso) return;
-    const day = iso.split('T')[0];
-    answersByDay[day] = (answersByDay[day] || 0) + n;
-  };
-  const answerHistory = (data.trainingAnswerHistory || []) as Record<string, unknown>[];
-  for (const h of answerHistory) bumpDay(h?.answeredAt);
-  const completedTests = (data.completedTests || []) as Record<string, unknown>[];
-  for (const test of completedTests) {
-    const answers = (test.answers || []) as Record<string, unknown>[];
-    if (answers.length > 0) {
-      for (const a of answers) bumpDay(a?.answeredAt ?? test.completedAt);
-    } else if (typeof test.totalQuestions === 'number' && test.totalQuestions > 0) {
-      bumpDay(test.completedAt, test.totalQuestions);
-    }
-  }
-  return answersByDay;
-}
-
-// ─── One-time backfill of the analytics/questions aggregate ─────────────────
-// Live per-day counters only started accumulating when this feature shipped.
-// On the first admin load, seed the aggregate's history (days strictly before
-// today, which live increments own) from every user's stored answer history.
-// A marker on the doc ensures this runs exactly once; a stale in-progress
-// claim (crashed run) becomes reclaimable after 15 minutes.
-async function backfillQuestionsDaily(
-  db: FirebaseFirestore.Firestore
-): Promise<Record<string, number> | null> {
-  const ref = db.doc('analytics/questions');
-  const today = new Date().toISOString().split('T')[0];
-
-  const claimed = await db.runTransaction(async (tx) => {
-    const snap = await tx.get(ref);
-    const data = snap.exists ? (snap.data() as Record<string, unknown>) : undefined;
-    if (data?.backfilledAt) return false;
-    const startedAt = typeof data?.backfillStartedAt === 'string' ? Date.parse(data.backfillStartedAt) : NaN;
-    if (!Number.isNaN(startedAt) && Date.now() - startedAt < 15 * 60 * 1000) return false;
-    tx.set(ref, { backfillStartedAt: new Date().toISOString() }, { merge: true });
-    return true;
-  });
-  if (!claimed) return null;
-
-  const snap = await db.collection('users').get();
-  const daily: Record<string, number> = {};
-  snap.docs.forEach((doc) => {
-    const byDay = computeAnswersByDay(doc.data() as Record<string, unknown>);
-    for (const [day, count] of Object.entries(byDay)) {
-      if (day >= today) continue;
-      daily[day] = (daily[day] || 0) + count;
-    }
-  });
-
-  // Firestore caps field transforms per write, so chunk the per-day increments.
-  const entries = Object.entries(daily);
-  const CHUNK = 300;
-  for (let i = 0; i < entries.length; i += CHUNK) {
-    const update: Record<string, unknown> = {};
-    for (const [day, count] of entries.slice(i, i + CHUNK)) {
-      update[`daily.${day}`] = FieldValue.increment(count);
-    }
-    if (i === 0) {
-      update.total = FieldValue.increment(entries.reduce((sum, [, c]) => sum + c, 0));
-    }
-    await ref.update(update);
-  }
-  await ref.update({ backfilledAt: new Date().toISOString() });
-
-  const fresh = await ref.get();
-  return ((fresh.data() as Record<string, unknown>)?.daily as Record<string, number>) || daily;
 }
 
 // ─── DAU calculation ────────────────────────────────────────────────────────
@@ -428,6 +350,7 @@ export async function GET(request: NextRequest) {
 
     // ── Build user list from top-100 full docs + aggregate pass-by-state ──
     const passByStateAgg: Record<string, { passed: number; failed: number }> = {};
+    const sampleQuestionsByDay: Record<string, number> = {};
     const users = fullSnap.docs.map(doc => {
       const data = doc.data() as Record<string, unknown>;
       const stats = processFullDoc(data);
@@ -435,6 +358,9 @@ export async function GET(request: NextRequest) {
         const bucket = (passByStateAgg[code] ||= { passed: 0, failed: 0 });
         bucket.passed += r.passed;
         bucket.failed += r.failed;
+      }
+      for (const [day, count] of Object.entries(computeAnswersByDay(data))) {
+        sampleQuestionsByDay[day] = (sampleQuestionsByDay[day] || 0) + count;
       }
       return {
         uid: doc.id,
@@ -489,18 +415,20 @@ export async function GET(request: NextRequest) {
 
     // Questions answered over time, from the persistent analytics/questions
     // aggregate (incremented as answers happen; covers ALL users, guests
-    // included). First load after rollout seeds history from stored per-user
-    // answer data via a one-time backfill.
+    // included). Until the history backfill has completed — the admin page
+    // triggers /api/admin/backfill-questions when it sees the pending flag —
+    // splice in the legacy top-100 sample so the chart is never blank.
+    // Per-day max (not sum) because both sources count the same answers.
     const questionsData = questionsDoc.exists
       ? (questionsDoc.data() as Record<string, unknown>)
       : undefined;
-    let questionsDaily = (questionsData?.daily as Record<string, number>) || {};
-    if (!questionsData?.backfilledAt) {
-      try {
-        const backfilled = await backfillQuestionsDaily(db);
-        if (backfilled) questionsDaily = backfilled;
-      } catch (err) {
-        console.error('[admin/users] questions backfill failed:', err);
+    const aggregateQuestionsDaily = (questionsData?.daily as Record<string, number>) || {};
+    const questionsBackfillPending = !questionsData?.backfilledAt;
+    let questionsDaily = aggregateQuestionsDaily;
+    if (questionsBackfillPending) {
+      questionsDaily = { ...sampleQuestionsByDay };
+      for (const [day, count] of Object.entries(aggregateQuestionsDaily)) {
+        questionsDaily[day] = Math.max(questionsDaily[day] || 0, count);
       }
     }
     const questionsAnsweredSeries = buildSeries(questionsDaily);
@@ -546,6 +474,7 @@ export async function GET(request: NextRequest) {
       newUsersSeries,
       paywallViewsSeries,
       questionsAnsweredSeries,
+      questionsBackfillPending,
       totalUsers,
       stats: {
         totalUsers,

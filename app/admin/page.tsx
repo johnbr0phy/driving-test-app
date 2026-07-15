@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { useAuth } from "@/contexts/AuthContext";
 import { useAdmin } from "@/hooks/useAdmin";
@@ -91,6 +91,8 @@ export default function AdminPage() {
   const [userSearch, setUserSearch] = useState("");
   const [stateFilter, setStateFilter] = useState<string>("all");
   const [premiumOnly, setPremiumOnly] = useState(false);
+  const [questionsBackfillPending, setQuestionsBackfillPending] = useState(false);
+  const backfillTriggered = useRef(false);
   const PAGE_SIZE = 20;
 
   const fetchUsers = async (forceRefresh = false) => {
@@ -125,6 +127,7 @@ export default function AdminPage() {
       setNewUsersSeries(data.newUsersSeries || EMPTY_SERIES);
       setPaywallViewsSeries(data.paywallViewsSeries || EMPTY_SERIES);
       setQuestionsAnsweredSeries(data.questionsAnsweredSeries || EMPTY_SERIES);
+      setQuestionsBackfillPending(data.questionsBackfillPending === true);
       setPassRateByState(data.passRateByState || []);
       setPaywallStats(data.paywallStats || []);
     } catch (err) {
@@ -203,6 +206,27 @@ export default function AdminPage() {
   useEffect(() => {
     setUsersPage(0);
   }, [userSearch, stateFilter, premiumOnly]);
+
+  // One-time history seed for the persistent questions-answered aggregate:
+  // when the API reports the backfill hasn't completed, kick it off (it's
+  // idempotent server-side) and refresh the chart once it finishes.
+  useEffect(() => {
+    if (!questionsBackfillPending || backfillTriggered.current || !user) return;
+    backfillTriggered.current = true;
+    (async () => {
+      try {
+        const idToken = await user.getIdToken();
+        const res = await fetch("/api/admin/backfill-questions", {
+          method: "POST",
+          headers: { Authorization: `Bearer ${idToken}` },
+        });
+        if (res.ok) fetchUsers(true);
+      } catch (err) {
+        console.error("Questions backfill failed:", err);
+      }
+    })();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [questionsBackfillPending, user]);
 
   const getStateName = (code: string | null): string => {
     if (!code) return "Not selected";
@@ -482,7 +506,9 @@ export default function AdminPage() {
             </div>
             {graphMetric === 'questions' && (
               <p className="mt-2 text-xs text-gray-400">
-                Counts every training + test answer across all users (guests included), recorded permanently as questions are answered.
+                {questionsBackfillPending
+                  ? 'Backfilling history from stored answer data — showing the 100 most recently active users until it completes (usually under a minute).'
+                  : 'Counts every training + test answer across all users (guests included), recorded permanently as questions are answered.'}
               </p>
             )}
           </CardContent>

@@ -184,12 +184,12 @@ function CDLTestPageContent() {
         {/* Progress Overview - View Only */}
         <div className="mt-8">
           <div className="text-sm font-semibold mb-3">{t("testPage.progressOverview")}</div>
-          <div className="grid grid-cols-10 gap-2">
+          <div className="grid grid-cols-10 gap-1 max-w-md mx-auto">
             {questions.map((_, index) => (
               <div
                 key={index}
                 className={`
-                  aspect-square rounded-lg border-2 text-sm font-semibold transition-colors flex items-center justify-center
+                  aspect-square rounded border text-[10px] font-semibold transition-colors flex items-center justify-center
                   ${currentQuestionIndex === index
                     ? "border-brand bg-brand text-white"
                     : answers[index]

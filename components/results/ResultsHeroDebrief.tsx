@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
-import { TestPageHeader } from "@/components/TestPageHeader";
 import { Fireworks } from "@/components/Fireworks";
 import { ShareButton } from "@/components/ShareButton";
 import { getTigerFace } from "@/lib/resultsCopy";
@@ -34,7 +33,6 @@ export function ResultsHeroDebrief({
     percentage,
     passed,
     testSession,
-    stateName,
     attemptNumber,
     improvement,
     isNewBest,
@@ -43,7 +41,6 @@ export function ResultsHeroDebrief({
     hasNextTest,
     nextTestId,
     nextTestIsLocked,
-    language,
     t,
   } = results;
 
@@ -105,17 +102,6 @@ export function ResultsHeroDebrief({
       {showFireworks && (
         <Fireworks duration={3000} intensity="full" onComplete={() => setShowFireworks(false)} />
       )}
-
-      <TestPageHeader
-        backHref="/dashboard"
-        sticky
-        right={
-          <span className="text-sm text-gray-500">
-            {stateName} · {language === "es" ? `Examen ${testId}` : `Test ${testId}`} ·{" "}
-            {attemptNumber === 1 ? t("results.firstAttempt") : `${t("results.attempt")} ${attemptNumber}`}
-          </span>
-        }
-      />
 
       <div className="container mx-auto px-4 pt-8 pb-4 max-w-lg md:max-w-2xl lg:max-w-4xl space-y-3">
         <div className="rounded-xl bg-white border border-gray-100 px-4 pt-4 pb-5 shadow-sm">

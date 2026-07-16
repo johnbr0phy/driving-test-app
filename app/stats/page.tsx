@@ -376,8 +376,13 @@ function StatsContent() {
                 {!isPremium && sortedQuestions.length > FREE_QUESTION_LIMIT && (
                   <div>
                     {/* Faint preview */}
-                    <div className="space-y-2 overflow-hidden max-h-24 blur-[2px] opacity-25 pointer-events-none select-none" aria-hidden="true">
-                      {sortedQuestions.slice(FREE_QUESTION_LIMIT, FREE_QUESTION_LIMIT + 2).map((item) => {
+                    {/* Short teaser on mobile (keeps the upsell above the fold), a
+                        taller fading stack on desktop so the page doesn't end in a void */}
+                    <div
+                      className="space-y-2 overflow-hidden max-h-24 md:max-h-[26rem] blur-[2px] opacity-25 pointer-events-none select-none [mask-image:linear-gradient(to_bottom,black_25%,transparent)]"
+                      aria-hidden="true"
+                    >
+                      {sortedQuestions.slice(FREE_QUESTION_LIMIT, FREE_QUESTION_LIMIT + 6).map((item) => {
                         const chip = chipFor(item);
                         return (
                           <div

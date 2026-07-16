@@ -25,6 +25,10 @@ interface Firework {
 interface FireworksProps {
   duration?: number;
   onComplete?: () => void;
+  // "gentle" scales the show down for a still-celebratory but lower-key
+  // moment (e.g. a failed test that we want to acknowledge without
+  // overselling it as a win).
+  intensity?: "full" | "gentle";
 }
 
 const COLORS = [
@@ -38,7 +42,11 @@ const COLORS = [
   "#00bcd4", // cyan
 ];
 
-export function Fireworks({ duration = 3000, onComplete }: FireworksProps) {
+export function Fireworks({ duration = 3000, onComplete, intensity = "full" }: FireworksProps) {
+  const gentle = intensity === "gentle";
+  const initialBurstCount = gentle ? 2 : 5;
+  const launchIntervalMs = gentle ? 650 : 300;
+  const burstChanceThreshold = gentle ? 0.85 : 0.5;
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const animationRef = useRef<number | null>(null);
   const fireworksRef = useRef<Firework[]>([]);
@@ -96,7 +104,7 @@ export function Fireworks({ duration = 3000, onComplete }: FireworksProps) {
     startTimeRef.current = Date.now();
 
     // Initial burst of fireworks
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < initialBurstCount; i++) {
       setTimeout(() => launchFirework(canvas), i * 150);
     }
 
@@ -104,11 +112,11 @@ export function Fireworks({ duration = 3000, onComplete }: FireworksProps) {
     const launchInterval = setInterval(() => {
       if (Date.now() - startTimeRef.current < duration - 500) {
         launchFirework(canvas);
-        if (Math.random() > 0.5) {
+        if (Math.random() > burstChanceThreshold) {
           setTimeout(() => launchFirework(canvas), 100);
         }
       }
-    }, 300);
+    }, launchIntervalMs);
 
     const animate = () => {
       // Clear canvas for transparency (UI shows through)
@@ -186,7 +194,7 @@ export function Fireworks({ duration = 3000, onComplete }: FireworksProps) {
         cancelAnimationFrame(animationRef.current);
       }
     };
-  }, [duration, onComplete, createParticles, launchFirework]);
+  }, [duration, onComplete, createParticles, launchFirework, initialBurstCount, launchIntervalMs, burstChanceThreshold]);
 
   return (
     <canvas

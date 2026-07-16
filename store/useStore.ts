@@ -324,7 +324,10 @@ export const useStore = create<AppState>()(
 
       getTestSession: (testId: number) => {
         const { completedTests, selectedState } = get();
-        const stateFilter = testId >= 101 ? 'CDL' : selectedState;
+        // Mirror completeTest's `selectedState || 'CA'` fallback — otherwise a
+        // session completed with no state selected is stored as 'CA' but never
+        // found again, and the results page bounces back into a fresh test.
+        const stateFilter = testId >= 101 ? 'CDL' : selectedState || 'CA';
         // Find most recent test session for the current state
         const sessions = completedTests.filter(
           (t) => t.testNumber === testId && t.state === stateFilter
@@ -335,7 +338,7 @@ export const useStore = create<AppState>()(
 
       getTestAttemptStats: (testId: number) => {
         const { testAttempts, selectedState } = get();
-        const stateFilter = testId >= 101 ? 'CDL' : selectedState;
+        const stateFilter = testId >= 101 ? 'CDL' : selectedState || 'CA';
         return testAttempts.find(
           (a) => a.testNumber === testId && a.state === stateFilter
         );
@@ -343,7 +346,7 @@ export const useStore = create<AppState>()(
 
       getTestAverageScore: (testId: number) => {
         const { completedTests, selectedState } = get();
-        const stateFilter = testId >= 101 ? 'CDL' : selectedState;
+        const stateFilter = testId >= 101 ? 'CDL' : selectedState || 'CA';
         const testSessions = completedTests.filter(
           (t) => t.testNumber === testId && t.state === stateFilter
         );

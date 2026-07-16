@@ -25,6 +25,10 @@ export function QuizRow({
   onAnswer,
   renderFooter,
   className,
+  initialAnswer,
+  media,
+  expanded: controlledExpanded,
+  onToggleExpanded,
 }: {
   chipValue: string;
   chipLabel: string;
@@ -36,15 +40,28 @@ export function QuizRow({
   onAnswer?: (correct: boolean) => void;
   renderFooter?: (state: QuizRowFooterState) => React.ReactNode;
   className?: string;
+  // Pre-seeds the picked option so a review row shows its resolved state
+  // immediately on expand, without requiring the user to answer again.
+  initialAnswer?: string;
+  // Optional slot (e.g. a road-sign image) rendered next to the question text.
+  media?: React.ReactNode;
+  // Omit to let the row manage its own open/closed state (daily quiz, stats,
+  // community). Pass both to drive it externally (results Expand All/Collapse All).
+  expanded?: boolean;
+  onToggleExpanded?: () => void;
 }) {
-  const [expanded, setExpanded] = useState(false);
-  const [picked, setPicked] = useState<number | null>(null);
+  const [internalExpanded, setInternalExpanded] = useState(false);
+  const expanded = controlledExpanded ?? internalExpanded;
+  const initialPickedIndex = initialAnswer ? options.indexOf(initialAnswer) : -1;
+  const [picked, setPicked] = useState<number | null>(
+    initialPickedIndex >= 0 ? initialPickedIndex : null
+  );
 
   const hasOptions = options.length > 0;
   const answered = picked !== null;
   const pickedCorrect = answered && options[picked] === correctAnswer;
 
-  const toggle = () => setExpanded((e) => !e);
+  const toggle = () => (onToggleExpanded ? onToggleExpanded() : setInternalExpanded((e) => !e));
 
   const pickOption = (idx: number) => {
     if (answered) return;
@@ -86,6 +103,7 @@ export function QuizRow({
           </p>
           {subtitle && <p className="text-xs text-gray-400 mt-0.5">{subtitle}</p>}
         </div>
+        {media && <div className="shrink-0">{media}</div>}
         <ChevronDown
           className={`h-4 w-4 text-gray-400 shrink-0 transition-transform duration-300 motion-reduce:transition-none ${
             expanded ? "rotate-180" : ""

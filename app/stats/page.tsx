@@ -375,32 +375,29 @@ function StatsContent() {
                 {/* Paywall for free users */}
                 {!isPremium && sortedQuestions.length > FREE_QUESTION_LIMIT && (
                   <div>
-                    {/* Blurred preview */}
-                    <div className="relative">
-                      <div className="space-y-2 overflow-hidden max-h-24 blur-sm pointer-events-none select-none" aria-hidden="true">
-                        {sortedQuestions.slice(FREE_QUESTION_LIMIT, FREE_QUESTION_LIMIT + 2).map((item) => {
-                          const chip = chipFor(item);
-                          return (
-                            <div
-                              key={item.question.questionId}
-                              className="rounded-xl bg-white border border-gray-100 px-4 py-3 flex items-center gap-4"
-                            >
-                              <div className="shrink-0 text-center min-w-[3rem]">
-                                <div className={`text-base font-bold tabular-nums leading-none ${chip.color}`}>
-                                  {chip.value}
-                                </div>
-                                <div className="text-[9px] uppercase tracking-wide text-gray-400 mt-0.5">
-                                  {chip.label}
-                                </div>
+                    {/* Faint preview */}
+                    <div className="space-y-2 overflow-hidden max-h-24 blur-[2px] opacity-25 pointer-events-none select-none" aria-hidden="true">
+                      {sortedQuestions.slice(FREE_QUESTION_LIMIT, FREE_QUESTION_LIMIT + 2).map((item) => {
+                        const chip = chipFor(item);
+                        return (
+                          <div
+                            key={item.question.questionId}
+                            className="rounded-xl bg-white border border-gray-100 px-4 py-3 flex items-center gap-4"
+                          >
+                            <div className="shrink-0 text-center min-w-[3rem]">
+                              <div className={`text-base font-bold tabular-nums leading-none ${chip.color}`}>
+                                {chip.value}
                               </div>
-                              <p className="flex-1 min-w-0 text-sm leading-snug font-medium text-gray-900 line-clamp-2">
-                                {item.question.question}
-                              </p>
+                              <div className="text-[9px] uppercase tracking-wide text-gray-400 mt-0.5">
+                                {chip.label}
+                              </div>
                             </div>
-                          );
-                        })}
-                      </div>
-                      <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-gray-50 via-gray-50/90 to-transparent pointer-events-none" />
+                            <p className="flex-1 min-w-0 text-sm leading-snug font-medium text-gray-900 line-clamp-2">
+                              {item.question.question}
+                            </p>
+                          </div>
+                        );
+                      })}
                     </div>
 
                     {/* Lock UI */}

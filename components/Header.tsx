@@ -78,7 +78,7 @@ export function Header() {
             {(user || isGuest) && (
               <Link
                 href="/stats"
-                className="text-gray-600 hover:text-gray-900 transition-colors"
+                className="text-gray-600 hover:text-gray-900 transition-all duration-200 hover:scale-110 active:scale-95"
                 title={t("stats.yourStats")}
               >
                 <BarChart3 className="h-5 w-5" />

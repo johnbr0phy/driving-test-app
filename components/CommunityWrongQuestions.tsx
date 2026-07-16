@@ -79,9 +79,14 @@ export function CommunityWrongQuestions({ isPremium, onUpgradeClick }: Props) {
       {!isPremium && lockedCount > 0 && (
         <div>
           {/* Blurred preview */}
+          {/* Short teaser on mobile (keeps the upsell above the fold), a taller
+              fading stack on desktop so the page doesn't end in a void */}
           <div className="relative">
-            <div className="space-y-2 overflow-hidden max-h-24 blur-sm pointer-events-none select-none" aria-hidden="true">
-              {data.questions.slice(FREE_LIMIT, FREE_LIMIT + 2).map((q) => (
+            <div
+              className="space-y-2 overflow-hidden max-h-24 md:max-h-[26rem] blur-sm pointer-events-none select-none [mask-image:linear-gradient(to_bottom,black_25%,transparent)]"
+              aria-hidden="true"
+            >
+              {data.questions.slice(FREE_LIMIT, FREE_LIMIT + 6).map((q) => (
                 <div key={q.questionId} className="rounded-xl bg-white border border-gray-100 px-4 py-3 flex items-center gap-4">
                   <div className="shrink-0 text-center min-w-[3rem]">
                     <div className="text-base font-bold text-red-500 tabular-nums leading-none">
@@ -97,7 +102,6 @@ export function CommunityWrongQuestions({ isPremium, onUpgradeClick }: Props) {
                 </div>
               ))}
             </div>
-            <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-white to-transparent pointer-events-none" />
           </div>
 
           {/* Lock UI */}

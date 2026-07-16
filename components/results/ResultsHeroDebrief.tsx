@@ -108,6 +108,7 @@ export function ResultsHeroDebrief({
 
       <TestPageHeader
         backHref="/dashboard"
+        sticky
         right={
           <span className="text-sm text-gray-500">
             {stateName} · {language === "es" ? `Examen ${testId}` : `Test ${testId}`} ·{" "}

@@ -83,7 +83,7 @@ export function CommunityWrongQuestions({ isPremium, onUpgradeClick }: Props) {
               fading stack on desktop so the page doesn't end in a void */}
           <div className="relative">
             <div
-              className="space-y-2 overflow-hidden max-h-24 md:max-h-[26rem] blur-sm pointer-events-none select-none [mask-image:linear-gradient(to_bottom,black_25%,transparent)]"
+              className="space-y-2 overflow-hidden max-h-24 md:max-h-[26rem] blur-[2px] opacity-25 pointer-events-none select-none [mask-image:linear-gradient(to_bottom,black_25%,transparent)]"
               aria-hidden="true"
             >
               {data.questions.slice(FREE_LIMIT, FREE_LIMIT + 6).map((q) => (

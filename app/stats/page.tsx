@@ -199,12 +199,34 @@ function StatsContent() {
     }
   };
 
-  const chipFor = (item: QuestionWithPerformance) => {
+  const chipFor = (item: QuestionWithPerformance, field: SortField = sortField) => {
+    if (field === "wrong") {
+      return {
+        value: `${item.wrong}`,
+        label: t("stats.wrongLabel"),
+        color: item.wrong > 0 ? "text-red-600" : "text-gray-300",
+      };
+    }
+    if (field === "correct") {
+      return {
+        value: `${item.correct}`,
+        label: t("stats.correctLabel"),
+        color: item.correct > 0 ? "text-green-600" : "text-gray-300",
+      };
+    }
+    if (field === "timesAnswered") {
+      return {
+        value: `${item.timesAnswered}`,
+        label: t("stats.answered"),
+        color: item.timesAnswered > 0 ? "text-gray-700" : "text-gray-300",
+      };
+    }
     if (item.timesAnswered === 0) {
-      return { value: "–", color: "text-gray-300" };
+      return { value: "–", label: t("stats.accuracy"), color: "text-gray-300" };
     }
     return {
       value: `${item.accuracy}%`,
+      label: t("stats.accuracy"),
       color:
         item.accuracy === 100
           ? "text-green-600"
@@ -220,7 +242,7 @@ function StatsContent() {
       <QuizRow
         key={item.question.questionId}
         chipValue={chip.value}
-        chipLabel={t("stats.accuracy")}
+        chipLabel={chip.label}
         chipColorClass={chip.color}
         question={item.question.question}
         subtitle={t(`categories.${item.question.category}`)}
@@ -368,7 +390,7 @@ function StatsContent() {
                                   {chip.value}
                                 </div>
                                 <div className="text-[9px] uppercase tracking-wide text-gray-400 mt-0.5">
-                                  {t("stats.accuracy")}
+                                  {chip.label}
                                 </div>
                               </div>
                               <p className="flex-1 min-w-0 text-sm leading-snug font-medium text-gray-900 line-clamp-2">

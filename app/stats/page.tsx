@@ -349,7 +349,7 @@ function StatsContent() {
                   onClick={() => handleSort(field)}
                   className={`whitespace-nowrap text-sm px-3 py-1.5 rounded-full border transition-colors ${
                     sortField === field
-                      ? "bg-brand-light border-brand-border text-brand-dark font-medium"
+                      ? "bg-gray-900 border-gray-900 text-white font-medium"
                       : "bg-white border-gray-200 text-gray-600"
                   }`}
                 >

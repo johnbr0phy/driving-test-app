@@ -36,7 +36,7 @@ export function QuizRow({
   question: string;
   options: string[];
   correctAnswer: string;
-  subtitle?: string;
+  subtitle?: React.ReactNode;
   onAnswer?: (correct: boolean) => void;
   renderFooter?: (state: QuizRowFooterState) => React.ReactNode;
   className?: string;

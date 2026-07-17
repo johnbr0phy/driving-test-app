@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { Fragment, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Check, ChevronRight, Cloud, Lock } from "lucide-react";
@@ -44,6 +44,7 @@ export function ResultsDebriefBody({ results, upgrade }: Props) {
     score,
     totalQuestions,
     isGuest,
+    isPremium,
     hasNextTest,
     nextTestId,
     nextTestIsLocked,
@@ -65,6 +66,11 @@ export function ResultsDebriefBody({ results, upgrade }: Props) {
   // The post-drill ask is earned: it renders only once real misses have been
   // re-answered correctly (all of them when there are fewer than 3).
   const drillEngaged = missCount > 0 && fixedCount >= Math.min(3, missCount);
+
+  // Community miss-rate chips on drill rows: the first few are free, the rest
+  // blur behind a premium upsell.
+  const FREE_RATE_LIMIT = 3;
+  const hasCommunityRates = missIndices.some((i) => communityMap.has(questions[i].questionId));
 
   const openTest4Paywall = () =>
     upgrade.openPaywall("practice_test_4", "test_4", "Practice Test 4");
@@ -177,17 +183,51 @@ export function ResultsDebriefBody({ results, upgrade }: Props) {
           </div>
 
           <div className="space-y-2">
-            {missIndices.map((index) => {
+            {missIndices.map((index, drillIdx) => {
               const question = questions[index];
               const userAnswerLetter = answers[index];
-              const communityQ = !isGuest ? communityMap.get(question.questionId) : undefined;
+              const communityQ = communityMap.get(question.questionId);
               const signId = getSignIdForQuestion(question.questionId);
+              const rateLocked = !isPremium && drillIdx >= FREE_RATE_LIMIT;
+              const rateText = communityQ
+                ? t("results.communityAlsoMissed").replace("{{pct}}", String(communityQ.errorRate))
+                : undefined;
+              const chip = userAnswerLetter
+                ? { value: "✗", label: t("results.wrong"), color: "text-red-500" }
+                : { value: "–", label: t("results.notAnswered"), color: "text-gray-400" };
               return (
+                <Fragment key={index}>
+                {drillIdx === FREE_RATE_LIMIT && !isPremium && hasCommunityRates && (
+                  <button
+                    onClick={() =>
+                      upgrade.openPaywall("full_stats", "results_drill_rates", "Results Miss Rates")
+                    }
+                    className="w-full flex items-center gap-3 rounded-xl border border-brand-border-light bg-brand-light px-4 py-2.5 text-left hover:shadow-md transition-shadow"
+                  >
+                    <Lock className="h-4 w-4 text-brand shrink-0" />
+                    <span className="flex-1 text-sm font-medium text-gray-800">
+                      {t("results.drillRatesUpsell")}
+                    </span>
+                    <span className="text-sm font-semibold text-brand whitespace-nowrap">
+                      {t("common.unlockWithPremium")}
+                    </span>
+                  </button>
+                )}
                 <QuizRow
-                  key={index}
-                  chipValue={String(index + 1)}
-                  chipLabel={userAnswerLetter ? t("results.wrong") : t("results.notAnswered")}
-                  chipColorClass={userAnswerLetter ? "text-red-500" : "text-gray-400"}
+                  chipValue={chip.value}
+                  chipLabel={chip.label}
+                  chipColorClass={chip.color}
+                  subtitle={
+                    rateText ? (
+                      rateLocked ? (
+                        <span className="blur-[3px] select-none" aria-hidden="true">
+                          {rateText}
+                        </span>
+                      ) : (
+                        rateText
+                      )
+                    ) : undefined
+                  }
                   question={question.question}
                   options={[question.optionA, question.optionB, question.optionC, question.optionD].filter(Boolean)}
                   correctAnswer={optionText(question, question.correctAnswer)}
@@ -208,14 +248,10 @@ export function ResultsDebriefBody({ results, upgrade }: Props) {
                           {question.explanation}
                         </p>
                       )}
-                      {answered && communityQ && (
-                        <p className="text-xs text-gray-400">
-                          {t("results.communityAlsoMissed").replace("{{pct}}", String(communityQ.errorRate))}
-                        </p>
-                      )}
                     </div>
                   )}
                 />
+                </Fragment>
               );
             })}
           </div>

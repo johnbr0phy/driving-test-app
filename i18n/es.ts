@@ -447,6 +447,7 @@ export const es: TranslationKeys = {
     correctHeading: "Las {{n}} que acertaste",
     correctShow: "Ver",
     correctHide: "Ocultar",
+    drillRatesUpsell: "Mira el porcentaje de fallo de cada pregunta",
   },
 
   // Settings page

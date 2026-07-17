@@ -447,6 +447,7 @@ export const en = {
     correctHeading: "The {{n}} you got right",
     correctShow: "Show",
     correctHide: "Hide",
+    drillRatesUpsell: "See the miss rate on every question",
   },
 
   // Settings page

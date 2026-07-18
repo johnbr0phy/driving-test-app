@@ -49,7 +49,9 @@ export default function OnboardingSelectStatePage() {
   // Don't render the selector until auth has resolved and, for signed-in
   // users, their Firestore data has loaded — they may already have a state,
   // and rendering early flashes the selector before the redirect above fires.
-  if (authLoading || (user && !firestoreLoaded)) {
+  // Also hold off once storeSelectedState is known, for the same reason:
+  // the redirect effect above hasn't run yet on this render.
+  if (authLoading || (user && !firestoreLoaded) || storeSelectedState) {
     return null;
   }
 

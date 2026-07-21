@@ -609,15 +609,6 @@ export const es: TranslationKeys = {
     okGotIt: "Entendido",
   },
 
-  // Data reset notification
-  dataReset: {
-    questionsImproved: "¡Preguntas mejoradas!",
-    rewrittenQuestions: "Hemos reescrito y mejorado completamente las más de 2,000 preguntas de práctica.",
-    betterBalanced: "Las nuevas preguntas están mejor equilibradas, son más precisas y se enfocan en la comprensión en lugar de la memorización.",
-    progressReset: "Tu progreso anterior se ha restablecido para que puedas empezar de nuevo con el contenido mejorado.",
-    gotItLetsGo: "¡Entendido, vamos!",
-  },
-
   // Mastery progress
   mastery: {
     overallMastery: "Dominio general",

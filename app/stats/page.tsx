@@ -54,7 +54,8 @@ function StatsContent() {
 
   const { user } = useAuth();
   const isPremium = hydrated ? hasPremiumAccess() : false;
-  const FREE_QUESTION_LIMIT = 2;
+  const FREE_QUESTION_LIMIT = 5;
+  const FREE_QUESTION_LIMIT_MOBILE = 2;
 
   const searchParams = useSearchParams();
   const [activeTab, setActiveTab] = useState<"yours" | "community">(
@@ -370,19 +371,27 @@ function StatsContent() {
               </div>
             ) : (
               <div className="space-y-2">
-                {(isPremium ? sortedQuestions : sortedQuestions.slice(0, FREE_QUESTION_LIMIT)).map(statsRow)}
+                {isPremium
+                  ? sortedQuestions.map(statsRow)
+                  : sortedQuestions.slice(0, FREE_QUESTION_LIMIT).map((item, idx) => (
+                      <div key={item.question.questionId} className={idx >= FREE_QUESTION_LIMIT_MOBILE ? "hidden md:block" : undefined}>
+                        {statsRow(item)}
+                      </div>
+                    ))}
 
                 {/* Paywall for free users */}
                 {!isPremium && sortedQuestions.length > FREE_QUESTION_LIMIT && (
-                  <div>
+                  <div className="relative">
                     {/* Faint preview */}
                     {/* Short teaser on mobile (keeps the upsell above the fold), a
-                        taller fading stack on desktop so the page doesn't end in a void */}
+                        slightly taller gradually-fading stack on desktop so the page
+                        doesn't end in a void. The unlock CTA is overlaid on top of it
+                        rather than stacked below, so there's no dead space. */}
                     <div
-                      className="space-y-2 overflow-hidden max-h-24 md:max-h-[26rem] blur-[2px] opacity-25 pointer-events-none select-none [mask-image:linear-gradient(to_bottom,black_25%,transparent)]"
+                      className="space-y-2 overflow-hidden h-28 md:h-60 blur-[2px] opacity-40 pointer-events-none select-none [mask-image:linear-gradient(to_bottom,black,transparent)]"
                       aria-hidden="true"
                     >
-                      {sortedQuestions.slice(FREE_QUESTION_LIMIT, FREE_QUESTION_LIMIT + 6).map((item) => {
+                      {sortedQuestions.slice(FREE_QUESTION_LIMIT, FREE_QUESTION_LIMIT + 4).map((item) => {
                         const chip = chipFor(item);
                         return (
                           <div
@@ -405,23 +414,25 @@ function StatsContent() {
                       })}
                     </div>
 
-                    {/* Lock UI */}
-                    <div className="flex flex-col items-center pt-2 pb-2 text-center">
-                      <div className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-brand-light mb-2">
-                        <Lock className="h-4 w-4 text-brand" />
+                    {/* Lock UI, overlaid on top of the faded cards */}
+                    <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
+                      <div className="rounded-2xl bg-white/80 backdrop-blur-sm px-6 py-3 md:py-4 flex flex-col items-center shadow-sm border border-gray-200">
+                        <div className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-brand-light mb-2">
+                          <Lock className="h-4 w-4 text-brand" />
+                        </div>
+                        <p className="text-sm font-semibold text-gray-900 mb-1">
+                          {sortedQuestions.length - FREE_QUESTION_LIMIT} {t("stats.moreQuestions")}
+                        </p>
+                        <p className="text-xs text-gray-500 mb-2.5">
+                          {t("stats.unlockPremiumStats")}
+                        </p>
+                        <button
+                          onClick={() => { trackPaywallHit("stats_question_list", "Stats Question List", "stats_page"); trackViewItem("stats_page"); setPaywallOpen(true); }}
+                          className="inline-flex items-center px-4 py-2 bg-brand text-white text-sm font-medium rounded-full hover:bg-brand-hover transition-colors shadow-lg"
+                        >
+                          Unlock Premium — $9.99
+                        </button>
                       </div>
-                      <p className="text-sm font-semibold text-gray-900 mb-1">
-                        {sortedQuestions.length - FREE_QUESTION_LIMIT} {t("stats.moreQuestions")}
-                      </p>
-                      <p className="text-xs text-gray-500 mb-2.5">
-                        {t("stats.unlockPremiumStats")}
-                      </p>
-                      <button
-                        onClick={() => { trackPaywallHit("stats_question_list", "Stats Question List", "stats_page"); trackViewItem("stats_page"); setPaywallOpen(true); }}
-                        className="inline-flex items-center px-4 py-2 bg-brand text-white text-sm font-medium rounded-full hover:bg-brand-hover transition-colors"
-                      >
-                        Unlock Premium — $9.99
-                      </button>
                     </div>
                   </div>
                 )}

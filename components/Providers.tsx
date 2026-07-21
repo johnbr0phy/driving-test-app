@@ -3,20 +3,7 @@
 import { useEffect } from "react";
 import { AuthProvider } from "@/contexts/AuthContext";
 import { LanguageProvider } from "@/contexts/LanguageContext";
-import { DataResetNotification } from "@/components/DataResetNotification";
 import { useStore } from "@/store/useStore";
-
-function DataResetNotificationWrapper() {
-  const showDataResetNotification = useStore((state) => state.showDataResetNotification);
-  const dismissDataResetNotification = useStore((state) => state.dismissDataResetNotification);
-
-  return (
-    <DataResetNotification
-      open={showDataResetNotification}
-      onDismiss={dismissDataResetNotification}
-    />
-  );
-}
 
 function PremiumTheme() {
   const subscription = useStore((state) => state.subscription);
@@ -43,7 +30,6 @@ export function Providers({ children }: { children: React.ReactNode }) {
     <LanguageProvider>
       <AuthProvider>
         {children}
-        <DataResetNotificationWrapper />
         <PremiumTheme />
       </AuthProvider>
     </LanguageProvider>

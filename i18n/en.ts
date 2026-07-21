@@ -609,15 +609,6 @@ export const en = {
     okGotIt: "Got it",
   },
 
-  // Data reset notification
-  dataReset: {
-    questionsImproved: "Questions Improved!",
-    rewrittenQuestions: "We've completely rewritten and improved all 2,000+ practice questions.",
-    betterBalanced: "The new questions are better balanced, more accurate, and focus on understanding rather than memorization.",
-    progressReset: "Your previous progress has been reset so you can start fresh with the improved content.",
-    gotItLetsGo: "Got it, let's go!",
-  },
-
   // Mastery progress
   mastery: {
     overallMastery: "Overall Mastery",

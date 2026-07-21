@@ -441,24 +441,17 @@ function TrainingPageContent() {
             >
               {t("dashboard.viewStats")}
             </Link>
-          ) : isGuest ? (
+          ) : (
             <button
               type="button"
-              onClick={() => setPaywallOpen(true)}
+              onClick={() => {
+                if (!isGuest) trackStatsEntry("training_header");
+                setPaywallOpen(true);
+              }}
               className="text-sm font-medium text-brand hover:text-brand-dark transition-colors"
             >
               {ctaText}
             </button>
-          ) : (
-            // Free users go to the stats page — its in-context locked list
-            // converts better than the bare paywall modal
-            <Link
-              href="/stats"
-              onClick={() => trackStatsEntry("training_header")}
-              className="text-sm font-medium text-brand hover:text-brand-dark transition-colors"
-            >
-              {ctaText}
-            </Link>
           )
         }
       />

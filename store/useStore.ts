@@ -10,9 +10,6 @@ import type { Language } from '@/i18n';
 const DATA_VERSION = 2;
 
 interface AppState {
-  // Data version notification
-  showDataResetNotification: boolean;
-  dismissDataResetNotification: () => void;
 
   // Language
   language: Language;
@@ -136,10 +133,6 @@ interface AppState {
 export const useStore = create<AppState>()(
   persist(
     (set, get) => ({
-      // Data version notification
-      showDataResetNotification: false,
-      dismissDataResetNotification: () => set({ showDataResetNotification: false }),
-
       // Initial state
       language: 'en' as Language,
       isGuest: false,
@@ -968,11 +961,10 @@ export const useStore = create<AppState>()(
       }),
       skipHydration: false,
       migrate: (persistedState: unknown, version: number) => {
-        // If upgrading from an older version, reset all data and show notification
+        // If upgrading from an older version, reset all data
         if (version < DATA_VERSION) {
           console.log(`Migrating from version ${version} to ${DATA_VERSION} - resetting data`);
           return {
-            showDataResetNotification: true,
             isGuest: false,
             selectedState: null,
             currentTests: {},

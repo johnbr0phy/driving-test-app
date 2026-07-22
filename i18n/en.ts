@@ -7,7 +7,6 @@ export const en = {
     signUpToSave: "Sign Up to Save",
     loading: "Loading...",
     back: "Back",
-    backToDashboard: "Back to Dashboard",
     cancel: "Cancel",
     continue: "Continue",
     premium: "Premium",

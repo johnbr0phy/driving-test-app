@@ -9,7 +9,6 @@ export const es: TranslationKeys = {
     signUpToSave: "Regístrate para guardar",
     loading: "Cargando...",
     back: "Atrás",
-    backToDashboard: "Volver al panel",
     cancel: "Cancelar",
     continue: "Continuar",
     premium: "Premium",

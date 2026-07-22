@@ -209,7 +209,7 @@ export default function TestPage() {
             <div className="text-xl font-semibold mb-2">{t("testPage.noQuestionsAvailable")}</div>
             <div className="text-gray-600 mb-4">{t("testPage.unableToLoad")}</div>
             <Button className="bg-black text-white hover:bg-gray-800" onClick={() => router.push("/dashboard")}>
-              {t("common.backToDashboard")}
+              {t("common.back")}
             </Button>
           </CardContent>
         </Card>

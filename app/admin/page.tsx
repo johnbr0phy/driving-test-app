@@ -280,7 +280,7 @@ export default function AdminPage() {
         <div className="container mx-auto px-4 py-8 max-w-6xl">
           <Link href="/dashboard" className="inline-flex items-center text-gray-600 hover:text-gray-900 mb-6">
             <ArrowLeft className="h-4 w-4 mr-2" />
-            Back to Dashboard
+            Back
           </Link>
           <Card className="border-red-200 bg-red-50">
             <CardContent className="p-4">

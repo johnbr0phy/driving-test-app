@@ -306,7 +306,7 @@ function TrainingPageContent() {
               <Link href="/dashboard">
                 <Button variant="ghost" className="text-gray-400 hover:text-white hover:bg-white/10 -ml-2">
                   <ArrowLeft className="h-4 w-4 mr-2" />
-                  {t("common.backToDashboard")}
+                  {t("common.back")}
                 </Button>
               </Link>
             </div>
@@ -471,7 +471,7 @@ function TrainingPageContent() {
             <CardContent className="p-8 text-center">
               <p className="text-gray-600 mb-4">{t("trainingPage.noMoreQuestions")}</p>
               <Button className="bg-black text-white hover:bg-gray-800" onClick={() => router.push("/dashboard")}>
-                {t("common.backToDashboard")}
+                {t("common.back")}
               </Button>
             </CardContent>
           </Card>

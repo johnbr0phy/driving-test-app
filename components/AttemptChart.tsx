@@ -47,8 +47,8 @@ export function AttemptChart({ attempts }: { attempts: AttemptPoint[] }) {
   const { t } = useTranslation();
   const [hover, setHover] = useState<number | null>(null);
   const W = 600;
-  const H = 210;
-  const PAD = { l: 38, r: 14, t: 26, b: 26 };
+  const H = 200;
+  const PAD = { l: 38, r: 14, t: 16, b: 26 };
   const iw = W - PAD.l - PAD.r;
   const ih = H - PAD.t - PAD.b;
   const x = (i: number) =>
@@ -140,7 +140,7 @@ export function AttemptChart({ attempts }: { attempts: AttemptPoint[] }) {
       {(hover === null || hover === last) && (
         <text
           x={x(last)}
-          y={y(attempts[last].pct) - 10}
+          y={Math.max(y(attempts[last].pct) - 10, 12)}
           textAnchor={last === 0 ? "middle" : "end"}
           className="fill-gray-700"
           fontSize="11"

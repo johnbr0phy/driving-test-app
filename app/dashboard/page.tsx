@@ -630,20 +630,18 @@ function DashboardContent() {
                     )}
                     {hasAttempts && !testLocked && testMisses && (
                       <p className="text-xs mt-1 flex items-center gap-1.5">
-                        {stillMissed > 0 ? (
-                          <span className="text-red-500 font-semibold">
-                            ✗ {t("dashboard.missesToFix").replace("{{n}}", String(stillMissed))}
-                          </span>
-                        ) : testMisses.everMissed > 0 ? (
-                          <span className="text-green-600 font-semibold">
-                            {t("dashboard.allMissesFixed")}
-                          </span>
-                        ) : (
-                          <span className="text-green-600 font-semibold">
-                            {t("dashboard.perfectRecord")}
-                          </span>
+                        {stillMissed === 0 && (
+                          <>
+                            <span className="text-green-600 font-semibold">
+                              {testMisses.everMissed > 0
+                                ? t("dashboard.allMissesFixed")
+                                : t("dashboard.perfectRecord")}
+                            </span>
+                            <span className={testCompleted ? "text-green-300" : "text-gray-300"}>
+                              ·
+                            </span>
+                          </>
                         )}
-                        <span className={testCompleted ? "text-green-300" : "text-gray-300"}>·</span>
                         <span className={testCompleted ? "text-green-600" : "text-gray-400"}>
                           {testMisses.attempts === 1
                             ? t("dashboard.attemptsOne")
@@ -659,7 +657,7 @@ function DashboardContent() {
 
                   {/* Drop-down attempt panel, attached flush to the card above */}
                   {isExpanded && hasAttempts && attemptPoints.length > 0 && (
-                    <div className="rounded-b-xl bg-white border border-t-0 border-gray-100 p-4 animate-in fade-in duration-200">
+                    <div className="rounded-b-xl bg-white border border-t-0 border-gray-100 px-4 pb-4 animate-in fade-in duration-200">
                       <AttemptChart attempts={attemptPoints} />
                       <div className="mt-2 space-y-2">
                         {stillMissed > 0 && (

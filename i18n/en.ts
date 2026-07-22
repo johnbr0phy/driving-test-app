@@ -363,7 +363,7 @@ export const en = {
     sub: "{{n}} questions you're still getting wrong across {{m}} test attempts. Answer them right to clear the list.",
     subOne: "1 question you're still getting wrong. Answer it right to clear the list.",
     fixedChip: "{{fixed}}/{{total}} fixed",
-    showAll: "Show all {{n}} misses from every test →",
+    readyRetake: "I'm ready to retake the test",
     emptyNoAttemptsTitle: "No misses to drill yet",
     emptyNoAttemptsBody: "Take a practice test first and we'll collect every question you get wrong here.",
     emptyAllFixedTitle: "All {{n}} misses fixed 🎉",

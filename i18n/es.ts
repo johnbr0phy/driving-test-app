@@ -363,7 +363,7 @@ export const es: TranslationKeys = {
     sub: "{{n}} preguntas que sigues fallando en {{m}} intentos de examen. Respóndelas bien para vaciar la lista.",
     subOne: "1 pregunta que sigues fallando. Respóndela bien para vaciar la lista.",
     fixedChip: "{{fixed}}/{{total}} corregidas",
-    showAll: "Ver los {{n}} fallos de todos los exámenes →",
+    readyRetake: "Quiero repetir el examen",
     emptyNoAttemptsTitle: "Aún no hay fallos para repasar",
     emptyNoAttemptsBody: "Haz primero un examen de práctica y reuniremos aquí cada pregunta que falles.",
     emptyAllFixedTitle: "Los {{n}} fallos corregidos 🎉",

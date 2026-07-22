@@ -9,7 +9,7 @@ import { Fragment, Suspense, useMemo, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter, useSearchParams } from "next/navigation";
-import { ArrowLeft, Lock } from "lucide-react";
+import { ArrowLeft, ChevronRight, Lock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { PaywallModal } from "@/components/PaywallModal";
 import { QuizRow } from "@/components/QuizRow";
@@ -128,15 +128,6 @@ function DrillContent() {
             )}
           </div>
         </div>
-
-        {testFilter && summary.stillMissed.length > misses.length && (
-          <Link
-            href="/drill"
-            className="block mb-4 text-sm font-medium text-brand hover:text-brand-dark"
-          >
-            {t("drill.showAll").replace("{{n}}", String(summary.stillMissed.length))}
-          </Link>
-        )}
 
         {/* Empty states */}
         {misses.length === 0 && (
@@ -278,6 +269,16 @@ function DrillContent() {
                   .replace("{{m}}", String(lockedCount))
               : t("drill.allFixedAll").replace("{{n}}", String(unlockedCount))}
           </div>
+        )}
+
+        {testFilter && misses.length > 0 && (
+          <button
+            onClick={() => router.push(`/test/${testFilter}`)}
+            className="mt-4 w-full flex items-center justify-center gap-1.5 rounded-lg bg-brand text-white font-bold text-sm px-4 py-3 hover:bg-brand-hover transition-colors"
+          >
+            {t("drill.readyRetake")}
+            <ChevronRight className="h-4 w-4" />
+          </button>
         )}
       </div>
     </div>

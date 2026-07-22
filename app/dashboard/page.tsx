@@ -687,7 +687,13 @@ function DashboardContent() {
                       Stays mounted; Collapse animates the unfurl both ways. */}
                   {hasAttempts && !testLocked && attemptPoints.length > 0 && (
                     <Collapse open={isExpanded}>
-                      <div className="rounded-b-xl bg-white border border-t-0 border-gray-100 px-4 pb-4">
+                      <div
+                        className={`rounded-b-xl border border-t-0 px-4 pb-4 ${
+                          testCompleted
+                            ? "bg-gradient-to-r from-green-50 to-emerald-50 border-green-200"
+                            : "bg-white border-gray-100"
+                        }`}
+                      >
                       <AttemptChart attempts={attemptPoints} />
                       <div className="mt-2 space-y-2">
                         {stillMissed > 0 && (

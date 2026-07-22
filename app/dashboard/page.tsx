@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, Suspense } from "react";
+import { useEffect, useRef, useState, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { PaywallModal } from "@/components/PaywallModal";
 import { Card, CardContent } from "@/components/ui/card";
@@ -55,7 +55,7 @@ function ProgressCard({
   children?: React.ReactNode;
 }) {
   const content = (
-    <Card className={`transition-all ${
+    <Card className={`transition-all duration-300 ${
       completed
         ? "bg-gradient-to-r from-green-50 to-emerald-50 border-green-200 shadow-sm"
         : "bg-white border-gray-100 hover:shadow-md cursor-pointer"
@@ -123,6 +123,34 @@ function ProgressCard({
   }
 
   return content;
+}
+
+// Height-animated collapse for the test drop-downs. Measures its content and
+// transitions a pixel height — grid-template-rows fr transitions are
+// unreliable in Chrome, so this does it the dependable way.
+function Collapse({ open, children }: { open: boolean; children: React.ReactNode }) {
+  const innerRef = useRef<HTMLDivElement>(null);
+  const [contentHeight, setContentHeight] = useState(0);
+  useEffect(() => {
+    const el = innerRef.current;
+    if (!el) return;
+    const update = () => setContentHeight(el.offsetHeight);
+    update();
+    const ro = new ResizeObserver(update);
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, []);
+  return (
+    <div
+      inert={!open}
+      className={`overflow-hidden transition-[height,opacity] duration-300 ease-in-out ${
+        open ? "opacity-100" : "opacity-0"
+      }`}
+      style={{ height: open ? contentHeight : 0 }}
+    >
+      <div ref={innerRef}>{children}</div>
+    </div>
+  );
 }
 
 function progressColor(): string {
@@ -655,9 +683,11 @@ function DashboardContent() {
                     )}
                   </ProgressCard>
 
-                  {/* Drop-down attempt panel, attached flush to the card above */}
-                  {isExpanded && hasAttempts && attemptPoints.length > 0 && (
-                    <div className="rounded-b-xl bg-white border border-t-0 border-gray-100 px-4 pb-4 animate-in fade-in duration-200">
+                  {/* Drop-down attempt panel, attached flush to the card above.
+                      Stays mounted; Collapse animates the unfurl both ways. */}
+                  {hasAttempts && !testLocked && attemptPoints.length > 0 && (
+                    <Collapse open={isExpanded}>
+                      <div className="rounded-b-xl bg-white border border-t-0 border-gray-100 px-4 pb-4">
                       <AttemptChart attempts={attemptPoints} />
                       <div className="mt-2 space-y-2">
                         {stillMissed > 0 && (
@@ -705,7 +735,8 @@ function DashboardContent() {
                           </p>
                         )}
                       </div>
-                    </div>
+                      </div>
+                    </Collapse>
                   )}
                 </div>
               </div>

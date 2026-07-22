@@ -12,6 +12,8 @@ import { useHydration } from "@/hooks/useHydration";
 import { useAuth } from "@/contexts/AuthContext";
 import { auth } from "@/lib/firebase";
 import { states } from "@/data/states";
+import { AttemptChart, sessionsToAttemptPoints } from "@/components/AttemptChart";
+import { computeMissSummary } from "@/lib/missedQuestions";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { trackBeginCheckout, trackPaywallDismissed, trackPaywallHit, trackPurchase, trackViewItem } from "@/lib/analytics";
 
@@ -37,6 +39,7 @@ function ProgressCard({
   onClick,
   isPremiumLocked,
   stepNumber,
+  attachedBottom,
   children,
 }: {
   title: string;
@@ -47,6 +50,8 @@ function ProgressCard({
   onClick?: () => void;
   isPremiumLocked?: boolean;
   stepNumber?: number;
+  // Squares off the bottom so an expansion panel can attach flush below
+  attachedBottom?: boolean;
   children?: React.ReactNode;
 }) {
   const content = (
@@ -54,7 +59,7 @@ function ProgressCard({
       completed
         ? "bg-gradient-to-r from-green-50 to-emerald-50 border-green-200 shadow-sm"
         : "bg-white border-gray-100 hover:shadow-md cursor-pointer"
-    }`}>
+    } ${attachedBottom ? "rounded-b-none border-b-0" : ""}`}>
       <CardContent className="p-4 flex items-center gap-3">
         {/* Completion indicator */}
         <div className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center relative ${
@@ -144,7 +149,7 @@ function DashboardContent() {
   const searchParams = useSearchParams();
   const hydrated = useHydration();
   const { user } = useAuth();
-  const { t } = useTranslation();
+  const { t, language } = useTranslation();
   const isGuest = useStore((state) => state.isGuest);
   const selectedState = useStore((state) => state.selectedState);
   const firestoreLoaded = useStore((state) => state.firestoreLoaded);
@@ -157,6 +162,12 @@ function DashboardContent() {
   const getTrainingSetProgress = useStore((state) => state.getTrainingSetProgress);
   const isOnboardingComplete = useStore((state) => state.isOnboardingComplete);
   const completeTest = useStore((state) => state.completeTest);
+  const completedTests = useStore((state) => state.completedTests);
+
+  // Per-question miss aggregation across all attempts (for the test drop-downs)
+  const missSummary = computeMissSummary(hydrated ? completedTests : [], selectedState);
+  // Which test card's attempt panel is dropped down
+  const [expandedTest, setExpandedTest] = useState<number | null>(null);
 
   // Hero subtitle variants (5 per progress state, picked randomly on mount)
   const heroSubVariants: string[][] = [
@@ -180,7 +191,7 @@ function DashboardContent() {
 
   // Paywall state
   const [paywallOpen, setPaywallOpen] = useState(false);
-  const [paywallFeature, setPaywallFeature] = useState<"training_set_4" | "practice_test_4">("training_set_4");
+  const [paywallFeature, setPaywallFeature] = useState<"training_set_4" | "practice_test_4" | "full_stats">("training_set_4");
   const [showPurchaseSuccess, setShowPurchaseSuccess] = useState(false);
   const schoolJoinedSlug = searchParams.get("school_joined");
   const [showSchoolJoined, setShowSchoolJoined] = useState(!!schoolJoinedSlug);
@@ -508,12 +519,31 @@ function DashboardContent() {
             const bestPct = getTestBestPercent(id);
             const bestRaw = hydrated ? getTestAttemptStats(id)?.bestScore ?? null : null;
             const inProgress = isTestInProgress(id);
+            const answeredCount = hydrated
+              ? Object.keys(getCurrentTest(id)?.answers ?? {}).length
+              : 0;
+            // A session with zero answers (opened the test and backed out)
+            // shouldn't present as "in progress"
+            const activelyInProgress = inProgress && answeredCount > 0;
             const testLocked = id >= 3 && !isPremium;
 
+            // Miss/attempt aggregation for this test's card line + drop-down
+            const testMisses = missSummary.perTest.get(id);
+            const hasAttempts = !!testMisses && testMisses.attempts > 0;
+            const testSessions = hydrated
+              ? completedTests.filter(
+                  (s) => s.state === (selectedState || "CA") && s.testNumber === id
+                )
+              : [];
+            const attemptPoints = sessionsToAttemptPoints(
+              testSessions,
+              language === "es" ? "es-ES" : "en-US"
+            );
+            const isExpanded = expandedTest === id;
+            const stillMissed = testMisses?.stillMissed ?? 0;
+
             let testSubtitle = t("testCard.fiftyQuestions");
-            if (inProgress) {
-              const currentTest = getCurrentTest(id);
-              const answeredCount = currentTest ? Object.keys(currentTest.answers).length : 0;
+            if (activelyInProgress) {
               testSubtitle = `${answeredCount}/50 ${t("testCard.answered")}`;
             } else if (testCompleted && bestPct !== null) {
               testSubtitle = `${t("dashboard.bestScore")}: ${bestPct}%`;
@@ -523,7 +553,7 @@ function DashboardContent() {
 
             let testStamp: { label: string; color: "green" | "amber" | "red" } | undefined;
             if (!testLocked) {
-              if (inProgress) {
+              if (activelyInProgress) {
                 testStamp = { label: t("dashboard.stampContinue"), color: "amber" };
               } else if (bestRaw !== null) {
                 if (bestRaw === 50) {
@@ -577,10 +607,17 @@ function DashboardContent() {
                     stepNumber={(id - 1) * 2 + 2}
                     stamp={testStamp}
                     isPremiumLocked={testLocked}
-                    href={testLocked ? undefined : `/test/${id}`}
-                    onClick={testLocked ? () => handlePremiumClick("practice_test_4", `test_${id}`, `Practice Test ${id}`) : undefined}
+                    href={testLocked || hasAttempts ? undefined : `/test/${id}`}
+                    onClick={
+                      testLocked
+                        ? () => handlePremiumClick("practice_test_4", `test_${id}`, `Practice Test ${id}`)
+                        : hasAttempts
+                          ? () => setExpandedTest(isExpanded ? null : id)
+                          : undefined
+                    }
+                    attachedBottom={isExpanded && hasAttempts}
                   >
-                    {!testCompleted && !inProgress && bestPct !== null && !testLocked && (
+                    {!testCompleted && !activelyInProgress && bestPct !== null && !testLocked && (
                       <div className="mt-1.5 flex items-center gap-2">
                         <div className="flex-1 h-1.5 bg-gray-100 rounded-full overflow-hidden">
                           <div
@@ -591,7 +628,87 @@ function DashboardContent() {
                         <span className="text-xs text-gray-400 tabular-nums">80%</span>
                       </div>
                     )}
+                    {hasAttempts && !testLocked && testMisses && (
+                      <p className="text-xs mt-1 flex items-center gap-1.5">
+                        {stillMissed > 0 ? (
+                          <span className="text-red-500 font-semibold">
+                            ✗ {t("dashboard.missesToFix").replace("{{n}}", String(stillMissed))}
+                          </span>
+                        ) : testMisses.everMissed > 0 ? (
+                          <span className="text-green-600 font-semibold">
+                            {t("dashboard.allMissesFixed")}
+                          </span>
+                        ) : (
+                          <span className="text-green-600 font-semibold">
+                            {t("dashboard.perfectRecord")}
+                          </span>
+                        )}
+                        <span className={testCompleted ? "text-green-300" : "text-gray-300"}>·</span>
+                        <span className={testCompleted ? "text-green-600" : "text-gray-400"}>
+                          {testMisses.attempts === 1
+                            ? t("dashboard.attemptsOne")
+                            : t("dashboard.attemptsCount").replace(
+                                "{{n}}",
+                                String(testMisses.attempts)
+                              )}{" "}
+                          {isExpanded ? "▴" : "▾"}
+                        </span>
+                      </p>
+                    )}
                   </ProgressCard>
+
+                  {/* Drop-down attempt panel, attached flush to the card above */}
+                  {isExpanded && hasAttempts && attemptPoints.length > 0 && (
+                    <div className="rounded-b-xl bg-white border border-t-0 border-gray-100 p-4 animate-in fade-in duration-200">
+                      <AttemptChart attempts={attemptPoints} />
+                      <div className="mt-2 space-y-2">
+                        {stillMissed > 0 && (
+                          <button
+                            onClick={() => {
+                              if (isPremium) {
+                                router.push(`/drill?test=${id}`);
+                              } else {
+                                trackViewItem("full_stats");
+                                trackPaywallHit(`drill_test_${id}`, `Test ${id} Miss Drill`);
+                                setPaywallFeature("full_stats");
+                                setPaywallOpen(true);
+                              }
+                            }}
+                            className="w-full flex items-center justify-center gap-2 rounded-lg bg-brand text-white font-bold text-sm px-4 py-3 hover:bg-brand-hover transition-colors"
+                          >
+                            {!isPremium && <Lock className="h-4 w-4" />}
+                            {t("dashboard.drillWrongCta").replace("{{n}}", String(stillMissed))}
+                            {isPremium ? (
+                              <ChevronRight className="h-4 w-4" />
+                            ) : (
+                              <span className="text-[10px] font-bold uppercase tracking-wider bg-white/20 rounded-full px-2 py-0.5">
+                                {t("common.premium")}
+                              </span>
+                            )}
+                          </button>
+                        )}
+                        <button
+                          onClick={() => router.push(`/test/${id}`)}
+                          className="w-full flex items-center justify-center gap-1.5 rounded-lg bg-white border border-gray-200 text-gray-800 font-bold text-sm px-4 py-3 hover:bg-gray-50 transition-colors"
+                        >
+                          {activelyInProgress
+                            ? t("dashboard.continueTest").replace("{{n}}", String(answeredCount))
+                            : t("dashboard.retakeTest")}
+                          <ChevronRight className="h-4 w-4" />
+                        </button>
+                        {stillMissed > 0 && (
+                          <p className="text-center text-[11px] text-gray-400">
+                            {t("dashboard.drillTip")
+                              .replace("{{n}}", String(stillMissed))
+                              .replace(
+                                "{{pct}}",
+                                String(Math.max(...attemptPoints.map((p) => p.pct)))
+                              )}
+                          </p>
+                        )}
+                      </div>
+                    </div>
+                  )}
                 </div>
               </div>
             );

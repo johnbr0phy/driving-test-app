@@ -81,12 +81,12 @@ export function CommunityWrongQuestions({ isPremium, onUpgradeClick }: Props) {
       {!isPremium && lockedCount > 0 && (
         <div className="relative">
           {/* Blurred preview */}
-          {/* Short teaser on mobile (keeps the upsell above the fold), a slightly
-              taller gradually-fading stack on desktop so the page doesn't end in a
-              void. The unlock CTA is overlaid on top of it rather than stacked
-              below, so there's no dead space. */}
+          {/* Gradually-fading stack tall enough for the overlaid unlock CTA to
+              breathe — on mobile this pushes the footer below the fold, which is
+              fine. The CTA is overlaid on top of it rather than stacked below, so
+              there's no dead space. */}
           <div
-            className="space-y-2 overflow-hidden h-28 md:h-60 blur-[2px] opacity-40 pointer-events-none select-none [mask-image:linear-gradient(to_bottom,black,transparent)]"
+            className="space-y-2 overflow-hidden h-60 blur-[2px] opacity-40 pointer-events-none select-none [mask-image:linear-gradient(to_bottom,black,transparent)]"
             aria-hidden="true"
           >
             {data.questions.slice(FREE_LIMIT, FREE_LIMIT + 4).map((q) => (
@@ -108,7 +108,7 @@ export function CommunityWrongQuestions({ isPremium, onUpgradeClick }: Props) {
 
           {/* Lock UI, overlaid on top of the faded cards */}
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
-            <div className="rounded-2xl bg-white/80 backdrop-blur-sm px-6 py-3 md:py-4 flex flex-col items-center shadow-sm border border-gray-200">
+            <div className="rounded-2xl bg-white/80 backdrop-blur-sm px-6 py-4 flex flex-col items-center shadow-sm border border-gray-200">
               <div className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-brand-light mb-2">
                 <Lock className="h-4 w-4 text-brand" />
               </div>

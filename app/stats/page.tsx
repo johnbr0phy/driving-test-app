@@ -305,7 +305,7 @@ function StatsContent() {
             aria-pressed={activeTab === "yours"}
             className={`flex-1 flex items-center justify-center gap-2 text-sm font-semibold py-2.5 px-4 rounded-lg transition-all ${
               activeTab === "yours"
-                ? "bg-gray-900 text-white shadow-sm"
+                ? "bg-brand text-white shadow-sm"
                 : "text-gray-500 hover:text-gray-900 hover:bg-gray-50"
             }`}
           >
@@ -317,7 +317,7 @@ function StatsContent() {
             aria-pressed={activeTab === "community"}
             className={`flex-1 flex items-center justify-center gap-2 text-sm font-semibold py-2.5 px-4 rounded-lg transition-all ${
               activeTab === "community"
-                ? "bg-gray-900 text-white shadow-sm"
+                ? "bg-brand text-white shadow-sm"
                 : "text-gray-500 hover:text-gray-900 hover:bg-gray-50"
             }`}
           >
@@ -350,7 +350,7 @@ function StatsContent() {
                   onClick={() => handleSort(field)}
                   className={`whitespace-nowrap text-sm px-3 py-1.5 rounded-full border transition-colors ${
                     sortField === field
-                      ? "bg-gray-900 border-gray-900 text-white font-medium"
+                      ? "bg-brand-light border-brand-border text-brand-dark font-medium"
                       : "bg-white border-gray-200 text-gray-600"
                   }`}
                 >

@@ -4,7 +4,7 @@
 // x = attempt (evenly spaced, labeled with the date where it changes),
 // y = score %, dashed line at the 80% pass mark.
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { TestSession } from "@/types";
 import { useTranslation } from "@/contexts/LanguageContext";
 
@@ -46,7 +46,23 @@ export function sessionsToAttemptPoints(
 export function AttemptChart({ attempts }: { attempts: AttemptPoint[] }) {
   const { t } = useTranslation();
   const [hover, setHover] = useState<number | null>(null);
-  const W = 600;
+
+  // Size the viewBox to the container so text renders at true pixel size on
+  // every screen (a fixed 600px viewBox scaled down to a phone makes the
+  // labels unreadably small).
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [width, setWidth] = useState(600);
+  useEffect(() => {
+    const el = containerRef.current;
+    if (!el) return;
+    const update = () => setWidth(Math.max(260, el.clientWidth));
+    update();
+    const ro = new ResizeObserver(update);
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, []);
+
+  const W = width;
   const H = 200;
   const PAD = { l: 38, r: 14, t: 16, b: 26 };
   const iw = W - PAD.l - PAD.r;
@@ -56,11 +72,12 @@ export function AttemptChart({ attempts }: { attempts: AttemptPoint[] }) {
   const y = (pct: number) => PAD.t + (1 - pct / 100) * ih;
 
   // Label the first attempt of each distinct date; thin out if crowded
+  const maxLabels = W < 420 ? 3 : 5;
   let labelIdx = attempts
     .map((a, i) => (i === 0 || a.date !== attempts[i - 1].date ? i : -1))
     .filter((i) => i >= 0);
-  if (labelIdx.length > 5) {
-    const stride = Math.ceil(labelIdx.length / 5);
+  if (labelIdx.length > maxLabels) {
+    const stride = Math.ceil(labelIdx.length / maxLabels);
     labelIdx = labelIdx.filter((_, k) => k % stride === 0 || k === labelIdx.length - 1);
   }
 
@@ -68,6 +85,7 @@ export function AttemptChart({ attempts }: { attempts: AttemptPoint[] }) {
   const last = attempts.length - 1;
 
   return (
+    <div ref={containerRef}>
     <svg
       viewBox={`0 0 ${W} ${H}`}
       className="w-full h-auto"
@@ -165,5 +183,6 @@ export function AttemptChart({ attempts }: { attempts: AttemptPoint[] }) {
         </text>
       )}
     </svg>
+    </div>
   );
 }

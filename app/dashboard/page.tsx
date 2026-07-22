@@ -59,7 +59,7 @@ function ProgressCard({
       completed
         ? "bg-gradient-to-r from-green-50 to-emerald-50 border-green-200 shadow-sm"
         : "bg-white border-gray-100 hover:shadow-md cursor-pointer"
-    } ${attachedBottom ? "rounded-b-none border-b-0" : ""}`}>
+    } ${attachedBottom ? "rounded-b-none border-b-0 shadow-none hover:shadow-none" : ""}`}>
       <CardContent className="p-4 flex items-center gap-3">
         {/* Completion indicator */}
         <div className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center relative ${

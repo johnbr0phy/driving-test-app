@@ -154,25 +154,6 @@ function Collapse({ open, children }: { open: boolean; children: React.ReactNode
   );
 }
 
-function progressColor(): string {
-  return "bg-red-400";
-}
-
-function ProgressBar({ value, max, hideLabel }: { value: number; max: number; hideLabel?: boolean }) {
-  const pct = Math.min(100, Math.round((value / max) * 100));
-  return (
-    <div className="mt-1.5 flex items-center gap-2">
-      <div className="flex-1 h-1.5 bg-gray-100 rounded-full overflow-hidden">
-        <div
-          className={`h-full rounded-full transition-all duration-300 ${progressColor()}`}
-          style={{ width: `${pct}%` }}
-        />
-      </div>
-      {!hideLabel && <span className="text-xs text-gray-400 tabular-nums">{value}/{max}</span>}
-    </div>
-  );
-}
-
 function DashboardContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -559,7 +540,6 @@ function DashboardContent() {
               <div className="text-xs text-gray-400">{t("dashboard.stampComplete").toLowerCase()}</div>
             </div>
           </div>
-          <ProgressBar value={completedSteps} max={totalSteps} hideLabel />
         </div>
 
         {/* Interleaved Training + Tests */}
@@ -646,11 +626,7 @@ function DashboardContent() {
                       ? () => handlePremiumClick("training_set_4", `set_${id}`, `Training Set ${id}`)
                       : undefined
                   }
-                >
-                  {!trainingComplete && !trainingLocked && trainingProgress.correct > 0 && (
-                    <ProgressBar value={trainingProgress.correct} max={trainingProgress.total} hideLabel />
-                  )}
-                </ProgressCard>
+                />
 
                 {/* Practice test card */}
                 <div className="mt-1.5">
@@ -672,17 +648,6 @@ function DashboardContent() {
                     }
                     attachedBottom={isExpanded && hasAttempts}
                   >
-                    {!testCompleted && !activelyInProgress && bestPct !== null && !testLocked && (
-                      <div className="mt-1.5 flex items-center gap-2">
-                        <div className="flex-1 h-1.5 bg-gray-100 rounded-full overflow-hidden">
-                          <div
-                            className={`h-full rounded-full transition-all duration-300 ${progressColor()}`}
-                            style={{ width: `${Math.min(100, (bestPct / 80) * 100)}%` }}
-                          />
-                        </div>
-                        <span className="text-xs text-gray-400 tabular-nums">80%</span>
-                      </div>
-                    )}
                     {hasAttempts && !testLocked && testMisses && (
                       <p className="text-xs mt-1 flex items-center gap-1.5">
                         {stillMissed === 0 && (

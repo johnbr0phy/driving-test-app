@@ -8,6 +8,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getAdminDb } from "@/lib/firebase-admin";
 import questionsEs from "@/data/questions_es.json";
+import questionsVi from "@/data/questions_vi.json";
 import questionsEn from "@/data/questions.json";
 
 type QuestionEntry = {
@@ -24,6 +25,11 @@ type QuestionEntry = {
 // Build lookup maps from questionId → question data
 const esMap = new Map(
   (questionsEs as QuestionEntry[]).map((q) => [q.questionId, q])
+);
+// Vietnamese covers universal questions + states offering the real test in
+// Vietnamese; missing entries fall back to English.
+const viMap = new Map(
+  (questionsVi as QuestionEntry[]).map((q) => [q.questionId, q])
 );
 const enMap = new Map(
   (questionsEn as QuestionEntry[]).map((q) => [q.questionId, q])
@@ -58,16 +64,17 @@ export async function GET(req: NextRequest) {
       });
     }
 
-    if (lang === "es" && Array.isArray(data.questions)) {
+    if ((lang === "es" || lang === "vi") && Array.isArray(data.questions)) {
+      const translationMap = lang === "es" ? esMap : viMap;
       data.questions = data.questions.map((q: { questionId: string; question: string; correctAnswer: string; explanation?: string; options?: string[] }) => {
-        const esQ = esMap.get(q.questionId);
-        if (!esQ) return q;
+        const translated = translationMap.get(q.questionId);
+        if (!translated) return q;
         return {
           ...q,
-          question: esQ.question,
-          options: [esQ.optionA, esQ.optionB, esQ.optionC, esQ.optionD],
-          correctAnswer: getEsAnswerText(esQ),
-          explanation: esQ.explanation ?? q.explanation ?? "",
+          question: translated.question,
+          options: [translated.optionA, translated.optionB, translated.optionC, translated.optionD],
+          correctAnswer: getEsAnswerText(translated),
+          explanation: translated.explanation ?? q.explanation ?? "",
         };
       });
     }

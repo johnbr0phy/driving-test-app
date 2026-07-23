@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { states } from "@/data/states";
+import { isViState } from "@/data/viStates";
 import type { Language } from "@/i18n";
 
 const popularStateSlugs = [
@@ -20,15 +21,19 @@ export function Footer() {
   const { t, language, setLanguage } = useTranslation();
   const pathname = usePathname();
   const isEs = language === "es";
+  const isVi = language === "vi";
   const isCDL = pathname?.startsWith("/cdl") || pathname === "/cdl-practice-test";
   const isHomepage = pathname === "/";
 
-  // SEO landing pages have dedicated /es/ URLs, so they manage language by routing.
+  // SEO landing pages have dedicated /es/ and /vi/ URLs, so they manage
+  // language by routing.
   const isSeoPage =
     pathname?.endsWith("-dmv-practice-test") ||
     pathname?.endsWith("-examen-practica-dmv") ||
+    pathname?.endsWith("-thi-thu-dmv") ||
     pathname === "/practice-tests-by-state" ||
-    pathname === "/es/examenes-practica-por-estado";
+    pathname === "/es/examenes-practica-por-estado" ||
+    pathname === "/vi/thi-thu-dmv-theo-tieu-bang";
 
   const showLanguageToggle = !isHomepage && !isCDL && !isSeoPage;
 
@@ -47,7 +52,9 @@ export function Footer() {
                     href={
                       isEs
                         ? `/es/${state.slug}-examen-practica-dmv`
-                        : `/${state.slug}-dmv-practice-test`
+                        : isVi && isViState(state.code)
+                          ? `/vi/${state.slug}-thi-thu-dmv`
+                          : `/${state.slug}-dmv-practice-test`
                     }
                     className="hover:text-brand"
                   >
@@ -59,7 +66,9 @@ export function Footer() {
               href={
                 isEs
                   ? "/es/examenes-practica-por-estado"
-                  : "/practice-tests-by-state"
+                  : isVi
+                    ? "/vi/thi-thu-dmv-theo-tieu-bang"
+                    : "/practice-tests-by-state"
               }
               className="text-brand hover:text-brand-dark font-medium"
             >
@@ -87,7 +96,7 @@ export function Footer() {
           <div className="flex items-center justify-center md:justify-end gap-x-4 text-gray-500">
             {showLanguageToggle && (
               <div className="flex items-center bg-gray-100 rounded-full p-0.5">
-                {([["en", "\u{1F1FA}\u{1F1F8}"], ["es", "\u{1F1EA}\u{1F1F8}"]] as [Language, string][]).map(([lang, flag]) => (
+                {([["en", "\u{1F1FA}\u{1F1F8}"], ["es", "\u{1F1EA}\u{1F1F8}"], ["vi", "\u{1F1FB}\u{1F1F3}"]] as [Language, string][]).map(([lang, flag]) => (
                   <button
                     key={lang}
                     onClick={() => setLanguage(lang)}
@@ -96,7 +105,7 @@ export function Footer() {
                         ? "bg-white shadow-sm"
                         : "opacity-50 hover:opacity-75"
                     }`}
-                    aria-label={`Switch to ${lang === "en" ? "English" : "Spanish"}`}
+                    aria-label={`Switch to ${lang === "en" ? "English" : lang === "es" ? "Spanish" : "Vietnamese"}`}
                   >
                     {flag}
                   </button>

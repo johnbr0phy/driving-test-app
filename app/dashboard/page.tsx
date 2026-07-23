@@ -572,7 +572,7 @@ function DashboardContent() {
               : [];
             const attemptPoints = sessionsToAttemptPoints(
               testSessions,
-              language === "es" ? "es-ES" : "en-US"
+              language === "es" ? "es-ES" : language === "vi" ? "vi-VN" : "en-US"
             );
             const isExpanded = expandedTest === id;
             const stillMissed = testMisses?.stillMissed ?? 0;

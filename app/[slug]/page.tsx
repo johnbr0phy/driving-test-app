@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import { states, getStateBySlug } from "@/data/states";
 import { stateLandingData, getStateLandingInfo } from "@/data/stateLandingData";
+import { isViState } from "@/data/viStates";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
@@ -65,6 +66,9 @@ export async function generateMetadata({
       languages: {
         "en": canonicalUrl,
         "es": `${siteUrl}/es/${state.slug}-examen-practica-dmv`,
+        ...(isViState(state.code)
+          ? { "vi": `${siteUrl}/vi/${state.slug}-thi-thu-dmv` }
+          : {}),
         "x-default": canonicalUrl,
       },
     },

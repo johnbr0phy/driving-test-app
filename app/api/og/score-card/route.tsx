@@ -51,6 +51,17 @@ function getTagline(percentage: number, lang: string): string {
     return "CREO QUE TOMARÉ EL AUTOBÚS";
   }
 
+  if (lang === "vi") {
+    if (percentage >= 100) return "ĐIỂM TUYỆT ĐỐI";
+    if (percentage >= 90) return "SẴN SÀNG ĐI THI DMV";
+    if (percentage >= 80) return "ĐÃ ĐẬU BÀI THI THỬ DMV";
+    if (percentage >= 70) return "ĐẬU SÍT SAO";
+    if (percentage >= 50) return "RỚT BÀI THI THỬ DMV";
+    if (percentage >= 30) return "DMV CHỜ CHÚT NHÉ";
+    if (percentage >= 10) return "CẦN LUYỆN THÊM";
+    return "CHẮC PHẢI ĐI XE BUÝT THÔI";
+  }
+
   if (percentage >= 100) return "PERFECT SCORE";
   if (percentage >= 90) return "READY FOR THE DMV";
   if (percentage >= 80) return "PASSED MY DMV PRACTICE TEST";
@@ -110,29 +121,38 @@ export async function GET(request: NextRequest) {
   const tigerBase64 = `data:image/png;base64,${tigerData.toString("base64")}`;
 
   const tagline = isTraining
-    ? (lang === "es" ? "DOMINÉ MI ENTRENAMIENTO DEL DMV" : "MASTERED MY DMV TRAINING")
+    ? (lang === "es"
+      ? "DOMINÉ MI ENTRENAMIENTO DEL DMV"
+      : lang === "vi"
+        ? "ĐÃ THÀNH THẠO PHẦN LUYỆN TẬP DMV"
+        : "MASTERED MY DMV TRAINING")
     : getTagline(percentage, lang);
   const stateName = stateObj.name;
 
   const trainingSetNames: Record<string, Record<number, string>> = {
     en: { 1: "Signs & Signals", 2: "Rules of the Road", 3: "Safety & Emergencies", 4: "State Laws" },
     es: { 1: "Señales y semáforos", 2: "Reglas de tránsito", 3: "Seguridad y emergencias", 4: "Leyes estatales" },
+    vi: { 1: "Biển báo & tín hiệu", 2: "Luật đi đường", 3: "An toàn & khẩn cấp", 4: "Luật tiểu bang" },
   };
 
   const modeLabel = isTraining
     ? (trainingSetNames[lang]?.[setId!] || trainingSetNames["en"][setId!])
-    : (lang === "es" ? `Examen ${testId}` : `Test ${testId}`);
+    : (lang === "es" ? `Examen ${testId}` : lang === "vi" ? `Bài Thi ${testId}` : `Test ${testId}`);
   const correctLabel = lang === "es"
     ? `${score} de ${total} correctas`
-    : `${score} out of ${total} correct`;
+    : lang === "vi"
+      ? `Đúng ${score} trên ${total} câu`
+      : `${score} out of ${total} correct`;
   const passLabel = isTraining
-    ? (lang === "es" ? "DOMINADO" : "MASTERED")
+    ? (lang === "es" ? "DOMINADO" : lang === "vi" ? "THÀNH THẠO" : "MASTERED")
     : (lang === "es"
       ? (passed ? "APROBADO" : "REPROBADO")
-      : (passed ? "PASSED" : "FAILED"));
+      : lang === "vi"
+        ? (passed ? "ĐẬU" : "RỚT")
+        : (passed ? "PASSED" : "FAILED"));
   const subtitle = isTraining
-    ? (lang === "es" ? "ENTRENAMIENTO DMV" : "DMV TRAINING")
-    : (lang === "es" ? "EXAMEN DE PRÁCTICA DEL DMV" : "DMV PRACTICE TEST");
+    ? (lang === "es" ? "ENTRENAMIENTO DMV" : lang === "vi" ? "LUYỆN TẬP DMV" : "DMV TRAINING")
+    : (lang === "es" ? "EXAMEN DE PRÁCTICA DEL DMV" : lang === "vi" ? "BÀI THI THỬ DMV" : "DMV PRACTICE TEST");
 
   const response = new ImageResponse(
     (

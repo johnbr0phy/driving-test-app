@@ -60,7 +60,7 @@ function ProgressCard({
       completed
         ? "bg-gradient-to-r from-green-50 to-emerald-50 border-green-200 shadow-sm"
         : "bg-white border-gray-100 hover:shadow-md cursor-pointer"
-    } ${attachedBottom ? "rounded-b-none border-b-0 shadow-none hover:shadow-none" : ""}`}>
+    } ${attachedBottom ? "rounded-b-none border-b-0 shadow-sm hover:shadow-sm" : ""}`}>
       <CardContent className="p-4 flex items-center gap-3">
         {/* Completion indicator */}
         <div className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center relative ${
@@ -129,7 +129,7 @@ function ProgressCard({
 // Height-animated collapse for the test drop-downs. Measures its content and
 // transitions a pixel height — grid-template-rows fr transitions are
 // unreliable in Chrome, so this does it the dependable way.
-function Collapse({ open, children }: { open: boolean; children: React.ReactNode }) {
+function Collapse({ open, className, children }: { open: boolean; className?: string; children: React.ReactNode }) {
   const innerRef = useRef<HTMLDivElement>(null);
   const [contentHeight, setContentHeight] = useState(0);
   useEffect(() => {
@@ -146,7 +146,7 @@ function Collapse({ open, children }: { open: boolean; children: React.ReactNode
       inert={!open}
       className={`overflow-hidden transition-[height,opacity] duration-300 ease-in-out ${
         open ? "opacity-100" : "opacity-0"
-      }`}
+      } ${className ?? ""}`}
       style={{ height: open ? contentHeight : 0 }}
     >
       <div ref={innerRef}>{children}</div>
@@ -678,7 +678,7 @@ function DashboardContent() {
                   {/* Drop-down attempt panel, attached flush to the card above.
                       Stays mounted; Collapse animates the unfurl both ways. */}
                   {hasAttempts && !testLocked && attemptPoints.length > 0 && (
-                    <Collapse open={isExpanded}>
+                    <Collapse open={isExpanded} className="rounded-b-xl shadow-sm">
                       <div
                         className={`rounded-b-xl border border-t-0 px-4 pb-4 ${
                           testCompleted

@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     languages: {
       en: `${siteUrl}/practice-tests-by-state`,
       es: `${siteUrl}/es/examenes-practica-por-estado`,
+      vi: `${siteUrl}/vi/thi-thu-dmv-theo-tieu-bang`,
       "x-default": `${siteUrl}/practice-tests-by-state`,
     },
   },

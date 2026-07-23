@@ -2,10 +2,29 @@ import { Question } from "@/types";
 import type { Language } from "@/i18n";
 import questionsDataEn from "@/data/questions.json";
 import questionsDataEs from "@/data/questions_es.json";
+import questionsDataVi from "@/data/questions_vi.json";
+
+// Vietnamese is translated only for universal questions plus states whose DMV
+// offers the real knowledge test in Vietnamese; other questions fall back to
+// English. Built lazily on first Vietnamese request.
+let questionsViMerged: Question[] | null = null;
+function getQuestionsVi(): Question[] {
+  if (!questionsViMerged) {
+    const viById = new Map(
+      (questionsDataVi as Question[]).map((q) => [q.questionId, q])
+    );
+    questionsViMerged = (questionsDataEn as Question[]).map(
+      (q) => viById.get(q.questionId) ?? q
+    );
+  }
+  return questionsViMerged;
+}
 
 // Get questions data for the specified language
 export function getQuestionsData(language: Language = 'en'): Question[] {
-  return (language === 'es' ? questionsDataEs : questionsDataEn) as Question[];
+  if (language === 'es') return questionsDataEs as Question[];
+  if (language === 'vi') return getQuestionsVi();
+  return questionsDataEn as Question[];
 }
 
 // Helper to shuffle array
@@ -23,9 +42,10 @@ function shuffle<T>(array: T[]): T[] {
 function hasPositionDependentAnswers(question: Question): boolean {
   const options = [question.optionA, question.optionB, question.optionC, question.optionD];
 
-  // Pattern to detect references to other answer options (English and Spanish)
-  // Matches: "A and B", "B and C", "Both A and B", "A, B, and C", "A y B", "Todas las anteriores", etc.
-  const positionReferencePattern = /\b(A|B|C|D)\s+(and|or|y|o|,)\s+(A|B|C|D)\b|\bBoth\s+(A|B|C|D)\s+and\s+(A|B|C|D)\b|\bAll of the above\b|\bNone of the above\b|\bTodas las anteriores\b|\bNinguna de las anteriores\b/i;
+  // Pattern to detect references to other answer options (English, Spanish, Vietnamese)
+  // Matches: "A and B", "B and C", "Both A and B", "A, B, and C", "A y B", "Todas las anteriores",
+  // "Cả A và B", "Tất cả các câu trên", etc.
+  const positionReferencePattern = /\b(A|B|C|D)\s+(and|or|y|o|và|hoặc|,)\s+(A|B|C|D)\b|\bBoth\s+(A|B|C|D)\s+and\s+(A|B|C|D)\b|\bAll of the above\b|\bNone of the above\b|\bTodas las anteriores\b|\bNinguna de las anteriores\b|Tất cả các câu trên|Không câu nào đúng/i;
 
   return options.some(option => positionReferencePattern.test(option));
 }

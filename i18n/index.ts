@@ -1,9 +1,10 @@
 import { en, TranslationKeys } from './en';
 import { es } from './es';
+import { vi } from './vi';
 
-export type Language = 'en' | 'es';
+export type Language = 'en' | 'es' | 'vi';
 
-const translations: Record<Language, TranslationKeys> = { en, es };
+const translations: Record<Language, TranslationKeys> = { en, es, vi };
 
 /**
  * Get a nested value from a translation object using a dot-separated key path.
@@ -34,5 +35,5 @@ export function createT(language: Language) {
   };
 }
 
-export { en, es };
+export { en, es, vi };
 export type { TranslationKeys };

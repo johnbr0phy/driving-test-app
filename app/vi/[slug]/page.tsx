@@ -12,10 +12,11 @@ import {
   AlertCircle,
   ExternalLink,
   ChevronRight,
+  Languages,
 } from "lucide-react";
-import { states, getStateBySlug } from "@/data/states";
-import { getStateLandingInfoEs } from "@/data/stateLandingDataEs";
-import { isViState } from "@/data/viStates";
+import { getStateBySlug, getStateByCode } from "@/data/states";
+import { getStateLandingInfoVi } from "@/data/stateLandingDataVi";
+import { VI_STATE_CODES } from "@/data/viStates";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
@@ -28,15 +29,15 @@ interface PageProps {
 }
 
 function parseStateSlug(slug: string): string | null {
-  const match = slug.match(/^(.+)-examen-practica-dmv$/);
+  const match = slug.match(/^(.+)-thi-thu-dmv$/);
   return match ? match[1] : null;
 }
 
 export const dynamicParams = false;
 
 export async function generateStaticParams() {
-  return states.map((state) => ({
-    slug: `${state.slug}-examen-practica-dmv`,
+  return VI_STATE_CODES.map((code) => ({
+    slug: `${getStateByCode(code)!.slug}-thi-thu-dmv`,
   }));
 }
 
@@ -48,13 +49,14 @@ export async function generateMetadata({
   const state = stateSlug ? getStateBySlug(stateSlug) : undefined;
 
   if (!state) {
-    return { title: "Estado No Encontrado" };
+    return { title: "Không Tìm Thấy Tiểu Bang" };
   }
 
-  const title = `Examen de Práctica DMV de ${state.name} 2026 - Gratis | TigerTest`;
-  const description = `Aprueba tu examen de permiso de ${state.name} en el primer intento. ${state.writtenTestQuestions} preguntas de práctica gratuitas basadas en el manual de conducir de ${state.name}. Empieza a practicar ahora.`;
-  const canonicalUrl = `${siteUrl}/es/${state.slug}-examen-practica-dmv`;
+  const title = `Thi Thử DMV ${state.name} 2026 - Miễn Phí | TigerTest`;
+  const description = `Đậu bài thi viết lấy bằng lái xe ở ${state.name} ngay lần đầu. ${state.writtenTestQuestions} câu hỏi trong bài thi thật; luyện với 200 câu hỏi tiếng Việt miễn phí dựa trên cẩm nang lái xe của ${state.name}. Bắt đầu luyện thi ngay.`;
+  const canonicalUrl = `${siteUrl}/vi/${state.slug}-thi-thu-dmv`;
   const enUrl = `${siteUrl}/${state.slug}-dmv-practice-test`;
+  const esUrl = `${siteUrl}/es/${state.slug}-examen-practica-dmv`;
 
   return {
     title,
@@ -63,10 +65,8 @@ export async function generateMetadata({
       canonical: canonicalUrl,
       languages: {
         "en": enUrl,
-        "es": canonicalUrl,
-        ...(isViState(state.code)
-          ? { "vi": `${siteUrl}/vi/${state.slug}-thi-thu-dmv` }
-          : {}),
+        "es": esUrl,
+        "vi": canonicalUrl,
         "x-default": enUrl,
       },
     },
@@ -75,14 +75,14 @@ export async function generateMetadata({
       description,
       type: "website",
       url: canonicalUrl,
-      locale: "es_US",
+      locale: "vi_VN",
       siteName: "TigerTest",
       images: [
         {
           url: "/tiger.png",
           width: 512,
           height: 512,
-          alt: `Examen de Práctica DMV de ${state.name} - TigerTest`,
+          alt: `Thi Thử DMV ${state.name} - TigerTest`,
         },
       ],
     },
@@ -95,7 +95,7 @@ export async function generateMetadata({
   };
 }
 
-export default async function SpanishStateDMVPage({ params }: PageProps) {
+export default async function VietnameseStateDMVPage({ params }: PageProps) {
   const { slug } = await params;
   const stateSlug = parseStateSlug(slug);
   const state = stateSlug ? getStateBySlug(stateSlug) : undefined;
@@ -104,7 +104,7 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
     notFound();
   }
 
-  const landingInfo = getStateLandingInfoEs(state.code);
+  const landingInfo = getStateLandingInfoVi(state.code);
   if (!landingInfo) {
     notFound();
   }
@@ -113,30 +113,37 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
     (state.writtenTestQuestions * state.passingScore) / 100
   );
 
+  // Only link to neighbors that also have a Vietnamese page.
   const neighboringStates = landingInfo.neighboringSlugs
     .map((s) => getStateBySlug(s))
-    .filter(Boolean);
+    .filter(
+      (s) => s && (VI_STATE_CODES as readonly string[]).includes(s.code)
+    );
 
-  // FAQ data in Spanish
+  // FAQ data in Vietnamese
   const faqItems = [
     {
-      question: `¿Cuántas preguntas tiene el examen de permiso de ${state.name}?`,
-      answer: `El examen escrito de conocimientos del ${state.dmvName} de ${state.name} tiene ${state.writtenTestQuestions} preguntas. Necesitas responder correctamente al menos ${rawPassing} (${state.passingScore}%) para aprobar. TigerTest ofrece 200 preguntas de práctica para prepararte a fondo.`,
+      question: `Tôi có thể thi bằng viết ở ${state.name} bằng tiếng Việt không?`,
+      answer: `Có. ${state.dmvName} của ${state.name} cho phép làm bài thi viết (knowledge test) bằng tiếng Việt. Bạn có thể luyện thi bằng tiếng Việt với TigerTest, và khi đi thi thật chỉ cần yêu cầu làm bài bằng tiếng Việt.`,
     },
     {
-      question: `¿Qué calificación necesito para aprobar el examen del DMV de ${state.name}?`,
-      answer: `Necesitas una calificación de ${state.passingScore}% o más para aprobar el examen escrito del ${state.dmvName} de ${state.name}. Eso significa responder correctamente al menos ${rawPassing} de ${state.writtenTestQuestions} preguntas.`,
+      question: `Bài thi lấy giấy phép tập lái ở ${state.name} có bao nhiêu câu hỏi?`,
+      answer: `Bài thi viết của ${state.dmvName} ở ${state.name} có ${state.writtenTestQuestions} câu hỏi. Bạn cần trả lời đúng ít nhất ${rawPassing} câu (${state.passingScore}%) để đậu. TigerTest có 200 câu hỏi luyện thi giúp bạn chuẩn bị kỹ càng.`,
     },
     {
-      question: `¿Puedo tomar el examen de permiso de ${state.name} en línea?`,
+      question: `Tôi cần bao nhiêu điểm để đậu bài thi DMV ở ${state.name}?`,
+      answer: `Bạn cần đạt ${state.passingScore}% trở lên để đậu bài thi viết của ${state.dmvName} ở ${state.name}. Nghĩa là trả lời đúng ít nhất ${rawPassing} trong ${state.writtenTestQuestions} câu hỏi.`,
+    },
+    {
+      question: `Tôi có thể thi bài thi viết ở ${state.name} trực tuyến (online) không?`,
       answer: landingInfo.onlineTestInfo,
     },
     {
-      question: `¿Qué edad debo tener para obtener un permiso de aprendiz en ${state.name}?`,
-      answer: `En ${state.name}, puedes solicitar un permiso de aprendiz a los ${state.minPermitAge} años. Debes aprobar el examen escrito de conocimientos y un examen de visión para recibir tu permiso.`,
+      question: `Bao nhiêu tuổi thì được lấy giấy phép tập lái ở ${state.name}?`,
+      answer: `Ở ${state.name}, bạn có thể xin giấy phép tập lái (learner's permit) từ ${state.minPermitAge}. Bạn phải đậu bài thi viết và bài kiểm tra thị lực để được cấp giấy phép.`,
     },
     {
-      question: `¿Qué pasa si repruebo el examen de permiso de ${state.name}?`,
+      question: `Nếu tôi rớt bài thi ở ${state.name} thì sao?`,
       answer: landingInfo.retakeInfo,
     },
   ];
@@ -161,20 +168,20 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
       {
         "@type": "ListItem",
         position: 1,
-        name: "Inicio",
+        name: "Trang Chủ",
         item: siteUrl,
       },
       {
         "@type": "ListItem",
         position: 2,
-        name: "Exámenes de Práctica por Estado",
-        item: `${siteUrl}/es/examenes-practica-por-estado`,
+        name: "Thi Thử Theo Tiểu Bang",
+        item: `${siteUrl}/vi/thi-thu-dmv-theo-tieu-bang`,
       },
       {
         "@type": "ListItem",
         position: 3,
-        name: `Examen de Práctica DMV de ${state.name}`,
-        item: `${siteUrl}/es/${state.slug}-examen-practica-dmv`,
+        name: `Thi Thử DMV ${state.name}`,
+        item: `${siteUrl}/vi/${state.slug}-thi-thu-dmv`,
       },
     ],
   };
@@ -183,19 +190,19 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
   const lastModifiedIso = new Date().toISOString();
 
   // JSON-LD: WebApplication / LearningResource — mirrors the English page so
-  // Spanish results are equally citable in AI answers.
+  // Vietnamese results are equally citable in AI answers.
   const courseJsonLd = {
     "@context": "https://schema.org",
     "@type": ["WebApplication", "LearningResource"],
-    name: `Examen de Práctica DMV de ${state.name} - TigerTest`,
-    description: `Examen de práctica gratuito del DMV de ${state.name} con 200 preguntas basadas en el manual oficial de conducir del ${state.dmvName} de ${state.name}.`,
-    url: `${siteUrl}/es/${state.slug}-examen-practica-dmv`,
-    inLanguage: "es-US",
+    name: `Thi Thử DMV ${state.name} - TigerTest`,
+    description: `Bài thi thử DMV ${state.name} miễn phí với 200 câu hỏi tiếng Việt dựa trên cẩm nang lái xe chính thức của ${state.dmvName} ${state.name}.`,
+    url: `${siteUrl}/vi/${state.slug}-thi-thu-dmv`,
+    inLanguage: "vi",
     applicationCategory: "EducationalApplication",
     operatingSystem: "Any",
     educationalLevel: "Beginner",
     learningResourceType: "Practice test",
-    teaches: `Material del examen escrito de conocimientos del DMV de ${state.name}`,
+    teaches: `Nội dung bài thi viết của DMV ${state.name}`,
     datePublished: STATE_PAGE_PUBLISHED_AT,
     dateModified: lastModifiedIso,
     author: {
@@ -216,12 +223,12 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
     },
   };
 
-  // JSON-LD: HowTo — targets "cómo aprobar el examen del DMV de [estado]" queries.
+  // JSON-LD: HowTo — targets "cách đậu bài thi DMV [tiểu bang]" queries.
   const howToJsonLd = {
     "@context": "https://schema.org",
     "@type": "HowTo",
-    name: `Cómo Aprobar el Examen de Permiso del DMV de ${state.name}`,
-    description: `Guía paso a paso para aprobar el examen escrito de conocimientos del ${state.dmvName} de ${state.name} en tu primer intento.`,
+    name: `Cách Đậu Bài Thi Viết DMV ${state.name}`,
+    description: `Hướng dẫn từng bước để đậu bài thi viết của ${state.dmvName} ${state.name} ngay lần thi đầu tiên.`,
     totalTime: "PT2H",
     estimatedCost: {
       "@type": "MonetaryAmount",
@@ -230,67 +237,67 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
     },
     supply: [
       { "@type": "HowToSupply", name: `${landingInfo.handbookName}` },
-      { "@type": "HowToSupply", name: "Preguntas de práctica de TigerTest" },
+      { "@type": "HowToSupply", name: "Câu hỏi luyện thi TigerTest" },
     ],
     step: [
       {
         "@type": "HowToStep",
         position: 1,
-        name: "Lee el manual oficial del conductor",
-        text: `Descarga y lee el ${landingInfo.handbookName}. Cada pregunta del examen de permiso de ${state.name} proviene de este manual.`,
+        name: "Đọc cẩm nang lái xe chính thức",
+        text: `Tải và đọc ${landingInfo.handbookName}. Mọi câu hỏi trong bài thi ở ${state.name} đều lấy từ cẩm nang này.`,
         url: landingInfo.handbookUrl,
       },
       {
         "@type": "HowToStep",
         position: 2,
-        name: "Practica en el modo de entrenamiento",
-        text: `Repasa las 200 preguntas de práctica específicas de ${state.name} de TigerTest una por una, con retroalimentación instantánea y explicaciones para cada respuesta.`,
-        url: `${siteUrl}/es/${state.slug}-examen-practica-dmv`,
+        name: "Luyện tập ở chế độ ôn luyện",
+        text: `Ôn 200 câu hỏi luyện thi dành riêng cho ${state.name} của TigerTest từng câu một, với phản hồi ngay lập tức và giải thích cho từng đáp án.`,
+        url: `${siteUrl}/vi/${state.slug}-thi-thu-dmv`,
       },
       {
         "@type": "HowToStep",
         position: 3,
-        name: "Toma un examen de práctica completo y cronometrado",
-        text: `Simula el examen real con un examen de práctica de 50 preguntas. El examen del ${state.dmvName} de ${state.name} requiere ${state.passingScore}% (${rawPassing} de ${state.writtenTestQuestions}) para aprobar.`,
+        name: "Làm bài thi thử đầy đủ có tính giờ",
+        text: `Mô phỏng bài thi thật với bài thi thử 50 câu. Bài thi của ${state.dmvName} ${state.name} yêu cầu ${state.passingScore}% (${rawPassing} trong ${state.writtenTestQuestions} câu) để đậu.`,
       },
       {
         "@type": "HowToStep",
         position: 4,
-        name: "Repasa cada respuesta incorrecta",
-        text: "Vuelve a leer la explicación de cualquier pregunta que falles. TigerTest pone en cola las preguntas falladas para repetición espaciada, para que las estudies con más frecuencia.",
+        name: "Xem lại từng câu trả lời sai",
+        text: "Đọc lại phần giải thích của những câu bạn làm sai. TigerTest tự động đưa các câu sai vào hàng chờ ôn tập ngắt quãng để bạn gặp lại chúng thường xuyên hơn.",
       },
       {
         "@type": "HowToStep",
         position: 5,
-        name: `Agenda tu cita en el ${state.dmvName} de ${state.name}`,
-        text: `Cuando estés obteniendo constantemente más del ${state.passingScore}% en la práctica, reserva tu examen presencial del ${state.dmvName}. Lleva la identificación requerida, comprobante de domicilio y la tarifa de solicitud.`,
+        name: `Đặt hẹn với ${state.dmvName} ${state.name}`,
+        text: `Khi bạn thường xuyên đạt trên ${state.passingScore}% lúc luyện tập, hãy đặt hẹn thi tại ${state.dmvName}. Nhớ mang giấy tờ tùy thân, bằng chứng địa chỉ cư trú và lệ phí nộp đơn.`,
       },
     ],
   };
 
   const testimonials = [
     {
-      quote: "Usé esto para estudiar. ¡Aprobé hoy! Gracias :)",
+      quote: "Tôi dùng trang này để ôn. Hôm nay đậu rồi! Cảm ơn :)",
       author: "Naive_Usual1910",
     },
     {
-      quote: "aprobé en siete minutos",
+      quote: "đậu trong bảy phút",
       author: "vivacious-vi",
     },
     {
-      quote: "realmente me ayudó a prepararme, y aprobé mi examen hoy",
+      quote: "thật sự giúp tôi chuẩn bị tốt, và hôm nay tôi đã đậu",
       author: "Big-Burrito-8765",
     },
     {
-      quote: "me sentí seguro después de estudiar solo el día anterior",
+      quote: "chỉ ôn một ngày trước khi thi mà vẫn thấy tự tin",
       author: "JayjayX12",
     },
     {
-      quote: "aprobé en 3 minutos",
+      quote: "đậu trong 3 phút",
       author: "Curdled_Cave",
     },
     {
-      quote: "ayudó mucho",
+      quote: "giúp ích rất nhiều",
       author: "WorthEducational523",
     },
   ];
@@ -322,7 +329,7 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
           <ol className="flex items-center gap-1 flex-wrap">
             <li>
               <Link href="/" className="hover:text-brand">
-                Inicio
+                Trang Chủ
               </Link>
             </li>
             <li>
@@ -330,10 +337,10 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
             </li>
             <li>
               <Link
-                href="/es/examenes-practica-por-estado"
+                href="/vi/thi-thu-dmv-theo-tieu-bang"
                 className="hover:text-brand"
               >
-                Exámenes por Estado
+                Thi Thử Theo Tiểu Bang
               </Link>
             </li>
             <li>
@@ -346,22 +353,42 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
         {/* Hero */}
         <div className="text-center mb-12">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Examen de Práctica DMV Gratis de {state.name} 2026
+            Thi Thử DMV {state.name} Miễn Phí 2026
           </h1>
           <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Aprueba tu examen de permiso del {state.dmvName} de {state.name} en
-            el primer intento. Practica con 200 preguntas específicas de{" "}
-            {state.name} basadas en el manual oficial de conducir.
+            Đậu bài thi viết của {state.dmvName} {state.name} ngay lần thi đầu
+            tiên. Luyện với 200 câu hỏi tiếng Việt dành riêng cho {state.name},
+            dựa trên cẩm nang lái xe chính thức.
           </p>
           <Link href={`/signup?state=${state.code}`}>
             <Button
               size="lg"
               className="text-lg px-8 py-6 bg-gray-900 text-white hover:bg-gray-800 font-bold rounded-xl"
             >
-              Empezar a Practicar Gratis
+              Bắt Đầu Luyện Thi Miễn Phí
             </Button>
           </Link>
         </div>
+
+        {/* Vietnamese-language availability callout */}
+        <Card className="mb-12 border-green-200 bg-green-50">
+          <CardContent className="p-6 md:p-8">
+            <div className="flex items-start gap-4">
+              <Languages className="h-8 w-8 text-green-600 flex-shrink-0 mt-1" />
+              <div>
+                <h2 className="text-xl font-bold text-gray-900 mb-2">
+                  Bài thi thật ở {state.name} có tiếng Việt
+                </h2>
+                <p className="text-gray-700">
+                  {state.dmvName} của {state.name} cho phép làm bài thi viết
+                  (knowledge test) <strong>bằng tiếng Việt</strong>. Bạn có thể
+                  ôn luyện bằng tiếng Việt với TigerTest rồi thi thật bằng
+                  tiếng Việt — không cần lo về rào cản ngôn ngữ.
+                </p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
 
         {/* State Stats Cards */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
@@ -371,7 +398,7 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
               <div className="text-2xl md:text-3xl font-bold text-gray-900 mb-1">
                 {state.writtenTestQuestions}
               </div>
-              <div className="text-sm text-gray-600">Preguntas en el Examen</div>
+              <div className="text-sm text-gray-600">Câu Hỏi Trong Bài Thi</div>
             </CardContent>
           </Card>
 
@@ -381,7 +408,7 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
               <div className="text-2xl md:text-3xl font-bold text-gray-900 mb-1">
                 {state.passingScore}%
               </div>
-              <div className="text-sm text-gray-600">Calificación para Aprobar</div>
+              <div className="text-sm text-gray-600">Điểm Để Đậu</div>
             </CardContent>
           </Card>
 
@@ -391,7 +418,7 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
               <div className="text-2xl md:text-3xl font-bold text-gray-900 mb-1">
                 {state.minPermitAge}
               </div>
-              <div className="text-sm text-gray-600">Edad Mín. para Permiso</div>
+              <div className="text-sm text-gray-600">Tuổi Tối Thiểu Lấy Permit</div>
             </CardContent>
           </Card>
 
@@ -401,7 +428,7 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
               <div className="text-2xl md:text-3xl font-bold text-gray-900 mb-1">
                 {rawPassing}/{state.writtenTestQuestions}
               </div>
-              <div className="text-sm text-gray-600">Correctas para Aprobar</div>
+              <div className="text-sm text-gray-600">Câu Đúng Để Đậu</div>
             </CardContent>
           </Card>
         </div>
@@ -410,54 +437,49 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
         <Card className="mb-12">
           <CardContent className="p-6 md:p-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-6">
-              Examen Escrito del {state.dmvName} de {state.name}: Lo Que
-              Necesitas Saber
+              Bài Thi Viết Của {state.dmvName} {state.name}: Những Điều Cần Biết
             </h2>
 
             <div className="space-y-6">
               <div>
                 <h3 className="font-semibold text-lg text-gray-900 mb-2">
-                  Formato del Examen
+                  Hình Thức Bài Thi
                 </h3>
                 <p className="text-gray-600">
-                  El examen escrito de conocimientos del {state.dmvName} de{" "}
-                  {state.name} consiste en{" "}
+                  Bài thi viết của {state.dmvName} {state.name} gồm{" "}
                   <strong>
-                    {state.writtenTestQuestions} preguntas de opción múltiple
+                    {state.writtenTestQuestions} câu hỏi trắc nghiệm
                   </strong>{" "}
-                  que cubren leyes de tránsito, señales viales, prácticas de
-                  conducción segura y regulaciones específicas de {state.name}.
-                  Debes obtener al menos{" "}
+                  về luật giao thông, biển báo, cách lái xe an toàn và các quy
+                  định riêng của {state.name}. Bạn phải đạt ít nhất{" "}
                   <strong>
-                    {state.passingScore}% ({rawPassing} respuestas correctas)
+                    {state.passingScore}% ({rawPassing} câu đúng)
                   </strong>{" "}
-                  para aprobar.
+                  để đậu.
                 </p>
               </div>
 
               <div>
                 <h3 className="font-semibold text-lg text-gray-900 mb-2">
-                  Edad Mínima y Elegibilidad
+                  Tuổi Tối Thiểu Và Điều Kiện
                 </h3>
                 <p className="text-gray-600">
-                  Debes tener al menos{" "}
-                  <strong>{state.minPermitAge} años</strong> para solicitar un
-                  permiso de aprendiz en {state.name}. Necesitarás aprobar el
-                  examen escrito de conocimientos y un examen de visión antes de
-                  que se emita tu permiso.
+                  Bạn phải từ <strong>{state.minPermitAge}</strong> trở lên để
+                  xin giấy phép tập lái ở {state.name}. Bạn cần đậu bài thi
+                  viết và bài kiểm tra thị lực trước khi được cấp giấy phép.
                 </p>
               </div>
 
               <div>
                 <h3 className="font-semibold text-lg text-gray-900 mb-2">
-                  Si Repruebas
+                  Nếu Bạn Rớt
                 </h3>
                 <p className="text-gray-600">{landingInfo.retakeInfo}</p>
               </div>
 
               <div>
                 <h3 className="font-semibold text-lg text-gray-900 mb-2">
-                  Reglas Específicas de {state.name}
+                  Quy Định Riêng Của {state.name}
                 </h3>
                 <ul className="space-y-2">
                   {landingInfo.notableRules.map((rule, index) => (
@@ -471,13 +493,12 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
 
               <div>
                 <h3 className="font-semibold text-lg text-gray-900 mb-2">
-                  Manual Oficial del Conductor
+                  Cẩm Nang Lái Xe Chính Thức
                 </h3>
                 <p className="text-gray-600 mb-3">
-                  Estudia el{" "}
-                  <strong>{landingInfo.handbookName}</strong> para prepararte
-                  para el examen escrito. Las preguntas de práctica de TigerTest
-                  están basadas en el material de este manual.
+                  Học <strong>{landingInfo.handbookName}</strong> để chuẩn bị
+                  cho bài thi viết. Các câu hỏi luyện thi của TigerTest đều dựa
+                  trên nội dung cẩm nang này.
                 </p>
                 <a
                   href={landingInfo.handbookUrl}
@@ -486,7 +507,7 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
                   className="inline-flex items-center gap-2 text-brand hover:text-brand-dark font-medium"
                 >
                   <BookOpen className="h-4 w-4" />
-                  Descargar el {landingInfo.handbookName}
+                  Tải {landingInfo.handbookName}
                   <ExternalLink className="h-3 w-3" />
                 </a>
               </div>
@@ -498,44 +519,43 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
         <Card className="mb-12">
           <CardContent className="p-6 md:p-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-6">
-              Qué Incluye Nuestro Examen de Práctica de {state.name}
+              Bài Thi Thử {state.name} Của Chúng Tôi Có Gì
             </h2>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <CheckCircle2 className="h-6 w-6 text-green-600 flex-shrink-0 mt-0.5" />
                 <span className="text-gray-700">
-                  <strong>200 preguntas de práctica</strong> que cubren todos los
-                  temas del examen escrito del {state.dmvName}, incluyendo leyes
-                  específicas de {state.name}
+                  <strong>200 câu hỏi luyện thi</strong> bao quát mọi chủ đề
+                  trong bài thi viết của {state.dmvName}, kể cả luật riêng của{" "}
+                  {state.name}
                 </span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle2 className="h-6 w-6 text-green-600 flex-shrink-0 mt-0.5" />
                 <span className="text-gray-700">
-                  <strong>4 exámenes de práctica completos</strong> con 50
-                  preguntas cada uno, simulando la experiencia real del examen del{" "}
-                  {state.dmvName}
+                  <strong>4 bài thi thử đầy đủ</strong>, mỗi bài 50 câu, mô
+                  phỏng trải nghiệm thi thật tại {state.dmvName}
                 </span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle2 className="h-6 w-6 text-green-600 flex-shrink-0 mt-0.5" />
                 <span className="text-gray-700">
-                  <strong>Modo de entrenamiento</strong> con retroalimentación
-                  instantánea y explicaciones detalladas para cada respuesta
+                  <strong>Chế độ ôn luyện</strong> với phản hồi ngay lập tức và
+                  giải thích chi tiết cho từng đáp án
                 </span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle2 className="h-6 w-6 text-green-600 flex-shrink-0 mt-0.5" />
                 <span className="text-gray-700">
-                  <strong>Seguimiento de progreso</strong> para ver cómo aumenta
-                  tu probabilidad de aprobar mientras estudias
+                  <strong>Theo dõi tiến độ</strong> để thấy khả năng đậu của bạn
+                  tăng dần trong lúc ôn
                 </span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle2 className="h-6 w-6 text-green-600 flex-shrink-0 mt-0.5" />
                 <span className="text-gray-700">
-                  <strong>Compatible con móviles</strong> — estudia en tu
-                  teléfono en la cama, en el sofá o donde sea
+                  <strong>Dùng tốt trên điện thoại</strong> — học trên giường,
+                  trên ghế sofa hay bất cứ đâu
                 </span>
               </li>
             </ul>
@@ -545,18 +565,18 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
         {/* CTA Banner */}
         <div className="text-center bg-gradient-to-br from-brand to-brand-hover rounded-2xl p-8 md:p-12 mb-12">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
-            ¿Listo para Aprobar tu Examen del DMV de {state.name}?
+            Sẵn Sàng Đậu Bài Thi DMV {state.name}?
           </h2>
           <p className="text-brand-light text-lg mb-6">
-            Únete a miles de conductores de {state.name} que aprobaron en su
-            primer intento con TigerTest
+            Hãy cùng hàng ngàn người lái xe ở {state.name} đã đậu ngay lần đầu
+            với TigerTest
           </p>
           <Link href={`/signup?state=${state.code}`}>
             <Button
               size="lg"
               className="text-lg px-8 py-6 bg-white text-brand-dark hover:bg-gray-100 font-bold rounded-xl"
             >
-              Empezar a Practicar Ahora — Es Gratis
+              Bắt Đầu Luyện Thi Ngay — Miễn Phí
             </Button>
           </Link>
         </div>
@@ -564,7 +584,7 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
         {/* Testimonials */}
         <div className="mb-12">
           <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
-            Lo Que Dicen los Estudiantes
+            Học Viên Nói Gì
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             {testimonials.map((t, i) => (
@@ -584,7 +604,7 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
         {/* FAQ Section */}
         <div className="mb-12">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">
-            Preguntas Frecuentes Sobre el Examen del DMV de {state.name}
+            Câu Hỏi Thường Gặp Về Bài Thi DMV {state.name}
           </h2>
           <div className="space-y-6">
             {faqItems.map((item, i) => (
@@ -602,7 +622,7 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
         {neighboringStates.length > 0 && (
           <div className="mb-12">
             <h2 className="text-2xl font-bold text-gray-900 mb-6">
-              Exámenes de Práctica de Estados Cercanos
+              Bài Thi Thử Của Các Tiểu Bang Lân Cận
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
               {neighboringStates.slice(0, 5).map(
@@ -610,7 +630,7 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
                   neighbor && (
                     <Link
                       key={neighbor.slug}
-                      href={`/es/${neighbor.slug}-examen-practica-dmv`}
+                      href={`/vi/${neighbor.slug}-thi-thu-dmv`}
                       className="flex items-center justify-between bg-gray-50 border border-gray-200 rounded-xl p-4 hover:border-brand-border hover:bg-brand-light transition-colors"
                     >
                       <span className="font-medium text-gray-900">
@@ -627,19 +647,18 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
         {/* Final CTA */}
         <div className="text-center py-8">
           <p className="text-gray-600 mb-4">
-            ¿Listo para empezar a estudiar para tu examen de permiso de{" "}
-            {state.name}?
+            Sẵn sàng bắt đầu ôn cho bài thi lấy giấy phép ở {state.name}?
           </p>
           <Link href={`/signup?state=${state.code}`}>
             <Button
               size="lg"
               className="text-lg px-8 py-6 bg-gray-900 text-white hover:bg-gray-800 font-bold rounded-xl"
             >
-              Empezar a Practicar Gratis
+              Bắt Đầu Luyện Thi Miễn Phí
             </Button>
           </Link>
           <p className="text-sm text-gray-500 mt-3">
-            No se requiere cuenta. Gratis para empezar.
+            Không cần tài khoản. Bắt đầu miễn phí.
           </p>
         </div>
       </div>

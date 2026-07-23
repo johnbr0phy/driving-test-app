@@ -1,5 +1,6 @@
 import { MetadataRoute } from "next";
-import { states } from "@/data/states";
+import { states, getStateByCode } from "@/data/states";
+import { VI_STATE_CODES } from "@/data/viStates";
 
 // Fetch active school slugs for sitemap entries (best-effort — returns [] on error)
 async function getActiveSchoolSlugs(): Promise<string[]> {
@@ -66,6 +67,25 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     },
   ];
 
+  // Vietnamese state DMV practice test landing pages (states offering the
+  // real knowledge test in Vietnamese)
+  const stateDmvPagesVi: MetadataRoute.Sitemap = VI_STATE_CODES.map((code) => ({
+    url: `${siteUrl}/vi/${getStateByCode(code)!.slug}-thi-thu-dmv`,
+    lastModified: now,
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
+  // Vietnamese index page
+  const vietnameseIndexPage: MetadataRoute.Sitemap = [
+    {
+      url: `${siteUrl}/vi/thi-thu-dmv-theo-tieu-bang`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
+    },
+  ];
+
   // CDL pages
   const cdlPages: MetadataRoute.Sitemap = [
     {
@@ -91,6 +111,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...stateDmvPages,
     ...stateDmvPagesEs,
     ...spanishIndexPage,
+    ...stateDmvPagesVi,
+    ...vietnameseIndexPage,
     ...schoolPages,
   ];
 }

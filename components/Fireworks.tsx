@@ -25,6 +25,11 @@ interface Firework {
 interface FireworksProps {
   duration?: number;
   onComplete?: () => void;
+  // Never stops launching; duration/onComplete are ignored. Pair with a
+  // custom className to run behind the UI (e.g. Super Amazing Mode).
+  continuous?: boolean;
+  // Overrides the default overlay positioning/stacking classes.
+  className?: string;
   // "gentle" scales the show down for a still-celebratory but lower-key
   // moment (e.g. a failed test that we want to acknowledge without
   // overselling it as a win).
@@ -42,7 +47,7 @@ const COLORS = [
   "#00bcd4", // cyan
 ];
 
-export function Fireworks({ duration = 3000, onComplete, intensity = "full" }: FireworksProps) {
+export function Fireworks({ duration = 3000, onComplete, intensity = "full", continuous = false, className }: FireworksProps) {
   const gentle = intensity === "gentle";
   const initialBurstCount = gentle ? 2 : 5;
   const launchIntervalMs = gentle ? 650 : 300;
@@ -110,7 +115,7 @@ export function Fireworks({ duration = 3000, onComplete, intensity = "full" }: F
 
     // Continue launching fireworks
     const launchInterval = setInterval(() => {
-      if (Date.now() - startTimeRef.current < duration - 500) {
+      if (continuous || Date.now() - startTimeRef.current < duration - 500) {
         launchFirework(canvas);
         if (Math.random() > burstChanceThreshold) {
           setTimeout(() => launchFirework(canvas), 100);
@@ -175,7 +180,7 @@ export function Fireworks({ duration = 3000, onComplete, intensity = "full" }: F
 
       // Check if animation should end
       const elapsed = Date.now() - startTimeRef.current;
-      if (elapsed >= duration && particlesRef.current.length === 0) {
+      if (!continuous && elapsed >= duration && particlesRef.current.length === 0) {
         cancelAnimationFrame(animationRef.current!);
         clearInterval(launchInterval);
         onComplete?.();
@@ -194,12 +199,12 @@ export function Fireworks({ duration = 3000, onComplete, intensity = "full" }: F
         cancelAnimationFrame(animationRef.current);
       }
     };
-  }, [duration, onComplete, createParticles, launchFirework, initialBurstCount, launchIntervalMs, burstChanceThreshold]);
+  }, [duration, onComplete, createParticles, launchFirework, initialBurstCount, launchIntervalMs, burstChanceThreshold, continuous]);
 
   return (
     <canvas
       ref={canvasRef}
-      className="fixed inset-0 z-[60] pointer-events-none"
+      className={className ?? "fixed inset-0 z-[60] pointer-events-none"}
       style={{ background: "transparent" }}
     />
   );

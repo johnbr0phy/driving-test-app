@@ -103,7 +103,7 @@ export function ResultsHeroDebrief({
         <Fireworks duration={3000} intensity="full" onComplete={() => setShowFireworks(false)} />
       )}
 
-      <div className="container mx-auto px-4 pt-8 pb-4 max-w-lg md:max-w-2xl lg:max-w-4xl space-y-3">
+      <div className="relative container mx-auto px-4 pt-8 pb-4 max-w-lg md:max-w-2xl lg:max-w-4xl space-y-3">
         <div className="rounded-xl bg-white border border-gray-100 px-4 pt-4 pb-5 shadow-sm">
           {isBaseline ? (
             <>

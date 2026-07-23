@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { PaywallModal } from "@/components/PaywallModal";
+import { SUPER_AMAZING_EVENT, SUPER_AMAZING_KEY } from "@/components/SuperAmazingFireworks";
 import { Card, CardContent } from "@/components/ui/card";
 import { Zap, ChevronRight, CheckCircle, Check, Lock } from "lucide-react";
 import Link from "next/link";
@@ -63,13 +64,13 @@ function ProgressCard({
       <CardContent className="p-4 flex items-center gap-3">
         {/* Completion indicator */}
         <div className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center relative ${
-          completed ? "bg-green-500 text-white" : "bg-gray-100 text-gray-300"
+          completed ? "bg-green-500 text-white" : "bg-white border-2 border-gray-300 text-gray-600"
         }`}>
           {completed ? (
             <>
               {stepNumber ? (
                 <>
-                  <span className="text-xs font-bold text-white">{stepNumber}</span>
+                  <span className="text-sm font-bold text-white">{stepNumber}</span>
                   <span className="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-white border border-green-200 flex items-center justify-center leading-none">
                     <Check className="w-2.5 h-2.5 text-green-700" strokeWidth={3} />
                   </span>
@@ -79,7 +80,7 @@ function ProgressCard({
               )}
             </>
           ) : stepNumber ? (
-            <span className="text-xs font-bold text-gray-400">{stepNumber}</span>
+            <span className="text-sm font-bold text-gray-600">{stepNumber}</span>
           ) : (
             <div className="w-2 h-2 rounded-full bg-gray-300" />
           )}
@@ -87,7 +88,7 @@ function ProgressCard({
 
         {/* Content */}
         <div className="flex-1 min-w-0">
-          <h3 className={`font-semibold text-sm flex items-center gap-1.5 ${completed ? "text-green-900" : "text-gray-900"}`}>
+          <h3 className={`font-medium text-sm flex items-center gap-1.5 ${completed ? "text-green-800" : "text-gray-700"}`}>
             {title}
             {isPremiumLocked && <Lock className="w-3.5 h-3.5 text-gray-400 flex-shrink-0" />}
           </h3>
@@ -196,6 +197,20 @@ function DashboardContent() {
   const missSummary = computeMissSummary(hydrated ? completedTests : [], selectedState);
   // Which test card's attempt panel is dropped down
   const [expandedTest, setExpandedTest] = useState<number | null>(null);
+
+  // Super Amazing Mode — constant site-wide fireworks, rendered by
+  // SuperAmazingFireworks in the root layout; this card owns the flag.
+  // Unlocks only at 8/8 complete (free and premium alike earn it the same way).
+  const [superAmazing, setSuperAmazing] = useState(false);
+  useEffect(() => {
+    setSuperAmazing(localStorage.getItem(SUPER_AMAZING_KEY) === "1");
+  }, []);
+  const toggleSuperAmazing = () =>
+    setSuperAmazing((v) => {
+      localStorage.setItem(SUPER_AMAZING_KEY, v ? "0" : "1");
+      window.dispatchEvent(new Event(SUPER_AMAZING_EVENT));
+      return !v;
+    });
 
   // Hero subtitle variants (5 per progress state, picked randomly on mount)
   const heroSubVariants: string[][] = [
@@ -392,6 +407,17 @@ function DashboardContent() {
   const totalSteps = 8;
   const allComplete = completedSteps === totalSteps;
 
+  // Enforce the Super Amazing Mode gate: if progress no longer qualifies
+  // (e.g. state switch reset the cards), retire the flag.
+  useEffect(() => {
+    if (!hydrated || allComplete) return;
+    if (localStorage.getItem(SUPER_AMAZING_KEY) === "1") {
+      localStorage.setItem(SUPER_AMAZING_KEY, "0");
+      setSuperAmazing(false);
+      window.dispatchEvent(new Event(SUPER_AMAZING_EVENT));
+    }
+  }, [hydrated, allComplete]);
+
   // Training-heavy nudge: 2+ training sets done, no completed tests, <10 test questions answered
   const trainingSetsCompleted = hydrated ? [1, 2, 3, 4].filter(trainingSetComplete).length : 0;
   const anyTestCompleted = hydrated ? [1, 2, 3, 4].some((id) => !!getTestAttemptStats(id)) : false;
@@ -420,7 +446,8 @@ function DashboardContent() {
   };
 
   return (
-    <div className="flex-1 bg-gray-50 relative">
+    <div className="flex-1 bg-gray-50">
+      <div className="relative">
       <div className="absolute inset-x-0 top-0 h-96 bg-gradient-to-b from-brand-light to-transparent pointer-events-none" />
       <div className="relative container mx-auto px-4 sm:px-6 py-6 pb-10 max-w-lg md:max-w-2xl lg:max-w-4xl">
 
@@ -750,45 +777,46 @@ function DashboardContent() {
           })}
         </div>
 
-        {/* Bottom banner - thank-you for premium */}
-        {isPremium && (
-          <div className="rounded-xl bg-white border border-gray-100 p-4">
-            <div className="flex items-center gap-3 mb-3">
-              <Image
-                src="/tiger_face_01.png"
-                alt="Tiger with crown"
-                width={36}
-                height={36}
-                className="w-9 h-9 flex-shrink-0"
+        {/* Super Amazing Mode — earned at 8/8, free and premium alike */}
+        <div className="mb-6">
+          <p className="text-[11px] font-bold uppercase tracking-widest text-gray-400 mb-2">
+            {allComplete ? t("dashboard.samUnlockedLabel") : t("dashboard.samUnlockLabel")}
+          </p>
+          <div className="rounded-xl bg-white border border-gray-100 p-4 flex items-center gap-3">
+            <div className="flex-1 min-w-0">
+              <h3
+                className={`font-semibold text-sm flex items-center gap-1.5 ${
+                  allComplete ? "text-gray-900" : "text-gray-400"
+                }`}
+              >
+                {t("dashboard.samTitle")}
+                {!allComplete && <Lock className="w-3.5 h-3.5 text-gray-400 flex-shrink-0" />}
+              </h3>
+            </div>
+            <button
+              role="switch"
+              aria-checked={superAmazing}
+              aria-label={t("dashboard.samTitle")}
+              disabled={!allComplete}
+              onClick={toggleSuperAmazing}
+              className={`relative w-11 h-6 rounded-full flex-shrink-0 transition-colors ${
+                superAmazing && allComplete
+                  ? "bg-brand"
+                  : allComplete
+                    ? "bg-gray-200"
+                    : "bg-gray-100 cursor-not-allowed"
+              }`}
+            >
+              <span
+                className={`absolute top-0.5 left-0.5 w-5 h-5 rounded-full bg-white shadow transition-transform ${
+                  superAmazing && allComplete ? "translate-x-5" : ""
+                }`}
               />
-              <div className="flex-1">
-                <p className="text-sm font-semibold text-gray-900">
-                  {t("dashboard.premiumBottomTitle")}
-                </p>
-                <p className="text-xs text-gray-500 mt-0.5">
-                  {t("dashboard.premiumBottomDesc")}{" "}
-                  <a href="https://www.johnbrophy.net/contact" className="underline font-medium hover:text-gray-700">
-                    {t("dashboard.premiumBottomContact")}
-                  </a>.
-                </p>
-              </div>
-            </div>
-            <div className="flex gap-2">
-              <Link
-                href="/stats"
-                className="flex-1 text-center rounded-lg bg-gray-50 border border-gray-200 px-3 py-2.5 text-sm font-medium text-gray-700 hover:bg-gray-100 transition-colors"
-              >
-                {t("dashboard.premiumBottomYourStats")}
-              </Link>
-              <Link
-                href="/stats?tab=community"
-                className="flex-1 text-center rounded-lg bg-gray-50 border border-gray-200 px-3 py-2.5 text-sm font-medium text-gray-700 hover:bg-gray-100 transition-colors"
-              >
-                {t("dashboard.premiumBottomCommonMistakes")}
-              </Link>
-            </div>
+            </button>
           </div>
-        )}
+        </div>
+
+      </div>
       </div>
     </div>
   );

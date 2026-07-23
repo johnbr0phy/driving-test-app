@@ -115,7 +115,7 @@ export function ResultsDebriefBody({ results, upgrade }: Props) {
   );
 
   return (
-    <div className="container mx-auto px-4 pb-10 max-w-lg md:max-w-2xl lg:max-w-4xl space-y-6">
+    <div className="relative container mx-auto px-4 pb-10 max-w-lg md:max-w-2xl lg:max-w-4xl space-y-6">
       <PaywallModal
         open={upgrade.paywallOpen}
         onOpenChange={upgrade.onOpenChange}

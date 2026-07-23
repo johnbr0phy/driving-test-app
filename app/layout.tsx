@@ -4,6 +4,7 @@ import "./globals.css";
 import { HeaderSwitch } from "@/components/HeaderSwitch";
 import { Footer } from "@/components/Footer";
 import { Providers } from "@/components/Providers";
+import { SuperAmazingFireworks } from "@/components/SuperAmazingFireworks";
 import { NativeAppShell } from "@/components/NativeAppShell";
 
 // viewportFit: "cover" lets the page extend behind the notch/home
@@ -94,6 +95,7 @@ export default function RootLayout({
       <body className="antialiased flex flex-col min-h-dvh">
         <NativeAppShell />
         <Providers>
+          <SuperAmazingFireworks />
           <HeaderSwitch />
           <main className="flex-1 flex flex-col">{children}</main>
           <Footer />

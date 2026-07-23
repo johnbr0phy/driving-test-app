@@ -302,7 +302,7 @@ function TrainingPageContent() {
         <div className="fixed inset-0 z-50 overflow-y-auto animate-in fade-in duration-300">
           <div className="min-h-screen bg-gradient-to-b from-gray-950 to-green-950">
             {/* Back button */}
-            <div className="max-w-6xl mx-auto px-4 pt-4">
+            <div className="relative max-w-6xl mx-auto px-4 pt-4">
               <Link href="/dashboard">
                 <Button variant="ghost" className="text-gray-400 hover:text-white hover:bg-white/10 -ml-2">
                   <ArrowLeft className="h-4 w-4 mr-2" />
@@ -311,7 +311,7 @@ function TrainingPageContent() {
               </Link>
             </div>
 
-            <div className="text-center px-6 pt-4 pb-10 max-w-lg mx-auto">
+            <div className="relative text-center px-6 pt-4 pb-10 max-w-lg mx-auto">
               {/* Branding header */}
               <div className="mb-6">
                 <div className="text-gray-300 text-lg font-bold tracking-widest">tigertest.io</div>
@@ -455,7 +455,7 @@ function TrainingPageContent() {
           )
         }
       />
-      <div className="container mx-auto px-4 py-4 max-w-lg md:max-w-2xl lg:max-w-4xl">
+      <div className="relative container mx-auto px-4 py-4 max-w-lg md:max-w-2xl lg:max-w-4xl">
 
         {/* Question Card */}
         {accessLocked ? null : currentQuestion ? (

@@ -16,7 +16,7 @@ interface TestPageHeaderProps {
 export function TestPageHeader({ backHref, right, sticky }: TestPageHeaderProps) {
   const { t } = useTranslation();
   return (
-    <header className={`border-b bg-white ${sticky ? "sticky top-0 z-40" : ""}`}>
+    <header className={`relative border-b bg-white ${sticky ? "sticky top-0 z-40" : ""}`}>
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <Link href={backHref} className="-ml-4">
           <Button variant="ghost">

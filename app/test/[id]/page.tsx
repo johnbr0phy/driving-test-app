@@ -243,7 +243,7 @@ export default function TestPage() {
           )
         }
       />
-      <div className="container mx-auto px-4 py-8 max-w-lg md:max-w-2xl lg:max-w-4xl">
+      <div className="relative container mx-auto px-4 py-8 max-w-lg md:max-w-2xl lg:max-w-4xl">
 
         {/* Question Card */}
         <div className="mb-6">

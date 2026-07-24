@@ -105,6 +105,28 @@ function processFullDoc(data: Record<string, unknown>) {
     else bucket.failed++;
   }
 
+  // Super Amazing Mode: `enabled` comes from the synced toggle; eligibility
+  // (8/8: 4 training sets mastered + 4 tests at 80%+) is recomputed from full
+  // progress so it's correct even for users who haven't saved since the
+  // denormalized _stats flag shipped.
+  const samState = (data.selectedState as string) || 'CA';
+  const testAttempts = (data.testAttempts || []) as Record<string, unknown>[];
+  let superAmazingEligible = [1, 2, 3, 4].every((setId) => {
+    const setData = trainingSets[String(setId)] || trainingSets[setId as unknown as string] || {};
+    let mastered = ((setData.masteredIds as unknown[]) || []).length;
+    if (setId === 1 && mastered === 0) {
+      mastered = Math.min(50, (training.totalCorrectAllTime as number) || 0);
+    }
+    return mastered >= 50;
+  });
+  if (superAmazingEligible) {
+    superAmazingEligible = [1, 2, 3, 4].every((testNum) =>
+      testAttempts.some(
+        (a) => a.testNumber === testNum && a.state === samState && ((a.bestScore as number) || 0) >= 40,
+      ),
+    );
+  }
+
   return {
     testsCompleted: completedTests.length,
     trainingQuestionsAnswered,
@@ -112,6 +134,8 @@ function processFullDoc(data: Record<string, unknown>) {
     isPremium: (data.subscription as Record<string, unknown>)?.isPremium === true,
     convertedPaywall: deriveConvertedPaywall(data),
     stateResults,
+    superAmazingEligible,
+    superAmazingEnabled: ((data.superAmazing || {}) as Record<string, unknown>).enabled === true,
   };
 }
 
@@ -245,7 +269,7 @@ export async function GET(request: NextRequest) {
 
     const [lightSnap, fullSnap, sharesDoc, paywallsDoc, questionsDoc] = await Promise.all([
       db.collection('users')
-        .select('selectedState', 'lastUpdated', 'activeDates', 'subscription', 'createdAt', 'paywallHits', '_stats')
+        .select('selectedState', 'lastUpdated', 'activeDates', 'subscription', 'createdAt', 'paywallHits', '_stats', 'superAmazing')
         .get(),
       db.collection('users')
         .orderBy('lastUpdated', 'desc')
@@ -284,6 +308,13 @@ export async function GET(request: NextRequest) {
     const stateCounts: Record<string, number> = {};
     let payingUsers = 0;
     let newUsers7d = 0;
+    // Super Amazing Mode adoption across ALL users. Eligibility comes from
+    // the denormalized _stats flag (written on client save, so it only covers
+    // users who saved since it shipped); enabled/ever-enabled come from the
+    // synced toggle itself.
+    let samEligibleUsers = 0;
+    let samEnabledUsers = 0;
+    let samEverEnabledUsers = 0;
     // All-time questions answered, summed from every user's denormalized
     // _stats counters (written on each client save).
     let totalQuestionsAnswered = 0;
@@ -316,6 +347,11 @@ export async function GET(request: NextRequest) {
       totalQuestionsAnswered +=
         ((denormStats.trainingQuestionsAnswered as number) || 0) +
         ((denormStats.testQuestionsAnswered as number) || 0);
+
+      const sam = (data.superAmazing || {}) as Record<string, unknown>;
+      if (denormStats.superAmazingEligible === true) samEligibleUsers++;
+      if (sam.enabled === true) samEnabledUsers++;
+      if (typeof sam.firstEnabledAt === 'string') samEverEnabledUsers++;
 
       // Attribute this user's paywall hits for conversion-by-paywall stats.
       const userPaywallHits = (data.paywallHits || {}) as Record<string, Record<string, unknown>>;
@@ -373,6 +409,8 @@ export async function GET(request: NextRequest) {
         testQuestionsAnswered: stats.testQuestionsAnswered,
         isPremium: stats.isPremium,
         convertedPaywall: stats.convertedPaywall,
+        superAmazingEligible: stats.superAmazingEligible,
+        superAmazingEnabled: stats.superAmazingEnabled,
       };
     });
 
@@ -485,6 +523,11 @@ export async function GET(request: NextRequest) {
         newUsers7d,
         payingUsers,
         totalQuestionsAnswered,
+        superAmazing: {
+          eligibleUsers: samEligibleUsers,
+          enabledUsers: samEnabledUsers,
+          everEnabledUsers: samEverEnabledUsers,
+        },
         totalShareClicks: (sharesData?.total as number) || 0,
         shareClicksDaily: (sharesData?.daily as Record<string, number>) || {},
         conversion: {

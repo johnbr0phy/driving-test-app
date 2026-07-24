@@ -116,6 +116,20 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     const unsubscribe = onAuthStateChanged(auth, async (user) => {
       setUser(user);
       if (user) {
+        // firestoreLoaded is persisted to localStorage, so on a fresh
+        // sign-in for a different uid than what's cached (or the very
+        // first sign-in on this browser) it's stale — left over from
+        // a previous user or a previous cleared-out session. Gated UI
+        // (login/onboarding redirects) trusts firestoreLoaded to mean
+        // "loaded for the CURRENT user," so reset it before the fetch
+        // below, or that UI reads the outgoing user's stale data before
+        // this one's has arrived. Skip the reset when uid already
+        // matches — that's just a normal session restore with correct
+        // cached data, and resetting would cause a needless reload flicker.
+        if (useStore.getState().userId !== user.uid) {
+          useStore.setState({ firestoreLoaded: false });
+        }
+
         // Check if this was a guest session being converted
         const wasGuest = useStore.getState().isGuest;
 

@@ -8,7 +8,7 @@ import { db } from "@/lib/firebase";
 import { deleteDoc, doc } from "firebase/firestore";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { states } from "@/data/states";
-import { ArrowLeft, Users, RefreshCw, Trash2, UserPlus, Activity, TrendingUp, TrendingDown, Minus, Share2, ChevronLeft, ChevronRight, Search, DollarSign, GraduationCap, Lock } from "lucide-react";
+import { ArrowLeft, Users, RefreshCw, Trash2, UserPlus, Activity, TrendingUp, TrendingDown, Minus, Share2, ChevronLeft, ChevronRight, Search, DollarSign, GraduationCap, Lock, Sparkles } from "lucide-react";
 import { AreaChart, Area, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
 import Link from "next/link";
 import Image from "next/image";
@@ -25,6 +25,8 @@ interface UserData {
   testQuestionsAnswered: number;
   isPremium: boolean;
   convertedPaywall: { key: string; label: string; location: string } | null;
+  superAmazingEligible: boolean;
+  superAmazingEnabled: boolean;
 }
 
 interface ConversionStats {
@@ -44,6 +46,11 @@ interface Stats {
   newUsers7d: number;
   payingUsers: number;
   totalQuestionsAnswered: number;
+  superAmazing?: {
+    eligibleUsers: number;
+    enabledUsers: number;
+    everEnabledUsers: number;
+  };
   totalShareClicks: number;
   shareClicksDaily: Record<string, number>;
   conversion?: ConversionStats;
@@ -174,6 +181,11 @@ export default function AdminPage() {
             0,
             stats.totalQuestionsAnswered - deletedUser.trainingQuestionsAnswered - deletedUser.testQuestionsAnswered,
           ),
+          superAmazing: stats.superAmazing && {
+            ...stats.superAmazing,
+            eligibleUsers: stats.superAmazing.eligibleUsers - (deletedUser.superAmazingEligible ? 1 : 0),
+            enabledUsers: stats.superAmazing.enabledUsers - (deletedUser.superAmazingEnabled ? 1 : 0),
+          },
           totalShareClicks: stats.totalShareClicks,
           shareClicksDaily: stats.shareClicksDaily,
         });
@@ -401,6 +413,20 @@ export default function AdminPage() {
                       const todayCount = stats?.shareClicksDaily?.[today] || 0;
                       return todayCount > 0 ? `${todayCount} today` : 'none today';
                     })()}
+                  </p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardContent className="p-4">
+              <div className="flex items-center gap-4">
+                <Sparkles className="h-8 w-8 text-amber-500" />
+                <div>
+                  <p className="text-2xl font-bold">{stats?.superAmazing?.enabledUsers ?? 0}</p>
+                  <p className="text-sm text-gray-500">Super Amazing On</p>
+                  <p className="text-xs text-gray-400">
+                    {stats?.superAmazing?.eligibleUsers ?? 0} eligible · {stats?.superAmazing?.everEnabledUsers ?? 0} ever on
                   </p>
                 </div>
               </div>
@@ -693,6 +719,15 @@ export default function AdminPage() {
                           {userData.isPremium && (
                             <Image src="/tiger_face_01.png" alt="Premium user" width={20} height={20} title="Premium user" className="w-5 h-5" />
                           )}
+                          {userData.superAmazingEnabled ? (
+                            <span title="Super Amazing Mode on">
+                              <Sparkles className="h-4 w-4 text-amber-500" />
+                            </span>
+                          ) : userData.superAmazingEligible ? (
+                            <span title="8/8 complete — Super Amazing Mode unlocked, not turned on">
+                              <Sparkles className="h-4 w-4 text-gray-300" />
+                            </span>
+                          ) : null}
                         </div>
                       </td>
                       <td className="py-3 px-4">

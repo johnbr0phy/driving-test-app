@@ -117,6 +117,16 @@ interface AppState {
   // Guest to user conversion
   convertGuestToUser: (userId: string) => Promise<void>;
 
+  // Super Amazing Mode adoption tracking. The fireworks themselves run off a
+  // localStorage flag (components/SuperAmazingFireworks.tsx); this mirrors the
+  // toggle into Firestore so adoption shows up in the admin dashboard.
+  superAmazing: {
+    enabled: boolean;
+    firstEnabledAt: string | null;
+    lastToggledAt: string | null;
+  };
+  setSuperAmazingEnabled: (enabled: boolean) => void;
+
   // Subscription/Premium
   subscription: Subscription;
   hasPremiumAccess: () => boolean;
@@ -156,6 +166,11 @@ export const useStore = create<AppState>()(
       activeDates: [],
       userId: null,
       photoURL: null,
+      superAmazing: {
+        enabled: false,
+        firstEnabledAt: null,
+        lastToggledAt: null,
+      },
       subscription: {
         isPremium: false,
         purchasedAt: null,
@@ -186,10 +201,27 @@ export const useStore = create<AppState>()(
         set({ emailConsent: consent });
       },
 
+      setSuperAmazingEnabled: (enabled: boolean) => {
+        const prev = get().superAmazing;
+        if (prev.enabled === enabled) return;
+        const now = new Date().toISOString();
+        set({
+          superAmazing: {
+            enabled,
+            firstEnabledAt: prev.firstEnabledAt || (enabled ? now : null),
+            lastToggledAt: now,
+          },
+        });
+        get().saveToFirestore();
+      },
+
       setSelectedState: (state: string) => {
         // Clear ALL data when switching states
         set({
           selectedState: state,
+          // Progress is gone, so the Super Amazing gate no longer qualifies;
+          // keep firstEnabledAt as the historical adoption record.
+          superAmazing: { ...get().superAmazing, enabled: false },
           currentTests: {},
           completedTests: [],
           testAttempts: [],
@@ -705,6 +737,11 @@ export const useStore = create<AppState>()(
               trainingAnswerHistory: data.trainingAnswerHistory || [],
               activeDates: data.activeDates || [],
               photoURL: data.photoURL || null,
+              superAmazing: {
+                enabled: data.superAmazing?.enabled === true,
+                firstEnabledAt: data.superAmazing?.firstEnabledAt || null,
+                lastToggledAt: data.superAmazing?.lastToggledAt || null,
+              },
               userId,
               subscription: data.subscription || {
                 isPremium: false,
@@ -746,7 +783,7 @@ export const useStore = create<AppState>()(
       },
 
       saveToFirestore: async () => {
-        const { userId, isGuest, selectedState, currentTests, completedTests, testAttempts, training, trainingSets, trainingAnswerHistory, activeDates, photoURL, language, emailConsent } = get();
+        const { userId, isGuest, selectedState, currentTests, completedTests, testAttempts, training, trainingSets, trainingAnswerHistory, activeDates, photoURL, language, emailConsent, superAmazing } = get();
         if (!userId || isGuest) return; // Don't save if no user is logged in or guest mode
 
         try {
@@ -782,6 +819,25 @@ export const useStore = create<AppState>()(
           for (const testId of Object.keys(currentTestsForFirestore)) {
             const t = currentTestsForFirestore[testId];
             if (t?.answers) testQCount += Object.keys(t.answers).length;
+          }
+
+          // Super Amazing Mode eligibility (8/8: 4 training sets mastered + 4
+          // tests at 80%+), denormalized so the admin dashboard can count it
+          // across all users without full docs. Mirrors the dashboard gate.
+          let samEligible = [1, 2, 3, 4].every((setId) => {
+            let mastered = trainingSets?.[setId]?.masteredIds?.length || 0;
+            if (setId === 1 && mastered === 0) {
+              mastered = Math.min(50, training?.totalCorrectAllTime || 0);
+            }
+            return mastered >= 50;
+          });
+          if (samEligible) {
+            const stateFilter = selectedState || 'CA';
+            samEligible = [1, 2, 3, 4].every((testNum) =>
+              testAttempts.some(
+                (a) => a.testNumber === testNum && a.state === stateFilter && a.bestScore >= 40,
+              ),
+            );
           }
 
           // Per-field write that leaves server-owned fields untouched.
@@ -821,12 +877,14 @@ export const useStore = create<AppState>()(
             trainingAnswerHistory,
             activeDates: updatedActiveDates,
             language,
+            superAmazing,
             lastUpdated: new Date().toISOString(),
             // Denormalized counters for admin dashboard
             _stats: {
               trainingQuestionsAnswered: trainingQCount,
               testQuestionsAnswered: testQCount,
               testsCompleted: completedTests.length,
+              superAmazingEligible: samEligible,
             },
           };
           try {
@@ -851,6 +909,7 @@ export const useStore = create<AppState>()(
 
       resetAllData: () => {
         set({
+          superAmazing: { ...get().superAmazing, enabled: false },
           currentTests: {},
           completedTests: [],
           testAttempts: [],
@@ -893,6 +952,11 @@ export const useStore = create<AppState>()(
           activeDates: [],
           userId: null,
           photoURL: null,
+          superAmazing: {
+            enabled: false,
+            firstEnabledAt: null,
+            lastToggledAt: null,
+          },
           subscription: {
             isPremium: false,
             purchasedAt: null,
@@ -985,6 +1049,11 @@ export const useStore = create<AppState>()(
             activeDates: [],
             userId: null,
             photoURL: null,
+            superAmazing: {
+              enabled: false,
+              firstEnabledAt: null,
+              lastToggledAt: null,
+            },
             subscription: {
               isPremium: false,
               purchasedAt: null,

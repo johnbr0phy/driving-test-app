@@ -182,16 +182,21 @@ function DashboardContent() {
   // Super Amazing Mode — constant site-wide fireworks, rendered by
   // SuperAmazingFireworks in the root layout; this card owns the flag.
   // Unlocks only at 8/8 complete (free and premium alike earn it the same way).
+  // The localStorage flag drives the fireworks; the store copy syncs the
+  // toggle to Firestore so adoption is visible in the admin dashboard.
+  const superAmazingSync = useStore((state) => state.superAmazing);
+  const setSuperAmazingEnabled = useStore((state) => state.setSuperAmazingEnabled);
   const [superAmazing, setSuperAmazing] = useState(false);
   useEffect(() => {
     setSuperAmazing(localStorage.getItem(SUPER_AMAZING_KEY) === "1");
   }, []);
-  const toggleSuperAmazing = () =>
-    setSuperAmazing((v) => {
-      localStorage.setItem(SUPER_AMAZING_KEY, v ? "0" : "1");
-      window.dispatchEvent(new Event(SUPER_AMAZING_EVENT));
-      return !v;
-    });
+  const toggleSuperAmazing = () => {
+    const next = !superAmazing;
+    localStorage.setItem(SUPER_AMAZING_KEY, next ? "1" : "0");
+    window.dispatchEvent(new Event(SUPER_AMAZING_EVENT));
+    setSuperAmazingEnabled(next);
+    setSuperAmazing(next);
+  };
 
   // Hero subtitle variants (5 per progress state, picked randomly on mount)
   const heroSubVariants: string[][] = [
@@ -389,15 +394,36 @@ function DashboardContent() {
   const allComplete = completedSteps === totalSteps;
 
   // Enforce the Super Amazing Mode gate: if progress no longer qualifies
-  // (e.g. state switch reset the cards), retire the flag.
+  // (e.g. state switch reset the cards), retire the flag. Wait for Firestore
+  // on signed-in users so a not-yet-loaded remote doc doesn't look like lost
+  // progress and clobber the synced flag.
   useEffect(() => {
     if (!hydrated || allComplete) return;
+    if (user && !firestoreLoaded) return;
     if (localStorage.getItem(SUPER_AMAZING_KEY) === "1") {
       localStorage.setItem(SUPER_AMAZING_KEY, "0");
       setSuperAmazing(false);
       window.dispatchEvent(new Event(SUPER_AMAZING_EVENT));
     }
-  }, [hydrated, allComplete]);
+    if (superAmazingSync.enabled) setSuperAmazingEnabled(false);
+  }, [hydrated, allComplete, user, firestoreLoaded, superAmazingSync.enabled, setSuperAmazingEnabled]);
+
+  // Reconcile the synced flag with this device once real progress is known:
+  // pull a remote-enabled toggle down to localStorage (cross-device), and push
+  // a pre-sync local-only flag up once (only before any recorded toggle, so a
+  // deliberate turn-off on another device isn't resurrected).
+  useEffect(() => {
+    if (!hydrated || !allComplete) return;
+    if (user && !firestoreLoaded) return;
+    const local = localStorage.getItem(SUPER_AMAZING_KEY) === "1";
+    if (superAmazingSync.enabled && !local) {
+      localStorage.setItem(SUPER_AMAZING_KEY, "1");
+      setSuperAmazing(true);
+      window.dispatchEvent(new Event(SUPER_AMAZING_EVENT));
+    } else if (!superAmazingSync.enabled && local && superAmazingSync.lastToggledAt === null) {
+      setSuperAmazingEnabled(true);
+    }
+  }, [hydrated, allComplete, user, firestoreLoaded, superAmazingSync, setSuperAmazingEnabled]);
 
   // Training-heavy nudge: 2+ training sets done, no completed tests, <10 test questions answered
   const trainingSetsCompleted = hydrated ? [1, 2, 3, 4].filter(trainingSetComplete).length : 0;

@@ -13123,13 +13123,13 @@
     "questionId": "MD-018",
     "category": "cellPhone",
     "question": "¿Cuándo está prohibido enviar mensajes de texto mientras conduce en Maryland?",
-    "optionA": "Solo mientras se mueve en el tráfico",
-    "optionB": "Siempre, incluso en luces rojas",
-    "optionC": "Solo en carreteras y autopistas",
-    "optionD": "Solo en zonas escolares designadas",
+    "optionA": "Siempre, excepto en una luz roja",
+    "optionB": "Siempre, incluso en una luz roja",
+    "optionC": "Solo cuando el vehículo está en movimiento",
+    "optionD": "Solo en carreteras públicas",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Esta es la respuesta correcta según las leyes de manejo de MD."
+    "explanation": "Enviar mensajes de texto está prohibido en todo momento, incluso cuando está detenido en una luz roja."
   },
   {
     "type": "State-Specific",

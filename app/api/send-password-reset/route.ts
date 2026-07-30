@@ -1,17 +1,7 @@
-import { Resend } from 'resend';
 import { NextRequest, NextResponse } from 'next/server';
 import { getAuth } from 'firebase-admin/auth';
 import { getAdminDb } from '@/lib/firebase-admin';
-
-// Lazy initialization to avoid build-time errors
-let resend: Resend | null = null;
-
-function getResend() {
-  if (!resend) {
-    resend = new Resend(process.env.RESEND_API_KEY);
-  }
-  return resend;
-}
+import { sendEmail } from '@/lib/resend';
 
 export async function POST(request: NextRequest) {
   try {
@@ -69,8 +59,8 @@ export async function POST(request: NextRequest) {
     }
 
     // Send beautifully branded password reset email via Resend
-    const { data, error } = await getResend().emails.send({
-      from: 'TigerTest <noreply@tigertest.io>',
+    const result = await sendEmail({
+      kind: 'transactional',
       to: email,
       subject: 'Reset Your TigerTest Password',
       html: `
@@ -121,12 +111,19 @@ export async function POST(request: NextRequest) {
       `,
     });
 
-    if (error) {
-      console.error('Resend error:', error);
-      return NextResponse.json({ error: error.message }, { status: 500 });
+    if (!result.ok) {
+      console.error('Resend error:', result.error);
+      return NextResponse.json(
+        {
+          error: result.quotaExhausted
+            ? 'Email sending is temporarily unavailable. Please try again later.'
+            : 'Failed to send password reset email',
+        },
+        { status: result.quotaExhausted ? 503 : 500 }
+      );
     }
 
-    return NextResponse.json({ success: true, data });
+    return NextResponse.json({ success: true, id: result.id });
   } catch (error) {
     console.error('Password reset error:', error);
     return NextResponse.json({ error: 'Failed to send password reset email' }, { status: 500 });

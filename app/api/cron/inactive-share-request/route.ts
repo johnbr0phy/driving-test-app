@@ -12,10 +12,8 @@ import { NextRequest, NextResponse } from "next/server";
 import {
   buildAuthMap,
   getEligibleUsers,
-  sendCronEmail,
+  processBatch,
   verifyCronSecret,
-  buildHtml,
-  MAX_BATCH,
 } from "@/lib/cron-email";
 import { EMAIL_TEMPLATES } from "@/lib/email-templates";
 
@@ -56,27 +54,15 @@ export async function GET(req: NextRequest) {
       return true;
     });
 
-    const batch = eligible.slice(0, MAX_BATCH);
-    let sent = 0;
+    const result = await processBatch({
+      label: "inactive-share-request",
+      emailKey: EMAIL_KEY,
+      subject: "Did you pass?",
+      template: EMAIL_TEMPLATES.inactiveShareRequest,
+      users: eligible,
+    });
 
-    for (const user of batch) {
-      try {
-        const html = buildHtml(EMAIL_TEMPLATES.inactiveShareRequest, user.uid);
-        await sendCronEmail(
-          user.uid,
-          user.email,
-          "Did you pass?",
-          html,
-          EMAIL_KEY
-        );
-        sent++;
-      } catch (err) {
-        console.error(`[inactive-share-request] Failed for ${user.uid}:`, err);
-      }
-    }
-
-    console.log(`[inactive-share-request] sent=${sent} eligible=${eligible.length}`);
-    return NextResponse.json({ sent, eligible: eligible.length });
+    return NextResponse.json(result);
   } catch (err: any) {
     console.error("[inactive-share-request] Error:", err);
     return NextResponse.json({ error: err.message }, { status: 500 });

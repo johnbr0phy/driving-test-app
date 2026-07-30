@@ -13,10 +13,8 @@ import { NextRequest, NextResponse } from "next/server";
 import {
   buildAuthMap,
   getEligibleUsers,
-  sendCronEmail,
+  processBatch,
   verifyCronSecret,
-  buildHtml,
-  MAX_BATCH,
 } from "@/lib/cron-email";
 import { EMAIL_TEMPLATES } from "@/lib/email-templates";
 
@@ -55,27 +53,15 @@ export async function GET(req: NextRequest) {
       return true;
     });
 
-    const batch = eligible.slice(0, MAX_BATCH);
-    let sent = 0;
+    const result = await processBatch({
+      label: "reengagement",
+      emailKey: EMAIL_KEY,
+      subject: "Test coming up soon?",
+      template: EMAIL_TEMPLATES.reengagement,
+      users: eligible,
+    });
 
-    for (const user of batch) {
-      try {
-        const html = buildHtml(EMAIL_TEMPLATES.reengagement, user.uid);
-        await sendCronEmail(
-          user.uid,
-          user.email,
-          "Test coming up soon?",
-          html,
-          EMAIL_KEY
-        );
-        sent++;
-      } catch (err) {
-        console.error(`[reengagement] Failed for ${user.uid}:`, err);
-      }
-    }
-
-    console.log(`[reengagement] sent=${sent} eligible=${eligible.length}`);
-    return NextResponse.json({ sent, eligible: eligible.length });
+    return NextResponse.json(result);
   } catch (err: any) {
     console.error("[reengagement] Error:", err);
     return NextResponse.json({ error: err.message }, { status: 500 });

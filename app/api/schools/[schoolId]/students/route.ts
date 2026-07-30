@@ -1,9 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
-import { Resend } from "resend";
 import { getAdminDb } from "@/lib/firebase-admin";
 import type { SchoolStudent } from "@/lib/school-types";
 
-const resend = new Resend(process.env.RESEND_API_KEY || "re_ZABm3to6_GzdZQQ58cj5DYftGbtr9ub1a");
+import { sendEmail } from "@/lib/resend";
 
 // ── GET /api/schools/[schoolId]/students ──────────────────────────────────
 // Returns all students (active + inactive) for the given school account.
@@ -179,10 +178,10 @@ export async function POST(
 
     // Send invite emails (fire-and-forget per email, collect results)
     const htmlBody = buildInviteEmail(schoolName);
-    const emailResults = await Promise.allSettled(
+    const emailResults = await Promise.all(
       newEmails.map((email) =>
-        resend.emails.send({
-          from: "TigerTest <noreply@tigertest.io>",
+        sendEmail({
+          kind: "transactional",
           to: email,
           subject: `${schoolName} invited you to TigerTest`,
           html: htmlBody,
@@ -190,8 +189,10 @@ export async function POST(
       )
     );
 
-    const emailsSent = emailResults.filter((r) => r.status === "fulfilled").length;
-    const emailsFailed = emailResults.filter((r) => r.status === "rejected").length;
+    // sendEmail() reports Resend's own rejections, which a resolved promise
+    // used to hide — a quota-blocked invite counted as "sent".
+    const emailsSent = emailResults.filter((r) => r.ok).length;
+    const emailsFailed = emailResults.filter((r) => !r.ok).length;
 
     if (emailsFailed > 0) {
       console.warn(`[school invite] ${emailsFailed}/${newEmails.length} emails failed to send for school ${schoolId}`);

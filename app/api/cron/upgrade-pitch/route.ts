@@ -13,10 +13,8 @@ import { NextRequest, NextResponse } from "next/server";
 import {
   buildAuthMap,
   getEligibleUsers,
-  sendCronEmail,
+  processBatch,
   verifyCronSecret,
-  buildHtml,
-  MAX_BATCH,
 } from "@/lib/cron-email";
 import { EMAIL_TEMPLATES } from "@/lib/email-templates";
 
@@ -41,29 +39,16 @@ export async function GET(req: NextRequest) {
       return true;
     });
 
-    const batch = eligible.slice(0, MAX_BATCH);
-    let sent = 0;
+    const result = await processBatch({
+      label: "upgrade-pitch",
+      emailKey: EMAIL_KEY,
+      subject: "You're doing the work 💪",
+      template: EMAIL_TEMPLATES.upgradePitch,
+      users: eligible,
+      extras: (u) => ({ testCount: u.completedTests.length.toString() }),
+    });
 
-    for (const user of batch) {
-      try {
-        const html = buildHtml(EMAIL_TEMPLATES.upgradePitch, user.uid, {
-          testCount: user.completedTests.length.toString(),
-        });
-        await sendCronEmail(
-          user.uid,
-          user.email,
-          "You're doing the work 💪",
-          html,
-          EMAIL_KEY
-        );
-        sent++;
-      } catch (err) {
-        console.error(`[upgrade-pitch] Failed for ${user.uid}:`, err);
-      }
-    }
-
-    console.log(`[upgrade-pitch] sent=${sent} eligible=${eligible.length}`);
-    return NextResponse.json({ sent, eligible: eligible.length });
+    return NextResponse.json(result);
   } catch (err: any) {
     console.error("[upgrade-pitch] Error:", err);
     return NextResponse.json({ error: err.message }, { status: 500 });

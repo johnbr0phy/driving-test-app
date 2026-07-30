@@ -16,10 +16,8 @@ import { NextRequest, NextResponse } from "next/server";
 import {
   buildAuthMap,
   getEligibleUsers,
-  sendCronEmail,
+  processBatch,
   verifyCronSecret,
-  buildHtml,
-  MAX_BATCH,
 } from "@/lib/cron-email";
 import { EMAIL_TEMPLATES } from "@/lib/email-templates";
 
@@ -49,27 +47,15 @@ export async function GET(req: NextRequest) {
       return true;
     });
 
-    const batch = eligible.slice(0, MAX_BATCH);
-    let sent = 0;
+    const result = await processBatch({
+      label: "second-test-nudge",
+      emailKey: EMAIL_KEY,
+      subject: "Nice work on test #1!",
+      template: EMAIL_TEMPLATES.secondTestNudge,
+      users: eligible,
+    });
 
-    for (const user of batch) {
-      try {
-        const html = buildHtml(EMAIL_TEMPLATES.secondTestNudge, user.uid);
-        await sendCronEmail(
-          user.uid,
-          user.email,
-          "Nice work on test #1!",
-          html,
-          EMAIL_KEY
-        );
-        sent++;
-      } catch (err) {
-        console.error(`[second-test-nudge] Failed for ${user.uid}:`, err);
-      }
-    }
-
-    console.log(`[second-test-nudge] sent=${sent} eligible=${eligible.length}`);
-    return NextResponse.json({ sent, eligible: eligible.length });
+    return NextResponse.json(result);
   } catch (err: any) {
     console.error("[second-test-nudge] Error:", err);
     return NextResponse.json({ error: err.message }, { status: 500 });

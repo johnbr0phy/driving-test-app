@@ -1,9 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
-import { Resend } from "resend";
 import { getAdminDb } from "@/lib/firebase-admin";
 import { FieldValue } from "firebase-admin/firestore";
-
-const resend = new Resend(process.env.RESEND_API_KEY || "re_ZABm3to6_GzdZQQ58cj5DYftGbtr9ub1a");
+import { sendEmail } from "@/lib/resend";
 
 const welcomeTemplate = `<!DOCTYPE html>
 <html lang="en">
@@ -119,12 +117,35 @@ export async function POST(request: NextRequest) {
       .replace(/{{greeting}}/g, greeting)
       .replace(/{{unsubscribeToken}}/g, unsubscribeToken);
 
-    await resend.emails.send({
-      from: "TigerTest <noreply@tigertest.io>",
+    // The "welcome" marker was claimed above to win the race against a second
+    // request. If the send doesn't actually go out, release the claim so the
+    // user can still get a welcome email later.
+    const releaseClaim = async () => {
+      await userRef.set(
+        { emailsSent: FieldValue.arrayRemove("welcome") },
+        { merge: true }
+      );
+    };
+
+    const result = await sendEmail({
       to: email,
       subject: "Welcome to TigerTest",
       html,
+      kind: "transactional",
     });
+
+    if (!result.ok) {
+      await releaseClaim();
+      console.error("[welcome] send failed:", result.error);
+      return NextResponse.json(
+        {
+          success: false,
+          reason: result.quotaExhausted ? "quota_exhausted" : undefined,
+          error: result.error,
+        },
+        { status: result.quotaExhausted ? 503 : 502 }
+      );
+    }
 
     return NextResponse.json({ success: true });
   } catch (error: any) {

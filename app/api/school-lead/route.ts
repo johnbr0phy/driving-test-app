@@ -1,8 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
-import { Resend } from "resend";
 import { getAdminDb } from "@/lib/firebase-admin";
-
-const resend = new Resend(process.env.RESEND_API_KEY || "re_ZABm3to6_GzdZQQ58cj5DYftGbtr9ub1a");
+import { sendEmail } from "@/lib/resend";
 
 export async function POST(request: NextRequest) {
   try {
@@ -30,9 +28,10 @@ export async function POST(request: NextRequest) {
       submittedAt: new Date().toISOString(),
     });
 
-    // Send confirmation email to the school
-    await resend.emails.send({
-      from: "TigerTest <noreply@tigertest.io>",
+    // Send confirmation email to the school. The lead is already saved above,
+    // so a failed email must not fail the request — just log it.
+    const confirmation = await sendEmail({
+      kind: "transactional",
       to: email,
       subject: "Thanks for your interest in TigerTest",
       html: `<!DOCTYPE html>
@@ -84,15 +83,23 @@ export async function POST(request: NextRequest) {
 </html>`,
     });
 
+    if (!confirmation.ok) {
+      console.error("[school-lead] confirmation email failed:", confirmation.error);
+    }
+
     // Send notification email to John
-    await resend.emails.send({
-      from: "TigerTest <noreply@tigertest.io>",
+    const notification = await sendEmail({
+      kind: "transactional",
       to: "john@johnbrophy.net",
       subject: `New school lead: ${schoolName}`,
       html: `<p>New school lead: <strong>${schoolName}</strong>, ${city} ${state}, ${studentsPerYear || "unknown"} students/yr.</p>
 <p>Contact: ${contactName} &lt;${email}&gt; ${phone || "(no phone)"}</p>
 <p>Heard about us via: ${hearAbout || "not specified"}</p>`,
     });
+
+    if (!notification.ok) {
+      console.error("[school-lead] lead notification failed:", notification.error);
+    }
 
     return NextResponse.json({ success: true });
   } catch (error: any) {

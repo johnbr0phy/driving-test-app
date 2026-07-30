@@ -2,6 +2,14 @@
 
 Firebase Cloud Functions for TigerTest email automation.
 
+> **Superseded — do not deploy.** The welcome / first-test-reminder /
+> second-test-nudge / upgrade-pitch / reengagement emails now run as Vercel
+> crons (`app/api/cron/*`, scheduled in `vercel.json`), which share the daily
+> send budget in `lib/email-quota.ts`. These functions send the same emails and
+> know nothing about that budget, so deploying them would double the daily
+> volume and blow through the Resend quota. Verify nothing is still deployed
+> with `firebase functions:list` and delete any leftovers.
+
 ## Setup
 
 ### 1. Install Firebase Tools (if not already installed)
@@ -37,7 +45,7 @@ npm install
 ### 5. Set Resend API Key
 
 ```bash
-firebase functions:config:set resend.api_key="re_ZABm3to6_GzdZQQ58cj5DYftGbtr9ub1a"
+firebase functions:config:set resend.api_key="$RESEND_API_KEY"   # never paste the literal key into a file
 ```
 
 ## Functions

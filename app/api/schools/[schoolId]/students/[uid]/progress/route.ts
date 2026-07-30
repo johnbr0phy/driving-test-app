@@ -1,10 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
-import { Resend } from "resend";
 import { getAdminDb } from "@/lib/firebase-admin";
 
-const resend = new Resend(
-  process.env.RESEND_API_KEY || "re_ZABm3to6_GzdZQQ58cj5DYftGbtr9ub1a"
-);
+import { sendEmail } from "@/lib/resend";
 
 const TOTAL_SECTIONS = 8;
 
@@ -182,17 +179,20 @@ export async function POST(
         studentEmail ?? studentData.email ?? "";
 
       if (adminEmail) {
-        try {
-          await resend.emails.send({
-            from: "TigerTest <noreply@tigertest.io>",
-            to: adminEmail,
-            subject: `🎉 ${resolvedStudentName} passed all 8 sections on TigerTest!`,
-            html: buildPassEmail(resolvedStudentName, resolvedStudentEmail, schoolName),
-          });
+        // Non-fatal — log failures but don't fail the progress update.
+        const result = await sendEmail({
+          kind: "transactional",
+          to: adminEmail,
+          subject: `🎉 ${resolvedStudentName} passed all 8 sections on TigerTest!`,
+          html: buildPassEmail(resolvedStudentName, resolvedStudentEmail, schoolName),
+        });
+        if (result.ok) {
           notificationSent = true;
-        } catch (emailErr) {
-          // Non-fatal — log but don't fail the progress update
-          console.error("[schools progress] Failed to send pass notification:", emailErr);
+        } else {
+          console.error(
+            "[schools progress] Failed to send pass notification:",
+            result.error
+          );
         }
       }
     }

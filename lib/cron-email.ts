@@ -5,15 +5,28 @@
  * - buildAuthMap() does ONE auth.listUsers() call → Map<uid, {email, creationTime}>
  *   instead of N individual auth.getUser() calls
  * - getEligibleUsers() queries only consented, non-unsubscribed users from Firestore
- * - processBatch() caps at MAX_BATCH emails per run → stays well inside Vercel timeout
+ * - processBatch() caps at MAX_BATCH emails per run → stays well inside Vercel timeout,
+ *   and claims every send against the account-wide daily budget (lib/email-quota)
  */
 
 import { getAdminDb, getAdminAuth } from "@/lib/firebase-admin";
-import { Resend } from "resend";
 import { FieldValue } from "firebase-admin/firestore";
+import { sendEmail } from "@/lib/resend";
+import {
+  QuotaExhaustedError,
+  CAMPAIGN_BUDGET,
+  CAMPAIGN_CRON_COUNT,
+} from "@/lib/email-quota";
 
-const resend = new Resend(process.env.RESEND_API_KEY || "re_ZABm3to6_GzdZQQ58cj5DYftGbtr9ub1a");
-export const MAX_BATCH = 50;
+/**
+ * Per-run cap. Defaults to this cron's fair share of the daily campaign budget
+ * so the 09:00 job can't spend the whole day's allowance before the 15:00 one
+ * runs. The global counter in lib/email-quota is the real ceiling.
+ */
+export const MAX_BATCH = Number(
+  process.env.CRON_MAX_BATCH ??
+    Math.max(1, Math.floor(CAMPAIGN_BUDGET / CAMPAIGN_CRON_COUNT))
+);
 
 // ── Auth helpers ──────────────────────────────────────────────────────────────
 
@@ -119,6 +132,17 @@ export async function getEligibleUsers(
 
 // ── Email sender ──────────────────────────────────────────────────────────────
 
+/**
+ * Send one campaign email and record it.
+ *
+ * The emailKey is a permanent "already sent this campaign" marker, so it is
+ * only written after Resend actually accepted the message. Marking it on a
+ * rejected send (which is what happened when the account hit its daily quota)
+ * means the user never gets that email and is never retried.
+ *
+ * Throws QuotaExhaustedError when there is no budget left — callers should stop
+ * the run rather than keep looping.
+ */
 export async function sendCronEmail(
   uid: string,
   email: string,
@@ -128,12 +152,12 @@ export async function sendCronEmail(
 ): Promise<void> {
   const db = getAdminDb();
 
-  await resend.emails.send({
-    from: "TigerTest <noreply@tigertest.io>",
-    to: email,
-    subject,
-    html,
-  });
+  const result = await sendEmail({ to: email, subject, html, kind: "campaign" });
+
+  if (!result.ok) {
+    if (result.quotaExhausted) throw new QuotaExhaustedError(result.error);
+    throw new Error(result.error ?? "Resend rejected the message");
+  }
 
   await db
     .collection("users")
@@ -145,6 +169,67 @@ export async function sendCronEmail(
       },
       { merge: true }
     );
+}
+
+// ── Batch runner ──────────────────────────────────────────────────────────────
+
+export interface BatchOptions {
+  /** Log prefix, e.g. "reengagement". */
+  label: string;
+  /** Permanent per-campaign marker written to the user doc on success. */
+  emailKey: string;
+  subject: string;
+  template: string;
+  users: UserDoc[];
+  /** Extra {{placeholders}} for this user, merged into the template. */
+  extras?: (user: UserDoc) => Record<string, string>;
+}
+
+export interface BatchResult {
+  sent: number;
+  failed: number;
+  eligible: number;
+  attempted: number;
+  stoppedForQuota: boolean;
+}
+
+/**
+ * Send up to MAX_BATCH emails, stopping immediately if the daily budget runs
+ * out so the remaining users stay eligible for tomorrow's run.
+ */
+export async function processBatch(opts: BatchOptions): Promise<BatchResult> {
+  const batch = opts.users.slice(0, MAX_BATCH);
+  let sent = 0;
+  let failed = 0;
+  let attempted = 0;
+  let stoppedForQuota = false;
+
+  for (const user of batch) {
+    attempted++;
+    try {
+      const html = buildHtml(opts.template, user.uid, opts.extras?.(user) ?? {});
+      await sendCronEmail(user.uid, user.email, opts.subject, html, opts.emailKey);
+      sent++;
+    } catch (err) {
+      if (err instanceof QuotaExhaustedError) {
+        attempted--;
+        stoppedForQuota = true;
+        console.warn(
+          `[${opts.label}] daily email budget exhausted — stopping after ${sent} sent`
+        );
+        break;
+      }
+      failed++;
+      console.error(`[${opts.label}] Failed for ${user.uid}:`, err);
+    }
+  }
+
+  console.log(
+    `[${opts.label}] sent=${sent} failed=${failed} eligible=${opts.users.length}` +
+      (stoppedForQuota ? " stoppedForQuota=true" : "")
+  );
+
+  return { sent, failed, eligible: opts.users.length, attempted, stoppedForQuota };
 }
 
 // ── Cron auth ─────────────────────────────────────────────────────────────────

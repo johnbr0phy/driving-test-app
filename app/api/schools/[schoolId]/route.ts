@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getAdminDb } from "@/lib/firebase-admin";
+import { requireSchoolAdmin } from "@/lib/server/school-auth";
 
 // ── PATCH /api/schools/[schoolId] ─────────────────────────────────────────
 // Updates mutable school fields: schoolName, adminName, adminEmail
@@ -11,6 +12,9 @@ export async function PATCH(
   if (!schoolId) {
     return NextResponse.json({ error: "schoolId required" }, { status: 400 });
   }
+
+  const gate = await requireSchoolAdmin(req, schoolId);
+  if (!gate.ok) return gate.response;
 
   let body: Record<string, unknown>;
   try {
@@ -49,13 +53,16 @@ export async function PATCH(
 // Deletes the school account doc (does NOT delete students subcollection —
 // Firestore requires recursive deletion via Admin SDK which we do here)
 export async function DELETE(
-  _req: NextRequest,
+  req: NextRequest,
   { params }: { params: Promise<{ schoolId: string }> }
 ) {
   const { schoolId } = await params;
   if (!schoolId) {
     return NextResponse.json({ error: "schoolId required" }, { status: 400 });
   }
+
+  const gate = await requireSchoolAdmin(req, schoolId);
+  if (!gate.ok) return gate.response;
 
   try {
     const db = getAdminDb();

@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { getAdminDb } from "@/lib/firebase-admin";
 
 import { sendEmail } from "@/lib/resend";
+import { requireSchoolAdmin } from "@/lib/server/school-auth";
 
 const TOTAL_SECTIONS = 8;
 
@@ -110,6 +111,9 @@ export async function POST(
     return NextResponse.json({ error: "schoolId and uid required" }, { status: 400 });
   }
 
+  const gate = await requireSchoolAdmin(req, schoolId);
+  if (!gate.ok) return gate.response;
+
   let body: {
     sectionsCompleted?: number;
     studentName?: string;
@@ -211,13 +215,16 @@ export async function POST(
 // ── GET /api/schools/[schoolId]/students/[uid]/progress ───────────────────
 // Returns the current sectionsCompleted + passedAt for a student.
 export async function GET(
-  _req: NextRequest,
+  req: NextRequest,
   { params }: { params: Promise<{ schoolId: string; uid: string }> }
 ) {
   const { schoolId, uid } = await params;
   if (!schoolId || !uid) {
     return NextResponse.json({ error: "schoolId and uid required" }, { status: 400 });
   }
+
+  const gate = await requireSchoolAdmin(req, schoolId);
+  if (!gate.ok) return gate.response;
 
   try {
     const db = getAdminDb();

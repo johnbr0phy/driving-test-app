@@ -1,18 +1,22 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getAdminDb } from "@/lib/firebase-admin";
+import { requireSchoolAdmin } from "@/lib/server/school-auth";
 
 type Params = { params: Promise<{ schoolId: string; uid: string }> };
 
 // ── PATCH /api/schools/[schoolId]/students/[uid] ──────────────────────────
 // Deactivate: sets active=false, keeps the record in Firestore.
 export async function PATCH(
-  _req: NextRequest,
+  req: NextRequest,
   { params }: Params
 ) {
   const { schoolId, uid } = await params;
   if (!schoolId || !uid) {
     return NextResponse.json({ error: "schoolId and uid required" }, { status: 400 });
   }
+
+  const gate = await requireSchoolAdmin(req, schoolId);
+  if (!gate.ok) return gate.response;
 
   try {
     const db = getAdminDb();
@@ -33,13 +37,16 @@ export async function PATCH(
 // ── DELETE /api/schools/[schoolId]/students/[uid] ─────────────────────────
 // Hard delete: permanently removes the student document from the subcollection.
 export async function DELETE(
-  _req: NextRequest,
+  req: NextRequest,
   { params }: Params
 ) {
   const { schoolId, uid } = await params;
   if (!schoolId || !uid) {
     return NextResponse.json({ error: "schoolId and uid required" }, { status: 400 });
   }
+
+  const gate = await requireSchoolAdmin(req, schoolId);
+  if (!gate.ok) return gate.response;
 
   try {
     const db = getAdminDb();

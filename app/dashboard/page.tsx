@@ -186,6 +186,8 @@ function DashboardContent() {
   // toggle to Firestore so adoption is visible in the admin dashboard.
   const superAmazingSync = useStore((state) => state.superAmazing);
   const setSuperAmazingEnabled = useStore((state) => state.setSuperAmazingEnabled);
+  const superAmazingUnlockedAt = useStore((state) => state.superAmazingUnlockedAt);
+  const unlockSuperAmazing = useStore((state) => state.unlockSuperAmazing);
   const [superAmazing, setSuperAmazing] = useState(false);
   useEffect(() => {
     setSuperAmazing(localStorage.getItem(SUPER_AMAZING_KEY) === "1");
@@ -393,12 +395,27 @@ function DashboardContent() {
   const totalSteps = 8;
   const allComplete = completedSteps === totalSteps;
 
-  // Enforce the Super Amazing Mode gate: if progress no longer qualifies
-  // (e.g. state switch reset the cards), retire the flag. Wait for Firestore
-  // on signed-in users so a not-yet-loaded remote doc doesn't look like lost
-  // progress and clobber the synced flag.
+  // Once earned, always earned. Current progress can dip below 8/8 when someone
+  // retakes a test or retrains a set; the reward does not dip with it.
+  const samUnlocked = hydrated && !!superAmazingUnlockedAt;
+
+  // Reaching 8/8 latches the achievement in the store (and Firestore) and
+  // switches the fireworks on so the reward is immediate. Wait for Firestore on
+  // signed-in users so a not-yet-loaded remote doc can't hide an existing
+  // latch or record one against stale local progress.
   useEffect(() => {
-    if (!hydrated || allComplete) return;
+    if (!hydrated || !allComplete || superAmazingUnlockedAt) return;
+    if (user && !firestoreLoaded) return;
+    unlockSuperAmazing();
+    localStorage.setItem(SUPER_AMAZING_KEY, "1");
+    setSuperAmazing(true);
+    window.dispatchEvent(new Event(SUPER_AMAZING_EVENT));
+  }, [hydrated, allComplete, superAmazingUnlockedAt, user, firestoreLoaded, unlockSuperAmazing]);
+
+  // Retire a stale local fireworks flag only for someone who has never earned
+  // the achievement (e.g. leftover from a previous account on this device).
+  useEffect(() => {
+    if (!hydrated || samUnlocked) return;
     if (user && !firestoreLoaded) return;
     if (localStorage.getItem(SUPER_AMAZING_KEY) === "1") {
       localStorage.setItem(SUPER_AMAZING_KEY, "0");
@@ -406,14 +423,14 @@ function DashboardContent() {
       window.dispatchEvent(new Event(SUPER_AMAZING_EVENT));
     }
     if (superAmazingSync.enabled) setSuperAmazingEnabled(false);
-  }, [hydrated, allComplete, user, firestoreLoaded, superAmazingSync.enabled, setSuperAmazingEnabled]);
+  }, [hydrated, samUnlocked, user, firestoreLoaded, superAmazingSync.enabled, setSuperAmazingEnabled]);
 
-  // Reconcile the synced flag with this device once real progress is known:
+  // Reconcile the synced flag with this device once the achievement is known:
   // pull a remote-enabled toggle down to localStorage (cross-device), and push
   // a pre-sync local-only flag up once (only before any recorded toggle, so a
   // deliberate turn-off on another device isn't resurrected).
   useEffect(() => {
-    if (!hydrated || !allComplete) return;
+    if (!hydrated || !samUnlocked) return;
     if (user && !firestoreLoaded) return;
     const local = localStorage.getItem(SUPER_AMAZING_KEY) === "1";
     if (superAmazingSync.enabled && !local) {
@@ -423,7 +440,7 @@ function DashboardContent() {
     } else if (!superAmazingSync.enabled && local && superAmazingSync.lastToggledAt === null) {
       setSuperAmazingEnabled(true);
     }
-  }, [hydrated, allComplete, user, firestoreLoaded, superAmazingSync, setSuperAmazingEnabled]);
+  }, [hydrated, samUnlocked, user, firestoreLoaded, superAmazingSync, setSuperAmazingEnabled]);
 
   // Training-heavy nudge: 2+ training sets done, no completed tests, <10 test questions answered
   const trainingSetsCompleted = hydrated ? [1, 2, 3, 4].filter(trainingSetComplete).length : 0;
@@ -768,39 +785,41 @@ function DashboardContent() {
           })}
         </div>
 
-        {/* Super Amazing Mode — earned at 8/8, free and premium alike */}
+        {/* Super Amazing Mode — earned at 8/8, free and premium alike. Gated on
+            the latched achievement rather than current progress, so retaking a
+            test never takes it away. */}
         <div className="mb-6">
           <p className="text-[11px] font-bold uppercase tracking-widest text-gray-400 mb-2">
-            {allComplete ? t("dashboard.samUnlockedLabel") : t("dashboard.samUnlockLabel")}
+            {samUnlocked ? t("dashboard.samUnlockedLabel") : t("dashboard.samUnlockLabel")}
           </p>
           <div className="rounded-xl bg-white border border-gray-100 p-4 flex items-center gap-3">
             <div className="flex-1 min-w-0">
               <h3
                 className={`font-semibold text-sm flex items-center gap-1.5 ${
-                  allComplete ? "text-gray-900" : "text-gray-400"
+                  samUnlocked ? "text-gray-900" : "text-gray-400"
                 }`}
               >
                 {t("dashboard.samTitle")}
-                {!allComplete && <Lock className="w-3.5 h-3.5 text-gray-400 flex-shrink-0" />}
+                {!samUnlocked && <Lock className="w-3.5 h-3.5 text-gray-400 flex-shrink-0" />}
               </h3>
             </div>
             <button
               role="switch"
               aria-checked={superAmazing}
               aria-label={t("dashboard.samTitle")}
-              disabled={!allComplete}
+              disabled={!samUnlocked}
               onClick={toggleSuperAmazing}
               className={`relative w-11 h-6 rounded-full flex-shrink-0 transition-colors ${
-                superAmazing && allComplete
+                superAmazing && samUnlocked
                   ? "bg-brand"
-                  : allComplete
+                  : samUnlocked
                     ? "bg-gray-200"
                     : "bg-gray-100 cursor-not-allowed"
               }`}
             >
               <span
                 className={`absolute top-0.5 left-0.5 w-5 h-5 rounded-full bg-white shadow transition-transform ${
-                  superAmazing && allComplete ? "translate-x-5" : ""
+                  superAmazing && samUnlocked ? "translate-x-5" : ""
                 }`}
               />
             </button>

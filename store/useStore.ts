@@ -127,6 +127,15 @@ interface AppState {
   };
   setSuperAmazingEnabled: (enabled: boolean) => void;
 
+  /**
+   * When the user first hit 8/8. Super Amazing Mode is an achievement, so this
+   * latches once and is never cleared by retaking a test, retraining, resetting
+   * progress or switching state. Only signing out clears it, because the next
+   * person on the device has not earned it.
+   */
+  superAmazingUnlockedAt: string | null;
+  unlockSuperAmazing: () => void;
+
   // Subscription/Premium
   subscription: Subscription;
   hasPremiumAccess: () => boolean;
@@ -171,6 +180,7 @@ export const useStore = create<AppState>()(
         firstEnabledAt: null,
         lastToggledAt: null,
       },
+      superAmazingUnlockedAt: null,
       subscription: {
         isPremium: false,
         purchasedAt: null,
@@ -212,6 +222,17 @@ export const useStore = create<AppState>()(
             lastToggledAt: now,
           },
         });
+        get().saveToFirestore();
+      },
+
+      /**
+       * Latch the achievement the first time the user reaches 8/8. Idempotent:
+       * later calls are ignored, so the timestamp keeps pointing at the moment
+       * they earned it and the congratulations email can only ever fire once.
+       */
+      unlockSuperAmazing: () => {
+        if (get().superAmazingUnlockedAt) return;
+        set({ superAmazingUnlockedAt: new Date().toISOString() });
         get().saveToFirestore();
       },
 
@@ -742,6 +763,14 @@ export const useStore = create<AppState>()(
                 firstEnabledAt: data.superAmazing?.firstEnabledAt || null,
                 lastToggledAt: data.superAmazing?.lastToggledAt || null,
               },
+              // Earned achievements follow the account, not the device. Fall
+              // back to firstEnabledAt for accounts that earned 8/8 before the
+              // latch existed: enabling the mode was only ever possible at 8/8.
+              superAmazingUnlockedAt:
+                data.superAmazingUnlockedAt ||
+                data.superAmazing?.firstEnabledAt ||
+                get().superAmazingUnlockedAt ||
+                null,
               userId,
               subscription: data.subscription || {
                 isPremium: false,
@@ -783,7 +812,7 @@ export const useStore = create<AppState>()(
       },
 
       saveToFirestore: async () => {
-        const { userId, isGuest, selectedState, currentTests, completedTests, testAttempts, training, trainingSets, trainingAnswerHistory, activeDates, photoURL, language, emailConsent, superAmazing } = get();
+        const { userId, isGuest, selectedState, currentTests, completedTests, testAttempts, training, trainingSets, trainingAnswerHistory, activeDates, photoURL, language, emailConsent, superAmazing, superAmazingUnlockedAt } = get();
         if (!userId || isGuest) return; // Don't save if no user is logged in or guest mode
 
         try {
@@ -878,6 +907,7 @@ export const useStore = create<AppState>()(
             activeDates: updatedActiveDates,
             language,
             superAmazing,
+            superAmazingUnlockedAt,
             lastUpdated: new Date().toISOString(),
             // Denormalized counters for admin dashboard
             _stats: {
@@ -957,6 +987,10 @@ export const useStore = create<AppState>()(
             firstEnabledAt: null,
             lastToggledAt: null,
           },
+          // Cleared on logout only: the next person on this device has not
+          // earned it. Retests, resets and state switches deliberately leave it
+          // alone, and it is restored from Firestore on the next sign-in.
+          superAmazingUnlockedAt: null,
           subscription: {
             isPremium: false,
             purchasedAt: null,
@@ -1054,6 +1088,7 @@ export const useStore = create<AppState>()(
               firstEnabledAt: null,
               lastToggledAt: null,
             },
+            superAmazingUnlockedAt: null,
             subscription: {
               isPremium: false,
               purchasedAt: null,

@@ -1,6 +1,7 @@
 // app/api/schools/[schoolId]/billing/checkout/route.ts
 import { NextRequest, NextResponse } from "next/server";
 import { getAdminDb } from "@/lib/firebase-admin";
+import { requireSchoolAdmin } from "@/lib/server/school-auth";
 
 const TIERS = {
   starter: {
@@ -33,6 +34,9 @@ export async function POST(
   if (!schoolId) {
     return NextResponse.json({ error: "schoolId required" }, { status: 400 });
   }
+
+  const gate = await requireSchoolAdmin(req, schoolId);
+  if (!gate.ok) return gate.response;
 
   const stripeKey = process.env.STRIPE_SECRET_KEY;
   if (!stripeKey) {

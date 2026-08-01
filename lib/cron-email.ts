@@ -361,7 +361,13 @@ export async function processBatch(opts: BatchOptions): Promise<BatchResult> {
 
 export function verifyCronSecret(req: Request): boolean {
   const secret = process.env.CRON_SECRET;
-  if (!secret) return true; // dev mode — no secret set
+  if (!secret) {
+    // Fail CLOSED in production. These routes send mail to the whole user
+    // base, so an unset CRON_SECRET (typo, deleted var, fresh environment)
+    // must not silently turn them into public send-anything endpoints.
+    // Locally, no secret still means no auth, so cron routes stay easy to run.
+    return process.env.NODE_ENV !== "production";
+  }
   const auth = req.headers.get("authorization");
   return auth === `Bearer ${secret}`;
 }

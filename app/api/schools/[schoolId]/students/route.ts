@@ -3,17 +3,21 @@ import { getAdminDb } from "@/lib/firebase-admin";
 import type { SchoolStudent } from "@/lib/school-types";
 
 import { sendEmail } from "@/lib/resend";
+import { requireSchoolAdmin } from "@/lib/server/school-auth";
 
 // ── GET /api/schools/[schoolId]/students ──────────────────────────────────
 // Returns all students (active + inactive) for the given school account.
 export async function GET(
-  _req: NextRequest,
+  req: NextRequest,
   { params }: { params: Promise<{ schoolId: string }> }
 ) {
   const { schoolId } = await params;
   if (!schoolId) {
     return NextResponse.json({ error: "schoolId required" }, { status: 400 });
   }
+
+  const gate = await requireSchoolAdmin(req, schoolId);
+  if (!gate.ok) return gate.response;
 
   try {
     const db = getAdminDb();
@@ -112,6 +116,9 @@ export async function POST(
   if (!schoolId) {
     return NextResponse.json({ error: "schoolId required" }, { status: 400 });
   }
+
+  const gate = await requireSchoolAdmin(req, schoolId);
+  if (!gate.ok) return gate.response;
 
   let body: { emails?: string[] };
   try {

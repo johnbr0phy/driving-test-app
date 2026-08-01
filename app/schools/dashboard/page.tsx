@@ -17,7 +17,16 @@ import type { SchoolStudent } from "@/lib/school-types";
 import { useSchoolAuth } from "@/lib/hooks/useSchoolAuth";
 import { ref as storageRef, uploadBytes, getDownloadURL } from "firebase/storage";
 import { doc, updateDoc } from "firebase/firestore";
-import { storage, db } from "@/lib/firebase";
+import { storage, db, auth } from "@/lib/firebase";
+
+// Every /api/schools/* route is gated on the school admin's Firebase ID
+// token (lib/server/school-auth.ts). Without this header the API answers 401.
+async function authHeaders(
+  extra: Record<string, string> = {}
+): Promise<Record<string, string>> {
+  const token = await auth.currentUser?.getIdToken();
+  return token ? { ...extra, Authorization: `Bearer ${token}` } : extra;
+}
 
 // --- Config ---
 const SCHOOL_NAME = "Smith Driving Academy";
@@ -345,7 +354,7 @@ function SettingsPanel({
     try {
       const res = await fetch(`/api/schools/${schoolId}`, {
         method: "PATCH",
-        headers: { "Content-Type": "application/json" },
+        headers: await authHeaders({ "Content-Type": "application/json" }),
         body: JSON.stringify({ schoolName, adminName, adminEmail }),
       });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
@@ -406,7 +415,10 @@ function SettingsPanel({
     setDeleting(true);
     setDeleteError(null);
     try {
-      const res = await fetch(`/api/schools/${schoolId}`, { method: "DELETE" });
+      const res = await fetch(`/api/schools/${schoolId}`, {
+        method: "DELETE",
+        headers: await authHeaders(),
+      });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       // Redirect to home after deletion
       window.location.href = "/schools";
@@ -1153,7 +1165,9 @@ function DashboardInner() {
     setLoading(true);
     setError(null);
     try {
-      const res = await fetch(`/api/schools/${schoolId}/students`);
+      const res = await fetch(`/api/schools/${schoolId}/students`, {
+        headers: await authHeaders(),
+      });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const data = await res.json();
       setStudents(data.students ?? []);
@@ -1232,7 +1246,7 @@ function DashboardInner() {
       try {
         const res = await fetch(`/api/schools/${schoolId}/students`, {
           method: "POST",
-          headers: { "Content-Type": "application/json" },
+          headers: await authHeaders({ "Content-Type": "application/json" }),
           body: JSON.stringify({ emails }),
         });
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
@@ -1266,6 +1280,7 @@ function DashboardInner() {
       try {
         const res = await fetch(`/api/schools/${schoolId}/students/${uid}`, {
           method: "PATCH",
+          headers: await authHeaders(),
         });
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         setStudents((prev) => prev.map((s) => (s.uid === uid ? { ...s, active: false } : s)));
@@ -1285,6 +1300,7 @@ function DashboardInner() {
       try {
         const res = await fetch(`/api/schools/${schoolId}/students/${uid}`, {
           method: "DELETE",
+          headers: await authHeaders(),
         });
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         setStudents((prev) => prev.filter((s) => s.uid !== uid));
@@ -1304,7 +1320,7 @@ function DashboardInner() {
     try {
       const res = await fetch(`/api/schools/${schoolId}/billing/checkout`, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: await authHeaders({ "Content-Type": "application/json" }),
         body: JSON.stringify({ tier }),
       });
       const data = await res.json();

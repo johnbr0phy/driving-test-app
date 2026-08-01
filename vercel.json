@@ -9,8 +9,16 @@
       "schedule": "0 9 * * *"
     },
     {
+      "path": "/api/cron/paywall-abandon",
+      "schedule": "0 12 * * *"
+    },
+    {
+      "path": "/api/cron/super-amazing",
+      "schedule": "0 17 * * *"
+    },
+    {
       "path": "/api/cron/first-test-reminder",
-      "schedule": "0 10 * * *"
+      "schedule": "0 16 * * *"
     },
     {
       "path": "/api/cron/upgrade-pitch",

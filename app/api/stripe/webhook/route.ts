@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getStripe } from '@/lib/stripe';
 import { getAdminDb } from '@/lib/firebase-admin';
+import { sendCronEmail, buildHtml } from '@/lib/cron-email';
+import { EMAIL_TEMPLATES } from '@/lib/email-templates';
 import Stripe from 'stripe';
 
 export async function POST(request: NextRequest) {
@@ -78,6 +80,24 @@ export async function POST(request: NextRequest) {
       });
 
       console.log(`Premium activated for user ${userId}`);
+
+      // Tell the buyer what they just unlocked. Best-effort: a mail failure must
+      // never fail the webhook, or Stripe will retry a purchase we already
+      // granted.
+      try {
+        const buyerEmail = session.metadata?.email || session.customer_email;
+        if (buyerEmail) {
+          await sendCronEmail(
+            userId,
+            buyerEmail,
+            "You're in - here's what just unlocked",
+            buildHtml(EMAIL_TEMPLATES.purchaseWelcome, userId),
+            "purchaseWelcome"
+          );
+        }
+      } catch (mailErr) {
+        console.error(`[webhook] purchase-welcome email failed for ${userId}:`, mailErr);
+      }
       break;
     }
 

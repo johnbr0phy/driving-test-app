@@ -62,6 +62,14 @@ export async function buildAuthMap(): Promise<Map<string, AuthRecord>> {
 
 // ── Firestore helpers ─────────────────────────────────────────────────────────
 
+export interface PaywallHit {
+  key: string;
+  label: string;
+  location: string;
+  itemId: string;
+  at: Date;
+}
+
 export interface UserDoc {
   uid: string;
   email: string;
@@ -71,7 +79,23 @@ export interface UserDoc {
   subscription: any;
   lastEmailSent: Date | null;
   lastUpdated: Date | null;
+  /** Total questions answered across training and tests (denormalized _stats). */
+  questionsAnswered: number;
+  /** Most recent paywall the user bounced off, or null if never. */
+  lastPaywallHit: PaywallHit | null;
+  /** When they first reached 8/8. Latched, so it never moves once set. */
+  superAmazingUnlockedAt: Date | null;
+  /** Most recent sign of life: a save, a finished test, or signing up. */
+  lastActiveAt: Date;
 }
+
+/**
+ * Nobody hears from us after three quiet days. Someone who stopped using
+ * TigerTest has almost always taken their DMV test and moved on, so a later
+ * email reaches a person who no longer has the problem. Enforced centrally in
+ * getEligibleUsers() so no campaign can opt itself out by accident.
+ */
+export const MAX_INACTIVE_MS = 3 * 24 * 60 * 60 * 1000;
 
 /**
  * Query Firestore for users who have consented to email.
@@ -83,20 +107,25 @@ export interface UserDoc {
  */
 export async function getEligibleUsers(
   authMap: Map<string, AuthRecord>,
-  includeMissingConsent = false
+  includeMissingConsent = false,
+  /**
+   * Skip the three-day activity rule. Only the two win-back campaigns set this,
+   * because reaching someone who has drifted away is the entire point of them.
+   * They impose their own staleness ceilings instead.
+   */
+  includeInactive = false
 ): Promise<UserDoc[]> {
   const db = getAdminDb();
 
-  let query = db
-    .collection("users")
-    .where("unsubscribed", "!=", true) as FirebaseFirestore.Query;
-
-  if (!includeMissingConsent) {
-    query = db
-      .collection("users")
-      .where("emailConsent", "==", true)
-      .where("unsubscribed", "!=", true);
-  }
+  // NOTE: do NOT filter on `unsubscribed` here. Firestore's != operator only
+  // matches documents where the field EXISTS, and nothing has written
+  // `unsubscribed: false` to new users since 595bd4b (2026-05-02) removed it
+  // from the client save. Every user created after that date was silently
+  // excluded from every campaign. The opt-out is enforced in code below
+  // instead, which treats a missing field as "not unsubscribed".
+  const query = includeMissingConsent
+    ? (db.collection("users") as FirebaseFirestore.Query)
+    : db.collection("users").where("emailConsent", "==", true);
 
   const snap = await query.get();
   const users: UserDoc[] = [];
@@ -115,19 +144,112 @@ export async function getEligibleUsers(
     const emailLower = authRecord.email.toLowerCase();
     if (emailLower.includes("@johnbrophy.net") || emailLower.includes("@stensul.com")) continue;
 
+    const stats = d._stats || {};
+
+    // Most recent sign of life. lastUpdated covers any save, completedTests
+    // covers finishing a test, and creationTime keeps brand-new accounts in
+    // play even if their first save has not landed yet.
+    const lastTest = (Array.isArray(d.completedTests) ? d.completedTests : []).reduce(
+      (latest: Date | null, t: any) => {
+        const at = toDate(t?.completedAt);
+        if (!at) return latest;
+        return !latest || at > latest ? at : latest;
+      },
+      null as Date | null
+    );
+    const lastActiveAt = new Date(
+      Math.max(
+        toDate(d.lastUpdated)?.getTime() ?? 0,
+        lastTest?.getTime() ?? 0,
+        authRecord.creationTime.getTime()
+      )
+    );
+
+    // The three-day rule. Everyone past it has almost certainly sat their test.
+    if (!includeInactive && Date.now() - lastActiveAt.getTime() > MAX_INACTIVE_MS) continue;
+
     users.push({
+      lastActiveAt,
       uid: doc.id,
       email: authRecord.email,
       creationTime: authRecord.creationTime,
       completedTests: Array.isArray(d.completedTests) ? d.completedTests : [],
       emailsSent: Array.isArray(d.emailsSent) ? d.emailsSent : [],
       subscription: d.subscription || {},
-      lastEmailSent: d.lastEmailSent?.toDate?.() ?? null,
-      lastUpdated: d.lastUpdated?.toDate?.() ?? null,
+      lastEmailSent: toDate(d.lastEmailSent),
+      lastUpdated: toDate(d.lastUpdated),
+      questionsAnswered:
+        (stats.trainingQuestionsAnswered || 0) + (stats.testQuestionsAnswered || 0),
+      lastPaywallHit: latestPaywallHit(d.paywallHits),
+      // The dedicated latch field if the client ever writes one; otherwise the
+      // moment they first switched the mode on (written since PR #285), which
+      // can also only happen at 8/8.
+      superAmazingUnlockedAt:
+        toDate(d.superAmazingUnlockedAt) ?? toDate(d.superAmazing?.firstEnabledAt),
     });
   }
 
   return users;
+}
+
+/**
+ * Firestore date fields here are inconsistent: `lastEmailSent` is a real
+ * Timestamp (serverTimestamp), while `lastUpdated` is an ISO string written by
+ * the client store. The old `?.toDate?.()` call silently returned null for the
+ * string case, which meant inactive-share-request could never see lastUpdated.
+ */
+function toDate(v: any): Date | null {
+  if (!v) return null;
+  if (typeof v.toDate === "function") return v.toDate();
+  const d = new Date(v);
+  return isNaN(d.getTime()) ? null : d;
+}
+
+/**
+ * The most recent entry in the user's `paywallHits` map, which is written by
+ * /api/analytics/paywall on every logged-in paywall view.
+ */
+export function latestPaywallHit(hits: any): PaywallHit | null {
+  if (!hits || typeof hits !== "object") return null;
+
+  let best: PaywallHit | null = null;
+  for (const [key, hit] of Object.entries<any>(hits)) {
+    if (!hit?.lastAt) continue;
+    const at = new Date(hit.lastAt);
+    if (isNaN(at.getTime())) continue;
+    if (!best || at > best.at) {
+      best = {
+        key,
+        label: typeof hit.label === "string" ? hit.label : "",
+        location: typeof hit.location === "string" ? hit.location : "",
+        itemId: typeof hit.itemId === "string" ? hit.itemId : "",
+        at,
+      };
+    }
+  }
+  return best;
+}
+
+/**
+ * Global frequency cap. A user can now qualify for several campaigns within
+ * hours of each other (welcome, stalled study, paywall abandon, upgrade
+ * pitch), so every cron checks this before sending.
+ */
+export const MIN_EMAIL_GAP_MS = 24 * 60 * 60 * 1000;
+
+/**
+ * The gap is shorter for time-critical campaigns. /api/send-welcome-email also
+ * stamps lastEmailSent, so a flat 24-hour cap would silently suppress the
+ * paywall-abandon email for any user who signs up and hits a paywall the same
+ * day, which is precisely the audience it exists for.
+ */
+export function emailedRecently(
+  u: UserDoc,
+  now = Date.now(),
+  gapMs = MIN_EMAIL_GAP_MS
+): boolean {
+  if (!u.lastEmailSent) return false;
+  return now - u.lastEmailSent.getTime() < gapMs;
 }
 
 // ── Email sender ──────────────────────────────────────────────────────────────
@@ -178,7 +300,8 @@ export interface BatchOptions {
   label: string;
   /** Permanent per-campaign marker written to the user doc on success. */
   emailKey: string;
-  subject: string;
+  /** Fixed subject, or a per-user builder (paywall-abandon names the paywall). */
+  subject: string | ((user: UserDoc) => string);
   template: string;
   users: UserDoc[];
   /** Extra {{placeholders}} for this user, merged into the template. */
@@ -208,7 +331,9 @@ export async function processBatch(opts: BatchOptions): Promise<BatchResult> {
     attempted++;
     try {
       const html = buildHtml(opts.template, user.uid, opts.extras?.(user) ?? {});
-      await sendCronEmail(user.uid, user.email, opts.subject, html, opts.emailKey);
+      const subject =
+        typeof opts.subject === "function" ? opts.subject(user) : opts.subject;
+      await sendCronEmail(user.uid, user.email, subject, html, opts.emailKey);
       sent++;
     } catch (err) {
       if (err instanceof QuotaExhaustedError) {

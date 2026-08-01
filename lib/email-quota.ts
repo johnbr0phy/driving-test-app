@@ -27,7 +27,7 @@ export const TRANSACTIONAL_RESERVE = Number(
 export const CAMPAIGN_BUDGET = Math.max(0, DAILY_SEND_LIMIT - TRANSACTIONAL_RESERVE);
 
 /** Number of campaign crons in vercel.json that share CAMPAIGN_BUDGET. */
-export const CAMPAIGN_CRON_COUNT = 5;
+export const CAMPAIGN_CRON_COUNT = 7;
 
 export type SendKind = "campaign" | "transactional";
 

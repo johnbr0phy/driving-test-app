@@ -7,6 +7,7 @@
  * - Completed exactly 1 test
  * - That test was completed in the last 24–48 hours (catches yesterday's completions)
  * - Haven't received this email yet
+ * - Haven't received any other cron email in the last 24 hours
  *
  * Note: Without a real-time trigger, this fires once daily.
  * Max delay vs. the original trigger: ~24 hours. Acceptable for this use case.
@@ -18,6 +19,7 @@ import {
   getEligibleUsers,
   processBatch,
   verifyCronSecret,
+  emailedRecently,
 } from "@/lib/cron-email";
 import { EMAIL_TEMPLATES } from "@/lib/email-templates";
 
@@ -35,6 +37,7 @@ export async function GET(req: NextRequest) {
     const users = await getEligibleUsers(authMap, INCLUDE_LEGACY);
 
     const eligible = users.filter((u) => {
+      if (emailedRecently(u)) return false;      // frequency cap
       if (u.completedTests.length !== 1) return false;       // needs exactly 1 test done
       if (u.emailsSent.includes(EMAIL_KEY)) return false;    // already sent
 

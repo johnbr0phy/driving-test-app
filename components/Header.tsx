@@ -88,7 +88,7 @@ export function Header() {
             {user ? (
               <>
                 {isAdmin && (
-                  <Link href="/admin" className="text-gray-600 hover:text-gray-900 transition-colors" title="Admin Dashboard">
+                  <Link href="/admin/v2" className="text-gray-600 hover:text-gray-900 transition-colors" title="Admin Dashboard">
                     <Shield className="h-5 w-5" />
                   </Link>
                 )}

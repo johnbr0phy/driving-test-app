@@ -7,7 +7,7 @@ import { useAdmin } from "@/hooks/useAdmin";
 import { RefreshCw, ArrowUpRight, ArrowDownRight, ExternalLink } from "lucide-react";
 import {
   AreaChart, Area, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip,
-  ResponsiveContainer, LabelList, Cell,
+  ResponsiveContainer, LabelList,
 } from "recharts";
 import Link from "next/link";
 
@@ -110,6 +110,11 @@ function bucketize(map: Record<string, number>, range: Range): Pt[] {
     months.push({ key: prefix, label: fmtMonthLabel(prefix), value });
     cursor.setUTCMonth(cursor.getUTCMonth() + 1);
   }
+  // Drop the in-progress month. Five days of a month plotted next to full ones
+  // flattens the cumulative curve and craters the per-month bars, both of which
+  // read as a stall that isn't there. Same reasoning as the activeMonthly
+  // filter below. Keep it if it's the only bucket we have.
+  if (months.length > 1 && months[months.length - 1].key === thisMonth) months.pop();
   return months;
 }
 
@@ -379,6 +384,8 @@ export default function AdminV2Page() {
 
   const { kpis, funnel } = metrics;
   const bucketNoun = range === "30d" ? "day" : range === "90d" ? "week" : "month";
+  // All-time charts stop at the last complete month (see bucketize)
+  const partialNote = range === "all" ? "Current month omitted (in progress)." : undefined;
   const labelEvery = range === "90d" ? 1 : "preserveStartEnd" as const;
   const revenueBarLabels = series.revenue.length <= 13;
 
@@ -468,7 +475,8 @@ export default function AdminV2Page() {
 
         {/* Charts */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4">
-          <ChartCard title="User growth" subtitle={`cumulative accounts, by ${bucketNoun}`}>
+          <ChartCard title="User growth" subtitle={`cumulative accounts, by ${bucketNoun}`}
+            footnote={partialNote}>
             <ResponsiveContainer width="100%" height="100%">
               <AreaChart data={series.usersCumulative} margin={{ top: 10, right: 16, left: 0, bottom: 0 }}>
                 <CartesianGrid vertical={false} stroke={COLORS.grid} />
@@ -490,7 +498,7 @@ export default function AdminV2Page() {
             subtitle={`per ${bucketNoun}${kpis.estimatedPurchases > 0
               ? ` · ${kpis.estimatedPurchases} pre-Stripe-log purchase${kpis.estimatedPurchases === 1 ? "" : "s"} at $9.99`
               : ""}`}
-            footnote={range === "all" ? "Current month is still in progress (shown lighter)." : undefined}
+            footnote={partialNote}
           >
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={series.revenue} margin={{ top: 18, right: 16, left: 0, bottom: 0 }}>
@@ -503,10 +511,6 @@ export default function AdminV2Page() {
                   content={<ChartTooltip format={fmtDollarsExact} />} />
                 <Bar dataKey="value" fill={COLORS.revenue} maxBarSize={24} radius={[4, 4, 0, 0]}
                   isAnimationActive={false}>
-                  {series.revenue.map((p, i) => (
-                    <Cell key={p.key}
-                      fillOpacity={range === "all" && i === series.revenue.length - 1 ? 0.45 : 1} />
-                  ))}
                   {revenueBarLabels && (
                     <LabelList dataKey="value" position="top"
                       formatter={(v: React.ReactNode) => (Number(v) > 0 ? fmtDollars(Number(v)) : "")}
@@ -518,7 +522,7 @@ export default function AdminV2Page() {
           </ChartCard>
 
           <ChartCard title="New signups" subtitle={`per ${bucketNoun}`}
-            footnote={range === "all" ? "Current month is still in progress (shown lighter)." : undefined}>
+            footnote={partialNote}>
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={series.newSignups} margin={{ top: 10, right: 16, left: 0, bottom: 0 }}>
                 <CartesianGrid vertical={false} stroke={COLORS.grid} />
@@ -529,12 +533,7 @@ export default function AdminV2Page() {
                 <Tooltip cursor={{ fill: "rgba(0,0,0,0.03)" }}
                   content={<ChartTooltip format={(n) => `${fmtInt(n)} signups`} />} />
                 <Bar dataKey="value" fill={COLORS.users} maxBarSize={24} radius={[4, 4, 0, 0]}
-                  isAnimationActive={false}>
-                  {series.newSignups.map((p, i) => (
-                    <Cell key={p.key}
-                      fillOpacity={range === "all" && i === series.newSignups.length - 1 ? 0.45 : 1} />
-                  ))}
-                </Bar>
+                  isAnimationActive={false} />
               </BarChart>
             </ResponsiveContainer>
           </ChartCard>
@@ -542,11 +541,9 @@ export default function AdminV2Page() {
           <ChartCard
             title={engageMetric === "active" ? "Active users" : "Questions answered"}
             subtitle={`per ${bucketNoun} · ${fmtInt(kpis.totalQuestions)} questions all-time`}
-            footnote={engageMetric === "active"
-              ? `Unique signed-in users with synced activity in each period.${
-                  range === "all" ? " Current month omitted (in progress)." : ""}`
-              : `Every training and test answer, guests included.${
-                  range === "all" ? " Current month is still in progress (shown lighter)." : ""}`}
+            footnote={`${engageMetric === "active"
+              ? "Unique signed-in users with synced activity in each period."
+              : "Every training and test answer, guests included."}${partialNote ? ` ${partialNote}` : ""}`}
           >
             <div className="flex gap-1 -mt-1 mb-2">
               {([["active", "Active users"], ["questions", "Questions"]] as const).map(([key, label]) => (
@@ -585,12 +582,7 @@ export default function AdminV2Page() {
                   <Tooltip cursor={{ fill: "rgba(0,0,0,0.03)" }}
                     content={<ChartTooltip format={(n) => `${fmtInt(n)} answered`} />} />
                   <Bar dataKey="value" fill={COLORS.engagement} maxBarSize={24} radius={[4, 4, 0, 0]}
-                    isAnimationActive={false}>
-                    {series.questions.map((p, i) => (
-                      <Cell key={p.key}
-                        fillOpacity={range === "all" && i === series.questions.length - 1 ? 0.45 : 1} />
-                    ))}
-                  </Bar>
+                    isAnimationActive={false} />
                 </BarChart>
               )}
             </ResponsiveContainer>

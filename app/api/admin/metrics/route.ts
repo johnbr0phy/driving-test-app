@@ -66,6 +66,7 @@ export async function GET(request: NextRequest) {
     const cacheAge = Date.now() - cacheTimestamp;
     if (!forceRefresh && cachedPayload && cacheAge < CACHE_TTL_MS) {
       const res = NextResponse.json(cachedPayload);
+      res.headers.set('Cache-Control', 'no-store');
       res.headers.set('X-Cache', 'HIT');
       return res;
     }
@@ -315,7 +316,12 @@ export async function GET(request: NextRequest) {
     cachedPayload = payload;
     cacheTimestamp = Date.now();
     const res = NextResponse.json(payload);
-    res.headers.set('Cache-Control', 'private, max-age=120');
+    // no-store, not max-age. A browser-cached payload outlives a deploy, so a
+    // freshly-loaded bundle can be handed a response shaped for the previous
+    // build — that is what crashed the page when "today" was added. The
+    // in-memory cachedPayload above already spares the database; this only
+    // stops the browser from replaying a stale shape (and makes Refresh real).
+    res.headers.set('Cache-Control', 'no-store');
     res.headers.set('X-Cache', 'MISS');
     return res;
   } catch (error) {

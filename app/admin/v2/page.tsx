@@ -54,7 +54,10 @@ interface Metrics {
   };
   activeWeekly: { date: string; count: number }[];
   activeMonthly: { date: string; count: number }[];
-  today: {
+  // Optional on purpose: a response predating this field (a stale cached
+  // payload, or a tab whose JS is newer than the API it's talking to) must
+  // degrade to a notice, not throw and white-screen the whole dashboard.
+  today?: {
     date: string;
     hours: { signups: number[]; revenueCents: number[]; purchases: number[] };
     activeUsers: number;
@@ -127,11 +130,17 @@ function bucketize(map: Record<string, number>, range: Range): Pt[] {
 // Hours elapsed so far today in Eastern — the "today" charts stop here rather
 // than trailing a flat line across hours that haven't happened yet.
 function etHourNow(): number {
-  const h = new Intl.DateTimeFormat("en-US", {
-    timeZone: "America/New_York", hour: "2-digit", hour12: false,
-  }).format(new Date());
-  const n = parseInt(h, 10);
-  return Number.isNaN(n) ? 23 : n % 24;
+  try {
+    const h = new Intl.DateTimeFormat("en-US", {
+      timeZone: "America/New_York", hour: "2-digit", hour12: false,
+    }).format(new Date());
+    const n = parseInt(h, 10);
+    return Number.isFinite(n) ? n % 24 : 23;
+  } catch {
+    // A runtime without full ICU throws RangeError on the timezone. Show the
+    // whole day rather than taking the page down over an axis label.
+    return 23;
+  }
 }
 
 const fmtHourLabel = (h: number) =>
@@ -363,14 +372,14 @@ export default function AdminV2Page() {
   const series = useMemo(() => {
     if (!metrics) return null;
     if (range === "today") {
-      const signupHours = hourly(metrics.today.hours.signups);
+      const signupHours = hourly(metrics.today?.hours?.signups ?? []);
       // Cumulative within the day, not all-time — 27 accounts added onto 3,700
       // would render as a dead-flat line.
       let run = 0;
       return {
         usersCumulative: signupHours.map((p) => ({ ...p, value: (run += p.value) })),
         newSignups: signupHours,
-        revenue: hourly(metrics.today.hours.revenueCents),
+        revenue: hourly(metrics.today?.hours?.revenueCents ?? []),
         active: [],      // day-resolution only; rendered as a tile instead
         questions: [],   // same
       };
@@ -429,8 +438,10 @@ export default function AdminV2Page() {
   const bucketNoun = isToday ? "hour" : range === "30d" ? "day" : range === "90d" ? "week" : "month";
   // All-time charts stop at the last complete month (see bucketize)
   const partialNote = range === "all" ? "Current month omitted (in progress)." : undefined;
-  const todayNote = isToday
-    ? `${fmtDayLabel(metrics.today.date)}, Eastern. Hours shown up to the current one.`
+  // Present only when the API actually returned the block (see Metrics.today)
+  const todayData = Array.isArray(metrics.today?.hours?.signups) ? metrics.today : null;
+  const todayNote = isToday && todayData
+    ? `${fmtDayLabel(todayData.date)}, Eastern. Hours shown up to the current one.`
     : undefined;
   const chartNote = todayNote ?? partialNote;
   const labelEvery = range === "90d" ? 1 : isToday ? 2 : "preserveStartEnd" as const;
@@ -519,6 +530,18 @@ export default function AdminV2Page() {
             </button>
           ))}
         </div>
+
+        {/* Today selected but the response has no today block — say so rather
+            than rendering a page full of confident zeros. */}
+        {isToday && !todayData && (
+          <div className="mb-4 rounded-xl border border-amber-200 bg-amber-50 p-4">
+            <p className="text-sm text-amber-800">
+              Today&apos;s data isn&apos;t in this response, most likely a cached payload from
+              before this feature shipped. Hit Refresh; if it persists, the API is serving
+              an older build.
+            </p>
+          </div>
+        )}
 
         {/* Charts */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4">
@@ -624,7 +647,9 @@ export default function AdminV2Page() {
                   className="text-5xl font-semibold tabular-nums"
                   style={{ color: COLORS.engagement }}
                 >
-                  {fmtInt(engageMetric === "active" ? metrics.today.activeUsers : metrics.today.questions)}
+                  {todayData
+                    ? fmtInt(engageMetric === "active" ? todayData.activeUsers : todayData.questions)
+                    : "—"}
                 </span>
                 <span className="text-xs text-gray-400">
                   {engageMetric === "active" ? "active users today" : "questions answered today"}

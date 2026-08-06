@@ -25,6 +25,26 @@ function dayKey(iso: string): string | null {
   return Number.isNaN(d.getTime()) ? null : d.toISOString().split('T')[0];
 }
 
+// The "today" range buckets in John's timezone, not UTC: a UTC day rolls over
+// at 8pm Eastern, so an evening check would show a near-empty day. Only the
+// today range uses this — the other ranges stay on UTC dayKey() as before.
+const ADMIN_TZ = 'America/New_York';
+
+function etParts(iso: string): { date: string; hour: number } | null {
+  const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return null;
+  const parts = new Intl.DateTimeFormat('en-CA', {
+    timeZone: ADMIN_TZ,
+    year: 'numeric', month: '2-digit', day: '2-digit',
+    hour: '2-digit', hour12: false,
+  }).formatToParts(d);
+  const get = (t: string) => parts.find((p) => p.type === t)?.value ?? '';
+  const hour = parseInt(get('hour'), 10);
+  if (Number.isNaN(hour)) return null;
+  // Some ICU builds render midnight as "24" under hour12:false
+  return { date: `${get('year')}-${get('month')}-${get('day')}`, hour: hour % 24 };
+}
+
 export async function GET(request: NextRequest) {
   try {
     const authHeader = request.headers.get('authorization');
@@ -65,6 +85,13 @@ export async function GET(request: NextRequest) {
     const purchasesByDay: Record<string, number> = {};
     const activeByDay: Record<string, number> = {};
 
+    // ── "Today" (Eastern) hourly buckets ────────────────────────────────────
+    const etToday = etParts(new Date().toISOString())?.date ?? '';
+    const hourlySignups = new Array(24).fill(0) as number[];
+    const hourlyRevenueCents = new Array(24).fill(0) as number[];
+    const hourlyPurchases = new Array(24).fill(0) as number[];
+    let activeUsersToday = 0;
+
     // ── Real payments first ─────────────────────────────────────────────────
     const paidUserIds = new Set<string>();
     let revenueAllTimeCents = 0;
@@ -78,6 +105,11 @@ export async function GET(request: NextRequest) {
       if (day) {
         revenueCentsByDay[day] = (revenueCentsByDay[day] || 0) + amount;
         purchasesByDay[day] = (purchasesByDay[day] || 0) + 1;
+      }
+      const et = typeof p.createdAt === 'string' ? etParts(p.createdAt) : null;
+      if (et && et.date === etToday) {
+        hourlyRevenueCents[et.hour] += amount;
+        hourlyPurchases[et.hour] += 1;
       }
     });
 
@@ -106,6 +138,16 @@ export async function GET(request: NextRequest) {
         (activeDates.length > 0 ? [...activeDates].sort()[0] : null) ||
         (lastUpdated ? dayKey(lastUpdated) : null);
       if (signupDay) signupsByDay[signupDay] = (signupsByDay[signupDay] || 0) + 1;
+
+      // Hourly signups for today. Only createdAt carries a clock time; the
+      // activeDate/lastUpdated fallbacks are date-only, so accounts old enough
+      // to lack createdAt simply can't land in an hour bucket. They never would
+      // anyway — every account created since May 2026 has one.
+      if (createdAt) {
+        const et = etParts(createdAt);
+        if (et && et.date === etToday) hourlySignups[et.hour] += 1;
+      }
+      if (activeDates.includes(etToday)) activeUsersToday++;
 
       // Activity
       const dates = new Set(activeDates);
@@ -241,6 +283,26 @@ export async function GET(request: NextRequest) {
       },
       activeWeekly,
       activeMonthly,
+      // The "today" range. Signups and revenue are bucketed by the hour in
+      // Eastern time off real timestamps. Questions and active users have no
+      // clock time anywhere in their write path, so they can only be day
+      // totals — and each is stamped in a different zone, hence the separate
+      // date fields. The UI footnotes both rather than implying they're Eastern.
+      today: {
+        date: etToday,
+        hours: {
+          signups: hourlySignups,
+          revenueCents: hourlyRevenueCents,
+          purchases: hourlyPurchases,
+        },
+        activeUsers: activeUsersToday,
+        // Keyed by the Eastern date, not the current UTC date. Eastern day D
+        // spans UTC D 04:00 → UTC D+1 04:00, so 20 of its 24 hours sit in UTC
+        // day D. Using the live UTC key instead would, after 8pm Eastern, show
+        // the handful of answers since the UTC rollover (592) in place of the
+        // day's real total (2,886).
+        questions: questionsByDay[etToday] || 0,
+      },
       funnel: {
         signups: totalUsers,
         engaged: engagedUsers,

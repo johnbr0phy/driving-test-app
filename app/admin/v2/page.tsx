@@ -54,10 +54,16 @@ interface Metrics {
   };
   activeWeekly: { date: string; count: number }[];
   activeMonthly: { date: string; count: number }[];
+  today: {
+    date: string;
+    hours: { signups: number[]; revenueCents: number[]; purchases: number[] };
+    activeUsers: number;
+    questions: number;
+  };
   funnel: { signups: number; engaged: number; hitPaywall: number; purchased: number };
 }
 
-type Range = "30d" | "90d" | "all";
+type Range = "today" | "30d" | "90d" | "all";
 type Pt = { key: string; label: string; value: number };
 
 // ─── Formatting ─────────────────────────────────────────────────────────────
@@ -116,6 +122,29 @@ function bucketize(map: Record<string, number>, range: Range): Pt[] {
   // filter below. Keep it if it's the only bucket we have.
   if (months.length > 1 && months[months.length - 1].key === thisMonth) months.pop();
   return months;
+}
+
+// Hours elapsed so far today in Eastern — the "today" charts stop here rather
+// than trailing a flat line across hours that haven't happened yet.
+function etHourNow(): number {
+  const h = new Intl.DateTimeFormat("en-US", {
+    timeZone: "America/New_York", hour: "2-digit", hour12: false,
+  }).format(new Date());
+  const n = parseInt(h, 10);
+  return Number.isNaN(n) ? 23 : n % 24;
+}
+
+const fmtHourLabel = (h: number) =>
+  h === 0 ? "12a" : h < 12 ? `${h}a` : h === 12 ? "12p" : `${h - 12}p`;
+
+// 24 hourly buckets from the server's today payload, truncated at the current hour
+function hourly(values: number[]): Pt[] {
+  const last = etHourNow();
+  return Array.from({ length: last + 1 }, (_, h) => ({
+    key: String(h),
+    label: fmtHourLabel(h),
+    value: values[h] || 0,
+  }));
 }
 
 // Running total across buckets, seeded with everything before the window
@@ -333,6 +362,19 @@ export default function AdminV2Page() {
   // ── Derived chart series ──────────────────────────────────────────────────
   const series = useMemo(() => {
     if (!metrics) return null;
+    if (range === "today") {
+      const signupHours = hourly(metrics.today.hours.signups);
+      // Cumulative within the day, not all-time — 27 accounts added onto 3,700
+      // would render as a dead-flat line.
+      let run = 0;
+      return {
+        usersCumulative: signupHours.map((p) => ({ ...p, value: (run += p.value) })),
+        newSignups: signupHours,
+        revenue: hourly(metrics.today.hours.revenueCents),
+        active: [],      // day-resolution only; rendered as a tile instead
+        questions: [],   // same
+      };
+    }
     const signupBuckets = bucketize(metrics.daily.signups, range);
     const active =
       range === "30d"
@@ -383,10 +425,15 @@ export default function AdminV2Page() {
   }
 
   const { kpis, funnel } = metrics;
-  const bucketNoun = range === "30d" ? "day" : range === "90d" ? "week" : "month";
+  const isToday = range === "today";
+  const bucketNoun = isToday ? "hour" : range === "30d" ? "day" : range === "90d" ? "week" : "month";
   // All-time charts stop at the last complete month (see bucketize)
   const partialNote = range === "all" ? "Current month omitted (in progress)." : undefined;
-  const labelEvery = range === "90d" ? 1 : "preserveStartEnd" as const;
+  const todayNote = isToday
+    ? `${fmtDayLabel(metrics.today.date)}, Eastern. Hours shown up to the current one.`
+    : undefined;
+  const chartNote = todayNote ?? partialNote;
+  const labelEvery = range === "90d" ? 1 : isToday ? 2 : "preserveStartEnd" as const;
   const revenueBarLabels = series.revenue.length <= 13;
 
   return (
@@ -460,7 +507,7 @@ export default function AdminV2Page() {
 
         {/* Range filter — scopes every chart below */}
         <div className="flex items-center gap-1 mb-4 bg-white border border-gray-200/80 rounded-lg p-1 w-fit shadow-sm">
-          {([["30d", "Last 30 days"], ["90d", "Last 90 days"], ["all", "All time"]] as const).map(([key, label]) => (
+          {([["today", "Today"], ["30d", "Last 30 days"], ["90d", "Last 90 days"], ["all", "All time"]] as const).map(([key, label]) => (
             <button
               key={key}
               onClick={() => setRange(key)}
@@ -475,8 +522,12 @@ export default function AdminV2Page() {
 
         {/* Charts */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4">
-          <ChartCard title="User growth" subtitle={`cumulative accounts, by ${bucketNoun}`}
-            footnote={partialNote}>
+          <ChartCard
+            title="User growth"
+            subtitle={isToday
+              ? "accounts added today, cumulative by hour"
+              : `cumulative accounts, by ${bucketNoun}`}
+            footnote={chartNote}>
             <ResponsiveContainer width="100%" height="100%">
               <AreaChart data={series.usersCumulative} margin={{ top: 10, right: 16, left: 0, bottom: 0 }}>
                 <CartesianGrid vertical={false} stroke={COLORS.grid} />
@@ -495,10 +546,10 @@ export default function AdminV2Page() {
 
           <ChartCard
             title="Revenue"
-            subtitle={`per ${bucketNoun}${kpis.estimatedPurchases > 0
+            subtitle={`per ${bucketNoun}${!isToday && kpis.estimatedPurchases > 0
               ? ` · ${kpis.estimatedPurchases} pre-Stripe-log purchase${kpis.estimatedPurchases === 1 ? "" : "s"} at $9.99`
               : ""}`}
-            footnote={partialNote}
+            footnote={chartNote}
           >
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={series.revenue} margin={{ top: 18, right: 16, left: 0, bottom: 0 }}>
@@ -522,7 +573,7 @@ export default function AdminV2Page() {
           </ChartCard>
 
           <ChartCard title="New signups" subtitle={`per ${bucketNoun}`}
-            footnote={partialNote}>
+            footnote={chartNote}>
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={series.newSignups} margin={{ top: 10, right: 16, left: 0, bottom: 0 }}>
                 <CartesianGrid vertical={false} stroke={COLORS.grid} />
@@ -540,10 +591,19 @@ export default function AdminV2Page() {
 
           <ChartCard
             title={engageMetric === "active" ? "Active users" : "Questions answered"}
-            subtitle={`per ${bucketNoun} · ${fmtInt(kpis.totalQuestions)} questions all-time`}
-            footnote={`${engageMetric === "active"
-              ? "Unique signed-in users with synced activity in each period."
-              : "Every training and test answer, guests included."}${partialNote ? ` ${partialNote}` : ""}`}
+            subtitle={isToday
+              ? `today · ${fmtInt(kpis.totalQuestions)} questions all-time`
+              : `per ${bucketNoun} · ${fmtInt(kpis.totalQuestions)} questions all-time`}
+            footnote={isToday
+              // Neither source records a clock time, so there is no hourly
+              // version of these — and each is stamped in its own zone, so
+              // saying "today" without qualification would be wrong.
+              ? (engageMetric === "active"
+                  ? "No hourly data: activity is recorded as a date only, stamped in each user's own timezone."
+                  : `No hourly data: answer counts are tallied per UTC day, so this covers 8pm-8pm Eastern rather than midnight-to-now.`)
+              : `${engageMetric === "active"
+                  ? "Unique signed-in users with synced activity in each period."
+                  : "Every training and test answer, guests included."}${partialNote ? ` ${partialNote}` : ""}`}
           >
             <div className="flex gap-1 -mt-1 mb-2">
               {([["active", "Active users"], ["questions", "Questions"]] as const).map(([key, label]) => (
@@ -558,6 +618,19 @@ export default function AdminV2Page() {
                 </button>
               ))}
             </div>
+            {isToday ? (
+              <div className="flex flex-col items-center justify-center h-[88%] gap-1">
+                <span
+                  className="text-5xl font-semibold tabular-nums"
+                  style={{ color: COLORS.engagement }}
+                >
+                  {fmtInt(engageMetric === "active" ? metrics.today.activeUsers : metrics.today.questions)}
+                </span>
+                <span className="text-xs text-gray-400">
+                  {engageMetric === "active" ? "active users today" : "questions answered today"}
+                </span>
+              </div>
+            ) : (
             <ResponsiveContainer width="100%" height="88%">
               {engageMetric === "active" ? (
                 <AreaChart data={series.active} margin={{ top: 10, right: 16, left: 0, bottom: 0 }}>
@@ -586,6 +659,7 @@ export default function AdminV2Page() {
                 </BarChart>
               )}
             </ResponsiveContainer>
+            )}
           </ChartCard>
         </div>
 

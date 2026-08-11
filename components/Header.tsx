@@ -11,7 +11,7 @@ import { useHydration } from "@/hooks/useHydration";
 import { useTranslation } from "@/contexts/LanguageContext";
 import Image from "next/image";
 import { Shield, BarChart3 } from "lucide-react";
-import type { Language } from "@/i18n";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 
 export function Header() {
   const { user, logout } = useAuth();
@@ -23,7 +23,7 @@ export function Header() {
   const hydrated = useHydration();
   const subscription = useStore((state) => state.subscription);
   const isPremium = hydrated && !isGuest && !!user && subscription?.isPremium === true;
-  const { t, language, setLanguage } = useTranslation();
+  const { t } = useTranslation();
 
   const handleLogout = async () => {
     await logout();
@@ -57,23 +57,7 @@ export function Header() {
 
           <div className="flex items-center gap-2 sm:gap-4">
             {/* Language Toggle - shown only on the homepage; other pages render it in the footer */}
-            {isHomepage && (
-              <div className="flex items-center bg-gray-100 rounded-full p-0.5">
-                {([["en", "\u{1F1FA}\u{1F1F8}"], ["es", "\u{1F1EA}\u{1F1F8}"], ["vi", "\u{1F1FB}\u{1F1F3}"]] as [Language, string][]).map(([lang, flag]) => (
-                  <button
-                    key={lang}
-                    onClick={() => setLanguage(lang)}
-                    className={`px-1.5 py-1 text-sm rounded-full transition-colors ${
-                      language === lang
-                        ? "bg-white shadow-sm"
-                        : "opacity-50 hover:opacity-75"
-                    }`}
-                  >
-                    {flag}
-                  </button>
-                ))}
-              </div>
-            )}
+            {isHomepage && <LanguageSwitcher />}
 
             {(user || isGuest) && (
               <Link

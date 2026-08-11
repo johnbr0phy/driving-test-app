@@ -5,7 +5,8 @@ import { usePathname } from "next/navigation";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { states } from "@/data/states";
 import { isViState } from "@/data/viStates";
-import type { Language } from "@/i18n";
+import { isKoState } from "@/data/koStates";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 
 const popularStateSlugs = [
   "california", "texas", "florida", "new-york", "pennsylvania",
@@ -22,6 +23,7 @@ export function Footer() {
   const pathname = usePathname();
   const isEs = language === "es";
   const isVi = language === "vi";
+  const isKo = language === "ko";
   const isCDL = pathname?.startsWith("/cdl") || pathname === "/cdl-practice-test";
   const isHomepage = pathname === "/";
 
@@ -31,9 +33,11 @@ export function Footer() {
     pathname?.endsWith("-dmv-practice-test") ||
     pathname?.endsWith("-examen-practica-dmv") ||
     pathname?.endsWith("-thi-thu-dmv") ||
+    pathname?.endsWith("-dmv-pilgi-siheom") ||
     pathname === "/practice-tests-by-state" ||
     pathname === "/es/examenes-practica-por-estado" ||
-    pathname === "/vi/thi-thu-dmv-theo-tieu-bang";
+    pathname === "/vi/thi-thu-dmv-theo-tieu-bang" ||
+    pathname === "/ko/juibyeol-dmv-pilgi-siheom";
 
   const showLanguageToggle = !isHomepage && !isCDL && !isSeoPage;
 
@@ -54,7 +58,9 @@ export function Footer() {
                         ? `/es/${state.slug}-examen-practica-dmv`
                         : isVi && isViState(state.code)
                           ? `/vi/${state.slug}-thi-thu-dmv`
-                          : `/${state.slug}-dmv-practice-test`
+                          : isKo && isKoState(state.code)
+                            ? `/ko/${state.slug}-dmv-pilgi-siheom`
+                            : `/${state.slug}-dmv-practice-test`
                     }
                     className="hover:text-brand"
                   >
@@ -68,7 +74,9 @@ export function Footer() {
                   ? "/es/examenes-practica-por-estado"
                   : isVi
                     ? "/vi/thi-thu-dmv-theo-tieu-bang"
-                    : "/practice-tests-by-state"
+                    : isKo
+                      ? "/ko/juibyeol-dmv-pilgi-siheom"
+                      : "/practice-tests-by-state"
               }
               className="text-brand hover:text-brand-dark font-medium"
             >
@@ -94,24 +102,7 @@ export function Footer() {
             .
           </p>
           <div className="flex items-center justify-center md:justify-end gap-x-4 text-gray-500">
-            {showLanguageToggle && (
-              <div className="flex items-center bg-gray-100 rounded-full p-0.5">
-                {([["en", "\u{1F1FA}\u{1F1F8}"], ["es", "\u{1F1EA}\u{1F1F8}"], ["vi", "\u{1F1FB}\u{1F1F3}"]] as [Language, string][]).map(([lang, flag]) => (
-                  <button
-                    key={lang}
-                    onClick={() => setLanguage(lang)}
-                    className={`px-1.5 py-1 text-sm rounded-full transition-colors ${
-                      language === lang
-                        ? "bg-white shadow-sm"
-                        : "opacity-50 hover:opacity-75"
-                    }`}
-                    aria-label={`Switch to ${lang === "en" ? "English" : lang === "es" ? "Spanish" : "Vietnamese"}`}
-                  >
-                    {flag}
-                  </button>
-                ))}
-              </div>
-            )}
+            {showLanguageToggle && <LanguageSwitcher />}
             <Link href="/schools" className="hover:text-brand hover:underline">
               Driving Schools
             </Link>

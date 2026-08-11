@@ -13,10 +13,10 @@ import {
   ExternalLink,
   ChevronRight,
 } from "lucide-react";
-import { states, getStateBySlug } from "@/data/states";
-import { getStateLandingInfoEs } from "@/data/stateLandingDataEs";
+import { getStateBySlug, getStateByCode } from "@/data/states";
+import { getStateLandingInfoKo } from "@/data/stateLandingDataKo";
+import { KO_STATE_CODES } from "@/data/koStates";
 import { isViState } from "@/data/viStates";
-import { isKoState } from "@/data/koStates";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
@@ -29,15 +29,15 @@ interface PageProps {
 }
 
 function parseStateSlug(slug: string): string | null {
-  const match = slug.match(/^(.+)-examen-practica-dmv$/);
+  const match = slug.match(/^(.+)-dmv-pilgi-siheom$/);
   return match ? match[1] : null;
 }
 
 export const dynamicParams = false;
 
 export async function generateStaticParams() {
-  return states.map((state) => ({
-    slug: `${state.slug}-examen-practica-dmv`,
+  return KO_STATE_CODES.map((code) => ({
+    slug: `${getStateByCode(code)!.slug}-dmv-pilgi-siheom`,
   }));
 }
 
@@ -49,13 +49,14 @@ export async function generateMetadata({
   const state = stateSlug ? getStateBySlug(stateSlug) : undefined;
 
   if (!state) {
-    return { title: "Estado No Encontrado" };
+    return { title: "해당 주를 찾을 수 없습니다" };
   }
 
-  const title = `Examen de Práctica DMV de ${state.name} 2026 - Gratis | TigerTest`;
-  const description = `Aprueba tu examen de permiso de ${state.name} en el primer intento. ${state.writtenTestQuestions} preguntas de práctica gratuitas basadas en el manual de conducir de ${state.name}. Empieza a practicar ahora.`;
-  const canonicalUrl = `${siteUrl}/es/${state.slug}-examen-practica-dmv`;
+  const title = `${state.name} DMV 필기시험 연습문제 2026 - 무료 | TigerTest`;
+  const description = `${state.name} 운전면허 필기시험을 한 번에 합격하세요. 실제 시험은 ${state.writtenTestQuestions}문제이며, ${state.name} 운전자 교본을 바탕으로 만든 무료 연습문제 200개로 대비할 수 있습니다. 지금 바로 연습을 시작하세요.`;
+  const canonicalUrl = `${siteUrl}/ko/${state.slug}-dmv-pilgi-siheom`;
   const enUrl = `${siteUrl}/${state.slug}-dmv-practice-test`;
+  const esUrl = `${siteUrl}/es/${state.slug}-examen-practica-dmv`;
 
   return {
     title,
@@ -64,13 +65,11 @@ export async function generateMetadata({
       canonical: canonicalUrl,
       languages: {
         "en": enUrl,
-        "es": canonicalUrl,
+        "es": esUrl,
         ...(isViState(state.code)
           ? { "vi": `${siteUrl}/vi/${state.slug}-thi-thu-dmv` }
           : {}),
-        ...(isKoState(state.code)
-          ? { "ko": `${siteUrl}/ko/${state.slug}-dmv-pilgi-siheom` }
-          : {}),
+        "ko": canonicalUrl,
         "x-default": enUrl,
       },
     },
@@ -79,14 +78,14 @@ export async function generateMetadata({
       description,
       type: "website",
       url: canonicalUrl,
-      locale: "es_US",
+      locale: "ko_KR",
       siteName: "TigerTest",
       images: [
         {
           url: "/tiger.png",
           width: 512,
           height: 512,
-          alt: `Examen de Práctica DMV de ${state.name} - TigerTest`,
+          alt: `${state.name} DMV 필기시험 연습문제 - TigerTest`,
         },
       ],
     },
@@ -99,7 +98,7 @@ export async function generateMetadata({
   };
 }
 
-export default async function SpanishStateDMVPage({ params }: PageProps) {
+export default async function KoreanStateDMVPage({ params }: PageProps) {
   const { slug } = await params;
   const stateSlug = parseStateSlug(slug);
   const state = stateSlug ? getStateBySlug(stateSlug) : undefined;
@@ -108,7 +107,7 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
     notFound();
   }
 
-  const landingInfo = getStateLandingInfoEs(state.code);
+  const landingInfo = getStateLandingInfoKo(state.code);
   if (!landingInfo) {
     notFound();
   }
@@ -121,26 +120,26 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
     .map((s) => getStateBySlug(s))
     .filter(Boolean);
 
-  // FAQ data in Spanish
+  // FAQ data in Korean
   const faqItems = [
     {
-      question: `¿Cuántas preguntas tiene el examen de permiso de ${state.name}?`,
-      answer: `El examen escrito de conocimientos del ${state.dmvName} de ${state.name} tiene ${state.writtenTestQuestions} preguntas. Necesitas responder correctamente al menos ${rawPassing} (${state.passingScore}%) para aprobar. TigerTest ofrece 200 preguntas de práctica para prepararte a fondo.`,
+      question: `${state.name} 운전면허 필기시험은 몇 문제인가요?`,
+      answer: `${state.name} ${state.dmvName}의 필기시험은 ${state.writtenTestQuestions}문제입니다. 합격하려면 최소 ${rawPassing}문제(${state.passingScore}%)를 맞혀야 합니다. TigerTest는 충분히 대비할 수 있도록 200개의 연습문제를 제공합니다.`,
     },
     {
-      question: `¿Qué calificación necesito para aprobar el examen del DMV de ${state.name}?`,
-      answer: `Necesitas una calificación de ${state.passingScore}% o más para aprobar el examen escrito del ${state.dmvName} de ${state.name}. Eso significa responder correctamente al menos ${rawPassing} de ${state.writtenTestQuestions} preguntas.`,
+      question: `${state.name} DMV 시험은 몇 점을 받아야 합격인가요?`,
+      answer: `${state.name} ${state.dmvName} 필기시험에 합격하려면 ${state.passingScore}% 이상을 받아야 합니다. 즉 ${state.writtenTestQuestions}문제 중 최소 ${rawPassing}문제를 맞혀야 합니다.`,
     },
     {
-      question: `¿Puedo tomar el examen de permiso de ${state.name} en línea?`,
+      question: `${state.name} 필기시험을 온라인으로 볼 수 있나요?`,
       answer: landingInfo.onlineTestInfo,
     },
     {
-      question: `¿Qué edad debo tener para obtener un permiso de aprendiz en ${state.name}?`,
-      answer: `En ${state.name}, puedes solicitar un permiso de aprendiz a los ${state.minPermitAge} años. Debes aprobar el examen escrito de conocimientos y un examen de visión para recibir tu permiso.`,
+      question: `${state.name}에서 임시 면허는 몇 살부터 받을 수 있나요?`,
+      answer: `${state.name}에서는 만 ${state.minPermitAge}세부터 임시 면허를 신청할 수 있습니다. 면허를 받으려면 필기시험과 시력 검사를 모두 통과해야 합니다.`,
     },
     {
-      question: `¿Qué pasa si repruebo el examen de permiso de ${state.name}?`,
+      question: `${state.name} 필기시험에 불합격하면 어떻게 되나요?`,
       answer: landingInfo.retakeInfo,
     },
   ];
@@ -165,20 +164,20 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
       {
         "@type": "ListItem",
         position: 1,
-        name: "Inicio",
+        name: "홈",
         item: siteUrl,
       },
       {
         "@type": "ListItem",
         position: 2,
-        name: "Exámenes de Práctica por Estado",
-        item: `${siteUrl}/es/examenes-practica-por-estado`,
+        name: "주별 DMV 필기시험 연습문제",
+        item: `${siteUrl}/ko/juibyeol-dmv-pilgi-siheom`,
       },
       {
         "@type": "ListItem",
         position: 3,
-        name: `Examen de Práctica DMV de ${state.name}`,
-        item: `${siteUrl}/es/${state.slug}-examen-practica-dmv`,
+        name: `${state.name} DMV 필기시험 연습문제`,
+        item: `${siteUrl}/ko/${state.slug}-dmv-pilgi-siheom`,
       },
     ],
   };
@@ -187,19 +186,19 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
   const lastModifiedIso = new Date().toISOString();
 
   // JSON-LD: WebApplication / LearningResource — mirrors the English page so
-  // Spanish results are equally citable in AI answers.
+  // Korean results are equally citable in AI answers.
   const courseJsonLd = {
     "@context": "https://schema.org",
     "@type": ["WebApplication", "LearningResource"],
-    name: `Examen de Práctica DMV de ${state.name} - TigerTest`,
-    description: `Examen de práctica gratuito del DMV de ${state.name} con 200 preguntas basadas en el manual oficial de conducir del ${state.dmvName} de ${state.name}.`,
-    url: `${siteUrl}/es/${state.slug}-examen-practica-dmv`,
-    inLanguage: "es-US",
+    name: `${state.name} DMV 필기시험 연습문제 - TigerTest`,
+    description: `${state.name} ${state.dmvName}의 공식 운전자 교본을 바탕으로 만든 200개의 문제로 구성된 무료 ${state.name} DMV 필기시험 연습문제입니다.`,
+    url: `${siteUrl}/ko/${state.slug}-dmv-pilgi-siheom`,
+    inLanguage: "ko",
     applicationCategory: "EducationalApplication",
     operatingSystem: "Any",
     educationalLevel: "Beginner",
     learningResourceType: "Practice test",
-    teaches: `Material del examen escrito de conocimientos del DMV de ${state.name}`,
+    teaches: `${state.name} DMV 필기시험 학습 내용`,
     datePublished: STATE_PAGE_PUBLISHED_AT,
     dateModified: lastModifiedIso,
     author: {
@@ -220,12 +219,12 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
     },
   };
 
-  // JSON-LD: HowTo — targets "cómo aprobar el examen del DMV de [estado]" queries.
+  // JSON-LD: HowTo — targets "[주] DMV 필기시험 합격 방법" queries.
   const howToJsonLd = {
     "@context": "https://schema.org",
     "@type": "HowTo",
-    name: `Cómo Aprobar el Examen de Permiso del DMV de ${state.name}`,
-    description: `Guía paso a paso para aprobar el examen escrito de conocimientos del ${state.dmvName} de ${state.name} en tu primer intento.`,
+    name: `${state.name} DMV 운전면허 필기시험 합격하는 방법`,
+    description: `${state.name} ${state.dmvName}의 필기시험을 첫 응시에 합격하기 위한 단계별 안내입니다.`,
     totalTime: "PT2H",
     estimatedCost: {
       "@type": "MonetaryAmount",
@@ -234,67 +233,67 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
     },
     supply: [
       { "@type": "HowToSupply", name: `${landingInfo.handbookName}` },
-      { "@type": "HowToSupply", name: "Preguntas de práctica de TigerTest" },
+      { "@type": "HowToSupply", name: "TigerTest 연습문제" },
     ],
     step: [
       {
         "@type": "HowToStep",
         position: 1,
-        name: "Lee el manual oficial del conductor",
-        text: `Descarga y lee el ${landingInfo.handbookName}. Cada pregunta del examen de permiso de ${state.name} proviene de este manual.`,
+        name: "공식 운전자 교본을 읽으세요",
+        text: `${landingInfo.handbookName}을 내려받아 읽어보세요. ${state.name} 필기시험의 모든 문제는 이 교본에서 나옵니다.`,
         url: landingInfo.handbookUrl,
       },
       {
         "@type": "HowToStep",
         position: 2,
-        name: "Practica en el modo de entrenamiento",
-        text: `Repasa las 200 preguntas de práctica específicas de ${state.name} de TigerTest una por una, con retroalimentación instantánea y explicaciones para cada respuesta.`,
-        url: `${siteUrl}/es/${state.slug}-examen-practica-dmv`,
+        name: "학습 모드로 연습하세요",
+        text: `TigerTest의 ${state.name} 맞춤 연습문제 200개를 하나씩 풀어보세요. 답할 때마다 즉시 결과와 해설이 나옵니다.`,
+        url: `${siteUrl}/ko/${state.slug}-dmv-pilgi-siheom`,
       },
       {
         "@type": "HowToStep",
         position: 3,
-        name: "Toma un examen de práctica completo y cronometrado",
-        text: `Simula el examen real con un examen de práctica de 50 preguntas. El examen del ${state.dmvName} de ${state.name} requiere ${state.passingScore}% (${rawPassing} de ${state.writtenTestQuestions}) para aprobar.`,
+        name: "전체 모의고사를 시간 내에 풀어보세요",
+        text: `50문제 모의고사로 실제 시험을 연습해 보세요. ${state.name} ${state.dmvName} 시험은 합격하려면 ${state.passingScore}%(${state.writtenTestQuestions}문제 중 ${rawPassing}문제)가 필요합니다.`,
       },
       {
         "@type": "HowToStep",
         position: 4,
-        name: "Repasa cada respuesta incorrecta",
-        text: "Vuelve a leer la explicación de cualquier pregunta que falles. TigerTest pone en cola las preguntas falladas para repetición espaciada, para que las estudies con más frecuencia.",
+        name: "틀린 문제를 모두 복습하세요",
+        text: "틀린 문제의 해설을 다시 읽어보세요. TigerTest는 틀린 문제를 복습 목록에 넣어 더 자주 다시 보여줍니다.",
       },
       {
         "@type": "HowToStep",
         position: 5,
-        name: `Agenda tu cita en el ${state.dmvName} de ${state.name}`,
-        text: `Cuando estés obteniendo constantemente más del ${state.passingScore}% en la práctica, reserva tu examen presencial del ${state.dmvName}. Lleva la identificación requerida, comprobante de domicilio y la tarifa de solicitud.`,
+        name: `${state.name} ${state.dmvName} 방문을 예약하세요`,
+        text: `연습에서 꾸준히 ${state.passingScore}% 이상이 나오면 ${state.dmvName} 방문 시험을 예약하세요. 필요한 신분증과 거주지 증명 서류, 신청 수수료를 준비해 가세요.`,
       },
     ],
   };
 
   const testimonials = [
     {
-      quote: "Usé esto para estudiar. ¡Aprobé hoy! Gracias :)",
+      quote: "이걸로 공부했어요. 오늘 합격했습니다! 감사합니다 :)",
       author: "Naive_Usual1910",
     },
     {
-      quote: "aprobé en siete minutos",
+      quote: "7분 만에 합격했어요",
       author: "vivacious-vi",
     },
     {
-      quote: "realmente me ayudó a prepararme, y aprobé mi examen hoy",
+      quote: "준비하는 데 정말 도움이 됐고, 오늘 시험에 합격했어요",
       author: "Big-Burrito-8765",
     },
     {
-      quote: "me sentí seguro después de estudiar solo el día anterior",
+      quote: "전날 공부한 것만으로도 자신감이 생겼어요",
       author: "JayjayX12",
     },
     {
-      quote: "aprobé en 3 minutos",
+      quote: "3분 만에 합격했어요",
       author: "Curdled_Cave",
     },
     {
-      quote: "ayudó mucho",
+      quote: "많은 도움이 됐어요",
       author: "WorthEducational523",
     },
   ];
@@ -326,7 +325,7 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
           <ol className="flex items-center gap-1 flex-wrap">
             <li>
               <Link href="/" className="hover:text-brand">
-                Inicio
+                홈
               </Link>
             </li>
             <li>
@@ -334,10 +333,10 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
             </li>
             <li>
               <Link
-                href="/es/examenes-practica-por-estado"
+                href="/ko/juibyeol-dmv-pilgi-siheom"
                 className="hover:text-brand"
               >
-                Exámenes por Estado
+                주별 연습문제
               </Link>
             </li>
             <li>
@@ -350,19 +349,19 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
         {/* Hero */}
         <div className="text-center mb-12">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Examen de Práctica DMV Gratis de {state.name} 2026
+            {state.name} DMV 필기시험 무료 연습문제 2026
           </h1>
           <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Aprueba tu examen de permiso del {state.dmvName} de {state.name} en
-            el primer intento. Practica con 200 preguntas específicas de{" "}
-            {state.name} basadas en el manual oficial de conducir.
+            {state.name} {state.dmvName} 필기시험을 한 번에 합격하세요. 공식
+            운전자 교본을 바탕으로 만든 {state.name} 맞춤 연습문제 200개로
+            대비할 수 있습니다.
           </p>
           <Link href={`/signup?state=${state.code}`}>
             <Button
               size="lg"
               className="text-lg px-8 py-6 bg-gray-900 text-white hover:bg-gray-800 font-bold rounded-xl"
             >
-              Empezar a Practicar Gratis
+              무료로 연습 시작하기
             </Button>
           </Link>
         </div>
@@ -375,7 +374,7 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
               <div className="text-2xl md:text-3xl font-bold text-gray-900 mb-1">
                 {state.writtenTestQuestions}
               </div>
-              <div className="text-sm text-gray-600">Preguntas en el Examen</div>
+              <div className="text-sm text-gray-600">시험 문제 수</div>
             </CardContent>
           </Card>
 
@@ -385,7 +384,7 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
               <div className="text-2xl md:text-3xl font-bold text-gray-900 mb-1">
                 {state.passingScore}%
               </div>
-              <div className="text-sm text-gray-600">Calificación para Aprobar</div>
+              <div className="text-sm text-gray-600">합격 기준 점수</div>
             </CardContent>
           </Card>
 
@@ -395,7 +394,7 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
               <div className="text-2xl md:text-3xl font-bold text-gray-900 mb-1">
                 {state.minPermitAge}
               </div>
-              <div className="text-sm text-gray-600">Edad Mín. para Permiso</div>
+              <div className="text-sm text-gray-600">임시 면허 최소 연령</div>
             </CardContent>
           </Card>
 
@@ -405,7 +404,7 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
               <div className="text-2xl md:text-3xl font-bold text-gray-900 mb-1">
                 {rawPassing}/{state.writtenTestQuestions}
               </div>
-              <div className="text-sm text-gray-600">Correctas para Aprobar</div>
+              <div className="text-sm text-gray-600">합격에 필요한 정답 수</div>
             </CardContent>
           </Card>
         </div>
@@ -414,54 +413,48 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
         <Card className="mb-12">
           <CardContent className="p-6 md:p-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-6">
-              Examen Escrito del {state.dmvName} de {state.name}: Lo Que
-              Necesitas Saber
+              {state.name} {state.dmvName} 필기시험, 꼭 알아야 할 것들
             </h2>
 
             <div className="space-y-6">
               <div>
                 <h3 className="font-semibold text-lg text-gray-900 mb-2">
-                  Formato del Examen
+                  시험 형식
                 </h3>
                 <p className="text-gray-600">
-                  El examen escrito de conocimientos del {state.dmvName} de{" "}
-                  {state.name} consiste en{" "}
+                  {state.name} {state.dmvName}의 필기시험은{" "}
+                  <strong>{state.writtenTestQuestions}개의 객관식 문제</strong>로
+                  구성되며, 교통법규와 도로 표지판, 안전 운전 요령, {state.name}{" "}
+                  고유의 규정을 다룹니다. 합격하려면{" "}
                   <strong>
-                    {state.writtenTestQuestions} preguntas de opción múltiple
+                    {state.passingScore}%({rawPassing}문제 정답)
                   </strong>{" "}
-                  que cubren leyes de tránsito, señales viales, prácticas de
-                  conducción segura y regulaciones específicas de {state.name}.
-                  Debes obtener al menos{" "}
-                  <strong>
-                    {state.passingScore}% ({rawPassing} respuestas correctas)
-                  </strong>{" "}
-                  para aprobar.
+                  이상을 받아야 합니다.
                 </p>
               </div>
 
               <div>
                 <h3 className="font-semibold text-lg text-gray-900 mb-2">
-                  Edad Mínima y Elegibilidad
+                  최소 연령 및 응시 자격
                 </h3>
                 <p className="text-gray-600">
-                  Debes tener al menos{" "}
-                  <strong>{state.minPermitAge} años</strong> para solicitar un
-                  permiso de aprendiz en {state.name}. Necesitarás aprobar el
-                  examen escrito de conocimientos y un examen de visión antes de
-                  que se emita tu permiso.
+                  {state.name}에서 임시 면허를 신청하려면 만{" "}
+                  <strong>{state.minPermitAge}세</strong> 이상이어야 합니다.
+                  면허가 발급되기 전에 필기시험과 시력 검사를 모두 통과해야
+                  합니다.
                 </p>
               </div>
 
               <div>
                 <h3 className="font-semibold text-lg text-gray-900 mb-2">
-                  Si Repruebas
+                  불합격했을 때
                 </h3>
                 <p className="text-gray-600">{landingInfo.retakeInfo}</p>
               </div>
 
               <div>
                 <h3 className="font-semibold text-lg text-gray-900 mb-2">
-                  Reglas Específicas de {state.name}
+                  {state.name} 고유 규정
                 </h3>
                 <ul className="space-y-2">
                   {landingInfo.notableRules.map((rule, index) => (
@@ -473,15 +466,25 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
                 </ul>
               </div>
 
+              {landingInfo.examManualChapters && (
+                <div>
+                  <h3 className="font-semibold text-lg text-gray-900 mb-2">
+                    시험에 나오는 교본 범위
+                  </h3>
+                  <p className="text-gray-600">
+                    {landingInfo.examManualChapters}
+                  </p>
+                </div>
+              )}
+
               <div>
                 <h3 className="font-semibold text-lg text-gray-900 mb-2">
-                  Manual Oficial del Conductor
+                  공식 운전자 교본
                 </h3>
                 <p className="text-gray-600 mb-3">
-                  Estudia el{" "}
-                  <strong>{landingInfo.handbookName}</strong> para prepararte
-                  para el examen escrito. Las preguntas de práctica de TigerTest
-                  están basadas en el material de este manual.
+                  필기시험을 준비하려면{" "}
+                  <strong>{landingInfo.handbookName}</strong>을 공부하세요.
+                  TigerTest의 연습문제도 이 교본의 내용을 바탕으로 만들었습니다.
                 </p>
                 <a
                   href={landingInfo.handbookUrl}
@@ -490,7 +493,7 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
                   className="inline-flex items-center gap-2 text-brand hover:text-brand-dark font-medium"
                 >
                   <BookOpen className="h-4 w-4" />
-                  Descargar el {landingInfo.handbookName}
+                  {landingInfo.handbookName} 내려받기
                   <ExternalLink className="h-3 w-3" />
                 </a>
               </div>
@@ -502,44 +505,42 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
         <Card className="mb-12">
           <CardContent className="p-6 md:p-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-6">
-              Qué Incluye Nuestro Examen de Práctica de {state.name}
+              {state.name} 연습문제에 포함된 내용
             </h2>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <CheckCircle2 className="h-6 w-6 text-green-600 flex-shrink-0 mt-0.5" />
                 <span className="text-gray-700">
-                  <strong>200 preguntas de práctica</strong> que cubren todos los
-                  temas del examen escrito del {state.dmvName}, incluyendo leyes
-                  específicas de {state.name}
+                  <strong>연습문제 200개</strong> — {state.name} 고유 법규를
+                  포함해 {state.dmvName} 필기시험의 모든 주제를 다룹니다
                 </span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle2 className="h-6 w-6 text-green-600 flex-shrink-0 mt-0.5" />
                 <span className="text-gray-700">
-                  <strong>4 exámenes de práctica completos</strong> con 50
-                  preguntas cada uno, simulando la experiencia real del examen del{" "}
-                  {state.dmvName}
+                  <strong>50문제짜리 모의고사 4회</strong> — 실제{" "}
+                  {state.dmvName} 시험과 똑같은 환경을 연습할 수 있습니다
                 </span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle2 className="h-6 w-6 text-green-600 flex-shrink-0 mt-0.5" />
                 <span className="text-gray-700">
-                  <strong>Modo de entrenamiento</strong> con retroalimentación
-                  instantánea y explicaciones detalladas para cada respuesta
+                  <strong>학습 모드</strong> — 문제마다 즉시 결과와 자세한
+                  해설을 확인할 수 있습니다
                 </span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle2 className="h-6 w-6 text-green-600 flex-shrink-0 mt-0.5" />
                 <span className="text-gray-700">
-                  <strong>Seguimiento de progreso</strong> para ver cómo aumenta
-                  tu probabilidad de aprobar mientras estudias
+                  <strong>진행 상황 추적</strong> — 공부하는 동안 합격 가능성이
+                  어떻게 올라가는지 확인할 수 있습니다
                 </span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle2 className="h-6 w-6 text-green-600 flex-shrink-0 mt-0.5" />
                 <span className="text-gray-700">
-                  <strong>Compatible con móviles</strong> — estudia en tu
-                  teléfono en la cama, en el sofá o donde sea
+                  <strong>모바일 최적화</strong> — 침대에서, 소파에서, 어디서든
+                  휴대폰으로 공부하세요
                 </span>
               </li>
             </ul>
@@ -549,18 +550,17 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
         {/* CTA Banner */}
         <div className="text-center bg-gradient-to-br from-brand to-brand-hover rounded-2xl p-8 md:p-12 mb-12">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
-            ¿Listo para Aprobar tu Examen del DMV de {state.name}?
+            {state.name} DMV 시험, 합격할 준비 되셨나요?
           </h2>
           <p className="text-brand-light text-lg mb-6">
-            Únete a miles de conductores de {state.name} que aprobaron en su
-            primer intento con TigerTest
+            TigerTest로 첫 응시에 합격한 수많은 {state.name} 운전자들과 함께하세요
           </p>
           <Link href={`/signup?state=${state.code}`}>
             <Button
               size="lg"
               className="text-lg px-8 py-6 bg-white text-brand-dark hover:bg-gray-100 font-bold rounded-xl"
             >
-              Empezar a Practicar Ahora — Es Gratis
+              지금 연습 시작하기 — 무료입니다
             </Button>
           </Link>
         </div>
@@ -568,7 +568,7 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
         {/* Testimonials */}
         <div className="mb-12">
           <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
-            Lo Que Dicen los Estudiantes
+            사용자 후기
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             {testimonials.map((t, i) => (
@@ -588,7 +588,7 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
         {/* FAQ Section */}
         <div className="mb-12">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">
-            Preguntas Frecuentes Sobre el Examen del DMV de {state.name}
+            {state.name} DMV 시험 자주 묻는 질문
           </h2>
           <div className="space-y-6">
             {faqItems.map((item, i) => (
@@ -606,7 +606,7 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
         {neighboringStates.length > 0 && (
           <div className="mb-12">
             <h2 className="text-2xl font-bold text-gray-900 mb-6">
-              Exámenes de Práctica de Estados Cercanos
+              주변 주의 연습문제
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
               {neighboringStates.slice(0, 5).map(
@@ -614,7 +614,11 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
                   neighbor && (
                     <Link
                       key={neighbor.slug}
-                      href={`/es/${neighbor.slug}-examen-practica-dmv`}
+                      href={
+                        getStateLandingInfoKo(neighbor.code)
+                          ? `/ko/${neighbor.slug}-dmv-pilgi-siheom`
+                          : `/${neighbor.slug}-dmv-practice-test`
+                      }
                       className="flex items-center justify-between bg-gray-50 border border-gray-200 rounded-xl p-4 hover:border-brand-border hover:bg-brand-light transition-colors"
                     >
                       <span className="font-medium text-gray-900">
@@ -631,19 +635,18 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
         {/* Final CTA */}
         <div className="text-center py-8">
           <p className="text-gray-600 mb-4">
-            ¿Listo para empezar a estudiar para tu examen de permiso de{" "}
-            {state.name}?
+            {state.name} 운전면허 필기시험 공부, 지금 시작해 볼까요?
           </p>
           <Link href={`/signup?state=${state.code}`}>
             <Button
               size="lg"
               className="text-lg px-8 py-6 bg-gray-900 text-white hover:bg-gray-800 font-bold rounded-xl"
             >
-              Empezar a Practicar Gratis
+              무료로 연습 시작하기
             </Button>
           </Link>
           <p className="text-sm text-gray-500 mt-3">
-            No se requiere cuenta. Gratis para empezar.
+            계정이 필요 없습니다. 무료로 시작하세요.
           </p>
         </div>
       </div>

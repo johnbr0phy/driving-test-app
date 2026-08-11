@@ -17,6 +17,7 @@ import {
 import { getStateBySlug, getStateByCode } from "@/data/states";
 import { getStateLandingInfoVi } from "@/data/stateLandingDataVi";
 import { VI_STATE_CODES } from "@/data/viStates";
+import { isKoState } from "@/data/koStates";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
@@ -67,6 +68,9 @@ export async function generateMetadata({
         "en": enUrl,
         "es": esUrl,
         "vi": canonicalUrl,
+        ...(isKoState(state.code)
+          ? { "ko": `${siteUrl}/ko/${state.slug}-dmv-pilgi-siheom` }
+          : {}),
         "x-default": enUrl,
       },
     },

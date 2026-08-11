@@ -40,7 +40,7 @@ export default function ResultsPage() {
         sticky
         right={
           <span className="text-sm text-gray-500">
-            {stateName} · {language === "es" ? `Examen ${testId}` : language === "vi" ? `Bài Thi ${testId}` : `Test ${testId}`} ·{" "}
+            {stateName} · {language === "es" ? `Examen ${testId}` : language === "vi" ? `Bài Thi ${testId}` : language === "ko" ? `시험 ${testId}` : `Test ${testId}`} ·{" "}
             {attemptNumber === 1 ? t("results.firstAttempt") : `${t("results.attempt")} ${attemptNumber}`}
           </span>
         }

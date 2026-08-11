@@ -1,6 +1,7 @@
 import { MetadataRoute } from "next";
 import { states, getStateByCode } from "@/data/states";
 import { VI_STATE_CODES } from "@/data/viStates";
+import { KO_STATE_CODES } from "@/data/koStates";
 
 // Fetch active school slugs for sitemap entries (best-effort — returns [] on error)
 async function getActiveSchoolSlugs(): Promise<string[]> {
@@ -86,6 +87,25 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     },
   ];
 
+  // Korean state DMV practice test landing pages (states with the largest
+  // Korean-speaking populations)
+  const stateDmvPagesKo: MetadataRoute.Sitemap = KO_STATE_CODES.map((code) => ({
+    url: `${siteUrl}/ko/${getStateByCode(code)!.slug}-dmv-pilgi-siheom`,
+    lastModified: now,
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
+  // Korean index page
+  const koreanIndexPage: MetadataRoute.Sitemap = [
+    {
+      url: `${siteUrl}/ko/juibyeol-dmv-pilgi-siheom`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
+    },
+  ];
+
   // CDL pages
   const cdlPages: MetadataRoute.Sitemap = [
     {
@@ -113,6 +133,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...spanishIndexPage,
     ...stateDmvPagesVi,
     ...vietnameseIndexPage,
+    ...stateDmvPagesKo,
+    ...koreanIndexPage,
     ...schoolPages,
   ];
 }

@@ -19,7 +19,7 @@ import { TestPageHeader } from "@/components/TestPageHeader";
 import Link from "next/link";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { states } from "@/data/states";
-import { en, es, vi } from "@/i18n";
+import { en, es, vi, ko } from "@/i18n";
 import { PaywallModal } from "@/components/PaywallModal";
 import { useAuth } from "@/contexts/AuthContext";
 import { auth } from "@/lib/firebase";
@@ -38,7 +38,7 @@ function TrainingPageContent() {
   const { user } = useAuth();
   const [paywallOpen, setPaywallOpen] = useState(false);
   const [ctaIndex] = useState(() => Math.floor(Math.random() * en.testCtas.length));
-  const ctaText = (language === "es" ? es.testCtas : language === "vi" ? vi.testCtas : en.testCtas)[ctaIndex];
+  const ctaText = (language === "es" ? es.testCtas : language === "vi" ? vi.testCtas : language === "ko" ? ko.testCtas : en.testCtas)[ctaIndex];
   const isPremium = hydrated ? hasPremiumAccess() : false;
 
   const handleUpgrade = async () => {
@@ -316,7 +316,7 @@ function TrainingPageContent() {
               <div className="mb-6">
                 <div className="text-gray-300 text-lg font-bold tracking-widest">tigertest.io</div>
                 <div className="text-gray-500 text-xs uppercase tracking-widest mt-1">
-                  {language === "es" ? "ENTRENAMIENTO DMV" : language === "vi" ? "LUYỆN TẬP DMV" : "DMV TRAINING"}
+                  {language === "es" ? "ENTRENAMIENTO DMV" : language === "vi" ? "LUYỆN TẬP DMV" : language === "ko" ? "DMV 학습" : "DMV TRAINING"}
                 </div>
               </div>
 
@@ -333,7 +333,7 @@ function TrainingPageContent() {
 
               {/* Tagline */}
               <div className="text-base md:text-lg font-extrabold uppercase tracking-widest mb-4 text-green-300">
-                {language === "es" ? "DOMINÉ MI ENTRENAMIENTO DEL DMV" : language === "vi" ? "ĐÃ THÀNH THẠO PHẦN LUYỆN TẬP DMV" : "MASTERED MY DMV TRAINING"}
+                {language === "es" ? "DOMINÉ MI ENTRENAMIENTO DEL DMV" : language === "vi" ? "ĐÃ THÀNH THẠO PHẦN LUYỆN TẬP DMV" : language === "ko" ? "DMV 학습을 완전히 정복했습니다" : "MASTERED MY DMV TRAINING"}
               </div>
 
               {/* Giant percentage */}
@@ -348,7 +348,7 @@ function TrainingPageContent() {
 
               {/* MASTERED badge */}
               <Badge className="text-lg px-6 py-2 mb-5 bg-green-600 hover:bg-green-700">
-                {language === "es" ? "DOMINADO" : language === "vi" ? "THÀNH THẠO" : "MASTERED"}
+                {language === "es" ? "DOMINADO" : language === "vi" ? "THÀNH THẠO" : language === "ko" ? "정복 완료" : "MASTERED"}
               </Badge>
 
               {/* State + Set name */}

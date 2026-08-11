@@ -80,6 +80,10 @@ export async function GET(request: NextRequest) {
   const stateCode = searchParams.get("state");
   const testIdStr = searchParams.get("testId");
   const setIdStr = searchParams.get("setId");
+  // Korean deliberately renders the English card. Satori only has the Inter
+  // faces loaded below, and Inter carries no Hangul glyphs — Korean strings
+  // would come out as tofu boxes. Add a Hangul face to loadFonts() before
+  // translating any of the labels in this route.
   const lang = searchParams.get("lang") || "en";
 
   // Validate required params — need either testId or setId

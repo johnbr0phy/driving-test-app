@@ -12,7 +12,7 @@ import { Question } from "@/types";
 import { useStore } from "@/store/useStore";
 import { useHydration } from "@/hooks/useHydration";
 import { useTranslation } from "@/contexts/LanguageContext";
-import { en, es, vi } from "@/i18n";
+import { en, es, vi, ko } from "@/i18n";
 import { PaywallModal } from "@/components/PaywallModal";
 import { useAuth } from "@/contexts/AuthContext";
 import { auth } from "@/lib/firebase";
@@ -30,7 +30,7 @@ export default function TestPage() {
   // Pick a rotating CTA once per page load. Both en/es lists have the same
   // length and align by index, so we pick from the active language's array.
   const [ctaIndex] = useState(() => Math.floor(Math.random() * en.testCtas.length));
-  const ctaText = (language === "es" ? es.testCtas : language === "vi" ? vi.testCtas : en.testCtas)[ctaIndex];
+  const ctaText = (language === "es" ? es.testCtas : language === "vi" ? vi.testCtas : language === "ko" ? ko.testCtas : en.testCtas)[ctaIndex];
 
   const isGuest = useStore((state) => state.isGuest);
   const hasPremiumAccess = useStore((state) => state.hasPremiumAccess);

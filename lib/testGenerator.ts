@@ -3,6 +3,7 @@ import type { Language } from "@/i18n";
 import questionsDataEn from "@/data/questions.json";
 import questionsDataEs from "@/data/questions_es.json";
 import questionsDataVi from "@/data/questions_vi.json";
+import questionsDataKo from "@/data/questions_ko.json";
 
 // Vietnamese is translated only for universal questions plus states whose DMV
 // offers the real knowledge test in Vietnamese; other questions fall back to
@@ -24,6 +25,10 @@ function getQuestionsVi(): Question[] {
 export function getQuestionsData(language: Language = 'en'): Question[] {
   if (language === 'es') return questionsDataEs as Question[];
   if (language === 'vi') return getQuestionsVi();
+  // The Korean bank is a full-length mirror of the English one; any string
+  // that is not yet translated is emitted as its English original at build
+  // time, so no merge step is needed here.
+  if (language === 'ko') return questionsDataKo as Question[];
   return questionsDataEn as Question[];
 }
 
@@ -42,10 +47,13 @@ function shuffle<T>(array: T[]): T[] {
 function hasPositionDependentAnswers(question: Question): boolean {
   const options = [question.optionA, question.optionB, question.optionC, question.optionD];
 
-  // Pattern to detect references to other answer options (English, Spanish, Vietnamese)
-  // Matches: "A and B", "B and C", "Both A and B", "A, B, and C", "A y B", "Todas las anteriores",
-  // "Cả A và B", "Tất cả các câu trên", etc.
-  const positionReferencePattern = /\b(A|B|C|D)\s+(and|or|y|o|và|hoặc|,)\s+(A|B|C|D)\b|\bBoth\s+(A|B|C|D)\s+and\s+(A|B|C|D)\b|\bAll of the above\b|\bNone of the above\b|\bTodas las anteriores\b|\bNinguna de las anteriores\b|Tất cả các câu trên|Không câu nào đúng/i;
+  // Pattern to detect references to other answer options (English, Spanish,
+  // Vietnamese, Korean).
+  // Matches: "A and B", "B and C", "Both A and B", "A, B, and C", "A y B",
+  // "Todas las anteriores", "Cả A và B", "Tất cả các câu trên", "A와 B", etc.
+  // Korean has no space before the particle ("A와 B"), so that branch uses \s*
+  // rather than the \s+ the Latin-script branches rely on.
+  const positionReferencePattern = /\b(A|B|C|D)\s+(and|or|y|o|và|hoặc|,)\s+(A|B|C|D)\b|\bBoth\s+(A|B|C|D)\s+and\s+(A|B|C|D)\b|\bAll of the above\b|\bNone of the above\b|\bTodas las anteriores\b|\bNinguna de las anteriores\b|Tất cả các câu trên|Không câu nào đúng|(A|B|C|D)\s*(와|과|및)\s*(A|B|C|D)|위의 모든 것|위의 어느 것도 아님|위 항목 모두|정답 없음/i;
 
   return options.some(option => positionReferencePattern.test(option));
 }

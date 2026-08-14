@@ -5,9 +5,11 @@ import questionsDataEs from "@/data/questions_es.json";
 import questionsDataVi from "@/data/questions_vi.json";
 import questionsDataKo from "@/data/questions_ko.json";
 
-// Vietnamese is translated only for universal questions plus states whose DMV
-// offers the real knowledge test in Vietnamese; other questions fall back to
-// English. Built lazily on first Vietnamese request.
+// The Vietnamese bank now mirrors the English one row-for-row, with any
+// untranslated string emitted as its English original at build time, so this
+// merge is effectively a passthrough. It is kept because it stays correct if
+// the bank is ever regenerated with a partial row set again.
+// Built lazily on first Vietnamese request.
 let questionsViMerged: Question[] | null = null;
 function getQuestionsVi(): Question[] {
   if (!questionsViMerged) {

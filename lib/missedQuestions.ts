@@ -26,6 +26,15 @@ export interface MissSummary {
   attemptCount: number;
 }
 
+// Tests 1 and 2 are the free tier's tests, and drilling them is free too:
+// their misses never sit behind Premium. Only the premium-only tests (3 and 4)
+// keep the locked drill rows and the upgrade ask.
+export const FREE_DRILL_MAX_TEST = 2;
+
+export function isDrillFree(testNumber: number): boolean {
+  return testNumber <= FREE_DRILL_MAX_TEST;
+}
+
 export function computeMissSummary(
   completedTests: TestSession[],
   selectedState: string | null

@@ -2,8 +2,9 @@
 
 // The miss drill: every question the user is still getting wrong across all
 // practice-test attempts, as re-answerable QuizRows. Reached from the
-// dashboard's per-test drop-down (premium-gated button); `?test=N` scopes to
-// one test. Free users can drill the first few, the rest sit behind Premium.
+// dashboard's per-test drop-down; `?test=N` scopes to one test. Drilling tests
+// 1 and 2 is free and uncapped; only misses from the premium-only tests (3 and
+// 4) sit behind Premium.
 
 import { Fragment, Suspense, useMemo, useState } from "react";
 import Link from "next/link";
@@ -15,15 +16,13 @@ import { PaywallModal } from "@/components/PaywallModal";
 import { QuizRow } from "@/components/QuizRow";
 import { QuestionImage } from "@/components/QuestionImage";
 import { getSignIdForQuestion } from "@/lib/signImages";
-import { computeMissSummary } from "@/lib/missedQuestions";
+import { computeMissSummary, isDrillFree } from "@/lib/missedQuestions";
 import { useStore } from "@/store/useStore";
 import { useHydration } from "@/hooks/useHydration";
 import { useCommunityStats } from "@/hooks/useCommunityStats";
 import { useUpgradeFlow } from "@/hooks/useUpgradeFlow";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { Question } from "@/types";
-
-const FREE_DRILL_LIMIT = 3;
 
 function optionText(q: Question, letter: string): string {
   const map: Record<string, string> = { A: q.optionA, B: q.optionB, C: q.optionC, D: q.optionD };
@@ -56,12 +55,25 @@ function DrillContent() {
     [communityData]
   );
 
-  const misses = testFilter
+  const isPremium = hydrated ? hasPremiumAccess() : true;
+
+  const scoped = testFilter
     ? summary.stillMissed.filter((e) => e.testNumber === testFilter)
     : summary.stillMissed;
 
-  const isPremium = hydrated ? hasPremiumAccess() : true;
-  const unlockedCount = isPremium ? misses.length : Math.min(FREE_DRILL_LIMIT, misses.length);
+  // Free misses (tests 1-2) float to the front so the locked ones stay a
+  // contiguous tail — the upsell banner renders once, at the boundary.
+  const misses = useMemo(() => {
+    if (isPremium) return scoped;
+    return [
+      ...scoped.filter((e) => isDrillFree(e.testNumber)),
+      ...scoped.filter((e) => !isDrillFree(e.testNumber)),
+    ];
+  }, [scoped, isPremium]);
+
+  const unlockedCount = isPremium
+    ? misses.length
+    : misses.filter((e) => isDrillFree(e.testNumber)).length;
   const lockedCount = misses.length - unlockedCount;
   const allFixed = misses.length > 0 && fixedCount >= unlockedCount;
 

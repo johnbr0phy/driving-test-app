@@ -14,7 +14,7 @@ import { useAuth } from "@/contexts/AuthContext";
 import { auth } from "@/lib/firebase";
 import { states } from "@/data/states";
 import { AttemptChart, sessionsToAttemptPoints } from "@/components/AttemptChart";
-import { computeMissSummary } from "@/lib/missedQuestions";
+import { computeMissSummary, isDrillFree } from "@/lib/missedQuestions";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { trackBeginCheckout, trackPaywallDismissed, trackPaywallHit, trackPurchase, trackViewItem } from "@/lib/analytics";
 
@@ -604,6 +604,9 @@ function DashboardContent() {
             // shouldn't present as "in progress"
             const activelyInProgress = inProgress && answeredCount > 0;
             const testLocked = id >= 3 && !isPremium;
+            // Drilling tests 1 and 2 is free — only the premium-only tests
+            // put their miss drill behind the paywall.
+            const drillLocked = !isPremium && !isDrillFree(id);
 
             // Miss/attempt aggregation for this test's card line + drop-down
             const testMisses = missSummary.perTest.get(id);
@@ -740,25 +743,25 @@ function DashboardContent() {
                         {stillMissed > 0 && (
                           <button
                             onClick={() => {
-                              if (isPremium) {
-                                router.push(`/drill?test=${id}`);
-                              } else {
+                              if (drillLocked) {
                                 trackViewItem("full_stats");
                                 trackPaywallHit(`drill_test_${id}`, `Test ${id} Miss Drill`);
                                 setPaywallFeature("full_stats");
                                 setPaywallOpen(true);
+                              } else {
+                                router.push(`/drill?test=${id}`);
                               }
                             }}
                             className="w-full flex items-center justify-center gap-2 rounded-lg bg-brand text-white font-bold text-sm px-4 py-3 hover:bg-brand-hover transition-colors"
                           >
-                            {!isPremium && <Lock className="h-4 w-4" />}
+                            {drillLocked && <Lock className="h-4 w-4" />}
                             {t("dashboard.drillWrongCta").replace("{{n}}", String(stillMissed))}
-                            {isPremium ? (
-                              <ChevronRight className="h-4 w-4" />
-                            ) : (
+                            {drillLocked ? (
                               <span className="text-[10px] font-bold uppercase tracking-wider bg-white/20 rounded-full px-2 py-0.5">
                                 {t("common.premium")}
                               </span>
+                            ) : (
+                              <ChevronRight className="h-4 w-4" />
                             )}
                           </button>
                         )}

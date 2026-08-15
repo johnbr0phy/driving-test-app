@@ -10,6 +10,7 @@ import { PaywallModal } from "@/components/PaywallModal";
 import { QuizRow } from "@/components/QuizRow";
 import { QuestionImage } from "@/components/QuestionImage";
 import { getSignIdForQuestion } from "@/lib/signImages";
+import { isDrillFree } from "@/lib/missedQuestions";
 import { trackDailyQuizAnswer } from "@/lib/analytics";
 import { Question } from "@/types";
 import type { ReadyTestResults } from "@/hooks/useTestResults";
@@ -67,9 +68,11 @@ export function ResultsDebriefBody({ results, upgrade }: Props) {
   // re-answered correctly (all of them when there are fewer than 3).
   const drillEngaged = missCount > 0 && fixedCount >= Math.min(3, missCount);
 
-  // Community miss-rate chips on drill rows: the first few are free, the rest
-  // blur behind a premium upsell.
+  // Community miss-rate chips on drill rows: on the premium-only tests the
+  // first few are free and the rest blur behind an upsell. Drilling tests 1
+  // and 2 is free end to end, so nothing locks there.
   const FREE_RATE_LIMIT = 3;
+  const ratesLockable = !isPremium && !isDrillFree(testId);
   const hasCommunityRates = missIndices.some((i) => communityMap.has(questions[i].questionId));
 
   const openTest4Paywall = () =>
@@ -188,7 +191,7 @@ export function ResultsDebriefBody({ results, upgrade }: Props) {
               const userAnswerLetter = answers[index];
               const communityQ = communityMap.get(question.questionId);
               const signId = getSignIdForQuestion(question.questionId);
-              const rateLocked = !isPremium && drillIdx >= FREE_RATE_LIMIT;
+              const rateLocked = ratesLockable && drillIdx >= FREE_RATE_LIMIT;
               const rateText = communityQ
                 ? t("results.communityAlsoMissed").replace("{{pct}}", String(communityQ.errorRate))
                 : undefined;
@@ -197,7 +200,7 @@ export function ResultsDebriefBody({ results, upgrade }: Props) {
                 : { value: "–", label: t("results.notAnswered"), color: "text-gray-400" };
               return (
                 <Fragment key={index}>
-                {drillIdx === FREE_RATE_LIMIT && !isPremium && hasCommunityRates && (
+                {drillIdx === FREE_RATE_LIMIT && ratesLockable && hasCommunityRates && (
                   <button
                     onClick={() =>
                       upgrade.openPaywall("full_stats", "results_drill_rates", "Results Miss Rates")

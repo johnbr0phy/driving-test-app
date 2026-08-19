@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "review:questions": "python3 scripts/review-question-banks.py"
   },
   "dependencies": {
     "@radix-ui/react-avatar": "^1.1.11",

@@ -615,9 +615,9 @@ export const es: TranslationKeys = {
 
   // Paywall modal
   paywall: {
-    unlockPremiumContent: "Desbloquear contenido Premium",
-    studySmart: "Estudia inteligente.",
-    passFirstTime: "Aprueba a la primera.",
+    unlockPremiumContent: "Esta práctica está bloqueada. Repetir el examen cuesta más.",
+    studySmart: "Esta práctica está bloqueada.",
+    passFirstTime: "Repetir el examen cuesta más.",
     getAccessTo: "Obtén acceso a",
     andCompleteDMVPrep: "y completa tu preparación para el DMV.",
     tigerTestPremium: "TigerTest Premium",
@@ -637,7 +637,7 @@ export const es: TranslationKeys = {
     ],
     oneTimePayment: "pago único",
     cheaperThanRetest: "Más barato que repetir el examen",
-    getPremium: "Obtener Premium",
+    getPremium: "Desbloquear esta práctica",
     illTakeMyChances: "Me arriesgo",
     socialProof: "Más de 2,000 estudiantes aprobaron con TigerTest",
     createFreeAccountPrompt: "Crea una cuenta gratuita para desbloquear funciones premium",

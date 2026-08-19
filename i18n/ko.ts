@@ -617,9 +617,9 @@ export const ko: TranslationKeys = {
 
   // Paywall modal
   paywall: {
-    unlockPremiumContent: "프리미엄 콘텐츠 잠금 해제",
-    studySmart: "똑똑하게 공부하고,",
-    passFirstTime: "한 번에 합격하세요.",
+    unlockPremiumContent: "이 연습은 잠겨 있습니다. 재시험이 더 비쌉니다.",
+    studySmart: "이 연습은 잠겨 있습니다.",
+    passFirstTime: "재시험이 더 비쌉니다.",
     getAccessTo: "다음을 이용하고",
     andCompleteDMVPrep: "DMV 준비를 완성하세요.",
     tigerTestPremium: "TigerTest 프리미엄",
@@ -630,8 +630,8 @@ export const ko: TranslationKeys = {
       full_stats: "전체 문제 통계",
     } as Record<string, string>,
     benefits: [
-      "주 법규 50문제 잠금 해제",
-      "안전 및 비상 상황 50문제 잠금 해제",
+      "학습 세트 3과 4 잠금 해제",
+      "모의고사 3과 4 잠금 해제",
       "계속 틀리는 문제 확인",
       "모든 문제의 정답률 확인",
       "가장 많이 틀리는 50문제 확인",
@@ -639,7 +639,7 @@ export const ko: TranslationKeys = {
     ],
     oneTimePayment: "1회 결제",
     cheaperThanRetest: "재시험 비용보다 저렴합니다",
-    getPremium: "프리미엄 시작하기",
+    getPremium: "이 연습 잠금 해제",
     illTakeMyChances: "그냥 운에 맡길게요",
     socialProof: "2,000명 이상이 TigerTest로 합격했습니다",
     createFreeAccountPrompt: "무료 계정을 만들고 프리미엄 기능을 잠금 해제하세요",

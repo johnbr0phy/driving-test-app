@@ -615,9 +615,9 @@ export const vi: TranslationKeys = {
 
   // Paywall modal
   paywall: {
-    unlockPremiumContent: "Mở khóa nội dung Premium",
-    studySmart: "Học thông minh.",
-    passFirstTime: "Đậu ngay lần đầu.",
+    unlockPremiumContent: "Phần luyện này đang khóa. Thi lại tốn hơn.",
+    studySmart: "Phần luyện này đang khóa.",
+    passFirstTime: "Thi lại tốn hơn.",
     getAccessTo: "Nhận quyền truy cập vào",
     andCompleteDMVPrep: "và hoàn tất quá trình chuẩn bị DMV của bạn.",
     tigerTestPremium: "TigerTest Premium",
@@ -628,8 +628,8 @@ export const vi: TranslationKeys = {
       full_stats: "Thống kê câu hỏi đầy đủ",
     } as Record<string, string>,
     benefits: [
-      "Mở khóa 50 câu hỏi về Luật tiểu bang",
-      "Mở khóa 50 câu hỏi về An toàn & Khẩn cấp",
+      "Mở khóa Bộ luyện tập 3 và 4",
+      "Mở khóa Bài thi thử 3 và 4",
       "Xem những gì bạn cứ làm sai mãi",
       "Xem độ chính xác của bạn ở từng câu hỏi",
       "Xem 50 câu hỏi mà đa số hay làm sai nhất",
@@ -637,7 +637,7 @@ export const vi: TranslationKeys = {
     ],
     oneTimePayment: "thanh toán một lần",
     cheaperThanRetest: "Rẻ hơn thi lại",
-    getPremium: "Mua Premium",
+    getPremium: "Mở khóa phần luyện này",
     illTakeMyChances: "Tôi sẽ thử vận may",
     socialProof: "Hơn 2.000 học viên đã thi đậu với TigerTest",
     createFreeAccountPrompt: "Tạo tài khoản miễn phí để mở khóa các tính năng premium",

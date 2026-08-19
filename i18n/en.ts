@@ -615,9 +615,9 @@ export const en = {
 
   // Paywall modal
   paywall: {
-    unlockPremiumContent: "Unlock Premium Content",
-    studySmart: "Study smart.",
-    passFirstTime: "Pass first time.",
+    unlockPremiumContent: "This practice is locked. A retest costs more.",
+    studySmart: "This practice is locked.",
+    passFirstTime: "A retest costs more.",
     getAccessTo: "Get access to",
     andCompleteDMVPrep: "and complete your DMV prep.",
     tigerTestPremium: "TigerTest Premium",
@@ -628,8 +628,8 @@ export const en = {
       full_stats: "Full Question Stats",
     } as Record<string, string>,
     benefits: [
-      "Unlock 50 State Laws questions",
-      "Unlock 50 Safety & Emergencies questions",
+      "Unlock Training Sets 3 and 4",
+      "Unlock Practice Tests 3 and 4",
       "See what you keep getting wrong",
       "See your accuracy on every question",
       "See the 50 questions most people fail",
@@ -637,7 +637,7 @@ export const en = {
     ],
     oneTimePayment: "one-time payment",
     cheaperThanRetest: "Cheaper than a retest",
-    getPremium: "Get Premium",
+    getPremium: "Unlock this practice",
     illTakeMyChances: "I'll take my chances",
     socialProof: "2,000+ students passed with TigerTest",
     createFreeAccountPrompt: "Create a free account to unlock premium features",

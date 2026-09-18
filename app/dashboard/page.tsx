@@ -585,6 +585,32 @@ function DashboardContent() {
           </div>
         </div>
 
+        {/* Premium is named and priced here so unpaid users don't have to
+            click a padlock to discover the $9.99 one-time offer. Same
+            PaywallModal + Stripe checkout as the locked-module path. */}
+        {hydrated && !isPremium && (
+          <button
+            type="button"
+            onClick={() =>
+              handlePremiumClick("training_set_4", "dashboard_premium_cta", "Dashboard Premium CTA")
+            }
+            className="block w-full text-left mb-6"
+          >
+            <div className="rounded-xl bg-gradient-to-r from-brand-light to-white border border-brand-border-light p-4 flex items-center gap-3 hover:shadow-md transition-all cursor-pointer">
+              <div className="flex-1 min-w-0">
+                <h2 className="font-semibold text-sm text-gray-900">{t("common.premium")}</h2>
+                <p className="text-xs text-gray-500 mt-0.5">{t("paywall.oneTimePayment")}</p>
+              </div>
+              <div className="flex items-center gap-3 flex-shrink-0">
+                <span className="text-lg font-bold tabular-nums text-gray-900">$9.99</span>
+                <span className="inline-flex items-center px-3 py-1.5 bg-brand text-white text-xs font-semibold rounded-full">
+                  {t("paywall.getPremium")}
+                </span>
+              </div>
+            </div>
+          </button>
+        )}
+
         {/* Interleaved Training + Tests */}
         <div className="mb-6 space-y-2">
           {[1, 2, 3, 4].map((id) => {

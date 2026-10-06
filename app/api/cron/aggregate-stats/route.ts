@@ -14,6 +14,10 @@ import { NextRequest, NextResponse } from "next/server";
 import { getAdminDb, getAdminAuth } from "@/lib/firebase-admin";
 import { getQuestionsData } from "@/lib/testGenerator";
 
+// Cap runtime well below Vercel's 300s default so a hung upstream call cannot burn
+// five minutes of Fluid Active CPU per invocation. Batch work still fits comfortably.
+export const maxDuration = 60;
+
 function verifyCronSecret(req: NextRequest): boolean {
   const secret = process.env.CRON_SECRET;
   if (!secret) return true;

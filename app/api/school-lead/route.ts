@@ -2,6 +2,10 @@ import { NextRequest, NextResponse } from "next/server";
 import { getAdminDb } from "@/lib/firebase-admin";
 import { sendEmail } from "@/lib/resend";
 
+// Cap runtime well below Vercel's 300s default so a hung upstream call cannot burn
+// five minutes of Fluid Active CPU per invocation.
+export const maxDuration = 30;
+
 export async function POST(request: NextRequest) {
   try {
     const { schoolName, contactName, email, phone, city, state, studentsPerYear, hearAbout } =
@@ -47,7 +51,7 @@ export async function POST(request: NextRequest) {
         <table role="presentation" style="width: 600px; max-width: 100%; border-collapse: collapse; background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
           <tr>
             <td style="padding: 40px 40px 24px; text-align: center;">
-              <img src="https://tigertest.io/tiger.png" alt="TigerTest" style="width: 48px; height: auto; margin-bottom: 16px;" />
+              <img src="https://www.tigertest.io/tiger.png" alt="TigerTest" style="width: 48px; height: auto; margin-bottom: 16px;" />
               <h1 style="margin: 0; color: #1a1a1a; font-size: 24px; font-weight: 600;">Thanks for reaching out!</h1>
             </td>
           </tr>
@@ -65,7 +69,7 @@ export async function POST(request: NextRequest) {
               <table role="presentation" style="margin: 32px 0; border-collapse: collapse;">
                 <tr>
                   <td align="center">
-                    <a href="https://tigertest.io/?utm_source=tigertest&utm_medium=email&utm_campaign=school_lead" style="display: inline-block; padding: 14px 28px; background-color: #1a1a1a; color: #ffffff; text-decoration: none; border-radius: 50px; font-weight: 500; font-size: 15px;">Try TigerTest</a>
+                    <a href="https://www.tigertest.io/?utm_source=tigertest&utm_medium=email&utm_campaign=school_lead" style="display: inline-block; padding: 14px 28px; background-color: #1a1a1a; color: #ffffff; text-decoration: none; border-radius: 50px; font-weight: 500; font-size: 15px;">Try TigerTest</a>
                   </td>
                 </tr>
               </table>

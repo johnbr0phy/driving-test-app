@@ -4,6 +4,10 @@ import { WebStandardStreamableHTTPServerTransport } from '@modelcontextprotocol/
 import { extractBearerToken, verifyAccessToken } from '@/lib/server/mcp-auth';
 import { registerTools } from '@/lib/server/mcp-tools';
 
+// Cap runtime well below Vercel's 300s default so a hung upstream call cannot burn
+// five minutes of Fluid Active CPU per invocation. Batch work still fits comfortably.
+export const maxDuration = 60;
+
 // In-memory sliding-window rate limiter — 60 requests per 60 s per UID.
 // Serverless: accurate within a single instance; good enough for abuse prevention.
 const RATE_LIMIT = 60;

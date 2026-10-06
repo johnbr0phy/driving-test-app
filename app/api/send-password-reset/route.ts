@@ -3,6 +3,10 @@ import { getAuth } from 'firebase-admin/auth';
 import { getAdminDb } from '@/lib/firebase-admin';
 import { sendEmail } from '@/lib/resend';
 
+// Cap runtime well below Vercel's 300s default so a hung upstream call cannot burn
+// five minutes of Fluid Active CPU per invocation.
+export const maxDuration = 30;
+
 export async function POST(request: NextRequest) {
   try {
     const { email } = await request.json();
@@ -43,7 +47,7 @@ export async function POST(request: NextRequest) {
 
     try {
       resetLink = await auth.generatePasswordResetLink(email, {
-        url: 'https://tigertest.io/login',
+        url: 'https://www.tigertest.io/login',
       });
     } catch (error: any) {
       console.error('Firebase auth error:', error.code, error.message);
@@ -73,7 +77,7 @@ export async function POST(request: NextRequest) {
         <body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f9fafb;">
           <div style="background-color: white; border-radius: 12px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
             <div style="text-align: center; margin-bottom: 30px;">
-              <img src="https://tigertest.io/tiger.png" alt="TigerTest" style="width: 64px; height: 64px;">
+              <img src="https://www.tigertest.io/tiger.png" alt="TigerTest" style="width: 64px; height: 64px;">
               <h1 style="color: #1a1a1a; margin-top: 16px; margin-bottom: 8px; font-size: 24px;">Reset Your Password</h1>
             </div>
 
@@ -103,7 +107,7 @@ export async function POST(request: NextRequest) {
             <hr style="border: none; border-top: 1px solid #e5e7eb; margin: 30px 0;">
 
             <p style="font-size: 12px; color: #9ca3af; text-align: center;">
-              <a href="https://tigertest.io" style="color: #f97316; text-decoration: none;">TigerTest</a> - Free DMV Practice Tests for All 50 US States
+              <a href="https://www.tigertest.io" style="color: #f97316; text-decoration: none;">TigerTest</a> - Free DMV Practice Tests for All 50 US States
             </p>
           </div>
         </body>

@@ -41,6 +41,17 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        // Canonical host is www (see lib/site-url.ts). Vercel's domain-level
+        // redirect normally handles apex → www before Next.js runs; keep
+        // that one set to 308 (permanent) in the Vercel dashboard. This rule
+        // is the fallback so the hop is always a permanent redirect even if
+        // the domain config changes.
+        source: "/:path*",
+        has: [{ type: "host", value: "tigertest.io" }],
+        destination: "https://www.tigertest.io/:path*",
+        permanent: true,
+      },
+      {
         source: "/states/:slug",
         destination: "/:slug-dmv-practice-test",
         permanent: true,

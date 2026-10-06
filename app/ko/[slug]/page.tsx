@@ -17,8 +17,7 @@ import { getStateBySlug, getStateByCode } from "@/data/states";
 import { getStateLandingInfoKo } from "@/data/stateLandingDataKo";
 import { KO_STATE_CODES } from "@/data/koStates";
 import { isViState } from "@/data/viStates";
-
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
+import { siteUrl } from "@/lib/site-url";
 
 // Mirrors the English state page so AI engines see a consistent publish date
 // across language variants.
@@ -59,7 +58,7 @@ export async function generateMetadata({
   const esUrl = `${siteUrl}/es/${state.slug}-examen-practica-dmv`;
 
   return {
-    title,
+    title: { absolute: title },
     description,
     alternates: {
       canonical: canonicalUrl,

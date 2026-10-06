@@ -2,6 +2,10 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getAdminDb } from '@/lib/firebase-admin';
 import { FieldValue } from 'firebase-admin/firestore';
 
+// Cap runtime well below Vercel's 300s default so a hung upstream call cannot burn
+// five minutes of Fluid Active CPU per invocation.
+export const maxDuration = 30;
+
 // Largest batch a client can legitimately accumulate: a full 50-question test
 // completion plus a burst of training answers.
 const MAX_BATCH = 200;

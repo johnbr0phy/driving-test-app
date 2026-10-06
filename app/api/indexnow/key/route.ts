@@ -1,5 +1,9 @@
 import { NextResponse } from "next/server";
 
+// Cap runtime well below Vercel's 300s default so a hung upstream call cannot burn
+// five minutes of Fluid Active CPU per invocation.
+export const maxDuration = 30;
+
 // IndexNow ownership-verification endpoint. Bing/Yandex/etc. fetch this URL
 // to confirm the site owner controls the key used in the ping payload.
 //

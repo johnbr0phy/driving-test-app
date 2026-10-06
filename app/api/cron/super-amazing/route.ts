@@ -25,6 +25,10 @@ import {
 } from "@/lib/cron-email";
 import { EMAIL_TEMPLATES } from "@/lib/email-templates";
 
+// Cap runtime well below Vercel's 300s default so a hung upstream call cannot burn
+// five minutes of Fluid Active CPU per invocation. Batch work still fits comfortably.
+export const maxDuration = 60;
+
 const EMAIL_KEY = "superAmazingUnlocked";
 const INCLUDE_LEGACY = process.env.INCLUDE_LEGACY_CONSENT === "true";
 

@@ -2,11 +2,10 @@ import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { Smartphone, Monitor } from "lucide-react";
-
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
+import { siteUrl } from "@/lib/site-url";
 
 export const metadata: Metadata = {
-  title: "Free CDL Practice Test 2026 - General Knowledge | TigerTest",
+  title: { absolute: "Free CDL Practice Test 2026 - General Knowledge | TigerTest" },
   description: "Free CDL practice tests with 600 questions. Pass your Commercial Driver&apos;s License general knowledge test on the first try. 12 practice tests with instant feedback.",
   keywords: "CDL practice test, commercial driver&apos;s license, CDL general knowledge, truck driver test, CDL exam prep, free CDL test",
   alternates: {

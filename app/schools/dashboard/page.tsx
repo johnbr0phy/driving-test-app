@@ -18,6 +18,7 @@ import { useSchoolAuth } from "@/lib/hooks/useSchoolAuth";
 import { ref as storageRef, uploadBytes, getDownloadURL } from "firebase/storage";
 import { doc, updateDoc } from "firebase/firestore";
 import { storage, db, auth } from "@/lib/firebase";
+import { siteUrl } from "@/lib/site-url";
 
 // Every /api/schools/* route is gated on the school admin's Firebase ID
 // token (lib/server/school-auth.ts). Without this header the API answers 401.
@@ -97,7 +98,7 @@ function OnboardingChecklist({
     }
   }, [schoolId]);
 
-  const publicUrl = schoolId ? `https://tigertest.io/schools/${schoolId}` : null;
+  const publicUrl = schoolId ? `${siteUrl}/schools/${schoolId}` : null;
 
   const items = [
     {
@@ -320,7 +321,7 @@ function SettingsPanel({
 
   // ── Copy URL state ──
   const [copied, setCopied] = useState(false);
-  const publicUrl = schoolId ? `https://tigertest.io/schools/${schoolId}` : "";
+  const publicUrl = schoolId ? `${siteUrl}/schools/${schoolId}` : "";
 
   const handleCopyUrl = async () => {
     if (!publicUrl) return;
@@ -773,7 +774,7 @@ interface SharePanelProps {
 }
 
 function SharePanel({ onClose, schoolId, schoolName }: SharePanelProps) {
-  const publicUrl = schoolId ? `https://tigertest.io/schools/${schoolId}` : "";
+  const publicUrl = schoolId ? `${siteUrl}/schools/${schoolId}` : "";
   const [copied, setCopied] = useState(false);
 
   const handleCopy = async () => {
@@ -1648,7 +1649,7 @@ function DashboardInner() {
                 {schoolId && (
                   <button
                     onClick={async () => {
-                      const url = `https://tigertest.io/schools/${schoolId}`;
+                      const url = `${siteUrl}/schools/${schoolId}`;
                       try { await navigator.clipboard.writeText(url); } catch { /* ignore */ }
                     }}
                     className="flex items-center justify-center gap-1.5 text-sm text-brand border border-brand/30 rounded-lg px-4 py-2 hover:bg-brand/5 transition-colors"

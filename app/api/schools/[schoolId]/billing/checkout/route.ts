@@ -3,6 +3,10 @@ import { NextRequest, NextResponse } from "next/server";
 import { getAdminDb } from "@/lib/firebase-admin";
 import { requireSchoolAdmin } from "@/lib/server/school-auth";
 
+// Cap runtime well below Vercel's 300s default so a hung upstream call cannot burn
+// five minutes of Fluid Active CPU per invocation.
+export const maxDuration = 30;
+
 const TIERS = {
   starter: {
     name: "TigerTest School — Starter (10 seats)",
@@ -62,10 +66,10 @@ export async function POST(
 
   const successUrl =
     body.successUrl ??
-    `${process.env.NEXT_PUBLIC_BASE_URL ?? "https://tigertest.io"}/schools/dashboard?billing=success`;
+    `${process.env.NEXT_PUBLIC_BASE_URL ?? "https://www.tigertest.io"}/schools/dashboard?billing=success`;
   const cancelUrl =
     body.cancelUrl ??
-    `${process.env.NEXT_PUBLIC_BASE_URL ?? "https://tigertest.io"}/schools/dashboard`;
+    `${process.env.NEXT_PUBLIC_BASE_URL ?? "https://www.tigertest.io"}/schools/dashboard`;
 
   // Look up school so we can pass admin email to Stripe
   let adminEmail: string | undefined;

@@ -2,6 +2,10 @@ import { NextRequest, NextResponse } from "next/server";
 import { getAdminDb } from "@/lib/firebase-admin";
 import { requireSchoolAdmin } from "@/lib/server/school-auth";
 
+// Cap runtime well below Vercel's 300s default so a hung upstream call cannot burn
+// five minutes of Fluid Active CPU per invocation.
+export const maxDuration = 30;
+
 type Params = { params: Promise<{ schoolId: string; uid: string }> };
 
 // ── PATCH /api/schools/[schoolId]/students/[uid] ──────────────────────────

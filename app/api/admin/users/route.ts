@@ -4,6 +4,10 @@ import { isAdminEmail } from '@/lib/admin';
 import { computeAnswersByDay } from '@/lib/server/answersByDay';
 import { states } from '@/data/states';
 
+// Cap runtime well below Vercel's 300s default so a hung upstream call cannot burn
+// five minutes of Fluid Active CPU per invocation. Batch work still fits comfortably.
+export const maxDuration = 60;
+
 const STATE_PASS_PCT: Record<string, number> = states.reduce(
   (acc, s) => {
     acc[s.code] = s.passingScore;

@@ -3,6 +3,10 @@ import { getAdminAuth, getAdminDb } from '@/lib/firebase-admin';
 import { consumePendingAuth, saveAuthCode, getClient, PendingAuth } from '@/lib/server/oauth-store';
 import { randomUUID } from 'crypto';
 
+// Cap runtime well below Vercel's 300s default so a hung upstream call cannot burn
+// five minutes of Fluid Active CPU per invocation.
+export const maxDuration = 30;
+
 // GET: fetch display info for the consent screen without consuming the pending auth.
 export async function GET(request: NextRequest): Promise<NextResponse> {
   const { searchParams } = new URL(request.url);

@@ -6,6 +6,7 @@ import { Footer } from "@/components/Footer";
 import { Providers } from "@/components/Providers";
 import { SuperAmazingFireworks } from "@/components/SuperAmazingFireworks";
 import { NativeAppShell } from "@/components/NativeAppShell";
+import { siteUrl } from "@/lib/site-url";
 
 // viewportFit: "cover" lets the page extend behind the notch/home
 // indicator in the native app shell; env(safe-area-inset-*) padding is
@@ -16,8 +17,6 @@ export const viewport: Viewport = {
   initialScale: 1,
   viewportFit: "cover",
 };
-
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

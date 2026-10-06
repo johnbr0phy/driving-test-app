@@ -5,6 +5,7 @@ import { SchoolLandingCta } from "@/components/SchoolLandingCta";
 import Image from "next/image";
 import { initializeApp, getApps, cert } from "firebase-admin/app";
 import { getFirestore } from "firebase-admin/firestore";
+import { siteUrl } from "@/lib/site-url";
 
 // Initialize Firebase Admin (server-side only)
 function getAdminDb() {
@@ -88,7 +89,7 @@ export default async function SchoolLandingPage({ params }: Props) {
   }
 
   const signupUrl = `/signup?school=${encodeURIComponent(schoolSlug)}`;
-  const canonicalUrl = `https://tigertest.io/schools/${schoolSlug}`;
+  const canonicalUrl = `${siteUrl}/schools/${schoolSlug}`;
 
   return (
     <>

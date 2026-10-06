@@ -5,6 +5,10 @@ import { sendCronEmail, buildHtml } from '@/lib/cron-email';
 import { EMAIL_TEMPLATES } from '@/lib/email-templates';
 import Stripe from 'stripe';
 
+// Cap runtime well below Vercel's 300s default so a hung upstream call cannot burn
+// five minutes of Fluid Active CPU per invocation.
+export const maxDuration = 30;
+
 export async function POST(request: NextRequest) {
   const body = await request.text();
   const signature = request.headers.get('stripe-signature');

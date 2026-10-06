@@ -2,6 +2,7 @@ import { MetadataRoute } from "next";
 import { states, getStateByCode } from "@/data/states";
 import { VI_STATE_CODES } from "@/data/viStates";
 import { KO_STATE_CODES } from "@/data/koStates";
+import { siteUrl } from "@/lib/site-url";
 
 // Fetch active school slugs for sitemap entries (best-effort — returns [] on error)
 async function getActiveSchoolSlugs(): Promise<string[]> {
@@ -22,7 +23,6 @@ async function getActiveSchoolSlugs(): Promise<string[]> {
 }
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
   const now = new Date();
 

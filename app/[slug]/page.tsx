@@ -17,8 +17,7 @@ import { states, getStateBySlug } from "@/data/states";
 import { stateLandingData, getStateLandingInfo } from "@/data/stateLandingData";
 import { isViState } from "@/data/viStates";
 import { isKoState } from "@/data/koStates";
-
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
+import { siteUrl } from "@/lib/site-url";
 
 // Original publish date for state DMV practice test pages. Bump only on a
 // major content refactor — schema requires a real, stable publishedAt.
@@ -60,7 +59,7 @@ export async function generateMetadata({
   const canonicalUrl = `${siteUrl}/${state.slug}-dmv-practice-test`;
 
   return {
-    title,
+    title: { absolute: title },
     description,
     alternates: {
       canonical: canonicalUrl,

@@ -5,8 +5,7 @@ import { Smartphone, Monitor } from "lucide-react";
 import { states } from "@/data/states";
 import { HomeHero, HomeCTA } from "@/components/HomeHero";
 import { T } from "@/components/T";
-
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
+import { siteUrl } from "@/lib/site-url";
 
 export const metadata: Metadata = {
   alternates: {

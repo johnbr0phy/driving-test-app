@@ -58,10 +58,10 @@ export function signoff(lead = "Good luck,"): string {
 
 function emailShell({ title, heading, body, unsubscribe = true }: ShellOptions): string {
   const footerLinks = unsubscribe
-    ? `<a href="https://tigertest.io/unsubscribe?token={{unsubscribeToken}}" style="color: #FF6B35; text-decoration: none;">Unsubscribe</a>
+    ? `<a href="https://www.tigertest.io/unsubscribe?token={{unsubscribeToken}}" style="color: #FF6B35; text-decoration: none;">Unsubscribe</a>
                 &nbsp;•&nbsp;
-                <a href="https://tigertest.io/privacy" style="color: #FF6B35; text-decoration: none;">Privacy Policy</a>`
-    : `<a href="https://tigertest.io/privacy" style="color: #FF6B35; text-decoration: none;">Privacy Policy</a>`;
+                <a href="https://www.tigertest.io/privacy" style="color: #FF6B35; text-decoration: none;">Privacy Policy</a>`
+    : `<a href="https://www.tigertest.io/privacy" style="color: #FF6B35; text-decoration: none;">Privacy Policy</a>`;
 
   return `<!DOCTYPE html>
 <html lang="en">
@@ -77,7 +77,7 @@ function emailShell({ title, heading, body, unsubscribe = true }: ShellOptions):
         <table role="presentation" style="width: 600px; max-width: 100%; border-collapse: collapse; background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
           <tr>
             <td style="padding: 40px 40px 24px; text-align: center;">
-              <img src="https://tigertest.io/tiger.png" alt="TigerTest" style="width: 48px; height: auto; margin-bottom: 16px;" />
+              <img src="https://www.tigertest.io/tiger.png" alt="TigerTest" style="width: 48px; height: auto; margin-bottom: 16px;" />
               <h1 style="margin: 0; color: #1a1a1a; font-size: 24px; font-weight: 600;">${heading}</h1>
             </td>
           </tr>
@@ -102,9 +102,9 @@ ${body}
 }
 
 const DASH = (campaign: string) =>
-  `https://tigertest.io/dashboard?utm_source=tigertest&utm_medium=email&utm_campaign=${campaign}`;
+  `https://www.tigertest.io/dashboard?utm_source=tigertest&utm_medium=email&utm_campaign=${campaign}`;
 const STATS = (campaign: string) =>
-  `https://tigertest.io/stats?utm_source=tigertest&utm_medium=email&utm_campaign=${campaign}`;
+  `https://www.tigertest.io/stats?utm_source=tigertest&utm_medium=email&utm_campaign=${campaign}`;
 
 export const EMAIL_TEMPLATES: Record<string, string> = {
   // Sent immediately at signup by /api/send-welcome-email.
@@ -275,7 +275,7 @@ export const EMAIL_TEMPLATES: Record<string, string> = {
       p(
         `If TigerTest helped, <strong style="font-weight: 600;">please share it with a friend</strong>. Word of mouth is the #1 way people find us.`
       ),
-      cta("https://tigertest.io/?utm_source=tigertest&utm_medium=email&utm_campaign=inactive_share", "Share TigerTest.io"),
+      cta("https://www.tigertest.io/?utm_source=tigertest&utm_medium=email&utm_campaign=inactive_share", "Share TigerTest.io"),
       p("And if you haven't taken your test yet, no rush. We're still here."),
       signoff("Thanks for using TigerTest,"),
     ].join("\n"),

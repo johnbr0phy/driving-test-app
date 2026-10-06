@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | TigerTest",
+  title: "Privacy Policy",
   description: "TigerTest privacy policy and data practices.",
 };
 

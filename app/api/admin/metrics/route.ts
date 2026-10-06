@@ -2,6 +2,10 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getAdminDb, getAdminAuth } from '@/lib/firebase-admin';
 import { isAdminEmail } from '@/lib/admin';
 
+// Cap runtime well below Vercel's 300s default so a hung upstream call cannot burn
+// five minutes of Fluid Active CPU per invocation. Batch work still fits comfortably.
+export const maxDuration = 60;
+
 // Growth/revenue metrics for /admin/v2. Everything here is derived from two
 // sources of truth: the users collection (signups, activity, subscription) and
 // the payments collection (real Stripe amounts). The client only buckets and

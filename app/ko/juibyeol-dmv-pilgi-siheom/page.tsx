@@ -3,11 +3,10 @@ import Link from "next/link";
 import { ChevronRight, Info } from "lucide-react";
 import { getStateByCode } from "@/data/states";
 import { KO_STATE_CODES } from "@/data/koStates";
-
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
+import { siteUrl } from "@/lib/site-url";
 
 export const metadata: Metadata = {
-  title: "주별 DMV 필기시험 연습문제 2026 - 무료 | TigerTest",
+  title: { absolute: "주별 DMV 필기시험 연습문제 2026 - 무료 | TigerTest" },
   description:
     "미국 주별 무료 DMV 운전면허 필기시험 연습문제. 각 주의 공식 운전자 교본을 바탕으로 주당 200문제를 제공합니다. 한 번에 합격하세요.",
   alternates: {

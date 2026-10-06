@@ -1,5 +1,10 @@
 import { NextRequest, NextResponse } from "next/server";
 import { states } from "@/data/states";
+import { siteUrl } from "@/lib/site-url";
+
+// Cap runtime well below Vercel's 300s default so a hung upstream call cannot burn
+// five minutes of Fluid Active CPU per invocation.
+export const maxDuration = 30;
 
 // IndexNow submission endpoint. POSTs the canonical URL list to
 // api.indexnow.org so Bing (and downstream consumers like ChatGPT search
@@ -7,10 +12,8 @@ import { states } from "@/data/states";
 // of waiting on Bing's normal crawl cadence.
 //
 // Trigger via Vercel Cron (see vercel.json) or manually:
-//   curl -X POST https://tigertest.io/api/indexnow/ping \
+//   curl -X POST https://www.tigertest.io/api/indexnow/ping \
 //     -H "Authorization: Bearer $CRON_SECRET"
-
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
 function verifyAuth(req: NextRequest): boolean {
   const secret = process.env.CRON_SECRET;
@@ -20,14 +23,14 @@ function verifyAuth(req: NextRequest): boolean {
 
 function buildUrlList(): string[] {
   const urls = new Set<string>();
-  urls.add(SITE_URL);
-  urls.add(`${SITE_URL}/practice-tests-by-state`);
-  urls.add(`${SITE_URL}/cdl-practice-test`);
-  urls.add(`${SITE_URL}/es/examenes-practica-por-estado`);
+  urls.add(siteUrl);
+  urls.add(`${siteUrl}/practice-tests-by-state`);
+  urls.add(`${siteUrl}/cdl-practice-test`);
+  urls.add(`${siteUrl}/es/examenes-practica-por-estado`);
 
   for (const state of states) {
-    urls.add(`${SITE_URL}/${state.slug}-dmv-practice-test`);
-    urls.add(`${SITE_URL}/es/${state.slug}-examen-practica-dmv`);
+    urls.add(`${siteUrl}/${state.slug}-dmv-practice-test`);
+    urls.add(`${siteUrl}/es/${state.slug}-examen-practica-dmv`);
   }
   return Array.from(urls);
 }
@@ -45,13 +48,13 @@ async function submit(req: NextRequest) {
     );
   }
 
-  const host = new URL(SITE_URL).host;
+  const host = new URL(siteUrl).host;
   const urls = buildUrlList();
 
   const payload = {
     host,
     key,
-    keyLocation: `${SITE_URL}/api/indexnow/key`,
+    keyLocation: `${siteUrl}/api/indexnow/key`,
     urlList: urls,
   };
 

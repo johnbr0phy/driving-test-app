@@ -2,12 +2,12 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 import { states } from "@/data/states";
-
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
+import { siteUrl } from "@/lib/site-url";
 
 export const metadata: Metadata = {
-  title:
-    "Exámenes de Práctica DMV por Estado 2026 - Gratis | TigerTest",
+  title: {
+    absolute: "Exámenes de Práctica DMV por Estado 2026 - Gratis | TigerTest",
+  },
   description:
     "Exámenes de práctica DMV gratuitos para los 50 estados. Elige tu estado y empieza a practicar con 200 preguntas basadas en el manual de conducir de tu estado. Aprueba tu examen de permiso en el primer intento.",
   alternates: {

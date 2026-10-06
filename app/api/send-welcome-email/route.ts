@@ -4,6 +4,10 @@ import { FieldValue } from "firebase-admin/firestore";
 import { sendEmail } from "@/lib/resend";
 import { EMAIL_TEMPLATES } from "@/lib/email-templates";
 
+// Cap runtime well below Vercel's 300s default so a hung upstream call cannot burn
+// five minutes of Fluid Active CPU per invocation.
+export const maxDuration = 30;
+
 const welcomeTemplate = EMAIL_TEMPLATES.welcome;
 
 export async function POST(request: NextRequest) {

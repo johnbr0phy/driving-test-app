@@ -11,6 +11,10 @@ import questionsEs from "@/data/questions_es.json";
 import questionsVi from "@/data/questions_vi.json";
 import questionsEn from "@/data/questions.json";
 
+// Cap runtime well below Vercel's 300s default so a hung upstream call cannot burn
+// five minutes of Fluid Active CPU per invocation.
+export const maxDuration = 30;
+
 type QuestionEntry = {
   questionId: string;
   question: string;
@@ -79,7 +83,14 @@ export async function GET(req: NextRequest) {
       });
     }
 
-    return NextResponse.json(data);
+    // Data only changes on the daily aggregate-stats cron. Let the CDN absorb
+    // repeat reads instead of paying a function invocation + Firestore read
+    // (+ a 2,200-question translation pass) on every stats/drill page view.
+    return NextResponse.json(data, {
+      headers: {
+        "Cache-Control": "public, s-maxage=3600, stale-while-revalidate=86400",
+      },
+    });
   } catch (err: any) {
     console.error("[community-stats]", err);
     return NextResponse.json({ error: err.message }, { status: 500 });

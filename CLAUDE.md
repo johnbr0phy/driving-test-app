@@ -45,6 +45,22 @@ The store in `/store/useStore.ts` is the single source of truth. Key sections:
 - Firebase sync: `loadUserData()`, `saveToFirestore()`, `convertGuestToUser()`
 - Data versioning (`DATA_VERSION = 2`) with migration logic on load
 
+### Canonical Host and SEO URLs
+
+The site is served on `https://www.tigertest.io`. The apex `tigertest.io` redirects
+there at the Vercel domain level (keep that redirect **308 permanent** in Vercel →
+Settings → Domains; `next.config.ts` also carries a permanent host redirect as a
+fallback). Firebase Auth is pinned to the www origin in `lib/firebase.ts`.
+
+Every absolute URL the site emits must come from `lib/site-url.ts` (`siteUrl`):
+canonical tags, sitemap, robots, hreflang alternates, `metadataBase`/og:url,
+JSON-LD, IndexNow submissions and email links. Never hardcode the apex host; a
+canonical that redirects makes Google pick the winning URL itself.
+
+Page titles: the root layout applies the `%s | TigerTest` template. SEO pages whose
+title already ends in `| TigerTest` must use `title: { absolute: ... }`, otherwise
+the suffix is rendered twice.
+
 ### Routing
 
 App Router pages in `/app/`. Key routes:
@@ -78,7 +94,7 @@ result. Store submission guide: `docs/APP_STORE_DEPLOYMENT.md`.
 ```
 RESEND_API_KEY                  # Email sending (Resend)
 FIREBASE_SERVICE_ACCOUNT_KEY    # Server-side Firebase admin SDK (JSON)
-NEXT_PUBLIC_SITE_URL            # Site URL for metadata
+NEXT_PUBLIC_SITE_URL            # Public origin override (default https://www.tigertest.io, see lib/site-url.ts)
 CRON_SECRET                     # Bearer token for /api/cron/* and /api/indexnow/ping
 INDEXNOW_KEY                    # 8–128 char hex key for IndexNow (Bing) submissions
 ```

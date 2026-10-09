@@ -4,8 +4,12 @@
 DMV images remain at the root of `public`. Exam images live at
 `public/tigers/{examId}/tiger_face_01.png` through `tiger_face_08.png`.
 
-Current exam sets: CDL, CDL Endorsements, Motorcycle, Citizenship, Part 107,
-Ham Radio, EPA 608, CNA, PTCB, Phlebotomy, EKG, HTL, CST and CRCST.
+All 30 tests now have all eight expressions, including the original DMV set.
+The 29 exam sets are CDL, CDL Endorsements, Motorcycle, Citizenship, Part 107,
+Ham Radio, EPA 608, CNA, PTCB, Phlebotomy, EKG, HTL, CST, CRCST, CCMA,
+Dental Assistant, EMT, Food Protection Manager, Real Estate, Life & Health
+Insurance, Notary, TEAS, AWS Cloud Practitioner, CompTIA A+, Food Handler,
+Boating, Hunter Safety, CompTIA Security+ and HESI A2.
 
 These are 512 × 512 transparent PNG production exports of the TigerTest
 illustrations. The default mascot reuses expression 03. PNG is also supported
@@ -34,3 +38,8 @@ The helper is used by exam headers, the test catalog, the test picker,
 settings, landing-page celebration images, dashboards, training completion,
 results, empty drills and shared score cards. The score-card files are
 explicitly included in Next's production file trace.
+
+The final 15 sets add 120 PNGs (9.5 MiB). CCMA uses the corrected rounded
+head throughout. The role and expression prompts are recorded in
+`TIGER_ASSET_PROMPTS.md`. These images were created with the built-in image
+generation tool and exported at 512 × 512 while preserving transparency.

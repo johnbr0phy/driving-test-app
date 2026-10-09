@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useRouter, usePathname } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { useAuth } from "@/contexts/AuthContext";
@@ -10,14 +10,13 @@ import { useAdmin } from "@/hooks/useAdmin";
 import { useHydration } from "@/hooks/useHydration";
 import { useTranslation } from "@/contexts/LanguageContext";
 import Image from "next/image";
-import { Shield, BarChart3, LogOut } from "lucide-react";
+import { Shield, BarChart3 } from "lucide-react";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { TestSwitcher } from "@/components/TestSwitcher";
 import { EXAMS } from "@/lib/exams";
 
 export function Header() {
-  const { user, logout } = useAuth();
-  const router = useRouter();
+  const { user } = useAuth();
   const pathname = usePathname();
   const photoURL = useStore((state) => state.photoURL);
   const isGuest = useStore((state) => state.isGuest);
@@ -26,11 +25,6 @@ export function Header() {
   const subscription = useStore((state) => state.subscription);
   const isPremium = hydrated && !isGuest && !!user && subscription?.isPremium === true;
   const { t } = useTranslation();
-
-  const handleLogout = async () => {
-    await logout();
-    router.push("/");
-  };
 
   const displayPhotoURL = photoURL || user?.photoURL;
 
@@ -91,16 +85,6 @@ export function Header() {
                     <AvatarFallback className="text-lg">😊</AvatarFallback>
                   </Avatar>
                 </Link>
-                <Button
-                  onClick={handleLogout}
-                  variant="outline"
-                  className="text-gray-700 border-gray-300 hover:bg-gray-50 px-2.5 sm:px-4"
-                  title={t("common.logOut")}
-                  aria-label={t("common.logOut")}
-                >
-                  <LogOut className="h-5 w-5 sm:hidden" aria-hidden="true" />
-                  <span className="hidden sm:inline">{t("common.logOut")}</span>
-                </Button>
               </>
             ) : isGuest && !isOnboarding ? (
               <Link href="/signup">

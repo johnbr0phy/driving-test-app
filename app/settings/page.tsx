@@ -14,7 +14,7 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import Link from "next/link";
-import { Loader2, User, AlertTriangle, MapPin, LayoutGrid, ChevronRight } from "lucide-react";
+import { Loader2, User, AlertTriangle, MapPin, LayoutGrid, ChevronRight, LogOut } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { useStore } from "@/store/useStore";
@@ -27,7 +27,7 @@ import { TestIcon } from "@/components/TestIcon";
 export default function SettingsPage() {
   const router = useRouter();
   const hydrated = useHydration();
-  const { user } = useAuth();
+  const { user, logout } = useAuth();
   const { t } = useTranslation();
   const photoURL = useStore((state) => state.photoURL);
   const setPhotoURL = useStore((state) => state.setPhotoURL);
@@ -74,6 +74,11 @@ export default function SettingsPage() {
   };
 
   const displayPhotoURL = photoURL || user?.photoURL;
+
+  const handleLogout = async () => {
+    await logout();
+    router.push("/");
+  };
 
   const handleResetData = () => {
     setResetDialog(true);
@@ -269,6 +274,15 @@ export default function SettingsPage() {
                     {t("settings.signInWithGoogle")}
                   </div>
                 )}
+
+                <Button
+                  onClick={handleLogout}
+                  variant="outline"
+                  className="w-full text-gray-700 border-gray-300 hover:bg-gray-50"
+                >
+                  <LogOut className="h-4 w-4 mr-2" aria-hidden="true" />
+                  {t("common.logOut")}
+                </Button>
               </div>
             </CardContent>
           </Card>

@@ -41,8 +41,9 @@ export default function TestsHubPage() {
           <Image src="/tiger.png" alt="TigerTest" width={72} height={72} className="mx-auto mb-5 w-16 md:w-[72px]" />
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 tracking-tight">Pick Your Practice Test</h1>
           <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
-            Every test on TigerTest is free, needs no account to start, and uses the same
-            mastery-based training and full-length practice tests.
+            Every test on TigerTest is free to start with no account, and uses the same
+            mastery-based training and full-length practice tests. The DMV test has two
+            free practice tests and two more for a one-time $9.99. Everything else is free.
           </p>
         </div>
       </div>

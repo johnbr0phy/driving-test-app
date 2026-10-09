@@ -30,7 +30,7 @@ function TestCard({ test }: { test: TestCatalogEntry }) {
         <p className="flex-1 text-gray-600">{test.blurb}</p>
         <div className="mt-5 flex items-center justify-between text-sm">
           <span className="text-gray-500">
-            {test.questions} questions · Free
+            {test.questions} questions · {test.pricing ?? "Free"}
           </span>
           <span className="inline-flex items-center gap-1 font-semibold text-brand group-hover:gap-2 transition-all">
             Start <ArrowRight className="h-4 w-4" aria-hidden="true" />
@@ -87,7 +87,7 @@ export function TestCatalogGrid() {
         >
           {searching
             ? `${count} of ${TEST_CATALOG.length} tests`
-            : `${TEST_CATALOG.length} free practice tests`}
+            : `${TEST_CATALOG.length} practice tests, all free to start`}
         </p>
       </div>
 

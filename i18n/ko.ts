@@ -521,6 +521,11 @@ export const ko: TranslationKeys = {
   // Settings page
   settings: {
     settings: "설정",
+    yourTests: "내 연습 시험",
+    inProgress: "진행 중",
+    notStarted: "시작 전",
+    noStateSelected: "아직 DMV 주를 선택하지 않았습니다. 주를 선택하면 DMV 필기 시험을 시작할 수 있습니다.",
+    chooseState: "주 선택하기",
     stateSelection: "주 선택",
     currentlyPracticingFor: "현재 연습 중인 주:",
     changeState: "주 변경",
@@ -552,7 +557,7 @@ export const ko: TranslationKeys = {
     allTestProgress: "모든 시험 진행 상황 및 점수",
     allTrainingStats: "모든 학습 모드 통계",
     allAttemptHistory: "모든 응시 기록",
-    dataForEveryState: "연습했던 모든 주의 데이터",
+    dataForEveryState: "연습했던 모든 주와 시험의 데이터",
     cannotBeUndone: "이 작업은 되돌릴 수 없습니다.",
     yesResetEverything: "네, 모두 초기화합니다",
   },

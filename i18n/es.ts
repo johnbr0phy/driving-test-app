@@ -519,6 +519,11 @@ export const es: TranslationKeys = {
   // Settings page
   settings: {
     settings: "Configuración",
+    yourTests: "Tus exámenes de práctica",
+    inProgress: "En progreso",
+    notStarted: "Sin empezar",
+    noStateSelected: "Aún no has elegido un estado del DMV. Elige uno para empezar el examen de permiso.",
+    chooseState: "Elige tu estado",
     stateSelection: "Selección de estado",
     currentlyPracticingFor: "Actualmente practicando para:",
     changeState: "Cambiar estado",
@@ -550,7 +555,7 @@ export const es: TranslationKeys = {
     allTestProgress: "Todo el progreso y puntuaciones de exámenes",
     allTrainingStats: "Todas las estadísticas del modo entrenamiento",
     allAttemptHistory: "Todo el historial de intentos",
-    dataForEveryState: "Datos de cada estado que has practicado",
+    dataForEveryState: "Datos de cada estado y examen que has practicado",
     cannotBeUndone: "Esta acción no se puede deshacer.",
     yesResetEverything: "Sí, restablecer todo",
   },

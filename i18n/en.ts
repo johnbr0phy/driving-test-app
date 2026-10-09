@@ -519,6 +519,11 @@ export const en = {
   // Settings page
   settings: {
     settings: "Settings",
+    yourTests: "Your practice tests",
+    inProgress: "In progress",
+    notStarted: "Not started",
+    noStateSelected: "No DMV state selected yet. Pick one to start the DMV permit test.",
+    chooseState: "Choose your state",
     stateSelection: "State Selection",
     currentlyPracticingFor: "Currently practicing for:",
     changeState: "Change State",
@@ -550,7 +555,7 @@ export const en = {
     allTestProgress: "All test progress and scores",
     allTrainingStats: "All training mode statistics",
     allAttemptHistory: "All attempt history",
-    dataForEveryState: "Data for every state you've practiced",
+    dataForEveryState: "Data for every state and exam you have practiced",
     cannotBeUndone: "This action cannot be undone.",
     yesResetEverything: "Yes, Reset Everything",
   },

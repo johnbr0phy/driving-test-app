@@ -294,6 +294,20 @@
     --brand-gradient-to: 50 70% 95%;
   }
 
+  /* TEAS theme: olive */
+  [data-theme="teas"] {
+    --brand: 95 50% 36%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 95 60% 95%;
+    --brand-hover: 95 50% 30%;
+    --brand-dark: 95 50% 24%;
+    --brand-darker: 95 40% 16%;
+    --brand-muted: 95 30% 72%;
+    --brand-border: 95 30% 78%;
+    --brand-border-light: 95 25% 88%;
+    --brand-gradient-to: 60 70% 95%;
+  }
+
   /* Motorcycle permit theme: deep red */
   [data-theme="moto"] {
     --brand: 355 72% 44%;

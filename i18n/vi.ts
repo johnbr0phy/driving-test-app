@@ -399,6 +399,11 @@ export const vi: TranslationKeys = {
     journalSealRecords: "Journal, Seal & Records",
     ethicsProhibitedActs: "Ethics & Prohibited Acts",
     commissionLiability: "Commission & Liability",
+    // ATI TEAS 7 sections
+    teasReading: "Reading",
+    teasMath: "Mathematics",
+    teasScience: "Science",
+    teasEnglish: "English & Language Usage",
   } as Record<string, string>,
 
   // Training set names

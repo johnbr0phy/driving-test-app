@@ -13,7 +13,7 @@
  * This file must stay free of question-data imports (the store imports it).
  */
 
-export type ExamId = "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "emt" | "foodmgr" | "realestate" | "insurance" | "notary" | "htl" | "cst" | "crcst";
+export type ExamId = "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "emt" | "foodmgr" | "realestate" | "insurance" | "notary" | "teas" | "htl" | "cst" | "crcst";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (?set=N). */
@@ -53,7 +53,7 @@ export interface ExamConfig {
   /** Question ID prefix, e.g. "HTL-". */
   questionIdPrefix: string;
   /** Header icon key (see CDLHeader). */
-  icon: "truck" | "bike" | "flag" | "plane" | "radio" | "thermometer" | "heart" | "pill" | "syringe" | "stethoscope" | "activity" | "tooth" | "siren" | "utensils" | "house" | "umbrella" | "stamp" | "microscope" | "scissors" | "shield";
+  icon: "truck" | "bike" | "flag" | "plane" | "radio" | "thermometer" | "heart" | "pill" | "syringe" | "stethoscope" | "activity" | "tooth" | "siren" | "utensils" | "house" | "umbrella" | "stamp" | "graduation" | "microscope" | "scissors" | "shield";
   testCount: number;
   questionsPerTest: number;
   passPct: number;
@@ -1146,6 +1146,59 @@ const notary: ExamConfig = {
   },
 };
 
+const teas: ExamConfig = {
+  id: "teas",
+  stateCode: "TEAS",
+  idBase: 2200,
+  slug: "/teas",
+  landingPath: "/teas-practice-test",
+  name: "TEAS Practice Test",
+  shortName: "TEAS",
+  examLabel: "ATI TEAS 7",
+  fullName: "ATI TEAS 7 nursing school entrance exam",
+  questionIdPrefix: "TEAS-",
+  icon: "graduation",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // ATI TEAS 7: Reading 45 items (39 scored), Math 38 (34), Science 50
+  // (44), English 37 (33). Mixed 50-item tests in the scored proportions;
+  // Reading items carry their own short passage. Single-answer items only.
+  blueprint: {
+    teasReading: 13,
+    teasMath: 11,
+    teasScience: 15,
+    teasEnglish: 11,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 2201, name: "Reading", categories: ["teasReading"], size: 52, weightLabel: "26% of the exam" },
+    { setNumber: 2, id: 2202, name: "Mathematics", categories: ["teasMath"], size: 44, weightLabel: "23% of the exam" },
+    { setNumber: 3, id: 2203, name: "Science", categories: ["teasScience"], size: 60, weightLabel: "29% of the exam" },
+    { setNumber: 4, id: 2204, name: "English & Language Usage", categories: ["teasEnglish"], size: 44, weightLabel: "22% of the exam" },
+  ],
+  categoryLabels: {
+    teasReading: "Reading",
+    teasMath: "Mathematics",
+    teasScience: "Science",
+    teasEnglish: "English & Language Usage",
+  },
+  copy: {
+    guestPrompt: "to save your TEAS progress and track every question you miss",
+    trainingHeading: "Train by section",
+    trainingSub: "Four sets, one per TEAS section. Instant feedback, worked math, and missed questions come back until you master them.",
+    testsHeading: "Practice tests \u00b7 50 questions mixed like the real exam",
+    heroSubs: [
+      "Four sections, four full tests. Science and reading are more than half the exam.",
+      "Mastery first, then test. The sets match the four TEAS 7 sections.",
+      "Halfway through the sections. The practice tests will show where you stand.",
+      "Fix the misses, then retake. Most programs want 60 to 70%; aim higher here.",
+      "Full prep done. Schedule your TEAS with ATI or your program.",
+    ],
+    sourceLine: "Matched to the ATI TEAS 7 blueprint. Reading items carry a short passage; the real exam also has other item types.",
+    analyticsKey: "teas",
+  },
+};
+
 const htl: ExamConfig = {
   id: "htl",
   stateCode: "HTL",
@@ -1316,7 +1369,7 @@ const crcst: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, cet, danb, emt, foodmgr, realestate, insurance, notary, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, cet, danb, emt, foodmgr, realestate, insurance, notary, teas, htl, cst, crcst];
 
 export const examSetBase = (exam: ExamConfig) => exam.setIdBase ?? exam.idBase;
 /** Store ID of training set N of an exam. */

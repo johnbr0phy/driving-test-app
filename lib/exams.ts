@@ -13,7 +13,7 @@
  * This file must stay free of question-data imports (the store imports it).
  */
 
-export type ExamId = "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "emt" | "foodmgr" | "realestate" | "insurance" | "notary" | "teas" | "htl" | "cst" | "crcst";
+export type ExamId = "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "emt" | "foodmgr" | "realestate" | "insurance" | "notary" | "teas" | "aws" | "htl" | "cst" | "crcst";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (?set=N). */
@@ -53,7 +53,7 @@ export interface ExamConfig {
   /** Question ID prefix, e.g. "HTL-". */
   questionIdPrefix: string;
   /** Header icon key (see CDLHeader). */
-  icon: "truck" | "bike" | "flag" | "plane" | "radio" | "thermometer" | "heart" | "pill" | "syringe" | "stethoscope" | "activity" | "tooth" | "siren" | "utensils" | "house" | "umbrella" | "stamp" | "graduation" | "microscope" | "scissors" | "shield";
+  icon: "truck" | "bike" | "flag" | "plane" | "radio" | "thermometer" | "heart" | "pill" | "syringe" | "stethoscope" | "activity" | "tooth" | "siren" | "utensils" | "house" | "umbrella" | "stamp" | "graduation" | "cloud" | "microscope" | "scissors" | "shield";
   testCount: number;
   questionsPerTest: number;
   passPct: number;
@@ -1199,6 +1199,59 @@ const teas: ExamConfig = {
   },
 };
 
+const aws: ExamConfig = {
+  id: "aws",
+  stateCode: "AWSCCP",
+  idBase: 2300,
+  slug: "/aws-cloud-practitioner",
+  landingPath: "/aws-cloud-practitioner-practice-test",
+  name: "AWS Cloud Practitioner Practice Test",
+  shortName: "AWS CCP",
+  examLabel: "AWS CLF-C02",
+  fullName: "AWS Certified Cloud Practitioner (CLF-C02) exam",
+  questionIdPrefix: "AWS-",
+  icon: "cloud",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // AWS Certified Cloud Practitioner CLF-C02: Cloud Concepts 24%, Security
+  // and Compliance 30%, Cloud Technology and Services 34%, Billing, Pricing
+  // and Support 12%. Real exam: 65 items (50 scored), 700 of 1000 to pass.
+  blueprint: {
+    cloudConcepts: 12,
+    securityCompliance: 15,
+    technologyServices: 17,
+    billingPricing: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 2301, name: "Cloud Concepts", categories: ["cloudConcepts"], size: 48, weightLabel: "24% of the exam" },
+    { setNumber: 2, id: 2302, name: "Security & Compliance", categories: ["securityCompliance"], size: 60, weightLabel: "30% of the exam" },
+    { setNumber: 3, id: 2303, name: "Cloud Technology & Services", categories: ["technologyServices"], size: 68, weightLabel: "34% of the exam" },
+    { setNumber: 4, id: 2304, name: "Billing, Pricing & Support", categories: ["billingPricing"], size: 24, weightLabel: "12% of the exam" },
+  ],
+  categoryLabels: {
+    cloudConcepts: "Cloud Concepts",
+    securityCompliance: "Security & Compliance",
+    technologyServices: "Cloud Technology & Services",
+    billingPricing: "Billing, Pricing & Support",
+  },
+  copy: {
+    guestPrompt: "to save your AWS exam progress and track every question you miss",
+    trainingHeading: "Train by domain",
+    trainingSub: "Four sets matching the four CLF-C02 domains. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests \u00b7 50 questions weighted like the real exam",
+    heroSubs: [
+      "Four domains, four full tests. Technology and services is a third of the exam.",
+      "Mastery first, then test. The sets follow the CLF-C02 exam guide.",
+      "Halfway through the guide. The practice tests will show where you stand.",
+      "Fix the misses, then retake. 700 of 1000 is about 70%, so aim higher here.",
+      "Full prep done. Schedule your CLF-C02 at Pearson VUE or online.",
+    ],
+    sourceLine: "Weighted to the AWS Certified Cloud Practitioner (CLF-C02) exam guide. Service names and features as of 2026.",
+    analyticsKey: "aws",
+  },
+};
+
 const htl: ExamConfig = {
   id: "htl",
   stateCode: "HTL",
@@ -1369,7 +1422,7 @@ const crcst: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, cet, danb, emt, foodmgr, realestate, insurance, notary, teas, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, cet, danb, emt, foodmgr, realestate, insurance, notary, teas, aws, htl, cst, crcst];
 
 export const examSetBase = (exam: ExamConfig) => exam.setIdBase ?? exam.idBase;
 /** Store ID of training set N of an exam. */

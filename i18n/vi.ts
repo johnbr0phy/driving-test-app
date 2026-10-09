@@ -404,6 +404,11 @@ export const vi: TranslationKeys = {
     teasMath: "Mathematics",
     teasScience: "Science",
     teasEnglish: "English & Language Usage",
+    // AWS Cloud Practitioner domains
+    cloudConcepts: "Cloud Concepts",
+    securityCompliance: "Security & Compliance",
+    technologyServices: "Cloud Technology & Services",
+    billingPricing: "Billing, Pricing & Support",
   } as Record<string, string>,
 
   // Training set names

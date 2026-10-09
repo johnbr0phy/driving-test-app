@@ -308,6 +308,20 @@
     --brand-gradient-to: 60 70% 95%;
   }
 
+  /* AWS theme: orange */
+  [data-theme="aws"] {
+    --brand: 20 90% 46%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 20 90% 95%;
+    --brand-hover: 20 90% 40%;
+    --brand-dark: 20 90% 34%;
+    --brand-darker: 20 80% 16%;
+    --brand-muted: 20 70% 72%;
+    --brand-border: 20 70% 78%;
+    --brand-border-light: 20 65% 88%;
+    --brand-gradient-to: 40 70% 95%;
+  }
+
   /* Motorcycle permit theme: deep red */
   [data-theme="moto"] {
     --brand: 355 72% 44%;

@@ -1,4 +1,4 @@
-import { EXAMS, ExamConfig } from "./exams";
+import { EXAMS, ExamConfig, examLandingPath } from "./exams";
 
 // Every practice test on the site, for the /tests hub, the header test
 // switcher, the footer and the "other tests" strip on the DMV homepage.
@@ -16,7 +16,7 @@ export interface TestCatalogEntry {
   href: string;
   dashboardHref: string;
   questions: number;
-  icon: "car" | "truck" | ExamConfig["icon"];
+  icon: "car" | ExamConfig["icon"];
   /** data-theme used for the card accent; undefined = DMV orange. */
   theme?: string;
 }
@@ -33,39 +33,30 @@ const dmv: TestCatalogEntry = {
   icon: "car",
 };
 
-const cdl: TestCatalogEntry = {
-  id: "cdl",
-  shortName: "CDL",
-  name: "CDL General Knowledge",
-  org: "Commercial license",
-  blurb: "600 questions across 12 practice tests covering the CDL general knowledge exam.",
-  href: "/cdl-practice-test",
-  dashboardHref: "/cdl/dashboard",
-  questions: 600,
-  icon: "truck",
-  theme: "cdl",
-};
-
 const EXAM_BLURBS: Record<string, string> = {
+  cdl: "600 questions on the CDL general knowledge exam. Six blueprint-weighted tests and six training sets by topic.",
   htl: "ASCP histotechnologist and histotechnician certification. Fixation, processing, embedding, microtomy, staining and lab operations.",
   cst: "NBSTSA surgical technologist certification. Preoperative, intraoperative and postoperative care, sterilization, anatomy, microbiology and pharmacology.",
   crcst: "HSPA sterile processing certification, also covers the CBSPD CSPDT. Decontamination, packaging, sterilization, storage and patient care equipment.",
 };
 
+// Short issuing-body line for menus; defaults to the exam label.
+const EXAM_ORG: Record<string, string> = { cdl: "Commercial license" };
+
 const examEntry = (exam: ExamConfig): TestCatalogEntry => ({
   id: exam.id,
   shortName: exam.shortName,
   name: exam.name,
-  org: exam.examLabel,
+  org: EXAM_ORG[exam.id] ?? exam.examLabel,
   blurb: EXAM_BLURBS[exam.id] ?? exam.fullName,
-  href: exam.slug,
+  href: examLandingPath(exam),
   dashboardHref: `${exam.slug}/dashboard`,
   questions: exam.testCount * exam.questionsPerTest,
   icon: exam.icon,
   theme: exam.id,
 });
 
-export const TEST_CATALOG: TestCatalogEntry[] = [dmv, cdl, ...EXAMS.map(examEntry)];
+export const TEST_CATALOG: TestCatalogEntry[] = [dmv, ...EXAMS.map(examEntry)];
 
 export const DRIVING_TESTS = TEST_CATALOG.filter((t) => t.id === "dmv" || t.id === "cdl");
 export const CERTIFICATION_TESTS = TEST_CATALOG.filter((t) => t.id !== "dmv" && t.id !== "cdl");

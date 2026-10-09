@@ -1,7 +1,7 @@
 "use client";
 
 import { createContext, useContext, ReactNode } from "react";
-import { EXAMS } from "@/lib/exams";
+import { EXAMS, examLandingPath } from "@/lib/exams";
 
 export interface TestTheme {
   id: string;
@@ -45,24 +45,6 @@ export const themes: Record<string, TestTheme> = {
     signupPath: "/signup",
     loginPath: "/login",
   },
-  cdl: {
-    id: "cdl",
-    name: "CDL Practice Test",
-    slug: "cdl",
-    headerTitle: "CDL Practice Test",
-    logoHome: "/cdl-practice-test",
-    logoIcon: null,
-    testsPerSet: 50,
-    totalTests: 12,
-    totalTrainingSets: 12,
-    questionsPerTest: 50,
-    passPercentage: 80,
-    routeBase: "/cdl",
-    dashboardPath: "/cdl/dashboard",
-    landingPath: "/cdl-practice-test",
-    signupPath: "/signup",
-    loginPath: "/login",
-  },
   ...Object.fromEntries(
     EXAMS.map((exam) => [
       exam.id,
@@ -71,7 +53,7 @@ export const themes: Record<string, TestTheme> = {
         name: exam.name,
         slug: exam.id,
         headerTitle: exam.name,
-        logoHome: exam.slug,
+        logoHome: examLandingPath(exam),
         logoIcon: null,
         testsPerSet: exam.questionsPerTest,
         totalTests: exam.testCount,
@@ -80,7 +62,7 @@ export const themes: Record<string, TestTheme> = {
         passPercentage: exam.passPct,
         routeBase: exam.slug,
         dashboardPath: `${exam.slug}/dashboard`,
-        landingPath: exam.slug,
+        landingPath: examLandingPath(exam),
         signupPath: `/signup?redirect=${exam.slug}/dashboard`,
         loginPath: `/login?redirect=${exam.slug}/dashboard`,
       } satisfies TestTheme,

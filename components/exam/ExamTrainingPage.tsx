@@ -13,7 +13,7 @@ import { useStore } from "@/store/useStore";
 import { shuffleQuestionOptions } from "@/lib/testGenerator";
 import { getNextExamTrainingSetQuestion } from "@/lib/examTestGenerator";
 import { getExamRoutes } from "@/lib/examRoutes";
-import { ExamConfig } from "@/lib/exams";
+import { ExamConfig, examSetId } from "@/lib/exams";
 import { Question } from "@/types";
 import { useHydration } from "@/hooks/useHydration";
 import { useSound } from "@/hooks/useSound";
@@ -48,8 +48,8 @@ function ExamTrainingContent({ exam }: { exam: ExamConfig }) {
   const setNumber = setParam ? parseInt(setParam) : null;
   const isSetMode = setNumber !== null && setNumber >= 1 && setNumber <= exam.trainingSets.length;
   const setDef = isSetMode && setNumber ? exam.trainingSets.find((s) => s.setNumber === setNumber) : undefined;
-  // Store IDs are namespaced: set N lives at exam.idBase + N
-  const setId = isSetMode && setNumber ? exam.idBase + setNumber : null;
+  // Store IDs are namespaced per exam (see examSetId)
+  const setId = isSetMode && setNumber ? examSetId(exam, setNumber) : null;
 
   const [currentQuestion, setCurrentQuestion] = useState<Question | null>(null);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);

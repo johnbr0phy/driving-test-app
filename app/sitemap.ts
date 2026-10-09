@@ -1,4 +1,4 @@
-import { EXAMS } from "@/lib/exams";
+import { EXAMS, examLandingPath } from "@/lib/exams";
 import { MetadataRoute } from "next";
 import { states, getStateByCode } from "@/data/states";
 import { VI_STATE_CODES } from "@/data/viStates";
@@ -107,21 +107,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     },
   ];
 
-  // CDL pages
-  const cdlPages: MetadataRoute.Sitemap = [
-    {
-      url: `${siteUrl}/cdl-practice-test`,
-      lastModified: now,
-      changeFrequency: "weekly" as const,
-      priority: 0.9,
-    },
-  ];
-
-  // Certification exam landing pages (HTL, CST, CRCST)
+  // Exam landing pages (CDL, HTL, CST, CRCST)
   const examPages: MetadataRoute.Sitemap = [
     { url: `${siteUrl}/tests`, lastModified: now, changeFrequency: "weekly" as const, priority: 0.8 },
     ...EXAMS.map((exam) => ({
-      url: `${siteUrl}${exam.slug}`,
+      url: `${siteUrl}${examLandingPath(exam)}`,
       lastModified: now,
       changeFrequency: "weekly" as const,
       priority: 0.9,
@@ -139,7 +129,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   return [
     ...corePages,
-    ...cdlPages,
     ...examPages,
     ...stateDmvPages,
     ...stateDmvPagesEs,

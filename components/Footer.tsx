@@ -26,10 +26,9 @@ export function Footer() {
   const isEs = language === "es";
   const isVi = language === "vi";
   const isKo = language === "ko";
-  const isCDL = pathname?.startsWith("/cdl") || pathname === "/cdl-practice-test";
   const exam = getExamByPath(pathname);
   // Non-DMV exams share the compact footer (no state links, no language toggle).
-  const isAltExam = isCDL || !!exam;
+  const isAltExam = !!exam;
   const isHomepage = pathname === "/";
 
   // SEO landing pages have dedicated /es/ and /vi/ URLs, so they manage
@@ -46,7 +45,7 @@ export function Footer() {
 
   const showLanguageToggle = !isHomepage && !isAltExam && !isSeoPage;
 
-  const dataTheme = exam ? exam.id : isCDL ? "cdl" : undefined;
+  const dataTheme = exam?.id;
 
   return (
     <footer className="relative border-t bg-white mt-auto" data-theme={dataTheme}>

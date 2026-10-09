@@ -5,17 +5,16 @@ import { doc, setDoc, getDoc, updateDoc } from 'firebase/firestore';
 import { db } from '@/lib/firebase';
 import { trackQuestionsAnswered } from '@/lib/analytics';
 import type { Language } from '@/i18n';
-import { getExamById, getExamByStateCode, getExamForTestId, getExamTrainingSetSize, isExamQuestionId } from '@/lib/exams';
+import { examTestIds, getExamById, getExamByStateCode, getExamForTestId, getExamTrainingSetSize, isExamQuestionId } from '@/lib/exams';
 
 /**
  * Non-DMV exams share the store but are namespaced by ID range and stored
- * under a pseudo state code: CDL = 101-112, registry exams (HTL, CST,
- * CRCST) = their own 200s/300s/400s ranges (see lib/exams.ts).
+ * under a pseudo state code (CDL 100s, HTL 200s, CST 300s, CRCST 400s;
+ * see lib/exams.ts).
  */
 const examStateForTestId = (testId: number, selectedState: string | null): string => {
   const exam = getExamForTestId(testId);
   if (exam) return exam.stateCode;
-  if (testId >= 101) return 'CDL';
   return selectedState || 'CA';
 };
 
@@ -104,14 +103,6 @@ interface AppState {
     averageScore: number;
   };
   getPassProbability: () => number;
-  getCDLProgress: () => {
-    testsCompleted: number;
-    questionsAnswered: number;
-    totalCorrect: number;
-    accuracy: number;
-    averageScore: number;
-  };
-  getCDLPassProbability: () => number;
   // Registry exams (HTL, CST, CRCST): progress and pass probability by exam id
   getExamProgress: (examId: string) => {
     testsCompleted: number;
@@ -265,7 +256,7 @@ export const useStore = create<AppState>()(
         // histotech who later picks a DMV state must not lose their HTL
         // progress, and signing up (which sets a state) must not either.
         const { currentTests, completedTests, testAttempts, trainingSets, trainingAnswerHistory } = get();
-        const isExamState = (code: string) => code === 'CDL' || !!getExamByStateCode(code);
+        const isExamState = (code: string) => !!getExamByStateCode(code);
         const isExamId = (id: number) => id >= 101;
         const keptCurrentTests = Object.fromEntries(
           Object.entries(currentTests).filter(([id]) => isExamId(Number(id)))
@@ -293,7 +284,7 @@ export const useStore = create<AppState>()(
           },
           trainingSets: keptTrainingSets,
           trainingAnswerHistory: trainingAnswerHistory.filter(
-            (h) => h.questionId.startsWith('CDL-') || isExamQuestionId(h.questionId)
+            (h) => isExamQuestionId(h.questionId)
           ),
         });
         // Save to Firestore
@@ -441,7 +432,7 @@ export const useStore = create<AppState>()(
       },
 
       isTestUnlocked: (testId: number) => {
-        // CDL (101+) and HTL (201+) tests are all free - no premium gate
+        // Registry exams (101+) are all free - no premium gate
         if (testId >= 101) return true;
         // DMV Test 4 requires premium
         if (testId === 4 && !get().hasPremiumAccess()) return false;
@@ -653,78 +644,13 @@ export const useStore = create<AppState>()(
         return Math.round(totalPassProbability);
       },
 
-      getCDLProgress: () => {
-        const { completedTests, testAttempts } = get();
-        // CDL tests are stored with state === 'CDL' (set in completeTest when testId >= 101)
-        const cdlTests = completedTests.filter((t) => t.state === 'CDL');
-        const cdlAttempts = testAttempts.filter((a) => a.state === 'CDL');
-
-        const testsCompleted = cdlAttempts.length;
-
-        if (testsCompleted === 0) {
-          return {
-            testsCompleted: 0,
-            questionsAnswered: 0,
-            totalCorrect: 0,
-            accuracy: 0,
-            averageScore: 0,
-          };
-        }
-
-        const totalCorrect = cdlTests.reduce((sum, test) => sum + (test.score || 0), 0);
-        const questionsAnswered = cdlTests.reduce((sum, test) => sum + test.totalQuestions, 0);
-        const accuracy = questionsAnswered > 0 ? (totalCorrect / questionsAnswered) * 100 : 0;
-        const averageBestScore =
-          cdlAttempts.reduce((sum, a) => sum + a.bestScore, 0) / cdlAttempts.length;
-
-        return {
-          testsCompleted,
-          questionsAnswered,
-          totalCorrect,
-          accuracy: Math.round(accuracy),
-          averageScore: Math.round(averageBestScore * 10) / 10,
-        };
-      },
-
-      getCDLPassProbability: () => {
-        const { testAttempts, trainingSets } = get();
-        // CDL test attempts are stored with state === 'CDL'
-        const cdlAttempts = testAttempts.filter((a) => a.state === 'CDL');
-
-        // 12 CDL training sets + 12 CDL practice tests = 24 components
-        // Each component worth 100/24 ≈ 4.167% of total pass probability
-        const WEIGHT_PER_COMPONENT = 100 / 24;
-        let totalPassProbability = 0;
-
-        // CDL Training sets (IDs 101–112 in the store)
-        for (let setNum = 1; setNum <= 12; setNum++) {
-          const cdlSetId = 100 + setNum;
-          const setData = trainingSets[cdlSetId];
-          const masteredCount = setData?.masteredIds?.length || 0;
-          if (masteredCount > 0) {
-            const setScore = (masteredCount / 50) * 100;
-            totalPassProbability += setScore * (WEIGHT_PER_COMPONENT / 100);
-          }
-        }
-
-        // CDL Practice tests (IDs 101–112 stored under state 'CDL')
-        for (let testNum = 1; testNum <= 12; testNum++) {
-          const cdlTestId = 100 + testNum;
-          const attempt = cdlAttempts.find((a) => a.testNumber === cdlTestId);
-          if (attempt) {
-            const testScore = (attempt.bestScore / 50) * 100;
-            totalPassProbability += testScore * (WEIGHT_PER_COMPONENT / 100);
-          }
-        }
-
-        return Math.round(totalPassProbability);
-      },
-
       getExamProgress: (examId: string) => {
         const exam = getExamById(examId);
         const { completedTests, testAttempts } = get();
-        const examTests = exam ? completedTests.filter((t) => t.state === exam.stateCode) : [];
-        const examAttempts = exam ? testAttempts.filter((a) => a.state === exam.stateCode) : [];
+        // Only the exam's current test IDs count (CDL once had 12 tests at 101-112).
+        const ids = exam ? examTestIds(exam) : [];
+        const examTests = exam ? completedTests.filter((t) => t.state === exam.stateCode && ids.includes(t.testNumber)) : [];
+        const examAttempts = exam ? testAttempts.filter((a) => a.state === exam.stateCode && ids.includes(a.testNumber)) : [];
 
         const testsCompleted = examAttempts.length;
         if (testsCompleted === 0) {
@@ -1134,7 +1060,7 @@ export const useStore = create<AppState>()(
 
       // Check if a training set is unlocked
       isTrainingSetUnlocked: (setId: number) => {
-        // CDL (101+) and HTL (201+) sets are all free
+        // Registry exam sets (101+) are all free
         if (setId >= 101) return true;
         // Sets 1 and 2 are always free
         if (setId <= 2) return true;

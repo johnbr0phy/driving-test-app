@@ -6,22 +6,22 @@ import { ExamLandingHero, ExamLandingCTA } from "@/components/exam/ExamLandingHe
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
 export const metadata: Metadata = {
-  title: "Free CDL Practice Test 2026 - General Knowledge | TigerTest",
-  description: "Free CDL practice tests with 600 questions. Pass your Commercial Driver&apos;s License general knowledge test on the first try. 12 practice tests with instant feedback.",
+  title: "Free CDL Practice Test 2026 - General Knowledge",
+  description: "Free CDL practice tests with 600 questions. Pass your Commercial Driver&apos;s License general knowledge test on the first try. 6 practice tests weighted like the real exam, with instant feedback.",
   keywords: "CDL practice test, commercial driver&apos;s license, CDL general knowledge, truck driver test, CDL exam prep, free CDL test",
   alternates: {
     canonical: `${siteUrl}/cdl-practice-test`,
   },
   openGraph: {
-    title: "Free CDL Practice Test 2026 - General Knowledge | TigerTest",
-    description: "Free CDL practice tests with 600 questions. Pass your Commercial Driver&apos;s License general knowledge test on the first try. 12 practice tests with instant feedback.",
+    title: "Free CDL Practice Test 2026 - General Knowledge",
+    description: "Free CDL practice tests with 600 questions. Pass your Commercial Driver&apos;s License general knowledge test on the first try. 6 practice tests weighted like the real exam, with instant feedback.",
     url: `${siteUrl}/cdl-practice-test`,
     siteName: "TigerTest",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Free CDL Practice Test 2026 - General Knowledge | TigerTest",
+    title: "Free CDL Practice Test 2026 - General Knowledge",
     description: "Free CDL practice tests with 600 questions. Pass your Commercial Driver&apos;s License general knowledge test on the first try.",
   },
 };
@@ -44,7 +44,8 @@ const jsonLd = {
       },
       featureList: [
         "600 CDL practice questions",
-        "12 comprehensive practice tests",
+        "6 practice tests weighted like the real exam",
+        "6 training sets by topic",
         "Training mode with instant feedback",
         "Vehicle inspection questions",
         "Safe driving practices",
@@ -74,7 +75,7 @@ const jsonLd = {
           name: "Is TigerTest CDL practice test free?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes! You can take all 12 CDL practice tests and access training mode completely free. No hidden costs or premium requirements.",
+            text: "Yes! You can take all 6 CDL practice tests and every training set completely free. No hidden costs or premium requirements.",
           },
         },
         {
@@ -90,7 +91,7 @@ const jsonLd = {
           name: "How should I study for the CDL general knowledge test?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Start with TigerTest&apos;s training mode to learn questions with instant feedback. Complete all 12 training sets, then take practice tests to simulate the real exam. Aim for 80%+ scores consistently.",
+            text: "Start with TigerTest&apos;s training mode to learn questions with instant feedback. Work through the six topic training sets, then take the six practice tests to simulate the real exam. Aim for 80%+ scores consistently.",
           },
         },
       ],
@@ -116,7 +117,7 @@ export default function CDLLandingPage() {
           <ExamLandingHero
             dashboardHref="/cdl/dashboard"
             shortName="CDL"
-            subtitle="600 questions across 12 practice tests. Tuned for mobile. No account needed."
+            subtitle="600 questions. Six tests weighted like the real exam. Tuned for mobile. No account needed."
             shots={{ mobile: "/landing/cdl-mobile.png", desktop: "/landing/cdl-desktop.png" }}
           />
         </div>
@@ -278,7 +279,7 @@ export default function CDLLandingPage() {
                 3. Practice with Realistic Test Conditions
               </h3>
               <p>
-                Once you&apos;ve completed the training sets, take our 12 practice tests 
+                Once you&apos;ve completed the training sets, take our six practice tests 
                 to simulate the real CDL exam. Each test has 50 questions with 80% 
                 pass requirement (40/50 correct). Aim for consistent 80%+ scores.
               </p>
@@ -321,7 +322,7 @@ export default function CDLLandingPage() {
               Is TigerTest CDL practice test free?
             </h3>
             <p className="text-gray-600">
-              Yes! You can take all 12 CDL practice tests and access training mode completely free. 
+              Yes! You can take all six CDL practice tests and every training set completely free. 
               No hidden costs, premium requirements, or account registration needed.
             </p>
           </div>
@@ -343,7 +344,7 @@ export default function CDLLandingPage() {
             </h3>
             <p className="text-gray-600">
               Start with TigerTest&apos;s training mode to learn questions with instant feedback. 
-              Complete all 12 training sets, focusing on weak areas. Then take practice tests 
+              Complete all six topic training sets, focusing on weak areas. Then take the practice tests 
               to simulate the real exam. Most successful candidates score 80%+ consistently 
               on practice tests before taking the real exam.
             </p>
@@ -365,7 +366,7 @@ export default function CDLLandingPage() {
               How long should I study before taking the CDL test?
             </h3>
             <p className="text-gray-600">
-              Most successful candidates study for 1-2 weeks using TigerTest. Complete all 12 training 
+              Most successful candidates study for 1-2 weeks using TigerTest. Complete all six training 
               sets (about 30-45 minutes each), then take practice tests until you consistently score 
               80% or higher. Some people need only a few days, others prefer 2-3 weeks of preparation.
             </p>

@@ -72,6 +72,13 @@ function HTLTrainingPageContent() {
   // Nothing on HTL is locked.
   const accessLocked = false;
 
+  // HTL only has set mode. The DMV free-practice mode (no ?set=) writes to the
+  // shared onboarding counters that DMV Set 1 falls back on, so an HTL visit
+  // without a valid set goes back to the dashboard instead of answering there.
+  useEffect(() => {
+    if (hydrated && !isSetMode) router.replace(HTL_ROUTES.dashboard);
+  }, [hydrated, isSetMode, router]);
+
   // Detect when user unlocks practice tests (crosses 10 correct answers) - onboarding only
   useEffect(() => {
     if (!isSetMode && training.totalCorrectAllTime >= 10 && prevCorrectCount < 10) {
@@ -92,10 +99,10 @@ function HTLTrainingPageContent() {
 
   // Load first question on mount
   useEffect(() => {
-    if (hydrated && !currentQuestion && !accessLocked) {
+    if (hydrated && isSetMode && !currentQuestion && !accessLocked) {
       loadNextQuestion();
     }
-  }, [hydrated, currentQuestion, accessLocked]);
+  }, [hydrated, isSetMode, currentQuestion, accessLocked]);
 
   const loadNextQuestion = () => {
     let question: Question | null = null;
@@ -188,7 +195,7 @@ function HTLTrainingPageContent() {
     }
   };
 
-  if (!hydrated) {
+  if (!hydrated || !isSetMode) {
     return null;
   }
 

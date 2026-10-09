@@ -37,7 +37,7 @@ const cdl: TestCatalogEntry = {
   id: "cdl",
   shortName: "CDL",
   name: "CDL General Knowledge",
-  org: "Commercial Driver's License",
+  org: "Commercial license",
   blurb: "600 questions across 12 practice tests covering the CDL general knowledge exam.",
   href: "/cdl-practice-test",
   dashboardHref: "/cdl/dashboard",

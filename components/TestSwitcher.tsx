@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Check, ChevronDown, LayoutGrid } from "lucide-react";
+import { ChevronDown, LayoutGrid } from "lucide-react";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { TEST_CATALOG, getCatalogEntryByPath } from "@/lib/testCatalog";
 import { TestIcon } from "@/components/TestIcon";
@@ -32,39 +32,42 @@ export function TestSwitcher({ className = "" }: { className?: string }) {
         />
       </PopoverTrigger>
 
-      <PopoverContent align="end" className="w-64 p-1">
-        <ul>
+      <PopoverContent
+        align="end"
+        collisionPadding={12}
+        className="w-[calc(100vw-24px)] sm:w-[22rem] p-2 rounded-xl"
+      >
+        <ul className="grid grid-cols-2 gap-1.5">
           {TEST_CATALOG.map((t) => {
             const isActive = t.id === current.id;
             return (
-              <li key={t.id}>
+              <li key={t.id} data-theme={t.theme}>
                 <Link
                   href={t.href}
                   onClick={() => setOpen(false)}
                   aria-current={isActive ? "page" : undefined}
-                  className={`flex w-full items-center gap-2.5 rounded-sm px-2 py-2 text-left text-sm transition-colors hover:bg-gray-100 ${
-                    isActive ? "font-semibold text-gray-900" : "text-gray-700"
+                  className={`flex items-center gap-2.5 rounded-lg px-2.5 py-2 transition-colors hover:bg-gray-100 ${
+                    isActive ? "bg-gray-100 ring-1 ring-brand" : ""
                   }`}
                 >
-                  <span className="text-gray-500">
+                  <span className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-md bg-brand text-white">
                     <TestIcon icon={t.icon} className="h-4 w-4" />
                   </span>
-                  <span className="flex-1">
-                    {t.shortName}
-                    <span className="block text-xs font-normal text-gray-500">{t.org}</span>
+                  <span className="min-w-0 leading-tight">
+                    <span className="block text-sm font-semibold text-gray-900">{t.shortName}</span>
+                    <span className="block truncate text-[11px] text-gray-500">{t.org}</span>
                   </span>
-                  {isActive && <Check className="h-4 w-4 text-brand" aria-hidden="true" />}
                 </Link>
               </li>
             );
           })}
-          <li className="mt-1 border-t pt-1">
+          <li>
             <Link
               href="/tests"
               onClick={() => setOpen(false)}
-              className="block rounded-sm px-2 py-2 text-sm font-medium text-brand hover:bg-gray-100"
+              className="flex h-full items-center rounded-lg px-2.5 py-2 text-sm font-medium text-brand hover:bg-gray-100"
             >
-              Compare all practice tests →
+              All tests →
             </Link>
           </li>
         </ul>

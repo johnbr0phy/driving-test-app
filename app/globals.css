@@ -126,6 +126,20 @@
     --brand-gradient-to: 48 95% 94%;
   }
 
+  /* EPA 608 theme: green */
+  [data-theme="epa608"] {
+    --brand: 150 60% 34%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 150 60% 95%;
+    --brand-hover: 150 60% 28%;
+    --brand-dark: 150 60% 22%;
+    --brand-darker: 150 50% 14%;
+    --brand-muted: 150 40% 68%;
+    --brand-border: 150 40% 74%;
+    --brand-border-light: 150 35% 86%;
+    --brand-gradient-to: 80 70% 94%;
+  }
+
   /* Motorcycle permit theme: deep red */
   [data-theme="moto"] {
     --brand: 355 72% 44%;

@@ -310,6 +310,11 @@ export const vi: TranslationKeys = {
     hamSignals: "Signals & Emissions (T8)",
     hamAntennas: "Antennas & Feed Lines (T9)",
     hamSafety: "Safety (T0)",
+    // EPA Section 608 sections
+    epaCore: "Core",
+    epaType1: "Type I: Small Appliances",
+    epaType2: "Type II: High-Pressure",
+    epaType3: "Type III: Low-Pressure",
   } as Record<string, string>,
 
   // Training set names

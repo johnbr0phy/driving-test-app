@@ -39,6 +39,7 @@ const EXAM_BLURBS: Record<string, string> = {
   moto: "Motorcycle permit knowledge test, based on the MSF manual nearly every state uses. Gear, control, positioning, hazards and alcohol.",
   part107: "FAA remote pilot (drone) knowledge test. Regulations, airspace and charts, weather, loading and performance, operations.",
   ham: "FCC amateur radio Technician class exam. The full official 2026-2030 question pool with explanations, in 35-question practice exams.",
+  epa608: "EPA Section 608 refrigerant handling certification. Core plus Type I, II and III sections, with the real 72% pass line.",
   civics: "The USCIS naturalization civics test. All 128 official 2025 questions as multiple choice: government, history, symbols and holidays.",
   htl: "ASCP histotechnologist and histotechnician certification. Fixation, processing, embedding, microtomy, staining and lab operations.",
   cst: "NBSTSA surgical technologist certification. Preoperative, intraoperative and postoperative care, sterilization, anatomy, microbiology and pharmacology.",
@@ -46,7 +47,7 @@ const EXAM_BLURBS: Record<string, string> = {
 };
 
 // Short issuing-body line for menus; defaults to the exam label.
-const EXAM_ORG: Record<string, string> = { cdl: "Commercial license", cdlx: "H, air brakes, combo, N, P", moto: "Permit knowledge test", civics: "USCIS naturalization", part107: "FAA drone pilot", ham: "FCC Technician licence" };
+const EXAM_ORG: Record<string, string> = { cdl: "Commercial license", cdlx: "H, air brakes, combo, N, P", moto: "Permit knowledge test", civics: "USCIS naturalization", part107: "FAA drone pilot", ham: "FCC Technician licence", epa608: "HVAC refrigerant certification" };
 
 const examEntry = (exam: ExamConfig): TestCatalogEntry => ({
   id: exam.id,
@@ -67,7 +68,7 @@ export const TEST_CATALOG: TestCatalogEntry[] = [dmv, ...EXAMS.map(examEntry)];
 const GROUPS: { title: string; ids: string[] }[] = [
   { title: "Driving tests", ids: ["dmv", "cdl", "cdlx", "moto"] },
   { title: "Citizenship", ids: ["civics"] },
-  { title: "Aviation & radio licenses", ids: ["part107", "ham"] },
+  { title: "Aviation, radio & trade licenses", ids: ["part107", "ham", "epa608"] },
   { title: "Healthcare certification exams", ids: ["htl", "cst", "crcst"] },
 ];
 export const TEST_GROUPS: { title: string; tests: TestCatalogEntry[] }[] = [

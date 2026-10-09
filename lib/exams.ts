@@ -13,7 +13,7 @@
  * This file must stay free of question-data imports (the store imports it).
  */
 
-export type ExamId = "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "htl" | "cst" | "crcst";
+export type ExamId = "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "htl" | "cst" | "crcst";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (?set=N). */
@@ -53,7 +53,7 @@ export interface ExamConfig {
   /** Question ID prefix, e.g. "HTL-". */
   questionIdPrefix: string;
   /** Header icon key (see CDLHeader). */
-  icon: "truck" | "bike" | "flag" | "plane" | "radio" | "microscope" | "scissors" | "shield";
+  icon: "truck" | "bike" | "flag" | "plane" | "radio" | "thermometer" | "microscope" | "scissors" | "shield";
   testCount: number;
   questionsPerTest: number;
   passPct: number;
@@ -443,6 +443,58 @@ const ham: ExamConfig = {
   },
 };
 
+const epa608: ExamConfig = {
+  id: "epa608",
+  stateCode: "EPA608",
+  idBase: 1000,
+  slug: "/epa-608",
+  landingPath: "/epa-608-practice-test",
+  name: "EPA 608 Practice Test",
+  shortName: "EPA 608",
+  examLabel: "EPA Section 608",
+  fullName: "EPA Section 608 technician certification exam",
+  questionIdPrefix: "EPA-",
+  icon: "thermometer",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 72,
+  // Four real sections of 25 at 18 to pass (72%). The mixed tests draw from
+  // each in proportion; the training sets are the sections themselves.
+  blueprint: {
+    epaCore: 18,
+    epaType1: 10,
+    epaType2: 13,
+    epaType3: 9,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 1001, name: "Core", categories: ["epaCore"], size: 72, weightLabel: "Required for every certification" },
+    { setNumber: 2, id: 1002, name: "Type I: Small Appliances", categories: ["epaType1"], size: 40, weightLabel: "Charges of 5 lb or less" },
+    { setNumber: 3, id: 1003, name: "Type II: High-Pressure", categories: ["epaType2"], size: 52, weightLabel: "Split systems, commercial refrigeration" },
+    { setNumber: 4, id: 1004, name: "Type III: Low-Pressure", categories: ["epaType3"], size: 36, weightLabel: "Low-pressure chillers" },
+  ],
+  categoryLabels: {
+    epaCore: "Core",
+    epaType1: "Type I: Small Appliances",
+    epaType2: "Type II: High-Pressure",
+    epaType3: "Type III: Low-Pressure",
+  },
+  copy: {
+    guestPrompt: "to save your EPA 608 progress and track every question you miss",
+    trainingHeading: "Train one section at a time",
+    trainingSub: "Core plus the three types, straight from the EPA test outline. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mixed practice tests · 50 questions across all four sections, 72% to pass",
+    heroSubs: [
+      "Four sections, four mixed tests. Core is on every certification, so start there.",
+      "Mastery first, then test. Each set is one section of the real exam.",
+      "Halfway through. The mixed tests will show where you stand across sections.",
+      "Fix the misses, then retake. Every section wants 18 of 25.",
+      "Full prep done. Book a proctored session and go Universal.",
+    ],
+    sourceLine: "Based on 40 CFR Part 82 Subpart F and the EPA Section 608 test outline. Each real section is 25 questions, 18 to pass.",
+    analyticsKey: "epa608",
+  },
+};
+
 const htl: ExamConfig = {
   id: "htl",
   stateCode: "HTL",
@@ -613,7 +665,7 @@ const crcst: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, htl, cst, crcst];
 
 export const examSetBase = (exam: ExamConfig) => exam.setIdBase ?? exam.idBase;
 /** Store ID of training set N of an exam. */

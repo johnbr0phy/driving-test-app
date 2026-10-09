@@ -1,5 +1,5 @@
 // Question types
-export type QuestionType = "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HAM" | "HTL" | "CST" | "CRCST";
+export type QuestionType = "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HAM" | "EPA608" | "HTL" | "CST" | "CRCST";
 
 // Test mode
 export type TestMode = "dmv" | "cdl" | "htl";
@@ -100,7 +100,12 @@ export type QuestionCategory =
   | "hamCircuits"
   | "hamSignals"
   | "hamAntennas"
-  | "hamSafety";
+  | "hamSafety"
+  // EPA Section 608 sections
+  | "epaCore"
+  | "epaType1"
+  | "epaType2"
+  | "epaType3";
 
 export interface Question {
   type: QuestionType;

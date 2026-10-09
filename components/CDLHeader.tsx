@@ -8,7 +8,7 @@ import { useAuth } from "@/contexts/AuthContext";
 import { useStore } from "@/store/useStore";
 import { useHydration } from "@/hooks/useHydration";
 import { useTestTheme } from "@/contexts/TestThemeContext";
-import { Truck, Bike, Flag, Plane, Radio, Microscope, Scissors, ShieldCheck } from "lucide-react";
+import { Truck, Bike, Flag, Plane, Radio, Thermometer, Microscope, Scissors, ShieldCheck } from "lucide-react";
 import { getExamById } from "@/lib/exams";
 import Image from "next/image";
 import { TestSwitcher } from "@/components/TestSwitcher";
@@ -43,6 +43,7 @@ export function CDLHeader() {
                 if (icon === "flag") return <Flag className="h-6 w-6 text-white" />;
                 if (icon === "plane") return <Plane className="h-6 w-6 text-white" />;
                 if (icon === "radio") return <Radio className="h-6 w-6 text-white" />;
+                if (icon === "thermometer") return <Thermometer className="h-6 w-6 text-white" />;
                 if (icon === "microscope") return <Microscope className="h-6 w-6 text-white" />;
                 if (icon === "scissors") return <Scissors className="h-6 w-6 text-white" />;
                 if (icon === "shield") return <ShieldCheck className="h-6 w-6 text-white" />;

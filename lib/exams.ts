@@ -13,7 +13,7 @@
  * This file must stay free of question-data imports (the store imports it).
  */
 
-export type ExamId = "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "emt" | "foodmgr" | "realestate" | "htl" | "cst" | "crcst";
+export type ExamId = "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "emt" | "foodmgr" | "realestate" | "insurance" | "htl" | "cst" | "crcst";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (?set=N). */
@@ -53,7 +53,7 @@ export interface ExamConfig {
   /** Question ID prefix, e.g. "HTL-". */
   questionIdPrefix: string;
   /** Header icon key (see CDLHeader). */
-  icon: "truck" | "bike" | "flag" | "plane" | "radio" | "thermometer" | "heart" | "pill" | "syringe" | "stethoscope" | "activity" | "tooth" | "siren" | "utensils" | "house" | "microscope" | "scissors" | "shield";
+  icon: "truck" | "bike" | "flag" | "plane" | "radio" | "thermometer" | "heart" | "pill" | "syringe" | "stethoscope" | "activity" | "tooth" | "siren" | "utensils" | "house" | "umbrella" | "microscope" | "scissors" | "shield";
   testCount: number;
   questionsPerTest: number;
   passPct: number;
@@ -1026,6 +1026,70 @@ const realestate: ExamConfig = {
   },
 };
 
+const insurance: ExamConfig = {
+  id: "insurance",
+  stateCode: "LIFEHEALTH",
+  idBase: 2000,
+  slug: "/life-health-insurance",
+  landingPath: "/life-health-insurance-practice-test",
+  name: "Life & Health Insurance Practice Test",
+  shortName: "Insurance",
+  examLabel: "Life & Health Exam",
+  fullName: "life and health insurance license exam (general portion)",
+  questionIdPrefix: "LH-",
+  icon: "umbrella",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // General (non-state) portion of the life, accident and health producer
+  // exams (Pearson VUE, PSI, Prometric) built on the NAIC model and the
+  // standard prelicensing texts. Typical combined exam: 150 scored items,
+  // 70% to pass. Federal and general content only; state rules never tested.
+  blueprint: {
+    insuranceRegulation: 4,
+    generalInsurance: 5,
+    lifeBasics: 5,
+    lifePolicyTypes: 6,
+    lifeProvisions: 8,
+    annuitiesRetirement: 5,
+    healthBasics: 5,
+    healthProvisions: 5,
+    healthPolicyTypes: 7,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 2001, name: "Insurance Basics & Regulation", categories: ["insuranceRegulation", "generalInsurance"], size: 36, weightLabel: "18% of the exam" },
+    { setNumber: 2, id: 2002, name: "Life Insurance Policies & Provisions", categories: ["lifeBasics", "lifePolicyTypes", "lifeProvisions"], size: 76, weightLabel: "38% of the exam" },
+    { setNumber: 3, id: 2003, name: "Annuities, Taxation & Health Basics", categories: ["annuitiesRetirement", "healthBasics"], size: 40, weightLabel: "20% of the exam" },
+    { setNumber: 4, id: 2004, name: "Health Policy Provisions & Types", categories: ["healthProvisions", "healthPolicyTypes"], size: 48, weightLabel: "24% of the exam" },
+  ],
+  categoryLabels: {
+    insuranceRegulation: "Insurance Regulation",
+    generalInsurance: "General Insurance Concepts",
+    lifeBasics: "Life Insurance Basics",
+    lifePolicyTypes: "Life Policy Types",
+    lifeProvisions: "Life Policy Provisions, Options & Riders",
+    annuitiesRetirement: "Annuities, Taxation & Retirement",
+    healthBasics: "Health Insurance Basics",
+    healthProvisions: "Health Policy Provisions",
+    healthPolicyTypes: "Health Policy Types",
+  },
+  copy: {
+    guestPrompt: "to save your insurance exam progress and track every question you miss",
+    trainingHeading: "Train by content area",
+    trainingSub: "Four sets covering the general portion of the life and health exam. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests \u00b7 50 questions weighted like the general portion",
+    heroSubs: [
+      "Nine content areas, four full tests. Life policies and provisions are almost 40% of the exam.",
+      "Mastery first, then test. The sets follow the general portion every state tests.",
+      "Halfway through the outline. The practice tests will show where you stand.",
+      "Fix the misses, then retake. Most states pass at 70%, so aim higher here.",
+      "Full prep done. Add your state's law portion and schedule your exam.",
+    ],
+    sourceLine: "General portion only, on the NAIC model and standard prelicensing texts. Your state portion is separate.",
+    analyticsKey: "insurance",
+  },
+};
+
 const htl: ExamConfig = {
   id: "htl",
   stateCode: "HTL",
@@ -1196,7 +1260,7 @@ const crcst: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, cet, danb, emt, foodmgr, realestate, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, cet, danb, emt, foodmgr, realestate, insurance, htl, cst, crcst];
 
 export const examSetBase = (exam: ExamConfig) => exam.setIdBase ?? exam.idBase;
 /** Store ID of training set N of an exam. */

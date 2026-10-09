@@ -1,5 +1,5 @@
 // Question types
-export type QuestionType = "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HAM" | "EPA608" | "CNA" | "PTCB" | "PHLEB" | "CCMA" | "CET" | "DANB" | "EMT" | "FOODMGR" | "REALESTATE" | "HTL" | "CST" | "CRCST";
+export type QuestionType = "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HAM" | "EPA608" | "CNA" | "PTCB" | "PHLEB" | "CCMA" | "CET" | "DANB" | "EMT" | "FOODMGR" | "REALESTATE" | "LIFEHEALTH" | "HTL" | "CST" | "CRCST";
 
 // Test mode
 export type TestMode = "dmv" | "cdl" | "htl";
@@ -173,7 +173,17 @@ export type QuestionCategory =
   | "rePractice"
   | "reDisclosures"
   | "reFinancing"
-  | "reMath";
+  | "reMath"
+  // Life and health insurance license exam
+  | "insuranceRegulation"
+  | "generalInsurance"
+  | "lifeBasics"
+  | "lifePolicyTypes"
+  | "lifeProvisions"
+  | "annuitiesRetirement"
+  | "healthBasics"
+  | "healthProvisions"
+  | "healthPolicyTypes";
 
 export interface Question {
   type: QuestionType;

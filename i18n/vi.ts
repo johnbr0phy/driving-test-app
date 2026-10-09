@@ -383,6 +383,16 @@ export const vi: TranslationKeys = {
     reDisclosures: "Disclosures & Environmental Issues",
     reFinancing: "Financing & Settlement",
     reMath: "Real Estate Math",
+    // Life and health insurance license exam
+    insuranceRegulation: "Insurance Regulation",
+    generalInsurance: "General Insurance Concepts",
+    lifeBasics: "Life Insurance Basics",
+    lifePolicyTypes: "Life Policy Types",
+    lifeProvisions: "Life Policy Provisions, Options & Riders",
+    annuitiesRetirement: "Annuities, Taxation & Retirement",
+    healthBasics: "Health Insurance Basics",
+    healthProvisions: "Health Policy Provisions",
+    healthPolicyTypes: "Health Policy Types",
   } as Record<string, string>,
 
   // Training set names

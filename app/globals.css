@@ -266,6 +266,20 @@
     --brand-gradient-to: 170 70% 95%;
   }
 
+  /* Insurance theme: plum */
+  [data-theme="insurance"] {
+    --brand: 330 55% 42%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 330 65% 95%;
+    --brand-hover: 330 55% 36%;
+    --brand-dark: 330 55% 30%;
+    --brand-darker: 330 45% 16%;
+    --brand-muted: 330 35% 72%;
+    --brand-border: 330 35% 78%;
+    --brand-border-light: 330 30% 88%;
+    --brand-gradient-to: 300 70% 95%;
+  }
+
   /* Motorcycle permit theme: deep red */
   [data-theme="moto"] {
     --brand: 355 72% 44%;

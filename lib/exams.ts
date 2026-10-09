@@ -151,7 +151,7 @@ const cdl: ExamConfig = {
 
 const cdlx: ExamConfig = {
   id: "cdlx",
-  stateCode: "CDLX",
+  stateCode: "CDLE",
   idBase: 700,
   slug: "/cdl-endorsements",
   landingPath: "/cdl-endorsement-practice-test",

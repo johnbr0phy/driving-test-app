@@ -1,5 +1,5 @@
 // Question types
-export type QuestionType = "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HAM" | "EPA608" | "CNA" | "PTCB" | "PHLEB" | "CCMA" | "CET" | "DANB" | "HTL" | "CST" | "CRCST";
+export type QuestionType = "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HAM" | "EPA608" | "CNA" | "PTCB" | "PHLEB" | "CCMA" | "CET" | "DANB" | "EMT" | "HTL" | "CST" | "CRCST";
 
 // Test mode
 export type TestMode = "dmv" | "cdl" | "htl";
@@ -150,7 +150,13 @@ export type QuestionCategory =
   | "gcChairside"
   | "gcDentalMaterials"
   | "rhsRadiography"
-  | "iceInfectionControl";
+  | "iceInfectionControl"
+  // NREMT EMT domains
+  | "sceneSizeUp"
+  | "primaryAssessment"
+  | "secondaryAssessment"
+  | "treatmentTransport"
+  | "emsOperations";
 
 export interface Question {
   type: QuestionType;

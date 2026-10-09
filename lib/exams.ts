@@ -13,7 +13,7 @@
  * This file must stay free of question-data imports (the store imports it).
  */
 
-export type ExamId = "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "htl" | "cst" | "crcst";
+export type ExamId = "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "emt" | "htl" | "cst" | "crcst";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (?set=N). */
@@ -53,7 +53,7 @@ export interface ExamConfig {
   /** Question ID prefix, e.g. "HTL-". */
   questionIdPrefix: string;
   /** Header icon key (see CDLHeader). */
-  icon: "truck" | "bike" | "flag" | "plane" | "radio" | "thermometer" | "heart" | "pill" | "syringe" | "stethoscope" | "activity" | "tooth" | "microscope" | "scissors" | "shield";
+  icon: "truck" | "bike" | "flag" | "plane" | "radio" | "thermometer" | "heart" | "pill" | "syringe" | "stethoscope" | "activity" | "tooth" | "siren" | "microscope" | "scissors" | "shield";
   testCount: number;
   questionsPerTest: number;
   passPct: number;
@@ -849,6 +849,62 @@ const danb: ExamConfig = {
   },
 };
 
+const emt: ExamConfig = {
+  id: "emt",
+  stateCode: "EMT",
+  idBase: 1700,
+  slug: "/emt",
+  landingPath: "/emt-practice-test",
+  name: "EMT Practice Test",
+  shortName: "EMT",
+  examLabel: "NREMT EMT Exam",
+  fullName: "National Registry EMT cognitive exam",
+  questionIdPrefix: "EMT-",
+  icon: "siren",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // NREMT EMT examination specifications (April 2025, 2023 practice
+  // analysis): Scene Size-up and Safety 15-19%, Primary Assessment 39-43%,
+  // Secondary Assessment 5-9%, Patient Treatment and Transport 20-24%,
+  // Operations 10-14%. Real exam: adaptive, 70 to 120 items in 2 hours.
+  blueprint: {
+    sceneSizeUp: 9,
+    primaryAssessment: 20,
+    secondaryAssessment: 4,
+    treatmentTransport: 11,
+    emsOperations: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 1701, name: "Scene Size-up & Safety", categories: ["sceneSizeUp"], size: 36, weightLabel: "17% of the exam" },
+    { setNumber: 2, id: 1702, name: "Primary Assessment", categories: ["primaryAssessment"], size: 80, weightLabel: "41% of the exam" },
+    { setNumber: 3, id: 1703, name: "Secondary Assessment & Operations", categories: ["secondaryAssessment", "emsOperations"], size: 40, weightLabel: "19% of the exam" },
+    { setNumber: 4, id: 1704, name: "Patient Treatment & Transport", categories: ["treatmentTransport"], size: 44, weightLabel: "22% of the exam" },
+  ],
+  categoryLabels: {
+    sceneSizeUp: "Scene Size-up & Safety",
+    primaryAssessment: "Primary Assessment",
+    secondaryAssessment: "Secondary Assessment",
+    treatmentTransport: "Patient Treatment & Transport",
+    emsOperations: "Operations",
+  },
+  copy: {
+    guestPrompt: "to save your NREMT progress and track every question you miss",
+    trainingHeading: "Train by domain",
+    trainingSub: "Four sets covering the five NREMT EMT domains. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests \u00b7 50 questions weighted like the real exam",
+    heroSubs: [
+      "Five domains, four full tests. Primary assessment is more than 40% of the exam.",
+      "Mastery first, then test. The sets follow the 2025 NREMT test plan.",
+      "Halfway through the outline. The practice tests will show where you stand.",
+      "Fix the misses, then retake. Aim for 70% or better on every test before exam day.",
+      "Full prep done. Schedule your NREMT cognitive exam at Pearson VUE.",
+    ],
+    sourceLine: "Weighted to the NREMT EMT examination specifications (April 2025). Protocols vary; follow local medical direction.",
+    analyticsKey: "emt",
+  },
+};
+
 const htl: ExamConfig = {
   id: "htl",
   stateCode: "HTL",
@@ -1019,7 +1075,7 @@ const crcst: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, cet, danb, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, cet, danb, emt, htl, cst, crcst];
 
 export const examSetBase = (exam: ExamConfig) => exam.setIdBase ?? exam.idBase;
 /** Store ID of training set N of an exam. */

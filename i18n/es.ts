@@ -360,6 +360,12 @@ export const es: TranslationKeys = {
     gcDentalMaterials: "Dental Materials",
     rhsRadiography: "Radiation Health & Safety",
     iceInfectionControl: "Infection Control",
+    // NREMT EMT domains
+    sceneSizeUp: "Scene Size-up & Safety",
+    primaryAssessment: "Primary Assessment",
+    secondaryAssessment: "Secondary Assessment",
+    treatmentTransport: "Patient Treatment & Transport",
+    emsOperations: "Operations",
   } as Record<string, string>,
 
   // Training set names

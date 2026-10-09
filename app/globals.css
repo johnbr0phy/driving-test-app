@@ -224,6 +224,20 @@
     --brand-gradient-to: 200 70% 95%;
   }
 
+  /* EMT theme: indigo */
+  [data-theme="emt"] {
+    --brand: 240 55% 48%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 240 65% 95%;
+    --brand-hover: 240 55% 42%;
+    --brand-dark: 240 55% 36%;
+    --brand-darker: 240 45% 16%;
+    --brand-muted: 240 35% 72%;
+    --brand-border: 240 35% 78%;
+    --brand-border-light: 240 30% 88%;
+    --brand-gradient-to: 200 70% 95%;
+  }
+
   /* Motorcycle permit theme: deep red */
   [data-theme="moto"] {
     --brand: 355 72% 44%;

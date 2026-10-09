@@ -12,6 +12,7 @@ import phlebQuestions from "@/data/phlebotomy-questions.json";
 import ccmaQuestions from "@/data/ccma-questions.json";
 import cetQuestions from "@/data/cet-questions.json";
 import danbQuestions from "@/data/danb-questions.json";
+import emtQuestions from "@/data/emt-questions.json";
 import htlQuestions from "@/data/htl-questions.json";
 import cstQuestions from "@/data/cst-questions.json";
 import crcstQuestions from "@/data/crcst-questions.json";
@@ -33,6 +34,7 @@ const BANKS: Record<ExamId, Question[]> = {
   ccma: ccmaQuestions as Question[],
   cet: cetQuestions as Question[],
   danb: danbQuestions as Question[],
+  emt: emtQuestions as Question[],
   htl: htlQuestions as Question[],
   cst: cstQuestions as Question[],
   crcst: crcstQuestions as Question[],

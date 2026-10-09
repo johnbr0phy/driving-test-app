@@ -140,6 +140,20 @@
     --brand-gradient-to: 80 70% 94%;
   }
 
+  /* CNA theme: rose */
+  [data-theme="cna"] {
+    --brand: 340 65% 46%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 340 80% 96%;
+    --brand-hover: 340 65% 40%;
+    --brand-dark: 340 65% 32%;
+    --brand-darker: 340 55% 18%;
+    --brand-muted: 340 50% 74%;
+    --brand-border: 340 50% 80%;
+    --brand-border-light: 340 45% 89%;
+    --brand-gradient-to: 20 90% 95%;
+  }
+
   /* Motorcycle permit theme: deep red */
   [data-theme="moto"] {
     --brand: 355 72% 44%;

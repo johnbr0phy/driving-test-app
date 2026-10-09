@@ -317,6 +317,16 @@ export const ko: TranslationKeys = {
     epaType1: "Type I: Small Appliances",
     epaType2: "Type II: High-Pressure",
     epaType3: "Type III: Low-Pressure",
+    // CNA (NNAAP) content areas
+    activitiesDailyLiving: "Activities of Daily Living",
+    basicNursingSkills: "Basic Nursing Skills",
+    restorativeSkills: "Restorative Skills",
+    emotionalMentalHealth: "Emotional & Mental Health Needs",
+    spiritualCultural: "Spiritual & Cultural Needs",
+    communication: "Communication",
+    clientRights: "Client Rights",
+    legalEthical: "Legal & Ethical Behavior",
+    healthCareTeam: "Member of the Health Care Team",
   } as Record<string, string>,
 
   // Training set names

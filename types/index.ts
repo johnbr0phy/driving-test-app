@@ -1,5 +1,5 @@
 // Question types
-export type QuestionType = "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HAM" | "EPA608" | "HTL" | "CST" | "CRCST";
+export type QuestionType = "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HAM" | "EPA608" | "CNA" | "HTL" | "CST" | "CRCST";
 
 // Test mode
 export type TestMode = "dmv" | "cdl" | "htl";
@@ -105,7 +105,17 @@ export type QuestionCategory =
   | "epaCore"
   | "epaType1"
   | "epaType2"
-  | "epaType3";
+  | "epaType3"
+  // CNA (NNAAP) content areas
+  | "activitiesDailyLiving"
+  | "basicNursingSkills"
+  | "restorativeSkills"
+  | "emotionalMentalHealth"
+  | "spiritualCultural"
+  | "communication"
+  | "clientRights"
+  | "legalEthical"
+  | "healthCareTeam";
 
 export interface Question {
   type: QuestionType;

@@ -13,7 +13,7 @@
  * This file must stay free of question-data imports (the store imports it).
  */
 
-export type ExamId = "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "htl" | "cst" | "crcst";
+export type ExamId = "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "htl" | "cst" | "crcst";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (?set=N). */
@@ -53,7 +53,7 @@ export interface ExamConfig {
   /** Question ID prefix, e.g. "HTL-". */
   questionIdPrefix: string;
   /** Header icon key (see CDLHeader). */
-  icon: "truck" | "bike" | "flag" | "plane" | "radio" | "thermometer" | "microscope" | "scissors" | "shield";
+  icon: "truck" | "bike" | "flag" | "plane" | "radio" | "thermometer" | "heart" | "microscope" | "scissors" | "shield";
   testCount: number;
   questionsPerTest: number;
   passPct: number;
@@ -495,6 +495,69 @@ const epa608: ExamConfig = {
   },
 };
 
+const cna: ExamConfig = {
+  id: "cna",
+  stateCode: "CNA",
+  idBase: 1100,
+  slug: "/cna",
+  landingPath: "/cna-practice-test",
+  name: "CNA Practice Test",
+  shortName: "CNA",
+  examLabel: "CNA Written Exam",
+  fullName: "nurse aide written (knowledge) exam",
+  questionIdPrefix: "CNA-",
+  icon: "heart",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // NNAAP outline: Physical Care 61% (ADL 14, basic nursing 39, restorative 8),
+  // Psychosocial 13% (emotional 11, spiritual/cultural 2), Role 26%
+  // (communication 8, rights 7, legal/ethical 3, team 8).
+  blueprint: {
+    activitiesDailyLiving: 8,
+    basicNursingSkills: 19,
+    restorativeSkills: 4,
+    emotionalMentalHealth: 5,
+    spiritualCultural: 1,
+    communication: 4,
+    clientRights: 4,
+    legalEthical: 1,
+    healthCareTeam: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 1101, name: "Daily Living & Restorative Care", categories: ["activitiesDailyLiving", "restorativeSkills"], size: 48, weightLabel: "22% of the exam" },
+    { setNumber: 2, id: 1102, name: "Basic Nursing Skills", categories: ["basicNursingSkills"], size: 76, weightLabel: "39% of the exam" },
+    { setNumber: 3, id: 1103, name: "Psychosocial Care", categories: ["emotionalMentalHealth", "spiritualCultural"], size: 24, weightLabel: "13% of the exam" },
+    { setNumber: 4, id: 1104, name: "Role of the Nurse Aide", categories: ["communication", "clientRights", "legalEthical", "healthCareTeam"], size: 52, weightLabel: "26% of the exam" },
+  ],
+  categoryLabels: {
+    activitiesDailyLiving: "Activities of Daily Living",
+    basicNursingSkills: "Basic Nursing Skills",
+    restorativeSkills: "Restorative Skills",
+    emotionalMentalHealth: "Emotional & Mental Health Needs",
+    spiritualCultural: "Spiritual & Cultural Needs",
+    communication: "Communication",
+    clientRights: "Client Rights",
+    legalEthical: "Legal & Ethical Behavior",
+    healthCareTeam: "Member of the Health Care Team",
+  },
+  copy: {
+    guestPrompt: "to save your CNA exam progress and track every question you miss",
+    trainingHeading: "Train by content area",
+    trainingSub: "Four sets following the NNAAP written exam outline. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real exam",
+    heroSubs: [
+      "Four content areas, four full tests. Basic nursing skills is almost 40% of the exam.",
+      "Mastery first, then test. The sets follow the NNAAP outline most states use.",
+      "Halfway through the outline. The practice tests will show where you stand.",
+      "Fix the misses, then retake. Most states want about 70%.",
+      "Full prep done. Book your written and skills test with your state's vendor.",
+    ],
+    sourceLine: "Weighted to the NNAAP written exam content outline. Your state may use Prometric or Headmaster with a similar outline.",
+    analyticsKey: "cna",
+  },
+};
+
 const htl: ExamConfig = {
   id: "htl",
   stateCode: "HTL",
@@ -665,7 +728,7 @@ const crcst: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, htl, cst, crcst];
 
 export const examSetBase = (exam: ExamConfig) => exam.setIdBase ?? exam.idBase;
 /** Store ID of training set N of an exam. */

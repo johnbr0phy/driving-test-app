@@ -1,9 +1,8 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight } from "lucide-react";
-import { TEST_CATALOG, TEST_GROUPS, TestCatalogEntry } from "@/lib/testCatalog";
-import { TestIcon } from "@/components/TestIcon";
+import { TEST_CATALOG } from "@/lib/testCatalog";
+import { TestCatalogGrid } from "@/components/TestCatalogGrid";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
@@ -31,34 +30,6 @@ const jsonLd = {
   })),
 };
 
-function TestCard({ test }: { test: TestCatalogEntry }) {
-  return (
-    <div data-theme={test.theme} className="h-full">
-      <Link
-        href={test.href}
-        className="group flex h-full flex-col rounded-2xl border border-gray-200 bg-white p-6 transition-all hover:border-brand hover:shadow-lg"
-      >
-        <div className="mb-4 flex items-center gap-3">
-          <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-brand text-white">
-            <TestIcon icon={test.icon} className="h-6 w-6" />
-          </div>
-          <div>
-            <h2 className="text-lg font-semibold text-gray-900">{test.name}</h2>
-            <p className="text-sm text-gray-500">{test.org}</p>
-          </div>
-        </div>
-        <p className="flex-1 text-gray-600">{test.blurb}</p>
-        <div className="mt-5 flex items-center justify-between text-sm">
-          <span className="text-gray-500">{test.questions} questions · Free</span>
-          <span className="inline-flex items-center gap-1 font-semibold text-brand group-hover:gap-2 transition-all">
-            Start <ArrowRight className="h-4 w-4" aria-hidden="true" />
-          </span>
-        </div>
-      </Link>
-    </div>
-  );
-}
-
 export default function TestsHubPage() {
   return (
     <div className="flex-1 bg-white">
@@ -77,16 +48,7 @@ export default function TestsHubPage() {
       </div>
 
       <div className="max-w-5xl mx-auto px-6 pb-16 md:pb-24">
-        {TEST_GROUPS.map((group, i) => (
-          <div key={group.title} className={i < TEST_GROUPS.length - 1 ? "mb-12" : ""}>
-            <h2 className="text-sm font-semibold uppercase tracking-wide text-gray-500 mb-4">{group.title}</h2>
-            <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-              {group.tests.map((t) => (
-                <TestCard key={t.id} test={t} />
-              ))}
-            </div>
-          </div>
-        ))}
+        <TestCatalogGrid />
 
         <div className="mt-14 rounded-2xl bg-gray-50 border border-gray-200 p-8 text-center">
           <h2 className="text-2xl font-bold text-gray-900 mb-3">Don&apos;t see your exam?</h2>

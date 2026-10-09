@@ -1,4 +1,4 @@
-import { Car, Truck, Bike, Flag, Plane, Radio, Thermometer, HeartPulse, Pill, Syringe, Stethoscope, Activity, SmilePlus, Siren, Utensils, House, Umbrella, Stamp, GraduationCap, Cloud, Microscope, Scissors, ShieldCheck } from "lucide-react";
+import { Car, Truck, Bike, Flag, Plane, Radio, Thermometer, HeartPulse, Pill, Syringe, Stethoscope, Activity, SmilePlus, Siren, Utensils, House, Umbrella, Stamp, GraduationCap, Cloud, Cpu, Microscope, Scissors, ShieldCheck } from "lucide-react";
 import type { TestCatalogEntry } from "@/lib/testCatalog";
 
 export function TestIcon({ icon, className = "h-5 w-5" }: { icon: TestCatalogEntry["icon"]; className?: string }) {
@@ -22,6 +22,7 @@ export function TestIcon({ icon, className = "h-5 w-5" }: { icon: TestCatalogEnt
   if (icon === "stamp") return <Stamp className={className} aria-hidden="true" />;
   if (icon === "graduation") return <GraduationCap className={className} aria-hidden="true" />;
   if (icon === "cloud") return <Cloud className={className} aria-hidden="true" />;
+  if (icon === "cpu") return <Cpu className={className} aria-hidden="true" />;
   if (icon === "microscope") return <Microscope className={className} aria-hidden="true" />;
   if (icon === "scissors") return <Scissors className={className} aria-hidden="true" />;
   return <ShieldCheck className={className} aria-hidden="true" />;

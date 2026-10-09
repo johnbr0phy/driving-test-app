@@ -19,6 +19,7 @@ import insuranceQuestions from "@/data/life-health-questions.json";
 import notaryQuestions from "@/data/notary-questions.json";
 import teasQuestions from "@/data/teas-questions.json";
 import awsQuestions from "@/data/aws-ccp-questions.json";
+import aplusQuestions from "@/data/comptia-aplus-questions.json";
 import htlQuestions from "@/data/htl-questions.json";
 import cstQuestions from "@/data/cst-questions.json";
 import crcstQuestions from "@/data/crcst-questions.json";
@@ -47,6 +48,7 @@ const BANKS: Record<ExamId, Question[]> = {
   notary: notaryQuestions as Question[],
   teas: teasQuestions as Question[],
   aws: awsQuestions as Question[],
+  aplus: aplusQuestions as Question[],
   htl: htlQuestions as Question[],
   cst: cstQuestions as Question[],
   crcst: crcstQuestions as Question[],

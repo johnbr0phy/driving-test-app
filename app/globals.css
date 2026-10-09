@@ -322,6 +322,20 @@
     --brand-gradient-to: 40 70% 95%;
   }
 
+  /* CompTIA A+ theme: crimson */
+  [data-theme="aplus"] {
+    --brand: 350 75% 44%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 350 85% 95%;
+    --brand-hover: 350 75% 38%;
+    --brand-dark: 350 75% 32%;
+    --brand-darker: 350 65% 16%;
+    --brand-muted: 350 55% 72%;
+    --brand-border: 350 55% 78%;
+    --brand-border-light: 350 50% 88%;
+    --brand-gradient-to: 20 70% 95%;
+  }
+
   /* Motorcycle permit theme: deep red */
   [data-theme="moto"] {
     --brand: 355 72% 44%;

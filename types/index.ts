@@ -1,5 +1,5 @@
 // Question types
-export type QuestionType = "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HAM" | "EPA608" | "CNA" | "PTCB" | "PHLEB" | "CCMA" | "CET" | "DANB" | "EMT" | "FOODMGR" | "REALESTATE" | "LIFEHEALTH" | "NOTARY" | "TEAS" | "AWSCCP" | "HTL" | "CST" | "CRCST";
+export type QuestionType = "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HAM" | "EPA608" | "CNA" | "PTCB" | "PHLEB" | "CCMA" | "CET" | "DANB" | "EMT" | "FOODMGR" | "REALESTATE" | "LIFEHEALTH" | "NOTARY" | "TEAS" | "AWSCCP" | "APLUS" | "HTL" | "CST" | "CRCST";
 
 // Test mode
 export type TestMode = "dmv" | "cdl" | "htl";
@@ -199,7 +199,17 @@ export type QuestionCategory =
   | "cloudConcepts"
   | "securityCompliance"
   | "technologyServices"
-  | "billingPricing";
+  | "billingPricing"
+  // CompTIA A+ Core 1 and Core 2 domains
+  | "aplusMobile"
+  | "aplusNetworking"
+  | "aplusHardware"
+  | "aplusVirtCloud"
+  | "aplusHwTroubleshooting"
+  | "aplusOS"
+  | "aplusSecurity"
+  | "aplusSwTroubleshooting"
+  | "aplusOperational";
 
 export interface Question {
   type: QuestionType;

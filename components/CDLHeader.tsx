@@ -8,7 +8,7 @@ import { useAuth } from "@/contexts/AuthContext";
 import { useStore } from "@/store/useStore";
 import { useHydration } from "@/hooks/useHydration";
 import { useTestTheme } from "@/contexts/TestThemeContext";
-import { Truck, Bike, Flag, Plane, Radio, Thermometer, HeartPulse, Pill, Syringe, Stethoscope, Activity, SmilePlus, Siren, Utensils, House, Umbrella, Stamp, GraduationCap, Cloud, Microscope, Scissors, ShieldCheck } from "lucide-react";
+import { Truck, Bike, Flag, Plane, Radio, Thermometer, HeartPulse, Pill, Syringe, Stethoscope, Activity, SmilePlus, Siren, Utensils, House, Umbrella, Stamp, GraduationCap, Cloud, Cpu, Microscope, Scissors, ShieldCheck } from "lucide-react";
 import { getExamById } from "@/lib/exams";
 import Image from "next/image";
 import { TestSwitcher } from "@/components/TestSwitcher";
@@ -57,6 +57,7 @@ export function CDLHeader() {
                 if (icon === "stamp") return <Stamp className="h-6 w-6 text-white" />;
                 if (icon === "graduation") return <GraduationCap className="h-6 w-6 text-white" />;
                 if (icon === "cloud") return <Cloud className="h-6 w-6 text-white" />;
+                if (icon === "cpu") return <Cpu className="h-6 w-6 text-white" />;
                 if (icon === "microscope") return <Microscope className="h-6 w-6 text-white" />;
                 if (icon === "scissors") return <Scissors className="h-6 w-6 text-white" />;
                 if (icon === "shield") return <ShieldCheck className="h-6 w-6 text-white" />;

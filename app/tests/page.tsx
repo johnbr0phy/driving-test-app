@@ -7,9 +7,9 @@ import { TestIcon } from "@/components/TestIcon";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "All Free Practice Tests - DMV, Motorcycle, CDL, Endorsements, Citizenship, Part 107, Ham Radio, EPA 608, CNA, CCMA, PTCB, Phlebotomy, EKG, Dental Assistant, EMT, Food Manager, Real Estate, Insurance, Notary, TEAS, AWS, HTL, CST, CRCST";
+const title = "All Free Practice Tests - DMV, Motorcycle, CDL, Endorsements, Citizenship, Part 107, Ham Radio, EPA 608, CNA, CCMA, PTCB, Phlebotomy, EKG, Dental Assistant, EMT, Food Manager, Real Estate, Insurance, Notary, TEAS, AWS, CompTIA A+, HTL, CST, CRCST";
 const description =
-  "Every free practice test on TigerTest in one place: DMV permit tests for all 50 states, motorcycle permit, CDL general knowledge and endorsements, the USCIS citizenship civics test, the FAA Part 107 drone pilot test, the FCC ham radio Technician exam, the EPA 608 refrigerant exam, the certified food protection manager exam, the real estate salesperson national exam, the life and health insurance license exam, the notary public exam, the ATI TEAS nursing entrance exam, the AWS Cloud Practitioner exam, the CNA written exam, the NHA CCMA medical assistant exam, the PTCB pharmacy technician exam, the NHA phlebotomy and EKG technician exams, the DANB dental assistant exam, the NREMT EMT exam, and ASCP HTL, NBSTSA CST and HSPA CRCST certification exam prep.";
+  "Every free practice test on TigerTest in one place: DMV permit tests for all 50 states, motorcycle permit, CDL general knowledge and endorsements, the USCIS citizenship civics test, the FAA Part 107 drone pilot test, the FCC ham radio Technician exam, the EPA 608 refrigerant exam, the certified food protection manager exam, the real estate salesperson national exam, the life and health insurance license exam, the notary public exam, the ATI TEAS nursing entrance exam, the AWS Cloud Practitioner and CompTIA A+ exams, the CNA written exam, the NHA CCMA medical assistant exam, the PTCB pharmacy technician exam, the NHA phlebotomy and EKG technician exams, the DANB dental assistant exam, the NREMT EMT exam, and ASCP HTL, NBSTSA CST and HSPA CRCST certification exam prep.";
 
 export const metadata: Metadata = {
   title,

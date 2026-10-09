@@ -13,7 +13,7 @@
  * This file must stay free of question-data imports (the store imports it).
  */
 
-export type ExamId = "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "emt" | "foodmgr" | "realestate" | "insurance" | "notary" | "teas" | "aws" | "htl" | "cst" | "crcst";
+export type ExamId = "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "emt" | "foodmgr" | "realestate" | "insurance" | "notary" | "teas" | "aws" | "aplus" | "htl" | "cst" | "crcst";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (?set=N). */
@@ -53,7 +53,7 @@ export interface ExamConfig {
   /** Question ID prefix, e.g. "HTL-". */
   questionIdPrefix: string;
   /** Header icon key (see CDLHeader). */
-  icon: "truck" | "bike" | "flag" | "plane" | "radio" | "thermometer" | "heart" | "pill" | "syringe" | "stethoscope" | "activity" | "tooth" | "siren" | "utensils" | "house" | "umbrella" | "stamp" | "graduation" | "cloud" | "microscope" | "scissors" | "shield";
+  icon: "truck" | "bike" | "flag" | "plane" | "radio" | "thermometer" | "heart" | "pill" | "syringe" | "stethoscope" | "activity" | "tooth" | "siren" | "utensils" | "house" | "umbrella" | "stamp" | "graduation" | "cloud" | "cpu" | "microscope" | "scissors" | "shield";
   testCount: number;
   questionsPerTest: number;
   passPct: number;
@@ -1252,6 +1252,71 @@ const aws: ExamConfig = {
   },
 };
 
+const aplus: ExamConfig = {
+  id: "aplus",
+  stateCode: "APLUS",
+  idBase: 2400,
+  slug: "/comptia-a-plus",
+  landingPath: "/comptia-a-plus-practice-test",
+  name: "CompTIA A+ Practice Test",
+  shortName: "CompTIA A+",
+  examLabel: "A+ Core 1 & 2",
+  fullName: "CompTIA A+ (220-1201 and 220-1202) exams",
+  questionIdPrefix: "AP-",
+  icon: "cpu",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // CompTIA A+ Core 1 (220-1201: Mobile 13%, Networking 23%, Hardware 25%,
+  // Virtualization and Cloud 11%, Hardware and Network Troubleshooting 28%)
+  // and Core 2 (220-1202: Operating Systems 28%, Security 28%, Software
+  // Troubleshooting 23%, Operational Procedures 21%). Mixed 50-item tests
+  // split 25/25 across the two cores in each core's proportions.
+  blueprint: {
+    aplusMobile: 3,
+    aplusNetworking: 6,
+    aplusHardware: 6,
+    aplusVirtCloud: 3,
+    aplusHwTroubleshooting: 7,
+    aplusOS: 7,
+    aplusSecurity: 7,
+    aplusSwTroubleshooting: 6,
+    aplusOperational: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 2401, name: "Core 1: Mobile, Networking & Hardware", categories: ["aplusMobile", "aplusNetworking", "aplusHardware"], size: 60, weightLabel: "30% of the tests" },
+    { setNumber: 2, id: 2402, name: "Core 1: Cloud & Hardware Troubleshooting", categories: ["aplusVirtCloud", "aplusHwTroubleshooting"], size: 40, weightLabel: "20% of the tests" },
+    { setNumber: 3, id: 2403, name: "Core 2: Operating Systems & Security", categories: ["aplusOS", "aplusSecurity"], size: 56, weightLabel: "28% of the tests" },
+    { setNumber: 4, id: 2404, name: "Core 2: Software Troubleshooting & Procedures", categories: ["aplusSwTroubleshooting", "aplusOperational"], size: 44, weightLabel: "22% of the tests" },
+  ],
+  categoryLabels: {
+    aplusMobile: "Mobile Devices",
+    aplusNetworking: "Networking",
+    aplusHardware: "Hardware",
+    aplusVirtCloud: "Virtualization & Cloud Computing",
+    aplusHwTroubleshooting: "Hardware & Network Troubleshooting",
+    aplusOS: "Operating Systems",
+    aplusSecurity: "Security",
+    aplusSwTroubleshooting: "Software Troubleshooting",
+    aplusOperational: "Operational Procedures",
+  },
+  copy: {
+    guestPrompt: "to save your A+ progress and track every question you miss",
+    trainingHeading: "Train by core and domain",
+    trainingSub: "Four sets covering all nine A+ domains across Core 1 and Core 2. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests \u00b7 50 questions split across Core 1 and Core 2",
+    heroSubs: [
+      "Nine domains, two cores, four full tests. Troubleshooting is the biggest piece of each.",
+      "Mastery first, then test. The sets follow the 220-1201 and 220-1202 objectives.",
+      "Halfway through the objectives. The practice tests will show where you stand.",
+      "Fix the misses, then retake. Core 1 passes at 675 and Core 2 at 700 of 900.",
+      "Full prep done. Schedule Core 1 and Core 2 at Pearson VUE.",
+    ],
+    sourceLine: "Weighted to the CompTIA A+ 220-1201 and 220-1202 objectives (version 15, 2025). Performance-based items are not simulated.",
+    analyticsKey: "aplus",
+  },
+};
+
 const htl: ExamConfig = {
   id: "htl",
   stateCode: "HTL",
@@ -1422,7 +1487,7 @@ const crcst: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, cet, danb, emt, foodmgr, realestate, insurance, notary, teas, aws, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, cet, danb, emt, foodmgr, realestate, insurance, notary, teas, aws, aplus, htl, cst, crcst];
 
 export const examSetBase = (exam: ExamConfig) => exam.setIdBase ?? exam.idBase;
 /** Store ID of training set N of an exam. */

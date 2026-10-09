@@ -409,6 +409,16 @@ export const en = {
     securityCompliance: "Security & Compliance",
     technologyServices: "Cloud Technology & Services",
     billingPricing: "Billing, Pricing & Support",
+    // CompTIA A+ Core 1 and Core 2 domains
+    aplusMobile: "Mobile Devices",
+    aplusNetworking: "Networking",
+    aplusHardware: "Hardware",
+    aplusVirtCloud: "Virtualization & Cloud Computing",
+    aplusHwTroubleshooting: "Hardware & Network Troubleshooting",
+    aplusOS: "Operating Systems",
+    aplusSecurity: "Security",
+    aplusSwTroubleshooting: "Software Troubleshooting",
+    aplusOperational: "Operational Procedures",
   } as Record<string, string>,
 
   // Training set names

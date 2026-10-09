@@ -94,6 +94,66 @@ export const TEST_GROUPS: { title: string; tests: TestCatalogEntry[] }[] = [
   { title: "Other exams", tests: TEST_CATALOG.filter((t) => !GROUPS.some((g) => g.ids.includes(t.id))) },
 ].filter((g) => g.tests.length > 0);
 
+/** Extra words people type that do not appear in the name, org or blurb. */
+const SEARCH_ALIASES: Record<string, string> = {
+  dmv: "driver license permit learners written knowledge road signs state",
+  cdl: "truck trucking commercial class a class b",
+  cdlx: "hazmat hazardous materials air brakes combination tanker passenger school bus endorsement",
+  moto: "motorbike m endorsement",
+  civics: "citizenship naturalization immigration n-400 uscis green card",
+  part107: "drone uas uav remote pilot faa",
+  ham: "amateur radio fcc technician callsign",
+  epa608: "hvac refrigerant freon air conditioning technician universal",
+  cna: "nursing assistant nurse aide nnaap",
+  ptcb: "pharmacy technician pharm tech ptce",
+  phleb: "blood draw venipuncture cpt pbt",
+  ccma: "medical assistant clinical nha",
+  cet: "ekg ecg electrocardiogram cardiac technician",
+  danb: "dental assistant cda chairside radiography infection control",
+  emt: "emergency medical technician paramedic ambulance nremt",
+  foodmgr: "food safety servsafe food handler manager cfpm haccp",
+  realestate: "realtor salesperson broker license property",
+  insurance: "life health accident producer agent license",
+  notary: "notary public signing agent commission",
+  teas: "nursing school entrance ati admissions",
+  aws: "amazon cloud practitioner clf-c02 certification",
+  aplus: "comptia a plus it support help desk core 1 core 2 hardware",
+  htl: "histology histotechnologist histotechnician ascp",
+  cst: "surgical technologist scrub tech operating room",
+  crcst: "sterile processing central service hspa cbspd",
+};
+
+function haystack(t: TestCatalogEntry): string {
+  return [t.shortName, t.name, t.org, t.blurb, SEARCH_ALIASES[t.id] ?? ""].join(" ").toLowerCase();
+}
+
+/**
+ * Filter the catalog by a free-text query. Every whitespace-separated term
+ * must match somewhere in the name, org, blurb or aliases. An empty query
+ * returns everything. Name matches sort before blurb-only matches.
+ */
+export function searchTests(query: string, tests: TestCatalogEntry[] = TEST_CATALOG): TestCatalogEntry[] {
+  const terms = query.toLowerCase().split(/\s+/).filter(Boolean);
+  if (terms.length === 0) return tests;
+  const scored = tests
+    .map((t) => {
+      const text = haystack(t);
+      if (!terms.every((term) => text.includes(term))) return null;
+      const title = `${t.shortName} ${t.name}`.toLowerCase();
+      const score = terms.filter((term) => title.includes(term)).length;
+      return { t, score };
+    })
+    .filter((x): x is { t: TestCatalogEntry; score: number } => x !== null);
+  return scored.sort((a, b) => b.score - a.score).map((x) => x.t);
+}
+
+/** TEST_GROUPS narrowed to a query, dropping empty groups. */
+export function searchTestGroups(query: string) {
+  if (!query.trim()) return TEST_GROUPS;
+  const hits = new Set(searchTests(query).map((t) => t.id));
+  return TEST_GROUPS.map((g) => ({ title: g.title, tests: g.tests.filter((t) => hits.has(t.id)) })).filter((g) => g.tests.length > 0);
+}
+
 /** Which catalog entry a pathname belongs to (DMV is the fallback). */
 export function getCatalogEntryByPath(pathname: string | null | undefined): TestCatalogEntry {
   if (!pathname) return dmv;

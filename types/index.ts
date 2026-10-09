@@ -1,5 +1,5 @@
 // Question types
-export type QuestionType = "Universal" | "State-Specific" | "CDL" | "MOTO" | "HTL" | "CST" | "CRCST";
+export type QuestionType = "Universal" | "State-Specific" | "CDL" | "MOTO" | "CIVICS" | "HTL" | "CST" | "CRCST";
 
 // Test mode
 export type TestMode = "dmv" | "cdl" | "htl";
@@ -69,7 +69,15 @@ export type QuestionCategory =
   | "ridingPreparation"
   | "laneStrategy"
   | "intersectionsPassing"
-  | "roadHazards";
+  | "roadHazards"
+  // USCIS civics test sections
+  | "principlesDemocracy"
+  | "systemGovernment"
+  | "rightsResponsibilities"
+  | "colonialIndependence"
+  | "history1800s"
+  | "recentHistory"
+  | "symbolsHolidays";
 
 export interface Question {
   type: QuestionType;

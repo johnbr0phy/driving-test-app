@@ -279,6 +279,14 @@ export const en = {
     laneStrategy: "Positioning & Being Seen",
     intersectionsPassing: "Intersections & Passing",
     roadHazards: "Road Hazards",
+    // USCIS civics test sections
+    principlesDemocracy: "Principles of American Government",
+    systemGovernment: "System of Government",
+    rightsResponsibilities: "Rights & Responsibilities",
+    colonialIndependence: "Colonial Period & Independence",
+    history1800s: "1800s",
+    recentHistory: "Recent American History",
+    symbolsHolidays: "Symbols & Holidays",
   } as Record<string, string>,
 
   // Training set names

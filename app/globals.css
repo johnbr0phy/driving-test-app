@@ -98,6 +98,20 @@
     --brand-gradient-to: 20 90% 95%;
   }
 
+  /* Citizenship civics theme: navy blue */
+  [data-theme="civics"] {
+    --brand: 222 68% 42%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 222 85% 96%;
+    --brand-hover: 222 68% 36%;
+    --brand-dark: 222 68% 28%;
+    --brand-darker: 222 60% 17%;
+    --brand-muted: 222 50% 72%;
+    --brand-border: 222 50% 78%;
+    --brand-border-light: 222 45% 88%;
+    --brand-gradient-to: 0 80% 96%;
+  }
+
   /* CRCST (sterile processing) theme: deep cyan */
   [data-theme="crcst"] {
     --brand: 195 85% 36%;

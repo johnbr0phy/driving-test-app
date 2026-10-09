@@ -13,7 +13,7 @@
  * This file must stay free of question-data imports (the store imports it).
  */
 
-export type ExamId = "cdl" | "moto" | "htl" | "cst" | "crcst";
+export type ExamId = "cdl" | "moto" | "civics" | "htl" | "cst" | "crcst";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (?set=N). */
@@ -53,7 +53,7 @@ export interface ExamConfig {
   /** Question ID prefix, e.g. "HTL-". */
   questionIdPrefix: string;
   /** Header icon key (see CDLHeader). */
-  icon: "truck" | "bike" | "microscope" | "scissors" | "shield";
+  icon: "truck" | "bike" | "flag" | "microscope" | "scissors" | "shield";
   testCount: number;
   questionsPerTest: number;
   passPct: number;
@@ -205,6 +205,64 @@ const moto: ExamConfig = {
     ],
     sourceLine: "Based on the MSF Motorcycle Operator Manual used by nearly every state. Check your state's handbook for local rules.",
     analyticsKey: "moto",
+  },
+};
+
+const civics: ExamConfig = {
+  id: "civics",
+  stateCode: "CIVICS",
+  idBase: 600,
+  slug: "/citizenship",
+  landingPath: "/citizenship-test",
+  name: "Citizenship Test Practice",
+  shortName: "Citizenship",
+  examLabel: "USCIS Civics Test",
+  fullName: "U.S. citizenship civics test",
+  questionIdPrefix: "CIV-",
+  icon: "flag",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 60,
+  // The 2025 USCIS list has 128 questions in 8 sections; the bank expands
+  // multi-answer questions into several items, in the list's proportions.
+  blueprint: {
+    principlesDemocracy: 6,
+    systemGovernment: 18,
+    rightsResponsibilities: 4,
+    colonialIndependence: 7,
+    history1800s: 4,
+    recentHistory: 7,
+    symbolsHolidays: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 601, name: "Principles, Rights & Responsibilities", categories: ["principlesDemocracy", "rightsResponsibilities"], size: 40, weightLabel: "20% of each test" },
+    { setNumber: 2, id: 602, name: "System of Government", categories: ["systemGovernment"], size: 72, weightLabel: "36% of each test" },
+    { setNumber: 3, id: 603, name: "American History", categories: ["colonialIndependence", "history1800s", "recentHistory"], size: 72, weightLabel: "36% of each test" },
+    { setNumber: 4, id: 604, name: "Symbols & Holidays", categories: ["symbolsHolidays"], size: 16, weightLabel: "8% of each test" },
+  ],
+  categoryLabels: {
+    principlesDemocracy: "Principles of American Government",
+    systemGovernment: "System of Government",
+    rightsResponsibilities: "Rights & Responsibilities",
+    colonialIndependence: "Colonial Period & Independence",
+    history1800s: "1800s",
+    recentHistory: "Recent American History",
+    symbolsHolidays: "Symbols & Holidays",
+  },
+  copy: {
+    guestPrompt: "to save your civics test progress and track every question you miss",
+    trainingHeading: "Train by section of the official list",
+    trainingSub: "Four sets covering all 128 official questions. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions, 60% to pass like the real test",
+    heroSubs: [
+      "All 128 official questions, four full tests. Government and history are most of the test.",
+      "Mastery first, then test. The sets follow the USCIS list section by section.",
+      "Halfway through the list. The practice tests will show where you stand.",
+      "Fix the misses, then retake. On the real test you need 12 of 20.",
+      "Full prep done. Check uscis.gov for answer updates before your interview.",
+    ],
+    sourceLine: "Built from the official USCIS 2025 civics test list (128 questions). Officials' names change; check uscis.gov/citizenship/testupdates.",
+    analyticsKey: "civics",
   },
 };
 
@@ -378,7 +436,7 @@ const crcst: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, moto, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, moto, civics, htl, cst, crcst];
 
 export const examSetBase = (exam: ExamConfig) => exam.setIdBase ?? exam.idBase;
 /** Store ID of training set N of an exam. */

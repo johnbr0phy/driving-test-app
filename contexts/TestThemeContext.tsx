@@ -1,6 +1,7 @@
 "use client";
 
 import { createContext, useContext, ReactNode } from "react";
+import { EXAMS } from "@/lib/exams";
 
 export interface TestTheme {
   id: string;
@@ -62,24 +63,29 @@ export const themes: Record<string, TestTheme> = {
     signupPath: "/signup",
     loginPath: "/login",
   },
-  htl: {
-    id: "htl",
-    name: "HTL Practice Test",
-    slug: "htl",
-    headerTitle: "HTL Practice Test",
-    logoHome: "/htl",
-    logoIcon: null,
-    testsPerSet: 50,
-    totalTests: 4,
-    totalTrainingSets: 5,
-    questionsPerTest: 50,
-    passPercentage: 70,
-    routeBase: "/htl",
-    dashboardPath: "/htl/dashboard",
-    landingPath: "/htl",
-    signupPath: "/signup?redirect=/htl/dashboard",
-    loginPath: "/login?redirect=/htl/dashboard",
-  },
+  ...Object.fromEntries(
+    EXAMS.map((exam) => [
+      exam.id,
+      {
+        id: exam.id,
+        name: exam.name,
+        slug: exam.id,
+        headerTitle: exam.name,
+        logoHome: exam.slug,
+        logoIcon: null,
+        testsPerSet: exam.questionsPerTest,
+        totalTests: exam.testCount,
+        totalTrainingSets: exam.trainingSets.length,
+        questionsPerTest: exam.questionsPerTest,
+        passPercentage: exam.passPct,
+        routeBase: exam.slug,
+        dashboardPath: `${exam.slug}/dashboard`,
+        landingPath: exam.slug,
+        signupPath: `/signup?redirect=${exam.slug}/dashboard`,
+        loginPath: `/login?redirect=${exam.slug}/dashboard`,
+      } satisfies TestTheme,
+    ])
+  ),
 };
 
 const TestThemeContext = createContext<TestTheme>(themes.dmv);

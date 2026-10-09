@@ -1,3 +1,4 @@
+import { EXAMS } from "@/lib/exams";
 import { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
@@ -24,11 +25,9 @@ export default function robots(): MetadataRoute.Robots {
           "/cdl/stats",
           "/cdl/test",
           "/cdl/training",
-          "/htl/dashboard",
-          "/htl/stats",
-          "/htl/test",
-          "/htl/training",
-          "/htl/drill",
+          ...EXAMS.flatMap((exam) =>
+            ["dashboard", "stats", "test", "training", "drill"].map((p) => `${exam.slug}/${p}`)
+          ),
         ],
       },
       // Explicitly allow major AI crawlers

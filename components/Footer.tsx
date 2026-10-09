@@ -7,6 +7,7 @@ import { states } from "@/data/states";
 import { isViState } from "@/data/viStates";
 import { isKoState } from "@/data/koStates";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import { getExamByPath } from "@/lib/exams";
 
 const popularStateSlugs = [
   "california", "texas", "florida", "new-york", "pennsylvania",
@@ -25,9 +26,9 @@ export function Footer() {
   const isVi = language === "vi";
   const isKo = language === "ko";
   const isCDL = pathname?.startsWith("/cdl") || pathname === "/cdl-practice-test";
-  const isHTL = pathname === "/htl" || pathname?.startsWith("/htl/");
+  const exam = getExamByPath(pathname);
   // Non-DMV exams share the compact footer (no state links, no language toggle).
-  const isAltExam = isCDL || isHTL;
+  const isAltExam = isCDL || !!exam;
   const isHomepage = pathname === "/";
 
   // SEO landing pages have dedicated /es/ and /vi/ URLs, so they manage
@@ -44,7 +45,7 @@ export function Footer() {
 
   const showLanguageToggle = !isHomepage && !isAltExam && !isSeoPage;
 
-  const dataTheme = isHTL ? "htl" : isCDL ? "cdl" : undefined;
+  const dataTheme = exam ? exam.id : isCDL ? "cdl" : undefined;
 
   return (
     <footer className="relative border-t bg-white mt-auto" data-theme={dataTheme}>

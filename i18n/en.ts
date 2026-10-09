@@ -252,6 +252,23 @@ export const en = {
     embeddingMicrotomy: "Embedding & Microtomy",
     staining: "Staining",
     laboratoryOperations: "Laboratory Operations",
+    // CST (surgical technologist) categories
+    preoperativePreparation: "Preoperative Preparation",
+    intraoperativeProcedures: "Intraoperative Procedures",
+    postoperativeProcedures: "Postoperative Procedures",
+    administrativePersonnel: "Administrative & Personnel",
+    equipmentSterilization: "Equipment Sterilization & Maintenance",
+    anatomyPhysiology: "Anatomy & Physiology",
+    microbiology: "Microbiology",
+    surgicalPharmacology: "Surgical Pharmacology",
+    // CRCST (sterile processing) categories
+    departmentalConsiderations: "Departmental Considerations",
+    cleaningDecontamination: "Cleaning, Decontamination & Disinfection",
+    preparationPackaging: "Preparation & Packaging",
+    sterilizationProcess: "Sterilization Process",
+    sterileStorageInventory: "Sterile Storage, Transport & Inventory",
+    patientCareEquipment: "Patient Care Equipment & Distribution",
+    professionalDevelopment: "Professional Development & Human Relations",
   } as Record<string, string>,
 
   // Training set names

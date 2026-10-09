@@ -3,7 +3,7 @@ import { NextRequest } from "next/server";
 import { readFile } from "fs/promises";
 import { join } from "path";
 import { states } from "@/data/states";
-import { HTL_ID_BASE, HTL_STATE_CODE, HTL_TRAINING_SETS } from "@/lib/htlConfig";
+import { getExamByStateCode } from "@/lib/exams";
 
 export const runtime = "nodejs";
 
@@ -105,18 +105,18 @@ export async function GET(request: NextRequest) {
   if (testId !== null && isNaN(testId)) {
     return new Response("Invalid testId", { status: 400 });
   }
-  // HTL (histotechnologist) shares this card. It is not a US state, so it
-  // resolves to a label here instead of the states table.
-  const isHTL = stateCode.toUpperCase() === HTL_STATE_CODE;
-  const maxSetId = isHTL ? HTL_TRAINING_SETS.length : 4;
+  // Certification exams (HTL, CST, CRCST) share this card. They are not US
+  // states, so they resolve to a label from the exam registry instead.
+  const exam = getExamByStateCode(stateCode);
+  const maxSetId = exam ? exam.trainingSets.length : 4;
   if (setId !== null && (isNaN(setId) || setId < 1 || setId > maxSetId)) {
     return new Response("Invalid setId", { status: 400 });
   }
 
   const isTraining = setId !== null;
 
-  const stateObj = isHTL
-    ? { name: "ASCP HTL" }
+  const stateObj = exam
+    ? { name: exam.examLabel }
     : states.find((s) => s.code === stateCode.toUpperCase());
   if (!stateObj) {
     return new Response("Invalid state code", { status: 400 });
@@ -131,8 +131,8 @@ export async function GET(request: NextRequest) {
   const [tigerData, fonts] = await Promise.all([readFile(tigerPath), loadFonts()]);
   const tigerBase64 = `data:image/png;base64,${tigerData.toString("base64")}`;
 
-  const tagline = isTraining && isHTL
-    ? "MASTERED MY HTL TRAINING"
+  const tagline = isTraining && exam
+    ? `MASTERED MY ${exam.shortName} TRAINING`
     : isTraining
     ? (lang === "es"
       ? "DOMINÉ MI ENTRENAMIENTO DEL DMV"
@@ -148,12 +148,12 @@ export async function GET(request: NextRequest) {
     vi: { 1: "Biển báo & tín hiệu", 2: "Luật đi đường", 3: "An toàn & khẩn cấp", 4: "Luật tiểu bang" },
   };
 
-  const htlSetName = isHTL && isTraining
-    ? HTL_TRAINING_SETS.find((def) => def.setNumber === setId)?.name
+  const examSetName = exam && isTraining
+    ? exam.trainingSets.find((def) => def.setNumber === setId)?.name
     : undefined;
-  const displayTestId = isHTL && testId !== null ? testId - HTL_ID_BASE : testId;
+  const displayTestId = exam && testId !== null ? testId - exam.idBase : testId;
   const modeLabel = isTraining
-    ? (htlSetName || trainingSetNames[lang]?.[setId!] || trainingSetNames["en"][setId!])
+    ? (examSetName || trainingSetNames[lang]?.[setId!] || trainingSetNames["en"][setId!])
     : (lang === "es" ? `Examen ${displayTestId}` : lang === "vi" ? `Bài Thi ${displayTestId}` : `Test ${displayTestId}`);
   const correctLabel = lang === "es"
     ? `${score} de ${total} correctas`
@@ -167,7 +167,9 @@ export async function GET(request: NextRequest) {
       : lang === "vi"
         ? (passed ? "ĐẬU" : "RỚT")
         : (passed ? "PASSED" : "FAILED"));
-  const subtitle = isTraining
+  const subtitle = exam
+    ? (isTraining ? `${exam.shortName} TRAINING` : `${exam.shortName} PRACTICE TEST`)
+    : isTraining
     ? (lang === "es" ? "ENTRENAMIENTO DMV" : lang === "vi" ? "LUYỆN TẬP DMV" : "DMV TRAINING")
     : (lang === "es" ? "EXAMEN DE PRÁCTICA DEL DMV" : lang === "vi" ? "BÀI THI THỬ DMV" : "DMV PRACTICE TEST");
 

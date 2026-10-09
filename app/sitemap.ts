@@ -1,3 +1,4 @@
+import { EXAMS } from "@/lib/exams";
 import { MetadataRoute } from "next";
 import { states, getStateByCode } from "@/data/states";
 import { VI_STATE_CODES } from "@/data/viStates";
@@ -116,15 +117,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     },
   ];
 
-  // HTL (histotechnologist) pages
-  const htlPages: MetadataRoute.Sitemap = [
-    {
-      url: `${siteUrl}/htl`,
-      lastModified: now,
-      changeFrequency: "weekly" as const,
-      priority: 0.9,
-    },
-  ];
+  // Certification exam landing pages (HTL, CST, CRCST)
+  const examPages: MetadataRoute.Sitemap = EXAMS.map((exam) => ({
+    url: `${siteUrl}${exam.slug}`,
+    lastModified: now,
+    changeFrequency: "weekly" as const,
+    priority: 0.9,
+  }));
 
   // School landing pages — dynamically from Firestore
   const schoolSlugs = await getActiveSchoolSlugs();
@@ -138,7 +137,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   return [
     ...corePages,
     ...cdlPages,
-    ...htlPages,
+    ...examPages,
     ...stateDmvPages,
     ...stateDmvPagesEs,
     ...spanishIndexPage,

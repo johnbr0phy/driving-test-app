@@ -3,13 +3,7 @@
  * other exams. DMV_ROUTES reproduces the original behaviour exactly; HTL
  * maps the same flow onto its namespaced IDs (201-204) under /htl.
  */
-import {
-  HTL_ID_BASE,
-  HTL_PASS_PERCENTAGE,
-  HTL_STATE_CODE,
-  HTL_TEST_COUNT,
-  HTL_TRAINING_SETS,
-} from "./htlConfig";
+import { ExamConfig, EXAMS, examTestIds, getExamById } from "./exams";
 import { isDrillFree as isDmvDrillFree } from "./missedQuestions";
 
 export interface PlanTrainingSet {
@@ -20,7 +14,7 @@ export interface PlanTrainingSet {
 }
 
 export interface ExamRoutes {
-  id: "dmv" | "htl";
+  id: string;
   dashboard: string;
   stats: string;
   test: (testId: number) => string;
@@ -67,33 +61,49 @@ export const DMV_ROUTES: ExamRoutes = {
   planTrainingSet: (testId) => ({ setNumber: testId }),
 };
 
-export const HTL_ROUTES: ExamRoutes = {
-  id: "htl",
-  dashboard: "/htl/dashboard",
-  stats: "/htl/stats",
-  test: (id) => `/htl/test/${id}`,
-  results: (id) => `/htl/test/${id}/results`,
-  training: (set) => `/htl/training?set=${set}`,
-  drill: (id) => (id ? `/htl/drill?test=${id}` : "/htl/drill"),
-  signup: "/signup?redirect=/htl/dashboard",
-  login: "/login?redirect=/htl/dashboard",
-  testIds: Array.from({ length: HTL_TEST_COUNT }, (_, i) => HTL_ID_BASE + 1 + i),
-  displayTestNumber: (id) => id - HTL_ID_BASE,
-  isTestLocked: () => false,
-  isDrillFree: () => true,
-  stateFilter: () => HTL_STATE_CODE,
-  examLabel: "ASCP HTL",
-  chartPassPct: HTL_PASS_PERCENTAGE,
-  // HTL sets are per content area, so point at the weakest area from this
-  // attempt (falls back to Staining, the largest exam section).
-  planTrainingSet: (_testId, weakCategories) => {
-    const weakest = weakCategories[0]?.category;
-    const set =
-      HTL_TRAINING_SETS.find((s) => s.category === weakest) ??
-      HTL_TRAINING_SETS.find((s) => s.category === "staining")!;
-    return {
-      setNumber: set.setNumber,
-      label: `Train the ${set.name} set — same material, mastery-style`,
-    };
-  },
-};
+/** Routes for a registry exam (HTL, CST, CRCST): all free, namespaced IDs. */
+export function routesForExam(exam: ExamConfig): ExamRoutes {
+  const base = exam.slug;
+  return {
+    id: exam.id,
+    dashboard: `${base}/dashboard`,
+    stats: `${base}/stats`,
+    test: (id) => `${base}/test/${id}`,
+    results: (id) => `${base}/test/${id}/results`,
+    training: (set) => `${base}/training?set=${set}`,
+    drill: (id) => (id ? `${base}/drill?test=${id}` : `${base}/drill`),
+    signup: `/signup?redirect=${base}/dashboard`,
+    login: `/login?redirect=${base}/dashboard`,
+    testIds: examTestIds(exam),
+    displayTestNumber: (id) => id - exam.idBase,
+    isTestLocked: () => false,
+    isDrillFree: () => true,
+    stateFilter: () => exam.stateCode,
+    examLabel: exam.examLabel,
+    chartPassPct: exam.passPct,
+    // Sets are per content area, so point at the weakest area from this
+    // attempt (falls back to the largest set).
+    planTrainingSet: (_testId, weakCategories) => {
+      const weakest = weakCategories[0]?.category;
+      const set =
+        exam.trainingSets.find((s) => weakest !== undefined && s.categories.includes(weakest)) ??
+        [...exam.trainingSets].sort((a, b) => b.size - a.size)[0];
+      return {
+        setNumber: set.setNumber,
+        label: `Train the ${set.name} set — same material, mastery-style`,
+      };
+    },
+  };
+}
+
+const EXAM_ROUTES: Record<string, ExamRoutes> = Object.fromEntries(
+  EXAMS.map((e) => [e.id, routesForExam(e)])
+);
+
+export function getExamRoutes(examId: string): ExamRoutes {
+  const routes = EXAM_ROUTES[examId];
+  if (!routes) throw new Error(`Unknown exam: ${examId}`);
+  return routes;
+}
+
+export const HTL_ROUTES: ExamRoutes = getExamRoutes(getExamById("htl")!.id);

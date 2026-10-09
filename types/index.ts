@@ -1,5 +1,5 @@
 // Question types
-export type QuestionType = "Universal" | "State-Specific" | "CDL" | "HTL";
+export type QuestionType = "Universal" | "State-Specific" | "CDL" | "HTL" | "CST" | "CRCST";
 
 // Test mode
 export type TestMode = "dmv" | "cdl" | "htl";
@@ -47,7 +47,24 @@ export type QuestionCategory =
   | "processing"
   | "embeddingMicrotomy"
   | "staining"
-  | "laboratoryOperations";
+  | "laboratoryOperations"
+  // NBSTSA CST content areas
+  | "preoperativePreparation"
+  | "intraoperativeProcedures"
+  | "postoperativeProcedures"
+  | "administrativePersonnel"
+  | "equipmentSterilization"
+  | "anatomyPhysiology"
+  | "microbiology"
+  | "surgicalPharmacology"
+  // HSPA CRCST content areas
+  | "departmentalConsiderations"
+  | "cleaningDecontamination"
+  | "preparationPackaging"
+  | "sterilizationProcess"
+  | "sterileStorageInventory"
+  | "patientCareEquipment"
+  | "professionalDevelopment";
 
 export interface Question {
   type: QuestionType;

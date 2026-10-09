@@ -8,7 +8,8 @@ import { useAuth } from "@/contexts/AuthContext";
 import { useStore } from "@/store/useStore";
 import { useHydration } from "@/hooks/useHydration";
 import { useTestTheme } from "@/contexts/TestThemeContext";
-import { Truck, Microscope } from "lucide-react";
+import { Truck, Microscope, Scissors, ShieldCheck } from "lucide-react";
+import { getExamById } from "@/lib/exams";
 import Image from "next/image";
 
 export function CDLHeader() {
@@ -41,11 +42,13 @@ export function CDLHeader() {
             <Image src={theme.logoIcon} alt={theme.name} width={40} height={40} className="w-10 h-10" />
           ) : (
             <div className="w-10 h-10 bg-brand rounded-lg flex items-center justify-center">
-              {theme.id === "htl" ? (
-                <Microscope className="h-6 w-6 text-white" />
-              ) : (
-                <Truck className="h-6 w-6 text-white" />
-              )}
+              {(() => {
+                const icon = getExamById(theme.id)?.icon;
+                if (icon === "microscope") return <Microscope className="h-6 w-6 text-white" />;
+                if (icon === "scissors") return <Scissors className="h-6 w-6 text-white" />;
+                if (icon === "shield") return <ShieldCheck className="h-6 w-6 text-white" />;
+                return <Truck className="h-6 w-6 text-white" />;
+              })()}
             </div>
           )}
           <span className="text-2xl font-bold text-gray-900 group-hover:opacity-80 transition-opacity hidden sm:inline">

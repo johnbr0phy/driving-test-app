@@ -1,5 +1,5 @@
 // Question types
-export type QuestionType = "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HAM" | "EPA608" | "CNA" | "PTCB" | "PHLEB" | "CCMA" | "CET" | "DANB" | "EMT" | "FOODMGR" | "REALESTATE" | "LIFEHEALTH" | "HTL" | "CST" | "CRCST";
+export type QuestionType = "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HAM" | "EPA608" | "CNA" | "PTCB" | "PHLEB" | "CCMA" | "CET" | "DANB" | "EMT" | "FOODMGR" | "REALESTATE" | "LIFEHEALTH" | "NOTARY" | "HTL" | "CST" | "CRCST";
 
 // Test mode
 export type TestMode = "dmv" | "cdl" | "htl";
@@ -183,7 +183,13 @@ export type QuestionCategory =
   | "annuitiesRetirement"
   | "healthBasics"
   | "healthProvisions"
-  | "healthPolicyTypes";
+  | "healthPolicyTypes"
+  // Notary public exam
+  | "notarialActs"
+  | "signerIdentification"
+  | "journalSealRecords"
+  | "ethicsProhibitedActs"
+  | "commissionLiability";
 
 export interface Question {
   type: QuestionType;

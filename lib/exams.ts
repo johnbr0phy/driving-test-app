@@ -13,7 +13,7 @@
  * This file must stay free of question-data imports (the store imports it).
  */
 
-export type ExamId = "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "emt" | "foodmgr" | "realestate" | "insurance" | "htl" | "cst" | "crcst";
+export type ExamId = "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "emt" | "foodmgr" | "realestate" | "insurance" | "notary" | "htl" | "cst" | "crcst";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (?set=N). */
@@ -53,7 +53,7 @@ export interface ExamConfig {
   /** Question ID prefix, e.g. "HTL-". */
   questionIdPrefix: string;
   /** Header icon key (see CDLHeader). */
-  icon: "truck" | "bike" | "flag" | "plane" | "radio" | "thermometer" | "heart" | "pill" | "syringe" | "stethoscope" | "activity" | "tooth" | "siren" | "utensils" | "house" | "umbrella" | "microscope" | "scissors" | "shield";
+  icon: "truck" | "bike" | "flag" | "plane" | "radio" | "thermometer" | "heart" | "pill" | "syringe" | "stethoscope" | "activity" | "tooth" | "siren" | "utensils" | "house" | "umbrella" | "stamp" | "microscope" | "scissors" | "shield";
   testCount: number;
   questionsPerTest: number;
   passPct: number;
@@ -1090,6 +1090,62 @@ const insurance: ExamConfig = {
   },
 };
 
+const notary: ExamConfig = {
+  id: "notary",
+  stateCode: "NOTARY",
+  idBase: 2100,
+  slug: "/notary",
+  landingPath: "/notary-practice-test",
+  name: "Notary Practice Test",
+  shortName: "Notary",
+  examLabel: "Notary Exam",
+  fullName: "notary public exam",
+  questionIdPrefix: "NP-",
+  icon: "stamp",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // General notary law and practice shared by the states that test notaries
+  // (Model Notary Act, RULONA, NNA code). Acts, identification, journal and
+  // seal, ethics, commission and liability. State-specific numbers are never
+  // tested; explanations say "varies by state".
+  blueprint: {
+    notarialActs: 14,
+    signerIdentification: 10,
+    journalSealRecords: 10,
+    ethicsProhibitedActs: 10,
+    commissionLiability: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 2101, name: "Notarial Acts & Certificates", categories: ["notarialActs"], size: 56, weightLabel: "28% of the tests" },
+    { setNumber: 2, id: 2102, name: "Identification & Signers", categories: ["signerIdentification"], size: 40, weightLabel: "20% of the tests" },
+    { setNumber: 3, id: 2103, name: "Journal, Seal & Records", categories: ["journalSealRecords"], size: 40, weightLabel: "20% of the tests" },
+    { setNumber: 4, id: 2104, name: "Ethics, Commission & Liability", categories: ["ethicsProhibitedActs", "commissionLiability"], size: 64, weightLabel: "32% of the tests" },
+  ],
+  categoryLabels: {
+    notarialActs: "Notarial Acts & Certificates",
+    signerIdentification: "Identification & Signers",
+    journalSealRecords: "Journal, Seal & Records",
+    ethicsProhibitedActs: "Ethics & Prohibited Acts",
+    commissionLiability: "Commission & Liability",
+  },
+  copy: {
+    guestPrompt: "to save your notary exam progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets covering the notary duties every state tests. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests \u00b7 50 questions on general notary law",
+    heroSubs: [
+      "Five topics, four full tests. Acts and identification are half of every test.",
+      "Mastery first, then test. The sets cover the duties every state's exam tests.",
+      "Halfway through the topics. The practice tests will show where you stand.",
+      "Fix the misses, then retake. Aim for 80% or better, then study your state's handbook.",
+      "Full prep done. Review your state's notary handbook for its own numbers and schedule the exam.",
+    ],
+    sourceLine: "General notary law on the Model Notary Act and RULONA. Fees, terms and journal rules vary by state; read your state's handbook.",
+    analyticsKey: "notary",
+  },
+};
+
 const htl: ExamConfig = {
   id: "htl",
   stateCode: "HTL",
@@ -1260,7 +1316,7 @@ const crcst: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, cet, danb, emt, foodmgr, realestate, insurance, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, cet, danb, emt, foodmgr, realestate, insurance, notary, htl, cst, crcst];
 
 export const examSetBase = (exam: ExamConfig) => exam.setIdBase ?? exam.idBase;
 /** Store ID of training set N of an exam. */

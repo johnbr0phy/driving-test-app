@@ -280,6 +280,20 @@
     --brand-gradient-to: 300 70% 95%;
   }
 
+  /* Notary theme: bronze */
+  [data-theme="notary"] {
+    --brand: 35 45% 36%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 35 55% 95%;
+    --brand-hover: 35 45% 30%;
+    --brand-dark: 35 45% 24%;
+    --brand-darker: 35 35% 16%;
+    --brand-muted: 35 25% 72%;
+    --brand-border: 35 25% 78%;
+    --brand-border-light: 35 20% 88%;
+    --brand-gradient-to: 50 70% 95%;
+  }
+
   /* Motorcycle permit theme: deep red */
   [data-theme="moto"] {
     --brand: 355 72% 44%;

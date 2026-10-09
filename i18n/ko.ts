@@ -395,6 +395,12 @@ export const ko: TranslationKeys = {
     healthBasics: "Health Insurance Basics",
     healthProvisions: "Health Policy Provisions",
     healthPolicyTypes: "Health Policy Types",
+    // Notary public exam
+    notarialActs: "Notarial Acts & Certificates",
+    signerIdentification: "Identification & Signers",
+    journalSealRecords: "Journal, Seal & Records",
+    ethicsProhibitedActs: "Ethics & Prohibited Acts",
+    commissionLiability: "Commission & Liability",
   } as Record<string, string>,
 
   // Training set names

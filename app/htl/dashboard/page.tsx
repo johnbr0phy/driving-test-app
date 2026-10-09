@@ -136,7 +136,7 @@ function HTLDashboardContent() {
                   <p className="text-sm text-gray-700">
                     <span className="font-bold">{t("common.signUp")}</span> to save your HTL progress and track every question you miss
                   </p>
-                  <Link href="/signup" className="text-xs text-brand hover:text-brand-dark font-medium mt-1 inline-block">
+                  <Link href={HTL_ROUTES.signup} className="text-xs text-brand hover:text-brand-dark font-medium mt-1 inline-block">
                     {t("dashboard.createFreeAccount")}
                   </Link>
                 </div>

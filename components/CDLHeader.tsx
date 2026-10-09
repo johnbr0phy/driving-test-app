@@ -67,13 +67,13 @@ export function CDLHeader() {
               </Button>
             </>
           ) : isGuest ? (
-            <Link href="/signup">
+            <Link href={theme.signupPath}>
               <Button variant="outline" className="text-gray-700 border-gray-300 hover:bg-gray-50 font-semibold">
                 Sign Up to Save
               </Button>
             </Link>
           ) : (
-            <Link href="/login">
+            <Link href={theme.loginPath}>
               <Button variant="outline" className="text-gray-700 border-gray-300 hover:bg-gray-50">
                 Sign In
               </Button>

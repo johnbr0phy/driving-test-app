@@ -257,15 +257,27 @@ export const useStore = create<AppState>()(
       },
 
       setSelectedState: (state: string) => {
-        // Clear ALL data when switching states
+        // Clear all DMV data when switching states. Other exams (CDL, HTL)
+        // are namespaced by pseudo state code / ID range and survive: a
+        // histotech who later picks a DMV state must not lose their HTL
+        // progress, and signing up (which sets a state) must not either.
+        const { currentTests, completedTests, testAttempts, trainingSets, trainingAnswerHistory } = get();
+        const isExamState = (code: string) => code === 'CDL' || code === HTL_STATE_CODE;
+        const isExamId = (id: number) => id >= 101;
+        const keptCurrentTests = Object.fromEntries(
+          Object.entries(currentTests).filter(([id]) => isExamId(Number(id)))
+        );
+        const keptTrainingSets = Object.fromEntries(
+          Object.entries(trainingSets).filter(([id]) => isExamId(Number(id)))
+        );
         set({
           selectedState: state,
           // Progress is gone, so the Super Amazing gate no longer qualifies;
           // keep firstEnabledAt as the historical adoption record.
           superAmazing: { ...get().superAmazing, enabled: false },
-          currentTests: {},
-          completedTests: [],
-          testAttempts: [],
+          currentTests: keptCurrentTests,
+          completedTests: completedTests.filter((t) => isExamState(t.state)),
+          testAttempts: testAttempts.filter((a) => isExamState(a.state)),
           training: {
             questionsAnswered: [],
             correctCount: 0,
@@ -276,8 +288,10 @@ export const useStore = create<AppState>()(
             masteredQuestionIds: [],
             lastQuestionId: null,
           },
-          trainingSets: {},
-          trainingAnswerHistory: [],
+          trainingSets: keptTrainingSets,
+          trainingAnswerHistory: trainingAnswerHistory.filter(
+            (h) => h.questionId.startsWith('CDL-') || h.questionId.startsWith(`${HTL_STATE_CODE}-`)
+          ),
         });
         // Save to Firestore
         get().saveToFirestore();

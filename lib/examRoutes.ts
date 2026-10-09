@@ -27,6 +27,10 @@ export interface ExamRoutes {
   results: (testId: number) => string;
   training: (setNumber: number) => string;
   drill: (testId?: number) => string;
+  /** Sign-up / sign-in links. Non-DMV exams pass ?redirect= so signup skips
+   *  the DMV state picker and auth returns to the exam dashboard. */
+  signup: string;
+  login: string;
   /** Store IDs of the practice tests, in order. */
   testIds: number[];
   /** Human-facing test number (DMV: the ID itself; HTL: ID - 200). */
@@ -51,6 +55,8 @@ export const DMV_ROUTES: ExamRoutes = {
   results: (id) => `/test/${id}/results`,
   training: (set) => `/training?set=${set}`,
   drill: (id) => (id ? `/drill?test=${id}` : "/drill"),
+  signup: "/signup",
+  login: "/login",
   testIds: [1, 2, 3, 4],
   displayTestNumber: (id) => id,
   isTestLocked: (id, isPremium) => id === 4 && !isPremium,
@@ -69,6 +75,8 @@ export const HTL_ROUTES: ExamRoutes = {
   results: (id) => `/htl/test/${id}/results`,
   training: (set) => `/htl/training?set=${set}`,
   drill: (id) => (id ? `/htl/drill?test=${id}` : "/htl/drill"),
+  signup: "/signup?redirect=/htl/dashboard",
+  login: "/login?redirect=/htl/dashboard",
   testIds: Array.from({ length: HTL_TEST_COUNT }, (_, i) => HTL_ID_BASE + 1 + i),
   displayTestNumber: (id) => id - HTL_ID_BASE,
   isTestLocked: () => false,

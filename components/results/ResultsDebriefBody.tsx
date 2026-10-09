@@ -129,7 +129,7 @@ export function ResultsDebriefBody({ results, upgrade }: Props) {
         feature={upgrade.paywallFeature}
         onUpgrade={upgrade.handleUpgrade}
         isGuest={isGuest}
-        onSignUp={() => router.push("/signup")}
+        onSignUp={() => router.push(routes.signup)}
       />
 
       {/* ── Your plan ─────────────────────────────────────────────── */}
@@ -358,7 +358,7 @@ export function ResultsDebriefBody({ results, upgrade }: Props) {
                 </h3>
                 <p className="text-gray-600 text-sm">{t("results.scoreOnlyOnDevice")}</p>
               </div>
-              <Link href="/signup">
+              <Link href={routes.signup}>
                 <Button className="bg-brand text-white hover:bg-brand-hover whitespace-nowrap">
                   {t("results.signUpFree")}
                 </Button>

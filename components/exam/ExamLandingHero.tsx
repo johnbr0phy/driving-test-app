@@ -11,6 +11,20 @@ import { useStore } from "@/store/useStore";
 // session, a quiet secondary link, then the two product screenshots.
 // Everything here is free and needs no account, so the CTA always goes
 // straight to the dashboard.
+// Fresh visitors become guests on their way in, exactly like the homepage's
+// "Try it first": that is what shows the "Sign up to save" prompts and
+// protects their progress if they later sign in to an existing account.
+function useStartCta() {
+  const { user, loading } = useAuth();
+  const isGuest = useStore((state) => state.isGuest);
+  const startGuestSession = useStore((state) => state.startGuestSession);
+  const hasSession = !loading && (user || isGuest);
+  const onStart = () => {
+    if (!loading && !user && !isGuest) startGuestSession();
+  };
+  return { hasSession, onStart };
+}
+
 export function ExamLandingHero({
   dashboardHref,
   subtitle,
@@ -22,16 +36,14 @@ export function ExamLandingHero({
   shortName: string;
   shots: { mobile: string; desktop: string };
 }) {
-  const { user, loading } = useAuth();
-  const isGuest = useStore((state) => state.isGuest);
-  const hasSession = !loading && (user || isGuest);
+  const { hasSession, onStart } = useStartCta();
 
   return (
     <>
       <p className="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl mx-auto">{subtitle}</p>
 
       <div className="flex flex-col items-center gap-3">
-        <Link href={dashboardHref}>
+        <Link href={dashboardHref} onClick={onStart}>
           <Button className="bg-gray-900 text-white hover:bg-gray-800 px-8 py-6 text-lg rounded-full">
             {hasSession ? "Go to Dashboard" : "Start practicing"}
           </Button>
@@ -75,12 +87,10 @@ export function ExamLandingHero({
 }
 
 export function ExamLandingCTA({ dashboardHref }: { dashboardHref: string }) {
-  const { user, loading } = useAuth();
-  const isGuest = useStore((state) => state.isGuest);
-  const hasSession = !loading && (user || isGuest);
+  const { hasSession, onStart } = useStartCta();
 
   return (
-    <Link href={dashboardHref}>
+    <Link href={dashboardHref} onClick={onStart}>
       <Button className="bg-gray-900 text-white hover:bg-gray-800 px-8 py-6 text-lg rounded-full">
         {hasSession ? "Go to Dashboard" : "Start practicing"}
       </Button>

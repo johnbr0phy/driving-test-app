@@ -12,6 +12,7 @@ import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { BarChart3, ChevronRight } from "lucide-react";
 import { useStore } from "@/store/useStore";
+import { useAuth } from "@/contexts/AuthContext";
 import { useHydration } from "@/hooks/useHydration";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { ProgressCard, Collapse } from "@/components/dashboard/ProgressCard";
@@ -57,6 +58,8 @@ export function ExamDashboard({ exam }: { exam: ExamConfig }) {
   const hydrated = useHydration();
   const { t } = useTranslation();
   const isGuest = useStore((state) => state.isGuest);
+  const startGuestSession = useStore((state) => state.startGuestSession);
+  const { user, loading: authLoading } = useAuth();
   const getTestAttemptStats = useStore((state) => state.getTestAttemptStats);
   const getCurrentTest = useStore((state) => state.getCurrentTest);
   const getTrainingSetProgress = useStore((state) => state.getTrainingSetProgress);
@@ -67,6 +70,14 @@ export function ExamDashboard({ exam }: { exam: ExamConfig }) {
 
   const missSummary = computeMissSummary(hydrated ? completedTests : [], exam.stateCode, routes.testIds);
   const [expandedTest, setExpandedTest] = useState<number | null>(null);
+
+  // Anyone who reaches an exam dashboard without an account is a guest: that
+  // is what shows the "Sign up to save" prompt and protects their progress if
+  // they later sign in to an existing account. The DMV flow does this in
+  // onboarding; exams have no onboarding, so it happens here.
+  useEffect(() => {
+    if (hydrated && !authLoading && !user && !isGuest) startGuestSession();
+  }, [hydrated, authLoading, user, isGuest, startGuestSession]);
 
   // Auto-complete any test where all questions are answered (handles stuck state)
   useEffect(() => {

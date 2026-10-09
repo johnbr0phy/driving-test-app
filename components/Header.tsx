@@ -30,7 +30,7 @@ export function Header() {
 
   // Hide header on test and training pages (DMV and registry exams)
   const hideHeader =
-    pathname?.startsWith("/test") ||
+    pathname?.startsWith("/test/") ||
     pathname === "/training" ||
     EXAMS.some((e) => pathname?.startsWith(`${e.slug}/test`) || pathname === `${e.slug}/training`);
 

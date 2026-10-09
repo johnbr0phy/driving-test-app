@@ -21,6 +21,49 @@ const examStateForTestId = (testId: number, selectedState: string | null): strin
 // Current data version - increment this when question data changes
 const DATA_VERSION = 2;
 
+/**
+ * Does a Firestore user document hold progress worth protecting? Used before
+ * a guest session is converted into an account: if the account already has
+ * anything saved, the user must choose rather than have guest data overwrite
+ * it. Training-set mastery, in-progress tests and answer history count too;
+ * an exam-only account (no DMV state, no finished test yet) has nothing else.
+ */
+export function userDataHasProgress(data: Record<string, unknown> | undefined): boolean {
+  if (!data) return false;
+  const d = data as {
+    completedTests?: unknown[];
+    testAttempts?: unknown[];
+    training?: { totalCorrectAllTime?: number };
+    trainingSets?: Record<string, { masteredIds?: unknown[]; wrongQueue?: unknown[] }>;
+    currentTests?: Record<string, { answers?: Record<string, unknown> }>;
+    trainingAnswerHistory?: unknown[];
+    selectedState?: string | null;
+    subscription?: { isPremium?: boolean };
+  };
+  const hasCompletedTests = (d.completedTests?.length ?? 0) > 0;
+  const hasTestAttempts = (d.testAttempts?.length ?? 0) > 0;
+  const hasTrainingProgress = (d.training?.totalCorrectAllTime ?? 0) > 0;
+  const hasTrainingSets = Object.values(d.trainingSets ?? {}).some(
+    (s) => (s?.masteredIds?.length ?? 0) > 0 || (s?.wrongQueue?.length ?? 0) > 0
+  );
+  const hasInProgressTests = Object.values(d.currentTests ?? {}).some(
+    (t) => Object.keys(t?.answers ?? {}).length > 0
+  );
+  const hasAnswerHistory = (d.trainingAnswerHistory?.length ?? 0) > 0;
+  const hasSelectedState = !!d.selectedState;
+  const hasPremium = d.subscription?.isPremium === true;
+  return (
+    hasCompletedTests ||
+    hasTestAttempts ||
+    hasTrainingProgress ||
+    hasTrainingSets ||
+    hasInProgressTests ||
+    hasAnswerHistory ||
+    hasSelectedState ||
+    hasPremium
+  );
+}
+
 interface AppState {
 
   // Language
@@ -821,14 +864,7 @@ export const useStore = create<AppState>()(
         try {
           const userDoc = await getDoc(doc(db, 'users', userId));
           if (userDoc.exists()) {
-            const data = userDoc.data();
-            // Check if user has any meaningful progress data
-            const hasCompletedTests = data.completedTests && data.completedTests.length > 0;
-            const hasTestAttempts = data.testAttempts && data.testAttempts.length > 0;
-            const hasTrainingProgress = data.training?.totalCorrectAllTime > 0;
-            const hasSelectedState = !!data.selectedState;
-            const hasPremium = data.subscription?.isPremium === true;
-            return hasCompletedTests || hasTestAttempts || hasTrainingProgress || hasSelectedState || hasPremium;
+            return userDataHasProgress(userDoc.data());
           }
           return false;
         } catch (error) {

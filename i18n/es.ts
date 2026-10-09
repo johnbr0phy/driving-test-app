@@ -274,6 +274,11 @@ export const es: TranslationKeys = {
     sterileStorageInventory: "Sterile Storage, Transport & Inventory",
     patientCareEquipment: "Patient Care Equipment & Distribution",
     professionalDevelopment: "Professional Development & Human Relations",
+    // Motorcycle permit categories
+    ridingPreparation: "Preparing to Ride",
+    laneStrategy: "Positioning & Being Seen",
+    intersectionsPassing: "Intersections & Passing",
+    roadHazards: "Road Hazards",
   } as Record<string, string>,
 
   // Training set names

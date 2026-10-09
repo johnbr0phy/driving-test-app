@@ -7,9 +7,9 @@ import { TestIcon } from "@/components/TestIcon";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "All Free Practice Tests - DMV, CDL, HTL, CST, CRCST";
+const title = "All Free Practice Tests - DMV, Motorcycle, CDL, HTL, CST, CRCST";
 const description =
-  "Every free practice test on TigerTest in one place: DMV permit tests for all 50 states, CDL general knowledge, and ASCP HTL, NBSTSA CST and HSPA CRCST certification exam prep.";
+  "Every free practice test on TigerTest in one place: DMV permit tests for all 50 states, motorcycle permit, CDL general knowledge, and ASCP HTL, NBSTSA CST and HSPA CRCST certification exam prep.";
 
 export const metadata: Metadata = {
   title,

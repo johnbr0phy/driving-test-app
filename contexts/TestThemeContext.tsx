@@ -20,6 +20,9 @@ export interface TestTheme {
   routeBase: string;
   dashboardPath: string;
   landingPath: string;
+  // Auth links (non-DMV exams carry ?redirect= back to their dashboard)
+  signupPath: string;
+  loginPath: string;
 }
 
 export const themes: Record<string, TestTheme> = {
@@ -38,6 +41,8 @@ export const themes: Record<string, TestTheme> = {
     routeBase: "",
     dashboardPath: "/dashboard",
     landingPath: "/",
+    signupPath: "/signup",
+    loginPath: "/login",
   },
   cdl: {
     id: "cdl",
@@ -54,6 +59,8 @@ export const themes: Record<string, TestTheme> = {
     routeBase: "/cdl",
     dashboardPath: "/cdl/dashboard",
     landingPath: "/cdl-practice-test",
+    signupPath: "/signup",
+    loginPath: "/login",
   },
   htl: {
     id: "htl",
@@ -70,6 +77,8 @@ export const themes: Record<string, TestTheme> = {
     routeBase: "/htl",
     dashboardPath: "/htl/dashboard",
     landingPath: "/htl",
+    signupPath: "/signup?redirect=/htl/dashboard",
+    loginPath: "/login?redirect=/htl/dashboard",
   },
 };
 

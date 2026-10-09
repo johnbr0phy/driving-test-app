@@ -97,7 +97,7 @@ export function MissDrill({ routes }: { routes: ExamRoutes }) {
           feature={upgrade.paywallFeature}
           onUpgrade={upgrade.handleUpgrade}
           isGuest={isGuest}
-          onSignUp={() => router.push("/signup")}
+          onSignUp={() => router.push(routes.signup)}
         />
 
         <Link

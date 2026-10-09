@@ -47,7 +47,7 @@ export default function HTLStatsPage() {
 
   // Redirect guests to signup
   useEffect(() => {
-    if (hydrated && isGuest) router.push("/signup");
+    if (hydrated && isGuest) router.push(HTL_ROUTES.signup);
   }, [hydrated, isGuest, router]);
 
   const htlQuestions = useMemo(() => getHTLQuestionsData(), []);

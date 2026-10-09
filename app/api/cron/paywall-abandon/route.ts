@@ -72,6 +72,7 @@ export async function GET(req: NextRequest) {
     const users = await getEligibleUsers(authMap, INCLUDE_LEGACY);
 
     const eligible = users.filter((u) => {
+      if (!u.voice.hasPremium) return false;                 // only the DMV has paywalls
       if (u.subscription?.isPremium) return false;
       if (u.emailsSent.includes(EMAIL_KEY)) return false;
       if (emailedRecently(u, now, GAP_MS)) return false;
@@ -88,7 +89,7 @@ export async function GET(req: NextRequest) {
       label: "paywall-abandon",
       emailKey: EMAIL_KEY,
       subject: (u) => `${paywallName(u.lastPaywallHit!.itemId, u.lastPaywallHit!.label)} is still waiting`,
-      template: EMAIL_TEMPLATES.paywallAbandon,
+      template: (u) => EMAIL_TEMPLATES.paywallAbandon(u.voice),
       users: eligible,
       extras: (u) => ({
         paywallName: escapeHtml(paywallName(u.lastPaywallHit!.itemId, u.lastPaywallHit!.label)),

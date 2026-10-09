@@ -8,6 +8,12 @@
 // /api/send-welcome-email, which is why the cron emails had drifted: wrong
 // outer padding, wrong footer border, and a "The TigerTest Team" sign-off that
 // no live email actually used. That route now renders EMAIL_TEMPLATES.welcome.
+//
+// Every template is a function of an EmailVoice (lib/email-voice), so the
+// exam name, question counts and links match the exam the reader is studying.
+// Pass voiceFor("dmv") for the original DMV copy.
+
+import { EmailVoice, dashboardUrl, statsUrl } from "@/lib/email-voice";
 
 interface ShellOptions {
   /** <title>, used by some clients as the preview label. */
@@ -56,7 +62,12 @@ export function signoff(lead = "Good luck,"): string {
               </p>`;
 }
 
-function emailShell({ title, heading, body, unsubscribe = true }: ShellOptions): string {
+function emailShell({
+  title,
+  heading,
+  body,
+  unsubscribe = true,
+}: ShellOptions): string {
   const footerLinks = unsubscribe
     ? `<a href="https://tigertest.io/unsubscribe?token={{unsubscribeToken}}" style="color: #FF6B35; text-decoration: none;">Unsubscribe</a>
                 &nbsp;•&nbsp;
@@ -101,183 +112,214 @@ ${body}
 </html>`;
 }
 
-const DASH = (campaign: string) =>
-  `https://tigertest.io/dashboard?utm_source=tigertest&utm_medium=email&utm_campaign=${campaign}`;
-const STATS = (campaign: string) =>
-  `https://tigertest.io/stats?utm_source=tigertest&utm_medium=email&utm_campaign=${campaign}`;
+/** Tracked dashboard link for this voice. */
+const DASH = (v: EmailVoice, campaign: string) => dashboardUrl(v, campaign);
+const STATS = (v: EmailVoice, campaign: string) => statsUrl(v, campaign);
 
-export const EMAIL_TEMPLATES: Record<string, string> = {
+/** "your DMV test" in the DMV voice, "your citizenship test" elsewhere. */
+const your = (v: EmailVoice) => `your ${v.testName}`;
+
+export type EmailTemplate = (voice: EmailVoice) => string;
+
+export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
   // Sent immediately at signup by /api/send-welcome-email.
-  welcome: emailShell({
-    title: "Welcome to TigerTest",
-    heading: "Welcome to TigerTest",
-    body: [
-      // Left exactly as it shipped. This is the one email that was already
-      // live and working, so it is deliberately not trimmed like the rest.
-      p("{{greeting}}"),
-      p(
-        "Fear not. Thousands of people have used TigerTest to pass their DMV test, and the ones who pass on their first try all have one thing in common: they actually tested themselves."
-      ),
-      p(
-        `<strong style="font-weight: 600;">The best way to prep is to spend 30 minutes doing practice tests.</strong> Answer questions one after the other, without instant feedback. That's exactly what the real test feels like.`
-      ),
-      p("After 50 questions, you'll have a really accurate picture of how ready you are."),
-      cta(DASH("welcome"), "Take Your First Practice Test"),
-      p(
-        "You can use our training mode later to drill down on the stuff you got wrong. But start with a full test first - it's the fastest way to see where you actually stand."
-      ),
-      signoff(),
-    ].join("\n"),
-  }),
+  welcome: (v) =>
+    emailShell({
+      title: "Welcome to TigerTest",
+      heading: "Welcome to TigerTest",
+      body: [
+        // The DMV wording is the one email that was already live and working,
+        // so it is unchanged in the DMV voice; other exams swap in their test
+        // name, their test length, and one line on what the bank is built from.
+        p("{{greeting}}"),
+        p(
+          `Fear not. Thousands of people have used TigerTest to pass their ${v.testName}, and the ones who pass on their first try all have one thing in common: they actually tested themselves.`,
+        ),
+        ...(v.sourceLine ? [p(v.sourceLine)] : []),
+        p(
+          `<strong style="font-weight: 600;">The best way to prep is to spend 30 minutes doing practice tests.</strong> Answer questions one after the other, without instant feedback. That's exactly what the real test feels like.`,
+        ),
+        p(
+          `After ${v.questionsPerTest} questions, you'll have a really accurate picture of how ready you are.`,
+        ),
+        cta(DASH(v, "welcome"), "Take Your First Practice Test"),
+        p(
+          "You can use our training mode later to drill down on the stuff you got wrong. But start with a full test first - it's the fastest way to see where you actually stand.",
+        ),
+        signoff(),
+      ].join("\n"),
+    }),
 
   // Stalled study. 25+ questions answered, no test completed, idle 6h.
-  firstTestReminder: emailShell({
-    title: "Take 5 minutes to try a test",
-    heading: "You were on a roll",
-    body: [
-      p(
-        "You've answered {{questionCount}} questions in training. You haven't taken a full test yet, and that's the part that tells you whether you're ready."
-      ),
-      p(
-        `<strong style="font-weight: 600;">30 minutes, 50 questions.</strong> Even if you bomb it, you'll know exactly what to study.`
-      ),
-      cta(DASH("first_test_reminder"), "Start Practice Test"),
-      signoff(),
-    ].join("\n"),
-  }),
+  firstTestReminder: (v) =>
+    emailShell({
+      title: "Take 5 minutes to try a test",
+      heading: "You were on a roll",
+      body: [
+        p(
+          "You've answered {{questionCount}} questions in training. You haven't taken a full test yet, and that's the part that tells you whether you're ready.",
+        ),
+        p(
+          `<strong style="font-weight: 600;">30 minutes, ${v.questionsPerTest} questions.</strong> Even if you bomb it, you'll know exactly what to study.`,
+        ),
+        cta(DASH(v, "first_test_reminder"), "Start Practice Test"),
+        signoff(),
+      ].join("\n"),
+    }),
 
   // Completed exactly one test in the last 48 hours.
-  secondTestNudge: emailShell({
-    title: "One test down - here's what to do next",
-    heading: "Nice work on test #1! 🎉",
-    body: [
-      p(
-        `One test down. <a href="${STATS(
-          "second_test_nudge"
-        )}" style="color: #FF6B35; text-decoration: none; font-weight: 500;">Your stats</a> show which question types tripped you up.`
-      ),
-      p(
-        `<strong style="font-weight: 600;">Now take another one.</strong> The first test showed what you don't know. The second shows whether you're actually improving.`
-      ),
-      cta(DASH("second_test_nudge"), "Take Another Practice Test"),
-      p("If you bombed the first one, don't sweat it. Most people do."),
-      signoff(),
-    ].join("\n"),
-  }),
+  secondTestNudge: (v) =>
+    emailShell({
+      title: "One test down - here's what to do next",
+      heading: "Nice work on test #1! 🎉",
+      body: [
+        p(
+          `One test down. <a href="${STATS(
+            v,
+            "second_test_nudge",
+          )}" style="color: #FF6B35; text-decoration: none; font-weight: 500;">Your stats</a> show which question types tripped you up.`,
+        ),
+        p(
+          `<strong style="font-weight: 600;">Now take another one.</strong> The first test showed what you don't know. The second shows whether you're actually improving.`,
+        ),
+        cta(DASH(v, "second_test_nudge"), "Take Another Practice Test"),
+        p("If you bombed the first one, don't sweat it. Most people do."),
+        signoff(),
+      ].join("\n"),
+    }),
 
-  // Hit a paywall 1-24h ago and walked away. The highest-intent moment there is.
-  paywallAbandon: emailShell({
-    title: "{{paywallName}} is still waiting",
-    heading: "You stopped at {{paywallName}}",
-    body: [
-      p(
-        "You've answered {{questionCount}} questions, then hit {{paywallName}} and stopped. It's one of the two sections that decide most tests."
-      ),
-      p(`<strong style="font-weight: 600;">$9.99 opens it for good:</strong>`),
-      ul([
-        "Safety &amp; Emergencies and State Laws, 100 questions",
-        "Practice tests C and D",
-        "Every question you miss, on repeat",
-      ]),
-      cta(DASH("paywall_abandon"), "Pick Up Where You Left Off"),
-      p("One payment, no subscription. A retest costs more."),
-      signoff(),
-    ].join("\n"),
-  }),
+  // Hit a paywall 1-24h ago and walked away. The highest-intent moment there
+  // is. DMV only: no other exam has a paywall.
+  paywallAbandon: (v) =>
+    emailShell({
+      title: "{{paywallName}} is still waiting",
+      heading: "You stopped at {{paywallName}}",
+      body: [
+        p(
+          "You've answered {{questionCount}} questions, then hit {{paywallName}} and stopped. It's one of the two sections that decide most tests.",
+        ),
+        p(
+          `<strong style="font-weight: 600;">$9.99 opens it for good:</strong>`,
+        ),
+        ul([
+          "Safety &amp; Emergencies and State Laws, 100 questions",
+          "Practice tests C and D",
+          "Every question you miss, on repeat",
+        ]),
+        cta(DASH(v, "paywall_abandon"), "Pick Up Where You Left Off"),
+        p("One payment, no subscription. A retest costs more."),
+        signoff(),
+      ].join("\n"),
+    }),
 
-  // 24h+ old, 50+ questions or 1+ test, active in the last 14 days.
-  upgradePitch: emailShell({
-    title: "You're serious about this - here's what unlocks next",
-    heading: "You're doing the work 💪",
-    body: [
-      p("{{questionCount}} questions answered. That's more than most people manage."),
-      p(
-        `The free tier is 2 training sets and 2 practice tests, so you've probably hit the limit. <strong style="font-weight: 600;">$9.99, once, unlocks the rest:</strong>`
-      ),
-      ul([
-        "Safety &amp; Emergencies and State Laws, 100 more questions",
-        "Practice tests C and D",
-        "Your stats page, showing what you always get wrong",
-      ]),
-      cta(DASH("upgrade_pitch"), "Upgrade to Premium - $9.99"),
-      signoff(),
-    ].join("\n"),
-  }),
+  // 24h+ old, 50+ questions or 1+ test, active in the last 14 days. DMV only.
+  upgradePitch: (v) =>
+    emailShell({
+      title: "You're serious about this - here's what unlocks next",
+      heading: "You're doing the work 💪",
+      body: [
+        p(
+          "{{questionCount}} questions answered. That's more than most people manage.",
+        ),
+        p(
+          `The free tier is 2 training sets and 2 practice tests, so you've probably hit the limit. <strong style="font-weight: 600;">$9.99, once, unlocks the rest:</strong>`,
+        ),
+        ul([
+          "Safety &amp; Emergencies and State Laws, 100 more questions",
+          "Practice tests C and D",
+          "Your stats page, showing what you always get wrong",
+        ]),
+        cta(DASH(v, "upgrade_pitch"), "Upgrade to Premium - $9.99"),
+        signoff(),
+      ].join("\n"),
+    }),
 
   // Sent by the Stripe webhook the moment a purchase lands. Transactional, so
-  // no unsubscribe link.
-  purchaseWelcome: emailShell({
-    title: "You're in - here's what just unlocked",
-    heading: "You're in 🎉",
-    unsubscribe: false,
-    body: [
-      p(
-        "Thanks for buying Premium. It's live on your account now, on every device you sign in on."
-      ),
-      ul([
-        "<strong>Safety &amp; Emergencies</strong> and <strong>State Laws</strong>, 100 questions",
-        "<strong>Practice tests C and D</strong>",
-        "<strong>Your stats page</strong>, showing what you keep missing",
-      ]),
-      p("Open your stats after the next test. It tells you where to spend your study time."),
-      cta(DASH("purchase_welcome"), "Start With Safety & Emergencies"),
-      p("One-time payment, nothing to cancel. Reply if anything looks wrong and a human will read it."),
-      signoff("Good luck at the DMV,"),
-    ].join("\n"),
-  }),
+  // no unsubscribe link. DMV only.
+  purchaseWelcome: (v) =>
+    emailShell({
+      title: "You're in - here's what just unlocked",
+      heading: "You're in 🎉",
+      unsubscribe: false,
+      body: [
+        p(
+          "Thanks for buying Premium. It's live on your account now, on every device you sign in on.",
+        ),
+        ul([
+          "<strong>Safety &amp; Emergencies</strong> and <strong>State Laws</strong>, 100 questions",
+          "<strong>Practice tests C and D</strong>",
+          "<strong>Your stats page</strong>, showing what you keep missing",
+        ]),
+        p(
+          "Open your stats after the next test. It tells you where to spend your study time.",
+        ),
+        cta(DASH(v, "purchase_welcome"), "Start With Safety & Emergencies"),
+        p(
+          "One-time payment, nothing to cancel. Reply if anything looks wrong and a human will read it.",
+        ),
+        signoff("Good luck at the DMV,"),
+      ].join("\n"),
+    }),
 
   // 5+ days idle with at least one test completed.
-  reengagement: emailShell({
-    title: "Test coming up soon?",
-    heading: "Test coming up soon?",
-    body: [
-      p(
-        "Haven't seen you in a while. If your DMV test is close, a week away from practice questions is enough to forget the details."
-      ),
-      p("Take one more test and see if you're still sharp."),
-      cta(DASH("reengagement"), "Continue Practicing"),
-      signoff(),
-    ].join("\n"),
-  }),
+  reengagement: (v) =>
+    emailShell({
+      title: "Test coming up soon?",
+      heading: "Test coming up soon?",
+      body: [
+        p(
+          `Haven't seen you in a while. If ${your(v)} is close, a week away from practice questions is enough to forget the details.`,
+        ),
+        p("Take one more test and see if you're still sharp."),
+        cta(DASH(v, "reengagement"), "Continue Practicing"),
+        signoff(),
+      ].join("\n"),
+    }),
 
   // Fired once, the first time someone completes all 8 steps. Pure
   // celebration: nothing to buy, nothing to do. The unlock is latched in the
-  // store, so retaking a test can never re-trigger this.
-  superAmazingUnlocked: emailShell({
-    title: "You unlocked Super Amazing Mode",
-    heading: "SUPER AMAZING MODE 🎉",
-    body: [
-      p(
-        "You just finished all 8 steps. Every training set, every practice test, {{questionCount}} questions answered. That is the whole thing, done."
-      ),
-      p(
-        `Almost nobody gets here. Most people take one test, decide they're probably fine, and wing it at the DMV. <strong style="font-weight: 600;">You did the work.</strong>`
-      ),
-      p(
-        `So we turned on the fireworks. Actual fireworks, on every page, forever. They're yours now and they are not going anywhere, even if you retake a test for fun.`
-      ),
-      cta(DASH("super_amazing"), "Go See The Fireworks"),
-      p(
-        "Go pass that test. You're more ready than almost anyone walking into the DMV today."
-      ),
-      signoff("Genuinely well done,"),
-    ].join("\n"),
-  }),
+  // store, so retaking a test can never re-trigger this. DMV only: the latch
+  // only exists on the DMV dashboard.
+  superAmazingUnlocked: (v) =>
+    emailShell({
+      title: "You unlocked Super Amazing Mode",
+      heading: "SUPER AMAZING MODE 🎉",
+      body: [
+        p(
+          `You just finished all ${v.stepCount} steps. Every training set, every practice test, {{questionCount}} questions answered. That is the whole thing, done.`,
+        ),
+        p(
+          `Almost nobody gets here. Most people take one test, decide they're probably fine, and wing it at the DMV. <strong style="font-weight: 600;">You did the work.</strong>`,
+        ),
+        p(
+          `So we turned on the fireworks. Actual fireworks, on every page, forever. They're yours now and they are not going anywhere, even if you retake a test for fun.`,
+        ),
+        cta(DASH(v, "super_amazing"), "Go See The Fireworks"),
+        p(
+          "Go pass that test. You're more ready than almost anyone walking into the DMV today.",
+        ),
+        signoff("Genuinely well done,"),
+      ].join("\n"),
+    }),
 
   // 20+ days idle with at least one test completed.
-  inactiveShareRequest: emailShell({
-    title: "Did you pass?",
-    heading: "Did you pass?",
-    body: [
-      p(
-        "We haven't seen you in a while, so we're guessing you went out and passed. Congrats!"
-      ),
-      p(
-        `If TigerTest helped, <strong style="font-weight: 600;">please share it with a friend</strong>. Word of mouth is the #1 way people find us.`
-      ),
-      cta("https://tigertest.io/?utm_source=tigertest&utm_medium=email&utm_campaign=inactive_share", "Share TigerTest.io"),
-      p("And if you haven't taken your test yet, no rush. We're still here."),
-      signoff("Thanks for using TigerTest,"),
-    ].join("\n"),
-  }),
+  inactiveShareRequest: (v) =>
+    emailShell({
+      title: "Did you pass?",
+      heading: "Did you pass?",
+      body: [
+        p(
+          `We haven't seen you in a while, so we're guessing you went out and passed ${your(v)}. Congrats!`,
+        ),
+        p(
+          `If TigerTest helped, <strong style="font-weight: 600;">please share it with a friend</strong>. Word of mouth is the #1 way people find us.`,
+        ),
+        cta(
+          "https://tigertest.io/?utm_source=tigertest&utm_medium=email&utm_campaign=inactive_share",
+          "Share TigerTest.io",
+        ),
+        p("And if you haven't taken your test yet, no rush. We're still here."),
+        signoff("Thanks for using TigerTest,"),
+      ].join("\n"),
+    }),
 };

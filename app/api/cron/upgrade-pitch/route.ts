@@ -44,6 +44,7 @@ export async function GET(req: NextRequest) {
     const users = await getEligibleUsers(authMap, INCLUDE_LEGACY);
 
     const eligible = users.filter((u) => {
+      if (!u.voice.hasPremium) return false;                 // only the DMV sells Premium
       if (u.creationTime > oneDayAgo) return false;          // too new
       if (u.subscription?.isPremium) return false;           // already premium
       if (u.emailsSent.includes(EMAIL_KEY)) return false;    // already sent
@@ -57,7 +58,7 @@ export async function GET(req: NextRequest) {
       label: "upgrade-pitch",
       emailKey: EMAIL_KEY,
       subject: "You're doing the work 💪",
-      template: EMAIL_TEMPLATES.upgradePitch,
+      template: (u) => EMAIL_TEMPLATES.upgradePitch(u.voice),
       users: eligible,
       extras: (u) => ({ questionCount: u.questionsAnswered.toString() }),
     });

@@ -32,8 +32,14 @@ export function Header() {
 
   const displayPhotoURL = photoURL || user?.photoURL;
 
-  // Hide header on test and training pages (DMV and CDL)
-  const hideHeader = pathname?.startsWith("/test") || pathname === "/training" || pathname?.startsWith("/cdl/test") || pathname === "/cdl/training";
+  // Hide header on test and training pages (DMV, CDL, HTL)
+  const hideHeader =
+    pathname?.startsWith("/test") ||
+    pathname === "/training" ||
+    pathname?.startsWith("/cdl/test") ||
+    pathname === "/cdl/training" ||
+    pathname?.startsWith("/htl/test") ||
+    pathname === "/htl/training";
 
   // Hide sign up prompt on onboarding pages (too early in flow)
   const isOnboarding = pathname?.startsWith("/onboarding");

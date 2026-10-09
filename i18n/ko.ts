@@ -248,6 +248,12 @@ export const ko: TranslationKeys = {
     vehicleInspection: "차량 점검",
     vehicleSystems: "차량 시스템",
     weatherDriving: "악천후 운전",
+    // HTL (histotechnology) categories
+    fixation: "고정",
+    processing: "처리",
+    embeddingMicrotomy: "포매 및 박절",
+    staining: "염색",
+    laboratoryOperations: "실험실 운영",
   } as Record<string, string>,
 
   // Training set names

@@ -5,6 +5,17 @@ import { doc, setDoc, getDoc, updateDoc } from 'firebase/firestore';
 import { db } from '@/lib/firebase';
 import { trackQuestionsAnswered } from '@/lib/analytics';
 import type { Language } from '@/i18n';
+import { HTL_ID_BASE, HTL_STATE_CODE, HTL_TEST_COUNT, HTL_TRAINING_SETS, getHTLTrainingSetSize, isHTLSetId } from '@/lib/htlConfig';
+
+/**
+ * Non-DMV exams share the store but are namespaced by ID range and stored
+ * under a pseudo state code: CDL = 101-112, HTL = 201-205.
+ */
+const examStateForTestId = (testId: number, selectedState: string | null): string => {
+  if (testId > HTL_ID_BASE) return HTL_STATE_CODE;
+  if (testId >= 101) return 'CDL';
+  return selectedState || 'CA';
+};
 
 // Current data version - increment this when question data changes
 const DATA_VERSION = 2;
@@ -99,6 +110,14 @@ interface AppState {
     averageScore: number;
   };
   getCDLPassProbability: () => number;
+  getHTLProgress: () => {
+    testsCompleted: number;
+    questionsAnswered: number;
+    totalCorrect: number;
+    accuracy: number;
+    averageScore: number;
+  };
+  getHTLPassProbability: () => number;
   getQuestionPerformance: () => QuestionPerformance[];
 
   // Firebase sync
@@ -306,7 +325,7 @@ export const useStore = create<AppState>()(
       },
 
       completeTest: (testId: number, score: number, questions: Question[], answers: { [key: number]: string }) => {
-        const currentState = testId >= 101 ? 'CDL' : (get().selectedState || 'CA');
+        const currentState = examStateForTestId(testId, get().selectedState);
         const userAnswers: UserAnswer[] = questions.map((q, index) => ({
           questionId: q.questionId,
           userAnswer: answers[index] || '',
@@ -373,7 +392,7 @@ export const useStore = create<AppState>()(
         // Mirror completeTest's `selectedState || 'CA'` fallback — otherwise a
         // session completed with no state selected is stored as 'CA' but never
         // found again, and the results page bounces back into a fresh test.
-        const stateFilter = testId >= 101 ? 'CDL' : selectedState || 'CA';
+        const stateFilter = examStateForTestId(testId, selectedState);
         // Find most recent test session for the current state
         const sessions = completedTests.filter(
           (t) => t.testNumber === testId && t.state === stateFilter
@@ -384,7 +403,7 @@ export const useStore = create<AppState>()(
 
       getTestAttemptStats: (testId: number) => {
         const { testAttempts, selectedState } = get();
-        const stateFilter = testId >= 101 ? 'CDL' : selectedState || 'CA';
+        const stateFilter = examStateForTestId(testId, selectedState);
         return testAttempts.find(
           (a) => a.testNumber === testId && a.state === stateFilter
         );
@@ -392,7 +411,7 @@ export const useStore = create<AppState>()(
 
       getTestAverageScore: (testId: number) => {
         const { completedTests, selectedState } = get();
-        const stateFilter = testId >= 101 ? 'CDL' : selectedState || 'CA';
+        const stateFilter = examStateForTestId(testId, selectedState);
         const testSessions = completedTests.filter(
           (t) => t.testNumber === testId && t.state === stateFilter
         );
@@ -404,7 +423,7 @@ export const useStore = create<AppState>()(
       },
 
       isTestUnlocked: (testId: number) => {
-        // CDL tests (101+) are all free - no premium gate
+        // CDL (101+) and HTL (201+) tests are all free - no premium gate
         if (testId >= 101) return true;
         // DMV Test 4 requires premium
         if (testId === 4 && !get().hasPremiumAccess()) return false;
@@ -513,7 +532,8 @@ export const useStore = create<AppState>()(
         const { trainingSets, training } = get();
         const setData = trainingSets[setId] || { masteredIds: [] };
         let correct = setData.masteredIds.length;
-        const total = 50;
+        // HTL sets are one content area each, so their sizes vary.
+        const total = isHTLSetId(setId) ? getHTLTrainingSetSize(setId) : 50;
 
         // For set 1, include onboarding progress if no set-specific progress yet
         if (setId === 1 && correct === 0 && training.totalCorrectAllTime > 0) {
@@ -673,6 +693,59 @@ export const useStore = create<AppState>()(
         for (let testNum = 1; testNum <= 12; testNum++) {
           const cdlTestId = 100 + testNum;
           const attempt = cdlAttempts.find((a) => a.testNumber === cdlTestId);
+          if (attempt) {
+            const testScore = (attempt.bestScore / 50) * 100;
+            totalPassProbability += testScore * (WEIGHT_PER_COMPONENT / 100);
+          }
+        }
+
+        return Math.round(totalPassProbability);
+      },
+
+      getHTLProgress: () => {
+        const { completedTests, testAttempts } = get();
+        const htlTests = completedTests.filter((t) => t.state === HTL_STATE_CODE);
+        const htlAttempts = testAttempts.filter((a) => a.state === HTL_STATE_CODE);
+
+        const testsCompleted = htlAttempts.length;
+        if (testsCompleted === 0) {
+          return { testsCompleted: 0, questionsAnswered: 0, totalCorrect: 0, accuracy: 0, averageScore: 0 };
+        }
+
+        const totalCorrect = htlTests.reduce((sum, test) => sum + (test.score || 0), 0);
+        const questionsAnswered = htlTests.reduce((sum, test) => sum + test.totalQuestions, 0);
+        const accuracy = questionsAnswered > 0 ? (totalCorrect / questionsAnswered) * 100 : 0;
+        const averageBestScore =
+          htlAttempts.reduce((sum, a) => sum + a.bestScore, 0) / htlAttempts.length;
+
+        return {
+          testsCompleted,
+          questionsAnswered,
+          totalCorrect,
+          accuracy: Math.round(accuracy),
+          averageScore: Math.round(averageBestScore * 10) / 10,
+        };
+      },
+
+      getHTLPassProbability: () => {
+        const { testAttempts, trainingSets } = get();
+        const htlAttempts = testAttempts.filter((a) => a.state === HTL_STATE_CODE);
+
+        // 5 content-area training sets + 4 practice tests, equally weighted
+        const componentCount = HTL_TRAINING_SETS.length + HTL_TEST_COUNT;
+        const WEIGHT_PER_COMPONENT = 100 / componentCount;
+        let totalPassProbability = 0;
+
+        for (const setDef of HTL_TRAINING_SETS) {
+          const masteredCount = trainingSets[setDef.id]?.masteredIds?.length || 0;
+          if (masteredCount > 0) {
+            const setScore = (Math.min(masteredCount, setDef.size) / setDef.size) * 100;
+            totalPassProbability += setScore * (WEIGHT_PER_COMPONENT / 100);
+          }
+        }
+
+        for (let testNum = 1; testNum <= HTL_TEST_COUNT; testNum++) {
+          const attempt = htlAttempts.find((a) => a.testNumber === HTL_ID_BASE + testNum);
           if (attempt) {
             const testScore = (attempt.bestScore / 50) * 100;
             totalPassProbability += testScore * (WEIGHT_PER_COMPONENT / 100);
@@ -1034,7 +1107,7 @@ export const useStore = create<AppState>()(
 
       // Check if a training set is unlocked
       isTrainingSetUnlocked: (setId: number) => {
-        // CDL sets (101+) are all free
+        // CDL (101+) and HTL (201+) sets are all free
         if (setId >= 101) return true;
         // Sets 1 and 2 are always free
         if (setId <= 2) return true;

@@ -24,6 +24,10 @@ export default function robots(): MetadataRoute.Robots {
           "/cdl/stats",
           "/cdl/test",
           "/cdl/training",
+          "/htl/dashboard",
+          "/htl/stats",
+          "/htl/test",
+          "/htl/training",
         ],
       },
       // Explicitly allow major AI crawlers

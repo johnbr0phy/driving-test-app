@@ -116,6 +116,16 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     },
   ];
 
+  // HTL (histotechnologist) pages
+  const htlPages: MetadataRoute.Sitemap = [
+    {
+      url: `${siteUrl}/htl`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.9,
+    },
+  ];
+
   // School landing pages — dynamically from Firestore
   const schoolSlugs = await getActiveSchoolSlugs();
   const schoolPages: MetadataRoute.Sitemap = schoolSlugs.map((slug) => ({
@@ -128,6 +138,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   return [
     ...corePages,
     ...cdlPages,
+    ...htlPages,
     ...stateDmvPages,
     ...stateDmvPagesEs,
     ...spanishIndexPage,

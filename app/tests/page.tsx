@@ -2,14 +2,14 @@ import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
-import { CERTIFICATION_TESTS, DRIVING_TESTS, TEST_CATALOG, TestCatalogEntry } from "@/lib/testCatalog";
+import { TEST_CATALOG, TEST_GROUPS, TestCatalogEntry } from "@/lib/testCatalog";
 import { TestIcon } from "@/components/TestIcon";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "All Free Practice Tests - DMV, Motorcycle, CDL, HTL, CST, CRCST";
+const title = "All Free Practice Tests - DMV, Motorcycle, CDL, Citizenship, HTL, CST, CRCST";
 const description =
-  "Every free practice test on TigerTest in one place: DMV permit tests for all 50 states, motorcycle permit, CDL general knowledge, and ASCP HTL, NBSTSA CST and HSPA CRCST certification exam prep.";
+  "Every free practice test on TigerTest in one place: DMV permit tests for all 50 states, motorcycle permit, CDL general knowledge, the USCIS citizenship civics test, and ASCP HTL, NBSTSA CST and HSPA CRCST certification exam prep.";
 
 export const metadata: Metadata = {
   title,
@@ -77,19 +77,16 @@ export default function TestsHubPage() {
       </div>
 
       <div className="max-w-5xl mx-auto px-6 pb-16 md:pb-24">
-        <h2 className="text-sm font-semibold uppercase tracking-wide text-gray-500 mb-4">Driving tests</h2>
-        <div className="grid gap-5 sm:grid-cols-2 mb-12">
-          {DRIVING_TESTS.map((t) => (
-            <TestCard key={t.id} test={t} />
-          ))}
-        </div>
-
-        <h2 className="text-sm font-semibold uppercase tracking-wide text-gray-500 mb-4">Healthcare certification exams</h2>
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {CERTIFICATION_TESTS.map((t) => (
-            <TestCard key={t.id} test={t} />
-          ))}
-        </div>
+        {TEST_GROUPS.map((group, i) => (
+          <div key={group.title} className={i < TEST_GROUPS.length - 1 ? "mb-12" : ""}>
+            <h2 className="text-sm font-semibold uppercase tracking-wide text-gray-500 mb-4">{group.title}</h2>
+            <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {group.tests.map((t) => (
+                <TestCard key={t.id} test={t} />
+              ))}
+            </div>
+          </div>
+        ))}
 
         <div className="mt-14 rounded-2xl bg-gray-50 border border-gray-200 p-8 text-center">
           <h2 className="text-2xl font-bold text-gray-900 mb-3">Don&apos;t see your exam?</h2>

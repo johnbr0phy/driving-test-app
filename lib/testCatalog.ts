@@ -36,13 +36,14 @@ const dmv: TestCatalogEntry = {
 const EXAM_BLURBS: Record<string, string> = {
   cdl: "600 questions on the CDL general knowledge exam. Six blueprint-weighted tests and six training sets by topic.",
   moto: "Motorcycle permit knowledge test, based on the MSF manual nearly every state uses. Gear, control, positioning, hazards and alcohol.",
+  civics: "The USCIS naturalization civics test. All 128 official 2025 questions as multiple choice: government, history, symbols and holidays.",
   htl: "ASCP histotechnologist and histotechnician certification. Fixation, processing, embedding, microtomy, staining and lab operations.",
   cst: "NBSTSA surgical technologist certification. Preoperative, intraoperative and postoperative care, sterilization, anatomy, microbiology and pharmacology.",
   crcst: "HSPA sterile processing certification, also covers the CBSPD CSPDT. Decontamination, packaging, sterilization, storage and patient care equipment.",
 };
 
 // Short issuing-body line for menus; defaults to the exam label.
-const EXAM_ORG: Record<string, string> = { cdl: "Commercial license", moto: "Permit knowledge test" };
+const EXAM_ORG: Record<string, string> = { cdl: "Commercial license", moto: "Permit knowledge test", civics: "USCIS naturalization" };
 
 const examEntry = (exam: ExamConfig): TestCatalogEntry => ({
   id: exam.id,
@@ -59,9 +60,16 @@ const examEntry = (exam: ExamConfig): TestCatalogEntry => ({
 
 export const TEST_CATALOG: TestCatalogEntry[] = [dmv, ...EXAMS.map(examEntry)];
 
-const DRIVING_IDS = ["dmv", "cdl", "moto"];
-export const DRIVING_TESTS = TEST_CATALOG.filter((t) => DRIVING_IDS.includes(t.id));
-export const CERTIFICATION_TESTS = TEST_CATALOG.filter((t) => !DRIVING_IDS.includes(t.id));
+/** Hub groupings, in display order. Anything not listed falls into "Other exams". */
+const GROUPS: { title: string; ids: string[] }[] = [
+  { title: "Driving tests", ids: ["dmv", "cdl", "moto"] },
+  { title: "Citizenship", ids: ["civics"] },
+  { title: "Healthcare certification exams", ids: ["htl", "cst", "crcst"] },
+];
+export const TEST_GROUPS: { title: string; tests: TestCatalogEntry[] }[] = [
+  ...GROUPS.map((g) => ({ title: g.title, tests: TEST_CATALOG.filter((t) => g.ids.includes(t.id)) })),
+  { title: "Other exams", tests: TEST_CATALOG.filter((t) => !GROUPS.some((g) => g.ids.includes(t.id))) },
+].filter((g) => g.tests.length > 0);
 
 /** Which catalog entry a pathname belongs to (DMV is the fallback). */
 export function getCatalogEntryByPath(pathname: string | null | undefined): TestCatalogEntry {

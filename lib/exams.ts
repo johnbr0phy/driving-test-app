@@ -13,7 +13,7 @@
  * This file must stay free of question-data imports (the store imports it).
  */
 
-export type ExamId = "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "emt" | "foodmgr" | "realestate" | "insurance" | "notary" | "teas" | "aws" | "aplus" | "htl" | "cst" | "crcst";
+export type ExamId = "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "emt" | "foodmgr" | "realestate" | "insurance" | "notary" | "teas" | "aws" | "aplus" | "foodhandler" | "boating" | "hunter" | "secplus" | "hesi" | "htl" | "cst" | "crcst";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (?set=N). */
@@ -53,7 +53,7 @@ export interface ExamConfig {
   /** Question ID prefix, e.g. "HTL-". */
   questionIdPrefix: string;
   /** Header icon key (see CDLHeader). */
-  icon: "truck" | "bike" | "flag" | "plane" | "radio" | "thermometer" | "heart" | "pill" | "syringe" | "stethoscope" | "activity" | "tooth" | "siren" | "utensils" | "house" | "umbrella" | "stamp" | "graduation" | "cloud" | "cpu" | "microscope" | "scissors" | "shield";
+  icon: "truck" | "bike" | "flag" | "plane" | "radio" | "thermometer" | "heart" | "pill" | "syringe" | "stethoscope" | "activity" | "tooth" | "siren" | "utensils" | "house" | "umbrella" | "stamp" | "graduation" | "cloud" | "cpu" | "chef" | "sailboat" | "target" | "lock" | "book" | "microscope" | "scissors" | "shield";
   testCount: number;
   questionsPerTest: number;
   passPct: number;
@@ -1317,6 +1317,290 @@ const aplus: ExamConfig = {
   },
 };
 
+const foodhandler: ExamConfig = {
+  id: "foodhandler",
+  stateCode: "FOODHANDLER",
+  idBase: 2500,
+  slug: "/food-handler",
+  landingPath: "/food-handler-practice-test",
+  name: "Food Handler Practice Test",
+  shortName: "Food Handler",
+  examLabel: "Food Handler Card",
+  fullName: "food handler certificate exam",
+  questionIdPrefix: "FH-",
+  icon: "chef",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 75,
+  // Food handler card (ANAB-accredited courses on the FDA Food Code): basics 20%,
+  // personal hygiene 20%, contamination and allergens 20%, time and temperature 24%,
+  // cleaning and sanitizing 16%. Real tests are 40 questions, 75% to pass.
+  blueprint: {
+    fhBasics: 10,
+    fhHygiene: 10,
+    fhContamination: 10,
+    fhTimeTemp: 12,
+    fhCleaning: 8,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 2501, name: "Food Safety Basics & Personal Hygiene", categories: ["fhBasics", "fhHygiene"], size: 80, weightLabel: "40% of the tests" },
+    { setNumber: 2, id: 2502, name: "Contamination & Allergens", categories: ["fhContamination"], size: 40, weightLabel: "20% of the tests" },
+    { setNumber: 3, id: 2503, name: "Time & Temperature Control", categories: ["fhTimeTemp"], size: 48, weightLabel: "24% of the tests" },
+    { setNumber: 4, id: 2504, name: "Cleaning, Sanitizing & Pests", categories: ["fhCleaning"], size: 32, weightLabel: "16% of the tests" },
+  ],
+  categoryLabels: {
+    fhBasics: "Food Safety Basics",
+    fhHygiene: "Personal Hygiene",
+    fhContamination: "Contamination & Allergens",
+    fhTimeTemp: "Time & Temperature",
+    fhCleaning: "Cleaning & Sanitizing",
+  },
+  copy: {
+    guestPrompt: "to save your food handler progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets covering everything on the food handler test: basics and hygiene, contamination and allergens, time and temperature, cleaning and sanitizing. Missed questions come back until you master them.",
+    testsHeading: "Practice tests \u00b7 50 questions in the real test's proportions",
+    heroSubs: [
+      "Five topics, four full tests. Time and temperature is the biggest piece.",
+      "Mastery first, then test. The sets follow the FDA Food Code the courses teach.",
+      "Halfway through the topics. The practice tests will show where you stand.",
+      "Fix the misses, then retake. Most food handler tests pass at 75 percent.",
+      "Full prep done. Take the real course test and get your card.",
+    ],
+    sourceLine: "Based on the FDA Food Code as taught in ANAB-accredited food handler courses. Card requirements vary by state and county.",
+    analyticsKey: "foodhandler",
+  },
+};
+
+const boating: ExamConfig = {
+  id: "boating",
+  stateCode: "BOATING",
+  idBase: 2600,
+  slug: "/boating",
+  landingPath: "/boating-license-practice-test",
+  name: "Boating License Practice Test",
+  shortName: "Boating",
+  examLabel: "Boater Safety",
+  fullName: "boating safety certificate exam",
+  questionIdPrefix: "BOAT-",
+  icon: "sailboat",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // Boating safety certificate (NASBLA standards, state-approved courses): basics 16%,
+  // required equipment 20%, navigation rules 24%, safe operation 24%, emergencies 16%.
+  // State exams are usually 50 to 75 questions, 80% to pass.
+  blueprint: {
+    boatBasics: 8,
+    boatEquipment: 10,
+    boatNavigation: 12,
+    boatOperation: 12,
+    boatEmergencies: 8,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 2601, name: "Boat Basics & Trailering", categories: ["boatBasics"], size: 32, weightLabel: "16% of the tests" },
+    { setNumber: 2, id: 2602, name: "Required Equipment", categories: ["boatEquipment"], size: 40, weightLabel: "20% of the tests" },
+    { setNumber: 3, id: 2603, name: "Navigation Rules & Buoys", categories: ["boatNavigation"], size: 48, weightLabel: "24% of the tests" },
+    { setNumber: 4, id: 2604, name: "Safe Operation", categories: ["boatOperation"], size: 48, weightLabel: "24% of the tests" },
+    { setNumber: 5, id: 2605, name: "Emergencies", categories: ["boatEmergencies"], size: 32, weightLabel: "16% of the tests" },
+  ],
+  categoryLabels: {
+    boatBasics: "Boat Basics",
+    boatEquipment: "Required Equipment",
+    boatNavigation: "Navigation Rules",
+    boatOperation: "Safe Operation",
+    boatEmergencies: "Emergencies",
+  },
+  copy: {
+    guestPrompt: "to save your boating progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets covering the boater education standards: boat basics, required equipment, navigation rules and buoys, safe operation, emergencies. Missed questions come back until you master them.",
+    testsHeading: "Practice tests \u00b7 50 questions in the state exam's proportions",
+    heroSubs: [
+      "Five topics, four full tests. Navigation rules and safe operation are the biggest pieces.",
+      "Mastery first, then test. The sets follow the NASBLA standards every state course uses.",
+      "Halfway through the topics. The practice tests will show where you stand.",
+      "Fix the misses, then retake. Most state exams pass at 80 percent.",
+      "Full prep done. Take your state's course exam and get your boater card.",
+    ],
+    sourceLine: "Based on the NASBLA boater education standards and U.S. Coast Guard rules. Operator age and education requirements vary by state.",
+    analyticsKey: "boating",
+  },
+};
+
+const hunter: ExamConfig = {
+  id: "hunter",
+  stateCode: "HUNTER",
+  idBase: 2700,
+  slug: "/hunter-safety",
+  landingPath: "/hunter-safety-practice-test",
+  name: "Hunter Safety Practice Test",
+  shortName: "Hunter Safety",
+  examLabel: "Hunter Education",
+  fullName: "hunter education certification exam",
+  questionIdPrefix: "HS-",
+  icon: "target",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // Hunter education (IHEA-USA standards, state courses): firearm safety 30%, firearms
+  // and ammunition 16%, techniques and game care 16%, wildlife and conservation 16%,
+  // ethics and laws 12%, survival and first aid 10%. State exams ~50 questions, 80% to pass.
+  blueprint: {
+    hsFirearmSafety: 15,
+    hsFirearmsAmmo: 8,
+    hsTechniques: 8,
+    hsWildlife: 8,
+    hsEthicsLaws: 6,
+    hsSurvival: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 2701, name: "Firearm Safety", categories: ["hsFirearmSafety"], size: 60, weightLabel: "30% of the tests" },
+    { setNumber: 2, id: 2702, name: "Firearms, Ammunition & Archery", categories: ["hsFirearmsAmmo"], size: 32, weightLabel: "16% of the tests" },
+    { setNumber: 3, id: 2703, name: "Hunting Techniques & Game Care", categories: ["hsTechniques"], size: 32, weightLabel: "16% of the tests" },
+    { setNumber: 4, id: 2704, name: "Wildlife ID & Conservation", categories: ["hsWildlife"], size: 32, weightLabel: "16% of the tests" },
+    { setNumber: 5, id: 2705, name: "Ethics, Laws & Survival", categories: ["hsEthicsLaws", "hsSurvival"], size: 44, weightLabel: "22% of the tests" },
+  ],
+  categoryLabels: {
+    hsFirearmSafety: "Firearm Safety",
+    hsFirearmsAmmo: "Firearms & Ammunition",
+    hsTechniques: "Hunting Techniques",
+    hsWildlife: "Wildlife & Conservation",
+    hsEthicsLaws: "Ethics & Laws",
+    hsSurvival: "Survival & First Aid",
+  },
+  copy: {
+    guestPrompt: "to save your hunter safety progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets covering the hunter education standards: firearm safety, firearms and ammunition, techniques and game care, wildlife and conservation, ethics, laws and survival. Missed questions come back until you master them.",
+    testsHeading: "Practice tests \u00b7 50 questions in the state exam's proportions",
+    heroSubs: [
+      "Six topics, four full tests. Firearm safety is almost a third of every test.",
+      "Mastery first, then test. The sets follow the IHEA standards every state course uses.",
+      "Halfway through the topics. The practice tests will show where you stand.",
+      "Fix the misses, then retake. Most state exams pass at 80 percent.",
+      "Full prep done. Take your state's hunter education exam and get certified.",
+    ],
+    sourceLine: "Based on the IHEA-USA hunter education standards. Seasons, bag limits, blaze orange rules and minimum ages vary by state.",
+    analyticsKey: "hunter",
+  },
+};
+
+const secplus: ExamConfig = {
+  id: "secplus",
+  stateCode: "SECPLUS",
+  idBase: 2800,
+  slug: "/comptia-security-plus",
+  landingPath: "/comptia-security-plus-practice-test",
+  name: "CompTIA Security+ Practice Test",
+  shortName: "Security+",
+  examLabel: "Security+ SY0-701",
+  fullName: "CompTIA Security+ (SY0-701) exam",
+  questionIdPrefix: "SEC-",
+  icon: "lock",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 83,
+  // CompTIA Security+ SY0-701: General Security Concepts 12%, Threats, Vulnerabilities
+  // and Mitigations 22%, Security Architecture 18%, Security Operations 28%, Security
+  // Program Management and Oversight 20%. Up to 90 questions, 750 of 900 to pass.
+  blueprint: {
+    secConcepts: 6,
+    secThreats: 11,
+    secArchitecture: 9,
+    secOperations: 14,
+    secGovernance: 10,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 2801, name: "General Security Concepts", categories: ["secConcepts"], size: 24, weightLabel: "12% of the tests" },
+    { setNumber: 2, id: 2802, name: "Threats, Vulnerabilities & Mitigations", categories: ["secThreats"], size: 44, weightLabel: "22% of the tests" },
+    { setNumber: 3, id: 2803, name: "Security Architecture", categories: ["secArchitecture"], size: 36, weightLabel: "18% of the tests" },
+    { setNumber: 4, id: 2804, name: "Security Operations", categories: ["secOperations"], size: 56, weightLabel: "28% of the tests" },
+    { setNumber: 5, id: 2805, name: "Program Management & Oversight", categories: ["secGovernance"], size: 40, weightLabel: "20% of the tests" },
+  ],
+  categoryLabels: {
+    secConcepts: "General Security Concepts",
+    secThreats: "Threats & Vulnerabilities",
+    secArchitecture: "Security Architecture",
+    secOperations: "Security Operations",
+    secGovernance: "Program Management",
+  },
+  copy: {
+    guestPrompt: "to save your Security+ progress and track every question you miss",
+    trainingHeading: "Train by domain",
+    trainingSub: "Five sets, one per SY0-701 domain. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests \u00b7 50 questions weighted like SY0-701",
+    heroSubs: [
+      "Five domains, four full tests. Security operations is the biggest piece.",
+      "Mastery first, then test. The sets follow the SY0-701 objectives domain by domain.",
+      "Halfway through the domains. The practice tests will show where you stand.",
+      "Fix the misses, then retake. Security+ passes at 750 of 900.",
+      "Full prep done. Schedule SY0-701 at Pearson VUE.",
+    ],
+    sourceLine: "Weighted to the CompTIA Security+ SY0-701 objectives. Performance-based items are not simulated.",
+    analyticsKey: "secplus",
+  },
+};
+
+const hesi: ExamConfig = {
+  id: "hesi",
+  stateCode: "HESI",
+  idBase: 2900,
+  slug: "/hesi",
+  landingPath: "/hesi-a2-practice-test",
+  name: "HESI A2 Practice Test",
+  shortName: "HESI A2",
+  examLabel: "HESI A2",
+  fullName: "HESI Admission Assessment (A2) exam",
+  questionIdPrefix: "HESI-",
+  icon: "book",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 75,
+  // HESI A2 (Elsevier Admission Assessment): math 18%, reading 16%, vocabulary 16%,
+  // grammar 16%, biology 12%, chemistry 10%, anatomy and physiology 12%. Real sections
+  // are 25 to 55 items each; most programs require 75%.
+  blueprint: {
+    hesiMath: 9,
+    hesiReading: 8,
+    hesiVocabulary: 8,
+    hesiGrammar: 8,
+    hesiBiology: 6,
+    hesiChemistry: 5,
+    hesiAnatomy: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 2901, name: "Mathematics", categories: ["hesiMath"], size: 36, weightLabel: "18% of the tests" },
+    { setNumber: 2, id: 2902, name: "Reading & Vocabulary", categories: ["hesiReading", "hesiVocabulary"], size: 64, weightLabel: "32% of the tests" },
+    { setNumber: 3, id: 2903, name: "Grammar", categories: ["hesiGrammar"], size: 32, weightLabel: "16% of the tests" },
+    { setNumber: 4, id: 2904, name: "Biology, Chemistry & A&P", categories: ["hesiBiology", "hesiChemistry", "hesiAnatomy"], size: 68, weightLabel: "34% of the tests" },
+  ],
+  categoryLabels: {
+    hesiMath: "Mathematics",
+    hesiReading: "Reading Comprehension",
+    hesiVocabulary: "Vocabulary",
+    hesiGrammar: "Grammar",
+    hesiBiology: "Biology",
+    hesiChemistry: "Chemistry",
+    hesiAnatomy: "Anatomy & Physiology",
+  },
+  copy: {
+    guestPrompt: "to save your HESI progress and track every question you miss",
+    trainingHeading: "Train by section",
+    trainingSub: "Four sets covering the seven HESI A2 sections: math, reading and vocabulary, grammar, and the sciences. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests \u00b7 50 questions across all seven sections",
+    heroSubs: [
+      "Seven sections, four full tests. Math and the sciences decide most scores.",
+      "Mastery first, then test. The sets follow the HESI A2 section outlines.",
+      "Halfway through the sections. The practice tests will show where you stand.",
+      "Fix the misses, then retake. Most nursing programs want 75 percent or better.",
+      "Full prep done. Schedule your HESI A2 through your program.",
+    ],
+    sourceLine: "Based on the HESI A2 section outlines (math, reading, vocabulary, grammar, biology, chemistry, anatomy and physiology). Physics is not included.",
+    analyticsKey: "hesi",
+  },
+};
+
 const htl: ExamConfig = {
   id: "htl",
   stateCode: "HTL",
@@ -1487,7 +1771,7 @@ const crcst: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, cet, danb, emt, foodmgr, realestate, insurance, notary, teas, aws, aplus, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, cet, danb, emt, foodmgr, realestate, insurance, notary, teas, aws, aplus, foodhandler, boating, hunter, secplus, hesi, htl, cst, crcst];
 
 export const examSetBase = (exam: ExamConfig) => exam.setIdBase ?? exam.idBase;
 /** Store ID of training set N of an exam. */

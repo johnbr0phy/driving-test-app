@@ -46,6 +46,11 @@ const EXAM_BLURBS: Record<string, string> = {
   phleb: "Phlebotomy technician certification on the NHA CPT test plan, also covers ASCP PBT and AMT RPT. Order of draw, technique, safety, processing and special collections.",
   ccma: "NHA clinical medical assistant exam. Vitals, patient care, infection control, lab, phlebotomy, EKG, admin, communication and law, on the CCMA test plan.",
   cet: "NHA certified EKG technician exam. Lead placement, artifacts, Holter and stress testing, patient safety, and rhythm analysis, on the CET test plan.",
+  hesi: "HESI A2 nursing entrance exam. Math with dosage conversions, reading passages, medical vocabulary, grammar, biology, chemistry and anatomy and physiology.",
+  secplus: "CompTIA Security+ SY0-701. General security concepts, threats and vulnerabilities, architecture, operations, and program management, in CompTIA's scenario style.",
+  hunter: "Hunter education (hunter safety) exam prep on the IHEA standards: firearm safety and carries, ammunition, shot placement, tree stands, wildlife identification, conservation, ethics and survival.",
+  boating: "Boating license (boater safety card) exam prep on the NASBLA standards: navigation rules, buoys, lights and sound signals, required equipment, safe operation, emergencies.",
+  foodhandler: "Food handler card test prep on the FDA Food Code: hygiene, cross-contamination, allergens, cooking and holding temperatures, cooling, sanitizing. For every ANAB-accredited course.",
   aplus: "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202). Hardware, networking, mobile, cloud, operating systems, security, troubleshooting and operational procedures.",
   aws: "AWS Certified Cloud Practitioner (CLF-C02). Cloud concepts, the shared responsibility model, IAM and security services, core services, pricing and support plans.",
   teas: "ATI TEAS 7 nursing school entrance exam. Reading with passages, math with worked solutions, science with anatomy and physiology, and English usage.",
@@ -61,7 +66,7 @@ const EXAM_BLURBS: Record<string, string> = {
 };
 
 // Short issuing-body line for menus; defaults to the exam label.
-const EXAM_ORG: Record<string, string> = { cdl: "Commercial license", cdlx: "H, air brakes, combo, N, P", moto: "Permit knowledge test", civics: "USCIS naturalization", part107: "FAA drone pilot", ham: "FCC Technician licence", epa608: "HVAC refrigerant certification", cna: "Nurse aide written exam", ptcb: "Pharmacy technician certification", phleb: "NHA CPT, ASCP PBT, AMT RPT", ccma: "NHA medical assistant exam", cet: "NHA EKG technician exam", danb: "DANB CDA: GC, RHS, ICE", emt: "NREMT cognitive exam", foodmgr: "ANAB-CFP accredited exams", realestate: "National portion, Pearson VUE and PSI", insurance: "Life, accident & health producer exam", notary: "General notary law, all states", teas: "Nursing & allied health admissions", aws: "AWS CLF-C02", aplus: "CompTIA 220-1201 / 220-1202" };
+const EXAM_ORG: Record<string, string> = { cdl: "Commercial license", cdlx: "H, air brakes, combo, N, P", moto: "Permit knowledge test", civics: "USCIS naturalization", part107: "FAA drone pilot", ham: "FCC Technician licence", epa608: "HVAC refrigerant certification", cna: "Nurse aide written exam", ptcb: "Pharmacy technician certification", phleb: "NHA CPT, ASCP PBT, AMT RPT", ccma: "NHA medical assistant exam", cet: "NHA EKG technician exam", danb: "DANB CDA: GC, RHS, ICE", emt: "NREMT cognitive exam", foodmgr: "ANAB-CFP accredited exams", realestate: "National portion, Pearson VUE and PSI", insurance: "Life, accident & health producer exam", notary: "General notary law, all states", teas: "Nursing & allied health admissions", aws: "AWS CLF-C02", aplus: "CompTIA 220-1201 / 220-1202", foodhandler: "ANAB-accredited course tests", boating: "NASBLA state boater exams", hunter: "IHEA state hunter education exams", secplus: "CompTIA SY0-701", hesi: "Nursing school admissions" };
 
 const examEntry = (exam: ExamConfig): TestCatalogEntry => ({
   id: exam.id,
@@ -82,10 +87,11 @@ export const TEST_CATALOG: TestCatalogEntry[] = [dmv, ...EXAMS.map(examEntry)];
 const GROUPS: { title: string; ids: string[] }[] = [
   { title: "Driving tests", ids: ["dmv", "cdl", "cdlx", "moto"] },
   { title: "Citizenship", ids: ["civics"] },
-  { title: "Aviation, radio & trade licenses", ids: ["part107", "ham", "epa608", "foodmgr"] },
+  { title: "Outdoor & recreation licenses", ids: ["boating", "hunter"] },
+  { title: "Aviation, radio & trade licenses", ids: ["part107", "ham", "epa608", "foodmgr", "foodhandler"] },
   { title: "Real estate, insurance & notary licenses", ids: ["realestate", "insurance", "notary"] },
-  { title: "College & nursing school entrance", ids: ["teas"] },
-  { title: "IT certifications", ids: ["aplus", "aws"] },
+  { title: "College & nursing school entrance", ids: ["teas", "hesi"] },
+  { title: "IT certifications", ids: ["aplus", "secplus", "aws"] },
   { title: "Emergency services", ids: ["emt"] },
   { title: "Healthcare certification exams", ids: ["cna", "ccma", "ptcb", "phleb", "cet", "danb", "htl", "cst", "crcst"] },
 ];
@@ -118,6 +124,11 @@ const SEARCH_ALIASES: Record<string, string> = {
   teas: "nursing school entrance ati admissions",
   aws: "amazon cloud practitioner clf-c02 certification",
   aplus: "comptia a plus it support help desk core 1 core 2 hardware",
+  foodhandler: "food handler card servsafe food safety certificate restaurant kitchen permit",
+  boating: "boat boater safety card license certificate nasbla pwc jet ski navigation buoys",
+  hunter: "hunter education hunting license safety course firearm rifle shotgun bow archery ihea",
+  secplus: "comptia security plus sy0-701 cybersecurity cyber security certification",
+  hesi: "hesi a2 admission assessment nursing entrance exam evolve elsevier",
   htl: "histology histotechnologist histotechnician ascp",
   cst: "surgical technologist scrub tech operating room",
   crcst: "sterile processing central service hspa cbspd",

@@ -1,5 +1,5 @@
 // Question types
-export type QuestionType = "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HAM" | "EPA608" | "CNA" | "PTCB" | "PHLEB" | "CCMA" | "CET" | "DANB" | "EMT" | "FOODMGR" | "REALESTATE" | "LIFEHEALTH" | "NOTARY" | "TEAS" | "AWSCCP" | "APLUS" | "HTL" | "CST" | "CRCST";
+export type QuestionType = "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HAM" | "EPA608" | "CNA" | "PTCB" | "PHLEB" | "CCMA" | "CET" | "DANB" | "EMT" | "FOODMGR" | "REALESTATE" | "LIFEHEALTH" | "NOTARY" | "TEAS" | "AWSCCP" | "APLUS" | "FOODHANDLER" | "BOATING" | "HUNTER" | "SECPLUS" | "HESI" | "HTL" | "CST" | "CRCST";
 
 // Test mode
 export type TestMode = "dmv" | "cdl" | "htl";
@@ -209,7 +209,40 @@ export type QuestionCategory =
   | "aplusOS"
   | "aplusSecurity"
   | "aplusSwTroubleshooting"
-  | "aplusOperational";
+  | "aplusOperational"
+  // Food handler card categories
+  | "fhBasics"
+  | "fhHygiene"
+  | "fhContamination"
+  | "fhTimeTemp"
+  | "fhCleaning"
+  // Boating safety categories
+  | "boatBasics"
+  | "boatEquipment"
+  | "boatNavigation"
+  | "boatOperation"
+  | "boatEmergencies"
+  // Hunter education categories
+  | "hsFirearmSafety"
+  | "hsFirearmsAmmo"
+  | "hsTechniques"
+  | "hsWildlife"
+  | "hsEthicsLaws"
+  | "hsSurvival"
+  // CompTIA Security+ SY0-701 domains
+  | "secConcepts"
+  | "secThreats"
+  | "secArchitecture"
+  | "secOperations"
+  | "secGovernance"
+  // HESI A2 sections
+  | "hesiMath"
+  | "hesiReading"
+  | "hesiVocabulary"
+  | "hesiGrammar"
+  | "hesiBiology"
+  | "hesiChemistry"
+  | "hesiAnatomy";
 
 export interface Question {
   type: QuestionType;

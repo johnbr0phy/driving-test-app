@@ -336,6 +336,76 @@
     --brand-gradient-to: 20 70% 95%;
   }
 
+  /* Food handler theme: kitchen green */
+  [data-theme="foodhandler"] {
+    --brand: 135 55% 38%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 135 65% 95%;
+    --brand-hover: 135 55% 32%;
+    --brand-dark: 135 55% 26%;
+    --brand-darker: 135 45% 16%;
+    --brand-muted: 135 35% 72%;
+    --brand-border: 135 35% 78%;
+    --brand-border-light: 135 30% 88%;
+    --brand-gradient-to: 165 70% 95%;
+  }
+
+  /* Boating theme: navy */
+  [data-theme="boating"] {
+    --brand: 215 65% 32%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 215 75% 95%;
+    --brand-hover: 215 65% 26%;
+    --brand-dark: 215 65% 20%;
+    --brand-darker: 215 55% 16%;
+    --brand-muted: 215 45% 72%;
+    --brand-border: 215 45% 78%;
+    --brand-border-light: 215 40% 88%;
+    --brand-gradient-to: 190 70% 95%;
+  }
+
+  /* Hunter safety theme: olive */
+  [data-theme="hunter"] {
+    --brand: 70 45% 34%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 70 55% 95%;
+    --brand-hover: 70 45% 28%;
+    --brand-dark: 70 45% 22%;
+    --brand-darker: 70 35% 16%;
+    --brand-muted: 70 25% 72%;
+    --brand-border: 70 25% 78%;
+    --brand-border-light: 70 20% 88%;
+    --brand-gradient-to: 40 70% 95%;
+  }
+
+  /* Security+ theme: violet */
+  [data-theme="secplus"] {
+    --brand: 260 55% 48%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 260 65% 95%;
+    --brand-hover: 260 55% 42%;
+    --brand-dark: 260 55% 36%;
+    --brand-darker: 260 45% 16%;
+    --brand-muted: 260 35% 72%;
+    --brand-border: 260 35% 78%;
+    --brand-border-light: 260 30% 88%;
+    --brand-gradient-to: 290 70% 95%;
+  }
+
+  /* HESI A2 theme: orchid */
+  [data-theme="hesi"] {
+    --brand: 310 60% 45%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 310 70% 95%;
+    --brand-hover: 310 60% 39%;
+    --brand-dark: 310 60% 33%;
+    --brand-darker: 310 50% 16%;
+    --brand-muted: 310 40% 72%;
+    --brand-border: 310 40% 78%;
+    --brand-border-light: 310 35% 88%;
+    --brand-gradient-to: 340 70% 95%;
+  }
+
   /* Motorcycle permit theme: deep red */
   [data-theme="moto"] {
     --brand: 355 72% 44%;

@@ -1,28 +1,34 @@
 "use client";
 
+// HTL practice test — the DMV test page without the premium gate, routed
+// through the HTL exam config.
+
 import { useState, useEffect, useRef } from "react";
 import { useParams, useRouter } from "next/navigation";
+import Link from "next/link";
 import { QuestionCard } from "@/components/QuestionCard";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { TestPageHeader } from "@/components/TestPageHeader";
 import { generateHTLTest } from "@/lib/htlTestGenerator";
 import { shuffleQuestionOptions } from "@/lib/testGenerator";
-import { HTL_ID_BASE, isHTLTestId } from "@/lib/htlConfig";
+import { HTL_ROUTES } from "@/lib/examRoutes";
+import { isHTLTestId } from "@/lib/htlConfig";
 import { Question } from "@/types";
 import { useStore } from "@/store/useStore";
 import { useHydration } from "@/hooks/useHydration";
 import { useTranslation } from "@/contexts/LanguageContext";
 
-function HTLTestPageContent() {
+export default function HTLTestPage() {
   const params = useParams();
   const router = useRouter();
   const testId = parseInt(params.id as string);
-  const testNumber = testId - HTL_ID_BASE;
+  const testNumber = HTL_ROUTES.displayTestNumber(testId);
   const hydrated = useHydration();
   const initialized = useRef(false);
   const { t } = useTranslation();
 
+  const isGuest = useStore((state) => state.isGuest);
   const getCurrentTest = useStore((state) => state.getCurrentTest);
   const startTest = useStore((state) => state.startTest);
   const setAnswer = useStore((state) => state.setAnswer);
@@ -33,23 +39,26 @@ function HTLTestPageContent() {
   const [answers, setAnswers] = useState<{ [key: number]: string }>({});
   const [loading, setLoading] = useState(true);
 
+  // Reset when test changes
   useEffect(() => {
     initialized.current = false;
     setLoading(true);
     setCurrentQuestionIndex(0);
   }, [testId]);
 
+  // Load questions on mount (wait for hydration)
   useEffect(() => {
     if (!hydrated || initialized.current) return;
 
     if (!isHTLTestId(testId)) {
-      router.push("/htl/dashboard");
+      router.push(HTL_ROUTES.dashboard);
       return;
     }
 
     try {
       const savedTest = getCurrentTest(testId);
       if (savedTest && savedTest.questions.length > 0) {
+        // Resume from saved state at the first unanswered question
         setQuestions(savedTest.questions);
         setAnswers(savedTest.answers);
         const firstUnansweredIndex = savedTest.questions.findIndex(
@@ -75,27 +84,25 @@ function HTLTestPageContent() {
   const currentQuestion = questions[currentQuestionIndex];
   const totalQuestions = questions.length;
 
-  const finish = (finalAnswers: { [key: number]: string }) => {
-    let correctCount = 0;
-    questions.forEach((question, index) => {
-      if (finalAnswers[index] === question.correctAnswer) correctCount++;
-    });
-    completeTest(testId, correctCount, questions, finalAnswers);
-    router.push(`/htl/test/${testId}/results`);
-  };
-
   const handleAnswerChange = (answer: string) => {
+    // Don't allow changing previous answers
     if (answers[currentQuestionIndex]) return;
 
     const updatedAnswers = { ...answers, [currentQuestionIndex]: answer };
     setAnswers(updatedAnswers);
     setAnswer(testId, currentQuestionIndex, answer);
 
+    // Auto-advance; the last answer auto-submits
     setTimeout(() => {
       if (currentQuestionIndex < totalQuestions - 1) {
         setCurrentQuestionIndex(currentQuestionIndex + 1);
       } else {
-        finish(updatedAnswers);
+        let correctCount = 0;
+        questions.forEach((question, index) => {
+          if (updatedAnswers[index] === question.correctAnswer) correctCount++;
+        });
+        completeTest(testId, correctCount, questions, updatedAnswers);
+        router.push(HTL_ROUTES.results(testId));
       }
     }, 300);
   };
@@ -118,8 +125,8 @@ function HTLTestPageContent() {
           <CardContent className="p-8 text-center">
             <div className="text-xl font-semibold mb-2">{t("testPage.noQuestionsAvailable")}</div>
             <div className="text-gray-600 mb-4">{t("testPage.unableToLoad")}</div>
-            <Button className="bg-black text-white hover:bg-gray-800" onClick={() => router.push("/htl/dashboard")}>
-              Back to HTL Dashboard
+            <Button className="bg-black text-white hover:bg-gray-800" onClick={() => router.push(HTL_ROUTES.dashboard)}>
+              {t("common.back")}
             </Button>
           </CardContent>
         </Card>
@@ -130,10 +137,19 @@ function HTLTestPageContent() {
   return (
     <div className="flex-1 bg-gray-50">
       <TestPageHeader
-        backHref="/htl/dashboard"
-        right={<span className="text-base md:text-lg font-bold">HTL Practice Test {testNumber}</span>}
+        backHref={HTL_ROUTES.dashboard}
+        right={
+          !isGuest ? (
+            <Link
+              href={HTL_ROUTES.stats}
+              className="text-sm font-medium text-brand hover:text-brand-dark transition-colors"
+            >
+              {t("dashboard.viewStats")}
+            </Link>
+          ) : undefined
+        }
       />
-      <div className="container mx-auto px-4 py-8 max-w-lg md:max-w-2xl lg:max-w-4xl">
+      <div className="relative container mx-auto px-4 py-8 max-w-lg md:max-w-2xl lg:max-w-4xl">
         <div className="mb-6">
           <QuestionCard
             key={currentQuestion.questionId}
@@ -143,8 +159,11 @@ function HTLTestPageContent() {
           />
         </div>
 
+        {/* Progress Overview - View Only */}
         <div className="mt-8">
-          <div className="text-sm font-semibold mb-3">{t("testPage.progressOverview")}</div>
+          <div className="text-sm font-semibold mb-3">
+            🎯 {t("progressOverviewWithTest").replace("{test}", `HTL Test ${testNumber}`)}
+          </div>
           <div className="grid grid-cols-10 gap-1">
             {questions.map((_, index) => (
               <div
@@ -170,8 +189,4 @@ function HTLTestPageContent() {
       </div>
     </div>
   );
-}
-
-export default function HTLTestPage() {
-  return <HTLTestPageContent />;
 }

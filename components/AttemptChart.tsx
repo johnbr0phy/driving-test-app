@@ -26,7 +26,8 @@ function formatDate(value: Date | string | undefined, locale: string): string {
 
 export function sessionsToAttemptPoints(
   sessions: TestSession[],
-  locale: string = "en-US"
+  locale: string = "en-US",
+  passPct: number = 80
 ): AttemptPoint[] {
   return sessions.map((s, i) => {
     const total = s.totalQuestions || 50;
@@ -38,12 +39,21 @@ export function sessionsToAttemptPoints(
       score,
       total,
       pct,
-      passed: pct >= 80,
+      passed: pct >= passPct,
     };
   });
 }
 
-export function AttemptChart({ attempts }: { attempts: AttemptPoint[] }) {
+export function AttemptChart({
+  attempts,
+  passPct = 80,
+  passLabel,
+}: {
+  attempts: AttemptPoint[];
+  // Where the dashed pass line sits (DMV 80, HTL 70) and its label.
+  passPct?: number;
+  passLabel?: string;
+}) {
   const { t } = useTranslation();
   const [hover, setHover] = useState<number | null>(null);
 
@@ -106,15 +116,15 @@ export function AttemptChart({ attempts }: { attempts: AttemptPoint[] }) {
       <line
         x1={PAD.l}
         x2={W - PAD.r}
-        y1={y(80)}
-        y2={y(80)}
+        y1={y(passPct)}
+        y2={y(passPct)}
         className="stroke-green-500"
         strokeWidth="1"
         strokeDasharray="4 4"
         opacity="0.6"
       />
-      <text x={W - PAD.r} y={y(80) - 5} textAnchor="end" className="fill-green-600" fontSize="10">
-        {t("dashboard.chartPassLine")}
+      <text x={W - PAD.r} y={y(passPct) - 5} textAnchor="end" className="fill-green-600" fontSize="10">
+        {passLabel ?? t("dashboard.chartPassLine")}
       </text>
 
       {/* Date labels */}

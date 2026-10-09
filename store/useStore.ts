@@ -118,7 +118,8 @@ interface AppState {
     averageScore: number;
   };
   getHTLPassProbability: () => number;
-  getQuestionPerformance: () => QuestionPerformance[];
+  // stateCode overrides the selected DMV state (e.g. "HTL" for the HTL exam).
+  getQuestionPerformance: (stateCode?: string) => QuestionPerformance[];
 
   // Firebase sync
   userId: string | null;
@@ -755,10 +756,11 @@ export const useStore = create<AppState>()(
         return Math.round(totalPassProbability);
       },
 
-      getQuestionPerformance: () => {
+      getQuestionPerformance: (stateCode?: string) => {
         const { completedTests, selectedState, trainingAnswerHistory } = get();
-        // Filter tests by current state
-        const stateTests = completedTests.filter((t) => t.state === selectedState);
+        // Filter tests by current state (or the exam's pseudo state code)
+        const stateFilter = stateCode ?? selectedState;
+        const stateTests = completedTests.filter((t) => t.state === stateFilter);
 
         // Aggregate answers by questionId
         const performanceMap: { [questionId: string]: { correct: number; wrong: number } } = {};

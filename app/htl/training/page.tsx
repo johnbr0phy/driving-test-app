@@ -10,18 +10,21 @@ import { ArrowLeft } from "lucide-react";
 import Image from "next/image";
 import { ShareButton } from "@/components/ShareButton";
 import { useStore } from "@/store/useStore";
-import { getNextHTLTrainingSetQuestion, getHTLTrainingQuestion } from "@/lib/htlTestGenerator";
-import { HTL_ID_BASE, HTL_TRAINING_SET_COUNT, getHTLTrainingSetDef } from "@/lib/htlConfig";
 import { shuffleQuestionOptions } from "@/lib/testGenerator";
+import { getHTLTrainingQuestion, getNextHTLTrainingSetQuestion } from "@/lib/htlTestGenerator";
+import { HTL_ID_BASE, HTL_STATE_CODE, HTL_TRAINING_SET_COUNT, getHTLTrainingSetDef } from "@/lib/htlConfig";
+import { HTL_ROUTES } from "@/lib/examRoutes";
 import { Question } from "@/types";
 import { useHydration } from "@/hooks/useHydration";
 import { useSound } from "@/hooks/useSound";
 import { Fireworks } from "@/components/Fireworks";
+import { TestPageHeader } from "@/components/TestPageHeader";
 import Link from "next/link";
 import { useTranslation } from "@/contexts/LanguageContext";
-import { TestPageHeader } from "@/components/TestPageHeader";
 
-
+// HTL training — the DMV training page (set mode with mastery + wrong-answer
+// queue, free-practice mode, set-complete share card) on HTL's five
+// content-area sets. No state selection, no premium gate.
 function HTLTrainingPageContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -30,6 +33,7 @@ function HTLTrainingPageContent() {
   const { t } = useTranslation();
 
   const isGuest = useStore((state) => state.isGuest);
+
   const training = useStore((state) => state.training);
   const trainingSets = useStore((state) => state.trainingSets);
   const answerTrainingQuestion = useStore((state) => state.answerTrainingQuestion);
@@ -37,14 +41,15 @@ function HTLTrainingPageContent() {
   const getTrainingSetProgress = useStore((state) => state.getTrainingSetProgress);
   const resetMasteredQuestions = useStore((state) => state.resetMasteredQuestions);
   const resetTrainingSet = useStore((state) => state.resetTrainingSet);
+  const isOnboardingComplete = useStore((state) => state.isOnboardingComplete);
 
-  // Get set number from URL if present (1-5 for HTL, one per content area)
+  // Get set number from URL if present (1-5, one per ASCP content area)
   const setParam = searchParams.get('set');
   const setNumber = setParam ? parseInt(setParam) : null;
-  // HTL has no onboarding gate: sets are available immediately.
-  const isOnboardingComplete = true;
   const isSetMode = setNumber !== null && setNumber >= 1 && setNumber <= HTL_TRAINING_SET_COUNT;
   const setDef = isSetMode && setNumber ? getHTLTrainingSetDef(setNumber) : undefined;
+  // Store IDs are namespaced: set N lives at HTL_ID_BASE + N
+  const setId = isSetMode && setNumber ? HTL_ID_BASE + setNumber : null;
 
   const [currentQuestion, setCurrentQuestion] = useState<Question | null>(null);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
@@ -58,12 +63,14 @@ function HTLTrainingPageContent() {
   const [showResetConfirm, setShowResetConfirm] = useState(false);
   const [prevCorrectCount, setPrevCorrectCount] = useState(training.totalCorrectAllTime);
 
-  // Get current set progress (HTL set IDs are HTL_ID_BASE + setNumber)
-  const htlSetId = setNumber ? HTL_ID_BASE + setNumber : null;
-  const setProgress = isSetMode && htlSetId ? getTrainingSetProgress(htlSetId) : null;
-  const setData = isSetMode && htlSetId ? (trainingSets[htlSetId] || { masteredIds: [], wrongQueue: [] }) : null;
+  // Get current set progress
+  const setProgress = isSetMode && setId ? getTrainingSetProgress(setId) : null;
+  const setData = isSetMode && setId ? (trainingSets[setId] || { masteredIds: [], wrongQueue: [] }) : null;
   const setMasteredIds = setData?.masteredIds || [];
   const setWrongQueue = setData?.wrongQueue || [];
+
+  // Nothing on HTL is locked.
+  const accessLocked = false;
 
   // Detect when user unlocks practice tests (crosses 10 correct answers) - onboarding only
   useEffect(() => {
@@ -85,21 +92,21 @@ function HTLTrainingPageContent() {
 
   // Load first question on mount
   useEffect(() => {
-    if (hydrated && !currentQuestion) {
+    if (hydrated && !currentQuestion && !accessLocked) {
       loadNextQuestion();
     }
-  }, [hydrated, currentQuestion]);
+  }, [hydrated, currentQuestion, accessLocked]);
 
   const loadNextQuestion = () => {
     let question: Question | null = null;
 
-    if (isSetMode && setNumber) {
+    if (isSetMode && setNumber && setId) {
       // Set-based training: get next unmastered question from the set
       // Wrong questions are pushed to the back via wrongQueue
       // IMPORTANT: Get fresh state from store to ensure we have the latest wrongQueue
       // (the captured trainingSets variable may be stale after answering a question)
       const freshTrainingSets = useStore.getState().trainingSets;
-      const currentSetData = freshTrainingSets[HTL_ID_BASE + setNumber] || { masteredIds: [], wrongQueue: [] };
+      const currentSetData = freshTrainingSets[setId] || { masteredIds: [], wrongQueue: [] };
       question = getNextHTLTrainingSetQuestion(
         setNumber,
         currentSetData.masteredIds,
@@ -117,7 +124,7 @@ function HTLTrainingPageContent() {
       // If this question was previously answered wrong, shuffle the options
       // so users can't just memorize the slot position
       // Note: Use freshTrainingSets here too for consistency
-      const freshWrongQueue = freshTrainingSets[HTL_ID_BASE + setNumber]?.wrongQueue || [];
+      const freshWrongQueue = freshTrainingSets[setId]?.wrongQueue || [];
       if (freshWrongQueue.includes(question.questionId)) {
         question = shuffleQuestionOptions(question);
       }
@@ -161,8 +168,8 @@ function HTLTrainingPageContent() {
     }
 
     // Track progress
-    if (isSetMode && htlSetId) {
-      answerTrainingSetQuestion(htlSetId, currentQuestion.questionId, isCorrect);
+    if (isSetMode && setId) {
+      answerTrainingSetQuestion(setId, currentQuestion.questionId, isCorrect);
     } else {
       answerTrainingQuestion(currentQuestion.questionId, isCorrect);
     }
@@ -173,8 +180,8 @@ function HTLTrainingPageContent() {
   };
 
   const handlePracticeAgain = () => {
-    if (setNumber && htlSetId) {
-      resetTrainingSet(htlSetId);
+    if (setId) {
+      resetTrainingSet(setId);
       setShowSetComplete(false);
       // Load the first question after reset
       setTimeout(() => loadNextQuestion(), 0);
@@ -207,15 +214,15 @@ function HTLTrainingPageContent() {
               {t("trainingPage.congratulations")}
             </h2>
             <p className="text-xl text-brand font-semibold mb-4">
-              You Unlocked HTL Training Sets!
+              {t("trainingPage.youUnlocked")}
             </p>
             <p className="text-gray-600 mb-6">
               {t("trainingPage.answeredTenCorrectly")}
             </p>
             <div className="flex flex-col gap-3">
-              <Link href="/htl/dashboard">
+              <Link href={HTL_ROUTES.dashboard}>
                 <Button className="w-full bg-black text-white hover:bg-gray-800 text-lg py-6">
-                  Choose HTL Training Set
+                  {t("trainingPage.chooseTrainingSet")}
                 </Button>
               </Link>
               <Button
@@ -233,18 +240,18 @@ function HTLTrainingPageContent() {
       {/* Set Complete - Full-bleed Score Card */}
       {showSetComplete && isSetMode && (
         <div className="fixed inset-0 z-50 overflow-y-auto animate-in fade-in duration-300">
-          <div className="min-h-screen bg-gradient-to-b from-gray-950 to-brand-darker">
+          <div className="min-h-screen bg-gradient-to-b from-gray-950 to-green-950">
             {/* Back button */}
-            <div className="max-w-6xl mx-auto px-4 pt-4">
-              <Link href="/htl/dashboard">
+            <div className="relative max-w-6xl mx-auto px-4 pt-4">
+              <Link href={HTL_ROUTES.dashboard}>
                 <Button variant="ghost" className="text-gray-400 hover:text-white hover:bg-white/10 -ml-2">
                   <ArrowLeft className="h-4 w-4 mr-2" />
-                  Back to HTL Dashboard
+                  {t("common.back")}
                 </Button>
               </Link>
             </div>
 
-            <div className="text-center px-6 pt-4 pb-10 max-w-lg mx-auto">
+            <div className="relative text-center px-6 pt-4 pb-10 max-w-lg mx-auto">
               {/* Branding header */}
               <div className="mb-6">
                 <div className="text-gray-300 text-lg font-bold tracking-widest">tigertest.io</div>
@@ -265,12 +272,12 @@ function HTLTrainingPageContent() {
               </div>
 
               {/* Tagline */}
-              <div className="text-base md:text-lg font-extrabold uppercase tracking-widest mb-4 text-brand-border">
+              <div className="text-base md:text-lg font-extrabold uppercase tracking-widest mb-4 text-green-300">
                 MASTERED MY HTL TRAINING
               </div>
 
               {/* Giant percentage */}
-              <div className="text-7xl md:text-8xl font-black mb-3 leading-none text-brand">
+              <div className="text-7xl md:text-8xl font-black mb-3 leading-none text-green-500">
                 100%
               </div>
 
@@ -280,13 +287,13 @@ function HTLTrainingPageContent() {
               </div>
 
               {/* MASTERED badge */}
-              <Badge className="text-lg px-6 py-2 mb-5 bg-brand hover:bg-brand-hover">
+              <Badge className="text-lg px-6 py-2 mb-5 bg-green-600 hover:bg-green-700">
                 MASTERED
               </Badge>
 
-              {/* HTL set name */}
+              {/* Exam + set name */}
               <div className="text-gray-400 text-base mb-2">
-                {setDef?.name ?? `HTL Training Set ${setNumber}`}
+                ASCP HTL · {setDef?.name ?? `Set ${setNumber}`}
               </div>
 
               {/* Branding footer */}
@@ -301,17 +308,21 @@ function HTLTrainingPageContent() {
                     percentage={100}
                     passed={true}
                     setId={setNumber}
-                    stateCode="HTL"
+                    stateCode={HTL_STATE_CODE}
                     className="flex-1 bg-white text-black hover:bg-gray-100 font-bold uppercase tracking-wide h-12 text-base"
                   />
                 )}
-                <Button
-                  className="flex-1 bg-transparent text-white hover:bg-white/10 border border-white/30 font-bold uppercase tracking-wide h-12 text-base"
-                  onClick={() => setShowResetConfirm(true)}
-                >
-                  {t("results.tryAgain")}
-                </Button>
+                {!isGuest && (
+                  <Link href={HTL_ROUTES.stats} className="flex-1">
+                    <Button
+                      className="w-full bg-transparent text-white hover:bg-white/10 border border-white/30 font-bold uppercase tracking-wide h-12 text-base"
+                    >
+                      {t("results.viewStats")}
+                    </Button>
+                  </Link>
+                )}
               </div>
+
 
               {/* Reset confirmation */}
               {showResetConfirm && (
@@ -337,38 +348,36 @@ function HTLTrainingPageContent() {
               )}
             </div>
 
-            {/* See Stats link */}
-            {!isGuest && (
-              <div className="text-center py-5">
-                <Link
-                  href="/htl/dashboard"
-                  className="text-gray-500 hover:text-gray-300 text-sm font-medium transition-colors"
-                >
-                  View HTL Dashboard →
-                </Link>
-              </div>
-            )}
+            {/* Try Again link */}
+            <div className="text-center py-5">
+              <button
+                onClick={() => setShowResetConfirm(true)}
+                className="text-gray-500 hover:text-gray-300 text-sm font-medium transition-colors"
+              >
+                {t("results.tryAgain")} →
+              </button>
+            </div>
           </div>
         </div>
       )}
 
       <TestPageHeader
-        backHref="/htl/dashboard"
+        backHref={HTL_ROUTES.dashboard}
         right={
           !isGuest ? (
             <Link
-              href="/htl/dashboard"
+              href={HTL_ROUTES.stats}
               className="text-sm font-medium text-brand hover:text-brand-dark transition-colors"
             >
-              View HTL Dashboard
+              {t("dashboard.viewStats")}
             </Link>
           ) : undefined
         }
       />
-      <div className="container mx-auto px-4 py-4 max-w-lg md:max-w-2xl lg:max-w-4xl">
+      <div className="relative container mx-auto px-4 py-4 max-w-lg md:max-w-2xl lg:max-w-4xl">
 
         {/* Question Card */}
-        {currentQuestion ? (
+        {accessLocked ? null : currentQuestion ? (
           <TrainingCard
             key={currentQuestion.questionId}
             question={currentQuestion}
@@ -380,8 +389,8 @@ function HTLTrainingPageContent() {
           <Card className="w-full">
             <CardContent className="p-8 text-center">
               <p className="text-gray-600 mb-4">{t("trainingPage.noMoreQuestions")}</p>
-              <Button className="bg-black text-white hover:bg-gray-800" onClick={() => router.push("/htl/dashboard")}>
-                Back to HTL Dashboard
+              <Button className="bg-black text-white hover:bg-gray-800" onClick={() => router.push(HTL_ROUTES.dashboard)}>
+                {t("common.back")}
               </Button>
             </CardContent>
           </Card>
@@ -389,7 +398,7 @@ function HTLTrainingPageContent() {
 
         {/* Progress */}
         <div className="mt-4 md:mt-6 text-center">
-          {isSetMode && setProgress ? (
+          {accessLocked ? null : isSetMode && setProgress ? (
             // Set-based progress
             <>
               <div className="flex items-center justify-center gap-1 text-sm md:text-lg text-gray-700">
@@ -406,14 +415,14 @@ function HTLTrainingPageContent() {
                 />
               </div>
             </>
-          ) : !isOnboardingComplete ? (
+          ) : !isOnboardingComplete() ? (
             // Onboarding progress
             <>
               <div className="flex items-center justify-center gap-1 text-sm md:text-lg text-gray-700">
                 <span className="font-bold text-xl md:text-2xl text-brand">{training.totalCorrectAllTime}</span>
                 <span className="text-gray-500">/10</span>
                 <span className="text-gray-500 text-xs md:text-base ml-1">
-                  ({10 - training.totalCorrectAllTime} more to unlock HTL sets)
+                  ({10 - training.totalCorrectAllTime} {t("trainingPage.moreToUnlock")})
                 </span>
               </div>
               <div className="w-full bg-brand-border-light rounded-full h-2 mt-2 max-w-md mx-auto">
@@ -434,16 +443,15 @@ function HTLTrainingPageContent() {
           )}
         </div>
       </div>
+
     </div>
   );
 }
 
 export default function HTLTrainingPage() {
   return (
-    
-      <Suspense fallback={<div className="flex-1 bg-gradient-to-br from-brand-light to-brand-gradient-to" />}>
-        <HTLTrainingPageContent />
-      </Suspense>
-    
+    <Suspense fallback={<div className="flex-1 bg-gradient-to-br from-brand-light to-brand-gradient-to" />}>
+      <HTLTrainingPageContent />
+    </Suspense>
   );
 }

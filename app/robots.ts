@@ -28,6 +28,7 @@ export default function robots(): MetadataRoute.Robots {
           "/htl/stats",
           "/htl/test",
           "/htl/training",
+          "/htl/drill",
         ],
       },
       // Explicitly allow major AI crawlers

@@ -59,16 +59,20 @@ App Router pages in `/app/`. Key routes:
 
 Guest mode allows using the app without an account; guest data converts on signup.
 
-### Additional Exams (CDL, HTL)
+### Additional Exams (CDL, HTL, CST, CRCST)
 
 Non-DMV exams reuse the DMV components and store, namespaced by ID range and a
 pseudo state code so progress never collides with DMV data:
 - **CDL** (`/cdl/*`, landing `/cdl-practice-test`): `data/cdl-questions.json`, `lib/cdlTestGenerator.ts`, test/set IDs 101-112, state `CDL`.
-- **HTL** (ASCP Histotechnologist, `/htl/*`, landing `/htl`): `data/htl-questions.json` (200 questions), `lib/htlConfig.ts` + `lib/htlTestGenerator.ts`, test IDs 201-204, training set IDs 201-205 (one per ASCP content area), state `HTL`. Practice tests are blueprint-weighted per the ASCP BOC content guideline (rev. Sept 2025): 18 staining, 10 fixation, 10 embedding/microtomy, 7 processing, 5 lab operations per 50-question test.
+- **Certification exams** (HTL, CST, CRCST) are driven by the registry in `lib/exams.ts` (`ExamConfig`: state code, ID base, slug, blueprint, training sets, category labels, dashboard copy). Banks live in `lib/examData.ts`; `lib/examTestGenerator.ts` builds blueprint-weighted deterministic tests (test N takes slice N of each category pool, sorted by question ID) and training sets (one or more categories per set). Pages under `app/<slug>/` are thin wrappers around `components/exam/*` (dashboard, test, results, training, drill, stats) plus a static SEO landing at `app/<slug>/page.tsx`.
+  - **HTL** (ASCP Histotechnologist, `/htl`): `data/htl-questions.json`, test IDs 201-204, sets 201-205, state `HTL`. 18 staining, 10 fixation, 10 embedding/microtomy, 7 processing, 5 lab operations per test (ASCP BOC guideline rev. Sept 2025).
+  - **CST** (NBSTSA Surgical Technologist, `/cst`): `data/cst-questions.json`, test IDs 301-304, sets 301-305, state `CST`. 6 preop, 23 intraop, 3 postop, 2 admin, 5 equipment sterilization, 6 A&P, 2 micro, 3 pharm per test (NBSTSA 2023 outline scaled from 150 items).
+  - **CRCST** (HSPA Sterile Processing, `/crcst`, also covers CBSPD CSPDT): `data/crcst-questions.json`, test IDs 401-404, sets 401-406, state `CRCST`. 7 departmental, 11 decontamination, 10 prep/packaging, 11 sterilization, 5 storage/inventory, 2 patient equipment, 4 professional per test (HSPA outline rev. Nov 2023).
+  To add an exam: add an `ExamConfig` to `lib/exams.ts`, a bank to `lib/examData.ts`, a `[data-theme]` block in `app/globals.css`, the category keys to `types/index.ts` and `i18n/*.ts`, and the `app/<slug>/` wrappers and landing.
 
-The HTL pages are the DMV flow, not the CDL one: `lib/examRoutes.ts` (`DMV_ROUTES` / `HTL_ROUTES`) parameterises the shared pieces (`hooks/useTestResults.ts`, `components/results/*`, `components/MissDrill.tsx`, `components/dashboard/ProgressCard.tsx`, `lib/missedQuestions.ts`, `components/AttemptChart.tsx`) by route base, test IDs, pass line, and premium gating. Defaults reproduce DMV behaviour exactly; when changing the DMV results/drill/dashboard flow, keep both exams working.
+These pages are the DMV flow, not the CDL one: `lib/examRoutes.ts` (`DMV_ROUTES` / `getExamRoutes(id)`) parameterises the shared pieces (`hooks/useTestResults.ts`, `components/results/*`, `components/MissDrill.tsx`, `components/dashboard/ProgressCard.tsx`, `lib/missedQuestions.ts`, `components/AttemptChart.tsx`) by route base, test IDs, pass line, and premium gating. Defaults reproduce DMV behaviour exactly; when changing the DMV results/drill/dashboard flow, keep every exam working.
 
-Theme colors come from `[data-theme="cdl"|"htl"]` in `app/globals.css`; `contexts/TestThemeContext.tsx` and `components/HeaderSwitch.tsx` pick the header by path.
+Theme colors come from `[data-theme="cdl"|"htl"|"cst"|"crcst"]` in `app/globals.css`; `contexts/TestThemeContext.tsx` and `components/HeaderSwitch.tsx` pick the header by path.
 
 ### Mobile Apps
 

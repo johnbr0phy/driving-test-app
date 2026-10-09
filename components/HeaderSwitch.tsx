@@ -4,15 +4,16 @@ import { usePathname } from "next/navigation";
 import { Header } from "@/components/Header";
 import { CDLHeader } from "@/components/CDLHeader";
 import { TestThemeProvider } from "@/contexts/TestThemeContext";
+import { getExamByPath } from "@/lib/exams";
 
 export function HeaderSwitch() {
   const pathname = usePathname();
   const isCDL = pathname?.startsWith("/cdl") || pathname === "/cdl-practice-test";
-  const isHTL = pathname === "/htl" || pathname?.startsWith("/htl/");
+  const exam = getExamByPath(pathname);
 
-  if (isHTL) {
+  if (exam) {
     return (
-      <TestThemeProvider theme="htl">
+      <TestThemeProvider theme={exam.id}>
         <CDLHeader />
       </TestThemeProvider>
     );

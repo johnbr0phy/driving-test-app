@@ -12,6 +12,8 @@ import { useTranslation } from "@/contexts/LanguageContext";
 import Image from "next/image";
 import { Shield, BarChart3 } from "lucide-react";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import { TestSwitcher } from "@/components/TestSwitcher";
+import { EXAMS } from "@/lib/exams";
 
 export function Header() {
   const { user, logout } = useAuth();
@@ -38,8 +40,7 @@ export function Header() {
     pathname === "/training" ||
     pathname?.startsWith("/cdl/test") ||
     pathname === "/cdl/training" ||
-    pathname?.startsWith("/htl/test") ||
-    pathname === "/htl/training";
+    EXAMS.some((e) => pathname?.startsWith(`${e.slug}/test`) || pathname === `${e.slug}/training`);
 
   // Hide sign up prompt on onboarding pages (too early in flow)
   const isOnboarding = pathname?.startsWith("/onboarding");
@@ -62,6 +63,8 @@ export function Header() {
           </Link>
 
           <div className="flex items-center gap-2 sm:gap-4">
+            <TestSwitcher />
+
             {/* Language Toggle - shown only on the homepage; other pages render it in the footer */}
             {isHomepage && <LanguageSwitcher />}
 

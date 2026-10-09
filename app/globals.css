@@ -70,6 +70,34 @@
     --brand-gradient-to: 330 100% 96%;
   }
 
+  /* CST (surgical technology) theme: surgical teal */
+  [data-theme="cst"] {
+    --brand: 172 66% 36%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 170 70% 95%;
+    --brand-hover: 172 66% 30%;
+    --brand-dark: 172 66% 25%;
+    --brand-darker: 172 60% 16%;
+    --brand-muted: 172 45% 70%;
+    --brand-border: 172 45% 75%;
+    --brand-border-light: 172 40% 86%;
+    --brand-gradient-to: 190 80% 95%;
+  }
+
+  /* CRCST (sterile processing) theme: deep cyan */
+  [data-theme="crcst"] {
+    --brand: 195 85% 36%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 195 100% 95%;
+    --brand-hover: 195 85% 30%;
+    --brand-dark: 195 85% 25%;
+    --brand-darker: 195 70% 16%;
+    --brand-muted: 195 55% 70%;
+    --brand-border: 195 55% 75%;
+    --brand-border-light: 195 45% 86%;
+    --brand-gradient-to: 210 100% 95%;
+  }
+
   .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;

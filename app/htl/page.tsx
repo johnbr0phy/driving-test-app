@@ -5,7 +5,7 @@ import { Smartphone, Monitor } from "lucide-react";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free HTL Practice Test 2026 - ASCP Histotechnologist Exam Prep | TigerTest";
+const title = "Free HTL Practice Test 2026 - ASCP Histotechnologist Exam Prep";
 const description =
   "Free ASCP HTL and HT practice tests with 200 questions weighted to the official 2025 content guideline. Fixation, processing, embedding, microtomy, staining, and lab operations with instant feedback.";
 

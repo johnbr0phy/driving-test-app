@@ -5,14 +5,16 @@ import { doc, setDoc, getDoc, updateDoc } from 'firebase/firestore';
 import { db } from '@/lib/firebase';
 import { trackQuestionsAnswered } from '@/lib/analytics';
 import type { Language } from '@/i18n';
-import { HTL_ID_BASE, HTL_STATE_CODE, HTL_TEST_COUNT, HTL_TRAINING_SETS, getHTLTrainingSetSize, isHTLSetId } from '@/lib/htlConfig';
+import { getExamById, getExamByStateCode, getExamForTestId, getExamTrainingSetSize, isExamQuestionId } from '@/lib/exams';
 
 /**
  * Non-DMV exams share the store but are namespaced by ID range and stored
- * under a pseudo state code: CDL = 101-112, HTL = 201-205.
+ * under a pseudo state code: CDL = 101-112, registry exams (HTL, CST,
+ * CRCST) = their own 200s/300s/400s ranges (see lib/exams.ts).
  */
 const examStateForTestId = (testId: number, selectedState: string | null): string => {
-  if (testId > HTL_ID_BASE) return HTL_STATE_CODE;
+  const exam = getExamForTestId(testId);
+  if (exam) return exam.stateCode;
   if (testId >= 101) return 'CDL';
   return selectedState || 'CA';
 };
@@ -110,14 +112,15 @@ interface AppState {
     averageScore: number;
   };
   getCDLPassProbability: () => number;
-  getHTLProgress: () => {
+  // Registry exams (HTL, CST, CRCST): progress and pass probability by exam id
+  getExamProgress: (examId: string) => {
     testsCompleted: number;
     questionsAnswered: number;
     totalCorrect: number;
     accuracy: number;
     averageScore: number;
   };
-  getHTLPassProbability: () => number;
+  getExamPassProbability: (examId: string) => number;
   // stateCode overrides the selected DMV state (e.g. "HTL" for the HTL exam).
   getQuestionPerformance: (stateCode?: string) => QuestionPerformance[];
 
@@ -262,7 +265,7 @@ export const useStore = create<AppState>()(
         // histotech who later picks a DMV state must not lose their HTL
         // progress, and signing up (which sets a state) must not either.
         const { currentTests, completedTests, testAttempts, trainingSets, trainingAnswerHistory } = get();
-        const isExamState = (code: string) => code === 'CDL' || code === HTL_STATE_CODE;
+        const isExamState = (code: string) => code === 'CDL' || !!getExamByStateCode(code);
         const isExamId = (id: number) => id >= 101;
         const keptCurrentTests = Object.fromEntries(
           Object.entries(currentTests).filter(([id]) => isExamId(Number(id)))
@@ -290,7 +293,7 @@ export const useStore = create<AppState>()(
           },
           trainingSets: keptTrainingSets,
           trainingAnswerHistory: trainingAnswerHistory.filter(
-            (h) => h.questionId.startsWith('CDL-') || h.questionId.startsWith(`${HTL_STATE_CODE}-`)
+            (h) => h.questionId.startsWith('CDL-') || isExamQuestionId(h.questionId)
           ),
         });
         // Save to Firestore
@@ -547,8 +550,8 @@ export const useStore = create<AppState>()(
         const { trainingSets, training } = get();
         const setData = trainingSets[setId] || { masteredIds: [] };
         let correct = setData.masteredIds.length;
-        // HTL sets are one content area each, so their sizes vary.
-        const total = isHTLSetId(setId) ? getHTLTrainingSetSize(setId) : 50;
+        // Registry exam sets are one content area each, so their sizes vary.
+        const total = getExamTrainingSetSize(setId);
 
         // For set 1, include onboarding progress if no set-specific progress yet
         if (setId === 1 && correct === 0 && training.totalCorrectAllTime > 0) {
@@ -717,21 +720,22 @@ export const useStore = create<AppState>()(
         return Math.round(totalPassProbability);
       },
 
-      getHTLProgress: () => {
+      getExamProgress: (examId: string) => {
+        const exam = getExamById(examId);
         const { completedTests, testAttempts } = get();
-        const htlTests = completedTests.filter((t) => t.state === HTL_STATE_CODE);
-        const htlAttempts = testAttempts.filter((a) => a.state === HTL_STATE_CODE);
+        const examTests = exam ? completedTests.filter((t) => t.state === exam.stateCode) : [];
+        const examAttempts = exam ? testAttempts.filter((a) => a.state === exam.stateCode) : [];
 
-        const testsCompleted = htlAttempts.length;
+        const testsCompleted = examAttempts.length;
         if (testsCompleted === 0) {
           return { testsCompleted: 0, questionsAnswered: 0, totalCorrect: 0, accuracy: 0, averageScore: 0 };
         }
 
-        const totalCorrect = htlTests.reduce((sum, test) => sum + (test.score || 0), 0);
-        const questionsAnswered = htlTests.reduce((sum, test) => sum + test.totalQuestions, 0);
+        const totalCorrect = examTests.reduce((sum, test) => sum + (test.score || 0), 0);
+        const questionsAnswered = examTests.reduce((sum, test) => sum + test.totalQuestions, 0);
         const accuracy = questionsAnswered > 0 ? (totalCorrect / questionsAnswered) * 100 : 0;
         const averageBestScore =
-          htlAttempts.reduce((sum, a) => sum + a.bestScore, 0) / htlAttempts.length;
+          examAttempts.reduce((sum, a) => sum + a.bestScore, 0) / examAttempts.length;
 
         return {
           testsCompleted,
@@ -742,16 +746,18 @@ export const useStore = create<AppState>()(
         };
       },
 
-      getHTLPassProbability: () => {
+      getExamPassProbability: (examId: string) => {
+        const exam = getExamById(examId);
+        if (!exam) return 0;
         const { testAttempts, trainingSets } = get();
-        const htlAttempts = testAttempts.filter((a) => a.state === HTL_STATE_CODE);
+        const examAttempts = testAttempts.filter((a) => a.state === exam.stateCode);
 
-        // 5 content-area training sets + 4 practice tests, equally weighted
-        const componentCount = HTL_TRAINING_SETS.length + HTL_TEST_COUNT;
+        // Content-area training sets + practice tests, equally weighted
+        const componentCount = exam.trainingSets.length + exam.testCount;
         const WEIGHT_PER_COMPONENT = 100 / componentCount;
         let totalPassProbability = 0;
 
-        for (const setDef of HTL_TRAINING_SETS) {
+        for (const setDef of exam.trainingSets) {
           const masteredCount = trainingSets[setDef.id]?.masteredIds?.length || 0;
           if (masteredCount > 0) {
             const setScore = (Math.min(masteredCount, setDef.size) / setDef.size) * 100;
@@ -759,10 +765,10 @@ export const useStore = create<AppState>()(
           }
         }
 
-        for (let testNum = 1; testNum <= HTL_TEST_COUNT; testNum++) {
-          const attempt = htlAttempts.find((a) => a.testNumber === HTL_ID_BASE + testNum);
+        for (let testNum = 1; testNum <= exam.testCount; testNum++) {
+          const attempt = examAttempts.find((a) => a.testNumber === exam.idBase + testNum);
           if (attempt) {
-            const testScore = (attempt.bestScore / 50) * 100;
+            const testScore = (attempt.bestScore / exam.questionsPerTest) * 100;
             totalPassProbability += testScore * (WEIGHT_PER_COMPONENT / 100);
           }
         }
@@ -793,8 +799,13 @@ export const useStore = create<AppState>()(
           }
         }
 
-        // Include training mode answers
-        for (const answer of trainingAnswerHistory) {
+        // Include training mode answers. Registry exams (HTL, CST, CRCST) only
+        // see their own question IDs, and DMV never sees theirs.
+        const exam = getExamByStateCode(stateFilter);
+        const history = trainingAnswerHistory.filter((a) =>
+          exam ? a.questionId.startsWith(exam.questionIdPrefix) : !isExamQuestionId(a.questionId)
+        );
+        for (const answer of history) {
           if (!performanceMap[answer.questionId]) {
             performanceMap[answer.questionId] = { correct: 0, wrong: 0 };
           }

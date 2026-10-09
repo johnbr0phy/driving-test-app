@@ -332,6 +332,12 @@ export const ko: TranslationKeys = {
     ptcbPatientSafety: "Patient Safety & Quality Assurance",
     ptcbOrderEntry: "Order Entry & Processing",
     ptcbFederal: "Federal Requirements",
+    // Phlebotomy (NHA CPT) domains
+    routineCollections: "Routine Blood Collections",
+    safetyCompliance: "Safety & Compliance",
+    patientPreparation: "Patient Preparation",
+    specimenProcessing: "Processing",
+    specialCollections: "Special Collections",
   } as Record<string, string>,
 
   // Training set names

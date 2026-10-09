@@ -168,6 +168,20 @@
     --brand-gradient-to: 320 70% 95%;
   }
 
+  /* Phlebotomy theme: forest green */
+  [data-theme="phleb"] {
+    --brand: 120 40% 36%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 120 55% 95%;
+    --brand-hover: 120 40% 30%;
+    --brand-dark: 120 40% 24%;
+    --brand-darker: 120 35% 14%;
+    --brand-muted: 120 30% 70%;
+    --brand-border: 120 30% 76%;
+    --brand-border-light: 120 30% 87%;
+    --brand-gradient-to: 80 60% 94%;
+  }
+
   /* Motorcycle permit theme: deep red */
   [data-theme="moto"] {
     --brand: 355 72% 44%;

@@ -13,7 +13,7 @@
  * This file must stay free of question-data imports (the store imports it).
  */
 
-export type ExamId = "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "htl" | "cst" | "crcst";
+export type ExamId = "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "htl" | "cst" | "crcst";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (?set=N). */
@@ -53,7 +53,7 @@ export interface ExamConfig {
   /** Question ID prefix, e.g. "HTL-". */
   questionIdPrefix: string;
   /** Header icon key (see CDLHeader). */
-  icon: "truck" | "bike" | "flag" | "plane" | "radio" | "thermometer" | "heart" | "pill" | "microscope" | "scissors" | "shield";
+  icon: "truck" | "bike" | "flag" | "plane" | "radio" | "thermometer" | "heart" | "pill" | "syringe" | "microscope" | "scissors" | "shield";
   testCount: number;
   questionsPerTest: number;
   passPct: number;
@@ -611,6 +611,62 @@ const ptcb: ExamConfig = {
   },
 };
 
+const phleb: ExamConfig = {
+  id: "phleb",
+  stateCode: "PHLEB",
+  idBase: 1300,
+  slug: "/phlebotomy",
+  landingPath: "/phlebotomy-practice-test",
+  name: "Phlebotomy Practice Test",
+  shortName: "Phlebotomy",
+  examLabel: "Phlebotomy Exam",
+  fullName: "phlebotomy technician certification exam (NHA CPT)",
+  questionIdPrefix: "PHL-",
+  icon: "syringe",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // NHA CPT test plan (2025 plan, exam from January 2026): Routine Blood
+  // Collections 28%, Safety and Compliance 26%, Patient Preparation 20%,
+  // Processing 14%, Special Collections 12%. Real exam: 120 items (100 scored),
+  // scaled pass 390 of 500. Also covers ASCP PBT and AMT RPT material.
+  blueprint: {
+    routineCollections: 14,
+    safetyCompliance: 13,
+    patientPreparation: 10,
+    specimenProcessing: 7,
+    specialCollections: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 1301, name: "Routine Blood Collections", categories: ["routineCollections"], size: 56, weightLabel: "28% of the exam" },
+    { setNumber: 2, id: 1302, name: "Safety & Compliance", categories: ["safetyCompliance"], size: 52, weightLabel: "26% of the exam" },
+    { setNumber: 3, id: 1303, name: "Patient Preparation", categories: ["patientPreparation"], size: 40, weightLabel: "20% of the exam" },
+    { setNumber: 4, id: 1304, name: "Processing & Special Collections", categories: ["specimenProcessing", "specialCollections"], size: 52, weightLabel: "26% of the exam" },
+  ],
+  categoryLabels: {
+    routineCollections: "Routine Blood Collections",
+    safetyCompliance: "Safety & Compliance",
+    patientPreparation: "Patient Preparation",
+    specimenProcessing: "Processing",
+    specialCollections: "Special Collections",
+  },
+  copy: {
+    guestPrompt: "to save your phlebotomy exam progress and track every question you miss",
+    trainingHeading: "Train by domain",
+    trainingSub: "Four sets following the NHA CPT test plan. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real exam",
+    heroSubs: [
+      "Five domains, four full tests. Routine collections and safety are more than half the exam.",
+      "Mastery first, then test. The sets follow the NHA CPT test plan.",
+      "Halfway through the outline. The practice tests will show where you stand.",
+      "Fix the misses, then retake. Aim for 70% or better on every test before exam day.",
+      "Full prep done. Schedule your CPT, PBT or RPT exam.",
+    ],
+    sourceLine: "Weighted to the NHA CPT test plan. Order of draw and technique follow CLSI GP41 and GP42.",
+    analyticsKey: "phleb",
+  },
+};
+
 const htl: ExamConfig = {
   id: "htl",
   stateCode: "HTL",
@@ -781,7 +837,7 @@ const crcst: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, htl, cst, crcst];
 
 export const examSetBase = (exam: ExamConfig) => exam.setIdBase ?? exam.idBase;
 /** Store ID of training set N of an exam. */

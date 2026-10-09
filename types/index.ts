@@ -1,5 +1,5 @@
 // Question types
-export type QuestionType = "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HAM" | "EPA608" | "CNA" | "PTCB" | "HTL" | "CST" | "CRCST";
+export type QuestionType = "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HAM" | "EPA608" | "CNA" | "PTCB" | "PHLEB" | "HTL" | "CST" | "CRCST";
 
 // Test mode
 export type TestMode = "dmv" | "cdl" | "htl";
@@ -120,7 +120,13 @@ export type QuestionCategory =
   | "ptcbMedications"
   | "ptcbPatientSafety"
   | "ptcbOrderEntry"
-  | "ptcbFederal";
+  | "ptcbFederal"
+  // Phlebotomy (NHA CPT) domains
+  | "routineCollections"
+  | "safetyCompliance"
+  | "patientPreparation"
+  | "specimenProcessing"
+  | "specialCollections";
 
 export interface Question {
   type: QuestionType;

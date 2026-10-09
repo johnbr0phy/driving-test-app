@@ -13,12 +13,16 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
-import { Loader2, User, AlertTriangle, MapPin } from "lucide-react";
+import Link from "next/link";
+import { Loader2, User, AlertTriangle, MapPin, LayoutGrid, ChevronRight } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { useStore } from "@/store/useStore";
 import { useHydration } from "@/hooks/useHydration";
 import { states } from "@/data/states";
+import { TEST_CATALOG } from "@/lib/testCatalog";
+import { getExamById } from "@/lib/exams";
+import { TestIcon } from "@/components/TestIcon";
 
 export default function SettingsPage() {
   const router = useRouter();
@@ -30,7 +34,9 @@ export default function SettingsPage() {
   const resetAllData = useStore((state) => state.resetAllData);
   const selectedState = useStore((state) => state.selectedState);
   const setSelectedState = useStore((state) => state.setSelectedState);
-  const getCurrentTest = useStore((state) => state.getCurrentTest);
+  const completedTests = useStore((state) => state.completedTests);
+  const currentTests = useStore((state) => state.currentTests);
+  const trainingSets = useStore((state) => state.trainingSets);
 
   const [loadingGooglePhoto, setLoadingGooglePhoto] = useState(false);
   const [stateChangeDialog, setStateChangeDialog] = useState(false);
@@ -76,7 +82,27 @@ export default function SettingsPage() {
   const confirmReset = () => {
     resetAllData();
     setResetDialog(false);
-    router.push("/dashboard");
+    // Exam-only users have no DMV state; /dashboard would bounce them into
+    // the state picker, so send them to the test hub instead.
+    router.push(selectedState ? "/dashboard" : "/tests");
+  };
+
+  // Which tests this account has touched. Each test keeps its own ID range
+  // and pseudo state code in the store (see CLAUDE.md, Additional Exams).
+  const idsInRange = (lo: number, hi: number) =>
+    [...Object.keys(trainingSets), ...Object.keys(currentTests)].some((k) => {
+      const n = Number(k);
+      return n >= lo && n <= hi;
+    });
+  const hasStarted = (testId: string): boolean => {
+    if (testId === "dmv") return !!selectedState;
+    if (testId === "cdl") return completedTests.some((t) => t.state === "CDL") || idsInRange(101, 112);
+    const exam = getExamById(testId);
+    if (!exam) return false;
+    return (
+      completedTests.some((t) => t.state === exam.stateCode) ||
+      idsInRange(exam.idBase + 1, exam.idBase + Math.max(exam.testCount, exam.trainingSets.length))
+    );
   };
 
   const handleStateChange = (newStateCode: string) => {
@@ -105,6 +131,44 @@ export default function SettingsPage() {
       <div className="relative">
         <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-light to-white pointer-events-none" />
         <div className="relative container mx-auto px-4 py-8 max-w-6xl">
+        {/* Every practice test on the site, with the ones this account has started */}
+        <Card className="bg-gray-50 mb-6">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <LayoutGrid className="h-5 w-5" />
+              {t("settings.yourTests")}
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul className="divide-y divide-gray-200 rounded-lg border border-gray-200 bg-white">
+              {TEST_CATALOG.map((test) => {
+                const started = hasStarted(test.id);
+                const href = test.id === "dmv" && !selectedState ? "/onboarding/select-state" : test.dashboardHref;
+                const status =
+                  test.id === "dmv" && selectedState
+                    ? currentStateName
+                    : started
+                      ? t("settings.inProgress")
+                      : t("settings.notStarted");
+                return (
+                  <li key={test.id} data-theme={test.theme}>
+                    <Link href={href} className="flex items-center gap-3 px-4 py-3 hover:bg-gray-50 transition-colors">
+                      <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-brand text-white flex-shrink-0">
+                        <TestIcon icon={test.icon} className="h-5 w-5" />
+                      </span>
+                      <span className="flex-1 min-w-0">
+                        <span className="block font-medium text-gray-900">{test.name}</span>
+                        <span className={`block text-sm ${started ? "text-brand font-medium" : "text-gray-500"}`}>{status}</span>
+                      </span>
+                      <ChevronRight className="h-5 w-5 text-gray-400 flex-shrink-0" />
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </CardContent>
+        </Card>
+
         {/* State Selection and Profile Photo Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
           {/* State Selection Card */}
@@ -116,34 +180,45 @@ export default function SettingsPage() {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="space-y-4">
-                <div>
-                  <div className="text-sm text-gray-600 mb-2">{t("settings.currentlyPracticingFor")}</div>
-                  <div className="text-2xl font-bold text-brand mb-4">
-                    {currentStateName}
+              {selectedState ? (
+                <div className="space-y-4">
+                  <div>
+                    <div className="text-sm text-gray-600 mb-2">{t("settings.currentlyPracticingFor")}</div>
+                    <div className="text-2xl font-bold text-brand mb-4">
+                      {currentStateName}
+                    </div>
+                  </div>
+
+                  <div>
+                    <label className="text-sm font-medium text-gray-700 mb-2 block">
+                      {t("settings.changeState")}
+                    </label>
+                    <select
+                      value={selectedState}
+                      onChange={(e) => handleStateChange(e.target.value)}
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    >
+                      {states.map((state) => (
+                        <option key={state.code} value={state.code}>
+                          {state.name} ({state.code})
+                        </option>
+                      ))}
+                    </select>
+                    <p className="text-xs text-gray-500 mt-2">
+                      <strong className="text-brand">Warning:</strong> {t("settings.switchStateWarning")}
+                    </p>
                   </div>
                 </div>
-
-                <div>
-                  <label className="text-sm font-medium text-gray-700 mb-2 block">
-                    {t("settings.changeState")}
-                  </label>
-                  <select
-                    value={selectedState || ""}
-                    onChange={(e) => handleStateChange(e.target.value)}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  >
-                    {states.map((state) => (
-                      <option key={state.code} value={state.code}>
-                        {state.name} ({state.code})
-                      </option>
-                    ))}
-                  </select>
-                  <p className="text-xs text-gray-500 mt-2">
-                    <strong className="text-brand">Warning:</strong> {t("settings.switchStateWarning")}
-                  </p>
+              ) : (
+                <div className="space-y-4">
+                  <p className="text-sm text-gray-600">{t("settings.noStateSelected")}</p>
+                  <Link href="/onboarding/select-state">
+                    <Button className="w-full bg-brand hover:bg-brand-hover text-white">
+                      {t("settings.chooseState")}
+                    </Button>
+                  </Link>
                 </div>
-              </div>
+              )}
             </CardContent>
           </Card>
 

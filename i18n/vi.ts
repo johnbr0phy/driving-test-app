@@ -519,6 +519,11 @@ export const vi: TranslationKeys = {
   // Settings page
   settings: {
     settings: "Cài đặt",
+    yourTests: "Bài thi thử của bạn",
+    inProgress: "Đang thực hiện",
+    notStarted: "Chưa bắt đầu",
+    noStateSelected: "Bạn chưa chọn tiểu bang DMV. Hãy chọn một tiểu bang để bắt đầu thi thử.",
+    chooseState: "Chọn tiểu bang",
     stateSelection: "Chọn tiểu bang",
     currentlyPracticingFor: "Đang luyện tập cho:",
     changeState: "Đổi tiểu bang",
@@ -550,7 +555,7 @@ export const vi: TranslationKeys = {
     allTestProgress: "Toàn bộ tiến độ và điểm số bài thi",
     allTrainingStats: "Toàn bộ thống kê chế độ luyện tập",
     allAttemptHistory: "Toàn bộ lịch sử các lần thử",
-    dataForEveryState: "Dữ liệu của mọi tiểu bang bạn đã luyện tập",
+    dataForEveryState: "Dữ liệu của mọi tiểu bang và kỳ thi bạn đã luyện tập",
     cannotBeUndone: "Hành động này không thể hoàn tác.",
     yesResetEverything: "Có, đặt lại tất cả",
   },

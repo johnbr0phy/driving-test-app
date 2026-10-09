@@ -295,6 +295,12 @@ export const ko: TranslationKeys = {
     combinationVehicles: "Combination Vehicles",
     tankVehicles: "Tank Vehicles",
     passengerTransport: "Passenger Transport",
+    // FAA Part 107 ACS areas
+    regulations: "Regulations",
+    airspace: "Airspace & Charts",
+    weather: "Weather",
+    loadingPerformance: "Loading & Performance",
+    operations: "Operations",
   } as Record<string, string>,
 
   // Training set names

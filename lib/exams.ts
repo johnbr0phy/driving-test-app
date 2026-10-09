@@ -13,7 +13,7 @@
  * This file must stay free of question-data imports (the store imports it).
  */
 
-export type ExamId = "cdl" | "cdlx" | "moto" | "civics" | "htl" | "cst" | "crcst";
+export type ExamId = "cdl" | "cdlx" | "moto" | "civics" | "part107" | "htl" | "cst" | "crcst";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (?set=N). */
@@ -53,7 +53,7 @@ export interface ExamConfig {
   /** Question ID prefix, e.g. "HTL-". */
   questionIdPrefix: string;
   /** Header icon key (see CDLHeader). */
-  icon: "truck" | "bike" | "flag" | "microscope" | "scissors" | "shield";
+  icon: "truck" | "bike" | "flag" | "plane" | "microscope" | "scissors" | "shield";
   testCount: number;
   questionsPerTest: number;
   passPct: number;
@@ -322,6 +322,61 @@ const civics: ExamConfig = {
   },
 };
 
+const part107: ExamConfig = {
+  id: "part107",
+  stateCode: "P107",
+  idBase: 800,
+  slug: "/part-107",
+  landingPath: "/part-107-practice-test",
+  name: "Part 107 Practice Test",
+  shortName: "Part 107",
+  examLabel: "FAA Part 107",
+  fullName: "FAA Part 107 remote pilot knowledge test",
+  questionIdPrefix: "P107-",
+  icon: "plane",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // FAA UAG test: Regulations 15-25%, Airspace 15-25%, Weather 11-16%,
+  // Loading & Performance 7-11%, Operations 35-45%.
+  blueprint: {
+    regulations: 10,
+    airspace: 10,
+    weather: 7,
+    loadingPerformance: 5,
+    operations: 18,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 801, name: "Regulations", categories: ["regulations"], size: 40, weightLabel: "15-25% of the exam" },
+    { setNumber: 2, id: 802, name: "Airspace & Charts", categories: ["airspace"], size: 40, weightLabel: "15-25% of the exam" },
+    { setNumber: 3, id: 803, name: "Weather", categories: ["weather"], size: 28, weightLabel: "11-16% of the exam" },
+    { setNumber: 4, id: 804, name: "Loading & Performance", categories: ["loadingPerformance"], size: 20, weightLabel: "7-11% of the exam" },
+    { setNumber: 5, id: 805, name: "Operations", categories: ["operations"], size: 72, weightLabel: "35-45% of the exam" },
+  ],
+  categoryLabels: {
+    regulations: "Regulations",
+    airspace: "Airspace & Charts",
+    weather: "Weather",
+    loadingPerformance: "Loading & Performance",
+    operations: "Operations",
+  },
+  copy: {
+    guestPrompt: "to save your Part 107 progress and track every question you miss",
+    trainingHeading: "Train by ACS area",
+    trainingSub: "Five sets following the FAA Airman Certification Standards. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the UAG exam, 70% to pass",
+    heroSubs: [
+      "Five ACS areas, four full tests. Operations is more than a third of the exam.",
+      "Mastery first, then test. The sets follow the FAA ACS areas.",
+      "Halfway through the ACS. The practice tests will show where you stand.",
+      "Fix the misses, then retake. The real test wants 42 of 60.",
+      "Full prep done. Get your FTN on IACRA and book the UAG test at a PSI center.",
+    ],
+    sourceLine: "Weighted to the FAA Remote Pilot ACS. The real test adds sectional chart figures, so study a chart legend too.",
+    analyticsKey: "part107",
+  },
+};
+
 const htl: ExamConfig = {
   id: "htl",
   stateCode: "HTL",
@@ -492,7 +547,7 @@ const crcst: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, htl, cst, crcst];
 
 export const examSetBase = (exam: ExamConfig) => exam.setIdBase ?? exam.idBase;
 /** Store ID of training set N of an exam. */

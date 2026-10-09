@@ -219,7 +219,7 @@ export default function HTLLandingPage() {
             covered in more depth, tell us.
           </p>
           <a
-            href="https://www.johnbrophy.net/contact"
+            href="https://johnbrophy.net/#contact"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-brand text-white px-6 py-3 rounded-xl font-medium hover:bg-brand-hover transition-colors"

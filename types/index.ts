@@ -1,5 +1,5 @@
 // Question types
-export type QuestionType = "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HAM" | "EPA608" | "CNA" | "PTCB" | "PHLEB" | "CCMA" | "CET" | "DANB" | "EMT" | "FOODMGR" | "HTL" | "CST" | "CRCST";
+export type QuestionType = "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HAM" | "EPA608" | "CNA" | "PTCB" | "PHLEB" | "CCMA" | "CET" | "DANB" | "EMT" | "FOODMGR" | "REALESTATE" | "HTL" | "CST" | "CRCST";
 
 // Test mode
 export type TestMode = "dmv" | "cdl" | "htl";
@@ -164,7 +164,16 @@ export type QuestionCategory =
   | "personalHygiene"
   | "cleaningSanitizing"
   | "facilitiesPests"
-  | "managementSystems";
+  | "managementSystems"
+  // Real estate salesperson national exam
+  | "rePropertyCharacteristics"
+  | "reOwnershipTitle"
+  | "reValuation"
+  | "reContractsAgency"
+  | "rePractice"
+  | "reDisclosures"
+  | "reFinancing"
+  | "reMath";
 
 export interface Question {
   type: QuestionType;

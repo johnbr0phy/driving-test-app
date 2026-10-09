@@ -252,6 +252,20 @@
     --brand-gradient-to: 20 70% 95%;
   }
 
+  /* Real estate theme: slate blue */
+  [data-theme="realestate"] {
+    --brand: 200 45% 36%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 200 55% 95%;
+    --brand-hover: 200 45% 30%;
+    --brand-dark: 200 45% 24%;
+    --brand-darker: 200 35% 16%;
+    --brand-muted: 200 25% 72%;
+    --brand-border: 200 25% 78%;
+    --brand-border-light: 200 20% 88%;
+    --brand-gradient-to: 170 70% 95%;
+  }
+
   /* Motorcycle permit theme: deep red */
   [data-theme="moto"] {
     --brand: 355 72% 44%;

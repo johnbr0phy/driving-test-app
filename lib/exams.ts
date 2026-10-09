@@ -13,7 +13,7 @@
  * This file must stay free of question-data imports (the store imports it).
  */
 
-export type ExamId = "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "emt" | "foodmgr" | "htl" | "cst" | "crcst";
+export type ExamId = "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "emt" | "foodmgr" | "realestate" | "htl" | "cst" | "crcst";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (?set=N). */
@@ -53,7 +53,7 @@ export interface ExamConfig {
   /** Question ID prefix, e.g. "HTL-". */
   questionIdPrefix: string;
   /** Header icon key (see CDLHeader). */
-  icon: "truck" | "bike" | "flag" | "plane" | "radio" | "thermometer" | "heart" | "pill" | "syringe" | "stethoscope" | "activity" | "tooth" | "siren" | "utensils" | "microscope" | "scissors" | "shield";
+  icon: "truck" | "bike" | "flag" | "plane" | "radio" | "thermometer" | "heart" | "pill" | "syringe" | "stethoscope" | "activity" | "tooth" | "siren" | "utensils" | "house" | "microscope" | "scissors" | "shield";
   testCount: number;
   questionsPerTest: number;
   passPct: number;
@@ -964,6 +964,68 @@ const foodmgr: ExamConfig = {
   },
 };
 
+const realestate: ExamConfig = {
+  id: "realestate",
+  stateCode: "REALESTATE",
+  idBase: 1900,
+  slug: "/real-estate",
+  landingPath: "/real-estate-practice-test",
+  name: "Real Estate Practice Test",
+  shortName: "Real Estate",
+  examLabel: "Real Estate Exam",
+  fullName: "real estate salesperson national exam",
+  questionIdPrefix: "RE-",
+  icon: "house",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // Pearson VUE National/General Exam Content Outline for Salespersons
+  // (2025; 80 scored items; I 11, II 9, III 11, IV 16, V 10, VI 9, VII 7,
+  // VIII 7), which closely matches the PSI national outline. National
+  // portion only; state law is never tested.
+  blueprint: {
+    rePropertyCharacteristics: 7,
+    reOwnershipTitle: 6,
+    reValuation: 7,
+    reContractsAgency: 10,
+    rePractice: 6,
+    reDisclosures: 5,
+    reFinancing: 4,
+    reMath: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 1901, name: "Property, Ownership & Title", categories: ["rePropertyCharacteristics", "reOwnershipTitle"], size: 52, weightLabel: "25% of the exam" },
+    { setNumber: 2, id: 1902, name: "Contracts & Agency", categories: ["reContractsAgency"], size: 40, weightLabel: "20% of the exam" },
+    { setNumber: 3, id: 1903, name: "Practice, Disclosures & Financing", categories: ["rePractice", "reDisclosures", "reFinancing"], size: 60, weightLabel: "32% of the exam" },
+    { setNumber: 4, id: 1904, name: "Valuation & Real Estate Math", categories: ["reValuation", "reMath"], size: 48, weightLabel: "23% of the exam" },
+  ],
+  categoryLabels: {
+    rePropertyCharacteristics: "Property Characteristics, Descriptions & Use",
+    reOwnershipTitle: "Ownership, Transfer & Title",
+    reValuation: "Property Value & Appraisal",
+    reContractsAgency: "Contracts & Agency",
+    rePractice: "Real Estate Practice",
+    reDisclosures: "Disclosures & Environmental Issues",
+    reFinancing: "Financing & Settlement",
+    reMath: "Real Estate Math",
+  },
+  copy: {
+    guestPrompt: "to save your real estate exam progress and track every question you miss",
+    trainingHeading: "Train by content area",
+    trainingSub: "Four sets covering all eight national outline areas. Instant feedback, worked math, and missed questions come back until you master them.",
+    testsHeading: "Practice tests \u00b7 50 questions weighted like the national exam",
+    heroSubs: [
+      "Eight content areas, four full tests. Contracts and agency is a fifth of the exam.",
+      "Mastery first, then test. The sets follow the Pearson VUE and PSI national outlines.",
+      "Halfway through the outline. The practice tests will show where you stand.",
+      "Fix the misses, then retake. Most states pass the national portion at 70 to 75%.",
+      "Full prep done. Add your state's law portion and schedule your exam.",
+    ],
+    sourceLine: "Weighted to the Pearson VUE national salesperson outline (2025), which matches PSI's. Your state portion is separate.",
+    analyticsKey: "realestate",
+  },
+};
+
 const htl: ExamConfig = {
   id: "htl",
   stateCode: "HTL",
@@ -1134,7 +1196,7 @@ const crcst: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, cet, danb, emt, foodmgr, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, cet, danb, emt, foodmgr, realestate, htl, cst, crcst];
 
 export const examSetBase = (exam: ExamConfig) => exam.setIdBase ?? exam.idBase;
 /** Store ID of training set N of an exam. */

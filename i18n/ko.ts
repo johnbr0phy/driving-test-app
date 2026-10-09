@@ -376,6 +376,15 @@ export const ko: TranslationKeys = {
     cleaningSanitizing: "Cleaning & Sanitizing",
     facilitiesPests: "Facilities, Equipment & Pest Control",
     managementSystems: "Food Safety Management & Regulation",
+    // Real estate salesperson national exam
+    rePropertyCharacteristics: "Property Characteristics, Descriptions & Use",
+    reOwnershipTitle: "Ownership, Transfer & Title",
+    reValuation: "Property Value & Appraisal",
+    reContractsAgency: "Contracts & Agency",
+    rePractice: "Real Estate Practice",
+    reDisclosures: "Disclosures & Environmental Issues",
+    reFinancing: "Financing & Settlement",
+    reMath: "Real Estate Math",
   } as Record<string, string>,
 
   // Training set names

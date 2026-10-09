@@ -13,7 +13,7 @@
  * This file must stay free of question-data imports (the store imports it).
  */
 
-export type ExamId = "cdl" | "cdlx" | "moto" | "civics" | "part107" | "htl" | "cst" | "crcst";
+export type ExamId = "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "htl" | "cst" | "crcst";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (?set=N). */
@@ -53,7 +53,7 @@ export interface ExamConfig {
   /** Question ID prefix, e.g. "HTL-". */
   questionIdPrefix: string;
   /** Header icon key (see CDLHeader). */
-  icon: "truck" | "bike" | "flag" | "plane" | "microscope" | "scissors" | "shield";
+  icon: "truck" | "bike" | "flag" | "plane" | "radio" | "microscope" | "scissors" | "shield";
   testCount: number;
   questionsPerTest: number;
   passPct: number;
@@ -377,6 +377,72 @@ const part107: ExamConfig = {
   },
 };
 
+const ham: ExamConfig = {
+  id: "ham",
+  stateCode: "HAM",
+  idBase: 900,
+  slug: "/ham-radio",
+  landingPath: "/ham-radio-technician-practice-test",
+  name: "Ham Radio Technician Test",
+  shortName: "Ham Radio",
+  examLabel: "FCC Technician",
+  fullName: "FCC amateur radio Technician class exam",
+  questionIdPrefix: "HAM-",
+  icon: "radio",
+  testCount: 4,
+  questionsPerTest: 35,
+  passPct: 74,
+  // The real exam draws one question per group: 35 questions across the ten
+  // subelements, 26 to pass. The bank is the official 2026-2030 NCVEC pool.
+  blueprint: {
+    hamRules: 6,
+    hamOperating: 3,
+    hamPropagation: 3,
+    hamPractices: 2,
+    hamElectrical: 4,
+    hamComponents: 4,
+    hamCircuits: 4,
+    hamSignals: 4,
+    hamAntennas: 2,
+    hamSafety: 3,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 901, name: "FCC Rules (T1)", categories: ["hamRules"], size: 68, weightLabel: "6 of 35 exam questions" },
+    { setNumber: 2, id: 902, name: "Operating & Propagation (T2, T3)", categories: ["hamOperating", "hamPropagation"], size: 72, weightLabel: "6 of 35 exam questions" },
+    { setNumber: 3, id: 903, name: "Practices & Electrical Principles (T4, T5)", categories: ["hamPractices", "hamElectrical"], size: 73, weightLabel: "6 of 35 exam questions" },
+    { setNumber: 4, id: 904, name: "Components & Circuits (T6, T7)", categories: ["hamComponents", "hamCircuits"], size: 78, weightLabel: "8 of 35 exam questions" },
+    { setNumber: 5, id: 905, name: "Signals & Antennas (T8, T9)", categories: ["hamSignals", "hamAntennas"], size: 70, weightLabel: "6 of 35 exam questions" },
+    { setNumber: 6, id: 906, name: "Safety (T0)", categories: ["hamSafety"], size: 36, weightLabel: "3 of 35 exam questions" },
+  ],
+  categoryLabels: {
+    hamRules: "FCC Rules (T1)",
+    hamOperating: "Operating Procedures (T2)",
+    hamPropagation: "Radio Wave Propagation (T3)",
+    hamPractices: "Amateur Radio Practices (T4)",
+    hamElectrical: "Electrical Principles (T5)",
+    hamComponents: "Electronic Components (T6)",
+    hamCircuits: "Practical Circuits (T7)",
+    hamSignals: "Signals & Emissions (T8)",
+    hamAntennas: "Antennas & Feed Lines (T9)",
+    hamSafety: "Safety (T0)",
+  },
+  copy: {
+    guestPrompt: "to save your Technician exam progress and track every question you miss",
+    trainingHeading: "Train by subelement",
+    trainingSub: "Six sets covering the whole official 2026-2030 question pool. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice exams · 35 questions drawn like the real exam, 26 to pass",
+    heroSubs: [
+      "The whole official pool, four full exams. Every question you see here can appear on the real test.",
+      "Mastery first, then test. The sets follow the pool's ten subelements.",
+      "Halfway through the pool. The practice exams will show where you stand.",
+      "Fix the misses, then retake. The real exam wants 26 of 35.",
+      "Full prep done. Find a VE session near you and bring your FRN.",
+    ],
+    sourceLine: "Official NCVEC 2026-2030 Technician pool (effective July 1, 2026). The 12 questions that need a schematic figure are left out.",
+    analyticsKey: "ham",
+  },
+};
+
 const htl: ExamConfig = {
   id: "htl",
   stateCode: "HTL",
@@ -547,7 +613,7 @@ const crcst: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, htl, cst, crcst];
 
 export const examSetBase = (exam: ExamConfig) => exam.setIdBase ?? exam.idBase;
 /** Store ID of training set N of an exam. */

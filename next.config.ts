@@ -6,6 +6,9 @@ import type { NextConfig } from "next";
 const BUILD_LAST_MODIFIED = new Date().toUTCString();
 
 const nextConfig: NextConfig = {
+  outputFileTracingIncludes: {
+    "/api/og/score-card": ["./public/tiger_face_*.png", "./public/tigers/**/*.png"],
+  },
   images: {
     formats: ["image/avif", "image/webp"],
     remotePatterns: [

@@ -19,6 +19,7 @@ import { QuestionImage } from "@/components/QuestionImage";
 import { getSignIdForQuestion } from "@/lib/signImages";
 import { computeMissSummary } from "@/lib/missedQuestions";
 import { ExamRoutes } from "@/lib/examRoutes";
+import { getTigerAsset } from "@/lib/tigerAssets";
 import { useStore } from "@/store/useStore";
 import { useHydration } from "@/hooks/useHydration";
 import { useCommunityStats } from "@/hooks/useCommunityStats";
@@ -111,7 +112,7 @@ export function MissDrill({ routes }: { routes: ExamRoutes }) {
         <div className="rounded-xl bg-white border border-gray-100 p-4 mb-6">
           <div className="flex items-center gap-4">
             <Image
-              src="/tiger_face_06.png"
+              src={getTigerAsset(routes.id, 6)}
               alt="Tiger mascot"
               width={48}
               height={48}

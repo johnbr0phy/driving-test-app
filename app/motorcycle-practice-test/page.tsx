@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Image from "next/image";
+import { getTigerAsset } from "@/lib/tigerAssets";
 import { Smartphone, Monitor } from "lucide-react";
 import { ExamLandingHero, ExamLandingCTA } from "@/components/exam/ExamLandingHero";
 
@@ -188,7 +189,7 @@ export default function MotorcycleLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src="/tiger_face_01.png"
+                src={getTigerAsset("moto", 1)}
                 alt="TigerTest mascot"
                 width={180}
                 height={180}

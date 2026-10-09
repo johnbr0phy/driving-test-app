@@ -20,6 +20,7 @@ import { AttemptChart, sessionsToAttemptPoints } from "@/components/AttemptChart
 import { computeMissSummary } from "@/lib/missedQuestions";
 import { getExamRoutes } from "@/lib/examRoutes";
 import { ExamConfig } from "@/lib/exams";
+import { getTigerAsset } from "@/lib/tigerAssets";
 
 function heroTitle(done: number, total: number): string {
   if (done === 0) return `Complete all ${total} steps`;
@@ -43,13 +44,13 @@ function heroSub(exam: ExamConfig, done: number, total: number): string {
   return subs[3];
 }
 
-function getTigerFace(complete: number, total: number): string {
+function getTigerFace(complete: number, total: number, examId: string): string {
   const pct = Math.round((complete / total) * 100);
-  if (pct >= 100) return "/tiger_face_01.png";
-  if (pct >= 75) return "/tiger_face_02.png";
-  if (pct >= 50) return "/tiger_face_04.png";
-  if (pct >= 25) return "/tiger_face_06.png";
-  return "/tiger_face_08.png";
+  if (pct >= 100) return getTigerAsset(examId, 1);
+  if (pct >= 75) return getTigerAsset(examId, 2);
+  if (pct >= 50) return getTigerAsset(examId, 4);
+  if (pct >= 25) return getTigerAsset(examId, 6);
+  return getTigerAsset(examId, 8);
 }
 
 export function ExamDashboard({ exam }: { exam: ExamConfig }) {
@@ -141,7 +142,7 @@ export function ExamDashboard({ exam }: { exam: ExamConfig }) {
         <div className="rounded-xl bg-white border border-gray-100 p-4 mb-6">
           <div className="flex items-center gap-4">
             <Image
-              src={getTigerFace(completedSteps, totalSteps)}
+              src={getTigerFace(completedSteps, totalSteps, exam.id)}
               alt="Tiger mascot"
               width={48}
               height={48}

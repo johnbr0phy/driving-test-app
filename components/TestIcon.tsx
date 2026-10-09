@@ -1,7 +1,12 @@
 import { Car, Truck, Bike, Flag, Plane, Radio, Thermometer, HeartPulse, Pill, Syringe, Stethoscope, Activity, SmilePlus, Siren, Utensils, House, Umbrella, Stamp, GraduationCap, Cloud, Cpu, ChefHat, Sailboat, Target, LockKeyhole, BookOpenCheck, Microscope, Scissors, ShieldCheck } from "lucide-react";
 import type { TestCatalogEntry } from "@/lib/testCatalog";
+import Image from "next/image";
+import { getTigerAsset, hasTigerSet } from "@/lib/tigerAssets";
 
-export function TestIcon({ icon, className = "h-5 w-5" }: { icon: TestCatalogEntry["icon"]; className?: string }) {
+export function TestIcon({ icon, examId, className = "h-5 w-5" }: { icon: TestCatalogEntry["icon"]; examId?: string; className?: string }) {
+  if (examId && hasTigerSet(examId)) {
+    return <Image src={getTigerAsset(examId)} alt="" width={48} height={48} className={`${className} object-contain`} />;
+  }
   if (icon === "car") return <Car className={className} aria-hidden="true" />;
   if (icon === "truck") return <Truck className={className} aria-hidden="true" />;
   if (icon === "bike") return <Bike className={className} aria-hidden="true" />;

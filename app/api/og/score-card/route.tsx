@@ -4,6 +4,7 @@ import { readFile } from "fs/promises";
 import { join } from "path";
 import { states } from "@/data/states";
 import { getExamByStateCode } from "@/lib/exams";
+import { getTigerFace } from "@/lib/resultsCopy";
 
 export const runtime = "nodejs";
 
@@ -27,17 +28,6 @@ async function loadFonts(): Promise<{ interBoldData: ArrayBuffer; interBlackData
   } catch {
     return null;
   }
-}
-
-function getTigerFace(percentage: number): string {
-  if (percentage >= 100) return "tiger_face_01.png";
-  if (percentage >= 85) return "tiger_face_02.png";
-  if (percentage >= 70) return "tiger_face_03.png";
-  if (percentage >= 55) return "tiger_face_04.png";
-  if (percentage >= 40) return "tiger_face_05.png";
-  if (percentage >= 25) return "tiger_face_06.png";
-  if (percentage >= 10) return "tiger_face_07.png";
-  return "tiger_face_08.png";
 }
 
 function getTagline(percentage: number, lang: string): string {
@@ -126,7 +116,7 @@ export async function GET(request: NextRequest) {
   const passed = percentage >= 70;
 
   // Load tiger face image and fonts in parallel
-  const tigerFile = getTigerFace(percentage);
+  const tigerFile = getTigerFace(percentage, exam?.id).slice(1);
   const tigerPath = join(process.cwd(), "public", tigerFile);
   const [tigerData, fonts] = await Promise.all([readFile(tigerPath), loadFonts()]);
   const tigerBase64 = `data:image/png;base64,${tigerData.toString("base64")}`;

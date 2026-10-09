@@ -121,7 +121,7 @@ export function ResultsHeroDebrief({
                   <p className="text-sm text-gray-500 mt-2 leading-snug">{t("results.baselineSub")}</p>
                 </div>
                 <Image
-                  src={getTigerFace(percentage)}
+                  src={getTigerFace(percentage, routes.id)}
                   alt="Tiger coach"
                   width={56}
                   height={56}
@@ -133,7 +133,7 @@ export function ResultsHeroDebrief({
           ) : (
             <div className="flex items-start gap-3">
               <Image
-                src={getTigerFace(percentage)}
+                src={getTigerFace(percentage, routes.id)}
                 alt="Tiger coach"
                 width={48}
                 height={48}

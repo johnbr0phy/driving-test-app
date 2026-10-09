@@ -9,6 +9,7 @@ import {
   TestCatalogEntry,
 } from "@/lib/testCatalog";
 import { TestIcon } from "@/components/TestIcon";
+import { hasTigerSet } from "@/lib/tigerAssets";
 
 function TestCard({ test }: { test: TestCatalogEntry }) {
   return (
@@ -18,8 +19,8 @@ function TestCard({ test }: { test: TestCatalogEntry }) {
         className="group flex h-full flex-col rounded-2xl border border-gray-200 bg-white p-6 transition-all hover:border-brand hover:shadow-lg"
       >
         <div className="mb-4 flex items-center gap-3">
-          <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-brand text-white">
-            <TestIcon icon={test.icon} className="h-6 w-6" />
+          <div className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-xl ${hasTigerSet(test.id) ? "" : "bg-brand text-white"}`}>
+            <TestIcon examId={test.id} icon={test.icon} className={hasTigerSet(test.id) ? "h-11 w-11" : "h-6 w-6"} />
           </div>
           <div>
             <h2 className="text-lg font-semibold text-gray-900">{test.name}</h2>

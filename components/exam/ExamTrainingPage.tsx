@@ -14,6 +14,7 @@ import { shuffleQuestionOptions } from "@/lib/testGenerator";
 import { getNextExamTrainingSetQuestion } from "@/lib/examTestGenerator";
 import { getExamRoutes } from "@/lib/examRoutes";
 import { ExamConfig, examSetId } from "@/lib/exams";
+import { getTigerAsset } from "@/lib/tigerAssets";
 import { Question } from "@/types";
 import { useHydration } from "@/hooks/useHydration";
 import { useSound } from "@/hooks/useSound";
@@ -203,7 +204,7 @@ function ExamTrainingContent({ exam }: { exam: ExamConfig }) {
           <div className="bg-white rounded-2xl p-8 mx-4 max-w-md text-center shadow-2xl animate-in zoom-in-95 duration-300">
             <div className="mb-4">
               <img
-                src="/tiger_face_02.png"
+                src={getTigerAsset(exam.id, 2)}
                 alt="Happy celebrating tiger"
                 className="w-32 h-32 mx-auto"
               />
@@ -261,7 +262,7 @@ function ExamTrainingContent({ exam }: { exam: ExamConfig }) {
               {/* Tiger face */}
               <div className="flex justify-center mb-5">
                 <Image
-                  src="/tiger_face_01.png"
+                  src={getTigerAsset(exam.id, 1)}
                   alt="Tiger mascot"
                   width={160}
                   height={160}

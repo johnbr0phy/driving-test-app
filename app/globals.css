@@ -84,6 +84,20 @@
     --brand-gradient-to: 190 80% 95%;
   }
 
+  /* Motorcycle permit theme: deep red */
+  [data-theme="moto"] {
+    --brand: 355 72% 44%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 355 85% 96%;
+    --brand-hover: 355 72% 38%;
+    --brand-dark: 355 72% 30%;
+    --brand-darker: 355 60% 18%;
+    --brand-muted: 355 50% 72%;
+    --brand-border: 355 50% 78%;
+    --brand-border-light: 355 45% 88%;
+    --brand-gradient-to: 20 90% 95%;
+  }
+
   /* CRCST (sterile processing) theme: deep cyan */
   [data-theme="crcst"] {
     --brand: 195 85% 36%;

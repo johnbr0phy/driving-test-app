@@ -1,5 +1,5 @@
 // Question types
-export type QuestionType = "Universal" | "State-Specific" | "CDL" | "HTL" | "CST" | "CRCST";
+export type QuestionType = "Universal" | "State-Specific" | "CDL" | "MOTO" | "HTL" | "CST" | "CRCST";
 
 // Test mode
 export type TestMode = "dmv" | "cdl" | "htl";
@@ -64,7 +64,12 @@ export type QuestionCategory =
   | "sterilizationProcess"
   | "sterileStorageInventory"
   | "patientCareEquipment"
-  | "professionalDevelopment";
+  | "professionalDevelopment"
+  // Motorcycle permit (MSF manual chapters; basicControl, specialSituations, alcoholDrugs reused)
+  | "ridingPreparation"
+  | "laneStrategy"
+  | "intersectionsPassing"
+  | "roadHazards";
 
 export interface Question {
   type: QuestionType;

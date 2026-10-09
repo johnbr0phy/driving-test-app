@@ -1,5 +1,6 @@
 import { Question } from "@/types";
 import cdlQuestions from "@/data/cdl-questions.json";
+import motoQuestions from "@/data/motorcycle-questions.json";
 import htlQuestions from "@/data/htl-questions.json";
 import cstQuestions from "@/data/cst-questions.json";
 import crcstQuestions from "@/data/crcst-questions.json";
@@ -9,6 +10,7 @@ import type { ExamId } from "./exams";
 // import the registry without bundling every bank.
 const BANKS: Record<ExamId, Question[]> = {
   cdl: cdlQuestions as Question[],
+  moto: motoQuestions as Question[],
   htl: htlQuestions as Question[],
   cst: cstQuestions as Question[],
   crcst: crcstQuestions as Question[],

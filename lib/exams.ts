@@ -13,7 +13,7 @@
  * This file must stay free of question-data imports (the store imports it).
  */
 
-export type ExamId = "cdl" | "htl" | "cst" | "crcst";
+export type ExamId = "cdl" | "moto" | "htl" | "cst" | "crcst";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (?set=N). */
@@ -53,7 +53,7 @@ export interface ExamConfig {
   /** Question ID prefix, e.g. "HTL-". */
   questionIdPrefix: string;
   /** Header icon key (see CDLHeader). */
-  icon: "truck" | "microscope" | "scissors" | "shield";
+  icon: "truck" | "bike" | "microscope" | "scissors" | "shield";
   testCount: number;
   questionsPerTest: number;
   passPct: number;
@@ -146,6 +146,65 @@ const cdl: ExamConfig = {
     ],
     sourceLine: "Covers the CDL general knowledge exam. 80% to pass on the real test.",
     analyticsKey: "cdl",
+  },
+};
+
+const moto: ExamConfig = {
+  id: "moto",
+  stateCode: "MOTO",
+  idBase: 500,
+  slug: "/motorcycle",
+  landingPath: "/motorcycle-practice-test",
+  name: "Motorcycle Practice Test",
+  shortName: "Motorcycle",
+  examLabel: "Motorcycle Permit",
+  fullName: "motorcycle permit knowledge test",
+  questionIdPrefix: "MC-",
+  icon: "bike",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // Weighted to the MSF Motorcycle Operator Manual, which nearly every state
+  // permit test is written from. Control and positioning carry the most.
+  blueprint: {
+    ridingPreparation: 7,
+    basicControl: 10,
+    laneStrategy: 9,
+    intersectionsPassing: 7,
+    roadHazards: 6,
+    specialSituations: 6,
+    alcoholDrugs: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 501, name: "Preparing to Ride", categories: ["ridingPreparation"], size: 28, weightLabel: "14% of each test" },
+    { setNumber: 2, id: 502, name: "Controlling the Motorcycle", categories: ["basicControl"], size: 40, weightLabel: "20% of each test" },
+    { setNumber: 3, id: 503, name: "Positioning & Being Seen", categories: ["laneStrategy"], size: 36, weightLabel: "18% of each test" },
+    { setNumber: 4, id: 504, name: "Intersections, Passing & Hazards", categories: ["intersectionsPassing", "roadHazards"], size: 52, weightLabel: "26% of each test" },
+    { setNumber: 5, id: 505, name: "Special Situations, Alcohol & Drugs", categories: ["specialSituations", "alcoholDrugs"], size: 44, weightLabel: "22% of each test" },
+  ],
+  categoryLabels: {
+    ridingPreparation: "Preparing to Ride",
+    basicControl: "Basic Vehicle Control",
+    laneStrategy: "Positioning & Being Seen",
+    intersectionsPassing: "Intersections & Passing",
+    roadHazards: "Road Hazards",
+    specialSituations: "Special Situations",
+    alcoholDrugs: "Alcohol & Drugs",
+  },
+  copy: {
+    guestPrompt: "to save your motorcycle permit progress and track every question you miss",
+    trainingHeading: "Train by manual chapter",
+    trainingSub: "Five sets following the MSF Motorcycle Operator Manual. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions, 80% to pass",
+    heroSubs: [
+      "Five chapters, four full tests. Control and positioning carry the most weight.",
+      "Mastery first, then test. The sets follow the MSF manual your state test is written from.",
+      "Halfway through the manual. The practice tests will show where you stand.",
+      "Fix the misses, then retake. Most states want 80% on the real test.",
+      "Full prep done. Go book your permit test at the DMV.",
+    ],
+    sourceLine: "Based on the MSF Motorcycle Operator Manual used by nearly every state. Check your state's handbook for local rules.",
+    analyticsKey: "moto",
   },
 };
 
@@ -319,7 +378,7 @@ const crcst: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, moto, htl, cst, crcst];
 
 export const examSetBase = (exam: ExamConfig) => exam.setIdBase ?? exam.idBase;
 /** Store ID of training set N of an exam. */

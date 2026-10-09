@@ -7,14 +7,14 @@ import { Providers } from "@/components/Providers";
 import { SuperAmazingFireworks } from "@/components/SuperAmazingFireworks";
 import { NativeAppShell } from "@/components/NativeAppShell";
 
-// viewportFit: "cover" lets the page extend behind the notch/home
-// indicator in the native app shell; env(safe-area-inset-*) padding is
-// applied via the .native-app class (globals.css) so the web experience
-// is unchanged.
+// viewport-fit=cover (page extends behind the notch/home indicator) is
+// only wanted inside the native app shell, where env(safe-area-inset-*)
+// padding compensates (globals.css .native-app). On the mobile web it lets
+// iOS browser chrome overlap the top of the page, so NativeAppShell adds
+// it at runtime only when the TigerTestApp user agent is present.
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  viewportFit: "cover",
 };
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
@@ -92,7 +92,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased flex flex-col min-h-dvh">
+      {/* min-h-screen (100vh) rather than min-h-dvh: dvh resizes as the iOS
+          browser toolbar collapses/expands while scrolling, which can leave
+          the top of the page stuck behind the toolbar on scroll-up. */}
+      <body className="antialiased flex flex-col min-h-screen">
         <NativeAppShell />
         <Providers>
           <SuperAmazingFireworks />

@@ -349,6 +349,10 @@ export const en = {
     ccmaAdministrative: "Administrative Assisting",
     ccmaCommunication: "Communication & Customer Service",
     ccmaLawEthics: "Medical Law & Ethics",
+    // CET (NHA EKG technician) domains
+    ekgAcquisition: "EKG Acquisition",
+    ekgSafetyPatientCare: "Safety, Compliance & Patient Care",
+    ekgAnalysis: "EKG Analysis & Interpretation",
   } as Record<string, string>,
 
   // Training set names

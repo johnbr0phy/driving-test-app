@@ -13,7 +13,7 @@
  * This file must stay free of question-data imports (the store imports it).
  */
 
-export type ExamId = "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "htl" | "cst" | "crcst";
+export type ExamId = "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "htl" | "cst" | "crcst";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (?set=N). */
@@ -53,7 +53,7 @@ export interface ExamConfig {
   /** Question ID prefix, e.g. "HTL-". */
   questionIdPrefix: string;
   /** Header icon key (see CDLHeader). */
-  icon: "truck" | "bike" | "flag" | "plane" | "radio" | "thermometer" | "heart" | "pill" | "syringe" | "stethoscope" | "microscope" | "scissors" | "shield";
+  icon: "truck" | "bike" | "flag" | "plane" | "radio" | "thermometer" | "heart" | "pill" | "syringe" | "stethoscope" | "activity" | "microscope" | "scissors" | "shield";
   testCount: number;
   questionsPerTest: number;
   passPct: number;
@@ -739,6 +739,57 @@ const ccma: ExamConfig = {
   },
 };
 
+const cet: ExamConfig = {
+  id: "cet",
+  stateCode: "CET",
+  idBase: 1500,
+  slug: "/ekg",
+  landingPath: "/ekg-technician-practice-test",
+  name: "EKG Technician Practice Test",
+  shortName: "EKG",
+  examLabel: "CET Exam",
+  fullName: "Certified EKG Technician (NHA CET) exam",
+  questionIdPrefix: "CET-",
+  icon: "activity",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // NHA CET test plan (2017 job analysis, in force through 2026): EKG
+  // Acquisition 44%, Safety, Compliance and Coordinated Patient Care 32%,
+  // EKG Analysis and Interpretation 24%. Real exam: 120 items (100 scored),
+  // scaled pass 390 of 500.
+  blueprint: {
+    ekgAcquisition: 22,
+    ekgSafetyPatientCare: 16,
+    ekgAnalysis: 12,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 1501, name: "EKG Acquisition: Setup & Leads", categories: ["ekgAcquisition"], size: 88, weightLabel: "44% of the exam" },
+    { setNumber: 2, id: 1502, name: "Safety, Compliance & Patient Care", categories: ["ekgSafetyPatientCare"], size: 64, weightLabel: "32% of the exam" },
+    { setNumber: 3, id: 1503, name: "EKG Analysis & Interpretation", categories: ["ekgAnalysis"], size: 48, weightLabel: "24% of the exam" },
+  ],
+  categoryLabels: {
+    ekgAcquisition: "EKG Acquisition",
+    ekgSafetyPatientCare: "Safety, Compliance & Patient Care",
+    ekgAnalysis: "EKG Analysis & Interpretation",
+  },
+  copy: {
+    guestPrompt: "to save your EKG exam progress and track every question you miss",
+    trainingHeading: "Train by domain",
+    trainingSub: "Three sets matching the three NHA CET domains. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real exam",
+    heroSubs: [
+      "Three domains, four full tests. Acquisition is almost half the exam.",
+      "Mastery first, then test. The sets follow the NHA CET test plan.",
+      "Halfway through the outline. The practice tests will show where you stand.",
+      "Fix the misses, then retake. Aim for 70% or better on every test before exam day.",
+      "Full prep done. Schedule your CET exam with NHA.",
+    ],
+    sourceLine: "Weighted to the NHA CET test plan. Rhythm items describe the strip in words; practice with real tracings too.",
+    analyticsKey: "cet",
+  },
+};
+
 const htl: ExamConfig = {
   id: "htl",
   stateCode: "HTL",
@@ -909,7 +960,7 @@ const crcst: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, cet, htl, cst, crcst];
 
 export const examSetBase = (exam: ExamConfig) => exam.setIdBase ?? exam.idBase;
 /** Store ID of training set N of an exam. */

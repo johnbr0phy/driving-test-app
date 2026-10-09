@@ -1,5 +1,5 @@
 // Question types
-export type QuestionType = "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HAM" | "EPA608" | "CNA" | "PTCB" | "PHLEB" | "CCMA" | "HTL" | "CST" | "CRCST";
+export type QuestionType = "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HAM" | "EPA608" | "CNA" | "PTCB" | "PHLEB" | "CCMA" | "CET" | "HTL" | "CST" | "CRCST";
 
 // Test mode
 export type TestMode = "dmv" | "cdl" | "htl";
@@ -139,7 +139,11 @@ export type QuestionCategory =
   | "ccmaCareCoordination"
   | "ccmaAdministrative"
   | "ccmaCommunication"
-  | "ccmaLawEthics";
+  | "ccmaLawEthics"
+  // CET (NHA EKG technician) domains
+  | "ekgAcquisition"
+  | "ekgSafetyPatientCare"
+  | "ekgAnalysis";
 
 export interface Question {
   type: QuestionType;

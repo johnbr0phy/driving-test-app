@@ -196,6 +196,20 @@
     --brand-gradient-to: 160 60% 94%;
   }
 
+  /* CET (EKG) theme: coral red */
+  [data-theme="cet"] {
+    --brand: 8 72% 48%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 8 85% 96%;
+    --brand-hover: 8 72% 42%;
+    --brand-dark: 8 72% 32%;
+    --brand-darker: 8 60% 18%;
+    --brand-muted: 8 55% 76%;
+    --brand-border: 8 55% 82%;
+    --brand-border-light: 8 50% 90%;
+    --brand-gradient-to: 35 90% 95%;
+  }
+
   /* Motorcycle permit theme: deep red */
   [data-theme="moto"] {
     --brand: 355 72% 44%;

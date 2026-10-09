@@ -1,5 +1,5 @@
 // Question types
-export type QuestionType = "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HAM" | "EPA608" | "CNA" | "PTCB" | "PHLEB" | "CCMA" | "CET" | "DANB" | "EMT" | "HTL" | "CST" | "CRCST";
+export type QuestionType = "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HAM" | "EPA608" | "CNA" | "PTCB" | "PHLEB" | "CCMA" | "CET" | "DANB" | "EMT" | "FOODMGR" | "HTL" | "CST" | "CRCST";
 
 // Test mode
 export type TestMode = "dmv" | "cdl" | "htl";
@@ -156,7 +156,15 @@ export type QuestionCategory =
   | "primaryAssessment"
   | "secondaryAssessment"
   | "treatmentTransport"
-  | "emsOperations";
+  | "emsOperations"
+  // Food protection manager content areas
+  | "foodborneContamination"
+  | "flowOfFood"
+  | "timeTemperature"
+  | "personalHygiene"
+  | "cleaningSanitizing"
+  | "facilitiesPests"
+  | "managementSystems";
 
 export interface Question {
   type: QuestionType;

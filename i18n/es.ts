@@ -366,6 +366,14 @@ export const es: TranslationKeys = {
     secondaryAssessment: "Secondary Assessment",
     treatmentTransport: "Patient Treatment & Transport",
     emsOperations: "Operations",
+    // Food protection manager content areas
+    foodborneContamination: "Foodborne Illness & Contamination",
+    flowOfFood: "The Flow of Food",
+    timeTemperature: "Time & Temperature Control",
+    personalHygiene: "Personal Hygiene & Employee Health",
+    cleaningSanitizing: "Cleaning & Sanitizing",
+    facilitiesPests: "Facilities, Equipment & Pest Control",
+    managementSystems: "Food Safety Management & Regulation",
   } as Record<string, string>,
 
   // Training set names

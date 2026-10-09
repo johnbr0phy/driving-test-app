@@ -13,7 +13,7 @@
  * This file must stay free of question-data imports (the store imports it).
  */
 
-export type ExamId = "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "emt" | "htl" | "cst" | "crcst";
+export type ExamId = "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "emt" | "foodmgr" | "htl" | "cst" | "crcst";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (?set=N). */
@@ -53,7 +53,7 @@ export interface ExamConfig {
   /** Question ID prefix, e.g. "HTL-". */
   questionIdPrefix: string;
   /** Header icon key (see CDLHeader). */
-  icon: "truck" | "bike" | "flag" | "plane" | "radio" | "thermometer" | "heart" | "pill" | "syringe" | "stethoscope" | "activity" | "tooth" | "siren" | "microscope" | "scissors" | "shield";
+  icon: "truck" | "bike" | "flag" | "plane" | "radio" | "thermometer" | "heart" | "pill" | "syringe" | "stethoscope" | "activity" | "tooth" | "siren" | "utensils" | "microscope" | "scissors" | "shield";
   testCount: number;
   questionsPerTest: number;
   passPct: number;
@@ -905,6 +905,65 @@ const emt: ExamConfig = {
   },
 };
 
+const foodmgr: ExamConfig = {
+  id: "foodmgr",
+  stateCode: "FOODMGR",
+  idBase: 1800,
+  slug: "/food-manager",
+  landingPath: "/food-manager-practice-test",
+  name: "Food Manager Practice Test",
+  shortName: "Food Safety",
+  examLabel: "Food Manager Exam",
+  fullName: "Certified Food Protection Manager exam",
+  questionIdPrefix: "FSM-",
+  icon: "utensils",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // Certified Food Protection Manager exams (ServSafe Manager, NRFSP,
+  // Prometric, StateFoodSafety and other ANAB-CFP accredited programs) on the
+  // FDA Food Code. Typical exam: 80 scored items, 2 hours, 75% to pass.
+  blueprint: {
+    foodborneContamination: 8,
+    flowOfFood: 12,
+    timeTemperature: 10,
+    personalHygiene: 8,
+    cleaningSanitizing: 6,
+    facilitiesPests: 3,
+    managementSystems: 3,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 1801, name: "Contamination & Personal Hygiene", categories: ["foodborneContamination", "personalHygiene"], size: 64, weightLabel: "32% of the exam" },
+    { setNumber: 2, id: 1802, name: "The Flow of Food", categories: ["flowOfFood"], size: 48, weightLabel: "24% of the exam" },
+    { setNumber: 3, id: 1803, name: "Time & Temperature Control", categories: ["timeTemperature"], size: 40, weightLabel: "20% of the exam" },
+    { setNumber: 4, id: 1804, name: "Cleaning, Facilities & Management", categories: ["cleaningSanitizing", "facilitiesPests", "managementSystems"], size: 48, weightLabel: "24% of the exam" },
+  ],
+  categoryLabels: {
+    foodborneContamination: "Foodborne Illness & Contamination",
+    flowOfFood: "The Flow of Food",
+    timeTemperature: "Time & Temperature Control",
+    personalHygiene: "Personal Hygiene & Employee Health",
+    cleaningSanitizing: "Cleaning & Sanitizing",
+    facilitiesPests: "Facilities, Equipment & Pest Control",
+    managementSystems: "Food Safety Management & Regulation",
+  },
+  copy: {
+    guestPrompt: "to save your food manager exam progress and track every question you miss",
+    trainingHeading: "Train by content area",
+    trainingSub: "Four sets covering every Food Code content area on the manager exam. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests \u00b7 50 questions weighted like the real exam",
+    heroSubs: [
+      "Seven content areas, four full tests. Temperatures and the flow of food are the big ones.",
+      "Mastery first, then test. The sets follow the FDA Food Code the manager exams are built on.",
+      "Halfway through the content. The practice tests will show where you stand.",
+      "Fix the misses, then retake. The real exams pass at 75%, so aim higher here.",
+      "Full prep done. Book your accredited manager exam with any ANAB-CFP provider.",
+    ],
+    sourceLine: "Built on the FDA Food Code (2017 and 2022). Your local code may differ; check with your health department.",
+    analyticsKey: "foodmgr",
+  },
+};
+
 const htl: ExamConfig = {
   id: "htl",
   stateCode: "HTL",
@@ -1075,7 +1134,7 @@ const crcst: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, cet, danb, emt, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, cet, danb, emt, foodmgr, htl, cst, crcst];
 
 export const examSetBase = (exam: ExamConfig) => exam.setIdBase ?? exam.idBase;
 /** Store ID of training set N of an exam. */

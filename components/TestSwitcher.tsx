@@ -25,10 +25,7 @@ export function TestSwitcher({ className = "" }: { className?: string }) {
         className={`flex items-center gap-1.5 rounded-full bg-gray-100 px-2.5 py-1.5 text-sm text-gray-700 transition-colors hover:bg-gray-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-1 ${className}`}
       >
         <LayoutGrid className="h-4 w-4 text-gray-500" aria-hidden="true" />
-        <span className="font-medium">
-          <span className="sm:hidden">Tests</span>
-          <span className="hidden sm:inline">All tests</span>
-        </span>
+        <span className="hidden sm:inline font-medium">All tests</span>
         <ChevronDown
           className={`h-3.5 w-3.5 text-gray-500 transition-transform ${open ? "rotate-180" : ""}`}
           aria-hidden="true"

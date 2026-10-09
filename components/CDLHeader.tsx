@@ -8,7 +8,7 @@ import { useAuth } from "@/contexts/AuthContext";
 import { useStore } from "@/store/useStore";
 import { useHydration } from "@/hooks/useHydration";
 import { useTestTheme } from "@/contexts/TestThemeContext";
-import { Truck, Microscope, Scissors, ShieldCheck } from "lucide-react";
+import { Truck, Microscope, Scissors, ShieldCheck, LogOut } from "lucide-react";
 import { getExamById } from "@/lib/exams";
 import Image from "next/image";
 import { TestSwitcher } from "@/components/TestSwitcher";
@@ -67,8 +67,15 @@ export function CDLHeader() {
                   <AvatarFallback className="text-lg">😊</AvatarFallback>
                 </Avatar>
               </Link>
-              <Button onClick={handleLogout} variant="outline" className="text-gray-700 border-gray-300 hover:bg-gray-50">
-                Log Out
+              <Button
+                onClick={handleLogout}
+                variant="outline"
+                className="text-gray-700 border-gray-300 hover:bg-gray-50 px-2.5 sm:px-4"
+                title="Log Out"
+                aria-label="Log Out"
+              >
+                <LogOut className="h-5 w-5 sm:hidden" aria-hidden="true" />
+                <span className="hidden sm:inline">Log Out</span>
               </Button>
             </>
           ) : isGuest ? (

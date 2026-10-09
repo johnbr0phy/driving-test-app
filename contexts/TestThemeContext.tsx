@@ -2,6 +2,7 @@
 
 import { createContext, useContext, ReactNode } from "react";
 import { EXAMS, examLandingPath } from "@/lib/exams";
+import { getTigerAsset, hasTigerSet } from "@/lib/tigerAssets";
 
 export interface TestTheme {
   id: string;
@@ -54,7 +55,7 @@ export const themes: Record<string, TestTheme> = {
         slug: exam.id,
         headerTitle: exam.name,
         logoHome: examLandingPath(exam),
-        logoIcon: null,
+        logoIcon: hasTigerSet(exam.id) ? getTigerAsset(exam.id) : null,
         testsPerSet: exam.questionsPerTest,
         totalTests: exam.testCount,
         totalTrainingSets: exam.trainingSets.length,

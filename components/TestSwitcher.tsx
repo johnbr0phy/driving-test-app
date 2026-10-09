@@ -15,6 +15,7 @@ import {
   TestCatalogEntry,
 } from "@/lib/testCatalog";
 import { TestIcon } from "@/components/TestIcon";
+import { hasTigerSet } from "@/lib/tigerAssets";
 
 /**
  * Header menu for moving between the site's practice tests. Lives in both
@@ -170,8 +171,8 @@ function SwitcherItem({
           isActive ? "bg-gray-100" : ""
         }`}
       >
-        <span className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-md bg-brand text-white">
-          <TestIcon icon={test.icon} className="h-3.5 w-3.5" />
+        <span className={`flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-md ${hasTigerSet(test.id) ? "" : "bg-brand text-white"}`}>
+          <TestIcon examId={test.id} icon={test.icon} className={hasTigerSet(test.id) ? "h-7 w-7" : "h-3.5 w-3.5"} />
         </span>
         <span className="min-w-0 flex-1 leading-tight">
           <span className="block truncate text-sm font-medium text-gray-900">

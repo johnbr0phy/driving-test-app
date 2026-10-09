@@ -1,10 +1,12 @@
-export function getTigerFace(percentage: number): string {
-  if (percentage >= 100) return "/tiger_face_01.png";
-  if (percentage >= 85) return "/tiger_face_02.png";
-  if (percentage >= 70) return "/tiger_face_03.png";
-  if (percentage >= 55) return "/tiger_face_04.png";
-  if (percentage >= 40) return "/tiger_face_05.png";
-  if (percentage >= 25) return "/tiger_face_06.png";
-  if (percentage >= 10) return "/tiger_face_07.png";
-  return "/tiger_face_08.png";
+import { getTigerAsset } from "./tigerAssets";
+
+export function getTigerFace(percentage: number, examId = "dmv"): string {
+  if (percentage >= 100) return getTigerAsset(examId, 1);
+  if (percentage >= 85) return getTigerAsset(examId, 2);
+  if (percentage >= 70) return getTigerAsset(examId, 3);
+  if (percentage >= 55) return getTigerAsset(examId, 4);
+  if (percentage >= 40) return getTigerAsset(examId, 5);
+  if (percentage >= 25) return getTigerAsset(examId, 6);
+  if (percentage >= 10) return getTigerAsset(examId, 7);
+  return getTigerAsset(examId, 8);
 }

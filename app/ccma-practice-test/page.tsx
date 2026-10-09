@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Image from "next/image";
+import { getTigerAsset } from "@/lib/tigerAssets";
 import { Smartphone, Monitor } from "lucide-react";
 import { ExamLandingHero, ExamLandingCTA } from "@/components/exam/ExamLandingHero";
 
@@ -188,7 +189,7 @@ export default function CcmaLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src="/tiger_face_01.png"
+                src={getTigerAsset("ccma", 1)}
                 alt="TigerTest mascot"
                 width={180}
                 height={180}

@@ -23,6 +23,7 @@ import { states } from "@/data/states";
 import { TEST_CATALOG } from "@/lib/testCatalog";
 import { getExamById, examSetId } from "@/lib/exams";
 import { TestIcon } from "@/components/TestIcon";
+import { hasTigerSet } from "@/lib/tigerAssets";
 
 export default function SettingsPage() {
   const router = useRouter();
@@ -158,8 +159,8 @@ export default function SettingsPage() {
                 return (
                   <li key={test.id} data-theme={test.theme}>
                     <Link href={href} className="flex items-center gap-3 px-4 py-3 hover:bg-gray-50 transition-colors">
-                      <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-brand text-white flex-shrink-0">
-                        <TestIcon icon={test.icon} className="h-5 w-5" />
+                      <span className={`flex h-9 w-9 items-center justify-center rounded-lg flex-shrink-0 ${hasTigerSet(test.id) ? "" : "bg-brand text-white"}`}>
+                        <TestIcon examId={test.id} icon={test.icon} className={hasTigerSet(test.id) ? "h-9 w-9" : "h-5 w-5"} />
                       </span>
                       <span className="flex-1 min-w-0">
                         <span className="block font-medium text-gray-900">{test.name}</span>

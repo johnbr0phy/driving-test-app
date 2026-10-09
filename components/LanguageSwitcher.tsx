@@ -41,7 +41,7 @@ export function LanguageSwitcher({
         aria-label={`Change language — current language ${current.englishName}`}
         className={`flex items-center gap-1.5 rounded-full bg-gray-100 px-2.5 py-1.5 text-sm text-gray-700 transition-colors hover:bg-gray-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-1 ${className}`}
       >
-        <Globe className="h-4 w-4 text-gray-500" aria-hidden="true" />
+        <Globe className="hidden sm:block h-4 w-4 text-gray-500" aria-hidden="true" />
         <span className="text-base leading-none" aria-hidden="true">
           {current.flag}
         </span>

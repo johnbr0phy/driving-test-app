@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useRouter, usePathname } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { useAuth } from "@/contexts/AuthContext";
@@ -16,8 +16,7 @@ import { TestSwitcher } from "@/components/TestSwitcher";
 import { EXAMS } from "@/lib/exams";
 
 export function Header() {
-  const { user, logout } = useAuth();
-  const router = useRouter();
+  const { user } = useAuth();
   const pathname = usePathname();
   const photoURL = useStore((state) => state.photoURL);
   const isGuest = useStore((state) => state.isGuest);
@@ -26,11 +25,6 @@ export function Header() {
   const subscription = useStore((state) => state.subscription);
   const isPremium = hydrated && !isGuest && !!user && subscription?.isPremium === true;
   const { t } = useTranslation();
-
-  const handleLogout = async () => {
-    await logout();
-    router.push("/");
-  };
 
   const displayPhotoURL = photoURL || user?.photoURL;
 
@@ -91,9 +85,6 @@ export function Header() {
                     <AvatarFallback className="text-lg">😊</AvatarFallback>
                   </Avatar>
                 </Link>
-                <Button onClick={handleLogout} variant="outline" className="text-gray-700 border-gray-300 hover:bg-gray-50">
-                  {t("common.logOut")}
-                </Button>
               </>
             ) : isGuest && !isOnboarding ? (
               <Link href="/signup">

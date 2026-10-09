@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useRouter, usePathname } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { useAuth } from "@/contexts/AuthContext";
@@ -14,18 +14,12 @@ import Image from "next/image";
 import { TestSwitcher } from "@/components/TestSwitcher";
 
 export function CDLHeader() {
-  const { user, logout } = useAuth();
-  const router = useRouter();
+  const { user } = useAuth();
   const pathname = usePathname();
   const photoURL = useStore((state) => state.photoURL);
   const isGuest = useStore((state) => state.isGuest);
   const hydrated = useHydration();
   const theme = useTestTheme();
-
-  const handleLogout = async () => {
-    await logout();
-    router.push("/");
-  };
 
   const displayPhotoURL = photoURL || user?.photoURL;
 
@@ -67,9 +61,6 @@ export function CDLHeader() {
                   <AvatarFallback className="text-lg">😊</AvatarFallback>
                 </Avatar>
               </Link>
-              <Button onClick={handleLogout} variant="outline" className="text-gray-700 border-gray-300 hover:bg-gray-50">
-                Log Out
-              </Button>
             </>
           ) : isGuest ? (
             <Link href={theme.signupPath}>

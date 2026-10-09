@@ -7,9 +7,9 @@ import { TestIcon } from "@/components/TestIcon";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "All Free Practice Tests - DMV, Motorcycle, CDL, Endorsements, Citizenship, Part 107, Ham Radio, EPA 608, CNA, HTL, CST, CRCST";
+const title = "All Free Practice Tests - DMV, Motorcycle, CDL, Endorsements, Citizenship, Part 107, Ham Radio, EPA 608, CNA, PTCB, HTL, CST, CRCST";
 const description =
-  "Every free practice test on TigerTest in one place: DMV permit tests for all 50 states, motorcycle permit, CDL general knowledge and endorsements, the USCIS citizenship civics test, the FAA Part 107 drone pilot test, the FCC ham radio Technician exam, the EPA 608 refrigerant exam, the CNA written exam, and ASCP HTL, NBSTSA CST and HSPA CRCST certification exam prep.";
+  "Every free practice test on TigerTest in one place: DMV permit tests for all 50 states, motorcycle permit, CDL general knowledge and endorsements, the USCIS citizenship civics test, the FAA Part 107 drone pilot test, the FCC ham radio Technician exam, the EPA 608 refrigerant exam, the CNA written exam, the PTCB pharmacy technician exam, and ASCP HTL, NBSTSA CST and HSPA CRCST certification exam prep.";
 
 export const metadata: Metadata = {
   title,

@@ -13,7 +13,7 @@
  * This file must stay free of question-data imports (the store imports it).
  */
 
-export type ExamId = "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "htl" | "cst" | "crcst";
+export type ExamId = "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "htl" | "cst" | "crcst";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (?set=N). */
@@ -53,7 +53,7 @@ export interface ExamConfig {
   /** Question ID prefix, e.g. "HTL-". */
   questionIdPrefix: string;
   /** Header icon key (see CDLHeader). */
-  icon: "truck" | "bike" | "flag" | "plane" | "radio" | "thermometer" | "heart" | "microscope" | "scissors" | "shield";
+  icon: "truck" | "bike" | "flag" | "plane" | "radio" | "thermometer" | "heart" | "pill" | "microscope" | "scissors" | "shield";
   testCount: number;
   questionsPerTest: number;
   passPct: number;
@@ -558,6 +558,59 @@ const cna: ExamConfig = {
   },
 };
 
+const ptcb: ExamConfig = {
+  id: "ptcb",
+  stateCode: "PTCB",
+  idBase: 1200,
+  slug: "/ptcb",
+  landingPath: "/ptcb-practice-test",
+  name: "PTCB Practice Test",
+  shortName: "PTCB",
+  examLabel: "PTCE Exam",
+  fullName: "Pharmacy Technician Certification Exam (PTCE)",
+  questionIdPrefix: "PTCB-",
+  icon: "pill",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // PTCE outline effective January 2026: Medications 35%, Patient Safety and
+  // Quality Assurance 23.75%, Order Entry and Processing 22.5%, Federal
+  // Requirements 18.75%. Real exam: 90 items (80 scored), scaled pass 1400/1600.
+  blueprint: {
+    ptcbMedications: 18,
+    ptcbPatientSafety: 12,
+    ptcbOrderEntry: 11,
+    ptcbFederal: 9,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 1201, name: "Medications", categories: ["ptcbMedications"], size: 72, weightLabel: "35% of the exam" },
+    { setNumber: 2, id: 1202, name: "Patient Safety & Quality Assurance", categories: ["ptcbPatientSafety"], size: 48, weightLabel: "24% of the exam" },
+    { setNumber: 3, id: 1203, name: "Order Entry & Processing", categories: ["ptcbOrderEntry"], size: 44, weightLabel: "22% of the exam" },
+    { setNumber: 4, id: 1204, name: "Federal Requirements", categories: ["ptcbFederal"], size: 36, weightLabel: "19% of the exam" },
+  ],
+  categoryLabels: {
+    ptcbMedications: "Medications",
+    ptcbPatientSafety: "Patient Safety & Quality Assurance",
+    ptcbOrderEntry: "Order Entry & Processing",
+    ptcbFederal: "Federal Requirements",
+  },
+  copy: {
+    guestPrompt: "to save your PTCE progress and track every question you miss",
+    trainingHeading: "Train by knowledge domain",
+    trainingSub: "Four sets matching the four PTCE domains. Instant feedback, worked math, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real exam",
+    heroSubs: [
+      "Four domains, four full tests. Medications is 35% of the exam and math runs through all of it.",
+      "Mastery first, then test. The sets follow the 2026 PTCE content outline.",
+      "Halfway through the outline. The practice tests will show where you stand.",
+      "Fix the misses, then retake. Aim for 70% or better on every test before exam day.",
+      "Full prep done. Schedule your PTCE at a Pearson VUE center.",
+    ],
+    sourceLine: "Weighted to the PTCB PTCE content outline effective January 2026. Federal law only; state rules vary.",
+    analyticsKey: "ptcb",
+  },
+};
+
 const htl: ExamConfig = {
   id: "htl",
   stateCode: "HTL",
@@ -728,7 +781,7 @@ const crcst: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, htl, cst, crcst];
 
 export const examSetBase = (exam: ExamConfig) => exam.setIdBase ?? exam.idBase;
 /** Store ID of training set N of an exam. */

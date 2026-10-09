@@ -1,5 +1,5 @@
 // Question types
-export type QuestionType = "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HAM" | "EPA608" | "CNA" | "HTL" | "CST" | "CRCST";
+export type QuestionType = "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HAM" | "EPA608" | "CNA" | "PTCB" | "HTL" | "CST" | "CRCST";
 
 // Test mode
 export type TestMode = "dmv" | "cdl" | "htl";
@@ -115,7 +115,12 @@ export type QuestionCategory =
   | "communication"
   | "clientRights"
   | "legalEthical"
-  | "healthCareTeam";
+  | "healthCareTeam"
+  // PTCB (PTCE) knowledge domains
+  | "ptcbMedications"
+  | "ptcbPatientSafety"
+  | "ptcbOrderEntry"
+  | "ptcbFederal";
 
 export interface Question {
   type: QuestionType;

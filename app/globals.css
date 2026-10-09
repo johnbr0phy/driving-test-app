@@ -154,6 +154,20 @@
     --brand-gradient-to: 20 90% 95%;
   }
 
+  /* PTCB theme: violet */
+  [data-theme="ptcb"] {
+    --brand: 265 60% 50%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 265 80% 96%;
+    --brand-hover: 265 60% 44%;
+    --brand-dark: 265 60% 34%;
+    --brand-darker: 265 50% 18%;
+    --brand-muted: 265 50% 76%;
+    --brand-border: 265 50% 82%;
+    --brand-border-light: 265 45% 90%;
+    --brand-gradient-to: 300 70% 95%;
+  }
+
   /* Motorcycle permit theme: deep red */
   [data-theme="moto"] {
     --brand: 355 72% 44%;

@@ -42,13 +42,14 @@ const EXAM_BLURBS: Record<string, string> = {
   epa608: "EPA Section 608 refrigerant handling certification. Core plus Type I, II and III sections, with the real 72% pass line.",
   civics: "The USCIS naturalization civics test. All 128 official 2025 questions as multiple choice: government, history, symbols and holidays.",
   cna: "Nurse aide written exam on the NNAAP outline: daily living, basic nursing skills, psychosocial care and the role of the aide.",
+  ptcb: "PTCB pharmacy technician certification exam. Medications, patient safety, order entry math and federal law, on the 2026 PTCE outline.",
   htl: "ASCP histotechnologist and histotechnician certification. Fixation, processing, embedding, microtomy, staining and lab operations.",
   cst: "NBSTSA surgical technologist certification. Preoperative, intraoperative and postoperative care, sterilization, anatomy, microbiology and pharmacology.",
   crcst: "HSPA sterile processing certification, also covers the CBSPD CSPDT. Decontamination, packaging, sterilization, storage and patient care equipment.",
 };
 
 // Short issuing-body line for menus; defaults to the exam label.
-const EXAM_ORG: Record<string, string> = { cdl: "Commercial license", cdlx: "H, air brakes, combo, N, P", moto: "Permit knowledge test", civics: "USCIS naturalization", part107: "FAA drone pilot", ham: "FCC Technician licence", epa608: "HVAC refrigerant certification", cna: "Nurse aide written exam" };
+const EXAM_ORG: Record<string, string> = { cdl: "Commercial license", cdlx: "H, air brakes, combo, N, P", moto: "Permit knowledge test", civics: "USCIS naturalization", part107: "FAA drone pilot", ham: "FCC Technician licence", epa608: "HVAC refrigerant certification", cna: "Nurse aide written exam", ptcb: "Pharmacy technician certification" };
 
 const examEntry = (exam: ExamConfig): TestCatalogEntry => ({
   id: exam.id,
@@ -70,7 +71,7 @@ const GROUPS: { title: string; ids: string[] }[] = [
   { title: "Driving tests", ids: ["dmv", "cdl", "cdlx", "moto"] },
   { title: "Citizenship", ids: ["civics"] },
   { title: "Aviation, radio & trade licenses", ids: ["part107", "ham", "epa608"] },
-  { title: "Healthcare certification exams", ids: ["cna", "htl", "cst", "crcst"] },
+  { title: "Healthcare certification exams", ids: ["cna", "ptcb", "htl", "cst", "crcst"] },
 ];
 export const TEST_GROUPS: { title: string; tests: TestCatalogEntry[] }[] = [
   ...GROUPS.map((g) => ({ title: g.title, tests: TEST_CATALOG.filter((t) => g.ids.includes(t.id)) })),

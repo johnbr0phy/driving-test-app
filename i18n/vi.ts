@@ -325,6 +325,11 @@ export const vi: TranslationKeys = {
     clientRights: "Client Rights",
     legalEthical: "Legal & Ethical Behavior",
     healthCareTeam: "Member of the Health Care Team",
+    // PTCB (PTCE) knowledge domains
+    ptcbMedications: "Medications",
+    ptcbPatientSafety: "Patient Safety & Quality Assurance",
+    ptcbOrderEntry: "Order Entry & Processing",
+    ptcbFederal: "Federal Requirements",
   } as Record<string, string>,
 
   // Training set names

@@ -154,18 +154,18 @@
     --brand-gradient-to: 20 90% 95%;
   }
 
-  /* PTCB theme: violet */
+  /* PTCB theme: orchid */
   [data-theme="ptcb"] {
-    --brand: 265 60% 50%;
+    --brand: 292 60% 50%;
     --brand-foreground: 0 0% 100%;
-    --brand-light: 265 80% 96%;
-    --brand-hover: 265 60% 44%;
-    --brand-dark: 265 60% 34%;
-    --brand-darker: 265 50% 18%;
-    --brand-muted: 265 50% 76%;
-    --brand-border: 265 50% 82%;
-    --brand-border-light: 265 45% 90%;
-    --brand-gradient-to: 300 70% 95%;
+    --brand-light: 292 80% 96%;
+    --brand-hover: 292 60% 44%;
+    --brand-dark: 292 60% 34%;
+    --brand-darker: 292 50% 18%;
+    --brand-muted: 292 50% 76%;
+    --brand-border: 292 50% 82%;
+    --brand-border-light: 292 45% 90%;
+    --brand-gradient-to: 320 70% 95%;
   }
 
   /* Motorcycle permit theme: deep red */

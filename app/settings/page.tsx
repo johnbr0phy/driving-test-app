@@ -21,7 +21,7 @@ import { useStore } from "@/store/useStore";
 import { useHydration } from "@/hooks/useHydration";
 import { states } from "@/data/states";
 import { TEST_CATALOG } from "@/lib/testCatalog";
-import { getExamById } from "@/lib/exams";
+import { getExamById, examSetId } from "@/lib/exams";
 import { TestIcon } from "@/components/TestIcon";
 
 export default function SettingsPage() {
@@ -101,12 +101,12 @@ export default function SettingsPage() {
     });
   const hasStarted = (testId: string): boolean => {
     if (testId === "dmv") return !!selectedState;
-    if (testId === "cdl") return completedTests.some((t) => t.state === "CDL") || idsInRange(101, 112);
     const exam = getExamById(testId);
     if (!exam) return false;
     return (
       completedTests.some((t) => t.state === exam.stateCode) ||
-      idsInRange(exam.idBase + 1, exam.idBase + Math.max(exam.testCount, exam.trainingSets.length))
+      idsInRange(exam.idBase + 1, exam.idBase + exam.testCount) ||
+      idsInRange(examSetId(exam, 1), examSetId(exam, exam.trainingSets.length))
     );
   };
 

@@ -1,9 +1,9 @@
 /**
- * Registry of the non-DMV, non-CDL exams that run on the shared TigerTest
+ * Registry of the non-DMV exams that run on the shared TigerTest
  * flow (dashboard, tests, training, results debrief, drill, stats).
  *
  * Each exam is namespaced in the store by an ID range and a pseudo state
- * code so its progress never collides with DMV or CDL data:
+ * code so its progress never collides with DMV data:
  *   HTL   200s  (tests 201-204, sets 201-205)
  *   CST   300s  (tests 301-304, sets 301-305)
  *   CRCST 400s  (tests 401-404, sets 401-406)
@@ -13,7 +13,7 @@
  * This file must stay free of question-data imports (the store imports it).
  */
 
-export type ExamId = "htl" | "cst" | "crcst";
+export type ExamId = "cdl" | "htl" | "cst" | "crcst";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (?set=N). */
@@ -33,10 +33,15 @@ export interface ExamConfig {
   id: ExamId;
   /** Pseudo state code sessions/attempts are stored under. */
   stateCode: string;
-  /** Store ID base; tests are idBase+1.., sets are idBase+1.. */
+  /** Store ID base; tests are idBase+1.. and, unless setIdBase is set, so are sets. */
   idBase: number;
-  /** URL base, e.g. "/htl". Landing page lives at the base itself. */
+  /** Store ID base for training sets when it differs from idBase (CDL moved its
+   *  sets off 101-112 so old sequential-set progress cannot be misread). */
+  setIdBase?: number;
+  /** URL base, e.g. "/htl". App pages live under it. */
   slug: string;
+  /** SEO landing page when it is not at the slug itself (CDL: /cdl-practice-test). */
+  landingPath?: string;
   /** Header title, e.g. "HTL Practice Test". */
   name: string;
   /** Short credential name, e.g. "HTL". */
@@ -48,7 +53,7 @@ export interface ExamConfig {
   /** Question ID prefix, e.g. "HTL-". */
   questionIdPrefix: string;
   /** Header icon key (see CDLHeader). */
-  icon: "microscope" | "scissors" | "shield";
+  icon: "truck" | "microscope" | "scissors" | "shield";
   testCount: number;
   questionsPerTest: number;
   passPct: number;
@@ -70,6 +75,79 @@ export interface ExamConfig {
     analyticsKey: string;
   };
 }
+
+const cdl: ExamConfig = {
+  id: "cdl",
+  stateCode: "CDL",
+  idBase: 100,
+  setIdBase: 120,
+  slug: "/cdl",
+  landingPath: "/cdl-practice-test",
+  name: "CDL Practice Test",
+  shortName: "CDL",
+  examLabel: "CDL General Knowledge",
+  fullName: "CDL general knowledge exam",
+  questionIdPrefix: "CDL-",
+  icon: "truck",
+  testCount: 6,
+  questionsPerTest: 50,
+  passPct: 80,
+  // Weighted like the general knowledge test: inspection, control and safe
+  // driving carry the most. Each count x 6 tests fits inside its pool.
+  blueprint: {
+    safeDriving: 9,
+    vehicleInspection: 7,
+    basicControl: 5,
+    brakingSystems: 5,
+    vehicleSystems: 4,
+    cargoHandling: 4,
+    emergencyProcedures: 4,
+    hazardPerception: 3,
+    alcoholDrugs: 3,
+    weatherDriving: 2,
+    nightDriving: 1,
+    mountainDriving: 1,
+    railroadCrossings: 2,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 121, name: "Vehicle Inspection", categories: ["vehicleInspection"], size: 60, weightLabel: "14% of each test" },
+    { setNumber: 2, id: 122, name: "Basic Control & Braking", categories: ["basicControl", "brakingSystems"], size: 100, weightLabel: "20% of each test" },
+    { setNumber: 3, id: 123, name: "Vehicle Systems & Cargo", categories: ["vehicleSystems", "cargoHandling"], size: 100, weightLabel: "16% of each test" },
+    { setNumber: 4, id: 124, name: "Safe Driving & Hazards", categories: ["safeDriving", "hazardPerception"], size: 125, weightLabel: "24% of each test" },
+    { setNumber: 5, id: 125, name: "Driving Conditions", categories: ["weatherDriving", "nightDriving", "mountainDriving", "railroadCrossings"], size: 125, weightLabel: "12% of each test" },
+    { setNumber: 6, id: 126, name: "Emergencies, Alcohol & Drugs", categories: ["emergencyProcedures", "alcoholDrugs"], size: 90, weightLabel: "14% of each test" },
+  ],
+  categoryLabels: {
+    vehicleInspection: "Vehicle Inspection",
+    basicControl: "Basic Vehicle Control",
+    brakingSystems: "Braking Systems",
+    vehicleSystems: "Vehicle Systems",
+    cargoHandling: "Cargo Handling",
+    safeDriving: "Safe Driving",
+    hazardPerception: "Hazard Perception",
+    weatherDriving: "Weather Driving",
+    nightDriving: "Night Driving",
+    mountainDriving: "Mountain Driving",
+    railroadCrossings: "Railroad Crossings",
+    emergencyProcedures: "Emergency Procedures",
+    alcoholDrugs: "Alcohol & Drugs",
+  },
+  copy: {
+    guestPrompt: "to save your CDL progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Six sets covering the whole general knowledge manual. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions like the real exam",
+    heroSubs: [
+      "Six topics, six full tests. Inspection, control and safe driving carry the most weight.",
+      "Mastery first, then test. The sets follow the CDL manual's chapters.",
+      "Halfway through the manual. The practice tests will show where you stand.",
+      "Fix the misses, then retake. 80% is the pass line on the real test.",
+      "Full prep done. Go book your knowledge test at the DMV.",
+    ],
+    sourceLine: "Covers the CDL general knowledge exam. 80% to pass on the real test.",
+    analyticsKey: "cdl",
+  },
+};
 
 const htl: ExamConfig = {
   id: "htl",
@@ -241,7 +319,13 @@ const crcst: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, htl, cst, crcst];
+
+export const examSetBase = (exam: ExamConfig) => exam.setIdBase ?? exam.idBase;
+/** Store ID of training set N of an exam. */
+export const examSetId = (exam: ExamConfig, setNumber: number) => examSetBase(exam) + setNumber;
+/** Landing page URL (the SEO page the switcher, hub and footer link to). */
+export const examLandingPath = (exam: ExamConfig) => exam.landingPath ?? exam.slug;
 
 export const examTestIds = (exam: ExamConfig) =>
   Array.from({ length: exam.testCount }, (_, i) => exam.idBase + 1 + i);
@@ -262,13 +346,15 @@ export function getExamForTestId(testId: number): ExamConfig | undefined {
 
 /** Exam owning a training-set store ID, if any. */
 export function getExamForSetId(setId: number): ExamConfig | undefined {
-  return EXAMS.find((e) => setId > e.idBase && setId <= e.idBase + e.trainingSets.length);
+  return EXAMS.find((e) => setId > examSetBase(e) && setId <= examSetBase(e) + e.trainingSets.length);
 }
 
 /** Exam whose pages a pathname belongs to (landing included), if any. */
 export function getExamByPath(pathname: string | null | undefined): ExamConfig | undefined {
   if (!pathname) return undefined;
-  return EXAMS.find((e) => pathname === e.slug || pathname.startsWith(`${e.slug}/`));
+  return EXAMS.find(
+    (e) => pathname === e.slug || pathname.startsWith(`${e.slug}/`) || pathname === e.landingPath
+  );
 }
 
 export function getExamTrainingSetSize(setId: number): number {

@@ -21,10 +21,6 @@ export default function robots(): MetadataRoute.Robots {
           "/login",
           "/signup",
           "/unsubscribe",
-          "/cdl/dashboard",
-          "/cdl/stats",
-          "/cdl/test",
-          "/cdl/training",
           ...EXAMS.flatMap((exam) =>
             ["dashboard", "stats", "test", "training", "drill"].map((p) => `${exam.slug}/${p}`)
           ),

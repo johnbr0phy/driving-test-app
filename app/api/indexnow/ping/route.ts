@@ -1,4 +1,4 @@
-import { EXAMS } from "@/lib/exams";
+import { EXAMS, examLandingPath } from "@/lib/exams";
 import { NextRequest, NextResponse } from "next/server";
 import { states } from "@/data/states";
 
@@ -23,9 +23,8 @@ function buildUrlList(): string[] {
   const urls = new Set<string>();
   urls.add(SITE_URL);
   urls.add(`${SITE_URL}/practice-tests-by-state`);
-  urls.add(`${SITE_URL}/cdl-practice-test`);
   urls.add(`${SITE_URL}/tests`);
-  for (const exam of EXAMS) urls.add(`${SITE_URL}${exam.slug}`);
+  for (const exam of EXAMS) urls.add(`${SITE_URL}${examLandingPath(exam)}`);
   urls.add(`${SITE_URL}/es/examenes-practica-por-estado`);
 
   for (const state of states) {

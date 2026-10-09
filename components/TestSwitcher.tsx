@@ -59,7 +59,10 @@ export function TestSwitcher({ className = "" }: { className?: string }) {
         collisionPadding={12}
         onOpenAutoFocus={(e) => {
           e.preventDefault();
-          inputRef.current?.focus();
+          // Focus the search only with a mouse or trackpad. On touch devices
+          // the keyboard would cover most of the list before the user can read it.
+          if (window.matchMedia("(pointer: fine)").matches)
+            inputRef.current?.focus();
         }}
         className="w-[calc(100vw-24px)] sm:w-[20rem] p-0 overflow-hidden rounded-xl"
       >
@@ -85,7 +88,7 @@ export function TestSwitcher({ className = "" }: { className?: string }) {
               placeholder="Search tests"
               aria-label="Search practice tests"
               autoComplete="off"
-              className="h-9 w-full rounded-lg bg-gray-100 pl-9 pr-8 text-sm text-gray-900 placeholder:text-gray-400 focus:bg-white focus:outline-none focus:ring-2 focus:ring-brand"
+              className="h-9 w-full rounded-lg bg-gray-100 pl-9 pr-8 text-base sm:text-sm text-gray-900 placeholder:text-gray-400 focus:bg-white focus:outline-none focus:ring-2 focus:ring-brand"
             />
             {searching && (
               <button
@@ -102,7 +105,7 @@ export function TestSwitcher({ className = "" }: { className?: string }) {
             )}
           </div>
 
-          <div className="max-h-[min(60vh,26rem)] overflow-y-auto overscroll-contain p-1.5">
+          <div className="max-h-[min(60vh,26rem,calc(var(--radix-popover-content-available-height)_-_6.5rem))] overflow-y-auto overscroll-contain p-1.5">
             {!searching && (
               <div className="mb-1 border-b border-gray-100 pb-1.5">
                 <SwitcherItem test={current} isActive onSelect={close} />

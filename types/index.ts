@@ -1,5 +1,5 @@
 // Question types
-export type QuestionType = "Universal" | "State-Specific" | "CDL" | "MOTO" | "CIVICS" | "HTL" | "CST" | "CRCST";
+export type QuestionType = "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "HTL" | "CST" | "CRCST";
 
 // Test mode
 export type TestMode = "dmv" | "cdl" | "htl";
@@ -77,7 +77,13 @@ export type QuestionCategory =
   | "colonialIndependence"
   | "history1800s"
   | "recentHistory"
-  | "symbolsHolidays";
+  | "symbolsHolidays"
+  // CDL endorsements (FMCSA manual sections)
+  | "hazmatEndorsement"
+  | "airBrakes"
+  | "combinationVehicles"
+  | "tankVehicles"
+  | "passengerTransport";
 
 export interface Question {
   type: QuestionType;

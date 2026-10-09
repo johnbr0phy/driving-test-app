@@ -21,6 +21,7 @@ import {
   getEligibleUsers,
   processBatch,
   verifyCronSecret,
+  maxInactiveMs,
   emailedRecently,
 } from "@/lib/cron-email";
 import { EMAIL_TEMPLATES } from "@/lib/email-templates";
@@ -30,7 +31,6 @@ const INCLUDE_LEGACY = process.env.INCLUDE_LEGACY_CONSENT === "true";
 
 const MIN_QUESTIONS = 25;
 const IDLE_MS = 6 * 60 * 60 * 1000; // give the session time to actually end
-const STALE_MS = 3 * 24 * 60 * 60 * 1000; // beyond this, reengagement owns them
 
 export async function GET(req: NextRequest) {
   if (!verifyCronSecret(req)) {
@@ -51,15 +51,16 @@ export async function GET(req: NextRequest) {
       // lastUpdated is written on every save, so it is the best proxy for
       // "when did this person stop".
       if (!u.lastUpdated) return false;
+      // Beyond the exam's quiet-days window, reengagement owns them.
       const idle = now - u.lastUpdated.getTime();
-      return idle >= IDLE_MS && idle <= STALE_MS;
+      return idle >= IDLE_MS && idle <= maxInactiveMs(u.voice);
     });
 
     const result = await processBatch({
       label: "first-test-reminder",
       emailKey: EMAIL_KEY,
       subject: "Quick check-in from TigerTest",
-      template: EMAIL_TEMPLATES.firstTestReminder,
+      template: (u) => EMAIL_TEMPLATES.firstTestReminder(u.voice),
       users: eligible,
       extras: (u) => ({ questionCount: u.questionsAnswered.toString() }),
     });

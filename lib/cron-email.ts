@@ -12,6 +12,7 @@
 import { getAdminDb, getAdminAuth } from "@/lib/firebase-admin";
 import { FieldValue } from "firebase-admin/firestore";
 import { sendEmail } from "@/lib/resend";
+import { EmailVoice, resolveUserExamId, voiceFor } from "@/lib/email-voice";
 import {
   QuotaExhaustedError,
   CAMPAIGN_BUDGET,
@@ -87,15 +88,25 @@ export interface UserDoc {
   superAmazingUnlockedAt: Date | null;
   /** Most recent sign of life: a save, a finished test, or signing up. */
   lastActiveAt: Date;
+  /** "dmv" or the registry exam this person is studying (lib/email-voice). */
+  examId: string;
+  /** Words, counts and links for that exam, for the templates. */
+  voice: EmailVoice;
 }
 
 /**
- * Nobody hears from us after three quiet days. Someone who stopped using
- * TigerTest has almost always taken their DMV test and moved on, so a later
- * email reaches a person who no longer has the problem. Enforced centrally in
- * getEligibleUsers() so no campaign can opt itself out by accident.
+ * Nobody hears from us after a stretch of quiet days. Someone who stopped
+ * using TigerTest for the DMV has almost always taken the test and moved on,
+ * so a later email reaches a person who no longer has the problem. The
+ * stretch is per exam (EmailVoice.inactiveDays: 3 for the DMV, longer for
+ * certification and entrance exams with multi-week study cycles) and is
+ * enforced centrally in getEligibleUsers() so no campaign can opt itself out
+ * by accident.
  */
-export const MAX_INACTIVE_MS = 3 * 24 * 60 * 60 * 1000;
+export const DAY_MS = 24 * 60 * 60 * 1000;
+export function maxInactiveMs(voice: EmailVoice): number {
+  return voice.inactiveDays * DAY_MS;
+}
 
 /**
  * Query Firestore for users who have consented to email.
@@ -165,11 +176,17 @@ export async function getEligibleUsers(
       )
     );
 
-    // The three-day rule. Everyone past it has almost certainly sat their test.
-    if (!includeInactive && Date.now() - lastActiveAt.getTime() > MAX_INACTIVE_MS) continue;
+    // Which exam the emails should talk about, and how long its study cycle is.
+    const examId = resolveUserExamId(d);
+    const voice = voiceFor(examId);
+
+    // The quiet-days rule. Everyone past it has almost certainly sat their test.
+    if (!includeInactive && Date.now() - lastActiveAt.getTime() > maxInactiveMs(voice)) continue;
 
     users.push({
       lastActiveAt,
+      examId,
+      voice,
       uid: doc.id,
       email: authRecord.email,
       creationTime: authRecord.creationTime,
@@ -302,7 +319,8 @@ export interface BatchOptions {
   emailKey: string;
   /** Fixed subject, or a per-user builder (paywall-abandon names the paywall). */
   subject: string | ((user: UserDoc) => string);
-  template: string;
+  /** Rendered template, or a per-user builder (normally `(u) => T(u.voice)`). */
+  template: string | ((user: UserDoc) => string);
   users: UserDoc[];
   /** Extra {{placeholders}} for this user, merged into the template. */
   extras?: (user: UserDoc) => Record<string, string>;
@@ -330,7 +348,9 @@ export async function processBatch(opts: BatchOptions): Promise<BatchResult> {
   for (const user of batch) {
     attempted++;
     try {
-      const html = buildHtml(opts.template, user.uid, opts.extras?.(user) ?? {});
+      const template =
+        typeof opts.template === "function" ? opts.template(user) : opts.template;
+      const html = buildHtml(template, user.uid, opts.extras?.(user) ?? {});
       const subject =
         typeof opts.subject === "function" ? opts.subject(user) : opts.subject;
       await sendCronEmail(user.uid, user.email, subject, html, opts.emailKey);

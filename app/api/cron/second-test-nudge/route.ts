@@ -54,7 +54,7 @@ export async function GET(req: NextRequest) {
       label: "second-test-nudge",
       emailKey: EMAIL_KEY,
       subject: "Nice work on test #1!",
-      template: EMAIL_TEMPLATES.secondTestNudge,
+      template: (u) => EMAIL_TEMPLATES.secondTestNudge(u.voice),
       users: eligible,
     });
 

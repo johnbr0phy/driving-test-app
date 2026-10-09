@@ -3,12 +3,16 @@ import { getAdminDb } from "@/lib/firebase-admin";
 import { FieldValue } from "firebase-admin/firestore";
 import { sendEmail } from "@/lib/resend";
 import { EMAIL_TEMPLATES } from "@/lib/email-templates";
-
-const welcomeTemplate = EMAIL_TEMPLATES.welcome;
+import { isKnownExamId, voiceFor } from "@/lib/email-voice";
 
 export async function POST(request: NextRequest) {
   try {
-    const { userId, email, displayName, emailConsent } = await request.json();
+    const { userId, email, displayName, emailConsent, examId: rawExamId } = await request.json();
+
+    // Which exam the signup came from (the client reads it off the signup
+    // page's ?redirect= param). Drives the copy and links below, and is
+    // stored so the lifecycle crons talk about the same exam.
+    const examId = isKnownExamId(rawExamId) ? rawExamId : "dmv";
 
     // Respect consent
     if (!emailConsent) {
@@ -38,6 +42,11 @@ export async function POST(request: NextRequest) {
         lastEmailSent: new Date().toISOString(),
         emailsSent: FieldValue.arrayUnion("welcome"),
       };
+      // First exam wins here; the client overwrites it whenever the person
+      // opens another exam's dashboard.
+      if (!data?.primaryExam) {
+        updates.primaryExam = examId;
+      }
       // First-time stamp so admin conversion stats can compute time-to-purchase.
       if (!data?.createdAt) {
         updates.createdAt = new Date().toISOString();
@@ -52,7 +61,7 @@ export async function POST(request: NextRequest) {
     const greeting = displayName ? `Hey ${displayName},` : "Hey there,";
     const unsubscribeToken = Buffer.from(userId).toString("base64");
 
-    const html = welcomeTemplate
+    const html = EMAIL_TEMPLATES.welcome(voiceFor(examId))
       .replace(/{{greeting}}/g, greeting)
       .replace(/{{unsubscribeToken}}/g, unsubscribeToken);
 

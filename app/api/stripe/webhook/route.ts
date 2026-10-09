@@ -3,6 +3,7 @@ import { getStripe } from '@/lib/stripe';
 import { getAdminDb } from '@/lib/firebase-admin';
 import { sendCronEmail, buildHtml } from '@/lib/cron-email';
 import { EMAIL_TEMPLATES } from '@/lib/email-templates';
+import { voiceFor } from '@/lib/email-voice';
 import Stripe from 'stripe';
 
 export async function POST(request: NextRequest) {
@@ -91,7 +92,7 @@ export async function POST(request: NextRequest) {
             userId,
             buyerEmail,
             "You're in - here's what just unlocked",
-            buildHtml(EMAIL_TEMPLATES.purchaseWelcome, userId),
+            buildHtml(EMAIL_TEMPLATES.purchaseWelcome(voiceFor("dmv")), userId),
             "purchaseWelcome"
           );
         }

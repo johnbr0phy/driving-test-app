@@ -66,7 +66,7 @@ export async function GET(req: NextRequest) {
       label: "reengagement",
       emailKey: EMAIL_KEY,
       subject: "Test coming up soon?",
-      template: EMAIL_TEMPLATES.reengagement,
+      template: (u) => EMAIL_TEMPLATES.reengagement(u.voice),
       users: eligible,
     });
 

@@ -162,6 +162,13 @@ interface AppState {
   userId: string | null;
   photoURL: string | null;
   emailConsent: boolean;
+  /**
+   * "dmv" or the registry exam this person last opened a dashboard for. Saved
+   * to Firestore so the welcome and lifecycle emails talk about the right
+   * exam and link to the right dashboard.
+   */
+  primaryExam: string | null;
+  setPrimaryExam: (examId: string) => void;
   setUserId: (userId: string | null) => void;
   setPhotoURL: (photoURL: string | null) => void;
   setEmailConsent: (consent: boolean) => void;
@@ -214,6 +221,7 @@ export const useStore = create<AppState>()(
       isGuest: false,
       selectedState: null,
       emailConsent: true,
+      primaryExam: null,
       currentTests: {},
       completedTests: [],
       testAttempts: [],
@@ -266,6 +274,14 @@ export const useStore = create<AppState>()(
 
       setEmailConsent: (consent: boolean) => {
         set({ emailConsent: consent });
+      },
+
+      setPrimaryExam: (examId: string) => {
+        if (get().primaryExam === examId) return;
+        set({ primaryExam: examId });
+        // Persist right away so a signup that follows (or a cron that runs
+        // tonight) sees the exam even if nothing else is saved today.
+        get().saveToFirestore();
       },
 
       setSuperAmazingEnabled: (enabled: boolean) => {
@@ -827,6 +843,7 @@ export const useStore = create<AppState>()(
               trainingAnswerHistory: data.trainingAnswerHistory || [],
               activeDates: data.activeDates || [],
               photoURL: data.photoURL || null,
+              primaryExam: typeof data.primaryExam === 'string' ? data.primaryExam : get().primaryExam,
               superAmazing: {
                 enabled: data.superAmazing?.enabled === true,
                 firstEnabledAt: data.superAmazing?.firstEnabledAt || null,
@@ -874,7 +891,7 @@ export const useStore = create<AppState>()(
       },
 
       saveToFirestore: async () => {
-        const { userId, isGuest, selectedState, currentTests, completedTests, testAttempts, training, trainingSets, trainingAnswerHistory, activeDates, photoURL, language, emailConsent, superAmazing, superAmazingUnlockedAt } = get();
+        const { userId, isGuest, selectedState, currentTests, completedTests, testAttempts, training, trainingSets, trainingAnswerHistory, activeDates, photoURL, language, emailConsent, superAmazing, superAmazingUnlockedAt, primaryExam } = get();
         if (!userId || isGuest) return; // Don't save if no user is logged in or guest mode
 
         try {
@@ -949,6 +966,7 @@ export const useStore = create<AppState>()(
             selectedState,
             photoURL,
             emailConsent,
+            ...(primaryExam ? { primaryExam } : {}),
             currentTests: currentTestsForFirestore,
             completedTests: completedTests.map(test => ({
               ...test,

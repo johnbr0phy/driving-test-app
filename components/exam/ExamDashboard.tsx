@@ -79,6 +79,13 @@ export function ExamDashboard({ exam }: { exam: ExamConfig }) {
     if (hydrated && !authLoading && !user && !isGuest) startGuestSession();
   }, [hydrated, authLoading, user, isGuest, startGuestSession]);
 
+  // This is the exam the person's emails should be about, until they open
+  // another exam's dashboard.
+  const setPrimaryExam = useStore((state) => state.setPrimaryExam);
+  useEffect(() => {
+    if (hydrated) setPrimaryExam(exam.id);
+  }, [hydrated, exam.id, setPrimaryExam]);
+
   // Auto-complete any test where all questions are answered (handles stuck state)
   useEffect(() => {
     if (!hydrated) return;

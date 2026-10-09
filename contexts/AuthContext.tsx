@@ -17,6 +17,7 @@ import {
 } from "firebase/auth";
 import { auth } from "@/lib/firebase";
 import { useStore } from "@/store/useStore";
+import { examIdFromSignupUrl } from "@/lib/email-voice";
 import { AccountConflictDialog } from "@/components/AccountConflictDialog";
 
 interface AccountConflict {
@@ -60,10 +61,13 @@ function shouldUseRedirectSignIn(): boolean {
 
 async function sendWelcomeEmail(userId: string, email: string, displayName: string | null, emailConsent: boolean) {
   try {
+    // Exam pages send people to /signup?redirect=/<slug>/dashboard, so the
+    // page URL says which exam the welcome email should be about.
+    const examId = examIdFromSignupUrl(typeof window !== "undefined" ? window.location.href : null);
     await fetch("/api/send-welcome-email", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ userId, email, displayName, emailConsent }),
+      body: JSON.stringify({ userId, email, displayName, emailConsent, examId }),
     });
   } catch (err) {
     console.error("Failed to send welcome email:", err);

@@ -111,6 +111,13 @@ function DashboardContent() {
     }
   }, [hydrated, firestoreLoaded, user, selectedState, router]);
 
+  // The DMV is the exam this person's emails should be about, until they
+  // open another exam's dashboard.
+  const setPrimaryExam = useStore((state) => state.setPrimaryExam);
+  useEffect(() => {
+    if (hydrated && selectedState) setPrimaryExam("dmv");
+  }, [hydrated, selectedState, setPrimaryExam]);
+
   // Auto-complete any test where all questions are answered (handles stuck state)
   useEffect(() => {
     if (!hydrated) return;

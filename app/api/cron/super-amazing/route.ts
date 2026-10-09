@@ -44,6 +44,7 @@ export async function GET(req: NextRequest) {
     const users = await getEligibleUsers(authMap, INCLUDE_LEGACY);
 
     const eligible = users.filter((u) => {
+      if (u.examId !== "dmv") return false;                  // the 8/8 latch is DMV-only
       if (u.emailsSent.includes(EMAIL_KEY)) return false;
       if (emailedRecently(u, now, GAP_MS)) return false;
       if (!u.superAmazingUnlockedAt) return false;
@@ -54,7 +55,7 @@ export async function GET(req: NextRequest) {
       label: "super-amazing",
       emailKey: EMAIL_KEY,
       subject: "You unlocked Super Amazing Mode 🎉",
-      template: EMAIL_TEMPLATES.superAmazingUnlocked,
+      template: (u) => EMAIL_TEMPLATES.superAmazingUnlocked(u.voice),
       users: eligible,
       extras: (u) => ({ questionCount: u.questionsAnswered.toString() }),
     });

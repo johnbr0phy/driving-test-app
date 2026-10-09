@@ -66,7 +66,7 @@ export async function GET(req: NextRequest) {
       label: "inactive-share-request",
       emailKey: EMAIL_KEY,
       subject: "Did you pass?",
-      template: EMAIL_TEMPLATES.inactiveShareRequest,
+      template: (u) => EMAIL_TEMPLATES.inactiveShareRequest(u.voice),
       users: eligible,
     });
 

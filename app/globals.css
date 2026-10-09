@@ -126,6 +126,216 @@
     --brand-gradient-to: 48 95% 94%;
   }
 
+  /* EPA 608 theme: green */
+  [data-theme="epa608"] {
+    --brand: 150 60% 34%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 150 60% 95%;
+    --brand-hover: 150 60% 28%;
+    --brand-dark: 150 60% 22%;
+    --brand-darker: 150 50% 14%;
+    --brand-muted: 150 40% 68%;
+    --brand-border: 150 40% 74%;
+    --brand-border-light: 150 35% 86%;
+    --brand-gradient-to: 80 70% 94%;
+  }
+
+  /* CNA theme: rose */
+  [data-theme="cna"] {
+    --brand: 340 65% 46%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 340 80% 96%;
+    --brand-hover: 340 65% 40%;
+    --brand-dark: 340 65% 32%;
+    --brand-darker: 340 55% 18%;
+    --brand-muted: 340 50% 74%;
+    --brand-border: 340 50% 80%;
+    --brand-border-light: 340 45% 89%;
+    --brand-gradient-to: 20 90% 95%;
+  }
+
+  /* PTCB theme: orchid */
+  [data-theme="ptcb"] {
+    --brand: 292 60% 50%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 292 80% 96%;
+    --brand-hover: 292 60% 44%;
+    --brand-dark: 292 60% 34%;
+    --brand-darker: 292 50% 18%;
+    --brand-muted: 292 50% 76%;
+    --brand-border: 292 50% 82%;
+    --brand-border-light: 292 45% 90%;
+    --brand-gradient-to: 320 70% 95%;
+  }
+
+  /* Phlebotomy theme: forest green */
+  [data-theme="phleb"] {
+    --brand: 120 40% 36%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 120 55% 95%;
+    --brand-hover: 120 40% 30%;
+    --brand-dark: 120 40% 24%;
+    --brand-darker: 120 35% 14%;
+    --brand-muted: 120 30% 70%;
+    --brand-border: 120 30% 76%;
+    --brand-border-light: 120 30% 87%;
+    --brand-gradient-to: 80 60% 94%;
+  }
+
+  /* CCMA theme: sky blue */
+  [data-theme="ccma"] {
+    --brand: 188 70% 36%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 188 70% 95%;
+    --brand-hover: 188 70% 30%;
+    --brand-dark: 188 70% 24%;
+    --brand-darker: 188 60% 14%;
+    --brand-muted: 188 45% 70%;
+    --brand-border: 188 45% 76%;
+    --brand-border-light: 188 40% 87%;
+    --brand-gradient-to: 160 60% 94%;
+  }
+
+  /* CET (EKG) theme: coral red */
+  [data-theme="cet"] {
+    --brand: 8 72% 48%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 8 85% 96%;
+    --brand-hover: 8 72% 42%;
+    --brand-dark: 8 72% 32%;
+    --brand-darker: 8 60% 18%;
+    --brand-muted: 8 55% 76%;
+    --brand-border: 8 55% 82%;
+    --brand-border-light: 8 50% 90%;
+    --brand-gradient-to: 35 90% 95%;
+  }
+
+  /* DANB (dental) theme: mint */
+  [data-theme="danb"] {
+    --brand: 165 60% 34%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 165 60% 95%;
+    --brand-hover: 165 60% 28%;
+    --brand-dark: 165 60% 22%;
+    --brand-darker: 165 50% 13%;
+    --brand-muted: 165 40% 70%;
+    --brand-border: 165 40% 76%;
+    --brand-border-light: 165 35% 87%;
+    --brand-gradient-to: 200 70% 95%;
+  }
+
+  /* EMT theme: indigo */
+  [data-theme="emt"] {
+    --brand: 240 55% 48%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 240 65% 95%;
+    --brand-hover: 240 55% 42%;
+    --brand-dark: 240 55% 36%;
+    --brand-darker: 240 45% 16%;
+    --brand-muted: 240 35% 72%;
+    --brand-border: 240 35% 78%;
+    --brand-border-light: 240 30% 88%;
+    --brand-gradient-to: 200 70% 95%;
+  }
+
+  /* Food manager theme: amber */
+  [data-theme="foodmgr"] {
+    --brand: 42 90% 40%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 42 90% 95%;
+    --brand-hover: 42 90% 34%;
+    --brand-dark: 42 90% 28%;
+    --brand-darker: 42 80% 16%;
+    --brand-muted: 42 70% 72%;
+    --brand-border: 42 70% 78%;
+    --brand-border-light: 42 65% 88%;
+    --brand-gradient-to: 20 70% 95%;
+  }
+
+  /* Real estate theme: slate blue */
+  [data-theme="realestate"] {
+    --brand: 200 45% 36%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 200 55% 95%;
+    --brand-hover: 200 45% 30%;
+    --brand-dark: 200 45% 24%;
+    --brand-darker: 200 35% 16%;
+    --brand-muted: 200 25% 72%;
+    --brand-border: 200 25% 78%;
+    --brand-border-light: 200 20% 88%;
+    --brand-gradient-to: 170 70% 95%;
+  }
+
+  /* Insurance theme: plum */
+  [data-theme="insurance"] {
+    --brand: 330 55% 42%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 330 65% 95%;
+    --brand-hover: 330 55% 36%;
+    --brand-dark: 330 55% 30%;
+    --brand-darker: 330 45% 16%;
+    --brand-muted: 330 35% 72%;
+    --brand-border: 330 35% 78%;
+    --brand-border-light: 330 30% 88%;
+    --brand-gradient-to: 300 70% 95%;
+  }
+
+  /* Notary theme: bronze */
+  [data-theme="notary"] {
+    --brand: 35 45% 36%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 35 55% 95%;
+    --brand-hover: 35 45% 30%;
+    --brand-dark: 35 45% 24%;
+    --brand-darker: 35 35% 16%;
+    --brand-muted: 35 25% 72%;
+    --brand-border: 35 25% 78%;
+    --brand-border-light: 35 20% 88%;
+    --brand-gradient-to: 50 70% 95%;
+  }
+
+  /* TEAS theme: olive */
+  [data-theme="teas"] {
+    --brand: 95 50% 36%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 95 60% 95%;
+    --brand-hover: 95 50% 30%;
+    --brand-dark: 95 50% 24%;
+    --brand-darker: 95 40% 16%;
+    --brand-muted: 95 30% 72%;
+    --brand-border: 95 30% 78%;
+    --brand-border-light: 95 25% 88%;
+    --brand-gradient-to: 60 70% 95%;
+  }
+
+  /* AWS theme: orange */
+  [data-theme="aws"] {
+    --brand: 20 90% 46%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 20 90% 95%;
+    --brand-hover: 20 90% 40%;
+    --brand-dark: 20 90% 34%;
+    --brand-darker: 20 80% 16%;
+    --brand-muted: 20 70% 72%;
+    --brand-border: 20 70% 78%;
+    --brand-border-light: 20 65% 88%;
+    --brand-gradient-to: 40 70% 95%;
+  }
+
+  /* CompTIA A+ theme: crimson */
+  [data-theme="aplus"] {
+    --brand: 350 75% 44%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 350 85% 95%;
+    --brand-hover: 350 75% 38%;
+    --brand-dark: 350 75% 32%;
+    --brand-darker: 350 65% 16%;
+    --brand-muted: 350 55% 72%;
+    --brand-border: 350 55% 78%;
+    --brand-border-light: 350 50% 88%;
+    --brand-gradient-to: 20 70% 95%;
+  }
+
   /* Motorcycle permit theme: deep red */
   [data-theme="moto"] {
     --brand: 355 72% 44%;

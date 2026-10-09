@@ -13,7 +13,7 @@
  * This file must stay free of question-data imports (the store imports it).
  */
 
-export type ExamId = "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "htl" | "cst" | "crcst";
+export type ExamId = "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "emt" | "foodmgr" | "realestate" | "insurance" | "notary" | "teas" | "aws" | "aplus" | "htl" | "cst" | "crcst";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (?set=N). */
@@ -53,7 +53,7 @@ export interface ExamConfig {
   /** Question ID prefix, e.g. "HTL-". */
   questionIdPrefix: string;
   /** Header icon key (see CDLHeader). */
-  icon: "truck" | "bike" | "flag" | "plane" | "radio" | "microscope" | "scissors" | "shield";
+  icon: "truck" | "bike" | "flag" | "plane" | "radio" | "thermometer" | "heart" | "pill" | "syringe" | "stethoscope" | "activity" | "tooth" | "siren" | "utensils" | "house" | "umbrella" | "stamp" | "graduation" | "cloud" | "cpu" | "microscope" | "scissors" | "shield";
   testCount: number;
   questionsPerTest: number;
   passPct: number;
@@ -443,6 +443,880 @@ const ham: ExamConfig = {
   },
 };
 
+const epa608: ExamConfig = {
+  id: "epa608",
+  stateCode: "EPA608",
+  idBase: 1000,
+  slug: "/epa-608",
+  landingPath: "/epa-608-practice-test",
+  name: "EPA 608 Practice Test",
+  shortName: "EPA 608",
+  examLabel: "EPA Section 608",
+  fullName: "EPA Section 608 technician certification exam",
+  questionIdPrefix: "EPA-",
+  icon: "thermometer",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 72,
+  // Four real sections of 25 at 18 to pass (72%). The mixed tests draw from
+  // each in proportion; the training sets are the sections themselves.
+  blueprint: {
+    epaCore: 18,
+    epaType1: 10,
+    epaType2: 13,
+    epaType3: 9,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 1001, name: "Core", categories: ["epaCore"], size: 72, weightLabel: "Required for every certification" },
+    { setNumber: 2, id: 1002, name: "Type I: Small Appliances", categories: ["epaType1"], size: 40, weightLabel: "Charges of 5 lb or less" },
+    { setNumber: 3, id: 1003, name: "Type II: High-Pressure", categories: ["epaType2"], size: 52, weightLabel: "Split systems, commercial refrigeration" },
+    { setNumber: 4, id: 1004, name: "Type III: Low-Pressure", categories: ["epaType3"], size: 36, weightLabel: "Low-pressure chillers" },
+  ],
+  categoryLabels: {
+    epaCore: "Core",
+    epaType1: "Type I: Small Appliances",
+    epaType2: "Type II: High-Pressure",
+    epaType3: "Type III: Low-Pressure",
+  },
+  copy: {
+    guestPrompt: "to save your EPA 608 progress and track every question you miss",
+    trainingHeading: "Train one section at a time",
+    trainingSub: "Core plus the three types, straight from the EPA test outline. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mixed practice tests · 50 questions across all four sections, 72% to pass",
+    heroSubs: [
+      "Four sections, four mixed tests. Core is on every certification, so start there.",
+      "Mastery first, then test. Each set is one section of the real exam.",
+      "Halfway through. The mixed tests will show where you stand across sections.",
+      "Fix the misses, then retake. Every section wants 18 of 25.",
+      "Full prep done. Book a proctored session and go Universal.",
+    ],
+    sourceLine: "Based on 40 CFR Part 82 Subpart F and the EPA Section 608 test outline. Each real section is 25 questions, 18 to pass.",
+    analyticsKey: "epa608",
+  },
+};
+
+const cna: ExamConfig = {
+  id: "cna",
+  stateCode: "CNA",
+  idBase: 1100,
+  slug: "/cna",
+  landingPath: "/cna-practice-test",
+  name: "CNA Practice Test",
+  shortName: "CNA",
+  examLabel: "CNA Written Exam",
+  fullName: "nurse aide written (knowledge) exam",
+  questionIdPrefix: "CNA-",
+  icon: "heart",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // NNAAP outline: Physical Care 61% (ADL 14, basic nursing 39, restorative 8),
+  // Psychosocial 13% (emotional 11, spiritual/cultural 2), Role 26%
+  // (communication 8, rights 7, legal/ethical 3, team 8).
+  blueprint: {
+    activitiesDailyLiving: 8,
+    basicNursingSkills: 19,
+    restorativeSkills: 4,
+    emotionalMentalHealth: 5,
+    spiritualCultural: 1,
+    communication: 4,
+    clientRights: 4,
+    legalEthical: 1,
+    healthCareTeam: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 1101, name: "Daily Living & Restorative Care", categories: ["activitiesDailyLiving", "restorativeSkills"], size: 48, weightLabel: "22% of the exam" },
+    { setNumber: 2, id: 1102, name: "Basic Nursing Skills", categories: ["basicNursingSkills"], size: 76, weightLabel: "39% of the exam" },
+    { setNumber: 3, id: 1103, name: "Psychosocial Care", categories: ["emotionalMentalHealth", "spiritualCultural"], size: 24, weightLabel: "13% of the exam" },
+    { setNumber: 4, id: 1104, name: "Role of the Nurse Aide", categories: ["communication", "clientRights", "legalEthical", "healthCareTeam"], size: 52, weightLabel: "26% of the exam" },
+  ],
+  categoryLabels: {
+    activitiesDailyLiving: "Activities of Daily Living",
+    basicNursingSkills: "Basic Nursing Skills",
+    restorativeSkills: "Restorative Skills",
+    emotionalMentalHealth: "Emotional & Mental Health Needs",
+    spiritualCultural: "Spiritual & Cultural Needs",
+    communication: "Communication",
+    clientRights: "Client Rights",
+    legalEthical: "Legal & Ethical Behavior",
+    healthCareTeam: "Member of the Health Care Team",
+  },
+  copy: {
+    guestPrompt: "to save your CNA exam progress and track every question you miss",
+    trainingHeading: "Train by content area",
+    trainingSub: "Four sets following the NNAAP written exam outline. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real exam",
+    heroSubs: [
+      "Four content areas, four full tests. Basic nursing skills is almost 40% of the exam.",
+      "Mastery first, then test. The sets follow the NNAAP outline most states use.",
+      "Halfway through the outline. The practice tests will show where you stand.",
+      "Fix the misses, then retake. Most states want about 70%.",
+      "Full prep done. Book your written and skills test with your state's vendor.",
+    ],
+    sourceLine: "Weighted to the NNAAP written exam content outline. Your state may use Prometric or Headmaster with a similar outline.",
+    analyticsKey: "cna",
+  },
+};
+
+const ptcb: ExamConfig = {
+  id: "ptcb",
+  stateCode: "PTCB",
+  idBase: 1200,
+  slug: "/ptcb",
+  landingPath: "/ptcb-practice-test",
+  name: "PTCB Practice Test",
+  shortName: "PTCB",
+  examLabel: "PTCE Exam",
+  fullName: "Pharmacy Technician Certification Exam (PTCE)",
+  questionIdPrefix: "PTCB-",
+  icon: "pill",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // PTCE outline effective January 2026: Medications 35%, Patient Safety and
+  // Quality Assurance 23.75%, Order Entry and Processing 22.5%, Federal
+  // Requirements 18.75%. Real exam: 90 items (80 scored), scaled pass 1400/1600.
+  blueprint: {
+    ptcbMedications: 18,
+    ptcbPatientSafety: 12,
+    ptcbOrderEntry: 11,
+    ptcbFederal: 9,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 1201, name: "Medications", categories: ["ptcbMedications"], size: 72, weightLabel: "35% of the exam" },
+    { setNumber: 2, id: 1202, name: "Patient Safety & Quality Assurance", categories: ["ptcbPatientSafety"], size: 48, weightLabel: "24% of the exam" },
+    { setNumber: 3, id: 1203, name: "Order Entry & Processing", categories: ["ptcbOrderEntry"], size: 44, weightLabel: "22% of the exam" },
+    { setNumber: 4, id: 1204, name: "Federal Requirements", categories: ["ptcbFederal"], size: 36, weightLabel: "19% of the exam" },
+  ],
+  categoryLabels: {
+    ptcbMedications: "Medications",
+    ptcbPatientSafety: "Patient Safety & Quality Assurance",
+    ptcbOrderEntry: "Order Entry & Processing",
+    ptcbFederal: "Federal Requirements",
+  },
+  copy: {
+    guestPrompt: "to save your PTCE progress and track every question you miss",
+    trainingHeading: "Train by knowledge domain",
+    trainingSub: "Four sets matching the four PTCE domains. Instant feedback, worked math, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real exam",
+    heroSubs: [
+      "Four domains, four full tests. Medications is 35% of the exam and math runs through all of it.",
+      "Mastery first, then test. The sets follow the 2026 PTCE content outline.",
+      "Halfway through the outline. The practice tests will show where you stand.",
+      "Fix the misses, then retake. Aim for 70% or better on every test before exam day.",
+      "Full prep done. Schedule your PTCE at a Pearson VUE center.",
+    ],
+    sourceLine: "Weighted to the PTCB PTCE content outline effective January 2026. Federal law only; state rules vary.",
+    analyticsKey: "ptcb",
+  },
+};
+
+const phleb: ExamConfig = {
+  id: "phleb",
+  stateCode: "PHLEB",
+  idBase: 1300,
+  slug: "/phlebotomy",
+  landingPath: "/phlebotomy-practice-test",
+  name: "Phlebotomy Practice Test",
+  shortName: "Phlebotomy",
+  examLabel: "Phlebotomy Exam",
+  fullName: "phlebotomy technician certification exam (NHA CPT)",
+  questionIdPrefix: "PHL-",
+  icon: "syringe",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // NHA CPT test plan (2025 plan, exam from January 2026): Routine Blood
+  // Collections 28%, Safety and Compliance 26%, Patient Preparation 20%,
+  // Processing 14%, Special Collections 12%. Real exam: 120 items (100 scored),
+  // scaled pass 390 of 500. Also covers ASCP PBT and AMT RPT material.
+  blueprint: {
+    routineCollections: 14,
+    safetyCompliance: 13,
+    patientPreparation: 10,
+    specimenProcessing: 7,
+    specialCollections: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 1301, name: "Routine Blood Collections", categories: ["routineCollections"], size: 56, weightLabel: "28% of the exam" },
+    { setNumber: 2, id: 1302, name: "Safety & Compliance", categories: ["safetyCompliance"], size: 52, weightLabel: "26% of the exam" },
+    { setNumber: 3, id: 1303, name: "Patient Preparation", categories: ["patientPreparation"], size: 40, weightLabel: "20% of the exam" },
+    { setNumber: 4, id: 1304, name: "Processing & Special Collections", categories: ["specimenProcessing", "specialCollections"], size: 52, weightLabel: "26% of the exam" },
+  ],
+  categoryLabels: {
+    routineCollections: "Routine Blood Collections",
+    safetyCompliance: "Safety & Compliance",
+    patientPreparation: "Patient Preparation",
+    specimenProcessing: "Processing",
+    specialCollections: "Special Collections",
+  },
+  copy: {
+    guestPrompt: "to save your phlebotomy exam progress and track every question you miss",
+    trainingHeading: "Train by domain",
+    trainingSub: "Four sets following the NHA CPT test plan. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real exam",
+    heroSubs: [
+      "Five domains, four full tests. Routine collections and safety are more than half the exam.",
+      "Mastery first, then test. The sets follow the NHA CPT test plan.",
+      "Halfway through the outline. The practice tests will show where you stand.",
+      "Fix the misses, then retake. Aim for 70% or better on every test before exam day.",
+      "Full prep done. Schedule your CPT, PBT or RPT exam.",
+    ],
+    sourceLine: "Weighted to the NHA CPT test plan. Order of draw and technique follow CLSI GP41 and GP42.",
+    analyticsKey: "phleb",
+  },
+};
+
+const ccma: ExamConfig = {
+  id: "ccma",
+  stateCode: "CCMA",
+  idBase: 1400,
+  slug: "/ccma",
+  landingPath: "/ccma-practice-test",
+  name: "CCMA Practice Test",
+  shortName: "CCMA",
+  examLabel: "CCMA Exam",
+  fullName: "Certified Clinical Medical Assistant (NHA CCMA) exam",
+  questionIdPrefix: "CCMA-",
+  icon: "stethoscope",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // NHA CCMA test plan (3.0, 2022 job analysis): Foundational Knowledge 10%,
+  // Anatomy and Physiology 5%, Clinical Patient Care 56% (intake and vitals,
+  // general care, infection control and safety, POC testing and lab,
+  // phlebotomy, EKG), Care Coordination and Education 8%, Administrative 8%,
+  // Communication 8%, Law and Ethics 5%. Real exam: 180 items (150 scored),
+  // scaled pass 390 of 500.
+  blueprint: {
+    ccmaFoundations: 5,
+    ccmaAnatomy: 3,
+    ccmaIntakeVitals: 5,
+    ccmaGeneralCare: 9,
+    ccmaInfectionSafety: 5,
+    ccmaLabProcedures: 3,
+    ccmaPhlebotomy: 4,
+    ccmaEkg: 2,
+    ccmaCareCoordination: 4,
+    ccmaAdministrative: 4,
+    ccmaCommunication: 4,
+    ccmaLawEthics: 2,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 1401, name: "Foundations & Anatomy", categories: ["ccmaFoundations", "ccmaAnatomy"], size: 32, weightLabel: "15% of the exam" },
+    { setNumber: 2, id: 1402, name: "Intake, Vitals & Patient Care", categories: ["ccmaIntakeVitals", "ccmaGeneralCare"], size: 56, weightLabel: "28% of the exam" },
+    { setNumber: 3, id: 1403, name: "Infection Control, Lab, Phlebotomy & EKG", categories: ["ccmaInfectionSafety", "ccmaLabProcedures", "ccmaPhlebotomy", "ccmaEkg"], size: 56, weightLabel: "28% of the exam" },
+    { setNumber: 4, id: 1404, name: "Coordination, Admin, Communication & Law", categories: ["ccmaCareCoordination", "ccmaAdministrative", "ccmaCommunication", "ccmaLawEthics"], size: 56, weightLabel: "29% of the exam" },
+  ],
+  categoryLabels: {
+    ccmaFoundations: "Foundational Knowledge & Basic Science",
+    ccmaAnatomy: "Anatomy & Physiology",
+    ccmaIntakeVitals: "Patient Intake & Vitals",
+    ccmaGeneralCare: "General Patient Care",
+    ccmaInfectionSafety: "Infection Control & Safety",
+    ccmaLabProcedures: "Point of Care Testing & Lab",
+    ccmaPhlebotomy: "Phlebotomy",
+    ccmaEkg: "EKG & Cardiovascular Testing",
+    ccmaCareCoordination: "Patient Care Coordination & Education",
+    ccmaAdministrative: "Administrative Assisting",
+    ccmaCommunication: "Communication & Customer Service",
+    ccmaLawEthics: "Medical Law & Ethics",
+  },
+  copy: {
+    guestPrompt: "to save your CCMA exam progress and track every question you miss",
+    trainingHeading: "Train by domain",
+    trainingSub: "Four sets covering all seven NHA CCMA domains. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real exam",
+    heroSubs: [
+      "Seven domains, four full tests. Clinical patient care is more than half the exam.",
+      "Mastery first, then test. The sets follow the NHA CCMA test plan.",
+      "Halfway through the outline. The practice tests will show where you stand.",
+      "Fix the misses, then retake. Aim for 70% or better on every test before exam day.",
+      "Full prep done. Schedule your CCMA exam with NHA.",
+    ],
+    sourceLine: "Weighted to the NHA CCMA test plan (3.0). Scope of practice varies by state.",
+    analyticsKey: "ccma",
+  },
+};
+
+const cet: ExamConfig = {
+  id: "cet",
+  stateCode: "CET",
+  idBase: 1500,
+  slug: "/ekg",
+  landingPath: "/ekg-technician-practice-test",
+  name: "EKG Technician Practice Test",
+  shortName: "EKG",
+  examLabel: "CET Exam",
+  fullName: "Certified EKG Technician (NHA CET) exam",
+  questionIdPrefix: "CET-",
+  icon: "activity",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // NHA CET test plan (2017 job analysis, in force through 2026): EKG
+  // Acquisition 44%, Safety, Compliance and Coordinated Patient Care 32%,
+  // EKG Analysis and Interpretation 24%. Real exam: 120 items (100 scored),
+  // scaled pass 390 of 500.
+  blueprint: {
+    ekgAcquisition: 22,
+    ekgSafetyPatientCare: 16,
+    ekgAnalysis: 12,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 1501, name: "EKG Acquisition: Setup & Leads", categories: ["ekgAcquisition"], size: 88, weightLabel: "44% of the exam" },
+    { setNumber: 2, id: 1502, name: "Safety, Compliance & Patient Care", categories: ["ekgSafetyPatientCare"], size: 64, weightLabel: "32% of the exam" },
+    { setNumber: 3, id: 1503, name: "EKG Analysis & Interpretation", categories: ["ekgAnalysis"], size: 48, weightLabel: "24% of the exam" },
+  ],
+  categoryLabels: {
+    ekgAcquisition: "EKG Acquisition",
+    ekgSafetyPatientCare: "Safety, Compliance & Patient Care",
+    ekgAnalysis: "EKG Analysis & Interpretation",
+  },
+  copy: {
+    guestPrompt: "to save your EKG exam progress and track every question you miss",
+    trainingHeading: "Train by domain",
+    trainingSub: "Three sets matching the three NHA CET domains. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real exam",
+    heroSubs: [
+      "Three domains, four full tests. Acquisition is almost half the exam.",
+      "Mastery first, then test. The sets follow the NHA CET test plan.",
+      "Halfway through the outline. The practice tests will show where you stand.",
+      "Fix the misses, then retake. Aim for 70% or better on every test before exam day.",
+      "Full prep done. Schedule your CET exam with NHA.",
+    ],
+    sourceLine: "Weighted to the NHA CET test plan. Rhythm items describe the strip in words; practice with real tracings too.",
+    analyticsKey: "cet",
+  },
+};
+
+const danb: ExamConfig = {
+  id: "danb",
+  stateCode: "DANB",
+  idBase: 1600,
+  slug: "/dental-assistant",
+  landingPath: "/dental-assistant-practice-test",
+  name: "Dental Assistant Practice Test",
+  shortName: "Dental",
+  examLabel: "DANB CDA Exam",
+  fullName: "DANB Certified Dental Assistant (CDA) exam",
+  questionIdPrefix: "DA-",
+  icon: "tooth",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // The DANB CDA is three component exams: General Chairside (GC, 95
+  // items), Radiation Health and Safety (RHS, 75 items) and Infection
+  // Control (ICE, 75 items). Mixed tests split 50/25/25 across the three,
+  // with GC in its outline's proportions (evaluation 17%, patient management
+  // 17%, chairside 50%, materials 16%). Scaled scoring; 70% is a safe target.
+  blueprint: {
+    gcEvaluation: 4,
+    gcPatientManagement: 4,
+    gcChairside: 13,
+    gcDentalMaterials: 4,
+    rhsRadiography: 13,
+    iceInfectionControl: 12,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 1601, name: "Chairside Dentistry (GC)", categories: ["gcChairside"], size: 52, weightLabel: "26% of the tests" },
+    { setNumber: 2, id: 1602, name: "Evaluation, Patient Management & Materials (GC)", categories: ["gcEvaluation", "gcPatientManagement", "gcDentalMaterials"], size: 48, weightLabel: "24% of the tests" },
+    { setNumber: 3, id: 1603, name: "Radiation Health & Safety (RHS)", categories: ["rhsRadiography"], size: 52, weightLabel: "26% of the tests" },
+    { setNumber: 4, id: 1604, name: "Infection Control (ICE)", categories: ["iceInfectionControl"], size: 48, weightLabel: "24% of the tests" },
+  ],
+  categoryLabels: {
+    gcEvaluation: "Collection & Recording of Clinical Data",
+    gcPatientManagement: "Patient Management & Administration",
+    gcChairside: "Chairside Dentistry",
+    gcDentalMaterials: "Dental Materials",
+    rhsRadiography: "Radiation Health & Safety",
+    iceInfectionControl: "Infection Control",
+  },
+  copy: {
+    guestPrompt: "to save your dental assistant exam progress and track every question you miss",
+    trainingHeading: "Train by component exam",
+    trainingSub: "Four sets covering General Chairside, Radiation Health and Safety, and Infection Control. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions across all three CDA components",
+    heroSubs: [
+      "Three component exams, four full tests. Chairside dentistry is half of the GC exam.",
+      "Mastery first, then test. The sets follow the DANB GC, RHS and ICE outlines.",
+      "Halfway through the outlines. The practice tests will show where you stand.",
+      "Fix the misses, then retake. Aim for 70% or better on every test before exam day.",
+      "Full prep done. Schedule your GC, RHS and ICE exams with DANB.",
+    ],
+    sourceLine: "Weighted to the DANB GC, RHS (March 2025) and ICE (March 2025) outlines. Expanded functions vary by state.",
+    analyticsKey: "danb",
+  },
+};
+
+const emt: ExamConfig = {
+  id: "emt",
+  stateCode: "EMT",
+  idBase: 1700,
+  slug: "/emt",
+  landingPath: "/emt-practice-test",
+  name: "EMT Practice Test",
+  shortName: "EMT",
+  examLabel: "NREMT EMT Exam",
+  fullName: "National Registry EMT cognitive exam",
+  questionIdPrefix: "EMT-",
+  icon: "siren",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // NREMT EMT examination specifications (April 2025, 2023 practice
+  // analysis): Scene Size-up and Safety 15-19%, Primary Assessment 39-43%,
+  // Secondary Assessment 5-9%, Patient Treatment and Transport 20-24%,
+  // Operations 10-14%. Real exam: adaptive, 70 to 120 items in 2 hours.
+  blueprint: {
+    sceneSizeUp: 9,
+    primaryAssessment: 20,
+    secondaryAssessment: 4,
+    treatmentTransport: 11,
+    emsOperations: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 1701, name: "Scene Size-up & Safety", categories: ["sceneSizeUp"], size: 36, weightLabel: "17% of the exam" },
+    { setNumber: 2, id: 1702, name: "Primary Assessment", categories: ["primaryAssessment"], size: 80, weightLabel: "41% of the exam" },
+    { setNumber: 3, id: 1703, name: "Secondary Assessment & Operations", categories: ["secondaryAssessment", "emsOperations"], size: 40, weightLabel: "19% of the exam" },
+    { setNumber: 4, id: 1704, name: "Patient Treatment & Transport", categories: ["treatmentTransport"], size: 44, weightLabel: "22% of the exam" },
+  ],
+  categoryLabels: {
+    sceneSizeUp: "Scene Size-up & Safety",
+    primaryAssessment: "Primary Assessment",
+    secondaryAssessment: "Secondary Assessment",
+    treatmentTransport: "Patient Treatment & Transport",
+    emsOperations: "Operations",
+  },
+  copy: {
+    guestPrompt: "to save your NREMT progress and track every question you miss",
+    trainingHeading: "Train by domain",
+    trainingSub: "Four sets covering the five NREMT EMT domains. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests \u00b7 50 questions weighted like the real exam",
+    heroSubs: [
+      "Five domains, four full tests. Primary assessment is more than 40% of the exam.",
+      "Mastery first, then test. The sets follow the 2025 NREMT test plan.",
+      "Halfway through the outline. The practice tests will show where you stand.",
+      "Fix the misses, then retake. Aim for 70% or better on every test before exam day.",
+      "Full prep done. Schedule your NREMT cognitive exam at Pearson VUE.",
+    ],
+    sourceLine: "Weighted to the NREMT EMT examination specifications (April 2025). Protocols vary; follow local medical direction.",
+    analyticsKey: "emt",
+  },
+};
+
+const foodmgr: ExamConfig = {
+  id: "foodmgr",
+  stateCode: "FOODMGR",
+  idBase: 1800,
+  slug: "/food-manager",
+  landingPath: "/food-manager-practice-test",
+  name: "Food Manager Practice Test",
+  shortName: "Food Safety",
+  examLabel: "Food Manager Exam",
+  fullName: "Certified Food Protection Manager exam",
+  questionIdPrefix: "FSM-",
+  icon: "utensils",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // Certified Food Protection Manager exams (ServSafe Manager, NRFSP,
+  // Prometric, StateFoodSafety and other ANAB-CFP accredited programs) on the
+  // FDA Food Code. Typical exam: 80 scored items, 2 hours, 75% to pass.
+  blueprint: {
+    foodborneContamination: 8,
+    flowOfFood: 12,
+    timeTemperature: 10,
+    personalHygiene: 8,
+    cleaningSanitizing: 6,
+    facilitiesPests: 3,
+    managementSystems: 3,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 1801, name: "Contamination & Personal Hygiene", categories: ["foodborneContamination", "personalHygiene"], size: 64, weightLabel: "32% of the exam" },
+    { setNumber: 2, id: 1802, name: "The Flow of Food", categories: ["flowOfFood"], size: 48, weightLabel: "24% of the exam" },
+    { setNumber: 3, id: 1803, name: "Time & Temperature Control", categories: ["timeTemperature"], size: 40, weightLabel: "20% of the exam" },
+    { setNumber: 4, id: 1804, name: "Cleaning, Facilities & Management", categories: ["cleaningSanitizing", "facilitiesPests", "managementSystems"], size: 48, weightLabel: "24% of the exam" },
+  ],
+  categoryLabels: {
+    foodborneContamination: "Foodborne Illness & Contamination",
+    flowOfFood: "The Flow of Food",
+    timeTemperature: "Time & Temperature Control",
+    personalHygiene: "Personal Hygiene & Employee Health",
+    cleaningSanitizing: "Cleaning & Sanitizing",
+    facilitiesPests: "Facilities, Equipment & Pest Control",
+    managementSystems: "Food Safety Management & Regulation",
+  },
+  copy: {
+    guestPrompt: "to save your food manager exam progress and track every question you miss",
+    trainingHeading: "Train by content area",
+    trainingSub: "Four sets covering every Food Code content area on the manager exam. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests \u00b7 50 questions weighted like the real exam",
+    heroSubs: [
+      "Seven content areas, four full tests. Temperatures and the flow of food are the big ones.",
+      "Mastery first, then test. The sets follow the FDA Food Code the manager exams are built on.",
+      "Halfway through the content. The practice tests will show where you stand.",
+      "Fix the misses, then retake. The real exams pass at 75%, so aim higher here.",
+      "Full prep done. Book your accredited manager exam with any ANAB-CFP provider.",
+    ],
+    sourceLine: "Built on the FDA Food Code (2017 and 2022). Your local code may differ; check with your health department.",
+    analyticsKey: "foodmgr",
+  },
+};
+
+const realestate: ExamConfig = {
+  id: "realestate",
+  stateCode: "REALESTATE",
+  idBase: 1900,
+  slug: "/real-estate",
+  landingPath: "/real-estate-practice-test",
+  name: "Real Estate Practice Test",
+  shortName: "Real Estate",
+  examLabel: "Real Estate Exam",
+  fullName: "real estate salesperson national exam",
+  questionIdPrefix: "RE-",
+  icon: "house",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // Pearson VUE National/General Exam Content Outline for Salespersons
+  // (2025; 80 scored items; I 11, II 9, III 11, IV 16, V 10, VI 9, VII 7,
+  // VIII 7), which closely matches the PSI national outline. National
+  // portion only; state law is never tested.
+  blueprint: {
+    rePropertyCharacteristics: 7,
+    reOwnershipTitle: 6,
+    reValuation: 7,
+    reContractsAgency: 10,
+    rePractice: 6,
+    reDisclosures: 5,
+    reFinancing: 4,
+    reMath: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 1901, name: "Property, Ownership & Title", categories: ["rePropertyCharacteristics", "reOwnershipTitle"], size: 52, weightLabel: "25% of the exam" },
+    { setNumber: 2, id: 1902, name: "Contracts & Agency", categories: ["reContractsAgency"], size: 40, weightLabel: "20% of the exam" },
+    { setNumber: 3, id: 1903, name: "Practice, Disclosures & Financing", categories: ["rePractice", "reDisclosures", "reFinancing"], size: 60, weightLabel: "32% of the exam" },
+    { setNumber: 4, id: 1904, name: "Valuation & Real Estate Math", categories: ["reValuation", "reMath"], size: 48, weightLabel: "23% of the exam" },
+  ],
+  categoryLabels: {
+    rePropertyCharacteristics: "Property Characteristics, Descriptions & Use",
+    reOwnershipTitle: "Ownership, Transfer & Title",
+    reValuation: "Property Value & Appraisal",
+    reContractsAgency: "Contracts & Agency",
+    rePractice: "Real Estate Practice",
+    reDisclosures: "Disclosures & Environmental Issues",
+    reFinancing: "Financing & Settlement",
+    reMath: "Real Estate Math",
+  },
+  copy: {
+    guestPrompt: "to save your real estate exam progress and track every question you miss",
+    trainingHeading: "Train by content area",
+    trainingSub: "Four sets covering all eight national outline areas. Instant feedback, worked math, and missed questions come back until you master them.",
+    testsHeading: "Practice tests \u00b7 50 questions weighted like the national exam",
+    heroSubs: [
+      "Eight content areas, four full tests. Contracts and agency is a fifth of the exam.",
+      "Mastery first, then test. The sets follow the Pearson VUE and PSI national outlines.",
+      "Halfway through the outline. The practice tests will show where you stand.",
+      "Fix the misses, then retake. Most states pass the national portion at 70 to 75%.",
+      "Full prep done. Add your state's law portion and schedule your exam.",
+    ],
+    sourceLine: "Weighted to the Pearson VUE national salesperson outline (2025), which matches PSI's. Your state portion is separate.",
+    analyticsKey: "realestate",
+  },
+};
+
+const insurance: ExamConfig = {
+  id: "insurance",
+  stateCode: "LIFEHEALTH",
+  idBase: 2000,
+  slug: "/life-health-insurance",
+  landingPath: "/life-health-insurance-practice-test",
+  name: "Life & Health Insurance Practice Test",
+  shortName: "Insurance",
+  examLabel: "Life & Health Exam",
+  fullName: "life and health insurance license exam (general portion)",
+  questionIdPrefix: "LH-",
+  icon: "umbrella",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // General (non-state) portion of the life, accident and health producer
+  // exams (Pearson VUE, PSI, Prometric) built on the NAIC model and the
+  // standard prelicensing texts. Typical combined exam: 150 scored items,
+  // 70% to pass. Federal and general content only; state rules never tested.
+  blueprint: {
+    insuranceRegulation: 4,
+    generalInsurance: 5,
+    lifeBasics: 5,
+    lifePolicyTypes: 6,
+    lifeProvisions: 8,
+    annuitiesRetirement: 5,
+    healthBasics: 5,
+    healthProvisions: 5,
+    healthPolicyTypes: 7,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 2001, name: "Insurance Basics & Regulation", categories: ["insuranceRegulation", "generalInsurance"], size: 36, weightLabel: "18% of the exam" },
+    { setNumber: 2, id: 2002, name: "Life Insurance Policies & Provisions", categories: ["lifeBasics", "lifePolicyTypes", "lifeProvisions"], size: 76, weightLabel: "38% of the exam" },
+    { setNumber: 3, id: 2003, name: "Annuities, Taxation & Health Basics", categories: ["annuitiesRetirement", "healthBasics"], size: 40, weightLabel: "20% of the exam" },
+    { setNumber: 4, id: 2004, name: "Health Policy Provisions & Types", categories: ["healthProvisions", "healthPolicyTypes"], size: 48, weightLabel: "24% of the exam" },
+  ],
+  categoryLabels: {
+    insuranceRegulation: "Insurance Regulation",
+    generalInsurance: "General Insurance Concepts",
+    lifeBasics: "Life Insurance Basics",
+    lifePolicyTypes: "Life Policy Types",
+    lifeProvisions: "Life Policy Provisions, Options & Riders",
+    annuitiesRetirement: "Annuities, Taxation & Retirement",
+    healthBasics: "Health Insurance Basics",
+    healthProvisions: "Health Policy Provisions",
+    healthPolicyTypes: "Health Policy Types",
+  },
+  copy: {
+    guestPrompt: "to save your insurance exam progress and track every question you miss",
+    trainingHeading: "Train by content area",
+    trainingSub: "Four sets covering the general portion of the life and health exam. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests \u00b7 50 questions weighted like the general portion",
+    heroSubs: [
+      "Nine content areas, four full tests. Life policies and provisions are almost 40% of the exam.",
+      "Mastery first, then test. The sets follow the general portion every state tests.",
+      "Halfway through the outline. The practice tests will show where you stand.",
+      "Fix the misses, then retake. Most states pass at 70%, so aim higher here.",
+      "Full prep done. Add your state's law portion and schedule your exam.",
+    ],
+    sourceLine: "General portion only, on the NAIC model and standard prelicensing texts. Your state portion is separate.",
+    analyticsKey: "insurance",
+  },
+};
+
+const notary: ExamConfig = {
+  id: "notary",
+  stateCode: "NOTARY",
+  idBase: 2100,
+  slug: "/notary",
+  landingPath: "/notary-practice-test",
+  name: "Notary Practice Test",
+  shortName: "Notary",
+  examLabel: "Notary Exam",
+  fullName: "notary public exam",
+  questionIdPrefix: "NP-",
+  icon: "stamp",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // General notary law and practice shared by the states that test notaries
+  // (Model Notary Act, RULONA, NNA code). Acts, identification, journal and
+  // seal, ethics, commission and liability. State-specific numbers are never
+  // tested; explanations say "varies by state".
+  blueprint: {
+    notarialActs: 14,
+    signerIdentification: 10,
+    journalSealRecords: 10,
+    ethicsProhibitedActs: 10,
+    commissionLiability: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 2101, name: "Notarial Acts & Certificates", categories: ["notarialActs"], size: 56, weightLabel: "28% of the tests" },
+    { setNumber: 2, id: 2102, name: "Identification & Signers", categories: ["signerIdentification"], size: 40, weightLabel: "20% of the tests" },
+    { setNumber: 3, id: 2103, name: "Journal, Seal & Records", categories: ["journalSealRecords"], size: 40, weightLabel: "20% of the tests" },
+    { setNumber: 4, id: 2104, name: "Ethics, Commission & Liability", categories: ["ethicsProhibitedActs", "commissionLiability"], size: 64, weightLabel: "32% of the tests" },
+  ],
+  categoryLabels: {
+    notarialActs: "Notarial Acts & Certificates",
+    signerIdentification: "Identification & Signers",
+    journalSealRecords: "Journal, Seal & Records",
+    ethicsProhibitedActs: "Ethics & Prohibited Acts",
+    commissionLiability: "Commission & Liability",
+  },
+  copy: {
+    guestPrompt: "to save your notary exam progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets covering the notary duties every state tests. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests \u00b7 50 questions on general notary law",
+    heroSubs: [
+      "Five topics, four full tests. Acts and identification are half of every test.",
+      "Mastery first, then test. The sets cover the duties every state's exam tests.",
+      "Halfway through the topics. The practice tests will show where you stand.",
+      "Fix the misses, then retake. Aim for 80% or better, then study your state's handbook.",
+      "Full prep done. Review your state's notary handbook for its own numbers and schedule the exam.",
+    ],
+    sourceLine: "General notary law on the Model Notary Act and RULONA. Fees, terms and journal rules vary by state; read your state's handbook.",
+    analyticsKey: "notary",
+  },
+};
+
+const teas: ExamConfig = {
+  id: "teas",
+  stateCode: "TEAS",
+  idBase: 2200,
+  slug: "/teas",
+  landingPath: "/teas-practice-test",
+  name: "TEAS Practice Test",
+  shortName: "TEAS",
+  examLabel: "ATI TEAS 7",
+  fullName: "ATI TEAS 7 nursing school entrance exam",
+  questionIdPrefix: "TEAS-",
+  icon: "graduation",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // ATI TEAS 7: Reading 45 items (39 scored), Math 38 (34), Science 50
+  // (44), English 37 (33). Mixed 50-item tests in the scored proportions;
+  // Reading items carry their own short passage. Single-answer items only.
+  blueprint: {
+    teasReading: 13,
+    teasMath: 11,
+    teasScience: 15,
+    teasEnglish: 11,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 2201, name: "Reading", categories: ["teasReading"], size: 52, weightLabel: "26% of the exam" },
+    { setNumber: 2, id: 2202, name: "Mathematics", categories: ["teasMath"], size: 44, weightLabel: "23% of the exam" },
+    { setNumber: 3, id: 2203, name: "Science", categories: ["teasScience"], size: 60, weightLabel: "29% of the exam" },
+    { setNumber: 4, id: 2204, name: "English & Language Usage", categories: ["teasEnglish"], size: 44, weightLabel: "22% of the exam" },
+  ],
+  categoryLabels: {
+    teasReading: "Reading",
+    teasMath: "Mathematics",
+    teasScience: "Science",
+    teasEnglish: "English & Language Usage",
+  },
+  copy: {
+    guestPrompt: "to save your TEAS progress and track every question you miss",
+    trainingHeading: "Train by section",
+    trainingSub: "Four sets, one per TEAS section. Instant feedback, worked math, and missed questions come back until you master them.",
+    testsHeading: "Practice tests \u00b7 50 questions mixed like the real exam",
+    heroSubs: [
+      "Four sections, four full tests. Science and reading are more than half the exam.",
+      "Mastery first, then test. The sets match the four TEAS 7 sections.",
+      "Halfway through the sections. The practice tests will show where you stand.",
+      "Fix the misses, then retake. Most programs want 60 to 70%; aim higher here.",
+      "Full prep done. Schedule your TEAS with ATI or your program.",
+    ],
+    sourceLine: "Matched to the ATI TEAS 7 blueprint. Reading items carry a short passage; the real exam also has other item types.",
+    analyticsKey: "teas",
+  },
+};
+
+const aws: ExamConfig = {
+  id: "aws",
+  stateCode: "AWSCCP",
+  idBase: 2300,
+  slug: "/aws-cloud-practitioner",
+  landingPath: "/aws-cloud-practitioner-practice-test",
+  name: "AWS Cloud Practitioner Practice Test",
+  shortName: "AWS CCP",
+  examLabel: "AWS CLF-C02",
+  fullName: "AWS Certified Cloud Practitioner (CLF-C02) exam",
+  questionIdPrefix: "AWS-",
+  icon: "cloud",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // AWS Certified Cloud Practitioner CLF-C02: Cloud Concepts 24%, Security
+  // and Compliance 30%, Cloud Technology and Services 34%, Billing, Pricing
+  // and Support 12%. Real exam: 65 items (50 scored), 700 of 1000 to pass.
+  blueprint: {
+    cloudConcepts: 12,
+    securityCompliance: 15,
+    technologyServices: 17,
+    billingPricing: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 2301, name: "Cloud Concepts", categories: ["cloudConcepts"], size: 48, weightLabel: "24% of the exam" },
+    { setNumber: 2, id: 2302, name: "Security & Compliance", categories: ["securityCompliance"], size: 60, weightLabel: "30% of the exam" },
+    { setNumber: 3, id: 2303, name: "Cloud Technology & Services", categories: ["technologyServices"], size: 68, weightLabel: "34% of the exam" },
+    { setNumber: 4, id: 2304, name: "Billing, Pricing & Support", categories: ["billingPricing"], size: 24, weightLabel: "12% of the exam" },
+  ],
+  categoryLabels: {
+    cloudConcepts: "Cloud Concepts",
+    securityCompliance: "Security & Compliance",
+    technologyServices: "Cloud Technology & Services",
+    billingPricing: "Billing, Pricing & Support",
+  },
+  copy: {
+    guestPrompt: "to save your AWS exam progress and track every question you miss",
+    trainingHeading: "Train by domain",
+    trainingSub: "Four sets matching the four CLF-C02 domains. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests \u00b7 50 questions weighted like the real exam",
+    heroSubs: [
+      "Four domains, four full tests. Technology and services is a third of the exam.",
+      "Mastery first, then test. The sets follow the CLF-C02 exam guide.",
+      "Halfway through the guide. The practice tests will show where you stand.",
+      "Fix the misses, then retake. 700 of 1000 is about 70%, so aim higher here.",
+      "Full prep done. Schedule your CLF-C02 at Pearson VUE or online.",
+    ],
+    sourceLine: "Weighted to the AWS Certified Cloud Practitioner (CLF-C02) exam guide. Service names and features as of 2026.",
+    analyticsKey: "aws",
+  },
+};
+
+const aplus: ExamConfig = {
+  id: "aplus",
+  stateCode: "APLUS",
+  idBase: 2400,
+  slug: "/comptia-a-plus",
+  landingPath: "/comptia-a-plus-practice-test",
+  name: "CompTIA A+ Practice Test",
+  shortName: "CompTIA A+",
+  examLabel: "A+ Core 1 & 2",
+  fullName: "CompTIA A+ (220-1201 and 220-1202) exams",
+  questionIdPrefix: "AP-",
+  icon: "cpu",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // CompTIA A+ Core 1 (220-1201: Mobile 13%, Networking 23%, Hardware 25%,
+  // Virtualization and Cloud 11%, Hardware and Network Troubleshooting 28%)
+  // and Core 2 (220-1202: Operating Systems 28%, Security 28%, Software
+  // Troubleshooting 23%, Operational Procedures 21%). Mixed 50-item tests
+  // split 25/25 across the two cores in each core's proportions.
+  blueprint: {
+    aplusMobile: 3,
+    aplusNetworking: 6,
+    aplusHardware: 6,
+    aplusVirtCloud: 3,
+    aplusHwTroubleshooting: 7,
+    aplusOS: 7,
+    aplusSecurity: 7,
+    aplusSwTroubleshooting: 6,
+    aplusOperational: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 2401, name: "Core 1: Mobile, Networking & Hardware", categories: ["aplusMobile", "aplusNetworking", "aplusHardware"], size: 60, weightLabel: "30% of the tests" },
+    { setNumber: 2, id: 2402, name: "Core 1: Cloud & Hardware Troubleshooting", categories: ["aplusVirtCloud", "aplusHwTroubleshooting"], size: 40, weightLabel: "20% of the tests" },
+    { setNumber: 3, id: 2403, name: "Core 2: Operating Systems & Security", categories: ["aplusOS", "aplusSecurity"], size: 56, weightLabel: "28% of the tests" },
+    { setNumber: 4, id: 2404, name: "Core 2: Software Troubleshooting & Procedures", categories: ["aplusSwTroubleshooting", "aplusOperational"], size: 44, weightLabel: "22% of the tests" },
+  ],
+  categoryLabels: {
+    aplusMobile: "Mobile Devices",
+    aplusNetworking: "Networking",
+    aplusHardware: "Hardware",
+    aplusVirtCloud: "Virtualization & Cloud Computing",
+    aplusHwTroubleshooting: "Hardware & Network Troubleshooting",
+    aplusOS: "Operating Systems",
+    aplusSecurity: "Security",
+    aplusSwTroubleshooting: "Software Troubleshooting",
+    aplusOperational: "Operational Procedures",
+  },
+  copy: {
+    guestPrompt: "to save your A+ progress and track every question you miss",
+    trainingHeading: "Train by core and domain",
+    trainingSub: "Four sets covering all nine A+ domains across Core 1 and Core 2. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests \u00b7 50 questions split across Core 1 and Core 2",
+    heroSubs: [
+      "Nine domains, two cores, four full tests. Troubleshooting is the biggest piece of each.",
+      "Mastery first, then test. The sets follow the 220-1201 and 220-1202 objectives.",
+      "Halfway through the objectives. The practice tests will show where you stand.",
+      "Fix the misses, then retake. Core 1 passes at 675 and Core 2 at 700 of 900.",
+      "Full prep done. Schedule Core 1 and Core 2 at Pearson VUE.",
+    ],
+    sourceLine: "Weighted to the CompTIA A+ 220-1201 and 220-1202 objectives (version 15, 2025). Performance-based items are not simulated.",
+    analyticsKey: "aplus",
+  },
+};
+
 const htl: ExamConfig = {
   id: "htl",
   stateCode: "HTL",
@@ -613,7 +1487,7 @@ const crcst: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, cet, danb, emt, foodmgr, realestate, insurance, notary, teas, aws, aplus, htl, cst, crcst];
 
 export const examSetBase = (exam: ExamConfig) => exam.setIdBase ?? exam.idBase;
 /** Store ID of training set N of an exam. */

@@ -1,5 +1,5 @@
 // Question types
-export type QuestionType = "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HAM" | "HTL" | "CST" | "CRCST";
+export type QuestionType = "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HAM" | "EPA608" | "CNA" | "PTCB" | "PHLEB" | "CCMA" | "CET" | "DANB" | "EMT" | "FOODMGR" | "REALESTATE" | "LIFEHEALTH" | "NOTARY" | "TEAS" | "AWSCCP" | "APLUS" | "HTL" | "CST" | "CRCST";
 
 // Test mode
 export type TestMode = "dmv" | "cdl" | "htl";
@@ -100,7 +100,116 @@ export type QuestionCategory =
   | "hamCircuits"
   | "hamSignals"
   | "hamAntennas"
-  | "hamSafety";
+  | "hamSafety"
+  // EPA Section 608 sections
+  | "epaCore"
+  | "epaType1"
+  | "epaType2"
+  | "epaType3"
+  // CNA (NNAAP) content areas
+  | "activitiesDailyLiving"
+  | "basicNursingSkills"
+  | "restorativeSkills"
+  | "emotionalMentalHealth"
+  | "spiritualCultural"
+  | "communication"
+  | "clientRights"
+  | "legalEthical"
+  | "healthCareTeam"
+  // PTCB (PTCE) knowledge domains
+  | "ptcbMedications"
+  | "ptcbPatientSafety"
+  | "ptcbOrderEntry"
+  | "ptcbFederal"
+  // Phlebotomy (NHA CPT) domains
+  | "routineCollections"
+  | "safetyCompliance"
+  | "patientPreparation"
+  | "specimenProcessing"
+  | "specialCollections"
+  // CCMA (NHA) domains
+  | "ccmaFoundations"
+  | "ccmaAnatomy"
+  | "ccmaIntakeVitals"
+  | "ccmaGeneralCare"
+  | "ccmaInfectionSafety"
+  | "ccmaLabProcedures"
+  | "ccmaPhlebotomy"
+  | "ccmaEkg"
+  | "ccmaCareCoordination"
+  | "ccmaAdministrative"
+  | "ccmaCommunication"
+  | "ccmaLawEthics"
+  // CET (NHA EKG technician) domains
+  | "ekgAcquisition"
+  | "ekgSafetyPatientCare"
+  | "ekgAnalysis"
+  // DANB CDA components
+  | "gcEvaluation"
+  | "gcPatientManagement"
+  | "gcChairside"
+  | "gcDentalMaterials"
+  | "rhsRadiography"
+  | "iceInfectionControl"
+  // NREMT EMT domains
+  | "sceneSizeUp"
+  | "primaryAssessment"
+  | "secondaryAssessment"
+  | "treatmentTransport"
+  | "emsOperations"
+  // Food protection manager content areas
+  | "foodborneContamination"
+  | "flowOfFood"
+  | "timeTemperature"
+  | "personalHygiene"
+  | "cleaningSanitizing"
+  | "facilitiesPests"
+  | "managementSystems"
+  // Real estate salesperson national exam
+  | "rePropertyCharacteristics"
+  | "reOwnershipTitle"
+  | "reValuation"
+  | "reContractsAgency"
+  | "rePractice"
+  | "reDisclosures"
+  | "reFinancing"
+  | "reMath"
+  // Life and health insurance license exam
+  | "insuranceRegulation"
+  | "generalInsurance"
+  | "lifeBasics"
+  | "lifePolicyTypes"
+  | "lifeProvisions"
+  | "annuitiesRetirement"
+  | "healthBasics"
+  | "healthProvisions"
+  | "healthPolicyTypes"
+  // Notary public exam
+  | "notarialActs"
+  | "signerIdentification"
+  | "journalSealRecords"
+  | "ethicsProhibitedActs"
+  | "commissionLiability"
+  // ATI TEAS 7 sections
+  | "teasReading"
+  | "teasMath"
+  | "teasScience"
+  | "teasEnglish"
+  // AWS Cloud Practitioner domains
+  | "cloudConcepts"
+  | "securityCompliance"
+  | "technologyServices"
+  | "billingPricing"
+  // CompTIA A+ Core 1 and Core 2 domains
+  | "aplusMobile"
+  | "aplusNetworking"
+  | "aplusHardware"
+  | "aplusVirtCloud"
+  | "aplusHwTroubleshooting"
+  | "aplusOS"
+  | "aplusSecurity"
+  | "aplusSwTroubleshooting"
+  | "aplusOperational";
 
 export interface Question {
   type: QuestionType;

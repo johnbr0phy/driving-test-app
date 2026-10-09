@@ -1,7 +1,7 @@
 import { Metadata } from "next";
-import Link from "next/link";
 import Image from "next/image";
 import { Smartphone, Monitor } from "lucide-react";
+import { ExamLandingHero, ExamLandingCTA } from "@/components/exam/ExamLandingHero";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
@@ -122,27 +122,12 @@ export default function CSTLandingPage() {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 tracking-tight">
             Free CST Practice Test 2026
           </h1>
-          <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Prepare for the NBSTSA Certified Surgical Technologist (CST) exam.
-            200 questions weighted to the official content outline, with explanations for every answer.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Link
-              href="/cst/dashboard"
-              className="inline-flex items-center justify-center px-8 py-4 bg-brand hover:bg-brand-hover text-white font-semibold rounded-xl transition-colors shadow-lg hover:shadow-xl"
-            >
-              Start Free Practice Test
-            </Link>
-            <Link
-              href="#how-it-works"
-              className="inline-flex items-center justify-center px-8 py-4 bg-white border-2 border-brand text-brand hover:bg-brand-light font-semibold rounded-xl transition-colors"
-            >
-              Learn How It Works
-            </Link>
-          </div>
-          <p className="text-gray-500 text-sm">
-            ✓ 200 questions ✓ 4 practice tests ✓ 5 training sets ✓ No registration required
-          </p>
+          <ExamLandingHero
+            dashboardHref="/cst/dashboard"
+            shortName="CST"
+            subtitle="200 questions weighted to the NBSTSA content outline. Tuned for mobile. No account needed."
+            shots={{ mobile: "/landing/cst-mobile.png", desktop: "/landing/cst-desktop.png" }}
+          />
         </div>
       </div>
 
@@ -307,13 +292,15 @@ export default function CSTLandingPage() {
             </p>
           </div>
         </div>
-        <div className="text-center mt-12">
-          <Link
-            href="/cst/dashboard"
-            className="inline-flex items-center justify-center px-8 py-4 bg-brand hover:bg-brand-hover text-white font-semibold rounded-xl transition-colors shadow-lg hover:shadow-xl"
-          >
-            Start Free Practice Test
-          </Link>
+      </div>
+
+      {/* Final CTA */}
+      <div className="relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-t from-brand-light to-white pointer-events-none" />
+        <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Ready to Pass the CST Exam?</h2>
+          <p className="text-lg text-gray-600 mb-10">Free to start. No account required. 200 questions across every exam domain.</p>
+          <ExamLandingCTA dashboardHref="/cst/dashboard" />
         </div>
       </div>
     </div>

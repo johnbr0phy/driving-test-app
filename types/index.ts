@@ -1,5 +1,5 @@
 // Question types
-export type QuestionType = "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "HTL" | "CST" | "CRCST";
+export type QuestionType = "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HTL" | "CST" | "CRCST";
 
 // Test mode
 export type TestMode = "dmv" | "cdl" | "htl";
@@ -83,7 +83,13 @@ export type QuestionCategory =
   | "airBrakes"
   | "combinationVehicles"
   | "tankVehicles"
-  | "passengerTransport";
+  | "passengerTransport"
+  // FAA Part 107 ACS areas
+  | "regulations"
+  | "airspace"
+  | "weather"
+  | "loadingPerformance"
+  | "operations";
 
 export interface Question {
   type: QuestionType;

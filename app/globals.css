@@ -98,6 +98,20 @@
     --brand-gradient-to: 190 80% 95%;
   }
 
+  /* FAA Part 107 theme: sky blue */
+  [data-theme="part107"] {
+    --brand: 199 89% 40%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 199 95% 95%;
+    --brand-hover: 199 89% 34%;
+    --brand-dark: 199 89% 27%;
+    --brand-darker: 199 70% 16%;
+    --brand-muted: 199 60% 70%;
+    --brand-border: 199 60% 76%;
+    --brand-border-light: 199 55% 87%;
+    --brand-gradient-to: 45 95% 95%;
+  }
+
   /* Motorcycle permit theme: deep red */
   [data-theme="moto"] {
     --brand: 355 72% 44%;

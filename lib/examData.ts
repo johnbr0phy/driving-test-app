@@ -3,6 +3,7 @@ import cdlQuestions from "@/data/cdl-questions.json";
 import cdlxQuestions from "@/data/cdl-endorsement-questions.json";
 import motoQuestions from "@/data/motorcycle-questions.json";
 import civicsQuestions from "@/data/civics-questions.json";
+import part107Questions from "@/data/part107-questions.json";
 import htlQuestions from "@/data/htl-questions.json";
 import cstQuestions from "@/data/cst-questions.json";
 import crcstQuestions from "@/data/crcst-questions.json";
@@ -15,6 +16,7 @@ const BANKS: Record<ExamId, Question[]> = {
   cdlx: cdlxQuestions as Question[],
   moto: motoQuestions as Question[],
   civics: civicsQuestions as Question[],
+  part107: part107Questions as Question[],
   htl: htlQuestions as Question[],
   cst: cstQuestions as Question[],
   crcst: crcstQuestions as Question[],

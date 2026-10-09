@@ -289,6 +289,12 @@ export const ko: TranslationKeys = {
     history1800s: "1800s",
     recentHistory: "Recent American History",
     symbolsHolidays: "Symbols & Holidays",
+    // CDL endorsements
+    hazmatEndorsement: "Hazardous Materials",
+    airBrakes: "Air Brakes",
+    combinationVehicles: "Combination Vehicles",
+    tankVehicles: "Tank Vehicles",
+    passengerTransport: "Passenger Transport",
   } as Record<string, string>,
 
   // Training set names

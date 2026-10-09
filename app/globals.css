@@ -84,6 +84,20 @@
     --brand-gradient-to: 190 80% 95%;
   }
 
+  /* CDL endorsements theme: steel blue */
+  [data-theme="cdlx"] {
+    --brand: 205 70% 38%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 205 80% 95%;
+    --brand-hover: 205 70% 32%;
+    --brand-dark: 205 70% 26%;
+    --brand-darker: 205 60% 16%;
+    --brand-muted: 205 50% 70%;
+    --brand-border: 205 50% 76%;
+    --brand-border-light: 205 45% 87%;
+    --brand-gradient-to: 190 80% 95%;
+  }
+
   /* Motorcycle permit theme: deep red */
   [data-theme="moto"] {
     --brand: 355 72% 44%;

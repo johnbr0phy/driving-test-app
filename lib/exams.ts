@@ -13,7 +13,7 @@
  * This file must stay free of question-data imports (the store imports it).
  */
 
-export type ExamId = "cdl" | "moto" | "civics" | "htl" | "cst" | "crcst";
+export type ExamId = "cdl" | "cdlx" | "moto" | "civics" | "htl" | "cst" | "crcst";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (?set=N). */
@@ -146,6 +146,62 @@ const cdl: ExamConfig = {
     ],
     sourceLine: "Covers the CDL general knowledge exam. 80% to pass on the real test.",
     analyticsKey: "cdl",
+  },
+};
+
+const cdlx: ExamConfig = {
+  id: "cdlx",
+  stateCode: "CDLX",
+  idBase: 700,
+  slug: "/cdl-endorsements",
+  landingPath: "/cdl-endorsement-practice-test",
+  name: "CDL Endorsements",
+  shortName: "CDL Endorsements",
+  examLabel: "CDL Endorsements",
+  fullName: "CDL endorsement knowledge tests",
+  questionIdPrefix: "CDLE-",
+  icon: "truck",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // One training set per endorsement is the real product; the mixed tests
+  // draw from each in proportion to the bank. Based on FMCSA CDL Manual
+  // sections 4, 5, 6, 8 and 9.
+  blueprint: {
+    hazmatEndorsement: 13,
+    airBrakes: 11,
+    combinationVehicles: 10,
+    tankVehicles: 8,
+    passengerTransport: 8,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 701, name: "Hazardous Materials (H)", categories: ["hazmatEndorsement"], size: 52, weightLabel: "Real test: 30 questions, 80%" },
+    { setNumber: 2, id: 702, name: "Air Brakes", categories: ["airBrakes"], size: 44, weightLabel: "Real test: 25 questions, 80%" },
+    { setNumber: 3, id: 703, name: "Combination Vehicles", categories: ["combinationVehicles"], size: 40, weightLabel: "Real test: 20 questions, 80%" },
+    { setNumber: 4, id: 704, name: "Tank Vehicles (N)", categories: ["tankVehicles"], size: 32, weightLabel: "Real test: 20 questions, 80%" },
+    { setNumber: 5, id: 705, name: "Passenger Transport (P)", categories: ["passengerTransport"], size: 32, weightLabel: "Real test: 20 questions, 80%" },
+  ],
+  categoryLabels: {
+    hazmatEndorsement: "Hazardous Materials",
+    airBrakes: "Air Brakes",
+    combinationVehicles: "Combination Vehicles",
+    tankVehicles: "Tank Vehicles",
+    passengerTransport: "Passenger Transport",
+  },
+  copy: {
+    guestPrompt: "to save your endorsement progress and track every question you miss",
+    trainingHeading: "Train one endorsement at a time",
+    trainingSub: "One set per endorsement, straight from the FMCSA manual section. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mixed practice tests · 50 questions across all five, 80% to pass",
+    heroSubs: [
+      "Five endorsements, four mixed tests. Pick the set for the endorsement you are adding.",
+      "Mastery first, then test. Each set is one section of the CDL manual.",
+      "Halfway through. The mixed tests will show where you stand across endorsements.",
+      "Fix the misses, then retake. Every endorsement test wants 80%.",
+      "Full prep done. Go book your endorsement tests at the DMV.",
+    ],
+    sourceLine: "Based on FMCSA CDL Manual sections 4, 5, 6, 8 and 9. HazMat also needs a TSA security threat assessment.",
+    analyticsKey: "cdlx",
   },
 };
 
@@ -436,7 +492,7 @@ const crcst: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, moto, civics, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, htl, cst, crcst];
 
 export const examSetBase = (exam: ExamConfig) => exam.setIdBase ?? exam.idBase;
 /** Store ID of training set N of an exam. */

@@ -11,6 +11,7 @@ import { useTestTheme } from "@/contexts/TestThemeContext";
 import { Truck, Microscope, Scissors, ShieldCheck } from "lucide-react";
 import { getExamById } from "@/lib/exams";
 import Image from "next/image";
+import { TestSwitcher } from "@/components/TestSwitcher";
 
 export function CDLHeader() {
   const { user, logout } = useAuth();
@@ -57,6 +58,7 @@ export function CDLHeader() {
         </Link>
 
         <div className="flex items-center gap-2 sm:gap-4">
+          <TestSwitcher />
           {user ? (
             <>
               <Link href="/settings">

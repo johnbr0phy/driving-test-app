@@ -8,6 +8,7 @@ import { isViState } from "@/data/viStates";
 import { isKoState } from "@/data/koStates";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { getExamByPath } from "@/lib/exams";
+import { TEST_CATALOG } from "@/lib/testCatalog";
 
 const popularStateSlugs = [
   "california", "texas", "florida", "new-york", "pennsylvania",
@@ -88,7 +89,21 @@ export function Footer() {
             </Link>
           </div>
         )}
-        <div className={`flex flex-col md:flex-row md:items-center md:justify-between gap-2 text-sm text-gray-600 ${isAltExam ? "" : "mt-4"}`}>
+        <nav
+          aria-label={t("footer.practiceTests")}
+          className={`flex flex-wrap justify-center md:justify-start items-center gap-x-3 gap-y-1 text-sm text-gray-500 ${isAltExam ? "" : "mt-3"}`}
+        >
+          <span className="font-medium text-gray-700">{t("footer.practiceTests")}:</span>
+          {TEST_CATALOG.map((test) => (
+            <Link key={test.id} href={test.href} className="hover:text-brand">
+              {test.shortName}
+            </Link>
+          ))}
+          <Link href="/tests" className="text-brand hover:text-brand-dark font-medium">
+            {t("footer.allTests")}
+          </Link>
+        </nav>
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 text-sm text-gray-600 mt-4">
           <p className="text-center md:text-left">
             {t("footer.madeWith")}{" "}
             <span className="text-red-500" aria-label="love">

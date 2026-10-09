@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import { TEST_CATALOG } from "@/lib/testCatalog";
 import Image from "next/image";
 import { Smartphone, Monitor } from "lucide-react";
 import { states } from "@/data/states";
@@ -439,6 +440,36 @@ export default function Home() {
             <p className="text-gray-600">
               Absolutely! We partner with driving schools to help students prepare for their permit test. Visit our <Link href="/schools" className="text-brand hover:text-brand-dark underline">driving schools page</Link> to learn more and get your school listed.
             </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Other practice tests. Short on purpose: the homepage stays about the DMV test. */}
+      <div className="max-w-5xl mx-auto px-6 pb-16 md:pb-24">
+        <div className="rounded-2xl border border-gray-200 bg-gray-50 p-6 md:p-8">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <div>
+              <h2 className="text-xl md:text-2xl font-bold text-gray-900">
+                <T k="landing.otherTestsTitle">Studying for something else?</T>
+              </h2>
+              <p className="text-gray-600 mt-1">
+                <T k="landing.otherTestsSub">TigerTest also has free practice tests for other exams.</T>
+              </p>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {TEST_CATALOG.filter((test) => test.id !== "dmv").map((test) => (
+                <Link
+                  key={test.id}
+                  href={test.href}
+                  className="inline-flex items-center rounded-full border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:border-brand hover:text-brand transition-colors"
+                >
+                  {test.shortName}
+                </Link>
+              ))}
+              <Link href="/tests" className="inline-flex items-center rounded-full bg-brand px-4 py-2 text-sm font-medium text-white hover:bg-brand-hover transition-colors">
+                <T k="landing.otherTestsAll">All tests</T>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

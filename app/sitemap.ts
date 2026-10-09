@@ -118,12 +118,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   ];
 
   // Certification exam landing pages (HTL, CST, CRCST)
-  const examPages: MetadataRoute.Sitemap = EXAMS.map((exam) => ({
-    url: `${siteUrl}${exam.slug}`,
-    lastModified: now,
-    changeFrequency: "weekly" as const,
-    priority: 0.9,
-  }));
+  const examPages: MetadataRoute.Sitemap = [
+    { url: `${siteUrl}/tests`, lastModified: now, changeFrequency: "weekly" as const, priority: 0.8 },
+    ...EXAMS.map((exam) => ({
+      url: `${siteUrl}${exam.slug}`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.9,
+    })),
+  ];
 
   // School landing pages — dynamically from Firestore
   const schoolSlugs = await getActiveSchoolSlugs();

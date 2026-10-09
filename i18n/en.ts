@@ -353,6 +353,13 @@ export const en = {
     ekgAcquisition: "EKG Acquisition",
     ekgSafetyPatientCare: "Safety, Compliance & Patient Care",
     ekgAnalysis: "EKG Analysis & Interpretation",
+    // DANB CDA components
+    gcEvaluation: "Collection & Recording of Clinical Data",
+    gcPatientManagement: "Patient Management & Administration",
+    gcChairside: "Chairside Dentistry",
+    gcDentalMaterials: "Dental Materials",
+    rhsRadiography: "Radiation Health & Safety",
+    iceInfectionControl: "Infection Control",
   } as Record<string, string>,
 
   // Training set names

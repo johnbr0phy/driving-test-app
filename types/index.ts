@@ -1,5 +1,5 @@
 // Question types
-export type QuestionType = "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HAM" | "EPA608" | "CNA" | "PTCB" | "PHLEB" | "CCMA" | "CET" | "HTL" | "CST" | "CRCST";
+export type QuestionType = "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HAM" | "EPA608" | "CNA" | "PTCB" | "PHLEB" | "CCMA" | "CET" | "DANB" | "HTL" | "CST" | "CRCST";
 
 // Test mode
 export type TestMode = "dmv" | "cdl" | "htl";
@@ -143,7 +143,14 @@ export type QuestionCategory =
   // CET (NHA EKG technician) domains
   | "ekgAcquisition"
   | "ekgSafetyPatientCare"
-  | "ekgAnalysis";
+  | "ekgAnalysis"
+  // DANB CDA components
+  | "gcEvaluation"
+  | "gcPatientManagement"
+  | "gcChairside"
+  | "gcDentalMaterials"
+  | "rhsRadiography"
+  | "iceInfectionControl";
 
 export interface Question {
   type: QuestionType;

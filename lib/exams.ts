@@ -13,7 +13,7 @@
  * This file must stay free of question-data imports (the store imports it).
  */
 
-export type ExamId = "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "htl" | "cst" | "crcst";
+export type ExamId = "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "htl" | "cst" | "crcst";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (?set=N). */
@@ -53,7 +53,7 @@ export interface ExamConfig {
   /** Question ID prefix, e.g. "HTL-". */
   questionIdPrefix: string;
   /** Header icon key (see CDLHeader). */
-  icon: "truck" | "bike" | "flag" | "plane" | "radio" | "thermometer" | "heart" | "pill" | "syringe" | "stethoscope" | "activity" | "microscope" | "scissors" | "shield";
+  icon: "truck" | "bike" | "flag" | "plane" | "radio" | "thermometer" | "heart" | "pill" | "syringe" | "stethoscope" | "activity" | "tooth" | "microscope" | "scissors" | "shield";
   testCount: number;
   questionsPerTest: number;
   passPct: number;
@@ -790,6 +790,65 @@ const cet: ExamConfig = {
   },
 };
 
+const danb: ExamConfig = {
+  id: "danb",
+  stateCode: "DANB",
+  idBase: 1600,
+  slug: "/dental-assistant",
+  landingPath: "/dental-assistant-practice-test",
+  name: "Dental Assistant Practice Test",
+  shortName: "Dental",
+  examLabel: "DANB CDA Exam",
+  fullName: "DANB Certified Dental Assistant (CDA) exam",
+  questionIdPrefix: "DA-",
+  icon: "tooth",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // The DANB CDA is three component exams: General Chairside (GC, 95
+  // items), Radiation Health and Safety (RHS, 75 items) and Infection
+  // Control (ICE, 75 items). Mixed tests split 50/25/25 across the three,
+  // with GC in its outline's proportions (evaluation 17%, patient management
+  // 17%, chairside 50%, materials 16%). Scaled scoring; 70% is a safe target.
+  blueprint: {
+    gcEvaluation: 4,
+    gcPatientManagement: 4,
+    gcChairside: 13,
+    gcDentalMaterials: 4,
+    rhsRadiography: 13,
+    iceInfectionControl: 12,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 1601, name: "Chairside Dentistry (GC)", categories: ["gcChairside"], size: 52, weightLabel: "26% of the tests" },
+    { setNumber: 2, id: 1602, name: "Evaluation, Patient Management & Materials (GC)", categories: ["gcEvaluation", "gcPatientManagement", "gcDentalMaterials"], size: 48, weightLabel: "24% of the tests" },
+    { setNumber: 3, id: 1603, name: "Radiation Health & Safety (RHS)", categories: ["rhsRadiography"], size: 52, weightLabel: "26% of the tests" },
+    { setNumber: 4, id: 1604, name: "Infection Control (ICE)", categories: ["iceInfectionControl"], size: 48, weightLabel: "24% of the tests" },
+  ],
+  categoryLabels: {
+    gcEvaluation: "Collection & Recording of Clinical Data",
+    gcPatientManagement: "Patient Management & Administration",
+    gcChairside: "Chairside Dentistry",
+    gcDentalMaterials: "Dental Materials",
+    rhsRadiography: "Radiation Health & Safety",
+    iceInfectionControl: "Infection Control",
+  },
+  copy: {
+    guestPrompt: "to save your dental assistant exam progress and track every question you miss",
+    trainingHeading: "Train by component exam",
+    trainingSub: "Four sets covering General Chairside, Radiation Health and Safety, and Infection Control. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions across all three CDA components",
+    heroSubs: [
+      "Three component exams, four full tests. Chairside dentistry is half of the GC exam.",
+      "Mastery first, then test. The sets follow the DANB GC, RHS and ICE outlines.",
+      "Halfway through the outlines. The practice tests will show where you stand.",
+      "Fix the misses, then retake. Aim for 70% or better on every test before exam day.",
+      "Full prep done. Schedule your GC, RHS and ICE exams with DANB.",
+    ],
+    sourceLine: "Weighted to the DANB GC, RHS (March 2025) and ICE (March 2025) outlines. Expanded functions vary by state.",
+    analyticsKey: "danb",
+  },
+};
+
 const htl: ExamConfig = {
   id: "htl",
   stateCode: "HTL",
@@ -960,7 +1019,7 @@ const crcst: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, cet, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, cet, danb, htl, cst, crcst];
 
 export const examSetBase = (exam: ExamConfig) => exam.setIdBase ?? exam.idBase;
 /** Store ID of training set N of an exam. */

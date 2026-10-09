@@ -210,6 +210,20 @@
     --brand-gradient-to: 35 90% 95%;
   }
 
+  /* DANB (dental) theme: mint */
+  [data-theme="danb"] {
+    --brand: 165 60% 34%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 165 60% 95%;
+    --brand-hover: 165 60% 28%;
+    --brand-dark: 165 60% 22%;
+    --brand-darker: 165 50% 13%;
+    --brand-muted: 165 40% 70%;
+    --brand-border: 165 40% 76%;
+    --brand-border-light: 165 35% 87%;
+    --brand-gradient-to: 200 70% 95%;
+  }
+
   /* Motorcycle permit theme: deep red */
   [data-theme="moto"] {
     --brand: 355 72% 44%;

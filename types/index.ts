@@ -1,5 +1,5 @@
 // Question types
-export type QuestionType = "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HAM" | "EPA608" | "CNA" | "PTCB" | "PHLEB" | "HTL" | "CST" | "CRCST";
+export type QuestionType = "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HAM" | "EPA608" | "CNA" | "PTCB" | "PHLEB" | "CCMA" | "HTL" | "CST" | "CRCST";
 
 // Test mode
 export type TestMode = "dmv" | "cdl" | "htl";
@@ -126,7 +126,20 @@ export type QuestionCategory =
   | "safetyCompliance"
   | "patientPreparation"
   | "specimenProcessing"
-  | "specialCollections";
+  | "specialCollections"
+  // CCMA (NHA) domains
+  | "ccmaFoundations"
+  | "ccmaAnatomy"
+  | "ccmaIntakeVitals"
+  | "ccmaGeneralCare"
+  | "ccmaInfectionSafety"
+  | "ccmaLabProcedures"
+  | "ccmaPhlebotomy"
+  | "ccmaEkg"
+  | "ccmaCareCoordination"
+  | "ccmaAdministrative"
+  | "ccmaCommunication"
+  | "ccmaLawEthics";
 
 export interface Question {
   type: QuestionType;

@@ -13,7 +13,7 @@
  * This file must stay free of question-data imports (the store imports it).
  */
 
-export type ExamId = "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "htl" | "cst" | "crcst";
+export type ExamId = "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "htl" | "cst" | "crcst";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (?set=N). */
@@ -53,7 +53,7 @@ export interface ExamConfig {
   /** Question ID prefix, e.g. "HTL-". */
   questionIdPrefix: string;
   /** Header icon key (see CDLHeader). */
-  icon: "truck" | "bike" | "flag" | "plane" | "radio" | "thermometer" | "heart" | "pill" | "syringe" | "microscope" | "scissors" | "shield";
+  icon: "truck" | "bike" | "flag" | "plane" | "radio" | "thermometer" | "heart" | "pill" | "syringe" | "stethoscope" | "microscope" | "scissors" | "shield";
   testCount: number;
   questionsPerTest: number;
   passPct: number;
@@ -667,6 +667,78 @@ const phleb: ExamConfig = {
   },
 };
 
+const ccma: ExamConfig = {
+  id: "ccma",
+  stateCode: "CCMA",
+  idBase: 1400,
+  slug: "/ccma",
+  landingPath: "/ccma-practice-test",
+  name: "CCMA Practice Test",
+  shortName: "CCMA",
+  examLabel: "CCMA Exam",
+  fullName: "Certified Clinical Medical Assistant (NHA CCMA) exam",
+  questionIdPrefix: "CCMA-",
+  icon: "stethoscope",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // NHA CCMA test plan (3.0, 2022 job analysis): Foundational Knowledge 10%,
+  // Anatomy and Physiology 5%, Clinical Patient Care 56% (intake and vitals,
+  // general care, infection control and safety, POC testing and lab,
+  // phlebotomy, EKG), Care Coordination and Education 8%, Administrative 8%,
+  // Communication 8%, Law and Ethics 5%. Real exam: 180 items (150 scored),
+  // scaled pass 390 of 500.
+  blueprint: {
+    ccmaFoundations: 5,
+    ccmaAnatomy: 3,
+    ccmaIntakeVitals: 5,
+    ccmaGeneralCare: 9,
+    ccmaInfectionSafety: 5,
+    ccmaLabProcedures: 3,
+    ccmaPhlebotomy: 4,
+    ccmaEkg: 2,
+    ccmaCareCoordination: 4,
+    ccmaAdministrative: 4,
+    ccmaCommunication: 4,
+    ccmaLawEthics: 2,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 1401, name: "Foundations & Anatomy", categories: ["ccmaFoundations", "ccmaAnatomy"], size: 32, weightLabel: "15% of the exam" },
+    { setNumber: 2, id: 1402, name: "Intake, Vitals & Patient Care", categories: ["ccmaIntakeVitals", "ccmaGeneralCare"], size: 56, weightLabel: "28% of the exam" },
+    { setNumber: 3, id: 1403, name: "Infection Control, Lab, Phlebotomy & EKG", categories: ["ccmaInfectionSafety", "ccmaLabProcedures", "ccmaPhlebotomy", "ccmaEkg"], size: 56, weightLabel: "28% of the exam" },
+    { setNumber: 4, id: 1404, name: "Coordination, Admin, Communication & Law", categories: ["ccmaCareCoordination", "ccmaAdministrative", "ccmaCommunication", "ccmaLawEthics"], size: 56, weightLabel: "29% of the exam" },
+  ],
+  categoryLabels: {
+    ccmaFoundations: "Foundational Knowledge & Basic Science",
+    ccmaAnatomy: "Anatomy & Physiology",
+    ccmaIntakeVitals: "Patient Intake & Vitals",
+    ccmaGeneralCare: "General Patient Care",
+    ccmaInfectionSafety: "Infection Control & Safety",
+    ccmaLabProcedures: "Point of Care Testing & Lab",
+    ccmaPhlebotomy: "Phlebotomy",
+    ccmaEkg: "EKG & Cardiovascular Testing",
+    ccmaCareCoordination: "Patient Care Coordination & Education",
+    ccmaAdministrative: "Administrative Assisting",
+    ccmaCommunication: "Communication & Customer Service",
+    ccmaLawEthics: "Medical Law & Ethics",
+  },
+  copy: {
+    guestPrompt: "to save your CCMA exam progress and track every question you miss",
+    trainingHeading: "Train by domain",
+    trainingSub: "Four sets covering all seven NHA CCMA domains. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real exam",
+    heroSubs: [
+      "Seven domains, four full tests. Clinical patient care is more than half the exam.",
+      "Mastery first, then test. The sets follow the NHA CCMA test plan.",
+      "Halfway through the outline. The practice tests will show where you stand.",
+      "Fix the misses, then retake. Aim for 70% or better on every test before exam day.",
+      "Full prep done. Schedule your CCMA exam with NHA.",
+    ],
+    sourceLine: "Weighted to the NHA CCMA test plan (3.0). Scope of practice varies by state.",
+    analyticsKey: "ccma",
+  },
+};
+
 const htl: ExamConfig = {
   id: "htl",
   stateCode: "HTL",
@@ -837,7 +909,7 @@ const crcst: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, htl, cst, crcst];
 
 export const examSetBase = (exam: ExamConfig) => exam.setIdBase ?? exam.idBase;
 /** Store ID of training set N of an exam. */

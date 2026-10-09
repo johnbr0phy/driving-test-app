@@ -336,6 +336,19 @@ export const es: TranslationKeys = {
     patientPreparation: "Patient Preparation",
     specimenProcessing: "Processing",
     specialCollections: "Special Collections",
+    // CCMA (NHA) domains
+    ccmaFoundations: "Foundational Knowledge & Basic Science",
+    ccmaAnatomy: "Anatomy & Physiology",
+    ccmaIntakeVitals: "Patient Intake & Vitals",
+    ccmaGeneralCare: "General Patient Care",
+    ccmaInfectionSafety: "Infection Control & Safety",
+    ccmaLabProcedures: "Point of Care Testing & Lab",
+    ccmaPhlebotomy: "Phlebotomy",
+    ccmaEkg: "EKG & Cardiovascular Testing",
+    ccmaCareCoordination: "Patient Care Coordination & Education",
+    ccmaAdministrative: "Administrative Assisting",
+    ccmaCommunication: "Communication & Customer Service",
+    ccmaLawEthics: "Medical Law & Ethics",
   } as Record<string, string>,
 
   // Training set names

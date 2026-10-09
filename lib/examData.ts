@@ -9,6 +9,7 @@ import epa608Questions from "@/data/epa608-questions.json";
 import cnaQuestions from "@/data/cna-questions.json";
 import ptcbQuestions from "@/data/ptcb-questions.json";
 import phlebQuestions from "@/data/phlebotomy-questions.json";
+import ccmaQuestions from "@/data/ccma-questions.json";
 import htlQuestions from "@/data/htl-questions.json";
 import cstQuestions from "@/data/cst-questions.json";
 import crcstQuestions from "@/data/crcst-questions.json";
@@ -27,6 +28,7 @@ const BANKS: Record<ExamId, Question[]> = {
   cna: cnaQuestions as Question[],
   ptcb: ptcbQuestions as Question[],
   phleb: phlebQuestions as Question[],
+  ccma: ccmaQuestions as Question[],
   htl: htlQuestions as Question[],
   cst: cstQuestions as Question[],
   crcst: crcstQuestions as Question[],

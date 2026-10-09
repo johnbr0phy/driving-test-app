@@ -10,7 +10,6 @@ import { PaywallModal } from "@/components/PaywallModal";
 import { QuizRow } from "@/components/QuizRow";
 import { QuestionImage } from "@/components/QuestionImage";
 import { getSignIdForQuestion } from "@/lib/signImages";
-import { isDrillFree } from "@/lib/missedQuestions";
 import { trackDailyQuizAnswer } from "@/lib/analytics";
 import { Question } from "@/types";
 import type { ReadyTestResults } from "@/hooks/useTestResults";
@@ -50,6 +49,9 @@ export function ResultsDebriefBody({ results, upgrade }: Props) {
     nextTestId,
     nextTestIsLocked,
     communityMap,
+    routes,
+    displayTestNumber,
+    planTrainingSet,
   } = results;
 
   const [fixedCount, setFixedCount] = useState(0);
@@ -72,7 +74,7 @@ export function ResultsDebriefBody({ results, upgrade }: Props) {
   // first few are free and the rest blur behind an upsell. Drilling tests 1
   // and 2 is free end to end, so nothing locks there.
   const FREE_RATE_LIMIT = 3;
-  const ratesLockable = !isPremium && !isDrillFree(testId);
+  const ratesLockable = !isPremium && !routes.isDrillFree(testId);
   const hasCommunityRates = missIndices.some((i) => communityMap.has(questions[i].questionId));
 
   const openTest4Paywall = () =>
@@ -102,8 +104,10 @@ export function ResultsDebriefBody({ results, upgrade }: Props) {
   }
   planSteps.push({
     key: "train",
-    label: t("results.planStep2").replace("{{n}}", String(testId)),
-    onClick: () => router.push(`/training?set=${testId}`),
+    label:
+      planTrainingSet.label ??
+      t("results.planStep2").replace("{{n}}", String(planTrainingSet.setNumber)),
+    onClick: () => router.push(routes.training(planTrainingSet.setNumber)),
   });
   planSteps.push(
     hasNextTest
@@ -111,10 +115,10 @@ export function ResultsDebriefBody({ results, upgrade }: Props) {
         ? { key: "next", label: t("results.planStep3Locked"), locked: true, onClick: openTest4Paywall }
         : {
             key: "next",
-            label: t("results.planStep3").replace("{{n}}", String(nextTestId)),
-            onClick: () => router.push(`/test/${nextTestId}`),
+            label: t("results.planStep3").replace("{{n}}", String(displayTestNumber(nextTestId))),
+            onClick: () => router.push(routes.test(nextTestId)),
           }
-      : { key: "next", label: t("results.planStep3AllDone"), onClick: () => router.push("/stats") }
+      : { key: "next", label: t("results.planStep3AllDone"), onClick: () => router.push(routes.stats) }
   );
 
   return (
@@ -279,17 +283,17 @@ export function ResultsDebriefBody({ results, upgrade }: Props) {
             <p className="text-sm text-gray-600 mb-4">
               {nextTestIsLocked
                 ? t("results.postDrillUpgradeSub")
-                : t("results.postDrillNextSub").replace("{{n}}", String(nextTestId))}
+                : t("results.postDrillNextSub").replace("{{n}}", String(displayTestNumber(nextTestId)))}
             </p>
             <Button
               className="font-bold bg-brand text-white hover:bg-brand-hover px-6"
               onClick={() =>
-                nextTestIsLocked ? openTest4Paywall() : router.push(`/test/${nextTestId}`)
+                nextTestIsLocked ? openTest4Paywall() : router.push(routes.test(nextTestId))
               }
             >
               {nextTestIsLocked
                 ? t("results.nextTestUnlockButton")
-                : t("results.nextTestButton").replace("{{n}}", String(nextTestId))}
+                : t("results.nextTestButton").replace("{{n}}", String(displayTestNumber(nextTestId)))}
             </Button>
           </CardContent>
         </Card>

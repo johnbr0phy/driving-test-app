@@ -37,11 +37,16 @@ export function isDrillFree(testNumber: number): boolean {
 
 export function computeMissSummary(
   completedTests: TestSession[],
-  selectedState: string | null
+  selectedState: string | null,
+  // Which test IDs count. Defaults to the DMV tests (1-4); other exams pass
+  // their own namespaced IDs along with their pseudo state code.
+  testIds?: number[]
 ): MissSummary {
   // completedTests is append-only, so array order is chronological.
   const sessions = completedTests.filter(
-    (t) => t.state === (selectedState || "CA") && t.testNumber <= 4
+    (t) =>
+      t.state === (selectedState || "CA") &&
+      (testIds ? testIds.includes(t.testNumber) : t.testNumber <= 4)
   );
 
   const byQuestion = new Map<string, MissEntry>();

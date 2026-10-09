@@ -246,6 +246,12 @@ export const vi: TranslationKeys = {
     vehicleInspection: "Kiểm Tra Xe",
     vehicleSystems: "Hệ Thống Xe",
     weatherDriving: "Lái Xe Trong Thời Tiết Xấu",
+    // HTL (histotechnology) categories
+    fixation: "Cố định mô",
+    processing: "Xử lý mô",
+    embeddingMicrotomy: "Vùi mô & cắt lát",
+    staining: "Nhuộm",
+    laboratoryOperations: "Vận hành phòng xét nghiệm",
   } as Record<string, string>,
 
   // Training set names

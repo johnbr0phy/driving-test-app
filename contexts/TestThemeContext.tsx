@@ -55,6 +55,22 @@ export const themes: Record<string, TestTheme> = {
     dashboardPath: "/cdl/dashboard",
     landingPath: "/cdl-practice-test",
   },
+  htl: {
+    id: "htl",
+    name: "HTL Practice Test",
+    slug: "htl",
+    headerTitle: "HTL Practice Test",
+    logoHome: "/htl",
+    logoIcon: null,
+    testsPerSet: 50,
+    totalTests: 4,
+    totalTrainingSets: 5,
+    questionsPerTest: 50,
+    passPercentage: 70,
+    routeBase: "/htl",
+    dashboardPath: "/htl/dashboard",
+    landingPath: "/htl",
+  },
 };
 
 const TestThemeContext = createContext<TestTheme>(themes.dmv);

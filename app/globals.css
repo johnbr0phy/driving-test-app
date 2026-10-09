@@ -56,6 +56,20 @@
     --brand-gradient-to: 226 100% 97%;
   }
 
+  /* HTL (histotechnology) theme: hematoxylin violet with an eosin-pink gradient */
+  [data-theme="htl"] {
+    --brand: 271 70% 50%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 270 100% 97%;
+    --brand-hover: 271 70% 42%;
+    --brand-dark: 271 70% 34%;
+    --brand-darker: 271 60% 22%;
+    --brand-muted: 271 60% 75%;
+    --brand-border: 271 55% 80%;
+    --brand-border-light: 271 45% 88%;
+    --brand-gradient-to: 330 100% 96%;
+  }
+
   .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;

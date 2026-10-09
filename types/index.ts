@@ -1,8 +1,8 @@
 // Question types
-export type QuestionType = "Universal" | "State-Specific";
+export type QuestionType = "Universal" | "State-Specific" | "CDL" | "HTL";
 
 // Test mode
-export type TestMode = "dmv" | "cdl";
+export type TestMode = "dmv" | "cdl" | "htl";
 
 // CDL question categories
 export type CDLQuestionCategory =
@@ -41,7 +41,13 @@ export type QuestionCategory =
   | "railroadCrossings"
   | "hazardPerception"
   | "brakingSystems"
-  | "vehicleSystems";
+  | "vehicleSystems"
+  // ASCP HT/HTL content areas
+  | "fixation"
+  | "processing"
+  | "embeddingMicrotomy"
+  | "staining"
+  | "laboratoryOperations";
 
 export interface Question {
   type: QuestionType;

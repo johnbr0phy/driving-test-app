@@ -7,11 +7,12 @@ import { useHydration } from "@/hooks/useHydration";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { states } from "@/data/states";
 import { useCommunityStats } from "@/hooks/useCommunityStats";
+import { DMV_ROUTES, ExamRoutes } from "@/lib/examRoutes";
 
 // Shared data/derived-state for the test results page: the session, score,
 // attempt history, weak categories, and premium/guest flags the results UI
 // is built from.
-export function useTestResults(testId: number) {
+export function useTestResults(testId: number, routes: ExamRoutes = DMV_ROUTES) {
   const router = useRouter();
   const hydrated = useHydration();
   const { t, language } = useTranslation();
@@ -32,8 +33,8 @@ export function useTestResults(testId: number) {
 
   useEffect(() => {
     if (!hydrated) return;
-    if (!testSession) router.push(`/test/${testId}`);
-  }, [hydrated, testSession, testId, router]);
+    if (!testSession) router.push(routes.test(testId));
+  }, [hydrated, testSession, testId, router, routes]);
 
   const weakCategories = useMemo(() => {
     if (!testSession) return [];
@@ -71,7 +72,8 @@ export function useTestResults(testId: number) {
   const totalQuestions = questions.length;
   const percentage = totalQuestions > 0 ? Math.round((score / totalQuestions) * 100) : 0;
   const passed = percentage >= 70;
-  const stateName = states.find((s) => s.code === testSession.state)?.name || testSession.state;
+  const stateName =
+    routes.examLabel ?? (states.find((s) => s.code === testSession.state)?.name || testSession.state);
 
   const firstScore = attemptStats?.firstScore ?? score;
   const bestScore = attemptStats?.bestScore ?? score;
@@ -81,16 +83,19 @@ export function useTestResults(testId: number) {
   const isNewBest = score === bestScore && !!attemptStats && attemptStats.attemptCount > 1;
   const attemptNumber = attemptStats?.attemptCount ?? 1;
 
-  const nextTestId = testId + 1;
-  const hasNextTest = testId < 4;
+  const testIndex = routes.testIds.indexOf(testId);
+  const hasNextTest = testIndex !== -1 && testIndex < routes.testIds.length - 1;
+  const nextTestId = hasNextTest ? routes.testIds[testIndex + 1] : testId + 1;
   const isPremium = hasPremiumAccess();
-  const nextTestIsLocked = nextTestId === 4 && !isPremium;
+  const nextTestIsLocked = hasNextTest && routes.isTestLocked(nextTestId, isPremium);
 
-  // How many of the 4 tests have at least one attempt — a simple "journey"
+  // How many of the tests have at least one attempt — a simple "journey"
   // progress signal for the milestone hero.
-  const testsCompletedCount = [1, 2, 3, 4].filter(
+  const testsCompletedCount = routes.testIds.filter(
     (id) => (id === testId ? true : !!getTestAttemptStats(id))
   ).length;
+
+  const planTrainingSet = routes.planTrainingSet(testId, weakCategories);
 
   return {
     ready: true as const,
@@ -122,6 +127,9 @@ export function useTestResults(testId: number) {
     nextTestIsLocked,
     testsCompletedCount,
     testId,
+    routes,
+    displayTestNumber: routes.displayTestNumber,
+    planTrainingSet,
   };
 }
 

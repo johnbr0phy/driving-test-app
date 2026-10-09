@@ -41,6 +41,8 @@ export function ResultsHeroDebrief({
     hasNextTest,
     nextTestId,
     nextTestIsLocked,
+    routes,
+    displayTestNumber,
     t,
   } = results;
 
@@ -87,15 +89,15 @@ export function ResultsHeroDebrief({
     missCount === 1 ? t("results.passGhostOne") : t("results.passGhost").replace("{{n}}", String(missCount));
 
   const startNext = () => {
-    if (!hasNextTest) router.push("/stats");
+    if (!hasNextTest) router.push(routes.stats);
     else if (nextTestIsLocked) onNextLocked();
-    else router.push(`/test/${nextTestId}`);
+    else router.push(routes.test(nextTestId));
   };
   const passCtaLabel = !hasNextTest
     ? t("results.viewFullStats")
     : nextTestIsLocked
       ? t("results.nextTestUnlockButton")
-      : t("results.passCta").replace("{{n}}", String(nextTestId));
+      : t("results.passCta").replace("{{n}}", String(displayTestNumber(nextTestId)));
 
   return (
     <div className="bg-gray-50">
@@ -228,7 +230,7 @@ export function ResultsHeroDebrief({
         ) : isBaseline ? (
           <div className="flex flex-col sm:flex-row gap-2">
             <Button
-              onClick={() => router.push(`/test/${testId}`)}
+              onClick={() => router.push(routes.test(testId))}
               className="w-full sm:flex-1 h-12 bg-brand text-white hover:bg-brand-hover font-bold text-base"
             >
               {t("results.baselineCta").replace("{{pct}}", String(percentage))}
@@ -251,7 +253,7 @@ export function ResultsHeroDebrief({
             </Button>
             <Button
               variant="outline"
-              onClick={() => router.push(`/test/${testId}`)}
+              onClick={() => router.push(routes.test(testId))}
               className="w-full sm:flex-1 h-12 bg-white font-semibold text-gray-700"
             >
               {t("results.retakeGhost")}

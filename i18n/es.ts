@@ -246,6 +246,12 @@ export const es: TranslationKeys = {
     vehicleInspection: "Inspección del Vehículo",
     vehicleSystems: "Sistemas del Vehículo",
     weatherDriving: "Conducción en Mal Tiempo",
+    // HTL (histotechnology) categories
+    fixation: "Fijación",
+    processing: "Procesamiento",
+    embeddingMicrotomy: "Inclusión y microtomía",
+    staining: "Tinción",
+    laboratoryOperations: "Operaciones de laboratorio",
   } as Record<string, string>,
 
   // Training set names

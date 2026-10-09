@@ -25,6 +25,9 @@ export function Footer() {
   const isVi = language === "vi";
   const isKo = language === "ko";
   const isCDL = pathname?.startsWith("/cdl") || pathname === "/cdl-practice-test";
+  const isHTL = pathname === "/htl" || pathname?.startsWith("/htl/");
+  // Non-DMV exams share the compact footer (no state links, no language toggle).
+  const isAltExam = isCDL || isHTL;
   const isHomepage = pathname === "/";
 
   // SEO landing pages have dedicated /es/ and /vi/ URLs, so they manage
@@ -39,14 +42,14 @@ export function Footer() {
     pathname === "/vi/thi-thu-dmv-theo-tieu-bang" ||
     pathname === "/ko/juibyeol-dmv-pilgi-siheom";
 
-  const showLanguageToggle = !isHomepage && !isCDL && !isSeoPage;
+  const showLanguageToggle = !isHomepage && !isAltExam && !isSeoPage;
 
-  const dataTheme = isCDL ? "cdl" : undefined;
+  const dataTheme = isHTL ? "htl" : isCDL ? "cdl" : undefined;
 
   return (
     <footer className="relative border-t bg-white mt-auto" data-theme={dataTheme}>
       <div className="container mx-auto px-4 py-6">
-        {!isCDL && (
+        {!isAltExam && (
           <div className="flex flex-wrap justify-center md:justify-between gap-x-3 gap-y-1 text-sm text-gray-500">
             {popularStates.map(
               (state) =>
@@ -84,7 +87,7 @@ export function Footer() {
             </Link>
           </div>
         )}
-        <div className={`flex flex-col md:flex-row md:items-center md:justify-between gap-2 text-sm text-gray-600 ${isCDL ? "" : "mt-4"}`}>
+        <div className={`flex flex-col md:flex-row md:items-center md:justify-between gap-2 text-sm text-gray-600 ${isAltExam ? "" : "mt-4"}`}>
           <p className="text-center md:text-left">
             {t("footer.madeWith")}{" "}
             <span className="text-red-500" aria-label="love">

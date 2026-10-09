@@ -23,6 +23,7 @@ function buildUrlList(): string[] {
   urls.add(SITE_URL);
   urls.add(`${SITE_URL}/practice-tests-by-state`);
   urls.add(`${SITE_URL}/cdl-practice-test`);
+  urls.add(`${SITE_URL}/htl`);
   urls.add(`${SITE_URL}/es/examenes-practica-por-estado`);
 
   for (const state of states) {

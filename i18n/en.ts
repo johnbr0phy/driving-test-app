@@ -246,6 +246,12 @@ export const en = {
     vehicleInspection: "Vehicle Inspection",
     vehicleSystems: "Vehicle Systems",
     weatherDriving: "Weather Driving",
+    // HTL (histotechnology) categories
+    fixation: "Fixation",
+    processing: "Processing",
+    embeddingMicrotomy: "Embedding & Microtomy",
+    staining: "Staining",
+    laboratoryOperations: "Laboratory Operations",
   } as Record<string, string>,
 
   // Training set names

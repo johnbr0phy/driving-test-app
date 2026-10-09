@@ -59,6 +59,17 @@ App Router pages in `/app/`. Key routes:
 
 Guest mode allows using the app without an account; guest data converts on signup.
 
+### Additional Exams (CDL, HTL)
+
+Non-DMV exams reuse the DMV components and store, namespaced by ID range and a
+pseudo state code so progress never collides with DMV data:
+- **CDL** (`/cdl/*`, landing `/cdl-practice-test`): `data/cdl-questions.json`, `lib/cdlTestGenerator.ts`, test/set IDs 101-112, state `CDL`.
+- **HTL** (ASCP Histotechnologist, `/htl/*`, landing `/htl`): `data/htl-questions.json` (200 questions), `lib/htlConfig.ts` + `lib/htlTestGenerator.ts`, test IDs 201-204, training set IDs 201-205 (one per ASCP content area), state `HTL`. Practice tests are blueprint-weighted per the ASCP BOC content guideline (rev. Sept 2025): 18 staining, 10 fixation, 10 embedding/microtomy, 7 processing, 5 lab operations per 50-question test.
+
+The HTL pages are the DMV flow, not the CDL one: `lib/examRoutes.ts` (`DMV_ROUTES` / `HTL_ROUTES`) parameterises the shared pieces (`hooks/useTestResults.ts`, `components/results/*`, `components/MissDrill.tsx`, `components/dashboard/ProgressCard.tsx`, `lib/missedQuestions.ts`, `components/AttemptChart.tsx`) by route base, test IDs, pass line, and premium gating. Defaults reproduce DMV behaviour exactly; when changing the DMV results/drill/dashboard flow, keep both exams working.
+
+Theme colors come from `[data-theme="cdl"|"htl"]` in `app/globals.css`; `contexts/TestThemeContext.tsx` and `components/HeaderSwitch.tsx` pick the header by path.
+
 ### Mobile Apps
 
 `/mobile/` contains a Capacitor 8 shell (app id `io.tigertest.app`) that loads

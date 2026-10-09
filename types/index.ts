@@ -1,5 +1,5 @@
 // Question types
-export type QuestionType = "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HTL" | "CST" | "CRCST";
+export type QuestionType = "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HAM" | "HTL" | "CST" | "CRCST";
 
 // Test mode
 export type TestMode = "dmv" | "cdl" | "htl";
@@ -89,7 +89,18 @@ export type QuestionCategory =
   | "airspace"
   | "weather"
   | "loadingPerformance"
-  | "operations";
+  | "operations"
+  // Amateur radio Technician subelements
+  | "hamRules"
+  | "hamOperating"
+  | "hamPropagation"
+  | "hamPractices"
+  | "hamElectrical"
+  | "hamComponents"
+  | "hamCircuits"
+  | "hamSignals"
+  | "hamAntennas"
+  | "hamSafety";
 
 export interface Question {
   type: QuestionType;

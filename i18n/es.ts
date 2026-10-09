@@ -299,6 +299,17 @@ export const es: TranslationKeys = {
     weather: "Weather",
     loadingPerformance: "Loading & Performance",
     operations: "Operations",
+    // Amateur radio Technician subelements
+    hamRules: "FCC Rules (T1)",
+    hamOperating: "Operating Procedures (T2)",
+    hamPropagation: "Radio Wave Propagation (T3)",
+    hamPractices: "Amateur Radio Practices (T4)",
+    hamElectrical: "Electrical Principles (T5)",
+    hamComponents: "Electronic Components (T6)",
+    hamCircuits: "Practical Circuits (T7)",
+    hamSignals: "Signals & Emissions (T8)",
+    hamAntennas: "Antennas & Feed Lines (T9)",
+    hamSafety: "Safety (T0)",
   } as Record<string, string>,
 
   // Training set names

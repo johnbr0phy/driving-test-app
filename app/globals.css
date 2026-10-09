@@ -112,6 +112,20 @@
     --brand-gradient-to: 45 95% 95%;
   }
 
+  /* Ham radio theme: amber */
+  [data-theme="ham"] {
+    --brand: 32 90% 42%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 36 100% 95%;
+    --brand-hover: 32 90% 36%;
+    --brand-dark: 32 90% 28%;
+    --brand-darker: 32 70% 16%;
+    --brand-muted: 32 60% 70%;
+    --brand-border: 32 60% 76%;
+    --brand-border-light: 32 55% 87%;
+    --brand-gradient-to: 48 95% 94%;
+  }
+
   /* Motorcycle permit theme: deep red */
   [data-theme="moto"] {
     --brand: 355 72% 44%;

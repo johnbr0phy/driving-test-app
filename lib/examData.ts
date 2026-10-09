@@ -20,6 +20,11 @@ import notaryQuestions from "@/data/notary-questions.json";
 import teasQuestions from "@/data/teas-questions.json";
 import awsQuestions from "@/data/aws-ccp-questions.json";
 import aplusQuestions from "@/data/comptia-aplus-questions.json";
+import foodhandlerQuestions from "@/data/food-handler-questions.json";
+import boatingQuestions from "@/data/boating-questions.json";
+import hunterQuestions from "@/data/hunter-questions.json";
+import secplusQuestions from "@/data/comptia-secplus-questions.json";
+import hesiQuestions from "@/data/hesi-questions.json";
 import htlQuestions from "@/data/htl-questions.json";
 import cstQuestions from "@/data/cst-questions.json";
 import crcstQuestions from "@/data/crcst-questions.json";
@@ -49,6 +54,11 @@ const BANKS: Record<ExamId, Question[]> = {
   teas: teasQuestions as Question[],
   aws: awsQuestions as Question[],
   aplus: aplusQuestions as Question[],
+  foodhandler: foodhandlerQuestions as Question[],
+  boating: boatingQuestions as Question[],
+  hunter: hunterQuestions as Question[],
+  secplus: secplusQuestions as Question[],
+  hesi: hesiQuestions as Question[],
   htl: htlQuestions as Question[],
   cst: cstQuestions as Question[],
   crcst: crcstQuestions as Question[],

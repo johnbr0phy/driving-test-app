@@ -419,6 +419,39 @@ export const es: TranslationKeys = {
     aplusSecurity: "Security",
     aplusSwTroubleshooting: "Software Troubleshooting",
     aplusOperational: "Operational Procedures",
+    // Food handler card categories
+    fhBasics: "Food Safety Basics",
+    fhHygiene: "Personal Hygiene",
+    fhContamination: "Contamination & Allergens",
+    fhTimeTemp: "Time & Temperature",
+    fhCleaning: "Cleaning & Sanitizing",
+    // Boating safety categories
+    boatBasics: "Boat Basics",
+    boatEquipment: "Required Equipment",
+    boatNavigation: "Navigation Rules",
+    boatOperation: "Safe Operation",
+    boatEmergencies: "Emergencies",
+    // Hunter education categories
+    hsFirearmSafety: "Firearm Safety",
+    hsFirearmsAmmo: "Firearms & Ammunition",
+    hsTechniques: "Hunting Techniques",
+    hsWildlife: "Wildlife & Conservation",
+    hsEthicsLaws: "Ethics & Laws",
+    hsSurvival: "Survival & First Aid",
+    // CompTIA Security+ SY0-701 domains
+    secConcepts: "General Security Concepts",
+    secThreats: "Threats & Vulnerabilities",
+    secArchitecture: "Security Architecture",
+    secOperations: "Security Operations",
+    secGovernance: "Program Management",
+    // HESI A2 sections
+    hesiMath: "Mathematics",
+    hesiReading: "Reading Comprehension",
+    hesiVocabulary: "Vocabulary",
+    hesiGrammar: "Grammar",
+    hesiBiology: "Biology",
+    hesiChemistry: "Chemistry",
+    hesiAnatomy: "Anatomy & Physiology",
   } as Record<string, string>,
 
   // Training set names

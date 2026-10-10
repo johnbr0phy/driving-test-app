@@ -41,7 +41,7 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "WebApplication",
-      name: "TigerTest - Free TEAS Practice Tests",
+      name: "TigerTest - Free TEAS Full-Length Test on a Computer",
       description,
       url: `${siteUrl}/teas-practice-test`,
       applicationCategory: "EducationalApplication",
@@ -49,10 +49,11 @@ const jsonLd = {
       offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
       featureList: [
         "200 TEAS practice questions",
-        "4 practice tests mixed like the ATI TEAS 7",
-        "Training sets for every domain",
+        "A full-length timed TEAS: four sections, 170 questions, 209 minutes",
+        "Percent scores per section and a composite, like the ATI report",
+        "Mastery drills for reading, math, science and English",
         "Instant feedback with explanations",
-        "Auto-save progress",
+        "Progress syncs between phone and computer",
       ],
     },
     {
@@ -85,7 +86,7 @@ const jsonLd = {
           name: "Does this have the same question types as the real TEAS?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "The real exam mixes multiple choice with select-all-that-apply, fill-in, hot-spot and ordered-response items. Everything here is four-option single answer, and reading passages are embedded in each question, so use this to learn the content and expect the other formats on exam day.",
+            text: "The real exam mixes multiple choice with select-all-that-apply, fill-in, hot-spot and ordered-response items. Everything here is four-option single answer, with each reading passage shown beside its question, so use this to learn the content and the timing and expect the other formats on exam day.",
           },
         },
         {
@@ -101,7 +102,7 @@ const jsonLd = {
           name: "Is the TigerTest TEAS practice test free?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. All four practice tests and all training sets are free, with no account required. Create a free account if you want your progress saved across devices.",
+            text: "Yes. The full-length test and all four drills are free, with no account required. Create a free account to keep your progress in step between your phone and your computer.",
           },
         },
       ],
@@ -133,7 +134,7 @@ export default function TeasLandingPage() {
             Free TEAS Practice Test 2026
           </h1>
           <ExamLandingHero
-            dashboardHref="/teas/dashboard"
+            dashboardHref="/teas"
             shortName="TEAS"
             subtitle="200 questions across all four ATI TEAS 7 sections. Worked math, anatomy-heavy science. No account needed."
             shots={{ mobile: "/landing/teas-mobile.png", desktop: "/landing/teas-desktop.png" }}
@@ -152,9 +153,9 @@ export default function TeasLandingPage() {
               <Smartphone className="w-7 h-7 text-brand" />
             </div>
             <div className="bg-gray-50 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Training by Domain</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Skill Drills on Your Phone</h3>
               <p className="text-gray-600">
-                Four sets, one per section: reading with its own short passages, mathematics with every step shown, science weighted to anatomy and physiology, and English and language usage. Questions you miss come back until you have mastered them.
+                Four drills, one per TEAS section: reading passages beside the question, math with every step shown, science weighted to anatomy and physiology, and English and language usage. One tap checks each answer, and every miss comes back until you have mastered it.
               </p>
             </div>
           </div>
@@ -165,7 +166,7 @@ export default function TeasLandingPage() {
             <div className="bg-gray-50 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">Practice Tests</h3>
               <p className="text-gray-600">
-                Four 50-question tests mixed in the TEAS 7 proportions, so science and reading carry the most weight, just like exam day.
+                The real structure: Reading, Mathematics, Science and English in order, each with its own clock, a calculator on the math section and a break after it. Finish with percent scores per section and a composite, then a plan for what to drill next.
               </p>
             </div>
           </div>
@@ -279,7 +280,7 @@ export default function TeasLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 mb-2">Does this have the same question types as the real TEAS?</h3>
             <p className="text-gray-600">
-              The real exam mixes multiple choice with select-all-that-apply, fill-in, hot-spot and ordered-response items. Everything here is four-option single answer, and reading passages are embedded in each question, so use this to learn the content and expect the other formats on exam day.
+              The real exam mixes multiple choice with select-all-that-apply, fill-in, hot-spot and ordered-response items. Everything here is four-option single answer, with each reading passage shown beside its question, so use this to learn the content and the timing and expect the other formats on exam day.
             </p>
           </div>
           <div>
@@ -291,7 +292,7 @@ export default function TeasLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 mb-2">Is the TigerTest TEAS practice test free?</h3>
             <p className="text-gray-600">
-              Yes. All four practice tests and all training sets are free, with no account required. Create a free account if you want your progress saved across devices.
+              Yes. The full-length test and all four drills are free, with no account required. Create a free account to keep your progress in step between your phone and your computer.
             </p>
           </div>
         </div>
@@ -305,7 +306,7 @@ export default function TeasLandingPage() {
         <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Ready to Pass the TEAS?</h2>
           <p className="text-lg text-gray-600 mb-10">Free to start. No account required. 200 questions across all four sections.</p>
-          <ExamLandingCTA dashboardHref="/teas/dashboard" />
+          <ExamLandingCTA dashboardHref="/teas" />
         </div>
       </div>
     </div>

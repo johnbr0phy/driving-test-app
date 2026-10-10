@@ -1,0 +1,767 @@
+[
+  {
+    "id": "SAT-MA-001",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "If $6(x - 1) = 2x + 14$, what is the value of $x$?",
+    "options": [
+      "$2$",
+      "$3.75$",
+      "$5$",
+      "$20$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "Distribute first: $6x - 6 = 2x + 14$. Subtract $2x$ from both sides and add $6$ to both sides to get $4x = 20$, so $x = 5$. Check: $6(5 - 1) = 24$ and $2(5) + 14 = 24$. The choice $3.75$ comes from writing $6x - 1$ instead of $6x - 6$, forgetting to multiply the $-1$ by $6$. The choice $20$ stops at $4x = 20$ without dividing, and $2$ comes from subtracting $6$ instead of adding it ($4x = 8$)."
+  },
+  {
+    "id": "SAT-MA-002",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "algebra",
+    "skill": "Linear functions",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The table gives three values of the linear function $f$.\n\n| $x$ | $f(x)$ |\n|---|---|\n| $1$ | $7$ |\n| $2$ | $10$ |\n| $3$ | $13$ |\n\nWhich equation defines $f$?",
+    "options": [
+      "$f(x) = 3x + 4$",
+      "$f(x) = 4x + 3$",
+      "$f(x) = 3x + 7$",
+      "$f(x) = x + 6$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Each time $x$ increases by $1$, $f(x)$ increases by $3$, so the slope is $3$ and $f(x) = 3x + b$. Using the first row, $7 = 3(1) + b$ gives $b = 4$, so $f(x) = 3x + 4$; check: $f(3) = 3(3) + 4 = 13$. The choice $3x + 7$ treats $f(1) = 7$ as the $y$-intercept, but the intercept is $f(0)$, one step of $3$ below $7$. The choice $x + 6$ fits only the first row."
+  },
+  {
+    "id": "SAT-MA-003",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "advancedMath",
+    "skill": "Equivalent expressions",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which of the following is equivalent to $9x^2 - 25$?",
+    "options": [
+      "$(3x - 5)(3x + 5)$",
+      "$(3x - 5)^2$",
+      "$(9x - 5)(x + 5)$",
+      "$(3x + 5)^2$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "The expression is a difference of squares: $9x^2 = (3x)^2$ and $25 = 5^2$, and $a^2 - b^2 = (a - b)(a + b)$, so $9x^2 - 25 = (3x - 5)(3x + 5)$. Expanding confirms it: the middle terms $15x$ and $-15x$ cancel. The choice $(3x - 5)^2$ expands to $9x^2 - 30x + 25$, which has a middle term and the wrong sign on $25$. The choice $(9x - 5)(x + 5)$ expands to $9x^2 + 40x - 25$."
+  },
+  {
+    "id": "SAT-MA-004",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "dataAnalysis",
+    "skill": "Ratios, rates and proportions",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "An office printer prints $45$ pages in $3$ minutes. At this rate, how many pages does the printer print in $8$ minutes?",
+    "numeric": {
+      "answers": [
+        "120"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The rate is $\\frac{45}{3} = 15$ pages per minute, so in $8$ minutes the printer prints $8 \\times 15 = 120$ pages. Equivalently, set up the proportion $\\frac{45}{3} = \\frac{p}{8}$ and cross-multiply: $3p = 360$, so $p = 120$. A common error is to multiply $45$ by $8$ without dividing by $3$, which gives $360$."
+  },
+  {
+    "id": "SAT-MA-005",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "geometryTrig",
+    "skill": "Area and volume",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A cylindrical water tank has a diameter of $8$ feet and a height of $5$ feet. What is the volume of the tank, in cubic feet?",
+    "options": [
+      "$40\\pi$",
+      "$80\\pi$",
+      "$160\\pi$",
+      "$320\\pi$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "The volume of a cylinder is $V = \\pi r^2 h$, and the radius is half the diameter, so $r = 4$. Then $V = \\pi (4^2)(5) = 80\\pi$ cubic feet. The choice $320\\pi$ comes from using the diameter $8$ as the radius: $\\pi (8^2)(5)$. The choice $40\\pi$ is $2\\pi r h$, the lateral surface area, and $160\\pi$ comes from mixing the diameter and the radius, $\\pi (8)(4)(5)$."
+  },
+  {
+    "id": "SAT-MA-006",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "advancedMath",
+    "skill": "Nonlinear functions: evaluating an exponential function",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The function $h$ is defined by $h(x) = 3 \\cdot 2^x - 5$. What is the value of $h(4)$?",
+    "options": [
+      "$19$",
+      "$43$",
+      "$48$",
+      "$1{,}291$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "Substitute $4$ for $x$ and evaluate the power before multiplying: $2^4 = 16$, so $h(4) = 3 \\cdot 16 - 5 = 48 - 5 = 43$. The choice $1{,}291$ multiplies $3 \\cdot 2 = 6$ first and then raises $6$ to the fourth power, which breaks the order of operations; the exponent applies only to the $2$. The choice $19$ treats $2^4$ as $2 \\cdot 4 = 8$, and $48$ forgets to subtract $5$."
+  },
+  {
+    "id": "SAT-MA-007",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "dataAnalysis",
+    "skill": "Percentages",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The monthly price of a transit pass increased from \\$80 to \\$92. By what percent did the price increase?",
+    "options": [
+      "$12\\%$",
+      "$13\\%$",
+      "$15\\%$",
+      "$115\\%$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "Percent change is the change divided by the original amount: $\\frac{92 - 80}{80} = \\frac{12}{80} = 0.15$, so the price increased by $15\\%$. The choice $13\\%$ divides the change by the new price, $\\frac{12}{92} \\approx 0.13$, instead of the original price. The choice $12\\%$ reports the dollar change as if it were a percent, and $115\\%$ is the ratio $\\frac{92}{80}$ of the new price to the old price, not the increase."
+  },
+  {
+    "id": "SAT-MA-008",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "algebra",
+    "skill": "Linear inequalities in one variable",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which of the following describes all solutions of the inequality $4 - 2x > 10$?",
+    "options": [
+      "$x < -7$",
+      "$x > -7$",
+      "$x < -3$",
+      "$x > -3$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "Subtract $4$ from both sides to get $-2x > 6$. Dividing both sides by a negative number reverses the inequality sign, so $x < -3$. Check: $x = -4$ gives $4 + 8 = 12 > 10$, while $x = 0$ gives $4 > 10$, which is false. The choice $x > -3$ forgets to reverse the sign when dividing by $-2$. The choices with $-7$ come from adding $4$ to $10$ instead of subtracting it."
+  },
+  {
+    "id": "SAT-MA-009",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "advancedMath",
+    "skill": "Nonlinear equations",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "If $(x - 3)^2 = 16$ and $x > 0$, what is the value of $x$?",
+    "numeric": {
+      "answers": [
+        "7"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Take the square root of both sides, keeping both signs: $x - 3 = 4$ or $x - 3 = -4$, so $x = 7$ or $x = -1$. Since $x > 0$, the answer is $x = 7$. Check: $(7 - 3)^2 = 4^2 = 16$. A common error is to expand $(x - 3)^2$ as $x^2 - 9$, which gives $x^2 = 25$ and $x = 5$, but $(5 - 3)^2 = 4$, not $16$."
+  },
+  {
+    "id": "SAT-MA-010",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "algebra",
+    "skill": "Linear functions: interpreting parameters",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The function $L(t) = 24 - 1.5t$ gives the length, in centimeters, of a candle $t$ hours after it is lit. What is the best interpretation of the number $1.5$ in this context?",
+    "options": [
+      "The candle gets $1.5$ centimeters shorter each hour.",
+      "The candle burns out $1.5$ hours after it is lit.",
+      "The candle is $1.5$ centimeters long when it is lit.",
+      "The candle gets $24$ centimeters shorter every $1.5$ hours."
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "In the linear function $L(t) = 24 - 1.5t$, the number multiplied by $t$ is the rate of change: each additional hour subtracts $1.5$ from the length, so the candle gets $1.5$ centimeters shorter per hour. The $24$ is $L(0)$, the length when the candle is lit. The choice about burning out after $1.5$ hours confuses the rate with the time needed to reach $0$; solving $24 - 1.5t = 0$ gives $t = 16$ hours, not $1.5$."
+  },
+  {
+    "id": "SAT-MA-011",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A line in the $xy$-plane passes through the point $(0, -2)$ and has slope $\\frac{3}{4}$. Which of the following is an equation of the line?",
+    "options": [
+      "$y = \\frac{3}{4}x - 2$",
+      "$y = \\frac{3}{4}x + 2$",
+      "$y = \\frac{4}{3}x - 2$",
+      "$y = -2x + \\frac{3}{4}$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "A point with $x$-coordinate $0$ is the $y$-intercept, so $b = -2$ in the slope-intercept form $y = mx + b$, and the slope is $m = \\frac{3}{4}$, giving $y = \\frac{3}{4}x - 2$. Check: $x = 0$ gives $y = -2$. The choice $y = \\frac{3}{4}x + 2$ drops the sign of the intercept. The choice $y = \\frac{4}{3}x - 2$ inverts the slope, and $y = -2x + \\frac{3}{4}$ swaps the roles of the slope and the intercept."
+  },
+  {
+    "id": "SAT-MA-012",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "advancedMath",
+    "skill": "Exponential functions: decay",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A forest had $500$ oak trees when a survey began, and the number of oak trees decreases by $8\\%$ each year. Which function gives the number of oak trees $N(t)$ in the forest $t$ years after the survey began?",
+    "options": [
+      "$N(t) = 500(0.92)^t$",
+      "$N(t) = 500(1.08)^t$",
+      "$N(t) = 500(0.08)^t$",
+      "$N(t) = 500 - 40t$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "An $8\\%$ decrease each year leaves $100\\% - 8\\% = 92\\%$ of the previous year's count, so the count is multiplied by $0.92$ each year: $N(t) = 500(0.92)^t$. Check: after $1$ year, $500(0.92) = 460$, which is $500 - 40$. The choice $500(0.08)^t$ keeps only $8\\%$ of the trees each year, a $92\\%$ decrease. The choice $500(1.08)^t$ models $8\\%$ growth, and $500 - 40t$ removes a fixed $40$ trees every year, which equals $8\\%$ of the count only in the first year."
+  },
+  {
+    "id": "SAT-MA-013",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "algebra",
+    "skill": "Systems of two linear equations",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "If $3x + 2y = 22$ and $5x - 2y = 10$, what is the value of $y$?",
+    "numeric": {
+      "answers": [
+        "5"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The $y$ terms have opposite coefficients, so add the two equations: $8x = 32$, which gives $x = 4$. Substitute into the first equation: $3(4) + 2y = 22$, so $2y = 10$ and $y = 5$. Check in the second equation: $5(4) - 2(5) = 10$. A common error is to stop at $x = 4$ and enter it as the answer; the question asks for $y$."
+  },
+  {
+    "id": "SAT-MA-014",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "algebra",
+    "skill": "Linear inequalities in context",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A moving company charges a flat fee of \\$60 plus \\$25 for each hour of work, and a customer has budgeted at most \\$300 for the job. If $h$ is the number of hours of work, which inequality represents all possible values of $h$?",
+    "options": [
+      "$h \\le 9.6$",
+      "$h \\le 12$",
+      "$h \\le 14.4$",
+      "$h \\ge 9.6$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "The total cost is $60 + 25h$, and a budget of at most \\$300 means $60 + 25h \\le 300$. Subtract $60$ from both sides: $25h \\le 240$, so $h \\le 9.6$. The choice $h \\le 12$ divides $300$ by $25$ without first subtracting the flat fee, the most common slip. The choice $h \\le 14.4$ adds the fee instead of subtracting it, and $h \\ge 9.6$ reverses the direction of 'at most'."
+  },
+  {
+    "id": "SAT-MA-015",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "advancedMath",
+    "skill": "Quadratics: quadratic formula",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What are the solutions to the equation $2x^2 - 6x + 1 = 0$?",
+    "options": [
+      "$x = \\frac{3 \\pm \\sqrt{7}}{2}$",
+      "$x = \\frac{-3 \\pm \\sqrt{7}}{2}$",
+      "$x = \\frac{3 \\pm \\sqrt{11}}{2}$",
+      "$x = \\frac{6 \\pm \\sqrt{7}}{2}$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "With $a = 2$, $b = -6$ and $c = 1$, the quadratic formula gives $x = \\frac{6 \\pm \\sqrt{36 - 8}}{4} = \\frac{6 \\pm \\sqrt{28}}{4}$. Since $\\sqrt{28} = 2\\sqrt{7}$, this simplifies to $\\frac{6 \\pm 2\\sqrt{7}}{4} = \\frac{3 \\pm \\sqrt{7}}{2}$. The choice $\\frac{-3 \\pm \\sqrt{7}}{2}$ uses $+b$ instead of $-b$ in the numerator. The choice $\\frac{3 \\pm \\sqrt{11}}{2}$ adds $4ac$ instead of subtracting it ($36 + 8 = 44$), and $\\frac{6 \\pm \\sqrt{7}}{2}$ divides only the radical by $2$ when simplifying."
+  },
+  {
+    "id": "SAT-MA-016",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "dataAnalysis",
+    "skill": "One-variable data: mean, median and standard deviation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The lists give the points scored by two basketball players in each of $5$ games.\n\nPlayer A: $12, 14, 16, 18, 20$\n\nPlayer B: $8, 14, 16, 18, 24$\n\nWhich of the following statements is true?",
+    "options": [
+      "The two players have the same mean score, and the standard deviation of Player B's scores is greater than the standard deviation of Player A's scores.",
+      "The mean score of Player B is greater than the mean score of Player A.",
+      "The median score of Player A is greater than the median score of Player B.",
+      "The standard deviations of the two lists are equal because the medians are equal."
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Both lists sum to $80$, so both means are $\\frac{80}{5} = 16$, and each list has $16$ as its middle value, so the medians are also equal. Standard deviation measures spread about the mean: Player B's scores reach $8$ points from the mean ($8$ and $24$) while Player A's stay within $4$, so B's standard deviation is greater. The choice claiming B's mean is greater is tempting because B has the single highest score, $24$, but the low score of $8$ balances it exactly. Equal medians say nothing about spread, so the last choice is false."
+  },
+  {
+    "id": "SAT-MA-017",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "advancedMath",
+    "skill": "Exponential functions: growth",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A culture starts with $500$ bacteria, and the number of bacteria doubles every $3$ hours. Which function gives the number of bacteria $N(t)$ in the culture $t$ hours after the start?",
+    "options": [
+      "$N(t) = 500 \\cdot 2^{t/3}$",
+      "$N(t) = 500 \\cdot 2^{3t}$",
+      "$N(t) = 500 \\cdot 3^{t/2}$",
+      "$N(t) = 500 \\cdot 6^{t}$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "The count is multiplied by $2$ once for every $3$ hours, so after $t$ hours there have been $\\frac{t}{3}$ doublings: $N(t) = 500 \\cdot 2^{t/3}$. Check: at $t = 3$, $N = 500 \\cdot 2 = 1{,}000$, and at $t = 6$, $N = 500 \\cdot 4 = 2{,}000$. The choice $500 \\cdot 2^{3t}$ doubles three times every hour, giving $4{,}000$ after just $1$ hour. The choice $500 \\cdot 3^{t/2}$ swaps the growth factor and the period."
+  },
+  {
+    "id": "SAT-MA-018",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "If $\\frac{2}{3}(x + 6) = \\frac{x}{2} + 9$, what is the value of $x$?",
+    "numeric": {
+      "answers": [
+        "30"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Multiply both sides by $6$ to clear the fractions: $4(x + 6) = 3x + 54$. Distribute: $4x + 24 = 3x + 54$, so $x = 30$. Check: $\\frac{2}{3}(36) = 24$ and $\\frac{30}{2} + 9 = 24$. A common error is to distribute $\\frac{2}{3}$ to $x$ but not to $6$, which gives $\\frac{2}{3}x + 6 = \\frac{x}{2} + 9$ and the wrong answer $x = 18$."
+  },
+  {
+    "id": "SAT-MA-019",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "geometryTrig",
+    "skill": "Right triangles and trigonometry",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In the figure, triangle $PQR$ has a right angle at $Q$, $PQ = 8$, $QR = 15$ and $PR = 17$. What is the value of $\\cos R$?",
+    "options": [
+      "$\\frac{15}{17}$",
+      "$\\frac{8}{17}$",
+      "$\\frac{8}{15}$",
+      "$\\frac{15}{8}$"
+    ],
+    "correct": [
+      0
+    ],
+    "figure": {
+      "src": "/figures/sat/sat-ma-019.svg",
+      "alt": "Right triangle PQR with the right angle at Q, marked with a small square. The horizontal leg QR has length 15, the vertical leg PQ has length 8, and the hypotenuse PR has length 17. Figure not drawn to scale."
+    },
+    "calculator": true,
+    "explanation": "The cosine of an acute angle in a right triangle is the length of the leg adjacent to the angle divided by the length of the hypotenuse. The leg adjacent to angle $R$ is $QR = 15$ and the hypotenuse is $PR = 17$, so $\\cos R = \\frac{15}{17}$. The choice $\\frac{8}{17}$ is $\\sin R$, opposite over hypotenuse, the most common mix-up; it is also $\\cos P$. The choice $\\frac{8}{15}$ is $\\tan R$, and $\\frac{15}{8}$ is $\\tan P$."
+  },
+  {
+    "id": "SAT-MA-020",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "dataAnalysis",
+    "skill": "Two-variable data: models and scatterplots",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The scatterplot shows the age, in years, and the selling price, in thousands of dollars, of $11$ used cars of the same model, along with a line of best fit. Which of the following is the best interpretation of the slope of the line of best fit?",
+    "options": [
+      "The predicted selling price decreases by about \\$2,000 for each additional year of age.",
+      "The predicted selling price decreases by about \\$25,000 for each additional year of age.",
+      "A car of this model is predicted to sell for about \\$25,000 when it is new.",
+      "The predicted age increases by about $2$ years for each additional \\$1,000 in selling price."
+    ],
+    "correct": [
+      0
+    ],
+    "figure": {
+      "src": "/figures/sat/sat-ma-020.svg",
+      "alt": "Scatterplot of selling price in thousands of dollars (vertical axis, 0 to 30) versus age in years (horizontal axis, 0 to 10) for 11 used cars, with a line of best fit that passes through (0, 25) and (10, 5). The points are approximately (1, 23), (2, 20), (2, 22), (3, 18), (4, 17), (5, 16), (6, 12), (7, 12), (8, 8), (9, 8) and (10, 6)."
+    },
+    "calculator": true,
+    "explanation": "The line passes through $(0, 25)$ and $(10, 5)$, so its slope is $\\frac{5 - 25}{10 - 0} = -2$ thousand dollars per year: each additional year of age lowers the predicted price by about \\$2,000. The choice about \\$25,000 for a new car describes the $y$-intercept, where the line meets the vertical axis, not the slope. The choice of \\$25,000 per year confuses that intercept with the rate of change, and the last choice inverts the slope by treating age as the predicted variable."
+  },
+  {
+    "id": "SAT-MA-021",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "advancedMath",
+    "skill": "Radicals and rational exponents",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which of the following is equivalent to $(27x^6)^{\\frac{2}{3}}$ for $x > 0$?",
+    "options": [
+      "$9x^4$",
+      "$3x^4$",
+      "$9x^9$",
+      "$18x^4$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Apply the exponent to each factor: $(27x^6)^{2/3} = 27^{2/3} \\cdot (x^6)^{2/3}$. Since $27^{2/3} = (\\sqrt[3]{27})^2 = 3^2 = 9$ and $(x^6)^{2/3} = x^{6 \\cdot 2/3} = x^4$, the result is $9x^4$. The choice $3x^4$ takes the cube root of $27$ but forgets to square it. The choice $18x^4$ multiplies $27$ by $\\frac{2}{3}$ instead of raising it to that power, and $9x^9$ comes from using $6 \\cdot \\frac{3}{2}$ for the exponent."
+  },
+  {
+    "id": "SAT-MA-022",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "advancedMath",
+    "skill": "Polynomial remainder and factors",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "The polynomial $p(x) = x^3 - 4x^2 + 2x + 5$ is divided by $x - 3$. What is the remainder?",
+    "numeric": {
+      "answers": [
+        "2"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "By the remainder theorem, the remainder when $p(x)$ is divided by $x - 3$ is $p(3)$. Compute $p(3) = 27 - 4(9) + 2(3) + 5 = 27 - 36 + 6 + 5 = 2$. A common error is to evaluate $p(-3)$, using the sign that appears in the divisor, which gives $-27 - 36 - 6 + 5 = -64$."
+  },
+  {
+    "id": "SAT-MA-023",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "geometryTrig",
+    "skill": "Circles: equations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A circle in the $xy$-plane has the equation $x^2 + y^2 - 6x + 4y - 12 = 0$. What is the radius of the circle?",
+    "options": [
+      "$2\\sqrt{3}$",
+      "$5$",
+      "$12$",
+      "$25$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "Complete the square for each variable: $(x^2 - 6x + 9) + (y^2 + 4y + 4) = 12 + 9 + 4$, which gives $(x - 3)^2 + (y + 2)^2 = 25$. In the standard form $(x - h)^2 + (y - k)^2 = r^2$, so $r^2 = 25$ and $r = 5$. The choice $25$ is $r^2$, not $r$. The choice $2\\sqrt{3}$, which equals $\\sqrt{12}$, uses the constant $12$ without adding the $9$ and $4$ needed to complete the squares."
+  },
+  {
+    "id": "SAT-MA-024",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "geometryTrig",
+    "skill": "Similar triangles",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A person who is $6$ feet tall casts a shadow $4$ feet long. At the same time, a nearby flagpole casts a shadow $18$ feet long. What is the height of the flagpole, in feet?",
+    "numeric": {
+      "answers": [
+        "27"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The person and the flagpole, together with their shadows, form similar right triangles because the sun's rays make the same angle with the ground for both. Corresponding sides are proportional: $\\frac{h}{18} = \\frac{6}{4}$, so $h = 18 \\cdot \\frac{3}{2} = 27$ feet. A common error is to match height to shadow the wrong way, $\\frac{h}{18} = \\frac{4}{6}$, which gives $12$."
+  },
+  {
+    "id": "SAT-MA-025",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "algebra",
+    "skill": "Linear functions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The function $f$ is defined by $f(x) = ax + 7$, where $a$ is a constant. If $f(4) = 19$, what is the value of $f(10)$?",
+    "options": [
+      "$30$",
+      "$37$",
+      "$47.5$",
+      "$72$"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "First find $a$: $f(4) = 4a + 7 = 19$, so $4a = 12$ and $a = 3$. Then $f(10) = 3(10) + 7 = 37$. The choice $47.5$ assumes $f(10)$ is proportional to $f(4)$, $19 \\cdot \\frac{10}{4}$, but a linear function with a nonzero constant term is not a proportion. The choice $30$ forgets to add the $7$, and $72$ comes from adding $7$ to $19$ instead of subtracting, which gives $a = 6.5$."
+  },
+  {
+    "id": "SAT-MA-026",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "dataAnalysis",
+    "skill": "Probability and conditional probability",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The table summarizes the $150$ members of a community garden by age group and by whether they take part in weekend workdays.\n\n| Age group | Workdays | No workdays | Total |\n|---|---|---|---|\n| Under $40$ | $60$ | $30$ | $90$ |\n| $40$ and over | $24$ | $36$ | $60$ |\n| Total | $84$ | $66$ | $150$ |\n\nIf a member who takes part in weekend workdays is selected at random, what is the probability that the member is $40$ or over?",
+    "options": [
+      "$\\frac{4}{25}$",
+      "$\\frac{2}{7}$",
+      "$\\frac{2}{5}$",
+      "$\\frac{5}{7}$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "The condition 'takes part in weekend workdays' limits the selection to the Workdays column, so the denominator is that column's total, $84$. Of those members, $24$ are $40$ or over: $\\frac{24}{84} = \\frac{2}{7}$. The choice $\\frac{2}{5}$ is $\\frac{24}{60}$, the probability that a member $40$ or over takes part in workdays, which uses the row total and reverses the condition. The choice $\\frac{4}{25}$ is $\\frac{24}{150}$, using all members as the denominator, and $\\frac{5}{7}$ is the probability of selecting a member under $40$."
+  },
+  {
+    "id": "SAT-MA-027",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "advancedMath",
+    "skill": "Quadratics: vertex form",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The function $f$ is defined by $f(x) = x^2 - 8x + 10$. What is the minimum value of $f$?",
+    "options": [
+      "$-16$",
+      "$-6$",
+      "$4$",
+      "$10$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "Complete the square: $x^2 - 8x + 10 = (x - 4)^2 - 16 + 10 = (x - 4)^2 - 6$. Since $(x - 4)^2 \\ge 0$ for every $x$, the smallest value of $f$ is $-6$, reached at $x = 4$. The choice $4$ is the $x$-coordinate of the vertex, not the minimum value, the most common mix-up. The choice $-16$ forgets to add back the constant $10$, and $10$ is $f(0)$."
+  },
+  {
+    "id": "SAT-MA-028",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "algebra",
+    "skill": "Linear inequalities in two variables",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which of the following ordered pairs $(x, y)$ is a solution to the system of inequalities $y > 2x - 1$ and $y \\le -x + 5$?",
+    "options": [
+      "$(1, 3)$",
+      "$(2, 3)$",
+      "$(3, 2)$",
+      "$(0, 6)$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Test each pair in both inequalities. For $(1, 3)$: $3 > 2(1) - 1 = 1$ is true and $3 \\le -1 + 5 = 4$ is true, so it is a solution. The pair $(2, 3)$ gives $3 > 3$, which is false because the first inequality is strict; points on that boundary line are not included. The pair $(0, 6)$ satisfies the first inequality, but $6 \\le 5$ is false, and $(3, 2)$ fails the first inequality since $2 > 5$ is false."
+  },
+  {
+    "id": "SAT-MA-029",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "algebra",
+    "skill": "Systems of two linear equations: no solution",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "In the system of equations $3x - 5y = 8$ and $kx + 10y = 7$, $k$ is a constant. For which value of $k$ does the system have no solution?",
+    "options": [
+      "$-6$",
+      "$-2$",
+      "$2$",
+      "$6$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "A system of two linear equations has no solution when the lines are parallel: the $x$- and $y$-coefficients are in the same ratio but the constants are not. Multiply the first equation by $-2$ to get $-6x + 10y = -16$; the second equation then has the same $y$-coefficient, so the lines are parallel when $k = -6$, and since $7 \\ne -16$ they are distinct lines. The choice $6$ gets the size right but ignores that $10$ is $-2$ times $-5$, not $2$ times. The choice $-2$ is the multiplier itself, not the resulting coefficient."
+  },
+  {
+    "id": "SAT-MA-030",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "algebra",
+    "skill": "Linear equations in one variable: infinitely many solutions",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "In the equation $a(x + 4) = 6x + b$, $a$ and $b$ are constants. If the equation has infinitely many solutions, what is the value of $a + b$?",
+    "numeric": {
+      "answers": [
+        "30"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "An equation in $x$ has infinitely many solutions when both sides simplify to the same expression. Distributing gives $ax + 4a = 6x + b$, so the $x$-coefficients must match, $a = 6$, and the constants must match, $b = 4a = 24$. Then $a + b = 6 + 24 = 30$. A common error is to set $b = 4$, forgetting that the $4$ is multiplied by $a$ when it is distributed, which gives $10$."
+  },
+  {
+    "id": "SAT-MA-031",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "advancedMath",
+    "skill": "Quadratics: discriminant",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "In the equation $kx^2 - 6x + 3 = 0$, $k$ is a nonzero constant. If the equation has exactly one real solution, what is the value of $k$?",
+    "options": [
+      "$-3$",
+      "$3$",
+      "$9$",
+      "$12$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "A quadratic $ax^2 + bx + c = 0$ has exactly one real solution when its discriminant $b^2 - 4ac$ equals $0$. Here $b^2 - 4ac = (-6)^2 - 4(k)(3) = 36 - 12k$, and $36 - 12k = 0$ gives $k = 3$. Check: $3x^2 - 6x + 3 = 3(x - 1)^2$, which is $0$ only at $x = 1$. The choice $12$ comes from leaving out the $4$ in $4ac$ ($36 - 3k = 0$). The choice $-3$ comes from treating $b^2$ as $-36$, and $9$ comes from setting $b^2 = 4k$, dropping $c$."
+  },
+  {
+    "id": "SAT-MA-032",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "advancedMath",
+    "skill": "Exponential functions: decay",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "The amount of a medication in a patient's bloodstream decreases exponentially. There were $80$ milligrams of the medication in the bloodstream $4$ hours after a dose and $20$ milligrams $8$ hours after the dose. How many milligrams of the medication were in the bloodstream $12$ hours after the dose?",
+    "numeric": {
+      "answers": [
+        "5"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Exponential decay multiplies the amount by the same factor over each equal time interval. From hour $4$ to hour $8$ the amount went from $80$ to $20$, a factor of $\\frac{20}{80} = \\frac{1}{4}$ every $4$ hours. From hour $8$ to hour $12$ the amount is multiplied by $\\frac{1}{4}$ again: $20 \\cdot \\frac{1}{4} = 5$ milligrams. A common error is to subtract the same $60$ milligrams again, which is linear decay and would give $-40$, an impossible amount."
+  },
+  {
+    "id": "SAT-MA-033",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "advancedMath",
+    "skill": "Equivalent expressions: matching coefficients",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "If $(ax - 2)(2x + b) = 6x^2 + 5x - 6$ for all values of $x$, where $a$ and $b$ are constants, what is the value of $a + b$?",
+    "options": [
+      "$0$",
+      "$5$",
+      "$6$",
+      "$9$"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "Expand the left side: $(ax - 2)(2x + b) = 2ax^2 + (ab - 4)x - 2b$. Matching coefficients with $6x^2 + 5x - 6$ gives $2a = 6$, so $a = 3$, and $-2b = -6$, so $b = 3$. Check the middle term: $ab - 4 = 9 - 4 = 5$, as required, so $a + b = 6$. The choice $0$ comes from the sign slip $b = -3$, which makes the middle coefficient $-13$ instead of $5$. The choice $9$ is $ab$, not $a + b$."
+  },
+  {
+    "id": "SAT-MA-034",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "dataAnalysis",
+    "skill": "Margin of error and sample inference",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A city planner surveyed a random sample of $400$ households in a city. In the sample, $54\\%$ of the households owned at least one pet, with an associated margin of error of $5\\%$. Which of the following conclusions is best supported by these results?",
+    "options": [
+      "It is plausible that the percent of all households in the city that own at least one pet is between $49\\%$ and $59\\%$.",
+      "Exactly $54\\%$ of all households in the city own at least one pet.",
+      "Between $49\\%$ and $59\\%$ of the households in the sample own at least one pet.",
+      "If the planner had surveyed $800$ households instead, the margin of error would be larger."
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "The margin of error gives an interval of plausible values for the population percent: $54\\% \\pm 5\\%$, or $49\\%$ to $59\\%$, for all households in the city. The sample percent itself is known exactly ($54\\%$ of the $400$ households), so the interval does not describe the sample; it describes the uncertainty in generalizing from the sample to the city. The choice 'exactly $54\\%$' treats the sample result as the population value with no uncertainty, the most common error. A larger random sample would make the margin of error smaller, not larger."
+  },
+  {
+    "id": "SAT-MA-035",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "geometryTrig",
+    "skill": "Area and volume: composite figures",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "The figure shows the end wall of a storage shed. The wall consists of a rectangle with a base of $12$ feet and a height of $5$ feet, topped by an isosceles triangle whose two equal sides are each $10$ feet long. What is the area of the wall, in square feet?",
+    "numeric": {
+      "answers": [
+        "108"
+      ],
+      "tolerance": 0
+    },
+    "figure": {
+      "src": "/figures/sat/sat-ma-035.svg",
+      "alt": "A pentagon shaped like the end of a house: a rectangle whose base is labeled 12 and whose right side is labeled 5, with an isosceles triangle on top whose two slanted sides are each labeled 10. Figure not drawn to scale."
+    },
+    "calculator": true,
+    "explanation": "The rectangle has area $12 \\times 5 = 60$. The triangle is isosceles with base $12$, so its height splits the base into two segments of $6$ and forms a right triangle with hypotenuse $10$: the height is $\\sqrt{10^2 - 6^2} = \\sqrt{64} = 8$. The triangle's area is $\\frac{1}{2}(12)(8) = 48$, so the total area is $60 + 48 = 108$ square feet. A common error is to use $10$ as the triangle's height, which gives $60 + 60 = 120$; the $10$-foot sides are slanted, not vertical."
+  }
+]

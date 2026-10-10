@@ -1,0 +1,770 @@
+[
+  {
+    "id": "SAT-MA-036",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "If $5(x - 2) = 3x + 8$, what is the value of $x$?",
+    "options": [
+      "$-1$",
+      "$5$",
+      "$9$",
+      "$18$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "Distribute first: $5x - 10 = 3x + 8$. Subtract $3x$ from both sides to get $2x - 10 = 8$, add $10$ to get $2x = 18$, and divide by $2$ to get $x = 9$. The choice $5$ comes from writing $5x - 2$ instead of $5x - 10$, forgetting to multiply the $2$ by $5$. The choice $18$ comes from stopping at $2x = 18$, and $-1$ comes from moving the $10$ to the wrong side."
+  },
+  {
+    "id": "SAT-MA-037",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "algebra",
+    "skill": "Linear functions: interpreting parameters",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The function $C(m) = 0.25m + 40$ gives the monthly cost, in dollars, of a phone plan when $m$ minutes of calls are used. What is the best interpretation of the number $40$ in this context?",
+    "options": [
+      "The cost, in dollars, of each minute of calls",
+      "The monthly cost, in dollars, when no call minutes are used",
+      "The number of minutes of calls included each month",
+      "The monthly cost, in dollars, when $40$ minutes of calls are used"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "In $C(m) = 0.25m + 40$, the number $40$ is the value of $C$ when $m = 0$, so it is the monthly cost when no call minutes are used: the fixed charge. The number $0.25$ is the slope, the cost added for each additional minute, which rules out the choice about cost per minute. The choice about $40$ minutes confuses an input of the function with its constant term; $C(40) = 50$, not $40$."
+  },
+  {
+    "id": "SAT-MA-038",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "algebra",
+    "skill": "Function notation and evaluation",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "The function $f$ is defined by $f(x) = 3x^2 - 2x$. What is the value of $f(-2)$?",
+    "numeric": {
+      "answers": [
+        "16"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Replace every $x$ with $-2$, keeping the parentheses: $f(-2) = 3(-2)^2 - 2(-2)$. Since $(-2)^2 = 4$, this is $3(4) + 4 = 12 + 4 = 16$. The most common error is to square only the $2$ and keep the negative, writing $3(-4) + 4 = -8$; squaring a negative number always gives a positive result."
+  },
+  {
+    "id": "SAT-MA-039",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In the $xy$-plane, a line passes through the points $(2, 7)$ and $(5, 16)$. Which of the following is an equation of the line?",
+    "options": [
+      "$y = 3x + 1$",
+      "$y = 3x - 1$",
+      "$y = \\frac{1}{3}x + 7$",
+      "$y = 9x - 11$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "The slope is $\\frac{16 - 7}{5 - 2} = \\frac{9}{3} = 3$. Substitute one point into $y = 3x + b$: $7 = 3(2) + b$ gives $b = 1$, so the line is $y = 3x + 1$. Check the other point: $3(5) + 1 = 16$. The choice $y = 9x - 11$ uses the change in $y$ alone as the slope without dividing by the change in $x$; it passes through $(2, 7)$ but gives $34$, not $16$, at $x = 5$. The choice $y = \\frac{1}{3}x + 7$ inverts the slope ratio."
+  },
+  {
+    "id": "SAT-MA-040",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "algebra",
+    "skill": "Absolute value equations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the sum of all solutions to the equation $|2x - 7| = 11$?",
+    "options": [
+      "$-2$",
+      "$7$",
+      "$9$",
+      "$11$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "An absolute value equation splits into two cases. Either $2x - 7 = 11$, so $2x = 18$ and $x = 9$, or $2x - 7 = -11$, so $2x = -4$ and $x = -2$. The sum of the solutions is $9 + (-2) = 7$. The choice $9$ comes from solving only the positive case and forgetting that the expression inside the bars can also equal $-11$; the choice $-2$ keeps only the negative case."
+  },
+  {
+    "id": "SAT-MA-041",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "algebra",
+    "skill": "Linear inequalities in two variables",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The shaded region in the $xy$-plane shown represents the solution set of an inequality. Which inequality is shown?",
+    "options": [
+      "$x + 2y \\le 4$",
+      "$x + 2y \\ge 4$",
+      "$2x + y \\le 4$",
+      "$2x + y \\ge 4$"
+    ],
+    "correct": [
+      0
+    ],
+    "figure": {
+      "src": "/figures/sat/sat-ma-041.svg",
+      "alt": "Graph in the xy-plane with gridlines one unit apart. A solid line passes through (0, 2) on the y-axis and (4, 0) on the x-axis. The region below and to the left of the line, which contains the origin, is shaded."
+    },
+    "calculator": true,
+    "explanation": "The boundary line crosses the $y$-axis at $(0, 2)$ and the $x$-axis at $(4, 0)$. Both points satisfy $x + 2y = 4$, so that is the boundary, and the line is solid, so the inequality includes equality. Test the origin: $0 + 2(0) = 0 \\le 4$ is true, and the origin is in the shaded region, so the inequality is $x + 2y \\le 4$. The choice $x + 2y \\ge 4$ shades the wrong side of the same line. The choices with $2x + y$ describe a line through $(2, 0)$ and $(0, 4)$, which swaps the two intercepts."
+  },
+  {
+    "id": "SAT-MA-042",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "algebra",
+    "skill": "Systems of two linear equations",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "At a movie theater, $3$ adult tickets and $2$ child tickets cost a total of \\$52, and $1$ adult ticket and $1$ child ticket cost a total of \\$20. What is the price, in dollars, of one adult ticket?",
+    "numeric": {
+      "answers": [
+        "12"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Let $a$ and $c$ be the adult and child prices. The system is $3a + 2c = 52$ and $a + c = 20$. From the second equation, $a = 20 - c$. Substituting: $3(20 - c) + 2c = 52$, so $60 - c = 52$ and $c = 8$. Then $a = 20 - 8 = 12$. A common error is to stop at $c = 8$ and report the child price, or to divide $52$ by $5$ tickets and answer $10.4$, which assumes both ticket types cost the same."
+  },
+  {
+    "id": "SAT-MA-043",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "algebra",
+    "skill": "Systems of two linear equations: infinitely many solutions",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "$ax - 6y = 9$\n\n$4x - 8y = b$\n\nIn the system of equations above, $a$ and $b$ are constants. If the system has infinitely many solutions, what is the value of $a + b$?",
+    "options": [
+      "$3$",
+      "$12$",
+      "$15$",
+      "$20$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "A system has infinitely many solutions when the two equations describe the same line, so one must be a constant multiple of the other. Comparing the $y$ terms, $-8 = \\frac{4}{3}(-6)$, so the second equation is $\\frac{4}{3}$ times the first. Then $4 = \\frac{4}{3}a$ gives $a = 3$, and $b = \\frac{4}{3}(9) = 12$, so $a + b = 15$. The choices $3$ and $12$ are $a$ and $b$ alone. The choice $20$ comes from using a multiplier of $2$ taken from $8 \\div 4$, which compares coefficients across different variables instead of matching the $y$ terms."
+  },
+  {
+    "id": "SAT-MA-044",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "algebra",
+    "skill": "Linear inequalities in one variable",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A drone's battery lasts $24$ minutes on a full charge. It takes $3$ minutes to fly to a survey site and $3$ minutes to fly back, and the drone must land with at least $4$ minutes of battery remaining. If the drone spends $t$ minutes filming at the site, which inequality represents all possible values of $t$?",
+    "options": [
+      "$t + 6 \\le 20$",
+      "$t + 6 \\ge 20$",
+      "$t + 4 \\le 24$",
+      "$t - 6 \\le 20$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "The time in the air is the trip out, the filming time, and the trip back: $3 + t + 3 = t + 6$ minutes. Landing with at least $4$ minutes left means the air time can be at most $24 - 4 = 20$ minutes, so $t + 6 \\le 20$. The choice $t + 6 \\ge 20$ reverses the direction; keeping battery in reserve limits the flight, it does not require a minimum. The choice $t + 4 \\le 24$ ignores the $6$ minutes of travel, and $t - 6 \\le 20$ subtracts the travel time instead of adding it."
+  },
+  {
+    "id": "SAT-MA-045",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "algebra",
+    "skill": "Linear functions",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A swimming pool holds $1{,}800$ gallons of water and is drained at a constant rate of $60$ gallons per minute. Which function $g$ gives the number of gallons remaining in the pool $t$ minutes after draining begins?",
+    "options": [
+      "$g(t) = 1800 - 60t$",
+      "$g(t) = 1800 + 60t$",
+      "$g(t) = 60t - 1800$",
+      "$g(t) = 60 - 1800t$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "The pool starts at $1{,}800$ gallons, and every minute removes $60$ gallons, so after $t$ minutes the amount removed is $60t$ and the amount remaining is $g(t) = 1800 - 60t$. The choice $1800 + 60t$ has the water increasing, which describes filling rather than draining. The choice $60t - 1800$ gives a negative amount at $t = 0$ instead of a full pool, and $60 - 1800t$ swaps the starting amount and the rate."
+  },
+  {
+    "id": "SAT-MA-046",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "algebra",
+    "skill": "Linear equations in two variables: intercepts",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The graph of $5x + 2y = 30$ in the $xy$-plane crosses the $x$-axis at the point $(a, 0)$. What is the value of $a$?",
+    "options": [
+      "$6$",
+      "$10$",
+      "$15$",
+      "$30$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "At any point on the $x$-axis, $y = 0$. Substituting $y = 0$ gives $5x = 30$, so $x = 6$ and $a = 6$. The choice $15$ comes from setting $x = 0$ instead, which gives $2y = 30$ and the $y$-intercept $15$. The choice $30$ is the constant term read directly as an intercept, and $10$ comes from dividing $30$ by $3$, as if the two coefficients were added."
+  },
+  {
+    "id": "SAT-MA-047",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "algebra",
+    "skill": "Linear functions",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "For the linear function $f$, $f(3) - f(1) = 10$ and $f(2) = 7$. What is the value of $f(0)$?",
+    "numeric": {
+      "answers": [
+        "-3"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "A linear function has a constant rate of change. From $x = 1$ to $x = 3$, the input increases by $2$ and the output increases by $10$, so the slope is $\\frac{10}{2} = 5$. Then $f(x) = 5x + b$, and $f(2) = 7$ gives $10 + b = 7$, so $b = -3$ and $f(0) = -3$. A common error is to treat $10$ as the slope, which gives $f(x) = 10x - 13$ and the wrong answer $-13$; the $10$ is the change in output over $2$ units of input, not over $1$."
+  },
+  {
+    "id": "SAT-MA-048",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "advancedMath",
+    "skill": "Equivalent expressions",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which expression is equivalent to $(3x^2 - 4x + 1) - (x^2 + 2x - 5)$?",
+    "options": [
+      "$2x^2 - 6x + 6$",
+      "$2x^2 - 2x - 4$",
+      "$2x^2 - 6x - 4$",
+      "$4x^2 - 2x - 4$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Subtracting the second polynomial changes the sign of every term in it: $3x^2 - 4x + 1 - x^2 - 2x + 5$. Combining like terms gives $2x^2 - 6x + 6$. The choice $2x^2 - 2x - 4$ comes from subtracting only the first term of the second polynomial and adding the rest, the most common sign error. The choice $2x^2 - 6x - 4$ flips the sign of $2x$ but not of $-5$."
+  },
+  {
+    "id": "SAT-MA-049",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "advancedMath",
+    "skill": "Exponential functions: from a table of values",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Selected values of the exponential function $f$ are $f(0) = 4$, $f(1) = 6$, $f(2) = 9$, and $f(3) = 13.5$. Which equation defines $f$?",
+    "options": [
+      "$f(x) = 4\\left(\\frac{3}{2}\\right)^x$",
+      "$f(x) = \\frac{3}{2}(4)^x$",
+      "$f(x) = 4\\left(\\frac{2}{3}\\right)^x$",
+      "$f(x) = 4 + 2x$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "An exponential function has the form $f(x) = a \\cdot b^x$, where $a = f(0)$ and $b$ is the ratio of consecutive outputs. Here $a = 4$, and $\\frac{6}{4} = \\frac{9}{6} = \\frac{13.5}{9} = 1.5 = \\frac{3}{2}$, so $f(x) = 4\\left(\\frac{3}{2}\\right)^x$. The choice $f(x) = 4 + 2x$ fits the first two values but not $f(2) = 9$; the outputs grow by a constant factor, not a constant difference. The choice $\\frac{3}{2}(4)^x$ swaps the starting value and the growth factor."
+  },
+  {
+    "id": "SAT-MA-050",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "advancedMath",
+    "skill": "Equivalent expressions: exponents",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which expression is equivalent to $\\frac{9^x}{3^{x+1}}$ for all values of $x$?",
+    "options": [
+      "$3^{x-1}$",
+      "$3^{x+1}$",
+      "$3^{2x-1}$",
+      "$6^{x-1}$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Write both powers with the same base: $9^x = (3^2)^x = 3^{2x}$. Then $\\frac{3^{2x}}{3^{x+1}} = 3^{2x - (x+1)} = 3^{x-1}$. The choice $3^{2x-1}$ subtracts the $1$ but not the $x$ from the exponent. The choice $3^{x+1}$ simplifies $\\frac{9^x}{3^x}$ to $3^x$ but then multiplies by the extra factor of $3$ instead of dividing by it, and $6^{x-1}$ divides the bases, which is not a valid exponent rule."
+  },
+  {
+    "id": "SAT-MA-051",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "advancedMath",
+    "skill": "Quadratics: vertex form, maximum value",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company's daily profit $P$, in dollars, from selling $x$ units of a product is given by $P(x) = -2x^2 + 80x - 300$. What is the maximum daily profit, in dollars?",
+    "options": [
+      "$20$",
+      "$300$",
+      "$500$",
+      "$800$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "Since the leading coefficient is negative, the parabola opens downward and the maximum is at the vertex. The vertex is at $x = -\\frac{b}{2a} = -\\frac{80}{2(-2)} = 20$, and $P(20) = -2(400) + 80(20) - 300 = -800 + 1600 - 300 = 500$. Equivalently, completing the square gives $P(x) = -2(x - 20)^2 + 500$. The choice $20$ is the number of units that produces the maximum, not the profit itself. The choice $800$ comes from stopping at $1600 - 800$ and forgetting the $-300$."
+  },
+  {
+    "id": "SAT-MA-052",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "advancedMath",
+    "skill": "Nonlinear equations: rational equations",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "What is the solution to the equation $\\frac{4}{x + 2} = \\frac{6}{x + 5}$?",
+    "numeric": {
+      "answers": [
+        "4"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Cross-multiply: $4(x + 5) = 6(x + 2)$, so $4x + 20 = 6x + 12$. Subtracting $4x$ and $12$ from both sides gives $8 = 2x$, so $x = 4$. Check: $\\frac{4}{6} = \\frac{6}{9} = \\frac{2}{3}$. The common error is to multiply each numerator by its own denominator, $4(x + 2) = 6(x + 5)$, which leads to $x = -11$; cross-multiplying pairs each numerator with the opposite denominator."
+  },
+  {
+    "id": "SAT-MA-053",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "advancedMath",
+    "skill": "Polynomial remainder and factors",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The polynomial function $p$ has exactly three zeros: $x = -3$, $x = 0$, and $x = 2$. Which of the following could define $p$?",
+    "options": [
+      "$p(x) = x(x + 3)(x - 2)$",
+      "$p(x) = x(x - 3)(x + 2)$",
+      "$p(x) = (x + 3)(x - 2)$",
+      "$p(x) = (x - 3)(x + 2)$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "If $r$ is a zero of a polynomial, then $x - r$ is a factor. The zeros $-3$, $0$, and $2$ give the factors $x + 3$, $x$, and $x - 2$, so $p(x) = x(x + 3)(x - 2)$ works. The choice $x(x - 3)(x + 2)$ has zeros at $3$ and $-2$; the sign inside each factor is the opposite of the zero. The choice $(x + 3)(x - 2)$ drops the factor $x$ and so has no zero at $x = 0$."
+  },
+  {
+    "id": "SAT-MA-054",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "advancedMath",
+    "skill": "Nonlinear functions: transformations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The function $g$ is defined by $g(x) = f(x - 4) + 1$. If the point $(2, 5)$ lies on the graph of $y = f(x)$, which point must lie on the graph of $y = g(x)$?",
+    "options": [
+      "$(6, 6)$",
+      "$(-2, 6)$",
+      "$(6, 4)$",
+      "$(-2, 4)$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Replacing $x$ with $x - 4$ shifts the graph of $f$ to the right by $4$, and adding $1$ shifts it up by $1$. The point $(2, 5)$ moves to $(2 + 4, 5 + 1) = (6, 6)$. Check: $g(6) = f(6 - 4) + 1 = f(2) + 1 = 6$. The choice $(-2, 6)$ shifts left, the most common error, because $x - 4$ looks like it should move the graph in the negative direction; it does not, since the input must be $4$ larger to reach the same value of $f$."
+  },
+  {
+    "id": "SAT-MA-055",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "advancedMath",
+    "skill": "Nonlinear systems: line and parabola",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "$y = x^2 + 2x + k$\n\n$y = 4x + 1$\n\nIn the system of equations above, $k$ is a constant. If the system has exactly one solution, what is the value of $k$?",
+    "numeric": {
+      "answers": [
+        "2"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Set the expressions for $y$ equal: $x^2 + 2x + k = 4x + 1$, which rearranges to $x^2 - 2x + (k - 1) = 0$. A line and a parabola meet at exactly one point when this quadratic has exactly one solution, so its discriminant is zero: $(-2)^2 - 4(1)(k - 1) = 4 - 4k + 4 = 8 - 4k = 0$, giving $k = 2$. The common error is to use $k$ instead of $k - 1$ as the constant term, which gives $4 - 4k = 0$ and the wrong answer $k = 1$."
+  },
+  {
+    "id": "SAT-MA-056",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "advancedMath",
+    "skill": "Radicals and rational exponents",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "For $x > 0$, which expression is equivalent to $\\sqrt[3]{x^2}$?",
+    "options": [
+      "$x^{\\frac{2}{3}}$",
+      "$x^{\\frac{3}{2}}$",
+      "$x^{6}$",
+      "$x^{\\frac{1}{6}}$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "A root can be written as a fractional exponent: $\\sqrt[n]{x^m} = x^{\\frac{m}{n}}$. Here the index of the root is $3$ and the power is $2$, so $\\sqrt[3]{x^2} = x^{\\frac{2}{3}}$. The choice $x^{\\frac{3}{2}}$ puts the root index on top, the most common mix-up; it equals $\\sqrt{x^3}$ instead. The choice $x^6$ multiplies the two numbers, and $x^{\\frac{1}{6}}$ treats the cube root of a square as a sixth root of $x$."
+  },
+  {
+    "id": "SAT-MA-057",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "advancedMath",
+    "skill": "Nonlinear equations: radical equations",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "What is the solution to the equation $\\sqrt{2x + 5} = x - 5$?",
+    "numeric": {
+      "answers": [
+        "10"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Square both sides: $2x + 5 = (x - 5)^2 = x^2 - 10x + 25$, so $x^2 - 12x + 20 = 0$ and $(x - 2)(x - 10) = 0$. Squaring can create extraneous solutions, so check each one in the original equation. At $x = 10$: $\\sqrt{25} = 5$ and $10 - 5 = 5$, so it works. At $x = 2$: $\\sqrt{9} = 3$ but $2 - 5 = -3$, so it fails because a square root is never negative. The only solution is $10$; the common error is to report $2$ as well, or to answer $2$ alone, without checking."
+  },
+  {
+    "id": "SAT-MA-058",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "advancedMath",
+    "skill": "Quadratics: discriminant",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "In the equation $3x^2 - 12x + c = 0$, $c$ is a constant. If the equation has no real solutions, which of the following could be the value of $c$?",
+    "options": [
+      "$0$",
+      "$6$",
+      "$12$",
+      "$15$"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "A quadratic $ax^2 + bx + c = 0$ has no real solutions when its discriminant $b^2 - 4ac$ is negative. Here $b^2 - 4ac = (-12)^2 - 4(3)c = 144 - 12c$, and $144 - 12c < 0$ gives $c > 12$. Only $15$ satisfies this. The choice $12$ makes the discriminant exactly $0$, which gives one real solution, not none; it is the boundary of the condition, not inside it. The choices $0$ and $6$ give positive discriminants and two real solutions."
+  },
+  {
+    "id": "SAT-MA-059",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "advancedMath",
+    "skill": "Equivalent expressions: rational expressions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "For $x \\ne -2$ and $x \\ne -3$, which expression is equivalent to $\\frac{x^2 - 9}{x^2 + 5x + 6}$?",
+    "options": [
+      "$\\frac{x - 3}{x + 2}$",
+      "$\\frac{x + 3}{x + 2}$",
+      "$\\frac{-9}{5x + 6}$",
+      "$\\frac{x - 3}{x + 3}$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Factor the numerator as a difference of squares, $x^2 - 9 = (x - 3)(x + 3)$, and the denominator as $x^2 + 5x + 6 = (x + 2)(x + 3)$. The common factor $x + 3$ cancels, leaving $\\frac{x - 3}{x + 2}$. The choice $\\frac{-9}{5x + 6}$ comes from cancelling the $x^2$ terms, but only common factors cancel, not terms in a sum. The choice $\\frac{x + 3}{x + 2}$ cancels the wrong factor from the numerator."
+  },
+  {
+    "id": "SAT-MA-060",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "dataAnalysis",
+    "skill": "Ratios, rates, and proportions: unit conversions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A cyclist rides $54$ kilometers in $2.25$ hours at a constant speed. What is the cyclist's speed in meters per minute? ($1$ kilometer $= 1{,}000$ meters)",
+    "options": [
+      "$24$",
+      "$240$",
+      "$400$",
+      "$1{,}440$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "First find the speed in kilometers per hour: $\\frac{54}{2.25} = 24$ km per hour. Convert kilometers to meters by multiplying by $1{,}000$ and hours to minutes by dividing by $60$: $\\frac{24 \\times 1000}{60} = 400$ meters per minute. The choice $24$ is the speed in km per hour without converting. The choice $1{,}440$ comes from multiplying by $60$ instead of dividing, as if minutes were larger than hours, and $240$ divides by $100$ instead of $60$, as if an hour had $100$ minutes."
+  },
+  {
+    "id": "SAT-MA-061",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "dataAnalysis",
+    "skill": "Percentages: successive percent changes",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The price of a jacket is reduced by $20\\%$. The reduced price is then reduced by an additional $25\\%$. The final price is what percent of the original price?",
+    "options": [
+      "$45\\%$",
+      "$55\\%$",
+      "$60\\%$",
+      "$75\\%$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "A $20\\%$ reduction leaves $80\\%$ of the original price, and a further $25\\%$ reduction leaves $75\\%$ of that amount. Multiply the factors: $0.80 \\times 0.75 = 0.60$, so the final price is $60\\%$ of the original. The choice $55\\%$ comes from adding the discounts to get $45\\%$ off, but the second discount is taken from the already reduced price, so it removes less than $25\\%$ of the original. The choice $75\\%$ ignores the first reduction."
+  },
+  {
+    "id": "SAT-MA-062",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "dataAnalysis",
+    "skill": "One-variable data: weighted mean",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "In a chemistry class, the $12$ students in one lab section had a mean score of $80$ on an exam, and the $18$ students in the other lab section had a mean score of $90$ on the same exam. What is the mean score for all $30$ students?",
+    "numeric": {
+      "answers": [
+        "86"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The mean of the combined group is the total of all scores divided by the number of students. The first section's scores total $12 \\times 80 = 960$ and the second's total $18 \\times 90 = 1{,}620$, so the combined mean is $\\frac{960 + 1620}{30} = \\frac{2580}{30} = 86$. The common error is to average the two means, $\\frac{80 + 90}{2} = 85$; that is only correct when the groups are the same size, and here the larger group pulls the mean toward $90$."
+  },
+  {
+    "id": "SAT-MA-063",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "dataAnalysis",
+    "skill": "One-variable data: box plots",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The box plot summarizes the number of minutes each of $40$ students spent on homework one evening. What is the interquartile range, in minutes, of the data?",
+    "options": [
+      "$10$",
+      "$25$",
+      "$35$",
+      "$60$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "figure": {
+      "src": "/figures/sat/sat-ma-063.svg",
+      "alt": "Box plot titled Minutes Spent on Homework above a number line from 0 to 80 marked every 10. The left whisker starts at 10, the box runs from 25 to 50 with the median line at 35, and the right whisker ends at 70."
+    },
+    "calculator": true,
+    "explanation": "The interquartile range is the difference between the third quartile and the first quartile, the two ends of the box. From the plot, the box runs from $25$ to $50$, so the IQR is $50 - 25 = 25$ minutes. The choice $60$ is the range, the difference between the maximum $70$ and the minimum $10$, which uses the whisker ends instead of the box ends. The choice $35$ is the median, the line inside the box, and $10$ is the minimum."
+  },
+  {
+    "id": "SAT-MA-064",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "dataAnalysis",
+    "skill": "Probability and conditional probability",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A company has $80$ employees, of whom $50$ work remotely and the rest work in the office. Of the remote employees, $30$ have more than five years of experience, and of the office employees, $12$ have more than five years of experience. If an employee with more than five years of experience is selected at random, what is the probability that the employee works remotely?",
+    "options": [
+      "$\\frac{5}{7}$",
+      "$\\frac{3}{8}$",
+      "$\\frac{3}{5}$",
+      "$\\frac{21}{40}$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "The condition restricts the choice to employees with more than five years of experience, so the denominator is that group: $30 + 12 = 42$ employees. Of them, $30$ work remotely, so the probability is $\\frac{30}{42} = \\frac{5}{7}$. The choice $\\frac{3}{8}$ uses all $80$ employees as the denominator, ignoring the condition. The choice $\\frac{3}{5}$ answers a different question, the probability that a remote employee has more than five years of experience, and $\\frac{21}{40}$ is the fraction of all employees with more than five years of experience."
+  },
+  {
+    "id": "SAT-MA-065",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "dataAnalysis",
+    "skill": "Sample inference from survey data",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A random sample of $250$ residents of a town with $12{,}000$ residents were asked how they usually commute to work. The results are summarized below.\n\n| Commute method | Number of residents |\n|---|---|\n| Car | $140$ |\n| Bus | $45$ |\n| Bicycle | $35$ |\n| Walk | $30$ |\n\nBased on the sample, what is the best estimate of the number of residents of the town who usually commute by bus or by bicycle?",
+    "numeric": {
+      "answers": [
+        "3840"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "In the sample, $45 + 35 = 80$ of the $250$ residents commute by bus or bicycle, a proportion of $\\frac{80}{250} = 0.32$. A random sample lets this proportion stand in for the whole town, so the estimate is $0.32 \\times 12{,}000 = 3{,}840$ residents. The common error is to count only the bus riders, $\\frac{45}{250} \\times 12{,}000 = 2{,}160$, or to report the sample count $80$ instead of scaling it up to the population."
+  },
+  {
+    "id": "SAT-MA-066",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "geometryTrig",
+    "skill": "Lines, angles, and triangles: parallel lines",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Two parallel lines are cut by a transversal. Two of the angles formed are same-side interior angles: both lie between the parallel lines on the same side of the transversal. Their measures are $(3x + 10)^\\circ$ and $(2x + 20)^\\circ$. What is the value of $x$?",
+    "options": [
+      "$10$",
+      "$30$",
+      "$36$",
+      "$50$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "When parallel lines are cut by a transversal, same-side interior angles are supplementary, so $(3x + 10) + (2x + 20) = 180$. This gives $5x + 30 = 180$, so $5x = 150$ and $x = 30$. The choice $10$ comes from setting the two expressions equal, which is correct for alternate interior or corresponding angles but not for same-side interior angles. The choice $36$ comes from writing $5x = 180$ and dropping the $30$."
+  },
+  {
+    "id": "SAT-MA-067",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "geometryTrig",
+    "skill": "Right triangles: Pythagorean theorem",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A $25$-foot ladder leans against a vertical wall so that the base of the ladder is $7$ feet from the bottom of the wall. How many feet up the wall does the top of the ladder reach?",
+    "numeric": {
+      "answers": [
+        "24"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The wall, the ground, and the ladder form a right triangle with the ladder as the hypotenuse. By the Pythagorean theorem, $h^2 + 7^2 = 25^2$, so $h^2 = 625 - 49 = 576$ and $h = 24$ feet. The common error is to treat the ladder as a leg and compute $\\sqrt{25^2 + 7^2} \\approx 26$; the ladder is the longest side, so its square must be the sum, not one of the addends."
+  },
+  {
+    "id": "SAT-MA-068",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "geometryTrig",
+    "skill": "Right triangles and trigonometry: complementary angles",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "In a right triangle, the measures of the two acute angles are $x^\\circ$ and $(3x + 10)^\\circ$. If $\\sin(x^\\circ) = \\cos((3x + 10)^\\circ)$, what is the value of $x$?",
+    "options": [
+      "$10$",
+      "$20$",
+      "$22.5$",
+      "$40$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "The sine of an angle equals the cosine of its complement, so $\\sin(x^\\circ) = \\cos((3x + 10)^\\circ)$ when $x + (3x + 10) = 90$. Then $4x + 10 = 90$, so $4x = 80$ and $x = 20$. Check: the angles are $20^\\circ$ and $70^\\circ$, which sum to $90^\\circ$ as the acute angles of a right triangle must. The choice $40$ comes from setting the difference of the angles, $(3x + 10) - x = 2x + 10$, equal to $90$ instead of their sum. The choice $22.5$ comes from $4x = 90$, dropping the $10$."
+  },
+  {
+    "id": "SAT-MA-069",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "geometryTrig",
+    "skill": "Area and volume: surface area",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The figure shows a closed box in the shape of a rectangular prism with the dimensions given, in inches. What is the total surface area of the box, in square inches?",
+    "options": [
+      "$79$",
+      "$120$",
+      "$158$",
+      "$240$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "figure": {
+      "src": "/figures/sat/sat-ma-069.svg",
+      "alt": "A rectangular prism drawn in perspective with hidden edges dashed. The front edge along the bottom is labeled 8 in, the vertical front edge is labeled 3 in, and the receding bottom edge is labeled 5 in. Note: figure not drawn to scale."
+    },
+    "calculator": true,
+    "explanation": "A rectangular prism has three pairs of congruent rectangular faces. With dimensions $8$, $5$, and $3$, the faces have areas $8 \\times 5 = 40$, $8 \\times 3 = 24$, and $5 \\times 3 = 15$, and each appears twice: $2(40 + 24 + 15) = 2(79) = 158$ square inches. The choice $79$ counts each of the three distinct faces only once and forgets the opposite faces. The choice $120$ is the volume, $8 \\times 5 \\times 3$, not the surface area."
+  },
+  {
+    "id": "SAT-MA-070",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "geometryTrig",
+    "skill": "Circles: arc length and sector area",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A circle has radius $12$. An arc of the circle has a central angle measuring $150^\\circ$. What is the length of the arc?",
+    "options": [
+      "$5\\pi$",
+      "$10\\pi$",
+      "$20\\pi$",
+      "$60\\pi$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "Arc length is the fraction of the circle's circumference cut off by the central angle. The circumference is $2\\pi(12) = 24\\pi$, and $\\frac{150}{360} = \\frac{5}{12}$ of it is $\\frac{5}{12}(24\\pi) = 10\\pi$. The choice $60\\pi$ is the area of the sector, $\\frac{5}{12}(144\\pi)$, which answers a different question. The choice $5\\pi$ uses $\\pi r$ instead of $2\\pi r$ for the circumference, and $20\\pi$ doubles the correct length."
+  }
+]

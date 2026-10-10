@@ -1,0 +1,412 @@
+{
+  "stimuli": [
+    {
+      "id": "ACT-RD-P1",
+      "title": "Passage I: Literary Narrative",
+      "text": "The key stuck the way it always had, a quarter turn and then a shove with the shoulder, and when the door finally gave, the bell above it rang out into the dark store as if nothing had changed. Nora stood on the threshold and let the sound settle. Behind her, Dean shifted the box of light bulbs from one hip to the other and said nothing, which for Dean was a kind of speech.\n\nTheir father had closed Halvorsen Hardware on a Tuesday in March, meaning to open again Thursday, and had not. That was eleven weeks ago. The sign in the window still said BACK SOON in his square capital letters, and neither of them had been able to take it down.\n\n\"Smells the same,\" Dean said.\n\nIt did. Machine oil and sawdust and the faint sweetness of the birdseed bins. Nora found the switch by memory, and the fluorescent tubes caught one row at a time, revealing the aisles like a slow curtain rising: fasteners, then plumbing, then paint, then the long wall of hand tools hung on pegboard, each outlined in black marker so that a missing hammer announced itself as a shape.\n\nNora had been the one who left. She had gone to the city at twenty-two and stayed, and when she came home for holidays she had walked these aisles the way a visitor walks a museum, touching nothing, while her father watched to see if she still remembered where things went. Dean had stayed. He had worked the counter through two recessions and one flood, and he knew the first name of every contractor in the county. Nora had assumed, without ever saying so, that the store would simply become his.\n\nInstead their father's will had split it down the middle, and so here they were, at seven on a Saturday morning in June.\n\nDean set the box on the counter and ran a thumb along the brass edge of the register. \"He kept saying he'd get a new one of these.\"\n\n\"He kept saying a lot of things.\"\n\n\"Don't.\" He said it mildly, without turning, and Nora felt the word land somewhere under her ribs and stay there.\n\nShe went to the pegboard wall instead and began checking the outlines. A claw hammer was gone, a level, a pair of tin snips. She knew without looking that the tin snips were in the drawer under the register, where their father had hidden them from a customer who kept borrowing them and forgetting to bring them back. She opened the drawer. There they were, wrapped in a shop rag, and under them a stack of index cards in his handwriting: names, phone numbers, what each person had bought on credit and what they still owed. The amounts were small. Some of the cards were ten years old.\n\n\"He never collected on any of these,\" she said.\n\nDean came and looked over her shoulder. \"No. He said people pay when they can, and if they can't, they needed the thing more than he needed the money.\"\n\n\"That's not how a business works.\"\n\n\"It's how this one worked.\" He took the cards gently and put them back. \"That's why they came here instead of driving forty minutes to the big box. Not for the prices.\"\n\nNora wanted to argue and found that she could not. She had spent fifteen years in an office where every decision was defended with a spreadsheet, and standing here she understood for the first time that her father had been running a different kind of ledger, one that could not be printed out.\n\nThey worked through the morning without saying much. Dean counted inventory while Nora wiped down the shelves, and at some point the division of labor stopped feeling like an arrangement and started feeling like something older, the way they had cleared the table as children, one washing and one drying, in a rhythm neither of them had chosen. Around eleven a truck pulled up outside, and a man in a paint-flecked sweatshirt pressed his face to the glass, saw them, and raised a hand.\n\n\"That's Ray Castellano,\" Dean said. \"He'll want to know when.\"\n\nNora looked at the BACK SOON sign, at the square letters that had been waiting eleven weeks for someone to decide whether they were still true. She crossed the store, took the sign out of the window, and opened the door so that the bell rang again.\n\n\"Tell him now,\" she said."
+    },
+    {
+      "id": "ACT-RD-P2",
+      "title": "Passage II: Social Science",
+      "text": "For most of the twentieth century, cities treated traffic noise as weather: a condition to be endured rather than a problem to be solved. That attitude has shifted. Public health researchers now rank chronic road noise among the most widespread environmental stressors in urban life, linking it in large studies to sleep disruption, elevated blood pressure, and impaired concentration in schoolchildren. As the evidence has accumulated, a growing number of municipal governments have begun treating noise the way they treat air quality: as something to be measured, mapped, and reduced.\n\nMeasurement comes first, and it is less straightforward than it sounds. Sound is recorded in decibels, a logarithmic scale on which an increase of ten units corresponds roughly to a doubling of perceived loudness. A quiet residential street might register fifty decibels; a busy arterial road can exceed seventy-five. But a single reading tells a planner little. Traffic rises and falls over the day, and a street that is tolerable at noon may be intolerable at two in the morning, when the same truck is far more disruptive because the background is quieter and residents are trying to sleep. For this reason most cities now report a day-evening-night level, a weighted average that adds a penalty of five decibels to evening readings and ten to those taken overnight. The resulting figure is meant to reflect annoyance rather than raw sound energy.\n\nCollecting these readings once required technicians with handheld meters standing on street corners for hours. Today many cities rely on networks of fixed sensors mounted on lampposts and building facades, each reporting continuously to a central database. Paris, for example, operates more than a hundred such stations, and the data feed a public noise map that is updated every few years. Where sensors are too expensive to deploy at scale, planners fill the gaps with models that estimate noise from traffic counts, vehicle mix, speed limits, and the shape of the surrounding buildings. These models are imperfect; critics point out that they tend to underestimate noise in neighborhoods where heavy trucks are common, precisely the neighborhoods that are often the poorest. Still, the maps have proven useful, because they make an invisible burden visible and allow residents to compare their block with others.\n\nReduction strategies fall into three broad categories, and their effectiveness varies widely. The first addresses the source. Lowering speed limits from fifty to thirty kilometers per hour reduces roadside noise by roughly three decibels, a change listeners describe as clearly noticeable, and it does so at almost no cost. Quieter pavement, made of porous asphalt that traps some of the sound generated where tires meet the road, can cut another three to five decibels, though the surface wears faster and loses its benefit as its pores fill with grit. The second category addresses the path between source and listener: earth berms, walls, and dense rows of trees. Walls are effective but expensive and unpopular, since they divide neighborhoods and cast shadows. Trees, despite their reputation, do little to block sound unless the planting is very wide; their main contribution is psychological, since people report less annoyance when the road is out of sight. The third category addresses the receiver, through building codes that require insulated windows and ventilation systems in new housing near major roads. This protects people indoors but does nothing for the street itself.\n\nThe most striking recent development is less technical than political. Several European cities have begun designating \"quiet areas,\" parks and residential pockets where noise is deliberately kept below a set threshold, on the theory that access to quiet is a resource to be distributed fairly rather than a luxury that follows property values. Whether this framing takes hold elsewhere remains to be seen. What is clear is that the question has changed. Cities no longer ask whether traffic noise can be reduced, but how much reduction is worth the cost, and who should decide."
+    }
+  ],
+  "questions": [
+    {
+      "id": "ACT-RD-101",
+      "section": "reading",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-RD-P1",
+      "domain": "keyIdeas",
+      "skill": "Main idea",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "The passage is best described as the story of",
+      "options": [
+        "a daughter who returns to her late father's store and comes to understand a way of doing business she once dismissed",
+        "two siblings who argue bitterly over whether to sell the family business to a larger competitor",
+        "a shopkeeper's final weeks as he prepares his children to take over the store",
+        "a small town that depends on a hardware store for credit it cannot get elsewhere"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The passage follows Nora from the first paragraph, where she lets the bell 'settle,' through the drawer of index cards, to the moment she 'wanted to argue and found that she could not' and recognizes her father's 'different kind of ledger.' Her shift in understanding is the center of the story. The siblings exchange one sharp line ('Don't'), but no sale is discussed, and the father never appears alive, so the second and third choices describe stories the passage does not tell."
+    },
+    {
+      "id": "ACT-RD-102",
+      "section": "reading",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-RD-P1",
+      "domain": "keyIdeas",
+      "skill": "Explicit detail",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "According to the passage, the BACK SOON sign in the window was",
+      "options": [
+        "written by the siblings' father when he expected to reopen the store two days later",
+        "placed in the window by Dean on the day of their father's funeral",
+        "a permanent fixture that the father hung whenever he stepped out for lunch",
+        "left by Nora when she visited the store during the previous holidays"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The second paragraph says their father closed the store 'on a Tuesday in March, meaning to open again Thursday, and had not,' and that the sign is 'in his square capital letters.' The father wrote it expecting a two-day closure. Nothing in the passage connects the sign to Dean, to a funeral, or to Nora's earlier visits."
+    },
+    {
+      "id": "ACT-RD-103",
+      "section": "reading",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-RD-P1",
+      "domain": "craft",
+      "skill": "Phrase in context",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "In the first paragraph, the narrator's remark that Dean 'said nothing, which for Dean was a kind of speech' most nearly suggests that Dean",
+      "options": [
+        "speaks so rarely that his silences themselves communicate something",
+        "is too angry with Nora to speak to her directly",
+        "prefers to put his feelings in writing rather than say them aloud",
+        "is waiting for Nora to apologize before he will talk"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Calling silence 'a kind of speech' for Dean implies that quiet is his usual mode and that it carries meaning, which the rest of the passage bears out: he speaks in short lines and says 'Don't' 'mildly, without turning.' Anger is the strongest distractor, but the narrator describes him as mild rather than hostile, and nothing suggests he wants an apology or prefers writing."
+    },
+    {
+      "id": "ACT-RD-104",
+      "section": "reading",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-RD-P1",
+      "domain": "keyIdeas",
+      "skill": "Inference",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "It can reasonably be inferred that Nora assumed the store would become Dean's because",
+      "options": [
+        "Dean had stayed and worked at the store for years while she had built a life elsewhere",
+        "their father had told her directly that Dean would inherit the business",
+        "Dean had asked their father for the store and been promised it",
+        "Nora had already decided she never wanted to return to the town"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The fifth paragraph contrasts Nora, who 'had been the one who left,' with Dean, who 'had stayed' and 'worked the counter through two recessions and one flood,' then says she assumed 'without ever saying so' that the store 'would simply become his.' The assumption rests on who had stayed and done the work. The passage never records a promise from the father or a request from Dean, and the next paragraph shows the will surprised her, so the second and third choices add facts the text does not give."
+    },
+    {
+      "id": "ACT-RD-105",
+      "section": "reading",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-RD-P1",
+      "domain": "craft",
+      "skill": "Function of a detail",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The description of the hand tools 'each outlined in black marker so that a missing hammer announced itself as a shape' primarily serves to",
+      "options": [
+        "show the father's careful habits, which later let Nora notice what is missing and where it has gone",
+        "suggest that the store was broken into while it stood closed",
+        "indicate that the store's methods are outdated compared with larger retailers",
+        "reveal that Dean has been careless about returning tools to their places"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The outlines establish the father's orderly system, and the detail pays off later when Nora 'began checking the outlines,' sees the tin snips are gone, and 'knew without looking' they were in the drawer, where she finds the index cards. The missing tools are explained by the father's own hiding place and ordinary sales, not by a burglary, and the passage treats his system with respect rather than as a sign of being outdated."
+    },
+    {
+      "id": "ACT-RD-106",
+      "section": "reading",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-RD-P1",
+      "domain": "keyIdeas",
+      "skill": "Explicit detail",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "According to the passage, the father kept the tin snips in the drawer under the register because",
+      "options": [
+        "a customer kept borrowing them and forgetting to return them",
+        "they were the most valuable tool in the store",
+        "he used them to open the boxes of credit cards he kept there",
+        "Dean had asked him to set them aside for a contractor"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The paragraph beginning 'She went to the pegboard wall' states that the father 'had hidden them from a customer who kept borrowing them and forgetting to bring them back.' The cards in the drawer are index cards recording credit, not credit cards, and no value or contractor is mentioned in connection with the snips."
+    },
+    {
+      "id": "ACT-RD-107",
+      "section": "reading",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-RD-P1",
+      "domain": "integration",
+      "skill": "Evidence for a claim",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Which detail from the passage provides the most direct evidence for Nora's realization that her father 'had been running a different kind of ledger, one that could not be printed out'?",
+      "options": [
+        "the stack of index cards recording small debts that the father never collected",
+        "the brass-edged register that the father kept saying he would replace",
+        "the outlines of the tools drawn in black marker on the pegboard",
+        "the smell of machine oil, sawdust, and birdseed that greets the siblings"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A ledger is a record of what is owed, and the index cards are literally that: 'what each person had bought on credit and what they still owed,' with amounts he 'never collected,' some ten years old. Dean's explanation that people 'needed the thing more than he needed the money' is what makes Nora see those cards as a record of a different kind of value. The register is the strongest distractor because it is where a printed ledger would come from, but the passage uses it only to show the father's habit of putting off purchases, not his way of valuing customers."
+    },
+    {
+      "id": "ACT-RD-108",
+      "section": "reading",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-RD-P1",
+      "domain": "keyIdeas",
+      "skill": "Character change",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "The passage most strongly suggests that by the end of the morning Nora has",
+      "options": [
+        "come to accept a way of running the store that she would once have rejected as bad business",
+        "decided to sell her half of the store to Dean and return to the city",
+        "resolved to collect the old debts recorded on the index cards",
+        "concluded that her father had been careless with money and that Dean shares the fault"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "After calling the uncollected credit 'not how a business works,' Nora 'wanted to argue and found that she could not,' recognizes her father's 'different kind of ledger,' and then removes the BACK SOON sign and opens the door, telling Dean to let Ray Castellano know the store is open 'now.' Those actions show acceptance and commitment, not a plan to sell. She never proposes collecting the debts, and the passage frames her father's policy as a reason customers were loyal, not as carelessness."
+    },
+    {
+      "id": "ACT-RD-109",
+      "section": "reading",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-RD-P1",
+      "domain": "craft",
+      "skill": "Purpose of a comparison",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The narrator compares the siblings' division of labor to the way they 'had cleared the table as children' primarily in order to",
+      "options": [
+        "suggest that working side by side has revived an old, unspoken ease between them",
+        "emphasize that Dean still treats Nora as a younger child who must be directed",
+        "stress how tedious and repetitive the work of reopening the store has become",
+        "indicate that Nora regrets leaving home and wishes to recover her childhood"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The comparison appears when the work 'stopped feeling like an arrangement and started feeling like something older,' done 'in a rhythm neither of them had chosen.' It describes a natural, shared pattern that returns without discussion, which eases the tension of the earlier exchange over the register. Nothing in the image suggests Dean is directing Nora, that the work is tedious, or that Nora wants to be a child again; the point is their rhythm together."
+    },
+    {
+      "id": "ACT-RD-110",
+      "section": "reading",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-RD-P2",
+      "domain": "keyIdeas",
+      "skill": "Main purpose",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "The main purpose of the passage is to",
+      "options": [
+        "explain how cities measure traffic noise and describe the main strategies they use to reduce it",
+        "argue that noise walls should be replaced with rows of trees along major roads",
+        "detail the medical effects of chronic noise exposure on children and older adults",
+        "contrast the noise policies of European cities with those of cities in the United States"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The passage moves from why noise matters (first paragraph) to how it is measured (second and third paragraphs) to three categories of reduction (fourth paragraph) and a political shift (fifth paragraph). Health effects are mentioned only briefly as motivation, trees are described as doing 'little to block sound,' and American cities are never discussed, so the other choices name topics the passage touches or contradicts rather than its overall aim."
+    },
+    {
+      "id": "ACT-RD-111",
+      "section": "reading",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-RD-P2",
+      "domain": "keyIdeas",
+      "skill": "Cause and effect",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "According to the passage, cities report a day-evening-night noise level rather than a single reading because",
+      "options": [
+        "the same sound is more disruptive at night, when background noise is lower and residents are trying to sleep",
+        "fixed sensors on lampposts are able to record sound only after dark",
+        "daytime readings are considered unreliable because of wind and construction",
+        "the decibel scale cannot represent sounds quieter than fifty decibels"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The second paragraph explains that 'a single reading tells a planner little' because a truck at two in the morning 'is far more disruptive because the background is quieter and residents are trying to sleep,' and 'for this reason' cities use a weighted average that penalizes evening and overnight readings. The passage says nothing about sensors working only at night, about wind, or about a lower limit of the decibel scale."
+    },
+    {
+      "id": "ACT-RD-112",
+      "section": "reading",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-RD-P2",
+      "domain": "craft",
+      "skill": "Phrase in context",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "As it is used in the first paragraph, the statement that cities 'treated traffic noise as weather' most nearly means that they regarded noise as",
+      "options": [
+        "an unavoidable condition to be put up with rather than a problem that could be fixed",
+        "a seasonal nuisance that was worst during the summer months",
+        "a natural resource that could be forecast and managed like rainfall",
+        "a matter better left to scientists than to elected officials"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The sentence defines its own comparison: weather is 'a condition to be endured rather than a problem to be solved.' The next sentence, 'That attitude has shifted,' confirms that the point is the old passivity toward noise. The forecasting choice is tempting because weather is forecast, but the passage uses weather for its inevitability, not its predictability, and nothing in the paragraph mentions seasons or scientists versus officials."
+    },
+    {
+      "id": "ACT-RD-113",
+      "section": "reading",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-RD-P2",
+      "domain": "keyIdeas",
+      "skill": "Explicit detail",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The passage indicates that one criticism of computer models used to estimate noise is that they",
+      "options": [
+        "tend to underestimate noise in neighborhoods with heavy truck traffic, which are often the poorest",
+        "cost more to maintain than a full network of fixed sensors",
+        "must be updated every few days to remain accurate",
+        "ignore the shape of nearby buildings when estimating sound levels"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The third paragraph says critics 'point out that they tend to underestimate noise in neighborhoods where heavy trucks are common, precisely the neighborhoods that are often the poorest.' Models are used where sensors are 'too expensive,' so they are the cheaper option; the maps are updated 'every few years,' not every few days; and building shape is listed as one of the model inputs, not something the models ignore."
+    },
+    {
+      "id": "ACT-RD-114",
+      "section": "reading",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-RD-P2",
+      "domain": "integration",
+      "skill": "How a claim is supported",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "The author supports the claim that trees 'do little to block sound' primarily by",
+      "options": [
+        "noting that they reduce noise only when planted very widely and that their main benefit is psychological rather than acoustic",
+        "citing measurements from the sensor network operated by the city of Paris",
+        "comparing the cost of planting trees with the cost of building noise walls",
+        "pointing out that building codes near major roads do not require trees"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "In the fourth paragraph the author qualifies the claim with 'unless the planting is very wide' and then explains that trees' 'main contribution is psychological, since people report less annoyance when the road is out of sight.' That is, the perceived benefit is real but is not a reduction in sound. Paris is mentioned only in connection with sensors, the cost comparison in the paragraph concerns walls alone, and building codes are discussed in relation to windows and ventilation."
+    },
+    {
+      "id": "ACT-RD-115",
+      "section": "reading",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-RD-P2",
+      "domain": "keyIdeas",
+      "skill": "Explicit detail",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Based on the passage, which reduction strategy protects residents indoors without changing the noise level on the street itself?",
+      "options": [
+        "building codes that require insulated windows and ventilation in new housing near major roads",
+        "porous asphalt that traps sound where tires meet the road",
+        "lowering speed limits from fifty to thirty kilometers per hour",
+        "earth berms built between the roadway and nearby homes"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The fourth paragraph describes the third category of strategies, aimed at 'the receiver,' as building codes requiring 'insulated windows and ventilation systems,' and adds that this 'protects people indoors but does nothing for the street itself.' Porous asphalt and lower speed limits reduce noise at the source, and berms block it along the path, so all three change what is heard outdoors."
+    },
+    {
+      "id": "ACT-RD-116",
+      "section": "reading",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-RD-P2",
+      "domain": "craft",
+      "skill": "Author's purpose",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The author's statement that the 'quiet areas' development is 'less technical than political' primarily serves to",
+      "options": [
+        "shift the discussion from engineering methods to the question of who should have access to quiet",
+        "dismiss the quiet areas policy as ineffective compared with quieter pavement",
+        "suggest that the technical strategies described earlier have failed",
+        "argue that elected officials should leave noise planning to engineers"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The fifth paragraph opens with this statement and then describes quiet areas as resting on 'the theory that access to quiet is a resource to be distributed fairly rather than a luxury that follows property values,' ending with the question of 'who should decide.' The sentence signals a turn from methods to fairness and governance. The author calls the development 'striking,' not ineffective, and nowhere says the earlier strategies failed or that engineers should decide alone."
+    },
+    {
+      "id": "ACT-RD-117",
+      "section": "reading",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-RD-P2",
+      "domain": "keyIdeas",
+      "skill": "Inference",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "It can reasonably be inferred that the author regards noise maps built partly from computer models as",
+      "options": [
+        "worth using despite their known flaws because they reveal a problem that is otherwise hard to see",
+        "a waste of public money that cities should abandon in favor of handheld meters",
+        "more accurate than readings from fixed sensors because they account for building shape",
+        "unacceptable until the models stop underestimating noise in poorer neighborhoods"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "After acknowledging that the models 'are imperfect' and repeating the critics' point about poorer neighborhoods, the third paragraph continues, 'Still, the maps have proven useful, because they make an invisible burden visible.' The word 'Still' signals that the author weighs the flaw and judges the maps worthwhile anyway. The fourth choice is the strongest distractor because the author takes the criticism seriously, but 'proven useful' rules out treating the maps as unacceptable."
+    },
+    {
+      "id": "ACT-RD-118",
+      "section": "reading",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-RD-P2",
+      "domain": "integration",
+      "skill": "Fact and viewpoint",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Which of the following statements is presented in the passage as a theory or viewpoint rather than as a measured result?",
+      "options": [
+        "Access to quiet is a resource to be distributed fairly rather than a luxury that follows property values.",
+        "An increase of ten decibels corresponds roughly to a doubling of perceived loudness.",
+        "Quieter pavement can cut roadside noise by three to five decibels.",
+        "Paris operates more than a hundred fixed noise sensors."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "In the fifth paragraph the fairness claim is explicitly attributed to 'the theory' behind designating quiet areas, and the author adds that whether 'this framing takes hold elsewhere remains to be seen,' marking it as a viewpoint rather than a finding. The decibel relationship, the pavement figures, and the count of Paris sensors are all stated flatly as facts about measurement and results."
+    }
+  ]
+}

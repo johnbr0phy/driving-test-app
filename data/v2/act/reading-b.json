@@ -1,0 +1,412 @@
+{
+  "stimuli": [
+    {
+      "id": "ACT-RD-P3",
+      "title": "Passage III: Humanities",
+      "text": "**Passage A**\n\nThe first time I heard a live recording that mattered to me, I was fourteen and the album was a bootleg of a jazz quartet playing a club in a city I had never visited. The tape hissed. A glass broke somewhere near the microphone during the second tune. The pianist, reaching for a chord that did not quite arrive, laughed out loud, and the drummer answered him with a rim shot that had nothing to do with the tempo. I played that side until the cassette stretched. I have spent the years since trying to explain why.\n\nHere is my best attempt. A studio recording is a statement; a live recording is an event. The statement can be revised until it says exactly what its authors intend, and there is a kind of beauty in that precision. But an event cannot be revised. It happened once, in a particular room, in front of particular people who had paid to be there and who could be heard breathing, shifting, applauding a beat too early. The musicians knew this. You can hear them knowing it. Every phrase carries the small charge of risk that comes from being unrepeatable.\n\nSkeptics will say that I am romanticizing error. A wrong note is a wrong note, they argue, whether it is played in a basement club or a treated room with foam on the walls. I disagree, and not because I enjoy mistakes. I value live recordings because they document a negotiation. Four people are listening to one another in real time, adjusting, conceding, insisting. The performance is the sound of that negotiation, and the flaws are its evidence. Remove them and you have removed the proof that anyone was listening.\n\nAdmittedly, the live record asks more of its audience. One must forgive the hiss and the broken glass. One must accept that the best version of a song may be the one with the cracked high note, because that is the version in which the singer risked the most. The reward for this patience is a recording that does not merely present the music. It admits you to the room where the music was made.\n\n**Passage B**\n\nPeople who do not work in studios often imagine that the producer's job is to sand the life out of a performance. I have been producing records for twenty-two years, and I would describe the job differently: I am trying to build the performance the musicians hear in their heads, which is almost never the performance they can play in a single pass on a given Tuesday afternoon.\n\nConsider the ordinary facts of a session. A singer's voice is strongest in the morning and frayed by evening. A guitarist's new strings go dull after two hours. A bassist flies in from another city on the day the drummer has a cold. The live concert has no answer to any of this; it simply presents whatever the night produced. The studio has an answer. We record the vocal in the morning and the solos at midnight, and we assemble a performance in which everyone is at their best, even though they were never at their best at the same moment.\n\nCritics call this artificial, and I accept the word while rejecting the sneer. A novel is artificial. So is a photograph. The question is not whether the artist intervened but whether the intervention served the work. When I splice the second half of take four onto the first half of take nine, I am not hiding a failure. I am honoring an intention that the musicians could not fully realize in real time, and I ask them to approve every edit.\n\nWhat the studio offers, finally, is control over the listener's attention. In a concert hall the ear wanders: to the coughing, to the lights, to the person in the next seat. On a record, nothing competes with the music, so every detail must earn its place. We can lower a cymbal that masks a lyric, or let the breath before a chorus stay audible because it tells the listener that a human being is about to sing. The live recording captures a room. The studio recording, done well, builds one, and builds it for you alone."
+    },
+    {
+      "id": "ACT-RD-P4",
+      "title": "Passage IV: Natural Science",
+      "text": "Deserts are commonly defined by what they lack, yet a desert is less a place without water than a place where water arrives on its own terms: rarely, briefly, and often all at once. A plant living under such conditions must solve two problems that are related but distinct. It must capture water when water appears, and it must keep that water from leaving while the sky stays dry. The adaptations desert plants have evolved for these problems fall, broadly, into strategies of storage and strategies of conservation.\n\nThe saguaro, a columnar cactus of the Sonoran Desert, is in effect a living reservoir. Its interior is a spongy tissue called parenchyma that can hold hundreds of liters of water, and its outer surface is pleated like an accordion. The pleats are not decorative. After a heavy rain the trunk swells as the tissue takes up water, and the pleats flatten; during the dry months that follow, the trunk shrinks and the pleats deepen again. A mature saguaro can lose much of its stored water over a long drought and remain alive, drawing down the reserve a little at a time.\n\nSupplying such a reservoir requires roots that are built for speed rather than depth. The roots of many cacti spread outward in a shallow mat only a few centimeters below the surface, where even a light shower wets the soil. Within hours of rain, these roots sprout fine temporary rootlets that absorb water rapidly; when the soil dries, the rootlets wither and the plant seals its main roots to prevent moisture from draining back into the ground. Other desert plants take the opposite approach. The mesquite tree sends a taproot many meters downward in search of groundwater, trading quick capture for a steady supply that does not depend on rain at all.\n\nConservation is subtler, and much of it takes place at the level of the leaf, or in the absence of one. Leaves are where plants exchange gases with the air, taking in carbon dioxide for photosynthesis through tiny pores called stomata. But every open stoma also lets water vapor escape, and in desert heat this loss can be ruinous. Cacti have resolved the dilemma by abandoning broad leaves altogether. Their spines are modified leaves with almost no surface for evaporation, and photosynthesis has moved into the green stem, which is coated with a waxy cuticle that slows the passage of water.\n\nEven so, a stem must open its stomata at some point, and here desert plants have adopted an elegant scheduling solution. Most plants open their stomata during the day, when sunlight drives photosynthesis. Many desert plants instead open them at night, when the air is cooler and moister and less water is lost for each unit of carbon dioxide absorbed. The carbon dioxide taken in after dark is stored temporarily as an organic acid and then released inside the plant the following day, when the stomata are closed, to be used in photosynthesis. This pathway, known as crassulacean acid metabolism, or CAM, can reduce water loss to a tenth of what a conventional plant would suffer under the same conditions.\n\nNot every desert plant chooses to endure the drought; some simply avoid it. The ocotillo, a shrub of the southwestern deserts, grows a full set of small leaves within days of a rain, photosynthesizes furiously, and then drops the leaves as the soil dries, standing bare for months until the next storm. Annual wildflowers go further still, spending the dry season as seeds and completing an entire life cycle in the few weeks after a wet winter.\n\nTaken together, these strategies reveal that there is no single desert plant design but rather a set of trade-offs. The saguaro invests in storage and grows slowly; the mesquite invests in deep roots and tolerates no competition for its water; the ocotillo and the wildflowers invest in timing. Each solution is a bet on how, and when, the water will come. That so many different bets have paid off in the same landscape says a great deal about the inventiveness of natural selection, and about how little a desert actually lacks."
+    }
+  ],
+  "questions": [
+    {
+      "id": "ACT-RD-119",
+      "section": "reading",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-RD-P3",
+      "domain": "keyIdeas",
+      "skill": "Main idea",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "The main purpose of Passage A is to",
+      "options": [
+        "explain why the author values live recordings despite their imperfections.",
+        "trace the history of bootleg recordings of jazz performances.",
+        "argue that studio recordings should be abandoned by serious musicians.",
+        "compare the sound quality of cassette tapes with that of newer formats."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Passage A opens with a flawed live recording the author loved and says he has spent years \"trying to explain why\"; the second through fourth paragraphs give that explanation. The bootleg is only an opening anecdote, not a history (B), and the author never says studio recordings should be abandoned (C); he calls their precision \"a kind of beauty.\""
+    },
+    {
+      "id": "ACT-RD-120",
+      "section": "reading",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-RD-P3",
+      "domain": "keyIdeas",
+      "skill": "Supporting details",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "According to Passage A, the central difference between a studio recording and a live recording is that",
+      "options": [
+        "a studio recording is made by professionals, whereas a live recording is usually made by amateurs.",
+        "a studio recording is aimed at a broad audience, whereas a live recording is made only for the people in the room.",
+        "a studio recording can be revised until it matches its makers' intent, whereas a live recording cannot be changed after it happens.",
+        "a studio recording documents a negotiation among musicians, whereas a live recording captures a single performer."
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The second paragraph states the distinction directly: \"A studio recording is a statement; a live recording is an event. The statement can be revised ... But an event cannot be revised.\" Choice D reverses the passage, which says live recordings, not studio ones, document a negotiation. Nothing in the passage supports A or B."
+    },
+    {
+      "id": "ACT-RD-121",
+      "section": "reading",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-RD-P3",
+      "domain": "craft",
+      "skill": "Word meaning in context",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "As it is used in the third paragraph of Passage A, the word \"negotiation\" most nearly refers to",
+      "options": [
+        "a dispute between the musicians and the club's owner over payment.",
+        "the musicians' real-time process of listening and adjusting to one another.",
+        "the audience's effort to forgive the recording's technical flaws.",
+        "the critic's attempt to reconcile his taste with that of the skeptics."
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The sentence after the word defines it: \"Four people are listening to one another in real time, adjusting, conceding, insisting. The performance is the sound of that negotiation.\" The word describes an exchange among the players, not a business dispute (A). Forgiveness by the audience (C) appears in the fourth paragraph and is a different idea."
+    },
+    {
+      "id": "ACT-RD-122",
+      "section": "reading",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-RD-P3",
+      "domain": "keyIdeas",
+      "skill": "Argument and evidence",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "The author of Passage A responds to the skeptics' claim that \"a wrong note is a wrong note\" by",
+      "options": [
+        "denying that live recordings contain more wrong notes than studio recordings do.",
+        "admitting that he enjoys mistakes for their own sake.",
+        "pointing out that rooms treated with foam produce their own kinds of errors.",
+        "agreeing that he does not enjoy mistakes but arguing that flaws are evidence that the musicians were listening to one another."
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "In the third paragraph the author says, \"I disagree, and not because I enjoy mistakes,\" and then explains that flaws are the \"evidence\" of the musicians' negotiation and \"the proof that anyone was listening.\" He never denies that live recordings contain errors (A), and choice B contradicts his explicit statement. Choice C misreads the mention of foam, which is part of the skeptics' argument, not his reply."
+    },
+    {
+      "id": "ACT-RD-123",
+      "section": "reading",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-RD-P3",
+      "domain": "keyIdeas",
+      "skill": "Supporting details",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "According to Passage B, the producer assembles a performance from parts recorded at different times primarily because",
+      "options": [
+        "recording equipment works better at certain times of day.",
+        "the musicians are rarely all at their best at the same moment.",
+        "musicians prefer not to perform in the same room together.",
+        "live concerts are too expensive to record in full."
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The second paragraph lists the \"ordinary facts of a session\" (a voice frayed by evening, strings gone dull, a drummer with a cold) and concludes that the studio can assemble a performance \"in which everyone is at their best, even though they were never at their best at the same moment.\" The passage says nothing about equipment (A), musicians' preferences (C), or the cost of concerts (D)."
+    },
+    {
+      "id": "ACT-RD-124",
+      "section": "reading",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-RD-P3",
+      "domain": "craft",
+      "skill": "Author's purpose",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The author of Passage B mentions a novel and a photograph in the third paragraph in order to",
+      "options": [
+        "suggest that being artificial does not prevent a work from being valuable.",
+        "argue that recorded music is a higher art than literature or photography.",
+        "illustrate the kinds of media that compete for a listener's attention.",
+        "show that critics use the word \"artificial\" inconsistently across art forms."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The producer accepts the word \"artificial\" but rejects \"the sneer,\" then says, \"A novel is artificial. So is a photograph,\" and argues that the real question is whether the intervention \"served the work.\" The examples show that artifice is normal in respected art forms. He makes no ranking of art forms (B), and the competition for attention (C) is a separate point in the fourth paragraph."
+    },
+    {
+      "id": "ACT-RD-125",
+      "section": "reading",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-RD-P3",
+      "domain": "keyIdeas",
+      "skill": "Inference",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "It can reasonably be inferred from Passage B that the producer would consider a studio edit unjustified if it",
+      "options": [
+        "combined material from more than two separate takes.",
+        "made a performance sound as though it had been played in a single pass.",
+        "failed to serve the musicians' intention for the work.",
+        "allowed a breath before a chorus to remain audible."
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The third paragraph sets the producer's standard: \"The question is not whether the artist intervened but whether the intervention served the work,\" and he describes his splices as \"honoring an intention\" that the musicians approve. An edit that did not serve that intention would fail his own test. He gives no limit on the number of takes (A), openly builds performances that could not be played in one pass (B), and in the fourth paragraph defends keeping an audible breath (D)."
+    },
+    {
+      "id": "ACT-RD-126",
+      "section": "reading",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-RD-P3",
+      "domain": "integration",
+      "skill": "Comparing passages",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The authors of both passages would most likely agree that",
+      "options": [
+        "a performance's flaws are the most valuable evidence of the musicians' skill.",
+        "a studio recording is the more demanding format for the listener.",
+        "a producer should obtain the musicians' approval before releasing a recording.",
+        "a live recording presents a performance as it actually happened, without later revision."
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Passage A says of a live performance that \"an event cannot be revised,\" and Passage A says the live concert \"simply presents whatever the night produced.\" Both describe the live recording as unaltered, though they value that fact differently. Only Passage A treats flaws as valuable evidence (A), Passage A says the live record, not the studio record, \"asks more of its audience\" (B), and only Passage A mentions musicians' approval (C)."
+    },
+    {
+      "id": "ACT-RD-127",
+      "section": "reading",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-RD-P3",
+      "domain": "integration",
+      "skill": "Comparing passages",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Compared with the author of Passage A, the author of Passage B is more likely to regard the sounds of an audience in a concert hall, such as coughing and shifting, as",
+      "options": [
+        "evidence that the audience was emotionally engaged with the music.",
+        "competition for the listener's attention that a good recording should remove.",
+        "part of what gives a performance its authenticity.",
+        "an unavoidable fact that neither recording format can address."
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "In the fourth paragraph of Passage A, the producer says that in a concert hall \"the ear wanders: to the coughing, to the lights, to the person in the next seat,\" and that on a record \"nothing competes with the music.\" Passage B, by contrast, treats the audible audience (\"breathing, shifting, applauding a beat too early\") as part of the event's value, which is closer to C. The producer plainly believes the studio can address the problem, so choice D is wrong."
+    },
+    {
+      "id": "ACT-RD-128",
+      "section": "reading",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-RD-P4",
+      "domain": "keyIdeas",
+      "skill": "Main idea",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "The main purpose of the passage is to",
+      "options": [
+        "argue that the saguaro is the best adapted of all desert plants.",
+        "explain how deserts form and why their rainfall is so irregular.",
+        "describe the range of strategies desert plants use to obtain and retain water.",
+        "contrast photosynthesis in desert plants with photosynthesis in plants of wet climates."
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The first paragraph frames two problems, capturing water and keeping it, and announces \"strategies of storage and strategies of conservation\"; the rest of the passage surveys those strategies in several plants and concludes that they are \"a set of trade-offs.\" The saguaro is one example among several, not a champion (A). Desert formation (B) is never discussed, and photosynthesis (D) is covered only as part of the conservation discussion."
+    },
+    {
+      "id": "ACT-RD-129",
+      "section": "reading",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-RD-P4",
+      "domain": "keyIdeas",
+      "skill": "Supporting details",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "According to the passage, the pleats on the trunk of a saguaro",
+      "options": [
+        "allow the trunk to expand after rain and contract during drought.",
+        "shade the stem from direct sunlight during the hottest hours of the day.",
+        "channel rainwater down to the plant's shallow roots.",
+        "are decorative features that attract pollinators."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The second paragraph explains that after rain \"the trunk swells as the tissue takes up water, and the pleats flatten; during the dry months that follow, the trunk shrinks and the pleats deepen again.\" The passage explicitly says the pleats \"are not decorative\" (D), and it never connects them to shade (B) or to directing water to the roots (C)."
+    },
+    {
+      "id": "ACT-RD-130",
+      "section": "reading",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-RD-P4",
+      "domain": "keyIdeas",
+      "skill": "Supporting details",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "The passage indicates that when the soil dries, the roots of many cacti",
+      "options": [
+        "grow deeper in search of groundwater that does not depend on rain.",
+        "continue to absorb moisture from the soil a few centimeters below the surface.",
+        "move their stored water upward into the parenchyma of the trunk.",
+        "lose their temporary rootlets and seal themselves so moisture does not drain back into the ground."
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The third paragraph states that \"when the soil dries, the rootlets wither and the plant seals its main roots to prevent moisture from draining back into the ground.\" Growing a deep taproot (A) is the mesquite's strategy, described as \"the opposite approach.\" Nothing in the passage says the roots keep absorbing in dry soil (B) or move water into the trunk at that point (C)."
+    },
+    {
+      "id": "ACT-RD-131",
+      "section": "reading",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-RD-P4",
+      "domain": "craft",
+      "skill": "Author's purpose",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The author discusses the mesquite tree in the third paragraph primarily in order to",
+      "options": [
+        "show that trees cannot survive in deserts without storing water in their trunks.",
+        "present a root strategy that contrasts with the shallow, fast-absorbing roots of cacti.",
+        "give an example of a plant that avoids drought by dropping its leaves.",
+        "explain why groundwater is a less reliable water source than rainfall."
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The mesquite is introduced with the words \"Other desert plants take the opposite approach,\" and its deep taproot is set against the cacti's shallow root mat, \"trading quick capture for a steady supply.\" The passage describes the taproot's supply as steady, not unreliable (D). Dropping leaves (C) is the ocotillo's strategy in the sixth paragraph, and nothing supports A."
+    },
+    {
+      "id": "ACT-RD-132",
+      "section": "reading",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-RD-P4",
+      "domain": "keyIdeas",
+      "skill": "Supporting details",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The passage describes the \"dilemma\" that cacti have resolved as the fact that",
+      "options": [
+        "broad leaves capture more sunlight but are easily damaged by desert winds.",
+        "spines protect the plant from animals but cannot carry out photosynthesis.",
+        "the pores that let in carbon dioxide for photosynthesis also let water vapor escape.",
+        "the waxy cuticle that slows water loss also blocks much of the sunlight."
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The fourth paragraph explains that plants take in carbon dioxide through stomata, \"but every open stoma also lets water vapor escape, and in desert heat this loss can be ruinous.\" That conflict is the dilemma, which cacti resolve by giving up broad leaves. The passage does not mention wind damage (A), the protective role of spines (B), or the cuticle blocking light (D)."
+    },
+    {
+      "id": "ACT-RD-133",
+      "section": "reading",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-RD-P4",
+      "domain": "craft",
+      "skill": "Word meaning in context",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "As it is used in the fifth paragraph, the word \"elegant\" most nearly means",
+      "options": [
+        "ingeniously simple.",
+        "luxurious.",
+        "graceful in movement.",
+        "formally polite."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The author calls the CAM pathway \"an elegant scheduling solution\" and then describes a straightforward change in timing (opening stomata at night) that cuts water loss to a tenth. In scientific writing \"elegant\" praises a solution that is clever and economical, which matches A. The other choices describe luxury, physical grace, or manners, none of which fits a plant's gas exchange schedule."
+    },
+    {
+      "id": "ACT-RD-134",
+      "section": "reading",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-RD-P4",
+      "domain": "keyIdeas",
+      "skill": "Supporting details",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Based on the passage, a plant that uses crassulacean acid metabolism differs from most other plants in that it",
+      "options": [
+        "carries out photosynthesis at night rather than during the day.",
+        "keeps its stomata closed at all times and relies on stored carbon dioxide.",
+        "loses about ten times as much water as a conventional plant under the same conditions.",
+        "takes in carbon dioxide at night and uses it for photosynthesis during the following day."
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The fifth paragraph says CAM plants open their stomata at night, store the carbon dioxide \"temporarily as an organic acid,\" and release it \"the following day, when the stomata are closed, to be used in photosynthesis.\" Photosynthesis itself still happens in daylight, so choice A is wrong. The stomata do open, at night (B), and water loss is reduced to a tenth, not multiplied by ten (C)."
+    },
+    {
+      "id": "ACT-RD-135",
+      "section": "reading",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-RD-P4",
+      "domain": "craft",
+      "skill": "Interpreting phrases",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The author's statement that annual wildflowers \"go further still\" (sixth paragraph) most directly suggests that the wildflowers",
+      "options": [
+        "spread across a wider area of the desert than the ocotillo does.",
+        "carry the strategy of avoiding drought to a greater extreme than the ocotillo does.",
+        "need more rain than the ocotillo to complete their life cycle.",
+        "survive longer without water than any other desert plant."
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The sixth paragraph is about plants that \"avoid\" drought rather than endure it. The ocotillo avoids it by dropping its leaves; the wildflowers \"go further still\" by spending the dry season as seeds and finishing their whole life cycle in a few wet weeks, a more extreme form of the same strategy. The phrase is about degree of avoidance, not geographic spread (A), rainfall needs (C), or a survival record (D)."
+    },
+    {
+      "id": "ACT-RD-136",
+      "section": "reading",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-RD-P4",
+      "domain": "integration",
+      "skill": "Textual evidence",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Which of the following statements from the passage best supports the author's claim that the adaptations of desert plants represent \"a set of trade-offs\"?",
+      "options": [
+        "\"A plant living under such conditions must solve two problems that are related but distinct.\"",
+        "\"Their spines are modified leaves with almost no surface for evaporation.\"",
+        "\"The saguaro invests in storage and grows slowly; the mesquite invests in deep roots and tolerates no competition for its water.\"",
+        "\"Deserts are commonly defined by what they lack.\""
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A trade-off is a gain purchased with a cost, and choice C names both sides for two plants: storage bought with slow growth, and a reliable deep-water supply bought with an inability to share it. Choice A states the problems plants face but not the costs of any solution, choice B describes a single adaptation without a cost, and choice D is about deserts, not plants."
+    }
+  ]
+}

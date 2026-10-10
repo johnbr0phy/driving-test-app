@@ -1,0 +1,491 @@
+[
+  {
+    "id": "SAT-MA-101",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "If $4x - 7 = 21$, what is the value of $x$?",
+    "options": [
+      "$3.5$",
+      "$7$",
+      "$14$",
+      "$28$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "Add $7$ to both sides to get $4x = 28$, then divide both sides by $4$ to get $x = 7$. The choice $28$ comes from stopping after adding $7$ and forgetting to divide by $4$. The choice $3.5$ comes from subtracting $7$ instead of adding it, which gives $4x = 14$."
+  },
+  {
+    "id": "SAT-MA-102",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "dataAnalysis",
+    "skill": "Percentages",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A jacket has a regular price of 80 dollars. During a sale, the price of the jacket is reduced by $25\\%$. What is the sale price of the jacket, in dollars?",
+    "numeric": {
+      "answers": [
+        "60"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The discount is $25\\%$ of $80$, which is $0.25 \\times 80 = 20$ dollars, so the sale price is $80 - 20 = 60$ dollars. Equivalently, the customer pays $100\\% - 25\\% = 75\\%$ of the regular price, and $0.75 \\times 80 = 60$. A common error is to answer $20$, which is the amount saved rather than the price paid."
+  },
+  {
+    "id": "SAT-MA-103",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "advancedMath",
+    "skill": "Equivalent expressions",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which of the following expressions is equivalent to $3(2x - 5) + 4x$?",
+    "options": [
+      "$6x - 15$",
+      "$10x - 15$",
+      "$10x - 5$",
+      "$10x + 15$"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "Distribute the $3$ to both terms inside the parentheses: $3(2x - 5) = 6x - 15$. Then combine like terms: $6x - 15 + 4x = 10x - 15$. The choice $10x - 5$ comes from multiplying $3$ by $2x$ but forgetting to multiply $3$ by $-5$, and $6x - 15$ comes from dropping the $4x$ term."
+  },
+  {
+    "id": "SAT-MA-104",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "geometryTrig",
+    "skill": "Area and volume",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A storage box in the shape of a right rectangular prism has a length of $8$ inches, a width of $5$ inches, and a volume of $120$ cubic inches. What is the height of the box, in inches?",
+    "numeric": {
+      "answers": [
+        "3"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The volume of a right rectangular prism is length times width times height, so $8 \\times 5 \\times h = 120$. Since $40h = 120$, dividing both sides by $40$ gives $h = 3$. Multiplying $8 \\times 5 \\times 120$ instead of dividing is a common error; the volume must be divided by the base area $40$ to find the height."
+  },
+  {
+    "id": "SAT-MA-105",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "advancedMath",
+    "skill": "Nonlinear functions",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The function $f$ is defined by $f(x) = x^2 - 3x + 2$. What is the value of $f(4)$?",
+    "options": [
+      "$-2$",
+      "$4$",
+      "$6$",
+      "$30$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "Substitute $4$ for $x$: $f(4) = 4^2 - 3(4) + 2 = 16 - 12 + 2 = 6$. The choice $-2$ comes from computing $4^2$ as $8$ (doubling instead of squaring), which gives $8 - 12 + 2 = -2$. The choice $30$ comes from a sign error that adds $12$ instead of subtracting it."
+  },
+  {
+    "id": "SAT-MA-106",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A line in the $xy$-plane has a slope of $-2$ and passes through the point $(0, 3)$. Which of the following is an equation of the line?",
+    "options": [
+      "$y = -2x + 3$",
+      "$y = 2x + 3$",
+      "$y = 3x - 2$",
+      "$y = -2x - 3$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "In slope-intercept form $y = mx + b$, $m$ is the slope and $b$ is the $y$-intercept. The point $(0, 3)$ lies on the $y$-axis, so $b = 3$, and the slope is $m = -2$, which gives $y = -2x + 3$. The choice $y = 3x - 2$ swaps the slope and the intercept, and $y = 2x + 3$ drops the negative sign on the slope."
+  },
+  {
+    "id": "SAT-MA-107",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "dataAnalysis",
+    "skill": "One-variable data: mean, median",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The bar graph shows the number of books read last month by each of five students. What is the mean number of books read by the five students?",
+    "options": [
+      "$4$",
+      "$5$",
+      "$7$",
+      "$25$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "figure": {
+      "src": "/figures/sat/sat-ma-107.svg",
+      "alt": "Bar graph titled Books Read Last Month. The vertical axis is labeled Number of books and runs from 0 to 10. The horizontal axis is labeled Student. The five bars are Ana 2 books, Ben 7 books, Cal 3 books, Dee 9 books, and Eli 4 books."
+    },
+    "calculator": true,
+    "explanation": "Read the five values from the bar graph: $2, 7, 3, 9, 4$. The mean is the sum divided by the number of students: $\\frac{2 + 7 + 3 + 9 + 4}{5} = \\frac{25}{5} = 5$. The choice $4$ is the median (the middle value when the data are ordered $2, 3, 4, 7, 9$), not the mean, and $25$ is the sum before dividing by $5$."
+  },
+  {
+    "id": "SAT-MA-108",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "algebra",
+    "skill": "Systems of two linear equations",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "$x + y = 10$\n\n$x - y = 4$\n\nWhich ordered pair $(x, y)$ is the solution to the system of equations above?",
+    "options": [
+      "$(3, 7)$",
+      "$(6, 4)$",
+      "$(7, 3)$",
+      "$(7, -3)$"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "Adding the two equations eliminates $y$: $(x + y) + (x - y) = 10 + 4$, so $2x = 14$ and $x = 7$. Substituting $x = 7$ into $x + y = 10$ gives $y = 3$. The choice $(3, 7)$ reverses the coordinates; it satisfies the first equation but gives $3 - 7 = -4$, not $4$, in the second. The choice $(6, 4)$ also satisfies only the first equation."
+  },
+  {
+    "id": "SAT-MA-109",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "advancedMath",
+    "skill": "Quadratics",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the sum of the solutions to the equation $x^2 - 5x - 14 = 0$?",
+    "options": [
+      "$-14$",
+      "$-5$",
+      "$5$",
+      "$9$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "Factor the quadratic: $x^2 - 5x - 14 = (x - 7)(x + 2) = 0$, so the solutions are $x = 7$ and $x = -2$, and their sum is $7 + (-2) = 5$. This agrees with the fact that for $x^2 + bx + c = 0$ the solutions sum to $-b$. The choice $-5$ comes from using $b$ instead of $-b$, and $-14$ is the product of the solutions, not their sum."
+  },
+  {
+    "id": "SAT-MA-110",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "algebra",
+    "skill": "Linear inequalities",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Maya has 120 dollars to spend on T-shirts from an online store. Each T-shirt costs 14 dollars, and the store charges a flat shipping fee of 8 dollars per order. What is the greatest number of T-shirts Maya can buy?",
+    "numeric": {
+      "answers": [
+        "8"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Let $n$ be the number of T-shirts. The total cost is $14n + 8$, and it must satisfy $14n + 8 \\le 120$. Subtracting $8$ from both sides gives $14n \\le 112$, so $n \\le 8$, and the greatest whole number of T-shirts is $8$. Adding the shipping fee to the budget instead of subtracting it gives $14n \\le 128$ and the wrong answer $9$, which would actually cost $134$ dollars."
+  },
+  {
+    "id": "SAT-MA-111",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "advancedMath",
+    "skill": "Exponential functions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A bacteria population starts at $500$ cells and doubles every $3$ hours. Which of the following functions gives the population $P(t)$, in cells, $t$ hours after the start?",
+    "options": [
+      "$P(t) = 500 \\cdot 2^{t/3}$",
+      "$P(t) = 500 \\cdot 2^{3t}$",
+      "$P(t) = 500 \\cdot 3^{t/2}$",
+      "$P(t) = 500 + \\frac{1000}{3}t$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "The population starts at $500$ and is multiplied by $2$ once every $3$ hours, so after $t$ hours it has doubled $\\frac{t}{3}$ times. That gives $P(t) = 500 \\cdot 2^{t/3}$; as a check, $P(3) = 1000$ and $P(6) = 2000$. The choice $500 \\cdot 2^{3t}$ reverses the fraction and would double the population three times every hour, and $500 + \\frac{1000}{3}t$ grows by a constant amount instead of a constant factor."
+  },
+  {
+    "id": "SAT-MA-112",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "geometryTrig",
+    "skill": "Lines, angles, and triangles",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In the figure, points $B$, $C$, and $D$ lie on the same line. The measure of angle $A$ is $48^\\circ$ and the measure of angle $B$ is $67^\\circ$. What is the value of $x$?",
+    "options": [
+      "$65$",
+      "$113$",
+      "$115$",
+      "$132$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "figure": {
+      "src": "/figures/sat/sat-ma-112.svg",
+      "alt": "Triangle ABC with vertex A at the top and base BC along a horizontal line that extends past C to point D. The angle at A measures 48 degrees and the angle at B measures 67 degrees. The exterior angle at C, between segment CA and ray CD, is labeled x degrees. Figure not drawn to scale."
+    },
+    "calculator": true,
+    "explanation": "The angles of a triangle sum to $180^\\circ$, so the measure of angle $ACB$ is $180^\\circ - 48^\\circ - 67^\\circ = 65^\\circ$. Angle $ACD$ is supplementary to angle $ACB$ because $B$, $C$, and $D$ are collinear, so $x = 180 - 65 = 115$. Equivalently, an exterior angle of a triangle equals the sum of the two remote interior angles: $48 + 67 = 115$. The choice $65$ is the interior angle at $C$, not the exterior angle $x$, and $113$ comes from subtracting only $67$ from $180$."
+  },
+  {
+    "id": "SAT-MA-113",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "algebra",
+    "skill": "Linear functions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The graph of the linear function $f$ is shown in the $xy$-plane. What is the value of $f(12)$?",
+    "options": [
+      "$-14$",
+      "$-8$",
+      "$-4$",
+      "$12$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "figure": {
+      "src": "/figures/sat/sat-ma-113.svg",
+      "alt": "Graph in the xy-plane of a line labeled y = f(x). The x-axis runs from negative 2 to 8 and the y-axis from negative 2 to 6, with grid lines every 1 unit. The line slopes downward from left to right and passes through the labeled points (0, 4) and (6, 0)."
+    },
+    "calculator": true,
+    "explanation": "The line passes through $(0, 4)$ and $(6, 0)$, so its slope is $\\frac{0 - 4}{6 - 0} = -\\frac{2}{3}$ and its $y$-intercept is $4$. Therefore $f(x) = -\\frac{2}{3}x + 4$, and $f(12) = -\\frac{2}{3}(12) + 4 = -8 + 4 = -4$. The choice $12$ comes from using a positive slope of $\\frac{2}{3}$, and $-14$ comes from using the reciprocal slope $-\\frac{3}{2}$."
+  },
+  {
+    "id": "SAT-MA-114",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "dataAnalysis",
+    "skill": "Probability",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The table summarizes the responses of $200$ students at a high school who were asked whether they prefer sports or music as an after-school activity.\n\n| Grade | Sports | Music | Total |\n|---|---|---|---|\n| 10th | 32 | 28 | 60 |\n| 11th | 41 | 29 | 70 |\n| 12th | 37 | 33 | 70 |\n| Total | 110 | 90 | 200 |\n\nIf one of the students who prefers music is selected at random, what is the probability that the selected student is in 11th grade?",
+    "options": [
+      "$\\frac{29}{200}$",
+      "$\\frac{29}{90}$",
+      "$\\frac{29}{70}$",
+      "$\\frac{7}{20}$"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "Because the student is chosen from those who prefer music, the sample space is the Music column, which contains $90$ students. Of those, $29$ are in 11th grade, so the probability is $\\frac{29}{90}$. The choice $\\frac{29}{70}$ divides by the total number of 11th graders, which answers a different question (the probability that a randomly chosen 11th grader prefers music), and $\\frac{29}{200}$ divides by all students surveyed."
+  },
+  {
+    "id": "SAT-MA-115",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "advancedMath",
+    "skill": "Radicals and rational exponents",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "For $x > 0$, which of the following expressions is equivalent to $\\frac{x^{\\frac{3}{2}}}{\\sqrt[4]{x}}$?",
+    "options": [
+      "$x^{\\frac{3}{8}}$",
+      "$x^{\\frac{5}{4}}$",
+      "$x^{\\frac{7}{4}}$",
+      "$x^{6}$"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "Rewrite the fourth root as a rational exponent: $\\sqrt[4]{x} = x^{\\frac{1}{4}}$. Dividing powers with the same base subtracts the exponents: $x^{\\frac{3}{2} - \\frac{1}{4}} = x^{\\frac{6}{4} - \\frac{1}{4}} = x^{\\frac{5}{4}}$. The choice $x^{6}$ comes from dividing the exponents instead of subtracting them, and $x^{\\frac{7}{4}}$ comes from adding the exponents as if the powers were being multiplied."
+  },
+  {
+    "id": "SAT-MA-116",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "algebra",
+    "skill": "Systems of two linear equations",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "$3x + 2y = 16$\n\n$5x - 2y = 8$\n\nIf $(x, y)$ is the solution to the system of equations above, what is the value of $x + y$?",
+    "numeric": {
+      "answers": [
+        "6.5",
+        "13/2"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Adding the two equations eliminates $y$: $8x = 24$, so $x = 3$. Substituting into the first equation gives $9 + 2y = 16$, so $2y = 7$ and $y = \\frac{7}{2}$. Then $x + y = 3 + \\frac{7}{2} = \\frac{13}{2} = 6.5$. Answering $3$ gives only the value of $x$ and skips the final step the question asks for."
+  },
+  {
+    "id": "SAT-MA-117",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "geometryTrig",
+    "skill": "Circles",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "In the $xy$-plane, the graph of the equation $x^2 + y^2 - 6x + 4y = 12$ is a circle. What is the radius of the circle?",
+    "numeric": {
+      "answers": [
+        "5"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Complete the square in both variables: $x^2 - 6x + 9 + y^2 + 4y + 4 = 12 + 9 + 4$, which gives $(x - 3)^2 + (y + 2)^2 = 25$. Comparing with the standard form $(x - h)^2 + (y - k)^2 = r^2$ shows $r^2 = 25$, so the radius is $5$. Answering $25$ confuses $r^2$ with $r$, and forgetting to add $9$ and $4$ to the right side gives $r^2 = 12$ and a wrong radius of $\\sqrt{12}$."
+  },
+  {
+    "id": "SAT-MA-118",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "advancedMath",
+    "skill": "Nonlinear equations",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "What is the solution set of the equation $\\sqrt{2x + 7} = x - 4$?",
+    "options": [
+      "$\\{1\\}$",
+      "$\\{9\\}$",
+      "$\\{1, 9\\}$",
+      "The equation has no real solutions."
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "Squaring both sides gives $2x + 7 = x^2 - 8x + 16$, so $x^2 - 10x + 9 = 0$ and $(x - 1)(x - 9) = 0$. Squaring can introduce extraneous solutions, so each must be checked: for $x = 9$, $\\sqrt{25} = 5$ and $9 - 4 = 5$, which works; for $x = 1$, $\\sqrt{9} = 3$ but $1 - 4 = -3$, which fails because a square root is never negative. The choice $\\{1, 9\\}$ comes from skipping the check and keeping the extraneous solution."
+  },
+  {
+    "id": "SAT-MA-119",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "algebra",
+    "skill": "Systems of two linear equations",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "$\\frac{1}{2}x - \\frac{3}{4}y = 5$\n\n$kx - 9y = 48$\n\nIn the system of equations above, $k$ is a constant. If the system has no solution, what is the value of $k$?",
+    "options": [
+      "$-6$",
+      "$\\frac{1}{2}$",
+      "$\\frac{2}{3}$",
+      "$6$"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "Two linear equations have no solution when their graphs are parallel lines: the same slope but different intercepts. Multiplying the first equation by $12$ gives $6x - 9y = 60$, so the $y$-coefficients already match and the $x$-coefficients must match as well, which requires $k = 6$. Then the left sides are identical but $60 \\ne 48$, so the lines never intersect. The choice $\\frac{2}{3}$ is the slope of the lines rather than the coefficient $k$, and $-6$ comes from a sign error that produces lines with different slopes, which would intersect."
+  },
+  {
+    "id": "SAT-MA-120",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "advancedMath",
+    "skill": "Quadratics",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "The function $f$ is defined by $f(x) = 2x^2 - 12x + c$, where $c$ is a constant. If the minimum value of $f$ is $-5$, what is the value of $c$?",
+    "numeric": {
+      "answers": [
+        "13"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The parabola opens upward because the leading coefficient $2$ is positive, so its minimum is at the vertex, where $x = -\\frac{b}{2a} = \\frac{12}{4} = 3$. Then $f(3) = 2(9) - 12(3) + c = c - 18$, and setting $c - 18 = -5$ gives $c = 13$. Using $x = 6$ for the vertex (forgetting to divide by $2a$) gives $f(6) = c$ and the wrong answer $-5$."
+  },
+  {
+    "id": "SAT-MA-121",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "algebra",
+    "skill": "Linear functions",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "The function $g$ is linear, $g(2) = 7$, and $g(5) = 1$. For what value of $x$ does $g(x) = -9$?",
+    "options": [
+      "$-6$",
+      "$-1$",
+      "$8$",
+      "$10$"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "The slope is $\\frac{1 - 7}{5 - 2} = -2$, so $g(x) = -2x + b$. Using $g(2) = 7$ gives $-4 + b = 7$, so $b = 11$ and $g(x) = -2x + 11$. Setting $-2x + 11 = -9$ gives $-2x = -20$, so $x = 10$. The choice $-1$ comes from moving $11$ to the right side with the wrong sign, giving $-2x = 2$, and $8$ comes from treating $7$ as the $y$-intercept instead of $g(2)$."
+  },
+  {
+    "id": "SAT-MA-122",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "advancedMath",
+    "skill": "Exponential functions",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "The function $h$ is defined by $h(x) = a \\cdot b^x$, where $a$ and $b$ are positive constants. If $h(0) = 6$ and $h(2) = 54$, what is the value of $h(3)$?",
+    "options": [
+      "$78$",
+      "$108$",
+      "$162$",
+      "$4374$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "Since $h(0) = a \\cdot b^0 = a$, it follows that $a = 6$. Then $h(2) = 6b^2 = 54$ gives $b^2 = 9$, so $b = 3$ because $b$ is positive. Therefore $h(3) = 6 \\cdot 3^3 = 162$, which is also $h(2) \\times 3$. The choice $4374$ comes from taking $b = 9$ (forgetting to take the square root of $b^2 = 9$), and $78$ comes from assuming the function increases by a constant $24$ per unit, which is linear rather than exponential growth."
+  }
+]

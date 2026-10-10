@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" font-family="sans-serif" font-size="13">
+<rect width="320" height="240" fill="#fff"/>
+<g stroke="#000" stroke-width="1" fill="none">
+<path d="M46 171v8M64 171v8M82 171v8M118 171v8M136 171v8M154 171v8M172 171v8M190 171v8M208 171v8M226 171v8M244 171v8M262 171v8M280 171v8"/>
+<path d="M96 211h8M96 193h8M96 157h8M96 139h8M96 121h8M96 103h8M96 85h8M96 67h8M96 49h8M96 31h8"/>
+</g>
+<g stroke="#000" stroke-width="1.5" fill="none">
+<line x1="20" y1="175" x2="306" y2="175"/>
+<line x1="100" y1="14" x2="100" y2="232"/>
+<path d="M82 31Q136 355 190 31"/>
+</g>
+<g fill="#000">
+<path d="M306 171l8 4-8 4z"/>
+<path d="M96 14l4-8 4 8z"/>
+<circle cx="100" cy="121" r="3.5"/>
+<circle cx="136" cy="193" r="3.5"/>
+<circle cx="118" cy="175" r="3.5"/>
+<circle cx="154" cy="175" r="3.5"/>
+<text x="312" y="188">x</text>
+<text x="106" y="12">y</text>
+<text x="92" y="190" text-anchor="end">O</text>
+<text x="106" y="118">(0, 3)</text>
+<text x="142" y="208">(2, -1)</text>
+<text x="118" y="168" text-anchor="middle">1</text>
+<text x="154" y="168" text-anchor="middle">3</text>
+<text x="196" y="44">y = f(x)</text>
+</g>
+</svg>

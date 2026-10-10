@@ -1,0 +1,20 @@
+import { registerBank, plainBank } from "../bank";
+import satRwM1 from "@/data/v2/sat/rw-m1.json";
+import satRwM2 from "@/data/v2/sat/rw-m2.json";
+import satMaM1 from "@/data/v2/sat/ma-m1.json";
+import satMaM2 from "@/data/v2/sat/ma-m2.json";
+import satRwT1M2Lower from "@/data/v2/sat/rw-t1-m2-lower.json";
+import satRwT2M1 from "@/data/v2/sat/rw-t2-m1.json";
+import satRwT2M2Lower from "@/data/v2/sat/rw-t2-m2-lower.json";
+import satRwT2M2Upper from "@/data/v2/sat/rw-t2-m2-upper.json";
+import satMaT1M2Lower from "@/data/v2/sat/ma-t1-m2-lower.json";
+import satMaT2M1 from "@/data/v2/sat/ma-t2-m1.json";
+import satMaT2M2Lower from "@/data/v2/sat/ma-t2-m2-lower.json";
+import satMaT2M2Upper from "@/data/v2/sat/ma-t2-m2-upper.json";
+import satRwDrillA from "@/data/v2/sat/rw-drill-a.json";
+import satRwDrillB from "@/data/v2/sat/rw-drill-b.json";
+import satMaDrillA from "@/data/v2/sat/ma-drill-a.json";
+import satMaDrillB from "@/data/v2/sat/ma-drill-b.json";
+import satMaDrillC from "@/data/v2/sat/ma-drill-c.json";
+
+registerBank("sat", plainBank([satRwM1, satRwM2, satMaM1, satMaM2, satRwT1M2Lower, satRwT2M1, satRwT2M2Lower, satRwT2M2Upper, satMaT1M2Lower, satMaT2M1, satMaT2M2Lower, satMaT2M2Upper, satRwDrillA, satRwDrillB, satMaDrillA, satMaDrillB, satMaDrillC]));

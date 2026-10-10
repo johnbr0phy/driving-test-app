@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" font-family="sans-serif" font-size="13" fill="#000">
+<rect width="320" height="240" fill="#fff"/>
+<text x="180" y="16" text-anchor="middle" font-weight="bold">Miles Ridden Last Week</text>
+<g stroke="#bbb" stroke-width="1">
+<line x1="60" y1="143.3" x2="300" y2="143.3"/>
+<line x1="60" y1="86.7" x2="300" y2="86.7"/>
+<line x1="60" y1="30" x2="300" y2="30"/>
+</g>
+<g fill="#ddd" stroke="#000" stroke-width="1.5">
+<rect x="69" y="132" width="30" height="68"/>
+<rect x="117" y="75.3" width="30" height="124.7"/>
+<rect x="165" y="154.7" width="30" height="45.3"/>
+<rect x="213" y="109.3" width="30" height="90.7"/>
+<rect x="261" y="47" width="30" height="153"/>
+</g>
+<g stroke="#000" stroke-width="1.5">
+<line x1="60" y1="30" x2="60" y2="200"/>
+<line x1="60" y1="200" x2="300" y2="200"/>
+</g>
+<g text-anchor="middle">
+<text x="84" y="127">12</text>
+<text x="132" y="70">22</text>
+<text x="180" y="150">8</text>
+<text x="228" y="104">16</text>
+<text x="276" y="42">27</text>
+<text x="84" y="216">Mon</text>
+<text x="132" y="216">Tue</text>
+<text x="180" y="216">Wed</text>
+<text x="228" y="216">Thu</text>
+<text x="276" y="216">Fri</text>
+<text x="180" y="234">Day</text>
+</g>
+<g text-anchor="end">
+<text x="54" y="204">0</text>
+<text x="54" y="147">10</text>
+<text x="54" y="91">20</text>
+<text x="54" y="34">30</text>
+</g>
+<text transform="rotate(-90)" x="-115" y="16" text-anchor="middle">Miles</text>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" font-family="sans-serif" font-size="13">
+<rect width="320" height="240" fill="#fff"/>
+<g stroke="#bbb" stroke-width="1" fill="none">
+<path d="M42 22v208M68 22v208M94 22v208M146 22v208M172 22v208M198 22v208M224 22v208M250 22v208"/>
+<path d="M42 22h208M42 48h208M42 74h208M42 126h208M42 152h208M42 178h208M42 204h208M42 230h208"/>
+</g>
+<g stroke="#000" stroke-width="1.5" fill="none">
+<line x1="36" y1="100" x2="256" y2="100"/>
+<line x1="120" y1="16" x2="120" y2="234"/>
+<path d="M78.4 28.2Q146 379.8 187.6 28.2"/>
+</g>
+<g fill="#000">
+<circle cx="146" cy="204" r="3"/>
+<circle cx="94" cy="100" r="3"/>
+<circle cx="198" cy="100" r="3"/>
+<text x="154" y="218">(1, -4)</text>
+<text x="258" y="104">x</text>
+<text x="126" y="20">y</text>
+<g text-anchor="middle">
+<text x="42" y="114">-3</text><text x="68" y="114">-2</text><text x="94" y="114">-1</text>
+<text x="146" y="114">1</text><text x="172" y="114">2</text><text x="198" y="114">3</text>
+<text x="224" y="114">4</text><text x="250" y="114">5</text>
+</g>
+<g text-anchor="end">
+<text x="115" y="26">3</text><text x="115" y="52">2</text><text x="115" y="78">1</text>
+<text x="115" y="130">-1</text><text x="115" y="156">-2</text><text x="115" y="182">-3</text>
+<text x="115" y="208">-4</text><text x="115" y="234">-5</text>
+</g>
+</g>
+</svg>

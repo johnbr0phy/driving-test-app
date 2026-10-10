@@ -1,0 +1,4102 @@
+[
+  {
+    "id": "ACC-RD-001",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "accReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Urban beekeeping has grown quickly over the past decade, and many cities now allow hives on rooftops and in community gardens. Supporters point out that bees pollinate street trees and garden plots, and that city flowers are often sprayed less than farm crops. Critics worry that a sudden rise in hive numbers can crowd out wild native bees, which compete for the same nectar. Most researchers agree that a few well-managed hives help a neighborhood, but they urge cities to count their wild pollinators before approving many more.",
+    "stem": "Which statement best expresses the main idea of the passage?",
+    "options": [
+      "Wild native bees are being driven out of cities by rooftop beekeepers.",
+      "Urban hives bring benefits, but their numbers should be managed with wild bees in mind.",
+      "City bees are healthier than farm bees because city flowers are sprayed less.",
+      "Cities should ban rooftop hives until more research has been completed."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The passage presents both benefits and a concern and ends with the researchers' balanced view. The spraying detail is one supporting point, not the main idea, and a ban is never proposed."
+  },
+  {
+    "id": "ACC-RD-002",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "accReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Marisol set the last box down and looked around the empty apartment. The walls still held faint rectangles where the pictures had hung for eleven years. She ran her hand along the kitchen counter, found the nick where a dropped pan had landed on her daughter's third birthday, and smiled. Then she picked up her keys, set them on the counter, and pulled the door shut behind her without looking back.",
+    "stem": "What can most reasonably be inferred about Marisol?",
+    "options": [
+      "She is leaving a home that holds many memories for her.",
+      "She is angry about being forced to move out of the apartment.",
+      "She plans to return to the apartment later in the week.",
+      "She has just moved into the apartment with her daughter."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The empty rooms, the faded picture marks and the keys left behind show she is moving out of a long-time home, and her smile at the nick shows fond memories. Leaving the keys and not looking back rule out a plan to return."
+  },
+  {
+    "id": "ACC-RD-003",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "accReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The committee's final report was so circumspect that readers could not tell whether it supported or opposed the new zoning policy. Every claim was hedged with qualifiers, every recommendation came with a list of exceptions, and the summary avoided any firm conclusion. Several council members complained that after forty pages they still did not know what the committee actually wanted them to do.",
+    "stem": "As used in the passage, \"circumspect\" most nearly means",
+    "options": [
+      "hostile",
+      "lengthy",
+      "cautious",
+      "detailed"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The hedged claims and avoidance of firm conclusions point to caution. \"Detailed\" and \"lengthy\" describe the report's size, not the quality the passage criticizes, and nothing in it is hostile."
+  },
+  {
+    "id": "ACC-RD-004",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "accReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Every spring, thousands of people buy a bicycle, ride it twice, and leave it in the garage. The problem is rarely motivation. It is friction: the tires are flat, the helmet is in a closet, the route requires crossing a busy road. Remove the friction and the riding takes care of itself. Keep the bike by the door, pump the tires on Sunday, and map one quiet route to a place you already go.",
+    "stem": "The author's primary purpose is to",
+    "options": [
+      "warn readers that cycling across busy roads is dangerous",
+      "describe how bicycle design has changed over time",
+      "explain why spring is the most popular season for buying bicycles",
+      "persuade readers that small practical changes make it easier to keep cycling"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The passage diagnoses a problem and gives concrete advice, which is persuasive and practical. Spring and busy roads are mentioned only as details that support that advice."
+  },
+  {
+    "id": "ACC-RD-005",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "accReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Passage 1 argues that public libraries should eliminate late fees because fees fall hardest on low-income families and keep children away from books, and it notes that libraries that dropped fees saw more cards issued. Passage 2 agrees that fees are a barrier but argues that libraries should replace them with automatic renewals and a cap on how many items a patron can hold, since without any consequence some popular books never return to the shelf.",
+    "stem": "Which statement best describes the relationship between the two passages?",
+    "options": [
+      "Passage 2 rejects the central claim made in Passage 1.",
+      "Passage 1 provides evidence that supports the policy in Passage 2.",
+      "The passages describe the same policy from the view of two libraries.",
+      "Both agree fees are a problem, but Passage 2 proposes a different solution."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Both passages see fees as a barrier; Passage 2 adds a concern about unreturned books and offers renewals and holds limits instead of simply dropping fees. Passage 2 does not reject the shared claim."
+  },
+  {
+    "id": "ACC-RD-006",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "accReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The Great Pacific Garbage Patch is not a floating island of trash. Most of its plastic is in pieces smaller than a grain of rice, spread thinly across an area more than twice the size of Texas. Because the particles are so small and scattered, a boat sailing through would see mostly open water. That is also why cleanup is so difficult: nets fine enough to catch the plastic also catch plankton, the base of the ocean food chain.",
+    "stem": "According to the passage, why is cleaning up the patch difficult?",
+    "options": [
+      "The patch drifts too quickly for ships to locate it.",
+      "Nets small enough to catch the plastic would also remove plankton.",
+      "Most of the plastic has sunk to the ocean floor.",
+      "The trash has formed a solid island that boats cannot cross."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The passage states directly that fine nets catch plankton as well as plastic. It opens by denying the floating island idea, and it never mentions drifting or sinking."
+  },
+  {
+    "id": "ACC-RD-007",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "accReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The rain had stopped by the time Dev reached the bus stop, but the bench was still wet, so he stood. Across the street a bakery was sliding its first trays into the window, and the smell of warm bread reached him in slow waves. He checked his phone: four minutes until the bus. Enough time, he decided, and he crossed the street with his hands in his pockets, in no hurry at all.",
+    "stem": "The tone of the passage is best described as",
+    "options": [
+      "calm and unhurried",
+      "bitter and resentful",
+      "formal and distant",
+      "tense and fearful"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Small sensory details, a leisurely decision and the absence of conflict give the passage a calm feel. Nothing in it suggests fear, resentment or formality."
+  },
+  {
+    "id": "ACC-RD-008",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "accReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Before refrigeration, ice was harvested from frozen lakes in New England each winter, packed in sawdust, and shipped by sailing vessel as far as India. A single shipment might lose half its weight to melting on the way, yet the trade was still profitable because wealthy buyers in hot climates would pay almost any price for a cold drink. Ice houses were built in every major port, and the trade lasted until electric refrigeration made it pointless.",
+    "stem": "Based on the passage, which conclusion is best supported?",
+    "options": [
+      "The ice trade collapsed because of melting losses.",
+      "Most people in India could afford shipped ice.",
+      "Ice sold for a very high price when it reached its destination.",
+      "Sawdust prevented any ice from melting during shipment."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "If half a shipment melted and the business still made money, the remaining ice had to sell for a high price. The passage says buyers were wealthy, so most people could not afford it, and sawdust only slowed melting."
+  },
+  {
+    "id": "ACC-RD-009",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "accReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The witness gave a terse answer, \"No,\" and offered nothing more even when the lawyer paused and waited for several seconds. The lawyer tried rephrasing the question twice, and each time received the same single word. Finally the judge asked the witness to explain, and only then did a full sentence come out, delivered in a flat voice and followed by another long silence.",
+    "stem": "As used in the passage, \"terse\" most nearly means",
+    "options": [
+      "long and rambling",
+      "false and misleading",
+      "angry and loud",
+      "brief and abrupt"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A single word followed by silence is brief and abrupt. Nothing in the passage says the answer was loud or untrue, and \"long\" is the opposite of what is described."
+  },
+  {
+    "id": "ACC-RD-010",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "accReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Many people believe that cracking your knuckles causes arthritis. The popping sound comes from gas bubbles collapsing in the fluid that lubricates the joint, not from bones grinding against each other. Several studies that compared habitual knuckle crackers with people who never crack their knuckles found no difference in arthritis rates between the groups. The habit may annoy the people around you, but the evidence says it does not harm the joints.",
+    "stem": "Which statement best expresses the main idea of the passage?",
+    "options": [
+      "Scientists do not yet know what produces the popping sound.",
+      "Gas bubbles in joint fluid are the main cause of arthritis.",
+      "Despite a common belief, knuckle cracking does not appear to cause arthritis.",
+      "Knuckle cracking should be stopped because it annoys other people."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The passage names the belief, explains the sound, cites studies and concludes there is no harm. The annoyance is a minor aside, and the cause of the sound is stated, not unknown."
+  },
+  {
+    "id": "ACC-RD-011",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "accReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "First, soak the dried beans overnight in plenty of cold water. Next, drain them and cover them with fresh water in a large pot. Bring the pot to a boil, then lower the heat and simmer for about an hour, adding salt only in the last ten minutes, since salting early can toughen the skins. Finally, test a few beans; they should mash easily against the side of the pot with a spoon.",
+    "stem": "The passage is organized primarily by",
+    "options": [
+      "sequence of steps",
+      "comparison and contrast",
+      "problem and solution",
+      "order of importance"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Words such as first, next, then and finally mark a sequence. The note about salt gives one cause and effect detail, but the overall structure is chronological, not a comparison or a ranking."
+  },
+  {
+    "id": "ACC-RD-012",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "accReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Grandfather never said the word \"proud.\" But on the morning of my graduation he wore the suit he saved for funerals and weddings, polished the shoes he had not worn in two years, and arrived at the auditorium forty minutes before the doors opened. He sat in the front row, and in the two hours that followed he did not take out his folded newspaper once.",
+    "stem": "The author's description of Grandfather suggests that",
+    "options": [
+      "he disapproves of the graduation ceremony",
+      "his actions express the pride he does not put into words",
+      "he regrets missing earlier family events",
+      "he is more interested in his newspaper than in the event"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The special suit, polished shoes, early arrival and full attention all show pride even though he never says the word. The newspaper detail shows the opposite of distraction."
+  },
+  {
+    "id": "ACC-RD-013",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "accReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Honey never spoils. Jars sealed in Egyptian tombs more than 3,000 years ago were found still edible. Honey's low water content and natural acidity make it nearly impossible for bacteria to grow, and bees add an enzyme that produces small amounts of hydrogen peroxide. Keep the lid tight, though: honey pulls moisture from the air, and once it is diluted it can begin to ferment.",
+    "stem": "The author mentions the Egyptian tombs mainly to",
+    "options": [
+      "show that ancient people used honey as a medicine",
+      "warn readers to keep honey jars tightly sealed",
+      "explain the chemical reasons that honey resists bacteria",
+      "provide a striking example that honey can last for thousands of years"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The tomb jars are a vivid illustration of the opening claim that honey never spoils. The chemistry and the warning about the lid come in later sentences and serve different purposes."
+  },
+  {
+    "id": "ACC-RD-014",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "accReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Passage 1, written by a city planner, argues that widening a congested highway rarely reduces traffic for long because the extra lanes attract new drivers who previously avoided the road, a pattern called induced demand. Passage 2, written by a commuter, describes a 90-minute drive each way and insists that the only fair fix is more lanes, since transit does not reach her suburb and she cannot afford to move.",
+    "stem": "How would the author of Passage 1 most likely respond to Passage 2?",
+    "options": [
+      "Commuters should simply move closer to the city center.",
+      "Her experience proves that induced demand does not occur in suburbs.",
+      "The new lanes would fill with additional drivers, and her commute would soon be slow again.",
+      "Widening is the best choice whenever transit is unavailable."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Passage 1's central idea is that added lanes attract new drivers, so its author would predict the relief would be temporary. Nothing in Passage 1 makes an exception for suburbs or tells people to move."
+  },
+  {
+    "id": "ACC-RD-015",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "accReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The new manager's approach was pragmatic. Rather than spend weeks debating which scheduling system was ideal, she chose the one the staff already knew and could start using on Monday. When a few employees asked why the team was not adopting the newest software, she said that a tool everyone uses correctly beats a better tool that half the office ignores.",
+    "stem": "As used in the passage, \"pragmatic\" most nearly means",
+    "options": [
+      "careless",
+      "practical",
+      "theoretical",
+      "stubborn"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Choosing what works now over what is ideal is practical. \"Theoretical\" is the opposite, and nothing suggests carelessness, since she weighed what the staff could actually use."
+  },
+  {
+    "id": "ACC-RD-016",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "accReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The lighthouse keeper's log for March was mostly weather: wind directions, fog, the height of the surf. But on the 14th he wrote three lines in a steadier hand than usual. \"Schooner aground on the north bar in heavy seas. Four taken off by the surfboat on the first trip. The fifth would not leave the dog, so on the second trip we took the dog too.\"",
+    "stem": "According to the log entry, how many people were rescued from the schooner?",
+    "options": [
+      "Five",
+      "Four",
+      "Three",
+      "Six"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Four were taken off on the first trip, and the fifth person came once the dog was included, making five people. \"Four\" counts only the first trip, and the dog is not a person."
+  },
+  {
+    "id": "ACC-RD-017",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "accReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "People often assume that the loudest person in a meeting has the best idea. Research on group decisions suggests otherwise. When teams write their ideas down before anyone speaks, quieter members contribute far more, and the group's final choice tends to be better than when discussion starts immediately. The simple act of beginning in silence changes who gets heard and, in the end, what gets decided.",
+    "stem": "Which sentence best summarizes the passage?",
+    "options": [
+      "Meetings should be held in silence to avoid conflict.",
+      "Quiet team members should learn to speak up more often.",
+      "Loud people usually have the best ideas in meetings.",
+      "Having team members write before speaking improves group decisions by including quieter voices."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The passage contrasts the assumption about loud speakers with research showing a writing-first method helps. It does not say meetings should be silent throughout or that quiet people must change."
+  },
+  {
+    "id": "ACC-RD-018",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "accReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "A desert tortoise can go a year without drinking. It stores water in its bladder and reabsorbs it as needed through the long dry season. For this reason, wildlife officials ask hikers never to pick one up, even to move it off a trail: a frightened tortoise often empties its bladder, and in a dry year it may not be able to replace that water before it dies.",
+    "stem": "Based on the passage, picking up a desert tortoise is harmful primarily because",
+    "options": [
+      "its shell is easily cracked when it is handled",
+      "it may lose stored water that it cannot easily replace",
+      "it will abandon its burrow after being touched",
+      "it may bite the person who lifts it"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The passage explains the bladder water store and says a frightened tortoise empties it. Shell damage, burrows and biting are never mentioned."
+  },
+  {
+    "id": "ACC-RD-019",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "accReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Smart doorbells promise security, and they do let you see who is at the door from anywhere. They also record your neighbors, your delivery drivers and every child who sells cookies on your street, and they upload that footage to a company you have never met. The convenience is real. So is the cost, and it is paid mostly by people who never agreed to be filmed.",
+    "stem": "The author's attitude toward smart doorbells is best described as",
+    "options": [
+      "enthusiastic about their security features",
+      "confused about how the devices work",
+      "skeptical about their effect on other people's privacy",
+      "indifferent to how they are used"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The author concedes convenience but stresses the cost to people who did not consent, which is skepticism grounded in privacy. The passage shows clear understanding of the devices, not confusion."
+  },
+  {
+    "id": "ACC-RD-020",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "accReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The two neighbors had a cordial relationship. They waved to each other every morning, lent each other tools without being asked twice, and traded tomatoes and zucchini over the fence every August. Still, in fifteen years they had never once eaten dinner together, and neither had been past the other's front hallway. Each knew the other's dog's name but not the names of the other's children.",
+    "stem": "As used in the passage, \"cordial\" most nearly means",
+    "options": [
+      "friendly",
+      "distant",
+      "formal",
+      "competitive"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Waving, lending and trading are friendly acts. The final sentence shows the friendship had limits, but the word itself describes warmth, not distance or formality."
+  },
+  {
+    "id": "ACC-RD-021",
+    "section": "reading",
+    "test": 2,
+    "module": 1,
+    "domain": "accReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Jonah counted the coins twice. Eleven dollars and forty cents, enough for the bus home and a sandwich, or for the used paperback in the shop window with the cracked blue spine. He stood at the glass a long moment while the bus pulled up, waited, and left without him. Then he went in, bought the book, and walked the four miles home reading under the streetlights.",
+    "stem": "Which statement about Jonah is best supported by the passage?",
+    "options": [
+      "He was afraid of missing the last bus.",
+      "He planned to resell the book for a profit.",
+      "He did not know how much the book cost.",
+      "He valued the book more than the comfort of a bus ride."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Jonah weighs the bus and sandwich against the book and chooses the book, then walks home. Counting the coins and the choice itself show he understood the price, and he lets the bus leave on purpose."
+  },
+  {
+    "id": "ACC-RD-022",
+    "section": "reading",
+    "test": 2,
+    "module": 1,
+    "domain": "accReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Both solar panels and wind turbines make electricity without burning fuel, but they fail in different ways. Solar output drops to nothing at night and falls sharply under clouds, while wind output can vanish on calm days and must be curtailed in storms. Grids that combine the two across large regions are more reliable than grids that depend on either alone, because calm nights and cloudy windy days tend not to coincide.",
+    "stem": "According to the passage, why does combining solar and wind improve reliability?",
+    "options": [
+      "Their periods of low output usually do not happen at the same time.",
+      "Together they produce more power than any fuel-burning plant.",
+      "Wind turbines can operate during storms when solar panels cannot.",
+      "Solar panels store electricity for use on calm days."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The passage says calm nights and cloudy windy days tend not to coincide, so each source covers the other's gaps. It says turbines are curtailed in storms, and it never mentions storage or total output."
+  },
+  {
+    "id": "ACC-RD-023",
+    "section": "reading",
+    "test": 2,
+    "module": 1,
+    "domain": "accReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Passage 1 is a diary entry from an 1870s farmer describing a locust swarm that darkened the sky at noon and stripped his wheat fields bare in a single afternoon. Passage 2 is a modern science article explaining that the Rocky Mountain locust went extinct around 1900, probably because plowing and grazing destroyed the river-valley soils where the insect laid its eggs, so that a species once numbering in the trillions vanished within a generation.",
+    "stem": "Taken together, the passages suggest that",
+    "options": [
+      "scientists have reintroduced the locust to its former range",
+      "the farming that locusts devastated may also have caused their extinction",
+      "the farmer's account exaggerated the damage the swarm caused",
+      "locust swarms remain a serious threat to farms in the region today"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Passage 1 shows locusts destroying farms, and Passage 2 explains that farming destroyed the locusts' breeding ground. The species is described as extinct, so it is neither a current threat nor reintroduced."
+  },
+  {
+    "id": "ACC-RD-024",
+    "section": "reading",
+    "test": 2,
+    "module": 1,
+    "domain": "accReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The first modern Olympic marathon, in 1896, was about 40 kilometers, roughly the distance from the town of Marathon to Athens. The now-standard 42.195 kilometers dates from the 1908 London Games, when the course was reportedly adjusted so it could start at Windsor Castle and finish in front of the royal box. That odd distance was not adopted as the official marathon length until 1921.",
+    "stem": "When did the 42.195-kilometer distance become the official marathon length?",
+    "options": [
+      "1900",
+      "1896",
+      "1921",
+      "1908"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The passage says the distance was run in 1908 but became official in 1921. The 1896 race was about 40 kilometers, and 1900 is not mentioned."
+  },
+  {
+    "id": "ACC-RD-025",
+    "section": "reading",
+    "test": 2,
+    "module": 1,
+    "domain": "accReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The old iron bridge was deemed obsolete by the county engineers. It still stood, and inspectors found its supports sound, but it was too narrow for modern delivery trucks, had no walkway for pedestrians, and could not carry the weight of a loaded school bus. A wider bridge will open beside it next year, and the old span will become part of a bicycle trail.",
+    "stem": "As used in the passage, \"obsolete\" most nearly means",
+    "options": [
+      "dangerously close to collapse",
+      "recently repaired and reopened",
+      "no longer suited to current needs",
+      "extremely old and historic"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The sentence stresses that the bridge no longer fits present needs, not that it is about to fall; the inspectors found it sound. Age alone does not make something obsolete, being out of date does."
+  },
+  {
+    "id": "ACC-RD-026",
+    "section": "reading",
+    "test": 2,
+    "module": 1,
+    "domain": "accReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Every night the apartment above thumped with footsteps until two in the morning. Priya left polite notes, then firmer ones, then one she regretted the moment it slid under the door. The night she finally climbed the stairs to knock, the door opened on a tired woman in hospital scrubs holding a toddler who was, at that moment, launching himself from the couch to the floor and back again.",
+    "stem": "What does the ending of the passage most strongly suggest?",
+    "options": [
+      "The noise comes from a child, and the neighbor's situation is harder than Priya assumed.",
+      "The neighbor has been ignoring the notes out of spite.",
+      "Priya intends to call the building manager next.",
+      "The neighbor is about to move out of the building."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The tired nurse and the jumping toddler explain the noise and invite sympathy, reversing Priya's growing frustration. Nothing points to spite or a plan to involve management."
+  },
+  {
+    "id": "ACC-RD-027",
+    "section": "reading",
+    "test": 2,
+    "module": 1,
+    "domain": "accReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Most people think of the brain's \"use it or lose it\" rule as applying to memory alone. It also applies to balance. Adults who stop doing activities that challenge balance, such as walking on uneven ground or standing on one foot to put on socks, lose that ability faster than age alone would predict. The good news is that balance responds to practice at any age, and a few minutes a day is enough to measure improvement within weeks.",
+    "stem": "Which statement best expresses the main idea of the passage?",
+    "options": [
+      "Older adults should avoid walking on uneven ground.",
+      "Balance declines when it is not practiced but can be rebuilt at any age.",
+      "Putting on socks while standing is dangerous for adults.",
+      "Memory loss is the most common sign of aging."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The passage extends the use-it-or-lose-it idea to balance and ends with the hopeful point that practice restores it. It recommends balance challenges rather than avoiding them."
+  },
+  {
+    "id": "ACC-RD-028",
+    "section": "reading",
+    "test": 2,
+    "module": 1,
+    "domain": "accReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "To the residents of Maple Court: Beginning Monday, the water main beneath our street will be replaced. Expect crews on site from 7 a.m. to 5 p.m. on weekdays, no parking on the east side of the street, and brief water shutoffs announced at least 24 hours in advance. The project should take about three weeks. Questions can be directed to the city utilities office at the number below.",
+    "stem": "The main purpose of this notice is to",
+    "options": [
+      "persuade residents to support replacing the water main",
+      "ask residents to volunteer their time for the project",
+      "apologize for past problems with the water supply",
+      "inform residents about upcoming construction and what to expect"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The notice gives dates, hours, parking rules and a contact, which is informational. It does not argue for the project, apologize or request help."
+  },
+  {
+    "id": "ACC-RD-029",
+    "section": "reading",
+    "test": 2,
+    "module": 1,
+    "domain": "accReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Rather than confront the error, the clerk tried to obfuscate it, burying the missing figure under pages of unrelated tables, footnotes and appendices. The auditor spent two days working through the report before she noticed that the total on page nine did not match the one on page forty, and another day finding out why. When she asked, the clerk said he had simply tried to be thorough.",
+    "stem": "As used in the passage, \"obfuscate\" most nearly means",
+    "options": [
+      "report promptly",
+      "correct quietly",
+      "explain carefully",
+      "make unclear"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Burying a figure under unrelated material is an attempt to make it hard to see. \"Explain carefully\" and \"report promptly\" are the opposite of hiding, and nothing says the error was corrected."
+  },
+  {
+    "id": "ACC-RD-030",
+    "section": "reading",
+    "test": 2,
+    "module": 1,
+    "domain": "accReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The snow had drifted to the second-floor windows on the north side of the barn, and the thermometer by the door had not climbed above zero in nine days. Each morning Ellen broke the ice on the water trough with a hammer, and each morning it was thicker than the day before. The cows stood close together and did not go out, and the woodpile that had seemed enormous in October was half gone.",
+    "stem": "The details in the passage mainly emphasize",
+    "options": [
+      "the beauty of the winter landscape",
+      "the severity and persistence of the cold",
+      "the comfort of life inside the barn",
+      "Ellen's fear of the coming spring"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Drifts to the second floor, nine days below zero, ice that thickens daily and a shrinking woodpile all stress a long, harsh cold. No detail describes beauty, comfort or spring."
+  },
+  {
+    "id": "ACC-RD-031",
+    "section": "reading",
+    "test": 2,
+    "module": 1,
+    "domain": "accReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Airline seats have grown narrower over the past thirty years while the average passenger has grown larger. Airlines say the change lets them offer lower fares than ever. Consumer groups respond that the lowest fares now often exclude a carry-on bag, a seat assignment and any change to the ticket, so the advertised price and the price people actually pay have drifted steadily apart. A traveler who compares two airlines by their headline fares alone may not be comparing like with like.",
+    "stem": "The passage implies that",
+    "options": [
+      "average passenger size has stopped increasing",
+      "consumer groups want airlines to remove more seats",
+      "the low fares airlines cite may not reflect what passengers actually pay",
+      "narrower seats have made flying safer for passengers"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The last sentence says advertised and paid prices have drifted apart because extras are now charged separately. Safety and seat removal are never discussed."
+  },
+  {
+    "id": "ACC-RD-032",
+    "section": "reading",
+    "test": 2,
+    "module": 1,
+    "domain": "accReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Passage 1 reports a study finding that students who take handwritten notes remember lecture material better than students who type, because writing by hand is slower and forces them to summarize rather than record everything. Passage 2 reports a later study in which typists were told not to transcribe word for word; those typists remembered just as much as the handwriters did.",
+    "stem": "Passage 2 suggests that the key factor behind the Passage 1 finding was",
+    "options": [
+      "how students processed the material, not the tool they used",
+      "the length of the lecture being recorded",
+      "whether students reviewed their notes afterward",
+      "the speed of the laptop keyboards"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "When typists stopped transcribing, the gap closed, so summarizing rather than handwriting itself explained the result. Review and lecture length are not mentioned in either passage."
+  },
+  {
+    "id": "ACC-RD-033",
+    "section": "reading",
+    "test": 2,
+    "module": 1,
+    "domain": "accReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Rip currents form when waves push water toward shore faster than it can flow back, and the trapped water escapes through a narrow channel. Swimmers caught in one should not fight straight back toward the beach; the current is often faster than any swimmer, and exhaustion is the real danger. Instead, float or swim parallel to the shore until the pull stops, then angle back to land.",
+    "stem": "According to the passage, what should a swimmer caught in a rip current do first?",
+    "options": [
+      "Dive under the current and swim along the bottom",
+      "Swim parallel to the shore or float until the pull eases",
+      "Swim as hard as possible straight toward the beach",
+      "Stop moving entirely and wait to be rescued"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The passage says to float or swim parallel to shore and warns against fighting straight in. Diving and waiting motionless are not among its instructions."
+  },
+  {
+    "id": "ACC-RD-034",
+    "section": "reading",
+    "test": 2,
+    "module": 1,
+    "domain": "accReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The bakery's morning rush was frenetic. Three people worked the register at once, trays of rolls came out of the oven every few minutes, and the line spilled out the door and down the sidewalk. By nine the pace slowed, the owner finally sat down with a coffee, and the only sound was the dishwasher running in the back and the rustle of a newspaper.",
+    "stem": "As used in the passage, \"frenetic\" most nearly means",
+    "options": [
+      "quiet and empty",
+      "pleasant and relaxed",
+      "fast and frantic",
+      "slow and orderly"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Multiple registers, constant trays and a line out the door describe hectic activity. The other choices describe the calm that arrives later, not the rush."
+  },
+  {
+    "id": "ACC-RD-035",
+    "section": "reading",
+    "test": 2,
+    "module": 1,
+    "domain": "accReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "For forty years my father fixed clocks and watches in a shop no wider than a hallway, two blocks from the train station. He never grew rich; most years he barely covered the rent. But when he died, the line at the funeral home stretched around the block, and nearly every person in it carried a watch he had once brought back to life.",
+    "stem": "The passage suggests that the father's life was",
+    "options": [
+      "successful mainly because of his large family",
+      "wasted on a trade that paid too little",
+      "lonely because his shop was so small",
+      "valuable because of the people he served, not the money he earned"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The contrast between never growing rich and the crowd carrying his repaired watches shows that his worth lay in service. The passage never calls the trade a waste or mentions a family."
+  },
+  {
+    "id": "ACC-RD-036",
+    "section": "reading",
+    "test": 2,
+    "module": 1,
+    "domain": "accReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "When a new word enters a dictionary, the editors do not invent it. They track how often the word appears in print and speech, across how many regions, and over how many years. A word used by a single profession for decades may never make it in, while a slang term that spreads across the country within a few years often does. The question is never whether a word is good, only whether it is widely used.",
+    "stem": "Based on the passage, which word would a dictionary most likely add?",
+    "options": [
+      "A term that has quickly become common in many regions",
+      "A word invented by an editor to fill a gap",
+      "A word that appeared in a single popular novel",
+      "A technical word used only by one small profession"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Editors look for wide, sustained use across regions, so a term spreading nationally fits. The passage says editors do not invent words and that narrow professional use is often not enough."
+  },
+  {
+    "id": "ACC-RD-037",
+    "section": "reading",
+    "test": 2,
+    "module": 1,
+    "domain": "accReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "You have probably heard that you should drink eight glasses of water a day. The number has no clear scientific source. Needs vary with body size, activity, climate and the water in food, and healthy people do fine by drinking when they are thirsty. The exception is during heavy exercise or illness, when thirst can lag behind the body's actual need and a schedule can help.",
+    "stem": "The author's main purpose is to",
+    "options": [
+      "warn that most people drink dangerous amounts of water",
+      "argue that athletes need less water than other people",
+      "question a common rule about water intake and offer a more flexible guideline",
+      "describe how the body produces the sensation of thirst"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The passage challenges the eight-glass rule, explains why needs vary and advises drinking to thirst with exceptions. It says athletes may need more, not less, and never calls normal intake dangerous."
+  },
+  {
+    "id": "ACC-RD-038",
+    "section": "reading",
+    "test": 2,
+    "module": 1,
+    "domain": "accReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The judge's ruling was unequivocal: the contract was void, the deposit would be returned in full, and no appeal would change the result. The lawyers for the developer, who had spent the morning arguing that the agreement might still be partly enforceable, packed their files without a word and left the courtroom before the reporters waiting in the hallway could reach them.",
+    "stem": "As used in the passage, \"unequivocal\" most nearly means",
+    "options": [
+      "complicated and technical",
+      "clear and leaving no doubt",
+      "unfair and biased",
+      "temporary and open to review"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The sentence stresses that the decision was definite and final. \"Temporary and open to review\" contradicts the statement that no appeal would change it."
+  },
+  {
+    "id": "ACC-RD-039",
+    "section": "reading",
+    "test": 2,
+    "module": 1,
+    "domain": "accReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Lena had rehearsed the speech in the car, in the elevator and in the long hallway outside the apartment. It covered the twelve years, the unanswered letters, the money. When the door opened and her brother stood there with the same crooked grin he had worn at ten, every word of it left her, and she simply said, \"Hi.\" He said it back, and they stood there grinning at each other like children.",
+    "stem": "The passage suggests that Lena",
+    "options": [
+      "felt the planned speech was unnecessary once she saw her brother",
+      "was disappointed that her brother had not changed",
+      "forgot the speech because she was poorly prepared",
+      "was angry at her brother for answering the door"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "She rehearsed repeatedly, so she was well prepared; the familiar grin made the formal words fall away. Nothing in the passage suggests anger or disappointment."
+  },
+  {
+    "id": "ACC-RD-040",
+    "section": "reading",
+    "test": 2,
+    "module": 1,
+    "domain": "accReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Potholes form from a cycle, not a single event. Water seeps into small cracks in pavement, freezes and expands, and widens the crack. When it thaws, the water drains away, leaving a gap beneath the surface. Passing traffic then breaks the weakened pavement into the gap. Cities that seal cracks each fall see far fewer potholes the following spring, and they spend far less on patching.",
+    "stem": "Which statement best expresses the main idea of the passage?",
+    "options": [
+      "Heavy traffic is the single cause of potholes.",
+      "Water drains harmlessly from pavement once it thaws.",
+      "Potholes form only in cities with cold winters.",
+      "Potholes result from repeated freezing and thawing, which crack sealing can prevent."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The passage describes the freeze-thaw cycle and ends with the preventive step of sealing cracks. Traffic is the final step, not the only cause, and draining water leaves a damaging gap."
+  },
+  {
+    "id": "ACC-RD-041",
+    "section": "reading",
+    "test": 0,
+    "module": 0,
+    "domain": "accReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The Dewey Decimal System sorts nonfiction into ten main classes numbered 000 to 999. Each class is split into ten divisions and each division into ten sections, so related subjects sit near one another on the shelf. The 500s cover the natural sciences; within them, a book on astronomy sits in the 520s and a book on botany in the 580s, while the 900s hold history and geography.",
+    "stem": "According to the passage, where would a library using this system shelve a book on botany?",
+    "options": [
+      "In the 580s",
+      "In the 520s",
+      "In the 900s",
+      "In the 000s"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The passage states that botany is in the 580s. The 520s hold astronomy, the 900s hold history and geography, and the 000s are not described."
+  },
+  {
+    "id": "ACC-RD-042",
+    "section": "reading",
+    "test": 0,
+    "module": 0,
+    "domain": "accReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The detective was meticulous. She photographed each object before touching it, recorded the exact position of every item in the room in a small notebook, and bagged even the cigarette ash from the windowsill. Her partner, who wanted to interview the neighbors before they left for work, waited in the doorway for nearly an hour, checking his watch every few minutes.",
+    "stem": "As used in the passage, \"meticulous\" most nearly means",
+    "options": [
+      "slow and reluctant to decide",
+      "extremely careful about details",
+      "suspicious of everyone present",
+      "eager to finish quickly"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Photographing and recording every item shows careful attention to detail. The passage shows she was thorough rather than indecisive, and it says nothing about suspicion of people."
+  },
+  {
+    "id": "ACC-RD-043",
+    "section": "reading",
+    "test": 0,
+    "module": 0,
+    "domain": "accReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Passage 1 argues that high schools should start no earlier than 8:30 a.m. because teenagers' sleep cycles shift later during adolescence and early starts cut into needed rest, hurting grades and mood. Passage 2 agrees that teens need more sleep but points out that later starts push after-school sports and part-time jobs into the evening and strain bus schedules shared with elementary schools.",
+    "stem": "Which issue does Passage 2 raise that Passage 1 does not address?",
+    "options": [
+      "Whether teenagers actually need more sleep",
+      "The biological reason teens stay up later",
+      "The practical scheduling effects of a later start time",
+      "The effect of rest on grades and mood"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Passage 2 accepts the sleep argument and adds concerns about sports, jobs and buses. Sleep need, biology and grades are Passage 1's own points, so they are not new."
+  },
+  {
+    "id": "ACC-RD-044",
+    "section": "reading",
+    "test": 0,
+    "module": 0,
+    "domain": "accReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The old house exhaled when we opened the door, a long breath of dust and cedar and something sweeter underneath, like a letter kept in a drawer for years. My sister stepped in first and stood in the hall without speaking. The furniture was gone, but the light fell through the same windows onto the same worn boards, and for a moment we were children again.",
+    "stem": "The comparison of the house to a breathing thing mainly serves to",
+    "options": [
+      "explain how old houses are ventilated",
+      "show that the narrator dislikes old buildings",
+      "warn that the house is unsafe to enter",
+      "make the house seem alive and full of stored memories"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Exhaling and the image of a kept letter personify the house and suggest memory, which the next sentences confirm. The tone is tender, not fearful or technical."
+  },
+  {
+    "id": "ACC-RD-045",
+    "section": "reading",
+    "test": 0,
+    "module": 0,
+    "domain": "accReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Every container ship that enters a harbor carries ballast water taken on in a distant port to keep the ship stable at sea. When that water is pumped out, so are the small creatures living in it. Zebra mussels, which now clog water pipes and cover boat hulls across the Great Lakes, are thought to have arrived this way from Europe in the 1980s.",
+    "stem": "The passage implies that zebra mussels",
+    "options": [
+      "were introduced deliberately to clean the lakes",
+      "are native to the Great Lakes region",
+      "can survive only in the harbors of Europe",
+      "were carried to the Great Lakes unintentionally by ships"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The passage describes ballast water as the likely route, which is accidental. It says the mussels came from Europe and now live in the Great Lakes, so they are neither native nor limited to Europe."
+  },
+  {
+    "id": "ACC-RD-046",
+    "section": "reading",
+    "test": 0,
+    "module": 0,
+    "domain": "accReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "In the 1850s, John Snow mapped the homes of cholera victims in a London neighborhood and found them clustered around a single public water pump. When the pump handle was removed, new cases dropped sharply. At the time, most doctors blamed \"bad air\" for the disease. Snow's map is now taught as a founding case in the field of epidemiology.",
+    "stem": "The author includes the detail that most doctors blamed bad air in order to",
+    "options": [
+      "criticize Snow for ignoring other theories",
+      "show how Snow's conclusion differed from accepted thinking at the time",
+      "prove that bad air was also a cause of cholera",
+      "explain how cholera spreads through the air"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The contrast between Snow's water-based finding and the bad-air view highlights how new his idea was. The passage presents Snow's view as correct, not as something to criticize."
+  },
+  {
+    "id": "ACC-RD-047",
+    "section": "reading",
+    "test": 0,
+    "module": 0,
+    "domain": "accReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Ticket prices for the summer festival were exorbitant, nearly three times what the same bands charged at their own concerts a month earlier. Organizers blamed the rising cost of security, insurance and the rented stage, but many fans stayed home, and by the second day the field was half empty and the prices had quietly been cut in half without any announcement.",
+    "stem": "As used in the passage, \"exorbitant\" most nearly means",
+    "options": [
+      "roughly average",
+      "difficult to calculate",
+      "unreasonably high",
+      "slightly discounted"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Three times the usual price is unreasonably high, and the half-empty field confirms it. The comparison rules out discounted or average, and nothing suggests the price was hard to figure out."
+  },
+  {
+    "id": "ACC-RD-048",
+    "section": "reading",
+    "test": 0,
+    "module": 0,
+    "domain": "accReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "I did not want to go to the reunion. I told my wife I was too busy with the garage roof, and she nodded, and then she laid out my good shirt the night before anyway. She knows me better than I know myself, which is either the best or the worst thing about marriage. I wore the shirt, and I will admit that I had a good time.",
+    "stem": "The passage is told from the point of view of",
+    "options": [
+      "a husband who is reluctant to attend a reunion",
+      "a wife who is preparing for a trip",
+      "a child describing his parents",
+      "a narrator observing a couple from outside"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The narrator says \"I\" and \"my wife,\" so he is the husband. His own reluctance is the subject, and the wife's actions are described from his view."
+  },
+  {
+    "id": "ACC-RD-049",
+    "section": "reading",
+    "test": 0,
+    "module": 0,
+    "domain": "accReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "I planted the apple tree the spring my daughter was born. For six years it gave us nothing but leaves, and twice I nearly dug it up. The seventh year it produced four small, sour apples, and we ate them standing in the yard as if they were a feast. I understood then that some things are not slow. They are simply on their own schedule, and the waiting is part of the gift.",
+    "stem": "Which statement best expresses the passage's central idea?",
+    "options": [
+      "Apple trees require seven years to produce fruit.",
+      "Patience is rewarded by things that grow on their own timeline.",
+      "Sour apples taste better when they are eaten outdoors.",
+      "Children and trees should be planted at the same time."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The final lines turn the tree into a lesson about patience and natural timing. The seven years and sour apples are details of one story, not a general rule."
+  },
+  {
+    "id": "ACC-RD-050",
+    "section": "reading",
+    "test": 0,
+    "module": 0,
+    "domain": "accReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Carbon monoxide is odorless and colorless, which is why detectors are required in many homes. The gas is produced by any fuel that burns incompletely, including gas furnaces, car engines and charcoal grills. Early symptoms, such as headache and dizziness, are easy to mistake for the flu, especially in winter, when windows stay closed and heaters run longest.",
+    "stem": "According to the passage, why are carbon monoxide symptoms often misread in winter?",
+    "options": [
+      "Detectors do not work well in cold weather.",
+      "The gas has a stronger smell when heaters run.",
+      "They resemble flu symptoms at the time of year when exposure is most likely.",
+      "People rarely use charcoal grills in winter."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The passage links headache and dizziness to flu-like symptoms and notes that closed windows and heavy heater use make winter the riskiest season. It states that the gas is odorless."
+  },
+  {
+    "id": "ACC-RD-051",
+    "section": "reading",
+    "test": 0,
+    "module": 0,
+    "domain": "accReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Passage 1 is an excerpt from a 1910 travel guide praising the new automobile for freeing travelers from train timetables and letting a family stop wherever a view or a picnic spot appealed to them. Passage 2 is a 2020 essay arguing that the car has trapped Americans in long commutes and in sprawling cities built around parking lots rather than people.",
+    "stem": "Which statement best describes how the two passages differ?",
+    "options": [
+      "Passage 1 criticizes cars, while Passage 2 defends them.",
+      "Both passages call for a return to rail travel.",
+      "Passage 2 describes the same early period as Passage 1.",
+      "Passage 1 emphasizes the freedom cars gave travelers, while Passage 2 emphasizes the costs of a car-centered society."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The 1910 guide celebrates freedom from timetables; the 2020 essay argues the car has created commutes and sprawl. Neither passage calls for a return to trains."
+  },
+  {
+    "id": "ACC-RD-052",
+    "section": "reading",
+    "test": 0,
+    "module": 0,
+    "domain": "accReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The committee reached a consensus only after the third meeting, when the last two holdouts agreed to support the plan if a formal review was scheduled for the following year. No one was entirely satisfied with the compromise, and the chair admitted that the plan was weaker than the one first proposed, but every member signed the final version before leaving the room.",
+    "stem": "As used in the passage, \"consensus\" most nearly means",
+    "options": [
+      "general agreement",
+      "final deadline",
+      "formal vote",
+      "written contract"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The holdouts agreeing to support the plan, with every member signing, describes agreement among all members. No vote, contract or deadline is described as the thing reached."
+  },
+  {
+    "id": "ACC-WR-001",
+    "section": "writing",
+    "test": 1,
+    "module": 1,
+    "domain": "accWriting",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The museum's new wing, which houses more than two hundred paintings, [open] to the public next spring.",
+    "stem": "Which is the best way to write the bracketed portion?",
+    "options": [
+      "have opened",
+      "opening",
+      "will open",
+      "are opening"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The subject is the singular \"wing,\" so the verb must be singular, and \"next spring\" calls for the future tense. \"Have opened\" and \"are opening\" are plural, and \"opening\" leaves the sentence without a main verb."
+  },
+  {
+    "id": "ACC-WR-002",
+    "section": "writing",
+    "test": 1,
+    "module": 1,
+    "domain": "accWriting",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Hannah trained for the marathon all winter, she finished in under four hours.",
+    "stem": "Which revision corrects the error in the sentence?",
+    "options": [
+      "Hannah trained for the marathon all winter, finishing, in under four hours.",
+      "Hannah trained for the marathon all winter, and she finished in under four hours.",
+      "Hannah trained for the marathon all winter she finished in under four hours.",
+      "Hannah trained for the marathon all winter, she finished in under four hours."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Two independent clauses need a comma plus a conjunction or a semicolon. The last option keeps the comma splice, the third removes all punctuation and makes a run-on, and the first inserts a stray comma after \"finishing\"."
+  },
+  {
+    "id": "ACC-WR-003",
+    "section": "writing",
+    "test": 1,
+    "module": 1,
+    "domain": "accWriting",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Neither the coach nor the players [was] happy with the referee's call.",
+    "stem": "Which is the best way to write the bracketed portion?",
+    "options": [
+      "is",
+      "was",
+      "has been",
+      "were"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "With \"neither ... nor,\" the verb agrees with the subject closer to it, \"players,\" which is plural. \"Was,\" \"is\" and \"has been\" are all singular."
+  },
+  {
+    "id": "ACC-WR-004",
+    "section": "writing",
+    "test": 1,
+    "module": 1,
+    "domain": "accWriting",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The town built a new parking garage downtown last year. [For example,] shoppers still complain that there is nowhere to park on weekends.",
+    "stem": "Which transition best fits the bracketed portion?",
+    "options": [
+      "Nevertheless,",
+      "For example,",
+      "As a result,",
+      "In addition,"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The second sentence contrasts with the first, so a contrasting transition is needed. \"For example\" and \"In addition\" signal illustration or addition, and \"As a result\" wrongly makes the complaint a consequence of the garage."
+  },
+  {
+    "id": "ACC-WR-005",
+    "section": "writing",
+    "test": 1,
+    "module": 1,
+    "domain": "accWriting",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "In my opinion, I think that the proposal is a plan that should be approved by the board.",
+    "stem": "Which is the most concise version of the sentence that keeps its meaning?",
+    "options": [
+      "I think the board should approve the proposal.",
+      "I think that, in my opinion, the proposal should be approved by the board.",
+      "In my personal opinion, I think that the proposal is one the board should approve.",
+      "In my opinion, I think the board should approve the proposal."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "\"In my opinion\" and \"I think\" say the same thing, so one should go, and the active voice is shorter. The other versions keep the redundancy or add wordy phrasing."
+  },
+  {
+    "id": "ACC-WR-006",
+    "section": "writing",
+    "test": 1,
+    "module": 1,
+    "domain": "accWriting",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Covered in mud, the coach told the players to shower before the bus left.",
+    "stem": "Which revision most clearly expresses that the players were covered in mud?",
+    "options": [
+      "Covered in mud, the players were told by the coach to shower before the bus left, the coach said.",
+      "The coach told the players, who were covered in mud, to shower before the bus left.",
+      "Covered in mud, the coach told the players to shower before the bus left.",
+      "The coach, covered in mud, told the players to shower before the bus left."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Placing the description right after \"players\" makes clear who was muddy. The original and the third and fourth options all attach the modifier to the coach, and the first option is redundant (\"told by the coach ... the coach said\")."
+  },
+  {
+    "id": "ACC-WR-007",
+    "section": "writing",
+    "test": 1,
+    "module": 1,
+    "domain": "accWriting",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The job requires answering phones, scheduling appointments, and [to greet] visitors at the front desk.",
+    "stem": "Which is the best way to write the bracketed portion?",
+    "options": [
+      "greet",
+      "to greet",
+      "greeted",
+      "greeting"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Items in a list should share the same form. The first two items are -ing forms, so the third should be \"greeting\" as well."
+  },
+  {
+    "id": "ACC-WR-008",
+    "section": "writing",
+    "test": 1,
+    "module": 1,
+    "domain": "accWriting",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Our neighbor owns one dog, and the [dogs'] leash is always tangled around the mailbox.",
+    "stem": "Which is the best way to write the bracketed portion?",
+    "options": [
+      "dogs'",
+      "dogs's",
+      "dog's",
+      "dogs"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "One dog owns the leash, so the singular possessive \"dog's\" is needed. \"Dogs'\" is a plural possessive, \"dogs\" has no possessive at all, and \"dogs's\" is not a standard form."
+  },
+  {
+    "id": "ACC-WR-009",
+    "section": "writing",
+    "test": 1,
+    "module": 1,
+    "domain": "accWriting",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The company announced that [it's] profits had doubled since the merger.",
+    "stem": "Which is the best way to write the bracketed portion?",
+    "options": [
+      "its'",
+      "its",
+      "their",
+      "it's"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The possessive \"its\" has no apostrophe; \"it's\" means \"it is.\" \"Its'\" is not a word, and \"their\" does not agree with the singular \"company.\""
+  },
+  {
+    "id": "ACC-WR-010",
+    "section": "writing",
+    "test": 1,
+    "module": 1,
+    "domain": "accWriting",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The storm knocked out power for three days many families stayed with relatives.",
+    "stem": "Which version of the sentence is correctly punctuated?",
+    "options": [
+      "The storm knocked out power for three days, many families stayed with relatives.",
+      "The storm knocked out power for three days; and many families stayed with relatives.",
+      "The storm knocked out power for three days many, families stayed with relatives.",
+      "The storm knocked out power for three days; many families stayed with relatives."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A semicolon alone joins two closely related independent clauses. A comma alone is a comma splice, a semicolon plus \"and\" doubles the connector, and the last option puts the comma in the wrong place."
+  },
+  {
+    "id": "ACC-WR-011",
+    "section": "writing",
+    "test": 1,
+    "module": 1,
+    "domain": "accWriting",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "She packed everything she needed for the trip a tent, a stove, and two days of food.",
+    "stem": "Which version of the sentence is correctly punctuated?",
+    "options": [
+      "She packed everything she needed for the trip; a tent, a stove, and two days of food.",
+      "She packed everything she needed: for the trip a tent, a stove, and two days of food.",
+      "She packed everything she needed for the trip: a tent, a stove, and two days of food.",
+      "She packed everything she needed for the trip, a tent, a stove, and two days of food."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A colon introduces a list after a complete sentence. A semicolon must join two independent clauses, a comma makes the list read as part of a longer series, and the last option puts the colon in the wrong place."
+  },
+  {
+    "id": "ACC-WR-012",
+    "section": "writing",
+    "test": 1,
+    "module": 1,
+    "domain": "accWriting",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The library stays open late during exam week. Which gives students a quiet place to study.",
+    "stem": "Which revision corrects the error?",
+    "options": [
+      "The library stays open late during exam week, which gives students a quiet place to study.",
+      "The library stays open late during exam week. Which gives, students a quiet place to study.",
+      "The library stays open late during exam week. Which gives students a quiet place to study.",
+      "The library stays open late during exam week; which gives students a quiet place to study."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "\"Which gives ...\" is a dependent clause and cannot stand alone as a sentence; attaching it with a comma fixes the fragment. A semicolon requires an independent clause on each side."
+  },
+  {
+    "id": "ACC-WR-013",
+    "section": "writing",
+    "test": 1,
+    "module": 1,
+    "domain": "accWriting",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Yesterday the committee reviewed the budget and [votes] to cut travel spending by half.",
+    "stem": "Which is the best way to write the bracketed portion?",
+    "options": [
+      "will vote",
+      "votes",
+      "voting",
+      "voted"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "\"Yesterday\" and \"reviewed\" set the past tense, so \"voted\" keeps the sentence consistent. The other forms shift to present, future or an incomplete verb."
+  },
+  {
+    "id": "ACC-WR-014",
+    "section": "writing",
+    "test": 1,
+    "module": 1,
+    "domain": "accWriting",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The bakery opens at six. Most customers arrive after eight.",
+    "stem": "Which is the best way to combine the sentences?",
+    "options": [
+      "The bakery opens at six and most customers, arriving after eight.",
+      "The bakery opens at six, most customers arrive after eight.",
+      "Although the bakery opens at six, most customers arrive after eight.",
+      "The bakery opens at six, so most customers arrive after eight."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The two facts contrast, so \"although\" shows the relationship. \"So\" wrongly implies cause, the comma-only version is a splice, and the last option is not a complete sentence."
+  },
+  {
+    "id": "ACC-WR-015",
+    "section": "writing",
+    "test": 1,
+    "module": 1,
+    "domain": "accWriting",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "After reading the instructions, the bookshelf was easy to assemble.",
+    "stem": "Which revision corrects the error in the sentence?",
+    "options": [
+      "After reading the instructions, we found the bookshelf easy to assemble.",
+      "After reading the instructions, the bookshelf was easy to assemble.",
+      "After reading the instructions, the bookshelf's assembly was easy.",
+      "The bookshelf, after reading the instructions, was easy to assemble."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The phrase \"after reading the instructions\" needs a subject that can read; a bookshelf cannot. Only the correct version names a reader, \"we,\" right after the phrase."
+  },
+  {
+    "id": "ACC-WR-016",
+    "section": "writing",
+    "test": 1,
+    "module": 1,
+    "domain": "accWriting",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The scholarship goes to the student [who] the committee judges to be most improved.",
+    "stem": "Which is the best way to write the bracketed portion?",
+    "options": [
+      "which",
+      "whom",
+      "who",
+      "whose"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The pronoun is the object of \"judges\" (the committee judges her), so \"whom\" is correct. \"Which\" is not used for people, and \"whose\" shows possession."
+  },
+  {
+    "id": "ACC-WR-017",
+    "section": "writing",
+    "test": 1,
+    "module": 1,
+    "domain": "accWriting",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "There were [less] applicants this year than last year.",
+    "stem": "Which is the best way to write the bracketed portion?",
+    "options": [
+      "less",
+      "fewer",
+      "lesser",
+      "least"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "\"Fewer\" is used with countable nouns such as applicants; \"less\" is for amounts that are not counted, such as time or water. \"Lesser\" and \"least\" do not fit a comparison of two years."
+  },
+  {
+    "id": "ACC-WR-018",
+    "section": "writing",
+    "test": 1,
+    "module": 1,
+    "domain": "accWriting",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Solar panels have dropped in price by more than 80 percent since 2010. [Similarly,] many homeowners who once found them too expensive are now installing them.",
+    "stem": "Which transition best fits the bracketed portion?",
+    "options": [
+      "Consequently,",
+      "In contrast,",
+      "On the other hand,",
+      "Similarly,"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The second sentence is a result of the price drop, so a cause-and-effect transition fits. \"Similarly\" implies a parallel example, and the other two signal contrast."
+  },
+  {
+    "id": "ACC-WR-019",
+    "section": "writing",
+    "test": 1,
+    "module": 1,
+    "domain": "accWriting",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "When the museum closed for renovations the staff moved the sculptures to a warehouse.",
+    "stem": "Which version of the sentence is correctly punctuated?",
+    "options": [
+      "When the museum closed, for renovations, the staff moved the sculptures to a warehouse.",
+      "When the museum closed for renovations; the staff moved the sculptures to a warehouse.",
+      "When the museum closed for renovations, the staff moved the sculptures to a warehouse.",
+      "When the museum closed for renovations the staff moved the sculptures to a warehouse."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An introductory dependent clause is followed by a comma. A semicolon would need two independent clauses, and setting off \"for renovations\" with commas breaks up the clause."
+  },
+  {
+    "id": "ACC-WR-020",
+    "section": "writing",
+    "test": 1,
+    "module": 1,
+    "domain": "accWriting",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The collection of rare maps [are] kept in a climate-controlled room on the third floor.",
+    "stem": "Which is the best way to write the bracketed portion?",
+    "options": [
+      "are",
+      "have been",
+      "were",
+      "is"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The subject is \"collection,\" a singular noun; the phrase \"of rare maps\" does not change its number. \"Are,\" \"were\" and \"have been\" are all plural."
+  },
+  {
+    "id": "ACC-WR-021",
+    "section": "writing",
+    "test": 2,
+    "module": 1,
+    "domain": "accWriting",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "When Maria met her sister at the station, she was already twenty minutes late.",
+    "stem": "Which revision makes it clear that Maria was the one who was late?",
+    "options": [
+      "When Maria met her sister at the station, she was already twenty minutes late.",
+      "When Maria met her sister at the station, Maria was already twenty minutes late.",
+      "When Maria met her sister at the station, her sister and she was already twenty minutes late.",
+      "When Maria met her sister at the station, she herself was already twenty minutes late."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "In the original, \"she\" could refer to Maria or her sister. Repeating \"Maria\" removes the ambiguity; \"she herself\" is still unclear, and the last option changes the meaning and has an agreement error."
+  },
+  {
+    "id": "ACC-WR-022",
+    "section": "writing",
+    "test": 2,
+    "module": 1,
+    "domain": "accWriting",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "(1) The community garden opened in 2015 on an empty lot behind the fire station.\n\n(2) Volunteers built forty raised beds the first summer.\n\n(3) My cousin lives three blocks from the garden.\n\n(4) Today the garden supplies vegetables to a nearby food pantry every week.",
+    "stem": "Which sentence should be deleted because it does not support the main idea of the paragraph?",
+    "options": [
+      "Sentence 3",
+      "Sentence 1",
+      "Sentence 2",
+      "Sentence 4"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Sentence 3 is a personal detail unrelated to the garden's development. The other sentences trace the garden's history and its impact on the community."
+  },
+  {
+    "id": "ACC-WR-023",
+    "section": "writing",
+    "test": 2,
+    "module": 1,
+    "domain": "accWriting",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Bike lanes separated from traffic by a curb reduce injuries. ______ In one city, crashes involving cyclists fell by 40 percent after curbs were added to its busiest routes.",
+    "stem": "Which sentence best fills the blank?",
+    "options": [
+      "Curbs are usually made of concrete or granite.",
+      "Bicycles were invented in the nineteenth century.",
+      "Many cyclists prefer riding on quiet residential streets.",
+      "The evidence comes from cities that tracked crashes before and after installing them."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The blank should introduce the statistic that follows, so a sentence about tracked crash data fits. The other options drift to unrelated topics."
+  },
+  {
+    "id": "ACC-WR-024",
+    "section": "writing",
+    "test": 2,
+    "module": 1,
+    "domain": "accWriting",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Of the three routes to the coast, the shore road is the [more scenic].",
+    "stem": "Which is the best way to write the bracketed portion?",
+    "options": [
+      "more scenic",
+      "scenicest",
+      "most scenic",
+      "most scenicest"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Comparing three or more items takes the superlative \"most scenic.\" \"More\" compares only two, and \"scenicest\" and \"most scenicest\" are not standard forms."
+  },
+  {
+    "id": "ACC-WR-025",
+    "section": "writing",
+    "test": 2,
+    "module": 1,
+    "domain": "accWriting",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The new schedule had an immediate [affect] on attendance.",
+    "stem": "Which is the best way to write the bracketed portion?",
+    "options": [
+      "affection",
+      "effecting",
+      "effect",
+      "affect"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A noun meaning a result is \"effect.\" \"Affect\" is usually a verb meaning to influence, and the other two choices do not fit the sentence."
+  },
+  {
+    "id": "ACC-WR-026",
+    "section": "writing",
+    "test": 2,
+    "module": 1,
+    "domain": "accWriting",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The second draft of the essay was much stronger [then] the first.",
+    "stem": "Which is the best way to write the bracketed portion?",
+    "options": [
+      "then",
+      "than",
+      "as",
+      "from"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Comparisons use \"than\"; \"then\" refers to time or sequence. \"As\" and \"from\" do not complete the comparison \"stronger ...\""
+  },
+  {
+    "id": "ACC-WR-027",
+    "section": "writing",
+    "test": 2,
+    "module": 1,
+    "domain": "accWriting",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The researchers' findings were [super interesting] to the review committee.",
+    "stem": "Which is the best replacement for the bracketed portion?",
+    "options": [
+      "of considerable interest",
+      "really cool",
+      "kind of a big deal",
+      "super interesting"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A formal report calls for formal language. The other choices are casual expressions that do not match the tone of a report."
+  },
+  {
+    "id": "ACC-WR-028",
+    "section": "writing",
+    "test": 2,
+    "module": 1,
+    "domain": "accWriting",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "(1) Finally, let the bread cool before slicing it.\n\n(2) First, mix the flour, water, yeast, and salt.\n\n(3) Next, let the dough rise for two hours.\n\n(4) Then bake it at 450 degrees for 35 minutes.",
+    "stem": "Which order makes the paragraph most logical?",
+    "options": [
+      "3, 2, 4, 1",
+      "1, 2, 3, 4",
+      "2, 4, 3, 1",
+      "2, 3, 4, 1"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The transitions first, next, then and finally, along with the baking process itself, set the order: mix, rise, bake, cool."
+  },
+  {
+    "id": "ACC-WR-029",
+    "section": "writing",
+    "test": 2,
+    "module": 1,
+    "domain": "accWriting",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "There [is] several reasons to postpone the vote until next month.",
+    "stem": "Which is the best way to write the bracketed portion?",
+    "options": [
+      "was",
+      "is",
+      "are",
+      "has been"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "In a sentence beginning with \"there,\" the verb agrees with the noun that follows, \"reasons,\" which is plural. The other three verbs are singular."
+  },
+  {
+    "id": "ACC-WR-030",
+    "section": "writing",
+    "test": 2,
+    "module": 1,
+    "domain": "accWriting",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The crew repaired the roof, and replaced the gutters.",
+    "stem": "Which version of the sentence is correctly punctuated?",
+    "options": [
+      "The crew repaired the roof and replaced the gutters.",
+      "The crew repaired the roof, and replaced the gutters.",
+      "The crew repaired the roof; and replaced the gutters.",
+      "The crew repaired the roof, replaced the gutters."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "When two verbs share one subject, no comma is needed before \"and.\" A comma alone leaves the sentence incomplete, and a semicolon needs independent clauses on both sides."
+  },
+  {
+    "id": "ACC-WR-031",
+    "section": "writing",
+    "test": 2,
+    "module": 1,
+    "domain": "accWriting",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Writing a good essay is harder than [to give a speech].",
+    "stem": "Which is the best way to write the bracketed portion?",
+    "options": [
+      "when you give a speech",
+      "giving a speech",
+      "to give a speech",
+      "a speech given"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The comparison should match \"writing\" with another -ing form, \"giving.\" The other versions mix forms and make the comparison unbalanced."
+  },
+  {
+    "id": "ACC-WR-032",
+    "section": "writing",
+    "test": 2,
+    "module": 1,
+    "domain": "accWriting",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The report was long. The report was difficult to read. The report was published last week.",
+    "stem": "Which is the best way to combine the sentences?",
+    "options": [
+      "Published last week, the report was long, difficult to read.",
+      "The report was long, and it was difficult to read, and it was published last week.",
+      "The report, being long and being difficult to read, was published last week.",
+      "The long, difficult report was published last week."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Folding the two descriptions into adjectives is concise and grammatical. Repeating \"and it was\" is wordy, \"being\" is unnecessary, and the last option has a comma error."
+  },
+  {
+    "id": "ACC-WR-033",
+    "section": "writing",
+    "test": 2,
+    "module": 1,
+    "domain": "accWriting",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "My brother and [me] painted the fence on Saturday.",
+    "stem": "Which is the best way to write the bracketed portion?",
+    "options": [
+      "me",
+      "I",
+      "us",
+      "myself"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The pronoun is part of the subject, so \"I\" is correct. Test by removing \"my brother\": \"I painted,\" not \"me painted.\""
+  },
+  {
+    "id": "ACC-WR-034",
+    "section": "writing",
+    "test": 2,
+    "module": 1,
+    "domain": "accWriting",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The waiter brought a steak to the customer that was medium rare.",
+    "stem": "Which revision makes the meaning of the sentence clearest?",
+    "options": [
+      "The waiter brought a steak to the customer, medium rare.",
+      "The waiter brought a steak to the customer that was medium rare.",
+      "The waiter brought the customer a steak that was medium rare.",
+      "The waiter, that was medium rare, brought a steak to the customer."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Placing \"that was medium rare\" directly after \"steak\" makes clear what was medium rare. In the original the clause seems to describe the customer, and the other options are no clearer."
+  },
+  {
+    "id": "ACC-WR-035",
+    "section": "writing",
+    "test": 2,
+    "module": 1,
+    "domain": "accWriting",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The coach said practice ends at six.",
+    "stem": "Which version correctly punctuates the sentence as a direct quotation?",
+    "options": [
+      "The coach said: \"Practice ends at six\".",
+      "The coach said \"practice ends at six\".",
+      "The coach said, \"practice ends at six\".",
+      "The coach said, \"Practice ends at six.\""
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A comma introduces the quotation, the first word of a quoted sentence is capitalized, and the period goes inside the closing quotation mark. Each other version misses at least one of these."
+  },
+  {
+    "id": "ACC-WR-036",
+    "section": "writing",
+    "test": 2,
+    "module": 1,
+    "domain": "accWriting",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Many students assume that cramming the night before a test is effective. [Therefore,] research shows that spreading study over several days produces much better recall.",
+    "stem": "Which transition best fits the bracketed portion?",
+    "options": [
+      "However,",
+      "Likewise,",
+      "Therefore,",
+      "For instance,"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The research contradicts the assumption, so \"However\" signals the contrast. \"Therefore\" implies a result, \"Likewise\" implies agreement, and \"For instance\" implies an example."
+  },
+  {
+    "id": "ACC-WR-037",
+    "section": "writing",
+    "test": 2,
+    "module": 1,
+    "domain": "accWriting",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Due to the fact that the bridge was closed, we took the ferry.",
+    "stem": "Which is the most concise version of the sentence?",
+    "options": [
+      "Due to the fact that the bridge was closed, we took the ferry.",
+      "Owing to the fact that the bridge happened to be closed, we took the ferry.",
+      "The bridge being in a closed state, we took the ferry.",
+      "Because the bridge was closed, we took the ferry."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "\"Because\" says in one word what \"due to the fact that\" says in five. The other versions are equally wordy or awkward."
+  },
+  {
+    "id": "ACC-WR-038",
+    "section": "writing",
+    "test": 2,
+    "module": 1,
+    "domain": "accWriting",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The [Smith's] are hosting the block party this year.",
+    "stem": "Which is the best way to write the bracketed portion?",
+    "options": [
+      "Smith's",
+      "Smiths",
+      "Smiths'",
+      "Smithes"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The sentence needs a simple plural, the family members, not a possessive, so no apostrophe is used. \"Smithes\" is not the correct plural form."
+  },
+  {
+    "id": "ACC-WR-039",
+    "section": "writing",
+    "test": 2,
+    "module": 1,
+    "domain": "accWriting",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Be careful not to [loose] your ticket before the show.",
+    "stem": "Which is the best way to write the bracketed portion?",
+    "options": [
+      "lose",
+      "lost",
+      "loss",
+      "loose"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "\"Lose\" is the verb meaning to misplace. \"Loose\" is an adjective meaning not tight, \"loss\" is a noun, and \"lost\" is the past tense, which does not follow \"to.\""
+  },
+  {
+    "id": "ACC-WR-040",
+    "section": "writing",
+    "test": 2,
+    "module": 1,
+    "domain": "accWriting",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The manager and her assistant [reviews] every application before an interview is scheduled.",
+    "stem": "Which is the best way to write the bracketed portion?",
+    "options": [
+      "has reviewed",
+      "reviews",
+      "review",
+      "is reviewing"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Two subjects joined by \"and\" form a plural subject, which takes the plural verb \"review.\" The other three forms are singular."
+  },
+  {
+    "id": "ACC-WR-041",
+    "section": "writing",
+    "test": 0,
+    "module": 0,
+    "domain": "accWriting",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The nurse spoke [calm] to the frightened child.",
+    "stem": "Which is the best way to write the bracketed portion?",
+    "options": [
+      "calmly",
+      "calm",
+      "more calm",
+      "calmer"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A word that describes how someone spoke is an adverb, \"calmly.\" \"Calm,\" \"more calm\" and \"calmer\" are adjective forms."
+  },
+  {
+    "id": "ACC-WR-042",
+    "section": "writing",
+    "test": 0,
+    "module": 0,
+    "domain": "accWriting",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "My car, [that] I bought used six years ago, has never needed a major repair.",
+    "stem": "Which is the best way to write the bracketed portion?",
+    "options": [
+      "that",
+      "who",
+      "which",
+      "whom"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A clause set off by commas that adds extra information uses \"which.\" \"That\" introduces essential clauses without commas, and \"who\" and \"whom\" refer to people."
+  },
+  {
+    "id": "ACC-WR-043",
+    "section": "writing",
+    "test": 0,
+    "module": 0,
+    "domain": "accWriting",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "(1) Composting cuts household trash dramatically.\n\n(2) Food scraps and yard waste make up about a third of what most families throw away.\n\n(3) ______\n\n(4) After a few months the pile becomes dark, crumbly soil for the garden.",
+    "stem": "Which sentence best fills the blank?",
+    "options": [
+      "Dark soil is prized by gardeners for its rich color.",
+      "Most families throw away about a third of their food.",
+      "Plastic recycling rates vary widely from city to city.",
+      "A simple bin in the backyard turns those scraps into something useful."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Sentence 3 must bridge from the scraps in sentence 2 to the pile in sentence 4. Plastic recycling is off topic, and the other choices repeat an earlier point or jump ahead."
+  },
+  {
+    "id": "ACC-WR-044",
+    "section": "writing",
+    "test": 0,
+    "module": 0,
+    "domain": "accWriting",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "By the time the ambulance arrived, the nurse [has already stopped] the bleeding.",
+    "stem": "Which is the best way to write the bracketed portion?",
+    "options": [
+      "will have already stopped",
+      "had already stopped",
+      "has already stopped",
+      "already stops"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An action completed before another past action takes the past perfect, \"had stopped.\" The present perfect and future forms do not fit a sequence of past events."
+  },
+  {
+    "id": "ACC-WR-045",
+    "section": "writing",
+    "test": 0,
+    "module": 0,
+    "domain": "accWriting",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The flight was delayed three hours, however, we still made the connection.",
+    "stem": "Which version of the sentence is correctly punctuated?",
+    "options": [
+      "The flight was delayed three hours; however, we still made the connection.",
+      "The flight was delayed three hours, however, we still made the connection.",
+      "The flight was delayed three hours, however we still made the connection.",
+      "The flight was delayed three hours however, we still made the connection."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "When \"however\" joins two independent clauses, it needs a semicolon before it and a comma after. A comma alone creates a comma splice."
+  },
+  {
+    "id": "ACC-WR-046",
+    "section": "writing",
+    "test": 0,
+    "module": 0,
+    "domain": "accWriting",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Volunteer firefighters make up most of the fire service in rural America. They train on weekends, respond from their homes or jobs, and receive little or no pay. ______",
+    "stem": "Which sentence is the best conclusion for the paragraph?",
+    "options": [
+      "Large cities have full-time departments with many stations.",
+      "Without them, many small towns would have no fire protection at all.",
+      "Fire trucks are usually painted red so drivers can see them.",
+      "Some volunteers also play in the town band."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A conclusion should wrap up the paragraph's point about the importance of volunteers. The other options introduce unrelated or tangential ideas."
+  },
+  {
+    "id": "ACC-WR-047",
+    "section": "writing",
+    "test": 0,
+    "module": 0,
+    "domain": "accWriting",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Everyone on the team [have] finished the safety course.",
+    "stem": "Which is the best way to write the bracketed portion?",
+    "options": [
+      "have",
+      "were",
+      "are",
+      "has"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "\"Everyone\" is singular and takes \"has.\" The phrase \"on the team\" does not make the subject plural, and \"are\" and \"were\" do not form the needed verb with \"finished.\""
+  },
+  {
+    "id": "ACC-WR-048",
+    "section": "writing",
+    "test": 0,
+    "module": 0,
+    "domain": "accWriting",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The final outcome of the game was that the home team won the game at the end.",
+    "stem": "Which is the most concise version of the sentence?",
+    "options": [
+      "The game ended with the final outcome being a home team win.",
+      "The final outcome of the game was that the home team won the game at the end.",
+      "The home team won the game.",
+      "In the end, the final outcome was a win for the home team at the end."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "\"Final outcome\" and \"at the end\" repeat each other, and \"the game\" appears twice. The core fact is simply that the home team won."
+  },
+  {
+    "id": "ACC-AR-001",
+    "section": "arithmetic",
+    "test": 1,
+    "module": 1,
+    "domain": "accArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is 3,406 - 1,879?",
+    "options": [
+      "1,627",
+      "2,527",
+      "1,527",
+      "1,537"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Subtract with regrouping: 3,406 - 1,879 = 1,527. Check by adding: 1,527 + 1,879 = 3,406. Forgetting to borrow from the hundreds place gives 1,627."
+  },
+  {
+    "id": "ACC-AR-002",
+    "section": "arithmetic",
+    "test": 1,
+    "module": 1,
+    "domain": "accArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is 47 x 36?",
+    "options": [
+      "1,692",
+      "1,592",
+      "1,702",
+      "1,682"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Break 36 into 30 + 6: 47 x 30 = 1,410 and 47 x 6 = 282, and 1,410 + 282 = 1,692. The other choices come from addition slips in the final step."
+  },
+  {
+    "id": "ACC-AR-003",
+    "section": "arithmetic",
+    "test": 1,
+    "module": 1,
+    "domain": "accArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is 1,248 divided by 24?",
+    "options": [
+      "62",
+      "52",
+      "48",
+      "54"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "24 x 50 = 1,200, leaving 48, and 48 is 24 x 2, so the quotient is 50 + 2 = 52. Check: 24 x 52 = 1,248."
+  },
+  {
+    "id": "ACC-AR-004",
+    "section": "arithmetic",
+    "test": 1,
+    "module": 1,
+    "domain": "accArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is 3/4 + 5/6?",
+    "options": [
+      "$1\\frac{1}{2}$",
+      "$\\frac{8}{10}$",
+      "$1\\frac{5}{12}$",
+      "$1\\frac{7}{12}$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Use the common denominator 12: 3/4 = 9/12 and 5/6 = 10/12, so the sum is 19/12 = 1 7/12. Adding numerators and denominators separately to get 8/10 is incorrect."
+  },
+  {
+    "id": "ACC-AR-005",
+    "section": "arithmetic",
+    "test": 1,
+    "module": 1,
+    "domain": "accArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is 2/3 x 9/10?",
+    "options": [
+      "$\\frac{6}{13}$",
+      "$\\frac{3}{5}$",
+      "$\\frac{11}{13}$",
+      "$\\frac{20}{27}$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Multiply across: 2 x 9 = 18 and 3 x 10 = 30, so the product is 18/30 = 3/5. Adding the parts to get 11/13 or 6/13 is not how fractions are multiplied."
+  },
+  {
+    "id": "ACC-AR-006",
+    "section": "arithmetic",
+    "test": 1,
+    "module": 1,
+    "domain": "accArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is 5/8 divided by 1/4?",
+    "options": [
+      "$\\frac{5}{32}$",
+      "$1\\frac{5}{8}$",
+      "2",
+      "$2\\frac{1}{2}$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Dividing by 1/4 is the same as multiplying by 4: 5/8 x 4 = 20/8 = 2 1/2. Multiplying by 1/4 instead gives 5/32."
+  },
+  {
+    "id": "ACC-AR-007",
+    "section": "arithmetic",
+    "test": 1,
+    "module": 1,
+    "domain": "accArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is 7 1/2 - 3 3/4?",
+    "options": [
+      "$3\\frac{3}{4}$",
+      "$4\\frac{3}{4}$",
+      "$4\\frac{1}{4}$",
+      "$3\\frac{1}{4}$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Rewrite 7 1/2 as 7 2/4, then regroup to 6 6/4 and subtract: 6 6/4 - 3 3/4 = 3 3/4. Subtracting whole numbers and fractions without regrouping leads to 4 1/4."
+  },
+  {
+    "id": "ACC-AR-008",
+    "section": "arithmetic",
+    "test": 1,
+    "module": 1,
+    "domain": "accArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is 0.6 x 0.35?",
+    "options": [
+      "2.1",
+      "0.95",
+      "0.21",
+      "0.021"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "6 x 35 = 210, and the factors have a total of three decimal places, so the product is 0.210, or 0.21. Adding 0.6 and 0.35 gives 0.95, which is the sum, not the product."
+  },
+  {
+    "id": "ACC-AR-009",
+    "section": "arithmetic",
+    "test": 1,
+    "module": 1,
+    "domain": "accArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is 12.5 divided by 0.5?",
+    "options": [
+      "250",
+      "6.25",
+      "2.5",
+      "25"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Dividing by 0.5 is the same as doubling: 12.5 x 2 = 25. Multiplying 12.5 by 0.5 gives 6.25, which is the wrong operation."
+  },
+  {
+    "id": "ACC-AR-010",
+    "section": "arithmetic",
+    "test": 1,
+    "module": 1,
+    "domain": "accArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is 4.07 + 12.8 + 0.653?",
+    "options": [
+      "18.183",
+      "17.523",
+      "17.423",
+      "16.523"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Line up the decimal points: 4.070 + 12.800 + 0.653 = 17.523. Misaligning the digits in 0.653 produces the wrong totals."
+  },
+  {
+    "id": "ACC-AR-011",
+    "section": "arithmetic",
+    "test": 1,
+    "module": 1,
+    "domain": "accArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is 15% of 240?",
+    "options": [
+      "36",
+      "32",
+      "24",
+      "40"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "15% = 0.15, and 0.15 x 240 = 36. Another way: 10% of 240 is 24 and 5% is 12, so 15% is 24 + 12 = 36."
+  },
+  {
+    "id": "ACC-AR-012",
+    "section": "arithmetic",
+    "test": 1,
+    "module": 1,
+    "domain": "accArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "18 is what percent of 45?",
+    "options": [
+      "250%",
+      "36%",
+      "40%",
+      "25%"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Divide the part by the whole: 18 / 45 = 0.4, which is 40%. Dividing 45 by 18 instead gives 2.5, or 250%."
+  },
+  {
+    "id": "ACC-AR-013",
+    "section": "arithmetic",
+    "test": 1,
+    "module": 1,
+    "domain": "accArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "30% of a number is 27. What is the number?",
+    "options": [
+      "8.1",
+      "81",
+      "57",
+      "90"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Let the number be n: 0.30 x n = 27, so n = 27 / 0.30 = 90. Check: 30% of 90 is 27. Multiplying 27 by 0.30 gives 8.1, which is the wrong direction."
+  },
+  {
+    "id": "ACC-AR-014",
+    "section": "arithmetic",
+    "test": 1,
+    "module": 1,
+    "domain": "accArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A jacket that normally costs \\$80 is on sale for 25% off. What is the sale price?",
+    "options": [
+      "\\$65",
+      "\\$55",
+      "\\$60",
+      "\\$75"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The discount is 0.25 x 80 = \\$20, and 80 - 20 = \\$60. Subtracting \\$25 instead of 25% gives \\$55."
+  },
+  {
+    "id": "ACC-AR-015",
+    "section": "arithmetic",
+    "test": 1,
+    "module": 1,
+    "domain": "accArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The number of members in a club grew from 50 to 62. What was the percent increase?",
+    "options": [
+      "19%",
+      "24%",
+      "12%",
+      "20%"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The increase is 62 - 50 = 12, and 12 / 50 = 0.24, or 24%. Dividing by the new amount, 62, gives about 19%, which is incorrect."
+  },
+  {
+    "id": "ACC-AR-016",
+    "section": "arithmetic",
+    "test": 1,
+    "module": 1,
+    "domain": "accArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A bag holds red and blue marbles in a ratio of 3 to 5. If there are 40 marbles in all, how many are red?",
+    "options": [
+      "15",
+      "8",
+      "25",
+      "24"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The ratio has 3 + 5 = 8 parts, so each part is 40 / 8 = 5 marbles, and the red marbles are 3 x 5 = 15. The blue marbles are 25."
+  },
+  {
+    "id": "ACC-AR-017",
+    "section": "arithmetic",
+    "test": 1,
+    "module": 1,
+    "domain": "accArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 12-ounce bag of nuts costs \\$3.60. What is the price per ounce?",
+    "options": [
+      "\\$3.00",
+      "\\$0.30",
+      "\\$0.25",
+      "\\$0.33"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Divide the cost by the number of ounces: 3.60 / 12 = 0.30, so each ounce costs \\$0.30."
+  },
+  {
+    "id": "ACC-AR-018",
+    "section": "arithmetic",
+    "test": 1,
+    "module": 1,
+    "domain": "accArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "On a map, 2 inches represents 15 miles. How many miles does 7 inches represent?",
+    "options": [
+      "52.5",
+      "45",
+      "105",
+      "60"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Each inch represents 15 / 2 = 7.5 miles, and 7 x 7.5 = 52.5 miles. Multiplying 7 by 15 gives 105, which forgets that 2 inches, not 1, equals 15 miles."
+  },
+  {
+    "id": "ACC-AR-019",
+    "section": "arithmetic",
+    "test": 1,
+    "module": 1,
+    "domain": "accArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the value of 8 + 3 x (6 - 2)^2 / 4?",
+    "options": [
+      "56",
+      "44",
+      "176",
+      "20"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Parentheses first (6 - 2 = 4), then the exponent (4^2 = 16), then 3 x 16 = 48 and 48 / 4 = 12. Finally 8 + 12 = 20. Adding 8 + 3 first gives 44."
+  },
+  {
+    "id": "ACC-AR-020",
+    "section": "arithmetic",
+    "test": 1,
+    "module": 1,
+    "domain": "accArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which of the following is the greatest?",
+    "options": [
+      "$\\frac{2}{3}$",
+      "68%",
+      "0.7",
+      "0.699"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Convert each to a decimal: 2/3 is about 0.667, 68% is 0.68, and 0.699 is just under 0.7. So 0.7 is the greatest."
+  },
+  {
+    "id": "ACC-AR-021",
+    "section": "arithmetic",
+    "test": 2,
+    "module": 1,
+    "domain": "accArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is 46,871 rounded to the nearest thousand?",
+    "options": [
+      "46,000",
+      "47,000",
+      "50,000",
+      "46,900"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The hundreds digit is 8, which is 5 or more, so the thousands digit rounds up from 6 to 7, giving 47,000. Rounding to the nearest hundred would give 46,900."
+  },
+  {
+    "id": "ACC-AR-022",
+    "section": "arithmetic",
+    "test": 2,
+    "module": 1,
+    "domain": "accArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which is the best estimate of 398 x 51?",
+    "options": [
+      "24,000",
+      "2,000",
+      "200,000",
+      "20,000"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Round 398 to 400 and 51 to 50: 400 x 50 = 20,000. The exact product is 20,298, so 20,000 is the best estimate."
+  },
+  {
+    "id": "ACC-AR-023",
+    "section": "arithmetic",
+    "test": 2,
+    "module": 1,
+    "domain": "accArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A tenant pays \\$1,260 in rent each month. How much rent does the tenant pay in one year?",
+    "options": [
+      "\\$15,120",
+      "\\$15,020",
+      "\\$16,380",
+      "\\$12,600"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Multiply by 12 months: 1,260 x 12 = 12,600 + 2,520 = 15,120. Multiplying by 10 gives \\$12,600, which leaves out two months."
+  },
+  {
+    "id": "ACC-AR-024",
+    "section": "arithmetic",
+    "test": 2,
+    "module": 1,
+    "domain": "accArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Three pizzas are each cut into 8 equal slices. After a party, 19 slices have been eaten. What fraction of the pizza is left?",
+    "options": [
+      "$\\frac{5}{8}$",
+      "$\\frac{1}{5}$",
+      "$\\frac{5}{24}$",
+      "$\\frac{19}{24}$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "There are 3 x 8 = 24 slices in all, and 24 - 19 = 5 slices remain, so 5/24 of the pizza is left. 19/24 is the fraction that was eaten."
+  },
+  {
+    "id": "ACC-AR-025",
+    "section": "arithmetic",
+    "test": 2,
+    "module": 1,
+    "domain": "accArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "At noon the temperature was 14 degrees. By midnight it was -9 degrees. By how many degrees did the temperature fall?",
+    "options": [
+      "23",
+      "14",
+      "5",
+      "25"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The change is 14 - (-9) = 14 + 9 = 23 degrees. Subtracting 9 from 14 instead gives 5, which ignores that -9 is below zero."
+  },
+  {
+    "id": "ACC-AR-026",
+    "section": "arithmetic",
+    "test": 2,
+    "module": 1,
+    "domain": "accArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the value of -7 + 12 - (-4)?",
+    "options": [
+      "23",
+      "1",
+      "-9",
+      "9"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "-7 + 12 = 5, and subtracting -4 is the same as adding 4, so 5 + 4 = 9. Treating -(-4) as -4 gives 1."
+  },
+  {
+    "id": "ACC-AR-027",
+    "section": "arithmetic",
+    "test": 2,
+    "module": 1,
+    "domain": "accArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the greatest common factor of 36 and 48?",
+    "options": [
+      "144",
+      "12",
+      "18",
+      "6"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "36 = 2 x 2 x 3 x 3 and 48 = 2 x 2 x 2 x 2 x 3. The shared factors are 2 x 2 x 3 = 12. 144 is the least common multiple, not the greatest common factor."
+  },
+  {
+    "id": "ACC-AR-028",
+    "section": "arithmetic",
+    "test": 2,
+    "module": 1,
+    "domain": "accArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the least common multiple of 6 and 8?",
+    "options": [
+      "12",
+      "2",
+      "24",
+      "48"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Multiples of 8 are 8, 16, 24, and 24 is the first that is also a multiple of 6. 48 is a common multiple but not the least, and 2 is the greatest common factor."
+  },
+  {
+    "id": "ACC-AR-029",
+    "section": "arithmetic",
+    "test": 2,
+    "module": 1,
+    "domain": "accArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which number is divisible by both 3 and 4?",
+    "options": [
+      "2,310",
+      "2,316",
+      "2,314",
+      "2,324"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A number is divisible by 3 when its digits sum to a multiple of 3 and by 4 when its last two digits form a multiple of 4. For 2,316, the digits sum to 12 and 16 is divisible by 4. 2,310 fails the test for 4 and 2,324 fails the test for 3."
+  },
+  {
+    "id": "ACC-AR-030",
+    "section": "arithmetic",
+    "test": 2,
+    "module": 1,
+    "domain": "accArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Elena buys 5 shirts at \\$12.50 each and pays \\$4.00 for shipping. What is the total cost?",
+    "options": [
+      "\\$82.50",
+      "\\$66.00",
+      "\\$62.50",
+      "\\$66.50"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The shirts cost 5 x 12.50 = \\$62.50, and adding \\$4.00 shipping gives \\$66.50. Leaving out shipping gives \\$62.50."
+  },
+  {
+    "id": "ACC-AR-031",
+    "section": "arithmetic",
+    "test": 2,
+    "module": 1,
+    "domain": "accArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A student's four test scores are 72, 85, 91, and 68. What is the average score?",
+    "options": [
+      "316",
+      "80",
+      "79",
+      "78"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Add the scores: 72 + 85 + 91 + 68 = 316, then divide by 4: 316 / 4 = 79. The sum alone, 316, is not the average."
+  },
+  {
+    "id": "ACC-AR-032",
+    "section": "arithmetic",
+    "test": 2,
+    "module": 1,
+    "domain": "accArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How many inches are in 3.5 feet?",
+    "options": [
+      "42",
+      "48",
+      "36",
+      "35"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "There are 12 inches in a foot, so 3.5 x 12 = 42 inches. Multiplying by 10 gives 35, which uses the wrong conversion."
+  },
+  {
+    "id": "ACC-AR-033",
+    "section": "arithmetic",
+    "test": 2,
+    "module": 1,
+    "domain": "accArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A customer pays for a \\$13.45 purchase with a \\$20 bill. How much change should the customer receive?",
+    "options": [
+      "\\$7.45",
+      "\\$7.55",
+      "\\$6.55",
+      "\\$6.45"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Subtract: 20.00 - 13.45 = 6.55. Counting up works too: 13.45 + 0.55 = 14.00 and 14.00 + 6.00 = 20.00, so the change is \\$6.55."
+  },
+  {
+    "id": "ACC-AR-034",
+    "section": "arithmetic",
+    "test": 2,
+    "module": 1,
+    "domain": "accArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is 0.125 written as a fraction in lowest terms?",
+    "options": [
+      "$\\frac{1}{12}$",
+      "$\\frac{1}{4}$",
+      "$\\frac{3}{25}$",
+      "$\\frac{1}{8}$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "0.125 = 125/1000. Dividing numerator and denominator by 125 gives 1/8. 1/4 is 0.25, and 3/25 is 0.12."
+  },
+  {
+    "id": "ACC-AR-035",
+    "section": "arithmetic",
+    "test": 2,
+    "module": 1,
+    "domain": "accArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is 5 2/3 written as an improper fraction?",
+    "options": [
+      "$\\frac{15}{3}$",
+      "$\\frac{17}{3}$",
+      "$\\frac{10}{3}$",
+      "$\\frac{11}{3}$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Multiply the whole number by the denominator and add the numerator: 5 x 3 + 2 = 17, so the fraction is 17/3. 15/3 forgets to add the 2."
+  },
+  {
+    "id": "ACC-AR-036",
+    "section": "arithmetic",
+    "test": 2,
+    "module": 1,
+    "domain": "accArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which fraction is between 1/3 and 1/2?",
+    "options": [
+      "$\\frac{5}{12}$",
+      "$\\frac{7}{12}$",
+      "$\\frac{2}{3}$",
+      "$\\frac{1}{4}$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Using the common denominator 12, 1/3 = 4/12 and 1/2 = 6/12, so 5/12 lies between them. 7/12 is greater than 1/2 and 1/4 is less than 1/3."
+  },
+  {
+    "id": "ACC-AR-037",
+    "section": "arithmetic",
+    "test": 2,
+    "module": 1,
+    "domain": "accArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Of 240 students at a school, 3/8 ride the bus. Of the students who do not ride the bus, 1/5 walk. How many students walk to school?",
+    "options": [
+      "18",
+      "30",
+      "48",
+      "90"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Bus riders are 3/8 x 240 = 90, so 240 - 90 = 150 students do not ride the bus. One fifth of those walk: 150 / 5 = 30. Taking 1/5 of 240 gives 48, which uses the wrong group."
+  },
+  {
+    "id": "ACC-AR-038",
+    "section": "arithmetic",
+    "test": 2,
+    "module": 1,
+    "domain": "accArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A class has 32 students. If 8 students are absent, what percent of the class is present?",
+    "options": [
+      "75%",
+      "24%",
+      "80%",
+      "25%"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Students present are 32 - 8 = 24, and 24 / 32 = 0.75, or 75%. 25% is the share that is absent."
+  },
+  {
+    "id": "ACC-AR-039",
+    "section": "arithmetic",
+    "test": 2,
+    "module": 1,
+    "domain": "accArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Marcus has \\$50 and buys 3 notebooks at \\$12.75 each. How much money does he have left?",
+    "options": [
+      "\\$11.25",
+      "\\$37.25",
+      "\\$11.75",
+      "\\$12.25"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The notebooks cost 3 x 12.75 = \\$38.25, and 50.00 - 38.25 = \\$11.75. \\$37.25 comes from subtracting only one notebook's price."
+  },
+  {
+    "id": "ACC-AR-040",
+    "section": "arithmetic",
+    "test": 2,
+    "module": 1,
+    "domain": "accArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A car travels 348 miles on 12 gallons of gasoline. How many miles per gallon does the car get?",
+    "options": [
+      "28",
+      "30",
+      "36",
+      "29"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Divide miles by gallons: 348 / 12 = 29. Check: 12 x 29 = 348."
+  },
+  {
+    "id": "ACC-QAS-001",
+    "section": "qas",
+    "test": 1,
+    "module": 1,
+    "domain": "accQAS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Solve for x: 3x - 7 = 20",
+    "options": [
+      "x = 7",
+      "x = 4.33",
+      "x = 9",
+      "x = 13"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Add 7 to both sides to get 3x = 27, then divide by 3: x = 9. Subtracting 7 instead of adding gives 13/3, about 4.33."
+  },
+  {
+    "id": "ACC-QAS-002",
+    "section": "qas",
+    "test": 1,
+    "module": 1,
+    "domain": "accQAS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Solve for x: 2(x + 4) = 5x - 1",
+    "options": [
+      "x = 9",
+      "x = 3",
+      "x = 7/3",
+      "x = -3"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Distribute: 2x + 8 = 5x - 1. Subtract 2x and add 1 to both sides: 9 = 3x, so x = 3. Mis-copying the -1 as +1 (2x + 8 = 5x + 1) gives x = 7/3."
+  },
+  {
+    "id": "ACC-QAS-003",
+    "section": "qas",
+    "test": 1,
+    "module": 1,
+    "domain": "accQAS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Solve the inequality: -3x + 5 > 14",
+    "options": [
+      "x < 3",
+      "x > 3",
+      "x > -3",
+      "x < -3"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Subtract 5: -3x > 9. Dividing both sides by -3 reverses the inequality sign, giving x < -3. Keeping the sign unchanged gives the incorrect x > -3."
+  },
+  {
+    "id": "ACC-QAS-004",
+    "section": "qas",
+    "test": 1,
+    "module": 1,
+    "domain": "accQAS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "If a = -3 and b = 4, what is the value of 2a^2 - b?",
+    "options": [
+      "14",
+      "-22",
+      "-14",
+      "32"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Square a first: (-3)^2 = 9, so 2 x 9 = 18, and 18 - 4 = 14. Treating a^2 as -9 gives -18 - 4 = -22."
+  },
+  {
+    "id": "ACC-QAS-005",
+    "section": "qas",
+    "test": 1,
+    "module": 1,
+    "domain": "accQAS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Simplify: (x^3)(x^5) / x^2",
+    "options": [
+      "x^8",
+      "x^4",
+      "x^15",
+      "x^6"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Add exponents when multiplying: x^3 times x^5 = x^8. Subtract when dividing: x^8 / x^2 = x^6. Multiplying the exponents 3 and 5 gives x^15, which is incorrect."
+  },
+  {
+    "id": "ACC-QAS-006",
+    "section": "qas",
+    "test": 1,
+    "module": 1,
+    "domain": "accQAS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is 0.00047 written in scientific notation?",
+    "options": [
+      "4.7 x 10^4",
+      "47 x 10^-5",
+      "4.7 x 10^-4",
+      "4.7 x 10^-3"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Move the decimal point four places to the right to get 4.7, so the exponent is -4. The first factor must be at least 1 and less than 10, so 47 x 10^-5 is not standard form."
+  },
+  {
+    "id": "ACC-QAS-007",
+    "section": "qas",
+    "test": 1,
+    "module": 1,
+    "domain": "accQAS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the product (3 x 10^5)(2 x 10^3) in scientific notation?",
+    "options": [
+      "6 x 10^8",
+      "6 x 10^2",
+      "5 x 10^8",
+      "6 x 10^15"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Multiply the decimal parts, 3 x 2 = 6, and add the exponents, 5 + 3 = 8, giving 6 x 10^8. Multiplying the exponents gives 10^15, which is incorrect."
+  },
+  {
+    "id": "ACC-QAS-008",
+    "section": "qas",
+    "test": 1,
+    "module": 1,
+    "domain": "accQAS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the slope of the line that passes through the points (2, 5) and (6, 13)?",
+    "options": [
+      "8",
+      "2",
+      "4",
+      "$\\frac{1}{2}$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Slope is the change in y over the change in x: (13 - 5) / (6 - 2) = 8 / 4 = 2. Dividing the x change by the y change gives 1/2."
+  },
+  {
+    "id": "ACC-QAS-009",
+    "section": "qas",
+    "test": 1,
+    "module": 1,
+    "domain": "accQAS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the y-intercept of the line 4x + 2y = 12?",
+    "options": [
+      "12",
+      "3",
+      "6",
+      "-2"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Set x = 0: 2y = 12, so y = 6. Alternatively, solve for y to get y = -2x + 6; the constant term is the y-intercept. The x-intercept is 3."
+  },
+  {
+    "id": "ACC-QAS-010",
+    "section": "qas",
+    "test": 1,
+    "module": 1,
+    "domain": "accQAS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which equation represents a line with slope 3 that passes through the point (0, -2)?",
+    "options": [
+      "y = 2x - 3",
+      "y = 3x + 2",
+      "y = -2x + 3",
+      "y = 3x - 2"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "In slope-intercept form y = mx + b, m is the slope and b is the y-intercept. The point (0, -2) is on the y-axis, so b = -2 and the equation is y = 3x - 2."
+  },
+  {
+    "id": "ACC-QAS-011",
+    "section": "qas",
+    "test": 1,
+    "module": 1,
+    "domain": "accQAS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the mean of the data set 12, 15, 9, 20, 14?",
+    "options": [
+      "14",
+      "12",
+      "15",
+      "13"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Add the values: 12 + 15 + 9 + 20 + 14 = 70, then divide by 5: 70 / 5 = 14. The median of the set is also 14, but 15 and 12 are simply values in the set."
+  },
+  {
+    "id": "ACC-QAS-012",
+    "section": "qas",
+    "test": 1,
+    "module": 1,
+    "domain": "accQAS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the median of the data set 7, 3, 12, 9, 15, 4?",
+    "options": [
+      "9",
+      "8",
+      "7",
+      "8.33"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Order the values: 3, 4, 7, 9, 12, 15. With six values, the median is the average of the middle two: (7 + 9) / 2 = 8. The mean is about 8.33."
+  },
+  {
+    "id": "ACC-QAS-013",
+    "section": "qas",
+    "test": 1,
+    "module": 1,
+    "domain": "accQAS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the mode of the data set 4, 7, 7, 9, 4, 7, 2?",
+    "options": [
+      "7",
+      "4",
+      "2",
+      "9"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The mode is the value that appears most often. 7 appears three times and 4 appears twice, so the mode is 7."
+  },
+  {
+    "id": "ACC-QAS-014",
+    "section": "qas",
+    "test": 1,
+    "module": 1,
+    "domain": "accQAS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A bag contains 5 red, 3 blue, and 2 green marbles. If one marble is drawn at random, what is the probability that it is not red?",
+    "options": [
+      "$\\frac{1}{5}$",
+      "$\\frac{2}{5}$",
+      "$\\frac{1}{2}$",
+      "$\\frac{3}{10}$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "There are 10 marbles, and 3 + 2 = 5 are not red, so the probability is 5/10 = 1/2. 3/10 is the probability of blue alone."
+  },
+  {
+    "id": "ACC-QAS-015",
+    "section": "qas",
+    "test": 1,
+    "module": 1,
+    "domain": "accQAS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two fair coins are flipped. What is the probability that both land heads up?",
+    "options": [
+      "$\\frac{3}{4}$",
+      "$\\frac{1}{2}$",
+      "$\\frac{1}{3}$",
+      "$\\frac{1}{4}$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Each coin lands heads with probability 1/2, and the flips are independent, so multiply: 1/2 x 1/2 = 1/4. The four equally likely outcomes are HH, HT, TH, TT, and only one is HH."
+  },
+  {
+    "id": "ACC-QAS-016",
+    "section": "qas",
+    "test": 1,
+    "module": 1,
+    "domain": "accQAS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A spinner has 8 equal sections numbered 1 through 8. What is the probability that it lands on a prime number?",
+    "options": [
+      "$\\frac{5}{8}$",
+      "$\\frac{1}{2}$",
+      "$\\frac{3}{8}$",
+      "$\\frac{1}{4}$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The primes from 1 to 8 are 2, 3, 5 and 7, which is 4 of the 8 sections, so the probability is 4/8 = 1/2. Counting 1 as prime gives 5/8, but 1 is not prime."
+  },
+  {
+    "id": "ACC-QAS-017",
+    "section": "qas",
+    "test": 1,
+    "module": 1,
+    "domain": "accQAS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A rectangle is 7.5 centimeters long and 4 centimeters wide. What is its area?",
+    "options": [
+      "11.5 square centimeters",
+      "30 square centimeters",
+      "23 square centimeters",
+      "60 square centimeters"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Area is length times width: 7.5 x 4 = 30 square centimeters. 23 centimeters is the perimeter, 2(7.5 + 4)."
+  },
+  {
+    "id": "ACC-QAS-018",
+    "section": "qas",
+    "test": 1,
+    "module": 1,
+    "domain": "accQAS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A rectangle has a length of 12 centimeters and a perimeter of 34 centimeters. What is its width?",
+    "options": [
+      "22 centimeters",
+      "10 centimeters",
+      "5 centimeters",
+      "11 centimeters"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Perimeter = 2(length + width), so 34 = 2(12 + w), 17 = 12 + w, and w = 5. Subtracting 12 from 34 only once gives 22, which forgets that there are two widths."
+  },
+  {
+    "id": "ACC-QAS-019",
+    "section": "qas",
+    "test": 1,
+    "module": 1,
+    "domain": "accQAS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the area of a circle with a radius of 6 inches?",
+    "options": [
+      "6π square inches",
+      "72π square inches",
+      "12π square inches",
+      "36π square inches"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Area = πr^2 = π x 6^2 = 36π square inches. 12π is the circumference, 2πr."
+  },
+  {
+    "id": "ACC-QAS-020",
+    "section": "qas",
+    "test": 1,
+    "module": 1,
+    "domain": "accQAS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A right triangle has legs of 9 feet and 12 feet. What is the length of the hypotenuse?",
+    "options": [
+      "15 feet",
+      "13 feet",
+      "21 feet",
+      "225 feet"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "By the Pythagorean theorem, c^2 = 9^2 + 12^2 = 81 + 144 = 225, so c = 15. Adding the legs gives 21, and 225 is c^2, not c."
+  },
+  {
+    "id": "ACC-QAS-021",
+    "section": "qas",
+    "test": 2,
+    "module": 1,
+    "domain": "accQAS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A triangle has a base of 10 meters and a height of 7 meters. What is its area?",
+    "options": [
+      "35 square meters",
+      "17 square meters",
+      "24 square meters",
+      "70 square meters"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Area of a triangle is one half of base times height: (1/2)(10)(7) = 35 square meters. 70 is the area of a rectangle with those dimensions."
+  },
+  {
+    "id": "ACC-QAS-022",
+    "section": "qas",
+    "test": 2,
+    "module": 1,
+    "domain": "accQAS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A box is 4 inches wide, 5 inches long, and 6 inches tall. What is its volume?",
+    "options": [
+      "60 cubic inches",
+      "120 cubic inches",
+      "148 cubic inches",
+      "15 cubic inches"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Volume of a rectangular box is length x width x height: 4 x 5 x 6 = 120 cubic inches. 148 square inches is the surface area."
+  },
+  {
+    "id": "ACC-QAS-023",
+    "section": "qas",
+    "test": 2,
+    "module": 1,
+    "domain": "accQAS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A line graph shows a town's population as 4,000 in 2000, 5,000 in 2010, and 6,500 in 2020. On average, by how many people per year did the population grow between 2010 and 2020?",
+    "options": [
+      "125",
+      "250",
+      "150",
+      "100"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The increase from 2010 to 2020 is 6,500 - 5,000 = 1,500 people over 10 years, so 1,500 / 10 = 150 per year. The 2000 to 2010 rate was 100 per year."
+  },
+  {
+    "id": "ACC-QAS-024",
+    "section": "qas",
+    "test": 2,
+    "module": 1,
+    "domain": "accQAS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A table lists the number of books read this year by five students: 3, 7, 7, 10, 13. What is the range of the data?",
+    "options": [
+      "7",
+      "13",
+      "8",
+      "10"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Range is the greatest value minus the least: 13 - 3 = 10. 7 is the mode and the median, and 8 is the mean."
+  },
+  {
+    "id": "ACC-QAS-025",
+    "section": "qas",
+    "test": 2,
+    "module": 1,
+    "domain": "accQAS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A bar graph shows lunch votes: pizza 18, tacos 12, salad 6, pasta 4. What fraction of all votes were for tacos?",
+    "options": [
+      "$\\frac{3}{7}$",
+      "$\\frac{1}{4}$",
+      "$\\frac{1}{3}$",
+      "$\\frac{3}{10}$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Total votes are 18 + 12 + 6 + 4 = 40, and 12 / 40 = 3/10. Comparing tacos only to the other choices, 12/28 = 3/7, is not the fraction of all votes."
+  },
+  {
+    "id": "ACC-QAS-026",
+    "section": "qas",
+    "test": 2,
+    "module": 1,
+    "domain": "accQAS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Four workers can finish a job in 9 hours. Working at the same rate, how many hours would 6 workers need?",
+    "options": [
+      "13.5",
+      "6",
+      "4",
+      "7"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The job takes 4 x 9 = 36 worker-hours. With 6 workers, 36 / 6 = 6 hours. Setting up a direct proportion gives 13.5, but more workers means less time."
+  },
+  {
+    "id": "ACC-QAS-027",
+    "section": "qas",
+    "test": 2,
+    "module": 1,
+    "domain": "accQAS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How much simple interest is earned on \\$2,000 invested at 4% per year for 3 years?",
+    "options": [
+      "\\$240",
+      "\\$24",
+      "\\$80",
+      "\\$2,240"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Simple interest = principal x rate x time = 2,000 x 0.04 x 3 = \\$240. \\$80 is one year's interest, and \\$2,240 is the total balance, not the interest."
+  },
+  {
+    "id": "ACC-QAS-028",
+    "section": "qas",
+    "test": 2,
+    "module": 1,
+    "domain": "accQAS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A price rises from \\$80 to \\$100. What is the percent increase?",
+    "options": [
+      "20%",
+      "80%",
+      "25%",
+      "125%"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The increase is \\$20, and 20 / 80 = 0.25, or 25%. Dividing by the new price, 100, gives 20%, which is incorrect for a percent increase."
+  },
+  {
+    "id": "ACC-QAS-029",
+    "section": "qas",
+    "test": 2,
+    "module": 1,
+    "domain": "accQAS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The square root of 50 lies between which two consecutive integers?",
+    "options": [
+      "6 and 7",
+      "24 and 26",
+      "49 and 51",
+      "7 and 8"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "7^2 = 49 and 8^2 = 64, and 50 is between them, so the square root of 50 is between 7 and 8. The pair 49 and 51 brackets 50 itself, not its square root."
+  },
+  {
+    "id": "ACC-QAS-030",
+    "section": "qas",
+    "test": 2,
+    "module": 1,
+    "domain": "accQAS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Simplify: 3(2x - 5) - 4(x + 1)",
+    "options": [
+      "2x - 16",
+      "2x - 11",
+      "2x - 19",
+      "10x - 19"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Distribute: 6x - 15 - 4x - 4. Combine like terms: 6x - 4x = 2x and -15 - 4 = -19, so the result is 2x - 19. Forgetting to distribute the negative to the 1 gives 2x - 11."
+  },
+  {
+    "id": "ACC-QAS-031",
+    "section": "qas",
+    "test": 2,
+    "module": 1,
+    "domain": "accQAS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the value of |-8| - |3|?",
+    "options": [
+      "-5",
+      "5",
+      "-11",
+      "11"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Absolute values are never negative: |-8| = 8 and |3| = 3, so 8 - 3 = 5. Adding them gives 11."
+  },
+  {
+    "id": "ACC-QAS-032",
+    "section": "qas",
+    "test": 2,
+    "module": 1,
+    "domain": "accQAS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "If x + y = 10 and x - y = 4, what is the value of x?",
+    "options": [
+      "7",
+      "14",
+      "6",
+      "3"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Add the two equations: 2x = 14, so x = 7. Then y = 3. Subtracting the equations instead gives 2y = 6, which solves for y."
+  },
+  {
+    "id": "ACC-QAS-033",
+    "section": "qas",
+    "test": 2,
+    "module": 1,
+    "domain": "accQAS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The area of a triangle is given by A = (1/2)bh. Which equation solves for h?",
+    "options": [
+      "h = 2b / A",
+      "h = Ab / 2",
+      "h = A / (2b)",
+      "h = 2A / b"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Multiply both sides by 2 to get 2A = bh, then divide by b: h = 2A / b. Dividing by 2 instead of multiplying gives A / (2b)."
+  },
+  {
+    "id": "ACC-QAS-034",
+    "section": "qas",
+    "test": 2,
+    "module": 1,
+    "domain": "accQAS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A phone plan costs \\$25 per month plus \\$0.10 for each text message. Which expression gives the monthly cost in dollars for t text messages?",
+    "options": [
+      "25.10t",
+      "25t + 0.10",
+      "25 + 0.10t",
+      "0.10(25 + t)"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The fixed cost is 25 and the variable cost is 0.10 per text, so the total is 25 + 0.10t. The option 25t + 0.10 charges \\$25 per text."
+  },
+  {
+    "id": "ACC-QAS-035",
+    "section": "qas",
+    "test": 2,
+    "module": 1,
+    "domain": "accQAS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Solve the inequality: 5x + 2 <= 3x + 10",
+    "options": [
+      "x <= 4",
+      "x <= 6",
+      "x >= 4",
+      "x <= 1.5"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Subtract 3x and 2 from both sides: 2x <= 8, so x <= 4. Since the division is by a positive number, the inequality direction does not change."
+  },
+  {
+    "id": "ACC-QAS-036",
+    "section": "qas",
+    "test": 2,
+    "module": 1,
+    "domain": "accQAS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the value of 2^-3?",
+    "options": [
+      "$\\frac{1}{6}$",
+      "$\\frac{1}{8}$",
+      "-8",
+      "$-\\frac{1}{8}$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A negative exponent means the reciprocal: 2^-3 = 1 / 2^3 = 1/8. The result of a negative exponent on a positive base is positive, not negative."
+  },
+  {
+    "id": "ACC-QAS-037",
+    "section": "qas",
+    "test": 2,
+    "module": 1,
+    "domain": "accQAS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the value of (-2)^4?",
+    "options": [
+      "-16",
+      "16",
+      "8",
+      "-8"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A negative number raised to an even power is positive: (-2)(-2)(-2)(-2) = 16. Multiplying -2 by 4 gives -8, and -16 would be -(2^4)."
+  },
+  {
+    "id": "ACC-QAS-038",
+    "section": "qas",
+    "test": 2,
+    "module": 1,
+    "domain": "accQAS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A survey of 50 students found that 30 play a sport, and 12 of those also play an instrument. If a student who plays a sport is chosen at random, what is the probability that the student also plays an instrument?",
+    "options": [
+      "$\\frac{1}{5}$",
+      "$\\frac{6}{25}$",
+      "$\\frac{3}{5}$",
+      "$\\frac{2}{5}$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The condition narrows the group to the 30 sport players, so the probability is 12 / 30 = 2/5. Using all 50 students gives 12/50 = 6/25, which ignores the condition."
+  },
+  {
+    "id": "ACC-QAS-039",
+    "section": "qas",
+    "test": 2,
+    "module": 1,
+    "domain": "accQAS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The ratio of adults to children at a show is 3 to 7. If there are 210 children, how many people are at the show in total?",
+    "options": [
+      "300",
+      "240",
+      "90",
+      "490"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Each ratio part is 210 / 7 = 30 people, so there are 3 x 30 = 90 adults and 90 + 210 = 300 people in total. 90 is only the number of adults."
+  },
+  {
+    "id": "ACC-QAS-040",
+    "section": "qas",
+    "test": 2,
+    "module": 1,
+    "domain": "accQAS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the distance between the points (1, 2) and (4, 6)?",
+    "options": [
+      "25",
+      "7",
+      "5",
+      "√7"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The horizontal change is 3 and the vertical change is 4, so the distance is √(3^2 + 4^2) = √25 = 5. Adding the changes gives 7, and 25 is the distance squared."
+  },
+  {
+    "id": "ACC-AAF-001",
+    "section": "aaf",
+    "test": 1,
+    "module": 1,
+    "domain": "accAAF",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Solve: x^2 - 5x - 14 = 0",
+    "options": [
+      "x = -7 or x = -2",
+      "x = 7 or x = 2",
+      "x = 7 or x = -2",
+      "x = -7 or x = 2"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Factor: (x - 7)(x + 2) = 0, so x = 7 or x = -2. Check the middle term: -7 + 2 = -5. The pair 7 and 2 would give a middle term of 5x or -9x, not -5x."
+  },
+  {
+    "id": "ACC-AAF-002",
+    "section": "aaf",
+    "test": 1,
+    "module": 1,
+    "domain": "accAAF",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "If $f(x) = 2x^2 - 3x + 1$, what is f(-2)?",
+    "options": [
+      "-13",
+      "15",
+      "3",
+      "11"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Substitute -2: 2(-2)^2 - 3(-2) + 1 = 2(4) + 6 + 1 = 15. Treating -3(-2) as -6 gives 3, which drops the sign change."
+  },
+  {
+    "id": "ACC-AAF-003",
+    "section": "aaf",
+    "test": 1,
+    "module": 1,
+    "domain": "accAAF",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the vertex of the parabola y = (x - 3)^2 + 4?",
+    "options": [
+      "(3, -4)",
+      "(-3, -4)",
+      "(-3, 4)",
+      "(3, 4)"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "In vertex form y = (x - h)^2 + k, the vertex is (h, k). Here h = 3 and k = 4, so the vertex is (3, 4). The sign inside the parentheses is flipped, so (-3, 4) is a common error."
+  },
+  {
+    "id": "ACC-AAF-004",
+    "section": "aaf",
+    "test": 1,
+    "module": 1,
+    "domain": "accAAF",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Expand: (2x - 5)(x + 3)",
+    "options": [
+      "2x^2 + x - 15",
+      "2x^2 - x - 15",
+      "2x^2 - 15",
+      "2x^2 + 11x - 15"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Multiply each term: 2x(x) + 2x(3) - 5(x) - 5(3) = 2x^2 + 6x - 5x - 15 = 2x^2 + x - 15. Forgetting the middle terms gives 2x^2 - 15."
+  },
+  {
+    "id": "ACC-AAF-005",
+    "section": "aaf",
+    "test": 1,
+    "module": 1,
+    "domain": "accAAF",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Factor completely: x^2 - 49",
+    "options": [
+      "(x + 7)(x - 7)",
+      "(x - 7)^2",
+      "(x - 49)(x + 1)",
+      "(x + 7)^2"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "x^2 - 49 is a difference of squares, a^2 - b^2 = (a + b)(a - b), with a = x and b = 7. The square (x - 7)^2 would expand to x^2 - 14x + 49."
+  },
+  {
+    "id": "ACC-AAF-006",
+    "section": "aaf",
+    "test": 1,
+    "module": 1,
+    "domain": "accAAF",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Simplify: √72",
+    "options": [
+      "3√8",
+      "6√2",
+      "36√2",
+      "8√3"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "72 = 36 x 2, and √36 = 6, so √72 = 6√2. The form 3√8 equals √72 but is not fully simplified, since 8 contains the perfect square 4."
+  },
+  {
+    "id": "ACC-AAF-007",
+    "section": "aaf",
+    "test": 1,
+    "module": 1,
+    "domain": "accAAF",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An account grows according to $A(t) = 500(1.06)^t$, where t is in years. To the nearest cent, what is the balance after 2 years?",
+    "options": [
+      "\\$530.00",
+      "\\$560.00",
+      "\\$561.80",
+      "\\$1,060.00"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A(2) = 500(1.06)^2 = 500 x 1.1236 = 561.80. Adding 6% twice without compounding gives \\$560.00, which misses the interest on the first year's interest."
+  },
+  {
+    "id": "ACC-AAF-008",
+    "section": "aaf",
+    "test": 1,
+    "module": 1,
+    "domain": "accAAF",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Solve for x: 2^x = 32",
+    "options": [
+      "x = 4",
+      "x = 6",
+      "x = 16",
+      "x = 5"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Write 32 as a power of 2: 2^5 = 32, so x = 5. Dividing 32 by 2 to get 16 confuses the exponent with division."
+  },
+  {
+    "id": "ACC-AAF-009",
+    "section": "aaf",
+    "test": 1,
+    "module": 1,
+    "domain": "accAAF",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the domain of $f(x) = 1 / (x - 4)$?",
+    "options": [
+      "All real numbers except 0",
+      "All real numbers except 4",
+      "All real numbers greater than 4",
+      "All real numbers except -4"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The denominator cannot be zero, and x - 4 = 0 when x = 4, so 4 is excluded and every other real number is allowed. The value -4 makes the denominator -8, which is fine."
+  },
+  {
+    "id": "ACC-AAF-010",
+    "section": "aaf",
+    "test": 1,
+    "module": 1,
+    "domain": "accAAF",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "If $f(x) = x + 3$ and $g(x) = x^2$, what is f(g(2))?",
+    "options": [
+      "25",
+      "13",
+      "10",
+      "7"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Work from the inside out: g(2) = 2^2 = 4, then f(4) = 4 + 3 = 7. Doing the functions in the other order, g(f(2)) = (5)^2 = 25."
+  },
+  {
+    "id": "ACC-AAF-011",
+    "section": "aaf",
+    "test": 2,
+    "module": 1,
+    "domain": "accAAF",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Simplify for x not equal to -3: (x^2 - 9) / (x + 3)",
+    "options": [
+      "x - 3",
+      "x^2 - 3",
+      "x - 9",
+      "x + 3"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Factor the numerator as a difference of squares, (x + 3)(x - 3), then cancel the common factor (x + 3) to leave x - 3. Cancelling the x^2 with the x or the 9 with the 3 term by term is not valid."
+  },
+  {
+    "id": "ACC-AAF-012",
+    "section": "aaf",
+    "test": 2,
+    "module": 1,
+    "domain": "accAAF",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Solve for x: √(x + 5) = 4",
+    "options": [
+      "x = 21",
+      "x = -1",
+      "x = 11",
+      "x = 3"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Square both sides: x + 5 = 16, so x = 11. Check: √16 = 4. Setting x + 5 = 4 gives -1, which forgets to square."
+  },
+  {
+    "id": "ACC-AAF-013",
+    "section": "aaf",
+    "test": 2,
+    "module": 1,
+    "domain": "accAAF",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In a right triangle, the side opposite angle θ is 3 units and the hypotenuse is 5 units. What is sin θ?",
+    "options": [
+      "$\\frac{5}{3}$",
+      "$\\frac{4}{5}$",
+      "$\\frac{3}{4}$",
+      "$\\frac{3}{5}$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Sine is opposite over hypotenuse: 3/5. The adjacent side is 4, so 4/5 is cos θ and 3/4 is tan θ."
+  },
+  {
+    "id": "ACC-AAF-014",
+    "section": "aaf",
+    "test": 2,
+    "module": 1,
+    "domain": "accAAF",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Convert 90 degrees to radians.",
+    "options": [
+      "90π",
+      "π",
+      "π/2",
+      "π/4"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Multiply by π/180: 90 x π/180 = π/2 radians. A full 180 degrees is π radians, so 90 degrees is half of that."
+  },
+  {
+    "id": "ACC-AAF-015",
+    "section": "aaf",
+    "test": 2,
+    "module": 1,
+    "domain": "accAAF",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How many real solutions does the equation x^2 + 4x + 7 = 0 have?",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The discriminant b^2 - 4ac = 16 - 28 = -12 is negative, so there are no real solutions. A positive discriminant would give 2 and a zero discriminant would give 1."
+  },
+  {
+    "id": "ACC-AAF-016",
+    "section": "aaf",
+    "test": 2,
+    "module": 1,
+    "domain": "accAAF",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "If $f(x) = 3x - 6$, what is the inverse function f^-1(x)?",
+    "options": [
+      "f^-1(x) = 3x + 6",
+      "f^-1(x) = (x + 6) / 3",
+      "f^-1(x) = (x - 6) / 3",
+      "f^-1(x) = 1 / (3x - 6)"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Swap x and y in y = 3x - 6 to get x = 3y - 6, then solve: x + 6 = 3y, so y = (x + 6) / 3. The reciprocal 1 / (3x - 6) is not the inverse function."
+  },
+  {
+    "id": "ACC-AAF-017",
+    "section": "aaf",
+    "test": 2,
+    "module": 1,
+    "domain": "accAAF",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the remainder when x^3 - 2x + 5 is divided by x - 2?",
+    "options": [
+      "-3",
+      "5",
+      "9",
+      "1"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "By the remainder theorem, the remainder is P(2) = 2^3 - 2(2) + 5 = 8 - 4 + 5 = 9. Using P(-2) gives -8 + 4 + 5 = 1, which is the remainder for x + 2."
+  },
+  {
+    "id": "ACC-AAF-018",
+    "section": "aaf",
+    "test": 2,
+    "module": 1,
+    "domain": "accAAF",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the value of log base 3 of 81?",
+    "options": [
+      "9",
+      "3",
+      "27",
+      "4"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The logarithm asks what power of 3 gives 81: 3^4 = 81, so the answer is 4. 27 is 3^3 and 9 is 3^2."
+  },
+  {
+    "id": "ACC-AAF-019",
+    "section": "aaf",
+    "test": 2,
+    "module": 1,
+    "domain": "accAAF",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the positive solution of x^2 = 2x + 24?",
+    "options": [
+      "6",
+      "12",
+      "4",
+      "8"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Rewrite as x^2 - 2x - 24 = 0 and factor: (x - 6)(x + 4) = 0, so x = 6 or x = -4. The positive solution is 6."
+  },
+  {
+    "id": "ACC-AAF-020",
+    "section": "aaf",
+    "test": 2,
+    "module": 1,
+    "domain": "accAAF",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The height in feet of a ball t seconds after it is thrown is $h(t) = -16t^2 + 64t$. What is the maximum height the ball reaches?",
+    "options": [
+      "48 feet",
+      "64 feet",
+      "32 feet",
+      "128 feet"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The vertex is at t = -b / (2a) = -64 / (2 x -16) = 2 seconds. Then h(2) = -16(4) + 64(2) = -64 + 128 = 64 feet. The ball lands at t = 4, which is where $h(t) = 0$, not the peak."
+  }
+]

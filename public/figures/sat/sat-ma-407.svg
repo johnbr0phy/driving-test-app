@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" font-family="sans-serif" font-size="13" fill="#000">
+<rect width="320" height="240" fill="#fff"/>
+<text x="180" y="16" text-anchor="middle" font-weight="bold">Daily Pool Attendance</text>
+<g stroke="#bbb" stroke-width="1">
+<path d="M60 157.5H300M60 115H300M60 72.5H300M60 30H300"/>
+</g>
+<g fill="#ddd" stroke="#000" stroke-width="1.5">
+<rect x="68" y="98" width="24" height="102"/>
+<rect x="108" y="68.25" width="24" height="131.75"/>
+<rect x="148" y="123.5" width="24" height="76.5"/>
+<rect x="188" y="68.25" width="24" height="131.75"/>
+<rect x="228" y="89.5" width="24" height="110.5"/>
+<rect x="268" y="51.25" width="24" height="148.75"/>
+</g>
+<g stroke="#000" stroke-width="1.5">
+<line x1="60" y1="30" x2="60" y2="200"/>
+<line x1="60" y1="200" x2="300" y2="200"/>
+</g>
+<g text-anchor="middle">
+<text x="80" y="93">24</text>
+<text x="120" y="63">31</text>
+<text x="160" y="118">18</text>
+<text x="200" y="63">31</text>
+<text x="240" y="84">26</text>
+<text x="280" y="46">35</text>
+<text x="80" y="216">Mon</text>
+<text x="120" y="216">Tue</text>
+<text x="160" y="216">Wed</text>
+<text x="200" y="216">Thu</text>
+<text x="240" y="216">Fri</text>
+<text x="280" y="216">Sat</text>
+<text x="180" y="234">Day</text>
+</g>
+<g text-anchor="end">
+<text x="54" y="204">0</text>
+<text x="54" y="162">10</text>
+<text x="54" y="119">20</text>
+<text x="54" y="77">30</text>
+<text x="54" y="34">40</text>
+</g>
+<text transform="rotate(-90)" x="-115" y="16" text-anchor="middle">Number of swimmers</text>
+</svg>

@@ -1,0 +1,412 @@
+{
+  "stimuli": [
+    {
+      "id": "ACT-RD-P7",
+      "title": "Passage III: Humanities",
+      "text": "**Passage A**\n\nI have spent thirty years carrying poems across the border between languages, and I have come to believe that the first thing a translator must save is the thing most translators throw away. A poem is not a message wrapped in sound. It is a shape made of sound, and the meaning lives inside the shape the way a melody lives inside its rhythm. Strip a sonnet of its fourteen lines, its rhymes, its steady pulse, and what remains may be accurate, but it is a summary, not a poem.\n\nMy critics say that keeping meter forces a translator to lie. To make a line scan, they argue, I will reach for a word that fits the beat rather than the word the poet chose, and the reader will never know what was lost. I admit the charge. I have replaced a river with a stream because the stream had one syllable fewer, and I have moved a sunset from the end of a line to the beginning. But the reader of a prose translation loses something too, and loses it silently. She never hears that the poet's lines marched like soldiers, or that a rhyme arrived like a door closing. Those are not decorations. In a poem written to be spoken, they are the argument.\n\nConsider what we actually remember of poetry. Few people can recite the sense of a poem they love; nearly everyone can recite the sound. The ear stores rhythm before the mind stores paraphrase. A translation that cannot be remembered has failed at the one task that gives poetry its strange power to survive, and a translation that gives up meter is one that gives up memory.\n\nI do not claim that form can always be rescued. Some meters have no home in English, and a translator who forces them produces a limp. But the attempt should be the default, not the exception, and when I must choose between a word that is exact and a line that sings, I choose the song. The poet, after all, made the same choice first.\n\n**Passage B**\n\nThe poem I translated most recently has, in its original language, a rhyme scheme so intricate that scholars have written whole books about it. My translation has no rhyme at all. I expect to be scolded for this, and I would like to explain, before the scolding begins, why I believe I served the poet better than a rhymed version could have.\n\nA poem's sounds are not transferable. The rhymes a poet found were found in her language, among her words, under the pressure of her particular sentences; they were discoveries, not decisions. When a translator rhymes in English, he is not reproducing those discoveries. He is making new ones, and to make them he must bend the sense of each line toward whatever English words happen to chime. The result is a poem that sounds finished and says something slightly, invisibly different. I have read elegant rhymed translations in which the beloved's eyes change color between the original and the English because \"gray\" rhymed and \"green\" did not.\n\nWhat can be carried across, with care, is what the poem says: its images, its turns of thought, the order in which it reveals itself. A reader who meets the poet's actual images in plain English lines has met the poet. A reader who meets a graceful imitation in rhymed English has met the translator, wearing the poet's coat.\n\nI do not pretend that this approach costs nothing. Readers who want to know how the original felt in the mouth will have to learn the language, and I think that is as it should be. The formalists speak of saving the song, but the song cannot be saved; it can only be replaced, and a replacement that pretends to be the original is a kind of forgery. My translations are honest about what they are. They are the poem's meaning, set down as clearly as I can manage, with a note at the bottom of the page describing the music the reader is not hearing. That note is not a confession of failure. It is the only part of the sound that can cross the border intact."
+    },
+    {
+      "id": "ACT-RD-P8",
+      "title": "Passage IV: Natural Science",
+      "text": "Each autumn, a bar-tailed godwit leaves Alaska and flies without stopping to New Zealand, a journey of roughly eleven thousand kilometers over open ocean. It has no map, no coastline to follow for most of the way, and, in the case of a young bird making the trip for the first time, no experience. How such animals find their way has occupied biologists for more than a century, and the answer that has emerged is not a single sense but a set of them, used in combination and weighed against one another. Three of those senses are reasonably well established: a sensitivity to the Earth's magnetic field, a learned map of the night sky, and a memory for landmarks. How each works, and how much each contributes, remains in several respects unsettled.\n\nMagnetic sensing is the most studied and, oddly, the least understood. In the 1960s, experiments with European robins kept in circular cages during migration season showed that the birds hopped persistently toward their migratory direction, and that reversing the surrounding magnetic field with coils reversed their hopping. Later work showed that the birds respond not to the field's polarity, north versus south, but to its inclination, the angle at which the field lines dip toward the ground, which grows steeper toward the poles. Such a compass can tell a bird \"poleward\" or \"equatorward\" but cannot by itself tell north from south. What is still debated is the receptor. One hypothesis holds that light-sensitive proteins called cryptochromes in the retina undergo chemical reactions whose outcomes depend on the field's orientation, which would explain the curious finding that the magnetic compass fails under certain colors of light and in darkness. Another proposes magnetite crystals in the beak. Evidence for cryptochromes has grown, but no experiment has yet shown the complete chain from protein to behavior, and researchers describe the mechanism as probable rather than proven.\n\nThe star compass is better understood, because it was discovered in an unusually clean experiment. Indigo buntings raised under a planetarium sky learned to orient by it, and when the experimenters made the artificial sky rotate around a star other than Polaris, the birds treated that star as north. Young buntings, then, do not inherit a star map. They inherit the tendency to find the center of rotation in the night sky and to use it as a fixed point, and they learn the surrounding patterns during their first summer. Birds raised with no view of the sky at all did not orient by the stars later, though they could still use the magnetic field. The result suggests that the star compass is learned early in life and is not required for the magnetic one to work.\n\nLandmarks are the sense closest to our own, and the hardest to study in the wild, because a bird's use of them can only be inferred from where it flies. Tracking studies using tiny transmitters show that adult birds of many species follow the same coastlines, river valleys and mountain passes year after year, and that older birds correct for displacement far better than juveniles do. When experimenters moved white-crowned sparrows several thousand kilometers east of their usual route, the adults altered course toward their normal wintering grounds, while first-year birds flew in the inherited direction and ended up far off target. Adults, it appears, carry a map built from experience; juveniles carry only a compass heading and a distance.\n\nThe picture that results is one of layered systems rather than a single master sense. A young bird leaves on its first migration with inherited instructions, roughly a direction and a duration, and with compasses that can hold that direction by day and by night. Over the following seasons it adds landmarks and, perhaps, a sense of position drawn from the magnetic field's gradual change in strength, though whether birds actually read a magnetic map, as opposed to a magnetic compass, is one of the field's open arguments. It is also unclear how the systems are ranked when they disagree. Some experiments suggest that birds recalibrate their magnetic compass against the sunset each evening; others find the reverse. The disagreements may reflect genuine differences among species, or differences in method, and the honest summary is that the question is unresolved. What is not in doubt is that the godwit arrives."
+    }
+  ],
+  "questions": [
+    {
+      "id": "ACT-RD-219",
+      "section": "reading",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-RD-P7",
+      "domain": "keyIdeas",
+      "skill": "Main idea",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "The main purpose of Passage A is to",
+      "options": [
+        "describe the author's thirty-year career as a literary translator.",
+        "explain why certain meters cannot be reproduced in English.",
+        "compare how readers remember poems with how they remember prose.",
+        "argue that a translator should preserve a poem's meter and sound even when doing so changes some of its literal meaning."
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The first paragraph announces that the thing a translator \"must save\" is the poem's shape of sound, the second admits that keeping meter changes words and defends the choice anyway, and the last paragraph concludes, \"I choose the song.\" The career (A) is mentioned only in the opening sentence, and the meters that have \"no home in English\" (B) are a one-sentence concession, not the purpose. The passage discusses how poems are remembered (C) but never compares them with prose."
+    },
+    {
+      "id": "ACT-RD-220",
+      "section": "reading",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-RD-P7",
+      "domain": "keyIdeas",
+      "skill": "Supporting details",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "According to Passage A, a reader of a prose translation loses",
+      "options": [
+        "the poem's central images and turns of thought.",
+        "the ability to compare the translation with the original.",
+        "the words the poet actually chose in the original language.",
+        "the experience of the poem's rhythm and rhyme, without being aware of the loss."
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "In the second paragraph the author says the reader of a prose translation \"loses something too, and loses it silently\": she \"never hears that the poet's lines marched like soldiers, or that a rhyme arrived like a door closing.\" The loss is of sound, and it goes unnoticed. Losing the poet's chosen words (C) is the charge the author admits against his own metrical method, not the prose translation's flaw, and images (A) are the concern of Passage B."
+    },
+    {
+      "id": "ACT-RD-221",
+      "section": "reading",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-RD-P7",
+      "domain": "craft",
+      "skill": "Interpreting phrases",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "When the author of Passage A says of a poem's rhythm and rhyme that \"they are the argument\" (second paragraph), he most likely means that these features",
+      "options": [
+        "are the parts of a poem that critics argue about most often.",
+        "are central to what the poem communicates rather than ornaments added to it.",
+        "make a poem more persuasive than a prose statement of the same idea.",
+        "are the only elements of a poem that can be translated accurately."
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The sentence follows \"Those are not decorations,\" so \"they are the argument\" sets the poem's sound against the idea that it is mere ornament; the sound is part of the poem's substance. The author never claims that sound is easy to translate (D); in the fourth paragraph he admits that some meters cannot be rescued. Choices A and C read \"argument\" too literally, as a dispute or as persuasion."
+    },
+    {
+      "id": "ACT-RD-222",
+      "section": "reading",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-RD-P7",
+      "domain": "keyIdeas",
+      "skill": "Argument and evidence",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The author of Passage A concedes which of the following points to his critics?",
+      "options": [
+        "Keeping meter sometimes requires him to alter the words the poet actually wrote.",
+        "Readers rarely remember the sound of a poem they love.",
+        "A prose translation preserves more of a poem than a metrical one does.",
+        "Meter can be preserved only in the poem's original language."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "After stating the critics' charge that keeping meter forces him to reach for \"a word that fits the beat rather than the word the poet chose,\" the author says, \"I admit the charge,\" and gives examples: a river became a stream and a sunset changed position. He then argues that prose translation has a loss of its own, so he does not grant C. Choice B contradicts the third paragraph, and choice D contradicts his whole practice."
+    },
+    {
+      "id": "ACT-RD-223",
+      "section": "reading",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-RD-P7",
+      "domain": "keyIdeas",
+      "skill": "Supporting details",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "According to Passage B, the central problem with rhyming a translation in English is that the translator",
+      "options": [
+        "must bend the sense of each line toward whatever English words happen to rhyme.",
+        "cannot find enough English words that rhyme with one another.",
+        "is forced to shorten the poem to make the rhyme scheme fit.",
+        "produces a version that scholars refuse to study."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The second paragraph states that a rhyming translator \"must bend the sense of each line toward whatever English words happen to chime,\" producing a poem that \"says something slightly, invisibly different.\" The problem is distortion of meaning, not a shortage of rhymes (B) or a shorter poem (C). Scholars are mentioned only as having written about the original's rhyme scheme (D)."
+    },
+    {
+      "id": "ACT-RD-224",
+      "section": "reading",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-RD-P7",
+      "domain": "craft",
+      "skill": "Author's purpose",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The author of Passage B mentions the beloved's eyes changing color (second paragraph) primarily in order to",
+      "options": [
+        "show that translators often misunderstand the original language.",
+        "suggest that details such as eye color matter little to a poem's meaning.",
+        "give a concrete example of how the search for a rhyme can alter what a poem says.",
+        "praise the elegance of a particular rhymed translation she admires."
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The example follows the claim that a rhymed version \"says something slightly, invisibly different\": the eyes changed from green to gray only \"because 'gray' rhymed and 'green' did not.\" It is an illustration of rhyme distorting sense. The author calls such translations \"elegant,\" but the point is criticism, not praise (D), and she treats the changed detail as a real loss, not a trivial one (B)."
+    },
+    {
+      "id": "ACT-RD-225",
+      "section": "reading",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-RD-P7",
+      "domain": "keyIdeas",
+      "skill": "Inference",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "It can reasonably be inferred that the author of Passage B adds a note describing the original poem's music because she",
+      "options": [
+        "expects readers to use the note as a first step toward learning the original language.",
+        "wants readers to see which English rhymes she tried and rejected.",
+        "regards an accurate description of the sound as the only aspect of it that a translation can convey without distortion.",
+        "hopes to satisfy critics who would otherwise demand a rhymed version."
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The final paragraph says the song \"cannot be saved; it can only be replaced,\" and that the note \"is the only part of the sound that can cross the border intact.\" Since any attempted reproduction would be a replacement she considers a kind of forgery, the note is her way of conveying the sound honestly. She does tell readers to learn the language if they want the sound itself, but she does not present the note as a lesson (A), and she expects to be scolded rather than to satisfy the formalists (D)."
+    },
+    {
+      "id": "ACT-RD-226",
+      "section": "reading",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-RD-P7",
+      "domain": "integration",
+      "skill": "Comparing passages",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The authors of both passages would most likely agree that",
+      "options": [
+        "a translation without meter cannot be remembered by readers.",
+        "reproducing a poem's rhyme or meter in English requires the translator to change some of what the poem says.",
+        "a note at the bottom of the page is the best way to convey a poem's music.",
+        "readers who want to experience a poem fully should learn its original language."
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Passage A admits the charge that meter forces word changes (\"I have replaced a river with a stream\"), and Passage B says a rhyming translator \"must bend the sense of each line.\" They agree about the cost and disagree about whether it is worth paying. Only Passage A links meter to memory (A), and only Passage B recommends the explanatory note (C) and learning the language (D)."
+    },
+    {
+      "id": "ACT-RD-227",
+      "section": "reading",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-RD-P7",
+      "domain": "integration",
+      "skill": "Comparing passages",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "How would the author of Passage B most likely respond to the claim in Passage A that \"a translation that gives up meter is one that gives up memory\"?",
+      "options": [
+        "By denying that readers remember the sound of a poem more readily than its sense.",
+        "By pointing out that most poems were never intended to be memorized.",
+        "By conceding that her own translations are not meant to be read aloud.",
+        "By arguing that the music a reader remembers from a rhymed translation is the translator's creation rather than the poet's."
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Passage B's core claim is that a poem's sounds \"are not transferable\": English rhymes are new discoveries, and a reader of a rhymed version \"has met the translator, wearing the poet's coat.\" She would therefore reply that whatever the reader memorizes is the translator's music, not the original's. She never disputes how readers remember poems (A) or discusses reading aloud (C), and nothing in the passage supports B."
+    },
+    {
+      "id": "ACT-RD-228",
+      "section": "reading",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-RD-P8",
+      "domain": "keyIdeas",
+      "skill": "Main idea",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "The main purpose of the passage is to",
+      "options": [
+        "argue that magnetic sensing is the most important navigational sense in migratory birds.",
+        "describe the several senses migratory birds use to find their way and indicate how well each is understood.",
+        "explain how the bar-tailed godwit completes its flight from Alaska to New Zealand.",
+        "trace the history of planetarium experiments on bird navigation."
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The first paragraph names three senses that are \"reasonably well established\" and warns that how each works \"remains in several respects unsettled\"; the next three paragraphs take the senses in turn, each with a note on the state of the evidence, and the last describes them as \"layered systems.\" The godwit (C) frames the passage but its route is never explained, and the planetarium experiment (D) is one example within the discussion of the star compass."
+    },
+    {
+      "id": "ACT-RD-229",
+      "section": "reading",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-RD-P8",
+      "domain": "keyIdeas",
+      "skill": "Supporting details",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "According to the passage, the experiments with European robins in the 1960s showed that",
+      "options": [
+        "the birds hopped at random when kept in circular cages.",
+        "the birds could not orient without a view of the night sky.",
+        "reversing the surrounding magnetic field reversed the direction in which the birds hopped.",
+        "magnetite crystals in the birds' beaks responded to the field."
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The second paragraph reports that the caged robins \"hopped persistently toward their migratory direction, and that reversing the surrounding magnetic field with coils reversed their hopping.\" The hopping was directed, not random (A). Magnetite in the beak (D) is a later hypothesis about the receptor, not a finding of these experiments, and the sky (B) belongs to the bunting study."
+    },
+    {
+      "id": "ACT-RD-230",
+      "section": "reading",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-RD-P8",
+      "domain": "keyIdeas",
+      "skill": "Supporting details",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The passage states that a bird's inclination compass cannot, by itself,",
+      "options": [
+        "distinguish north from south.",
+        "tell the bird whether it is moving toward the poles or toward the equator.",
+        "function in birds that have never migrated.",
+        "operate when the bird is in motion."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The second paragraph explains that the birds respond to the field's inclination rather than its polarity, so the compass \"can tell a bird 'poleward' or 'equatorward' but cannot by itself tell north from south.\" Choice B describes exactly what the compass can do. The passage says nothing about the compass depending on prior migration (C) or on the bird being still (D)."
+    },
+    {
+      "id": "ACT-RD-231",
+      "section": "reading",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-RD-P8",
+      "domain": "craft",
+      "skill": "Word meaning in context",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "As it is used in the third paragraph, the word \"clean\" most nearly means",
+      "options": [
+        "sanitary.",
+        "newly designed.",
+        "morally honest.",
+        "free of complicating factors."
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The author calls the bunting study \"an unusually clean experiment\" and then describes a planetarium in which the experimenters controlled the entire sky and could rotate it around a chosen star, so that the birds' response had only one likely cause. \"Clean\" here means uncluttered by other explanations, which is why the star compass is \"better understood.\" Sanitation (A) and honesty (C) are unrelated, and nothing suggests the design was new (B)."
+    },
+    {
+      "id": "ACT-RD-232",
+      "section": "reading",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-RD-P8",
+      "domain": "keyIdeas",
+      "skill": "Supporting details",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "The passage indicates that when young indigo buntings were raised under a planetarium sky that rotated around a star other than Polaris, the birds",
+      "options": [
+        "failed to orient in any consistent direction.",
+        "oriented toward Polaris anyway.",
+        "treated the star at the center of rotation as north.",
+        "switched to using the magnetic field."
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The third paragraph says that when the artificial sky rotated \"around a star other than Polaris, the birds treated that star as north,\" which showed that buntings inherit only \"the tendency to find the center of rotation in the night sky.\" They did orient consistently (A), just toward the wrong star. Choice D describes the birds raised with no view of the sky, a different group."
+    },
+    {
+      "id": "ACT-RD-233",
+      "section": "reading",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-RD-P8",
+      "domain": "craft",
+      "skill": "Author's purpose",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The author describes the displacement of white-crowned sparrows (fourth paragraph) primarily in order to",
+      "options": [
+        "illustrate that adult birds carry a map built from experience while first-year birds do not.",
+        "show that landmarks are easier to study than the other senses.",
+        "demonstrate that birds cannot navigate once they are moved off their usual route.",
+        "argue that transmitters disturb the birds' natural behavior."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The experiment is introduced as evidence that \"older birds correct for displacement far better than juveniles do,\" and the paragraph concludes from it that \"Adults, it appears, carry a map built from experience; juveniles carry only a compass heading and a distance.\" The adults did navigate after displacement, so choice C is wrong. The author calls landmarks \"the hardest to study in the wild,\" the opposite of B, and never criticizes transmitters (D)."
+    },
+    {
+      "id": "ACT-RD-234",
+      "section": "reading",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-RD-P8",
+      "domain": "keyIdeas",
+      "skill": "Inference",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "It can reasonably be inferred from the passage that a bird on its first migration relies mainly on",
+      "options": [
+        "landmarks it memorized during its first summer.",
+        "a map of its position read from the strength of the magnetic field.",
+        "following the routes taken by experienced adults.",
+        "an inherited direction and duration, held by its compasses."
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The final paragraph says a young bird departs \"with inherited instructions, roughly a direction and a duration, and with compasses that can hold that direction,\" and the fourth paragraph says juveniles \"carry only a compass heading and a distance.\" Landmarks (A) are added \"over the following seasons,\" and a magnetic map (B) is described as an open argument, not an established juvenile ability. The passage never mentions juveniles following adults (C)."
+    },
+    {
+      "id": "ACT-RD-235",
+      "section": "reading",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-RD-P8",
+      "domain": "craft",
+      "skill": "Interpreting phrases",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "The final sentence of the passage, \"What is not in doubt is that the godwit arrives,\" primarily serves to",
+      "options": [
+        "suggest that the unresolved scientific questions are of little practical importance.",
+        "indicate that the godwit's route has recently been mapped in full.",
+        "contrast the certainty of the birds' success with the uncertainty about how they achieve it.",
+        "argue that the godwit relies on a different sense from the one other species use."
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The last paragraph piles up open questions (whether birds read a magnetic map, how the senses are ranked, why experiments disagree) and ends with \"the honest summary is that the question is unresolved.\" The final sentence then returns to the opening example and sets one certainty against all that doubt. The author treats the open questions seriously throughout, so choice A misreads the tone, and nothing supports B or D."
+    },
+    {
+      "id": "ACT-RD-236",
+      "section": "reading",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-RD-P8",
+      "domain": "integration",
+      "skill": "Textual evidence",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which of the following statements from the passage best supports the author's claim that the mechanism of magnetic sensing is \"probable rather than proven\"?",
+      "options": [
+        "\"reversing the surrounding magnetic field with coils reversed their hopping\"",
+        "\"the birds respond not to the field's polarity, north versus south, but to its inclination\"",
+        "\"no experiment has yet shown the complete chain from protein to behavior\"",
+        "\"Birds raised with no view of the sky at all did not orient by the stars later\""
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The claim concerns the receptor, the cryptochrome hypothesis, and the sentence containing choice C states exactly why it remains unproven: the chain from protein to behavior has not been demonstrated. Choices A and B are findings about what the birds do, which are well established and are not in question. Choice D concerns the star compass, a different sense."
+    }
+  ]
+}

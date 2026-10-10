@@ -41,7 +41,7 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "WebApplication",
-      name: "TigerTest - Free HESI A2 Practice Tests",
+      name: "TigerTest - Free HESI A2 Full Battery on a Computer",
       description,
       url: `${siteUrl}/hesi-a2-practice-test`,
       applicationCategory: "EducationalApplication",
@@ -49,10 +49,11 @@ const jsonLd = {
       offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
       featureList: [
         "200 HESI practice questions",
-        "4 practice tests across all seven sections",
-        "Training sets for every domain",
+        "A full timed HESI A2 battery: seven sections, each with its own clock and score",
+        "Percent scores per section, like the HESI report",
+        "Mastery drills for every section",
         "Instant feedback with explanations",
-        "Auto-save progress",
+        "Progress syncs between phone and computer",
       ],
     },
     {
@@ -101,7 +102,7 @@ const jsonLd = {
           name: "Is the TigerTest HESI practice test free?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. All four practice tests and all training sets are free, with no account required. Create a free account if you want your progress saved across devices.",
+            text: "Yes. The full battery and all seven drills are free, with no account required. Create a free account to keep your progress in step between your phone and your computer.",
           },
         },
       ],
@@ -136,7 +137,7 @@ export default function HesiLandingPage() {
             Free HESI A2 Practice Test 2026
           </h1>
           <ExamLandingHero
-            dashboardHref="/hesi/dashboard"
+            dashboardHref="/hesi"
             shortName="HESI A2"
             subtitle="200 questions across math, reading, vocabulary, grammar, biology, chemistry and A&P. Tuned for mobile. No account needed."
             shots={{ mobile: "/landing/hesi-mobile.png", desktop: "/landing/hesi-desktop.png" }}
@@ -155,9 +156,9 @@ export default function HesiLandingPage() {
               <Smartphone className="w-7 h-7 text-brand" />
             </div>
             <div className="bg-gray-50 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Training by Domain</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Skill Drills on Your Phone</h3>
               <p className="text-gray-600">
-                Four sets: mathematics, reading and vocabulary, grammar, and biology, chemistry and anatomy and physiology. Questions you miss come back until you have mastered them.
+                Seven drills, one per section: math with dosage conversions, reading passages beside the question, vocabulary, grammar, biology, chemistry, and anatomy and physiology. One tap checks each answer, and every miss comes back until you have mastered it.
               </p>
             </div>
           </div>
@@ -168,7 +169,7 @@ export default function HesiLandingPage() {
             <div className="bg-gray-50 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">Practice Tests</h3>
               <p className="text-gray-600">
-                Four 50-question tests that sample every section the way the real exam does, with the key step shown on every math answer and the passage embedded in every reading item.
+                All seven sections in order, each timed at the real HESI pace and scored on its own, with an on-screen calculator for the math section. Finish with a percent score per section, the way programs read the report, and a plan for what to drill next.
               </p>
             </div>
           </div>
@@ -294,7 +295,7 @@ export default function HesiLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 mb-2">Is the TigerTest HESI practice test free?</h3>
             <p className="text-gray-600">
-              Yes. All four practice tests and all training sets are free, with no account required. Create a free account if you want your progress saved across devices.
+              Yes. The full battery and all seven drills are free, with no account required. Create a free account to keep your progress in step between your phone and your computer.
             </p>
           </div>
         </div>
@@ -308,7 +309,7 @@ export default function HesiLandingPage() {
         <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Ready to Pass the HESI A2?</h2>
           <p className="text-lg text-gray-600 mb-10">Free to start. No account required. 200 questions across all seven sections.</p>
-          <ExamLandingCTA dashboardHref="/hesi/dashboard" />
+          <ExamLandingCTA dashboardHref="/hesi" />
         </div>
       </div>
     </div>

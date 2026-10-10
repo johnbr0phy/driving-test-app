@@ -1,0 +1,461 @@
+{
+  "stimuli": [
+    {
+      "id": "ACT-SC-P1",
+      "title": "Passage I",
+      "text": "Solubility is the maximum mass of a solute that dissolves in a given mass of solvent at a given temperature. A solution holding that maximum mass is said to be saturated. Students measured the solubility of three salts (Salt A, Salt B, and Salt C) in water at six temperatures. For each measurement, salt was added to 100 g of water held at a fixed temperature until no more would dissolve. The undissolved salt was then filtered out, dried, and weighed, and its mass was subtracted from the mass of salt added. The results are shown in Table 1.\n\n**Table 1.** Solubility (g of salt per 100 g of water)\n\n| Temperature (°C) | Salt A | Salt B | Salt C |\n|---|---|---|---|\n| 0 | 13 | 35 | 21 |\n| 20 | 32 | 36 | 17 |\n| 40 | 64 | 37 | 13 |\n| 60 | 110 | 38 | 9 |\n| 80 | 169 | 39 | 6 |\n| 100 | 246 | 40 | 4 |\n\nThe students then prepared a separate saturated solution of each salt in 100 g of water at 60°C. Each solution was cooled slowly, and the mass of salt that had crystallized out of the solution was measured when the solution reached 40°C, 20°C, and 0°C. Crystallized salt was not removed between measurements, so each value in Table 2 is the total mass that had crystallized since cooling began.\n\n**Table 2.** Mass of salt crystallized from a solution saturated at 60°C (g)\n\n| Temperature (°C) | Salt A | Salt B | Salt C |\n|---|---|---|---|\n| 40 | 46 | 1 | 0 |\n| 20 | 78 | 2 | 0 |\n| 0 | 97 | 3 | 0 |"
+    },
+    {
+      "id": "ACT-SC-P2",
+      "title": "Passage II",
+      "text": "Students investigated how the speed of a cart at the bottom of a ramp depends on the angle of the ramp, the surface of the ramp, and the mass of the cart. In every trial, a four-wheeled cart was held at rest at the top of a ramp 2.0 m long and then released. A photogate at the bottom of the ramp measured the speed of the cart as it passed. The cart was released 3 times at each setting, and the 3 measured speeds were averaged. The empty cart had a mass of 0.5 kg; in Experiments 1 and 2 it carried a 0.5 kg metal block, giving a total mass of 1.0 kg.\n\n*Experiment 1*\n\nThe cart was released on a ramp with a smooth plastic surface. The ramp angle (the angle between the ramp and the floor) was set to 10°, 20°, 30°, and 40°.\n\n*Experiment 2*\n\nThe ramp angle was set to 20°, and the cart was released on ramps surfaced with smooth plastic, wood, a rubber mat, and carpet.\n\n*Experiment 3*\n\nThe ramp angle was set to 20° and the surface was smooth plastic. The metal block was removed, or replaced with heavier blocks, to give the cart a total mass of 0.5 kg, 1.0 kg, 1.5 kg, or 2.0 kg.\n\nThe results of all three experiments are shown in Table 1.\n\n**Table 1.**\n\n| Experiment | Trial | Ramp angle | Surface | Cart mass (kg) | Average speed at bottom (m/s) |\n|---|---|---|---|---|---|\n| 1 | 1 | 10° | plastic | 1.0 | 2.5 |\n| 1 | 2 | 20° | plastic | 1.0 | 3.5 |\n| 1 | 3 | 30° | plastic | 1.0 | 4.2 |\n| 1 | 4 | 40° | plastic | 1.0 | 4.8 |\n| 2 | 5 | 20° | plastic | 1.0 | 3.5 |\n| 2 | 6 | 20° | wood | 1.0 | 3.3 |\n| 2 | 7 | 20° | rubber mat | 1.0 | 2.9 |\n| 2 | 8 | 20° | carpet | 1.0 | 2.4 |\n| 3 | 9 | 20° | plastic | 0.5 | 3.4 |\n| 3 | 10 | 20° | plastic | 1.0 | 3.5 |\n| 3 | 11 | 20° | plastic | 1.5 | 3.5 |\n| 3 | 12 | 20° | plastic | 2.0 | 3.6 |"
+    },
+    {
+      "id": "ACT-SC-P3",
+      "title": "Passage III",
+      "text": "In winter, the surface of a pond freezes while the water below the ice remains liquid. Ice forms first at the top of the pond rather than at the bottom. Three students explain why.\n\n**Student 1**\n\nLiquid water is most dense at 4°C. In autumn, water at the surface cools and sinks, and this continues until the whole pond is at 4°C. Surface water that then cools below 4°C becomes less dense than the water beneath it, so it stays at the top, where it keeps cooling until it reaches 0°C and freezes. Ice is less dense than liquid water, so it floats, and the layer of ice insulates the water below it, which stays near 4°C at the bottom all winter. If liquid water kept getting denser all the way down to 0°C, the coldest water would always sink, and ponds would freeze from the bottom up.\n\n**Student 2**\n\nA pond freezes at the top because the top is where heat leaves the pond. The surface is in contact with air that is far below 0°C, and it loses heat to the air by radiation, conduction, and evaporation. The bottom is in contact with soil, which stays warmer than the winter air and slowly supplies heat to the water above it. Water near the bottom therefore stays warmer than water near the surface all winter. The way the density of liquid water changes with temperature plays no role: any liquid that is cooled from above and warmed from below will freeze from the top down. Ice floats because it is less dense than liquid water, and this keeps the frozen layer at the surface.\n\n**Student 3**\n\nThe only property that matters is that ice is less dense than liquid water. Wind and currents mix the water in a pond, so as the pond cools, the liquid water is at nearly the same temperature from top to bottom. Once the water reaches 0°C, small ice crystals form throughout the pond. Because the crystals are less dense than the water, they rise and collect at the surface, where they join into a solid sheet. If ice were denser than liquid water, the crystals would sink and the pond would freeze from the bottom up, no matter where heat left the pond. The temperature of the soil beneath the pond has no effect on where ice forms."
+    }
+  ],
+  "questions": [
+    {
+      "id": "ACT-SC-101",
+      "section": "science",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-SC-P1",
+      "domain": "interpretation",
+      "skill": "Reading table values",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "According to Table 1, the solubility of Salt A at 40°C is",
+      "options": [
+        "32 g per 100 g of water.",
+        "37 g per 100 g of water.",
+        "64 g per 100 g of water.",
+        "110 g per 100 g of water."
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Find the row for 40°C in Table 1 and read across to the Salt A column, which lists 64 g per 100 g of water. The value 37 g is the solubility of Salt B at the same temperature, and 32 g and 110 g are the solubilities of Salt A at 20°C and 60°C, not at 40°C."
+    },
+    {
+      "id": "ACT-SC-102",
+      "section": "science",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-SC-P1",
+      "domain": "interpretation",
+      "skill": "Identifying trends",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Based on Table 1, as the temperature increased from 0°C to 100°C, the solubility of Salt C",
+      "options": [
+        "increased only.",
+        "decreased only.",
+        "increased, then decreased.",
+        "remained the same."
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Reading down the Salt C column, the values fall steadily from 21 g at 0°C to 4 g at 100°C, so the solubility decreased at every step. Salt A is the salt whose solubility increased only, and Salt B changed by just 1 g per step but still increased rather than staying the same."
+    },
+    {
+      "id": "ACT-SC-103",
+      "section": "science",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-SC-P1",
+      "domain": "interpretation",
+      "skill": "Interpolating between data points",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Based on Table 1, the solubility of Salt A was most likely equal to the solubility of Salt B at a temperature",
+      "options": [
+        "below 0°C.",
+        "between 0°C and 20°C.",
+        "between 20°C and 40°C.",
+        "between 40°C and 60°C."
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "At 20°C, Salt A (32 g) is less soluble than Salt B (36 g), but at 40°C Salt A (64 g) is more soluble than Salt B (37 g). Since Salt A overtakes Salt B somewhere in that interval, the two solubilities must have been equal at a temperature between 20°C and 40°C. Below 20°C Salt A is always the less soluble of the two, and above 40°C it is always the more soluble."
+    },
+    {
+      "id": "ACT-SC-104",
+      "section": "science",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-SC-P1",
+      "domain": "interpretation",
+      "skill": "Extrapolating a trend",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "If the trend in Table 1 continues, the solubility of Salt A at 120°C would most likely be closest to",
+      "options": [
+        "246 g per 100 g of water.",
+        "290 g per 100 g of water.",
+        "340 g per 100 g of water.",
+        "490 g per 100 g of water."
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The increase in Salt A's solubility grows with each 20°C step: 19, 32, 46, 59, and then 77 g between 80°C and 100°C. The next step should be larger still, roughly 90 g, giving a value near 340 g at 120°C. A value of 246 g ignores the trend entirely, 290 g assumes a smaller increase than the previous step, and 490 g would require the increase to triple in a single step."
+    },
+    {
+      "id": "ACT-SC-105",
+      "section": "science",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-SC-P1",
+      "domain": "evaluation",
+      "skill": "Explaining results",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which of the following statements best explains why no Salt C crystallized at any temperature in Table 2?",
+      "options": [
+        "The solubility of Salt C increases as temperature decreases, so the cooled solution could hold all of the salt that had been dissolved at 60°C.",
+        "Salt C is insoluble in water at all temperatures below 60°C.",
+        "A smaller mass of Salt C than of the other salts was dissolved, so there was too little salt to crystallize.",
+        "Salt C crystallized as the solution cooled but dissolved again when the solution reached 0°C."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Table 1 shows that Salt C becomes more soluble as the temperature falls (9 g at 60°C but 21 g at 0°C). A solution that held 9 g at 60°C is therefore below saturation at every lower temperature, so nothing crystallizes. Salt C is clearly soluble below 60°C, and although less of it was dissolved than of the other salts, the amount dissolved does not matter when the solution never becomes saturated."
+    },
+    {
+      "id": "ACT-SC-106",
+      "section": "science",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-SC-P1",
+      "domain": "evaluation",
+      "skill": "Evaluating a claim with data",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "A student claimed that the Table 2 results for Salt A are consistent with the solubility values in Table 1. Is this claim supported by the data?",
+      "options": [
+        "Yes; at each temperature, the mass crystallized equals the solubility at 60°C minus the solubility at that temperature.",
+        "Yes; at each temperature, the mass crystallized equals the solubility at that temperature.",
+        "No; the mass crystallized at 0°C (97 g) is less than the solubility at 60°C (110 g).",
+        "No; the solubility of Salt A at 20°C is 32 g, but 78 g crystallized at 20°C."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A solution saturated at 60°C holds 110 g of Salt A. When cooled to 20°C, it can hold only 32 g, so 110 - 32 = 78 g should crystallize, which matches Table 2; the same arithmetic gives 46 g at 40°C and 97 g at 0°C. The 97 g at 0°C is expected to be less than 110 g because 13 g remains dissolved, so that comparison does not show an inconsistency."
+    },
+    {
+      "id": "ACT-SC-107",
+      "section": "science",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-SC-P1",
+      "domain": "investigation",
+      "skill": "Designing a test of a variable",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Suppose the students wanted to determine whether the solubility values in Table 1 depend on the mass of water used. Which of the following procedures would best test this?",
+      "options": [
+        "Repeat the Table 1 procedure for Salt B using 100 g of water at 10°C and then at 30°C.",
+        "Repeat the Table 2 procedure for Salt B starting from a solution saturated at 80°C instead of 60°C.",
+        "Repeat the Table 1 procedure for Salt B at 20°C using 50 g of water and then 200 g of water.",
+        "Repeat the Table 1 procedure for Salt A and Salt C using 100 g of water at 20°C."
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "To test the effect of one variable, change only that variable and hold the others constant. The first procedure keeps the salt and the temperature fixed while changing the mass of water, so any change in the measured solubility can be attributed to the mass of water. The other procedures change the temperature, the starting temperature of the cooling procedure, or the salt, while keeping the mass of water at 100 g."
+    },
+    {
+      "id": "ACT-SC-108",
+      "section": "science",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-SC-P2",
+      "domain": "interpretation",
+      "skill": "Identifying trends",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "According to the results of Experiment 1, as the ramp angle increased, the average speed of the cart at the bottom of the ramp",
+      "options": [
+        "increased only.",
+        "decreased only.",
+        "increased, then decreased.",
+        "remained the same."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "In Trials 1 through 4 the ramp angle rose from 10° to 40°, and the average speed rose at every step, from 2.5 m/s to 3.5, 4.2, and 4.8 m/s. The speed never fell, so the trend is an increase only."
+    },
+    {
+      "id": "ACT-SC-109",
+      "section": "science",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-SC-P2",
+      "domain": "investigation",
+      "skill": "Identifying controlled variables",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Which of the following factors was the same in all 12 trials?",
+      "options": [
+        "Ramp angle",
+        "Ramp surface",
+        "Cart mass",
+        "Ramp length"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The passage states that in every trial the cart was released from the top of a ramp 2.0 m long, so ramp length was held constant throughout. Ramp angle was varied in Experiment 1, surface in Experiment 2, and cart mass in Experiment 3, so none of those was the same in every trial."
+    },
+    {
+      "id": "ACT-SC-110",
+      "section": "science",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-SC-P2",
+      "domain": "interpretation",
+      "skill": "Ordering results",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Based on the results of Experiment 2, which of the following correctly lists the four surfaces in order of increasing average speed at the bottom of the ramp?",
+      "options": [
+        "Plastic, wood, rubber mat, carpet",
+        "Wood, plastic, carpet, rubber mat",
+        "Rubber mat, carpet, plastic, wood",
+        "Carpet, rubber mat, wood, plastic"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Trials 5 through 8 give speeds of 3.5 m/s on plastic, 3.3 m/s on wood, 2.9 m/s on the rubber mat, and 2.4 m/s on carpet. From lowest to highest speed, the order is carpet, rubber mat, wood, plastic. The second choice lists the surfaces in order of decreasing speed, the reverse of what the question asks."
+    },
+    {
+      "id": "ACT-SC-111",
+      "section": "science",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-SC-P2",
+      "domain": "evaluation",
+      "skill": "Evaluating a hypothesis",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A student hypothesized that doubling the mass of the cart would double its average speed at the bottom of the ramp. Do the results of Experiment 3 support this hypothesis?",
+      "options": [
+        "Yes; increasing the mass from 1.0 kg to 2.0 kg increased the speed from 3.5 m/s to 3.6 m/s.",
+        "Yes; the cart with the greatest mass had the greatest average speed.",
+        "No; increasing the mass from 1.0 kg to 2.0 kg changed the speed by only 0.1 m/s.",
+        "No; the average speed decreased as the mass of the cart increased."
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Doubling the speed of the 1.0 kg cart would mean a speed of 7.0 m/s for the 2.0 kg cart, but Trial 12 shows 3.6 m/s, a change of only 0.1 m/s from Trial 10. The results do not support the hypothesis. Although the heaviest cart did have the greatest speed, a difference that small is nowhere near a doubling, and the speed did not decrease with mass."
+    },
+    {
+      "id": "ACT-SC-112",
+      "section": "science",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-SC-P2",
+      "domain": "interpretation",
+      "skill": "Predicting from combined results",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Suppose an additional trial had been conducted with the 1.0 kg cart on a wood-surfaced ramp set at an angle of 30°. Based on the results of Experiments 1 and 2, the average speed at the bottom of the ramp in this trial would most likely have been",
+      "options": [
+        "less than 3.3 m/s.",
+        "between 3.3 m/s and 4.2 m/s.",
+        "between 4.2 m/s and 4.8 m/s.",
+        "greater than 4.8 m/s."
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Experiment 2 shows that at 20° the wood surface gives a slightly lower speed (3.3 m/s) than plastic (3.5 m/s), so at 30° wood should give somewhat less than the 4.2 m/s measured on plastic at that angle. Experiment 1 shows that raising the angle from 20° to 30° increases speed, so the wood trial at 30° should be faster than the 3.3 m/s measured on wood at 20°. Together these place the speed between 3.3 m/s and 4.2 m/s; a value above 4.2 m/s would require wood to be faster than plastic."
+    },
+    {
+      "id": "ACT-SC-113",
+      "section": "science",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-SC-P2",
+      "domain": "investigation",
+      "skill": "Extending an experiment",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which of the following changes to Experiment 1 would best allow the students to determine whether the length of the ramp affects the speed of the cart at the bottom?",
+      "options": [
+        "Repeating the trials with the ramp angle set to 50° and 60°",
+        "Repeating the trials with ramps 1.0 m, 2.0 m, and 3.0 m long, all set at the same angle",
+        "Repeating the trials on a 2.0 m ramp with a carpet surface",
+        "Repeating the trials with a 1.0 kg cart that has larger wheels"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "To find out whether ramp length matters, the students must vary the length while holding the angle, surface, and cart mass constant, which only the first choice does. Adding steeper angles only extends the existing angle data, and changing the surface or the wheels introduces a different variable while leaving the length at 2.0 m."
+    },
+    {
+      "id": "ACT-SC-114",
+      "section": "science",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-SC-P2",
+      "domain": "investigation",
+      "skill": "Purpose of a procedure",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "The students most likely released the cart 3 times at each setting and averaged the speeds in order to",
+      "options": [
+        "increase the speed of the cart at the bottom of the ramp.",
+        "keep the ramp angle the same from one trial to the next.",
+        "make sure that every trial used the same surface.",
+        "reduce the effect of random variation in individual releases."
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Small differences in how the cart is released or how the photogate times it produce slightly different speeds from one release to the next. Averaging several releases reduces the effect of that random variation on the reported value. Repeating a release cannot change the cart's speed, and it has nothing to do with holding the angle or the surface constant."
+    },
+    {
+      "id": "ACT-SC-115",
+      "section": "science",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-SC-P3",
+      "domain": "interpretation",
+      "skill": "Comparing viewpoints",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "All three students would most likely agree with which of the following statements?",
+      "options": [
+        "Ice is less dense than liquid water.",
+        "Liquid water is most dense at 4°C.",
+        "Soil beneath a pond supplies heat to the water above it.",
+        "The water in a pond is at nearly the same temperature at all depths as it cools."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Student 1 says ice is less dense than liquid water and floats, Student 2 says ice floats because it is less dense, and Student 3 calls that property the only one that matters. Only Student 1 relies on a density maximum at 4°C, only Student 2 says soil supplies heat (Student 3 denies it), and only Student 3 claims the water is at nearly the same temperature at all depths."
+    },
+    {
+      "id": "ACT-SC-116",
+      "section": "science",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-SC-P3",
+      "domain": "interpretation",
+      "skill": "Understanding a viewpoint",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "According to Student 1, on a winter day when a pond is covered by ice, the temperature of the water at the bottom of the pond is most likely closest to",
+      "options": [
+        "-4°C.",
+        "0°C.",
+        "4°C.",
+        "10°C."
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Student 1 states that the ice layer insulates the water below, which stays near 4°C at the bottom all winter, because 4°C is the temperature at which liquid water is most dense and so the densest water settles at the bottom. Water at 0°C would be at the freezing point just under the ice, not at the bottom, and liquid water cannot be at -4°C."
+    },
+    {
+      "id": "ACT-SC-117",
+      "section": "science",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-SC-P3",
+      "domain": "evaluation",
+      "skill": "Evaluating viewpoints against data",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "On a calm day just before a pond froze, a scientist measured the water temperature at several depths and found that the water was 1°C at the surface and 4°C at the bottom. This finding is consistent with the viewpoints of",
+      "options": [
+        "Student 1 only.",
+        "Student 3 only.",
+        "Students 1 and 2 only.",
+        "Students 2 and 3 only."
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Student 1 predicts exactly this pattern: the densest water, at 4°C, sits at the bottom while colder, less dense water stays at the surface. Student 2 also expects the water near the bottom to be warmer than the surface, because the soil supplies heat from below. Student 3 claims the water is at nearly the same temperature at all depths, so a 3°C difference between top and bottom contradicts that viewpoint."
+    },
+    {
+      "id": "ACT-SC-118",
+      "section": "science",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-SC-P3",
+      "domain": "evaluation",
+      "skill": "Judging which viewpoint a finding weakens",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "In a laboratory, a liquid that becomes steadily denser as it cools, all the way down to its freezing point, was placed in a container with insulated sides and bottom and was cooled from above. The solid form of this liquid is less dense than the liquid. The liquid froze from the top down. This result most weakens the viewpoint of",
+      "options": [
+        "Student 1, because Student 1 claims that the solid form of a liquid must be denser than the liquid for it to float.",
+        "Student 1, because Student 1 claims that a liquid without a density maximum above its freezing point would freeze from the bottom up.",
+        "Student 2, because the bottom of the container was insulated rather than warmed.",
+        "Student 3, because the container was not exposed to wind or currents."
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Student 1 argues that if water kept getting denser down to 0°C, the coldest water would always sink and ponds would freeze from the bottom up. The laboratory liquid has exactly that density behavior, yet it froze from the top down, which is the opposite of what Student 1's reasoning predicts. Student 2's claim that a liquid cooled from above freezes from the top down is supported, not weakened, by this result, and Student 3's claims about wind and the floating solid are not contradicted by it."
+    },
+    {
+      "id": "ACT-SC-119",
+      "section": "science",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-SC-P3",
+      "domain": "investigation",
+      "skill": "Designing a test of a claim",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Which of the following experiments would best test Student 2's claim that heat from the soil affects how a pond freezes?",
+      "options": [
+        "Measure the temperature of the soil beneath a pond on the day before and the day after the pond freezes.",
+        "Fill two identical tanks, one with fresh water and one with salt water, cool both from above, and record which tank freezes first.",
+        "Measure the thickness of the ice on a pond on a windy day and on a calm day.",
+        "Fill two identical tanks with water and cool both from above in the same cold air, with the bottom of one tank resting on a warm surface and the bottom of the other tank insulated, and compare the water temperatures near the bottom of each tank."
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Student 2's claim is about the effect of heat supplied at the bottom, so the best test changes only that factor: two tanks cooled in the same air, one warmed from below and one insulated from below. Any difference in the bottom water temperature can then be attributed to heat from below. Measuring soil temperature alone shows whether the soil is warm but not whether that warmth affects the water, and the salt-water and wind experiments change variables unrelated to Student 2's claim."
+    },
+    {
+      "id": "ACT-SC-120",
+      "section": "science",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-SC-P3",
+      "domain": "investigation",
+      "skill": "Choosing a measurement",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Student 3 claims that wind mixing keeps the water in a pond at nearly the same temperature at all depths as the pond cools. Which of the following measurements would most directly test this claim?",
+      "options": [
+        "Measuring the thickness of the ice on a pond at several locations across its surface",
+        "Measuring the water temperature at several depths in a pond on a windy day and on a calm day",
+        "Measuring the air temperature above a pond at several heights",
+        "Measuring the density of ice samples taken from the surface of a pond"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The claim is about the water temperature at different depths and about the role of wind, so the most direct test measures temperature at several depths under windy and calm conditions. If the temperatures are uniform on windy days but layered on calm days, the claim is supported. Ice thickness, air temperature, and ice density do not reveal whether the liquid water is mixed."
+    }
+  ]
+}

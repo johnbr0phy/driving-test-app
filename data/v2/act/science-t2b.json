@@ -1,0 +1,461 @@
+{
+  "stimuli": [
+    {
+      "id": "ACT-SC-P10",
+      "title": "Passage IV",
+      "text": "The density of an object is its mass divided by its volume. An object placed in a liquid floats if its density is less than the density of the liquid and sinks if its density is greater than the density of the liquid.\n\nStudents measured the mass and volume of five solid objects, A through E, and calculated the density of each (Table 1). Each object was then placed in each of four liquids of known density: ethanol (0.79 g/mL), water (1.00 g/mL), brine (1.20 g/mL) and corn syrup (1.38 g/mL). The students recorded whether the object floated or sank (Table 2). For each object that floated, the students measured the fraction submerged, which is the volume of the object below the liquid surface divided by the total volume of the object (Table 3). All measurements were made at 20 C.\n\nTable 1\n\n| Object | Mass (g) | Volume (mL) | Density (g/mL) |\n|---|---|---|---|\n| A | 24.0 | 40.0 | 0.60 |\n| B | 45.0 | 50.0 | 0.90 |\n| C | 55.0 | 50.0 | 1.10 |\n| D | 39.0 | 30.0 | 1.30 |\n| E | 54.0 | 20.0 | 2.70 |\n\nTable 2\n\n| Object | Ethanol (0.79 g/mL) | Water (1.00 g/mL) | Brine (1.20 g/mL) | Corn syrup (1.38 g/mL) |\n|---|---|---|---|---|\n| A | floats | floats | floats | floats |\n| B | sinks | floats | floats | floats |\n| C | sinks | sinks | floats | floats |\n| D | sinks | sinks | sinks | floats |\n| E | sinks | sinks | sinks | sinks |\n\nTable 3\n\n| Object | Fraction submerged in ethanol | Fraction submerged in water | Fraction submerged in brine | Fraction submerged in corn syrup |\n|---|---|---|---|---|\n| A | 0.76 | 0.60 | 0.50 | 0.43 |\n| B | sank | 0.90 | 0.75 | 0.65 |\n| C | sank | sank | 0.92 | 0.80 |\n| D | sank | sank | sank | 0.94 |\n| E | sank | sank | sank | sank |"
+    },
+    {
+      "id": "ACT-SC-P11",
+      "title": "Passage V",
+      "text": "Soil erosion by water occurs when falling raindrops loosen soil particles and runoff carries the particles away. Researchers studied erosion using identical rectangular trays, each 1.0 m long, 0.5 m wide and 10 cm deep. Before each trial a tray was filled with the same loam soil, which was packed to the same firmness and moistened in the same way. The tray was tilted to a chosen slope angle and placed under a rainfall simulator that sprayed water droplets onto the tray at a chosen rainfall intensity (the depth of water delivered per hour) for 30 minutes. All of the water that ran off the lower edge of the tray was collected. The volume of this runoff was measured, and the sediment carried in the runoff was filtered out, dried and weighed. A freshly prepared tray was used for every trial.\n\n**Experiment 1**\n\nFour trays were prepared with different ground covers: bare soil, a 2 cm layer of wood chips, a 2 cm layer of straw mulch, and grass that had been grown in the tray for 8 weeks. Each tray was tested at a slope of 10 degrees and a rainfall intensity of 50 mm/h. The results are shown in Table 1.\n\nTable 1\n\n| Trial | Ground cover | Runoff volume (L) | Sediment mass (g) |\n|---|---|---|---|\n| 1 | bare soil | 11.2 | 184 |\n| 2 | wood chips | 8.4 | 61 |\n| 3 | straw mulch | 7.1 | 38 |\n| 4 | grass | 4.6 | 12 |\n\n**Experiment 2**\n\nBare-soil trays and grass trays were tested at a slope of 10 degrees at each of four rainfall intensities. The results are shown in Table 2.\n\nTable 2\n\n| Trial | Ground cover | Rainfall intensity (mm/h) | Sediment mass (g) |\n|---|---|---|---|\n| 5 | bare soil | 25 | 50 |\n| 6 | bare soil | 50 | 184 |\n| 7 | bare soil | 75 | 390 |\n| 8 | bare soil | 100 | 650 |\n| 9 | grass | 25 | 4 |\n| 10 | grass | 50 | 12 |\n| 11 | grass | 75 | 23 |\n| 12 | grass | 100 | 38 |\n\n**Experiment 3**\n\nBare-soil trays and grass trays were tested at a rainfall intensity of 50 mm/h at each of four slopes. The results are shown in Table 3.\n\nTable 3\n\n| Trial | Ground cover | Slope (degrees) | Sediment mass (g) |\n|---|---|---|---|\n| 13 | bare soil | 5 | 88 |\n| 14 | bare soil | 10 | 184 |\n| 15 | bare soil | 15 | 305 |\n| 16 | bare soil | 20 | 450 |\n| 17 | grass | 5 | 6 |\n| 18 | grass | 10 | 12 |\n| 19 | grass | 15 | 20 |\n| 20 | grass | 20 | 31 |"
+    },
+    {
+      "id": "ACT-SC-P12",
+      "title": "Passage VI",
+      "text": "Sound travels through a gas as a wave of pressure that passes from molecule to molecule. The speed of sound in a gas depends on the temperature of the gas and on the molar mass of the gas, which is the mass of one mole of its molecules. Table 1 gives the speed of sound in six gases at four temperatures. Table 2 gives the molar mass of nine gases and the speed of sound in each gas at 20 C. All measurements were made at a pressure of 1 atm.\n\nTable 1\n\n| Gas | Speed of sound at 0 C (m/s) | Speed of sound at 20 C (m/s) | Speed of sound at 50 C (m/s) | Speed of sound at 100 C (m/s) |\n|---|---|---|---|---|\n| Helium | 973 | 1,008 | 1,058 | 1,137 |\n| Neon | 433 | 449 | 471 | 506 |\n| Nitrogen | 337 | 349 | 366 | 394 |\n| Oxygen | 315 | 326 | 343 | 368 |\n| Argon | 308 | 319 | 335 | 360 |\n| Carbon dioxide | 259 | 268 | 282 | 303 |\n\nTable 2\n\n| Gas | Molar mass (g/mol) | Speed of sound at 20 C (m/s) |\n|---|---|---|\n| Hydrogen | 2.0 | 1,305 |\n| Helium | 4.0 | 1,008 |\n| Neon | 20.2 | 449 |\n| Nitrogen | 28.0 | 349 |\n| Oxygen | 32.0 | 326 |\n| Argon | 39.9 | 319 |\n| Carbon dioxide | 44.0 | 268 |\n| Krypton | 83.8 | 220 |\n| Xenon | 131.3 | 176 |"
+    }
+  ],
+  "questions": [
+    {
+      "id": "ACT-SC-221",
+      "section": "science",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-SC-P10",
+      "domain": "interpretation",
+      "skill": "Read values from a table",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "According to Table 2, Object C floated in which of the following liquids?",
+      "options": [
+        "Ethanol only",
+        "Water and brine only",
+        "Brine and corn syrup only",
+        "All four liquids"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Read across the row for Object C in Table 2: it sank in ethanol and in water but floated in brine and in corn syrup. This agrees with Table 1, since the density of Object C (1.10 g/mL) is greater than the densities of ethanol and water but less than those of brine and corn syrup. Object A is the only object that floated in all four liquids."
+    },
+    {
+      "id": "ACT-SC-222",
+      "section": "science",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-SC-P10",
+      "domain": "interpretation",
+      "skill": "Read a value from a table",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Based on Table 3, when Object B floated in corn syrup, the fraction of its volume that was below the liquid surface was:",
+      "options": [
+        "0.43.",
+        "0.65.",
+        "0.75.",
+        "0.90."
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Find the row for Object B in Table 3 and read the corn syrup column, which gives 0.65. The values 0.75 and 0.90 are the fractions of Object B submerged in brine and in water, and 0.43 is the fraction of Object A submerged in corn syrup."
+    },
+    {
+      "id": "ACT-SC-223",
+      "section": "science",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-SC-P10",
+      "domain": "interpretation",
+      "skill": "Identify a trend in data",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "According to Table 3, for any object that floated in more than one liquid, as the density of the liquid increased, the fraction of the object submerged:",
+      "options": [
+        "increased only.",
+        "decreased only.",
+        "increased, then decreased.",
+        "stayed the same."
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The liquids are listed from least dense (ethanol) to most dense (corn syrup). Object A's fraction submerged falls from 0.76 to 0.60 to 0.50 to 0.43, Object B's falls from 0.90 to 0.75 to 0.65, and Object C's falls from 0.92 to 0.80. In every case the fraction decreased at each step, so a denser liquid holds more of a floating object above its surface."
+    },
+    {
+      "id": "ACT-SC-224",
+      "section": "science",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-SC-P10",
+      "domain": "interpretation",
+      "skill": "Infer a relationship from data",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which of the following statements about the fraction submerged of a floating object is consistent with the data in Tables 1 and 3?",
+      "options": [
+        "The fraction submerged equals the density of the object divided by the density of the liquid.",
+        "The fraction submerged equals the density of the liquid divided by the density of the object.",
+        "The fraction submerged equals the mass of the object divided by its volume.",
+        "The fraction submerged is the same for every object that floats in a given liquid."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Test the statement with Object A in water: its density (0.60 g/mL) divided by the density of water (1.00 g/mL) is 0.60, which matches Table 3. The same rule gives 0.60 divided by 1.20, or 0.50, for Object A in brine and 0.90 divided by 1.00, or 0.90, for Object B in water, both matching the table. Dividing the liquid density by the object density would give values greater than 1, which is impossible for a fraction submerged, and Objects A and B have different fractions submerged in water, so the fraction is not the same for every object."
+    },
+    {
+      "id": "ACT-SC-225",
+      "section": "science",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-SC-P10",
+      "domain": "interpretation",
+      "skill": "Apply a pattern to a new case",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "A sixth object, Object F, has a mass of 50.0 g and a volume of 40.0 mL. Based on Tables 1 and 2, if Object F were placed in each of the four liquids, it would most likely float in:",
+      "options": [
+        "water, brine and corn syrup.",
+        "brine and corn syrup only.",
+        "corn syrup only.",
+        "none of the four liquids."
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The density of Object F is 50.0 g divided by 40.0 mL, or 1.25 g/mL. That is greater than the densities of ethanol (0.79 g/mL), water (1.00 g/mL) and brine (1.20 g/mL) but less than the density of corn syrup (1.38 g/mL), so Object F would sink in the first three liquids and float only in corn syrup. Its behavior would match that of Object D (1.30 g/mL) in Table 2."
+    },
+    {
+      "id": "ACT-SC-226",
+      "section": "science",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-SC-P10",
+      "domain": "evaluation",
+      "skill": "Evaluate a claim using data",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A student claims that the fraction submerged of a floating object depends only on the density of the liquid and not on the object. Is this claim consistent with Table 3?",
+      "options": [
+        "Yes; every object that floated in corn syrup had the same fraction submerged.",
+        "Yes; the fraction submerged of Object A decreased as the liquid density increased.",
+        "No; Object E sank in every liquid.",
+        "No; in water, Object A was 0.60 submerged while Object B was 0.90 submerged."
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "If the fraction submerged depended only on the liquid, every object floating in the same liquid would show the same fraction. In water, however, Object A was 0.60 submerged and Object B was 0.90 submerged, and in corn syrup the four floating objects ranged from 0.43 to 0.94. The claim is therefore not consistent with the data. That Object E sank everywhere says nothing about the fraction submerged of floating objects."
+    },
+    {
+      "id": "ACT-SC-227",
+      "section": "science",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-SC-P10",
+      "domain": "evaluation",
+      "skill": "Evaluate a claim using two tables",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "A student claims that whether an object floats in water is determined by the object's mass alone, with heavier objects sinking and lighter objects floating. Do Tables 1 and 2 support this claim?",
+      "options": [
+        "Yes; Object A, the object with the smallest mass, floated in water.",
+        "Yes; Object C, the object with the greatest mass, sank in water.",
+        "No; Object D has a smaller mass than Object B, yet Object D sank in water while Object B floated.",
+        "No; Object E has the greatest volume of the five objects, yet it sank in water."
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "If mass alone determined floating, no object could sink in water while a heavier object floated. Table 1 shows that Object D (39.0 g) has less mass than Object B (45.0 g), but Table 2 shows that Object D sank in water while Object B floated, so the claim fails. Choices A and B describe single cases that happen to fit the claim but do not test it, and choice D is wrong because Object E has the smallest volume, not the greatest."
+    },
+    {
+      "id": "ACT-SC-228",
+      "section": "science",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-SC-P11",
+      "domain": "investigation",
+      "skill": "Identify a controlled variable",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Which of the following factors was held constant for all of the trials in Experiment 2?",
+      "options": [
+        "Rainfall intensity",
+        "Ground cover",
+        "Sediment mass",
+        "Slope of the tray"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "In Experiment 2 every tray was tested at a slope of 10 degrees, so slope was held constant. Rainfall intensity was deliberately varied (25, 50, 75 and 100 mm/h), and two ground covers (bare soil and grass) were used. Sediment mass was the result that was measured, and it differed from trial to trial."
+    },
+    {
+      "id": "ACT-SC-229",
+      "section": "science",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-SC-P11",
+      "domain": "interpretation",
+      "skill": "Compare values in a table",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "According to Table 2, the mass of sediment from the bare-soil tray at a rainfall intensity of 100 mm/h was approximately how many times the mass of sediment from the bare-soil tray at 25 mm/h?",
+      "options": [
+        "4",
+        "13",
+        "26",
+        "52"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Trial 8 (bare soil, 100 mm/h) produced 650 g of sediment and Trial 5 (bare soil, 25 mm/h) produced 50 g. Dividing 650 by 50 gives 13. Although the rainfall intensity increased only 4 times, the sediment increased 13 times, so erosion grew much faster than the intensity of the rain; 26 would be the result of dividing 650 g by the 25 mm/h intensity rather than by the 50 g of sediment."
+    },
+    {
+      "id": "ACT-SC-230",
+      "section": "science",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-SC-P11",
+      "domain": "investigation",
+      "skill": "Compare conditions across experiments",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which trial in Experiment 2 was conducted under the same combination of ground cover, slope and rainfall intensity as Trial 1 of Experiment 1?",
+      "options": [
+        "Trial 5",
+        "Trial 6",
+        "Trial 8",
+        "Trial 10"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Trial 1 used a bare-soil tray at a slope of 10 degrees and a rainfall intensity of 50 mm/h. Every trial in Experiment 2 used a slope of 10 degrees, and Trial 6 is the bare-soil trial at 50 mm/h, so its conditions match Trial 1 exactly. This is why the two trials produced the same sediment mass, 184 g. Trial 10 used grass, and Trials 5 and 8 used bare soil at other intensities."
+    },
+    {
+      "id": "ACT-SC-231",
+      "section": "science",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-SC-P11",
+      "domain": "investigation",
+      "skill": "Compare experimental designs",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "How did the design of Experiment 3 differ from the design of Experiment 2?",
+      "options": [
+        "In Experiment 3 the slope was varied and the rainfall intensity was held constant, whereas in Experiment 2 the rainfall intensity was varied and the slope was held constant.",
+        "In Experiment 3 the rainfall intensity was varied and the slope was held constant, whereas in Experiment 2 the slope was varied and the rainfall intensity was held constant.",
+        "In Experiment 3 only bare-soil trays were tested, whereas in Experiment 2 both bare-soil and grass trays were tested.",
+        "In Experiment 3 runoff volume was measured, whereas in Experiment 2 sediment mass was measured."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The description of Experiment 3 states that trays were tested at 50 mm/h at each of four slopes, while Experiment 2 tested trays at a 10 degree slope at each of four intensities. Choice B reverses the two experiments. Both experiments tested bare-soil and grass trays, and both reported sediment mass, so choices C and D are incorrect."
+    },
+    {
+      "id": "ACT-SC-232",
+      "section": "science",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-SC-P11",
+      "domain": "investigation",
+      "skill": "Design a follow-up experiment",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "The researchers want to determine whether straw mulch reduces erosion on steep slopes as effectively as it does on gentle slopes. Which of the following additional sets of trials would be most useful?",
+      "options": [
+        "Bare-soil trays tested several more times at 50 mm/h and a slope of 10 degrees",
+        "Straw-mulch trays tested at 25, 50, 75 and 100 mm/h at a slope of 10 degrees",
+        "Straw-mulch trays tested at 50 mm/h at slopes of 5, 10, 15 and 20 degrees",
+        "Grass trays tested at 50 mm/h at slopes of 5, 10, 15 and 20 degrees"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "To learn how the effect of straw mulch changes with slope, the researchers must vary the slope while using straw mulch, keeping rainfall intensity fixed. Testing straw mulch at 5, 10, 15 and 20 degrees at 50 mm/h would also allow direct comparison with the bare-soil and grass trials of Experiment 3 at the same slopes. Choice B varies intensity instead of slope, and choice D repeats trials already done in Experiment 3 and involves grass, not straw mulch."
+    },
+    {
+      "id": "ACT-SC-233",
+      "section": "science",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-SC-P11",
+      "domain": "investigation",
+      "skill": "Understand the purpose of a procedure",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "In Experiment 1, which of the following procedures most directly ensured that differences in sediment mass among the four trials were caused by differences in ground cover?",
+      "options": [
+        "Testing every tray at the same slope and the same rainfall intensity",
+        "Growing the grass in its tray for 8 weeks before the trial",
+        "Measuring the volume of runoff as well as the sediment mass",
+        "Collecting runoff only from the lower edge of the tray"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "If slope or rainfall intensity had differed among the trays, any difference in sediment could have been caused by those factors rather than by the ground cover. Keeping both at 10 degrees and 50 mm/h for every tray, along with using the same soil packed the same way, left ground cover as the only factor that changed. Growing the grass for 8 weeks prepared one tray's cover, and measuring runoff or collecting from the lower edge affected what was measured, not what caused differences."
+    },
+    {
+      "id": "ACT-SC-234",
+      "section": "science",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-SC-P11",
+      "domain": "evaluation",
+      "skill": "Predict a result from two experiments",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Suppose a bare-soil tray were tested at a rainfall intensity of 75 mm/h and a slope of 20 degrees. Based on the results of Experiments 2 and 3, the sediment mass would most likely be:",
+      "options": [
+        "less than 184 g.",
+        "between 184 g and 390 g.",
+        "between 390 g and 450 g.",
+        "greater than 450 g."
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Experiment 2 showed that, at a 10 degree slope, raising the intensity from 50 to 75 mm/h increased the sediment from a bare-soil tray from 184 g to 390 g. Experiment 3 showed that, at 50 mm/h, raising the slope from 10 to 20 degrees increased it from 184 g to 450 g. A tray that is both steeper and rained on harder should lose more soil than either change alone, so the mass should exceed 450 g, the larger of the two single-change results."
+    },
+    {
+      "id": "ACT-SC-235",
+      "section": "science",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-SC-P12",
+      "domain": "interpretation",
+      "skill": "Read a value from a table",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "According to Table 1, the speed of sound in argon at 50 C was:",
+      "options": [
+        "319 m/s.",
+        "335 m/s.",
+        "343 m/s.",
+        "360 m/s."
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Find the argon row in Table 1 and read the column for 50 C, which gives 335 m/s. The values 319 m/s and 360 m/s are the speeds in argon at 20 C and 100 C, and 343 m/s is the speed in oxygen at 50 C."
+    },
+    {
+      "id": "ACT-SC-236",
+      "section": "science",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-SC-P12",
+      "domain": "interpretation",
+      "skill": "Compare changes across rows",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Based on Table 1, between 0 C and 100 C the speed of sound increased by the greatest amount in which gas?",
+      "options": [
+        "Helium",
+        "Neon",
+        "Nitrogen",
+        "Carbon dioxide"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Subtract the 0 C speed from the 100 C speed for each gas: helium rose by 164 m/s (973 to 1,137), neon by 73 m/s, nitrogen by 57 m/s and carbon dioxide by 44 m/s. Every gas became faster as it warmed, but helium, the gas with the highest speeds, also gained the most. The gain shrinks as one moves down the table toward heavier gases."
+    },
+    {
+      "id": "ACT-SC-237",
+      "section": "science",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-SC-P12",
+      "domain": "interpretation",
+      "skill": "Interpolate from a trend",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Based on Table 2, the speed of sound at 20 C in a gas with a molar mass of 60 g/mol would most likely be:",
+      "options": [
+        "less than 220 m/s.",
+        "between 220 m/s and 268 m/s.",
+        "between 268 m/s and 319 m/s.",
+        "greater than 319 m/s."
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "In Table 2 the speed of sound falls steadily as molar mass rises. A molar mass of 60 g/mol lies between carbon dioxide (44.0 g/mol, 268 m/s) and krypton (83.8 g/mol, 220 m/s), so the speed should lie between those two values. A speed below 220 m/s would belong to a gas heavier than krypton, and a speed above 268 m/s to a gas lighter than carbon dioxide."
+    },
+    {
+      "id": "ACT-SC-238",
+      "section": "science",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-SC-P12",
+      "domain": "investigation",
+      "skill": "Extend an investigation",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A student wants to test whether the trend shown in Table 2 continues for gases heavier than any gas in the table. The student should measure the speed of sound at 20 C in a gas with a molar mass that is:",
+      "options": [
+        "less than 2.0 g/mol.",
+        "between 4.0 g/mol and 20.2 g/mol.",
+        "between 44.0 g/mol and 83.8 g/mol.",
+        "greater than 131.3 g/mol."
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The heaviest gas in Table 2 is xenon, with a molar mass of 131.3 g/mol, so a gas heavier than every gas in the table must have a molar mass above 131.3 g/mol. A gas between 44.0 and 83.8 g/mol or between 4.0 and 20.2 g/mol would fill a gap inside the table rather than extend it, and a gas lighter than 2.0 g/mol would extend the table in the opposite direction."
+    },
+    {
+      "id": "ACT-SC-239",
+      "section": "science",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-SC-P12",
+      "domain": "evaluation",
+      "skill": "Evaluate a prediction using a trend",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "A student predicts that at 150 C the speed of sound in oxygen would be greater than the speed of sound in argon. Is this prediction supported by Table 1?",
+      "options": [
+        "Yes; at each temperature in Table 1 the speed in oxygen exceeded the speed in argon, and the difference did not shrink as temperature increased.",
+        "Yes; oxygen has a greater molar mass than argon, so sound always travels faster in oxygen.",
+        "No; the speed in argon increased by a much greater amount than the speed in oxygen between 0 C and 100 C.",
+        "No; at 100 C the speed in argon was greater than the speed in oxygen."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Oxygen was faster than argon at 0 C (315 versus 308 m/s), 20 C (326 versus 319), 50 C (343 versus 335) and 100 C (368 versus 360), with the gap holding at 7 to 8 m/s. Nothing in the trend suggests argon would catch up by 150 C, so the prediction is supported. Choice C is wrong because the two gases gained almost identical amounts (53 and 52 m/s), and choice B gets the reasoning backward, since Table 2 shows oxygen has the smaller molar mass."
+    },
+    {
+      "id": "ACT-SC-240",
+      "section": "science",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-SC-P12",
+      "domain": "evaluation",
+      "skill": "Evaluate a model using data",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A scientist proposes that, at a given temperature, the speed of sound in a gas is inversely proportional to the gas's molar mass, so that doubling the molar mass halves the speed. Is this model consistent with Table 2?",
+      "options": [
+        "Yes; the speed of sound decreases as molar mass increases for every gas in the table.",
+        "Yes; xenon has about 33 times the molar mass of helium and the speed in xenon is about one-sixth the speed in helium.",
+        "No; the speed of sound increases as molar mass increases for the gases heavier than argon.",
+        "No; helium has twice the molar mass of hydrogen, but the speed in helium is about three-fourths of the speed in hydrogen, not half."
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Inverse proportionality requires the speed to halve whenever the molar mass doubles. Helium's molar mass (4.0 g/mol) is exactly twice hydrogen's (2.0 g/mol), yet the speed in helium (1,008 m/s) is about 77% of the speed in hydrogen (1,305 m/s), far more than half. Speed does fall as molar mass rises, as choice A says, but falling together is not the same as being inversely proportional; the xenon comparison in choice B actually contradicts the model, since one-sixth is not one thirty-third."
+    }
+  ]
+}

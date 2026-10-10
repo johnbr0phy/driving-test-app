@@ -1,0 +1,4034 @@
+[
+  {
+    "id": "HESI-MA-001",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A clinic orders 48 boxes of exam gloves with 125 gloves in each box. If 2,350 gloves are used in March, how many gloves remain?",
+    "options": [
+      "3,650",
+      "3,750",
+      "8,350",
+      "2,450"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "48 × 125 = 6,000 gloves, and 6,000 - 2,350 = 3,650. Choosing 3,750 comes from a borrowing error in the subtraction, and 8,350 comes from adding instead of subtracting."
+  },
+  {
+    "id": "HESI-MA-002",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A nurse uses 2/3 of a bottle of saline in the morning and 3/4 of a bottle in the afternoon. How many bottles were used in all?",
+    "options": [
+      "$\\frac{5}{7}$",
+      "$1\\frac{5}{12}$",
+      "$\\frac{1}{2}$",
+      "$\\frac{11}{12}$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "With a common denominator of 12, 8/12 + 9/12 = 17/12 = 1 5/12. The answer 5/7 comes from adding numerators and denominators straight across, which is never valid."
+  },
+  {
+    "id": "HESI-MA-003",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is 5 1/4 minus 2 2/3, written as a mixed number?",
+    "options": [
+      "$3\\frac{5}{12}$",
+      "$3\\frac{7}{12}$",
+      "$2\\frac{7}{12}$",
+      "$2\\frac{11}{12}$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Convert to improper fractions over 12: 63/12 - 32/12 = 31/12 = 2 7/12. The answer 3 5/12 comes from subtracting the smaller fraction from the larger one instead of borrowing."
+  },
+  {
+    "id": "HESI-MA-004",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is 3/8 multiplied by 4/9, written in simplest form?",
+    "options": [
+      "$\\frac{7}{17}$",
+      "$\\frac{27}{32}$",
+      "$\\frac{1}{3}$",
+      "$\\frac{1}{6}$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Multiply straight across: 12/72, which simplifies to 1/6. The answer 27/32 comes from flipping the second fraction, which is the rule for division, not multiplication."
+  },
+  {
+    "id": "HESI-MA-005",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How many 3/4-ounce portions of ointment can be made from 2 1/2 ounces, including any partial portion?",
+    "options": [
+      "$3\\frac{1}{3}$",
+      "$1\\frac{7}{8}$",
+      "$\\frac{3}{10}$",
+      "$2\\frac{2}{3}$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "2 1/2 ÷ 3/4 = 5/2 × 4/3 = 10/3 = 3 1/3 portions. The answer 1 7/8 comes from multiplying 5/2 by 3/4 without inverting the divisor."
+  },
+  {
+    "id": "HESI-MA-006",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A medication dose calculates to 3.4762 mL. Rounded to the nearest hundredth, what dose should be drawn up?",
+    "options": [
+      "3.47 mL",
+      "3.48 mL",
+      "3.5 mL",
+      "3.476 mL"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The hundredths digit is 7 and the next digit is 6, so it rounds up to 3.48 mL. Choosing 3.47 mL truncates instead of rounding, and 3.5 mL rounds to the tenths place."
+  },
+  {
+    "id": "HESI-MA-007",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A roll holds 12.6 meters of tape that is cut into strips 0.35 meter long. How many strips can be cut?",
+    "options": [
+      "3.6",
+      "360",
+      "36",
+      "0.36"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Move both decimal points two places: 1,260 ÷ 35 = 36 strips. The answers 3.6 and 360 come from moving the decimal point in only one of the two numbers or by the wrong number of places."
+  },
+  {
+    "id": "HESI-MA-008",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Solve the proportion for x: 3/8 = x/56. What is the value of x?",
+    "options": [
+      "7",
+      "149.3",
+      "24",
+      "21"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Cross-multiply: 8x = 3 × 56 = 168, so x = 21. The answer 149.3 comes from setting up 3x = 8 × 56, which inverts the proportion."
+  },
+  {
+    "id": "HESI-MA-009",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A unit admits 260 patients this month, and 35% of them are older than 65. How many of these patients are older than 65?",
+    "options": [
+      "91",
+      "9.1",
+      "910",
+      "169"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "0.35 × 260 = 91 patients. The answer 169 is the number who are 65 or younger, and 9.1 comes from misplacing the decimal in 35%."
+  },
+  {
+    "id": "HESI-MA-010",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A patient's weight drops from 80 kg to 68 kg over three months. What is the percent decrease in weight?",
+    "options": [
+      "12%",
+      "15%",
+      "17.6%",
+      "85%"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The change is 12 kg, and 12 ÷ 80 (the original weight) = 0.15 = 15%. The answer 17.6% divides by the new weight of 68 kg instead of the original weight."
+  },
+  {
+    "id": "HESI-MA-011",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A set of scrubs costs \\$64.00 and is on sale for 15% off. What is the sale price before tax?",
+    "options": [
+      "\\$9.60",
+      "\\$49.00",
+      "\\$54.40",
+      "\\$73.60"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The discount is 0.15 × \\$64.00 = \\$9.60, so the sale price is \\$64.00 - \\$9.60 = \\$54.40. Choosing \\$9.60 stops at the discount amount, and \\$49.00 subtracts 15 dollars instead of 15 percent."
+  },
+  {
+    "id": "HESI-MA-012",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Using the correct order of operations, what is the value of 5 + 2³ × 3 - 12 ÷ 4?",
+    "options": [
+      "20",
+      "36",
+      "6.75",
+      "26"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Exponent first (8), then multiply and divide (24 and 3), then 5 + 24 - 3 = 26. The answer 6.75 comes from working strictly left to right, and 20 comes from treating 2³ as 2 × 3."
+  },
+  {
+    "id": "HESI-MA-013",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A historical medical record is dated MCMXLIV. What year does this Roman numeral represent?",
+    "options": [
+      "1944",
+      "2166",
+      "1964",
+      "1946"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "M = 1,000, CM = 900, XL = 40, IV = 4, so the total is 1,944. The answer 2166 adds every symbol without subtracting the smaller ones placed before larger ones."
+  },
+  {
+    "id": "HESI-MA-014",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which Roman numeral correctly represents the number 489?",
+    "options": [
+      "CCCCLXXXIX",
+      "CDLXXXIX",
+      "CDXXCIX",
+      "DLXXXIX"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "489 = 400 (CD) + 80 (LXXX) + 9 (IX) = CDLXXXIX. CCCCLXXXIX repeats C four times, which standard Roman numerals do not allow, and DLXXXIX equals 589."
+  },
+  {
+    "id": "HESI-MA-015",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A medication is given at 9:20 PM and is due again every 6 hours. In military time, when is the next dose due?",
+    "options": [
+      "1520",
+      "2720",
+      "0320",
+      "2120"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "9:20 PM is 2120, and 2120 + 6 hours passes midnight, giving 0320. The answer 2720 forgets that the 24-hour clock restarts at 0000 after 2359."
+  },
+  {
+    "id": "HESI-MA-016",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A patient weighs 154 lb. Using 1 kg = 2.2 lb, what is the patient's weight in kilograms?",
+    "options": [
+      "338.8 kg",
+      "77 kg",
+      "7 kg",
+      "70 kg"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Divide pounds by 2.2: 154 ÷ 2.2 = 70 kg. The answer 338.8 kg comes from multiplying by 2.2 instead of dividing."
+  },
+  {
+    "id": "HESI-MA-017",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A newborn weighs 7 lb 8 oz. Using 1 lb = 16 oz, what is the baby's total weight in ounces?",
+    "options": [
+      "120 oz",
+      "78 oz",
+      "112 oz",
+      "124.8 oz"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "7 × 16 = 112 oz, plus 8 oz gives 120 oz. The answer 112 oz forgets to add the extra 8 ounces, and 78 oz treats a pound as 10 ounces."
+  },
+  {
+    "id": "HESI-MA-018",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A patient is 5 feet 6 inches tall. Using 1 ft = 12 in and 1 in = 2.54 cm, what is the height in centimeters?",
+    "options": [
+      "25.98 cm",
+      "167.64 cm",
+      "1,676.4 cm",
+      "152.4 cm"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "5 ft 6 in = 66 in, and 66 × 2.54 = 167.64 cm. The answer 152.4 cm leaves out the extra 6 inches, and 25.98 cm divides by 2.54 instead of multiplying."
+  },
+  {
+    "id": "HESI-MA-019",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A walking track is 440 yards long. Using 1 yd = 3 ft and 1 mile = 5,280 ft, how many laps equal 1 mile?",
+    "options": [
+      "12 laps",
+      "1 lap",
+      "4 laps",
+      "0.25 lap"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "440 yd × 3 = 1,320 ft per lap, and 5,280 ÷ 1,320 = 4 laps. The answer 12 laps divides 5,280 by 440 without first converting yards to feet."
+  },
+  {
+    "id": "HESI-MA-020",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "During a shift, a patient drinks 1 cup of coffee, 6 fl oz of juice, and 1 pint of water, and voids 650 mL. How many mL greater was intake than output?",
+    "options": [
+      "1,550 mL",
+      "10 mL",
+      "160 mL",
+      "250 mL"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Intake is 240 + 180 + 480 = 900 mL, and 900 - 650 = 250 mL. The answer 10 mL counts the pint as one cup, and 1,550 mL adds output to intake instead of subtracting."
+  },
+  {
+    "id": "HESI-MA-021",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Using 1 cup = 240 mL, 1 pint = 2 cups, 1 quart = 2 pints, and 1 gallon = 4 quarts, how many mL are in 1 gallon?",
+    "options": [
+      "3,840 mL",
+      "960 mL",
+      "4,000 mL",
+      "1,920 mL"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "1 gallon = 4 × 2 × 2 = 16 cups, and 16 × 240 = 3,840 mL. The answer 4,000 mL assumes a quart equals 1 liter, and 960 mL is only one quart."
+  },
+  {
+    "id": "HESI-MA-022",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A tablet contains 0.125 mg of digoxin. Using 1 mg = 1,000 mcg, how many micrograms are in one tablet?",
+    "options": [
+      "12.5 mcg",
+      "125 mcg",
+      "1,250 mcg",
+      "0.000125 mcg"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Multiply by 1,000 to go from mg to the smaller mcg unit: 0.125 × 1,000 = 125 mcg. The answer 0.000125 mcg divides by 1,000, which goes the wrong direction."
+  },
+  {
+    "id": "HESI-MA-023",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A provider orders 1.5 g of a drug, and the tablets on hand contain 500 mg each. How many tablets should be given?",
+    "options": [
+      "0.3 tablet",
+      "30 tablets",
+      "3 tablets",
+      "1/3 tablet"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "1.5 g = 1,500 mg, and 1,500 ÷ 500 = 3 tablets. The answer 0.3 tablet comes from dividing 1.5 by 5 without converting grams to milligrams."
+  },
+  {
+    "id": "HESI-MA-024",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A newborn weighed 3.2 kg at birth and now weighs 3,650 g. Using 1 kg = 1,000 g, how many grams has the baby gained?",
+    "options": [
+      "45 g",
+      "4,500 g",
+      "3,646.8 g",
+      "450 g"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "3.2 kg = 3,200 g, and 3,650 - 3,200 = 450 g. The answer 3,646.8 g subtracts 3.2 from 3,650 without converting kilograms to grams."
+  },
+  {
+    "id": "HESI-MA-025",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An IV of 1.2 L is to infuse evenly over 8 hours. Using 1 L = 1,000 mL, what is the rate in mL per hour?",
+    "options": [
+      "150 mL/hr",
+      "15 mL/hr",
+      "9.6 mL/hr",
+      "1,500 mL/hr"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "1.2 L = 1,200 mL, and 1,200 ÷ 8 = 150 mL/hr. The answer 9.6 mL/hr multiplies 1.2 by 8 instead of converting and dividing."
+  },
+  {
+    "id": "HESI-MA-026",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An IV of 1,000 mL is to infuse over 8 hours with tubing that has a drop factor of 15 gtt/mL. What is the drip rate in gtt/min, rounded to the nearest whole drop?",
+    "options": [
+      "125 gtt/min",
+      "31 gtt/min",
+      "1,875 gtt/min",
+      "8 gtt/min"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "(1,000 mL × 15 gtt/mL) ÷ 480 min = 31.25, which rounds to 31 gtt/min. The answer 125 is the rate in mL/hr, and 1,875 is drops per hour, not per minute."
+  },
+  {
+    "id": "HESI-MA-027",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A provider orders 375 mg of an oral suspension labeled 125 mg per 5 mL. Using 1 tsp = 5 mL, how many teaspoons should be given?",
+    "options": [
+      "15 tsp",
+      "1/3 tsp",
+      "3 tsp",
+      "45 tsp"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Desired over have times quantity: 375 ÷ 125 × 5 mL = 15 mL, and 15 ÷ 5 = 3 tsp. The answer 15 tsp stops at the mL amount without converting to teaspoons."
+  },
+  {
+    "id": "HESI-MA-028",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A child weighing 44 lb is ordered 15 mg/kg/day, divided into 3 equal doses. Using 1 kg = 2.2 lb, how many mg are in each dose?",
+    "options": [
+      "300 mg",
+      "220 mg",
+      "1,452 mg",
+      "100 mg"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "44 ÷ 2.2 = 20 kg, 20 × 15 = 300 mg per day, and 300 ÷ 3 = 100 mg per dose. The answer 300 mg is the full daily amount, and 220 mg uses pounds instead of kilograms."
+  },
+  {
+    "id": "HESI-MA-029",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A patient's temperature is 102.2°F. Using C = (F - 32) × 5/9, what is the temperature in degrees Celsius?",
+    "options": [
+      "39°C",
+      "126.4°C",
+      "56.8°C",
+      "24.8°C"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "102.2 - 32 = 70.2, and 70.2 × 5/9 = 39°C. The answer 56.8°C skips subtracting 32, and 126.4°C multiplies by 9/5 instead of 5/9."
+  },
+  {
+    "id": "HESI-MA-030",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A patient's temperature is 37.5°C. Using F = C × 9/5 + 32, what is the temperature in degrees Fahrenheit?",
+    "options": [
+      "69.5°F",
+      "99.5°F",
+      "52.8°F",
+      "125.1°F"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "37.5 × 9/5 = 67.5, and 67.5 + 32 = 99.5°F. The answer 69.5°F adds 32 without multiplying by 9/5, and 52.8°F uses 5/9 instead of 9/5."
+  },
+  {
+    "id": "HESI-MA-031",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Solve for x in the equation 3(x - 4) = 2x + 6. What is the value of x?",
+    "options": [
+      "x = 10",
+      "x = -6",
+      "x = 18",
+      "x = 3.6"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Distribute to get 3x - 12 = 2x + 6, then subtract 2x and add 12: x = 18. The answer x = 10 forgets to multiply the 4 by 3 when distributing."
+  },
+  {
+    "id": "HESI-MA-032",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "If a = 3 and b = -2, what is the value of the expression 2a² - 3ab + b?",
+    "options": [
+      "-2",
+      "52",
+      "38",
+      "34"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "2(9) - 3(3)(-2) + (-2) = 18 + 18 - 2 = 34. The answer -2 misses that subtracting a negative product adds 18, and 52 squares 2a instead of only a."
+  },
+  {
+    "id": "HESI-MA-033",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Simplify the expression 4(2x - 3) - 3(x - 5). Which expression is equivalent?",
+    "options": [
+      "5x + 3",
+      "5x - 27",
+      "5x - 17",
+      "11x + 3"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "4(2x - 3) = 8x - 12 and -3(x - 5) = -3x + 15, so 8x - 3x - 12 + 15 = 5x + 3. The answer 5x - 17 forgets to distribute the negative sign to the -5."
+  },
+  {
+    "id": "HESI-MA-034",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A urine output chart shows 240 mL from 0800 to 1200, 180 mL from 1200 to 1600, and 120 mL from 1600 to 2000. What was the average output per hour?",
+    "options": [
+      "180 mL/hr",
+      "45 mL/hr",
+      "540 mL/hr",
+      "135 mL/hr"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Total output is 240 + 180 + 120 = 540 mL over 12 hours, and 540 ÷ 12 = 45 mL/hr. The answer 180 is the average per 4-hour period, not per hour."
+  },
+  {
+    "id": "HESI-MA-035",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A nurse works three 12-hour shifts and one 8-hour shift in a week and earns \\$38.50 per hour. What is the nurse's pay for that week?",
+    "options": [
+      "\\$1,386.00",
+      "\\$1,540.00",
+      "\\$1,694.00",
+      "\\$1,848.00"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Hours worked are 3 × 12 + 8 = 44, and 44 × \\$38.50 = \\$1,694.00. The answer \\$1,386.00 leaves out the 8-hour shift, and \\$1,848.00 counts it as a fourth 12-hour shift."
+  },
+  {
+    "id": "HESI-MA-036",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A patient takes 1 tbsp of liquid antacid 4 times a day from a 12 fl oz bottle. Using 1 tbsp = 15 mL and 1 fl oz = 30 mL, how many days will the bottle last?",
+    "options": [
+      "18 days",
+      "24 days",
+      "3 days",
+      "6 days"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The bottle holds 12 × 30 = 360 mL, daily use is 4 × 15 = 60 mL, and 360 ÷ 60 = 6 days. The answer 24 days forgets the 4 doses per day, and 18 days uses 5 mL (a teaspoon) per dose."
+  },
+  {
+    "id": "HESI-RD-001",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Hand hygiene is the single most effective way to prevent the spread of infection in hospitals. Germs travel easily on the hands of staff as they move from one patient to the next, touching bed rails, monitors, and skin. Alcohol-based rubs kill most bacteria and viruses within seconds and can be used right at the bedside. However, they do not remove visible dirt and work poorly against Clostridioides difficile spores, so soap and water are still needed in those situations. Choosing the right method at the right moment protects both patients and workers.",
+    "stem": "What is the main idea of the passage?",
+    "options": [
+      "Alcohol-based rubs have now fully replaced soap and water in hospitals.",
+      "Matching the hand hygiene method to the situation prevents infection.",
+      "Hospital bed rails carry more germs than any other surface.",
+      "Spores cause most of the infections passed between patients."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The passage argues that hand hygiene, done with the right method for each situation, prevents infection. It never says alcohol rubs replaced soap; it says soap and water are still needed for dirt and spores."
+  },
+  {
+    "id": "HESI-RD-002",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "During puberty, the body's internal clock shifts later, so many teenagers do not feel sleepy until around 11 at night. Because most high schools start before 8 in the morning, students often get far less than the eight to ten hours of sleep recommended for their age. Researchers have linked this shortage to lower grades, more car crashes among teen drivers, and higher rates of depressed mood. Some school districts that moved their start times later reported better attendance and fewer students falling asleep in class.",
+    "stem": "According to the passage, how much sleep is recommended for teenagers?",
+    "options": [
+      "Six to seven hours",
+      "Seven to eight hours",
+      "Ten to twelve hours",
+      "Eight to ten hours"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The passage states that eight to ten hours of sleep is recommended for teenagers. Seven to eight hours is a common adult figure, but it is not what the passage gives for teens."
+  },
+  {
+    "id": "HESI-RD-003",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "When Maria arrived for her night shift, the charge nurse handed her a report on six patients. Mr. Okafor in Room 12 had a new order for a blood transfusion, and his first unit was due from the blood bank within the hour. Maria checked his chart, confirmed that a signed consent form was on file, and started a new IV line with saline. She then asked a coworker to be available later to double-check the blood bag with her.",
+    "stem": "What can be inferred about Maria from the passage?",
+    "options": [
+      "She is preparing carefully before the blood arrives.",
+      "She disagrees with the order for Mr. Okafor's transfusion.",
+      "She has never given a blood transfusion before.",
+      "She plans to leave her shift before the transfusion begins."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Checking consent, starting a line, and arranging a second checker all show she is getting ready ahead of time. Asking for a double-check is standard safety practice, so it does not suggest she is inexperienced."
+  },
+  {
+    "id": "HESI-RD-004",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The new clinic hours were designed to accommodate patients who work during the day. The clinic now stays open until 8 in the evening on weekdays and offers Saturday morning appointments. Staff members volunteered for the later shifts in exchange for a weekday off. During the first month, the number of missed appointments fell by nearly a third, and patient surveys showed that working parents were especially pleased. The manager plans to review the schedule again in six months to decide whether Sunday hours are needed.",
+    "stem": "As used in the passage, what does the word 'accommodate' most nearly mean?",
+    "options": [
+      "Provide overnight lodging for",
+      "Charge additional fees to",
+      "Make room for the needs of",
+      "Reduce the number of"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The longer hours were created to fit the schedules of working patients, so accommodate means to make room for their needs. Providing lodging is another meaning of the word, but nothing in the passage involves housing patients."
+  },
+  {
+    "id": "HESI-RD-005",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Every fall, health care workers should roll up their sleeves for a flu shot. Influenza can spread a day before symptoms appear, which means a nurse who feels fine can still pass the virus to a frail patient. Patients in hospitals and nursing homes, especially older adults and those with weak immune systems, face the highest risk of serious complications. A few minutes in the employee health office is a small price to pay for protecting the people we care for. Getting vaccinated is not only smart; it is part of our duty.",
+    "stem": "What is the author's primary purpose in this passage?",
+    "options": [
+      "To describe how flu vaccines are manufactured",
+      "To compare flu symptoms in young and older adults",
+      "To persuade health care workers to get flu shots",
+      "To inform readers about employee health office hours"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Words such as should and duty show the author is urging workers to be vaccinated. The employee health office is mentioned only as the place to get the shot, not as the topic."
+  },
+  {
+    "id": "HESI-RD-006",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "After forty-one years at Riverside Hospital, nurse Ellen Park worked her final shift on Friday. Coworkers lined the hallway to applaud as she walked out, and several former patients came back just to thank her. Younger nurses describe her as the person who calmly took charge when an emergency went wrong and who never left a frightened family without an explanation. Her patience, skill, and kindness set a standard the unit will work hard to meet. Riverside will not be quite the same without her.",
+    "stem": "Which word best describes the author's tone toward Nurse Park?",
+    "options": [
+      "Admiring",
+      "Skeptical",
+      "Indifferent",
+      "Sarcastic"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The author praises her patience, skill, and kindness, which shows admiration. The closing line about Riverside not being the same is sincere, not sarcastic."
+  },
+  {
+    "id": "HESI-RD-007",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Brisk walking is a form of moderate aerobic exercise. Adults are advised to get at least 150 minutes of moderate activity each week, which works out to about thirty minutes on five days. Walking requires no special equipment beyond comfortable shoes, and it can be done in a neighborhood, a park, or a shopping mall. Regular walking helps lower blood pressure and improves mood. Honestly, a morning walk is the most enjoyable way to begin any day.",
+    "stem": "Which statement from the passage is an opinion rather than a fact?",
+    "options": [
+      "Brisk walking is a form of moderate aerobic exercise.",
+      "Adults are advised to get at least 150 minutes of activity weekly.",
+      "Regular walking helps lower blood pressure.",
+      "A morning walk is the most enjoyable way to begin a day."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Calling a morning walk the most enjoyable start to a day is a personal judgment that cannot be proven. The 150-minute guideline is a published recommendation that can be checked, so it is a fact."
+  },
+  {
+    "id": "HESI-RD-008",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Antibiotics kill bacteria or stop them from multiplying, but they have no effect on viruses such as those that cause colds and the flu. When antibiotics are taken without need or are not taken as directed, the bacteria that survive are often the hardiest ones. These survivors multiply and can pass resistance genes to other bacteria. Over time, infections that once cleared quickly become difficult or impossible to treat. Using antibiotics only when prescribed for a bacterial infection, and exactly as directed, slows this process.",
+    "stem": "Which statement best summarizes the passage?",
+    "options": [
+      "Antibiotics are the best treatment for colds and the flu.",
+      "Misused antibiotics breed resistant bacteria, so use them as directed.",
+      "Viruses gradually become resistant when people take too many antibiotics.",
+      "Resistant bacteria cannot pass their genes to other bacteria."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The passage explains that misuse lets hardy bacteria survive and spread resistance, and that proper use slows this. It is bacteria, not viruses, that become resistant, because antibiotics do not act on viruses at all."
+  },
+  {
+    "id": "HESI-RD-009",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "A hospital unit noticed that many older patients fell while walking to the bathroom at night. The nurses began hourly rounds from 10 at night to 6 in the morning, asking each patient about pain, position, and the need to use the toilet. They also placed nightlights along the path from each bed to the bathroom. In the six months before the change, the unit recorded fourteen falls. In the six months after, it recorded five, and none of them happened on the way to the bathroom.",
+    "stem": "Which conclusion is best supported by the passage?",
+    "options": [
+      "Nightlights alone prevented every fall on the unit.",
+      "Older patients no longer need help walking at night.",
+      "Every hospital unit in the country should begin hourly rounds immediately.",
+      "The rounds and nightlights likely helped reduce nighttime falls."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Falls dropped from fourteen to five after both changes, which supports the idea that the changes helped. Five falls still occurred, so the passage does not show that nightlights alone prevented every fall."
+  },
+  {
+    "id": "HESI-RD-010",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "To use a metered-dose inhaler correctly, first remove the cap and shake the inhaler well. Breathe out fully, away from the mouthpiece. Place the mouthpiece between your teeth and seal your lips around it. Press down on the canister once as you begin to breathe in slowly and deeply. Hold your breath for about ten seconds, then breathe out gently. If a second puff is prescribed, wait about one minute before repeating the steps. Rinse your mouth afterward if the inhaler contains a steroid.",
+    "stem": "According to the passage, what is the next step after sealing the lips around the mouthpiece?",
+    "options": [
+      "Shake the inhaler well",
+      "Press the canister while starting a slow, deep breath",
+      "Breathe out fully, away from the mouthpiece",
+      "Hold the breath for about ten seconds, then breathe out gently"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The passage says to press the canister as you begin breathing in, right after sealing the lips. Breathing out fully comes before the mouthpiece is placed, not after."
+  },
+  {
+    "id": "HESI-RD-011",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "On hot days, the body cools itself mainly by sweating. As sweat evaporates from the skin, it carries heat away. When the air is very humid, however, sweat evaporates slowly, and the body loses much of this cooling effect. A person working outdoors may keep sweating heavily, losing water and salt, while body temperature continues to climb. This is why heat illness is more common on hot, humid days than on hot, dry ones, and why workers are told to drink water often and rest in the shade.",
+    "stem": "According to the passage, why is heat illness more likely on humid days?",
+    "options": [
+      "Humid air contains less oxygen for the lungs to absorb.",
+      "People stop sweating completely when the air is humid.",
+      "Sweat evaporates slowly, so the body cools less well.",
+      "Humid days are always hotter than dry days."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The passage says humid air slows the evaporation of sweat, which is how the body sheds heat. It states that people keep sweating heavily, so they do not stop sweating."
+  },
+  {
+    "id": "HESI-RD-012",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The human gut contains trillions of microorganisms, mostly bacteria, that together are called the gut microbiome. Far from being harmful, most of these microbes are helpful. They break down fibers that human enzymes cannot digest, produce certain vitamins such as vitamin K, and help train the immune system to tell friend from foe. They also crowd out harmful bacteria by competing for space and food. A diet rich in fiber from fruits, vegetables, and whole grains helps keep this community healthy.",
+    "stem": "Which statement best expresses the main idea of the passage?",
+    "options": [
+      "Most gut microbes do useful jobs that support health.",
+      "Bacteria living in the gut are a leading cause of disease.",
+      "Vitamin K is made only by bacteria in the human gut.",
+      "Human enzymes can digest every kind of dietary fiber."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Each detail in the passage describes a helpful role of gut microbes. Vitamin K is mentioned as one example, and the passage never says the gut is its only source."
+  },
+  {
+    "id": "HESI-RD-013",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "In 1854, Florence Nightingale led a group of 38 nurses to a British military hospital in Scutari, in what is now Turkey, during the Crimean War. She found soldiers lying in filthy wards with poor ventilation and little clean water. Nightingale pushed for cleaning, better food, and improved sanitation, and death rates fell sharply over the following months. She later used carefully collected statistics and colorful diagrams to convince officials that most soldiers had died of preventable disease rather than battle wounds.",
+    "stem": "According to the passage, how did Nightingale convince officials about the soldiers' deaths?",
+    "options": [
+      "She presented statistics and diagrams she had gathered.",
+      "She led officials on a tour of the Scutari wards.",
+      "She published letters written by wounded soldiers.",
+      "She described battle wounds in detailed medical reports."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The passage says she used collected statistics and colorful diagrams to make her case. Her point was that disease, not battle wounds, killed most soldiers, so reports on wounds would not have proven it."
+  },
+  {
+    "id": "HESI-RD-014",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Jamal checked the label on his new prescription bottle twice before leaving the pharmacy counter. He asked the pharmacist whether the tablets could be taken with his morning coffee and whether he needed to avoid any foods. On the drive home, he stopped at a store to buy a weekly pill organizer with separate compartments for morning and evening. That night, he set two daily reminders on his phone, one for 8 in the morning and one for 8 at night.",
+    "stem": "Based on the passage, what can be inferred about Jamal's new medication?",
+    "options": [
+      "It must always be taken with coffee.",
+      "It was prescribed by the pharmacist.",
+      "It is meant to be taken twice a day.",
+      "It will be used for only one week in total."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The morning and evening pill organizer and the two daily reminders suggest a twice-daily dose. Jamal only asked whether coffee was allowed, so nothing suggests it must be taken with coffee."
+  },
+  {
+    "id": "HESI-RD-015",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Symptoms of carbon monoxide poisoning are often subtle at first. Because the gas has no color or odor, a family may not realize anything is wrong. Early signs such as headache, dizziness, and tiredness are easy to mistake for the flu. A useful clue is that several people in the same home feel sick at once and then feel better after leaving the house. Every home with fuel-burning appliances or an attached garage should have a working carbon monoxide alarm near sleeping areas.",
+    "stem": "As used in the passage, the word 'subtle' most nearly means:",
+    "options": [
+      "Sudden and severe",
+      "Hard to notice",
+      "Easy to treat",
+      "Rare and unusual"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The passage says the early signs are easy to mistake for the flu and a family may not realize anything is wrong, so subtle means hard to notice. Sudden and severe is the opposite of what the passage describes."
+  },
+  {
+    "id": "HESI-RD-016",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Vaccines work by giving the immune system a safe preview of a germ. Some vaccines contain a weakened or killed form of a virus or bacterium, while others contain only a piece of it, such as a protein, or instructions that let the body's cells make that protein for a short time. The immune system responds by producing antibodies and memory cells. If the real germ appears later, these memory cells recognize it and launch a faster, stronger defense, often preventing illness entirely.",
+    "stem": "What is the author's main purpose in writing this passage?",
+    "options": [
+      "To argue that vaccines should be required for school",
+      "To describe the history of the first vaccine",
+      "To warn readers about common vaccine side effects",
+      "To explain how vaccines prepare the immune system"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The passage neutrally explains the steps by which vaccines train the immune system. It makes no argument about school requirements, so persuading is not its purpose."
+  },
+  {
+    "id": "HESI-RD-017",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The new parking policy at Lakeside Medical Center makes little sense. Night-shift nurses, who often leave work after midnight, have been moved to a lot nearly half a mile from the building, while the closest spaces sit empty overnight. The walk crosses a poorly lit road with no sidewalk. Administrators say the change will 'streamline operations,' yet no one has explained what that means. Staff safety should never come second to a vague phrase on a memo.",
+    "stem": "Which word best describes the tone of the passage?",
+    "options": [
+      "Neutral",
+      "Celebratory",
+      "Critical",
+      "Amused"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Phrases such as makes little sense and a vague phrase on a memo show the author disapproves of the policy. A neutral passage would report the change without judging it."
+  },
+  {
+    "id": "HESI-RD-018",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Olive oil is a staple of the Mediterranean diet, which also emphasizes vegetables, fruits, beans, whole grains, fish, and nuts. Large studies have linked this eating pattern to lower rates of heart disease. Olive oil is high in monounsaturated fat, a type of fat that does not raise LDL cholesterol the way saturated fat does. In my view, no other cooking oil tastes nearly as good, and food cooked in it is simply more satisfying. Everyone should replace butter with olive oil at every meal.",
+    "stem": "Which statement from the passage is a fact rather than an opinion?",
+    "options": [
+      "No other cooking oil tastes nearly as good.",
+      "Olive oil is high in monounsaturated fat.",
+      "Food cooked in olive oil is simply more satisfying.",
+      "Everyone should replace butter with olive oil at every meal."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The fat content of olive oil can be measured and verified, so it is a fact. The statement about replacing butter uses should, which signals the author's opinion."
+  },
+  {
+    "id": "HESI-RD-019",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Many crops depend on animals, especially bees, to carry pollen from one flower to another. Without this transfer, plants such as apples, almonds, and blueberries produce little or no fruit. In recent decades, beekeepers in several countries have reported unusually high losses of honeybee colonies. Scientists point to a combination of causes, including parasitic mites, pesticides, poor nutrition from fewer wildflowers, and disease. Because no single factor explains the losses, researchers argue that protecting bees will require several solutions working together.",
+    "stem": "Which statement best summarizes the passage?",
+    "options": [
+      "Pesticides are the only cause of honeybee colony losses.",
+      "Apples and almonds can produce fruit without any pollination.",
+      "Beekeepers around the world have recently solved the problem of parasitic mites.",
+      "Crop-pollinating bees are declining for several reasons at once."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The passage covers why bees matter to crops and how several causes together explain their losses. Pesticides are listed as just one of several causes, not the only one."
+  },
+  {
+    "id": "HESI-RD-020",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "In a small study, volunteers were asked to memorize a list of 20 words. Half then took a 90-minute nap, while the other half stayed awake and watched a nature documentary. When everyone was tested later that afternoon, the nap group recalled an average of 15 words, compared with 11 for the group that stayed awake. Both groups had studied the list for the same amount of time, and neither group knew it would be tested again.",
+    "stem": "Which conclusion is best supported by the results described?",
+    "options": [
+      "Napping after learning may help people retain new information.",
+      "Nature documentaries damage a person's long-term memory.",
+      "Everyone recalls exactly 15 words after taking a nap.",
+      "Studying for a longer time is always more useful than sleeping."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The nap group, which studied for the same time, recalled more words, suggesting sleep aided memory. The number 15 was an average, so it does not mean every napper recalled exactly 15 words."
+  },
+  {
+    "id": "HESI-RD-021",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Donating whole blood at a typical blood drive takes about an hour from start to finish. First, the donor registers and shows identification. Next, a staff member conducts a private health interview and a mini-physical that checks temperature, pulse, blood pressure, and hemoglobin. The actual donation follows and usually takes only eight to ten minutes. Finally, the donor rests in a refreshment area for about fifteen minutes, enjoying a snack and a drink before leaving.",
+    "stem": "According to the passage, what happens immediately after the health interview and mini-physical?",
+    "options": [
+      "Registration and an identification check",
+      "The blood donation itself",
+      "Resting in the refreshment area",
+      "A second hemoglobin check"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The passage says the actual donation follows the interview and mini-physical. Resting with a snack is the final step, after the donation."
+  },
+  {
+    "id": "HESI-RD-022",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Lactose is the main sugar in milk. To digest it, the small intestine makes an enzyme called lactase, which splits lactose into two simpler sugars that can be absorbed. Many people produce less lactase after early childhood. In these people, undigested lactose passes into the large intestine, where bacteria ferment it. This fermentation produces gas and draws water into the bowel, causing bloating, cramps, and diarrhea. Lactose-free milk, which has the lactase enzyme added, lets many people enjoy dairy without these symptoms.",
+    "stem": "According to the passage, what causes the bloating linked to lactose intolerance?",
+    "options": [
+      "Bacteria fermenting undigested lactose in the large intestine",
+      "An allergic reaction to the proteins found in milk",
+      "Too much lactase made by the small intestine",
+      "Simple sugars absorbed too quickly into the blood"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The passage says bacteria ferment undigested lactose and produce gas, which causes bloating. Lactose intolerance comes from too little lactase, not too much, and it is not a milk protein allergy."
+  },
+  {
+    "id": "HESI-RD-023",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Handoff report is the moment when one nurse passes responsibility for a patient to another at the change of shift. Information lost at this point can lead to missed medications, delayed tests, or repeated mistakes. Many hospitals now use a structured format such as SBAR, which stands for Situation, Background, Assessment, and Recommendation. Following the same order every time makes it less likely that an important detail will be skipped. Some units also hold the handoff at the bedside so the patient can confirm or correct the information.",
+    "stem": "Which sentence best states the main idea of the passage?",
+    "options": [
+      "SBAR stands for Situation, Background, Assessment, and Recommendation.",
+      "Patients should give their own shift reports to nurses.",
+      "Medication errors happen only during the change of shift.",
+      "Structured handoffs help prevent errors when care changes hands."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The whole passage explains how a consistent handoff format keeps information from being lost. What SBAR stands for is a supporting detail, not the main idea."
+  },
+  {
+    "id": "HESI-RD-024",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Sunlight contains two main types of ultraviolet rays that affect the skin. UVB rays cause most sunburns, while UVA rays penetrate more deeply and contribute to skin aging. Both types can lead to skin cancer. A sunscreen labeled broad spectrum protects against both. Dermatologists recommend an SPF of 30 or higher, applied about fifteen minutes before going outside and reapplied every two hours, or right after swimming or heavy sweating.",
+    "stem": "According to the passage, which type of ray causes most sunburns?",
+    "options": [
+      "UVA rays",
+      "Infrared rays",
+      "UVB rays",
+      "Visible light rays"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The passage states that UVB rays cause most sunburns. UVA rays are described as penetrating more deeply and aging the skin, not as the main cause of sunburn."
+  },
+  {
+    "id": "HESI-RD-025",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The emergency department waiting room was nearly full when Dr. Lin glanced at the tracking board. Three ambulances were expected within twenty minutes, and two nurses had called in sick. She asked the unit clerk to phone the nursing supervisor, moved a stable patient to a hallway chair, and told the triage nurse to page her directly about anyone with chest pain. Then she drank half a cup of cold coffee in one gulp and headed back into Room 4.",
+    "stem": "What can reasonably be inferred from the passage?",
+    "options": [
+      "Dr. Lin is about to end her shift for the day.",
+      "Every patient in the waiting room has chest pain.",
+      "The ambulances are headed to another nearby hospital.",
+      "The department is short-staffed and very busy."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A full waiting room, incoming ambulances, and two absent nurses point to a busy, understaffed department. She heads back into a patient room, so nothing suggests her shift is ending."
+  },
+  {
+    "id": "HESI-RD-026",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Fresh garden vegetables are delicious, but they must be washed carefully before eating. Soil can harbor bacteria such as E. coli and Salmonella, which may cling to leaves and roots even when the produce looks clean. Rinsing under cool running water and rubbing firm items like potatoes with a vegetable brush removes most surface germs. Soap and bleach are not recommended because residues can be absorbed by the produce and cause stomach upset.",
+    "stem": "As used in the passage, the word 'harbor' most nearly means:",
+    "options": [
+      "Contain and shelter",
+      "Destroy completely",
+      "A place where ships dock",
+      "Filter out"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The passage says soil can hold bacteria that cling to produce, so harbor means to contain and shelter. A place where ships dock is the noun meaning, which does not fit a sentence where harbor is a verb."
+  },
+  {
+    "id": "HESI-RD-027",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Both crutches and walkers help people stay mobile after a leg injury, but they suit different needs. Crutches allow a faster, more natural pace and work well on stairs, yet they demand good upper-body strength and balance. Walkers are more stable and easier to learn, making them a better fit for many older adults, though they are slow and awkward on steps. A physical therapist usually helps decide which device matches a patient's strength, injury, and home layout.",
+    "stem": "What is the author's purpose in this passage?",
+    "options": [
+      "To persuade readers never to use walkers",
+      "To explain how to climb stairs with crutches",
+      "To compare two mobility aids and their uses",
+      "To tell the story of one patient's recovery"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The passage weighs the strengths and drawbacks of crutches against those of walkers. It mentions stairs only as one point of comparison and gives no step-by-step instructions."
+  },
+  {
+    "id": "HESI-RD-028",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The public library in Millbrook opened in 1912 with a single room of donated books. Today it holds more than 80,000 items, including e-books and audiobooks, and offers free computer classes every Tuesday evening. Last year, over 2,000 residents attended its health workshops on topics such as diabetes and nutrition. The library is the most valuable building in town. Its reading room is also open seven days a week.",
+    "stem": "Which sentence from the passage is an opinion?",
+    "options": [
+      "The library opened in 1912 with one room of books.",
+      "The library is the most valuable building in town.",
+      "It offers free computer classes every Tuesday evening.",
+      "Its reading room is open seven days a week."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Most valuable is a judgment that people could disagree about. The opening date and class schedule can be checked in records, so they are facts."
+  },
+  {
+    "id": "HESI-RD-029",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Telehealth lets patients meet with health care providers by video or phone instead of traveling to an office. It is especially helpful for people in rural areas, those without reliable transportation, and patients managing long-term conditions that require frequent check-ins. However, telehealth has limits. A provider cannot listen to the lungs or feel the abdomen through a screen, and some patients lack a fast internet connection or a private place to talk. For these reasons, many clinics now offer a mix of virtual and in-person visits.",
+    "stem": "Which of the following is the best summary of the passage?",
+    "options": [
+      "Telehealth improves access but cannot fully replace in-person care.",
+      "Telehealth has replaced office visits in most rural clinics.",
+      "Video visits let providers examine the lungs from a distance.",
+      "Patients with long-term conditions should avoid using telehealth."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The passage presents both the benefits of telehealth and its limits, ending with clinics mixing visit types. It states that providers cannot listen to the lungs through a screen, so remote lung exams are ruled out."
+  },
+  {
+    "id": "HESI-RD-030",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "A school nurse tracked visits to her office for headaches over one semester. She noticed that most visits happened in the late morning and that many of these students reported skipping breakfast. After the school began offering free breakfast in classrooms, she tracked the same period the next semester. Late-morning headache visits dropped by almost half, while visits for other reasons stayed about the same.",
+    "stem": "Which conclusion is most reasonable based on the passage?",
+    "options": [
+      "Free breakfast cures every type of headache.",
+      "Students visited the nurse less often for every complaint.",
+      "Eating breakfast may help prevent some late-morning headaches.",
+      "Skipping lunch causes most headaches among students."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Headache visits fell by about half once breakfast was offered, which supports a link to eating breakfast. Visits for other reasons stayed the same, so students did not visit less for every complaint."
+  },
+  {
+    "id": "HESI-RD-031",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "When the skin is cut, the body repairs it in overlapping stages. Within minutes, blood vessels narrow and platelets clump together to form a clot that stops the bleeding. Over the next few days, white blood cells move into the area to clear away bacteria and debris, which causes redness and swelling. Next, new tissue and tiny blood vessels fill the wound, and the edges pull together. Finally, over months, the new tissue is strengthened and reshaped, often leaving a scar.",
+    "stem": "According to the passage, which stage comes directly after white blood cells clear away debris?",
+    "options": [
+      "Platelets clump together to form a clot.",
+      "Blood vessels narrow to slow the bleeding.",
+      "The tissue is strengthened and reshaped into a scar.",
+      "New tissue and blood vessels fill the wound."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The passage says that after white blood cells clear debris, new tissue and small vessels fill the wound. Strengthening into a scar is the final stage and takes months, so it does not come directly after."
+  },
+  {
+    "id": "HESI-RD-032",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Last winter, the Hillside Clinic's flu vaccine supply was nearly wasted. A storm knocked out power overnight, and the backup generator failed to start because its fuel had not been checked in months. By morning, the vaccine refrigerator had warmed above the safe range. Staff moved the doses to a cooler and called the manufacturer, which confirmed that most could still be used. Since then, the clinic has tested its generator monthly and added a temperature alarm that texts the manager.",
+    "stem": "According to the passage, why did the vaccine refrigerator warm above the safe range?",
+    "options": [
+      "Staff left the refrigerator door open overnight.",
+      "The backup generator did not start during the outage.",
+      "The temperature alarm sent the manager a false text.",
+      "The manufacturer shipped the vaccines without ice packs."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The power failed and the unchecked backup generator never started, so the refrigerator lost cooling. The temperature alarm was added after the incident, so it could not have caused the problem."
+  },
+  {
+    "id": "HESI-VOC-001",
+    "section": "vocabulary",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiVocabulary",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Before surgery, the patient was instructed to abstain from eating or drinking after midnight. What does abstain mean?",
+    "options": [
+      "Cut down gradually on",
+      "Refrain from",
+      "Delay",
+      "Prepare for"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "To abstain is to refrain from doing something entirely. Cut down gradually on is tempting, but it means reducing an activity rather than avoiding it."
+  },
+  {
+    "id": "HESI-VOC-002",
+    "section": "vocabulary",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiVocabulary",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The patient arrived at the emergency department with acute abdominal pain that began two hours ago. What does acute mean in this sentence?",
+    "options": [
+      "Long-lasting and mild",
+      "Recurring at intervals",
+      "Dull and widespread",
+      "Sudden and severe"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Acute describes a condition with a rapid onset and often severe intensity. Recurring at intervals describes a paroxysmal or recurrent condition, not an acute one."
+  },
+  {
+    "id": "HESI-VOC-003",
+    "section": "vocabulary",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiVocabulary",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The pharmacist reviewed the chart for any adverse reactions to the new antibiotic. What does adverse mean?",
+    "options": [
+      "Harmful",
+      "Expected",
+      "Delayed",
+      "Unusual"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Adverse means harmful or unfavorable. An adverse reaction may also be unusual, but the word itself refers to harm."
+  },
+  {
+    "id": "HESI-VOC-004",
+    "section": "vocabulary",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiVocabulary",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Mr. Lee felt ambivalent about moving into assisted living, wanting help but fearing a loss of independence. What does ambivalent mean?",
+    "options": [
+      "Strongly opposed",
+      "Completely indifferent",
+      "Having mixed feelings",
+      "Eagerly hopeful"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Ambivalent means having conflicting feelings at the same time. Indifferent is tempting, but it means having no strong feeling at all."
+  },
+  {
+    "id": "HESI-VOC-005",
+    "section": "vocabulary",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiVocabulary",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "During the assessment, the nurse noted that the patient's wheezing was audible without a stethoscope. What does audible mean?",
+    "options": [
+      "Loud and high-pitched",
+      "Able to be felt",
+      "Able to be heard",
+      "Constant"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Audible means capable of being heard. Loud and high-pitched is tempting, but a sound can be audible without being loud."
+  },
+  {
+    "id": "HESI-VOC-006",
+    "section": "vocabulary",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiVocabulary",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The chest X-ray showed bilateral pneumonia involving the patient's lungs. What does bilateral mean?",
+    "options": [
+      "Affecting both sides",
+      "Affecting one side",
+      "Affecting the lower lobes",
+      "Spreading quickly"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Bilateral means involving both sides of the body. Affecting one side describes a unilateral condition."
+  },
+  {
+    "id": "HESI-VOC-007",
+    "section": "vocabulary",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiVocabulary",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Ms. Diaz has lived with chronic back pain for more than ten years. What does chronic mean?",
+    "options": [
+      "Severe and disabling",
+      "Sudden in onset",
+      "Returning after a full cure",
+      "Lasting a long time"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Chronic describes a condition that lasts a long time or keeps recurring. Severe and disabling describes intensity, not duration."
+  },
+  {
+    "id": "HESI-VOC-008",
+    "section": "vocabulary",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiVocabulary",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The charge nurse asked for a concise handoff report so the next shift could start quickly. What does concise mean?",
+    "options": [
+      "Detailed and thorough",
+      "Brief and clear",
+      "Written and signed",
+      "Formal and polite"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Concise means expressing much in few words. Detailed and thorough is the opposite idea, since a thorough report is usually longer."
+  },
+  {
+    "id": "HESI-VOC-009",
+    "section": "vocabulary",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiVocabulary",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Cold temperatures cause blood vessels in the skin to constrict, which reduces heat loss. What does constrict mean?",
+    "options": [
+      "Widen",
+      "Rupture",
+      "Harden",
+      "Narrow"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Constrict means to become narrower or tighter. Widen is the opposite meaning, which is to dilate."
+  },
+  {
+    "id": "HESI-VOC-010",
+    "section": "vocabulary",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiVocabulary",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Discharge is contingent on the patient walking safely down the hall without assistance. What does contingent mean?",
+    "options": [
+      "Scheduled after",
+      "Dependent on",
+      "Prevented by",
+      "Recorded with"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Contingent on means dependent on a condition being met. Scheduled after is tempting, but it describes timing rather than a requirement."
+  },
+  {
+    "id": "HESI-VOC-011",
+    "section": "vocabulary",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiVocabulary",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The cumulative effect of several sedating medications left the older patient very drowsy. What does cumulative mean?",
+    "options": [
+      "Occurring all at once",
+      "Wearing off very gradually",
+      "Building up over time",
+      "Unexpected and rare"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Cumulative means increasing by successive additions, so the effects add up. Occurring all at once is tempting but ignores the gradual buildup."
+  },
+  {
+    "id": "HESI-VOC-012",
+    "section": "vocabulary",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiVocabulary",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "After the stroke, the patient had a speech deficit that required several weeks of therapy. What does deficit mean?",
+    "options": [
+      "Lack or impairment",
+      "Excess",
+      "Improvement",
+      "Temporary slowing down"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A deficit is a lack or impairment in function. Temporary slowing down is tempting, but a deficit is a loss, not simply a postponement."
+  },
+  {
+    "id": "HESI-VOC-013",
+    "section": "vocabulary",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiVocabulary",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Bed alarms are used to deter patients at high risk for falls from getting up alone. What does deter mean?",
+    "options": [
+      "Discourage",
+      "Encourage",
+      "Help or support",
+      "Remind"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Deter means to discourage or prevent an action. Remind is tempting, but reminding does not imply trying to stop the action."
+  },
+  {
+    "id": "HESI-VOC-014",
+    "section": "vocabulary",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiVocabulary",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The eye doctor used drops to dilate the patient's pupils before the retinal exam. What does dilate mean?",
+    "options": [
+      "Narrow",
+      "Moisten",
+      "Widen",
+      "Numb"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Dilate means to widen or enlarge an opening. Narrow is the opposite, which is to constrict."
+  },
+  {
+    "id": "HESI-VOC-015",
+    "section": "vocabulary",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiVocabulary",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The nurse palpated the patient's distended abdomen and reported the finding to the provider. What does distended mean?",
+    "options": [
+      "Tender to the touch",
+      "Swollen outward",
+      "Hard and rigid",
+      "Sunken inward"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Distended means stretched or swollen from internal pressure. Tender to the touch describes pain, not size or shape."
+  },
+  {
+    "id": "HESI-VOC-016",
+    "section": "vocabulary",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiVocabulary",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Secondhand smoke can exacerbate asthma symptoms in children who live in the home. What does exacerbate mean?",
+    "options": [
+      "Trigger for the first time",
+      "Relieve",
+      "Hide",
+      "Make worse"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Exacerbate means to make an existing problem worse. Trigger for the first time is tempting, but exacerbate refers to worsening something already present."
+  },
+  {
+    "id": "HESI-VOC-017",
+    "section": "vocabulary",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiVocabulary",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The child was febrile, so the nurse gave acetaminophen as ordered by the provider. What does febrile mean?",
+    "options": [
+      "Having shaking chills",
+      "Having a fever",
+      "Very weak",
+      "Dehydrated"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Febrile means feverish, with an elevated body temperature. Chills often accompany a fever, but they are not what the word means."
+  },
+  {
+    "id": "HESI-VOC-018",
+    "section": "vocabulary",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiVocabulary",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "After the nerve injury, the patient's left arm was flaccid and hung loosely at his side. What does flaccid mean?",
+    "options": [
+      "Limp",
+      "Rigid",
+      "Swollen",
+      "Numb"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Flaccid means limp or lacking muscle tone. Numb is tempting, but it refers to lost sensation rather than lost tone."
+  },
+  {
+    "id": "HESI-VOC-019",
+    "section": "vocabulary",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiVocabulary",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Sudden restlessness and a falling blood pressure may signal impending shock in a trauma patient. What does impending mean?",
+    "options": [
+      "Recently resolved",
+      "Hidden",
+      "Mild",
+      "About to happen"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Impending means about to occur. Hidden is tempting because early shock can be subtle, but impending refers to timing."
+  },
+  {
+    "id": "HESI-VOC-020",
+    "section": "vocabulary",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiVocabulary",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Type 2 diabetes often has an insidious onset, so many people are unaware they have it. What does insidious mean?",
+    "options": [
+      "Sudden and dramatic",
+      "Easily cured",
+      "Gradual and subtle",
+      "Spread from person to person"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Insidious means developing gradually and without obvious signs. Sudden and dramatic is the opposite of an insidious onset."
+  },
+  {
+    "id": "HESI-VOC-021",
+    "section": "vocabulary",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiVocabulary",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The patient's blood pressure was labile, rising and falling repeatedly throughout the shift. What does labile mean?",
+    "options": [
+      "Elevated",
+      "Low",
+      "Unstable",
+      "Holding steady"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Labile means unstable or changing rapidly. Elevated is tempting because the pressure rose at times, but labile describes fluctuation."
+  },
+  {
+    "id": "HESI-VOC-022",
+    "section": "vocabulary",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiVocabulary",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Tuberculosis can remain latent in the body for years before it causes any symptoms. What does latent mean?",
+    "options": [
+      "Cured",
+      "Highly contagious",
+      "Rapidly getting worse",
+      "Present but inactive"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Latent means present but not yet active or visible. Cured is tempting, but a latent infection is still in the body."
+  },
+  {
+    "id": "HESI-VOC-023",
+    "section": "vocabulary",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiVocabulary",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The nurse noticed the toddler was lethargic and difficult to wake for his feeding. What does lethargic mean?",
+    "options": [
+      "Drowsy and sluggish",
+      "Irritable and crying",
+      "Confused and agitated",
+      "Pale and cool"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Lethargic means abnormally drowsy, sluggish, and hard to arouse. Confused and agitated describes a restless state, not a slowed one."
+  },
+  {
+    "id": "HESI-VOC-024",
+    "section": "vocabulary",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiVocabulary",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A sudden drop in oxygen saturation is an ominous sign in a patient with pneumonia. What does ominous mean?",
+    "options": [
+      "Commonly seen",
+      "Threatening",
+      "Encouraging",
+      "Unclear"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Ominous means threatening or suggesting that something bad will happen. Unclear is tempting, but an ominous sign is a clear warning."
+  },
+  {
+    "id": "HESI-VOC-025",
+    "section": "vocabulary",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiVocabulary",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The patient showed overt signs of anxiety, including pacing and trembling hands. What does overt mean?",
+    "options": [
+      "Hidden",
+      "Mild",
+      "Happening occasionally",
+      "Openly visible"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Overt means open and easily observed. Hidden is the opposite meaning, which is covert."
+  },
+  {
+    "id": "HESI-VOC-026",
+    "section": "vocabulary",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiVocabulary",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The patient described paroxysmal coughing spells that came on without warning at night. What does paroxysmal mean?",
+    "options": [
+      "Continuous",
+      "Producing mucus",
+      "Occurring in sudden episodes",
+      "Painless"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Paroxysmal means occurring in sudden, recurring attacks. Continuous is tempting, but paroxysmal events come and go."
+  },
+  {
+    "id": "HESI-VOC-027",
+    "section": "vocabulary",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiVocabulary",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The nurse documented a precipitous drop in the patient's blood pressure after the first dose. What does precipitous mean?",
+    "options": [
+      "Gradual",
+      "Abrupt and steep",
+      "Slight",
+      "Expected"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Precipitous means sudden and steep. Gradual is the opposite, describing a slow change."
+  },
+  {
+    "id": "HESI-VOC-028",
+    "section": "vocabulary",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiVocabulary",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A family history of heart disease can predispose a person to having a heart attack. What does predispose mean?",
+    "options": [
+      "Make more likely",
+      "Guarantee",
+      "Protect a person against",
+      "Diagnose early"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Predispose means to make someone more susceptible to something. Guarantee is tempting, but it overstates the meaning because the outcome is not certain."
+  },
+  {
+    "id": "HESI-VOC-029",
+    "section": "vocabulary",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiVocabulary",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Because the wound edges were _____ and pulling apart, the nurse notified the provider. Which word best completes the sentence?",
+    "options": [
+      "gaping",
+      "intact",
+      "occluded",
+      "flushed"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Gaping means wide open, which fits wound edges that are pulling apart. Intact is the opposite and would mean the edges are closed."
+  },
+  {
+    "id": "HESI-VOC-030",
+    "section": "vocabulary",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiVocabulary",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The dressing must be _____ to water so the incision stays dry in the shower. Which word best completes the sentence?",
+    "options": [
+      "exposed",
+      "impervious",
+      "permeable",
+      "highly absorbent"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Impervious means not allowing fluid to pass through. Permeable is tempting, but it means the opposite, letting water through."
+  },
+  {
+    "id": "HESI-VOC-031",
+    "section": "vocabulary",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiVocabulary",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Before giving any medication, the nurse must _____ the patient's identity using two identifiers. Which word best completes the sentence?",
+    "options": [
+      "initiate",
+      "suppress",
+      "assume",
+      "verify"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Verify means to confirm that something is true or accurate. Assume is tempting, but assuming identity is exactly what the two-identifier check prevents."
+  },
+  {
+    "id": "HESI-VOC-032",
+    "section": "vocabulary",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiVocabulary",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In the emergency department, nurses perform _____ to sort patients by urgency so the sickest are treated first. Which word best completes the sentence?",
+    "options": [
+      "diagnosis",
+      "prognosis",
+      "triage",
+      "rationale"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Triage is the process of sorting patients by the urgency of their needs. Diagnosis is tempting, but it identifies a disease rather than setting treatment order."
+  },
+  {
+    "id": "HESI-GR-001",
+    "section": "grammar",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiGrammar",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In the sentence \"The nurse quickly checked the IV line before rounds,\" what part of speech is the word quickly?",
+    "options": [
+      "Adjective",
+      "Verb",
+      "Adverb",
+      "Preposition"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Quickly modifies the verb checked and tells how the action was done, so it is an adverb. It is not an adjective because it does not describe a noun."
+  },
+  {
+    "id": "HESI-GR-002",
+    "section": "grammar",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiGrammar",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The hospital ethics committee _____ its recommendation at the end of each month. Select the word that makes this sentence grammatically correct:",
+    "options": [
+      "announces",
+      "announce",
+      "were announcing",
+      "have announced"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A collective noun acting as a single unit takes a singular verb, and the singular pronoun its confirms this. Announce and have announced are plural forms that do not agree with committee."
+  },
+  {
+    "id": "HESI-GR-003",
+    "section": "grammar",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiGrammar",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A student is checking subject-verb agreement in sentences whose subjects are joined by and. Which sentence is grammatically correct?",
+    "options": [
+      "The nurse and the aide is on break now.",
+      "The nurse and the aide are on break now.",
+      "The nurse and the aide was on break now.",
+      "The nurse and the aide has been on break now."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Two subjects joined by and form a plural compound subject, so the plural verb are is required. Is, was, and has are singular verbs."
+  },
+  {
+    "id": "HESI-GR-004",
+    "section": "grammar",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiGrammar",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Each of the nursing students _____ a stethoscope for the skills lab. Select the word that makes this sentence grammatically correct:",
+    "options": [
+      "have",
+      "are bringing",
+      "were needing",
+      "has"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Each is a singular indefinite pronoun, so it takes the singular verb has. The phrase of the nursing students does not change the subject, which makes have tempting but incorrect."
+  },
+  {
+    "id": "HESI-GR-005",
+    "section": "grammar",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiGrammar",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The charge nurse is assigning patients to two staff members on the night shift. Which sentence is grammatically correct?",
+    "options": [
+      "The charge nurse gave the assignment to Maria and I.",
+      "The charge nurse gave the assignment to Maria and myself.",
+      "The charge nurse gave the assignment to she and Maria.",
+      "The charge nurse gave the assignment to Maria and me."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The object of the preposition to requires the objective case, so me is correct. I and she are subject pronouns, and myself is reflexive and needs an earlier I in the sentence."
+  },
+  {
+    "id": "HESI-GR-006",
+    "section": "grammar",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiGrammar",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A unit manager is reviewing a scheduling memo for errors in pronoun and antecedent agreement. Which sentence is grammatically correct?",
+    "options": [
+      "Each of the units submitted their schedules on time.",
+      "Each of the units submitted its schedule on time.",
+      "Each of the units submit its schedule on time.",
+      "Each of the units have submitted their schedule."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Each is singular and refers to units, which are things, so the singular pronoun its and the singular verb submitted agree. Their is plural and does not match the singular antecedent each."
+  },
+  {
+    "id": "HESI-GR-007",
+    "section": "grammar",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiGrammar",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "By the time the ambulance arrived, the patient _____ consciousness. Select the word that makes this sentence grammatically correct:",
+    "options": [
+      "had regained",
+      "regains",
+      "will regain",
+      "has regained"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The past perfect had regained shows an action completed before another past action, the ambulance arriving. Has regained is present perfect and does not fit a past-time sequence."
+  },
+  {
+    "id": "HESI-GR-008",
+    "section": "grammar",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiGrammar",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Since breakfast, the patient has _____ three full glasses of water. Select the word that makes this sentence grammatically correct:",
+    "options": [
+      "drank",
+      "drinked",
+      "drunk",
+      "drunken"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Drink is irregular (drink, drank, drunk), and the helping verb has requires the past participle drunk. Drank is the simple past and cannot follow has."
+  },
+  {
+    "id": "HESI-GR-009",
+    "section": "grammar",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiGrammar",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The new pain medication had a calming _____ on the anxious patient. Select the word that makes this sentence grammatically correct:",
+    "options": [
+      "effect",
+      "affect",
+      "affects",
+      "effects"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Effect is a noun meaning a result, and the article a signals that a singular noun is needed. Affect is usually a verb meaning to influence."
+  },
+  {
+    "id": "HESI-GR-010",
+    "section": "grammar",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiGrammar",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "\"The students left there books in the lounge, but they're coming back for them.\" Which word is used incorrectly in the sentence?",
+    "options": [
+      "left",
+      "they're",
+      "there",
+      "them"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The possessive their should replace there, which refers to a place. They're, a contraction of they are, is used correctly."
+  },
+  {
+    "id": "HESI-GR-011",
+    "section": "grammar",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiGrammar",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A nurse educator is checking a handout for commonly confused words before printing it. Which sentence is grammatically correct?",
+    "options": [
+      "Everyone accept the new hire finished the training.",
+      "The lab sent it's results early this morning.",
+      "She charted the vital signs and than left.",
+      "The unit replaced its broken scanner last week."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Its is the possessive form and needs no apostrophe. The other sentences confuse accept with except, it's with its, and than with then."
+  },
+  {
+    "id": "HESI-GR-012",
+    "section": "grammar",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiGrammar",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "After lunch, the tired patient wants to _____ down for a short nap. Select the word that makes this sentence grammatically correct:",
+    "options": [
+      "lay",
+      "lie",
+      "laid",
+      "lain"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Lie means to recline and takes no object, which fits a person resting. Lay means to place something and requires an object, so it is the common but incorrect choice."
+  },
+  {
+    "id": "HESI-GR-013",
+    "section": "grammar",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiGrammar",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A clinical instructor marks a progress note for usage errors in comparisons and modifiers. Which sentence is grammatically correct?",
+    "options": [
+      "The patient is doing good after her surgery.",
+      "There were fewer falls on the unit this month.",
+      "There were less complaints on the unit this month.",
+      "The patient is feeling more better today."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Fewer is used with countable nouns such as falls. The other choices misuse good as an adverb, use less with a countable noun, and double the comparative in more better."
+  },
+  {
+    "id": "HESI-GR-014",
+    "section": "grammar",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiGrammar",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "To _____ should the nurse give the patient's lab results? Select the word that makes this sentence grammatically correct:",
+    "options": [
+      "who",
+      "whose",
+      "who's",
+      "whom"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Whom is the object of the preposition to, so the objective form is required. Who is a subject pronoun and would fit only if it performed the action."
+  },
+  {
+    "id": "HESI-GR-015",
+    "section": "grammar",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiGrammar",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A hospital administrator is drafting a report explaining why several surgeries were delayed. Which sentence is grammatically correct?",
+    "options": [
+      "The principle reason for the delay was short staffing.",
+      "The principles reason for the delay was short staffing.",
+      "The principal reason for the delay was short staffing.",
+      "The principle's reason for the delay was short staffing."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Principal used as an adjective means main or most important. Principle is a noun meaning a rule or belief, so it cannot describe reason."
+  },
+  {
+    "id": "HESI-GR-016",
+    "section": "grammar",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiGrammar",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The provider will discuss the biopsy results _____ at the next office visit. Select the word that makes this sentence grammatically correct:",
+    "options": [
+      "further",
+      "farther",
+      "farthest",
+      "furthest"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Further refers to a greater extent or degree, as in discussing something more. Farther refers to physical distance, which does not fit a discussion."
+  },
+  {
+    "id": "HESI-GR-017",
+    "section": "grammar",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiGrammar",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "\"Please bring this urine specimen down to the lab before you leave the unit.\" Which word is used incorrectly in the sentence?",
+    "options": [
+      "specimen",
+      "before",
+      "bring",
+      "leave"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Take is used for movement away from the speaker, and the specimen is going away to the lab. Bring is used for movement toward the speaker."
+  },
+  {
+    "id": "HESI-GR-018",
+    "section": "grammar",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiGrammar",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The charge nurse divided the afternoon tasks _____ the four nursing assistants. Select the word that makes this sentence grammatically correct:",
+    "options": [
+      "between",
+      "among",
+      "beside",
+      "along"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Among is used for three or more people or things, such as four assistants. Between is generally used for two."
+  },
+  {
+    "id": "HESI-GR-019",
+    "section": "grammar",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiGrammar",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "After a long double shift, two nurses wrote a note to their manager. Which sentence is grammatically correct?",
+    "options": [
+      "The to nurses were too tired to finish charting.",
+      "The two nurses were to tired to finish charting.",
+      "The two nurses were too tired too finish charting.",
+      "The two nurses were too tired to finish charting."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Two is the number, too means excessively, and to begins the infinitive to finish. Each other sentence swaps one of these homophones."
+  },
+  {
+    "id": "HESI-GR-020",
+    "section": "grammar",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiGrammar",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A nurse is texting a supply request that lists several items for a dressing change. Which sentence has correct punctuation?",
+    "options": [
+      "Please bring gauze, tape, and saline to room 4.",
+      "Please bring gauze tape, and saline to room 4.",
+      "Please bring, gauze, tape, and saline to room 4.",
+      "Please bring gauze, tape and, saline to room 4."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Commas separate each item in a series, with the final comma placed before and. No comma belongs between the verb and its object, and none follows the conjunction."
+  },
+  {
+    "id": "HESI-GR-021",
+    "section": "grammar",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiGrammar",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A nurse is documenting what happened after an emergency on the cardiac unit. Which sentence has correct punctuation?",
+    "options": [
+      "After the code ended, the team met to debrief.",
+      "After the code ended the team, met to debrief.",
+      "After, the code ended the team met to debrief.",
+      "After the code, ended the team met to debrief."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A comma follows an introductory dependent clause, here After the code ended. The other choices place the comma inside the clause or between the subject and verb."
+  },
+  {
+    "id": "HESI-GR-022",
+    "section": "grammar",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiGrammar",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two closely related independent clauses describe a patient's condition before discharge. Which sentence has correct punctuation?",
+    "options": [
+      "The patient is stable; and she can go home tomorrow.",
+      "The patient is stable, she can go home tomorrow.",
+      "The patient is stable: she, can go home tomorrow.",
+      "The patient is stable; she can go home tomorrow."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A semicolon joins two independent clauses without a conjunction. A comma alone creates a comma splice, and a semicolon should not be followed by and here."
+  },
+  {
+    "id": "HESI-GR-023",
+    "section": "grammar",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiGrammar",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A unit manager is posting a reminder about protective equipment needed for an isolation room. Which sentence has correct punctuation?",
+    "options": [
+      "Bring: the following items gloves, masks, and gowns.",
+      "Bring the following items: gloves, masks, and gowns.",
+      "Bring the following items; gloves, masks, and gowns.",
+      "Bring the following: items, gloves, masks, and gowns."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A colon introduces a list after a complete independent clause, such as Bring the following items. A semicolon cannot introduce a list, and a colon should not split a verb from its object."
+  },
+  {
+    "id": "HESI-GR-024",
+    "section": "grammar",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiGrammar",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Both _____ charts were missing from the rack at the front desk. Select the word that makes this sentence grammatically correct:",
+    "options": [
+      "patient's",
+      "patients",
+      "patients'",
+      "patients's"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Both signals more than one patient, so the plural possessive patients' is needed, with the apostrophe after the s. Patient's shows possession by only one patient."
+  },
+  {
+    "id": "HESI-GR-025",
+    "section": "grammar",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiGrammar",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A nursing student is writing a reflection that quotes an instruction given during a breathing treatment. Which sentence has correct punctuation?",
+    "options": [
+      "The nurse said \"Take a slow, deep breath\".",
+      "The nurse said, \"Take a slow, deep breath\".",
+      "The nurse said, Take a slow, \"deep breath.\"",
+      "The nurse said, \"Take a slow, deep breath.\""
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A comma introduces the quotation, and in American usage the period goes inside the closing quotation mark. Placing the period outside the quotation marks is the tempting error."
+  },
+  {
+    "id": "HESI-GR-026",
+    "section": "grammar",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiGrammar",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A patient is filling out a history form describing a past hospital stay in another state. Which sentence is grammatically correct?",
+    "options": [
+      "We visited Mercy Hospital in Denver last June.",
+      "We visited mercy hospital in Denver last june.",
+      "We visited Mercy hospital in denver last June.",
+      "We visited Mercy Hospital in Denver last june."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Proper nouns such as the full name of a hospital, a city, and a month are capitalized. Each other choice leaves at least one of these in lowercase."
+  },
+  {
+    "id": "HESI-GR-027",
+    "section": "grammar",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiGrammar",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A student is reviewing shift notes to identify sentence fragments and run-on sentences. Which of the following is a complete sentence?",
+    "options": [
+      "Because the patient was still in pain.",
+      "Waiting for the doctor in room 6.",
+      "The patient rested quietly after the procedure.",
+      "The patient rested she felt much better."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A complete sentence has a subject and a verb and expresses a complete thought. Because the patient was still in pain is a dependent clause, and the last choice is a run-on."
+  },
+  {
+    "id": "HESI-GR-028",
+    "section": "grammar",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiGrammar",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two related thoughts about a tired patient need to be joined correctly in a care note. Which sentence has correct punctuation?",
+    "options": [
+      "The patient was tired, she slept all afternoon.",
+      "The patient was tired, so she slept all afternoon.",
+      "The patient was tired she slept all afternoon.",
+      "The patient was tired so, she slept all afternoon."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A comma plus a coordinating conjunction such as so correctly joins two independent clauses. Using only a comma creates a comma splice, and using no punctuation creates a run-on."
+  },
+  {
+    "id": "HESI-GR-029",
+    "section": "grammar",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiGrammar",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A nursing applicant is describing her hobbies in a personal statement for admission. Which sentence is grammatically correct?",
+    "options": [
+      "She enjoys reading, hiking, and to swim.",
+      "She enjoys reading, hiking, and swimming.",
+      "She enjoys to read, hiking, and swimming.",
+      "She enjoys reading, to hike, and she swims."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Items in a series should share the same grammatical form, here three -ing words. Mixing an infinitive such as to swim with -ing forms breaks parallel structure."
+  },
+  {
+    "id": "HESI-GR-030",
+    "section": "grammar",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiGrammar",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A nurse is reviewing an incident narrative for misplaced and dangling modifiers. Which sentence is grammatically correct?",
+    "options": [
+      "Walking into the room, the monitor beeped loudly.",
+      "Having finished charting, the computer was shut down.",
+      "Walking into the room, the nurse heard the monitor beep.",
+      "The aide returned the wallet to the patient that was lost."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An opening modifier must describe the subject that follows it, and here the nurse is the one walking. The other choices suggest that a monitor walked, a computer charted, or a patient was lost."
+  },
+  {
+    "id": "HESI-GR-031",
+    "section": "grammar",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiGrammar",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "After surgery, the patient didn't want _____ visitors in his room. Select the word that makes this sentence grammatically correct:",
+    "options": [
+      "any",
+      "no",
+      "none",
+      "nothing"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Didn't is already negative, so pairing it with any avoids a double negative. Using no with didn't creates two negatives, which is nonstandard."
+  },
+  {
+    "id": "HESI-GR-032",
+    "section": "grammar",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiGrammar",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A nurse is writing an incident report for the hospital risk management office. Which sentence uses the most appropriate formal language?",
+    "options": [
+      "The guy was just lying on the floor, totally out of it.",
+      "So the patient basically ended up on the floor.",
+      "Patient was like on the floor by his bed.",
+      "The patient was found on the floor beside the bed."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Formal writing uses precise, objective wording without slang. Phrases such as the guy, totally out of it, and like are informal."
+  },
+  {
+    "id": "HESI-BIO-001",
+    "section": "biology",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiBiology",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A student measures how tall bean plants grow when given different amounts of fertilizer. In this experiment, plant height is which type of variable?",
+    "options": [
+      "Dependent variable",
+      "Independent variable",
+      "Controlled variable",
+      "Control group"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Plant height is what the student measures in response to the change, so it is the dependent variable. The amount of fertilizer is the independent variable because the student changes it on purpose."
+  },
+  {
+    "id": "HESI-BIO-002",
+    "section": "biology",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiBiology",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In a trial of a new blood pressure medication, one group of patients receives an identical-looking sugar pill. What is the purpose of this group?",
+    "options": [
+      "To increase the sample size of the study",
+      "To serve as a control for comparison",
+      "To act as the independent variable",
+      "To test a second hypothesis at once"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The placebo group is the control group: it gets everything except the drug, so researchers can compare results and see the drug's true effect. The independent variable is the medication itself, not the group that lacks it."
+  },
+  {
+    "id": "HESI-BIO-003",
+    "section": "biology",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiBiology",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Proteins such as hemoglobin and insulin are polymers built from which type of monomer?",
+    "options": [
+      "Monosaccharides",
+      "Nucleotides",
+      "Amino acids",
+      "Fatty acids"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Proteins are chains of amino acids joined by peptide bonds. Nucleotides are the monomers of nucleic acids, and monosaccharides are the monomers of carbohydrates."
+  },
+  {
+    "id": "HESI-BIO-004",
+    "section": "biology",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiBiology",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which property of water allows it to dissolve salts and many other substances, making it the main solvent in living cells?",
+    "options": [
+      "Its low specific heat",
+      "Its nonpolar structure",
+      "Its low density as a liquid",
+      "Its polarity"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Water is polar, with a partially negative oxygen end and partially positive hydrogen ends, so it attracts ions and other polar molecules into solution. Nonpolar substances such as oils do not dissolve in water, and water actually has a high specific heat."
+  },
+  {
+    "id": "HESI-BIO-005",
+    "section": "biology",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiBiology",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which statement is one of the basic principles of the cell theory?",
+    "options": [
+      "All cells come from preexisting cells",
+      "All cells contain a nucleus",
+      "All cells contain chloroplasts",
+      "Cells can arise from nonliving matter"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Cell theory states that all living things are made of cells, the cell is the basic unit of life, and all cells come from preexisting cells. Bacteria have no nucleus, so not all cells contain one."
+  },
+  {
+    "id": "HESI-BIO-006",
+    "section": "biology",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiBiology",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A bacterium is a prokaryotic cell. Which structure would you expect to find inside it?",
+    "options": [
+      "A membrane-bound nucleus",
+      "Ribosomes",
+      "Mitochondria",
+      "A Golgi apparatus"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Prokaryotes lack membrane-bound organelles but still have ribosomes to make proteins. The nucleus, mitochondria, and Golgi apparatus are membrane-bound and found only in eukaryotic cells."
+  },
+  {
+    "id": "HESI-BIO-007",
+    "section": "biology",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiBiology",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A pancreatic cell makes digestive enzymes for secretion. Which organelle modifies, sorts, and packages these proteins into vesicles?",
+    "options": [
+      "Smooth endoplasmic reticulum",
+      "Lysosome",
+      "Golgi apparatus",
+      "Nucleolus"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Golgi apparatus receives proteins from the rough ER, modifies and sorts them, and ships them out in vesicles. Smooth ER makes lipids and detoxifies drugs, and lysosomes digest worn-out materials."
+  },
+  {
+    "id": "HESI-BIO-008",
+    "section": "biology",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiBiology",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which structure is found in plant cells but not in animal cells?",
+    "options": [
+      "Mitochondrion",
+      "Cell membrane",
+      "Ribosome",
+      "Cell wall"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Plant cells have a rigid cellulose cell wall outside the cell membrane, along with chloroplasts, while animal cells have only the membrane. Both cell types contain mitochondria, so that option is wrong."
+  },
+  {
+    "id": "HESI-BIO-009",
+    "section": "biology",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiBiology",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A red blood cell is placed in a hypotonic solution, such as distilled water. What will most likely happen to the cell?",
+    "options": [
+      "It will swell and may burst",
+      "It will shrink and shrivel",
+      "It will stay the same size",
+      "It will actively pump water out"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A hypotonic solution has a lower solute concentration than the cell, so water moves into the cell by osmosis and it swells and may lyse. Shrinking (crenation) happens in a hypertonic solution, and an isotonic solution causes no net change."
+  },
+  {
+    "id": "HESI-BIO-010",
+    "section": "biology",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiBiology",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The sodium-potassium pump moves sodium ions out of a nerve cell against their concentration gradient. Which process is this?",
+    "options": [
+      "Simple diffusion",
+      "Active transport",
+      "Osmosis",
+      "Facilitated diffusion"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Moving a substance against its concentration gradient requires energy from ATP, which defines active transport. Facilitated diffusion uses a carrier protein but only moves substances down their gradient, with no energy cost."
+  },
+  {
+    "id": "HESI-BIO-011",
+    "section": "biology",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiBiology",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How do enzymes such as salivary amylase increase the rate of chemical reactions in the body?",
+    "options": [
+      "By raising body temperature",
+      "By being used up in the reaction",
+      "By lowering the activation energy",
+      "By adding extra reactant molecules to the cell"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Enzymes are biological catalysts that lower the activation energy a reaction needs, so it proceeds quickly at body temperature. Enzymes are not consumed; the same enzyme molecule can be reused many times."
+  },
+  {
+    "id": "HESI-BIO-012",
+    "section": "biology",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiBiology",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which stage of aerobic cellular respiration produces the largest share of the roughly 36 ATP made from one glucose molecule?",
+    "options": [
+      "Glycolysis",
+      "Krebs cycle",
+      "Fermentation",
+      "Electron transport chain"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The electron transport chain on the inner mitochondrial membrane uses oxygen as the final electron acceptor and makes about 32 of the 36 ATP. Glycolysis and the Krebs cycle each make only 2 ATP directly."
+  },
+  {
+    "id": "HESI-BIO-013",
+    "section": "biology",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiBiology",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "During a sprint, a runner's muscle cells run short of oxygen. Which substance builds up as the cells switch to anaerobic respiration?",
+    "options": [
+      "Lactic acid",
+      "Ethanol",
+      "Carbon dioxide",
+      "Oxygen"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Without enough oxygen, human muscle cells use lactic acid fermentation so glycolysis can keep making a small amount of ATP, and lactic acid accumulates. Ethanol fermentation occurs in yeast, not in human cells."
+  },
+  {
+    "id": "HESI-BIO-014",
+    "section": "biology",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiBiology",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In photosynthesis, chloroplasts use light energy to convert which reactants into glucose and oxygen?",
+    "options": [
+      "Glucose and oxygen",
+      "Carbon dioxide and water",
+      "Oxygen and water",
+      "Carbon dioxide and ATP only"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The overall equation is 6CO2 + 6H2O + light energy -> C6H12O6 + 6O2: the light reactions split water and release oxygen, and the Calvin cycle fixes carbon dioxide into sugar. Glucose and oxygen are the products, not the reactants."
+  },
+  {
+    "id": "HESI-BIO-015",
+    "section": "biology",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiBiology",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A sample of double-stranded DNA is 30% adenine. What percentage of its bases are guanine?",
+    "options": [
+      "30%",
+      "70%",
+      "20%",
+      "40%"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Adenine pairs with thymine, so thymine is also 30%, leaving 40% for guanine and cytosine together. Guanine pairs with cytosine in equal amounts, so each is 20%."
+  },
+  {
+    "id": "HESI-BIO-016",
+    "section": "biology",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiBiology",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A DNA template strand has the base sequence TAC. What is the sequence of the mRNA codon transcribed from it?",
+    "options": [
+      "ATG",
+      "TAC",
+      "UTG",
+      "AUG"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "During transcription, RNA pairs A with U, T with A, G with C, and C with G, so TAC becomes AUG. ATG would be a DNA copy, but RNA uses uracil instead of thymine. AUG is the start codon that ribosomes read during translation."
+  },
+  {
+    "id": "HESI-BIO-017",
+    "section": "biology",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiBiology",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "When a human skin cell divides by mitosis to repair a wound, what is the result?",
+    "options": [
+      "Two genetically identical diploid cells",
+      "Four genetically different haploid cells",
+      "Two haploid gametes",
+      "Four identical diploid cells"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Mitosis produces two daughter cells that are diploid and genetically identical to the parent, which supports growth and tissue repair. Four genetically different haploid cells are the product of meiosis."
+  },
+  {
+    "id": "HESI-BIO-018",
+    "section": "biology",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiBiology",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A human cell with 46 chromosomes undergoes meiosis. How many chromosomes does each resulting gamete contain?",
+    "options": [
+      "46",
+      "23",
+      "92",
+      "12"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Meiosis has two divisions and halves the chromosome number, so each human egg or sperm is haploid with 23 chromosomes. Fertilization then restores the diploid number of 46."
+  },
+  {
+    "id": "HESI-BIO-019",
+    "section": "biology",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiBiology",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In pea plants, purple flowers (P) are dominant over white flowers (p). If two heterozygous plants (Pp x Pp) are crossed, what is the expected phenotype ratio?",
+    "options": [
+      "1 purple : 1 white",
+      "All purple",
+      "3 purple : 1 white",
+      "1 PP : 2 Pp : 1 pp"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Punnett square gives 1 PP : 2 Pp : 1 pp, and both PP and Pp show the dominant purple color, so the phenotype ratio is 3 purple : 1 white. The 1:2:1 ratio describes genotypes, not phenotypes."
+  },
+  {
+    "id": "HESI-BIO-020",
+    "section": "biology",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiBiology",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A red snapdragon is crossed with a white snapdragon, and all of the offspring have pink flowers. This inheritance pattern is called:",
+    "options": [
+      "Codominance",
+      "Sex-linked inheritance",
+      "Complete dominance",
+      "Incomplete dominance"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "In incomplete dominance, the heterozygote shows a blended, intermediate phenotype such as pink. In codominance both traits appear fully side by side, as in type AB blood."
+  },
+  {
+    "id": "HESI-BIO-021",
+    "section": "biology",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiBiology",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Red-green color blindness is an X-linked recessive trait. A carrier mother and a father with normal vision have a son. What is the chance the son is color-blind?",
+    "options": [
+      "50%",
+      "25%",
+      "100%",
+      "0%"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A son gets his only X chromosome from his mother, and a carrier mother passes the affected X half the time, so the chance is 50%. The 25% figure is the chance for any child of this couple, not for a son."
+  },
+  {
+    "id": "HESI-BIO-022",
+    "section": "biology",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiBiology",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In the scientific name Homo sapiens, the word Homo identifies which level of taxonomic classification?",
+    "options": [
+      "Species",
+      "Genus",
+      "Family",
+      "Order"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Binomial nomenclature gives the genus (capitalized) followed by the species epithet (lowercase), so Homo is the genus. The species is named by both words together, Homo sapiens, not by Homo alone."
+  },
+  {
+    "id": "HESI-BIO-023",
+    "section": "biology",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiBiology",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A patient with a viral upper respiratory infection asks for antibiotics. Which statement best explains why antibiotics will not help?",
+    "options": [
+      "Viruses are much larger than bacterial cells",
+      "Viruses are protected by a thick cell wall",
+      "Viruses lack the cell structures antibiotics target",
+      "Viruses divide by binary fission outside of host cells"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Antibiotics act on bacterial structures such as cell walls and ribosomes, but viruses have no cell wall, ribosomes, or metabolism of their own and replicate only inside host cells. Binary fission is how bacteria reproduce, not viruses."
+  },
+  {
+    "id": "HESI-BIO-024",
+    "section": "biology",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiBiology",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A population of bacteria is exposed to an antibiotic, and a few resistant bacteria survive and reproduce. Over generations, most of the population becomes resistant. This is an example of:",
+    "options": [
+      "Inheritance of acquired characteristics",
+      "Genetic engineering",
+      "Spontaneous generation",
+      "Natural selection"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Individuals with a heritable trait that helps them survive leave more offspring, so the trait becomes common; this is natural selection. The antibiotic did not cause resistance to develop in individuals, which is the discredited idea of inheriting acquired characteristics."
+  },
+  {
+    "id": "HESI-CHM-001",
+    "section": "chemistry",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The isotope chlorine-37 has an atomic number of 17. How many neutrons are in the nucleus of one chlorine-37 atom?",
+    "options": [
+      "20",
+      "17",
+      "37",
+      "54"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Neutrons equal mass number minus atomic number: 37 - 17 = 20. Seventeen is the number of protons; isotopes of chlorine differ only in their number of neutrons."
+  },
+  {
+    "id": "HESI-CHM-002",
+    "section": "chemistry",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A magnesium atom has 12 protons. How many electrons does the magnesium ion Mg2+ contain?",
+    "options": [
+      "12",
+      "10",
+      "14",
+      "2"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A 2+ charge means the atom lost two electrons, so Mg2+ has 12 - 2 = 10 electrons. Gaining two electrons (14) would produce a negative ion, not a positive one."
+  },
+  {
+    "id": "HESI-CHM-003",
+    "section": "chemistry",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which of the following elements has the highest electronegativity on the periodic table?",
+    "options": [
+      "Potassium",
+      "Iodine",
+      "Fluorine",
+      "Carbon"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Electronegativity increases across a period and up a group, making fluorine, at the top right, the most electronegative element. Iodine is also a halogen but sits lower in the group, so it attracts electrons less strongly."
+  },
+  {
+    "id": "HESI-CHM-004",
+    "section": "chemistry",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Moving from left to right across a period of the periodic table, how does atomic radius generally change?",
+    "options": [
+      "It increases",
+      "It stays the same",
+      "It increases, then decreases",
+      "It decreases"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Across a period, protons are added while electrons fill the same energy level, so the stronger nuclear pull draws electrons closer and the radius shrinks. Atomic radius increases going down a group, not across a period, and ionization energy rises as radius shrinks."
+  },
+  {
+    "id": "HESI-CHM-005",
+    "section": "chemistry",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Sodium and potassium are soft, highly reactive metals that form +1 ions. To which group of the periodic table do they belong?",
+    "options": [
+      "Alkali metals",
+      "Alkaline earth metals",
+      "Halogens",
+      "Noble gases"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Group 1 alkali metals have one valence electron, which they lose easily to form +1 ions. Alkaline earth metals are in group 2 and form +2 ions."
+  },
+  {
+    "id": "HESI-CHM-006",
+    "section": "chemistry",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Oxygen has the electron configuration 1s2 2s2 2p4. How many valence electrons does an oxygen atom have?",
+    "options": [
+      "2",
+      "6",
+      "8",
+      "4"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Valence electrons are those in the outermost shell, here n = 2, which holds 2 + 4 = 6 electrons. Eight is the total electron count, and 4 counts only the 2p electrons."
+  },
+  {
+    "id": "HESI-CHM-007",
+    "section": "chemistry",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Sodium chloride (NaCl) is held together by ionic bonds. How does an ionic bond form?",
+    "options": [
+      "Two atoms share a pair of electrons",
+      "Atoms share electrons unequally",
+      "One atom transfers electrons to another",
+      "A hydrogen atom is attracted to a nearby oxygen atom"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "In an ionic bond, sodium transfers its valence electron to chlorine, forming Na+ and Cl- ions that attract each other. Sharing electrons, equally or unequally, describes covalent bonds."
+  },
+  {
+    "id": "HESI-CHM-008",
+    "section": "chemistry",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Water has an unusually high boiling point for such a small molecule. Which attractions between neighboring water molecules cause this?",
+    "options": [
+      "Nonpolar covalent bonds",
+      "Ionic bonds",
+      "Metallic bonds",
+      "Hydrogen bonds"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The partially positive hydrogen of one water molecule is attracted to the partially negative oxygen of another, forming hydrogen bonds that take extra energy to break. The O-H bonds inside each molecule are polar covalent, but they hold atoms together within a molecule, not between molecules."
+  },
+  {
+    "id": "HESI-CHM-009",
+    "section": "chemistry",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the correct chemical name for the ionic compound with the formula CaCl2?",
+    "options": [
+      "Calcium chloride",
+      "Calcium dichloride",
+      "Calcium chlorine",
+      "Carbon dichloride"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Ionic compounds are named metal first, then the nonmetal with an -ide ending; prefixes such as di- are used only for covalent compounds. Ca is calcium, not carbon (C)."
+  },
+  {
+    "id": "HESI-CHM-010",
+    "section": "chemistry",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Water has a molar mass of 18 g/mol. Using Avogadro's number, about how many water molecules are in 36 grams of water?",
+    "options": [
+      "6.02 x 10^23",
+      "1.20 x 10^24",
+      "3.01 x 10^23",
+      "2.00 x 10^23"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "36 g divided by 18 g/mol equals 2 moles, and 2 x 6.022 x 10^23 = 1.20 x 10^24 molecules. The value 6.02 x 10^23 is the count for only 1 mole."
+  },
+  {
+    "id": "HESI-CHM-011",
+    "section": "chemistry",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "When the equation H2 + O2 -> H2O is balanced using the smallest whole numbers, what is the coefficient of H2O?",
+    "options": [
+      "1",
+      "4",
+      "2",
+      "3"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The balanced equation is 2H2 + O2 -> 2H2O, giving 4 hydrogen atoms and 2 oxygen atoms on each side. A coefficient of 1 leaves only one oxygen atom on the product side."
+  },
+  {
+    "id": "HESI-CHM-012",
+    "section": "chemistry",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which type of chemical reaction is shown by the equation AgNO3 + NaCl -> AgCl + NaNO3?",
+    "options": [
+      "Synthesis",
+      "Single replacement",
+      "Decomposition",
+      "Double replacement"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Two compounds exchange partners (Ag joins Cl and Na joins NO3), which is a double replacement reaction. In single replacement, one element replaces another element in a single compound."
+  },
+  {
+    "id": "HESI-CHM-013",
+    "section": "chemistry",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Solution X has a pH of 3 and solution Y has a pH of 5. How does the hydrogen ion concentration of X compare with that of Y?",
+    "options": [
+      "100 times greater",
+      "2 times greater",
+      "10 times greater",
+      "100 times smaller"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Each pH unit is a tenfold change, and X is 2 units lower, so its H+ concentration is 10 x 10 = 100 times greater. A lower pH means more acidic, so X cannot have less H+ than Y."
+  },
+  {
+    "id": "HESI-CHM-014",
+    "section": "chemistry",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In the reaction Zn + Cu2+ -> Zn2+ + Cu, what happens to the zinc atom?",
+    "options": [
+      "It gains electrons and is reduced",
+      "It loses electrons and is oxidized",
+      "It gains protons and becomes oxidized",
+      "It loses electrons and is reduced"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Zinc goes from 0 to +2 by losing two electrons, and OIL RIG (oxidation is loss, reduction is gain) means zinc is oxidized. The copper ions gain those electrons and are reduced."
+  },
+  {
+    "id": "HESI-CHM-015",
+    "section": "chemistry",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "On a cold morning, water vapor turns directly into frost on a car windshield without becoming liquid first. Which phase change is this?",
+    "options": [
+      "Sublimation",
+      "Condensation",
+      "Deposition",
+      "Evaporation"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Deposition is the change from gas directly to solid. Sublimation is the reverse, solid directly to gas, and condensation is gas to liquid."
+  },
+  {
+    "id": "HESI-CHM-016",
+    "section": "chemistry",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A gas occupies 6.0 L at 1.0 atm. At constant temperature, what volume will it occupy if the pressure rises to 3.0 atm?",
+    "options": [
+      "18 L",
+      "3.0 L",
+      "9.0 L",
+      "2.0 L"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Boyle's law, P1V1 = P2V2, gives V2 = (1.0 x 6.0) / 3.0 = 2.0 L because pressure and volume are inversely related. An answer of 18 L would mean volume rose with pressure, which is backwards."
+  },
+  {
+    "id": "HESI-CHM-017",
+    "section": "chemistry",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A nurse dissolves 0.50 mole of sodium chloride in enough water to make 250 mL of solution. What is the molarity?",
+    "options": [
+      "2.0 M",
+      "0.50 M",
+      "0.125 M",
+      "1.0 M"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Molarity is moles of solute per liter of solution: 0.50 mol / 0.250 L = 2.0 M. Multiplying by 0.250 L instead of dividing gives 0.125 M, a common error; here sodium chloride is the solute and water is the solvent."
+  },
+  {
+    "id": "HESI-CHM-018",
+    "section": "chemistry",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What effect does adding a catalyst have on a chemical reaction?",
+    "options": [
+      "It raises the temperature of the reacting mixture",
+      "It lowers the activation energy needed",
+      "It is used up and must be replaced",
+      "It changes which products the reaction forms"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A catalyst provides a pathway with lower activation energy, so the reaction goes faster, and the catalyst itself is not consumed. It does not change which products form or the overall energy released."
+  },
+  {
+    "id": "HESI-CHM-019",
+    "section": "chemistry",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Iodine-131, a beta emitter used in thyroid treatment, has a half-life of 8 days. If a patient receives 80 mg, how much remains after 24 days?",
+    "options": [
+      "40 mg",
+      "20 mg",
+      "10 mg",
+      "26.7 mg"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Twenty-four days is three half-lives, so 80 mg -> 40 mg -> 20 mg -> 10 mg. The amount halves each period rather than dropping by one third each time."
+  },
+  {
+    "id": "HESI-CHM-020",
+    "section": "chemistry",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A cold pack feels cold because the dissolving process inside it absorbs heat from the surroundings. This kind of process is described as:",
+    "options": [
+      "Exothermic",
+      "Combustion",
+      "Sublimation",
+      "Endothermic"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An endothermic process absorbs heat, so the pack draws energy from your skin and feels cold. Exothermic processes, such as combustion or a hot pack, release heat."
+  },
+  {
+    "id": "HESI-ANP-001",
+    "section": "anatomy",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiAnatomy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which sequence lists the levels of structural organization in the body from simplest to most complex?",
+    "options": [
+      "Cell, chemical, tissue, organ, organ system",
+      "Chemical, cell, tissue, organ, organ system",
+      "Chemical, tissue, cell, organ, organ system",
+      "Cell, tissue, chemical, organ system, organ"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Atoms and molecules (chemical level) form cells, cells form tissues, tissues form organs, and organs work together as organ systems. Starting with the cell skips the chemical level that cells are built from."
+  },
+  {
+    "id": "HESI-ANP-002",
+    "section": "anatomy",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiAnatomy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Using standard directional terms for the upper limb, how is the wrist positioned relative to the elbow?",
+    "options": [
+      "Proximal",
+      "Medial",
+      "Distal",
+      "Superficial"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Distal means farther from the point where a limb attaches to the trunk, and the wrist is farther from the shoulder than the elbow is. Proximal is the opposite term and would describe the elbow relative to the wrist."
+  },
+  {
+    "id": "HESI-ANP-003",
+    "section": "anatomy",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiAnatomy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A surgeon describes a cut that divides the body into equal right and left halves. Which plane is this?",
+    "options": [
+      "Midsagittal plane",
+      "Frontal (coronal) plane",
+      "Transverse plane",
+      "Oblique plane"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A midsagittal (median) plane runs vertically down the midline and creates equal right and left halves. A frontal (coronal) plane is also vertical but separates the body into anterior and posterior parts."
+  },
+  {
+    "id": "HESI-ANP-004",
+    "section": "anatomy",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiAnatomy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which body cavity, separated from the abdominopelvic cavity below it by the diaphragm, contains the heart and lungs?",
+    "options": [
+      "Abdominal cavity",
+      "Pelvic cavity",
+      "Cranial cavity",
+      "Thoracic cavity"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The thoracic cavity is the superior part of the ventral cavity and holds the heart, lungs, and mediastinum. The abdominal cavity lies below the diaphragm and contains organs such as the stomach, liver, and intestines."
+  },
+  {
+    "id": "HESI-ANP-005",
+    "section": "anatomy",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiAnatomy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which of the four primary tissue types covers body surfaces, lines hollow organs, and forms glands?",
+    "options": [
+      "Epithelial tissue",
+      "Connective tissue",
+      "Nervous tissue",
+      "Smooth muscle tissue"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Epithelial tissue forms sheets that cover surfaces, line cavities and vessels, and makes up glands. Connective tissue, such as bone, blood, and fat, mainly supports and binds other tissues rather than lining surfaces."
+  },
+  {
+    "id": "HESI-ANP-006",
+    "section": "anatomy",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiAnatomy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "When body temperature rises, the hypothalamus triggers sweating until temperature returns to normal. Which process does this describe?",
+    "options": [
+      "Positive feedback loop",
+      "Anabolic metabolism",
+      "Negative feedback loop",
+      "Adaptive immune response"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "In negative feedback, the response reverses the original change and brings the variable back to its set point, which is how most homeostasis works. Positive feedback amplifies a change, as in labor contractions, rather than correcting it."
+  },
+  {
+    "id": "HESI-ANP-007",
+    "section": "anatomy",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiAnatomy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which layer of the skin has no blood vessels and is continually renewed by cell division in its deepest layer?",
+    "options": [
+      "Dermis",
+      "Hypodermis",
+      "Reticular layer",
+      "Epidermis"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The epidermis is avascular stratified squamous epithelium that gets nutrients by diffusion and is renewed from the stratum basale. The dermis lies beneath it and contains blood vessels, nerves, hair follicles, and glands."
+  },
+  {
+    "id": "HESI-ANP-008",
+    "section": "anatomy",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiAnatomy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The adult skeleton has 206 bones. Which of these bones belongs to the appendicular skeleton rather than the axial skeleton?",
+    "options": [
+      "Sternum",
+      "Scapula",
+      "Sacrum",
+      "Hyoid bone"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The appendicular skeleton includes the limbs plus the pectoral and pelvic girdles, and the scapula is part of the pectoral girdle. The sacrum may seem appendicular because the hip bones attach to it, but it is part of the vertebral column and therefore axial."
+  },
+  {
+    "id": "HESI-ANP-009",
+    "section": "anatomy",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiAnatomy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which bone cells break down bone matrix and release calcium into the blood?",
+    "options": [
+      "Osteoblasts",
+      "Osteocytes",
+      "Osteoclasts",
+      "Chondrocytes"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Osteoclasts are large cells that resorb bone, freeing calcium and phosphate into the blood. Osteoblasts do the opposite: they build new bone matrix."
+  },
+  {
+    "id": "HESI-ANP-010",
+    "section": "anatomy",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiAnatomy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "According to the sliding filament theory, what happens inside a sarcomere when a skeletal muscle contracts?",
+    "options": [
+      "Myosin heads pull actin toward the center",
+      "Actin and myosin filaments shorten in length",
+      "The Z discs move farther apart",
+      "Calcium is pumped out of the cytoplasm"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Myosin heads bind actin and pull the thin filaments toward the center of the sarcomere, so the Z discs move closer together. The filaments themselves do not shorten; they slide past one another."
+  },
+  {
+    "id": "HESI-ANP-011",
+    "section": "anatomy",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiAnatomy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which type of muscle tissue is striated, involuntary, and joined by intercalated discs?",
+    "options": [
+      "Skeletal muscle",
+      "Smooth muscle",
+      "Myoepithelial cells",
+      "Cardiac muscle"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Cardiac muscle is striated and involuntary, and its intercalated discs let impulses pass quickly from cell to cell. Skeletal muscle is also striated but is under voluntary control and lacks intercalated discs."
+  },
+  {
+    "id": "HESI-ANP-012",
+    "section": "anatomy",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiAnatomy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A patient is frightened before surgery. Which response is caused by the sympathetic nervous system?",
+    "options": [
+      "Constricted pupils",
+      "Increased heart rate",
+      "Increased digestive activity",
+      "Slowed breathing rate"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The sympathetic division drives the fight-or-flight response, raising heart rate, dilating pupils, and speeding breathing. Increased digestive activity is a parasympathetic, rest-and-digest effect."
+  },
+  {
+    "id": "HESI-ANP-013",
+    "section": "anatomy",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiAnatomy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which brain region coordinates balance, posture, and smooth, precise voluntary movements?",
+    "options": [
+      "Cerebellum",
+      "Hypothalamus",
+      "Medulla oblongata",
+      "Frontal lobe"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The cerebellum compares intended movements with actual ones to keep motion smooth and maintain balance. The frontal lobe of the cerebrum starts voluntary movement but does not fine-tune coordination."
+  },
+  {
+    "id": "HESI-ANP-014",
+    "section": "anatomy",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiAnatomy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "When blood glucose falls between meals, the pancreas releases which hormone to raise it back toward normal?",
+    "options": [
+      "Insulin",
+      "Calcitonin",
+      "Aldosterone",
+      "Glucagon"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Glucagon from pancreatic alpha cells signals the liver to break down glycogen and release glucose. Insulin, from beta cells, has the opposite effect and lowers blood glucose."
+  },
+  {
+    "id": "HESI-ANP-015",
+    "section": "anatomy",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiAnatomy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which gland secretes a hormone that raises blood calcium levels by stimulating osteoclast activity?",
+    "options": [
+      "Thyroid gland",
+      "Parathyroid glands",
+      "Adrenal cortex",
+      "Posterior pituitary"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Parathyroid hormone (PTH) raises blood calcium by increasing bone resorption, kidney reabsorption of calcium, and vitamin D activation. The thyroid gland makes calcitonin, which lowers blood calcium."
+  },
+  {
+    "id": "HESI-ANP-016",
+    "section": "anatomy",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiAnatomy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Deoxygenated blood leaves the right ventricle and travels to the lungs through which vessel?",
+    "options": [
+      "Aorta",
+      "Superior vena cava",
+      "Pulmonary artery",
+      "Pulmonary veins"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The pulmonary artery carries oxygen-poor blood from the right ventricle to the lungs, beginning pulmonary circulation. The pulmonary veins carry oxygenated blood the other way, from the lungs back to the left atrium."
+  },
+  {
+    "id": "HESI-ANP-017",
+    "section": "anatomy",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiAnatomy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which structure in the right atrium is called the natural pacemaker of the heart?",
+    "options": [
+      "Atrioventricular node",
+      "Bundle of His",
+      "Purkinje fibers",
+      "Sinoatrial node"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The sinoatrial (SA) node fires impulses at the fastest intrinsic rate, about 60 to 100 per minute, so it sets the heart rhythm. The atrioventricular node delays and relays the impulse but only takes over as pacemaker if the SA node fails."
+  },
+  {
+    "id": "HESI-ANP-018",
+    "section": "anatomy",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiAnatomy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In an emergency with no time for typing, which blood type is considered the universal donor for red blood cells?",
+    "options": [
+      "O negative",
+      "AB positive",
+      "A negative",
+      "B positive"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Type O negative red cells carry no A, B, or Rh antigens, so recipients' antibodies will not attack them. AB positive is the universal recipient, not the universal donor."
+  },
+  {
+    "id": "HESI-ANP-019",
+    "section": "anatomy",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiAnatomy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "During breathing, oxygen diffuses into the pulmonary capillaries across the thin walls of which structures?",
+    "options": [
+      "Bronchi",
+      "Alveoli",
+      "Trachea",
+      "Pleural membranes"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Air drawn in when the diaphragm contracts travels through the trachea and bronchi to the alveoli, where gas exchange occurs across a very thin membrane. The bronchi only conduct air and are too thick-walled for gas exchange."
+  },
+  {
+    "id": "HESI-ANP-020",
+    "section": "anatomy",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiAnatomy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Most nutrient absorption takes place in which organ, whose villi and microvilli greatly increase its surface area?",
+    "options": [
+      "Stomach",
+      "Large intestine (colon)",
+      "Small intestine",
+      "Esophagus"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The small intestine receives bile from the liver and enzymes from the pancreas, then absorbs most nutrients through its villi. The large intestine mainly absorbs water and electrolytes, not most nutrients."
+  },
+  {
+    "id": "HESI-ANP-021",
+    "section": "anatomy",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiAnatomy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In the nephron, blood plasma is first filtered out of the blood at which structure?",
+    "options": [
+      "Glomerulus",
+      "Loop of Henle",
+      "Collecting duct",
+      "Distal convoluted tubule"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The glomerulus is a capillary tuft where blood pressure forces water and small solutes into Bowman's capsule, forming filtrate. The loop of Henle comes later and concentrates urine by reabsorbing water and salt."
+  },
+  {
+    "id": "HESI-ANP-022",
+    "section": "anatomy",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiAnatomy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Where in the female reproductive system does fertilization of an egg by a sperm normally occur?",
+    "options": [
+      "Uterus",
+      "Fallopian tube",
+      "Ovarian follicle",
+      "Cervix"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Fertilization normally occurs in the ampulla of the fallopian (uterine) tube, and the zygote then travels to the uterus. The uterus is where the embryo implants, not where fertilization takes place."
+  },
+  {
+    "id": "HESI-ANP-023",
+    "section": "anatomy",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiAnatomy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which white blood cells, part of adaptive immunity, mature into plasma cells that produce antibodies?",
+    "options": [
+      "Helper T cells",
+      "Neutrophils",
+      "Macrophages",
+      "B lymphocytes"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Activated B lymphocytes, often in lymph nodes, become plasma cells that secrete antibodies specific to one antigen. Helper T cells assist B cells but do not make antibodies themselves, and neutrophils and macrophages belong to innate immunity."
+  },
+  {
+    "id": "HESI-ANP-024",
+    "section": "anatomy",
+    "test": 1,
+    "module": 1,
+    "domain": "hesiAnatomy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which photoreceptor cells in the retina provide color vision and sharp detail in bright light?",
+    "options": [
+      "Rods",
+      "Ganglion cells",
+      "Cones",
+      "Bipolar cells"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Cones, concentrated in the fovea, respond to different wavelengths and give color and fine detail. Rods are more sensitive to dim light but do not detect color."
+  }
+]

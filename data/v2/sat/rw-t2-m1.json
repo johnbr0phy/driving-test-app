@@ -1,0 +1,596 @@
+[
+  {
+    "id": "SAT-RW-401",
+    "section": "rw",
+    "test": 2,
+    "module": 1,
+    "domain": "craftStructure",
+    "skill": "Words in context",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "Unlike the explosive eruptions of steep volcanoes such as Mount St. Helens, the eruptions of Hawaii's Kilauea are usually ______: lava emerges in slow-moving streams and spreads across the landscape rather than being hurled into the air.",
+    "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+    "options": [
+      "gentle",
+      "sudden",
+      "infrequent",
+      "destructive"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The text contrasts Kilauea with explosive volcanoes and describes lava that emerges slowly and spreads rather than being hurled, so \"gentle\" is the most precise fit. \"Destructive\" is the strongest distractor because lava can damage property, but the text says nothing about damage; it is describing the manner of the eruption, and \"sudden\" and \"infrequent\" are contradicted by the slow, steady flow described."
+  },
+  {
+    "id": "SAT-RW-402",
+    "section": "rw",
+    "test": 2,
+    "module": 1,
+    "domain": "craftStructure",
+    "skill": "Words in context",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "In the open-air playhouses of Elizabethan London, scenery was ______: a few props and the actors' own descriptions of where they stood were enough to turn the bare wooden stage into a forest, a battlefield, or a royal court.",
+    "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+    "options": [
+      "minimal",
+      "elaborate",
+      "costly",
+      "permanent"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The colon introduces an explanation that \"a few props\" and the actors' words were enough to establish a setting on a \"bare\" stage, which shows that scenery was minimal. \"Permanent\" is the strongest distractor because the stage itself was fixed, but the text is about how little scenery was used, not how long it stayed in place, and \"elaborate\" and \"costly\" describe the opposite of a bare stage."
+  },
+  {
+    "id": "SAT-RW-403",
+    "section": "rw",
+    "test": 2,
+    "module": 1,
+    "domain": "craftStructure",
+    "skill": "Words in context",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Economist Richard Thaler's \"Anomalies\" columns, which began appearing in 1987, were deliberately ______ in tone: rather than simply cataloging cases in which consumers behaved irrationally, Thaler openly needled colleagues who insisted that such behavior could be explained away.",
+    "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+    "options": [
+      "provocative",
+      "conciliatory",
+      "impartial",
+      "tentative"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The text says Thaler \"openly needled\" colleagues instead of simply reporting findings, which describes a tone meant to provoke a response. \"Impartial\" is the strongest distractor because the columns did catalog evidence, but needling opponents is the opposite of a neutral stance, and \"conciliatory\" and \"tentative\" both suggest a softness that the text rules out."
+  },
+  {
+    "id": "SAT-RW-404",
+    "section": "rw",
+    "test": 2,
+    "module": 1,
+    "domain": "craftStructure",
+    "skill": "Words in context",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "Because a plant cannot flee a hungry caterpillar, its chemical defenses must be ______: the volatile compounds released from a chewed leaf drift to neighboring leaves and even to neighboring plants, priming them to produce their own toxins before the insect arrives.",
+    "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+    "options": [
+      "anticipatory",
+      "indiscriminate",
+      "ephemeral",
+      "reciprocal"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The colon explains that the compounds prime other leaves and plants \"before the insect arrives,\" so the defenses act in advance of an attack, which is what \"anticipatory\" means. \"Reciprocal\" is the strongest distractor because neighboring plants are involved, but the text describes signals moving in one direction from the damaged leaf outward, not an exchange, and nothing suggests the response is random or short-lived."
+  },
+  {
+    "id": "SAT-RW-405",
+    "section": "rw",
+    "test": 2,
+    "module": 1,
+    "domain": "craftStructure",
+    "skill": "Text structure and purpose",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "In 1843, Ada Lovelace published an English translation of an Italian article describing Charles Babbage's proposed Analytical Engine, adding notes of her own that ran to nearly three times the length of the original. __In the longest of these notes she laid out, step by step, how the machine could be made to calculate a sequence of numbers known as Bernoulli numbers.__ Historians have debated how much of the surrounding analysis was Lovelace's alone, but the note remains the first published procedure written to be carried out by a general-purpose machine, and it is the reason she is often called the first computer programmer.",
+    "stem": "Which choice best describes the function of the underlined sentence in the text as a whole?",
+    "options": [
+      "It identifies the specific content of Lovelace's notes that underlies the title given to her at the end of the text.",
+      "It explains why historians have questioned whether the notes were entirely Lovelace's own work.",
+      "It contrasts Lovelace's mathematical approach with the approach taken in the original Italian article.",
+      "It suggests that the Analytical Engine was never completed because its calculations were too complex."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The underlined sentence describes the step-by-step procedure in Lovelace's longest note, and the final sentence calls that note the first published procedure for a general-purpose machine and the reason she is called the first programmer, so the sentence supplies the basis for that title. Choice B is the strongest distractor because the next sentence mentions a historical debate, but the underlined sentence describes what the note contains, not why its authorship has been questioned."
+  },
+  {
+    "id": "SAT-RW-406",
+    "section": "rw",
+    "test": 2,
+    "module": 1,
+    "domain": "craftStructure",
+    "skill": "Text structure and purpose",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "The following text is adapted from Edith Wharton's 1905 novel The House of Mirth.\n\nSelden paused in surprise. In the afternoon rush of the station his eye had been caught by Miss Lily Bart, standing apart from the crowd with an air of indecision that was unusual for her. It was like her, he reflected, to set people wondering; the simplest of her actions always seemed to be the product of far-reaching plans. What was she doing in town at this dead season, and why did she linger on the platform when the train she had evidently meant to take had already pulled away? He found himself turning over one explanation after another, each less convincing than the last, and realized that the only way to settle the question was to walk up and ask her.",
+    "stem": "Which choice best describes the overall structure of the text?",
+    "options": [
+      "It describes a man's observation of a woman in a public place and then traces his unsuccessful attempts to account for her behavior.",
+      "It contrasts the woman's reputation for careful planning with the genuine confusion she reveals to the man.",
+      "It presents the man's initial judgment of the woman and then shows that judgment being overturned by her explanation.",
+      "It establishes the setting of a crowded station and then shifts to the woman's own thoughts about the man watching her."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The text opens with Selden noticing Lily Bart in the station, moves through his questions about why she is there, and ends with him discarding one explanation after another and deciding to ask her directly, which is a sequence of observation followed by failed speculation. Choice B is the strongest distractor because Lily's air of indecision does seem out of character, but she reveals nothing to Selden in the text; everything we learn comes from his own guesses, and no explanation from her ever arrives."
+  },
+  {
+    "id": "SAT-RW-407",
+    "section": "rw",
+    "test": 2,
+    "module": 1,
+    "domain": "craftStructure",
+    "skill": "Cross-text connections",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "**Text 1**\n\nWhen a caterpillar chews on a sagebrush leaf, the damaged plant releases a cloud of airborne chemicals, and nearby plants that take in those chemicals ramp up their own defenses. Botanist Rina Solberg argues that this amounts to a warning system: the damaged plant communicates danger to its neighbors, and the neighbors act on the message.\n\n**Text 2**\n\nThe airborne chemicals released by a damaged leaf reach the plant's own undamaged leaves far more reliably than they reach any neighbor, and experiments show that these within-plant signals are what allow a single plant to defend its whole canopy. Neighbors that happen to detect the chemicals may benefit, but there is no evidence that the releasing plant gains anything from alerting them. Calling the process communication, ecologist Tomas Brandt cautions, credits the damaged plant with a purpose it may not have.",
+    "stem": "Based on the texts, how would the author of Text 2 most likely respond to the claim in Text 1?",
+    "options": [
+      "By suggesting that the chemicals primarily serve the plant that releases them, so that neighbors' responses do not show that warning them is the purpose",
+      "By denying that neighboring plants actually change their defenses in response to chemicals released by a damaged plant",
+      "By agreeing that plants warn their neighbors but arguing that the warning benefits only plants of the same species",
+      "By proposing that the chemicals are released to attract predators of the caterpillar rather than to alert other plants"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Text 2 argues that the chemicals mainly coordinate defenses within the damaged plant itself and that neighbors merely \"happen to detect\" them, so Brandt would say the neighbors' response does not prove the plant is warning them. Choice B is the strongest distractor, but Text 2 concedes that neighbors \"may benefit\" from detecting the chemicals; it disputes the purpose of the release, not whether neighbors respond."
+  },
+  {
+    "id": "SAT-RW-408",
+    "section": "rw",
+    "test": 2,
+    "module": 1,
+    "domain": "craftStructure",
+    "skill": "Cross-text connections",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "**Text 1**\n\nSports physiotherapist Marta Kowalczyk argues that static stretching, in which each muscle is held at its extended length for thirty seconds or more, should precede every training session. Stretched muscle tolerates greater elongation before tearing, she notes, so a warm-up built around stretching should lower the incidence of injury across the board.\n\n**Text 2**\n\nPooled results from randomized trials paint a more complicated picture. Among runners, military recruits, and recreational athletes, static stretching before exercise made no measurable difference to overall injury rates, and sprinters who stretched produced slightly less power in the minutes that followed. The one consistent exception involves muscle strains in sports that demand explosive sprinting, where stretching routines do appear to reduce injuries of that particular type.",
+    "stem": "Based on the texts, how would the author of Text 2 most likely respond to the claim in Text 1?",
+    "options": [
+      "By acknowledging that stretching may reduce one kind of injury in certain sports while rejecting the idea that it lowers injury rates in general",
+      "By arguing that athletes should avoid stretching entirely because it reduces the power they are able to produce",
+      "By questioning whether stretched muscle really tolerates greater elongation before tearing",
+      "By claiming that the benefits Kowalczyk describes apply only to recreational athletes rather than to competitive ones"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Text 2 reports no overall change in injury rates but concedes an exception for muscle strains in sprinting sports, so its author would accept a narrow benefit while rejecting Kowalczyk's claim that stretching lowers injuries \"across the board.\" Choice B is the strongest distractor because Text 2 mentions reduced power, but it describes the effect as slight and goes on to identify a situation in which stretching helps, which is not a call to avoid it entirely."
+  },
+  {
+    "id": "SAT-RW-409",
+    "section": "rw",
+    "test": 2,
+    "module": 1,
+    "domain": "infoIdeas",
+    "skill": "Central ideas and details",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "The following text is adapted from Frederick Douglass's 1845 autobiography Narrative of the Life of Frederick Douglass. Douglass describes how, as an enslaved boy in Baltimore, he learned to read.\n\nThe method that served me best was to make friends of the white boys I met on the streets; as many of them as I could, I turned into teachers. With their help, gathered a little at a time and in a dozen different places, I at last learned to read. Whenever I was sent on an errand I carried a book, and by finishing the errand quickly I could win a few minutes for a lesson before I was expected back. I also carried bread, which was plentiful in the house where I lived, and I traded it to those hungry boys for something I valued far more: the bread of knowledge.",
+    "stem": "Which choice best states the main idea of the text?",
+    "options": [
+      "Douglass learned to read by turning ordinary encounters and errands into opportunities for informal lessons.",
+      "Douglass believed that the boys who taught him cared more about the bread he brought than about his education.",
+      "Douglass found that reading was easier to learn from children than it would have been from adults.",
+      "Douglass was frequently punished for taking too long on the errands he was sent to complete."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Every detail in the text, from befriending boys on the street to carrying a book on errands and trading bread for lessons, shows Douglass turning everyday situations into chances to learn, so choice A states the main idea. Choice B is the strongest distractor because the boys were hungry and accepted bread, but Douglass presents the trade as his own strategy and never suggests the boys were indifferent to teaching him."
+  },
+  {
+    "id": "SAT-RW-410",
+    "section": "rw",
+    "test": 2,
+    "module": 1,
+    "domain": "infoIdeas",
+    "skill": "Central ideas and details",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Geologists once pictured the magma beneath a large volcano as a vast, fully molten chamber waiting to erupt. Studies of zircon crystals, which grow in cooling magma and preserve a chemical record of its temperature, have changed that picture. Zircons from several large eruptions show that the magma spent most of its time underground as a cold, mostly crystalline mush, too stiff to erupt, and was reheated into a liquid capable of erupting only briefly, perhaps within decades of the eruption itself. The finding suggests that a volcanic system can sit quietly for thousands of years and then become dangerous with relatively little lead time.",
+    "stem": "Which choice best states the main idea of the text?",
+    "options": [
+      "Evidence from zircon crystals indicates that magma beneath large volcanoes is usually stored in a cold, stiff state and becomes capable of erupting only shortly before an eruption.",
+      "Zircon crystals are the most reliable tool geologists have for predicting exactly when a particular volcano will erupt.",
+      "Large volcanoes erupt more often than geologists once believed because their magma is rarely fully molten.",
+      "Geologists have abandoned the idea that magma is stored underground for long periods before an eruption."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The text uses zircon evidence to replace the old picture of a molten chamber with one of cold crystalline mush that is reheated only shortly before eruption, which choice A captures. Choice C is the strongest distractor because the text does discuss the timing of eruptions, but it says nothing about eruptions becoming more frequent; its point is about how quickly a quiet system can become eruptible."
+  },
+  {
+    "id": "SAT-RW-411",
+    "section": "rw",
+    "test": 2,
+    "module": 1,
+    "domain": "infoIdeas",
+    "skill": "Command of evidence (textual)",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Behavioral economists have proposed that many workers fail to join employer retirement plans not because they have decided against saving but because enrolling requires filling out forms, choosing funds, and setting a contribution rate, a set of small tasks that people tend to postpone indefinitely. If this explanation is correct, the researchers reasoned, changing the default so that workers are enrolled unless they opt out should sharply raise participation even though the plan itself and the workers' preferences remain the same.",
+    "stem": "Which finding, if true, would most directly support the researchers' reasoning?",
+    "options": [
+      "At a company that switched to automatic enrollment, participation among new hires rose from under half to roughly nine in ten, and few of those enrolled later chose to opt out.",
+      "Workers at companies with automatic enrollment tend to contribute a smaller share of their pay than workers who enrolled on their own initiative.",
+      "In surveys, most workers who have not enrolled in a retirement plan say that they intend to enroll at some point in the future.",
+      "Companies that offer a large number of investment funds have lower participation rates than companies that offer only a few."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The researchers predict that making enrollment the default will sharply raise participation, and choice A reports exactly that outcome, with the low opt-out rate confirming that workers were not opposed to saving. Choice C is the strongest distractor because stated intentions fit the idea of postponement, but it does not test the prediction about changing the default, which is what the researchers' reasoning hinges on."
+  },
+  {
+    "id": "SAT-RW-412",
+    "section": "rw",
+    "test": 2,
+    "module": 1,
+    "domain": "infoIdeas",
+    "skill": "Command of evidence (textual)",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "The first printed edition of Shakespeare's Hamlet, published in 1603, is far shorter than the versions printed later, and many of its speeches are garbled or compressed. Literary scholar Ines Carvalho argues that this edition was not an early draft by Shakespeare but a text reconstructed from memory by an actor who had performed a minor role, such as the guard Marcellus, in the play and then sold his recollection to a printer.",
+    "stem": "Which finding, if true, would most directly support Carvalho's argument?",
+    "options": [
+      "The scenes in which Marcellus appears match the later editions almost word for word, while scenes in which he is absent are the most garbled and condensed.",
+      "The 1603 edition was issued by a printer who also published accurate texts of several other plays of the period.",
+      "Several speeches in the 1603 edition contain lines that appear in no later version of the play.",
+      "The later, longer editions of Hamlet contain more text than could have been performed in a single afternoon."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "If an actor who played Marcellus reconstructed the play from memory, he would recall his own scenes accurately and the rest imperfectly, which is precisely the pattern choice A describes. Choice C is the strongest distractor because unique lines might seem to tell us something about the text's origin, but material found nowhere else fits an early draft at least as well as a faulty memory and so does not favor Carvalho's explanation."
+  },
+  {
+    "id": "SAT-RW-413",
+    "section": "rw",
+    "test": 2,
+    "module": 1,
+    "domain": "infoIdeas",
+    "skill": "Command of evidence (quantitative)",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Researchers asked members of a college basketball team to extend their nightly sleep to at least ten hours for several weeks and compared the players' performance on four measures before and after the sleep extension.\n\n| Measure | Before sleep extension | After sleep extension |\n|---|---|---|\n| Free-throw accuracy (percent) | 74 | 82 |\n| Three-point accuracy (percent) | 61 | 69 |\n| Sprint time (seconds) | 16.8 | 16.1 |\n| Reaction time (milliseconds) | 352 | 331 |\n\nThe researchers concluded that extending sleep improved performance on tasks requiring precision as well as on tasks requiring speed, a conclusion supported by the fact that ______",
+    "stem": "Which choice most effectively uses data from the table to complete the statement?",
+    "options": [
+      "free-throw accuracy rose from 74 to 82 percent while sprint time fell from 16.8 to 16.1 seconds after the sleep extension.",
+      "three-point accuracy rose from 61 to 69 percent, a larger gain than the gain in free-throw accuracy.",
+      "reaction time fell from 352 to 331 milliseconds, while sprint time fell by less than a second.",
+      "free-throw accuracy and three-point accuracy both rose by eight percentage points after the sleep extension."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The conclusion covers both precision and speed, and choice A pairs a shooting measure that improved with a sprint time that fell, giving evidence for both halves of the claim. Choice D is the strongest distractor because it is accurate, but it reports only the two shooting measures and says nothing about speed, while choice B misreads the table, since both shooting measures improved by the same eight points."
+  },
+  {
+    "id": "SAT-RW-414",
+    "section": "rw",
+    "test": 2,
+    "module": 1,
+    "domain": "infoIdeas",
+    "skill": "Inferences",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Before electronic machines existed, the word \"computer\" referred to a person, usually a woman, employed to carry out long calculations by hand. When the ENIAC, one of the first electronic general-purpose computers, was completed in 1945, the six people chosen to program it were drawn from this pool of human computers, since they already knew how to break a problem into a sequence of arithmetic steps. Yet when the machine was unveiled to the press the following year, the programmers were not introduced, and newspaper accounts credited the demonstration entirely to the engineers who had built the hardware. Historians who rely only on such accounts therefore ______",
+    "stem": "Which choice most logically completes the text?",
+    "options": [
+      "are likely to underestimate the contribution that human computers made to early electronic computing.",
+      "can be confident that programming the ENIAC required less skill than building it.",
+      "should conclude that the engineers who built the ENIAC also wrote its first programs.",
+      "will find that the ENIAC's programmers were credited instead in the engineering journals of the time."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The text establishes that the programmers came from the ranks of human computers and that press accounts left them out, so a historian relying on those accounts would miss their role. Choice C is the strongest distractor because the newspapers credited the engineers, but the text has already told us that the programmers were separate people, so the conclusion in choice C is one the text shows to be mistaken rather than one that follows from it."
+  },
+  {
+    "id": "SAT-RW-415",
+    "section": "rw",
+    "test": 2,
+    "module": 1,
+    "domain": "infoIdeas",
+    "skill": "Inferences",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "Ash from a large eruption can settle over thousands of square kilometers within days, forming a thin layer that geologists identify by its chemical fingerprint and match to an eruption of known date. Such layers are prized for dating sediment cores: anything buried beneath a layer of ash that fell directly from the sky must be older than the eruption, and anything above it must be younger. Ash, however, is easily washed from hillsides and carried by streams into lakes, where it can settle years or centuries later in a layer that looks much like a direct deposit. If a layer in a core turns out to be reworked ash of this kind, a geologist can conclude only that ______",
+    "stem": "Which choice most logically completes the text?",
+    "options": [
+      "the sediments above the layer were deposited at some point after the eruption, not that the sediments below it predate the eruption.",
+      "the eruption that produced the ash occurred earlier than the date assigned to it from other evidence.",
+      "the sediments below the layer are older than the eruption, since the ash could not have been eroded before it was produced.",
+      "the chemical fingerprint of the layer no longer matches the eruption that produced the ash."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Reworked ash was laid down some unknown time after the eruption, so sediments above it are still younger than the eruption, but sediments beneath it could have accumulated either before or after the eruption, which leaves only the first conclusion intact. Choice C is the strongest distractor because its reasoning sounds valid, but the ash may have been redeposited centuries after the eruption on top of sediments that are themselves younger than the eruption, so nothing can be concluded about the layers below."
+  },
+  {
+    "id": "SAT-RW-416",
+    "section": "rw",
+    "test": 2,
+    "module": 1,
+    "domain": "conventions",
+    "skill": "Boundaries",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "Few natural events have been heard over a wider area than the eruption that destroyed most of an island in 1883. The explosion of Krakatau, a volcano in present-day ______ produced a sound that was reported nearly 5,000 kilometers away.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "Indonesia,",
+      "Indonesia",
+      "Indonesia;",
+      "Indonesia, and"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The phrase \"a volcano in present-day Indonesia\" is a nonessential appositive that interrupts the main clause, so it must be set off by commas on both sides. Choice B is the strongest distractor because it opens the appositive with a comma, but it never closes it, and choices C and D treat what follows as a separate clause even though \"produced a sound\" has no subject of its own."
+  },
+  {
+    "id": "SAT-RW-417",
+    "section": "rw",
+    "test": 2,
+    "module": 1,
+    "domain": "conventions",
+    "skill": "Boundaries",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "Before the 1570s, London's actors performed wherever they could, in inn yards and great halls. The first permanent playhouse in the city opened in ______ it was called, simply, the Theatre, and its timbers were later reused to build the Globe.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "1576;",
+      "1576,",
+      "1576",
+      "1576 but"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "\"The first permanent playhouse in London opened in 1576\" and \"it was called, simply, the Theatre\" are both independent clauses, so a semicolon correctly joins them. Choice B creates a comma splice, choice C runs the two clauses together with no punctuation, and choice D adds a contrast that makes no sense here and also omits the comma that would be needed before the conjunction."
+  },
+  {
+    "id": "SAT-RW-418",
+    "section": "rw",
+    "test": 2,
+    "module": 1,
+    "domain": "conventions",
+    "skill": "Boundaries",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Psychologists Daniel Kahneman and Amos Tversky identified a pattern they called loss ______ people feel the pain of losing a sum of money more sharply than they feel the pleasure of gaining the same sum.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "aversion:",
+      "aversion,",
+      "aversion",
+      "aversion, which"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The second part of the sentence is an independent clause that defines the term just introduced, so a colon is the correct way to introduce it. Choice B is the strongest distractor, but a comma between two independent clauses produces a comma splice, and choice D turns the definition into a relative clause that then has no main verb to complete the sentence."
+  },
+  {
+    "id": "SAT-RW-419",
+    "section": "rw",
+    "test": 2,
+    "module": 1,
+    "domain": "conventions",
+    "skill": "Boundaries",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "The compounds that a wounded tomato plant releases into the air, which include a jasmine-scented chemical called methyl ______ can trigger defensive responses in nearby plants within a few hours.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "jasmonate,",
+      "jasmonate;",
+      "jasmonate",
+      "jasmonate, and"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The clause \"which include a jasmine-scented chemical called methyl jasmonate\" is a nonessential relative clause that interrupts the subject \"the compounds\" and its verb \"can trigger,\" so it must be closed with a comma. Choice C is the strongest distractor because the sentence is long enough to hide the missing comma, but without it the interrupting clause runs straight into the main verb, and choices B and D wrongly treat \"can trigger defensive responses\" as a separate clause when it has no subject of its own."
+  },
+  {
+    "id": "SAT-RW-420",
+    "section": "rw",
+    "test": 2,
+    "module": 1,
+    "domain": "conventions",
+    "skill": "Form, structure, and sense",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "Each of the twelve sprinters in the study ______ asked to run the 40-meter course twice, once after a standard warm-up and once after a warm-up that included static stretching.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "was",
+      "were",
+      "are",
+      "have been"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The subject of the sentence is the singular pronoun \"each,\" so the verb must be singular, and the past tense fits the description of a completed study: \"was.\" Choice B is the strongest distractor because the plural noun \"sprinters\" sits just before the blank, but it is the object of the preposition \"of\" and does not control the verb."
+  },
+  {
+    "id": "SAT-RW-421",
+    "section": "rw",
+    "test": 2,
+    "module": 1,
+    "domain": "conventions",
+    "skill": "Form, structure, and sense",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The first electronic general-purpose computers were enormous by modern standards. Built between 1943 and 1945 at the University of Pennsylvania, ______ Its successors would shrink steadily over the following decades.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "the ENIAC filled a room of roughly 1,800 square feet and weighed nearly thirty tons.",
+      "a room of roughly 1,800 square feet was filled by the ENIAC, which weighed nearly thirty tons.",
+      "the ENIAC's size was roughly 1,800 square feet, with a weight of nearly thirty tons.",
+      "engineers designed the ENIAC to fill a room of roughly 1,800 square feet."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The opening modifier \"Built between 1943 and 1945\" must describe the noun that immediately follows it, and only choice A places the ENIAC, the thing that was built, in that position. Choice C is the strongest distractor because it begins with \"the ENIAC's,\" but the subject of that clause is \"size,\" and a size cannot be built; choices B and D attach the modifier to a room and to engineers."
+  },
+  {
+    "id": "SAT-RW-422",
+    "section": "rw",
+    "test": 2,
+    "module": 1,
+    "domain": "conventions",
+    "skill": "Form, structure, and sense",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "When the Globe burned down in 1613 after a cannon fired during a performance set its thatched roof alight, the company ______ it within a year, this time with a roof of tile.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "rebuilt",
+      "rebuilds",
+      "had rebuilt",
+      "will have rebuilt"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The sentence narrates a sequence of events in the past, with the fire in 1613 followed by the rebuilding, so the simple past \"rebuilt\" is correct. Choice C is the strongest distractor because the past perfect can describe an earlier past action, but the rebuilding happened after the fire, not before it, so \"had rebuilt\" reverses the order of events."
+  },
+  {
+    "id": "SAT-RW-423",
+    "section": "rw",
+    "test": 2,
+    "module": 1,
+    "domain": "expressionIdeas",
+    "skill": "Rhetorical synthesis",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Mycorrhizal fungi form underground networks that connect the roots of trees in a forest.\n- Ecologist Suzanne Simard studied these networks in forests in British Columbia.\n- In an experiment, she traced carbon moving through the networks from birch trees to Douglas fir trees.\n- She published the results in 1997.\n- Later studies found that larger, older trees were connected to more neighbors than smaller trees were.\n\nThe student wants to emphasize a specific finding of Simard's experiment. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "stem": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "options": [
+      "Simard's experiment showed that carbon moved through underground fungal networks from birch trees to Douglas fir trees.",
+      "Simard, an ecologist, studied fungal networks in forests in British Columbia and published her results in 1997.",
+      "Mycorrhizal fungi form underground networks that connect the roots of trees in a forest.",
+      "Later studies found that larger, older trees were connected to more neighbors than smaller trees were."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Choice A reports the actual result of Simard's experiment, the movement of carbon from birch to fir, which is the specific finding the student wants to emphasize. Choice B is the strongest distractor because it is about Simard, but it describes where and when she worked rather than what she found, and choice D reports a finding from later studies rather than from her experiment."
+  },
+  {
+    "id": "SAT-RW-424",
+    "section": "rw",
+    "test": 2,
+    "module": 1,
+    "domain": "expressionIdeas",
+    "skill": "Rhetorical synthesis",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Grace Hopper was a mathematician and an officer in the United States Navy.\n- Before compilers existed, programmers wrote instructions in numeric codes that were slow to write and easy to get wrong.\n- In 1952 Hopper developed one of the first compilers, a program that translates instructions written in words into the codes a machine can run.\n- Her work led to COBOL, a programming language still used in banking systems.\n\nThe student wants to explain why Hopper's compiler was significant. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "stem": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "options": [
+      "Hopper's compiler, developed in 1952, let programmers write instructions in words instead of the slow and error-prone numeric codes they had used before.",
+      "Grace Hopper, a mathematician and Navy officer, developed one of the first compilers in 1952.",
+      "COBOL, a programming language that grew out of Hopper's work, is still used in banking systems today.",
+      "Before 1952, programmers wrote their instructions in numeric codes that were slow to write."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Choice A connects what the compiler did, translating words into machine codes, with the problem it solved, which explains why it mattered. Choice C is the strongest distractor because COBOL's survival suggests lasting importance, but it describes a later language rather than the compiler itself, and choices B and D each give only half of the picture."
+  },
+  {
+    "id": "SAT-RW-425",
+    "section": "rw",
+    "test": 2,
+    "module": 1,
+    "domain": "expressionIdeas",
+    "skill": "Rhetorical synthesis",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Mount Pinatubo in the Philippines erupted in June 1991.\n- It was the second-largest volcanic eruption of the twentieth century.\n- The eruption sent about 20 million tons of sulfur dioxide into the stratosphere.\n- In the stratosphere, the sulfur dioxide formed a haze that reflected sunlight back into space.\n- Over the following year, average global temperatures dropped by about 0.5 degrees Celsius.\n\nThe student wants to present the sequence of events that linked the eruption to the change in global temperature. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "stem": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "options": [
+      "After Pinatubo erupted in 1991, the sulfur dioxide it sent into the stratosphere formed a haze that reflected sunlight, and global temperatures fell by about 0.5 degrees Celsius over the following year.",
+      "Mount Pinatubo's 1991 eruption, the second-largest of the twentieth century, lowered average global temperatures by about 0.5 degrees Celsius.",
+      "The 1991 eruption of Mount Pinatubo in the Philippines sent about 20 million tons of sulfur dioxide into the stratosphere.",
+      "Because the haze from Pinatubo reflected sunlight back into space, the eruption had effects far beyond the Philippines."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Choice A presents each step in order, from the eruption to the sulfur dioxide to the reflective haze to the drop in temperature, which is the sequence the student wants to show. Choice B is the strongest distractor because it links the eruption to the temperature change, but it skips the intermediate steps that explain how one led to the other, and choices C and D each stop partway through the chain."
+  },
+  {
+    "id": "SAT-RW-426",
+    "section": "rw",
+    "test": 2,
+    "module": 1,
+    "domain": "expressionIdeas",
+    "skill": "Transitions",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "Marathon runners often describe \"hitting the wall\" roughly thirty kilometers into a race, a sudden loss of energy that occurs when the body's stored carbohydrate, called glycogen, runs low. ______ many runners consume carbohydrate gels or sports drinks at regular intervals during the race, aiming to delay the point at which their glycogen is exhausted.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "For this reason,",
+      "However,",
+      "Similarly,",
+      "In contrast,"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The first sentence explains that hitting the wall happens when glycogen runs low, and the second describes a practice runners adopt to delay that point, so the second sentence is a consequence of the first and \"For this reason\" is the logical transition. \"Similarly\" is the strongest distractor, but the second sentence is not a parallel example; it is a response to the problem the first sentence describes."
+  },
+  {
+    "id": "SAT-RW-427",
+    "section": "rw",
+    "test": 2,
+    "module": 1,
+    "domain": "expressionIdeas",
+    "skill": "Transitions",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Traditional economic models assume that people weigh costs and benefits consistently, regardless of how a choice is described to them. ______ experiments have repeatedly found that people will accept a medical treatment described as having a 90 percent survival rate and reject the very same treatment when it is described as having a 10 percent mortality rate.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "In practice, however,",
+      "As a result,",
+      "For instance,",
+      "Likewise,"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The first sentence states what the models assume, and the second reports experimental results that contradict that assumption, so a contrasting transition is needed and \"In practice, however\" supplies it. \"For instance\" is the strongest distractor because the second sentence does describe a specific experiment, but that experiment is an exception to the first sentence's claim, not an illustration of it."
+  }
+]

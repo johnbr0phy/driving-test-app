@@ -1,0 +1,509 @@
+[
+  {
+    "id": "SAT-MA-301",
+    "section": "math",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "If $5(x - 2) = 35$, what is the value of $x$?",
+    "options": [
+      "$5$",
+      "$7$",
+      "$9$",
+      "$45$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "Distribute to get $5x - 10 = 35$, so $5x = 45$ and $x = 9$. Equivalently, divide both sides by $5$ first to get $x - 2 = 7$, so $x = 9$. The choice $7$ comes from stopping at $x - 2 = 7$ and forgetting to add $2$, and $45$ is the value of $5x$, not $x$."
+  },
+  {
+    "id": "SAT-MA-302",
+    "section": "math",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "dataAnalysis",
+    "skill": "Percentages",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A school fundraiser set a goal of raising \\$2,500. By the end of the first week, the fundraiser had raised \\$900. What percent of the goal had been raised by the end of the first week?",
+    "numeric": {
+      "answers": [
+        "36"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The percent of the goal raised is the amount raised divided by the goal: $\\frac{900}{2500} = 0.36$, which is $36\\%$. A common error is to answer $64$, which is the percent of the goal still remaining, not the percent already raised."
+  },
+  {
+    "id": "SAT-MA-303",
+    "section": "math",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "advancedMath",
+    "skill": "Equivalent expressions",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which of the following expressions is equivalent to $2x(3x - 4) + 5x$?",
+    "options": [
+      "$6x^2 - 3x$",
+      "$6x^2 - 13x$",
+      "$5x^2 - 3x$",
+      "$6x^2 - 8x + 5$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Distribute $2x$ over the parentheses: $2x \\cdot 3x = 6x^2$ and $2x \\cdot (-4) = -8x$, so the expression is $6x^2 - 8x + 5x$. Combining the like terms $-8x + 5x$ gives $6x^2 - 3x$. The choice $6x^2 - 13x$ comes from subtracting $5x$ instead of adding it, and $6x^2 - 8x + 5$ comes from forgetting that the last term still contains $x$."
+  },
+  {
+    "id": "SAT-MA-304",
+    "section": "math",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "algebra",
+    "skill": "Linear functions",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A community garden charges each member a one-time registration fee of \\$15 plus \\$4 for each month the member keeps a plot. Which of the following functions gives the total amount $C(m)$, in dollars, that a member pays for keeping a plot for $m$ months?",
+    "options": [
+      "$C(m) = 4m + 15$",
+      "$C(m) = 15m + 4$",
+      "$C(m) = 19m$",
+      "$C(m) = 4m - 15$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "The monthly charge of $4$ dollars is paid $m$ times, for a total of $4m$ dollars, and the registration fee of $15$ dollars is paid once, so $C(m) = 4m + 15$. The choice $C(m) = 15m + 4$ swaps the roles of the two numbers, charging the registration fee every month. The choice $C(m) = 19m$ wrongly adds the one-time fee to the monthly rate."
+  },
+  {
+    "id": "SAT-MA-305",
+    "section": "math",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "geometryTrig",
+    "skill": "Area and volume",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A cylindrical rain barrel at a community garden has an inside radius of $3$ feet and an inside height of $2$ feet. What is the volume of the barrel, in cubic feet?",
+    "options": [
+      "$6\\pi$",
+      "$12\\pi$",
+      "$18\\pi$",
+      "$36\\pi$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "The volume of a cylinder is $V = \\pi r^2 h$. With $r = 3$ and $h = 2$, $V = \\pi (3)^2 (2) = 18\\pi$ cubic feet. The choice $12\\pi$ is the lateral surface area $2\\pi r h$, not the volume, and $6\\pi$ comes from using $\\pi r h$ without squaring the radius."
+  },
+  {
+    "id": "SAT-MA-306",
+    "section": "math",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "advancedMath",
+    "skill": "Nonlinear functions",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The function $g$ is defined by $g(x) = 2x^2 + 1$. What is the value of $g(-3)$?",
+    "options": [
+      "$-17$",
+      "$-5$",
+      "$19$",
+      "$37$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "Substitute $-3$ for $x$: $g(-3) = 2(-3)^2 + 1 = 2(9) + 1 = 19$. The choice $-17$ comes from treating $(-3)^2$ as $-9$, which gives $2(-9) + 1 = -17$. The choice $37$ comes from squaring $2x$ instead of $x$, since $(2 \\cdot (-3))^2 + 1 = 37$."
+  },
+  {
+    "id": "SAT-MA-307",
+    "section": "math",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "dataAnalysis",
+    "skill": "One-variable data: mean, median",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The bar graph shows the number of miles a cycling club rode on each of five days last week. What is the median of the five daily distances, in miles?",
+    "options": [
+      "$8$",
+      "$16$",
+      "$17$",
+      "$19$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "figure": {
+      "src": "/figures/sat/sat-ma-307.svg",
+      "alt": "Bar graph titled Miles Ridden Last Week. The vertical axis is labeled Miles and runs from 0 to 30. The horizontal axis is labeled Day. The five bars are Mon 12 miles, Tue 22 miles, Wed 8 miles, Thu 16 miles, and Fri 27 miles."
+    },
+    "calculator": true,
+    "explanation": "Read the five values from the graph: $12, 22, 8, 16, 27$. The median is the middle value when the data are in order: $8, 12, 16, 22, 27$, so the median is $16$. The choice $17$ is the mean, $\\frac{12 + 22 + 8 + 16 + 27}{5} = \\frac{85}{5} = 17$, and $8$ is the height of the middle bar on the graph, which is not the median because the values have not been ordered."
+  },
+  {
+    "id": "SAT-MA-308",
+    "section": "math",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "algebra",
+    "skill": "Systems of two linear equations",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "$x + 2y = 11$\n\n$x - y = 2$\n\nWhich ordered pair $(x, y)$ is the solution to the system of equations above?",
+    "options": [
+      "$(5, 3)$",
+      "$(3, 5)$",
+      "$(7, 2)$",
+      "$(1, 5)$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Subtract the second equation from the first: $(x + 2y) - (x - y) = 11 - 2$, so $3y = 9$ and $y = 3$. Then $x - 3 = 2$ gives $x = 5$, and the solution is $(5, 3)$. The choice $(3, 5)$ reverses the coordinates; it fails the first equation because $3 + 2(5) = 13$, not $11$. The choice $(7, 2)$ satisfies only the first equation, since $7 - 2 = 5$, not $2$."
+  },
+  {
+    "id": "SAT-MA-309",
+    "section": "math",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "advancedMath",
+    "skill": "Exponential functions",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A public library's collection of e-books has $4{,}000$ titles today, and the library plans to increase the number of titles by $10\\%$ each year. Which of the following functions gives the number of titles $N(t)$ in the collection $t$ years from today?",
+    "options": [
+      "$N(t) = 4000(1.1)^t$",
+      "$N(t) = 4000(0.1)^t$",
+      "$N(t) = 4000 + 400t$",
+      "$N(t) = 1.1(4000)^t$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Increasing a quantity by $10\\%$ multiplies it by $1 + 0.10 = 1.1$, and this happens once each year, so after $t$ years the collection has $N(t) = 4000(1.1)^t$ titles. The choice $N(t) = 4000 + 400t$ adds $400$ titles every year, which is $10\\%$ of the original collection, not $10\\%$ of the current collection, so it is linear growth rather than exponential growth. The choice $N(t) = 4000(0.1)^t$ multiplies by $0.1$ each year, which would shrink the collection."
+  },
+  {
+    "id": "SAT-MA-310",
+    "section": "math",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "algebra",
+    "skill": "Linear inequalities in one variable",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A movie theater charges \\$8.50 for each ticket. A family pays \\$7 for parking and has at most \\$80 to spend on parking and tickets combined. What is the greatest number of tickets the family can buy?",
+    "numeric": {
+      "answers": [
+        "8"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "If the family buys $t$ tickets, the total cost is $8.5t + 7$ dollars, which must satisfy $8.5t + 7 \\le 80$. Subtracting $7$ gives $8.5t \\le 73$, so $t \\le \\frac{73}{8.5} \\approx 8.59$. Since the number of tickets must be a whole number, the greatest possible value is $8$. A common error is to ignore the parking cost and compute $\\frac{80}{8.5} \\approx 9.4$, giving $9$, but $9$ tickets plus parking would cost $83.50$ dollars."
+  },
+  {
+    "id": "SAT-MA-311",
+    "section": "math",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "advancedMath",
+    "skill": "Quadratics",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What are the solutions to the equation $x^2 - 7x + 12 = 0$?",
+    "options": [
+      "$x = 3$ and $x = 4$",
+      "$x = -3$ and $x = -4$",
+      "$x = 2$ and $x = 6$",
+      "$x = -2$ and $x = -6$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Look for two numbers whose product is $12$ and whose sum is $-7$: they are $-3$ and $-4$, so the equation factors as $(x - 3)(x - 4) = 0$. Setting each factor equal to $0$ gives $x = 3$ and $x = 4$. The choice $x = -3$ and $x = -4$ comes from reading the signs in the factors backward, and $x = 2$ and $x = 6$ have the right product $12$ but their sum is $8$, not $7$."
+  },
+  {
+    "id": "SAT-MA-312",
+    "section": "math",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A cycling club rode a total of $200$ miles over two days. The distance the club rode on the second day was $20$ miles more than twice the distance it rode on the first day. How many miles did the club ride on the first day?",
+    "options": [
+      "$60$",
+      "$90$",
+      "$100$",
+      "$140$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "Let $x$ be the first-day distance in miles. Then the second-day distance is $2x + 20$, and the total is $x + (2x + 20) = 200$. So $3x + 20 = 200$, $3x = 180$, and $x = 60$. The choice $140$ is the second-day distance, $2(60) + 20$, not the first-day distance. The choice $90$ comes from solving $2x + 20 = 200$, which treats the second day alone as the whole $200$ miles."
+  },
+  {
+    "id": "SAT-MA-313",
+    "section": "math",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "dataAnalysis",
+    "skill": "Probability and conditional probability",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The table shows the number of tickets a movie theater sold on Saturday, by showing time and ticket type.\n\n| Showing | Adult | Child | Total |\n|---|---|---|---|\n| Matinee | 48 | 72 | 120 |\n| Evening | 110 | 40 | 150 |\n| Total | 158 | 112 | 270 |\n\nIf one of the evening tickets is selected at random, what is the probability that it is a child ticket?",
+    "options": [
+      "$\\frac{4}{15}$",
+      "$\\frac{4}{27}$",
+      "$\\frac{5}{14}$",
+      "$\\frac{11}{15}$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "The selection is made only from the $150$ evening tickets, and $40$ of those are child tickets, so the probability is $\\frac{40}{150} = \\frac{4}{15}$. The choice $\\frac{4}{27}$ comes from dividing by all $270$ tickets instead of only the evening tickets, and $\\frac{5}{14}$ comes from dividing the $40$ evening child tickets by all $112$ child tickets, which answers a different question."
+  },
+  {
+    "id": "SAT-MA-314",
+    "section": "math",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "algebra",
+    "skill": "Systems of two linear equations",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Tickets to a school fundraiser dinner cost \\$12 for each adult and \\$8 for each student. A total of $150$ tickets were sold, and the total amount collected was \\$1,480. How many adult tickets were sold?",
+    "numeric": {
+      "answers": [
+        "70"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Let $a$ be the number of adult tickets and $s$ the number of student tickets. Then $a + s = 150$ and $12a + 8s = 1480$. From the first equation $s = 150 - a$, so $12a + 8(150 - a) = 1480$, which simplifies to $4a + 1200 = 1480$, so $4a = 280$ and $a = 70$. A common error is to answer $80$, which is the number of student tickets, $150 - 70$."
+  },
+  {
+    "id": "SAT-MA-315",
+    "section": "math",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "advancedMath",
+    "skill": "Quadratics: vertex form",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The graph of the function $f$ is shown in the $xy$-plane. Which of the following equations defines $f$?",
+    "options": [
+      "$f(x) = (x - 2)^2 - 1$",
+      "$f(x) = (x + 2)^2 - 1$",
+      "$f(x) = (x - 2)^2 + 1$",
+      "$f(x) = -(x - 2)^2 - 1$"
+    ],
+    "correct": [
+      0
+    ],
+    "figure": {
+      "src": "/figures/sat/sat-ma-315.svg",
+      "alt": "Graph of a parabola opening upward in the xy-plane with gridlines at every integer. The x-axis runs from -2 to 6 and the y-axis from -3 to 5. The vertex is at (2, -1), labeled. The graph crosses the x-axis at (1, 0) and (3, 0) and crosses the y-axis at (0, 3), labeled."
+    },
+    "calculator": true,
+    "explanation": "The vertex of the parabola is $(2, -1)$, so in vertex form $f(x) = a(x - 2)^2 - 1$ for some constant $a$. The graph passes through $(0, 3)$, so $a(0 - 2)^2 - 1 = 3$, which gives $4a = 4$ and $a = 1$. Therefore $f(x) = (x - 2)^2 - 1$, which also agrees with the $x$-intercepts at $1$ and $3$. The choice $f(x) = (x + 2)^2 - 1$ comes from a sign error in vertex form; its vertex is $(-2, -1)$, not $(2, -1)$."
+  },
+  {
+    "id": "SAT-MA-316",
+    "section": "math",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "algebra",
+    "skill": "Linear functions: interpreting parameters",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A public library holds a used-book sale. The function $B(h) = 320 - 15h$ gives the estimated number of books remaining for sale $h$ hours after the sale opens. Which of the following is the best interpretation of the number $15$ in this context?",
+    "options": [
+      "The estimated number of books sold each hour",
+      "The estimated number of books available when the sale opens",
+      "The estimated number of hours until all the books are sold",
+      "The estimated number of books remaining for sale $1$ hour after the sale opens"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "In $B(h) = 320 - 15h$, the number of books remaining decreases by $15$ each time $h$ increases by $1$, so $15$ is the estimated number of books sold per hour. The number $320$ is the estimated number of books available when the sale opens, since $B(0) = 320$. The estimated number of hours until all books are sold is found by solving $320 - 15h = 0$, which gives about $21.3$ hours, and the number remaining after $1$ hour is $B(1) = 305$, so neither of those is $15$."
+  },
+  {
+    "id": "SAT-MA-317",
+    "section": "math",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "geometryTrig",
+    "skill": "Right triangles and trigonometry",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In right triangle $PQR$ shown, angle $Q$ is a right angle, $PQ = 5$, $QR = 12$, and $PR = 13$. What is the value of $\\tan R$?",
+    "options": [
+      "$\\frac{5}{12}$",
+      "$\\frac{12}{5}$",
+      "$\\frac{5}{13}$",
+      "$\\frac{12}{13}$"
+    ],
+    "correct": [
+      0
+    ],
+    "figure": {
+      "src": "/figures/sat/sat-ma-317.svg",
+      "alt": "Right triangle PQR with the right angle at Q, marked with a small square. Vertex P is directly above Q and vertex R is to the right of Q. Leg PQ is labeled 5, leg QR is labeled 12, and hypotenuse PR is labeled 13."
+    },
+    "calculator": true,
+    "explanation": "The tangent of an acute angle in a right triangle is the length of the opposite leg divided by the length of the adjacent leg. For angle $R$, the opposite leg is $PQ = 5$ and the adjacent leg is $QR = 12$, so $\\tan R = \\frac{5}{12}$. The choice $\\frac{12}{5}$ is $\\tan P$, which comes from using the leg next to $R$ as the opposite side. The choice $\\frac{5}{13}$ is $\\sin R$, since it divides by the hypotenuse instead of the adjacent leg."
+  },
+  {
+    "id": "SAT-MA-318",
+    "section": "math",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "advancedMath",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "If $3^{2x - 1} = 81$, what is the value of $x$?",
+    "numeric": {
+      "answers": [
+        "2.5",
+        "5/2"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Write $81$ as a power of $3$: $81 = 3^4$. Then $3^{2x - 1} = 3^4$, and since the bases are equal, the exponents must be equal: $2x - 1 = 4$, so $2x = 5$ and $x = \\frac{5}{2}$. A common error is to set the exponent equal to $81$ itself, solving $2x - 1 = 81$ to get $x = 41$, which ignores that $81$ must first be rewritten as $3^4$."
+  },
+  {
+    "id": "SAT-MA-319",
+    "section": "math",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "geometryTrig",
+    "skill": "Circles",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "In the $xy$-plane, a circle has its center at $(3, -2)$ and a radius of $5$. The point $(a, 2)$, where $a > 3$, lies on the circle. What is the value of $a$?",
+    "numeric": {
+      "answers": [
+        "6"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Every point on the circle is $5$ units from the center, so $(a - 3)^2 + (2 - (-2))^2 = 5^2$. This gives $(a - 3)^2 + 16 = 25$, so $(a - 3)^2 = 9$ and $a - 3 = 3$ or $a - 3 = -3$. Since $a > 3$, $a = 6$. A common error is to use $(2 - 2)^2 = 0$ for the vertical distance, treating the center's $y$-coordinate as $2$ instead of $-2$, which gives $a - 3 = 5$ and $a = 8$."
+  },
+  {
+    "id": "SAT-MA-320",
+    "section": "math",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "advancedMath",
+    "skill": "Polynomial remainder and factors",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "The polynomial $p$ is defined by $p(x) = x^3 - 2x^2 + 5x - 4$. What is the remainder when $p(x)$ is divided by $x - 2$?",
+    "numeric": {
+      "answers": [
+        "6"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "By the remainder theorem, the remainder when $p(x)$ is divided by $x - 2$ is $p(2)$. Evaluating, $p(2) = 2^3 - 2(2)^2 + 5(2) - 4 = 8 - 8 + 10 - 4 = 6$. A common error is to evaluate $p(-2)$ instead, using the sign that appears in the divisor, which gives $-8 - 8 - 10 - 4 = -30$."
+  },
+  {
+    "id": "SAT-MA-321",
+    "section": "math",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "algebra",
+    "skill": "Systems of two linear equations: no solution",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "$kx - 3y = 7$\n\n$4x + 6y = 5$\n\nIn the system of equations above, $k$ is a constant. If the system has no solution, what is the value of $k$?",
+    "options": [
+      "$-8$",
+      "$-2$",
+      "$2$",
+      "$8$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "A system of two linear equations has no solution when the lines have the same slope but different $y$-intercepts. Multiplying the first equation by $-2$ gives $-2kx + 6y = -14$, and for its left side to match $4x + 6y$ the coefficients of $x$ must be equal: $-2k = 4$, so $k = -2$. With $k = -2$ the two equations become $-2x - 3y = 7$ and $4x + 6y = 5$, whose left sides are proportional but whose right sides are not ($-14 \\ne 5$), so there is no solution. The choice $2$ comes from dropping the negative sign, and $-8$ comes from setting up the proportion upside down, as $\\frac{k}{4} = \\frac{6}{-3}$ instead of $\\frac{k}{4} = \\frac{-3}{6}$."
+  },
+  {
+    "id": "SAT-MA-322",
+    "section": "math",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "advancedMath",
+    "skill": "Equivalent expressions: rational expressions",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which of the following expressions is equivalent to $\\frac{2}{x + 1} - \\frac{1}{x - 1}$ for all values of $x$ such that $x \\ne 1$ and $x \\ne -1$?",
+    "options": [
+      "$\\frac{x - 3}{x^2 - 1}$",
+      "$\\frac{x - 1}{x^2 - 1}$",
+      "$\\frac{x + 3}{x^2 - 1}$",
+      "$\\frac{1}{x^2 - 1}$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Rewrite both fractions with the common denominator $(x + 1)(x - 1) = x^2 - 1$: $\\frac{2(x - 1)}{x^2 - 1} - \\frac{x + 1}{x^2 - 1}$. Subtract the numerators, distributing the minus sign over both terms: $2x - 2 - x - 1 = x - 3$, so the expression equals $\\frac{x - 3}{x^2 - 1}$. The choice $\\frac{x - 1}{x^2 - 1}$ comes from subtracting only the $x$ and not the $1$ in the second numerator ($2x - 2 - x + 1$). The choice $\\frac{1}{x^2 - 1}$ comes from subtracting the original numerators $2 - 1$ without first rewriting the fractions over a common denominator."
+  }
+]

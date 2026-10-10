@@ -1,8 +1,5 @@
-"use client";
+import { permanentRedirect } from "next/navigation";
 
-import { ExamTrainingPage } from "@/components/exam/ExamTrainingPage";
-import { getExamById } from "@/lib/exams";
-
-export default function TeasTrainingPage() {
-  return <ExamTrainingPage exam={getExamById("teas")!} />;
+export default function OldTraining() {
+  permanentRedirect("/teas");
 }

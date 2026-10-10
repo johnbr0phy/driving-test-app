@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" font-family="sans-serif" font-size="13" fill="#000">
+<rect width="320" height="240" fill="#fff"/>
+<g stroke="#ccc" stroke-width="1">
+<path d="M98 20V200M146 20V200M194 20V200M242 20V200M290 20V200"/>
+<path d="M50 170H290M50 140H290M50 110H290M50 80H290M50 50H290M50 20H290"/>
+</g>
+<g stroke="#000" stroke-width="1.5">
+<line x1="50" y1="200" x2="296" y2="200"/>
+<line x1="50" y1="200" x2="50" y2="14"/>
+<line x1="50" y1="50" x2="290" y2="170"/>
+</g>
+<g>
+<circle cx="74" cy="62" r="3"/>
+<circle cx="98" cy="80" r="3"/>
+<circle cx="98" cy="68" r="3"/>
+<circle cx="122" cy="92" r="3"/>
+<circle cx="146" cy="98" r="3"/>
+<circle cx="170" cy="104" r="3"/>
+<circle cx="194" cy="128" r="3"/>
+<circle cx="218" cy="128" r="3"/>
+<circle cx="242" cy="152" r="3"/>
+<circle cx="266" cy="152" r="3"/>
+<circle cx="290" cy="164" r="3"/>
+</g>
+<g text-anchor="middle">
+<text x="50" y="215">0</text>
+<text x="98" y="215">2</text>
+<text x="146" y="215">4</text>
+<text x="194" y="215">6</text>
+<text x="242" y="215">8</text>
+<text x="290" y="215">10</text>
+<text x="170" y="234">Age (years)</text>
+<text transform="translate(16 110) rotate(-90)" font-size="12">Price (thousands of dollars)</text>
+</g>
+<g text-anchor="end">
+<text x="44" y="204">0</text>
+<text x="44" y="174">5</text>
+<text x="44" y="144">10</text>
+<text x="44" y="114">15</text>
+<text x="44" y="84">20</text>
+<text x="44" y="54">25</text>
+<text x="44" y="24">30</text>
+</g>
+</svg>

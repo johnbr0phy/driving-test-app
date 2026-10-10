@@ -3,7 +3,7 @@
 import { useMemo, useState } from "react";
 import { Check, X, Eye, EyeOff } from "lucide-react";
 import { AnswerValue, QuestionV2, Stimulus } from "@/lib/v2/types";
-import { OPTION_LETTERS, isCorrect, parseNumeric } from "@/lib/v2/grading";
+import { OPTION_LETTERS, isCorrect, parseNumeric, relabelChoices } from "@/lib/v2/grading";
 import { RichText } from "./RichText";
 import { Figure } from "./Figure";
 
@@ -168,7 +168,7 @@ export function QuestionView({ question, stimulus, optionOrder, answer, onAnswer
       {reveal && (
         <div className={`v2-pop mt-5 rounded-xl border p-4 ${correct ? "border-green-200 bg-green-50" : "border-amber-200 bg-amber-50"}`}>
           <div className={`mb-1 text-sm font-bold ${correct ? "text-green-800" : "text-amber-900"}`}>{correct ? "Correct" : "Not quite"}</div>
-          <RichText text={question.explanation} className="text-[15px] text-gray-800" />
+          <RichText text={relabelChoices(question.explanation, optionOrder)} className="text-[15px] text-gray-800" />
           {question.skill && <div className="mt-2 text-xs text-gray-500">Skill: {question.skill}</div>}
         </div>
       )}

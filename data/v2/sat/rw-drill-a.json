@@ -1,0 +1,882 @@
+[
+  {
+    "id": "SAT-RW-001",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "craftStructure",
+    "skill": "Words in context",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "The common octopus can change the color and texture of its skin in less than a second. Specialized cells called chromatophores expand or shrink to display different pigments, allowing the animal to ______ with the rocks, sand, or algae around it and escape the notice of hungry predators.",
+    "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+    "options": [
+      "blend in",
+      "compete",
+      "collide",
+      "interfere"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Look for the clue that tells you what the missing word must do: the octopus changes color so that it can escape the notice of predators, which means it must match its surroundings, so \"blend in\" fits. \"Compete\" is the most tempting distractor because animals do compete with their surroundings for resources, but competing would not make the octopus harder to see. Always test your choice against the purpose the sentence states."
+  },
+  {
+    "id": "SAT-RW-002",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "craftStructure",
+    "skill": "Words in context",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "Early high-wheel bicycles, with front wheels sometimes taller than a meter and a half, were fast but ______: a rider perched high above the front wheel could be thrown over the handlebars by a single stone in the road. The \"safety bicycle\" of the 1880s, with two wheels of equal size, was designed to solve this problem.",
+    "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+    "options": [
+      "hazardous",
+      "costly",
+      "popular",
+      "slow"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The colon introduces an explanation of the blank, and what follows describes riders being thrown over the handlebars, so the bicycles were \"hazardous.\" \"Costly\" is tempting because early bicycles were expensive, but nothing after the colon is about price. \"Slow\" is ruled out by \"fast but,\" which signals that the blank names a drawback different from speed."
+  },
+  {
+    "id": "SAT-RW-003",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "craftStructure",
+    "skill": "Words in context",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "In fifteenth-century Italy, contracts between painters and their patrons often ______ exactly which pigments were to be used. A patron paying for an altarpiece might insist that the Virgin's robe be painted with ultramarine, a costly blue ground from the stone lapis lazuli, rather than with cheaper azurite, and could take the painter to court if the terms were not met.",
+    "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+    "options": [
+      "specified",
+      "suggested",
+      "concealed",
+      "debated"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The second sentence shows patrons insisting on a pigment and suing if the terms were broken, so the contracts must have stated the pigments as firm requirements, which is what \"specified\" means. \"Suggested\" is the strongest distractor because it also involves naming a pigment, but a suggestion is optional and could not be enforced in court. When two choices share a general meaning, pick the one whose strength matches the details in the text."
+  },
+  {
+    "id": "SAT-RW-004",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "craftStructure",
+    "skill": "Words in context",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Farmers have long planted clover or beans in a field after a season of corn. Bacteria living in the roots of these legumes convert nitrogen from the air into a form that plants can absorb, so the legumes ______ the soil's supply of a nutrient that the corn had depleted.",
+    "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+    "options": [
+      "restore",
+      "preserve",
+      "sustain",
+      "reveal"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The corn \"had depleted\" the nitrogen, so the legumes must bring the supply back to an earlier level, which is the meaning of \"restore.\" \"Preserve\" and \"sustain\" are tempting because they are positive words about soil, but both mean keeping something at its current level, and here the supply had already been used up. Notice time words such as \"had depleted\" that tell you whether something is being kept or brought back."
+  },
+  {
+    "id": "SAT-RW-005",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "craftStructure",
+    "skill": "Words in context",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "In a December 1817 letter to his brothers, the poet John Keats praised what he called \"Negative Capability,\" the capacity to remain in uncertainty and doubt \"without any irritable reaching after fact and reason.\" A great writer, in Keats's view, does not hurry to settle every question; such a writer can ______ contradictions, letting them stand unresolved in the work rather than explaining them away.",
+    "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+    "options": [
+      "tolerate",
+      "reconcile",
+      "dismiss",
+      "expose"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The phrase after the semicolon defines the blank: the writer lets contradictions \"stand unresolved,\" which means accepting them without needing to fix them, so \"tolerate\" is precise. \"Reconcile\" is the most tempting distractor because it is a sophisticated word often paired with \"contradictions,\" but to reconcile contradictions is to resolve them, the opposite of what Keats admired. On hard vocabulary items, check each choice against the exact meaning of the clarifying phrase, not just the topic."
+  },
+  {
+    "id": "SAT-RW-006",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "craftStructure",
+    "skill": "Words in context",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Choreographer Merce Cunningham often used chance procedures, such as tossing coins, to decide the order of the movements in a dance. Rather than arranging each sequence to express a particular story or emotion, he allowed the results of these procedures to ______ the structure of the work, and his dancers sometimes learned their steps without knowing how they would finally be combined.",
+    "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+    "options": [
+      "determine",
+      "decorate",
+      "obscure",
+      "imitate"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The coin tosses decided the order of movements, so the results of chance set the structure, which is what \"determine\" means. \"Obscure\" is tempting because the dancers did not know the final arrangement, but the procedures created the structure rather than hiding it. The word \"Rather than\" sets up a contrast between Cunningham deciding the order himself and chance deciding it, which points to \"determine.\""
+  },
+  {
+    "id": "SAT-RW-007",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "craftStructure",
+    "skill": "Text structure and purpose",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "Before the 1450s, books in Europe were copied by hand, a process that could take a single scribe many months for one volume. __Johannes Gutenberg's press, which used movable metal type, allowed a small workshop to produce around 180 copies of the Bible in just a few years.__ As printing spread, books became cheaper and far more common, and many more people could afford to own one.",
+    "stem": "Which choice best describes the function of the underlined sentence in the text as a whole?",
+    "options": [
+      "It gives a specific example of how the new technology increased the production of books compared with copying by hand.",
+      "It explains why some scribes continued to copy books by hand after printing spread.",
+      "It describes a problem with Gutenberg's press that later printers worked to solve.",
+      "It presents a criticism of Gutenberg's methods made by later historians."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "To find a sentence's function, ask how it connects to the sentences around it: the first sentence says hand copying was slow, the underlined sentence shows a press making about 180 Bibles in a few years, and the last sentence describes books becoming common, so the underlined sentence is a concrete example of increased output. Choice B is tempting because scribes are mentioned, but the underlined sentence is about the press, not about scribes continuing their work."
+  },
+  {
+    "id": "SAT-RW-008",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "craftStructure",
+    "skill": "Text structure and purpose",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Highways can split a habitat in two, leaving animals such as elk, bears, and cougars unable to reach mates or food on the other side. Along the Trans-Canada Highway in Banff National Park, engineers built overpasses and underpasses covered with soil and native plants so that they resemble the surrounding forest. __Cameras at the crossings have since recorded many species using them, from grizzly bears to wolves, and collisions between vehicles and large animals on the highway have dropped sharply.__",
+    "stem": "Which choice best describes the function of the underlined sentence in the text as a whole?",
+    "options": [
+      "It presents evidence that the crossings described in the previous sentence are working as intended.",
+      "It identifies the problem that led engineers to build the crossings.",
+      "It explains how engineers made the crossings resemble the surrounding forest.",
+      "It suggests that the crossings have helped some species more than others."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The text moves from a problem (highways divide habitats) to a solution (the crossings) to results, and the underlined sentence reports those results, showing animals using the crossings and fewer collisions. Choice B is the strongest distractor because the problem is a key part of the text, but it is stated in the first sentence, not the underlined one. Mapping the text as problem, solution, and result makes the function of each sentence clear."
+  },
+  {
+    "id": "SAT-RW-009",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "craftStructure",
+    "skill": "Text structure and purpose",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "The following text is from Jane Austen's 1813 novel Pride and Prejudice.\n\nIt is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife. __However little known the feelings or views of such a man may be on his first entering a neighbourhood, this truth is so well fixed in the minds of the surrounding families, that he is considered as the rightful property of some one or other of their daughters.__",
+    "stem": "Which choice best describes the function of the underlined sentence in the text as a whole?",
+    "options": [
+      "It recasts the claim in the first sentence as the firm belief of a particular community rather than a fact about single men.",
+      "It offers evidence from the narrator's own experience that confirms the claim in the first sentence.",
+      "It explains why wealthy single men are reluctant to move into a new neighbourhood.",
+      "It describes the feelings of a specific man who has recently arrived in the neighbourhood."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The underlined sentence admits that the man's own \"feelings or views\" are \"little known\" and locates the \"truth\" in \"the minds of the surrounding families,\" so it reveals that the supposed universal fact is really what local families want to believe. This is Austen's irony: the second sentence quietly undercuts the first. Choice D is tempting because the sentence mentions a man entering a neighbourhood, but it speaks of any \"such a man\" in general and stresses that his feelings are unknown."
+  },
+  {
+    "id": "SAT-RW-010",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "craftStructure",
+    "skill": "Cross-text connections",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "**Text 1**\n\nMany city officials argue that widening congested roads is the most direct way to shorten commutes. When a busy two-lane road becomes a four-lane road, they reason, the same number of cars will be spread across more space, and traffic will move more freely.\n\n**Text 2**\n\nTransportation researchers have documented a pattern called induced demand. Once a road is widened, driving on it becomes more convenient, so people who once took other routes, traveled at other times, or rode transit begin to use it. Within a few years, traffic on many widened roads returns to its earlier level of congestion.",
+    "stem": "Based on the texts, how would the author of Text 2 most likely respond to the claim in Text 1?",
+    "options": [
+      "By arguing that the claim wrongly assumes that the number of cars using a road stays the same after the road is widened",
+      "By agreeing that widening roads permanently reduces congestion but noting that the projects are too expensive for most cities",
+      "By suggesting that the claim is correct for highways but not for smaller city streets",
+      "By pointing out that public transit ridership usually rises after a nearby road is widened"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Find the assumption behind Text 1's reasoning: it expects \"the same number of cars\" to spread out, while Text 2 says widening attracts new drivers until congestion returns, so Text 2 targets exactly that assumption. Choice D is the strongest distractor because Text 2 does mention transit, but it says transit riders switch to driving, which would lower ridership. On cross-text items, identify what each author assumes, then see where the other text challenges it."
+  },
+  {
+    "id": "SAT-RW-011",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "craftStructure",
+    "skill": "Cross-text connections",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "**Text 1**\n\nCoral bleaching, in which corals expel the colorful algae that live in their tissues, is often described as a death sentence for a reef. Without the algae, which supply most of a coral's food, the coral starves.\n\n**Text 2**\n\nBleached corals are under stress, but they are not necessarily doomed. If water temperatures fall within a few weeks, many corals take in new algae and recover their color and health. Long or repeated marine heat waves are what turn bleaching into widespread coral death.",
+    "stem": "Based on the texts, how would the author of Text 2 most likely respond to the claim in Text 1?",
+    "options": [
+      "By noting that bleached corals can recover if high water temperatures do not last too long",
+      "By agreeing that bleached corals always die but arguing that the algae are not their main source of food",
+      "By claiming that bleaching is caused by the algae themselves rather than by warm water",
+      "By arguing that bleaching affects only a small number of reefs around the world"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Text 1 calls bleaching a \"death sentence,\" and Text 2 answers that bleached corals \"are not necessarily doomed\" because they can recover when temperatures drop quickly, so choice A captures the response. Choice B is wrong because Text 2 rejects the idea that bleached corals always die. Look for a direct phrase in Text 2 that pushes back on Text 1's key word, here \"doomed\" against \"death sentence.\""
+  },
+  {
+    "id": "SAT-RW-012",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "craftStructure",
+    "skill": "Cross-text connections",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "**Text 1**\n\nThe use of zero as a number in its own right, rather than merely as a placeholder, is usually credited to Indian mathematics. In 628 CE, Brahmagupta set out rules for calculating with zero, such as that a number subtracted from itself equals zero, and his work is often called the moment zero became a true number.\n\n**Text 2**\n\nBrahmagupta's rules were a milestone, but calling them a single moment of invention hides a long history. Babylonian scribes marked empty positions centuries earlier, and Maya astronomers developed a zero sign independently. Brahmagupta gave arithmetic rules to a widely shared idea; he did not create zero from nothing.",
+    "stem": "Based on the texts, how would the author of Text 2 most likely respond to the claim in Text 1?",
+    "options": [
+      "By granting that Brahmagupta's rules were significant while objecting that describing them as a single moment overlooks earlier ideas about zero",
+      "By rejecting the claim that Brahmagupta wrote rules for calculating with zero",
+      "By arguing that Babylonian scribes, not Brahmagupta, were the first to treat zero as a number in its own right",
+      "By agreeing that zero had no history before Brahmagupta but questioning whether his rules were correct"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Text 2 begins by accepting that the rules \"were a milestone\" and then challenges the phrase \"single moment,\" pointing to earlier placeholder zeros, so it partly agrees and partly objects, as choice A says. Choice C is the strongest distractor because Text 2 does credit the Babylonians with something earlier, but only with marking empty positions, which is the placeholder use Text 1 already distinguishes from a true number. Hard cross-text items often reward a qualified answer: notice when an author concedes a point before disagreeing."
+  },
+  {
+    "id": "SAT-RW-013",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "infoIdeas",
+    "skill": "Central ideas and details",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "When the ship Endurance became trapped in the pack ice of Antarctica's Weddell Sea in 1915, its crew spent months waiting for the ice to release it. Their diaries describe how expedition leader Ernest Shackleton kept the men to a steady routine: they cared for the sled dogs, played football on the ice, held evening concerts, and kept the ship in order. Several crew members wrote that these ordinary tasks helped them stay hopeful through the long polar winter.",
+    "stem": "Which choice best states the main idea of the text?",
+    "options": [
+      "Diaries from the Endurance expedition suggest that a steady daily routine helped the trapped crew keep up their spirits.",
+      "The crew of the Endurance spent most of their time trying to cut the ship free from the ice.",
+      "Shackleton believed that caring for the sled dogs was the most important task aboard the ship.",
+      "Diaries from the expedition show that crew members disagreed about how best to pass the time."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A main idea must cover the whole text: the details about dogs, football, and concerts all build toward the last sentence, which says these tasks kept the men hopeful, and choice A combines both parts. Choice C is tempting because the sled dogs are mentioned, but they are just one item in a list, and the text never ranks them above the other tasks. If a choice focuses on a single detail, it is probably too narrow to be the main idea."
+  },
+  {
+    "id": "SAT-RW-014",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "infoIdeas",
+    "skill": "Central ideas and details",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "In the late 1970s and 1980s, deaf children brought together in new schools in Nicaragua began communicating with gestures they invented among themselves. Linguist Ann Senghas and her colleagues found that children who entered the schools in later years did not simply copy the older students' signing. The younger signers used grammatical devices, such as assigning people to particular points in space, more consistently than the older ones had, adding structure that the language had previously lacked.",
+    "stem": "Which choice best states the main idea of the text?",
+    "options": [
+      "Nicaraguan Sign Language grew more grammatically consistent as younger children learned it and added structure of their own.",
+      "Younger deaf students in Nicaragua learned to sign by carefully imitating the older students.",
+      "Researchers concluded that the older signers were unable to learn the younger students' grammar.",
+      "The Nicaraguan schools taught deaf children a sign language that had been developed elsewhere."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The text's key finding is that younger children \"did not simply copy\" older signers but used grammar more consistently, so the language gained structure across generations, as choice A says. Choice B directly contradicts the phrase \"did not simply copy,\" and choice C goes beyond the text, which never discusses whether older signers could learn the new grammar. Watch for choices that reverse a negative statement or add a conclusion the researchers never drew."
+  },
+  {
+    "id": "SAT-RW-015",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "infoIdeas",
+    "skill": "Central ideas and details",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "Researchers in one city surveyed residents who lived near vacant lots, both before and after some of those lots were turned into community gardens. Residents living near the new gardens reported spending more time outdoors and talking with their neighbors more often than they had before. Residents near lots that stayed vacant reported no such change. The researchers suggested that the gardens gave neighbors a shared place and a shared purpose.",
+    "stem": "According to the text, what did residents living near the new gardens report?",
+    "options": [
+      "They spent more time outdoors and talked with their neighbors more often.",
+      "They grew most of the vegetables that their households ate.",
+      "They wanted the remaining vacant lots to be turned into parking.",
+      "They noticed no change in the way they spent their time."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Detail questions are answered by locating the exact sentence: the second sentence says residents near the new gardens spent more time outdoors and talked with neighbors more often, which matches choice A. Choice D is the trap, because it describes the other group, the residents near lots that stayed vacant. When a text compares two groups, double-check that your answer describes the group the question asks about."
+  },
+  {
+    "id": "SAT-RW-016",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "infoIdeas",
+    "skill": "Command of evidence (textual)",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "In 1991, Mount Pinatubo in the Philippines erupted and sent millions of tons of sulfur dioxide high into the atmosphere. There, the gas formed tiny droplets that reflected some incoming sunlight back into space. Climate scientists predicted that, as a result, average temperatures around the world would drop temporarily.",
+    "stem": "Which finding, if true, would most directly support the scientists' prediction?",
+    "options": [
+      "Average global surface temperatures in 1992 were about half a degree Celsius lower than in the years just before the eruption.",
+      "Ash from the eruption fell on towns and farmland across a wide area of the Philippines.",
+      "The eruption of Mount Pinatubo was one of the largest volcanic eruptions of the twentieth century.",
+      "Small amounts of sulfur dioxide are also released by many volcanoes that are not erupting."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The prediction is about a temporary drop in average global temperatures, so the best support is a finding that global temperatures did fall after the eruption, as choice A reports. Choice C is tempting because a huge eruption makes cooling seem more likely, but it says nothing about temperature itself. To support a prediction, the evidence has to show the predicted outcome actually happening."
+  },
+  {
+    "id": "SAT-RW-017",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "infoIdeas",
+    "skill": "Command of evidence (textual)",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Inca administrators kept records on khipus, bundles of knotted cords. Scholars agree that many khipus recorded numbers, such as census counts and amounts of tribute owed. Some researchers further claim that khipus also recorded words, such as the names of people or places, which would make them a form of writing.",
+    "stem": "Which finding, if true, would most directly support the researchers' claim?",
+    "options": [
+      "Khipus from one village have cord patterns that match, in order, the family names listed in a Spanish colonial record from that village.",
+      "Most surviving khipus have knots arranged in clusters that correspond to ones, tens, and hundreds.",
+      "Khipus were made from cotton or from the wool of llamas and alpacas.",
+      "Spanish officials sometimes ordered khipus to be destroyed after the conquest of the Inca Empire."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The researchers' claim is that khipus recorded words such as names, so the strongest support links khipu patterns to specific names, which choice A does. Choice B is the most tempting because it is real evidence about khipus, but it supports the claim that they recorded numbers, which scholars already accept. Be sure the evidence supports the specific claim in question, not a different claim in the same text."
+  },
+  {
+    "id": "SAT-RW-018",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "infoIdeas",
+    "skill": "Command of evidence (textual)",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "The pitch of a vibrating string depends on three properties: its length, its tension, and its mass per unit length. A shorter, tighter, or lighter string vibrates faster and sounds higher. A student hypothesizes that the thick lower strings of a guitar sound lower than the thin upper strings mainly because they are heavier per unit length, not because they are under different tension, since all six strings have the same length when played open.",
+    "stem": "Which finding, if true, would most directly support the student's hypothesis?",
+    "options": [
+      "The six open strings of a typical guitar were found to be under roughly similar tension, while the lowest string's mass per unit length was many times that of the highest.",
+      "Pressing a guitar string against a fret shortens its vibrating length and raises its pitch.",
+      "Tightening any guitar string with its tuning peg raises its pitch, and loosening it lowers the pitch.",
+      "The lowest guitar string was found to be under much lower tension than the highest string, enough by itself to explain most of the difference in pitch."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The hypothesis has two parts: mass explains the difference, and tension does not, so the best evidence shows similar tensions alongside very different masses, as in choice A. Choice C is tempting because it is true and concerns tension, but showing that tension can change pitch does nothing to rule tension out as the cause here. Choice D actually weakens the hypothesis by making tension the main cause. When a claim says \"X, not Y,\" the strongest evidence addresses both X and Y."
+  },
+  {
+    "id": "SAT-RW-019",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "infoIdeas",
+    "skill": "Command of evidence (quantitative)",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "City planners surveyed commuters about how they traveled to work in 2014 and again in 2024.\n\n| Commuting mode | 2014 (percent of commuters) | 2024 (percent of commuters) |\n|---|---|---|\n| Drove alone | 73 | 64 |\n| Carpooled | 10 | 8 |\n| Public transit | 9 | 13 |\n| Bicycle | 2 | 8 |\n| Walked | 6 | 7 |\n\nThe planners concluded that the decline in driving alone was accompanied by growth in modes that do not involve a car at all, a conclusion supported by the fact that ______",
+    "stem": "Which choice most effectively uses data from the table to complete the statement?",
+    "options": [
+      "the shares of commuters who took public transit, cycled, and walked each rose between 2014 and 2024, while the share who drove alone fell from 73 to 64 percent.",
+      "the share of commuters who carpooled fell from 10 percent in 2014 to 8 percent in 2024.",
+      "the share of commuters who drove alone was larger than the share using any other mode in both 2014 and 2024.",
+      "the share of commuters who cycled rose from 2 to 8 percent, a larger change than the decline in driving alone."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The conclusion has two parts, a fall in driving alone and a rise in car-free modes, and choice A reports both using accurate figures for transit, cycling, and walking. Choice C is accurate but does not show any change, and choice D misreads the table, since cycling rose by 6 points while driving alone fell by 9. Check every number in a choice against the table and make sure the choice addresses each part of the claim."
+  },
+  {
+    "id": "SAT-RW-020",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "infoIdeas",
+    "skill": "Inferences",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "Cities often justify spending public money on new stadiums by predicting that fans will bring new spending to local businesses. But most fans at home games live in the surrounding area, and economists point out that a family that spends an evening at the stadium usually has less money left for movies, restaurants, or bowling elsewhere in the same city that month. As a result, a new stadium may mostly ______",
+    "stem": "Which choice most logically completes the text?",
+    "options": [
+      "shift local entertainment spending from one place to another rather than add new spending to the city's economy.",
+      "attract large numbers of tourists who would not otherwise visit the city.",
+      "reduce the total amount that residents spend on entertainment each month.",
+      "increase the number of restaurants and movie theaters in the city."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The text says fans are mostly local and that money spent at the stadium is money not spent on other local entertainment, so the logical conclusion is that spending moves around rather than grows. Choice C is tempting, but the text says residents spend at the stadium instead of elsewhere, not that they spend less overall. For inference items, follow the text's reasoning one step further without adding new claims."
+  },
+  {
+    "id": "SAT-RW-021",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "infoIdeas",
+    "skill": "Inferences",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Many fish living in the dim middle depths of the ocean produce their own light. Some species have light-producing organs along their bellies that glow with about the same brightness and color as the faint sunlight filtering down from the surface. A predator looking up from below normally sees the dark outline of a fish against the dimly lit water above. For a fish with glowing belly organs, then, the light most likely serves to ______",
+    "stem": "Which choice most logically completes the text?",
+    "options": [
+      "hide its silhouette from predators swimming beneath it.",
+      "attract prey toward its mouth from the darkness below.",
+      "signal to other members of its species during mating.",
+      "warm the surrounding water in the cold ocean depths."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Connect the clues: the belly light matches the light from above, and predators below spot fish by their dark outline, so the glow erases that outline and hides the fish. Choice B is tempting because some deep-sea fish do use light as a lure, but nothing in this text mentions prey, and a glow matched to the background would make the fish less noticeable, not more. Base your answer only on the information the text provides."
+  },
+  {
+    "id": "SAT-RW-022",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "infoIdeas",
+    "skill": "Inferences",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "In surveys, people who commute by bicycle consistently report greater satisfaction with their trips than people who drive, even when their trips take longer. One explanation is that cycling provides exercise and enjoyment that make the trip pleasant. Researchers note a complication, however: people who already enjoy cycling are far more likely to choose it, while many people who drive would find cycling unpleasant. The difference in satisfaction found in the surveys, then, may reflect ______",
+    "stem": "Which choice most logically completes the text?",
+    "options": [
+      "which people choose to cycle as much as any effect that cycling itself has on how commuters feel.",
+      "the longer travel times that bicycle commuters typically experience on their trips.",
+      "the exercise benefits of cycling alone, since enjoyment plays little role in commuter satisfaction.",
+      "a tendency among drivers to exaggerate how much they enjoy their daily commutes."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The complication is about who chooses to cycle: if happy cyclists select themselves into cycling, the surveys partly measure that choice rather than the effect of cycling, which is choice A. Choice B is tempting because travel time is mentioned, but the text says cyclists are more satisfied even when trips are longer, so longer trips cannot explain greater satisfaction. Recognizing that a group may differ before the comparison begins is a common reasoning move on hard inference items."
+  },
+  {
+    "id": "SAT-RW-023",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "conventions",
+    "skill": "Boundaries",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "Coral reefs are among the most crowded habitats on Earth. They cover less than one percent of the ocean ______ they provide a home for roughly a quarter of all known marine species.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "floor, yet",
+      "floor yet",
+      "floor,",
+      "floor"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Both \"They cover less than one percent of the ocean floor\" and \"they provide a home for roughly a quarter of all known marine species\" are independent clauses. Two independent clauses can be joined by a comma plus a coordinating conjunction such as \"yet,\" as in choice A. Choice C uses a comma alone, which creates a comma splice, and choice D runs the clauses together with no punctuation at all."
+  },
+  {
+    "id": "SAT-RW-024",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "conventions",
+    "skill": "Boundaries",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "Bicycles of the 1880s rode on hard rubber tires that shook riders on rough roads. In 1888, John Boyd Dunlop developed a practical air-filled tire for his son's ______ new tires made rides far smoother, and within a few years they were common on bicycles.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "tricycle. The",
+      "tricycle, the",
+      "tricycle the",
+      "tricycle and, the"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "\"In 1888, John Boyd Dunlop developed a practical air-filled tire for his son's tricycle\" is a complete sentence, and \"The new tires made rides far smoother\" begins another, so a period is needed between them. Choice B joins the two sentences with only a comma, a comma splice, and choice C has no punctuation, a run-on. Choice D misplaces the comma after \"and\" instead of before it."
+  },
+  {
+    "id": "SAT-RW-025",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "conventions",
+    "skill": "Boundaries",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Within fifty years of Gutenberg's first printed Bible, presses were operating in more than two hundred European cities and turning out a wide range of ______ religious texts, grammar books, almanacs, and popular romances.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "works:",
+      "works;",
+      "works, such as:",
+      "works"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The part before the blank is a complete independent clause, and what follows is a list that names the \"wide range of works,\" so a colon correctly introduces it. Choice B is tempting because a semicolon is a strong mark, but a semicolon must have an independent clause on both sides, and the list is not a clause. Choice C is wrong because a colon should not follow \"such as,\" which already introduces the examples."
+  },
+  {
+    "id": "SAT-RW-026",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "conventions",
+    "skill": "Boundaries",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "After the Endurance sank in November 1915, Shackleton's crew camped on drifting sea ice for months. In April 1916 they finally reached Elephant Island in three small ______ island, however, lay far from any shipping route, so Shackleton and five companions set out in one of the boats to bring help.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "boats; the",
+      "boats, the",
+      "boats the",
+      "boats, which the"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "\"They finally reached Elephant Island in three small boats\" and \"the island, however, lay far from any shipping route\" are both independent clauses, and a semicolon can join two independent clauses, as in choice A. Choice B creates a comma splice, a common error when a word like \"however\" appears in the second clause. Remember that \"however\" is not a conjunction, so it cannot join clauses with just a comma."
+  },
+  {
+    "id": "SAT-RW-027",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "conventions",
+    "skill": "Boundaries",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "Painters of the Italian Renaissance developed many techniques for making figures look lifelike. The soft, smoky blending of tones that allows the faces in Leonardo da Vinci's ______ to melt gently into the shadows around them is known as sfumato, from an Italian word for smoke.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "portraits",
+      "portraits,",
+      "portraits;",
+      "portraits:"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The subject of the sentence is the long phrase \"The soft, smoky blending of tones that allows the faces in Leonardo da Vinci's portraits to melt gently into the shadows around them,\" and its verb is \"is known.\" No punctuation should separate a subject from its verb, and here \"portraits\" sits in the middle of a phrase inside the subject, so it takes no punctuation. Choice B is the trap because the subject is so long that a comma feels natural, but a pause in speech is not a reason for a comma."
+  },
+  {
+    "id": "SAT-RW-028",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "conventions",
+    "skill": "Boundaries",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Jane Jacobs's 1961 book The Death and Life of Great American Cities argued that busy sidewalks make neighborhoods safer. Jacobs, a writer and activist living in New York's Greenwich ______ the shopkeepers and residents who watched the street every day its \"eyes.\"",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "Village, called",
+      "Village called",
+      "Village; called",
+      "Village: called"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The phrase \"a writer and activist living in New York's Greenwich Village\" is a nonessential appositive that interrupts the subject \"Jacobs\" and its verb \"called.\" An interrupter that opens with a comma must close with a comma, so choice A is correct. Choice B leaves the appositive unclosed, and choices C and D wrongly put a semicolon or colon between a subject and its verb."
+  },
+  {
+    "id": "SAT-RW-029",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "conventions",
+    "skill": "Form, structure, and sense",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "Linguists have shown that sign languages are full languages, not simple systems of gestures. American Sign Language, which is used by deaf communities across the United States and parts of Canada, ______ its own grammar, distinct from that of spoken English.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "has",
+      "have",
+      "are having",
+      "having"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The subject of the main clause is \"American Sign Language,\" which is singular, so it needs the singular verb \"has.\" Choice B is tempting because the plural nouns \"communities\" and \"parts\" appear just before the blank, but they belong to the interrupting clause and are not the subject. Choice D is not a main verb at all and would leave the sentence incomplete."
+  },
+  {
+    "id": "SAT-RW-030",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "conventions",
+    "skill": "Form, structure, and sense",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "In the community garden study, each neighborhood garden was managed by a committee of volunteers. Each committee set ______ own rules for how plots were assigned and how often members were expected to help with shared tasks.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "its",
+      "their",
+      "it's",
+      "they're"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The pronoun refers to \"Each committee,\" which is singular, so the singular possessive \"its\" is correct. Choice C, \"it's,\" is a contraction of \"it is\" and is not possessive, and choice B is plural, which does not agree with \"each committee.\" A quick check for its versus it's: if \"it is\" does not make sense in the sentence, use \"its.\""
+  },
+  {
+    "id": "SAT-RW-031",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "conventions",
+    "skill": "Form, structure, and sense",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Instrument makers had long known by experience that shorter and tighter strings sound higher. In 1636, the French scholar Marin Mersenne ______ precise laws describing how a string's pitch depends on its length, tension, and mass, and those laws are still taught in physics classes today.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "published",
+      "publishes",
+      "will publish",
+      "has been publishing"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The date \"In 1636\" places the action in the completed past, so the simple past tense \"published\" is correct. Choice B is present tense and choice C is future tense, neither of which fits a past date, and choice D suggests an action that continues into the present. Use time markers like dates to choose the verb tense."
+  },
+  {
+    "id": "SAT-RW-032",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "conventions",
+    "skill": "Form, structure, and sense",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Many mathematical terms have Arabic roots. Working at the House of Wisdom in ninth-century Baghdad, ______ The word \"algebra\" comes from al-jabr, a term in the title of that book.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "Muhammad ibn Musa al-Khwarizmi wrote a book on solving equations that was later translated into Latin.",
+      "a book on solving equations was written by Muhammad ibn Musa al-Khwarizmi and later translated into Latin.",
+      "Latin translators later studied a book on solving equations by Muhammad ibn Musa al-Khwarizmi.",
+      "the writing of a book on solving equations was done by Muhammad ibn Musa al-Khwarizmi."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An introductory modifier such as \"Working at the House of Wisdom\" must be followed immediately by the person doing the working, and only choice A places al-Khwarizmi right after the comma. Choice B makes the book the one working in Baghdad, and choice C makes the Latin translators the ones working there. Always ask who is performing the action in the opening phrase, then put that noun first."
+  },
+  {
+    "id": "SAT-RW-033",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "conventions",
+    "skill": "Form, structure, and sense",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "Conservation groups in North America have proposed linking scattered parks and reserves. The planned network of protected lands and wildlife corridors stretching from the Yellowstone region to Canada's Yukon ______ designed to let wide-ranging animals such as grizzly bears and wolverines move freely between populations.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "is",
+      "are",
+      "have been",
+      "were"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The subject is \"network,\" which is singular, so the verb must be \"is.\" The plural nouns between the subject and the verb, \"lands,\" \"corridors,\" and \"parks\" in the previous sentence, make the plural choices tempting, but they belong to modifying phrases. To find the true subject, cross out prepositional and descriptive phrases (\"of protected lands and wildlife corridors stretching from...\") and match the verb to what remains."
+  },
+  {
+    "id": "SAT-RW-034",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "expressionIdeas",
+    "skill": "Rhetorical synthesis",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Caral is an archaeological site in the Supe Valley of Peru.\n- People lived there from about 2600 BCE.\n- The site includes large stone platform mounds and sunken circular plazas.\n- Archaeologist Ruth Shady began leading excavations there in 1994.\n- Caral is considered one of the oldest cities in the Americas.\n\nThe student wants to emphasize the age of Caral. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "stem": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "options": [
+      "Occupied from about 2600 BCE, Caral in Peru's Supe Valley is considered one of the oldest cities in the Americas.",
+      "Archaeologist Ruth Shady began leading excavations at Caral, a site in Peru's Supe Valley, in 1994.",
+      "Caral includes large stone platform mounds and sunken circular plazas.",
+      "Caral is an archaeological site located in the Supe Valley of Peru."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The goal is the age of Caral, and choice A uses both notes that speak to age: the date 2600 BCE and the claim that it is one of the oldest cities in the Americas. Choice B is tempting because it contains a date, but 1994 is when excavations began, not how old the city is. On synthesis items, ignore accurate but off-goal details and choose the option that matches the stated goal."
+  },
+  {
+    "id": "SAT-RW-035",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "expressionIdeas",
+    "skill": "Rhetorical synthesis",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- In 1862, Thomas Wentworth Higginson published an essay of advice to new writers in The Atlantic Monthly.\n- After reading it, Emily Dickinson wrote to Higginson in April 1862 and enclosed four of her poems.\n- In the letter, she asked whether he thought her verse was \"alive.\"\n- The two corresponded for more than twenty years.\n- After her death, Higginson helped edit the first collection of her poems (1890).\n\nThe student wants to explain how the correspondence between Dickinson and Higginson began. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "stem": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "options": [
+      "After reading Higginson's essay of advice to new writers, Dickinson wrote to him in April 1862, enclosed four poems, and asked whether her verse was \"alive.\"",
+      "Dickinson and Higginson exchanged letters for more than twenty years, beginning in 1862.",
+      "Higginson, who published an essay in The Atlantic Monthly in 1862, later helped edit the first collection of Dickinson's poems.",
+      "After Dickinson's death, her correspondent Higginson helped edit the first collection of her poems, published in 1890."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Explaining how the correspondence began requires the cause and the first step: Higginson's essay prompted Dickinson's April 1862 letter with four poems, which choice A states. Choice B is the strongest distractor because it gives the starting year, but it reports when and how long, not how the exchange started. Read the goal word by word; \"how ... began\" calls for the events that started it, not a summary."
+  },
+  {
+    "id": "SAT-RW-036",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "expressionIdeas",
+    "skill": "Rhetorical synthesis",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Mount Tambora is a volcano on the island of Sumbawa in present-day Indonesia.\n- It erupted in April 1815, in the largest eruption in recorded history.\n- Fine particles from the eruption spread through the upper atmosphere and blocked some sunlight.\n- In 1816, parts of Europe and North America had summer snowfalls and widespread crop failures.\n- The year 1816 became known as the \"Year Without a Summer.\"\n\nThe student wants to explain the cause of the \"Year Without a Summer.\" Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "stem": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "options": [
+      "Because fine particles from Mount Tambora's April 1815 eruption blocked some sunlight, parts of Europe and North America had summer snow and crop failures in 1816, the \"Year Without a Summer.\"",
+      "Mount Tambora, a volcano on the Indonesian island of Sumbawa, erupted in April 1815 in the largest eruption in recorded history.",
+      "In 1816, known as the \"Year Without a Summer,\" parts of Europe and North America had summer snowfalls and widespread crop failures.",
+      "The largest eruption in recorded history took place in 1815 on the island of Sumbawa in present-day Indonesia."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "To explain a cause, a sentence must connect the cause to the effect, and choice A links the particles that blocked sunlight to the cold summer of 1816 with the word \"Because.\" Choice C is the most tempting because it describes the Year Without a Summer, but it gives only the effects and never says what caused them. Look for a cause-and-effect connector when the goal is to explain why something happened."
+  },
+  {
+    "id": "SAT-RW-037",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "expressionIdeas",
+    "skill": "Rhetorical synthesis",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Dance notation systems record movement so that choreography can be performed again later.\n- Labanotation was introduced by Rudolf Laban in 1928.\n- Labanotation places symbols on a vertical staff read from bottom to top.\n- Benesh Movement Notation was created by Rudolf and Joan Benesh and published in 1956.\n- Benesh notation uses a horizontal five-line staff, like music notation, read from left to right.\n\nThe student wants to emphasize a difference in how the two notation systems are read. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "stem": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "options": [
+      "Labanotation is read from bottom to top along a vertical staff, whereas Benesh notation is read from left to right along a horizontal staff.",
+      "Labanotation was introduced in 1928, nearly three decades before Benesh Movement Notation was published in 1956.",
+      "Both Labanotation and Benesh Movement Notation record movement on paper so that choreography can be performed again later.",
+      "Benesh notation, created by Rudolf and Joan Benesh, uses a five-line staff like the one used in music notation."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The goal names a specific kind of difference, how the systems are read, and choice A contrasts the vertical, bottom-to-top staff with the horizontal, left-to-right staff. Choice B is the trap: it does state a real difference between the systems, but a difference in dates says nothing about how they are read. Choice C stresses a similarity, and choice D describes only one system, so neither can show a difference."
+  },
+  {
+    "id": "SAT-RW-038",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "expressionIdeas",
+    "skill": "Transitions",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "In the \"Three Sisters\" method practiced by many Indigenous farmers in North America, corn, beans, and squash are planted together. The tall corn stalks give the bean vines something to climb. ______ the broad squash leaves shade the ground, keeping the soil moist and crowding out weeds.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "Additionally,",
+      "However,",
+      "For example,",
+      "Therefore,"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Both sentences describe a separate benefit one crop gives the planting, so the second simply adds another benefit, and \"Additionally\" signals that. \"However\" would signal a contrast, but nothing contradicts the first benefit. \"Therefore\" would mean the shading is caused by the corn stalks, which the text does not say."
+  },
+  {
+    "id": "SAT-RW-039",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "expressionIdeas",
+    "skill": "Transitions",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The National Football League limits how much each team may spend on player salaries. The cap is meant to keep teams in the largest, wealthiest cities from signing all the best players. ______ a team in a small market such as Green Bay, Wisconsin, can afford a roster as costly as that of a team in New York.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "As a result,",
+      "However,",
+      "Similarly,",
+      "Even so,"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The last sentence describes the outcome of the salary cap: because every team faces the same limit, a small-market team can spend as much as a big-city team, so \"As a result\" fits. \"Similarly\" is tempting because the sentence is about spending, like the first sentence, but it presents a consequence of the cap, not a parallel example. Ask whether the second sentence adds, contrasts, illustrates, or follows from the first."
+  },
+  {
+    "id": "SAT-RW-040",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "expressionIdeas",
+    "skill": "Transitions",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Many of Charles Dickens's novels first appeared in monthly or weekly installments rather than as complete books. Readers bought each new part as it was published and discussed the story while Dickens was still writing the next one. ______ Dickens could see how audiences were reacting and sometimes adjusted his plots and characters in response.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "Consequently,",
+      "Nevertheless,",
+      "In contrast,",
+      "Previously,"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Because the novels came out in parts while Dickens was still writing, he was able to watch reader reactions and adjust, so the last sentence states a result of the publishing method and \"Consequently\" fits. \"Nevertheless\" is tempting to students who expect a twist, but nothing in the earlier sentences would make his adjustments surprising. \"Previously\" fails because the reactions came during, not before, the serial publication."
+  }
+]

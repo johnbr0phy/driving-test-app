@@ -1,0 +1,882 @@
+[
+  {
+    "id": "SAT-RW-041",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "craftStructure",
+    "skill": "Words in context",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "Although glaciers are often called rivers of ice, their movement is usually ______: most valley glaciers advance only a few centimeters to a meter or so each day, far too slowly for an observer to see the ice move.",
+    "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+    "options": [
+      "gradual",
+      "abrupt",
+      "irregular",
+      "seasonal"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The colon tells you that the rest of the sentence explains the blank, and what follows describes ice advancing a few centimeters a day, too slowly to see, so \"gradual\" is the precise fit. Choice D is the most tempting because glacier speed can vary through the year, but the text says nothing about seasons; it describes how slowly the ice moves. When a colon follows the blank, pick the word that the explanation after the colon defines."
+  },
+  {
+    "id": "SAT-RW-042",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "craftStructure",
+    "skill": "Words in context",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "Early New Orleans jazz bands seldom played from written arrangements. Instead, musicians ______ much of what they performed, inventing new melodic lines on the spot while listening closely to the other players in the band.",
+    "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+    "options": [
+      "memorized",
+      "rehearsed",
+      "improvised",
+      "transcribed"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The phrase \"inventing new melodic lines on the spot\" defines the missing word, and inventing music as you play is improvising. Choice A is the most tempting because the bands did not read music, but memorizing means repeating something fixed in advance, the opposite of inventing it on the spot. Look for a phrase in the passage that restates the blank, then choose the word that matches it."
+  },
+  {
+    "id": "SAT-RW-043",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "craftStructure",
+    "skill": "Words in context",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Psychologists once compared memories to files stored in a cabinet, but research on recall suggests a less stable picture. Each time a memory is retrieved, it appears to become briefly ______, open to alteration by new information before it is stored again.",
+    "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+    "options": [
+      "dormant",
+      "reliable",
+      "permanent",
+      "malleable"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The phrase right after the blank, \"open to alteration by new information,\" describes something that can be reshaped, which is what \"malleable\" means. Choice A is the most tempting because it sounds technical, but a dormant memory is inactive, and the text describes a memory that has just been retrieved and is being changed. Choices B and C fit the old file-cabinet view that the word \"but\" tells you the text is rejecting."
+  },
+  {
+    "id": "SAT-RW-044",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "craftStructure",
+    "skill": "Words in context",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Designers of highway sign lettering pursue a goal that is practical rather than ______. A typeface for road signs must be readable at a glance from a moving car, so any decorative flourish that might slow a driver's recognition of a letter is removed, however elegant it looks.",
+    "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+    "options": [
+      "aesthetic",
+      "functional",
+      "commercial",
+      "technical"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "\"Rather than\" signals a contrast with \"practical,\" and the second sentence shows what is being given up: flourishes are removed \"however elegant\" they look, so the contrasting goal is beauty, or an aesthetic goal. Choice B is the most tempting because it is a familiar design word, but \"functional\" means nearly the same thing as practical, so it cannot be the contrast. Choice C fails because the text never mentions money or sales."
+  },
+  {
+    "id": "SAT-RW-045",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "craftStructure",
+    "skill": "Words in context",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "The following text is adapted from Edith Wharton's 1920 novel The Age of Innocence. In 1870s New York, wealthy families attend the opera at an old theater called the Academy of Music.\n\nThough there was already talk of a new Opera House which should compete in costliness and splendour with those of the great European capitals, the world of fashion was still content to reassemble every winter in the shabby red and gold boxes of the sociable old Academy. Conservatives ______ it for being small and inconvenient, and thus keeping out the \"new people\" whom New York was beginning to dread and yet be drawn to.",
+    "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+    "options": [
+      "cherished",
+      "criticized",
+      "overlooked",
+      "renovated"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The key is the phrase \"and thus keeping out the 'new people,'\" which shows that, to conservatives who dreaded newcomers, the Academy's small size and inconvenience were advantages, so they cherished it. Choice B is the most tempting because \"shabby,\" \"small,\" and \"inconvenient\" sound like complaints, but the sentence turns those flaws into reasons for affection. Read the whole sentence before choosing; a word that matches a few nearby adjectives can miss the point of the full clause."
+  },
+  {
+    "id": "SAT-RW-046",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "craftStructure",
+    "skill": "Words in context",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "Soybean plants and the nitrogen-fixing bacteria in their root nodules are often described as partners in a simple exchange: the plant supplies sugars, and the bacteria supply usable nitrogen. Yet the arrangement is more ______ than that description suggests. When researchers kept certain nodules from fixing nitrogen, the plants reduced the oxygen supply to those nodules, and the bacteria inside them multiplied far less.",
+    "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+    "options": [
+      "harmonious",
+      "accidental",
+      "temporary",
+      "conditional"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The experiment shows that the plant keeps supporting bacteria only when they deliver nitrogen and cuts off those that do not, so the partnership is conditional on performance. Choice A is the most tempting because the first sentence calls the relationship a partnership, but \"Yet\" signals that the blank must complicate that friendly picture, not repeat it. Choice C fails because nothing in the text says the arrangement ends after a set time; it depends on how the bacteria perform."
+  },
+  {
+    "id": "SAT-RW-047",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "craftStructure",
+    "skill": "Text structure and purpose",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The following text is adapted from Mark Twain's 1884 novel Adventures of Huckleberry Finn. The narrator, Huck, is introducing himself.\n\nYou don't know about me without you have read a book by the name of The Adventures of Tom Sawyer; but that ain't no matter. That book was made by Mr. Mark Twain, and he told the truth, mainly. __There was things which he stretched, but mainly he told the truth.__ That is nothing. I never seen anybody but lied one time or another.",
+    "stem": "Which choice best describes the function of the underlined sentence in the text as a whole?",
+    "options": [
+      "It reveals that the narrator disapproves of Mark Twain for distorting the events described in the earlier book.",
+      "It introduces the narrator's plan to correct the mistakes that appear in the earlier book.",
+      "It qualifies the narrator's claim about the earlier book's truthfulness by admitting that the book contained some exaggerations.",
+      "It explains why readers need to read the earlier book before they can understand the narrator's story."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Huck has just said the earlier book told the truth \"mainly,\" and the underlined sentence spells out that limit: some things were \"stretched,\" but the book was mostly honest, so the sentence qualifies his claim. Choice A is the most tempting because \"stretched\" admits a flaw, but the next sentence, \"That is nothing,\" shows Huck is not bothered by it. To find a sentence's function, check how the sentences around it react to it."
+  },
+  {
+    "id": "SAT-RW-048",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "craftStructure",
+    "skill": "Text structure and purpose",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "In theaters before the 1800s, stages were lit by candles and oil lamps that could be dimmed only crudely, so lighting did little more than make the actors visible. The arrival of gas lighting changed that. __Because the flow of gas to each lamp could be adjusted from a single control board, a technician could now brighten or darken different parts of the stage gradually during a performance.__ For the first time, lighting could shift the mood of a scene or guide the audience's eye.",
+    "stem": "Which choice best describes the function of the underlined sentence in the text as a whole?",
+    "options": [
+      "It explains why candles and oil lamps remained in use in many theaters after gas lighting became available.",
+      "It presents a drawback of gas lighting that technicians had to overcome before it could be widely used.",
+      "It describes how technicians were trained to operate the control boards used for gas lighting.",
+      "It describes the specific capability of gas lighting that made possible the changes described in the sentence that follows."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The previous sentence says gas lighting \"changed that,\" the underlined sentence explains how (gradual, adjustable control from one board), and the next sentence describes what this made possible, shifting mood and guiding the eye. Choice A is the most tempting because the passage opens with candles and oil lamps, but the underlined sentence is about what gas lighting could do, not about older methods. A sentence that sits between a general claim and its results often supplies the mechanism that links them."
+  },
+  {
+    "id": "SAT-RW-049",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "craftStructure",
+    "skill": "Text structure and purpose",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "For much of the twentieth century, published accounts of Himalayan climbing celebrated individual summits, and expedition books tended to name only the foreign climbers who reached the top. Anthropologist Sherry Ortner and other scholars have since shown that these accounts left out much of the labor that made the climbs possible, including the work of Sherpa climbers who fixed ropes, carried loads, and broke trail. Recovering that history is difficult, however, because many Sherpa climbers' own experiences were never written down.",
+    "stem": "Which choice best describes the overall structure of the text?",
+    "options": [
+      "It describes a change in how expeditions were organized, explains the reasons for that change, and then evaluates its effects on Sherpa climbers.",
+      "It summarizes a debate among historians, presents evidence that settles the debate, and then describes the debate's influence on later expeditions.",
+      "It presents a scholar's argument about early expeditions, describes accounts that contradict it, and then defends the argument against those accounts.",
+      "It describes a pattern in a type of writing, presents scholars' criticism of what that writing left out, and then notes an obstacle to correcting the omission."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Sentence 1 describes how expedition books were written, sentence 2 reports scholars' finding that those books omitted Sherpa labor, and sentence 3, signaled by \"however,\" names a problem with recovering that history. Choice A is the most tempting because the text is about expeditions and Sherpa climbers, but it never says the way expeditions were organized changed; it says the way they were written about left people out. For structure questions, label what each sentence does, then match the sequence of labels, not the topic."
+  },
+  {
+    "id": "SAT-RW-050",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "craftStructure",
+    "skill": "Cross-text connections",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "**Text 1**\n\nStreet trees cool cities in two ways: their canopies shade pavement and buildings, and water evaporating from their leaves draws heat from the air. Noting that shaded sidewalks can be over 10 degrees Celsius cooler than unshaded ones, urban planner Dana Whitfield argues that planting trees is the most effective way for any city to reduce summer heat.\n\n**Text 2**\n\nTrees do cool the air, but a large shade tree needs open soil for its roots and room for its crown. In the densest neighborhoods, where heat is often worst, narrow sidewalks and buried pipes leave little space, and reflective roofs and pavements can cover far more surface than new trees can.",
+    "stem": "Based on the texts, how would the author of Text 2 most likely respond to the claim in Text 1?",
+    "options": [
+      "By disputing the measurements showing that shaded sidewalks are cooler than unshaded sidewalks",
+      "By arguing that the benefits of tree planting depend on available space, so it may not be the most effective option in the densest neighborhoods",
+      "By claiming that reflective roofs provide more cooling per square meter than tree canopies do",
+      "By agreeing that trees are the most effective option everywhere but noting that they take many years to grow"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Whitfield claims trees are the most effective option for \"any city,\" and Text 2 accepts that trees cool the air but explains that in dense neighborhoods they lack room, so other methods can do more there. Choice C is the most tempting because Text 2 does favor reflective surfaces in some places, but its reason is that they can cover more surface, not that each square meter cools better. In cross-text items, find exactly which part of Text 1's claim Text 2 accepts and which part it limits; here the word \"any\" is what Text 2 challenges."
+  },
+  {
+    "id": "SAT-RW-051",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "craftStructure",
+    "skill": "Cross-text connections",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "**Text 1**\n\nArchaeologist Denise Schmandt-Besserat proposed that Mesopotamian writing grew out of small clay tokens long used to count goods. Accountants began sealing tokens inside clay envelopes, then pressing their shapes onto clay tablets; in her account, these impressions developed step by step into cuneiform writing.\n\n**Text 2**\n\nThe token theory persuasively explains the earliest signs for numbers and goods on Mesopotamian tablets. But writing also needed signs for personal names, places, and eventually the sounds of spoken words, and few of these resemble any known token. Such signs seem to have been invented later and for other purposes, as scribes adapted an accounting tool to record language.",
+    "stem": "Based on the texts, how would the author of Text 2 most likely respond to the claim in Text 1?",
+    "options": [
+      "By rejecting the idea that clay tokens were ever used to keep track of goods in ancient Mesopotamia",
+      "By suggesting that cuneiform began as a way to record spoken language and only later was used to count goods",
+      "By arguing that the signs for personal names were derived from tokens that identified the owners of goods",
+      "By accepting that tokens account for some early signs while arguing that they cannot explain the development of writing as a whole"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Text 2 calls the token theory persuasive for number and commodity signs but says signs for names, places, and sounds do not resemble tokens and came later, so it limits the theory rather than rejecting it. Choice A is the most tempting for readers who notice the word \"But,\" yet Text 2 never denies that tokens were used for counting; it agrees with that part. Choice B reverses the order Text 2 describes, in which accounting came first and recording language came later."
+  },
+  {
+    "id": "SAT-RW-052",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "craftStructure",
+    "skill": "Cross-text connections",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "**Text 1**\n\nBats are famous for echolocation: they emit high-pitched calls and listen for the echoes to locate obstacles and prey. According to one popular nature guide, bats are nearly blind and depend entirely on these echoes to find their way in the dark.\n\n**Text 2**\n\nMany bats see quite well. Most large fruit bats do not echolocate at all and instead find food by sight and smell, and studies suggest that even some echolocating species use vision to navigate over long distances.",
+    "stem": "Based on the texts, how would the author of Text 2 most likely respond to the claim in Text 1?",
+    "options": [
+      "By pointing out that many bats rely on vision, so the claim that bats depend entirely on echolocation is mistaken",
+      "By agreeing that bats are nearly blind but adding that some of them also rely on their sense of smell",
+      "By arguing that echolocation helps bats catch prey but does not help them avoid obstacles",
+      "By suggesting that fruit bats use echolocation more skillfully than other kinds of bats do"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Text 1 reports the claim that bats are nearly blind and rely entirely on echoes, and Text 2 opens with \"Many bats see quite well\" and gives examples of bats using vision, which directly contradicts that claim. Choice B is the most tempting because Text 2 does mention smell, but it pairs smell with sight and rejects the idea that bats are nearly blind. Words like \"entirely\" in a claim are easy targets for a second author, so check whether Text 2 offers exceptions."
+  },
+  {
+    "id": "SAT-RW-053",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "infoIdeas",
+    "skill": "Central ideas and details",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "Before mechanical refrigeration, many American households kept food cold with blocks of ice cut from frozen lakes in winter and stored in insulated icehouses. Delivery workers carried the ice to homes, where it was placed in wooden iceboxes. When electric refrigerators became affordable in the 1930s and 1940s, the ice trade quickly declined, and the regular ice deliveries that families had relied on largely disappeared.",
+    "stem": "Which choice best states the main idea of the text?",
+    "options": [
+      "Insulated icehouses were the most efficient way to preserve food in the 1800s.",
+      "Affordable electric refrigerators replaced an earlier system of keeping food cold with natural ice.",
+      "Ice delivery workers played an important role in the invention of electric refrigerators.",
+      "Harvesting ice from lakes became more difficult as winters grew warmer."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The text describes how the natural ice system worked and then explains that it declined once electric refrigerators became affordable, so the main idea is that one system replaced the other. Choice A is the most tempting because icehouses are mentioned, but they are one detail of the older system, and the text never compares their efficiency to anything. A main idea should cover the whole passage, not a single detail from it."
+  },
+  {
+    "id": "SAT-RW-054",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "infoIdeas",
+    "skill": "Central ideas and details",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Between 1851 and 1858, Henry David Thoreau recorded in his notebooks the dates on which hundreds of plant species first flowered around Concord, Massachusetts. He kept the records out of curiosity, not to test any theory. More than a century later, biologists compared his dates with their own observations of the same species and found that, on average, plants in Concord now begin flowering about a week earlier, a shift linked to the region's warming springs.",
+    "stem": "According to the text, what made Thoreau's notebooks useful to the biologists?",
+    "options": [
+      "They included Thoreau's own theory about how warmer springs would change flowering times.",
+      "They contained dated records of flowering that could be compared with modern observations of the same species.",
+      "They recorded the temperature of each spring in Concord during the 1850s.",
+      "They described plant species that no longer grow anywhere near Concord."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The biologists \"compared his dates with their own observations of the same species,\" so the value of the notebooks was their dated flowering records. Choice A is the most tempting because the text links the shift to warming springs, but it says Thoreau kept his records \"not to test any theory,\" so the warming connection came from the biologists. For detail questions, find the sentence that answers the question and make sure every part of your choice is stated there."
+  },
+  {
+    "id": "SAT-RW-055",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "infoIdeas",
+    "skill": "Central ideas and details",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "Streaming services typically pay rights holders from a single pool of subscription revenue, divided according to each artist's share of all streams on the platform. Under this \"pro rata\" model, a subscriber who listens only to a little-known folk singer still sends most of the fee to the most-streamed artists, because that fee is pooled with everyone else's. Some economists favor a \"user-centric\" model that splits each subscriber's fee only among the artists that subscriber plays, though studies suggest the change would shift a modest share of revenue rather than transform artists' earnings.",
+    "stem": "Which choice best states the main idea of the text?",
+    "options": [
+      "The pro rata model was designed by streaming services in order to favor the most-streamed artists over less popular ones.",
+      "Little-known artists would earn less under a user-centric model than they currently earn under the pro rata model.",
+      "An alternative to the usual way of dividing streaming revenue would send each subscriber's fee to the artists that subscriber plays, but its effect on earnings may be limited.",
+      "Economists agree that a user-centric model would greatly increase the earnings of most artists on streaming platforms."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The text explains the standard pro rata model, presents the user-centric alternative, and ends by noting that studies expect only a modest shift, so the main idea must include both the alternative and its limited effect. Choice A is the most tempting because the text shows that pro rata favors popular artists, but it describes that as a result of pooling, not as anyone's design. Watch for a final \"though\" clause; it often carries the qualification that the correct main idea must keep."
+  },
+  {
+    "id": "SAT-RW-056",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "infoIdeas",
+    "skill": "Command of evidence (textual)",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "At the ancient Maya city of Chichen Itza, the stepped pyramid known as El Castillo has four staircases. On the spring and fall equinoxes, the late-afternoon sun casts a series of triangular shadows along one staircase that resemble the body of a serpent, joining a carved serpent head at the base. Some researchers hypothesize that the builders deliberately oriented the pyramid to produce this effect.",
+    "stem": "Which finding, if true, would most directly support the researchers' hypothesis?",
+    "options": [
+      "The pyramid is oriented differently from the city's other buildings in exactly the way needed to create the serpent shadow on the equinoxes.",
+      "The pyramid's four staircases together contain 365 steps, matching the number of days in a year.",
+      "The carved serpent head at the base of the staircase was added several centuries after the pyramid was built.",
+      "A similar serpent shadow appears on the staircase on many afternoons in the weeks before and after each equinox."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The hypothesis is about deliberate orientation to create the equinox shadow, and a finding that the pyramid was turned away from the city's usual layout precisely to produce that shadow points directly to intention. Choice B is the most tempting because it suggests the builders cared about the calendar, but it says nothing about the pyramid's orientation or the shadow. Choices C and D would weaken the hypothesis, since a head added later or a shadow that appears on many days makes an equinox design less likely."
+  },
+  {
+    "id": "SAT-RW-057",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "infoIdeas",
+    "skill": "Command of evidence (textual)",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "When bread dough rests, yeast cells feed on sugars in the flour and release carbon dioxide gas, which becomes trapped in a stretchy network of gluten proteins and makes the dough rise. A student hypothesizes that dough rises faster in a warm place than in a cool one because yeast is more active at higher temperatures.",
+    "stem": "Which finding, if true, would most directly support the student's hypothesis?",
+    "options": [
+      "Dough made with flour high in gluten rose higher than dough made with flour low in gluten.",
+      "Identical batches of dough doubled in size in 60 minutes at 27 degrees Celsius but took 150 minutes at 18 degrees Celsius.",
+      "Yeast cells released more carbon dioxide when they were given additional sugar.",
+      "Bread made from dough that rose slowly had a stronger flavor than bread made from dough that rose quickly."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The hypothesis links temperature to rising speed, and choice B compares identical dough at two temperatures and shows the warmer one rising faster. Choice C is the most tempting because it involves yeast producing more gas, but it changes the amount of sugar, not the temperature. Supporting evidence must test the same factor the hypothesis names, with everything else held the same."
+  },
+  {
+    "id": "SAT-RW-058",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "infoIdeas",
+    "skill": "Command of evidence (textual)",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "Hundreds of thousands of Islamic silver coins called dirhams, minted in Baghdad and Central Asia during the 800s and 900s, have been found buried in hoards across Scandinavia. Some historians argue that the coins arrived mainly through direct trade: Scandinavian merchants, in this view, traveled down Russian rivers to markets near the Caspian Sea, sold furs and other goods, and carried the silver home themselves.",
+    "stem": "Which finding, if true, would most directly weaken the historians' argument?",
+    "options": [
+      "Many of the dirhams found in Scandinavia were minted in the same years as dirhams found at markets near the Caspian Sea.",
+      "Scandinavian stories written down centuries later describe merchants traveling along Russian rivers to trade.",
+      "Few Scandinavian-made objects have been found at markets near the Caspian Sea, and the coins show signs of having changed hands many times in markets farther north.",
+      "Some Scandinavian hoards also contain silver jewelry that was made by melting down dirhams."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The argument says Scandinavians themselves traveled to Caspian markets and carried the coins home; a lack of Scandinavian objects at those markets, plus evidence that the coins passed through many hands farther north, suggests the silver arrived through a chain of middlemen instead. Choice B is the most tempting because it mentions the same river journeys, but it supports the argument rather than weakening it. For a weaken question, identify the argument's key assumption, here direct travel, and choose the finding that undercuts it."
+  },
+  {
+    "id": "SAT-RW-059",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "infoIdeas",
+    "skill": "Command of evidence (quantitative)",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "A city library recorded the average number of visits per cardholder in 2015 and 2023 for four age groups.\n\n| Age group | Visits per cardholder, 2015 | Visits per cardholder, 2023 |\n|---|---|---|\n| 12 and under | 14 | 17 |\n| 13 to 24 | 9 | 6 |\n| 25 to 64 | 7 | 8 |\n| 65 and older | 11 | 15 |\n\nThe library's director argued that cardholders at both ends of the age range accounted for the largest increases in visits, pointing out that ______",
+    "stem": "Which choice most effectively uses data from the table to complete the statement?",
+    "options": [
+      "cardholders 12 and under made more visits per person than any other group in both 2015 and 2023.",
+      "visits per cardholder rose from 14 to 17 for those 12 and under and from 11 to 15 for those 65 and older.",
+      "visits per cardholder fell from 9 to 6 for those aged 13 to 24, the only group whose visits declined.",
+      "visits per cardholder rose from 7 to 8 for those aged 25 to 64 between 2015 and 2023."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The claim has two parts, the youngest and the oldest groups, and it is about increases, so the evidence must show gains for both: 14 to 17 and 11 to 15, the two largest increases in the table. Choice A is the most tempting because it is accurate, but it is about which group visited most, not about which groups increased, and it mentions only one end of the age range. On table items, first underline what the claim needs, then reject choices that are true but answer a different question."
+  },
+  {
+    "id": "SAT-RW-060",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "infoIdeas",
+    "skill": "Inferences",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "Students at a middle school counted the recyclable items thrown into the trash each week. For the first month, the recycling bins sat in one corner of the cafeteria, and students found about 400 recyclable items in the trash each week. When bins were placed next to every trash can, that number fell to about 120 items per week, even though the school ran no new recycling campaign. These results suggest that ______",
+    "stem": "Which choice most logically completes the text?",
+    "options": [
+      "most students at the school did not know which items could be recycled.",
+      "placing recycling bins where students already throw things away can reduce the amount of recyclable material that ends up in the trash.",
+      "recycling campaigns are less effective than most schools believe they are.",
+      "the cafeteria produced fewer recyclable items after the first month of the study."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The only thing that changed was where the bins were placed, and the recyclables in the trash dropped sharply, so the logical conclusion is that convenient placement made the difference. Choice C is the most tempting because the text mentions that no campaign was run, but the study never tested a campaign, so it cannot show how well campaigns work. In inference items, look for the one change the passage describes and conclude only what that change can explain."
+  },
+  {
+    "id": "SAT-RW-061",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "infoIdeas",
+    "skill": "Inferences",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Many exoplanets have been found with the transit method, in which astronomers detect the slight dimming of a star as a planet passes in front of it. A large planet blocks more light than a small one, and a planet in a tight orbit crosses in front of its star frequently, giving astronomers many chances to see the dimming. Because of these features of the method, a list of planets discovered by transit is likely to ______",
+    "stem": "Which choice most logically completes the text?",
+    "options": [
+      "show that most stars do not have any planets in tight orbits.",
+      "contain very few planets that are larger than Earth.",
+      "include a greater proportion of large planets with short orbits than actually exists among planets in general.",
+      "describe small, distant planets more accurately than large, nearby ones."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The text says large planets and planets in tight orbits are easier to detect, so a list built with this method will overrepresent them compared with the real population. Choice B is the most tempting for readers who reverse the logic, but the passage says large planets block more light and are easier to find, so they should be common on the list, not rare. When a passage describes how a method works, ask what kinds of cases that method finds most easily."
+  },
+  {
+    "id": "SAT-RW-062",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "infoIdeas",
+    "skill": "Inferences",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "In a common type of memory experiment, participants study a list of word pairs either in one concentrated session or in several shorter sessions spread over days. On a test given right after studying, the two groups often perform about equally well, and the concentrated group sometimes does slightly better. On a test given a month later, however, the spaced group typically remembers considerably more. Students who judge their study methods only by how they do on a quiz right after studying may therefore ______",
+    "stem": "Which choice most logically completes the text?",
+    "options": [
+      "conclude correctly that concentrated study produces the longest-lasting memories.",
+      "overestimate how well cramming works compared with spreading study out over time.",
+      "find that spaced study also raises their scores on quizzes taken right after studying.",
+      "underestimate how much they will remember a month later no matter which method they use."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An immediate quiz makes the two methods look equal or even favors concentrated study, while the delayed test shows spaced study is better, so judging by the immediate quiz would make cramming look better than it is. Choice A is the most tempting because it matches what the immediate quiz suggests, but the word \"correctly\" makes it false, since the month-later test shows the opposite. When a passage contrasts two time points, your answer should explain the gap between them."
+  },
+  {
+    "id": "SAT-RW-063",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "conventions",
+    "skill": "Boundaries",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "In 1995, astronomers Michel Mayor and Didier Queloz announced the discovery of 51 Pegasi ______ the first planet found orbiting a sunlike star. The discovery later earned them a share of the 2019 Nobel Prize in Physics.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "b;",
+      "b.",
+      "b",
+      "b,"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The phrase \"the first planet found orbiting a sunlike star\" renames 51 Pegasi b, so it is a nonessential appositive and is set off with a comma. Choices A and B fail because a semicolon or period must be followed by a complete sentence, and this phrase has no verb of its own. Choice C runs the planet's name into its description with no break; use a comma before a phrase that renames a noun."
+  },
+  {
+    "id": "SAT-RW-064",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "conventions",
+    "skill": "Boundaries",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "Streaming services pay artists a small fraction of a cent each time a song is ______ an artist may need several hundred plays to earn what a single album sale once provided.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "played;",
+      "played",
+      "played,",
+      "played, which"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "\"Streaming services pay artists a small fraction of a cent each time a song is played\" and \"an artist may need several hundred plays...\" are both complete sentences, and a semicolon can join two complete sentences. Choice C is the most tempting, but a comma alone between two complete sentences is a comma splice, and choice B fuses them with no punctuation at all. To join two independent clauses, use a semicolon, a period, or a comma plus a word like \"and\" or \"so.\""
+  },
+  {
+    "id": "SAT-RW-065",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "conventions",
+    "skill": "Boundaries",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Glaciologists judge a glacier's health by comparing two ______ the amount of snow it gains each winter and the amount of ice it loses to melting each summer. When losses outpace gains for many years, the glacier shrinks.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "quantities;",
+      "quantities",
+      "quantities:",
+      "quantities, being"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The first part of the sentence is complete on its own, and what follows names the two quantities, so a colon is correct: a colon after a complete clause introduces a list or explanation. Choice A is the most tempting because a semicolon also follows a complete clause, but a semicolon must also be followed by a complete clause, and \"the amount of snow it gains...\" is only a noun phrase. Choice B leaves no break between the general word and the items that explain it."
+  },
+  {
+    "id": "SAT-RW-066",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "conventions",
+    "skill": "Boundaries",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Egyptian hieroglyphic writing included signs that stood for single consonant sounds, an early step toward an alphabet. Scribes never wrote with these signs ______ they combined them with hundreds of other signs standing for whole words and ideas.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "alone, instead,",
+      "alone instead",
+      "alone, instead",
+      "alone; instead,"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "\"Scribes never wrote with these signs alone\" and \"they combined them with hundreds of other signs...\" are both complete clauses, so they need a semicolon between them, and the transition \"instead\" begins the second clause and is followed by a comma. Choice A is the most tempting because it sets off \"instead\" with commas, but a word like \"instead\" or \"however\" cannot join two clauses on its own, so the result is a comma splice. When a conjunctive adverb sits between two complete clauses, put a semicolon before it and a comma after it."
+  },
+  {
+    "id": "SAT-RW-067",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "conventions",
+    "skill": "Boundaries",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "In 1851, Florida physician John Gorrie received a patent for a machine that made ice by compressing air and letting it ______ investors, however, doubted that manufactured ice could compete with natural ice shipped south from New England, and the machine was never produced commercially in his lifetime.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "expand,",
+      "expand",
+      "expand;",
+      "expand, which"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The sentence contains two complete clauses: one ends with \"letting it expand,\" and the next begins with \"investors, however, doubted.\" Because \"however\" sits inside the second clause, it cannot join the clauses, so a semicolon must separate them. Choice A is the most tempting because the commas around \"however\" make the sentence look already punctuated, but a comma after \"expand\" creates a comma splice. Choice B fuses the clauses with no punctuation, and choice D turns the second clause into a \"which\" clause that no longer makes sense; when \"however\" sits inside a clause, look for the real boundary before it."
+  },
+  {
+    "id": "SAT-RW-068",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "conventions",
+    "skill": "Boundaries",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "Bakers almost always add a small amount of salt to bread ______ strengthens the gluten network and slows the yeast, giving the finished loaf a firmer structure and a more even crumb.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "dough, salt",
+      "dough salt",
+      "dough. Salt",
+      "dough, which salt"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "\"Bakers almost always add a small amount of salt to bread dough\" is a complete sentence, and \"Salt strengthens the gluten network...\" is another, so a period should separate them. Choice A is the most tempting, but joining two complete sentences with only a comma creates a comma splice. Choice B runs the sentences together, and choice D creates a clause with \"which\" that does not make sense."
+  },
+  {
+    "id": "SAT-RW-069",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "conventions",
+    "skill": "Form, structure, and sense",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "Soil looks lifeless, but it is crowded with organisms. A single teaspoon of healthy garden soil ______ more living microorganisms than there are people on Earth, and many of them help break down dead plant material.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "contain",
+      "contains",
+      "have contained",
+      "are containing"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The subject of the verb is \"teaspoon,\" which is singular, so the verb must be the singular \"contains.\" Choice A is the most tempting because the plural words \"soil\" and \"microorganisms\" sit near the blank, but \"of healthy garden soil\" is only a prepositional phrase describing the teaspoon. To check agreement, cross out the prepositional phrase and match the verb to the noun that remains."
+  },
+  {
+    "id": "SAT-RW-070",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "conventions",
+    "skill": "Form, structure, and sense",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "At the ancient city of Teotihuacan in central Mexico, archaeologists have studied more than 2,000 apartment compounds, many of which housed several related families. The ______ walls were often decorated with brightly painted murals of plants, animals, and gods.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "compound's",
+      "compounds",
+      "compounds's",
+      "compounds'"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The walls belong to the many compounds, so the plural possessive is needed, and a plural noun ending in s takes only an apostrophe after the s: \"compounds'.\" Choice A is the most tempting, but \"compound's\" refers to a single compound, while the previous sentence describes more than 2,000 of them. Choice B has no apostrophe, so it cannot show possession, and choice C adds an extra s that plural possessives never take."
+  },
+  {
+    "id": "SAT-RW-071",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "conventions",
+    "skill": "Form, structure, and sense",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "On a hot afternoon, the shade cast by the leaves of a mature oak, maple, or sycamore ______ the temperature of a nearby sidewalk by several degrees, making the area noticeably more comfortable for pedestrians.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "lower",
+      "are lowering",
+      "can lower",
+      "have lowered"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The subject is \"shade,\" which is singular, so the verb must be singular, and only \"can lower\" works with a singular subject. Choices A, B, and D are all plural forms that seem to agree with \"leaves\" or with the list of trees, but those nouns sit inside the phrase \"by the leaves of a mature oak, maple, or sycamore.\" Long phrases between a subject and its verb are a common trap; find the subject before reading the phrase."
+  },
+  {
+    "id": "SAT-RW-072",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "conventions",
+    "skill": "Form, structure, and sense",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "Most insect-eating bats hunt at night, when their prey is active. These bats locate ______ prey by producing high-pitched calls and listening for the echoes that bounce back from flying insects.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "its",
+      "their",
+      "there",
+      "they're"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The pronoun refers to \"bats,\" which is plural, so the plural possessive \"their\" is correct. Choice A is the most tempting because \"prey\" is singular, but the pronoun must match the owner, the bats, not the thing owned. Choices C and D sound the same as \"their\" but mean \"in that place\" and \"they are,\" so neither shows possession."
+  },
+  {
+    "id": "SAT-RW-073",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "conventions",
+    "skill": "Form, structure, and sense",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "In 1957, Swiss designers Max Miedinger and Eduard Hoffmann released a clean, unadorned sans serif typeface for a type foundry near Basel. Renamed a few years later to sound more marketable, ______",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "the typeface became known around the world as Helvetica.",
+      "the world came to know the typeface as Helvetica.",
+      "designers around the world came to use Helvetica.",
+      "Miedinger and Hoffmann saw their typeface become known as Helvetica."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The opening phrase \"Renamed a few years later to sound more marketable\" describes the typeface, so the words that come right after the comma must name the typeface. Choice C is the most tempting because it mentions Helvetica, but placing \"designers\" after the comma says the designers were renamed. Choices B and D put \"the world\" and \"Miedinger and Hoffmann\" first; an introductory modifier must be followed immediately by the noun it describes."
+  },
+  {
+    "id": "SAT-RW-074",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "expressionIdeas",
+    "skill": "Rhetorical synthesis",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Louis Armstrong was a trumpeter and singer born in New Orleans in 1901.\n- In 1925 he began making records in Chicago with a group called the Hot Five.\n- The Hot Five records featured long solos by Armstrong.\n- Before these records, most jazz emphasized group improvisation by the whole band.\n- Historians credit the records with making the soloist central to jazz.\n\nThe student wants to explain why the Hot Five records are considered important. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "stem": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "options": [
+      "By featuring Armstrong's long solos at a time when most jazz emphasized group improvisation, the Hot Five records helped make the soloist central to jazz.",
+      "Louis Armstrong, a trumpeter and singer, was born in New Orleans in 1901 and began making records in Chicago in 1925.",
+      "Before the Hot Five records, most jazz emphasized group improvisation by the whole band.",
+      "In 1925, Armstrong began making records in Chicago with a group called the Hot Five."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The goal is to explain why the records matter, and choice A gives both what was new about them (long solos when jazz favored group playing) and their effect (making the soloist central). Choice C is the most tempting because it supplies useful background, but it describes jazz before the records and never says what the records changed. On synthesis items, reread the goal and pick the choice that does that job, even if other choices contain accurate notes."
+  },
+  {
+    "id": "SAT-RW-075",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "expressionIdeas",
+    "skill": "Rhetorical synthesis",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- In July 1837, Charles Darwin began a private notebook that he labeled \"B.\"\n- In it he recorded ideas about how species might change over time.\n- One page contains a small branching sketch headed by the words \"I think.\"\n- The sketch shows species as branches splitting off from common ancestors.\n- Darwin published On the Origin of Species in 1859.\n\nThe student wants to emphasize how early Darwin pictured species as branching from common ancestors. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "stem": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "options": [
+      "In July 1837, Darwin began notebook B, in which he recorded ideas about how species might change over time.",
+      "Darwin published On the Origin of Species in 1859, more than twenty years after he began notebook B.",
+      "A small branching sketch on one page of Darwin's notebook B is headed by the words \"I think.\"",
+      "As early as 1837, more than twenty years before publishing On the Origin of Species, Darwin sketched species as branches splitting off from common ancestors."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The goal has two parts, timing and the branching idea, and choice D gives the early date, sets it against the 1859 publication to stress how early it was, and states what the sketch shows. Choice A is the most tempting because it gives the 1837 date, but it mentions only general ideas about change, not species branching from common ancestors. Choice C mentions the sketch but never says when it was made or what it showed, so it misses both parts of the goal."
+  },
+  {
+    "id": "SAT-RW-076",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "expressionIdeas",
+    "skill": "Rhetorical synthesis",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Students at Lakeview Middle School weighed their cafeteria's trash for two weeks.\n- About 40 percent of the trash by weight was food scraps.\n- The school then started a program to compost food scraps.\n- After the program began, the cafeteria's trash weighed 35 percent less.\n- The finished compost was used in the school garden.\n\nThe student wants to present the result of the composting program. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "stem": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "options": [
+      "After Lakeview Middle School began composting food scraps, the cafeteria's trash weighed 35 percent less.",
+      "Students at Lakeview Middle School found that about 40 percent of their cafeteria's trash was food scraps.",
+      "Lakeview Middle School started a composting program, and the compost was used in the school garden.",
+      "For two weeks, students at Lakeview Middle School weighed the trash from their cafeteria."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A result is what happened after the program started, and choice A reports the measured change, a 35 percent drop in trash weight. Choice B is the most tempting because it includes a percentage, but that 40 percent figure describes the trash before the program began, so it is a reason for the program, not its result. When the goal names a result, look for a choice that describes an outcome after the change."
+  },
+  {
+    "id": "SAT-RW-077",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "expressionIdeas",
+    "skill": "Rhetorical synthesis",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- The Millbrook Public Library opened a \"library of things\" in 2021.\n- A library of things lends objects other than books and media.\n- Millbrook cardholders can borrow sewing machines, power tools, and telescopes.\n- In its first year, the collection was borrowed about 3,200 times.\n- The most borrowed item was a carpet cleaner.\n\nThe student wants to introduce the Millbrook library of things to an audience unfamiliar with the idea. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "stem": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "options": [
+      "In its first year, Millbrook's library of things was borrowed about 3,200 times, most often for its carpet cleaner.",
+      "In 2021, the Millbrook Public Library opened a \"library of things,\" which lends cardholders objects such as sewing machines, power tools, and telescopes.",
+      "A carpet cleaner was the most borrowed item in the Millbrook Public Library's collection.",
+      "The Millbrook Public Library's collection was borrowed about 3,200 times in 2021 and 2022."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An audience unfamiliar with the idea needs to know what a library of things is, and choice B names it, explains that it lends objects, and gives concrete examples. Choice A is the most tempting because it gives an impressive statistic, but it assumes the reader already knows what the collection is. Choice D adds dates the notes never state; good synthesis answers use only information from the notes."
+  },
+  {
+    "id": "SAT-RW-078",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "expressionIdeas",
+    "skill": "Transitions",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "Medieval merchants on the Silk Road rarely traveled the entire distance between China and the Mediterranean. ______ goods usually passed through a chain of traders, each carrying them along one stretch of the route before selling them to the next.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "Instead,",
+      "Similarly,",
+      "For example,",
+      "Nevertheless,"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The first sentence says merchants did not make the whole journey, and the second describes what happened in place of that, so \"Instead\" is the logical transition. Choice C is the most tempting because the second sentence is more specific, but it is not an example of merchants traveling the whole route; it describes an alternative. To choose a transition, state the relationship between the two sentences in your own words first."
+  },
+  {
+    "id": "SAT-RW-079",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "expressionIdeas",
+    "skill": "Transitions",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Stage lighting designers often use colored filters, called gels, to set the mood of a scene: amber light can suggest a warm afternoon, while pale blue can suggest moonlight. ______ designers must test their color choices against the costumes and scenery, since a gel that flatters one fabric can make another look dull or muddy.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "Therefore,",
+      "For instance,",
+      "Likewise,",
+      "Even so,"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The first sentence presents gels as a useful tool, and the second adds a limitation that designers must work around, so a transition that concedes a point and then qualifies it, \"Even so,\" fits. Choice A is the most tempting because the second sentence gives a reason (\"since...\"), but the need for testing is not a result of gels setting mood; it is a caution about them. Choices B and C would require the second sentence to give an example of, or something parallel to, the first."
+  },
+  {
+    "id": "SAT-RW-080",
+    "section": "rw",
+    "test": 0,
+    "module": 1,
+    "domain": "expressionIdeas",
+    "skill": "Transitions",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Climbers who ascend too quickly above about 2,500 meters risk altitude sickness, because the body needs time to adjust to lower oxygen levels. Many expeditions on high peaks therefore follow a rule summed up as \"climb high, sleep low.\" ______ climbers carry loads to a higher camp during the day and then descend to sleep at a lower one, gradually exposing their bodies to thinner air.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "In contrast,",
+      "Even so,",
+      "That is,",
+      "Meanwhile,"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The last sentence explains what the rule \"climb high, sleep low\" means in practice, so a transition that introduces a clarification, \"That is,\" is correct. Choice D is the most tempting because the sentence mentions both day and night, but \"Meanwhile\" signals two things happening at the same time, and the sentence instead restates the rule in more detail. Choices A and B signal contrast, yet the final sentence agrees with the rule rather than opposing it."
+  }
+]

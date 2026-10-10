@@ -43,3 +43,22 @@ export function isCorrect(question: QuestionV2, answer: AnswerValue | undefined)
 
 /** Letter for an option in its presented position. */
 export const OPTION_LETTERS = ["A", "B", "C", "D", "E"];
+
+const CHOICE_REF = /\b((?:[Cc]hoices?|[Oo]ptions?|[Aa]nswers?)\s+\(?)([A-E](?:\)?(?:,\s*(?:and\s+|or\s+)?|\s+(?:and|or)\s+)\(?[A-E])*)(?=\)?(?![\w']))/g;
+const PAREN_REF = /(?<![\w$\\])\(([A-E])\)/g;
+
+/**
+ * Explanations name options by their letter in the bank ("Choice B", "(C)").
+ * When the options are shown shuffled, rewrite those letters to the ones the
+ * student actually sees. `order[pos]` is the bank index shown at `pos`.
+ */
+export function relabelChoices(text: string, order: number[]): string {
+  if (order.every((orig, pos) => orig === pos)) return text;
+  const shown = (letter: string) => {
+    const pos = order.indexOf(letter.charCodeAt(0) - 65);
+    return pos < 0 ? letter : OPTION_LETTERS[pos];
+  };
+  return text
+    .replace(CHOICE_REF, (_m, lead: string, letters: string) => lead + letters.replace(/[A-E]/g, shown))
+    .replace(PAREN_REF, (_m, letter: string) => `(${shown(letter)})`);
+}

@@ -2398,14 +2398,14 @@
     "state": "ALL",
     "questionId": "CIV-RTS-004",
     "category": "rightsResponsibilities",
-    "question": "What are three rights of everyone living in the United States? Name one:",
-    "optionA": "Voting in federal elections",
-    "optionB": "Serving on a jury",
-    "optionC": "Running for federal office",
-    "optionD": "Freedom of speech",
+    "question": "Which answer gives three rights of everyone living in the United States?",
+    "optionA": "Freedom of speech, voting in federal elections, and freedom of religion",
+    "optionB": "Freedom of religion, serving on a jury, and freedom of assembly",
+    "optionC": "Freedom of assembly, running for federal office, and freedom of speech",
+    "optionD": "Freedom of speech, freedom of religion, and freedom of assembly",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Freedom of speech is a right of everyone living in the U.S. Others are freedom of expression, freedom of assembly, freedom to petition the government, freedom of religion, and the right to bear arms."
+    "explanation": "USCIS question 65 asks for three rights. This answer gives three: freedom of speech, freedom of religion, and freedom of assembly. Other listed rights are freedom of expression, freedom to petition the government, and the right to bear arms. Practice saying three rights without looking at the choices."
   },
   {
     "type": "CIVICS",
@@ -2440,14 +2440,14 @@
     "state": "ALL",
     "questionId": "CIV-RTS-007",
     "category": "rightsResponsibilities",
-    "question": "Name two promises that new citizens make in the Oath of Allegiance. Name one:",
-    "optionA": "Vote in every election",
-    "optionB": "Join a political party",
-    "optionC": "Give up loyalty to other countries",
-    "optionD": "Live in the same state for the rest of their life",
+    "question": "Which answer gives two promises that new citizens make in the Oath of Allegiance?",
+    "optionA": "Vote in every election and join a political party",
+    "optionB": "Join a political party and live in the same state for life",
+    "optionC": "Give up loyalty to other countries and defend the U.S. Constitution",
+    "optionD": "Vote for the President's party and live in the same state for life",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "One promise is to give up loyalty to other countries. Others: defend the Constitution, obey the laws of the United States, serve in the military if needed, serve the nation if needed, and be loyal to the United States."
+    "explanation": "USCIS question 67 asks for two promises. Giving up loyalty to other countries and defending the U.S. Constitution are two. Other listed promises are to obey U.S. laws, serve in the military if needed, serve the nation if needed, and be loyal to the United States. Practice saying two promises without looking at the choices."
   },
   {
     "type": "CIVICS",
@@ -2496,14 +2496,14 @@
     "state": "ALL",
     "questionId": "CIV-RTS-011",
     "category": "rightsResponsibilities",
-    "question": "What are two examples of civic participation in the United States? Name one:",
-    "optionA": "Ignore local elections",
-    "optionB": "Avoid jury duty",
-    "optionC": "Join a political party",
-    "optionD": "Refuse to pay taxes",
+    "question": "Which answer gives two examples of civic participation in the United States?",
+    "optionA": "Join a political party and ignore local elections",
+    "optionB": "Write to a newspaper and avoid jury duty",
+    "optionC": "Join a political party and write to a newspaper",
+    "optionD": "Contact elected officials and refuse to pay taxes",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Joining a political party is civic participation. Others: vote, run for office, help with a campaign, join a civic or community group, give an elected official your opinion, contact elected officials, support or oppose an issue or policy, or write to a newspaper."
+    "explanation": "USCIS question 69 asks for two examples. Joining a political party and writing to a newspaper are two. Other listed examples include voting, running for office, helping with a campaign, joining a civic or community group, giving an elected official your opinion, contacting elected officials, and supporting or opposing an issue or policy. Practice saying two examples without looking at the choices."
   },
   {
     "type": "CIVICS",

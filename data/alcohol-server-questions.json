@@ -109,7 +109,7 @@
     "optionD": "About one standard drink every three hours",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "The liver clears roughly one standard drink per hour, lowering BAC by about 0.015 per hour on average. Guests often believe it is faster, which is why they underestimate how long they are impaired."
+    "explanation": "About one standard drink per hour is a rough training estimate, including in California RBS training. Actual alcohol metabolism varies among people. Do not use this estimate to decide when a guest is sober or safe to drive."
   },
   {
     "type": "ALCOHOL",
@@ -165,7 +165,7 @@
     "optionD": "Allowing time to pass",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Only time lowers BAC, because the liver metabolizes alcohol at a fixed rate. Coffee and cold water may make a person feel more alert but leave BAC and impairment unchanged."
+    "explanation": "Alcohol must be metabolized over time. Coffee, cold showers, and food after drinking do not make alcohol clear faster. Metabolism varies among people, and BAC can still rise after drinking stops while alcohol is being absorbed."
   },
   {
     "type": "ALCOHOL",
@@ -193,7 +193,7 @@
     "optionD": "A larger stomach destroys more alcohol",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "A larger body contains more water, which spreads the same amount of alcohol over a greater volume and lowers the concentration. The liver's rate does not change with body size in any meaningful way."
+    "explanation": "More body water can spread the same amount of alcohol through a larger volume and lower its concentration. Body composition matters, and metabolism also varies with factors including body mass, liver size, and genetics. Body weight alone does not determine BAC."
   },
   {
     "type": "ALCOHOL",
@@ -201,13 +201,13 @@
     "questionId": "ALC-EFF-015",
     "category": "alcEffects",
     "question": "A guest orders three shots and drinks them within ten minutes. What happens to the guest's BAC?",
-    "optionA": "It climbs quickly and keeps climbing",
+    "optionA": "It can rise quickly and keep rising as alcohol is absorbed",
     "optionB": "It stays level because the liver speeds up",
     "optionC": "It rises slowly because shots are small",
     "optionD": "It peaks at once and falls within minutes",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Three drinks in ten minutes delivers alcohol far faster than the liver can clear it, so BAC climbs quickly and keeps rising as absorption continues. Shots are small in volume but each is a full standard drink."
+    "explanation": "Rapid consumption can deliver alcohol faster than the body clears it, and BAC can keep rising as absorption continues. A shot is not automatically one standard drink: count the pour volume and alcohol strength. A 1.5-ounce pour of 40% spirits is one U.S. standard drink."
   },
   {
     "type": "ALCOHOL",
@@ -246,10 +246,10 @@
     "optionA": "The guest's BAC is lower than a new drinker's",
     "optionB": "The guest's liver clears alcohol twice as fast",
     "optionC": "The guest is not impaired, thanks to tolerance",
-    "optionD": "BAC is just as high and judgment still impaired",
+    "optionD": "Tolerance can hide impairment even when BAC is high",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Tolerance hides the outward signs, but the guest's BAC is the same as anyone else's after five drinks, and judgment and reaction time are still impaired. Tolerance is a reason to count drinks, not a reason to relax."
+    "explanation": "Tolerance can hide visible signs without making a guest safe to serve or drive. Five drinks do not produce the same BAC in everyone. Use observed changes and the amount and pace of drinking; do not treat a familiar guest’s normal appearance as proof of sobriety."
   },
   {
     "type": "ALCOHOL",
@@ -487,7 +487,7 @@
     "optionD": "Cold air outside raises BAC quickly",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Absorption continues for 30 to 90 minutes after the last drink, so BAC can keep rising after a guest stops. This is why a guest who seemed fine at last call may be visibly impaired in the parking lot."
+    "explanation": "Alcohol can continue entering the bloodstream after the last drink, so BAC may keep rising after a guest stops drinking. Do not rely on a fixed waiting period or an earlier appearance of sobriety."
   },
   {
     "type": "ALCOHOL",
@@ -550,14 +550,14 @@
     "state": "ALL",
     "questionId": "ALC-EFF-040",
     "category": "alcEffects",
-    "question": "A guest who has a cold or the flu is drinking. What should a server expect?",
+    "question": "A guest with a cold says they have taken an antihistamine and are now drinking alcohol. What should the server expect?",
     "optionA": "Illness protects against intoxication",
     "optionB": "The guest will clear alcohol faster",
     "optionC": "Illness has no bearing on alcohol's effects",
-    "optionD": "The guest may become impaired more quickly",
+    "optionD": "Alcohol may add to the medicine’s impairing effects",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Illness lowers the body's ability to cope with alcohol, and many cold medicines contain antihistamines or alcohol that add to impairment. Faster elimination is a myth; the liver's rate does not change."
+    "explanation": "Some cold and allergy medicines, including antihistamines, can interact dangerously with alcohol and increase impairment. Do not assume illness makes alcohol clear faster. Metabolism varies among individuals; consider medication use and observed changes rather than a fixed clearance rate."
   },
   {
     "type": "ALCOHOL",
@@ -795,7 +795,7 @@
     "optionD": "Ask the guest to prove they are sober",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Four drinks in an hour puts most people near or above 0.08, regardless of how they appear. Relying on appearance alone risks serving an intoxicated person who simply has tolerance."
+    "explanation": "Four standard drinks in an hour is rapid consumption and calls for intervention even if visible cues are absent. Drink count alone cannot establish a guest’s BAC. Tolerance can hide impairment, so appearance does not justify continued service at the same pace."
   },
   {
     "type": "ALCOHOL",
@@ -974,10 +974,10 @@
     "optionA": "Generosity that deserves faster service",
     "optionB": "Shots count as less alcohol than beer",
     "optionC": "Switching drink types resets the count",
-    "optionD": "Slipping judgment; slow down and count",
+    "optionD": "Reassess the group and count the actual alcohol",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Escalating to stronger drinks and ordering for others signals declining judgment, and each shot is a full standard drink. Switching drink types never resets the count."
+    "explanation": "Changing to shots or ordering for friends does not by itself prove impaired judgment. Check the actual pour sizes and strengths, ask whether the friends want the drinks, and watch for changes in behavior. Changing beverage type does not reset the alcohol already consumed."
   },
   {
     "type": "ALCOHOL",
@@ -1069,13 +1069,13 @@
     "questionId": "ALC-INT-033",
     "category": "alcIntoxication",
     "question": "A guest at a restaurant has had two glasses of wine with dinner over two hours and shows no cues. Based on the count, how should the server proceed?",
-    "optionA": "Continue normal service while monitoring",
+    "optionA": "Check pour sizes and reassess before more alcohol",
     "optionB": "Refuse further service because wine is strong",
     "optionC": "Serve the rest of the bottle; dinner slows absorption",
     "optionD": "Insist the guest switch to beer",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Two drinks over two hours with food and no cues is within a moderate pace, so normal service with continued monitoring is appropriate. Automatically pouring the rest of the bottle ignores the count."
+    "explanation": "Two glasses of wine are not necessarily two standard drinks. Check the pour size and strength, consider other alcohol or medication, and keep observing the guest. Food and a two-hour interval do not prove that another drink is safe."
   },
   {
     "type": "ALCOHOL",
@@ -1432,14 +1432,14 @@
     "state": "ALL",
     "questionId": "ALC-ID-019",
     "category": "alcChecking",
-    "question": "A guest says they left their ID in the car and asks you to serve them now and they will bring it later. What should you do?",
+    "question": "House policy requires acceptable proof of age before alcohol service. A guest says their ID is in the car and asks to be served now, promising to bring it later. What should you do?",
     "optionA": "Serve one drink and ask for the ID before the second",
     "optionB": "Ask the guest's companion to vouch for them",
     "optionC": "Accept a photo of the ID on their phone",
     "optionD": "Decline to serve until a valid ID is shown",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "No valid ID means no alcohol service, no matter how old the guest appears or what they promise. Phone photos and vouching are generally not acceptable proof of age."
+    "explanation": "Apply the stated house policy: wait until acceptable proof of age is provided. A promise to show ID later does not satisfy the policy. Follow applicable law and the establishment’s procedure when checking the ID."
   },
   {
     "type": "ALCOHOL",
@@ -1642,14 +1642,14 @@
     "state": "ALL",
     "questionId": "ALC-ID-034",
     "category": "alcChecking",
-    "question": "A parent at a restaurant asks the server to pour a small glass of wine for their 17-year-old child. What should the server do?",
+    "question": "A restaurant’s house policy does not allow anyone under 21 to consume alcohol there. A parent asks the server to pour a small glass of wine for their 17-year-old child. What should the server do?",
     "optionA": "Pour a half glass as a courtesy",
     "optionB": "Serve it as long as the minor does not drive",
     "optionC": "Serve it if the parent signs a waiver",
     "optionD": "Decline; no one under 21 is served here",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Most states prohibit serving anyone under 21 on licensed premises, and the few that allow it with a parent present leave the choice to the licensee; this establishment's policy does not permit it, and a parent's waiver creates no legal exception. Decline politely and offer the minor a non-alcoholic drink."
+    "explanation": "Follow the stated house policy and decline politely. Offer a non-alcoholic drink. A parent’s permission or waiver does not override the policy. State exceptions for a qualifying adult furnishing alcohol do not mean a server may assume direct service to a minor is allowed."
   },
   {
     "type": "ALCOHOL",
@@ -1789,7 +1789,7 @@
     "optionD": "Refuse the whole table for the rest of the night",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Shots deliver a full drink in seconds and are a common way guests escalate; redirecting to food or delaying is a low-conflict way to slow the group. Refusing the whole table punishes guests who may not be impaired."
+    "explanation": "A round of shots can encourage rapid consumption. Suggesting food or a non-alcoholic option and reassessing the group can slow the pace. Count the actual pour size and strength. Refuse alcohol whenever safety, applicable law, or house policy requires it."
   },
   {
     "type": "ALCOHOL",
@@ -2233,11 +2233,11 @@
     "question": "Why should a server avoid giving an intoxicated guest a 'last drink' or 'one for the road'?",
     "optionA": "It costs the establishment money",
     "optionB": "Guests resent being told it is last call",
-    "optionC": "BAC keeps rising after the last drink",
+    "optionC": "BAC may keep rising after the last drink",
     "optionD": "It violates local health codes",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Alcohol from the last drink is still being absorbed 30 to 90 minutes later, so the guest is more impaired on the drive home than at the table. A final drink to an intoxicated guest is also simply illegal."
+    "explanation": "Alcohol can still be absorbed after drinking stops, so BAC may continue to rise. A final drink adds to the risk. Stop alcohol service to an intoxicated guest and help arrange a safe response; do not use a fixed waiting time as proof of recovery."
   },
   {
     "type": "ALCOHOL",
@@ -2528,10 +2528,10 @@
     "optionA": "It does not; liability covers only drunk driving",
     "optionB": "Non-driving guests cannot sue the bar",
     "optionC": "Only hotel bars face non-driving liability",
-    "optionD": "Falls, fights and poisoning also bring claims",
+    "optionD": "Falls, fights and poisoning create harm and legal risk",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Dram shop and negligence claims arise from any injury connected to over-service, including assaults, falls, and medical emergencies. Driving is the most common scenario but not the only one."
+    "explanation": "Over-service can cause serious harm even when no one drives, including falls, violence, and alcohol poisoning. Whether an injury supports a civil claim depends on the jurisdiction, the facts, and applicable defenses. A safe ride does not make over-service safe."
   },
   {
     "type": "ALCOHOL",
@@ -2766,10 +2766,10 @@
     "optionA": "Such rules are federal and identical everywhere",
     "optionB": "They were repealed everywhere decades ago",
     "optionC": "They apply only to package stores, per house policy",
-    "optionD": "Only some states have them; follow house policy",
+    "optionD": "Follow the applicable law and lawful house policy",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "A few states keep provisions about habitual drunkards or court-ordered no-service lists while most do not. These are examples of rules that vary by state rather than national standards."
+    "explanation": "Where a law bars service to a specified person, follow that law. House policy cannot authorize prohibited service. California’s rule includes habitual or common drunkards and obviously intoxicated people; do not assume every state uses that same rule."
   },
   {
     "type": "ALCOHOL",

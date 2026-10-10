@@ -51,7 +51,7 @@ const EXAM_BLURBS: Record<string, string> = {
   part107: "FAA remote pilot (drone) knowledge test. Regulations, airspace and charts, weather, loading and performance, operations.",
   ham: "Technician-class amateur-radio practice with explanations. Text-only coverage; figure questions are not included.",
   epa608: "EPA Section 608 practice for Core and Types I, II and III. Passing requirements depend on the exam format.",
-  civics: "The USCIS naturalization civics test. All 128 official 2025 questions as multiple choice: government, history, symbols and holidays.",
+  civics: "200 multiple-choice study items based on the 2025 USCIS civics list. Prepare your own local answers before the oral interview.",
   cna: "Nurse aide written exam on the NNAAP outline: daily living, basic nursing skills, psychosocial care and the role of the aide.",
   ptcb: "PTCB pharmacy technician certification exam. Medications, patient safety, order entry math and federal law, on the 2026 PTCE outline.",
   phleb: "Phlebotomy practice on collection, safety and specimen handling. Cross-provider exam coverage has not been verified; use your certification provider’s current outline.",

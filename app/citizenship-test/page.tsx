@@ -8,9 +8,9 @@ import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free US Citizenship Test Practice 2026 - All 128 Civics Questions";
+const title = "Free USCIS 2025 Civics Test Practice - 200 Study Items";
 const description =
-  "Free practice for the USCIS naturalization civics test. All 128 official 2025 questions as multiple choice, with the acceptable answers explained. Government, history, symbols and holidays, with instant feedback.";
+  "Free multiple-choice study for the 2025 USCIS civics test. Use 200 adapted items with explanations. Review the official questions and your local answers before the oral interview.";
 
 export const metadata: Metadata = {
   title,
@@ -48,10 +48,10 @@ const jsonLd = {
       operatingSystem: "Any",
       offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
       featureList: [
-        "All 128 official USCIS 2025 civics questions",
+        "Practice based on USCIS 2025 civics topics",
         "200 multiple-choice practice items",
         "4 practice tests and 4 training sets by section",
-        "Every acceptable answer explained",
+        "Explanations with accepted-answer examples",
         "Auto-save progress",
       ],
     },
@@ -77,7 +77,7 @@ const jsonLd = {
           name: "Is the civics test multiple choice?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "No. It is an oral test: the officer asks the question and you answer in your own words. Multiple-choice practice is still the fastest way to learn the 128 answers, and every explanation here lists the other acceptable answers so you can use any of them at the interview.",
+            text: "No. The USCIS civics test is oral. TigerTest uses adapted multiple-choice study items. Practice saying the required answers without the options, and check the official list for current and local answers.",
           },
         },
         {
@@ -85,7 +85,7 @@ const jsonLd = {
           name: "What is the 65/20 exception?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "If you are 65 or older and have been a permanent resident for 20 years or more, you study only the 20 questions marked with an asterisk on the official list, are asked 10 of them, and must answer 6 correctly. You may also take the test in the language of your choice.",
+            text: "USCIS gives special consideration to qualifying applicants age 65 or older with at least 20 years as lawful permanent residents. Check the filing-time eligibility rules. Use the 20 starred questions from your applicable 2008 or 2025 list. You are asked 10 and need 6 correct, and may use your chosen language. TigerTest does not provide a dedicated 65/20 mode.",
           },
         },
         {
@@ -93,7 +93,7 @@ const jsonLd = {
           name: "Do the answers change?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Some do. Questions about the President, Vice President, Speaker of the House, Chief Justice, your governor and your senators depend on who holds office at your interview. Check uscis.gov/citizenship/testupdates before your interview.",
+            text: "Some answers depend on who holds office at your interview. Check the President, Vice President, Speaker, Chief Justice, your senator, your U.S. representative, and your governor. Also learn your state capital. TigerTest uses D.C. or territory examples for the four local questions; prepare your own answers using USCIS resources.",
           },
         },
       ],
@@ -130,7 +130,7 @@ export default function CitizenshipLandingPage() {
           <ExamLandingHero
             dashboardHref="/citizenship/dashboard"
             shortName="citizenship"
-            subtitle="All 128 official USCIS civics questions as practice. Tuned for mobile. No account needed."
+            subtitle="200 adapted study items for the 2025 civics test. Review your local answers and practice speaking before the interview. No account needed."
             shots={{ mobile: "/landing/civics-mobile.png", desktop: "/landing/civics-desktop.png" }}
           />
         </div>
@@ -151,7 +151,7 @@ export default function CitizenshipLandingPage() {
               <p className="text-gray-600">
                 Four sets that follow the official list: principles and rights, system of government,
                 American history, symbols and holidays. Questions you miss come back until you have
-                mastered them, and every explanation lists all the acceptable answers.
+                mastered them. Read the explanations, then review the official list and prepare your own local answers.
               </p>
             </div>
           </div>
@@ -257,9 +257,10 @@ export default function CitizenshipLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">4. Check for updated answers before your interview</h3>
               <p>
-                The names of the President, Vice President, Speaker, Chief Justice, your governor and
-                your senators change with elections and appointments. Visit
-                uscis.gov/citizenship/testupdates the week of your interview.
+                Check the President, Vice President, Speaker, and Chief Justice before your interview.
+                Also prepare your own current senator, U.S. representative, governor, and state capital answers.
+                The local questions in this practice bank use D.C. or territory examples.
+                Use uscis.gov/citizenship/testupdates and the official question list to prepare your own answers.
               </p>
             </div>
           </div>
@@ -284,17 +285,18 @@ export default function CitizenshipLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 mb-2">Is the civics test multiple choice?</h3>
             <p className="text-gray-600">
-              No. It is an oral test: the officer asks and you answer in your own words. Multiple-choice
-              practice is still the fastest way to learn the 128 answers, and every explanation here lists
-              the other acceptable answers so you can use any of them at the interview.
+              No. The USCIS civics test is oral. TigerTest uses adapted multiple-choice study items.
+              Practice saying the required answers without the options. Review the official list
+              and prepare your own current and local answers.
             </p>
           </div>
           <div>
             <h3 className="font-semibold text-lg text-gray-900 mb-2">What is the 65/20 exception?</h3>
             <p className="text-gray-600">
-              If you are 65 or older and have been a permanent resident for 20 years or more, you study
-              only the 20 questions marked with an asterisk on the official list, are asked 10 of them, and
-              must answer 6 correctly. You may also take the test in the language of your choice.
+              Qualifying applicants age 65 or older with at least 20 years as lawful permanent residents
+              study the 20 starred questions from their applicable 2008 or 2025 list. Check the
+              filing-time eligibility rules with USCIS. You are asked 10 and need 6 correct, and may
+              use your chosen language. TigerTest does not provide a dedicated 65/20 mode.
             </p>
           </div>
           <div>
@@ -314,7 +316,7 @@ export default function CitizenshipLandingPage() {
         <div className="absolute inset-0 bg-gradient-to-t from-brand-light to-white pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Ready for Your Naturalization Interview?</h2>
-          <p className="text-lg text-gray-600 mb-10">Free to start. No account required. All 128 official questions.</p>
+          <p className="text-lg text-gray-600 mb-10">Free to start. No account required. 200 adapted study items for the 2025 civics test.</p>
           <ExamLandingCTA dashboardHref="/citizenship/dashboard" />
         </div>
       </div>

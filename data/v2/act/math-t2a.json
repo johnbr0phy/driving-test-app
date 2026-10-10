@@ -71,7 +71,7 @@
         "alt": "Two horizontal parallel lines, l above m, cut by a transversal t that rises from lower left to upper right. At the intersection with line l, the angle above l and to the left of t is marked 110 degrees. At the intersection with line m, the angle above m and to the right of t is marked (4x + 10) degrees."
       },
       "calculator": true,
-      "explanation": "The $110^\\circ$ angle and the angle marked $(4x + 10)^\\circ$ are on opposite sides of the transversal, and together with the parallel lines they form a pair whose measures are supplementary (the $110^\\circ$ angle is supplementary to its neighbor along line $l$, and that neighbor corresponds to the marked angle on line $m$). So $4x + 10 = 180 - 110 = 70$, which gives $4x = 60$ and $x = 15$. The choice $25$ comes from setting $4x + 10 = 110$ as if the two angles were equal, and $70$ is the measure of the marked angle, not the value of $x$."
+      "explanation": "The $110^\\circ$ angle and the angle just to its right along line $l$ (above $l$, to the right of $t$) form a linear pair, so that angle measures $180^\\circ - 110^\\circ = 70^\\circ$. That $70^\\circ$ angle and the marked angle sit in the same position at each parallel line (above the line, to the right of $t$), so they are corresponding angles and are equal. Therefore $4x + 10 = 70$, which gives $4x = 60$ and $x = 15$. The choice $25$ comes from setting $4x + 10 = 110$ as if the two labelled angles were equal, and $70$ is the measure of the marked angle, not the value of $x$."
     },
     {
       "id": "ACT-MA-204",

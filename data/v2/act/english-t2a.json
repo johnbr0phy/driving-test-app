@@ -1,0 +1,711 @@
+{
+  "stimuli": [
+    {
+      "id": "ACT-EN-P6",
+      "title": "Passage I",
+      "text": "The first thing I learned at the Spoke Collective was that I did not know how to use a wrench. I had brought my bicycle in because the brakes squealed, expecting someone to fix __it, instead__ [1] a volunteer named Rosa handed me a set of hex keys and asked where I thought the noise was coming from. I pointed at the front wheel. She nodded and walked away.\n\nThe Spoke Collective occupies a former auto garage on Ninth Street. __It is open three evenings a week.__ [2] Nobody is paid. Anyone can bring in a bike and use the tools and the stands for __free, with one rule: you__ [3] do the work yourself. The volunteers will stand beside you, show you where the bolt is, and explain what it does, but they will not turn the wrench for you. On my first night I spent two hours __taking off, and putting back on__ [4] a single brake pad. The squeal, when I finally rode home, was gone.\n\nI kept coming back. Partly it was the satisfaction of fixing something with my own __hands, partly__ [5] it was the people. A retired machinist named Walt could true a wheel by ear, tightening spokes until the wobble disappeared, and he insisted on teaching anyone who would sit still long enough. A college student rebuilt an entire drivetrain over six weeks, __one component at a time, one by one.__ [6] Children from the neighborhood __came__ [7] in with flat tires and left knowing how to patch a tube. Whatever else the garage was, it was a classroom.\n\nLast month Rosa asked if I would take a volunteer shift. I almost said no. I still cannot adjust a derailleur without __consulting__ [8] the laminated chart on the wall, and my wheels are never quite as true as __Walts.__ [9] But she pointed out that the person who learned something last year is often the best one to explain it, because that person still remembers what was confusing.\n\nSo on Thursday nights I stand beside the stands, hands in my pockets, telling people where the bolt is. __I am still working on the part where I walk away.__ [10]"
+    },
+    {
+      "id": "ACT-EN-P7",
+      "title": "Passage II",
+      "text": "For most of the nineteenth century, a lighthouse was only as reliable as the person who lived in it. Keepers trimmed wicks, polished lenses, wound the clockwork that turned the __light and__ [11] kept a log of every ship that passed. The work was repetitive, but the stakes were high. A lamp that went dark on a stormy night could send a vessel onto the rocks, and a keeper who slept through a shift might wake to find the shore __littered with__ [12] wreckage.\n\nThe position was never glamorous. Many stations stood on islands or headlands that __was__ [13] reachable only by boat, and supplies arrived a few times a year. Families lived in the keeper's quarters, children were schooled by mail, and gardens were coaxed from thin, salty soil. __Yet the job attracted applicants for decades, drawn by the steady pay and the strange dignity of being responsible for a light that strangers depended on.__ [14]\n\nThe end of the keeper's era began with a valve. In 1907 a Swedish engineer named Gustaf Dalen __patented__ [15] a device that used the warmth of sunlight to switch an acetylene lamp off at dawn and on again at dusk, so that a light could run for months without a human hand. Electrification followed. By the 1930s, lamps lit by electric bulbs could be __monitored, from a distance,__ [16] and an automatic changer could swap in a fresh bulb the moment one burned out. Each improvement removed one of the keeper's tasks, until there was nothing left for a keeper to do.\n\nThe United States Coast Guard, which took over the nation's lighthouses in 1939, automated them __in a steady and gradual manner that took__ [17] the next fifty years. The last keepers left their stations around the turn of the twenty-first century. Many of the buildings they left behind were sold, turned into museums, or simply __allowing__ [18] to crumble.\n\nAutomation made the lights more reliable, not less. A modern beacon uses an array of light-emitting diodes that can run for years, and a sensor reports any fault to a distant office within seconds. The ships that pass at night are safer than they have ever been. What was lost is harder to __measure: the__ [19] figure in the tower window, the logbook kept in a careful hand, the sense that somewhere on a dark coast, someone was watching."
+    },
+    {
+      "id": "ACT-EN-P8",
+      "title": "Passage III",
+      "text": "The robot's name was Gus, and on the morning of the regional competition he would not turn on. Our team, the Fairmont __Gearheads had__ [21] spent four months building him in a corner of the chemistry lab, and we had driven three hours in a borrowed van to a convention center in the state capital. Now Gus sat on the inspection table, silent, while __other teams got ready.__ [22]\n\nPriya, our lead programmer, was the first to stop panicking. She asked Marcus and __I__ [23] for the multimeter and started at the battery, tracing the wiring one connection at a time. The rest of us __hovered.__ [24] Marcus suggested checking the main breaker. I kept opening and closing the laptop as if the problem might be inside it. After twenty minutes of tracing, __the fault was found by Priya__ [25] where the battery lead met the power distribution board: a crimped wire, so small it was easy to miss.\n\n__Fixing it took thirty seconds.__ [26] Gus blinked, whirred, and lifted his arm. We cheered loudly enough that a judge looked over. We passed inspection with eleven minutes to spare and rolled Gus to the practice field, where he __promptly drives__ [27] into a wall. It turned out that the autonomous routine, which Priya had rewritten the night before, assumed the robot would start facing the opposite direction. She fixed that too.\n\nWe did not win the regional. We finished twenty-third out of forty-one, which our coach, Ms. Okafor, insisted was __respectable__ [28] for a rookie team. Our best match came in the afternoon, when Gus stacked four crates in the scoring zone without __a single, error.__ [29] Priya watched from the driver's station with her hands clenched, and when the buzzer sounded she sat down on the floor and laughed.\n\nOn the drive home, nobody talked about the ranking. We talked about the crimped wire, and the wall, and the four crates. Somewhere past the halfway point, Marcus pulled out a notebook and started sketching a better arm. __Next year, he said, Gus would stack six.__ [30]"
+    }
+  ],
+  "questions": [
+    {
+      "id": "ACT-EN-201",
+      "section": "english",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-EN-P6",
+      "domain": "conventions",
+      "skill": "Sentence boundaries",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "[1] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "it instead,",
+        "it. Instead,",
+        "it, which instead"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The underlined portion joins two independent clauses (\"I had brought my bicycle in...\" and \"a volunteer named Rosa handed me...\") with only a comma, which is a comma splice. A period ends the first sentence, and \"Instead,\" introduces the second. Choice B removes the comma and leaves a run-on, and choice D turns the second clause into a relative clause with nothing to modify, so the sentence never finishes."
+    },
+    {
+      "id": "ACT-EN-202",
+      "section": "english",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-EN-P6",
+      "domain": "production",
+      "skill": "Supporting details",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "[2] The writer wants to emphasize how much the shop depends on the people who work there. Given that all the choices are true, which one best accomplishes that goal?",
+      "options": [
+        "NO CHANGE",
+        "It is open three evenings a week, and its tools were donated by local bike shops.",
+        "It is open three evenings a week, staffed by a rotating crew of about twenty volunteers who keep it running.",
+        "It has a concrete floor and two garage doors that roll up in summer."
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Choice C names the volunteers, says how many there are, and states that they keep the shop running, which directly supports the point and sets up the next sentence, \"Nobody is paid.\" The original gives only the hours. Choice B credits the tools to other shops rather than to the people working at this one, and choice D describes the building."
+    },
+    {
+      "id": "ACT-EN-203",
+      "section": "english",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-EN-P6",
+      "domain": "conventions",
+      "skill": "Colons",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "[3] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "free, with one rule, you",
+        "free with one rule; you",
+        "free, with one rule you"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The words before the colon form a complete statement, and \"you do the work yourself\" explains what the one rule is, so a colon correctly introduces that explanation. In choice B a comma alone links the explanation to the sentence, which leaves an independent clause spliced on with a comma. Choice C puts a semicolon between a phrase and a clause, and choice D jams the rule and its explanation together with no punctuation at all."
+    },
+    {
+      "id": "ACT-EN-204",
+      "section": "english",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-EN-P6",
+      "domain": "conventions",
+      "skill": "Commas in compound elements",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "[4] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "taking off and putting back on",
+        "taking off, and, putting back on",
+        "taking off; and putting back on"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "\"Taking off\" and \"putting back on\" are two verb phrases that share one object, \"a single brake pad,\" and a pair joined by \"and\" needs no comma. The original comma wrongly separates the two halves of the compound, choice C adds commas on both sides of \"and,\" and the semicolon in choice D cannot divide two parts of a single phrase."
+    },
+    {
+      "id": "ACT-EN-205",
+      "section": "english",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-EN-P6",
+      "domain": "conventions",
+      "skill": "Comma splices",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "[5] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "hands, and partly",
+        "hands partly",
+        "hands, partly, it"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "\"Partly it was the satisfaction of fixing something with my own hands\" and \"partly it was the people\" are both independent clauses, so a comma alone between them is a comma splice. Adding \"and\" after the comma joins them correctly. Choice C removes the comma and creates a run-on, and choice D adds commas without a conjunction, so the splice remains."
+    },
+    {
+      "id": "ACT-EN-206",
+      "section": "english",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-EN-P6",
+      "domain": "language",
+      "skill": "Redundancy",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "[6] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "one component at a time.",
+        "one component at a time, each one separately.",
+        "piece by piece, one component at a time."
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "\"One component at a time\" already says that the student worked on the parts individually, so \"one by one\" repeats the idea. Choices C and D add other phrases that mean the same thing. The shortest version says everything the sentence needs."
+    },
+    {
+      "id": "ACT-EN-207",
+      "section": "english",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-EN-P6",
+      "domain": "conventions",
+      "skill": "Verb tense consistency",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "[7] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "come",
+        "had came",
+        "was coming"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The paragraph narrates past events, and the second verb in the sentence, \"left,\" is in the simple past, so \"came\" matches it. \"Come\" shifts to the present tense in the middle of the sentence. \"Had came\" is not a standard form (the past perfect would be \"had come\"), and \"was coming\" is singular and does not agree with the plural subject \"children.\""
+    },
+    {
+      "id": "ACT-EN-208",
+      "section": "english",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-EN-P6",
+      "domain": "language",
+      "skill": "Tone",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "[8] Which choice is most consistent with the style and tone of the essay?",
+      "options": [
+        "NO CHANGE",
+        "sneaking a peek at",
+        "giving a look-see to",
+        "undertaking a perusal of"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The essay is written in a plain, reflective voice, and \"consulting the laminated chart\" fits that register. \"Sneaking a peek at\" and \"giving a look-see to\" are too playful and casual for the surrounding sentences, and \"undertaking a perusal of\" is stiff and wordy."
+    },
+    {
+      "id": "ACT-EN-209",
+      "section": "english",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-EN-P6",
+      "domain": "conventions",
+      "skill": "Possessive nouns",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "[9] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "Walt's.",
+        "Walts'.",
+        "Walt."
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The sentence compares the writer's wheels with the wheels belonging to Walt, so the singular possessive \"Walt's\" is needed, with the word \"wheels\" understood. \"Walts\" is a plural with no possessive, \"Walts'\" would be the possessive of several people named Walt, and \"as true as Walt\" compares wheels to a person."
+    },
+    {
+      "id": "ACT-EN-210",
+      "section": "english",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-EN-P6",
+      "domain": "production",
+      "skill": "Conclusions",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "[10] Which choice provides the most effective conclusion to the essay?",
+      "options": [
+        "NO CHANGE",
+        "The shop plans to add a fourth evening next spring.",
+        "I have since bought a second bicycle for commuting.",
+        "Hex keys come in metric and standard sizes."
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The essay opens with Rosa handing the writer the tools and walking away so that the writer could learn by doing. The original sentence returns to that moment and shows the writer now in Rosa's position, still learning her hardest lesson, which gives the essay a sense of closure. Choice B shifts to the shop's schedule, choice C introduces a purchase the essay never mentions, and choice D ends on a technical fact unrelated to the essay's point."
+    },
+    {
+      "id": "ACT-EN-211",
+      "section": "english",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-EN-P7",
+      "domain": "conventions",
+      "skill": "Commas in a series",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "[11] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "light, and",
+        "light; and",
+        "light, and,"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The sentence lists four things keepers did, and the first three items are already separated by commas, so a comma should also come before \"and\" ahead of the final item, \"kept a log.\" Without it, a reader may take \"turned the light and kept a log\" as two things the clockwork did. A semicolon does not belong in a list of short items, and the extra comma after \"and\" in choice D separates the conjunction from the item it introduces."
+    },
+    {
+      "id": "ACT-EN-212",
+      "section": "english",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-EN-P7",
+      "domain": "language",
+      "skill": "Precise word choice",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "[12] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "decorated with",
+        "stuffed with",
+        "overflowing with"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "\"Littered with\" describes debris scattered across a surface, which is exactly how wreckage on a shore would look. \"Decorated with\" suggests something pleasant and deliberate, and \"stuffed with\" and \"overflowing with\" describe a container that is full rather than a shore strewn with pieces of a ship."
+    },
+    {
+      "id": "ACT-EN-213",
+      "section": "english",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-EN-P7",
+      "domain": "conventions",
+      "skill": "Subject-verb agreement",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "[13] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "were",
+        "has been",
+        "is"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The verb belongs to the relative clause that describes \"islands or headlands,\" a plural subject, so it must be plural: \"that were reachable only by boat.\" \"Was,\" \"has been,\" and \"is\" are all singular. The past tense also matches \"stood\" earlier in the sentence."
+    },
+    {
+      "id": "ACT-EN-214",
+      "section": "english",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-EN-P7",
+      "domain": "production",
+      "skill": "Relevance and deletion",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "[14] The writer is considering deleting the underlined sentence. Should the sentence be kept or deleted?",
+      "options": [
+        "Kept, because it lists the supplies that keepers received each year.",
+        "Kept, because it explains why people sought the job despite the hardships the paragraph describes.",
+        "Deleted, because it contradicts the statement that the position was never glamorous.",
+        "Deleted, because the paragraph is about keepers' families rather than their pay."
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The paragraph describes isolation, scarce supplies, and hard living, and the underlined sentence answers the question a reader would naturally ask next: why anyone wanted the job. It balances the paragraph rather than contradicting it, since steady pay and a sense of duty are not the same as glamour. The sentence says nothing about supplies, and the paragraph is about the conditions of the job as a whole, not only families."
+    },
+    {
+      "id": "ACT-EN-215",
+      "section": "english",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-EN-P7",
+      "domain": "conventions",
+      "skill": "Verb tense",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "[15] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "patents",
+        "had been patenting",
+        "will patent"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The sentence reports a completed event in 1907, and the surrounding verbs (\"began,\" \"followed\") are in the simple past, so \"patented\" is correct. \"Patents\" shifts to the present and \"will patent\" to the future. \"Had been patenting\" describes an action in progress before some other past event, which the sentence does not describe."
+    },
+    {
+      "id": "ACT-EN-216",
+      "section": "english",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-EN-P7",
+      "domain": "conventions",
+      "skill": "Commas and compound sentences",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "[16] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "monitored from a distance,",
+        "monitored from a distance",
+        "monitored, from a distance"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "\"From a distance\" completes the verb phrase \"monitored from a distance\" and should not be cut off by a comma, but a comma is needed after \"distance\" because \"and\" joins two independent clauses, the second being \"an automatic changer could swap in a fresh bulb.\" Choice B is the only option that removes the first comma and keeps the second. Choice C drops the comma between the clauses, and choices A and D keep the stray comma after \"monitored.\""
+    },
+    {
+      "id": "ACT-EN-217",
+      "section": "english",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-EN-P7",
+      "domain": "language",
+      "skill": "Concision",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "[17] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "steadily over",
+        "in steady fashion across the course of",
+        "steadily and gradually over"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "\"Automated them steadily over the next fifty years\" says in two words what the original says in eight. Choice C is nearly as wordy as the original, and in choice D \"steadily and gradually\" expresses one idea with two adverbs."
+    },
+    {
+      "id": "ACT-EN-218",
+      "section": "english",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-EN-P7",
+      "domain": "conventions",
+      "skill": "Parallel structure",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "[18] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "allowed",
+        "they allowed them",
+        "being allowed"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The sentence lists three things that happened to the buildings: they \"were sold, turned into museums, or simply allowed to crumble.\" Each item must be a past participle that fits after \"were,\" and \"allowed\" is the only choice that matches \"sold\" and \"turned.\" \"Allowing\" and \"being allowed\" break the pattern, and \"they allowed them\" adds a subject and turns the item into a clause."
+    },
+    {
+      "id": "ACT-EN-219",
+      "section": "english",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-EN-P7",
+      "domain": "conventions",
+      "skill": "Colons",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "[19] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "measure, the",
+        "measure; the",
+        "measure the"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "\"What was lost is harder to measure\" is a complete statement, and the series that follows names the things that were lost, so a colon is the correct mark to introduce that list. A semicolon must have a complete clause on each side, and the list is not a clause. A comma alone leaves the list loosely attached, and with no punctuation the list runs straight into \"measure\" and the sentence becomes confusing."
+    },
+    {
+      "id": "ACT-EN-220",
+      "section": "english",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-EN-P7",
+      "domain": "production",
+      "skill": "Writer's purpose",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "[20] Suppose the writer's main purpose had been to explain why lighthouse keepers were eventually no longer needed. Would this essay accomplish that purpose?",
+      "options": [
+        "Yes, because it describes the inventions that took over the keepers' tasks one by one.",
+        "Yes, because it lists the duties a keeper performed in the nineteenth century.",
+        "No, because it focuses mainly on Gustaf Dalen's career as an engineer.",
+        "No, because it argues that automation should be reversed."
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The third and fourth paragraphs trace the sun valve, electrification, automatic bulb changers, and the Coast Guard's automation program, and the third paragraph says that each improvement removed one of the keeper's tasks \"until there was nothing left for a keeper to do.\" That is a direct explanation of why keepers were no longer needed. Choice B names something the essay does, but listing duties does not by itself explain why the job ended. Dalen appears in only one sentence, and the final paragraph says automation made the lights more reliable, not that it should be undone."
+    },
+    {
+      "id": "ACT-EN-221",
+      "section": "english",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-EN-P8",
+      "domain": "conventions",
+      "skill": "Appositives",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "[21] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "Gearheads, had",
+        "Gearheads; had",
+        "Gearheads, and had"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "\"The Fairmont Gearheads\" is an appositive that renames \"our team,\" and an appositive in the middle of a sentence must be set off by commas on both sides. The original has a comma before the appositive but none after it. A semicolon would cut the subject off from its verb, and \"and had\" wrongly suggests a second verb joined to a first one."
+    },
+    {
+      "id": "ACT-EN-222",
+      "section": "english",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-EN-P8",
+      "domain": "production",
+      "skill": "Specific detail",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "[22] Given that all the choices are true, which one most vividly emphasizes the contrast between Gus and the other robots at the competition?",
+      "options": [
+        "NO CHANGE",
+        "forty other teams wheeled their machines past us toward the practice field, motors whirring.",
+        "the judges checked their clipboards and called out team numbers.",
+        "our coach went to look for the coffee stand."
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Choice B puts forty working robots in motion right past the silent Gus, with the sound of their motors underlining that his is not running, which makes the contrast concrete. The original is general, and choices C and D describe the judges and the coach rather than other robots, so they create no contrast with Gus."
+    },
+    {
+      "id": "ACT-EN-223",
+      "section": "english",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-EN-P8",
+      "domain": "conventions",
+      "skill": "Pronoun case",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "[23] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "me",
+        "myself",
+        "I, myself,"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "\"Marcus and me\" is the object of the verb \"asked,\" so the object pronoun \"me\" is required; dropping \"Marcus and\" shows why, since \"She asked me\" is right and \"She asked I\" is not. \"I\" is a subject pronoun. \"Myself\" is a reflexive pronoun that can be used only when the subject and the object are the same person, and choice D is wordy and still uses the wrong case."
+    },
+    {
+      "id": "ACT-EN-224",
+      "section": "english",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-EN-P8",
+      "domain": "language",
+      "skill": "Word choice",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "[24] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "loitered around aimlessly.",
+        "existed in a state of suspension.",
+        "hung out."
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "\"Hovered\" captures the image of teammates standing close by, anxious and useless, which is what the next two sentences go on to show. \"Loitered around aimlessly\" suggests idleness without concern, \"existed in a state of suspension\" is abstract and overwrought, and \"hung out\" is too casual for the essay's voice."
+    },
+    {
+      "id": "ACT-EN-225",
+      "section": "english",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-EN-P8",
+      "domain": "conventions",
+      "skill": "Dangling modifiers",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "[25] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "Priya found the fault",
+        "the fault that Priya found was",
+        "finding the fault was Priya"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The opening phrase \"After twenty minutes of tracing\" describes Priya, who was doing the tracing, so Priya must be the subject that follows it. In the original and in choice C the fault becomes the subject, as if the fault had spent twenty minutes tracing the wiring. Choice D is awkward and puts \"finding\" where the person belongs."
+    },
+    {
+      "id": "ACT-EN-226",
+      "section": "english",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-EN-P8",
+      "domain": "production",
+      "skill": "Transitions between paragraphs",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "[26] Which choice most effectively opens the paragraph by contrasting with the long search described in the preceding paragraph?",
+      "options": [
+        "NO CHANGE",
+        "Priya had been programming since middle school.",
+        "Multimeters are inexpensive and sold at any hardware store.",
+        "We fixed the wire."
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The preceding paragraph describes twenty minutes of searching for a tiny fault, and \"Fixing it took thirty seconds\" sets the quick repair against the long hunt, which is exactly the contrast the question asks for. Choice D also reports the repair but says nothing about how fast it was. Choices B and C introduce facts about Priya and about the tool that do not connect to the search."
+    },
+    {
+      "id": "ACT-EN-227",
+      "section": "english",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-EN-P8",
+      "domain": "conventions",
+      "skill": "Verb tense",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "[27] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "promptly drove",
+        "had promptly been driving",
+        "promptly will drive"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The paragraph is narrated in the simple past (\"passed,\" \"rolled\"), so the verb in the clause about the wall must be \"drove.\" \"Drives\" shifts to the present and \"will drive\" to the future. \"Had promptly been driving\" describes an ongoing action before another past event, which does not fit a single crash."
+    },
+    {
+      "id": "ACT-EN-228",
+      "section": "english",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-EN-P8",
+      "domain": "language",
+      "skill": "Tone",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "[28] Which choice is most consistent with the style and tone of the essay?",
+      "options": [
+        "NO CHANGE",
+        "pretty sweet",
+        "not too shabby",
+        "of a commendable nature"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The essay is told in a plain, warm voice, and \"respectable\" is the word a coach would use for a middling result from a rookie team. \"Pretty sweet\" and \"not too shabby\" are slang that clashes with the surrounding sentences, and \"of a commendable nature\" is stiff and wordy."
+    },
+    {
+      "id": "ACT-EN-229",
+      "section": "english",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-EN-P8",
+      "domain": "conventions",
+      "skill": "Commas between adjective and noun",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "[29] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "a single error.",
+        "a, single error.",
+        "a single error,"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "No comma should separate the adjective \"single\" from the noun it modifies, \"error.\" Choice C puts a comma after the article, which is also wrong, and choice D ends the sentence with a comma instead of a period."
+    },
+    {
+      "id": "ACT-EN-230",
+      "section": "english",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-EN-P8",
+      "domain": "production",
+      "skill": "Conclusions",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "[30] Which choice provides the most effective conclusion to the essay?",
+      "options": [
+        "NO CHANGE",
+        "The van needed gas before we reached Fairmont.",
+        "Robotics competitions are held in every state.",
+        "Ms. Okafor fell asleep in the front seat."
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The essay is about a rookie team that lost but learned, and the final paragraph shows the team already planning for next year. \"Next year, he said, Gus would stack six\" picks up the four crates from the previous paragraph and turns the loss into a goal, which is the natural ending. Choice B is a trivial travel detail, choice C is a general fact, and choice D describes the coach rather than the team's outlook."
+    }
+  ]
+}

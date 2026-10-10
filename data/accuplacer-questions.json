@@ -753,7 +753,7 @@
     "optionD": "Hannah trained for the marathon all winter, she finished in under four hours.",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Two independent clauses need a comma plus a conjunction or a semicolon. A comma alone creates a comma splice, no punctuation creates a run-on, and the last option adds a stray comma."
+    "explanation": "Two independent clauses need a comma plus a conjunction or a semicolon. The last option keeps the comma splice, the third removes all punctuation and makes a run-on, and the first inserts a stray comma after \"finishing\"."
   },
   {
     "type": "ACCUPLACER",
@@ -809,7 +809,7 @@
     "optionD": "The coach, covered in mud, told the players to shower before the bus left.",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Placing the description right after \"players\" makes clear who was muddy. In the original and in the third option, the modifier attaches to the coach, and the last option repeats \"the coach\" needlessly."
+    "explanation": "Placing the description right after \"players\" makes clear who was muddy. The original and the third and fourth options all attach the modifier to the coach, and the first option is redundant (\"told by the coach ... the coach said\")."
   },
   {
     "type": "ACCUPLACER",
@@ -1985,7 +1985,7 @@
     "optionD": "x = -3",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Distribute: 2x + 8 = 5x - 1. Subtract 2x and add 1 to both sides: 9 = 3x, so x = 3. Forgetting to distribute the 2 to the 4 gives x = 7/3."
+    "explanation": "Distribute: 2x + 8 = 5x - 1. Subtract 2x and add 1 to both sides: 9 = 3x, so x = 3. Mis-copying the -1 as +1 (2x + 8 = 5x + 1) gives x = 7/3."
   },
   {
     "type": "ACCUPLACER",

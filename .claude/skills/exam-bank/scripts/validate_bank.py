@@ -17,7 +17,7 @@ Checks (hard failures):
   dupes       duplicate options within a row, duplicate stems across the bank
   length      key > 1.2x the average wrong option in more than 30% of items,
               key the single longest option in more than --max-key-longest (default 25%),
-              bank average option length outside 15..42 characters,
+              bank average option length outside 12..42 characters,
               more than 5 options over 110 characters
 Soft reports: options over 110 chars, "varies by state" only on the key, provider names in stems.
 Thresholds were set so every bank written to the house style passes and the
@@ -159,8 +159,10 @@ def main() -> int:
         errs.append(f"key >1.2x avg wrong option in {far_share:.0%} of items (max 30%)")
     if long_share > args.max_key_longest:
         errs.append(f"key is the longest option in {long_share:.0%} of items (max {args.max_key_longest:.0%})")
-    if not 15 <= avg_opt <= 42:
-        errs.append(f"average option length {avg_opt:.0f} chars (want 15-42)")
+    # Floor is low on purpose: vocabulary and numeric banks (ASVAB, HESI) legitimately
+    # run short. The floor only catches a degenerate bank, not a terse one.
+    if not 12 <= avg_opt <= 42:
+        errs.append(f"average option length {avg_opt:.0f} chars (want 12-42)")
     if over_110 > 5:
         errs.append(f"{over_110} options over 110 chars (max 5)")
     if varies_key_only > 3:

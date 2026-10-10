@@ -77,11 +77,11 @@
     "question": "The law of large numbers states that:",
     "optionA": "Insurers must write at least 1,000 policies to be licensed",
     "optionB": "Large losses are less likely than small ones",
-    "optionC": "The larger the group of similar exposures, the more accurately losses can be predicted",
+    "optionC": "Larger groups make loss predictions more accurate",
     "optionD": "Premiums fall as policy limits rise",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Insurers rely on the law of large numbers to predict losses for a group with confidence, which makes rating possible. It says nothing about license requirements or the size of individual losses."
+    "explanation": "The larger the group of similar exposures, the more accurately losses can be predicted, which is what makes rating possible. It says nothing about license requirements or the size of individual losses."
   },
   {
     "type": "PNC",
@@ -91,7 +91,7 @@
     "question": "Which requirement of an ideally insurable risk is violated when a flood hits an entire region at once?",
     "optionA": "The loss must be definite and measurable",
     "optionB": "There must be a large number of homogeneous units",
-    "optionC": "The loss must not be catastrophic to the insurer",
+    "optionC": "The loss must not be catastrophic",
     "optionD": "The loss must be accidental",
     "correctAnswer": "C",
     "correctIndex": 2,
@@ -146,12 +146,12 @@
     "category": "pcGeneral",
     "question": "Under the principle of indemnity, an insured who suffers a loss should:",
     "optionA": "Receive replacement cost on every loss",
-    "optionB": "Be restored to the financial position held before the loss, no better",
+    "optionB": "Be made whole, but not better off",
     "optionC": "Receive the full policy limit on any total loss",
     "optionD": "Be paid an amount that includes a profit margin",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Indemnity means making the insured whole without profit. Paying replacement cost or policy limits regardless of actual loss would let the insured gain from a loss."
+    "explanation": "Indemnity restores the insured to the financial position held before the loss, without profit. Paying replacement cost or policy limits regardless of actual loss would let the insured gain from a loss."
   },
   {
     "type": "PNC",
@@ -231,7 +231,7 @@
     "question": "An insurer may void a policy because of a misrepresentation only when the false statement is:",
     "optionA": "Discovered within the first 30 days",
     "optionB": "Related to a prior claim of any size",
-    "optionC": "Material to the insurer's decision to issue the policy",
+    "optionC": "Material to the decision to insure",
     "optionD": "Made in writing on a separate form",
     "correctAnswer": "C",
     "correctIndex": 2,
@@ -271,13 +271,13 @@
     "questionId": "PC-GEN-020",
     "category": "pcGeneral",
     "question": "The primary purpose of underwriting is to:",
-    "optionA": "Select and classify risks to protect the insurer against adverse selection",
+    "optionA": "Select and classify risks",
     "optionB": "Set the commission paid to the producer",
     "optionC": "Investigate and settle claims",
     "optionD": "Market policies to new customers",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Underwriters decide whether to accept a risk and at what rate so the book of business stays profitable. Claims settlement and marketing are separate functions."
+    "explanation": "Underwriters decide whether to accept a risk and at what rate, which protects the insurer against adverse selection and keeps the book of business profitable. Claims settlement and marketing are separate functions."
   },
   {
     "type": "PNC",
@@ -302,10 +302,10 @@
     "optionA": "The maximum the insurer pays on a claim",
     "optionB": "The percentage the producer earns as commission",
     "optionC": "The total amount the insured pays each year",
-    "optionD": "The price per unit of exposure, such as per $100 of coverage",
+    "optionD": "The price per unit of exposure",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "The rate is the per-unit price; multiplying it by the number of units gives the premium. The premium, not the rate, is the total paid."
+    "explanation": "The rate is the per-unit price, such as per $100 of coverage; multiplying it by the number of units gives the premium. The premium, not the rate, is the total paid."
   },
   {
     "type": "PNC",
@@ -386,10 +386,10 @@
     "optionA": "Becomes a permanent part of the policy once issued",
     "optionB": "Is valid only after the first claim is reported",
     "optionC": "Guarantees the policy will be issued at the quoted premium",
-    "optionD": "Provides temporary coverage until the policy is issued or coverage is declined",
+    "optionD": "Provides temporary coverage until the policy is issued",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "A binder is temporary evidence of coverage, oral or written, pending underwriting. It does not guarantee issuance, and it is replaced by the policy."
+    "explanation": "A binder is temporary evidence of coverage, oral or written, that lasts until the policy is issued or coverage is declined. It does not guarantee issuance, and it is replaced by the policy."
   },
   {
     "type": "PNC",
@@ -442,7 +442,7 @@
     "optionA": "State the premium and payment schedule",
     "optionB": "Describe the insured's duties after a loss",
     "optionC": "List the property that is covered at replacement cost",
-    "optionD": "Remove coverage for catastrophic, uninsurable or separately insured perils",
+    "optionD": "Remove uninsurable or separately insured perils",
     "correctAnswer": "D",
     "correctIndex": 3,
     "explanation": "Exclusions eliminate perils such as flood, war and nuclear hazard that are catastrophic or better handled by other policies. Duties and premium belong in the conditions and declarations."
@@ -482,12 +482,12 @@
     "category": "pcPolicy",
     "question": "A policy that covers all direct physical loss except what it specifically excludes is written on which basis?",
     "optionA": "Scheduled coverage",
-    "optionB": "Open perils (special form)",
-    "optionC": "Named perils (broad form)",
+    "optionB": "Open perils",
+    "optionC": "Named perils",
     "optionD": "Blanket coverage",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Open perils coverage pays for any cause of loss not excluded. Named perils forms cover only the perils listed."
+    "explanation": "Open perils coverage, the special form, pays for any cause of loss not excluded. Named perils forms such as the broad form cover only the perils listed."
   },
   {
     "type": "PNC",
@@ -496,7 +496,7 @@
     "category": "pcPolicy",
     "question": "Under an open perils policy, who has the burden of proving whether a loss is covered?",
     "optionA": "The producer who placed the coverage",
-    "optionB": "The insurer, which must show that an exclusion applies",
+    "optionB": "The insurer, by showing an exclusion applies",
     "optionC": "The insured, who must show the peril is listed",
     "optionD": "The adjuster, who must find a covered cause",
     "correctAnswer": "B",
@@ -510,12 +510,12 @@
     "category": "pcPolicy",
     "question": "A fire closes a bakery for two months. The profit lost while it is closed is a(n):",
     "optionA": "Direct loss",
-    "optionB": "Indirect (consequential) loss",
+    "optionB": "Indirect loss",
     "optionC": "Collateral loss",
     "optionD": "Proximate loss",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Indirect losses follow from the direct damage, such as lost income or extra expense. The direct loss is the physical fire damage itself."
+    "explanation": "Indirect, or consequential, losses follow from the direct damage, such as lost income or extra expense. The direct loss is the physical fire damage itself."
   },
   {
     "type": "PNC",
@@ -567,7 +567,7 @@
     "question": "The purpose of a coinsurance clause in a property policy is to:",
     "optionA": "Require the insured to pay a percentage of every medical bill",
     "optionB": "Share each loss equally between two insurers",
-    "optionC": "Encourage insureds to carry coverage close to the property's full value",
+    "optionC": "Encourage insurance close to full value",
     "optionD": "Limit the insurer's liability on total losses",
     "correctAnswer": "C",
     "correctIndex": 2,
@@ -596,7 +596,7 @@
     "optionA": "$37,500 and $112,500",
     "optionB": "$100,000 and $50,000",
     "optionC": "$50,000 and $100,000",
-    "optionD": "$75,000 from each insurer",
+    "optionD": "$75,000 and $75,000",
     "correctAnswer": "D",
     "correctIndex": 3,
     "explanation": "Equal shares means each insurer pays the same amount until the loss is paid or a limit is exhausted. $150,000 split equally is $75,000 each, within both limits."
@@ -608,8 +608,8 @@
     "category": "pcPolicy",
     "question": "When one policy is written as excess over another, the excess policy pays:",
     "optionA": "Only losses the primary policy excludes",
-    "optionB": "Only after the primary policy's limit is exhausted",
-    "optionC": "Half of each loss",
+    "optionB": "After the primary limit is exhausted",
+    "optionC": "Half of each loss from the first dollar",
     "optionD": "A pro rata share of every loss",
     "correctAnswer": "B",
     "correctIndex": 1,
@@ -622,7 +622,7 @@
     "category": "pcPolicy",
     "question": "A deductible in a property policy mainly serves to:",
     "optionA": "Transfer all risk to the insured",
-    "optionB": "Eliminate small claims and reduce the premium",
+    "optionB": "Eliminate small claims and cut premium",
     "optionC": "Replace the coinsurance requirement",
     "optionD": "Increase the insurer's limit of liability",
     "correctAnswer": "B",
@@ -650,12 +650,12 @@
     "category": "pcPolicy",
     "question": "The subrogation condition requires the insured to:",
     "optionA": "Pay the deductible to the responsible party",
-    "optionB": "Do nothing after a loss that would impair the insurer's right of recovery",
+    "optionB": "Preserve the insurer's right of recovery",
     "optionC": "Sue the responsible party before filing a claim",
     "optionD": "Waive all claims against the responsible party",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "If the insured releases the wrongdoer after a loss, the insurer's recovery is impaired and the claim can be denied. The insured does not have to sue anyone."
+    "explanation": "The insured must do nothing after a loss that would impair the insurer's right of recovery; releasing the wrongdoer can get the claim denied. The insured does not have to sue anyone."
   },
   {
     "type": "PNC",
@@ -694,10 +694,10 @@
     "optionA": "Exactly half the value of the pair",
     "optionB": "The full value of the pair",
     "optionC": "Nothing, since one earring remains",
-    "optionD": "The difference between the value of the pair before and after the loss",
+    "optionD": "The reduction in the pair's value",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "A set is worth more together, so the insurer pays the reduction in value, not automatically half and not the whole set. The insurer may also choose to repair or replace the missing part."
+    "explanation": "A set is worth more together, so the insurer pays the difference between the value of the pair before and after the loss, not automatically half and not the whole set. The insurer may also choose to repair or replace the missing part."
   },
   {
     "type": "PNC",
@@ -707,11 +707,11 @@
     "question": "Under the standard mortgage clause of a property policy, the mortgagee:",
     "optionA": "Must be listed as a named insured",
     "optionB": "Receives the full loss payment regardless of the loan balance",
-    "optionC": "Is paid for a covered loss even if the insured's claim is denied for the insured's own acts",
+    "optionC": "Is paid even if the insured's claim is denied",
     "optionD": "Loses its rights if the insured fails to pay the premium",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "The mortgagee has rights independent of the insured, so a denial for the insured's fraud does not void the lender's protection. The mortgagee is paid only up to its interest in the property."
+    "explanation": "The mortgagee has rights independent of the insured, so a denial for the insured's own acts, such as fraud, does not void the lender's protection. The mortgagee is paid only up to its interest in the property."
   },
   {
     "type": "PNC",
@@ -736,7 +736,7 @@
     "optionA": "At zero, since premium is fully earned at inception",
     "optionB": "Pro rata, with no penalty",
     "optionC": "At the full premium paid",
-    "optionD": "Short rate, with the insurer retaining a penalty",
+    "optionD": "Short rate, with a penalty",
     "correctAnswer": "D",
     "correctIndex": 3,
     "explanation": "Short rate cancellation lets the insurer keep part of the unearned premium to cover expenses. Pro rata refunds apply when the insurer initiates cancellation."
@@ -789,7 +789,7 @@
     "questionId": "PC-HO-001",
     "category": "pcHomeowners",
     "question": "Which perils are covered by the unendorsed DP-1 Basic Form?",
-    "optionA": "Fire, windstorm, hail and theft",
+    "optionA": "Fire, windstorm, hail, vandalism and theft",
     "optionB": "Fire, lightning and internal explosion",
     "optionC": "Fire, vandalism and water damage",
     "optionD": "Open perils on the dwelling",
@@ -816,14 +816,14 @@
     "state": "ALL",
     "questionId": "PC-HO-003",
     "category": "pcHomeowners",
-    "question": "Which statement about theft coverage under the unendorsed dwelling forms is true?",
-    "optionA": "Theft is covered only off premises",
-    "optionB": "Theft is not covered unless added by endorsement",
-    "optionC": "Theft is covered up to $1,500",
-    "optionD": "Theft of the dwelling's fixtures is covered automatically",
+    "question": "Under the unendorsed dwelling forms, theft of personal property (contents) is:",
+    "optionA": "Covered only off premises",
+    "optionB": "Not covered without an endorsement",
+    "optionC": "Covered up to $1,500",
+    "optionD": "Covered only while the dwelling is owner-occupied",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Dwelling forms are often used for rental property and exclude theft. A broad theft or limited theft endorsement must be added."
+    "explanation": "The dwelling forms are often used for rental property and do not cover theft of contents; a Broad Theft or Limited Theft endorsement adds it. Occupancy does not create theft coverage, and $1,500 is the homeowners jewelry theft sublimit, not a dwelling form figure."
   },
   {
     "type": "PNC",
@@ -833,11 +833,11 @@
     "question": "Personal liability coverage under a dwelling policy is:",
     "optionA": "Included automatically at $100,000",
     "optionB": "Included under Coverage E of the form",
-    "optionC": "Available only by adding a Personal Liability Supplement",
+    "optionC": "Added only by a separate supplement",
     "optionD": "Not available with any dwelling form",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "The dwelling forms are property-only; liability is added by a separate supplement or endorsement. Homeowners forms include liability as Coverage E."
+    "explanation": "The dwelling forms are property-only; liability is added by the Personal Liability Supplement or an endorsement. Homeowners forms include liability as Coverage E."
   },
   {
     "type": "PNC",
@@ -903,11 +903,11 @@
     "question": "Coverage B of a homeowners policy does not apply to an other structure that is:",
     "optionA": "Built after policy inception",
     "optionB": "Used to store the insured's lawn equipment",
-    "optionC": "Rented to someone who is not a tenant of the dwelling, unless used solely as a private garage",
-    "optionD": "Over 500 square feet",
+    "optionC": "Rented to someone who is not a tenant",
+    "optionD": "Larger than 500 square feet in area",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Other structures rented to others or used for business are excluded unless used only as a private garage. Size and construction date do not matter."
+    "explanation": "Other structures rented to someone who is not a tenant of the dwelling, or used for business, are excluded unless used solely as a private garage. Size and construction date do not matter."
   },
   {
     "type": "PNC",
@@ -929,13 +929,13 @@
     "questionId": "PC-HO-011",
     "category": "pcHomeowners",
     "question": "Personal property usually kept at an insured's other residence, such as a vacation home, is limited to:",
-    "optionA": "10 percent of Coverage C or $1,000, whichever is greater",
-    "optionB": "No coverage at all",
-    "optionC": "A flat $2,500",
-    "optionD": "50 percent of Coverage C",
+    "optionA": "10 percent of Coverage C or $1,000",
+    "optionB": "No coverage at the other residence",
+    "optionC": "A flat $2,500 regardless of limit",
+    "optionD": "50 percent of Coverage C or $2,500",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Property normally located at a secondary residence gets the 10 percent or $1,000 limit. Property that is usually at the main residence is covered worldwide."
+    "explanation": "Property normally located at a secondary residence gets 10 percent of Coverage C or $1,000, whichever is greater. Property that is usually at the main residence is covered worldwide."
   },
   {
     "type": "PNC",
@@ -960,7 +960,7 @@
     "optionA": "$2,500",
     "optionB": "$500",
     "optionC": "$1,500",
-    "optionD": "$200",
+    "optionD": "$1,000",
     "correctAnswer": "C",
     "correctIndex": 2,
     "explanation": "The $1,500 theft sublimit applies to jewelry, watches and furs. Firearms and silverware theft are limited to $2,500."
@@ -985,13 +985,13 @@
     "questionId": "PC-HO-015",
     "category": "pcHomeowners",
     "question": "Coverage D, Loss of Use, pays additional living expense for:",
-    "optionA": "Until the policy expires",
-    "optionB": "No more than 12 months",
-    "optionC": "The shortest time needed to repair or replace the damage or for the household to settle elsewhere",
-    "optionD": "No more than 30 days",
+    "optionA": "Until the policy period expires",
+    "optionB": "Exactly 12 months from the date of loss",
+    "optionC": "The shortest time to repair or relocate",
+    "optionD": "Exactly 30 days from the date of loss",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Payment lasts for the reasonable period to repair or permanently relocate, limited by the Coverage D dollar amount rather than a fixed number of days."
+    "explanation": "Payment lasts for the shortest time needed to repair or replace the damage or for the household to settle elsewhere, limited by the Coverage D dollar amount rather than a fixed number of days or the policy period."
   },
   {
     "type": "PNC",
@@ -1027,13 +1027,13 @@
     "questionId": "PC-HO-018",
     "category": "pcHomeowners",
     "question": "Coverage F, Medical Payments to Others, under a homeowners policy pays:",
-    "optionA": "Reasonable medical expenses of guests injured on the premises, regardless of fault, incurred within three years",
+    "optionA": "Guests' medical bills regardless of fault",
     "optionB": "Medical bills of the named insured and resident family",
     "optionC": "Expenses only after the insured is found legally liable",
     "optionD": "Only injuries that occur away from the premises",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Coverage F is a goodwill coverage paid without proving liability, with a default limit of $1,000 per person. It never covers the insured or regular residents of the household."
+    "explanation": "Coverage F is a goodwill coverage that pays reasonable medical expenses of guests injured on the premises without proving liability, for expenses incurred within three years of the injury, with a default limit of $1,000 per person. It never covers the insured or regular residents of the household."
   },
   {
     "type": "PNC",
@@ -1114,10 +1114,10 @@
     "optionA": "HO-4, which pays actual cash value",
     "optionB": "HO-3, which pays full replacement cost",
     "optionC": "HO-5, which pays agreed value",
-    "optionD": "HO-8 Modified Coverage Form, which settles losses at functional replacement cost",
+    "optionD": "HO-8, at functional replacement cost",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "The HO-8 uses common construction materials instead of costly originals, making older homes insurable. Replacement cost under HO-3 would be unaffordable or exceed market value."
+    "explanation": "The HO-8 Modified Coverage Form settles losses at functional replacement cost, using common construction materials instead of costly originals, which makes older homes insurable. Replacement cost under HO-3 would be unaffordable or exceed market value."
   },
   {
     "type": "PNC",
@@ -1128,7 +1128,7 @@
     "optionA": "Two",
     "optionB": "One",
     "optionC": "Four",
-    "optionD": "Six",
+    "optionD": "Eight",
     "correctAnswer": "C",
     "correctIndex": 2,
     "explanation": "Eligibility extends to one- to four-family owner-occupied dwellings. Larger buildings need commercial or dwelling coverage."
@@ -1181,7 +1181,7 @@
     "questionId": "PC-HO-029",
     "category": "pcHomeowners",
     "question": "Debris removal under the HO forms provides an additional 5 percent of the limit when:",
-    "optionA": "The damage plus debris removal expense exceeds the limit of liability for the damaged property",
+    "optionA": "Damage plus debris removal exceeds the limit",
     "optionB": "The insured hires a licensed contractor",
     "optionC": "The debris came from a neighbor's property",
     "optionD": "The loss involves a tree that damaged nothing",
@@ -1238,12 +1238,12 @@
     "category": "pcHomeowners",
     "question": "Under the HO additional coverages, collapse is covered when caused by:",
     "optionA": "Settling, cracking or bulging",
-    "optionB": "Wear and tear over time",
-    "optionC": "Hidden decay or hidden insect damage unknown to the insured",
-    "optionD": "Earth movement",
+    "optionB": "Gradual wear and tear over many years",
+    "optionC": "Hidden decay or hidden insect damage",
+    "optionD": "Earthquake or other earth movement",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Collapse is covered for listed causes such as hidden decay, hidden insect or vermin damage, weight of contents and defective materials during construction. Settling and cracking are specifically not collapse."
+    "explanation": "Collapse is covered for listed causes such as hidden decay or hidden insect or vermin damage unknown to the insured, weight of contents and defective materials during construction. Settling and cracking are specifically not collapse, and earth movement is excluded."
   },
   {
     "type": "PNC",
@@ -1280,12 +1280,12 @@
     "category": "pcHomeowners",
     "question": "An insured with a $15,000 engagement ring should add the Scheduled Personal Property endorsement because it:",
     "optionA": "Adds flood coverage for contents",
-    "optionB": "Doubles the special limits on every property class",
-    "optionC": "Covers listed items on an open perils basis at a stated value with no deductible",
+    "optionB": "Doubles the special limits on every class of property",
+    "optionC": "Open perils up to a scheduled amount, no deductible",
     "optionD": "Raises the Coverage C percentage to 75 percent",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Scheduling removes the $1,500 jewelry theft sublimit for that item, broadens perils to include mysterious disappearance and sets an agreed amount. It does not change the overall Coverage C limit."
+    "explanation": "Scheduling lists the ring at a scheduled amount, which is a maximum: HO 04 61 pays the lesser of actual cash value, repair, replacement or that amount. It removes the $1,500 jewelry theft sublimit for the item and broadens perils to include mysterious disappearance, with no deductible, but does not change the overall Coverage C limit."
   },
   {
     "type": "PNC",
@@ -1296,7 +1296,7 @@
     "optionA": "Medical payments for the insured's passengers",
     "optionB": "Payment when an uninsured driver injures the insured",
     "optionC": "Collision coverage for the covered auto",
-    "optionD": "Liability coverage for bodily injury and property damage the insured is legally responsible for",
+    "optionD": "Liability for bodily injury and property damage",
     "correctAnswer": "D",
     "correctIndex": 3,
     "explanation": "Part A pays damages the insured owes to others and defends suits. Medical payments are Part B, uninsured motorists Part C and damage to the auto Part D."
@@ -1307,7 +1307,7 @@
     "questionId": "PC-AUTO-002",
     "category": "pcAuto",
     "question": "Which supplementary payment under Part A is paid in addition to the limit of liability?",
-    "optionA": "Up to $250 for bail bonds required because of an accident",
+    "optionA": "Up to $250 for bail bonds",
     "optionB": "Collision repairs to the insured's own car",
     "optionC": "Medical bills of the insured's passengers",
     "optionD": "A rental car while the insured's car is repaired",
@@ -1351,7 +1351,7 @@
     "question": "In 25/50/25 split limits, the middle number represents the maximum paid for:",
     "optionA": "Medical payments per person",
     "optionB": "Property damage in one accident",
-    "optionC": "Bodily injury to all persons in one accident",
+    "optionC": "Bodily injury in one accident",
     "optionD": "Bodily injury to any one person",
     "correctAnswer": "C",
     "correctIndex": 2,
@@ -1366,7 +1366,7 @@
     "optionA": "$300,000 is the annual aggregate for all accidents",
     "optionB": "$300,000 is available for each injured person",
     "optionC": "$300,000 applies to property damage only",
-    "optionD": "A total of $300,000 is available for all bodily injury and property damage in one accident",
+    "optionD": "$300,000 for all injury and damage in one accident",
     "correctAnswer": "D",
     "correctIndex": 3,
     "explanation": "A CSL is one pool for all damages in an accident, which is more flexible than split limits. Auto liability limits are per accident, not aggregate."
@@ -1397,7 +1397,7 @@
     "optionD": "Any family member using an employer-owned vehicle for business",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Insureds are the named insured and family members for any auto, plus anyone using the covered auto with permission. Business use of an employer's vehicle by a family member is excluded."
+    "explanation": "Insureds are the named insured and family members for any auto, plus anyone using the covered auto with permission. A vehicle furnished or made available for a family member's regular use, such as a company car, is excluded unless covered by endorsement."
   },
   {
     "type": "PNC",
@@ -1419,7 +1419,7 @@
     "questionId": "PC-AUTO-010",
     "category": "pcAuto",
     "question": "An insured's car is in the shop and the insured borrows a friend's car. Under the PAP, the friend's car is:",
-    "optionA": "A covered auto as a temporary substitute",
+    "optionA": "A temporary substitute covered auto",
     "optionB": "Excluded as a non-owned auto",
     "optionC": "Covered only if added by endorsement",
     "optionD": "Covered only under Part D",
@@ -1434,12 +1434,12 @@
     "category": "pcAuto",
     "question": "Which claim is excluded under Part A liability of the PAP?",
     "optionA": "Injury to a pedestrian struck by the covered auto",
-    "optionB": "Liability from using the auto to carry people for a fee, such as a taxi",
+    "optionB": "Carrying passengers for a fee",
     "optionC": "Damage to a neighbor's fence",
     "optionD": "Liability from a share-the-expense carpool",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "The public or livery conveyance exclusion removes coverage for hauling passengers for hire. A share-the-expense carpool is specifically excepted and remains covered."
+    "explanation": "The public or livery conveyance exclusion removes coverage for using the auto to carry people for a fee, such as a taxi. A share-the-expense carpool is specifically excepted and remains covered."
   },
   {
     "type": "PNC",
@@ -1462,12 +1462,12 @@
     "category": "pcAuto",
     "question": "Under Part B, a family member who is struck by a car while walking is:",
     "optionA": "Covered only if the driver is uninsured",
-    "optionB": "Covered as a pedestrian struck by a motor vehicle designed for use on public roads",
+    "optionB": "Covered as a pedestrian struck by a vehicle",
     "optionC": "Not covered because no covered auto was involved",
     "optionD": "Covered only under Part A",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "The named insured and family members are covered under Part B while occupying any auto or when struck as pedestrians. Part A does not pay the insured's own injuries."
+    "explanation": "The named insured and family members are covered under Part B while occupying any auto or when struck as pedestrians by a motor vehicle designed for use on public roads. Part A does not pay the insured's own injuries."
   },
   {
     "type": "PNC",
@@ -1492,10 +1492,10 @@
     "optionA": "The insured's own liability when driving uninsured",
     "optionB": "The uninsured driver's medical bills",
     "optionC": "Damage to the insured's car by an uninsured driver in every state",
-    "optionD": "Bodily injury the insured is legally entitled to recover from an uninsured or hit-and-run driver",
+    "optionD": "Bodily injury caused by an uninsured or hit-and-run driver",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "UM steps in for the at-fault driver who has no liability insurance. Property damage UM is available only in some states, so it varies by state."
+    "explanation": "UM pays bodily injury damages the insured is legally entitled to recover from an at-fault driver who has no liability insurance or cannot be identified. Property damage UM is available only in some states, so it varies by state."
   },
   {
     "type": "PNC",
@@ -1506,7 +1506,7 @@
     "optionA": "Denies coverage or becomes insolvent",
     "optionB": "Has limits equal to the insured's",
     "optionC": "Is domiciled in another state",
-    "optionD": "Is a nonadmitted carrier",
+    "optionD": "Is a nonadmitted surplus lines carrier",
     "correctAnswer": "A",
     "correctIndex": 0,
     "explanation": "A vehicle is uninsured when there is no liability policy, the limits are below the state minimum, the insurer denies coverage or is insolvent, or the vehicle is a hit-and-run. Equal limits make it insured, not uninsured."
@@ -1519,11 +1519,11 @@
     "question": "Underinsured motorists coverage pays when:",
     "optionA": "The insured is at fault and has low limits",
     "optionB": "The at-fault driver has no insurance at all",
-    "optionC": "The at-fault driver's liability limits are lower than the insured's UIM limits and are not enough to pay the damages",
+    "optionC": "The at-fault driver has insurance but too little",
     "optionD": "The insured's own limits are below the state minimum",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "UIM fills the gap when the other driver has some insurance but too little. A driver with no insurance triggers UM rather than UIM."
+    "explanation": "UIM fills the gap when the at-fault driver's liability limits are lower than the insured's UIM limits and are not enough to pay the damages. A driver with no insurance triggers UM rather than UIM."
   },
   {
     "type": "PNC",
@@ -1533,8 +1533,8 @@
     "question": "Whether an insured may stack uninsured motorists limits from several insured vehicles:",
     "optionA": "Is always permitted under the PAP",
     "optionB": "Is allowed only for commercial autos",
-    "optionC": "Is never permitted",
-    "optionD": "Varies by state and by policy language",
+    "optionC": "Is never permitted under any policy",
+    "optionD": "Varies by state and policy language",
     "correctAnswer": "D",
     "correctIndex": 3,
     "explanation": "Some states allow stacking and others prohibit it, and insurers may use anti-stacking language where permitted. Check your state's rules."
@@ -1545,13 +1545,13 @@
     "questionId": "PC-AUTO-019",
     "category": "pcAuto",
     "question": "Under Part D, 'collision' means:",
-    "optionA": "Damage from falling objects or missiles",
-    "optionB": "Loss by fire, theft or flood",
-    "optionC": "Contact with a bird or animal",
-    "optionD": "Upset of the covered auto or its impact with another vehicle or object",
+    "optionA": "Damage from falling objects, missiles or hail",
+    "optionB": "Loss by fire, theft, flood or vandalism",
+    "optionC": "Contact with a bird or other animal",
+    "optionD": "Upset or impact with a vehicle or object",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Collision is overturn or impact with another vehicle or object. Animal contact, falling objects, fire, theft and flood are specifically treated as other than collision."
+    "explanation": "Collision is the upset of the covered auto or its impact with another vehicle or object. Animal contact, falling objects, hail, fire, theft, flood and vandalism are specifically treated as other than collision."
   },
   {
     "type": "PNC",
@@ -1574,12 +1574,12 @@
     "category": "pcAuto",
     "question": "Under the PAP, a 'family member' is:",
     "optionA": "Any relative of the named insured wherever they live",
-    "optionB": "Only the spouse and dependent children",
+    "optionB": "Only the spouse and unmarried dependent children",
     "optionC": "Anyone who lives in the household",
-    "optionD": "A person related to the named insured by blood, marriage or adoption who lives in the household, including a ward or foster child",
+    "optionD": "A resident related by blood, marriage or adoption",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Family member requires both relationship and residency; a roommate is not a family member, and a married child living elsewhere is not either."
+    "explanation": "Family member means a person related to the named insured by blood, marriage or adoption who lives in the household, including a ward or foster child. A roommate is not a family member, and a married child living elsewhere is not either."
   },
   {
     "type": "PNC",
@@ -1601,13 +1601,13 @@
     "questionId": "PC-AUTO-023",
     "category": "pcAuto",
     "question": "Under Part D, a non-owned auto the insured is driving receives:",
-    "optionA": "The broadest coverage applicable to any covered auto shown in the declarations",
-    "optionB": "Collision coverage only",
-    "optionC": "No coverage of any kind",
+    "optionA": "The broadest Part D coverage on the policy",
+    "optionB": "Collision coverage only, with no deductible",
+    "optionC": "No coverage of any kind under Part D",
     "optionD": "Coverage only if the owner has no insurance",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Part D extends to non-owned autos with the broadest Part D coverage on the policy, excess over the owner's coverage. The owner's insurance does not have to be absent."
+    "explanation": "Part D extends to non-owned autos with the broadest coverage applicable to any covered auto shown in the declarations, excess over the owner's coverage. The owner's insurance does not have to be absent."
   },
   {
     "type": "PNC",
@@ -1616,12 +1616,12 @@
     "category": "pcAuto",
     "question": "The Part D limit of liability is the lesser of:",
     "optionA": "The purchase price or the loan balance",
-    "optionB": "The actual cash value of the damaged property or the cost to repair or replace it",
+    "optionB": "Actual cash value or the repair cost",
     "optionC": "The replacement cost or the agreed value",
     "optionD": "The stated value or the replacement cost",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Part D pays ACV or repair cost, whichever is less, minus the deductible. Loan balance is irrelevant unless a gap endorsement is added."
+    "explanation": "Part D pays the actual cash value of the damaged property or the cost to repair or replace it, whichever is less, minus the deductible. Loan balance is irrelevant unless a gap endorsement is added."
   },
   {
     "type": "PNC",
@@ -1629,13 +1629,13 @@
     "questionId": "PC-AUTO-025",
     "category": "pcAuto",
     "question": "Which loss is excluded under Part D of the PAP?",
-    "optionA": "Vandalism to the paint",
-    "optionB": "Damage from freezing, mechanical breakdown or wear and tear",
-    "optionC": "Hail damage to the hood",
+    "optionA": "Vandalism to the paint and glass",
+    "optionB": "Freezing or mechanical breakdown",
+    "optionC": "Hail damage to the hood and roof",
     "optionD": "Theft of the entire vehicle",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Part D excludes maintenance-type losses such as wear, freezing and mechanical failure unless they result from a covered theft. Hail, theft and vandalism are other than collision losses."
+    "explanation": "Part D excludes maintenance-type losses such as freezing, mechanical breakdown and wear and tear unless they result from a covered theft. Hail, theft and vandalism are other than collision losses."
   },
   {
     "type": "PNC",
@@ -1643,13 +1643,13 @@
     "questionId": "PC-AUTO-026",
     "category": "pcAuto",
     "question": "Under Part E, after an accident the insured must:",
-    "optionA": "Notify the insurer promptly of how, when and where the accident happened",
+    "optionA": "Promptly notify the insurer of the accident",
     "optionB": "Admit fault to the other driver",
     "optionC": "Repair the auto before the insurer inspects it",
     "optionD": "Obtain the insurer's consent before calling the police",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Duties after an accident include prompt notice, cooperation, forwarding legal papers and allowing inspection of the damaged auto before repair. The insured should not admit fault or voluntarily assume obligations."
+    "explanation": "Duties after an accident include prompt notice of how, when and where it happened, cooperation, forwarding legal papers and allowing inspection of the damaged auto before repair. The insured should not admit fault or voluntarily assume obligations."
   },
   {
     "type": "PNC",
@@ -1671,13 +1671,13 @@
     "questionId": "PC-AUTO-028",
     "category": "pcAuto",
     "question": "The PAP policy territory includes:",
-    "optionA": "The United States, its territories and possessions, Puerto Rico and Canada",
-    "optionB": "The 50 states only",
-    "optionC": "Mexico and Canada",
-    "optionD": "Anywhere in the world",
+    "optionA": "The US, its territories, Puerto Rico and Canada",
+    "optionB": "The 50 states and the District of Columbia only",
+    "optionC": "The United States, Mexico and Canada",
+    "optionD": "Anywhere in the world the auto is driven",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Coverage applies in the US, its territories, Puerto Rico and Canada, and while the auto is shipped between their ports. Mexico is not included without separate coverage."
+    "explanation": "Coverage applies in the United States, its territories and possessions, Puerto Rico and Canada, and while the auto is shipped between their ports. Mexico is not included without separate coverage."
   },
   {
     "type": "PNC",
@@ -1685,10 +1685,10 @@
     "questionId": "PC-AUTO-029",
     "category": "pcAuto",
     "question": "When the insured drives a non-owned auto, the PAP liability coverage is:",
-    "optionA": "Primary",
-    "optionB": "Excess over any insurance the owner of the auto carries",
+    "optionA": "Primary over the owner's insurance",
+    "optionB": "Excess over the owner's insurance",
     "optionC": "Shared pro rata with the owner's insurer",
-    "optionD": "Void",
+    "optionD": "Void, since the auto is not a covered auto",
     "correctAnswer": "B",
     "correctIndex": 1,
     "explanation": "Insurance follows the car first, so the owner's policy is primary and the driver's PAP is excess. For an owned covered auto the PAP is primary and shares pro rata with other primary coverage."
@@ -1700,12 +1700,12 @@
     "category": "pcAuto",
     "question": "Under the ISO PAP, after the policy has been in force 60 days the insurer may cancel only for:",
     "optionA": "A change of address within the state",
-    "optionB": "Any reason with 10 days notice",
-    "optionC": "Nonpayment of premium, a suspended or revoked license, or material misrepresentation",
-    "optionD": "A single at-fault accident",
+    "optionB": "Any reason, with 10 days written notice",
+    "optionC": "Nonpayment, license loss or misrepresentation",
+    "optionD": "A single at-fault accident during the policy term",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "After 60 days the insurer's reasons are restricted; before that it may cancel for any reason with notice. State rules may be more restrictive, so check your state's rules."
+    "explanation": "After 60 days the insurer may cancel only for nonpayment of premium, a suspended or revoked license, or material misrepresentation; before that it may cancel for any reason with notice. State rules may be more restrictive, so check your state's rules."
   },
   {
     "type": "PNC",
@@ -1713,10 +1713,10 @@
     "questionId": "PC-AUTO-031",
     "category": "pcAuto",
     "question": "Under Part F, no legal action may be brought against the insurer until:",
-    "optionA": "The insured has fully complied with all terms of the policy",
+    "optionA": "The insured has complied with all policy terms",
     "optionB": "The insurer has paid the deductible",
-    "optionC": "30 days after the accident",
-    "optionD": "The other driver has been sued",
+    "optionC": "30 days have passed since the accident",
+    "optionD": "The other driver has been sued and found liable",
     "correctAnswer": "A",
     "correctIndex": 0,
     "explanation": "The legal action against us condition requires compliance with policy terms first, and for Part A, the insured's liability must be determined by judgment or agreement. There is no fixed waiting period."
@@ -1728,12 +1728,12 @@
     "category": "pcAuto",
     "question": "Which vehicle is eligible for a Personal Auto Policy?",
     "optionA": "A 15 passenger van used as an airport shuttle",
-    "optionB": "A motorcycle without any endorsement",
-    "optionC": "A taxi operated by the named insured",
-    "optionD": "A pickup truck with a gross vehicle weight of 10,000 pounds or less not used for business other than farming or ranching",
+    "optionB": "A motorcycle with no miscellaneous vehicle endorsement",
+    "optionC": "A taxi operated by the named insured for hire",
+    "optionD": "A pickup of 10,000 pounds GVW or less, no business use",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Private passenger autos, pickups and vans of 10,000 pounds GVW or less that are not used to deliver goods are eligible. Livery vehicles and motorcycles are not, though motorcycles can be added by endorsement."
+    "explanation": "Private passenger autos, and pickups and vans of 10,000 pounds gross vehicle weight or less, are eligible unless used for business other than farming or ranching or incidental delivery by certain trades. Livery vehicles and motorcycles are not, though motorcycles can be added by endorsement."
   },
   {
     "type": "PNC",
@@ -1744,7 +1744,7 @@
     "optionA": "Extended Non-Owned Coverage endorsement",
     "optionB": "Miscellaneous Type Vehicle endorsement",
     "optionC": "Named Non-Owner Coverage endorsement",
-    "optionD": "Towing and Labor Costs endorsement",
+    "optionD": "Towing and Labor Costs Coverage endorsement",
     "correctAnswer": "A",
     "correctIndex": 0,
     "explanation": "The PAP excludes vehicles furnished or available for the insured's regular use, so a company car needs extended non-owned coverage. Named non-owner coverage is for people who own no car."
@@ -1771,7 +1771,7 @@
     "question": "A driver uses a personal car for a ride-sharing app and is logged in waiting for a request. Under the ISO PAP:",
     "optionA": "Coverage applies only to Part D",
     "optionB": "Coverage applies in full because no passenger is aboard",
-    "optionC": "Coverage is excluded while logged in unless a transportation network endorsement is added",
+    "optionC": "Excluded without a transportation network endorsement",
     "optionD": "Coverage applies because the app is a share-the-expense carpool",
     "correctAnswer": "C",
     "correctIndex": 2,
@@ -1783,13 +1783,13 @@
     "questionId": "PC-AUTO-036",
     "category": "pcAuto",
     "question": "Under Part A, the insurer's duty to settle or defend ends when:",
-    "optionA": "The insured requests a lawyer",
-    "optionB": "The first lawsuit is filed",
-    "optionC": "The policy period expires",
-    "optionD": "The limit of liability has been exhausted by payment of judgments or settlements",
+    "optionA": "The insured hires a personal lawyer",
+    "optionB": "The first lawsuit is filed against the insured",
+    "optionC": "The policy period expires or is canceled",
+    "optionD": "The limit has been exhausted by payments",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Defense costs are paid in addition to the limit, but once the limit is paid out the insurer's duty to defend ends. Claims from accidents during the policy period are defended even after expiration."
+    "explanation": "Defense costs are paid in addition to the limit, but once the limit of liability has been exhausted by payment of judgments or settlements the insurer's duty to defend ends. Claims from accidents during the policy period are defended even after expiration."
   },
   {
     "type": "PNC",
@@ -1800,7 +1800,7 @@
     "optionA": "Both a property and an auto coverage part",
     "optionB": "A business income coverage form",
     "optionC": "At least five coverage parts",
-    "optionD": "Common policy declarations, common policy conditions and two or more coverage parts",
+    "optionD": "Two or more coverage parts",
     "correctAnswer": "D",
     "correctIndex": 3,
     "explanation": "A CPP is built from common declarations and conditions plus any two or more coverage parts, such as property and general liability. A single coverage part is a monoline policy."
@@ -1811,13 +1811,13 @@
     "questionId": "PC-COM-002",
     "category": "pcCommercial",
     "question": "Which of the following is one of the Common Policy Conditions of a CPP?",
-    "optionA": "Vacancy",
-    "optionB": "Coinsurance",
+    "optionA": "Duties in the event of loss or damage",
+    "optionB": "Insurance under two or more coverages",
     "optionC": "Mortgageholders",
-    "optionD": "Examination of your books and records",
+    "optionD": "Examination of books and records",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "The common conditions are cancellation, changes, examination of books and records, inspections and surveys, premiums, and transfer of rights. Coinsurance, vacancy and mortgageholders are property form conditions."
+    "explanation": "The common conditions are cancellation, changes, examination of your books and records, inspections and surveys, premiums, and transfer of rights. Duties in the event of loss, insurance under two or more coverages and mortgageholders are conditions of the commercial property forms."
   },
   {
     "type": "PNC",
@@ -1841,7 +1841,7 @@
     "question": "Under the Building and Personal Property Coverage Form, 'Building' includes:",
     "optionA": "Accounts receivable records",
     "optionB": "Tenant's improvements and betterments",
-    "optionC": "Permanently installed fixtures, machinery and equipment",
+    "optionC": "Permanently installed fixtures",
     "optionD": "Stock held for sale",
     "correctAnswer": "C",
     "correctIndex": 2,
@@ -1881,13 +1881,13 @@
     "questionId": "PC-COM-007",
     "category": "pcCommercial",
     "question": "Under the BPP vacancy condition, if a building has been vacant more than 60 consecutive days, losses from vandalism, sprinkler leakage, glass breakage, water damage, theft and attempted theft are:",
-    "optionA": "Covered in full",
-    "optionB": "Not covered, and other covered losses are reduced by 15 percent",
+    "optionA": "Covered in full with no vacancy penalty",
+    "optionB": "Excluded, other losses cut 15 percent",
     "optionC": "Covered for the building only",
-    "optionD": "Reduced by 50 percent",
+    "optionD": "Covered, but reduced by 50 percent",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Vacancy increases risk, so the listed perils are excluded and all other losses are cut by 15 percent. A building is vacant when less than 31 percent of its area is rented or used."
+    "explanation": "Vacancy increases risk, so the listed perils are not covered and all other covered losses are reduced by 15 percent. A building is vacant when less than 31 percent of its area is rented or used."
   },
   {
     "type": "PNC",
@@ -1895,13 +1895,13 @@
     "questionId": "PC-COM-008",
     "category": "pcCommercial",
     "question": "Which perils are covered by the Causes of Loss Basic Form?",
-    "optionA": "Fire, lightning, explosion, windstorm or hail, smoke, aircraft or vehicles, riot, vandalism, sprinkler leakage, sinkhole collapse and volcanic action",
+    "optionA": "Fire, vandalism and sprinkler leakage",
     "optionB": "Flood, earthquake and collapse",
     "optionC": "Falling objects, weight of ice and snow, and water damage",
     "optionD": "All direct physical loss except what is excluded",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "The basic form lists eleven named perils. Falling objects, weight of ice and snow, and water damage are added by the broad form, and the special form is open perils."
+    "explanation": "The basic form lists eleven named perils: fire, lightning, explosion, windstorm or hail, smoke, aircraft or vehicles, riot or civil commotion, vandalism, sprinkler leakage, sinkhole collapse and volcanic action. Falling objects, weight of ice and snow, and water damage are added by the broad form, and the special form is open perils."
   },
   {
     "type": "PNC",
@@ -1923,13 +1923,13 @@
     "questionId": "PC-COM-010",
     "category": "pcCommercial",
     "question": "Under the Causes of Loss Special Form, theft of business personal property is:",
-    "optionA": "Excluded entirely",
-    "optionB": "Covered because it is not excluded, subject to special limits on items such as furs and jewelry",
+    "optionA": "Excluded entirely as a cause of loss",
+    "optionB": "Covered, subject to special limits",
     "optionC": "Covered only by endorsement",
-    "optionD": "Covered only for stock",
+    "optionD": "Covered only for stock held for sale",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "The special form is open perils, so theft is covered with limits such as $2,500 for furs and jewelry. Employee dishonesty, however, is excluded and needs crime coverage."
+    "explanation": "The special form is open perils, so theft is covered because it is not excluded, subject to special limits such as $2,500 for furs and jewelry. Employee dishonesty, however, is excluded and needs crime coverage."
   },
   {
     "type": "PNC",
@@ -1966,12 +1966,12 @@
     "category": "pcCommercial",
     "question": "The Agreed Value optional coverage in the BPP form:",
     "optionA": "Settles every loss at replacement cost",
-    "optionB": "Suspends the coinsurance clause for the period shown in the declarations",
+    "optionB": "Suspends the coinsurance clause",
     "optionC": "Raises the limit automatically for inflation",
     "optionD": "Covers newly acquired property for 30 days",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "With agreed value the insured and insurer agree on a value and no coinsurance penalty applies. Inflation guard is the option that raises the limit."
+    "explanation": "With agreed value the insured and insurer agree on a value and no coinsurance penalty applies for the period shown in the declarations. Inflation guard is the option that raises the limit."
   },
   {
     "type": "PNC",
@@ -1981,11 +1981,11 @@
     "question": "The Inflation Guard optional coverage in the BPP form:",
     "optionA": "Waives the deductible on inflation-related losses",
     "optionB": "Adjusts the premium each month",
-    "optionC": "Automatically increases the limit of insurance by a stated annual percentage",
+    "optionC": "Raises the limit by an annual percentage",
     "optionD": "Converts coverage to agreed value",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Inflation guard raises the limit pro rata through the year so coinsurance is still met as values climb. It does not change the premium mid-term."
+    "explanation": "Inflation guard automatically increases the limit of insurance by a stated annual percentage, applied pro rata through the year so coinsurance is still met as values climb. It does not change the premium mid-term."
   },
   {
     "type": "PNC",
@@ -1993,13 +1993,13 @@
     "questionId": "PC-COM-015",
     "category": "pcCommercial",
     "question": "Under the BPP replacement cost optional coverage, replacement cost is paid only when:",
-    "optionA": "The property is actually repaired or replaced as soon as reasonably possible",
+    "optionA": "The property is repaired or replaced",
     "optionB": "The insured requests it at the time of loss",
     "optionC": "The building is less than 10 years old",
-    "optionD": "Coinsurance is waived",
+    "optionD": "The coinsurance requirement is waived",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Until repair or replacement is made, the insurer pays actual cash value. The insured can make the ACV claim first and claim the difference later."
+    "explanation": "Until the property is actually repaired or replaced as soon as reasonably possible, the insurer pays actual cash value. The insured can make the ACV claim first and claim the difference later."
   },
   {
     "type": "PNC",
@@ -2007,13 +2007,13 @@
     "questionId": "PC-COM-016",
     "category": "pcCommercial",
     "question": "Business Income coverage pays for:",
-    "optionA": "Net income that would have been earned plus continuing normal operating expenses during the period of restoration",
-    "optionB": "Payroll expenses only",
+    "optionA": "Lost net income plus continuing expenses",
+    "optionB": "Ordinary payroll expenses only",
     "optionC": "The cost to rebuild the damaged building",
     "optionD": "Loss of market after the business reopens",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Business income replaces profit and ongoing expenses, including payroll, while the premises are being restored. Building repair is covered by the property form."
+    "explanation": "Business income replaces the net income that would have been earned plus continuing normal operating expenses, including payroll, during the period of restoration. Building repair is covered by the property form."
   },
   {
     "type": "PNC",
@@ -2022,12 +2022,12 @@
     "category": "pcCommercial",
     "question": "Under the ISO Business Income form, the period of restoration begins:",
     "optionA": "30 days after the loss",
-    "optionB": "72 hours after the direct physical loss",
+    "optionB": "72 hours after the loss",
     "optionC": "When the claim is approved",
     "optionD": "Immediately at the time of loss",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "The 72-hour waiting period acts as a time deductible for business income. Extra expense coverage has no waiting period."
+    "explanation": "The period of restoration begins 72 hours after the direct physical loss, so the waiting period acts as a time deductible for business income. Extra expense coverage has no waiting period."
   },
   {
     "type": "PNC",
@@ -2049,13 +2049,13 @@
     "questionId": "PC-COM-019",
     "category": "pcCommercial",
     "question": "Extra Expense coverage pays for:",
-    "optionA": "Debris removal from the premises",
-    "optionB": "Damage to the insured's stock",
-    "optionC": "Lost profits during the shutdown",
-    "optionD": "Necessary expenses beyond normal costs to continue operating after a loss, such as renting temporary space",
+    "optionA": "Debris removal from the damaged premises",
+    "optionB": "Damage to the insured's stock and fixtures",
+    "optionC": "Lost profits during the restoration period",
+    "optionD": "Added costs to keep operating after a loss",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Extra expense covers the added cost of staying open, such as temporary locations and expediting repairs. Lost profit is business income, a separate coverage."
+    "explanation": "Extra expense covers necessary expenses beyond normal costs to continue operating after a loss, such as renting temporary space or expediting repairs. Lost profit is business income, a separate coverage."
   },
   {
     "type": "PNC",
@@ -2066,10 +2066,10 @@
     "optionA": "Five miles, for up to two weeks",
     "optionB": "The same city block, for up to 30 days",
     "optionC": "100 feet, for up to 60 days",
-    "optionD": "One mile of the premises, for up to four weeks",
+    "optionD": "One mile, for up to four weeks",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "The civil authority coverage begins 72 hours after the order and lasts up to four weeks, and the damaged property must be within one mile. Homeowners civil authority coverage is two weeks."
+    "explanation": "The civil authority coverage begins 72 hours after the order and lasts up to four weeks, and the damaged property must be within one mile of the premises. Homeowners civil authority coverage is two weeks."
   },
   {
     "type": "PNC",
@@ -2094,7 +2094,7 @@
     "optionA": "Liability coverage with optional crime only",
     "optionB": "Workers compensation and property coverage",
     "optionC": "Property coverage only",
-    "optionD": "Property and liability coverage in one form with built-in business income and extra expense",
+    "optionD": "Property and liability in one form",
     "correctAnswer": "D",
     "correctIndex": 3,
     "explanation": "The BOP is a prepackaged policy for small to medium businesses that includes property, liability and business income. Workers compensation is always a separate policy."
@@ -2105,10 +2105,10 @@
     "questionId": "PC-COM-023",
     "category": "pcCommercial",
     "question": "Business income under the unendorsed BOP is written:",
-    "optionA": "On an actual loss sustained basis for up to 12 months",
+    "optionA": "Actual loss sustained for 12 months",
     "optionB": "With a stated limit and 50 percent coinsurance",
-    "optionC": "For 60 days only",
-    "optionD": "Only by endorsement",
+    "optionC": "For a fixed 60 days after the loss",
+    "optionD": "Only if added by endorsement",
     "correctAnswer": "A",
     "correctIndex": 0,
     "explanation": "The BOP includes business income and extra expense for actual loss sustained for 12 consecutive months, with no coinsurance. The CPP form uses a stated limit."
@@ -2121,7 +2121,7 @@
     "question": "Unlike the CPP Building and Personal Property form, the unendorsed BOP:",
     "optionA": "Requires 80 percent coinsurance",
     "optionB": "Excludes liability coverage",
-    "optionC": "Has no coinsurance clause and settles losses at replacement cost",
+    "optionC": "Has no coinsurance clause",
     "optionD": "Settles losses at actual cash value",
     "correctAnswer": "C",
     "correctIndex": 2,
@@ -2133,13 +2133,13 @@
     "questionId": "PC-COM-025",
     "category": "pcCommercial",
     "question": "Inland marine insurance developed to cover:",
-    "optionA": "Autos used in business",
-    "optionB": "Buildings located near rivers",
-    "optionC": "Ships on the high seas",
-    "optionD": "Property in transit, instrumentalities of transportation and communication, and movable property",
+    "optionA": "Autos and trucks used in business",
+    "optionB": "Buildings located near rivers and lakes",
+    "optionC": "Ships and cargo on the high seas",
+    "optionD": "Goods in transit and movable property",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Inland marine grew out of ocean marine to insure goods moving over land and later movable or floating property such as contractors equipment and bridges. Buildings and autos are insured elsewhere."
+    "explanation": "Inland marine grew out of ocean marine to insure property in transit over land, instrumentalities of transportation and communication such as bridges, and movable property such as contractors equipment. Buildings and autos are insured elsewhere."
   },
   {
     "type": "PNC",
@@ -2147,13 +2147,13 @@
     "questionId": "PC-COM-026",
     "category": "pcCommercial",
     "question": "A contractor's equipment floater covers:",
-    "optionA": "Mobile equipment such as bulldozers and cranes wherever located",
+    "optionA": "Mobile equipment wherever located",
     "optionB": "The contractor's office building",
     "optionC": "Employee tools only while at the job site",
     "optionD": "Completed operations liability",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "The floater follows the equipment to job sites and in transit. Liability and buildings are covered by other policies."
+    "explanation": "The floater follows mobile equipment such as bulldozers and cranes to job sites and in transit. Liability and buildings are covered by other policies."
   },
   {
     "type": "PNC",
@@ -2206,7 +2206,7 @@
     "optionA": "Any theft of money",
     "optionB": "Taking property from the premises by forcible entry leaving visible marks",
     "optionC": "Taking property by trick or deceit",
-    "optionD": "Taking property from a person by violence or threat of violence",
+    "optionD": "Taking property from a person by force or threat",
     "correctAnswer": "D",
     "correctIndex": 3,
     "explanation": "Robbery requires a person to be present and threatened or harmed. Forcible entry with marks is burglary, and taking by trick is theft but not robbery."
@@ -2218,12 +2218,12 @@
     "category": "pcCommercial",
     "question": "Under the commercial crime forms, safe burglary requires:",
     "optionA": "Violence against an employee",
-    "optionB": "Loss of money only",
+    "optionB": "Loss of money or securities only",
     "optionC": "The theft to occur during business hours",
-    "optionD": "Visible signs of forcible entry into or exit from the safe or vault",
+    "optionD": "Visible marks of forcible entry or exit",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Burglary means unlawful taking with evidence of forcible entry or exit. Without those marks, a loss may be theft but is not burglary."
+    "explanation": "Burglary means unlawful taking with visible signs of forcible entry into or exit from the safe or vault. Without those marks, a loss may be theft but is not burglary."
   },
   {
     "type": "PNC",
@@ -2231,13 +2231,13 @@
     "questionId": "PC-COM-032",
     "category": "pcCommercial",
     "question": "A commercial crime policy written on a discovery form covers losses that are:",
-    "optionA": "Discovered during the policy period, regardless of when they occurred",
+    "optionA": "Discovered during the policy period",
     "optionB": "Sustained during the policy period and reported within 24 hours",
     "optionC": "Caused only by outsiders",
     "optionD": "Reported to police within one business day",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "The discovery form responds to losses discovered during the policy period or the extended discovery period, even if they began years earlier. The loss sustained form requires the loss to occur during the policy period."
+    "explanation": "The discovery form responds to losses discovered during the policy period or the extended discovery period, regardless of when they occurred, even if they began years earlier. The loss sustained form requires the loss to occur during the policy period."
   },
   {
     "type": "PNC",
@@ -2247,7 +2247,7 @@
     "question": "Coverage A of the Commercial General Liability policy pays for:",
     "optionA": "Personal and advertising injury",
     "optionB": "Workers compensation benefits",
-    "optionC": "Bodily injury and property damage liability",
+    "optionC": "Bodily injury and property damage",
     "optionD": "Medical payments without regard to fault",
     "correctAnswer": "C",
     "correctIndex": 2,
@@ -2262,10 +2262,10 @@
     "optionA": "Injury to employees",
     "optionB": "Damage to rented premises from fire",
     "optionC": "Property damage to the insured's own work",
-    "optionD": "Personal and advertising injury, such as libel, slander, false arrest and copyright infringement in an advertisement",
+    "optionD": "Personal and advertising injury",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Coverage B responds to listed offenses rather than accidents. Fire damage to rented premises is covered under Coverage A."
+    "explanation": "Coverage B responds to listed offenses such as libel, slander, false arrest and copyright infringement in an advertisement, rather than accidents. Fire damage to rented premises is covered under Coverage A."
   },
   {
     "type": "PNC",
@@ -2276,10 +2276,10 @@
     "optionA": "Injuries to the insured's employees",
     "optionB": "Expenses only after liability is established",
     "optionC": "The insured's own medical costs",
-    "optionD": "Medical expenses of a member of the public injured on the premises or by operations, without regard to fault, if reported within one year",
+    "optionD": "Visitors' medical bills regardless of fault",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Coverage C is a goodwill coverage for visitors and customers, paid without a lawsuit. Employees and the insured are excluded."
+    "explanation": "Coverage C is a goodwill coverage for members of the public injured on the premises or by operations, paid without regard to fault or a lawsuit if reported within one year. Employees and the insured are excluded."
   },
   {
     "type": "PNC",
@@ -2303,11 +2303,11 @@
     "question": "Under the CGL, an 'occurrence' is:",
     "optionA": "A claim filed with the insurer",
     "optionB": "Intentional conduct that results in injury",
-    "optionC": "An accident, including continuous or repeated exposure to substantially the same harmful conditions",
+    "optionC": "An accident, including gradual exposure",
     "optionD": "A written demand for damages",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Occurrence includes gradual exposure, such as a slow leak, as well as sudden accidents. Expected or intended injury is excluded."
+    "explanation": "Occurrence means an accident, including continuous or repeated exposure to substantially the same general harmful conditions, so a slow leak counts as well as a sudden accident. Expected or intended injury is excluded."
   },
   {
     "type": "PNC",
@@ -2315,10 +2315,10 @@
     "questionId": "PC-LIA-006",
     "category": "pcLiability",
     "question": "Under an occurrence form CGL, coverage is triggered by:",
-    "optionA": "The date suit is filed",
+    "optionA": "The date suit is filed against the insured",
     "optionB": "The date the claim is first made",
     "optionC": "The date the insured reports the claim",
-    "optionD": "Injury or damage that occurs during the policy period, regardless of when the claim is made",
+    "optionD": "Injury or damage during the policy period",
     "correctAnswer": "D",
     "correctIndex": 3,
     "explanation": "An occurrence policy covers injury taking place during its term even if the claim arrives years later. The claims-made form keys on when the claim is first made."
@@ -2332,7 +2332,7 @@
     "optionA": "Before the retroactive date",
     "optionB": "At any time, as long as it is reported",
     "optionC": "Within 60 days after expiration, with no other condition",
-    "optionD": "On or after the retroactive date and the claim is first made during the policy period",
+    "optionD": "On or after the retroactive date",
     "correctAnswer": "D",
     "correctIndex": 3,
     "explanation": "The retroactive date sets the earliest injury date covered, and the claim must be made during the policy period or an extended reporting period."
@@ -2346,10 +2346,10 @@
     "optionA": "Only for premises claims",
     "optionB": "Never; all tails must be bought",
     "optionC": "Only if purchased within 30 days",
-    "optionD": "Automatically at no additional charge when the policy is canceled or replaced",
+    "optionD": "Automatically, at no charge",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "The basic tail of 60 days, plus five years for occurrences reported within those 60 days, is automatic. The supplemental tail is unlimited and must be purchased."
+    "explanation": "The basic tail is provided automatically at no additional charge when the policy is canceled or replaced: 60 days, plus five years for occurrences reported within those 60 days. The supplemental tail is unlimited and must be purchased."
   },
   {
     "type": "PNC",
@@ -2358,12 +2358,12 @@
     "category": "pcLiability",
     "question": "The CGL general aggregate limit is:",
     "optionA": "The limit that applies only to Coverage A",
-    "optionB": "The most the insurer pays for all Coverage A, B and C claims during the policy period, except products-completed operations",
-    "optionC": "A limit that resets after each claim",
-    "optionD": "The limit for each occurrence",
+    "optionB": "The yearly cap on Coverage A, B and C claims",
+    "optionC": "A limit that resets after each covered claim",
+    "optionD": "The most paid for any one occurrence",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "The general aggregate caps total payments for the year, with a separate products-completed operations aggregate. Each occurrence has its own per-occurrence limit."
+    "explanation": "The general aggregate caps total payments for all Coverage A, B and C claims during the policy period, with a separate products-completed operations aggregate. Each occurrence has its own per-occurrence limit."
   },
   {
     "type": "PNC",
@@ -2371,9 +2371,9 @@
     "questionId": "PC-LIA-010",
     "category": "pcLiability",
     "question": "A customer is injured by a ladder the insured sold six months earlier. Under the CGL this claim falls under:",
-    "optionA": "The products-completed operations hazard",
+    "optionA": "Products-completed operations",
     "optionB": "Personal and advertising injury",
-    "optionC": "Premises and operations",
+    "optionC": "Premises and ongoing operations",
     "optionD": "Contractual liability",
     "correctAnswer": "A",
     "correctIndex": 0,
@@ -2391,7 +2391,7 @@
     "optionD": "$1,000,000",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "This limit covers fire damage to premises the insured rents or occupies for seven days or less. Medical payments is the $5,000 default limit."
+    "explanation": "This limit applies to fire damage to premises rented to the insured, and to any covered damage to premises the insured occupies with permission for seven days or less. Medical payments is the $5,000 default limit."
   },
   {
     "type": "PNC",
@@ -2413,13 +2413,13 @@
     "questionId": "PC-LIA-013",
     "category": "pcLiability",
     "question": "A bar needs separate liquor liability coverage because the CGL excludes liquor liability for insureds that are:",
-    "optionA": "In the business of manufacturing, distributing, selling, serving or furnishing alcohol",
+    "optionA": "In the business of selling or serving alcohol",
     "optionB": "Hosting an office party where alcohol is served",
     "optionC": "Holding any type of business license",
     "optionD": "Storing any alcohol on the premises",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "The liquor liability exclusion applies only to businesses in the alcohol trade. Host liquor liability for a company picnic remains covered."
+    "explanation": "The liquor liability exclusion applies only to insureds in the business of manufacturing, distributing, selling, serving or furnishing alcohol. Host liquor liability for a company picnic remains covered."
   },
   {
     "type": "PNC",
@@ -2427,13 +2427,13 @@
     "questionId": "PC-LIA-014",
     "category": "pcLiability",
     "question": "The CGL excludes liability assumed under contract except for:",
-    "optionA": "Liability assumed under an insured contract, such as a lease or an elevator maintenance agreement",
+    "optionA": "Liability under an insured contract",
     "optionB": "Contracts with the insured's own employees",
-    "optionC": "Only verbal agreements",
-    "optionD": "Any written contract",
+    "optionC": "Verbal agreements made before the loss",
+    "optionD": "Any written contract signed by the insured",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Insured contracts, including leases, sidetrack agreements, easements and agreements to assume tort liability of another, are covered. Other hold-harmless agreements are excluded."
+    "explanation": "Liability assumed under an insured contract, such as a lease, sidetrack agreement, easement, elevator maintenance agreement or agreement to assume the tort liability of another, is covered. Other hold-harmless agreements are excluded."
   },
   {
     "type": "PNC",
@@ -2443,11 +2443,11 @@
     "question": "Part One of the Workers Compensation and Employers Liability policy pays:",
     "optionA": "Up to $100,000 per accident",
     "optionB": "Damages awarded in lawsuits by employees",
-    "optionC": "Benefits required by the workers compensation law of the states listed, with no dollar limit",
-    "optionD": "Medical expenses only",
+    "optionC": "Statutory benefits with no dollar limit",
+    "optionD": "Medical expenses only, up to the policy limit",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Part One is statutory coverage, so the policy pays whatever the law requires. Lawsuits by employees are the province of Part Two."
+    "explanation": "Part One pays the benefits required by the workers compensation law of the states listed, with no dollar limit, because it is statutory coverage. Lawsuits by employees are the province of Part Two."
   },
   {
     "type": "PNC",
@@ -2455,13 +2455,13 @@
     "questionId": "PC-LIA-016",
     "category": "pcLiability",
     "question": "Part Two, Employers Liability, covers:",
-    "optionA": "Injuries to customers on the premises",
-    "optionB": "Employment discrimination claims",
+    "optionA": "Injuries to customers on the insured's premises",
+    "optionB": "Employment discrimination and harassment claims",
     "optionC": "Statutory workers compensation benefits",
-    "optionD": "Lawsuits by employees for work-related injuries not covered by the compensation law, such as third-party-over actions",
+    "optionD": "Employee suits outside the compensation law",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Part Two responds when an injured employee or a third party can sue the employer despite the exclusive remedy rule. Discrimination claims need employment practices liability."
+    "explanation": "Part Two responds to lawsuits by employees for work-related injuries not covered by the compensation law, such as third-party-over actions, when an employee or a third party can sue the employer despite the exclusive remedy rule. Discrimination claims need employment practices liability."
   },
   {
     "type": "PNC",
@@ -2469,13 +2469,13 @@
     "questionId": "PC-LIA-017",
     "category": "pcLiability",
     "question": "Standard employers liability limits are:",
-    "optionA": "$100,000 each accident, $500,000 policy limit for disease, $100,000 each employee for disease",
+    "optionA": "$100,000 / $500,000 / $100,000",
     "optionB": "Unlimited, like Part One",
     "optionC": "$1,000,000 per occurrence only",
     "optionD": "$300,000 for each of the three limits",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "The basic limits are 100/500/100 and can be increased. Only Part One statutory benefits are unlimited."
+    "explanation": "The basic limits are $100,000 each accident, $500,000 policy limit for disease and $100,000 each employee for disease (100/500/100), and can be increased. Only Part One statutory benefits are unlimited."
   },
   {
     "type": "PNC",
@@ -2484,12 +2484,12 @@
     "category": "pcLiability",
     "question": "Part Three of the workers compensation policy provides:",
     "optionA": "Voluntary compensation for exempt employees",
-    "optionB": "Coverage for states the insured may begin operating in that are listed in the Other States section",
+    "optionB": "Coverage for work begun later in listed states",
     "optionC": "Federal benefits such as Longshore and Harbor Workers",
     "optionD": "Coverage for independent contractors",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Other States insurance covers new operations in states listed in Item 3.C, provided the insurer is notified within 30 days. Federal acts and voluntary compensation are endorsements."
+    "explanation": "Other States insurance covers work begun after inception in states listed in Item 3.C; the insured must notify the insurer at once. Federal acts and voluntary compensation are endorsements."
   },
   {
     "type": "PNC",
@@ -2497,13 +2497,13 @@
     "questionId": "PC-LIA-019",
     "category": "pcLiability",
     "question": "Workers compensation is called an exclusive remedy because:",
-    "optionA": "Employers may choose which injuries to cover",
-    "optionB": "Employees receive statutory benefits and generally give up the right to sue the employer for negligence",
+    "optionA": "Employers may choose which employee injuries to cover",
+    "optionB": "Employees trade the right to sue for benefits",
     "optionC": "Only one insurer may write it in each state",
-    "optionD": "It covers only medical costs",
+    "optionD": "It covers only medical costs, not lost wages",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "The compensation bargain trades guaranteed no-fault benefits for the employee's right to sue. Exceptions, such as intentional acts, vary by state."
+    "explanation": "Employees receive statutory no-fault benefits and generally give up the right to sue the employer for negligence; that is the compensation bargain. Exceptions, such as intentional acts, vary by state."
   },
   {
     "type": "PNC",
@@ -2514,7 +2514,7 @@
     "optionA": "Only for injuries on the employer's premises",
     "optionB": "Only when the employee was not negligent",
     "optionC": "Only when the employer was negligent",
-    "optionD": "Regardless of fault, for injuries arising out of and in the course of employment",
+    "optionD": "Regardless of fault for work-related injuries",
     "correctAnswer": "D",
     "correctIndex": 3,
     "explanation": "Workers compensation is no-fault; the injury only has to arise out of and occur in the course of employment. Off-premises injuries while working are covered."
@@ -2526,12 +2526,12 @@
     "category": "pcLiability",
     "question": "A commercial umbrella liability policy:",
     "optionA": "Replaces the CGL entirely",
-    "optionB": "Provides excess limits over underlying policies and drops down to cover some losses they exclude, subject to a self-insured retention",
+    "optionB": "Excess limits plus some drop-down coverage",
     "optionC": "Always follows the underlying form with no broader coverage",
     "optionD": "Covers only auto liability",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "An umbrella is broader than the underlying policies and pays above them. A pure excess policy follows form without the drop-down feature."
+    "explanation": "An umbrella provides excess limits over the underlying policies and drops down to cover some losses they exclude, subject to a self-insured retention. A pure excess policy follows form without the drop-down feature."
   },
   {
     "type": "PNC",
@@ -2541,7 +2541,7 @@
     "question": "The self-insured retention in an umbrella policy applies:",
     "optionA": "To every claim, including those paid by the underlying policy",
     "optionB": "After the umbrella limit is exhausted",
-    "optionC": "To losses the umbrella covers that no underlying policy covers",
+    "optionC": "To losses no underlying policy covers",
     "optionD": "Only to auto claims",
     "correctAnswer": "C",
     "correctIndex": 2,
@@ -2556,10 +2556,10 @@
     "optionA": "CGL Coverage A",
     "optionB": "A fidelity bond",
     "optionC": "Directors and officers liability",
-    "optionD": "Professional liability (errors and omissions)",
+    "optionD": "Professional liability",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Professional liability covers financial harm from negligent professional services, which the CGL excludes. A fidelity bond covers employee dishonesty."
+    "explanation": "Professional liability, also called errors and omissions, covers financial harm from negligent professional services, which the CGL excludes. A fidelity bond covers employee dishonesty."
   },
   {
     "type": "PNC",
@@ -2568,12 +2568,12 @@
     "category": "pcLiability",
     "question": "Directors and officers liability insurance covers:",
     "optionA": "Bodily injury that occurs in the boardroom",
-    "optionB": "Claims against corporate directors and officers for wrongful acts in managing the company",
+    "optionB": "Wrongful acts in managing the company",
     "optionC": "Defects in the company's products",
-    "optionD": "Theft by officers",
+    "optionD": "Theft of company funds by officers",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "D&O protects personal assets of directors and officers from shareholder and regulatory suits over management decisions. Bodily injury and products claims are CGL matters."
+    "explanation": "D&O covers claims against corporate directors and officers for wrongful acts in managing the company, protecting their personal assets from shareholder and regulatory suits. Bodily injury and products claims are CGL matters, and theft by officers is a crime coverage."
   },
   {
     "type": "PNC",
@@ -2637,13 +2637,13 @@
     "questionId": "PC-OTH-005",
     "category": "pcOther",
     "question": "The NFIP defines a flood as a general and temporary condition of partial or complete inundation of:",
-    "optionA": "Any land owned by the insured",
-    "optionB": "Two or more acres of normally dry land or two or more properties",
-    "optionC": "Five or more properties",
-    "optionD": "A single building's basement",
+    "optionA": "Any land owned or leased by the insured",
+    "optionB": "Two or more acres or two or more properties",
+    "optionC": "Five or more adjoining properties",
+    "optionD": "A single building's basement or crawl space",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "The definition requires a general condition, not a single property, from overflow of inland or tidal waters, rapid runoff or mudflow. Water confined to one basement from a burst pipe is not a flood."
+    "explanation": "The definition requires a general condition affecting two or more acres of normally dry land or two or more properties, from overflow of inland or tidal waters, rapid runoff or mudflow. Water confined to one basement from a burst pipe is not a flood."
   },
   {
     "type": "PNC",
@@ -2652,12 +2652,12 @@
     "category": "pcOther",
     "question": "Under the NFIP Write Your Own program, private insurers:",
     "optionA": "Insure flood risk with their own capital",
-    "optionB": "Cover only commercial buildings",
-    "optionC": "Set their own flood rates",
-    "optionD": "Sell and service NFIP policies in their own names while the federal government bears the risk",
+    "optionB": "Cover only commercial buildings and contents",
+    "optionC": "Set their own flood rates and forms",
+    "optionD": "Sell and service NFIP policies for a fee",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "WYO companies issue and adjust the policies for a fee, but rates and forms are federal and losses are paid from the NFIP. Private flood insurance is a separate market."
+    "explanation": "WYO companies issue and adjust NFIP policies in their own names for a fee, but rates and forms are federal and losses are paid from the NFIP, which bears the risk. Private flood insurance is a separate market."
   },
   {
     "type": "PNC",
@@ -2693,13 +2693,13 @@
     "questionId": "PC-OTH-009",
     "category": "pcOther",
     "question": "Unlike an insurance policy, a surety bond:",
-    "optionA": "Expects no losses and lets the surety recover its payment from the principal",
-    "optionB": "Pays regardless of fault",
+    "optionA": "Seeks repayment from the principal",
+    "optionB": "Pays regardless of fault or negligence",
     "optionC": "Cannot be canceled by any party",
-    "optionD": "Is a two-party contract",
+    "optionD": "Is a two-party contract with the obligee",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Suretyship is a three-party guarantee priced as a service fee, and the principal must reimburse the surety. Insurance anticipates losses and does not seek repayment from its insured."
+    "explanation": "Suretyship is a three-party guarantee priced as a service fee that expects no losses, and the principal must reimburse the surety for any payment. Insurance anticipates losses and does not seek repayment from its insured."
   },
   {
     "type": "PNC",
@@ -2710,10 +2710,10 @@
     "optionA": "Fidelity bond",
     "optionB": "Payment bond",
     "optionC": "Performance bond",
-    "optionD": "Bid bond",
+    "optionD": "Maintenance bond",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "A performance bond guarantees completion. A bid bond guarantees the bidder will sign the contract if awarded, and a payment bond guarantees subcontractors and suppliers are paid."
+    "explanation": "A performance bond guarantees completion. A payment bond guarantees subcontractors and suppliers are paid, and a maintenance bond guarantees the work against defects for a period after completion."
   },
   {
     "type": "PNC",
@@ -2735,9 +2735,9 @@
     "questionId": "PC-OTH-012",
     "category": "pcOther",
     "question": "Aircraft hull coverage that applies only while the aircraft is not in motion is called:",
-    "optionA": "Aircraft liability coverage",
+    "optionA": "Aircraft passenger liability coverage",
     "optionB": "In-flight hull coverage",
-    "optionC": "All-risk hull coverage",
+    "optionC": "Ground risk hull, in motion",
     "optionD": "Ground risk hull, not in motion",
     "correctAnswer": "D",
     "correctIndex": 3,
@@ -2763,13 +2763,13 @@
     "questionId": "PC-OTH-014",
     "category": "pcOther",
     "question": "FAIR plans were created to:",
-    "optionA": "Provide basic property insurance to owners in high-risk areas who cannot buy it in the voluntary market",
+    "optionA": "Insure property the voluntary market rejects",
     "optionB": "Regulate the rates insurers may charge",
     "optionC": "Provide auto liability for high-risk drivers",
-    "optionD": "Insure homes against flood",
+    "optionD": "Insure homes against flood and earthquake",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Fair Access to Insurance Requirements plans are state-run residual markets for property owners rejected by standard insurers. Automobile assigned risk plans serve high-risk drivers."
+    "explanation": "Fair Access to Insurance Requirements plans are state-run residual markets that provide basic property insurance to owners in high-risk areas who cannot buy it in the voluntary market. Automobile assigned risk plans serve high-risk drivers."
   },
   {
     "type": "PNC",
@@ -2777,13 +2777,13 @@
     "questionId": "PC-OTH-015",
     "category": "pcOther",
     "question": "Under the Terrorism Risk Insurance Act, insurers writing commercial property and casualty coverage must:",
-    "optionA": "Offer terrorism coverage for certified acts, which the insured may reject",
+    "optionA": "Offer terrorism coverage the insured may reject",
     "optionB": "Include terrorism coverage at no charge",
     "optionC": "Exclude terrorism entirely",
     "optionD": "Insure only buildings certified by the federal government",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "TRIA requires a make-available offer with disclosure of the premium, and the federal government shares losses above a trigger. The insured can decline the coverage."
+    "explanation": "TRIA requires a make-available offer of coverage for certified acts of terrorism with disclosure of the premium, and the federal government shares losses above a trigger. The insured can decline the coverage."
   },
   {
     "type": "PNC",

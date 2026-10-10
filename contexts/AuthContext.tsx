@@ -166,7 +166,13 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
             }
           }
         } else {
-          // Clear user data when logged out
+          // Signed out without logout() (session expired, signed out in another
+          // tab): the cached data belongs to that account, so drop it rather
+          // than hand it to the next guest on this browser.
+          if (useStore.getState().userId) {
+            useStore.getState().clearAllDataOnLogout();
+            localStorage.removeItem('driving-test-storage');
+          }
           setUserId(null);
         }
       } catch (err) {

@@ -12,14 +12,18 @@ import { Truck, Bike, Flag, Plane, Radio, Thermometer, HeartPulse, Pill, Syringe
 import { getExamById, getExamVariants } from "@/lib/exams";
 import Image from "next/image";
 import { TestSwitcher } from "@/components/TestSwitcher";
+import { useExamStarted } from "@/hooks/useExamStarted";
 
 export function CDLHeader() {
   const { user } = useAuth();
   const pathname = usePathname();
   const photoURL = useStore((state) => state.photoURL);
-  const isGuest = useStore((state) => state.isGuest);
-  const hydrated = useHydration();
   const theme = useTestTheme();
+  // Guest of this exam only: starting another exam must not show
+  // "Sign Up to Save" here before this one is started.
+  const guest = useStore((state) => state.isGuest);
+  const isGuest = useExamStarted(theme.id) && guest;
+  const hydrated = useHydration();
 
   const displayPhotoURL = photoURL || user?.photoURL;
 

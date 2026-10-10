@@ -80,10 +80,10 @@ export const ACT: ExamV2Config = {
     evaluation: "Evaluation of Models and Results",
   },
   drills: [
-    { key: "english", name: "English", section: "english", domains: ["conventions", "production", "language"], blurb: "Punctuation, grammar, sentence structure, organization and word choice, passage by passage.", weight: "50 questions in 35 min" },
-    { key: "math", name: "Mathematics", section: "math", domains: ["algebra", "geometry", "modeling"], blurb: "Algebra, functions, geometry, trig, statistics and modeling, with every step shown.", weight: "45 questions in 50 min" },
-    { key: "reading", name: "Reading", section: "reading", domains: ["keyIdeas", "craft", "integration"], blurb: "Long passages beside the question: main idea, detail, inference, vocabulary and author's craft.", weight: "36 questions in 40 min" },
-    { key: "science", name: "Science", section: "science", domains: ["interpretation", "investigation", "evaluation"], blurb: "Tables, experiments and conflicting viewpoints. Read the data, spot the trend.", weight: "40 questions in 40 min" },
+    { key: "english", name: "English", section: "english", domains: ["conventions", "production", "language"], blurb: "Punctuation, grammar, sentence structure, organization and word choice, passage by passage.", weight: "50 questions on the real exam" },
+    { key: "math", name: "Mathematics", section: "math", domains: ["algebra", "geometry", "modeling"], blurb: "Algebra, functions, geometry, trig, statistics and modeling, with every step shown.", weight: "45 questions on the real exam" },
+    { key: "reading", name: "Reading", section: "reading", domains: ["keyIdeas", "craft", "integration"], blurb: "Long passages beside the question: main idea, detail, inference, vocabulary and author's craft.", weight: "36 questions on the real exam" },
+    { key: "science", name: "Science", section: "science", domains: ["interpretation", "investigation", "evaluation"], blurb: "Tables, experiments and conflicting viewpoints. Read the data, spot the trend.", weight: "40 questions on the real exam" },
   ],
   composite: {
     name: "Composite score",

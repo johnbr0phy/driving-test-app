@@ -1,5 +1,6 @@
 /**
- * The SAT/ACT launch email as a five-way split test.
+ * The SAT/ACT launch email as a four-way split test (v1, v3, v4, v5; a
+ * parent-angle v2 was cut because few parents sign up).
  *
  * Each DMV reader gets one variant, picked from their uid so a retry or a
  * second run always lands on the same one. Every link goes through
@@ -125,7 +126,10 @@ function variant(
   };
 }
 
-/** Every variant in the test. Drop one from this list to stop sending it. */
+/**
+ * Every variant in the test. Drop one from this list to stop sending it.
+ * Ids stay fixed (no renumbering) so recorded results keep their meaning.
+ */
 export const LAUNCH_VARIANTS: LaunchVariant[] = [
   variant("v1", "Next step", "Permit test: done. SAT: next.", "Same TigerTest format, now for the SAT and ACT. First practice test is free.", ({ sat, act }) => ({
     hero: hero(3, 3),
@@ -135,15 +139,6 @@ export const LAUNCH_VARIANTS: LaunchVariant[] = [
       p("<strong>Full-length timed tests. Short drills for your phone.</strong> Practice Test 1 is free.") +
       button(sat, "Take a free SAT practice test") +
       p(`Taking the ACT instead? ${link(act, "Start here", ACT)}.`, true),
-  })),
-  variant("v2", "For the parent", "Your teen's next big test", "The SAT and ACT, the TigerTest way. Free to start, $9.99 once for everything.", ({ sat, act }) => ({
-    hero: hero(4, 4),
-    heading: "Your teen's next big test",
-    body:
-      p("The same TigerTest that prepped them for the permit test now covers the <strong>SAT</strong> and <strong>ACT</strong>.") +
-      p("Free full practice test. <strong>$9.99 once</strong> unlocks everything. No subscription.") +
-      button(sat, "Start the free SAT test") +
-      p(`Or the ${link(act, "free ACT test", ACT)}. Forward this to them.`, true),
   })),
   variant("v3", "Price", "SAT and ACT prep. $9.99. Once.", "Prep courses cost hundreds. TigerTest Premium covers the SAT, ACT and your permit test.", ({ sat, act }) => ({
     hero: hero(1, 1),

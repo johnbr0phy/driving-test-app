@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getAdminDb, getAdminAuth } from '@/lib/firebase-admin';
 import { isAdminEmail } from '@/lib/admin';
+import { examAnalyticsLabel } from '@/lib/exams';
 
 // Growth/revenue metrics for /admin/v2. Everything here is derived from two
 // sources of truth: the users collection (signups, activity, subscription) and
@@ -254,6 +255,28 @@ export async function GET(request: NextRequest) {
     const questionsByDay = (questionsData?.daily as Record<string, number>) || {};
     const questionsAllTime = Object.values(questionsByDay).reduce((a, b) => a + b, 0);
 
+    // Per-exam split of the same aggregate (DMV + every registry exam). Totals
+    // are summed from the per-day map, like the headline, so a backfilled
+    // history and live increments read consistently. Answers recorded before
+    // the split shipped (and before the backfill ran) only count in the headline.
+    const byExamRaw =
+      (questionsData?.byExam as Record<string, { daily?: Record<string, number> }>) || {};
+    const questionsByExam = Object.entries(byExamRaw)
+      .map(([id, rec]) => {
+        const days = rec?.daily || {};
+        return {
+          id,
+          label: examAnalyticsLabel(id),
+          total: Object.values(days).reduce((a, b) => a + b, 0),
+          last7d: sumWindow(days, daysAgoKey(6), todayKey),
+          prev7d: sumWindow(days, daysAgoKey(13), daysAgoKey(7)),
+          today: days[etToday] || 0,
+        };
+      })
+      .filter((row) => row.total > 0)
+      .sort((a, b) => b.total - a.total);
+    const questionsByExamBackfillPending = !questionsData?.byExamBackfilledAt;
+
     const totalUsers = usersSnap.size;
     const payload = {
       generatedAt: new Date().toISOString(),
@@ -284,6 +307,8 @@ export async function GET(request: NextRequest) {
       },
       activeWeekly,
       activeMonthly,
+      questionsByExam,
+      questionsByExamBackfillPending,
       // The "today" range. Signups and revenue are bucketed by the hour in
       // Eastern time off real timestamps. Questions and active users have no
       // clock time anywhere in their write path, so they can only be day

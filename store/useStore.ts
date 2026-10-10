@@ -5,7 +5,7 @@ import { doc, setDoc, getDoc, updateDoc } from 'firebase/firestore';
 import { db } from '@/lib/firebase';
 import { trackQuestionsAnswered } from '@/lib/analytics';
 import type { Language } from '@/i18n';
-import { examTestIds, getExamById, getExamByStateCode, getExamForTestId, getExamTrainingSetSize, isExamQuestionId } from '@/lib/exams';
+import { examAnalyticsKey, examTestIds, getExamById, getExamByStateCode, getExamForQuestionId, getExamForSetId, getExamForTestId, getExamTrainingSetSize, isExamQuestionId } from '@/lib/exams';
 
 /**
  * Non-DMV exams share the store but are namespaced by ID range and stored
@@ -448,7 +448,7 @@ export const useStore = create<AppState>()(
           testAttempts: updatedTestAttempts,
         }));
 
-        trackQuestionsAnswered(questions.length);
+        trackQuestionsAnswered(questions.length, examAnalyticsKey(getExamForTestId(testId)));
 
         // Clear current test
         get().clearCurrentTest(testId);
@@ -531,7 +531,7 @@ export const useStore = create<AppState>()(
             trainingAnswerHistory: [...state.trainingAnswerHistory, { questionId, isCorrect, answeredAt: new Date().toISOString() }],
           };
         });
-        trackQuestionsAnswered();
+        trackQuestionsAnswered(1, examAnalyticsKey(getExamForQuestionId(questionId)));
         get().saveToFirestore();
       },
 
@@ -592,7 +592,7 @@ export const useStore = create<AppState>()(
             trainingAnswerHistory: [...state.trainingAnswerHistory, { questionId, isCorrect, answeredAt: new Date().toISOString() }],
           };
         });
-        trackQuestionsAnswered();
+        trackQuestionsAnswered(1, examAnalyticsKey(getExamForSetId(setId) ?? getExamForQuestionId(questionId)));
         get().saveToFirestore();
       },
 

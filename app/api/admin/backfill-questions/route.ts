@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getAdminDb, getAdminAuth } from '@/lib/firebase-admin';
 import { isAdminEmail } from '@/lib/admin';
-import { computeAnswersByDay } from '@/lib/server/answersByDay';
+import { computeAnswersByExamByDay } from '@/lib/server/answersByDay';
 
 // Seeds the analytics/questions aggregate's history from every user's stored
 // answer data. Runs as its own endpoint (triggered by the admin dashboard when
@@ -41,6 +41,8 @@ export async function POST(request: NextRequest) {
     // Scan all users in pages, projecting only the two history fields, so no
     // single fetch is larger than the 100-doc query the dashboard already runs.
     const computed: Record<string, number> = {};
+    // Same history split per exam (DMV included) for the "Questions by exam" table.
+    const computedByExam: Record<string, Record<string, number>> = {};
     let usersScanned = 0;
     let cursor: FirebaseFirestore.QueryDocumentSnapshot | null = null;
     for (;;) {
@@ -55,10 +57,14 @@ export async function POST(request: NextRequest) {
 
       for (const doc of snap.docs) {
         usersScanned++;
-        const byDay = computeAnswersByDay(doc.data() as Record<string, unknown>);
-        for (const [day, count] of Object.entries(byDay)) {
-          if (day >= today) continue;
-          computed[day] = (computed[day] || 0) + count;
+        const byExam = computeAnswersByExamByDay(doc.data() as Record<string, unknown>);
+        for (const [examKey, byDay] of Object.entries(byExam)) {
+          const examDays = (computedByExam[examKey] ||= {});
+          for (const [day, count] of Object.entries(byDay)) {
+            if (day >= today) continue;
+            computed[day] = (computed[day] || 0) + count;
+            examDays[day] = (examDays[day] || 0) + count;
+          }
         }
       }
 
@@ -67,20 +73,38 @@ export async function POST(request: NextRequest) {
     }
 
     const ref = db.doc('analytics/questions');
-    const existing = ((await ref.get()).data()?.daily as Record<string, number>) || {};
+    const existingDoc = (await ref.get()).data() || {};
+    const existing = (existingDoc.daily as Record<string, number>) || {};
     const daily: Record<string, number> = {};
     for (const [day, count] of Object.entries(computed)) {
       if (count > (existing[day] || 0)) daily[day] = count;
     }
 
+    const existingByExam = (existingDoc.byExam as Record<string, { daily?: Record<string, number> }>) || {};
+    const byExam: Record<string, { daily: Record<string, number> }> = {};
+    let examDaysWritten = 0;
+    for (const [examKey, byDay] of Object.entries(computedByExam)) {
+      const existingDays = existingByExam[examKey]?.daily || {};
+      const examDaily: Record<string, number> = {};
+      for (const [day, count] of Object.entries(byDay)) {
+        if (count > (existingDays[day] || 0)) examDaily[day] = count;
+      }
+      if (Object.keys(examDaily).length > 0) {
+        byExam[examKey] = { daily: examDaily };
+        examDaysWritten += Object.keys(examDaily).length;
+      }
+    }
+
     // Nested merge updates only the listed days; live counters and days the
     // aggregate already knows more about are left untouched.
-    await ref.set({ daily, backfilledAt: new Date().toISOString() }, { merge: true });
+    const stamp = new Date().toISOString();
+    await ref.set({ daily, byExam, backfilledAt: stamp, byExamBackfilledAt: stamp }, { merge: true });
 
     return NextResponse.json({
       ok: true,
       usersScanned,
       daysWritten: Object.keys(daily).length,
+      examDaysWritten,
     });
   } catch (error) {
     console.error('[admin/backfill-questions]', error);

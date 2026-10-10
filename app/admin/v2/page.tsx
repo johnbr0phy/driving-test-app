@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { useAuth } from "@/contexts/AuthContext";
 import { useAdmin } from "@/hooks/useAdmin";
@@ -54,6 +54,9 @@ interface Metrics {
   };
   activeWeekly: { date: string; count: number }[];
   activeMonthly: { date: string; count: number }[];
+  // Optional: older cached payloads predate the per-exam split.
+  questionsByExam?: { id: string; label: string; total: number; last7d: number; prev7d: number; today: number }[];
+  questionsByExamBackfillPending?: boolean;
   // Optional on purpose: a response predating this field (a stale cached
   // payload, or a tab whose JS is newer than the API it's talking to) must
   // degrade to a notice, not throw and white-screen the whole dashboard.
@@ -327,6 +330,78 @@ function Funnel({ data }: { data: { label: string; value: number }[] }) {
   );
 }
 
+function QuestionsByExam({ rows, totalQuestions, backfillPending }: {
+  rows: NonNullable<Metrics["questionsByExam"]>;
+  totalQuestions: number;
+  backfillPending: boolean;
+}) {
+  const attributed = rows.reduce((n, r) => n + r.total, 0);
+  const max = rows.length > 0 ? rows[0].total : 0;
+  return (
+    <div className="bg-white rounded-xl border border-gray-200/80 shadow-sm p-5">
+      <div className="mb-4 flex items-baseline justify-between gap-2">
+        <h2 className="text-sm font-semibold text-gray-900">Questions by exam</h2>
+        <p className="text-xs text-gray-400">
+          {fmtInt(attributed)} attributed of {fmtInt(totalQuestions)} all-time
+        </p>
+      </div>
+      {rows.length === 0 ? (
+        <p className="text-sm text-gray-400">
+          {backfillPending ? "Seeding history from user records…" : "No answers recorded yet."}
+        </p>
+      ) : (
+        <div className="overflow-x-auto">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="text-[11px] uppercase tracking-wide text-gray-400">
+                <th className="text-left font-medium pb-2">Exam</th>
+                <th className="text-right font-medium pb-2 pl-4">Today</th>
+                <th className="text-right font-medium pb-2 pl-4">Last 7d</th>
+                <th className="text-right font-medium pb-2 pl-4">All-time</th>
+                <th className="text-right font-medium pb-2 pl-4 w-1/3">Share</th>
+              </tr>
+            </thead>
+            <tbody>
+              {rows.map((r) => (
+                <tr key={r.id} className="border-t border-gray-100">
+                  <td className="py-2 font-medium text-gray-900">{r.label}</td>
+                  <td className="py-2 pl-4 text-right tabular-nums text-gray-600">{fmtInt(r.today)}</td>
+                  <td className="py-2 pl-4 text-right tabular-nums text-gray-600">
+                    {fmtInt(r.last7d)}
+                    <span className="ml-1.5 text-[11px]">
+                      <Delta now={r.last7d} prev={r.prev7d} suffix="vs prior 7d" />
+                    </span>
+                  </td>
+                  <td className="py-2 pl-4 text-right tabular-nums text-gray-900">{fmtInt(r.total)}</td>
+                  <td className="py-2 pl-4">
+                    <div className="flex items-center gap-2 justify-end">
+                      <div className="h-1.5 w-full max-w-[160px] bg-gray-100 rounded overflow-hidden">
+                        <div
+                          className="h-full rounded"
+                          style={{ width: `${max > 0 ? (r.total / max) * 100 : 0}%`, background: COLORS.engagement }}
+                        />
+                      </div>
+                      <span className="text-[11px] text-gray-400 tabular-nums w-10 text-right">
+                        {attributed > 0 ? `${((r.total / attributed) * 100).toFixed(0)}%` : "—"}
+                      </span>
+                    </div>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      )}
+      <p className="mt-4 text-[11px] text-gray-400">
+        Every training and test answer, guests included, filed under the exam it belongs to.
+        Signed-in history is seeded from user records; guest answers before the split shipped
+        only count in the all-time total above.
+        {backfillPending ? " History seed is running; refresh in a minute." : ""}
+      </p>
+    </div>
+  );
+}
+
 // ─── Page ───────────────────────────────────────────────────────────────────
 export default function AdminV2Page() {
   const { user, loading: authLoading } = useAuth();
@@ -367,6 +442,28 @@ export default function AdminV2Page() {
     if (user && isAdmin) fetchMetrics();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user, authLoading, isAdmin, router]);
+
+  // One-time history seed for the per-exam split of the questions aggregate:
+  // live counts only started when the split shipped, so until the backfill
+  // has run the table under-reports every exam. Idempotent server-side.
+  const backfillTriggered = useRef(false);
+  useEffect(() => {
+    if (!metrics?.questionsByExamBackfillPending || backfillTriggered.current || !user) return;
+    backfillTriggered.current = true;
+    (async () => {
+      try {
+        const idToken = await user.getIdToken();
+        const res = await fetch("/api/admin/backfill-questions", {
+          method: "POST",
+          headers: { Authorization: `Bearer ${idToken}` },
+        });
+        if (res.ok) fetchMetrics(true);
+      } catch {
+        // Best effort; the next page load retries.
+      }
+    })();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [metrics?.questionsByExamBackfillPending, user]);
 
   // ── Derived chart series ──────────────────────────────────────────────────
   const series = useMemo(() => {
@@ -687,6 +784,13 @@ export default function AdminV2Page() {
             )}
           </ChartCard>
         </div>
+
+        {/* Questions by exam */}
+        <QuestionsByExam
+          rows={metrics.questionsByExam ?? []}
+          totalQuestions={kpis.totalQuestions}
+          backfillPending={metrics.questionsByExamBackfillPending === true}
+        />
 
         {/* Funnel */}
         <div className="bg-white rounded-xl border border-gray-200/80 shadow-sm p-5">

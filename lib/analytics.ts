@@ -1,4 +1,5 @@
 import { auth } from "@/lib/firebase";
+import { DMV_ANALYTICS_KEY, type ExamAnalyticsKey } from "@/lib/exams";
 
 declare global {
   interface Window {
@@ -66,17 +67,18 @@ async function recordPaywallHit(itemId: string, itemName: string, location: stri
 }
 
 // ─── Answered-question counter ───────────────────────────────────────────────
-// Feeds the persistent analytics/questions aggregate (total + per-day counts)
-// behind the admin "Questions Answered" chart. Counts are batched locally and
-// flushed after a short delay (or when the tab is hidden) so answering a
-// question never costs a network round-trip of its own.
+// Feeds the persistent analytics/questions aggregate (total + per-day counts,
+// plus the same split per exam) behind the admin "Questions Answered" chart
+// and "Questions by exam" table. Counts are batched locally and flushed after
+// a short delay (or when the tab is hidden) so answering a question never
+// costs a network round-trip of its own.
 
-let pendingAnswerCount = 0;
+const pendingByExam: Record<string, number> = {};
 let answerFlushTimer: ReturnType<typeof setTimeout> | null = null;
 
-export function trackQuestionsAnswered(count = 1) {
+export function trackQuestionsAnswered(count = 1, examKey: ExamAnalyticsKey = DMV_ANALYTICS_KEY) {
   if (count <= 0) return;
-  pendingAnswerCount += count;
+  pendingByExam[examKey] = (pendingByExam[examKey] || 0) + count;
   if (!answerFlushTimer) {
     answerFlushTimer = setTimeout(() => void flushAnsweredQuestions(), 10_000);
   }
@@ -87,19 +89,22 @@ async function flushAnsweredQuestions() {
     clearTimeout(answerFlushTimer);
     answerFlushTimer = null;
   }
-  const count = pendingAnswerCount;
+  const byExam = { ...pendingByExam };
+  for (const key of Object.keys(pendingByExam)) delete pendingByExam[key];
+  const count = Object.values(byExam).reduce((a, b) => a + b, 0);
   if (count <= 0) return;
-  pendingAnswerCount = 0;
   try {
     await fetch("/api/analytics/questions", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ count }),
+      body: JSON.stringify({ count, byExam }),
       keepalive: true,
     });
   } catch {
-    // Re-queue so the count rides along with the next flush.
-    pendingAnswerCount += count;
+    // Re-queue so the counts ride along with the next flush.
+    for (const [key, n] of Object.entries(byExam)) {
+      pendingByExam[key] = (pendingByExam[key] || 0) + n;
+    }
   }
 }
 

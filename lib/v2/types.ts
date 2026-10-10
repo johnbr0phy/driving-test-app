@@ -109,8 +109,6 @@ export interface DrillDef {
   section: string;
   domains: string[];
   blurb: string;
-  /** Short weight line on the dashboard step, e.g. "28% of Reading and Writing". */
-  weight: string;
 }
 
 export interface ExamV2Config {

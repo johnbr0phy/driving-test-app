@@ -38,11 +38,11 @@ export const ACCUPLACER: ExamV2Config = {
     accAAF: "Advanced Algebra and Functions",
   },
   drills: [
-    { key: "reading", name: "Reading", section: "reading", domains: ["accReading"], blurb: "Passages with main idea, purpose, tone, inference and vocabulary questions.", weight: "20 questions on the real test" },
-    { key: "writing", name: "Writing", section: "writing", domains: ["accWriting"], blurb: "Fix the bracketed part, pick the best revision, keep the paragraph on topic.", weight: "25 questions on the real test" },
-    { key: "arithmetic", name: "Arithmetic", section: "arithmetic", domains: ["accArithmetic"], blurb: "Fractions, decimals, percents and estimation by hand.", weight: "20 questions on the real test" },
-    { key: "qas", name: "Quantitative Reasoning, Algebra and Statistics", section: "qas", domains: ["accQAS"], blurb: "Ratios, linear equations, graphs, probability and statistics.", weight: "20 questions on the real test" },
-    { key: "aaf", name: "Advanced Algebra and Functions", section: "aaf", domains: ["accAAF"], blurb: "Functions, quadratics, exponentials and systems.", weight: "20 questions on the real test" },
+    { key: "reading", name: "Reading", section: "reading", domains: ["accReading"], blurb: "Passages with main idea, purpose, tone, inference and vocabulary questions." },
+    { key: "writing", name: "Writing", section: "writing", domains: ["accWriting"], blurb: "Fix the bracketed part, pick the best revision, keep the paragraph on topic." },
+    { key: "arithmetic", name: "Arithmetic", section: "arithmetic", domains: ["accArithmetic"], blurb: "Fractions, decimals, percents and estimation by hand." },
+    { key: "qas", name: "Quantitative Reasoning, Algebra and Statistics", section: "qas", domains: ["accQAS"], blurb: "Ratios, linear equations, graphs, probability and statistics." },
+    { key: "aaf", name: "Advanced Algebra and Functions", section: "aaf", domains: ["accAAF"], blurb: "Functions, quadratics, exponentials and systems." },
   ],
   composite: {
     name: "Average section score",

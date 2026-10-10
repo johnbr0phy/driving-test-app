@@ -92,7 +92,7 @@ export async function POST(request: NextRequest) {
             userId,
             buyerEmail,
             "You're in - here's what just unlocked",
-            buildHtml(EMAIL_TEMPLATES.purchaseWelcome(voiceFor("dmv")), userId),
+            buildHtml(EMAIL_TEMPLATES.purchaseWelcome(voiceFor(purchaseExam(session.metadata?.location))), userId),
             "purchaseWelcome"
           );
         }
@@ -114,4 +114,15 @@ export async function POST(request: NextRequest) {
   }
 
   return NextResponse.json({ received: true });
+}
+
+/**
+ * Which exam the buyer paid from, from the checkout `location` metadata.
+ * SAT and ACT paywalls report "sat_dashboard", "act_drill" and so on
+ * (components/v2/V2Paywall); everything else is the DMV.
+ */
+function purchaseExam(location: string | undefined): string {
+  if (location?.startsWith("sat_")) return "sat";
+  if (location?.startsWith("act_")) return "act";
+  return "dmv";
 }

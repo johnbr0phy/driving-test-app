@@ -1,0 +1,615 @@
+{
+  "stimuli": [
+    {
+      "id": "ACT-RD-D1",
+      "title": "Drill Passage 1: Literary Narrative",
+      "text": "Every Sunday since the move, Theo's mother had driven him to Linden Park and left him at the stone tables with his grandfather, and every Sunday Theo had brought a book so that he would not have to watch. The arrangement had been presented to him as a favor to the old man, who lived alone now and liked company. Theo suspected it was really a favor to his mother, who wanted an hour to herself.\n\nHis grandfather played chess with whoever showed up: a man in a bus driver's uniform who came straight from his shift, two college students who argued in Portuguese, and a woman named Dolores who brought a thermos and a clock she set to five minutes a side. His grandfather lost to all of them, as far as Theo could tell, and did not seem to mind. He would tip his king over with one finger, say \"Again?\" and reset the board.\n\nOn the fourth Sunday, Dolores did not come, the bus driver was late, and his grandfather looked across the table at Theo's book and said, \"You know the moves?\"\n\n\"Sort of.\"\n\n\"Sort of is enough to start.\"\n\nTheo lost in eleven moves, then in nine. The old man said nothing about either game, only reset the pieces each time with the same unhurried care, lining up the pawns so that their bases touched the edges of the squares. In the third game Theo noticed that his grandfather had left a bishop where a knight could take it, and he took it, and felt a flush of something that was not quite pride. Two moves later he saw what the bishop had been doing: nothing, except persuading Theo to move the knight off the square it had been guarding. His grandfather's rook slid down the open file, and that was that.\n\n\"You saw the bishop,\" his grandfather said. \"Good. Next time, ask why it's there.\"\n\nTheo did not bring the book the following Sunday. He told himself it was because he had finished it. He watched the bus driver play instead and understood for the first time that his grandfather was not losing at all. He was giving away a pawn here, a tempo there, keeping the game close enough that the other man kept coming back. When the driver finally won, forty minutes in, he laughed and slapped the table, and Theo's grandfather tipped his king and said, \"Again?\"\n\nWalking to the car, Theo asked him why he did it.\n\n\"Nobody plays a man who always wins,\" his grandfather said. \"And I'd rather have the company than the game.\" He paused at the curb. \"That's not a lesson. That's just what I'd rather have.\"\n\nTheo had assumed, without noticing he was assuming it, that his grandfather sat at the tables because he had nowhere else to be. It had not occurred to him that the old man had built the Sunday crowd himself, one deliberately lost game at a time."
+    },
+    {
+      "id": "ACT-RD-D2",
+      "title": "Drill Passage 2: Social Science",
+      "text": "When a large employer closes, the first year looks much the same everywhere. Unemployment claims rise, the diner near the plant gate loses its breakfast crowd, and the local paper runs a series on what comes next. It is in the fifth and tenth years that towns diverge. Some stabilize and eventually grow; others lose a third of their population and never recover it. Economists who study these divergences have moved away from a simple explanation and toward a more uncomfortable one: what happens afterward depends less on the size of the closure than on what the town had already built before it.\n\nThe most reliable predictor, across dozens of studies in the United States and Europe, is the variety of the local economy at the moment the plant shuts. A town where one employer accounted for forty percent of wages has little to fall back on, and the loss cascades: the suppliers that served the plant close, then the shops that served the suppliers' workers. A town of the same size with a hospital, a community college, and a cluster of small manufacturers absorbs the same number of layoffs with far less damage, because displaced workers can find jobs without moving and the businesses that depended on their spending survive. Diversity, in other words, works like a shock absorber. It cannot prevent the blow, but it spreads the force.\n\nA second factor is harder to measure: whether the town retains people who can start things. Researchers call this entrepreneurial capacity, and it tends to track the presence of a college, a stock of cheap commercial buildings, and an existing network of small-business owners who know how to get a loan and a permit. Towns that score well on this measure see new firms appear within two or three years of a closure, often founded by former plant employees who turn a skill learned on the line into a contracting business. Towns that score poorly wait for an outside company to arrive, and outside companies, aware that they will be the only game in town, drive hard bargains on tax breaks and wages.\n\nThe third factor is the one towns can most directly control, and the one they most often get wrong. Faced with a closure, local governments are tempted to spend heavily to recruit a single replacement employer, offering the kind of incentives that made the town dependent in the first place. The evidence suggests this rarely pays off. The towns that recover tend to spend the same money on things that make many small bets possible: broadband, a renovated downtown, a workforce program at the college, a revolving loan fund. None of these produces a headline. Together they produce a town that no longer has a single gate for everyone to walk out of."
+    },
+    {
+      "id": "ACT-RD-D3",
+      "title": "Drill Passage 3: Natural Science",
+      "text": "A tree growing in a temperate climate adds one layer of wood each year, and because the wood formed in spring is pale and porous while the wood formed in late summer is dark and dense, the years show up as rings. Counting them gives an age. Measuring them gives something more useful: a record of the conditions under which each ring formed, reaching back as far as the tree has lived and, with the help of dead wood, much farther.\n\nThe principle is simple. In a good year a tree lays down a wide ring; in a hard year, a narrow one. For trees growing where water is the scarcest resource, as in the American Southwest, ring width tracks rainfall closely enough that a run of narrow rings can be read as a drought. Dendrochronologists, the scientists who study these records, do not rely on a single tree, since any one trunk may have been shaded by a neighbor or chewed by insects. Instead they core dozens of trees at a site and average the widths year by year, so that the shared signal of climate stands out from the noise of individual lives.\n\nThe record can be extended by matching. Because the pattern of wide and narrow rings in a region is distinctive, like a bar code, the outer rings of an old beam from a ruin can be aligned with the inner rings of a living tree that was a seedling when the beam was cut. Chains of such overlaps now reach back more than ten thousand years in parts of Europe. In the Southwest, they reveal a drought in the late thirteenth century that lasted more than two decades and coincided with the abandonment of cliff dwellings whose timbers supplied some of the samples.\n\nVolcanoes leave a different signature. A large eruption throws sulfur into the stratosphere, where it forms a haze that reflects sunlight and cools the planet for a year or two. In trees near the limit of where they can grow, at high elevation or high latitude, the growing season is so short that a single cold summer produces not just a narrow ring but a damaged one, with cells that froze before their walls could thicken. These frost rings can be dated to the exact year, and when the same year shows frost damage in trees from Siberia, the Rockies, and the Alps, researchers can be confident the cause was global rather than local. Several eruptions unknown from any written record have been identified this way and then confirmed by sulfur layers of the same date in polar ice cores.\n\nNeither record is perfect. A narrow ring can mean drought in one place and a cold summer in another, so the first task at any site is to establish what limits growth there. But read carefully, the rings offer what almost no other archive does: a year-by-year account of the climate, kept by witnesses that could not exaggerate."
+    }
+  ],
+  "questions": [
+    {
+      "id": "ACT-RD-001",
+      "section": "reading",
+      "test": 0,
+      "module": 1,
+      "stimulusId": "ACT-RD-D1",
+      "domain": "keyIdeas",
+      "skill": "Main idea",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "The passage is best described as the story of",
+      "options": [
+        "a grandfather who teaches his grandson a series of chess strategies in order to make him a strong player",
+        "a boy who begins to understand that his grandfather's weekly losses at chess are a deliberate way of keeping company",
+        "a boy who resents being left in a park every Sunday and finally persuades his mother to end the arrangement",
+        "a group of regular players who compete for the right to challenge an undefeated old man"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The passage moves from Theo's reluctance in the first paragraph, through his first games, to the moment he 'understood for the first time that his grandfather was not losing at all' and the closing realization that the old man 'had built the Sunday crowd himself, one deliberately lost game at a time.' That change in how Theo sees his grandfather is the center of the story. The grandfather offers only one piece of advice, Theo never asks to end the visits, and the regulars are not competing for anything, so the other choices describe stories the passage does not tell."
+    },
+    {
+      "id": "ACT-RD-002",
+      "section": "reading",
+      "test": 0,
+      "module": 1,
+      "stimulusId": "ACT-RD-D1",
+      "domain": "keyIdeas",
+      "skill": "Explicit detail",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "According to the passage, Theo brought a book to the park each Sunday because he",
+      "options": [
+        "wanted to read it aloud to his grandfather while they waited for other players",
+        "had been told by his mother that his grandfather would quiz him on it",
+        "did not want to watch the chess games",
+        "was preparing for a school assignment that was due the following week"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The first sentence says Theo 'had brought a book so that he would not have to watch.' The book is a way of avoiding the games, not something he shares with his grandfather. Nothing in the passage mentions a quiz or a school assignment; later, when he finishes the book, he tells himself that is why he stops bringing one."
+    },
+    {
+      "id": "ACT-RD-003",
+      "section": "reading",
+      "test": 0,
+      "module": 1,
+      "stimulusId": "ACT-RD-D1",
+      "domain": "craft",
+      "skill": "Phrase in context",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "In the sixth paragraph, the narrator's statement that Theo 'felt a flush of something that was not quite pride' most nearly suggests that Theo",
+      "options": [
+        "is embarrassed that his grandfather has made such an obvious mistake",
+        "feels a quick surge of satisfaction that he does not fully trust",
+        "is angry at himself for having lost the first two games so quickly",
+        "is pleased mainly because the bus driver and Dolores are watching him"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A 'flush' is a sudden feeling, and calling it 'not quite pride' signals that Theo senses something is off about his success even as he enjoys it. The next sentences confirm the doubt: 'Two moves later he saw what the bishop had been doing.' The strongest distractor is embarrassment for his grandfather, but Theo takes the bishop eagerly, which does not fit embarrassment, and neither Dolores nor the bus driver is present during this game."
+    },
+    {
+      "id": "ACT-RD-004",
+      "section": "reading",
+      "test": 0,
+      "module": 1,
+      "stimulusId": "ACT-RD-D1",
+      "domain": "keyIdeas",
+      "skill": "Inference",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "It can reasonably be inferred from the first paragraph that Theo believes the Sunday visits were arranged mainly to",
+      "options": [
+        "give his mother time alone rather than to keep his grandfather company",
+        "help him make friends with the other players at the stone tables",
+        "teach him chess so that he could join a club at his new school",
+        "keep him away from the apartment while his mother unpacked from the move"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The paragraph says the arrangement 'had been presented to him as a favor to the old man' but that 'Theo suspected it was really a favor to his mother, who wanted an hour to herself.' The contrast between how the plan was presented and what Theo suspects points to his mother's time alone as the real reason. Chess, friends, and unpacking are never mentioned as motives, and Theo does not even play until the fourth Sunday."
+    },
+    {
+      "id": "ACT-RD-005",
+      "section": "reading",
+      "test": 0,
+      "module": 1,
+      "stimulusId": "ACT-RD-D1",
+      "domain": "craft",
+      "skill": "Function of a detail",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The description of the grandfather 'lining up the pawns so that their bases touched the edges of the squares' primarily serves to",
+      "options": [
+        "suggest that the grandfather is growing impatient with Theo's weak play",
+        "show that the grandfather is nearsighted and has trouble seeing the board",
+        "reveal that the grandfather treats the game with careful, unhurried attention",
+        "indicate that the grandfather is stalling until a stronger opponent arrives"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The detail follows the phrase 'the same unhurried care' and shows that care in action: he resets the board precisely, every time, without comment on Theo's losses. This matches the later revelation that his losses are deliberate and controlled. The passage says 'the old man said nothing about either game,' which rules out impatience, and nothing suggests poor eyesight or that he is waiting for someone else."
+    },
+    {
+      "id": "ACT-RD-006",
+      "section": "reading",
+      "test": 0,
+      "module": 1,
+      "stimulusId": "ACT-RD-D1",
+      "domain": "keyIdeas",
+      "skill": "Explicit detail",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "According to the passage, what happened two moves after Theo captured the bishop?",
+      "options": [
+        "Theo's grandfather announced that he had made a mistake and asked to replay the move.",
+        "Theo's grandfather moved his rook down a file that Theo's knight had been guarding.",
+        "Theo captured a second piece and briefly took the lead in the game.",
+        "Dolores arrived and set her clock to five minutes a side."
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The sixth paragraph explains that the bishop's only job was 'persuading Theo to move the knight off the square it had been guarding,' after which 'his grandfather's rook slid down the open file, and that was that.' The grandfather never calls the bishop a mistake; he says 'You saw the bishop' and 'Good.' Dolores did not come that Sunday, and Theo wins no further material."
+    },
+    {
+      "id": "ACT-RD-007",
+      "section": "reading",
+      "test": 0,
+      "module": 1,
+      "stimulusId": "ACT-RD-D1",
+      "domain": "integration",
+      "skill": "Evidence for a claim",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Which detail from the passage most directly supports Theo's conclusion that his grandfather 'was not losing at all'?",
+      "options": [
+        "The grandfather tips his king over with one finger and says 'Again?' after each loss.",
+        "The grandfather is 'giving away a pawn here, a tempo there, keeping the game close enough that the other man kept coming back.'",
+        "The bus driver laughs and slaps the table when he finally wins after forty minutes.",
+        "The grandfather tells Theo that 'sort of' knowing the moves is enough to start."
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Theo's conclusion in the eighth paragraph is immediately explained by what he sees: the grandfather deliberately 'giving away' small advantages to keep each game close. That is direct evidence that the losses are chosen rather than suffered. Tipping the king and the driver's celebration are the strongest distractors because they show the losses happening, but they are consistent with genuine losing; only the giving away of pawns and tempo shows control over the result."
+    },
+    {
+      "id": "ACT-RD-008",
+      "section": "reading",
+      "test": 0,
+      "module": 1,
+      "stimulusId": "ACT-RD-D1",
+      "domain": "keyIdeas",
+      "skill": "Character change",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "The passage most strongly suggests that by its end Theo's view of his grandfather has shifted from seeing him as",
+      "options": [
+        "a lonely man with nowhere else to go to a man who has intentionally created his own company",
+        "a weak player to a secretly brilliant one who could beat anyone in the park",
+        "a stern teacher to a kindly companion who no longer expects anything of him",
+        "a stranger to a close friend who shares his love of books"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The final paragraph states the shift directly: Theo 'had assumed, without noticing he was assuming it, that his grandfather sat at the tables because he had nowhere else to be,' and now sees that the old man 'had built the Sunday crowd himself.' The second choice is the strongest distractor, since Theo does learn his grandfather is stronger than he appears, but the passage never claims he could beat anyone, and the grandfather's own words stress company over winning. He is never stern, and books play no part in their bond."
+    },
+    {
+      "id": "ACT-RD-009",
+      "section": "reading",
+      "test": 0,
+      "module": 1,
+      "stimulusId": "ACT-RD-D1",
+      "domain": "craft",
+      "skill": "Author's attitude",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The grandfather's remark 'That's not a lesson. That's just what I'd rather have' is most likely included to show that he",
+      "options": [
+        "is annoyed that Theo has questioned the way he plays",
+        "doubts that Theo is old enough to understand his reasons",
+        "wants Theo to take up chess seriously instead of reading",
+        "does not want his explanation to be taken as advice about how Theo should live"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Having just explained that he prefers 'the company' to 'the game,' the grandfather immediately heads off the idea that he is instructing Theo: it is a personal preference, not a moral. This fits his habit elsewhere of saying little and letting Theo work things out ('Next time, ask why it's there'). He answers the question readily, so annoyance does not fit, and nothing in the exchange concerns Theo's age or his reading."
+    },
+    {
+      "id": "ACT-RD-010",
+      "section": "reading",
+      "test": 0,
+      "module": 1,
+      "stimulusId": "ACT-RD-D2",
+      "domain": "keyIdeas",
+      "skill": "Main purpose",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "The main purpose of the passage is to",
+      "options": [
+        "argue that governments should prevent large employers from closing plants in small towns",
+        "explain why some towns recover from a major plant closure while others do not",
+        "describe the first year after a plant closure from the point of view of displaced workers",
+        "compare the economic policies of towns in the United States with those in Europe"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The first paragraph sets up the question of why towns 'diverge' after a closure, and the next three paragraphs each present a factor that explains the divergence: economic variety, entrepreneurial capacity, and how local money is spent. The first year is described only briefly to show that it looks 'much the same everywhere,' the passage never argues for preventing closures, and the United States and Europe are mentioned together as the setting of the studies, not as a contrast."
+    },
+    {
+      "id": "ACT-RD-011",
+      "section": "reading",
+      "test": 0,
+      "module": 1,
+      "stimulusId": "ACT-RD-D2",
+      "domain": "keyIdeas",
+      "skill": "Explicit detail",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "According to the passage, the differences between towns that recover and towns that do not become clear",
+      "options": [
+        "within the first few months after the plant closes",
+        "only after an outside company has been recruited",
+        "around the fifth and tenth years after the closure",
+        "once the local newspaper stops covering the closure"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The first paragraph states that 'the first year looks much the same everywhere' and that 'it is in the fifth and tenth years that towns diverge.' The newspaper series and the first months are part of the shared early pattern, not the point of divergence, and recruiting an outside company is discussed later as one response, not as a milestone."
+    },
+    {
+      "id": "ACT-RD-012",
+      "section": "reading",
+      "test": 0,
+      "module": 1,
+      "stimulusId": "ACT-RD-D2",
+      "domain": "craft",
+      "skill": "Phrase in context",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The author describes economic diversity as working 'like a shock absorber' primarily to suggest that diversity",
+      "options": [
+        "allows a town to avoid plant closures altogether",
+        "makes workers less likely to notice when a plant closes",
+        "lessens the damage of a closure without preventing it",
+        "slows a town's growth during periods of stability"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The sentence after the comparison explains it: diversity 'cannot prevent the blow, but it spreads the force.' A shock absorber does not stop an impact; it reduces its effect, just as a town with a hospital, college, and small manufacturers 'absorbs the same number of layoffs with far less damage.' The first choice is the strongest distractor, but the passage explicitly says the blow is not prevented, and nothing suggests workers fail to notice or that growth slows."
+    },
+    {
+      "id": "ACT-RD-013",
+      "section": "reading",
+      "test": 0,
+      "module": 1,
+      "stimulusId": "ACT-RD-D2",
+      "domain": "keyIdeas",
+      "skill": "Explicit detail",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "According to the passage, a town's entrepreneurial capacity tends to be associated with all of the following EXCEPT",
+      "options": [
+        "the presence of a college",
+        "a supply of inexpensive commercial buildings",
+        "a network of small-business owners who know how to obtain loans and permits",
+        "a single large employer that accounts for most local wages"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The third paragraph lists what entrepreneurial capacity 'tends to track': 'the presence of a college, a stock of cheap commercial buildings, and an existing network of small-business owners who know how to get a loan and a permit.' A single dominant employer is described in the second paragraph as the situation that leaves a town with 'little to fall back on,' the opposite of what the passage associates with new firms starting up."
+    },
+    {
+      "id": "ACT-RD-014",
+      "section": "reading",
+      "test": 0,
+      "module": 1,
+      "stimulusId": "ACT-RD-D2",
+      "domain": "keyIdeas",
+      "skill": "Inference",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "It can reasonably be inferred that outside companies 'drive hard bargains' with some towns because those companies",
+      "options": [
+        "know the town has no other prospective employers competing for its workers",
+        "are usually founded by former plant employees who understand local wages",
+        "must pay for new broadband and downtown renovations before opening",
+        "expect to lose money during their first two or three years in the town"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The third paragraph says outside companies are 'aware that they will be the only game in town' and therefore drive hard bargains on tax breaks and wages. Being the only option gives them leverage. The second choice confuses outside companies with the locally founded firms described earlier in the paragraph, and the passage ties broadband and renovations to town spending in the fourth paragraph, not to company costs."
+    },
+    {
+      "id": "ACT-RD-015",
+      "section": "reading",
+      "test": 0,
+      "module": 1,
+      "stimulusId": "ACT-RD-D2",
+      "domain": "craft",
+      "skill": "Function of a paragraph",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The main function of the fourth paragraph is to",
+      "options": [
+        "summarize the first three factors and rank them by importance",
+        "contrast a common but ineffective response to a closure with the approach that tends to succeed",
+        "describe in detail how a revolving loan fund operates",
+        "argue that incentives offered to replacement employers should be made illegal"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The paragraph introduces the factor towns 'most directly control' and then sets the tempting response, spending heavily to recruit 'a single replacement employer,' against what recovering towns do instead: 'spend the same money on things that make many small bets possible.' That contrast is its organizing structure. It does not rank the three factors, the loan fund is only one item in a list, and the author calls incentives ineffective rather than calling for a ban."
+    },
+    {
+      "id": "ACT-RD-016",
+      "section": "reading",
+      "test": 0,
+      "module": 1,
+      "stimulusId": "ACT-RD-D2",
+      "domain": "craft",
+      "skill": "Author's attitude",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The author's attitude toward towns that spend heavily to recruit a single replacement employer can best be described as",
+      "options": [
+        "critical, because the strategy repeats the dependence that caused the problem",
+        "admiring, because the strategy produces quick and visible results",
+        "neutral, because the evidence on the strategy is mixed",
+        "sympathetic, because the strategy is the only one small towns can afford"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The fourth paragraph says such towns are 'tempted' to offer 'the kind of incentives that made the town dependent in the first place' and that 'the evidence suggests this rarely pays off,' calling it the thing towns 'most often get wrong.' That wording is clearly critical. The passage presents the evidence as pointing one way rather than mixed, and it says recovering towns spend 'the same money' differently, so affordability is not the issue."
+    },
+    {
+      "id": "ACT-RD-017",
+      "section": "reading",
+      "test": 0,
+      "module": 1,
+      "stimulusId": "ACT-RD-D2",
+      "domain": "integration",
+      "skill": "How a claim is supported",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "In the second paragraph, the author supports the claim that economic variety is 'the most reliable predictor' of recovery mainly by",
+      "options": [
+        "quoting an economist who has studied plant closures in Europe",
+        "citing the exact percentage of towns that recovered in a single large study",
+        "contrasting two hypothetical towns of the same size that respond differently to the same layoffs",
+        "tracing the history of one real town over the ten years after its plant closed"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "After referring in general to 'dozens of studies,' the paragraph makes its case with a comparison: 'a town where one employer accounted for forty percent of wages' suffers a cascade of losses, while 'a town of the same size with a hospital, a community college, and a cluster of small manufacturers absorbs the same number of layoffs with far less damage.' No economist is quoted, no recovery percentage is given, and no single real town is followed over time."
+    },
+    {
+      "id": "ACT-RD-018",
+      "section": "reading",
+      "test": 0,
+      "module": 1,
+      "stimulusId": "ACT-RD-D2",
+      "domain": "keyIdeas",
+      "skill": "Inference",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The final sentence of the passage, which describes 'a town that no longer has a single gate for everyone to walk out of,' most strongly suggests that the author views the goal of recovery spending as",
+      "options": [
+        "replacing the closed plant with a larger one that can employ the whole town",
+        "building an economy in which no single closure can empty the town of jobs",
+        "encouraging residents to leave for cities where work is easier to find",
+        "restoring the diner, newspaper, and other businesses that existed before the closure"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The 'single gate' recalls the plant gate from the first paragraph and the one-employer town of the second, and 'no longer has a single gate' means the town's jobs are no longer concentrated where one closure could remove them all. That is the payoff of 'many small bets.' Replacing the plant with a larger one is exactly the single-employer strategy the paragraph criticizes, and the passage never suggests residents should leave or that restoring the old businesses is the aim."
+    },
+    {
+      "id": "ACT-RD-019",
+      "section": "reading",
+      "test": 0,
+      "module": 1,
+      "stimulusId": "ACT-RD-D3",
+      "domain": "keyIdeas",
+      "skill": "Main purpose",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "The main purpose of the passage is to",
+      "options": [
+        "explain how scientists read tree rings as a record of past droughts and volcanic eruptions",
+        "argue that tree rings are more reliable than ice cores for dating eruptions",
+        "describe why cliff dwellings in the American Southwest were abandoned",
+        "explain why trees at high elevation grow more slowly than trees in valleys"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The passage introduces how rings form, explains how ring width records drought (second and third paragraphs), then turns to how frost rings record eruptions (fourth paragraph), and closes by assessing the record's limits and value. Ice cores appear only as confirmation, not as a rival, and the cliff dwellings and high-elevation trees are examples within the larger explanation rather than the subject of the passage."
+    },
+    {
+      "id": "ACT-RD-020",
+      "section": "reading",
+      "test": 0,
+      "module": 1,
+      "stimulusId": "ACT-RD-D3",
+      "domain": "keyIdeas",
+      "skill": "Explicit detail",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "According to the passage, the yearly rings in a tree are visible because",
+      "options": [
+        "each year's wood is separated by a thin layer of bark",
+        "wood formed in spring is pale and porous while wood formed in late summer is dark and dense",
+        "trees stop growing entirely during the winter and leave a gap",
+        "insects chew a narrow channel around the trunk each autumn"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The first sentence states that 'the wood formed in spring is pale and porous while the wood formed in late summer is dark and dense,' and that this contrast is why 'the years show up as rings.' Bark is never mentioned, and insects appear in the second paragraph only as a reason a single tree can be an unreliable witness, not as the cause of ring boundaries."
+    },
+    {
+      "id": "ACT-RD-021",
+      "section": "reading",
+      "test": 0,
+      "module": 1,
+      "stimulusId": "ACT-RD-D3",
+      "domain": "keyIdeas",
+      "skill": "Explicit detail",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "According to the passage, dendrochronologists core dozens of trees at a site rather than one because",
+      "options": [
+        "a single tree may have been affected by shade or insects that have nothing to do with climate",
+        "the rings of a single tree are too narrow to measure accurately",
+        "coring a single tree would kill it, while coring many trees spreads the damage",
+        "only some trees at a site are old enough to record the thirteenth-century drought"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The second paragraph says researchers 'do not rely on a single tree, since any one trunk may have been shaded by a neighbor or chewed by insects,' and that averaging many trees lets 'the shared signal of climate' stand out 'from the noise of individual lives.' The other choices invent reasons the passage never gives: it says nothing about ring width being too narrow to measure, about coring harming trees, or about the age of individual trees at a site."
+    },
+    {
+      "id": "ACT-RD-022",
+      "section": "reading",
+      "test": 0,
+      "module": 1,
+      "stimulusId": "ACT-RD-D3",
+      "domain": "craft",
+      "skill": "Phrase in context",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "In the third paragraph, the author compares a region's pattern of rings to 'a bar code' primarily to emphasize that the pattern is",
+      "options": [
+        "printed in black and white",
+        "impossible to read without special equipment",
+        "distinctive enough to be matched between different pieces of wood",
+        "the same in every region of the world"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The comparison comes right after the word 'distinctive' and right before the explanation that the rings of an old beam 'can be aligned with' those of a living tree. Like a bar code, the sequence identifies a specific span of years so that overlapping samples can be matched. The last choice reverses the point, since the passage says the pattern is distinctive 'in a region,' and nothing about color or equipment is at issue."
+    },
+    {
+      "id": "ACT-RD-023",
+      "section": "reading",
+      "test": 0,
+      "module": 1,
+      "stimulusId": "ACT-RD-D3",
+      "domain": "keyIdeas",
+      "skill": "Inference",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "It can reasonably be inferred that frost rings are most likely to be found in trees near the limit of where they can grow because such trees",
+      "options": [
+        "have the thickest cell walls of any trees",
+        "have so little margin in their growing season that one cold summer damages the wood",
+        "receive more sulfur from the stratosphere than trees at lower elevations",
+        "are the only trees that are cored by researchers"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The fourth paragraph explains that for trees at high elevation or latitude 'the growing season is so short that a single cold summer produces not just a narrow ring but a damaged one, with cells that froze before their walls could thicken.' A tree already at its limit has no margin to absorb a cold year. The third choice misreads the mechanism: the sulfur haze cools the whole planet, and the passage does not say it falls more on some trees than others."
+    },
+    {
+      "id": "ACT-RD-024",
+      "section": "reading",
+      "test": 0,
+      "module": 1,
+      "stimulusId": "ACT-RD-D3",
+      "domain": "integration",
+      "skill": "How a claim is supported",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "The author supports the claim that a frost ring can be traced to a global cause rather than a local one by pointing to",
+      "options": [
+        "the fact that sulfur haze reflects sunlight",
+        "the appearance of frost damage in the same year in trees on different continents",
+        "the great age of the oldest European ring chains",
+        "written records of eruptions kept by observers near the volcanoes"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The fourth paragraph says that 'when the same year shows frost damage in trees from Siberia, the Rockies, and the Alps, researchers can be confident the cause was global rather than local.' Widespread agreement across distant sites is the evidence. The sulfur haze explains why an eruption cools the planet but does not by itself show that a given ring was caused by one, and the passage specifically says several eruptions were 'unknown from any written record.'"
+    },
+    {
+      "id": "ACT-RD-025",
+      "section": "reading",
+      "test": 0,
+      "module": 1,
+      "stimulusId": "ACT-RD-D3",
+      "domain": "integration",
+      "skill": "Relationship between ideas",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which statement best describes the relationship between tree-ring evidence and ice-core evidence as presented in the fourth paragraph?",
+      "options": [
+        "Ice cores provide the dates, and tree rings show whether the eruptions were large.",
+        "Tree rings have replaced ice cores as the preferred method for finding eruptions.",
+        "Ice cores independently confirm eruptions first identified from frost rings.",
+        "The two records regularly contradict each other and must be reconciled."
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The paragraph says eruptions 'have been identified this way,' meaning through frost rings, 'and then confirmed by sulfur layers of the same date in polar ice cores.' The rings come first and the ice cores agree, which is confirmation from a second, separate kind of evidence. The first choice reverses the roles, since the frost rings themselves 'can be dated to the exact year,' and the passage mentions no contradiction or replacement."
+    },
+    {
+      "id": "ACT-RD-026",
+      "section": "reading",
+      "test": 0,
+      "module": 1,
+      "stimulusId": "ACT-RD-D3",
+      "domain": "craft",
+      "skill": "Phrase in context",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "The author's description of trees as 'witnesses that could not exaggerate' in the final paragraph most nearly conveys that the tree-ring record is",
+      "options": [
+        "free of the bias that can affect human accounts of past climate",
+        "unable to register any event smaller than a major drought",
+        "less detailed than written archives but easier to interpret",
+        "reliable only when the trees are still alive to be examined"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A witness who 'could not exaggerate' is one whose testimony cannot be inflated or slanted, so the phrase stresses that rings record conditions mechanically, unlike people, who may overstate a hard winter or a famine. The sentence also calls the record 'a year-by-year account,' which contradicts the idea that it is less detailed. The passage shows the record works with dead beams too, so the last choice conflicts with the third paragraph."
+    },
+    {
+      "id": "ACT-RD-027",
+      "section": "reading",
+      "test": 0,
+      "module": 1,
+      "stimulusId": "ACT-RD-D3",
+      "domain": "keyIdeas",
+      "skill": "Explicit detail",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "According to the passage, the drought revealed by Southwestern tree rings in the late thirteenth century",
+      "options": [
+        "lasted more than two decades and coincided with the abandonment of cliff dwellings",
+        "was caused by a volcanic eruption that cooled the region for two years",
+        "was first identified in written records and later confirmed by ring widths",
+        "is still disputed because the rings came from a single living tree"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The third paragraph states that the overlapping ring chains 'reveal a drought in the late thirteenth century that lasted more than two decades and coincided with the abandonment of cliff dwellings whose timbers supplied some of the samples.' The drought is tied to rainfall, not to an eruption, which is a separate topic in the next paragraph, and the samples came from beams and living trees matched together, not from one tree or from written records."
+    }
+  ]
+}

@@ -1,0 +1,542 @@
+{
+  "stimuli": [],
+  "questions": [
+    {
+      "id": "ACT-MA-201",
+      "section": "math",
+      "test": 2,
+      "module": 1,
+      "domain": "algebra",
+      "skill": "Fraction arithmetic in context",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A bread recipe calls for $2\\frac{1}{4}$ cups of flour. Priya has $5\\frac{1}{3}$ cups of flour. After she makes the recipe once, how many cups of flour does Priya have left?",
+      "options": [
+        "$2\\frac{1}{12}$",
+        "$3\\frac{1}{12}$",
+        "$3\\frac{7}{12}$",
+        "$7\\frac{7}{12}$"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "Write both amounts as improper fractions with a common denominator: $5\\frac{1}{3} = \\frac{64}{12}$ and $2\\frac{1}{4} = \\frac{27}{12}$. Subtracting gives $\\frac{64 - 27}{12} = \\frac{37}{12} = 3\\frac{1}{12}$ cups. The choice $7\\frac{7}{12}$ comes from adding the two amounts instead of subtracting, and $3\\frac{7}{12}$ comes from adding the fraction parts ($\\frac{1}{3} + \\frac{1}{4}$) while subtracting the whole numbers."
+    },
+    {
+      "id": "ACT-MA-202",
+      "section": "math",
+      "test": 2,
+      "module": 1,
+      "domain": "algebra",
+      "skill": "Distributive property and simplifying expressions",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Which of the following expressions is equivalent to $3(2x - 5) - 2(x + 4)$ for all values of $x$?",
+      "options": [
+        "$4x - 7$",
+        "$4x - 19$",
+        "$4x - 23$",
+        "$8x - 23$"
+      ],
+      "correct": [
+        2
+      ],
+      "calculator": true,
+      "explanation": "Distribute each factor: $3(2x - 5) = 6x - 15$ and $-2(x + 4) = -2x - 8$. Combining like terms gives $6x - 2x - 15 - 8 = 4x - 23$. The choice $4x - 7$ comes from writing $-2(x + 4)$ as $-2x + 8$ (a sign error on the second term), and $4x - 19$ comes from distributing the $-2$ to the $x$ but not to the $4$."
+    },
+    {
+      "id": "ACT-MA-203",
+      "section": "math",
+      "test": 2,
+      "module": 1,
+      "domain": "geometry",
+      "skill": "Angles with parallel lines and a transversal",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "In the figure below, lines $l$ and $m$ are parallel and are cut by transversal $t$. One angle measures $110^\\circ$ and another measures $(4x + 10)^\\circ$, as marked. What is the value of $x$?",
+      "options": [
+        "$15$",
+        "$17.5$",
+        "$25$",
+        "$70$"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "figure": {
+        "src": "/figures/act/act-ma-203.svg",
+        "alt": "Two horizontal parallel lines, l above m, cut by a transversal t that rises from lower left to upper right. At the intersection with line l, the angle above l and to the left of t is marked 110 degrees. At the intersection with line m, the angle above m and to the right of t is marked (4x + 10) degrees."
+      },
+      "calculator": true,
+      "explanation": "The $110^\\circ$ angle and the angle marked $(4x + 10)^\\circ$ are on opposite sides of the transversal, and together with the parallel lines they form a pair whose measures are supplementary (the $110^\\circ$ angle is supplementary to its neighbor along line $l$, and that neighbor corresponds to the marked angle on line $m$). So $4x + 10 = 180 - 110 = 70$, which gives $4x = 60$ and $x = 15$. The choice $25$ comes from setting $4x + 10 = 110$ as if the two angles were equal, and $70$ is the measure of the marked angle, not the value of $x$."
+    },
+    {
+      "id": "ACT-MA-204",
+      "section": "math",
+      "test": 2,
+      "module": 1,
+      "domain": "modeling",
+      "skill": "Unit conversion",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A runner's stride covers $2.5$ feet. If the runner's stride length does not change, how many strides does the runner take to cover exactly 1 mile? (Note: 1 mile = 5,280 feet)",
+      "options": [
+        "$1{,}760$",
+        "$2{,}112$",
+        "$2{,}640$",
+        "$13{,}200$"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "Divide the length of a mile by the length of one stride: $5{,}280 \\div 2.5 = 2{,}112$ strides. The choice $13{,}200$ comes from multiplying $5{,}280$ by $2.5$ instead of dividing, $2{,}640$ comes from dividing by $2$ instead of $2.5$, and $1{,}760$ is the number of yards in a mile."
+    },
+    {
+      "id": "ACT-MA-205",
+      "section": "math",
+      "test": 2,
+      "module": 1,
+      "domain": "algebra",
+      "skill": "Solving a literal equation for a variable",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "The area $A$ of a trapezoid with parallel sides of lengths $b_1$ and $b_2$ and height $h$ is given by $A = \\frac{1}{2}h(b_1 + b_2)$. Which of the following expresses $b_1$ in terms of $A$, $h$, and $b_2$?",
+      "options": [
+        "$b_1 = \\frac{2A}{h} - b_2$",
+        "$b_1 = \\frac{2A}{h} + b_2$",
+        "$b_1 = \\frac{A}{2h} - b_2$",
+        "$b_1 = 2A - hb_2$"
+      ],
+      "correct": [
+        0
+      ],
+      "calculator": true,
+      "explanation": "Multiply both sides by $2$ to clear the fraction: $2A = h(b_1 + b_2)$. Divide both sides by $h$: $\\frac{2A}{h} = b_1 + b_2$. Subtract $b_2$ from both sides: $b_1 = \\frac{2A}{h} - b_2$. The choice $\\frac{A}{2h} - b_2$ divides by $2$ instead of multiplying by $2$, and $2A - hb_2$ comes from distributing the $h$ and then forgetting to divide the $2A$ term by $h$."
+    },
+    {
+      "id": "ACT-MA-206",
+      "section": "math",
+      "test": 2,
+      "module": 1,
+      "domain": "geometry",
+      "skill": "Perimeter of a composite figure",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "In the figure below, all angles are right angles, and the side lengths shown are in centimeters. What is the perimeter, in centimeters, of the figure?",
+      "options": [
+        "$33$",
+        "$38$",
+        "$42$",
+        "$88$"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "figure": {
+        "src": "/figures/act/act-ma-206.svg",
+        "alt": "An L-shaped figure with six sides and all right angles. The bottom side is labelled 12, the left side is labelled 9, the top side is labelled 7, and the right side at the lower right is labelled 5. The notch at the upper right has an unlabeled horizontal side and an unlabeled vertical side."
+      },
+      "calculator": true,
+      "explanation": "The two unlabeled sides can be found from the labeled ones: the short horizontal side is $12 - 7 = 5$ and the short vertical side is $9 - 5 = 4$. The perimeter is $12 + 9 + 7 + 4 + 5 + 5 = 42$ cm. A quicker way: because every angle is a right angle, the perimeter equals that of the full $12$ by $9$ rectangle, $2(12 + 9) = 42$. The choice $33$ adds only the four labeled sides, and $88$ is the area ($12 \\times 9 - 5 \\times 4$), not the perimeter."
+    },
+    {
+      "id": "ACT-MA-207",
+      "section": "math",
+      "test": 2,
+      "module": 1,
+      "domain": "algebra",
+      "skill": "Integer arithmetic in context",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "At 6:00 a.m. the temperature in a town was $-8^\\circ$F. The temperature rose $3^\\circ$F per hour for the next 5 hours and then fell a total of $11^\\circ$F by midnight. What was the temperature, in degrees Fahrenheit, at midnight?",
+      "options": [
+        "$-24$",
+        "$-4$",
+        "$4$",
+        "$12$"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "Over 5 hours the temperature rose $5 \\times 3 = 15$ degrees, so at 11:00 a.m. it was $-8 + 15 = 7^\\circ$F. It then fell $11$ degrees, giving $7 - 11 = -4^\\circ$F at midnight. The choice $-24$ treats the $15$-degree rise as a drop ($-8 - 15 - 11$), $12$ comes from starting at $+8$ instead of $-8$, and $4$ is a sign error on the final answer."
+    },
+    {
+      "id": "ACT-MA-208",
+      "section": "math",
+      "test": 2,
+      "module": 1,
+      "domain": "modeling",
+      "skill": "Least common multiple in context",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Two lighthouses are visible from a harbor. One light flashes every 12 seconds and the other flashes every 20 seconds. If both lights flash at the same instant at noon, how many seconds later will they next flash at the same instant?",
+      "options": [
+        "$4$",
+        "$32$",
+        "$60$",
+        "$240$"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "The lights flash together at every common multiple of $12$ and $20$ seconds. Since $12 = 2^2 \\cdot 3$ and $20 = 2^2 \\cdot 5$, the least common multiple is $2^2 \\cdot 3 \\cdot 5 = 60$, so the next simultaneous flash is $60$ seconds after noon. The choice $240$ is the product $12 \\times 20$, which is a common multiple but not the least one, $4$ is the greatest common factor, and $32$ is the sum of the two intervals."
+    },
+    {
+      "id": "ACT-MA-209",
+      "section": "math",
+      "test": 2,
+      "module": 1,
+      "domain": "geometry",
+      "skill": "Circumference and area of a circle",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "The circumference of a circle is $16\\pi$ inches. What is the area, in square inches, of the circle?",
+      "options": [
+        "$8\\pi$",
+        "$32\\pi$",
+        "$64\\pi$",
+        "$256\\pi$"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "Circumference is $2\\pi r$, so $2\\pi r = 16\\pi$ gives $r = 8$ inches. The area is $\\pi r^2 = \\pi(8)^2 = 64\\pi$ square inches. The choice $256\\pi$ comes from using the diameter, $16$, as the radius, and $8\\pi$ comes from using $\\pi r$ instead of $\\pi r^2$."
+    },
+    {
+      "id": "ACT-MA-210",
+      "section": "math",
+      "test": 2,
+      "module": 1,
+      "domain": "modeling",
+      "skill": "Simple interest",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Tomas deposits \\$2,500 in an account that earns simple interest at an annual rate of $4\\%$. If he makes no other deposits or withdrawals, what is the total amount in the account after 3 years?",
+      "options": [
+        "\\$300",
+        "\\$2,600",
+        "\\$2,800",
+        "\\$2,812.16"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "Simple interest is $I = Prt = 2{,}500 \\times 0.04 \\times 3 = 300$ dollars. Adding the interest to the original deposit gives $2{,}500 + 300 = 2{,}800$ dollars. The choice \\$300 is the interest alone, \\$2,600 is the balance after only 1 year, and \\$2,812.16 is what the account would hold if the interest were compounded annually rather than simple."
+    },
+    {
+      "id": "ACT-MA-211",
+      "section": "math",
+      "test": 2,
+      "module": 1,
+      "domain": "modeling",
+      "skill": "Volume of a rectangular prism",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A storage box in the shape of a rectangular prism is $2.5$ feet long, $1.5$ feet wide, and $2$ feet tall. What is the volume, in cubic feet, of the box?",
+      "options": [
+        "$6$",
+        "$7.5$",
+        "$15$",
+        "$23.5$"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "The volume of a rectangular prism is length times width times height: $2.5 \\times 1.5 \\times 2 = 7.5$ cubic feet. The choice $6$ is the sum of the three dimensions, $15$ is twice the volume, and $23.5$ is the surface area of the box ($2(3.75 + 5 + 3)$), not its volume."
+    },
+    {
+      "id": "ACT-MA-212",
+      "section": "math",
+      "test": 2,
+      "module": 1,
+      "domain": "geometry",
+      "skill": "Range and mode",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "The numbers of goals a soccer team scored in its 9 games this season were 2, 0, 3, 1, 2, 4, 2, 0, and 5. What is the sum of the range and the mode of this data set?",
+      "options": [
+        "$2$",
+        "$4$",
+        "$5$",
+        "$7$"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "The range is the greatest value minus the least value: $5 - 0 = 5$. The mode is the value that appears most often: $2$ appears three times, more than any other value. The sum is $5 + 2 = 7$. The choice $5$ is the range alone, $2$ is the mode alone (and also the median), and $4$ comes from using $1$ as the least value when finding the range."
+    },
+    {
+      "id": "ACT-MA-213",
+      "section": "math",
+      "test": 2,
+      "module": 1,
+      "domain": "algebra",
+      "skill": "Parallel and perpendicular lines",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "In the standard $(x, y)$ coordinate plane, line $a$ has the equation $2x + 3y = 6$. Which of the following is an equation of the line that is perpendicular to line $a$ and passes through the point $(4, 1)$?",
+      "options": [
+        "$y = -\\frac{2}{3}x + \\frac{11}{3}$",
+        "$y = -\\frac{3}{2}x + 7$",
+        "$y = \\frac{3}{2}x - 5$",
+        "$y = \\frac{3}{2}x + 1$"
+      ],
+      "correct": [
+        2
+      ],
+      "calculator": true,
+      "explanation": "Solving $2x + 3y = 6$ for $y$ gives $y = -\\frac{2}{3}x + 2$, so line $a$ has slope $-\\frac{2}{3}$. A perpendicular line has the negative reciprocal slope, $\\frac{3}{2}$. Using the point $(4, 1)$: $1 = \\frac{3}{2}(4) + b$, so $b = 1 - 6 = -5$, and the line is $y = \\frac{3}{2}x - 5$. The choice $y = -\\frac{2}{3}x + \\frac{11}{3}$ is the line through $(4, 1)$ that is parallel to $a$, and $y = -\\frac{3}{2}x + 7$ takes the reciprocal of the slope without changing its sign."
+    },
+    {
+      "id": "ACT-MA-214",
+      "section": "math",
+      "test": 2,
+      "module": 1,
+      "domain": "geometry",
+      "skill": "Reading a bar graph",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The bar graph below shows the number of books each of 5 students read in March. A sixth student, Fay, is added to the group, and the mean (average) number of books read by all 6 students is exactly 9. How many books did Fay read in March?",
+      "options": [
+        "$8$",
+        "$9$",
+        "$14$",
+        "$54$"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "figure": {
+        "src": "/figures/act/act-ma-214.svg",
+        "alt": "A bar graph titled Books Read in March. The vertical axis is labelled Number of books and runs from 0 to 12 with grid lines every 2. The five bars are Ana 7, Ben 12, Cal 4, Dee 9 and Eli 8, with the value printed above each bar."
+      },
+      "calculator": true,
+      "explanation": "From the graph, the 5 students read $7 + 12 + 4 + 9 + 8 = 40$ books. For 6 students to have a mean of $9$, the total must be $6 \\times 9 = 54$ books. So Fay read $54 - 40 = 14$ books. The choice $54$ is the required total for all 6 students rather than Fay's share, $8$ is the mean of the original 5 students, and $9$ is the new mean itself."
+    },
+    {
+      "id": "ACT-MA-215",
+      "section": "math",
+      "test": 2,
+      "module": 1,
+      "domain": "algebra",
+      "skill": "Slope from two points",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "In the standard $(x, y)$ coordinate plane, the line through the points $(2, k)$ and $(6, 3k)$ has slope $\\frac{5}{2}$. What is the value of $k$?",
+      "options": [
+        "$-5$",
+        "$\\frac{4}{5}$",
+        "$5$",
+        "$10$"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "The slope is the change in $y$ over the change in $x$: $\\frac{3k - k}{6 - 2} = \\frac{2k}{4} = \\frac{k}{2}$. Setting this equal to $\\frac{5}{2}$ gives $k = 5$. The choice $10$ comes from writing the slope as $\\frac{k}{4}$ (dropping the factor of $2$ in the numerator), $-5$ comes from subtracting the coordinates in opposite orders, and $\\frac{4}{5}$ comes from inverting the slope fraction."
+    },
+    {
+      "id": "ACT-MA-216",
+      "section": "math",
+      "test": 2,
+      "module": 1,
+      "domain": "algebra",
+      "skill": "Direct and inverse variation",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The time it takes to fill a swimming pool varies inversely with the number of identical hoses used. With 3 hoses running, the pool fills in 8 hours. How many hours does it take to fill the pool with 4 hoses running?",
+      "options": [
+        "$5$",
+        "$6$",
+        "$\\frac{32}{3}$",
+        "$12$"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "Inverse variation means $t = \\frac{k}{n}$ for some constant $k$, where $t$ is the time and $n$ the number of hoses. From $8 = \\frac{k}{3}$, $k = 24$. With 4 hoses, $t = \\frac{24}{4} = 6$ hours. The choice $\\frac{32}{3}$ treats the relationship as direct variation ($\\frac{8}{3} \\times 4$), which would wrongly make more hoses take longer, and $12$ comes from doubling the time instead of using the constant."
+    },
+    {
+      "id": "ACT-MA-217",
+      "section": "math",
+      "test": 2,
+      "module": 1,
+      "domain": "geometry",
+      "skill": "Distance formula",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "In the standard $(x, y)$ coordinate plane, what is the distance between the points $(-3, 2)$ and $(5, -4)$?",
+      "options": [
+        "$2$",
+        "$2\\sqrt{7}$",
+        "$10$",
+        "$14$"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "The horizontal change is $5 - (-3) = 8$ and the vertical change is $-4 - 2 = -6$. By the distance formula, $d = \\sqrt{8^2 + (-6)^2} = \\sqrt{64 + 36} = \\sqrt{100} = 10$. The choice $14$ adds the two changes instead of using the Pythagorean relationship, $2\\sqrt{7}$ comes from subtracting the squares ($\\sqrt{64 - 36}$), and $2$ is $8 - 6$."
+    },
+    {
+      "id": "ACT-MA-218",
+      "section": "math",
+      "test": 2,
+      "module": 1,
+      "domain": "algebra",
+      "skill": "Compound inequalities on a number line",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which of the following describes all real values of $x$ that satisfy the inequality $-7 \\le 3 - 2x < 9$?",
+      "options": [
+        "$-3 < x \\le 5$",
+        "$-3 \\le x < 5$",
+        "$-5 \\le x < 3$",
+        "$x \\le -3$ or $x > 5$"
+      ],
+      "correct": [
+        0
+      ],
+      "calculator": true,
+      "explanation": "Subtract $3$ from all three parts: $-10 \\le -2x < 6$. Divide all three parts by $-2$, remembering to reverse both inequality signs when dividing by a negative: $5 \\ge x > -3$, which is the same as $-3 < x \\le 5$. On a number line this is an open circle at $-3$, a closed circle at $5$, and shading between them. The choice $-5 \\le x < 3$ divides by $-2$ without reversing the signs, and $-3 \\le x < 5$ reverses the signs but keeps the closed and open endpoints on the wrong ends."
+    },
+    {
+      "id": "ACT-MA-219",
+      "section": "math",
+      "test": 2,
+      "module": 1,
+      "domain": "modeling",
+      "skill": "Mean from a frequency table",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The table below shows the number of pets in each of 20 households in a survey.\n\n| Number of pets | 0 | 1 | 2 | 3 | 4 |\n|---|---|---|---|---|---|\n| Number of households | 6 | 7 | 4 | 2 | 1 |\n\nWhat is the mean (average) number of pets per household?",
+      "options": [
+        "$1$",
+        "$1.25$",
+        "$2$",
+        "$4$"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "Multiply each number of pets by how many households have it, then add: $0(6) + 1(7) + 2(4) + 3(2) + 4(1) = 0 + 7 + 8 + 6 + 4 = 25$ pets in all. Dividing by the $20$ households gives a mean of $\\frac{25}{20} = 1.25$ pets per household. The choice $2$ is the average of the five numbers in the top row ($0$ through $4$) and ignores the frequencies, $4$ is the average of the frequencies, and $1$ is the median."
+    },
+    {
+      "id": "ACT-MA-220",
+      "section": "math",
+      "test": 2,
+      "module": 1,
+      "domain": "geometry",
+      "skill": "Interior angles of polygons",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Each interior angle of a regular polygon measures $150^\\circ$. How many sides does the polygon have?",
+      "options": [
+        "$10$",
+        "$12$",
+        "$15$",
+        "$30$"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "Each exterior angle of the polygon measures $180^\\circ - 150^\\circ = 30^\\circ$, and the exterior angles of any convex polygon add to $360^\\circ$. So the number of sides is $\\frac{360}{30} = 12$. You can check with the interior angle formula: $\\frac{(12 - 2) \\cdot 180}{12} = \\frac{1800}{12} = 150$. The choice $30$ is the exterior angle measure, not the number of sides, and $10$ is the number of sides that would give interior angles of $144^\\circ$."
+    },
+    {
+      "id": "ACT-MA-221",
+      "section": "math",
+      "test": 2,
+      "module": 1,
+      "domain": "algebra",
+      "skill": "Counting with the fundamental principle",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A sandwich shop offers 4 kinds of bread, 6 kinds of filling, and 3 kinds of cheese. A sandwich consists of exactly 1 bread, exactly 1 filling, and either exactly 1 cheese or no cheese at all. How many different sandwiches are possible?",
+      "options": [
+        "$13$",
+        "$72$",
+        "$96$",
+        "$144$"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "There are 4 choices of bread and 6 choices of filling. For cheese there are $3 + 1 = 4$ choices, since choosing no cheese is a fourth option. By the fundamental counting principle, the number of sandwiches is $4 \\times 6 \\times 4 = 96$. The choice $72$ forgets the no-cheese option ($4 \\times 6 \\times 3$), $144$ doubles that count as if each cheese could be either included or not, and $13$ adds the numbers of options instead of multiplying."
+    },
+    {
+      "id": "ACT-MA-222",
+      "section": "math",
+      "test": 2,
+      "module": 1,
+      "domain": "modeling",
+      "skill": "Ratio of similar figures",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Two triangles are similar. The perimeter of the smaller triangle is 18 centimeters and the perimeter of the larger triangle is 30 centimeters. If the area of the smaller triangle is 27 square centimeters, what is the area, in square centimeters, of the larger triangle?",
+      "options": [
+        "$39$",
+        "$45$",
+        "$75$",
+        "$125$"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "Perimeters of similar figures are in the same ratio as corresponding side lengths, so the scale factor from small to large is $\\frac{30}{18} = \\frac{5}{3}$. Areas are in the ratio of the square of the scale factor: $\\left(\\frac{5}{3}\\right)^2 = \\frac{25}{9}$. The larger area is $27 \\times \\frac{25}{9} = 75$ square centimeters. The choice $45$ scales the area by $\\frac{5}{3}$ instead of by $\\frac{25}{9}$, and $39$ adds the perimeter difference of $12$ to the area."
+    },
+    {
+      "id": "ACT-MA-223",
+      "section": "math",
+      "test": 2,
+      "module": 1,
+      "domain": "algebra",
+      "skill": "Evaluating expressions with negative exponents",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "What is the value of $\\left(\\frac{2}{3}\\right)^{-2} + 4^{-1}$?",
+      "options": [
+        "$-\\frac{25}{36}$",
+        "$\\frac{25}{36}$",
+        "$\\frac{5}{2}$",
+        "$\\frac{13}{4}$"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "A negative exponent means the reciprocal raised to the positive power: $\\left(\\frac{2}{3}\\right)^{-2} = \\left(\\frac{3}{2}\\right)^2 = \\frac{9}{4}$ and $4^{-1} = \\frac{1}{4}$. Adding gives $\\frac{9}{4} + \\frac{1}{4} = \\frac{10}{4} = \\frac{5}{2}$. The choice $\\frac{25}{36}$ ignores the negative signs and computes $\\frac{4}{9} + \\frac{1}{4}$, $-\\frac{25}{36}$ treats a negative exponent as making the value negative, and $\\frac{13}{4}$ uses $4^{-1} = 1$."
+    }
+  ]
+}

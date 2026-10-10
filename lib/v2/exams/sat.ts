@@ -29,6 +29,7 @@ The number of degrees of arc in a circle is 360. The number of radians of arc in
 export const SAT: ExamV2Config = {
   id: "sat",
   slug: "/sat",
+  landingPath: "/sat-practice-test",
   name: "SAT Practice Test",
   shortName: "SAT",
   fullName: "digital SAT",

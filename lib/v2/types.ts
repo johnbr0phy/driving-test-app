@@ -105,6 +105,8 @@ export interface DrillDef {
 export interface ExamV2Config {
   id: string;
   slug: string;
+  /** SEO landing page, the only URL of the exam meant to rank. */
+  landingPath: string;
   name: string;
   shortName: string;
   fullName: string;

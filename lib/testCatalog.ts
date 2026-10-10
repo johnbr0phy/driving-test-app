@@ -90,7 +90,21 @@ const examEntry = (exam: ExamConfig): TestCatalogEntry => ({
   theme: exam.id,
 });
 
-export const TEST_CATALOG: TestCatalogEntry[] = [dmv, ...EXAMS.map(examEntry)];
+// v2 exams (sectioned, timed, scaled scores) live outside the v1 registry.
+const sat: TestCatalogEntry = {
+  id: "sat",
+  shortName: "SAT",
+  name: "SAT Practice Test",
+  org: "Digital SAT · Reading and Writing, Math",
+  blurb: "Full-length digital SAT practice: two timed sections with adaptive modules, a calculator, and a 400 to 1600 score estimate, plus skill drills built for your phone.",
+  href: "/sat-practice-test",
+  dashboardHref: "/sat",
+  questions: 98,
+  icon: "graduation",
+  theme: "sat",
+};
+
+export const TEST_CATALOG: TestCatalogEntry[] = [dmv, sat, ...EXAMS.map(examEntry)];
 
 /** Hub groupings, in display order. Anything not listed falls into "Other exams". */
 const GROUPS: { title: string; ids: string[] }[] = [
@@ -100,7 +114,7 @@ const GROUPS: { title: string; ids: string[] }[] = [
   { title: "Workplace & job certifications", ids: ["foodhandler", "osha", "forklift", "alcohol", "security"] },
   { title: "Aviation, radio & trade licenses", ids: ["part107", "ham", "epa608", "foodmgr"] },
   { title: "Real estate, insurance & notary licenses", ids: ["realestate", "insurance", "pnc", "notary"] },
-  { title: "College, military & nursing school entrance", ids: ["teas", "hesi", "accuplacer", "asvab"] },
+  { title: "College, military & nursing school entrance", ids: ["sat", "accuplacer", "asvab", "teas", "hesi"] },
   { title: "IT certifications", ids: ["aplus", "secplus", "aws"] },
   { title: "Emergency services", ids: ["emt", "cpr"] },
   { title: "Healthcare certification exams", ids: ["cna", "ccma", "ptcb", "phleb", "cet", "danb", "htl", "cst", "crcst"] },
@@ -113,6 +127,7 @@ export const TEST_GROUPS: { title: string; tests: TestCatalogEntry[] }[] = [
 /** Extra words people type that do not appear in the name, org or blurb. */
 const SEARCH_ALIASES: Record<string, string> = {
   dmv: "driver license permit learners written knowledge road signs state",
+  sat: "digital sat psat college board college admissions high school act reading writing math bluebook",
   cdl: "truck trucking commercial class a class b",
   cdlx: "hazmat hazardous materials air brakes combination tanker passenger school bus endorsement",
   moto: "motorbike m endorsement",
@@ -189,7 +204,8 @@ export function getCatalogEntryByPath(pathname: string | null | undefined): Test
   if (!pathname) return dmv;
   for (const t of TEST_CATALOG) {
     if (t.id === "dmv") continue;
-    if (pathname === t.href || pathname.startsWith(t.dashboardHref.replace(/\/dashboard$/, "") + "/")) return t;
+    const base = t.dashboardHref.replace(/\/dashboard$/, "");
+    if (pathname === t.href || pathname === base || pathname.startsWith(base + "/")) return t;
   }
   return dmv;
 }
@@ -210,7 +226,8 @@ const RELATED_OVERRIDES: Record<string, string[]> = {
   lifeguard: ["cpr", "foodhandler", "dmv"],
   cpr: ["lifeguard", "cna", "emt"],
   asvab: ["dmv", "cpr"],
-  accuplacer: ["teas", "hesi"],
+  accuplacer: ["sat", "teas", "hesi"],
+  sat: ["accuplacer", "asvab", "dmv"],
 };
 const RELATED_FALLBACK = ["dmv", "cdl", "teas", "cna"];
 

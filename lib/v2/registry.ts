@@ -9,6 +9,12 @@ export function getExamV2(id: string): ExamV2Config {
   return exam;
 }
 
+/** The v2 exam a path belongs to: its app routes or its landing page. */
+export function getExamV2ByPath(pathname: string | null | undefined): ExamV2Config | undefined {
+  if (!pathname) return undefined;
+  return EXAMS_V2.find((e) => pathname === e.slug || pathname === e.landingPath || pathname.startsWith(`${e.slug}/`));
+}
+
 export function getSectionV2(exam: ExamV2Config, key: string) {
   const section = exam.sections.find((s) => s.key === key);
   if (!section) throw new Error(`Unknown section ${key} for ${exam.id}`);

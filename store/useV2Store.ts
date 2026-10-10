@@ -6,14 +6,16 @@ import { EMPTY_DRILL } from "@/lib/v2/training";
 /**
  * v2 store: full-length sectioned tests and domain drills for the v2 exams.
  * Deliberately separate from useStore (DMV + registry exams). Persisted to
- * localStorage under its own key; Firestore sync is a later step and should
- * mirror this object under a `v2` field on the user document.
+ * localStorage under its own key and mirrored to the `v2` field of the
+ * signed-in user's Firestore document by lib/v2/sync.ts.
  */
 interface V2State {
   sessions: Record<string, TestSessionV2>;
   results: TestResultV2[];
   drills: Record<string, DrillState>;
   goals: Record<string, number>;
+  /** Account this local copy was last synced with (null = guest data). */
+  syncedUid: string | null;
 
   putSession: (session: TestSessionV2) => void;
   removeSession: (key: string) => void;
@@ -21,7 +23,12 @@ interface V2State {
   answerDrill: (key: string, questionId: string, correct: boolean) => void;
   resetDrill: (key: string) => void;
   setGoal: (examId: string, goal: number) => void;
+  /** Replace the synced data (sessions, results, drills, goals) wholesale. */
+  replaceData: (data: V2Data, syncedUid: string | null) => void;
 }
+
+export type V2Data = Pick<V2State, "sessions" | "results" | "drills" | "goals">;
+export const EMPTY_V2: V2Data = { sessions: {}, results: [], drills: {}, goals: {} };
 
 export const useV2Store = create<V2State>()(
   persist(
@@ -30,6 +37,7 @@ export const useV2Store = create<V2State>()(
       results: [],
       drills: {},
       goals: {},
+      syncedUid: null,
 
       putSession: (session) => set((s) => ({ sessions: { ...s.sessions, [session.key]: session } })),
       removeSession: (key) =>
@@ -51,6 +59,7 @@ export const useV2Store = create<V2State>()(
         }),
       resetDrill: (key) => set((s) => ({ drills: { ...s.drills, [key]: EMPTY_DRILL } })),
       setGoal: (examId, goal) => set((s) => ({ goals: { ...s.goals, [examId]: goal } })),
+      replaceData: (data, syncedUid) => set({ ...data, syncedUid }),
     }),
     {
       name: "tigertest-v2",

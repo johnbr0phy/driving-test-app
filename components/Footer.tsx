@@ -9,6 +9,7 @@ import { isKoState } from "@/data/koStates";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { getExamByPath } from "@/lib/exams";
 import { relatedTests } from "@/lib/testCatalog";
+import { getExamV2ByPath } from "@/lib/v2/registry";
 
 const popularStateSlugs = [
   "california", "texas", "florida", "new-york", "pennsylvania",
@@ -26,7 +27,9 @@ export function Footer() {
   const isEs = language === "es";
   const isVi = language === "vi";
   const isKo = language === "ko";
-  const exam = getExamByPath(pathname);
+  const v1Exam = getExamByPath(pathname);
+  const v2Exam = getExamV2ByPath(pathname);
+  const exam = v1Exam ?? (v2Exam ? { id: v2Exam.id } : undefined);
   // Non-DMV exams share the compact footer (no state links, no language toggle).
   const isAltExam = !!exam;
   // Site-wide links stay inside the current test's cluster (driving tests on

@@ -476,6 +476,20 @@
     --brand-gradient-to: 15 70% 95%;
   }
 
+  /* SAT theme: blue (v2 exam; matches lib/v2/exams/sat.ts theme) */
+  [data-theme="sat"] {
+    --brand: 221 83% 45%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 221 100% 96%;
+    --brand-hover: 221 83% 38%;
+    --brand-dark: 221 83% 32%;
+    --brand-darker: 221 70% 22%;
+    --brand-muted: 221 60% 75%;
+    --brand-border: 221 60% 80%;
+    --brand-border-light: 221 60% 90%;
+    --brand-gradient-to: 200 90% 95%;
+  }
+
   /* ACCUPLACER theme: teal */
   [data-theme="accuplacer"] {
     --brand: 175 55% 32%;

@@ -25,6 +25,10 @@
       "schedule": "0 11 * * *"
     },
     {
+      "path": "/api/cron/new-tests",
+      "schedule": "0 13 * * *"
+    },
+    {
       "path": "/api/cron/second-test-nudge",
       "schedule": "0 14 * * *"
     },

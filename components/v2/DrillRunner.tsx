@@ -4,18 +4,22 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import { X, RotateCcw } from "lucide-react";
+import { X, RotateCcw, Lock } from "lucide-react";
 import { ExamV2Config, AnswerValue, QuestionV2 } from "@/lib/v2/types";
 import { getBank, getStimulus } from "@/lib/v2/bank";
 import { v2Routes } from "@/lib/v2/registry";
-import { drillKey, drillQuestions, heldOutTests, nextDrillQuestion, EMPTY_DRILL } from "@/lib/v2/training";
+import { drillKey, drillQuestions, drillStateFor, heldOutTests, nextDrillQuestion, EMPTY_DRILL } from "@/lib/v2/training";
 import { optionOrderFor } from "@/lib/v2/session";
 import { isAnswered, isCorrect } from "@/lib/v2/grading";
 import { useV2Store } from "@/store/useV2Store";
 import { useHydration } from "@/hooks/useHydration";
 import { useSound } from "@/hooks/useSound";
 import { getTigerAsset } from "@/lib/tigerAssets";
+import { useIsPremium } from "@/hooks/useIsPremium";
+import { useIsNativeApp } from "@/hooks/useIsNativeApp";
+import { isDrillLocked, otherPremiumExams } from "@/lib/v2/premium";
 import { QuestionView } from "./QuestionView";
+import { useV2Paywall, V2Paywall } from "./V2Paywall";
 
 /**
  * Phone-first mastery drill: one question, one tap, instant feedback, big
@@ -28,11 +32,20 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
   const { playCorrectSound, playIncorrectSound } = useSound();
   const drill = exam.drills.find((d) => d.key === drillKeyParam);
   const key = drill ? drillKey(exam.id, drill.key) : "";
-  const state = useV2Store((s) => (key ? s.drills[key] : undefined)) ?? EMPTY_DRILL;
+  const drillsMap = useV2Store((s) => s.drills);
   const answerDrill = useV2Store((s) => s.answerDrill);
   const resetDrill = useV2Store((s) => s.resetDrill);
 
-  const questions = useMemo(() => (drill ? drillQuestions(getBank(exam.id).questions, drill, heldOutTests(exam)) : []), [exam, drill]);
+  const allQuestions = useMemo(() => (drill ? drillQuestions(getBank(exam.id).questions, drill, heldOutTests(exam)) : []), [exam, drill]);
+  const questions = allQuestions;
+  // A Premium drill stays open for anyone already working in it (their own
+  // saved progress, not progress carried over from a retired drill).
+  const { isPremium, ready: premiumReady } = useIsPremium();
+  const locked = !!drill && premiumReady && isDrillLocked(exam, drill.key, isPremium) && !drillsMap[key];
+  // Own progress, or what carried over from the drill this one was split from.
+  const state = drill ? drillStateFor(drillsMap, exam.id, drill, allQuestions) : EMPTY_DRILL;
+  const paywall = useV2Paywall(exam, "drill");
+  const isNative = useIsNativeApp();
 
   const [question, setQuestion] = useState<QuestionV2 | null>(null);
   const [order, setOrder] = useState<number[]>([]);
@@ -48,7 +61,7 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
   }, [hydrated, drill, router, routes.dashboard]);
 
   const load = useCallback(() => {
-    const fresh = useV2Store.getState().drills[key] ?? EMPTY_DRILL;
+    const fresh = drill ? drillStateFor(useV2Store.getState().drills, exam.id, drill, allQuestions) : EMPTY_DRILL;
     const next = nextDrillQuestion(questions, fresh, currentId.current);
     if (!next) {
       setDone(true);
@@ -62,11 +75,11 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
     setRevealed(false);
     setDone(false);
     scroller.current?.scrollTo({ top: 0 });
-  }, [key, questions]);
+  }, [drill, exam.id, allQuestions, questions]);
 
   useEffect(() => {
-    if (hydrated && drill && !question && !done) load();
-  }, [hydrated, drill, question, done, load]);
+    if (hydrated && drill && premiumReady && !locked && !question && !done) load();
+  }, [hydrated, drill, premiumReady, locked, question, done, load]);
 
   const check = (value?: AnswerValue) => {
     if (!question || revealed) return;
@@ -75,7 +88,7 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
     setAnswer(final);
     const ok = isCorrect(question, final);
     setRevealed(true);
-    answerDrill(key, question.id, ok);
+    answerDrill(key, question.id, ok, drill ? drillStateFor(useV2Store.getState().drills, exam.id, drill, allQuestions) : undefined);
     if (ok) playCorrectSound();
     else {
       playIncorrectSound();
@@ -92,6 +105,38 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
 
   if (!hydrated || !drill) {
     return <div className="v2-focus items-center justify-center text-gray-600">Loading...</div>;
+  }
+
+  if (locked) {
+    return (
+      <div className="v2-focus">
+        <div className="v2-safe-top shrink-0 bg-white px-3 pb-2">
+          <Link href={routes.dashboard} className="v2-tap -ml-1 flex w-10 items-center justify-center rounded-full text-gray-500" aria-label="Back to dashboard">
+            <X className="h-5 w-5" />
+          </Link>
+        </div>
+        <div className="v2-scroll">
+          <div className="mx-auto max-w-md px-6 py-8 text-center">
+            <Image src={getTigerAsset(exam.id, 3)} alt="" width={112} height={112} className="mx-auto h-28 w-28 object-contain" />
+            <h1 className="mt-3 flex items-center justify-center gap-2 text-xl font-bold text-gray-900">
+              <Lock className="h-5 w-5 text-gray-400" /> {drill.name}
+            </h1>
+            <p className="mt-2 text-sm text-gray-600">
+              {drill.blurb} {allQuestions.length} questions, part of TigerTest Premium along with Practice Test 2 and {otherPremiumExams(exam)}.
+            </p>
+            <button
+              type="button"
+              onClick={() => paywall.open(`drill_${drill.key}`, `${drill.name} drill`)}
+              className="v2-tap mt-6 w-full rounded-xl bg-brand text-base font-bold text-white"
+            >
+              Unlock with Premium{isNative ? "" : " · $9.99"}
+            </button>
+            <Link href={routes.dashboard} className="mt-3 block text-sm font-semibold text-gray-500">Back to the dashboard</Link>
+          </div>
+        </div>
+        <V2Paywall exam={exam} {...paywall.modalProps} />
+      </div>
+    );
   }
 
   const mastered = state.masteredIds.filter((id) => questions.some((q) => q.id === id)).length;
@@ -159,6 +204,8 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
           </div>
         </div>
       )}
+
+      <V2Paywall exam={exam} {...paywall.modalProps} />
 
       {confirmReset && (
         <div className="fixed inset-0 z-[90] flex items-center justify-center bg-black/50 p-4" role="alertdialog" aria-modal="true">

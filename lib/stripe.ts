@@ -19,6 +19,6 @@ export const PREMIUM_PRICE_ID = process.env.STRIPE_SINGLE_PRICE_ID;
 // Premium product metadata (used as fallback if no STRIPE_PRICE_ID configured)
 export const PREMIUM_PRODUCT = {
   name: 'TigerTest Premium',
-  description: 'Unlock Training Set 4 (State Laws) and Practice Test 4',
+  description: 'One-time unlock for every TigerTest exam: DMV Training Sets 3-4 and Practice Tests 3-4, plus SAT and ACT Practice Test 2 and every drill question',
   price: 999, // $9.99 in cents
 };

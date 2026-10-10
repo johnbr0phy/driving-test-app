@@ -115,6 +115,10 @@ const v2Entry = (exam: ExamV2Config): TestCatalogEntry => ({
   questions: BANK_SIZES[exam.id] ?? 0,
   icon: exam.icon as TestCatalogEntry["icon"],
   theme: exam.id,
+  // Exams with a Premium tier say so on their hub card; the rest read "Free".
+  ...(exam.premium
+    ? { pricing: `${exam.tests.length - exam.premium.lockedTests.length} free, ${exam.premium.lockedTests.length} premium` }
+    : {}),
 });
 
 export const TEST_CATALOG: TestCatalogEntry[] = [dmv, ...EXAMS_V2.map(v2Entry), ...EXAMS.map(examEntry)];

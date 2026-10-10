@@ -39,3 +39,24 @@ export function nextDrillQuestion(questions: QuestionV2[], state: DrillState, cu
 export function drillKey(examId: string, drill: string) {
   return `${examId}:${drill}`;
 }
+
+/**
+ * A drill's saved state, falling back to its legacyKey drill's progress
+ * (only the questions that belong to this drill) when it has none yet.
+ */
+export function drillStateFor(
+  drills: Record<string, DrillState>,
+  examId: string,
+  drill: DrillDef,
+  questions: QuestionV2[]
+): DrillState {
+  const own = drills[drillKey(examId, drill.key)];
+  if (own || !drill.legacyKey) return own ?? EMPTY_DRILL;
+  const legacy = drills[drillKey(examId, drill.legacyKey)];
+  if (!legacy) return EMPTY_DRILL;
+  const ids = new Set(questions.map((q) => q.id));
+  const masteredIds = legacy.masteredIds.filter((id) => ids.has(id));
+  const wrongQueue = legacy.wrongQueue.filter((id) => ids.has(id));
+  if (masteredIds.length === 0 && wrongQueue.length === 0) return EMPTY_DRILL;
+  return { masteredIds, wrongQueue, seen: masteredIds.length + wrongQueue.length, correct: masteredIds.length };
+}

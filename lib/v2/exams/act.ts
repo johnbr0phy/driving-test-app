@@ -65,6 +65,15 @@ export const ACT: ExamV2Config = {
     { number: 1, name: "Practice Test 1" },
     { number: 2, name: "Practice Test 2", heldOut: true },
   ],
+  premium: {
+    lockedTests: [2],
+    lockedDrills: ["language", "modeling", "craftIntegration", "evaluation"],
+    benefits: [
+      "Practice Test 2: unseen, a true readiness check",
+      "Knowledge of Language, Essential Skills and Modeling, Craft and Integration, and Evaluation of Models drills",
+      "The SAT and DMV tests too, with the same purchase",
+    ],
+  },
   domainLabels: {
     conventions: "Conventions of Standard English",
     production: "Production of Writing",
@@ -79,11 +88,22 @@ export const ACT: ExamV2Config = {
     investigation: "Scientific Investigation",
     evaluation: "Evaluation of Models and Results",
   },
+  // One drill per ACT reporting category, the same names a student sees on
+  // their score report. Reading's Integration category (10 drill items) rides
+  // with Craft and Structure so no drill is a handful of questions.
+  // legacyKey carries progress over from the four section drills these replaced.
   drills: [
-    { key: "english", name: "English", section: "english", domains: ["conventions", "production", "language"], blurb: "Punctuation, grammar, sentence structure, organization and word choice, passage by passage." },
-    { key: "math", name: "Mathematics", section: "math", domains: ["algebra", "geometry", "modeling"], blurb: "Algebra, functions, geometry, trig, statistics and modeling, with every step shown." },
-    { key: "reading", name: "Reading", section: "reading", domains: ["keyIdeas", "craft", "integration"], blurb: "Long passages beside the question: main idea, detail, inference, vocabulary and author's craft." },
-    { key: "science", name: "Science", section: "science", domains: ["interpretation", "investigation", "evaluation"], blurb: "Tables, experiments and conflicting viewpoints. Read the data, spot the trend." },
+    { key: "conventions", legacyKey: "english", name: "Conventions of Standard English", section: "english", domains: ["conventions"], blurb: "Punctuation, agreement, pronouns, modifiers and sentence boundaries, passage by passage." },
+    { key: "production", legacyKey: "english", name: "Production of Writing", section: "english", domains: ["production"], blurb: "Transitions, adding or deleting a sentence, placement, topic sentences and conclusions." },
+    { key: "language", legacyKey: "english", name: "Knowledge of Language", section: "english", domains: ["language"], blurb: "Concision, redundancy, precise word choice and a consistent tone." },
+    { key: "algebra", legacyKey: "math", name: "Preparing for Higher Math", section: "math", domains: ["algebra"], blurb: "Equations, exponents, quadratics, functions and sequences, with every step shown." },
+    { key: "geometry", legacyKey: "math", name: "Geometry and Statistics", section: "math", domains: ["geometry"], blurb: "Angles, triangles, circles, area, probability, mean and median." },
+    { key: "modeling", legacyKey: "math", name: "Essential Skills and Modeling", section: "math", domains: ["modeling"], blurb: "Rates, unit conversions, ratios, percents and real-world graphs." },
+    { key: "keyIdeas", legacyKey: "reading", name: "Key Ideas and Details", section: "reading", domains: ["keyIdeas"], blurb: "Main idea, explicit detail, inference, cause and effect, and how characters change." },
+    { key: "craftIntegration", legacyKey: "reading", name: "Craft, Structure and Integration", section: "reading", domains: ["craft", "integration"], blurb: "Words in context, author's purpose, how claims are supported, and paired passages." },
+    { key: "interpretation", legacyKey: "science", name: "Interpretation of Data", section: "science", domains: ["interpretation"], blurb: "Read tables and graphs, spot trends, interpolate and extrapolate." },
+    { key: "investigation", legacyKey: "science", name: "Scientific Investigation", section: "science", domains: ["investigation"], blurb: "Variables, controls, procedures and how to design the next experiment." },
+    { key: "evaluation", legacyKey: "science", name: "Evaluation of Models", section: "science", domains: ["evaluation"], blurb: "Test claims and hypotheses against data and weigh conflicting viewpoints." },
   ],
   composite: {
     name: "Composite score",
@@ -107,7 +127,7 @@ export const ACT: ExamV2Config = {
   testLength: "2 hr 45 min",
   copy: {
     heroSubs: [
-      "Four section drills on your phone, then two full timed ACTs on a desktop. Test 2 stays unseen until you sit it.",
+      "Eleven skill drills on your phone, then two full timed ACTs on a desktop. Test 2 stays unseen until you sit it.",
       "Mastery first. English and Reading are passage work; practice the pace.",
       "Halfway through the sections. The full test will show your composite.",
       "Hit your composite goal on a full test to finish the plan.",

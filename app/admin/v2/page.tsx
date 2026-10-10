@@ -56,6 +56,11 @@ interface Metrics {
   activeMonthly: { date: string; count: number }[];
   // Optional: older cached payloads predate the per-exam split.
   questionsByExam?: { id: string; label: string; total: number; last7d: number; prev7d: number; today: number }[];
+  testRequests?: {
+    total: number;
+    byPick: { id: string; label: string; clicks: number; withDetails: number }[];
+    details: { pick: string; details: string; examId: string | null; source: string; at: string }[];
+  };
   questionsByExamBackfillPending?: boolean;
   // Optional on purpose: a response predating this field (a stale cached
   // payload, or a tab whose JS is newer than the API it's talking to) must
@@ -398,6 +403,72 @@ function QuestionsByExam({ rows, totalQuestions, backfillPending }: {
         only count in the all-time total above.
         {backfillPending ? " History seed is running; refresh in a minute." : ""}
       </p>
+    </div>
+  );
+}
+
+function TestRequests({ data }: { data: NonNullable<Metrics["testRequests"]> }) {
+  const max = data.byPick.reduce((m, r) => Math.max(m, r.clicks), 0);
+  const pickLabel = (id: string) => data.byPick.find((p) => p.id === id)?.label ?? id;
+  return (
+    <div className="bg-white rounded-xl border border-gray-200/80 shadow-sm p-5">
+      <div className="mb-4 flex items-baseline justify-between gap-2">
+        <h2 className="text-sm font-semibold text-gray-900">What should we build next?</h2>
+        <p className="text-xs text-gray-400">{fmtInt(data.total)} answers</p>
+      </div>
+      {data.total === 0 ? (
+        <p className="text-sm text-gray-400">No answers yet. They arrive from the new-tests email and the unsubscribe page.</p>
+      ) : (
+        <div className="grid gap-6 lg:grid-cols-2">
+          <table className="w-full text-sm self-start">
+            <thead>
+              <tr className="text-[11px] uppercase tracking-wide text-gray-400">
+                <th className="text-left font-medium pb-2">Category</th>
+                <th className="text-right font-medium pb-2 pl-4">Clicks</th>
+                <th className="text-right font-medium pb-2 pl-4">Named a test</th>
+                <th className="pb-2 pl-4 w-1/3"></th>
+              </tr>
+            </thead>
+            <tbody>
+              {data.byPick.map((r) => (
+                <tr key={r.id} className="border-t border-gray-100">
+                  <td className="py-2 font-medium text-gray-900">{r.label}</td>
+                  <td className="py-2 pl-4 text-right tabular-nums text-gray-900">{fmtInt(r.clicks)}</td>
+                  <td className="py-2 pl-4 text-right tabular-nums text-gray-600">{fmtInt(r.withDetails)}</td>
+                  <td className="py-2 pl-4">
+                    <div className="h-1.5 w-full max-w-[160px] bg-gray-100 rounded overflow-hidden ml-auto">
+                      <div
+                        className="h-full rounded"
+                        style={{ width: `${max > 0 ? (r.clicks / max) * 100 : 0}%`, background: COLORS.engagement }}
+                      />
+                    </div>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+          <div>
+            <p className="text-[11px] uppercase tracking-wide text-gray-400 mb-2">Named tests, newest first</p>
+            {data.details.length === 0 ? (
+              <p className="text-sm text-gray-400">Nobody has named a specific test yet.</p>
+            ) : (
+              <ul className="space-y-2 max-h-72 overflow-y-auto pr-1">
+                {data.details.map((d, i) => (
+                  <li key={i} className="text-sm border-t border-gray-100 pt-2 first:border-0 first:pt-0">
+                    <p className="text-gray-900">{d.details}</p>
+                    <p className="text-[11px] text-gray-400">
+                      {pickLabel(d.pick)}
+                      {d.examId ? ` · was studying ${d.examId}` : ""}
+                      {` · via ${d.source}`}
+                      {d.at ? ` · ${d.at.slice(0, 10)}` : ""}
+                    </p>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+        </div>
+      )}
     </div>
   );
 }
@@ -791,6 +862,9 @@ export default function AdminV2Page() {
           totalQuestions={kpis.totalQuestions}
           backfillPending={metrics.questionsByExamBackfillPending === true}
         />
+
+        {/* Test requests */}
+        {metrics.testRequests && <TestRequests data={metrics.testRequests} />}
 
         {/* Funnel */}
         <div className="bg-white rounded-xl border border-gray-200/80 shadow-sm p-5">

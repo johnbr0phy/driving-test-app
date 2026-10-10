@@ -21,7 +21,13 @@ export async function POST(request: NextRequest) {
     const decodedToken = await getAdminAuth().verifyIdToken(token);
 
     const body = await request.json();
-    const { email, returnUrl, location } = body;
+    const { email, returnUrl, returnPath: rawReturnPath, location } = body;
+    // Where the buyer lands afterwards (and where the purchase is verified).
+    // Same-site paths only: "/sat", never "//evil.com" or a full URL.
+    const returnPath =
+      typeof rawReturnPath === 'string' && /^\/[A-Za-z0-9/_-]*$/.test(rawReturnPath) && !rawReturnPath.startsWith('//')
+        ? rawReturnPath
+        : '/dashboard';
     const userId = decodedToken.uid;
 
     // Validate required fields
@@ -89,8 +95,8 @@ export async function POST(request: NextRequest) {
               quantity: 1,
             },
       ],
-      success_url: `${baseUrl}/dashboard?session_id={CHECKOUT_SESSION_ID}&success=true`,
-      cancel_url: `${baseUrl}/dashboard?canceled=true`,
+      success_url: `${baseUrl}${returnPath}?session_id={CHECKOUT_SESSION_ID}&success=true`,
+      cancel_url: `${baseUrl}${returnPath}?canceled=true`,
       metadata: {
         userId,
         email,

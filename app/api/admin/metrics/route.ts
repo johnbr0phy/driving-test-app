@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getAdminDb, getAdminAuth } from '@/lib/firebase-admin';
 import { isAdminEmail } from '@/lib/admin';
 import { examAnalyticsLabel } from '@/lib/exams';
+import { TEST_REQUEST_PICKS } from '@/lib/test-requests';
 
 // Growth/revenue metrics for /admin/v2. Everything here is derived from two
 // sources of truth: the users collection (signups, activity, subscription) and
@@ -73,13 +74,48 @@ export async function GET(request: NextRequest) {
     }
 
     const db = getAdminDb();
-    const [usersSnap, paymentsSnap, questionsDoc] = await Promise.all([
+    const [usersSnap, paymentsSnap, questionsDoc, testRequestsSnap] = await Promise.all([
       db.collection('users')
         .select('selectedState', 'lastUpdated', 'activeDates', 'subscription', 'createdAt', 'paywallHits', '_stats')
         .get(),
       db.collection('payments').get(),
       db.doc('analytics/questions').get(),
+      db.collection('testRequests').get(),
     ]);
+
+    // ── "What test should we build next?" answers ───────────────────────────
+    // One doc per user per category (lib/test-requests). Counts per category
+    // plus every free-text answer, newest first: the text is what names the
+    // exam to build.
+    const requestCounts = new Map<string, { clicks: number; withDetails: number }>();
+    const requestDetails: { pick: string; details: string; examId: string | null; source: string; at: string }[] = [];
+    testRequestsSnap.forEach((doc) => {
+      const d = doc.data();
+      const pick = typeof d.pick === 'string' ? d.pick : 'other';
+      const entry = requestCounts.get(pick) ?? { clicks: 0, withDetails: 0 };
+      entry.clicks += 1;
+      if (typeof d.details === 'string' && d.details.trim()) {
+        entry.withDetails += 1;
+        requestDetails.push({
+          pick,
+          details: d.details.trim(),
+          examId: typeof d.examId === 'string' ? d.examId : null,
+          source: typeof d.source === 'string' ? d.source : 'page',
+          at: typeof d.updatedAt === 'string' ? d.updatedAt : (typeof d.createdAt === 'string' ? d.createdAt : ''),
+        });
+      }
+      requestCounts.set(pick, entry);
+    });
+    const testRequests = {
+      total: testRequestsSnap.size,
+      byPick: TEST_REQUEST_PICKS.map((p) => ({
+        id: p.id,
+        label: p.label,
+        clicks: requestCounts.get(p.id)?.clicks ?? 0,
+        withDetails: requestCounts.get(p.id)?.withDetails ?? 0,
+      })).sort((a, b) => b.clicks - a.clicks),
+      details: requestDetails.sort((a, b) => b.at.localeCompare(a.at)).slice(0, 50),
+    };
 
     // ── Per-day maps (YYYY-MM-DD → number) ──────────────────────────────────
     const signupsByDay: Record<string, number> = {};
@@ -309,6 +345,7 @@ export async function GET(request: NextRequest) {
       activeMonthly,
       questionsByExam,
       questionsByExamBackfillPending,
+      testRequests,
       // The "today" range. Signups and revenue are bucketed by the hour in
       // Eastern time off real timestamps. Questions and active users have no
       // clock time anywhere in their write path, so they can only be day

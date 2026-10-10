@@ -11,12 +11,15 @@ import {
   trackViewItem,
 } from "@/lib/analytics";
 
-type PaywallFeature = "training_set_4" | "practice_test_4" | "full_stats";
+export type PaywallFeature = string;
 
 // Same open-paywall / Stripe-checkout flow used on the dashboard and stats
 // page, factored out so both results prototypes can trigger it in place
 // instead of redirecting to /dashboard.
-export function useUpgradeFlow(location: string) {
+//
+// returnPath is where Stripe sends the buyer back, and where the purchase is
+// verified (/dashboard for the DMV, the exam dashboard for SAT and ACT).
+export function useUpgradeFlow(location: string, returnPath = "/dashboard") {
   const router = useRouter();
   const { user } = useAuth();
   const [paywallOpen, setPaywallOpen] = useState(false);
@@ -36,7 +39,7 @@ export function useUpgradeFlow(location: string) {
 
   const handleUpgrade = async () => {
     if (!user?.email || !user?.uid) {
-      router.push("/signup");
+      router.push(returnPath === "/dashboard" ? "/signup" : `/signup?redirect=${encodeURIComponent(returnPath)}`);
       return;
     }
     try {
@@ -48,7 +51,7 @@ export function useUpgradeFlow(location: string) {
       const response = await fetch("/api/stripe/checkout", {
         method: "POST",
         headers: { "Content-Type": "application/json", Authorization: `Bearer ${idToken}` },
-        body: JSON.stringify({ email: user.email, returnUrl: window.location.origin, location }),
+        body: JSON.stringify({ email: user.email, returnUrl: window.location.origin, returnPath, location }),
       });
       const data = await response.json();
       if (data.error) {

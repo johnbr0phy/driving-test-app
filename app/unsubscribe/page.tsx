@@ -10,13 +10,21 @@ type Status = "loading" | "did-you-pass" | "celebration" | "standard-exit" | "er
 function UnsubscribeContent() {
   const searchParams = useSearchParams();
   const token = searchParams.get("token");
+  // /api/unsubscribe GET (the List-Unsubscribe URL) already did the work and
+  // redirected here with done=1 and the exam name, so don't do it twice.
+  const alreadyDone = searchParams.get("done") === "1";
   const [status, setStatus] = useState<Status>("loading");
   const [errorMessage, setErrorMessage] = useState("");
+  const [testName, setTestName] = useState(searchParams.get("test") || "DMV test");
 
   useEffect(() => {
     if (!token) {
       setErrorMessage("Invalid unsubscribe link. Please use the link from your email.");
       setStatus("error");
+      return;
+    }
+    if (alreadyDone) {
+      setStatus("did-you-pass");
       return;
     }
 
@@ -29,6 +37,7 @@ function UnsubscribeContent() {
         });
         const data = await response.json();
         if (data.success) {
+          if (data.testName) setTestName(data.testName);
           setStatus("did-you-pass");
         } else {
           setErrorMessage(data.error || "Failed to unsubscribe. Please try again.");
@@ -41,7 +50,7 @@ function UnsubscribeContent() {
     }
 
     unsubscribe();
-  }, [token]);
+  }, [token, alreadyDone]);
 
   async function handlePassed() {
     try {
@@ -56,7 +65,11 @@ function UnsubscribeContent() {
     setStatus("celebration");
   }
 
-  const tweetText = encodeURIComponent("Just passed my driving test! 🎉 Studied with TigerTest — free practice tests that actually work. tigertest.io");
+  const isDmv = testName === "DMV test";
+  const tweetText = encodeURIComponent(
+    `Just passed my ${isDmv ? "driving test" : testName}! 🎉 Studied with TigerTest — free practice tests that actually work. tigertest.io`
+  );
+  const requestHref = `/request-test?t=${encodeURIComponent(token ?? "")}&src=unsubscribe`;
 
   return (
     <div className="flex-1 bg-white flex items-center justify-center px-6">
@@ -76,7 +89,7 @@ function UnsubscribeContent() {
             <div className="text-5xl mb-6">🎓</div>
             <h1 className="text-2xl font-semibold mb-3">Before you go...</h1>
             <p className="text-gray-600 mb-8">
-              Did you pass your driving test?
+              Did you pass your {testName}?
             </p>
             <button
               onClick={handlePassed}
@@ -99,7 +112,7 @@ function UnsubscribeContent() {
             <div className="text-6xl mb-6">🎉</div>
             <h1 className="text-2xl font-semibold mb-3">Congratulations!</h1>
             <p className="text-gray-600 mb-2">That&apos;s what TigerTest is all about.</p>
-            <p className="text-gray-500 mb-8">Go enjoy the open road. 🚗</p>
+            <p className="text-gray-500 mb-8">{isDmv ? "Go enjoy the open road. 🚗" : "Go celebrate. You earned it."}</p>
             <a
               href={`https://twitter.com/intent/tweet?text=${tweetText}`}
               target="_blank"
@@ -112,8 +125,8 @@ function UnsubscribeContent() {
               Share the win
             </a>
             <div className="mt-4">
-              <Link href="/" className="text-sm text-gray-400 hover:text-gray-600 underline underline-offset-2">
-                Back to TigerTest
+              <Link href={requestHref} className="text-sm text-gray-500 hover:text-gray-700 underline underline-offset-2">
+                Studying for something else next? Tell us what to build
               </Link>
             </div>
           </>
@@ -136,6 +149,11 @@ function UnsubscribeContent() {
                 Back to TigerTest
               </Button>
             </Link>
+            <div className="mt-6">
+              <Link href={requestHref} className="text-sm text-gray-500 hover:text-gray-700 underline underline-offset-2">
+                One last thing: what test should we build next?
+              </Link>
+            </div>
           </>
         )}
 

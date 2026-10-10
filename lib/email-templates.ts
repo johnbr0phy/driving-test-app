@@ -14,6 +14,7 @@
 // Pass voiceFor("dmv") for the original DMV copy.
 
 import { EmailVoice, dashboardUrl, statsUrl } from "@/lib/email-voice";
+import { TEST_REQUEST_PICKS } from "@/lib/test-requests";
 
 interface ShellOptions {
   /** <title>, used by some clients as the preview label. */
@@ -112,6 +113,32 @@ ${body}
 </html>`;
 }
 
+const SITE = "https://tigertest.io";
+const utm = (campaign: string) =>
+  `utm_source=tigertest&utm_medium=email&utm_campaign=${campaign}`;
+
+/**
+ * The "what should we build next?" answer grid: two pill links per row, each
+ * one click to /api/feedback/test-request, which records the pick and asks
+ * for the exact exam. {{unsubscribeToken}} doubles as the user token.
+ */
+export function testRequestButtons(campaign: string): string {
+  const cell = (id: string, label: string) =>
+    `                  <td style="width: 50%; padding: 4px;">
+                    <a href="${SITE}/api/feedback/test-request?pick=${id}&t={{unsubscribeToken}}&src=email&${utm(campaign)}" style="display: block; padding: 12px 10px; border: 1px solid #e5e5e5; border-radius: 10px; color: #1a1a1a; text-decoration: none; font-size: 14px; font-weight: 500; text-align: center;">${label}</a>
+                  </td>`;
+  const rows: string[] = [];
+  for (let i = 0; i < TEST_REQUEST_PICKS.length; i += 2) {
+    const [a, b] = [TEST_REQUEST_PICKS[i], TEST_REQUEST_PICKS[i + 1]];
+    rows.push(
+      `                <tr>\n${cell(a.id, a.label)}\n${b ? cell(b.id, b.label) : '                  <td style="width: 50%; padding: 4px;"></td>'}\n                </tr>`,
+    );
+  }
+  return `              <table role="presentation" style="width: 100%; border-collapse: collapse; margin: 0 0 24px;">
+${rows.join("\n")}
+              </table>`;
+}
+
 /** Tracked dashboard link for this voice. */
 const DASH = (v: EmailVoice, campaign: string) => dashboardUrl(v, campaign);
 const STATS = (v: EmailVoice, campaign: string) => statsUrl(v, campaign);
@@ -205,6 +232,7 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
           "Safety &amp; Emergencies and State Laws, 100 questions",
           "Practice tests C and D",
           "Every question you miss, on repeat",
+          "SAT and ACT Premium too, for whatever test is next",
         ]),
         cta(DASH(v, "paywall_abandon"), "Pick Up Where You Left Off"),
         p("One payment, no subscription. A retest costs more."),
@@ -228,6 +256,7 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
           "Safety &amp; Emergencies and State Laws, 100 more questions",
           "Practice tests C and D",
           "Your stats page, showing what you always get wrong",
+          "SAT and ACT Premium too: Practice Test 2 and every drill",
         ]),
         cta(DASH(v, "upgrade_pitch"), "Upgrade to Premium - $9.99"),
         signoff(),
@@ -249,6 +278,7 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
           "<strong>Safety &amp; Emergencies</strong> and <strong>State Laws</strong>, 100 questions",
           "<strong>Practice tests C and D</strong>",
           "<strong>Your stats page</strong>, showing what you keep missing",
+          "<strong>SAT and ACT Premium</strong>: Practice Test 2 and every drill question, whenever you need them",
         ]),
         p(
           "Open your stats after the next test. It tells you where to spend your study time.",
@@ -322,4 +352,64 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
         signoff("Thanks for using TigerTest,"),
       ].join("\n"),
     }),
+
+  // One-off, whole consented base: SAT and ACT launch, then "what should we
+  // build next?". DMV readers are mostly 15 to 17, the exact SAT and ACT
+  // cohort, so they get the full launch. Everyone else gets one line about it
+  // and leads with the question.
+  newTests: (v) => {
+    const campaign = "sat_act_launch";
+    const sat = `${SITE}/sat-practice-test?${utm(campaign)}`;
+    const act = `${SITE}/act-practice-test?${utm(campaign)}`;
+    const link = (href: string, label: string) =>
+      `<a href="${href}" style="color: #1a1a1a; font-weight: 600; text-decoration: underline;">${label}</a>`;
+    const question = [
+      p(
+        `<strong style="font-weight: 600;">Now a question.</strong> What test are you studying for next, or what do you wish existed? I'm one person building TigerTest and I build what people ask for. One click:`,
+      ),
+      testRequestButtons(campaign),
+      p("Or just hit reply. I read every one."),
+    ];
+
+    if (v.id === "dmv") {
+      return emailShell({
+        title: "SAT and ACT, the TigerTest way",
+        heading: "SAT and ACT, the TigerTest way",
+        body: [
+          p(
+            "You used TigerTest for your permit test. For a lot of you, the next big test is the SAT or ACT, so we built both the same way: a full practice test first, then short drills on exactly what you missed.",
+          ),
+          ul([
+            "The digital SAT, timed and adaptive like the real one",
+            "The new 2025 ACT, all four sections",
+            "Short skill drills that work on your phone",
+          ]),
+          p(`<strong style="font-weight: 600;">Practice Test 1 is free.</strong> No credit card.`),
+          cta(sat, "Take a free SAT practice test"),
+          p(`Taking the ACT instead? ${link(act, "Try the free ACT practice test")}.`),
+          p(
+            "Premium is still $9.99, one time, and now covers the SAT and ACT too. Already bought it for your permit test? You're already unlocked.",
+          ),
+          p("Parent who signed up for your teen? Forward this along."),
+          ...question,
+          signoff("Thanks,"),
+        ].join("\n"),
+      });
+    }
+
+    const studyingSatOrAct = v.id === "sat" || v.id === "act";
+    return emailShell({
+      title: "What should we build next?",
+      heading: "What should we build next?",
+      body: [
+        p(
+          studyingSatOrAct
+            ? `Quick note while you prep for the ${v.shortName}: TigerTest now has both the ${link(sat, "digital SAT")} and the ${link(act, "new 2025 ACT")}, each with a free full-length practice test. Plenty of students take both.`
+            : `Quick news: TigerTest now has full-length practice tests for the ${link(sat, "SAT")} and the ${link(act, "ACT")}, built the same way as the ${v.testName}. Got a high schooler at home? Practice Test 1 is free.`,
+        ),
+        ...question,
+        signoff("Thanks,"),
+      ].join("\n"),
+    });
+  },
 };

@@ -18,6 +18,13 @@ import {
   CAMPAIGN_BUDGET,
   CAMPAIGN_CRON_COUNT,
 } from "@/lib/email-quota";
+import { isUnsubscribed, listUnsubscribeHeaders, unsubscribeToken } from "@/lib/unsubscribe";
+
+/**
+ * Every campaign email is from John, and replies should reach him. The
+ * sender stays noreply@ (the verified domain); this is the Reply-To.
+ */
+export const CAMPAIGN_REPLY_TO = process.env.EMAIL_REPLY_TO ?? "john@johnbrophy.net";
 
 /**
  * Per-run cap. Defaults to this cron's fair share of the daily campaign budget
@@ -271,8 +278,16 @@ export function emailedRecently(
 
 // ── Email sender ──────────────────────────────────────────────────────────────
 
+export type CronSendOutcome = "sent" | "unsubscribed";
+
 /**
  * Send one campaign email and record it.
+ *
+ * Re-reads the opt-out flag right before sending. getEligibleUsers() already
+ * filters unsubscribed users, but this is the last line of defence: it covers
+ * someone who unsubscribes between the query and their turn in the batch, and
+ * any caller that builds its own audience (the Stripe webhook does). Nobody
+ * who has unsubscribed gets campaign mail, full stop.
  *
  * The emailKey is a permanent "already sent this campaign" marker, so it is
  * only written after Resend actually accepted the message. Marking it on a
@@ -288,10 +303,22 @@ export async function sendCronEmail(
   subject: string,
   html: string,
   emailKey: string
-): Promise<void> {
+): Promise<CronSendOutcome> {
   const db = getAdminDb();
 
-  const result = await sendEmail({ to: email, subject, html, kind: "campaign" });
+  if (await isUnsubscribed(uid)) {
+    console.log(`[cron-email] ${emailKey}: ${uid} is unsubscribed, skipping`);
+    return "unsubscribed";
+  }
+
+  const result = await sendEmail({
+    to: email,
+    subject,
+    html,
+    kind: "campaign",
+    replyTo: CAMPAIGN_REPLY_TO,
+    headers: listUnsubscribeHeaders(uid),
+  });
 
   if (!result.ok) {
     if (result.quotaExhausted) throw new QuotaExhaustedError(result.error);
@@ -308,6 +335,8 @@ export async function sendCronEmail(
       },
       { merge: true }
     );
+
+  return "sent";
 }
 
 // ── Batch runner ──────────────────────────────────────────────────────────────
@@ -329,6 +358,8 @@ export interface BatchOptions {
 export interface BatchResult {
   sent: number;
   failed: number;
+  /** Unsubscribed between the audience query and the send. Never retried. */
+  skipped: number;
   eligible: number;
   attempted: number;
   stoppedForQuota: boolean;
@@ -342,6 +373,7 @@ export async function processBatch(opts: BatchOptions): Promise<BatchResult> {
   const batch = opts.users.slice(0, MAX_BATCH);
   let sent = 0;
   let failed = 0;
+  let skipped = 0;
   let attempted = 0;
   let stoppedForQuota = false;
 
@@ -353,8 +385,9 @@ export async function processBatch(opts: BatchOptions): Promise<BatchResult> {
       const html = buildHtml(template, user.uid, opts.extras?.(user) ?? {});
       const subject =
         typeof opts.subject === "function" ? opts.subject(user) : opts.subject;
-      await sendCronEmail(user.uid, user.email, subject, html, opts.emailKey);
-      sent++;
+      const outcome = await sendCronEmail(user.uid, user.email, subject, html, opts.emailKey);
+      if (outcome === "sent") sent++;
+      else skipped++;
     } catch (err) {
       if (err instanceof QuotaExhaustedError) {
         attempted--;
@@ -370,11 +403,11 @@ export async function processBatch(opts: BatchOptions): Promise<BatchResult> {
   }
 
   console.log(
-    `[${opts.label}] sent=${sent} failed=${failed} eligible=${opts.users.length}` +
+    `[${opts.label}] sent=${sent} failed=${failed} skipped=${skipped} eligible=${opts.users.length}` +
       (stoppedForQuota ? " stoppedForQuota=true" : "")
   );
 
-  return { sent, failed, eligible: opts.users.length, attempted, stoppedForQuota };
+  return { sent, failed, skipped, eligible: opts.users.length, attempted, stoppedForQuota };
 }
 
 // ── Cron auth ─────────────────────────────────────────────────────────────────
@@ -395,7 +428,7 @@ export function verifyCronSecret(req: Request): boolean {
 // ── Template helper ───────────────────────────────────────────────────────────
 
 export function buildHtml(template: string, uid: string, extras: Record<string, string> = {}): string {
-  const token = Buffer.from(uid).toString("base64");
+  const token = unsubscribeToken(uid);
   let html = template.replace(/\{\{unsubscribeToken\}\}/g, token);
   for (const [key, val] of Object.entries(extras)) {
     html = html.replace(new RegExp(`\\{\\{${key}\\}\\}`, "g"), val);

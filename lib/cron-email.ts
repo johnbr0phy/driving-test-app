@@ -302,7 +302,9 @@ export async function sendCronEmail(
   email: string,
   subject: string,
   html: string,
-  emailKey: string
+  emailKey: string,
+  /** Extra fields merged into the user doc with the sent marker (e.g. a split-test variant). */
+  record: Record<string, unknown> = {}
 ): Promise<CronSendOutcome> {
   const db = getAdminDb();
 
@@ -330,6 +332,7 @@ export async function sendCronEmail(
     .doc(uid)
     .set(
       {
+        ...record,
         lastEmailSent: FieldValue.serverTimestamp(),
         emailsSent: FieldValue.arrayUnion(emailKey),
       },
@@ -353,6 +356,8 @@ export interface BatchOptions {
   users: UserDoc[];
   /** Extra {{placeholders}} for this user, merged into the template. */
   extras?: (user: UserDoc) => Record<string, string>;
+  /** Fields written to the user doc on a successful send, e.g. the split-test variant. */
+  record?: (user: UserDoc) => Record<string, unknown>;
 }
 
 export interface BatchResult {
@@ -385,7 +390,7 @@ export async function processBatch(opts: BatchOptions): Promise<BatchResult> {
       const html = buildHtml(template, user.uid, opts.extras?.(user) ?? {});
       const subject =
         typeof opts.subject === "function" ? opts.subject(user) : opts.subject;
-      const outcome = await sendCronEmail(user.uid, user.email, subject, html, opts.emailKey);
+      const outcome = await sendCronEmail(user.uid, user.email, subject, html, opts.emailKey, opts.record?.(user) ?? {});
       if (outcome === "sent") sent++;
       else skipped++;
     } catch (err) {

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" font-family="sans-serif" font-size="13" fill="#000">
+<rect width="320" height="240" fill="#fff"/>
+<text x="160" y="24" text-anchor="middle" font-weight="bold">Minutes Spent on Homework</text>
+<g stroke="#000" stroke-width="1.5" fill="none">
+<line x1="62.5" y1="110" x2="111.25" y2="110"/>
+<line x1="62.5" y1="96" x2="62.5" y2="124"/>
+<rect x="111.25" y="84" width="81.25" height="52" fill="#ddd"/>
+<line x1="143.75" y1="84" x2="143.75" y2="136"/>
+<line x1="192.5" y1="110" x2="257.5" y2="110"/>
+<line x1="257.5" y1="96" x2="257.5" y2="124"/>
+<line x1="30" y1="180" x2="290" y2="180"/>
+<path d="M30 175V185M62.5 175V185M95 175V185M127.5 175V185M160 175V185M192.5 175V185M225 175V185M257.5 175V185M290 175V185"/>
+<path d="M46.25 178V182M78.75 178V182M111.25 178V182M143.75 178V182M176.25 178V182M208.75 178V182M241.25 178V182M273.75 178V182" stroke-width="1"/>
+</g>
+<g stroke="#000" stroke-width="1" stroke-dasharray="3 3">
+<line x1="111.25" y1="140" x2="111.25" y2="172"/>
+<line x1="143.75" y1="140" x2="143.75" y2="172"/>
+<line x1="192.5" y1="140" x2="192.5" y2="172"/>
+</g>
+<g text-anchor="middle">
+<text x="62.5" y="76">10</text>
+<text x="111.25" y="76">25</text>
+<text x="143.75" y="76">35</text>
+<text x="192.5" y="76">50</text>
+<text x="257.5" y="76">70</text>
+<text x="30" y="202">0</text>
+<text x="62.5" y="202">10</text>
+<text x="95" y="202">20</text>
+<text x="127.5" y="202">30</text>
+<text x="160" y="202">40</text>
+<text x="192.5" y="202">50</text>
+<text x="225" y="202">60</text>
+<text x="257.5" y="202">70</text>
+<text x="290" y="202">80</text>
+<text x="160" y="226">Minutes</text>
+</g>
+</svg>

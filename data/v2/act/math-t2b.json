@@ -35,17 +35,17 @@
       "format": "single",
       "stem": "In a chemistry course, the final course grade is a weighted average in which tests count for 50%, homework counts for 30%, and the final exam counts for 20%. Priya's test average is 84, her homework average is 92, and her final exam score is 75. What is her final course grade?",
       "options": [
+        "83.0",
         "83.7",
-        "84.6",
-        "85.0",
-        "86.1"
+        "84.0",
+        "84.6"
       ],
       "correct": [
-        1
+        3
       ],
       "lockedOrder": true,
       "calculator": true,
-      "explanation": "Multiply each score by its weight and add: $0.5(84) + 0.3(92) + 0.2(75) = 42 + 27.6 + 15 = 84.6$. The weights add to 1, so no further division is needed. Choice A is the unweighted mean $\\dfrac{84 + 92 + 75}{3} \\approx 83.7$, which ignores the fact that tests count more than the final exam."
+      "explanation": "Multiply each score by its weight and add: $0.5(84) + 0.3(92) + 0.2(75) = 42 + 27.6 + 15 = 84.6$. The weights add to 1, so no further division is needed. Choice B is the unweighted mean $\\dfrac{84 + 92 + 75}{3} \\approx 83.7$, which ignores the fact that tests count more than the final exam."
     },
     {
       "id": "ACT-MA-226",
@@ -431,17 +431,17 @@
       "format": "single",
       "stem": "A cyclist leaves a town at 7:40 a.m. and rides along a straight road at a constant speed of 14 miles per hour. At 9:10 a.m. a car leaves the same town and travels along the same road in the same direction at a constant speed of 50 miles per hour. At what time does the car catch up to the cyclist?",
       "options": [
+        "9:25 a.m.",
         "9:35 a.m.",
         "9:45 a.m.",
-        "9:55 a.m.",
-        "10:05 a.m."
+        "9:55 a.m."
       ],
       "correct": [
-        1
+        2
       ],
       "lockedOrder": true,
       "calculator": true,
-      "explanation": "By 9:10 a.m. the cyclist has ridden for 1.5 hours and is $14(1.5) = 21$ miles ahead. The car closes the gap at $50 - 14 = 36$ miles per hour, so catching up takes $\\dfrac{21}{36}$ hour, which is $\\dfrac{7}{12}(60) = 35$ minutes after 9:10 a.m., or 9:45 a.m. As a check, by 9:45 the cyclist has traveled $\\dfrac{125}{60}(14) \\approx 29.2$ miles and the car has traveled $\\dfrac{35}{60}(50) \\approx 29.2$ miles. Choice A, 9:35, comes from dividing the 21-mile gap by 50 instead of by the difference in speeds."
+      "explanation": "By 9:10 a.m. the cyclist has ridden for 1.5 hours and is $14(1.5) = 21$ miles ahead. The car closes the gap at $50 - 14 = 36$ miles per hour, so catching up takes $\\dfrac{21}{36}$ hour, which is $\\dfrac{7}{12}(60) = 35$ minutes after 9:10 a.m., or 9:45 a.m. As a check, by 9:45 the cyclist has traveled $\\dfrac{125}{60}(14) \\approx 29.2$ miles and the car has traveled $\\dfrac{35}{60}(50) \\approx 29.2$ miles. Choice B, 9:35, comes from dividing the 21-mile gap by 50 instead of by the difference in speeds."
     },
     {
       "id": "ACT-MA-243",

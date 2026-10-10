@@ -39,7 +39,7 @@ export function computeAnswersByExamByDay(data: Record<string, unknown>): Answer
     const exam =
       getExamByStateCode(typeof test.state === 'string' ? test.state : null) ??
       (typeof test.testNumber === 'number' ? getExamForTestId(test.testNumber) : undefined);
-    const examKey = exam?.id ?? DMV_ANALYTICS_KEY;
+    const examKey = exam ? examAnalyticsKey(exam) : DMV_ANALYTICS_KEY;
     const answers = (test.answers || []) as Record<string, unknown>[];
     if (answers.length > 0) {
       for (const a of answers) bump(examKey, a?.answeredAt ?? test.completedAt);

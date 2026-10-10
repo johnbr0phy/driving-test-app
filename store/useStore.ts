@@ -169,6 +169,13 @@ interface AppState {
    */
   primaryExam: string | null;
   setPrimaryExam: (examId: string) => void;
+  /**
+   * Study state per exam family with state variants, e.g. { realestate: "CA" }.
+   * "GENERAL" means the national bank was chosen on purpose. Separate from the
+   * DMV selectedState: picking California real estate never changes DMV.
+   */
+  examStates: Record<string, string>;
+  setExamState: (familyId: string, code: string) => void;
   setUserId: (userId: string | null) => void;
   setPhotoURL: (photoURL: string | null) => void;
   setEmailConsent: (consent: boolean) => void;
@@ -222,6 +229,7 @@ export const useStore = create<AppState>()(
       selectedState: null,
       emailConsent: true,
       primaryExam: null,
+      examStates: {},
       currentTests: {},
       completedTests: [],
       testAttempts: [],
@@ -269,6 +277,12 @@ export const useStore = create<AppState>()(
 
       setPhotoURL: (photoURL: string | null) => {
         set({ photoURL });
+        get().saveToFirestore();
+      },
+
+      setExamState: (familyId: string, code: string) => {
+        if (get().examStates[familyId] === code) return;
+        set({ examStates: { ...get().examStates, [familyId]: code } });
         get().saveToFirestore();
       },
 
@@ -844,6 +858,8 @@ export const useStore = create<AppState>()(
               activeDates: data.activeDates || [],
               photoURL: data.photoURL || null,
               primaryExam: typeof data.primaryExam === 'string' ? data.primaryExam : get().primaryExam,
+              // Account choices win; a guest's choice fills only families the account has not set.
+              examStates: { ...get().examStates, ...(data.examStates && typeof data.examStates === 'object' ? data.examStates : {}) },
               superAmazing: {
                 enabled: data.superAmazing?.enabled === true,
                 firstEnabledAt: data.superAmazing?.firstEnabledAt || null,
@@ -891,7 +907,7 @@ export const useStore = create<AppState>()(
       },
 
       saveToFirestore: async () => {
-        const { userId, isGuest, selectedState, currentTests, completedTests, testAttempts, training, trainingSets, trainingAnswerHistory, activeDates, photoURL, language, emailConsent, superAmazing, superAmazingUnlockedAt, primaryExam } = get();
+        const { userId, isGuest, selectedState, currentTests, completedTests, testAttempts, training, trainingSets, trainingAnswerHistory, activeDates, photoURL, language, emailConsent, superAmazing, superAmazingUnlockedAt, primaryExam, examStates } = get();
         if (!userId || isGuest) return; // Don't save if no user is logged in or guest mode
 
         try {
@@ -967,6 +983,7 @@ export const useStore = create<AppState>()(
             photoURL,
             emailConsent,
             ...(primaryExam ? { primaryExam } : {}),
+            examStates,
             currentTests: currentTestsForFirestore,
             completedTests: completedTests.map(test => ({
               ...test,
@@ -1044,6 +1061,7 @@ export const useStore = create<AppState>()(
         set({
           isGuest: false,
           selectedState: null,
+          examStates: {},
           currentTests: {},
           completedTests: [],
           testAttempts: [],

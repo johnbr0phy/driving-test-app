@@ -3,7 +3,7 @@
  * other exams. DMV_ROUTES reproduces the original behaviour exactly; HTL
  * maps the same flow onto its namespaced IDs (201-204) under /htl.
  */
-import { ExamConfig, EXAMS, examTestIds, getExamById } from "./exams";
+import { ALL_EXAMS, ExamConfig, examTestIds, getExamById } from "./exams";
 import { isDrillFree as isDmvDrillFree } from "./missedQuestions";
 
 export interface PlanTrainingSet {
@@ -97,7 +97,7 @@ export function routesForExam(exam: ExamConfig): ExamRoutes {
 }
 
 const EXAM_ROUTES: Record<string, ExamRoutes> = Object.fromEntries(
-  EXAMS.map((e) => [e.id, routesForExam(e)])
+  ALL_EXAMS.map((e) => [e.id, routesForExam(e)])
 );
 
 export function getExamRoutes(examId: string): ExamRoutes {

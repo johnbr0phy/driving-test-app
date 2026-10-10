@@ -33,6 +33,8 @@ import pncQuestions from "@/data/property-casualty-questions.json";
 import htlQuestions from "@/data/htl-questions.json";
 import cstQuestions from "@/data/cst-questions.json";
 import crcstQuestions from "@/data/crcst-questions.json";
+import realestateCaQuestions from "@/data/real-estate-ca-questions.json";
+import realestateNjQuestions from "@/data/real-estate-nj-questions.json";
 import type { ExamId } from "./exams";
 
 // Question banks by exam. Kept apart from lib/exams.ts so the store can
@@ -54,6 +56,8 @@ const BANKS: Record<ExamId, Question[]> = {
   emt: emtQuestions as Question[],
   foodmgr: foodmgrQuestions as Question[],
   realestate: realestateQuestions as Question[],
+  "realestate-ca": realestateCaQuestions as Question[],
+  "realestate-nj": realestateNjQuestions as Question[],
   insurance: insuranceQuestions as Question[],
   notary: notaryQuestions as Question[],
   aws: awsQuestions as Question[],

@@ -19,7 +19,8 @@ import { ProgressCard, Collapse } from "@/components/dashboard/ProgressCard";
 import { AttemptChart, sessionsToAttemptPoints } from "@/components/AttemptChart";
 import { computeMissSummary } from "@/lib/missedQuestions";
 import { getExamRoutes } from "@/lib/examRoutes";
-import { ExamConfig } from "@/lib/exams";
+import { ExamConfig, examFamilyId, getExamVariant } from "@/lib/exams";
+import { ExamStateLine, ExamStatePrompt } from "@/components/exam/ExamStatePicker";
 import { getTigerAsset } from "@/lib/tigerAssets";
 
 function heroTitle(done: number, total: number): string {
@@ -84,8 +85,20 @@ export function ExamDashboard({ exam }: { exam: ExamConfig }) {
   // another exam's dashboard.
   const setPrimaryExam = useStore((state) => state.setPrimaryExam);
   useEffect(() => {
-    if (hydrated) setPrimaryExam(exam.id);
-  }, [hydrated, exam.id, setPrimaryExam]);
+    if (hydrated) setPrimaryExam(examFamilyId(exam));
+  }, [hydrated, exam, setPrimaryExam]);
+
+  // State variants: opening a state's dashboard makes it the remembered
+  // choice, and the family dashboard forwards to the remembered state.
+  const familyId = examFamilyId(exam);
+  const chosenState = useStore((state) => state.examStates[familyId]);
+  const setExamState = useStore((state) => state.setExamState);
+  const forwardTo = !exam.variantOf ? getExamVariant(familyId, chosenState) : undefined;
+  useEffect(() => {
+    if (!hydrated) return;
+    if (exam.variantOf && exam.jurisdiction) setExamState(familyId, exam.jurisdiction.code);
+    else if (forwardTo) router.replace(`${forwardTo.slug}/dashboard`);
+  }, [hydrated, exam, familyId, forwardTo, setExamState, router]);
 
   // Auto-complete any test where all questions are answered (handles stuck state)
   useEffect(() => {
@@ -120,6 +133,9 @@ export function ExamDashboard({ exam }: { exam: ExamConfig }) {
     completedSteps > 0 ||
     exam.trainingSets.some((s) => hydrated && getTrainingSetProgress(s.id).correct > 0);
 
+  // Forwarding to the remembered state: skip a flash of the general dashboard.
+  if (hydrated && forwardTo) return null;
+
   return (
     <div className="flex-1 bg-gray-50">
       <div className="relative">
@@ -145,6 +161,8 @@ export function ExamDashboard({ exam }: { exam: ExamConfig }) {
           </Card>
         )}
 
+        <ExamStatePrompt exam={exam} />
+
         {/* Hero card with progress */}
         <div className="rounded-xl bg-white border border-gray-100 p-4 mb-6">
           <div className="flex items-center gap-4">
@@ -164,6 +182,7 @@ export function ExamDashboard({ exam }: { exam: ExamConfig }) {
               <div className="text-xs text-gray-400">{t("dashboard.stampComplete").toLowerCase()}</div>
             </div>
           </div>
+          <ExamStateLine exam={exam} />
         </div>
 
         {/* Training sets, one per content area */}
@@ -222,7 +241,8 @@ export function ExamDashboard({ exam }: { exam: ExamConfig }) {
             const isExpanded = expandedTest === testId;
             const stillMissed = testMisses?.stillMissed ?? 0;
 
-            let subtitle = t("testCard.fiftyQuestions");
+            // The translated string only covers 50-question tests (ham has 35, CA real estate 150).
+            let subtitle = exam.questionsPerTest === 50 ? t("testCard.fiftyQuestions") : `${exam.questionsPerTest} questions`;
             if (activelyInProgress) {
               subtitle = `${answeredCount}/${exam.questionsPerTest} ${t("testCard.answered")}`;
             } else if (completed && bestPct !== null) {
@@ -243,7 +263,7 @@ export function ExamDashboard({ exam }: { exam: ExamConfig }) {
             return (
               <div key={testId}>
                 <ProgressCard
-                  title={`🎯 Test ${n}`}
+                  title={exam.testCount === 1 ? "🎯 Full-length exam" : `🎯 Test ${n}`}
                   subtitle={subtitle}
                   completed={completed}
                   stepNumber={exam.trainingSets.length + index + 1}

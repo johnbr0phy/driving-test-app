@@ -9,7 +9,7 @@ import { useStore } from "@/store/useStore";
 import { useHydration } from "@/hooks/useHydration";
 import { useTestTheme } from "@/contexts/TestThemeContext";
 import { Truck, Bike, Flag, Plane, Radio, Thermometer, HeartPulse, Pill, Syringe, Stethoscope, Activity, SmilePlus, Siren, Utensils, House, Umbrella, Stamp, GraduationCap, Cloud, Cpu, ChefHat, Sailboat, Target, LockKeyhole, BookOpenCheck, Medal, Bandage, HardHat, Forklift, Wine, PencilLine, BadgeCheck, LifeBuoy, Building2, Microscope, Scissors, ShieldCheck } from "lucide-react";
-import { getExamById } from "@/lib/exams";
+import { getExamById, getExamVariants } from "@/lib/exams";
 import Image from "next/image";
 import { TestSwitcher } from "@/components/TestSwitcher";
 
@@ -23,7 +23,9 @@ export function CDLHeader() {
 
   const displayPhotoURL = photoURL || user?.photoURL;
 
-  const hideHeader = pathname?.startsWith(`${theme.routeBase}/test`) || pathname === `${theme.routeBase}/training`;
+  // State variants (/real-estate/ca) run their tests under the family's header.
+  const bases = [theme.routeBase, ...getExamVariants(theme.id).map((v) => v.slug)];
+  const hideHeader = bases.some((b) => pathname?.startsWith(`${b}/test`) || pathname === `${b}/training`);
 
   if (hideHeader) {
     return null;

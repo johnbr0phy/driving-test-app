@@ -1,5 +1,5 @@
 /**
- * Cron: New tests announcement + "what should we build next?"
+ * Cron: SAT and ACT launch + "what should we build next?"
  * Schedule: daily at 13:00 UTC (vercel.json)
  *
  * One-off campaign to the whole consented base. Sends to users who:
@@ -28,7 +28,6 @@ import {
   DAY_MS,
 } from "@/lib/cron-email";
 import { EMAIL_TEMPLATES } from "@/lib/email-templates";
-import { TEST_CATALOG } from "@/lib/testCatalog";
 
 const EMAIL_KEY = "newTests2026";
 const INCLUDE_LEGACY = process.env.INCLUDE_LEGACY_CONSENT === "true";
@@ -55,14 +54,13 @@ export async function GET(req: NextRequest) {
       })
       .sort((a, b) => b.lastActiveAt.getTime() - a.lastActiveAt.getTime());
 
-    const newCount = TEST_CATALOG.length - 1;
     const result = await processBatch({
       label: "new-tests",
       emailKey: EMAIL_KEY,
       subject: (u) =>
         u.voice.id === "dmv"
-          ? `${newCount} new practice tests, and a question for you`
-          : "New tests on TigerTest, and a question for you",
+          ? "Next up after your permit test: the SAT"
+          : "SAT and ACT are on TigerTest, and a question for you",
       template: (u) => EMAIL_TEMPLATES.newTests(u.voice),
       users: eligible,
     });

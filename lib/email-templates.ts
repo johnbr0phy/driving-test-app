@@ -14,7 +14,6 @@
 // Pass voiceFor("dmv") for the original DMV copy.
 
 import { EmailVoice, dashboardUrl, statsUrl } from "@/lib/email-voice";
-import { relatedTests, TEST_CATALOG } from "@/lib/testCatalog";
 import { TEST_REQUEST_PICKS } from "@/lib/test-requests";
 
 interface ShellOptions {
@@ -138,14 +137,6 @@ export function testRequestButtons(campaign: string): string {
   return `              <table role="presentation" style="width: 100%; border-collapse: collapse; margin: 0 0 24px;">
 ${rows.join("\n")}
               </table>`;
-}
-
-/** Landing-page links for the tests next to this one in the hub. */
-function relatedTestLinks(v: EmailVoice, campaign: string): string[] {
-  return relatedTests(v.id, 4).map(
-    (t) =>
-      `<a href="${SITE}${t.href}?${utm(campaign)}" style="color: #1a1a1a; font-weight: 600; text-decoration: underline;">${t.name}</a> <span style="color: #777777;">(${t.org})</span>`,
-  );
 }
 
 /** Tracked dashboard link for this voice. */
@@ -359,40 +350,60 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
       ].join("\n"),
     }),
 
-  // One-off: the site grew from one test to thirty. Tells people, then asks
-  // what to build next. DMV readers get the "we grew" story; everyone else
-  // already signed up for a registry exam and gets its neighbours instead.
+  // One-off, whole consented base: SAT and ACT launch, then "what should we
+  // build next?". DMV readers are mostly 15 to 17, the exact SAT and ACT
+  // cohort, so they get the full launch. Everyone else gets one line about it
+  // and leads with the question.
   newTests: (v) => {
-    const campaign = "new_tests";
-    const catalogSize = TEST_CATALOG.length;
-    const isDmv = v.id === "dmv";
+    const campaign = "sat_act_launch";
+    const sat = `${SITE}/sat-practice-test?${utm(campaign)}`;
+    const act = `${SITE}/act-practice-test?${utm(campaign)}`;
+    const link = (href: string, label: string) =>
+      `<a href="${href}" style="color: #1a1a1a; font-weight: 600; text-decoration: underline;">${label}</a>`;
     const question = [
       p(
-        `<strong style="font-weight: 600;">Now a question.</strong> What test are you studying for next, or what did you wish existed? I'm one person building TigerTest and I build what people ask for. One click:`,
+        `<strong style="font-weight: 600;">Now a question.</strong> What test are you studying for next, or what do you wish existed? I'm one person building TigerTest and I build what people ask for. One click:`,
       ),
       testRequestButtons(campaign),
       p("Or just hit reply. I read every one."),
     ];
+
+    if (v.id === "dmv") {
+      return emailShell({
+        title: "SAT and ACT, the TigerTest way",
+        heading: "SAT and ACT, the TigerTest way",
+        body: [
+          p(
+            "You used TigerTest for your permit test. For a lot of you, the next big test is the SAT or ACT, so we built both the same way: a full practice test first, then short drills on exactly what you missed.",
+          ),
+          ul([
+            "The digital SAT, timed and adaptive like the real one",
+            "The new 2025 ACT, all four sections",
+            "Short skill drills that work on your phone",
+          ]),
+          p(`<strong style="font-weight: 600;">Practice Test 1 is free.</strong> No credit card.`),
+          cta(sat, "Take a free SAT practice test"),
+          p(`Taking the ACT instead? ${link(act, "Try the free ACT practice test")}.`),
+          p(
+            "Premium is still $9.99, one time, and now covers the SAT and ACT too. Already bought it for your permit test? You're already unlocked.",
+          ),
+          p("Parent who signed up for your teen? Forward this along."),
+          ...question,
+          signoff("Thanks,"),
+        ].join("\n"),
+      });
+    }
+
+    const studyingSatOrAct = v.id === "sat" || v.id === "act";
     return emailShell({
-      title: isDmv ? `${catalogSize - 1} new practice tests` : "New on TigerTest",
-      heading: isDmv ? "TigerTest grew. A lot." : "What should we build next?",
+      title: "What should we build next?",
+      heading: "What should we build next?",
       body: [
-        ...(isDmv
-          ? [
-              p(
-                `When you signed up, TigerTest was a DMV practice test. It's now <strong style="font-weight: 600;">${catalogSize} exams</strong>: motorcycle and CDL, boating and hunter safety, food handler, notary, real estate and insurance, nursing school entrance, CNA and EMT, IT certifications like CompTIA and AWS, the citizenship civics test, and more.`,
-              ),
-              p(
-                "All free, all built the same way: real practice tests first, then training on what you missed.",
-              ),
-            ]
-          : [
-              p(
-                `You're on TigerTest for the ${v.testName}. Since you signed up the site has grown to ${catalogSize} exams, and a few sit right next to yours:`,
-              ),
-              ul(relatedTestLinks(v, campaign)),
-            ]),
-        cta(`${SITE}/tests?${utm(campaign)}`, `See all ${catalogSize} tests`),
+        p(
+          studyingSatOrAct
+            ? `Quick note while you prep for the ${v.shortName}: TigerTest now has both the ${link(sat, "digital SAT")} and the ${link(act, "new 2025 ACT")}, each with a free full-length practice test. Plenty of students take both.`
+            : `Quick news: TigerTest now has full-length practice tests for the ${link(sat, "SAT")} and the ${link(act, "ACT")}, built the same way as the ${v.testName}. Got a high schooler at home? Practice Test 1 is free.`,
+        ),
         ...question,
         signoff("Thanks,"),
       ].join("\n"),

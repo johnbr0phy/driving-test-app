@@ -24,7 +24,7 @@ export const TEST_REQUEST_PICKS: TestRequestPick[] = [
   { id: "trades", label: "Trade licenses", hint: "Electrician, HVAC, plumbing, contractor, cosmetology, barber" },
   { id: "finance", label: "Real estate & finance", hint: "Real estate, insurance, notary, Series 7, mortgage" },
   { id: "safety", label: "Public safety", hint: "EMT, paramedic, firefighter, police, security guard" },
-  { id: "school", label: "School & college", hint: "GED, SAT, ACT, AP, ASVAB" },
+  { id: "school", label: "School & college", hint: "PSAT, AP, GED, CLEP" },
   { id: "other", label: "Something else", hint: "Anything at all" },
 ];
 

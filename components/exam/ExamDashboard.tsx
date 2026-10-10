@@ -20,7 +20,7 @@ import { AttemptChart, sessionsToAttemptPoints } from "@/components/AttemptChart
 import { computeMissSummary } from "@/lib/missedQuestions";
 import { getExamRoutes } from "@/lib/examRoutes";
 import { ExamConfig, examFamilyId, getExamVariant } from "@/lib/exams";
-import { ExamStatePicker } from "@/components/exam/ExamStatePicker";
+import { ExamStateLine, ExamStatePrompt } from "@/components/exam/ExamStatePicker";
 import { getTigerAsset } from "@/lib/tigerAssets";
 
 function heroTitle(done: number, total: number): string {
@@ -161,7 +161,7 @@ export function ExamDashboard({ exam }: { exam: ExamConfig }) {
           </Card>
         )}
 
-        <ExamStatePicker exam={exam} />
+        <ExamStatePrompt exam={exam} />
 
         {/* Hero card with progress */}
         <div className="rounded-xl bg-white border border-gray-100 p-4 mb-6">
@@ -182,6 +182,7 @@ export function ExamDashboard({ exam }: { exam: ExamConfig }) {
               <div className="text-xs text-gray-400">{t("dashboard.stampComplete").toLowerCase()}</div>
             </div>
           </div>
+          <ExamStateLine exam={exam} />
         </div>
 
         {/* Training sets, one per content area */}

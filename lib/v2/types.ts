@@ -98,6 +98,8 @@ export interface DrillDef {
   section: string;
   domains: string[];
   blurb: string;
+  /** Short weight line on the dashboard step, e.g. "28% of Reading and Writing". */
+  weight: string;
 }
 
 export interface ExamV2Config {
@@ -120,6 +122,15 @@ export interface ExamV2Config {
   /** Default goal for the goal picker. */
   defaultGoal: number;
   goalChoices: number[];
+  /** One line under each goal choice, e.g. "Top 25% of test takers". */
+  goalNotes: Record<number, string>;
+  /** Total test time shown on the test step, e.g. "2 hr 14 min". */
+  testLength: string;
+  copy: {
+    /** Five hero subtitles for 0%, <40%, <70%, <100%, 100% of steps complete. */
+    heroSubs: [string, string, string, string, string];
+    sourceLine: string;
+  };
 }
 
 /** One in-progress or finished full-length test. */

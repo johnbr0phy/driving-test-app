@@ -105,6 +105,12 @@ export interface ScaleSpec {
 
 export interface DrillDef {
   key: string;
+  /**
+   * A retired drill whose saved progress seeds this one (filtered to this
+   * drill's questions) until it has progress of its own. Lets a drill be
+   * split without anyone losing what they mastered.
+   */
+  legacyKey?: string;
   name: string;
   section: string;
   domains: string[];

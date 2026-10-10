@@ -20,7 +20,8 @@ interface V2State {
   putSession: (session: TestSessionV2) => void;
   removeSession: (key: string) => void;
   addResult: (result: TestResultV2) => void;
-  answerDrill: (key: string, questionId: string, correct: boolean) => void;
+  /** base: the state to build on when the key has none yet (a carried-over drill). */
+  answerDrill: (key: string, questionId: string, correct: boolean, base?: DrillState) => void;
   resetDrill: (key: string) => void;
   setGoal: (examId: string, goal: number) => void;
   /** Replace the synced data (sessions, results, drills, goals) wholesale. */
@@ -48,9 +49,9 @@ export const useV2Store = create<V2State>()(
         }),
       addResult: (result) => set((s) => ({ results: [...s.results, result] })),
 
-      answerDrill: (key, questionId, correct) =>
+      answerDrill: (key, questionId, correct, base) =>
         set((s) => {
-          const d = s.drills[key] ?? EMPTY_DRILL;
+          const d = s.drills[key] ?? base ?? EMPTY_DRILL;
           const wrongQueue = d.wrongQueue.filter((id) => id !== questionId);
           const next: DrillState = correct
             ? { masteredIds: d.masteredIds.includes(questionId) ? d.masteredIds : [...d.masteredIds, questionId], wrongQueue, seen: d.seen + 1, correct: d.correct + 1 }

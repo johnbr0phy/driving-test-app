@@ -10,7 +10,7 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
 const title = "Free ACT Practice Test 2026 - Full-Length, Timed, Enhanced Format";
 const description =
-  "A free full-length ACT practice test in the enhanced 2025 format: English, Math, Reading and Science with real passages and section timing, four answer choices, and a 1 to 36 score estimate with a composite. Four section drills sized for your phone bring every miss back until you master it. Practice Test 2 and the full drills are a one-time $9.99.";
+  "A free full-length ACT practice test in the enhanced 2025 format: English, Math, Reading and Science with real passages and section timing, four answer choices, and a 1 to 36 score estimate with a composite. Eleven skill drills, one per ACT reporting category and sized for your phone, bring every miss back until you master it. Practice Test 2 and the full drills are a one-time $9.99.";
 
 export const metadata: Metadata = {
   title,
@@ -63,7 +63,7 @@ const faqs = [
   },
   {
     q: "Is the TigerTest ACT practice test free?",
-    a: "Yes, to start. Practice Test 1, its score and every explanation, and the first 15 questions of each of the four section drills are free with no account required. TigerTest Premium, a one-time $9.99 with no subscription, unlocks Practice Test 2 and every drill question, and the same purchase covers the DMV and the SAT too.",
+    a: "Yes, to start. Practice Test 1, its score and every explanation, and the first 15 questions of each of the eleven skill drills are free with no account required. TigerTest Premium, a one-time $9.99 with no subscription, unlocks Practice Test 2 and every drill question, and the same purchase covers the DMV and the SAT too.",
   },
 ];
 
@@ -83,7 +83,7 @@ const jsonLd = {
         "Real section timing with a break after Math",
         "Passages beside the question for English, Reading and Science",
         "Estimated section scores on the 1 to 36 scale and a composite",
-        "Four mastery drills, one per section, with more than 300 questions",
+        "Eleven mastery drills, one per ACT reporting category, with more than 300 questions",
         "Practice Test 2 held out of the drills for a clean score",
         "Explanations for every question",
       ],
@@ -128,7 +128,7 @@ export default function ActLandingPage() {
           <ExamLandingHero
             dashboardHref="/act"
             shortName="ACT"
-            subtitle="Two full-length enhanced ACTs with real passages, section timing and a 1 to 36 score estimate, plus four section drills built for your phone. Practice Test 1 is free, no account needed."
+            subtitle="Two full-length enhanced ACTs with real passages, section timing and a 1 to 36 score estimate, plus eleven skill drills built for your phone. Practice Test 1 is free, no account needed."
             shots={{ mobile: "/landing/act-mobile.png", desktop: "/landing/act-desktop.png" }}
           />
         </div>
@@ -143,9 +143,9 @@ export default function ActLandingPage() {
               <Smartphone className="w-7 h-7 text-brand" />
             </div>
             <div className="bg-gray-50 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Section Drills on Your Phone</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Skill Drills on Your Phone</h3>
               <p className="text-gray-600">
-                Four drills, one per section, with more than 300 questions. The passage sits above the question, one tap checks each answer, the explanation appears right away, and every miss comes back until you have mastered it.
+                Eleven drills, one per ACT reporting category from Conventions of Standard English to Evaluation of Models, with more than 300 questions. The passage sits above the question, one tap checks each answer, the explanation appears right away, and every miss comes back until you have mastered it.
               </p>
             </div>
           </div>
@@ -235,7 +235,7 @@ export default function ActLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">4. Take the full test under real conditions</h3>
               <p>
-                Sit all four sections in one go on a computer with the timer on. Then review every miss, drill the weakest section, and retake. There is no penalty for guessing, so never leave a question blank.
+                Sit all four sections in one go on a computer with the timer on. Then review every miss, drill the weakest skill, and retake. There is no penalty for guessing, so never leave a question blank.
               </p>
             </div>
           </div>
@@ -262,7 +262,7 @@ export default function ActLandingPage() {
         <div className="absolute inset-0 bg-gradient-to-t from-brand-light to-white pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Ready to Hit Your ACT Goal?</h2>
-          <p className="text-lg text-gray-600 mb-10">Free to start. No account required. A free full-length test and four section drills, with Practice Test 2 in Premium.</p>
+          <p className="text-lg text-gray-600 mb-10">Free to start. No account required. A free full-length test and eleven skill drills, with Practice Test 2 in Premium.</p>
           <ExamLandingCTA dashboardHref="/act" />
         </div>
       </div>

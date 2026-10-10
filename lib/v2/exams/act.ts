@@ -70,7 +70,7 @@ export const ACT: ExamV2Config = {
     freeDrillQuestions: 15,
     benefits: [
       "Practice Test 2: unseen, a true readiness check",
-      "Every question in all four ACT section drills",
+      "Every question in all eleven ACT skill drills",
       "The SAT and DMV tests too, with the same purchase",
     ],
   },
@@ -88,11 +88,22 @@ export const ACT: ExamV2Config = {
     investigation: "Scientific Investigation",
     evaluation: "Evaluation of Models and Results",
   },
+  // One drill per ACT reporting category, the same names a student sees on
+  // their score report. Reading's Integration category (10 drill items) rides
+  // with Craft and Structure so no drill is a handful of questions.
+  // legacyKey carries progress over from the four section drills these replaced.
   drills: [
-    { key: "english", name: "English", section: "english", domains: ["conventions", "production", "language"], blurb: "Punctuation, grammar, sentence structure, organization and word choice, passage by passage.", weight: "50 questions in 35 min" },
-    { key: "math", name: "Mathematics", section: "math", domains: ["algebra", "geometry", "modeling"], blurb: "Algebra, functions, geometry, trig, statistics and modeling, with every step shown.", weight: "45 questions in 50 min" },
-    { key: "reading", name: "Reading", section: "reading", domains: ["keyIdeas", "craft", "integration"], blurb: "Long passages beside the question: main idea, detail, inference, vocabulary and author's craft.", weight: "36 questions in 40 min" },
-    { key: "science", name: "Science", section: "science", domains: ["interpretation", "investigation", "evaluation"], blurb: "Tables, experiments and conflicting viewpoints. Read the data, spot the trend.", weight: "40 questions in 40 min" },
+    { key: "conventions", legacyKey: "english", name: "Conventions of Standard English", section: "english", domains: ["conventions"], blurb: "Punctuation, agreement, pronouns, modifiers and sentence boundaries, passage by passage.", weight: "Commas, agreement, sentence structure" },
+    { key: "production", legacyKey: "english", name: "Production of Writing", section: "english", domains: ["production"], blurb: "Transitions, adding or deleting a sentence, placement, topic sentences and conclusions.", weight: "Transitions, adding and deleting" },
+    { key: "language", legacyKey: "english", name: "Knowledge of Language", section: "english", domains: ["language"], blurb: "Concision, redundancy, precise word choice and a consistent tone.", weight: "Concision, word choice, tone" },
+    { key: "algebra", legacyKey: "math", name: "Preparing for Higher Math", section: "math", domains: ["algebra"], blurb: "Equations, exponents, quadratics, functions and sequences, with every step shown.", weight: "Algebra, functions, sequences" },
+    { key: "geometry", legacyKey: "math", name: "Geometry and Statistics", section: "math", domains: ["geometry"], blurb: "Angles, triangles, circles, area, probability, mean and median.", weight: "Shapes, circles, probability" },
+    { key: "modeling", legacyKey: "math", name: "Essential Skills and Modeling", section: "math", domains: ["modeling"], blurb: "Rates, unit conversions, ratios, percents and real-world graphs.", weight: "Rates, percents, proportions" },
+    { key: "keyIdeas", legacyKey: "reading", name: "Key Ideas and Details", section: "reading", domains: ["keyIdeas"], blurb: "Main idea, explicit detail, inference, cause and effect, and how characters change.", weight: "Main idea, detail, inference" },
+    { key: "craftIntegration", legacyKey: "reading", name: "Craft, Structure and Integration", section: "reading", domains: ["craft", "integration"], blurb: "Words in context, author's purpose, how claims are supported, and paired passages.", weight: "Purpose, word meaning, evidence" },
+    { key: "interpretation", legacyKey: "science", name: "Interpretation of Data", section: "science", domains: ["interpretation"], blurb: "Read tables and graphs, spot trends, interpolate and extrapolate.", weight: "Tables, graphs, trends" },
+    { key: "investigation", legacyKey: "science", name: "Scientific Investigation", section: "science", domains: ["investigation"], blurb: "Variables, controls, procedures and how to design the next experiment.", weight: "Variables, controls, design" },
+    { key: "evaluation", legacyKey: "science", name: "Evaluation of Models", section: "science", domains: ["evaluation"], blurb: "Test claims and hypotheses against data and weigh conflicting viewpoints.", weight: "Claims, hypotheses, viewpoints" },
   ],
   composite: {
     name: "Composite score",
@@ -116,7 +127,7 @@ export const ACT: ExamV2Config = {
   testLength: "2 hr 45 min",
   copy: {
     heroSubs: [
-      "Four section drills on your phone, then two full timed ACTs on a desktop. Test 2 stays unseen until you sit it.",
+      "Eleven skill drills on your phone, then two full timed ACTs on a desktop. Test 2 stays unseen until you sit it.",
       "Mastery first. English and Reading are passage work; practice the pace.",
       "Halfway through the sections. The full test will show your composite.",
       "Hit your composite goal on a full test to finish the plan.",

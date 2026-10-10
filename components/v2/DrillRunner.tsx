@@ -8,7 +8,7 @@ import { X, RotateCcw } from "lucide-react";
 import { ExamV2Config, AnswerValue, QuestionV2 } from "@/lib/v2/types";
 import { getBank, getStimulus } from "@/lib/v2/bank";
 import { v2Routes } from "@/lib/v2/registry";
-import { drillKey, drillQuestions, heldOutTests, nextDrillQuestion, EMPTY_DRILL } from "@/lib/v2/training";
+import { drillKey, drillQuestions, drillStateFor, heldOutTests, nextDrillQuestion, EMPTY_DRILL } from "@/lib/v2/training";
 import { optionOrderFor } from "@/lib/v2/session";
 import { isAnswered, isCorrect } from "@/lib/v2/grading";
 import { useV2Store } from "@/store/useV2Store";
@@ -32,7 +32,7 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
   const { playCorrectSound, playIncorrectSound } = useSound();
   const drill = exam.drills.find((d) => d.key === drillKeyParam);
   const key = drill ? drillKey(exam.id, drill.key) : "";
-  const state = useV2Store((s) => (key ? s.drills[key] : undefined)) ?? EMPTY_DRILL;
+  const drillsMap = useV2Store((s) => s.drills);
   const answerDrill = useV2Store((s) => s.answerDrill);
   const resetDrill = useV2Store((s) => s.resetDrill);
 
@@ -42,6 +42,8 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
   const { isPremium, ready: premiumReady } = useIsPremium();
   const questions = useMemo(() => availableDrillQuestions(exam, allQuestions, isPremium), [exam, allQuestions, isPremium]);
   const capped = isDrillCapped(exam, allQuestions.length, isPremium);
+  // Own progress, or what carried over from the drill this one was split from.
+  const state = drill ? drillStateFor(drillsMap, exam.id, drill, allQuestions) : EMPTY_DRILL;
   const paywall = useV2Paywall(exam, "drill");
   const isNative = useIsNativeApp();
 
@@ -59,7 +61,7 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
   }, [hydrated, drill, router, routes.dashboard]);
 
   const load = useCallback(() => {
-    const fresh = useV2Store.getState().drills[key] ?? EMPTY_DRILL;
+    const fresh = drill ? drillStateFor(useV2Store.getState().drills, exam.id, drill, allQuestions) : EMPTY_DRILL;
     const next = nextDrillQuestion(questions, fresh, currentId.current);
     if (!next) {
       setDone(true);
@@ -73,7 +75,7 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
     setRevealed(false);
     setDone(false);
     scroller.current?.scrollTo({ top: 0 });
-  }, [key, questions]);
+  }, [drill, exam.id, allQuestions, questions]);
 
   useEffect(() => {
     if (hydrated && drill && premiumReady && !question && !done) load();
@@ -92,7 +94,7 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
     setAnswer(final);
     const ok = isCorrect(question, final);
     setRevealed(true);
-    answerDrill(key, question.id, ok);
+    answerDrill(key, question.id, ok, drill ? drillStateFor(useV2Store.getState().drills, exam.id, drill, allQuestions) : undefined);
     if (ok) playCorrectSound();
     else {
       playIncorrectSound();

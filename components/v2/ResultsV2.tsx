@@ -2,12 +2,14 @@
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { ExamV2Config, TestResultV2 } from "@/lib/v2/types";
 import { getQuestionIndex, getStimulus } from "@/lib/v2/bank";
 import { getSectionV2, v2Routes } from "@/lib/v2/registry";
 import { useV2Store, resultsForExam } from "@/store/useV2Store";
 import { useHydration } from "@/hooks/useHydration";
+import { getTigerAsset } from "@/lib/tigerAssets";
 import { QuestionView } from "./QuestionView";
 
 export function ResultsV2({ exam, testNumber }: { exam: ExamV2Config; testNumber: number }) {
@@ -50,6 +52,7 @@ export function ResultsV2({ exam, testNumber }: { exam: ExamV2Config; testNumber
     <div className="mx-auto max-w-3xl px-4 py-6 md:py-10">
       <div className="text-sm font-semibold uppercase tracking-wide text-brand">{exam.shortName} · Practice Test {testNumber}</div>
       <div className="mt-2 flex flex-wrap items-end gap-x-6 gap-y-2">
+        <Image src={getTigerAsset(exam.id, result.composite >= goal ? 2 : 4)} alt="" width={80} height={80} className="h-20 w-20 shrink-0 object-contain" />
         <div>
           <div className="text-5xl font-black tabular-nums md:text-6xl">{result.composite}</div>
           <div className="text-sm text-gray-600">{exam.composite.name} estimate · goal {goal}</div>

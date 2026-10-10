@@ -84,9 +84,12 @@ export function ExamDashboard({ exam }: { exam: ExamConfig }) {
   // This is the exam the person's emails should be about, until they open
   // another exam's dashboard.
   const setPrimaryExam = useStore((state) => state.setPrimaryExam);
+  const markExamStarted = useStore((state) => state.markExamStarted);
   useEffect(() => {
-    if (hydrated) setPrimaryExam(examFamilyId(exam));
-  }, [hydrated, exam, setPrimaryExam]);
+    if (!hydrated) return;
+    setPrimaryExam(examFamilyId(exam));
+    markExamStarted(examFamilyId(exam));
+  }, [hydrated, exam, setPrimaryExam, markExamStarted]);
 
   // State variants: opening a state's dashboard makes it the remembered
   // choice, and the family dashboard forwards to the remembered state.

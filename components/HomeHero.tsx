@@ -7,22 +7,36 @@ import { Button } from "@/components/ui/button";
 import { useAuth } from "@/contexts/AuthContext";
 import { useStore } from "@/store/useStore";
 import { useTranslation } from "@/contexts/LanguageContext";
+import { useExamStarted } from "@/hooks/useExamStarted";
 
-export function HomeHero() {
+// "Go to Dashboard" only once the DMV test was started (a state picked in
+// onboarding). Being a guest is site-wide, so a guest who only started CDL
+// still gets the DMV's "Start practicing" here.
+function useHomeCta() {
   const { user, loading } = useAuth();
   const router = useRouter();
   const startGuestSession = useStore((state) => state.startGuestSession);
   const isGuest = useStore((state) => state.isGuest);
-  const { t } = useTranslation();
+  const firestoreLoaded = useStore((state) => state.firestoreLoaded);
+  const dmvStarted = useExamStarted("dmv");
   // `user` is set as soon as Firebase restores the session, but `loading`
   // stays true until Firestore data finishes loading. Decide on `user` so a
-  // signed-in visitor never sees the signup CTA during (or after a failed) load.
-  const hasSession = !!user || isGuest;
+  // signed-in visitor never sees the signup CTA during (or after a failed)
+  // load; only a loaded account with no state is sent to pick one.
+  const signedInNoState = !!user && firestoreLoaded && !dmvStarted;
+  const hasSession = (!!user && !signedInNoState) || (isGuest && dmvStarted);
 
   const handleTryFree = () => {
     startGuestSession();
     router.push("/onboarding/select-state");
   };
+
+  return { hasSession, signedInNoState, loading, handleTryFree };
+}
+
+export function HomeHero() {
+  const { hasSession, signedInNoState, loading, handleTryFree } = useHomeCta();
+  const { t } = useTranslation();
 
   return (
     <>
@@ -34,6 +48,12 @@ export function HomeHero() {
         <Link href="/dashboard">
           <Button className="bg-gray-900 text-white hover:bg-gray-800 px-8 py-6 text-lg rounded-full">
             {t("common.goToDashboard")}
+          </Button>
+        </Link>
+      ) : signedInNoState ? (
+        <Link href="/onboarding/select-state">
+          <Button className="bg-gray-900 text-white hover:bg-gray-800 px-8 py-6 text-lg rounded-full">
+            {t("common.startPracticing")}
           </Button>
         </Link>
       ) : loading ? (
@@ -87,20 +107,8 @@ export function HomeHero() {
 }
 
 export function HomeCTA() {
-  const { user, loading } = useAuth();
-  const router = useRouter();
-  const startGuestSession = useStore((state) => state.startGuestSession);
-  const isGuest = useStore((state) => state.isGuest);
+  const { hasSession, signedInNoState, loading, handleTryFree } = useHomeCta();
   const { t } = useTranslation();
-  // `user` is set as soon as Firebase restores the session, but `loading`
-  // stays true until Firestore data finishes loading. Decide on `user` so a
-  // signed-in visitor never sees the signup CTA during (or after a failed) load.
-  const hasSession = !!user || isGuest;
-
-  const handleTryFree = () => {
-    startGuestSession();
-    router.push("/onboarding/select-state");
-  };
 
   return (
     <>
@@ -108,6 +116,12 @@ export function HomeCTA() {
         <Link href="/dashboard">
           <Button className="bg-gray-900 text-white hover:bg-gray-800 px-8 py-6 text-lg rounded-full">
             {t("common.goToDashboard")}
+          </Button>
+        </Link>
+      ) : signedInNoState ? (
+        <Link href="/onboarding/select-state">
+          <Button className="bg-gray-900 text-white hover:bg-gray-800 px-8 py-6 text-lg rounded-full">
+            {t("common.startPracticing")}
           </Button>
         </Link>
       ) : loading ? (

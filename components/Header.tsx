@@ -14,16 +14,21 @@ import { Shield, BarChart3 } from "lucide-react";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { TestSwitcher } from "@/components/TestSwitcher";
 import { EXAMS } from "@/lib/exams";
+import { useExamStarted } from "@/hooks/useExamStarted";
 
 export function Header() {
   const { user } = useAuth();
   const pathname = usePathname();
   const photoURL = useStore((state) => state.photoURL);
-  const isGuest = useStore((state) => state.isGuest);
+  const guest = useStore((state) => state.isGuest);
   const isAdmin = useAdmin();
   const hydrated = useHydration();
+  // Guest of the DMV test only: a guest who started another exam has no DMV
+  // dashboard or stats yet, so they see "Sign In" here, not "Sign up to save".
+  const dmvStarted = useExamStarted("dmv");
+  const isGuest = guest && dmvStarted;
   const subscription = useStore((state) => state.subscription);
-  const isPremium = hydrated && !isGuest && !!user && subscription?.isPremium === true;
+  const isPremium = hydrated && !guest && !!user && subscription?.isPremium === true;
   const { t } = useTranslation();
 
   const displayPhotoURL = photoURL || user?.photoURL;
@@ -90,7 +95,7 @@ export function Header() {
                   {t("common.signUpToSave")}
                 </Button>
               </Link>
-            ) : !isGuest ? (
+            ) : !(guest && isOnboarding) ? (
               <Link href="/login">
                 <Button variant="outline" className="text-gray-700 border-gray-300 hover:bg-gray-50">{t("common.signIn")}</Button>
               </Link>

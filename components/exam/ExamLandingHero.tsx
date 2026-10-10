@@ -5,6 +5,8 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { useAuth } from "@/contexts/AuthContext";
 import { useStore } from "@/store/useStore";
+import { useExamStarted } from "@/hooks/useExamStarted";
+import { getExamByPath } from "@/lib/exams";
 
 // The homepage hero (components/HomeHero.tsx) for a non-DMV test: short
 // subtitle, black pill CTA that turns into "Go to Dashboard" once there is a
@@ -14,11 +16,14 @@ import { useStore } from "@/store/useStore";
 // Fresh visitors become guests on their way in, exactly like the homepage's
 // "Try it first": that is what shows the "Sign up to save" prompts and
 // protects their progress if they later sign in to an existing account.
-function useStartCta() {
+// "Go to Dashboard" only once this exam was started: being a guest is
+// site-wide, so another exam's start must not count here.
+function useStartCta(dashboardHref: string) {
   const { user, loading } = useAuth();
   const isGuest = useStore((state) => state.isGuest);
   const startGuestSession = useStore((state) => state.startGuestSession);
-  const hasSession = !!user || isGuest;
+  const started = useExamStarted(getExamByPath(dashboardHref)?.id ?? "");
+  const hasSession = (!!user || isGuest) && started;
   const onStart = () => {
     if (!loading && !user && !isGuest) startGuestSession();
   };
@@ -36,7 +41,7 @@ export function ExamLandingHero({
   shortName: string;
   shots: { mobile: string; desktop: string };
 }) {
-  const { hasSession, onStart } = useStartCta();
+  const { hasSession, onStart } = useStartCta(dashboardHref);
 
   return (
     <>
@@ -87,7 +92,7 @@ export function ExamLandingHero({
 }
 
 export function ExamLandingCTA({ dashboardHref }: { dashboardHref: string }) {
-  const { hasSession, onStart } = useStartCta();
+  const { hasSession, onStart } = useStartCta(dashboardHref);
 
   return (
     <Link href={dashboardHref} onClick={onStart}>

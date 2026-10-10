@@ -49,8 +49,9 @@ export default function TestsHubPage() {
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 tracking-tight">Pick Your Practice Test</h1>
           <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
             Every test on TigerTest is free to start with no account, and uses the same
-            mastery-based training and full-length practice tests. The DMV test has two
-            free practice tests and two more for a one-time $9.99. Everything else is free.
+            mastery-based training and full-length practice tests. The DMV, SAT and ACT each
+            have free practice tests, and one $9.99 Premium unlock opens the rest of all three.
+            Everything else is free.
           </p>
         </div>
       </div>

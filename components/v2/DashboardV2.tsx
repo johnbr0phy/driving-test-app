@@ -5,10 +5,10 @@
 // that turn green, and the tiger calming down as steps complete. Built on the
 // same ProgressCard and tiger artwork as the v1 exam dashboards.
 
-import { useMemo, useState } from "react";
+import { Suspense, useMemo, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { ChevronRight, Smartphone, Monitor, Pencil } from "lucide-react";
+import { ChevronRight, Smartphone, Monitor, Pencil, CheckCircle } from "lucide-react";
 import { ExamV2Config, TestResultV2 } from "@/lib/v2/types";
 import { getBank } from "@/lib/v2/bank";
 import { getSectionV2, stagesOf, v2Routes } from "@/lib/v2/registry";
@@ -18,6 +18,10 @@ import { useV2Store, resultsForExam } from "@/store/useV2Store";
 import { useHydration } from "@/hooks/useHydration";
 import { ProgressCard, Collapse } from "@/components/dashboard/ProgressCard";
 import { getTigerAsset, TigerExpression } from "@/lib/tigerAssets";
+import { useIsPremium } from "@/hooks/useIsPremium";
+import { usePurchaseReturn } from "@/hooks/usePurchaseReturn";
+import { isDrillCapped, isTestLocked, otherPremiumExams } from "@/lib/v2/premium";
+import { useV2Paywall, V2Paywall } from "./V2Paywall";
 
 function heroTitle(done: number, total: number): string {
   if (done === 0) return `Complete all ${total} steps`;
@@ -66,6 +70,8 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
   const history = useMemo(() => resultsForExam(results, exam.id), [results, exam.id]);
   const [editingGoal, setEditingGoal] = useState(false);
   const [expandedTest, setExpandedTest] = useState<number | null>(null);
+  const { isPremium, ready: premiumReady } = useIsPremium();
+  const paywall = useV2Paywall(exam, "dashboard");
 
   const goal = savedGoal ?? exam.defaultGoal;
   const hasGoal = hydrated && savedGoal !== undefined;
@@ -75,13 +81,17 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
     const qs = drillQuestions(bank, d, heldOutTests(exam));
     const st = (hydrated ? drills[drillKey(exam.id, d.key)] : undefined) ?? EMPTY_DRILL;
     const mastered = st.masteredIds.filter((id) => qs.some((q) => q.id === id)).length;
-    return { def: d, total: qs.length, mastered, started: st.seen > 0, complete: qs.length > 0 && mastered === qs.length };
+    const capped = premiumReady && isDrillCapped(exam, qs.length, isPremium);
+    return { def: d, total: qs.length, mastered, capped, started: st.seen > 0, complete: qs.length > 0 && mastered === qs.length };
   });
   const testSteps = exam.tests.map((t) => {
     const attempts = history.filter((r) => r.testNumber === t.number);
     const best = attempts.length ? Math.max(...attempts.map((a) => a.composite)) : null;
     const session = hydrated ? sessions[sessionKey(exam.id, t.number)] : undefined;
-    return { def: t, attempts, best, session, complete: best !== null && best >= goal };
+    // Locked only while there is nothing of theirs to show: an attempt they
+    // already made, or one in progress, stays reachable.
+    const locked = premiumReady && isTestLocked(exam, t.number, isPremium) && !session && attempts.length === 0;
+    return { def: t, attempts, best, session, locked, complete: best !== null && best >= goal };
   });
   const totalSteps = drillSteps.length + testSteps.length;
   const doneSteps = drillSteps.filter((s) => s.complete).length + testSteps.filter((s) => s.complete).length;
@@ -132,6 +142,9 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
       <div className="relative">
         <div className="absolute inset-x-0 top-0 h-96 bg-gradient-to-b from-brand-light to-transparent pointer-events-none" />
         <div className="relative container mx-auto px-4 sm:px-6 py-6 pb-10 max-w-lg md:max-w-2xl lg:max-w-4xl">
+          <Suspense fallback={null}>
+            <PurchaseBanner exam={exam} />
+          </Suspense>
           {!hydrated ? (
             <div className="h-40" />
           ) : !hasGoal || editingGoal ? (
@@ -172,7 +185,11 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
                   )}
                   <ProgressCard
                     title={s.def.name}
-                    subtitle={`${s.mastered}/${s.total} mastered · ${s.def.weight}`}
+                    subtitle={
+                      s.capped
+                        ? `${s.mastered}/${s.total} mastered · first ${exam.premium!.freeDrillQuestions} free`
+                        : `${s.mastered}/${s.total} mastered · ${s.def.weight}`
+                    }
                     completed={s.complete}
                     stepNumber={index + 1}
                     stamp={
@@ -203,7 +220,8 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
 
               const adaptive = exam.sections.some((x) => x.modules.some((m) => m.adaptive));
               let subtitle = `${exam.sections.length} sections · ${exam.testLength}${adaptive ? " · adaptive" : ""}${s.def.heldOut ? " · never in drills" : ""}`;
-              if (s.session && def) subtitle = `In progress · ${def.section.name}, module ${def.module.module}`;
+              if (s.locked) subtitle = `Premium · ${exam.sections.length} sections · ${exam.testLength} · never in drills`;
+              else if (s.session && def) subtitle = `In progress · ${def.section.name}, module ${def.module.module}`;
               else if (s.complete && s.best !== null) subtitle = `Best ${s.best} · goal ${goal} hit`;
               else if (s.best !== null) subtitle = `Best ${s.best} · ${goal - s.best} to your goal of ${goal}`;
 
@@ -220,8 +238,15 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
                     completed={s.complete}
                     stepNumber={drillSteps.length + index + 1}
                     stamp={stamp}
-                    href={hasAttempts ? undefined : routes.test(s.def.number)}
-                    onClick={hasAttempts ? () => setExpandedTest(isExpanded ? null : s.def.number) : undefined}
+                    isPremiumLocked={s.locked}
+                    href={hasAttempts || s.locked ? undefined : routes.test(s.def.number)}
+                    onClick={
+                      s.locked
+                        ? () => paywall.open(`test_${s.def.number}`, s.def.name)
+                        : hasAttempts
+                          ? () => setExpandedTest(isExpanded ? null : s.def.number)
+                          : undefined
+                    }
                     attachedBottom={isExpanded && hasAttempts}
                   >
                     {hasAttempts && (
@@ -252,6 +277,27 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
           <p className="mt-6 text-center text-[11px] text-gray-400">{exam.copy.sourceLine}</p>
         </div>
       </div>
+      <V2Paywall exam={exam} {...paywall.modalProps} />
+    </div>
+  );
+}
+
+/** Thank-you strip after Stripe sends the buyer back here. */
+function PurchaseBanner({ exam }: { exam: ExamV2Config }) {
+  const { justPurchased, dismiss } = usePurchaseReturn();
+  if (!justPurchased) return null;
+  return (
+    <div className="mb-4 flex items-center gap-3 rounded-xl border border-green-200 bg-gradient-to-r from-green-50 to-emerald-50 p-4">
+      <CheckCircle className="h-8 w-8 flex-shrink-0 text-green-500" />
+      <div className="flex-1">
+        <p className="text-base font-bold text-green-900">Welcome to Premium!</p>
+        <p className="mt-0.5 text-xs text-green-700">
+          {exam.shortName} Practice Test 2 and every drill question are unlocked, and so are {otherPremiumExams(exam)}.
+        </p>
+      </div>
+      <button type="button" onClick={dismiss} className="text-green-600 hover:text-green-800" aria-label="Dismiss">
+        &times;
+      </button>
     </div>
   );
 }

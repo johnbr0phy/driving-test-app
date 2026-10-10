@@ -74,7 +74,7 @@ const jsonLd = {
           name: "Can I use TigerTest for free?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. TigerTest is free to use — no credit card or account required to start. Free users get access to Training Sets 1 & 2 and Practice Tests 1 & 2. Premium ($9.99 one-time, not a subscription) unlocks Training Sets 3 & 4, Practice Tests 3 & 4, and full question analytics.",
+            text: "Yes. TigerTest is free to use — no credit card or account required to start. Free users get access to Training Sets 1 & 2 and Practice Tests 1 & 2. Premium ($9.99 one-time, not a subscription) unlocks Training Sets 3 & 4, Practice Tests 3 & 4, and full question analytics, and the same purchase unlocks SAT and ACT Premium too.",
           },
         },
         {

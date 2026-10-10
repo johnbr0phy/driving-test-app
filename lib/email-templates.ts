@@ -232,6 +232,7 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
           "Safety &amp; Emergencies and State Laws, 100 questions",
           "Practice tests C and D",
           "Every question you miss, on repeat",
+          "SAT and ACT Premium too, for whatever test is next",
         ]),
         cta(DASH(v, "paywall_abandon"), "Pick Up Where You Left Off"),
         p("One payment, no subscription. A retest costs more."),
@@ -255,6 +256,7 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
           "Safety &amp; Emergencies and State Laws, 100 more questions",
           "Practice tests C and D",
           "Your stats page, showing what you always get wrong",
+          "SAT and ACT Premium too: Practice Test 2 and every drill",
         ]),
         cta(DASH(v, "upgrade_pitch"), "Upgrade to Premium - $9.99"),
         signoff(),
@@ -276,6 +278,7 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
           "<strong>Safety &amp; Emergencies</strong> and <strong>State Laws</strong>, 100 questions",
           "<strong>Practice tests C and D</strong>",
           "<strong>Your stats page</strong>, showing what you keep missing",
+          "<strong>SAT and ACT Premium</strong>: Practice Test 2 and every drill question, whenever you need them",
         ]),
         p(
           "Open your stats after the next test. It tells you where to spend your study time.",

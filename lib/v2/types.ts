@@ -142,6 +142,18 @@ export interface ExamV2Config {
   goalNotes: Record<number, string>;
   /** Total test time shown on the test step, e.g. "2 hr 14 min". */
   testLength: string;
+  /**
+   * What the one-time TigerTest Premium unlocks on this exam (lib/v2/premium).
+   * Omitted means the whole exam is free.
+   */
+  premium?: {
+    /** Full tests that need Premium. A test already in progress stays open. */
+    lockedTests: number[];
+    /** Free questions per drill: the first N in the drill's fixed order. */
+    freeDrillQuestions: number;
+    /** Premium bullets for the paywall, in this exam's words. */
+    benefits: string[];
+  };
   copy: {
     /** Five hero subtitles for 0%, <40%, <70%, <100%, 100% of steps complete. */
     heroSubs: [string, string, string, string, string];

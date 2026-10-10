@@ -65,6 +65,15 @@ export const ACT: ExamV2Config = {
     { number: 1, name: "Practice Test 1" },
     { number: 2, name: "Practice Test 2", heldOut: true },
   ],
+  premium: {
+    lockedTests: [2],
+    freeDrillQuestions: 15,
+    benefits: [
+      "Practice Test 2: unseen, a true readiness check",
+      "Every question in all four ACT section drills",
+      "The SAT and DMV tests too, with the same purchase",
+    ],
+  },
   domainLabels: {
     conventions: "Conventions of Standard English",
     production: "Production of Writing",

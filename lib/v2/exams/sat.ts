@@ -58,6 +58,15 @@ export const SAT: ExamV2Config = {
     { number: 1, name: "Practice Test 1" },
     { number: 2, name: "Practice Test 2", heldOut: true },
   ],
+  premium: {
+    lockedTests: [2],
+    freeDrillQuestions: 15,
+    benefits: [
+      "Practice Test 2: unseen, adaptive, a true readiness check",
+      "Every question in all eight SAT skill drills",
+      "The ACT and DMV tests too, with the same purchase",
+    ],
+  },
   domainLabels: {
     craftStructure: "Craft and Structure",
     infoIdeas: "Information and Ideas",

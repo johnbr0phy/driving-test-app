@@ -18,8 +18,10 @@ import { useIsNativeApp } from "@/hooks/useIsNativeApp";
 interface PaywallModalProps {
   open: boolean;
   onOpenChange: (open: boolean) => void;
-  feature: "training_set_4" | "practice_test_4" | "full_stats";
+  feature: string;
   onUpgrade: () => Promise<void>;
+  /** Exam-specific bullets (SAT, ACT). Defaults to the DMV list in i18n. */
+  benefits?: string[];
   isGuest?: boolean;
   onSignUp?: () => void;
 }
@@ -31,6 +33,7 @@ export function PaywallModal({
   onUpgrade,
   isGuest = false,
   onSignUp,
+  benefits,
 }: PaywallModalProps) {
   const { t, language } = useTranslation();
   const dict =
@@ -79,7 +82,7 @@ export function PaywallModal({
               {t("paywall.whatYouGet")}
             </div>
             <ul className="space-y-2.5">
-              {dict.paywall.benefits.map((benefit, index) => (
+              {(benefits ?? dict.paywall.benefits).map((benefit, index) => (
                 <li key={index} className="flex items-center gap-2.5 text-sm text-gray-800">
                   <CheckCircle className="h-5 w-5 text-green-600 fill-green-100 flex-shrink-0" />
                   <span>{benefit}</span>

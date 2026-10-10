@@ -8,6 +8,19 @@ import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
+const statePractice = [
+  {
+    name: "California",
+    href: "/real-estate/ca/dashboard",
+    body: "150 source-checked questions weighted to the DRE salesperson outline, national topics checked against California law plus California-only rules.",
+  },
+  {
+    name: "New Jersey",
+    href: "/real-estate/nj/dashboard",
+    body: "110 source-checked questions on the PSI New Jersey outline: 80 general and 30 New Jersey questions.",
+  },
+];
+
 const title = "Free Real Estate Practice Test 2026 - National Salesperson Exam Prep";
 const description =
   "Free real estate practice tests with 200 questions weighted to the national salesperson exam outline used by Pearson VUE and PSI: property, ownership and title, contracts and agency, practice and fair housing, disclosures, financing and real estate math with worked solutions.";
@@ -77,7 +90,7 @@ const jsonLd = {
           name: "Does this cover my state's exam?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "It covers the national portion, which is the same in every Pearson VUE or PSI state. The state portion (license law, agency rules, state contract forms) is separate, and no question here states one state's rule as universal.",
+            text: "California and New Jersey have their own practice: 150 source-checked questions for California and 110 for New Jersey, each including state law. For other states, the 200-question bank covers the national portion, which is the same in every Pearson VUE or PSI state; your state law portion is separate and not covered yet.",
           },
         },
         {
@@ -174,6 +187,32 @@ export default function RealestateLandingPage() {
             </div>
           </div>
         </div>
+      </div>
+
+      {/* State practice */}
+      <div className="max-w-5xl mx-auto px-6 pb-16 md:pb-24">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-4">
+          California and New Jersey Practice
+        </h2>
+        <p className="text-lg text-gray-600 text-center max-w-2xl mx-auto mb-10">
+          Taking the exam in California or New Jersey? Practice with questions checked against your state&apos;s law, including state-only rules. Progress is saved separately for each state.
+        </p>
+        <div className="grid md:grid-cols-2 gap-6">
+          {statePractice.map((s) => (
+            <a
+              key={s.href}
+              href={s.href}
+              className="block bg-gray-50 rounded-2xl p-6 border border-gray-200 hover:border-brand transition-colors"
+            >
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">{s.name}</h3>
+              <p className="text-gray-600 mb-3">{s.body}</p>
+              <span className="text-brand font-semibold">Start {s.name} practice &rarr;</span>
+            </a>
+          ))}
+        </div>
+        <p className="text-sm text-gray-500 text-center mt-6">
+          Practice only. Not affiliated with the California DRE, NJ REC or PSI, and a practice score does not predict your exam result.
+        </p>
       </div>
 
       {/* Blueprint */}
@@ -277,7 +316,7 @@ export default function RealestateLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 mb-2">Does this cover my state&apos;s exam?</h3>
             <p className="text-gray-600">
-              It covers the national portion, which is the same in every Pearson VUE or PSI state. The state portion (license law, agency rules, state contract forms) is separate, and no question here states one state&apos;s rule as universal.
+              California and New Jersey have their own practice: 150 source-checked questions for California and 110 for New Jersey, each including state law. For other states, the 200-question bank covers the national portion, which is the same in every Pearson VUE or PSI state; your state law portion is separate and not covered yet.
             </p>
           </div>
           <div>

@@ -13,7 +13,7 @@
  * This file must stay free of question-data imports (the store imports it).
  */
 
-export type ExamId = "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "emt" | "foodmgr" | "realestate" | "insurance" | "notary" | "aws" | "aplus" | "foodhandler" | "boating" | "hunter" | "secplus" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "htl" | "cst" | "crcst";
+export type ExamId = "realestate-ca" | "realestate-nj" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "emt" | "foodmgr" | "realestate" | "insurance" | "notary" | "aws" | "aplus" | "foodhandler" | "boating" | "hunter" | "secplus" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "htl" | "cst" | "crcst";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (?set=N). */
@@ -31,6 +31,13 @@ export interface ExamTrainingSetDef {
 
 export interface ExamConfig {
   id: ExamId;
+  /** Set on a state variant (realestate-ca): the exam family it belongs to.
+   *  Variants are full exams with their own ID range, pseudo state code and
+   *  question prefix, so progress per state never mixes. They stay out of
+   *  EXAMS (catalog, sitemap, emails) and are listed in EXAM_VARIANTS. */
+  variantOf?: ExamId;
+  /** Jurisdiction a variant covers, e.g. { code: "CA", name: "California" }. */
+  jurisdiction?: { code: string; name: string };
   /** Pseudo state code sessions/attempts are stored under. */
   stateCode: string;
   /** Store ID base; tests are idBase+1.. and, unless setIdBase is set, so are sets. */
@@ -1022,6 +1029,117 @@ const realestate: ExamConfig = {
       "Full prep done. Add your state's law portion and schedule your exam.",
     ],
     sourceLine: "Weighted to the Pearson VUE national salesperson outline (2025), which matches PSI's. Your state portion is separate.",
+    analyticsKey: "realestate",
+  },
+};
+
+// State variants of real estate. Built by tools/build_re_state_banks.py from
+// the reviewed CA and NJ weighted practice forms (2026-10-10 handoff): each
+// item is the form's effective question for that state, national items with
+// state overlays applied plus state-law items. One full-length test is the
+// reviewed form itself; training sets regroup the same items by area.
+// ID ranges sit above every other exam: CA 3901, NJ 3951.
+const realestateCA: ExamConfig = {
+  id: "realestate-ca",
+  variantOf: "realestate",
+  jurisdiction: { code: "CA", name: "California" },
+  stateCode: "REALESTATE_CA",
+  idBase: 3900,
+  slug: "/real-estate/ca",
+  landingPath: "/real-estate-practice-test",
+  name: "California Real Estate Practice Test",
+  shortName: "CA Real Estate",
+  examLabel: "California Salesperson",
+  fullName: "California real estate salesperson exam",
+  questionIdPrefix: "RECA-",
+  icon: "house",
+  testCount: 1,
+  questionsPerTest: 150,
+  passPct: 70,
+  // The reviewed 150-item form, weighted to the DRE salesperson outline.
+  blueprint: {
+    rePropertyCharacteristics: 12,
+    reOwnershipTitle: 15,
+    reValuation: 20,
+    reContractsAgency: 38,
+    rePractice: 35,
+    reDisclosures: 9,
+    reFinancing: 15,
+    reMath: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 3901, name: "Property, Ownership & Title", categories: ["rePropertyCharacteristics", "reOwnershipTitle"], size: 27, weightLabel: "18% of the practice exam" },
+    { setNumber: 2, id: 3902, name: "Contracts & Agency", categories: ["reContractsAgency"], size: 38, weightLabel: "25% of the practice exam" },
+    { setNumber: 3, id: 3903, name: "Practice & Disclosures", categories: ["rePractice", "reDisclosures"], size: 44, weightLabel: "29% of the practice exam" },
+    { setNumber: 4, id: 3904, name: "Valuation, Financing & Math", categories: ["reValuation", "reFinancing", "reMath"], size: 41, weightLabel: "27% of the practice exam" },
+  ],
+  categoryLabels: realestate.categoryLabels,
+  copy: {
+    guestPrompt: "to save your California real estate progress and track every question you miss",
+    trainingHeading: "Train by content area",
+    trainingSub: "Four sets with 150 source-checked questions for California, including California law. Missed questions come back until you master them.",
+    testsHeading: "Full-length practice exam \u00b7 150 questions weighted to the DRE outline",
+    heroSubs: [
+      "California salesperson practice: national topics checked against California law, plus California-only rules.",
+      "Mastery first, then the full-length exam.",
+      "Halfway through. The full-length exam will show where you stand.",
+      "Review the misses, then retake. The DRE exam passes at 70%.",
+      "Practice complete. A practice score is not a prediction of your DRE result.",
+    ],
+    sourceLine: "Source-checked practice weighted to the California DRE salesperson outline (checked Oct 2026). Not affiliated with the DRE; confirm rules in official DRE materials.",
+    analyticsKey: "realestate",
+  },
+};
+
+const realestateNJ: ExamConfig = {
+  id: "realestate-nj",
+  variantOf: "realestate",
+  jurisdiction: { code: "NJ", name: "New Jersey" },
+  stateCode: "REALESTATE_NJ",
+  idBase: 3950,
+  slug: "/real-estate/nj",
+  landingPath: "/real-estate-practice-test",
+  name: "New Jersey Real Estate Practice Test",
+  shortName: "NJ Real Estate",
+  examLabel: "New Jersey Salesperson",
+  fullName: "New Jersey real estate salesperson exam",
+  questionIdPrefix: "RENJ-",
+  icon: "house",
+  testCount: 1,
+  questionsPerTest: 110,
+  passPct: 70,
+  // The reviewed 110-item form: 80 general and 30 New Jersey items, per the
+  // PSI candidate bulletin (updated Feb 2026).
+  blueprint: {
+    rePropertyCharacteristics: 8,
+    reOwnershipTitle: 8,
+    reValuation: 5,
+    reContractsAgency: 30,
+    rePractice: 32,
+    reDisclosures: 6,
+    reFinancing: 11,
+    reMath: 10,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 3951, name: "Property, Ownership & Title", categories: ["rePropertyCharacteristics", "reOwnershipTitle"], size: 16, weightLabel: "15% of the practice exam" },
+    { setNumber: 2, id: 3952, name: "Contracts & Agency", categories: ["reContractsAgency"], size: 30, weightLabel: "27% of the practice exam" },
+    { setNumber: 3, id: 3953, name: "Practice & Disclosures", categories: ["rePractice", "reDisclosures"], size: 38, weightLabel: "35% of the practice exam" },
+    { setNumber: 4, id: 3954, name: "Valuation, Financing & Math", categories: ["reValuation", "reFinancing", "reMath"], size: 26, weightLabel: "24% of the practice exam" },
+  ],
+  categoryLabels: realestate.categoryLabels,
+  copy: {
+    guestPrompt: "to save your New Jersey real estate progress and track every question you miss",
+    trainingHeading: "Train by content area",
+    trainingSub: "Four sets with 110 source-checked questions for New Jersey, general and New Jersey law. Missed questions come back until you master them.",
+    testsHeading: "Full-length practice exam \u00b7 110 questions, 80 general and 30 New Jersey",
+    heroSubs: [
+      "New Jersey salesperson practice: general topics checked against New Jersey law, plus New Jersey rules.",
+      "Mastery first, then the full-length exam.",
+      "Halfway through. The full-length exam will show where you stand.",
+      "Review the misses, then retake. The PSI exam passes at 70%.",
+      "Practice complete. A practice score is not a prediction of your PSI result.",
+    ],
+    sourceLine: "Source-checked practice on the PSI New Jersey salesperson outline (bulletin updated Feb 2026). Not affiliated with NJ REC or PSI; confirm rules in official materials.",
     analyticsKey: "realestate",
   },
 };
@@ -2067,6 +2185,20 @@ const crcst: ExamConfig = {
 
 export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, cet, danb, emt, foodmgr, realestate, insurance, notary, aws, aplus, foodhandler, boating, hunter, secplus, cpr, osha, forklift, alcohol, security, lifeguard, pnc, htl, cst, crcst];
 
+/** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */
+export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ];
+/** Every exam the store and app routes resolve, variants first. */
+export const ALL_EXAMS: ExamConfig[] = [...EXAM_VARIANTS, ...EXAMS];
+
+/** Family an exam belongs to: its own id, or the parent id for a variant. */
+export const examFamilyId = (exam: ExamConfig): ExamId => exam.variantOf ?? exam.id;
+/** State variants of an exam family (empty when it has none). */
+export const getExamVariants = (familyId: string): ExamConfig[] =>
+  EXAM_VARIANTS.filter((e) => e.variantOf === familyId);
+/** Variant of a family for a jurisdiction code ("ca" or "CA"), if any. */
+export const getExamVariant = (familyId: string, code: string | null | undefined): ExamConfig | undefined =>
+  code ? getExamVariants(familyId).find((e) => e.jurisdiction?.code === code.toUpperCase()) : undefined;
+
 export const examSetBase = (exam: ExamConfig) => exam.setIdBase ?? exam.idBase;
 /** Store ID of training set N of an exam. */
 export const examSetId = (exam: ExamConfig, setNumber: number) => examSetBase(exam) + setNumber;
@@ -2077,27 +2209,29 @@ export const examTestIds = (exam: ExamConfig) =>
   Array.from({ length: exam.testCount }, (_, i) => exam.idBase + 1 + i);
 
 export function getExamById(id: string): ExamConfig | undefined {
-  return EXAMS.find((e) => e.id === id);
+  return ALL_EXAMS.find((e) => e.id === id);
 }
 
 export function getExamByStateCode(code: string | null | undefined): ExamConfig | undefined {
   if (!code) return undefined;
-  return EXAMS.find((e) => e.stateCode === code.toUpperCase());
+  return ALL_EXAMS.find((e) => e.stateCode === code.toUpperCase());
 }
 
 /** Exam owning a practice-test store ID, if any. */
 export function getExamForTestId(testId: number): ExamConfig | undefined {
-  return EXAMS.find((e) => testId > e.idBase && testId <= e.idBase + e.testCount);
+  return ALL_EXAMS.find((e) => testId > e.idBase && testId <= e.idBase + e.testCount);
 }
 
 /** Exam owning a training-set store ID, if any. */
 export function getExamForSetId(setId: number): ExamConfig | undefined {
-  return EXAMS.find((e) => setId > examSetBase(e) && setId <= examSetBase(e) + e.trainingSets.length);
+  return ALL_EXAMS.find((e) => setId > examSetBase(e) && setId <= examSetBase(e) + e.trainingSets.length);
 }
 
 /** Exam whose pages a pathname belongs to (landing included), if any. */
 export function getExamByPath(pathname: string | null | undefined): ExamConfig | undefined {
   if (!pathname) return undefined;
+  // Families only: a variant's pages live under its family slug
+  // (/real-estate/ca/...), so theme, header and footer follow the family.
   return EXAMS.find(
     (e) => pathname === e.slug || pathname.startsWith(`${e.slug}/`) || pathname === e.landingPath
   );
@@ -2109,12 +2243,12 @@ export function getExamTrainingSetSize(setId: number): number {
 }
 
 export function isExamQuestionId(questionId: string): boolean {
-  return EXAMS.some((e) => questionId.startsWith(e.questionIdPrefix));
+  return ALL_EXAMS.some((e) => questionId.startsWith(e.questionIdPrefix));
 }
 
 /** Exam owning a question ID by prefix, if any (DMV IDs are "U-" or a state code). */
 export function getExamForQuestionId(questionId: string): ExamConfig | undefined {
-  return EXAMS.find((e) => questionId.startsWith(e.questionIdPrefix));
+  return ALL_EXAMS.find((e) => questionId.startsWith(e.questionIdPrefix));
 }
 
 /**
@@ -2124,6 +2258,6 @@ export function getExamForQuestionId(questionId: string): ExamConfig | undefined
 export const DMV_ANALYTICS_KEY = "dmv";
 export type ExamAnalyticsKey = ExamId | typeof DMV_ANALYTICS_KEY;
 export const EXAM_ANALYTICS_KEYS: ExamAnalyticsKey[] = [DMV_ANALYTICS_KEY, ...EXAMS.map((e) => e.id)];
-export const examAnalyticsKey = (exam: ExamConfig | undefined): ExamAnalyticsKey => exam?.id ?? DMV_ANALYTICS_KEY;
+export const examAnalyticsKey = (exam: ExamConfig | undefined): ExamAnalyticsKey => (exam ? examFamilyId(exam) : DMV_ANALYTICS_KEY);
 export const examAnalyticsLabel = (key: string): string =>
   key === DMV_ANALYTICS_KEY ? "DMV permit test" : getExamById(key)?.shortName ?? key;

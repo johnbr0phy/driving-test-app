@@ -1,5 +1,5 @@
 // Question types
-export type QuestionType = "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HAM" | "EPA608" | "CNA" | "PTCB" | "PHLEB" | "CCMA" | "CET" | "DANB" | "EMT" | "FOODMGR" | "REALESTATE" | "LIFEHEALTH" | "NOTARY" | "TEAS" | "AWSCCP" | "APLUS" | "FOODHANDLER" | "BOATING" | "HUNTER" | "SECPLUS" | "HESI" | "HTL" | "CST" | "CRCST";
+export type QuestionType = "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HAM" | "EPA608" | "CNA" | "PTCB" | "PHLEB" | "CCMA" | "CET" | "DANB" | "EMT" | "FOODMGR" | "REALESTATE" | "LIFEHEALTH" | "NOTARY" | "TEAS" | "AWSCCP" | "APLUS" | "FOODHANDLER" | "BOATING" | "HUNTER" | "SECPLUS" | "HESI" | "ASVAB" | "CPR" | "OSHA" | "FORKLIFT" | "ALCOHOL" | "ACCUPLACER" | "SECGUARD" | "LIFEGUARD" | "PNC" | "HTL" | "CST" | "CRCST";
 
 // Test mode
 export type TestMode = "dmv" | "cdl" | "htl";
@@ -242,7 +242,76 @@ export type QuestionCategory =
   | "hesiGrammar"
   | "hesiBiology"
   | "hesiChemistry"
-  | "hesiAnatomy";
+  | "hesiAnatomy"
+  // ASVAB subtests
+  | "asvabGeneralScience"
+  | "asvabArithmetic"
+  | "asvabWordKnowledge"
+  | "asvabParagraph"
+  | "asvabMathKnowledge"
+  | "asvabElectronics"
+  | "asvabAutoShop"
+  | "asvabMechanical"
+
+  // CPR, AED and first aid categories
+  | "cprBasics"
+  | "cprAdult"
+  | "cprChildInfant"
+  | "cprChoking"
+  | "cprFirstAid"
+
+  // OSHA 10 modules
+  | "oshaIntro"
+  | "oshaFalls"
+  | "oshaElectrical"
+  | "oshaStruckCaught"
+  | "oshaHazcom"
+  | "oshaHealth"
+
+  // Forklift operator categories
+  | "forkBasics"
+  | "forkStability"
+  | "forkInspection"
+  | "forkOperation"
+  | "forkLoads"
+
+  // Alcohol server categories
+  | "alcEffects"
+  | "alcIntoxication"
+  | "alcChecking"
+  | "alcIntervention"
+  | "alcLaw"
+
+  // ACCUPLACER sections
+  | "accReading"
+  | "accWriting"
+  | "accArithmetic"
+  | "accQAS"
+  | "accAAF"
+
+  // Security guard categories
+  | "sgRole"
+  | "sgLegal"
+  | "sgObservation"
+  | "sgReports"
+  | "sgEmergency"
+  | "sgSafety"
+
+  // Lifeguard categories
+  | "lgProfessional"
+  | "lgRecognition"
+  | "lgRescue"
+  | "lgCare"
+  | "lgFacility"
+
+  // Property and casualty categories
+  | "pcGeneral"
+  | "pcPolicy"
+  | "pcHomeowners"
+  | "pcAuto"
+  | "pcCommercial"
+  | "pcLiability"
+  | "pcOther";
 
 export interface Question {
   type: QuestionType;

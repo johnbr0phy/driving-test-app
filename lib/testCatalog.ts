@@ -46,6 +46,15 @@ const EXAM_BLURBS: Record<string, string> = {
   phleb: "Phlebotomy technician certification on the NHA CPT test plan, also covers ASCP PBT and AMT RPT. Order of draw, technique, safety, processing and special collections.",
   ccma: "NHA clinical medical assistant exam. Vitals, patient care, infection control, lab, phlebotomy, EKG, admin, communication and law, on the CCMA test plan.",
   cet: "NHA certified EKG technician exam. Lead placement, artifacts, Holter and stress testing, patient safety, and rhythm analysis, on the CET test plan.",
+  asvab: "ASVAB practice test across all eight written subtests: arithmetic reasoning, math knowledge, word knowledge, paragraph comprehension, general science, electronics, auto and shop, mechanical comprehension.",
+  cpr: "CPR, AED and first aid certification written exam prep on current resuscitation guidelines: chain of survival, adult, child and infant CPR, AED use, choking, bleeding, shock, burns and more.",
+  osha: "OSHA 10 Outreach course final exam prep for construction and general industry: worker rights, fall protection, electrical, struck-by and caught-in, hazard communication, PPE and health hazards.",
+  forklift: "Forklift operator certification written test on OSHA 1910.178: stability triangle, load capacity, pre-shift inspection, safe travel, pedestrians, docks and ramps.",
+  alcohol: "Alcohol server and seller certification exam prep: how alcohol affects the body, recognizing intoxication, checking IDs, refusing service, dram shop liability. For any state or provider course.",
+  accuplacer: "Next-Generation ACCUPLACER placement test: reading passages, writing revisions, arithmetic, quantitative reasoning, algebra and statistics, and advanced algebra and functions.",
+  security: "Unarmed security guard license (guard card) exam prep: legal powers and use of force, observation and patrol, access control, report writing, emergency response and terrorism awareness.",
+  lifeguard: "Lifeguard certification written exam prep: scanning and surveillance, recognizing drowning, water rescues and spinal injury care, first aid, CPR and AED, facility safety.",
+  pnc: "Property and casualty insurance license exam, general portion. Insurance basics, policy provisions, homeowners and dwelling forms, personal auto, commercial lines, flood and surety.",
   hesi: "HESI A2 nursing entrance exam. Math with dosage conversions, reading passages, medical vocabulary, grammar, biology, chemistry and anatomy and physiology.",
   secplus: "CompTIA Security+ SY0-701. General security concepts, threats and vulnerabilities, architecture, operations, and program management, in CompTIA's scenario style.",
   hunter: "Hunter education (hunter safety) exam prep on the IHEA standards: firearm safety and carries, ammunition, shot placement, tree stands, wildlife identification, conservation, ethics and survival.",
@@ -66,7 +75,7 @@ const EXAM_BLURBS: Record<string, string> = {
 };
 
 // Short issuing-body line for menus; defaults to the exam label.
-const EXAM_ORG: Record<string, string> = { cdl: "Commercial license", cdlx: "H, air brakes, combo, N, P", moto: "Permit knowledge test", civics: "USCIS naturalization", part107: "FAA drone pilot", ham: "FCC Technician licence", epa608: "HVAC refrigerant certification", cna: "Nurse aide written exam", ptcb: "Pharmacy technician certification", phleb: "NHA CPT, ASCP PBT, AMT RPT", ccma: "NHA medical assistant exam", cet: "NHA EKG technician exam", danb: "DANB CDA: GC, RHS, ICE", emt: "NREMT cognitive exam", foodmgr: "ANAB-CFP accredited exams", realestate: "National portion, Pearson VUE and PSI", insurance: "Life, accident & health producer exam", notary: "General notary law, all states", teas: "Nursing & allied health admissions", aws: "AWS CLF-C02", aplus: "CompTIA 220-1201 / 220-1202", foodhandler: "ANAB-accredited course tests", boating: "NASBLA state boater exams", hunter: "IHEA state hunter education exams", secplus: "CompTIA SY0-701", hesi: "Nursing school admissions" };
+const EXAM_ORG: Record<string, string> = { cdl: "Commercial license", cdlx: "H, air brakes, combo, N, P", moto: "Permit knowledge test", civics: "USCIS naturalization", part107: "FAA drone pilot", ham: "FCC Technician licence", epa608: "HVAC refrigerant certification", cna: "Nurse aide written exam", ptcb: "Pharmacy technician certification", phleb: "NHA CPT, ASCP PBT, AMT RPT", ccma: "NHA medical assistant exam", cet: "NHA EKG technician exam", danb: "DANB CDA: GC, RHS, ICE", emt: "NREMT cognitive exam", foodmgr: "ANAB-CFP accredited exams", realestate: "National portion, Pearson VUE and PSI", insurance: "Life, accident & health producer exam", notary: "General notary law, all states", teas: "Nursing & allied health admissions", aws: "AWS CLF-C02", aplus: "CompTIA 220-1201 / 220-1202", foodhandler: "ANAB-accredited course tests", boating: "NASBLA state boater exams", hunter: "IHEA state hunter education exams", secplus: "CompTIA SY0-701", hesi: "Nursing school admissions", asvab: "Military entrance, all branches", cpr: "Lay rescuer & healthcare BLS courses", osha: "OSHA Outreach course final", forklift: "OSHA 1910.178 operator evaluation", alcohol: "State & provider server courses", accuplacer: "College placement", security: "State guard card exams", lifeguard: "Certification written exam", pnc: "P&C producer exam, general portion" };
 
 const examEntry = (exam: ExamConfig): TestCatalogEntry => ({
   id: exam.id,
@@ -87,12 +96,13 @@ export const TEST_CATALOG: TestCatalogEntry[] = [dmv, ...EXAMS.map(examEntry)];
 const GROUPS: { title: string; ids: string[] }[] = [
   { title: "Driving tests", ids: ["dmv", "cdl", "cdlx", "moto"] },
   { title: "Citizenship", ids: ["civics"] },
-  { title: "Outdoor & recreation licenses", ids: ["boating", "hunter"] },
-  { title: "Aviation, radio & trade licenses", ids: ["part107", "ham", "epa608", "foodmgr", "foodhandler"] },
-  { title: "Real estate, insurance & notary licenses", ids: ["realestate", "insurance", "notary"] },
-  { title: "College & nursing school entrance", ids: ["teas", "hesi"] },
+  { title: "Outdoor & recreation licenses", ids: ["boating", "hunter", "lifeguard"] },
+  { title: "Workplace & job certifications", ids: ["foodhandler", "osha", "forklift", "alcohol", "security"] },
+  { title: "Aviation, radio & trade licenses", ids: ["part107", "ham", "epa608", "foodmgr"] },
+  { title: "Real estate, insurance & notary licenses", ids: ["realestate", "insurance", "pnc", "notary"] },
+  { title: "College, military & nursing school entrance", ids: ["teas", "hesi", "accuplacer", "asvab"] },
   { title: "IT certifications", ids: ["aplus", "secplus", "aws"] },
-  { title: "Emergency services", ids: ["emt"] },
+  { title: "Emergency services", ids: ["emt", "cpr"] },
   { title: "Healthcare certification exams", ids: ["cna", "ccma", "ptcb", "phleb", "cet", "danb", "htl", "cst", "crcst"] },
 ];
 export const TEST_GROUPS: { title: string; tests: TestCatalogEntry[] }[] = [
@@ -129,6 +139,15 @@ const SEARCH_ALIASES: Record<string, string> = {
   hunter: "hunter education hunting license safety course firearm rifle shotgun bow archery ihea",
   secplus: "comptia security plus sy0-701 cybersecurity cyber security certification",
   hesi: "hesi a2 admission assessment nursing entrance exam evolve elsevier",
+  asvab: "asvab afqt military army navy air force marines coast guard enlistment recruiter picat",
+  cpr: "cpr aed first aid bls basic life support heartsaver red cross aha certification babysitting",
+  osha: "osha 10 osha 30 outreach construction general industry safety card focus four",
+  forklift: "forklift certification powered industrial truck operator license warehouse pallet jack osha",
+  alcohol: "alcohol server seller certification bartender license tabc tips rbs responsible beverage service",
+  accuplacer: "accuplacer college placement test community college next generation college board",
+  security: "security guard card license unarmed guard officer test pre-assignment",
+  lifeguard: "lifeguard certification pool waterfront red cross ymca written exam",
+  pnc: "property casualty insurance license p&c producer agent exam homeowners auto commercial",
   htl: "histology histotechnologist histotechnician ascp",
   cst: "surgical technologist scrub tech operating room",
   crcst: "sterile processing central service hspa cbspd",
@@ -188,6 +207,10 @@ const RELATED_OVERRIDES: Record<string, string[]> = {
   hesi: ["cna", "ccma", "phleb"],
   boating: ["dmv", "moto"],
   hunter: ["dmv", "moto"],
+  lifeguard: ["cpr", "foodhandler", "dmv"],
+  cpr: ["lifeguard", "cna", "emt"],
+  asvab: ["dmv", "cpr"],
+  accuplacer: ["teas", "hesi"],
 };
 const RELATED_FALLBACK = ["dmv", "cdl", "teas", "cna"];
 

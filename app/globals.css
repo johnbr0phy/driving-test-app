@@ -406,6 +406,132 @@
     --brand-gradient-to: 340 70% 95%;
   }
 
+  /* ASVAB theme: army green */
+  [data-theme="asvab"] {
+    --brand: 95 30% 34%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 95 40% 95%;
+    --brand-hover: 95 30% 28%;
+    --brand-dark: 95 30% 22%;
+    --brand-darker: 95 20% 16%;
+    --brand-muted: 95 20% 72%;
+    --brand-border: 95 20% 78%;
+    --brand-border-light: 95 20% 88%;
+    --brand-gradient-to: 60 70% 95%;
+  }
+
+  /* CPR theme: emergency red */
+  [data-theme="cpr"] {
+    --brand: 355 70% 44%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 355 80% 95%;
+    --brand-hover: 355 70% 38%;
+    --brand-dark: 355 70% 32%;
+    --brand-darker: 355 60% 16%;
+    --brand-muted: 355 50% 72%;
+    --brand-border: 355 50% 78%;
+    --brand-border-light: 355 45% 88%;
+    --brand-gradient-to: 20 70% 95%;
+  }
+
+  /* OSHA 10 theme: steel blue */
+  [data-theme="osha"] {
+    --brand: 205 55% 38%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 205 65% 95%;
+    --brand-hover: 205 55% 32%;
+    --brand-dark: 205 55% 26%;
+    --brand-darker: 205 45% 16%;
+    --brand-muted: 205 35% 72%;
+    --brand-border: 205 35% 78%;
+    --brand-border-light: 205 30% 88%;
+    --brand-gradient-to: 180 70% 95%;
+  }
+
+  /* Forklift theme: mustard */
+  [data-theme="forklift"] {
+    --brand: 42 80% 36%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 42 80% 95%;
+    --brand-hover: 42 80% 30%;
+    --brand-dark: 42 80% 24%;
+    --brand-darker: 42 70% 16%;
+    --brand-muted: 42 60% 72%;
+    --brand-border: 42 60% 78%;
+    --brand-border-light: 42 55% 88%;
+    --brand-gradient-to: 20 70% 95%;
+  }
+
+  /* Alcohol server theme: burgundy */
+  [data-theme="alcohol"] {
+    --brand: 345 55% 36%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 345 65% 95%;
+    --brand-hover: 345 55% 30%;
+    --brand-dark: 345 55% 24%;
+    --brand-darker: 345 45% 16%;
+    --brand-muted: 345 35% 72%;
+    --brand-border: 345 35% 78%;
+    --brand-border-light: 345 30% 88%;
+    --brand-gradient-to: 15 70% 95%;
+  }
+
+  /* ACCUPLACER theme: teal */
+  [data-theme="accuplacer"] {
+    --brand: 175 55% 32%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 175 65% 95%;
+    --brand-hover: 175 55% 26%;
+    --brand-dark: 175 55% 20%;
+    --brand-darker: 175 45% 16%;
+    --brand-muted: 175 35% 72%;
+    --brand-border: 175 35% 78%;
+    --brand-border-light: 175 30% 88%;
+    --brand-gradient-to: 150 70% 95%;
+  }
+
+  /* Security guard theme: slate blue */
+  [data-theme="security"] {
+    --brand: 222 35% 36%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 222 45% 95%;
+    --brand-hover: 222 35% 30%;
+    --brand-dark: 222 35% 24%;
+    --brand-darker: 222 25% 16%;
+    --brand-muted: 222 20% 72%;
+    --brand-border: 222 20% 78%;
+    --brand-border-light: 222 20% 88%;
+    --brand-gradient-to: 200 70% 95%;
+  }
+
+  /* Lifeguard theme: aqua */
+  [data-theme="lifeguard"] {
+    --brand: 190 75% 34%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 190 80% 95%;
+    --brand-hover: 190 75% 28%;
+    --brand-dark: 190 75% 22%;
+    --brand-darker: 190 65% 16%;
+    --brand-muted: 190 55% 72%;
+    --brand-border: 190 55% 78%;
+    --brand-border-light: 190 50% 88%;
+    --brand-gradient-to: 165 70% 95%;
+  }
+
+  /* Property and casualty theme: forest green */
+  [data-theme="pnc"] {
+    --brand: 160 50% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 160 60% 95%;
+    --brand-hover: 160 50% 24%;
+    --brand-dark: 160 50% 18%;
+    --brand-darker: 160 40% 16%;
+    --brand-muted: 160 30% 72%;
+    --brand-border: 160 30% 78%;
+    --brand-border-light: 160 25% 88%;
+    --brand-gradient-to: 135 70% 95%;
+  }
+
   /* Motorcycle permit theme: deep red */
   [data-theme="moto"] {
     --brand: 355 72% 44%;

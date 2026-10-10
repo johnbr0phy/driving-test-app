@@ -14,6 +14,10 @@ export function HomeHero() {
   const startGuestSession = useStore((state) => state.startGuestSession);
   const isGuest = useStore((state) => state.isGuest);
   const { t } = useTranslation();
+  // `user` is set as soon as Firebase restores the session, but `loading`
+  // stays true until Firestore data finishes loading. Decide on `user` so a
+  // signed-in visitor never sees the signup CTA during (or after a failed) load.
+  const hasSession = !!user || isGuest;
 
   const handleTryFree = () => {
     startGuestSession();
@@ -26,12 +30,14 @@ export function HomeHero() {
         {t("landing.heroSubtitle")}
       </p>
 
-      {!loading && (user || isGuest) ? (
+      {hasSession ? (
         <Link href="/dashboard">
           <Button className="bg-gray-900 text-white hover:bg-gray-800 px-8 py-6 text-lg rounded-full">
             {t("common.goToDashboard")}
           </Button>
         </Link>
+      ) : loading ? (
+        <div className="h-[104px]" aria-hidden />
       ) : (
         <div className="flex flex-col items-center gap-3">
           <Link href="/signup">
@@ -86,6 +92,10 @@ export function HomeCTA() {
   const startGuestSession = useStore((state) => state.startGuestSession);
   const isGuest = useStore((state) => state.isGuest);
   const { t } = useTranslation();
+  // `user` is set as soon as Firebase restores the session, but `loading`
+  // stays true until Firestore data finishes loading. Decide on `user` so a
+  // signed-in visitor never sees the signup CTA during (or after a failed) load.
+  const hasSession = !!user || isGuest;
 
   const handleTryFree = () => {
     startGuestSession();
@@ -94,12 +104,14 @@ export function HomeCTA() {
 
   return (
     <>
-      {!loading && (user || isGuest) ? (
+      {hasSession ? (
         <Link href="/dashboard">
           <Button className="bg-gray-900 text-white hover:bg-gray-800 px-8 py-6 text-lg rounded-full">
             {t("common.goToDashboard")}
           </Button>
         </Link>
+      ) : loading ? (
+        <div className="h-[104px]" aria-hidden />
       ) : (
         <div className="flex flex-col items-center gap-3">
           <Link href="/signup">

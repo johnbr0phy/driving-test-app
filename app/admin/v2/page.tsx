@@ -56,6 +56,7 @@ interface Metrics {
   activeMonthly: { date: string; count: number }[];
   // Optional: older cached payloads predate the per-exam split.
   questionsByExam?: { id: string; label: string; total: number; last7d: number; prev7d: number; today: number }[];
+  launchTest?: { id: string; name: string; subject: string; sent: number; clicked: number; bought: number }[];
   testRequests?: {
     total: number;
     byPick: { id: string; label: string; clicks: number; withDetails: number }[];
@@ -473,6 +474,61 @@ function TestRequests({ data }: { data: NonNullable<Metrics["testRequests"]> }) 
   );
 }
 
+function LaunchTest({ rows }: { rows: NonNullable<Metrics["launchTest"]> }) {
+  const sent = rows.reduce((n, r) => n + r.sent, 0);
+  const rate = (n: number, d: number) => (d > 0 ? `${((n / d) * 100).toFixed(1)}%` : "—");
+  const bestCtr = Math.max(...rows.map((r) => (r.sent > 0 ? r.clicked / r.sent : 0)));
+  return (
+    <div className="bg-white rounded-xl border border-gray-200/80 shadow-sm p-5">
+      <div className="mb-4 flex items-baseline justify-between gap-2">
+        <h2 className="text-sm font-semibold text-gray-900">SAT/ACT launch email split test</h2>
+        <p className="text-xs text-gray-400">{fmtInt(sent)} sent to DMV readers</p>
+      </div>
+      {sent === 0 ? (
+        <p className="text-sm text-gray-400">Nothing sent yet. The email is paused until NEW_TESTS_CAMPAIGN=send is set in Vercel.</p>
+      ) : (
+        <div className="overflow-x-auto">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="text-[11px] uppercase tracking-wide text-gray-400">
+                <th className="text-left font-medium pb-2">Variant</th>
+                <th className="text-right font-medium pb-2 pl-4">Sent</th>
+                <th className="text-right font-medium pb-2 pl-4">Clicked</th>
+                <th className="text-right font-medium pb-2 pl-4">Click rate</th>
+                <th className="text-right font-medium pb-2 pl-4">Bought</th>
+                <th className="text-right font-medium pb-2 pl-4">Buy rate</th>
+              </tr>
+            </thead>
+            <tbody>
+              {rows.map((r) => {
+                const lead = r.sent > 0 && r.clicked / r.sent === bestCtr && bestCtr > 0;
+                return (
+                  <tr key={r.id} className="border-t border-gray-100">
+                    <td className="py-2">
+                      <div className="font-medium text-gray-900">{r.id} · {r.name}{lead ? " ★" : ""}</div>
+                      <div className="text-[11px] text-gray-400">{r.subject}</div>
+                    </td>
+                    <td className="py-2 pl-4 text-right tabular-nums text-gray-600">{fmtInt(r.sent)}</td>
+                    <td className="py-2 pl-4 text-right tabular-nums text-gray-600">{fmtInt(r.clicked)}</td>
+                    <td className="py-2 pl-4 text-right tabular-nums text-gray-900 font-medium">{rate(r.clicked, r.sent)}</td>
+                    <td className="py-2 pl-4 text-right tabular-nums text-gray-600">{fmtInt(r.bought)}</td>
+                    <td className="py-2 pl-4 text-right tabular-nums text-gray-900">{rate(r.bought, r.sent)}</td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
+      )}
+      <p className="mt-4 text-[11px] text-gray-400">
+        Each DMV reader gets one variant, fixed by their account. Clicked counts people, not clicks. Bought is Premium
+        purchased after the email. Differences under a few points need a few hundred sends per variant before they mean much.
+        Set NEW_TESTS_WINNER to a variant id in Vercel to send the rest of the list that one.
+      </p>
+    </div>
+  );
+}
+
 // ─── Page ───────────────────────────────────────────────────────────────────
 export default function AdminV2Page() {
   const { user, loading: authLoading } = useAuth();
@@ -862,6 +918,9 @@ export default function AdminV2Page() {
           totalQuestions={kpis.totalQuestions}
           backfillPending={metrics.questionsByExamBackfillPending === true}
         />
+
+        {/* Launch email split test */}
+        {metrics.launchTest && <LaunchTest rows={metrics.launchTest} />}
 
         {/* Test requests */}
         {metrics.testRequests && <TestRequests data={metrics.testRequests} />}

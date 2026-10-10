@@ -10,7 +10,7 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
 const title = "Free ACCUPLACER Practice Test 2026 - Reading, Writing & Math Placement";
 const description =
-  "Free Next-Generation ACCUPLACER practice tests with 200 questions across reading with embedded passages, writing and sentence revision, arithmetic, quantitative reasoning, algebra and statistics, and advanced algebra and functions. The key step is shown on every math answer.";
+  "Free Next-Generation ACCUPLACER practice tests with 200 questions across reading passages, writing and sentence revision, arithmetic, quantitative reasoning, algebra and statistics, and advanced algebra and functions. The key step is shown on every math answer.";
 
 export const metadata: Metadata = {
   title,
@@ -41,7 +41,7 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "WebApplication",
-      name: "TigerTest - Free ACCUPLACER Practice Tests",
+      name: "TigerTest - Free ACCUPLACER Placement Tests on a Computer",
       description,
       url: `${siteUrl}/accuplacer-practice-test`,
       applicationCategory: "EducationalApplication",
@@ -49,10 +49,11 @@ const jsonLd = {
       offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
       featureList: [
         "200 ACCUPLACER practice questions",
-        "4 practice tests across all five placement sections",
-        "Training sets for reading, writing, arithmetic and algebra",
+        "Two untimed practice tests across all five placement sections",
+        "Section scores on the 200 to 300 ACCUPLACER scale",
+        "Mastery drills for reading, writing, arithmetic, quantitative reasoning and advanced algebra",
         "Instant feedback with explanations",
-        "Auto-save progress",
+        "Progress syncs between phone and computer",
       ],
     },
     {
@@ -101,7 +102,7 @@ const jsonLd = {
           name: "Is the TigerTest ACCUPLACER practice test free?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. All four practice tests and all training sets are free, with no account required. Create a free account if you want your progress saved across devices. TigerTest is not affiliated with the College Board.",
+            text: "Yes. Both practice tests and all five drills are free, with no account required. Create a free account to keep your progress in step between your phone and your computer. TigerTest is not affiliated with the College Board.",
           },
         },
       ],
@@ -134,7 +135,7 @@ export default function AccuplacerLandingPage() {
             Free ACCUPLACER Practice Test 2026
           </h1>
           <ExamLandingHero
-            dashboardHref="/accuplacer/dashboard"
+            dashboardHref="/accuplacer"
             shortName="ACCUPLACER"
             subtitle="200 questions across reading, writing, arithmetic, quantitative reasoning and algebra, and advanced algebra and functions. Tuned for mobile. No account needed."
             shots={{ mobile: "/landing/accuplacer-mobile.png", desktop: "/landing/accuplacer-desktop.png" }}
@@ -153,9 +154,9 @@ export default function AccuplacerLandingPage() {
               <Smartphone className="w-7 h-7 text-brand" />
             </div>
             <div className="bg-gray-50 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Training by Section</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Section Drills on Your Phone</h3>
               <p className="text-gray-600">
-                Four sets: reading, writing, arithmetic, and algebra, statistics and functions. Questions you miss come back until you have mastered them.
+                Five drills, one per section: reading passages beside the question, writing items with the sentence or paragraph to revise shown above the choices, and arithmetic, quantitative reasoning and advanced algebra with every step shown. Every miss comes back until you have mastered it.
               </p>
             </div>
           </div>
@@ -166,7 +167,7 @@ export default function AccuplacerLandingPage() {
             <div className="bg-gray-50 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">Practice Tests</h3>
               <p className="text-gray-600">
-                Four 50-question tests that sample every section, with the passage embedded in every reading item, a bracketed sentence to revise in every writing item, and the key step shown on every math answer.
+                Two practice tests with 20 questions per section (10 for Advanced Algebra and Functions), untimed like the real ACCUPLACER, scored on the 200 to 300 scale. Finish with a score per section against the cut scores your college publishes, and a plan for what to drill next.
               </p>
             </div>
           </div>
@@ -292,7 +293,7 @@ export default function AccuplacerLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 mb-2">Is the TigerTest ACCUPLACER practice test free?</h3>
             <p className="text-gray-600">
-              Yes. All four practice tests and all training sets are free, with no account required. Create a free account if you want your progress saved across devices. TigerTest is not affiliated with the College Board.
+              Yes. Both practice tests and all five drills are free, with no account required. Create a free account to keep your progress in step between your phone and your computer. TigerTest is not affiliated with the College Board.
             </p>
           </div>
         </div>
@@ -306,7 +307,7 @@ export default function AccuplacerLandingPage() {
         <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Ready to Place Into College-Level Courses?</h2>
           <p className="text-lg text-gray-600 mb-10">Free to start. No account required. 200 questions across all five ACCUPLACER sections.</p>
-          <ExamLandingCTA dashboardHref="/accuplacer/dashboard" />
+          <ExamLandingCTA dashboardHref="/accuplacer" />
         </div>
       </div>
     </div>

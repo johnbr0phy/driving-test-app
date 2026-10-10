@@ -1,8 +1,5 @@
-"use client";
+import { permanentRedirect } from "next/navigation";
 
-import { ExamDrillPage } from "@/components/exam/ExamDrillPage";
-import { getExamById } from "@/lib/exams";
-
-export default function AccuplacerDrillPage() {
-  return <ExamDrillPage exam={getExamById("accuplacer")!} />;
+export default function OldDrill() {
+  permanentRedirect("/accuplacer");
 }

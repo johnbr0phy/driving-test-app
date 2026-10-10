@@ -135,7 +135,7 @@ export function scoreSession(exam: ExamV2Config, session: TestSessionV2, byId: M
     testNumber: session.testNumber,
     completedAt: new Date().toISOString(),
     sections,
-    composite: exam.composite.combine(sections.map((s) => s.scaled)),
+    composite: exam.composite.combine(sections),
     items,
   };
 }

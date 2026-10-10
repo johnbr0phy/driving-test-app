@@ -1,8 +1,5 @@
-"use client";
+import { permanentRedirect } from "next/navigation";
 
-import { ExamTrainingPage } from "@/components/exam/ExamTrainingPage";
-import { getExamById } from "@/lib/exams";
-
-export default function AccuplacerTrainingPage() {
-  return <ExamTrainingPage exam={getExamById("accuplacer")!} />;
+export default function OldTraining() {
+  permanentRedirect("/accuplacer");
 }

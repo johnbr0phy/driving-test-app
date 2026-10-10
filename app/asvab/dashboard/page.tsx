@@ -1,8 +1,5 @@
-"use client";
+import { permanentRedirect } from "next/navigation";
 
-import { ExamDashboard } from "@/components/exam/ExamDashboard";
-import { getExamById } from "@/lib/exams";
-
-export default function AsvabDashboardPage() {
-  return <ExamDashboard exam={getExamById("asvab")!} />;
+export default function OldDashboard() {
+  permanentRedirect("/asvab");
 }

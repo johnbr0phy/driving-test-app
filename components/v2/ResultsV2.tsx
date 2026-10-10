@@ -66,7 +66,7 @@ export function ResultsV2({ exam, testNumber }: { exam: ExamV2Config; testNumber
           {result.composite >= goal ? "At your goal" : `${goal - result.composite} to your goal`}
         </div>
       </div>
-      <p className="mt-2 text-xs text-gray-500">Section scores are estimates from a typical conversion. Real scores vary by test form by about 30 points per section.</p>
+      <p className="mt-2 text-xs text-gray-500">{exam.copy.scoreNote}</p>
 
       <div className="mt-6 grid gap-4 md:grid-cols-2">
         {result.sections.map((s) => {
@@ -78,7 +78,8 @@ export function ResultsV2({ exam, testNumber }: { exam: ExamV2Config; testNumber
                 <div className="text-sm text-gray-500">{s.raw} / {s.total} correct</div>
               </div>
               <div className="mt-1 text-3xl font-black tabular-nums">
-                {s.scaled} <span className="text-sm font-semibold text-gray-500">({Math.max(def.scale.min, s.scaled - def.scale.band)} to {Math.min(def.scale.max, s.scaled + def.scale.band)})</span>
+                {s.scaled}{def.scale.max === 100 && def.scale.min === 0 ? "%" : ""}{" "}
+                {def.scale.band > 0 && <span className="text-sm font-semibold text-gray-500">({Math.max(def.scale.min, s.scaled - def.scale.band)} to {Math.min(def.scale.max, s.scaled + def.scale.band)})</span>}
               </div>
               <div className="mt-1 text-xs text-gray-500">
                 {s.byModule.map((m) => `Module ${m.module}${m.variant ? ` (${m.variant === "upper" ? "harder" : "easier"})` : ""}: ${m.raw}/${m.total}`).join(" · ")}

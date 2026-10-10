@@ -13,7 +13,7 @@
  * This file must stay free of question-data imports (the store imports it).
  */
 
-export type ExamId = "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "emt" | "foodmgr" | "realestate" | "insurance" | "notary" | "teas" | "aws" | "aplus" | "foodhandler" | "boating" | "hunter" | "secplus" | "hesi" | "asvab" | "cpr" | "osha" | "forklift" | "alcohol" | "accuplacer" | "security" | "lifeguard" | "pnc" | "htl" | "cst" | "crcst";
+export type ExamId = "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "emt" | "foodmgr" | "realestate" | "insurance" | "notary" | "aws" | "aplus" | "foodhandler" | "boating" | "hunter" | "secplus" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "htl" | "cst" | "crcst";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (?set=N). */
@@ -1146,58 +1146,6 @@ const notary: ExamConfig = {
   },
 };
 
-const teas: ExamConfig = {
-  id: "teas",
-  stateCode: "TEAS",
-  idBase: 2200,
-  slug: "/teas",
-  landingPath: "/teas-practice-test",
-  name: "TEAS Practice Test",
-  shortName: "TEAS",
-  examLabel: "ATI TEAS 7",
-  fullName: "ATI TEAS 7 nursing school entrance exam",
-  questionIdPrefix: "TEAS-",
-  icon: "graduation",
-  testCount: 4,
-  questionsPerTest: 50,
-  passPct: 70,
-  // ATI TEAS 7: Reading 45 items (39 scored), Math 38 (34), Science 50
-  // (44), English 37 (33). Mixed 50-item tests in the scored proportions;
-  // Reading items carry their own short passage. Single-answer items only.
-  blueprint: {
-    teasReading: 13,
-    teasMath: 11,
-    teasScience: 15,
-    teasEnglish: 11,
-  },
-  trainingSets: [
-    { setNumber: 1, id: 2201, name: "Reading", categories: ["teasReading"], size: 52, weightLabel: "26% of the exam" },
-    { setNumber: 2, id: 2202, name: "Mathematics", categories: ["teasMath"], size: 44, weightLabel: "23% of the exam" },
-    { setNumber: 3, id: 2203, name: "Science", categories: ["teasScience"], size: 60, weightLabel: "29% of the exam" },
-    { setNumber: 4, id: 2204, name: "English & Language Usage", categories: ["teasEnglish"], size: 44, weightLabel: "22% of the exam" },
-  ],
-  categoryLabels: {
-    teasReading: "Reading",
-    teasMath: "Mathematics",
-    teasScience: "Science",
-    teasEnglish: "English & Language Usage",
-  },
-  copy: {
-    guestPrompt: "to save your TEAS progress and track every question you miss",
-    trainingHeading: "Train by section",
-    trainingSub: "Four sets, one per TEAS section. Instant feedback, worked math, and missed questions come back until you master them.",
-    testsHeading: "Practice tests \u00b7 50 questions mixed like the real exam",
-    heroSubs: [
-      "Four sections, four full tests. Science and reading are more than half the exam.",
-      "Mastery first, then test. The sets match the four TEAS 7 sections.",
-      "Halfway through the sections. The practice tests will show where you stand.",
-      "Fix the misses, then retake. Most programs want 60 to 70%; aim higher here.",
-      "Full prep done. Schedule your TEAS with ATI or your program.",
-    ],
-    sourceLine: "Matched to the ATI TEAS 7 blueprint. Reading items carry a short passage; the real exam also has other item types.",
-    analyticsKey: "teas",
-  },
-};
 
 const aws: ExamConfig = {
   id: "aws",
@@ -1542,126 +1490,7 @@ const secplus: ExamConfig = {
   },
 };
 
-const hesi: ExamConfig = {
-  id: "hesi",
-  stateCode: "HESI",
-  idBase: 2900,
-  slug: "/hesi",
-  landingPath: "/hesi-a2-practice-test",
-  name: "HESI A2 Practice Test",
-  shortName: "HESI A2",
-  examLabel: "HESI A2",
-  fullName: "HESI Admission Assessment (A2) exam",
-  questionIdPrefix: "HESI-",
-  icon: "book",
-  testCount: 4,
-  questionsPerTest: 50,
-  passPct: 75,
-  // HESI A2 (Elsevier Admission Assessment): math 18%, reading 16%, vocabulary 16%,
-  // grammar 16%, biology 12%, chemistry 10%, anatomy and physiology 12%. Real sections
-  // are 25 to 55 items each; most programs require 75%.
-  blueprint: {
-    hesiMath: 9,
-    hesiReading: 8,
-    hesiVocabulary: 8,
-    hesiGrammar: 8,
-    hesiBiology: 6,
-    hesiChemistry: 5,
-    hesiAnatomy: 6,
-  },
-  trainingSets: [
-    { setNumber: 1, id: 2901, name: "Mathematics", categories: ["hesiMath"], size: 36, weightLabel: "18% of the tests" },
-    { setNumber: 2, id: 2902, name: "Reading & Vocabulary", categories: ["hesiReading", "hesiVocabulary"], size: 64, weightLabel: "32% of the tests" },
-    { setNumber: 3, id: 2903, name: "Grammar", categories: ["hesiGrammar"], size: 32, weightLabel: "16% of the tests" },
-    { setNumber: 4, id: 2904, name: "Biology, Chemistry & A&P", categories: ["hesiBiology", "hesiChemistry", "hesiAnatomy"], size: 68, weightLabel: "34% of the tests" },
-  ],
-  categoryLabels: {
-    hesiMath: "Mathematics",
-    hesiReading: "Reading Comprehension",
-    hesiVocabulary: "Vocabulary",
-    hesiGrammar: "Grammar",
-    hesiBiology: "Biology",
-    hesiChemistry: "Chemistry",
-    hesiAnatomy: "Anatomy & Physiology",
-  },
-  copy: {
-    guestPrompt: "to save your HESI progress and track every question you miss",
-    trainingHeading: "Train by section",
-    trainingSub: "Four sets covering the seven HESI A2 sections: math, reading and vocabulary, grammar, and the sciences. Instant feedback, and missed questions come back until you master them.",
-    testsHeading: "Practice tests \u00b7 50 questions across all seven sections",
-    heroSubs: [
-      "Seven sections, four full tests. Math and the sciences decide most scores.",
-      "Mastery first, then test. The sets follow the HESI A2 section outlines.",
-      "Halfway through the sections. The practice tests will show where you stand.",
-      "Fix the misses, then retake. Most nursing programs want 75 percent or better.",
-      "Full prep done. Schedule your HESI A2 through your program.",
-    ],
-    sourceLine: "Based on the HESI A2 section outlines (math, reading, vocabulary, grammar, biology, chemistry, anatomy and physiology). Physics is not included.",
-    analyticsKey: "hesi",
-  },
-};
 
-const asvab: ExamConfig = {
-  id: "asvab",
-  stateCode: "ASVAB",
-  idBase: 3000,
-  slug: "/asvab",
-  landingPath: "/asvab-practice-test",
-  name: "ASVAB Practice Test",
-  shortName: "ASVAB",
-  examLabel: "ASVAB",
-  fullName: "Armed Services Vocational Aptitude Battery (ASVAB)",
-  questionIdPrefix: "ASVAB-",
-  icon: "medal",
-  testCount: 4,
-  questionsPerTest: 50,
-  passPct: 70,
-  // ASVAB subtests weighted toward the four AFQT sections (AR, WK, PC, MK):
-  // general science 10%, arithmetic reasoning 18%, word knowledge 18%, paragraph
-  // comprehension 14%, math knowledge 18%, electronics 8%, auto and shop 8%,
-  // mechanical comprehension 6%. Assembling Objects needs figures and is omitted.
-  blueprint: {
-    asvabGeneralScience: 5,
-    asvabArithmetic: 9,
-    asvabWordKnowledge: 9,
-    asvabParagraph: 7,
-    asvabMathKnowledge: 9,
-    asvabElectronics: 4,
-    asvabAutoShop: 4,
-    asvabMechanical: 3,
-  },
-  trainingSets: [
-    { setNumber: 1, id: 3001, name: "Arithmetic Reasoning & Math Knowledge", categories: ["asvabArithmetic", "asvabMathKnowledge"], size: 72, weightLabel: "36% of the tests" },
-    { setNumber: 2, id: 3002, name: "Word Knowledge & Paragraph Comprehension", categories: ["asvabWordKnowledge", "asvabParagraph"], size: 64, weightLabel: "32% of the tests" },
-    { setNumber: 3, id: 3003, name: "General Science & Electronics", categories: ["asvabGeneralScience", "asvabElectronics"], size: 36, weightLabel: "18% of the tests" },
-    { setNumber: 4, id: 3004, name: "Auto, Shop & Mechanical", categories: ["asvabAutoShop", "asvabMechanical"], size: 28, weightLabel: "14% of the tests" },
-  ],
-  categoryLabels: {
-    asvabGeneralScience: "General Science",
-    asvabArithmetic: "Arithmetic Reasoning",
-    asvabWordKnowledge: "Word Knowledge",
-    asvabParagraph: "Paragraph Comprehension",
-    asvabMathKnowledge: "Mathematics Knowledge",
-    asvabElectronics: "Electronics Information",
-    asvabAutoShop: "Auto & Shop Information",
-    asvabMechanical: "Mechanical Comprehension",
-  },
-  copy: {
-    guestPrompt: "to save your ASVAB progress and track every question you miss",
-    trainingHeading: "Train by subtest",
-    trainingSub: "Four sets covering the eight ASVAB subtests: the math pair, the verbal pair, science and electronics, auto, shop and mechanical. Instant feedback, and missed questions come back until you master them.",
-    testsHeading: "Practice tests · 50 questions weighted toward the AFQT",
-    heroSubs: [
-      "Eight subtests, four full tests. The math and verbal sections set your AFQT score.",
-      "Mastery first, then test. The sets follow the ASVAB subtests the recruiter will show you.",
-      "Halfway through the subtests. The practice tests will show where you stand.",
-      "Fix the misses, then retake. Aim for 70 percent and up for a competitive AFQT.",
-      "Full prep done. Ask your recruiter to schedule the ASVAB or PiCAT.",
-    ],
-    sourceLine: "Covers the eight pencil-and-paper ASVAB subtests. Assembling Objects uses figures and is not included. Minimum AFQT scores vary by branch.",
-    analyticsKey: "asvab",
-  },
-};
 
 const cpr: ExamConfig = {
   id: "cpr",
@@ -1888,61 +1717,6 @@ const alcohol: ExamConfig = {
   },
 };
 
-const accuplacer: ExamConfig = {
-  id: "accuplacer",
-  stateCode: "ACCUPLACER",
-  idBase: 3500,
-  slug: "/accuplacer",
-  landingPath: "/accuplacer-practice-test",
-  name: "ACCUPLACER Practice Test",
-  shortName: "ACCUPLACER",
-  examLabel: "ACCUPLACER",
-  fullName: "Next-Generation ACCUPLACER placement test",
-  questionIdPrefix: "ACC-",
-  icon: "pencil",
-  testCount: 4,
-  questionsPerTest: 50,
-  passPct: 70,
-  // Next-Generation ACCUPLACER (College Board): reading 26%, writing 24%, arithmetic
-  // 20%, quantitative reasoning, algebra and statistics 20%, advanced algebra and
-  // functions 10%. Placement test with college-set cut scores; 70% here marks
-  // college-ready work.
-  blueprint: {
-    accReading: 13,
-    accWriting: 12,
-    accArithmetic: 10,
-    accQAS: 10,
-    accAAF: 5,
-  },
-  trainingSets: [
-    { setNumber: 1, id: 3501, name: "Reading", categories: ["accReading"], size: 52, weightLabel: "26% of the tests" },
-    { setNumber: 2, id: 3502, name: "Writing", categories: ["accWriting"], size: 48, weightLabel: "24% of the tests" },
-    { setNumber: 3, id: 3503, name: "Arithmetic", categories: ["accArithmetic"], size: 40, weightLabel: "20% of the tests" },
-    { setNumber: 4, id: 3504, name: "Algebra, Statistics & Functions", categories: ["accQAS", "accAAF"], size: 60, weightLabel: "30% of the tests" },
-  ],
-  categoryLabels: {
-    accReading: "Reading",
-    accWriting: "Writing",
-    accArithmetic: "Arithmetic",
-    accQAS: "Quantitative Reasoning, Algebra & Statistics",
-    accAAF: "Advanced Algebra & Functions",
-  },
-  copy: {
-    guestPrompt: "to save your ACCUPLACER progress and track every question you miss",
-    trainingHeading: "Train by section",
-    trainingSub: "Four sets covering the five ACCUPLACER sections: reading, writing, arithmetic, and algebra, statistics and functions. Instant feedback, and missed questions come back until you master them.",
-    testsHeading: "Practice tests · 50 questions across all five sections",
-    heroSubs: [
-      "Five sections, four full tests. Reading and the math sections decide most placements.",
-      "Mastery first, then test. The sets follow the Next-Generation ACCUPLACER section outlines.",
-      "Halfway through the sections. The practice tests will show where you stand.",
-      "Fix the misses, then retake. Clear 70 percent to place out of developmental courses at most colleges.",
-      "Full prep done. Schedule your placement test through your college's testing center.",
-    ],
-    sourceLine: "Based on the College Board Next-Generation ACCUPLACER section outlines. Cut scores are set by each college. The WritePlacer essay is not included.",
-    analyticsKey: "accuplacer",
-  },
-};
 
 const security: ExamConfig = {
   id: "security",
@@ -2291,7 +2065,7 @@ const crcst: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, cet, danb, emt, foodmgr, realestate, insurance, notary, teas, aws, aplus, foodhandler, boating, hunter, secplus, hesi, asvab, cpr, osha, forklift, alcohol, accuplacer, security, lifeguard, pnc, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, cet, danb, emt, foodmgr, realestate, insurance, notary, aws, aplus, foodhandler, boating, hunter, secplus, cpr, osha, forklift, alcohol, security, lifeguard, pnc, htl, cst, crcst];
 
 export const examSetBase = (exam: ExamConfig) => exam.setIdBase ?? exam.idBase;
 /** Store ID of training set N of an exam. */

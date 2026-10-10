@@ -1,18 +1,5 @@
-import { ExamV2Config, ScaleSpec } from "../types";
-
-/** Piecewise-linear raw-to-scaled curve through anchor points (raw, scaled). */
-function curve(maxRaw: number, anchors: [number, number][], band: number): ScaleSpec {
-  const table: number[] = [];
-  for (let raw = 0; raw <= maxRaw; raw++) {
-    let i = 0;
-    while (i < anchors.length - 2 && raw > anchors[i + 1][0]) i++;
-    const [r0, s0] = anchors[i];
-    const [r1, s1] = anchors[i + 1];
-    const t = r1 === r0 ? 0 : (raw - r0) / (r1 - r0);
-    table.push(Math.round((s0 + t * (s1 - s0)) / 10) * 10);
-  }
-  return { min: anchors[0][1], max: anchors[anchors.length - 1][1], table, band };
-}
+import { ExamV2Config } from "../types";
+import { curve } from "../scales";
 
 const MATH_REFERENCE = `**Reference**
 
@@ -30,6 +17,7 @@ export const SAT: ExamV2Config = {
   id: "sat",
   slug: "/sat",
   landingPath: "/sat-practice-test",
+  icon: "graduation",
   name: "SAT Practice Test",
   shortName: "SAT",
   fullName: "digital SAT",
@@ -87,7 +75,7 @@ export const SAT: ExamV2Config = {
     { key: "data", name: "Problem Solving and Data Analysis", section: "math", domains: ["dataAnalysis"], blurb: "Ratios, percents, statistics, probability, scatterplots. 15% of Math.", weight: "15% of Math" },
     { key: "geometry", name: "Geometry and Trigonometry", section: "math", domains: ["geometryTrig"], blurb: "Area, volume, triangles, circles, right-triangle trig. 15% of Math.", weight: "15% of Math" },
   ],
-  composite: { name: "Total score", min: 400, max: 1600, combine: (scaled) => scaled.reduce((a, b) => a + b, 0) },
+  composite: { name: "Total score", min: 400, max: 1600, combine: (sections) => sections.reduce((a, s) => a + s.scaled, 0) },
   defaultGoal: 1200,
   goalChoices: [1000, 1100, 1200, 1300, 1400, 1500],
   goalNotes: {
@@ -108,5 +96,6 @@ export const SAT: ExamV2Config = {
       "Goal hit. You're ready to book your SAT.",
     ],
     sourceLine: "Original questions written to the digital SAT specifications. Not affiliated with College Board. Score estimates are unofficial.",
+    scoreNote: "Section scores are estimates from a typical conversion. Real scores vary by test form by about 30 points per section.",
   },
 };

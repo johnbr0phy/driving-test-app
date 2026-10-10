@@ -3,12 +3,20 @@ import satRwM1 from "@/data/v2/sat/rw-m1.json";
 import satRwM2 from "@/data/v2/sat/rw-m2.json";
 import satMaM1 from "@/data/v2/sat/ma-m1.json";
 import satMaM2 from "@/data/v2/sat/ma-m2.json";
+import teasBank from "@/data/v2/teas/questions.json";
+import hesiBank from "@/data/v2/hesi/questions.json";
+import asvabBank from "@/data/v2/asvab/questions.json";
+import accuplacerBank from "@/data/v2/accuplacer/questions.json";
 
 const BANKS: Record<string, QuestionBank> = {
   sat: {
     questions: [...satRwM1, ...satRwM2, ...satMaM1, ...satMaM2] as QuestionV2[],
     stimuli: {},
   },
+  teas: { questions: teasBank as QuestionV2[], stimuli: {} },
+  hesi: { questions: hesiBank as QuestionV2[], stimuli: {} },
+  asvab: { questions: asvabBank as QuestionV2[], stimuli: {} },
+  accuplacer: { questions: accuplacerBank as QuestionV2[], stimuli: {} },
 };
 
 export function getBank(examId: string): QuestionBank {

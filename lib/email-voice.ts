@@ -11,6 +11,8 @@
  * Server and client safe: only imports the plain registry.
  */
 
+import { EXAMS_V2, getExamV2ByPath } from "@/lib/v2/registry";
+import type { ExamV2Config } from "@/lib/v2/types";
 import {
   EXAMS,
   ExamConfig,
@@ -91,9 +93,31 @@ function voiceForExam(exam: ExamConfig): EmailVoice {
   };
 }
 
+/** v2 exams (SAT, TEAS, HESI, ASVAB, ACCUPLACER): sectioned tests plus drills. */
+function voiceForV2(exam: ExamV2Config): EmailVoice {
+  const perTest = exam.sections.reduce((a, s) => a + s.modules.reduce((b, m) => b + m.questionCount, 0), 0);
+  return {
+    id: exam.id,
+    shortName: exam.shortName,
+    testName: `${exam.shortName} ${/\btests?$/i.test(exam.fullName.trim()) ? "test" : "exam"}`,
+    fullName: exam.fullName,
+    questionsPerTest: perTest,
+    testCount: exam.tests.length,
+    stepCount: exam.drills.length + exam.tests.length,
+    passPct: exam.defaultGoal,
+    dashboardPath: exam.slug,
+    statsPath: exam.slug,
+    hasPremium: false,
+    inactiveDays: 14,
+    sourceLine: exam.copy.sourceLine,
+  };
+}
+
 /** Voice for an exam id. Unknown or missing ids fall back to the DMV voice. */
 export function voiceFor(id: string | null | undefined): EmailVoice {
   if (!id || id === "dmv") return DMV_VOICE;
+  const v2 = EXAMS_V2.find((e) => e.id === id);
+  if (v2) return voiceForV2(v2);
   const exam = getExamById(id);
   return exam ? voiceForExam(exam) : DMV_VOICE;
 }
@@ -101,7 +125,8 @@ export function voiceFor(id: string | null | undefined): EmailVoice {
 /** Every known voice id, for validation. */
 export function isKnownExamId(id: unknown): id is string {
   return (
-    id === "dmv" || (typeof id === "string" && EXAMS.some((e) => e.id === id))
+    id === "dmv" ||
+    (typeof id === "string" && (EXAMS.some((e) => e.id === id) || EXAMS_V2.some((e) => e.id === id)))
   );
 }
 
@@ -124,7 +149,7 @@ export function examIdFromSignupUrl(url: string | null | undefined): string {
   try {
     const parsed = new URL(url, SITE);
     const redirect = parsed.searchParams.get("redirect");
-    return getExamByPath(redirect)?.id ?? "dmv";
+    return getExamByPath(redirect)?.id ?? getExamV2ByPath(redirect)?.id ?? "dmv";
   } catch {
     return "dmv";
   }

@@ -1,8 +1,10 @@
 "use client";
 
-import { ExamTestPage } from "@/components/exam/ExamTestPage";
-import { getExamById } from "@/lib/exams";
+import { useParams } from "next/navigation";
+import { ExamRunner } from "@/components/v2/ExamRunner";
+import { getExamV2 } from "@/lib/v2/registry";
 
-export default function AsvabTestPage() {
-  return <ExamTestPage exam={getExamById("asvab")!} />;
+export default function TestPage() {
+  const params = useParams();
+  return <ExamRunner exam={getExamV2("asvab")} testNumber={parseInt(params.id as string, 10) || 0} />;
 }

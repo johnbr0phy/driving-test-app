@@ -96,7 +96,7 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
     const next = { ...cur, stages };
     stages[nextIndex] = resolveAdaptive(exam, bank, next, nextIndex, byId);
     const sameSection = stages[nextIndex].section === closed.section;
-    putSession({ ...next, stages, stage: nextIndex, phase: sameSection ? "intro" : "break" });
+    putSession({ ...next, stages, stage: nextIndex, phase: sameSection || exam.breakSeconds <= 0 ? "intro" : "break" });
   }, [key, exam, bank, byId, finish, putSession]);
 
   // Keyboard shortcuts for the desktop simulation.
@@ -104,8 +104,9 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
     if (!session || session.phase !== "questions" || !question || tool !== "none") return;
     const onKey = (e: KeyboardEvent) => {
       if ((e.target as HTMLElement)?.tagName === "INPUT") return;
-      if (e.key === "ArrowRight") goTo(1);
-      else if (e.key === "ArrowLeft") goTo(-1);
+      const linearNow = !!def?.section.linear;
+      if (e.key === "ArrowRight") { if (!linearNow || isAnswered(stage!.answers[question.id])) goTo(1); }
+      else if (e.key === "ArrowLeft") { if (!linearNow) goTo(-1); }
       else if (/^[a-eA-E]$/.test(e.key) && question.format !== "numeric") {
         const pos = e.key.toUpperCase().charCodeAt(0) - 65;
         const orig = stage!.optionOrder[question.id]?.[pos];
@@ -127,7 +128,9 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
 
   const total = stage.questionIds.length;
   const answeredCount = stage.questionIds.filter((id) => isAnswered(stage.answers[id])).length;
-  const stageTitle = `${def.section.name} · Module ${def.module.module}`;
+  const stageTitle = def.section.modules.length > 1 ? `${def.section.name} · Module ${def.module.module}` : def.section.name;
+  const timed = def.module.timeLimit > 0;
+  const linear = !!def.section.linear;
 
   function toggleMulti(cur: AnswerValue | undefined, orig: number): number[] {
     const arr = Array.isArray(cur) ? cur : [];
@@ -140,6 +143,7 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
   }
 
   function goTo(delta: number) {
+    if (linear && delta < 0) return;
     updateStage((st) => ({ ...st, current: Math.min(total - 1, Math.max(0, st.current + delta)) }));
   }
 
@@ -185,7 +189,7 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
 
   // ---------- Intro ----------
   if (session.phase === "intro") {
-    const isResume = stage.runningSince === undefined && stage.remaining < def.module.timeLimit;
+    const isResume = timed && stage.runningSince === undefined && stage.remaining < def.module.timeLimit;
     return (
       <div className="v2-focus">
         <TopBar title={exam.shortName} onExit={() => setConfirm("exit")} />
@@ -195,17 +199,30 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
             <h1 className="mt-1 text-2xl font-bold md:text-3xl">{stageTitle}</h1>
             <div className="mt-3 flex flex-wrap gap-2 text-sm">
               <span className="rounded-full bg-gray-100 px-3 py-1 font-semibold">{total} questions</span>
-              <span className="rounded-full bg-gray-100 px-3 py-1 font-semibold">{formatClock(isResume ? stage.remaining : def.module.timeLimit)} {isResume ? "left" : ""}</span>
+              {timed ? (
+                <span className="rounded-full bg-gray-100 px-3 py-1 font-semibold">{formatClock(isResume ? stage.remaining : def.module.timeLimit)} {isResume ? "left" : ""}</span>
+              ) : (
+                <span className="rounded-full bg-gray-100 px-3 py-1 font-semibold">Untimed</span>
+              )}
               {stage.variant && <span className="rounded-full bg-brand-light px-3 py-1 font-semibold text-brand-dark">Adaptive: {stage.variant === "upper" ? "harder" : "easier"} module</span>}
-              {def.section.calculator && <span className="rounded-full bg-gray-100 px-3 py-1 font-semibold">Calculator allowed</span>}
+              {def.section.calculator ? (
+                <span className="rounded-full bg-gray-100 px-3 py-1 font-semibold">Calculator allowed</span>
+              ) : (
+                <span className="rounded-full bg-gray-100 px-3 py-1 font-semibold">No calculator</span>
+              )}
+              {linear && <span className="rounded-full bg-amber-50 px-3 py-1 font-semibold text-amber-800">No going back</span>}
             </div>
             <div className="mt-6 rounded-xl border border-gray-200 bg-white p-5">
               <div className="mb-2 font-semibold">Directions</div>
               <RichText text={def.section.directions} className="text-[15px] text-gray-700" />
               <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-gray-600">
-                <li>The clock starts when you tap Start. It keeps running on the review screen.</li>
-                <li>Move freely between questions. Flag any you want to revisit.</li>
-                <li>When time runs out the module submits itself.</li>
+                {timed ? <li>The clock starts when you tap Start{linear ? "." : " and keeps running on the review screen."}</li> : <li>There is no clock on this section. Take the time you need.</li>}
+                {linear ? (
+                  <li>Answer each question before moving on. Like the real computer test, you cannot go back.</li>
+                ) : (
+                  <li>Move freely between questions. Flag any you want to revisit.</li>
+                )}
+                {timed && <li>When time runs out the section submits itself.</li>}
               </ul>
             </div>
           </div>
@@ -248,7 +265,7 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
     const unanswered = total - answeredCount;
     return (
       <div className="v2-focus">
-        <TopBar title={stageTitle} onExit={() => setConfirm("exit")} right={<Timer remaining={remaining} onExpire={submitStage} />} />
+        <TopBar title={stageTitle} onExit={() => setConfirm("exit")} right={timed ? <Timer remaining={remaining} onExpire={submitStage} /> : undefined} />
         <div className="v2-scroll">
           <div className="mx-auto max-w-2xl px-4 py-6">
             <h1 className="text-xl font-bold">Check your work</h1>
@@ -277,6 +294,8 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
   if (!question) return null;
   const flagged = stage.flagged.includes(question.id);
   const isLast = stage.current === total - 1;
+  const answeredHere = isAnswered(stage.answers[question.id]);
+  const unanswered = total - answeredCount;
 
   return (
     <div className="v2-focus">
@@ -285,7 +304,7 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
         onExit={() => setConfirm("exit")}
         right={
           <div className="flex items-center gap-1.5">
-            <Timer remaining={remaining} onExpire={submitStage} />
+            {timed && <Timer remaining={remaining} onExpire={submitStage} />}
             {def.section.calculator && (
               <IconButton label="Calculator" active={tool === "calc"} onClick={() => setTool(tool === "calc" ? "none" : "calc")}>
                 <CalcIcon className="h-5 w-5" />
@@ -310,7 +329,7 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
             <div className="text-sm font-semibold text-gray-700">
               Question {stage.current + 1} <span className="font-normal text-gray-400">of {total}</span>
             </div>
-            <button
+            {!linear && <button
               type="button"
               onClick={toggleFlag}
               aria-pressed={flagged}
@@ -318,7 +337,7 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
             >
               <Flag className={`h-4 w-4 ${flagged ? "fill-amber-500 text-amber-600" : ""}`} />
               {flagged ? "Flagged" : "Flag for review"}
-            </button>
+            </button>}
           </div>
           <QuestionView
             key={question.id}
@@ -335,21 +354,40 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
         </div>
       </div>
       <BottomBar>
-        <button type="button" onClick={() => goTo(-1)} disabled={stage.current === 0} className="v2-tap w-14 shrink-0 rounded-xl border-2 border-gray-300 bg-white disabled:opacity-40 md:w-28" aria-label="Previous question">
-          <ChevronLeft className="mx-auto h-6 w-6" />
-        </button>
-        <button type="button" onClick={() => setTool("palette")} className="v2-tap flex-1 rounded-xl border-2 border-gray-300 bg-white text-sm font-semibold">
-          {stage.current + 1} / {total}
-          <span className="ml-2 font-normal text-gray-500">{answeredCount} answered</span>
-        </button>
-        {isLast ? (
-          <button type="button" onClick={() => update((s) => ({ ...s, phase: "review" }))} className="v2-tap shrink-0 rounded-xl bg-brand px-5 text-base font-bold text-white md:w-32">
-            Review
-          </button>
+        {linear ? (
+          <>
+            <div className="v2-tap flex flex-1 items-center justify-center rounded-xl border-2 border-gray-200 bg-white text-sm font-semibold">
+              {stage.current + 1} / {total}
+            </div>
+            {isLast ? (
+              <button type="button" onClick={() => (unanswered > 0 ? setConfirm("submit") : submitStage())} disabled={!answeredHere} className="v2-tap shrink-0 rounded-xl bg-brand px-5 text-base font-bold text-white disabled:opacity-40 md:w-40">
+                Submit section
+              </button>
+            ) : (
+              <button type="button" onClick={() => goTo(1)} disabled={!answeredHere} className="v2-tap shrink-0 rounded-xl bg-brand px-5 text-base font-bold text-white disabled:opacity-40 md:w-32">
+                Next
+              </button>
+            )}
+          </>
         ) : (
-          <button type="button" onClick={() => goTo(1)} className="v2-tap w-14 shrink-0 rounded-xl bg-brand text-white md:w-28" aria-label="Next question">
-            <ChevronRight className="mx-auto h-6 w-6" />
-          </button>
+          <>
+            <button type="button" onClick={() => goTo(-1)} disabled={stage.current === 0} className="v2-tap w-14 shrink-0 rounded-xl border-2 border-gray-300 bg-white disabled:opacity-40 md:w-28" aria-label="Previous question">
+              <ChevronLeft className="mx-auto h-6 w-6" />
+            </button>
+            <button type="button" onClick={() => setTool("palette")} className="v2-tap flex-1 rounded-xl border-2 border-gray-300 bg-white text-sm font-semibold">
+              {stage.current + 1} / {total}
+              <span className="ml-2 font-normal text-gray-500">{answeredCount} answered</span>
+            </button>
+            {isLast ? (
+              <button type="button" onClick={() => update((s) => ({ ...s, phase: "review" }))} className="v2-tap shrink-0 rounded-xl bg-brand px-5 text-base font-bold text-white md:w-32">
+                Review
+              </button>
+            ) : (
+              <button type="button" onClick={() => goTo(1)} className="v2-tap w-14 shrink-0 rounded-xl bg-brand text-white md:w-28" aria-label="Next question">
+                <ChevronRight className="mx-auto h-6 w-6" />
+              </button>
+            )}
+          </>
         )}
       </BottomBar>
 
@@ -371,6 +409,7 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
           <RichText text={def.section.reference} className="text-sm" />
         </Sheet>
       )}
+      {confirm === "submit" && <Confirm title={`${unanswered} unanswered`} body="There is no penalty for guessing. Submit anyway?" okLabel="Submit" onOk={submitStage} onCancel={() => setConfirm(null)} />}
       {confirm === "exit" && <Confirm title="Leave the test?" body="Your answers are saved and the clock pauses until you come back. The real test never pauses, so finish in one sitting when you can." okLabel="Leave" onOk={exitAndPause} onCancel={() => setConfirm(null)} />}
     </div>
   );

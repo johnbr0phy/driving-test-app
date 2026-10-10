@@ -326,7 +326,7 @@
       0
     ],
     "calculator": true,
-    "explanation": "Write both powers with the same base: $9^x = (3^2)^x = 3^{2x}$. Then $\\frac{3^{2x}}{3^{x+1}} = 3^{2x - (x+1)} = 3^{x-1}$. The choice $3^{2x-1}$ subtracts the $1$ but not the $x$ from the exponent. The choice $3^{x+1}$ adds the exponents instead of subtracting, and $6^{x-1}$ divides the bases, which is not a valid exponent rule."
+    "explanation": "Write both powers with the same base: $9^x = (3^2)^x = 3^{2x}$. Then $\\frac{3^{2x}}{3^{x+1}} = 3^{2x - (x+1)} = 3^{x-1}$. The choice $3^{2x-1}$ subtracts the $1$ but not the $x$ from the exponent. The choice $3^{x+1}$ simplifies $\\frac{9^x}{3^x}$ to $3^x$ but then multiplies by the extra factor of $3$ instead of dividing by it, and $6^{x-1}$ divides the bases, which is not a valid exponent rule."
   },
   {
     "id": "SAT-MA-051",
@@ -540,7 +540,7 @@
     ],
     "lockedOrder": true,
     "calculator": true,
-    "explanation": "First find the speed in kilometers per hour: $\\frac{54}{2.25} = 24$ km per hour. Convert kilometers to meters by multiplying by $1{,}000$ and hours to minutes by dividing by $60$: $\\frac{24 \\times 1000}{60} = 400$ meters per minute. The choice $24$ is the speed in km per hour without converting. The choice $1{,}440$ comes from multiplying by $60$ instead of dividing, as if minutes were larger than hours, and $240$ drops a factor of $10$ in the kilometer conversion."
+    "explanation": "First find the speed in kilometers per hour: $\\frac{54}{2.25} = 24$ km per hour. Convert kilometers to meters by multiplying by $1{,}000$ and hours to minutes by dividing by $60$: $\\frac{24 \\times 1000}{60} = 400$ meters per minute. The choice $24$ is the speed in km per hour without converting. The choice $1{,}440$ comes from multiplying by $60$ instead of dividing, as if minutes were larger than hours, and $240$ divides by $100$ instead of $60$, as if an hour had $100$ minutes."
   },
   {
     "id": "SAT-MA-061",
@@ -715,7 +715,7 @@
     ],
     "lockedOrder": true,
     "calculator": true,
-    "explanation": "The sine of an angle equals the cosine of its complement, so $\\sin(x^\\circ) = \\cos((3x + 10)^\\circ)$ when $x + (3x + 10) = 90$. Then $4x + 10 = 90$, so $4x = 80$ and $x = 20$. Check: the angles are $20^\\circ$ and $70^\\circ$, which sum to $90^\\circ$ as the acute angles of a right triangle must. The choice $40$ comes from setting $2x + 10 = 90$, as if the two angles were equal. The choice $22.5$ comes from $4x = 90$, dropping the $10$."
+    "explanation": "The sine of an angle equals the cosine of its complement, so $\\sin(x^\\circ) = \\cos((3x + 10)^\\circ)$ when $x + (3x + 10) = 90$. Then $4x + 10 = 90$, so $4x = 80$ and $x = 20$. Check: the angles are $20^\\circ$ and $70^\\circ$, which sum to $90^\\circ$ as the acute angles of a right triangle must. The choice $40$ comes from setting the difference of the angles, $(3x + 10) - x = 2x + 10$, equal to $90$ instead of their sum. The choice $22.5$ comes from $4x = 90$, dropping the $10$."
   },
   {
     "id": "SAT-MA-069",

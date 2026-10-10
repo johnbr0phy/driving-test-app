@@ -45,7 +45,7 @@
       ],
       "lockedOrder": true,
       "calculator": true,
-      "explanation": "Multiply the coefficients and add the exponents: $3 \\times 2 = 6$ and $10^4 \\cdot 10^{-7} = 10^{4 + (-7)} = 10^{-3}$, so the product is $6 \\times 10^{-3}$, or 0.006. Choice A multiplies the exponents instead of adding them. Choice B subtracts 7 from 4 in the wrong direction, which gives $-11$ rather than $-3$."
+      "explanation": "Multiply the coefficients and add the exponents: $3 \\times 2 = 6$ and $10^4 \\cdot 10^{-7} = 10^{4 + (-7)} = 10^{-3}$, so the product is $6 \\times 10^{-3}$, or 0.006. Choice A multiplies the exponents instead of adding them. Choice B subtracts 4 from $-7$ instead of adding the exponents, which gives $-11$ rather than $-3$."
     },
     {
       "id": "ACT-MA-033",
@@ -255,7 +255,7 @@
         "alt": "Right triangle ABC with the right angle at B in the lower right. Vertex A is at the lower left with an angle of 28 degrees. The horizontal leg AB is labeled 15 and the vertical leg BC is labeled x."
       },
       "calculator": true,
-      "explanation": "Side $BC$ is opposite angle $A$, and side $AB$ is adjacent to angle $A$ (it is a leg, not the hypotenuse), so the ratio that links them is tangent: $\\tan 28^\\circ = \\dfrac{BC}{AB} = \\dfrac{x}{15}$, which gives $x = 15\\tan 28^\\circ$, about 8.0. Choice A would be correct only if 15 were the hypotenuse, since sine compares the opposite side with the hypotenuse. Choice D solves for the adjacent side when the opposite side is 15."
+      "explanation": "Side $BC$ is opposite angle $A$, and side $AB$ is adjacent to angle $A$ (it is a leg, not the hypotenuse), so the ratio that links them is tangent: $\\tan 28^\\circ = \\dfrac{BC}{AB} = \\dfrac{x}{15}$, which gives $x = 15\\tan 28^\\circ$, about 8.0. The choice $15\\sin 28^\\circ$ would be correct only if 15 were the hypotenuse, since sine compares the opposite side with the hypotenuse. The choice $\\dfrac{15}{\\tan 28^\\circ}$ solves for the adjacent side when the opposite side is 15."
     },
     {
       "id": "ACT-MA-042",
@@ -289,23 +289,23 @@
       "skill": "Similar triangles and scale factors",
       "difficulty": 2,
       "format": "single",
-      "stem": "In the figure below, $\\overline{DE}$ is parallel to $\\overline{BC}$, $AD = 6$, $DB = 4$, and $DE = 9$. What is the length of $\\overline{BC}$?",
+      "stem": "In the figure below, $\\overline{DE}$ is parallel to $\\overline{BC}$, $AD = 6$, $DB = 3$, and $DE = 8$. What is the length of $\\overline{BC}$?",
       "options": [
-        "6",
-        "13",
-        "15",
-        "22.5"
+        "11",
+        "12",
+        "16",
+        "24"
       ],
       "correct": [
-        2
+        1
       ],
       "figure": {
         "src": "/figures/act/act-ma-043.svg",
-        "alt": "Triangle ABC with vertex A at the top and base BC at the bottom. Points D on side AB and E on side AC are joined by segment DE, which is parallel to BC. AD is labeled 6, DB is labeled 4, DE is labeled 9, and BC is labeled x."
+        "alt": "Triangle ABC with vertex A at the top and base BC at the bottom. Points D on side AB and E on side AC are joined by segment DE, which is parallel to BC. AD is labeled 6, DB is labeled 3, DE is labeled 8, and BC is labeled x."
       },
       "lockedOrder": true,
       "calculator": true,
-      "explanation": "Because $\\overline{DE} \\parallel \\overline{BC}$, triangles $ADE$ and $ABC$ are similar, so corresponding sides are proportional: $\\dfrac{DE}{BC} = \\dfrac{AD}{AB}$. The full side $AB = 6 + 4 = 10$, so $\\dfrac{9}{BC} = \\dfrac{6}{10}$ and $BC = 15$. Choice D uses $\\dfrac{AD}{DB} = \\dfrac{6}{4}$ as the scale factor, but $DB$ is not a side of either triangle; the ratio must compare $AD$ with the whole side $AB$. Choice B adds 4 to 9 as if the extra length were simply tacked on."
+      "explanation": "Because $\\overline{DE} \\parallel \\overline{BC}$, triangles $ADE$ and $ABC$ are similar, so corresponding sides are proportional: $\\dfrac{DE}{BC} = \\dfrac{AD}{AB}$. The full side $AB = 6 + 3 = 9$, so $\\dfrac{8}{BC} = \\dfrac{6}{9}$ and $BC = 12$. Choice C uses $\\dfrac{AD}{DB} = \\dfrac{6}{3}$ as the scale factor, giving $8 \\times 2 = 16$, but $\\overline{DB}$ is not a side of either triangle; the ratio must compare $AD$ with the whole side $AB$. Choice D uses $\\dfrac{DB}{AB} = \\dfrac{3}{9}$ in place of $\\dfrac{AD}{AB}$, and choice A adds 3 to 8 as if the extra length were simply tacked on."
     },
     {
       "id": "ACT-MA-044",
@@ -327,7 +327,7 @@
         0
       ],
       "calculator": true,
-      "explanation": "A circle with center $(h, k)$ and radius $r$ has the equation $(x - h)^2 + (y - k)^2 = r^2$. With $h = 3$, $k = -2$ and $r = 4$, that is $(x - 3)^2 + (y - (-2))^2 = 4^2$, or $(x - 3)^2 + (y + 2)^2 = 16$. Choice D keeps the correct radius but puts the center at $(3, 2)$; subtracting a negative $k$ produces the plus sign. Choice C uses $r$ instead of $r^2$ on the right side."
+      "explanation": "A circle with center $(h, k)$ and radius $r$ has the equation $(x - h)^2 + (y - k)^2 = r^2$. With $h = 3$, $k = -2$ and $r = 4$, that is $(x - 3)^2 + (y - (-2))^2 = 4^2$, or $(x - 3)^2 + (y + 2)^2 = 16$. The choice $(x - 3)^2 + (y - 2)^2 = 16$ keeps the correct radius but puts the center at $(3, 2)$; subtracting a negative $k$ produces the plus sign. The choice ending in $= 4$ uses $r$ instead of $r^2$ on the right side."
     },
     {
       "id": "ACT-MA-045",
@@ -349,7 +349,7 @@
         0
       ],
       "calculator": true,
-      "explanation": "Factor both parts: the numerator is a difference of squares, $(x - 3)(x + 3)$, and the denominator is $(x + 2)(x + 3)$. The common factor $x + 3$ cancels, leaving $\\dfrac{x - 3}{x + 2}$. Choice D cancels the $x^2$ terms, which is not allowed because they are terms being added, not factors being multiplied. Choice B cancels the wrong factor from the numerator."
+      "explanation": "Factor both parts: the numerator is a difference of squares, $(x - 3)(x + 3)$, and the denominator is $(x + 2)(x + 3)$. The common factor $x + 3$ cancels, leaving $\\dfrac{x - 3}{x + 2}$. The choice $-\\dfrac{9}{5x + 6}$ cancels the $x^2$ terms, which is not allowed because they are terms being added, not factors being multiplied. The choice $\\dfrac{x + 3}{x + 2}$ cancels the wrong factor from the numerator."
     },
     {
       "id": "ACT-MA-046",
@@ -371,7 +371,7 @@
         2
       ],
       "calculator": true,
-      "explanation": "Expand with FOIL: $(2 + 3i)(4 - i) = 8 - 2i + 12i - 3i^2$. Since $i^2 = -1$, the last term $-3i^2$ equals $+3$, so the product is $8 + 3 + 10i = 11 + 10i$. Choice A treats $i^2$ as $+1$, giving $8 - 3 = 5$ for the real part, and choice B drops the $i^2$ term altogether."
+      "explanation": "Expand with FOIL: $(2 + 3i)(4 - i) = 8 - 2i + 12i - 3i^2$. Since $i^2 = -1$, the last term $-3i^2$ equals $+3$, so the product is $8 + 3 + 10i = 11 + 10i$. The choice $5 + 10i$ treats $i^2$ as $+1$, giving $8 - 3 = 5$ for the real part, and $8 + 10i$ drops the $i^2$ term altogether."
     },
     {
       "id": "ACT-MA-047",
@@ -393,7 +393,7 @@
         0
       ],
       "calculator": true,
-      "explanation": "Multiply every entry of $A$ by 2 to get $2A = \\begin{pmatrix} 2 & 6 \\\\ -4 & 0 \\end{pmatrix}$, then subtract $B$ entry by entry: $2 - 4 = -2$, $6 - (-1) = 7$, $-4 - 2 = -6$, and $0 - 5 = -5$. Choice B makes the common sign error in the top right entry, computing $6 - 1$ instead of $6 - (-1)$. Choice C adds $B$ instead of subtracting it, and choice D doubles the difference $A - B$, which is $2A - 2B$."
+      "explanation": "Multiply every entry of $A$ by 2 to get $2A = \\begin{pmatrix} 2 & 6 \\\\ -4 & 0 \\end{pmatrix}$, then subtract $B$ entry by entry: $2 - 4 = -2$, $6 - (-1) = 7$, $-4 - 2 = -6$, and $0 - 5 = -5$. The choice whose top right entry is $5$ makes the common sign error in the top right entry, computing $6 - 1$ instead of $6 - (-1)$. The choice whose first row is $6, 5$ adds $B$ instead of subtracting it, and the choice whose first row is $-6, 8$ doubles the difference $A - B$, which is $2A - 2B$."
     },
     {
       "id": "ACT-MA-048",
@@ -415,7 +415,7 @@
         0
       ],
       "calculator": true,
-      "explanation": "For $y = ax^2 + bx + c$ the vertex has $x$-coordinate $-\\dfrac{b}{2a} = -\\dfrac{-6}{2} = 3$. Substituting gives $y = 9 - 18 + 5 = -4$, so the vertex is $(3, -4)$. You can check it with the $x$-intercepts: $x^2 - 6x + 5 = (x - 1)(x - 5)$ has roots 1 and 5, and the vertex sits halfway between them at $x = 3$. Choice B gets the sign of $-\\frac{b}{2a}$ wrong, and choice C pairs the correct $x$ with the $y$-intercept, 5, instead of the value of $y$ at $x = 3$."
+      "explanation": "For $y = ax^2 + bx + c$ the vertex has $x$-coordinate $-\\dfrac{b}{2a} = -\\dfrac{-6}{2} = 3$. Substituting gives $y = 9 - 18 + 5 = -4$, so the vertex is $(3, -4)$. You can check it with the $x$-intercepts: $x^2 - 6x + 5 = (x - 1)(x - 5)$ has roots 1 and 5, and the vertex sits halfway between them at $x = 3$. The choice $(-3, 32)$ gets the sign of $-\\frac{b}{2a}$ wrong, and $(3, 5)$ pairs the correct $x$ with the $y$-intercept, 5, instead of the value of $y$ at $x = 3$."
     },
     {
       "id": "ACT-MA-049",

@@ -156,7 +156,7 @@
       "format": "single",
       "stem": "At 6:00 a.m. the temperature in a town was $-8^\\circ$F. The temperature rose $3^\\circ$F per hour for the next 5 hours and then fell a total of $11^\\circ$F by midnight. What was the temperature, in degrees Fahrenheit, at midnight?",
       "options": [
-        "$-24$",
+        "$-34$",
         "$-4$",
         "$4$",
         "$12$"
@@ -166,7 +166,7 @@
       ],
       "lockedOrder": true,
       "calculator": true,
-      "explanation": "Over 5 hours the temperature rose $5 \\times 3 = 15$ degrees, so at 11:00 a.m. it was $-8 + 15 = 7^\\circ$F. It then fell $11$ degrees, giving $7 - 11 = -4^\\circ$F at midnight. The choice $-24$ treats the $15$-degree rise as a drop ($-8 - 15 - 11$), $12$ comes from starting at $+8$ instead of $-8$, and $4$ is a sign error on the final answer."
+      "explanation": "Over 5 hours the temperature rose $5 \\times 3 = 15$ degrees, so at 11:00 a.m. it was $-8 + 15 = 7^\\circ$F. It then fell $11$ degrees, giving $7 - 11 = -4^\\circ$F at midnight. The choice $-34$ treats the $15$-degree rise as a drop ($-8 - 15 - 11$), $12$ comes from starting at $+8$ instead of $-8$, and $4$ is a sign error on the final answer."
     },
     {
       "id": "ACT-MA-208",
@@ -200,19 +200,19 @@
       "skill": "Circumference and area of a circle",
       "difficulty": 1,
       "format": "single",
-      "stem": "The circumference of a circle is $16\\pi$ inches. What is the area, in square inches, of the circle?",
+      "stem": "The circumference of a circle is $20\\pi$ inches. What is the area, in square inches, of the circle?",
       "options": [
-        "$8\\pi$",
-        "$32\\pi$",
-        "$64\\pi$",
-        "$256\\pi$"
+        "$10\\pi$",
+        "$20\\pi$",
+        "$100\\pi$",
+        "$400\\pi$"
       ],
       "correct": [
         2
       ],
       "lockedOrder": true,
       "calculator": true,
-      "explanation": "Circumference is $2\\pi r$, so $2\\pi r = 16\\pi$ gives $r = 8$ inches. The area is $\\pi r^2 = \\pi(8)^2 = 64\\pi$ square inches. The choice $256\\pi$ comes from using the diameter, $16$, as the radius, and $8\\pi$ comes from using $\\pi r$ instead of $\\pi r^2$."
+      "explanation": "Circumference is $2\\pi r$, so $2\\pi r = 20\\pi$ gives $r = 10$ inches. The area is $\\pi r^2 = \\pi(10)^2 = 100\\pi$ square inches. The choice $400\\pi$ comes from using the diameter, $20$, as the radius, $10\\pi$ comes from using $\\pi r$ instead of $\\pi r^2$, and $20\\pi$ is the circumference, not the area."
     },
     {
       "id": "ACT-MA-210",
@@ -376,7 +376,7 @@
       ],
       "lockedOrder": true,
       "calculator": true,
-      "explanation": "Inverse variation means $t = \\frac{k}{n}$ for some constant $k$, where $t$ is the time and $n$ the number of hoses. From $8 = \\frac{k}{3}$, $k = 24$. With 4 hoses, $t = \\frac{24}{4} = 6$ hours. The choice $\\frac{32}{3}$ treats the relationship as direct variation ($\\frac{8}{3} \\times 4$), which would wrongly make more hoses take longer, and $12$ comes from doubling the time instead of using the constant."
+      "explanation": "Inverse variation means $t = \\frac{k}{n}$ for some constant $k$, where $t$ is the time and $n$ the number of hoses. From $8 = \\frac{k}{3}$, $k = 24$. With 4 hoses, $t = \\frac{24}{4} = 6$ hours. The choice $\\frac{32}{3}$ treats the relationship as direct variation ($\\frac{8}{3} \\times 4$), which would wrongly make more hoses take longer, and $12$ comes from adding the 4 hoses to the 8 hours instead of using the constant."
     },
     {
       "id": "ACT-MA-217",
@@ -421,7 +421,7 @@
         0
       ],
       "calculator": true,
-      "explanation": "Subtract $3$ from all three parts: $-10 \\le -2x < 6$. Divide all three parts by $-2$, remembering to reverse both inequality signs when dividing by a negative: $5 \\ge x > -3$, which is the same as $-3 < x \\le 5$. On a number line this is an open circle at $-3$, a closed circle at $5$, and shading between them. The choice $-5 \\le x < 3$ divides by $-2$ without reversing the signs, and $-3 \\le x < 5$ reverses the signs but keeps the closed and open endpoints on the wrong ends."
+      "explanation": "Subtract $3$ from all three parts: $-10 \\le -2x < 6$. Divide all three parts by $-2$, remembering to reverse both inequality signs when dividing by a negative: $5 \\ge x > -3$, which is the same as $-3 < x \\le 5$. On a number line this is an open circle at $-3$, a closed circle at $5$, and shading between them. The choice $-5 \\le x < 3$ divides by $2$ instead of $-2$, dropping the negative sign so the inequalities are never reversed, and $-3 \\le x < 5$ reverses the signs but keeps the closed and open endpoints on the wrong ends."
     },
     {
       "id": "ACT-MA-219",

@@ -52,11 +52,12 @@ const snap = INCLUDE_LEGACY
   : await db.collection('users').where('emailConsent', '==', true).get();
 
 const users = [];
+let unsubscribed = 0;
 snap.forEach((doc) => {
   const a = authMap.get(doc.id);
   if (!a) return;
   const d = doc.data();
-  if (d.unsubscribed === true) return;
+  if (d.unsubscribed === true) { unsubscribed++; return; }
   if (!INCLUDE_LEGACY && d.emailConsent !== true) return;
   const el = a.email.toLowerCase();
   if (el.includes('@johnbrophy.net') || el.includes('@stensul.com')) return;
@@ -139,9 +140,15 @@ const CAMPAIGNS = [
     if (!u.superAmazingUnlockedAt) return false;
     return now - u.superAmazingUnlockedAt.getTime() <= 7 * DAY;
   }],
+  // One-off whole-base announcement. Bypasses the quiet-days rule; 365d ceiling.
+  ['newTests2026', DAY, (u) => {
+    if (u.creationTime.getTime() > now - 7 * DAY) return false;
+    return u.lastActiveAt.getTime() >= now - 365 * DAY;
+  }],
 ];
 
 console.log(`INCLUDE_LEGACY_CONSENT=${INCLUDE_LEGACY}`);
+console.log(`Unsubscribed users excluded from everything: ${unsubscribed}`);
 console.log(`Reachable pool after the query fix (3-day rule applied per campaign): ${users.length}\n`);
 console.log('FIRST RUN AFTER DEPLOY');
 console.log('  campaign               eligible   day 1   backlog   drains in');

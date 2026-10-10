@@ -14,6 +14,8 @@
 // Pass voiceFor("dmv") for the original DMV copy.
 
 import { EmailVoice, dashboardUrl, statsUrl } from "@/lib/email-voice";
+import { relatedTests, TEST_CATALOG } from "@/lib/testCatalog";
+import { TEST_REQUEST_PICKS } from "@/lib/test-requests";
 
 interface ShellOptions {
   /** <title>, used by some clients as the preview label. */
@@ -110,6 +112,40 @@ ${body}
   </table>
 </body>
 </html>`;
+}
+
+const SITE = "https://tigertest.io";
+const utm = (campaign: string) =>
+  `utm_source=tigertest&utm_medium=email&utm_campaign=${campaign}`;
+
+/**
+ * The "what should we build next?" answer grid: two pill links per row, each
+ * one click to /api/feedback/test-request, which records the pick and asks
+ * for the exact exam. {{unsubscribeToken}} doubles as the user token.
+ */
+export function testRequestButtons(campaign: string): string {
+  const cell = (id: string, label: string) =>
+    `                  <td style="width: 50%; padding: 4px;">
+                    <a href="${SITE}/api/feedback/test-request?pick=${id}&t={{unsubscribeToken}}&src=email&${utm(campaign)}" style="display: block; padding: 12px 10px; border: 1px solid #e5e5e5; border-radius: 10px; color: #1a1a1a; text-decoration: none; font-size: 14px; font-weight: 500; text-align: center;">${label}</a>
+                  </td>`;
+  const rows: string[] = [];
+  for (let i = 0; i < TEST_REQUEST_PICKS.length; i += 2) {
+    const [a, b] = [TEST_REQUEST_PICKS[i], TEST_REQUEST_PICKS[i + 1]];
+    rows.push(
+      `                <tr>\n${cell(a.id, a.label)}\n${b ? cell(b.id, b.label) : '                  <td style="width: 50%; padding: 4px;"></td>'}\n                </tr>`,
+    );
+  }
+  return `              <table role="presentation" style="width: 100%; border-collapse: collapse; margin: 0 0 24px;">
+${rows.join("\n")}
+              </table>`;
+}
+
+/** Landing-page links for the tests next to this one in the hub. */
+function relatedTestLinks(v: EmailVoice, campaign: string): string[] {
+  return relatedTests(v.id, 4).map(
+    (t) =>
+      `<a href="${SITE}${t.href}?${utm(campaign)}" style="color: #1a1a1a; font-weight: 600; text-decoration: underline;">${t.name}</a> <span style="color: #777777;">(${t.org})</span>`,
+  );
 }
 
 /** Tracked dashboard link for this voice. */
@@ -322,4 +358,44 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
         signoff("Thanks for using TigerTest,"),
       ].join("\n"),
     }),
+
+  // One-off: the site grew from one test to thirty. Tells people, then asks
+  // what to build next. DMV readers get the "we grew" story; everyone else
+  // already signed up for a registry exam and gets its neighbours instead.
+  newTests: (v) => {
+    const campaign = "new_tests";
+    const catalogSize = TEST_CATALOG.length;
+    const isDmv = v.id === "dmv";
+    const question = [
+      p(
+        `<strong style="font-weight: 600;">Now a question.</strong> What test are you studying for next, or what did you wish existed? I'm one person building TigerTest and I build what people ask for. One click:`,
+      ),
+      testRequestButtons(campaign),
+      p("Or just hit reply. I read every one."),
+    ];
+    return emailShell({
+      title: isDmv ? `${catalogSize - 1} new practice tests` : "New on TigerTest",
+      heading: isDmv ? "TigerTest grew. A lot." : "What should we build next?",
+      body: [
+        ...(isDmv
+          ? [
+              p(
+                `When you signed up, TigerTest was a DMV practice test. It's now <strong style="font-weight: 600;">${catalogSize} exams</strong>: motorcycle and CDL, boating and hunter safety, food handler, notary, real estate and insurance, nursing school entrance, CNA and EMT, IT certifications like CompTIA and AWS, the citizenship civics test, and more.`,
+              ),
+              p(
+                "All free, all built the same way: real practice tests first, then training on what you missed.",
+              ),
+            ]
+          : [
+              p(
+                `You're on TigerTest for the ${v.testName}. Since you signed up the site has grown to ${catalogSize} exams, and a few sit right next to yours:`,
+              ),
+              ul(relatedTestLinks(v, campaign)),
+            ]),
+        cta(`${SITE}/tests?${utm(campaign)}`, `See all ${catalogSize} tests`),
+        ...question,
+        signoff("Thanks,"),
+      ].join("\n"),
+    });
+  },
 };

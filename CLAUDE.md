@@ -106,6 +106,12 @@ These pages are the DMV flow, not the CDL one: `lib/examRoutes.ts` (`DMV_ROUTES`
 
 Theme colors come from `[data-theme="cdl"|"htl"|"cst"|"crcst"]` in `app/globals.css`; `contexts/TestThemeContext.tsx` and `components/HeaderSwitch.tsx` pick the header by path.
 
+### Email
+
+Resend, from `noreply@tigertest.io`, reply-to John. Templates are HTML strings in `lib/email-templates.ts`, one function of an `EmailVoice` (`lib/email-voice.ts`) each. Daily campaign crons under `app/api/cron/*` (schedules in `vercel.json`) share `lib/cron-email.ts`: one Auth list call, `getEligibleUsers()` (consent, opt-out, quiet-days rule per exam), a 24h frequency cap, a once-only `emailsSent` key per campaign, and the account-wide daily budget in `lib/email-quota.ts` (bump `CAMPAIGN_CRON_COUNT` when adding a cron). `scripts/email-dryrun.mjs` shows who each cron would reach without sending.
+
+Opt-out is `users/{uid}.unsubscribed` (`lib/unsubscribe.ts`). It is checked in the audience query and again in `sendCronEmail()` right before every send, and every campaign carries RFC 8058 `List-Unsubscribe` headers pointing at `/api/unsubscribe` (GET and one-click POST). Nothing on the client writes that field. The new-tests campaign (`newTests2026`) also asks "what should we build next?": clicks land in the `testRequests` collection via `/api/feedback/test-request` and `/request-test` (`lib/test-requests.ts`), shown on `/admin/v2`; a named exam emails John immediately.
+
 ### Mobile Apps
 
 `/mobile/` contains a Capacitor 8 shell (app id `io.tigertest.app`) that loads
@@ -128,4 +134,6 @@ FIREBASE_SERVICE_ACCOUNT_KEY    # Server-side Firebase admin SDK (JSON)
 NEXT_PUBLIC_SITE_URL            # Site URL for metadata
 CRON_SECRET                     # Bearer token for /api/cron/* and /api/indexnow/ping
 INDEXNOW_KEY                    # 8–128 char hex key for IndexNow (Bing) submissions
+EMAIL_REPLY_TO                  # Reply-To on campaign mail and test-request notifications (default john@johnbrophy.net)
+CRON_MAX_BATCH                  # Per-run campaign cap (default: daily campaign budget / cron count)
 ```

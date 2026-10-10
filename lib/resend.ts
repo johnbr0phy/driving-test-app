@@ -59,6 +59,10 @@ export interface SendEmailPayload {
   subject: string;
   html: string;
   from?: string;
+  /** Where a human reply lands. Campaign mail sets this so "hit reply" works. */
+  replyTo?: string;
+  /** Extra SMTP headers, e.g. List-Unsubscribe for one-click opt-out. */
+  headers?: Record<string, string>;
   /**
    * Which budget this send is charged to. "campaign" stops early so the
    * transactional reserve survives; "transactional" may use the full plan
@@ -88,6 +92,8 @@ export async function sendEmail(payload: SendEmailPayload): Promise<SendResult> 
       to: payload.to,
       subject: payload.subject,
       html: payload.html,
+      ...(payload.replyTo ? { replyTo: payload.replyTo } : {}),
+      ...(payload.headers ? { headers: payload.headers } : {}),
     });
 
     if (error) {

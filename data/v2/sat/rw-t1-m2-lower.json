@@ -1,0 +1,623 @@
+[
+  {
+    "id": "SAT-RW-301",
+    "section": "rw",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "craftStructure",
+    "skill": "Words in context",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "Sea otters play a ______ role in the health of kelp forests along the Pacific coast. The otters eat sea urchins, which graze on kelp, and when otters are present, urchin numbers stay low enough for the kelp to grow tall and dense. Where otters have disappeared, urchins have stripped whole stretches of seafloor bare.",
+    "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+    "options": [
+      "crucial",
+      "minor",
+      "temporary",
+      "mysterious"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The text explains that kelp thrives where otters are present and disappears where they are gone, so the otters' role is crucial, or essential. \"Mysterious\" is the most tempting distractor because the text is explaining a cause, but the explanation is clear and simple, not puzzling. \"Minor\" and \"temporary\" contradict the lasting, large-scale effect the text describes."
+  },
+  {
+    "id": "SAT-RW-302",
+    "section": "rw",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "craftStructure",
+    "skill": "Words in context",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "When Louis Daguerre announced his photographic process in 1839, viewers were amazed by how ______ the images were: in a picture of a street, they could make out the individual bricks of a distant building and the pattern of the lace on a shop sign.",
+    "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+    "options": [
+      "detailed",
+      "affordable",
+      "colorful",
+      "durable"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The examples that follow the colon, individual bricks and the pattern of lace, show how much fine detail the images captured, so \"detailed\" is the precise choice. \"Durable\" is the strongest distractor because early photographs were valued for lasting, but nothing in the text concerns how long the images lasted. Daguerre's images were not in color, and cost is never mentioned."
+  },
+  {
+    "id": "SAT-RW-303",
+    "section": "rw",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "craftStructure",
+    "skill": "Words in context",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Bar-tailed godwits can fly more than 7,000 miles without stopping, a feat made possible by the ______ of fat before departure. In the weeks leading up to migration, a godwit eats almost constantly and may nearly double its body weight, then burns that stored energy during the flight.",
+    "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+    "options": [
+      "accumulation",
+      "scarcity",
+      "distribution",
+      "consumption"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The second sentence describes the bird eating constantly and nearly doubling its weight before leaving, which is a buildup, or accumulation, of fat. \"Consumption\" is tempting because the godwit does burn the fat during its flight, but the blank refers to what happens \"before departure,\" when the fat is being stored rather than used. \"Scarcity\" is the opposite of what the text describes."
+  },
+  {
+    "id": "SAT-RW-304",
+    "section": "rw",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "craftStructure",
+    "skill": "Words in context",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "In the 1960s, the writer Jane Jacobs ______ the common view among planners that busy, crowded city streets were a problem to be solved. Lively sidewalks, she argued, are exactly what keep a neighborhood safe, because the constant presence of shopkeepers, residents, and passersby puts \"eyes on the street.\"",
+    "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+    "options": [
+      "challenged",
+      "confirmed",
+      "summarized",
+      "predicted"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The second sentence shows Jacobs arguing that crowded streets are a benefit, which is the opposite of the planners' view that they are a problem, so she challenged that view. \"Summarized\" is the most tempting distractor because the first sentence does state the planners' position, but Jacobs is presented as disagreeing with it, not merely restating it. \"Confirmed\" reverses her position."
+  },
+  {
+    "id": "SAT-RW-305",
+    "section": "rw",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "craftStructure",
+    "skill": "Text structure and purpose",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "For decades, dietary advice in the United States urged people to limit eggs because of the cholesterol they contain. __More recent research, however, suggests that for most people the cholesterol in food has only a small effect on cholesterol levels in the blood.__ As a result, the 2015 edition of the federal dietary guidelines dropped the specific daily cholesterol limit that earlier editions had included.",
+    "stem": "Which choice best describes the function of the underlined sentence in the text as a whole?",
+    "options": [
+      "It presents a research finding that led to the change in official advice described in the next sentence.",
+      "It explains why the earlier advice about eggs was widely followed by the public.",
+      "It describes the method researchers used to measure cholesterol in food.",
+      "It argues that people should eat more eggs than the guidelines recommend."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The underlined sentence introduces new research with \"however,\" and the next sentence begins \"As a result,\" showing that the finding caused the guidelines to change. The sentence does not describe how the research was done, so the choice about method is incorrect, and it reports a finding rather than making a recommendation about how many eggs to eat."
+  },
+  {
+    "id": "SAT-RW-306",
+    "section": "rw",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "craftStructure",
+    "skill": "Text structure and purpose",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Folklorists once collected tales mainly by writing down the words of a single storyteller, as if each story were a fixed text with one correct version. Fieldworkers who recorded the same teller on different nights, however, found that the story changed every time: episodes were added or dropped, and characters were renamed to suit the audience. Many folklorists now treat a tale not as a text but as a performance, shaped by the teller, the listeners, and the occasion.",
+    "stem": "Which choice best describes the overall structure of the text?",
+    "options": [
+      "It describes an earlier approach to a subject, presents an observation that complicated that approach, and explains the view that replaced it.",
+      "It introduces a disagreement between two groups of folklorists and concludes that the disagreement remains unresolved.",
+      "It explains a method of collecting tales and then gives several examples of tales collected with that method.",
+      "It presents a popular belief about storytelling and then offers evidence that the belief is correct."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The text moves from the old practice (recording one fixed version), to the observation that undermined it (the same teller changed the story each night), to the current view (a tale is a performance). The choice about an unresolved disagreement is wrong because the text ends with a settled new view, and the choice about a belief being confirmed is wrong because the original approach is shown to be mistaken."
+  },
+  {
+    "id": "SAT-RW-307",
+    "section": "rw",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "craftStructure",
+    "skill": "Cross-text connections",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "**Text 1**\n\nMany suburban developments built after 1950 use cul-de-sacs, dead-end streets that keep through traffic away from homes. Supporters of this layout argue that it makes residential streets quieter and safer for children, since the only cars on a cul-de-sac belong to the people who live there or are visiting them.\n\n**Text 2**\n\nPlanner Rosa Delgado notes that cul-de-sacs push all traffic onto a few large collector roads, which become congested and unpleasant for anyone on foot. In her study of twenty neighborhoods, residents of cul-de-sac developments walked less and drove more than residents of grid-pattern neighborhoods, partly because reaching a store a few hundred feet away could require a trip of a mile by road.",
+    "stem": "Based on the texts, how would the author of Text 2 most likely respond to the claim in Text 1?",
+    "options": [
+      "By acknowledging that cul-de-sacs may keep traffic off individual streets but pointing out that they create congestion and discourage walking elsewhere in the neighborhood.",
+      "By arguing that cul-de-sacs are actually more dangerous for children than grid-pattern streets are.",
+      "By denying that cul-de-sac streets are any quieter than streets in grid-pattern neighborhoods.",
+      "By suggesting that collector roads should be widened so that residents can drive to stores more quickly."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Text 2 does not dispute that a cul-de-sac itself is quiet; it shifts attention to the collector roads and to residents' walking habits. The choice about danger to children is tempting because Text 2 calls collector roads unpleasant for pedestrians, but Delgado's study concerns walking and driving, not children's safety on home streets. Nothing in Text 2 recommends widening roads."
+  },
+  {
+    "id": "SAT-RW-308",
+    "section": "rw",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "craftStructure",
+    "skill": "Cross-text connections",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "**Text 1**\n\nMost songbirds migrate at night, and bright city lights are known to draw them off course. Ornithologists have therefore urged building owners to switch off lights during peak migration, reasoning that if birds are not attracted to lit areas, far fewer of them will collide with windows.\n\n**Text 2**\n\nBiologist Henrik Aalto agrees that lights-out programs reduce collisions, but he cautions that they address only part of the problem. In his team's surveys, a large share of bird deaths occurred during daylight hours, when birds that had landed safely in a city struck windows that reflected trees and sky. Aalto argues that marking glass with visible patterns may prevent as many deaths as turning off lights.",
+    "stem": "Based on the texts, how would the author of Text 2 most likely respond to the claim in Text 1?",
+    "options": [
+      "By agreeing that reducing lighting helps but arguing that it does nothing about the collisions that happen after birds have landed.",
+      "By disputing the claim that songbirds are drawn off course by city lights.",
+      "By arguing that daytime collisions are a more serious problem than nighttime ones and that lights-out programs should be abandoned.",
+      "By suggesting that building owners are unlikely to switch off their lights voluntarily."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Aalto explicitly accepts that lights-out programs reduce collisions and then adds a second problem, daytime strikes on reflective glass, that lighting cannot fix. The choice about abandoning lights-out programs overstates his position: he says patterned glass may prevent \"as many\" deaths, not more, and never suggests dropping the lighting measure. He does not question whether lights attract birds, and he says nothing about owners' willingness."
+  },
+  {
+    "id": "SAT-RW-309",
+    "section": "rw",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "infoIdeas",
+    "skill": "Central ideas and details",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "The following text is adapted from Louisa May Alcott's 1868 novel Little Women. Jo, one of four sisters, has sold her long hair to raise money for her family.\n\nWhen Jo came in with her hat pulled low, no one noticed anything at first. Then she tossed the hat aside, and her sisters cried out: her thick hair, the one feature everyone called beautiful, had been cut short. Jo laughed and said it would do her good; she had been growing too vain about it, and her head felt wonderfully light and cool. The money, she added, would help pay for Father's care. That night, however, Meg heard a muffled sound from Jo's pillow and asked what was wrong. \"It's my hair,\" Jo admitted. \"I'd do it again tomorrow if I could, but I did love it so.\"",
+    "stem": "Which choice best states the main idea of the text?",
+    "options": [
+      "Jo makes light of a sacrifice she has made for her family, but in private she grieves for what she gave up.",
+      "Jo regrets cutting her hair and wishes she had found another way to help her family.",
+      "Jo's sisters are upset that she sold her hair without asking them first.",
+      "Jo is pleased with her short hair and cannot understand why her sisters are shocked."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "During the day Jo jokes that the haircut will do her good, but at night she cries over it while still insisting she would do it again. The choice about regret is the strongest distractor, but Jo says she would make the same choice tomorrow, so she does not regret the sacrifice itself, only the loss. The sisters' reaction is shock, not anger about being left out."
+  },
+  {
+    "id": "SAT-RW-310",
+    "section": "rw",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "infoIdeas",
+    "skill": "Central ideas and details",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Coral reefs are built by tiny animals called polyps, which get most of their food from algae living inside their tissues. When the water becomes too warm, the polyps expel the algae and turn white, a process called bleaching. A bleached coral is not dead, and if the water cools within a few weeks, the algae can return. But bleaching that lasts for months leaves the polyps starving, and reefs that have bleached repeatedly in recent years have had little time to recover between events.",
+    "stem": "Which choice best states the main idea of the text?",
+    "options": [
+      "Corals can survive brief bleaching, but prolonged or repeated bleaching threatens their survival.",
+      "Bleaching is caused by algae that leave coral polyps when the water becomes too warm.",
+      "Coral polyps depend on algae for food, which is why reefs are found only in warm water.",
+      "Reefs that have bleached in recent years will recover once water temperatures return to normal."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The text builds to its final two sentences: brief bleaching is survivable, but long or repeated bleaching starves the polyps. The choice about what causes bleaching is a detail from the text, not its main point, and it also misstates the process, since the polyps expel the algae rather than the algae leaving on their own. The choice predicting recovery contradicts the text's concern that reefs have had little time to recover."
+  },
+  {
+    "id": "SAT-RW-311",
+    "section": "rw",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "infoIdeas",
+    "skill": "Command of evidence (textual)",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "It is often claimed that eating breakfast helps people lose weight, because surveys have found that regular breakfast eaters tend to weigh less than people who skip the meal. Nutrition researcher Priya Nair hypothesizes that breakfast does not by itself cause weight loss, and that the survey results reflect other habits that breakfast eaters happen to share.",
+    "stem": "Which finding, if true, would most directly support Nair's hypothesis?",
+    "options": [
+      "In a study in which participants were randomly assigned to eat or skip breakfast for four months, the two groups lost similar amounts of weight.",
+      "In a large national survey, adults who ate breakfast every day weighed less on average than adults who usually skipped it.",
+      "People who eat breakfast report feeling less hungry in the late morning than people who skip it.",
+      "Most participants in weight-loss programs say they believe that eating breakfast is important."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A study that assigns people to eat or skip breakfast at random removes the influence of other habits, so finding no difference in weight loss directly supports Nair's claim that breakfast itself is not the cause. The survey result is the most tempting distractor, but it is exactly the kind of evidence Nair is questioning, since it cannot separate breakfast from other habits. Hunger levels and participants' beliefs do not test whether breakfast causes weight loss."
+  },
+  {
+    "id": "SAT-RW-312",
+    "section": "rw",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "infoIdeas",
+    "skill": "Command of evidence (textual)",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Researchers have identified hundreds of versions of the Cinderella story, from a ninth-century Chinese tale to stories recorded in Africa and the Americas. Folklorist Dana Whitcomb argues that the story spread from culture to culture mainly through oral retelling rather than through printed books.",
+    "stem": "Which finding, if true, would most directly support Whitcomb's argument?",
+    "options": [
+      "Many versions of the story were recorded in communities where few people could read and no printed version of the tale was available.",
+      "The most widely printed version, by Charles Perrault, was published in 1697 and later translated into dozens of languages.",
+      "Versions recorded in different regions share the same basic plot of a mistreated girl who is recognized by a lost shoe or similar token.",
+      "Several versions recorded in the twentieth century include details, such as a glass slipper, that first appeared in Perrault's printed version."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "If the story was known in communities that could not read and had no printed copy, it must have reached them by word of mouth, which is Whitcomb's claim. The choice about a shared plot is tempting because it confirms that the versions are related, but a shared plot could result from either oral or printed transmission. The two choices about Perrault's version point toward books, the explanation Whitcomb rejects."
+  },
+  {
+    "id": "SAT-RW-313",
+    "section": "rw",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "infoIdeas",
+    "skill": "Command of evidence (quantitative)",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Ornithologist Luis Ferreira and colleagues tracked four species of migratory songbirds during spring migration to measure how many days each bird spent at stopover sites, where birds rest and feed. They compared birds that began the season with high fat reserves to birds that began with low fat reserves.\n\n| Species | Average stopover days (high fat) | Average stopover days (low fat) |\n|---|---|---|\n| Swainson's thrush | 2.1 | 4.8 |\n| Blackpoll warbler | 1.9 | 5.2 |\n| Gray catbird | 2.4 | 4.1 |\n| Ovenbird | 2.0 | 4.6 |\n\nThe researchers concluded that birds with low fat reserves spend considerably longer at stopover sites than birds with high reserves do, noting that ______",
+    "stem": "Which choice most effectively uses data from the table to complete the statement?",
+    "options": [
+      "in every species studied, low-fat birds averaged between 1.7 and 3.3 more stopover days than high-fat birds of the same species.",
+      "gray catbirds with low fat reserves averaged 4.1 stopover days, fewer than any other low-fat species in the study.",
+      "high-fat blackpoll warblers averaged 1.9 stopover days, slightly fewer than high-fat Swainson's thrushes.",
+      "low-fat ovenbirds averaged 4.6 stopover days, while high-fat gray catbirds averaged only 2.4 days."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The conclusion compares low-fat and high-fat birds, so the best support compares those two groups within each species and shows that the gap holds across all four: 2.7, 3.3, 1.7, and 2.6 days. The choice comparing low-fat ovenbirds with high-fat catbirds is tempting because the numbers are accurate, but it mixes two species and so does not show that fat reserves, rather than species, explain the difference. The other two choices compare birds within the same fat group and say nothing about the effect of fat reserves."
+  },
+  {
+    "id": "SAT-RW-314",
+    "section": "rw",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "infoIdeas",
+    "skill": "Inferences",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "In the 1850s, having a portrait taken required sitting perfectly still for several seconds, because the light-sensitive plates of the time needed long exposures. Studios used hidden head clamps and armrests to help sitters hold a pose. Photographers also advised customers not to smile, since a smile held for several seconds tends to look strained and unnatural. This helps explain why ______",
+    "stem": "Which choice most logically completes the text?",
+    "options": [
+      "people in early portrait photographs so often appear solemn or expressionless.",
+      "early photographers preferred to take portraits outdoors in bright sunlight.",
+      "photographic studios of the 1850s charged high prices for a single portrait.",
+      "later improvements in photographic plates were slow to be adopted by studios."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The text describes long exposures, devices to keep sitters still, and advice not to smile, all of which would produce serious, motionless faces, so the solemn look of early portraits is the logical conclusion. The choice about sunlight is tempting because bright light would shorten exposures, but the text never mentions where portraits were taken. Prices and the adoption of later plates are not discussed."
+  },
+  {
+    "id": "SAT-RW-315",
+    "section": "rw",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "infoIdeas",
+    "skill": "Inferences",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "Deep-sea vents release hot, mineral-rich water, and the animals that cluster around them, such as giant tube worms, depend on bacteria that turn the vent chemicals into food. Individual vents are short-lived, often shutting down within a few decades, and they are separated by miles of cold, barren seafloor on which adult vent animals cannot survive. Yet biologists find the same species at vents hundreds of miles apart, and the larvae of vent animals have been collected drifting in currents far above the seafloor. This suggests that ______",
+    "stem": "Which choice most logically completes the text?",
+    "options": [
+      "vent species persist by releasing larvae that are carried by currents to other vents before their home vent shuts down.",
+      "the bacteria that feed vent animals can survive for long periods on the cold seafloor between vents.",
+      "adult vent animals are able to migrate across the seafloor to a new vent when their home vent begins to fail.",
+      "most larvae released at a vent settle at the same vent where they were produced."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The text sets up a puzzle (vents die and are isolated, yet the same species appear far apart) and then supplies the clue that larvae drift in currents above the seafloor, so the logical conclusion is that larvae, not adults, carry the species between vents. The choice about adult migration is the strongest distractor, but the text states that adults cannot survive on the barren seafloor. Larvae settling at their home vent would not explain how the species reach vents hundreds of miles away."
+  },
+  {
+    "id": "SAT-RW-316",
+    "section": "rw",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "conventions",
+    "skill": "Boundaries",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "The first photograph to show a person was taken almost by accident in 1838, when Louis Daguerre pointed his camera at a busy Paris ______ the exposure took several minutes, so moving carriages and pedestrians vanished from the image, but a man having his boots shined stood still long enough to appear.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "street. The",
+      "street, the",
+      "street the",
+      "street, which the"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "\"The first photograph ... was taken ... when Louis Daguerre pointed his camera at a busy Paris street\" is a complete sentence, and \"the exposure took several minutes\" begins another, so a period is needed between them. A comma alone creates a comma splice, and no punctuation creates a run-on. \"Which the exposure took several minutes\" has no grammatical role in the sentence."
+  },
+  {
+    "id": "SAT-RW-317",
+    "section": "rw",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "conventions",
+    "skill": "Boundaries",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "Central Park, which opened to the public in 1858, was designed by Frederick Law Olmsted and Calvert ______ roads for crosstown traffic below ground level so that the park's lawns and paths would not be interrupted.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "Vaux, whose plan placed",
+      "Vaux, their plan placed",
+      "Vaux whose plan placed",
+      "Vaux. Whose plan placed"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "\"Whose plan placed roads ... below ground level\" is a nonessential clause describing Vaux and Olmsted, so it is introduced by a comma and the relative pronoun \"whose.\" \"Vaux, their plan placed\" is the strongest distractor, but it joins two independent clauses with only a comma, creating a comma splice. Omitting the comma runs the clause into the name, and a period leaves \"Whose plan placed roads\" as a fragment."
+  },
+  {
+    "id": "SAT-RW-318",
+    "section": "rw",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "conventions",
+    "skill": "Boundaries",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "An octopus has three ______ two of them pump blood through the gills, and the third sends blood to the rest of the body. Because the third heart stops beating while the animal swims, an octopus tires quickly and usually prefers to crawl along the seafloor.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "hearts:",
+      "hearts,",
+      "hearts",
+      "hearts, which"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The independent clause \"An octopus has three hearts\" is followed by a second independent clause that explains what the three hearts do, and a colon correctly introduces that explanation. A comma alone would create a comma splice, and no punctuation would create a run-on. \"Hearts, which two of them pump\" is ungrammatical because \"which\" has nothing to attach to."
+  },
+  {
+    "id": "SAT-RW-319",
+    "section": "rw",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "conventions",
+    "skill": "Boundaries",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The Grimm brothers, who published their first collection of tales in ______ did not wander the countryside gathering stories from peasants, as is often assumed; many of their sources were educated, middle-class acquaintances.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "1812,",
+      "1812;",
+      "1812",
+      "1812, and"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The clause \"who published their first collection of tales in 1812\" is a nonessential description of the Grimm brothers that begins with a comma, so it must end with a comma before the main verb \"did not wander.\" Leaving out the comma is the most tempting error, but it fails to close the interrupting clause. A semicolon would need an independent clause on each side, and \"and\" would wrongly join a description to a verb."
+  },
+  {
+    "id": "SAT-RW-320",
+    "section": "rw",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "conventions",
+    "skill": "Form, structure, and sense",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "The amount of vitamin C in an orange, as in most fruits and vegetables, ______ with how long the fruit has been stored and how it has been handled.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "varies",
+      "vary",
+      "varying",
+      "have varied"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The subject of the sentence is the singular noun \"amount,\" so the verb must be singular: \"varies.\" \"Vary\" is tempting because the plural nouns \"fruits and vegetables\" sit right before the blank, but they are part of an interrupting phrase, not the subject. \"Varying\" leaves the sentence without a main verb."
+  },
+  {
+    "id": "SAT-RW-321",
+    "section": "rw",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "conventions",
+    "skill": "Form, structure, and sense",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "Before researchers attached tiny tracking devices to the birds, no one ______ how far a ruby-throated hummingbird could fly without stopping; it is now known that the birds cross the Gulf of Mexico in a single flight.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "knew",
+      "knows",
+      "will know",
+      "has known"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The opening phrase \"Before researchers attached\" places the sentence in the past, and the contrast with \"it is now known\" confirms that the not-knowing happened earlier, so the simple past \"knew\" is correct. \"Has known\" is the strongest distractor, but the present perfect describes something continuing into the present, which conflicts with the statement that the answer is now known. \"Knows\" and \"will know\" are the wrong tense for an event that preceded the tracking study."
+  },
+  {
+    "id": "SAT-RW-322",
+    "section": "rw",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "conventions",
+    "skill": "Form, structure, and sense",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "Early photographic processes depended on hazardous substances, including mercury vapor and cyanide salts, to develop and fix an image. Working with chemicals that could damage the lungs and skin, ______",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "nineteenth-century photographers often developed their plates in poorly ventilated darkrooms.",
+      "poorly ventilated darkrooms were where nineteenth-century photographers often developed their plates.",
+      "the plates of nineteenth-century photographers were often developed in poorly ventilated darkrooms.",
+      "it was common for nineteenth-century photographers to develop their plates in poorly ventilated darkrooms."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The opening phrase \"Working with chemicals\" describes the photographers, so the photographers must be the subject that immediately follows the comma. The choice beginning \"it was common\" is the most tempting because it mentions the photographers, but it makes \"it\" the subject, so the phrase dangles. The other two choices wrongly suggest that the darkrooms or the plates were working with chemicals."
+  },
+  {
+    "id": "SAT-RW-323",
+    "section": "rw",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "expressionIdeas",
+    "skill": "Rhetorical synthesis",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Mark Twain's novel The Adventures of Tom Sawyer was published in 1876.\n- The story is set in a small town on the Mississippi River.\n- Twain based the town on Hannibal, Missouri, where he grew up.\n- In one famous scene, Tom persuades other boys to whitewash a fence for him by pretending the chore is a privilege.\n- Twain later wrote a sequel, Adventures of Huckleberry Finn, published in 1884.\n\nThe student wants to emphasize the connection between the novel's setting and Twain's own life. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "stem": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "options": [
+      "Twain set The Adventures of Tom Sawyer in a small Mississippi River town modeled on Hannibal, Missouri, where he had grown up.",
+      "The Adventures of Tom Sawyer, published in 1876, was followed by a sequel, Adventures of Huckleberry Finn, in 1884.",
+      "In a famous scene from The Adventures of Tom Sawyer, Tom convinces other boys that whitewashing a fence is a privilege.",
+      "The Adventures of Tom Sawyer is set in a small town on the Mississippi River."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The goal is to link the setting to Twain's life, and only the first choice mentions both the fictional town and Hannibal, where Twain grew up. The choice that simply describes the Mississippi River setting is the strongest distractor, but it leaves out Twain's own connection to the place. The publication dates and the whitewashing scene say nothing about the setting's origin."
+  },
+  {
+    "id": "SAT-RW-324",
+    "section": "rw",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "expressionIdeas",
+    "skill": "Rhetorical synthesis",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- The giant Pacific octopus lives in the northern Pacific Ocean.\n- It is the largest octopus species, with an arm span that can exceed 14 feet.\n- It can change the color and texture of its skin in less than a second.\n- It typically lives only three to five years.\n- In aquariums, researchers have watched it open jars and solve simple puzzles.\n\nThe student wants to emphasize the octopus's problem-solving ability. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "stem": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "options": [
+      "In aquariums, the giant Pacific octopus has been observed opening jars and solving simple puzzles.",
+      "The giant Pacific octopus, the largest octopus species, has an arm span that can exceed 14 feet.",
+      "The giant Pacific octopus can change the color and texture of its skin in less than a second.",
+      "Although it can grow very large, the giant Pacific octopus typically lives only three to five years."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Opening jars and solving puzzles are the only notes that show problem solving, so the first choice accomplishes the goal. The choice about changing skin color is the most tempting because it describes an impressive ability, but it is a physical trait rather than a sign of problem solving. Size and lifespan do not address the goal at all."
+  },
+  {
+    "id": "SAT-RW-325",
+    "section": "rw",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "expressionIdeas",
+    "skill": "Rhetorical synthesis",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Copenhagen, Denmark, began building separated bicycle lanes in the 1960s.\n- Separated lanes have a curb between cyclists and motor traffic.\n- In the 1960s, most Copenhagen residents commuted by car.\n- Today roughly half of the city's residents commute to work or school by bicycle.\n- The city now has more bicycles than cars.\n\nThe student wants to emphasize how much commuting habits in Copenhagen have changed over time. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "stem": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "options": [
+      "Although most Copenhagen residents commuted by car in the 1960s, today roughly half of them commute by bicycle.",
+      "Copenhagen's separated bicycle lanes have a curb between cyclists and motor traffic.",
+      "Copenhagen began building separated bicycle lanes in the 1960s, and the city now has more bicycles than cars.",
+      "Roughly half of Copenhagen residents commute to work or school by bicycle."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "To show change over time, the sentence needs both the earlier situation and the current one, and only the first choice contrasts car commuting in the 1960s with bicycle commuting today. The choice about bicycle lanes and the number of bicycles is tempting because it spans the same period, but it never says how residents commuted then or now. The choice giving only today's figure shows the present without the past."
+  },
+  {
+    "id": "SAT-RW-326",
+    "section": "rw",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "expressionIdeas",
+    "skill": "Transitions",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "Dietary fiber is not digested by the human body, so for many years nutritionists considered it unimportant. ______ fiber is now known to feed beneficial bacteria in the gut and to slow the absorption of sugar, and health agencies recommend that adults eat at least 25 grams of it a day.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "However,",
+      "For example,",
+      "Therefore,",
+      "Similarly,"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The first sentence says fiber was once considered unimportant, and the second says it is now known to have real benefits, so a transition that signals contrast, \"However,\" is needed. \"Therefore\" is the most tempting distractor because the first sentence contains \"so,\" but the second sentence is not a result of fiber being considered unimportant; it reverses that view. \"For example\" and \"Similarly\" would wrongly present the benefits as an illustration or an extension of the earlier dismissal."
+  },
+  {
+    "id": "SAT-RW-327",
+    "section": "rw",
+    "test": 1,
+    "module": 2,
+    "variant": "lower",
+    "domain": "expressionIdeas",
+    "skill": "Transitions",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Folklorists have long noticed that the same story types appear in cultures thousands of miles apart. Some scholars trace these resemblances to trade routes along which merchants and travelers carried stories over many centuries. ______ a tale about a small trickster who outwits a stronger animal, recorded in both West Africa and the American South, is usually explained as a story carried across the Atlantic.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "For example,",
+      "In contrast,",
+      "Nevertheless,",
+      "In addition,"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The second sentence states a general explanation (stories traveled along trade routes), and the third sentence gives a specific case of a story that traveled, so \"For example\" is the logical transition. \"In addition\" is the most tempting distractor, but the trickster tale is not a new point added to the explanation; it is an instance of it. \"In contrast\" and \"Nevertheless\" signal a conflict that does not exist between the sentences."
+  }
+]

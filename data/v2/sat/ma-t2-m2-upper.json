@@ -1,0 +1,514 @@
+[
+  {
+    "id": "SAT-MA-601",
+    "section": "math",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "If $\\frac{3x + 2}{4} = x - 1$, what is the value of $x$?",
+    "options": [
+      "$-2$",
+      "$\\frac{2}{7}$",
+      "$3$",
+      "$6$"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "Multiply both sides by $4$ to clear the fraction: $3x + 2 = 4(x - 1) = 4x - 4$. Subtracting $3x$ from both sides and adding $4$ gives $x = 6$. Choice C comes from multiplying only the $x$ on the right side by $4$, giving $3x + 2 = 4x - 1$; the whole expression $x - 1$ must be multiplied. Choice A comes from writing $4(x - 1)$ as $4x + 4$."
+  },
+  {
+    "id": "SAT-MA-602",
+    "section": "math",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "advancedMath",
+    "skill": "Equivalent expressions",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which of the following expressions is equivalent to $(2x - 3)^2$?",
+    "options": [
+      "$4x^2 + 9$",
+      "$4x^2 - 6x + 9$",
+      "$4x^2 - 12x + 9$",
+      "$4x^2 - 12x - 9$"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "Squaring a binomial means multiplying it by itself: $(2x - 3)(2x - 3) = 4x^2 - 6x - 6x + 9 = 4x^2 - 12x + 9$. Choice A squares each term separately and drops the middle term; $(a - b)^2$ is not $a^2 - b^2$ or $a^2 + b^2$. Choice B counts the cross term $-6x$ only once instead of twice."
+  },
+  {
+    "id": "SAT-MA-603",
+    "section": "math",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "dataAnalysis",
+    "skill": "Percentages",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "The table shows the number of parts produced and the number of those parts rejected by inspectors for two machines at a factory during one shift.\n\n| Machine | Parts produced | Parts rejected |\n|---|---|---|\n| A | 1,500 | 36 |\n| B | 2,500 | 64 |\n\nWhat percent of all the parts produced by the two machines during the shift were rejected?",
+    "numeric": {
+      "answers": [
+        "2.5"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The two machines produced $1{,}500 + 2{,}500 = 4{,}000$ parts and $36 + 64 = 100$ of them were rejected, so the percent rejected is $\\frac{100}{4{,}000} \\times 100\\% = 2.5\\%$. Averaging the two machines' individual rejection rates ($2.4\\%$ and $2.56\\%$) gives about $2.48\\%$, which is wrong because machine B produced more parts and must carry more weight."
+  },
+  {
+    "id": "SAT-MA-604",
+    "section": "math",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "algebra",
+    "skill": "Linear functions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Dev is repaying a loan with equal monthly payments and no interest. After $5$ payments, the remaining balance is $\\$8{,}000$, and after $12$ payments, the remaining balance is $\\$5{,}760$. What was the original amount of the loan?",
+    "options": [
+      "$\\$8{,}320$",
+      "$\\$9{,}280$",
+      "$\\$9{,}600$",
+      "$\\$11{,}840$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "The balance is a linear function of the number of payments. Between payment $5$ and payment $12$ the balance fell by $8{,}000 - 5{,}760 = 2{,}240$ dollars over $7$ payments, so each payment is $\\frac{2{,}240}{7} = 320$ dollars. The original amount is the balance before any payments: $8{,}000 + 5(320) = 9{,}600$ dollars. Choice B adds back only $4$ payments instead of $5$, and choice D adds $12$ payments to the balance after $5$ payments rather than to the balance after $12$."
+  },
+  {
+    "id": "SAT-MA-605",
+    "section": "math",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "algebra",
+    "skill": "Linear inequalities",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A workshop must produce at least $1{,}200$ brackets during one $8$-hour shift. Machine A makes $90$ brackets per hour and machine B makes $75$ brackets per hour. Machine A runs for the entire shift. What is the least whole number of hours that machine B must run during the shift so that the workshop meets its goal?",
+    "numeric": {
+      "answers": [
+        "7"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Machine A makes $90 \\times 8 = 720$ brackets during the shift. If machine B runs for $b$ hours, the goal requires $720 + 75b \\ge 1{,}200$, so $75b \\ge 480$ and $b \\ge 6.4$. Machine B must run for at least $6.4$ hours, and the least whole number of hours that satisfies this is $7$. Rounding $6.4$ down to $6$ gives only $720 + 450 = 1{,}170$ brackets, which falls short of the goal."
+  },
+  {
+    "id": "SAT-MA-606",
+    "section": "math",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "advancedMath",
+    "skill": "Exponential functions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Priya deposits $\\$2{,}500$ into an account that earns $6\\%$ annual interest compounded monthly, and she makes no other deposits or withdrawals. Which of the following functions gives the balance $B(t)$, in dollars, in the account $t$ years after the deposit?",
+    "options": [
+      "$B(t) = 2500(1.06)^{12t}$",
+      "$B(t) = 2500(1.005)^{12t}$",
+      "$B(t) = 2500(1.005)^{t}$",
+      "$B(t) = 2500(1.5)^{12t}$"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "Compounding monthly at $6\\%$ per year means the account grows by $\\frac{6\\%}{12} = 0.5\\%$ each month, a growth factor of $1.005$, and there are $12t$ months in $t$ years. So $B(t) = 2500(1.005)^{12t}$. Choice A applies the full annual rate $12$ times per year, which would be $72\\%$ per year; choice C uses the monthly factor but applies it only once per year."
+  },
+  {
+    "id": "SAT-MA-607",
+    "section": "math",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "dataAnalysis",
+    "skill": "Ratios, rates and proportions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A satellite moves in a circular orbit of radius $6{,}800$ kilometers and completes one full orbit every $96$ minutes. Which of the following is closest to the speed of the satellite, in kilometers per second?",
+    "options": [
+      "$1.2$",
+      "$7.4$",
+      "$14.8$",
+      "$445$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "In one orbit the satellite travels the circumference of the circle, $2\\pi(6{,}800) \\approx 42{,}726$ kilometers, in $96$ minutes, which is $96 \\times 60 = 5{,}760$ seconds. The speed is $\\frac{42{,}726}{5{,}760} \\approx 7.4$ kilometers per second. Choice D, about $445$, is the speed in kilometers per minute; the minutes must be converted to seconds. Choice A divides the radius rather than the circumference by the time."
+  },
+  {
+    "id": "SAT-MA-608",
+    "section": "math",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "geometryTrig",
+    "skill": "Circles",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A circular running track has center $O$ and a radius of $50$ meters. A runner starts at point $A$ on the track and runs along the track to point $B$, where the measure of angle $AOB$ is $144^\\circ$. If the runner takes the shorter path from $A$ to $B$, how many meters does the runner run?",
+    "options": [
+      "$20\\pi$",
+      "$40\\pi$",
+      "$80\\pi$",
+      "$1{,}000\\pi$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "The path is an arc whose central angle is $144^\\circ$, which is $\\frac{144}{360} = \\frac{2}{5}$ of the full circle. The circumference is $2\\pi(50) = 100\\pi$ meters, so the arc length is $\\frac{2}{5}(100\\pi) = 40\\pi$ meters. Choice D, $1{,}000\\pi$, is the area of the sector, $\\frac{2}{5}\\pi(50)^2$, not a distance. Choice C uses the diameter in place of the radius when computing the circumference."
+  },
+  {
+    "id": "SAT-MA-609",
+    "section": "math",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "advancedMath",
+    "skill": "Nonlinear functions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The graph shows the height $h(t)$, in meters, of a ball $t$ seconds after it is launched from the ground. Which of the following equations defines $h$?",
+    "options": [
+      "$h(t) = -5t^2 + 20$",
+      "$h(t) = -(t - 2)^2 + 20$",
+      "$h(t) = -5t^2 + 20t$",
+      "$h(t) = -4t^2 + 16t$"
+    ],
+    "correct": [
+      2
+    ],
+    "figure": {
+      "src": "/figures/sat/sat-ma-609.svg",
+      "alt": "Graph of h(t) in the t-h plane. The horizontal axis t (seconds) runs from 0 to 5 and the vertical axis h (meters) from 0 to 25. A downward-opening parabola starts at (0, 0), rises to its highest point at (2, 20), and returns to the axis at (4, 0)."
+    },
+    "calculator": true,
+    "explanation": "The graph has zeros at $t = 0$ and $t = 4$, so $h(t) = at(t - 4)$ for some constant $a$. The vertex $(2, 20)$ gives $20 = a(2)(2 - 4) = -4a$, so $a = -5$ and $h(t) = -5t(t - 4) = -5t^2 + 20t$. Choice C has the correct vertex but gives $h(0) = 16$, not $0$, so its graph does not start at the ground; the stretch factor must be found from a second point, not assumed to be $-1$. Choice D has the correct zeros but a maximum height of $16$ meters."
+  },
+  {
+    "id": "SAT-MA-610",
+    "section": "math",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "dataAnalysis",
+    "skill": "Two-variable data: models and scatterplots",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The scatterplot shows the population, in thousands, of a town for each year from 2010 to 2020, where $x$ is the number of years after 2010. A line of best fit is also shown. Based on the line of best fit, which of the following is closest to the predicted population of the town in 2024?",
+    "options": [
+      "$38{,}000$",
+      "$41{,}000$",
+      "$44{,}000$",
+      "$56{,}000$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "figure": {
+      "src": "/figures/sat/sat-ma-610.svg",
+      "alt": "Scatterplot with x (years after 2010) from 0 to 10 and y (population in thousands) from 0 to 40, gridlines every 5. Points: (0, 21), (1, 21), (2, 23.5), (3, 24), (4, 27), (5, 27), (6, 30), (7, 29), (8, 33), (9, 33), (10, 34). The line of best fit passes through (0, 20) and (10, 35)."
+    },
+    "calculator": true,
+    "explanation": "The line of best fit passes through $(0, 20)$ and $(10, 35)$, so its slope is $\\frac{35 - 20}{10} = 1.5$ thousand people per year and its equation is $y = 1.5x + 20$. The year 2024 is $x = 14$, so the predicted population is $1.5(14) + 20 = 41$ thousand, or $41{,}000$. Choice D uses $x = 24$, counting years after 2000 instead of after 2010; choice A uses $x = 12$."
+  },
+  {
+    "id": "SAT-MA-611",
+    "section": "math",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "geometryTrig",
+    "skill": "Similar triangles",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "In the figure, $\\overline{AB}$ is parallel to $\\overline{DC}$, and segments $AC$ and $BD$ intersect at point $E$. If $AB = 15$, $DC = 9$, and $AE = 10$, what is the length of $\\overline{EC}$?",
+    "numeric": {
+      "answers": [
+        "6"
+      ],
+      "tolerance": 0
+    },
+    "figure": {
+      "src": "/figures/sat/sat-ma-611.svg",
+      "alt": "Two triangles that meet at a point E. Segment AB is at the top with A on the left and B on the right, and segment DC is below it with D on the left and C on the right; AB is parallel to DC. Segment AC and segment BD cross at E. AB is labeled 15, DC is labeled 9, and AE is labeled 10. The figure is not drawn to scale."
+    },
+    "calculator": true,
+    "explanation": "Because $\\overline{AB} \\parallel \\overline{DC}$, angles $BAE$ and $DCE$ are alternate interior angles and are congruent, and angles $AEB$ and $CED$ are vertical angles. So triangle $ABE$ is similar to triangle $CDE$, with $AB$ corresponding to $CD$ and $AE$ corresponding to $CE$. Then $\\frac{AE}{CE} = \\frac{AB}{CD}$, so $\\frac{10}{CE} = \\frac{15}{9}$ and $CE = \\frac{90}{15} = 6$. Pairing $AE$ with $DE$ instead of $CE$, or treating $AC$ (not $AE$) as the side of the large triangle, leads to a wrong proportion."
+  },
+  {
+    "id": "SAT-MA-612",
+    "section": "math",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "algebra",
+    "skill": "Systems of two linear equations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Lena borrowed a total of $\\$12{,}000$ from two lenders. One loan charges $4\\%$ simple annual interest and the other charges $7\\%$ simple annual interest. The total interest on the two loans for the first year is $\\$690$. How much did Lena borrow from the lender that charges $7\\%$?",
+    "options": [
+      "$\\$3{,}000$",
+      "$\\$5{,}000$",
+      "$\\$7{,}000$",
+      "$\\$9{,}000$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "Let $x$ be the amount at $4\\%$ and $y$ the amount at $7\\%$. Then $x + y = 12{,}000$ and $0.04x + 0.07y = 690$. Substituting $x = 12{,}000 - y$ gives $0.04(12{,}000 - y) + 0.07y = 690$, so $480 + 0.03y = 690$, $0.03y = 210$, and $y = 7{,}000$. Choice B, $5{,}000$, is the amount borrowed at $4\\%$, which answers a different question. Choice A comes from dividing $210$ by $0.07$ instead of by $0.03$; after substitution the coefficient of $y$ is $0.07 - 0.04 = 0.03$."
+  },
+  {
+    "id": "SAT-MA-613",
+    "section": "math",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "advancedMath",
+    "skill": "Radicals and rational exponents",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "The period $T$ of a satellite in a circular orbit is related to the radius $r$ of the orbit by the equation $T = kr^{\\frac{3}{2}}$, where $k$ is a positive constant. If the radius of a satellite's orbit is multiplied by $4$, the period of the orbit is multiplied by what number?",
+    "numeric": {
+      "answers": [
+        "8"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Replacing $r$ with $4r$ gives $T = k(4r)^{\\frac{3}{2}} = k \\cdot 4^{\\frac{3}{2}} \\cdot r^{\\frac{3}{2}}$, so the period is multiplied by $4^{\\frac{3}{2}}$. Since $4^{\\frac{3}{2}} = (\\sqrt{4})^3 = 2^3 = 8$, the period is multiplied by $8$. Multiplying the period by $4$ or by $6$ treats the exponent as $1$ or as a multiplier of $4$; a rational exponent $\\frac{3}{2}$ means taking the square root and then cubing."
+  },
+  {
+    "id": "SAT-MA-614",
+    "section": "math",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "algebra",
+    "skill": "Systems of two linear equations",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "$ax + 4y = 9$  $6x - 8y = -18$  In the system of equations above, $a$ is a constant. If the system has infinitely many solutions, what is the value of $a$?",
+    "options": [
+      "$-12$",
+      "$-3$",
+      "$3$",
+      "$12$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "A system of two linear equations has infinitely many solutions only when the equations describe the same line, so one must be a constant multiple of the other. The right-hand sides give the multiplier: $9 \\times (-2) = -18$. Multiplying the first equation by $-2$ gives $-2ax - 8y = -18$, and the $y$-terms already match, so $-2a = 6$ and $a = -3$. Choice C comes from multiplying by $2$ instead of $-2$ and ignoring the sign of the $y$-coefficient; choice A comes from setting $\\frac{a}{6} = \\frac{-8}{4}$, inverting one of the ratios."
+  },
+  {
+    "id": "SAT-MA-615",
+    "section": "math",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "algebra",
+    "skill": "Linear functions",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "The graph of the linear function $g$ in the xy-plane passes through the point $(3, 7)$ and is perpendicular to the line with equation $2x + 5y = 10$. What is the value of $g(-2)$?",
+    "numeric": {
+      "answers": [
+        "-5.5",
+        "-11/2"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Solving $2x + 5y = 10$ for $y$ gives $y = -\\frac{2}{5}x + 2$, so that line has slope $-\\frac{2}{5}$. A perpendicular line has the negative reciprocal slope, $\\frac{5}{2}$. Moving from $x = 3$ to $x = -2$ is a change of $-5$ in $x$, so $g(-2) = 7 + \\frac{5}{2}(-5) = 7 - 12.5 = -5.5$. Using the slope $\\frac{2}{5}$ (changing only the sign) or $-\\frac{2}{5}$ (parallel instead of perpendicular) gives $5$ or $9$ instead."
+  },
+  {
+    "id": "SAT-MA-616",
+    "section": "math",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "algebra",
+    "skill": "Linear inequalities",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A factory can make a certain part on machine P for a setup cost of $\\$1{,}500$ plus $\\$3.20$ per part, or on machine Q for a setup cost of $\\$2{,}400$ plus $\\$2.60$ per part. For which numbers of parts $n$ is the total cost of making the parts on machine Q less than the total cost on machine P?",
+    "options": [
+      "$n < 1{,}500$",
+      "$n \\ge 1{,}500$",
+      "$n > 1{,}500$",
+      "$n > 6{,}500$"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "The costs are $1{,}500 + 3.2n$ for machine P and $2{,}400 + 2.6n$ for machine Q. Machine Q is cheaper when $2{,}400 + 2.6n < 1{,}500 + 3.2n$, so $900 < 0.6n$ and $n > 1{,}500$. At exactly $1{,}500$ parts the two costs are equal, $6{,}300$ dollars, so choice B wrongly includes a value where Q is not cheaper. Choice D adds the two setup costs instead of subtracting them."
+  },
+  {
+    "id": "SAT-MA-617",
+    "section": "math",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Two runners start at the same point on a circular track that is $400$ meters around and run in the same direction at constant speeds. One runs at $7$ meters per second and the other at $4.5$ meters per second. How many seconds after the start does the faster runner first pass the slower runner?",
+    "options": [
+      "$34.8$",
+      "$57.1$",
+      "$88.9$",
+      "$160$"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "The faster runner first passes the slower one when the faster runner has run exactly one more lap, that is, $400$ meters farther. After $t$ seconds the distances are $7t$ and $4.5t$, so $7t = 4.5t + 400$, giving $2.5t = 400$ and $t = 160$. Choice A, $400 \\div 11.5 \\approx 34.8$, adds the speeds, which is correct only if the runners run in opposite directions. Choice B, $400 \\div 7 \\approx 57.1$, is when the faster runner completes one lap, not when the faster runner catches the slower one."
+  },
+  {
+    "id": "SAT-MA-618",
+    "section": "math",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "advancedMath",
+    "skill": "Quadratics",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A ball is thrown straight up from a platform $6$ feet above the ground. The height $h(t)$, in feet, of the ball $t$ seconds after it is thrown is given by $h(t) = -16t^2 + vt + 6$, where $v$ is the initial upward speed of the ball in feet per second. If the maximum height of the ball is $70$ feet, what is the value of $v$?",
+    "options": [
+      "$16$",
+      "$32$",
+      "$64$",
+      "$128$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "The maximum height is the $h$-coordinate of the vertex, which occurs at $t = -\\frac{v}{2(-16)} = \\frac{v}{32}$. Substituting gives $h = -16\\left(\\frac{v}{32}\\right)^2 + v\\left(\\frac{v}{32}\\right) + 6 = -\\frac{v^2}{64} + \\frac{v^2}{32} + 6 = \\frac{v^2}{64} + 6$. Setting this equal to $70$ gives $v^2 = 64 \\times 64 = 4{,}096$, so $v = 64$ (the speed is positive). Choice B comes from using $\\frac{v^2}{16}$ instead of $\\frac{v^2}{64}$ for the rise above the platform, and choice D comes from using $\\frac{v^2}{256}$."
+  },
+  {
+    "id": "SAT-MA-619",
+    "section": "math",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "advancedMath",
+    "skill": "Exponential functions",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "The number of bacteria in a culture is modeled by the function $P(t) = 800(1.5)^{\\frac{t}{4}}$, where $t$ is the number of hours after the culture is started. By what percent does the number of bacteria increase every $12$ hours?",
+    "options": [
+      "$37.5\\%$",
+      "$150\\%$",
+      "$237.5\\%$",
+      "$337.5\\%$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "Every $4$ hours the exponent $\\frac{t}{4}$ increases by $1$, so the population is multiplied by $1.5$. In $12$ hours this happens $3$ times, so the population is multiplied by $1.5^3 = 3.375$. A factor of $3.375$ means the new amount is $337.5\\%$ of the old amount, which is an increase of $337.5\\% - 100\\% = 237.5\\%$. Choice D reports the multiplier itself as the percent increase, forgetting to subtract the original $100\\%$. Choice B adds $50\\%$ three times, treating the growth as linear rather than compounding."
+  },
+  {
+    "id": "SAT-MA-620",
+    "section": "math",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "advancedMath",
+    "skill": "Polynomial remainder and factors",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "The polynomial $p(x) = x^3 + ax^2 - 5x + 6$, where $a$ is a constant, is divisible by $x - 2$. What is the remainder when $p(x)$ is divided by $x + 1$?",
+    "numeric": {
+      "answers": [
+        "9"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Since $x - 2$ is a factor, $p(2) = 0$: $8 + 4a - 10 + 6 = 0$, so $4a = -4$ and $a = -1$. By the remainder theorem, the remainder on division by $x + 1$ is $p(-1) = (-1)^3 + (-1)(-1)^2 - 5(-1) + 6 = -1 - 1 + 5 + 6 = 9$. Evaluating $p(1)$ instead of $p(-1)$, or using $a = 1$ from a sign error in $4a = -4$, gives $1$ or $11$ instead."
+  },
+  {
+    "id": "SAT-MA-621",
+    "section": "math",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "geometryTrig",
+    "skill": "Area and volume",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A manufacturer melts a solid steel cylinder with a radius of $6$ centimeters and a height of $10$ centimeters and uses all of the steel to cast solid ball bearings, each in the shape of a sphere with a radius of $2$ centimeters. What is the greatest number of complete ball bearings that can be made from the cylinder?",
+    "options": [
+      "$11$",
+      "$22$",
+      "$33$",
+      "$34$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "The volume of the cylinder is $\\pi r^2 h = \\pi(6^2)(10) = 360\\pi$ cubic centimeters. Each sphere has volume $\\frac{4}{3}\\pi r^3 = \\frac{4}{3}\\pi(2^3) = \\frac{32}{3}\\pi$ cubic centimeters. Dividing gives $\\frac{360\\pi}{32\\pi / 3} = \\frac{1{,}080}{32} = 33.75$, so $33$ complete bearings can be made, with some steel left over. Choice D rounds $33.75$ up, but the $34$th bearing would need more steel than remains. Choice A, $11$, comes from using $4\\pi r^3$ for the volume of a sphere and dropping the factor $\\frac{1}{3}$."
+  },
+  {
+    "id": "SAT-MA-622",
+    "section": "math",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "advancedMath",
+    "skill": "Nonlinear equations",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "What is the solution set of the equation $\\frac{x}{x - 3} - \\frac{2}{x + 1} = \\frac{12}{x^2 - 2x - 3}$?",
+    "options": [
+      "$\\{-2\\}$",
+      "$\\{3\\}$",
+      "$\\{-2, 3\\}$",
+      "$\\{-3, 2\\}$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Since $x^2 - 2x - 3 = (x - 3)(x + 1)$, multiplying every term by $(x - 3)(x + 1)$ gives $x(x + 1) - 2(x - 3) = 12$, which simplifies to $x^2 - x - 6 = 0$, or $(x - 3)(x + 2) = 0$. The candidates are $x = 3$ and $x = -2$, but $x = 3$ makes the denominators $x - 3$ and $x^2 - 2x - 3$ equal to zero, so it is extraneous. Checking $x = -2$: $\\frac{-2}{-5} - \\frac{2}{-1} = \\frac{2}{5} + 2 = \\frac{12}{5}$, and $\\frac{12}{4 + 4 - 3} = \\frac{12}{5}$. The solution set is $\\{-2\\}$. Choice C keeps $x = 3$ without checking it against the original denominators."
+  }
+]

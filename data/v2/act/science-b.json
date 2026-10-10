@@ -1,0 +1,461 @@
+{
+  "stimuli": [
+    {
+      "id": "ACT-SC-P4",
+      "title": "Passage IV",
+      "text": "Dissolved oxygen (DO) is oxygen gas held in solution by water. Fish and other aquatic animals take DO from the water, and most game fish become stressed when DO falls below 5 mg/L. Limnologists measured DO at seven depths in a small temperate lake on the 15th of each of four months (Table 1). All measurements were taken at the same station near the center of the lake, where the bottom is 13 m deep.\n\nTable 1\n\n| Depth (m) | March DO (mg/L) | May DO (mg/L) | July DO (mg/L) | September DO (mg/L) |\n|---|---|---|---|---|\n| 0 | 11.8 | 10.2 | 8.1 | 8.6 |\n| 2 | 11.7 | 10.0 | 8.0 | 8.5 |\n| 4 | 11.6 | 9.4 | 7.7 | 8.1 |\n| 6 | 11.5 | 8.1 | 4.6 | 6.2 |\n| 8 | 11.4 | 6.9 | 2.4 | 3.8 |\n| 10 | 11.3 | 5.8 | 0.9 | 1.7 |\n| 12 | 11.2 | 4.6 | 0.3 | 0.6 |\n\nFigure 1 is a graph of water temperature versus depth on July 15. The temperature was 24 C from the surface down to 2 m and 23 C at 4 m. It then fell steeply, to 15 C at 6 m and 11 C at 8 m, before leveling off at 9 C at 10 m and 8 C at 12 m. On March 15 the temperature was 4 C at every depth.\n\nWater in contact with air can hold only a limited amount of DO, called the saturation DO, and the limit depends on temperature (Table 2). The percent saturation of a sample is its measured DO divided by the saturation DO at the sample's temperature, multiplied by 100.\n\nTable 2\n\n| Water temperature (C) | Saturation DO (mg/L) |\n|---|---|\n| 4 | 13.1 |\n| 8 | 11.9 |\n| 12 | 10.8 |\n| 16 | 9.9 |\n| 20 | 9.1 |\n| 24 | 8.4 |"
+    },
+    {
+      "id": "ACT-SC-P5",
+      "title": "Passage V",
+      "text": "Students studied the growth of bean seedlings in two experiments. In each experiment, every group consisted of 20 seedlings of the same bean variety, each 3 cm tall at the start. The seedlings were planted in identical pots of washed sand, kept at 22 C, and grown for 14 days. Every pot received 50 mL of liquid each day. On Day 14 the students measured the height of each seedling and calculated the mean height for the group.\n\n**Experiment 1**\n\nFive groups were grown under lamps that were switched on for 12 hours per day. The liquid given to each group was water containing a dissolved fertilizer at one of five concentrations. The results are shown in Table 1.\n\nTable 1\n\n| Group | Fertilizer concentration (g/L) | Mean height on Day 14 (cm) | Mean number of leaves |\n|---|---|---|---|\n| 1 | 0 | 9.2 | 4 |\n| 2 | 1 | 12.6 | 5 |\n| 3 | 2 | 15.1 | 6 |\n| 4 | 4 | 16.3 | 6 |\n| 5 | 8 | 11.4 | 4 |\n\n**Experiment 2**\n\nFive new groups were each given water containing the fertilizer at 2 g/L. The lamps were switched on for a different number of hours per day for each group. On Day 14 the students also measured the diameter of each stem 1 cm above the sand and noted the color of the leaves. The results are shown in Table 2.\n\nTable 2\n\n| Group | Light (hours per day) | Mean height on Day 14 (cm) | Mean stem diameter (mm) | Leaf color |\n|---|---|---|---|---|\n| 6 | 0 | 6.8 | 1.2 | pale yellow |\n| 7 | 6 | 10.9 | 2.0 | light green |\n| 8 | 12 | 15.0 | 2.6 | green |\n| 9 | 18 | 17.2 | 2.9 | dark green |\n| 10 | 24 | 17.4 | 2.9 | dark green |"
+    },
+    {
+      "id": "ACT-SC-P6",
+      "title": "Passage VI",
+      "text": "Hydrocarbons are compounds that contain only carbon and hydrogen. Alkanes are hydrocarbons in which the carbon atoms are joined in a chain by single bonds. Table 1 lists properties of six straight-chain alkanes at a pressure of 1 atm. Molar mass is the mass of one mole of the compound; each alkane in the table has 14 g/mol more molar mass than the one above it because its chain is one carbon atom longer. A substance is a liquid at temperatures between its melting point and its boiling point and a gas at temperatures above its boiling point. Density was measured on the liquid at 20 C. A liquid that is less dense than water (density 1.00 g/mL) floats on water.\n\nTable 1\n\n| Alkane | Formula | Carbon atoms per molecule | Molar mass (g/mol) | Melting point (C) | Boiling point (C) | Density at 20 C (g/mL) |\n|---|---|---|---|---|---|---|\n| Pentane | C5H12 | 5 | 72 | -130 | 36 | 0.626 |\n| Hexane | C6H14 | 6 | 86 | -95 | 69 | 0.659 |\n| Heptane | C7H16 | 7 | 100 | -91 | 98 | 0.684 |\n| Octane | C8H18 | 8 | 114 | -57 | 126 | 0.703 |\n| Nonane | C9H20 | 9 | 128 | -54 | 151 | 0.718 |\n| Decane | C10H22 | 10 | 142 | -30 | 174 | 0.730 |"
+    }
+  ],
+  "questions": [
+    {
+      "id": "ACT-SC-121",
+      "section": "science",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-SC-P4",
+      "domain": "interpretation",
+      "skill": "Read a value from a table",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "According to Table 1, the DO at a depth of 8 m in May was closest to:",
+      "options": [
+        "4.6 mg/L.",
+        "5.8 mg/L.",
+        "6.9 mg/L.",
+        "8.1 mg/L."
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Find the row for 8 m in Table 1 and read across to the May column, which gives 6.9 mg/L. The values 5.8 mg/L and 4.6 mg/L are the May readings at 10 m and 12 m, and 8.1 mg/L is the May reading at 6 m."
+    },
+    {
+      "id": "ACT-SC-122",
+      "section": "science",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-SC-P4",
+      "domain": "interpretation",
+      "skill": "Identify a trend in data",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Based on Table 1, as depth increased from 0 m to 12 m in July, the DO:",
+      "options": [
+        "increased only.",
+        "increased, then decreased.",
+        "remained the same at every depth.",
+        "decreased only."
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "In the July column, DO falls at every step: 8.1, 8.0, 7.7, 4.6, 2.4, 0.9 and finally 0.3 mg/L. There is no depth at which the value rises, so the DO decreased only. The decrease is small near the surface and large between 4 m and 8 m, but the direction never changes."
+    },
+    {
+      "id": "ACT-SC-123",
+      "section": "science",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-SC-P4",
+      "domain": "interpretation",
+      "skill": "Compare changes between data points",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "According to Table 1, in July the greatest decrease in DO between two consecutive depths occurred between:",
+      "options": [
+        "2 m and 4 m.",
+        "4 m and 6 m.",
+        "6 m and 8 m.",
+        "8 m and 10 m."
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Subtract each pair of consecutive July values: 2 m to 4 m is a drop of 0.3 mg/L, 4 m to 6 m is a drop of 3.1 mg/L, 6 m to 8 m is 2.2 mg/L, and 8 m to 10 m is 1.5 mg/L. The largest drop, 3.1 mg/L, is between 4 m and 6 m. The 6 m to 8 m interval is the strongest distractor, but 7.7 minus 4.6 exceeds 4.6 minus 2.4."
+    },
+    {
+      "id": "ACT-SC-124",
+      "section": "science",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-SC-P4",
+      "domain": "interpretation",
+      "skill": "Compare data across conditions",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Based on Table 1, at a depth of 12 m the largest decrease in DO between two consecutive sampling dates occurred between:",
+      "options": [
+        "March and May.",
+        "May and July.",
+        "July and September.",
+        "September and the following March."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "At 12 m the readings were 11.2 mg/L in March, 4.6 mg/L in May, 0.3 mg/L in July and 0.6 mg/L in September. The drop from March to May is 6.6 mg/L, from May to July it is 4.3 mg/L, and from July to September the value actually rose by 0.3 mg/L. Table 1 contains no reading for the following March, so that interval cannot be evaluated from the data."
+    },
+    {
+      "id": "ACT-SC-125",
+      "section": "science",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-SC-P4",
+      "domain": "interpretation",
+      "skill": "Combine information from two tables",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Based on Table 1, Figure 1 and Table 2, the percent saturation of the surface water (0 m) on July 15 was closest to:",
+      "options": [
+        "76%.",
+        "86%.",
+        "96%.",
+        "104%."
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Figure 1 gives the July surface temperature as 24 C, and Table 2 shows that water at 24 C can hold 8.4 mg/L of DO. The measured surface DO in July was 8.1 mg/L, so the percent saturation is 8.1 divided by 8.4 times 100, about 96%. A value above 100% would require the measured DO to exceed the saturation DO, which it did not."
+    },
+    {
+      "id": "ACT-SC-126",
+      "section": "science",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-SC-P4",
+      "domain": "evaluation",
+      "skill": "Evaluate a claim using data",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Lake trout require water with a DO of at least 5 mg/L and a temperature of 15 C or lower. A student claims that lake trout could have found water meeting both requirements somewhere between 0 m and 12 m on July 15. Do Table 1 and Figure 1 support this claim?",
+      "options": [
+        "Yes; at 6 m the temperature was 15 C and the DO was 4.6 mg/L.",
+        "Yes; at 4 m the DO was 7.7 mg/L and the temperature was 23 C.",
+        "No; every depth with a DO of at least 5 mg/L was warmer than 15 C, and every depth at 15 C or cooler had a DO below 5 mg/L.",
+        "No; the DO was below 5 mg/L at every depth on July 15."
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "In July, DO was at least 5 mg/L only at 0 m, 2 m and 4 m, where Figure 1 gives temperatures of 24 C, 24 C and 23 C, all too warm. At 6 m and deeper the water was 15 C or cooler, but the DO there was 4.6 mg/L or less. No depth satisfied both requirements, so the claim is not supported. Choice D is wrong because the DO at 0 m through 4 m was well above 5 mg/L."
+    },
+    {
+      "id": "ACT-SC-127",
+      "section": "science",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-SC-P4",
+      "domain": "evaluation",
+      "skill": "Identify evidence that supports a conclusion",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A limnologist concluded that on March 15 the lake water was thoroughly mixed from the surface to the bottom. Which of the following observations from Table 1 best supports this conclusion?",
+      "options": [
+        "In March, the DO differed by only 0.6 mg/L between 0 m and 12 m.",
+        "In March, the DO at every depth was higher than the DO at the same depth in July.",
+        "The surface DO in March was higher than the surface DO in September.",
+        "At 12 m, the DO fell by 6.6 mg/L between March and May."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Thoroughly mixed water should have nearly the same properties at every depth. In March the DO ranged only from 11.8 mg/L at the surface to 11.2 mg/L at 12 m, a difference of 0.6 mg/L, which is consistent with mixing (Figure 1 adds that the temperature was 4 C at every depth). The other choices compare March to other months, which says nothing about whether the water was uniform within March."
+    },
+    {
+      "id": "ACT-SC-128",
+      "section": "science",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-SC-P5",
+      "domain": "investigation",
+      "skill": "Identify the independent variable",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "In Experiment 1, the independent variable was the:",
+      "options": [
+        "number of hours of light per day.",
+        "mean height on Day 14.",
+        "temperature of the room.",
+        "fertilizer concentration."
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The independent variable is the factor the students deliberately changed from group to group. In Experiment 1 the only difference between the five groups was the fertilizer concentration (0, 1, 2, 4 or 8 g/L); light was fixed at 12 hours per day and temperature at 22 C. Mean height was the dependent variable, the quantity measured to see the effect."
+    },
+    {
+      "id": "ACT-SC-129",
+      "section": "science",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-SC-P5",
+      "domain": "investigation",
+      "skill": "Identify controlled variables",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Which of the following factors was the same for every group in both Experiment 1 and Experiment 2?",
+      "options": [
+        "The volume of liquid given to each pot per day",
+        "The number of hours of light per day",
+        "The fertilizer concentration",
+        "The mean stem diameter on Day 14"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The passage states that every pot received 50 mL of liquid each day in both experiments. Light hours were varied in Experiment 2, and fertilizer concentration was varied in Experiment 1, so neither was the same for every group. Mean stem diameter was a measured result in Experiment 2 and differed among groups."
+    },
+    {
+      "id": "ACT-SC-130",
+      "section": "science",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-SC-P5",
+      "domain": "investigation",
+      "skill": "Understand the purpose of a control",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "What was the most likely purpose of including Group 1 in Experiment 1?",
+      "options": [
+        "To determine how tall seedlings grow when they receive no fertilizer, for comparison with the fertilized groups",
+        "To determine whether the seedlings could survive without water",
+        "To test whether 12 hours of light per day is enough for the seedlings to grow",
+        "To measure how much fertilizer the sand could absorb"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Group 1 received water with 0 g/L of fertilizer, so it shows how much the seedlings grow with light, water and sand alone. Without this baseline, the students could not tell how much of the growth in Groups 2 through 5 was caused by the fertilizer. Group 1 still received 50 mL of liquid per day, so it did not test survival without water."
+    },
+    {
+      "id": "ACT-SC-131",
+      "section": "science",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-SC-P5",
+      "domain": "interpretation",
+      "skill": "Describe a trend in results",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "According to Table 2, as the number of hours of light per day increased from 0 to 24, the mean height on Day 14:",
+      "options": [
+        "increased at every step by about the same amount.",
+        "increased, then leveled off between 18 and 24 hours.",
+        "increased, then decreased after 12 hours.",
+        "decreased, then increased after 12 hours."
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Mean height rose from 6.8 cm at 0 hours to 10.9, 15.0 and 17.2 cm at 6, 12 and 18 hours, then rose only 0.2 cm more, to 17.4 cm, at 24 hours. The increases are not equal (about 4.1, 4.1, 2.2 and 0.2 cm), and height never decreased, so the pattern is an increase that levels off."
+    },
+    {
+      "id": "ACT-SC-132",
+      "section": "science",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-SC-P5",
+      "domain": "investigation",
+      "skill": "Compare experimental designs",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which group in Experiment 2 was grown under the same combination of fertilizer concentration and hours of light as a group in Experiment 1?",
+      "options": [
+        "Group 6, which matched Group 1",
+        "Group 7, which matched Group 2",
+        "Group 8, which matched Group 3",
+        "Group 10, which matched Group 5"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Every group in Experiment 1 received 12 hours of light per day, and Group 3 received 2 g/L of fertilizer. In Experiment 2 every group received 2 g/L of fertilizer, and Group 8 received 12 hours of light. Those two groups therefore had identical conditions, which is why their mean heights (15.1 cm and 15.0 cm) agree so closely. Group 6 received 0 hours of light, not 0 g/L of fertilizer, so it does not match Group 1."
+    },
+    {
+      "id": "ACT-SC-133",
+      "section": "science",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-SC-P5",
+      "domain": "investigation",
+      "skill": "Design a follow-up experiment",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "The students want to find more precisely the fertilizer concentration that produces the greatest mean height under 12 hours of light per day. Which of the following sets of additional groups would be most useful?",
+      "options": [
+        "Groups grown at 0.5 g/L and 1.5 g/L under 12 hours of light per day",
+        "Groups grown at 3, 5, 6 and 7 g/L under 12 hours of light per day",
+        "Groups grown at 2 g/L under 8, 10, 14 and 16 hours of light per day",
+        "Groups grown at 16 g/L and 32 g/L under 12 hours of light per day"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "In Table 1 the mean height peaked at 4 g/L (16.3 cm) and was lower at both 2 g/L and 8 g/L, so the best concentration lies somewhere between 2 and 8 g/L. Testing 3, 5, 6 and 7 g/L fills in that range while keeping light at 12 hours, the condition specified. Concentrations below 2 g/L gave smaller heights, concentrations above 8 g/L would likely be even more harmful, and varying light hours would not locate the best concentration."
+    },
+    {
+      "id": "ACT-SC-134",
+      "section": "science",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-SC-P5",
+      "domain": "evaluation",
+      "skill": "Predict a result from two experiments",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Suppose a new group of seedlings were grown at a fertilizer concentration of 4 g/L under 18 hours of light per day, with all other conditions the same as in the experiments. Based on the results of Experiments 1 and 2, the mean height of this group on Day 14 would most likely be:",
+      "options": [
+        "less than 15.0 cm.",
+        "between 15.0 cm and 16.3 cm.",
+        "between 16.3 cm and 17.2 cm.",
+        "greater than 17.2 cm."
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Experiment 1 showed that, at 12 hours of light, raising the fertilizer from 2 g/L to 4 g/L increased mean height from 15.1 cm to 16.3 cm. Experiment 2 showed that, at 2 g/L, raising the light from 12 to 18 hours increased mean height from 15.0 cm to 17.2 cm. Combining the two improvements, a group at 4 g/L and 18 hours should grow taller than the 17.2 cm reached at 2 g/L and 18 hours."
+    },
+    {
+      "id": "ACT-SC-135",
+      "section": "science",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-SC-P6",
+      "domain": "interpretation",
+      "skill": "Read a value from a table",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "According to Table 1, which alkane has a boiling point closest to 100 C?",
+      "options": [
+        "Hexane",
+        "Heptane",
+        "Octane",
+        "Nonane"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Heptane boils at 98 C, only 2 C away from 100 C. Hexane boils at 69 C and octane at 126 C, both much farther from 100 C. Note that heptane's molar mass is 100 g/mol, but the question asks about boiling point, not molar mass."
+    },
+    {
+      "id": "ACT-SC-136",
+      "section": "science",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-SC-P6",
+      "domain": "interpretation",
+      "skill": "Identify trends in two variables",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Based on Table 1, as the number of carbon atoms per molecule increases from 5 to 10, the boiling point and the density of the alkanes:",
+      "options": [
+        "both increase.",
+        "both decrease.",
+        "increase and decrease, respectively.",
+        "decrease and increase, respectively."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Reading down Table 1, boiling point rises from 36 C to 174 C and density rises from 0.626 g/mL to 0.730 g/mL, with no reversals in either column. Both properties therefore increase with the number of carbon atoms. Melting point also increases, but the question asks only about boiling point and density."
+    },
+    {
+      "id": "ACT-SC-137",
+      "section": "science",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-SC-P6",
+      "domain": "interpretation",
+      "skill": "Extrapolate from a trend",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Undecane is a straight-chain alkane with 11 carbon atoms per molecule and a molar mass of 156 g/mol. Based on the trend in Table 1, the boiling point of undecane is most likely:",
+      "options": [
+        "less than 174 C.",
+        "between 174 C and 185 C.",
+        "between 185 C and 205 C.",
+        "greater than 205 C."
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The boiling point rises with each added carbon atom, so undecane should boil above decane's 174 C. The increases from one alkane to the next are 33, 29, 28, 25 and 23 C, shrinking slightly each time, so the next increase should be a little under 23 C, putting undecane near 195 C. That falls between 185 C and 205 C; an increase of less than 11 C or more than 31 C would break the pattern."
+    },
+    {
+      "id": "ACT-SC-138",
+      "section": "science",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-SC-P6",
+      "domain": "evaluation",
+      "skill": "Evaluate a claim using data",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A student claims that the density of a straight-chain alkane is directly proportional to its molar mass, so that doubling the molar mass doubles the density. Is this claim consistent with Table 1?",
+      "options": [
+        "Yes; both density and molar mass increase from pentane to decane.",
+        "Yes; decane has twice the molar mass of pentane and is about twice as dense.",
+        "No; decane has about twice the molar mass of pentane, but its density is only about 17% greater.",
+        "No; density decreases as molar mass increases."
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Direct proportionality would require the density to double when the molar mass doubles. Decane's molar mass (142 g/mol) is roughly twice pentane's (72 g/mol), but decane's density (0.730 g/mL) is only about 17% greater than pentane's (0.626 g/mL), far short of double. Both quantities do increase together, as choice A says, but increasing together is not the same as being proportional."
+    },
+    {
+      "id": "ACT-SC-139",
+      "section": "science",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-SC-P6",
+      "domain": "evaluation",
+      "skill": "Evaluate a prediction using a trend",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A student predicts that dodecane, the straight-chain alkane with 12 carbon atoms per molecule, will sink in water at 20 C. Is this prediction supported by the data in Table 1?",
+      "options": [
+        "Yes; density increases with each added carbon atom, so dodecane must be denser than water.",
+        "Yes; dodecane's molar mass would be greater than that of water.",
+        "No; density decreases for alkanes with more than 10 carbon atoms.",
+        "No; the increase in density per added carbon atom shrinks from 0.033 g/mL to 0.012 g/mL, so dodecane's density should be near 0.75 g/mL, well below 1.00 g/mL."
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The density increases down the table, but by smaller and smaller amounts: 0.033, 0.025, 0.019, 0.015 and then 0.012 g/mL. Two more steps of about 0.01 g/mL each would bring dodecane to roughly 0.75 g/mL, still far below the 1.00 g/mL of water, so dodecane should float. Choice A ignores the shrinking increments, and the table gives no evidence that density ever decreases."
+    },
+    {
+      "id": "ACT-SC-140",
+      "section": "science",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-SC-P6",
+      "domain": "investigation",
+      "skill": "Choose a procedure to answer a question",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A student has a sample of a colorless liquid that is known to be either hexane or heptane. Which of the following procedures would best determine which alkane the sample is?",
+      "options": [
+        "Place a drop of the liquid on water and observe whether it floats",
+        "Observe whether the liquid is colorless",
+        "Observe whether the sample is a liquid at 20 C",
+        "Heat the liquid at 1 atm and measure the temperature at which it boils"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Hexane boils at 69 C and heptane at 98 C, a difference of 29 C that a thermometer can easily detect, so the boiling point identifies the sample. The other procedures give the same result for both alkanes: both are less dense than water and would float, both are colorless, and both are liquids at 20 C because 20 C lies between their melting and boiling points."
+    }
+  ]
+}

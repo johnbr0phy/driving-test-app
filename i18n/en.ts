@@ -758,6 +758,13 @@ export const en = {
   // Settings page
   settings: {
     settings: "Settings",
+    yourTests: "Your practice tests",
+    inProgress: "In progress",
+    deleteTestProgress: "Delete progress",
+    deleteTestConfirm: "Delete progress for this test?",
+    deleteTestBody: "This deletes every test attempt, training set and missed question for",
+    deleteTestOthersSafe: "Your other tests are not affected.",
+    deleteTestYes: "Yes, delete",
     noStateSelected: "No DMV state selected yet. Pick one to start the DMV permit test.",
     chooseState: "Choose your state",
     stateSelection: "State Selection",

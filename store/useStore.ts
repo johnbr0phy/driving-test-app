@@ -5,7 +5,7 @@ import { doc, setDoc, getDoc, updateDoc } from 'firebase/firestore';
 import { db } from '@/lib/firebase';
 import { trackQuestionsAnswered } from '@/lib/analytics';
 import type { Language } from '@/i18n';
-import { examAnalyticsKey, examTestIds, getExamById, getExamByStateCode, getExamForQuestionId, getExamForSetId, getExamForTestId, getExamTrainingSetSize, isExamQuestionId } from '@/lib/exams';
+import { examAnalyticsKey, examFamilyId, examTestIds, getExamById, getExamByStateCode, getExamForQuestionId, getExamForSetId, getExamForTestId, getExamTrainingSetSize, isExamQuestionId } from '@/lib/exams';
 
 /**
  * Non-DMV exams share the store but are namespaced by ID range and stored
@@ -183,6 +183,8 @@ interface AppState {
   checkUserHasData: (userId: string) => Promise<boolean>;
   saveToFirestore: () => Promise<void>;
   resetAllData: () => void;
+  /** Delete one test's progress: "dmv" or a registry exam family id. */
+  resetExamData: (examId: string) => void;
   clearAllDataOnLogout: () => void;
 
   // Guest to user conversion
@@ -1053,6 +1055,41 @@ export const useStore = create<AppState>()(
           trainingSets: {},
           trainingAnswerHistory: [],
           activeDates: [],
+        });
+        get().saveToFirestore();
+      },
+
+      resetExamData: (examId: string) => {
+        // Every store ID belongs to the DMV unless an exam's range claims it.
+        const family = (e: ReturnType<typeof getExamById>) => (e ? examFamilyId(e) : 'dmv');
+        const keepTest = (id: number) => family(getExamForTestId(id)) !== examId;
+        const keepSet = (id: number) => family(getExamForSetId(id)) !== examId;
+        const keepQuestion = (qid: string) => family(getExamForQuestionId(qid)) !== examId;
+        const state = get();
+        const examStates = { ...state.examStates };
+        delete examStates[examId];
+        set({
+          currentTests: Object.fromEntries(Object.entries(state.currentTests).filter(([id]) => keepTest(Number(id)))),
+          completedTests: state.completedTests.filter((t) => keepTest(t.testNumber)),
+          testAttempts: state.testAttempts.filter((a) => keepTest(a.testNumber)),
+          trainingSets: Object.fromEntries(Object.entries(state.trainingSets).filter(([id]) => keepSet(Number(id)))),
+          trainingAnswerHistory: state.trainingAnswerHistory.filter((h) => keepQuestion(h.questionId)),
+          examStates,
+          ...(examId === 'dmv'
+            ? {
+                superAmazing: { ...state.superAmazing, enabled: false },
+                training: {
+                  questionsAnswered: [],
+                  correctCount: 0,
+                  incorrectCount: 0,
+                  currentStreak: 0,
+                  bestStreak: 0,
+                  totalCorrectAllTime: 0,
+                  masteredQuestionIds: [],
+                  lastQuestionId: null,
+                },
+              }
+            : {}),
         });
         get().saveToFirestore();
       },

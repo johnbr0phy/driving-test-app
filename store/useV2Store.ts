@@ -24,6 +24,8 @@ interface V2State {
   /** base: the state to build on when the key has none yet (a carried-over drill). */
   answerDrill: (key: string, questionId: string, correct: boolean, base?: DrillState) => void;
   resetDrill: (key: string) => void;
+  /** Delete one exam's sessions, results, drills and goal. */
+  resetExam: (examId: string) => void;
   setGoal: (examId: string, goal: number) => void;
   /** Replace the synced data (sessions, results, drills, goals) wholesale. */
   replaceData: (data: V2Data, syncedUid: string | null) => void;
@@ -65,6 +67,17 @@ export const useV2Store = create<V2State>()(
         });
       },
       resetDrill: (key) => set((s) => ({ drills: { ...s.drills, [key]: EMPTY_DRILL } })),
+      resetExam: (examId) =>
+        set((s) => {
+          const goals = { ...s.goals };
+          delete goals[examId];
+          return {
+            sessions: Object.fromEntries(Object.entries(s.sessions).filter(([, v]) => v.examId !== examId)),
+            results: s.results.filter((r) => r.examId !== examId),
+            drills: Object.fromEntries(Object.entries(s.drills).filter(([k]) => !k.startsWith(`${examId}:`))),
+            goals,
+          };
+        }),
       setGoal: (examId, goal) => set((s) => ({ goals: { ...s.goals, [examId]: goal } })),
       replaceData: (data, syncedUid) => set({ ...data, syncedUid }),
     }),

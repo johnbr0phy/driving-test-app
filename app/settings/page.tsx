@@ -14,12 +14,18 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import Link from "next/link";
-import { Loader2, User, AlertTriangle, MapPin, LogOut } from "lucide-react";
+import { Loader2, User, AlertTriangle, MapPin, LayoutGrid, ChevronRight, LogOut, Trash2 } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { useStore } from "@/store/useStore";
 import { useHydration } from "@/hooks/useHydration";
 import { states } from "@/data/states";
+import { TEST_CATALOG } from "@/lib/testCatalog";
+import { useV2Store } from "@/store/useV2Store";
+import { getExamById, getExamForSetId, getExamForTestId, examFamilyId } from "@/lib/exams";
+import { EXAMS_V2 } from "@/lib/v2/registry";
+import { TestIcon } from "@/components/TestIcon";
+import { hasTigerSet } from "@/lib/tigerAssets";
 
 export default function SettingsPage() {
   const router = useRouter();
@@ -29,12 +35,17 @@ export default function SettingsPage() {
   const photoURL = useStore((state) => state.photoURL);
   const setPhotoURL = useStore((state) => state.setPhotoURL);
   const resetAllData = useStore((state) => state.resetAllData);
+  const resetExamData = useStore((state) => state.resetExamData);
   const selectedState = useStore((state) => state.selectedState);
   const setSelectedState = useStore((state) => state.setSelectedState);
+  const completedTests = useStore((state) => state.completedTests);
+  const currentTests = useStore((state) => state.currentTests);
+  const trainingSets = useStore((state) => state.trainingSets);
 
   const [loadingGooglePhoto, setLoadingGooglePhoto] = useState(false);
   const [stateChangeDialog, setStateChangeDialog] = useState(false);
   const [resetDialog, setResetDialog] = useState(false);
+  const [deleteTestId, setDeleteTestId] = useState<string | null>(null);
   const [pendingStateCode, setPendingStateCode] = useState<string | null>(null);
 
   // Redirect if not logged in
@@ -86,6 +97,39 @@ export default function SettingsPage() {
     router.push(selectedState ? "/dashboard" : "/tests");
   };
 
+  // Which tests this account has touched. Each test keeps its own ID range
+  // in the store (see CLAUDE.md, Additional Exams); state variants count
+  // toward their family.
+  const ownedBy = (examId: string, exam: ReturnType<typeof getExamForTestId>) => !!exam && examFamilyId(exam) === examId;
+  // v2 exams (SAT) keep their progress in their own store.
+  const v2 = useV2Store();
+  const v2Started = (examId: string) =>
+    v2.results.some((r) => r.examId === examId) ||
+    Object.values(v2.sessions).some((s) => s.examId === examId) ||
+    Object.entries(v2.drills).some(([k, d]) => k.startsWith(`${examId}:`) && d.seen > 0);
+
+  const hasStarted = (testId: string): boolean => {
+    if (testId === "dmv") return !!selectedState;
+    if (v2Started(testId)) return true;
+    if (!getExamById(testId)) return false;
+    return (
+      completedTests.some((t) => ownedBy(testId, getExamForTestId(t.testNumber))) ||
+      Object.keys(currentTests).some((k) => ownedBy(testId, getExamForTestId(Number(k)))) ||
+      Object.keys(trainingSets).some((k) => ownedBy(testId, getExamForSetId(Number(k))))
+    );
+  };
+
+  // Started tests only: the All tests menu already lists every test.
+  const startedTests = TEST_CATALOG.filter((test) => hasStarted(test.id));
+  const deleteTest = TEST_CATALOG.find((test) => test.id === deleteTestId);
+
+  const confirmDeleteTest = () => {
+    if (!deleteTestId) return;
+    if (EXAMS_V2.some((e) => e.id === deleteTestId)) v2.resetExam(deleteTestId);
+    else resetExamData(deleteTestId);
+    setDeleteTestId(null);
+  };
+
   const handleStateChange = (newStateCode: string) => {
     if (newStateCode === selectedState) return;
     setPendingStateCode(newStateCode);
@@ -112,6 +156,48 @@ export default function SettingsPage() {
       <div className="relative">
         <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-light to-white pointer-events-none" />
         <div className="relative container mx-auto px-4 py-8 max-w-6xl">
+        {/* The tests this account has started, each with its own delete */}
+        {startedTests.length > 0 && (
+        <Card className="bg-gray-50 mb-6">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <LayoutGrid className="h-5 w-5" />
+              {t("settings.yourTests")}
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul className="divide-y divide-gray-200 rounded-lg border border-gray-200 bg-white">
+              {startedTests.map((test) => {
+                const status = test.id === "dmv" && selectedState ? currentStateName : t("settings.inProgress");
+                return (
+                  <li key={test.id} data-theme={test.theme} className="flex items-center">
+                    <Link href={test.dashboardHref} className="flex flex-1 min-w-0 items-center gap-3 px-4 py-3 hover:bg-gray-50 transition-colors">
+                      <span className={`flex h-9 w-9 items-center justify-center rounded-lg flex-shrink-0 ${hasTigerSet(test.id) ? "" : "bg-brand text-white"}`}>
+                        <TestIcon examId={test.id} icon={test.icon} className={hasTigerSet(test.id) ? "h-9 w-9" : "h-5 w-5"} />
+                      </span>
+                      <span className="flex-1 min-w-0">
+                        <span className="block font-medium text-gray-900">{test.name}</span>
+                        <span className="block text-sm text-brand font-medium">{status}</span>
+                      </span>
+                      <ChevronRight className="h-5 w-5 text-gray-400 flex-shrink-0" />
+                    </Link>
+                    <button
+                      type="button"
+                      onClick={() => setDeleteTestId(test.id)}
+                      className="mr-2 flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-lg text-gray-400 hover:bg-red-50 hover:text-red-600 transition-colors"
+                      title={t("settings.deleteTestProgress")}
+                      aria-label={`${t("settings.deleteTestProgress")}: ${test.name}`}
+                    >
+                      <Trash2 className="h-4 w-4" />
+                    </button>
+                  </li>
+                );
+              })}
+            </ul>
+          </CardContent>
+        </Card>
+        )}
+
         {/* State Selection and Profile Photo Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
           {/* State Selection Card */}
@@ -287,6 +373,33 @@ export default function SettingsPage() {
             </Button>
             <Button variant="destructive" onClick={confirmStateChange}>
               {t("settings.yesSwitchState")}
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
+
+      {/* Delete One Test's Progress Dialog */}
+      <Dialog open={!!deleteTestId} onOpenChange={(open) => !open && setDeleteTestId(null)}>
+        <DialogContent className="sm:max-w-md">
+          <DialogHeader>
+            <DialogTitle className="flex items-center gap-2 text-red-600">
+              <AlertTriangle className="h-5 w-5" />
+              {t("settings.deleteTestConfirm")}
+            </DialogTitle>
+            <DialogDescription className="space-y-3 pt-2 text-left">
+              <p className="text-gray-700">
+                {t("settings.deleteTestBody")} <strong className="text-gray-900">{deleteTest?.name}</strong>.
+              </p>
+              <p className="text-gray-700">{t("settings.deleteTestOthersSafe")}</p>
+              <p className="text-red-600 font-semibold">{t("settings.cannotBeUndone")}</p>
+            </DialogDescription>
+          </DialogHeader>
+          <DialogFooter className="gap-2 sm:gap-0">
+            <Button className="bg-white text-black hover:bg-gray-100 border-2 border-gray-300" onClick={() => setDeleteTestId(null)}>
+              {t("common.cancel")}
+            </Button>
+            <Button variant="destructive" onClick={confirmDeleteTest}>
+              {t("settings.deleteTestYes")}
             </Button>
           </DialogFooter>
         </DialogContent>

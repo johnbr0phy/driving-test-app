@@ -758,6 +758,13 @@ export const es: TranslationKeys = {
   // Settings page
   settings: {
     settings: "Configuración",
+    yourTests: "Tus exámenes de práctica",
+    inProgress: "En progreso",
+    deleteTestProgress: "Borrar progreso",
+    deleteTestConfirm: "¿Borrar el progreso de este examen?",
+    deleteTestBody: "Esto borra todos los intentos, sets de entrenamiento y preguntas falladas de",
+    deleteTestOthersSafe: "Tus otros exámenes no se ven afectados.",
+    deleteTestYes: "Sí, borrar",
     noStateSelected: "Aún no has elegido un estado del DMV. Elige uno para empezar el examen de permiso.",
     chooseState: "Elige tu estado",
     stateSelection: "Selección de estado",

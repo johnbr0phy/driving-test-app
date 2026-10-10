@@ -758,6 +758,13 @@ export const vi: TranslationKeys = {
   // Settings page
   settings: {
     settings: "Cài đặt",
+    yourTests: "Bài thi thử của bạn",
+    inProgress: "Đang thực hiện",
+    deleteTestProgress: "Xóa tiến độ",
+    deleteTestConfirm: "Xóa tiến độ của bài thi này?",
+    deleteTestBody: "Thao tác này xóa mọi lần làm bài, bộ luyện tập và câu sai của",
+    deleteTestOthersSafe: "Các bài thi khác của bạn không bị ảnh hưởng.",
+    deleteTestYes: "Có, xóa",
     noStateSelected: "Bạn chưa chọn tiểu bang DMV. Hãy chọn một tiểu bang để bắt đầu thi thử.",
     chooseState: "Chọn tiểu bang",
     stateSelection: "Chọn tiểu bang",

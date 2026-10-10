@@ -457,7 +457,7 @@
     "correct": [
       0
     ],
-    "explanation": "The subject of the sentence is the plural noun \"bubbles,\" so the verb must be the plural \"are.\" Choice B is the strongest distractor because the nearest noun to the blank, \"whipped,\" follows the singular-sounding phrase \"egg whites are whipped,\" but that phrase is inside a relative clause and is not the subject of the main verb."
+    "explanation": "The subject of the sentence is the plural noun \"bubbles,\" so the verb must be the plural \"are.\" Choice B is the strongest distractor because the relative clause \"that form when egg whites are whipped\" sits between the subject and the blank and can make the sentence feel singular, but that clause only describes the bubbles and does not change the subject of the main verb."
   },
   {
     "id": "SAT-RW-521",
@@ -492,7 +492,7 @@
     "skill": "Form, structure, and sense",
     "difficulty": 3,
     "format": "single",
-    "passage": "Although now remembered mainly for feature films, ______ with a series of short cartoons in the 1920s that combined live action with animated characters.",
+    "passage": "Although now remembered mainly for its animated feature films, ______ with a series of short cartoons in the 1920s that combined live action with animated characters.",
     "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
       "the career of Walt Disney's studio began",

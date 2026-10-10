@@ -510,6 +510,6 @@
     ],
     "lockedOrder": true,
     "calculator": true,
-    "explanation": "The graph meets the x-axis exactly once when the equation $kx^2 - 8x + 4 = 0$ has exactly one real solution, which happens when the discriminant $b^2 - 4ac$ is zero. Here $(-8)^2 - 4(k)(4) = 64 - 16k = 0$, so $k = 4$. Choice A, $2$, comes from using $-8$ instead of $(-8)^2 = 64$ and solving $-8 - 4(4k)$... more precisely from the equation $8 - 4k \\cdot 4 \\cdot \\frac{1}{4} = 0$ obtained by dropping the square; the discriminant always squares $b$. Choice D, $16$, solves $64 - 4k = 0$, leaving out the factor $c = 4$."
+    "explanation": "The graph meets the x-axis exactly once when the equation $kx^2 - 8x + 4 = 0$ has exactly one real solution, which happens when the discriminant $b^2 - 4ac$ is zero. Here $(-8)^2 - 4(k)(4) = 64 - 16k = 0$, so $k = 4$. Choice A, $2$, comes from writing the discriminant with $b$ instead of $b^2$ and losing a sign; the discriminant always squares $b$. Choice D, $16$, solves $64 - 4k = 0$, leaving out the factor $c = 4$."
   }
 ]

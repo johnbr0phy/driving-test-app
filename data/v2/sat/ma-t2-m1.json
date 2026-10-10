@@ -1,1 +1,487 @@
-[]
+[
+  {
+    "id": "SAT-MA-401",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "If $\\frac{x}{3} + 4 = 10$, what is the value of $x$?",
+    "options": [
+      "$2$",
+      "$6$",
+      "$18$",
+      "$42$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "Subtract $4$ from both sides to get $\\frac{x}{3} = 6$, then multiply both sides by $3$ to get $x = 18$. The choice $6$ comes from stopping after subtracting $4$ and forgetting to multiply by $3$. The choice $2$ comes from dividing $6$ by $3$ instead of multiplying, and $42$ comes from adding $4$ to $10$ before multiplying by $3$."
+  },
+  {
+    "id": "SAT-MA-402",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "dataAnalysis",
+    "skill": "Ratios, rates, and proportions",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A bakery uses $3$ cups of flour to make $2$ dozen muffins. At this rate, how many cups of flour does the bakery use to make $8$ dozen muffins?",
+    "numeric": {
+      "answers": [
+        "12"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The rate is $\\frac{3 \\text{ cups}}{2 \\text{ dozen}} = 1.5$ cups per dozen, so $8$ dozen muffins need $8 \\times 1.5 = 12$ cups of flour. Equivalently, $8$ dozen is $4$ times $2$ dozen, so the flour is $4 \\times 3 = 12$ cups. A common error is to treat $3$ cups as the amount per dozen and answer $24$."
+  },
+  {
+    "id": "SAT-MA-403",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "advancedMath",
+    "skill": "Equivalent expressions",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which of the following expressions is equivalent to $(2x + 3)(x - 4)$?",
+    "options": [
+      "$2x^2 - 5x - 12$",
+      "$2x^2 - 8x - 12$",
+      "$2x^2 + 11x - 12$",
+      "$2x^2 - 5x + 12$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Multiply each term of the first factor by each term of the second: $2x \\cdot x = 2x^2$, $2x \\cdot (-4) = -8x$, $3 \\cdot x = 3x$, and $3 \\cdot (-4) = -12$. Combining like terms gives $2x^2 - 8x + 3x - 12 = 2x^2 - 5x - 12$. The choice $2x^2 - 8x - 12$ comes from dropping the $3x$ term, and $2x^2 + 11x - 12$ comes from adding $8x$ and $3x$ instead of subtracting."
+  },
+  {
+    "id": "SAT-MA-404",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "algebra",
+    "skill": "Linear functions",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A streaming service charges a one-time sign-up fee of \\$12 plus \\$9 for each month of service. Which of the following functions gives the total amount $C(m)$, in dollars, that a customer pays for $m$ months of service?",
+    "options": [
+      "$C(m) = 9m + 12$",
+      "$C(m) = 12m + 9$",
+      "$C(m) = 21m$",
+      "$C(m) = 9m - 12$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "The monthly charge is multiplied by the number of months, so $m$ months of service cost $9m$ dollars, and the one-time fee of $12$ is added once: $C(m) = 9m + 12$. The choice $C(m) = 12m + 9$ swaps the two amounts, charging the sign-up fee every month. The choice $C(m) = 21m$ adds both amounts and charges the total every month."
+  },
+  {
+    "id": "SAT-MA-405",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "geometryTrig",
+    "skill": "Area and volume",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A right circular cylinder has a radius of $3$ inches and a height of $10$ inches. What is the volume of the cylinder, in cubic inches?",
+    "options": [
+      "$30\\pi$",
+      "$60\\pi$",
+      "$90\\pi$",
+      "$360\\pi$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "The volume of a right circular cylinder is $V = \\pi r^2 h$. With $r = 3$ and $h = 10$, $V = \\pi (3^2)(10) = 90\\pi$ cubic inches. The choice $30\\pi$ comes from using $\\pi r h$ and forgetting to square the radius. The choice $60\\pi$ is the lateral surface area $2\\pi r h$, and $360\\pi$ comes from using the diameter $6$ in place of the radius."
+  },
+  {
+    "id": "SAT-MA-406",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "advancedMath",
+    "skill": "Nonlinear functions",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The function $g$ is defined by $g(x) = 2x^2 + x - 5$. What is the value of $g(-3)$?",
+    "options": [
+      "$-26$",
+      "$10$",
+      "$16$",
+      "$28$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "Substitute $-3$ for $x$: $g(-3) = 2(-3)^2 + (-3) - 5 = 2(9) - 3 - 5 = 18 - 8 = 10$. The choice $-26$ comes from treating $(-3)^2$ as $-9$, which gives $-18 - 3 - 5$. The choice $16$ comes from a sign error that adds $3$ instead of subtracting it, and $28$ comes from squaring $2x$ as $(2 \\cdot (-3))^2 = 36$."
+  },
+  {
+    "id": "SAT-MA-407",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "dataAnalysis",
+    "skill": "One-variable data: mean, median",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The bar graph shows the number of swimmers who used a community swimming pool on each of $6$ days. What is the median number of swimmers per day for these $6$ days?",
+    "options": [
+      "$24.5$",
+      "$27.5$",
+      "$28.5$",
+      "$31$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "figure": {
+      "src": "/figures/sat/sat-ma-407.svg",
+      "alt": "Bar graph titled Daily Pool Attendance showing the number of swimmers on each of six days, with the vertical axis from 0 to 40: Monday 24, Tuesday 31, Wednesday 18, Thursday 31, Friday 26, Saturday 35."
+    },
+    "calculator": true,
+    "explanation": "List the six values in order: $18, 24, 26, 31, 31, 35$. With an even number of values, the median is the mean of the two middle values: $\\frac{26 + 31}{2} = 28.5$. The choice $24.5$ comes from averaging the middle two bars in the order shown, Wednesday ($18$) and Thursday ($31$), without sorting first. The choice $27.5$ is the mean, $\\frac{165}{6}$, and $31$ is the mode."
+  },
+  {
+    "id": "SAT-MA-408",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "algebra",
+    "skill": "Linear inequalities",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which of the following is the solution to the inequality $-2x + 7 \\ge 1$?",
+    "options": [
+      "$x \\le 3$",
+      "$x \\ge 3$",
+      "$x \\le -3$",
+      "$x \\ge -3$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Subtract $7$ from both sides to get $-2x \\ge -6$. Dividing both sides by $-2$ reverses the direction of the inequality, giving $x \\le 3$. The choice $x \\ge 3$ comes from dividing by a negative number without reversing the inequality symbol. The choice $x \\ge -3$ comes from dividing $-6$ by $2$ instead of $-2$ and then dropping the sign on $x$."
+  },
+  {
+    "id": "SAT-MA-409",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A swimming pool contains $18{,}000$ gallons of water when a pump begins draining it at a constant rate. After $4$ hours, $13{,}200$ gallons of water remain in the pool. Which of the following equations gives the number of gallons $V$ remaining in the pool $t$ hours after the pump begins draining, for $0 \\le t \\le 15$?",
+    "options": [
+      "$V = 18{,}000 - 1{,}200t$",
+      "$V = 18{,}000 - 4{,}800t$",
+      "$V = 13{,}200 - 1{,}200t$",
+      "$V = 18{,}000 + 1{,}200t$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "In $4$ hours the pool lost $18{,}000 - 13{,}200 = 4{,}800$ gallons, so the pump drains $\\frac{4{,}800}{4} = 1{,}200$ gallons per hour. The amount remaining starts at $18{,}000$ and decreases by $1{,}200$ each hour, so $V = 18{,}000 - 1{,}200t$. The choice $V = 18{,}000 - 4{,}800t$ uses the total drained in $4$ hours as the hourly rate, and $V = 13{,}200 - 1{,}200t$ uses the amount after $4$ hours as the starting amount."
+  },
+  {
+    "id": "SAT-MA-410",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "dataAnalysis",
+    "skill": "Percentages",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A phone repair shop buys a replacement screen from a supplier and marks up the supplier's price by $60\\%$ to set the list price. During a promotion, the shop takes $25\\%$ off the list price, and a customer pays \\$72 for the screen. What was the supplier's price for the screen?",
+    "options": [
+      "$\\$45$",
+      "$\\$54$",
+      "$\\$60$",
+      "$\\$96$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "Let $s$ be the supplier's price. The list price is $1.6s$, and after $25\\%$ off the customer pays $0.75(1.6s) = 1.2s$. Setting $1.2s = 72$ gives $s = 60$ dollars. The choice $45$ comes from dividing $72$ by $1.6$, which ignores the $25\\%$ discount; the choice $96$ is $72 \\div 0.75$, the list price, which is not the supplier's price. The choice $54$ comes from taking $25\\%$ off $72$ a second time."
+  },
+  {
+    "id": "SAT-MA-411",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "advancedMath",
+    "skill": "Exponential functions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The table gives selected values of the exponential function $f$.\n\n| $x$ | $f(x)$ |\n|---|---|\n| $0$ | $5$ |\n| $1$ | $15$ |\n| $2$ | $45$ |\n| $3$ | $135$ |\n\nWhich of the following equations defines $f$?",
+    "options": [
+      "$f(x) = 5 \\cdot 3^x$",
+      "$f(x) = 3 \\cdot 5^x$",
+      "$f(x) = 10x + 5$",
+      "$f(x) = 3^x + 4$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "An exponential function has the form $f(x) = a \\cdot b^x$, where $a = f(0)$. The table gives $f(0) = 5$, and each value is $3$ times the previous one ($15 \\div 5 = 3$, $45 \\div 15 = 3$), so $b = 3$ and $f(x) = 5 \\cdot 3^x$. The choice $f(x) = 3 \\cdot 5^x$ swaps the starting value and the growth factor; it gives $f(0) = 3$, not $5$. The choice $f(x) = 10x + 5$ matches only the first two rows, since the values grow by a constant factor, not a constant difference."
+  },
+  {
+    "id": "SAT-MA-412",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "geometryTrig",
+    "skill": "Right triangles and trigonometry",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In the figure, triangle $ABC$ is a right triangle with its right angle at $C$. If $AC = 24$ and $BC = 10$, what is the value of $\\tan A$?",
+    "options": [
+      "$\\frac{5}{12}$",
+      "$\\frac{12}{5}$",
+      "$\\frac{5}{13}$",
+      "$\\frac{12}{13}$"
+    ],
+    "correct": [
+      0
+    ],
+    "figure": {
+      "src": "/figures/sat/sat-ma-412.svg",
+      "alt": "Right triangle ABC with the right angle at C, marked with a small square. The horizontal leg AC has length 24 and the vertical leg BC has length 10. The hypotenuse AB is not labeled. Figure not drawn to scale."
+    },
+    "calculator": true,
+    "explanation": "The tangent of an acute angle in a right triangle is the length of the leg opposite the angle divided by the length of the leg adjacent to it. The leg opposite angle $A$ is $BC = 10$ and the leg adjacent to angle $A$ is $AC = 24$, so $\\tan A = \\frac{10}{24} = \\frac{5}{12}$. The choice $\\frac{12}{5}$ is $\\tan B$, which swaps the opposite and adjacent legs. The hypotenuse is $\\sqrt{24^2 + 10^2} = 26$, so $\\frac{5}{13}$ is $\\sin A$ and $\\frac{12}{13}$ is $\\cos A$."
+  },
+  {
+    "id": "SAT-MA-413",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "algebra",
+    "skill": "Systems of two linear equations",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A car rental company charges a fixed amount per day plus a fixed amount per mile driven. A customer who rents a car for $3$ days and drives $200$ miles is charged \\$171. Another customer who rents a car for $5$ days and drives $150$ miles is charged \\$252. What is the company's charge per day, in dollars?",
+    "numeric": {
+      "answers": [
+        "45"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Let $d$ be the charge per day and $m$ the charge per mile. The two rentals give the system $3d + 200m = 171$ and $5d + 150m = 252$. Multiplying the first equation by $3$ and the second by $4$ gives $9d + 600m = 513$ and $20d + 600m = 1{,}008$; subtracting eliminates $m$ and leaves $11d = 495$, so $d = 45$. Substituting back gives $m = 0.18$, and a check shows $5(45) + 150(0.18) = 225 + 27 = 252$. Dividing $171$ by $3$ to get $57$ ignores the mileage charge."
+  },
+  {
+    "id": "SAT-MA-414",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "advancedMath",
+    "skill": "Quadratics: vertex form",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The graph of the quadratic function $f$ is shown in the $xy$-plane. Which of the following equations defines $f$?",
+    "options": [
+      "$f(x) = (x - 2)^2 - 4$",
+      "$f(x) = (x + 2)^2 - 4$",
+      "$f(x) = (x - 2)^2 + 4$",
+      "$f(x) = (x - 4)^2 - 2$"
+    ],
+    "correct": [
+      0
+    ],
+    "figure": {
+      "src": "/figures/sat/sat-ma-414.svg",
+      "alt": "Graph in the xy-plane of a parabola opening upward labeled y = f(x), with grid lines every 1 unit. The vertex is at (2, -4), and the curve crosses the x-axis at the origin (0, 0) and at (4, 0)."
+    },
+    "calculator": true,
+    "explanation": "The vertex of the parabola is $(2, -4)$, so in vertex form $f(x) = a(x - 2)^2 - 4$. The graph passes through the origin, so $0 = a(0 - 2)^2 - 4$ gives $4a = 4$ and $a = 1$, which means $f(x) = (x - 2)^2 - 4$. The choice $(x + 2)^2 - 4$ puts the vertex at $x = -2$; the sign inside the parentheses is the opposite of the vertex's $x$-coordinate. Checking the $x$-intercepts confirms the answer: $(x - 2)^2 - 4 = 0$ gives $x = 0$ and $x = 4$, matching the graph."
+  },
+  {
+    "id": "SAT-MA-415",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "advancedMath",
+    "skill": "Radicals and rational exponents",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "For $x > 0$, which of the following expressions is equivalent to $\\left(16x^8\\right)^{\\frac{3}{4}}$?",
+    "options": [
+      "$4x^6$",
+      "$8x^2$",
+      "$8x^6$",
+      "$12x^6$"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "Apply the exponent to each factor: $16^{\\frac{3}{4}} = \\left(16^{\\frac{1}{4}}\\right)^3 = 2^3 = 8$, and $\\left(x^8\\right)^{\\frac{3}{4}} = x^{8 \\cdot \\frac{3}{4}} = x^6$. So the expression equals $8x^6$. The choice $12x^6$ comes from multiplying $16$ by $\\frac{3}{4}$ instead of raising it to that power. The choice $4x^6$ uses $\\sqrt{16}$ in place of $16^{\\frac{3}{4}}$, and $8x^2$ divides the exponent $8$ by $4$ without multiplying by $3$."
+  },
+  {
+    "id": "SAT-MA-416",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "geometryTrig",
+    "skill": "Circles",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "In the $xy$-plane, a circle has its center at $(3, -2)$ and passes through the point $(7, 1)$. What is the radius of the circle?",
+    "numeric": {
+      "answers": [
+        "5"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The radius is the distance from the center to any point on the circle. By the distance formula, $r = \\sqrt{(7 - 3)^2 + (1 - (-2))^2} = \\sqrt{4^2 + 3^2} = \\sqrt{16 + 9} = \\sqrt{25} = 5$. A common error is to compute $1 - 2 = -1$ for the vertical change instead of $1 - (-2) = 3$, which gives $\\sqrt{17}$ rather than $5$."
+  },
+  {
+    "id": "SAT-MA-417",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In the $xy$-plane, line $k$ is perpendicular to the line with equation $3x + 4y = 8$ and passes through the point $(6, -1)$. What is the $y$-coordinate of the $y$-intercept of line $k$?",
+    "options": [
+      "$-9$",
+      "$-5.5$",
+      "$3.5$",
+      "$7$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "Rewriting $3x + 4y = 8$ as $y = -\\frac{3}{4}x + 2$ shows its slope is $-\\frac{3}{4}$, so a perpendicular line has slope $\\frac{4}{3}$ (the negative reciprocal). Using point-slope form through $(6, -1)$: $y + 1 = \\frac{4}{3}(x - 6)$, so $y = \\frac{4}{3}x - 8 - 1 = \\frac{4}{3}x - 9$, and the $y$-intercept is $-9$. The choice $3.5$ comes from using the same slope $-\\frac{3}{4}$ (a parallel line), and $7$ comes from taking the reciprocal without changing the sign, slope $-\\frac{4}{3}$. The choice $-5.5$ comes from changing the sign without taking the reciprocal, slope $\\frac{3}{4}$."
+  },
+  {
+    "id": "SAT-MA-418",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "advancedMath",
+    "skill": "Quadratics: vertex form",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "The quadratic function $f$ has zeros at $x = -2$ and $x = 6$, and the maximum value of $f$ is $32$. What is the value of $f(0)$?",
+    "numeric": {
+      "answers": [
+        "24"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "With zeros at $-2$ and $6$, the function can be written $f(x) = a(x + 2)(x - 6)$. The vertex lies midway between the zeros, at $x = 2$, and the maximum value is $f(2) = a(4)(-4) = -16a$. Setting $-16a = 32$ gives $a = -2$, so $f(x) = -2(x + 2)(x - 6)$ and $f(0) = -2(2)(-6) = 24$. Forgetting to find $a$ and using $a = 1$ gives $f(0) = -12$, which cannot be right because a function with a maximum must open downward."
+  },
+  {
+    "id": "SAT-MA-419",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "algebra",
+    "skill": "Systems of two linear equations",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "$y = 2x - 5$\n\n$4x - ky = 7$\n\nIn the system of equations above, $k$ is a constant. If the system has no solution, what is the value of $k$?",
+    "options": [
+      "$-2$",
+      "$\\frac{1}{2}$",
+      "$2$",
+      "$4$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "A system of two linear equations has no solution when the lines have the same slope but different $y$-intercepts. The first line has slope $2$. Solving the second equation for $y$ gives $y = \\frac{4}{k}x - \\frac{7}{k}$, with slope $\\frac{4}{k}$. Setting $\\frac{4}{k} = 2$ gives $k = 2$; then the intercepts are $-5$ and $-\\frac{7}{2}$, which differ, so the lines are parallel and the system has no solution. The choice $-2$ comes from reading the slope of the second line as $-\\frac{4}{k}$, forgetting that the $y$ term is already subtracted, and $\\frac{1}{2}$ comes from inverting the slope condition."
+  },
+  {
+    "id": "SAT-MA-420",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "advancedMath",
+    "skill": "Polynomial remainder and factors",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "The polynomial $p$ is defined by $p(x) = 2x^3 + ax^2 - 5x + 6$, where $a$ is a constant. If $x - 2$ is a factor of $p(x)$, what is the value of $a$?",
+    "numeric": {
+      "answers": [
+        "-3"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "By the factor theorem, $x - 2$ is a factor of $p(x)$ exactly when $p(2) = 0$. Substituting gives $p(2) = 2(8) + a(4) - 5(2) + 6 = 16 + 4a - 10 + 6 = 4a + 12$. Setting $4a + 12 = 0$ gives $a = -3$. A common error is to evaluate at $x = -2$ (the sign in the factor reversed), which gives $-16 + 4a + 10 + 6 = 4a$ and the wrong answer $a = 0$."
+  },
+  {
+    "id": "SAT-MA-421",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "algebra",
+    "skill": "Linear functions",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "For the linear function $f$, $f(1) = 5$ and $f(4) = 3f(1)$. What is the value of $f(10)$?",
+    "numeric": {
+      "answers": [
+        "35"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Since $f(1) = 5$, the second condition gives $f(4) = 3(5) = 15$. A linear function has a constant rate of change, so the slope is $\\frac{15 - 5}{4 - 1} = \\frac{10}{3}$. From $x = 4$ to $x = 10$ the input increases by $6$, so $f(10) = 15 + \\frac{10}{3}(6) = 15 + 20 = 35$. A common error is to assume $f(10) = 10 \\cdot f(1) = 50$, which treats $f$ as proportional; that only holds when the line passes through the origin, and here $f(0) = 5 - \\frac{10}{3} = \\frac{5}{3} \\ne 0$."
+  },
+  {
+    "id": "SAT-MA-422",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "advancedMath",
+    "skill": "Nonlinear equations",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "What is the solution set of the equation $\\frac{x^2}{x - 3} = \\frac{9}{x - 3}$?",
+    "options": [
+      "$\\{-3\\}$",
+      "$\\{3\\}$",
+      "$\\{-3, 3\\}$",
+      "The equation has no solution."
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "The expressions are undefined when $x = 3$, so $3$ cannot be a solution. For $x \\ne 3$, multiplying both sides by $x - 3$ gives $x^2 = 9$, so $x = 3$ or $x = -3$. The value $x = 3$ is extraneous because it makes the denominators zero, leaving the solution set $\\{-3\\}$. The choice $\\{-3, 3\\}$ keeps the extraneous solution, and $\\{3\\}$ comes from taking only the positive square root while also missing the domain restriction. Checking $x = -3$: both sides equal $\\frac{9}{-6} = -\\frac{3}{2}$."
+  }
+]

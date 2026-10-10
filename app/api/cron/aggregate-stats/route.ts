@@ -6,6 +6,8 @@
  * - globalStats/wrongQuestions — top 50 most-missed universal questions (stats page)
  * - globalStats/questionDifficulty — per-question attempt count + error rate for
  *   every question (universal and state-specific) with enough attempts (FastPass)
+ * - globalStats/studyTimes — answers in the last 90 days by Eastern weekday and
+ *   hour (7 x 24 grid), for picking email send times (/admin/v2)
  *
  * Each consumer reads one doc — fast, cheap, always fresh.
  */
@@ -54,6 +56,32 @@ export async function GET(req: NextRequest) {
     // Aggregate answer history across all real users
     const snap = await db.collection("users").limit(2000).get();
     const counts: Record<string, { correct: number; wrong: number }> = {};
+
+    // When people study: every timestamped answer (training and practice
+    // tests) from the last 90 days, bucketed by Eastern weekday and hour.
+    const studyGrid: number[][] = Array.from({ length: 7 }, () => new Array(24).fill(0));
+    const studyFrom = Date.now() - 90 * 24 * 60 * 60 * 1000;
+    let studyAnswers = 0;
+    const studyUsers = new Set<string>();
+    const tally = (uid: string, iso: unknown) => {
+      if (typeof iso !== "string") return;
+      const t = Date.parse(iso);
+      if (Number.isNaN(t) || t < studyFrom) return;
+      const slot = easternSlot(t);
+      if (!slot) return;
+      studyGrid[slot.weekday][slot.hour]++;
+      studyAnswers++;
+      studyUsers.add(uid);
+    };
+
+    snap.forEach((doc) => {
+      if (!realUids.has(doc.id)) return;
+      const data = doc.data();
+      for (const entry of data.trainingAnswerHistory || []) tally(doc.id, entry?.answeredAt);
+      for (const test of Array.isArray(data.completedTests) ? data.completedTests : []) {
+        for (const a of Array.isArray(test?.answers) ? test.answers : []) tally(doc.id, a?.answeredAt);
+      }
+    });
 
     snap.forEach((doc) => {
       if (!realUids.has(doc.id)) return;
@@ -129,6 +157,17 @@ export async function GET(req: NextRequest) {
     }
 
     // Write to Firestore — one doc per consumer
+    await db.collection("globalStats").doc("studyTimes").set({
+      // grid[weekday][hour], weekday 0 = Sunday, Eastern time
+      grid: Object.fromEntries(studyGrid.map((row, i) => [String(i), row])),
+      answers: studyAnswers,
+      users: studyUsers.size,
+      sampledUsers: snap.size,
+      days: 90,
+      timeZone: "America/New_York",
+      updatedAt: new Date().toISOString(),
+    });
+
     await db
       .collection("globalStats")
       .doc("wrongQuestions")
@@ -163,4 +202,20 @@ export async function GET(req: NextRequest) {
     console.error("[aggregate-stats] Error:", err);
     return NextResponse.json({ error: err.message }, { status: 500 });
   }
+}
+
+const ET_PARTS = new Intl.DateTimeFormat("en-US", {
+  timeZone: "America/New_York",
+  weekday: "short",
+  hour: "2-digit",
+  hour12: false,
+});
+const WEEKDAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+/** Weekday (0 = Sunday) and hour (0-23) in Eastern time. */
+function easternSlot(ms: number): { weekday: number; hour: number } | null {
+  const parts = ET_PARTS.formatToParts(new Date(ms));
+  const weekday = WEEKDAYS.indexOf(parts.find((p) => p.type === "weekday")?.value ?? "");
+  const hour = parseInt(parts.find((p) => p.type === "hour")?.value ?? "", 10) % 24;
+  return weekday < 0 || Number.isNaN(hour) ? null : { weekday, hour };
 }

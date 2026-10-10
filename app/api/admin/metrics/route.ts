@@ -75,13 +75,14 @@ export async function GET(request: NextRequest) {
     }
 
     const db = getAdminDb();
-    const [usersSnap, paymentsSnap, questionsDoc, testRequestsSnap] = await Promise.all([
+    const [usersSnap, paymentsSnap, questionsDoc, testRequestsSnap, studyTimesDoc] = await Promise.all([
       db.collection('users')
         .select('selectedState', 'lastUpdated', 'activeDates', 'subscription', 'createdAt', 'paywallHits', '_stats', 'emailVariants', 'emailClicks')
         .get(),
       db.collection('payments').get(),
       db.doc('analytics/questions').get(),
       db.collection('testRequests').get(),
+      db.doc('globalStats/studyTimes').get(),
     ]);
 
     // ── "What test should we build next?" answers ───────────────────────────
@@ -368,6 +369,8 @@ export async function GET(request: NextRequest) {
       questionsByExam,
       questionsByExamBackfillPending,
       testRequests,
+      // Built nightly by /api/cron/aggregate-stats.
+      studyTimes: studyTimesDoc.exists ? studyTimesDoc.data() : null,
       launchTest,
       // The "today" range. Signups and revenue are bucketed by the hour in
       // Eastern time off real timestamps. Questions and active users have no

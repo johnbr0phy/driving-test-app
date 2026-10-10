@@ -231,7 +231,7 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
           </div>
         </div>
         <BottomBar>
-          <button type="button" onClick={startModule} className="v2-tap w-full rounded-xl bg-brand text-base font-bold text-white md:max-w-xs">
+          <button type="button" onClick={startModule} className="v2-tap mx-auto w-full rounded-xl bg-brand text-base font-bold text-white md:max-w-xs">
             {isResume ? "Resume module" : "Start module"}
           </button>
         </BottomBar>
@@ -253,7 +253,7 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
           </div>
         </div>
         <BottomBar>
-          <button type="button" onClick={() => update((s) => ({ ...s, phase: "intro" }))} className="v2-tap w-full rounded-xl bg-brand text-base font-bold text-white md:max-w-xs">
+          <button type="button" onClick={() => update((s) => ({ ...s, phase: "intro" }))} className="v2-tap mx-auto w-full rounded-xl bg-brand text-base font-bold text-white md:max-w-xs">
             Continue to {def.section.name}
           </button>
         </BottomBar>

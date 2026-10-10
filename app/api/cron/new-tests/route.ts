@@ -13,6 +13,10 @@
  * Exempt from the quiet-days rule on purpose: the people it is for are the
  * ones who finished with TigerTest and may need it for something else.
  *
+ * PAUSED unless NEW_TESTS_CAMPAIGN=send is set in the environment. While
+ * paused, each run only counts and logs who would get it (a daily dry run),
+ * so the copy can be reviewed before anything goes out.
+ *
  * Drains at MAX_BATCH per day, most recently active first, so the freshest
  * addresses go out while the budget is tightest. Set CRON_MAX_BATCH and
  * RESEND_DAILY_LIMIT higher for the run if the audience is large.
@@ -33,6 +37,8 @@ const EMAIL_KEY = "newTests2026";
 const INCLUDE_LEGACY = process.env.INCLUDE_LEGACY_CONSENT === "true";
 const MIN_ACCOUNT_AGE_MS = 7 * DAY_MS;
 const MAX_STALE_MS = 365 * DAY_MS;
+/** Off unless explicitly turned on: John reviews the email first. */
+const ENABLED = process.env.NEW_TESTS_CAMPAIGN === "send";
 
 export async function GET(req: NextRequest) {
   if (!verifyCronSecret(req)) {
@@ -53,6 +59,13 @@ export async function GET(req: NextRequest) {
         return true;
       })
       .sort((a, b) => b.lastActiveAt.getTime() - a.lastActiveAt.getTime());
+
+    if (!ENABLED) {
+      const dmv = eligible.filter((u) => u.voice.id === "dmv").length;
+      const summary = { paused: true, eligible: eligible.length, dmv, other: eligible.length - dmv };
+      console.log(`[new-tests] paused (set NEW_TESTS_CAMPAIGN=send to send): ${JSON.stringify(summary)}`);
+      return NextResponse.json(summary);
+    }
 
     const result = await processBatch({
       label: "new-tests",

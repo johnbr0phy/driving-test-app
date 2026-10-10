@@ -210,9 +210,20 @@ export function searchTests(query: string, tests: TestCatalogEntry[] = TEST_CATA
   return scored.sort((a, b) => b.score - a.score).map((x) => x.t);
 }
 
-/** TEST_GROUPS narrowed to a query, dropping empty groups. */
+/**
+ * Our biggest tests, pinned above the categories on the /tests hub and the
+ * header switcher when browsing. They still appear in their own category too,
+ * and relatedTests() ignores this group so cross-links stay topical.
+ */
+const POPULAR_IDS = ["dmv", "sat", "act"];
+const POPULAR_GROUP = {
+  title: "Most popular",
+  tests: POPULAR_IDS.map(getCatalogEntry).filter((t): t is TestCatalogEntry => !!t),
+};
+
+/** TEST_GROUPS narrowed to a query, dropping empty groups. Browsing (no query) leads with the popular tests. */
 export function searchTestGroups(query: string) {
-  if (!query.trim()) return TEST_GROUPS;
+  if (!query.trim()) return [POPULAR_GROUP, ...TEST_GROUPS];
   const hits = new Set(searchTests(query).map((t) => t.id));
   return TEST_GROUPS.map((g) => ({ title: g.title, tests: g.tests.filter((t) => hits.has(t.id)) })).filter((g) => g.tests.length > 0);
 }

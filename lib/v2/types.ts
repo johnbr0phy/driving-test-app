@@ -129,7 +129,8 @@ export interface ExamV2Config {
   sections: SectionDef[];
   /** Order of sections in a full test and a break between each pair. */
   breakSeconds: number;
-  tests: { number: number; name: string }[];
+  /** Full tests. A held-out test's items never appear in drills, so it stays a clean measurement. */
+  tests: { number: number; name: string; heldOut?: boolean }[];
   domainLabels: Record<string, string>;
   drills: DrillDef[];
   /** Composite from the scored sections (scaled, raw and total per section, in exam order). */

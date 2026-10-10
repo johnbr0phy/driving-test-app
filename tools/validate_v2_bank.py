@@ -30,6 +30,7 @@ for q in questions:
     else:
         if not (2 <= len(q.get("options", [])) <= 5): errors.append(f"{q['id']}: {len(q.get('options', []))} options")
         if not q.get("correct") or any(c >= len(q["options"]) for c in q["correct"]): errors.append(f"{q['id']}: bad correct index")
+    if q["test"] == 0 and (q["module"] != 1 or q.get("variant")): errors.append(f"{q['id']}: drill-only item must be module 1 with no variant")
     if q.get("stimulusId") and q["stimulusId"] not in stimuli: errors.append(f"{q['id']}: unknown stimulus {q['stimulusId']}")
     if q.get("figure") and not os.path.exists("public" + q["figure"]["src"]): errors.append(f"{q['id']}: missing figure {q['figure']['src']}")
     texts = [q.get("passage", ""), q["stem"], q["explanation"], *q.get("options", [])]
@@ -45,5 +46,12 @@ for test, sections in plan.items():
             got = sum(1 for q in questions if q["test"] == int(test) and q["section"] == section and q["module"] == int(module) and (q.get("variant") or "") == variant)
             if got != want: errors.append(f"test {test} {section} module {key}: {got} items, want {want}")
 print(f"{exam}: {len(questions)} questions, {len(stimuli)} stimuli, {len(errors)} problems")
+# keep the catalog's question count in step with the bank
+sizes_path = "lib/v2/bankSizes.ts"
+src = open(sizes_path).read()
+line = re.compile(rf"^  {re.escape(exam)}: \d+,$", re.M)
+entry = f"  {exam}: {len(questions)},"
+src = line.sub(entry, src) if line.search(src) else src.replace("};", entry + "\n};")
+open(sizes_path, "w").write(src)
 for e in errors: print("  -", e)
 sys.exit(1 if errors else 0)

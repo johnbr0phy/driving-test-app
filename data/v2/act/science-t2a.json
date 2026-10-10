@@ -1,0 +1,461 @@
+{
+  "stimuli": [
+    {
+      "id": "ACT-SC-P7",
+      "title": "Passage I",
+      "text": "A simple pendulum consists of a small weight, called the bob, hung from a fixed point by a light string. The period of a pendulum is the time it takes to complete one full swing back and forth. Students measured how the period depends on the length of the string and on the mass of the bob. In every trial, the pendulum was pulled to one side until the string made an angle of 10° with the vertical and was then released. A stopwatch was used to time 20 complete swings, and that time was divided by 20 to obtain the period. Each setting was tested 3 times and the 3 periods were averaged.\n\nIn Study 1, a 50 g bob was hung from strings of five different lengths. The results, along with the square of each period, are shown in Table 1.\n\n**Table 1.** Period of a 50 g bob at various string lengths\n\n| String length (m) | Period (s) | Period squared (s²) |\n|---|---|---|\n| 0.25 | 1.00 | 1.00 |\n| 0.50 | 1.42 | 2.02 |\n| 1.00 | 2.01 | 4.04 |\n| 1.50 | 2.46 | 6.05 |\n| 2.00 | 2.84 | 8.07 |\n\nIn Study 2, the string length was held at 1.00 m and bobs of four different masses were used. The results are shown in Table 2.\n\n**Table 2.** Period at a string length of 1.00 m for bobs of various masses\n\n| Bob mass (g) | Period (s) |\n|---|---|\n| 20 | 2.01 |\n| 50 | 2.01 |\n| 100 | 2.00 |\n| 200 | 2.01 |"
+    },
+    {
+      "id": "ACT-SC-P8",
+      "title": "Passage II",
+      "text": "Catalase is an enzyme found in many living cells. It speeds up the breakdown of hydrogen peroxide (H2O2) into water and oxygen gas. Students measured the activity of catalase extracted from potato tissue by counting the bubbles of oxygen released from a hydrogen peroxide solution.\n\nIn every trial, 10 mL of 3% hydrogen peroxide solution was placed in a test tube that stood in a water bath. Then 1 mL of catalase solution was added to the tube, and the number of bubbles that rose through the solution during the first minute after the enzyme was added was counted. Each setting was tested 3 times and the 3 counts were averaged. Unless stated otherwise, the water bath was held at 30°C, the hydrogen peroxide solution was buffered at pH 7, and the catalase solution had a concentration of 1.0%.\n\n*Experiment 1*\n\nThe temperature of the water bath was set to 0°C, 10°C, 20°C, 30°C, 40°C, 50°C, or 60°C. The hydrogen peroxide solution and the catalase solution were both allowed to reach the bath temperature before the catalase was added.\n\n*Experiment 2*\n\nThe hydrogen peroxide solution was buffered at pH 3, 5, 7, 9, or 11.\n\n*Experiment 3*\n\nCatalase solutions with concentrations of 0.25%, 0.5%, 1.0%, 2.0%, or 4.0% were used.\n\nThe results of all three experiments are shown in Table 1.\n\n**Table 1.**\n\n| Experiment | Trial | Temperature (°C) | pH | Catalase concentration (%) | Bubbles per minute |\n|---|---|---|---|---|---|\n| 1 | 1 | 0 | 7 | 1.0 | 4 |\n| 1 | 2 | 10 | 7 | 1.0 | 10 |\n| 1 | 3 | 20 | 7 | 1.0 | 22 |\n| 1 | 4 | 30 | 7 | 1.0 | 38 |\n| 1 | 5 | 40 | 7 | 1.0 | 46 |\n| 1 | 6 | 50 | 7 | 1.0 | 18 |\n| 1 | 7 | 60 | 7 | 1.0 | 0 |\n| 2 | 8 | 30 | 3 | 1.0 | 2 |\n| 2 | 9 | 30 | 5 | 1.0 | 24 |\n| 2 | 10 | 30 | 7 | 1.0 | 38 |\n| 2 | 11 | 30 | 9 | 1.0 | 26 |\n| 2 | 12 | 30 | 11 | 1.0 | 5 |\n| 3 | 13 | 30 | 7 | 0.25 | 10 |\n| 3 | 14 | 30 | 7 | 0.5 | 19 |\n| 3 | 15 | 30 | 7 | 1.0 | 38 |\n| 3 | 16 | 30 | 7 | 2.0 | 56 |\n| 3 | 17 | 30 | 7 | 4.0 | 60 |"
+    },
+    {
+      "id": "ACT-SC-P9",
+      "title": "Passage III",
+      "text": "Woolly mammoths were large, cold-adapted relatives of elephants that lived across northern Eurasia and North America during the last ice age. They disappeared from the mainland roughly 10,000 years ago, and the last known population, on an island in the Arctic Ocean, died out about 4,000 years ago. Three scientists discuss why the mammoths went extinct.\n\n**Scientist 1**\n\nMammoths depended on the mammoth steppe, a cold, dry grassland that covered much of the north during the ice age. About 12,000 years ago the climate warmed rapidly. Rainfall increased, and the steppe was replaced by forests, shrubs, and wetlands whose plants mammoths could not digest well. As the grassland shrank, mammoth populations declined gradually over thousands of years and finally vanished from the mainland. Mammoths survived longest on the island because steppe grassland persisted there long after it had disappeared elsewhere. Humans lived alongside mammoths for more than 20,000 years before the extinction, so hunting cannot have been the cause.\n\n**Scientist 2**\n\nMammoths survived several earlier warm periods, some of them warmer than the climate of the last 12,000 years, so climate warming alone cannot explain the extinction. What was new at the end of the last ice age was the spread of humans armed with spears and spear-throwers. On each continent, mammoths vanished within a few thousand years of the arrival of such hunters. Mammoth bones bearing cut marks from stone tools, and some with spear points embedded in them, have been found at many sites. Mammoths reproduced slowly, with a female giving birth to one calf every several years, so even modest hunting of adults would have reduced a herd faster than births could replace the losses. The island population died out soon after the first evidence of humans on the island.\n\n**Scientist 3**\n\nNeither climate change nor hunting explains how quickly the last mammoth populations collapsed. A disease, carried by migrating humans or by the dogs and other animals that traveled with them, spread into mammoth herds that had never been exposed to it. Because the herds had no resistance, the disease killed animals of all ages within a few years. Some sites preserve the bones of dozens of mammoths, including young calves and healthy adults, that died at nearly the same time, and the bones show no tool marks. Hunters would have left tool marks and would have taken mainly selected animals, not whole herds. Populations that were isolated from humans and their animals, such as the one on the island, survived longer because the disease reached them later."
+    }
+  ],
+  "questions": [
+    {
+      "id": "ACT-SC-201",
+      "section": "science",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-SC-P7",
+      "domain": "interpretation",
+      "skill": "Reading table values",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "According to Table 1, the period of the pendulum with a string length of 1.50 m was",
+      "options": [
+        "2.01 s.",
+        "2.46 s.",
+        "2.84 s.",
+        "6.05 s."
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Find the row for a string length of 1.50 m in Table 1 and read across to the Period column, which lists 2.46 s. The values 2.01 s and 2.84 s are the periods at 1.00 m and 2.00 m, and 6.05 is the square of the period at 1.50 m, not the period itself."
+    },
+    {
+      "id": "ACT-SC-202",
+      "section": "science",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-SC-P7",
+      "domain": "interpretation",
+      "skill": "Identifying trends",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "According to the results of Study 2, as the mass of the bob increased from 20 g to 200 g, the period of the pendulum",
+      "options": [
+        "increased by about 1 s.",
+        "decreased by about 1 s.",
+        "doubled.",
+        "changed by less than 0.05 s."
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "In Table 2 the period is 2.01 s, 2.01 s, 2.00 s, and 2.01 s for bob masses of 20 g, 50 g, 100 g, and 200 g. The largest difference between any two of these values is 0.01 s, so the period changed by far less than 0.05 s even though the mass increased tenfold. A change of about 1 s or a doubling would have required periods near 3 s or 4 s for the heaviest bob."
+    },
+    {
+      "id": "ACT-SC-203",
+      "section": "science",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-SC-P7",
+      "domain": "interpretation",
+      "skill": "Interpolating between data points",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Based on Table 1, if a 50 g bob had been hung from a string 0.75 m long, its period would most likely have been",
+      "options": [
+        "less than 1.00 s.",
+        "between 1.00 s and 1.42 s.",
+        "between 1.42 s and 2.01 s.",
+        "between 2.01 s and 2.46 s."
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "In Table 1 the period increases steadily with string length. A length of 0.75 m lies between 0.50 m, where the period was 1.42 s, and 1.00 m, where the period was 2.01 s, so the period at 0.75 m should lie between 1.42 s and 2.01 s. The range from 2.01 s to 2.46 s belongs to lengths between 1.00 m and 1.50 m."
+    },
+    {
+      "id": "ACT-SC-204",
+      "section": "science",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-SC-P7",
+      "domain": "interpretation",
+      "skill": "Extrapolating a trend",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "In Table 1, the square of the period increases in direct proportion to the string length. If this relationship continues, the period of a 50 g bob hung from a string 4.00 m long would be closest to",
+      "options": [
+        "2.84 s.",
+        "4.0 s.",
+        "5.7 s.",
+        "8.0 s."
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Table 1 shows that the period squared is about 4 times the string length in meters (for example, 8.07 s² at 2.00 m). Doubling the length from 2.00 m to 4.00 m should double the period squared to about 16 s², and the square root of 16 is 4, so the period would be about 4.0 s. A value of 5.7 s would be correct only if the period itself doubled when the length doubled, which Table 1 shows it does not (2.01 s at 1.00 m versus 2.84 s at 2.00 m)."
+    },
+    {
+      "id": "ACT-SC-205",
+      "section": "science",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-SC-P7",
+      "domain": "investigation",
+      "skill": "Identifying variables",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which of the following factors was varied in Study 1 but held constant in Study 2?",
+      "options": [
+        "String length",
+        "Bob mass",
+        "Release angle",
+        "Number of swings timed"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Study 1 used five different string lengths with the bob mass fixed at 50 g, while Study 2 held the string length at 1.00 m and varied the bob mass. The release angle of 10° and the 20 swings timed per trial were the same in every trial of both studies, so neither of those was varied in Study 1."
+    },
+    {
+      "id": "ACT-SC-206",
+      "section": "science",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-SC-P7",
+      "domain": "evaluation",
+      "skill": "Evaluating a claim with data",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A student claimed that the period of a pendulum is directly proportional to the length of its string, so that doubling the length doubles the period. Do the results of Study 1 support this claim?",
+      "options": [
+        "Yes; the period increased each time the string length increased.",
+        "Yes; the period at 2.00 m was twice the period at 0.25 m.",
+        "No; doubling the length from 1.00 m to 2.00 m increased the period from 2.01 s to 2.84 s, a factor of about 1.4.",
+        "No; the period decreased as the string length increased."
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "If the period were directly proportional to length, doubling the length would double the period, so a 2.00 m string would have a period of about 4.02 s. Table 1 shows 2.84 s instead, only about 1.4 times the period at 1.00 m, and the same ratio appears between 0.25 m (1.00 s) and 0.50 m (1.42 s). The period does increase with length, but increasing is not the same as doubling, so the first choice does not establish proportionality."
+    },
+    {
+      "id": "ACT-SC-207",
+      "section": "science",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-SC-P7",
+      "domain": "investigation",
+      "skill": "Designing a test of a variable",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Suppose the students wanted to determine whether the angle at which the pendulum is released affects its period. Which of the following procedures would best test this?",
+      "options": [
+        "Hang a 50 g bob from a 1.00 m string and measure the period after releasing it from angles of 5°, 10°, 15°, and 20°.",
+        "Repeat Study 1 using a 100 g bob instead of a 50 g bob.",
+        "Repeat Study 2 using a 2.00 m string instead of a 1.00 m string.",
+        "Hang a 50 g bob from a 1.00 m string, release it from 10°, and time 40 swings instead of 20."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "To test the effect of release angle, the students must change only the angle while keeping the string length and bob mass fixed, which the first procedure does. Repeating Study 1 with a different bob or Study 2 with a different string still releases the pendulum from 10° every time, and timing 40 swings instead of 20 changes how the period is measured, not the angle."
+    },
+    {
+      "id": "ACT-SC-208",
+      "section": "science",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-SC-P8",
+      "domain": "interpretation",
+      "skill": "Reading table values",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "According to the results of Experiment 1, the number of bubbles per minute was greatest when the temperature of the water bath was",
+      "options": [
+        "20°C.",
+        "30°C.",
+        "40°C.",
+        "50°C."
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "In Trials 1 through 7 the bubble counts were 4, 10, 22, 38, 46, 18, and 0 per minute. The greatest value, 46 bubbles per minute, occurred in Trial 5, when the water bath was at 40°C. The count at 30°C (38) was the second highest, and the count fell sharply to 18 at 50°C."
+    },
+    {
+      "id": "ACT-SC-209",
+      "section": "science",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-SC-P8",
+      "domain": "interpretation",
+      "skill": "Identifying trends",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Based on the results of Experiment 2, as the pH of the hydrogen peroxide solution increased from 3 to 11, the number of bubbles per minute",
+      "options": [
+        "increased only.",
+        "decreased only.",
+        "increased, then decreased.",
+        "decreased, then increased."
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "In Trials 8 through 12 the counts were 2, 24, 38, 26, and 5 bubbles per minute at pH 3, 5, 7, 9, and 11. The count rose from pH 3 to a maximum at pH 7 and then fell as the pH rose further, so the trend is an increase followed by a decrease."
+    },
+    {
+      "id": "ACT-SC-210",
+      "section": "science",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-SC-P8",
+      "domain": "investigation",
+      "skill": "Identifying controlled variables",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Which of the following factors was the same in all 17 trials?",
+      "options": [
+        "Temperature of the water bath",
+        "pH of the hydrogen peroxide solution",
+        "Concentration of the catalase solution",
+        "Volume of the hydrogen peroxide solution"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The passage states that every trial used 10 mL of 3% hydrogen peroxide solution, so the volume of hydrogen peroxide was held constant throughout. Temperature was varied in Experiment 1, pH in Experiment 2, and catalase concentration in Experiment 3, so none of those was the same in every trial."
+    },
+    {
+      "id": "ACT-SC-211",
+      "section": "science",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-SC-P8",
+      "domain": "investigation",
+      "skill": "Comparing experimental designs",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Experiment 3 differed from Experiment 1 in that, in Experiment 3,",
+      "options": [
+        "the temperature of the water bath was varied.",
+        "the pH of the hydrogen peroxide solution was varied.",
+        "the concentration of the catalase solution was varied while the temperature was held constant.",
+        "the volume of hydrogen peroxide solution was varied while the catalase concentration was held constant."
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "In Experiment 1 the temperature was changed from trial to trial while the catalase concentration stayed at 1.0%. In Experiment 3 the water bath stayed at 30°C and the catalase concentration was changed from 0.25% to 4.0%. The pH was 7 in both experiments, and the volume of hydrogen peroxide was 10 mL in every trial."
+    },
+    {
+      "id": "ACT-SC-212",
+      "section": "science",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-SC-P8",
+      "domain": "interpretation",
+      "skill": "Interpolating between data points",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Based on the results of Experiment 3, if a trial had been conducted with a 1.5% catalase solution at 30°C and pH 7, the number of bubbles per minute would most likely have been",
+      "options": [
+        "less than 19.",
+        "between 19 and 38.",
+        "between 38 and 56.",
+        "greater than 60."
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "In Experiment 3 the bubble count rose with every increase in catalase concentration. A 1.5% solution lies between the 1.0% solution of Trial 15, which gave 38 bubbles per minute, and the 2.0% solution of Trial 16, which gave 56, so the count should fall between 38 and 56. A value above 60 would exceed even the count for the 4.0% solution."
+    },
+    {
+      "id": "ACT-SC-213",
+      "section": "science",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-SC-P8",
+      "domain": "evaluation",
+      "skill": "Evaluating a hypothesis",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Before Experiment 3, a student hypothesized that doubling the concentration of the catalase solution would always double the number of bubbles per minute. Do the results of Experiment 3 support this hypothesis?",
+      "options": [
+        "Yes; doubling the concentration from 0.5% to 1.0% doubled the count from 19 to 38 bubbles per minute.",
+        "Yes; the count increased every time the concentration was doubled.",
+        "No; doubling the concentration from 2.0% to 4.0% increased the count only from 56 to 60 bubbles per minute.",
+        "No; the count decreased when the concentration was doubled from 2.0% to 4.0%."
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The hypothesis says the count should double for every doubling of concentration. That held at low concentrations (10 to 19, then 19 to 38), but doubling from 1.0% to 2.0% raised the count only from 38 to 56, and doubling from 2.0% to 4.0% raised it only from 56 to 60, far short of the 112 the hypothesis predicts. Because the hypothesis claims the doubling always occurs, these results do not support it, even though the count never decreased."
+    },
+    {
+      "id": "ACT-SC-214",
+      "section": "science",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-SC-P8",
+      "domain": "evaluation",
+      "skill": "Explaining results",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "After Experiment 1, the students took the catalase solution that had been held at 60°C in Trial 7, cooled it to 30°C, and tested it with fresh hydrogen peroxide at pH 7. It produced 0 bubbles per minute. Which of the following conclusions is best supported by this result together with the results of Experiment 1?",
+      "options": [
+        "Exposure to 60°C changed the catalase in a way that was not reversed by cooling.",
+        "Catalase produces bubbles only when the temperature is exactly 30°C.",
+        "Hydrogen peroxide breaks down only at temperatures above 60°C.",
+        "The activity of catalase at 30°C depends on pH rather than on temperature."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "In Trial 4, fresh catalase at 30°C produced 38 bubbles per minute, so a catalase solution that gives 0 bubbles at 30°C after being heated to 60°C must have been altered by the heating in a way that cooling did not undo. Catalase clearly works at temperatures other than 30°C (Trials 1 through 6), and the pH was 7 in both tests, so the difference cannot be attributed to pH."
+    },
+    {
+      "id": "ACT-SC-215",
+      "section": "science",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-SC-P9",
+      "domain": "interpretation",
+      "skill": "Understanding a viewpoint",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "According to Scientist 1, mammoths survived longer on the island than on the mainland because",
+      "options": [
+        "humans never reached the island.",
+        "steppe grassland persisted on the island after it had disappeared elsewhere.",
+        "the disease that killed mainland mammoths reached the island later.",
+        "the island mammoths reproduced more quickly than mainland mammoths."
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Scientist 1 states that mammoths survived longest on the island because steppe grassland persisted there long after it had disappeared elsewhere, consistent with the view that loss of grassland caused the extinction. The late arrival of a disease is Scientist 3's explanation for the island population's survival, and neither the absence of humans nor a faster reproduction rate is claimed by Scientist 1."
+    },
+    {
+      "id": "ACT-SC-216",
+      "section": "science",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-SC-P9",
+      "domain": "interpretation",
+      "skill": "Comparing viewpoints",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which of the scientists claim that the arrival of humans contributed, directly or indirectly, to the extinction of the mammoths?",
+      "options": [
+        "Scientist 2 only",
+        "Scientist 3 only",
+        "Scientists 2 and 3 only",
+        "Scientists 1, 2, and 3"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Scientist 2 blames hunting by humans directly. Scientist 3 blames a disease but says it was carried by migrating humans or by the animals that traveled with them, so humans contributed indirectly. Scientist 1 explicitly rejects a human role, noting that humans and mammoths coexisted for more than 20,000 years, and attributes the extinction to climate warming alone."
+    },
+    {
+      "id": "ACT-SC-217",
+      "section": "science",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-SC-P9",
+      "domain": "evaluation",
+      "skill": "Judging which viewpoint a finding weakens",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Suppose fossil pollen shows that in one mainland region, steppe grassland persisted for 3,000 years after the last mammoths disappeared from that region. This finding most weakens the viewpoint of",
+      "options": [
+        "Scientist 1, because the mammoths disappeared from the region while the grassland they depended on was still present.",
+        "Scientist 2, because the persistence of grassland shows that human hunters had not yet reached the region.",
+        "Scientist 3, because the finding shows that the climate of the region did not change.",
+        "none of the scientists, because none of them makes a claim about grassland."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Scientist 1 argues that mammoths died out because warming replaced the steppe grassland they fed on. If the grassland outlasted the mammoths by 3,000 years in a region, the loss of grassland cannot explain their disappearance there, which weakens Scientist 1's viewpoint. The finding says nothing about whether humans had arrived, so it does not bear on Scientist 2, and a climate that stayed stable is fully compatible with Scientist 3's disease explanation."
+    },
+    {
+      "id": "ACT-SC-218",
+      "section": "science",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-SC-P9",
+      "domain": "evaluation",
+      "skill": "Evaluating viewpoints against evidence",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "A newly excavated site contains the bones of about 40 mammoths, including calves, juveniles, and adults. Growth layers in their tusks show that all of the animals died within a single year, and none of the bones have tool marks. This finding is most consistent with the viewpoint of",
+      "options": [
+        "Scientist 1 only.",
+        "Scientist 2 only.",
+        "Scientist 3 only.",
+        "Scientists 2 and 3 only."
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Scientist 3 predicts exactly this kind of site: a disease that kills animals of all ages within a short time, leaving many bones with no tool marks. Scientist 2 expects hunted mammoths to show cut marks or spear points and to be selected animals rather than whole herds, so the absence of tool marks counts against that view. Scientist 1 describes a gradual decline over thousands of years as grassland shrank, which does not explain 40 animals dying in one year."
+    },
+    {
+      "id": "ACT-SC-219",
+      "section": "science",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-SC-P9",
+      "domain": "investigation",
+      "skill": "Designing a test of a claim",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which of the following studies would best test Scientist 3's hypothesis?",
+      "options": [
+        "Count the number of stone spear points found at sites containing mammoth bones.",
+        "Measure the amount of carbon dioxide trapped in ice cores formed at the end of the last ice age.",
+        "Compare the sizes of adult mammoth teeth from the island with the sizes of teeth from the mainland.",
+        "Search bones from the last mammoth populations for genetic traces of a pathogen, and compare them with bones from populations that lived before humans arrived."
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Scientist 3 claims that a disease introduced by humans or their animals killed the mammoths. Finding traces of a pathogen in bones from the final populations but not in older bones from before human contact would directly support that claim, while finding none would weaken it. Counting spear points tests Scientist 2's hunting hypothesis, ice-core gases bear on Scientist 1's climate hypothesis, and tooth size does not address disease at all."
+    },
+    {
+      "id": "ACT-SC-220",
+      "section": "science",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-SC-P9",
+      "domain": "investigation",
+      "skill": "Choosing data to evaluate a claim",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Scientist 2 claims that on each continent, mammoths vanished within a few thousand years of the arrival of human hunters. Which of the following sets of data would be most useful for evaluating this claim?",
+      "options": [
+        "The ages of the oldest human artifacts and the ages of the youngest mammoth fossils found in each of several regions",
+        "The total number of mammoth fossils that have been found in each of several regions",
+        "The average temperature of each of several regions during the coldest part of the last ice age",
+        "The ages of the oldest mammoth fossils in each of several regions and the number of people living in each region today"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Scientist 2's claim is about timing: human arrival in a region should be followed within a few thousand years by the disappearance of mammoths there. The oldest human artifacts date the arrival and the youngest mammoth fossils date the disappearance, so comparing the two in several regions tests the claim directly. The number of fossils, ice age temperatures, and modern populations do not establish when humans arrived relative to when mammoths vanished."
+    }
+  ]
+}

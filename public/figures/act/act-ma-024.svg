@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" font-family="sans-serif" font-size="13" fill="#000">
+<rect width="320" height="240" fill="#fff"/>
+<path stroke="#ccc" stroke-width="1" d="M98 50V200M146 50V200M194 50V200M242 50V200M290 50V200M50 150H290M50 100H290M50 50H290"/>
+<g stroke="#000" stroke-width="1.5" fill="none">
+<line x1="50" y1="200" x2="300" y2="200"/>
+<line x1="50" y1="200" x2="50" y2="40"/>
+<polyline points="50,200 146,50 194,50 290,200" stroke-width="2"/>
+</g>
+<g font-size="11" text-anchor="middle">
+<text x="50" y="214">0</text>
+<text x="98" y="214">1</text>
+<text x="146" y="214">2</text>
+<text x="194" y="214">3</text>
+<text x="242" y="214">4</text>
+<text x="290" y="214">5</text>
+</g>
+<g font-size="11" text-anchor="end">
+<text x="44" y="154">20</text>
+<text x="44" y="104">40</text>
+<text x="44" y="54">60</text>
+</g>
+<text x="170" y="232" text-anchor="middle" font-size="11">Time (hours)</text>
+<text x="14" y="125" text-anchor="middle" font-size="11" transform="rotate(-90 14 125)">Distance from home (miles)</text>
+</svg>

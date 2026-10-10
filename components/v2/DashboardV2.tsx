@@ -13,7 +13,7 @@ import { ExamV2Config, TestResultV2 } from "@/lib/v2/types";
 import { getBank } from "@/lib/v2/bank";
 import { getSectionV2, stagesOf, v2Routes } from "@/lib/v2/registry";
 import { sessionKey } from "@/lib/v2/session";
-import { drillKey, drillQuestions, EMPTY_DRILL } from "@/lib/v2/training";
+import { drillKey, drillQuestions, heldOutTests, EMPTY_DRILL } from "@/lib/v2/training";
 import { useV2Store, resultsForExam } from "@/store/useV2Store";
 import { useHydration } from "@/hooks/useHydration";
 import { ProgressCard, Collapse } from "@/components/dashboard/ProgressCard";
@@ -72,7 +72,7 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
 
   // ---- Step state ----
   const drillSteps = exam.drills.map((d) => {
-    const qs = drillQuestions(bank, d);
+    const qs = drillQuestions(bank, d, heldOutTests(exam));
     const st = (hydrated ? drills[drillKey(exam.id, d.key)] : undefined) ?? EMPTY_DRILL;
     const mastered = st.masteredIds.filter((id) => qs.some((q) => q.id === id)).length;
     return { def: d, total: qs.length, mastered, started: st.seen > 0, complete: qs.length > 0 && mastered === qs.length };
@@ -202,7 +202,7 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
               const def = s.session ? stageDefs[s.session.stage] : undefined;
 
               const adaptive = exam.sections.some((x) => x.modules.some((m) => m.adaptive));
-              let subtitle = `${exam.sections.length} sections · ${exam.testLength}${adaptive ? " · adaptive" : ""}`;
+              let subtitle = `${exam.sections.length} sections · ${exam.testLength}${adaptive ? " · adaptive" : ""}${s.def.heldOut ? " · never in drills" : ""}`;
               if (s.session && def) subtitle = `In progress · ${def.section.name}, module ${def.module.module}`;
               else if (s.complete && s.best !== null) subtitle = `Best ${s.best} · goal ${goal} hit`;
               else if (s.best !== null) subtitle = `Best ${s.best} · ${goal - s.best} to your goal of ${goal}`;

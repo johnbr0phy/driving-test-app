@@ -4,6 +4,7 @@ import { Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { DrillRunner } from "@/components/v2/DrillRunner";
 import { getExamV2 } from "@/lib/v2/registry";
+import "@/lib/v2/banks/teas";
 
 function Train() {
   const params = useSearchParams();

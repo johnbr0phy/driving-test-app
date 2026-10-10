@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" font-family="sans-serif" font-size="13" fill="#000">
+<rect width="320" height="240" fill="#fff"/>
+<g stroke="#000" stroke-width="1.5" fill="none">
+<line x1="20" y1="80" x2="296" y2="80"/>
+<line x1="20" y1="170" x2="296" y2="170"/>
+<line x1="113.4" y1="30" x2="211.8" y2="215"/>
+<path d="M158 80A18 18 0 0 0 131.5 64.1"/>
+<path d="M205.9 170A18 18 0 0 1 196.4 185.9"/>
+</g>
+<g font-style="italic">
+<text x="302" y="85">ℓ</text>
+<text x="302" y="175">m</text>
+<text x="100" y="38">t</text>
+</g>
+<text x="150" y="60">118°</text>
+<text x="212" y="194">x°</text>
+</svg>

@@ -1,0 +1,703 @@
+{
+  "stimuli": [],
+  "questions": [
+    {
+      "id": "ACT-MA-001",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "algebra",
+      "skill": "Linear equations with fractions",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "If $\\frac{2x}{3} - 4 = 8$, then $x = $",
+      "options": [
+        "$6$",
+        "$8$",
+        "$18$",
+        "$36$"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "Add $4$ to both sides first: $\\frac{2x}{3} = 12$. Then multiply both sides by $\\frac{3}{2}$ (or multiply by $3$ and divide by $2$): $x = 18$. Check: $\\frac{2(18)}{3} - 4 = 12 - 4 = 8$. The choice $36$ comes from multiplying by $3$ but forgetting to divide by $2$, and $6$ comes from subtracting $4$ instead of adding it."
+    },
+    {
+      "id": "ACT-MA-002",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "modeling",
+      "skill": "Percent of a number",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "What is $35\\%$ of $80$?",
+      "options": [
+        "$2.8$",
+        "$28$",
+        "$45$",
+        "$115$"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "Write the percent as a decimal and multiply: $0.35 \\times 80 = 28$. You can also reason that $10\\%$ of $80$ is $8$, so $30\\%$ is $24$ and $5\\%$ is $4$, giving $24 + 4 = 28$. The choice $45$ comes from subtracting $35$ from $80$, which is not what percent of a number means, and $2.8$ places the decimal point in the wrong spot."
+    },
+    {
+      "id": "ACT-MA-003",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "algebra",
+      "skill": "Simplifying expressions with exponents",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Which of the following is equivalent to $(2x^3)^2 \\cdot x^4$ for all values of $x$?",
+      "options": [
+        "$2x^{10}$",
+        "$4x^{9}$",
+        "$4x^{10}$",
+        "$4x^{24}$"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": false,
+      "calculator": true,
+      "explanation": "Raising a product to a power raises every factor to that power: $(2x^3)^2 = 2^2 \\cdot x^{3 \\cdot 2} = 4x^6$. Multiplying powers with the same base adds the exponents: $4x^6 \\cdot x^4 = 4x^{10}$. The choice $2x^{10}$ forgets to square the $2$, and $4x^{24}$ multiplies the exponents $6$ and $4$ instead of adding them."
+    },
+    {
+      "id": "ACT-MA-004",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "geometry",
+      "skill": "Supplementary angles",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Two angles are supplementary. One angle measures $(2x + 10)^\\circ$ and the other measures $50^\\circ$. What is the value of $x$?",
+      "options": [
+        "$20$",
+        "$40$",
+        "$60$",
+        "$85$"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "Supplementary angles add to $180^\\circ$, so $2x + 10 + 50 = 180$. Subtract $60$ from both sides to get $2x = 120$, so $x = 60$. The choice $20$ comes from setting the two angles equal to each other ($2x + 10 = 50$), and $40$ comes from using $90^\\circ$ (complementary) instead of $180^\\circ$."
+    },
+    {
+      "id": "ACT-MA-005",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "geometry",
+      "skill": "Area and perimeter of a rectangle",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A rectangle has a perimeter of $34$ inches and a length of $12$ inches. What is the area of the rectangle, in square inches?",
+      "options": [
+        "$22$",
+        "$60$",
+        "$72$",
+        "$264$"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "The perimeter is $2(\\text{length}) + 2(\\text{width})$, so $2(12) + 2w = 34$, which gives $2w = 10$ and $w = 5$ inches. The area is length times width: $12 \\times 5 = 60$ square inches. The choice $22$ is the perimeter minus one length, not an area, and $264$ comes from multiplying $12$ by $22$ as if $22$ were the width."
+    },
+    {
+      "id": "ACT-MA-006",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "algebra",
+      "skill": "Translating words into equations",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Five less than twice a number $n$ is $19$. Which equation represents this statement?",
+      "options": [
+        "$2n - 5 = 19$",
+        "$5 - 2n = 19$",
+        "$2(n - 5) = 19$",
+        "$2n + 5 = 19$"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": false,
+      "calculator": true,
+      "explanation": "\"Twice a number $n$\" is $2n$, and \"five less than\" that quantity means subtracting $5$ from it: $2n - 5$. Setting it equal to $19$ gives $2n - 5 = 19$. The choice $5 - 2n = 19$ reverses the subtraction (\"five less than\" is not \"five minus\"), and $2(n - 5) = 19$ doubles the number after subtracting instead of before."
+    },
+    {
+      "id": "ACT-MA-007",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "algebra",
+      "skill": "Consecutive integers",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "The sum of three consecutive integers is $48$. What is the largest of the three integers?",
+      "options": [
+        "$15$",
+        "$16$",
+        "$17$",
+        "$18$"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "Call the integers $n$, $n + 1$, and $n + 2$. Their sum is $3n + 3 = 48$, so $3n = 45$ and $n = 15$. The three integers are $15$, $16$, and $17$, and the largest is $17$. The choice $15$ is the smallest integer, and $16$ is the middle one (which also equals $48 \\div 3$), so read carefully which integer the question asks for."
+    },
+    {
+      "id": "ACT-MA-008",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "modeling",
+      "skill": "Rates and unit conversion",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A car travels at a constant speed of $45$ miles per hour. How many miles does the car travel in $20$ minutes?",
+      "options": [
+        "$9$",
+        "$15$",
+        "$20$",
+        "$900$"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "Convert the time to hours: $20$ minutes is $\\frac{20}{60} = \\frac{1}{3}$ hour. Distance is speed times time, so $45 \\times \\frac{1}{3} = 15$ miles. The choice $900$ comes from multiplying $45$ by $20$ without converting minutes to hours, and $9$ comes from dividing by $5$ instead of by $3$."
+    },
+    {
+      "id": "ACT-MA-009",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "algebra",
+      "skill": "Evaluating a function at an expression",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "If $f(x) = 3x - 2$, which of the following is equivalent to $f(a + 1)$?",
+      "options": [
+        "$3a - 1$",
+        "$3a + 1$",
+        "$3a - 2$",
+        "$3a + 3$"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": false,
+      "calculator": true,
+      "explanation": "Replace every $x$ in the rule with the entire expression $a + 1$: $f(a + 1) = 3(a + 1) - 2 = 3a + 3 - 2 = 3a + 1$. The choice $3a - 2$ comes from substituting only $a$ and ignoring the $+ 1$, and $3a - 1$ comes from adding $1$ after multiplying instead of distributing the $3$ to it."
+    },
+    {
+      "id": "ACT-MA-010",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "geometry",
+      "skill": "Simple probability",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A bag contains $5$ red marbles, $3$ blue marbles, and $4$ green marbles. If one marble is drawn at random, what is the probability that it is NOT red?",
+      "options": [
+        "$\\frac{1}{3}$",
+        "$\\frac{5}{12}$",
+        "$\\frac{7}{12}$",
+        "$\\frac{5}{7}$"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "There are $5 + 3 + 4 = 12$ marbles in all, and $3 + 4 = 7$ of them are not red, so the probability is $\\frac{7}{12}$. Equivalently, $1 - \\frac{5}{12} = \\frac{7}{12}$. The choice $\\frac{5}{12}$ is the probability of drawing a red marble, and $\\frac{5}{7}$ compares red marbles to non-red marbles instead of to the whole bag."
+    },
+    {
+      "id": "ACT-MA-011",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "modeling",
+      "skill": "Ratios and proportions",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "In a class, the ratio of boys to girls is $3:5$. If there are $40$ students in the class, how many of them are girls?",
+      "options": [
+        "$15$",
+        "$24$",
+        "$25$",
+        "$30$"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "A ratio of $3:5$ means that out of every $3 + 5 = 8$ students, $5$ are girls. Since $40 \\div 8 = 5$, there are $5$ groups of $8$, so $5 \\times 5 = 25$ girls. The choice $15$ is the number of boys ($3 \\times 5$), and $24$ comes from treating $\\frac{3}{5}$ of $40$ as the number of girls."
+    },
+    {
+      "id": "ACT-MA-012",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "algebra",
+      "skill": "Slope and y-intercept from an equation",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "What is the slope of the line whose equation is $3x + 4y = 12$?",
+      "options": [
+        "$-3$",
+        "$-\\frac{3}{4}$",
+        "$\\frac{3}{4}$",
+        "$3$"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "Solve for $y$ to put the equation in slope-intercept form: $4y = -3x + 12$, so $y = -\\frac{3}{4}x + 3$. The coefficient of $x$ is the slope, $-\\frac{3}{4}$, and the $y$-intercept is $3$. The choice $\\frac{3}{4}$ drops the negative sign that appears when $3x$ is moved to the other side, and $-3$ forgets to divide by $4$."
+    },
+    {
+      "id": "ACT-MA-013",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "algebra",
+      "skill": "Expanding binomials",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which of the following is equivalent to $(2x - 3)^2$?",
+      "options": [
+        "$4x^2 - 9$",
+        "$4x^2 + 9$",
+        "$4x^2 - 6x + 9$",
+        "$4x^2 - 12x + 9$"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": false,
+      "calculator": true,
+      "explanation": "Squaring a binomial means multiplying it by itself: $(2x - 3)(2x - 3) = 4x^2 - 6x - 6x + 9 = 4x^2 - 12x + 9$. The choice $4x^2 + 9$ is the most common error: squaring each term separately and dropping the middle term entirely. The choice $4x^2 - 6x + 9$ keeps only one of the two $-6x$ products, and $4x^2 - 9$ is $(2x - 3)(2x + 3)$, a difference of squares."
+    },
+    {
+      "id": "ACT-MA-014",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "algebra",
+      "skill": "Solving quadratics by factoring",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "What is the sum of all real solutions of the equation $x^2 + 3x = 28$?",
+      "options": [
+        "$-7$",
+        "$-3$",
+        "$3$",
+        "$4$"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "Move everything to one side: $x^2 + 3x - 28 = 0$. Factor by finding two numbers that multiply to $-28$ and add to $3$: those are $7$ and $-4$, so $(x + 7)(x - 4) = 0$ and the solutions are $x = -7$ and $x = 4$. Their sum is $-7 + 4 = -3$. The choices $-7$ and $4$ are the individual solutions, not their sum, and $3$ comes from a sign error when factoring."
+    },
+    {
+      "id": "ACT-MA-015",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "geometry",
+      "skill": "Pythagorean theorem",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "In right triangle $PQR$ shown below, the right angle is at $Q$. The hypotenuse $PR$ has length $25$ and leg $PQ$ has length $7$. What is the length of leg $QR$?",
+      "options": [
+        "$18$",
+        "$24$",
+        "$\\sqrt{674}$",
+        "$32$"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "figure": {
+        "src": "/figures/act/act-ma-015.svg",
+        "alt": "Right triangle PQR with the right angle at Q. Vertical leg PQ is labelled 7, horizontal leg QR is labelled x, and hypotenuse PR is labelled 25."
+      },
+      "explanation": "The Pythagorean theorem says $\\text{leg}^2 + \\text{leg}^2 = \\text{hypotenuse}^2$, so $7^2 + QR^2 = 25^2$, which gives $QR^2 = 625 - 49 = 576$ and $QR = 24$. The choice $\\sqrt{674}$ comes from adding $7^2 + 25^2$, treating $25$ as a leg instead of the hypotenuse. The choice $18$ comes from simply subtracting $25 - 7$ rather than subtracting the squares."
+    },
+    {
+      "id": "ACT-MA-016",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "modeling",
+      "skill": "Percent change",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The price of a concert ticket increased from \\$80 to \\$92. By what percent did the price increase?",
+      "options": [
+        "$12\\%$",
+        "$13\\%$",
+        "$15\\%$",
+        "$115\\%$"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "Percent change is the amount of change divided by the original amount: $\\frac{92 - 80}{80} = \\frac{12}{80} = 0.15 = 15\\%$. The choice $12\\%$ confuses the \\$12 increase with the percent, and $13\\%$ comes from dividing by the new price $92$ instead of the original price $80$. The choice $115\\%$ is what the new price is as a percent of the old price, not the increase."
+    },
+    {
+      "id": "ACT-MA-017",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "algebra",
+      "skill": "Systems of equations by substitution",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "If $y = 2x - 1$ and $3x + 2y = 19$, what is the value of $x + y$?",
+      "options": [
+        "$3$",
+        "$5$",
+        "$8$",
+        "$15$"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "Substitute $2x - 1$ for $y$ in the second equation: $3x + 2(2x - 1) = 19$, so $3x + 4x - 2 = 19$, $7x = 21$, and $x = 3$. Then $y = 2(3) - 1 = 5$, so $x + y = 8$. The choices $3$ and $5$ are the values of $x$ and $y$ alone, and $15$ is their product rather than their sum."
+    },
+    {
+      "id": "ACT-MA-018",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "geometry",
+      "skill": "Angles formed by parallel lines",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Lines $l$ and $m$ are parallel and are cut by a transversal. Two angles that lie between the parallel lines on the same side of the transversal measure $(5x - 20)^\\circ$ and $(x + 50)^\\circ$. What is the value of $x$?",
+      "options": [
+        "$17.5$",
+        "$25$",
+        "$35$",
+        "$105$"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "Interior angles on the same side of a transversal are supplementary when the lines are parallel, so $(5x - 20) + (x + 50) = 180$. That simplifies to $6x + 30 = 180$, so $6x = 150$ and $x = 25$. The choice $17.5$ comes from setting the two angles equal, which is the rule for alternate interior angles, not same-side interior angles. The choice $105$ is the measure of the first angle ($5 \\cdot 25 - 20$), not the value of $x$."
+    },
+    {
+      "id": "ACT-MA-019",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "geometry",
+      "skill": "Circumference and area of a circle",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The circumference of a circle is $16\\pi$ centimeters. What is the area of the circle, in square centimeters?",
+      "options": [
+        "$8\\pi$",
+        "$16\\pi$",
+        "$64\\pi$",
+        "$256\\pi$"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "Circumference is $2\\pi r$, so $2\\pi r = 16\\pi$ gives $r = 8$. Area is $\\pi r^2 = \\pi \\cdot 8^2 = 64\\pi$ square centimeters. The choice $256\\pi$ comes from squaring the diameter $16$ instead of the radius, and $8\\pi$ comes from using $\\pi r$ instead of $\\pi r^2$ for area."
+    },
+    {
+      "id": "ACT-MA-020",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "modeling",
+      "skill": "Proportions in context",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A recipe uses $3$ cups of flour to make $24$ cookies. At the same rate, how many cups of flour are needed to make $60$ cookies?",
+      "options": [
+        "$6$",
+        "$7.5$",
+        "$8$",
+        "$9$"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "Set up a proportion: $\\frac{3}{24} = \\frac{c}{60}$. Cross-multiply to get $24c = 180$, so $c = 7.5$ cups. Another way: $3$ cups per $24$ cookies is $\\frac{1}{8}$ cup per cookie, and $60 \\times \\frac{1}{8} = 7.5$. The choice $6$ comes from doubling the recipe (enough for only $48$ cookies), and $9$ comes from tripling it (enough for $72$)."
+    },
+    {
+      "id": "ACT-MA-021",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "geometry",
+      "skill": "Mean and median with a missing value",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Ana's scores on her first three quizzes were $82$, $90$, and $75$. After a fourth quiz, the mean of her four scores was exactly $84$. What is the median of her four quiz scores?",
+      "options": [
+        "$84$",
+        "$85.5$",
+        "$86$",
+        "$89$"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "If the mean of $4$ scores is $84$, the scores add to $4 \\times 84 = 336$. The first three add to $247$, so the fourth score is $336 - 247 = 89$. In order, the scores are $75, 82, 89, 90$, and the median of an even number of values is the average of the middle two: $\\frac{82 + 89}{2} = 85.5$. The choice $89$ is the missing score itself, and $84$ is the mean, which is not the same as the median."
+    },
+    {
+      "id": "ACT-MA-022",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "algebra",
+      "skill": "Absolute value equations",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "What is the sum of all values of $x$ that satisfy $|2x - 5| = 11$?",
+      "options": [
+        "$-3$",
+        "$5$",
+        "$8$",
+        "$11$"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "An absolute value equation splits into two cases: $2x - 5 = 11$ gives $2x = 16$ and $x = 8$, while $2x - 5 = -11$ gives $2x = -6$ and $x = -3$. The sum of the solutions is $8 + (-3) = 5$. The choice $8$ comes from solving only the positive case and forgetting the negative one, and $-3$ is the other solution alone."
+    },
+    {
+      "id": "ACT-MA-023",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "algebra",
+      "skill": "Solving inequalities with a sign flip",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which of the following describes all values of $x$ that satisfy $-3x + 7 > 22$?",
+      "options": [
+        "$x < -5$",
+        "$x > -5$",
+        "$x < 5$",
+        "$x > 5$"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": false,
+      "calculator": true,
+      "explanation": "Subtract $7$ from both sides: $-3x > 15$. Dividing both sides by a negative number reverses the inequality sign, so $x < -5$. Check with $x = -6$: $-3(-6) + 7 = 25 > 22$, which works. The choice $x > -5$ forgets to flip the sign, and $x < 5$ drops the negative sign when dividing."
+    },
+    {
+      "id": "ACT-MA-024",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "modeling",
+      "skill": "Reading a distance-time graph",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The graph below shows a car's distance from home, in miles, during a $5$-hour trip. What was the car's average speed, in miles per hour, during the return trip from hour $3$ to hour $5$?",
+      "options": [
+        "$20$",
+        "$30$",
+        "$40$",
+        "$60$"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "figure": {
+        "src": "/figures/act/act-ma-024.svg",
+        "alt": "A line graph with time in hours from 0 to 5 on the horizontal axis and distance from home in miles from 0 to 60 on the vertical axis, with grid lines every hour and every 20 miles. The graph rises in a straight line from (0, 0) to (2, 60), stays flat at 60 miles from hour 2 to hour 3, then falls in a straight line from (3, 60) to (5, 0)."
+      },
+      "explanation": "At hour $3$ the car is $60$ miles from home, and at hour $5$ it is $0$ miles from home, so it covers $60$ miles in $5 - 3 = 2$ hours. Average speed is distance divided by time: $\\frac{60}{2} = 30$ miles per hour. The choice $60$ is the distance, not the speed, and $20$ comes from dividing $60$ by the $3$ hours shown before the return trip began. The flat segment from hour $2$ to hour $3$ shows the car was stopped, so it is not part of the return trip."
+    },
+    {
+      "id": "ACT-MA-025",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "algebra",
+      "skill": "Equation of a line through two points",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "What is the equation of the line that passes through the points $(-2, 7)$ and $(4, -2)$ in the standard $(x, y)$ coordinate plane?",
+      "options": [
+        "$y = -\\frac{3}{2}x + 4$",
+        "$y = -\\frac{3}{2}x + 10$",
+        "$y = -\\frac{2}{3}x + \\frac{17}{3}$",
+        "$y = \\frac{3}{2}x + 10$"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": false,
+      "calculator": true,
+      "explanation": "The slope is $\\frac{-2 - 7}{4 - (-2)} = \\frac{-9}{6} = -\\frac{3}{2}$. Substitute the point $(-2, 7)$ into $y = -\\frac{3}{2}x + b$: $7 = -\\frac{3}{2}(-2) + b = 3 + b$, so $b = 4$. Check with the other point: $-\\frac{3}{2}(4) + 4 = -6 + 4 = -2$. The choice with $b = 10$ comes from a sign slip ($7 = -3 + b$), and the slope $-\\frac{2}{3}$ comes from dividing the change in $x$ by the change in $y$ instead of the other way around."
+    },
+    {
+      "id": "ACT-MA-026",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "algebra",
+      "skill": "Arithmetic sequences",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "In an arithmetic sequence, the 3rd term is $11$ and the 8th term is $31$. What is the 20th term of the sequence?",
+      "options": [
+        "$71$",
+        "$75$",
+        "$79$",
+        "$83$"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "From the 3rd term to the 8th term is $5$ steps, and the terms increase by $31 - 11 = 20$, so the common difference is $d = 20 \\div 5 = 4$. The first term is $11 - 2(4) = 3$, and the $n$th term is $a_n = 3 + (n - 1)(4)$, so $a_{20} = 3 + 19 \\cdot 4 = 79$. You can also count from the 8th term: $31 + 12 \\cdot 4 = 79$. The choice $83$ comes from using $n$ instead of $n - 1$ ($3 + 20 \\cdot 4$), and $75$ comes from counting $18$ steps from the first term instead of $19$."
+    },
+    {
+      "id": "ACT-MA-027",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "geometry",
+      "skill": "Counting outcomes",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "A locker code consists of one vowel (A, E, I, O, or U) followed by two digits from $0$ through $9$. The two digits must be different from each other. How many different locker codes are possible?",
+      "options": [
+        "$95$",
+        "$405$",
+        "$450$",
+        "$500$"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "Use the counting principle: there are $5$ choices for the vowel, $10$ choices for the first digit, and only $9$ choices for the second digit because it cannot repeat the first. That gives $5 \\times 10 \\times 9 = 450$ codes. The choice $500$ allows the digits to repeat ($5 \\times 10 \\times 10$), $405$ wrongly removes a digit from both positions ($5 \\times 9 \\times 9$), and $95$ adds the choices instead of multiplying them."
+    },
+    {
+      "id": "ACT-MA-028",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "modeling",
+      "skill": "Rates and unit conversion",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "A pump moves water at a constant rate of $4.5$ liters per second. How many hours will it take the pump to fill an empty tank that holds $81{,}000$ liters?",
+      "options": [
+        "$0.5$",
+        "$3$",
+        "$5$",
+        "$300$"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "Time is volume divided by rate: $81{,}000 \\div 4.5 = 18{,}000$ seconds. There are $60 \\times 60 = 3600$ seconds in an hour, so $18{,}000 \\div 3600 = 5$ hours. The choice $300$ is the time in minutes ($18{,}000 \\div 60$), which is the answer if you stop after only one unit conversion. The choice $3$ comes from dividing by $6000$ instead of $3600$."
+    },
+    {
+      "id": "ACT-MA-029",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "geometry",
+      "skill": "Area of a triangle",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "An isosceles triangle has a perimeter of $36$ inches, and each of its two equal sides is $13$ inches long. What is the area of the triangle, in square inches?",
+      "options": [
+        "$60$",
+        "$65$",
+        "$78$",
+        "$120$"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "The third side is $36 - 13 - 13 = 10$ inches. The height to that side splits the triangle into two right triangles with hypotenuse $13$ and one leg $5$, so the height is $\\sqrt{13^2 - 5^2} = \\sqrt{144} = 12$. The area is $\\frac{1}{2}(10)(12) = 60$ square inches. The choice $65$ comes from using a side of $13$ as the height ($\\frac{1}{2} \\cdot 10 \\cdot 13$), and $120$ forgets the $\\frac{1}{2}$ in the area formula."
+    },
+    {
+      "id": "ACT-MA-030",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "modeling",
+      "skill": "Successive percent changes",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "A store prices a jacket at $40\\%$ above its cost. During a sale, the store takes $25\\%$ off that marked price, and the jacket sells for \\$63. What was the store's cost for the jacket?",
+      "options": [
+        "\\$45",
+        "\\$60",
+        "\\$72",
+        "\\$84"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "Let the cost be $c$. The marked price is $1.4c$, and the sale price is $75\\%$ of that: $0.75(1.4c) = 1.05c$. Setting $1.05c = 63$ gives $c = 60$. Check: $60 \\times 1.4 = 84$, and $84 \\times 0.75 = 63$. The choice \\$84 is the marked price before the sale, not the cost, and \\$45 comes from dividing \\$63 by $1.4$ while ignoring the sale. Note that a $40\\%$ markup followed by a $25\\%$ discount is a net $5\\%$ increase, not $15\\%$."
+    }
+  ]
+}

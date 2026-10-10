@@ -1,0 +1,620 @@
+{
+  "stimuli": [
+    {
+      "id": "ACT-SC-D1",
+      "title": "Drill Passage 1",
+      "text": "Water boils when its vapor pressure equals the air pressure around it. Because air pressure decreases with altitude, students expected the boiling point of water to depend on altitude. At each of six altitudes, the students measured the air pressure, heated 2 L of water in the same uncovered pot until it boiled, and recorded the temperature of the boiling water. They then added 100 g of the same brand of dried spaghetti to the boiling water and recorded the time needed for the spaghetti to reach a set firmness, tested every minute with a fork. The results are shown in Table 1.\n\n**Table 1.** Boiling point of water and cooking time of spaghetti at six altitudes\n\n| Altitude (m) | Air pressure (kPa) | Boiling point (°C) | Cooking time (min) |\n|---|---|---|---|\n| 0 | 101 | 100.0 | 9 |\n| 500 | 95 | 98.3 | 10 |\n| 1,000 | 90 | 96.7 | 11 |\n| 1,500 | 85 | 95.0 | 12 |\n| 2,000 | 80 | 93.4 | 14 |\n| 3,000 | 70 | 90.1 | 18 |"
+    },
+    {
+      "id": "ACT-SC-D2",
+      "title": "Drill Passage 2",
+      "text": "Students investigated whether the color of a container affects how quickly the water inside it warms in sunlight. In every trial, a 1 L metal can painted a single color was filled with 800 mL of water at 20.0°C, and a thermometer was placed in the water. The water temperature was recorded after 30 minutes and after 60 minutes. All trials were run side by side on the same cloudless afternoon, when the air temperature was 28°C.\n\n*Experiment 1*\n\nFour cans, painted black, red, white, and silver, were placed in direct sunlight.\n\n*Experiment 2*\n\nA black can and a white can were placed under an open-sided cardboard shelter that kept them in shade but allowed air to flow around them. All other conditions were the same as in Experiment 1.\n\nThe results of both experiments are shown in Table 1.\n\n**Table 1.** Water temperature in each can\n\n| Experiment | Trial | Can color | Lighting | Temperature after 30 min (°C) | Temperature after 60 min (°C) |\n|---|---|---|---|---|---|\n| 1 | 1 | black | direct sunlight | 28.5 | 35.0 |\n| 1 | 2 | red | direct sunlight | 25.5 | 29.4 |\n| 1 | 3 | white | direct sunlight | 22.8 | 24.8 |\n| 1 | 4 | silver | direct sunlight | 21.9 | 23.2 |\n| 2 | 5 | black | shade | 21.6 | 22.9 |\n| 2 | 6 | white | shade | 21.2 | 22.1 |"
+    },
+    {
+      "id": "ACT-SC-D3",
+      "title": "Drill Passage 3",
+      "text": "Heart rate is the number of times the heart beats per minute (bpm). Five volunteers (A through E), all between 20 and 25 years old, each pedaled a stationary bicycle at the same moderate pace for 10 minutes. Each volunteer's heart rate was measured while seated at rest just before pedaling began and again after 2, 5, and 10 minutes of pedaling. Volunteers A, C, and E reported that they exercise regularly; Volunteers B and D reported that they do not. The results are shown in Table 1.\n\n**Table 1.** Heart rate (bpm) of each volunteer\n\n| Volunteer | At rest | After 2 min | After 5 min | After 10 min |\n|---|---|---|---|---|\n| A | 62 | 98 | 118 | 128 |\n| B | 70 | 110 | 132 | 144 |\n| C | 58 | 90 | 108 | 116 |\n| D | 75 | 120 | 146 | 160 |\n| E | 66 | 104 | 124 | 136 |"
+    },
+    {
+      "id": "ACT-SC-D4",
+      "title": "Drill Passage 4",
+      "text": "The road deck of a highway bridge is built in sections. Between neighboring sections is an expansion joint: a gap that is bridged by a pair of interlocking metal plates so that vehicles can cross it. On one bridge, the gap at a joint measured 25 mm in July and 60 mm in January. Two students explain why the gap is wider in winter.\n\n**Student 1**\n\nThe deck sections are made of steel and concrete, and these materials contract when they cool. In winter, each deck section becomes shorter, so the gap between neighboring sections grows; in summer, the sections expand and the gap narrows. The metal plates of the joint do not cause the change; they simply slide past each other as the gap changes. The joints exist so that the deck can change length without being damaged. If a deck were rigidly fixed at both ends, winter cooling would put it under tension and could crack it.\n\n**Student 2**\n\nMetal contracts when it cools, and the change happens within the joint hardware. In winter the two metal plates of the joint shrink, and as each plate becomes shorter the plates pull away from each other, which widens the gap. The deck sections themselves do not change length noticeably, because they are anchored firmly to the piers that support them. In summer the plates expand and the gap closes again. A joint without metal plates would not change width from season to season."
+    }
+  ],
+  "questions": [
+    {
+      "id": "ACT-SC-001",
+      "section": "science",
+      "test": 0,
+      "module": 1,
+      "stimulusId": "ACT-SC-D1",
+      "domain": "interpretation",
+      "skill": "Reading table values",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "According to Table 1, the boiling point of water at an altitude of 1,500 m was",
+      "options": [
+        "96.7°C.",
+        "95.0°C.",
+        "93.4°C.",
+        "90.1°C."
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Find the row for 1,500 m in Table 1 and read across to the boiling point column, which lists 95.0°C. The values 96.7°C and 93.4°C are the boiling points at 1,000 m and 2,000 m, the altitudes just above and below 1,500 m in the table, and 90.1°C is the boiling point at 3,000 m."
+    },
+    {
+      "id": "ACT-SC-002",
+      "section": "science",
+      "test": 0,
+      "module": 1,
+      "stimulusId": "ACT-SC-D1",
+      "domain": "interpretation",
+      "skill": "Identifying trends",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Based on Table 1, as altitude increased from 0 m to 3,000 m, the boiling point of water and the cooking time of the spaghetti, respectively,",
+      "options": [
+        "increased and increased.",
+        "increased and decreased.",
+        "decreased and increased.",
+        "decreased and decreased."
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Reading down Table 1, the boiling point falls at every step, from 100.0°C at 0 m to 90.1°C at 3,000 m, while the cooking time rises at every step, from 9 min to 18 min. So boiling point decreased and cooking time increased. The other choices each get the direction of at least one of the two trends wrong."
+    },
+    {
+      "id": "ACT-SC-003",
+      "section": "science",
+      "test": 0,
+      "module": 1,
+      "stimulusId": "ACT-SC-D1",
+      "domain": "interpretation",
+      "skill": "Interpolating between data points",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Based on Table 1, at an altitude of 2,500 m the boiling point of water was most likely",
+      "options": [
+        "between 95.0°C and 96.7°C.",
+        "between 93.4°C and 95.0°C.",
+        "between 90.1°C and 93.4°C.",
+        "less than 90.1°C."
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "An altitude of 2,500 m lies between 2,000 m and 3,000 m, the two altitudes in Table 1 that bracket it. Because the boiling point decreased steadily with altitude, the boiling point at 2,500 m should fall between the values at those altitudes, 93.4°C and 90.1°C. A value below 90.1°C would only be expected above 3,000 m, since boiling point decreases as altitude increases."
+    },
+    {
+      "id": "ACT-SC-004",
+      "section": "science",
+      "test": 0,
+      "module": 1,
+      "stimulusId": "ACT-SC-D1",
+      "domain": "interpretation",
+      "skill": "Extrapolating a trend",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Suppose the students repeated the procedure at an altitude of 4,000 m. Based on Table 1, the cooking time at that altitude would most likely be",
+      "options": [
+        "less than 9 min.",
+        "between 9 min and 14 min.",
+        "between 14 min and 18 min.",
+        "greater than 18 min."
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Cooking time increased with every increase in altitude in Table 1, reaching 18 min at 3,000 m, the highest altitude tested. Extending that trend to 4,000 m, an altitude above every one in the table, gives a cooking time greater than 18 min. A time between 14 min and 18 min would correspond to an altitude between 2,000 m and 3,000 m, not to one above 3,000 m."
+    },
+    {
+      "id": "ACT-SC-005",
+      "section": "science",
+      "test": 0,
+      "module": 1,
+      "stimulusId": "ACT-SC-D1",
+      "domain": "interpretation",
+      "skill": "Comparing changes between data points",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Based on Table 1, each decrease of 10 kPa in air pressure was associated with a decrease in the boiling point of water of approximately",
+      "options": [
+        "1.7°C.",
+        "3.3°C.",
+        "6.6°C.",
+        "10.0°C."
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Compare rows in Table 1 that differ by about 10 kPa. From 90 kPa to 80 kPa the boiling point fell from 96.7°C to 93.4°C, a drop of 3.3°C, and from 80 kPa to 70 kPa it fell from 93.4°C to 90.1°C, another 3.3°C. A drop of 1.7°C matches a 5 kPa change (for example, from 90 kPa to 85 kPa), not a 10 kPa change, and 6.6°C would require a 20 kPa change."
+    },
+    {
+      "id": "ACT-SC-006",
+      "section": "science",
+      "test": 0,
+      "module": 1,
+      "stimulusId": "ACT-SC-D1",
+      "domain": "investigation",
+      "skill": "Identifying controlled variables",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The students used 100 g of the same brand of dried spaghetti at every altitude most likely so that",
+      "options": [
+        "the spaghetti would boil at the same temperature at every altitude.",
+        "any difference in cooking time could be attributed to altitude rather than to the spaghetti.",
+        "the air pressure would be the same at every altitude.",
+        "the water would reach its boiling point more quickly."
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Keeping the mass and brand of spaghetti the same at every altitude removes the spaghetti itself as a possible cause of differences in cooking time, so that altitude (through its effect on boiling point) is the only factor that changed. Using the same spaghetti cannot make water boil at the same temperature everywhere, since Table 1 shows the boiling point changed with altitude, and it has no effect on air pressure or on how fast the water heats."
+    },
+    {
+      "id": "ACT-SC-007",
+      "section": "science",
+      "test": 0,
+      "module": 1,
+      "stimulusId": "ACT-SC-D1",
+      "domain": "evaluation",
+      "skill": "Evaluating a claim with data",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A student claimed that water always boils at 100°C, no matter where it is heated. Do the results in Table 1 support this claim?",
+      "options": [
+        "Yes, because the boiling point was 100.0°C at an altitude of 0 m.",
+        "Yes, because the water boiled at every altitude tested.",
+        "No, because the boiling point ranged from 100.0°C down to 90.1°C across the altitudes tested.",
+        "No, because the cooking time increased at higher altitudes."
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The claim says the boiling point never changes, but Table 1 shows it changing with altitude: 100.0°C at 0 m but only 90.1°C at 3,000 m. That range of values contradicts the claim. The fact that the water boiled at every altitude does not say anything about the temperature at which it boiled, and the cooking times do not directly test the claim, which is about boiling point."
+    },
+    {
+      "id": "ACT-SC-008",
+      "section": "science",
+      "test": 0,
+      "module": 1,
+      "stimulusId": "ACT-SC-D2",
+      "domain": "interpretation",
+      "skill": "Reading table values",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "According to Table 1, in Experiment 1 the temperature of the water in the red can after 60 min was",
+      "options": [
+        "25.5°C.",
+        "28.5°C.",
+        "29.4°C.",
+        "35.0°C."
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Find Trial 2 (the red can) in Table 1 and read across to the column for the temperature after 60 min, which lists 29.4°C. The value 25.5°C is the red can's temperature after 30 min, and 28.5°C and 35.0°C are the black can's temperatures after 30 min and 60 min."
+    },
+    {
+      "id": "ACT-SC-009",
+      "section": "science",
+      "test": 0,
+      "module": 1,
+      "stimulusId": "ACT-SC-D2",
+      "domain": "investigation",
+      "skill": "Identifying the independent variable",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "In Experiment 1, which of the following factors was deliberately varied from trial to trial?",
+      "options": [
+        "The volume of water in the can",
+        "The color of the can",
+        "The starting temperature of the water",
+        "The lighting condition"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The passage says every can held 800 mL of water starting at 20.0°C, and in Experiment 1 all four cans were in direct sunlight, so volume, starting temperature, and lighting were the same in every trial. The only factor that differed between Trials 1 through 4 was the color of the can, which makes color the independent variable. Lighting was varied only between the two experiments, not within Experiment 1."
+    },
+    {
+      "id": "ACT-SC-010",
+      "section": "science",
+      "test": 0,
+      "module": 1,
+      "stimulusId": "ACT-SC-D2",
+      "domain": "interpretation",
+      "skill": "Ordering results",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Based on the results of Experiment 1, which of the following correctly lists the cans in order of the temperature of their water after 60 min, from lowest to highest?",
+      "options": [
+        "silver, white, red, black",
+        "white, silver, red, black",
+        "black, red, white, silver",
+        "silver, red, white, black"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "In Table 1 the temperatures after 60 min in Experiment 1 are 23.2°C (silver), 24.8°C (white), 29.4°C (red), and 35.0°C (black). From lowest to highest, that order is silver, white, red, black. The order black, red, white, silver is from highest to lowest, and the other choices swap the positions of two cans."
+    },
+    {
+      "id": "ACT-SC-011",
+      "section": "science",
+      "test": 0,
+      "module": 1,
+      "stimulusId": "ACT-SC-D2",
+      "domain": "investigation",
+      "skill": "Comparing experimental designs",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Which of the following was the same in Experiment 1 and Experiment 2?",
+      "options": [
+        "The lighting condition",
+        "The number of can colors tested",
+        "The volume of water in each can",
+        "The temperature of the water after 60 min"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The passage states that every trial used 800 mL of water at 20.0°C, and that all other conditions in Experiment 2 were the same as in Experiment 1 apart from the shelter. The lighting differed (direct sunlight versus shade), Experiment 1 tested four colors while Experiment 2 tested two, and Table 1 shows the temperatures after 60 min differed between the experiments."
+    },
+    {
+      "id": "ACT-SC-012",
+      "section": "science",
+      "test": 0,
+      "module": 1,
+      "stimulusId": "ACT-SC-D2",
+      "domain": "investigation",
+      "skill": "Choosing trials to answer a question",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A student wants to know whether the color of a can affects the temperature of the water inside it when the can is kept in shade. Which trials should the student compare?",
+      "options": [
+        "Trials 1 and 3",
+        "Trials 1 and 5",
+        "Trials 3 and 6",
+        "Trials 5 and 6"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "To isolate the effect of color in shade, the student needs two trials that differ only in can color and were both in shade. Trials 5 (black) and 6 (white) are the only trials run in shade. Trials 1 and 3 compare black and white in direct sunlight, and comparing Trial 1 with Trial 5 or Trial 3 with Trial 6 changes the lighting rather than the color."
+    },
+    {
+      "id": "ACT-SC-013",
+      "section": "science",
+      "test": 0,
+      "module": 1,
+      "stimulusId": "ACT-SC-D2",
+      "domain": "investigation",
+      "skill": "Extending an experiment",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Suppose the students want to determine whether the result for the black can in Experiment 1 depends on the volume of water in the can. Which of the following changes to the procedure would best allow them to do this?",
+      "options": [
+        "Repeat Trial 1 with a black can placed in shade.",
+        "Repeat Trial 1 several times, using a different volume of water in the black can each time while keeping all other conditions the same.",
+        "Repeat Trial 1 with cans of several different colors, each holding 400 mL of water.",
+        "Repeat Trial 1 with a larger thermometer."
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "To test whether volume matters, volume must be the only factor that changes, so the black can should be tested with several different volumes in direct sunlight under otherwise identical conditions. Placing the can in shade changes lighting, not volume, and testing several colors at 400 mL changes two factors at once, so any difference could not be attributed to volume alone. A different thermometer does not change the volume of water."
+    },
+    {
+      "id": "ACT-SC-014",
+      "section": "science",
+      "test": 0,
+      "module": 1,
+      "stimulusId": "ACT-SC-D2",
+      "domain": "evaluation",
+      "skill": "Evaluating a hypothesis",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "A student hypothesized that the difference in water temperature between the black can and the white can in Experiment 1 was caused by sunlight striking the cans rather than by the warm air around them. Do the results of Experiment 2 support this hypothesis?",
+      "options": [
+        "Yes, because in shade the black can and the white can differed by only 0.8°C after 60 min, compared with 10.2°C in direct sunlight.",
+        "Yes, because in shade the water in both cans stayed at 20.0°C.",
+        "No, because in shade the black can was still warmer than the white can after 60 min.",
+        "No, because the black can reached 35.0°C in direct sunlight."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "In Experiment 2 the cans were exposed to the same warm air but shielded from sunlight, and the black and white cans ended up within 0.8°C of each other (22.9°C and 22.1°C). In direct sunlight the same two colors differed by 10.2°C (35.0°C and 24.8°C). Since removing the sunlight removed nearly all of the difference, the results support the hypothesis. The water in shade did warm slightly, so it did not stay at 20.0°C, and the small remaining difference is far too small to overturn the conclusion."
+    },
+    {
+      "id": "ACT-SC-015",
+      "section": "science",
+      "test": 0,
+      "module": 1,
+      "stimulusId": "ACT-SC-D3",
+      "domain": "interpretation",
+      "skill": "Reading table values",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "According to Table 1, the heart rate of Volunteer B after 5 min of pedaling was",
+      "options": [
+        "110 bpm.",
+        "124 bpm.",
+        "132 bpm.",
+        "144 bpm."
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Find the row for Volunteer B in Table 1 and read across to the column for 5 min, which lists 132 bpm. The values 110 bpm and 144 bpm are Volunteer B's heart rates after 2 min and 10 min, and 124 bpm is Volunteer E's heart rate after 5 min."
+    },
+    {
+      "id": "ACT-SC-016",
+      "section": "science",
+      "test": 0,
+      "module": 1,
+      "stimulusId": "ACT-SC-D3",
+      "domain": "interpretation",
+      "skill": "Identifying trends",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Based on Table 1, as the time spent pedaling increased from 0 min (at rest) to 10 min, the heart rate of each volunteer",
+      "options": [
+        "increased only.",
+        "decreased only.",
+        "increased, then decreased.",
+        "remained the same."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Reading across each row of Table 1, every volunteer's heart rate is higher after 2 min than at rest, higher again after 5 min, and higher still after 10 min. So each heart rate increased only. No volunteer's heart rate fell at any point, so there was no decrease."
+    },
+    {
+      "id": "ACT-SC-017",
+      "section": "science",
+      "test": 0,
+      "module": 1,
+      "stimulusId": "ACT-SC-D3",
+      "domain": "interpretation",
+      "skill": "Comparing changes between data points",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Based on Table 1, which volunteer's heart rate increased by the greatest amount between rest and 10 min of pedaling?",
+      "options": [
+        "Volunteer A",
+        "Volunteer B",
+        "Volunteer C",
+        "Volunteer D"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Subtract each volunteer's resting heart rate from the heart rate after 10 min: A rose by 66 bpm (128 minus 62), B by 74 bpm (144 minus 70), C by 58 bpm (116 minus 58), and D by 85 bpm (160 minus 75). Volunteer D had the greatest increase. Volunteer D also had the highest heart rate at every time, but the question asks about the size of the increase, which must be calculated."
+    },
+    {
+      "id": "ACT-SC-018",
+      "section": "science",
+      "test": 0,
+      "module": 1,
+      "stimulusId": "ACT-SC-D3",
+      "domain": "interpretation",
+      "skill": "Extrapolating a trend",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Suppose Volunteer A had continued pedaling at the same pace for 15 min. Based on the pattern of Volunteer A's results in Table 1, the heart rate after 15 min would most likely have been",
+      "options": [
+        "less than 118 bpm.",
+        "between 118 bpm and 128 bpm.",
+        "between 128 bpm and 138 bpm.",
+        "greater than 150 bpm."
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Volunteer A's heart rate rose by 36 bpm in the first 2 min, by 20 bpm over the next 3 min, and by only 10 bpm over the last 5 min, so the heart rate was still rising but by smaller and smaller amounts. Continuing that pattern, the heart rate after 15 min should be above 128 bpm but only slightly, so between 128 bpm and 138 bpm is the best estimate. A value above 150 bpm would require a larger jump than any seen in the data, and a value below 128 bpm would mean the heart rate fell, which it never did."
+    },
+    {
+      "id": "ACT-SC-019",
+      "section": "science",
+      "test": 0,
+      "module": 1,
+      "stimulusId": "ACT-SC-D3",
+      "domain": "investigation",
+      "skill": "Purpose of a procedure",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Each volunteer's heart rate was measured at rest before pedaling began most likely to",
+      "options": [
+        "provide a baseline against which the heart rates during exercise could be compared.",
+        "ensure that all five volunteers pedaled at the same pace.",
+        "determine the maximum heart rate each volunteer could reach.",
+        "make sure that the volunteers were all the same age."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A measurement taken before the treatment begins serves as a baseline, so that the change caused by pedaling can be found by comparison. The resting measurement cannot control the pedaling pace, which was set by the procedure, and it shows the lowest heart rate of the session rather than the maximum. The volunteers' ages were known from the description, not from a heart rate measurement."
+    },
+    {
+      "id": "ACT-SC-020",
+      "section": "science",
+      "test": 0,
+      "module": 1,
+      "stimulusId": "ACT-SC-D3",
+      "domain": "investigation",
+      "skill": "Designing a test of a variable",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The students want to find out whether the pace of pedaling affects heart rate. Which of the following procedures would best answer this question?",
+      "options": [
+        "Have the same five volunteers pedal for 10 min at each of several different paces, measuring heart rate after 10 min each time.",
+        "Have the same five volunteers pedal at the same moderate pace for 20 min instead of 10 min.",
+        "Have five new volunteers of different ages pedal at the same moderate pace for 10 min.",
+        "Measure the resting heart rate of each volunteer on several different days."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "To test the effect of pace, pace must be the variable that changes while everything else stays the same, so the same volunteers should pedal at several paces for the same length of time. Pedaling longer at one pace tests the effect of time, not pace, and recruiting volunteers of different ages introduces age as a new variable. Measuring resting heart rates involves no pedaling at all."
+    },
+    {
+      "id": "ACT-SC-021",
+      "section": "science",
+      "test": 0,
+      "module": 1,
+      "stimulusId": "ACT-SC-D3",
+      "domain": "evaluation",
+      "skill": "Evaluating a claim with data",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A student claimed that volunteers who exercise regularly have lower resting heart rates than volunteers who do not. Are the results in Table 1 consistent with this claim?",
+      "options": [
+        "Yes, because Volunteers A, C, and E each had a resting heart rate below that of Volunteer B and Volunteer D.",
+        "Yes, because Volunteer D had the highest heart rate after 10 min.",
+        "No, because Volunteer A's resting heart rate was higher than Volunteer C's.",
+        "No, because every volunteer's heart rate increased during exercise."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The passage identifies A, C, and E as the volunteers who exercise regularly, and their resting heart rates (62, 58, and 66 bpm) are all lower than those of B and D (70 and 75 bpm), who do not. That pattern matches the claim. The claim compares the two groups, so a difference between two regular exercisers such as A and C does not contradict it, and the heart rates during exercise are not what the claim is about."
+    },
+    {
+      "id": "ACT-SC-022",
+      "section": "science",
+      "test": 0,
+      "module": 1,
+      "stimulusId": "ACT-SC-D4",
+      "domain": "interpretation",
+      "skill": "Comparing viewpoints",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Student 1 and Student 2 would most likely agree with which of the following statements?",
+      "options": [
+        "The deck sections become shorter in winter.",
+        "The metal plates of the joint become shorter in winter.",
+        "Metal contracts when it cools.",
+        "The gap at the joint is narrower in winter than in summer."
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Student 1 says the steel and concrete of the deck contract when they cool, and Student 2 says metal contracts when it cools, so both accept that cooling makes metal contract. They disagree about which part shrinks enough to matter: Student 1 says the deck sections, Student 2 says the joint plates. Both students accept the measurement that the gap is wider, not narrower, in winter."
+    },
+    {
+      "id": "ACT-SC-023",
+      "section": "science",
+      "test": 0,
+      "module": 1,
+      "stimulusId": "ACT-SC-D4",
+      "domain": "evaluation",
+      "skill": "Judging which viewpoint a finding supports",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Engineers measured the length of one deck section of the bridge and found that it was 35 mm shorter in January than in July. This finding is consistent with the explanation of",
+      "options": [
+        "Student 1 only.",
+        "Student 2 only.",
+        "both Student 1 and Student 2.",
+        "neither Student 1 nor Student 2."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Student 1's explanation is that the deck sections shorten in winter, widening the gap, so a section that is 35 mm shorter in January supports Student 1. Student 2 claims the deck sections do not change length noticeably because they are anchored to the piers, so this finding contradicts Student 2. The 35 mm change is also the same size as the change in gap width, which is exactly what Student 1 would predict."
+    },
+    {
+      "id": "ACT-SC-024",
+      "section": "science",
+      "test": 0,
+      "module": 1,
+      "stimulusId": "ACT-SC-D4",
+      "domain": "investigation",
+      "skill": "Choosing a measurement",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which of the following measurements would best allow someone to decide which student's explanation is correct?",
+      "options": [
+        "The width of the gap at the joint, measured once each month for a year",
+        "The length of a deck section in summer and the length of the same section in winter",
+        "The air temperature at the bridge in July and in January",
+        "The number of vehicles crossing the joint each day"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The two students disagree about whether the deck sections change length, so measuring a section in both seasons tests exactly the point of disagreement: Student 1 predicts the section will be shorter in winter, Student 2 predicts it will not change. Both students already agree that the gap is wider in winter, so monthly gap measurements cannot separate them. Air temperature and traffic are not points on which the explanations differ."
+    },
+    {
+      "id": "ACT-SC-025",
+      "section": "science",
+      "test": 0,
+      "module": 1,
+      "stimulusId": "ACT-SC-D4",
+      "domain": "evaluation",
+      "skill": "Evaluating viewpoints against data",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Engineers measured the length of each metal plate at the joint and found that each plate was 0.3 mm shorter in January than in July, while the gap was 35 mm wider. How does this finding affect Student 2's explanation?",
+      "options": [
+        "It supports the explanation, because the plates did become shorter in winter.",
+        "It supports the explanation, because the gap widened in winter.",
+        "It weakens the explanation, because the change in plate length is far too small to account for the change in gap width.",
+        "It weakens the explanation, because the plates should have become longer in winter."
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Student 2 claims that the shrinking of the joint plates is what widens the gap, so the shrinking of the plates must be large enough to explain the whole change. A total change of less than 1 mm in plate length cannot produce a 35 mm change in gap width, so the finding weakens Student 2's explanation even though the plates did shrink slightly. Student 2 did predict the plates would shorten, so the direction of the change is not the problem; its size is."
+    },
+    {
+      "id": "ACT-SC-026",
+      "section": "science",
+      "test": 0,
+      "module": 1,
+      "stimulusId": "ACT-SC-D4",
+      "domain": "evaluation",
+      "skill": "Judging which viewpoint a finding weakens",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "On a second bridge, the expansion joints have no metal plates: each gap is simply sealed with a flexible rubber strip. The gaps on that bridge are also wider in January than in July. This observation is best explained by",
+      "options": [
+        "Student 1's explanation, because the gap changed width even though no metal plates were present.",
+        "Student 1's explanation, because rubber contracts more than steel does.",
+        "Student 2's explanation, because the rubber strip contracted in winter.",
+        "Student 2's explanation, because the deck of the second bridge is anchored to its piers."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Student 2 states that a joint without metal plates would not change width from season to season, so a plate-free joint that still widens in winter contradicts Student 2. Student 1's explanation does not depend on the joint hardware at all: the deck sections shorten and the gap grows whatever fills it, so the observation fits Student 1. Neither student says anything about how much rubber contracts, and a rubber seal contracting could not push the deck sections apart in any case."
+    },
+    {
+      "id": "ACT-SC-027",
+      "section": "science",
+      "test": 0,
+      "module": 1,
+      "stimulusId": "ACT-SC-D4",
+      "domain": "evaluation",
+      "skill": "Evaluating viewpoints against data",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which of the following observations would be consistent with the explanations of both Student 1 and Student 2?",
+      "options": [
+        "The gap at a joint is wider in January than in July.",
+        "A deck section is shorter in January than in July.",
+        "The metal plates at a joint are the same length in January and in July.",
+        "The gap at a joint is the same width in January and in July."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Both students are explaining the same observation, that the gap is wider in winter, so both explanations are consistent with it. A shorter deck section fits Student 1 but contradicts Student 2, who says the sections do not change length. Plates that stay the same length contradict Student 2, who relies on the plates shrinking, and an unchanging gap contradicts both students."
+    }
+  ]
+}

@@ -1,0 +1,697 @@
+{
+  "stimuli": [],
+  "questions": [
+    {
+      "id": "ACT-MA-031",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "algebra",
+      "skill": "Least common multiple",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Two shuttle buses leave a parking garage at 8:00 a.m. One bus leaves the garage every 12 minutes, and the other leaves every 18 minutes. At what time will the two buses next leave the garage at the same moment?",
+      "options": [
+        "8:06 a.m.",
+        "8:30 a.m.",
+        "8:36 a.m.",
+        "9:12 a.m."
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "The buses leave together at every common multiple of 12 and 18 minutes after 8:00. The least common multiple is 36 ($12 = 2^2 \\cdot 3$ and $18 = 2 \\cdot 3^2$, so the LCM is $2^2 \\cdot 3^2 = 36$), which gives 8:36 a.m. Choice A uses the greatest common factor, 6, and choice D uses 72, a common multiple but not the least one."
+    },
+    {
+      "id": "ACT-MA-032",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "algebra",
+      "skill": "Scientific notation operations",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "What is the product $(3 \\times 10^4)(2 \\times 10^{-7})$ written in scientific notation?",
+      "options": [
+        "$6 \\times 10^{-28}$",
+        "$6 \\times 10^{-11}$",
+        "$6 \\times 10^{-3}$",
+        "$6 \\times 10^{3}$"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "Multiply the coefficients and add the exponents: $3 \\times 2 = 6$ and $10^4 \\cdot 10^{-7} = 10^{4 + (-7)} = 10^{-3}$, so the product is $6 \\times 10^{-3}$, or 0.006. Choice A multiplies the exponents instead of adding them. Choice B subtracts 4 from $-7$ instead of adding the exponents, which gives $-11$ rather than $-3$."
+    },
+    {
+      "id": "ACT-MA-033",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "geometry",
+      "skill": "Volume of a rectangular prism",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A closed cardboard box is a rectangular prism 8 inches long, 5 inches wide, and 3 inches tall. What is the volume of the box, in cubic inches?",
+      "options": [
+        "16",
+        "120",
+        "158",
+        "240"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "The volume of a rectangular prism is length times width times height: $8 \\times 5 \\times 3 = 120$ cubic inches. Choice C, 158, is the surface area of the box, $2(40 + 24 + 15)$, which is measured in square inches rather than cubic inches. Choice A adds the three dimensions instead of multiplying them."
+    },
+    {
+      "id": "ACT-MA-034",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "geometry",
+      "skill": "Probability of independent events",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A fair coin is flipped and a fair six-sided die is rolled. What is the probability that the coin shows heads and the die shows a number greater than 4?",
+      "options": [
+        "$\\dfrac{1}{12}$",
+        "$\\dfrac{1}{6}$",
+        "$\\dfrac{1}{3}$",
+        "$\\dfrac{5}{6}$"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "The two events are independent, so multiply their probabilities. The coin shows heads with probability $\\frac{1}{2}$, and the die shows a 5 or a 6 with probability $\\frac{2}{6} = \\frac{1}{3}$, so the probability of both is $\\frac{1}{2} \\cdot \\frac{1}{3} = \\frac{1}{6}$. Choice D adds the two probabilities instead of multiplying them, and choice A counts only the 6 as greater than 4."
+    },
+    {
+      "id": "ACT-MA-035",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "geometry",
+      "skill": "Distance in the coordinate plane",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "In the standard $(x, y)$ coordinate plane, what is the distance between the points $(-2, 3)$ and $(3, 15)$?",
+      "options": [
+        "7",
+        "13",
+        "17",
+        "169"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "The horizontal change is $3 - (-2) = 5$ and the vertical change is $15 - 3 = 12$, so by the distance formula the distance is $\\sqrt{5^2 + 12^2} = \\sqrt{25 + 144} = \\sqrt{169} = 13$. Choice D stops at the sum of the squares without taking the square root. Choice C adds the two changes, which is the length of the path along the grid, not the straight-line distance, and choice A subtracts them."
+    },
+    {
+      "id": "ACT-MA-036",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "modeling",
+      "skill": "Inequalities in word problems",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A ride-share service charges a \\$3.50 pickup fee plus \\$1.75 per mile. Dana can spend at most \\$30.00 on a ride. What is the greatest whole number of miles Dana can ride?",
+      "options": [
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "Let $m$ be the number of miles. The cost must satisfy $3.50 + 1.75m \\le 30$, so $1.75m \\le 26.50$ and $m \\le 15.14$. The greatest whole number of miles is 15, which costs $3.50 + 26.25 = \\$29.75$. Choice C rounds 15.14 up, which would cost \\$31.50 and exceed the budget, and choice D ignores the pickup fee entirely."
+    },
+    {
+      "id": "ACT-MA-037",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "algebra",
+      "skill": "Composite functions",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "If $f(x) = 2x + 1$ and $g(x) = x^2 - 2$, what is the value of $f(g(3))$?",
+      "options": [
+        "7",
+        "15",
+        "47",
+        "49"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "Work from the inside out. First $g(3) = 3^2 - 2 = 7$, then $f(7) = 2(7) + 1 = 15$. Choice C, 47, is $g(f(3))$: it applies $f$ first ($f(3) = 7$) and then $g$ ($7^2 - 2 = 47$), which is the wrong order. Choice A stops after finding $g(3)$."
+    },
+    {
+      "id": "ACT-MA-038",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "modeling",
+      "skill": "Exponential decay in context",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A new car is purchased for \\$24,000. Its value decreases by 15% each year. To the nearest dollar, what is the value of the car 2 years after it is purchased?",
+      "options": [
+        "\\$16,800",
+        "\\$17,340",
+        "\\$20,400",
+        "\\$31,740"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "A 15% decrease each year multiplies the value by $0.85$ each year, so after 2 years the value is $24{,}000(0.85)^2 = 24{,}000(0.7225) = \\$17{,}340$. Choice A subtracts 30% all at once, but the second year's 15% is taken from a smaller amount, so the total loss is less than 30%. Choice C is the value after only 1 year."
+    },
+    {
+      "id": "ACT-MA-039",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "algebra",
+      "skill": "Logarithm basics",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "If $\\log_3 x = 4$, what is the value of $x$?",
+      "options": [
+        "12",
+        "64",
+        "81",
+        "243"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "A logarithm is an exponent: $\\log_3 x = 4$ means $3^4 = x$, so $x = 81$. Choice B swaps the base and the exponent, computing $4^3 = 64$. Choice A multiplies 3 and 4 instead of using 4 as an exponent."
+    },
+    {
+      "id": "ACT-MA-040",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "geometry",
+      "skill": "45-45-90 triangles",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A right triangle has two legs that are each 7 inches long. What is the length, in inches, of the hypotenuse?",
+      "options": [
+        "7",
+        "$7\\sqrt{2}$",
+        "$7\\sqrt{3}$",
+        "14"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "A right triangle with two equal legs is a 45-45-90 triangle, and its hypotenuse is always the leg times $\\sqrt{2}$: here $7\\sqrt{2}$, about 9.9 inches. The Pythagorean theorem confirms it: $\\sqrt{7^2 + 7^2} = \\sqrt{98} = 7\\sqrt{2}$. Choice D doubles the leg, and choice C uses the $\\sqrt{3}$ ratio that belongs to a 30-60-90 triangle."
+    },
+    {
+      "id": "ACT-MA-041",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "geometry",
+      "skill": "Right triangle trigonometry (SOHCAHTOA)",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "In right triangle $ABC$ shown below, angle $B$ is a right angle, the measure of angle $A$ is $28^\\circ$, and $AB = 15$. Which of the following expressions gives the length $x$ of $\\overline{BC}$?",
+      "options": [
+        "$15\\sin 28^\\circ$",
+        "$15\\cos 28^\\circ$",
+        "$15\\tan 28^\\circ$",
+        "$\\dfrac{15}{\\tan 28^\\circ}$"
+      ],
+      "correct": [
+        2
+      ],
+      "figure": {
+        "src": "/figures/act/act-ma-041.svg",
+        "alt": "Right triangle ABC with the right angle at B in the lower right. Vertex A is at the lower left with an angle of 28 degrees. The horizontal leg AB is labeled 15 and the vertical leg BC is labeled x."
+      },
+      "calculator": true,
+      "explanation": "Side $BC$ is opposite angle $A$, and side $AB$ is adjacent to angle $A$ (it is a leg, not the hypotenuse), so the ratio that links them is tangent: $\\tan 28^\\circ = \\dfrac{BC}{AB} = \\dfrac{x}{15}$, which gives $x = 15\\tan 28^\\circ$, about 8.0. The choice $15\\sin 28^\\circ$ would be correct only if 15 were the hypotenuse, since sine compares the opposite side with the hypotenuse. The choice $\\dfrac{15}{\\tan 28^\\circ}$ solves for the adjacent side when the opposite side is 15."
+    },
+    {
+      "id": "ACT-MA-042",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "geometry",
+      "skill": "30-60-90 triangles",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "In a right triangle, one acute angle measures $30^\\circ$ and the longer leg has length 9. What is the length of the hypotenuse?",
+      "options": [
+        "$3\\sqrt{3}$",
+        "$6\\sqrt{3}$",
+        "$9\\sqrt{3}$",
+        "18"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "In a 30-60-90 triangle the sides are in the ratio $1 : \\sqrt{3} : 2$ (shorter leg, longer leg, hypotenuse). The longer leg is $9 = s\\sqrt{3}$, so the shorter leg is $s = \\dfrac{9}{\\sqrt{3}} = 3\\sqrt{3}$, and the hypotenuse is twice that, $6\\sqrt{3}$, about 10.4. Choice D treats 9 as the shorter leg and doubles it. Choice A is the shorter leg, not the hypotenuse."
+    },
+    {
+      "id": "ACT-MA-043",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "geometry",
+      "skill": "Similar triangles and scale factors",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "In the figure below, $\\overline{DE}$ is parallel to $\\overline{BC}$, $AD = 6$, $DB = 3$, and $DE = 8$. What is the length of $\\overline{BC}$?",
+      "options": [
+        "11",
+        "12",
+        "16",
+        "24"
+      ],
+      "correct": [
+        1
+      ],
+      "figure": {
+        "src": "/figures/act/act-ma-043.svg",
+        "alt": "Triangle ABC with vertex A at the top and base BC at the bottom. Points D on side AB and E on side AC are joined by segment DE, which is parallel to BC. AD is labeled 6, DB is labeled 3, DE is labeled 8, and BC is labeled x."
+      },
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "Because $\\overline{DE} \\parallel \\overline{BC}$, triangles $ADE$ and $ABC$ are similar, so corresponding sides are proportional: $\\dfrac{DE}{BC} = \\dfrac{AD}{AB}$. The full side $AB = 6 + 3 = 9$, so $\\dfrac{8}{BC} = \\dfrac{6}{9}$ and $BC = 12$. Choice C uses $\\dfrac{AD}{DB} = \\dfrac{6}{3}$ as the scale factor, giving $8 \\times 2 = 16$, but $\\overline{DB}$ is not a side of either triangle; the ratio must compare $AD$ with the whole side $AB$. Choice D uses $\\dfrac{DB}{AB} = \\dfrac{3}{9}$ in place of $\\dfrac{AD}{AB}$, and choice A adds 3 to 8 as if the extra length were simply tacked on."
+    },
+    {
+      "id": "ACT-MA-044",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "geometry",
+      "skill": "Equation of a circle",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "In the standard $(x, y)$ coordinate plane, which of the following is an equation of the circle with center $(3, -2)$ and radius 4?",
+      "options": [
+        "$(x - 3)^2 + (y + 2)^2 = 16$",
+        "$(x + 3)^2 + (y - 2)^2 = 16$",
+        "$(x - 3)^2 + (y + 2)^2 = 4$",
+        "$(x - 3)^2 + (y - 2)^2 = 16$"
+      ],
+      "correct": [
+        0
+      ],
+      "calculator": true,
+      "explanation": "A circle with center $(h, k)$ and radius $r$ has the equation $(x - h)^2 + (y - k)^2 = r^2$. With $h = 3$, $k = -2$ and $r = 4$, that is $(x - 3)^2 + (y - (-2))^2 = 4^2$, or $(x - 3)^2 + (y + 2)^2 = 16$. The choice $(x - 3)^2 + (y - 2)^2 = 16$ keeps the correct radius but puts the center at $(3, 2)$; subtracting a negative $k$ produces the plus sign. The choice ending in $= 4$ uses $r$ instead of $r^2$ on the right side."
+    },
+    {
+      "id": "ACT-MA-045",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "algebra",
+      "skill": "Simplifying rational expressions",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "For all $x$ such that $x \\neq -2$ and $x \\neq -3$, which of the following is equivalent to $\\dfrac{x^2 - 9}{x^2 + 5x + 6}$?",
+      "options": [
+        "$\\dfrac{x - 3}{x + 2}$",
+        "$\\dfrac{x + 3}{x + 2}$",
+        "$\\dfrac{x - 3}{x + 3}$",
+        "$-\\dfrac{9}{5x + 6}$"
+      ],
+      "correct": [
+        0
+      ],
+      "calculator": true,
+      "explanation": "Factor both parts: the numerator is a difference of squares, $(x - 3)(x + 3)$, and the denominator is $(x + 2)(x + 3)$. The common factor $x + 3$ cancels, leaving $\\dfrac{x - 3}{x + 2}$. The choice $-\\dfrac{9}{5x + 6}$ cancels the $x^2$ terms, which is not allowed because they are terms being added, not factors being multiplied. The choice $\\dfrac{x + 3}{x + 2}$ cancels the wrong factor from the numerator."
+    },
+    {
+      "id": "ACT-MA-046",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "algebra",
+      "skill": "Complex number arithmetic",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "For $i = \\sqrt{-1}$, what is the product $(2 + 3i)(4 - i)$?",
+      "options": [
+        "$5 + 10i$",
+        "$8 + 10i$",
+        "$11 + 10i$",
+        "$11 - 10i$"
+      ],
+      "correct": [
+        2
+      ],
+      "calculator": true,
+      "explanation": "Expand with FOIL: $(2 + 3i)(4 - i) = 8 - 2i + 12i - 3i^2$. Since $i^2 = -1$, the last term $-3i^2$ equals $+3$, so the product is $8 + 3 + 10i = 11 + 10i$. The choice $5 + 10i$ treats $i^2$ as $+1$, giving $8 - 3 = 5$ for the real part, and $8 + 10i$ drops the $i^2$ term altogether."
+    },
+    {
+      "id": "ACT-MA-047",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "algebra",
+      "skill": "Matrix addition and scalar multiplication",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Let $A = \\begin{pmatrix} 1 & 3 \\\\ -2 & 0 \\end{pmatrix}$ and $B = \\begin{pmatrix} 4 & -1 \\\\ 2 & 5 \\end{pmatrix}$. What is the matrix $2A - B$?",
+      "options": [
+        "$\\begin{pmatrix} -2 & 7 \\\\ -6 & -5 \\end{pmatrix}$",
+        "$\\begin{pmatrix} -2 & 5 \\\\ -6 & -5 \\end{pmatrix}$",
+        "$\\begin{pmatrix} 6 & 5 \\\\ -2 & 5 \\end{pmatrix}$",
+        "$\\begin{pmatrix} -6 & 8 \\\\ -8 & -10 \\end{pmatrix}$"
+      ],
+      "correct": [
+        0
+      ],
+      "calculator": true,
+      "explanation": "Multiply every entry of $A$ by 2 to get $2A = \\begin{pmatrix} 2 & 6 \\\\ -4 & 0 \\end{pmatrix}$, then subtract $B$ entry by entry: $2 - 4 = -2$, $6 - (-1) = 7$, $-4 - 2 = -6$, and $0 - 5 = -5$. The choice whose top right entry is $5$ makes the common sign error in the top right entry, computing $6 - 1$ instead of $6 - (-1)$. The choice whose first row is $6, 5$ adds $B$ instead of subtracting it, and the choice whose first row is $-6, 8$ doubles the difference $A - B$, which is $2A - 2B$."
+    },
+    {
+      "id": "ACT-MA-048",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "algebra",
+      "skill": "Graph of a parabola: vertex and intercepts",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "In the standard $(x, y)$ coordinate plane, the graph of $y = x^2 - 6x + 5$ is a parabola. What are the coordinates of the vertex of the parabola?",
+      "options": [
+        "$(3, -4)$",
+        "$(-3, 32)$",
+        "$(3, 5)$",
+        "$(6, 5)$"
+      ],
+      "correct": [
+        0
+      ],
+      "calculator": true,
+      "explanation": "For $y = ax^2 + bx + c$ the vertex has $x$-coordinate $-\\dfrac{b}{2a} = -\\dfrac{-6}{2} = 3$. Substituting gives $y = 9 - 18 + 5 = -4$, so the vertex is $(3, -4)$. You can check it with the $x$-intercepts: $x^2 - 6x + 5 = (x - 1)(x - 5)$ has roots 1 and 5, and the vertex sits halfway between them at $x = 3$. The choice $(-3, 32)$ gets the sign of $-\\frac{b}{2a}$ wrong, and $(3, 5)$ pairs the correct $x$ with the $y$-intercept, 5, instead of the value of $y$ at $x = 3$."
+    },
+    {
+      "id": "ACT-MA-049",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "algebra",
+      "skill": "Trigonometric values at special angles in radians",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "What is the value of $\\sin\\left(\\dfrac{7\\pi}{6}\\right)$?",
+      "options": [
+        "$-\\dfrac{\\sqrt{3}}{2}$",
+        "$-\\dfrac{1}{2}$",
+        "$\\dfrac{1}{2}$",
+        "$\\dfrac{\\sqrt{3}}{2}$"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "An angle of $\\dfrac{7\\pi}{6}$ radians is $210^\\circ$, which lies in Quadrant III with a reference angle of $\\dfrac{\\pi}{6}$ ($30^\\circ$). Since $\\sin\\dfrac{\\pi}{6} = \\dfrac{1}{2}$ and sine is negative in Quadrant III, $\\sin\\dfrac{7\\pi}{6} = -\\dfrac{1}{2}$. Choice C forgets that sine is negative below the $x$-axis, and choice A is the cosine value for this angle."
+    },
+    {
+      "id": "ACT-MA-050",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "algebra",
+      "skill": "Piecewise functions",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The function $f$ is defined by $f(x) = \\begin{cases} x^2 + 1 & \\text{if } x < 2 \\\\ 3x - 4 & \\text{if } x \\ge 2 \\end{cases}$. What is the value of $f(2) + f(-1)$?",
+      "options": [
+        "$-5$",
+        "2",
+        "4",
+        "7"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "Use the rule whose condition the input satisfies. Since $2 \\ge 2$, $f(2) = 3(2) - 4 = 2$; since $-1 < 2$, $f(-1) = (-1)^2 + 1 = 2$. The sum is $2 + 2 = 4$. Choice D, 7, uses the top rule for $x = 2$, giving $2^2 + 1 = 5$, but the top rule applies only when $x$ is strictly less than 2. Choice A uses the bottom rule for $x = -1$."
+    },
+    {
+      "id": "ACT-MA-051",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "modeling",
+      "skill": "Volume of a cylinder in context",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A cylindrical water tank has an inside radius of 3 feet and an inside height of 10 feet. One cubic foot holds about 7.5 gallons of water. To the nearest gallon, about how many gallons does the tank hold when it is full?",
+      "options": [
+        "283",
+        "1,414",
+        "2,121",
+        "8,482"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "The volume of a cylinder is $\\pi r^2 h = \\pi(3)^2(10) = 90\\pi \\approx 282.7$ cubic feet. Converting to gallons gives $282.7 \\times 7.5 \\approx 2{,}121$ gallons. Choice A is the volume in cubic feet without the conversion. Choice D squares the diameter, 6, instead of the radius, and choice B uses the lateral surface area $2\\pi rh$ in place of the volume."
+    },
+    {
+      "id": "ACT-MA-052",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "modeling",
+      "skill": "Mean of a combined group",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "In a first-period class of 20 students, the mean score on a test was 80. In a second-period class of 30 students, the mean score on the same test was 90. What is the mean score for all 50 students?",
+      "options": [
+        "84",
+        "85",
+        "86",
+        "88"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "A combined mean is the total of all the scores divided by the total number of students, not the average of the two means. The first class scored $20 \\times 80 = 1{,}600$ points in all and the second $30 \\times 90 = 2{,}700$, so the combined mean is $\\dfrac{4{,}300}{50} = 86$. Choice B averages 80 and 90 as if the classes were the same size; the larger class pulls the mean closer to 90."
+    },
+    {
+      "id": "ACT-MA-053",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "modeling",
+      "skill": "Word problems with two unknowns",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A community theater sold 85 tickets to a play. Adult tickets cost \\$12 each and child tickets cost \\$8 each, and the total ticket sales were \\$880. How many adult tickets were sold?",
+      "options": [
+        "35",
+        "45",
+        "50",
+        "55"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "Let $a$ be the number of adult tickets, so $85 - a$ child tickets were sold. Then $12a + 8(85 - a) = 880$, which simplifies to $12a + 680 - 8a = 880$, so $4a = 200$ and $a = 50$. Check: 50 adult tickets bring in \\$600 and 35 child tickets bring in \\$280, for \\$880 in all. Choice A, 35, is the number of child tickets, not adult tickets."
+    },
+    {
+      "id": "ACT-MA-054",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "algebra",
+      "skill": "Sum of an arithmetic series",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "What is the sum of the arithmetic series $5 + 9 + 13 + \\cdots + 101$?",
+      "options": [
+        "1,060",
+        "1,272",
+        "1,325",
+        "2,650"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "The common difference is 4, so the number of terms is $\\dfrac{101 - 5}{4} + 1 = 25$. The sum of an arithmetic series is the number of terms times the average of the first and last terms: $25 \\cdot \\dfrac{5 + 101}{2} = 25 \\cdot 53 = 1{,}325$. Choice B uses 24 terms, the common error of dividing the gap by 4 and forgetting to add 1 for the first term. Choice D forgets to halve the sum of the first and last terms."
+    },
+    {
+      "id": "ACT-MA-055",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "algebra",
+      "skill": "Logarithm properties",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Given that $\\log 2 \\approx 0.301$ and $\\log 3 \\approx 0.477$, which of the following is the approximate value of $\\log 12$?",
+      "options": [
+        "0.778",
+        "1.079",
+        "1.380",
+        "1.556"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "Write 12 as a product of the given numbers: $12 = 2^2 \\cdot 3$. By the product and power rules for logarithms, $\\log 12 = \\log 2^2 + \\log 3 = 2\\log 2 + \\log 3 \\approx 2(0.301) + 0.477 = 1.079$. Choice A, $\\log 2 + \\log 3$, is $\\log 6$, which misses one factor of 2. Choice D is $2(\\log 2 + \\log 3) = \\log 36$, doubling the 3 as well as the 2."
+    },
+    {
+      "id": "ACT-MA-056",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "algebra",
+      "skill": "Greatest common factor and least common multiple",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "The greatest common factor of two positive integers is 6, and their least common multiple is 180. If one of the integers is 36, what is the other integer?",
+      "options": [
+        "5",
+        "30",
+        "60",
+        "180"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "For any two positive integers, the product of the integers equals the product of their GCF and LCM. So the other integer is $\\dfrac{6 \\times 180}{36} = 30$. Check: $36 = 2^2 \\cdot 3^2$ and $30 = 2 \\cdot 3 \\cdot 5$ share $2 \\cdot 3 = 6$, and their LCM is $2^2 \\cdot 3^2 \\cdot 5 = 180$. Choice C, 60, has the right LCM with 36 but a GCF of 12, not 6, and choice A is $180 \\div 36$ with the GCF ignored."
+    },
+    {
+      "id": "ACT-MA-057",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "modeling",
+      "skill": "Exponential growth: compound interest",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Marcus deposits \\$2,000 in an account that earns 6% annual interest compounded quarterly. If he makes no other deposits or withdrawals, which of the following is closest to the balance of the account after 3 years?",
+      "options": [
+        "\\$2,091.36",
+        "\\$2,360.00",
+        "\\$2,382.03",
+        "\\$2,391.24"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "Compounded quarterly, the account earns $\\dfrac{6\\%}{4} = 1.5\\%$ per quarter for $3 \\times 4 = 12$ quarters, so the balance is $2{,}000(1.015)^{12} \\approx \\$2{,}391.24$. Choice C, $2{,}000(1.06)^3$, compounds only once a year, which earns slightly less. Choice B is simple interest, $2{,}000(1 + 0.18)$, with no compounding at all, and choice A applies the quarterly rate for only 3 periods."
+    },
+    {
+      "id": "ACT-MA-058",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "geometry",
+      "skill": "Combinations",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "A school committee will consist of exactly 2 teachers chosen from 5 teachers and exactly 3 students chosen from 6 students. How many different committees are possible?",
+      "options": [
+        "30",
+        "200",
+        "330",
+        "462"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "Order does not matter within a committee, so use combinations. There are $\\binom{5}{2} = 10$ ways to choose the teachers and $\\binom{6}{3} = 20$ ways to choose the students, and by the counting principle the two choices multiply: $10 \\times 20 = 200$. Choice D, $\\binom{11}{5} = 462$, chooses any 5 people from all 11 and ignores the requirement of exactly 2 teachers and 3 students. Choice A multiplies 5 by 6 as if only one of each were chosen."
+    },
+    {
+      "id": "ACT-MA-059",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "modeling",
+      "skill": "Permutations with a restriction",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "A locker code consists of 4 different digits chosen from 1, 2, 3, 4, 5, 6, and 7, and the first digit must be odd. How many different codes are possible?",
+      "options": [
+        "480",
+        "840",
+        "1,680",
+        "2,401"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "Fill the restricted position first. There are 4 odd digits (1, 3, 5, 7) for the first position. Because digits cannot repeat, 6 digits remain for the second position, 5 for the third, and 4 for the fourth, so the total is $4 \\times 6 \\times 5 \\times 4 = 480$. Choice B, $7 \\times 6 \\times 5 \\times 4 = 840$, is the count without the odd-first restriction. Choice D, $7^4$, allows digits to repeat and ignores the restriction."
+    },
+    {
+      "id": "ACT-MA-060",
+      "section": "math",
+      "test": 0,
+      "module": 1,
+      "domain": "modeling",
+      "skill": "Interpreting a two-way frequency table",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "The table below shows how 100 students at a high school get to school, by grade.\n\n| | Drive | Bus | Walk | Total |\n|---|---|---|---|---|\n| Juniors | 24 | 18 | 8 | 50 |\n| Seniors | 36 | 10 | 4 | 50 |\n| Total | 60 | 28 | 12 | 100 |\n\nOne of these students is selected at random. Given that the selected student rides the bus, what is the probability that the student is a junior?",
+      "options": [
+        "$\\dfrac{9}{50}$",
+        "$\\dfrac{7}{25}$",
+        "$\\dfrac{9}{25}$",
+        "$\\dfrac{9}{14}$"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "calculator": true,
+      "explanation": "The condition \"rides the bus\" restricts the sample to the 28 students in the Bus column, so the denominator is 28 rather than 100. Of those 28, 18 are juniors, so the probability is $\\dfrac{18}{28} = \\dfrac{9}{14}$. Choice A, $\\dfrac{18}{100}$, is the probability that a student is a junior who rides the bus, with no condition applied. Choice C, $\\dfrac{18}{50}$, is the probability that a junior rides the bus, which reverses the condition."
+    }
+  ]
+}

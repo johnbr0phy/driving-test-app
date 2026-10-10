@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" font-family="sans-serif" font-size="13" fill="#000">
+<rect width="320" height="240" fill="#fff"/>
+<text x="175" y="18" text-anchor="middle" font-weight="bold">Books Read in March</text>
+<path stroke="#ccc" stroke-width="1" d="M50 171.7H300M50 143.3H300M50 115H300M50 86.7H300M50 58.3H300M50 30H300"/>
+<g stroke="#000" stroke-width="1.5" fill="#ddd">
+<rect x="65" y="100.8" width="30" height="99.2"/>
+<rect x="115" y="30" width="30" height="170"/>
+<rect x="165" y="143.3" width="30" height="56.7"/>
+<rect x="215" y="72.5" width="30" height="127.5"/>
+<rect x="265" y="86.7" width="30" height="113.3"/>
+</g>
+<g stroke="#000" stroke-width="1.5">
+<line x1="50" y1="24" x2="50" y2="200"/>
+<line x1="50" y1="200" x2="300" y2="200"/>
+</g>
+<g font-size="11" text-anchor="end">
+<text x="44" y="204">0</text>
+<text x="44" y="175.7">2</text>
+<text x="44" y="147.3">4</text>
+<text x="44" y="119">6</text>
+<text x="44" y="90.7">8</text>
+<text x="44" y="62.3">10</text>
+<text x="44" y="34">12</text>
+</g>
+<g font-size="12" text-anchor="middle">
+<text x="80" y="96">7</text>
+<text x="180" y="138.5">4</text>
+<text x="230" y="67.7">9</text>
+<text x="280" y="82">8</text>
+</g>
+<text x="130" y="44" text-anchor="middle" font-size="12">12</text>
+<g text-anchor="middle">
+<text x="80" y="218">Ana</text>
+<text x="130" y="218">Ben</text>
+<text x="180" y="218">Cal</text>
+<text x="230" y="218">Dee</text>
+<text x="280" y="218">Eli</text>
+</g>
+<text transform="translate(14 115) rotate(-90)" text-anchor="middle" font-size="11">Number of books</text>
+</svg>

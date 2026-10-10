@@ -1,6 +1,6 @@
 import { EXAMS, ExamConfig, examLandingPath } from "./exams";
 import { EXAMS_V2 } from "./v2/registry";
-import { getBank } from "./v2/bank";
+import { BANK_SIZES } from "./v2/bankSizes";
 import type { ExamV2Config } from "./v2/types";
 
 // Every practice test on the site, for the /tests hub, the header test
@@ -67,8 +67,8 @@ const EXAM_BLURBS: Record<string, string> = {
   lifeguard: "Lifeguard certification written exam prep: scanning and surveillance, recognizing drowning, water rescues and spinal injury care, first aid, CPR and AED, facility safety.",
   pnc: "Property and casualty insurance license exam, general portion. Insurance basics, policy provisions, homeowners and dwelling forms, personal auto, commercial lines, flood and surety.",
   hesi: "HESI A2 nursing entrance exam with seven timed sections scored like the real report: math with dosage conversions, reading passages, vocabulary, grammar, biology, chemistry and anatomy and physiology.",
-  sat: "Full-length digital SAT practice: two timed sections with adaptive modules, a calculator, and a 400 to 1600 score estimate, plus skill drills built for your phone.",
-  act: "Full-length ACT practice in the enhanced 2025 format: English, Math, Reading and Science with real passages and timing, scored 1 to 36 with a composite, plus drills for your phone.",
+  sat: "Two full-length digital SAT practice tests: two timed sections with adaptive modules, a calculator, and a 400 to 1600 score estimate, plus skill drills built for your phone.",
+  act: "Two full-length ACT practice tests in the enhanced 2025 format: English, Math, Reading and Science with real passages and timing, scored 1 to 36 with a composite, plus drills for your phone.",
   secplus: "CompTIA Security+ SY0-701. General security concepts, threats and vulnerabilities, architecture, operations, and program management, in CompTIA's scenario style.",
   hunter: "Hunter education (hunter safety) exam prep on the IHEA standards: firearm safety and carries, ammunition, shot placement, tree stands, wildlife identification, conservation, ethics and survival.",
   boating: "Boating license (boater safety card) exam prep on the NASBLA standards: navigation rules, buoys, lights and sound signals, required equipment, safe operation, emergencies.",
@@ -112,7 +112,7 @@ const v2Entry = (exam: ExamV2Config): TestCatalogEntry => ({
   blurb: EXAM_BLURBS[exam.id] ?? exam.tagline,
   href: exam.landingPath,
   dashboardHref: exam.slug,
-  questions: getBank(exam.id).questions.length,
+  questions: BANK_SIZES[exam.id] ?? 0,
   icon: exam.icon as TestCatalogEntry["icon"],
   theme: exam.id,
 });

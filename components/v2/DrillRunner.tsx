@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { X, RotateCcw } from "lucide-react";
 import { ExamV2Config, AnswerValue, QuestionV2 } from "@/lib/v2/types";
 import { getBank, getStimulus } from "@/lib/v2/bank";
@@ -13,6 +14,7 @@ import { isAnswered, isCorrect } from "@/lib/v2/grading";
 import { useV2Store } from "@/store/useV2Store";
 import { useHydration } from "@/hooks/useHydration";
 import { useSound } from "@/hooks/useSound";
+import { getTigerAsset } from "@/lib/tigerAssets";
 import { QuestionView } from "./QuestionView";
 
 /**
@@ -119,7 +121,7 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
         <div className="mx-auto max-w-2xl px-4 py-4">
           {done ? (
             <div className="v2-pop rounded-2xl border border-green-200 bg-green-50 p-6 text-center">
-              <div className="text-4xl">🐯</div>
+              <Image src={getTigerAsset(exam.id, 1)} alt="" width={112} height={112} className="mx-auto h-28 w-28 object-contain" />
               <h2 className="mt-2 text-xl font-bold text-green-900">Drill mastered</h2>
               <p className="mt-1 text-sm text-green-800">Every {drill.name} question answered correctly. Take a full test to see it show up in your score.</p>
               <div className="mt-5 flex flex-col gap-2">

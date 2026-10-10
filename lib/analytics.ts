@@ -1,5 +1,6 @@
 import { auth } from "@/lib/firebase";
 import { DMV_ANALYTICS_KEY, type ExamAnalyticsKey } from "@/lib/exams";
+import { trackFunnelStep } from "@/lib/funnel";
 
 declare global {
   interface Window {
@@ -78,6 +79,7 @@ let answerFlushTimer: ReturnType<typeof setTimeout> | null = null;
 
 export function trackQuestionsAnswered(count = 1, examKey: ExamAnalyticsKey = DMV_ANALYTICS_KEY) {
   if (count <= 0) return;
+  trackFunnelStep("answered");
   pendingByExam[examKey] = (pendingByExam[examKey] || 0) + count;
   if (!answerFlushTimer) {
     answerFlushTimer = setTimeout(() => void flushAnsweredQuestions(), 10_000);

@@ -59,6 +59,8 @@ App Router pages in `/app/`. Key routes:
 
 Guest mode allows using the app without an account; guest data converts on signup.
 
+The visitor funnel on `/admin/v2` (`lib/funnel.ts`, `/api/analytics/funnel`) counts signed-out browsers once per step: first visit, first question answered, signup page opened, account created. Counts go to `analytics/funnel`; each new account's origin (`tried` first or `cold`) goes to `signupOrigins/{uid}`, kept out of `users/{uid}` so it never races the first load.
+
 ### Additional Exams (CDL, HTL, CST, CRCST)
 
 Non-DMV exams reuse the DMV components and store, namespaced by ID range and a

@@ -4,6 +4,7 @@ import { isAdminEmail } from '@/lib/admin';
 import { examAnalyticsLabel } from '@/lib/exams';
 import { TEST_REQUEST_PICKS } from '@/lib/test-requests';
 import { LAUNCH_EXPERIMENT, LAUNCH_VARIANTS } from '@/lib/email-launch';
+import type { DocumentSnapshot, QuerySnapshot } from 'firebase-admin/firestore';
 
 // Growth/revenue metrics for /admin/v2. Everything here is derived from two
 // sources of truth: the users collection (signups, activity, subscription) and
@@ -75,7 +76,7 @@ export async function GET(request: NextRequest) {
     }
 
     const db = getAdminDb();
-    const [usersSnap, paymentsSnap, questionsDoc, testRequestsSnap, studyTimesDoc] = await Promise.all([
+    const [usersSnap, paymentsSnap, questionsDoc, testRequestsSnap, studyTimesDoc, funnelDoc, originsSnap] = await Promise.all([
       db.collection('users')
         .select('selectedState', 'lastUpdated', 'activeDates', 'subscription', 'createdAt', 'paywallHits', '_stats', 'emailVariants', 'emailClicks')
         .get(),
@@ -83,6 +84,8 @@ export async function GET(request: NextRequest) {
       db.doc('analytics/questions').get(),
       db.collection('testRequests').get(),
       db.doc('globalStats/studyTimes').get(),
+      db.doc('analytics/funnel').get(),
+      db.collection('signupOrigins').get(),
     ]);
 
     // ── "What test should we build next?" answers ───────────────────────────
@@ -182,6 +185,7 @@ export async function GET(request: NextRequest) {
     let totalQuestions = 0;
     let estimatedPurchases = 0; // premium users with no payment record ($9.99 assumed)
     const daysToPurchase: number[] = [];
+    const premiumIds = new Set<string>();
     // Per-user activity for unique-active series
     const perUserActivity: { dates: Set<string> }[] = [];
 
@@ -231,6 +235,7 @@ export async function GET(request: NextRequest) {
       // Purchases / revenue
       if (isPremium) {
         payingUsers++;
+        premiumIds.add(doc.id);
         const purchasedAt = typeof sub.purchasedAt === 'string' ? sub.purchasedAt : undefined;
         if (!paidUserIds.has(doc.id)) {
           // No Stripe record (legacy / comped) — count at the fallback price
@@ -392,6 +397,7 @@ export async function GET(request: NextRequest) {
         // day's real total (2,886).
         questions: questionsByDay[etToday] || 0,
       },
+      visitorFunnel: buildVisitorFunnel(funnelDoc, originsSnap, premiumIds),
       funnel: {
         signups: totalUsers,
         engaged: engagedUsers,
@@ -419,4 +425,32 @@ export async function GET(request: NextRequest) {
       { status: 500 },
     );
   }
+}
+
+// ─── Visitor funnel (lib/funnel.ts) ──────────────────────────────────────────
+// Per-step daily counts for the client to window, plus purchases split by
+// whether the account practiced before signing up (signupOrigins/{uid}).
+function buildVisitorFunnel(
+  funnelDoc: DocumentSnapshot,
+  originsSnap: QuerySnapshot,
+  premiumIds: Set<string>,
+) {
+  const steps = (funnelDoc.exists ? funnelDoc.get('steps') : null) as
+    | Record<string, { daily?: Record<string, number> }>
+    | null;
+  const daily: Record<string, Record<string, number>> = {};
+  for (const key of ['visit', 'answered', 'signup_view', 'signup', 'signup_tried', 'signup_cold']) {
+    daily[key] = steps?.[key]?.daily || {};
+  }
+  const origins = {
+    tried: { accounts: 0, purchased: 0 },
+    cold: { accounts: 0, purchased: 0 },
+  };
+  originsSnap.forEach((doc) => {
+    const origin = doc.get('origin') === 'tried' ? 'tried' : 'cold';
+    origins[origin].accounts++;
+    if (premiumIds.has(doc.id)) origins[origin].purchased++;
+  });
+  const startDays = Object.keys(daily.visit).sort();
+  return { startedAt: startDays[0] ?? null, daily, origins };
 }

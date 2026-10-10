@@ -62,3 +62,33 @@ export function relabelChoices(text: string, order: number[]): string {
     .replace(CHOICE_REF, (_m, lead: string, letters: string) => lead + letters.replace(/[A-E]/g, shown))
     .replace(PAREN_REF, (_m, letter: string) => `(${shown(letter)})`);
 }
+
+// A sentence that turns to the other options ("Choice D gives...", "Choices A
+// and B...", "The choice $5 - 2n$...") starts its own paragraph.
+const WRONG_CHOICE_LEAD = /^["“(]?(?:(?:The\s+)?[Cc]hoices?\b|[Oo]ptions?\s+\(?[A-E]\b|\([A-E]\)|[A-E]\s+(?:is|and|or)\b)/;
+const MATH = /\$\$[\s\S]+?\$\$|\$[^$\n]+?\$/g;
+
+/**
+ * Bank explanations are one block of text: why the key is right, then why
+ * the other choices are wrong. Split them into paragraphs (blank lines, which
+ * RichText renders as separate <p>) so the reveal is easier to scan. Text that
+ * already has line breaks is left as written.
+ */
+export function paragraphizeExplanation(text: string): string {
+  if (text.includes("\n")) return text;
+  // Hide math so periods inside it ($3.5$) never end a sentence.
+  const math: string[] = [];
+  const masked = text.replace(/\\\$/g, "\u0002").replace(MATH, (m) => `\u0001${math.push(m) - 1}\u0001`);
+  const sentences = masked.split(/(?<=[.!?]["”)]?)\s+(?=["“(]?[A-Z$\u0001])/);
+  if (sentences.length < 2) return text;
+  const paras: string[][] = [];
+  for (const s of sentences) {
+    if (paras.length === 0 || WRONG_CHOICE_LEAD.test(s)) paras.push([s]);
+    else paras[paras.length - 1].push(s);
+  }
+  return paras
+    .map((p) => p.join(" "))
+    .join("\n\n")
+    .replace(/\u0001(\d+)\u0001/g, (_m, i: string) => math[Number(i)])
+    .replace(/\u0002/g, "\\$");
+}

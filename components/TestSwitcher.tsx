@@ -75,7 +75,7 @@ export function TestSwitcher({ className = "" }: { className?: string }) {
           aria-hidden="true"
         />
         {showNew && (
-          <span className="pointer-events-none absolute -right-2 -top-2 flex h-6 w-6 items-center justify-center rounded-full bg-red-600 text-[8px] font-bold uppercase leading-none tracking-tight text-white shadow-sm ring-2 ring-white">
+          <span className="pointer-events-none absolute -right-2.5 -top-2 rounded-md bg-red-600 px-1.5 py-0.5 text-[9px] font-bold uppercase leading-none tracking-wide text-white shadow-sm ring-2 ring-white">
             New
           </span>
         )}

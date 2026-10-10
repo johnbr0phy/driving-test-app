@@ -1817,3 +1817,19 @@ export function getExamTrainingSetSize(setId: number): number {
 export function isExamQuestionId(questionId: string): boolean {
   return EXAMS.some((e) => questionId.startsWith(e.questionIdPrefix));
 }
+
+/** Exam owning a question ID by prefix, if any (DMV IDs are "U-" or a state code). */
+export function getExamForQuestionId(questionId: string): ExamConfig | undefined {
+  return EXAMS.find((e) => questionId.startsWith(e.questionIdPrefix));
+}
+
+/**
+ * Key the analytics/questions aggregate files an answer under. Every
+ * registry exam uses its id; the DMV permit test is "dmv".
+ */
+export const DMV_ANALYTICS_KEY = "dmv";
+export type ExamAnalyticsKey = ExamId | typeof DMV_ANALYTICS_KEY;
+export const EXAM_ANALYTICS_KEYS: ExamAnalyticsKey[] = [DMV_ANALYTICS_KEY, ...EXAMS.map((e) => e.id)];
+export const examAnalyticsKey = (exam: ExamConfig | undefined): ExamAnalyticsKey => exam?.id ?? DMV_ANALYTICS_KEY;
+export const examAnalyticsLabel = (key: string): string =>
+  key === DMV_ANALYTICS_KEY ? "DMV permit test" : getExamById(key)?.shortName ?? key;

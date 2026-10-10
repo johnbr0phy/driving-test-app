@@ -1,4 +1,4 @@
-import { EXAMS } from "@/lib/exams";
+import { SITEMAP_SEGMENTS } from "@/lib/sitemaps";
 import { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
@@ -21,9 +21,9 @@ export default function robots(): MetadataRoute.Robots {
           "/login",
           "/signup",
           "/unsubscribe",
-          ...EXAMS.flatMap((exam) =>
-            ["dashboard", "stats", "test", "training", "drill"].map((p) => `${exam.slug}/${p}`)
-          ),
+          // Exam app routes (/cdl/dashboard, /teas/test/...) are not listed
+          // here: they carry a noindex meta tag (lib/examSeo.ts), which
+          // crawlers only see when allowed to fetch the page.
         ],
       },
       // Explicitly allow major AI crawlers
@@ -79,6 +79,9 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/", "/admin/"],
       },
     ],
-    sitemap: `${siteUrl}/sitemap.xml`,
+    sitemap: [
+      `${siteUrl}/sitemap.xml`,
+      ...SITEMAP_SEGMENTS.map((segment) => `${siteUrl}/sitemaps/${segment}.xml`),
+    ],
   };
 }

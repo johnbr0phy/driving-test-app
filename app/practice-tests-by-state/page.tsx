@@ -6,7 +6,7 @@ import { states } from "@/data/states";
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
 export const metadata: Metadata = {
-  title: "DMV Practice Tests by State 2026 - Free Permit Practice | TigerTest",
+  title: { absolute: "DMV Practice Tests by State 2026 - Free Permit Practice | TigerTest" },
   description:
     "Free DMV practice tests for all 50 states. Choose your state and start practicing with 200 questions based on your state's driver's manual. Pass your permit test on the first try.",
   alternates: {

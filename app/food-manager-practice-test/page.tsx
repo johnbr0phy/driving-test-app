@@ -3,6 +3,8 @@ import Image from "next/image";
 import { getTigerAsset } from "@/lib/tigerAssets";
 import { Smartphone, Monitor } from "lucide-react";
 import { ExamLandingHero, ExamLandingCTA } from "@/components/exam/ExamLandingHero";
+import { ExamLandingBreadcrumbs } from "@/components/exam/ExamLandingBreadcrumbs";
+import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
@@ -22,11 +24,13 @@ export const metadata: Metadata = {
     title,
     description,
     url: `${siteUrl}/food-manager-practice-test`,
+    images: [{ url: "/og/foodmgr", width: 1200, height: 630, alt: "TigerTest free Food Safety practice test" }],
     siteName: "TigerTest",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
+    images: ["/og/foodmgr"],
     title,
     description,
   },
@@ -122,6 +126,7 @@ export default function FoodmgrLandingPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      <ExamLandingBreadcrumbs examId="foodmgr" />
 
       {/* Hero */}
       <div className="relative overflow-hidden">
@@ -294,6 +299,8 @@ export default function FoodmgrLandingPage() {
           </div>
         </div>
       </div>
+
+      <ExamRelatedTests examId="foodmgr" />
 
       {/* Final CTA */}
       <div className="relative overflow-hidden">

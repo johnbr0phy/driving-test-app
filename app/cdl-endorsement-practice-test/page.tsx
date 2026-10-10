@@ -3,6 +3,8 @@ import Image from "next/image";
 import { getTigerAsset } from "@/lib/tigerAssets";
 import { Smartphone, Monitor } from "lucide-react";
 import { ExamLandingHero, ExamLandingCTA } from "@/components/exam/ExamLandingHero";
+import { ExamLandingBreadcrumbs } from "@/components/exam/ExamLandingBreadcrumbs";
+import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
@@ -22,11 +24,13 @@ export const metadata: Metadata = {
     title,
     description,
     url: `${siteUrl}/cdl-endorsement-practice-test`,
+    images: [{ url: "/og/cdlx", width: 1200, height: 630, alt: "TigerTest free CDL Endorsements practice test" }],
     siteName: "TigerTest",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
+    images: ["/og/cdlx"],
     title,
     description,
   },
@@ -112,6 +116,7 @@ export default function CDLEndorsementsLandingPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      <ExamLandingBreadcrumbs examId="cdlx" />
 
       {/* Hero */}
       <div className="relative overflow-hidden">
@@ -299,6 +304,8 @@ export default function CDLEndorsementsLandingPage() {
           </div>
         </div>
       </div>
+
+      <ExamRelatedTests examId="cdlx" />
 
       {/* Final CTA */}
       <div className="relative overflow-hidden">

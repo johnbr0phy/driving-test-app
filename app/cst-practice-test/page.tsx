@@ -3,30 +3,34 @@ import Image from "next/image";
 import { getTigerAsset } from "@/lib/tigerAssets";
 import { Smartphone, Monitor } from "lucide-react";
 import { ExamLandingHero, ExamLandingCTA } from "@/components/exam/ExamLandingHero";
+import { ExamLandingBreadcrumbs } from "@/components/exam/ExamLandingBreadcrumbs";
+import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free HTL Practice Test 2026 - ASCP Histotechnologist Exam Prep";
+const title = "Free CST Practice Test 2026 - Surgical Technologist Exam Prep";
 const description =
-  "Free ASCP HTL and HT practice tests with 200 questions weighted to the official 2025 content guideline. Fixation, processing, embedding, microtomy, staining, and lab operations with instant feedback.";
+  "Free NBSTSA CST practice tests with 200 questions weighted to the official exam content outline. Preoperative, intraoperative, postoperative, sterilization, anatomy, microbiology, and pharmacology with instant feedback.";
 
 export const metadata: Metadata = {
   title,
   description,
   keywords:
-    "HTL practice test, ASCP HTL exam, histotechnologist practice questions, HT ASCP practice test, histotechnician exam prep, histology certification exam, ASCP BOC histotechnology",
+    "CST practice test, NBSTSA CST exam, surgical technologist practice questions, surgical tech exam prep, CST certification exam, surgical technology practice test, TS-C practice test",
   alternates: {
-    canonical: `${siteUrl}/htl`,
+    canonical: `${siteUrl}/cst-practice-test`,
   },
   openGraph: {
     title,
     description,
-    url: `${siteUrl}/htl`,
+    url: `${siteUrl}/cst-practice-test`,
+    images: [{ url: "/og/cst", width: 1200, height: 630, alt: "TigerTest free CST practice test" }],
     siteName: "TigerTest",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
+    images: ["/og/cst"],
     title,
     description,
   },
@@ -37,16 +41,16 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "WebApplication",
-      name: "TigerTest - Free HTL (ASCP) Practice Tests",
+      name: "TigerTest - Free CST (NBSTSA) Practice Tests",
       description,
-      url: `${siteUrl}/htl`,
+      url: `${siteUrl}/cst-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
       offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
       featureList: [
-        "200 HTL practice questions",
+        "200 CST practice questions",
         "4 blueprint-weighted practice tests",
-        "Training sets for all 5 ASCP content areas",
+        "Training sets for every NBSTSA exam domain",
         "Instant feedback with explanations",
         "Auto-save progress",
       ],
@@ -62,23 +66,23 @@ const jsonLd = {
       mainEntity: [
         {
           "@type": "Question",
-          name: "How many questions are on the ASCP HTL exam?",
+          name: "How many questions are on the CST exam?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "The HTL(ASCP) and HT(ASCP) exams have 100 multiple-choice questions in 2 hours 30 minutes, delivered by computer adaptive testing. Scores are scaled from 100 to 999 and 400 is passing.",
+            text: "The NBSTSA CST exam has 175 multiple-choice questions, 150 scored and 25 unscored pretest items, in 4 hours. You need 102 of the 150 scored items correct to pass, about 68 percent.",
           },
         },
         {
           "@type": "Question",
-          name: "What topics does the HTL exam cover?",
+          name: "What topics does the CST exam cover?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Per the ASCP BOC content guideline revised September 2025: Staining 30 to 40 percent, Fixation 15 to 25 percent, Embedding and Microtomy 15 to 25 percent, Processing 10 to 20 percent, and Laboratory Operations 10 to 15 percent.",
+            text: "Per the NBSTSA content outline: Perioperative Care is 105 of 150 scored items (preoperative 19, intraoperative 68, postoperative 10), Ancillary Duties 23 (administrative and personnel 7, equipment sterilization and maintenance 16), and Basic Science 30 (anatomy and physiology 18, microbiology 6, surgical pharmacology 6).",
           },
         },
         {
           "@type": "Question",
-          name: "Is the TigerTest HTL practice test free?",
+          name: "Is the TigerTest CST practice test free?",
           acceptedAnswer: {
             "@type": "Answer",
             text: "Yes. All four practice tests and all five training sets are free, with no account required.",
@@ -86,10 +90,10 @@ const jsonLd = {
         },
         {
           "@type": "Question",
-          name: "Does this work for the HT exam too?",
+          name: "Does this work for the TS-C exam too?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. HT and HTL share the same content outline. HTL adds deeper chemistry, pathology, immunohistochemistry QC, management, education, and regulation questions, which are included in this bank.",
+            text: "Largely, yes. The NCCT Tech in Surgery - Certified (TS-C) exam covers the same perioperative, sterilization, and basic science material, so this bank is useful preparation, though its exact weighting differs.",
           },
         },
       ],
@@ -98,33 +102,37 @@ const jsonLd = {
 };
 
 const contentAreas = [
-  { name: "Staining", weight: "30 to 40%" },
-  { name: "Fixation", weight: "15 to 25%" },
-  { name: "Embedding & Microtomy", weight: "15 to 25%" },
-  { name: "Processing", weight: "10 to 20%" },
-  { name: "Laboratory Operations", weight: "10 to 15%" },
+  { name: "Intraoperative Procedures", weight: "68 of 150" },
+  { name: "Preoperative Preparation", weight: "19 of 150" },
+  { name: "Anatomy & Physiology", weight: "18 of 150" },
+  { name: "Equipment Sterilization & Maintenance", weight: "16 of 150" },
+  { name: "Postoperative Procedures", weight: "10 of 150" },
+  { name: "Administrative & Personnel", weight: "7 of 150" },
+  { name: "Microbiology", weight: "6 of 150" },
+  { name: "Surgical Pharmacology", weight: "6 of 150" },
 ];
 
-export default function HTLLandingPage() {
+export default function CSTLandingPage() {
   return (
-    <div className="flex-1 bg-white">
+    <div data-theme="cst" className="flex-1 bg-white">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      <ExamLandingBreadcrumbs examId="cst" />
 
       {/* Hero */}
       <div className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 tracking-tight">
-            Free HTL Practice Test 2026
+            Free CST Practice Test 2026
           </h1>
           <ExamLandingHero
-            dashboardHref="/htl/dashboard"
-            shortName="HTL"
-            subtitle="200 questions weighted to the ASCP content guideline. Tuned for mobile. No account needed."
-            shots={{ mobile: "/landing/htl-mobile.png", desktop: "/landing/htl-desktop.png" }}
+            dashboardHref="/cst/dashboard"
+            shortName="CST"
+            subtitle="200 questions weighted to the NBSTSA content outline. Tuned for mobile. No account needed."
+            shots={{ mobile: "/landing/cst-mobile.png", desktop: "/landing/cst-desktop.png" }}
           />
         </div>
       </div>
@@ -140,10 +148,10 @@ export default function HTLLandingPage() {
               <Smartphone className="w-7 h-7 text-brand" />
             </div>
             <div className="bg-gray-50 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Training by Content Area</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Training by Exam Domain</h3>
               <p className="text-gray-600">
-                One set per ASCP content area. Get instant feedback after each answer, and
-                questions you miss come back until you have mastered them.
+                Sets follow the NBSTSA outline: preoperative, intraoperative, postoperative, ancillary
+                duties, and basic science. Questions you miss come back until you have mastered them.
               </p>
             </div>
           </div>
@@ -154,8 +162,8 @@ export default function HTLLandingPage() {
             <div className="bg-gray-50 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">Practice Tests</h3>
               <p className="text-gray-600">
-                Four 50-question tests that mirror the real exam&apos;s weighting across staining,
-                fixation, embedding and microtomy, processing, and lab operations.
+                Four 50-question tests that mirror the real exam&apos;s weighting. Intraoperative
+                procedures are almost half of every test, just like the real CST.
               </p>
             </div>
           </div>
@@ -168,11 +176,11 @@ export default function HTLLandingPage() {
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Built on the Official ASCP Content Guideline
+                Built on the Official NBSTSA Content Outline
               </h2>
               <p className="text-lg text-gray-600 mb-6">
-                The ASCP Board of Certification publishes the exact weighting of the HT and HTL
-                exams (guideline revised September 2025). Every practice test here follows it.
+                The NBSTSA publishes how many of the 150 scored items come from each domain
+                (2023 job analysis). Every practice test here follows that weighting.
               </p>
               <div className="space-y-3">
                 {contentAreas.map((area) => (
@@ -185,7 +193,7 @@ export default function HTLLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("htl", 1)}
+                src={getTigerAsset("cst", 1)}
                 alt="TigerTest mascot"
                 width={180}
                 height={180}
@@ -201,7 +209,7 @@ export default function HTLLandingPage() {
         <div className="bg-brand-light border border-brand-border-light rounded-2xl p-8 md:p-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">We Just Launched!</h2>
           <p className="text-lg text-gray-600 mb-6 max-w-xl mx-auto">
-            The HTL practice test is brand new. If a question looks wrong or you want a topic
+            The CST practice test is brand new. If a question looks wrong or you want a topic
             covered in more depth, tell us.
           </p>
           <a
@@ -219,28 +227,28 @@ export default function HTLLandingPage() {
       <div className="bg-gray-50 py-16 md:py-24">
         <div className="max-w-3xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">
-            How to Pass the HTL Exam
+            How to Pass the CST Exam
           </h2>
           <div className="space-y-8 text-gray-600">
             <div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">1. Know the exam format</h3>
               <p>
-                100 multiple-choice questions in 2 hours 30 minutes, delivered by computer adaptive
-                testing. You cannot skip or go back. Scores are scaled from 100 to 999, and 400 passes.
+                175 multiple-choice questions in 4 hours: 150 scored plus 25 unscored pretest items.
+                You need 102 of the 150 scored items correct, roughly 68 percent.
               </p>
             </div>
             <div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">2. Weight your study like the exam</h3>
               <p>
-                Staining is the largest area at 30 to 40 percent, so start with the Staining training set.
-                Fixation and Embedding and Microtomy are next at 15 to 25 percent each.
+                Intraoperative procedures are 68 of the 150 scored items, so start with the Intraoperative
+                training set. Preoperative preparation and anatomy and physiology are next at 19 and 18.
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">3. Study from the ASCP reading list</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">3. Study from the NBSTSA reference list</h3>
               <p>
-                The core text is Carson and Cappellano, Histotechnology: A Self-Instructional Text (5th ed.).
-                Pair it with the BOC Study Guide and Bancroft&apos;s Theory and Practice of Histological Techniques.
+                The core texts are the AST Surgical Technology for the Surgical Technologist and Frey&apos;s
+                Surgical Technology: Principles and Practice. Pair them with the NBSTSA CST Study Guide.
               </p>
             </div>
             <div>
@@ -257,33 +265,33 @@ export default function HTLLandingPage() {
       {/* FAQ */}
       <div className="max-w-3xl mx-auto px-6 py-16 md:py-24">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">
-          HTL Exam Frequently Asked Questions
+          CST Exam Frequently Asked Questions
         </h2>
         <div className="space-y-8">
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 mb-2">How many questions are on the ASCP HTL exam?</h3>
+            <h3 className="font-semibold text-lg text-gray-900 mb-2">How many questions are on the CST exam?</h3>
             <p className="text-gray-600">
-              100 multiple-choice questions in 2 hours 30 minutes, delivered by computer adaptive testing.
-              Scores are scaled from 100 to 999 and 400 is passing.
+              175 multiple-choice questions in 4 hours. 150 are scored and 25 are unscored pretest items.
+              You need 102 of the 150 scored items correct to pass.
             </p>
           </div>
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 mb-2">What topics does the HTL exam cover?</h3>
+            <h3 className="font-semibold text-lg text-gray-900 mb-2">What topics does the CST exam cover?</h3>
             <p className="text-gray-600">
-              Staining (30 to 40 percent), Fixation (15 to 25 percent), Embedding and Microtomy (15 to 25 percent),
-              Processing (10 to 20 percent), and Laboratory Operations (10 to 15 percent), per the ASCP BOC
-              content guideline revised September 2025.
+              Perioperative Care (105 scored items: preoperative 19, intraoperative 68, postoperative 10),
+              Ancillary Duties (23: administrative and personnel 7, equipment sterilization 16), and Basic
+              Science (30: anatomy and physiology 18, microbiology 6, surgical pharmacology 6).
             </p>
           </div>
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 mb-2">Does this work for the HT exam too?</h3>
+            <h3 className="font-semibold text-lg text-gray-900 mb-2">Does this work for the TS-C exam too?</h3>
             <p className="text-gray-600">
-              Yes. HT and HTL share the same content outline. The HTL exam adds deeper chemistry, pathology,
-              immunohistochemistry QC, management, education, and regulation questions, all of which are in this bank.
+              Largely, yes. The NCCT Tech in Surgery - Certified (TS-C) exam covers the same perioperative,
+              sterilization, and basic science material, though its exact weighting differs.
             </p>
           </div>
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 mb-2">Is the TigerTest HTL practice test free?</h3>
+            <h3 className="font-semibold text-lg text-gray-900 mb-2">Is the TigerTest CST practice test free?</h3>
             <p className="text-gray-600">
               Yes. All four practice tests and all five training sets are free, with no account required.
               Create a free account if you want your progress saved across devices.
@@ -292,13 +300,15 @@ export default function HTLLandingPage() {
         </div>
       </div>
 
+      <ExamRelatedTests examId="cst" />
+
       {/* Final CTA */}
       <div className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-t from-brand-light to-white pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Ready to Pass the HTL Exam?</h2>
-          <p className="text-lg text-gray-600 mb-10">Free to start. No account required. 200 questions across all five content areas.</p>
-          <ExamLandingCTA dashboardHref="/htl/dashboard" />
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Ready to Pass the CST Exam?</h2>
+          <p className="text-lg text-gray-600 mb-10">Free to start. No account required. 200 questions across every exam domain.</p>
+          <ExamLandingCTA dashboardHref="/cst/dashboard" />
         </div>
       </div>
     </div>

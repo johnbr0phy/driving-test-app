@@ -3,6 +3,8 @@ import Image from "next/image";
 import { getTigerAsset } from "@/lib/tigerAssets";
 import { Smartphone, Monitor } from "lucide-react";
 import { ExamLandingHero, ExamLandingCTA } from "@/components/exam/ExamLandingHero";
+import { ExamLandingBreadcrumbs } from "@/components/exam/ExamLandingBreadcrumbs";
+import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
@@ -22,11 +24,13 @@ export const metadata: Metadata = {
     title,
     description,
     url: `${siteUrl}/comptia-a-plus-practice-test`,
+    images: [{ url: "/og/aplus", width: 1200, height: 630, alt: "TigerTest free CompTIA A+ practice test" }],
     siteName: "TigerTest",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
+    images: ["/og/aplus"],
     title,
     description,
   },
@@ -124,6 +128,7 @@ export default function AplusLandingPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      <ExamLandingBreadcrumbs examId="aplus" />
 
       {/* Hero */}
       <div className="relative overflow-hidden">
@@ -296,6 +301,8 @@ export default function AplusLandingPage() {
           </div>
         </div>
       </div>
+
+      <ExamRelatedTests examId="aplus" />
 
       {/* Final CTA */}
       <div className="relative overflow-hidden">

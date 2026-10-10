@@ -8,6 +8,7 @@ const BUILD_LAST_MODIFIED = new Date().toUTCString();
 const nextConfig: NextConfig = {
   outputFileTracingIncludes: {
     "/api/og/score-card": ["./public/tiger_face_*.png", "./public/tigers/**/*.png"],
+    "/og/[examId]": ["./public/tigers/**/*.png", "./public/tiger.png"],
   },
   images: {
     formats: ["image/avif", "image/webp"],
@@ -53,14 +54,24 @@ const nextConfig: NextConfig = {
         destination: "/stats",
         permanent: true,
       },
+      // Certification landings moved to keyword URLs; the app keeps the short base.
+      { source: "/htl", destination: "/htl-practice-test", permanent: true },
+      { source: "/cst", destination: "/cst-practice-test", permanent: true },
+      { source: "/crcst", destination: "/crcst-practice-test", permanent: true },
     ];
   },
   async headers() {
     const seoPaths = [
       "/",
       "/practice-tests-by-state",
-      "/cdl-practice-test",
+      "/tests",
+      "/citizenship-test",
+      "/:exam(.+-practice-test)",
       "/es/examenes-practica-por-estado",
+      "/vi/thi-thu-dmv-theo-tieu-bang",
+      "/ko/juibyeol-dmv-pilgi-siheom",
+      "/vi/:state(.+-thi-thu-dmv)",
+      "/ko/:state(.+-dmv-pilgi-siheom)",
       "/:state(.+-dmv-practice-test)",
       "/es/:state(.+-examen-practica-dmv)",
     ];

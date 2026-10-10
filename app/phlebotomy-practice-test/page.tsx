@@ -3,6 +3,8 @@ import Image from "next/image";
 import { getTigerAsset } from "@/lib/tigerAssets";
 import { Smartphone, Monitor } from "lucide-react";
 import { ExamLandingHero, ExamLandingCTA } from "@/components/exam/ExamLandingHero";
+import { ExamLandingBreadcrumbs } from "@/components/exam/ExamLandingBreadcrumbs";
+import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
@@ -22,11 +24,13 @@ export const metadata: Metadata = {
     title,
     description,
     url: `${siteUrl}/phlebotomy-practice-test`,
+    images: [{ url: "/og/phleb", width: 1200, height: 630, alt: "TigerTest free Phlebotomy practice test" }],
     siteName: "TigerTest",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
+    images: ["/og/phleb"],
     title,
     description,
   },
@@ -112,6 +116,7 @@ export default function PhlebotomyLandingPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      <ExamLandingBreadcrumbs examId="phleb" />
 
       {/* Hero */}
       <div className="relative overflow-hidden">
@@ -298,6 +303,8 @@ export default function PhlebotomyLandingPage() {
           </div>
         </div>
       </div>
+
+      <ExamRelatedTests examId="phleb" />
 
       {/* Final CTA */}
       <div className="relative overflow-hidden">

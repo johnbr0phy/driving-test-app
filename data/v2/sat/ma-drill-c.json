@@ -1,0 +1,671 @@
+[
+  {
+    "id": "SAT-MA-071",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "dataAnalysis",
+    "skill": "Ratios, rates and proportions: unit conversion",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A garden hose fills a $60$-gallon tub in $8$ minutes at a constant rate. At this rate, how many gallons does the hose deliver per hour?",
+    "options": [
+      "$7.5$",
+      "$450$",
+      "$480$",
+      "$750$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "First find the rate per minute: $\\frac{60}{8} = 7.5$ gallons per minute. An hour has $60$ minutes, so multiply: $7.5 \\times 60 = 450$ gallons per hour. The choice $7.5$ is the rate per minute, left unconverted. The choice $480$ multiplies $60 \\times 8$ instead of dividing, and $750$ uses $100$ minutes in an hour."
+  },
+  {
+    "id": "SAT-MA-072",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "geometryTrig",
+    "skill": "Lines, angles and triangles: isosceles triangles",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "In triangle $ABC$, $AB = AC$ and the measure of angle $A$ is $44^\\circ$. What is the measure of angle $B$?",
+    "options": [
+      "$44^\\circ$",
+      "$68^\\circ$",
+      "$92^\\circ$",
+      "$136^\\circ$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "Because $AB = AC$, the angles opposite those sides, angles $C$ and $B$, are equal. The three angles sum to $180^\\circ$, so $2B + 44 = 180$, $2B = 136$ and $B = 68^\\circ$. The choice $136^\\circ$ stops before dividing by $2$; it is the sum of angles $B$ and $C$. The choice $44^\\circ$ assumes the base angles equal angle $A$, and $92^\\circ$ comes from $180 - 2(44)$, which treats angle $A$ as one of the two equal angles."
+  },
+  {
+    "id": "SAT-MA-073",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "dataAnalysis",
+    "skill": "Ratios, rates and proportions: part-to-part ratios",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "In a parking garage, the ratio of electric cars to gasoline cars is $2:7$. If the garage holds $126$ cars, all of them electric or gasoline, how many of the cars are electric?",
+    "options": [
+      "$18$",
+      "$28$",
+      "$36$",
+      "$98$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "The ratio $2:7$ splits the cars into $2 + 7 = 9$ equal parts. Each part is $\\frac{126}{9} = 14$ cars, so there are $2(14) = 28$ electric cars and $7(14) = 98$ gasoline cars. The choice $36$ comes from $\\frac{126}{7} \\times 2$, which divides by $7$ instead of by the $9$ total parts, as if the ratio were electric cars to all cars. The choice $98$ is the number of gasoline cars."
+  },
+  {
+    "id": "SAT-MA-074",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "geometryTrig",
+    "skill": "Lines, angles and triangles: parallel lines and a transversal",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "In the figure, line $\\ell$ is parallel to line $m$, and both lines are cut by line $t$. What is the value of $x$?",
+    "options": [
+      "$28$",
+      "$62$",
+      "$118$",
+      "$242$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "figure": {
+      "src": "/figures/sat/sat-ma-074.svg",
+      "alt": "Two horizontal parallel lines, line l on top and line m below, are crossed by line t, which slants from upper left to lower right. At the intersection of t and l, the angle above l and to the right of t is labeled 118 degrees. At the intersection of t and m, the angle below m and to the right of t is labeled x degrees."
+    },
+    "calculator": true,
+    "explanation": "The $118^\\circ$ angle at line $\\ell$ and the angle above line $m$ to the right of $t$ are corresponding angles, so that angle also measures $118^\\circ$. The angle $x^\\circ$ forms a straight line with it along $m$, so $x = 180 - 118 = 62$. The choice $118$ assumes every angle at the parallel lines is equal; only corresponding, alternate interior and alternate exterior angles are equal, while angles that form a straight line are supplementary."
+  },
+  {
+    "id": "SAT-MA-075",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "dataAnalysis",
+    "skill": "Percentages: percent decrease",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A hiking club had $250$ members last year and has $215$ members this year. By what percent did the club's membership decrease? (Enter your answer without the percent sign. For example, enter $25\\%$ as $25$.)",
+    "numeric": {
+      "answers": [
+        "14"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Percent change compares the change with the original amount. Membership fell by $250 - 215 = 35$, and $\\frac{35}{250} = 0.14$, which is a $14\\%$ decrease. The common error is to divide by the new amount, $\\frac{35}{215} \\approx 0.163$, which gives about $16.3\\%$; always divide by the starting value."
+  },
+  {
+    "id": "SAT-MA-076",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "geometryTrig",
+    "skill": "Lines, angles and triangles: exterior angles",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "In triangle $ABC$, side $\\overline{BC}$ is extended past $C$ to point $D$. The measure of angle $A$ is $52^\\circ$, and the measure of exterior angle $ACD$ is $131^\\circ$. What is the measure, in degrees, of angle $B$?",
+    "numeric": {
+      "answers": [
+        "79"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "An exterior angle of a triangle equals the sum of the two interior angles that are not next to it, so $131 = 52 + B$ and $B = 79$. Check with the angle sum: interior angle $C$ is $180 - 131 = 49^\\circ$, and $52 + 79 + 49 = 180$. A common error is to subtract both given angles from $180$, which gives $180 - 52 - 131 = -3$; a negative result signals that $131^\\circ$ is not an interior angle."
+  },
+  {
+    "id": "SAT-MA-077",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "dataAnalysis",
+    "skill": "Probability: two-way tables",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The table summarizes the $160$ visitors to a science museum on one day by ticket type and by whether they joined a guided tour.\n\n| Ticket type | Guided tour | No tour | Total |\n|---|---|---|---|\n| Member | $28$ | $52$ | $80$ |\n| Nonmember | $20$ | $60$ | $80$ |\n| Total | $48$ | $112$ | $160$ |\n\nIf one of these visitors is selected at random, what is the probability that the visitor joined a guided tour?",
+    "options": [
+      "$\\frac{7}{40}$",
+      "$\\frac{3}{10}$",
+      "$\\frac{7}{12}$",
+      "$\\frac{3}{7}$"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "A probability is the number of favorable outcomes over the total number of outcomes: $48$ of the $160$ visitors joined a tour, and $\\frac{48}{160} = \\frac{3}{10}$. The choice $\\frac{3}{7}$ divides by the $112$ visitors who did not join a tour instead of by all $160$, which compares the two groups rather than giving a probability. The choice $\\frac{7}{40} = \\frac{28}{160}$ counts only members who joined a tour, and $\\frac{7}{12} = \\frac{28}{48}$ is the fraction of tour takers who were members."
+  },
+  {
+    "id": "SAT-MA-078",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "geometryTrig",
+    "skill": "Right triangles: Pythagorean theorem",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A rectangular field is $210$ feet long and $200$ feet wide. A straight path runs diagonally from one corner of the field to the opposite corner. What is the length of the path, in feet?",
+    "numeric": {
+      "answers": [
+        "290"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The path is the hypotenuse of a right triangle whose legs are the sides of the field: $d^2 = 210^2 + 200^2 = 44{,}100 + 40{,}000 = 84{,}100$, so $d = 290$. Spotting the triple saves time: $20$, $21$, $29$ is a Pythagorean triple ($400 + 441 = 841$), and the field's triangle is that triangle scaled by $10$. A common error is to add the sides, $210 + 200 = 410$, which is the walk along two edges, not the diagonal."
+  },
+  {
+    "id": "SAT-MA-079",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "dataAnalysis",
+    "skill": "Two-variable data: interpreting a linear model",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The equation $W = 1.8t + 3.2$ models the weight $W$, in kilograms, of a puppy $t$ weeks after it was adopted, for $0 \\le t \\le 12$. What is the best interpretation of $1.8$ in this context?",
+    "options": [
+      "The puppy's weight, in kilograms, when it was adopted",
+      "The puppy's estimated weight gain, in kilograms, each week",
+      "The puppy's estimated weight, in kilograms, after $1$ week",
+      "The number of weeks it takes the puppy to gain $1$ kilogram"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "In a linear model $W = mt + b$, the slope $m$ is the change in $W$ for each increase of $1$ in $t$. Here each additional week adds $1.8$ kilograms, so $1.8$ is the estimated weekly weight gain. The weight at adoption is the value when $t = 0$, which is the intercept, $3.2$. The weight after $1$ week is $1.8(1) + 3.2 = 5$ kilograms, not $1.8$."
+  },
+  {
+    "id": "SAT-MA-080",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "geometryTrig",
+    "skill": "Circles: sector area",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A circle has a radius of $6$ centimeters. What is the area, in square centimeters, of a sector of the circle with a central angle of $120^\\circ$?",
+    "options": [
+      "$4\\pi$",
+      "$12\\pi$",
+      "$24\\pi$",
+      "$36\\pi$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "A sector's area is the fraction of the circle set by its central angle times the circle's area. The circle's area is $\\pi(6)^2 = 36\\pi$, and $\\frac{120}{360} = \\frac{1}{3}$, so the sector's area is $\\frac{1}{3}(36\\pi) = 12\\pi$. The choice $4\\pi$ is the arc length, $\\frac{1}{3}(2\\pi \\cdot 6)$, which uses the circumference instead of the area. The choice $36\\pi$ is the whole circle."
+  },
+  {
+    "id": "SAT-MA-081",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "dataAnalysis",
+    "skill": "Percentages: percent of a percent",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "At a high school with $1{,}200$ students, $35\\%$ of the students take a world language course. Of the students who take a world language course, $40\\%$ take Spanish. How many students at the school take Spanish?",
+    "options": [
+      "$60$",
+      "$168$",
+      "$420$",
+      "$480$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "Apply the percents in order. First, $35\\%$ of $1{,}200$ is $0.35 \\times 1{,}200 = 420$ students in a world language course. Then $40\\%$ of those $420$ is $0.40 \\times 420 = 168$. Equivalently, $0.35 \\times 0.40 = 0.14$, so $14\\%$ of all students take Spanish. The choice $480$ takes $40\\%$ of the whole school, but the $40\\%$ applies only to language students; $420$ stops after the first step, and $60$ subtracts the percents ($5\\%$ of $1{,}200$)."
+  },
+  {
+    "id": "SAT-MA-082",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "geometryTrig",
+    "skill": "Right triangles: special right triangles",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In right triangle $PQR$, angle $Q$ is the right angle, the measure of angle $P$ is $60^\\circ$, and $PQ = 4\\sqrt{3}$. What is the length of $\\overline{QR}$?",
+    "options": [
+      "$4$",
+      "$6$",
+      "$12$",
+      "$8\\sqrt{3}$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "Angle $R$ measures $180 - 90 - 60 = 30^\\circ$, so this is a $30^\\circ$-$60^\\circ$-$90^\\circ$ triangle with sides in the ratio $1 : \\sqrt{3} : 2$. The shorter leg is opposite the $30^\\circ$ angle at $R$, so it is $PQ = 4\\sqrt{3}$. The longer leg, opposite the $60^\\circ$ angle at $P$, is $QR = \\sqrt{3} \\cdot 4\\sqrt{3} = 12$, and the hypotenuse is $PR = 2(4\\sqrt{3}) = 8\\sqrt{3}$. The choice $4$ divides by $\\sqrt{3}$, which treats $PQ$ as the longer leg; always match each side to the angle it is opposite. The choice $8\\sqrt{3}$ is the hypotenuse."
+  },
+  {
+    "id": "SAT-MA-083",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "dataAnalysis",
+    "skill": "One-variable data: median from a frequency table",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "The frequency table shows the number of hours each of $30$ volunteers worked at a food bank last month.\n\n| Hours worked | Number of volunteers |\n|---|---|\n| $5$ | $2$ |\n| $6$ | $5$ |\n| $7$ | $8$ |\n| $8$ | $10$ |\n| $9$ | $5$ |\n\nWhat is the median number of hours worked by these $30$ volunteers?",
+    "numeric": {
+      "answers": [
+        "7.5",
+        "15/2"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "With $30$ values in order, the median is the mean of the $15$th and $16$th values. Count up the frequencies: values $1$ and $2$ are $5$ hours, values $3$ to $7$ are $6$ hours, values $8$ to $15$ are $7$ hours, and values $16$ to $25$ are $8$ hours. So the $15$th value is $7$, the $16$th is $8$, and the median is $\\frac{7 + 8}{2} = 7.5$. A common error is to answer $7$, the middle entry of the hours column, which ignores how many volunteers had each value; another is to answer $8$, the most common value (the mode)."
+  },
+  {
+    "id": "SAT-MA-084",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "geometryTrig",
+    "skill": "Right triangles and trigonometry: sine and cosine of complementary angles",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In right triangle $JKL$, angle $K$ is the right angle and $\\sin J = \\frac{9}{41}$. Which of the following is also equal to $\\frac{9}{41}$?",
+    "options": [
+      "$\\cos J$",
+      "$\\sin L$",
+      "$\\cos L$",
+      "$\\tan L$"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "Angles $J$ and $L$ are the two acute angles of a right triangle, so they are complementary, and the sine of an angle equals the cosine of its complement: $\\sin J = \\cos L$. In side terms, the side opposite $J$ is $\\overline{KL}$, which is also the side adjacent to $L$, so $\\sin J = \\frac{KL}{JL} = \\cos L = \\frac{9}{41}$. The choice $\\sin L$ is the strongest trap: it equals $\\cos J = \\frac{40}{41}$ (because $9^2 + 40^2 = 41^2$), not $\\frac{9}{41}$. Also, $\\tan L = \\frac{40}{9}$."
+  },
+  {
+    "id": "SAT-MA-085",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "dataAnalysis",
+    "skill": "One-variable data: effect of an outlier",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The commute times, in minutes, of $7$ employees at an office are $12$, $15$, $18$, $20$, $22$, $25$ and $28$. A new employee whose commute time is $95$ minutes joins the office. When the new time is included, how do the mean and the median of the commute times change?",
+    "options": [
+      "The mean increases by more than the median increases.",
+      "The median increases by more than the mean increases.",
+      "The mean and the median increase by the same amount.",
+      "The mean increases, and the median does not change."
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Before: the sum is $140$, so the mean is $\\frac{140}{7} = 20$, and the median is the $4$th value, $20$. After: the sum is $235$, so the mean is $\\frac{235}{8} = 29.375$, an increase of about $9.4$; the median of $8$ values is the mean of the $4$th and $5$th values, $\\frac{20 + 22}{2} = 21$, an increase of $1$. An outlier pulls the mean strongly because its full value enters the sum, but it shifts the median by only one position. The choice saying the median does not change misses that adding a value moves the middle of the list."
+  },
+  {
+    "id": "SAT-MA-086",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "geometryTrig",
+    "skill": "Circles: arc length and radians",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "An arc of a circle with a radius of $6$ inches has a length of $15$ inches. What is the measure, in radians, of the central angle that intercepts the arc?",
+    "numeric": {
+      "answers": [
+        "2.5",
+        "5/2"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "In radians, arc length is $s = r\\theta$. Substituting, $15 = 6\\theta$, so $\\theta = \\frac{15}{6} = 2.5$ radians. A common error is to use the degree formula $s = \\frac{\\theta}{360}(2\\pi r)$, which gives about $143.2$, a measure in degrees, not radians; another is to divide the wrong way, $\\frac{6}{15} = 0.4$."
+  },
+  {
+    "id": "SAT-MA-087",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "dataAnalysis",
+    "skill": "One-variable data: comparing standard deviations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The dot plots show the number of deliveries made on each of $10$ days by two drivers, Driver X and Driver Y. Each dot represents one day. Which of the following correctly compares the standard deviations of the two data sets?",
+    "options": [
+      "The standard deviation for Driver X is smaller.",
+      "The standard deviation for Driver Y is smaller.",
+      "The standard deviations are equal because the data sets have the same range.",
+      "The standard deviations are equal because the data sets have the same mean."
+    ],
+    "correct": [
+      0
+    ],
+    "figure": {
+      "src": "/figures/sat/sat-ma-087.svg",
+      "alt": "Two dot plots on number lines labeled 2 through 8. Driver X: 1 dot at 3, 8 dots at 5 and 1 dot at 7. Driver Y: 3 dots at 3, 1 dot at 4, 2 dots at 5, 1 dot at 6 and 3 dots at 7."
+    },
+    "calculator": true,
+    "explanation": "Standard deviation measures how far the values typically are from the mean. Both data sets have mean $5$ and range $7 - 3 = 4$, but $8$ of Driver X's $10$ values sit exactly at the mean, while $6$ of Driver Y's values sit $2$ away from it, at $3$ or $7$. Data clustered near the mean has the smaller standard deviation, so Driver X's is smaller. Equal ranges do not imply equal standard deviations, because the range uses only the two extreme values."
+  },
+  {
+    "id": "SAT-MA-088",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "geometryTrig",
+    "skill": "Circles: inscribed angles",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Points $A$, $B$ and $C$ lie on a circle with center $O$, and point $C$ is not on minor arc $AB$. The measure of central angle $AOB$ is $112^\\circ$. What is the measure of inscribed angle $ACB$?",
+    "options": [
+      "$56^\\circ$",
+      "$68^\\circ$",
+      "$112^\\circ$",
+      "$124^\\circ$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "An inscribed angle measures half of its intercepted arc. Angle $ACB$ intercepts minor arc $AB$, whose measure equals the central angle, $112^\\circ$, so angle $ACB$ measures $\\frac{112}{2} = 56^\\circ$. The choice $112^\\circ$ treats the inscribed angle as equal to the central angle; only an angle with its vertex at the center has the same measure as its arc. The choice $124^\\circ$ is the inscribed angle from a point on the minor arc, half of the $248^\\circ$ major arc, and $68^\\circ$ is $180 - 112$."
+  },
+  {
+    "id": "SAT-MA-089",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "dataAnalysis",
+    "skill": "Two-variable data: line of best fit predictions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The scatterplot shows the number of hours of direct sunlight and the energy produced, in kilowatt-hours (kWh), by a home's solar panels on each of $10$ days. A line of best fit is also shown. Based on the line of best fit, what is the predicted energy produced on a day with $8$ hours of direct sunlight?",
+    "options": [
+      "$24$",
+      "$29$",
+      "$32$",
+      "$35$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "figure": {
+      "src": "/figures/sat/sat-ma-089.svg",
+      "alt": "Scatterplot with Sunlight (hours) on the horizontal axis from 0 to 10 and Energy (kWh) on the vertical axis from 0 to 40, with gridlines every 1 hour and every 5 kWh. The 10 points are (1, 9), (2, 10), (3, 15), (4, 16), (5, 21), (6, 22), (7, 27), (8, 32), (9, 30) and (10, 34). The line of best fit passes through (0, 5) and (10, 35)."
+    },
+    "calculator": true,
+    "explanation": "Find the line's equation from two points it passes through, $(0, 5)$ and $(10, 35)$: the slope is $\\frac{35 - 5}{10 - 0} = 3$ and the $y$-intercept is $5$, so $y = 3x + 5$. For $x = 8$, the prediction is $3(8) + 5 = 29$ kWh. The choice $32$ is the actual data point at $8$ hours; a prediction comes from the line, not from one observation. The choice $24$ leaves out the intercept, and $35$ is the line's value at $10$ hours."
+  },
+  {
+    "id": "SAT-MA-090",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "geometryTrig",
+    "skill": "Area and volume: surface area of a cylinder",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A closed cylindrical can has a radius of $4$ centimeters and a height of $9$ centimeters. What is the total surface area of the can, in square centimeters?",
+    "options": [
+      "$72\\pi$",
+      "$88\\pi$",
+      "$104\\pi$",
+      "$144\\pi$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "A closed cylinder has two circular bases and a curved side. Each base has area $\\pi(4)^2 = 16\\pi$, and the curved side unrolls into a rectangle whose width is the circumference, $2\\pi(4) = 8\\pi$, and whose height is $9$, giving $72\\pi$. The total is $2(16\\pi) + 72\\pi = 104\\pi$. The choice $72\\pi$ is the curved side alone, $88\\pi$ counts only one base, and $144\\pi$ is the volume, $\\pi(4)^2(9)$."
+  },
+  {
+    "id": "SAT-MA-091",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "dataAnalysis",
+    "skill": "Two-variable data: linear and exponential growth",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The table shows the number of members of two online groups, Group A and Group B, at the start of each of $4$ consecutive years.\n\n| Year | Group A | Group B |\n|---|---|---|\n| $1$ | $500$ | $500$ |\n| $2$ | $620$ | $600$ |\n| $3$ | $740$ | $720$ |\n| $4$ | $860$ | $864$ |\n\nWhich statement best describes how the number of members of each group changes?",
+    "options": [
+      "Group A grows linearly, and Group B grows exponentially.",
+      "Group A grows exponentially, and Group B grows linearly.",
+      "Both groups grow linearly.",
+      "Both groups grow exponentially."
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Check the differences and the ratios between consecutive years. Group A increases by the same amount each year ($620 - 500 = 740 - 620 = 860 - 740 = 120$), which is linear growth. Group B's increases are $100$, $120$ and $144$, which are not constant, but each value is $1.2$ times the one before ($\\frac{600}{500} = \\frac{720}{600} = \\frac{864}{720} = 1.2$), which is exponential growth. The choice with both groups linear assumes any steady-looking growth is linear; exponential growth adds a larger amount each year because the percent increase stays the same."
+  },
+  {
+    "id": "SAT-MA-092",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "geometryTrig",
+    "skill": "Area and volume: composite figures",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The figure shows the shape of a patio: a rectangle $16$ feet long and $10$ feet wide, with a semicircle attached along one of the $10$-foot sides. What is the area of the patio, in square feet?",
+    "options": [
+      "$160 + 5\\pi$",
+      "$160 + 12.5\\pi$",
+      "$160 + 25\\pi$",
+      "$160 + 50\\pi$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "figure": {
+      "src": "/figures/sat/sat-ma-092.svg",
+      "alt": "A rectangle 16 feet long and 10 feet wide with a semicircle attached to its right 10-foot side. The semicircle's diameter is that 10-foot side, shown as a dashed line."
+    },
+    "calculator": true,
+    "explanation": "Split the figure into parts you know. The rectangle has area $16 \\times 10 = 160$. The semicircle's diameter is the $10$-foot side, so its radius is $5$ and its area is $\\frac{1}{2}\\pi(5)^2 = 12.5\\pi$. The total is $160 + 12.5\\pi$ square feet. The choice $160 + 50\\pi$ uses the diameter, $10$, as the radius, and $160 + 25\\pi$ forgets to halve the circle's area; $160 + 5\\pi$ adds half the circumference, which is a length rather than an area."
+  },
+  {
+    "id": "SAT-MA-093",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "dataAnalysis",
+    "skill": "Margin of error and sample size",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two researchers each estimate the mean number of hours per week that students at a large university spend at part-time jobs. Researcher 1 uses a random sample of $150$ students, and Researcher 2 uses a random sample of $600$ students from the same university. Which of the following is most likely true?",
+    "options": [
+      "Researcher 2's estimate has a smaller margin of error than Researcher 1's.",
+      "Researcher 2's estimate has a larger margin of error than Researcher 1's.",
+      "The two estimates have the same margin of error because both samples are random.",
+      "Researcher 2's estimate must equal the true mean for all students at the university."
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "When samples are drawn at random from the same population, a larger sample tends to give an estimate closer to the population value, so its margin of error is smaller. Researcher 2's sample is $4$ times as large, so Researcher 2's margin of error is most likely smaller. The strongest trap says the margins are equal because both samples are random: random selection removes bias, but it does not make sample size irrelevant. No sample guarantees the estimate equals the true mean; a margin of error describes a range of plausible values."
+  },
+  {
+    "id": "SAT-MA-094",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "dataAnalysis",
+    "skill": "One-variable data: mean of a combined group",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "The mean age of the $15$ members of a choir is $34$ years. After $5$ new members join, the mean age of all $20$ members is $32$ years. What is the mean age, in years, of the $5$ new members?",
+    "numeric": {
+      "answers": [
+        "26"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Work with totals, because the means of groups of different sizes cannot simply be averaged. The original total is $15 \\times 34 = 510$ years and the new total is $20 \\times 32 = 640$ years, so the $5$ new members' ages add to $640 - 510 = 130$, and their mean is $\\frac{130}{5} = 26$. The common error is to treat the two groups as equal in size: making $32$ halfway between $34$ and the new mean gives $30$, but the original group is $3$ times as large, so the new members' mean must lie farther from $32$."
+  },
+  {
+    "id": "SAT-MA-095",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "geometryTrig",
+    "skill": "Similar triangles: scale factor and area",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Triangle $ABC$ is similar to triangle $DEF$, where $A$, $B$ and $C$ correspond to $D$, $E$ and $F$, respectively. If $AB = 9$, $DE = 15$, and the area of triangle $ABC$ is $54$ square units, what is the area, in square units, of triangle $DEF$?",
+    "options": [
+      "$19.44$",
+      "$90$",
+      "$150$",
+      "$250$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "The scale factor from $ABC$ to $DEF$ is $\\frac{DE}{AB} = \\frac{15}{9} = \\frac{5}{3}$. Lengths scale by the factor $k$, but areas scale by $k^2$, because area multiplies two lengths: $54 \\times \\left(\\frac{5}{3}\\right)^2 = 54 \\times \\frac{25}{9} = 150$. The choice $90$ multiplies by $\\frac{5}{3}$ only once, scaling the area like a length. The choice $250$ cubes the factor, which is how volumes scale, and $19.44$ squares the factor upside down, $\\left(\\frac{3}{5}\\right)^2$."
+  },
+  {
+    "id": "SAT-MA-096",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "dataAnalysis",
+    "skill": "Probability: conditional probability",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A farmers market surveyed $240$ shoppers. Of these, $150$ paid by card and the rest paid with cash. Of the shoppers who paid by card, $90$ bought produce, and of the shoppers who paid with cash, $54$ bought produce. If one of the shoppers who bought produce is selected at random, what is the probability that the shopper paid with cash?",
+    "numeric": {
+      "answers": [
+        "3/8",
+        ".375",
+        "0.375"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The condition, bought produce, limits the outcomes to the $90 + 54 = 144$ shoppers who bought produce. Of those, $54$ paid with cash, so the probability is $\\frac{54}{144} = \\frac{3}{8} = 0.375$. The common error is to divide by the $240 - 150 = 90$ cash payers, giving $\\frac{54}{90} = 0.6$, which is the probability that a cash payer bought produce; it conditions on the wrong group. Always divide by the size of the group the question restricts you to."
+  },
+  {
+    "id": "SAT-MA-097",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "geometryTrig",
+    "skill": "Circles: completing the square",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "In the $xy$-plane, the graph of $2x^2 + 2y^2 + 12x - 8y - 46 = 0$ is a circle. What are the center and the radius of the circle?",
+    "options": [
+      "Center $(-3, 2)$, radius $6$",
+      "Center $(3, -2)$, radius $6$",
+      "Center $(-6, 4)$, radius $7\\sqrt{2}$",
+      "Center $(-3, 2)$, radius $\\sqrt{23}$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Divide every term by $2$ so the squared terms have coefficient $1$: $x^2 + y^2 + 6x - 4y = 23$. Complete each square by adding $\\left(\\frac{6}{2}\\right)^2 = 9$ and $\\left(\\frac{-4}{2}\\right)^2 = 4$ to both sides: $(x + 3)^2 + (y - 2)^2 = 36$. The center is $(-3, 2)$ and the radius is $\\sqrt{36} = 6$. The choice with center $(-6, 4)$ completes the square without first dividing by $2$; the choice with radius $\\sqrt{23}$ forgets to add $9$ and $4$ to the right side; and $(3, -2)$ flips the signs of the center."
+  },
+  {
+    "id": "SAT-MA-098",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "dataAnalysis",
+    "skill": "Observational studies and experiments",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Researchers selected $500$ adults at random from a large city and recorded whether each adult regularly drinks green tea and each adult's resting heart rate. The adults who regularly drink green tea had a lower mean resting heart rate than those who do not. Which conclusion is best supported by the study?",
+    "options": [
+      "Regularly drinking green tea causes a lower resting heart rate among adults in the city.",
+      "Regularly drinking green tea is associated with a lower resting heart rate among adults in the city, but the study does not show that it causes one.",
+      "Regularly drinking green tea is associated with a lower resting heart rate among all adults in the country.",
+      "No conclusion can be drawn about adults in the city because the study was not an experiment."
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "Two questions decide the conclusion. Was the sample random? Yes, from the city, so the results generalize to adults in that city but not beyond it. Were the treatments randomly assigned? No, the researchers only observed who already drinks green tea, so this is an observational study, which supports an association but not cause and effect; tea drinkers may differ in exercise or diet, for example. The choice claiming that tea causes a lower heart rate would need an experiment with random assignment, and the choice about all adults in the country extends beyond the population sampled."
+  },
+  {
+    "id": "SAT-MA-099",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "geometryTrig",
+    "skill": "Area and volume: cones and spheres",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A solid sphere and a solid right circular cone each have a radius of $3$ inches, and the two solids have equal volumes. What is the height, in inches, of the cone?",
+    "options": [
+      "$3$",
+      "$4$",
+      "$12$",
+      "$36$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "Set the volume formulas equal. The sphere's volume is $\\frac{4}{3}\\pi(3)^3 = 36\\pi$, and the cone's volume is $\\frac{1}{3}\\pi(3)^2h = 3\\pi h$. Solving $3\\pi h = 36\\pi$ gives $h = 12$. The choice $4$ leaves out the $\\frac{1}{3}$ in the cone formula ($9\\pi h = 36\\pi$), and $36$ uses $r$ instead of $r^2$ ($\\pi h = 36\\pi$). The choice $3$ assumes the height equals the radius."
+  },
+  {
+    "id": "SAT-MA-100",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "geometryTrig",
+    "skill": "Circles: midpoint and center",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "In the $xy$-plane, the points $(-2, 1)$ and $(6, 7)$ are the endpoints of a diameter of a circle. The circle intersects the $x$-axis at two points. What is the distance between these two points?",
+    "numeric": {
+      "answers": [
+        "6"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The center is the midpoint of the diameter: $\\left(\\frac{-2 + 6}{2}, \\frac{1 + 7}{2}\\right) = (2, 4)$. The radius is the distance from the center to an endpoint: $\\sqrt{(6 - 2)^2 + (7 - 4)^2} = \\sqrt{16 + 9} = 5$, so the circle is $(x - 2)^2 + (y - 4)^2 = 25$. On the $x$-axis $y = 0$, so $(x - 2)^2 + 16 = 25$, $(x - 2)^2 = 9$, and $x = 5$ or $x = -1$; the distance between them is $5 - (-1) = 6$. A common error is to stop at $x = 5$, which is one intersection point, not the distance between the two; another is to take $(6, 7)$ or $(-2, 1)$ as the center instead of the midpoint."
+  }
+]

@@ -3,6 +3,7 @@
 import { useParams } from "next/navigation";
 import { ResultsV2 } from "@/components/v2/ResultsV2";
 import { getExamV2 } from "@/lib/v2/registry";
+import "@/lib/v2/banks/accuplacer";
 
 export default function ResultsPage() {
   const params = useParams();

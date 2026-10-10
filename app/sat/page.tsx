@@ -2,6 +2,7 @@
 
 import { DashboardV2 } from "@/components/v2/DashboardV2";
 import { getExamV2 } from "@/lib/v2/registry";
+import "@/lib/v2/banks/sat";
 
 export default function SatDashboardPage() {
   return <DashboardV2 exam={getExamV2("sat")} />;

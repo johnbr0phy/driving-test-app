@@ -1,6 +1,6 @@
 import { EXAMS, ExamConfig, examLandingPath } from "./exams";
 import { EXAMS_V2 } from "./v2/registry";
-import { getBank } from "./v2/bank";
+import { BANK_SIZES } from "./v2/bankSizes";
 import type { ExamV2Config } from "./v2/types";
 
 // Every practice test on the site, for the /tests hub, the header test
@@ -112,7 +112,7 @@ const v2Entry = (exam: ExamV2Config): TestCatalogEntry => ({
   blurb: EXAM_BLURBS[exam.id] ?? exam.tagline,
   href: exam.landingPath,
   dashboardHref: exam.slug,
-  questions: getBank(exam.id).questions.length,
+  questions: BANK_SIZES[exam.id] ?? 0,
   icon: exam.icon as TestCatalogEntry["icon"],
   theme: exam.id,
 });

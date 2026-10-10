@@ -46,5 +46,12 @@ for test, sections in plan.items():
             got = sum(1 for q in questions if q["test"] == int(test) and q["section"] == section and q["module"] == int(module) and (q.get("variant") or "") == variant)
             if got != want: errors.append(f"test {test} {section} module {key}: {got} items, want {want}")
 print(f"{exam}: {len(questions)} questions, {len(stimuli)} stimuli, {len(errors)} problems")
+# keep the catalog's question count in step with the bank
+sizes_path = "lib/v2/bankSizes.ts"
+src = open(sizes_path).read()
+line = re.compile(rf"^  {re.escape(exam)}: \d+,$", re.M)
+entry = f"  {exam}: {len(questions)},"
+src = line.sub(entry, src) if line.search(src) else src.replace("};", entry + "\n};")
+open(sizes_path, "w").write(src)
 for e in errors: print("  -", e)
 sys.exit(1 if errors else 0)

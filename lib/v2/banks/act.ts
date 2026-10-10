@@ -1,0 +1,24 @@
+import { registerBank, withStimuli } from "../bank";
+import actEnglishA from "@/data/v2/act/english-a.json";
+import actEnglishB from "@/data/v2/act/english-b.json";
+import actMathA from "@/data/v2/act/math-a.json";
+import actMathB from "@/data/v2/act/math-b.json";
+import actReadingA from "@/data/v2/act/reading-a.json";
+import actReadingB from "@/data/v2/act/reading-b.json";
+import actScienceA from "@/data/v2/act/science-a.json";
+import actScienceB from "@/data/v2/act/science-b.json";
+import actEnglishT2A from "@/data/v2/act/english-t2a.json";
+import actEnglishT2B from "@/data/v2/act/english-t2b.json";
+import actMathT2A from "@/data/v2/act/math-t2a.json";
+import actMathT2B from "@/data/v2/act/math-t2b.json";
+import actReadingT2A from "@/data/v2/act/reading-t2a.json";
+import actReadingT2B from "@/data/v2/act/reading-t2b.json";
+import actScienceT2A from "@/data/v2/act/science-t2a.json";
+import actScienceT2B from "@/data/v2/act/science-t2b.json";
+import actDrillEnglish from "@/data/v2/act/drill-english.json";
+import actDrillMathA from "@/data/v2/act/drill-math-a.json";
+import actDrillMathB from "@/data/v2/act/drill-math-b.json";
+import actDrillReading from "@/data/v2/act/drill-reading.json";
+import actDrillScience from "@/data/v2/act/drill-science.json";
+
+registerBank("act", withStimuli([actEnglishA, actEnglishB, actMathA, actMathB, actReadingA, actReadingB, actScienceA, actScienceB, actEnglishT2A, actEnglishT2B, actMathT2A, actMathT2B, actReadingT2A, actReadingT2B, actScienceT2A, actScienceT2B, actDrillEnglish, actDrillMathA, actDrillMathB, actDrillReading, actDrillScience] as Parameters<typeof withStimuli>[0]));

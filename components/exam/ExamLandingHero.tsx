@@ -18,7 +18,7 @@ function useStartCta() {
   const { user, loading } = useAuth();
   const isGuest = useStore((state) => state.isGuest);
   const startGuestSession = useStore((state) => state.startGuestSession);
-  const hasSession = !loading && (user || isGuest);
+  const hasSession = !!user || isGuest;
   const onStart = () => {
     if (!loading && !user && !isGuest) startGuestSession();
   };

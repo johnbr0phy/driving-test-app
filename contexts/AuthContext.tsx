@@ -119,53 +119,58 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, async (user) => {
       setUser(user);
-      if (user) {
-        // firestoreLoaded is persisted to localStorage, so on a fresh
-        // sign-in for a different uid than what's cached (or the very
-        // first sign-in on this browser) it's stale — left over from
-        // a previous user or a previous cleared-out session. Gated UI
-        // (login/onboarding redirects) trusts firestoreLoaded to mean
-        // "loaded for the CURRENT user," so reset it before the fetch
-        // below, or that UI reads the outgoing user's stale data before
-        // this one's has arrived. Skip the reset when uid already
-        // matches — that's just a normal session restore with correct
-        // cached data, and resetting would cause a needless reload flicker.
-        if (useStore.getState().userId !== user.uid) {
-          useStore.setState({ firestoreLoaded: false });
-        }
-
-        // Check if this was a guest session being converted
-        const wasGuest = useStore.getState().isGuest;
-
-        if (wasGuest) {
-          // Check if this account already has saved data
-          const hasExistingData = await checkUserHasData(user.uid);
-
-          if (hasExistingData) {
-            // Show conflict dialog - don't proceed until user chooses
-            setAccountConflict({ user, wasGuest });
-            return; // Don't set loading to false yet
+      try {
+        if (user) {
+          // firestoreLoaded is persisted to localStorage, so on a fresh
+          // sign-in for a different uid than what's cached (or the very
+          // first sign-in on this browser) it's stale — left over from
+          // a previous user or a previous cleared-out session. Gated UI
+          // (login/onboarding redirects) trusts firestoreLoaded to mean
+          // "loaded for the CURRENT user," so reset it before the fetch
+          // below, or that UI reads the outgoing user's stale data before
+          // this one's has arrived. Skip the reset when uid already
+          // matches — that's just a normal session restore with correct
+          // cached data, and resetting would cause a needless reload flicker.
+          if (useStore.getState().userId !== user.uid) {
+            useStore.setState({ firestoreLoaded: false });
           }
 
-          // No existing data - safe to convert guest to user
-          await convertGuestToUser(user.uid);
+          // Check if this was a guest session being converted
+          const wasGuest = useStore.getState().isGuest;
 
-          // If user has a Google photo and no custom photo is set, use Google photo
-          if (user.photoURL && !photoURL) {
-            setPhotoURL(user.photoURL);
+          if (wasGuest) {
+            // Check if this account already has saved data
+            const hasExistingData = await checkUserHasData(user.uid);
+
+            if (hasExistingData) {
+              // Show conflict dialog - don't proceed until user chooses
+              setAccountConflict({ user, wasGuest });
+              return; // Don't set loading to false yet
+            }
+
+            // No existing data - safe to convert guest to user
+            await convertGuestToUser(user.uid);
+
+            // If user has a Google photo and no custom photo is set, use Google photo
+            if (user.photoURL && !photoURL) {
+              setPhotoURL(user.photoURL);
+            }
+          } else {
+            // Load user data from Firestore (normal login)
+            await loadUserData(user.uid);
+
+            // If user has a Google photo and no custom photo is set, use Google photo
+            if (user.photoURL && !photoURL) {
+              setPhotoURL(user.photoURL);
+            }
           }
         } else {
-          // Load user data from Firestore (normal login)
-          await loadUserData(user.uid);
-
-          // If user has a Google photo and no custom photo is set, use Google photo
-          if (user.photoURL && !photoURL) {
-            setPhotoURL(user.photoURL);
-          }
+          // Clear user data when logged out
+          setUserId(null);
         }
-      } else {
-        // Clear user data when logged out
-        setUserId(null);
+      } catch (err) {
+        // A failed Firestore load must not leave loading stuck on true.
+        console.error("Failed to load user data:", err);
       }
       setLoading(false);
     });

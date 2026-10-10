@@ -57,6 +57,14 @@ interface Metrics {
   // Optional: older cached payloads predate the per-exam split.
   questionsByExam?: { id: string; label: string; total: number; last7d: number; prev7d: number; today: number }[];
   launchTest?: { id: string; name: string; subject: string; sent: number; clicked: number; bought: number }[];
+  studyTimes?: {
+    grid: Record<string, number[]>;
+    answers: number;
+    users: number;
+    sampledUsers: number;
+    days: number;
+    updatedAt: string;
+  } | null;
   testRequests?: {
     total: number;
     byPick: { id: string; label: string; clicks: number; withDetails: number }[];
@@ -529,6 +537,101 @@ function LaunchTest({ rows }: { rows: NonNullable<Metrics["launchTest"]> }) {
   );
 }
 
+const DAY_NAMES = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+const DAY_ORDER = [1, 2, 3, 4, 5, 6, 0]; // Monday first
+const hourLabel = (h: number) => `${h % 12 === 0 ? 12 : h % 12}${h < 12 ? "am" : "pm"}`;
+
+/** Answers by Eastern weekday x hour: one hue, light to dark, hover for counts. */
+function StudyTimes({ data }: { data: NonNullable<Metrics["studyTimes"]> }) {
+  const rows = DAY_ORDER.map((d) => ({ day: d, cells: data.grid[String(d)] ?? new Array(24).fill(0) }));
+  const max = Math.max(1, ...rows.flatMap((r) => r.cells));
+  const total = Math.max(1, data.answers);
+  const byHour = Array.from({ length: 24 }, (_, h) => rows.reduce((n, r) => n + r.cells[h], 0));
+  const byDay = rows.map((r) => ({ day: r.day, n: r.cells.reduce((a, b) => a + b, 0) }));
+  const top = rows
+    .flatMap((r) => r.cells.map((n, h) => ({ day: r.day, hour: h, n })))
+    .sort((a, b) => b.n - a.n)
+    .slice(0, 5);
+  const peakHour = byHour.indexOf(Math.max(...byHour));
+  const peakDay = [...byDay].sort((a, b) => b.n - a.n)[0];
+  const pct = (n: number) => `${((n / total) * 100).toFixed(1)}%`;
+  // Sequential: one hue, light to dark, on the white card.
+  const fill = (n: number) => (n === 0 ? "#f6f5f2" : `color-mix(in srgb, ${COLORS.engagement} ${Math.round(12 + (n / max) * 88)}%, #ffffff)`);
+
+  return (
+    <div className="bg-white rounded-xl border border-gray-200/80 shadow-sm p-5">
+      <div className="mb-4 flex items-baseline justify-between gap-2">
+        <h2 className="text-sm font-semibold text-gray-900">When people study</h2>
+        <p className="text-xs text-gray-400">
+          {fmtInt(data.answers)} answers · last {data.days} days · Eastern time
+        </p>
+      </div>
+      {data.answers === 0 ? (
+        <p className="text-sm text-gray-400">No timestamped answers yet.</p>
+      ) : (
+        <>
+          <div className="overflow-x-auto">
+            <table className="border-separate" style={{ borderSpacing: 2 }}>
+              <thead>
+                <tr>
+                  <th />
+                  {byHour.map((_, h) => (
+                    <th key={h} className="text-[10px] font-normal text-gray-400 text-left w-5 min-w-[18px]">
+                      {h % 3 === 0 ? hourLabel(h) : ""}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {rows.map((r) => (
+                  <tr key={r.day}>
+                    <td className="pr-2 text-[11px] text-gray-500">{DAY_NAMES[r.day]}</td>
+                    {r.cells.map((n, h) => (
+                      <td
+                        key={h}
+                        title={`${DAY_NAMES[r.day]} ${hourLabel(h)} ET: ${fmtInt(n)} answers (${pct(n)})`}
+                        className="h-5 w-5 min-w-[18px] rounded-[3px]"
+                        style={{ background: fill(n) }}
+                      />
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <div className="mt-2 flex items-center gap-2 text-[10px] text-gray-400">
+            <span>Fewer</span>
+            <span
+              className="h-2 w-24 rounded"
+              style={{ background: `linear-gradient(90deg, color-mix(in srgb, ${COLORS.engagement} 12%, #fff), ${COLORS.engagement})` }}
+            />
+            <span>More</span>
+          </div>
+          <div className="mt-4 grid gap-4 sm:grid-cols-3 text-sm">
+            <div>
+              <p className="text-[11px] uppercase tracking-wide text-gray-400">Busiest hour</p>
+              <p className="font-medium text-gray-900">{hourLabel(peakHour)} ET · {pct(byHour[peakHour])}</p>
+            </div>
+            <div>
+              <p className="text-[11px] uppercase tracking-wide text-gray-400">Busiest day</p>
+              <p className="font-medium text-gray-900">{DAY_NAMES[peakDay.day]} · {pct(peakDay.n)}</p>
+            </div>
+            <div>
+              <p className="text-[11px] uppercase tracking-wide text-gray-400">Top slots</p>
+              <p className="text-gray-700">{top.map((t) => `${DAY_NAMES[t.day]} ${hourLabel(t.hour)}`).join(", ")}</p>
+            </div>
+          </div>
+        </>
+      )}
+      <p className="mt-4 text-[11px] text-gray-400">
+        Every timestamped training and practice-test answer from the last {data.days} days, by the hour it was
+        answered in Eastern time (Pacific is 3 hours earlier). Covers {fmtInt(data.users)} people from a sample
+        of {fmtInt(data.sampledUsers)} accounts. Rebuilt nightly at 03:00 UTC; updated {data.updatedAt.slice(0, 10)}.
+      </p>
+    </div>
+  );
+}
+
 // ─── Page ───────────────────────────────────────────────────────────────────
 export default function AdminV2Page() {
   const { user, loading: authLoading } = useAuth();
@@ -921,6 +1024,16 @@ export default function AdminV2Page() {
 
         {/* Launch email split test */}
         {metrics.launchTest && <LaunchTest rows={metrics.launchTest} />}
+
+        {/* When people study */}
+        {metrics.studyTimes ? (
+          <StudyTimes data={metrics.studyTimes} />
+        ) : (
+          <div className="bg-white rounded-xl border border-gray-200/80 shadow-sm p-5 text-sm text-gray-400">
+            When people study: no data yet. It is built by the nightly stats job (03:00 UTC), or run
+            aggregate-stats from Vercel → Settings → Cron Jobs.
+          </div>
+        )}
 
         {/* Test requests */}
         {metrics.testRequests && <TestRequests data={metrics.testRequests} />}

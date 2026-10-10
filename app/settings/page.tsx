@@ -14,17 +14,12 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import Link from "next/link";
-import { Loader2, User, AlertTriangle, MapPin, LayoutGrid, ChevronRight, LogOut } from "lucide-react";
+import { Loader2, User, AlertTriangle, MapPin, LogOut } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { useStore } from "@/store/useStore";
 import { useHydration } from "@/hooks/useHydration";
 import { states } from "@/data/states";
-import { TEST_CATALOG } from "@/lib/testCatalog";
-import { useV2Store } from "@/store/useV2Store";
-import { getExamById, examSetId } from "@/lib/exams";
-import { TestIcon } from "@/components/TestIcon";
-import { hasTigerSet } from "@/lib/tigerAssets";
 
 export default function SettingsPage() {
   const router = useRouter();
@@ -36,9 +31,6 @@ export default function SettingsPage() {
   const resetAllData = useStore((state) => state.resetAllData);
   const selectedState = useStore((state) => state.selectedState);
   const setSelectedState = useStore((state) => state.setSelectedState);
-  const completedTests = useStore((state) => state.completedTests);
-  const currentTests = useStore((state) => state.currentTests);
-  const trainingSets = useStore((state) => state.trainingSets);
 
   const [loadingGooglePhoto, setLoadingGooglePhoto] = useState(false);
   const [stateChangeDialog, setStateChangeDialog] = useState(false);
@@ -94,32 +86,6 @@ export default function SettingsPage() {
     router.push(selectedState ? "/dashboard" : "/tests");
   };
 
-  // Which tests this account has touched. Each test keeps its own ID range
-  // and pseudo state code in the store (see CLAUDE.md, Additional Exams).
-  const idsInRange = (lo: number, hi: number) =>
-    [...Object.keys(trainingSets), ...Object.keys(currentTests)].some((k) => {
-      const n = Number(k);
-      return n >= lo && n <= hi;
-    });
-  // v2 exams (SAT) keep their progress in their own store.
-  const v2 = useV2Store();
-  const v2Started = (examId: string) =>
-    v2.results.some((r) => r.examId === examId) ||
-    Object.values(v2.sessions).some((s) => s.examId === examId) ||
-    Object.entries(v2.drills).some(([k, d]) => k.startsWith(`${examId}:`) && d.seen > 0);
-
-  const hasStarted = (testId: string): boolean => {
-    if (testId === "dmv") return !!selectedState;
-    if (v2Started(testId)) return true;
-    const exam = getExamById(testId);
-    if (!exam) return false;
-    return (
-      completedTests.some((t) => t.state === exam.stateCode) ||
-      idsInRange(exam.idBase + 1, exam.idBase + exam.testCount) ||
-      idsInRange(examSetId(exam, 1), examSetId(exam, exam.trainingSets.length))
-    );
-  };
-
   const handleStateChange = (newStateCode: string) => {
     if (newStateCode === selectedState) return;
     setPendingStateCode(newStateCode);
@@ -146,44 +112,6 @@ export default function SettingsPage() {
       <div className="relative">
         <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-light to-white pointer-events-none" />
         <div className="relative container mx-auto px-4 py-8 max-w-6xl">
-        {/* Every practice test on the site, with the ones this account has started */}
-        <Card className="bg-gray-50 mb-6">
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2">
-              <LayoutGrid className="h-5 w-5" />
-              {t("settings.yourTests")}
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <ul className="divide-y divide-gray-200 rounded-lg border border-gray-200 bg-white">
-              {TEST_CATALOG.map((test) => {
-                const started = hasStarted(test.id);
-                const href = test.id === "dmv" && !selectedState ? "/onboarding/select-state" : test.dashboardHref;
-                const status =
-                  test.id === "dmv" && selectedState
-                    ? currentStateName
-                    : started
-                      ? t("settings.inProgress")
-                      : t("settings.notStarted");
-                return (
-                  <li key={test.id} data-theme={test.theme}>
-                    <Link href={href} className="flex items-center gap-3 px-4 py-3 hover:bg-gray-50 transition-colors">
-                      <span className={`flex h-9 w-9 items-center justify-center rounded-lg flex-shrink-0 ${hasTigerSet(test.id) ? "" : "bg-brand text-white"}`}>
-                        <TestIcon examId={test.id} icon={test.icon} className={hasTigerSet(test.id) ? "h-9 w-9" : "h-5 w-5"} />
-                      </span>
-                      <span className="flex-1 min-w-0">
-                        <span className="block font-medium text-gray-900">{test.name}</span>
-                        <span className={`block text-sm ${started ? "text-brand font-medium" : "text-gray-500"}`}>{status}</span>
-                      </span>
-                      <ChevronRight className="h-5 w-5 text-gray-400 flex-shrink-0" />
-                    </Link>
-                  </li>
-                );
-              })}
-            </ul>
-          </CardContent>
-        </Card>
-
         {/* State Selection and Profile Photo Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
           {/* State Selection Card */}

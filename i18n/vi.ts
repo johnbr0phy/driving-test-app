@@ -758,9 +758,6 @@ export const vi: TranslationKeys = {
   // Settings page
   settings: {
     settings: "Cài đặt",
-    yourTests: "Bài thi thử của bạn",
-    inProgress: "Đang thực hiện",
-    notStarted: "Chưa bắt đầu",
     noStateSelected: "Bạn chưa chọn tiểu bang DMV. Hãy chọn một tiểu bang để bắt đầu thi thử.",
     chooseState: "Chọn tiểu bang",
     stateSelection: "Chọn tiểu bang",

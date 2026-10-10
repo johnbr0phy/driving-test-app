@@ -760,9 +760,6 @@ export const ko: TranslationKeys = {
   // Settings page
   settings: {
     settings: "설정",
-    yourTests: "내 연습 시험",
-    inProgress: "진행 중",
-    notStarted: "시작 전",
     noStateSelected: "아직 DMV 주를 선택하지 않았습니다. 주를 선택하면 DMV 필기 시험을 시작할 수 있습니다.",
     chooseState: "주 선택하기",
     stateSelection: "주 선택",

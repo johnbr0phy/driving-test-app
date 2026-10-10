@@ -758,9 +758,6 @@ export const en = {
   // Settings page
   settings: {
     settings: "Settings",
-    yourTests: "Your practice tests",
-    inProgress: "In progress",
-    notStarted: "Not started",
     noStateSelected: "No DMV state selected yet. Pick one to start the DMV permit test.",
     chooseState: "Choose your state",
     stateSelection: "State Selection",

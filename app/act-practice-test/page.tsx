@@ -10,7 +10,7 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
 const title = "Free ACT Practice Test 2026 - Full-Length, Timed, Enhanced Format";
 const description =
-  "Free full-length ACT practice test in the enhanced 2025 format: English, Math, Reading and Science with real passages and section timing, four answer choices, and a 1 to 36 score estimate with a composite. Four skill drills sized for your phone bring every miss back until you master it.";
+  "Two free full-length ACT practice tests in the enhanced 2025 format: English, Math, Reading and Science with real passages and section timing, four answer choices, and a 1 to 36 score estimate with a composite. Four section drills with more than 300 questions, sized for your phone, bring every miss back until you master it.";
 
 export const metadata: Metadata = {
   title,
@@ -54,12 +54,16 @@ const faqs = [
     a: "The national average composite is around 20. A 24 is above average and opens most state universities, a 28 is roughly the top 10 percent, and a 30 or higher is competitive for the most selective schools and many scholarships. Set the score your target colleges expect as your goal on the dashboard.",
   },
   {
+    q: "Why are there two practice tests?",
+    a: "Take Practice Test 1 cold for a baseline, drill for a week or two, then take Practice Test 2. Test 2 is held out of the drills, so none of its passages or questions appear anywhere else on TigerTest. That makes it a clean measure of what you have learned, not of what you remember.",
+  },
+  {
     q: "Is this an official ACT practice test?",
     a: "No. Every passage and question is original, written to the published enhanced ACT specifications for content, question types, timing and difficulty. TigerTest is not affiliated with or endorsed by ACT, Inc. Use it alongside the free official practice test from ACT.",
   },
   {
     q: "Is the TigerTest ACT practice test free?",
-    a: "Yes. The full-length test and all four section drills are free with no account required. Create a free account to keep your progress in step between your phone and your computer.",
+    a: "Yes. Both full-length tests and all four section drills are free with no account required. Create a free account to keep your progress in step between your phone and your computer.",
   },
 ];
 
@@ -75,11 +79,12 @@ const jsonLd = {
       operatingSystem: "Any",
       offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
       featureList: [
-        "Full-length ACT practice test in the enhanced 2025 format, 171 questions",
+        "Two full-length ACT practice tests in the enhanced 2025 format, 171 questions each",
         "Real section timing with a break after Math",
         "Passages beside the question for English, Reading and Science",
         "Estimated section scores on the 1 to 36 scale and a composite",
-        "Four mastery drills, one per section",
+        "Four mastery drills, one per section, with more than 300 questions",
+        "Practice Test 2 held out of the drills for a clean score",
         "Explanations for every question",
       ],
     },
@@ -123,7 +128,7 @@ export default function ActLandingPage() {
           <ExamLandingHero
             dashboardHref="/act"
             shortName="ACT"
-            subtitle="A full-length enhanced ACT with real passages, section timing and a 1 to 36 score estimate, plus four section drills built for your phone. No account needed."
+            subtitle="Two full-length enhanced ACTs with real passages, section timing and a 1 to 36 score estimate, plus four section drills built for your phone. No account needed."
             shots={{ mobile: "/landing/act-mobile.png", desktop: "/landing/act-desktop.png" }}
           />
         </div>
@@ -140,7 +145,7 @@ export default function ActLandingPage() {
             <div className="bg-gray-50 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">Section Drills on Your Phone</h3>
               <p className="text-gray-600">
-                Four drills, one per section. The passage sits above the question, one tap checks each answer, the explanation appears right away, and every miss comes back until you have mastered it.
+                Four drills, one per section, with more than 300 questions. The passage sits above the question, one tap checks each answer, the explanation appears right away, and every miss comes back until you have mastered it.
               </p>
             </div>
           </div>
@@ -149,9 +154,9 @@ export default function ActLandingPage() {
               <Monitor className="w-7 h-7 text-gray-500" />
             </div>
             <div className="bg-gray-50 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Full Test on a Computer</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Full Tests on a Computer</h3>
               <p className="text-gray-600">
-                English, Math, Reading and Science in order with the real clocks, a calculator on Math, a break after it, flag for review and an answer eliminator. Finish with section scores, a composite, and a plan for what to drill next.
+                Two full-length tests: English, Math, Reading and Science in order with the real clocks, a calculator on Math, a break after it, flag for review and an answer eliminator. Finish with section scores, a composite, and a plan for what to drill next. Test 2 never appears in the drills, so it stays a clean measure.
               </p>
             </div>
           </div>
@@ -191,7 +196,7 @@ export default function ActLandingPage() {
         <div className="bg-brand-light border border-brand-border-light rounded-2xl p-8 md:p-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">We Just Launched!</h2>
           <p className="text-lg text-gray-600 mb-6 max-w-xl mx-auto">
-            The ACT practice test is brand new, with more full-length tests on the way. If a question looks wrong or your score estimate feels off, tell us.
+            The ACT practice tests are brand new, with more on the way. If a question looks wrong or your score estimate feels off, tell us.
           </p>
           <a
             href="https://johnbrophy.net/#contact"
@@ -257,7 +262,7 @@ export default function ActLandingPage() {
         <div className="absolute inset-0 bg-gradient-to-t from-brand-light to-white pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Ready to Hit Your ACT Goal?</h2>
-          <p className="text-lg text-gray-600 mb-10">Free to start. No account required. A full-length test and four section drills.</p>
+          <p className="text-lg text-gray-600 mb-10">Free to start. No account required. Two full-length tests and four section drills.</p>
           <ExamLandingCTA dashboardHref="/act" />
         </div>
       </div>

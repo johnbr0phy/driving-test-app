@@ -5,7 +5,8 @@ import { curve } from "../scales";
 // 36 / 40, Science 40 / 40 (optional on the real test, included here). Four
 // answer choices everywhere. Each section is scaled 1 to 36; the composite
 // is the average of English, Math and Reading, and Science reports on its
-// own. Every section uses passages shared by several questions.
+// own. Every section uses passages shared by several questions. Test 2 is
+// held out of the drills so it measures readiness rather than memory.
 const minutes = (n: number) => n * 60;
 const act = (n: number) => curve(n, [[0, 1], [Math.round(n * 0.2), 12], [Math.round(n * 0.45), 19], [Math.round(n * 0.7), 25], [Math.round(n * 0.9), 32], [n, 36]], 1, 1);
 
@@ -60,7 +61,10 @@ export const ACT: ExamV2Config = {
       domains: ["interpretation", "investigation", "evaluation"],
     },
   ],
-  tests: [{ number: 1, name: "Full-length ACT" }],
+  tests: [
+    { number: 1, name: "Practice Test 1" },
+    { number: 2, name: "Practice Test 2", heldOut: true },
+  ],
   domainLabels: {
     conventions: "Conventions of Standard English",
     production: "Production of Writing",
@@ -103,10 +107,10 @@ export const ACT: ExamV2Config = {
   testLength: "2 hr 45 min",
   copy: {
     heroSubs: [
-      "Four section drills on your phone, then one full timed ACT on a desktop.",
+      "Four section drills on your phone, then two full timed ACTs on a desktop. Test 2 stays unseen until you sit it.",
       "Mastery first. English and Reading are passage work; practice the pace.",
       "Halfway through the sections. The full test will show your composite.",
-      "Hit your composite goal on the full test to finish the plan.",
+      "Hit your composite goal on a full test to finish the plan.",
       "Goal hit. Go register for your ACT.",
     ],
     sourceLine: "Original passages and questions written to the enhanced ACT format (2025): four choices, 50/45/36/40 questions, Science optional. Not affiliated with ACT, Inc. Score estimates are unofficial.",

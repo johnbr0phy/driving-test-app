@@ -56,7 +56,7 @@ export const SAT: ExamV2Config = {
   ],
   tests: [
     { number: 1, name: "Practice Test 1" },
-    { number: 2, name: "Practice Test 2" },
+    { number: 2, name: "Practice Test 2", heldOut: true },
   ],
   domainLabels: {
     craftStructure: "Craft and Structure",
@@ -92,7 +92,7 @@ export const SAT: ExamV2Config = {
   testLength: "2 hr 14 min",
   copy: {
     heroSubs: [
-      "Eight skill drills on your phone, then two full timed tests on a desktop.",
+      "Eight skill drills on your phone, then two full timed tests on a desktop. Test 2 stays unseen until you sit it.",
       "Mastery first. Each drill is one skill area the SAT scores you on.",
       "Halfway through the skills. The full test will show where you stand.",
       "Hit your goal on the full test to finish the plan.",

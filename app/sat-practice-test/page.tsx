@@ -10,7 +10,7 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
 const title = "Free SAT Practice Test 2026 - Full-Length, Timed, Adaptive";
 const description =
-  "Free full-length digital SAT practice test: Reading and Writing plus Math in four timed, adaptive modules, a built-in calculator and reference sheet, and a 400 to 1600 score estimate. Eight skill drills sized for your phone bring every miss back until you master it.";
+  "Two free full-length digital SAT practice tests: Reading and Writing plus Math in four timed, adaptive modules, a built-in calculator and reference sheet, and a 400 to 1600 score estimate. Eight skill drills with nearly 300 questions, sized for your phone, bring every miss back until you master it.";
 
 export const metadata: Metadata = {
   title,
@@ -54,12 +54,16 @@ const faqs = [
     a: "The national average total is usually a little above 1000. Around 1200 puts you in the top quarter of test takers, 1400 in roughly the top 5 percent. The score that matters is the one your target colleges expect, so check their middle 50 percent range and set that as your goal on the dashboard.",
   },
   {
+    q: "Why are there two practice tests?",
+    a: "Take Practice Test 1 cold for a baseline, drill for a week or two, then take Practice Test 2. Test 2 is held out of the drills, so none of its questions appear anywhere else on TigerTest. Both tests are adaptive: a strong first module sends you to the harder second module, as in Bluebook.",
+  },
+  {
     q: "Is this an official SAT practice test?",
     a: "No. Every question is original, written to the published digital SAT specifications for content, question types and difficulty. TigerTest is not affiliated with or endorsed by College Board. Use it alongside the official practice tests in Bluebook.",
   },
   {
     q: "Is the TigerTest SAT practice test free?",
-    a: "Yes. The full-length test and all eight skill drills are free with no account required. Create a free account to keep your progress in step between your phone and your computer.",
+    a: "Yes. Both full-length tests and all eight skill drills are free with no account required. Create a free account to keep your progress in step between your phone and your computer.",
   },
 ];
 
@@ -75,11 +79,12 @@ const jsonLd = {
       operatingSystem: "Any",
       offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
       featureList: [
-        "Full-length digital SAT practice test, 98 questions",
+        "Two full-length adaptive digital SAT practice tests, 98 questions each",
         "Four timed modules with adaptive second modules",
         "Built-in calculator and math reference sheet",
         "Estimated section scores and a 400 to 1600 total",
-        "Eight mastery drills, one per SAT skill area",
+        "Eight mastery drills, one per SAT skill area, with nearly 300 questions",
+        "Practice Test 2 held out of the drills for a clean score",
         "Explanations for every question",
       ],
     },
@@ -127,7 +132,7 @@ export default function SatLandingPage() {
           <ExamLandingHero
             dashboardHref="/sat"
             shortName="SAT"
-            subtitle="A full-length digital SAT with timed, adaptive modules and a score estimate, plus eight skill drills built for your phone. No account needed."
+            subtitle="Two full-length digital SATs with timed, adaptive modules and a score estimate, plus eight skill drills built for your phone. No account needed."
             shots={{ mobile: "/landing/sat-mobile.png", desktop: "/landing/sat-desktop.png" }}
           />
         </div>
@@ -195,7 +200,7 @@ export default function SatLandingPage() {
         <div className="bg-brand-light border border-brand-border-light rounded-2xl p-8 md:p-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">We Just Launched!</h2>
           <p className="text-lg text-gray-600 mb-6 max-w-xl mx-auto">
-            The SAT practice test is brand new, with more full-length tests on the way. If a question looks wrong or your score estimate feels off, tell us.
+            The SAT practice tests are new, with more on the way. If a question looks wrong or your score estimate feels off, tell us.
           </p>
           <a
             href="https://johnbrophy.net/#contact"
@@ -261,7 +266,7 @@ export default function SatLandingPage() {
         <div className="absolute inset-0 bg-gradient-to-t from-brand-light to-white pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Ready to Hit Your SAT Goal?</h2>
-          <p className="text-lg text-gray-600 mb-10">Free to start. No account required. A full-length test and eight skill drills.</p>
+          <p className="text-lg text-gray-600 mb-10">Free to start. No account required. Two full-length tests and eight skill drills.</p>
           <ExamLandingCTA dashboardHref="/sat" />
         </div>
       </div>

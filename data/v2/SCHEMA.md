@@ -11,7 +11,7 @@ delimiter.
 {
   "id": "SAT-RW-101",          // unique, prefix-section-number
   "section": "rw",             // key from the exam config's sections
-  "test": 1,                   // practice test number
+  "test": 1,                   // practice test number; 0 = drill only, never in a test
   "module": 1,                 // module within the section (1 or 2)
   "variant": "upper",          // optional; adaptive module 2 variants ("lower" | "upper")
   "domain": "craftStructure",  // key from the exam config's domains
@@ -30,6 +30,10 @@ delimiter.
   "explanation": "..."
 }
 ```
+
+Drills draw every item in their domains except those from a test the exam
+config marks `heldOut`, so a held-out test stays unseen until it is taken.
+Items tagged `test: 0` exist only for the drills.
 
 Rules: original items only (never reproduce College Board, ACT or other
 publishers' questions), plain apostrophes, every option plausible, one

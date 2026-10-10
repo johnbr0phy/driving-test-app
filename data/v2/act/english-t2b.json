@@ -1,0 +1,476 @@
+{
+  "stimuli": [
+    {
+      "id": "ACT-EN-P9",
+      "title": "Passage IV",
+      "text": "On the roof of a six-story office building in downtown Hadley, four wooden hives sit between an air-conditioning unit and a water tank. __Each of the hives house__ [1] roughly 50,000 bees at the height of summer, and on a warm afternoon the air above the roof hums. The building's manager keeps the bees not for their honey, which they produce in __skimpy__ [2] amounts, but for what they can tell her about the city below.\n\nHoneybees forage within about three miles of their __hive, they visit__ [3] whatever is blooming inside that circle. Pollen from those flights collects in the comb, and researchers can identify the plants it came from by examining the grains under a microscope. __Honeybees have been kept by humans for at least nine thousand years.__ [4] The result is a map of a neighborhood's greenery drawn by the bees themselves. One survey of rooftop hives in Hadley found linden trees, clover from vacant lots, and the ornamental cherries that line the __courthouses__ [5] front walk.\n\n__For example,__ [6] the honey records what the bees did not find. A hive whose honey comes almost entirely from one or two species is sitting in a food desert for pollinators, while a hive whose honey shifts from spring to summer to fall is sitting in a neighborhood where something is always in bloom. City planners have begun to consult these records when deciding where to plant street trees and __which lots they should convert__ [7] into pocket parks.\n\nBees can also show where a city's air and soil are __contaminated and polluted.__ [8] Because bees collect water from puddles and gutters along with nectar, trace metals from vehicle exhaust end up in the hive. A study in one industrial district found lead levels in the honey that rose and fell with the traffic volume of the nearest highway. Hives in a quiet residential area a few miles away showed almost __none, the difference__ [9] was clear enough that the researchers proposed using the bees as monitoring stations.\n\n__Rooftop hives will never replace laboratory instruments.__ [10] But each one is a cheap, tireless sampler that works every day the sun shines, and it reports on the city the way residents experience it: block by block, one flower at a time."
+    },
+    {
+      "id": "ACT-EN-P10",
+      "title": "Passage V",
+      "text": "The summer I turned seventeen, I took a job at the Starlite Drive-In, one of the last drive-in theaters still operating in our part of the state. My title was \"lot attendant,\" which meant that I __have directed__ [1] cars into their rows with a flashlight, picked up trash after the second feature, and __attended to the resolution of__ [2] whatever else the owner, Mr. Okafor, needed done. He had run the Starlite for thirty-one years, and he liked to say that he had never once shown a movie to an empty field.\n\n__Arriving at dusk, the lot was already half full of cars.__ [3] Families came early to claim the spots nearest the playground under the screen, and teenagers came late and parked in the back row. The concession __stand, a cinder-block building painted the color of butter, sold__ [4] popcorn in paper bags, hot dogs that turned on steel rollers, and a frozen lemonade whose popularity nobody could explain. By nine o'clock the line stretched past the restrooms.\n\n__The Starlite's screen was ninety feet wide.__ [5] A radio transmitter sent the soundtrack to car stereos on a low FM frequency, but a few of the oldest customers still asked for the metal speakers that had once hung from every post. Mr. Okafor kept a box of them in the projection booth for __whomever__ [6] asked. He had switched to a digital projector years before, yet he had also kept the old carbon-arc machine, and on slow Tuesdays he would show me how it __worked:__ [7] a rod of carbon burning in an electric arc bright enough to throw light across three hundred feet of darkness.\n\nWhat I remember most is the hour after the last car left. Mr. Okafor and I would walk the rows together, __collecting bottles, folding abandoned lawn chairs, and we checked__ [8] the speaker posts for damage. The screen, blank now, caught the moon. He would talk about the years when there had been four thousand drive-ins in the country and about the ones that had closed one by one, sold for the land under them. He never sounded __bummed out.__ [9] He sounded like a man describing weather.\n\nThe Starlite is still open. I drive past it sometimes on summer nights, and the lot is still half full at dusk, which means that someone with a flashlight is out there walking the rows."
+    }
+  ],
+  "questions": [
+    {
+      "id": "ACT-EN-231",
+      "section": "english",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-EN-P9",
+      "domain": "conventions",
+      "skill": "Subject-verb agreement",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "[1] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "Each of the hives houses",
+        "Each of the hives, houses",
+        "Each of the hives are housing"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The subject of the sentence is the singular pronoun \"each,\" not the plural noun \"hives\" inside the prepositional phrase, so the verb must be singular: \"houses.\" The original and choice D use plural verbs. Choice C has the right verb but inserts a comma between the subject and its verb."
+    },
+    {
+      "id": "ACT-EN-232",
+      "section": "english",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-EN-P9",
+      "domain": "language",
+      "skill": "Word choice and tone",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "[2] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "modest",
+        "deficient",
+        "puny"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The essay has a measured, informational tone, and the point is simply that the bees make a small amount of honey. \"Modest\" states that neutrally. \"Skimpy\" and \"puny\" are casual and faintly mocking, and \"deficient\" implies the amount falls short of some requirement, which the essay never suggests."
+    },
+    {
+      "id": "ACT-EN-233",
+      "section": "english",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-EN-P9",
+      "domain": "conventions",
+      "skill": "Comma splices and run-ons",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "[3] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "hive, visiting",
+        "hive; visiting",
+        "hive, they visiting"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "As written, two independent clauses are joined by only a comma, which is a comma splice. Turning the second clause into the participial phrase \"visiting whatever is blooming inside that circle\" attaches it correctly to the main clause. Choice C puts a semicolon before a fragment, and choice D is not a grammatical clause at all."
+    },
+    {
+      "id": "ACT-EN-234",
+      "section": "english",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-EN-P9",
+      "domain": "production",
+      "skill": "Deleting sentences",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "[4] Should the writer delete the underlined sentence?",
+      "options": [
+        "Yes, because it interrupts the explanation of how pollen in the comb reveals which plants the bees visited.",
+        "Yes, because it contradicts the claim that honeybees forage within about three miles of their hive.",
+        "No, because it establishes the credibility of the researchers mentioned in the paragraph.",
+        "No, because it explains why pollen collects in the comb."
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The paragraph is explaining how pollen from foraging flights lets researchers map a neighborhood's plants, and the sentence after the underlined one (\"The result is a map ...\") continues that explanation. A fact about the history of beekeeping breaks that chain of reasoning, so the sentence should be deleted. It does not contradict the foraging range (choice B), and it says nothing about researchers or about why pollen collects (choices C and D)."
+    },
+    {
+      "id": "ACT-EN-235",
+      "section": "english",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-EN-P9",
+      "domain": "conventions",
+      "skill": "Possessive apostrophes",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "[5] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "courthouse's",
+        "courthouses'",
+        "courthouse's,"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The front walk belongs to one courthouse, so the singular possessive \"courthouse's\" is needed. The original has no apostrophe and reads as a plural noun, and choice C is the plural possessive, which would mean several courthouses. Choice D adds a comma that separates the possessive from the noun it modifies."
+    },
+    {
+      "id": "ACT-EN-236",
+      "section": "english",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-EN-P9",
+      "domain": "production",
+      "skill": "Transitions",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "[6] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "In other words,",
+        "Just as revealingly,",
+        "As a result,"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The previous paragraph explains what the honey shows the bees found, and this paragraph adds a second, equally telling kind of evidence: what they did not find. \"Just as revealingly\" signals that addition. The new paragraph is not an example of the survey results (choice A), a restatement of them (choice B), or a consequence of them (choice D)."
+    },
+    {
+      "id": "ACT-EN-237",
+      "section": "english",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-EN-P9",
+      "domain": "conventions",
+      "skill": "Parallel structure",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "[7] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "which lots to convert",
+        "converting which lots",
+        "the lots they convert"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The planners are deciding two things, and the first is phrased as \"where to plant street trees,\" so the second should match that question-word-plus-infinitive form: \"which lots to convert.\" The original switches to a full clause with its own subject and verb, breaking the parallel. Choices C and D are not parallel either and are awkward after \"deciding.\""
+    },
+    {
+      "id": "ACT-EN-238",
+      "section": "english",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-EN-P9",
+      "domain": "language",
+      "skill": "Concision and redundancy",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "[8] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "contaminated with pollution.",
+        "contaminated.",
+        "contaminated, polluted, and dirty."
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "\"Contaminated\" and \"polluted\" mean the same thing here, so the sentence should keep only one. Choice C is concise and leads directly into the explanation about trace metals. Choices B and D repeat the idea in different words."
+    },
+    {
+      "id": "ACT-EN-239",
+      "section": "english",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-EN-P9",
+      "domain": "conventions",
+      "skill": "Semicolons",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "[9] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "none; the difference",
+        "none the difference",
+        "none, and the difference,"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "\"Hives in a quiet residential area ... showed almost none\" and \"the difference was clear enough ...\" are both independent clauses, so a comma alone (the original) creates a comma splice. A semicolon joins them correctly. Choice C runs the clauses together with no punctuation, and choice D adds a stray comma between the subject \"difference\" and its verb."
+    },
+    {
+      "id": "ACT-EN-240",
+      "section": "english",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-EN-P9",
+      "domain": "production",
+      "skill": "Adding sentences",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "The writer is considering adding the following sentence immediately after the underlined sentence [10]:\n\n\"A laboratory can measure a pollutant to the part per billion; a bee cannot.\"\n\nShould the writer make this addition?",
+      "options": [
+        "Yes, because it supports the claim in the underlined sentence with a specific contrast.",
+        "Yes, because it introduces the paragraph's main idea that bees are cheap, tireless samplers.",
+        "No, because it undermines the essay's point that bees can track lead from traffic.",
+        "No, because the essay has not previously mentioned laboratories."
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The underlined sentence concedes that hives will never replace laboratory instruments, and the proposed sentence gives a concrete reason why: a laboratory measures far more precisely. The addition therefore supports the concession before the paragraph turns with \"But\" to what bees do offer. It does not state the paragraph's main idea (choice B), it does not undermine the lead study, which showed a trend rather than a precise measurement (choice C), and the underlined sentence itself mentions laboratories (choice D)."
+    },
+    {
+      "id": "ACT-EN-241",
+      "section": "english",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-EN-P10",
+      "domain": "conventions",
+      "skill": "Verb tense and parallel verbs",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "[1] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "directed",
+        "am directing",
+        "will direct"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The essay describes a past summer, and the other verbs in the series (\"picked up,\" \"needed\") are in the simple past, so \"directed\" is correct. The present perfect \"have directed\" and the present progressive \"am directing\" shift to the present, and \"will direct\" points to the future."
+    },
+    {
+      "id": "ACT-EN-242",
+      "section": "english",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-EN-P10",
+      "domain": "language",
+      "skill": "Style and register",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "[2] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "handled",
+        "was in charge of taking care of",
+        "got around to"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The essay has a plain, conversational voice, and the sentence is a quick list of duties, so the simple verb \"handled\" fits. \"Attended to the resolution of\" is stiff and wordy, choice C is also needlessly long, and \"got around to\" suggests the narrator put the tasks off, which is not the point."
+    },
+    {
+      "id": "ACT-EN-243",
+      "section": "english",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-EN-P10",
+      "domain": "conventions",
+      "skill": "Dangling modifiers",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "[3] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "Arriving at dusk, I found the lot already half full of cars.",
+        "Arriving at dusk, the cars had already half filled the lot.",
+        "The lot, arriving at dusk, was already half full of cars."
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The phrase \"arriving at dusk\" must describe the person who arrived, but in the original it is attached to \"the lot,\" which cannot arrive anywhere. Choice B places the narrator, \"I,\" right after the modifier. Choice C makes the cars the arrivers, which changes the meaning, and choice D still has the lot arriving."
+    },
+    {
+      "id": "ACT-EN-244",
+      "section": "english",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-EN-P10",
+      "domain": "conventions",
+      "skill": "Nonessential elements",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "[4] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "stand, a cinder-block building painted the color of butter sold",
+        "stand a cinder-block building painted the color of butter, sold",
+        "stand, a cinder-block building, painted the color of butter, sold"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "\"A cinder-block building painted the color of butter\" is an appositive that describes the stand, so it needs a comma before and after it, which only the original provides. Choices B and C each drop one of the pair, leaving the subject \"stand\" cut off from its verb \"sold.\" Choice D breaks the appositive in two with an extra comma after \"building.\""
+    },
+    {
+      "id": "ACT-EN-245",
+      "section": "english",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-EN-P10",
+      "domain": "production",
+      "skill": "Topic sentences",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "[5] Which choice most effectively introduces the paragraph?",
+      "options": [
+        "NO CHANGE",
+        "Mr. Okafor had bought the Starlite from its original owner.",
+        "Much of the Starlite's equipment was older than I was.",
+        "The Starlite showed two features every night of the week."
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The paragraph is about the theater's old equipment: the metal speakers that once hung from every post and the carbon-arc projector Mr. Okafor kept. Choice C introduces that focus. The screen's width (choice A), the theater's purchase history (choice B), and the nightly schedule (choice D) are not developed anywhere in the paragraph."
+    },
+    {
+      "id": "ACT-EN-246",
+      "section": "english",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-EN-P10",
+      "domain": "conventions",
+      "skill": "Pronoun case",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "[6] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "whoever",
+        "whom",
+        "who ever"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The pronoun is the subject of the verb \"asked\" in the clause \"whoever asked,\" so the subject form \"whoever\" is correct even though the whole clause follows the preposition \"for.\" \"Whomever\" and \"whom\" are object forms and cannot be the subject of \"asked.\" \"Who ever\" written as two words is not the pronoun needed here."
+    },
+    {
+      "id": "ACT-EN-247",
+      "section": "english",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-EN-P10",
+      "domain": "conventions",
+      "skill": "Colons",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "[7] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "worked;",
+        "worked, and",
+        "worked"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "\"He would show me how it worked\" is a complete statement, and the phrase that follows (\"a rod of carbon burning in an electric arc ...\") explains what \"how it worked\" means, so a colon is correct. A semicolon (choice B) must be followed by an independent clause, and the phrase has no main verb. Choices C and D run the explanatory phrase into the sentence so that it reads as a list or a fragment."
+    },
+    {
+      "id": "ACT-EN-248",
+      "section": "english",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-EN-P10",
+      "domain": "conventions",
+      "skill": "Parallel structure",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "[8] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "collecting bottles, folding abandoned lawn chairs, and checking",
+        "collecting bottles, folded abandoned lawn chairs, and checking",
+        "to collect bottles, folding abandoned lawn chairs, and checking"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The sentence lists three things the two did while walking the rows, and the first two are \"-ing\" phrases (\"collecting,\" \"folding\"), so the third must match: \"checking.\" The original shifts to a clause with its own subject, \"we checked.\" Choices C and D break the parallel in the first or second item instead."
+    },
+    {
+      "id": "ACT-EN-249",
+      "section": "english",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-EN-P10",
+      "domain": "language",
+      "skill": "Word choice and tone",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "[9] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "bitter.",
+        "mad as a hornet.",
+        "aggrieved to a significant degree."
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Mr. Okafor is describing the loss of thousands of drive-ins, and the next sentence says he sounded \"like a man describing weather,\" calm and matter-of-fact. \"Bitter\" is the precise word for the resentment he did not show. \"Bummed out\" and \"mad as a hornet\" are slang that clashes with the reflective tone, and \"aggrieved to a significant degree\" is stiff and wordy."
+    },
+    {
+      "id": "ACT-EN-250",
+      "section": "english",
+      "test": 2,
+      "module": 1,
+      "stimulusId": "ACT-EN-P10",
+      "domain": "production",
+      "skill": "Evaluating the whole essay",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Suppose the writer's goal had been to explain the technical history of drive-in movie projection. Would this essay accomplish that goal?",
+      "options": [
+        "Yes, because it describes both the carbon-arc projector and the digital projector that replaced it.",
+        "Yes, because it traces the decline of drive-in theaters from four thousand to a handful.",
+        "No, because the essay focuses on the writer's experience of a summer job rather than on projection technology.",
+        "No, because the essay never mentions the equipment used to show the films."
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The essay is a personal account of one summer at the Starlite: the writer's duties, the customers, the owner, and the quiet hour after closing. The carbon-arc projector appears in a single sentence as one detail among many, so the essay does not explain the history of projection (choice A), and the decline of drive-ins is mentioned only in passing (choice B). Choice D is wrong because the projector and the speakers are mentioned; they simply are not the essay's focus."
+    }
+  ]
+}

@@ -30,6 +30,7 @@ for q in questions:
     else:
         if not (2 <= len(q.get("options", [])) <= 5): errors.append(f"{q['id']}: {len(q.get('options', []))} options")
         if not q.get("correct") or any(c >= len(q["options"]) for c in q["correct"]): errors.append(f"{q['id']}: bad correct index")
+    if q["test"] == 0 and (q["module"] != 1 or q.get("variant")): errors.append(f"{q['id']}: drill-only item must be module 1 with no variant")
     if q.get("stimulusId") and q["stimulusId"] not in stimuli: errors.append(f"{q['id']}: unknown stimulus {q['stimulusId']}")
     if q.get("figure") and not os.path.exists("public" + q["figure"]["src"]): errors.append(f"{q['id']}: missing figure {q['figure']['src']}")
     texts = [q.get("passage", ""), q["stem"], q["explanation"], *q.get("options", [])]

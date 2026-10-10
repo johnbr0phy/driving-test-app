@@ -1,8 +1,5 @@
-"use client";
+import { permanentRedirect } from "next/navigation";
 
-import { ExamDashboard } from "@/components/exam/ExamDashboard";
-import { getExamById } from "@/lib/exams";
-
-export default function HesiDashboardPage() {
-  return <ExamDashboard exam={getExamById("hesi")!} />;
+export default function OldDashboard() {
+  permanentRedirect("/hesi");
 }

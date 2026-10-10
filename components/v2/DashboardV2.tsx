@@ -201,7 +201,8 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
               const isExpanded = expandedTest === s.def.number;
               const def = s.session ? stageDefs[s.session.stage] : undefined;
 
-              let subtitle = `${exam.sections.map((x) => x.shortName).join(" + ")} · ${exam.testLength} · adaptive`;
+              const adaptive = exam.sections.some((x) => x.modules.some((m) => m.adaptive));
+              let subtitle = `${exam.sections.length} sections · ${exam.testLength}${adaptive ? " · adaptive" : ""}`;
               if (s.session && def) subtitle = `In progress · ${def.section.name}, module ${def.module.module}`;
               else if (s.complete && s.best !== null) subtitle = `Best ${s.best} · goal ${goal} hit`;
               else if (s.best !== null) subtitle = `Best ${s.best} · ${goal - s.best} to your goal of ${goal}`;

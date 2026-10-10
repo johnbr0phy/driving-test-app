@@ -3,7 +3,9 @@
 Banks live in `data/v2/<exam>/*.json` as arrays of `QuestionV2`. Rich text
 (`passage`, `stem`, `options[]`, `explanation`) supports: `$...$` inline KaTeX,
 `$$...$$` display KaTeX, `**bold**`, `*italic*`, `__underline__`, blank lines
-for paragraphs, and pipe tables (`| a | b |` with a `|---|---|` row).
+for paragraphs, and pipe tables (`| a | b |` with a `|---|---|` row). A
+literal dollar sign (a price) is written `\$` so it is never read as a math
+delimiter.
 
 ```jsonc
 {

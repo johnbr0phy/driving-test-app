@@ -1,0 +1,4054 @@
+[
+  {
+    "id": "TEAS-RD-001",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "teasReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Alcohol-based hand rubs kill most germs in about 20 seconds, which makes them faster than washing at a sink. However, they do not remove visible dirt, and they work poorly against certain spores, such as those of C. difficile. For these situations, soap and running water remain the better choice. Health care workers therefore need to know when each method fits the task.",
+    "stem": "Which statement best expresses the main idea of the passage?",
+    "options": [
+      "Hand rubs are always better than soap and water.",
+      "Each hand-cleaning method suits different situations.",
+      "Soap and water kill germs faster than hand rubs.",
+      "C. difficile spores are the most common hospital germ."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The passage weighs the strengths and limits of both methods and concludes that workers must know when each fits. The claim that hand rubs are always better ignores the exceptions for visible dirt and spores."
+  },
+  {
+    "id": "TEAS-RD-002",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "teasReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "When the Elm Street lot sat empty, neighbors complained about litter and broken glass. In 2019, a group of residents cleared the lot and built twelve raised garden beds. Within two years, the garden supplied fresh vegetables to a nearby food pantry every week during the summer.",
+    "stem": "Which detail best supports the idea that the garden benefited the wider community?",
+    "options": [
+      "Residents built twelve raised beds in 2019.",
+      "Neighbors once complained about broken glass.",
+      "The lot had sat empty and collected litter for years before 2019.",
+      "It supplied a food pantry with vegetables weekly."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Supplying a food pantry shows the garden helped people beyond the gardeners themselves. Building twelve beds describes how the garden started, not how it helped the community."
+  },
+  {
+    "id": "TEAS-RD-003",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "teasReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Adults who sleep fewer than seven hours a night are more likely to report trouble concentrating. Short sleep has also been linked to higher rates of obesity, high blood pressure, and depression. Researchers note that a consistent bedtime and a dark, cool bedroom can help people sleep longer. Limiting screens in the hour before bed may also help.",
+    "stem": "Which is the best summary of the passage?",
+    "options": [
+      "Screens are the main cause of poor sleep in adults.",
+      "Adults need exactly seven hours of sleep each night to stay healthy.",
+      "Depression and obesity are what cause people to sleep less.",
+      "Short sleep harms health, but simple habits can lengthen sleep."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A good summary captures both halves of the passage: the health risks of short sleep and the habits that help. Calling screens the main cause overstates one minor tip, and the passage says short sleep is linked to depression, not caused by it."
+  },
+  {
+    "id": "TEAS-RD-004",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "teasReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Maria checked the clock for the third time and tapped her pen against the desk. The interview had been scheduled for 2:00, and it was now 2:25. She smoothed her blazer again and reread the first page of her resume, though she knew it by heart.",
+    "stem": "What can the reader infer about Maria?",
+    "options": [
+      "She arrived late to the office and has already missed her interview.",
+      "She is bored and plans to leave soon.",
+      "She is nervous while waiting for a delayed interview.",
+      "She has forgotten what her resume says."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Repeated clock checks, pen tapping, and rereading a resume she knows by heart signal nervousness, and the time shows the interview is running late. Nothing suggests she plans to leave, and the text says she knows the resume by heart."
+  },
+  {
+    "id": "TEAS-RD-005",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "teasReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "To use the nasal spray, first shake the bottle gently and remove the cap. Blow your nose to clear the nostrils. Tilt your head slightly forward, place the tip in one nostril, and close the other nostril with a finger. Press the pump once while breathing in gently through the nose.",
+    "stem": "According to the directions, what should the user do immediately after removing the cap?",
+    "options": [
+      "Blow the nose to clear the nostrils.",
+      "Tilt the head slightly forward.",
+      "Press the pump while breathing in.",
+      "Close the other nostril with a finger."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The second sentence, right after removing the cap, tells the user to blow the nose. Tilting the head comes next, after the nostrils are cleared."
+  },
+  {
+    "id": "TEAS-RD-006",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "teasReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "To request a parking permit, complete Form P-2 in blue or black ink. Attach a copy of your vehicle registration, but do not attach your driver's license. Submit the form to the security office by Friday at noon. Requests sent by email will not be accepted. An employee fills out Form P-2 in black ink on Thursday.",
+    "stem": "What should the employee do next?",
+    "options": [
+      "Attach the driver's license and email the form.",
+      "Attach copies of both the driver's license and the vehicle registration.",
+      "Email the completed form to the security office.",
+      "Attach the registration copy and deliver it to security."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The directions require a registration copy and delivery to the security office by Friday noon. Emailing is tempting but the notice says emailed requests will not be accepted, and the license must not be attached."
+  },
+  {
+    "id": "TEAS-RD-007",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "teasReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "A table lists the hours for a community clinic. Monday and Wednesday: 8 a.m. to 6 p.m. Tuesday and Thursday: 10 a.m. to 8 p.m. Friday: 8 a.m. to noon. The clinic is closed on weekends, and walk-in patients are seen only during the last two hours of each day.",
+    "stem": "When could a walk-in patient be seen on a Thursday?",
+    "options": [
+      "Between 6 p.m. and 8 p.m.",
+      "Between 8 a.m. and 10 a.m.",
+      "Between 4 p.m. and 6 p.m.",
+      "Between 10 a.m. and noon."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Thursday hours run from 10 a.m. to 8 p.m., so the last two hours are 6 to 8 p.m. The 4 to 6 p.m. window is the walk-in time for Monday and Wednesday, not Thursday."
+  },
+  {
+    "id": "TEAS-RD-008",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "teasReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "A bar graph shows the number of flu vaccines given at a pharmacy each month from September through December. September shows 120 doses, October 310, November 240, and December 90. The pharmacy offered the vaccine without appointments all four months.",
+    "stem": "Which conclusion is supported by the graph?",
+    "options": [
+      "Vaccinations rose steadily every month.",
+      "December had more doses than September.",
+      "November had the highest number of doses of all four months.",
+      "Vaccinations peaked in October and then declined."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "October's 310 doses is the highest bar, and the counts fall to 240 and then 90 afterward. November's 240 is high but still below October's 310."
+  },
+  {
+    "id": "TEAS-RD-009",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "teasReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Honeybees perform a waggle dance after returning to the hive. The angle of the dance tells other bees the direction of a food source compared with the sun. The length of the waggle portion signals how far away the food is. Bees that watch the dance then fly out and find the flowers on their own.",
+    "stem": "Which inference is best supported by the passage?",
+    "options": [
+      "Bees can locate food only on cloudy days.",
+      "Every bee in a hive performs the dance daily.",
+      "Bees can share locations without leading others there.",
+      "Longer dances mean the flowers hold a larger supply of nectar."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Watching bees find the flowers on their own shows the dance passes on location information without a guide. The passage ties the length of the waggle to distance, not to the amount of nectar."
+  },
+  {
+    "id": "TEAS-RD-010",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "teasReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Before the 1860s, many surgeons operated without washing their hands or instruments. In 1867, Joseph Lister reported using carbolic acid to clean wounds and surgical tools. Deaths from infection on his wards dropped sharply. His methods, slowly adopted elsewhere, helped establish the practice of antiseptic surgery.",
+    "stem": "What is the main idea of the passage?",
+    "options": [
+      "Carbolic acid was first invented in 1867.",
+      "Surgeons before the 1860s refused to clean tools.",
+      "Lister's cleaning methods helped make surgery safer.",
+      "Infections were rare in nineteenth-century hospitals."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Every sentence builds toward Lister's antiseptic methods reducing deaths and changing surgery. The passage says he began using carbolic acid in 1867, not that it was invented then."
+  },
+  {
+    "id": "TEAS-RD-011",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "teasReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Beginning March 1, all staff must complete the new online safety module. The module takes about 45 minutes and can be paused and resumed. Employees who finish by March 15 will receive a \\$25 meal card. Managers will receive a weekly report showing which team members have not yet started.",
+    "stem": "According to the memo, what happens to employees who finish the module by March 15?",
+    "options": [
+      "They receive a \\$25 meal card.",
+      "They are excused from future training.",
+      "They receive a weekly progress report.",
+      "They earn 45 minutes of paid leave."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The memo states that finishing by March 15 earns a \\$25 meal card. The weekly report goes to managers, not to the employees who finish."
+  },
+  {
+    "id": "TEAS-RD-012",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "teasReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Mr. Lee's nurse noted that he left most of his breakfast tray untouched and asked twice whether his daughter had called. When the phone at the station rang, he sat up and looked toward the door. After the call turned out to be for another patient, he turned toward the window and said nothing.",
+    "stem": "Based on the passage, which conclusion is most reasonable?",
+    "options": [
+      "Mr. Lee is anxious to hear from his daughter.",
+      "Mr. Lee is angry with the nursing staff.",
+      "Mr. Lee dislikes the food served on the hospital breakfast menu.",
+      "Mr. Lee's daughter visited him that morning."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "His repeated questions about his daughter and his reaction to the phone show he is waiting anxiously for her call. The untouched tray reflects his worry, and nothing indicates he dislikes the menu."
+  },
+  {
+    "id": "TEAS-RD-013",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "teasReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Clara Barton worked as a teacher and later as a clerk in the U.S. Patent Office. During the Civil War, she delivered supplies and nursed wounded soldiers. After the war, she traveled to Europe, where she learned about the International Red Cross. In 1881, she founded the American Red Cross.",
+    "stem": "According to the passage, which event occurred just before Barton founded the American Red Cross?",
+    "options": [
+      "She nursed wounded soldiers in the Civil War.",
+      "She worked as a clerk in the Patent Office.",
+      "She learned about the Red Cross in Europe.",
+      "She taught school before taking a government job."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The passage lists her trip to Europe, where she learned of the International Red Cross, immediately before the 1881 founding. Nursing soldiers came earlier, during the Civil War."
+  },
+  {
+    "id": "TEAS-RD-014",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "teasReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "A nutrition label for a granola bar lists a serving size of one bar. Each bar contains 190 calories, 7 grams of fat, 12 grams of sugar, and 4 grams of protein. The package holds six bars, and the label warns that the bars contain peanuts. A customer eats two bars.",
+    "stem": "How many grams of sugar has the customer consumed?",
+    "options": [
+      "24 grams",
+      "12 grams",
+      "14 grams",
+      "72 grams"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "One bar has 12 grams of sugar, so two bars contain 12 x 2 = 24 grams. The 72-gram figure is the sugar in the whole six-bar package."
+  },
+  {
+    "id": "TEAS-RD-015",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "teasReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "To make the rice, rinse 1 cup of rice in cold water until the water runs clear. Combine the rice with 2 cups of water and a pinch of salt in a pot. Bring to a boil, then cover, reduce the heat to low, and simmer for 18 minutes. Remove from heat and let stand, still covered, for 5 minutes.",
+    "stem": "What should the cook do immediately after the water comes to a boil?",
+    "options": [
+      "Add a pinch of salt to the pot.",
+      "Cover the pot and lower the heat.",
+      "Let the rice stand for 5 minutes.",
+      "Rinse the rice until the water is clear."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The recipe says to bring the water to a boil, then cover and reduce the heat. Salt is added earlier, when the rice and water are combined."
+  },
+  {
+    "id": "TEAS-RD-016",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "teasReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Coral reefs cover less than one percent of the ocean floor, yet they shelter about a quarter of all marine species. Reefs also protect coastlines by breaking up waves during storms. Rising ocean temperatures, however, can cause corals to expel the algae they depend on, a process called bleaching. Repeated bleaching can kill large sections of a reef.",
+    "stem": "Which sentence best summarizes the passage?",
+    "options": [
+      "Coral reefs cover most of the ocean floor.",
+      "Reefs are valuable habitats that warming waters can damage.",
+      "Bleaching occurs when algae attack and weaken corals during large storms.",
+      "Reefs protect coastlines but provide very little habitat."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The passage describes the value of reefs and the threat that warming poses through bleaching. Reefs cover less than one percent of the ocean floor, and bleaching is caused by heat, not storms."
+  },
+  {
+    "id": "TEAS-RD-017",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "teasReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "A pharmacy posted a sign: Starting next month, prescriptions may be picked up at the drive-through window between 7 p.m. and 9 p.m. only. Below it, a second notice said the main counter would begin closing at 7 p.m. instead of 9 p.m.",
+    "stem": "What can be inferred from the two notices?",
+    "options": [
+      "Evening pickups will move to the drive-through.",
+      "The pharmacy will close permanently next month.",
+      "The drive-through window will close at 7 p.m.",
+      "Prescriptions will no longer be filled after 7 p.m."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The counter will close at 7 p.m., and pickups from 7 to 9 p.m. will happen only at the drive-through, so evening service moves there. The drive-through stays open until 9 p.m., not 7 p.m."
+  },
+  {
+    "id": "TEAS-RD-018",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "teasReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Many people believe that cracking their knuckles causes arthritis. One physician tested this idea by cracking the knuckles of only his left hand for more than 60 years. At the end of the experiment, neither hand showed signs of arthritis. Larger studies have also found no link between knuckle cracking and arthritis.",
+    "stem": "What is the main idea of the passage?",
+    "options": [
+      "One physician developed arthritis in his left hand.",
+      "Evidence suggests knuckle cracking does not cause arthritis.",
+      "Knuckle cracking strengthens the joints of the hand.",
+      "Much larger studies are still needed before any conclusion can be drawn."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Both the physician's experiment and larger studies found no link, so the passage argues the belief is unsupported. The physician's left hand showed no arthritis, so that option misreads the detail."
+  },
+  {
+    "id": "TEAS-RD-019",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "teasReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "A pie chart shows how a hospital volunteer program spends its time each week. Patient visits take 40 percent, gift shop staffing 25 percent, front-desk greeting 20 percent, and clerical work 15 percent. The program has 30 volunteers who each work 4 hours a week.",
+    "stem": "How many total volunteer hours per week go to front-desk greeting?",
+    "options": [
+      "20 hours",
+      "30 hours",
+      "24 hours",
+      "48 hours"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The program logs 30 x 4 = 120 hours a week, and 20 percent of 120 is 0.20 x 120 = 24 hours. Choosing 20 hours confuses the percentage with the number of hours."
+  },
+  {
+    "id": "TEAS-RD-020",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "teasReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The Great Wall of China was not built all at once. Several states built early walls of packed earth as far back as the seventh century BCE. Much of the brick-and-stone wall visible today was built during the Ming dynasty, between the 1300s and 1600s. Its main purpose was to slow raiders from the north.",
+    "stem": "Which detail best supports the idea that the wall was built over a long period?",
+    "options": [
+      "Early walls and Ming walls were built centuries apart.",
+      "The wall's main purpose was slowing raiders from the north.",
+      "Several states used packed earth for their walls.",
+      "Much of the visible wall is brick and stone."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Construction stretching from the seventh century BCE to the Ming dynasty shows building over many centuries. The purpose of slowing raiders explains why it was built, not how long it took."
+  },
+  {
+    "id": "TEAS-RD-021",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "teasReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Every year, hospitals throw away usable medical supplies simply because the packaging was opened. Our city's hospitals should partner with relief groups that send these supplies to clinics overseas. The cost is small, the waste is reduced, and patients in need receive real help. Contact your council member today and ask for a donation program.",
+    "stem": "What is the author's primary purpose?",
+    "options": [
+      "To explain how hospitals sterilize and repackage opened medical supplies.",
+      "To persuade readers to support a supply donation program.",
+      "To describe the daily work of clinics that operate overseas.",
+      "To entertain readers with a story about hospital waste."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The author argues for a program, lists its benefits, and ends with a call to action, which marks persuasive writing. The passage never explains sterilization, so an informative purpose does not fit."
+  },
+  {
+    "id": "TEAS-RD-022",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "teasReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "I had read about the rain forest in textbooks, but nothing prepared me for the noise. Howler monkeys roared before sunrise, and insects hummed all day. By the third morning, I no longer jumped at every sound; I had started to listen for them.",
+    "stem": "From which point of view is the passage told?",
+    "options": [
+      "Second person",
+      "Third person limited",
+      "Third person omniscient",
+      "First person"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The narrator uses I and me to tell about personal experience, which is first person. Third person limited would describe one character as he or she, not I."
+  },
+  {
+    "id": "TEAS-RD-023",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "teasReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The new scheduling software was supposed to save time. Instead, it crashed twice during Monday's shift change, double-booked three nurses, and erased a week of vacation requests. Naturally, the vendor assured us that everything was working exactly as designed.",
+    "stem": "Which word best describes the author's tone in the last sentence?",
+    "options": [
+      "Grateful",
+      "Neutral",
+      "Sarcastic",
+      "Hopeful"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "After listing the failures, the word Naturally and the claim that everything works as designed say the opposite of what the author means, which is sarcasm. The tone is not neutral because the author clearly mocks the vendor's response."
+  },
+  {
+    "id": "TEAS-RD-024",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "teasReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "When a person stands up quickly, gravity pulls blood toward the legs. As a result, less blood returns to the heart, and blood pressure briefly drops. The brain receives less oxygen, which can cause dizziness. Usually, the body responds within seconds by tightening blood vessels and speeding up the heart rate.",
+    "stem": "Which text structure does the author mainly use?",
+    "options": [
+      "Cause and effect",
+      "Compare and contrast",
+      "Problem and solution",
+      "Order of importance"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Signal words such as As a result and which can cause link each event to the next as a chain of causes and effects. The body's response is part of that chain, not a proposed solution to a stated problem."
+  },
+  {
+    "id": "TEAS-RD-025",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "teasReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The new manager was known for her candid feedback. When a report was weak, she said so directly, and when it was strong, she said that too. Some employees found this uncomfortable at first, but most came to appreciate knowing exactly where they stood.",
+    "stem": "As used in the passage, what does candid most nearly mean?",
+    "options": [
+      "Kind and gentle",
+      "Honest and direct",
+      "Brief and vague",
+      "Harsh and unfair"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The context says she stated weaknesses and strengths directly, so candid means honest and direct. Harsh and unfair does not fit because she also praised strong work and employees came to appreciate it."
+  },
+  {
+    "id": "TEAS-RD-026",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "teasReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The town library opened its new wing in May. The wing includes 14 computer stations, a children's reading room, and a meeting space that seats 60 people. It is the most beautiful building in the county. Attendance at weekend programs has doubled since the opening.",
+    "stem": "Which sentence from the passage is an opinion?",
+    "options": [
+      "The town library opened its new wing in May.",
+      "Attendance at weekend programs has doubled since the opening.",
+      "The wing includes 14 computer stations.",
+      "It is the most beautiful building in the county."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Beauty is a personal judgment that cannot be proved, so that sentence is an opinion. The attendance claim may sound like praise, but it can be checked against records, so it is a fact."
+  },
+  {
+    "id": "TEAS-RD-027",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "teasReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "After the double shift, Andre dragged himself to the parking lot. His legs were lead, and his eyelids kept sliding shut. When he finally reached his car, he sat in the driver's seat for ten minutes before he trusted himself to drive home.",
+    "stem": "The phrase His legs were lead is an example of which type of figurative language?",
+    "options": [
+      "Simile",
+      "Personification",
+      "Onomatopoeia",
+      "Metaphor"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The phrase compares legs to lead directly, without like or as, which makes it a metaphor. A simile would need like or as, as in legs like lead."
+  },
+  {
+    "id": "TEAS-RD-028",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "teasReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "A student is using a human anatomy textbook to study for an exam. She wants to find every page that mentions the pancreas, including pages in the chapters on digestion, hormones, and blood sugar. The book has a table of contents, a glossary, an index, and chapter summaries.",
+    "stem": "Which text feature should she use?",
+    "options": [
+      "The index",
+      "The glossary",
+      "The table of contents",
+      "The chapter summaries"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An index lists topics alphabetically with every page number where they appear, even across chapters. The table of contents lists only chapter and section titles, so it would not show every mention of the pancreas."
+  },
+  {
+    "id": "TEAS-RD-029",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "teasReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "A first aid booklet is organized under the headings Burns, Choking, Fractures, and Poisoning. Under Burns are subheadings for First-Degree, Second-Degree, and Third-Degree. Each page also has bolded terms, which are defined in a list at the back of the booklet. A reader wants to know what the bolded term eschar means.",
+    "stem": "Where should the reader look?",
+    "options": [
+      "The Burns heading",
+      "The Third-Degree subheading",
+      "The definitions list at the back",
+      "The opening page of the first section"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The passage says bolded terms are defined in the list at the back, which works as a glossary. The Third-Degree subheading may use the term, but the definitions are collected at the back."
+  },
+  {
+    "id": "TEAS-RD-030",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "teasReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Patients at Riverside Clinic often waited more than an hour past their appointment times. Staff found that most delays began when paperwork was completed in the waiting room. The clinic began sending forms by text message two days before each visit. Within a month, average wait times fell to fifteen minutes.",
+    "stem": "How is the passage organized?",
+    "options": [
+      "Compare and contrast",
+      "Spatial order",
+      "Order of importance",
+      "Problem and solution"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The passage presents long waits as a problem, identifies the cause, and describes the fix and its result. It does not compare two things, so compare and contrast does not fit."
+  },
+  {
+    "id": "TEAS-RD-031",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "teasReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The researchers had to table their study after the funding ended. They stored the samples in a freezer, archived the data, and wrote a short report so that another team could pick up the work later.",
+    "stem": "As used in the passage, what does table most nearly mean?",
+    "options": [
+      "Present formally",
+      "Postpone",
+      "Organize in rows",
+      "Cancel permanently"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Storing samples so another team can pick up the work later shows the study is set aside, not ended, so table means postpone. Cancel permanently is tempting but ignores the plan to resume."
+  },
+  {
+    "id": "TEAS-RD-032",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "teasReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Some parents worry that video games harm children's attention. Yet several studies have found that certain action games improve visual attention and reaction time. Of course, hours spent gaming are hours not spent exercising or sleeping. Parents may be wise to set limits rather than ban games altogether.",
+    "stem": "Which statement best describes the author's point of view?",
+    "options": [
+      "Games have some benefits, but play should be limited.",
+      "Games are harmful and should be banned entirely.",
+      "Games have no effect on children's attention.",
+      "Parents should let children play as long as they like."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The author cites benefits, acknowledges costs, and recommends limits rather than a ban. The author rejects banning games altogether, so the harmful-and-banned view is the opposite of the passage."
+  },
+  {
+    "id": "TEAS-RD-033",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "teasReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "A sports drink advertisement claims that its product improves performance. The ad shows a famous sprinter drinking the beverage after winning a race. It also states that 9 out of 10 athletes on a sponsored team prefer the taste.",
+    "stem": "Which is the main weakness in the advertisement's argument?",
+    "options": [
+      "It relies too heavily on a controlled scientific study of sprinters.",
+      "It mentions too many different athletes.",
+      "It offers no evidence that the drink improves performance.",
+      "It focuses on endurance events rather than speed."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A celebrity endorsement and taste preferences do not show that the drink improves performance. The ad cites no scientific study at all, so that option misdescribes it."
+  },
+  {
+    "id": "TEAS-RD-034",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "teasReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "A newsletter published by a company that sells water filters reports that tap water in the region may contain dangerous contaminants. The article does not name any contaminants or cite test results. It ends with a coupon for 20 percent off the company's best-selling filter.",
+    "stem": "Why should a reader be cautious about the article's claim?",
+    "options": [
+      "The article includes too much technical data.",
+      "The coupon expires before the water testing in the region is complete.",
+      "The article quotes too many independent scientists.",
+      "The source profits if readers fear their tap water."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The company benefits financially from the fear it creates and offers no test results, which signals bias. The article includes no technical data at all, so that cannot be the problem."
+  },
+  {
+    "id": "TEAS-RD-035",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "teasReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Source 1, a nurse's blog, says that taking vitamin C every day kept her from catching colds for three winters. Source 2, a review of 29 controlled trials, found that daily vitamin C did not reduce how often most adults caught colds, though it slightly shortened them.",
+    "stem": "Which statement best compares the two sources?",
+    "options": [
+      "Both sources agree that vitamin C prevents colds.",
+      "Source 1 is more reliable because its author works as a nurse.",
+      "Source 2 offers stronger evidence than a personal account.",
+      "Source 2 shows that vitamin C has no effect at all."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A review of many controlled trials outweighs one person's experience, even a nurse's. Source 2 did find a small effect on cold length, so saying it shows no effect at all misreads it."
+  },
+  {
+    "id": "TEAS-RD-036",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "teasReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "A history student is researching the 1918 influenza pandemic. She has collected a nurse's diary written during the outbreak, a 2005 textbook chapter on the pandemic, a documentary filmed in 2018, and a biography of a doctor published in 1990.",
+    "stem": "Which of these is a primary source?",
+    "options": [
+      "The 2005 textbook chapter",
+      "The documentary filmed in 2018",
+      "The nurse's diary",
+      "The biography published in 1990"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A diary written by a witness during the event is a firsthand, primary source. The biography and documentary were created decades later by people interpreting the past, so they are secondary."
+  },
+  {
+    "id": "TEAS-RD-037",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "teasReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "A nursing student wants to find the current recommended dose of acetaminophen for adults with liver disease. He has access to several resources at the campus library and online, and he needs information he can trust.",
+    "stem": "Which source would be most appropriate?",
+    "options": [
+      "A popular health magazine from 2012",
+      "An online forum for people with liver disease",
+      "A general encyclopedia entry on pain relievers",
+      "A current drug reference written for clinicians"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A current clinical drug reference is authoritative and up to date on dosing. A patient forum may be relevant to liver disease, but it is not a reliable source of dosing standards."
+  },
+  {
+    "id": "TEAS-RD-038",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "teasReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "For three weeks, Dana has watered her tomato plants every evening. Lately, the lower leaves have turned yellow, and the soil stays soggy for days. A gardening guide she owns warns that overwatering can rot the roots and eventually kill the plant.",
+    "stem": "If Dana continues her current watering routine, what is most likely to happen?",
+    "options": [
+      "The yellow leaves will turn green again.",
+      "The plants will decline further and may die.",
+      "The plants will produce more tomatoes than before.",
+      "The soil will begin to dry out more quickly."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The soggy soil and yellow leaves match the guide's warning that overwatering rots roots and kills plants. More water will keep the soil wet, not make it dry out faster."
+  },
+  {
+    "id": "TEAS-RD-039",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "teasReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "A hospital compared two units over one year. Unit A, which used bed alarms for high-risk patients, recorded 8 falls. Unit B, which did not use alarms, recorded 21 falls. Both units had similar numbers of patients and similar staffing levels.",
+    "stem": "Which conclusion is best supported by the information?",
+    "options": [
+      "Bed alarms prevent all patient falls in every type of unit.",
+      "Unit B had more staff than Unit A.",
+      "Bed alarms may help reduce patient falls.",
+      "Falls are caused mainly by low staffing."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "With similar patients and staffing, the unit using alarms had far fewer falls, suggesting alarms may help. Unit A still had 8 falls, so alarms clearly do not prevent all of them."
+  },
+  {
+    "id": "TEAS-RD-040",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "teasReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The old fisherman had caught nothing for eleven days. Each morning, the younger men on the dock laughed as he loaded his small boat. On the twelfth day, he returned at dusk towing the largest fish the village had ever seen. He said nothing to the men; he simply began cleaning his catch.",
+    "stem": "Which statement best expresses the theme of the passage?",
+    "options": [
+      "Younger people know more than their elders.",
+      "Persistence can succeed despite others' doubt.",
+      "Fishing is a dangerous way to earn a living.",
+      "Success should be celebrated loudly with others."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The fisherman keeps going out despite mockery and finally succeeds, showing the value of persistence. He celebrates quietly, so the idea of loud celebration contradicts the story."
+  },
+  {
+    "id": "TEAS-RD-041",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "teasReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "A city council member argues that adding bike lanes on Main Street will reduce traffic injuries. She points out that cyclists currently share lanes with cars and buses. Opponents argue that the lanes will slow traffic and hurt local businesses.",
+    "stem": "Which evidence would best support the council member's argument?",
+    "options": [
+      "Injury data from similar streets before and after adding lanes",
+      "A survey of drivers who dislike sharing the road with cyclists",
+      "The number of shops and restaurants that are located along Main Street",
+      "The cost of painting new lane markings per mile"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Before-and-after injury data from comparable streets directly tests whether bike lanes reduce injuries. Driver attitudes toward cyclists say nothing about injury rates."
+  },
+  {
+    "id": "TEAS-RD-042",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "teasReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "A training manual for new hospital volunteers includes this paragraph: Elderly patients are usually confused and cannot make their own decisions, so volunteers should speak with family members instead. The rest of the manual gives clear, practical guidance on safety and privacy.",
+    "stem": "What problem does the quoted paragraph contain?",
+    "options": [
+      "It gives too much detail about protecting patient privacy.",
+      "It uses technical medical terms that new volunteers cannot understand.",
+      "It encourages volunteers to ignore patients' family members.",
+      "It stereotypes older adults as unable to decide for themselves."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The paragraph applies a generalization about confusion to all elderly patients, which is a stereotype. It actually directs volunteers toward family members, not away from them."
+  },
+  {
+    "id": "TEAS-RD-043",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "teasReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "A museum exhibit on the Apollo 11 mission includes the astronauts' flight plan, a recording of radio transmissions from the Moon, a photograph taken on the lunar surface, and a 2019 magazine article analyzing the mission's legacy. Visitors can view each item in its own glass case.",
+    "stem": "Which item in the exhibit is a secondary source?",
+    "options": [
+      "The radio transmission recording",
+      "The 2019 magazine article",
+      "The photograph from the lunar surface",
+      "The astronauts' flight plan"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An article written fifty years later that analyzes the mission interprets events secondhand. The recording, photograph, and flight plan were all created during the mission itself, so they are primary."
+  },
+  {
+    "id": "TEAS-RD-044",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "teasReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "An article states that most adults in Lakeview now exercise at least three times a week. A table from the county health survey shows that 38 percent of Lakeview adults reported exercising three or more times weekly, up from 29 percent five years earlier.",
+    "stem": "How does the table relate to the article's claim?",
+    "options": [
+      "It fully supports the article's claim.",
+      "It shows that regular exercise has declined among adults in Lakeview.",
+      "It shows that most adults never exercise.",
+      "It shows an increase but contradicts the word most."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The rise from 29 to 38 percent shows growth, but 38 percent is less than half, so most is inaccurate. The table cannot fully support the claim because a majority would require more than 50 percent."
+  },
+  {
+    "id": "TEAS-RD-045",
+    "section": "reading",
+    "test": 1,
+    "module": 1,
+    "domain": "teasReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Jamal had studied for the certification exam for months. The night before the test, he set an alarm, packed his ID and admission letter, and laid out his clothes. He woke to bright sunlight and a blank clock screen; a storm had cut the power overnight.",
+    "stem": "What will most likely happen next?",
+    "options": [
+      "Jamal will decide to study for another month.",
+      "Jamal will go back to sleep until the power returns.",
+      "Jamal will rush to get to the exam.",
+      "Jamal will realize he packed the wrong ID."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Bright sunlight and a dead alarm suggest he overslept, and his careful preparation shows he cares about the exam, so he will hurry. Nothing suggests he packed the wrong ID; the passage says he packed it the night before."
+  },
+  {
+    "id": "TEAS-RD-046",
+    "section": "reading",
+    "test": 0,
+    "module": 0,
+    "domain": "teasReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "A student placed identical bean seedlings in three rooms. Plants in the sunny room grew 12 centimeters in two weeks, plants in the dim room grew 5 centimeters, and plants in the dark closet grew 2 centimeters and turned pale. All plants received the same amount of water and soil.",
+    "stem": "Which conclusion do the results best support?",
+    "options": [
+      "Water is the main factor in seedling growth.",
+      "Pale seedlings grow faster than green ones.",
+      "Bean seedlings grow more with greater light.",
+      "Soil type determines how tall seedlings grow."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Growth rose steadily with more light while water and soil were held constant. Because water was the same for every plant, it cannot explain the differences."
+  },
+  {
+    "id": "TEAS-RD-047",
+    "section": "reading",
+    "test": 0,
+    "module": 0,
+    "domain": "teasReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "A writer argues that the town should cancel its summer reading program. She notes that last year the program had fewer participants than the summer before. From this, she concludes that children no longer like to read.",
+    "stem": "Which is the main flaw in the writer's reasoning?",
+    "options": [
+      "She draws a broad conclusion from one limited fact.",
+      "She relies too heavily on data from many years.",
+      "She quotes too many experts on children's reading.",
+      "She agrees too readily with the program's strongest supporters."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "One year's drop in sign-ups could have many causes and does not show that children dislike reading. She compares only two summers, so she does not rely on many years of data."
+  },
+  {
+    "id": "TEAS-RD-048",
+    "section": "reading",
+    "test": 0,
+    "module": 0,
+    "domain": "teasReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "A health educator is preparing a talk for a group of community members on how many U.S. adults currently have diagnosed diabetes. She wants the most accurate and up-to-date national figure available.",
+    "stem": "Which source should she consult?",
+    "options": [
+      "A diabetes patient's personal blog",
+      "A 2008 newspaper article on diabetes rates",
+      "A food company's brochure on sugar-free snacks for people with diabetes",
+      "The latest CDC national diabetes statistics report"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A current national report from a federal public health agency gives authoritative, up-to-date figures. A 2008 article may cite real data, but it is outdated for a current figure."
+  },
+  {
+    "id": "TEAS-RD-049",
+    "section": "reading",
+    "test": 0,
+    "module": 0,
+    "domain": "teasReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "A bus schedule posted at the stop shows that Route 9 leaves Center Station at 7:15, 7:45, and 8:15 a.m. A notice on the transit website, dated yesterday, says that because of road work, all morning Route 9 departures are delayed 10 minutes this week. A rider needs the first Route 9 bus this week.",
+    "stem": "When should she expect it to leave Center Station?",
+    "options": [
+      "7:15 a.m.",
+      "7:25 a.m.",
+      "7:05 a.m.",
+      "7:55 a.m."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The first scheduled departure is 7:15, and the newer notice adds a 10-minute delay, giving 7:25 a.m. Choosing 7:15 ignores the more recent notice."
+  },
+  {
+    "id": "TEAS-RD-050",
+    "section": "reading",
+    "test": 0,
+    "module": 0,
+    "domain": "teasReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Each night, Mrs. Ortiz left a light on in her shop window, though the street was empty. Neighbors called it a waste. One winter evening, a lost delivery driver saw the glow, stopped, and asked for directions. He later returned with his family to shop there every week.",
+    "stem": "What theme does the passage suggest?",
+    "options": [
+      "Businesses should save money on electricity.",
+      "Small acts of welcome can have lasting effects.",
+      "Neighbors usually give the wisest advice about running a business.",
+      "Winter weather makes driving dangerous."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A light the neighbors dismissed helped a stranger and earned a loyal customer, showing that small gestures matter. The neighbors' advice to save electricity is the view the story proves wrong."
+  },
+  {
+    "id": "TEAS-RD-051",
+    "section": "reading",
+    "test": 0,
+    "module": 0,
+    "domain": "teasReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "A campus map shows the library at the north end of the quad. The nursing building is directly east of the library, and the cafeteria is directly south of the nursing building. The parking garage is directly west of the library. A student leaves the cafeteria and walks straight north.",
+    "stem": "Which building will she reach first?",
+    "options": [
+      "The library",
+      "The nursing building",
+      "The parking garage",
+      "The campus entrance"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The cafeteria is directly south of the nursing building, so walking north leads there first. The library lies west of the nursing building, not directly north of the cafeteria."
+  },
+  {
+    "id": "TEAS-RD-052",
+    "section": "reading",
+    "test": 0,
+    "module": 0,
+    "domain": "teasReading",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "A survey of 2,000 office workers found that those who drank three or more cups of coffee a day reported working longer hours than those who drank less. A coffee chain cited the survey in an ad claiming that coffee makes people more productive.",
+    "stem": "Why is the ad's conclusion not justified by the survey?",
+    "options": [
+      "Long hours may lead people to drink more coffee.",
+      "The survey included far too few office workers to be useful.",
+      "The survey measured productivity directly.",
+      "Coffee drinkers reported working fewer hours."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The survey shows only a correlation; working long hours could cause coffee drinking rather than the reverse, and hours are not productivity. Two thousand workers is a reasonably large sample, so sample size is not the main problem."
+  },
+  {
+    "id": "TEAS-MA-001",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "teasMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A nurse charts that a patient ate 3/8 of a meal. What is 3/8 written as a percent?",
+    "options": [
+      "0.375%",
+      "37.5%",
+      "3.75%",
+      "266.7%"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Divide 3 by 8 to get 0.375, then multiply by 100 to get 37.5%. Writing 0.375% forgets to multiply by 100, and 266.7% comes from dividing 8 by 3."
+  },
+  {
+    "id": "TEAS-MA-002",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "teasMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which of the following values is the greatest: 0.62, 5/8, 61%, or 3/5?",
+    "options": [
+      "$\\frac{5}{8}$",
+      "0.62",
+      "61%",
+      "$\\frac{3}{5}$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Convert each to a decimal: 5/8 = 0.625, 0.62, 61% = 0.61 and 3/5 = 0.60, so 5/8 is the greatest. 0.62 is tempting because it looks largest, but 0.625 > 0.620."
+  },
+  {
+    "id": "TEAS-MA-003",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "teasMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A patient drinks 2 1/3 cups of water in the morning and 1 3/4 cups in the afternoon. How many cups does the patient drink in total?",
+    "options": [
+      "$3\\frac{1}{12}$",
+      "$3\\frac{4}{7}$",
+      "$4\\frac{1}{12}$",
+      "$\\frac{7}{12}$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "With a common denominator of 12, 1/3 + 3/4 = 4/12 + 9/12 = 13/12 = 1 1/12, so 2 + 1 + 1 1/12 = 4 1/12. 3 1/12 drops the whole number carried from 13/12, and 3 4/7 adds numerators and denominators straight across."
+  },
+  {
+    "id": "TEAS-MA-004",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "teasMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A pharmacy splits 3/4 liter of saline into bottles that each hold 2/5 liter. How many bottles does that fill (3/4 ÷ 2/5)?",
+    "options": [
+      "$\\frac{3}{10}$",
+      "$\\frac{8}{15}$",
+      "$3\\frac{1}{3}$",
+      "$1\\frac{7}{8}$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Multiply by the reciprocal of the divisor: 3/4 × 5/2 = 15/8 = 1 7/8. 3/10 multiplies without flipping, and 8/15 flips the first fraction instead of the second."
+  },
+  {
+    "id": "TEAS-MA-005",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "teasMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A lab reports that 2.4% of a blood sample is a certain protein. What is 2.4% written as a fraction in lowest terms?",
+    "options": [
+      "$\\frac{6}{25}$",
+      "$\\frac{12}{5}$",
+      "$\\frac{3}{125}$",
+      "$\\frac{3}{1250}$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Percent means per 100, so 2.4% = 2.4/100 = 24/1000, and dividing both by 8 gives 3/125. 6/25 is 24%, which comes from dropping the decimal point in 2.4."
+  },
+  {
+    "id": "TEAS-MA-006",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "teasMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Evaluate the expression 18 − 3 × (4 − 6)² ÷ 2:",
+    "options": [
+      "12",
+      "30",
+      "24",
+      "0"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Parentheses first: 4 − 6 = −2, and (−2)² = 4; then 3 × 4 ÷ 2 = 6, and 18 − 6 = 12. Getting 30 comes from subtracting 18 − 3 before multiplying, and 24 comes from treating (−2)² as −4."
+  },
+  {
+    "id": "TEAS-MA-007",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "teasMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the value of |−7 − 5| − |3 − 9|?",
+    "options": [
+      "−6",
+      "−4",
+      "6",
+      "18"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Simplify inside each bar first: |−12| = 12 and |−6| = 6, so 12 − 6 = 6. −6 ignores the absolute value bars, and −4 wrongly computes −7 − 5 as −2."
+  },
+  {
+    "id": "TEAS-MA-008",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "teasMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A clinic saw an average of 80 patients per day last year and 92 patients per day this year. What is the percent increase?",
+    "options": [
+      "12%",
+      "13%",
+      "115%",
+      "15%"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Percent change = (new − old) ÷ old = (92 − 80) ÷ 80 = 12 ÷ 80 = 0.15 = 15%. Dividing by the new value (12 ÷ 92 ≈ 13%) or reporting the 12-patient difference as 12% are common errors."
+  },
+  {
+    "id": "TEAS-MA-009",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "teasMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The price of a blood pressure monitor drops from \\$250 to \\$200. What is the percent decrease in price?",
+    "options": [
+      "25%",
+      "20%",
+      "125%",
+      "80%"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Percent decrease = (250 − 200) ÷ 250 = 50 ÷ 250 = 0.20 = 20%. 25% divides the \\$50 drop by the new price of \\$200 instead of the original \\$250."
+  },
+  {
+    "id": "TEAS-MA-010",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "teasMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A unit keeps a nurse-to-patient ratio of 2:9. How many nurses are needed for 45 patients?",
+    "options": [
+      "5",
+      "10",
+      "38",
+      "202.5"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Set up 2/9 = x/45, so 9x = 90 and x = 10 nurses. 5 is only the number of groups of 9 patients, and 38 subtracts the 7-person difference instead of using a proportion."
+  },
+  {
+    "id": "TEAS-MA-011",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "teasMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A home health nurse drives 156 miles in 2.4 hours. At the same rate, how many miles will the nurse drive in 4 hours?",
+    "options": [
+      "65 miles",
+      "93.6 miles",
+      "260 miles",
+      "374.4 miles"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The unit rate is 156 ÷ 2.4 = 65 miles per hour, and 65 × 4 = 260 miles. 65 miles is only the one-hour distance, and 93.6 comes from cross-multiplying the proportion incorrectly (156 × 2.4 ÷ 4)."
+  },
+  {
+    "id": "TEAS-MA-012",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "teasMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "On a map, 1 inch represents 25 miles. Two towns are 3.5 inches apart on the map. What is the actual distance between them?",
+    "options": [
+      "87.5 miles",
+      "28.5 miles",
+      "7.1 miles",
+      "0.14 miles"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Multiply the map distance by the scale: 3.5 × 25 = 87.5 miles. 28.5 adds the numbers instead of multiplying, and 7.1 divides 25 by 3.5."
+  },
+  {
+    "id": "TEAS-MA-013",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "teasMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Solve for x in the equation 3x − 7 = 20:",
+    "options": [
+      "x = 9",
+      "x = 4 1/3",
+      "x = 27",
+      "x = 6 2/3"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Add 7 to both sides to get 3x = 27, then divide by 3 to get x = 9. x = 4 1/3 subtracts 7 instead of adding it, and x = 27 stops before dividing by 3."
+  },
+  {
+    "id": "TEAS-MA-014",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "teasMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Solve for x in the equation x/4 + 5 = 12:",
+    "options": [
+      "x = 1 3/4",
+      "x = 68",
+      "x = 28",
+      "x = 43"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Subtract 5 from both sides to get x/4 = 7, then multiply by 4 to get x = 28. x = 1 3/4 divides 7 by 4 instead of multiplying, and x = 68 adds 5 instead of subtracting it."
+  },
+  {
+    "id": "TEAS-MA-015",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "teasMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which inequality is the solution to −2x + 5 > 17?",
+    "options": [
+      "x > −6",
+      "x < −11",
+      "x < −6",
+      "x > 6"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Subtract 5 to get −2x > 12, then divide by −2 and reverse the inequality sign: x < −6. Choosing x > −6 forgets to flip the sign when dividing by a negative number."
+  },
+  {
+    "id": "TEAS-MA-016",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "teasMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Five less than twice a number is 31. What is the number?",
+    "options": [
+      "18",
+      "13",
+      "20.5",
+      "−13"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Twice a number is 2n, and five less than that is 2n − 5, so 2n − 5 = 31, 2n = 36 and n = 18. 13 solves 2n + 5 = 31, and −13 reverses the order as 5 − 2n."
+  },
+  {
+    "id": "TEAS-MA-017",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "teasMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A phone plan costs \\$25 per month plus \\$0.10 per text message. A monthly bill is \\$41.80. How many text messages were sent?",
+    "options": [
+      "418",
+      "668",
+      "168",
+      "1,680"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Set up 25 + 0.10t = 41.80, so 0.10t = 16.80 and t = 16.80 ÷ 0.10 = 168. 418 divides the whole bill by \\$0.10 without first removing the \\$25 monthly fee."
+  },
+  {
+    "id": "TEAS-MA-018",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "teasMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is (3.2 × 10⁵)(2.5 × 10⁻²) written in scientific notation?",
+    "options": [
+      "8.0 × 10³",
+      "8.0 × 10⁻¹⁰",
+      "5.7 × 10³",
+      "8.0 × 10⁷"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Multiply the coefficients (3.2 × 2.5 = 8.0) and add the exponents (5 + (−2) = 3) to get 8.0 × 10³. 10⁻¹⁰ multiplies the exponents, and 5.7 adds the coefficients."
+  },
+  {
+    "id": "TEAS-MA-019",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "teasMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Simplify the expression √144 + 2⁵ − 3² to a single number:",
+    "options": [
+      "13",
+      "35",
+      "38",
+      "95"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "√144 = 12, 2⁵ = 2 × 2 × 2 × 2 × 2 = 32 and 3² = 9, so 12 + 32 − 9 = 35. 13 treats 2⁵ as 2 × 5 = 10, and 38 treats 3² as 3 × 2 = 6."
+  },
+  {
+    "id": "TEAS-MA-020",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "teasMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which number lies between −1/2 and −1/4 on a number line?",
+    "options": [
+      "−0.55",
+      "−0.3",
+      "−0.2",
+      "0.3"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "−1/2 = −0.5 and −1/4 = −0.25, and −0.5 < −0.3 < −0.25. −0.2 is tempting, but it is greater than −0.25, so it lies to the right of −1/4."
+  },
+  {
+    "id": "TEAS-MA-021",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "teasMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Estimate 48.7 × 21.3 by rounding each factor to the nearest ten. What is the estimate?",
+    "options": [
+      "1,000",
+      "1,050",
+      "980",
+      "1,037.31"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "48.7 rounds to 50 and 21.3 rounds to 20, so 50 × 20 = 1,000. 1,037.31 is the exact product, not the estimate asked for, and 1,050 rounds 21.3 to 21 instead of to the nearest ten."
+  },
+  {
+    "id": "TEAS-MA-022",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "teasMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A child weighing 44 lb is ordered a medication at 15 mg/kg. Using 1 kg = 2.2 lb, how many milligrams should the child receive?",
+    "options": [
+      "300 mg",
+      "660 mg",
+      "1,452 mg",
+      "30 mg"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Convert pounds to kilograms first: 44 ÷ 2.2 = 20 kg, then 20 × 15 = 300 mg. 660 mg multiplies 15 by the weight in pounds, and 1,452 mg multiplies by 2.2 instead of dividing."
+  },
+  {
+    "id": "TEAS-MA-023",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "teasMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A provider orders 375 mg of amoxicillin. The suspension contains 125 mg per 5 mL. How many milliliters should be given?",
+    "options": [
+      "3 mL",
+      "75 mL",
+      "1.7 mL",
+      "15 mL"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Use desired ÷ have × volume: 375 ÷ 125 × 5 = 3 × 5 = 15 mL. 3 mL forgets to multiply by the 5 mL volume, and 1.7 mL inverts the ratio (125 × 5 ÷ 375)."
+  },
+  {
+    "id": "TEAS-MA-024",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "teasMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A box of 100 exam gloves costs \\$8.50, and a box of 250 costs \\$19.75. Which box has the lower cost per glove?",
+    "options": [
+      "100-glove box, \\$0.085 each",
+      "250-glove box, \\$0.79 each",
+      "100-glove box, \\$0.0085 each",
+      "250-glove box, \\$0.079 each"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Divide price by count: \\$8.50 ÷ 100 = \\$0.085 and \\$19.75 ÷ 250 = \\$0.079, so the 250-glove box is cheaper per glove. \\$0.79 misplaces the decimal point when dividing by 250."
+  },
+  {
+    "id": "TEAS-MA-025",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "teasMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A table lists clinic visits: Monday 42, Tuesday 35, Wednesday 51, Thursday 38, Friday 44. About what percent of the week's visits occurred on Wednesday?",
+    "options": [
+      "32.1%",
+      "20.0%",
+      "51.0%",
+      "24.3%"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The week's total is 42 + 35 + 51 + 38 + 44 = 210, and 51 ÷ 210 ≈ 0.243 = 24.3%. 32.1% divides by the other four days (159) instead of the full total, and 20.0% assumes each day is an equal one-fifth."
+  },
+  {
+    "id": "TEAS-MA-026",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "teasMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A bar graph shows program enrollment: nursing 120, radiology 45, respiratory therapy 35 and pharmacy technician 50 students. What percent of all students are in radiology?",
+    "options": [
+      "37.5%",
+      "18%",
+      "22%",
+      "45%"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The total is 120 + 45 + 35 + 50 = 250 students, and 45 ÷ 250 = 0.18 = 18%. 37.5% compares radiology with nursing only (45 ÷ 120), and 22% leaves radiology out of the total (45 ÷ 205)."
+  },
+  {
+    "id": "TEAS-MA-027",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "teasMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A line graph shows a patient's temperature: 98.6°F at 08:00, 100.4°F at 12:00, 101.8°F at 16:00 and 99.5°F at 20:00. What was the average rate of change from 08:00 to 16:00?",
+    "options": [
+      "0.4°F per hour",
+      "0.8°F per hour",
+      "3.2°F per hour",
+      "0.2°F per hour"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The temperature rose 101.8 − 98.6 = 3.2°F over 16 − 8 = 8 hours, and 3.2 ÷ 8 = 0.4°F per hour. 0.8 divides by the 4 readings instead of the 8 hours, and 3.2 is the total change, not a rate."
+  },
+  {
+    "id": "TEAS-MA-028",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "teasMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Five students scored 82, 75, 91, 68 and 89 on a pharmacology quiz. What is the mean score?",
+    "options": [
+      "82",
+      "79.5",
+      "101.25",
+      "81"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Add the scores (82 + 75 + 91 + 68 + 89 = 405) and divide by 5: 405 ÷ 5 = 81. 82 is the median, and 101.25 divides by 4 instead of by the 5 scores."
+  },
+  {
+    "id": "TEAS-MA-029",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "teasMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A nurse records the number of call-light requests on six shifts: 14, 9, 25, 17, 11 and 20. What is the median?",
+    "options": [
+      "16",
+      "21",
+      "15.5",
+      "14"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Order the values first: 9, 11, 14, 17, 20, 25; with an even count, the median is the mean of the middle two, (14 + 17) ÷ 2 = 15.5. 21 averages the middle two values of the unsorted list (25 and 17), and 16 is the mean."
+  },
+  {
+    "id": "TEAS-MA-030",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "teasMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Resting heart rates for eight patients are 72, 68, 75, 72, 80, 68, 72 and 91 beats per minute. What are the mode and the range?",
+    "options": [
+      "Mode 68, range 23",
+      "Mode 72, range 19",
+      "Mode 74.75, range 23",
+      "Mode 72, range 23"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "72 appears three times, more than any other value, so the mode is 72; the range is the highest minus the lowest, 91 − 68 = 23. 68 appears only twice, and 19 subtracts the mode (91 − 72) instead of the minimum."
+  },
+  {
+    "id": "TEAS-MA-031",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "teasMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A student's first four exam scores are 78, 85, 92 and 80. What score on the fifth exam would make the mean of all five exams 85?",
+    "options": [
+      "85",
+      "86.25",
+      "90",
+      "83.75"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A mean of 85 over 5 exams requires a total of 85 × 5 = 425; the first four total 335, so the fifth score must be 425 − 335 = 90. 85 assumes the new score only needs to equal the target mean, and 83.75 is just the current mean of four scores."
+  },
+  {
+    "id": "TEAS-MA-032",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "teasMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Hospital length-of-stay data for 500 patients have a mean of 6.8 days and a median of 4 days. Which best describes the distribution?",
+    "options": [
+      "Skewed left, with a few very short stays",
+      "Skewed right, with a few very long stays",
+      "Symmetric, with mean and median about equal",
+      "Uniform, with every length equally common"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "When the mean (6.8) is well above the median (4), a few unusually large values are pulling the mean up, which is a right (positive) skew. A left skew would put the mean below the median."
+  },
+  {
+    "id": "TEAS-MA-033",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "teasMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A survey of 300 adults finds a correlation of r = 0.71 between daily screen time and nights of poor sleep. Which conclusion is supported?",
+    "options": [
+      "Screen time causes poor sleep in 71% of adults",
+      "The two variables have a strong positive correlation",
+      "Poor sleep causes adults to use screens more each day",
+      "The two variables have a negative correlation"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A positive r of 0.71 means the variables tend to rise together, but a survey cannot show which, if either, causes the other. r is not a percentage of people, so the 71% claim misreads it."
+  },
+  {
+    "id": "TEAS-MA-034",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "teasMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A patient weighs 154 lb. Using 1 kg = 2.2 lb, what is the patient's weight in kilograms?",
+    "options": [
+      "338.8 kg",
+      "70 kg",
+      "7 kg",
+      "151.8 kg"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Kilograms are the larger unit, so divide: 154 ÷ 2.2 = 70 kg. 338.8 kg multiplies by 2.2, giving a number larger than the weight in pounds, which cannot be right."
+  },
+  {
+    "id": "TEAS-MA-035",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "teasMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A patient is 5 feet 6 inches tall. Using 1 ft = 12 in and 1 in = 2.54 cm, what is the patient's height in centimeters?",
+    "options": [
+      "142.24 cm",
+      "167.64 cm",
+      "25.98 cm",
+      "170.69 cm"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "First convert to inches: 5 × 12 + 6 = 66 in, then 66 × 2.54 = 167.64 cm. 142.24 cm treats 5 ft 6 in as 56 inches, and 25.98 cm divides by 2.54 instead of multiplying."
+  },
+  {
+    "id": "TEAS-MA-036",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "teasMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A patient's temperature is 38.5°C. Using °F = (9/5 × °C) + 32, what is the temperature in degrees Fahrenheit?",
+    "options": [
+      "69.3°F",
+      "53.4°F",
+      "126.9°F",
+      "101.3°F"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Multiply first, then add: 9/5 × 38.5 = 69.3, and 69.3 + 32 = 101.3°F. 69.3°F forgets to add 32, and 53.4°F uses 5/9, which is the factor for converting Fahrenheit to Celsius."
+  },
+  {
+    "id": "TEAS-MA-037",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "teasMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A sterilizer reservoir holds 15 L of distilled water. Using 1 L = 1.057 qt and 1 gal = 4 qt, about how many gallons does it hold?",
+    "options": [
+      "15.86 gal",
+      "3.55 gal",
+      "3.96 gal",
+      "63.42 gal"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "15 × 1.057 = 15.855 qt, and 15.855 ÷ 4 ≈ 3.96 gal. 15.86 stops at quarts, and 63.42 multiplies by 4 instead of dividing."
+  },
+  {
+    "id": "TEAS-MA-038",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "teasMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A charity run is 10 km long. Using 1 mi = 1.609 km, about how many miles long is the run?",
+    "options": [
+      "16.09 mi",
+      "0.62 mi",
+      "8.39 mi",
+      "6.22 mi"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Miles are the larger unit, so divide: 10 ÷ 1.609 ≈ 6.22 mi. 16.09 mi multiplies by 1.609, which would make the distance in miles larger than in kilometers."
+  },
+  {
+    "id": "TEAS-MA-039",
+    "section": "math",
+    "test": 0,
+    "module": 0,
+    "domain": "teasMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A patient room measures 14 feet by 11.5 feet. How many square feet of flooring are needed to cover the floor?",
+    "options": [
+      "51 sq ft",
+      "25.5 sq ft",
+      "80.5 sq ft",
+      "161 sq ft"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Area of a rectangle is length × width: 14 × 11.5 = 161 square feet. 51 is the perimeter (2 × 14 + 2 × 11.5), which measures distance around the room, not floor surface."
+  },
+  {
+    "id": "TEAS-MA-040",
+    "section": "math",
+    "test": 0,
+    "module": 0,
+    "domain": "teasMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A wheelchair wheel has a diameter of 24 inches. Using π = 3.14, what is the circumference of the wheel?",
+    "options": [
+      "37.68 in",
+      "150.72 in",
+      "75.36 in",
+      "452.16 in"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Circumference = π × diameter = 3.14 × 24 = 75.36 in. 150.72 uses 2π with the diameter instead of the radius, and 452.16 is the area formula πr²."
+  },
+  {
+    "id": "TEAS-MA-041",
+    "section": "math",
+    "test": 0,
+    "module": 0,
+    "domain": "teasMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A storage bin measures 20 cm by 15 cm by 10 cm. Using 1 L = 1,000 cm³, how many liters does it hold?",
+    "options": [
+      "3 L",
+      "30 L",
+      "0.3 L",
+      "1.3 L"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Volume = 20 × 15 × 10 = 3,000 cm³, and 3,000 ÷ 1,000 = 3 L. 1.3 L uses the surface area (1,300 cm²) instead of the volume, and 30 L or 0.3 L misplace the decimal point."
+  },
+  {
+    "id": "TEAS-MA-042",
+    "section": "math",
+    "test": 0,
+    "module": 0,
+    "domain": "teasMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 13-foot ladder leans against a wall with its base 5 feet from the wall. How high up the wall does the ladder reach?",
+    "options": [
+      "12 ft",
+      "8 ft",
+      "13.9 ft",
+      "18 ft"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The ladder is the hypotenuse, so h² = 13² − 5² = 169 − 25 = 144 and h = 12 ft. 13.9 ft adds the squares (√194), which would make a leg longer than the hypotenuse."
+  },
+  {
+    "id": "TEAS-MA-043",
+    "section": "math",
+    "test": 0,
+    "module": 0,
+    "domain": "teasMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An IV infusion starts at 9:45 PM and runs for 7 hours 30 minutes. At what time will it finish?",
+    "options": [
+      "4:15 AM",
+      "5:15 PM",
+      "2:15 PM",
+      "5:15 AM"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "9:45 PM + 7 hours = 4:45 AM, and 4:45 AM + 30 minutes = 5:15 AM. 4:15 AM forgets to carry the extra hour from 45 + 30 = 75 minutes, and 5:15 PM misses the change from PM to AM after midnight."
+  },
+  {
+    "id": "TEAS-MA-044",
+    "section": "math",
+    "test": 0,
+    "module": 0,
+    "domain": "teasMath",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Scrubs cost \\$34.00 per set. A student buys 3 sets with a 15% discount, then pays 8% sales tax on the discounted price. What is the total?",
+    "options": [
+      "\\$94.86",
+      "\\$93.64",
+      "\\$86.70",
+      "\\$110.16"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "3 × \\$34.00 = \\$102.00; \\$102.00 × 0.85 = \\$86.70 after the discount; \\$86.70 × 1.08 = \\$93.636 ≈ \\$93.64. \\$94.86 wrongly nets the rates into one 7% discount, and \\$86.70 leaves out the tax."
+  },
+  {
+    "id": "TEAS-SC-001",
+    "section": "science",
+    "test": 1,
+    "module": 1,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Blood returning from the lungs through the pulmonary veins enters which chamber of the heart first?",
+    "options": [
+      "Left atrium",
+      "Right atrium",
+      "Left ventricle",
+      "Right ventricle"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The pulmonary veins carry oxygenated blood to the left atrium, which passes it through the mitral valve to the left ventricle. The right atrium receives deoxygenated blood from the venae cavae, not from the lungs."
+  },
+  {
+    "id": "TEAS-SC-002",
+    "section": "science",
+    "test": 1,
+    "module": 1,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which heart valve prevents blood from flowing back from the aorta into the left ventricle as the ventricle relaxes?",
+    "options": [
+      "Mitral (bicuspid) valve",
+      "Aortic semilunar valve",
+      "Tricuspid valve",
+      "Pulmonary semilunar valve"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The aortic semilunar valve sits between the left ventricle and the aorta and snaps shut during diastole. The mitral valve lies between the left atrium and left ventricle, so it stops backflow into the atrium, not from the aorta."
+  },
+  {
+    "id": "TEAS-SC-003",
+    "section": "science",
+    "test": 1,
+    "module": 1,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A patient's laboratory report shows a very low platelet count. Which function of the blood is most directly impaired?",
+    "options": [
+      "Carrying oxygen to the tissues",
+      "Engulfing invading bacteria",
+      "Forming clots to stop bleeding",
+      "Producing antibodies against pathogens"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Platelets (thrombocytes) form plugs at damaged vessels and support coagulation, so a low count causes easy bruising and bleeding. Oxygen transport is the job of hemoglobin in red blood cells, not platelets."
+  },
+  {
+    "id": "TEAS-SC-004",
+    "section": "science",
+    "test": 1,
+    "module": 1,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Atherosclerosis narrows arteries with fatty plaque. Which change in the narrowed arteries most directly raises blood pressure?",
+    "options": [
+      "Decreased blood viscosity",
+      "Increased elasticity of the vessel walls",
+      "Decreased heart rate",
+      "Increased resistance to blood flow"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A narrower lumen increases peripheral resistance, so pressure must rise to push the same flow through. Greater wall elasticity would lower pressure, because compliant arteries absorb each pulse; plaque actually stiffens the walls."
+  },
+  {
+    "id": "TEAS-SC-005",
+    "section": "science",
+    "test": 1,
+    "module": 1,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Gas exchange between inhaled air and the blood takes place mainly across the walls of which lung structures?",
+    "options": [
+      "Bronchi",
+      "Alveoli",
+      "Trachea",
+      "Bronchioles"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Alveoli are thin-walled air sacs wrapped in capillaries, so oxygen and carbon dioxide diffuse across them. Bronchioles mainly conduct air to the alveoli; their walls are too thick for significant exchange."
+  },
+  {
+    "id": "TEAS-SC-006",
+    "section": "science",
+    "test": 1,
+    "module": 1,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "During normal quiet inhalation, what happens to the diaphragm and to the pressure inside the thoracic cavity?",
+    "options": [
+      "It contracts and flattens, lowering thoracic pressure",
+      "It relaxes and domes upward, lowering thoracic pressure",
+      "It contracts and flattens, raising thoracic pressure",
+      "It relaxes and domes upward, raising thoracic pressure"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Contraction flattens the diaphragm and enlarges the thoracic cavity, so pressure falls below atmospheric pressure and air flows in. Relaxing and doming upward occurs during exhalation, which raises thoracic pressure."
+  },
+  {
+    "id": "TEAS-SC-007",
+    "section": "science",
+    "test": 1,
+    "module": 1,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In emphysema, damaged alveolar walls lose their elastic recoil. Which change in lung function is most expected?",
+    "options": [
+      "Greater surface area for gas exchange",
+      "Faster and easier exhalation",
+      "Decreased total lung capacity",
+      "Air trapping with an increased residual volume"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Elastic recoil normally drives passive exhalation, so losing it traps air in the lungs and raises residual volume. Exhalation becomes slower and harder, not easier, and destroyed alveolar walls reduce exchange surface area."
+  },
+  {
+    "id": "TEAS-SC-008",
+    "section": "science",
+    "test": 1,
+    "module": 1,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Most chemical digestion and nutrient absorption take place in which section of the digestive tract?",
+    "options": [
+      "Stomach",
+      "Large intestine",
+      "Small intestine",
+      "Esophagus"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The small intestine receives pancreatic enzymes and bile, and its villi and microvilli provide a huge absorptive surface. The large intestine mainly absorbs water and electrolytes, not most nutrients."
+  },
+  {
+    "id": "TEAS-SC-009",
+    "section": "science",
+    "test": 1,
+    "module": 1,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which enzyme, activated by hydrochloric acid, begins the chemical digestion of proteins in the stomach?",
+    "options": [
+      "Pepsin",
+      "Salivary amylase",
+      "Pancreatic lipase",
+      "Trypsin"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Chief cells secrete pepsinogen, which stomach acid converts to active pepsin to start protein breakdown. Trypsin also digests protein, but it is a pancreatic enzyme that works in the small intestine."
+  },
+  {
+    "id": "TEAS-SC-010",
+    "section": "science",
+    "test": 1,
+    "module": 1,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A gallstone blocks the common bile duct so bile cannot reach the duodenum. Digestion of which nutrient is most directly impaired?",
+    "options": [
+      "Proteins",
+      "Starches",
+      "Fats",
+      "Simple sugars"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Bile, made by the liver and stored in the gallbladder, emulsifies fats so lipase can digest them, so a blockage causes pale, greasy stools. Proteins are digested by pepsin and pancreatic proteases, which do not depend on bile."
+  },
+  {
+    "id": "TEAS-SC-011",
+    "section": "science",
+    "test": 1,
+    "module": 1,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which part of a neuron receives incoming signals from other neurons and carries them toward the cell body?",
+    "options": [
+      "Axon",
+      "Dendrites",
+      "Axon terminals",
+      "Myelin sheath"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Dendrites are the branched receiving extensions of a neuron. The axon does the opposite, carrying impulses away from the cell body toward the axon terminals."
+  },
+  {
+    "id": "TEAS-SC-012",
+    "section": "science",
+    "test": 1,
+    "module": 1,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "During the depolarization phase of a neuron's action potential, which ion movement occurs?",
+    "options": [
+      "Potassium ions flow out of the cell",
+      "Calcium ions are pumped out of the cell",
+      "Sodium ions are pumped out of the cell",
+      "Sodium ions rush into the cell"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Voltage-gated sodium channels open and the influx of Na+ makes the inside of the membrane positive. Potassium flowing out happens next, during repolarization, not depolarization."
+  },
+  {
+    "id": "TEAS-SC-013",
+    "section": "science",
+    "test": 1,
+    "module": 1,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A person is suddenly frightened by a loud noise. Which response is produced by the sympathetic division of the autonomic nervous system?",
+    "options": [
+      "Constricted pupils and a slowed heart rate",
+      "Increased salivation and digestive activity",
+      "Dilated pupils and an increased heart rate",
+      "Bladder contraction to promote urination"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The sympathetic fight-or-flight response dilates the pupils, speeds the heart and shifts blood to skeletal muscle. Constricted pupils and a slower heart rate are parasympathetic rest-and-digest effects."
+  },
+  {
+    "id": "TEAS-SC-014",
+    "section": "science",
+    "test": 1,
+    "module": 1,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In myasthenia gravis, antibodies block acetylcholine receptors at the neuromuscular junction. What is the main result?",
+    "options": [
+      "Skeletal muscle weakness that worsens with use",
+      "Involuntary tremor of the hands at rest",
+      "Loss of touch sensation in the skin",
+      "Uncontrolled spasms of smooth muscle"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Acetylcholine normally triggers depolarization of skeletal muscle fibers, so blocked receptors cause fatigable weakness such as drooping eyelids. A resting tremor is typical of Parkinson disease, which results from loss of dopamine neurons in the brain."
+  },
+  {
+    "id": "TEAS-SC-015",
+    "section": "science",
+    "test": 1,
+    "module": 1,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which hormone surge triggers ovulation near the middle of a typical 28-day menstrual cycle?",
+    "options": [
+      "Progesterone",
+      "Luteinizing hormone (LH)",
+      "Follicle-stimulating hormone (FSH)",
+      "Prolactin"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Rising estrogen prompts a mid-cycle LH surge that causes the mature follicle to release its egg. FSH also rises, but its main role is to stimulate follicle growth earlier in the cycle."
+  },
+  {
+    "id": "TEAS-SC-016",
+    "section": "science",
+    "test": 1,
+    "module": 1,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Fertilization normally occurs in the same structure where most ectopic pregnancies implant. Which structure is it?",
+    "options": [
+      "Uterus",
+      "Ovary",
+      "Cervix",
+      "Fallopian (uterine) tube"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The sperm usually meets the egg in the outer part of the fallopian tube, and a zygote that implants there causes a tubal ectopic pregnancy. The uterus is the normal site of implantation, not of fertilization."
+  },
+  {
+    "id": "TEAS-SC-017",
+    "section": "science",
+    "test": 1,
+    "module": 1,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which layer of the skin contains blood vessels, most hair follicles, sweat glands and sensory nerve endings?",
+    "options": [
+      "Dermis",
+      "Epidermis",
+      "Hypodermis",
+      "Stratum corneum"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The dermis is the connective tissue layer that houses vessels, follicles, glands and receptors. The epidermis, including the stratum corneum, has no blood vessels and is nourished by diffusion from the dermis; the hypodermis is mostly fat."
+  },
+  {
+    "id": "TEAS-SC-018",
+    "section": "science",
+    "test": 1,
+    "module": 1,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which skin glands secrete an oily substance into hair follicles and, when blocked, contribute to acne?",
+    "options": [
+      "Eccrine sweat glands",
+      "Apocrine sweat glands",
+      "Ceruminous glands",
+      "Sebaceous glands"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Sebaceous glands release sebum into follicles to lubricate skin and hair, and plugged follicles lead to acne. Apocrine glands also open into follicles, but they secrete a thicker sweat, not oil."
+  },
+  {
+    "id": "TEAS-SC-019",
+    "section": "science",
+    "test": 1,
+    "module": 1,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "After a carbohydrate-rich meal, blood glucose rises. Which hormone does the pancreas release to lower it?",
+    "options": [
+      "Glucagon",
+      "Cortisol",
+      "Insulin",
+      "Epinephrine"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Pancreatic beta cells release insulin, which moves glucose into cells and promotes glycogen storage. Glucagon, from alpha cells, does the opposite and raises blood glucose between meals."
+  },
+  {
+    "id": "TEAS-SC-020",
+    "section": "science",
+    "test": 1,
+    "module": 1,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "High blood levels of thyroid hormone suppress TSH release from the anterior pituitary. This regulation is an example of:",
+    "options": [
+      "Positive feedback",
+      "Negative feedback",
+      "Receptor up-regulation",
+      "Hormone antagonism"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The output (thyroid hormone) inhibits its own stimulus (TRH and TSH), returning levels toward the set point, which is negative feedback. Positive feedback amplifies a change instead, as oxytocin does during labor."
+  },
+  {
+    "id": "TEAS-SC-021",
+    "section": "science",
+    "test": 1,
+    "module": 1,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Diabetes insipidus results from too little antidiuretic hormone (ADH). Which sign is most expected in an affected patient?",
+    "options": [
+      "Large volumes of very dilute urine",
+      "High blood glucose with glucose in urine",
+      "Small volumes of concentrated urine",
+      "Fluid retention with swelling of the legs"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Without ADH, the collecting ducts reabsorb little water, so the patient passes large amounts of dilute urine and feels thirsty. Glucose in the urine is a sign of diabetes mellitus, an insulin problem."
+  },
+  {
+    "id": "TEAS-SC-022",
+    "section": "science",
+    "test": 1,
+    "module": 1,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In the nephron, blood plasma is first filtered out of the blood at which structure?",
+    "options": [
+      "Loop of Henle",
+      "Glomerulus",
+      "Collecting duct",
+      "Distal convoluted tubule"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Blood pressure in the glomerular capillaries pushes water and small solutes into Bowman's capsule, forming filtrate. The loop of Henle later helps concentrate the filtrate, but it does not filter blood."
+  },
+  {
+    "id": "TEAS-SC-023",
+    "section": "science",
+    "test": 1,
+    "module": 1,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Aldosterone released from the adrenal cortex acts on the kidney tubules to cause which effect?",
+    "options": [
+      "Sodium excretion and potassium reabsorption",
+      "Increased glucose filtration at the glomerulus",
+      "Sodium reabsorption and potassium excretion",
+      "Less water reabsorption in the collecting duct"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Aldosterone makes the distal tubule and collecting duct reabsorb Na+ (water follows) and secrete K+, raising blood volume and pressure. The reversed sodium and potassium option describes the opposite of its action."
+  },
+  {
+    "id": "TEAS-SC-024",
+    "section": "science",
+    "test": 1,
+    "module": 1,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A urinary tract infection that spreads upward from the bladder to infect the kidney is called:",
+    "options": [
+      "Cystitis",
+      "Urethritis",
+      "Glomerulonephritis",
+      "Pyelonephritis"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Pyelo- refers to the renal pelvis, so pyelonephritis is a kidney infection, often with flank pain and fever. Cystitis is an infection limited to the bladder."
+  },
+  {
+    "id": "TEAS-SC-025",
+    "section": "science",
+    "test": 1,
+    "module": 1,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which defense is part of the adaptive (specific) immune response rather than the innate response?",
+    "options": [
+      "Inflammation at a wound site",
+      "Antibody production by plasma cells",
+      "Phagocytosis of bacteria by neutrophils",
+      "Intact skin acting as a barrier"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Plasma cells come from B lymphocytes and make antibodies against a specific antigen, and the response leaves memory cells. Neutrophil phagocytosis is innate because it attacks any invader without prior exposure."
+  },
+  {
+    "id": "TEAS-SC-026",
+    "section": "science",
+    "test": 1,
+    "module": 1,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "After axillary lymph nodes are removed during breast cancer surgery, a patient's arm swells. Which lymphatic function has been disrupted?",
+    "options": [
+      "Returning excess tissue fluid to the blood",
+      "Pumping arterial blood into the limb",
+      "Producing red blood cells for the limb",
+      "Absorbing dietary protein from the intestine"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Lymphatic vessels collect interstitial fluid and return it to veins near the heart, so removing nodes lets fluid build up as lymphedema. Arterial blood is pumped by the heart, not by the lymphatic system."
+  },
+  {
+    "id": "TEAS-SC-027",
+    "section": "science",
+    "test": 1,
+    "module": 1,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "During skeletal muscle contraction, which ion binds to troponin so myosin heads can attach to actin?",
+    "options": [
+      "Sodium",
+      "Potassium",
+      "Magnesium",
+      "Calcium"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Calcium released from the sarcoplasmic reticulum binds troponin, which shifts tropomyosin off the binding sites on actin. Sodium entry depolarizes the muscle cell membrane, but sodium does not bind troponin."
+  },
+  {
+    "id": "TEAS-SC-028",
+    "section": "science",
+    "test": 1,
+    "module": 1,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Osteoporosis develops when bone breakdown outpaces bone formation. Which bone cells break down and resorb bone matrix?",
+    "options": [
+      "Osteoblasts",
+      "Osteocytes",
+      "Osteoclasts",
+      "Chondrocytes"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Osteoclasts dissolve bone matrix and release calcium into the blood, and excess activity thins the bone. Osteoblasts do the opposite, building new bone matrix."
+  },
+  {
+    "id": "TEAS-SC-029",
+    "section": "science",
+    "test": 1,
+    "module": 1,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which anatomical plane divides the body into anterior (front) and posterior (back) portions?",
+    "options": [
+      "Frontal (coronal) plane",
+      "Sagittal plane",
+      "Transverse plane",
+      "Midsagittal plane"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A frontal or coronal plane runs side to side, separating front from back. A sagittal plane, including the midsagittal plane, divides the body into right and left parts."
+  },
+  {
+    "id": "TEAS-SC-030",
+    "section": "science",
+    "test": 1,
+    "module": 1,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which directional term correctly describes the location of the thoracic cavity relative to the abdominopelvic cavity?",
+    "options": [
+      "Inferior",
+      "Superior",
+      "Dorsal",
+      "Distal"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The thoracic cavity lies above the abdominopelvic cavity, separated by the diaphragm, so it is superior. Dorsal means toward the back, where the dorsal cavity holds the brain and spinal cord."
+  },
+  {
+    "id": "TEAS-SC-031",
+    "section": "science",
+    "test": 1,
+    "module": 1,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which organelle is the main site of ATP production through aerobic cellular respiration in eukaryotic cells?",
+    "options": [
+      "Ribosome",
+      "Mitochondrion",
+      "Golgi apparatus",
+      "Lysosome"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Mitochondria run the Krebs cycle and electron transport chain, which make most of a cell's ATP. Ribosomes build proteins, and the Golgi apparatus modifies and packages them; neither produces ATP."
+  },
+  {
+    "id": "TEAS-SC-032",
+    "section": "science",
+    "test": 1,
+    "module": 1,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A red blood cell is placed in a 3% NaCl solution, which is hypertonic to the cell. What will most likely happen to the cell?",
+    "options": [
+      "It swells as water enters by osmosis",
+      "It stays the same size because water cannot cross",
+      "It bursts as salt diffuses into it",
+      "It shrinks as water leaves by osmosis"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "In a hypertonic solution the outside has more solute, so water moves out of the cell by osmosis and the cell shrinks (crenates). Swelling and bursting happen in a hypotonic solution, not a hypertonic one."
+  },
+  {
+    "id": "TEAS-SC-033",
+    "section": "science",
+    "test": 1,
+    "module": 1,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The sodium-potassium pump moves Na+ out of a cell and K+ into it, both against their concentration gradients. This process is best classified as:",
+    "options": [
+      "Active transport",
+      "Facilitated diffusion",
+      "Simple diffusion",
+      "Osmosis"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Moving ions against their concentration gradients requires energy from ATP, which defines active transport. Facilitated diffusion also uses membrane proteins, but it only moves substances down their gradient and needs no ATP."
+  },
+  {
+    "id": "TEAS-SC-034",
+    "section": "science",
+    "test": 1,
+    "module": 1,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which statement correctly contrasts mitosis and meiosis in human cells?",
+    "options": [
+      "Mitosis makes four haploid cells; meiosis makes two diploid cells",
+      "Both processes produce genetically identical daughter cells in every case",
+      "Mitosis makes two diploid cells; meiosis makes four haploid cells",
+      "Meiosis occurs in skin cells; mitosis occurs only in gonads"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Mitosis produces two genetically identical diploid cells for growth and repair, while meiosis produces four genetically different haploid gametes. Meiosis shuffles alleles through crossing over and independent assortment, so its products are not identical."
+  },
+  {
+    "id": "TEAS-SC-035",
+    "section": "science",
+    "test": 1,
+    "module": 1,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A DNA template strand reads 3'-TAC GGA-5'. Which mRNA sequence will be transcribed from this template?",
+    "options": [
+      "5'-AUG CCU-3'",
+      "5'-ATG CCT-3'",
+      "5'-UAC GGA-3'",
+      "5'-GUA AAG-3'"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Transcription pairs A with U, T with A, C with G, and G with C, so 3'-TAC GGA-5' becomes 5'-AUG CCU-3'. The sequence with T is a DNA copy, but RNA uses uracil instead of thymine."
+  },
+  {
+    "id": "TEAS-SC-036",
+    "section": "science",
+    "test": 1,
+    "module": 1,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "During translation, which molecule carries a specific amino acid to the ribosome and pairs its anticodon with an mRNA codon?",
+    "options": [
+      "Messenger RNA (mRNA)",
+      "Transfer RNA (tRNA)",
+      "Ribosomal RNA (rRNA)",
+      "DNA polymerase"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Each tRNA carries one amino acid and has an anticodon that base-pairs with a matching mRNA codon. The mRNA holds the codons themselves, and rRNA forms the ribosome's structure and catalyzes peptide bonds."
+  },
+  {
+    "id": "TEAS-SC-037",
+    "section": "science",
+    "test": 1,
+    "module": 1,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In pea plants, purple flowers (P) are dominant to white flowers (p). Two heterozygous purple plants are crossed. What fraction of offspring is expected to have white flowers?",
+    "options": [
+      "$\\frac{1}{2}$",
+      "$\\frac{3}{4}$",
+      "0",
+      "$\\frac{1}{4}$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Punnett square for Pp x Pp gives PP, Pp, Pp, and pp, so only pp (1 of 4 boxes) is white. The fraction 3/4 is the expected proportion of purple offspring, not white."
+  },
+  {
+    "id": "TEAS-SC-038",
+    "section": "science",
+    "test": 1,
+    "module": 1,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A tall plant of unknown genotype is crossed with a short plant (tt). The Punnett square results show half tall and half short offspring. What is the tall parent's genotype?",
+    "options": [
+      "TT",
+      "tt",
+      "Tt",
+      "Cannot be determined from this cross"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Tt x tt gives Tt, Tt, tt, tt, which is half tall and half short, matching the result. A TT parent would give only Tt offspring, so every offspring would be tall."
+  },
+  {
+    "id": "TEAS-SC-039",
+    "section": "science",
+    "test": 1,
+    "module": 1,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which type of macromolecule is built from amino acid monomers joined together by peptide bonds?",
+    "options": [
+      "Carbohydrates",
+      "Proteins",
+      "Nucleic acids",
+      "Lipids"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Proteins are polymers of amino acids linked by peptide bonds. Nucleic acids are also polymers, but their monomers are nucleotides joined by phosphodiester bonds."
+  },
+  {
+    "id": "TEAS-SC-040",
+    "section": "science",
+    "test": 1,
+    "module": 1,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A digestive enzyme from the stomach works best at pH 2. If the pH of its environment rises to 8, what most likely happens to its activity?",
+    "options": [
+      "It drops as the active site loses its shape",
+      "It rises because the enzyme gains extra energy",
+      "It stays the same because enzymes are never altered",
+      "It rises because more substrate fits the active site"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Each enzyme has an optimal pH; far from it, the protein denatures and its active site changes shape, so substrate binds poorly and activity falls. Enzymes are not used up by reactions, but they can still be altered by pH and temperature."
+  },
+  {
+    "id": "TEAS-SC-041",
+    "section": "science",
+    "test": 1,
+    "module": 1,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "After years of heavy antibiotic use, most bacteria in a hospital population are resistant. Which explanation best reflects natural selection?",
+    "options": [
+      "Bacteria chose to develop resistance after being exposed to the drug",
+      "The antibiotic made every bacterium mutate in the same helpful way",
+      "Each bacterium grew stronger with every dose it survived",
+      "Resistant bacteria already present survived and reproduced more"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Natural selection acts on existing variation: bacteria that already carried resistance genes survived the drug and passed those genes to offspring. Organisms do not choose to adapt, and drugs do not cause targeted helpful mutations."
+  },
+  {
+    "id": "TEAS-SC-042",
+    "section": "science",
+    "test": 1,
+    "module": 1,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An atom of chlorine-37 has an atomic number of 17. How many neutrons are found in its nucleus?",
+    "options": [
+      "17",
+      "37",
+      "20",
+      "54"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Neutrons equal mass number minus atomic number: 37 - 17 = 20. The number 17 is the count of protons, not neutrons."
+  },
+  {
+    "id": "TEAS-SC-043",
+    "section": "science",
+    "test": 1,
+    "module": 1,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which element is most likely to form an ion with a 1+ charge by losing a single valence electron?",
+    "options": [
+      "Magnesium (Mg)",
+      "Sodium (Na)",
+      "Chlorine (Cl)",
+      "Neon (Ne)"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Sodium is a Group 1 alkali metal with one valence electron, which it loses to form Na+. Magnesium is in Group 2 and loses two electrons to form Mg2+, while chlorine gains an electron to form Cl-."
+  },
+  {
+    "id": "TEAS-SC-044",
+    "section": "science",
+    "test": 1,
+    "module": 1,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which pair of elements is most likely to form an ionic bond when they react with each other?",
+    "options": [
+      "Potassium and fluorine",
+      "Carbon and hydrogen",
+      "Nitrogen and oxygen",
+      "Two chlorine atoms bonded together"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Ionic bonds form when a metal transfers electrons to a nonmetal with a large electronegativity difference, as with potassium and fluorine. The other pairs are both nonmetals, so they share electrons in covalent bonds."
+  },
+  {
+    "id": "TEAS-SC-045",
+    "section": "science",
+    "test": 1,
+    "module": 1,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "While ice melts at 0 degrees Celsius, its temperature stays constant even though heat is being added. Where does the added energy go?",
+    "options": [
+      "Into raising the average kinetic energy of the molecules",
+      "Into breaking the covalent bonds inside each water molecule",
+      "Into producing light that escapes to the surroundings",
+      "Into overcoming attractions between water molecules"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "During a phase change, added heat (heat of fusion) overcomes the hydrogen bonds between molecules rather than raising temperature. Melting is a physical change, so the covalent O-H bonds within each molecule stay intact."
+  },
+  {
+    "id": "TEAS-SC-046",
+    "section": "science",
+    "test": 1,
+    "module": 1,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Water has an unusually high specific heat compared with most liquids. Which property of water is mainly responsible for this?",
+    "options": [
+      "Its very low molecular mass",
+      "Ionic bonds between hydrogen and oxygen",
+      "Hydrogen bonding between molecules",
+      "Nonpolar bonds within each molecule"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Hydrogen bonds between polar water molecules absorb a lot of energy before the molecules move faster, so water resists temperature change. The bonds within a water molecule are polar covalent, not ionic or nonpolar."
+  },
+  {
+    "id": "TEAS-SC-047",
+    "section": "science",
+    "test": 1,
+    "module": 1,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Solution X has a pH of 3, and Solution Y has a pH of 5. How does the hydrogen ion concentration of X compare with Y?",
+    "options": [
+      "X has 100 times more H+ than Y",
+      "X has 2 times more H+ than Y",
+      "X has 100 times fewer H+ ions than Y",
+      "X has 10 times more H+ than Y"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The pH scale is logarithmic, so each unit is a tenfold change: 10 x 10 = 100 times more H+ in the lower-pH solution. Subtracting the pH values (5 - 3 = 2) ignores the logarithmic scale."
+  },
+  {
+    "id": "TEAS-SC-048",
+    "section": "science",
+    "test": 1,
+    "module": 1,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A technician dissolves 15 g of glucose in enough water to make 300 mL of solution. What is the concentration in percent weight per volume?",
+    "options": [
+      "20%",
+      "5%",
+      "0.05%",
+      "15%"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Percent w/v = grams per 100 mL: 15 g / 300 mL = 0.05, and 0.05 x 100 = 5%. Dividing 300 by 15 gives 20, which inverts the ratio."
+  },
+  {
+    "id": "TEAS-SC-049",
+    "section": "science",
+    "test": 1,
+    "module": 1,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "When the equation Al + O2 -> Al2O3 is balanced using the smallest whole numbers, what is the coefficient for O2?",
+    "options": [
+      "2",
+      "4",
+      "3",
+      "6"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The balanced equation is 4Al + 3O2 -> 2Al2O3, giving 4 Al and 6 O atoms on each side. The coefficient 2 belongs to Al2O3, and 6 is the total number of oxygen atoms, not the O2 coefficient."
+  },
+  {
+    "id": "TEAS-SC-050",
+    "section": "science",
+    "test": 1,
+    "module": 1,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which change would most likely increase the rate of the reaction between zinc metal and hydrochloric acid?",
+    "options": [
+      "Diluting the acid with a large volume of extra water",
+      "Cooling the mixture in an ice bath",
+      "Using one large lump of zinc",
+      "Grinding the zinc into a fine powder"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Powdering the zinc increases its surface area, so more acid particles collide with zinc each second and the rate rises. Diluting the acid lowers its concentration, which reduces collisions and slows the reaction."
+  },
+  {
+    "id": "TEAS-SC-051",
+    "section": "science",
+    "test": 0,
+    "module": 0,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A student notices that plants near a sunny window grow taller than plants in a dim hallway. According to the scientific method, what should the student do next?",
+    "options": [
+      "Form a testable hypothesis",
+      "Publish the conclusion that light causes growth",
+      "Accept the observation as a proven theory",
+      "Analyze data from the finished experiment"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "After an observation and question, the next step is a testable hypothesis that an experiment can check. Drawing or publishing a conclusion before testing skips the experiment entirely."
+  },
+  {
+    "id": "TEAS-SC-052",
+    "section": "science",
+    "test": 0,
+    "module": 0,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A student is studying caffeine and heart rate. Which of the following statements is a testable hypothesis?",
+    "options": [
+      "Caffeine is the best-tasting stimulant people can buy",
+      "If caffeine intake rises, resting heart rate will increase",
+      "People should never drink caffeine before going to bed",
+      "Heart rate is an interesting topic for a science class project"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A testable hypothesis predicts a measurable relationship between variables, here caffeine intake and heart rate. Statements about taste or what people should do are opinions that an experiment cannot confirm or refute."
+  },
+  {
+    "id": "TEAS-SC-053",
+    "section": "science",
+    "test": 0,
+    "module": 0,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A researcher gives groups of mice 0, 5, or 10 mg of a drug daily and measures each group's blood glucose after two weeks. What is the independent variable?",
+    "options": [
+      "The blood glucose level of the mice",
+      "The two-week length of the study",
+      "The daily dose of the drug",
+      "The species of mouse used"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The independent variable is the factor the researcher deliberately changes, here the drug dose. Blood glucose is what gets measured in response, so it is the dependent variable."
+  },
+  {
+    "id": "TEAS-SC-054",
+    "section": "science",
+    "test": 0,
+    "module": 0,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Students release the same toy car from ramps set at 10, 20, and 30 degrees and measure how far it rolls. What is the dependent variable?",
+    "options": [
+      "The angle of the ramp",
+      "The toy car used in each trial",
+      "The number of students in the group",
+      "The distance the car rolls"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The dependent variable is the outcome that is measured, which is the rolling distance. The ramp angle is changed on purpose by the students, so it is the independent variable."
+  },
+  {
+    "id": "TEAS-SC-055",
+    "section": "science",
+    "test": 0,
+    "module": 0,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "To test whether a new fertilizer increases tomato yield, a gardener applies it to 20 plants. Which group would serve as the best control group?",
+    "options": [
+      "20 matching plants given no fertilizer",
+      "20 plants given double the fertilizer",
+      "5 pepper plants given the same fertilizer",
+      "20 plants given fertilizer but less water"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A control group matches the experimental group in every way except the factor being tested, so it receives no fertilizer. Giving less water would add a second changing variable, and different species or numbers make comparison unfair."
+  },
+  {
+    "id": "TEAS-SC-056",
+    "section": "science",
+    "test": 0,
+    "module": 0,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company gives a new sleep supplement to 4 volunteers and reports that 3 slept longer. What is the biggest weakness of this study design?",
+    "options": [
+      "The supplement was given at night",
+      "Very small sample with no control group",
+      "Too many volunteers were included",
+      "Sleep was measured in hours, not minutes"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Four people is too few to generalize, and without a control group the longer sleep could be due to chance or a placebo effect. The unit of measurement does not weaken the design, since hours and minutes are both valid."
+  },
+  {
+    "id": "TEAS-SC-057",
+    "section": "science",
+    "test": 0,
+    "module": 0,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A researcher compares two pain relievers but gives Drug A only to young adults and Drug B only to older adults. Why are the results unreliable?",
+    "options": [
+      "Two drugs cannot be compared in one study",
+      "Pain relief cannot be measured in any way",
+      "Age is a confounding variable",
+      "The study used adults instead of children"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Because age differs between the groups, any difference in pain relief could be caused by age rather than the drug. Two drugs can be compared fairly if participants are randomly assigned so the groups are similar."
+  },
+  {
+    "id": "TEAS-SC-058",
+    "section": "science",
+    "test": 0,
+    "module": 0,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In a trial, average systolic pressure fell from 150 to 138 mm Hg with Drug A and from 150 to 148 mm Hg with a placebo. Which conclusion is best supported?",
+    "options": [
+      "Drug A cures high blood pressure in every patient",
+      "The placebo raised the patients' blood pressure",
+      "Both treatments were equally effective",
+      "Drug A lowered blood pressure more than placebo"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Drug A produced a 12 mm Hg drop (150 - 138) versus 2 mm Hg (150 - 148) for placebo, so it lowered pressure more. Averages cannot show that every patient was cured, so claiming a cure overstates the data."
+  },
+  {
+    "id": "TEAS-SC-059",
+    "section": "science",
+    "test": 0,
+    "module": 0,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A table lists an enzyme's activity as 15, 30, 48, and 10 units at 20, 30, 40, and 50 degrees Celsius. Which conclusion is best supported?",
+    "options": [
+      "Activity peaks near 40 degrees Celsius",
+      "Activity rises steadily as temperature rises",
+      "The enzyme works best at 50 degrees Celsius",
+      "Temperature has no effect on activity"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Activity climbs to its highest value (48 units) at 40 degrees Celsius and then falls to 10 units at 50 degrees, likely from denaturation. A steady rise is wrong because activity drops sharply at the highest temperature."
+  },
+  {
+    "id": "TEAS-SC-060",
+    "section": "science",
+    "test": 0,
+    "module": 0,
+    "domain": "teasScience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A student weighs a 10.0 g standard mass four times and records 8.1 g, 8.0 g, 8.1 g, and 8.0 g. How are these results best described?",
+    "options": [
+      "Accurate but not precise",
+      "Precise but not accurate",
+      "Both accurate and precise",
+      "Neither accurate nor precise"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The readings agree closely with each other, so they are precise, but all are about 2 g below the true 10.0 g, so they are not accurate. Close agreement among readings does not mean they match the true value."
+  },
+  {
+    "id": "TEAS-EN-001",
+    "section": "english",
+    "test": 1,
+    "module": 1,
+    "domain": "teasEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In the sentence \"The new medication had a noticeable ___ on her blood pressure,\" which word correctly fills the blank?",
+    "options": [
+      "affect",
+      "effect",
+      "effects",
+      "affects"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "After the article \"a,\" the sentence needs a singular noun, and \"effect\" is the noun meaning a result. \"Affect\" is usually a verb meaning to influence, and the plural forms do not agree with \"a.\""
+  },
+  {
+    "id": "TEAS-EN-002",
+    "section": "english",
+    "test": 1,
+    "module": 1,
+    "domain": "teasEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A nursing student is proofreading an incident report. Which of the following words is spelled correctly?",
+    "options": [
+      "occurence",
+      "ocurrence",
+      "occurrance",
+      "occurrence"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "\"Occurrence\" doubles both the c and the r and ends in -ence. The most common error drops the second r, as in \"occurence.\""
+  },
+  {
+    "id": "TEAS-EN-003",
+    "section": "english",
+    "test": 1,
+    "module": 1,
+    "domain": "teasEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which of the following is the correct plural form of the word \"diagnosis\"?",
+    "options": [
+      "diagnosises",
+      "diagnosis'",
+      "diagnoses",
+      "diagnosies"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Nouns of Greek origin ending in -is form the plural by changing -is to -es, as in analysis and analyses. Adding -es to the whole word, as in \"diagnosises,\" is a common but incorrect overcorrection."
+  },
+  {
+    "id": "TEAS-EN-004",
+    "section": "english",
+    "test": 1,
+    "module": 1,
+    "domain": "teasEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which of the following sentences shows correct capitalization of every word?",
+    "options": [
+      "We visited Grand Canyon national park last Summer.",
+      "We visited grand canyon National Park last summer.",
+      "We visited the Grand Canyon National Park last Summer.",
+      "We visited Grand Canyon National Park last summer."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Every word in the official name of a specific park is capitalized, but seasons are common nouns and stay lowercase. Capitalizing \"Summer\" is the tempting error."
+  },
+  {
+    "id": "TEAS-EN-005",
+    "section": "english",
+    "test": 1,
+    "module": 1,
+    "domain": "teasEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which revision correctly capitalizes the sentence \"last tuesday, dr. lee spoke to my mother\"?",
+    "options": [
+      "Last tuesday, Dr. Lee spoke to my Mother.",
+      "Last Tuesday, dr. Lee spoke to my Mother.",
+      "Last Tuesday, Dr. Lee spoke to my mother.",
+      "Last Tuesday, Dr. Lee spoke to My Mother."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Days of the week and a title used before a name are capitalized. \"Mother\" stays lowercase when it follows a possessive like \"my,\" because it is then a common noun rather than a name."
+  },
+  {
+    "id": "TEAS-EN-006",
+    "section": "english",
+    "test": 1,
+    "module": 1,
+    "domain": "teasEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Where should a comma be placed in the sentence \"After the meeting ended the staff reviewed the new schedule\"?",
+    "options": [
+      "after \"meeting\"",
+      "after \"staff\"",
+      "after \"ended\"",
+      "after \"reviewed\""
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A comma follows an introductory dependent clause, which here is \"After the meeting ended.\" Placing it after \"staff\" would wrongly separate the subject from its verb."
+  },
+  {
+    "id": "TEAS-EN-007",
+    "section": "english",
+    "test": 1,
+    "module": 1,
+    "domain": "teasEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which revision correctly punctuates \"The lab opens at seven the first draw is at eight\"?",
+    "options": [
+      "The lab opens at seven, the first draw is at eight.",
+      "The lab opens at seven: and the first draw is at eight.",
+      "The lab opens at seven; and the first draw is at eight.",
+      "The lab opens at seven; the first draw is at eight."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A semicolon correctly joins two closely related independent clauses without a conjunction. Using only a comma creates a comma splice, and a semicolon should not be followed by \"and.\""
+  },
+  {
+    "id": "TEAS-EN-008",
+    "section": "english",
+    "test": 1,
+    "module": 1,
+    "domain": "teasEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which of the following sentences uses a colon correctly?",
+    "options": [
+      "Pack three items: gloves, a gown, and a mask.",
+      "Pack: gloves, a gown, and a mask.",
+      "The three items are: gloves, a gown, and a mask.",
+      "Pack three items, gloves: a gown, and a mask."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A colon introduces a list only after a complete independent clause, such as \"Pack three items.\" A colon placed directly after a verb like \"are\" interrupts the clause and is incorrect."
+  },
+  {
+    "id": "TEAS-EN-009",
+    "section": "english",
+    "test": 1,
+    "module": 1,
+    "domain": "teasEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In the sentence \"The ___ lounge was repainted last week,\" which word shows a lounge shared by several nurses?",
+    "options": [
+      "nurses'",
+      "nurse's",
+      "nurses",
+      "nurses's"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "For a plural noun ending in s, the possessive adds only an apostrophe after the s. \"Nurse's\" shows ownership by a single nurse, and \"nurses\" without an apostrophe is not possessive."
+  },
+  {
+    "id": "TEAS-EN-010",
+    "section": "english",
+    "test": 1,
+    "module": 1,
+    "domain": "teasEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which of the following sentences punctuates the quotation correctly?",
+    "options": [
+      "The nurse said, \"Take this pill with some water\".",
+      "The nurse said, \"Take this pill with water.\"",
+      "The nurse said \"Take this pill with water.\"",
+      "The nurse said, \"take this pill with water.\""
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "In American English, a comma introduces the quotation, the quoted sentence begins with a capital letter, and the period goes inside the closing quotation mark. Placing the period outside the quotation marks is the most common error."
+  },
+  {
+    "id": "TEAS-EN-011",
+    "section": "english",
+    "test": 1,
+    "module": 1,
+    "domain": "teasEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which of the following is a complete sentence rather than a fragment?",
+    "options": [
+      "Because the clinic closed early on Friday.",
+      "Because the clinic closed early, we rescheduled.",
+      "Rescheduling the visit after the clinic closed early.",
+      "After the clinic, which had closed early."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "This option joins a dependent clause to an independent clause with its own subject and verb, \"we rescheduled.\" A \"because\" clause standing alone is a fragment even though it has a subject and verb."
+  },
+  {
+    "id": "TEAS-EN-012",
+    "section": "english",
+    "test": 1,
+    "module": 1,
+    "domain": "teasEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In the sentence \"Each of the students ___ a stethoscope,\" which verb correctly completes it?",
+    "options": [
+      "have",
+      "are carrying",
+      "own",
+      "has"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The subject is \"Each,\" which is singular, so it takes the singular verb \"has.\" The plural noun \"students\" sits inside a prepositional phrase and does not control the verb."
+  },
+  {
+    "id": "TEAS-EN-013",
+    "section": "english",
+    "test": 1,
+    "module": 1,
+    "domain": "teasEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In the sentence \"The committee announced ___ decision on Friday,\" which word correctly fills the blank?",
+    "options": [
+      "their",
+      "it's",
+      "its",
+      "they're"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A collective noun acting as a single unit takes a singular pronoun, and the possessive form is \"its\" with no apostrophe. \"It's\" is a contraction of \"it is.\""
+  },
+  {
+    "id": "TEAS-EN-014",
+    "section": "english",
+    "test": 1,
+    "module": 1,
+    "domain": "teasEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which revision of \"She checked the chart and calls the doctor\" keeps the verb tense consistent?",
+    "options": [
+      "She checked the chart and called the doctor.",
+      "She checked the chart and calling the doctor.",
+      "She checks the chart and called the doctor.",
+      "She had checked the chart and calls the doctor."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Both actions happened in the past, so both verbs should be in the simple past: \"checked\" and \"called.\" The other options still mix tenses or use a participle that cannot serve as a main verb."
+  },
+  {
+    "id": "TEAS-EN-015",
+    "section": "english",
+    "test": 1,
+    "module": 1,
+    "domain": "teasEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which revision of \"The job requires lifting, charting, and to answer phones\" uses parallel structure?",
+    "options": [
+      "The job requires lifting, charting, and answering phones.",
+      "The job requires lifting, charting, and the answering of phones.",
+      "The job requires to lift, charting, and answering phones.",
+      "The job requires lifting, to chart, and answering phones."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Items in a series should share the same grammatical form, so all three should be gerunds ending in -ing. Mixing an infinitive like \"to lift\" with gerunds breaks the parallel structure."
+  },
+  {
+    "id": "TEAS-EN-016",
+    "section": "english",
+    "test": 1,
+    "module": 1,
+    "domain": "teasEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which revision corrects the dangling modifier in \"Walking into the room, the monitor beeped loudly\"?",
+    "options": [
+      "Walking into the room, the loud monitor beeped.",
+      "The monitor beeped loudly, walking into the room.",
+      "Walking into the room, the monitor beeped very loudly at us.",
+      "As I walked into the room, the monitor beeped loudly."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The original sentence says the monitor was walking. Adding the subject \"I\" to the opening clause makes clear who walked in; the other options still attach \"walking\" to the monitor."
+  },
+  {
+    "id": "TEAS-EN-017",
+    "section": "english",
+    "test": 1,
+    "module": 1,
+    "domain": "teasEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A student is emailing a professor to request more time on an assignment. Which sentence is most appropriate?",
+    "options": [
+      "Hey, can I get a few more days on this?",
+      "I need more time, so please just extend it.",
+      "Sorry, but the deadline totally doesn't work for me.",
+      "I am writing to request a brief extension on the assignment."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An email to a professor calls for a polite, formal tone with a clear request. Slang such as \"Hey\" and \"totally,\" or a demanding phrase like \"just extend it,\" is too casual for this audience."
+  },
+  {
+    "id": "TEAS-EN-018",
+    "section": "english",
+    "test": 1,
+    "module": 1,
+    "domain": "teasEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A nurse is writing discharge instructions for a patient with no medical background. Which sentence is most appropriate?",
+    "options": [
+      "Take one tablet by mouth every morning with food.",
+      "Administer 1 tab PO q AM with meals.",
+      "Ingest the prescribed oral agent each morning postprandially.",
+      "Pop one of these pills whenever you eat breakfast."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Patient instructions should use plain, clear, respectful language. Medical abbreviations and technical words like \"postprandially\" confuse a lay reader, while \"pop one of these pills\" is too casual and vague."
+  },
+  {
+    "id": "TEAS-EN-019",
+    "section": "english",
+    "test": 1,
+    "module": 1,
+    "domain": "teasEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which of the following sentences is written in the most formal style for a research report?",
+    "options": [
+      "The results indicate a significant decrease in infection rates.",
+      "The results show infections went way down.",
+      "We were super happy to see fewer infections.",
+      "Basically, infections dropped a ton after the change."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Formal academic writing uses precise, objective vocabulary such as \"indicate\" and \"significant decrease.\" The other options rely on slang like \"way down\" and \"a ton\" or on personal feelings."
+  },
+  {
+    "id": "TEAS-EN-020",
+    "section": "english",
+    "test": 1,
+    "module": 1,
+    "domain": "teasEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which revision of \"In my personal opinion, I think the new policy is good\" is most concise?",
+    "options": [
+      "In my opinion, I personally think the policy is good.",
+      "Personally, in my opinion, the new policy is good.",
+      "I think the new policy is good.",
+      "I think, in my opinion, that the new policy is good."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "\"In my personal opinion\" and \"I think\" say the same thing, so one should be removed. The other options keep two or more redundant phrases expressing personal opinion."
+  },
+  {
+    "id": "TEAS-EN-021",
+    "section": "english",
+    "test": 1,
+    "module": 1,
+    "domain": "teasEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which revision removes the redundancy from \"The two nurses collaborated together to revise the schedule\"?",
+    "options": [
+      "The two nurses together collaborated to revise the schedule.",
+      "Together, the two nurses collaborated to revise the schedule.",
+      "The two nurses collaborated jointly to revise the schedule.",
+      "The two nurses collaborated to revise the schedule."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "To collaborate already means to work together, so \"together\" is redundant. Moving \"together\" or replacing it with \"jointly\" keeps the same redundancy."
+  },
+  {
+    "id": "TEAS-EN-022",
+    "section": "english",
+    "test": 1,
+    "module": 1,
+    "domain": "teasEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which revision of \"When Maria met Jen at the clinic, she gave her the forms\" is clearest?",
+    "options": [
+      "When Maria met Jen, she gave the forms to her.",
+      "At the clinic, she gave her the forms when Maria met Jen.",
+      "When Maria met Jen at the clinic, she handed her the forms.",
+      "When Maria met Jen at the clinic, Maria gave Jen the forms."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The pronouns \"she\" and \"her\" could each refer to either woman, so naming them removes the ambiguity. Rearranging the sentence without replacing the pronouns leaves the reader unsure who gave the forms."
+  },
+  {
+    "id": "TEAS-EN-023",
+    "section": "english",
+    "test": 1,
+    "module": 1,
+    "domain": "teasEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which transition best fills the blank in \"The patient's fever broke overnight; ___, she was discharged the next morning\"?",
+    "options": [
+      "however",
+      "nevertheless",
+      "therefore",
+      "in contrast"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The discharge is a result of the fever breaking, so a cause-and-effect transition like \"therefore\" fits. \"However\" and \"nevertheless\" signal a contrast that the sentence does not contain."
+  },
+  {
+    "id": "TEAS-EN-024",
+    "section": "english",
+    "test": 1,
+    "module": 1,
+    "domain": "teasEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which transition best fills the blank in \"Regular exercise improves heart health; ___, it can lower stress levels\"?",
+    "options": [
+      "however",
+      "moreover",
+      "instead",
+      "otherwise"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The second clause adds another benefit of exercise, so an addition transition like \"moreover\" fits. \"However\" would wrongly signal that the second idea contrasts with the first."
+  },
+  {
+    "id": "TEAS-EN-025",
+    "section": "english",
+    "test": 1,
+    "module": 1,
+    "domain": "teasEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A paragraph's supporting sentences explain how handwashing removes germs, lowers infection rates, and protects staff. Which sentence would be the best topic sentence?",
+    "options": [
+      "Many hospitals were built during the twentieth century.",
+      "Handwashing is one of the best ways to prevent infection.",
+      "Hand sanitizer comes in several pleasant scents.",
+      "Some nurses prefer to wear gloves during every shift."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A topic sentence states the main idea that all the supporting details develop, which here is the value of handwashing for preventing infection. The sentence about sanitizer scents mentions hand hygiene but does not cover the supporting points."
+  },
+  {
+    "id": "TEAS-EN-026",
+    "section": "english",
+    "test": 1,
+    "module": 1,
+    "domain": "teasEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Sentences for a paragraph on blood donation: (1) After screening, blood is drawn. (2) First, donors complete a health screening. (3) Finally, donors rest and eat a snack. Which order is most logical?",
+    "options": [
+      "1, 2, 3",
+      "2, 1, 3",
+      "3, 2, 1",
+      "2, 3, 1"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The signal words \"First,\" \"After screening,\" and \"Finally\" set a chronological order of 2, 1, 3. Keeping the numbered order would describe the blood draw before the screening it depends on."
+  },
+  {
+    "id": "TEAS-EN-027",
+    "section": "english",
+    "test": 1,
+    "module": 1,
+    "domain": "teasEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A student is drafting a paragraph about why sleep matters for college students. Which sentence is least relevant and should be removed?",
+    "options": [
+      "Many campus dining halls offer vegetarian meals.",
+      "Sleep helps the brain store new information.",
+      "Students who sleep poorly often score lower on exams.",
+      "Young adults need about seven to nine hours of sleep."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Every sentence in a paragraph should support its main idea, and dining hall menus have nothing to do with sleep. The other sentences give facts or effects that directly support why sleep matters."
+  },
+  {
+    "id": "TEAS-EN-028",
+    "section": "english",
+    "test": 1,
+    "module": 1,
+    "domain": "teasEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which revision changes \"The samples were labeled by the technician\" to the active voice?",
+    "options": [
+      "The samples were being labeled by the technician.",
+      "The samples had been labeled by the technician.",
+      "Labeled by the technician were the samples.",
+      "The technician labeled the samples."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "In active voice, the doer of the action, \"the technician,\" is the subject. The other options only change the tense or word order while keeping the passive construction."
+  },
+  {
+    "id": "TEAS-EN-029",
+    "section": "english",
+    "test": 1,
+    "module": 1,
+    "domain": "teasEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which sentence below uses the passive voice rather than the active voice?",
+    "options": [
+      "The night nurse gave the medication.",
+      "The night nurse will give the medication soon.",
+      "The medication was given by the night nurse.",
+      "The night nurse has given the medication."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "In passive voice, the receiver of the action is the subject and the verb uses a form of \"be\" plus a past participle: \"was given.\" \"Has given\" uses a past participle too, but the nurse is still the subject doing the action, so it is active."
+  },
+  {
+    "id": "TEAS-EN-030",
+    "section": "english",
+    "test": 1,
+    "module": 1,
+    "domain": "teasEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which option best combines \"The clinic is small. It serves over 500 patients each month\"?",
+    "options": [
+      "The clinic is small, it serves over 500 patients monthly.",
+      "Because the clinic is small, it serves over 500 patients monthly.",
+      "Although the clinic is small, it serves over 500 patients monthly.",
+      "The clinic is small, so it serves over 500 patients monthly."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "\"Although\" shows the contrast between a small clinic and a large number of patients. \"Because\" and \"so\" wrongly claim that being small causes the high volume, and joining the clauses with only a comma creates a comma splice."
+  },
+  {
+    "id": "TEAS-EN-031",
+    "section": "english",
+    "test": 1,
+    "module": 1,
+    "domain": "teasEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In the sentence \"The patient was lethargic, sleeping most of the day and responding slowly,\" what does \"lethargic\" mean?",
+    "options": [
+      "anxious and restless",
+      "sluggish and drowsy",
+      "feverish and flushed",
+      "confused and angry"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The context clues \"sleeping most of the day\" and \"responding slowly\" point to a lack of energy. Nothing in the sentence suggests fever, worry, or anger."
+  },
+  {
+    "id": "TEAS-EN-032",
+    "section": "english",
+    "test": 1,
+    "module": 1,
+    "domain": "teasEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In the sentence \"The nurse tried to alleviate the child's fear by explaining each step,\" what does \"alleviate\" most nearly mean?",
+    "options": [
+      "increase",
+      "ease",
+      "ignore",
+      "explain"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Explaining each step is a way to make fear smaller, so \"alleviate\" means to ease or relieve. \"Explain\" appears in the sentence but describes the method, not the meaning of the word."
+  },
+  {
+    "id": "TEAS-EN-033",
+    "section": "english",
+    "test": 1,
+    "module": 1,
+    "domain": "teasEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In the sentence \"Her symptoms were intermittent, appearing for a few hours and then vanishing for days,\" what does \"intermittent\" mean?",
+    "options": [
+      "constant and severe",
+      "slowly worsening",
+      "occurring on and off",
+      "sudden and long-lasting"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The sentence describes symptoms that appear and then vanish, which means they come and go. \"Constant\" is the opposite, since constant symptoms would never disappear."
+  },
+  {
+    "id": "TEAS-EN-034",
+    "section": "english",
+    "test": 1,
+    "module": 1,
+    "domain": "teasEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In the sentence \"The director gave a candid assessment, openly admitting the program's flaws,\" what does \"candid\" mean?",
+    "options": [
+      "rehearsed",
+      "frank",
+      "harsh",
+      "vague"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The phrase \"openly admitting\" signals honesty, so \"candid\" means frank. A candid statement may include criticism, but \"harsh\" adds a severity the sentence does not describe."
+  },
+  {
+    "id": "TEAS-EN-035",
+    "section": "english",
+    "test": 1,
+    "module": 1,
+    "domain": "teasEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The suffix \"-itis\" in words such as tonsillitis and arthritis indicates which of the following?",
+    "options": [
+      "inflammation",
+      "surgical removal",
+      "the study of",
+      "abnormal enlargement"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The suffix \"-itis\" means inflammation, so arthritis is inflammation of the joints. Surgical removal is indicated by \"-ectomy,\" and enlargement by \"-megaly.\""
+  },
+  {
+    "id": "TEAS-EN-036",
+    "section": "english",
+    "test": 1,
+    "module": 1,
+    "domain": "teasEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A patient is scheduled for an appendectomy. Based on the suffix, what procedure will the patient undergo?",
+    "options": [
+      "surgical removal of the appendix",
+      "inflammation of the appendix",
+      "imaging of the appendix",
+      "an incision to drain the appendix"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The suffix \"-ectomy\" means surgical removal. Inflammation of the appendix is appendicitis, which is usually the reason an appendectomy is performed."
+  },
+  {
+    "id": "TEAS-EN-037",
+    "section": "english",
+    "test": 1,
+    "module": 1,
+    "domain": "teasEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Based on its prefix and suffix, the term \"hypoglycemia\" describes which condition?",
+    "options": [
+      "high blood sugar",
+      "low blood pressure",
+      "high blood pressure",
+      "low blood sugar"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "\"Hypo-\" means below normal, \"glyc\" refers to sugar, and \"-emia\" refers to the blood, so hypoglycemia is low blood sugar. High blood sugar is hyperglycemia, which uses the opposite prefix."
+  },
+  {
+    "id": "TEAS-EN-038",
+    "section": "english",
+    "test": 0,
+    "module": 0,
+    "domain": "teasEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The word \"neurology\" combines a root and a suffix. What does \"neurology\" mean?",
+    "options": [
+      "inflammation of the nerves",
+      "the study of the skin",
+      "the study of nerves",
+      "surgery on the nerves"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "\"Neur\" refers to nerves and \"-ology\" means the study of, so neurology is the study of nerves and the nervous system. Inflammation of the nerves would be neuritis, and the study of the skin is dermatology."
+  },
+  {
+    "id": "TEAS-EN-039",
+    "section": "english",
+    "test": 0,
+    "module": 0,
+    "domain": "teasEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Using knowledge of word roots, which term names a physician who specializes in disorders of the skin?",
+    "options": [
+      "cardiologist",
+      "rheumatologist",
+      "dermatologist",
+      "neurologist"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The root \"derm\" means skin, so a dermatologist treats skin disorders. \"Cardi\" refers to the heart and \"neur\" to the nerves, and a rheumatologist treats joint and autoimmune conditions."
+  },
+  {
+    "id": "TEAS-EN-040",
+    "section": "english",
+    "test": 0,
+    "module": 0,
+    "domain": "teasEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which word has the most positive connotation for describing someone who spends money carefully?",
+    "options": [
+      "thrifty",
+      "stingy",
+      "cheap",
+      "penny-pinching"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "\"Thrifty\" suggests wise, responsible use of money. \"Stingy,\" \"cheap,\" and \"penny-pinching\" share the same basic denotation but suggest selfishness or an unwillingness to share."
+  },
+  {
+    "id": "TEAS-EN-041",
+    "section": "english",
+    "test": 0,
+    "module": 0,
+    "domain": "teasEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which word has the most negative connotation for describing a person who is confident?",
+    "options": [
+      "self-assured",
+      "poised",
+      "assertive",
+      "arrogant"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "\"Arrogant\" implies an inflated sense of self-importance, which is a negative judgment. \"Self-assured,\" \"poised,\" and \"assertive\" describe confidence in neutral or positive terms."
+  },
+  {
+    "id": "TEAS-EN-042",
+    "section": "english",
+    "test": 0,
+    "module": 0,
+    "domain": "teasEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which word most precisely completes the sentence \"The wound ___ a thick yellow fluid overnight\"?",
+    "options": [
+      "had",
+      "oozed",
+      "made",
+      "gave"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "\"Oozed\" precisely describes thick fluid slowly leaking from a wound. Vague verbs like \"had\" or \"made\" tell the reader far less about what the nurse observed."
+  },
+  {
+    "id": "TEAS-EN-043",
+    "section": "english",
+    "test": 0,
+    "module": 0,
+    "domain": "teasEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A student finishes a first draft, then rearranges paragraphs and adds supporting evidence. Which stage of the writing process is this?",
+    "options": [
+      "editing",
+      "revising",
+      "prewriting",
+      "publishing"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Revising involves changing content and organization, such as moving paragraphs and adding evidence. Editing comes later and focuses on surface errors in grammar, spelling, and punctuation."
+  },
+  {
+    "id": "TEAS-EN-044",
+    "section": "english",
+    "test": 0,
+    "module": 0,
+    "domain": "teasEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A student researching current diabetes treatments wants the most credible source. Which of the following should the student choose?",
+    "options": [
+      "a 2025 peer-reviewed article in a medical journal",
+      "a personal blog by a diabetes patient",
+      "a 2008 encyclopedia entry on diabetes",
+      "a supplement company's website about blood sugar control"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A recent peer-reviewed journal article is current and has been checked by experts. The encyclopedia entry is reputable but outdated for current treatments, and a company website has a commercial bias."
+  }
+]

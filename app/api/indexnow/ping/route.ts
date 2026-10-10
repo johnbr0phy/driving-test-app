@@ -1,4 +1,5 @@
 import { EXAMS, examLandingPath } from "@/lib/exams";
+import { EXAMS_V2 } from "@/lib/v2/registry";
 import { NextRequest, NextResponse } from "next/server";
 import { states } from "@/data/states";
 
@@ -25,6 +26,7 @@ function buildUrlList(): string[] {
   urls.add(`${SITE_URL}/practice-tests-by-state`);
   urls.add(`${SITE_URL}/tests`);
   for (const exam of EXAMS) urls.add(`${SITE_URL}${examLandingPath(exam)}`);
+  for (const exam of EXAMS_V2) urls.add(`${SITE_URL}${exam.landingPath}`);
   urls.add(`${SITE_URL}/es/examenes-practica-por-estado`);
 
   for (const state of states) {

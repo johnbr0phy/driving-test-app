@@ -61,7 +61,7 @@ export type AnswerValue = number[] | string;
 export interface ModuleDef {
   module: number;
   questionCount: number;
-  /** Seconds. */
+  /** Seconds. 0 = untimed (no clock, never auto-submits). */
   timeLimit: number;
   /** Adaptive: pick the variant of this module from the previous module's accuracy. */
   adaptive?: { threshold: number };
@@ -73,6 +73,12 @@ export interface SectionDef {
   shortName: string;
   modules: ModuleDef[];
   calculator?: boolean;
+  /**
+   * Computer-adaptive style (ASVAB): questions are answered in order, no
+   * going back, no palette jumping, no review screen; each question must be
+   * answered before Next.
+   */
+  linear?: boolean;
   /** Reference sheet (rich text) shown in the tools drawer. */
   reference?: string;
   /** Rich text shown on the section intro screen. */
@@ -111,6 +117,8 @@ export interface ExamV2Config {
   shortName: string;
   fullName: string;
   tagline: string;
+  /** Header and catalog icon key (see TestIcon). */
+  icon: string;
   /** Theme brand colour tokens (HSL triplets like the v1 themes). */
   theme: { brand: string; brandDark: string; brandLight: string };
   sections: SectionDef[];
@@ -119,8 +127,8 @@ export interface ExamV2Config {
   tests: { number: number; name: string }[];
   domainLabels: Record<string, string>;
   drills: DrillDef[];
-  /** Composite from section scaled scores. */
-  composite: { name: string; min: number; max: number; combine: (scaled: number[]) => number };
+  /** Composite from the scored sections (scaled, raw and total per section, in exam order). */
+  composite: { name: string; min: number; max: number; combine: (sections: SectionResult[]) => number };
   /** Default goal for the goal picker. */
   defaultGoal: number;
   goalChoices: number[];
@@ -132,6 +140,8 @@ export interface ExamV2Config {
     /** Five hero subtitles for 0%, <40%, <70%, <100%, 100% of steps complete. */
     heroSubs: [string, string, string, string, string];
     sourceLine: string;
+    /** One line under the composite on the results page saying what the score is. */
+    scoreNote: string;
   };
 }
 

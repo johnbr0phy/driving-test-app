@@ -41,7 +41,7 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "WebApplication",
-      name: "TigerTest - Free ASVAB Practice Tests",
+      name: "TigerTest - Free ASVAB Full CAT-ASVAB on a Computer",
       description,
       url: `${siteUrl}/asvab-practice-test`,
       applicationCategory: "EducationalApplication",
@@ -49,10 +49,11 @@ const jsonLd = {
       offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
       featureList: [
         "200 ASVAB practice questions",
-        "4 practice tests across all eight subtests",
-        "Training sets for every subtest",
+        "A full CAT-ASVAB simulation: eight timed subtests in test order, no going back",
+        "An AFQT percentile estimate plus a score for every subtest",
+        "Mastery drills for every subtest",
         "Instant feedback with explanations",
-        "Auto-save progress",
+        "Progress syncs between phone and computer",
       ],
     },
     {
@@ -101,7 +102,7 @@ const jsonLd = {
           name: "Is the TigerTest ASVAB practice test free?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. All four practice tests and all training sets are free, with no account required. Create a free account if you want your progress saved across devices.",
+            text: "Yes. The full CAT-ASVAB simulation and all eight drills are free, with no account required. Create a free account to keep your progress in step between your phone and your computer.",
           },
         },
       ],
@@ -137,7 +138,7 @@ export default function AsvabLandingPage() {
             Free ASVAB Practice Test 2026
           </h1>
           <ExamLandingHero
-            dashboardHref="/asvab/dashboard"
+            dashboardHref="/asvab"
             shortName="ASVAB"
             subtitle="200 questions across all eight subtests, weighted toward the four AFQT sections that decide whether you enlist. Tuned for mobile. No account needed."
             shots={{ mobile: "/landing/asvab-mobile.png", desktop: "/landing/asvab-desktop.png" }}
@@ -156,9 +157,9 @@ export default function AsvabLandingPage() {
               <Smartphone className="w-7 h-7 text-brand" />
             </div>
             <div className="bg-gray-50 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Training by Subtest</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Subtest Drills on Your Phone</h3>
               <p className="text-gray-600">
-                Four sets: arithmetic reasoning and math knowledge, word knowledge and paragraph comprehension, general science and electronics, and auto, shop and mechanical. Questions you miss come back until you have mastered them.
+                Eight drills, one per subtest, with the four AFQT subtests first. Math by hand with every step shown, word knowledge at ASVAB pace, paragraph comprehension with the passage beside the question. Every miss comes back until you have mastered it.
               </p>
             </div>
           </div>
@@ -169,7 +170,7 @@ export default function AsvabLandingPage() {
             <div className="bg-gray-50 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">Practice Tests</h3>
               <p className="text-gray-600">
-                Four 50-question tests that sample every subtest, with the key step shown on every math answer and the passage embedded in every paragraph comprehension item. No calculator, just like test day.
+                Eight subtests in the real order with the real time limits, no calculator, and no going back, just like the computer test at MEPS. Finish with an AFQT estimate, a score for every subtest, and a plan for what to drill next.
               </p>
             </div>
           </div>
@@ -255,7 +256,7 @@ export default function AsvabLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">4. Answer everything and keep moving</h3>
               <p>
-                The CAT-ASVAB adapts to you and will not let you go back, and unanswered questions count against you. Make your best pick and move on. Use TigerTest&apos;s per-subtest accuracy to find your weakest area, then retake that training set until you clear 85 percent with room to spare.
+                The CAT-ASVAB adapts to you and will not let you go back, and unanswered questions count against you. Make your best pick and move on. Use TigerTest&apos;s per-subtest accuracy to find your weakest area, then run that subtest&apos;s drill until every question is mastered.
               </p>
             </div>
           </div>
@@ -295,7 +296,7 @@ export default function AsvabLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 mb-2">Is the TigerTest ASVAB practice test free?</h3>
             <p className="text-gray-600">
-              Yes. All four practice tests and all training sets are free, with no account required. Create a free account if you want your progress saved across devices.
+              Yes. The full CAT-ASVAB simulation and all eight drills are free, with no account required. Create a free account to keep your progress in step between your phone and your computer.
             </p>
           </div>
         </div>
@@ -309,7 +310,7 @@ export default function AsvabLandingPage() {
         <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Ready to Ace the ASVAB?</h2>
           <p className="text-lg text-gray-600 mb-10">Free to start. No account required. 200 questions across all eight subtests.</p>
-          <ExamLandingCTA dashboardHref="/asvab/dashboard" />
+          <ExamLandingCTA dashboardHref="/asvab" />
         </div>
       </div>
     </div>

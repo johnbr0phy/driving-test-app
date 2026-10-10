@@ -18,15 +18,20 @@ function tex(src: string, display: boolean): string {
   }
 }
 
+// A literal dollar sign (prices) is written \$ in bank text so it is never
+// read as a math delimiter. Swapped for a placeholder before the math split.
+const DOLLAR = "\u0001";
+
 function inline(text: string, keyBase: string): ReactNode[] {
   const out: ReactNode[] = [];
   // Split on inline math first so markdown markers inside math are untouched.
-  const parts = text.split(/(\$[^$\n]+?\$)/g);
+  const parts = text.replace(/\\\$/g, DOLLAR).split(/(\$[^$\n]+?\$)/g);
   parts.forEach((part, i) => {
     if (part.startsWith("$") && part.endsWith("$") && part.length > 2) {
-      out.push(<span key={`${keyBase}-m${i}`} className="v2-tex" dangerouslySetInnerHTML={{ __html: tex(part.slice(1, -1), false) }} />);
+      out.push(<span key={`${keyBase}-m${i}`} className="v2-tex" dangerouslySetInnerHTML={{ __html: tex(part.slice(1, -1).replace(new RegExp(DOLLAR, "g"), "\\$"), false) }} />);
       return;
     }
+    part = part.replace(new RegExp(DOLLAR, "g"), "$");
     const tokens = part.split(/(\*\*[^*]+\*\*|__[^_]+__|\*[^*\n]+\*)/g);
     tokens.forEach((tok, j) => {
       const key = `${keyBase}-${i}-${j}`;

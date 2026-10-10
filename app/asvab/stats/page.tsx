@@ -1,8 +1,5 @@
-"use client";
+import { permanentRedirect } from "next/navigation";
 
-import { ExamStatsPage } from "@/components/exam/ExamStatsPage";
-import { getExamById } from "@/lib/exams";
-
-export default function AsvabStatsPage() {
-  return <ExamStatsPage exam={getExamById("asvab")!} />;
+export default function OldStats() {
+  permanentRedirect("/asvab");
 }

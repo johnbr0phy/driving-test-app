@@ -81,6 +81,15 @@ interface Metrics {
     questions: number;
   };
   funnel: { signups: number; engaged: number; hitPaywall: number; purchased: number };
+  // Optional: absent from payloads that predate visitor tracking.
+  visitorFunnel?: {
+    startedAt: string | null;
+    daily: Record<string, Record<string, number>>;
+    origins: {
+      tried: { accounts: number; purchased: number };
+      cold: { accounts: number; purchased: number };
+    };
+  };
 }
 
 type Range = "today" | "30d" | "90d" | "all";
@@ -304,7 +313,7 @@ function makeEndDot(color: string) {
   };
 }
 
-function Funnel({ data }: { data: { label: string; value: number }[] }) {
+function Funnel({ data }: { data: { label: string; value: number; note?: string }[] }) {
   const max = Math.max(...data.map((d) => d.value), 1);
   return (
     <div className="space-y-3">
@@ -333,13 +342,117 @@ function Funnel({ data }: { data: { label: string; value: number }[] }) {
               </span>
             </div>
             <p className="text-xs text-gray-400 text-right">
-              {stepRate != null
+              {stage.note ?? (stepRate != null
                 ? `${stepRate}% of previous`
-                : `${Math.round((stage.value / max) * 100)}% baseline`}
+                : `${Math.round((stage.value / max) * 100)}% baseline`)}
             </p>
           </div>
         );
       })}
+    </div>
+  );
+}
+
+// Signed-out browsers, from first page view to account (lib/funnel.ts). The
+// account funnel below starts where this one ends.
+type FunnelRange = "7d" | "30d" | "all";
+
+function VisitorFunnel({ data }: { data: NonNullable<Metrics["visitorFunnel"]> }) {
+  const [range, setRange] = useState<FunnelRange>("30d");
+  const since = range === "all" ? "" : dateKeyDaysAgo(range === "7d" ? 6 : 29);
+  const sum = (step: string) =>
+    Object.entries(data.daily[step] || {}).reduce((n, [d, c]) => (d >= since ? n + c : n), 0);
+  const visits = sum("visit");
+  const answered = sum("answered");
+  const opened = sum("signup_view");
+  const signups = sum("signup");
+  const tried = sum("signup_tried");
+  const cold = sum("signup_cold");
+  const pct = (n: number, d: number) => (d > 0 ? `${Math.round((n / d) * 100)}%` : "0%");
+  const rate = (n: number, d: number) => (d > 0 ? `${((n / d) * 100).toFixed(1)}%` : "n/a");
+  const { origins } = data;
+
+  return (
+    <div className="bg-white rounded-xl border border-gray-200/80 shadow-sm p-5">
+      <div className="mb-4 flex flex-wrap items-baseline justify-between gap-2">
+        <h2 className="text-sm font-semibold text-gray-900">Visitor funnel</h2>
+        <div className="flex items-center gap-1">
+          {(["7d", "30d", "all"] as const).map((r) => (
+            <button
+              key={r}
+              onClick={() => setRange(r)}
+              className={`text-xs px-2 py-1 rounded-md ${
+                range === r ? "bg-gray-900 text-white" : "text-gray-500 hover:text-gray-900"
+              }`}
+            >
+              {r === "all" ? "Since start" : r}
+            </button>
+          ))}
+        </div>
+      </div>
+      {!data.startedAt ? (
+        <p className="text-sm text-gray-400">No visitors tracked yet. Counting starts with this deploy.</p>
+      ) : (
+        <>
+          <Funnel
+            data={[
+              { label: "New visitors", value: visits, note: "baseline" },
+              { label: "Tried a question", value: answered, note: `${pct(answered, visits)} of visitors` },
+              { label: "Opened signup", value: opened, note: `${pct(opened, visits)} of visitors` },
+              { label: "Created an account", value: signups, note: `${pct(signups, opened)} of signup opens` },
+            ]}
+          />
+          <div className="mt-5 grid gap-4 sm:grid-cols-3">
+            <div className="rounded-lg bg-gray-50 p-3">
+              <p className="text-[11px] uppercase tracking-wide text-gray-400">Signup page drop-off</p>
+              <p className="mt-1 text-lg font-semibold text-gray-900">
+                {opened > 0 ? pct(Math.max(opened - signups, 0), opened) : "n/a"}
+              </p>
+              <p className="text-xs text-gray-500">opened signup, left without an account</p>
+            </div>
+            <div className="rounded-lg bg-gray-50 p-3">
+              <p className="text-[11px] uppercase tracking-wide text-gray-400">Tried, never signed up</p>
+              <p className="mt-1 text-lg font-semibold text-gray-900">{fmtInt(Math.max(answered - tried, 0))}</p>
+              <p className="text-xs text-gray-500">guests a signup wall would put at risk</p>
+            </div>
+            <div className="rounded-lg bg-gray-50 p-3">
+              <p className="text-[11px] uppercase tracking-wide text-gray-400">New accounts that tried first</p>
+              <p className="mt-1 text-lg font-semibold text-gray-900">{pct(tried, tried + cold)}</p>
+              <p className="text-xs text-gray-500">
+                {fmtInt(tried)} tried first, {fmtInt(cold)} signed up cold
+              </p>
+            </div>
+          </div>
+          <table className="mt-5 w-full text-sm">
+            <thead>
+              <tr className="text-[11px] uppercase tracking-wide text-gray-400">
+                <th className="text-left font-medium pb-2">Accounts since tracking began</th>
+                <th className="text-right font-medium pb-2 pl-4">Accounts</th>
+                <th className="text-right font-medium pb-2 pl-4">Purchased</th>
+                <th className="text-right font-medium pb-2 pl-4">Purchase rate</th>
+              </tr>
+            </thead>
+            <tbody>
+              {([
+                ["Tried before signing up", origins.tried],
+                ["Signed up cold", origins.cold],
+              ] as const).map(([label, o]) => (
+                <tr key={label} className="border-t border-gray-100">
+                  <td className="py-2 font-medium text-gray-900">{label}</td>
+                  <td className="py-2 pl-4 text-right tabular-nums">{fmtInt(o.accounts)}</td>
+                  <td className="py-2 pl-4 text-right tabular-nums">{fmtInt(o.purchased)}</td>
+                  <td className="py-2 pl-4 text-right tabular-nums">{rate(o.purchased, o.accounts)}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+          <p className="mt-4 text-[11px] text-gray-400">
+            Counts browsers, not people: each step fires once per browser while signed out, from{" "}
+            {fmtDayLabel(data.startedAt)}. A returning user on a new device counts as a visitor. True
+            site traffic (including people without JavaScript) is in Google Analytics.
+          </p>
+        </>
+      )}
     </div>
   );
 }
@@ -1037,6 +1150,9 @@ export default function AdminV2Page() {
 
         {/* Test requests */}
         {metrics.testRequests && <TestRequests data={metrics.testRequests} />}
+
+        {/* Visitor funnel */}
+        {metrics.visitorFunnel && <VisitorFunnel data={metrics.visitorFunnel} />}
 
         {/* Funnel */}
         <div className="bg-white rounded-xl border border-gray-200/80 shadow-sm p-5">

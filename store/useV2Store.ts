@@ -2,6 +2,7 @@ import { create } from "zustand";
 import { persist, createJSONStorage } from "zustand/middleware";
 import { DrillState, TestResultV2, TestSessionV2 } from "@/lib/v2/types";
 import { EMPTY_DRILL } from "@/lib/v2/training";
+import { trackFunnelStep } from "@/lib/funnel";
 
 /**
  * v2 store: full-length sectioned tests and domain drills for the v2 exams.
@@ -47,9 +48,13 @@ export const useV2Store = create<V2State>()(
           delete sessions[key];
           return { sessions };
         }),
-      addResult: (result) => set((s) => ({ results: [...s.results, result] })),
+      addResult: (result) => {
+        trackFunnelStep("answered");
+        set((s) => ({ results: [...s.results, result] }));
+      },
 
-      answerDrill: (key, questionId, correct, base) =>
+      answerDrill: (key, questionId, correct, base) => {
+        trackFunnelStep("answered");
         set((s) => {
           const d = s.drills[key] ?? base ?? EMPTY_DRILL;
           const wrongQueue = d.wrongQueue.filter((id) => id !== questionId);
@@ -57,7 +62,8 @@ export const useV2Store = create<V2State>()(
             ? { masteredIds: d.masteredIds.includes(questionId) ? d.masteredIds : [...d.masteredIds, questionId], wrongQueue, seen: d.seen + 1, correct: d.correct + 1 }
             : { masteredIds: d.masteredIds, wrongQueue: [...wrongQueue, questionId], seen: d.seen + 1, correct: d.correct };
           return { drills: { ...s.drills, [key]: next } };
-        }),
+        });
+      },
       resetDrill: (key) => set((s) => ({ drills: { ...s.drills, [key]: EMPTY_DRILL } })),
       setGoal: (examId, goal) => set((s) => ({ goals: { ...s.goals, [examId]: goal } })),
       replaceData: (data, syncedUid) => set({ ...data, syncedUid }),

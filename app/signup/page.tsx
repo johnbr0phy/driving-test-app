@@ -18,6 +18,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { useStore } from "@/store/useStore";
+import { trackFunnelStep } from "@/lib/funnel";
 import { WebViewGoogleWarning } from "@/components/WebViewGoogleWarning";
 import { useIsNativeApp } from "@/hooks/useIsNativeApp";
 import { auth, db } from "@/lib/firebase";
@@ -106,6 +107,11 @@ function SignupPageContent() {
       router.push("/dashboard");
     }
   };
+
+  // Visitor funnel: opened signup (counted once per signed-out browser)
+  useEffect(() => {
+    if (!authLoading && !user) trackFunnelStep("signup_view");
+  }, [authLoading, user]);
 
   // Finishes a Google signup that went through the mobile full-page
   // redirect flow: the page reloads on return from Google, so the

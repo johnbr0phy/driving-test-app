@@ -1,6 +1,7 @@
 "use client";
 
 import { createContext, useContext, useEffect, useState, useCallback } from "react";
+import { trackFunnelSignup } from "@/lib/funnel";
 import {
   User,
   createUserWithEmailAndPassword,
@@ -188,6 +189,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         if (result?.user) {
           const additionalInfo = getAdditionalUserInfo(result);
           if (additionalInfo?.isNewUser) {
+            trackFunnelSignup();
             sendWelcomeEmail(result.user.uid, result.user.email!, result.user.displayName, true);
           }
         }
@@ -201,6 +203,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     const userCredential = await createUserWithEmailAndPassword(auth, email, password);
 
     if (userCredential.user) {
+      trackFunnelSignup();
       // Send verification email
       sendEmailVerification(userCredential.user).catch(err => console.error('Failed to send verification email:', err));
       // Send welcome email via Resend
@@ -225,6 +228,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     // Send welcome email for new Google signups only
     const additionalInfo = getAdditionalUserInfo(result);
     if (result.user && additionalInfo?.isNewUser) {
+      trackFunnelSignup();
       sendWelcomeEmail(result.user.uid, result.user.email!, result.user.displayName, true);
     }
   };

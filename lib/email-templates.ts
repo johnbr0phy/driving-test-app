@@ -15,6 +15,7 @@
 
 import { EmailVoice, dashboardUrl, statsUrl } from "@/lib/email-voice";
 import { TEST_REQUEST_PICKS } from "@/lib/test-requests";
+import { EXAMS_V2 } from "@/lib/v2/registry";
 
 interface ShellOptions {
   /** <title>, used by some clients as the preview label. */
@@ -264,32 +265,52 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
     }),
 
   // Sent by the Stripe webhook the moment a purchase lands. Transactional, so
-  // no unsubscribe link. DMV only.
-  purchaseWelcome: (v) =>
-    emailShell({
+  // no unsubscribe link. Leads with the exam the buyer paid from (DMV, SAT or
+  // ACT), then links every exam Premium covers, because the SAT and ACT
+  // dashboards are hard to find from the DMV side of the site.
+  purchaseWelcome: (v) => {
+    const campaign = "purchase_welcome";
+    const link = (path: string, label: string) =>
+      `<a href="${SITE}${path}?${utm(campaign)}" style="color: #1a1a1a; font-weight: 600; text-decoration: underline;">${label}</a>`;
+    const premiumV2 = EXAMS_V2.filter((e) => e.premium);
+    const lead = premiumV2.find((e) => e.id === v.id);
+
+    const lockedDrillCount = (id: string) => premiumV2.find((e) => e.id === id)!.premium!.lockedDrills.length;
+
+    const dmvLine = `${link("/dashboard", "DMV permit test")}: Safety &amp; Emergencies and State Laws, practice tests C and D, and your stats page`;
+    // The exam they bought from goes first, then the other v2 exams, then the DMV.
+    const v2Lines = [...premiumV2]
+      .sort((a, b) => Number(b.id === v.id) - Number(a.id === v.id))
+      .map((e) => `${link(e.slug, `${e.shortName} practice`)}: Practice Test 2 and ${lockedDrillCount(e.id)} more skill drills`);
+    const lines = lead ? [...v2Lines, dmvLine] : [dmvLine, ...v2Lines];
+
+    return emailShell({
       title: "You're in - here's what just unlocked",
       heading: "You're in 🎉",
       unsubscribe: false,
       body: [
         p(
-          "Thanks for buying Premium. It's live on your account now, on every device you sign in on.",
+          "Thanks for buying Premium. It's live on your account now, on every device you sign in on, and it covers every exam below:",
         ),
-        ul([
-          "<strong>Safety &amp; Emergencies</strong> and <strong>State Laws</strong>, 100 questions",
-          "<strong>Practice tests C and D</strong>",
-          "<strong>Your stats page</strong>, showing what you keep missing",
-          "<strong>SAT and ACT Premium</strong>: Practice Test 2 and every drill question, whenever you need them",
-        ]),
+        ul(lines),
+        lead
+          ? p(
+              `Start with ${lead.shortName} Practice Test 2. It never appears in the drills, so your score is an honest read on how ready you are.`,
+            )
+          : p("Open your stats after the next test. It tells you where to spend your study time."),
+        lead
+          ? cta(`${SITE}${lead.slug}?${utm(campaign)}`, `Open Your ${lead.shortName} Dashboard`)
+          : cta(DASH(v, campaign), "Start With Safety & Emergencies"),
         p(
-          "Open your stats after the next test. It tells you where to spend your study time.",
+          `Taking the ${[...premiumV2.filter((e) => e.id !== v.id).map((e) => e.shortName), ...(lead ? ["permit test"] : [])].join(" or ")} ${lead ? "too" : "later"}? Bookmark the links above. Your Premium is already there.`,
         ),
-        cta(DASH(v, "purchase_welcome"), "Start With Safety & Emergencies"),
         p(
           "One-time payment, nothing to cancel. Reply if anything looks wrong and a human will read it.",
         ),
-        signoff("Good luck at the DMV,"),
+        signoff(lead ? "Good luck on test day," : "Good luck at the DMV,"),
       ].join("\n"),
-    }),
+    });
+  },
 
   // 5+ days idle with at least one test completed.
   reengagement: (v) =>

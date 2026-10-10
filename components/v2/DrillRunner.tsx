@@ -4,7 +4,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import { X, RotateCcw } from "lucide-react";
+import { X, RotateCcw, Lock } from "lucide-react";
 import { ExamV2Config, AnswerValue, QuestionV2 } from "@/lib/v2/types";
 import { getBank, getStimulus } from "@/lib/v2/bank";
 import { v2Routes } from "@/lib/v2/registry";
@@ -17,7 +17,7 @@ import { useSound } from "@/hooks/useSound";
 import { getTigerAsset } from "@/lib/tigerAssets";
 import { useIsPremium } from "@/hooks/useIsPremium";
 import { useIsNativeApp } from "@/hooks/useIsNativeApp";
-import { availableDrillQuestions, isDrillCapped, otherPremiumExams } from "@/lib/v2/premium";
+import { isDrillLocked, otherPremiumExams } from "@/lib/v2/premium";
 import { QuestionView } from "./QuestionView";
 import { useV2Paywall, V2Paywall } from "./V2Paywall";
 
@@ -37,11 +37,11 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
   const resetDrill = useV2Store((s) => s.resetDrill);
 
   const allQuestions = useMemo(() => (drill ? drillQuestions(getBank(exam.id).questions, drill, heldOutTests(exam)) : []), [exam, drill]);
-  // Without Premium a drill is its first N questions, in the drill's fixed
-  // order, so resetting the drill never hands out a fresh free batch.
+  const questions = allQuestions;
+  // A Premium drill stays open for anyone already working in it (their own
+  // saved progress, not progress carried over from a retired drill).
   const { isPremium, ready: premiumReady } = useIsPremium();
-  const questions = useMemo(() => availableDrillQuestions(exam, allQuestions, isPremium), [exam, allQuestions, isPremium]);
-  const capped = isDrillCapped(exam, allQuestions.length, isPremium);
+  const locked = !!drill && premiumReady && isDrillLocked(exam, drill.key, isPremium) && !drillsMap[key];
   // Own progress, or what carried over from the drill this one was split from.
   const state = drill ? drillStateFor(drillsMap, exam.id, drill, allQuestions) : EMPTY_DRILL;
   const paywall = useV2Paywall(exam, "drill");
@@ -78,14 +78,8 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
   }, [drill, exam.id, allQuestions, questions]);
 
   useEffect(() => {
-    if (hydrated && drill && premiumReady && !question && !done) load();
-  }, [hydrated, drill, premiumReady, question, done, load]);
-
-  // Premium arriving mid-drill (bought in another tab) opens the rest of it.
-  const poolSize = questions.length;
-  useEffect(() => {
-    setDone(false);
-  }, [poolSize]);
+    if (hydrated && drill && premiumReady && !locked && !question && !done) load();
+  }, [hydrated, drill, premiumReady, locked, question, done, load]);
 
   const check = (value?: AnswerValue) => {
     if (!question || revealed) return;
@@ -113,6 +107,38 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
     return <div className="v2-focus items-center justify-center text-gray-600">Loading...</div>;
   }
 
+  if (locked) {
+    return (
+      <div className="v2-focus">
+        <div className="v2-safe-top shrink-0 bg-white px-3 pb-2">
+          <Link href={routes.dashboard} className="v2-tap -ml-1 flex w-10 items-center justify-center rounded-full text-gray-500" aria-label="Back to dashboard">
+            <X className="h-5 w-5" />
+          </Link>
+        </div>
+        <div className="v2-scroll">
+          <div className="mx-auto max-w-md px-6 py-8 text-center">
+            <Image src={getTigerAsset(exam.id, 3)} alt="" width={112} height={112} className="mx-auto h-28 w-28 object-contain" />
+            <h1 className="mt-3 flex items-center justify-center gap-2 text-xl font-bold text-gray-900">
+              <Lock className="h-5 w-5 text-gray-400" /> {drill.name}
+            </h1>
+            <p className="mt-2 text-sm text-gray-600">
+              {drill.blurb} {allQuestions.length} questions, part of TigerTest Premium along with Practice Test 2 and {otherPremiumExams(exam)}.
+            </p>
+            <button
+              type="button"
+              onClick={() => paywall.open(`drill_${drill.key}`, `${drill.name} drill`)}
+              className="v2-tap mt-6 w-full rounded-xl bg-brand text-base font-bold text-white"
+            >
+              Unlock with Premium{isNative ? "" : " · $9.99"}
+            </button>
+            <Link href={routes.dashboard} className="mt-3 block text-sm font-semibold text-gray-500">Back to the dashboard</Link>
+          </div>
+        </div>
+        <V2Paywall exam={exam} {...paywall.modalProps} />
+      </div>
+    );
+  }
+
   const mastered = state.masteredIds.filter((id) => questions.some((q) => q.id === id)).length;
   const pct = questions.length ? Math.round((mastered / questions.length) * 100) : 0;
 
@@ -125,7 +151,7 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
           </Link>
           <div className="min-w-0 flex-1">
             <div className="truncate text-sm font-bold">{drill.name}</div>
-            <div className="text-xs text-gray-500">{mastered} of {questions.length}{capped ? " free" : ""} mastered{state.wrongQueue.length ? ` · ${state.wrongQueue.length} to retry` : ""}</div>
+            <div className="text-xs text-gray-500">{mastered} of {questions.length} mastered{state.wrongQueue.length ? ` · ${state.wrongQueue.length} to retry` : ""}</div>
           </div>
           <button type="button" onClick={() => setConfirmReset(true)} className="v2-tap flex w-10 items-center justify-center rounded-full text-gray-500" aria-label="Reset this drill">
             <RotateCcw className="h-5 w-5" />
@@ -138,22 +164,7 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
 
       <div className="v2-scroll" ref={scroller}>
         <div className="mx-auto max-w-2xl px-4 py-4">
-          {done && capped ? (
-            <div className="v2-pop rounded-2xl border border-gray-200 bg-white p-6 text-center">
-              <Image src={getTigerAsset(exam.id, 2)} alt="" width={112} height={112} className="mx-auto h-28 w-28 object-contain" />
-              <h2 className="mt-2 text-xl font-bold">Free questions mastered</h2>
-              <p className="mt-1 text-sm text-gray-600">
-                You&apos;ve mastered all {questions.length} free {drill.name} questions. {allQuestions.length - questions.length} more are waiting in this drill.
-              </p>
-              <div className="mt-5 flex flex-col gap-2">
-                <button type="button" onClick={() => paywall.open(`drill_${drill.key}`, `${drill.name} drill`)} className="v2-tap rounded-xl bg-brand text-sm font-bold text-white">
-                  Unlock all {allQuestions.length} questions{isNative ? "" : " · $9.99"}
-                </button>
-                <Link href={routes.dashboard} className="v2-tap flex items-center justify-center rounded-xl border-2 border-gray-300 bg-white text-sm font-semibold">Back to dashboard</Link>
-              </div>
-              <p className="mt-3 text-xs text-gray-500">One payment covers every {exam.shortName} drill, Practice Test 2, and {otherPremiumExams(exam)}.</p>
-            </div>
-          ) : done ? (
+          {done ? (
             <div className="v2-pop rounded-2xl border border-green-200 bg-green-50 p-6 text-center">
               <Image src={getTigerAsset(exam.id, 1)} alt="" width={112} height={112} className="mx-auto h-28 w-28 object-contain" />
               <h2 className="mt-2 text-xl font-bold text-green-900">Drill mastered</h2>

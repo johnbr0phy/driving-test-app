@@ -6,26 +6,16 @@
  * Client-side gating, like the DMV: the banks ship with the page.
  */
 
-import { ExamV2Config, QuestionV2 } from "@/lib/v2/types";
+import { ExamV2Config } from "@/lib/v2/types";
 import { EXAMS_V2 } from "@/lib/v2/registry";
 
 export function isTestLocked(exam: ExamV2Config, testNumber: number, isPremium: boolean): boolean {
   return !isPremium && !!exam.premium?.lockedTests.includes(testNumber);
 }
 
-/** The drill questions this person may use: all of them, or the free first N. */
-export function availableDrillQuestions(
-  exam: ExamV2Config,
-  questions: QuestionV2[],
-  isPremium: boolean
-): QuestionV2[] {
-  if (isPremium || !exam.premium) return questions;
-  return questions.slice(0, exam.premium.freeDrillQuestions);
-}
-
-/** True when part of this drill sits behind Premium for this person. */
-export function isDrillCapped(exam: ExamV2Config, total: number, isPremium: boolean): boolean {
-  return !isPremium && !!exam.premium && total > exam.premium.freeDrillQuestions;
+/** True when this whole drill needs Premium for this person. */
+export function isDrillLocked(exam: ExamV2Config, drillKey: string, isPremium: boolean): boolean {
+  return !isPremium && !!exam.premium?.lockedDrills.includes(drillKey);
 }
 
 /**

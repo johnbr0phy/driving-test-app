@@ -60,10 +60,10 @@ export const SAT: ExamV2Config = {
   ],
   premium: {
     lockedTests: [2],
-    freeDrillQuestions: 15,
+    lockedDrills: ["expression", "geometry"],
     benefits: [
       "Practice Test 2: unseen, adaptive, a true readiness check",
-      "Every question in all eight SAT skill drills",
+      "Expression of Ideas and Geometry and Trigonometry drills",
       "The ACT and DMV tests too, with the same purchase",
     ],
   },

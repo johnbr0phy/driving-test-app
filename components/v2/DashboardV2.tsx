@@ -13,14 +13,14 @@ import { ExamV2Config, TestResultV2 } from "@/lib/v2/types";
 import { getBank } from "@/lib/v2/bank";
 import { getSectionV2, stagesOf, v2Routes } from "@/lib/v2/registry";
 import { sessionKey } from "@/lib/v2/session";
-import { drillQuestions, drillStateFor, heldOutTests, EMPTY_DRILL } from "@/lib/v2/training";
+import { drillKey, drillQuestions, drillStateFor, heldOutTests, EMPTY_DRILL } from "@/lib/v2/training";
 import { useV2Store, resultsForExam } from "@/store/useV2Store";
 import { useHydration } from "@/hooks/useHydration";
 import { ProgressCard, Collapse } from "@/components/dashboard/ProgressCard";
 import { getTigerAsset, TigerExpression } from "@/lib/tigerAssets";
 import { useIsPremium } from "@/hooks/useIsPremium";
 import { usePurchaseReturn } from "@/hooks/usePurchaseReturn";
-import { isDrillCapped, isTestLocked, otherPremiumExams } from "@/lib/v2/premium";
+import { isDrillLocked, isTestLocked, otherPremiumExams } from "@/lib/v2/premium";
 import { useV2Paywall, V2Paywall } from "./V2Paywall";
 
 function heroTitle(done: number, total: number): string {
@@ -81,8 +81,9 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
     const qs = drillQuestions(bank, d, heldOutTests(exam));
     const st = hydrated ? drillStateFor(drills, exam.id, d, qs) : EMPTY_DRILL;
     const mastered = st.masteredIds.filter((id) => qs.some((q) => q.id === id)).length;
-    const capped = premiumReady && isDrillCapped(exam, qs.length, isPremium);
-    return { def: d, total: qs.length, mastered, capped, started: st.seen > 0, complete: qs.length > 0 && mastered === qs.length };
+    // Same rule as the drill page: open for anyone already working in it.
+    const locked = premiumReady && isDrillLocked(exam, d.key, isPremium) && !(hydrated && drills[drillKey(exam.id, d.key)]);
+    return { def: d, total: qs.length, mastered, locked, started: st.seen > 0, complete: qs.length > 0 && mastered === qs.length };
   });
   const testSteps = exam.tests.map((t) => {
     const attempts = history.filter((r) => r.testNumber === t.number);
@@ -186,8 +187,8 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
                   <ProgressCard
                     title={s.def.name}
                     subtitle={
-                      s.capped
-                        ? `${s.mastered}/${s.total} mastered · first ${exam.premium!.freeDrillQuestions} free`
+                      s.locked
+                        ? `Premium · ${s.total} questions · ${s.def.weight}`
                         : `${s.mastered}/${s.total} mastered · ${s.def.weight}`
                     }
                     completed={s.complete}
@@ -201,7 +202,9 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
                             ? { label: "Keep going", color: "amber" }
                             : undefined
                     }
-                    href={routes.drill(s.def.key)}
+                    isPremiumLocked={s.locked}
+                    href={s.locked ? undefined : routes.drill(s.def.key)}
+                    onClick={s.locked ? () => paywall.open(`drill_${s.def.key}`, `${s.def.name} drill`) : undefined}
                   />
                 </div>
               );
@@ -292,7 +295,7 @@ function PurchaseBanner({ exam }: { exam: ExamV2Config }) {
       <div className="flex-1">
         <p className="text-base font-bold text-green-900">Welcome to Premium!</p>
         <p className="mt-0.5 text-xs text-green-700">
-          {exam.shortName} Practice Test 2 and every drill question are unlocked, and so are {otherPremiumExams(exam)}.
+          {exam.shortName} Practice Test 2 and every drill are unlocked, and so are {otherPremiumExams(exam)}.
         </p>
       </div>
       <button type="button" onClick={dismiss} className="text-green-600 hover:text-green-800" aria-label="Dismiss">

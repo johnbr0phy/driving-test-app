@@ -155,8 +155,8 @@ export interface ExamV2Config {
   premium?: {
     /** Full tests that need Premium. A test already in progress stays open. */
     lockedTests: number[];
-    /** Free questions per drill: the first N in the drill's fixed order. */
-    freeDrillQuestions: number;
+    /** Drill keys that need Premium (the last drill in each section). The rest are fully free. */
+    lockedDrills: string[];
     /** Premium bullets for the paywall, in this exam's words. */
     benefits: string[];
   };

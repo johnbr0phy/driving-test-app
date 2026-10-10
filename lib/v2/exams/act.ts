@@ -67,10 +67,10 @@ export const ACT: ExamV2Config = {
   ],
   premium: {
     lockedTests: [2],
-    freeDrillQuestions: 15,
+    lockedDrills: ["language", "modeling", "craftIntegration", "evaluation"],
     benefits: [
       "Practice Test 2: unseen, a true readiness check",
-      "Every question in all eleven ACT skill drills",
+      "Knowledge of Language, Essential Skills and Modeling, Craft and Integration, and Evaluation of Models drills",
       "The SAT and DMV tests too, with the same purchase",
     ],
   },

@@ -186,11 +186,7 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
                   )}
                   <ProgressCard
                     title={s.def.name}
-                    subtitle={
-                      s.locked
-                        ? `Premium · ${s.total} questions · ${s.def.weight}`
-                        : `${s.mastered}/${s.total} mastered · ${s.def.weight}`
-                    }
+                    subtitle={s.locked ? `Premium · ${s.total} questions` : `${s.mastered}/${s.total} mastered`}
                     completed={s.complete}
                     stepNumber={index + 1}
                     stamp={

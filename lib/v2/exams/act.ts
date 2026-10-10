@@ -93,17 +93,17 @@ export const ACT: ExamV2Config = {
   // with Craft and Structure so no drill is a handful of questions.
   // legacyKey carries progress over from the four section drills these replaced.
   drills: [
-    { key: "conventions", legacyKey: "english", name: "Conventions of Standard English", section: "english", domains: ["conventions"], blurb: "Punctuation, agreement, pronouns, modifiers and sentence boundaries, passage by passage.", weight: "Commas, agreement, sentence structure" },
-    { key: "production", legacyKey: "english", name: "Production of Writing", section: "english", domains: ["production"], blurb: "Transitions, adding or deleting a sentence, placement, topic sentences and conclusions.", weight: "Transitions, adding and deleting" },
-    { key: "language", legacyKey: "english", name: "Knowledge of Language", section: "english", domains: ["language"], blurb: "Concision, redundancy, precise word choice and a consistent tone.", weight: "Concision, word choice, tone" },
-    { key: "algebra", legacyKey: "math", name: "Preparing for Higher Math", section: "math", domains: ["algebra"], blurb: "Equations, exponents, quadratics, functions and sequences, with every step shown.", weight: "Algebra, functions, sequences" },
-    { key: "geometry", legacyKey: "math", name: "Geometry and Statistics", section: "math", domains: ["geometry"], blurb: "Angles, triangles, circles, area, probability, mean and median.", weight: "Shapes, circles, probability" },
-    { key: "modeling", legacyKey: "math", name: "Essential Skills and Modeling", section: "math", domains: ["modeling"], blurb: "Rates, unit conversions, ratios, percents and real-world graphs.", weight: "Rates, percents, proportions" },
-    { key: "keyIdeas", legacyKey: "reading", name: "Key Ideas and Details", section: "reading", domains: ["keyIdeas"], blurb: "Main idea, explicit detail, inference, cause and effect, and how characters change.", weight: "Main idea, detail, inference" },
-    { key: "craftIntegration", legacyKey: "reading", name: "Craft, Structure and Integration", section: "reading", domains: ["craft", "integration"], blurb: "Words in context, author's purpose, how claims are supported, and paired passages.", weight: "Purpose, word meaning, evidence" },
-    { key: "interpretation", legacyKey: "science", name: "Interpretation of Data", section: "science", domains: ["interpretation"], blurb: "Read tables and graphs, spot trends, interpolate and extrapolate.", weight: "Tables, graphs, trends" },
-    { key: "investigation", legacyKey: "science", name: "Scientific Investigation", section: "science", domains: ["investigation"], blurb: "Variables, controls, procedures and how to design the next experiment.", weight: "Variables, controls, design" },
-    { key: "evaluation", legacyKey: "science", name: "Evaluation of Models", section: "science", domains: ["evaluation"], blurb: "Test claims and hypotheses against data and weigh conflicting viewpoints.", weight: "Claims, hypotheses, viewpoints" },
+    { key: "conventions", legacyKey: "english", name: "Conventions of Standard English", section: "english", domains: ["conventions"], blurb: "Punctuation, agreement, pronouns, modifiers and sentence boundaries, passage by passage." },
+    { key: "production", legacyKey: "english", name: "Production of Writing", section: "english", domains: ["production"], blurb: "Transitions, adding or deleting a sentence, placement, topic sentences and conclusions." },
+    { key: "language", legacyKey: "english", name: "Knowledge of Language", section: "english", domains: ["language"], blurb: "Concision, redundancy, precise word choice and a consistent tone." },
+    { key: "algebra", legacyKey: "math", name: "Preparing for Higher Math", section: "math", domains: ["algebra"], blurb: "Equations, exponents, quadratics, functions and sequences, with every step shown." },
+    { key: "geometry", legacyKey: "math", name: "Geometry and Statistics", section: "math", domains: ["geometry"], blurb: "Angles, triangles, circles, area, probability, mean and median." },
+    { key: "modeling", legacyKey: "math", name: "Essential Skills and Modeling", section: "math", domains: ["modeling"], blurb: "Rates, unit conversions, ratios, percents and real-world graphs." },
+    { key: "keyIdeas", legacyKey: "reading", name: "Key Ideas and Details", section: "reading", domains: ["keyIdeas"], blurb: "Main idea, explicit detail, inference, cause and effect, and how characters change." },
+    { key: "craftIntegration", legacyKey: "reading", name: "Craft, Structure and Integration", section: "reading", domains: ["craft", "integration"], blurb: "Words in context, author's purpose, how claims are supported, and paired passages." },
+    { key: "interpretation", legacyKey: "science", name: "Interpretation of Data", section: "science", domains: ["interpretation"], blurb: "Read tables and graphs, spot trends, interpolate and extrapolate." },
+    { key: "investigation", legacyKey: "science", name: "Scientific Investigation", section: "science", domains: ["investigation"], blurb: "Variables, controls, procedures and how to design the next experiment." },
+    { key: "evaluation", legacyKey: "science", name: "Evaluation of Models", section: "science", domains: ["evaluation"], blurb: "Test claims and hypotheses against data and weigh conflicting viewpoints." },
   ],
   composite: {
     name: "Composite score",

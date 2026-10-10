@@ -308,14 +308,14 @@ const civics: ExamConfig = {
   copy: {
     guestPrompt: "to save your civics test progress and track every question you miss",
     trainingHeading: "Train by section of the official list",
-    trainingSub: "Four sets covering all 128 official questions. Instant feedback, and missed questions come back until you master them.",
-    testsHeading: "Practice tests · 50 questions, 60% to pass like the real test",
+    trainingSub: "Four sets with 200 adapted study items for the 2025 civics test. Review the official questions and prepare your own local answers.",
+    testsHeading: "Multiple-choice practice · 50 questions · 60% practice target",
     heroSubs: [
-      "All 128 official questions, four full tests. Government and history are most of the test.",
+      "200 adapted study items and four practice tests. Prepare your own local answers before the interview.",
       "Mastery first, then test. The sets follow the USCIS list section by section.",
       "Halfway through the list. The practice tests will show where you stand.",
       "Fix the misses, then retake. On the real test you need 12 of 20.",
-      "Full prep done. Check uscis.gov for answer updates before your interview.",
+      "Practice complete. Review official USCIS questions, local answers, and the test version for your application.",
     ],
     sourceLine: "Built from the official USCIS 2025 civics test list (128 questions). Officials' names change; check uscis.gov/citizenship/testupdates.",
     analyticsKey: "civics",

@@ -48,15 +48,15 @@
       "stem": "[2] Which choice is best for the underlined portion?",
       "options": [
         "NO CHANGE",
-        "and its downtown had been built around the automobile.",
         "its downtown, had been built around the automobile.",
-        "its downtown had been built, around the automobile."
+        "its downtown had been built, around the automobile.",
+        "and its downtown had been built around the automobile."
       ],
       "correct": [
-        1
+        3
       ],
       "lockedOrder": true,
-      "explanation": "As written, two independent clauses (\"It was a city ... low hills\" and \"its downtown had been built ...\") are joined by only a comma, which is a comma splice. Adding the coordinating conjunction \"and\" after the comma correctly joins them. Choices C and D keep the splice and add unnecessary commas inside the second clause."
+      "explanation": "As written, two independent clauses (\"It was a city ... low hills\" and \"its downtown had been built ...\") are joined by only a comma, which is a comma splice. Adding the coordinating conjunction \"and\" after the comma correctly joins them. Choices B and C keep the splice and add unnecessary commas inside the second clause."
     },
     {
       "id": "ACT-EN-133",
@@ -117,15 +117,15 @@
       "stem": "[5] Which choice is best for the underlined portion?",
       "options": [
         "NO CHANGE",
-        "an annual pass, priced at sixty dollars, cost",
         "an annual pass, priced at sixty dollars cost",
+        "an annual pass, priced at sixty dollars, cost",
         "an annual pass priced, at sixty dollars, cost"
       ],
       "correct": [
-        1
+        2
       ],
       "lockedOrder": true,
-      "explanation": "\"Priced at sixty dollars\" is a nonessential phrase that describes the pass, so it needs a comma on both sides. The original and choice C each use only one comma, leaving the phrase half set off and separating the subject \"pass\" from its verb \"cost.\" Choice D splits the phrase itself in the wrong place."
+      "explanation": "\"Priced at sixty dollars\" is a nonessential phrase that describes the pass, so it needs a comma on both sides. The original and choice B each use only one comma, leaving the phrase half set off and separating the subject \"pass\" from its verb \"cost.\" Choice D splits the phrase itself in the wrong place."
     },
     {
       "id": "ACT-EN-136",
@@ -163,15 +163,15 @@
       "stem": "[7] Which choice most effectively introduces the paragraph?",
       "options": [
         "NO CHANGE",
-        "changed the way the city thought about its streets.",
         "required the hiring of a dozen new mechanics.",
-        "led to a surge in bicycle sales at local shops."
+        "led to a surge in bicycle sales at local shops.",
+        "changed the way the city thought about its streets."
       ],
       "correct": [
-        1
+        3
       ],
       "lockedOrder": true,
-      "explanation": "The rest of the paragraph describes how daily riders made protected bike lanes seem like basic maintenance and how the council then approved new lanes. Choice B introduces that shift in the city's thinking about its streets. Tourists, mechanics, and bicycle sales (choices A, C, and D) are never mentioned in the paragraph."
+      "explanation": "The rest of the paragraph describes how daily riders made protected bike lanes seem like basic maintenance and how the council then approved new lanes. Choice D introduces that shift in the city's thinking about its streets. Tourists, mechanics, and bicycle sales (choices A, B, and C) are never mentioned in the paragraph."
     },
     {
       "id": "ACT-EN-138",
@@ -232,12 +232,12 @@
       "stem": "[10] Which choice is best for the underlined portion?",
       "options": [
         "NO CHANGE",
-        "Not surprisingly,",
         "In contrast,",
+        "Not surprisingly,",
         "Even so,"
       ],
       "correct": [
-        1
+        2
       ],
       "lockedOrder": true,
       "explanation": "The previous sentences explain why Brightwater's approach worked, and the final sentence says other cities are studying it. That is a natural consequence, so \"Not surprisingly\" fits. \"Nevertheless,\" \"In contrast,\" and \"Even so\" all signal a contradiction that is not present."
@@ -278,12 +278,12 @@
       "stem": "[2] Which choice is best for the underlined portion?",
       "options": [
         "NO CHANGE",
-        "worn",
         "deficient",
-        "obsolete"
+        "obsolete",
+        "worn"
       ],
       "correct": [
-        1
+        3
       ],
       "lockedOrder": true,
       "explanation": "The next paragraph describes the effects of sixty years of use: lifted veneer, missing key tops, and worn damper felt. \"Worn\" captures that gradual wear and matches the essay's measured, reflective tone. \"Busted\" is too casual for the essay, \"deficient\" suggests the piano lacked something by design, and \"obsolete\" means out of date, which is not the problem."
@@ -347,12 +347,12 @@
       "stem": "[5] Which choice is best for the underlined portion?",
       "options": [
         "NO CHANGE",
+        "give the lowdown on",
         "explain",
-        "expound at length regarding",
-        "give the lowdown on"
+        "expound at length regarding"
       ],
       "correct": [
-        1
+        2
       ],
       "lockedOrder": true,
       "explanation": "The essay uses a plain, reflective voice, so the simple verb \"explain\" fits best. \"Spill the beans on\" and \"give the lowdown on\" are slang expressions that clash with that tone. \"Expound at length regarding\" is wordy and overly formal."
@@ -393,15 +393,15 @@
       "stem": "[7] Which choice is best for the underlined portion?",
       "options": [
         "NO CHANGE",
-        "Each of the eighty-eight keys was",
         "Each of the eighty-eight keys have been",
-        "Each of the eighty-eight keys, was"
+        "Each of the eighty-eight keys, was",
+        "Each of the eighty-eight keys was"
       ],
       "correct": [
-        1
+        3
       ],
       "lockedOrder": true,
-      "explanation": "The subject of the sentence is the singular pronoun \"each,\" not the plural \"keys\" inside the prepositional phrase, so the verb must be singular: \"was.\" Choices A and C use plural verbs, and choice D adds a comma between the subject and its verb."
+      "explanation": "The subject of the sentence is the singular pronoun \"each,\" not the plural \"keys\" inside the prepositional phrase, so the verb must be singular: \"was.\" Choices A and B use plural verbs, and choice C adds a comma between the subject and its verb."
     },
     {
       "id": "ACT-EN-148",

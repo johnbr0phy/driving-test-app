@@ -11,8 +11,15 @@
       "difficulty": 1,
       "format": "single",
       "stem": "What is the value of $3 + 2 \\times (8 - 5)^2$?",
-      "options": ["$9$", "$21$", "$39$", "$45$"],
-      "correct": [1],
+      "options": [
+        "$9$",
+        "$21$",
+        "$39$",
+        "$45$"
+      ],
+      "correct": [
+        1
+      ],
       "lockedOrder": true,
       "calculator": true,
       "explanation": "Work inside the parentheses first: $8 - 5 = 3$. Square it: $3^2 = 9$. Multiply: $2 \\times 9 = 18$. Finally add: $3 + 18 = 21$. The choice $45$ comes from adding $3 + 2$ before multiplying, and $9$ comes from forgetting to square the $3$."
@@ -27,8 +34,15 @@
       "difficulty": 1,
       "format": "single",
       "stem": "A shirt is priced at \\$48.00. A sales tax of $7.5\\%$ is added at checkout. What is the total cost of the shirt, including tax?",
-      "options": ["\\$3.60", "\\$44.40", "\\$51.60", "\\$55.50"],
-      "correct": [2],
+      "options": [
+        "\\$3.60",
+        "\\$44.40",
+        "\\$51.60",
+        "\\$55.50"
+      ],
+      "correct": [
+        2
+      ],
       "lockedOrder": true,
       "calculator": true,
       "explanation": "The tax is $7.5\\%$ of $48$, which is $0.075 \\times 48 = 3.60$ dollars. Adding the tax to the price gives $48 + 3.60 = 51.60$ dollars. The choice \\$3.60 is the tax alone, and \\$44.40 comes from subtracting the tax instead of adding it."
@@ -43,8 +57,15 @@
       "difficulty": 1,
       "format": "single",
       "stem": "If $5(x - 2) = 3x + 8$, then $x = $",
-      "options": ["$-1$", "$5$", "$9$", "$18$"],
-      "correct": [2],
+      "options": [
+        "$-1$",
+        "$5$",
+        "$9$",
+        "$18$"
+      ],
+      "correct": [
+        2
+      ],
       "lockedOrder": true,
       "calculator": true,
       "explanation": "Distribute on the left side: $5x - 10 = 3x + 8$. Subtract $3x$ from both sides to get $2x - 10 = 8$, then add $10$ to get $2x = 18$, so $x = 9$. The choice $5$ comes from distributing the $5$ only to the $x$ (writing $5x - 2$), and $-1$ comes from a sign error when moving the $-10$ across the equals sign."
@@ -59,8 +80,15 @@
       "difficulty": 1,
       "format": "single",
       "stem": "The measures of the three interior angles of a triangle are $x^\\circ$, $2x^\\circ$, and $3x^\\circ$. What is the measure of the largest angle?",
-      "options": ["$30^\\circ$", "$60^\\circ$", "$90^\\circ$", "$120^\\circ$"],
-      "correct": [2],
+      "options": [
+        "$30^\\circ$",
+        "$60^\\circ$",
+        "$90^\\circ$",
+        "$120^\\circ$"
+      ],
+      "correct": [
+        2
+      ],
       "lockedOrder": true,
       "calculator": true,
       "explanation": "The interior angles of a triangle add to $180^\\circ$, so $x + 2x + 3x = 6x = 180$ and $x = 30$. The largest angle is $3x = 90^\\circ$. The choice $30^\\circ$ is the smallest angle, not the largest, and $120^\\circ$ would make the three angles add to more than $180^\\circ$."
@@ -75,8 +103,15 @@
       "difficulty": 1,
       "format": "single",
       "stem": "A bread recipe uses flour and sugar in the ratio $5:2$. If a baker uses 15 cups of flour, how many cups of sugar should the baker use?",
-      "options": ["$3.75$", "$6$", "$7.5$", "$37.5$"],
-      "correct": [1],
+      "options": [
+        "$3.75$",
+        "$6$",
+        "$7.5$",
+        "$37.5$"
+      ],
+      "correct": [
+        1
+      ],
       "lockedOrder": true,
       "calculator": true,
       "explanation": "Set up the proportion $\\frac{5}{2} = \\frac{15}{s}$. Since $15$ is $3$ times $5$, the sugar is $3$ times $2$, so $s = 6$ cups. The choice $37.5$ comes from multiplying $15 \\times 5 \\div 2$ instead of $15 \\times 2 \\div 5$, and $7.5$ is half of the flour rather than two fifths of it."
@@ -91,9 +126,15 @@
       "difficulty": 1,
       "format": "single",
       "stem": "Which of the following expressions is equivalent to $(3a^2b)^3$?",
-      "options": ["$9a^6b^3$", "$27a^5b^3$", "$27a^6b^3$", "$27a^8b^3$"],
-      "correct": [2],
-      "lockedOrder": true,
+      "options": [
+        "$9a^6b^3$",
+        "$27a^5b^3$",
+        "$27a^6b^3$",
+        "$27a^8b^3$"
+      ],
+      "correct": [
+        2
+      ],
       "calculator": true,
       "explanation": "Raising a product to a power raises every factor to that power: $(3a^2b)^3 = 3^3 \\cdot (a^2)^3 \\cdot b^3$. Since $3^3 = 27$ and $(a^2)^3 = a^{2 \\cdot 3} = a^6$, the result is $27a^6b^3$. The choice $27a^5b^3$ comes from adding the exponents $2 + 3$ instead of multiplying them, and $9a^6b^3$ comes from multiplying $3 \\times 3$ instead of cubing $3$."
     },
@@ -107,8 +148,15 @@
       "difficulty": 1,
       "format": "single",
       "stem": "Dana's scores on 7 quizzes were 72, 86, 94, 70, 85, 77, and 90. What is the median of Dana's quiz scores?",
-      "options": ["$24$", "$70$", "$82$", "$85$"],
-      "correct": [3],
+      "options": [
+        "$24$",
+        "$70$",
+        "$82$",
+        "$85$"
+      ],
+      "correct": [
+        3
+      ],
       "lockedOrder": true,
       "calculator": true,
       "explanation": "Order the scores from least to greatest: $70, 72, 77, 85, 86, 90, 94$. With $7$ values, the median is the 4th value, which is $85$. The choice $82$ is the mean ($574 \\div 7$), $70$ is the middle value of the list before it is sorted, and $24$ is the range."
@@ -123,8 +171,15 @@
       "difficulty": 1,
       "format": "single",
       "stem": "In right triangle $ABC$ shown below, $\\angle C$ is a right angle, $AC = 9$, and $BC = 12$. What is the length, $x$, of side $AB$?",
-      "options": ["$3\\sqrt{7}$", "$15$", "$21$", "$225$"],
-      "correct": [1],
+      "options": [
+        "$3\\sqrt{7}$",
+        "$15$",
+        "$21$",
+        "$225$"
+      ],
+      "correct": [
+        1
+      ],
       "lockedOrder": true,
       "figure": {
         "src": "/figures/act/act-ma-108.svg",
@@ -143,8 +198,15 @@
       "difficulty": 1,
       "format": "single",
       "stem": "The function $f$ is defined by $f(x) = 2x^2 - 3x + 1$. What is the value of $f(-2)$?",
-      "options": ["$-1$", "$3$", "$11$", "$15$"],
-      "correct": [3],
+      "options": [
+        "$-1$",
+        "$3$",
+        "$11$",
+        "$15$"
+      ],
+      "correct": [
+        3
+      ],
       "lockedOrder": true,
       "calculator": true,
       "explanation": "Substitute $-2$ for $x$: $f(-2) = 2(-2)^2 - 3(-2) + 1 = 2(4) + 6 + 1 = 15$. The choice $3$ comes from treating $-3(-2)$ as $-6$ instead of $+6$, and $-1$ comes from also treating $(-2)^2$ as $-4$."
@@ -159,8 +221,15 @@
       "difficulty": 1,
       "format": "single",
       "stem": "A ride-share company charges a flat fee of \\$3.50 plus \\$2.25 for each mile traveled. Priya paid \\$21.50 for a ride. How many miles long was Priya's ride?",
-      "options": ["$6$", "$8$", "$10$", "$11$"],
-      "correct": [1],
+      "options": [
+        "$6$",
+        "$8$",
+        "$10$",
+        "$11$"
+      ],
+      "correct": [
+        1
+      ],
       "lockedOrder": true,
       "calculator": true,
       "explanation": "Let $m$ be the number of miles. The cost is $3.50 + 2.25m = 21.50$. Subtract the flat fee: $2.25m = 18.00$, so $m = 18 \\div 2.25 = 8$ miles. The choice $10$ comes from dividing the full \\$21.50 by \\$2.25 and rounding, without first removing the flat fee."
@@ -175,8 +244,15 @@
       "difficulty": 2,
       "format": "single",
       "stem": "If $2x + 3y = 12$ and $x - y = 1$, what is the value of $xy$?",
-      "options": ["$2$", "$3$", "$5$", "$6$"],
-      "correct": [3],
+      "options": [
+        "$2$",
+        "$3$",
+        "$5$",
+        "$6$"
+      ],
+      "correct": [
+        3
+      ],
       "lockedOrder": true,
       "calculator": true,
       "explanation": "From the second equation, $x = y + 1$. Substitute into the first: $2(y + 1) + 3y = 12$, so $5y + 2 = 12$ and $y = 2$. Then $x = 3$, and $xy = 3 \\times 2 = 6$. The choice $5$ is $x + y$, and $3$ and $2$ are the values of $x$ and $y$ individually rather than their product."
@@ -191,8 +267,15 @@
       "difficulty": 2,
       "format": "single",
       "stem": "In the standard $(x, y)$ coordinate plane, the midpoint of segment $\\overline{AB}$ is $(1, -2)$. If point $A$ is $(-3, 4)$, what are the coordinates of point $B$?",
-      "options": ["$(-1, 1)$", "$(-7, 10)$", "$(5, -8)$", "$(4, -6)$"],
-      "correct": [2],
+      "options": [
+        "$(-1, 1)$",
+        "$(-7, 10)$",
+        "$(5, -8)$",
+        "$(4, -6)$"
+      ],
+      "correct": [
+        2
+      ],
       "calculator": true,
       "explanation": "The midpoint is the average of the endpoints, so $\\frac{-3 + x}{2} = 1$ gives $x = 5$, and $\\frac{4 + y}{2} = -2$ gives $y = -8$. Point $B$ is $(5, -8)$. The choice $(-1, 1)$ is the midpoint of $A$ and the given midpoint, and $(4, -6)$ is the difference between the midpoint and $A$ rather than the reflection of $A$ through the midpoint."
     },
@@ -206,8 +289,15 @@
       "difficulty": 2,
       "format": "single",
       "stem": "The population of a town was 2,400 in 2015. By 2020 the population had increased by $20\\%$, and by 2025 it had decreased by $10\\%$ from its 2020 level. What was the population of the town in 2025?",
-      "options": ["$2{,}160$", "$2{,}592$", "$2{,}640$", "$2{,}880$"],
-      "correct": [1],
+      "options": [
+        "$2{,}160$",
+        "$2{,}592$",
+        "$2{,}640$",
+        "$2{,}880$"
+      ],
+      "correct": [
+        1
+      ],
       "lockedOrder": true,
       "calculator": true,
       "explanation": "A $20\\%$ increase multiplies by $1.20$: $2{,}400 \\times 1.20 = 2{,}880$ in 2020. A $10\\%$ decrease multiplies by $0.90$: $2{,}880 \\times 0.90 = 2{,}592$ in 2025. The choice $2{,}640$ comes from combining the changes into a single $10\\%$ increase ($2{,}400 \\times 1.10$), which is wrong because the $10\\%$ decrease applies to the larger 2020 population. The choice $2{,}880$ stops after the first change."
@@ -222,8 +312,15 @@
       "difficulty": 2,
       "format": "single",
       "stem": "What is the product $(3.2 \\times 10^5)(2.5 \\times 10^{-2})$, written in scientific notation?",
-      "options": ["$8 \\times 10^{-10}$", "$5.7 \\times 10^3$", "$8 \\times 10^3$", "$8 \\times 10^7$"],
-      "correct": [2],
+      "options": [
+        "$8 \\times 10^{-10}$",
+        "$5.7 \\times 10^3$",
+        "$8 \\times 10^3$",
+        "$8 \\times 10^7$"
+      ],
+      "correct": [
+        2
+      ],
       "calculator": true,
       "explanation": "Multiply the decimal parts and add the exponents: $3.2 \\times 2.5 = 8$ and $10^5 \\times 10^{-2} = 10^{5 + (-2)} = 10^3$, so the product is $8 \\times 10^3$, or $8{,}000$. The choice $8 \\times 10^7$ comes from subtracting the exponents instead of adding them, $8 \\times 10^{-10}$ comes from multiplying the exponents, and $5.7 \\times 10^3$ comes from adding $3.2 + 2.5$ instead of multiplying."
     },
@@ -237,8 +334,15 @@
       "difficulty": 2,
       "format": "single",
       "stem": "In the circle shown below, $O$ is the center, the radius is 6, and the measure of central angle $\\angle AOB$ is $120^\\circ$. What is the length of the minor arc from $A$ to $B$ (shown in bold)?",
-      "options": ["$2\\pi$", "$4\\pi$", "$8\\pi$", "$12\\pi$"],
-      "correct": [1],
+      "options": [
+        "$2\\pi$",
+        "$4\\pi$",
+        "$8\\pi$",
+        "$12\\pi$"
+      ],
+      "correct": [
+        1
+      ],
       "lockedOrder": true,
       "figure": {
         "src": "/figures/act/act-ma-115.svg",
@@ -257,8 +361,15 @@
       "difficulty": 2,
       "format": "single",
       "stem": "Marcus has an average (arithmetic mean) score of 82 on his first 4 chemistry tests. What score does he need on his 5th test so that his average over all 5 tests is exactly 85?",
-      "options": ["$85$", "$88$", "$94$", "$97$"],
-      "correct": [3],
+      "options": [
+        "$85$",
+        "$88$",
+        "$94$",
+        "$97$"
+      ],
+      "correct": [
+        3
+      ],
       "lockedOrder": true,
       "calculator": true,
       "explanation": "An average of $85$ over $5$ tests requires a total of $5 \\times 85 = 425$ points. The first 4 tests total $4 \\times 82 = 328$ points, so the 5th test must be $425 - 328 = 97$. The choice $88$ comes from adding the $3$-point gap to the old average once, but the 5th score has to make up that gap for each of the 4 earlier tests as well."
@@ -273,8 +384,15 @@
       "difficulty": 2,
       "format": "single",
       "stem": "A bag contains 4 red marbles, 5 blue marbles, and 3 green marbles. Two marbles are drawn at random, one after the other, without replacement. What is the probability that both marbles are blue?",
-      "options": ["$\\frac{5}{36}$", "$\\frac{5}{33}$", "$\\frac{25}{144}$", "$\\frac{10}{33}$"],
-      "correct": [1],
+      "options": [
+        "$\\frac{5}{36}$",
+        "$\\frac{5}{33}$",
+        "$\\frac{25}{144}$",
+        "$\\frac{10}{33}$"
+      ],
+      "correct": [
+        1
+      ],
       "calculator": true,
       "explanation": "There are $12$ marbles in all. The probability the first marble is blue is $\\frac{5}{12}$. After one blue marble is removed, $4$ blue marbles remain among $11$, so the probability the second is also blue is $\\frac{4}{11}$. Multiply: $\\frac{5}{12} \\times \\frac{4}{11} = \\frac{20}{132} = \\frac{5}{33}$. The choice $\\frac{25}{144}$ is the answer if the first marble were replaced before the second draw."
     },
@@ -288,8 +406,15 @@
       "difficulty": 2,
       "format": "single",
       "stem": "Which of the following describes the solution set of the inequality $|2x - 5| < 7$?",
-      "options": ["$-6 < x < 1$", "$-1 < x < 6$", "$1 < x < 6$", "$x < -1$ or $x > 6$"],
-      "correct": [1],
+      "options": [
+        "$-6 < x < 1$",
+        "$-1 < x < 6$",
+        "$1 < x < 6$",
+        "$x < -1$ or $x > 6$"
+      ],
+      "correct": [
+        1
+      ],
       "calculator": true,
       "explanation": "An inequality of the form $|u| < 7$ means $-7 < u < 7$, so $-7 < 2x - 5 < 7$. Add $5$ to all three parts: $-2 < 2x < 12$, then divide by $2$: $-1 < x < 6$. The choice $x < -1$ or $x > 6$ is the solution of $|2x - 5| > 7$, and $1 < x < 6$ comes from solving only $2x - 5 < 7$ and $2x - 5 > -3$ after an arithmetic slip."
     },
@@ -303,8 +428,15 @@
       "difficulty": 2,
       "format": "single",
       "stem": "A line in the standard $(x, y)$ coordinate plane passes through the points $(-4, 1)$ and $(2, 4)$, as shown below. Which of the following is an equation of the line?",
-      "options": ["$y = -\\frac{1}{2}x + 3$", "$y = \\frac{1}{2}x - 3$", "$y = \\frac{1}{2}x + 3$", "$y = 2x + 3$"],
-      "correct": [2],
+      "options": [
+        "$y = -\\frac{1}{2}x + 3$",
+        "$y = \\frac{1}{2}x - 3$",
+        "$y = \\frac{1}{2}x + 3$",
+        "$y = 2x + 3$"
+      ],
+      "correct": [
+        2
+      ],
       "figure": {
         "src": "/figures/act/act-ma-119.svg",
         "alt": "A coordinate plane with x and y axes from negative 6 to 6, with grid lines at each integer. A line rises from left to right, passing through the marked points (negative 4, 1) and (2, 4) and crossing the y-axis at 3."
@@ -322,8 +454,15 @@
       "difficulty": 2,
       "format": "single",
       "stem": "Lena drove 150 miles in 3 hours, then drove another 120 miles in 1.5 hours. What was Lena's average speed, in miles per hour, for the entire trip?",
-      "options": ["$60$", "$65$", "$67.5$", "$72$"],
-      "correct": [0],
+      "options": [
+        "$60$",
+        "$65$",
+        "$67.5$",
+        "$72$"
+      ],
+      "correct": [
+        0
+      ],
       "lockedOrder": true,
       "calculator": true,
       "explanation": "Average speed is total distance divided by total time. The total distance is $150 + 120 = 270$ miles and the total time is $3 + 1.5 = 4.5$ hours, so the average speed is $270 \\div 4.5 = 60$ miles per hour. The choice $65$ is the average of the two separate speeds ($50$ and $80$), which is wrong because Lena spent twice as long driving at the slower speed."
@@ -338,8 +477,15 @@
       "difficulty": 3,
       "format": "single",
       "stem": "The function $f$ is defined by $f(x) = x^2 - 6x + c$, where $c$ is a constant. If the minimum value of $f$ is $-4$, what is the value of $c$?",
-      "options": ["$-13$", "$5$", "$9$", "$13$"],
-      "correct": [1],
+      "options": [
+        "$-13$",
+        "$5$",
+        "$9$",
+        "$13$"
+      ],
+      "correct": [
+        1
+      ],
       "lockedOrder": true,
       "calculator": true,
       "explanation": "A parabola $y = x^2 + bx + c$ opens upward and has its minimum at $x = -\\frac{b}{2} = 3$. Then $f(3) = 9 - 18 + c = c - 9$, and setting $c - 9 = -4$ gives $c = 5$. Equivalently, completing the square gives $f(x) = (x - 3)^2 + (c - 9)$. The choice $-13$ comes from setting $f(3) = 9 + 18 + c$ with a sign error, and $9$ is the value that would make the minimum $0$."
@@ -354,8 +500,15 @@
       "difficulty": 3,
       "format": "single",
       "stem": "If $4^{x + 1} = 8^{x - 1}$, then $x = $",
-      "options": ["$-5$", "$1$", "$4$", "$5$"],
-      "correct": [3],
+      "options": [
+        "$-5$",
+        "$1$",
+        "$4$",
+        "$5$"
+      ],
+      "correct": [
+        3
+      ],
       "lockedOrder": true,
       "calculator": true,
       "explanation": "Write both sides with base $2$: $4^{x + 1} = (2^2)^{x + 1} = 2^{2x + 2}$ and $8^{x - 1} = (2^3)^{x - 1} = 2^{3x - 3}$. Equal bases mean equal exponents, so $2x + 2 = 3x - 3$ and $x = 5$. Check: $4^6 = 4096 = 8^4$. The choice $-5$ comes from swapping the bases ($3x + 3 = 2x - 2$), and $4$ comes from distributing the $2$ to only the $x$ ($2x + 1 = 3x - 3$)."
@@ -370,8 +523,15 @@
       "difficulty": 3,
       "format": "single",
       "stem": "For how many integer values of $n$ is $|3n - 7| \\le 11$?",
-      "options": ["$6$", "$7$", "$8$", "$9$"],
-      "correct": [2],
+      "options": [
+        "$6$",
+        "$7$",
+        "$8$",
+        "$9$"
+      ],
+      "correct": [
+        2
+      ],
       "lockedOrder": true,
       "calculator": true,
       "explanation": "The inequality means $-11 \\le 3n - 7 \\le 11$. Add $7$: $-4 \\le 3n \\le 18$, then divide by $3$: $-\\frac{4}{3} \\le n \\le 6$. The integers in that interval are $-1, 0, 1, 2, 3, 4, 5, 6$, which is $8$ values. The choice $7$ comes from forgetting that $0$ is an integer in the range, and $9$ comes from including $-2$, which gives $|3(-2) - 7| = 13 > 11$."

@@ -161,13 +161,13 @@
       "format": "single",
       "stem": "Suppose the students wanted to determine whether the solubility values in Table 1 depend on the mass of water used. Which of the following procedures would best test this?",
       "options": [
-        "Repeat the Table 1 procedure for Salt B at 20°C using 50 g of water and then 200 g of water.",
         "Repeat the Table 1 procedure for Salt B using 100 g of water at 10°C and then at 30°C.",
         "Repeat the Table 2 procedure for Salt B starting from a solution saturated at 80°C instead of 60°C.",
+        "Repeat the Table 1 procedure for Salt B at 20°C using 50 g of water and then 200 g of water.",
         "Repeat the Table 1 procedure for Salt A and Salt C using 100 g of water at 20°C."
       ],
       "correct": [
-        0
+        2
       ],
       "explanation": "To test the effect of one variable, change only that variable and hold the others constant. The first procedure keeps the salt and the temperature fixed while changing the mass of water, so any change in the measured solubility can be attributed to the mass of water. The other procedures change the temperature, the starting temperature of the cooling procedure, or the salt, while keeping the mass of water at 100 g."
     },
@@ -227,13 +227,13 @@
       "format": "single",
       "stem": "Based on the results of Experiment 2, which of the following correctly lists the four surfaces in order of increasing average speed at the bottom of the ramp?",
       "options": [
-        "Carpet, rubber mat, wood, plastic",
         "Plastic, wood, rubber mat, carpet",
         "Wood, plastic, carpet, rubber mat",
-        "Rubber mat, carpet, plastic, wood"
+        "Rubber mat, carpet, plastic, wood",
+        "Carpet, rubber mat, wood, plastic"
       ],
       "correct": [
-        0
+        3
       ],
       "explanation": "Trials 5 through 8 give speeds of 3.5 m/s on plastic, 3.3 m/s on wood, 2.9 m/s on the rubber mat, and 2.4 m/s on carpet. From lowest to highest speed, the order is carpet, rubber mat, wood, plastic. The second choice lists the surfaces in order of decreasing speed, the reverse of what the question asks."
     },
@@ -293,13 +293,13 @@
       "format": "single",
       "stem": "Which of the following changes to Experiment 1 would best allow the students to determine whether the length of the ramp affects the speed of the cart at the bottom?",
       "options": [
-        "Repeating the trials with ramps 1.0 m, 2.0 m, and 3.0 m long, all set at the same angle",
         "Repeating the trials with the ramp angle set to 50° and 60°",
+        "Repeating the trials with ramps 1.0 m, 2.0 m, and 3.0 m long, all set at the same angle",
         "Repeating the trials on a 2.0 m ramp with a carpet surface",
         "Repeating the trials with a 1.0 kg cart that has larger wheels"
       ],
       "correct": [
-        0
+        1
       ],
       "explanation": "To find out whether ramp length matters, the students must vary the length while holding the angle, surface, and cart mass constant, which only the first choice does. Adding steeper angles only extends the existing angle data, and changing the surface or the wheels introduces a different variable while leaving the length at 2.0 m."
     },
@@ -315,13 +315,13 @@
       "format": "single",
       "stem": "The students most likely released the cart 3 times at each setting and averaged the speeds in order to",
       "options": [
-        "reduce the effect of random variation in individual releases.",
         "increase the speed of the cart at the bottom of the ramp.",
         "keep the ramp angle the same from one trial to the next.",
-        "make sure that every trial used the same surface."
+        "make sure that every trial used the same surface.",
+        "reduce the effect of random variation in individual releases."
       ],
       "correct": [
-        0
+        3
       ],
       "explanation": "Small differences in how the cart is released or how the photogate times it produce slightly different speeds from one release to the next. Averaging several releases reduces the effect of that random variation on the reported value. Repeating a release cannot change the cart's speed, and it has nothing to do with holding the angle or the surface constant."
     },
@@ -403,13 +403,13 @@
       "format": "single",
       "stem": "In a laboratory, a liquid that becomes steadily denser as it cools, all the way down to its freezing point, was placed in a container with insulated sides and bottom and was cooled from above. The solid form of this liquid is less dense than the liquid. The liquid froze from the top down. This result most weakens the viewpoint of",
       "options": [
-        "Student 1, because Student 1 claims that a liquid without a density maximum above its freezing point would freeze from the bottom up.",
         "Student 1, because Student 1 claims that the solid form of a liquid must be denser than the liquid for it to float.",
+        "Student 1, because Student 1 claims that a liquid without a density maximum above its freezing point would freeze from the bottom up.",
         "Student 2, because the bottom of the container was insulated rather than warmed.",
         "Student 3, because the container was not exposed to wind or currents."
       ],
       "correct": [
-        0
+        1
       ],
       "explanation": "Student 1 argues that if water kept getting denser down to 0°C, the coldest water would always sink and ponds would freeze from the bottom up. The laboratory liquid has exactly that density behavior, yet it froze from the top down, which is the opposite of what Student 1's reasoning predicts. Student 2's claim that a liquid cooled from above freezes from the top down is supported, not weakened, by this result, and Student 3's claims about wind and the floating solid are not contradicted by it."
     },
@@ -425,13 +425,13 @@
       "format": "single",
       "stem": "Which of the following experiments would best test Student 2's claim that heat from the soil affects how a pond freezes?",
       "options": [
-        "Fill two identical tanks with water and cool both from above in the same cold air, with the bottom of one tank resting on a warm surface and the bottom of the other tank insulated, and compare the water temperatures near the bottom of each tank.",
         "Measure the temperature of the soil beneath a pond on the day before and the day after the pond freezes.",
         "Fill two identical tanks, one with fresh water and one with salt water, cool both from above, and record which tank freezes first.",
-        "Measure the thickness of the ice on a pond on a windy day and on a calm day."
+        "Measure the thickness of the ice on a pond on a windy day and on a calm day.",
+        "Fill two identical tanks with water and cool both from above in the same cold air, with the bottom of one tank resting on a warm surface and the bottom of the other tank insulated, and compare the water temperatures near the bottom of each tank."
       ],
       "correct": [
-        0
+        3
       ],
       "explanation": "Student 2's claim is about the effect of heat supplied at the bottom, so the best test changes only that factor: two tanks cooled in the same air, one warmed from below and one insulated from below. Any difference in the bottom water temperature can then be attributed to heat from below. Measuring soil temperature alone shows whether the soil is warm but not whether that warmth affects the water, and the salt-water and wind experiments change variables unrelated to Student 2's claim."
     },
@@ -447,13 +447,13 @@
       "format": "single",
       "stem": "Student 3 claims that wind mixing keeps the water in a pond at nearly the same temperature at all depths as the pond cools. Which of the following measurements would most directly test this claim?",
       "options": [
-        "Measuring the water temperature at several depths in a pond on a windy day and on a calm day",
         "Measuring the thickness of the ice on a pond at several locations across its surface",
+        "Measuring the water temperature at several depths in a pond on a windy day and on a calm day",
         "Measuring the air temperature above a pond at several heights",
         "Measuring the density of ice samples taken from the surface of a pond"
       ],
       "correct": [
-        0
+        1
       ],
       "explanation": "The claim is about the water temperature at different depths and about the role of wind, so the most direct test measures temperature at several depths under windy and calm conditions. If the temperatures are uniform on windy days but layered on calm days, the claim is supported. Ice thickness, air temperature, and ice density do not reveal whether the liquid water is mixed."
     }

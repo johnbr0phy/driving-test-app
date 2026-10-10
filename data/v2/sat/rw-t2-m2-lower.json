@@ -1,1 +1,623 @@
-[]
+[
+  {
+    "id": "SAT-RW-501",
+    "section": "rw",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "craftStructure",
+    "skill": "Words in context",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "For centuries, sailors relied on barometers to anticipate storms. A falling reading meant that air pressure was dropping, which often signaled that foul weather was on its way. A barometer therefore gave a crew a ______ warning: not an exact forecast, but enough notice to take in the sails and secure the deck.",
+    "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+    "options": [
+      "precise",
+      "useful",
+      "lengthy",
+      "sudden"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The text says the warning was \"not an exact forecast, but enough notice\" to prepare the ship, so it was useful without being exact. \"Precise\" is the strongest distractor because it describes forecasts, but the text directly denies that the warning was exact, and nothing suggests the warning was especially long or sudden."
+  },
+  {
+    "id": "SAT-RW-502",
+    "section": "rw",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "craftStructure",
+    "skill": "Words in context",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "When bread is baked, sugars and proteins on the surface of the dough react at high heat in a process called the Maillard reaction. The reaction ______ the crust, turning it golden brown and creating hundreds of flavor compounds that the pale interior of the loaf never develops.",
+    "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+    "options": [
+      "protects",
+      "measures",
+      "transforms",
+      "softens"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The sentence describes the crust changing color and gaining new flavors, so the reaction transforms it. \"Softens\" is the most tempting choice because it describes a change to the crust, but browning at high heat makes a crust firmer, not softer, and nothing in the text involves protecting or measuring the crust."
+  },
+  {
+    "id": "SAT-RW-503",
+    "section": "rw",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "craftStructure",
+    "skill": "Words in context",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Animated films of the 1910s were ______ to produce: every frame had to be drawn by hand, so a single short cartoon could require thousands of drawings and months of work by a small team. The invention of cel animation, in which moving characters were drawn on clear sheets laid over a fixed background, eased this burden by allowing backgrounds to be reused.",
+    "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+    "options": [
+      "unpopular",
+      "inexpensive",
+      "impractical",
+      "laborious"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The colon introduces an explanation about thousands of hand-drawn frames and months of work, and the next sentence calls this a \"burden,\" so the films were laborious to make. \"Impractical\" is the strongest distractor, but the films were in fact produced, and the text stresses the amount of labor rather than whether the work was feasible. \"Inexpensive\" contradicts the passage."
+  },
+  {
+    "id": "SAT-RW-504",
+    "section": "rw",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "craftStructure",
+    "skill": "Words in context",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Archaeologists rarely find a site untouched. Floods, plowing, and later construction ______ the layers of soil that record how a place was used over time, so researchers must carefully document each disturbance before they can interpret what remains.",
+    "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+    "options": [
+      "disrupt",
+      "preserve",
+      "conceal",
+      "simplify"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The text calls floods, plowing, and construction \"disturbances\" and contrasts them with finding a site \"untouched,\" so they disrupt the soil layers. \"Conceal\" is tempting because buried layers are hidden, but the problem the text describes is that the layers are disturbed, not merely covered up, and \"preserve\" states the opposite of the intended meaning."
+  },
+  {
+    "id": "SAT-RW-505",
+    "section": "rw",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "craftStructure",
+    "skill": "Text structure and purpose",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "In the 1940s, public health officials in the United States launched a campaign to reduce tuberculosis by encouraging people to get chest X-rays. Mobile X-ray units were parked outside factories, schools, and shopping districts so that people could be screened in minutes without visiting a clinic. __In some cities, more than half of the adult population was screened within a single year.__ Cases caught early could be treated before the disease spread to others.",
+    "stem": "Which choice best describes the function of the underlined sentence in the text as a whole?",
+    "options": [
+      "It explains why the mobile units were placed outside factories and schools.",
+      "It indicates how widely the campaign reached the public.",
+      "It describes how people with tuberculosis were treated after screening.",
+      "It suggests that the campaign was less successful outside large cities."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The underlined sentence gives a figure, more than half of the adults in some cities, that shows the scale of the campaign's reach. Choice A is the strongest distractor because the previous sentence explains the placement of the units, but the underlined sentence reports a result rather than a reason, and it says nothing about treatment or about cities where the campaign did poorly."
+  },
+  {
+    "id": "SAT-RW-506",
+    "section": "rw",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "craftStructure",
+    "skill": "Text structure and purpose",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Many school districts cut music programs when budgets are tight, reasoning that music is a pleasant extra rather than a core subject. Yet research complicates that reasoning. Students who study an instrument tend to show gains in auditory processing and working memory, skills that support reading and mathematics. Playing in an ensemble also requires students to listen to one another and adjust in real time, a kind of cooperation that is hard to teach in a lecture. Music, in other words, may be doing some of the work that core subjects get credit for.",
+    "stem": "Which choice best describes the overall structure of the text?",
+    "options": [
+      "It describes a budget problem facing schools and proposes a specific solution.",
+      "It compares two approaches to teaching music and recommends one of them.",
+      "It states a common reason for a decision and then presents evidence that undercuts that reason.",
+      "It summarizes the findings of a single study and then notes the study's limitations."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The text opens with the reasoning districts use to cut music programs, signals a turn with \"Yet,\" and then lists research findings that cast doubt on that reasoning. Choice A is the strongest distractor because budgets are mentioned, but the text never proposes a solution to the budget problem; it argues that the justification for the cuts is weak."
+  },
+  {
+    "id": "SAT-RW-507",
+    "section": "rw",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "craftStructure",
+    "skill": "Cross-text connections",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "**Text 1**\n\nWeather forecasting has improved greatly since the 1980s. Today's five-day forecast is about as accurate as a three-day forecast was in 1990, thanks to faster computers, more satellite data, and models that run many simulations at once. Meteorologist Hana Lindqvist argues that as computing power grows, the main job of forecasters will shift from predicting the weather to explaining what the models already know.\n\n**Text 2**\n\nComputer models have transformed forecasting, but they still struggle with small-scale events such as thunderstorms that form and fade within an hour. Forecaster Tomas Reyes notes that experienced human forecasters, who recognize local patterns the models miss, still improve on model output for these events. In his view, models need human judgment most when the weather is most dangerous.",
+    "stem": "Based on the texts, how would the author of Text 2 most likely respond to the claim in Text 1?",
+    "options": [
+      "By disputing that five-day forecasts have become as accurate as Lindqvist claims",
+      "By agreeing that models have improved forecasting but arguing that human forecasters still do more than explain model output, especially for severe local weather",
+      "By arguing that satellite data have mattered more than computing power to the improvement in forecasts",
+      "By suggesting that human forecasters should focus on warning the public about thunderstorms"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Text 2 accepts that models have transformed forecasting but stresses that humans still improve on model output for small, dangerous events, which conflicts with Lindqvist's view that forecasters will mainly explain what models already know. Choice D is the strongest distractor because thunderstorms are mentioned, but Text 2 describes human forecasters improving predictions, not merely communicating warnings. Text 2 never questions the accuracy figures in Text 1."
+  },
+  {
+    "id": "SAT-RW-508",
+    "section": "rw",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "craftStructure",
+    "skill": "Cross-text connections",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "**Text 1**\n\nLidar, a laser scanning technology carried by aircraft, can map the ground beneath dense forest canopy. In the past decade it has revealed thousands of previously unknown structures in Central America, including roads, terraces, and reservoirs. Archaeologist Pilar Mendez argues that lidar has done more to reshape our picture of ancient Maya settlement than any excavation of the past fifty years.\n\n**Text 2**\n\nLidar maps show where structures are, but not when they were built or how they were used. A platform that appears on a scan might date from any of several centuries, and only excavation can recover the pottery and charcoal needed to date it. Archaeologist Daniel Okoro cautions that lidar surveys raise questions much faster than fieldwork can answer them.",
+    "stem": "Based on the texts, how would the author of Text 2 most likely respond to the claim in Text 1?",
+    "options": [
+      "By questioning whether the structures that lidar has detected are genuinely ancient",
+      "By arguing that excavation has reshaped understanding of Maya settlement more than lidar has",
+      "By suggesting that lidar should be used only where excavation has already taken place",
+      "By acknowledging lidar's power to reveal structures while insisting that excavation is still needed to interpret them"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Text 2 does not deny that lidar finds structures; its point is that scans cannot date or explain them, so excavation remains essential. Choice B is the strongest distractor because Text 2 values excavation, but it never ranks excavation above lidar in reshaping the overall picture, and it does not propose limiting where lidar is used or doubt that the structures are ancient."
+  },
+  {
+    "id": "SAT-RW-509",
+    "section": "rw",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "infoIdeas",
+    "skill": "Central ideas and details",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "The following text is adapted from L. M. Montgomery's 1908 novel Anne of Green Gables. Anne, an orphan, has just spent her first night at the farm where she hopes to be allowed to live.\n\nAnne woke to sunshine pouring through the window and a cherry tree so thick with blossoms that it seemed to press against the glass. For a moment she did not remember where she was, and then it came back to her: she was at Green Gables, and she might not be allowed to stay. Yet even that thought could not hold her for long. She knelt by the window and looked out at the orchard, the brook, and the far blue hills, and decided that whatever happened, she would have had this one morning, and no one could take it from her.",
+    "stem": "Which choice best states the main idea of the text?",
+    "options": [
+      "Anne's delight in her surroundings outweighs her worry about her uncertain future.",
+      "Anne is confident that she will be allowed to remain at Green Gables.",
+      "Anne is troubled by memories of the place where she lived before.",
+      "Anne finds the farm less beautiful than she had imagined it would be."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The text raises Anne's worry that she may not be allowed to stay and then shows that the view from the window overcomes it, ending with her resolve that the morning is hers no matter what happens. Choice B is the strongest distractor, but Anne is not confident she can stay; she decides to enjoy the morning precisely because her future is uncertain."
+  },
+  {
+    "id": "SAT-RW-510",
+    "section": "rw",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "infoIdeas",
+    "skill": "Central ideas and details",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "The following text is adapted from Jack London's 1903 novel The Call of the Wild. Buck, a dog, has been taken from a comfortable home in California to the Yukon.\n\nBuck's first day on the frozen trail was a shock. Every hour brought some new thing he had to learn, and he learned quickly, because the dogs that did not learn were left behind. He watched how the others dug nests in the snow to sleep and copied them that very night. He noticed that the lead dog never wasted a motion and began to save his own strength the same way. By the end of the week he could pull in harness all day, and he had stopped looking back toward the south.",
+    "stem": "According to the text, how does Buck adapt to his new life?",
+    "options": [
+      "By challenging the lead dog for control of the team",
+      "By observing the other dogs and imitating what they do",
+      "By refusing to pull the sled until he is given more food",
+      "By relying on skills he learned in California"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The text shows Buck watching the other dogs dig nests and copying them, then noticing the lead dog's efficiency and saving his own strength \"the same way.\" Choice A is the strongest distractor because the lead dog is mentioned, but Buck learns from the lead dog rather than challenging him, and the text says nothing about refusing to pull or about skills from California."
+  },
+  {
+    "id": "SAT-RW-511",
+    "section": "rw",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "infoIdeas",
+    "skill": "Command of evidence (textual)",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "In 2019, a city health department ran a campaign urging residents to get flu shots. It placed posters on buses and also sent text message reminders to residents who had signed up for city alerts. Health officer Renata Baptiste hypothesized that the text messages, not the posters, were responsible for most of the increase in vaccinations that followed.",
+    "stem": "Which finding, if true, would most directly support Baptiste's hypothesis?",
+    "options": [
+      "Residents reported seeing the bus posters more often than they reported receiving text messages.",
+      "Vaccination rates in the city rose in 2019 by more than they had in any previous year.",
+      "Vaccination rates rose sharply among residents who received the text messages but changed little among residents who did not.",
+      "Neighboring cities that ran poster campaigns without text messages also saw vaccination rates rise."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Baptiste's hypothesis is about which part of the campaign caused the increase, so the most direct support compares residents who got the texts with those who did not. Choice B is the strongest distractor because it shows an increase, but it cannot separate the effect of the texts from that of the posters, and choice D would actually suggest that posters alone can raise vaccination rates."
+  },
+  {
+    "id": "SAT-RW-512",
+    "section": "rw",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "infoIdeas",
+    "skill": "Command of evidence (textual)",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Music teacher and researcher Owen Castellano claims that group instrument lessons, in which four or five beginners learn together, help students stick with an instrument longer than private lessons do. He reasons that beginners who practice alongside peers feel less self-conscious about mistakes and are motivated by the progress they see in one another.",
+    "stem": "Which finding, if true, would most directly support Castellano's claim?",
+    "options": [
+      "Students in group lessons reported enjoying their lessons more than students in private lessons did.",
+      "Private lessons cost more per hour than group lessons at most music schools.",
+      "Students in private lessons progressed through beginner material faster than students in group lessons.",
+      "Among beginners who started lessons in the same year, those in group lessons were still playing two years later at a higher rate than those in private lessons."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Castellano's claim is about students sticking with an instrument longer, so evidence that group-lesson students were still playing two years later supports it most directly. Choice A is the strongest distractor because enjoyment fits his reasoning about motivation, but enjoying lessons is not the same as continuing them, and choices B and C concern cost and speed rather than persistence."
+  },
+  {
+    "id": "SAT-RW-513",
+    "section": "rw",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "infoIdeas",
+    "skill": "Command of evidence (quantitative)",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "A meteorology student tracked how often the daily high temperature forecast issued by a regional weather office fell within 3 degrees Fahrenheit of the high that was actually observed. She grouped the forecasts by how many days in advance they had been issued.\n\n| Days in advance | Forecasts within 3 degrees of observed high (percent) |\n|---|---|\n| 1 | 86 |\n| 3 | 74 |\n| 5 | 61 |\n| 7 | 49 |\n\nThe student concluded that forecast accuracy declines steadily the further in advance a forecast is issued, noting that ______",
+    "stem": "Which choice most effectively uses data from the table to complete the statement?",
+    "options": [
+      "the share of forecasts within 3 degrees fell with each additional interval, from 86 percent for one-day forecasts to 49 percent for seven-day forecasts.",
+      "one-day forecasts were within 3 degrees of the observed high 86 percent of the time, the highest accuracy in the table.",
+      "seven-day forecasts were within 3 degrees of the observed high less than half the time, at 49 percent.",
+      "three-day forecasts were within 3 degrees 74 percent of the time, while five-day forecasts were within 3 degrees 61 percent of the time."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A steady decline is shown only by a choice that traces the drop across the whole range of forecasts, and choice A does so, citing the fall at every step from 86 percent to 49 percent. Choice D is the strongest distractor because it correctly compares two rows, but two points cannot show that the decline continues steadily across all four, and choices B and C each cite a single row."
+  },
+  {
+    "id": "SAT-RW-514",
+    "section": "rw",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "infoIdeas",
+    "skill": "Inferences",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Cooks are often told to let a roast rest for several minutes after it comes out of the oven. During cooking, the muscle fibers near the surface tighten and squeeze moisture toward the center of the meat. As the roast rests and its surface cools, those fibers relax and the moisture spreads back toward the edges. A roast that is sliced immediately ______",
+    "stem": "Which choice most logically completes the text?",
+    "options": [
+      "will have a cooler center than one that has rested.",
+      "will be tougher near the center than near the surface.",
+      "will lose more of its juices onto the cutting board than one that has rested.",
+      "will continue cooking for longer than one that has been allowed to rest."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The text explains that resting lets moisture spread back toward the edges, so a roast cut before that happens still has its moisture concentrated at the center under pressure, and more of it will run out when the meat is sliced. Choice B is the strongest distractor because the text mentions tightened fibers, but it locates those fibers near the surface, and it says nothing about the center being cooler or about cooking time."
+  },
+  {
+    "id": "SAT-RW-515",
+    "section": "rw",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "infoIdeas",
+    "skill": "Inferences",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "Archaeologists dating a site often rely on radiocarbon analysis of charcoal from ancient hearths. But charcoal records the year the wood stopped growing, not the year it was burned. A tree may die and stand for decades before it falls, and dry wood may be gathered long after that, so charcoal from a hearth can be considerably older than the fire that produced it. Archaeologist Mira Sandoval therefore recommends that, where possible, researchers date short-lived materials such as seeds or twigs instead, since ______",
+    "stem": "Which choice most logically completes the text?",
+    "options": [
+      "such materials survive burning better than wood does.",
+      "such materials are found at nearly every site, whereas charcoal is not.",
+      "such materials yield radiocarbon dates that are older than those from charcoal.",
+      "such materials are unlikely to have existed for long before they were deposited at the site."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The problem with charcoal is the gap between when the wood stopped growing and when it was used, so the advantage of seeds and twigs must be that they close that gap: they live briefly and are deposited soon after. Choice C is the strongest distractor because it mentions dates, but older dates would make the problem worse, not better, and nothing in the text concerns how well materials survive burning or how common they are."
+  },
+  {
+    "id": "SAT-RW-516",
+    "section": "rw",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "conventions",
+    "skill": "Boundaries",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "Winsor McCay drew every frame of his 1914 short film Gertie the Dinosaur by ______ the film required roughly 10,000 drawings, each made on a separate sheet of rice paper.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "hand,",
+      "hand;",
+      "hand",
+      "hand, which"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "\"Winsor McCay drew every frame ... by hand\" and \"the film required roughly 10,000 drawings\" are both independent clauses, so a semicolon correctly joins them. Choice A creates a comma splice, choice C runs the two clauses together, and choice D turns the second clause into a relative clause with no clear noun to modify, leaving it ungrammatical."
+  },
+  {
+    "id": "SAT-RW-517",
+    "section": "rw",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "conventions",
+    "skill": "Boundaries",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "A weather balloon carries a small instrument package called a ______ which measures temperature, humidity, and pressure as the balloon rises and radios the readings back to the ground.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "radiosonde,",
+      "radiosonde;",
+      "radiosonde.",
+      "radiosonde and"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The clause beginning \"which measures\" adds extra information about the radiosonde and cannot stand alone, so it must be attached to the main clause with a comma. Choices B and C treat the \"which\" clause as a complete sentence, which it is not, and choice D joins the clause with \"and\" even though it has no subject of its own to pair with the main clause."
+  },
+  {
+    "id": "SAT-RW-518",
+    "section": "rw",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "conventions",
+    "skill": "Boundaries",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "In 1991, hikers in the Alps discovered the body of a man who had died about 5,300 years ______ was so well preserved by the ice that researchers could identify his last meal.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "earlier, the body",
+      "earlier the body",
+      "earlier; and the body",
+      "earlier. The body"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The first sentence ends at \"5,300 years earlier,\" and \"The body was so well preserved\" begins a second complete sentence, so a period is the correct boundary. Choice A is the strongest distractor, but joining two independent clauses with only a comma creates a comma splice, and choice C combines a semicolon with a coordinating conjunction, which is not a standard way to join clauses."
+  },
+  {
+    "id": "SAT-RW-519",
+    "section": "rw",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "conventions",
+    "skill": "Boundaries",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The Suzuki method, developed by Japanese violinist Shinichi Suzuki in the mid-twentieth ______ teaches young children to play by ear before they learn to read music, much as children learn to speak before they learn to read.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "century",
+      "century,",
+      "century;",
+      "century, and it"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The phrase \"developed by Japanese violinist Shinichi Suzuki in the mid-twentieth century\" is a nonessential modifier that interrupts the subject and its verb, so it must be closed with a comma before \"teaches.\" Choice A leaves the modifier open, choice C separates the subject from its verb with a semicolon, and choice D adds a second subject that leaves the original subject, \"The Suzuki method,\" without a verb."
+  },
+  {
+    "id": "SAT-RW-520",
+    "section": "rw",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "conventions",
+    "skill": "Form, structure, and sense",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "The bubbles that form when egg whites are whipped ______ stabilized by proteins that unfold and link together at the surface of each bubble, trapping air inside a thin, flexible film.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "are",
+      "is",
+      "was",
+      "has been"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The subject of the sentence is the plural noun \"bubbles,\" so the verb must be the plural \"are.\" Choice B is the strongest distractor because the nearest noun to the blank, \"whipped,\" follows the singular-sounding phrase \"egg whites are whipped,\" but that phrase is inside a relative clause and is not the subject of the main verb."
+  },
+  {
+    "id": "SAT-RW-521",
+    "section": "rw",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "conventions",
+    "skill": "Form, structure, and sense",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "In 1955, after a nationwide trial showed that Jonas Salk's polio vaccine was safe and effective, public health officials ______ a campaign to vaccinate millions of schoolchildren within months.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "launch",
+      "will launch",
+      "are launching",
+      "launched"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The sentence is set in 1955 and uses the past-tense verb \"showed,\" so the main verb must also be in the simple past: \"launched.\" Choice A is the strongest distractor because the present tense is sometimes used for historical narration, but it conflicts with the past-tense \"showed\" in the same sentence, and choices B and C describe future or ongoing action."
+  },
+  {
+    "id": "SAT-RW-522",
+    "section": "rw",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "conventions",
+    "skill": "Form, structure, and sense",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "Although now remembered mainly for feature films, ______ with a series of short cartoons in the 1920s that combined live action with animated characters.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "the career of Walt Disney's studio began",
+      "it was Walt Disney's studio that began",
+      "Walt Disney's studio began",
+      "the early work of Walt Disney's studio began"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The opening phrase \"remembered mainly for feature films\" must describe the subject that follows the comma, and only the studio itself is remembered for its films, so \"Walt Disney's studio began\" is correct. Choice A is the strongest distractor because it names the studio, but it makes \"the career\" the subject, and a career is not remembered for films; choice B's \"it\" leaves the phrase with nothing sensible to modify."
+  },
+  {
+    "id": "SAT-RW-523",
+    "section": "rw",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "expressionIdeas",
+    "skill": "Rhetorical synthesis",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Jack London was an American writer born in San Francisco in 1876.\n- In 1897 he traveled to the Yukon during the Klondike Gold Rush.\n- He found little gold but gathered experiences he later used in his fiction.\n- His 1903 novel The Call of the Wild is set in the Yukon.\n- The novel became one of the best-selling American books of its time.\n\nThe student wants to explain how London's time in the Yukon influenced his writing. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "stem": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "options": [
+      "Jack London was born in San Francisco in 1876 and became a best-selling American writer.",
+      "Although London found little gold in the Yukon in 1897, the experiences he gathered there shaped his fiction, including his 1903 novel The Call of the Wild.",
+      "London's 1903 novel The Call of the Wild became one of the best-selling American books of its time.",
+      "In 1897, during the Klondike Gold Rush, Jack London traveled to the Yukon."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Choice B links the Yukon trip to the fiction it inspired and names a novel set there, which is exactly the influence the student wants to explain. Choice D is the strongest distractor because it describes the trip, but it never connects the trip to London's writing, and choices A and C say nothing about the Yukon at all."
+  },
+  {
+    "id": "SAT-RW-524",
+    "section": "rw",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "expressionIdeas",
+    "skill": "Rhetorical synthesis",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- The Beaufort scale rates wind strength from 0 (calm) to 12 (hurricane).\n- Francis Beaufort, a British naval officer, developed it in 1805.\n- The original scale described wind by its effect on a sailing ship's sails.\n- A later version added descriptions of effects on land, such as smoke drifting or trees swaying.\n- The scale is still used in marine weather forecasts today.\n\nThe student wants to emphasize how long the scale has remained in use. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "stem": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "options": [
+      "The Beaufort scale rates wind strength from 0, meaning calm, to 12, meaning hurricane.",
+      "A later version of the Beaufort scale described effects on land, such as smoke drifting or trees swaying.",
+      "Francis Beaufort, a British naval officer, originally described wind by its effect on a sailing ship's sails.",
+      "Developed by Francis Beaufort in 1805, the Beaufort scale is still used in marine weather forecasts today."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Choice D pairs the year the scale was created with the fact that it is still used, which is the clearest way to show how long it has lasted. Choice C is the strongest distractor because it mentions the scale's origin, but it says nothing about present-day use, and choices A and B describe what the scale measures rather than how long it has been in use."
+  },
+  {
+    "id": "SAT-RW-525",
+    "section": "rw",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "expressionIdeas",
+    "skill": "Rhetorical synthesis",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- In 1964, the US Surgeon General released a report linking smoking to lung cancer.\n- At the time, about 42 percent of American adults smoked.\n- Public health campaigns that followed included warning labels, limits on advertising, and anti-smoking lessons in schools.\n- By 2020, about 13 percent of American adults smoked.\n- Researchers credit the campaigns, along with higher cigarette taxes, for much of the decline.\n\nThe student wants to present the change in smoking rates and a reason for it. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "stem": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "options": [
+      "The share of American adults who smoked fell from about 42 percent in 1964 to about 13 percent in 2020, a decline that researchers credit largely to public health campaigns and higher cigarette taxes.",
+      "In 1964, when about 42 percent of American adults smoked, the US Surgeon General released a report linking smoking to lung cancer.",
+      "Public health campaigns after 1964 included warning labels, limits on advertising, and anti-smoking lessons in schools.",
+      "By 2020, about 13 percent of American adults smoked, far fewer than in earlier decades."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Choice A states both halves of the goal: the drop from 42 percent to 13 percent and the campaigns and taxes that researchers credit for it. Choice D is the strongest distractor because it describes the change, but it gives no reason for it, and choices B and C each cover only one of the notes without presenting the change in rates."
+  },
+  {
+    "id": "SAT-RW-526",
+    "section": "rw",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "expressionIdeas",
+    "skill": "Transitions",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "Salt does far more in cooking than make food taste salty. ______ when salt is rubbed onto meat an hour before cooking, it draws moisture to the surface, where the moisture dissolves the salt and is then pulled back in, seasoning the meat from within.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "However,",
+      "For instance,",
+      "In contrast,",
+      "As a result,"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The first sentence makes a general claim that salt does more than add saltiness, and the second gives a specific case of salt doing something else, so \"For instance\" is the logical transition. \"As a result\" is the strongest distractor, but the second sentence is an example of the claim, not a consequence of it, and \"However\" and \"In contrast\" wrongly signal disagreement."
+  },
+  {
+    "id": "SAT-RW-527",
+    "section": "rw",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "expressionIdeas",
+    "skill": "Transitions",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "Advocates of music education often point to studies showing that children who take music lessons score higher on reading tests than children who do not. ______ these studies rarely compare children who were randomly assigned to lessons with children who were not, so the higher scores may reflect the kinds of families that choose music lessons rather than the lessons themselves.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "Yet",
+      "Granted,",
+      "In particular,",
+      "Likewise,"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The first sentence presents evidence used by advocates, and the second raises a flaw in that evidence, so a contrasting transition such as \"Yet\" is needed. \"Granted\" is the strongest distractor because it also signals a shift, but it introduces a point the writer concedes to the other side, whereas here the second sentence is the writer's own objection to the advocates' evidence; \"In particular\" and \"Likewise\" would wrongly present the flaw as an elaboration or a parallel."
+  }
+]

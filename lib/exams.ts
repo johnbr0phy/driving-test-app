@@ -13,7 +13,7 @@
  * This file must stay free of question-data imports (the store imports it).
  */
 
-export type ExamId = "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "emt" | "foodmgr" | "realestate" | "insurance" | "notary" | "teas" | "aws" | "aplus" | "foodhandler" | "boating" | "hunter" | "secplus" | "hesi" | "htl" | "cst" | "crcst";
+export type ExamId = "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "emt" | "foodmgr" | "realestate" | "insurance" | "notary" | "teas" | "aws" | "aplus" | "foodhandler" | "boating" | "hunter" | "secplus" | "hesi" | "asvab" | "cpr" | "osha" | "forklift" | "alcohol" | "accuplacer" | "security" | "lifeguard" | "pnc" | "htl" | "cst" | "crcst";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (?set=N). */
@@ -53,7 +53,7 @@ export interface ExamConfig {
   /** Question ID prefix, e.g. "HTL-". */
   questionIdPrefix: string;
   /** Header icon key (see CDLHeader). */
-  icon: "truck" | "bike" | "flag" | "plane" | "radio" | "thermometer" | "heart" | "pill" | "syringe" | "stethoscope" | "activity" | "tooth" | "siren" | "utensils" | "house" | "umbrella" | "stamp" | "graduation" | "cloud" | "cpu" | "chef" | "sailboat" | "target" | "lock" | "book" | "microscope" | "scissors" | "shield";
+  icon: "truck" | "bike" | "flag" | "plane" | "radio" | "thermometer" | "heart" | "pill" | "syringe" | "stethoscope" | "activity" | "tooth" | "siren" | "utensils" | "house" | "umbrella" | "stamp" | "graduation" | "cloud" | "cpu" | "chef" | "sailboat" | "target" | "lock" | "book" | "medal" | "bandage" | "hardhat" | "forklift" | "wine" | "pencil" | "badge" | "lifebuoy" | "building" | "microscope" | "scissors" | "shield";
   testCount: number;
   questionsPerTest: number;
   passPct: number;
@@ -1601,6 +1601,523 @@ const hesi: ExamConfig = {
   },
 };
 
+const asvab: ExamConfig = {
+  id: "asvab",
+  stateCode: "ASVAB",
+  idBase: 3000,
+  slug: "/asvab",
+  landingPath: "/asvab-practice-test",
+  name: "ASVAB Practice Test",
+  shortName: "ASVAB",
+  examLabel: "ASVAB",
+  fullName: "Armed Services Vocational Aptitude Battery (ASVAB)",
+  questionIdPrefix: "ASVAB-",
+  icon: "medal",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // ASVAB subtests weighted toward the four AFQT sections (AR, WK, PC, MK):
+  // general science 10%, arithmetic reasoning 18%, word knowledge 18%, paragraph
+  // comprehension 14%, math knowledge 18%, electronics 8%, auto and shop 8%,
+  // mechanical comprehension 6%. Assembling Objects needs figures and is omitted.
+  blueprint: {
+    asvabGeneralScience: 5,
+    asvabArithmetic: 9,
+    asvabWordKnowledge: 9,
+    asvabParagraph: 7,
+    asvabMathKnowledge: 9,
+    asvabElectronics: 4,
+    asvabAutoShop: 4,
+    asvabMechanical: 3,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 3001, name: "Arithmetic Reasoning & Math Knowledge", categories: ["asvabArithmetic", "asvabMathKnowledge"], size: 72, weightLabel: "36% of the tests" },
+    { setNumber: 2, id: 3002, name: "Word Knowledge & Paragraph Comprehension", categories: ["asvabWordKnowledge", "asvabParagraph"], size: 64, weightLabel: "32% of the tests" },
+    { setNumber: 3, id: 3003, name: "General Science & Electronics", categories: ["asvabGeneralScience", "asvabElectronics"], size: 36, weightLabel: "18% of the tests" },
+    { setNumber: 4, id: 3004, name: "Auto, Shop & Mechanical", categories: ["asvabAutoShop", "asvabMechanical"], size: 28, weightLabel: "14% of the tests" },
+  ],
+  categoryLabels: {
+    asvabGeneralScience: "General Science",
+    asvabArithmetic: "Arithmetic Reasoning",
+    asvabWordKnowledge: "Word Knowledge",
+    asvabParagraph: "Paragraph Comprehension",
+    asvabMathKnowledge: "Mathematics Knowledge",
+    asvabElectronics: "Electronics Information",
+    asvabAutoShop: "Auto & Shop Information",
+    asvabMechanical: "Mechanical Comprehension",
+  },
+  copy: {
+    guestPrompt: "to save your ASVAB progress and track every question you miss",
+    trainingHeading: "Train by subtest",
+    trainingSub: "Four sets covering the eight ASVAB subtests: the math pair, the verbal pair, science and electronics, auto, shop and mechanical. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted toward the AFQT",
+    heroSubs: [
+      "Eight subtests, four full tests. The math and verbal sections set your AFQT score.",
+      "Mastery first, then test. The sets follow the ASVAB subtests the recruiter will show you.",
+      "Halfway through the subtests. The practice tests will show where you stand.",
+      "Fix the misses, then retake. Aim for 70 percent and up for a competitive AFQT.",
+      "Full prep done. Ask your recruiter to schedule the ASVAB or PiCAT.",
+    ],
+    sourceLine: "Covers the eight pencil-and-paper ASVAB subtests. Assembling Objects uses figures and is not included. Minimum AFQT scores vary by branch.",
+    analyticsKey: "asvab",
+  },
+};
+
+const cpr: ExamConfig = {
+  id: "cpr",
+  stateCode: "CPR",
+  idBase: 3100,
+  slug: "/cpr",
+  landingPath: "/cpr-practice-test",
+  name: "CPR Practice Test",
+  shortName: "CPR",
+  examLabel: "CPR, AED & First Aid",
+  fullName: "CPR, AED and first aid certification exam",
+  questionIdPrefix: "CPR-",
+  icon: "bandage",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 84,
+  // CPR/AED/first aid written exams (AHA and Red Cross style courses): basics and
+  // chain of survival 16%, adult CPR and AED 24%, child and infant CPR 20%, choking
+  // and breathing emergencies 12%, first aid 28%. Most provider exams pass at 84%.
+  blueprint: {
+    cprBasics: 8,
+    cprAdult: 12,
+    cprChildInfant: 10,
+    cprChoking: 6,
+    cprFirstAid: 14,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 3101, name: "Basics, Chain of Survival & Choking", categories: ["cprBasics", "cprChoking"], size: 56, weightLabel: "28% of the tests" },
+    { setNumber: 2, id: 3102, name: "Adult CPR & AED", categories: ["cprAdult"], size: 48, weightLabel: "24% of the tests" },
+    { setNumber: 3, id: 3103, name: "Child & Infant CPR", categories: ["cprChildInfant"], size: 40, weightLabel: "20% of the tests" },
+    { setNumber: 4, id: 3104, name: "First Aid", categories: ["cprFirstAid"], size: 56, weightLabel: "28% of the tests" },
+  ],
+  categoryLabels: {
+    cprBasics: "Basics & Chain of Survival",
+    cprAdult: "Adult CPR & AED",
+    cprChildInfant: "Child & Infant CPR",
+    cprChoking: "Choking & Breathing Emergencies",
+    cprFirstAid: "First Aid",
+  },
+  copy: {
+    guestPrompt: "to save your CPR progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets covering the CPR, AED and first aid written exam: basics and choking, adult CPR and AED, child and infant CPR, first aid. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions in the course exam's proportions",
+    heroSubs: [
+      "Five topics, four full tests. First aid and adult CPR are the biggest pieces.",
+      "Mastery first, then test. The sets follow the current resuscitation guidelines every course teaches.",
+      "Halfway through the topics. The practice tests will show where you stand.",
+      "Fix the misses, then retake. Most CPR written exams pass at 84 percent.",
+      "Full prep done. Book your skills session and get certified.",
+    ],
+    sourceLine: "Based on the current AHA and ILCOR resuscitation guidelines and first aid consensus. Works for lay rescuer and healthcare BLS courses from any provider.",
+    analyticsKey: "cpr",
+  },
+};
+
+const osha: ExamConfig = {
+  id: "osha",
+  stateCode: "OSHA",
+  idBase: 3200,
+  slug: "/osha-10",
+  landingPath: "/osha-10-practice-test",
+  name: "OSHA 10 Practice Test",
+  shortName: "OSHA 10",
+  examLabel: "OSHA 10-Hour",
+  fullName: "OSHA 10-hour Outreach training exam",
+  questionIdPrefix: "OSHA-",
+  icon: "hardhat",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // OSHA 10-hour Outreach (construction and general industry): intro to OSHA and
+  // worker rights 16%, fall protection 18%, electrical 14%, struck-by and caught-in
+  // 14%, hazard communication and PPE 20%, health hazards, tools and fire 18%.
+  // Course finals are typically 70% with up to three attempts.
+  blueprint: {
+    oshaIntro: 8,
+    oshaFalls: 9,
+    oshaElectrical: 7,
+    oshaStruckCaught: 7,
+    oshaHazcom: 10,
+    oshaHealth: 9,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 3201, name: "Intro to OSHA & Worker Rights", categories: ["oshaIntro"], size: 32, weightLabel: "16% of the tests" },
+    { setNumber: 2, id: 3202, name: "Fall Protection", categories: ["oshaFalls"], size: 36, weightLabel: "18% of the tests" },
+    { setNumber: 3, id: 3203, name: "Electrical, Struck-By & Caught-In", categories: ["oshaElectrical", "oshaStruckCaught"], size: 56, weightLabel: "28% of the tests" },
+    { setNumber: 4, id: 3204, name: "Hazard Communication & PPE", categories: ["oshaHazcom"], size: 40, weightLabel: "20% of the tests" },
+    { setNumber: 5, id: 3205, name: "Health Hazards, Tools & Fire Safety", categories: ["oshaHealth"], size: 36, weightLabel: "18% of the tests" },
+  ],
+  categoryLabels: {
+    oshaIntro: "Intro to OSHA & Worker Rights",
+    oshaFalls: "Fall Protection",
+    oshaElectrical: "Electrical Safety",
+    oshaStruckCaught: "Struck-By & Caught-In",
+    oshaHazcom: "HazCom & PPE",
+    oshaHealth: "Health Hazards, Tools & Fire",
+  },
+  copy: {
+    guestPrompt: "to save your OSHA 10 progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets covering the OSHA 10 modules: worker rights, fall protection, the rest of the Focus Four, hazard communication and PPE, health hazards, tools and fire. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions in the course exam's proportions",
+    heroSubs: [
+      "Six topics, four full tests. The Focus Four hazards are more than half of every test.",
+      "Mastery first, then test. The sets follow the OSHA Outreach modules every authorized trainer uses.",
+      "Halfway through the topics. The practice tests will show where you stand.",
+      "Fix the misses, then retake. Most OSHA 10 finals pass at 70 percent.",
+      "Full prep done. Finish your authorized course and get your card.",
+    ],
+    sourceLine: "Based on the OSHA Outreach Training Program topics and 29 CFR 1926 and 1910. Not an official OSHA course; cards come only from authorized trainers.",
+    analyticsKey: "osha",
+  },
+};
+
+const forklift: ExamConfig = {
+  id: "forklift",
+  stateCode: "FORKLIFT",
+  idBase: 3300,
+  slug: "/forklift",
+  landingPath: "/forklift-certification-practice-test",
+  name: "Forklift Certification Practice Test",
+  shortName: "Forklift",
+  examLabel: "Forklift Operator",
+  fullName: "forklift operator certification exam",
+  questionIdPrefix: "FORK-",
+  icon: "forklift",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 75,
+  // Forklift operator written evaluation (OSHA 1910.178 training content): basics
+  // and rules 20%, stability and load capacity 24%, inspection, fueling and charging
+  // 16%, safe operation and pedestrians 24%, load handling, docks and ramps 16%.
+  // Employer tests commonly pass at 75 to 80%.
+  blueprint: {
+    forkBasics: 10,
+    forkStability: 12,
+    forkInspection: 8,
+    forkOperation: 12,
+    forkLoads: 8,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 3301, name: "Basics, Rules & Inspection", categories: ["forkBasics", "forkInspection"], size: 72, weightLabel: "36% of the tests" },
+    { setNumber: 2, id: 3302, name: "Stability & Load Capacity", categories: ["forkStability"], size: 48, weightLabel: "24% of the tests" },
+    { setNumber: 3, id: 3303, name: "Safe Operation", categories: ["forkOperation"], size: 48, weightLabel: "24% of the tests" },
+    { setNumber: 4, id: 3304, name: "Load Handling, Docks & Ramps", categories: ["forkLoads"], size: 32, weightLabel: "16% of the tests" },
+  ],
+  categoryLabels: {
+    forkBasics: "Forklift Basics & OSHA Rules",
+    forkStability: "Stability & Load Capacity",
+    forkInspection: "Inspection, Fueling & Charging",
+    forkOperation: "Safe Operation & Pedestrians",
+    forkLoads: "Load Handling, Docks & Ramps",
+  },
+  copy: {
+    guestPrompt: "to save your forklift progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets covering the forklift operator written test: basics, rules and inspection, stability and load capacity, safe operation, load handling. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions in the operator test's proportions",
+    heroSubs: [
+      "Five topics, four full tests. Stability and safe operation are half of every test.",
+      "Mastery first, then test. The sets follow the OSHA 1910.178 training topics every employer covers.",
+      "Halfway through the topics. The practice tests will show where you stand.",
+      "Fix the misses, then retake. Most operator tests pass at 75 percent.",
+      "Full prep done. Take your employer's written and hands-on evaluation.",
+    ],
+    sourceLine: "Based on OSHA 29 CFR 1910.178 and ANSI/ITSDF B56.1 operator training content. Certification comes from your employer's training and evaluation.",
+    analyticsKey: "forklift",
+  },
+};
+
+const alcohol: ExamConfig = {
+  id: "alcohol",
+  stateCode: "ALCOHOL",
+  idBase: 3400,
+  slug: "/alcohol-server",
+  landingPath: "/alcohol-server-practice-test",
+  name: "Alcohol Server Practice Test",
+  shortName: "Alcohol Server",
+  examLabel: "Alcohol Server Certification",
+  fullName: "alcohol server and seller certification exam",
+  questionIdPrefix: "ALC-",
+  icon: "wine",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // Responsible beverage service exams (state RBS, TABC, TIPS-style courses): alcohol
+  // and the body 22%, recognizing intoxication 20%, checking IDs 20%, intervention
+  // 20%, laws and liability 18%. Most pass at 70 to 80%.
+  blueprint: {
+    alcEffects: 11,
+    alcIntoxication: 10,
+    alcChecking: 10,
+    alcIntervention: 10,
+    alcLaw: 9,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 3401, name: "Alcohol & the Body", categories: ["alcEffects"], size: 44, weightLabel: "22% of the tests" },
+    { setNumber: 2, id: 3402, name: "Recognizing Intoxication & Intervening", categories: ["alcIntoxication", "alcIntervention"], size: 80, weightLabel: "40% of the tests" },
+    { setNumber: 3, id: 3403, name: "Checking IDs & Minors", categories: ["alcChecking"], size: 40, weightLabel: "20% of the tests" },
+    { setNumber: 4, id: 3404, name: "Laws & Liability", categories: ["alcLaw"], size: 36, weightLabel: "18% of the tests" },
+  ],
+  categoryLabels: {
+    alcEffects: "Alcohol & the Body",
+    alcIntoxication: "Recognizing Intoxication",
+    alcChecking: "Checking IDs & Minors",
+    alcIntervention: "Intervention & Refusing Service",
+    alcLaw: "Laws & Liability",
+  },
+  copy: {
+    guestPrompt: "to save your alcohol server progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets covering the server certification exam: how alcohol affects the body, recognizing intoxication and intervening, checking IDs, laws and liability. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions in the course exam's proportions",
+    heroSubs: [
+      "Five topics, four full tests. Spotting intoxication and stepping in is the biggest piece.",
+      "Mastery first, then test. The sets follow the responsible beverage service curriculum every state program uses.",
+      "Halfway through the topics. The practice tests will show where you stand.",
+      "Fix the misses, then retake. Most server exams pass at 70 percent.",
+      "Full prep done. Take your state's or employer's certification course.",
+    ],
+    sourceLine: "Based on responsible beverage service curricula used nationwide. Permit requirements, hours of sale and penalties vary by state.",
+    analyticsKey: "alcohol",
+  },
+};
+
+const accuplacer: ExamConfig = {
+  id: "accuplacer",
+  stateCode: "ACCUPLACER",
+  idBase: 3500,
+  slug: "/accuplacer",
+  landingPath: "/accuplacer-practice-test",
+  name: "ACCUPLACER Practice Test",
+  shortName: "ACCUPLACER",
+  examLabel: "ACCUPLACER",
+  fullName: "Next-Generation ACCUPLACER placement test",
+  questionIdPrefix: "ACC-",
+  icon: "pencil",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // Next-Generation ACCUPLACER (College Board): reading 26%, writing 24%, arithmetic
+  // 20%, quantitative reasoning, algebra and statistics 20%, advanced algebra and
+  // functions 10%. Placement test with college-set cut scores; 70% here marks
+  // college-ready work.
+  blueprint: {
+    accReading: 13,
+    accWriting: 12,
+    accArithmetic: 10,
+    accQAS: 10,
+    accAAF: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 3501, name: "Reading", categories: ["accReading"], size: 52, weightLabel: "26% of the tests" },
+    { setNumber: 2, id: 3502, name: "Writing", categories: ["accWriting"], size: 48, weightLabel: "24% of the tests" },
+    { setNumber: 3, id: 3503, name: "Arithmetic", categories: ["accArithmetic"], size: 40, weightLabel: "20% of the tests" },
+    { setNumber: 4, id: 3504, name: "Algebra, Statistics & Functions", categories: ["accQAS", "accAAF"], size: 60, weightLabel: "30% of the tests" },
+  ],
+  categoryLabels: {
+    accReading: "Reading",
+    accWriting: "Writing",
+    accArithmetic: "Arithmetic",
+    accQAS: "Quantitative Reasoning, Algebra & Statistics",
+    accAAF: "Advanced Algebra & Functions",
+  },
+  copy: {
+    guestPrompt: "to save your ACCUPLACER progress and track every question you miss",
+    trainingHeading: "Train by section",
+    trainingSub: "Four sets covering the five ACCUPLACER sections: reading, writing, arithmetic, and algebra, statistics and functions. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions across all five sections",
+    heroSubs: [
+      "Five sections, four full tests. Reading and the math sections decide most placements.",
+      "Mastery first, then test. The sets follow the Next-Generation ACCUPLACER section outlines.",
+      "Halfway through the sections. The practice tests will show where you stand.",
+      "Fix the misses, then retake. Clear 70 percent to place out of developmental courses at most colleges.",
+      "Full prep done. Schedule your placement test through your college's testing center.",
+    ],
+    sourceLine: "Based on the College Board Next-Generation ACCUPLACER section outlines. Cut scores are set by each college. The WritePlacer essay is not included.",
+    analyticsKey: "accuplacer",
+  },
+};
+
+const security: ExamConfig = {
+  id: "security",
+  stateCode: "SECGUARD",
+  idBase: 3600,
+  slug: "/security-guard",
+  landingPath: "/security-guard-practice-test",
+  name: "Security Guard Practice Test",
+  shortName: "Security Guard",
+  examLabel: "Security Guard License",
+  fullName: "unarmed security guard license exam",
+  questionIdPrefix: "SG-",
+  icon: "badge",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // Unarmed guard pre-assignment training exams: role and professionalism 16%,
+  // legal powers and limits 22%, observation, patrol and access control 20%,
+  // report writing 16%, emergency response 18%, safety and terrorism awareness 8%.
+  // State exams usually pass at 70%.
+  blueprint: {
+    sgRole: 8,
+    sgLegal: 11,
+    sgObservation: 10,
+    sgReports: 8,
+    sgEmergency: 9,
+    sgSafety: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 3601, name: "Role, Ethics & Legal Powers", categories: ["sgRole", "sgLegal"], size: 76, weightLabel: "38% of the tests" },
+    { setNumber: 2, id: 3602, name: "Observation, Patrol & Access Control", categories: ["sgObservation"], size: 40, weightLabel: "20% of the tests" },
+    { setNumber: 3, id: 3603, name: "Report Writing & Communication", categories: ["sgReports"], size: 32, weightLabel: "16% of the tests" },
+    { setNumber: 4, id: 3604, name: "Emergencies, Safety & Terrorism Awareness", categories: ["sgEmergency", "sgSafety"], size: 52, weightLabel: "26% of the tests" },
+  ],
+  categoryLabels: {
+    sgRole: "Role & Professionalism",
+    sgLegal: "Legal Powers & Limits",
+    sgObservation: "Observation, Patrol & Access Control",
+    sgReports: "Report Writing & Communication",
+    sgEmergency: "Emergency Response",
+    sgSafety: "Safety & Terrorism Awareness",
+  },
+  copy: {
+    guestPrompt: "to save your security guard progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets covering the guard license exam: role, ethics and legal powers, observation and access control, report writing, emergencies and terrorism awareness. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions in the state exam's proportions",
+    heroSubs: [
+      "Six topics, four full tests. Legal powers and limits is the biggest piece.",
+      "Mastery first, then test. The sets follow the pre-assignment training topics every state course covers.",
+      "Halfway through the topics. The practice tests will show where you stand.",
+      "Fix the misses, then retake. Most state guard exams pass at 70 percent.",
+      "Full prep done. Finish your state's training hours and sit the licensing exam.",
+    ],
+    sourceLine: "Based on the unarmed guard training topics common to every state program. Training hours, arrest powers and licensing rules vary by state.",
+    analyticsKey: "security",
+  },
+};
+
+const lifeguard: ExamConfig = {
+  id: "lifeguard",
+  stateCode: "LIFEGUARD",
+  idBase: 3700,
+  slug: "/lifeguard",
+  landingPath: "/lifeguard-practice-test",
+  name: "Lifeguard Practice Test",
+  shortName: "Lifeguard",
+  examLabel: "Lifeguard Certification",
+  fullName: "lifeguard certification written exam",
+  questionIdPrefix: "LG-",
+  icon: "lifebuoy",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // Lifeguard certification written exams: professional lifeguard and surveillance
+  // 20%, recognizing drowning and distress 16%, water rescue and spinal injury 24%,
+  // first aid, CPR and AED 24%, facility safety and legal 16%. Most pass at 80%.
+  blueprint: {
+    lgProfessional: 10,
+    lgRecognition: 8,
+    lgRescue: 12,
+    lgCare: 12,
+    lgFacility: 8,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 3701, name: "Surveillance & Victim Recognition", categories: ["lgProfessional", "lgRecognition"], size: 72, weightLabel: "36% of the tests" },
+    { setNumber: 2, id: 3702, name: "Water Rescue Skills", categories: ["lgRescue"], size: 48, weightLabel: "24% of the tests" },
+    { setNumber: 3, id: 3703, name: "First Aid, CPR & AED", categories: ["lgCare"], size: 48, weightLabel: "24% of the tests" },
+    { setNumber: 4, id: 3704, name: "Facility Safety & Legal", categories: ["lgFacility"], size: 32, weightLabel: "16% of the tests" },
+  ],
+  categoryLabels: {
+    lgProfessional: "Professional Lifeguard & Surveillance",
+    lgRecognition: "Recognizing Drowning & Distress",
+    lgRescue: "Water Rescue & Spinal Injury",
+    lgCare: "First Aid, CPR & AED",
+    lgFacility: "Facility Safety & Legal",
+  },
+  copy: {
+    guestPrompt: "to save your lifeguard progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets covering the lifeguard written exam: surveillance and victim recognition, water rescue skills, first aid, CPR and AED, facility safety and legal duties. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions in the course exam's proportions",
+    heroSubs: [
+      "Five topics, four full tests. Rescue skills and emergency care are half of every test.",
+      "Mastery first, then test. The sets follow the lifeguarding curriculum every certifying provider teaches.",
+      "Halfway through the topics. The practice tests will show where you stand.",
+      "Fix the misses, then retake. Most lifeguard written exams pass at 80 percent.",
+      "Full prep done. Pass the in-water skills and get your certificate.",
+    ],
+    sourceLine: "Based on lifeguard certification course content used nationwide and current resuscitation guidelines. The swim prerequisites and skills test are separate.",
+    analyticsKey: "lifeguard",
+  },
+};
+
+const pnc: ExamConfig = {
+  id: "pnc",
+  stateCode: "PNC",
+  idBase: 3800,
+  slug: "/property-casualty-insurance",
+  landingPath: "/property-casualty-insurance-practice-test",
+  name: "Property & Casualty Insurance Practice Test",
+  shortName: "P&C Insurance",
+  examLabel: "Property & Casualty",
+  fullName: "property and casualty insurance license exam",
+  questionIdPrefix: "PC-",
+  icon: "building",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // Property and casualty producer exam, general portion (Pearson VUE, PSI and
+  // Prometric outlines): insurance basics and underwriting 14%, policy provisions
+  // 14%, dwelling and homeowners 18%, personal auto 18%, commercial property and
+  // BOP 16%, commercial liability and workers comp 12%, flood, surety and other 8%.
+  // Most states pass at 70%.
+  blueprint: {
+    pcGeneral: 7,
+    pcPolicy: 7,
+    pcHomeowners: 9,
+    pcAuto: 9,
+    pcCommercial: 8,
+    pcLiability: 6,
+    pcOther: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 3801, name: "Basics, Underwriting & Policy Provisions", categories: ["pcGeneral", "pcPolicy"], size: 56, weightLabel: "28% of the tests" },
+    { setNumber: 2, id: 3802, name: "Dwelling & Homeowners", categories: ["pcHomeowners"], size: 36, weightLabel: "18% of the tests" },
+    { setNumber: 3, id: 3803, name: "Personal Auto", categories: ["pcAuto"], size: 36, weightLabel: "18% of the tests" },
+    { setNumber: 4, id: 3804, name: "Commercial Lines & Other Coverages", categories: ["pcCommercial", "pcLiability", "pcOther"], size: 72, weightLabel: "36% of the tests" },
+  ],
+  categoryLabels: {
+    pcGeneral: "Insurance Basics & Underwriting",
+    pcPolicy: "Policy Provisions & Conditions",
+    pcHomeowners: "Dwelling & Homeowners",
+    pcAuto: "Personal Auto",
+    pcCommercial: "Commercial Property & BOP",
+    pcLiability: "Commercial Liability & Workers Comp",
+    pcOther: "Flood, Surety & Other Coverages",
+  },
+  copy: {
+    guestPrompt: "to save your P&C progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets covering the general portion of the P&C exam: basics and policy provisions, dwelling and homeowners, personal auto, commercial lines and other coverages. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions in the exam outline's proportions",
+    heroSubs: [
+      "Seven topics, four full tests. Homeowners and personal auto are the biggest pieces.",
+      "Mastery first, then test. The sets follow the general-portion outline every state's vendor uses.",
+      "Halfway through the topics. The practice tests will show where you stand.",
+      "Fix the misses, then retake. Most states pass the P&C exam at 70 percent.",
+      "Full prep done. Schedule your state exam and add the state-law portion.",
+    ],
+    sourceLine: "Based on the general (national) portion of the property and casualty producer exam outlines. State laws and the state portion are not covered.",
+    analyticsKey: "pnc",
+  },
+};
+
 const htl: ExamConfig = {
   id: "htl",
   stateCode: "HTL",
@@ -1774,7 +2291,7 @@ const crcst: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, cet, danb, emt, foodmgr, realestate, insurance, notary, teas, aws, aplus, foodhandler, boating, hunter, secplus, hesi, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, cet, danb, emt, foodmgr, realestate, insurance, notary, teas, aws, aplus, foodhandler, boating, hunter, secplus, hesi, asvab, cpr, osha, forklift, alcohol, accuplacer, security, lifeguard, pnc, htl, cst, crcst];
 
 export const examSetBase = (exam: ExamConfig) => exam.setIdBase ?? exam.idBase;
 /** Store ID of training set N of an exam. */

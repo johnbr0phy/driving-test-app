@@ -25,6 +25,15 @@ import boatingQuestions from "@/data/boating-questions.json";
 import hunterQuestions from "@/data/hunter-questions.json";
 import secplusQuestions from "@/data/comptia-secplus-questions.json";
 import hesiQuestions from "@/data/hesi-questions.json";
+import asvabQuestions from "@/data/asvab-questions.json";
+import cprQuestions from "@/data/cpr-questions.json";
+import oshaQuestions from "@/data/osha-questions.json";
+import forkliftQuestions from "@/data/forklift-questions.json";
+import alcoholQuestions from "@/data/alcohol-server-questions.json";
+import accuplacerQuestions from "@/data/accuplacer-questions.json";
+import securityQuestions from "@/data/security-guard-questions.json";
+import lifeguardQuestions from "@/data/lifeguard-questions.json";
+import pncQuestions from "@/data/property-casualty-questions.json";
 import htlQuestions from "@/data/htl-questions.json";
 import cstQuestions from "@/data/cst-questions.json";
 import crcstQuestions from "@/data/crcst-questions.json";
@@ -59,6 +68,15 @@ const BANKS: Record<ExamId, Question[]> = {
   hunter: hunterQuestions as Question[],
   secplus: secplusQuestions as Question[],
   hesi: hesiQuestions as Question[],
+  asvab: asvabQuestions as Question[],
+  cpr: cprQuestions as Question[],
+  osha: oshaQuestions as Question[],
+  forklift: forkliftQuestions as Question[],
+  alcohol: alcoholQuestions as Question[],
+  accuplacer: accuplacerQuestions as Question[],
+  security: securityQuestions as Question[],
+  lifeguard: lifeguardQuestions as Question[],
+  pnc: pncQuestions as Question[],
   htl: htlQuestions as Question[],
   cst: cstQuestions as Question[],
   crcst: crcstQuestions as Question[],

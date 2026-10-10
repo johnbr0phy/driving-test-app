@@ -1,4 +1,4 @@
-import { Car, Truck, Bike, Flag, Plane, Radio, Thermometer, HeartPulse, Pill, Syringe, Stethoscope, Activity, SmilePlus, Siren, Utensils, House, Umbrella, Stamp, GraduationCap, Cloud, Cpu, ChefHat, Sailboat, Target, LockKeyhole, BookOpenCheck, Microscope, Scissors, ShieldCheck } from "lucide-react";
+import { Car, Truck, Bike, Flag, Plane, Radio, Thermometer, HeartPulse, Pill, Syringe, Stethoscope, Activity, SmilePlus, Siren, Utensils, House, Umbrella, Stamp, GraduationCap, Cloud, Cpu, ChefHat, Sailboat, Target, LockKeyhole, BookOpenCheck, Medal, Bandage, HardHat, Forklift, Wine, PencilLine, BadgeCheck, LifeBuoy, Building2, Microscope, Scissors, ShieldCheck } from "lucide-react";
 import type { TestCatalogEntry } from "@/lib/testCatalog";
 import Image from "next/image";
 import { getTigerAsset, hasTigerSet } from "@/lib/tigerAssets";
@@ -33,6 +33,15 @@ export function TestIcon({ icon, examId, className = "h-5 w-5" }: { icon: TestCa
   if (icon === "target") return <Target className={className} aria-hidden="true" />;
   if (icon === "lock") return <LockKeyhole className={className} aria-hidden="true" />;
   if (icon === "book") return <BookOpenCheck className={className} aria-hidden="true" />;
+  if (icon === "medal") return <Medal className={className} aria-hidden="true" />;
+  if (icon === "bandage") return <Bandage className={className} aria-hidden="true" />;
+  if (icon === "hardhat") return <HardHat className={className} aria-hidden="true" />;
+  if (icon === "forklift") return <Forklift className={className} aria-hidden="true" />;
+  if (icon === "wine") return <Wine className={className} aria-hidden="true" />;
+  if (icon === "pencil") return <PencilLine className={className} aria-hidden="true" />;
+  if (icon === "badge") return <BadgeCheck className={className} aria-hidden="true" />;
+  if (icon === "lifebuoy") return <LifeBuoy className={className} aria-hidden="true" />;
+  if (icon === "building") return <Building2 className={className} aria-hidden="true" />;
   if (icon === "microscope") return <Microscope className={className} aria-hidden="true" />;
   if (icon === "scissors") return <Scissors className={className} aria-hidden="true" />;
   return <ShieldCheck className={className} aria-hidden="true" />;

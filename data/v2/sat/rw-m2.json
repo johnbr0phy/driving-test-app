@@ -1,0 +1,596 @@
+[
+  {
+    "id": "SAT-RW-201",
+    "section": "rw",
+    "test": 1,
+    "module": 2,
+    "domain": "craftStructure",
+    "skill": "Words in context",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "Sea otters are often described as a keystone species in kelp forest ecosystems. By preying on sea urchins, which graze on kelp, otters keep urchin populations in check and allow kelp to flourish. When otters disappear from an area, urchin numbers can grow so quickly that the kelp is ______ within a few seasons, leaving a barren seafloor behind.",
+    "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+    "options": [
+      "restored",
+      "depleted",
+      "measured",
+      "cultivated"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The text says that without otters, urchin populations grow rapidly and the result is a 'barren seafloor,' so the kelp must be used up or destroyed. 'Depleted' captures this loss. 'Restored' and 'cultivated' describe the opposite outcome, and 'measured' says nothing about what happens to the kelp."
+  },
+  {
+    "id": "SAT-RW-202",
+    "section": "rw",
+    "test": 1,
+    "module": 2,
+    "domain": "craftStructure",
+    "skill": "Words in context",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The architect Julia Morgan designed more than 700 buildings in California, yet she rarely spoke publicly about her work and declined most interview requests. Because of this ______, historians have had to reconstruct her design philosophy largely from her drawings, her letters to clients, and the buildings themselves.",
+    "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+    "options": [
+      "reticence",
+      "ambition",
+      "versatility",
+      "candor"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The blank must name the quality described in the first sentence: Morgan rarely spoke about her work and avoided interviews. 'Reticence,' a reluctance to speak, fits exactly and explains why historians must rely on indirect sources. 'Versatility' is tempting because she designed so many buildings, but it would not explain why her philosophy has to be reconstructed; 'candor' means the opposite of what is described."
+  },
+  {
+    "id": "SAT-RW-203",
+    "section": "rw",
+    "test": 1,
+    "module": 2,
+    "domain": "craftStructure",
+    "skill": "Words in context",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "Linguists once assumed that the grammar of a pidgin, a simplified contact language, would remain ______ across generations, with its basic patterns fixed once they had been established. Studies of creole languages, which develop when children acquire a pidgin as a first language, overturned this assumption: within a single generation, speakers introduced consistent tense markers, embedded clauses, and other features the pidgin had lacked.",
+    "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+    "options": [
+      "immutable",
+      "inscrutable",
+      "contentious",
+      "ornate"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The phrase 'with its basic patterns fixed once they had been established' restates the blank, so the missing word must mean unchanging. 'Immutable' means exactly that, and the second sentence confirms the contrast by describing rapid change. 'Inscrutable' (impossible to interpret) is a difficult word that does not describe stability, and 'ornate' conflicts with the description of a pidgin as simplified."
+  },
+  {
+    "id": "SAT-RW-204",
+    "section": "rw",
+    "test": 1,
+    "module": 2,
+    "domain": "craftStructure",
+    "skill": "Words in context",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "Before the invention of sound recording, a composer's reputation rested largely on performances, which were ______ by nature: once the last note faded, the work existed only in memory and in the printed score. Recording changed this fundamentally, allowing a single interpretation to be heard repeatedly, compared with others, and preserved long after the performers themselves were gone.",
+    "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+    "options": [
+      "ephemeral",
+      "derivative",
+      "meticulous",
+      "idiosyncratic"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The colon introduces an explanation of the blank: a performance vanished as soon as it ended and survived only in memory. 'Ephemeral,' meaning short-lived, matches this and sets up the contrast with recordings that can be 'preserved.' 'Idiosyncratic' is tempting because performances differ from one another, but the text emphasizes that performances disappear, not that they are unusual."
+  },
+  {
+    "id": "SAT-RW-205",
+    "section": "rw",
+    "test": 1,
+    "module": 2,
+    "domain": "craftStructure",
+    "skill": "Text structure and purpose",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "When astronomers first detected pulsars in 1967, the signals were so regular that the discovery team briefly labeled the source LGM-1, for 'little green men.' __The nickname was a joke, but it reflected a real puzzle: no known natural object seemed capable of producing pulses so precisely timed.__ The answer came within months. A rapidly rotating neutron star, sweeping a beam of radiation across the sky like a lighthouse, could produce exactly such a signal, and the regularity that had seemed so strange turned out to be a direct consequence of the star's enormous density and stable spin.",
+    "stem": "Which choice best describes the function of the underlined sentence in the text as a whole?",
+    "options": [
+      "It clarifies that the label was not meant literally while identifying the scientific question that the label captured.",
+      "It suggests that the discovery team seriously considered an artificial origin for the signal.",
+      "It introduces a competing hypothesis that the rest of the text goes on to reject.",
+      "It explains why the discovery of pulsars was initially overlooked by the wider astronomical community."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The underlined sentence does two things: it dismisses the nickname as a joke, and it states the genuine problem behind it, that no natural object seemed able to produce such regular pulses. The remainder of the text then resolves that problem. Choice B contradicts the sentence's statement that the nickname was a joke, and choice C fails because the sentence poses a question rather than a hypothesis."
+  },
+  {
+    "id": "SAT-RW-206",
+    "section": "rw",
+    "test": 1,
+    "module": 2,
+    "domain": "craftStructure",
+    "skill": "Text structure and purpose",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "Anthropologists studying gift exchange in the Trobriand Islands initially described the kula ring, in which shell necklaces and armbands circulate among island communities in opposite directions, as a purely ceremonial practice with no economic function. Later researchers questioned this characterization. They noted that kula voyages also carried ordinary trade goods, that the prestige gained through kula partnerships could translate into practical influence, and that the relationships sustained by the exchange reduced the risk of conflict between distant communities. The kula, in this view, was not an alternative to economic activity but a framework within which such activity took place.",
+    "stem": "Which choice best describes the overall structure of the text?",
+    "options": [
+      "It presents an early interpretation of a practice, describes observations that complicated that interpretation, and offers a revised understanding.",
+      "It describes a practice in detail and then argues that the practice has been misunderstood by the communities that engage in it.",
+      "It introduces two competing theories about a practice and concludes that neither can be confirmed with available evidence.",
+      "It summarizes a long-standing debate about a practice and explains why the debate has recently been settled in favor of the original view."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The text moves from the initial view (the kula as purely ceremonial) to the evidence later researchers raised against it (trade goods, prestige, reduced conflict) and ends with a new understanding (the kula as a framework for economic activity). Choice D is the strongest distractor, but the text favors the later researchers' view, not the original one, and it never describes the question as settled. Choice B wrongly locates the misunderstanding among the islanders rather than among early anthropologists."
+  },
+  {
+    "id": "SAT-RW-207",
+    "section": "rw",
+    "test": 1,
+    "module": 2,
+    "domain": "craftStructure",
+    "skill": "Cross-text connections",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "**Text 1**\n\nPlanting trees in cities is widely promoted as a way to cool neighborhoods, since tree canopies shade pavement and release moisture through their leaves. Urban forestry programs therefore often set ambitious canopy targets, such as covering 30 or 40 percent of a city's land area, on the assumption that more canopy will reliably mean lower summer temperatures.\n\n**Text 2**\n\nEcologist Mara Lindqvist and colleagues measured air temperatures across 200 city blocks with varying tree cover. They found that cooling benefits were modest until canopy cover exceeded roughly 40 percent of a block, after which temperatures dropped sharply. Blocks with 20 percent cover were barely cooler than blocks with none. The researchers argue that spreading trees thinly across an entire city may yield less cooling than concentrating them in fewer, densely planted areas.",
+    "stem": "Based on the texts, how would the author of Text 2 most likely respond to the claim in Text 1?",
+    "options": [
+      "By agreeing that canopy cover lowers temperatures but noting that the benefit depends on how concentrated the canopy is within a given area.",
+      "By arguing that tree canopies cool neighborhoods primarily through moisture release rather than through shade.",
+      "By pointing out that canopy targets of 30 to 40 percent are unrealistic for most cities to achieve.",
+      "By suggesting that urban forestry programs should measure success by the number of trees planted rather than by canopy cover."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Text 1 assumes that more canopy reliably means lower temperatures. Text 2 does not deny that trees cool, but its finding that cooling is modest until a block reaches about 40 percent cover implies that distribution matters, so thinly spread canopy may fail to deliver the expected benefit. Choice C is tempting because Text 2 mentions the 40 percent figure, but it treats that figure as a threshold for cooling, not as an unrealistic goal."
+  },
+  {
+    "id": "SAT-RW-208",
+    "section": "rw",
+    "test": 1,
+    "module": 2,
+    "domain": "craftStructure",
+    "skill": "Cross-text connections",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "**Text 1**\n\nMany economists have argued that the introduction of coinage in the ancient Mediterranean world was driven primarily by the needs of trade. Standardized coins, the argument goes, reduced the cost of verifying the weight and purity of metal in every transaction, allowing markets to expand beyond the circle of merchants who already trusted one another.\n\n**Text 2**\n\nThe earliest coins from Lydia and the Greek cities were struck in denominations far too large for everyday purchases; a single coin might represent weeks of wages. Historian Theo Brandt contends that this pattern fits poorly with a commercial origin. He proposes instead that early states minted coins to make large payments to soldiers and officials, and that the coins entered ordinary markets only afterward, as recipients spent them.",
+    "stem": "Based on the texts, how would the author of Text 2 most likely respond to the claim in Text 1?",
+    "options": [
+      "By asserting that the high value of the earliest coins is better explained by state payments than by the demands of market exchange.",
+      "By conceding that coins reduced transaction costs but denying that ancient markets ever expanded as a result.",
+      "By arguing that the earliest coins were too valuable to have been used by soldiers and officials.",
+      "By noting that merchants, not states, were the first to recognize the advantages of standardized coinage."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Text 2 uses the large denominations of early coins as evidence against the trade-based explanation in Text 1 and proposes state payments to soldiers and officials as the original purpose. Choice A captures both the evidence and the alternative explanation. Choice C reverses Text 2's reasoning: Brandt argues that the coins' high value is consistent with payments to soldiers and officials, not inconsistent with it."
+  },
+  {
+    "id": "SAT-RW-209",
+    "section": "rw",
+    "test": 1,
+    "module": 2,
+    "domain": "infoIdeas",
+    "skill": "Central ideas and details",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "The following text is adapted from Charlotte Bronte's 1847 novel Jane Eyre. The narrator, a child, lives in the household of her aunt's family.\n\nThere was no possibility of taking a walk that day. We had wandered in the leafless shrubbery for an hour in the morning, but since dinner the cold winter wind had brought with it clouds so somber and a rain so penetrating that further outdoor exercise was out of the question. I was glad of it. I never liked long walks, especially on chilly afternoons; dreadful to me was the coming home in the raw twilight, with nipped fingers and toes, and a heart saddened by the scoldings of Bessie, the nurse, and humbled by the consciousness of my physical inferiority to Eliza, John, and Georgiana Reed.",
+    "stem": "Which choice best states the main idea of the text?",
+    "options": [
+      "The narrator welcomes the bad weather because it spares her an outing she finds physically and emotionally unpleasant.",
+      "The narrator resents being kept indoors by weather that the rest of the household seems to ignore.",
+      "The narrator regrets that she cannot keep up with her cousins on their long afternoon walks.",
+      "The narrator fears that the nurse will blame her for the family's failure to go outside."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The narrator says plainly that she 'was glad' the walk was canceled and then lists what she dislikes about such walks: the cold, the scoldings, and feeling inferior to her cousins. Choice A states this directly. Choice C focuses on one detail (physical inferiority) and misreads it as regret about missing the walk, when the narrator is relieved to avoid it."
+  },
+  {
+    "id": "SAT-RW-210",
+    "section": "rw",
+    "test": 1,
+    "module": 2,
+    "domain": "infoIdeas",
+    "skill": "Central ideas and details",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Spider silk has long fascinated materials scientists because it combines strength and elasticity in a way few synthetic fibers can match. Yet producing it in quantity has proven stubbornly difficult. Spiders cannot be farmed like silkworms, since they are territorial and prone to eating one another, and attempts to produce silk proteins in bacteria or yeast have yielded fibers that lack the precise molecular arrangement of the natural material. Recent work suggests the problem lies not only in the protein itself but in the spinning process: the spider's gland subjects the liquid protein to specific changes in acidity and pressure that organize it into fibers, and reproducing these conditions may matter as much as reproducing the protein.",
+    "stem": "Which choice best states the main idea of the text?",
+    "options": [
+      "Efforts to manufacture spider silk have been hampered by the difficulty of replicating both the silk protein and the conditions under which spiders spin it.",
+      "Spider silk is valued because it is both stronger and more elastic than any synthetic fiber yet developed.",
+      "Scientists have abandoned attempts to farm spiders in favor of producing silk proteins in microorganisms.",
+      "The molecular structure of spider silk is determined entirely by the acidity and pressure within the spider's gland."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The text's focus is the difficulty of producing spider silk artificially, first through the protein and then through the spinning conditions, and choice A ties these two obstacles together. Choice B describes only the opening sentence, which sets up the problem rather than stating the main idea. Choice D overstates the final sentence, which says the spinning conditions 'may matter as much as' the protein, not that they determine structure entirely."
+  },
+  {
+    "id": "SAT-RW-211",
+    "section": "rw",
+    "test": 1,
+    "module": 2,
+    "domain": "infoIdeas",
+    "skill": "Command of evidence (textual)",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "'Sympathy' is an 1899 poem by Paul Laurence Dunbar. The poem's speaker describes a caged bird in three stanzas, moving from what the bird feels, to why it beats against its cage, and finally to why it sings. In the final stanza, the speaker insists that the bird's song is an expression of longing for freedom rather than of happiness:",
+    "stem": "Which quotation from 'Sympathy' most effectively illustrates the claim?",
+    "options": [
+      "\"It is not a carol of joy or glee, / But a prayer that he sends from his heart's deep core\"",
+      "\"When the sun is bright on the upland slopes; / When the wind stirs soft through the springing grass\"",
+      "\"I know why the caged bird beats his wing / Till its blood is red on the cruel bars\"",
+      "\"When the first bird sings and the first bud opes, / And the faint perfume from its chalice steals\""
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The claim concerns the meaning of the bird's song, and choice A addresses the song directly, denying that it is a 'carol of joy' and calling it a 'prayer' sent from the heart. Choice C is the strongest distractor because it conveys the bird's desperation for freedom, but it describes the bird beating its wings, not singing, so it does not illustrate the claim about the song."
+  },
+  {
+    "id": "SAT-RW-212",
+    "section": "rw",
+    "test": 1,
+    "module": 2,
+    "domain": "infoIdeas",
+    "skill": "Command of evidence (textual)",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "Astronomer Lena Okafor and colleagues have proposed that the unusually bright, compact galaxies observed at very early cosmic times by the James Webb Space Telescope are not as massive as their brightness would ordinarily imply. Instead, the team hypothesizes that intense, short-lived bursts of star formation, in which many very luminous but short-lived stars form at once, temporarily inflate the galaxies' brightness without requiring an implausibly large total mass of stars.",
+    "stem": "Which finding, if true, would most directly support the team's hypothesis?",
+    "options": [
+      "Spectra of the galaxies show emission features characteristic of very young, massive stars and little light from older stellar populations.",
+      "The galaxies are found to be far more common in the early universe than theoretical models of galaxy formation had predicted.",
+      "The galaxies' sizes, as measured from the telescope images, are smaller than those of typical galaxies observed at later times.",
+      "Repeated observations reveal that the galaxies' brightness has remained constant over the entire period during which they were monitored."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The hypothesis holds that the brightness comes from a recent burst of young, luminous stars. Spectra dominated by young, massive stars with little contribution from older stars would be exactly the signature such a burst should leave, so choice A directly supports the idea. Choice D works against the hypothesis, since a brightness that never changes is hard to reconcile with a temporary burst. Choice B deepens the puzzle the team is trying to solve rather than supporting their solution."
+  },
+  {
+    "id": "SAT-RW-213",
+    "section": "rw",
+    "test": 1,
+    "module": 2,
+    "domain": "infoIdeas",
+    "skill": "Command of evidence (quantitative)",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "Ecologist Dana Whitfield and colleagues studied whether the time of day at which flowers of the plant Silene latifolia open affects which insects pollinate them. Over two weeks, the researchers recorded the number of visits by three insect groups to flowers that opened at different times.\n\n| Flower opening time | Moth visits | Bee visits | Fly visits |\n|---|---|---|---|\n| Early morning | 4 | 61 | 22 |\n| Midday | 2 | 48 | 30 |\n| Late afternoon | 19 | 27 | 18 |\n| Dusk | 57 | 5 | 9 |\n\nThe team concluded that the plant's reliance on moths as pollinators depends on its flowers opening late in the day, noting that ______",
+    "stem": "Which choice most effectively uses data from the table to complete the statement?",
+    "options": [
+      "flowers that opened at dusk received 57 moth visits, compared with only 4 visits to flowers that opened in the early morning.",
+      "flowers that opened at dusk received fewer visits from bees than from flies.",
+      "flowers that opened in the late afternoon received more moth visits than flowers that opened at midday, though fewer moth visits than bee visits.",
+      "fly visits were highest for flowers that opened at midday, when 30 visits were recorded."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The conclusion links moth pollination to late flower opening, so the strongest support is the sharp contrast in moth visits between the latest opening time (57 at dusk) and an early one (4 in the early morning). Choice C is accurate but weak: it compares two middle categories and even notes that bees still outnumbered moths in the late afternoon. Choices B and D are true statements about bees and flies that say nothing about moths."
+  },
+  {
+    "id": "SAT-RW-214",
+    "section": "rw",
+    "test": 1,
+    "module": 2,
+    "domain": "infoIdeas",
+    "skill": "Inferences",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Gothic cathedrals in medieval Europe used flying buttresses, external stone arms that brace the walls, to counteract the outward thrust of their high vaulted ceilings. Because the buttresses carried much of the load, the walls between them no longer needed to be thick and solid, and builders took advantage of this freedom by filling those walls with enormous stained-glass windows. Romanesque churches of the preceding era, which lacked flying buttresses, had thick walls pierced by only small windows. This contrast suggests that the small windows of Romanesque churches were ______",
+    "stem": "Which choice most logically completes the text?",
+    "options": [
+      "a structural necessity rather than a purely aesthetic preference.",
+      "intended to make the interiors appear larger than they actually were.",
+      "a deliberate rejection of the stained-glass tradition.",
+      "the result of a shortage of skilled glassmakers."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The text explains that large windows became possible only when buttresses relieved the walls of their load. Since Romanesque builders lacked buttresses, their walls had to bear the load themselves and so could not be opened up, which makes small windows a structural requirement. Choice C is tempting but reverses the chronology: the stained-glass tradition flourished after the Romanesque period, so it could not have been rejected by Romanesque builders."
+  },
+  {
+    "id": "SAT-RW-215",
+    "section": "rw",
+    "test": 1,
+    "module": 2,
+    "domain": "infoIdeas",
+    "skill": "Inferences",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "Many languages mark the source of a speaker's knowledge grammatically, with suffixes that indicate whether a statement is based on direct observation, inference, or hearsay. In some of these languages, using the wrong marker is not merely ungrammatical but can be taken as an accusation of dishonesty, since a speaker who claims direct knowledge of an event she only heard about appears to be misrepresenting how she knows what she knows. Linguists studying such languages have noted that speakers often decline to answer a question at all unless they can specify the source of their knowledge with confidence. This hesitation suggests that ______",
+    "stem": "Which choice most logically completes the text?",
+    "options": [
+      "the grammatical requirement to mark evidence shapes not only how speakers phrase statements but also whether they are willing to make them.",
+      "speakers of such languages are generally less knowledgeable about events than speakers of languages without evidential markers.",
+      "evidential markers are gradually being abandoned because they make ordinary conversation too cumbersome.",
+      "listeners in such languages rarely question the accuracy of statements that carry a direct-observation marker."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The text builds from the grammatical rule, to its social weight (misuse implies dishonesty), to speakers' reluctance to answer when unsure of their source. The logical conclusion is that the marking requirement affects whether people speak at all, not just how they speak. Choice D is the strongest distractor because the text implies that markers are trusted, but nothing in the passage addresses how listeners treat marked statements, and the hesitation described concerns speakers."
+  },
+  {
+    "id": "SAT-RW-216",
+    "section": "rw",
+    "test": 1,
+    "module": 2,
+    "domain": "conventions",
+    "skill": "Boundaries",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "Scott Joplin published 'Maple Leaf Rag' in 1899, and the piece sold steadily for ______ its success established ragtime as a national craze and gave Joplin a modest but reliable income for the rest of his life.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "years. Its",
+      "years, its",
+      "years its",
+      "years and, its"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The text contains two independent clauses: one about the piece selling steadily, and one about its success establishing ragtime. A period correctly separates them. Choice B creates a comma splice, choice C fuses the clauses with no punctuation, and choice D misplaces the comma after the conjunction."
+  },
+  {
+    "id": "SAT-RW-217",
+    "section": "rw",
+    "test": 1,
+    "module": 2,
+    "domain": "conventions",
+    "skill": "Boundaries",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Franz Boas, ______ insisted that cultures be studied on their own terms rather than ranked on a single scale of progress, a position that shaped American anthropology for most of the twentieth century.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "the German-born anthropologist who trained a generation of American researchers,",
+      "the German-born anthropologist who trained a generation of American researchers;",
+      "was the German-born anthropologist who trained a generation of American researchers,",
+      "the German-born anthropologist who trained a generation of American researchers"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The phrase describing Boas is a nonessential appositive that interrupts the main clause, whose subject is 'Franz Boas' and whose verb is 'insisted,' so it must be set off by a comma on both sides. Choice A supplies the closing comma. Choice D omits it, leaving the appositive open, and choice B uses a semicolon, which can only separate independent clauses. Choice C turns the appositive into a verb phrase, so that 'insisted' is left with no subject."
+  },
+  {
+    "id": "SAT-RW-218",
+    "section": "rw",
+    "test": 1,
+    "module": 2,
+    "domain": "conventions",
+    "skill": "Boundaries",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "Nineteenth-century engineers chose among three main materials for long-span ______ cast iron, which was strong in compression but brittle; wrought iron, which was tougher but expensive to produce; and, late in the century, steel, which combined the advantages of both.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "bridges:",
+      "bridges;",
+      "bridges,",
+      "bridges, including:"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The independent clause ends at 'bridges,' and what follows is a list of the three materials, so a colon is the correct way to introduce it. Choice B is the strongest distractor because the list items themselves are separated by semicolons, but a semicolon after 'bridges' would need an independent clause to follow it, and the phrase beginning 'cast iron, which was strong' is not one. Choice D places a colon after 'including,' which interrupts the phrase it belongs to."
+  },
+  {
+    "id": "SAT-RW-219",
+    "section": "rw",
+    "test": 1,
+    "module": 2,
+    "domain": "conventions",
+    "skill": "Boundaries",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "Emily Dickinson wrote nearly 1,800 poems during her ______ fewer than a dozen were published before her death in 1886, and those few were heavily edited to fit conventional expectations about punctuation and rhyme.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "lifetime;",
+      "lifetime,",
+      "lifetime",
+      "lifetime, which"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "'Emily Dickinson wrote nearly 1,800 poems during her lifetime' and 'fewer than a dozen were published before her death in 1886' are both independent clauses, so a semicolon correctly joins them. Choice B produces a comma splice, and choice C produces a run-on. Choice D is tempting because 'which' often introduces a modifier, but 'which fewer than a dozen were published' has no grammatical role in the sentence."
+  },
+  {
+    "id": "SAT-RW-220",
+    "section": "rw",
+    "test": 1,
+    "module": 2,
+    "domain": "conventions",
+    "skill": "Form, structure, and sense",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The strength of modern carbon-fiber composites, which are used in everything from aircraft wings to tennis rackets, ______ largely on how the individual fibers are aligned within the surrounding polymer.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "depends",
+      "depend",
+      "are depending",
+      "have depended"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The subject of the sentence is the singular noun 'strength,' not the plural 'composites' or 'fibers,' so the verb must be singular: 'depends.' Choice B is the most tempting because 'composites' sits right before the modifier, but 'composites' is the object of the preposition 'of' and cannot be the subject. Choices C and D are also plural forms."
+  },
+  {
+    "id": "SAT-RW-221",
+    "section": "rw",
+    "test": 1,
+    "module": 2,
+    "domain": "conventions",
+    "skill": "Form, structure, and sense",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "By the time Clara Schumann gave her final public performance in 1891, she ______ more than 1,300 concerts across Europe over a career that had begun when she was a child prodigy of nine.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "had played",
+      "has played",
+      "plays",
+      "will have played"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The clause 'By the time Clara Schumann gave her final public performance in 1891' sets a point in the past, and the concerts occurred before that point, so the past perfect 'had played' is required. Choice B, the present perfect, connects past action to the present and conflicts with the past-tense frame. Choice D describes completion at a future point, which the sentence does not establish."
+  },
+  {
+    "id": "SAT-RW-222",
+    "section": "rw",
+    "test": 1,
+    "module": 2,
+    "domain": "conventions",
+    "skill": "Form, structure, and sense",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "Economists often struggle to measure how households respond to unexpected income, since windfalls are rare and hard to observe. In 2008 a government program sent tax rebates to households in a staggered order determined by the last digits of recipients' identification numbers. Hoping to take advantage of this near-random timing, ______",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "a team of economists compared the spending of households that received rebates early with the spending of those that received them later.",
+      "the spending of early recipients was compared with that of later recipients by a team of economists.",
+      "the staggered rebates allowed a team of economists to compare early recipients' spending with later recipients' spending.",
+      "a comparison of early and later recipients' spending was carried out by a team of economists."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The opening modifier 'Hoping to take advantage of this near-random timing' must be followed immediately by the people doing the hoping. Only choice A places 'a team of economists' right after the modifier. Choice C is the strongest distractor because it reads smoothly, but it makes 'the staggered rebates' the subject, and rebates cannot hope for anything; choices B and D similarly attach the modifier to 'spending' and 'a comparison.'"
+  },
+  {
+    "id": "SAT-RW-223",
+    "section": "rw",
+    "test": 1,
+    "module": 2,
+    "domain": "expressionIdeas",
+    "skill": "Rhetorical synthesis",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- The Flatiron Building in New York City was completed in 1902.\n- It was designed by the architect Daniel Burnham.\n- The building occupies a triangular lot where Broadway and Fifth Avenue cross.\n- Its narrow end is only about six feet wide.\n- Early critics predicted that wind would topple the building, but it has stood for more than a century.\n\nThe student wants to emphasize the building's unusual shape. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "stem": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "options": [
+      "The Flatiron Building, completed in 1902, fills a triangular lot and narrows to an end only about six feet wide.",
+      "Daniel Burnham designed the Flatiron Building, which was completed in New York City in 1902.",
+      "Early critics of the Flatiron Building predicted that wind would topple it, but it has stood for more than a century.",
+      "The Flatiron Building stands at the point where Broadway and Fifth Avenue cross in New York City."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Choice A combines the two notes that describe the building's shape, its triangular lot and six-foot-wide end. Choice D mentions the location but not the shape, and choice C is tempting because the wind predictions hint at an unusual building, but it never says what the shape is. Choice B addresses the architect and date only."
+  },
+  {
+    "id": "SAT-RW-224",
+    "section": "rw",
+    "test": 1,
+    "module": 2,
+    "domain": "expressionIdeas",
+    "skill": "Rhetorical synthesis",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Cecilia Payne-Gaposchkin was an astronomer at Harvard College Observatory.\n- In her 1925 doctoral thesis, she concluded that stars are composed mostly of hydrogen and helium.\n- At the time, most astronomers believed that stars had roughly the same composition as Earth.\n- A senior astronomer persuaded her to describe her result as \"almost certainly not real.\"\n- Within four years, other researchers confirmed her conclusion.\n\nThe student wants to emphasize that Payne-Gaposchkin's conclusion was initially met with doubt. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "stem": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "options": [
+      "Although Payne-Gaposchkin's 1925 thesis correctly concluded that stars are mostly hydrogen and helium, a senior astronomer persuaded her to label the result \"almost certainly not real.\"",
+      "Payne-Gaposchkin, an astronomer at Harvard College Observatory, completed her doctoral thesis in 1925.",
+      "Within four years of Payne-Gaposchkin's 1925 thesis, other researchers had confirmed that stars are composed mostly of hydrogen and helium.",
+      "Before 1925, most astronomers believed that stars had roughly the same composition as Earth."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Choice A states the conclusion and then shows the doubt it met: a senior astronomer pressed her to call it 'almost certainly not real.' Choice D is the strongest distractor because it describes the prevailing belief her finding contradicted, but it does not say that anyone doubted her conclusion. Choice C emphasizes later confirmation, the opposite of initial doubt."
+  },
+  {
+    "id": "SAT-RW-225",
+    "section": "rw",
+    "test": 1,
+    "module": 2,
+    "domain": "expressionIdeas",
+    "skill": "Rhetorical synthesis",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Mycorrhizal fungi form underground networks that connect the roots of many trees in a forest.\n- Some studies suggest that trees transfer carbon to neighboring trees through these networks.\n- Ecologist Sara Tanaka reviewed 26 such studies in 2023.\n- She found that most of the studies could not rule out that the carbon had moved through the soil rather than through the fungal network.\n- She concluded that claims of deliberate resource sharing between trees are not yet supported by the evidence.\n\nThe student wants to present Tanaka's conclusion and the reason for it. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "stem": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "options": [
+      "After reviewing 26 studies, Tanaka concluded that claims of resource sharing between trees are not yet supported, since most of the studies could not rule out that carbon had moved through the soil rather than through fungal networks.",
+      "Mycorrhizal fungi form underground networks connecting the roots of many trees, and some studies suggest that trees transfer carbon to one another through these networks.",
+      "In 2023, Tanaka reviewed 26 studies of carbon transfer between trees connected by mycorrhizal networks.",
+      "Because carbon may move through the soil rather than through fungal networks, Tanaka argued that trees deliberately share resources with their neighbors."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Choice A states Tanaka's conclusion (the claims are not yet supported) and the reason she gave (the studies could not rule out movement through soil). Choice D is the strongest distractor because it uses the same reason, but it attaches that reason to the wrong conclusion, saying Tanaka argued that trees do share resources. Choice C gives the review without its conclusion, and choice B presents the claim she questioned."
+  },
+  {
+    "id": "SAT-RW-226",
+    "section": "rw",
+    "test": 1,
+    "module": 2,
+    "domain": "expressionIdeas",
+    "skill": "Transitions",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The Oxford English Dictionary has always relied on volunteer readers who send in examples of words as they appear in published texts. In the dictionary's early decades, the single most prolific contributor was an American surgeon named William Chester Minor, who submitted thousands of quotations over many years. ______ the editors did not learn until long after his contributions began that Minor was writing from an asylum, where he had been confined after a killing.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "Remarkably,",
+      "In other words,",
+      "For example,",
+      "As a result,"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The final sentence adds a surprising fact about the contributor just described, so a transition that signals surprise, 'Remarkably,' fits best. Choice D is the most tempting because it begins a statement about the editors, but nothing in the previous sentence caused their lack of knowledge. Choice B would require the final sentence to restate the previous one, and choice C would require it to illustrate it, and it does neither."
+  },
+  {
+    "id": "SAT-RW-227",
+    "section": "rw",
+    "test": 1,
+    "module": 2,
+    "domain": "expressionIdeas",
+    "skill": "Transitions",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Economists have long assumed that people discount future rewards at a steady rate, so that delaying a payment by one year reduces its value by the same proportion regardless of when the payment was originally due. Experiments tell a different story. People will often choose a smaller reward today over a larger one next week, yet when both rewards are pushed a year into the future, they prefer the larger one. ______ the rate at which people discount the future appears to depend on how soon the first option is available.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "In other words,",
+      "Nevertheless,",
+      "Similarly,",
+      "For instance,"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The final sentence restates the meaning of the experimental results in general terms: preferences flip depending on whether one option is immediate, so the discount rate is not steady. 'In other words' signals this restatement. Choice D is the most tempting because the text does contain an example, but the example is the previous sentence, not the final one, which generalizes rather than illustrates. Choice B would introduce a contrast that is not present."
+  }
+]

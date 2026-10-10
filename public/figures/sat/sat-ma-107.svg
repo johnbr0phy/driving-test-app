@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" font-family="sans-serif" font-size="13" fill="#000">
+<rect width="320" height="240" fill="#fff"/>
+<text x="180" y="16" text-anchor="middle" font-weight="bold">Books Read Last Month</text>
+<g stroke="#bbb" stroke-width="1">
+<line x1="60" y1="166" x2="300" y2="166"/>
+<line x1="60" y1="132" x2="300" y2="132"/>
+<line x1="60" y1="98" x2="300" y2="98"/>
+<line x1="60" y1="64" x2="300" y2="64"/>
+<line x1="60" y1="30" x2="300" y2="30"/>
+</g>
+<g fill="#ddd" stroke="#000" stroke-width="1.5">
+<rect x="69" y="166" width="30" height="34"/>
+<rect x="117" y="81" width="30" height="119"/>
+<rect x="165" y="149" width="30" height="51"/>
+<rect x="213" y="47" width="30" height="153"/>
+<rect x="261" y="132" width="30" height="68"/>
+</g>
+<g stroke="#000" stroke-width="1.5">
+<line x1="60" y1="30" x2="60" y2="200"/>
+<line x1="60" y1="200" x2="300" y2="200"/>
+</g>
+<g text-anchor="middle">
+<text x="84" y="161">2</text>
+<text x="132" y="76">7</text>
+<text x="180" y="144">3</text>
+<text x="228" y="42">9</text>
+<text x="276" y="127">4</text>
+<text x="84" y="216">Ana</text>
+<text x="132" y="216">Ben</text>
+<text x="180" y="216">Cal</text>
+<text x="228" y="216">Dee</text>
+<text x="276" y="216">Eli</text>
+<text x="180" y="234">Student</text>
+</g>
+<g text-anchor="end">
+<text x="54" y="204">0</text>
+<text x="54" y="170">2</text>
+<text x="54" y="136">4</text>
+<text x="54" y="102">6</text>
+<text x="54" y="68">8</text>
+<text x="54" y="34">10</text>
+</g>
+<text transform="rotate(-90)" x="-115" y="16" text-anchor="middle">Number of books</text>
+</svg>

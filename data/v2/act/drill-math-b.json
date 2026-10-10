@@ -102,19 +102,19 @@
       "skill": "Distance in the coordinate plane",
       "difficulty": 1,
       "format": "single",
-      "stem": "In the standard $(x, y)$ coordinate plane, what is the distance between the points $(-2, 3)$ and $(4, 11)$?",
+      "stem": "In the standard $(x, y)$ coordinate plane, what is the distance between the points $(-2, 3)$ and $(3, 15)$?",
       "options": [
         "7",
-        "10",
-        "14",
-        "100"
+        "13",
+        "17",
+        "169"
       ],
       "correct": [
         1
       ],
       "lockedOrder": true,
       "calculator": true,
-      "explanation": "The horizontal change is $4 - (-2) = 6$ and the vertical change is $11 - 3 = 8$, so by the distance formula the distance is $\\sqrt{6^2 + 8^2} = \\sqrt{36 + 64} = \\sqrt{100} = 10$. Choice D stops at the sum of the squares without taking the square root. Choice C adds the two changes, which is the length of the path along the grid, not the straight-line distance."
+      "explanation": "The horizontal change is $3 - (-2) = 5$ and the vertical change is $15 - 3 = 12$, so by the distance formula the distance is $\\sqrt{5^2 + 12^2} = \\sqrt{25 + 144} = \\sqrt{169} = 13$. Choice D stops at the sum of the squares without taking the square root. Choice C adds the two changes, which is the length of the path along the grid, not the straight-line distance, and choice A subtracts them."
     },
     {
       "id": "ACT-MA-036",

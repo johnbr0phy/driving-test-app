@@ -27,13 +27,8 @@ interface Props {
   label?: string;
 }
 
-function wordCount(s: string) {
-  return s.trim().split(/\s+/).length;
-}
-
 export function QuestionView({ question, stimulus, optionOrder, answer, onAnswer, eliminated = [], onToggleEliminate, eliminatorOn = false, reveal = false, layout = "split", disabled = false, label }: Props) {
   const [passageOpen, setPassageOpen] = useState(true);
-  const longPassage = stimulus ? wordCount(stimulus.text) > 180 : false;
   const correct = reveal ? isCorrect(question, answer) : false;
   const numericValue = useMemo(() => (typeof answer === "string" ? parseNumeric(answer) : null), [answer]);
 
@@ -63,21 +58,29 @@ export function QuestionView({ question, stimulus, optionOrder, answer, onAnswer
 
   const stimulusBlock = stimulus && (
     <div className="rounded-xl border border-gray-200 bg-white p-4 md:p-5">
-      {stimulus.title && <div className="mb-2 text-sm font-semibold text-gray-600">{stimulus.title}</div>}
-      {longPassage && (
-        <button type="button" className="v2-tap mb-2 flex w-full items-center justify-between text-sm font-semibold text-brand lg:hidden" onClick={() => setPassageOpen((o) => !o)}>
-          {passageOpen ? "Hide passage" : "Show passage"}
-          {passageOpen ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
+      <div className={`flex items-start justify-between gap-3 ${passageOpen ? "mb-2" : ""}`}>
+        <div className="text-sm font-semibold text-gray-600">{stimulus.title || "Passage"}</div>
+        <button
+          type="button"
+          className="v2-tap -m-2 shrink-0 rounded-md p-2 text-gray-500 hover:bg-gray-100 hover:text-brand"
+          onClick={() => setPassageOpen((o) => !o)}
+          aria-label={passageOpen ? "Hide passage" : "Show passage"}
+          aria-expanded={passageOpen}
+          title={passageOpen ? "Hide passage" : "Show passage"}
+        >
+          {passageOpen ? <EyeOff className="h-5 w-5" /> : <Eye className="h-5 w-5" />}
         </button>
-      )}
-      <div className={longPassage && !passageOpen ? "hidden lg:block" : ""}>
-        {stimulus.figure && (
-          <div className="mb-3">
-            <Figure figure={stimulus.figure} />
-          </div>
-        )}
-        <RichText text={stimulus.text} className="text-[15px] md:text-base" />
       </div>
+      {passageOpen && (
+        <div>
+          {stimulus.figure && (
+            <div className="mb-3">
+              <Figure figure={stimulus.figure} />
+            </div>
+          )}
+          <RichText text={stimulus.text} className="text-[15px] md:text-base" />
+        </div>
+      )}
     </div>
   );
 

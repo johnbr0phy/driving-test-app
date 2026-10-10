@@ -169,8 +169,9 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
           setUserId(null);
         }
       } catch (err) {
-        // A failed Firestore load must not leave loading stuck on true.
-        console.error("Failed to load user data:", err);
+        // A failed Firestore load must not leave every auth-gated screen
+        // spinning forever; fall through with what's cached locally.
+        console.error("Loading account data failed:", err);
       }
       setLoading(false);
     });

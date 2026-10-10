@@ -42,6 +42,8 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
   // saved progress, not progress carried over from a retired drill).
   const { isPremium, ready: premiumReady } = useIsPremium();
   const locked = !!drill && premiumReady && isDrillLocked(exam, drill.key, isPremium) && !drillsMap[key];
+  // Free drills never wait on auth: only a Premium drill needs to know who's signed in.
+  const gateReady = !drill || !exam.premium?.lockedDrills.includes(drill.key) || premiumReady;
   // Own progress, or what carried over from the drill this one was split from.
   const state = drill ? drillStateFor(drillsMap, exam.id, drill, allQuestions) : EMPTY_DRILL;
   const paywall = useV2Paywall(exam, "drill");
@@ -78,8 +80,8 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
   }, [drill, exam.id, allQuestions, questions]);
 
   useEffect(() => {
-    if (hydrated && drill && premiumReady && !locked && !question && !done) load();
-  }, [hydrated, drill, premiumReady, locked, question, done, load]);
+    if (hydrated && drill && gateReady && !locked && !question && !done) load();
+  }, [hydrated, drill, gateReady, locked, question, done, load]);
 
   const check = (value?: AnswerValue) => {
     if (!question || revealed) return;
@@ -103,7 +105,7 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
     if (question?.format === "single") check(value);
   };
 
-  if (!hydrated || !drill) {
+  if (!hydrated || !drill || !gateReady) {
     return <div className="v2-focus items-center justify-center text-gray-600">Loading...</div>;
   }
 

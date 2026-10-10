@@ -79,6 +79,11 @@ export interface SectionDef {
    * answered before Next.
    */
   linear?: boolean;
+  /**
+   * Whether a break follows this section. When no section sets it, every
+   * section change gets the exam's break; when any does, only those do.
+   */
+  breakAfter?: boolean;
   /** Reference sheet (rich text) shown in the tools drawer. */
   reference?: string;
   /** Rich text shown on the section intro screen. */

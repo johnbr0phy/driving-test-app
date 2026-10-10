@@ -7,12 +7,40 @@ import teasBank from "@/data/v2/teas/questions.json";
 import hesiBank from "@/data/v2/hesi/questions.json";
 import asvabBank from "@/data/v2/asvab/questions.json";
 import accuplacerBank from "@/data/v2/accuplacer/questions.json";
+import satRwT1M2Lower from "@/data/v2/sat/rw-t1-m2-lower.json";
+import satRwT2M1 from "@/data/v2/sat/rw-t2-m1.json";
+import satRwT2M2Lower from "@/data/v2/sat/rw-t2-m2-lower.json";
+import satRwT2M2Upper from "@/data/v2/sat/rw-t2-m2-upper.json";
+import satMaT1M2Lower from "@/data/v2/sat/ma-t1-m2-lower.json";
+import satMaT2M1 from "@/data/v2/sat/ma-t2-m1.json";
+import satMaT2M2Lower from "@/data/v2/sat/ma-t2-m2-lower.json";
+import satMaT2M2Upper from "@/data/v2/sat/ma-t2-m2-upper.json";
+import actEnglishA from "@/data/v2/act/english-a.json";
+import actEnglishB from "@/data/v2/act/english-b.json";
+import actMathA from "@/data/v2/act/math-a.json";
+import actMathB from "@/data/v2/act/math-b.json";
+import actReadingA from "@/data/v2/act/reading-a.json";
+import actReadingB from "@/data/v2/act/reading-b.json";
+import actScienceA from "@/data/v2/act/science-a.json";
+import actScienceB from "@/data/v2/act/science-b.json";
+
+/** Section files with shared passages: { stimuli: Stimulus[], questions: QuestionV2[] }. */
+type SectionFile = { stimuli: Stimulus[]; questions: unknown[] };
+function withStimuli(files: SectionFile[]): QuestionBank {
+  const stimuli: Record<string, Stimulus> = {};
+  for (const f of files) for (const s of f.stimuli) stimuli[s.id] = s;
+  return { questions: files.flatMap((f) => f.questions as QuestionV2[]), stimuli };
+}
 
 const BANKS: Record<string, QuestionBank> = {
   sat: {
-    questions: [...satRwM1, ...satRwM2, ...satMaM1, ...satMaM2] as QuestionV2[],
+    questions: [
+      ...satRwM1, ...satRwM2, ...satRwT1M2Lower, ...satRwT2M1, ...satRwT2M2Lower, ...satRwT2M2Upper,
+      ...satMaM1, ...satMaM2, ...satMaT1M2Lower, ...satMaT2M1, ...satMaT2M2Lower, ...satMaT2M2Upper,
+    ] as QuestionV2[],
     stimuli: {},
   },
+  act: withStimuli([actEnglishA, actEnglishB, actMathA, actMathB, actReadingA, actReadingB, actScienceA, actScienceB] as SectionFile[]),
   teas: { questions: teasBank as QuestionV2[], stimuli: {} },
   hesi: { questions: hesiBank as QuestionV2[], stimuli: {} },
   asvab: { questions: asvabBank as QuestionV2[], stimuli: {} },

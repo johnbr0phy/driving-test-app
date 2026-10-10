@@ -31,6 +31,7 @@ export const TEAS: ExamV2Config = {
       name: "Mathematics",
       shortName: "Math",
       calculator: true,
+      breakAfter: true,
       modules: [{ module: 1, questionCount: 38, timeLimit: 57 * 60 }],
       directions: "Numbers and algebra, then measurement and data. A four-function calculator is provided on the real test and here, so the work is in setting each problem up correctly.",
       scale: percentScale(38),

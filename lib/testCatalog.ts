@@ -68,6 +68,7 @@ const EXAM_BLURBS: Record<string, string> = {
   pnc: "Property and casualty insurance license exam, general portion. Insurance basics, policy provisions, homeowners and dwelling forms, personal auto, commercial lines, flood and surety.",
   hesi: "HESI A2 nursing entrance exam with seven timed sections scored like the real report: math with dosage conversions, reading passages, vocabulary, grammar, biology, chemistry and anatomy and physiology.",
   sat: "Full-length digital SAT practice: two timed sections with adaptive modules, a calculator, and a 400 to 1600 score estimate, plus skill drills built for your phone.",
+  act: "Full-length ACT practice in the enhanced 2025 format: English, Math, Reading and Science with real passages and timing, scored 1 to 36 with a composite, plus drills for your phone.",
   secplus: "CompTIA Security+ SY0-701. General security concepts, threats and vulnerabilities, architecture, operations, and program management, in CompTIA's scenario style.",
   hunter: "Hunter education (hunter safety) exam prep on the IHEA standards: firearm safety and carries, ammunition, shot placement, tree stands, wildlife identification, conservation, ethics and survival.",
   boating: "Boating license (boater safety card) exam prep on the NASBLA standards: navigation rules, buoys, lights and sound signals, required equipment, safe operation, emergencies.",
@@ -87,7 +88,7 @@ const EXAM_BLURBS: Record<string, string> = {
 };
 
 // Short issuing-body line for menus; defaults to the exam label.
-const EXAM_ORG: Record<string, string> = { sat: "Digital SAT · Reading and Writing, Math", cdl: "Commercial license", cdlx: "H, air brakes, combo, N, P", moto: "Permit knowledge test", civics: "USCIS naturalization", part107: "FAA drone pilot", ham: "FCC Technician licence", epa608: "HVAC refrigerant certification", cna: "Nurse aide written exam", ptcb: "Pharmacy technician certification", phleb: "NHA CPT, ASCP PBT, AMT RPT", ccma: "NHA medical assistant exam", cet: "NHA EKG technician exam", danb: "DANB CDA: GC, RHS, ICE", emt: "NREMT cognitive exam", foodmgr: "ANAB-CFP accredited exams", realestate: "National portion, Pearson VUE and PSI", insurance: "Life, accident & health producer exam", notary: "General notary law, all states", teas: "Nursing & allied health admissions", aws: "AWS CLF-C02", aplus: "CompTIA 220-1201 / 220-1202", foodhandler: "ANAB-accredited course tests", boating: "NASBLA state boater exams", hunter: "IHEA state hunter education exams", secplus: "CompTIA SY0-701", hesi: "Nursing school admissions", asvab: "Military entrance, all branches", cpr: "Lay rescuer & healthcare BLS courses", osha: "OSHA Outreach course final", forklift: "OSHA 1910.178 operator evaluation", alcohol: "State & provider server courses", accuplacer: "College placement", security: "State guard card exams", lifeguard: "Certification written exam", pnc: "P&C producer exam, general portion" };
+const EXAM_ORG: Record<string, string> = { sat: "Digital SAT · Reading and Writing, Math", act: "Enhanced ACT · English, Math, Reading, Science", cdl: "Commercial license", cdlx: "H, air brakes, combo, N, P", moto: "Permit knowledge test", civics: "USCIS naturalization", part107: "FAA drone pilot", ham: "FCC Technician licence", epa608: "HVAC refrigerant certification", cna: "Nurse aide written exam", ptcb: "Pharmacy technician certification", phleb: "NHA CPT, ASCP PBT, AMT RPT", ccma: "NHA medical assistant exam", cet: "NHA EKG technician exam", danb: "DANB CDA: GC, RHS, ICE", emt: "NREMT cognitive exam", foodmgr: "ANAB-CFP accredited exams", realestate: "National portion, Pearson VUE and PSI", insurance: "Life, accident & health producer exam", notary: "General notary law, all states", teas: "Nursing & allied health admissions", aws: "AWS CLF-C02", aplus: "CompTIA 220-1201 / 220-1202", foodhandler: "ANAB-accredited course tests", boating: "NASBLA state boater exams", hunter: "IHEA state hunter education exams", secplus: "CompTIA SY0-701", hesi: "Nursing school admissions", asvab: "Military entrance, all branches", cpr: "Lay rescuer & healthcare BLS courses", osha: "OSHA Outreach course final", forklift: "OSHA 1910.178 operator evaluation", alcohol: "State & provider server courses", accuplacer: "College placement", security: "State guard card exams", lifeguard: "Certification written exam", pnc: "P&C producer exam, general portion" };
 
 const examEntry = (exam: ExamConfig): TestCatalogEntry => ({
   id: exam.id,
@@ -126,7 +127,7 @@ const GROUPS: { title: string; ids: string[] }[] = [
   { title: "Workplace & job certifications", ids: ["foodhandler", "osha", "forklift", "alcohol", "security"] },
   { title: "Aviation, radio & trade licenses", ids: ["part107", "ham", "epa608", "foodmgr"] },
   { title: "Real estate, insurance & notary licenses", ids: ["realestate", "insurance", "pnc", "notary"] },
-  { title: "College, military & nursing school entrance", ids: ["sat", "accuplacer", "asvab", "teas", "hesi"] },
+  { title: "College, military & nursing school entrance", ids: ["sat", "act", "accuplacer", "asvab", "teas", "hesi"] },
   { title: "IT certifications", ids: ["aplus", "secplus", "aws"] },
   { title: "Emergency services", ids: ["emt", "cpr"] },
   { title: "Healthcare certification exams", ids: ["cna", "ccma", "ptcb", "phleb", "cet", "danb", "htl", "cst", "crcst"] },
@@ -139,7 +140,8 @@ export const TEST_GROUPS: { title: string; tests: TestCatalogEntry[] }[] = [
 /** Extra words people type that do not appear in the name, org or blurb. */
 const SEARCH_ALIASES: Record<string, string> = {
   dmv: "driver license permit learners written knowledge road signs state",
-  sat: "digital sat psat college board college admissions high school act reading writing math bluebook",
+  sat: "digital sat psat college board college admissions high school reading writing math bluebook",
+  act: "act test college admissions high school english math reading science composite enhanced act",
   cdl: "truck trucking commercial class a class b",
   cdlx: "hazmat hazardous materials air brakes combination tanker passenger school bus endorsement",
   moto: "motorbike m endorsement",
@@ -239,7 +241,8 @@ const RELATED_OVERRIDES: Record<string, string[]> = {
   cpr: ["lifeguard", "cna", "emt"],
   asvab: ["dmv", "cpr"],
   accuplacer: ["sat", "teas", "hesi"],
-  sat: ["accuplacer", "asvab", "dmv"],
+  sat: ["act", "accuplacer", "asvab"],
+  act: ["sat", "accuplacer", "asvab"],
 };
 const RELATED_FALLBACK = ["dmv", "cdl", "teas", "cna"];
 

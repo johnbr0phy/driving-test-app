@@ -490,6 +490,20 @@
     --brand-gradient-to: 200 90% 95%;
   }
 
+  /* ACT theme: red (v2 exam; matches lib/v2/exams/act.ts theme) */
+  [data-theme="act"] {
+    --brand: 350 70% 42%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 350 100% 96%;
+    --brand-hover: 350 70% 36%;
+    --brand-dark: 350 70% 30%;
+    --brand-darker: 350 60% 20%;
+    --brand-muted: 350 60% 78%;
+    --brand-border: 350 60% 82%;
+    --brand-border-light: 350 60% 92%;
+    --brand-gradient-to: 20 90% 95%;
+  }
+
   /* ACCUPLACER theme: teal */
   [data-theme="accuplacer"] {
     --brand: 175 55% 32%;

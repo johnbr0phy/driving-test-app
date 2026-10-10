@@ -96,7 +96,10 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
     const next = { ...cur, stages };
     stages[nextIndex] = resolveAdaptive(exam, bank, next, nextIndex, byId);
     const sameSection = stages[nextIndex].section === closed.section;
-    putSession({ ...next, stages, stage: nextIndex, phase: sameSection || exam.breakSeconds <= 0 ? "intro" : "break" });
+    const anyExplicit = exam.sections.some((s) => s.breakAfter !== undefined);
+    const closedDef = exam.sections.find((s) => s.key === closed.section);
+    const wantsBreak = exam.breakSeconds > 0 && !sameSection && (anyExplicit ? !!closedDef?.breakAfter : true);
+    putSession({ ...next, stages, stage: nextIndex, phase: wantsBreak ? "break" : "intro" });
   }, [key, exam, bank, byId, finish, putSession]);
 
   // Keyboard shortcuts for the desktop simulation.
@@ -340,7 +343,7 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
             </button>}
           </div>
           <QuestionView
-            key={question.id}
+            key={question.stimulusId ?? question.id}
             question={question}
             stimulus={getStimulus(exam.id, question)}
             optionOrder={stage.optionOrder[question.id] ?? (question.options ?? []).map((_, i) => i)}

@@ -46,13 +46,7 @@ export default function TestsHubPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 pt-14 pb-12 md:pt-20 md:pb-16 text-center">
           <Image src="/tiger.png" alt="TigerTest" width={72} height={72} className="mx-auto mb-5 w-16 md:w-[72px]" />
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 tracking-tight">Pick Your Practice Test</h1>
-          <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
-            Every test on TigerTest is free to start with no account, and uses the same
-            mastery-based training and full-length practice tests. The DMV, SAT and ACT each
-            have free practice tests, and one $9.99 Premium unlock opens the rest of all three.
-            Everything else is free.
-          </p>
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight">Pick Your Practice Test</h1>
         </div>
       </div>
 

@@ -942,14 +942,14 @@
     "state": "ALL",
     "questionId": "ALC-INT-024",
     "category": "alcIntoxication",
-    "question": "A guest you have been watching now has drooping eyelids and is resting their head on the table. What stage of intoxication does this suggest?",
+    "question": "After drinking alcohol, a guest repeatedly cannot stay awake and is difficult to rouse. Which assessment should guide the staff’s response?",
     "optionA": "Early, with lowered inhibitions only so far",
     "optionB": "Moderate, with impaired judgment",
-    "optionC": "Advanced, nearing alcohol poisoning",
+    "optionC": "Possible alcohol overdose requiring an immediate 911 call",
     "optionD": "No intoxication, just tiredness",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Drowsiness and inability to stay upright are late-stage cues that can precede unconsciousness. Staff should stop service, keep the guest awake if possible, and be ready to call for medical help."
+    "explanation": "Difficulty staying conscious after drinking is a warning sign of possible alcohol poisoning. Stop alcohol service and call 911 immediately. Do not wait for all warning signs. Stay with the guest, monitor breathing, and follow the dispatcher's instructions. Do not assume the guest can safely sleep it off."
   },
   {
     "type": "ALCOHOL",
@@ -2248,10 +2248,10 @@
     "optionA": "Leave the guest to sleep until closing",
     "optionB": "Prop the guest upright in a chair with coffee",
     "optionC": "Carry the guest out to their car",
-    "optionD": "Check breathing and call 911 if needed",
+    "optionD": "Call 911 immediately and stay with the guest",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Unresponsiveness can be alcohol poisoning, so staff check breathing, call for medical help when needed, and monitor the guest. Leaving a passed-out guest alone or putting them in a car can be fatal."
+    "explanation": "Passing out after drinking can indicate alcohol poisoning. Call 911 immediately. Stay with the guest, monitor breathing, and follow the dispatcher's instructions. Do not wait for breathing to worsen, leave the guest to sleep it off, give coffee, or put the guest in a car."
   },
   {
     "type": "ALCOHOL",

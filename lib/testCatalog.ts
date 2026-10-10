@@ -174,3 +174,37 @@ export function getCatalogEntryByPath(pathname: string | null | undefined): Test
   }
   return dmv;
 }
+
+export function getCatalogEntry(id: string): TestCatalogEntry | undefined {
+  return TEST_CATALOG.find((t) => t.id === id);
+}
+
+// Hand-picked neighbours for tests whose hub group is too small to fill a
+// "related tests" block on its own.
+const RELATED_OVERRIDES: Record<string, string[]> = {
+  emt: ["cna", "ccma", "phleb", "cet"],
+  civics: ["dmv", "notary", "foodhandler"],
+  teas: ["cna", "ccma", "phleb"],
+  hesi: ["cna", "ccma", "phleb"],
+  boating: ["dmv", "moto"],
+  hunter: ["dmv", "moto"],
+};
+const RELATED_FALLBACK = ["dmv", "cdl", "teas", "cna"];
+
+/**
+ * Tests to cross-link from a landing page and its footer: the rest of the
+ * test's hub group, padded to at least three with a few popular tests.
+ * Internal links stay inside a topical cluster (nursing, IT, driving...),
+ * so new landings share authority with their neighbours instead of every
+ * DMV state page carrying all thirty links.
+ */
+export function relatedTests(id: string, limit = 6): TestCatalogEntry[] {
+  const group = TEST_GROUPS.find((g) => g.tests.some((t) => t.id === id));
+  const out: TestCatalogEntry[] = group ? group.tests.filter((t) => t.id !== id) : [];
+  for (const extra of [...(RELATED_OVERRIDES[id] ?? []), ...RELATED_FALLBACK]) {
+    if (out.length >= 3) break;
+    const entry = getCatalogEntry(extra);
+    if (entry && entry.id !== id && !out.includes(entry)) out.push(entry);
+  }
+  return out.slice(0, limit);
+}

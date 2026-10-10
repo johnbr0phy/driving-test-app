@@ -7,7 +7,7 @@ import { VI_STATE_CODES } from "@/data/viStates";
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
 export const metadata: Metadata = {
-  title: "Thi Thử DMV Bằng Tiếng Việt Theo Tiểu Bang 2026 - Miễn Phí | TigerTest",
+  title: { absolute: "Thi Thử DMV Bằng Tiếng Việt Theo Tiểu Bang 2026 - Miễn Phí | TigerTest" },
   description:
     "Bài thi thử DMV miễn phí bằng tiếng Việt cho các tiểu bang cho phép thi bằng viết bằng tiếng Việt. 200 câu hỏi mỗi tiểu bang, dựa trên cẩm nang lái xe chính thức. Đậu ngay lần thi đầu tiên.",
   alternates: {

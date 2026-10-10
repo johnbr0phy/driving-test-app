@@ -58,7 +58,8 @@ export async function generateMetadata({
   const enUrl = `${siteUrl}/${state.slug}-dmv-practice-test`;
 
   return {
-    title,
+    // The string already carries the brand; skip the root layout's "%s | TigerTest" template.
+    title: { absolute: title },
     description,
     alternates: {
       canonical: canonicalUrl,

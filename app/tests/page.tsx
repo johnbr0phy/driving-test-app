@@ -6,16 +6,23 @@ import { TestCatalogGrid } from "@/components/TestCatalogGrid";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "All Free Practice Tests - DMV, Motorcycle, CDL, Endorsements, Citizenship, Part 107, Ham Radio, EPA 608, CNA, CCMA, PTCB, Phlebotomy, EKG, Dental Assistant, EMT, Food Manager, Real Estate, Insurance, Notary, TEAS, HESI A2, AWS, CompTIA A+, Security+, Food Handler, Boating, Hunter Safety, HTL, CST, CRCST";
+const title = `Free Practice Tests for ${TEST_CATALOG.length} Exams - DMV, CDL, Nursing, IT & More`;
 const description =
-  "Every free practice test on TigerTest in one place: DMV permit tests for all 50 states, motorcycle permit, CDL general knowledge and endorsements, the USCIS citizenship civics test, the FAA Part 107 drone pilot test, the FCC ham radio Technician exam, the EPA 608 refrigerant exam, the certified food protection manager exam, the real estate salesperson national exam, the life and health insurance license exam, the notary public exam, the ATI TEAS nursing entrance exam, the AWS Cloud Practitioner, CompTIA A+ and Security+ exams, the HESI A2 nursing entrance exam, the food handler card test, the boating license and hunter safety exams, the CNA written exam, the NHA CCMA medical assistant exam, the PTCB pharmacy technician exam, the NHA phlebotomy and EKG technician exams, the DANB dental assistant exam, the NREMT EMT exam, and ASCP HTL, NBSTSA CST and HSPA CRCST certification exam prep.";
+  "Free practice tests for DMV permits in all 50 states, CDL, motorcycle, citizenship, nursing and healthcare certifications, IT certs, real estate, insurance, notary and more. No account needed.";
 
 export const metadata: Metadata = {
   title,
   description,
   alternates: { canonical: `${siteUrl}/tests` },
-  openGraph: { title, description, url: `${siteUrl}/tests`, siteName: "TigerTest", type: "website" },
-  twitter: { card: "summary_large_image", title, description },
+  openGraph: {
+    title,
+    description,
+    url: `${siteUrl}/tests`,
+    siteName: "TigerTest",
+    type: "website",
+    images: [{ url: "/tiger.png", width: 512, height: 512, alt: "TigerTest" }],
+  },
+  twitter: { card: "summary_large_image", title, description, images: ["/tiger.png"] },
 };
 
 const jsonLd = {

@@ -3,27 +3,31 @@ import Image from "next/image";
 import { getTigerAsset } from "@/lib/tigerAssets";
 import { Smartphone, Monitor } from "lucide-react";
 import { ExamLandingHero, ExamLandingCTA } from "@/components/exam/ExamLandingHero";
+import { ExamLandingBreadcrumbs } from "@/components/exam/ExamLandingBreadcrumbs";
+import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
 export const metadata: Metadata = {
   title: "Free CDL Practice Test 2026 - General Knowledge",
-  description: "Free CDL practice tests with 600 questions. Pass your Commercial Driver&apos;s License general knowledge test on the first try. 6 practice tests weighted like the real exam, with instant feedback.",
-  keywords: "CDL practice test, commercial driver&apos;s license, CDL general knowledge, truck driver test, CDL exam prep, free CDL test",
+  description: "Free CDL practice tests with 600 questions. Pass your Commercial Driver's License general knowledge test on the first try. 6 practice tests weighted like the real exam, with instant feedback.",
+  keywords: "CDL practice test, commercial driver's license, CDL general knowledge, truck driver test, CDL exam prep, free CDL test",
   alternates: {
     canonical: `${siteUrl}/cdl-practice-test`,
   },
   openGraph: {
     title: "Free CDL Practice Test 2026 - General Knowledge",
-    description: "Free CDL practice tests with 600 questions. Pass your Commercial Driver&apos;s License general knowledge test on the first try. 6 practice tests weighted like the real exam, with instant feedback.",
+    description: "Free CDL practice tests with 600 questions. Pass your Commercial Driver's License general knowledge test on the first try. 6 practice tests weighted like the real exam, with instant feedback.",
     url: `${siteUrl}/cdl-practice-test`,
+    images: [{ url: "/og/cdl", width: 1200, height: 630, alt: "TigerTest free CDL practice test" }],
     siteName: "TigerTest",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
+    images: ["/og/cdl"],
     title: "Free CDL Practice Test 2026 - General Knowledge",
-    description: "Free CDL practice tests with 600 questions. Pass your Commercial Driver&apos;s License general knowledge test on the first try.",
+    description: "Free CDL practice tests with 600 questions. Pass your Commercial Driver's License general knowledge test on the first try.",
   },
 };
 
@@ -34,7 +38,7 @@ const jsonLd = {
       "@type": "WebApplication",
       name: "TigerTest - Free CDL Practice Tests",
       description:
-        "Pass your Commercial Driver&apos;s License general knowledge test with 600 practice questions. Free training mode, practice tests, and detailed analytics for CDL certification.",
+        "Pass your Commercial Driver's License general knowledge test with 600 practice questions. Free training mode, practice tests, and detailed analytics for CDL certification.",
       url: `${siteUrl}/cdl-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
@@ -68,7 +72,7 @@ const jsonLd = {
           name: "How many questions are on the CDL general knowledge test?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "The CDL general knowledge test typically has 50 questions, and you need to answer 40 correctly (80%) to pass. TigerTest offers 600 practice questions to ensure you&apos;re fully prepared.",
+            text: "The CDL general knowledge test typically has 50 questions, and you need to answer 40 correctly (80%) to pass. TigerTest offers 600 practice questions to ensure you're fully prepared.",
           },
         },
         {
@@ -92,7 +96,7 @@ const jsonLd = {
           name: "How should I study for the CDL general knowledge test?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Start with TigerTest&apos;s training mode to learn questions with instant feedback. Work through the six topic training sets, then take the six practice tests to simulate the real exam. Aim for 80%+ scores consistently.",
+            text: "Start with TigerTest's training mode to learn questions with instant feedback. Work through the six topic training sets, then take the six practice tests to simulate the real exam. Aim for 80%+ scores consistently.",
           },
         },
       ],
@@ -107,6 +111,7 @@ export default function CDLLandingPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      <ExamLandingBreadcrumbs examId="cdl" />
 
       {/* Hero Section */}
       <div className="relative overflow-hidden">
@@ -374,6 +379,8 @@ export default function CDLLandingPage() {
           </div>
         </div>
       </div>
+
+      <ExamRelatedTests examId="cdl" />
 
       {/* Final CTA */}
       <div className="relative overflow-hidden">

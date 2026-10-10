@@ -8,7 +8,7 @@ import { isViState } from "@/data/viStates";
 import { isKoState } from "@/data/koStates";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { getExamByPath } from "@/lib/exams";
-import { TEST_CATALOG } from "@/lib/testCatalog";
+import { relatedTests } from "@/lib/testCatalog";
 
 const popularStateSlugs = [
   "california", "texas", "florida", "new-york", "pennsylvania",
@@ -29,6 +29,9 @@ export function Footer() {
   const exam = getExamByPath(pathname);
   // Non-DMV exams share the compact footer (no state links, no language toggle).
   const isAltExam = !!exam;
+  // Site-wide links stay inside the current test's cluster (driving tests on
+  // DMV pages, nursing on nursing pages...). The /tests hub links everything.
+  const footerTests = relatedTests(exam?.id ?? "dmv", 8);
   const isHomepage = pathname === "/";
 
   // SEO landing pages have dedicated /es/ and /vi/ URLs, so they manage
@@ -93,7 +96,7 @@ export function Footer() {
           className={`flex flex-wrap justify-center md:justify-start items-center gap-x-3 gap-y-1 text-sm text-gray-500 ${isAltExam ? "" : "mt-3"}`}
         >
           <span className="font-medium text-gray-700">{t("footer.practiceTests")}:</span>
-          {TEST_CATALOG.map((test) => (
+          {footerTests.map((test) => (
             <Link key={test.id} href={test.href} className="hover:text-brand">
               {test.shortName}
             </Link>

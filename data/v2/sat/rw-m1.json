@@ -1,0 +1,596 @@
+[
+  {
+    "id": "SAT-RW-101",
+    "section": "rw",
+    "test": 1,
+    "module": 1,
+    "domain": "craftStructure",
+    "skill": "Words in context",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "Although the deep-sea anglerfish is often portrayed as a fearsome predator, the female's hunting method is surprisingly ______: she simply dangles a glowing lure in the dark water and waits for curious prey to swim within reach, expending almost no energy in pursuit.",
+    "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+    "options": [
+      "passive",
+      "elaborate",
+      "hazardous",
+      "unreliable"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The text contrasts the anglerfish's fearsome reputation with a method that involves dangling a lure, waiting, and expending almost no energy, which is best described as passive. \"Elaborate\" is the strongest distractor, but the method is described as simple, and nothing in the text suggests the method is dangerous to the fish or that it fails."
+  },
+  {
+    "id": "SAT-RW-102",
+    "section": "rw",
+    "test": 1,
+    "module": 1,
+    "domain": "craftStructure",
+    "skill": "Words in context",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "Painter Alma Thomas did not exhibit her abstract work until she was in her seventies, yet her late start did not ______ her reputation. Within a decade, her vivid, mosaic-like canvases were hanging in major museums, and in 1972 she became the first Black woman to have a solo exhibition at the Whitney Museum of American Art.",
+    "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+    "options": [
+      "diminish",
+      "establish",
+      "describe",
+      "anticipate"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The word \"yet\" signals a contrast between a late start and the rapid success that follows, so the late start did not diminish, or reduce, her reputation. \"Establish\" is tempting because the passage is about her reputation being built, but saying the late start did not establish her reputation would not set up the contrast that \"yet\" and the museum successes require."
+  },
+  {
+    "id": "SAT-RW-103",
+    "section": "rw",
+    "test": 1,
+    "module": 1,
+    "domain": "craftStructure",
+    "skill": "Words in context",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The 1830s saw a surge in lyceum lectures across New England, with speakers traveling from town to town to address audiences on science, literature, and reform. Historians caution against viewing the lecture circuit as purely ______, however, since fees were often the main source of income for speakers such as Ralph Waldo Emerson, who kept careful records of what each town paid him.",
+    "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+    "options": [
+      "altruistic",
+      "educational",
+      "regional",
+      "spontaneous"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The sentence says historians resist a certain view of the circuit because speakers depended on the fees, so the view being resisted is that lecturing was purely altruistic, or done for the public good without self-interest. \"Educational\" is the strongest distractor, since the lectures were educational, but income from fees does not contradict the idea that the lectures taught something; it contradicts the idea that speakers acted without regard for money."
+  },
+  {
+    "id": "SAT-RW-104",
+    "section": "rw",
+    "test": 1,
+    "module": 1,
+    "domain": "craftStructure",
+    "skill": "Words in context",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "In her study of nineteenth-century farm account books, historian Priya Natarajan argues that the ledgers' apparent dryness is deceptive. Far from being ______ records, they register the small negotiations of credit and trust that bound rural neighbors to one another, so that a plain column of figures can reveal who was owed a favor and who had fallen out of good standing.",
+    "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+    "options": [
+      "perfunctory",
+      "comprehensive",
+      "legible",
+      "idiosyncratic"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The phrase \"far from being\" introduces a quality the ledgers might seem to have but do not, and the surrounding context (apparent dryness, a plain column of figures) points to the ledgers seeming merely routine or mechanical, which is what \"perfunctory\" means. \"Comprehensive\" is the strongest distractor, but the passage does not suggest the ledgers appear thorough; it suggests they appear dull, and the point is that this impression is misleading."
+  },
+  {
+    "id": "SAT-RW-105",
+    "section": "rw",
+    "test": 1,
+    "module": 1,
+    "domain": "craftStructure",
+    "skill": "Text structure and purpose",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Lichens have long been treated as a textbook case of mutualism, a partnership in which a fungus provides structure and a photosynthetic partner supplies sugars. In 2016, however, researchers examining two lichen species that looked nearly identical but produced different toxins found a second, previously unnoticed fungus, a yeast, embedded in the outer layer of the toxic one. __The yeast had escaped detection for over a century largely because standard methods for identifying lichen fungi target genes that the yeast lacks.__ The discovery suggests that other lichens may harbor overlooked partners as well.",
+    "stem": "Which choice best describes the function of the underlined sentence in the text as a whole?",
+    "options": [
+      "It explains why the organism described in the previous sentence went unnoticed for so long.",
+      "It challenges the characterization of lichens as a textbook case of mutualism.",
+      "It describes the method the researchers used to distinguish the two lichen species.",
+      "It offers evidence that the yeast is responsible for the toxin produced by one lichen species."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The underlined sentence gives the reason the yeast was not found earlier: the usual identification methods look for genes the yeast does not have. Choice B is tempting because the discovery as a whole complicates the simple two-partner picture, but the underlined sentence itself addresses only why the yeast was missed, not whether lichens are mutualistic, and it does not establish that the yeast makes the toxin."
+  },
+  {
+    "id": "SAT-RW-106",
+    "section": "rw",
+    "test": 1,
+    "module": 1,
+    "domain": "craftStructure",
+    "skill": "Text structure and purpose",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "The following text is from a short story published in 1922. The narrator has returned to the town where she grew up.\n\nThe station had been repainted, and the bench where I used to wait for my father was gone, replaced by a row of iron chairs bolted to the platform. I told myself that this was progress and that I had no claim on the place. __Still, I stood for a moment where the bench had been, as though the boards might remember the weight of a girl with a satchel.__ Then I picked up my bag and walked toward the main street, which had also, I supposed, been improved.",
+    "stem": "Which choice best describes the function of the underlined sentence in the text as a whole?",
+    "options": [
+      "It reveals that the narrator's attachment to the station persists despite her stated acceptance of the changes.",
+      "It emphasizes the extent to which the station has been physically altered since the narrator's childhood.",
+      "It suggests that the narrator's father was the primary reason she returned to the town.",
+      "It introduces the narrator's belief that the town's improvements have made it unrecognizable."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The narrator has just told herself she has no claim on the place, and the word \"Still\" introduces an action that contradicts that statement: she lingers where the bench stood and imagines the boards remembering her, which shows her attachment has not gone away. Choice B is the strongest distractor, but the physical changes are described in the first sentence; the underlined sentence is about the narrator's feelings, not the station's appearance."
+  },
+  {
+    "id": "SAT-RW-107",
+    "section": "rw",
+    "test": 1,
+    "module": 1,
+    "domain": "craftStructure",
+    "skill": "Cross-text connections",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "**Text 1**\n\nPlanting street trees is among the most cost-effective ways for cities to reduce heat. Shade from a mature canopy can lower sidewalk surface temperatures by more than 10 degrees Celsius, and modeling by urban planner Dana Okafor suggests that raising canopy cover from 20 to 40 percent would cut a typical city's summer air temperature by roughly 1 degree. For cities facing rising heat, Okafor argues, trees should be the first line of defense.\n\n**Text 2**\n\nTrees cool cities, but their benefits arrive slowly and unevenly. A sapling planted today may take two decades to cast meaningful shade, and in dense neighborhoods with narrow sidewalks and buried utilities there is often nowhere to put one. Researcher Luis Benitez, who studies heat in Phoenix, notes that reflective roofing and shade structures can be installed within months and deliver measurable cooling where trees cannot grow.",
+    "stem": "Based on the texts, how would the author of Text 2 most likely respond to the claim in Text 1?",
+    "options": [
+      "By arguing that trees should be paired with measures that take effect faster and that fit where trees cannot be planted",
+      "By conceding that trees cool cities more than any other measure but questioning whether 40 percent canopy cover is realistic",
+      "By disputing the claim that shade from a mature canopy significantly lowers surface temperatures",
+      "By suggesting that the cooling Okafor models would occur only in cities with climates like that of Phoenix"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Text 2 accepts that trees cool cities but stresses two limits, slow results and lack of space, and points to faster alternatives that work where trees cannot, which amounts to saying trees should not stand alone as the first line of defense. Choice B is the strongest distractor, but Text 2 never says trees are the most effective measure, and it questions timing and placement rather than the 40 percent target."
+  },
+  {
+    "id": "SAT-RW-108",
+    "section": "rw",
+    "test": 1,
+    "module": 1,
+    "domain": "craftStructure",
+    "skill": "Cross-text connections",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "**Text 1**\n\nThe sonnet's rigid form, fourteen lines in a fixed rhyme scheme, is often described as a cage. But poet and critic Helen Marsh contends that the constraint is exactly what makes the form generative: forced to resolve an argument in a set number of lines, the poet discovers turns of thought that would never surface in free verse. The form, on this view, does not limit expression so much as provoke it.\n\n**Text 2**\n\nStudies of poets' drafts complicate the picture of form as a creative spur. Literary scholar Tomas Reyes examined manuscript revisions by several twentieth-century sonneteers and found that the most striking images typically appeared in early, metrically loose drafts, while later revisions toward the strict form often trimmed or flattened those images to fit the rhyme scheme. Reyes concludes that the form's demands are frequently paid for by the poem's content.",
+    "stem": "Based on the texts, how would the author of Text 2 most likely respond to the claim in Text 1?",
+    "options": [
+      "By pointing out that evidence from drafts suggests the sonnet's constraints tend to prune inventive material rather than produce it",
+      "By agreeing that the sonnet form provokes expression but arguing that free verse does so even more reliably",
+      "By noting that Marsh's claim applies only to sonnets written before the twentieth century",
+      "By arguing that poets who revise heavily are less likely to produce striking images than poets who do not"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Text 1 claims the sonnet's constraints generate new turns of thought; Text 2 reports draft evidence that the strongest images arose before the constraints were applied and were cut or flattened to meet them, so the author of Text 2 would say the form removes inventive material rather than creating it. Choice D is the strongest distractor, but Reyes's finding concerns revision toward strict form specifically, not the amount of revision in general."
+  },
+  {
+    "id": "SAT-RW-109",
+    "section": "rw",
+    "test": 1,
+    "module": 1,
+    "domain": "infoIdeas",
+    "skill": "Central ideas and details",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "The following text is from a short story published in 1911. Marta, a seamstress, has just finished a gown for a wealthy client.\n\nMarta held the gown to the window and turned it slowly, watching how the light caught the seams. No one would ever praise the seams. The lady who wore the dress would be praised for her figure, and the shop would be praised for its taste, and the dress itself might be praised for its color. But the seams, which had taken her three nights and had cost her a needle broken on the stiff silk, would be noticed only if they failed. She found that she did not mind. The seams were hers, and their silence was a kind of signature.",
+    "stem": "Which choice best states the main idea of the text?",
+    "options": [
+      "Marta takes private satisfaction in craftsmanship that she knows others will not recognize.",
+      "Marta resents the wealthy client who will receive credit for her labor.",
+      "Marta worries that the seams of the gown will fail and expose her poor workmanship.",
+      "Marta hopes the dress will bring the shop enough praise to improve her position."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The text builds to the statements that Marta \"did not mind\" going unpraised and that the seams' silence was \"a kind of signature,\" showing she finds quiet satisfaction in work no one else will notice. Choice B is the strongest distractor because the passage lists others who will receive praise, but Marta explicitly says she does not mind, which rules out resentment."
+  },
+  {
+    "id": "SAT-RW-110",
+    "section": "rw",
+    "test": 1,
+    "module": 1,
+    "domain": "infoIdeas",
+    "skill": "Central ideas and details",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Economists have long assumed that people discount future rewards at a steady rate, so that a reward delayed by one year loses the same share of its value whether that year is the first or the tenth. Experiments, however, consistently find a different pattern. Participants will often choose $50 today over $60 in a month, yet choose $60 in thirteen months over $50 in twelve months, even though the second pair involves the same one-month delay. The inconsistency suggests that the value people place on immediacy is not a fixed rate but a bonus attached specifically to the present, which helps explain why plans made for the future so often collapse once the future arrives.",
+    "stem": "Which choice best states the main idea of the text?",
+    "options": [
+      "Experimental evidence indicates that people value the present disproportionately rather than discounting the future at a constant rate.",
+      "Economists have shown that people are generally willing to wait for a larger reward when the delay is short.",
+      "People's choices between rewards depend mainly on the size of the difference between the amounts offered.",
+      "Plans made for the future tend to collapse because people underestimate how long delays will feel."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The text sets up the steady-rate assumption, presents experimental results that contradict it, and concludes that people attach a special bonus to the present, which is what choice A states. Choice D is the strongest distractor because the final clause mentions collapsing plans, but that is offered as a consequence of the main finding, not as the point of the text, and the text says nothing about how long delays feel."
+  },
+  {
+    "id": "SAT-RW-111",
+    "section": "rw",
+    "test": 1,
+    "module": 1,
+    "domain": "infoIdeas",
+    "skill": "Command of evidence (textual)",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Archaeologists excavating a Bronze Age settlement in present-day Hungary recovered dozens of loom weights, the clay rings that hold threads taut on a vertical loom. Because the weights varied widely in mass, the team hypothesized that the settlement's weavers produced several distinct types of cloth rather than a single standard fabric, since heavier weights are needed to tension coarse threads and lighter weights to tension fine ones.",
+    "stem": "Which finding, if true, would most directly support the team's hypothesis?",
+    "options": [
+      "The loom weights fall into three clearly separated mass groups, and textile fragments found at the site include both coarse and fine weaves.",
+      "Loom weights of similar mass have been recovered from other Bronze Age settlements in the region.",
+      "Many of the loom weights show signs of wear consistent with repeated use over many years.",
+      "The clay used to make the loom weights came from a riverbank several kilometers from the settlement."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The hypothesis links distinct weight classes to distinct cloth types, so finding separate mass groups together with both coarse and fine textile fragments supports it directly. Choice C is the strongest distractor because wear shows the weights were used, but heavy use says nothing about whether more than one kind of cloth was woven."
+  },
+  {
+    "id": "SAT-RW-112",
+    "section": "rw",
+    "test": 1,
+    "module": 1,
+    "domain": "infoIdeas",
+    "skill": "Command of evidence (textual)",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "Some linguists have proposed that evidentiality, a grammatical feature in which verbs are marked to show how the speaker knows something (by direct observation, by hearsay, or by inference), spread through the languages of the Andes and Amazon through contact among neighboring groups rather than through inheritance from a shared ancestral language. Linguist Ana Villalobos supports this contact hypothesis by noting that evidential systems in the region cut across established language families, appearing in languages that are not known to be related.",
+    "stem": "Which finding, if true, would most directly weaken Villalobos's argument?",
+    "options": [
+      "Reconstructions show that the ancestral languages of several unrelated families in the region each possessed evidential marking before those families came into contact.",
+      "Languages in the region known to have been in prolonged contact share many vocabulary items in addition to evidential marking.",
+      "Several languages outside the Andes and Amazon also mark verbs for evidentiality, though with fewer distinctions.",
+      "Speakers of languages with evidential systems in the region frequently learn neighboring languages as adults."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Villalobos infers contact from the fact that unrelated families share the feature; if each family already had evidentiality before contact, the shared feature would no longer be evidence of borrowing, which undercuts the argument. Choice B is the strongest distractor, but shared vocabulary among languages in contact would, if anything, make borrowing of grammar more plausible, strengthening rather than weakening the claim."
+  },
+  {
+    "id": "SAT-RW-113",
+    "section": "rw",
+    "test": 1,
+    "module": 1,
+    "domain": "infoIdeas",
+    "skill": "Command of evidence (quantitative)",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Researchers studying how urban noise affects songbirds recorded the dawn songs of great tits at four sites in and around a European city and measured each site's average background noise. Because low-frequency traffic noise can mask low-pitched notes, the team expected birds at noisier sites to sing with higher minimum frequencies.\n\n| Site | Average background noise (decibels) | Mean minimum song frequency (kilohertz) |\n|---|---|---|\n| Forest reserve | 38 | 2.9 |\n| Suburban park | 47 | 3.2 |\n| City park | 56 | 3.6 |\n| Downtown plaza | 64 | 3.9 |\n\nThe data are consistent with the researchers' expectation, as shown by the fact that ______",
+    "stem": "Which choice most effectively uses data from the table to complete the statement?",
+    "options": [
+      "mean minimum song frequency rose with each increase in background noise, from 2.9 kilohertz at the forest reserve to 3.9 kilohertz at the downtown plaza.",
+      "the forest reserve, the quietest site, had the lowest mean minimum song frequency, at 3.2 kilohertz.",
+      "the downtown plaza had a background noise level of 64 decibels, nearly twice that of the forest reserve.",
+      "the difference in mean minimum song frequency between the suburban park and the city park was 0.4 kilohertz, larger than the difference between the two quietest sites."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The expectation is that noisier sites go with higher minimum frequencies, and choice A accurately reports that frequency rises in step with noise across all four sites. Choice B misreads the table (the forest reserve's value is 2.9, not 3.2), choice C mentions only noise and never frequency, and choice D is accurate but compares two gaps without showing that frequency tracks noise overall."
+  },
+  {
+    "id": "SAT-RW-114",
+    "section": "rw",
+    "test": 1,
+    "module": 1,
+    "domain": "infoIdeas",
+    "skill": "Inferences",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Medieval European manuscripts were copied by hand, and scholars have generally assumed that each successive copy introduced new errors, so that the oldest surviving manuscript of a text should be the most reliable. Yet a scribe working from a damaged or careless exemplar might consult a second, better copy and correct the errors in his source. Where such cross-checking occurred, a manuscript produced later could preserve a more accurate text than one produced earlier. Scholars reconstructing an original text therefore ______",
+    "stem": "Which choice most logically completes the text?",
+    "options": [
+      "cannot rely on a manuscript's age alone as a measure of its reliability.",
+      "should give the greatest weight to the manuscript that was copied most recently.",
+      "can assume that scribes who corrected errors in their sources left no mistakes of their own.",
+      "must determine which manuscript was copied directly from the author's original."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The text shows that later copies can sometimes be more accurate than earlier ones, so age by itself cannot settle which manuscript is most reliable. Choice B is the strongest distractor, but the text says a later manuscript \"could\" be more accurate only when cross-checking occurred, which does not justify favoring the newest copy in general."
+  },
+  {
+    "id": "SAT-RW-115",
+    "section": "rw",
+    "test": 1,
+    "module": 1,
+    "domain": "infoIdeas",
+    "skill": "Inferences",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "Plants release volatile compounds when insects chew their leaves, and neighboring plants that detect these compounds often strengthen their own chemical defenses before they are attacked. This early warning is sometimes described as communication, but the description sits uneasily with evolutionary theory: a plant that warns its neighbors gains nothing if those neighbors compete with it for light and nutrients, so natural selection should not favor emitters that broadcast their condition. Some biologists resolve the puzzle by noting that the compounds also travel through the air to the emitting plant's own distant leaves, reaching them faster than internal signals can. If this explanation is correct, then the benefit to neighboring plants is most likely ______",
+    "stem": "Which choice most logically completes the text?",
+    "options": [
+      "an incidental consequence of a signal that evolved to serve the emitting plant itself.",
+      "the primary reason that volatile signaling evolved in plants with many close neighbors.",
+      "greater for plants of the same species as the emitter than for plants of other species.",
+      "limited to cases in which the neighboring plants are not competing with the emitter."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The proposed resolution is that the volatiles evolved because they warn the emitter's own leaves, so any benefit to neighbors is a side effect rather than the function selection favored. Choice B states the opposite of the resolution, and choice D is tempting because competition is mentioned, but the explanation does not restrict when neighbors benefit; it reinterprets why the signal exists at all."
+  },
+  {
+    "id": "SAT-RW-116",
+    "section": "rw",
+    "test": 1,
+    "module": 1,
+    "domain": "conventions",
+    "skill": "Boundaries",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "The Great Barrier Reef is not a single ______ it is a system of nearly 3,000 individual reefs and 900 islands stretching more than 2,300 kilometers along the coast of Queensland, Australia.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "reef;",
+      "reef,",
+      "reef",
+      "reef but"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "\"The Great Barrier Reef is not a single reef\" and \"it is a system of nearly 3,000 individual reefs\" are both independent clauses, so a semicolon correctly joins them. Choice B produces a comma splice, choice C runs the clauses together with no punctuation, and choice D joins two independent clauses with a conjunction but no comma."
+  },
+  {
+    "id": "SAT-RW-117",
+    "section": "rw",
+    "test": 1,
+    "module": 1,
+    "domain": "conventions",
+    "skill": "Boundaries",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "Zora Neale Hurston is best known for her novels, but she also trained as an anthropologist under Franz Boas at Barnard ______ in the late 1920s she traveled through the American South collecting folklore, much of which appeared in her 1935 book Mules and Men.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "College.",
+      "College,",
+      "College",
+      "College; and"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Everything before the blank is a complete sentence, and \"in the late 1920s she traveled through the American South\" begins another, so a period is the correct boundary. Choice B creates a comma splice, choice C creates a run-on, and choice D uses a semicolon and a coordinating conjunction together, which is not a standard way to join clauses."
+  },
+  {
+    "id": "SAT-RW-118",
+    "section": "rw",
+    "test": 1,
+    "module": 1,
+    "domain": "conventions",
+    "skill": "Boundaries",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The mathematician Emmy Noether, whose 1915 theorem links every continuous symmetry in a physical system to a conserved ______ taught for years at the University of Gottingen without a salary or an official title.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "quantity,",
+      "quantity",
+      "quantity;",
+      "quantity, and"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The clause beginning \"whose 1915 theorem\" is a nonessential modifier set off by a comma after \"Noether,\" so a matching comma is needed after \"quantity\" to close it before the main verb \"taught.\" Choice B leaves the modifier unclosed, choice C wrongly places a semicolon between the subject and its verb, and choice D adds a conjunction that has nothing to join, since \"taught\" is the main verb of the sentence rather than a second clause."
+  },
+  {
+    "id": "SAT-RW-119",
+    "section": "rw",
+    "test": 1,
+    "module": 1,
+    "domain": "conventions",
+    "skill": "Boundaries",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "The proposal that cities replace dark asphalt with lighter-colored pavement to reflect more ______ has gained support from engineers, but critics note that sunlight bounced off bright surfaces can raise temperatures for pedestrians walking above them.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "sunlight",
+      "sunlight,",
+      "sunlight;",
+      "sunlight, which"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The subject of the sentence is the long noun phrase \"The proposal that cities replace dark asphalt with lighter-colored pavement to reflect more sunlight,\" and its verb is \"has gained,\" so no punctuation should separate them. Choice B is the strongest distractor because the subject is long enough to feel like it needs a pause, but a single comma between a subject and its verb is an error, and choices C and D leave the sentence without a main verb for \"The proposal.\""
+  },
+  {
+    "id": "SAT-RW-120",
+    "section": "rw",
+    "test": 1,
+    "module": 1,
+    "domain": "conventions",
+    "skill": "Form, structure, and sense",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "The collection of letters, photographs, and diaries that the museum acquired last year ______ a rare glimpse into daily life in a nineteenth-century mining camp.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "offers",
+      "offer",
+      "are offering",
+      "have offered"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The subject of the sentence is the singular noun \"collection,\" so the verb must be singular: \"offers.\" Choice B is the strongest distractor because the plural nouns \"letters, photographs, and diaries\" sit right before the blank, but they are objects of the preposition \"of\" and do not control the verb."
+  },
+  {
+    "id": "SAT-RW-121",
+    "section": "rw",
+    "test": 1,
+    "module": 1,
+    "domain": "conventions",
+    "skill": "Form, structure, and sense",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "By the time the Panama Canal opened in 1914, engineers ______ more than 200 million cubic yards of earth and rock, a volume that dwarfed the excavation required for any earlier canal.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "had removed",
+      "have removed",
+      "remove",
+      "will have removed"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The phrase \"by the time the Panama Canal opened in 1914\" places the removal before a completed past event, which calls for the past perfect \"had removed.\" Choice B is the strongest distractor, but the present perfect describes action connected to the present, which conflicts with the past-tense frame established by \"opened\" and \"dwarfed.\""
+  },
+  {
+    "id": "SAT-RW-122",
+    "section": "rw",
+    "test": 1,
+    "module": 1,
+    "domain": "conventions",
+    "skill": "Form, structure, and sense",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The Eiffel Tower is now one of the most visited monuments in the world, drawing roughly seven million people a year, but its survival was far from assured. Originally built in 1889 as a temporary exhibit for the Paris World's Fair, ______",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "the Eiffel Tower was scheduled to be dismantled after twenty years but was spared because of its value as a radio antenna.",
+      "plans called for the Eiffel Tower to be dismantled after twenty years, though its value as a radio antenna spared it.",
+      "engineers scheduled the Eiffel Tower for dismantling after twenty years, but its value as a radio antenna spared it.",
+      "the Eiffel Tower's value as a radio antenna spared it from being dismantled after twenty years as scheduled."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The introductory phrase \"Originally built in 1889\" must modify the thing that was built, so \"the Eiffel Tower\" has to come immediately after the comma. Choice D is the strongest distractor because it begins with \"the Eiffel Tower's,\" but the actual noun that follows the modifier is \"value,\" which was not built in 1889; choices B and C make \"plans\" and \"engineers\" the things that were built."
+  },
+  {
+    "id": "SAT-RW-123",
+    "section": "rw",
+    "test": 1,
+    "module": 1,
+    "domain": "expressionIdeas",
+    "skill": "Rhetorical synthesis",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Mae Jemison is an American engineer and physician.\n- Before joining NASA, she served as a medical officer in the Peace Corps in Liberia and Sierra Leone.\n- In 1992 she flew aboard the Space Shuttle Endeavour.\n- On that flight she became the first Black woman to travel to space.\n- After leaving NASA in 1993, she founded a company focused on technology and social issues.\n\nThe student wants to emphasize Jemison's achievement in space. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "stem": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "options": [
+      "In 1992, Mae Jemison became the first Black woman to travel to space when she flew aboard the Space Shuttle Endeavour.",
+      "Mae Jemison, an engineer and physician, served as a medical officer in the Peace Corps before joining NASA.",
+      "After leaving NASA in 1993, Mae Jemison founded a company focused on technology and social issues.",
+      "Mae Jemison's career has included work in medicine, engineering, and business."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Choice A combines the flight and the milestone it represents, which is exactly the achievement in space the student wants to emphasize. Choice D is the strongest distractor because it summarizes her career, but it never mentions space at all, and choices B and C describe work before and after NASA rather than the spaceflight."
+  },
+  {
+    "id": "SAT-RW-124",
+    "section": "rw",
+    "test": 1,
+    "module": 1,
+    "domain": "expressionIdeas",
+    "skill": "Rhetorical synthesis",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Monarch butterflies in eastern North America migrate up to 3,000 miles each fall.\n- They travel to a small number of forested sites in central Mexico.\n- Millions of monarchs cluster on oyamel fir trees at these sites.\n- No single butterfly completes the round trip; the return journey takes several generations.\n- The migration route was first mapped in 1975 by researchers who tagged butterflies.\n\nThe student wants to present a surprising fact about the migration to an audience unfamiliar with it. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "stem": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "options": [
+      "Although eastern monarch butterflies travel up to 3,000 miles to central Mexico each fall, no single butterfly makes the round trip; the return takes several generations.",
+      "Eastern monarch butterflies migrate to forested sites in central Mexico, where millions cluster on oyamel fir trees.",
+      "Researchers who tagged monarch butterflies first mapped the migration route in 1975.",
+      "Monarch butterflies in eastern North America migrate each fall, traveling to a small number of sites."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Choice A sets up the expected picture of a long migration and then delivers the counterintuitive fact that the journey spans generations, which is the kind of surprise the student wants, and it introduces the migration for an unfamiliar audience. Choice B is the strongest distractor because the clustering is vivid, but it is a description rather than a fact that overturns an assumption, and choices C and D are routine details."
+  },
+  {
+    "id": "SAT-RW-125",
+    "section": "rw",
+    "test": 1,
+    "module": 1,
+    "domain": "expressionIdeas",
+    "skill": "Rhetorical synthesis",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- The Pont du Gard is a Roman aqueduct in southern France built in the first century CE.\n- It carried water about 50 kilometers to the city of Nimes.\n- Over that entire distance the channel descends only about 12 meters, a gradient of roughly 1 in 4,000.\n- Roman engineers achieved this gradient using simple instruments such as the chorobates, a leveling tool.\n- The structure's three tiers of arches rise nearly 49 meters above the river.\n\nThe student wants to emphasize the precision of the aqueduct's engineering. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "stem": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "options": [
+      "Using simple instruments, Roman engineers gave the Pont du Gard a gradient of roughly 1 in 4,000, so that water descended only about 12 meters over 50 kilometers.",
+      "Built in the first century CE, the Pont du Gard carried water to the city of Nimes and rises nearly 49 meters above the river.",
+      "The Pont du Gard, a Roman aqueduct in southern France, is a structure with three tiers of arches.",
+      "Roman engineers used a leveling tool called the chorobates when they built the Pont du Gard in the first century CE."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Precision is best shown by the gradient figures, and choice A pairs those figures with the simple tools used to achieve them, making the accuracy of the work clear. Choice D is the strongest distractor because it names the leveling tool, but naming an instrument does not by itself show how precise the result was; choices B and C give size and date rather than precision."
+  },
+  {
+    "id": "SAT-RW-126",
+    "section": "rw",
+    "test": 1,
+    "module": 1,
+    "domain": "expressionIdeas",
+    "skill": "Transitions",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "Honeybees communicate the location of food through a waggle dance, in which the angle of the dance relative to the sun indicates direction and the duration of the dance indicates distance. ______ a forager that has found a rich patch of flowers two kilometers to the east will perform a longer dance, oriented at the appropriate angle, than one that has found flowers close to the hive.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "For example,",
+      "In contrast,",
+      "Nevertheless,",
+      "In other words,"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The first sentence states a general rule about the dance, and the second gives a specific case that illustrates it, so \"For example\" is the logical transition. \"In other words\" is the strongest distractor, but the second sentence does not restate the rule in different terms; it applies the rule to a particular forager."
+  },
+  {
+    "id": "SAT-RW-127",
+    "section": "rw",
+    "test": 1,
+    "module": 1,
+    "domain": "expressionIdeas",
+    "skill": "Transitions",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Early radio broadcasters assumed that listeners wanted live programming and resisted playing recordings on the air; for a time the major networks banned recorded music outright. ______ the convenience and lower cost of prerecorded shows had, by the late 1940s, led most stations to abandon the policy.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "Nevertheless,",
+      "Accordingly,",
+      "Specifically,",
+      "Moreover,"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The first sentence describes broadcasters' resistance to recordings, and the second describes stations abandoning that resistance, so a contrast transition such as \"Nevertheless\" is needed. \"Accordingly\" is the strongest distractor, but it would present the abandonment of the policy as a result of the resistance rather than a reversal of it."
+  }
+]

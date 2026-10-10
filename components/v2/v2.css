@@ -1,0 +1,74 @@
+/* v2 exam shell. Scoped under .v2-shell so it never leaks into v1 pages. */
+@import "katex/dist/katex.min.css";
+
+.v2-shell {
+  --v2-brand: var(--v2-brand-override, 221 83% 45%);
+  --v2-brand-dark: var(--v2-brand-dark-override, 221 83% 32%);
+  --v2-brand-light: var(--v2-brand-light-override, 221 100% 96%);
+  /* Reuse the site's brand utilities (bg-brand, text-brand, ...) inside v2. */
+  --brand: var(--v2-brand);
+  --brand-dark: var(--v2-brand-dark);
+  --brand-darker: var(--v2-brand-dark);
+  --brand-hover: var(--v2-brand-dark);
+  --brand-light: var(--v2-brand-light);
+  --brand-border: var(--v2-brand);
+  --brand-border-light: var(--v2-brand-light);
+  --brand-foreground: 0 0% 100%;
+  --brand-muted: var(--v2-brand-light);
+  color: #111827;
+}
+
+.v2-rich .katex {
+  font-size: 1.05em;
+}
+.v2-rich .katex-display {
+  margin: 0.25rem 0;
+}
+.v2-rich p + p {
+  margin-top: 0.75rem;
+}
+
+/* Full-screen focus mode for the test and drill runners (hides site chrome). */
+.v2-focus {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  background: #f9fafb;
+  display: flex;
+  flex-direction: column;
+  overscroll-behavior: contain;
+}
+.v2-focus .v2-scroll {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.v2-safe-bottom {
+  padding-bottom: calc(0.75rem + env(safe-area-inset-bottom));
+}
+.v2-safe-top {
+  padding-top: calc(0.5rem + env(safe-area-inset-top));
+}
+
+/* Answer eliminator strike-through */
+.v2-struck {
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+  opacity: 0.45;
+}
+
+/* Big, thumb-friendly tap targets everywhere in v2 */
+.v2-tap {
+  min-height: 3rem;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@keyframes v2-pop {
+  0% { transform: scale(0.96); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+.v2-pop {
+  animation: v2-pop 160ms ease-out;
+}

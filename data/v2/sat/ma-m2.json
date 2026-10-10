@@ -1,0 +1,491 @@
+[
+  {
+    "id": "SAT-MA-201",
+    "section": "math",
+    "test": 1,
+    "module": 2,
+    "domain": "algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Line $\\ell$ in the xy-plane passes through the points $(2, 5)$ and $(4, 11)$. Which of the following is an equation of line $\\ell$?",
+    "options": [
+      "$y = 3x - 1$",
+      "$y = 3x + 5$",
+      "$y = 2x + 1$",
+      "$y = \\frac{1}{3}x + \\frac{13}{3}$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "The slope is $\\frac{11 - 5}{4 - 2} = \\frac{6}{2} = 3$. Substituting $(2, 5)$ into $y = 3x + b$ gives $5 = 6 + b$, so $b = -1$ and the equation is $y = 3x - 1$. Choice B uses the correct slope but takes the y-coordinate of the first point as the y-intercept; the line crosses the y-axis at $5$ only if it passes through $(0, 5)$, which it does not. Choice D uses the reciprocal of the slope."
+  },
+  {
+    "id": "SAT-MA-202",
+    "section": "math",
+    "test": 1,
+    "module": 2,
+    "domain": "advancedMath",
+    "skill": "Equivalent expressions",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which of the following expressions is equivalent to $(3x^2 - 5x + 2) - (x^2 - 4x - 6)$?",
+    "options": [
+      "$2x^2 - x + 8$",
+      "$2x^2 - 9x - 4$",
+      "$2x^2 - x - 4$",
+      "$2x^2 - 9x + 8$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Distribute the subtraction to every term of the second polynomial: $3x^2 - 5x + 2 - x^2 + 4x + 6$. Combining like terms gives $2x^2 - x + 8$. Choice B comes from changing the sign of only the first term in the second parentheses and then computing $-5x - 4x$ and $2 - 6$; the sign of every term inside the subtracted parentheses must change."
+  },
+  {
+    "id": "SAT-MA-203",
+    "section": "math",
+    "test": 1,
+    "module": 2,
+    "domain": "dataAnalysis",
+    "skill": "Percentages",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A jacket has a regular price of $\\$80$. During a sale, the price is reduced by $25\\%$, and a sales tax of $8\\%$ is then applied to the sale price. What is the total amount, in dollars, that a customer pays for the jacket during the sale?",
+    "numeric": {
+      "answers": [
+        "64.8",
+        "64.80"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The sale price is $80(1 - 0.25) = 80(0.75) = 60$ dollars. Applying the $8\\%$ tax to the sale price gives $60(1.08) = 64.80$ dollars. A common error is to combine the discount and the tax into a single $17\\%$ reduction of the original price, which gives $66.40$; the tax is a percent of the reduced price, not of the original price."
+  },
+  {
+    "id": "SAT-MA-204",
+    "section": "math",
+    "test": 1,
+    "module": 2,
+    "domain": "algebra",
+    "skill": "Linear functions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The function $f$ is linear. If $f(3) = 10$ and $f(7) = 22$, what is the value of $f(0)$?",
+    "options": [
+      "$1$",
+      "$3$",
+      "$4$",
+      "$7$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "The slope of $f$ is $\\frac{22 - 10}{7 - 3} = \\frac{12}{4} = 3$, so $f(x) = 3x + b$. Using $f(3) = 10$ gives $9 + b = 10$, so $b = 1$ and $f(0) = 1$. Choice B is the slope of the function, not its value at $0$; choice C comes from counting back only two steps of $3$ from $f(3)$ instead of three."
+  },
+  {
+    "id": "SAT-MA-205",
+    "section": "math",
+    "test": 1,
+    "module": 2,
+    "domain": "advancedMath",
+    "skill": "Nonlinear functions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The graph of the function $f$ is shown in the xy-plane. Which of the following equations defines $f$?",
+    "options": [
+      "$f(x) = (x - 2)^2 - 1$",
+      "$f(x) = (x + 2)^2 - 1$",
+      "$f(x) = (x - 2)^2 + 1$",
+      "$f(x) = -(x - 2)^2 - 1$"
+    ],
+    "correct": [
+      0
+    ],
+    "figure": {
+      "src": "/figures/sat/sat-ma-205.svg",
+      "alt": "Graph in the xy-plane of a parabola opening upward with vertex at (2, -1), y-intercept at (0, 3), and x-intercepts at (1, 0) and (3, 0). The curve is labeled y = f(x)."
+    },
+    "calculator": true,
+    "explanation": "The vertex of the parabola is $(2, -1)$, so in vertex form $f(x) = a(x - 2)^2 - 1$. The graph passes through $(0, 3)$, so $3 = a(0 - 2)^2 - 1$ gives $4a = 4$ and $a = 1$. Choice B puts the vertex at $x = -2$; the sign inside the parentheses is the opposite of the vertex's x-coordinate, a common mix-up. Checking the x-intercepts confirms the answer: $(x - 2)^2 - 1 = 0$ gives $x = 1$ and $x = 3$, matching the graph."
+  },
+  {
+    "id": "SAT-MA-206",
+    "section": "math",
+    "test": 1,
+    "module": 2,
+    "domain": "algebra",
+    "skill": "Systems of two linear equations",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "If $3x + 2y = 19$ and $5x - 2y = 13$, what is the value of $xy$?",
+    "numeric": {
+      "answers": [
+        "14"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Adding the two equations eliminates $y$: $8x = 32$, so $x = 4$. Substituting into the first equation gives $12 + 2y = 19$, so $y = \\frac{7}{2}$. Then $xy = 4 \\cdot \\frac{7}{2} = 14$. Entering $4$ or $3.5$ alone answers a different question; the item asks for the product of the two values."
+  },
+  {
+    "id": "SAT-MA-207",
+    "section": "math",
+    "test": 1,
+    "module": 2,
+    "domain": "geometryTrig",
+    "skill": "Circles: equations and arcs",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In the xy-plane, the graph of $x^2 + y^2 - 6x + 4y = 12$ is a circle. What is the radius of the circle?",
+    "options": [
+      "$\\sqrt{12}$",
+      "$5$",
+      "$12$",
+      "$25$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "Complete the square in both variables: $(x^2 - 6x + 9) + (y^2 + 4y + 4) = 12 + 9 + 4$, which gives $(x - 3)^2 + (y + 2)^2 = 25$. The right side is $r^2$, so $r = 5$. Choice D is $r^2$ rather than $r$, and choice A takes the square root of the original constant $12$ without first completing the square."
+  },
+  {
+    "id": "SAT-MA-208",
+    "section": "math",
+    "test": 1,
+    "module": 2,
+    "domain": "dataAnalysis",
+    "skill": "Probability and conditional probability",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The table below summarizes how the $200$ students at a high school travel to school, by grade level.\n\n| Grade | Bus | Car | Walk | Total |\n|---|---|---|---|---|\n| Sophomore | 24 | 10 | 16 | 50 |\n| Junior | 18 | 30 | 12 | 60 |\n| Senior | 8 | 52 | 30 | 90 |\n| Total | 50 | 92 | 58 | 200 |\n\nIf a student who travels to school by car is selected at random, what is the probability that the student is a junior?",
+    "options": [
+      "$\\frac{15}{46}$",
+      "$\\frac{1}{2}$",
+      "$\\frac{3}{20}$",
+      "$\\frac{23}{50}$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "The condition 'travels by car' restricts the sample space to the $92$ students in the Car column. Of those, $30$ are juniors, so the probability is $\\frac{30}{92} = \\frac{15}{46}$. Choice B, $\\frac{30}{60}$, reverses the condition: it is the probability that a randomly selected junior travels by car. Choice C divides by all $200$ students instead of only the car riders, and choice D is the fraction of all students who travel by car."
+  },
+  {
+    "id": "SAT-MA-209",
+    "section": "math",
+    "test": 1,
+    "module": 2,
+    "domain": "dataAnalysis",
+    "skill": "Two-variable data: models and scatterplots",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The scatterplot shows the number of hours each of $9$ students spent practicing for a quiz and the score each student earned. The line of best fit is also shown and has equation $y = 2x + 5$. The actual score of the student who practiced for $8$ hours is how many points greater than the score predicted by the line of best fit?",
+    "options": [
+      "$4$",
+      "$5$",
+      "$21$",
+      "$25$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "figure": {
+      "src": "/figures/sat/sat-ma-209.svg",
+      "alt": "Scatterplot of hours of practice (0 to 10 on the horizontal axis) versus score (0 to 30 on the vertical axis) for 9 students, with a line of best fit passing through (0, 5) and (10, 25). The data points are (1, 8), (2, 8), (3, 12), (4, 15), (5, 13), (6, 18), (7, 17), (8, 25), and (9, 22). The point at 8 hours lies above the line."
+    },
+    "calculator": true,
+    "explanation": "The line of best fit predicts $y = 2(8) + 5 = 21$ points for $8$ hours of practice. The data point at $x = 8$ has a score of $25$, so the actual score is $25 - 21 = 4$ points above the prediction. Choice C is the predicted score and choice D is the actual score; the question asks for the difference between them. Choice B is the y-intercept of the line, which plays no role in this comparison."
+  },
+  {
+    "id": "SAT-MA-210",
+    "section": "math",
+    "test": 1,
+    "module": 2,
+    "domain": "advancedMath",
+    "skill": "Exponential functions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A car was purchased for $\\$24{,}000$. Every $2$ years, the car's value decreases by $15\\%$ of its value at the start of that $2$-year period. Which of the following functions gives the value $V(t)$, in dollars, of the car $t$ years after it was purchased?",
+    "options": [
+      "$V(t) = 24{,}000(0.85)^{t/2}$",
+      "$V(t) = 24{,}000(0.85)^{2t}$",
+      "$V(t) = 24{,}000(0.15)^{t/2}$",
+      "$V(t) = 24{,}000(0.925)^{t}$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "A $15\\%$ decrease leaves $100\\% - 15\\% = 85\\%$ of the value, so the decay factor is $0.85$. The factor applies once per $2$-year period, and $t$ years contain $\\frac{t}{2}$ such periods, giving $V(t) = 24{,}000(0.85)^{t/2}$. Choice B applies the decay $2t$ times, which is four times too often. Choice D assumes the $15\\%$ loss can be split into equal $7.5\\%$ losses each year, but two $7.5\\%$ decreases leave $0.925^2 \\approx 0.856$ of the value, not $0.85$."
+  },
+  {
+    "id": "SAT-MA-211",
+    "section": "math",
+    "test": 1,
+    "module": 2,
+    "domain": "advancedMath",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "What is the solution to the equation $\\sqrt{2x + 7} = x - 4$?",
+    "numeric": {
+      "answers": [
+        "9"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Squaring both sides gives $2x + 7 = x^2 - 8x + 16$, so $x^2 - 10x + 9 = 0$ and $(x - 1)(x - 9) = 0$. Checking $x = 1$ in the original equation gives $\\sqrt{9} = 3$ on the left but $1 - 4 = -3$ on the right, so $1$ is extraneous. Checking $x = 9$ gives $\\sqrt{25} = 5$ and $9 - 4 = 5$, so the only solution is $9$. Squaring can introduce values that do not satisfy the original equation, so every candidate must be checked."
+  },
+  {
+    "id": "SAT-MA-212",
+    "section": "math",
+    "test": 1,
+    "module": 2,
+    "domain": "geometryTrig",
+    "skill": "Similar triangles",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In the figure, points $D$ and $E$ lie on sides $AB$ and $AC$ of triangle $ABC$, respectively, and $\\overline{DE}$ is parallel to $\\overline{BC}$. If $AD = 6$, $DB = 4$, and $DE = 9$, what is the length of $\\overline{BC}$?",
+    "options": [
+      "$6$",
+      "$13$",
+      "$15$",
+      "$22.5$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "figure": {
+      "src": "/figures/sat/sat-ma-212.svg",
+      "alt": "Triangle ABC with A at the top, B at the lower left, and C at the lower right. Point D is on side AB and point E is on side AC, and segment DE is drawn parallel to BC. Segment AD is labeled 6, segment DB is labeled 4, and segment DE is labeled 9. The figure is not drawn to scale."
+    },
+    "calculator": true,
+    "explanation": "Because $\\overline{DE} \\parallel \\overline{BC}$, triangles $ADE$ and $ABC$ share angle $A$ and have equal corresponding angles, so they are similar. Corresponding sides are proportional: $\\frac{AD}{AB} = \\frac{DE}{BC}$, and $AB = AD + DB = 10$, so $\\frac{6}{10} = \\frac{9}{BC}$ gives $BC = 15$. Choice D uses $\\frac{DB}{AD}$ as if $DB$ were a full side of the large triangle, and choice B adds $4$ to $DE$, treating the difference in lengths as constant rather than proportional."
+  },
+  {
+    "id": "SAT-MA-213",
+    "section": "math",
+    "test": 1,
+    "module": 2,
+    "domain": "algebra",
+    "skill": "Systems of two linear equations",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "In the system of equations $ax + 6y = 15$ and $4x - 8y = 9$, $a$ is a constant. If the system has no solution, what is the value of $a$?",
+    "options": [
+      "$-12$",
+      "$-3$",
+      "$-\\frac{3}{4}$",
+      "$3$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "A system of two linear equations has no solution when the lines are parallel: same slope, different intercepts. In slope-intercept form, the first line has slope $-\\frac{a}{6}$ and the second has slope $\\frac{4}{8} = \\frac{1}{2}$. Setting $-\\frac{a}{6} = \\frac{1}{2}$ gives $a = -3$. The first equation is then $-3x + 6y = 15$; multiplying the second equation by $-\\frac{3}{4}$ gives $-3x + 6y = -\\frac{27}{4}$, a different constant, so the lines are distinct and never meet. Choice D drops the negative sign from the slope of the first equation, and choice C is the ratio of the coefficients rather than the value of $a$."
+  },
+  {
+    "id": "SAT-MA-214",
+    "section": "math",
+    "test": 1,
+    "module": 2,
+    "domain": "advancedMath",
+    "skill": "Quadratics",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "The function $f$ is defined by $f(x) = -2x^2 + 12x - 11$. Which of the following is an equivalent form of $f(x)$ in which the maximum value of $f$ appears as a constant?",
+    "options": [
+      "$f(x) = -2(x - 3)^2 + 7$",
+      "$f(x) = -2(x - 3)^2 - 2$",
+      "$f(x) = -2(x + 3)^2 + 7$",
+      "$f(x) = -2(x - 3)^2 - 29$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Factor $-2$ from the $x$ terms: $f(x) = -2(x^2 - 6x) - 11$. Completing the square adds $9$ inside the parentheses, which is $-2 \\cdot 9 = -18$ outside, so add $18$ to compensate: $f(x) = -2(x - 3)^2 - 11 + 18 = -2(x - 3)^2 + 7$. Since $-2(x - 3)^2 \\le 0$ for every $x$, the maximum value $7$ occurs at $x = 3$. Choice B forgets the factor of $-2$ when compensating ($-11 + 9$), and choice D subtracts $18$ instead of adding it."
+  },
+  {
+    "id": "SAT-MA-215",
+    "section": "math",
+    "test": 1,
+    "module": 2,
+    "domain": "algebra",
+    "skill": "Systems of two linear equations",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "In the system of equations $\\frac{1}{2}x - \\frac{3}{4}y = 5$ and $kx - 6y = 40$, $k$ is a constant. If the system has infinitely many solutions, what is the value of $k$?",
+    "numeric": {
+      "answers": [
+        "4"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "A system has infinitely many solutions only when the two equations describe the same line. Multiplying the first equation by $8$ clears the fractions: $4x - 6y = 40$. This already matches the $y$ coefficient and the constant of the second equation, so the $x$ coefficients must match as well: $k = 4$. Multiplying by $4$ instead gives $2x - 3y = 20$ and the tempting answer $2$, but $2x - 6y = 40$ is not the same line; every coefficient must be scaled by the same factor."
+  },
+  {
+    "id": "SAT-MA-216",
+    "section": "math",
+    "test": 1,
+    "module": 2,
+    "domain": "advancedMath",
+    "skill": "Radicals and rational exponents",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which of the following is equivalent to $\\frac{\\sqrt[3]{x^5} \\cdot x^2}{\\sqrt{x}}$ for all $x > 0$?",
+    "options": [
+      "$x^{5/3}$",
+      "$x^{17/6}$",
+      "$x^{19/6}$",
+      "$x^{25/6}$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "Rewrite each radical with a rational exponent: $\\sqrt[3]{x^5} = x^{5/3}$ and $\\sqrt{x} = x^{1/2}$. Multiplying adds exponents and dividing subtracts them: $\\frac{5}{3} + 2 - \\frac{1}{2} = \\frac{10}{6} + \\frac{12}{6} - \\frac{3}{6} = \\frac{19}{6}$. Choice D adds $\\frac{1}{2}$ instead of subtracting it, treating the division by $\\sqrt{x}$ as multiplication. Choice B multiplies $\\frac{5}{3}$ by $2$ instead of adding $2$."
+  },
+  {
+    "id": "SAT-MA-217",
+    "section": "math",
+    "test": 1,
+    "module": 2,
+    "domain": "advancedMath",
+    "skill": "Polynomial remainder and factors",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "The polynomial $p(x) = 2x^3 - 5x^2 + kx - 6$, where $k$ is a constant, has a remainder of $4$ when it is divided by $x - 2$. What is the value of $k$?",
+    "numeric": {
+      "answers": [
+        "7"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "By the remainder theorem, the remainder when $p(x)$ is divided by $x - 2$ equals $p(2)$. So $p(2) = 2(8) - 5(4) + 2k - 6 = 2k - 10 = 4$, which gives $k = 7$. Evaluating at $x = -2$ instead (confusing the divisor $x - 2$ with $x + 2$) leads to $-2k - 42 = 4$ and $k = -23$, which is wrong; the remainder theorem uses the value of $x$ that makes the divisor equal to zero."
+  },
+  {
+    "id": "SAT-MA-218",
+    "section": "math",
+    "test": 1,
+    "module": 2,
+    "domain": "geometryTrig",
+    "skill": "Right triangles and trigonometry",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "In right triangle $ABC$, angle $C$ is the right angle, $\\cos A = \\frac{8}{17}$, and $BC = 30$. What is the perimeter of triangle $ABC$?",
+    "numeric": {
+      "answers": [
+        "80"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "In a right triangle, $\\cos A = \\frac{AC}{AB}$, so $AC = 8k$ and $AB = 17k$ for some $k > 0$. The Pythagorean theorem gives $BC = \\sqrt{(17k)^2 - (8k)^2} = \\sqrt{225k^2} = 15k$. Since $BC = 30$, $k = 2$, so $AC = 16$, $AB = 34$, and the perimeter is $16 + 30 + 34 = 80$. Treating $30$ as the side adjacent to angle $A$ (reading the cosine as $\\frac{BC}{AB}$) leads to $k = \\frac{15}{4}$ and a perimeter of $150$, which is incorrect because $BC$ is opposite angle $A$, not adjacent to it."
+  },
+  {
+    "id": "SAT-MA-219",
+    "section": "math",
+    "test": 1,
+    "module": 2,
+    "domain": "algebra",
+    "skill": "Linear inequalities in two variables",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "The point $(a, 4)$ lies in the solution set of the system of inequalities $y \\le 3x - 2$ and $y > -\\frac{1}{2}x + 5$ in the xy-plane. Which of the following could be the value of $a$?",
+    "options": [
+      "$0$",
+      "$1$",
+      "$2$",
+      "$3$"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "Substitute $y = 4$ into each inequality. The first gives $4 \\le 3a - 2$, so $a \\ge 2$. The second gives $4 > -\\frac{1}{2}a + 5$, so $-1 > -\\frac{1}{2}a$, and multiplying by $-2$ reverses the inequality: $a > 2$. Both conditions hold only when $a > 2$, so $a = 3$ is the only choice that works. Choice C, $a = 2$, satisfies the first inequality but turns the second into $4 > 4$, which is false; the boundary line $y = -\\frac{1}{2}x + 5$ is not part of the solution set because that inequality is strict."
+  },
+  {
+    "id": "SAT-MA-220",
+    "section": "math",
+    "test": 1,
+    "module": 2,
+    "domain": "algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "In the xy-plane, a line with slope $-\\frac{1}{4}$ passes through the points $(k, 2k)$ and $(3k, k + 4)$, where $k$ is a positive constant. What is the value of $k$?",
+    "options": [
+      "$\\frac{8}{3}$",
+      "$4$",
+      "$8$",
+      "$16$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "The slope between the points is $\\frac{(k + 4) - 2k}{3k - k} = \\frac{4 - k}{2k}$. Setting this equal to $-\\frac{1}{4}$ and cross-multiplying gives $4(4 - k) = -2k$, so $16 - 4k = -2k$ and $k = 8$. The points are then $(8, 16)$ and $(24, 12)$, and $\\frac{12 - 16}{24 - 8} = -\\frac{4}{16} = -\\frac{1}{4}$ as required. Choice A comes from dropping the negative sign on the slope and solving $16 - 4k = 2k$."
+  },
+  {
+    "id": "SAT-MA-221",
+    "section": "math",
+    "test": 1,
+    "module": 2,
+    "domain": "algebra",
+    "skill": "Linear functions",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "For the linear function $f$, $f(x + 3) - f(x) = 12$ for every value of $x$, and $f(5) = 11$. What is the value of $f(-1)$?",
+    "options": [
+      "$-61$",
+      "$-13$",
+      "$-1$",
+      "$35$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "A linear function changes by a constant amount per unit of $x$. An increase of $3$ in $x$ raises $f$ by $12$, so the slope is $\\frac{12}{3} = 4$. Going from $x = 5$ to $x = -1$ is a decrease of $6$ in $x$, so $f(-1) = 11 - 6(4) = -13$. Choice A uses $12$ as the slope instead of $12 \\div 3$, and choice D adds $24$ instead of subtracting it, moving in the wrong direction along the line."
+  },
+  {
+    "id": "SAT-MA-222",
+    "section": "math",
+    "test": 1,
+    "module": 2,
+    "domain": "advancedMath",
+    "skill": "Quadratics",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "In the xy-plane, the graphs of $y = x^2 - 6x + c$ and $y = 2x - 3$ intersect at exactly one point, where $c$ is a constant. What is the value of $c$?",
+    "options": [
+      "$1$",
+      "$13$",
+      "$16$",
+      "$19$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "At an intersection the $y$-values are equal: $x^2 - 6x + c = 2x - 3$, so $x^2 - 8x + (c + 3) = 0$. Exactly one intersection means this quadratic has exactly one real solution, so its discriminant is zero: $(-8)^2 - 4(1)(c + 3) = 0$, giving $64 = 4c + 12$ and $c = 13$. Choice C solves $64 - 4c = 0$, forgetting to move the $-3$ from the line's equation to the left side before applying the discriminant; choice D subtracts $3$ instead of adding it."
+  }
+]

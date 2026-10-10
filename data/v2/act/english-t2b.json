@@ -48,15 +48,15 @@
       "stem": "[2] Which choice is best for the underlined portion?",
       "options": [
         "NO CHANGE",
-        "modest",
         "deficient",
-        "puny"
+        "puny",
+        "modest"
       ],
       "correct": [
-        1
+        3
       ],
       "lockedOrder": true,
-      "explanation": "The essay has a measured, informational tone, and the point is simply that the bees make a small amount of honey. \"Modest\" states that neutrally. \"Skimpy\" and \"puny\" are casual and faintly mocking, and \"deficient\" implies the amount falls short of some requirement, which the essay never suggests."
+      "explanation": "The essay has a measured, informational tone, and the point is simply that the bees make a small amount of honey. \"Modest\" states that neutrally. \"Skimpy\" and \"puny\" (choices A and C) are casual and faintly mocking, and \"deficient\" (choice B) implies the amount falls short of some requirement, which the essay never suggests."
     },
     {
       "id": "ACT-EN-233",
@@ -71,15 +71,15 @@
       "stem": "[3] Which choice is best for the underlined portion?",
       "options": [
         "NO CHANGE",
-        "hive, visiting",
         "hive; visiting",
-        "hive, they visiting"
+        "hive, they visiting",
+        "hive, visiting"
       ],
       "correct": [
-        1
+        3
       ],
       "lockedOrder": true,
-      "explanation": "As written, two independent clauses are joined by only a comma, which is a comma splice. Turning the second clause into the participial phrase \"visiting whatever is blooming inside that circle\" attaches it correctly to the main clause. Choice C puts a semicolon before a fragment, and choice D is not a grammatical clause at all."
+      "explanation": "As written, two independent clauses are joined by only a comma, which is a comma splice. Turning the second clause into the participial phrase \"visiting whatever is blooming inside that circle\" (choice D) attaches it correctly to the main clause. Choice B puts a semicolon before a fragment, and choice C is not a grammatical clause at all."
     },
     {
       "id": "ACT-EN-234",
@@ -117,15 +117,15 @@
       "stem": "[5] Which choice is best for the underlined portion?",
       "options": [
         "NO CHANGE",
-        "courthouse's",
         "courthouses'",
-        "courthouse's,"
+        "courthouse's,",
+        "courthouse's"
       ],
       "correct": [
-        1
+        3
       ],
       "lockedOrder": true,
-      "explanation": "The front walk belongs to one courthouse, so the singular possessive \"courthouse's\" is needed. The original has no apostrophe and reads as a plural noun, and choice C is the plural possessive, which would mean several courthouses. Choice D adds a comma that separates the possessive from the noun it modifies."
+      "explanation": "The front walk belongs to one courthouse, so the singular possessive \"courthouse's\" is needed. The original has no apostrophe and reads as a plural noun, and choice B is the plural possessive, which would mean several courthouses. Choice C has the right form but adds a comma that separates the possessive from the noun it modifies."
     },
     {
       "id": "ACT-EN-236",
@@ -163,15 +163,15 @@
       "stem": "[7] Which choice is best for the underlined portion?",
       "options": [
         "NO CHANGE",
-        "which lots to convert",
         "converting which lots",
-        "the lots they convert"
+        "the lots they convert",
+        "which lots to convert"
       ],
       "correct": [
-        1
+        3
       ],
       "lockedOrder": true,
-      "explanation": "The planners are deciding two things, and the first is phrased as \"where to plant street trees,\" so the second should match that question-word-plus-infinitive form: \"which lots to convert.\" The original switches to a full clause with its own subject and verb, breaking the parallel. Choices C and D are not parallel either and are awkward after \"deciding.\""
+      "explanation": "The planners are deciding two things, and the first is phrased as \"where to plant street trees,\" so the second should match that question-word-plus-infinitive form: \"which lots to convert.\" The original switches to a full clause with its own subject and verb, breaking the parallel. Choices B and C are not parallel either and are awkward after \"deciding.\""
     },
     {
       "id": "ACT-EN-238",
@@ -255,15 +255,15 @@
       "stem": "[1] Which choice is best for the underlined portion?",
       "options": [
         "NO CHANGE",
-        "directed",
         "am directing",
+        "directed",
         "will direct"
       ],
       "correct": [
-        1
+        2
       ],
       "lockedOrder": true,
-      "explanation": "The essay describes a past summer, and the other verbs in the series (\"picked up,\" \"needed\") are in the simple past, so \"directed\" is correct. The present perfect \"have directed\" and the present progressive \"am directing\" shift to the present, and \"will direct\" points to the future."
+      "explanation": "The essay describes a past summer, and the other verbs in the series (\"picked up,\" \"needed\") are in the simple past, so \"directed\" is correct. The present perfect \"have directed\" and the present progressive \"am directing\" (choices A and B) shift to the present, and \"will direct\" (choice D) points to the future."
     },
     {
       "id": "ACT-EN-242",
@@ -278,15 +278,15 @@
       "stem": "[2] Which choice is best for the underlined portion?",
       "options": [
         "NO CHANGE",
-        "handled",
         "was in charge of taking care of",
-        "got around to"
+        "got around to",
+        "handled"
       ],
       "correct": [
-        1
+        3
       ],
       "lockedOrder": true,
-      "explanation": "The essay has a plain, conversational voice, and the sentence is a quick list of duties, so the simple verb \"handled\" fits. \"Attended to the resolution of\" is stiff and wordy, choice C is also needlessly long, and \"got around to\" suggests the narrator put the tasks off, which is not the point."
+      "explanation": "The essay has a plain, conversational voice, and the sentence is a quick list of duties, so the simple verb \"handled\" fits. \"Attended to the resolution of\" is stiff and wordy, choice B is also needlessly long, and \"got around to\" (choice C) suggests the narrator put the tasks off, which is not the point."
     },
     {
       "id": "ACT-EN-243",
@@ -370,15 +370,15 @@
       "stem": "[6] Which choice is best for the underlined portion?",
       "options": [
         "NO CHANGE",
-        "whoever",
         "whom",
-        "who ever"
+        "who ever",
+        "whoever"
       ],
       "correct": [
-        1
+        3
       ],
       "lockedOrder": true,
-      "explanation": "The pronoun is the subject of the verb \"asked\" in the clause \"whoever asked,\" so the subject form \"whoever\" is correct even though the whole clause follows the preposition \"for.\" \"Whomever\" and \"whom\" are object forms and cannot be the subject of \"asked.\" \"Who ever\" written as two words is not the pronoun needed here."
+      "explanation": "The pronoun is the subject of the verb \"asked\" in the clause \"whoever asked,\" so the subject form \"whoever\" is correct even though the whole clause follows the preposition \"for.\" \"Whomever\" and \"whom\" (choices A and B) are object forms and cannot be the subject of \"asked.\" \"Who ever\" written as two words (choice C) is not the pronoun needed here."
     },
     {
       "id": "ACT-EN-247",
@@ -439,15 +439,15 @@
       "stem": "[9] Which choice is best for the underlined portion?",
       "options": [
         "NO CHANGE",
-        "bitter.",
         "mad as a hornet.",
+        "bitter.",
         "aggrieved to a significant degree."
       ],
       "correct": [
-        1
+        2
       ],
       "lockedOrder": true,
-      "explanation": "Mr. Okafor is describing the loss of thousands of drive-ins, and the next sentence says he sounded \"like a man describing weather,\" calm and matter-of-fact. \"Bitter\" is the precise word for the resentment he did not show. \"Bummed out\" and \"mad as a hornet\" are slang that clashes with the reflective tone, and \"aggrieved to a significant degree\" is stiff and wordy."
+      "explanation": "Mr. Okafor is describing the loss of thousands of drive-ins, and the next sentence says he sounded \"like a man describing weather,\" calm and matter-of-fact. \"Bitter\" is the precise word for the resentment he did not show. \"Bummed out\" and \"mad as a hornet\" (choices A and B) are slang that clashes with the reflective tone, and \"aggrieved to a significant degree\" (choice D) is stiff and wordy."
     },
     {
       "id": "ACT-EN-250",

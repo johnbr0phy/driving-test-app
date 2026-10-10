@@ -16,12 +16,16 @@ import {
 } from "@/lib/testCatalog";
 import { TestIcon } from "@/components/TestIcon";
 import { hasTigerSet } from "@/lib/tigerAssets";
+import { useStartedTests } from "@/hooks/useStartedTests";
+
+const SEEN_KEY = "tigertest-seen-all-tests";
 
 /**
  * Header menu for moving between the site's practice tests. Lives in both
  * the DMV header and the exam headers. A search box filters a compact,
  * grouped list; items link to each test's landing page (the SEO page),
- * with the current test pinned at the top. Enter opens the first match.
+ * with the current test pinned at the top. Tests already in progress link to
+ * their dashboard instead. Enter opens the first match.
  */
 export function TestSwitcher({ className = "" }: { className?: string }) {
   const pathname = usePathname();
@@ -30,6 +34,17 @@ export function TestSwitcher({ className = "" }: { className?: string }) {
   const [query, setQuery] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
   const current = getCatalogEntryByPath(pathname);
+  const hasStarted = useStartedTests();
+  const hrefFor = (t: TestCatalogEntry) => (hasStarted(t.id) ? t.dashboardHref : t.href);
+  // "New" badge until the menu is opened once. Read after mount so the
+  // server render (no badge) matches the first client render.
+  const [showNew, setShowNew] = useState(false);
+
+  useEffect(() => {
+    try {
+      if (!localStorage.getItem(SEEN_KEY)) setShowNew(true);
+    } catch {}
+  }, []);
 
   const groups = useMemo(() => searchTestGroups(query), [query]);
   const first = groups[0]?.tests[0];
@@ -37,7 +52,13 @@ export function TestSwitcher({ className = "" }: { className?: string }) {
 
   useEffect(() => {
     if (!open) setQuery("");
-  }, [open]);
+    if (open && showNew) {
+      setShowNew(false);
+      try {
+        localStorage.setItem(SEEN_KEY, "1");
+      } catch {}
+    }
+  }, [open, showNew]);
 
   const close = () => setOpen(false);
 
@@ -45,7 +66,7 @@ export function TestSwitcher({ className = "" }: { className?: string }) {
     <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger
         aria-label={`Switch practice test, currently ${current.shortName}`}
-        className={`flex items-center gap-1.5 rounded-full bg-gray-100 px-2.5 py-1.5 text-sm text-gray-700 transition-colors hover:bg-gray-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-1 ${className}`}
+        className={`relative flex items-center gap-1.5 rounded-full bg-gray-100 px-2.5 py-1.5 text-sm text-gray-700 transition-colors hover:bg-gray-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-1 ${className}`}
       >
         <LayoutGrid className="h-4 w-4 text-gray-500" aria-hidden="true" />
         <span className="hidden sm:inline font-medium">All tests</span>
@@ -53,6 +74,11 @@ export function TestSwitcher({ className = "" }: { className?: string }) {
           className={`h-3.5 w-3.5 text-gray-500 transition-transform ${open ? "rotate-180" : ""}`}
           aria-hidden="true"
         />
+        {showNew && (
+          <span className="pointer-events-none absolute -right-2 -top-2 flex h-6 w-6 items-center justify-center rounded-full bg-red-600 text-[8px] font-bold uppercase leading-none tracking-tight text-white shadow-sm ring-2 ring-white">
+            New
+          </span>
+        )}
       </PopoverTrigger>
 
       <PopoverContent
@@ -83,7 +109,7 @@ export function TestSwitcher({ className = "" }: { className?: string }) {
                 if (e.key === "Enter" && first) {
                   e.preventDefault();
                   close();
-                  router.push(first.href);
+                  router.push(hrefFor(first));
                 }
               }}
               placeholder="Search tests"
@@ -109,7 +135,13 @@ export function TestSwitcher({ className = "" }: { className?: string }) {
           <div className="max-h-[min(60vh,26rem,calc(var(--radix-popover-content-available-height)_-_6.5rem))] overflow-y-auto overscroll-contain p-1.5">
             {!searching && (
               <div className="mb-1 border-b border-gray-100 pb-1.5">
-                <SwitcherItem test={current} isActive onSelect={close} />
+                <SwitcherItem
+                  test={current}
+                  href={hrefFor(current)}
+                  started={hasStarted(current.id)}
+                  isActive
+                  onSelect={close}
+                />
               </div>
             )}
 
@@ -129,6 +161,8 @@ export function TestSwitcher({ className = "" }: { className?: string }) {
                     <li key={t.id}>
                       <SwitcherItem
                         test={t}
+                        href={hrefFor(t)}
+                        started={hasStarted(t.id)}
                         isActive={!searching && t.id === current.id}
                         onSelect={close}
                       />
@@ -154,17 +188,21 @@ export function TestSwitcher({ className = "" }: { className?: string }) {
 
 function SwitcherItem({
   test,
+  href,
+  started,
   isActive,
   onSelect,
 }: {
   test: TestCatalogEntry;
+  href: string;
+  started: boolean;
   isActive: boolean;
   onSelect: () => void;
 }) {
   return (
     <div data-theme={test.theme}>
       <Link
-        href={test.href}
+        href={href}
         onClick={onSelect}
         aria-current={isActive ? "page" : undefined}
         className={`flex items-center gap-2.5 rounded-lg px-2.5 py-1.5 transition-colors hover:bg-gray-100 ${
@@ -178,8 +216,8 @@ function SwitcherItem({
           <span className="block truncate text-sm font-medium text-gray-900">
             {test.shortName}
           </span>
-          <span className="block truncate text-[11px] text-gray-500">
-            {test.org}
+          <span className={`block truncate text-[11px] ${started ? "font-medium text-brand" : "text-gray-500"}`}>
+            {started ? "In progress" : test.org}
           </span>
         </span>
         {isActive && (

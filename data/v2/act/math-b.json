@@ -1,0 +1,501 @@
+{
+  "stimuli": [],
+  "questions": [
+    {
+      "id": "ACT-MA-124",
+      "section": "math",
+      "test": 1,
+      "module": 1,
+      "domain": "algebra",
+      "skill": "Factoring quadratics",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Which of the following is a factor of the polynomial $x^2 - 5x - 24$?",
+      "options": [
+        "$x + 8$",
+        "$x - 8$",
+        "$x - 3$",
+        "$x + 6$"
+      ],
+      "correct": [
+        1
+      ],
+      "calculator": true,
+      "explanation": "To factor $x^2 - 5x - 24$, look for two numbers whose product is $-24$ and whose sum is $-5$. The pair $-8$ and $3$ works, so $x^2 - 5x - 24 = (x - 8)(x + 3)$, and $x - 8$ is a factor. Choice A has the wrong sign: $(x + 8)(x - 3)$ expands to $x^2 + 5x - 24$, which has the opposite middle term."
+    },
+    {
+      "id": "ACT-MA-125",
+      "section": "math",
+      "test": 1,
+      "module": 1,
+      "domain": "modeling",
+      "skill": "Exponential growth",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A bacteria culture starts with 500 cells, and the population doubles every 3 hours. If the population keeps doubling at this rate, how many cells will be in the culture after 12 hours?",
+      "options": [
+        "2,000",
+        "4,000",
+        "8,000",
+        "16,000"
+      ],
+      "correct": [
+        2
+      ],
+      "calculator": true,
+      "explanation": "In 12 hours there are $12 \\div 3 = 4$ doubling periods, so the population is multiplied by $2^4 = 16$: $500 \\times 16 = 8{,}000$ cells. Choice A multiplies 500 by 4 instead of by $2^4$, treating four doublings as a single factor of 4. Choice D uses five doublings, which would take 15 hours."
+    },
+    {
+      "id": "ACT-MA-126",
+      "section": "math",
+      "test": 1,
+      "module": 1,
+      "domain": "geometry",
+      "skill": "Area of a trapezoid",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "In trapezoid $ABCD$ shown below, $\\overline{AB}$ is parallel to $\\overline{DC}$, $AB = 14$, $DC = 8$, and the height of the trapezoid is 6. What is the area, in square units, of the trapezoid?",
+      "options": [
+        "48",
+        "66",
+        "84",
+        "132"
+      ],
+      "correct": [
+        1
+      ],
+      "figure": {
+        "src": "/figures/act/act-ma-126.svg",
+        "alt": "Trapezoid ABCD with the longer base AB on the bottom labeled 14, the shorter top base DC labeled 8, and a dashed height from D to AB labeled 6 with a right-angle mark."
+      },
+      "calculator": true,
+      "explanation": "The area of a trapezoid is half the sum of the parallel sides times the height: $\\frac{1}{2}(14 + 8)(6) = \\frac{1}{2}(22)(6) = 66$. Choice D forgets to take half of the sum of the bases, and choice C uses only the longer base as if the figure were a rectangle, $14 \\times 6 = 84$."
+    },
+    {
+      "id": "ACT-MA-127",
+      "section": "math",
+      "test": 1,
+      "module": 1,
+      "domain": "algebra",
+      "skill": "Function transformations",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "In the standard $(x, y)$ coordinate plane, the graph of $y = x^2$ is translated 3 units to the right and 2 units up. Which of the following is an equation of the translated graph?",
+      "options": [
+        "$y = (x + 3)^2 + 2$",
+        "$y = (x - 3)^2 + 2$",
+        "$y = (x - 3)^2 - 2$",
+        "$y = (x + 2)^2 + 3$"
+      ],
+      "correct": [
+        1
+      ],
+      "calculator": true,
+      "explanation": "A translation of $h$ units to the right replaces $x$ with $x - h$, and a translation of $k$ units up adds $k$ to the output, so the new equation is $y = (x - 3)^2 + 2$. Choice A moves the graph 3 units to the left; the sign inside the parentheses is the opposite of the direction of the horizontal shift. Choice C shifts the graph down rather than up."
+    },
+    {
+      "id": "ACT-MA-128",
+      "section": "math",
+      "test": 1,
+      "module": 1,
+      "domain": "geometry",
+      "skill": "Equation of a circle",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "In the standard $(x, y)$ coordinate plane, a circle has the equation $x^2 + y^2 - 6x + 4y - 12 = 0$. What is the radius of the circle?",
+      "options": [
+        "$\\sqrt{12}$",
+        "5",
+        "13",
+        "25"
+      ],
+      "correct": [
+        1
+      ],
+      "calculator": true,
+      "explanation": "Complete the square in each variable: $(x^2 - 6x + 9) + (y^2 + 4y + 4) = 12 + 9 + 4$, which gives $(x - 3)^2 + (y + 2)^2 = 25$. The right side is $r^2$, so the radius is $\\sqrt{25} = 5$. Choice D is $r^2$ rather than $r$, and choice A takes the square root of the constant 12 without completing the squares first."
+    },
+    {
+      "id": "ACT-MA-129",
+      "section": "math",
+      "test": 1,
+      "module": 1,
+      "domain": "modeling",
+      "skill": "Multi-step rate problem",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A plumber charges a \\$75 service fee plus \\$40 for each half hour of labor, and any part of a half hour is charged as a full half hour. What is the total charge for a job that takes 2 hours and 10 minutes?",
+      "options": [
+        "\\$235",
+        "\\$255",
+        "\\$275",
+        "\\$315"
+      ],
+      "correct": [
+        2
+      ],
+      "calculator": true,
+      "explanation": "Two hours and 10 minutes is 130 minutes, which is 4 full half hours plus 10 extra minutes. The extra 10 minutes counts as a fifth half hour, so labor costs $5 \\times \\$40 = \\$200$ and the total is $\\$75 + \\$200 = \\$275$. Choice A charges for only 4 half hours, ignoring the rounding-up rule, and choice D charges for 6 half hours, a full 3 hours of labor."
+    },
+    {
+      "id": "ACT-MA-130",
+      "section": "math",
+      "test": 1,
+      "module": 1,
+      "domain": "geometry",
+      "skill": "Right triangle trigonometry",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "In right triangle $ABC$ shown below, angle $C$ is a right angle, the measure of angle $A$ is $35^\\circ$, and $AB = 20$. Which of the following expressions gives the length $x$ of $\\overline{BC}$?",
+      "options": [
+        "$20\\sin 35^\\circ$",
+        "$20\\cos 35^\\circ$",
+        "$20\\tan 35^\\circ$",
+        "$\\dfrac{20}{\\sin 35^\\circ}$"
+      ],
+      "correct": [
+        0
+      ],
+      "figure": {
+        "src": "/figures/act/act-ma-130.svg",
+        "alt": "Right triangle ABC with the right angle at C in the lower right. Vertex A is at the lower left with an angle of 35 degrees. The hypotenuse AB is labeled 20 and the vertical side BC is labeled x."
+      },
+      "calculator": true,
+      "explanation": "Side $BC$ is opposite angle $A$, and $AB$ is the hypotenuse, so $\\sin 35^\\circ = \\dfrac{BC}{AB} = \\dfrac{x}{20}$. Solving gives $x = 20\\sin 35^\\circ$, which is about 11.5. Choice B gives the adjacent side $AC$, since cosine relates the adjacent side to the hypotenuse. Choice C would apply if 20 were the adjacent side rather than the hypotenuse."
+    },
+    {
+      "id": "ACT-MA-131",
+      "section": "math",
+      "test": 1,
+      "module": 1,
+      "domain": "algebra",
+      "skill": "Arithmetic sequences",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "In an arithmetic sequence, the 3rd term is 11 and the 7th term is 27. What is the 20th term of the sequence?",
+      "options": [
+        "75",
+        "79",
+        "80",
+        "83"
+      ],
+      "correct": [
+        1
+      ],
+      "calculator": true,
+      "explanation": "From the 3rd term to the 7th term is 4 steps, so the common difference is $d = \\dfrac{27 - 11}{4} = 4$. The first term is $11 - 2(4) = 3$, and the 20th term is $3 + 19(4) = 79$. Choice D adds 20 copies of the common difference to the first term instead of 19; the $n$th term is $a_1 + (n - 1)d$."
+    },
+    {
+      "id": "ACT-MA-132",
+      "section": "math",
+      "test": 1,
+      "module": 1,
+      "domain": "geometry",
+      "skill": "Probability without replacement",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A bag contains 4 red marbles and 6 blue marbles. Two marbles are drawn at random, one at a time, without replacement. What is the probability that both marbles drawn are red?",
+      "options": [
+        "$\\dfrac{2}{15}$",
+        "$\\dfrac{4}{25}$",
+        "$\\dfrac{1}{5}$",
+        "$\\dfrac{2}{5}$"
+      ],
+      "correct": [
+        0
+      ],
+      "calculator": true,
+      "explanation": "The probability that the first marble is red is $\\dfrac{4}{10}$. After one red marble is removed, 3 red marbles remain among 9, so the probability that the second is also red is $\\dfrac{3}{9}$. Multiplying gives $\\dfrac{4}{10} \\cdot \\dfrac{3}{9} = \\dfrac{12}{90} = \\dfrac{2}{15}$. Choice B, $\\dfrac{4}{10} \\cdot \\dfrac{4}{10}$, is the probability with replacement."
+    },
+    {
+      "id": "ACT-MA-133",
+      "section": "math",
+      "test": 1,
+      "module": 1,
+      "domain": "algebra",
+      "skill": "Logarithmic equations",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "If $\\log_2 x + \\log_2 (x - 6) = 4$, what is the value of $x$?",
+      "options": [
+        "2",
+        "8",
+        "11",
+        "22"
+      ],
+      "correct": [
+        1
+      ],
+      "calculator": true,
+      "explanation": "The sum of two logarithms with the same base is the logarithm of the product, so $\\log_2 [x(x - 6)] = 4$ and $x(x - 6) = 2^4 = 16$. Then $x^2 - 6x - 16 = 0$, which factors as $(x - 8)(x + 2) = 0$. The solution $x = -2$ is rejected because $\\log_2 (-2)$ is undefined, leaving $x = 8$. Choice C comes from adding the arguments instead of multiplying them: $x + (x - 6) = 16$ gives $x = 11$."
+    },
+    {
+      "id": "ACT-MA-134",
+      "section": "math",
+      "test": 1,
+      "module": 1,
+      "domain": "algebra",
+      "skill": "Quadratic functions and their graphs",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The graph of $y = f(x)$ shown below is a parabola with $x$-intercepts at $(-1, 0)$ and $(5, 0)$ and $y$-intercept at $(0, 5)$. What is the maximum value of $f(x)$?",
+      "options": [
+        "5",
+        "8",
+        "9",
+        "10"
+      ],
+      "correct": [
+        2
+      ],
+      "figure": {
+        "src": "/figures/act/act-ma-134.svg",
+        "alt": "Graph in the xy-plane of a downward-opening parabola labeled y = f(x) with x-intercepts at (-1, 0) and (5, 0) and y-intercept at (0, 5). The vertex is at x = 2 and lies above the point (0, 5)."
+      },
+      "calculator": true,
+      "explanation": "Because the zeros are $-1$ and $5$, the function can be written $f(x) = a(x + 1)(x - 5)$. Using the $y$-intercept, $f(0) = a(1)(-5) = 5$ gives $a = -1$, so $f(x) = -(x + 1)(x - 5)$. The maximum occurs at the axis of symmetry, halfway between the zeros at $x = 2$, where $f(2) = -(3)(-3) = 9$. Choice A is the $y$-intercept, not the vertex, and choice D results from using $a = 1$ and ignoring the sign."
+    },
+    {
+      "id": "ACT-MA-135",
+      "section": "math",
+      "test": 1,
+      "module": 1,
+      "domain": "modeling",
+      "skill": "Percent markup and discount",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A store buys a jacket at a wholesale price and marks the price up by 60%. During a sale, the marked-up price is discounted by 25%, and the jacket sells for \\$96. What was the wholesale price of the jacket?",
+      "options": [
+        "\\$64",
+        "\\$76.80",
+        "\\$80",
+        "\\$120"
+      ],
+      "correct": [
+        2
+      ],
+      "calculator": true,
+      "explanation": "If the wholesale price is $w$, the marked-up price is $1.6w$ and the sale price is $0.75(1.6w) = 1.2w$. Setting $1.2w = 96$ gives $w = 80$. Choice D divides by $0.8$, as if only the 25% discount had been applied in reverse with a 20% markup, and choice B takes 80% of 96 instead of dividing by the combined factor."
+    },
+    {
+      "id": "ACT-MA-136",
+      "section": "math",
+      "test": 1,
+      "module": 1,
+      "domain": "algebra",
+      "skill": "Trigonometric values on the unit circle",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "If $\\sin \\theta = \\dfrac{4}{5}$ and $\\dfrac{\\pi}{2} < \\theta < \\pi$, what is the value of $\\cos \\theta$?",
+      "options": [
+        "$-\\dfrac{4}{5}$",
+        "$-\\dfrac{3}{5}$",
+        "$\\dfrac{3}{5}$",
+        "$\\dfrac{3}{4}$"
+      ],
+      "correct": [
+        1
+      ],
+      "calculator": true,
+      "explanation": "From $\\sin^2 \\theta + \\cos^2 \\theta = 1$, $\\cos^2 \\theta = 1 - \\dfrac{16}{25} = \\dfrac{9}{25}$, so $\\cos \\theta = \\pm \\dfrac{3}{5}$. The angle is in Quadrant II, where cosine is negative, so $\\cos \\theta = -\\dfrac{3}{5}$. Choice C has the right magnitude but the wrong sign for Quadrant II, and choice D is $\\tan \\theta$ without its sign."
+    },
+    {
+      "id": "ACT-MA-137",
+      "section": "math",
+      "test": 1,
+      "module": 1,
+      "domain": "algebra",
+      "skill": "Complex numbers",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "For $i = \\sqrt{-1}$, what is the value of $\\dfrac{3 + 2i}{1 - i}$?",
+      "options": [
+        "$\\dfrac{1}{2} + \\dfrac{5}{2}i$",
+        "$1 + 5i$",
+        "$\\dfrac{5}{2} + \\dfrac{1}{2}i$",
+        "$\\dfrac{1}{2} - \\dfrac{5}{2}i$"
+      ],
+      "correct": [
+        0
+      ],
+      "calculator": true,
+      "explanation": "Multiply the numerator and denominator by the conjugate $1 + i$. The numerator becomes $(3 + 2i)(1 + i) = 3 + 3i + 2i + 2i^2 = 1 + 5i$, and the denominator becomes $(1 - i)(1 + i) = 1 - i^2 = 2$. The quotient is $\\dfrac{1 + 5i}{2} = \\dfrac{1}{2} + \\dfrac{5}{2}i$. Choice B is the numerator product without dividing by 2."
+    },
+    {
+      "id": "ACT-MA-138",
+      "section": "math",
+      "test": 1,
+      "module": 1,
+      "domain": "geometry",
+      "skill": "Law of cosines",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "In triangle $PQR$, $PQ = 7$, $QR = 9$, and the measure of angle $Q$ is $60^\\circ$. What is the length of $\\overline{PR}$?",
+      "options": [
+        "$\\sqrt{67}$",
+        "8",
+        "$\\sqrt{130}$",
+        "$\\sqrt{193}$"
+      ],
+      "correct": [
+        0
+      ],
+      "calculator": true,
+      "explanation": "Angle $Q$ is included between the known sides, so use the law of cosines: $PR^2 = 7^2 + 9^2 - 2(7)(9)\\cos 60^\\circ = 49 + 81 - 126 \\cdot \\dfrac{1}{2} = 130 - 63 = 67$, so $PR = \\sqrt{67}$, about 8.2. Choice C omits the cosine term, which would only be correct for a right angle at $Q$, and choice D adds $63$ instead of subtracting it."
+    },
+    {
+      "id": "ACT-MA-139",
+      "section": "math",
+      "test": 1,
+      "module": 1,
+      "domain": "modeling",
+      "skill": "Combined rates",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "An inlet pipe can fill an empty tank in 6 hours. A drain at the bottom of the tank can empty the full tank in 9 hours. If the tank starts empty and both the inlet pipe and the drain are open, how many hours will it take to fill the tank?",
+      "options": [
+        "3.6",
+        "7.5",
+        "15",
+        "18"
+      ],
+      "correct": [
+        3
+      ],
+      "calculator": true,
+      "explanation": "The inlet fills $\\dfrac{1}{6}$ of the tank per hour while the drain removes $\\dfrac{1}{9}$ per hour, so the net rate is $\\dfrac{1}{6} - \\dfrac{1}{9} = \\dfrac{3}{18} - \\dfrac{2}{18} = \\dfrac{1}{18}$ of the tank per hour. Filling the whole tank at that rate takes 18 hours. Choice A adds the rates, as if the drain were a second inlet pipe, and choice C simply adds the two times."
+    },
+    {
+      "id": "ACT-MA-140",
+      "section": "math",
+      "test": 1,
+      "module": 1,
+      "domain": "algebra",
+      "skill": "Matrix multiplication",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Let $A = \\begin{pmatrix} 1 & 2 \\\\ 3 & -1 \\end{pmatrix}$ and $B = \\begin{pmatrix} 4 & 0 \\\\ -2 & 5 \\end{pmatrix}$. What is the entry in the second row and first column of the matrix product $AB$?",
+      "options": [
+        "$-5$",
+        "10",
+        "12",
+        "14"
+      ],
+      "correct": [
+        3
+      ],
+      "calculator": true,
+      "explanation": "The entry in row 2, column 1 of $AB$ is the dot product of row 2 of $A$ with column 1 of $B$: $(3)(4) + (-1)(-2) = 12 + 2 = 14$. Choice C drops the second product, and choice B, $(1)(0) + (2)(5) = 10$, is the entry in row 1, column 2. The full product is $\\begin{pmatrix} 0 & 10 \\\\ 14 & -5 \\end{pmatrix}$."
+    },
+    {
+      "id": "ACT-MA-141",
+      "section": "math",
+      "test": 1,
+      "module": 1,
+      "domain": "geometry",
+      "skill": "Probability with combinations",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "A committee of 3 students is to be chosen at random from a group of 5 seniors and 4 juniors. What is the probability that the committee will consist of exactly 2 seniors and 1 junior?",
+      "options": [
+        "$\\dfrac{5}{21}$",
+        "$\\dfrac{10}{21}$",
+        "$\\dfrac{10}{63}$",
+        "$\\dfrac{2}{3}$"
+      ],
+      "correct": [
+        1
+      ],
+      "calculator": true,
+      "explanation": "There are $\\binom{9}{3} = 84$ equally likely committees. The number with exactly 2 seniors and 1 junior is $\\binom{5}{2} \\cdot \\binom{4}{1} = 10 \\cdot 4 = 40$, so the probability is $\\dfrac{40}{84} = \\dfrac{10}{21}$. Choice C, $\\dfrac{5}{9} \\cdot \\dfrac{4}{8} \\cdot \\dfrac{4}{7}$, counts only one order of drawing senior, senior, junior; the three possible orders must be added. Choice A forgets to count which junior is chosen."
+    },
+    {
+      "id": "ACT-MA-142",
+      "section": "math",
+      "test": 1,
+      "module": 1,
+      "domain": "algebra",
+      "skill": "Geometric sequences and series",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "In a geometric sequence, the 2nd term is 6 and the 5th term is 48. What is the sum of the first 8 terms of the sequence?",
+      "options": [
+        "381",
+        "384",
+        "765",
+        "768"
+      ],
+      "correct": [
+        2
+      ],
+      "calculator": true,
+      "explanation": "From the 2nd term to the 5th is 3 multiplications by the common ratio $r$, so $6r^3 = 48$, $r^3 = 8$, and $r = 2$. The first term is $6 \\div 2 = 3$. The sum of the first 8 terms is $\\dfrac{a_1(r^8 - 1)}{r - 1} = \\dfrac{3(256 - 1)}{1} = 765$. Choice B is the 8th term itself, $3 \\cdot 2^7 = 384$, and choice A is the sum of only the first 7 terms."
+    },
+    {
+      "id": "ACT-MA-143",
+      "section": "math",
+      "test": 1,
+      "module": 1,
+      "domain": "modeling",
+      "skill": "Optimizing with a quadratic model",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "A gardener has 100 feet of fencing to enclose a rectangular garden against the straight wall of a barn. The barn wall forms one side of the rectangle, so fencing is needed on only the other three sides. What is the maximum possible area, in square feet, of the garden?",
+      "options": [
+        "625",
+        "1,225",
+        "1,250",
+        "2,500"
+      ],
+      "correct": [
+        2
+      ],
+      "calculator": true,
+      "explanation": "Let $w$ be the length of each side perpendicular to the barn. The side parallel to the barn is then $100 - 2w$, and the area is $A = w(100 - 2w) = -2w^2 + 100w$. This parabola opens downward with vertex at $w = \\dfrac{-100}{2(-2)} = 25$, so the maximum area is $25(100 - 50) = 1{,}250$ square feet. Choice A is the largest area if all four sides needed fencing (a 25-by-25 square), and choice D treats the side along the barn as 50 feet without subtracting it from the fencing total."
+    },
+    {
+      "id": "ACT-MA-144",
+      "section": "math",
+      "test": 1,
+      "module": 1,
+      "domain": "geometry",
+      "skill": "Area of a circular segment",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "A chord of a circle with radius 6 subtends a central angle of $90^\\circ$. What is the area of the smaller region bounded by the chord and the arc it cuts off?",
+      "options": [
+        "$9\\pi - 18$",
+        "$9\\pi - 36$",
+        "$18\\pi - 18$",
+        "$36\\pi - 18$"
+      ],
+      "correct": [
+        0
+      ],
+      "calculator": true,
+      "explanation": "The region is a sector minus a triangle. The sector with central angle $90^\\circ$ has area $\\dfrac{90}{360} \\cdot \\pi(6)^2 = 9\\pi$. The triangle formed by the two radii and the chord is a right triangle with legs 6 and 6, so its area is $\\dfrac{1}{2}(6)(6) = 18$. The segment therefore has area $9\\pi - 18$, about 10.3. Choice D uses the area of the whole circle instead of the quarter sector, and choice B doubles the triangle's area."
+    },
+    {
+      "id": "ACT-MA-145",
+      "section": "math",
+      "test": 1,
+      "module": 1,
+      "domain": "modeling",
+      "skill": "Mixture problem",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "A chemist has 40 milliliters of a solution that is 15% acid. How many milliliters of a solution that is 60% acid must be added to produce a solution that is 45% acid?",
+      "options": [
+        "40",
+        "60",
+        "80",
+        "100"
+      ],
+      "correct": [
+        2
+      ],
+      "calculator": true,
+      "explanation": "Let $x$ be the number of milliliters of 60% solution added. The acid in the mixture is $0.15(40) + 0.60x$, and this must equal 45% of the total volume: $6 + 0.6x = 0.45(40 + x) = 18 + 0.45x$. Then $0.15x = 12$ and $x = 80$. Choice A sets the mixture volumes equal, but equal amounts would give a strength halfway between 15% and 60%, which is 37.5%, not 45%."
+    }
+  ]
+}

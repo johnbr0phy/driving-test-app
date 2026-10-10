@@ -1,0 +1,476 @@
+{
+  "stimuli": [
+    {
+      "id": "ACT-EN-P4",
+      "title": "Passage IV",
+      "text": "When the city council of Brightwater voted to fund a bike-share program in __2019, skeptics predicted that__ [1] the bright green bicycles would sit unused at their docking stations. Brightwater was not a dense metropolis with a subway to feed riders into the system. It was a city of about 180,000 people spread across low hills, __its downtown had been built around the automobile.__ [2] Within two years, however, the program was recording more than 40,000 rides a month.\n\nThe planners' first decision turned out to be the most important one. Rather than scattering a few stations across the whole city, __they placed them close together and near each other__ [3] in a compact zone that included the university, the riverfront, and the two largest employers. A rider who stepped out of any building in that zone could see a station from the door. __Because the stations were clustered so tightly, a bicycle was never more than a short walk away.__ [4] Only after the core zone proved itself did the city extend the network outward, one neighborhood at a time.\n\nPricing mattered as well. A single ride cost two dollars, but __an annual pass priced at sixty dollars, cost__ [5] less than a monthly bus pass in many cities. Students received the pass at half price, and the university later folded the fee into __it's__ [6] activity charge so that every enrolled student had access to the bicycles.\n\nThe program also __proved to be popular with visiting tourists.__ [7] Once thousands of residents were riding every day, requests for protected bike lanes stopped sounding like a special interest and began to sound like basic maintenance. The council approved three new lanes along the busiest station corridors, and __ridership on those routes, rose__ [8] by a third within a year.\n\nBrightwater's experience __insinuates__ [9] that a bike-share program does not need a big city in order to succeed. It needs stations people can reach, prices people can afford, and streets people are willing to ride on. __Nevertheless,__ [10] several other mid-sized cities have begun to study Brightwater's model."
+    },
+    {
+      "id": "ACT-EN-P5",
+      "title": "Passage V",
+      "text": "My grandmother's upright piano arrived at my apartment on a rainy Tuesday, strapped to a dolly and wrapped in moving blankets. For sixty years it __stands__ [1] against the same wall in her living room, where she played hymns on Sunday mornings and show tunes whenever company came over. After she moved to an assisted-living residence, nobody else in the family had room for the piano, so I said I would take it. I did not know how to play. I also did not know how __busted__ [2] the piano had become.\n\nWhen the movers peeled back the blankets, I saw what sixty years had done. The walnut veneer had lifted at the corners, two of the key tops were missing, and when I pressed middle C, the note hung in the air long after I let go, __a sign, I later learned, that__ [3] the damper felt had worn away. A technician who came to look at it quoted a price for a full restoration that was higher than what I had paid for my car. __I thanked him and asked him to begin the following week.__ [4]\n\nThen I started reading. Piano repair, it turns out, is a hobby with a large and generous community online. Retired technicians post videos in which they __spill the beans on__ [5] how to replace key tops, regulate the action, and reglue loose veneer. I ordered three __things, a set__ [6] of replacement key tops, a bottle of hide glue, and a roll of damper felt. From then on, I worked on the piano one evening a week.\n\nThe work was slower than any video made it look. Removing the action, the heavy frame of hammers and levers that sits behind the keys, took an entire Saturday. Reinstalling it took most of a Sunday. __Each of the eighty-eight keys were__ [7] weighed and leveled individually. By the end of the winter, though, the piano had a smooth, even touch, and the veneer lay flat under a fresh coat of oil.\n\nI still cannot play more than a few chords. When my grandmother visited that spring, __freshly restored, she sat down at the piano__ [8] without a word and played the first hymn she had learned as a girl. She paused after the final chord, pressed middle C, and listened as the note faded cleanly away. __\"That's better,\" she said, and__ [9] then she played another."
+    }
+  ],
+  "questions": [
+    {
+      "id": "ACT-EN-131",
+      "section": "english",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-EN-P4",
+      "domain": "conventions",
+      "skill": "Commas after introductory clauses",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "[1] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "2019 skeptics predicted that",
+        "2019, skeptics, predicted that",
+        "2019, skeptics predicted, that"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The sentence opens with a dependent clause (\"When the city council ... in 2019\"), which must be followed by a comma before the main clause begins. Choice B drops that comma. Choices C and D insert commas between the subject and its verb or between the verb and its object, which breaks the flow of the main clause."
+    },
+    {
+      "id": "ACT-EN-132",
+      "section": "english",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-EN-P4",
+      "domain": "conventions",
+      "skill": "Comma splices and run-ons",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "[2] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "and its downtown had been built around the automobile.",
+        "its downtown, had been built around the automobile.",
+        "its downtown had been built, around the automobile."
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "As written, two independent clauses (\"It was a city ... low hills\" and \"its downtown had been built ...\") are joined by only a comma, which is a comma splice. Adding the coordinating conjunction \"and\" after the comma correctly joins them. Choices C and D keep the splice and add unnecessary commas inside the second clause."
+    },
+    {
+      "id": "ACT-EN-133",
+      "section": "english",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-EN-P4",
+      "domain": "language",
+      "skill": "Concision and redundancy",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "[3] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "they placed them close together, near each other,",
+        "they placed them close together",
+        "they placed them together and close, near each other,"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "\"Close together\" and \"near each other\" mean the same thing, so the sentence should keep only one. Choice C removes the redundancy and reads cleanly into \"in a compact zone.\" Choices B and D repeat the idea and add commas that interrupt the sentence."
+    },
+    {
+      "id": "ACT-EN-134",
+      "section": "english",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-EN-P4",
+      "domain": "production",
+      "skill": "Deleting sentences",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "[4] Should the writer delete the underlined sentence?",
+      "options": [
+        "Yes, because it repeats the point made in the preceding sentence.",
+        "Yes, because it contradicts the claim that the network was later extended.",
+        "No, because it explains why the planners chose the university as a station site.",
+        "No, because it provides the first evidence that the program became popular."
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The previous sentence already establishes that a station was visible from every door in the zone, so saying a bicycle was never more than a short walk away adds nothing new. The sentence should be deleted as repetitive. It does not contradict the later extension of the network (choice B), and it says nothing about the university or about popularity (choices C and D)."
+    },
+    {
+      "id": "ACT-EN-135",
+      "section": "english",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-EN-P4",
+      "domain": "conventions",
+      "skill": "Nonessential elements",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "[5] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "an annual pass, priced at sixty dollars, cost",
+        "an annual pass, priced at sixty dollars cost",
+        "an annual pass priced, at sixty dollars, cost"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "\"Priced at sixty dollars\" is a nonessential phrase that describes the pass, so it needs a comma on both sides. The original and choice C each use only one comma, leaving the phrase half set off and separating the subject \"pass\" from its verb \"cost.\" Choice D splits the phrase itself in the wrong place."
+    },
+    {
+      "id": "ACT-EN-136",
+      "section": "english",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-EN-P4",
+      "domain": "conventions",
+      "skill": "Possessives and contractions",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "[6] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "its",
+        "its'",
+        "their"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The sentence needs the possessive pronoun \"its\" to show that the activity charge belongs to the university. \"It's\" is the contraction of \"it is,\" which makes no sense here, and \"its'\" is not a word. \"Their\" is plural and does not agree with the singular \"university.\""
+    },
+    {
+      "id": "ACT-EN-137",
+      "section": "english",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-EN-P4",
+      "domain": "production",
+      "skill": "Topic sentences",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "[7] Which choice most effectively introduces the paragraph?",
+      "options": [
+        "NO CHANGE",
+        "changed the way the city thought about its streets.",
+        "required the hiring of a dozen new mechanics.",
+        "led to a surge in bicycle sales at local shops."
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The rest of the paragraph describes how daily riders made protected bike lanes seem like basic maintenance and how the council then approved new lanes. Choice B introduces that shift in the city's thinking about its streets. Tourists, mechanics, and bicycle sales (choices A, C, and D) are never mentioned in the paragraph."
+    },
+    {
+      "id": "ACT-EN-138",
+      "section": "english",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-EN-P4",
+      "domain": "conventions",
+      "skill": "Unnecessary commas",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "[8] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "ridership, on those routes, rose",
+        "ridership on those routes rose",
+        "ridership on those routes rose,"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "No comma should separate a subject from its verb, so \"ridership on those routes rose\" needs no punctuation. Choice B sets off \"on those routes\" as if it were nonessential, but the phrase identifies which ridership rose. Choice D adds a comma between the verb and its modifier \"by a third.\""
+    },
+    {
+      "id": "ACT-EN-139",
+      "section": "english",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-EN-P4",
+      "domain": "language",
+      "skill": "Precise word choice",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "[9] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "suggests",
+        "alleges",
+        "confesses"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The essay is drawing a reasonable conclusion from Brightwater's results, so \"suggests\" has the right neutral meaning. \"Insinuates\" implies something hinted at in an underhanded way, and \"alleges\" implies an unproven accusation. \"Confesses\" implies admitting wrongdoing, which does not fit an essay about a successful program."
+    },
+    {
+      "id": "ACT-EN-140",
+      "section": "english",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-EN-P4",
+      "domain": "production",
+      "skill": "Transitions",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "[10] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "Not surprisingly,",
+        "In contrast,",
+        "Even so,"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The previous sentences explain why Brightwater's approach worked, and the final sentence says other cities are studying it. That is a natural consequence, so \"Not surprisingly\" fits. \"Nevertheless,\" \"In contrast,\" and \"Even so\" all signal a contradiction that is not present."
+    },
+    {
+      "id": "ACT-EN-141",
+      "section": "english",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-EN-P5",
+      "domain": "conventions",
+      "skill": "Verb tense",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "[1] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "had stood",
+        "is standing",
+        "will have stood"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The essay is told in the past tense, and the piano had already left the grandmother's house before the events described, so the past perfect \"had stood\" is correct. The present-tense choices \"stands\" and \"is standing\" conflict with the fact that the piano is now in the narrator's apartment, and \"will have stood\" points to the future."
+    },
+    {
+      "id": "ACT-EN-142",
+      "section": "english",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-EN-P5",
+      "domain": "language",
+      "skill": "Word choice and tone",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "[2] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "worn",
+        "deficient",
+        "obsolete"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The next paragraph describes the effects of sixty years of use: lifted veneer, missing key tops, and worn damper felt. \"Worn\" captures that gradual wear and matches the essay's measured, reflective tone. \"Busted\" is too casual for the essay, \"deficient\" suggests the piano lacked something by design, and \"obsolete\" means out of date, which is not the problem."
+    },
+    {
+      "id": "ACT-EN-143",
+      "section": "english",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-EN-P5",
+      "domain": "conventions",
+      "skill": "Punctuating interrupting phrases",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "[3] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "a sign I later learned, that",
+        "a sign, I later learned that",
+        "a sign, I later learned; that"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "\"A sign ... that the damper felt had worn away\" is an appositive explaining the lingering note, and \"I later learned\" interrupts it. An interrupting phrase needs a comma on each side, which only the original provides. Choices B and C each drop one of those commas, and choice D breaks the appositive apart with a semicolon."
+    },
+    {
+      "id": "ACT-EN-144",
+      "section": "english",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-EN-P5",
+      "domain": "production",
+      "skill": "Paragraph unity and setup",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "[4] Which choice most effectively concludes the paragraph while setting up the paragraph that follows?",
+      "options": [
+        "NO CHANGE",
+        "told him I would think it over.",
+        "asked how long he had been in the trade.",
+        "mentioned that my grandmother had bought the piano new."
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The next paragraph shows the narrator studying repair videos and ordering parts in order to do the work alone, so the narrator must not have hired the technician. Telling him \"I would think it over\" leaves the decision open and leads into that paragraph. Choice A contradicts what follows, and choices C and D shift to details that the essay never returns to."
+    },
+    {
+      "id": "ACT-EN-145",
+      "section": "english",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-EN-P5",
+      "domain": "language",
+      "skill": "Style and register",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "[5] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "explain",
+        "expound at length regarding",
+        "give the lowdown on"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The essay uses a plain, reflective voice, so the simple verb \"explain\" fits best. \"Spill the beans on\" and \"give the lowdown on\" are slang expressions that clash with that tone. \"Expound at length regarding\" is wordy and overly formal."
+    },
+    {
+      "id": "ACT-EN-146",
+      "section": "english",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-EN-P5",
+      "domain": "conventions",
+      "skill": "Colons and lists",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "[6] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "things: a set",
+        "things; a set",
+        "things a set"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "\"I ordered three things\" is a complete statement, and the list that follows explains what those things were, so a colon is the correct punctuation. A comma (the original) creates a confusing run of items, a semicolon (choice C) must join two independent clauses, and omitting punctuation entirely (choice D) runs the list into the sentence."
+    },
+    {
+      "id": "ACT-EN-147",
+      "section": "english",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-EN-P5",
+      "domain": "conventions",
+      "skill": "Subject-verb agreement",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "[7] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "Each of the eighty-eight keys was",
+        "Each of the eighty-eight keys have been",
+        "Each of the eighty-eight keys, was"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The subject of the sentence is the singular pronoun \"each,\" not the plural \"keys\" inside the prepositional phrase, so the verb must be singular: \"was.\" Choices A and C use plural verbs, and choice D adds a comma between the subject and its verb."
+    },
+    {
+      "id": "ACT-EN-148",
+      "section": "english",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-EN-P5",
+      "domain": "conventions",
+      "skill": "Misplaced modifiers",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "[8] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "she sat down at the freshly restored piano",
+        "she, freshly restored, sat down at the piano",
+        "freshly restored, the piano was sat down at by her"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The phrase \"freshly restored\" describes the piano, but in the original it sits next to \"she,\" so it seems to describe the grandmother. Choice B places the modifier directly before \"piano.\" Choice C makes the misplacement explicit, and choice D fixes the modifier only by turning the sentence into an awkward passive construction."
+    },
+    {
+      "id": "ACT-EN-149",
+      "section": "english",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-EN-P5",
+      "domain": "conventions",
+      "skill": "Punctuating dialogue",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "[9] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "\"That's better\" she said, and",
+        "\"That's better\", she said, and",
+        "\"That's better.\" She said, and"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "A quotation that is followed by a dialogue tag ends with a comma placed inside the closing quotation mark, and the comma before \"and\" correctly joins the two independent clauses. Choice B omits the comma after the quotation, choice C places it outside the quotation mark, and choice D turns \"She said, and then she played another\" into a sentence with a dangling tag."
+    },
+    {
+      "id": "ACT-EN-150",
+      "section": "english",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-EN-P5",
+      "domain": "production",
+      "skill": "Sentence placement",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "The writer wants to add the following sentence to the essay:\n\n\"Without the action in place, the piano was nothing but a hollow wooden box, and the apartment felt oddly quiet.\"\n\nWhere would the sentence fit best?",
+      "options": [
+        "After the first sentence of the first paragraph (the sentence ending \"wrapped in moving blankets\").",
+        "After the first sentence of the second paragraph (the sentence ending \"what sixty years had done\").",
+        "After the second sentence of the fourth paragraph (the sentence ending \"took an entire Saturday\").",
+        "After the last sentence of the fifth paragraph (the sentence ending \"she played another\")."
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The sentence describes the piano while its action is out, so it belongs right after the sentence that says removing the action took a Saturday and before the sentence about reinstalling it. Placed anywhere else, \"without the action in place\" refers to a step the reader has not yet encountered (choices A and B) or that has already been undone (choice D)."
+    }
+  ]
+}

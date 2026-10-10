@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" font-family="sans-serif" font-size="13" fill="#000">
+<rect width="320" height="240" fill="#fff"/>
+<polygon points="50,200 260,200 260,70" fill="none" stroke="#000" stroke-width="1.5"/>
+<polyline points="248,200 248,188 260,188" fill="none" stroke="#000" stroke-width="1.5"/>
+<path d="M 82 200 A 32 32 0 0 0 76 184" fill="none" stroke="#000" stroke-width="1.5"/>
+<text x="88" y="192">35&#176;</text>
+<text x="40" y="214">A</text>
+<text x="264" y="214">C</text>
+<text x="264" y="66">B</text>
+<text x="140" y="124" text-anchor="middle">20</text>
+<text x="272" y="140">x</text>
+</svg>

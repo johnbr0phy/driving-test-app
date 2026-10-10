@@ -1,0 +1,515 @@
+[
+  {
+    "id": "SAT-MA-501",
+    "section": "math",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "If $5x + 9 = 39$, what is the value of $x$?",
+    "options": [
+      "$5$",
+      "$6$",
+      "$9.6$",
+      "$30$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "Subtract $9$ from both sides to get $5x = 30$, then divide both sides by $5$ to get $x = 6$. Choice C, $9.6$, comes from adding $9$ to both sides instead of subtracting it, which gives $5x = 48$. Choice D, $30$, is the value of $5x$, not of $x$."
+  },
+  {
+    "id": "SAT-MA-502",
+    "section": "math",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "advancedMath",
+    "skill": "Equivalent expressions",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which of the following expressions is equivalent to $(2x + 3)(x - 4)$?",
+    "options": [
+      "$2x^2 - 5x - 12$",
+      "$2x^2 + 5x - 12$",
+      "$2x^2 - 12$",
+      "$2x^2 - 11x - 12$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Multiply each term of the first factor by each term of the second: $2x \\cdot x + 2x(-4) + 3x + 3(-4) = 2x^2 - 8x + 3x - 12$. Combining like terms gives $2x^2 - 5x - 12$. Choice B, $2x^2 + 5x - 12$, comes from computing $-8x + 3x$ as $+5x$; the $-8x$ term is larger in size, so the sum is negative. Choice C leaves out the two middle products entirely."
+  },
+  {
+    "id": "SAT-MA-503",
+    "section": "math",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "dataAnalysis",
+    "skill": "One-variable data: reading graphs",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The bar graph shows the number of animals adopted from a pet shelter in each of six months. How many more animals were adopted in May than in February?",
+    "figure": {
+      "src": "/figures/sat/sat-ma-503.svg",
+      "alt": "Bar graph titled Animals adopted, by month. January 12, February 8, March 14, April 10, May 18, June 16. The vertical axis runs from 0 to 20 in steps of 4."
+    },
+    "options": [
+      "$2$",
+      "$8$",
+      "$10$",
+      "$26$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "The bar for May reaches $18$ and the bar for February reaches $8$, so the difference is $18 - 8 = 10$. Choice D, $26$, is the total adopted in the two months rather than the difference. Choice B, $8$, is the February count itself, not how many more were adopted in May."
+  },
+  {
+    "id": "SAT-MA-504",
+    "section": "math",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "algebra",
+    "skill": "Linear functions",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A farm stand sells tomatoes for $\\$3$ per pound and charges a flat $\\$2$ fee for a reusable bag. The total cost $c$, in dollars, of buying $p$ pounds of tomatoes with a bag is given by $c = 3p + 2$. If a customer pays a total of $\\$20$, how many pounds of tomatoes did the customer buy?",
+    "numeric": {
+      "answers": [
+        "6"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Substitute $c = 20$ into the equation: $20 = 3p + 2$. Subtracting $2$ from both sides gives $18 = 3p$, so $p = 6$. Dividing $20$ by $3$ before removing the bag fee gives about $6.67$ pounds, which is wrong because the $\\$2$ fee is not part of the per-pound charge."
+  },
+  {
+    "id": "SAT-MA-505",
+    "section": "math",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "advancedMath",
+    "skill": "Exponential functions",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A running club had $40$ members when it was founded, and the number of members has doubled every year since then. Which of the following functions gives the number of members $m(t)$ in the club $t$ years after it was founded?",
+    "options": [
+      "$m(t) = 40(2)^t$",
+      "$m(t) = 40 + 2t$",
+      "$m(t) = 2(40)^t$",
+      "$m(t) = 40t^2$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Doubling every year means the membership is multiplied by $2$ each year, so after $t$ years it is $40$ multiplied by $2$ a total of $t$ times: $m(t) = 40(2)^t$. Choice B, $m(t) = 40 + 2t$, adds $2$ members per year instead of multiplying by $2$, which describes linear growth. Choice C raises the starting value to the power $t$ instead of the growth factor."
+  },
+  {
+    "id": "SAT-MA-506",
+    "section": "math",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "geometryTrig",
+    "skill": "Area and volume",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A right triangle has legs of length $6$ centimeters and $8$ centimeters. What is the area, in square centimeters, of the triangle?",
+    "options": [
+      "$10$",
+      "$14$",
+      "$24$",
+      "$48$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "In a right triangle the two legs are perpendicular, so one leg is the base and the other is the height. The area is $\\frac{1}{2}(6)(8) = 24$ square centimeters. Choice D, $48$, is the product of the legs without the factor of $\\frac{1}{2}$, which gives the area of a $6$ by $8$ rectangle instead of the triangle. Choice A, $10$, is the length of the hypotenuse, not the area."
+  },
+  {
+    "id": "SAT-MA-507",
+    "section": "math",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "algebra",
+    "skill": "Linear inequalities in one variable",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Tickets to a concert cost $\\$35$ each, and a single service fee of $\\$6$ is added to each order no matter how many tickets are bought. A customer wants to spend at most $\\$150$ on one order. Which inequality represents all possible numbers of tickets $n$ the customer can buy?",
+    "options": [
+      "$35n + 6 \\le 150$",
+      "$35(n + 6) \\le 150$",
+      "$35n + 6 \\ge 150$",
+      "$41n \\le 150$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "The cost of $n$ tickets is $35n$, and the one-time fee adds $6$, so the order costs $35n + 6$ dollars. Spending at most $\\$150$ means the cost is less than or equal to $150$: $35n + 6 \\le 150$. Choice B, $35(n + 6) \\le 150$, charges the fee once per ticket instead of once per order. Choice C uses the wrong direction of inequality; \"at most\" means the total cannot exceed $150$."
+  },
+  {
+    "id": "SAT-MA-508",
+    "section": "math",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "advancedMath",
+    "skill": "Nonlinear functions",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "The function $g$ is defined by $g(x) = x^2 - 3x + 1$. What is the value of $g(5)$?",
+    "numeric": {
+      "answers": [
+        "11"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Substitute $5$ for $x$: $g(5) = 5^2 - 3(5) + 1 = 25 - 15 + 1 = 11$. A common error is to compute $-3(5) + 1$ as $-16$, which gives $9$; the $+1$ is added after the $-15$, not combined with it before subtracting."
+  },
+  {
+    "id": "SAT-MA-509",
+    "section": "math",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "dataAnalysis",
+    "skill": "One-variable data: mean and median",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A weather station recorded the daily high temperature, in degrees Fahrenheit, on each of five days: $64$, $73$, $78$, $70$, and $70$. What is the mean of these five temperatures?",
+    "options": [
+      "$14$",
+      "$70$",
+      "$71$",
+      "$88.75$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "The mean is the sum of the values divided by the number of values: $\\frac{64 + 73 + 78 + 70 + 70}{5} = \\frac{355}{5} = 71$. Choice B, $70$, is the median (and the mode) of the data, not the mean; when the values are ordered, $70$ is in the middle, but the mean is pulled slightly higher by the $78$. Choice A, $14$, is the range."
+  },
+  {
+    "id": "SAT-MA-510",
+    "section": "math",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "algebra",
+    "skill": "Linear functions",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The table shows the total number of miles a member of a running club had logged at the end of each of three weeks.\n\n| Week | Total miles logged |\n|---|---|\n| 1 | 14 |\n| 2 | 20 |\n| 3 | 26 |\n\nIf the relationship between the week number $w$ and the total miles $m(w)$ is linear, which of the following defines $m$?",
+    "options": [
+      "$m(w) = 6w + 8$",
+      "$m(w) = 6w + 14$",
+      "$m(w) = 8w + 6$",
+      "$m(w) = 14w$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "The total increases by $6$ miles each week, so the slope is $6$ and $m(w) = 6w + b$ for some constant $b$. Using week $1$: $14 = 6(1) + b$, so $b = 8$ and $m(w) = 6w + 8$. Choice B, $m(w) = 6w + 14$, uses the week $1$ total as the constant term, but the constant term is the value when $w = 0$, which is one week earlier and $6$ miles less than $14$. Check: $m(2) = 6(2) + 8 = 20$ and $m(3) = 26$ match the table."
+  },
+  {
+    "id": "SAT-MA-511",
+    "section": "math",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "advancedMath",
+    "skill": "Radicals and rational exponents",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "For $x > 0$, which of the following expressions is equivalent to $x^{\\frac{2}{3}}$?",
+    "options": [
+      "$\\sqrt[3]{x^2}$",
+      "$\\sqrt{x^3}$",
+      "$\\frac{2}{3}x$",
+      "$\\sqrt[3]{2x}$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "A rational exponent $\\frac{a}{b}$ means the $b$th root of the $a$th power: $x^{\\frac{2}{3}} = \\sqrt[3]{x^2}$. Choice B, $\\sqrt{x^3}$, swaps the roles of the numerator and denominator; it equals $x^{\\frac{3}{2}}$. Choice C, $\\frac{2}{3}x$, treats the exponent as a multiplier, which is a different operation."
+  },
+  {
+    "id": "SAT-MA-512",
+    "section": "math",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "geometryTrig",
+    "skill": "Similar triangles",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In the figure, segments $AD$ and $BC$ intersect at point $E$, and $\\overline{AB}$ is parallel to $\\overline{CD}$. $AB = 8$, $CD = 12$, and $AE = 6$. What is the length of $\\overline{DE}$?",
+    "figure": {
+      "src": "/figures/sat/sat-ma-512.svg",
+      "alt": "Two triangles that meet at point E. Segment AB is at the top with length 8, segment CD is at the bottom with length 12, and AB is parallel to CD. Segment AD runs from the top left to the bottom right and segment BC runs from the top right to the bottom left, crossing at E. AE is labeled 6. Figure not drawn to scale."
+    },
+    "options": [
+      "$4$",
+      "$9$",
+      "$10$",
+      "$16$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "Because $\\overline{AB} \\parallel \\overline{CD}$, angles $A$ and $D$ are alternate interior angles and are congruent, and the angles at $E$ are vertical angles, so triangle $ABE$ is similar to triangle $DCE$. Corresponding sides are proportional: $\\frac{DE}{AE} = \\frac{CD}{AB}$, so $DE = 6 \\cdot \\frac{12}{8} = 9$. Choice A, $4$, comes from using the ratio $\\frac{8}{12}$ instead of $\\frac{12}{8}$; since triangle $DCE$ is the larger triangle, $DE$ must be longer than $AE$. Choice C, $10$, adds the difference $12 - 8$ to $AE$ instead of scaling it."
+  },
+  {
+    "id": "SAT-MA-513",
+    "section": "math",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "algebra",
+    "skill": "Systems of two linear equations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A concert venue sold a total of $300$ tickets for one show. Adult tickets cost $\\$40$ each and student tickets cost $\\$25$ each, and the total amount collected was $\\$10{,}200$. How many student tickets were sold?",
+    "options": [
+      "$120$",
+      "$180$",
+      "$150$",
+      "$80$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Let $a$ be the number of adult tickets and $s$ the number of student tickets. Then $a + s = 300$ and $40a + 25s = 10{,}200$. From the first equation $a = 300 - s$, so $40(300 - s) + 25s = 10{,}200$, which simplifies to $12{,}000 - 15s = 10{,}200$ and $s = 120$. Choice B, $180$, is the number of adult tickets, $300 - 120$; the question asks for student tickets."
+  },
+  {
+    "id": "SAT-MA-514",
+    "section": "math",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "advancedMath",
+    "skill": "Quadratics: vertex form",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The graph of the function $f$ in the xy-plane is shown. Which of the following defines $f$?",
+    "figure": {
+      "src": "/figures/sat/sat-ma-514.svg",
+      "alt": "Graph of a parabola in the xy-plane that opens upward with vertex at (1, -4), x-intercepts at -1 and 3, and y-intercept at -3. The x-axis is labeled from -3 to 5 and the y-axis from -5 to 3."
+    },
+    "options": [
+      "$f(x) = (x - 1)^2 - 4$",
+      "$f(x) = (x + 1)^2 - 4$",
+      "$f(x) = (x - 1)^2 + 4$",
+      "$f(x) = (x - 1)(x + 3)$"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "The parabola opens upward and its lowest point, the vertex, is at $(1, -4)$. In vertex form $f(x) = a(x - h)^2 + k$ with vertex $(h, k)$, so $f(x) = a(x - 1)^2 - 4$. The graph passes through $(3, 0)$, and $a(3 - 1)^2 - 4 = 0$ gives $a = 1$, so $f(x) = (x - 1)^2 - 4$. Choice B, $(x + 1)^2 - 4$, has its vertex at $(-1, -4)$; the sign inside the parentheses is the opposite of the x-coordinate of the vertex. Choice D has x-intercepts at $1$ and $-3$, but the graph crosses the x-axis at $-1$ and $3$."
+  },
+  {
+    "id": "SAT-MA-515",
+    "section": "math",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "dataAnalysis",
+    "skill": "Probability",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A pet shelter currently houses $60$ animals: $24$ dogs, $27$ cats, and $9$ rabbits. If one of the animals is selected at random, what is the probability that the selected animal is not a cat?",
+    "numeric": {
+      "answers": [
+        "11/20",
+        "0.55",
+        ".55",
+        "33/60"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "The animals that are not cats are the $24$ dogs and $9$ rabbits, a total of $33$. The probability is $\\frac{33}{60} = \\frac{11}{20} = 0.55$. Computing $\\frac{27}{60} = 0.45$ gives the probability that the animal is a cat, the complement of what was asked."
+  },
+  {
+    "id": "SAT-MA-516",
+    "section": "math",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "During a storm, the rain gauge at a weather station collected water at a constant rate. The gauge read $0.4$ inches at 2:00 p.m. and $1.6$ inches at 5:00 p.m. If the rain continues at the same rate, what will the gauge read, in inches, at 7:30 p.m.?",
+    "numeric": {
+      "answers": [
+        "2.6",
+        "13/5"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "From 2:00 p.m. to 5:00 p.m. is $3$ hours, and the reading rose by $1.6 - 0.4 = 1.2$ inches, so the rate is $\\frac{1.2}{3} = 0.4$ inches per hour. From 5:00 p.m. to 7:30 p.m. is $2.5$ hours, so the gauge rises another $0.4(2.5) = 1$ inch, to $1.6 + 1 = 2.6$ inches. A common error is to measure the $2.5$ hours from 2:00 p.m. instead of 5:00 p.m., which gives $1.4$ inches."
+  },
+  {
+    "id": "SAT-MA-517",
+    "section": "math",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "advancedMath",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "If $(x - 3)^2 = 25$ and $x < 0$, what is the value of $x$?",
+    "numeric": {
+      "answers": [
+        "-2"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Taking the square root of both sides gives $x - 3 = 5$ or $x - 3 = -5$, so $x = 8$ or $x = -2$. Since $x < 0$, the answer is $x = -2$. Taking only the positive square root gives $x = 8$, which does not satisfy the condition $x < 0$."
+  },
+  {
+    "id": "SAT-MA-518",
+    "section": "math",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "advancedMath",
+    "skill": "Polynomial remainder and factors",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The polynomial $p(x) = x^3 - 2x^2 + kx - 6$, where $k$ is a constant, has $x - 2$ as a factor. What is the value of $k$?",
+    "options": [
+      "$-11$",
+      "$-3$",
+      "$1$",
+      "$3$"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "If $x - 2$ is a factor of $p(x)$, then $p(2) = 0$. Substituting gives $2^3 - 2(2)^2 + 2k - 6 = 8 - 8 + 2k - 6 = 2k - 6$, so $2k - 6 = 0$ and $k = 3$. Choice A, $-11$, comes from substituting $x = -2$; the factor $x - 2$ is zero when $x = 2$, not $-2$. Choice B, $-3$, comes from solving $2k + 6 = 0$ after dropping the sign of the constant term."
+  },
+  {
+    "id": "SAT-MA-519",
+    "section": "math",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "geometryTrig",
+    "skill": "Circles: equations",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "In the xy-plane, the equation $x^2 + y^2 - 8x + 6y = 11$ represents a circle. What is the radius of the circle?",
+    "numeric": {
+      "answers": [
+        "6"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Complete the square for $x$ and for $y$: $(x^2 - 8x + 16) + (y^2 + 6y + 9) = 11 + 16 + 9$, which gives $(x - 4)^2 + (y + 3)^2 = 36$. The circle has center $(4, -3)$ and radius $\\sqrt{36} = 6$. Giving $36$ is the most common error; that is the square of the radius, not the radius. Forgetting to add $16$ and $9$ to the right side gives $\\sqrt{11}$, which is also incorrect."
+  },
+  {
+    "id": "SAT-MA-520",
+    "section": "math",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In the xy-plane, a line has slope $-\\frac{2}{3}$ and passes through the point $(6, 1)$. What is the y-coordinate of the y-intercept of the line?",
+    "options": [
+      "$-3$",
+      "$1$",
+      "$5$",
+      "$9$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "Write the line as $y = -\\frac{2}{3}x + b$ and substitute the point: $1 = -\\frac{2}{3}(6) + b = -4 + b$, so $b = 5$. The y-intercept is $(0, 5)$. Choice A, $-3$, comes from computing $1 - 4$ instead of $1 + 4$; since $-\\frac{2}{3}(6) = -4$, moving it to the other side adds $4$. Choice B, $1$, treats the y-coordinate of the given point as the y-intercept, which is only true when $x = 0$."
+  },
+  {
+    "id": "SAT-MA-521",
+    "section": "math",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "algebra",
+    "skill": "Systems of two linear equations",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "$$3x - 2y = 8$$\n\n$$ax + 6y = 5$$\n\nIn the system of equations above, $a$ is a constant. If the system has no solution, what is the value of $a$?",
+    "options": [
+      "$-9$",
+      "$-4$",
+      "$4$",
+      "$9$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "A system of two linear equations has no solution when the lines are parallel: same slope, different y-intercepts. The first line can be written $y = \\frac{3}{2}x - 4$, so its slope is $\\frac{3}{2}$. The second line is $y = -\\frac{a}{6}x + \\frac{5}{6}$, with slope $-\\frac{a}{6}$. Setting $-\\frac{a}{6} = \\frac{3}{2}$ gives $a = -9$, and the y-intercepts $-4$ and $\\frac{5}{6}$ differ, so the lines never meet. Choice D, $9$, is the result of matching the ratio of the $x$ coefficients to the ratio of the $y$ coefficients without accounting for the sign change: $\\frac{a}{3} = \\frac{6}{-2}$ gives $-9$, not $9$."
+  },
+  {
+    "id": "SAT-MA-522",
+    "section": "math",
+    "test": 2,
+    "module": 2,
+    "variant": "lower",
+    "domain": "advancedMath",
+    "skill": "Quadratics: discriminant",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "In the xy-plane, the graph of $y = kx^2 - 8x + 4$, where $k$ is a positive constant, intersects the x-axis at exactly one point. What is the value of $k$?",
+    "options": [
+      "$2$",
+      "$4$",
+      "$8$",
+      "$16$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "calculator": true,
+    "explanation": "The graph meets the x-axis exactly once when the equation $kx^2 - 8x + 4 = 0$ has exactly one real solution, which happens when the discriminant $b^2 - 4ac$ is zero. Here $(-8)^2 - 4(k)(4) = 64 - 16k = 0$, so $k = 4$. Choice A, $2$, comes from using $-8$ instead of $(-8)^2 = 64$ and solving $-8 - 4(4k)$... more precisely from the equation $8 - 4k \\cdot 4 \\cdot \\frac{1}{4} = 0$ obtained by dropping the square; the discriminant always squares $b$. Choice D, $16$, solves $64 - 4k = 0$, leaving out the factor $c = 4$."
+  }
+]

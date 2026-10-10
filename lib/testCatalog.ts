@@ -19,6 +19,11 @@ export interface TestCatalogEntry {
   icon: "car" | ExamConfig["icon"];
   /** data-theme used for the card accent; undefined = DMV orange. */
   theme?: string;
+  /**
+   * Price label on the hub card, e.g. "2 free, 2 premium". Undefined means
+   * the whole test is free, which is every exam except the DMV.
+   */
+  pricing?: string;
 }
 
 const dmv: TestCatalogEntry = {
@@ -31,6 +36,9 @@ const dmv: TestCatalogEntry = {
   dashboardHref: "/dashboard",
   questions: 200,
   icon: "car",
+  // Tests 1-2 and training sets 1-2 are free; 3-4 need the one-time premium
+  // unlock (app/dashboard/page.tsx), so this card cannot say plain "Free".
+  pricing: "2 free, 2 premium",
 };
 
 const EXAM_BLURBS: Record<string, string> = {

@@ -109,6 +109,7 @@ export async function buildSegment(segment: SitemapSegment): Promise<SitemapEntr
     case "exams":
       return [
         { url: `${SITE_URL}/tests`, lastModified: HUB_PAGES_UPDATED_AT, changeFrequency: "weekly", priority: 0.8 },
+        { url: `${SITE_URL}/sat-practice-test`, lastModified: EXAM_LANDINGS_UPDATED_AT, changeFrequency: "monthly" as const, priority: 0.8 },
         ...EXAMS.map((exam) => ({
           url: `${SITE_URL}${examLandingPath(exam)}`,
           lastModified: EXAM_LANDINGS_UPDATED_AT,

@@ -21,6 +21,7 @@ import { useStore } from "@/store/useStore";
 import { useHydration } from "@/hooks/useHydration";
 import { states } from "@/data/states";
 import { TEST_CATALOG } from "@/lib/testCatalog";
+import { useV2Store } from "@/store/useV2Store";
 import { getExamById, examSetId } from "@/lib/exams";
 import { TestIcon } from "@/components/TestIcon";
 import { hasTigerSet } from "@/lib/tigerAssets";
@@ -100,8 +101,16 @@ export default function SettingsPage() {
       const n = Number(k);
       return n >= lo && n <= hi;
     });
+  // v2 exams (SAT) keep their progress in their own store.
+  const v2 = useV2Store();
+  const v2Started = (examId: string) =>
+    v2.results.some((r) => r.examId === examId) ||
+    Object.values(v2.sessions).some((s) => s.examId === examId) ||
+    Object.entries(v2.drills).some(([k, d]) => k.startsWith(`${examId}:`) && d.seen > 0);
+
   const hasStarted = (testId: string): boolean => {
     if (testId === "dmv") return !!selectedState;
+    if (v2Started(testId)) return true;
     const exam = getExamById(testId);
     if (!exam) return false;
     return (

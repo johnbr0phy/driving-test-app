@@ -32,13 +32,13 @@ export function V2Header({ exam }: { exam: ExamV2Config }) {
     <header className="border-b bg-white" style={style}>
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <Link href={exam.slug} className="flex items-center gap-2 group flex-shrink-0">
-          <div className="w-10 h-10 bg-brand rounded-lg flex items-center justify-center">
-            {hasTigerSet(exam.id) ? (
-              <Image src={getTigerAsset(exam.id)} alt="" width={40} height={40} className="h-10 w-10 object-contain" />
-            ) : (
+          {hasTigerSet(exam.id) ? (
+            <Image src={getTigerAsset(exam.id)} alt="" width={40} height={40} className="h-10 w-10 object-contain" />
+          ) : (
+            <div className="w-10 h-10 bg-brand rounded-lg flex items-center justify-center">
               <TestIcon icon={exam.icon as TestCatalogEntry["icon"]} className="h-6 w-6 text-white" />
-            )}
-          </div>
+            </div>
+          )}
           <span className="text-2xl font-bold text-gray-900 group-hover:opacity-80 transition-opacity hidden sm:inline">{exam.name}</span>
         </Link>
         <div className="flex items-center gap-2 sm:gap-4">

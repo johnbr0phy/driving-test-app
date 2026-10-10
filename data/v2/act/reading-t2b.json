@@ -25,14 +25,14 @@
       "stem": "The main purpose of Passage A is to",
       "options": [
         "describe the author's thirty-year career as a literary translator.",
-        "argue that a translator should preserve a poem's meter and sound even when doing so changes some of its literal meaning.",
         "explain why certain meters cannot be reproduced in English.",
-        "compare how readers remember poems with how they remember prose."
+        "compare how readers remember poems with how they remember prose.",
+        "argue that a translator should preserve a poem's meter and sound even when doing so changes some of its literal meaning."
       ],
       "correct": [
-        1
+        3
       ],
-      "explanation": "The first paragraph announces that the thing a translator \"must save\" is the poem's shape of sound, the second admits that keeping meter changes words and defends the choice anyway, and the last paragraph concludes, \"I choose the song.\" The career (A) is mentioned only in the opening sentence, and the meters that have \"no home in English\" (C) are a one-sentence concession, not the purpose. The passage discusses how poems are remembered (D) but never compares them with prose."
+      "explanation": "The first paragraph announces that the thing a translator \"must save\" is the poem's shape of sound, the second admits that keeping meter changes words and defends the choice anyway, and the last paragraph concludes, \"I choose the song.\" The career (A) is mentioned only in the opening sentence, and the meters that have \"no home in English\" (B) are a one-sentence concession, not the purpose. The passage discusses how poems are remembered (C) but never compares them with prose."
     },
     {
       "id": "ACT-RD-220",
@@ -112,15 +112,15 @@
       "format": "single",
       "stem": "According to Passage B, the central problem with rhyming a translation in English is that the translator",
       "options": [
-        "cannot find enough English words that rhyme with one another.",
         "must bend the sense of each line toward whatever English words happen to rhyme.",
+        "cannot find enough English words that rhyme with one another.",
         "is forced to shorten the poem to make the rhyme scheme fit.",
         "produces a version that scholars refuse to study."
       ],
       "correct": [
-        1
+        0
       ],
-      "explanation": "The second paragraph states that a rhyming translator \"must bend the sense of each line toward whatever English words happen to chime,\" producing a poem that \"says something slightly, invisibly different.\" The problem is distortion of meaning, not a shortage of rhymes (A) or a shorter poem (C). Scholars are mentioned only as having written about the original's rhyme scheme (D)."
+      "explanation": "The second paragraph states that a rhyming translator \"must bend the sense of each line toward whatever English words happen to chime,\" producing a poem that \"says something slightly, invisibly different.\" The problem is distortion of meaning, not a shortage of rhymes (B) or a shorter poem (C). Scholars are mentioned only as having written about the original's rhyme scheme (D)."
     },
     {
       "id": "ACT-RD-224",
@@ -201,14 +201,14 @@
       "stem": "How would the author of Passage B most likely respond to the claim in Passage A that \"a translation that gives up meter is one that gives up memory\"?",
       "options": [
         "By denying that readers remember the sound of a poem more readily than its sense.",
-        "By arguing that the music a reader remembers from a rhymed translation is the translator's creation rather than the poet's.",
         "By pointing out that most poems were never intended to be memorized.",
-        "By conceding that her own translations are not meant to be read aloud."
+        "By conceding that her own translations are not meant to be read aloud.",
+        "By arguing that the music a reader remembers from a rhymed translation is the translator's creation rather than the poet's."
       ],
       "correct": [
-        1
+        3
       ],
-      "explanation": "Passage B's core claim is that a poem's sounds \"are not transferable\": English rhymes are new discoveries, and a reader of a rhymed version \"has met the translator, wearing the poet's coat.\" She would therefore reply that whatever the reader memorizes is the translator's music, not the original's. She never disputes how readers remember poems (A) or discusses reading aloud (D), and nothing in the passage supports C."
+      "explanation": "Passage B's core claim is that a poem's sounds \"are not transferable\": English rhymes are new discoveries, and a reader of a rhymed version \"has met the translator, wearing the poet's coat.\" She would therefore reply that whatever the reader memorizes is the translator's music, not the original's. She never disputes how readers remember poems (A) or discusses reading aloud (C), and nothing in the passage supports B."
     },
     {
       "id": "ACT-RD-228",
@@ -289,14 +289,14 @@
       "stem": "As it is used in the third paragraph, the word \"clean\" most nearly means",
       "options": [
         "sanitary.",
-        "free of complicating factors.",
         "newly designed.",
-        "morally honest."
+        "morally honest.",
+        "free of complicating factors."
       ],
       "correct": [
-        1
+        3
       ],
-      "explanation": "The author calls the bunting study \"an unusually clean experiment\" and then describes a planetarium in which the experimenters controlled the entire sky and could rotate it around a chosen star, so that the birds' response had only one likely cause. \"Clean\" here means uncluttered by other explanations, which is why the star compass is \"better understood.\" Sanitation (A) and honesty (D) are unrelated, and nothing suggests the design was new (C)."
+      "explanation": "The author calls the bunting study \"an unusually clean experiment\" and then describes a planetarium in which the experimenters controlled the entire sky and could rotate it around a chosen star, so that the birds' response had only one likely cause. \"Clean\" here means uncluttered by other explanations, which is why the star compass is \"better understood.\" Sanitation (A) and honesty (C) are unrelated, and nothing suggests the design was new (B)."
     },
     {
       "id": "ACT-RD-232",
@@ -332,15 +332,15 @@
       "format": "single",
       "stem": "The author describes the displacement of white-crowned sparrows (fourth paragraph) primarily in order to",
       "options": [
-        "show that landmarks are easier to study than the other senses.",
         "illustrate that adult birds carry a map built from experience while first-year birds do not.",
+        "show that landmarks are easier to study than the other senses.",
         "demonstrate that birds cannot navigate once they are moved off their usual route.",
         "argue that transmitters disturb the birds' natural behavior."
       ],
       "correct": [
-        1
+        0
       ],
-      "explanation": "The experiment is introduced as evidence that \"older birds correct for displacement far better than juveniles do,\" and the paragraph concludes from it that \"Adults, it appears, carry a map built from experience; juveniles carry only a compass heading and a distance.\" The adults did navigate after displacement, so C is wrong. The author calls landmarks \"the hardest to study in the wild,\" the opposite of A, and never criticizes transmitters (D)."
+      "explanation": "The experiment is introduced as evidence that \"older birds correct for displacement far better than juveniles do,\" and the paragraph concludes from it that \"Adults, it appears, carry a map built from experience; juveniles carry only a compass heading and a distance.\" The adults did navigate after displacement, so C is wrong. The author calls landmarks \"the hardest to study in the wild,\" the opposite of B, and never criticizes transmitters (D)."
     },
     {
       "id": "ACT-RD-234",
@@ -355,14 +355,14 @@
       "stem": "It can reasonably be inferred from the passage that a bird on its first migration relies mainly on",
       "options": [
         "landmarks it memorized during its first summer.",
-        "an inherited direction and duration, held by its compasses.",
         "a map of its position read from the strength of the magnetic field.",
-        "following the routes taken by experienced adults."
+        "following the routes taken by experienced adults.",
+        "an inherited direction and duration, held by its compasses."
       ],
       "correct": [
-        1
+        3
       ],
-      "explanation": "The final paragraph says a young bird departs \"with inherited instructions, roughly a direction and a duration, and with compasses that can hold that direction,\" and the fourth paragraph says juveniles \"carry only a compass heading and a distance.\" Landmarks (A) are added \"over the following seasons,\" and a magnetic map (C) is described as an open argument, not an established juvenile ability. The passage never mentions juveniles following adults (D)."
+      "explanation": "The final paragraph says a young bird departs \"with inherited instructions, roughly a direction and a duration, and with compasses that can hold that direction,\" and the fourth paragraph says juveniles \"carry only a compass heading and a distance.\" Landmarks (A) are added \"over the following seasons,\" and a magnetic map (B) is described as an open argument, not an established juvenile ability. The passage never mentions juveniles following adults (C)."
     },
     {
       "id": "ACT-RD-235",

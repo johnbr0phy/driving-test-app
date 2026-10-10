@@ -1,1 +1,711 @@
-{"stimuli": [], "questions": []}
+{
+  "stimuli": [
+    {
+      "id": "ACT-EN-P1",
+      "title": "Passage I",
+      "text": "The first loaf I ever baked came out of the oven looking like a __paving stone, it__ [1] was dense, pale, and heavy enough to prop open a door. I had followed the recipe exactly, or so I thought. What I had not understood was that sourdough is less a recipe than a relationship. The starter, a bubbling paste of flour and water that makes the bread rise, is alive, and like anything alive it has moods.\n\n__A starter needs feeding every day, and it must be kept at a steady temperature.__ [2] For two weeks I fed mine on a schedule, and it rewarded me with a yeasty smell and a crown of bubbles. Then I went away for a weekend and left the jar on a sunny windowsill. When I returned, a gray liquid had __pooled__ [3] on top. This liquid, which bakers call hooch, is a sign that a starter has eaten through __it's__ [4] food and is waiting, a little sullenly, for more.\n\nI poured off the liquid, fed the starter, and waited. Within a day it __had recovered; bubbling__ [5] as cheerfully as before. That resilience changed how I thought about the whole project. I stopped treating the recipe like a set of laws and started treating it like a conversation. If the dough felt slack, I folded it a few more times. If the kitchen was cold, I let it rise longer. __Patience, not precision, turned out to be the skill I had been missing.__ [6]\n\nNow, a year later, my loaves come out of the oven with a crackling crust and an open, __airy, crumb.__ [7] Friends ask for the recipe, and I give it to them, but I always add a warning. The recipe is the easy part. __Learning to read the dough__ [8] is what takes time, and nobody can write that down for you. Each kitchen, each bag of flour, and each starter __are__ [9] a little different.\n\nI still have that first starter. It lives in a jar on the counter, and I feed it every morning before coffee. __Some days it rises fast and some days it sulks, but it is always, unmistakably, alive.__ [10]"
+    },
+    {
+      "id": "ACT-EN-P2",
+      "title": "Passage II",
+      "text": "In the spring of 1861, a message sent from New York to San Francisco took about ten days to arrive. It traveled by railroad to the end of the line in Missouri and then by Pony Express, __whose__ [11] riders galloped across nearly two thousand miles of plains and mountains. By the end of October that same year, the same trip took minutes. The difference was a single strand of wire strung on wooden poles across the continent: the transcontinental telegraph.\n\nCongress __has passed__ [12] the Pacific Telegraph Act in 1860, offering a yearly subsidy to any company that could complete the line. Western Union, led by Hiram Sibley, won the contract, and the work was divided in two. Crews under Edward Creighton would build west from Omaha, Nebraska, while the Overland Telegraph Company built east from Carson City, Nevada. __The two lines were to meet in Salt Lake City.__ [13]\n\nBuilding the line meant hauling poles across country that had few trees. In the deserts of Nevada and Utah, crews sometimes carted poles __in excess of__ [14] two hundred miles. Wire, insulators, and batteries came by ship around South America or by wagon from the east. __Buffalo which found the new poles ideal for scratching knocked__ [15] some of them down so often that crews drove iron spikes into the wood to discourage __them.__ [16] Still, the work moved faster than almost anyone had predicted. Creighton's crews, racing their western rivals, averaged several miles of line a day.\n\nOn October 24, 1861, the two halves met in Salt Lake City. The first message across the finished line went from Stephen J. Field, the chief justice of __California. To__ [17] President Abraham Lincoln, assuring him of the state's loyalty to the Union in the first year of the Civil War. Two days later, the Pony Express __announced that it would close.__ [18]\n\nThe wire was fragile, and storms, wandering herds, and rotting poles broke it often. Riding the line on horseback, __repairs were made by crews__ [19] wherever a break appeared. Within a few years, the line carried news, prices, and personal messages __daily and every day__ [20], and the ten-day wait between the coasts became a memory."
+    },
+    {
+      "id": "ACT-EN-P3",
+      "title": "Passage III",
+      "text": "On a Tuesday night in Halley, a river town of six thousand people, the only light on Main Street __come__ [21] from a storefront window where a hand-painted sign reads KHLW 91.7 FM. __Inside, a retired mail carrier named Dolores Pike is reading the school lunch menu over the air.__ [22] Her show, which runs from seven to nine, has been on the schedule for eleven years.\n\nKHLW is a low-power FM station, licensed by the Federal Communications Commission to broadcast at one hundred watts. On a clear night its signal __reaching__ [23] about ten miles, far enough to cover the town, the river bottoms, and the first ridge of hills beyond. Its budget comes from bake sales, a yearly auction, and a handful of local __sponsors; the__ [24] hardware store, the feed co-op, and a dentist who reads his own thirty-second spots in a slow, careful voice.\n\nThe station was started in 2009, when a group of neighbors grew tired of driving forty minutes to hear anything but a satellite feed. They applied for a license, raised money __in order to be able to purchase__ [25] a transmitter, and __persuading__ [26] a church to let them bolt an antenna to its steeple. Nobody involved had worked in radio before. \"We learned by making mistakes on the air,\" says Marcus Bell, who manages the station and hosts a Saturday blues program. \"Dead air, wrong records, the __mayors__ [27] name mispronounced. People forgave us because they could hear we were trying.\"\n\nTonight, after Pike signs off, the schedule lists a high school student's hour of video game music, followed by Spanish-language news read by a teacher from the elementary school. The sound quality is __kind of all over the place.__ [28] The jingles are homemade. __Still, many stations across the country have similar problems.__ [29]\n\nPike puts on her coat and turns the microphone over to the student, who is already __nervously, adjusting__ [30] his headphones. On the sidewalk outside, the light from the window spills across the dark street, and for a moment it looks like the brightest thing in town."
+    }
+  ],
+  "questions": [
+    {
+      "id": "ACT-EN-101",
+      "section": "english",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-EN-P1",
+      "domain": "conventions",
+      "skill": "Sentence boundaries",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "[1] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "paving stone it",
+        "paving stone, which it",
+        "paving stone. It"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "The underlined portion joins two independent clauses with only a comma, which creates a comma splice. A period separates them into two complete sentences. Choice B removes the comma and produces a run-on, and choice C makes the second clause a fragment because \"which it was dense\" has no grammatical place in the sentence."
+    },
+    {
+      "id": "ACT-EN-102",
+      "section": "english",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-EN-P1",
+      "domain": "production",
+      "skill": "Topic sentence and cohesion",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "[2] Given that all the choices are true, which one most effectively introduces the paragraph by connecting it to the end of the preceding paragraph?",
+      "options": [
+        "NO CHANGE",
+        "Flour comes in many varieties, from whole wheat to rye.",
+        "Those moods, I soon discovered, depend on how the starter is treated.",
+        "My kitchen has a window that faces south."
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The preceding paragraph ends by saying the starter \"has moods,\" and this paragraph goes on to show the starter sulking after it was neglected. Choice C picks up the word \"moods\" and sets up the story of what happened when the writer left it on the windowsill. The original sentence is accurate but reads like a rule from a manual and makes no link to the previous paragraph; choices B and D introduce details the paragraph never develops."
+    },
+    {
+      "id": "ACT-EN-103",
+      "section": "english",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-EN-P1",
+      "domain": "language",
+      "skill": "Concision",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "[3] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "accumulated itself",
+        "gathered up in a puddle",
+        "collected together in a pool"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "\"Pooled\" says in one word that the liquid gathered on the surface, which fits the plain style of the essay. Choices C and D are redundant, since gathering and collecting already imply a puddle or pool, and \"collected together\" repeats itself. Choice B uses a reflexive pronoun that does not belong with \"accumulated.\""
+    },
+    {
+      "id": "ACT-EN-104",
+      "section": "english",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-EN-P1",
+      "domain": "conventions",
+      "skill": "Possessive pronouns",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "[4] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "its'",
+        "its",
+        "their"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The sentence needs the possessive pronoun that refers to the singular noun \"starter,\" and that pronoun is \"its,\" with no apostrophe. \"It's\" is a contraction of \"it is,\" which makes no sense here. \"Its'\" is not a word, and \"their\" is plural and does not agree with \"a starter.\""
+    },
+    {
+      "id": "ACT-EN-105",
+      "section": "english",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-EN-P1",
+      "domain": "conventions",
+      "skill": "Semicolons and participial phrases",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "[5] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "had recovered. Bubbling",
+        "had recovered, and bubbling",
+        "had recovered, bubbling"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "The phrase \"bubbling as cheerfully as before\" is a participial phrase describing how the starter recovered, so it should be attached to the main clause with a comma. A semicolon or a period can only separate complete sentences, and \"Bubbling as cheerfully as before\" is a fragment. Choice C adds \"and,\" which would require a second verb to pair with \"had recovered.\""
+    },
+    {
+      "id": "ACT-EN-106",
+      "section": "english",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-EN-P1",
+      "domain": "production",
+      "skill": "Relevance and deletion",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "[6] The writer is considering deleting the underlined sentence. Should the sentence be kept or deleted?",
+      "options": [
+        "Kept, because it explains how to fold dough properly.",
+        "Deleted, because it repeats information given earlier in the paragraph.",
+        "Kept, because it states the lesson that the paragraph's examples build toward.",
+        "Deleted, because it shifts the focus away from the starter."
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The paragraph moves from a specific event (the starter's recovery) to a change in the writer's attitude and then to two examples of responding to the dough. The underlined sentence names the lesson those examples illustrate, so it belongs at the end of the paragraph. It does not repeat anything stated earlier, and the paragraph is about the writer's approach, not only the starter, so choice D misreads the focus."
+    },
+    {
+      "id": "ACT-EN-107",
+      "section": "english",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-EN-P1",
+      "domain": "conventions",
+      "skill": "Commas between adjective and noun",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "[7] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "airy crumb.",
+        "airy; crumb.",
+        "airy crumb,"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "No punctuation should separate the adjective \"airy\" from the noun it describes, \"crumb.\" The comma after \"open\" is correct because \"open\" and \"airy\" are coordinate adjectives, but a comma after \"airy\" cuts the adjective off from its noun. A semicolon cannot appear inside a phrase, and choice D ends the sentence with a comma instead of a period."
+    },
+    {
+      "id": "ACT-EN-108",
+      "section": "english",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-EN-P1",
+      "domain": "language",
+      "skill": "Style and tone",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "[8] Which choice is most consistent with the style and tone of the essay?",
+      "options": [
+        "NO CHANGE",
+        "Getting a handle on the dough's whole vibe",
+        "The acquisition of dough-reading competency",
+        "Learning to read the dough, which is something that must be learned,"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The essay is written in a plain, reflective first-person voice, and \"Learning to read the dough\" matches it. Choice B is too casual and slangy, and choice C is stiff and bureaucratic. Choice D adds a clause that simply repeats the idea of learning."
+    },
+    {
+      "id": "ACT-EN-109",
+      "section": "english",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-EN-P1",
+      "domain": "conventions",
+      "skill": "Subject-verb agreement",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "[9] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "were",
+        "have been",
+        "is"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "A subject made of items joined by \"each\" is singular, so the verb must be singular: \"each kitchen, each bag of flour, and each starter is a little different.\" The plural \"are,\" \"were,\" and \"have been\" all fail to agree with \"each.\" The present tense is also right because the sentence states a general truth."
+    },
+    {
+      "id": "ACT-EN-110",
+      "section": "english",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-EN-P1",
+      "domain": "production",
+      "skill": "Conclusions",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "[10] Which choice provides the most effective conclusion to the essay?",
+      "options": [
+        "NO CHANGE",
+        "Sourdough bread is sold in many bakeries around the country.",
+        "I plan to try baking rye bread next year.",
+        "The jar is made of glass and holds about a quart."
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The essay opens by calling the starter alive and moody, and the original sentence returns to that idea, giving the piece a sense of closure. Choice B shifts to a general fact about bakeries, and choice C introduces a new plan that the essay never prepares for. Choice D ends on a trivial physical detail that has nothing to do with the essay's point."
+    },
+    {
+      "id": "ACT-EN-111",
+      "section": "english",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-EN-P2",
+      "domain": "conventions",
+      "skill": "Relative pronouns",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "[11] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "who's",
+        "which",
+        "that it's"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The sentence needs a possessive relative pronoun to show that the riders belonged to the Pony Express, and \"whose\" is that pronoun. \"Who's\" means \"who is,\" which does not fit. \"Which riders galloped\" does not show possession, and \"that it's riders\" is both ungrammatical and uses the wrong form of \"its.\""
+    },
+    {
+      "id": "ACT-EN-112",
+      "section": "english",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-EN-P2",
+      "domain": "conventions",
+      "skill": "Verb tense",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "[12] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "passes",
+        "had passed",
+        "will have passed"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The paragraph describes events of 1861 in the past tense, and Congress acted in 1860, before those events. The past perfect \"had passed\" places the act before the rest of the story. \"Has passed\" is present perfect, which suggests the action continues into the present, and \"passes\" and \"will have passed\" are the wrong time frame entirely."
+    },
+    {
+      "id": "ACT-EN-113",
+      "section": "english",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-EN-P2",
+      "domain": "production",
+      "skill": "Relevance of added material",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "[13] At this point, the writer is considering adding the following sentence after the underlined sentence:\n\nSibley had been born in Massachusetts in 1807.\n\nShould the writer make this addition?",
+      "options": [
+        "Yes, because it gives background on an important figure in the project.",
+        "Yes, because it explains why Western Union won the contract.",
+        "No, because the paragraph already states where Sibley was born.",
+        "No, because it interrupts the paragraph's account of how the work was organized with an unrelated detail."
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "The paragraph explains how the line was authorized and how the construction was split between two companies, and it ends by saying where the lines would meet. Sibley's birthplace has no bearing on that account, so adding it would break the paragraph's focus. Choice A overstates the value of the detail, choice B is not what the sentence does, and choice C is false because the paragraph never mentions his birth."
+    },
+    {
+      "id": "ACT-EN-114",
+      "section": "english",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-EN-P2",
+      "domain": "language",
+      "skill": "Style consistency",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "[14] Which choice is most consistent with the plain, direct style of the passage?",
+      "options": [
+        "NO CHANGE",
+        "more than",
+        "upward and beyond",
+        "to the tune of"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The passage uses simple, direct language, and \"more than two hundred miles\" matches it. \"In excess of\" is a stiff business phrase, \"to the tune of\" is a colloquial idiom better suited to sums of money, and \"upward and beyond\" is not a standard phrase at all."
+    },
+    {
+      "id": "ACT-EN-115",
+      "section": "english",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-EN-P2",
+      "domain": "conventions",
+      "skill": "Nonrestrictive clauses",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "[15] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "Buffalo, which found the new poles ideal for scratching knocked",
+        "Buffalo which found the new poles ideal for scratching, knocked",
+        "Buffalo, which found the new poles ideal for scratching, knocked"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "The clause \"which found the new poles ideal for scratching\" adds information about buffalo in general rather than limiting which buffalo are meant, so it is nonrestrictive and must be set off by commas on both sides. The original has no commas, and choices B and C each supply only one, which leaves the clause half enclosed."
+    },
+    {
+      "id": "ACT-EN-116",
+      "section": "english",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-EN-P2",
+      "domain": "conventions",
+      "skill": "Pronoun clarity",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "[16] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "it.",
+        "the animals.",
+        "those ones."
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "\"Them\" is ambiguous because the sentence already uses \"them\" for the poles (\"some of them down\"), and \"crews\" is the nearest plural noun. Replacing the pronoun with \"the animals\" makes clear that the spikes were meant to discourage the buffalo. \"It\" has no singular antecedent, and \"those ones\" is both vague and nonstandard."
+    },
+    {
+      "id": "ACT-EN-117",
+      "section": "english",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-EN-P2",
+      "domain": "conventions",
+      "skill": "Sentence fragments",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "[17] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "California, to",
+        "California; to",
+        "California, and to"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The phrase beginning \"To President Abraham Lincoln\" tells where the message went and cannot stand alone as a sentence, so the period creates a fragment. A comma keeps the phrase attached to the main clause. A semicolon, like a period, requires a complete clause on each side, and \"and to\" wrongly suggests a second item in a list."
+    },
+    {
+      "id": "ACT-EN-118",
+      "section": "english",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-EN-P2",
+      "domain": "production",
+      "skill": "Emphasis and rhetorical effect",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "[18] Given that all the choices are accurate, which one best emphasizes how quickly the telegraph replaced the older service?",
+      "options": [
+        "NO CHANGE",
+        "closed after operating for about eighteen months.",
+        "closed, made obsolete overnight.",
+        "closed, and its horses and stations were sold."
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The phrase \"made obsolete overnight\" directly stresses how suddenly the telegraph made the Pony Express unnecessary, which is the point of the sentence. Choice B emphasizes the length of the service rather than the speed of its end, and choice D adds a detail about selling equipment that says nothing about speed. The original states the closing without any emphasis."
+    },
+    {
+      "id": "ACT-EN-119",
+      "section": "english",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-EN-P2",
+      "domain": "conventions",
+      "skill": "Dangling modifiers",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "[19] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "the repairs of crews happened",
+        "it was crews who made repairs",
+        "crews made repairs"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "The opening phrase \"Riding the line on horseback\" must describe the subject that follows it, and only crews, not repairs, can ride. \"Crews made repairs\" puts the right subject next to the modifier. The original and choice B make the repairs do the riding, and choice C is grammatical but needlessly wordy."
+    },
+    {
+      "id": "ACT-EN-120",
+      "section": "english",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-EN-P2",
+      "domain": "language",
+      "skill": "Redundancy",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "[20] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "daily",
+        "daily, each and every day",
+        "on a daily basis every day"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "\"Daily\" already means every day, so pairing it with \"every day\" or \"each and every day\" is redundant. The single word states the idea clearly and matches the economy of the rest of the passage. Choices C and D only add more repetition."
+    },
+    {
+      "id": "ACT-EN-121",
+      "section": "english",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-EN-P3",
+      "domain": "conventions",
+      "skill": "Subject-verb agreement",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "[21] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "are coming",
+        "comes",
+        "have come"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The subject of the sentence is \"light,\" which is singular; \"on Main Street\" is a prepositional phrase that does not change the subject. The singular verb \"comes\" agrees with it. \"Come,\" \"are coming,\" and \"have come\" are all plural forms."
+    },
+    {
+      "id": "ACT-EN-122",
+      "section": "english",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-EN-P3",
+      "domain": "production",
+      "skill": "Supporting details",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "[22] The writer is considering adding the following sentence after the underlined sentence:\n\nTomorrow is tacos, she tells her listeners, and the cafeteria is out of chocolate milk again.\n\nShould the writer make this addition?",
+      "options": [
+        "Yes, because it explains why Pike retired from the postal service.",
+        "Yes, because it offers a specific detail that illustrates the local, informal character of the broadcast.",
+        "No, because the menu has already been described in detail.",
+        "No, because it contradicts the claim that the show has run for eleven years."
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The paragraph is painting a picture of a small-town station, and a line about tacos and chocolate milk shows exactly what that homespun broadcast sounds like. The sentence says nothing about why Pike retired, the menu has not been described in any detail, and nothing in it conflicts with the show's eleven-year run."
+    },
+    {
+      "id": "ACT-EN-123",
+      "section": "english",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-EN-P3",
+      "domain": "conventions",
+      "skill": "Verb forms",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "[23] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "reach",
+        "having reached",
+        "reaches"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "The sentence needs a main verb for the subject \"signal,\" and the participles \"reaching\" and \"having reached\" cannot serve as one, leaving a fragment. \"Reaches\" is the singular present-tense verb that agrees with \"signal\" and matches the present tense of the surrounding sentences. \"Reach\" is plural."
+    },
+    {
+      "id": "ACT-EN-124",
+      "section": "english",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-EN-P3",
+      "domain": "conventions",
+      "skill": "Colons and lists",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "[24] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "sponsors: the",
+        "sponsors. The",
+        "sponsors the"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The words after \"sponsors\" are a list that names the sponsors, and a colon is the mark that introduces a list after a complete clause. A semicolon must have a complete clause on each side, and the list is not a clause, so the original and choice C (which makes the list a fragment) are wrong. With no punctuation at all, the list runs into \"sponsors\" and the sentence becomes confusing."
+    },
+    {
+      "id": "ACT-EN-125",
+      "section": "english",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-EN-P3",
+      "domain": "language",
+      "skill": "Concision",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "[25] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "so as to be in a position to buy",
+        "for the purchasing of",
+        "for"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "\"Raised money for a transmitter\" says everything the longer phrases say in a single word. The original and choice B pile up words to express a simple purpose, and \"for the purchasing of\" turns a plain verb into an awkward noun phrase."
+    },
+    {
+      "id": "ACT-EN-126",
+      "section": "english",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-EN-P3",
+      "domain": "conventions",
+      "skill": "Parallel structure",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "[26] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "to persuade",
+        "persuaded",
+        "had persuaded"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The sentence lists three things the neighbors did: \"applied,\" \"raised,\" and a third verb that must match them in form. The simple past \"persuaded\" is parallel. \"Persuading\" and \"to persuade\" break the pattern, and \"had persuaded\" shifts to the past perfect for no reason."
+    },
+    {
+      "id": "ACT-EN-127",
+      "section": "english",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-EN-P3",
+      "domain": "conventions",
+      "skill": "Apostrophes",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "[27] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "mayor's",
+        "mayors'",
+        "mayor"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The name belongs to one mayor, so the singular possessive \"mayor's\" is needed. \"Mayors\" is a plural with no possessive, \"mayors'\" would mean the name of several mayors, and \"mayor name\" leaves out the possessive altogether."
+    },
+    {
+      "id": "ACT-EN-128",
+      "section": "english",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-EN-P3",
+      "domain": "language",
+      "skill": "Tone",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "[28] Which choice is most consistent with the style and tone of the passage?",
+      "options": [
+        "NO CHANGE",
+        "a hot mess.",
+        "uneven.",
+        "not what it could be in terms of consistency."
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The passage is written in a measured, observational voice, and \"uneven\" describes the sound quality in that register. \"Kind of all over the place\" and \"a hot mess\" are too casual for the surrounding prose, and choice D is a roundabout way of saying the same thing."
+    },
+    {
+      "id": "ACT-EN-129",
+      "section": "english",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-EN-P3",
+      "domain": "production",
+      "skill": "Conclusions and unity",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "[29] Which choice best concludes the paragraph by connecting the station's shortcomings to what makes it valuable?",
+      "options": [
+        "NO CHANGE",
+        "The station has applied for a grant to buy new equipment.",
+        "Video game music has become popular with younger listeners.",
+        "But the station is often the only place on the dial where you hear the name of someone you know."
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "The paragraph has just listed the station's flaws, so the best ending turns from those flaws to the reason listeners value it anyway, which choice D does with \"But.\" The original sentence compares KHLW to other stations rather than saying why it matters. Choice B is about future equipment and choice C about music trends, and neither addresses the station's value to its town."
+    },
+    {
+      "id": "ACT-EN-130",
+      "section": "english",
+      "test": 1,
+      "module": 1,
+      "stimulusId": "ACT-EN-P3",
+      "domain": "conventions",
+      "skill": "Adverbs and participial phrases",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "[30] Which choice is best for the underlined portion?",
+      "options": [
+        "NO CHANGE",
+        "nervously adjusting",
+        "nervously adjusting,",
+        "nervously; adjusting"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The adverb \"nervously\" modifies \"adjusting,\" and no punctuation should come between them. The original comma separates the adverb from the verb it describes, choice C puts a stray comma between \"adjusting\" and its object \"his headphones,\" and a semicolon cannot appear inside a phrase."
+    }
+  ]
+}

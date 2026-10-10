@@ -1,1 +1,623 @@
-[]
+[
+  {
+    "id": "SAT-RW-601",
+    "section": "rw",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "craftStructure",
+    "skill": "Words in context",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "For decades neuroscientists assumed that once a memory had been stored, its physical trace in the brain was essentially ______: the connections encoding it might weaken with time, but they would not be actively rewritten. Research on reconsolidation has overturned that assumption, showing that each time a memory is recalled it briefly becomes malleable and can be altered before it is stored again.",
+    "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+    "options": [
+      "accessible",
+      "fragile",
+      "fixed",
+      "extensive"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The colon explains the blank: the connections might weaken but would not be rewritten, so the trace was assumed to be fixed, which is exactly what reconsolidation research overturned. \"Fragile\" is the strongest distractor, but it describes the opposite of a trace that resists being rewritten, and \"accessible\" concerns retrieval rather than whether the trace changes."
+  },
+  {
+    "id": "SAT-RW-602",
+    "section": "rw",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "craftStructure",
+    "skill": "Words in context",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "The Jacquard loom, introduced in 1804, used chains of punched cards to control which warp threads were raised on each pass of the shuttle. Because the cards could be rearranged without altering the loom itself, a weaver could produce an entirely new pattern simply by substituting one set of cards for another. Historians of computing have therefore characterized the device as a ______ of programmable machinery: the pattern was stored separately from the mechanism that executed it.",
+    "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+    "options": [
+      "byproduct",
+      "precursor",
+      "refinement",
+      "curiosity"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The loom predates programmable machines and shares their defining feature, a stored set of instructions separate from the mechanism, so it is best described as a precursor, something that comes before and anticipates a later development. \"Refinement\" is the strongest distractor, but a refinement improves on something that already exists, whereas the loom came first; \"byproduct\" would make the loom a side effect of programmable machinery rather than an ancestor of it."
+  },
+  {
+    "id": "SAT-RW-603",
+    "section": "rw",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "craftStructure",
+    "skill": "Words in context",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "Philosopher of science Imre Lakatos argued that a scientific theory is rarely abandoned because of a single contrary observation. Scientists instead protect the theory's central assumptions with a belt of auxiliary hypotheses that can be adjusted as anomalies accumulate. Such adjustments are not necessarily ______; in Lakatos's view a research program is degenerating only when its modifications serve merely to accommodate old failures and no longer predict anything new.",
+    "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+    "options": [
+      "deliberate",
+      "provisional",
+      "comprehensive",
+      "illegitimate"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The sentence concedes that adjustments are \"not necessarily\" something bad and then specifies the only condition under which a program is degenerating, so the blank needs a word of disapproval such as \"illegitimate.\" \"Provisional\" is the strongest distractor, but the semicolon clause does not address whether adjustments are temporary, and \"deliberate\" is not a fault that the text's qualification would need to soften."
+  },
+  {
+    "id": "SAT-RW-604",
+    "section": "rw",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "craftStructure",
+    "skill": "Words in context",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "In \"Song of Myself\" (1855), Walt Whitman declines to present himself as an authority whose vision readers should simply adopt. \"You shall not look through my eyes either, nor take things from me,\" the speaker insists; readers must instead \"listen to all sides and filter them from your self.\" The poem's ______ of the reader's independent judgment sets it apart from much of the devotional and didactic verse of the period, which assumed that the poet's role was to instruct.",
+    "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+    "options": [
+      "endorsement",
+      "anticipation",
+      "suspicion",
+      "imitation"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The quoted lines tell readers not to rely on the poet but to judge for themselves, so the poem endorses the reader's independent judgment, and that stance is what distinguishes it from verse meant to instruct. \"Anticipation\" is the strongest distractor because the poem does look ahead to what readers will do, but the contrast with didactic verse turns on approval of independent judgment, not on predicting it; \"suspicion\" reverses the poem's attitude."
+  },
+  {
+    "id": "SAT-RW-605",
+    "section": "rw",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "craftStructure",
+    "skill": "Text structure and purpose",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "The cleaning of Michelangelo's Sistine Chapel ceiling in the 1980s removed centuries of soot, animal glue, and earlier retouching to reveal colors far brighter than most scholars had expected. __Some critics protested that the restorers had stripped away a layer of shading that Michelangelo himself applied after the plaster dried, and that the brilliance everyone now admired was a distortion rather than a recovery.__ The restoration team answered that the layer in question was chemically consistent with later varnish, not with sixteenth-century pigment. The dispute was never fully settled, in part because the only decisive evidence, the surface as it existed before the cleaning, no longer existed.",
+    "stem": "Which choice best describes the function of the underlined sentence in the text as a whole?",
+    "options": [
+      "It explains why the colors uncovered by the restoration were brighter than scholars had anticipated.",
+      "It presents an objection to the restoration that the following sentence answers but that the text ultimately leaves unresolved.",
+      "It concedes that the critics were correct about the origin of the layer the restorers removed.",
+      "It describes the methods the restorers used to distinguish original pigment from later additions."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The underlined sentence introduces the critics' objection, the next sentence gives the restorers' reply, and the final sentence says the dispute was never settled, so the sentence sets up an unresolved disagreement. Choice C is the strongest distractor because the text does treat the objection seriously, but the text never says the critics were right; it says the question could not be decided."
+  },
+  {
+    "id": "SAT-RW-606",
+    "section": "rw",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "craftStructure",
+    "skill": "Text structure and purpose",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Until the 1970s, oceanographers believed that deep-sea ecosystems depended entirely on organic matter sinking from sunlit surface waters, a trickle too thin to support anything but sparse, slow-growing life. Then, in 1977, a submersible exploring the Galapagos Rift found hydrothermal vents surrounded by dense colonies of tube worms, clams, and crabs. Subsequent analysis showed that bacteria at the vents were converting hydrogen sulfide in the vent fluid into usable energy, a process called chemosynthesis, and that the animals were living directly or indirectly on these bacteria. The finding established that sunlight was not the only energy source capable of sustaining a complex ecosystem.",
+    "stem": "Which choice best describes the overall structure of the text?",
+    "options": [
+      "It describes two competing explanations for deep-sea life and shows how a discovery favored one over the other.",
+      "It summarizes a discovery, lists the organisms involved, and questions whether the discovery was as significant as first claimed.",
+      "It states a long-held assumption, recounts a discovery that contradicted it, and explains the mechanism that accounted for the discovery.",
+      "It introduces a scientific method, applies it to a specific site, and discusses its limitations."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The text moves from the pre-1970s assumption, to the 1977 vent discovery that contradicted it, to the explanation (chemosynthesis) and the conclusion drawn from it. Choice A is the strongest distractor, but the text presents only one explanation before the discovery, not two competing ones, and the discovery overturned that view rather than choosing between rivals."
+  },
+  {
+    "id": "SAT-RW-607",
+    "section": "rw",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "craftStructure",
+    "skill": "Cross-text connections",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "**Text 1**\n\nCourts have long treated eyewitness testimony as among the most persuasive forms of evidence, reasoning that a witness who was present has direct access to what occurred. Legal scholar Renata Oyelaran argues that this trust is largely warranted when a witness is questioned soon after the event and before exposure to other accounts, since the memory has had little opportunity to be contaminated.\n\n**Text 2**\n\nNeuroscientist Daniel Haskvitz notes that recalling a memory does not simply read out a stored record; it reactivates the memory and leaves it briefly open to modification before it is stored again. In his laboratory, participants who described a filmed event the next day incorporated details from the questions they were asked, even when those questions contained no false information. Haskvitz concludes that being questioned is itself a potential source of distortion.",
+    "stem": "Based on the texts, how would the author of Text 2 most likely respond to the claim in Text 1?",
+    "options": [
+      "By agreeing that early questioning preserves accuracy but adding that later questioning offers no further benefit.",
+      "By arguing that courts should rely on filmed evidence rather than on witnesses' descriptions of events.",
+      "By suggesting that the contamination Oyelaran describes occurs only when a witness is exposed to false information.",
+      "By contending that questioning a witness, even promptly and without exposure to other accounts, can alter the memory being reported."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Oyelaran claims that prompt questioning before exposure to other accounts leaves memory largely uncontaminated; Haskvitz's finding is that the questioning itself modifies the memory, even the next day and even without false information, so he would dispute the conditions she considers safe. Choice C is the strongest distractor, but it reverses Haskvitz's point: his participants were distorted by questions containing no false information, so exposure to falsehood is not required."
+  },
+  {
+    "id": "SAT-RW-608",
+    "section": "rw",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "craftStructure",
+    "skill": "Cross-text connections",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "**Text 1**\n\nA census that attempts to count every resident directly is the gold standard of demographic measurement. Statistician Pilar Echevarria maintains that sampling, however carefully designed, introduces a margin of error that a full enumeration does not, and that because census counts determine political representation, even small errors carry consequences that justify the far greater cost of counting everyone.\n\n**Text 2**\n\nFull enumerations are never actually complete. Residents who move frequently, share housing informally, or distrust government agencies are missed at rates that vary systematically by region and income, so the resulting undercount is not random. Demographer Kwame Asante-Boateng argues that a well-designed sample, adjusted with follow-up surveys, can estimate these hard-to-count populations more accurately than an enumeration that simply records their absence.",
+    "stem": "Based on the texts, how would the author of Text 2 most likely respond to the claim in Text 1?",
+    "options": [
+      "By questioning whether the freedom from error that Echevarria attributes to full enumeration is actually achieved in practice.",
+      "By agreeing that full enumeration is more accurate than sampling but arguing that its cost is prohibitive.",
+      "By conceding that sampling introduces error but maintaining that political representation should not depend on census counts.",
+      "By arguing that the populations missed by a census are too small to affect the accuracy of the overall count."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Text 1 rests on the premise that a full enumeration has no margin of error; Text 2 opens by denying that enumerations are ever complete and describes a systematic undercount, so its author would challenge that premise directly. Choice B is the strongest distractor because Text 1 mentions cost, but Text 2 never concedes that enumeration is more accurate; its whole point is that sampling can be more accurate for hard-to-count groups."
+  },
+  {
+    "id": "SAT-RW-609",
+    "section": "rw",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "infoIdeas",
+    "skill": "Central ideas and details",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "The following text is adapted from Kate Chopin's 1899 novel The Awakening. Edna Pontellier has begun spending her afternoons painting rather than receiving visitors.\n\nEdna had taken to climbing to the atelier at the top of the house whenever the light allowed, where she worked at her sketches with an absorption that surprised even her. Her husband regarded the new habit with a mixture of indulgence and irritation; it was not that he objected to her painting, he said, but that she seemed to let the household go to pieces in pursuit of it. Edna heard him out and did not alter her hours. She was aware that her work had not yet acquired the merit that would justify the time she gave it, but she had begun to feel that the justification lay somewhere other than in the result.",
+    "stem": "Which choice best states the main idea of the text?",
+    "options": [
+      "Edna's husband forbids her from painting because it distracts her from managing the household.",
+      "Edna continues to devote herself to painting despite her husband's complaints and her own doubts about her work, because the activity has come to matter to her for reasons beyond its results.",
+      "Edna's painting has improved so much that she feels justified in neglecting her domestic duties.",
+      "Edna takes up painting mainly as a way to avoid receiving visitors in the afternoons."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The text describes Edna's absorption in painting, her husband's objection, her refusal to change, and her sense that the activity's value lies outside its product, which choice B captures in full. Choice C is the strongest distractor, but the text says the opposite: her work has \"not yet acquired the merit\" that would justify the time, and her justification comes from elsewhere."
+  },
+  {
+    "id": "SAT-RW-610",
+    "section": "rw",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "infoIdeas",
+    "skill": "Central ideas and details",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "The following text is from Phillis Wheatley's 1773 poem \"On Imagination.\"\n\nThough Winter frowns to Fancy's raptur'd eyes\nThe fields may flourish, and gay scenes arise;\nThe frozen deeps may break their iron bands,\nAnd bid their waters murmur o'er the sands.\nFair Flora may resume her fragrant reign,\nAnd with her flow'ry riches deck the plain;\nSylvanus may diffuse his honours round,\nAnd all the forest may with leaves be crown'd:\nShow'rs may descend, and dews their gems disclose,\nAnd nectar sparkle on the blooming rose.",
+    "stem": "Which choice best describes what the text suggests about the power of imagination (\"Fancy\")?",
+    "options": [
+      "It causes the seasons to change more quickly than they otherwise would.",
+      "It is most active during winter, when the natural world offers little to observe.",
+      "It allows the mind to perceive the abundance of spring even while winter persists in the physical world.",
+      "It reveals that the frozen landscape is more beautiful than the flourishing one."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The opening couplet sets the condition (\"Though Winter frowns\") and the rest of the passage lists what Fancy's eyes \"may\" nonetheless see: flourishing fields, thawed waters, flowers, leafy forests. The scenes are imagined, not actual, so choice A, the strongest distractor, overstates the claim; the poem never says the seasons themselves change, only that imagination can see past them."
+  },
+  {
+    "id": "SAT-RW-611",
+    "section": "rw",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "infoIdeas",
+    "skill": "Command of evidence (textual)",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Textile historian Lena Marchetti argues that the rapid adoption of cotton cloth in eighteenth-century England owed less to fashion than to practicality. Cotton could be laundered in hot water and printed with dyes that survived washing, whereas wool shrank and felted when boiled and took color unevenly. In Marchetti's account, cotton's appeal lay chiefly in the ease with which it could be kept clean.",
+    "stem": "Which finding, if true, would most directly support Marchetti's argument?",
+    "options": [
+      "Household inventories from the period show that cotton was adopted earliest for items such as bed linens and undergarments that were washed most often, and only later for outer garments.",
+      "Fashion periodicals of the period frequently praised the lightness and drape of imported cotton fabrics.",
+      "The price of raw cotton fell steadily through the eighteenth century as imports from colonial plantations increased.",
+      "Wool remained the dominant fiber for English outer garments until the middle of the nineteenth century."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "If cotton was taken up first for the items that were washed most often, the pattern of adoption tracks washability, which is exactly the practical advantage Marchetti emphasizes. Choice C is the strongest distractor because falling prices would help explain rapid adoption, but price is a different explanation from ease of cleaning and so does not support her specific claim; choice B supports the fashion explanation she argues against."
+  },
+  {
+    "id": "SAT-RW-612",
+    "section": "rw",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "infoIdeas",
+    "skill": "Command of evidence (textual)",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "Art historian Jiro Takemura contends that the Dutch painter Johannes Vermeer's reputation as a solitary genius laboring in obscurity is largely a nineteenth-century invention. Vermeer, Takemura notes, served as an officer of the painters' guild in Delft, and his pictures commanded high prices from local collectors during his lifetime. The image of the neglected master, Takemura suggests, says more about the romantic preferences of the critics who revived his work than about Vermeer's actual circumstances.",
+    "stem": "Which quotation from a critic writing in the 1860s would most directly support Takemura's suggestion about the origins of Vermeer's reputation?",
+    "options": [
+      "\"The painter's command of light has no equal among his countrymen, and his canvases deserve a place beside the greatest works of the Dutch school.\"",
+      "\"Records of the Delft guild confirm that the painter held office among his peers and was esteemed by the collectors of his city.\"",
+      "\"So few of the painter's works survive that any judgment of his achievement must remain provisional.\"",
+      "\"Here was a painter who asked nothing of his age and received nothing from it, content to labor unseen in a provincial town while lesser men enjoyed the applause of the public.\""
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Takemura's suggestion is that nineteenth-century critics constructed the image of a neglected genius; a critic of the 1860s describing Vermeer as laboring unseen and unrewarded is a direct instance of that construction. Choice B is the strongest distractor because it agrees with Takemura's facts about the guild, but a critic acknowledging Vermeer's standing would undercut, not support, the claim that critics invented his obscurity."
+  },
+  {
+    "id": "SAT-RW-613",
+    "section": "rw",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "infoIdeas",
+    "skill": "Command of evidence (quantitative)",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "Oceanographers use Argo floats, instruments that drift at depth and rise periodically to the surface, to measure how heat is distributed through the ocean. A research team compared the average temperature increase at four depth ranges in a region of the North Atlantic between 2005 and 2020 with the increase recorded by ship-based surveys in the same region between 1990 and 2005.\n\n| Depth range (meters) | Increase, 1990-2005 (degrees C) | Increase, 2005-2020 (degrees C) |\n|---|---|---|\n| 0-200 | 0.31 | 0.22 |\n| 200-700 | 0.14 | 0.19 |\n| 700-2,000 | 0.05 | 0.12 |\n| Below 2,000 | 0.01 | 0.04 |\n\nThe team concluded that warming in the region shifted toward deeper layers over the later period, noting that ______",
+    "stem": "Which choice most effectively uses data from the table to complete the statement?",
+    "options": [
+      "the 0-200 meter range showed the largest increase in both periods, at 0.31 and 0.22 degrees C.",
+      "the increase in the 0-200 meter range fell from 0.31 to 0.22 degrees C between the two periods, while the increase in the 700-2,000 meter range more than doubled, from 0.05 to 0.12 degrees C.",
+      "the increase below 2,000 meters was the smallest of any depth range in both periods.",
+      "the 200-700 meter range warmed by 0.19 degrees C between 2005 and 2020, more than the 700-2,000 meter range warmed in the same period."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A shift toward deeper layers is shown by comparing the two periods: the shallowest range warmed less in the later period while a deep range warmed much more, which is exactly the comparison in choice B. Choice A is the strongest distractor because its figures are accurate, but the surface range having the largest increase in both periods does not show a shift toward depth; if anything it suggests continuity."
+  },
+  {
+    "id": "SAT-RW-614",
+    "section": "rw",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "infoIdeas",
+    "skill": "Inferences",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Philosopher Karl Popper proposed that what distinguishes a scientific theory from a nonscientific one is falsifiability: a genuine scientific claim must specify some possible observation that would show it to be false. A theory that can accommodate any conceivable result, Popper argued, tells us nothing about the world, however satisfying its explanations may feel. On this criterion, the value of a theory lies not in how much it explains but in how much it forbids. It follows that a theory which is repeatedly revised so that no observation could ever count against it ______",
+    "stem": "Which choice most logically completes the text?",
+    "options": [
+      "becomes less scientific, in Popper's sense, even as it appears to account for more observations.",
+      "should be accepted once its revisions have been confirmed by enough observations.",
+      "is more likely to be true than a theory that makes narrow, risky predictions.",
+      "demonstrates that the original version of the theory was never falsifiable."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "By Popper's criterion a theory's scientific standing depends on what it forbids, so revising a theory until nothing could count against it strips away its standing even while it seems to explain more. Choice D is the strongest distractor, but the text describes a theory that is made unfalsifiable through repeated revision, which implies the original version did forbid something; nothing suggests it was unfalsifiable from the start."
+  },
+  {
+    "id": "SAT-RW-615",
+    "section": "rw",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "infoIdeas",
+    "skill": "Inferences",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "Demographers estimating a country's population between censuses rely on the components method: the last census count, plus births, minus deaths, plus net migration. Births and deaths are registered almost completely in most wealthy countries, so errors in these estimates arise mainly from migration, which is recorded inconsistently and, in the case of departures, often not at all. When the next census is taken, the gap between the estimate and the count is treated as a measure of the estimate's quality. Because departures are the least reliably recorded component, demographers expect that in a country experiencing substantial emigration, intercensal estimates will tend to ______",
+    "stem": "Which choice most logically completes the text?",
+    "options": [
+      "understate the population, since the births of emigrants' children abroad are not registered.",
+      "match the next census closely, since emigration and immigration generally offset each other.",
+      "overstate the population, since people who have left continue to be counted as residents until the next census corrects the figure.",
+      "become more accurate over time as the registration of births and deaths improves."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "If departures often go unrecorded, the components method keeps emigrants in the running total, so where emigration is substantial the estimate will exceed the true population until a census removes them. Choice A is the strongest distractor because it also invokes unrecorded events, but births abroad are not part of the country's population and would not push the estimate below the count; choice D ignores that the text locates the error in migration, not in birth and death registration."
+  },
+  {
+    "id": "SAT-RW-616",
+    "section": "rw",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "conventions",
+    "skill": "Boundaries",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "Synaptic connections in the hippocampus strengthen when two neurons fire together ______ this process, called long-term potentiation, is thought to underlie the formation of new memories.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "repeatedly,",
+      "repeatedly",
+      "repeatedly, which",
+      "repeatedly;"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The text contains two independent clauses, so a semicolon is needed to join them. Choice A, the strongest distractor, creates a comma splice, choice B creates a run-on sentence, and choice C leaves \"which\" without a clause it can grammatically introduce."
+  },
+  {
+    "id": "SAT-RW-617",
+    "section": "rw",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "conventions",
+    "skill": "Boundaries",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Jan van Eyck's Ghent Altarpiece, ______ was cleaned between 2012 and 2019, and conservators found that the face of the central lamb had been overpainted in the sixteenth century.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "a polyptych completed in 1432,",
+      "a polyptych completed in 1432;",
+      "a polyptych completed in 1432",
+      "a polyptych that was completed in 1432, it"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "\"A polyptych completed in 1432\" is a nonessential appositive describing the altarpiece, so it must be set off by commas on both sides. Choice C is the strongest distractor because it supplies the appositive, but it drops the closing comma; choice B uses a semicolon where no independent clause precedes it, and choice D adds a second subject, \"it,\" that duplicates \"Altarpiece.\""
+  },
+  {
+    "id": "SAT-RW-618",
+    "section": "rw",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "conventions",
+    "skill": "Boundaries",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "Every Argo float follows the same ten-day ______ a descent to a parking depth of 1,000 meters, nine days of drifting with the current, a further descent to 2,000 meters, and a rise to the surface during which temperature and salinity are recorded.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "routine;",
+      "routine, consisting of:",
+      "routine:",
+      "routine,"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The independent clause \"Every Argo float follows the same ten-day routine\" is followed by a list that spells out that routine, so a colon is the correct way to introduce it. Choice D is the strongest distractor, but a comma leaves the list awkwardly attached and does not signal that what follows explains the routine; choice A requires an independent clause after the semicolon, and choice B wrongly places a colon directly after the preposition \"of.\""
+  },
+  {
+    "id": "SAT-RW-619",
+    "section": "rw",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "conventions",
+    "skill": "Boundaries",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Scholars once read The Awakening, ______ as a cautionary tale about a woman's moral collapse; more recent critics treat Edna Pontellier's withdrawal from her social role as a form of self-discovery.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "Kate Chopin's 1899 novel",
+      "Kate Chopin's 1899 novel,",
+      "Kate Chopin's 1899 novel;",
+      "which is Kate Chopin's 1899 novel"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The appositive \"Kate Chopin's 1899 novel\" is nonessential and interrupts the main clause, so it needs a comma after it to match the comma before it. Choice A, the strongest distractor, omits that closing comma; choice C breaks the sentence with a semicolon before \"as,\" and choice D turns the appositive into a relative clause but still fails to close it with a comma."
+  },
+  {
+    "id": "SAT-RW-620",
+    "section": "rw",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "conventions",
+    "skill": "Form, structure, and sense",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "The collection of spindle whorls, loom weights, and needle fragments recovered from the site ______ that textile production was a significant household activity in the Bronze Age settlement.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "indicate",
+      "indicates",
+      "are indicating",
+      "have indicated"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The subject of the sentence is the singular noun \"collection,\" so the verb must be singular: \"indicates.\" Choice A is the strongest distractor because the plural nouns \"whorls,\" \"weights,\" and \"fragments\" sit nearest the verb, but they are objects of the preposition \"of\" and do not govern agreement."
+  },
+  {
+    "id": "SAT-RW-621",
+    "section": "rw",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "conventions",
+    "skill": "Form, structure, and sense",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Walt Whitman revised Leaves of Grass repeatedly between 1855 and 1892, adding poems, deleting others, and rearranging the whole; by the time of his death, the collection ______ from the twelve poems of the first edition to nearly four hundred.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "has grown",
+      "grows",
+      "had grown",
+      "will have grown"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The growth was completed before a past reference point, \"the time of his death,\" so the past perfect \"had grown\" is required. Choice A is the strongest distractor, but the present perfect connects a past action to the present rather than to an earlier past moment, and the surrounding verbs (\"revised\") are in the past tense."
+  },
+  {
+    "id": "SAT-RW-622",
+    "section": "rw",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "conventions",
+    "skill": "Form, structure, and sense",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Having assembled thousands of sonar soundings into the first detailed profiles of the Atlantic floor in the 1950s, ______ were able to show that a continuous rift valley ran along the crest of the Mid-Atlantic Ridge.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "options": [
+      "the hypothesis of Marie Tharp and Bruce Heezen",
+      "Marie Tharp and Bruce Heezen",
+      "it was Marie Tharp and Bruce Heezen who",
+      "Marie Tharp and Bruce Heezen's profiles"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The introductory participial phrase \"Having assembled thousands of sonar soundings\" must modify the people who did the assembling, so the subject that follows the comma must be Tharp and Heezen themselves. Choice C is the strongest distractor because it names them, but it makes the expletive \"it\" the subject the phrase modifies, creating a dangling modifier; choices A and D make a hypothesis or a set of profiles the ones who assembled the soundings."
+  },
+  {
+    "id": "SAT-RW-623",
+    "section": "rw",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "expressionIdeas",
+    "skill": "Rhetorical synthesis",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Phillis Wheatley was brought to Boston from West Africa as a child in 1761 and enslaved by the Wheatley family.\n- She learned to read English, Latin, and Greek within a few years.\n- Her collection Poems on Various Subjects, Religious and Moral was published in London in 1773.\n- It was the first book of poetry published by an African American author.\n- Before publication, a group of prominent Boston men signed a statement attesting that she had written the poems herself.\n\nThe student wants to emphasize the historical significance of Wheatley's book. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "stem": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "options": [
+      "Published in London in 1773, Wheatley's Poems on Various Subjects, Religious and Moral was the first book of poetry by an African American author.",
+      "Wheatley was brought to Boston from West Africa in 1761 and learned to read English, Latin, and Greek within a few years.",
+      "Before Wheatley's book was published, a group of prominent Boston men signed a statement attesting that she had written the poems herself.",
+      "Wheatley's collection, Poems on Various Subjects, Religious and Moral, was published in London rather than in Boston."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The book's historical significance is captured by the note that it was the first book of poetry by an African American author, which choice A states directly along with the date and place of publication. Choice C is the strongest distractor because the attestation is historically interesting, but it concerns doubts about authorship rather than the significance of the book itself."
+  },
+  {
+    "id": "SAT-RW-624",
+    "section": "rw",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "expressionIdeas",
+    "skill": "Rhetorical synthesis",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- A post-enumeration survey re-interviews a sample of households after a census to estimate how many people were missed or counted twice.\n- Undercounts tend to be concentrated among renters, young children, and people who move frequently.\n- Overcounts tend to occur among people with more than one residence, such as college students and owners of vacation homes.\n- Because undercounts and overcounts can cancel each other out, a national total can appear accurate even when particular groups are miscounted.\n- Census counts are used to allocate seats in legislatures and distribute public funds.\n\nThe student wants to explain why an accurate national total does not guarantee an accurate census. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "stem": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "options": [
+      "A post-enumeration survey re-interviews a sample of households after a census to estimate how many people were missed or counted twice.",
+      "Undercounts tend to be concentrated among renters, young children, and people who move frequently, while overcounts occur among college students and owners of vacation homes.",
+      "Because undercounts among groups such as renters and young children can be offset by overcounts among people with more than one residence, a census can produce an accurate national total while still miscounting particular groups.",
+      "Census counts matter because they are used to allocate seats in legislatures and to distribute public funds."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Only choice C connects the two kinds of error to the national total, explaining that they can cancel out so the total looks right while specific groups remain miscounted. Choice B is the strongest distractor because it accurately describes who is undercounted and overcounted, but it never draws the link to the national total that the student wants to explain."
+  },
+  {
+    "id": "SAT-RW-625",
+    "section": "rw",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "expressionIdeas",
+    "skill": "Rhetorical synthesis",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- In 1937, a painting called The Supper at Emmaus was accepted by leading experts as a newly discovered work by Johannes Vermeer.\n- It had in fact been painted by the Dutch artist Han van Meegeren.\n- Van Meegeren painted on seventeenth-century canvases and baked his finished pictures to harden the paint and mimic the cracks of age.\n- He confessed in 1945, after being charged with selling a Dutch cultural treasure to the German occupiers.\n- To prove his claim, he painted another \"Vermeer\" while under police supervision.\n\nThe student wants to emphasize how van Meegeren's forgery was finally exposed. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "stem": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "options": [
+      "Van Meegeren painted on seventeenth-century canvases and baked his finished pictures to harden the paint and mimic the cracks of age, techniques that fooled leading experts in 1937.",
+      "The Supper at Emmaus, accepted in 1937 as a newly discovered Vermeer, was in fact painted by the Dutch artist Han van Meegeren.",
+      "Charged in 1945 with selling a Dutch cultural treasure to the German occupiers, van Meegeren had painted The Supper at Emmaus on a seventeenth-century canvas.",
+      "Van Meegeren's deception came to light only in 1945, when, facing a charge of selling a Dutch treasure to the occupiers, he confessed to forging The Supper at Emmaus and painted another \"Vermeer\" under police supervision to prove it."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Exposure of the forgery happened through the 1945 charge, the confession, and the supervised demonstration, and only choice D assembles those three notes into an account of how the truth emerged. Choice C is the strongest distractor because it mentions the 1945 charge, but it then turns to the canvas he used rather than to the confession and proof, so it does not explain how the forgery was exposed."
+  },
+  {
+    "id": "SAT-RW-626",
+    "section": "rw",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "expressionIdeas",
+    "skill": "Transitions",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "Sleep appears to play a direct role in consolidating memories. In one experiment, participants who learned a list of word pairs and then slept for eight hours recalled significantly more pairs than participants who stayed awake for the same period. ______ the sleeping group's advantage persisted when both groups were tested again a week later.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "In contrast,",
+      "Moreover,",
+      "For instance,",
+      "Nevertheless,"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The final sentence adds a second result that strengthens the same point, so an additive transition such as \"Moreover\" fits. \"For instance\" is the strongest distractor, but the week-later test is a further finding, not an example of the result just described; \"In contrast\" and \"Nevertheless\" would wrongly signal a reversal."
+  },
+  {
+    "id": "SAT-RW-627",
+    "section": "rw",
+    "test": 2,
+    "module": 2,
+    "variant": "upper",
+    "domain": "expressionIdeas",
+    "skill": "Transitions",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Indigo was prized by dyers for centuries because it bonded to fibers without the metallic mordants that most other natural dyes required. ______ the dye could not simply be applied to cloth: indigo is insoluble in water and had to be chemically reduced in a fermentation vat before the fabric was dipped, a process that demanded considerable skill.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "As a result,",
+      "In other words,",
+      "Even so,",
+      "Similarly,"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The first sentence states an advantage of indigo and the second describes a complication, so a concessive transition such as \"Even so\" is needed. \"As a result\" is the strongest distractor, but the difficulty of applying indigo is not caused by its not needing a mordant; the two facts are independent, and the second qualifies the first."
+  }
+]

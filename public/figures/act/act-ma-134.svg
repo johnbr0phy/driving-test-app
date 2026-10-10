@@ -34,10 +34,10 @@
 <circle cx="270" cy="180" r="3"/>
 <circle cx="120" cy="105" r="3"/>
 </g>
-<text x="86" y="196" text-anchor="end">(-1, 0)</text>
-<text x="274" y="196">(5, 0)</text>
+<text x="84" y="172" text-anchor="end">(-1, 0)</text>
+<text x="276" y="172">(5, 0)</text>
 <text x="126" y="109">(0, 5)</text>
 <text x="304" y="184">x</text>
-<text x="106" y="32">y</text>
+<text x="126" y="42">y</text>
 <text x="246" y="54">y = f(x)</text>
 </svg>

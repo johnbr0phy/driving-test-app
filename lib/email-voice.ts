@@ -14,8 +14,10 @@
 import { EXAMS_V2, getExamV2ByPath } from "@/lib/v2/registry";
 import type { ExamV2Config } from "@/lib/v2/types";
 import {
+  ALL_EXAMS,
   EXAMS,
   ExamConfig,
+  examFamilyId,
   examSetBase,
   getExamById,
   getExamByPath,
@@ -177,8 +179,9 @@ export function resolveUserExamId(doc: {
     if (!latest || at > latest.at) latest = { at, state };
   }
   if (latest) {
+    // A state variant (REALESTATE_CA) emails as its family (realestate).
     const exam = getExamByStateCode(latest.state);
-    return exam ? exam.id : "dmv";
+    return exam ? examFamilyId(exam) : "dmv";
   }
 
   const sets =
@@ -187,12 +190,12 @@ export function resolveUserExamId(doc: {
       : [];
   for (const key of sets) {
     const setId = Number(key);
-    const exam = EXAMS.find(
+    const exam = ALL_EXAMS.find(
       (e) =>
         setId > examSetBase(e) &&
         setId <= examSetBase(e) + e.trainingSets.length,
     );
-    if (exam) return exam.id;
+    if (exam) return examFamilyId(exam);
   }
   return "dmv";
 }

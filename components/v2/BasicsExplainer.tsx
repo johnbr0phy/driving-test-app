@@ -5,14 +5,15 @@ import Image from "next/image";
 import { BookOpen, Pause, Play, RotateCcw, X } from "lucide-react";
 import { ExamV2Config } from "@/lib/v2/types";
 import { BasicsSkill } from "@/lib/v2/basics";
-import { ExplainerBeat, ExplainerBeatTiming, ExplainerManifest, beatOffsets, buildExplainer, estimateTimings, explainerAudioUrl, explainerManifestUrl, words } from "@/lib/v2/explainer";
+import { ExplainerBeat, ExplainerBeatTiming, ExplainerManifest, beatOffsets, buildExplainer, estimateTimings, explainerAudioUrl, explainerManifestUrl, explainerTemplate, words } from "@/lib/v2/explainer";
 import { getTigerAsset, TigerExpression } from "@/lib/tigerAssets";
 
 /**
  * The 30-second explainer for one Basics skill: the tiger walks through the
- * rule, the trick, a sentence that breaks it and one that follows it, with
- * the words lighting up as they are read. It is the first thing a voiced
- * skill shows; the text card is one tap away ("Read it instead").
+ * rule, the trick, then the examples (a sentence that breaks it and one that
+ * follows it, or two math examples worked step by step), with the words
+ * lighting up as they are read. It is the first thing a voiced skill shows;
+ * the text card is one tap away ("Read it instead").
  *
  * It opens on a Play screen. That tap is the user gesture phones require
  * before any sound, so play() is called inside it and nothing has to guess
@@ -24,8 +25,12 @@ import { getTigerAsset, TigerExpression } from "@/lib/tigerAssets";
 
 type Status = "ready" | "starting" | "audio" | "silent";
 
-const FACES: Record<ExplainerBeat["id"], TigerExpression> = { rule: 3, trick: 4, bad: 6, good: 1, close: 2 };
-const LABELS: Record<ExplainerBeat["id"], string> = { rule: "The rule", trick: "The trick", bad: "Doesn't work", good: "Works", close: "" };
+const FACES: Record<ExplainerBeat["id"], TigerExpression> = { rule: 3, trick: 4, bad: 6, good: 1, work1: 4, work2: 1, close: 2 };
+const LABELS: Record<ExplainerBeat["id"], string> = { rule: "The rule", trick: "The trick", bad: "Doesn't work", good: "Works", work1: "Worked example", work2: "One more", close: "" };
+const PLAY_COPY = {
+  sentence: "The rule, the trick, one sentence that breaks it and one that follows it. Sound on.",
+  worked: "The rule, the trick, then two examples worked step by step. Sound on.",
+};
 
 /** After Play, how long to wait for the manifest before running silently. */
 const MANIFEST_WAIT_MS = 8000;
@@ -42,6 +47,7 @@ export function BasicsExplainer({ exam, skill, doneLabel, onDone, onClose, onRea
   onRead?: () => void;
 }) {
   const beats = useMemo(() => buildExplainer(skill), [skill]);
+  const template = explainerTemplate(skill) ?? "sentence";
   const estimated = useMemo(() => estimateTimings(beats), [beats]);
 
   const audioRef = useRef<HTMLAudioElement | null>(null);
@@ -253,7 +259,7 @@ export function BasicsExplainer({ exam, skill, doneLabel, onDone, onClose, onRea
               <Bubble>
                 <SectionLabel>{skill.sub}</SectionLabel>
                 <p className="text-2xl font-bold leading-tight">{skill.name}, in {length}.</p>
-                <p className="mt-2 text-[17px] leading-relaxed text-gray-600 dark:text-gray-300">The rule, the trick, one sentence that breaks it and one that follows it. Sound on.</p>
+                <p className="mt-2 text-[17px] leading-relaxed text-gray-600 dark:text-gray-300">{PLAY_COPY[template]}</p>
               </Bubble>
             </>
           )}
@@ -310,13 +316,20 @@ function SectionLabel({ children }: { children: ReactNode }) {
   return <div className="mb-1.5 text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400">{children}</div>;
 }
 
-/** One beat's text, lit word by word; the Sentence template adds the strike and the fix. */
+/** One beat's text, lit word by word; the Sentence template adds the strike and the fix, the Worked template the steps. */
 function BeatBody({ beat, spoken }: { beat: ExplainerBeat; spoken: number }) {
   const { showAt, tailAt } = beatOffsets(beat);
   const tokens = beat.tokens ?? words(beat.show).map((text) => ({ text, changed: false }));
   const showDone = spoken >= showAt + tokens.length;
   const sentence = beat.id === "bad" || beat.id === "good";
-  const size = beat.id === "rule" ? "text-2xl font-semibold leading-snug" : beat.id === "close" ? "text-2xl font-bold" : "text-[19px] leading-relaxed";
+  const worked = beat.id === "work1" || beat.id === "work2";
+  const size = beat.id === "rule"
+    ? "text-2xl font-semibold leading-snug"
+    : beat.id === "close"
+      ? "text-2xl font-bold"
+      : worked
+        ? "text-center text-3xl font-bold tracking-wide tabular-nums"
+        : "text-[19px] leading-relaxed";
 
   return (
     <div className="flex flex-col gap-3">
@@ -343,10 +356,27 @@ function BeatBody({ beat, spoken }: { beat: ExplainerBeat; spoken: number }) {
           {beat.id === "bad" ? "Breaks the rule" : "Follows the rule"}
         </div>
       )}
-      {beat.tail.map((line, j) =>
-        spoken > tailAt[j] ? (
-          <p key={j} className="v2-pop text-[15px] leading-snug text-gray-600 dark:text-gray-300">{line}</p>
-        ) : null
+      {worked ? (
+        <ol className="flex flex-col gap-2">
+          {beat.tail.map((line, j) => {
+            if (spoken <= tailAt[j]) return null;
+            const last = j === beat.tail.length - 1;
+            return (
+              <li key={j} className={`v2-pop flex items-start gap-2.5 text-[17px] leading-snug ${last ? "font-bold text-green-700 dark:text-green-300" : "text-gray-700 dark:text-gray-200"}`}>
+                <span className={`mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-xs font-bold ${last ? "bg-green-100 text-green-800 dark:bg-green-950 dark:text-green-300" : "bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-300"}`}>
+                  {last ? "✓" : j + 1}
+                </span>
+                <span className="tabular-nums">{line}</span>
+              </li>
+            );
+          })}
+        </ol>
+      ) : (
+        beat.tail.map((line, j) =>
+          spoken > tailAt[j] ? (
+            <p key={j} className="v2-pop text-[15px] leading-snug text-gray-600 dark:text-gray-300">{line}</p>
+          ) : null
+        )
       )}
     </div>
   );

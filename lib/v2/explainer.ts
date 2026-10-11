@@ -7,14 +7,16 @@ import voiced from "./voiced-skills.json";
  * storyboard is built from the fields every skill already has, so there is
  * one template per example style rather than one video per skill.
  *
- * Today only the Sentence template exists: skills whose examples are a
- * good/bad pair of sentences (grammar and writing). The words that differ
- * between the pair are what the animation highlights. Worked (math `eg`
- * steps) and Data (table or passage) templates come later.
+ * Two templates exist. Sentence: skills whose examples are a good/bad pair
+ * of sentences (grammar and writing); the words that differ between the
+ * pair are what the animation highlights. Worked: skills whose examples
+ * are `eg` items with a note of steps (math); the expression is shown
+ * large and the note's sentences appear one by one as steps, the last
+ * ("So ...") as the answer. A Data template (table or passage) comes later.
  *
- * The storyboard is rule, trick, the bad sentence, the good one, then
- * "now you try": under 30 seconds. The ELI5 picture stays on the rule card
- * behind its button, for whoever still wants it after that.
+ * The storyboard is rule, trick, the two examples, then "now you try":
+ * under 40 seconds. The ELI5 picture stays on the rule card behind its
+ * button, for whoever still wants it after that.
  *
  * Each beat has what the voice says, split into `lead` (a spoken lead-in
  * that is not shown), `show` (the text on screen, highlighted word by word
@@ -24,7 +26,9 @@ import voiced from "./voiced-skills.json";
  * Without that file the explainer runs silently on estimated timings.
  */
 
-export type ExplainerBeatId = "rule" | "trick" | "bad" | "good" | "close";
+export type ExplainerBeatId = "rule" | "trick" | "bad" | "good" | "work1" | "work2" | "close";
+
+export type ExplainerTemplate = "sentence" | "worked";
 
 export interface ExplainerToken {
   text: string;
@@ -77,10 +81,29 @@ export function explainerManifestUrl(skillId: string) {
 
 export const words = (s: string) => s.split(/\s+/).filter(Boolean);
 
-/** The Sentence template needs a good and a bad sentence and nothing to read beside them. */
-export function canExplain(skill: BasicsSkill): boolean {
+/** The worked examples a skill offers: `eg` items that carry a note of steps. */
+const workedExamples = (skill: BasicsSkill) => skill.examples.filter((e) => e.kind === "eg" && !!e.note).slice(0, 2);
+
+/**
+ * Which template a skill fits, or null. Sentence needs a good and a bad
+ * sentence; Worked needs at least one `eg` example with steps. Both need
+ * nothing to read beside them (no table, no passage).
+ */
+export function explainerTemplate(skill: BasicsSkill): ExplainerTemplate | null {
+  if (skill.table || skill.passage) return null;
   const kinds = new Set(skill.examples.map((e) => e.kind));
-  return kinds.has("good") && kinds.has("bad") && !skill.table && !skill.passage;
+  if (kinds.has("good") && kinds.has("bad")) return "sentence";
+  if (workedExamples(skill).length > 0) return "worked";
+  return null;
+}
+
+export function canExplain(skill: BasicsSkill): boolean {
+  return explainerTemplate(skill) !== null;
+}
+
+/** A note's sentences, one step each. Splits after a full stop only, so "Which adds to 5? 2 and 3." stays one line. */
+export function steps(note: string): string[] {
+  return note.split(/(?<=[.!])\s+(?=\S)/).map((s) => s.trim()).filter(Boolean);
 }
 
 /** Skills whose voice is built: `lib/v2/voiced-skills.json`, rewritten by scripts/build-basics-audio.ts from public/basics-audio/. */
@@ -117,21 +140,34 @@ function beat(id: ExplainerBeatId, lead: string, show: string, tail: string[] = 
   return { id, lead, show, tail, say, ...extra };
 }
 
-/** The storyboard for one skill. Bad example first, then the good one, so the fix lands last. */
+/**
+ * The storyboard for one skill. Sentence: bad example first, then the good
+ * one, so the fix lands last. Worked: each example's expression, then its
+ * steps.
+ */
 export function buildExplainer(skill: BasicsSkill): ExplainerBeat[] {
-  const bad = skill.examples.find((e) => e.kind === "bad");
-  const good = skill.examples.find((e) => e.kind === "good");
   const beats: ExplainerBeat[] = [
     beat("rule", `${skill.name}.`, skill.rule),
     beat("trick", "Here's the trick.", skill.trick),
   ];
-  if (bad && good) {
+  const template = explainerTemplate(skill);
+  if (template === "sentence") {
+    const bad = skill.examples.find((e) => e.kind === "bad")!;
+    const good = skill.examples.find((e) => e.kind === "good")!;
     beats.push(beat("bad", "This one doesn't work:", bad.text, bad.note ? [bad.note] : [], { tokens: diffTokens(bad.text, good.text), example: bad }));
     beats.push(beat("good", "This one works:", good.text, good.note ? [good.note] : [], { tokens: diffTokens(good.text, bad.text), example: good }));
+  } else if (template === "worked") {
+    const leads = ["Let's work one.", "One more."];
+    workedExamples(skill).forEach((eg, i) => {
+      beats.push(beat(i === 0 ? "work1" : "work2", leads[i], eg.text, steps(eg.note ?? ""), { example: eg }));
+    });
   }
   beats.push(beat("close", "", "Now you try."));
   return beats;
 }
+
+/** Beats that show an example and should stay on screen a moment after the last word. */
+export const isExampleBeat = (id: ExplainerBeatId) => id === "bad" || id === "good" || id === "work1" || id === "work2";
 
 /** Word index where `show` starts and where each `tail` line starts, within `say`. */
 export function beatOffsets(b: ExplainerBeat) {
@@ -163,7 +199,7 @@ export function estimateTimings(beats: ExplainerBeat[]): ExplainerBeatTiming[] {
       return w;
     });
     // Leave the example on screen a moment after the last word so the highlight is seen.
-    const hold = b.id === "bad" || b.id === "good" ? 0.8 : 0;
+    const hold = isExampleBeat(b.id) ? 0.8 : 0;
     t = cursor + PAUSE_AFTER + hold;
     return { id: b.id, start, end: t, words: timed };
   });

@@ -186,6 +186,8 @@ export async function GET(request: NextRequest) {
     let estimatedPurchases = 0; // premium users with no payment record ($9.99 assumed)
     const daysToPurchase: number[] = [];
     const premiumIds = new Set<string>();
+    // Post-signup stages per account, for the visitor funnel's tracked cohort.
+    const accountStages = new Map<string, { answered: boolean; paywall: boolean }>();
     // Per-user activity for unique-active series
     const perUserActivity: { dates: Set<string> }[] = [];
 
@@ -230,7 +232,9 @@ export async function GET(request: NextRequest) {
         ((stats.trainingQuestionsAnswered as number) || 0) + ((stats.testQuestionsAnswered as number) || 0);
       totalQuestions += answered;
       if (answered > 0) engagedUsers++;
-      if (Object.keys((data.paywallHits as Record<string, unknown>) || {}).length > 0) paywallUsers++;
+      const hitPaywall = Object.keys((data.paywallHits as Record<string, unknown>) || {}).length > 0;
+      if (hitPaywall) paywallUsers++;
+      accountStages.set(doc.id, { answered: answered > 0, paywall: hitPaywall });
 
       // Purchases / revenue
       if (isPremium) {
@@ -397,7 +401,7 @@ export async function GET(request: NextRequest) {
         // day's real total (2,886).
         questions: questionsByDay[etToday] || 0,
       },
-      visitorFunnel: buildVisitorFunnel(funnelDoc, originsSnap, premiumIds),
+      visitorFunnel: buildVisitorFunnel(funnelDoc, originsSnap, premiumIds, accountStages),
       funnel: {
         signups: totalUsers,
         engaged: engagedUsers,
@@ -428,12 +432,17 @@ export async function GET(request: NextRequest) {
 }
 
 // ─── Visitor funnel (lib/funnel.ts) ──────────────────────────────────────────
-// Per-step daily counts for the client to window, plus purchases split by
-// whether the account practiced before signing up (signupOrigins/{uid}).
+// Per-step daily counts for the client to window, plus the tracked accounts
+// (signupOrigins/{uid}) carried past signup: answered, paywall, purchased.
+// Account stages are keyed by signup day, split by whether the account
+// practiced before signing up.
+type CohortStage = 'accounts' | 'answered' | 'paywall' | 'purchased';
+
 function buildVisitorFunnel(
   funnelDoc: DocumentSnapshot,
   originsSnap: QuerySnapshot,
   premiumIds: Set<string>,
+  accountStages: Map<string, { answered: boolean; paywall: boolean }>,
 ) {
   const steps = (funnelDoc.exists ? funnelDoc.get('steps') : null) as
     | Record<string, { daily?: Record<string, number> }>
@@ -442,15 +451,34 @@ function buildVisitorFunnel(
   for (const key of ['visit', 'answered', 'signup_view', 'signup', 'signup_tried', 'signup_cold']) {
     daily[key] = steps?.[key]?.daily || {};
   }
+  const emptyCohort = (): Record<CohortStage, Record<string, number>> => ({
+    accounts: {},
+    answered: {},
+    paywall: {},
+    purchased: {},
+  });
+  const cohort = { tried: emptyCohort(), cold: emptyCohort() };
   const origins = {
     tried: { accounts: 0, purchased: 0 },
     cold: { accounts: 0, purchased: 0 },
   };
   originsSnap.forEach((doc) => {
     const origin = doc.get('origin') === 'tried' ? 'tried' : 'cold';
+    const purchased = premiumIds.has(doc.id);
     origins[origin].accounts++;
-    if (premiumIds.has(doc.id)) origins[origin].purchased++;
+    if (purchased) origins[origin].purchased++;
+    const at = doc.get('at');
+    const day = typeof at === 'string' ? at.slice(0, 10) : null;
+    if (!day) return;
+    const stages = accountStages.get(doc.id);
+    const bump = (stage: CohortStage) => {
+      cohort[origin][stage][day] = (cohort[origin][stage][day] || 0) + 1;
+    };
+    bump('accounts');
+    if (stages?.answered) bump('answered');
+    if (stages?.paywall) bump('paywall');
+    if (purchased) bump('purchased');
   });
   const startDays = Object.keys(daily.visit).sort();
-  return { startedAt: startDays[0] ?? null, daily, origins };
+  return { startedAt: startDays[0] ?? null, daily, origins, cohort };
 }

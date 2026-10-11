@@ -22,7 +22,7 @@ const COLORS = {
   sparkline: "#c3c2b7",
   deltaUp: "#006300",
   deltaDown: "#d03b3b",
-  funnelRamp: ["#86b6ef", "#5598e7", "#2a78d6", "#1c5cab"],
+  funnelRamp: ["#a9cdf5", "#86b6ef", "#5598e7", "#2a78d6", "#2068c0", "#1c5cab", "#154a8c"],
 };
 
 // ─── API payload ────────────────────────────────────────────────────────────
@@ -89,8 +89,12 @@ interface Metrics {
       tried: { accounts: number; purchased: number };
       cold: { accounts: number; purchased: number };
     };
+    // Optional: absent from payloads that predate the combined funnel.
+    cohort?: Record<"tried" | "cold", Record<CohortStage, Record<string, number>>>;
   };
 }
+
+type CohortStage = "accounts" | "answered" | "paywall" | "purchased";
 
 type Range = "today" | "30d" | "90d" | "all";
 type Pt = { key: string; label: string; value: number };
@@ -313,7 +317,9 @@ function makeEndDot(color: string) {
   };
 }
 
-function Funnel({ data }: { data: { label: string; value: number; note?: string }[] }) {
+type FunnelStage = { label: string; value: number; note?: string; section?: string };
+
+function Funnel({ data }: { data: FunnelStage[] }) {
   const max = Math.max(...data.map((d) => d.value), 1);
   return (
     <div className="space-y-3">
@@ -322,30 +328,41 @@ function Funnel({ data }: { data: { label: string; value: number; note?: string 
         const prev = i > 0 ? data[i - 1].value : null;
         const stepRate = prev ? Math.round((stage.value / prev) * 100) : null;
         return (
-          <div key={stage.label} className="grid grid-cols-[150px_1fr_120px] items-center gap-3">
-            <p className="text-sm text-gray-600">{stage.label}</p>
-            <div className="h-7 bg-gray-50 rounded-md overflow-hidden relative">
-              <div
-                className="h-full rounded-r-md flex items-center"
-                style={{ width: `${Math.max(pctOfTop, 2)}%`, backgroundColor: COLORS.funnelRamp[i] }}
-              />
-              <span
-                className="absolute top-1/2 -translate-y-1/2 text-xs font-semibold"
-                style={{
-                  left: pctOfTop > 18 ? undefined : `calc(${Math.max(pctOfTop, 2)}% + 8px)`,
-                  right: pctOfTop > 18 ? `calc(${100 - pctOfTop}% + 8px)` : undefined,
-                  // ink on the two light ramp steps, white on the dark ones
-                  color: pctOfTop > 18 ? (i < 2 ? "#1f2937" : "#ffffff") : "#374151",
-                }}
+          <div key={stage.label}>
+            {stage.section && (
+              <p
+                className={`mb-2 text-[11px] uppercase tracking-wide text-gray-400 ${
+                  i > 0 ? "mt-4 border-t border-gray-100 pt-3" : ""
+                }`}
               >
-                {fmtInt(stage.value)}
-              </span>
+                {stage.section}
+              </p>
+            )}
+            <div className="grid grid-cols-[150px_1fr_140px] items-center gap-3">
+              <p className="text-sm text-gray-600">{stage.label}</p>
+              <div className="h-7 bg-gray-50 rounded-md overflow-hidden relative">
+                <div
+                  className="h-full rounded-r-md flex items-center"
+                  style={{ width: `${Math.max(pctOfTop, 2)}%`, backgroundColor: COLORS.funnelRamp[i] }}
+                />
+                <span
+                  className="absolute top-1/2 -translate-y-1/2 text-xs font-semibold"
+                  style={{
+                    left: pctOfTop > 18 ? undefined : `calc(${Math.max(pctOfTop, 2)}% + 8px)`,
+                    right: pctOfTop > 18 ? `calc(${100 - pctOfTop}% + 8px)` : undefined,
+                    // ink on the two light ramp steps, white on the dark ones
+                    color: pctOfTop > 18 ? (i < 2 ? "#1f2937" : "#ffffff") : "#374151",
+                  }}
+                >
+                  {fmtInt(stage.value)}
+                </span>
+              </div>
+              <p className="text-xs text-gray-400 text-right">
+                {stage.note ?? (stepRate != null
+                  ? `${stepRate}% of previous`
+                  : `${Math.round((stage.value / max) * 100)}% baseline`)}
+              </p>
             </div>
-            <p className="text-xs text-gray-400 text-right">
-              {stage.note ?? (stepRate != null
-                ? `${stepRate}% of previous`
-                : `${Math.round((stage.value / max) * 100)}% baseline`)}
-            </p>
           </div>
         );
       })}
@@ -353,8 +370,9 @@ function Funnel({ data }: { data: { label: string; value: number; note?: string 
   );
 }
 
-// Signed-out browsers, from first page view to account (lib/funnel.ts). The
-// account funnel below starts where this one ends.
+// One funnel from first page view to purchase. Signed-out steps count browsers
+// (lib/funnel.ts); after signup it follows the tracked accounts (signupOrigins)
+// by signup day, so a purchase lands in the window the account was created in.
 type FunnelRange = "7d" | "30d" | "all";
 
 function VisitorFunnel({ data }: { data: NonNullable<Metrics["visitorFunnel"]> }) {
@@ -370,24 +388,41 @@ function VisitorFunnel({ data }: { data: NonNullable<Metrics["visitorFunnel"]> }
   const cold = sum("signup_cold");
   const pct = (n: number, d: number) => (d > 0 ? `${Math.round((n / d) * 100)}%` : "0%");
   const rate = (n: number, d: number) => (d > 0 ? `${((n / d) * 100).toFixed(1)}%` : "n/a");
-  const { origins } = data;
+  const cohortSum = (origin: "tried" | "cold", stage: CohortStage) =>
+    Object.entries(data.cohort?.[origin][stage] || {}).reduce((n, [d, c]) => (d >= since ? n + c : n), 0);
+  const cohortRow = (origin: "tried" | "cold") => ({
+    accounts: cohortSum(origin, "accounts"),
+    answered: cohortSum(origin, "answered"),
+    paywall: cohortSum(origin, "paywall"),
+    purchased: cohortSum(origin, "purchased"),
+  });
+  const rows = { tried: cohortRow("tried"), cold: cohortRow("cold") };
+  const accounts = rows.tried.accounts + rows.cold.accounts;
+  const practiced = rows.tried.answered + rows.cold.answered;
+  const paywall = rows.tried.paywall + rows.cold.paywall;
+  const purchased = rows.tried.purchased + rows.cold.purchased;
 
   return (
     <div className="bg-white rounded-xl border border-gray-200/80 shadow-sm p-5">
       <div className="mb-4 flex flex-wrap items-baseline justify-between gap-2">
-        <h2 className="text-sm font-semibold text-gray-900">Visitor funnel</h2>
-        <div className="flex items-center gap-1">
-          {(["7d", "30d", "all"] as const).map((r) => (
-            <button
-              key={r}
-              onClick={() => setRange(r)}
-              className={`text-xs px-2 py-1 rounded-md ${
-                range === r ? "bg-gray-900 text-white" : "text-gray-500 hover:text-gray-900"
-              }`}
-            >
-              {r === "all" ? "Since start" : r}
-            </button>
-          ))}
+        <h2 className="text-sm font-semibold text-gray-900">Funnel</h2>
+        <div className="flex items-center gap-3">
+          {data.startedAt && (
+            <p className="text-xs text-gray-400">{rate(purchased, visits)} visitor to purchase</p>
+          )}
+            <div className="flex items-center gap-1">
+            {(["7d", "30d", "all"] as const).map((r) => (
+              <button
+                key={r}
+                onClick={() => setRange(r)}
+                className={`text-xs px-2 py-1 rounded-md ${
+                  range === r ? "bg-gray-900 text-white" : "text-gray-500 hover:text-gray-900"
+                }`}
+              >
+                {r === "all" ? "Since start" : r}
+              </button>
+            ))}
+            </div>
         </div>
       </div>
       {!data.startedAt ? (
@@ -396,10 +431,18 @@ function VisitorFunnel({ data }: { data: NonNullable<Metrics["visitorFunnel"]> }
         <>
           <Funnel
             data={[
-              { label: "New visitors", value: visits, note: "baseline" },
+              { section: "Signed out", label: "New visitors", value: visits, note: "baseline" },
               { label: "Tried a question", value: answered, note: `${pct(answered, visits)} of visitors` },
               { label: "Opened signup", value: opened, note: `${pct(opened, visits)} of visitors` },
               { label: "Created an account", value: signups, note: `${pct(signups, opened)} of signup opens` },
+              {
+                section: "After signup",
+                label: "Answered a question",
+                value: practiced,
+                note: `${pct(practiced, accounts)} of accounts`,
+              },
+              { label: "Hit a paywall", value: paywall, note: `${pct(paywall, accounts)} of accounts` },
+              { label: "Purchased", value: purchased, note: `${pct(purchased, paywall)} of paywall hits` },
             ]}
           />
           <div className="mt-5 grid gap-4 sm:grid-cols-3">
@@ -423,33 +466,41 @@ function VisitorFunnel({ data }: { data: NonNullable<Metrics["visitorFunnel"]> }
               </p>
             </div>
           </div>
-          <table className="mt-5 w-full text-sm">
-            <thead>
-              <tr className="text-[11px] uppercase tracking-wide text-gray-400">
-                <th className="text-left font-medium pb-2">Accounts since tracking began</th>
-                <th className="text-right font-medium pb-2 pl-4">Accounts</th>
-                <th className="text-right font-medium pb-2 pl-4">Purchased</th>
-                <th className="text-right font-medium pb-2 pl-4">Purchase rate</th>
-              </tr>
-            </thead>
-            <tbody>
-              {([
-                ["Tried before signing up", origins.tried],
-                ["Signed up cold", origins.cold],
-              ] as const).map(([label, o]) => (
-                <tr key={label} className="border-t border-gray-100">
-                  <td className="py-2 font-medium text-gray-900">{label}</td>
-                  <td className="py-2 pl-4 text-right tabular-nums">{fmtInt(o.accounts)}</td>
-                  <td className="py-2 pl-4 text-right tabular-nums">{fmtInt(o.purchased)}</td>
-                  <td className="py-2 pl-4 text-right tabular-nums">{rate(o.purchased, o.accounts)}</td>
+          <div className="mt-5 overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="text-[11px] uppercase tracking-wide text-gray-400">
+                  <th className="text-left font-medium pb-2">Accounts created in range</th>
+                  <th className="text-right font-medium pb-2 pl-4">Accounts</th>
+                  <th className="text-right font-medium pb-2 pl-4">Answered</th>
+                  <th className="text-right font-medium pb-2 pl-4">Hit paywall</th>
+                  <th className="text-right font-medium pb-2 pl-4">Purchased</th>
+                  <th className="text-right font-medium pb-2 pl-4">Purchase rate</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {([
+                  ["Tried before signing up", rows.tried],
+                  ["Signed up cold", rows.cold],
+                ] as const).map(([label, o]) => (
+                  <tr key={label} className="border-t border-gray-100">
+                    <td className="py-2 font-medium text-gray-900">{label}</td>
+                    <td className="py-2 pl-4 text-right tabular-nums">{fmtInt(o.accounts)}</td>
+                    <td className="py-2 pl-4 text-right tabular-nums">{fmtInt(o.answered)}</td>
+                    <td className="py-2 pl-4 text-right tabular-nums">{fmtInt(o.paywall)}</td>
+                    <td className="py-2 pl-4 text-right tabular-nums">{fmtInt(o.purchased)}</td>
+                    <td className="py-2 pl-4 text-right tabular-nums">{rate(o.purchased, o.accounts)}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
           <p className="mt-4 text-[11px] text-gray-400">
             Counts browsers, not people: each step fires once per browser while signed out, from{" "}
-            {fmtDayLabel(data.startedAt)}. A returning user on a new device counts as a visitor. True
-            site traffic (including people without JavaScript) is in Google Analytics.
+            {fmtDayLabel(data.startedAt)}. A returning user on a new device counts as a visitor. After
+            signup, stages follow the accounts tracked at signup, by the day they signed up, so a later
+            purchase still counts toward its signup window. True site traffic (including people without
+            JavaScript) is in Google Analytics.
           </p>
         </>
       )}
@@ -873,7 +924,7 @@ export default function AdminV2Page() {
     );
   }
 
-  const { kpis, funnel } = metrics;
+  const { kpis } = metrics;
   const isToday = range === "today";
   const bucketNoun = isToday ? "hour" : range === "30d" ? "day" : range === "90d" ? "week" : "month";
   // All-time charts stop at the last complete month (see bucketize)
@@ -1151,31 +1202,8 @@ export default function AdminV2Page() {
         {/* Test requests */}
         {metrics.testRequests && <TestRequests data={metrics.testRequests} />}
 
-        {/* Visitor funnel */}
+        {/* Funnel: first visit to purchase */}
         {metrics.visitorFunnel && <VisitorFunnel data={metrics.visitorFunnel} />}
-
-        {/* Funnel */}
-        <div className="bg-white rounded-xl border border-gray-200/80 shadow-sm p-5">
-          <div className="mb-4 flex items-baseline justify-between gap-2">
-            <h2 className="text-sm font-semibold text-gray-900">Conversion funnel</h2>
-            <p className="text-xs text-gray-400">
-              all-time, signed-in accounts · {(kpis.conversionRate * 100).toFixed(1)}% end-to-end
-            </p>
-          </div>
-          <Funnel
-            data={[
-              { label: "Created an account", value: funnel.signups },
-              { label: "Answered a question", value: funnel.engaged },
-              { label: "Hit a paywall", value: funnel.hitPaywall },
-              { label: "Purchased", value: funnel.purchased },
-            ]}
-          />
-          <p className="mt-4 text-[11px] text-gray-400">
-            Guests practice without an account and only appear here after signing up. Paywall
-            attribution accumulates from first deploy, so long-tenured accounts may under-report
-            the middle stages.
-          </p>
-        </div>
 
       </div>
     </div>

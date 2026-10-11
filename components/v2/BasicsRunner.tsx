@@ -1,13 +1,15 @@
 "use client";
 
 import { ReactNode, useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import { X } from "lucide-react";
+import { Play, X } from "lucide-react";
 import { ExamV2Config } from "@/lib/v2/types";
 import { v2Routes } from "@/lib/v2/registry";
 import { BasicsQuestion, BasicsRun, BasicsSkill, BasicsTable, PUNCTUATION_NAMES, answerBasics, basicsFor, basicsKey, basicsOptionOrder, isPunctuationQuestion, newBasicsRun } from "@/lib/v2/basics";
+import { canExplain } from "@/lib/v2/explainer";
+import { BasicsExplainer } from "./BasicsExplainer";
 import { useV2Store } from "@/store/useV2Store";
 import { useHydration } from "@/hooks/useHydration";
 import { useSound } from "@/hooks/useSound";
@@ -45,6 +47,9 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
   const [ruleOpen, setRuleOpen] = useState(false);
   const [ruleEli5, setRuleEli5] = useState(false);
   const [another, setAnother] = useState(false);
+  // The 40-second explainer overlay (it opens on its own Play screen, so no gesture plumbing here).
+  const [explainer, setExplainer] = useState(false);
+  const wantExplain = useSearchParams().get("explain") === "1";
 
   useEffect(() => {
     if (hydrated && (!drill || !skill)) router.replace(drill ? routes.drill(drill.key) : routes.dashboard);
@@ -57,7 +62,13 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
     setCurrent(null);
     setPicked(null);
     setAnother(false);
+    setExplainer(false);
   }, [skillIdParam]);
+
+  // &explain=1 opens the explainer straight away (a preview link).
+  useEffect(() => {
+    if (wantExplain && skill && canExplain(skill)) setExplainer(true);
+  }, [wantExplain, skill]);
 
   // Basics of a Premium drill is gated like its questions, unless they are already in it.
   const premiumDrill = !!drill && !!exam.premium?.lockedDrills.includes(drill.key);
@@ -111,6 +122,15 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
     setRuleEli5(false);
   };
 
+  const explainable = canExplain(skill);
+  const openExplainer = () => setExplainer(true);
+  const overlay = explainer ? <BasicsExplainer exam={exam} skill={skill} onClose={() => setExplainer(false)} /> : null;
+  const watchButton = explainable ? (
+    <button type="button" onClick={openExplainer} className="flex items-center gap-1.5 self-start text-[15px] font-semibold text-brand">
+      <Play className="h-4 w-4" /> Watch it instead · 40 seconds
+    </button>
+  ) : null;
+
   // ---- Learn / review card ----
   if (screen === "learn" || screen === "review") {
     const review = screen === "review";
@@ -122,6 +142,7 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
             <div className="text-xs font-semibold uppercase tracking-wider text-brand">{review ? "One more look" : "Learn it · 20 seconds"}</div>
             <h1 className="text-2xl font-bold leading-tight text-gray-900 dark:text-gray-50">{skill.name}</h1>
             {review && <p className="text-sm text-gray-600 dark:text-gray-300">That one&apos;s tricky. Here&apos;s the rule again before the next question.</p>}
+            {watchButton}
             <RuleCard skill={skill} />
             <Eli5Toggle skill={skill} open={another} onOpen={() => setAnother(true)} />
           </div>
@@ -133,6 +154,7 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
             </button>
           </div>
         </div>
+        {overlay}
       </div>
     );
   }
@@ -238,6 +260,11 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
                 {!correct && (
                   <>
                     <p className="text-sm text-gray-800 dark:text-gray-100"><b>The trick:</b> {skill.trick}</p>
+                    {explainable && (
+                      <button type="button" onClick={openExplainer} className="v2-tap mt-1 flex items-center justify-center gap-2 self-start rounded-xl bg-white dark:bg-gray-900 px-4 text-[15px] font-bold text-brand shadow-sm">
+                        <Play className="h-4 w-4" /> Watch the 40-second explainer
+                      </button>
+                    )}
                     <p className="text-xs text-gray-500 dark:text-gray-400">This one will come back in a minute.</p>
                   </>
                 )}
@@ -272,6 +299,7 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
           </div>
         </div>
       )}
+      {overlay}
     </div>
   );
 }

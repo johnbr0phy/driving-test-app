@@ -2,12 +2,14 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getAdminDb } from '@/lib/firebase-admin';
 import { FieldValue } from 'firebase-admin/firestore';
 import { EXAM_ANALYTICS_KEYS } from '@/lib/exams';
+import { EXAMS_V2 } from '@/lib/v2/registry';
 
-// Largest batch a client can legitimately accumulate: a full 50-question test
-// completion plus a burst of training answers.
-const MAX_BATCH = 200;
+// Largest batch a client can legitimately accumulate: a full test completion
+// (171 questions on the ACT) plus a burst of training answers.
+const MAX_BATCH = 300;
 
-const KNOWN_EXAM_KEYS = new Set<string>(EXAM_ANALYTICS_KEYS);
+// v1 keys plus the v2 exam ids (sat, act...), which useV2Store files under.
+const KNOWN_EXAM_KEYS = new Set<string>([...EXAM_ANALYTICS_KEYS, ...EXAMS_V2.map((e) => e.id)]);
 
 function toCount(value: unknown): number {
   return typeof value === 'number' && Number.isFinite(value) ? Math.max(0, Math.floor(value)) : 0;

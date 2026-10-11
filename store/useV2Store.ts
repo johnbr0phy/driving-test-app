@@ -3,7 +3,12 @@ import { persist, createJSONStorage } from "zustand/middleware";
 import { withoutExamV2 } from "@/lib/v2/merge";
 import { BasicsSkillState, DrillState, TestResultV2, TestSessionV2 } from "@/lib/v2/types";
 import { EMPTY_DRILL } from "@/lib/v2/training";
+import { isAnswered } from "@/lib/v2/grading";
 import { trackFunnelStep } from "@/lib/funnel";
+import { trackQuestionsAnswered } from "@/lib/analytics";
+
+/** Drill and Basics keys are `${examId}:${...}` (drillKey, basicsKey). */
+const examOf = (key: string) => key.split(":")[0];
 
 /**
  * v2 store: full-length sectioned tests and domain drills for the v2 exams.
@@ -57,11 +62,12 @@ export const useV2Store = create<V2State>()(
         }),
       addResult: (result) => {
         trackFunnelStep("answered");
+        trackQuestionsAnswered(result.items.filter((i) => isAnswered(i.answer)).length, result.examId);
         set((s) => ({ results: [...s.results, result] }));
       },
 
       answerDrill: (key, questionId, correct, base) => {
-        trackFunnelStep("answered");
+        trackQuestionsAnswered(1, examOf(key));
         set((s) => {
           const d = s.drills[key] ?? base ?? EMPTY_DRILL;
           const wrongQueue = d.wrongQueue.filter((id) => id !== questionId);
@@ -74,6 +80,7 @@ export const useV2Store = create<V2State>()(
       resetDrill: (key) => set((s) => ({ drills: { ...s.drills, [key]: EMPTY_DRILL } })),
       completeBasics: (key, state) => {
         trackFunnelStep("answered");
+        trackQuestionsAnswered(state.total, examOf(key));
         set((s) => ({ basics: { ...s.basics, [key]: { ...state, done: true, completedAt: new Date().toISOString() } } }));
       },
       resetExam: (examId) => set((s) => withoutExamV2(s, examId)),

@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getAdminDb, getAdminAuth } from '@/lib/firebase-admin';
 import { isAdminEmail } from '@/lib/admin';
 import { examAnalyticsLabel } from '@/lib/exams';
+import { EXAMS_V2 } from '@/lib/v2/registry';
 import { TEST_REQUEST_PICKS } from '@/lib/test-requests';
 import { LAUNCH_EXPERIMENT, LAUNCH_VARIANTS } from '@/lib/email-launch';
 import type { DocumentSnapshot, QuerySnapshot } from 'firebase-admin/firestore';
@@ -334,7 +335,7 @@ export async function GET(request: NextRequest) {
         const days = rec?.daily || {};
         return {
           id,
-          label: examAnalyticsLabel(id),
+          label: EXAMS_V2.find((e) => e.id === id)?.shortName ?? examAnalyticsLabel(id),
           total: Object.values(days).reduce((a, b) => a + b, 0),
           last7d: sumWindow(days, daysAgoKey(6), todayKey),
           prev7d: sumWindow(days, daysAgoKey(13), daysAgoKey(7)),
@@ -343,7 +344,8 @@ export async function GET(request: NextRequest) {
       })
       .filter((row) => row.total > 0)
       .sort((a, b) => b.total - a.total);
-    const questionsByExamBackfillPending = !questionsData?.byExamBackfilledAt;
+    // v2BackfilledAt: re-seeds once more now that the backfill counts v2 (SAT, ACT...) history.
+    const questionsByExamBackfillPending = !questionsData?.v2BackfilledAt;
 
     const totalUsers = usersSnap.size;
     const payload = {

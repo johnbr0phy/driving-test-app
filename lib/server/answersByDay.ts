@@ -13,6 +13,8 @@ import {
   getExamForQuestionId,
   getExamForTestId,
 } from '@/lib/exams';
+import { isAnswered } from '@/lib/v2/grading';
+import type { AnswerValue } from '@/lib/v2/types';
 
 export type AnswersByExamByDay = Record<string, Record<string, number>>;
 
@@ -46,6 +48,18 @@ export function computeAnswersByExamByDay(data: Record<string, unknown>): Answer
     } else if (typeof test.totalQuestions === 'number' && test.totalQuestions > 0) {
       bump(examKey, test.completedAt, test.totalQuestions);
     }
+  }
+  // v2 exams (SAT, ACT...): full tests by their completedAt, learned Basics
+  // skills by theirs. Drill answers carry no timestamp, so they only count live.
+  const v2 = (data.v2 || {}) as Record<string, unknown>;
+  for (const r of (Array.isArray(v2.results) ? v2.results : []) as Record<string, unknown>[]) {
+    if (typeof r?.examId !== 'string') continue;
+    const items = (Array.isArray(r.items) ? r.items : []) as Record<string, unknown>[];
+    const answered = items.filter((i) => isAnswered(i?.answer as AnswerValue | undefined)).length;
+    if (answered > 0) bump(r.examId, r.completedAt, answered);
+  }
+  for (const [key, b] of Object.entries((v2.basics || {}) as Record<string, Record<string, unknown>>)) {
+    if (typeof b?.total === 'number' && b.total > 0) bump(key.split(':')[0], b.completedAt, b.total);
   }
   return result;
 }

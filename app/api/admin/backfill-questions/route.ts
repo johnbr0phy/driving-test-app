@@ -49,7 +49,7 @@ export async function POST(request: NextRequest) {
       let query = db
         .collection('users')
         .orderBy('__name__')
-        .select('trainingAnswerHistory', 'completedTests')
+        .select('trainingAnswerHistory', 'completedTests', 'v2')
         .limit(PAGE_SIZE);
       if (cursor) query = query.startAfter(cursor);
       const snap = await query.get();
@@ -98,7 +98,7 @@ export async function POST(request: NextRequest) {
     // Nested merge updates only the listed days; live counters and days the
     // aggregate already knows more about are left untouched.
     const stamp = new Date().toISOString();
-    await ref.set({ daily, byExam, backfilledAt: stamp, byExamBackfilledAt: stamp }, { merge: true });
+    await ref.set({ daily, byExam, backfilledAt: stamp, byExamBackfilledAt: stamp, v2BackfilledAt: stamp }, { merge: true });
 
     return NextResponse.json({
       ok: true,

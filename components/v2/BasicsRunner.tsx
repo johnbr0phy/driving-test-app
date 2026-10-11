@@ -7,7 +7,7 @@ import Image from "next/image";
 import { X } from "lucide-react";
 import { ExamV2Config } from "@/lib/v2/types";
 import { v2Routes } from "@/lib/v2/registry";
-import { BasicsQuestion, BasicsRun, BasicsSkill, BasicsTable, PUNCTUATION_NAMES, answerBasics, basicsFor, basicsKey, isPunctuationQuestion, newBasicsRun } from "@/lib/v2/basics";
+import { BasicsQuestion, BasicsRun, BasicsSkill, BasicsTable, PUNCTUATION_NAMES, answerBasics, basicsFor, basicsKey, basicsOptionOrder, isPunctuationQuestion, newBasicsRun } from "@/lib/v2/basics";
 import { useV2Store } from "@/store/useV2Store";
 import { useHydration } from "@/hooks/useHydration";
 import { useSound } from "@/hooks/useSound";
@@ -176,6 +176,7 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
   const comingBack = run.queue.filter((i) => run.retried.includes(i)).length;
   const punct = isPunctuationQuestion(q);
   const table = q.table ?? (!q.blank ? skill.table : undefined);
+  const order = basicsOptionOrder(skill.id, current, q.options.length);
 
   return (
     <div className="v2-focus">
@@ -200,10 +201,12 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
       <div className="v2-scroll">
         <div className="mx-auto flex max-w-2xl flex-col gap-4 px-4 py-5">
           {run.retried.includes(current) && !revealed && <div className="text-xs font-semibold uppercase tracking-wider text-amber-700">Back for another try</div>}
+          {q.passage && <Passage text={q.passage} />}
           <Prompt q={q} revealed={revealed} punct={punct} />
           {table && <DataTable table={table} />}
           <div className="flex flex-col gap-2.5">
-            {q.options.map((o, i) => {
+            {order.map((i) => {
+              const o = q.options[i];
               let cls = "border-gray-300 bg-white active:bg-brand-light";
               if (revealed) cls = i === q.answer ? "border-green-500 bg-green-50" : i === picked ? "border-amber-500 bg-amber-50" : "border-gray-200 opacity-60";
               return (
@@ -295,6 +298,7 @@ function RuleCard({ skill, compact = false }: { skill: BasicsSkill; compact?: bo
         <div className="text-[15px] text-gray-900">{skill.trick}</div>
       </div>
       {skill.table && <DataTable table={skill.table} />}
+      {skill.passage && <Passage text={skill.passage} />}
       <div className="flex flex-col gap-2">
         {skill.examples.map((e, i) => (
           <div key={i} className="flex items-start gap-2.5 rounded-xl bg-gray-100 px-3 py-2.5">
@@ -328,6 +332,10 @@ function Prompt({ q, revealed, punct }: { q: BasicsQuestion; revealed: boolean; 
       </p>
     </div>
   );
+}
+
+function Passage({ text }: { text: string }) {
+  return <div className="whitespace-pre-line rounded-xl border border-gray-200 bg-white px-4 py-3 text-[16px] leading-relaxed text-gray-800">{text}</div>;
 }
 
 function DataTable({ table }: { table: BasicsTable }) {

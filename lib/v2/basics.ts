@@ -1,4 +1,8 @@
-import skills from "@/data/v2/basics/skills.json";
+import grammar from "@/data/v2/basics/skills.json";
+import reading from "@/data/v2/basics/reading.json";
+import math from "@/data/v2/basics/math.json";
+import science from "@/data/v2/basics/science.json";
+import writing from "@/data/v2/basics/writing.json";
 import { BasicsSkillState, DrillDef, ExamV2Config } from "./types";
 
 /**
@@ -30,6 +34,8 @@ export interface BasicsQuestion {
   answer: number;
   why: string;
   table?: BasicsTable;
+  /** A two or three sentence mini-passage above the stem (reading skills). */
+  passage?: string;
 }
 
 export interface BasicsSkill {
@@ -43,10 +49,14 @@ export interface BasicsSkill {
   another: { text: string; example: string };
   /** Data the whole skill reads from (shown on the rule card and plain-stem questions). */
   table?: BasicsTable;
+  /** A short worked passage on the rule card (reading skills). */
+  passage?: string;
   questions: BasicsQuestion[];
 }
 
-const LIBRARY: Record<string, BasicsSkill> = Object.fromEntries((skills as BasicsSkill[]).map((s) => [s.id, s]));
+const LIBRARY: Record<string, BasicsSkill> = Object.fromEntries(
+  ([...grammar, ...reading, ...math, ...science, ...writing] as BasicsSkill[]).map((s) => [s.id, s])
+);
 
 /** Punctuation marks shown with their names on a blank question. */
 export const PUNCTUATION_NAMES: Record<string, string> = { ";": "semicolon", ",": "comma", ":": "colon", "": "no punctuation" };
@@ -95,4 +105,21 @@ export function answerBasics(run: BasicsRun, index: number, correct: boolean): B
   const queue = run.queue.filter((i) => i !== index);
   if (correct) return { ...run, queue, mastered: [...run.mastered, index] };
   return { ...run, queue: [...queue, index], retried: run.retried.includes(index) ? run.retried : [...run.retried, index], misses: run.misses + 1 };
+}
+
+/**
+ * Deterministic option order for one question, so the key does not sit in
+ * the same slot run after run (the authored keys lean on the middle slot).
+ * Same skill and question always shuffle the same way.
+ */
+export function basicsOptionOrder(skillId: string, questionIndex: number, count: number): number[] {
+  let h = 2166136261 ^ questionIndex;
+  for (const c of skillId) h = Math.imul(h ^ c.charCodeAt(0), 16777619);
+  const order = Array.from({ length: count }, (_, i) => i);
+  for (let i = count - 1; i > 0; i--) {
+    h = Math.imul(h ^ (h >>> 15), 2246822507) >>> 0;
+    const j = h % (i + 1);
+    [order[i], order[j]] = [order[j], order[i]];
+  }
+  return order;
 }

@@ -13,7 +13,7 @@ import { ExamV2Config, TestResultV2 } from "@/lib/v2/types";
 import { getBank } from "@/lib/v2/bank";
 import { getSectionV2, stagesOf, v2Routes } from "@/lib/v2/registry";
 import { sessionKey } from "@/lib/v2/session";
-import { drillKey, drillQuestions, drillStateFor, heldOutTests, EMPTY_DRILL } from "@/lib/v2/training";
+import { drillQuestions, drillStateFor, heldOutTests, EMPTY_DRILL } from "@/lib/v2/training";
 import { basicsDone, basicsFor } from "@/lib/v2/basics";
 import { useV2Store, resultsForExam } from "@/store/useV2Store";
 import { useHydration } from "@/hooks/useHydration";
@@ -22,7 +22,7 @@ import { ProgressCard, Collapse } from "@/components/dashboard/ProgressCard";
 import { getTigerAsset, TigerExpression } from "@/lib/tigerAssets";
 import { useIsPremium } from "@/hooks/useIsPremium";
 import { usePurchaseReturn } from "@/hooks/usePurchaseReturn";
-import { isDrillLocked, isTestLocked, otherPremiumExams } from "@/lib/v2/premium";
+import { hasDrillProgress, isDrillLocked, isTestLocked, otherPremiumExams } from "@/lib/v2/premium";
 import { useV2Paywall, V2Paywall } from "./V2Paywall";
 
 function heroTitle(done: number, total: number): string {
@@ -87,7 +87,7 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
     const st = hydrated ? drillStateFor(drills, exam.id, d, qs) : EMPTY_DRILL;
     const mastered = st.masteredIds.filter((id) => qs.some((q) => q.id === id)).length;
     // Same rule as the drill page: open for anyone already working in it.
-    const locked = premiumReady && isDrillLocked(exam, d.key, isPremium) && !(hydrated && drills[drillKey(exam.id, d.key)]);
+    const locked = premiumReady && isDrillLocked(exam, d.key, isPremium) && !(hydrated && hasDrillProgress(drills, basics, exam, d));
     // Basics: the free rule-card level in front of the questions (lib/v2/basics).
     const skills = basicsFor(d);
     const learned = hydrated ? basicsDone(basics, exam.id, skills) : 0;
@@ -199,8 +199,8 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
               const isStartHere = index === 0 && !anyProgress;
               const newSection = index === 0 || phoneSteps[index - 1].drill.def.section !== s.def.section;
               const basics = step.kind === "basics";
-              // The exam level of a Premium drill is gated; its Basics step never is.
-              const gated = !basics && s.locked;
+              // A Premium drill gates both its steps, Basics included.
+              const gated = s.locked;
               const stamp = step.complete
                 ? { label: "Complete!", color: "green" as const }
                 : isStartHere && hasGoal
@@ -209,7 +209,9 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
                     ? { label: "Keep going", color: "amber" as const }
                     : undefined;
               const subtitle = basics
-                ? `${s.learned}/${s.skills} skills learned`
+                ? gated
+                  ? `Premium · ${s.skills} skills`
+                  : `${s.learned}/${s.skills} skills learned`
                 : gated
                   ? `Premium · ${s.total} questions`
                   : `${s.mastered}/${s.total} mastered`;

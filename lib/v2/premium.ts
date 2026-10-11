@@ -6,16 +6,27 @@
  * Client-side gating, like the DMV: the banks ship with the page.
  */
 
-import { ExamV2Config } from "@/lib/v2/types";
+import { BasicsSkillState, DrillDef, DrillState, ExamV2Config } from "@/lib/v2/types";
+import { basicsFor, basicsKey } from "@/lib/v2/basics";
+import { drillKey } from "@/lib/v2/training";
 import { EXAMS_V2 } from "@/lib/v2/registry";
 
 export function isTestLocked(exam: ExamV2Config, testNumber: number, isPremium: boolean): boolean {
   return !isPremium && !!exam.premium?.lockedTests.includes(testNumber);
 }
 
-/** True when this whole drill needs Premium for this person. */
+/** True when this whole drill (Basics included) needs Premium for this person. */
 export function isDrillLocked(exam: ExamV2Config, drillKey: string, isPremium: boolean): boolean {
   return !isPremium && !!exam.premium?.lockedDrills.includes(drillKey);
+}
+
+/**
+ * A locked drill stays open for anyone already working in it: their own
+ * saved exam-level state, or a Basics skill of it they have learned.
+ */
+export function hasDrillProgress(drills: Record<string, DrillState>, basics: Record<string, BasicsSkillState>, exam: ExamV2Config, drill: DrillDef): boolean {
+  if (drills[drillKey(exam.id, drill.key)]) return true;
+  return basicsFor(drill).some((s) => basics[basicsKey(exam.id, s.id)]?.done);
 }
 
 /**

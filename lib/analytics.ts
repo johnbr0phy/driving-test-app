@@ -77,7 +77,8 @@ async function recordPaywallHit(itemId: string, itemName: string, location: stri
 const pendingByExam: Record<string, number> = {};
 let answerFlushTimer: ReturnType<typeof setTimeout> | null = null;
 
-export function trackQuestionsAnswered(count = 1, examKey: ExamAnalyticsKey = DMV_ANALYTICS_KEY) {
+// examKey: a v1 analytics key, or a v2 exam id (sat, act...) from useV2Store.
+export function trackQuestionsAnswered(count = 1, examKey: ExamAnalyticsKey | string = DMV_ANALYTICS_KEY) {
   if (count <= 0) return;
   trackFunnelStep("answered");
   pendingByExam[examKey] = (pendingByExam[examKey] || 0) + count;

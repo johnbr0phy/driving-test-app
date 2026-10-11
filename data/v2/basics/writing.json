@@ -9,7 +9,7 @@
       { "kind": "bad", "text": "She returned back to the start.", "note": "Returned already means back." },
       { "kind": "good", "text": "She returned to the start." }
     ],
-    "another": { "text": "Common repeats to watch for: \"return back,\" \"end result,\" \"each and every,\" \"past history,\" \"completely finished,\" \"annual yearly.\" If you hear one of these, one word is doing nothing.", "example": "\"The final outcome at the end\" → \"The outcome\"" },
+    "another": { "text": "\"I went back and returned home\" says \"back\" twice, because \"returned\" already means back. Watch for pairs that mean the same thing: \"end result,\" \"each and every,\" \"tiny little.\" One of the two words is just taking up space.", "example": "\"She returned back home.\" → \"She returned home.\"\n\"The end result\" → \"The result\"" },
     "questions": [
       { "stem": "Which is best?", "options": ["The two twins looked alike.", "The twins looked alike."], "answer": 1, "why": "Twins are always two. \"Two twins\" repeats." },
       { "stem": "Which is best?", "options": ["We will meet at 7 a.m. in the morning.", "We will meet at 7 a.m."], "answer": 1, "why": "a.m. already means morning." },
@@ -28,7 +28,7 @@
       { "kind": "bad", "text": "Due to the fact that it rained, we stayed in." },
       { "kind": "good", "text": "Because it rained, we stayed in." }
     ],
-    "another": { "text": "Imagine paying a dollar per word. \"At this point in time\" costs five dollars for what \"now\" says for one. The test rewards the cheap sentence every time, as long as nothing is lost.", "example": "\"in the event that\" → \"if\"\n\"has the ability to\" → \"can\"\n\"a large number of\" → \"many\"" },
+    "another": { "text": "Pretend every word costs a dollar. \"At this point in time\" costs five dollars. \"Now\" costs one and says the same thing. The test always wants the cheap sentence, as long as it means the same thing.", "example": "\"in the event that\" ($4) → \"if\" ($1)\n\"has the ability to\" ($4) → \"can\" ($1)" },
     "questions": [
       { "stem": "Which is best?", "options": ["At this point in time, the store is closed.", "The store is closed now."], "answer": 1, "why": "\"At this point in time\" is a long way to say \"now.\"" },
       { "stem": "Which is best?", "options": ["She has the ability to speak three languages.", "She can speak three languages."], "answer": 1, "why": "\"Has the ability to\" is \"can.\"" },
@@ -47,7 +47,7 @@
       { "kind": "good", "text": "The tiny crack grew into a gap you could fit a hand through.", "note": "Tiny matches \"grew into,\" which needs a small start." },
       { "kind": "bad", "text": "The enormous crack grew into a gap you could fit a hand through.", "note": "Enormous is too strong for something that then grows to hand-sized." }
     ],
-    "another": { "text": "Words come in ladders of strength: damp, wet, soaked. Warm, hot, scorching. The sentence usually tells you which rung you need. Match the rung, not just the general idea.", "example": "\"She was ___ when her team lost the final by one point.\"\nSad is too weak. Devastated fits." },
+    "another": { "text": "Words come in sizes, like small, medium, large. Damp, wet, soaked. Warm, hot, burning. The sentence tells you what size you need. A kid who dropped their ice cream is sad. A kid whose dog ran away is heartbroken. Pick the size that fits.", "example": "Dropped ice cream → sad\nDog ran away → heartbroken\nSame feeling, different sizes" },
     "questions": [
       { "blank": "After a week without rain, the soil was __ and cracked.", "options": ["damp", "dry", "soaked"], "answer": 1, "why": "No rain and cracked soil means dry. Damp and soaked go the wrong direction." },
       { "blank": "The lecture was so __ that half the audience fell asleep.", "options": ["thrilling", "brief", "dull"], "answer": 2, "why": "People sleep through dull talks, not thrilling or brief ones." },
@@ -66,7 +66,7 @@
       { "kind": "bad", "text": "The committee reviewed the budget and decided the numbers were totally bogus.", "note": "\"Totally bogus\" clashes with \"committee\" and \"reviewed.\"" },
       { "kind": "good", "text": "The committee reviewed the budget and decided the numbers were inaccurate." }
     ],
-    "another": { "text": "Think of clothing. Slang in a formal passage is like sneakers with a tuxedo. Stiff words in a casual passage are a tuxedo at the beach. Match what everyone else in the paragraph is wearing.", "example": "Formal: inaccurate, demonstrate, significant\nCasual: wrong, show, big" },
+    "another": { "text": "Think about clothes. You don't wear a swimsuit to a wedding or a tuxedo to the pool. Words are the same. A serious report doesn't say \"super cool,\" and a fun story doesn't say \"henceforth.\" Look at what the other words are wearing and match them.", "example": "Serious passage: wrong → incorrect\nFun passage: incorrect → wrong" },
     "questions": [
       { "blank": "The study's authors __ that the drug reduced symptoms in most patients.", "options": ["reckon", "concluded", "figure"], "answer": 1, "why": "\"Study's authors\" and \"patients\" are formal. \"Concluded\" matches; \"reckon\" and \"figure\" are slang." },
       { "blank": "My little brother __ his vegetables into his napkin when Mom wasn't looking.", "options": ["transferred", "stuffed", "relocated"], "answer": 1, "why": "A family story about a little brother is casual. \"Stuffed\" fits; the other two sound like a shipping manifest." },
@@ -86,7 +86,7 @@
       { "kind": "good", "text": "Add: \"A single dam can flood several acres.\"", "note": "Supports \"reshape rivers.\"" },
       { "kind": "bad", "text": "Add: \"Beavers have orange teeth because of iron in the enamel.\"", "note": "Cool fact, nothing to do with rivers." }
     ],
-    "another": { "text": "Every paragraph is a short speech with one point. A new sentence either hands the speaker a better example or interrupts them. The question is never \"is this true?\" It's \"does this help the speech?\"", "example": "Point: beavers change rivers\nHelps: flooding acres\nInterrupts: tooth color" },
+    "another": { "text": "Pretend the paragraph is your friend telling you about their dog. Every sentence should be about the dog. If a new sentence is about what they ate for lunch, it doesn't belong, even if it's true.", "example": "Story: My dog can open doors.\nFits: Last night he opened the fridge.\nDoesn't fit: Dogs have 42 teeth." },
     "questions": [
       { "passage": "Paragraph: The school's new schedule starts classes an hour later. Teachers report fewer students falling asleep, and attendance in first period has gone up.", "stem": "Should the writer add: \"Teenagers' bodies naturally want to sleep later than adults' do\"?", "options": ["Yes, it explains why the later start helps", "No, it is about sleep rather than school", "No, it repeats the first sentence"], "answer": 0, "why": "The paragraph is about why a later start works. A sentence on teen sleep gives the reason." },
       { "passage": "Paragraph: The school's new schedule starts classes an hour later. Teachers report fewer students falling asleep, and attendance in first period has gone up.", "stem": "Should the writer add: \"The school was built in 1962\"?", "options": ["Yes, it gives background on the school", "No, it has nothing to do with the schedule change"], "answer": 1, "why": "True, but it doesn't help the point about the later start." },
@@ -106,7 +106,7 @@
       { "kind": "good", "text": "Delete sentence 3.", "note": "The cousin has nothing to do with the trees." },
       { "kind": "bad", "text": "Delete sentence 2.", "note": "It explains why the trees matter. Without it, sentence 4 comes out of nowhere." }
     ],
-    "another": { "text": "The odd sentence out usually feels like a change of channel. You're reading about trees and suddenly it's about a cousin. That channel-change feeling is the signal. Trust it, then confirm by reading without the sentence.", "example": "trees → cooling → [cousin] → shade and shoppers\nThe bracket is the channel change." },
+    "another": { "text": "You're watching a show about sharks and suddenly there's a commercial about cereal. That jolt is what an off-topic sentence feels like. When a sentence makes you go \"wait, what?\", that's the one to delete. Read the paragraph without it to make sure.", "example": "sharks → sharks → [cereal] → sharks\nThe cereal sentence goes." },
     "questions": [
       { "passage": "(1) Sourdough bread uses wild yeast instead of packaged yeast. (2) The wild yeast comes from a starter, a mix of flour and water that bakers feed for days. (3) Rye flour is darker than wheat flour. (4) That slow process is what gives sourdough its tangy taste.", "stem": "Which sentence should be deleted?", "options": ["Sentence 2", "Sentence 3", "Sentence 4"], "answer": 1, "why": "Rye versus wheat color has nothing to do with the sourdough process. Remove it and 2 flows straight into 4." },
       { "passage": "(1) The robotics club meets every Tuesday. (2) This year the team built a robot that sorts recycling. (3) It separates cans from bottles with a camera and a small arm. (4) The team built a robot that sorts recycling this year.", "stem": "Which sentence should be deleted?", "options": ["Sentence 1", "Sentence 3", "Sentence 4"], "answer": 2, "why": "Sentence 4 repeats sentence 2 almost word for word." },
@@ -126,7 +126,7 @@
       { "kind": "good", "text": "The new phone improves on the old one in three ways.", "note": "Predicts battery, camera, and price." },
       { "kind": "bad", "text": "The new phone has a better battery.", "note": "Too narrow. Says nothing about camera or price." }
     ],
-    "another": { "text": "A topic sentence is a promise. Battery, camera, price is three promises kept. \"Phones are popular\" promises nothing specific. \"The battery is better\" promises one thing and then the paragraph talks about three. Pick the promise the paragraph keeps.", "example": "Too wide: Technology changes fast.\nToo narrow: The camera is better.\nJust right: It improves in three ways." },
+    "another": { "text": "A topic sentence is the title of a show. \"Three gross things my dog does\" tells you exactly what's coming. \"Dogs exist\" is too big. \"My dog licks the floor\" is too small when the paragraph lists three things. Pick the title that covers everything inside.", "example": "Too big: Pets are interesting.\nToo small: My dog licks the floor.\nJust right: My dog does three gross things." },
     "questions": [
       { "passage": "Body: ___ Farmers lost most of the corn crop. Rivers dropped so low that barges could not move grain. In some towns, drinking water had to be trucked in.", "stem": "Which topic sentence fits best?", "options": ["Corn is an important crop.", "The drought hurt the region in several ways.", "Weather is unpredictable."], "answer": 1, "why": "Crops, rivers, and drinking water are three kinds of drought damage. The first option is too narrow, the third too wide." },
       { "passage": "Body: ___ He learned to code from online videos. He built his first app at fourteen. By sixteen he had two thousand users and a small income.", "stem": "Which topic sentence fits best?", "options": ["Dev taught himself to build apps while still in high school.", "Apps are easy to make.", "Dev likes videos."], "answer": 0, "why": "It predicts the whole arc: self-taught, built apps, young. The others miss most of the body." },
@@ -146,7 +146,7 @@
       { "kind": "good", "text": "Built for an 1889 world's fair, the Eiffel Tower was meant to be taken down after 20 years.", "note": "Hits the goal directly." },
       { "kind": "bad", "text": "The Eiffel Tower is 330 meters tall and was finished in 1889.", "note": "True, but says nothing about being temporary." }
     ],
-    "another": { "text": "Every answer choice is built from the notes, so none of them is false. That's the trap. You're not checking facts. You're checking which sentence a writer with that specific goal would actually write.", "example": "Goal: emphasize height → use 330 meters\nGoal: emphasize temporary → use 20 years" },
+    "another": { "text": "You have a box of true facts about a tree. The question says \"show how tall the tree is.\" Every answer uses true facts from the box, so nobody is lying. The right one uses the tall facts. It's not a truth test. It's a \"did you do the job\" test.", "example": "Goal: show it's tall → use \"300 feet\"\nGoal: show it's old → use \"500 years old\"" },
     "questions": [
       { "passage": "Notes: Hummingbirds weigh less than a nickel. They beat their wings up to 80 times a second. They can fly backward. They migrate up to 500 miles nonstop.\n\nGoal: Emphasize how far hummingbirds can travel.", "stem": "Which sentence best meets the goal?", "options": ["Hummingbirds beat their wings up to 80 times a second.", "Though they weigh less than a nickel, hummingbirds can migrate up to 500 miles nonstop.", "Hummingbirds are the only birds that can fly backward."], "answer": 1, "why": "Only this one mentions distance. The nickel detail makes the 500 miles more impressive, which serves the goal." },
       { "passage": "Notes: The town library opened in 1901. It has 40,000 books. It offers free coding classes. It is open seven days a week.\n\nGoal: Introduce the library to someone unfamiliar with it.", "stem": "Which sentence best meets the goal?", "options": ["The town library, open since 1901, holds 40,000 books and runs programs like free coding classes.", "The coding classes are free.", "It is open seven days a week."], "answer": 0, "why": "An introduction gives the big picture. The other two are single details with no setup." },
@@ -166,7 +166,7 @@
       { "kind": "good", "text": "Goal: transition to the next paragraph. \"Not every neighborhood saw the same result.\"", "note": "Points forward to the suburbs." },
       { "kind": "bad", "text": "\"Recycling saves energy.\"", "note": "True, but it doesn't set up the contrast coming next." }
     ],
-    "another": { "text": "The goal in the question is like a job posting. \"Wanted: a sentence that gives an example.\" Three applicants are fine sentences with the wrong résumé. Hire the one that matches the posting.", "example": "Posting: give a specific example\nHire: \"The library's bin filled twice a day.\"\nReject: \"Recycling is important.\"" },
+    "another": { "text": "The question gives a job: \"give an example\" or \"set up the next paragraph.\" It's a help-wanted sign. Four sentences show up. Three are perfectly nice but applied for the wrong job. Hire the one that does exactly what the sign says.", "example": "Sign: give a specific example\nHire: \"The library's recycling bin filled up twice a day.\"\nSend home: \"Recycling is important.\"" },
     "questions": [
       { "passage": "The writer wants a sentence that gives a specific example of the previous claim: \"Small changes to a room can make it feel bigger.\"", "stem": "Which choice best accomplishes the goal?", "options": ["Hanging a mirror across from a window can double the light and open up the space.", "Many people wish their rooms were bigger.", "Room size matters to buyers."], "answer": 0, "why": "A mirror is one specific small change with its effect. The others are general statements." },
       { "passage": "The writer wants to acknowledge a possible objection before answering it. The paragraph argues the city should build more bike lanes.", "stem": "Which choice best accomplishes the goal?", "options": ["Bike lanes are good for the environment.", "Some drivers worry that bike lanes will take away parking.", "The city should start building right away."], "answer": 1, "why": "Naming the drivers' worry is acknowledging the other side. The others just continue the argument." },

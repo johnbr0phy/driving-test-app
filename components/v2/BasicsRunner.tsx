@@ -42,7 +42,7 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
   const [run, setRun] = useState<BasicsRun | null>(null);
   const [current, setCurrent] = useState<number | null>(null);
   const [picked, setPicked] = useState<number | null>(null);
-  const [ruleOpen, setRuleOpen] = useState(false);
+  const [eli5Open, setEli5Open] = useState(false);
   const [another, setAnother] = useState(false);
 
   useEffect(() => {
@@ -118,14 +118,10 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
             {review && <p className="text-sm text-gray-600">That one&apos;s tricky. Here&apos;s the rule again before the next question.</p>}
             <RuleCard skill={skill} />
             {another ? (
-              <div className="flex flex-col gap-2 border-l-4 border-brand pl-3">
-                <div className="text-sm font-bold text-gray-900">Another way to see it</div>
-                <p className="text-[15px] text-gray-800">{skill.another.text}</p>
-                <div className="whitespace-pre-line rounded-xl bg-brand-light px-3 py-2 text-[15px] text-gray-900">{skill.another.example}</div>
-              </div>
+              <Eli5Card skill={skill} />
             ) : (
               <button type="button" onClick={() => setAnother(true)} className="self-start text-sm font-semibold text-brand">
-                Still confused? Explain it another way
+                Still confused? ELI5
               </button>
             )}
           </div>
@@ -199,8 +195,8 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
             <div className="truncate text-sm font-bold">{skill.name}</div>
             <div className="text-xs text-gray-500">{run.mastered.length} of {total} right{comingBack ? ` · ${comingBack} coming back` : ""}</div>
           </div>
-          <button type="button" onClick={() => setRuleOpen(true)} className="rounded-full border-2 border-gray-200 px-3 py-1.5 text-sm font-semibold text-brand">
-            Rule
+          <button type="button" onClick={() => setEli5Open(true)} className="rounded-full border-2 border-gray-200 px-3 py-1.5 text-sm font-semibold text-brand">
+            ELI5
           </button>
         </div>
         <div className="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-gray-200">
@@ -263,14 +259,11 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
         </div>
       </div>
 
-      {ruleOpen && (
-        <div className="fixed inset-0 z-[90] flex items-end justify-center bg-black/50" role="dialog" aria-modal="true" aria-label="The rule" onClick={() => setRuleOpen(false)}>
+      {eli5Open && (
+        <div className="fixed inset-0 z-[90] flex items-end justify-center bg-black/50" role="dialog" aria-modal="true" aria-label="ELI5" onClick={() => setEli5Open(false)}>
           <div className="v2-pop max-h-[85%] w-full max-w-2xl overflow-y-auto rounded-t-2xl bg-white p-4" onClick={(e) => e.stopPropagation()}>
-            <div className="text-xs font-semibold uppercase tracking-wider text-brand">The rule</div>
-            <div className="mt-2">
-              <RuleCard skill={skill} compact />
-            </div>
-            <button type="button" onClick={() => setRuleOpen(false)} className="v2-tap mt-4 w-full rounded-xl bg-brand text-base font-bold text-white">
+            <Eli5Card skill={skill} />
+            <button type="button" onClick={() => setEli5Open(false)} className="v2-tap mt-4 w-full rounded-xl bg-brand text-base font-bold text-white">
               Back to the question
             </button>
           </div>
@@ -296,13 +289,24 @@ function Header({ title, sub, closeHref }: { title: string; sub: string; closeHr
   );
 }
 
+/** The skill explained like you're five: a picture a kid already knows, plus a tiny example story. */
+function Eli5Card({ skill }: { skill: BasicsSkill }) {
+  return (
+    <div className="flex flex-col gap-2 border-l-4 border-brand pl-3">
+      <div className="text-sm font-bold text-gray-900">ELI5 <span className="font-normal text-gray-600">(explained like you&apos;re five)</span></div>
+      <p className="text-[15px] text-gray-800">{skill.another.text}</p>
+      <div className="whitespace-pre-line rounded-xl bg-brand-light px-3 py-2 text-[15px] text-gray-900">{skill.another.example}</div>
+    </div>
+  );
+}
+
 /** The rule, the trick, the skill's table if any, and the examples. */
-function RuleCard({ skill, compact = false }: { skill: BasicsSkill; compact?: boolean }) {
+function RuleCard({ skill }: { skill: BasicsSkill }) {
   const marks = { good: "✓", bad: "✗", eg: "→" };
   const markClass = { good: "bg-green-100 text-green-700", bad: "bg-amber-100 text-amber-700", eg: "bg-brand-light text-brand" };
   return (
     <div className="flex flex-col gap-3">
-      <p className={`font-medium leading-snug text-gray-900 ${compact ? "text-lg" : "text-xl"}`}>{skill.rule}</p>
+      <p className="text-xl font-medium leading-snug text-gray-900">{skill.rule}</p>
       <div className="rounded-xl bg-yellow-100 px-4 py-3">
         <div className="text-[11px] font-bold uppercase tracking-wider text-yellow-900">The trick</div>
         <div className="text-[15px] text-gray-900">{skill.trick}</div>

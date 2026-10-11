@@ -45,7 +45,7 @@ export interface BasicsSkill {
   rule: string;
   trick: string;
   examples: BasicsExample[];
-  /** A second explanation with a different mental model, behind "explain it another way". */
+  /** An ELI5 explanation (a picture a little kid already knows), behind the "ELI5" button. */
   another: { text: string; example: string };
   /** Data the whole skill reads from (shown on the rule card and plain-stem questions). */
   table?: BasicsTable;

@@ -92,6 +92,7 @@ export const ACT: ExamV2Config = {
   // their score report. Reading's Integration category (10 drill items) rides
   // with Craft and Structure so no drill is a handful of questions.
   // legacyKey carries progress over from the four section drills these replaced.
+  drillSize: 20,
   drills: [
     { key: "conventions", legacyKey: "english", name: "Conventions of Standard English", section: "english", domains: ["conventions"], blurb: "Punctuation, agreement, pronouns, modifiers and sentence boundaries, passage by passage.", basics: ["semicolons", "colons", "itsIts", "subjectVerb", "commaSplices", "apostrophes"] },
     { key: "production", legacyKey: "english", name: "Production of Writing", section: "english", domains: ["production"], blurb: "Transitions, adding or deleting a sentence, placement, topic sentences and conclusions.", basics: ["transitions", "addingSentence", "deletingSentence", "topicSentences", "keepOnGoal"] },

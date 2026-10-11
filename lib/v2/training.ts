@@ -8,14 +8,23 @@ export function heldOutTests(exam: ExamV2Config): number[] {
 }
 
 /**
- * Every bank item in a drill's domains, in a fixed order that mixes modules.
- * Items tagged test 0 are drill-only; items from a held-out test are skipped
- * so that test stays unseen until the student sits it.
+ * The questions a drill runs: items in its domains, never from a held-out
+ * test (so that test stays unseen until the student sits it), sorted easiest
+ * first. Items tagged test 0 are drill-only. When the exam sets `drillSize`
+ * (or the drill sets `size`), the pool is trimmed to that many by taking an
+ * even spread across the difficulty range, so a drill stays short enough to
+ * finish in one sitting while the bank behind it can keep growing. The
+ * spread is a pure function of the pool, so the same questions come back
+ * every visit and the dashboard counts follow the same number.
  */
-export function drillQuestions(bank: QuestionV2[], drill: DrillDef, heldOut: number[] = []): QuestionV2[] {
-  return bank
+export function drillQuestions(bank: QuestionV2[], drill: DrillDef, exam: ExamV2Config): QuestionV2[] {
+  const heldOut = heldOutTests(exam);
+  const pool = bank
     .filter((q) => q.section === drill.section && drill.domains.includes(q.domain) && !heldOut.includes(q.test))
     .sort((a, b) => a.difficulty - b.difficulty || a.id.localeCompare(b.id));
+  const size = drill.size ?? exam.drillSize;
+  if (!size || pool.length <= size) return pool;
+  return Array.from({ length: size }, (_, i) => pool[Math.floor((i * pool.length) / size)]);
 }
 
 /**

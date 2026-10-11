@@ -77,6 +77,7 @@ export const SAT: ExamV2Config = {
     dataAnalysis: "Problem Solving and Data Analysis",
     geometryTrig: "Geometry and Trigonometry",
   },
+  drillSize: 20,
   drills: [
     { key: "craft", name: "Craft and Structure", section: "rw", domains: ["craftStructure"], blurb: "Words in context, text structure, cross-text connections. 28% of Reading and Writing.", basics: ["wordsInContext", "authorPurpose", "textStructure", "crossText", "toneWords"] },
     { key: "ideas", name: "Information and Ideas", section: "rw", domains: ["infoIdeas"], blurb: "Main ideas, evidence, tables, inferences. 26% of Reading and Writing.", basics: ["mainIdea", "findingDetail", "inference", "readingTable", "claimSupport", "logicalCompletion"] },

@@ -8,7 +8,7 @@ import { X, RotateCcw, Lock } from "lucide-react";
 import { ExamV2Config, AnswerValue, QuestionV2 } from "@/lib/v2/types";
 import { getBank, getStimulus } from "@/lib/v2/bank";
 import { v2Routes } from "@/lib/v2/registry";
-import { drillKey, drillQuestions, drillStateFor, heldOutTests, nextDrillQuestion, EMPTY_DRILL } from "@/lib/v2/training";
+import { drillKey, drillQuestions, drillStateFor, nextDrillQuestion, EMPTY_DRILL } from "@/lib/v2/training";
 import { optionOrderFor } from "@/lib/v2/session";
 import { isAnswered, isCorrect } from "@/lib/v2/grading";
 import { useV2Store } from "@/store/useV2Store";
@@ -38,7 +38,7 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
   const answerDrill = useV2Store((s) => s.answerDrill);
   const resetDrill = useV2Store((s) => s.resetDrill);
 
-  const allQuestions = useMemo(() => (drill ? drillQuestions(getBank(exam.id).questions, drill, heldOutTests(exam)) : []), [exam, drill]);
+  const allQuestions = useMemo(() => (drill ? drillQuestions(getBank(exam.id).questions, drill, exam) : []), [exam, drill]);
   const questions = allQuestions;
   // A Premium drill stays open for anyone already working in it (their own
   // saved progress, not progress carried over from a retired drill).

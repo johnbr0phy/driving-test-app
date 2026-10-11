@@ -8,7 +8,7 @@ import { ExamV2Config } from "@/lib/v2/types";
 import { getBank } from "@/lib/v2/bank";
 import { getSectionV2, v2Routes } from "@/lib/v2/registry";
 import { basicsFor, basicsKey } from "@/lib/v2/basics";
-import { drillQuestions, drillStateFor, heldOutTests } from "@/lib/v2/training";
+import { drillQuestions, drillStateFor } from "@/lib/v2/training";
 import { useV2Store } from "@/store/useV2Store";
 import { useHydration } from "@/hooks/useHydration";
 import { useIsPremium } from "@/hooks/useIsPremium";
@@ -40,7 +40,7 @@ export function DrillOverview({ exam, drillKeyParam }: { exam: ExamV2Config; dri
   }
 
   const section = getSectionV2(exam, drill.section);
-  const questions = drillQuestions(getBank(exam.id).questions, drill, heldOutTests(exam));
+  const questions = drillQuestions(getBank(exam.id).questions, drill, exam);
   const state = drillStateFor(drillsMap, exam.id, drill, questions);
   const mastered = state.masteredIds.filter((id) => questions.some((q) => q.id === id)).length;
   const learned = skills.filter((s) => basicsMap[basicsKey(exam.id, s.id)]?.done).length;

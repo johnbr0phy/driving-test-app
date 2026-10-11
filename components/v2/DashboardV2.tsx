@@ -13,7 +13,7 @@ import { ExamV2Config, TestResultV2 } from "@/lib/v2/types";
 import { getBank } from "@/lib/v2/bank";
 import { getSectionV2, stagesOf, v2Routes } from "@/lib/v2/registry";
 import { sessionKey } from "@/lib/v2/session";
-import { drillQuestions, drillStateFor, heldOutTests, EMPTY_DRILL } from "@/lib/v2/training";
+import { drillQuestions, drillStateFor, EMPTY_DRILL } from "@/lib/v2/training";
 import { basicsDone, basicsFor } from "@/lib/v2/basics";
 import { useV2Store, resultsForExam } from "@/store/useV2Store";
 import { useHydration } from "@/hooks/useHydration";
@@ -83,7 +83,7 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
 
   // ---- Step state ----
   const drillSteps = exam.drills.map((d) => {
-    const qs = drillQuestions(bank, d, heldOutTests(exam));
+    const qs = drillQuestions(bank, d, exam);
     const st = hydrated ? drillStateFor(drills, exam.id, d, qs) : EMPTY_DRILL;
     const mastered = st.masteredIds.filter((id) => qs.some((q) => q.id === id)).length;
     // Same rule as the drill page: open for anyone already working in it.

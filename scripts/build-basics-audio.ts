@@ -33,7 +33,7 @@ import type { BasicsSkill } from "../lib/v2/basics";
 import { canExplain, buildExplainer, words, type ExplainerBeat, type ExplainerManifest, type ExplainerWord } from "../lib/v2/explainer";
 
 const OUT_DIR = join(process.cwd(), "public", "basics-audio");
-const DEFAULT_VOICE = "21m00Tcm4TlvDq8ikWAM";
+const DEFAULT_VOICE = "6q6UVsvekS0UjrUXFz79"; // Benedict - Premium British (RP) Male
 const DEFAULT_MODEL = "eleven_multilingual_v2";
 
 const LIBRARY = ([...grammar, ...reading, ...math, ...science, ...writing] as BasicsSkill[]);

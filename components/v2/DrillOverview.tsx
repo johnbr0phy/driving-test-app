@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { ArrowLeft, Check, Lock } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import { ExamV2Config } from "@/lib/v2/types";
 import { getBank } from "@/lib/v2/bank";
 import { getSectionV2, v2Routes } from "@/lib/v2/registry";
@@ -77,7 +77,7 @@ export function DrillOverview({ exam, drillKeyParam }: { exam: ExamV2Config; dri
 
       <div className="v2-scroll">
         <div className="mx-auto flex max-w-2xl flex-col gap-4 px-4 py-5">
-          <Stage number={1} done={allLearned} title="Basics" count={`${learned}/${skills.length}`} sub="Learn one rule, practice it right away. About 2 minutes per skill. Free." />
+          <Stage title="Basics" count={`${learned}/${skills.length}`} sub="Learn one rule, practice it right away. About 2 minutes per skill. Free." />
           <div className="flex flex-col gap-2">
             {skills.map((s) => {
               const done = !!basicsMap[basicsKey(exam.id, s.id)]?.done;
@@ -115,20 +115,14 @@ export function DrillOverview({ exam, drillKeyParam }: { exam: ExamV2Config; dri
   );
 }
 
-function Stage({ number, done, muted = false, title, count, sub, lock = false }: { number: number; done: boolean; muted?: boolean; title: string; count?: string; sub: string; lock?: boolean }) {
+function Stage({ title, count, sub }: { title: string; count?: string; sub: string }) {
   return (
-    <div className="flex items-start gap-2.5">
-      <span className={`mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-xs font-bold ${done ? "bg-green-600 text-white" : muted ? "bg-gray-200 dark:bg-gray-700 text-gray-500 dark:text-gray-400" : "bg-brand text-white"}`}>
-        {done ? <Check className="h-3.5 w-3.5" strokeWidth={3} /> : number}
-      </span>
-      <div className="min-w-0">
-        <h2 className="flex items-center gap-1.5 text-[17px] font-bold text-gray-900 dark:text-gray-50">
-          {title}
-          {count && <span className="font-medium text-gray-500 dark:text-gray-400">· {count}</span>}
-          {lock && <Lock className="h-4 w-4 text-gray-400" />}
-        </h2>
-        <p className="text-sm text-gray-500 dark:text-gray-400">{sub}</p>
-      </div>
+    <div className="min-w-0">
+      <h2 className="flex items-center gap-1.5 text-[17px] font-bold text-gray-900 dark:text-gray-50">
+        {title}
+        {count && <span className="font-medium text-gray-500 dark:text-gray-400">· {count}</span>}
+      </h2>
+      <p className="text-sm text-gray-500 dark:text-gray-400">{sub}</p>
     </div>
   );
 }

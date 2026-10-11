@@ -1,4 +1,4 @@
-import { DrillState, TestResultV2, TestSessionV2 } from "./types";
+import { BasicsSkillState, DrillState, TestResultV2, TestSessionV2 } from "./types";
 import type { V2Data } from "@/store/useV2Store";
 
 // Pure merge of two copies of the v2 store (this device and the account),
@@ -52,7 +52,15 @@ export function mergeV2(local: V2Data, remote: V2Data): V2Data {
     if (!finishedLater) sessions[k] = pick;
   }
 
-  return { sessions, results, drills, goals: { ...local.goals, ...remote.goals } };
+  // A skill learned on either side stays learned; keep the earlier completion.
+  const basics: Record<string, BasicsSkillState> = {};
+  for (const k of new Set([...Object.keys(local.basics ?? {}), ...Object.keys(remote.basics ?? {})])) {
+    const a = local.basics?.[k];
+    const b = remote.basics?.[k];
+    basics[k] = !a ? b! : !b ? a : a.completedAt <= b.completedAt ? a : b;
+  }
+
+  return { sessions, results, drills, basics, goals: { ...local.goals, ...remote.goals } };
 }
 
 /** The same data with one exam's sessions, results, drills and goal removed. */
@@ -63,6 +71,7 @@ export function withoutExamV2(data: V2Data, examId: string): V2Data {
     sessions: Object.fromEntries(Object.entries(data.sessions).filter(([, v]) => v.examId !== examId)),
     results: data.results.filter((r) => r.examId !== examId),
     drills: Object.fromEntries(Object.entries(data.drills).filter(([k]) => !k.startsWith(`${examId}:`))),
+    basics: Object.fromEntries(Object.entries(data.basics ?? {}).filter(([k]) => !k.startsWith(`${examId}:`))),
     goals,
   };
 }

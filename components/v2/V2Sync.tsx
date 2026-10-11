@@ -5,7 +5,7 @@ import { useAuth } from "@/contexts/AuthContext";
 import { useV2Store, EMPTY_V2, V2Data } from "@/store/useV2Store";
 import { loadV2, mergeV2, saveV2 } from "@/lib/v2/sync";
 
-const pick = (s: V2Data): V2Data => ({ sessions: s.sessions, results: s.results, drills: s.drills, goals: s.goals });
+const pick = (s: V2Data): V2Data => ({ sessions: s.sessions, results: s.results, drills: s.drills, basics: s.basics, goals: s.goals });
 
 /**
  * Keeps the v2 store in step with the signed-in account so the phone drills
@@ -46,7 +46,7 @@ export function V2Sync() {
         ready.current = uid;
         unsubscribe = useV2Store.subscribe((next, prev) => {
           if (ready.current !== uid) return;
-          if (next.sessions === prev.sessions && next.results === prev.results && next.drills === prev.drills && next.goals === prev.goals) return;
+          if (next.sessions === prev.sessions && next.results === prev.results && next.drills === prev.drills && next.basics === prev.basics && next.goals === prev.goals) return;
           clearTimeout(timer);
           timer = setTimeout(() => saveV2(uid, pick(useV2Store.getState())).catch((e) => console.error("v2 sync failed", e)), 1500);
         });

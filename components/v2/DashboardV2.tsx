@@ -13,7 +13,8 @@ import { ExamV2Config, TestResultV2 } from "@/lib/v2/types";
 import { getBank } from "@/lib/v2/bank";
 import { getSectionV2, stagesOf, v2Routes } from "@/lib/v2/registry";
 import { sessionKey } from "@/lib/v2/session";
-import { drillKey, drillQuestions, drillStateFor, heldOutTests, EMPTY_DRILL } from "@/lib/v2/training";
+import { drillQuestions, drillStateFor, heldOutTests, EMPTY_DRILL } from "@/lib/v2/training";
+import { basicsDone, basicsFor } from "@/lib/v2/basics";
 import { useV2Store, resultsForExam } from "@/store/useV2Store";
 import { useHydration } from "@/hooks/useHydration";
 import { useAuth } from "@/contexts/AuthContext";
@@ -21,7 +22,7 @@ import { ProgressCard, Collapse } from "@/components/dashboard/ProgressCard";
 import { getTigerAsset, TigerExpression } from "@/lib/tigerAssets";
 import { useIsPremium } from "@/hooks/useIsPremium";
 import { usePurchaseReturn } from "@/hooks/usePurchaseReturn";
-import { isDrillLocked, isTestLocked, otherPremiumExams } from "@/lib/v2/premium";
+import { hasDrillProgress, isDrillLocked, isTestLocked, otherPremiumExams } from "@/lib/v2/premium";
 import { useV2Paywall, V2Paywall } from "./V2Paywall";
 
 function heroTitle(done: number, total: number): string {
@@ -63,6 +64,7 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
   const sessions = useV2Store((s) => s.sessions);
   const results = useV2Store((s) => s.results);
   const drills = useV2Store((s) => s.drills);
+  const basics = useV2Store((s) => s.basics);
   const savedGoal = useV2Store((s) => s.goals[exam.id]);
   const setGoal = useV2Store((s) => s.setGoal);
   const removeSession = useV2Store((s) => s.removeSession);
@@ -85,8 +87,11 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
     const st = hydrated ? drillStateFor(drills, exam.id, d, qs) : EMPTY_DRILL;
     const mastered = st.masteredIds.filter((id) => qs.some((q) => q.id === id)).length;
     // Same rule as the drill page: open for anyone already working in it.
-    const locked = premiumReady && isDrillLocked(exam, d.key, isPremium) && !(hydrated && drills[drillKey(exam.id, d.key)]);
-    return { def: d, total: qs.length, mastered, locked, started: st.seen > 0, complete: qs.length > 0 && mastered === qs.length };
+    const locked = premiumReady && isDrillLocked(exam, d.key, isPremium) && !(hydrated && hasDrillProgress(drills, basics, exam, d));
+    // Basics: the free rule-card level in front of the questions (lib/v2/basics).
+    const skills = basicsFor(d);
+    const learned = hydrated ? basicsDone(basics, exam.id, skills) : 0;
+    return { def: d, total: qs.length, mastered, locked, seen: st.seen > 0, started: st.seen > 0 || learned > 0, complete: qs.length > 0 && mastered === qs.length, skills: skills.length, learned };
   });
   const testSteps = exam.tests.map((t) => {
     const attempts = history.filter((r) => r.testNumber === t.number);
@@ -97,8 +102,17 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
     const locked = premiumReady && isTestLocked(exam, t.number, isPremium) && !session && attempts.length === 0;
     return { def: t, attempts, best, session, locked, complete: best !== null && best >= goal };
   });
-  const totalSteps = drillSteps.length + testSteps.length;
-  const doneSteps = drillSteps.filter((s) => s.complete).length + testSteps.filter((s) => s.complete).length;
+  // Phone steps: a Basics step in front of each drill that has one, then the
+  // drill's exam-level step. Both count toward the N/N at the top.
+  type PhoneStep = { kind: "basics" | "exam"; drill: (typeof drillSteps)[number]; complete: boolean; started: boolean };
+  const phoneSteps: PhoneStep[] = drillSteps.flatMap((d) => {
+    const steps: PhoneStep[] = [];
+    if (d.skills > 0) steps.push({ kind: "basics", drill: d, complete: d.learned === d.skills, started: d.learned > 0 });
+    steps.push({ kind: "exam", drill: d, complete: d.complete, started: d.mastered > 0 || d.seen });
+    return steps;
+  });
+  const totalSteps = phoneSteps.length + testSteps.length;
+  const doneSteps = phoneSteps.filter((s) => s.complete).length + testSteps.filter((s) => s.complete).length;
   const anyProgress = drillSteps.some((s) => s.started) || testSteps.some((s) => s.attempts.length > 0 || s.session);
   const bestOverall = history.length ? Math.max(...history.map((r) => r.composite)) : null;
 
@@ -179,32 +193,45 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
             <Smartphone className="h-3.5 w-3.5" /> Train by skill · on your phone
           </p>
           <div className="mb-6 space-y-1.5">
-            {drillSteps.map((s, index) => {
+            {phoneSteps.map((step, index) => {
+              const s = step.drill;
               const section = getSectionV2(exam, s.def.section);
               const isStartHere = index === 0 && !anyProgress;
-              const newSection = index === 0 || drillSteps[index - 1].def.section !== s.def.section;
+              const newSection = index === 0 || phoneSteps[index - 1].drill.def.section !== s.def.section;
+              const basics = step.kind === "basics";
+              // A Premium drill gates both its steps, Basics included.
+              const gated = s.locked;
+              const stamp = step.complete
+                ? { label: "Complete!", color: "green" as const }
+                : isStartHere && hasGoal
+                  ? { label: "Start here", color: "amber" as const }
+                  : step.started
+                    ? { label: "Keep going", color: "amber" as const }
+                    : undefined;
+              const subtitle = basics
+                ? gated
+                  ? `Premium · ${s.skills} skills`
+                  : `${s.learned}/${s.skills} skills learned`
+                : gated
+                  ? `Premium · ${s.total} questions`
+                  : `${s.mastered}/${s.total} mastered`;
+              // Basics opens the skill list; the exam step opens the questions once
+              // Basics is done (or the drill has none), else the overview.
+              const href = basics || (s.skills > 0 && s.learned < s.skills) ? routes.drill(s.def.key) : routes.drillQuestions(s.def.key);
               return (
-                <div key={s.def.key}>
+                <div key={`${s.def.key}-${step.kind}`}>
                   {newSection && (
                     <p className={`text-[11px] font-semibold text-gray-500 dark:text-gray-400 mb-1.5 ${index === 0 ? "" : "mt-3"}`}>{section.name}</p>
                   )}
                   <ProgressCard
-                    title={s.def.name}
-                    subtitle={s.locked ? `Premium · ${s.total} questions` : `${s.mastered}/${s.total} mastered`}
-                    completed={s.complete}
+                    title={basics ? `${s.def.name} Basics` : s.def.name}
+                    subtitle={subtitle}
+                    completed={step.complete}
                     stepNumber={index + 1}
-                    stamp={
-                      s.complete
-                        ? { label: "Complete!", color: "green" }
-                        : isStartHere && hasGoal
-                          ? { label: "Start here", color: "amber" }
-                          : s.started
-                            ? { label: "Keep going", color: "amber" }
-                            : undefined
-                    }
-                    isPremiumLocked={s.locked}
-                    href={s.locked ? undefined : routes.drill(s.def.key)}
-                    onClick={s.locked ? () => paywall.open(`drill_${s.def.key}`, `${s.def.name} drill`) : undefined}
+                    stamp={stamp}
+                    isPremiumLocked={gated}
+                    href={gated ? undefined : href}
+                    onClick={gated ? () => paywall.open(`drill_${s.def.key}`, `${s.def.name} drill`) : undefined}
                   />
                 </div>
               );
@@ -239,7 +266,7 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
                     title={`🎯 ${s.def.name}`}
                     subtitle={subtitle}
                     completed={s.complete}
-                    stepNumber={drillSteps.length + index + 1}
+                    stepNumber={phoneSteps.length + index + 1}
                     stamp={stamp}
                     isPremiumLocked={s.locked}
                     href={hasAttempts || s.locked ? undefined : routes.test(s.def.number)}

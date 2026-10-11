@@ -1,0 +1,102 @@
+[
+  {
+    "id": "whyStep",
+    "name": "Why a step was done",
+    "sub": "The purpose of a part of the procedure",
+    "rule": "Every step in an experiment has a reason: to keep something constant, to measure something, or to make sure the result is real. The reason is usually the thing that would go wrong if you skipped the step.",
+    "trick": "Ask \"what if they hadn't?\" Whatever would have gone wrong is why the step was there.",
+    "passage": "Students measured how fast ice melts in different liquids. Before each trial, they let every liquid sit in the room for an hour. Then they added one ice cube of the same size to each cup and timed how long it took to melt.",
+    "examples": [
+      { "kind": "good", "text": "Why let the liquids sit for an hour? So they all start at the same temperature.", "note": "What if they hadn't? A warm liquid would melt ice faster for the wrong reason." },
+      { "kind": "bad", "text": "To make the experiment take longer.", "note": "Nothing in science is done for its own sake." }
+    ],
+    "another": { "text": "Imagine a race where one kid gets a head start. Not fair, right? Scientists do steps like \"same-size cups\" and \"same temperature\" so the race is fair. When a question asks why a step was done, the answer is usually \"to make it fair\" or \"to measure something.\"", "example": "Same-size ice cubes → fair race\nSame starting temperature → fair race\nA thermometer in each cup → to measure" },
+    "questions": [
+      { "passage": "A student tested which paper towel absorbs the most water. She cut every towel to the same size, dipped each one for exactly 10 seconds, and then weighed it.", "stem": "Why did she cut every towel to the same size?", "options": ["So that a bigger towel couldn't absorb more just by being bigger", "To make them fit in the water", "Because the scale was small"], "answer": 0, "why": "What if she hadn't? The biggest towel would win no matter what it's made of. Same size makes it fair." },
+      { "passage": "Before testing a new fertilizer, a researcher grew 20 plants from the same seed packet in the same soil for two weeks, then split them into two groups.", "stem": "Why grow them together for two weeks first?", "options": ["To let the fertilizer soak in", "So both groups start out the same before the treatment", "To save water"], "answer": 1, "why": "Starting equal means any difference later came from the fertilizer, not from the plants being different to begin with." },
+      { "passage": "In a reaction-time test, each person did five practice rounds that were not recorded before the ten rounds that counted.", "stem": "What was the purpose of the practice rounds?", "options": ["To get extra data", "To let people learn the task so the real rounds measure reaction time, not confusion", "To tire people out"], "answer": 1, "why": "The first few tries of anything are slow for the wrong reason. Practice removes that, so the recorded rounds are clean." },
+      { "passage": "A chemist repeated each measurement three times and reported the average.", "stem": "Why repeat and average?", "options": ["To use up the chemicals", "To make the number look bigger", "To reduce the effect of a single odd measurement"], "answer": 2, "why": "One reading can be off. Three readings averaged smooth out a mistake or a fluke." },
+      { "passage": "In a study of a new sleep app, half the participants used the real app and half used a look-alike app that did nothing. No participant knew which one they had.", "stem": "Why keep participants from knowing which app they had?", "options": ["So that expecting the app to work couldn't change how they slept", "To save money", "Because the real app wasn't finished"], "answer": 0, "why": "If you believe something will help, you may feel it did. Hiding which group they're in removes that effect." }
+    ]
+  },
+  {
+    "id": "nextExperiment",
+    "name": "Designing the next experiment",
+    "sub": "Change one thing to answer a new question",
+    "rule": "To answer a new question, change the one variable the question is about and keep everything else exactly as before.",
+    "trick": "Find the new question's key word. The next experiment changes that one thing. If the question is about temperature, vary temperature and nothing else.",
+    "passage": "Study 1 tested how the amount of salt affects how fast water boils. All trials used 1 liter of water on the same burner.",
+    "examples": [
+      { "kind": "good", "text": "New question: does the amount of water matter? Next step: same burner, same salt, vary the liters.", "note": "One change." },
+      { "kind": "bad", "text": "Vary the water amount and the burner.", "note": "Two changes. You couldn't tell which one caused the difference." }
+    ],
+    "another": { "text": "You have three light switches and don't know which one runs the kitchen light. Flip one at a time. If you flip two at once and the light comes on, you still don't know which switch did it. Experiments change one thing at a time for the same reason.", "example": "Flip A → light on → A does it\nFlip A and B → light on → could be either" },
+    "questions": [
+      { "passage": "Experiment 1 measured how far a toy car rolls off ramps of different heights. Every ramp was 1 meter long and covered in the same smooth plastic.", "stem": "To find out whether the ramp surface affects distance, the next experiment should:", "options": ["Use one ramp height and try several surfaces", "Try several heights with a carpet ramp", "Use a longer ramp"], "answer": 0, "why": "The new question is about surface, so vary surface. Keep height fixed so it can't be the cause." },
+      { "passage": "Students found that plants grew taller with more light. All plants were watered 100 mL a day.", "stem": "To test whether water amount matters, they should:", "options": ["Give plants different light and different water", "Keep light the same and give plants different amounts of water", "Give all plants more light"], "answer": 1, "why": "Change only water. Same light means any height difference is from water." },
+      { "passage": "A study showed that a bridge model made of 20 popsicle sticks held 2 kg. A student wants to know if glue type matters.", "stem": "Which design answers that question?", "options": ["Build several 20-stick bridges, each with a different glue, and load them the same way", "Build bridges with different numbers of sticks", "Build one bridge with the strongest glue"], "answer": 0, "why": "Same number of sticks, same loading, only the glue changes. One bridge with one glue compares nothing." },
+      { "passage": "Experiment 2 tested how the temperature of water affects how much sugar dissolves. It used only table sugar.", "stem": "What should change to test whether the type of sugar matters?", "options": ["The type of sugar, with temperature held constant", "The temperature and the type of sugar", "The amount of water"], "answer": 0, "why": "New question is about sugar type. Change that and only that." },
+      { "passage": "A trial found that a plant food increased tomato yield in sandy soil.", "stem": "To learn whether it also works in clay soil, researchers should:", "options": ["Test a different plant food in clay soil", "Repeat the same trial with the same plant food in clay soil", "Add more plant food to the sandy soil"], "answer": 1, "why": "Keep the plant food, change the soil. Changing the food too would mix up two questions." }
+    ]
+  },
+  {
+    "id": "dataSupports",
+    "name": "Does the data support it?",
+    "sub": "Checking a claim against the numbers",
+    "rule": "A claim is supported only if the numbers actually move the way the claim says. Check the table before you agree with anything.",
+    "trick": "Turn the claim into a prediction about the table (\"if this is true, column B should go up\"). Then look. Does it?",
+    "table": { "head": ["Fertilizer (g)", "Plant height (cm)"], "rows": [["0", "12"], ["5", "18"], ["10", "21"], ["15", "21"]] },
+    "examples": [
+      { "kind": "good", "text": "Claim: more fertilizer helps up to a point. Supported.", "note": "Height rises to 10 g, then flattens. The table shows exactly that." },
+      { "kind": "bad", "text": "Claim: more fertilizer always helps. Not supported.", "note": "15 g gave the same height as 10 g." }
+    ],
+    "another": { "text": "Someone says \"I always win at checkers.\" You look at the scoreboard: they lost once. \"Always\" is broken. Check every row of the table against the claim. Words like always, never, and doubles are easy to break with just one row.", "example": "Claim: the plant doubled every week.\nTable: 10, 20, 35\n35 is not double 20. Not supported." },
+    "questions": [
+      { "stem": "Claim: Adding 5 g of fertilizer increased plant height. Is it supported?", "options": ["Yes, height went from 12 to 18 cm", "No, height stayed the same", "The table doesn't say"], "answer": 0, "why": "Row 0: 12. Row 5: 18. Up by 6. Supported." },
+      { "stem": "Claim: Going from 10 g to 15 g of fertilizer made plants taller. Is it supported?", "options": ["Yes", "No, height was 21 cm at both amounts"], "answer": 1, "why": "Same height in both rows. The extra 5 g did nothing." },
+      { "stem": "Which claim does the table best support?", "options": ["Fertilizer has no effect on height.", "Height increases with fertilizer up to about 10 g, then levels off.", "Height doubles for every 5 g added."], "answer": 1, "why": "Up, up, flat. That is the only claim that fits every row." },
+      { "stem": "A scientist claims plants with no fertilizer die. Does the table support this?", "options": ["Yes, 0 g is the lowest", "No, the 0 g plants grew to 12 cm"], "answer": 1, "why": "Shortest isn't dead. The 0 g plants were 12 cm tall." },
+      { "stem": "Claim: 20 g of fertilizer would make plants 30 cm tall. What does the data say?", "options": ["Supported, the trend is upward", "Not supported, the trend had already flattened by 15 g", "Supported, because 20 is more than 15"], "answer": 1, "why": "Growth stopped between 10 and 15 g. Nothing suggests it would restart." }
+    ]
+  },
+  {
+    "id": "conflictingScientists",
+    "name": "Two scientists disagree",
+    "sub": "Finding what each one actually claims",
+    "rule": "When two scientists disagree, each one has a main claim and reasons for it. Pin down each claim in one sentence before answering anything about them.",
+    "trick": "Write \"Scientist 1 says ___ because ___. Scientist 2 says ___ because ___.\" Most questions are answered by those two lines.",
+    "passage": "Scientist 1: The lake's fish are dying because fertilizer from nearby farms runs into the water and feeds algae, which uses up the oxygen.\n\nScientist 2: The fish are dying because the summers have grown hotter, and warm water holds less oxygen.",
+    "examples": [
+      { "kind": "good", "text": "They agree fish are dying from low oxygen. They disagree on what caused it.", "note": "Same effect, different cause." },
+      { "kind": "bad", "text": "Scientist 2 thinks the fish are fine.", "note": "Both accept the fish are dying." }
+    ],
+    "another": { "text": "Two kids find a broken vase. Both agree the vase is broken and the cat was in the room. Kid 1 says the cat did it. Kid 2 says the wind did it. They agree on what happened. They fight about why. Find the one word where the \"why\" splits.", "example": "Both agree: fish are dying, oxygen is low\nSplit: farm runoff vs hot summers" },
+    "questions": [
+      { "passage": "Scientist 1: The lake's fish are dying because fertilizer runs into the water and feeds algae, which uses up the oxygen.\n\nScientist 2: The fish are dying because summers are hotter, and warm water holds less oxygen.", "stem": "On what do both scientists agree?", "options": ["Farms are to blame.", "The fish are dying from low oxygen.", "Summers are hotter."], "answer": 1, "why": "Both say fish are dying and both say oxygen is low. They split only on the cause." },
+      { "passage": "Scientist 1: The lake's fish are dying because fertilizer runs into the water and feeds algae, which uses up the oxygen.\n\nScientist 2: The fish are dying because summers are hotter, and warm water holds less oxygen.", "stem": "Which finding would support Scientist 1 over Scientist 2?", "options": ["Fish deaths are highest right after heavy rain washes fields into the lake.", "Fish deaths are highest in the hottest weeks.", "Fish deaths happen all year equally."], "answer": 0, "why": "Rain carrying fertilizer in points to the farm explanation. Hot weeks would support Scientist 2." },
+      { "passage": "Scientist 1: The lake's fish are dying because fertilizer runs into the water and feeds algae, which uses up the oxygen.\n\nScientist 2: The fish are dying because summers are hotter, and warm water holds less oxygen.", "stem": "Which finding would support Scientist 2?", "options": ["A nearby lake with no farms around it, but the same hot summers, has the same fish deaths.", "The algae in the lake has tripled since farming began.", "Fish deaths stopped when fertilizer use was banned."], "answer": 0, "why": "No farms but same deaths means farms aren't needed to explain it. Heat is the common factor." },
+      { "passage": "Scientist 1: Dinosaurs died out because an asteroid hit Earth and blocked the sun.\n\nScientist 2: Dinosaurs died out because massive volcanic eruptions filled the air with gases over thousands of years.", "stem": "What is the main point of disagreement?", "options": ["Whether dinosaurs died out", "What caused the dinosaurs to die out", "When the asteroid hit"], "answer": 1, "why": "Both agree they died out. Asteroid vs volcanoes is the disagreement." },
+      { "passage": "Scientist 1: Dinosaurs died out because an asteroid hit Earth and blocked the sun.\n\nScientist 2: Dinosaurs died out because massive volcanic eruptions filled the air with gases over thousands of years.", "stem": "Which discovery would be hardest for Scientist 1 to explain?", "options": ["A huge crater dated to the extinction", "Fossil evidence that dinosaur numbers were falling for thousands of years before the extinction", "A layer of asteroid dust in rocks worldwide"], "answer": 1, "why": "An asteroid is sudden. A slow decline over thousands of years fits the volcano story better." }
+    ]
+  },
+  {
+    "id": "betterModel",
+    "name": "Picking the better explanation",
+    "sub": "Which idea fits all the data",
+    "rule": "The better explanation is the one that fits every observation, not just most of them. One observation that an explanation can't handle is a serious problem for it.",
+    "trick": "Test each explanation against each row of data. The first one to hit a row it can't explain loses.",
+    "table": { "head": ["Month", "Street flooding", "Rainfall (in)", "Storm drains cleaned?"], "rows": [["March", "Yes", "6", "No"], ["April", "No", "6", "Yes"], ["May", "Yes", "2", "No"], ["June", "No", "7", "Yes"]] },
+    "examples": [
+      { "kind": "good", "text": "Explanation: flooding happens when drains aren't cleaned. Fits every row.", "note": "Every \"No\" clean is a flood, every \"Yes\" clean is dry." },
+      { "kind": "bad", "text": "Explanation: flooding happens when it rains a lot. Fails.", "note": "May flooded with 2 inches; June stayed dry with 7." }
+    ],
+    "another": { "text": "A good explanation is like a weather friend who's always right. Ask each explanation to guess every day on the list. The one that's never wrong wins. Being right most days isn't good enough when the other one is right every day.", "example": "Explanation A: wrong on 2 days out of 4\nExplanation B: right on all 4 → B is better" },
+    "questions": [
+      { "stem": "Which explanation fits all four months?", "options": ["Flooding depends on how much rain falls.", "Flooding happens when the drains were not cleaned.", "Flooding happens in spring only."], "answer": 1, "why": "Check each row: uncleaned drains always flood, cleaned drains never do. Rainfall fails in May and June." },
+      { "stem": "Which month is the biggest problem for the rainfall explanation?", "options": ["March", "April", "June"], "answer": 2, "why": "7 inches, the most rain of any month, and no flooding. The rainfall model can't explain that." },
+      { "stem": "Based on the better model, what would you predict for a July with 5 inches of rain and cleaned drains?", "options": ["Flooding", "No flooding", "Can't say"], "answer": 1, "why": "Cleaned drains have meant no flooding every time, regardless of rain." },
+      { "stem": "A new month shows 3 inches of rain, drains not cleaned, and no flooding. What does this do to the drain model?", "options": ["Supports it", "Weakens it, since it predicted flooding", "Has no effect"], "answer": 1, "why": "The model said uncleaned drains flood. Here they didn't. One miss means the model is incomplete." },
+      { "stem": "Why is the rainfall explanation weaker, even though rain obviously matters for flooding?", "options": ["Because rain was never measured", "Because it can't explain why a dry month flooded and a wet month didn't", "Because drains are more interesting"], "answer": 1, "why": "A model has to fit the data in front of you. Two months contradict it." }
+    ]
+  }
+]

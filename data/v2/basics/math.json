@@ -10,6 +10,19 @@
       { "kind": "eg", "text": "x² − x − 12", "note": "Multiply to −12, add to −1: −4 and 3. So (x − 4)(x + 3)." }
     ],
     "another": { "text": "Factoring is un-multiplying. Somebody multiplied two things to get x² + 5x + 6, and you're figuring out what they were. Look for two numbers that multiply to the last number and add to the middle number. 2 and 3 multiply to 6 and add to 5.", "example": "x² + 5x + 6\nMultiply to 6, add to 5: 2 and 3\n(x + 2)(x + 3)" },
+    "walkthrough": {
+      "board": "x² + 5x + 6",
+      "kind": "math",
+      "steps": [
+        { "say": "Factoring is un-multiplying. Two brackets were multiplied together to make this. Your job is to find them." },
+        { "ask": "What is the last number?", "options": ["6", "5"], "answer": 0, "then": "We need two numbers that multiply to 6.", "line": "Multiply to 6 (the last number)" },
+        { "ask": "And the middle number?", "options": ["5", "6"], "answer": 0, "then": "The same two numbers must also add to 5.", "line": "Add to 5 (the middle number)" },
+        { "ask": "Which pairs multiply to 6?", "options": ["1 and 6, 2 and 3", "1 and 5, 2 and 4"], "answer": 0, "hint": "1 × 5 is 5, not 6.", "line": "Pairs for 6: 1·6, 2·3" },
+        { "ask": "Which pair adds to 5?", "options": ["2 and 3", "1 and 6"], "answer": 0, "then": "2 + 3 = 5. That is the pair.", "hint": "1 + 6 is 7.", "line": "2 + 3 = 5 ✓" },
+        { "ask": "Put them in the brackets. The answer is:", "options": ["(x + 2)(x + 3)", "(x + 1)(x + 6)"], "answer": 0, "then": "Check: 2 × 3 = 6 and 2 + 3 = 5. Both match.", "line": "(x + 2)(x + 3)" },
+        { "say": "One twist. If the last number is negative, like x² − x − 12, one of the pair is negative. Pairs for 12: 1·12, 2·6, 3·4. The pair that adds to −1 is 3 and −4. So (x + 3)(x − 4)." }
+      ]
+    },
     "questions": [
       { "stem": "Factor x² + 7x + 10.", "options": ["(x + 2)(x + 5)", "(x + 1)(x + 10)", "(x + 3)(x + 4)"], "answer": 0, "why": "Multiply to 10, add to 7: 2 and 5." },
       { "stem": "Factor x² + 2x − 15.", "options": ["(x + 3)(x − 5)", "(x − 3)(x + 5)", "(x + 1)(x − 15)"], "answer": 1, "why": "Multiply to −15, add to +2: 5 and −3. The bigger one is positive." }
@@ -26,6 +39,17 @@
       { "kind": "eg", "text": "y = −2(x + 1)² + 7", "note": "Vertex (−1, 7). Opens down, so 7 is the maximum." }
     ],
     "another": { "text": "A parabola is a smile or a frown. The vertex is the very bottom of the smile or the very top of the frown. The squared part can never go below zero, so the bottom (or top) happens when it IS zero. That's at x = h, and the height there is k.", "example": "y = (x − 3)² + 5\n(x − 3)² is zero when x = 3\nSo the bottom of the smile is at (3, 5)" },
+    "walkthrough": {
+      "board": "y = −2(x + 1)² + 7",
+      "kind": "math",
+      "steps": [
+        { "say": "This is vertex form: y = a(x − h)² + k. The vertex is (h, k). Two traps: a sign flip, and which way it opens." },
+        { "ask": "Inside the bracket is x + 1. What is h?", "options": ["−1", "1"], "answer": 0, "then": "The form says x − h. x + 1 is x − (−1), so h = −1. Flip what you see inside.", "hint": "h has the opposite sign of what you see inside.", "line": "h = −1 (flip the inside sign)" },
+        { "ask": "Outside the bracket is + 7. What is k?", "options": ["7", "−7"], "answer": 0, "then": "k is exactly what you see outside. No flip.", "line": "k = 7 (outside, as is)" },
+        { "ask": "So the vertex is?", "options": ["(−1, 7)", "(1, 7)", "(7, −1)"], "answer": 0, "hint": "(h, k): h first.", "line": "Vertex: (−1, 7)" },
+        { "ask": "a = −2, a negative. Which way does the parabola open?", "options": ["Down, so 7 is the maximum", "Up, so 7 is the minimum"], "answer": 0, "then": "Negative a opens down. The vertex is the top, so 7 is the highest y gets.", "hint": "Negative a frowns.", "line": "a < 0: opens down, max = 7" }
+      ]
+    },
     "questions": [
       { "stem": "What is the vertex of y = (x + 6)² − 1?", "options": ["(6, −1)", "(−6, −1)", "(−6, 1)"], "answer": 1, "why": "Inside is x + 6, flip the sign: h = −6. Outside is −1." },
       { "stem": "A ball's height is h = −16(t − 2)² + 64. What is its maximum height?", "options": ["64", "2", "16"], "answer": 0, "why": "Negative a means it opens down, so the vertex is the top. k = 64 is the max height, reached at t = 2." }
@@ -42,6 +66,17 @@
       { "kind": "eg", "text": "(x³)⁴ = x¹²", "note": "Power of a power, so 3 × 4." }
     ],
     "another": { "text": "Exponents just count copies. x³ is three x's in a row. x³ · x⁴ is three x's next to four x's. Count them: seven. That's why you add. If you forget a rule, write out the copies and count.", "example": "x³ · x⁴ = (x·x·x)(x·x·x·x) = seven x's = x⁷\nx⁵ ÷ x² = five x's, cross out two = x³" },
+    "walkthrough": {
+      "board": "x³ · x⁴",
+      "kind": "math",
+      "steps": [
+        { "say": "Three rules: one for multiplying, one for dividing, one for a power of a power." },
+        { "ask": "Multiplying the same base. What do you do with the exponents?", "options": ["Add them", "Multiply them"], "answer": 0, "then": "Multiply → add. 3 + 4 = 7.", "hint": "Multiply → add.", "line": "x³ · x⁴ = x⁷" },
+        { "ask": "(x³)⁴ is a power of a power. Now what?", "options": ["Multiply them", "Add them"], "answer": 0, "then": "Power of a power → multiply. 3 × 4 = 12.", "hint": "Power of a power → multiply.", "line": "(x³)⁴ = x¹²" },
+        { "ask": "x⁷ ÷ x³ = ?", "options": ["x⁴", "x¹⁰"], "answer": 0, "then": "Divide → subtract. 7 − 3 = 4.", "hint": "Divide → subtract.", "line": "x⁷ ÷ x³ = x⁴" },
+        { "ask": "x⁰ = ?", "options": ["1", "0", "x"], "answer": 0, "then": "Anything to the zero power is 1.", "line": "x⁰ = 1" }
+      ]
+    },
     "questions": [
       { "stem": "Simplify x⁵ · x².", "options": ["x¹⁰", "x⁷", "x³"], "answer": 1, "why": "Multiplying the same base: add exponents. 5 + 2 = 7." },
       { "stem": "Simplify (x²)⁵.", "options": ["x⁷", "x¹⁰", "x³"], "answer": 1, "why": "Power of a power: multiply. 2 × 5 = 10." }
@@ -58,6 +93,17 @@
       { "kind": "eg", "text": "A car loses 15% of its value a year", "note": "V = 20,000 · (0.85)ᵗ" }
     ],
     "another": { "text": "Linear is a staircase: every step up is the same size. Exponential is a snowball rolling downhill: every turn it gets bigger by the same number of times, so it grows faster and faster. Same gap means staircase. Same multiplier means snowball.", "example": "2, 5, 8, 11 → +3 every time → staircase (linear)\n2, 4, 8, 16 → ×2 every time → snowball (exponential)" },
+    "walkthrough": {
+      "board": "y = 100 · 2ˣ",
+      "kind": "math",
+      "steps": [
+        { "say": "Linear change adds the same amount each step. Exponential change multiplies by the same amount each step." },
+        { "ask": "This starts at 100. Each time x goes up by 1, y gets:", "options": ["Multiplied by 2", "Plus 2"], "answer": 0, "then": "100, 200, 400, 800. It doubles.", "hint": "The 2 has x as its exponent: it multiplies.", "line": "100 → 200 → 400 → 800" },
+        { "ask": "Which list is exponential?", "options": ["2, 4, 8, 16", "2, 4, 6, 8"], "answer": 0, "then": "2, 4, 8, 16 doubles each step. 2, 4, 6, 8 adds 2 each step, which is linear.", "hint": "Which one multiplies each step?", "line": "2, 4, 8, 16 is × 2 each step" },
+        { "ask": "A town grows 10% a year. Multiply by what each year?", "options": ["1.10", "0.10", "10"], "answer": 0, "then": "You keep all of it (1) and add 10% (0.10): 1.10.", "hint": "You keep what you had, plus 10% more.", "line": "10% growth: × 1.10" },
+        { "ask": "A car loses 15% of its value a year. Multiply by?", "options": ["0.85", "1.15", "0.15"], "answer": 0, "then": "You keep 85%: 1 − 0.15 = 0.85.", "hint": "Losing 15% leaves 85%.", "line": "15% decay: × 0.85" }
+      ]
+    },
     "questions": [
       { "stem": "Which table shows exponential growth?", "options": ["2, 4, 6, 8", "2, 4, 8, 16", "2, 3, 5, 8"], "answer": 1, "why": "2, 4, 8, 16 doubles each time. 2, 4, 6, 8 adds 2 each time, which is linear." },
       { "stem": "A population of 500 grows 10% a year. Which equation models it?", "options": ["P = 500 · (1.10)ᵗ", "P = 500 + 10t", "P = 500 · (0.10)ᵗ"], "answer": 0, "why": "10% growth means multiply by 1.10 each year, starting from 500." }
@@ -74,6 +120,17 @@
       { "kind": "eg", "text": "g(x) = x² − 4. Find g(−2).", "note": "g(−2) = (−2)² − 4 = 4 − 4 = 0." }
     ],
     "another": { "text": "f is a machine. You drop a number in the top, it does its one trick, and a new number falls out the bottom. f(3) means \"drop in a 3.\" It does NOT mean f times 3. The machine's name is f and 3 is what you fed it.", "example": "Machine f doubles the number and adds 1.\nFeed it 3 → 2·3 + 1 = 7 → f(3) = 7" },
+    "walkthrough": {
+      "board": "f(x) = 2x + 1.  Find f(3).",
+      "kind": "math",
+      "steps": [
+        { "say": "f(3) is not f times 3. It means: put 3 in for x, then do the arithmetic." },
+        { "ask": "Replace every x with 3. What do you get?", "options": ["2(3) + 1", "2 × 3x + 1"], "answer": 0, "then": "Swap the x for (3). Everything else stays.", "hint": "The x disappears and 3 takes its place.", "line": "f(3) = 2(3) + 1" },
+        { "ask": "2(3) + 1 = ?", "options": ["7", "9"], "answer": 0, "then": "f(3) = 7. Input 3, output 7.", "line": "f(3) = 7" },
+        { "ask": "The point (2, 9) is on the graph of f. Which is true?", "options": ["f(2) = 9", "f(9) = 2"], "answer": 0, "then": "A point (x, y) means input x gives output y.", "hint": "First number goes in, second number comes out.", "line": "(2, 9) on the graph → f(2) = 9" },
+        { "ask": "g(x) = x² − 4. What is g(−2)?", "options": ["0", "−8"], "answer": 0, "then": "(−2)² = 4, and 4 − 4 = 0. Put brackets around a negative input.", "hint": "(−2)² is positive 4.", "line": "g(−2) = (−2)² − 4 = 0" }
+      ]
+    },
     "questions": [
       { "stem": "f(x) = 3x − 2. What is f(4)?", "options": ["10", "12", "4"], "answer": 0, "why": "Replace x with 4: 3(4) − 2 = 12 − 2 = 10." },
       { "stem": "The point (2, 9) is on the graph of f. Which statement is true?", "options": ["f(9) = 2", "f(2) = 9", "f(2) = 2"], "answer": 1, "why": "A point (x, y) on the graph means f(x) = y. Input 2, output 9." }
@@ -90,6 +147,17 @@
       { "kind": "eg", "text": "Triangle, base 8, height 5", "note": "Area = ½ × 8 × 5 = 20." }
     ],
     "another": { "text": "Perimeter is the fence. Walk all the way around the yard and count your steps. Area is the grass. Count how many square patches of grass fill the yard. A long skinny yard and a square yard can need the same fence but have very different amounts of grass.", "example": "1 by 7 yard: fence 16, grass 7\n4 by 4 yard: fence 16, grass 16" },
+    "walkthrough": {
+      "board": "Rectangle, 5 by 3",
+      "kind": "text",
+      "steps": [
+        { "say": "Perimeter is the distance around. Area is the space inside. Different questions, different math." },
+        { "ask": "Perimeter: add up all four sides. 5 + 3 + 5 + 3 = ?", "options": ["16", "15", "8"], "answer": 0, "hint": "Four sides, two of each.", "line": "Perimeter = 5 + 3 + 5 + 3 = 16" },
+        { "ask": "Area: length × width. 5 × 3 = ?", "options": ["15", "16"], "answer": 0, "then": "15 square units. Area is always in square units.", "line": "Area = 5 × 3 = 15 square units" },
+        { "ask": "A question asks how much fence goes around a yard. Which one?", "options": ["Perimeter", "Area"], "answer": 0, "then": "Fence, border, frame: around, so perimeter. Carpet, paint, grass: inside, so area.", "hint": "Fence goes around the edge.", "line": "Fence or border → perimeter · carpet or paint → area" },
+        { "ask": "Triangle, base 8, height 5. Area is half of base × height = ?", "options": ["20", "40", "13"], "answer": 0, "then": "8 × 5 = 40, and half of that is 20.", "hint": "Half of 8 × 5.", "line": "Triangle: ½ × 8 × 5 = 20" }
+      ]
+    },
     "questions": [
       { "stem": "A rectangle is 8 cm long and 3 cm wide. What is its area?", "options": ["11 cm²", "22 cm²", "24 cm²"], "answer": 2, "why": "Area = length × width = 8 × 3 = 24. (22 is the perimeter.)" },
       { "stem": "Carlos wants to put a fence around a 20 ft by 15 ft yard. How much fence does he need?", "options": ["300 ft", "35 ft", "70 ft"], "answer": 2, "why": "Fence goes around, so perimeter: 20 + 15 + 20 + 15 = 70." }
@@ -106,6 +174,17 @@
       { "kind": "eg", "text": "Diameter 10", "note": "Radius is 5. Area = 25π." }
     ],
     "another": { "text": "The radius is one spoke of a bike wheel, from the middle to the edge. The diameter is two spokes in a straight line, all the way across. Circumference is the tire, the distance around. Area is how much pizza is inside.", "example": "Radius 3 → diameter 6\nTire (circumference) = 2 × π × 3 ≈ 18.8\nPizza (area) = π × 3 × 3 ≈ 28.3" },
+    "walkthrough": {
+      "board": "Circle with diameter 10",
+      "kind": "text",
+      "steps": [
+        { "say": "Every circle formula uses the radius. If you are given the diameter, fix that first." },
+        { "ask": "Diameter 10. What is the radius?", "options": ["5", "10", "20"], "answer": 0, "then": "The radius is half the diameter.", "hint": "Center to edge is half of edge to edge.", "line": "r = 10 ÷ 2 = 5" },
+        { "ask": "Area = πr². What is r²?", "options": ["25", "10"], "answer": 0, "then": "5 × 5 = 25, so the area is 25π.", "hint": "r² means r × r.", "line": "Area = π · 25 = 25π" },
+        { "ask": "Circumference = 2πr = ?", "options": ["10π", "25π", "5π"], "answer": 0, "then": "2 × 5 = 10, so 10π.", "hint": "2 × r × π.", "line": "Circumference = 2π · 5 = 10π" },
+        { "say": "The trap on the test is using 10 as the radius and getting 100π. Halve the diameter first, every time." }
+      ]
+    },
     "questions": [
       { "stem": "A circle has a radius of 4. What is its area?", "options": ["8π", "16π", "4π"], "answer": 1, "why": "Area = πr² = π · 16 = 16π." },
       { "stem": "A circle has a diameter of 12. What is its area?", "options": ["144π", "36π", "12π"], "answer": 1, "why": "Radius is 6, so area = π · 36 = 36π. Using 12 as the radius is the trap." }
@@ -121,6 +200,18 @@
       { "kind": "eg", "text": "Right triangle with sides 3, 4, 5. Angle A is across from the 3.", "note": "sin A = 3/5, cos A = 4/5, tan A = 3/4." }
     ],
     "another": { "text": "Sit down at the angle you care about. The side you're sitting on is Adjacent (next to you). The side across the room is Opposite. The long slanty side is the Hypotenuse. Label those three first. Then SOH CAH TOA just tells you which two to divide.", "example": "Sitting at the bottom-left corner:\nHypotenuse = the slanted side\nOpposite = the side across from you\nAdjacent = the side you're sitting on" },
+    "walkthrough": {
+      "board": "Right triangle with sides 3, 4, 5. Angle A is across from the 3.",
+      "kind": "text",
+      "steps": [
+        { "say": "SOH CAH TOA: Sin = Opposite ÷ Hypotenuse, Cos = Adjacent ÷ Hypotenuse, Tan = Opposite ÷ Adjacent. First, name the three sides." },
+        { "ask": "Which side is the hypotenuse?", "options": ["5", "4", "3"], "answer": 0, "then": "Always the longest, across from the right angle.", "hint": "The longest side.", "line": "Hypotenuse = 5" },
+        { "ask": "Which side is opposite angle A?", "options": ["3", "4"], "answer": 0, "then": "Across from the angle.", "line": "Opposite = 3" },
+        { "ask": "So the adjacent side is?", "options": ["4", "5"], "answer": 0, "then": "The leg that touches A and is not the hypotenuse.", "hint": "Not the hypotenuse, not the opposite.", "line": "Adjacent = 4" },
+        { "ask": "sin A = Opposite ÷ Hypotenuse = ?", "options": ["3/5", "4/5", "3/4"], "answer": 0, "hint": "SOH: opposite over hypotenuse.", "line": "sin A = 3/5" },
+        { "ask": "tan A = Opposite ÷ Adjacent = ?", "options": ["3/4", "4/3", "3/5"], "answer": 0, "then": "And cos A = adjacent over hypotenuse = 4/5.", "hint": "TOA: opposite over adjacent.", "line": "tan A = 3/4, cos A = 4/5" }
+      ]
+    },
     "questions": [
       { "stem": "A right triangle has legs 5 and 12 and hypotenuse 13. Angle A is across from the 5. What is sin A?", "options": ["5/13", "12/13", "5/12"], "answer": 0, "why": "SOH: opposite over hypotenuse = 5/13." },
       { "stem": "A right triangle has legs 5 and 12 and hypotenuse 13. Angle A is across from the 5. What is tan A?", "options": ["5/12", "12/5", "5/13"], "answer": 0, "why": "TOA: opposite over adjacent = 5/12." }
@@ -138,6 +229,16 @@
       { "kind": "eg", "text": "Pick a senior at random. P(walks)?", "note": "Restricted to seniors: 60 out of 100 = 3/5." }
     ],
     "another": { "text": "Probability is \"how many do I want\" over \"how many are there.\" In a table, \"how many are there\" shrinks when the question says \"of the girls\" or \"of the seniors.\" Then only that row counts. Pretend the other rows disappeared.", "example": "Whole school: 180 kids\n\"Of the seniors\": only the senior row, 100 kids\nYour fraction's bottom is 100, not 180" },
+    "walkthrough": {
+      "table": true,
+      "steps": [
+        { "say": "Probability = what you want ÷ the total. With a table, the whole skill is picking the right box for the top and the right total for the bottom." },
+        { "ask": "Pick any student. P(walks). What goes on top?", "options": ["All walkers: 90", "Senior walkers: 60"], "answer": 0, "then": "No restriction, so every walker counts.", "line": "Top: 90 walkers" },
+        { "ask": "And on the bottom?", "options": ["All students: 180", "Walkers: 90"], "answer": 0, "then": "90 ÷ 180 = 1/2.", "hint": "The total of everyone who could be picked.", "line": "Bottom: 180 → 90/180 = 1/2" },
+        { "ask": "Now: pick a senior. P(walks). What changes?", "options": ["The bottom becomes the senior total, 100", "Nothing"], "answer": 0, "then": "'Of the seniors' shrinks the world to the senior row.", "hint": "Read which group the question restricts to.", "line": "Seniors only → bottom = 100" },
+        { "ask": "The top is senior walkers. So P = ?", "options": ["60/100 = 3/5", "60/180", "90/100"], "answer": 0, "hint": "Senior walkers over all seniors.", "line": "60/100 = 3/5" }
+      ]
+    },
     "questions": [
       { "stem": "A student is picked at random. What is the probability they are a junior who takes the bus?", "options": ["50/90", "50/80", "50/180"], "answer": 2, "why": "The junior-bus cell is 50. No restriction, so the bottom is the grand total, 180." },
       { "stem": "Of the juniors, what fraction take the bus?", "options": ["50/80", "50/180", "50/90"], "answer": 0, "why": "\"Of the juniors\" shrinks the world to the junior row: 50 out of 80." }

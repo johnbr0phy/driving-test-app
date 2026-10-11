@@ -75,6 +75,15 @@
       { "kind": "bad", "text": "Add: \"Beavers have orange teeth because of iron in the enamel.\"", "note": "Cool fact, nothing to do with rivers." }
     ],
     "another": { "text": "Pretend the paragraph is your friend telling you about their dog. Every sentence should be about the dog. If a new sentence is about what they ate for lunch, it doesn't belong, even if it's true.", "example": "Story: My dog can open doors.\nFits: Last night he opened the fridge.\nDoesn't fit: Dogs have 42 teeth." },
+    "walkthrough": {
+      "passage": true,
+      "steps": [
+        { "say": "A sentence belongs only if it supports the paragraph's point. True and interesting is not enough." },
+        { "ask": "Name the paragraph's point in a few words:", "options": ["Beavers reshape rivers", "Beavers are interesting animals"], "answer": 0, "then": "Dams, ponds, homes for fish: all about changing rivers.", "line": "Point: beavers reshape rivers" },
+        { "ask": "Add 'A single dam can flood several acres'? Does it help make that point?", "options": ["Yes, flooding acres is reshaping a river", "No"], "answer": 0, "line": "'floods several acres' ✓ add it" },
+        { "ask": "Add 'Beavers have orange teeth because of iron in the enamel'?", "options": ["No: cool fact, nothing to do with rivers", "Yes, it's about beavers"], "answer": 0, "then": "About beavers, yes. About reshaping rivers, no. Off-topic is off-topic even when true.", "hint": "Check it against the point, not the animal.", "line": "'orange teeth' ✗ leave it out" }
+      ]
+    },
     "questions": [
       { "passage": "Paragraph: The school's new schedule starts classes an hour later. Teachers report fewer students falling asleep, and attendance in first period has gone up.", "stem": "Should the writer add: \"Teenagers' bodies naturally want to sleep later than adults' do\"?", "options": ["Yes, it explains why the later start helps", "No, it is about sleep rather than school", "No, it repeats the first sentence"], "answer": 0, "why": "The paragraph is about why a later start works. A sentence on teen sleep gives the reason." },
       { "passage": "Paragraph: The school's new schedule starts classes an hour later. Teachers report fewer students falling asleep, and attendance in first period has gone up.", "stem": "Should the writer add: \"The school was built in 1962\"?", "options": ["Yes, it gives background on the school", "No, it has nothing to do with the schedule change"], "answer": 1, "why": "True, but it doesn't help the point about the later start." }
@@ -92,6 +101,15 @@
       { "kind": "bad", "text": "Delete sentence 2.", "note": "It explains why the trees matter. Without it, sentence 4 comes out of nowhere." }
     ],
     "another": { "text": "You're watching a show about sharks and suddenly there's a commercial about cereal. That jolt is what an off-topic sentence feels like. When a sentence makes you go \"wait, what?\", that's the one to delete. Read the paragraph without it to make sure.", "example": "sharks → sharks → [cereal] → sharks\nThe cereal sentence goes." },
+    "walkthrough": {
+      "passage": true,
+      "steps": [
+        { "say": "Delete a sentence if it wanders off the point, repeats something, or breaks the flow. Read the paragraph with it and without it." },
+        { "ask": "What is this paragraph about?", "options": ["The downtown trees and what they did", "The writer's cousin"], "answer": 0, "line": "Point: the downtown trees" },
+        { "ask": "Sentence 3: 'My cousin lives downtown.' Does it help the point?", "options": ["No, it wanders off", "Yes, it's about downtown"], "answer": 0, "then": "'Downtown' is a word match, not a point match.", "hint": "What does the cousin have to do with the trees?", "line": "S3 ✗ delete" },
+        { "ask": "Sentence 2: 'Trees cool the street by ten degrees.' Read the paragraph without it. What happens?", "options": ["Sentence 4's 'shaded sidewalks' comes out of nowhere", "Nothing, it reads fine"], "answer": 0, "then": "Without it, something is missing. Keep it.", "line": "S2 ✓ keep, sentence 4 needs it" }
+      ]
+    },
     "questions": [
       { "passage": "(1) Sourdough bread uses wild yeast instead of packaged yeast. (2) The wild yeast comes from a starter, a mix of flour and water that bakers feed for days. (3) Rye flour is darker than wheat flour. (4) That slow process is what gives sourdough its tangy taste.", "stem": "Which sentence should be deleted?", "options": ["Sentence 2", "Sentence 3", "Sentence 4"], "answer": 1, "why": "Rye versus wheat color has nothing to do with the sourdough process. Remove it and 2 flows straight into 4." },
       { "passage": "(1) The robotics club meets every Tuesday. (2) This year the team built a robot that sorts recycling. (3) It separates cans from bottles with a camera and a small arm. (4) The team built a robot that sorts recycling this year.", "stem": "Which sentence should be deleted?", "options": ["Sentence 1", "Sentence 3", "Sentence 4"], "answer": 2, "why": "Sentence 4 repeats sentence 2 almost word for word." }
@@ -109,6 +127,16 @@
       { "kind": "bad", "text": "The new phone has a better battery.", "note": "Too narrow. Says nothing about camera or price." }
     ],
     "another": { "text": "A topic sentence is the title of a show. \"Three gross things my dog does\" tells you exactly what's coming. \"Dogs exist\" is too big. \"My dog licks the floor\" is too small when the paragraph lists three things. Pick the title that covers everything inside.", "example": "Too big: Pets are interesting.\nToo small: My dog licks the floor.\nJust right: My dog does three gross things." },
+    "walkthrough": {
+      "passage": true,
+      "steps": [
+        { "say": "A topic sentence predicts the paragraph. Read the body first, then pick the opener that covers all of it and nothing more." },
+        { "ask": "The body mentions three things. Which three?", "options": ["Battery, camera, price", "Battery, screen, weight"], "answer": 0, "line": "Body: battery, camera, price" },
+        { "ask": "'The new phone has a better battery.' As an opener?", "options": ["Too narrow: only one of the three", "Just right"], "answer": 0, "then": "It predicts the battery and nothing else.", "line": "'better battery' ✗ too narrow" },
+        { "ask": "'Phones have changed a lot.' As an opener?", "options": ["Too wide: it could start any paragraph", "Just right"], "answer": 0, "then": "True of everything, so it predicts nothing.", "line": "'phones have changed' ✗ too wide" },
+        { "ask": "'The new phone improves on the old one in three ways.'", "options": ["Just right: it predicts all three", "Too narrow"], "answer": 0, "then": "Covers battery, camera and price, and promises exactly three. That is the fit.", "line": "'improves in three ways' ✓" }
+      ]
+    },
     "questions": [
       { "passage": "Body: ___ Farmers lost most of the corn crop. Rivers dropped so low that barges could not move grain. In some towns, drinking water had to be trucked in.", "stem": "Which topic sentence fits best?", "options": ["Corn is an important crop.", "The drought hurt the region in several ways.", "Weather is unpredictable."], "answer": 1, "why": "Crops, rivers, and drinking water are three kinds of drought damage. The first option is too narrow, the third too wide." },
       { "passage": "Body: ___ The old gym floor was replaced. The library got new shelves. Every classroom now has a projector.", "stem": "Which topic sentence fits best?", "options": ["The school replaced its gym floor.", "Schools need money.", "The school made several upgrades over the summer."], "answer": 2, "why": "Gym, library, classrooms. \"Several upgrades\" covers all three." }
@@ -126,6 +154,15 @@
       { "kind": "bad", "text": "The Eiffel Tower is 330 meters tall and was finished in 1889.", "note": "True, but says nothing about being temporary." }
     ],
     "another": { "text": "You have a box of true facts about a tree. The question says \"show how tall the tree is.\" Every answer uses true facts from the box, so nobody is lying. The right one uses the tall facts. It's not a truth test. It's a \"did you do the job\" test.", "example": "Goal: show it's tall → use \"300 feet\"\nGoal: show it's old → use \"500 years old\"" },
+    "walkthrough": {
+      "passage": true,
+      "steps": [
+        { "say": "Every choice is true. Only one does the job. So read the goal first and judge everything by it." },
+        { "ask": "What is the goal?", "options": ["Emphasize that the tower was not meant to be permanent", "Say how tall the tower is"], "answer": 0, "line": "Goal: not meant to be permanent" },
+        { "ask": "Which notes serve that goal?", "options": ["Built for a fair, meant to come down after 20 years", "330 meters tall, finished in 1889"], "answer": 0, "then": "Height and date are true and useless here.", "hint": "Which notes are about being temporary?", "line": "Useful notes: a fair, 20 years" },
+        { "ask": "Which sentence meets the goal?", "options": ["Built for an 1889 world's fair, the Eiffel Tower was meant to be taken down after 20 years.", "The Eiffel Tower is 330 meters tall and was finished in 1889."], "answer": 0, "then": "The other one is true and says nothing about being temporary.", "line": "✓ 'meant to be taken down after 20 years'" }
+      ]
+    },
     "questions": [
       { "passage": "Notes: Hummingbirds weigh less than a nickel. They beat their wings up to 80 times a second. They can fly backward. They migrate up to 500 miles nonstop.\n\nGoal: Emphasize how far hummingbirds can travel.", "stem": "Which sentence best meets the goal?", "options": ["Hummingbirds beat their wings up to 80 times a second.", "Though they weigh less than a nickel, hummingbirds can migrate up to 500 miles nonstop.", "Hummingbirds are the only birds that can fly backward."], "answer": 1, "why": "Only this one mentions distance. The nickel detail makes the 500 miles more impressive, which serves the goal." },
       { "passage": "Notes: Composting turns food scraps into soil. It takes about three months. It keeps waste out of landfills. Landfill food waste produces methane, a greenhouse gas.\n\nGoal: Explain why composting helps the environment.", "stem": "Which sentence best meets the goal?", "options": ["Composting takes about three months.", "Composting keeps food scraps out of landfills, where they would produce methane, a greenhouse gas.", "Composting turns scraps into soil."], "answer": 1, "why": "Landfills, methane, greenhouse gas: that's the environmental reason. The others describe composting without saying why it helps." }
@@ -143,6 +180,15 @@
       { "kind": "bad", "text": "\"Recycling saves energy.\"", "note": "True, but it doesn't set up the contrast coming next." }
     ],
     "another": { "text": "The question gives a job: \"give an example\" or \"set up the next paragraph.\" It's a help-wanted sign. Four sentences show up. Three are perfectly nice but applied for the wrong job. Hire the one that does exactly what the sign says.", "example": "Sign: give a specific example\nHire: \"The library's recycling bin filled up twice a day.\"\nSend home: \"Recycling is important.\"" },
+    "walkthrough": {
+      "passage": true,
+      "steps": [
+        { "say": "Some questions give a sentence a job: set up the next paragraph, give an example, admit the other side. Ignore which choice sounds nicest." },
+        { "ask": "This paragraph ends with the bins succeeding downtown. The next one begins 'In the suburbs, however, the bins sat empty.' The job is to transition. What must the sentence point at?", "options": ["The contrast that is coming next", "How much energy recycling saves"], "answer": 0, "line": "Job: point toward the suburbs contrast" },
+        { "ask": "'Recycling saves energy.' Does it do that job?", "options": ["No: true, but it points nowhere", "Yes"], "answer": 0, "then": "Nice sentence, wrong job.", "line": "'saves energy' ✗" },
+        { "ask": "'Not every neighborhood saw the same result.' Does it?", "options": ["Yes, it sets up the suburbs", "No"], "answer": 0, "then": "It hands the reader to the next paragraph. That is the job.", "line": "'not every neighborhood' ✓" }
+      ]
+    },
     "questions": [
       { "passage": "The writer wants to acknowledge a possible objection before answering it. The paragraph argues the city should build more bike lanes.", "stem": "Which choice best accomplishes the goal?", "options": ["Bike lanes are good for the environment.", "Some drivers worry that bike lanes will take away parking.", "The city should start building right away."], "answer": 1, "why": "Naming the drivers' worry is acknowledging the other side. The others just continue the argument." },
       { "passage": "The paragraph has described how a volcano forms. The writer wants a sentence that transitions to the next paragraph, which is about how scientists predict eruptions.", "stem": "Which choice best accomplishes the goal?", "options": ["Volcanoes exist on every continent.", "Lava can reach 2,000 degrees.", "Knowing how a volcano forms is only half the job; the harder question is knowing when it will erupt."], "answer": 2, "why": "It closes the forming topic and opens the predicting topic in one move." }

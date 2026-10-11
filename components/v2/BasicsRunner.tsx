@@ -4,12 +4,13 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import { Play, X } from "lucide-react";
+import { ListChecks, Play, X } from "lucide-react";
 import { ExamV2Config } from "@/lib/v2/types";
 import { v2Routes } from "@/lib/v2/registry";
-import { BasicsQuestion, BasicsRun, BasicsSkill, PUNCTUATION_NAMES, answerBasics, basicsFor, basicsKey, basicsOptionOrder, isPunctuationQuestion, newBasicsRun } from "@/lib/v2/basics";
+import { BasicsQuestion, BasicsRun, BasicsSkill, PUNCTUATION_NAMES, answerBasics, basicsFor, basicsKey, basicsOptionOrder, hasWalkthrough, isPunctuationQuestion, newBasicsRun } from "@/lib/v2/basics";
 import { hasExplainer } from "@/lib/v2/explainer";
 import { BasicsExplainer } from "./BasicsExplainer";
+import { BasicsWalkthrough } from "./BasicsWalkthrough";
 import { BasicsRuleSheet } from "./BasicsRuleSheet";
 import { DataTable, Eli5Toggle, Passage, RuleCard } from "./BasicsRuleCard";
 import { useV2Store } from "@/store/useV2Store";
@@ -21,10 +22,13 @@ import { hasDrillProgress, isDrillLocked } from "@/lib/v2/premium";
 import { DrillLockScreen } from "./DrillLockScreen";
 
 /**
- * One Basics skill on the phone: a 20-second rule card, then a handful of
- * one-line questions. A miss explains why and comes back later in the run;
- * two misses bring the rule card back once. The rule is one tap away the
- * whole time. Finishing marks the skill learned in the store.
+ * One Basics skill on the phone: learn it, then a handful of one-line
+ * questions. The learn screen is the click-through walkthrough when the
+ * skill has one (math, reading, science, paragraph work), the voiced
+ * explainer when it has one (sentence skills), else the text rule card; the
+ * card is always one tap away ("Read it"). A miss explains why and comes
+ * back later in the run; two misses bring the lesson back once. Finishing
+ * marks the skill learned in the store.
  */
 export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: ExamV2Config; drillKeyParam: string | null; skillIdParam: string | null }) {
   const router = useRouter();
@@ -48,8 +52,9 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
   const [picked, setPicked] = useState<number | null>(null);
   const [ruleOpen, setRuleOpen] = useState(false);
   const [another, setAnother] = useState(false);
-  // The explainer overlay after a miss, and whether the learn/review screen shows the text card instead of the video.
+  // The explainer or walkthrough overlay after a miss, and whether the learn/review screen shows the text card instead.
   const [explainer, setExplainer] = useState(false);
+  const [walking, setWalking] = useState(false);
   const [readMode, setReadMode] = useState(false);
 
   useEffect(() => {
@@ -64,6 +69,7 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
     setPicked(null);
     setAnother(false);
     setExplainer(false);
+    setWalking(false);
     setReadMode(false);
   }, [skillIdParam]);
 
@@ -117,26 +123,42 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
 
   const closeRule = () => setRuleOpen(false);
 
+  const walkable = hasWalkthrough(skill);
   const explainable = hasExplainer(skill);
-  const closeExplainer = () => setExplainer(false);
-  // "Read it" on the miss overlay drops into the text sheet, so the words are never more than a tap away.
+  const closeOverlay = () => {
+    setExplainer(false);
+    setWalking(false);
+  };
+  // "Read it" on a miss overlay drops into the text sheet, so the words are never more than a tap away.
   const openRuleSheet = () => {
-    closeExplainer();
+    closeOverlay();
     setRuleOpen(true);
   };
-  const overlay = explainer ? <BasicsExplainer exam={exam} skill={skill} doneLabel="Try it again" onDone={closeExplainer} onClose={closeExplainer} onRead={openRuleSheet} /> : null;
-  // On the text card, the way back to the video.
-  const watchButton = explainable ? (
+  const overlay = walking ? (
+    <BasicsWalkthrough exam={exam} skill={skill} doneLabel="Try it again" onDone={closeOverlay} onClose={closeOverlay} onRead={openRuleSheet} />
+  ) : explainer ? (
+    <BasicsExplainer exam={exam} skill={skill} doneLabel="Try it again" onDone={closeOverlay} onClose={closeOverlay} onRead={openRuleSheet} />
+  ) : null;
+  // On the text card, the way back to the lesson.
+  const watchButton = walkable ? (
+    <button type="button" onClick={() => setReadMode(false)} className="flex items-center gap-1.5 self-start text-[15px] font-semibold text-brand">
+      <ListChecks className="h-4 w-4" /> Walk through it instead
+    </button>
+  ) : explainable ? (
     <button type="button" onClick={() => setReadMode(false)} className="flex items-center gap-1.5 self-start text-[15px] font-semibold text-brand">
       <Play className="h-4 w-4" /> Watch it instead · 30 seconds
     </button>
   ) : null;
 
-  // ---- Learn / review: the video first for a voiced skill, the text card behind "Read it" ----
+  // ---- Learn / review: the walkthrough or the video first, the text card behind "Read it" ----
   if (screen === "learn" || screen === "review") {
     const review = screen === "review";
+    const doneLabel = review ? "Got it, keep going" : `Got it, try ${total} questions`;
+    if (walkable && !readMode) {
+      return <BasicsWalkthrough exam={exam} skill={skill} doneLabel={doneLabel} onDone={start} onClose={() => setReadMode(true)} onRead={() => setReadMode(true)} />;
+    }
     if (explainable && !readMode) {
-      return <BasicsExplainer exam={exam} skill={skill} doneLabel={review ? "Got it, keep going" : `Got it, try ${total} questions`} onDone={start} onClose={() => setReadMode(true)} onRead={() => setReadMode(true)} />;
+      return <BasicsExplainer exam={exam} skill={skill} doneLabel={doneLabel} onDone={start} onClose={() => setReadMode(true)} onRead={() => setReadMode(true)} />;
     }
     return (
       <div className="v2-focus">
@@ -263,11 +285,15 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
                 {!correct && (
                   <>
                     <p className="text-sm text-gray-800 dark:text-gray-100"><b>The trick:</b> {skill.trick}</p>
-                    {explainable && (
+                    {walkable ? (
+                      <button type="button" onClick={() => setWalking(true)} className="v2-tap mt-1 flex items-center justify-center gap-2 self-start rounded-xl bg-white dark:bg-gray-900 px-4 text-[15px] font-bold text-brand shadow-sm">
+                        <ListChecks className="h-4 w-4" /> Walk through it again
+                      </button>
+                    ) : explainable ? (
                       <button type="button" onClick={() => setExplainer(true)} className="v2-tap mt-1 flex items-center justify-center gap-2 self-start rounded-xl bg-white dark:bg-gray-900 px-4 text-[15px] font-bold text-brand shadow-sm">
                         <Play className="h-4 w-4" /> Watch the explainer · 30 seconds
                       </button>
-                    )}
+                    ) : null}
                     <p className="text-xs text-gray-500 dark:text-gray-400">This one will come back in a minute.</p>
                   </>
                 )}

@@ -11,6 +11,15 @@
       { "kind": "bad", "text": "To make the experiment take longer.", "note": "Nothing in science is done for its own sake." }
     ],
     "another": { "text": "Imagine a race where one kid gets a head start. Not fair, right? Scientists do steps like \"same-size cups\" and \"same temperature\" so the race is fair. When a question asks why a step was done, the answer is usually \"to make it fair\" or \"to measure something.\"", "example": "Same-size ice cubes → fair race\nSame starting temperature → fair race\nA thermometer in each cup → to measure" },
+    "walkthrough": {
+      "passage": true,
+      "steps": [
+        { "say": "Every step in a procedure has a reason. Find it by asking: what would go wrong if they skipped it?" },
+        { "ask": "Step: they let every liquid sit in the room for an hour. If they skipped it, what could go wrong?", "options": ["Some liquids would start warmer than others", "The ice would be too big"], "answer": 0, "then": "A warm liquid melts ice faster for the wrong reason.", "hint": "Think about temperature.", "line": "Skip the hour → unequal starting temperatures" },
+        { "ask": "So why was that step there?", "options": ["So all the liquids start at the same temperature", "To make the experiment take longer"], "answer": 0, "then": "Nothing in science is done for its own sake. The reason is the thing it prevents.", "line": "Purpose: same starting temperature" },
+        { "ask": "Step: one ice cube of the same size in each cup. Why?", "options": ["So size can't be the reason one melts faster", "To save ice"], "answer": 0, "then": "Same idea. Keep everything equal except the one thing being tested.", "hint": "What if one cube were twice as big?", "line": "Same size → a fair test" }
+      ]
+    },
     "questions": [
       { "passage": "A student tested which paper towel absorbs the most water. She cut every towel to the same size, dipped each one for exactly 10 seconds, and then weighed it.", "stem": "Why did she cut every towel to the same size?", "options": ["So that a bigger towel couldn't absorb more just by being bigger", "To make them fit in the water", "Because the scale was small"], "answer": 0, "why": "What if she hadn't? The biggest towel would win no matter what it's made of. Same size makes it fair." },
       { "passage": "A chemist repeated each measurement three times and reported the average.", "stem": "Why repeat and average?", "options": ["To use up the chemicals", "To make the number look bigger", "To reduce the effect of a single odd measurement"], "answer": 2, "why": "One reading can be off. Three readings averaged smooth out a mistake or a fluke." }
@@ -28,6 +37,15 @@
       { "kind": "bad", "text": "Vary the water amount and the burner.", "note": "Two changes. You couldn't tell which one caused the difference." }
     ],
     "another": { "text": "You have three light switches and don't know which one runs the kitchen light. Flip one at a time. If you flip two at once and the light comes on, you still don't know which switch did it. Experiments change one thing at a time for the same reason.", "example": "Flip A → light on → A does it\nFlip A and B → light on → could be either" },
+    "walkthrough": {
+      "passage": true,
+      "steps": [
+        { "say": "A new question needs a new experiment that changes one thing and keeps everything else exactly as before." },
+        { "ask": "New question: does the amount of water matter? Which one thing should the next experiment change?", "options": ["Liters of water", "Amount of salt", "The burner"], "answer": 0, "then": "The question's key word is water. Vary that.", "hint": "Find the key word in the question.", "line": "Change: amount of water" },
+        { "ask": "What should stay the same?", "options": ["Same burner and same salt", "Only the burner"], "answer": 0, "then": "Everything except the water amount.", "line": "Keep: burner, salt" },
+        { "ask": "Someone suggests varying the water and the burner together. Problem?", "options": ["You couldn't tell which one caused any change", "No problem, it's faster"], "answer": 0, "then": "Two changes, one result, no way to know which did it.", "hint": "Two suspects, one fingerprint.", "line": "Two changes → can't tell the cause" }
+      ]
+    },
     "questions": [
       { "passage": "Experiment 1 measured how far a toy car rolls off ramps of different heights. Every ramp was 1 meter long and covered in the same smooth plastic.", "stem": "To find out whether the ramp surface affects distance, the next experiment should:", "options": ["Use one ramp height and try several surfaces", "Try several heights with a carpet ramp", "Use a longer ramp"], "answer": 0, "why": "The new question is about surface, so vary surface. Keep height fixed so it can't be the cause." },
       { "passage": "A trial found that a plant food increased tomato yield in sandy soil.", "stem": "To learn whether it also works in clay soil, researchers should:", "options": ["Test a different plant food in clay soil", "Repeat the same trial with the same plant food in clay soil", "Add more plant food to the sandy soil"], "answer": 1, "why": "Keep the plant food, change the soil. Changing the food too would mix up two questions." }
@@ -45,6 +63,16 @@
       { "kind": "bad", "text": "Claim: more fertilizer always helps. Not supported.", "note": "15 g gave the same height as 10 g." }
     ],
     "another": { "text": "Someone says \"I always win at checkers.\" You look at the scoreboard: they lost once. \"Always\" is broken. Check every row of the table against the claim. Words like always, never, and doubles are easy to break with just one row.", "example": "Claim: the plant doubled every week.\nTable: 10, 20, 35\n35 is not double 20. Not supported." },
+    "walkthrough": {
+      "table": true,
+      "steps": [
+        { "say": "A claim is supported only if the numbers move the way it says. Turn the claim into a prediction, then look at the table." },
+        { "ask": "Claim: more fertilizer always helps. If that is true, height should:", "options": ["Go up in every row", "Go up, then flatten"], "answer": 0, "then": "That is the prediction. Now check it against the table.", "line": "Prediction: up in every row" },
+        { "ask": "From 10 g to 15 g, height went from 21 cm to:", "options": ["21 cm, no change", "25 cm"], "answer": 0, "then": "Same height. The extra 5 g did nothing.", "hint": "Read the last two rows.", "line": "10 g → 15 g: 21 → 21" },
+        { "ask": "So is 'always helps' supported?", "options": ["No", "Yes"], "answer": 0, "then": "One row broke the prediction. Not supported.", "line": "'Always helps' ✗" },
+        { "ask": "Claim: it helps up to a point, then levels off. Supported?", "options": ["Yes: 12, 18, 21, then 21", "No"], "answer": 0, "then": "Up, up, flat. That claim fits every row.", "line": "'Helps up to a point' ✓" }
+      ]
+    },
     "questions": [
       { "stem": "Claim: Going from 10 g to 15 g of fertilizer made plants taller. Is it supported?", "options": ["Yes", "No, height was 21 cm at both amounts"], "answer": 1, "why": "Same height in both rows. The extra 5 g did nothing." },
       { "stem": "Which claim does the table best support?", "options": ["Fertilizer has no effect on height.", "Height increases with fertilizer up to about 10 g, then levels off.", "Height doubles for every 5 g added."], "answer": 1, "why": "Up, up, flat. That is the only claim that fits every row." }
@@ -62,6 +90,16 @@
       { "kind": "bad", "text": "Scientist 2 thinks the fish are fine.", "note": "Both accept the fish are dying." }
     ],
     "another": { "text": "Two kids find a broken vase. Both agree the vase is broken and the cat was in the room. Kid 1 says the cat did it. Kid 2 says the wind did it. They agree on what happened. They fight about why. Find the one word where the \"why\" splits.", "example": "Both agree: fish are dying, oxygen is low\nSplit: farm runoff vs hot summers" },
+    "walkthrough": {
+      "passage": true,
+      "steps": [
+        { "say": "Before any question, pin each scientist to one line: who says what, and why." },
+        { "ask": "Scientist 1 says the fish are dying because:", "options": ["Fertilizer feeds algae that use up the oxygen", "Summers are hotter"], "answer": 0, "line": "S1: fertilizer → algae → low oxygen" },
+        { "ask": "Scientist 2 says the fish are dying because:", "options": ["Warm water holds less oxygen", "Farms pollute the lake"], "answer": 0, "line": "S2: hotter summers → low oxygen" },
+        { "ask": "Look at your two lines. Where do they agree?", "options": ["The fish are dying from low oxygen", "Farms are to blame"], "answer": 0, "then": "Same effect, different cause.", "hint": "Both lines end the same way.", "line": "Agree: low oxygen is killing the fish" },
+        { "ask": "A finding: fish deaths spike right after heavy rain washes the fields into the lake. Whom does it support?", "options": ["Scientist 1", "Scientist 2"], "answer": 0, "then": "Rain carrying fertilizer in fits the farm story. Deaths in the hottest weeks would fit Scientist 2.", "line": "Rain spike → supports Scientist 1" }
+      ]
+    },
     "questions": [
       { "passage": "Scientist 1: The lake's fish are dying because fertilizer runs into the water and feeds algae, which uses up the oxygen.\n\nScientist 2: The fish are dying because summers are hotter, and warm water holds less oxygen.", "stem": "On what do both scientists agree?", "options": ["Farms are to blame.", "The fish are dying from low oxygen.", "Summers are hotter."], "answer": 1, "why": "Both say fish are dying and both say oxygen is low. They split only on the cause." },
       { "passage": "Scientist 1: The lake's fish are dying because fertilizer runs into the water and feeds algae, which uses up the oxygen.\n\nScientist 2: The fish are dying because summers are hotter, and warm water holds less oxygen.", "stem": "Which finding would support Scientist 1 over Scientist 2?", "options": ["Fish deaths are highest right after heavy rain washes fields into the lake.", "Fish deaths are highest in the hottest weeks.", "Fish deaths happen all year equally."], "answer": 0, "why": "Rain carrying fertilizer in points to the farm explanation. Hot weeks would support Scientist 2." }
@@ -79,6 +117,15 @@
       { "kind": "bad", "text": "Explanation: flooding happens when it rains a lot. Fails.", "note": "May flooded with 2 inches; June stayed dry with 7." }
     ],
     "another": { "text": "A good explanation is like a weather friend who's always right. Ask each explanation to guess every day on the list. The one that's never wrong wins. Being right most days isn't good enough when the other one is right every day.", "example": "Explanation A: wrong on 2 days out of 4\nExplanation B: right on all 4 → B is better" },
+    "walkthrough": {
+      "table": true,
+      "steps": [
+        { "say": "Test each explanation against every row. The first one to hit a row it can't explain loses." },
+        { "ask": "Explanation A: it floods when it rains a lot. Check May: only 2 inches of rain. Did it flood?", "options": ["Yes", "No"], "answer": 0, "then": "Little rain, but a flood. Trouble for A.", "hint": "Read the May row.", "line": "May: 2 in, flooded → A fails" },
+        { "ask": "Check June: 7 inches, the most rain of any month. Did it flood?", "options": ["No", "Yes"], "answer": 0, "then": "The most rain and no flood. A is out.", "line": "June: 7 in, dry → A fails again" },
+        { "ask": "Explanation B: it floods when the drains were not cleaned. Does B fit every row?", "options": ["Yes, every 'No' flooded and every 'Yes' stayed dry", "No"], "answer": 0, "then": "Four for four. B is the better explanation.", "hint": "Check the last column against the flooding column.", "line": "B fits all four rows ✓" }
+      ]
+    },
     "questions": [
       { "stem": "Which explanation fits all four months?", "options": ["Flooding depends on how much rain falls.", "Flooding happens when the drains were not cleaned.", "Flooding happens in spring only."], "answer": 1, "why": "Check each row: uncleaned drains always flood, cleaned drains never do. Rainfall fails in May and June." },
       { "stem": "Which month is the biggest problem for the rainfall explanation?", "options": ["March", "April", "June"], "answer": 2, "why": "7 inches, the most rain of any month, and no flooding. The rainfall model can't explain that." }

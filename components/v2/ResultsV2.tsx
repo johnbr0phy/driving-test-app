@@ -23,7 +23,7 @@ export function ResultsV2({ exam, testNumber }: { exam: ExamV2Config; testNumber
   const [open, setOpen] = useState<string | null>(null);
   const [sectionFilter, setSectionFilter] = useState<string>("all");
 
-  if (!hydrated) return <div className="p-8 text-center text-gray-600">Loading...</div>;
+  if (!hydrated) return <div className="p-8 text-center text-gray-600 dark:text-gray-300">Loading...</div>;
   const result: TestResultV2 | undefined = history[0];
   if (!result) {
     return (
@@ -55,33 +55,33 @@ export function ResultsV2({ exam, testNumber }: { exam: ExamV2Config; testNumber
         <Image src={getTigerAsset(exam.id, result.composite >= goal ? 2 : 4)} alt="" width={80} height={80} className="h-20 w-20 shrink-0 object-contain" />
         <div>
           <div className="text-5xl font-black tabular-nums md:text-6xl">{result.composite}</div>
-          <div className="text-sm text-gray-600">{exam.composite.name} estimate · goal {goal}</div>
+          <div className="text-sm text-gray-600 dark:text-gray-300">{exam.composite.name} estimate · goal {goal}</div>
         </div>
         {delta !== null && (
-          <div className={`rounded-full px-3 py-1 text-sm font-bold ${delta >= 0 ? "bg-green-50 text-green-700" : "bg-red-50 text-red-700"}`}>
+          <div className={`rounded-full px-3 py-1 text-sm font-bold ${delta >= 0 ? "bg-green-50 dark:bg-green-950 text-green-700 dark:text-green-300" : "bg-red-50 dark:bg-red-950 text-red-700 dark:text-red-300"}`}>
             {delta >= 0 ? "+" : ""}{delta} vs last attempt
           </div>
         )}
-        <div className={`rounded-full px-3 py-1 text-sm font-bold ${result.composite >= goal ? "bg-green-50 text-green-700" : "bg-amber-50 text-amber-800"}`}>
+        <div className={`rounded-full px-3 py-1 text-sm font-bold ${result.composite >= goal ? "bg-green-50 dark:bg-green-950 text-green-700 dark:text-green-300" : "bg-amber-50 dark:bg-amber-950 text-amber-800 dark:text-amber-300"}`}>
           {result.composite >= goal ? "At your goal" : `${goal - result.composite} to your goal`}
         </div>
       </div>
-      <p className="mt-2 text-xs text-gray-500">{exam.copy.scoreNote}</p>
+      <p className="mt-2 text-xs text-gray-500 dark:text-gray-400">{exam.copy.scoreNote}</p>
 
       <div className="mt-6 grid gap-4 md:grid-cols-2">
         {result.sections.map((s) => {
           const def = getSectionV2(exam, s.section);
           return (
-            <div key={s.section} className="rounded-2xl border border-gray-200 bg-white p-5">
+            <div key={s.section} className="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-5">
               <div className="flex items-baseline justify-between">
                 <div className="font-bold">{def.name}</div>
-                <div className="text-sm text-gray-500">{s.raw} / {s.total} correct</div>
+                <div className="text-sm text-gray-500 dark:text-gray-400">{s.raw} / {s.total} correct</div>
               </div>
               <div className="mt-1 text-3xl font-black tabular-nums">
                 {s.scaled}{def.scale.max === 100 && def.scale.min === 0 ? "%" : ""}{" "}
-                {def.scale.band > 0 && <span className="text-sm font-semibold text-gray-500">({Math.max(def.scale.min, s.scaled - def.scale.band)} to {Math.min(def.scale.max, s.scaled + def.scale.band)})</span>}
+                {def.scale.band > 0 && <span className="text-sm font-semibold text-gray-500 dark:text-gray-400">({Math.max(def.scale.min, s.scaled - def.scale.band)} to {Math.min(def.scale.max, s.scaled + def.scale.band)})</span>}
               </div>
-              <div className="mt-1 text-xs text-gray-500">
+              <div className="mt-1 text-xs text-gray-500 dark:text-gray-400">
                 {s.byModule.map((m) => `Module ${m.module}${m.variant ? ` (${m.variant === "upper" ? "harder" : "easier"})` : ""}: ${m.raw}/${m.total}`).join(" · ")}
               </div>
               <div className="mt-4 space-y-2">
@@ -91,10 +91,10 @@ export function ResultsV2({ exam, testNumber }: { exam: ExamV2Config; testNumber
                   return (
                     <div key={d}>
                       <div className="flex justify-between text-xs">
-                        <span className="font-medium text-gray-700">{exam.domainLabels[d] ?? d}</span>
-                        <span className="tabular-nums text-gray-500">{v.correct}/{v.total}</span>
+                        <span className="font-medium text-gray-700 dark:text-gray-200">{exam.domainLabels[d] ?? d}</span>
+                        <span className="tabular-nums text-gray-500 dark:text-gray-400">{v.correct}/{v.total}</span>
                       </div>
-                      <div className="mt-1 h-2 w-full overflow-hidden rounded-full bg-gray-100">
+                      <div className="mt-1 h-2 w-full overflow-hidden rounded-full bg-gray-100 dark:bg-gray-800">
                         <div className={`h-full rounded-full ${pct >= 80 ? "bg-green-500" : pct >= 60 ? "bg-amber-400" : "bg-red-400"}`} style={{ width: `${pct}%` }} />
                       </div>
                     </div>
@@ -110,7 +110,7 @@ export function ResultsV2({ exam, testNumber }: { exam: ExamV2Config; testNumber
         <div className="mt-6 rounded-2xl border border-brand bg-brand-light p-5">
           <div className="text-sm font-semibold uppercase tracking-wide text-brand-dark">Your next step</div>
           <div className="mt-1 font-bold">Drill {weakDrill.name} on your phone tonight</div>
-          <p className="mt-1 text-sm text-gray-700">
+          <p className="mt-1 text-sm text-gray-700 dark:text-gray-200">
             You got {weakest.correct} of {weakest.total} in {exam.domainLabels[weakest.domain]}. The drill brings every miss back until you master it, then retake the test on a desktop.
           </p>
           <Link href={routes.drill(weakDrill.key)} className="v2-tap mt-3 inline-flex items-center justify-center rounded-xl bg-brand px-5 text-sm font-bold text-white">Start the drill</Link>
@@ -121,32 +121,32 @@ export function ResultsV2({ exam, testNumber }: { exam: ExamV2Config; testNumber
         <div className="flex flex-wrap items-center justify-between gap-2">
           <h2 className="text-lg font-bold">Review</h2>
           <div className="flex gap-1 text-sm">
-            <select value={sectionFilter} onChange={(e) => setSectionFilter(e.target.value)} className="v2-tap rounded-lg border border-gray-300 bg-white px-2 text-sm">
+            <select value={sectionFilter} onChange={(e) => setSectionFilter(e.target.value)} className="v2-tap rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 px-2 text-sm">
               <option value="all">All sections</option>
               {exam.sections.map((s) => <option key={s.key} value={s.key}>{s.name}</option>)}
             </select>
-            <button type="button" onClick={() => setFilter("wrong")} className={`v2-tap rounded-lg px-3 font-semibold ${filter === "wrong" ? "bg-brand text-white" : "bg-gray-100"}`}>Missed</button>
-            <button type="button" onClick={() => setFilter("all")} className={`v2-tap rounded-lg px-3 font-semibold ${filter === "all" ? "bg-brand text-white" : "bg-gray-100"}`}>All</button>
+            <button type="button" onClick={() => setFilter("wrong")} className={`v2-tap rounded-lg px-3 font-semibold ${filter === "wrong" ? "bg-brand text-white" : "bg-gray-100 dark:bg-gray-800"}`}>Missed</button>
+            <button type="button" onClick={() => setFilter("all")} className={`v2-tap rounded-lg px-3 font-semibold ${filter === "all" ? "bg-brand text-white" : "bg-gray-100 dark:bg-gray-800"}`}>All</button>
           </div>
         </div>
         <div className="mt-3 space-y-2">
-          {items.length === 0 && <div className="rounded-xl border border-dashed border-gray-300 p-6 text-center text-sm text-gray-500">Nothing to show here. Nice.</div>}
+          {items.length === 0 && <div className="rounded-xl border border-dashed border-gray-300 dark:border-gray-700 p-6 text-center text-sm text-gray-500 dark:text-gray-400">Nothing to show here. Nice.</div>}
           {items.map((it) => {
             const q = byId.get(it.id);
             if (!q) return null;
             const isOpen = open === it.id;
             return (
-              <div key={it.id} className="rounded-xl border border-gray-200 bg-white">
+              <div key={it.id} className="rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900">
                 <button type="button" onClick={() => setOpen(isOpen ? null : it.id)} className="v2-tap flex w-full items-center gap-3 px-4 text-left">
                   <span className={`h-2.5 w-2.5 shrink-0 rounded-full ${it.correct ? "bg-green-500" : "bg-red-400"}`} />
                   <span className="min-w-0 flex-1 truncate text-sm">
                     <span className="font-semibold">{getSectionV2(exam, it.section).shortName} {numbers.get(it.id)}</span>
-                    <span className="text-gray-500"> · {exam.domainLabels[it.domain] ?? it.domain}{q.skill ? ` · ${q.skill}` : ""}</span>
+                    <span className="text-gray-500 dark:text-gray-400"> · {exam.domainLabels[it.domain] ?? it.domain}{q.skill ? ` · ${q.skill}` : ""}</span>
                   </span>
                   {isOpen ? <ChevronUp className="h-4 w-4 text-gray-400" /> : <ChevronDown className="h-4 w-4 text-gray-400" />}
                 </button>
                 {isOpen && (
-                  <div className="border-t border-gray-100 px-4 py-4">
+                  <div className="border-t border-gray-100 dark:border-gray-800 px-4 py-4">
                     <QuestionView question={q} stimulus={getStimulus(exam.id, q)} optionOrder={(q.options ?? []).map((_, k) => k)} answer={it.answer} onAnswer={() => {}} reveal disabled layout="stack" />
                   </div>
                 )}
@@ -158,7 +158,7 @@ export function ResultsV2({ exam, testNumber }: { exam: ExamV2Config; testNumber
 
       <div className="mt-8 flex flex-col gap-2 sm:flex-row">
         <Link href={routes.test(testNumber)} className="v2-tap flex flex-1 items-center justify-center rounded-xl bg-brand text-sm font-bold text-white">Retake Practice Test {testNumber}</Link>
-        <Link href={routes.dashboard} className="v2-tap flex flex-1 items-center justify-center rounded-xl border-2 border-gray-300 bg-white text-sm font-semibold">Back to dashboard</Link>
+        <Link href={routes.dashboard} className="v2-tap flex flex-1 items-center justify-center rounded-xl border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-sm font-semibold">Back to dashboard</Link>
       </div>
     </div>
   );

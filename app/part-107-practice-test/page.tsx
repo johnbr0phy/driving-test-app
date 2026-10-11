@@ -111,7 +111,7 @@ const contentAreas = [
 
 export default function Part107LandingPage() {
   return (
-    <div data-theme="part107" className="flex-1 bg-white">
+    <div data-theme="part107" className="flex-1 bg-white dark:bg-gray-900">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -120,9 +120,9 @@ export default function Part107LandingPage() {
 
       {/* Hero */}
       <div className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28 text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 tracking-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-gray-50 mb-6 tracking-tight">
             Free Part 107 Practice Test 2026
           </h1>
           <ExamLandingHero
@@ -136,17 +136,17 @@ export default function Part107LandingPage() {
 
       {/* How it works */}
       <div id="how-it-works" className="max-w-5xl mx-auto px-6 pt-8 pb-16 md:pt-12 md:pb-24">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-16">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-16">
           How It Works
         </h2>
         <div className="grid md:grid-cols-2 gap-8 md:gap-12">
           <div className="relative pt-8">
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16 bg-white border-2 border-brand-border-light rounded-full flex items-center justify-center shadow-sm">
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16 bg-white dark:bg-gray-900 border-2 border-brand-border-light rounded-full flex items-center justify-center shadow-sm">
               <Smartphone className="w-7 h-7 text-brand" />
             </div>
-            <div className="bg-gray-50 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Training by ACS Area</h3>
-              <p className="text-gray-600">
+            <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Training by ACS Area</h3>
+              <p className="text-gray-600 dark:text-gray-300">
                 One set per area of the FAA Airman Certification Standards. Instant feedback, an
                 explanation that cites the rule, and questions you miss come back until you have
                 mastered them.
@@ -154,12 +154,12 @@ export default function Part107LandingPage() {
             </div>
           </div>
           <div className="relative pt-8">
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16 bg-white border-2 border-gray-200 rounded-full flex items-center justify-center shadow-sm">
-              <Monitor className="w-7 h-7 text-gray-500" />
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16 bg-white dark:bg-gray-900 border-2 border-gray-200 dark:border-gray-800 rounded-full flex items-center justify-center shadow-sm">
+              <Monitor className="w-7 h-7 text-gray-500 dark:text-gray-400" />
             </div>
-            <div className="bg-gray-50 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Practice Tests</h3>
-              <p className="text-gray-600">
+            <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Practice Tests</h3>
+              <p className="text-gray-600 dark:text-gray-300">
                 Four 50-question tests weighted like the UAG exam, with the real 70 percent pass line.
                 Operations is more than a third of every test, just like the real thing.
               </p>
@@ -169,21 +169,21 @@ export default function Part107LandingPage() {
       </div>
 
       {/* Blueprint */}
-      <div className="bg-gray-50 py-16 md:py-24">
+      <div className="bg-gray-50 dark:bg-gray-950 py-16 md:py-24">
         <div className="max-w-5xl mx-auto px-6">
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
             <div className="flex-1">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">
                 Built on the FAA Remote Pilot ACS
               </h2>
-              <p className="text-lg text-gray-600 mb-6">
+              <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
                 The FAA publishes the five knowledge areas of the UAG test and the share each carries.
                 Every practice test here follows that weighting.
               </p>
               <div className="space-y-3">
                 {contentAreas.map((area) => (
-                  <div key={area.name} className="flex items-center justify-between bg-white rounded-lg px-4 py-3 border border-gray-200">
-                    <span className="font-medium text-gray-900">{area.name}</span>
+                  <div key={area.name} className="flex items-center justify-between bg-white dark:bg-gray-900 rounded-lg px-4 py-3 border border-gray-200 dark:border-gray-800">
+                    <span className="font-medium text-gray-900 dark:text-gray-50">{area.name}</span>
                     <span className="text-brand font-semibold">{area.weight}</span>
                   </div>
                 ))}
@@ -205,8 +205,8 @@ export default function Part107LandingPage() {
       {/* Just launched */}
       <div className="max-w-3xl mx-auto px-6 py-16 md:py-24 text-center">
         <div className="bg-brand-light border border-brand-border-light rounded-2xl p-8 md:p-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">We Just Launched!</h2>
-          <p className="text-lg text-gray-600 mb-6 max-w-xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4">We Just Launched!</h2>
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 max-w-xl mx-auto">
             The Part 107 practice test is brand new. If a question looks wrong or a rule has
             changed, tell us.
           </p>
@@ -222,14 +222,14 @@ export default function Part107LandingPage() {
       </div>
 
       {/* Study guide */}
-      <div className="bg-gray-50 py-16 md:py-24">
+      <div className="bg-gray-50 dark:bg-gray-950 py-16 md:py-24">
         <div className="max-w-3xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-12">
             How to Pass the Part 107 Test
           </h2>
-          <div className="space-y-8 text-gray-600">
+          <div className="space-y-8 text-gray-600 dark:text-gray-300">
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">1. Know the format</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">1. Know the format</h3>
               <p>
                 60 multiple-choice questions in 2 hours at a PSI testing center, 70 percent to pass.
                 You must be 16, read and speak English, and get an FAA Tracking Number from IACRA
@@ -237,7 +237,7 @@ export default function Part107LandingPage() {
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">2. Learn to read a sectional chart</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">2. Learn to read a sectional chart</h3>
               <p>
                 The real test shows chart excerpts from the FAA testing supplement. This bank cannot
                 show figures, so it tests what the symbols and numbers mean. Spend an evening with a
@@ -245,7 +245,7 @@ export default function Part107LandingPage() {
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">3. Get the numbers down</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">3. Get the numbers down</h3>
               <p>
                 400 feet AGL, 100 mph, 3 statute miles, 500 below and 2,000 horizontal from clouds,
                 8 hours bottle to throttle and 0.04 BAC, 10 days to report an accident, 24 calendar
@@ -253,7 +253,7 @@ export default function Part107LandingPage() {
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">4. Drill your weak areas</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Drill your weak areas</h3>
               <p>
                 TigerTest tracks your accuracy by ACS area. After each practice test, go back to the
                 set you missed most and retake until you clear 70 percent with room to spare.
@@ -265,36 +265,36 @@ export default function Part107LandingPage() {
 
       {/* FAQ */}
       <div className="max-w-3xl mx-auto px-6 py-16 md:py-24">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-12">
           Part 107 Test Frequently Asked Questions
         </h2>
         <div className="space-y-8">
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 mb-2">How many questions are on the Part 107 test?</h3>
-            <p className="text-gray-600">
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">How many questions are on the Part 107 test?</h3>
+            <p className="text-gray-600 dark:text-gray-300">
               60 multiple-choice questions, a 2-hour limit, and a 70 percent pass mark (42 correct).
               It is taken at a PSI testing center and you need an FAA Tracking Number from IACRA to book.
             </p>
           </div>
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 mb-2">What topics does the Part 107 test cover?</h3>
-            <p className="text-gray-600">
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">What topics does the Part 107 test cover?</h3>
+            <p className="text-gray-600 dark:text-gray-300">
               Regulations (15 to 25 percent), Airspace and Requirements (15 to 25 percent), Weather
               (11 to 16 percent), Loading and Performance (7 to 11 percent), and Operations (35 to 45
               percent), per the FAA Remote Pilot ACS.
             </p>
           </div>
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 mb-2">Does the Part 107 test use sectional charts?</h3>
-            <p className="text-gray-600">
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Does the Part 107 test use sectional charts?</h3>
+            <p className="text-gray-600 dark:text-gray-300">
               Yes. Several questions refer to chart excerpts in the FAA testing supplement. This bank
               cannot show figures, so its airspace questions test what the symbols, numbers and
               boundaries mean. Pair it with a sectional chart legend before test day.
             </p>
           </div>
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 mb-2">Is the TigerTest Part 107 practice test free?</h3>
-            <p className="text-gray-600">
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is the TigerTest Part 107 practice test free?</h3>
+            <p className="text-gray-600 dark:text-gray-300">
               Yes. All four practice tests and all five training sets are free, with no account required.
               Create a free account if you want your progress saved across devices.
             </p>
@@ -306,10 +306,10 @@ export default function Part107LandingPage() {
 
       {/* Final CTA */}
       <div className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-t from-brand-light to-white pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-t from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Ready to Pass the Part 107 Test?</h2>
-          <p className="text-lg text-gray-600 mb-10">Free to start. No account required. 200 questions across all five ACS areas.</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">Ready to Pass the Part 107 Test?</h2>
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Free to start. No account required. 200 questions across all five ACS areas.</p>
           <ExamLandingCTA dashboardHref="/part-107/dashboard" />
         </div>
       </div>

@@ -85,10 +85,10 @@ export function MissDrill({ routes }: { routes: ExamRoutes }) {
   const lockedCount = misses.length - unlockedCount;
   const allFixed = misses.length > 0 && fixedCount >= unlockedCount;
 
-  if (!hydrated) return <div className="flex-1 bg-gray-50" />;
+  if (!hydrated) return <div className="flex-1 bg-gray-50 dark:bg-gray-950" />;
 
   return (
-    <div className="flex-1 bg-gray-50">
+    <div className="flex-1 bg-gray-50 dark:bg-gray-950">
       <div className="relative">
       <div className="absolute inset-x-0 top-0 h-96 bg-gradient-to-b from-brand-light to-transparent pointer-events-none" />
       <div className="relative container mx-auto px-4 sm:px-6 py-6 pb-10 max-w-lg md:max-w-2xl lg:max-w-4xl">
@@ -103,13 +103,13 @@ export function MissDrill({ routes }: { routes: ExamRoutes }) {
 
         <Link
           href={backHref}
-          className="inline-flex items-center gap-1.5 text-sm text-gray-500 hover:text-gray-700 mb-4"
+          className="inline-flex items-center gap-1.5 text-sm text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 mb-4"
         >
           <ArrowLeft className="h-4 w-4" /> {t("common.back")}
         </Link>
 
         {/* Hero */}
-        <div className="rounded-xl bg-white border border-gray-100 p-4 mb-6">
+        <div className="rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 p-4 mb-6">
           <div className="flex items-center gap-4">
             <Image
               src={getTigerAsset(routes.id, 6)}
@@ -119,12 +119,12 @@ export function MissDrill({ routes }: { routes: ExamRoutes }) {
               className="w-12 h-12 flex-shrink-0"
             />
             <div className="flex-1 min-w-0">
-              <h1 className="text-lg font-bold text-gray-900">
+              <h1 className="text-lg font-bold text-gray-900 dark:text-gray-50">
                 {testFilter
                   ? t("drill.titleTest").replace("{{n}}", String(routes.displayTestNumber(testFilter)))
                   : t("drill.title")}
               </h1>
-              <p className="text-xs text-gray-500 mt-0.5">
+              <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">
                 {misses.length === 0
                   ? t("drill.subEmpty")
                   : misses.length === 1
@@ -138,8 +138,8 @@ export function MissDrill({ routes }: { routes: ExamRoutes }) {
               <span
                 className={`text-xs font-semibold tabular-nums rounded-full px-2.5 py-1 flex-shrink-0 ${
                   allFixed
-                    ? "bg-green-100 text-green-700"
-                    : "bg-white border border-gray-200 text-gray-500"
+                    ? "bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300"
+                    : "bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 text-gray-500 dark:text-gray-400"
                 }`}
               >
                 {t("drill.fixedChip")
@@ -152,8 +152,8 @@ export function MissDrill({ routes }: { routes: ExamRoutes }) {
 
         {/* Empty states */}
         {misses.length === 0 && (
-          <div className="rounded-xl bg-green-50 border border-green-200 px-4 py-6 text-center">
-            <p className="text-base font-bold text-green-800 mb-1">
+          <div className="rounded-xl bg-green-50 dark:bg-green-950 border border-green-200 dark:border-green-800 px-4 py-6 text-center">
+            <p className="text-base font-bold text-green-800 dark:text-green-300 mb-1">
               {summary.attemptCount === 0
                 ? t("drill.emptyNoAttemptsTitle")
                 : summary.everMissedCount > 0
@@ -163,7 +163,7 @@ export function MissDrill({ routes }: { routes: ExamRoutes }) {
                     )
                   : t("drill.emptyCleanTitle")}
             </p>
-            <p className="text-sm text-green-700 mb-4">
+            <p className="text-sm text-green-700 dark:text-green-300 mb-4">
               {summary.attemptCount === 0
                 ? t("drill.emptyNoAttemptsBody")
                 : t("drill.emptyFixedBody")}
@@ -211,7 +211,7 @@ export function MissDrill({ routes }: { routes: ExamRoutes }) {
                       className="w-full flex items-center gap-3 rounded-xl border border-brand-border-light bg-brand-light px-4 py-2.5 text-left hover:shadow-md transition-shadow"
                     >
                       <Lock className="h-4 w-4 text-brand shrink-0" />
-                      <span className="flex-1 text-sm font-medium text-gray-800">
+                      <span className="flex-1 text-sm font-medium text-gray-800 dark:text-gray-100">
                         {lockedCount === 1
                           ? t("drill.lockedUpsellOne")
                           : t("drill.lockedUpsell").replace("{{n}}", String(lockedCount))}
@@ -225,17 +225,17 @@ export function MissDrill({ routes }: { routes: ExamRoutes }) {
                     onClick={() =>
                       upgrade.openPaywall("full_stats", "drill_locked_row", "Drill Locked Row")
                     }
-                    className="w-full rounded-xl bg-white border border-gray-100 px-4 py-3 text-left hover:shadow-md transition-shadow"
+                    className="w-full rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 px-4 py-3 text-left hover:shadow-md transition-shadow"
                   >
                     <div className="flex items-center gap-4">
                       <div className="shrink-0 text-center min-w-[3rem]">
-                        <div className="text-lg font-bold text-red-500">✗</div>
+                        <div className="text-lg font-bold text-red-500 dark:text-red-400">✗</div>
                         <div className="text-[10px] text-gray-400 uppercase tracking-wide">
                           {t("drill.missedTimes").replace("{{n}}", String(entry.timesMissed))}
                         </div>
                       </div>
                       <p
-                        className="flex-1 text-sm text-gray-700 blur-[4px] select-none"
+                        className="flex-1 text-sm text-gray-700 dark:text-gray-200 blur-[4px] select-none"
                         aria-hidden="true"
                       >
                         {q.question}
@@ -252,7 +252,7 @@ export function MissDrill({ routes }: { routes: ExamRoutes }) {
                 key={q.questionId}
                 chipValue="✗"
                 chipLabel={t("drill.missedTimes").replace("{{n}}", String(entry.timesMissed))}
-                chipColorClass="text-red-500"
+                chipColorClass="text-red-500 dark:text-red-400"
                 subtitle={subtitleBits.length > 0 ? subtitleBits.join(" · ") : undefined}
                 question={q.question}
                 options={[q.optionA, q.optionB, q.optionC, q.optionD].filter(Boolean)}
@@ -271,7 +271,7 @@ export function MissDrill({ routes }: { routes: ExamRoutes }) {
                         : t("drill.lastSkipped").replace("{{context}}", missedLabel)}
                     </p>
                     {answered && q.explanation && (
-                      <p className="text-xs text-gray-500 leading-relaxed animate-in fade-in duration-300">
+                      <p className="text-xs text-gray-500 dark:text-gray-400 leading-relaxed animate-in fade-in duration-300">
                         {q.explanation}
                       </p>
                     )}
@@ -283,7 +283,7 @@ export function MissDrill({ routes }: { routes: ExamRoutes }) {
         </div>
 
         {allFixed && (
-          <div className="mt-3 rounded-xl bg-green-50 border border-green-200 px-4 py-3 text-sm font-semibold text-green-800 text-center">
+          <div className="mt-3 rounded-xl bg-green-50 dark:bg-green-950 border border-green-200 dark:border-green-800 px-4 py-3 text-sm font-semibold text-green-800 dark:text-green-300 text-center">
             {lockedCount > 0
               ? t("drill.allFixedFree")
                   .replace("{{n}}", String(unlockedCount))

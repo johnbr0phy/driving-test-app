@@ -38,19 +38,19 @@ export function V2TestGate({
 
   if (!isTestLocked(exam, testNumber, isPremium)) return <>{children}</>;
   if (!hydrated || !ready) {
-    return <div className="v2-focus items-center justify-center text-gray-600">Loading...</div>;
+    return <div className="v2-focus items-center justify-center text-gray-600 dark:text-gray-300">Loading...</div>;
   }
   if (session || sat) return <>{children}</>;
 
   const test = exam.tests.find((t) => t.number === testNumber);
   return (
-    <div className="flex flex-1 items-center justify-center bg-gray-50 px-6 py-12">
+    <div className="flex flex-1 items-center justify-center bg-gray-50 dark:bg-gray-950 px-6 py-12">
       <div className="w-full max-w-md text-center">
         <Image src={getTigerAsset(exam.id, 3)} alt="" width={112} height={112} className="mx-auto h-28 w-28 object-contain" />
-        <h1 className="mt-3 flex items-center justify-center gap-2 text-2xl font-bold text-gray-900">
+        <h1 className="mt-3 flex items-center justify-center gap-2 text-2xl font-bold text-gray-900 dark:text-gray-50">
           <Lock className="h-5 w-5 text-gray-400" /> {exam.shortName} {test?.name ?? `Practice Test ${testNumber}`}
         </h1>
-        <p className="mt-2 text-gray-600">
+        <p className="mt-2 text-gray-600 dark:text-gray-300">
           This test never appears in the drills, so it shows how ready you really are. It&apos;s part of TigerTest
           Premium, along with every drill question and {otherPremiumExams(exam)}.
         </p>
@@ -61,7 +61,7 @@ export function V2TestGate({
         >
           Unlock with Premium{isNative ? "" : " · $9.99"}
         </button>
-        <Link href={routes.dashboard} className="mt-3 block text-sm font-semibold text-gray-500">
+        <Link href={routes.dashboard} className="mt-3 block text-sm font-semibold text-gray-500 dark:text-gray-400">
           Back to the dashboard
         </Link>
       </div>

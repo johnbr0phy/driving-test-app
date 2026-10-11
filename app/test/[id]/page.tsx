@@ -192,10 +192,10 @@ export default function TestPage() {
 
   if (loading) {
     return (
-      <div className="flex-1 bg-gray-50 flex items-center justify-center">
+      <div className="flex-1 bg-gray-50 dark:bg-gray-950 flex items-center justify-center">
         <div className="text-center">
           <div className="text-xl font-semibold mb-2">{t("testPage.loadingTest")}</div>
-          <div className="text-gray-600">{t("testPage.preparingQuestions")}</div>
+          <div className="text-gray-600 dark:text-gray-300">{t("testPage.preparingQuestions")}</div>
         </div>
       </div>
     );
@@ -203,12 +203,12 @@ export default function TestPage() {
 
   if (questions.length === 0) {
     return (
-      <div className="flex-1 bg-gray-50 flex items-center justify-center">
+      <div className="flex-1 bg-gray-50 dark:bg-gray-950 flex items-center justify-center">
         <Card className="max-w-md">
           <CardContent className="p-8 text-center">
             <div className="text-xl font-semibold mb-2">{t("testPage.noQuestionsAvailable")}</div>
-            <div className="text-gray-600 mb-4">{t("testPage.unableToLoad")}</div>
-            <Button className="bg-black text-white hover:bg-gray-800" onClick={() => router.push("/dashboard")}>
+            <div className="text-gray-600 dark:text-gray-300 mb-4">{t("testPage.unableToLoad")}</div>
+            <Button className="bg-black dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200" onClick={() => router.push("/dashboard")}>
               {t("common.back")}
             </Button>
           </CardContent>
@@ -218,7 +218,7 @@ export default function TestPage() {
   }
 
   return (
-    <div className="flex-1 bg-gray-50">
+    <div className="flex-1 bg-gray-50 dark:bg-gray-950">
       <TestPageHeader
         backHref="/dashboard"
         right={
@@ -270,7 +270,7 @@ export default function TestPage() {
                     ? "border-brand bg-brand text-white"
                     : answers[index]
                     ? "border-brand bg-brand-light text-brand-dark"
-                    : "border-gray-300 bg-white text-gray-400"
+                    : "border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-gray-400"
                   }
                 `}
               >
@@ -278,7 +278,7 @@ export default function TestPage() {
               </div>
             ))}
           </div>
-          <div className="text-xs text-gray-500 mt-2 text-center">
+          <div className="text-xs text-gray-500 dark:text-gray-400 mt-2 text-center">
             {t("testPage.selectAnswerToAdvance")}
           </div>
         </div>

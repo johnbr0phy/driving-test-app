@@ -300,8 +300,8 @@ export default async function KoreanStateDMVPage({ params }: PageProps) {
   ];
 
   return (
-    <div className="flex-1 bg-white relative">
-      <div className="absolute inset-x-0 top-0 h-72 bg-gradient-to-b from-brand-light to-white pointer-events-none" />
+    <div className="flex-1 bg-white dark:bg-gray-900 relative">
+      <div className="absolute inset-x-0 top-0 h-72 bg-gradient-to-b from-brand-light to-white dark:to-transparent pointer-events-none" />
 
       <script
         type="application/ld+json"
@@ -322,7 +322,7 @@ export default async function KoreanStateDMVPage({ params }: PageProps) {
 
       <div className="relative container mx-auto px-4 py-8 md:py-12 max-w-4xl">
         {/* Breadcrumb */}
-        <nav className="text-sm text-gray-500 mb-6" aria-label="Breadcrumb">
+        <nav className="text-sm text-gray-500 dark:text-gray-400 mb-6" aria-label="Breadcrumb">
           <ol className="flex items-center gap-1 flex-wrap">
             <li>
               <Link href="/" className="hover:text-brand">
@@ -343,16 +343,16 @@ export default async function KoreanStateDMVPage({ params }: PageProps) {
             <li>
               <ChevronRight className="h-3 w-3 inline" />
             </li>
-            <li className="text-gray-900 font-medium">{state.name}</li>
+            <li className="text-gray-900 dark:text-gray-50 font-medium">{state.name}</li>
           </ol>
         </nav>
 
         {/* Hero */}
         <div className="text-center mb-12">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-gray-50 mb-6">
             {state.name} DMV 필기시험 무료 연습문제 2026
           </h1>
-          <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
             {state.name} {state.dmvName} 필기시험을 한 번에 합격하세요. 공식
             운전자 교본을 바탕으로 만든 {state.name} 맞춤 연습문제 200개로
             대비할 수 있습니다.
@@ -360,7 +360,7 @@ export default async function KoreanStateDMVPage({ params }: PageProps) {
           <Link href={`/signup?state=${state.code}`}>
             <Button
               size="lg"
-              className="text-lg px-8 py-6 bg-gray-900 text-white hover:bg-gray-800 font-bold rounded-xl"
+              className="text-lg px-8 py-6 bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 font-bold rounded-xl"
             >
               무료로 연습 시작하기
             </Button>
@@ -372,40 +372,40 @@ export default async function KoreanStateDMVPage({ params }: PageProps) {
           <Card className="bg-gradient-to-br from-brand-light to-brand-gradient-to border-brand-border-light">
             <CardContent className="p-4 md:p-6 text-center">
               <FileText className="h-6 w-6 md:h-8 md:w-8 text-brand mx-auto mb-2" />
-              <div className="text-2xl md:text-3xl font-bold text-gray-900 mb-1">
+              <div className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 mb-1">
                 {state.writtenTestQuestions}
               </div>
-              <div className="text-sm text-gray-600">시험 문제 수</div>
+              <div className="text-sm text-gray-600 dark:text-gray-300">시험 문제 수</div>
             </CardContent>
           </Card>
 
           <Card className="bg-gradient-to-br from-brand-light to-brand-gradient-to border-brand-border-light">
             <CardContent className="p-4 md:p-6 text-center">
               <Target className="h-6 w-6 md:h-8 md:w-8 text-brand mx-auto mb-2" />
-              <div className="text-2xl md:text-3xl font-bold text-gray-900 mb-1">
+              <div className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 mb-1">
                 {state.passingScore}%
               </div>
-              <div className="text-sm text-gray-600">합격 기준 점수</div>
+              <div className="text-sm text-gray-600 dark:text-gray-300">합격 기준 점수</div>
             </CardContent>
           </Card>
 
           <Card className="bg-gradient-to-br from-brand-light to-brand-gradient-to border-brand-border-light">
             <CardContent className="p-4 md:p-6 text-center">
               <Clock className="h-6 w-6 md:h-8 md:w-8 text-brand mx-auto mb-2" />
-              <div className="text-2xl md:text-3xl font-bold text-gray-900 mb-1">
+              <div className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 mb-1">
                 {state.minPermitAge}
               </div>
-              <div className="text-sm text-gray-600">임시 면허 최소 연령</div>
+              <div className="text-sm text-gray-600 dark:text-gray-300">임시 면허 최소 연령</div>
             </CardContent>
           </Card>
 
           <Card className="bg-gradient-to-br from-brand-light to-brand-gradient-to border-brand-border-light">
             <CardContent className="p-4 md:p-6 text-center">
               <AlertCircle className="h-6 w-6 md:h-8 md:w-8 text-brand mx-auto mb-2" />
-              <div className="text-2xl md:text-3xl font-bold text-gray-900 mb-1">
+              <div className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 mb-1">
                 {rawPassing}/{state.writtenTestQuestions}
               </div>
-              <div className="text-sm text-gray-600">합격에 필요한 정답 수</div>
+              <div className="text-sm text-gray-600 dark:text-gray-300">합격에 필요한 정답 수</div>
             </CardContent>
           </Card>
         </div>
@@ -413,16 +413,16 @@ export default async function KoreanStateDMVPage({ params }: PageProps) {
         {/* State-Specific Content Section */}
         <Card className="mb-12">
           <CardContent className="p-6 md:p-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-50 mb-6">
               {state.name} {state.dmvName} 필기시험, 꼭 알아야 할 것들
             </h2>
 
             <div className="space-y-6">
               <div>
-                <h3 className="font-semibold text-lg text-gray-900 mb-2">
+                <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">
                   시험 형식
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-gray-600 dark:text-gray-300">
                   {state.name} {state.dmvName}의 필기시험은{" "}
                   <strong>{state.writtenTestQuestions}개의 객관식 문제</strong>로
                   구성되며, 교통법규와 도로 표지판, 안전 운전 요령, {state.name}{" "}
@@ -435,10 +435,10 @@ export default async function KoreanStateDMVPage({ params }: PageProps) {
               </div>
 
               <div>
-                <h3 className="font-semibold text-lg text-gray-900 mb-2">
+                <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">
                   최소 연령 및 응시 자격
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-gray-600 dark:text-gray-300">
                   {state.name}에서 임시 면허를 신청하려면 만{" "}
                   <strong>{state.minPermitAge}세</strong> 이상이어야 합니다.
                   면허가 발급되기 전에 필기시험과 시력 검사를 모두 통과해야
@@ -447,21 +447,21 @@ export default async function KoreanStateDMVPage({ params }: PageProps) {
               </div>
 
               <div>
-                <h3 className="font-semibold text-lg text-gray-900 mb-2">
+                <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">
                   불합격했을 때
                 </h3>
-                <p className="text-gray-600">{landingInfo.retakeInfo}</p>
+                <p className="text-gray-600 dark:text-gray-300">{landingInfo.retakeInfo}</p>
               </div>
 
               <div>
-                <h3 className="font-semibold text-lg text-gray-900 mb-2">
+                <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">
                   {state.name} 고유 규정
                 </h3>
                 <ul className="space-y-2">
                   {landingInfo.notableRules.map((rule, index) => (
                     <li key={index} className="flex items-start gap-3">
-                      <CheckCircle2 className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
-                      <span className="text-gray-600">{rule}</span>
+                      <CheckCircle2 className="h-5 w-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
+                      <span className="text-gray-600 dark:text-gray-300">{rule}</span>
                     </li>
                   ))}
                 </ul>
@@ -469,20 +469,20 @@ export default async function KoreanStateDMVPage({ params }: PageProps) {
 
               {landingInfo.examManualChapters && (
                 <div>
-                  <h3 className="font-semibold text-lg text-gray-900 mb-2">
+                  <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">
                     시험에 나오는 교본 범위
                   </h3>
-                  <p className="text-gray-600">
+                  <p className="text-gray-600 dark:text-gray-300">
                     {landingInfo.examManualChapters}
                   </p>
                 </div>
               )}
 
               <div>
-                <h3 className="font-semibold text-lg text-gray-900 mb-2">
+                <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">
                   공식 운전자 교본
                 </h3>
-                <p className="text-gray-600 mb-3">
+                <p className="text-gray-600 dark:text-gray-300 mb-3">
                   필기시험을 준비하려면{" "}
                   <strong>{landingInfo.handbookName}</strong>을 공부하세요.
                   TigerTest의 연습문제도 이 교본의 내용을 바탕으로 만들었습니다.
@@ -505,41 +505,41 @@ export default async function KoreanStateDMVPage({ params }: PageProps) {
         {/* What's Included */}
         <Card className="mb-12">
           <CardContent className="p-6 md:p-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-50 mb-6">
               {state.name} 연습문제에 포함된 내용
             </h2>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <CheckCircle2 className="h-6 w-6 text-green-600 flex-shrink-0 mt-0.5" />
-                <span className="text-gray-700">
+                <CheckCircle2 className="h-6 w-6 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
+                <span className="text-gray-700 dark:text-gray-200">
                   <strong>연습문제 200개</strong> — {state.name} 고유 법규를
                   포함해 {state.dmvName} 필기시험의 모든 주제를 다룹니다
                 </span>
               </li>
               <li className="flex items-start gap-3">
-                <CheckCircle2 className="h-6 w-6 text-green-600 flex-shrink-0 mt-0.5" />
-                <span className="text-gray-700">
+                <CheckCircle2 className="h-6 w-6 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
+                <span className="text-gray-700 dark:text-gray-200">
                   <strong>50문제짜리 모의고사 4회</strong> — 실제{" "}
                   {state.dmvName} 시험과 똑같은 환경을 연습할 수 있습니다
                 </span>
               </li>
               <li className="flex items-start gap-3">
-                <CheckCircle2 className="h-6 w-6 text-green-600 flex-shrink-0 mt-0.5" />
-                <span className="text-gray-700">
+                <CheckCircle2 className="h-6 w-6 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
+                <span className="text-gray-700 dark:text-gray-200">
                   <strong>학습 모드</strong> — 문제마다 즉시 결과와 자세한
                   해설을 확인할 수 있습니다
                 </span>
               </li>
               <li className="flex items-start gap-3">
-                <CheckCircle2 className="h-6 w-6 text-green-600 flex-shrink-0 mt-0.5" />
-                <span className="text-gray-700">
+                <CheckCircle2 className="h-6 w-6 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
+                <span className="text-gray-700 dark:text-gray-200">
                   <strong>진행 상황 추적</strong> — 공부하는 동안 합격 가능성이
                   어떻게 올라가는지 확인할 수 있습니다
                 </span>
               </li>
               <li className="flex items-start gap-3">
-                <CheckCircle2 className="h-6 w-6 text-green-600 flex-shrink-0 mt-0.5" />
-                <span className="text-gray-700">
+                <CheckCircle2 className="h-6 w-6 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
+                <span className="text-gray-700 dark:text-gray-200">
                   <strong>모바일 최적화</strong> — 침대에서, 소파에서, 어디서든
                   휴대폰으로 공부하세요
                 </span>
@@ -559,7 +559,7 @@ export default async function KoreanStateDMVPage({ params }: PageProps) {
           <Link href={`/signup?state=${state.code}`}>
             <Button
               size="lg"
-              className="text-lg px-8 py-6 bg-white text-brand-dark hover:bg-gray-100 font-bold rounded-xl"
+              className="text-lg px-8 py-6 bg-white dark:bg-gray-900 text-brand-dark hover:bg-gray-100 dark:hover:bg-gray-800 font-bold rounded-xl"
             >
               지금 연습 시작하기 — 무료입니다
             </Button>
@@ -568,19 +568,19 @@ export default async function KoreanStateDMVPage({ params }: PageProps) {
 
         {/* Testimonials */}
         <div className="mb-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-50 mb-6 text-center">
             사용자 후기
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             {testimonials.map((t, i) => (
               <div
                 key={i}
-                className="bg-gray-50 border border-gray-200 rounded-xl p-5"
+                className="bg-gray-50 dark:bg-gray-950 border border-gray-200 dark:border-gray-800 rounded-xl p-5"
               >
-                <p className="text-gray-800 mb-3 italic">
+                <p className="text-gray-800 dark:text-gray-100 mb-3 italic">
                   &quot;{t.quote}&quot;
                 </p>
-                <p className="text-gray-500 text-sm">{t.author}</p>
+                <p className="text-gray-500 dark:text-gray-400 text-sm">{t.author}</p>
               </div>
             ))}
           </div>
@@ -588,16 +588,16 @@ export default async function KoreanStateDMVPage({ params }: PageProps) {
 
         {/* FAQ Section */}
         <div className="mb-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-50 mb-6">
             {state.name} DMV 시험 자주 묻는 질문
           </h2>
           <div className="space-y-6">
             {faqItems.map((item, i) => (
               <div key={i}>
-                <h3 className="font-semibold text-lg text-gray-900 mb-2">
+                <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">
                   {item.question}
                 </h3>
-                <p className="text-gray-600">{item.answer}</p>
+                <p className="text-gray-600 dark:text-gray-300">{item.answer}</p>
               </div>
             ))}
           </div>
@@ -606,7 +606,7 @@ export default async function KoreanStateDMVPage({ params }: PageProps) {
         {/* Related State Pages */}
         {neighboringStates.length > 0 && (
           <div className="mb-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-50 mb-6">
               주변 주의 연습문제
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
@@ -620,9 +620,9 @@ export default async function KoreanStateDMVPage({ params }: PageProps) {
                           ? `/ko/${neighbor.slug}-dmv-pilgi-siheom`
                           : `/${neighbor.slug}-dmv-practice-test`
                       }
-                      className="flex items-center justify-between bg-gray-50 border border-gray-200 rounded-xl p-4 hover:border-brand-border hover:bg-brand-light transition-colors"
+                      className="flex items-center justify-between bg-gray-50 dark:bg-gray-950 border border-gray-200 dark:border-gray-800 rounded-xl p-4 hover:border-brand-border hover:bg-brand-light transition-colors"
                     >
-                      <span className="font-medium text-gray-900">
+                      <span className="font-medium text-gray-900 dark:text-gray-50">
                         {neighbor.name}
                       </span>
                       <ChevronRight className="h-4 w-4 text-gray-400" />
@@ -635,18 +635,18 @@ export default async function KoreanStateDMVPage({ params }: PageProps) {
 
         {/* Final CTA */}
         <div className="text-center py-8">
-          <p className="text-gray-600 mb-4">
+          <p className="text-gray-600 dark:text-gray-300 mb-4">
             {state.name} 운전면허 필기시험 공부, 지금 시작해 볼까요?
           </p>
           <Link href={`/signup?state=${state.code}`}>
             <Button
               size="lg"
-              className="text-lg px-8 py-6 bg-gray-900 text-white hover:bg-gray-800 font-bold rounded-xl"
+              className="text-lg px-8 py-6 bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 font-bold rounded-xl"
             >
               무료로 연습 시작하기
             </Button>
           </Link>
-          <p className="text-sm text-gray-500 mt-3">
+          <p className="text-sm text-gray-500 dark:text-gray-400 mt-3">
             계정이 필요 없습니다. 무료로 시작하세요.
           </p>
         </div>

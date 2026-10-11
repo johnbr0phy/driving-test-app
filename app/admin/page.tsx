@@ -280,7 +280,7 @@ export default function AdminPage() {
 
   if (authLoading || loading) {
     return (
-      <div className="flex-1 bg-white flex items-center justify-center">
+      <div className="flex-1 bg-white dark:bg-gray-900 flex items-center justify-center">
         <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-brand" />
       </div>
     );
@@ -288,15 +288,15 @@ export default function AdminPage() {
 
   if (error) {
     return (
-      <div className="flex-1 bg-white">
+      <div className="flex-1 bg-white dark:bg-gray-900">
         <div className="container mx-auto px-4 py-8 max-w-6xl">
-          <Link href="/dashboard" className="inline-flex items-center text-gray-600 hover:text-gray-900 mb-6">
+          <Link href="/dashboard" className="inline-flex items-center text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-50 mb-6">
             <ArrowLeft className="h-4 w-4 mr-2" />
             Back
           </Link>
-          <Card className="border-red-200 bg-red-50">
+          <Card className="border-red-200 dark:border-red-800 bg-red-50 dark:bg-red-950">
             <CardContent className="p-4">
-              <p className="text-red-600 font-medium">{error}</p>
+              <p className="text-red-600 dark:text-red-400 font-medium">{error}</p>
             </CardContent>
           </Card>
         </div>
@@ -305,7 +305,7 @@ export default function AdminPage() {
   }
 
   return (
-    <div className="flex-1 bg-gray-50">
+    <div className="flex-1 bg-gray-50 dark:bg-gray-950">
       <div className="container mx-auto px-4 py-6 max-w-6xl">
         {/* Summary Stats */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 mb-6">
@@ -315,7 +315,7 @@ export default function AdminPage() {
                 <Users className="h-8 w-8 text-brand" />
                 <div>
                   <p className="text-2xl font-bold">{stats?.totalUsers || 0}</p>
-                  <p className="text-sm text-gray-500">Total Users</p>
+                  <p className="text-sm text-gray-500 dark:text-gray-400">Total Users</p>
                   <p className="text-xs text-gray-400">
                     {stats?.payingUsers || 0} paying
                   </p>
@@ -326,10 +326,10 @@ export default function AdminPage() {
           <Card>
             <CardContent className="p-4">
               <div className="flex items-center gap-4">
-                <Activity className="h-8 w-8 text-green-500" />
+                <Activity className="h-8 w-8 text-green-500 dark:text-green-400" />
                 <div>
                   <p className="text-2xl font-bold">{stats?.activeUsers7d || 0}</p>
-                  <p className="text-sm text-gray-500">Active (7 days)</p>
+                  <p className="text-sm text-gray-500 dark:text-gray-400">Active (7 days)</p>
                   <p className="text-xs text-gray-400">
                     {stats?.totalUsers ? Math.round((stats.activeUsers7d / stats.totalUsers) * 100) : 0}% of users
                   </p>
@@ -340,10 +340,10 @@ export default function AdminPage() {
           <Card>
             <CardContent className="p-4">
               <div className="flex items-center gap-4">
-                <UserPlus className="h-8 w-8 text-purple-500" />
+                <UserPlus className="h-8 w-8 text-purple-500 dark:text-purple-400" />
                 <div>
                   <p className="text-2xl font-bold">{stats?.newUsers7d || 0}</p>
-                  <p className="text-sm text-gray-500">New Users (7d)</p>
+                  <p className="text-sm text-gray-500 dark:text-gray-400">New Users (7d)</p>
                   <p className="text-xs text-gray-400">
                     {stats?.totalUsers ? ((stats.newUsers7d / stats.totalUsers) * 100).toFixed(1) : 0}% of total
                   </p>
@@ -361,7 +361,7 @@ export default function AdminPage() {
                   const isUp = pct > 0;
                   const isDown = pct < 0;
                   const Icon = isUp ? TrendingUp : isDown ? TrendingDown : Minus;
-                  const color = isUp ? 'text-green-500' : isDown ? 'text-red-500' : 'text-gray-400';
+                  const color = isUp ? 'text-green-500 dark:text-green-400' : isDown ? 'text-red-500 dark:text-red-400' : 'text-gray-400';
                   return (
                     <>
                       <Icon className={`h-8 w-8 ${color}`} />
@@ -369,7 +369,7 @@ export default function AdminPage() {
                         <p className={`text-2xl font-bold ${color}`}>
                           {isUp ? '+' : ''}{pct}%
                         </p>
-                        <p className="text-sm text-gray-500">7d Trend</p>
+                        <p className="text-sm text-gray-500 dark:text-gray-400">7d Trend</p>
                         <p className="text-xs text-gray-400">
                           {prev} → {curr} active
                         </p>
@@ -383,14 +383,14 @@ export default function AdminPage() {
           <Card>
             <CardContent className="p-4">
               <div className="flex items-center gap-4">
-                <DollarSign className="h-8 w-8 text-emerald-500" />
+                <DollarSign className="h-8 w-8 text-emerald-500 dark:text-emerald-400" />
                 <div>
                   <p className="text-2xl font-bold">
                     {stats?.conversion
                       ? `${(stats.conversion.conversionRate * 100).toFixed(1)}%`
                       : "—"}
                   </p>
-                  <p className="text-sm text-gray-500">Conversion</p>
+                  <p className="text-sm text-gray-500 dark:text-gray-400">Conversion</p>
                   <p className="text-xs text-gray-400">
                     {stats?.conversion?.medianDaysToPurchase != null
                       ? `~${stats.conversion.medianDaysToPurchase.toFixed(1)}d to upgrade`
@@ -403,10 +403,10 @@ export default function AdminPage() {
           <Card>
             <CardContent className="p-4">
               <div className="flex items-center gap-4">
-                <Share2 className="h-8 w-8 text-pink-500" />
+                <Share2 className="h-8 w-8 text-pink-500 dark:text-pink-400" />
                 <div>
                   <p className="text-2xl font-bold">{stats?.totalShareClicks || 0}</p>
-                  <p className="text-sm text-gray-500">Share Clicks</p>
+                  <p className="text-sm text-gray-500 dark:text-gray-400">Share Clicks</p>
                   <p className="text-xs text-gray-400">
                     {(() => {
                       const today = new Date().toISOString().split('T')[0];
@@ -421,10 +421,10 @@ export default function AdminPage() {
           <Card>
             <CardContent className="p-4">
               <div className="flex items-center gap-4">
-                <Sparkles className="h-8 w-8 text-amber-500" />
+                <Sparkles className="h-8 w-8 text-amber-500 dark:text-amber-400" />
                 <div>
                   <p className="text-2xl font-bold">{stats?.superAmazing?.enabledUsers ?? 0}</p>
-                  <p className="text-sm text-gray-500">Super Amazing On</p>
+                  <p className="text-sm text-gray-500 dark:text-gray-400">Super Amazing On</p>
                   <p className="text-xs text-gray-400">
                     {stats?.superAmazing?.eligibleUsers ?? 0} eligible · {stats?.superAmazing?.everEnabledUsers ?? 0} ever on
                   </p>
@@ -446,7 +446,7 @@ export default function AdminPage() {
                   {graphMetric === 'questions' && (
                     <>
                       {`Questions Answered (${({ day: 'Daily', week: 'Weekly', month: 'Monthly' } as const)[graphGranularity]})`}
-                      <span className="text-sm font-normal text-gray-500 ml-2">
+                      <span className="text-sm font-normal text-gray-500 dark:text-gray-400 ml-2">
                         {(stats?.totalQuestionsAnswered ?? 0).toLocaleString()} all-time
                       </span>
                     </>
@@ -544,7 +544,7 @@ export default function AdminPage() {
         <Card className="mb-6">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
-                <GraduationCap className="h-5 w-5 text-emerald-500" />
+                <GraduationCap className="h-5 w-5 text-emerald-500 dark:text-emerald-400" />
                 Pass Rate by State
                 <span className="text-xs font-normal text-gray-400 ml-1">
                   (top 100 active users)
@@ -553,7 +553,7 @@ export default function AdminPage() {
             </CardHeader>
             <CardContent>
               {passRateByState.length === 0 ? (
-                <p className="text-sm text-gray-500">No completed tests yet.</p>
+                <p className="text-sm text-gray-500 dark:text-gray-400">No completed tests yet.</p>
               ) : (
                 <div className="space-y-2 max-h-72 overflow-y-auto pr-1">
                   {passRateByState.slice(0, 12).map((s) => {
@@ -566,12 +566,12 @@ export default function AdminPage() {
                             {getStateName(s.code)}{" "}
                             <span className="text-gray-400 text-xs">({s.code})</span>
                           </span>
-                          <span className="text-gray-600 tabular-nums">
+                          <span className="text-gray-600 dark:text-gray-300 tabular-nums">
                             {pct.toFixed(0)}%{" "}
                             <span className="text-gray-400 text-xs">({s.passed}/{s.attempts})</span>
                           </span>
                         </div>
-                        <div className="h-2 w-full bg-gray-100 rounded overflow-hidden">
+                        <div className="h-2 w-full bg-gray-100 dark:bg-gray-800 rounded overflow-hidden">
                           <div className={`${color} h-full`} style={{ width: `${pct}%` }} />
                         </div>
                       </div>
@@ -586,10 +586,10 @@ export default function AdminPage() {
         <Card className="mb-6">
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
-              <Lock className="h-5 w-5 text-amber-500" />
+              <Lock className="h-5 w-5 text-amber-500 dark:text-amber-400" />
               Paywall Performance
               {paywallStats.length > 0 && (
-                <span className="text-sm font-normal text-gray-500">
+                <span className="text-sm font-normal text-gray-500 dark:text-gray-400">
                   ({paywallStats.reduce((sum, p) => sum + p.totalHits, 0).toLocaleString()} total hits)
                 </span>
               )}
@@ -597,18 +597,18 @@ export default function AdminPage() {
           </CardHeader>
           <CardContent>
             {paywallStats.length === 0 ? (
-              <p className="text-sm text-gray-500">No paywall hits recorded yet.</p>
+              <p className="text-sm text-gray-500 dark:text-gray-400">No paywall hits recorded yet.</p>
             ) : (
               <div className="overflow-x-auto">
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="border-b">
-                      <th className="text-left py-3 px-4 font-medium text-gray-500">Paywall</th>
-                      <th className="text-left py-3 px-4 font-medium text-gray-500">Location</th>
-                      <th className="text-right py-3 px-4 font-medium text-gray-500">Hits</th>
-                      <th className="text-right py-3 px-4 font-medium text-gray-500">Users</th>
-                      <th className="text-right py-3 px-4 font-medium text-gray-500">Premium</th>
-                      <th className="text-left py-3 px-4 font-medium text-gray-500">Conversion</th>
+                      <th className="text-left py-3 px-4 font-medium text-gray-500 dark:text-gray-400">Paywall</th>
+                      <th className="text-left py-3 px-4 font-medium text-gray-500 dark:text-gray-400">Location</th>
+                      <th className="text-right py-3 px-4 font-medium text-gray-500 dark:text-gray-400">Hits</th>
+                      <th className="text-right py-3 px-4 font-medium text-gray-500 dark:text-gray-400">Users</th>
+                      <th className="text-right py-3 px-4 font-medium text-gray-500 dark:text-gray-400">Premium</th>
+                      <th className="text-left py-3 px-4 font-medium text-gray-500 dark:text-gray-400">Conversion</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -616,10 +616,10 @@ export default function AdminPage() {
                       const pct = p.conversionRate * 100;
                       const color = pct >= 15 ? "bg-emerald-500" : pct >= 5 ? "bg-amber-500" : "bg-red-500";
                       return (
-                        <tr key={p.key} className="border-b hover:bg-gray-50">
+                        <tr key={p.key} className="border-b hover:bg-gray-50 dark:hover:bg-gray-800">
                           <td className="py-3 px-4 font-medium">{p.label}</td>
                           <td className="py-3 px-4">
-                            <span className="inline-flex items-center px-2 py-1 bg-gray-100 text-gray-700 rounded text-xs font-medium">
+                            <span className="inline-flex items-center px-2 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-200 rounded text-xs font-medium">
                               {p.location}
                             </span>
                           </td>
@@ -628,10 +628,10 @@ export default function AdminPage() {
                           <td className="py-3 px-4 text-right tabular-nums">{p.converted.toLocaleString()}</td>
                           <td className="py-3 px-4">
                             <div className="flex items-center gap-2">
-                              <div className="h-2 w-24 bg-gray-100 rounded overflow-hidden">
+                              <div className="h-2 w-24 bg-gray-100 dark:bg-gray-800 rounded overflow-hidden">
                                 <div className={`${color} h-full`} style={{ width: `${Math.min(100, pct)}%` }} />
                               </div>
-                              <span className="text-gray-600 tabular-nums text-xs w-10 text-right">
+                              <span className="text-gray-600 dark:text-gray-300 tabular-nums text-xs w-10 text-right">
                                 {p.uniqueUsers > 0 ? `${pct.toFixed(1)}%` : "—"}
                               </span>
                             </div>
@@ -656,7 +656,7 @@ export default function AdminPage() {
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
               <CardTitle>
                 All Users{" "}
-                <span className="text-sm font-normal text-gray-500">
+                <span className="text-sm font-normal text-gray-500 dark:text-gray-400">
                   ({filteredUsers.length}
                   {filteredUsers.length !== users.length ? ` of ${users.length}` : ""})
                 </span>
@@ -669,13 +669,13 @@ export default function AdminPage() {
                     value={userSearch}
                     onChange={(e) => setUserSearch(e.target.value)}
                     placeholder="Search email or UID"
-                    className="pl-8 pr-3 py-1.5 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-brand w-56"
+                    className="pl-8 pr-3 py-1.5 text-sm border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:ring-1 focus:ring-brand w-56"
                   />
                 </div>
                 <select
                   value={stateFilter}
                   onChange={(e) => setStateFilter(e.target.value)}
-                  className="text-sm border border-gray-300 rounded-md px-2 py-1.5 bg-white focus:outline-none focus:ring-1 focus:ring-brand"
+                  className="text-sm border border-gray-300 dark:border-gray-700 rounded-md px-2 py-1.5 bg-white dark:bg-gray-900 focus:outline-none focus:ring-1 focus:ring-brand"
                 >
                   <option value="all">All states</option>
                   {availableStateCodes.map((code) => (
@@ -684,7 +684,7 @@ export default function AdminPage() {
                     </option>
                   ))}
                 </select>
-                <label className="inline-flex items-center gap-1.5 text-sm text-gray-700 cursor-pointer select-none">
+                <label className="inline-flex items-center gap-1.5 text-sm text-gray-700 dark:text-gray-200 cursor-pointer select-none">
                   <input
                     type="checkbox"
                     checked={premiumOnly}
@@ -701,27 +701,27 @@ export default function AdminPage() {
               <table className="w-full text-sm">
                 <thead>
                   <tr className="border-b">
-                    <th className="text-left py-3 px-4 font-medium text-gray-500">ID</th>
-                    <th className="text-left py-3 px-4 font-medium text-gray-500">State</th>
-                    <th className="text-left py-3 px-4 font-medium text-gray-500">Last Active</th>
-                    <th className="text-left py-3 px-4 font-medium text-gray-500">Training Qs</th>
-                    <th className="text-left py-3 px-4 font-medium text-gray-500">Test Qs</th>
-                    <th className="text-left py-3 px-4 font-medium text-gray-500">Converted Via</th>
-                    <th className="text-right py-3 px-4 font-medium text-gray-500"></th>
+                    <th className="text-left py-3 px-4 font-medium text-gray-500 dark:text-gray-400">ID</th>
+                    <th className="text-left py-3 px-4 font-medium text-gray-500 dark:text-gray-400">State</th>
+                    <th className="text-left py-3 px-4 font-medium text-gray-500 dark:text-gray-400">Last Active</th>
+                    <th className="text-left py-3 px-4 font-medium text-gray-500 dark:text-gray-400">Training Qs</th>
+                    <th className="text-left py-3 px-4 font-medium text-gray-500 dark:text-gray-400">Test Qs</th>
+                    <th className="text-left py-3 px-4 font-medium text-gray-500 dark:text-gray-400">Converted Via</th>
+                    <th className="text-right py-3 px-4 font-medium text-gray-500 dark:text-gray-400"></th>
                   </tr>
                 </thead>
                 <tbody>
                   {visibleUsers.map((userData) => (
-                    <tr key={userData.uid} className="border-b hover:bg-gray-50">
+                    <tr key={userData.uid} className="border-b hover:bg-gray-50 dark:hover:bg-gray-800">
                       <td className="py-3 px-4">
                         <div className="flex items-center gap-1.5">
-                          <span className="text-xs text-gray-600 font-mono">{userData.uid}</span>
+                          <span className="text-xs text-gray-600 dark:text-gray-300 font-mono">{userData.uid}</span>
                           {userData.isPremium && (
                             <Image src="/tiger_face_01.png" alt="Premium user" width={20} height={20} title="Premium user" className="w-5 h-5" />
                           )}
                           {userData.superAmazingEnabled ? (
                             <span title="Super Amazing Mode on">
-                              <Sparkles className="h-4 w-4 text-amber-500" />
+                              <Sparkles className="h-4 w-4 text-amber-500 dark:text-amber-400" />
                             </span>
                           ) : userData.superAmazingEligible ? (
                             <span title="8/8 complete — Super Amazing Mode unlocked, not turned on">
@@ -732,14 +732,14 @@ export default function AdminPage() {
                       </td>
                       <td className="py-3 px-4">
                         {userData.selectedState ? (
-                          <span className="inline-flex items-center px-2 py-1 bg-blue-100 text-blue-800 rounded text-xs font-medium">
+                          <span className="inline-flex items-center px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-300 rounded text-xs font-medium">
                             {getStateName(userData.selectedState)} ({userData.selectedState})
                           </span>
                         ) : (
                           <span className="text-gray-400">Not selected</span>
                         )}
                       </td>
-                      <td className="py-3 px-4 text-gray-600">
+                      <td className="py-3 px-4 text-gray-600 dark:text-gray-300">
                         {userData.lastUpdated ? formatDate(userData.lastUpdated) : <span className="text-gray-400">Never</span>}
                       </td>
                       <td className="py-3 px-4">
@@ -752,7 +752,7 @@ export default function AdminPage() {
                       <td className="py-3 px-4">
                         {userData.convertedPaywall ? (
                           <span
-                            className="inline-flex items-center px-2 py-1 bg-amber-100 text-amber-800 rounded text-xs font-medium"
+                            className="inline-flex items-center px-2 py-1 bg-amber-100 dark:bg-amber-900 text-amber-800 dark:text-amber-300 rounded text-xs font-medium"
                             title={userData.convertedPaywall.key}
                           >
                             {userData.convertedPaywall.label}
@@ -769,7 +769,7 @@ export default function AdminPage() {
                           size="sm"
                           onClick={() => deleteUser(userData.uid)}
                           disabled={deleting === userData.uid}
-                          className="text-red-500 hover:text-red-700 hover:bg-red-50"
+                          className="text-red-500 dark:text-red-400 hover:text-red-700 dark:hover:text-red-300 hover:bg-red-50 dark:hover:bg-red-950"
                         >
                           {deleting === userData.uid ? (
                             <RefreshCw className="h-4 w-4 animate-spin" />
@@ -783,7 +783,7 @@ export default function AdminPage() {
                 </tbody>
               </table>
               {usersPageCount > 1 && (
-                <div className="flex items-center justify-between mt-4 text-sm text-gray-600">
+                <div className="flex items-center justify-between mt-4 text-sm text-gray-600 dark:text-gray-300">
                   <span>
                     Showing {usersPageSafe * PAGE_SIZE + 1}–
                     {Math.min((usersPageSafe + 1) * PAGE_SIZE, filteredUsers.length)} of {filteredUsers.length}

@@ -18,7 +18,7 @@ export function MasteryProgress({ totalBestScore, totalPossible }: MasteryProgre
     <Card className="bg-gradient-to-br from-brand-light to-brand-gradient-to border-brand-border-light">
       <CardHeader>
         <div className="flex items-center gap-3">
-          <Trophy className="h-8 w-8 text-yellow-600" />
+          <Trophy className="h-8 w-8 text-yellow-600 dark:text-yellow-400" />
           <div>
             <CardTitle className="text-2xl">{t("mastery.overallMastery")}</CardTitle>
             <CardDescription>{t("mastery.bestPerformance")}</CardDescription>
@@ -29,10 +29,10 @@ export function MasteryProgress({ totalBestScore, totalPossible }: MasteryProgre
         <div className="space-y-4">
           <div className="flex items-baseline gap-2">
             <span className="text-5xl font-bold text-brand">{masteryPercentage}%</span>
-            <span className="text-gray-600">{t("mastery.masteredSuffix")}</span>
+            <span className="text-gray-600 dark:text-gray-300">{t("mastery.masteredSuffix")}</span>
           </div>
           <Progress value={masteryPercentage} className="h-4 [&>div]:bg-brand" />
-          <p className="text-sm text-gray-600">
+          <p className="text-sm text-gray-600 dark:text-gray-300">
             {totalBestScore} {t("questionCard.of")} {totalPossible} {t("mastery.questionsCorrectBest")}
           </p>
         </div>

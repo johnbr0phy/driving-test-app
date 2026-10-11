@@ -55,8 +55,8 @@ export default function VietnamesePracticeTestsByStatePage() {
   };
 
   return (
-    <div className="flex-1 bg-white relative">
-      <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-light to-white pointer-events-none" />
+    <div className="flex-1 bg-white dark:bg-gray-900 relative">
+      <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-light to-white dark:to-transparent pointer-events-none" />
 
       <script
         type="application/ld+json"
@@ -65,7 +65,7 @@ export default function VietnamesePracticeTestsByStatePage() {
 
       <div className="relative container mx-auto px-4 py-8 md:py-12 max-w-5xl">
         {/* Breadcrumb */}
-        <nav className="text-sm text-gray-500 mb-6" aria-label="Breadcrumb">
+        <nav className="text-sm text-gray-500 dark:text-gray-400 mb-6" aria-label="Breadcrumb">
           <ol className="flex items-center gap-1">
             <li>
               <Link href="/" className="hover:text-brand">
@@ -75,7 +75,7 @@ export default function VietnamesePracticeTestsByStatePage() {
             <li>
               <ChevronRight className="h-3 w-3 inline" />
             </li>
-            <li className="text-gray-900 font-medium">
+            <li className="text-gray-900 dark:text-gray-50 font-medium">
               Thi Thử Theo Tiểu Bang
             </li>
           </ol>
@@ -83,10 +83,10 @@ export default function VietnamesePracticeTestsByStatePage() {
 
         {/* Hero */}
         <div className="text-center mb-12">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-gray-50 mb-4">
             Thi Thử DMV Bằng Tiếng Việt Theo Tiểu Bang
           </h1>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
             Chọn tiểu bang của bạn bên dưới để luyện thi miễn phí bằng tiếng
             Việt với các câu hỏi dựa trên cẩm nang lái xe chính thức của tiểu
             bang.
@@ -94,9 +94,9 @@ export default function VietnamesePracticeTestsByStatePage() {
         </div>
 
         {/* Why these states */}
-        <div className="flex items-start gap-4 bg-green-50 border border-green-200 rounded-2xl p-6 mb-10">
-          <Languages className="h-7 w-7 text-green-600 flex-shrink-0 mt-0.5" />
-          <p className="text-gray-700">
+        <div className="flex items-start gap-4 bg-green-50 dark:bg-green-950 border border-green-200 dark:border-green-800 rounded-2xl p-6 mb-10">
+          <Languages className="h-7 w-7 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
+          <p className="text-gray-700 dark:text-gray-200">
             Các tiểu bang dưới đây cho phép làm{" "}
             <strong>bài thi viết thật bằng tiếng Việt</strong> tại DMV. Bạn có
             thể ôn bằng tiếng Việt với TigerTest rồi thi thật bằng tiếng Việt.
@@ -118,13 +118,13 @@ export default function VietnamesePracticeTestsByStatePage() {
             <Link
               key={state.slug}
               href={`/vi/${state.slug}-thi-thu-dmv`}
-              className="flex items-center justify-between bg-gray-50 border border-gray-200 rounded-lg p-3 hover:border-brand-border hover:bg-brand-light transition-colors group"
+              className="flex items-center justify-between bg-gray-50 dark:bg-gray-950 border border-gray-200 dark:border-gray-800 rounded-lg p-3 hover:border-brand-border hover:bg-brand-light transition-colors group"
             >
               <div>
-                <span className="font-medium text-gray-900 group-hover:text-brand-dark">
+                <span className="font-medium text-gray-900 dark:text-gray-50 group-hover:text-brand-dark">
                   {state.name}
                 </span>
-                <span className="text-sm text-gray-500 ml-2">
+                <span className="text-sm text-gray-500 dark:text-gray-400 ml-2">
                   {state.writtenTestQuestions} câu &middot; {state.passingScore}
                   %
                 </span>
@@ -135,11 +135,11 @@ export default function VietnamesePracticeTestsByStatePage() {
         </div>
 
         {/* Summary Section */}
-        <div className="bg-gray-50 rounded-2xl p-6 md:p-8 mb-12">
-          <h2 className="text-xl font-bold text-gray-900 mb-4">
+        <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-6 md:p-8 mb-12">
+          <h2 className="text-xl font-bold text-gray-900 dark:text-gray-50 mb-4">
             Về Bài Thi Thử Theo Tiểu Bang Của TigerTest
           </h2>
-          <div className="text-gray-600 space-y-3">
+          <div className="text-gray-600 dark:text-gray-300 space-y-3">
             <p>
               Mỗi tiểu bang có luật giao thông, hình thức thi và điểm đậu khác
               nhau. TigerTest có <strong>200 câu hỏi cho mỗi tiểu bang</strong>,

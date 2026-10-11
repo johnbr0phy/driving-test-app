@@ -308,8 +308,8 @@ export default async function VietnameseStateDMVPage({ params }: PageProps) {
   ];
 
   return (
-    <div className="flex-1 bg-white relative">
-      <div className="absolute inset-x-0 top-0 h-72 bg-gradient-to-b from-brand-light to-white pointer-events-none" />
+    <div className="flex-1 bg-white dark:bg-gray-900 relative">
+      <div className="absolute inset-x-0 top-0 h-72 bg-gradient-to-b from-brand-light to-white dark:to-transparent pointer-events-none" />
 
       <script
         type="application/ld+json"
@@ -330,7 +330,7 @@ export default async function VietnameseStateDMVPage({ params }: PageProps) {
 
       <div className="relative container mx-auto px-4 py-8 md:py-12 max-w-4xl">
         {/* Breadcrumb */}
-        <nav className="text-sm text-gray-500 mb-6" aria-label="Breadcrumb">
+        <nav className="text-sm text-gray-500 dark:text-gray-400 mb-6" aria-label="Breadcrumb">
           <ol className="flex items-center gap-1 flex-wrap">
             <li>
               <Link href="/" className="hover:text-brand">
@@ -351,16 +351,16 @@ export default async function VietnameseStateDMVPage({ params }: PageProps) {
             <li>
               <ChevronRight className="h-3 w-3 inline" />
             </li>
-            <li className="text-gray-900 font-medium">{state.name}</li>
+            <li className="text-gray-900 dark:text-gray-50 font-medium">{state.name}</li>
           </ol>
         </nav>
 
         {/* Hero */}
         <div className="text-center mb-12">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-gray-50 mb-6">
             Thi Thử DMV {state.name} Miễn Phí 2026
           </h1>
-          <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
             Đậu bài thi viết của {state.dmvName} {state.name} ngay lần thi đầu
             tiên. Luyện với 200 câu hỏi tiếng Việt dành riêng cho {state.name},
             dựa trên cẩm nang lái xe chính thức.
@@ -368,7 +368,7 @@ export default async function VietnameseStateDMVPage({ params }: PageProps) {
           <Link href={`/signup?state=${state.code}`}>
             <Button
               size="lg"
-              className="text-lg px-8 py-6 bg-gray-900 text-white hover:bg-gray-800 font-bold rounded-xl"
+              className="text-lg px-8 py-6 bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 font-bold rounded-xl"
             >
               Bắt Đầu Luyện Thi Miễn Phí
             </Button>
@@ -376,15 +376,15 @@ export default async function VietnameseStateDMVPage({ params }: PageProps) {
         </div>
 
         {/* Vietnamese-language availability callout */}
-        <Card className="mb-12 border-green-200 bg-green-50">
+        <Card className="mb-12 border-green-200 dark:border-green-800 bg-green-50 dark:bg-green-950">
           <CardContent className="p-6 md:p-8">
             <div className="flex items-start gap-4">
-              <Languages className="h-8 w-8 text-green-600 flex-shrink-0 mt-1" />
+              <Languages className="h-8 w-8 text-green-600 dark:text-green-400 flex-shrink-0 mt-1" />
               <div>
-                <h2 className="text-xl font-bold text-gray-900 mb-2">
+                <h2 className="text-xl font-bold text-gray-900 dark:text-gray-50 mb-2">
                   Bài thi thật ở {state.name} có tiếng Việt
                 </h2>
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-200">
                   {state.dmvName} của {state.name} cho phép làm bài thi viết
                   (knowledge test) <strong>bằng tiếng Việt</strong>. Bạn có thể
                   ôn luyện bằng tiếng Việt với TigerTest rồi thi thật bằng
@@ -400,40 +400,40 @@ export default async function VietnameseStateDMVPage({ params }: PageProps) {
           <Card className="bg-gradient-to-br from-brand-light to-brand-gradient-to border-brand-border-light">
             <CardContent className="p-4 md:p-6 text-center">
               <FileText className="h-6 w-6 md:h-8 md:w-8 text-brand mx-auto mb-2" />
-              <div className="text-2xl md:text-3xl font-bold text-gray-900 mb-1">
+              <div className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 mb-1">
                 {state.writtenTestQuestions}
               </div>
-              <div className="text-sm text-gray-600">Câu Hỏi Trong Bài Thi</div>
+              <div className="text-sm text-gray-600 dark:text-gray-300">Câu Hỏi Trong Bài Thi</div>
             </CardContent>
           </Card>
 
           <Card className="bg-gradient-to-br from-brand-light to-brand-gradient-to border-brand-border-light">
             <CardContent className="p-4 md:p-6 text-center">
               <Target className="h-6 w-6 md:h-8 md:w-8 text-brand mx-auto mb-2" />
-              <div className="text-2xl md:text-3xl font-bold text-gray-900 mb-1">
+              <div className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 mb-1">
                 {state.passingScore}%
               </div>
-              <div className="text-sm text-gray-600">Điểm Để Đậu</div>
+              <div className="text-sm text-gray-600 dark:text-gray-300">Điểm Để Đậu</div>
             </CardContent>
           </Card>
 
           <Card className="bg-gradient-to-br from-brand-light to-brand-gradient-to border-brand-border-light">
             <CardContent className="p-4 md:p-6 text-center">
               <Clock className="h-6 w-6 md:h-8 md:w-8 text-brand mx-auto mb-2" />
-              <div className="text-2xl md:text-3xl font-bold text-gray-900 mb-1">
+              <div className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 mb-1">
                 {state.minPermitAge}
               </div>
-              <div className="text-sm text-gray-600">Tuổi Tối Thiểu Lấy Permit</div>
+              <div className="text-sm text-gray-600 dark:text-gray-300">Tuổi Tối Thiểu Lấy Permit</div>
             </CardContent>
           </Card>
 
           <Card className="bg-gradient-to-br from-brand-light to-brand-gradient-to border-brand-border-light">
             <CardContent className="p-4 md:p-6 text-center">
               <AlertCircle className="h-6 w-6 md:h-8 md:w-8 text-brand mx-auto mb-2" />
-              <div className="text-2xl md:text-3xl font-bold text-gray-900 mb-1">
+              <div className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 mb-1">
                 {rawPassing}/{state.writtenTestQuestions}
               </div>
-              <div className="text-sm text-gray-600">Câu Đúng Để Đậu</div>
+              <div className="text-sm text-gray-600 dark:text-gray-300">Câu Đúng Để Đậu</div>
             </CardContent>
           </Card>
         </div>
@@ -441,16 +441,16 @@ export default async function VietnameseStateDMVPage({ params }: PageProps) {
         {/* State-Specific Content Section */}
         <Card className="mb-12">
           <CardContent className="p-6 md:p-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-50 mb-6">
               Bài Thi Viết Của {state.dmvName} {state.name}: Những Điều Cần Biết
             </h2>
 
             <div className="space-y-6">
               <div>
-                <h3 className="font-semibold text-lg text-gray-900 mb-2">
+                <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">
                   Hình Thức Bài Thi
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-gray-600 dark:text-gray-300">
                   Bài thi viết của {state.dmvName} {state.name} gồm{" "}
                   <strong>
                     {state.writtenTestQuestions} câu hỏi trắc nghiệm
@@ -465,10 +465,10 @@ export default async function VietnameseStateDMVPage({ params }: PageProps) {
               </div>
 
               <div>
-                <h3 className="font-semibold text-lg text-gray-900 mb-2">
+                <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">
                   Tuổi Tối Thiểu Và Điều Kiện
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-gray-600 dark:text-gray-300">
                   Bạn phải từ <strong>{state.minPermitAge}</strong> trở lên để
                   xin giấy phép tập lái ở {state.name}. Bạn cần đậu bài thi
                   viết và bài kiểm tra thị lực trước khi được cấp giấy phép.
@@ -476,31 +476,31 @@ export default async function VietnameseStateDMVPage({ params }: PageProps) {
               </div>
 
               <div>
-                <h3 className="font-semibold text-lg text-gray-900 mb-2">
+                <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">
                   Nếu Bạn Rớt
                 </h3>
-                <p className="text-gray-600">{landingInfo.retakeInfo}</p>
+                <p className="text-gray-600 dark:text-gray-300">{landingInfo.retakeInfo}</p>
               </div>
 
               <div>
-                <h3 className="font-semibold text-lg text-gray-900 mb-2">
+                <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">
                   Quy Định Riêng Của {state.name}
                 </h3>
                 <ul className="space-y-2">
                   {landingInfo.notableRules.map((rule, index) => (
                     <li key={index} className="flex items-start gap-3">
-                      <CheckCircle2 className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
-                      <span className="text-gray-600">{rule}</span>
+                      <CheckCircle2 className="h-5 w-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
+                      <span className="text-gray-600 dark:text-gray-300">{rule}</span>
                     </li>
                   ))}
                 </ul>
               </div>
 
               <div>
-                <h3 className="font-semibold text-lg text-gray-900 mb-2">
+                <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">
                   Cẩm Nang Lái Xe Chính Thức
                 </h3>
-                <p className="text-gray-600 mb-3">
+                <p className="text-gray-600 dark:text-gray-300 mb-3">
                   Học <strong>{landingInfo.handbookName}</strong> để chuẩn bị
                   cho bài thi viết. Các câu hỏi luyện thi của TigerTest đều dựa
                   trên nội dung cẩm nang này.
@@ -523,42 +523,42 @@ export default async function VietnameseStateDMVPage({ params }: PageProps) {
         {/* What's Included */}
         <Card className="mb-12">
           <CardContent className="p-6 md:p-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-50 mb-6">
               Bài Thi Thử {state.name} Của Chúng Tôi Có Gì
             </h2>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <CheckCircle2 className="h-6 w-6 text-green-600 flex-shrink-0 mt-0.5" />
-                <span className="text-gray-700">
+                <CheckCircle2 className="h-6 w-6 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
+                <span className="text-gray-700 dark:text-gray-200">
                   <strong>200 câu hỏi luyện thi</strong> bao quát mọi chủ đề
                   trong bài thi viết của {state.dmvName}, kể cả luật riêng của{" "}
                   {state.name}
                 </span>
               </li>
               <li className="flex items-start gap-3">
-                <CheckCircle2 className="h-6 w-6 text-green-600 flex-shrink-0 mt-0.5" />
-                <span className="text-gray-700">
+                <CheckCircle2 className="h-6 w-6 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
+                <span className="text-gray-700 dark:text-gray-200">
                   <strong>4 bài thi thử đầy đủ</strong>, mỗi bài 50 câu, mô
                   phỏng trải nghiệm thi thật tại {state.dmvName}
                 </span>
               </li>
               <li className="flex items-start gap-3">
-                <CheckCircle2 className="h-6 w-6 text-green-600 flex-shrink-0 mt-0.5" />
-                <span className="text-gray-700">
+                <CheckCircle2 className="h-6 w-6 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
+                <span className="text-gray-700 dark:text-gray-200">
                   <strong>Chế độ ôn luyện</strong> với phản hồi ngay lập tức và
                   giải thích chi tiết cho từng đáp án
                 </span>
               </li>
               <li className="flex items-start gap-3">
-                <CheckCircle2 className="h-6 w-6 text-green-600 flex-shrink-0 mt-0.5" />
-                <span className="text-gray-700">
+                <CheckCircle2 className="h-6 w-6 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
+                <span className="text-gray-700 dark:text-gray-200">
                   <strong>Theo dõi tiến độ</strong> để thấy khả năng đậu của bạn
                   tăng dần trong lúc ôn
                 </span>
               </li>
               <li className="flex items-start gap-3">
-                <CheckCircle2 className="h-6 w-6 text-green-600 flex-shrink-0 mt-0.5" />
-                <span className="text-gray-700">
+                <CheckCircle2 className="h-6 w-6 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
+                <span className="text-gray-700 dark:text-gray-200">
                   <strong>Dùng tốt trên điện thoại</strong> — học trên giường,
                   trên ghế sofa hay bất cứ đâu
                 </span>
@@ -579,7 +579,7 @@ export default async function VietnameseStateDMVPage({ params }: PageProps) {
           <Link href={`/signup?state=${state.code}`}>
             <Button
               size="lg"
-              className="text-lg px-8 py-6 bg-white text-brand-dark hover:bg-gray-100 font-bold rounded-xl"
+              className="text-lg px-8 py-6 bg-white dark:bg-gray-900 text-brand-dark hover:bg-gray-100 dark:hover:bg-gray-800 font-bold rounded-xl"
             >
               Bắt Đầu Luyện Thi Ngay — Miễn Phí
             </Button>
@@ -588,19 +588,19 @@ export default async function VietnameseStateDMVPage({ params }: PageProps) {
 
         {/* Testimonials */}
         <div className="mb-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-50 mb-6 text-center">
             Học Viên Nói Gì
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             {testimonials.map((t, i) => (
               <div
                 key={i}
-                className="bg-gray-50 border border-gray-200 rounded-xl p-5"
+                className="bg-gray-50 dark:bg-gray-950 border border-gray-200 dark:border-gray-800 rounded-xl p-5"
               >
-                <p className="text-gray-800 mb-3 italic">
+                <p className="text-gray-800 dark:text-gray-100 mb-3 italic">
                   &quot;{t.quote}&quot;
                 </p>
-                <p className="text-gray-500 text-sm">{t.author}</p>
+                <p className="text-gray-500 dark:text-gray-400 text-sm">{t.author}</p>
               </div>
             ))}
           </div>
@@ -608,16 +608,16 @@ export default async function VietnameseStateDMVPage({ params }: PageProps) {
 
         {/* FAQ Section */}
         <div className="mb-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-50 mb-6">
             Câu Hỏi Thường Gặp Về Bài Thi DMV {state.name}
           </h2>
           <div className="space-y-6">
             {faqItems.map((item, i) => (
               <div key={i}>
-                <h3 className="font-semibold text-lg text-gray-900 mb-2">
+                <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">
                   {item.question}
                 </h3>
-                <p className="text-gray-600">{item.answer}</p>
+                <p className="text-gray-600 dark:text-gray-300">{item.answer}</p>
               </div>
             ))}
           </div>
@@ -626,7 +626,7 @@ export default async function VietnameseStateDMVPage({ params }: PageProps) {
         {/* Related State Pages */}
         {neighboringStates.length > 0 && (
           <div className="mb-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-50 mb-6">
               Bài Thi Thử Của Các Tiểu Bang Lân Cận
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
@@ -636,9 +636,9 @@ export default async function VietnameseStateDMVPage({ params }: PageProps) {
                     <Link
                       key={neighbor.slug}
                       href={`/vi/${neighbor.slug}-thi-thu-dmv`}
-                      className="flex items-center justify-between bg-gray-50 border border-gray-200 rounded-xl p-4 hover:border-brand-border hover:bg-brand-light transition-colors"
+                      className="flex items-center justify-between bg-gray-50 dark:bg-gray-950 border border-gray-200 dark:border-gray-800 rounded-xl p-4 hover:border-brand-border hover:bg-brand-light transition-colors"
                     >
-                      <span className="font-medium text-gray-900">
+                      <span className="font-medium text-gray-900 dark:text-gray-50">
                         {neighbor.name}
                       </span>
                       <ChevronRight className="h-4 w-4 text-gray-400" />
@@ -651,18 +651,18 @@ export default async function VietnameseStateDMVPage({ params }: PageProps) {
 
         {/* Final CTA */}
         <div className="text-center py-8">
-          <p className="text-gray-600 mb-4">
+          <p className="text-gray-600 dark:text-gray-300 mb-4">
             Sẵn sàng bắt đầu ôn cho bài thi lấy giấy phép ở {state.name}?
           </p>
           <Link href={`/signup?state=${state.code}`}>
             <Button
               size="lg"
-              className="text-lg px-8 py-6 bg-gray-900 text-white hover:bg-gray-800 font-bold rounded-xl"
+              className="text-lg px-8 py-6 bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 font-bold rounded-xl"
             >
               Bắt Đầu Luyện Thi Miễn Phí
             </Button>
           </Link>
-          <p className="text-sm text-gray-500 mt-3">
+          <p className="text-sm text-gray-500 dark:text-gray-400 mt-3">
             Không cần tài khoản. Bắt đầu miễn phí.
           </p>
         </div>

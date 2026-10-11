@@ -95,13 +95,13 @@ export function ExamStatsPage({ exam }: { exam: ExamConfig }) {
 
   const chipFor = (item: QuestionWithPerformance) => {
     if (sortField === "wrong") {
-      return { value: `${item.wrong}`, label: t("stats.wrongLabel"), color: item.wrong > 0 ? "text-red-600" : "text-gray-300" };
+      return { value: `${item.wrong}`, label: t("stats.wrongLabel"), color: item.wrong > 0 ? "text-red-600 dark:text-red-400" : "text-gray-300" };
     }
     if (sortField === "correct") {
-      return { value: `${item.correct}`, label: t("stats.correctLabel"), color: item.correct > 0 ? "text-green-600" : "text-gray-300" };
+      return { value: `${item.correct}`, label: t("stats.correctLabel"), color: item.correct > 0 ? "text-green-600 dark:text-green-400" : "text-gray-300" };
     }
     if (sortField === "timesAnswered") {
-      return { value: `${item.timesAnswered}`, label: t("stats.answered"), color: item.timesAnswered > 0 ? "text-gray-700" : "text-gray-300" };
+      return { value: `${item.timesAnswered}`, label: t("stats.answered"), color: item.timesAnswered > 0 ? "text-gray-700 dark:text-gray-200" : "text-gray-300" };
     }
     if (item.timesAnswered === 0) {
       return { value: "–", label: t("stats.accuracy"), color: "text-gray-300" };
@@ -109,7 +109,7 @@ export function ExamStatsPage({ exam }: { exam: ExamConfig }) {
     return {
       value: `${item.accuracy}%`,
       label: t("stats.accuracy"),
-      color: item.accuracy === 100 ? "text-green-600" : item.accuracy >= 50 ? "text-yellow-600" : "text-red-500",
+      color: item.accuracy === 100 ? "text-green-600 dark:text-green-400" : item.accuracy >= 50 ? "text-yellow-600 dark:text-yellow-400" : "text-red-500 dark:text-red-400",
     };
   };
 
@@ -118,20 +118,20 @@ export function ExamStatsPage({ exam }: { exam: ExamConfig }) {
   const answeredCount = questionsWithPerformance.filter((q) => q.timesAnswered > 0).length;
 
   return (
-    <div className="flex-1 bg-gray-50">
+    <div className="flex-1 bg-gray-50 dark:bg-gray-950">
       <div className="relative">
         <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-light to-transparent pointer-events-none" />
         <div className="relative container mx-auto px-4 py-6 max-w-3xl">
           <Link
             href={routes.dashboard}
-            className="inline-flex items-center gap-1.5 text-sm text-gray-500 hover:text-gray-700 mb-4"
+            className="inline-flex items-center gap-1.5 text-sm text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 mb-4"
           >
             <ArrowLeft className="h-4 w-4" /> {t("common.back")}
           </Link>
 
-          <div className="rounded-xl bg-white border border-gray-100 p-4 mb-6">
-            <h1 className="text-lg font-bold text-gray-900">{t("stats.yourStats")}</h1>
-            <p className="text-xs text-gray-500 mt-0.5">
+          <div className="rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 p-4 mb-6">
+            <h1 className="text-lg font-bold text-gray-900 dark:text-gray-50">{t("stats.yourStats")}</h1>
+            <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">
               {answeredCount} of {examQuestions.length} {exam.shortName} questions seen. Tap any row to answer it again.
             </p>
           </div>
@@ -150,7 +150,7 @@ export function ExamStatsPage({ exam }: { exam: ExamConfig }) {
                 className={`whitespace-nowrap text-sm px-3 py-1.5 rounded-full border transition-colors ${
                   sortField === field
                     ? "bg-brand-light border-brand-border text-brand-dark font-medium"
-                    : "bg-white border-gray-200 text-gray-600"
+                    : "bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-800 text-gray-600 dark:text-gray-300"
                 }`}
               >
                 {label}
@@ -178,19 +178,19 @@ export function ExamStatsPage({ exam }: { exam: ExamConfig }) {
                   onAnswer={(correct) => trackDailyQuizAnswer(correct, `stats_${exam.copy.analyticsKey}`)}
                   renderFooter={({ answered }) => (
                     <div className="pt-1 px-1 space-y-1.5">
-                      <div className="flex items-center gap-4 text-xs text-gray-500">
+                      <div className="flex items-center gap-4 text-xs text-gray-500 dark:text-gray-400">
                         <span>
-                          {t("stats.answered")}: <span className="font-semibold text-gray-700">{item.timesAnswered}</span>
+                          {t("stats.answered")}: <span className="font-semibold text-gray-700 dark:text-gray-200">{item.timesAnswered}</span>
                         </span>
                         <span>
-                          {t("stats.correctLabel")}: <span className="font-semibold text-green-600">{item.correct}</span>
+                          {t("stats.correctLabel")}: <span className="font-semibold text-green-600 dark:text-green-400">{item.correct}</span>
                         </span>
                         <span>
-                          {t("stats.wrongLabel")}: <span className="font-semibold text-red-600">{item.wrong}</span>
+                          {t("stats.wrongLabel")}: <span className="font-semibold text-red-600 dark:text-red-400">{item.wrong}</span>
                         </span>
                       </div>
                       {answered && item.question.explanation && (
-                        <p className="text-xs text-gray-500 leading-relaxed animate-in fade-in duration-300">
+                        <p className="text-xs text-gray-500 dark:text-gray-400 leading-relaxed animate-in fade-in duration-300">
                           {item.question.explanation}
                         </p>
                       )}

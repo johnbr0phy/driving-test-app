@@ -110,14 +110,14 @@ export default function CreateSchoolPage() {
   // Show loading while checking auth
   if (authLoading || !user) {
     return (
-      <div className="min-h-screen bg-gradient-to-b from-brand-light to-white flex items-center justify-center">
+      <div className="min-h-screen bg-gradient-to-b from-brand-light to-white dark:to-transparent flex items-center justify-center">
         <Loader2 className="h-8 w-8 animate-spin text-brand" />
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-brand-light to-white flex items-center justify-center px-4 py-8">
+    <div className="min-h-screen bg-gradient-to-b from-brand-light to-white dark:to-transparent flex items-center justify-center px-4 py-8">
       <div className="w-full max-w-md">
 
         <Card>
@@ -128,7 +128,7 @@ export default function CreateSchoolPage() {
             </CardDescription>
           </CardHeader>
           <CardContent>
-            <div className="bg-blue-50 border border-blue-200 text-blue-800 px-4 py-3 rounded-lg mb-4 text-sm">
+            <div className="bg-blue-50 dark:bg-blue-950 border border-blue-200 dark:border-blue-800 text-blue-800 dark:text-blue-300 px-4 py-3 rounded-lg mb-4 text-sm">
               Signed in as <strong>{user.email}</strong>. This will be your school&apos;s contact email.
             </div>
 
@@ -163,7 +163,7 @@ export default function CreateSchoolPage() {
               </div>
 
               {error && (
-                <p className="text-sm text-red-600 bg-red-50 border border-red-200 rounded px-3 py-2">
+                <p className="text-sm text-red-600 dark:text-red-400 bg-red-50 dark:bg-red-950 border border-red-200 dark:border-red-800 rounded px-3 py-2">
                   {error}
                 </p>
               )}
@@ -184,7 +184,7 @@ export default function CreateSchoolPage() {
               </Button>
             </form>
 
-            <p className="text-center text-sm text-gray-500 mt-4">
+            <p className="text-center text-sm text-gray-500 dark:text-gray-400 mt-4">
               Already have a school?{" "}
               <Link href="/schools/dashboard" className="text-brand hover:underline font-medium">
                 Go to dashboard
@@ -195,7 +195,7 @@ export default function CreateSchoolPage() {
 
         <p className="text-center text-xs text-gray-400 mt-6">
           Free plan includes unlimited student invites. Students practice for free.{" "}
-          <Link href="/schools" className="underline hover:text-gray-600">
+          <Link href="/schools" className="underline hover:text-gray-600 dark:hover:text-gray-300">
             See plans
           </Link>
         </p>

@@ -104,7 +104,7 @@ export function ShareButton({
   return (
     <div className="relative">
       <Button
-        className={className || "bg-white text-black hover:bg-gray-100 border-2 border-gray-300 flex-1 sm:flex-initial"}
+        className={className || "bg-white dark:bg-gray-900 text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 border-2 border-gray-300 dark:border-gray-700 flex-1 sm:flex-initial"}
         onClick={handleShare}
         disabled={loading}
       >
@@ -116,7 +116,7 @@ export function ShareButton({
         ) : label}
       </Button>
       {error && (
-        <div className="absolute top-full mt-2 left-1/2 -translate-x-1/2 whitespace-nowrap text-sm text-red-600 bg-red-50 border border-red-200 rounded-md px-3 py-1">
+        <div className="absolute top-full mt-2 left-1/2 -translate-x-1/2 whitespace-nowrap text-sm text-red-600 dark:text-red-400 bg-red-50 dark:bg-red-950 border border-red-200 dark:border-red-800 rounded-md px-3 py-1">
           {error}
         </div>
       )}

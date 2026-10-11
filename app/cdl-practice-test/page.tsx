@@ -106,7 +106,7 @@ const jsonLd = {
 
 export default function CDLLandingPage() {
   return (
-    <div data-theme="cdl" className="flex-1 bg-white">
+    <div data-theme="cdl" className="flex-1 bg-white dark:bg-gray-900">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -115,9 +115,9 @@ export default function CDLLandingPage() {
 
       {/* Hero Section */}
       <div className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28 text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 tracking-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-gray-50 mb-6 tracking-tight">
             Free CDL Practice Test 2026 - General Knowledge
           </h1>
           <ExamLandingHero
@@ -131,20 +131,20 @@ export default function CDLLandingPage() {
 
       {/* How it works */}
       <div id="how-it-works" className="max-w-5xl mx-auto px-6 pt-8 pb-16 md:pt-12 md:pb-24">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-16">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-16">
           How It Works
         </h2>
 
         <div className="grid md:grid-cols-2 gap-8 md:gap-12">
           <div className="relative pt-8">
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16 bg-white border-2 border-brand-border-light rounded-full flex items-center justify-center shadow-sm">
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16 bg-white dark:bg-gray-900 border-2 border-brand-border-light rounded-full flex items-center justify-center shadow-sm">
               <Smartphone className="w-7 h-7 text-brand" />
             </div>
-            <div className="bg-gray-50 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+            <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">
                 Training Mode
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 dark:text-gray-300">
                 Learn CDL questions on your phone anywhere. Study vehicle inspection, 
                 braking systems, and cargo handling with instant feedback after each answer.
               </p>
@@ -152,14 +152,14 @@ export default function CDLLandingPage() {
           </div>
 
           <div className="relative pt-8">
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16 bg-white border-2 border-gray-200 rounded-full flex items-center justify-center shadow-sm">
-              <Monitor className="w-7 h-7 text-gray-500" />
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16 bg-white dark:bg-gray-900 border-2 border-gray-200 dark:border-gray-800 rounded-full flex items-center justify-center shadow-sm">
+              <Monitor className="w-7 h-7 text-gray-500 dark:text-gray-400" />
             </div>
-            <div className="bg-gray-50 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+            <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">
                 Practice Tests
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 dark:text-gray-300">
                 Take full 50-question tests that simulate the real CDL exam. 
                 Practice under test conditions to build confidence for exam day.
               </p>
@@ -169,12 +169,12 @@ export default function CDLLandingPage() {
       </div>
 
       {/* Testimonial */}
-      <div className="bg-gray-50 py-12">
+      <div className="bg-gray-50 dark:bg-gray-950 py-12">
         <div className="max-w-2xl mx-auto px-6 text-center">
-          <p className="text-xl md:text-2xl text-gray-700 italic mb-4">
+          <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-200 italic mb-4">
             &quot;Passed my CDL test on the first try after using TigerTest for just one week&quot;
           </p>
-          <p className="text-gray-500 text-sm">TruckDriver2024</p>
+          <p className="text-gray-500 dark:text-gray-400 text-sm">TruckDriver2024</p>
         </div>
       </div>
 
@@ -182,15 +182,15 @@ export default function CDLLandingPage() {
       <div className="max-w-5xl mx-auto px-6 py-16 md:py-24">
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
           <div className="flex-1">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">
               CDL Questions Based on Federal Standards
             </h2>
-            <p className="text-lg text-gray-600 mb-4">
+            <p className="text-lg text-gray-600 dark:text-gray-300 mb-4">
               Unlike state driving tests, CDL requirements are federally regulated. 
               Our questions cover the exact topics from the official CDL manual that 
               appears on your actual test.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-600">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-600 dark:text-gray-300">
               <div className="flex items-start gap-2">
                 <div className="w-2 h-2 bg-brand rounded-full mt-2 flex-shrink-0"></div>
                 <span>Vehicle Inspection</span>
@@ -232,10 +232,10 @@ export default function CDLLandingPage() {
       {/* Just Launched CTA */}
       <div className="max-w-3xl mx-auto px-6 py-16 md:py-24 text-center">
         <div className="bg-brand-light border border-brand-border-light rounded-2xl p-8 md:p-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4">
             We Just Launched!
           </h2>
-          <p className="text-lg text-gray-600 mb-6 max-w-xl mx-auto">
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 max-w-xl mx-auto">
             Our CDL practice tests are brand new and we&apos;d love your feedback. 
             Try a test and let us know what you think.
           </p>
@@ -251,15 +251,15 @@ export default function CDLLandingPage() {
       </div>
 
       {/* How to Study for CDL */}
-      <div className="bg-gray-50 py-16 md:py-24">
+      <div className="bg-gray-50 dark:bg-gray-950 py-16 md:py-24">
         <div className="max-w-3xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-12">
             How to Pass Your CDL General Knowledge Test
           </h2>
 
-          <div className="space-y-8 text-gray-600">
+          <div className="space-y-8 text-gray-600 dark:text-gray-300">
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">
                 1. Study the CDL Manual Thoroughly
               </h3>
               <p>
@@ -270,7 +270,7 @@ export default function CDLLandingPage() {
             </div>
 
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">
                 2. Master Vehicle Inspection Procedures
               </h3>
               <p>
@@ -281,7 +281,7 @@ export default function CDLLandingPage() {
             </div>
 
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">
                 3. Practice with Realistic Test Conditions
               </h3>
               <p>
@@ -292,7 +292,7 @@ export default function CDLLandingPage() {
             </div>
 
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">
                 4. Focus on Your Weak Areas
               </h3>
               <p>
@@ -307,16 +307,16 @@ export default function CDLLandingPage() {
 
       {/* FAQ Section */}
       <div className="max-w-3xl mx-auto px-6 py-16 md:py-24">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-12">
           CDL Test Frequently Asked Questions
         </h2>
 
         <div className="space-y-8">
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 mb-2">
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">
               How many questions are on the CDL general knowledge test?
             </h3>
-            <p className="text-gray-600">
+            <p className="text-gray-600 dark:text-gray-300">
               The CDL general knowledge test typically has 50 questions, and you need to answer 
               40 correctly (80%) to pass. TigerTest offers 600 practice questions to ensure 
               you&apos;re fully prepared for every possible question topic.
@@ -324,20 +324,20 @@ export default function CDLLandingPage() {
           </div>
 
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 mb-2">
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">
               Is TigerTest CDL practice test free?
             </h3>
-            <p className="text-gray-600">
+            <p className="text-gray-600 dark:text-gray-300">
               Yes! You can take all six CDL practice tests and every training set completely free. 
               No hidden costs, premium requirements, or account registration needed.
             </p>
           </div>
 
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 mb-2">
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">
               What topics are covered in the CDL practice test?
             </h3>
-            <p className="text-gray-600">
+            <p className="text-gray-600 dark:text-gray-300">
               Our CDL practice tests cover vehicle inspection procedures, safe driving practices, 
               braking systems (including air brakes), cargo handling and securement, hazmat basics, 
               and all other topics from the official federal CDL manual.
@@ -345,10 +345,10 @@ export default function CDLLandingPage() {
           </div>
 
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 mb-2">
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">
               How should I study for the CDL general knowledge test?
             </h3>
-            <p className="text-gray-600">
+            <p className="text-gray-600 dark:text-gray-300">
               Start with TigerTest&apos;s training mode to learn questions with instant feedback. 
               Complete all six topic training sets, focusing on weak areas. Then take the practice tests 
               to simulate the real exam. Most successful candidates score 80%+ consistently 
@@ -357,10 +357,10 @@ export default function CDLLandingPage() {
           </div>
 
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 mb-2">
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">
               Do I need a CDL permit before taking the general knowledge test?
             </h3>
-            <p className="text-gray-600">
+            <p className="text-gray-600 dark:text-gray-300">
               No, the general knowledge test is typically the first step in getting your CDL permit. 
               After passing the general knowledge test and any required endorsement tests, 
               you&apos;ll receive your Commercial Learner&apos;s Permit (CLP), which allows you to practice driving.
@@ -368,10 +368,10 @@ export default function CDLLandingPage() {
           </div>
 
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 mb-2">
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">
               How long should I study before taking the CDL test?
             </h3>
-            <p className="text-gray-600">
+            <p className="text-gray-600 dark:text-gray-300">
               Most successful candidates study for 1-2 weeks using TigerTest. Complete all six training 
               sets (about 30-45 minutes each), then take practice tests until you consistently score 
               80% or higher. Some people need only a few days, others prefer 2-3 weeks of preparation.
@@ -384,10 +384,10 @@ export default function CDLLandingPage() {
 
       {/* Final CTA */}
       <div className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-t from-brand-light to-white pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-t from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Ready to Get Your CDL?</h2>
-          <p className="text-lg text-gray-600 mb-10">Free to start. No account required. 600 questions covering all CDL topics.</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">Ready to Get Your CDL?</h2>
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Free to start. No account required. 600 questions covering all CDL topics.</p>
           <ExamLandingCTA dashboardHref="/cdl/dashboard" />
         </div>
       </div>

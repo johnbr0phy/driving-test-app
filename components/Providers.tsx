@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { usePathname } from "next/navigation";
 import { AuthProvider, useAuth } from "@/contexts/AuthContext";
 import { LanguageProvider } from "@/contexts/LanguageContext";
+import { ThemeProvider } from "@/contexts/ThemeContext";
 import { useStore } from "@/store/useStore";
 import { trackFunnelStep } from "@/lib/funnel";
 
@@ -39,12 +40,14 @@ function FunnelVisit() {
 
 export function Providers({ children }: { children: React.ReactNode }) {
   return (
-    <LanguageProvider>
-      <AuthProvider>
-        {children}
-        <PremiumTheme />
-        <FunnelVisit />
-      </AuthProvider>
-    </LanguageProvider>
+    <ThemeProvider>
+      <LanguageProvider>
+        <AuthProvider>
+          {children}
+          <PremiumTheme />
+          <FunnelVisit />
+        </AuthProvider>
+      </LanguageProvider>
+    </ThemeProvider>
   );
 }

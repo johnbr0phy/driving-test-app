@@ -22,7 +22,7 @@ export function CommunityWrongQuestions({ isPremium, onUpgradeClick }: Props) {
     return (
       <div className="space-y-3">
         {[1, 2, 3].map((i) => (
-          <div key={i} className="h-16 bg-gray-100 rounded-xl animate-pulse" />
+          <div key={i} className="h-16 bg-gray-100 dark:bg-gray-800 rounded-xl animate-pulse" />
         ))}
       </div>
     );
@@ -43,9 +43,9 @@ export function CommunityWrongQuestions({ isPremium, onUpgradeClick }: Props) {
 
   return (
     <div className="space-y-4">
-      <p className="text-sm text-gray-500">
+      <p className="text-sm text-gray-500 dark:text-gray-400">
         {t("stats.basedOnAnswers")}{" "}
-        <span className="font-medium text-gray-700">
+        <span className="font-medium text-gray-700 dark:text-gray-200">
           {data.totalUsers.toLocaleString()} {t("stats.realTestTakers")}
         </span>
       </p>
@@ -66,7 +66,7 @@ export function CommunityWrongQuestions({ isPremium, onUpgradeClick }: Props) {
                     {q.wrong} {t("stats.outOf")} {q.total} {t("stats.peopleGotWrong")}
                   </p>
                   {answered && q.explanation && (
-                    <p className="text-xs text-gray-500 mt-1.5 leading-relaxed animate-in fade-in duration-300">
+                    <p className="text-xs text-gray-500 dark:text-gray-400 mt-1.5 leading-relaxed animate-in fade-in duration-300">
                       {q.explanation}
                     </p>
                   )}
@@ -90,16 +90,16 @@ export function CommunityWrongQuestions({ isPremium, onUpgradeClick }: Props) {
             aria-hidden="true"
           >
             {data.questions.slice(FREE_LIMIT, FREE_LIMIT + 4).map((q) => (
-              <div key={q.questionId} className="rounded-xl bg-white border border-gray-100 px-4 py-3 flex items-center gap-4">
+              <div key={q.questionId} className="rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 px-4 py-3 flex items-center gap-4">
                 <div className="shrink-0 text-center min-w-[3rem]">
-                  <div className="text-base font-bold text-red-500 tabular-nums leading-none">
+                  <div className="text-base font-bold text-red-500 dark:text-red-400 tabular-nums leading-none">
                     {q.errorRate}%
                   </div>
                   <div className="text-[9px] uppercase tracking-wide text-gray-400 mt-0.5">
                     {t("dashboard.dailyMissedGetWrong")}
                   </div>
                 </div>
-                <p className="flex-1 min-w-0 text-sm leading-snug font-medium text-gray-900 line-clamp-2">
+                <p className="flex-1 min-w-0 text-sm leading-snug font-medium text-gray-900 dark:text-gray-50 line-clamp-2">
                   {q.question}
                 </p>
               </div>
@@ -108,14 +108,14 @@ export function CommunityWrongQuestions({ isPremium, onUpgradeClick }: Props) {
 
           {/* Lock UI, overlaid on top of the faded cards */}
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
-            <div className="rounded-2xl bg-white/80 backdrop-blur-sm px-6 py-4 flex flex-col items-center shadow-sm border border-gray-200">
+            <div className="rounded-2xl bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm px-6 py-4 flex flex-col items-center shadow-sm border border-gray-200 dark:border-gray-800">
               <div className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-brand-light mb-2">
                 <Lock className="h-4 w-4 text-brand" />
               </div>
-              <p className="text-sm font-semibold text-gray-900 mb-1">
+              <p className="text-sm font-semibold text-gray-900 dark:text-gray-50 mb-1">
                 {lockedCount} {t("stats.questionsLocked")}
               </p>
-              <p className="text-xs text-gray-500 mb-2.5">
+              <p className="text-xs text-gray-500 dark:text-gray-400 mb-2.5">
                 {t("stats.upgradeToSeeFullList")}
               </p>
               <button

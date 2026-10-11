@@ -111,7 +111,7 @@ const endorsements = [
 
 export default function CDLEndorsementsLandingPage() {
   return (
-    <div data-theme="cdlx" className="flex-1 bg-white">
+    <div data-theme="cdlx" className="flex-1 bg-white dark:bg-gray-900">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -120,9 +120,9 @@ export default function CDLEndorsementsLandingPage() {
 
       {/* Hero */}
       <div className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28 text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 tracking-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-gray-50 mb-6 tracking-tight">
             Free CDL Endorsement Practice Tests 2026
           </h1>
           <ExamLandingHero
@@ -136,29 +136,29 @@ export default function CDLEndorsementsLandingPage() {
 
       {/* How it works */}
       <div id="how-it-works" className="max-w-5xl mx-auto px-6 pt-8 pb-16 md:pt-12 md:pb-24">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-16">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-16">
           How It Works
         </h2>
         <div className="grid md:grid-cols-2 gap-8 md:gap-12">
           <div className="relative pt-8">
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16 bg-white border-2 border-brand-border-light rounded-full flex items-center justify-center shadow-sm">
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16 bg-white dark:bg-gray-900 border-2 border-brand-border-light rounded-full flex items-center justify-center shadow-sm">
               <Smartphone className="w-7 h-7 text-brand" />
             </div>
-            <div className="bg-gray-50 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">One Training Set per Endorsement</h3>
-              <p className="text-gray-600">
+            <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">One Training Set per Endorsement</h3>
+              <p className="text-gray-600 dark:text-gray-300">
                 Adding HazMat? Train only the HazMat set. Each set is one section of the FMCSA
                 manual, and questions you miss come back until you have mastered them.
               </p>
             </div>
           </div>
           <div className="relative pt-8">
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16 bg-white border-2 border-gray-200 rounded-full flex items-center justify-center shadow-sm">
-              <Monitor className="w-7 h-7 text-gray-500" />
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16 bg-white dark:bg-gray-900 border-2 border-gray-200 dark:border-gray-800 rounded-full flex items-center justify-center shadow-sm">
+              <Monitor className="w-7 h-7 text-gray-500 dark:text-gray-400" />
             </div>
-            <div className="bg-gray-50 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Mixed Practice Tests</h3>
-              <p className="text-gray-600">
+            <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Mixed Practice Tests</h3>
+              <p className="text-gray-600 dark:text-gray-300">
                 Four 50-question tests across all five endorsements at the 80 percent pass line every
                 endorsement test uses. Good for Class A drivers stacking several at once.
               </p>
@@ -168,23 +168,23 @@ export default function CDLEndorsementsLandingPage() {
       </div>
 
       {/* Endorsements */}
-      <div className="bg-gray-50 py-16 md:py-24">
+      <div className="bg-gray-50 dark:bg-gray-950 py-16 md:py-24">
         <div className="max-w-5xl mx-auto px-6">
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
             <div className="flex-1">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">
                 Five Tests, Straight from the FMCSA Manual
               </h2>
-              <p className="text-lg text-gray-600 mb-6">
+              <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
                 Every state CDL handbook reprints the FMCSA model manual. These sets follow its
                 endorsement sections, with the real test length and pass mark for each.
               </p>
               <div className="space-y-3">
                 {endorsements.map((e) => (
-                  <div key={e.name} className="flex items-center justify-between gap-4 bg-white rounded-lg px-4 py-3 border border-gray-200">
+                  <div key={e.name} className="flex items-center justify-between gap-4 bg-white dark:bg-gray-900 rounded-lg px-4 py-3 border border-gray-200 dark:border-gray-800">
                     <div>
-                      <span className="block font-medium text-gray-900">{e.name}</span>
-                      <span className="block text-sm text-gray-500">{e.detail}</span>
+                      <span className="block font-medium text-gray-900 dark:text-gray-50">{e.name}</span>
+                      <span className="block text-sm text-gray-500 dark:text-gray-400">{e.detail}</span>
                     </div>
                     <span className="text-brand font-semibold whitespace-nowrap">{e.questions} questions</span>
                   </div>
@@ -207,8 +207,8 @@ export default function CDLEndorsementsLandingPage() {
       {/* Just launched */}
       <div className="max-w-3xl mx-auto px-6 py-16 md:py-24 text-center">
         <div className="bg-brand-light border border-brand-border-light rounded-2xl p-8 md:p-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">We Just Launched!</h2>
-          <p className="text-lg text-gray-600 mb-6 max-w-xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4">We Just Launched!</h2>
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 max-w-xl mx-auto">
             The endorsement practice tests are brand new. If a question looks wrong or you want
             doubles and triples or school bus added, tell us.
           </p>
@@ -224,14 +224,14 @@ export default function CDLEndorsementsLandingPage() {
       </div>
 
       {/* Study guide */}
-      <div className="bg-gray-50 py-16 md:py-24">
+      <div className="bg-gray-50 dark:bg-gray-950 py-16 md:py-24">
         <div className="max-w-3xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-12">
             How to Pass Your CDL Endorsement Tests
           </h2>
-          <div className="space-y-8 text-gray-600">
+          <div className="space-y-8 text-gray-600 dark:text-gray-300">
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">1. Know which tests you need</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">1. Know which tests you need</h3>
               <p>
                 Combination vehicles is required for Class A. Air brakes is not an endorsement but
                 skipping it puts an L restriction on your license. Tank (N), passenger (P) and
@@ -240,7 +240,7 @@ export default function CDLEndorsementsLandingPage() {
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">2. Learn the numbers</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">2. Learn the numbers</h3>
               <p>
                 Endorsement tests lean on figures: 125 psi governor cut-out, 60 psi low-air warning,
                 placards at 1,001 pounds, 1,000-gallon tanks, 16 passengers, 300 feet from explosives
@@ -248,7 +248,7 @@ export default function CDLEndorsementsLandingPage() {
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">3. HazMat has an extra step</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">3. HazMat has an extra step</h3>
               <p>
                 Passing the knowledge test is not enough for the H endorsement. You also need a TSA
                 security threat assessment with fingerprints, which can take several weeks, so
@@ -256,7 +256,7 @@ export default function CDLEndorsementsLandingPage() {
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">4. Drill your weak areas</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Drill your weak areas</h3>
               <p>
                 TigerTest tracks your accuracy by endorsement. After a mixed test, go back to the set
                 you missed most and retake until you clear 80 percent.
@@ -268,36 +268,36 @@ export default function CDLEndorsementsLandingPage() {
 
       {/* FAQ */}
       <div className="max-w-3xl mx-auto px-6 py-16 md:py-24">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-12">
           CDL Endorsement Test Frequently Asked Questions
         </h2>
         <div className="space-y-8">
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 mb-2">How many questions are on the CDL HazMat test?</h3>
-            <p className="text-gray-600">
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">How many questions are on the CDL HazMat test?</h3>
+            <p className="text-gray-600 dark:text-gray-300">
               30 questions in most states, 80 percent (24 correct) to pass. You also need a TSA
               security threat assessment with fingerprinting before the H endorsement is added.
             </p>
           </div>
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 mb-2">Is air brakes an endorsement?</h3>
-            <p className="text-gray-600">
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is air brakes an endorsement?</h3>
+            <p className="text-gray-600 dark:text-gray-300">
               No, it is a restriction. Skip the air brakes knowledge test, or take your skills test in a
               vehicle without air brakes, and your CDL carries an L restriction that bars you from
               air-brake vehicles. The knowledge test has 25 questions and needs 80 percent.
             </p>
           </div>
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 mb-2">Which endorsement tests do I need?</h3>
-            <p className="text-gray-600">
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Which endorsement tests do I need?</h3>
+            <p className="text-gray-600 dark:text-gray-300">
               Combination vehicles for Class A. Tank (N) for liquid or gas cargo in tanks of 1,000
               gallons or more. Passenger (P) for vehicles designed for 16 or more including the driver.
               Hazardous materials (H) for placarded loads; X combines N and H. Each test needs 80 percent.
             </p>
           </div>
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 mb-2">Is the TigerTest endorsement practice free?</h3>
-            <p className="text-gray-600">
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is the TigerTest endorsement practice free?</h3>
+            <p className="text-gray-600 dark:text-gray-300">
               Yes. All five training sets and all four mixed practice tests are free, with no account
               required. Create a free account if you want your progress saved across devices.
             </p>
@@ -309,10 +309,10 @@ export default function CDLEndorsementsLandingPage() {
 
       {/* Final CTA */}
       <div className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-t from-brand-light to-white pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-t from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Ready to Add Your Endorsements?</h2>
-          <p className="text-lg text-gray-600 mb-10">Free to start. No account required. 200 questions across five endorsements.</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">Ready to Add Your Endorsements?</h2>
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Free to start. No account required. 200 questions across five endorsements.</p>
           <ExamLandingCTA dashboardHref="/cdl-endorsements/dashboard" />
         </div>
       </div>

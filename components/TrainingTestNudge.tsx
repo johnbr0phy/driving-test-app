@@ -40,13 +40,13 @@ export function TrainingTestNudge({ trainingCorrectCount, state }: TrainingTestN
   return (
     <div className="mb-6">
       <Card
-        className="cursor-pointer border-brand-border-light bg-gradient-to-r from-brand-light via-white to-brand-gradient-to hover:shadow-md transition-all relative overflow-hidden"
+        className="cursor-pointer border-brand-border-light bg-gradient-to-r from-brand-light via-white dark:via-gray-900 to-brand-gradient-to hover:shadow-md transition-all relative overflow-hidden"
         onClick={handleTakeTest}
       >
         {/* Dismiss button */}
         <button
           onClick={handleDismiss}
-          className="absolute top-3 right-3 text-gray-400 hover:text-gray-600 z-10 p-1"
+          className="absolute top-3 right-3 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 z-10 p-1"
           aria-label="Dismiss"
         >
           <X className="h-4 w-4" />
@@ -73,7 +73,7 @@ export function TrainingTestNudge({ trainingCorrectCount, state }: TrainingTestN
                   Ready to test yourself?
                 </p>
               </div>
-              <p className="text-sm text-gray-700 leading-snug">
+              <p className="text-sm text-gray-700 dark:text-gray-200 leading-snug">
                 {getMessage()}
               </p>
               <p className="text-sm font-semibold text-brand-dark mt-2">

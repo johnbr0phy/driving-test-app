@@ -68,18 +68,18 @@ export default function SchoolsPage() {
     <>
       {/* Hero */}
       <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 py-20 text-center">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 tracking-tight">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-gray-50 mb-6 tracking-tight">
           Prepare every student.<br />Pass every time.
         </h1>
-        <p className="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
+        <p className="text-xl text-gray-600 dark:text-gray-300 mb-10 max-w-2xl mx-auto">
           TigerTest for Schools gives your students unlimited DMV practice with
           an admin dashboard so you can track who&apos;s ready — and who needs
           more time.
         </p>
         <SchoolsHeroCta />
-        <div className="mt-16 rounded-2xl overflow-hidden shadow-2xl border border-gray-200 max-w-4xl mx-auto">
+        <div className="mt-16 rounded-2xl overflow-hidden shadow-2xl border border-gray-200 dark:border-gray-800 max-w-4xl mx-auto">
           <Image
             src="/schools-dashboard-preview.png"
             alt="TigerTest school dashboard showing student progress"
@@ -94,7 +94,7 @@ export default function SchoolsPage() {
       {/* Key benefits */}
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-16">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-50 text-center mb-16">
             Why schools choose TigerTest
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -108,23 +108,23 @@ export default function SchoolsPage() {
               {
                 title: "Reusable seats",
                 desc: "When a student graduates, free up their seat for the next one. No per-student fees.",
-                icon: <RefreshCw className="w-7 h-7 text-gray-500" />,
+                icon: <RefreshCw className="w-7 h-7 text-gray-500 dark:text-gray-400" />,
                 highlight: false,
               },
               {
                 title: "Usage tracking",
                 desc: "Know exactly how your investment is being used with detailed activity reports.",
-                icon: <BarChart2 className="w-7 h-7 text-gray-500" />,
+                icon: <BarChart2 className="w-7 h-7 text-gray-500 dark:text-gray-400" />,
                 highlight: false,
               },
             ].map((item) => (
               <div key={item.title} className="relative pt-8">
-                <div className={`absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16 bg-white ${item.highlight ? "border-2 border-brand-border-light" : "border-2 border-gray-200"} rounded-full flex items-center justify-center shadow-sm`}>
+                <div className={`absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16 bg-white dark:bg-gray-900 ${item.highlight ? "border-2 border-brand-border-light" : "border-2 border-gray-200 dark:border-gray-800"} rounded-full flex items-center justify-center shadow-sm`}>
                   {item.icon}
                 </div>
-                <div className="bg-gray-50 rounded-2xl p-8 pt-12 text-center">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">{item.title}</h3>
-                  <p className="text-gray-600">{item.desc}</p>
+                <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
+                  <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">{item.title}</h3>
+                  <p className="text-gray-600 dark:text-gray-300">{item.desc}</p>
                 </div>
               </div>
             ))}
@@ -134,10 +134,10 @@ export default function SchoolsPage() {
 
       {/* Pricing */}
       <section className="py-20 max-w-5xl mx-auto px-6">
-        <h2 className="text-3xl font-bold text-gray-900 text-center mb-4">
+        <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-50 text-center mb-4">
           Simple annual pricing
         </h2>
-        <p className="text-gray-600 text-center mb-12">
+        <p className="text-gray-600 dark:text-gray-300 text-center mb-12">
           One flat rate. No per-student surprises.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -147,7 +147,7 @@ export default function SchoolsPage() {
               className={`rounded-2xl p-8 border-2 ${
                 plan.highlight
                   ? "border-brand bg-brand-light"
-                  : "border-gray-200 bg-white"
+                  : "border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900"
               }`}
             >
               {plan.highlight && (
@@ -155,23 +155,23 @@ export default function SchoolsPage() {
                   Most popular
                 </span>
               )}
-              <h3 className="text-xl font-bold text-gray-900 mb-1">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-gray-50 mb-1">
                 {plan.name}
               </h3>
               <div className="mb-1">
-                <span className="text-4xl font-bold text-gray-900">
+                <span className="text-4xl font-bold text-gray-900 dark:text-gray-50">
                   {plan.price}
                 </span>
-                <span className="text-gray-500">{plan.period}</span>
+                <span className="text-gray-500 dark:text-gray-400">{plan.period}</span>
               </div>
-              <p className="text-sm text-gray-500 mb-6">{plan.seats}</p>
+              <p className="text-sm text-gray-500 dark:text-gray-400 mb-6">{plan.seats}</p>
               <ul className="space-y-3 mb-8">
                 {plan.features.map((f) => (
                   <li
                     key={f}
-                    className="flex items-start gap-2 text-sm text-gray-700"
+                    className="flex items-start gap-2 text-sm text-gray-700 dark:text-gray-200"
                   >
-                    <Check className="h-4 w-4 text-green-500 mt-0.5 shrink-0" />
+                    <Check className="h-4 w-4 text-green-500 dark:text-green-400 mt-0.5 shrink-0" />
                     {f}
                   </li>
                 ))}
@@ -181,7 +181,7 @@ export default function SchoolsPage() {
                 className={`block text-center py-3 rounded-xl font-semibold text-sm transition-colors ${
                   plan.highlight
                     ? "bg-brand text-white hover:bg-brand/90"
-                    : "bg-gray-900 text-white hover:bg-gray-800"
+                    : "bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200"
                 }`}
               >
                 Create free account
@@ -192,39 +192,39 @@ export default function SchoolsPage() {
       </section>
 
       {/* Competitor comparison */}
-      <section className="bg-gray-50 py-20">
+      <section className="bg-gray-50 dark:bg-gray-950 py-20">
         <div className="max-w-3xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-50 text-center mb-12">
             TigerTest vs driving-tests.org
           </h2>
           <div className="overflow-x-auto">
             <table className="w-full text-sm">
               <thead>
-                <tr className="border-b border-gray-200">
-                  <th className="text-left py-3 pr-4 font-medium text-gray-500">
+                <tr className="border-b border-gray-200 dark:border-gray-800">
+                  <th className="text-left py-3 pr-4 font-medium text-gray-500 dark:text-gray-400">
                     Feature
                   </th>
                   <th className="text-center py-3 px-4 font-semibold text-brand">
                     TigerTest
                   </th>
-                  <th className="text-center py-3 pl-4 font-medium text-gray-500">
+                  <th className="text-center py-3 pl-4 font-medium text-gray-500 dark:text-gray-400">
                     driving-tests.org
                   </th>
                 </tr>
               </thead>
               <tbody>
                 {comparisonRows.map((row) => (
-                  <tr key={row.feature} className="border-b border-gray-100">
-                    <td className="py-3 pr-4 text-gray-700">{row.feature}</td>
+                  <tr key={row.feature} className="border-b border-gray-100 dark:border-gray-800">
+                    <td className="py-3 pr-4 text-gray-700 dark:text-gray-200">{row.feature}</td>
                     <td className="py-3 px-4 text-center">
                       {typeof row.tiger === "boolean" ? (
                         row.tiger ? (
-                          <Check className="h-5 w-5 text-green-500 mx-auto" />
+                          <Check className="h-5 w-5 text-green-500 dark:text-green-400 mx-auto" />
                         ) : (
                           <span className="text-gray-300">—</span>
                         )
                       ) : (
-                        <span className="font-medium text-gray-900">
+                        <span className="font-medium text-gray-900 dark:text-gray-50">
                           {row.tiger}
                         </span>
                       )}
@@ -232,12 +232,12 @@ export default function SchoolsPage() {
                     <td className="py-3 pl-4 text-center">
                       {typeof row.competitor === "boolean" ? (
                         row.competitor ? (
-                          <Check className="h-5 w-5 text-green-500 mx-auto" />
+                          <Check className="h-5 w-5 text-green-500 dark:text-green-400 mx-auto" />
                         ) : (
                           <span className="text-gray-300">—</span>
                         )
                       ) : (
-                        <span className="text-gray-500">
+                        <span className="text-gray-500 dark:text-gray-400">
                           {row.competitor}
                         </span>
                       )}
@@ -252,10 +252,10 @@ export default function SchoolsPage() {
 
       {/* Bottom CTA */}
       <section className="bg-brand-light py-16 text-center">
-        <h2 className="text-3xl font-bold text-gray-900 mb-4">
+        <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-50 mb-4">
           Ready to boost your pass rates?
         </h2>
-        <p className="text-gray-600 mb-8">
+        <p className="text-gray-600 dark:text-gray-300 mb-8">
           Free to start. Invite students and track their progress today.
         </p>
         <Link

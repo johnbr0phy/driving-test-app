@@ -113,14 +113,14 @@ export default async function SchoolLandingPage({ params }: Props) {
         }}
       />
 
-      <div className="bg-gradient-to-b from-brand-light to-white">
+      <div className="bg-gradient-to-b from-brand-light to-white dark:to-transparent">
         <div className="flex flex-col items-center px-4 py-20">
           <div className="max-w-2xl w-full text-center">
 
             {/* School logo or initial avatar */}
             <div className="flex justify-center mb-8">
               {school.logoUrl ? (
-                <div className="relative w-24 h-24 rounded-2xl overflow-hidden shadow-md border border-gray-200 bg-white">
+                <div className="relative w-24 h-24 rounded-2xl overflow-hidden shadow-md border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900">
                   <Image
                     src={school.logoUrl}
                     alt={`${school.schoolName} logo`}
@@ -143,17 +143,17 @@ export default async function SchoolLandingPage({ params }: Props) {
             </p>
 
             {/* School name */}
-            <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
+            <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-gray-50 mb-4 tracking-tight">
               {school.schoolName}
             </h1>
 
             {/* Value prop */}
-            <p className="text-xl text-gray-600 mb-6 leading-relaxed">
+            <p className="text-xl text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
               Free DMV practice tests, set up by{" "}
               <span className="text-brand font-semibold">{school.schoolName}</span>
             </p>
 
-            <p className="text-gray-500 mb-10 max-w-lg mx-auto">
+            <p className="text-gray-500 dark:text-gray-400 mb-10 max-w-lg mx-auto">
               Covers all sections of the real DMV test. Trusted by driving schools across
               the US to help students pass first time.
             </p>
@@ -175,11 +175,11 @@ export default async function SchoolLandingPage({ params }: Props) {
             ].map((item) => (
               <div
                 key={item.title}
-                className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 text-center"
+                className="bg-white dark:bg-gray-900 rounded-xl p-6 shadow-sm border border-gray-100 dark:border-gray-800 text-center"
               >
                 <div className="text-3xl mb-3">{item.icon}</div>
-                <h3 className="font-semibold text-gray-900 mb-1">{item.title}</h3>
-                <p className="text-sm text-gray-500">{item.desc}</p>
+                <h3 className="font-semibold text-gray-900 dark:text-gray-50 mb-1">{item.title}</h3>
+                <p className="text-sm text-gray-500 dark:text-gray-400">{item.desc}</p>
               </div>
             ))}
           </div>

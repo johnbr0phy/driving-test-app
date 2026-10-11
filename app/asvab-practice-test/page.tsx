@@ -123,7 +123,7 @@ const contentAreas = [
 
 export default function AsvabLandingPage() {
   return (
-    <div data-theme="asvab" className="flex-1 bg-white">
+    <div data-theme="asvab" className="flex-1 bg-white dark:bg-gray-900">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -132,9 +132,9 @@ export default function AsvabLandingPage() {
 
       {/* Hero */}
       <div className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28 text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 tracking-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-gray-50 mb-6 tracking-tight">
             Free ASVAB Practice Test 2026
           </h1>
           <ExamLandingHero
@@ -148,28 +148,28 @@ export default function AsvabLandingPage() {
 
       {/* How it works */}
       <div id="how-it-works" className="max-w-5xl mx-auto px-6 pt-8 pb-16 md:pt-12 md:pb-24">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-16">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-16">
           How It Works
         </h2>
         <div className="grid md:grid-cols-2 gap-8 md:gap-12">
           <div className="relative pt-8">
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16 bg-white border-2 border-brand-border-light rounded-full flex items-center justify-center shadow-sm">
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16 bg-white dark:bg-gray-900 border-2 border-brand-border-light rounded-full flex items-center justify-center shadow-sm">
               <Smartphone className="w-7 h-7 text-brand" />
             </div>
-            <div className="bg-gray-50 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Subtest Drills on Your Phone</h3>
-              <p className="text-gray-600">
+            <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Subtest Drills on Your Phone</h3>
+              <p className="text-gray-600 dark:text-gray-300">
                 Eight drills, one per subtest, with the four AFQT subtests first. Math by hand with every step shown, word knowledge at ASVAB pace, paragraph comprehension with the passage beside the question. Every miss comes back until you have mastered it.
               </p>
             </div>
           </div>
           <div className="relative pt-8">
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16 bg-white border-2 border-gray-200 rounded-full flex items-center justify-center shadow-sm">
-              <Monitor className="w-7 h-7 text-gray-500" />
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16 bg-white dark:bg-gray-900 border-2 border-gray-200 dark:border-gray-800 rounded-full flex items-center justify-center shadow-sm">
+              <Monitor className="w-7 h-7 text-gray-500 dark:text-gray-400" />
             </div>
-            <div className="bg-gray-50 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Practice Tests</h3>
-              <p className="text-gray-600">
+            <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Practice Tests</h3>
+              <p className="text-gray-600 dark:text-gray-300">
                 Eight subtests in the real order with the real time limits, no calculator, and no going back, just like the computer test at MEPS. Finish with an AFQT estimate, a score for every subtest, and a plan for what to drill next.
               </p>
             </div>
@@ -178,20 +178,20 @@ export default function AsvabLandingPage() {
       </div>
 
       {/* Blueprint */}
-      <div className="bg-gray-50 py-16 md:py-24">
+      <div className="bg-gray-50 dark:bg-gray-950 py-16 md:py-24">
         <div className="max-w-5xl mx-auto px-6">
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
             <div className="flex-1">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">
                 Built on the ASVAB Subtests
               </h2>
-              <p className="text-lg text-gray-600 mb-6">
+              <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
                 The ASVAB is a battery of separate subtests, and the four that make up your AFQT score (arithmetic reasoning, word knowledge, paragraph comprehension and mathematics knowledge) decide whether you can enlist. The practice tests here give those four more than two thirds of the questions, with the technical subtests filling out the rest.
               </p>
               <div className="space-y-3">
                 {contentAreas.map((area) => (
-                  <div key={area.name} className="flex items-center justify-between bg-white rounded-lg px-4 py-3 border border-gray-200">
-                    <span className="font-medium text-gray-900">{area.name}</span>
+                  <div key={area.name} className="flex items-center justify-between bg-white dark:bg-gray-900 rounded-lg px-4 py-3 border border-gray-200 dark:border-gray-800">
+                    <span className="font-medium text-gray-900 dark:text-gray-50">{area.name}</span>
                     <span className="text-brand font-semibold">{area.weight}</span>
                   </div>
                 ))}
@@ -213,8 +213,8 @@ export default function AsvabLandingPage() {
       {/* Just launched */}
       <div className="max-w-3xl mx-auto px-6 py-16 md:py-24 text-center">
         <div className="bg-brand-light border border-brand-border-light rounded-2xl p-8 md:p-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">We Just Launched!</h2>
-          <p className="text-lg text-gray-600 mb-6 max-w-xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4">We Just Launched!</h2>
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 max-w-xl mx-auto">
             The ASVAB practice test is brand new. If a question looks wrong or a recruiter told you something different, tell us.
           </p>
           <a
@@ -229,32 +229,32 @@ export default function AsvabLandingPage() {
       </div>
 
       {/* Study guide */}
-      <div className="bg-gray-50 py-16 md:py-24">
+      <div className="bg-gray-50 dark:bg-gray-950 py-16 md:py-24">
         <div className="max-w-3xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-12">
             How to Score Higher on the ASVAB
           </h2>
-          <div className="space-y-8 text-gray-600">
+          <div className="space-y-8 text-gray-600 dark:text-gray-300">
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">1. Put the AFQT four first</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">1. Put the AFQT four first</h3>
               <p>
                 Only arithmetic reasoning, word knowledge, paragraph comprehension and mathematics knowledge count toward the AFQT percentile that qualifies you to enlist. If your study time is short, spend it there. The technical subtests matter for job line scores, so come back to them once the core four are solid.
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">2. Do the math by hand</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">2. Do the math by hand</h3>
               <p>
                 No calculator is allowed, so drill fractions, percents, ratios, unit conversions, and solving for x on paper. For word problems, write down what the question asks before you compute; most wrong answers come from solving for the wrong quantity, not from bad arithmetic.
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">3. Learn roots, prefixes and suffixes</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">3. Learn roots, prefixes and suffixes</h3>
               <p>
                 Word knowledge asks for the closest synonym, and you will not know every word. Prefixes like bene, mal, ante and post, and roots like dict, port and spec, let you narrow four choices to two. In paragraph comprehension, read the question first so you know whether you are hunting for the main idea, a detail or an inference.
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">4. Answer everything and keep moving</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Answer everything and keep moving</h3>
               <p>
                 The CAT-ASVAB adapts to you and will not let you go back, and unanswered questions count against you. Make your best pick and move on. Use TigerTest&apos;s per-subtest accuracy to find your weakest area, then run that subtest&apos;s drill until every question is mastered.
               </p>
@@ -265,37 +265,37 @@ export default function AsvabLandingPage() {
 
       {/* FAQ */}
       <div className="max-w-3xl mx-auto px-6 py-16 md:py-24">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-12">
           ASVAB Frequently Asked Questions
         </h2>
         <div className="space-y-8">
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 mb-2">What subtests are on the ASVAB?</h3>
-            <p className="text-gray-600">
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">What subtests are on the ASVAB?</h3>
+            <p className="text-gray-600 dark:text-gray-300">
               The computer version (CAT-ASVAB) has ten subtests: General Science, Arithmetic Reasoning, Word Knowledge, Paragraph Comprehension, Mathematics Knowledge, Electronics Information, Auto Information, Shop Information, Mechanical Comprehension, and Assembling Objects. The paper version combines Auto and Shop into one subtest. TigerTest covers the first nine; Assembling Objects is a picture-based spatial test and is not included here.
             </p>
           </div>
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 mb-2">How is the ASVAB scored and what is the AFQT?</h3>
-            <p className="text-gray-600">
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">How is the ASVAB scored and what is the AFQT?</h3>
+            <p className="text-gray-600 dark:text-gray-300">
               Each subtest gets a standard score, and the services combine them into line scores that qualify you for specific jobs. The Armed Forces Qualification Test (AFQT) score, which decides whether you can enlist at all, is a percentile from 1 to 99 built from four subtests only: Arithmetic Reasoning, Word Knowledge, Paragraph Comprehension, and Mathematics Knowledge. A 50 means you scored as well as or better than half of the reference group.
             </p>
           </div>
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 mb-2">What AFQT score do I need to enlist?</h3>
-            <p className="text-gray-600">
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">What AFQT score do I need to enlist?</h3>
+            <p className="text-gray-600 dark:text-gray-300">
               As of 2026 the published minimums for high school graduates are 31 for the Army, Navy, Marine Corps and Air Force and 36 for the Coast Guard. Minimums move with recruiting needs, GED holders usually need a higher score, and many jobs require line scores well above the floor, so confirm the current number with a recruiter before you test.
             </p>
           </div>
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 mb-2">Can I use a calculator on the ASVAB?</h3>
-            <p className="text-gray-600">
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Can I use a calculator on the ASVAB?</h3>
+            <p className="text-gray-600 dark:text-gray-300">
               No. Calculators are not allowed on any version of the ASVAB. You get scratch paper and a pencil, so practice doing arithmetic, fractions, percents and simple algebra by hand. The CAT-ASVAB also adapts to your answers and does not let you go back, so answer every question in order.
             </p>
           </div>
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 mb-2">Is the TigerTest ASVAB practice test free?</h3>
-            <p className="text-gray-600">
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is the TigerTest ASVAB practice test free?</h3>
+            <p className="text-gray-600 dark:text-gray-300">
               Yes. The full CAT-ASVAB simulation and all eight drills are free, with no account required. Create a free account to keep your progress in step between your phone and your computer.
             </p>
           </div>
@@ -306,10 +306,10 @@ export default function AsvabLandingPage() {
 
       {/* Final CTA */}
       <div className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-t from-brand-light to-white pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-t from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Ready to Ace the ASVAB?</h2>
-          <p className="text-lg text-gray-600 mb-10">Free to start. No account required. 200 questions across all eight subtests.</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">Ready to Ace the ASVAB?</h2>
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Free to start. No account required. 200 questions across all eight subtests.</p>
           <ExamLandingCTA dashboardHref="/asvab" />
         </div>
       </div>

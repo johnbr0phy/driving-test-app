@@ -118,15 +118,15 @@ const contentAreas = [
 
 export default function SatLandingPage() {
   return (
-    <div data-theme="sat" className="flex-1 bg-white">
+    <div data-theme="sat" className="flex-1 bg-white dark:bg-gray-900">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <ExamLandingBreadcrumbs examId="sat" />
 
       {/* Hero */}
       <div className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28 text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 tracking-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-gray-50 mb-6 tracking-tight">
             Free SAT Practice Test 2026
           </h1>
           <ExamLandingHero
@@ -140,26 +140,26 @@ export default function SatLandingPage() {
 
       {/* How it works */}
       <div id="how-it-works" className="max-w-5xl mx-auto px-6 pt-8 pb-16 md:pt-12 md:pb-24">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-16">How It Works</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-16">How It Works</h2>
         <div className="grid md:grid-cols-2 gap-8 md:gap-12">
           <div className="relative pt-8">
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16 bg-white border-2 border-brand-border-light rounded-full flex items-center justify-center shadow-sm">
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16 bg-white dark:bg-gray-900 border-2 border-brand-border-light rounded-full flex items-center justify-center shadow-sm">
               <Smartphone className="w-7 h-7 text-brand" />
             </div>
-            <div className="bg-gray-50 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Skill Drills on Your Phone</h3>
-              <p className="text-gray-600">
+            <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Skill Drills on Your Phone</h3>
+              <p className="text-gray-600 dark:text-gray-300">
                 Eight drills, one for each skill area the SAT reports. One question at a time, one tap to check, an explanation right away, and every miss comes back until you have mastered it.
               </p>
             </div>
           </div>
           <div className="relative pt-8">
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16 bg-white border-2 border-gray-200 rounded-full flex items-center justify-center shadow-sm">
-              <Monitor className="w-7 h-7 text-gray-500" />
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16 bg-white dark:bg-gray-900 border-2 border-gray-200 dark:border-gray-800 rounded-full flex items-center justify-center shadow-sm">
+              <Monitor className="w-7 h-7 text-gray-500 dark:text-gray-400" />
             </div>
-            <div className="bg-gray-50 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Full Test on a Computer</h3>
-              <p className="text-gray-600">
+            <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Full Test on a Computer</h3>
+              <p className="text-gray-600 dark:text-gray-300">
                 The real structure and timing: four modules, a countdown clock, flag for review, answer eliminator, calculator and reference sheet, and a break between sections. Finish with an estimated score and a plan for what to drill next.
               </p>
             </div>
@@ -168,20 +168,20 @@ export default function SatLandingPage() {
       </div>
 
       {/* Blueprint */}
-      <div className="bg-gray-50 py-16 md:py-24">
+      <div className="bg-gray-50 dark:bg-gray-950 py-16 md:py-24">
         <div className="max-w-5xl mx-auto px-6">
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
             <div className="flex-1">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Built on the Digital SAT Blueprint</h2>
-              <p className="text-lg text-gray-600 mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">Built on the Digital SAT Blueprint</h2>
+              <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
                 Each section reports four skill areas. The practice test matches their share of the real test, and the drills are split the same way, so your results show exactly which area is holding your score back.
               </p>
               <div className="space-y-3">
                 {contentAreas.map((area) => (
-                  <div key={area.name} className="flex items-center justify-between gap-3 bg-white rounded-lg px-4 py-3 border border-gray-200">
+                  <div key={area.name} className="flex items-center justify-between gap-3 bg-white dark:bg-gray-900 rounded-lg px-4 py-3 border border-gray-200 dark:border-gray-800">
                     <span>
-                      <span className="block font-medium text-gray-900">{area.name}</span>
-                      <span className="block text-xs text-gray-500">{area.section}</span>
+                      <span className="block font-medium text-gray-900 dark:text-gray-50">{area.name}</span>
+                      <span className="block text-xs text-gray-500 dark:text-gray-400">{area.section}</span>
                     </span>
                     <span className="text-brand font-semibold">{area.weight}</span>
                   </div>
@@ -198,8 +198,8 @@ export default function SatLandingPage() {
       {/* Just launched */}
       <div className="max-w-3xl mx-auto px-6 py-16 md:py-24 text-center">
         <div className="bg-brand-light border border-brand-border-light rounded-2xl p-8 md:p-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">We Just Launched!</h2>
-          <p className="text-lg text-gray-600 mb-6 max-w-xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4">We Just Launched!</h2>
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 max-w-xl mx-auto">
             The SAT practice tests are new, with more on the way. If a question looks wrong or your score estimate feels off, tell us.
           </p>
           <a
@@ -214,30 +214,30 @@ export default function SatLandingPage() {
       </div>
 
       {/* Study guide */}
-      <div className="bg-gray-50 py-16 md:py-24">
+      <div className="bg-gray-50 dark:bg-gray-950 py-16 md:py-24">
         <div className="max-w-3xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">How to Raise Your SAT Score</h2>
-          <div className="space-y-8 text-gray-600">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-12">How to Raise Your SAT Score</h2>
+          <div className="space-y-8 text-gray-600 dark:text-gray-300">
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">1. Set a goal score first</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">1. Set a goal score first</h3>
               <p>
                 Look up the middle 50 percent SAT range for the colleges on your list and aim for the top of it. A fixed number tells you how many more questions you need per section and keeps your practice honest.
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">2. Drill one skill area at a time</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">2. Drill one skill area at a time</h3>
               <p>
                 Ten minutes a night on your phone beats a weekend cram. Work through one drill until every question is mastered, then move to the next. Conventions and Algebra are the fastest points for most students because the rules repeat.
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">3. Win the first module</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">3. Win the first module</h3>
               <p>
                 The second module of each section depends on how you do in the first. Careful, accurate work early opens the harder module, and only the harder module can reach the top scores. Slow down on the first ten questions and check your arithmetic.
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">4. Take full tests under real conditions</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Take full tests under real conditions</h3>
               <p>
                 Sit the whole thing in one go on a computer, with the timer on and your phone in another room. Then review every miss, drill the weakest skill area, and retake. There is no penalty for guessing, so never leave a question blank.
               </p>
@@ -248,12 +248,12 @@ export default function SatLandingPage() {
 
       {/* FAQ */}
       <div className="max-w-3xl mx-auto px-6 py-16 md:py-24">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">SAT Frequently Asked Questions</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-12">SAT Frequently Asked Questions</h2>
         <div className="space-y-8">
           {faqs.map((f) => (
             <div key={f.q}>
-              <h3 className="font-semibold text-lg text-gray-900 mb-2">{f.q}</h3>
-              <p className="text-gray-600">{f.a}</p>
+              <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">{f.q}</h3>
+              <p className="text-gray-600 dark:text-gray-300">{f.a}</p>
             </div>
           ))}
         </div>
@@ -263,10 +263,10 @@ export default function SatLandingPage() {
 
       {/* Final CTA */}
       <div className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-t from-brand-light to-white pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-t from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Ready to Hit Your SAT Goal?</h2>
-          <p className="text-lg text-gray-600 mb-10">Free to start. No account required. A free full-length test and six free skill drills, with Practice Test 2 and the rest in Premium.</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">Ready to Hit Your SAT Goal?</h2>
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Free to start. No account required. A free full-length test and six free skill drills, with Practice Test 2 and the rest in Premium.</p>
           <ExamLandingCTA dashboardHref="/sat" />
         </div>
       </div>

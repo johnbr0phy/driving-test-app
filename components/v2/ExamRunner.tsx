@@ -124,7 +124,7 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
   if (!hydrated || !session || !stage || !def) {
     return (
       <div className="v2-focus items-center justify-center">
-        <div className="text-gray-600">Loading your test...</div>
+        <div className="text-gray-600 dark:text-gray-300">Loading your test...</div>
       </div>
     );
   }
@@ -201,24 +201,24 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
             <div className="text-sm font-semibold uppercase tracking-wide text-brand">Section {exam.sections.findIndex((s) => s.key === def.section.key) + 1} of {exam.sections.length}</div>
             <h1 className="mt-1 text-2xl font-bold md:text-3xl">{stageTitle}</h1>
             <div className="mt-3 flex flex-wrap gap-2 text-sm">
-              <span className="rounded-full bg-gray-100 px-3 py-1 font-semibold">{total} questions</span>
+              <span className="rounded-full bg-gray-100 dark:bg-gray-800 px-3 py-1 font-semibold">{total} questions</span>
               {timed ? (
-                <span className="rounded-full bg-gray-100 px-3 py-1 font-semibold">{formatClock(isResume ? stage.remaining : def.module.timeLimit)} {isResume ? "left" : ""}</span>
+                <span className="rounded-full bg-gray-100 dark:bg-gray-800 px-3 py-1 font-semibold">{formatClock(isResume ? stage.remaining : def.module.timeLimit)} {isResume ? "left" : ""}</span>
               ) : (
-                <span className="rounded-full bg-gray-100 px-3 py-1 font-semibold">Untimed</span>
+                <span className="rounded-full bg-gray-100 dark:bg-gray-800 px-3 py-1 font-semibold">Untimed</span>
               )}
               {stage.variant && <span className="rounded-full bg-brand-light px-3 py-1 font-semibold text-brand-dark">Adaptive: {stage.variant === "upper" ? "harder" : "easier"} module</span>}
               {def.section.calculator ? (
-                <span className="rounded-full bg-gray-100 px-3 py-1 font-semibold">Calculator allowed</span>
+                <span className="rounded-full bg-gray-100 dark:bg-gray-800 px-3 py-1 font-semibold">Calculator allowed</span>
               ) : (
-                <span className="rounded-full bg-gray-100 px-3 py-1 font-semibold">No calculator</span>
+                <span className="rounded-full bg-gray-100 dark:bg-gray-800 px-3 py-1 font-semibold">No calculator</span>
               )}
-              {linear && <span className="rounded-full bg-amber-50 px-3 py-1 font-semibold text-amber-800">No going back</span>}
+              {linear && <span className="rounded-full bg-amber-50 dark:bg-amber-950 px-3 py-1 font-semibold text-amber-800 dark:text-amber-300">No going back</span>}
             </div>
-            <div className="mt-6 rounded-xl border border-gray-200 bg-white p-5">
+            <div className="mt-6 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-5">
               <div className="mb-2 font-semibold">Directions</div>
-              <RichText text={def.section.directions} className="text-[15px] text-gray-700" />
-              <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-gray-600">
+              <RichText text={def.section.directions} className="text-[15px] text-gray-700 dark:text-gray-200" />
+              <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-gray-600 dark:text-gray-300">
                 {timed ? <li>The clock starts when you tap Start{linear ? "." : " and keeps running on the review screen."}</li> : <li>There is no clock on this section. Take the time you need.</li>}
                 {linear ? (
                   <li>Answer each question before moving on. Like the real computer test, you cannot go back.</li>
@@ -249,7 +249,7 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
           <div className="mx-auto max-w-xl px-4 py-12 text-center">
             <div className="text-5xl">☕</div>
             <h1 className="mt-4 text-2xl font-bold">Break time</h1>
-            <p className="mt-2 text-gray-600">The real test gives you {Math.round(exam.breakSeconds / 60)} minutes between sections. Stand up, drink water, then continue to {def.section.name}.</p>
+            <p className="mt-2 text-gray-600 dark:text-gray-300">The real test gives you {Math.round(exam.breakSeconds / 60)} minutes between sections. Stand up, drink water, then continue to {def.section.name}.</p>
           </div>
         </div>
         <BottomBar>
@@ -272,14 +272,14 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
         <div className="v2-scroll">
           <div className="mx-auto max-w-2xl px-4 py-6">
             <h1 className="text-xl font-bold">Check your work</h1>
-            <p className="mt-1 text-sm text-gray-600">
+            <p className="mt-1 text-sm text-gray-600 dark:text-gray-300">
               {answeredCount} of {total} answered{stage.flagged.length ? `, ${stage.flagged.length} flagged` : ""}. Tap a number to go back to it.
             </p>
             <Palette stage={stage} onJump={jumpTo} />
           </div>
         </div>
         <BottomBar>
-          <button type="button" onClick={() => update((s) => ({ ...s, phase: "questions" }))} className="v2-tap flex-1 rounded-xl border-2 border-gray-300 bg-white text-base font-semibold">
+          <button type="button" onClick={() => update((s) => ({ ...s, phase: "questions" }))} className="v2-tap flex-1 rounded-xl border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-base font-semibold">
             Back
           </button>
           <button type="button" onClick={() => (unanswered > 0 ? setConfirm("submit") : submitStage())} className="v2-tap flex-1 rounded-xl bg-brand text-base font-bold text-white">
@@ -329,16 +329,16 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
       <div className="v2-scroll">
         <div className="mx-auto max-w-6xl px-4 py-4 md:py-6">
           <div className="mb-3 flex items-center justify-between">
-            <div className="text-sm font-semibold text-gray-700">
+            <div className="text-sm font-semibold text-gray-700 dark:text-gray-200">
               Question {stage.current + 1} <span className="font-normal text-gray-400">of {total}</span>
             </div>
             {!linear && <button
               type="button"
               onClick={toggleFlag}
               aria-pressed={flagged}
-              className={`v2-tap flex items-center gap-1.5 rounded-full border px-3 text-sm font-semibold ${flagged ? "border-amber-400 bg-amber-50 text-amber-800" : "border-gray-300 bg-white text-gray-600"}`}
+              className={`v2-tap flex items-center gap-1.5 rounded-full border px-3 text-sm font-semibold ${flagged ? "border-amber-400 dark:border-amber-600 bg-amber-50 dark:bg-amber-950 text-amber-800 dark:text-amber-300" : "border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-gray-600 dark:text-gray-300"}`}
             >
-              <Flag className={`h-4 w-4 ${flagged ? "fill-amber-500 text-amber-600" : ""}`} />
+              <Flag className={`h-4 w-4 ${flagged ? "fill-amber-500 text-amber-600 dark:text-amber-400" : ""}`} />
               {flagged ? "Flagged" : "Flag for review"}
             </button>}
           </div>
@@ -359,7 +359,7 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
       <BottomBar>
         {linear ? (
           <>
-            <div className="v2-tap flex flex-1 items-center justify-center rounded-xl border-2 border-gray-200 bg-white text-sm font-semibold">
+            <div className="v2-tap flex flex-1 items-center justify-center rounded-xl border-2 border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 text-sm font-semibold">
               {stage.current + 1} / {total}
             </div>
             {isLast ? (
@@ -374,12 +374,12 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
           </>
         ) : (
           <>
-            <button type="button" onClick={() => goTo(-1)} disabled={stage.current === 0} className="v2-tap w-14 shrink-0 rounded-xl border-2 border-gray-300 bg-white disabled:opacity-40 md:w-28" aria-label="Previous question">
+            <button type="button" onClick={() => goTo(-1)} disabled={stage.current === 0} className="v2-tap w-14 shrink-0 rounded-xl border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 disabled:opacity-40 md:w-28" aria-label="Previous question">
               <ChevronLeft className="mx-auto h-6 w-6" />
             </button>
-            <button type="button" onClick={() => setTool("palette")} className="v2-tap flex-1 rounded-xl border-2 border-gray-300 bg-white text-sm font-semibold">
+            <button type="button" onClick={() => setTool("palette")} className="v2-tap flex-1 rounded-xl border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-sm font-semibold">
               {stage.current + 1} / {total}
-              <span className="ml-2 font-normal text-gray-500">{answeredCount} answered</span>
+              <span className="ml-2 font-normal text-gray-500 dark:text-gray-400">{answeredCount} answered</span>
             </button>
             {isLast ? (
               <button type="button" onClick={() => update((s) => ({ ...s, phase: "review" }))} className="v2-tap shrink-0 rounded-xl bg-brand px-5 text-base font-bold text-white md:w-32">
@@ -422,11 +422,11 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
 
 function TopBar({ title, right, onExit }: { title: string; right?: React.ReactNode; onExit: () => void }) {
   return (
-    <div className="v2-safe-top flex shrink-0 items-center gap-2 border-b border-gray-200 bg-white px-3 pb-2">
-      <button type="button" onClick={onExit} className="v2-tap -ml-1 flex w-10 items-center justify-center rounded-full text-gray-500" aria-label="Exit test">
+    <div className="v2-safe-top flex shrink-0 items-center gap-2 border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-3 pb-2">
+      <button type="button" onClick={onExit} className="v2-tap -ml-1 flex w-10 items-center justify-center rounded-full text-gray-500 dark:text-gray-400" aria-label="Exit test">
         <X className="h-5 w-5" />
       </button>
-      <div className="min-w-0 flex-1 truncate text-sm font-bold text-gray-900">{title}</div>
+      <div className="min-w-0 flex-1 truncate text-sm font-bold text-gray-900 dark:text-gray-50">{title}</div>
       {right}
     </div>
   );
@@ -434,7 +434,7 @@ function TopBar({ title, right, onExit }: { title: string; right?: React.ReactNo
 
 function BottomBar({ children }: { children: React.ReactNode }) {
   return (
-    <div className="v2-safe-bottom flex shrink-0 justify-center gap-2 border-t border-gray-200 bg-white px-3 pt-3">
+    <div className="v2-safe-bottom flex shrink-0 justify-center gap-2 border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-3 pt-3">
       <div className="flex w-full max-w-3xl items-stretch gap-2">{children}</div>
     </div>
   );
@@ -442,7 +442,7 @@ function BottomBar({ children }: { children: React.ReactNode }) {
 
 function IconButton({ label, active, onClick, children }: { label: string; active?: boolean; onClick: () => void; children: React.ReactNode }) {
   return (
-    <button type="button" onClick={onClick} aria-label={label} aria-pressed={active} title={label} className={`v2-tap flex w-10 items-center justify-center rounded-full ${active ? "bg-brand text-white" : "text-gray-600 hover:bg-gray-100"}`}>
+    <button type="button" onClick={onClick} aria-label={label} aria-pressed={active} title={label} className={`v2-tap flex w-10 items-center justify-center rounded-full ${active ? "bg-brand text-white" : "text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"}`}>
       {children}
     </button>
   );
@@ -460,11 +460,11 @@ function Sheet({ title, children, onClose, side = false }: { title: string; chil
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className={`v2-pop flex max-h-[85dvh] w-full flex-col rounded-t-2xl bg-white shadow-xl md:pointer-events-auto md:max-h-none md:rounded-none md:border-l md:border-gray-200 ${side ? "md:w-96" : "md:w-[28rem]"}`}
+        className={`v2-pop flex max-h-[85dvh] w-full flex-col rounded-t-2xl bg-white dark:bg-gray-900 shadow-xl md:pointer-events-auto md:max-h-none md:rounded-none md:border-l md:border-gray-200 dark:md:border-gray-800 ${side ? "md:w-96" : "md:w-[28rem]"}`}
       >
-        <div className="flex items-center justify-between border-b border-gray-200 px-4 py-3">
+        <div className="flex items-center justify-between border-b border-gray-200 dark:border-gray-800 px-4 py-3">
           <div className="font-bold">{title}</div>
-          <button type="button" onClick={onClose} className="v2-tap w-10 rounded-full text-gray-500" aria-label="Close">
+          <button type="button" onClick={onClose} className="v2-tap w-10 rounded-full text-gray-500 dark:text-gray-400" aria-label="Close">
             <X className="mx-auto h-5 w-5" />
           </button>
         </div>
@@ -488,20 +488,20 @@ function Palette({ stage, onJump }: { stage: StageState; onJump: (i: number) => 
               type="button"
               onClick={() => onJump(i)}
               className={`v2-tap relative rounded-lg border-2 text-sm font-bold ${
-                current ? "border-brand bg-brand text-white" : answered ? "border-brand bg-brand-light text-brand-dark" : "border-dashed border-gray-400 bg-white text-gray-600"
+                current ? "border-brand bg-brand text-white" : answered ? "border-brand bg-brand-light text-brand-dark" : "border-dashed border-gray-400 dark:border-gray-600 bg-white dark:bg-gray-900 text-gray-600 dark:text-gray-300"
               }`}
               aria-label={`Question ${i + 1}${answered ? ", answered" : ", unanswered"}${flagged ? ", flagged" : ""}`}
             >
               {i + 1}
-              {flagged && <Flag className="absolute -right-1 -top-1 h-3.5 w-3.5 fill-amber-500 text-amber-600" />}
+              {flagged && <Flag className="absolute -right-1 -top-1 h-3.5 w-3.5 fill-amber-500 text-amber-600 dark:text-amber-400" />}
             </button>
           );
         })}
       </div>
-      <div className="mt-3 flex flex-wrap gap-3 text-xs text-gray-600">
+      <div className="mt-3 flex flex-wrap gap-3 text-xs text-gray-600 dark:text-gray-300">
         <span className="flex items-center gap-1"><span className="inline-block h-3 w-3 rounded border-2 border-brand bg-brand-light" /> Answered</span>
-        <span className="flex items-center gap-1"><span className="inline-block h-3 w-3 rounded border-2 border-dashed border-gray-400" /> Unanswered</span>
-        <span className="flex items-center gap-1"><Flag className="h-3 w-3 fill-amber-500 text-amber-600" /> Flagged</span>
+        <span className="flex items-center gap-1"><span className="inline-block h-3 w-3 rounded border-2 border-dashed border-gray-400 dark:border-gray-600" /> Unanswered</span>
+        <span className="flex items-center gap-1"><Flag className="h-3 w-3 fill-amber-500 text-amber-600 dark:text-amber-400" /> Flagged</span>
       </div>
     </div>
   );
@@ -510,11 +510,11 @@ function Palette({ stage, onJump }: { stage: StageState; onJump: (i: number) => 
 function Confirm({ title, body, okLabel, onOk, onCancel }: { title: string; body: string; okLabel: string; onOk: () => void; onCancel: () => void }) {
   return (
     <div className="fixed inset-0 z-[90] flex items-center justify-center bg-black/50 p-4" role="alertdialog" aria-modal="true">
-      <div className="v2-pop w-full max-w-sm rounded-2xl bg-white p-5 shadow-xl">
+      <div className="v2-pop w-full max-w-sm rounded-2xl bg-white dark:bg-gray-900 p-5 shadow-xl">
         <div className="text-lg font-bold">{title}</div>
-        <p className="mt-1 text-sm text-gray-600">{body}</p>
+        <p className="mt-1 text-sm text-gray-600 dark:text-gray-300">{body}</p>
         <div className="mt-4 flex gap-2">
-          <button type="button" onClick={onCancel} className="v2-tap flex-1 rounded-xl border-2 border-gray-300 text-sm font-semibold">Cancel</button>
+          <button type="button" onClick={onCancel} className="v2-tap flex-1 rounded-xl border-2 border-gray-300 dark:border-gray-700 text-sm font-semibold">Cancel</button>
           <button type="button" onClick={onOk} className="v2-tap flex-1 rounded-xl bg-brand text-sm font-bold text-white">{okLabel}</button>
         </div>
       </div>

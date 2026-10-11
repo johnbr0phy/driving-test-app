@@ -16,20 +16,20 @@ function TestCard({ test }: { test: TestCatalogEntry }) {
     <div data-theme={test.theme} className="h-full">
       <Link
         href={test.href}
-        className="group flex h-full flex-col rounded-2xl border border-gray-200 bg-white p-6 transition-all hover:border-brand hover:shadow-lg"
+        className="group flex h-full flex-col rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 transition-all hover:border-brand hover:shadow-lg"
       >
         <div className="mb-4 flex items-center gap-3">
           <div className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-xl ${hasTigerSet(test.id) ? "" : "bg-brand text-white"}`}>
             <TestIcon examId={test.id} icon={test.icon} className={hasTigerSet(test.id) ? "h-11 w-11" : "h-6 w-6"} />
           </div>
           <div>
-            <h2 className="text-lg font-semibold text-gray-900">{test.name}</h2>
-            <p className="text-sm text-gray-500">{test.org}</p>
+            <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-50">{test.name}</h2>
+            <p className="text-sm text-gray-500 dark:text-gray-400">{test.org}</p>
           </div>
         </div>
-        <p className="flex-1 text-gray-600">{test.blurb}</p>
+        <p className="flex-1 text-gray-600 dark:text-gray-300">{test.blurb}</p>
         <div className="mt-5 flex items-center justify-between text-sm">
-          <span className="text-gray-500">
+          <span className="text-gray-500 dark:text-gray-400">
             {test.questions} questions · {test.pricing ?? "Free"}
           </span>
           <span className="inline-flex items-center gap-1 font-semibold text-brand group-hover:gap-2 transition-all">
@@ -68,21 +68,21 @@ export function TestCatalogGrid() {
             placeholder="Search by exam, job or certifying body"
             aria-label="Search practice tests"
             autoComplete="off"
-            className="h-12 w-full rounded-xl border border-gray-200 bg-white pl-12 pr-11 text-base text-gray-900 shadow-sm placeholder:text-gray-400 focus:border-brand focus:outline-none focus:ring-2 focus:ring-brand/30"
+            className="h-12 w-full rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 pl-12 pr-11 text-base text-gray-900 dark:text-gray-50 shadow-sm placeholder:text-gray-400 focus:border-brand focus:outline-none focus:ring-2 focus:ring-brand/30"
           />
           {searching && (
             <button
               type="button"
               onClick={() => setQuery("")}
               aria-label="Clear search"
-              className="absolute right-3 top-1/2 -translate-y-1/2 rounded-md p-1 text-gray-400 hover:bg-gray-100 hover:text-gray-600"
+              className="absolute right-3 top-1/2 -translate-y-1/2 rounded-md p-1 text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-gray-600 dark:hover:text-gray-300"
             >
               <X className="h-4 w-4" aria-hidden="true" />
             </button>
           )}
         </div>
         <p
-          className="mt-2 text-center text-sm text-gray-500"
+          className="mt-2 text-center text-sm text-gray-500 dark:text-gray-400"
           aria-live="polite"
         >
           {searching
@@ -92,11 +92,11 @@ export function TestCatalogGrid() {
       </div>
 
       {groups.length === 0 && (
-        <div className="rounded-2xl border border-dashed border-gray-300 p-10 text-center">
-          <p className="text-lg font-semibold text-gray-900">
+        <div className="rounded-2xl border border-dashed border-gray-300 dark:border-gray-700 p-10 text-center">
+          <p className="text-lg font-semibold text-gray-900 dark:text-gray-50">
             No tests match &ldquo;{query}&rdquo;
           </p>
-          <p className="mt-1 text-gray-600">
+          <p className="mt-1 text-gray-600 dark:text-gray-300">
             Try the exam name, the job title, or the certifying body.
           </p>
         </div>
@@ -104,7 +104,7 @@ export function TestCatalogGrid() {
 
       {groups.map((group, i) => (
         <div key={group.title} className={i < groups.length - 1 ? "mb-12" : ""}>
-          <h2 className="text-sm font-semibold uppercase tracking-wide text-gray-500 mb-4">
+          <h2 className="text-sm font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400 mb-4">
             {group.title}
           </h2>
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">

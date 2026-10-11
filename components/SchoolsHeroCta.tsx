@@ -43,7 +43,7 @@ export function SchoolsHeroCta() {
       </Link>
       <Link
         href="/login?redirect=/schools/dashboard"
-        className="inline-block text-gray-700 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors border border-gray-300"
+        className="inline-block text-gray-700 dark:text-gray-200 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors border border-gray-300 dark:border-gray-700"
       >
         Log in
       </Link>

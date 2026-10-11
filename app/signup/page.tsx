@@ -244,23 +244,23 @@ function SignupPageContent() {
 
   // School-context banner shown on the credentials step
   const schoolBanner = schoolSlug ? (
-    <div className="bg-blue-50 border border-blue-200 text-blue-800 px-4 py-3 rounded-lg mb-4 text-sm">
+    <div className="bg-blue-50 dark:bg-blue-950 border border-blue-200 dark:border-blue-800 text-blue-800 dark:text-blue-300 px-4 py-3 rounded-lg mb-4 text-sm">
       🏫 You&apos;re joining a school on TigerTest. Create a free account to get started.
     </div>
   ) : null;
 
   if (step === 1) {
     return (
-      <div className="bg-white relative min-h-[80vh] flex items-center justify-center px-4">
-        <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-light to-white pointer-events-none" />
+      <div className="bg-white dark:bg-gray-900 relative min-h-[80vh] flex items-center justify-center px-4">
+        <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative text-center space-y-8">
           {error && (
-            <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded mb-4">
+            <div className="bg-red-50 dark:bg-red-950 border border-red-200 dark:border-red-800 text-red-700 dark:text-red-300 px-4 py-3 rounded mb-4">
               {error}
             </div>
           )}
 
-          <div className="flex flex-wrap items-center justify-center gap-2 text-2xl md:text-3xl font-medium text-gray-800">
+          <div className="flex flex-wrap items-center justify-center gap-2 text-2xl md:text-3xl font-medium text-gray-800 dark:text-gray-100">
             <span>{t("signup.iNeedToPass")}</span>
             <Select onValueChange={setSelectedState} value={selectedState || undefined}>
               <SelectTrigger className="w-auto inline-flex text-2xl md:text-3xl font-semibold text-brand border-none shadow-none focus:ring-0 focus:ring-offset-0 px-1 underline decoration-brand-border decoration-2 underline-offset-4 hover:decoration-brand h-auto">
@@ -280,12 +280,12 @@ function SignupPageContent() {
           <Button
             onClick={handleStateSelect}
             disabled={!selectedState || loading}
-            className="bg-black text-white hover:bg-gray-800 px-8 py-3 text-lg"
+            className="bg-black dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 px-8 py-3 text-lg"
           >
             {t("common.continue")}
           </Button>
 
-          <div className="text-center text-sm text-gray-600">
+          <div className="text-center text-sm text-gray-600 dark:text-gray-300">
             {t("common.alreadyHaveAccount")}{" "}
             <Link href={redirectTo ? `/login?redirect=${encodeURIComponent(redirectTo)}` : "/login"} className="text-brand hover:underline font-semibold">
               {t("common.logIn")}
@@ -297,8 +297,8 @@ function SignupPageContent() {
   }
 
   return (
-    <div className="bg-white relative flex items-center justify-center py-12 px-4 min-h-[calc(100vh-200px)]">
-      <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-light to-white pointer-events-none" />
+    <div className="bg-white dark:bg-gray-900 relative flex items-center justify-center py-12 px-4 min-h-[calc(100vh-200px)]">
+      <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-light to-white dark:to-transparent pointer-events-none" />
       <Card className="relative w-full max-w-2xl">
         <CardHeader className="space-y-1">
           <CardTitle className="text-2xl font-bold text-center">
@@ -314,7 +314,7 @@ function SignupPageContent() {
           {schoolBanner}
 
           {error && (
-            <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded mb-4">
+            <div className="bg-red-50 dark:bg-red-950 border border-red-200 dark:border-red-800 text-red-700 dark:text-red-300 px-4 py-3 rounded mb-4">
               {error}
             </div>
           )}
@@ -335,7 +335,7 @@ function SignupPageContent() {
                     <span className="w-full border-t" />
                   </div>
                   <div className="relative flex justify-center text-xs uppercase">
-                    <span className="bg-white px-2 text-muted-foreground">{t("common.orSignUpWithEmail")}</span>
+                    <span className="bg-white dark:bg-gray-900 px-2 text-muted-foreground">{t("common.orSignUpWithEmail")}</span>
                   </div>
                 </div>
               </>
@@ -382,7 +382,7 @@ function SignupPageContent() {
                   />
                 </div>
 
-                <label className="flex items-start gap-2 text-sm text-gray-600 cursor-pointer">
+                <label className="flex items-start gap-2 text-sm text-gray-600 dark:text-gray-300 cursor-pointer">
                   <input
                     type="checkbox"
                     checked={emailConsent}
@@ -403,11 +403,11 @@ function SignupPageContent() {
                     type="button"
                     onClick={() => guestHasState ? router.push("/dashboard") : setStep(1)}
                     disabled={loading}
-                    className="w-full bg-white text-black hover:bg-gray-100 border-2 border-gray-300"
+                    className="w-full bg-white dark:bg-gray-900 text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 border-2 border-gray-300 dark:border-gray-700"
                   >
                     {guestHasState ? t("signup.continueAsGuest") : t("common.back")}
                   </Button>
-                  <Button type="submit" className="w-full bg-black text-white hover:bg-gray-800" disabled={loading}>
+                  <Button type="submit" className="w-full bg-black dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200" disabled={loading}>
                     {loading ? t("signup.creatingAccount") : guestHasState ? t("signup.saveProgress") : t("common.createAccount")}
                   </Button>
                 </div>
@@ -422,7 +422,7 @@ function SignupPageContent() {
 export default function SignupPage() {
   return (
     <Suspense fallback={
-      <div className="bg-white relative min-h-[80vh] flex items-center justify-center">
+      <div className="bg-white dark:bg-gray-900 relative min-h-[80vh] flex items-center justify-center">
         <div className="animate-pulse text-gray-400">Loading...</div>
       </div>
     }>

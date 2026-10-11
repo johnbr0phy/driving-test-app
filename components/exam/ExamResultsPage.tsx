@@ -22,7 +22,7 @@ export function ExamResultsPage({ exam }: { exam: ExamConfig }) {
 
   if (!results.ready) {
     return (
-      <div className="flex-1 bg-gray-50 flex items-center justify-center">
+      <div className="flex-1 bg-gray-50 dark:bg-gray-950 flex items-center justify-center">
         <div className="text-xl font-semibold mb-2">{results.t("results.loadingResults")}</div>
       </div>
     );
@@ -34,12 +34,12 @@ export function ExamResultsPage({ exam }: { exam: ExamConfig }) {
   const { stateName, attemptNumber, displayTestNumber, t } = results;
 
   return (
-    <div className="flex-1 bg-gray-50">
+    <div className="flex-1 bg-gray-50 dark:bg-gray-950">
       <TestPageHeader
         backHref={routes.dashboard}
         sticky
         right={
-          <span className="text-sm text-gray-500">
+          <span className="text-sm text-gray-500 dark:text-gray-400">
             {stateName} · Test {displayTestNumber(testId)} ·{" "}
             {attemptNumber === 1 ? t("results.firstAttempt") : `${t("results.attempt")} ${attemptNumber}`}
           </span>

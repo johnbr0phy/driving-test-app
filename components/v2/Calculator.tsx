@@ -130,7 +130,7 @@ export function Calculator() {
 
   return (
     <div className="w-full max-w-sm">
-      <div className="rounded-lg border border-gray-300 bg-white p-3 text-right">
+      <div className="rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 p-3 text-right">
         <input
           value={expr}
           onChange={(e) => { setExpr(e.target.value); setResult(null); }}
@@ -148,17 +148,17 @@ export function Calculator() {
             key={i}
             type="button"
             onClick={() => press(k)}
-            className={`v2-tap rounded-lg border text-sm font-semibold ${k === "=" ? "border-brand bg-brand text-white" : /^[0-9.]$/.test(k) ? "border-gray-300 bg-white" : "border-gray-200 bg-gray-100"}`}
+            className={`v2-tap rounded-lg border text-sm font-semibold ${k === "=" ? "border-brand bg-brand text-white" : /^[0-9.]$/.test(k) ? "border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900" : "border-gray-200 dark:border-gray-800 bg-gray-100 dark:bg-gray-800"}`}
           >
             {k}
           </button>
         ))}
-        <button type="button" onClick={() => press("0")} className="v2-tap rounded-lg border border-gray-300 bg-white text-sm font-semibold">0</button>
-        <button type="button" onClick={() => press(".")} className="v2-tap rounded-lg border border-gray-300 bg-white text-sm font-semibold">.</button>
-        <button type="button" onClick={() => press("e")} className="v2-tap rounded-lg border border-gray-200 bg-gray-100 text-sm font-semibold">e</button>
+        <button type="button" onClick={() => press("0")} className="v2-tap rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-sm font-semibold">0</button>
+        <button type="button" onClick={() => press(".")} className="v2-tap rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-sm font-semibold">.</button>
+        <button type="button" onClick={() => press("e")} className="v2-tap rounded-lg border border-gray-200 dark:border-gray-800 bg-gray-100 dark:bg-gray-800 text-sm font-semibold">e</button>
         <button type="button" onClick={() => press("=")} className="v2-tap col-span-2 rounded-lg border border-brand bg-brand text-sm font-semibold text-white">=</button>
       </div>
-      <p className="mt-2 text-[11px] text-gray-500">Trig functions take degrees. Type directly or tap the keys.</p>
+      <p className="mt-2 text-[11px] text-gray-500 dark:text-gray-400">Trig functions take degrees. Type directly or tap the keys.</p>
     </div>
   );
 }

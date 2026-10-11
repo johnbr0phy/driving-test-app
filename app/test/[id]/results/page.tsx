@@ -20,7 +20,7 @@ export default function ResultsPage() {
 
   if (!results.ready) {
     return (
-      <div className="flex-1 bg-gray-50 flex items-center justify-center">
+      <div className="flex-1 bg-gray-50 dark:bg-gray-950 flex items-center justify-center">
         <div className="text-xl font-semibold mb-2">{results.t("results.loadingResults")}</div>
       </div>
     );
@@ -32,14 +32,14 @@ export default function ResultsPage() {
   const { stateName, language, attemptNumber, t } = results;
 
   return (
-    <div className="flex-1 bg-gray-50">
+    <div className="flex-1 bg-gray-50 dark:bg-gray-950">
       {/* Rendered at page level (not inside the hero) so its sticky context is
           the whole page — it stays pinned all the way down the miss drill. */}
       <TestPageHeader
         backHref="/dashboard"
         sticky
         right={
-          <span className="text-sm text-gray-500">
+          <span className="text-sm text-gray-500 dark:text-gray-400">
             {stateName} · {language === "es" ? `Examen ${testId}` : language === "vi" ? `Bài Thi ${testId}` : language === "ko" ? `시험 ${testId}` : `Test ${testId}`} ·{" "}
             {attemptNumber === 1 ? t("results.firstAttempt") : `${t("results.attempt")} ${attemptNumber}`}
           </span>

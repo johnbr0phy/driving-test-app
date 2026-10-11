@@ -123,7 +123,7 @@ const contentAreas = [
 
 export default function InsuranceLandingPage() {
   return (
-    <div data-theme="insurance" className="flex-1 bg-white">
+    <div data-theme="insurance" className="flex-1 bg-white dark:bg-gray-900">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -132,9 +132,9 @@ export default function InsuranceLandingPage() {
 
       {/* Hero */}
       <div className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28 text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 tracking-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-gray-50 mb-6 tracking-tight">
             Free Life & Health Insurance Practice Test 2026
           </h1>
           <ExamLandingHero
@@ -148,28 +148,28 @@ export default function InsuranceLandingPage() {
 
       {/* How it works */}
       <div id="how-it-works" className="max-w-5xl mx-auto px-6 pt-8 pb-16 md:pt-12 md:pb-24">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-16">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-16">
           How It Works
         </h2>
         <div className="grid md:grid-cols-2 gap-8 md:gap-12">
           <div className="relative pt-8">
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16 bg-white border-2 border-brand-border-light rounded-full flex items-center justify-center shadow-sm">
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16 bg-white dark:bg-gray-900 border-2 border-brand-border-light rounded-full flex items-center justify-center shadow-sm">
               <Smartphone className="w-7 h-7 text-brand" />
             </div>
-            <div className="bg-gray-50 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Training by Domain</h3>
-              <p className="text-gray-600">
+            <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Training by Domain</h3>
+              <p className="text-gray-600 dark:text-gray-300">
                 Four sets covering the general portion: insurance basics and regulation; life insurance policies and provisions; annuities, taxation and health basics; and health policy provisions and types. Questions you miss come back until you have mastered them.
               </p>
             </div>
           </div>
           <div className="relative pt-8">
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16 bg-white border-2 border-gray-200 rounded-full flex items-center justify-center shadow-sm">
-              <Monitor className="w-7 h-7 text-gray-500" />
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16 bg-white dark:bg-gray-900 border-2 border-gray-200 dark:border-gray-800 rounded-full flex items-center justify-center shadow-sm">
+              <Monitor className="w-7 h-7 text-gray-500 dark:text-gray-400" />
             </div>
-            <div className="bg-gray-50 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Practice Tests</h3>
-              <p className="text-gray-600">
+            <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Practice Tests</h3>
+              <p className="text-gray-600 dark:text-gray-300">
                 Four 50-question tests weighted like the general portion and written in its style: a client with a need, a policy with a provision, and a question about who gets paid, when, and how it is taxed.
               </p>
             </div>
@@ -178,20 +178,20 @@ export default function InsuranceLandingPage() {
       </div>
 
       {/* Blueprint */}
-      <div className="bg-gray-50 py-16 md:py-24">
+      <div className="bg-gray-50 dark:bg-gray-950 py-16 md:py-24">
         <div className="max-w-5xl mx-auto px-6">
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
             <div className="flex-1">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">
                 Built on the General Portion Every State Tests
               </h2>
-              <p className="text-lg text-gray-600 mb-6">
+              <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
                 State life and health producer exams from Pearson VUE, PSI and Prometric share a general section built on the NAIC model and the same prelicensing texts. Every practice test here follows that weighting. The state law section is separate and not covered.
               </p>
               <div className="space-y-3">
                 {contentAreas.map((area) => (
-                  <div key={area.name} className="flex items-center justify-between bg-white rounded-lg px-4 py-3 border border-gray-200">
-                    <span className="font-medium text-gray-900">{area.name}</span>
+                  <div key={area.name} className="flex items-center justify-between bg-white dark:bg-gray-900 rounded-lg px-4 py-3 border border-gray-200 dark:border-gray-800">
+                    <span className="font-medium text-gray-900 dark:text-gray-50">{area.name}</span>
                     <span className="text-brand font-semibold">{area.weight}</span>
                   </div>
                 ))}
@@ -213,8 +213,8 @@ export default function InsuranceLandingPage() {
       {/* Just launched */}
       <div className="max-w-3xl mx-auto px-6 py-16 md:py-24 text-center">
         <div className="bg-brand-light border border-brand-border-light rounded-2xl p-8 md:p-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">We Just Launched!</h2>
-          <p className="text-lg text-gray-600 mb-6 max-w-xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4">We Just Launched!</h2>
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 max-w-xl mx-auto">
             The insurance practice test is brand new. If a question looks wrong or your state teaches it differently, tell us.
           </p>
           <a
@@ -229,32 +229,32 @@ export default function InsuranceLandingPage() {
       </div>
 
       {/* Study guide */}
-      <div className="bg-gray-50 py-16 md:py-24">
+      <div className="bg-gray-50 dark:bg-gray-950 py-16 md:py-24">
         <div className="max-w-3xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-12">
             How to Pass the Life and Health Insurance Exam
           </h2>
-          <div className="space-y-8 text-gray-600">
+          <div className="space-y-8 text-gray-600 dark:text-gray-300">
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">1. Learn the provisions with their numbers</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">1. Learn the provisions with their numbers</h3>
               <p>
                 Grace period, reinstatement, incontestability at 2 years, suicide clause, misstatement of age, free look, the 12 mandatory health provisions with their day counts. The exam asks what happens in a scenario, and the answer is almost always in the provision.
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">2. Know who is taxed and when</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">2. Know who is taxed and when</h3>
               <p>
                 Premiums usually not deductible, death benefits tax-free, cash value tax-deferred, annuity withdrawals LIFO, MECs taxed harder, employer-paid disability benefits taxable. Taxation runs through the life, annuity and health sections and is the most-missed topic.
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">3. Match the product to the need</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">3. Match the product to the need</h3>
               <p>
                 Decreasing term for a mortgage, whole life for permanent needs, universal life for flexibility, life-only annuity for the highest income, noncancelable for the strongest renewability, own-occupation for the surgeon. Scenario questions are really asking which product fits.
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">4. Then study your state portion separately</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Then study your state portion separately</h3>
               <p>
                 This bank covers the general portion only. Your state exam adds licensing rules, continuing education, replacement forms and guaranty association limits. Clear 75 percent here with room to spare, then study your state&apos;s candidate handbook.
               </p>
@@ -265,37 +265,37 @@ export default function InsuranceLandingPage() {
 
       {/* FAQ */}
       <div className="max-w-3xl mx-auto px-6 py-16 md:py-24">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-12">
           Insurance License Exam Frequently Asked Questions
         </h2>
         <div className="space-y-8">
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 mb-2">How many questions are on the life and health insurance exam?</h3>
-            <p className="text-gray-600">
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">How many questions are on the life and health insurance exam?</h3>
+            <p className="text-gray-600 dark:text-gray-300">
               A combined life, accident and health exam usually has about 150 scored questions with 2 to 3 hours, and most states pass at 70 percent. Stand-alone life or health exams are shorter. The general portion is the larger part; the state portion is the rest.
             </p>
           </div>
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 mb-2">Does this cover my state&apos;s exam?</h3>
-            <p className="text-gray-600">
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Does this cover my state&apos;s exam?</h3>
+            <p className="text-gray-600 dark:text-gray-300">
               It covers the general portion, which is shared by every state&apos;s Pearson VUE, PSI or Prometric exam. The state portion (license law, free-look lengths, replacement rules, guaranty limits) is separate, and no question here states one state&apos;s rule as universal.
             </p>
           </div>
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 mb-2">Can I use this for a life-only or health-only exam?</h3>
-            <p className="text-gray-600">
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Can I use this for a life-only or health-only exam?</h3>
+            <p className="text-gray-600 dark:text-gray-300">
               Yes. The training sets split life from health, so a life-only candidate can work sets 1 and 2 plus the annuities set, and a health-only candidate can work sets 1, 3 and 4. The mixed practice tests cover both.
             </p>
           </div>
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 mb-2">What are the hardest topics?</h3>
-            <p className="text-gray-600">
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">What are the hardest topics?</h3>
+            <p className="text-gray-600 dark:text-gray-300">
               Taxation (MECs, the exclusion ratio, qualified plans), the health policy mandatory provisions with their time limits, Medicare parts and benefit periods, and telling the renewability provisions apart. Every explanation here spells out the figure and why the tempting wrong answer fails.
             </p>
           </div>
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 mb-2">Is the TigerTest insurance practice test free?</h3>
-            <p className="text-gray-600">
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is the TigerTest insurance practice test free?</h3>
+            <p className="text-gray-600 dark:text-gray-300">
               Yes. All four practice tests and all training sets are free, with no account required. Create a free account if you want your progress saved across devices.
             </p>
           </div>
@@ -306,10 +306,10 @@ export default function InsuranceLandingPage() {
 
       {/* Final CTA */}
       <div className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-t from-brand-light to-white pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-t from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Ready to Pass Your Insurance Exam?</h2>
-          <p className="text-lg text-gray-600 mb-10">Free to start. No account required. 200 questions across every content area.</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">Ready to Pass Your Insurance Exam?</h2>
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Free to start. No account required. 200 questions across every content area.</p>
           <ExamLandingCTA dashboardHref="/life-health-insurance/dashboard" />
         </div>
       </div>

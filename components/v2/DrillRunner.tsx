@@ -112,7 +112,7 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
   };
 
   if (!hydrated || !drill || !gateReady) {
-    return <div className="v2-focus items-center justify-center text-gray-600">Loading...</div>;
+    return <div className="v2-focus items-center justify-center text-gray-600 dark:text-gray-300">Loading...</div>;
   }
 
   if (locked) {
@@ -124,20 +124,20 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
 
   return (
     <div className="v2-focus">
-      <div className="v2-safe-top shrink-0 border-b border-gray-200 bg-white px-3 pb-2">
+      <div className="v2-safe-top shrink-0 border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-3 pb-2">
         <div className="flex items-center gap-2">
-          <Link href={backHref} className="v2-tap -ml-1 flex w-10 items-center justify-center rounded-full text-gray-500" aria-label="Back">
+          <Link href={backHref} className="v2-tap -ml-1 flex w-10 items-center justify-center rounded-full text-gray-500 dark:text-gray-400" aria-label="Back">
             <X className="h-5 w-5" />
           </Link>
           <div className="min-w-0 flex-1">
             <div className="truncate text-sm font-bold">{drill.name}</div>
-            <div className="text-xs text-gray-500">{mastered} of {questions.length} mastered{state.wrongQueue.length ? ` · ${state.wrongQueue.length} to retry` : ""}</div>
+            <div className="text-xs text-gray-500 dark:text-gray-400">{mastered} of {questions.length} mastered{state.wrongQueue.length ? ` · ${state.wrongQueue.length} to retry` : ""}</div>
           </div>
-          <button type="button" onClick={() => setConfirmReset(true)} className="v2-tap flex w-10 items-center justify-center rounded-full text-gray-500" aria-label="Reset this drill">
+          <button type="button" onClick={() => setConfirmReset(true)} className="v2-tap flex w-10 items-center justify-center rounded-full text-gray-500 dark:text-gray-400" aria-label="Reset this drill">
             <RotateCcw className="h-5 w-5" />
           </button>
         </div>
-        <div className="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-gray-200">
+        <div className="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-gray-200 dark:bg-gray-700">
           <div className="h-full rounded-full bg-brand transition-all" style={{ width: `${pct}%` }} />
         </div>
       </div>
@@ -145,13 +145,13 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
       <div className="v2-scroll" ref={scroller}>
         <div className="mx-auto max-w-2xl px-4 py-4">
           {done ? (
-            <div className="v2-pop rounded-2xl border border-green-200 bg-green-50 p-6 text-center">
+            <div className="v2-pop rounded-2xl border border-green-200 dark:border-green-800 bg-green-50 dark:bg-green-950 p-6 text-center">
               <Image src={getTigerAsset(exam.id, 1)} alt="" width={112} height={112} className="mx-auto h-28 w-28 object-contain" />
-              <h2 className="mt-2 text-xl font-bold text-green-900">Drill mastered</h2>
-              <p className="mt-1 text-sm text-green-800">Every {drill.name} question answered correctly. Take a full test to see it show up in your score.</p>
+              <h2 className="mt-2 text-xl font-bold text-green-900 dark:text-green-200">Drill mastered</h2>
+              <p className="mt-1 text-sm text-green-800 dark:text-green-300">Every {drill.name} question answered correctly. Take a full test to see it show up in your score.</p>
               <div className="mt-5 flex flex-col gap-2">
                 <Link href={routes.dashboard} className="v2-tap flex items-center justify-center rounded-xl bg-brand text-sm font-bold text-white">Back to dashboard</Link>
-                <button type="button" onClick={() => { resetDrill(key); currentId.current = null; setDone(false); }} className="v2-tap rounded-xl border-2 border-gray-300 bg-white text-sm font-semibold">Run it again</button>
+                <button type="button" onClick={() => { resetDrill(key); currentId.current = null; setDone(false); }} className="v2-tap rounded-xl border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-sm font-semibold">Run it again</button>
               </div>
             </div>
           ) : question ? (
@@ -172,12 +172,12 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
       </div>
 
       {!done && question && (
-        <div className="v2-safe-bottom shrink-0 border-t border-gray-200 bg-white px-3 pt-3">
+        <div className="v2-safe-bottom shrink-0 border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-3 pt-3">
           <div className="mx-auto flex max-w-2xl gap-2">
             {revealed ? (
               <button type="button" onClick={load} className="v2-tap w-full rounded-xl bg-brand text-base font-bold text-white">Next</button>
             ) : question.format === "single" ? (
-              <div className="v2-tap flex w-full items-center justify-center text-sm text-gray-500">Tap an answer to check it</div>
+              <div className="v2-tap flex w-full items-center justify-center text-sm text-gray-500 dark:text-gray-400">Tap an answer to check it</div>
             ) : (
               <button type="button" onClick={() => check()} disabled={!isAnswered(answer)} className="v2-tap w-full rounded-xl bg-brand text-base font-bold text-white disabled:opacity-40">Check</button>
             )}
@@ -189,11 +189,11 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
 
       {confirmReset && (
         <div className="fixed inset-0 z-[90] flex items-center justify-center bg-black/50 p-4" role="alertdialog" aria-modal="true">
-          <div className="v2-pop w-full max-w-sm rounded-2xl bg-white p-5 shadow-xl">
+          <div className="v2-pop w-full max-w-sm rounded-2xl bg-white dark:bg-gray-900 p-5 shadow-xl">
             <div className="text-lg font-bold">Reset this drill?</div>
-            <p className="mt-1 text-sm text-gray-600">Mastery for {drill.name} starts over. Your test scores are not affected.</p>
+            <p className="mt-1 text-sm text-gray-600 dark:text-gray-300">Mastery for {drill.name} starts over. Your test scores are not affected.</p>
             <div className="mt-4 flex gap-2">
-              <button type="button" onClick={() => setConfirmReset(false)} className="v2-tap flex-1 rounded-xl border-2 border-gray-300 text-sm font-semibold">Cancel</button>
+              <button type="button" onClick={() => setConfirmReset(false)} className="v2-tap flex-1 rounded-xl border-2 border-gray-300 dark:border-gray-700 text-sm font-semibold">Cancel</button>
               <button type="button" onClick={() => { resetDrill(key); setConfirmReset(false); currentId.current = null; setQuestion(null); setDone(false); }} className="v2-tap flex-1 rounded-xl bg-brand text-sm font-bold text-white">Reset</button>
             </div>
           </div>

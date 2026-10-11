@@ -45,16 +45,16 @@ export function ExamLandingHero({
 
   return (
     <>
-      <p className="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl mx-auto">{subtitle}</p>
+      <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-10 max-w-2xl mx-auto">{subtitle}</p>
 
       <div className="flex flex-col items-center gap-3">
         <Link href={dashboardHref} onClick={onStart}>
-          <Button className="bg-gray-900 text-white hover:bg-gray-800 px-8 py-6 text-lg rounded-full">
+          <Button className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 px-8 py-6 text-lg rounded-full">
             {hasSession ? "Go to Dashboard" : "Start practicing"}
           </Button>
         </Link>
         {!hasSession && (
-          <a href="#how-it-works" className="text-sm text-gray-500 hover:text-gray-700 underline">
+          <a href="#how-it-works" className="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 underline">
             See how it works
           </a>
         )}
@@ -62,7 +62,7 @@ export function ExamLandingHero({
 
       <div className="mt-16 flex flex-col md:flex-row items-center justify-center gap-8">
         <div className="relative">
-          <div className="rounded-2xl shadow-2xl overflow-hidden border border-gray-200 bg-white">
+          <div className="rounded-2xl shadow-2xl overflow-hidden border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900">
             <Image
               src={shots.mobile}
               alt={`TigerTest ${shortName} practice test training mode on mobile`}
@@ -71,11 +71,11 @@ export function ExamLandingHero({
               className="w-[200px] md:w-[240px]"
             />
           </div>
-          <p className="text-sm text-gray-500 mt-6 text-center">Train on mobile</p>
+          <p className="text-sm text-gray-500 dark:text-gray-400 mt-6 text-center">Train on mobile</p>
         </div>
 
         <div className="relative">
-          <div className="rounded-2xl shadow-2xl overflow-hidden border border-gray-200 bg-white">
+          <div className="rounded-2xl shadow-2xl overflow-hidden border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900">
             <Image
               src={shots.desktop}
               alt={`TigerTest ${shortName} practice test on desktop`}
@@ -84,7 +84,7 @@ export function ExamLandingHero({
               className="w-[320px] md:w-[500px]"
             />
           </div>
-          <p className="text-sm text-gray-500 mt-6 text-center">Test on desktop</p>
+          <p className="text-sm text-gray-500 dark:text-gray-400 mt-6 text-center">Test on desktop</p>
         </div>
       </div>
     </>
@@ -96,7 +96,7 @@ export function ExamLandingCTA({ dashboardHref }: { dashboardHref: string }) {
 
   return (
     <Link href={dashboardHref} onClick={onStart}>
-      <Button className="bg-gray-900 text-white hover:bg-gray-800 px-8 py-6 text-lg rounded-full">
+      <Button className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 px-8 py-6 text-lg rounded-full">
         {hasSession ? "Go to Dashboard" : "Start practicing"}
       </Button>
     </Link>

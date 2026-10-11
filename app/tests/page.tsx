@@ -39,23 +39,23 @@ const jsonLd = {
 
 export default function TestsHubPage() {
   return (
-    <div className="flex-1 bg-white">
+    <div className="flex-1 bg-white dark:bg-gray-900">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <div className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 pt-14 pb-12 md:pt-20 md:pb-16 text-center">
           <Image src="/tiger.png" alt="TigerTest" width={72} height={72} className="mx-auto mb-5 w-16 md:w-[72px]" />
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight">Pick Your Practice Test</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-gray-50 tracking-tight">Pick Your Practice Test</h1>
         </div>
       </div>
 
       <div className="max-w-5xl mx-auto px-6 pb-16 md:pb-24">
         <TestCatalogGrid />
 
-        <div className="mt-14 rounded-2xl bg-gray-50 border border-gray-200 p-8 text-center">
-          <h2 className="text-2xl font-bold text-gray-900 mb-3">Don&apos;t see your exam?</h2>
-          <p className="text-gray-600 mb-5 max-w-xl mx-auto">
+        <div className="mt-14 rounded-2xl bg-gray-50 dark:bg-gray-950 border border-gray-200 dark:border-gray-800 p-8 text-center">
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-50 mb-3">Don&apos;t see your exam?</h2>
+          <p className="text-gray-600 dark:text-gray-300 mb-5 max-w-xl mx-auto">
             We add new tests based on requests. Tell us which certification you are studying for.
           </p>
           <a

@@ -602,31 +602,524 @@
     --brand-gradient-to: 210 100% 95%;
   }
 
+  /* Dark mode. Tokens follow Tailwind's gray scale so the dark: variants
+     written in components (gray-950 page, gray-900 card, gray-800 border)
+     and the shadcn primitives read as one surface system. */
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    color-scheme: dark;
+    --background: 224 71% 4%;
+    --foreground: 210 20% 98%;
+    --card: 221 39% 11%;
+    --card-foreground: 210 20% 98%;
+    --popover: 221 39% 11%;
+    --popover-foreground: 210 20% 98%;
     --primary: 217.2 91.2% 59.8%;
     --primary-foreground: 222.2 47.4% 11.2%;
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --secondary: 215 28% 17%;
+    --secondary-foreground: 210 20% 98%;
+    --muted: 215 28% 17%;
+    --muted-foreground: 218 11% 65%;
+    --accent: 215 28% 17%;
+    --accent-foreground: 210 20% 98%;
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 215 28% 17%;
+    --input: 217 19% 27%;
     --ring: 224.3 76.3% 48%;
     --chart-1: 220 70% 50%;
     --chart-2: 160 60% 45%;
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
+  }
+
+  /* Brand tints on a dark page. Generated from the light blocks above by
+     tools/gen_dark_brand_css.py: surfaces (brand-light, gradient-to,
+     border-light) become deep tints of the same hue, text shades (brand-dark,
+     brand-darker) lighten, and low-lightness brands lift to 50% so
+     text-brand stays readable. Re-run the script when adding a theme. */
+  .dark {
+    --brand-light: 33 45% 13%;
+    --brand-gradient-to: 45 40% 11%;
+    --brand-border-light: 24 35% 24%;
+    --brand-border: 24 40% 34%;
+    --brand-muted: 24 45% 45%;
+    --brand-dark: 24 90% 68%;
+    --brand-darker: 24 80% 78%;
+  }
+
+  .dark [data-theme="cdl"] {
+    --brand-light: 214 45% 13%;
+    --brand-gradient-to: 226 40% 11%;
+    --brand-border-light: 214 35% 24%;
+    --brand-border: 214 40% 34%;
+    --brand-muted: 217 45% 45%;
+    --brand-dark: 217 91% 75%;
+    --brand-darker: 217 80% 85%;
+  }
+
+  .dark [data-theme="htl"] {
+    --brand-light: 270 45% 13%;
+    --brand-gradient-to: 330 40% 11%;
+    --brand-border-light: 271 35% 24%;
+    --brand-border: 271 40% 34%;
+    --brand-muted: 271 45% 45%;
+    --brand-dark: 271 70% 65%;
+    --brand-darker: 271 60% 78%;
+  }
+
+  .dark [data-theme="cst"] {
+    --brand: 172 66% 50%;
+    --brand-hover: 172 66% 42%;
+    --brand-light: 170 45% 13%;
+    --brand-gradient-to: 190 40% 11%;
+    --brand-border-light: 172 35% 24%;
+    --brand-border: 172 40% 34%;
+    --brand-muted: 172 45% 45%;
+    --brand-dark: 172 66% 65%;
+    --brand-darker: 172 60% 78%;
+  }
+
+  .dark [data-theme="cdlx"] {
+    --brand: 205 70% 50%;
+    --brand-hover: 205 70% 42%;
+    --brand-light: 205 45% 13%;
+    --brand-gradient-to: 190 40% 11%;
+    --brand-border-light: 205 35% 24%;
+    --brand-border: 205 40% 34%;
+    --brand-muted: 205 45% 45%;
+    --brand-dark: 205 70% 65%;
+    --brand-darker: 205 60% 78%;
+  }
+
+  .dark [data-theme="part107"] {
+    --brand: 199 89% 50%;
+    --brand-hover: 199 89% 42%;
+    --brand-light: 199 45% 13%;
+    --brand-gradient-to: 45 40% 11%;
+    --brand-border-light: 199 35% 24%;
+    --brand-border: 199 40% 34%;
+    --brand-muted: 199 45% 45%;
+    --brand-dark: 199 89% 65%;
+    --brand-darker: 199 70% 78%;
+  }
+
+  .dark [data-theme="ham"] {
+    --brand: 32 90% 50%;
+    --brand-hover: 32 90% 42%;
+    --brand-light: 36 45% 13%;
+    --brand-gradient-to: 48 40% 11%;
+    --brand-border-light: 32 35% 24%;
+    --brand-border: 32 40% 34%;
+    --brand-muted: 32 45% 45%;
+    --brand-dark: 32 90% 65%;
+    --brand-darker: 32 70% 78%;
+  }
+
+  .dark [data-theme="epa608"] {
+    --brand: 150 60% 50%;
+    --brand-hover: 150 60% 42%;
+    --brand-light: 150 45% 13%;
+    --brand-gradient-to: 80 40% 11%;
+    --brand-border-light: 150 35% 24%;
+    --brand-border: 150 40% 34%;
+    --brand-muted: 150 40% 45%;
+    --brand-dark: 150 60% 65%;
+    --brand-darker: 150 50% 78%;
+  }
+
+  .dark [data-theme="cna"] {
+    --brand: 340 65% 50%;
+    --brand-hover: 340 65% 42%;
+    --brand-light: 340 45% 13%;
+    --brand-gradient-to: 20 40% 11%;
+    --brand-border-light: 340 35% 24%;
+    --brand-border: 340 40% 34%;
+    --brand-muted: 340 45% 45%;
+    --brand-dark: 340 65% 65%;
+    --brand-darker: 340 55% 78%;
+  }
+
+  .dark [data-theme="ptcb"] {
+    --brand-light: 292 45% 13%;
+    --brand-gradient-to: 320 40% 11%;
+    --brand-border-light: 292 35% 24%;
+    --brand-border: 292 40% 34%;
+    --brand-muted: 292 45% 45%;
+    --brand-dark: 292 60% 65%;
+    --brand-darker: 292 50% 78%;
+  }
+
+  .dark [data-theme="phleb"] {
+    --brand: 120 40% 50%;
+    --brand-hover: 120 40% 42%;
+    --brand-light: 120 45% 13%;
+    --brand-gradient-to: 80 40% 11%;
+    --brand-border-light: 120 30% 24%;
+    --brand-border: 120 30% 34%;
+    --brand-muted: 120 30% 45%;
+    --brand-dark: 120 40% 65%;
+    --brand-darker: 120 35% 78%;
+  }
+
+  .dark [data-theme="ccma"] {
+    --brand: 188 70% 50%;
+    --brand-hover: 188 70% 42%;
+    --brand-light: 188 45% 13%;
+    --brand-gradient-to: 160 40% 11%;
+    --brand-border-light: 188 35% 24%;
+    --brand-border: 188 40% 34%;
+    --brand-muted: 188 45% 45%;
+    --brand-dark: 188 70% 65%;
+    --brand-darker: 188 60% 78%;
+  }
+
+  .dark [data-theme="cet"] {
+    --brand: 8 72% 50%;
+    --brand-hover: 8 72% 42%;
+    --brand-light: 8 45% 13%;
+    --brand-gradient-to: 35 40% 11%;
+    --brand-border-light: 8 35% 24%;
+    --brand-border: 8 40% 34%;
+    --brand-muted: 8 45% 45%;
+    --brand-dark: 8 72% 65%;
+    --brand-darker: 8 60% 78%;
+  }
+
+  .dark [data-theme="danb"] {
+    --brand: 165 60% 50%;
+    --brand-hover: 165 60% 42%;
+    --brand-light: 165 45% 13%;
+    --brand-gradient-to: 200 40% 11%;
+    --brand-border-light: 165 35% 24%;
+    --brand-border: 165 40% 34%;
+    --brand-muted: 165 40% 45%;
+    --brand-dark: 165 60% 65%;
+    --brand-darker: 165 50% 78%;
+  }
+
+  .dark [data-theme="emt"] {
+    --brand: 240 55% 50%;
+    --brand-hover: 240 55% 42%;
+    --brand-light: 240 45% 13%;
+    --brand-gradient-to: 200 40% 11%;
+    --brand-border-light: 240 30% 24%;
+    --brand-border: 240 35% 34%;
+    --brand-muted: 240 35% 45%;
+    --brand-dark: 240 55% 65%;
+    --brand-darker: 240 45% 78%;
+  }
+
+  .dark [data-theme="foodmgr"] {
+    --brand: 42 90% 50%;
+    --brand-hover: 42 90% 42%;
+    --brand-light: 42 45% 13%;
+    --brand-gradient-to: 20 40% 11%;
+    --brand-border-light: 42 35% 24%;
+    --brand-border: 42 40% 34%;
+    --brand-muted: 42 45% 45%;
+    --brand-dark: 42 90% 65%;
+    --brand-darker: 42 80% 78%;
+  }
+
+  .dark [data-theme="realestate"] {
+    --brand: 200 45% 50%;
+    --brand-hover: 200 45% 42%;
+    --brand-light: 200 45% 13%;
+    --brand-gradient-to: 170 40% 11%;
+    --brand-border-light: 200 20% 24%;
+    --brand-border: 200 25% 34%;
+    --brand-muted: 200 25% 45%;
+    --brand-dark: 200 45% 65%;
+    --brand-darker: 200 35% 78%;
+  }
+
+  .dark [data-theme="insurance"] {
+    --brand: 330 55% 50%;
+    --brand-hover: 330 55% 42%;
+    --brand-light: 330 45% 13%;
+    --brand-gradient-to: 300 40% 11%;
+    --brand-border-light: 330 30% 24%;
+    --brand-border: 330 35% 34%;
+    --brand-muted: 330 35% 45%;
+    --brand-dark: 330 55% 65%;
+    --brand-darker: 330 45% 78%;
+  }
+
+  .dark [data-theme="notary"] {
+    --brand: 35 45% 50%;
+    --brand-hover: 35 45% 42%;
+    --brand-light: 35 45% 13%;
+    --brand-gradient-to: 50 40% 11%;
+    --brand-border-light: 35 20% 24%;
+    --brand-border: 35 25% 34%;
+    --brand-muted: 35 25% 45%;
+    --brand-dark: 35 45% 65%;
+    --brand-darker: 35 35% 78%;
+  }
+
+  .dark [data-theme="teas"] {
+    --brand: 95 50% 50%;
+    --brand-hover: 95 50% 42%;
+    --brand-light: 95 45% 13%;
+    --brand-gradient-to: 60 40% 11%;
+    --brand-border-light: 95 25% 24%;
+    --brand-border: 95 30% 34%;
+    --brand-muted: 95 30% 45%;
+    --brand-dark: 95 50% 65%;
+    --brand-darker: 95 40% 78%;
+  }
+
+  .dark [data-theme="aws"] {
+    --brand: 20 90% 50%;
+    --brand-hover: 20 90% 42%;
+    --brand-light: 20 45% 13%;
+    --brand-gradient-to: 40 40% 11%;
+    --brand-border-light: 20 35% 24%;
+    --brand-border: 20 40% 34%;
+    --brand-muted: 20 45% 45%;
+    --brand-dark: 20 90% 65%;
+    --brand-darker: 20 80% 78%;
+  }
+
+  .dark [data-theme="aplus"] {
+    --brand: 350 75% 50%;
+    --brand-hover: 350 75% 42%;
+    --brand-light: 350 45% 13%;
+    --brand-gradient-to: 20 40% 11%;
+    --brand-border-light: 350 35% 24%;
+    --brand-border: 350 40% 34%;
+    --brand-muted: 350 45% 45%;
+    --brand-dark: 350 75% 65%;
+    --brand-darker: 350 65% 78%;
+  }
+
+  .dark [data-theme="foodhandler"] {
+    --brand: 135 55% 50%;
+    --brand-hover: 135 55% 42%;
+    --brand-light: 135 45% 13%;
+    --brand-gradient-to: 165 40% 11%;
+    --brand-border-light: 135 30% 24%;
+    --brand-border: 135 35% 34%;
+    --brand-muted: 135 35% 45%;
+    --brand-dark: 135 55% 65%;
+    --brand-darker: 135 45% 78%;
+  }
+
+  .dark [data-theme="boating"] {
+    --brand: 215 65% 50%;
+    --brand-hover: 215 65% 42%;
+    --brand-light: 215 45% 13%;
+    --brand-gradient-to: 190 40% 11%;
+    --brand-border-light: 215 35% 24%;
+    --brand-border: 215 40% 34%;
+    --brand-muted: 215 45% 45%;
+    --brand-dark: 215 65% 65%;
+    --brand-darker: 215 55% 78%;
+  }
+
+  .dark [data-theme="hunter"] {
+    --brand: 70 45% 50%;
+    --brand-hover: 70 45% 42%;
+    --brand-light: 70 45% 13%;
+    --brand-gradient-to: 40 40% 11%;
+    --brand-border-light: 70 20% 24%;
+    --brand-border: 70 25% 34%;
+    --brand-muted: 70 25% 45%;
+    --brand-dark: 70 45% 65%;
+    --brand-darker: 70 35% 78%;
+  }
+
+  .dark [data-theme="secplus"] {
+    --brand: 260 55% 50%;
+    --brand-hover: 260 55% 42%;
+    --brand-light: 260 45% 13%;
+    --brand-gradient-to: 290 40% 11%;
+    --brand-border-light: 260 30% 24%;
+    --brand-border: 260 35% 34%;
+    --brand-muted: 260 35% 45%;
+    --brand-dark: 260 55% 65%;
+    --brand-darker: 260 45% 78%;
+  }
+
+  .dark [data-theme="hesi"] {
+    --brand: 310 60% 50%;
+    --brand-hover: 310 60% 42%;
+    --brand-light: 310 45% 13%;
+    --brand-gradient-to: 340 40% 11%;
+    --brand-border-light: 310 35% 24%;
+    --brand-border: 310 40% 34%;
+    --brand-muted: 310 40% 45%;
+    --brand-dark: 310 60% 65%;
+    --brand-darker: 310 50% 78%;
+  }
+
+  .dark [data-theme="asvab"] {
+    --brand: 95 30% 50%;
+    --brand-hover: 95 30% 42%;
+    --brand-light: 95 40% 13%;
+    --brand-gradient-to: 60 40% 11%;
+    --brand-border-light: 95 20% 24%;
+    --brand-border: 95 20% 34%;
+    --brand-muted: 95 20% 45%;
+    --brand-dark: 95 30% 65%;
+    --brand-darker: 95 20% 78%;
+  }
+
+  .dark [data-theme="cpr"] {
+    --brand: 355 70% 50%;
+    --brand-hover: 355 70% 42%;
+    --brand-light: 355 45% 13%;
+    --brand-gradient-to: 20 40% 11%;
+    --brand-border-light: 355 35% 24%;
+    --brand-border: 355 40% 34%;
+    --brand-muted: 355 45% 45%;
+    --brand-dark: 355 70% 65%;
+    --brand-darker: 355 60% 78%;
+  }
+
+  .dark [data-theme="osha"] {
+    --brand: 205 55% 50%;
+    --brand-hover: 205 55% 42%;
+    --brand-light: 205 45% 13%;
+    --brand-gradient-to: 180 40% 11%;
+    --brand-border-light: 205 30% 24%;
+    --brand-border: 205 35% 34%;
+    --brand-muted: 205 35% 45%;
+    --brand-dark: 205 55% 65%;
+    --brand-darker: 205 45% 78%;
+  }
+
+  .dark [data-theme="forklift"] {
+    --brand: 42 80% 50%;
+    --brand-hover: 42 80% 42%;
+    --brand-light: 42 45% 13%;
+    --brand-gradient-to: 20 40% 11%;
+    --brand-border-light: 42 35% 24%;
+    --brand-border: 42 40% 34%;
+    --brand-muted: 42 45% 45%;
+    --brand-dark: 42 80% 65%;
+    --brand-darker: 42 70% 78%;
+  }
+
+  .dark [data-theme="alcohol"] {
+    --brand: 345 55% 50%;
+    --brand-hover: 345 55% 42%;
+    --brand-light: 345 45% 13%;
+    --brand-gradient-to: 15 40% 11%;
+    --brand-border-light: 345 30% 24%;
+    --brand-border: 345 35% 34%;
+    --brand-muted: 345 35% 45%;
+    --brand-dark: 345 55% 65%;
+    --brand-darker: 345 45% 78%;
+  }
+
+  .dark [data-theme="sat"] {
+    --brand: 221 83% 50%;
+    --brand-hover: 221 83% 42%;
+    --brand-light: 221 45% 13%;
+    --brand-gradient-to: 200 40% 11%;
+    --brand-border-light: 221 35% 24%;
+    --brand-border: 221 40% 34%;
+    --brand-muted: 221 45% 45%;
+    --brand-dark: 221 83% 65%;
+    --brand-darker: 221 70% 78%;
+  }
+
+  .dark [data-theme="act"] {
+    --brand: 350 70% 50%;
+    --brand-hover: 350 70% 42%;
+    --brand-light: 350 45% 13%;
+    --brand-gradient-to: 20 40% 11%;
+    --brand-border-light: 350 35% 24%;
+    --brand-border: 350 40% 34%;
+    --brand-muted: 350 45% 45%;
+    --brand-dark: 350 70% 65%;
+    --brand-darker: 350 60% 78%;
+  }
+
+  .dark [data-theme="accuplacer"] {
+    --brand: 175 55% 50%;
+    --brand-hover: 175 55% 42%;
+    --brand-light: 175 45% 13%;
+    --brand-gradient-to: 150 40% 11%;
+    --brand-border-light: 175 30% 24%;
+    --brand-border: 175 35% 34%;
+    --brand-muted: 175 35% 45%;
+    --brand-dark: 175 55% 65%;
+    --brand-darker: 175 45% 78%;
+  }
+
+  .dark [data-theme="security"] {
+    --brand: 222 35% 50%;
+    --brand-hover: 222 35% 42%;
+    --brand-light: 222 45% 13%;
+    --brand-gradient-to: 200 40% 11%;
+    --brand-border-light: 222 20% 24%;
+    --brand-border: 222 20% 34%;
+    --brand-muted: 222 20% 45%;
+    --brand-dark: 222 35% 65%;
+    --brand-darker: 222 25% 78%;
+  }
+
+  .dark [data-theme="lifeguard"] {
+    --brand: 190 75% 50%;
+    --brand-hover: 190 75% 42%;
+    --brand-light: 190 45% 13%;
+    --brand-gradient-to: 165 40% 11%;
+    --brand-border-light: 190 35% 24%;
+    --brand-border: 190 40% 34%;
+    --brand-muted: 190 45% 45%;
+    --brand-dark: 190 75% 65%;
+    --brand-darker: 190 65% 78%;
+  }
+
+  .dark [data-theme="pnc"] {
+    --brand: 160 50% 50%;
+    --brand-hover: 160 50% 42%;
+    --brand-light: 160 45% 13%;
+    --brand-gradient-to: 135 40% 11%;
+    --brand-border-light: 160 25% 24%;
+    --brand-border: 160 30% 34%;
+    --brand-muted: 160 30% 45%;
+    --brand-dark: 160 50% 65%;
+    --brand-darker: 160 40% 78%;
+  }
+
+  .dark [data-theme="moto"] {
+    --brand: 355 72% 50%;
+    --brand-hover: 355 72% 42%;
+    --brand-light: 355 45% 13%;
+    --brand-gradient-to: 20 40% 11%;
+    --brand-border-light: 355 35% 24%;
+    --brand-border: 355 40% 34%;
+    --brand-muted: 355 45% 45%;
+    --brand-dark: 355 72% 65%;
+    --brand-darker: 355 60% 78%;
+  }
+
+  .dark [data-theme="civics"] {
+    --brand: 222 68% 50%;
+    --brand-hover: 222 68% 42%;
+    --brand-light: 222 45% 13%;
+    --brand-gradient-to: 0 40% 11%;
+    --brand-border-light: 222 35% 24%;
+    --brand-border: 222 40% 34%;
+    --brand-muted: 222 45% 45%;
+    --brand-dark: 222 68% 65%;
+    --brand-darker: 222 60% 78%;
+  }
+
+  .dark [data-theme="crcst"] {
+    --brand: 195 85% 50%;
+    --brand-hover: 195 85% 42%;
+    --brand-light: 195 45% 13%;
+    --brand-gradient-to: 210 40% 11%;
+    --brand-border-light: 195 35% 24%;
+    --brand-border: 195 40% 34%;
+    --brand-muted: 195 45% 45%;
+    --brand-dark: 195 85% 65%;
+    --brand-darker: 195 70% 78%;
   }
 }
 
@@ -648,6 +1141,9 @@
   }
   body.premium-theme {
     background-color: #f5f3ef;
+  }
+  .dark body.premium-theme {
+    background-color: #151311;
   }
 }
 

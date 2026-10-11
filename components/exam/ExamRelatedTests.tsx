@@ -10,10 +10,10 @@ export function ExamRelatedTests({ examId }: { examId: string }) {
 
   return (
     <section aria-labelledby="related-tests" className="max-w-5xl mx-auto px-6 py-12 md:py-16">
-      <h2 id="related-tests" className="text-2xl md:text-3xl font-bold text-gray-900 text-center mb-2">
+      <h2 id="related-tests" className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 text-center mb-2">
         Related practice tests
       </h2>
-      <p className="text-gray-600 text-center mb-8">
+      <p className="text-gray-600 dark:text-gray-300 text-center mb-8">
         Every test on TigerTest is free and needs no account to start.
       </p>
       <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -21,10 +21,10 @@ export function ExamRelatedTests({ examId }: { examId: string }) {
           <li key={test.id}>
             <Link
               href={test.href}
-              className="block h-full rounded-2xl border border-gray-200 bg-white p-5 hover:border-brand hover:shadow-sm transition-colors"
+              className="block h-full rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-5 hover:border-brand hover:shadow-sm transition-colors"
             >
-              <span className="block font-semibold text-gray-900">{test.name}</span>
-              <span className="block text-sm text-gray-500 mt-1">{test.org}</span>
+              <span className="block font-semibold text-gray-900 dark:text-gray-50">{test.name}</span>
+              <span className="block text-sm text-gray-500 dark:text-gray-400 mt-1">{test.org}</span>
             </Link>
           </li>
         ))}

@@ -40,20 +40,20 @@ export function TrainingCard({
   const getOptionClasses = (optionLetter: string) => {
     if (!answered) {
       if (!isReady) {
-        return "border-gray-300";
+        return "border-gray-300 dark:border-gray-700";
       }
-      return "border-gray-300 [@media(hover:hover)]:hover:border-brand [@media(hover:hover)]:hover:bg-brand-light active:border-brand active:bg-brand-light cursor-pointer";
+      return "border-gray-300 dark:border-gray-700 [@media(hover:hover)]:hover:border-brand [@media(hover:hover)]:hover:bg-brand-light active:border-brand active:bg-brand-light cursor-pointer";
     }
 
     if (optionLetter === question.correctAnswer) {
-      return "border-green-500 bg-green-50";
+      return "border-green-500 bg-green-50 dark:bg-green-950";
     }
 
     if (optionLetter === selectedAnswer && !isCorrect) {
-      return "border-red-500 bg-red-50";
+      return "border-red-500 bg-red-50 dark:bg-red-950";
     }
 
-    return "border-gray-300 opacity-50";
+    return "border-gray-300 dark:border-gray-700 opacity-50";
   };
 
   return (
@@ -75,10 +75,10 @@ export function TrainingCard({
                 <span className="font-bold text-base md:text-lg w-6 shrink-0">{option.letter})</span>
                 <span className="flex-1 text-sm md:text-base">{option.text}</span>
                 {answered && option.letter === question.correctAnswer && (
-                  <CheckCircle2 className="h-5 w-5 md:h-6 md:w-6 text-green-600 flex-shrink-0" />
+                  <CheckCircle2 className="h-5 w-5 md:h-6 md:w-6 text-green-600 dark:text-green-400 flex-shrink-0" />
                 )}
                 {answered && option.letter === selectedAnswer && !isCorrect && (
-                  <XCircle className="h-5 w-5 md:h-6 md:w-6 text-red-600 flex-shrink-0" />
+                  <XCircle className="h-5 w-5 md:h-6 md:w-6 text-red-600 dark:text-red-400 flex-shrink-0" />
                 )}
               </div>
             </div>
@@ -87,23 +87,23 @@ export function TrainingCard({
 
         {answered && (
           <div className="space-y-3 md:space-y-4">
-            <Button onClick={onNext} className="w-full bg-black text-white hover:bg-gray-800" size="lg">
+            <Button onClick={onNext} className="w-full bg-black dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200" size="lg">
               {t("trainingCard.nextQuestion")}
             </Button>
 
             <div
               className={`p-3 md:p-4 rounded-lg ${
-                isCorrect ? "bg-green-50 border border-green-200" : "bg-red-50 border border-red-200"
+                isCorrect ? "bg-green-50 dark:bg-green-950 border border-green-200 dark:border-green-800" : "bg-red-50 dark:bg-red-950 border border-red-200 dark:border-red-800"
               }`}
             >
               <div
                 className={`font-bold mb-1 md:mb-2 text-sm md:text-base ${
-                  isCorrect ? "text-green-700" : "text-red-700"
+                  isCorrect ? "text-green-700 dark:text-green-300" : "text-red-700 dark:text-red-300"
                 }`}
               >
                 {isCorrect ? t("trainingCard.correct") : t("trainingCard.incorrect")}
               </div>
-              <p className="text-gray-700 text-sm md:text-base">{question.explanation}</p>
+              <p className="text-gray-700 dark:text-gray-200 text-sm md:text-base">{question.explanation}</p>
             </div>
           </div>
         )}

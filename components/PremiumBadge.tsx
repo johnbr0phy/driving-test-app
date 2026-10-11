@@ -19,7 +19,7 @@ export function PremiumBadge({ variant = "locked", size = "sm" }: PremiumBadgePr
   }
 
   return (
-    <Badge variant="outline" className={`bg-gray-100 hover:bg-gray-100 border-gray-300 text-gray-600 ${size === "sm" ? "text-xs" : "text-sm"}`}>
+    <Badge variant="outline" className={`bg-gray-100 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-800 border-gray-300 dark:border-gray-700 text-gray-600 dark:text-gray-300 ${size === "sm" ? "text-xs" : "text-sm"}`}>
       <Lock className={`${size === "sm" ? "h-3 w-3" : "h-4 w-4"} mr-1`} />
       Premium
     </Badge>

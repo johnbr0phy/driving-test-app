@@ -36,7 +36,7 @@ export function Timer({ remaining, onExpire }: { remaining: () => number; onExpi
     <button
       type="button"
       onClick={() => setHidden((h) => !h)}
-      className={`v2-tap flex items-center gap-1.5 rounded-full px-3 text-sm font-semibold tabular-nums ${low ? "bg-red-50 text-red-700" : "bg-gray-100 text-gray-800"}`}
+      className={`v2-tap flex items-center gap-1.5 rounded-full px-3 text-sm font-semibold tabular-nums ${low ? "bg-red-50 dark:bg-red-950 text-red-700 dark:text-red-300" : "bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-100"}`}
       aria-live={low ? "polite" : "off"}
       aria-label={hidden ? "Show timer" : "Hide timer"}
     >

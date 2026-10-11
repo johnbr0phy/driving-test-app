@@ -958,6 +958,12 @@ export const en = {
   },
 
   // Language
+  theme: {
+    appearance: "Appearance",
+    light: "Light",
+    dark: "Dark",
+    system: "System",
+  },
   language: {
     en: "EN",
     es: "ES",

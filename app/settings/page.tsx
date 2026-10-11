@@ -14,7 +14,7 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import Link from "next/link";
-import { Loader2, User, AlertTriangle, MapPin, LayoutGrid, ChevronRight, LogOut, Trash2 } from "lucide-react";
+import { Loader2, User, AlertTriangle, MapPin, LayoutGrid, ChevronRight, LogOut, Trash2, SunMoon } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { useStore } from "@/store/useStore";
@@ -27,6 +27,7 @@ import { EXAMS_V2 } from "@/lib/v2/registry";
 import { deleteV2Exam } from "@/lib/v2/sync";
 import { TestIcon } from "@/components/TestIcon";
 import { hasTigerSet } from "@/lib/tigerAssets";
+import { ThemeSegmentedControl } from "@/components/ThemeToggle";
 
 export default function SettingsPage() {
   const router = useRouter();
@@ -147,13 +148,13 @@ export default function SettingsPage() {
   }
 
   return (
-    <div className="flex-1 bg-white">
+    <div className="flex-1 bg-white dark:bg-gray-900">
       <div className="relative">
-        <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-light to-white pointer-events-none" />
+        <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative container mx-auto px-4 py-8 max-w-6xl">
         {/* The tests this account has started, each with its own delete */}
         {startedTests.length > 0 && (
-        <Card className="bg-gray-50 mb-6">
+        <Card className="bg-gray-50 dark:bg-gray-950 mb-6">
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <LayoutGrid className="h-5 w-5" />
@@ -161,17 +162,17 @@ export default function SettingsPage() {
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <ul className="divide-y divide-gray-200 rounded-lg border border-gray-200 bg-white">
+            <ul className="divide-y divide-gray-200 dark:divide-gray-800 rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900">
               {startedTests.map((test) => {
                 const status = test.id === "dmv" && selectedState ? currentStateName : t("settings.inProgress");
                 return (
                   <li key={test.id} data-theme={test.theme} className="flex items-center">
-                    <Link href={test.dashboardHref} className="flex flex-1 min-w-0 items-center gap-3 px-4 py-3 hover:bg-gray-50 transition-colors">
+                    <Link href={test.dashboardHref} className="flex flex-1 min-w-0 items-center gap-3 px-4 py-3 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
                       <span className={`flex h-9 w-9 items-center justify-center rounded-lg flex-shrink-0 ${hasTigerSet(test.id) ? "" : "bg-brand text-white"}`}>
                         <TestIcon examId={test.id} icon={test.icon} className={hasTigerSet(test.id) ? "h-9 w-9" : "h-5 w-5"} />
                       </span>
                       <span className="flex-1 min-w-0">
-                        <span className="block font-medium text-gray-900">{test.name}</span>
+                        <span className="block font-medium text-gray-900 dark:text-gray-50">{test.name}</span>
                         <span className="block text-sm text-brand font-medium">{status}</span>
                       </span>
                       <ChevronRight className="h-5 w-5 text-gray-400 flex-shrink-0" />
@@ -179,7 +180,7 @@ export default function SettingsPage() {
                     <button
                       type="button"
                       onClick={() => setDeleteTestId(test.id)}
-                      className="mr-2 flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-lg text-gray-400 hover:bg-red-50 hover:text-red-600 transition-colors"
+                      className="mr-2 flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-lg text-gray-400 hover:bg-red-50 dark:hover:bg-red-950 hover:text-red-600 dark:hover:text-red-400 transition-colors"
                       title={t("settings.deleteTestProgress")}
                       aria-label={`${t("settings.deleteTestProgress")}: ${test.name}`}
                     >
@@ -196,7 +197,7 @@ export default function SettingsPage() {
         {/* State Selection and Profile Photo Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
           {/* State Selection Card */}
-          <Card className="bg-gray-50">
+          <Card className="bg-gray-50 dark:bg-gray-950">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <MapPin className="h-5 w-5" />
@@ -207,20 +208,20 @@ export default function SettingsPage() {
               {selectedState ? (
                 <div className="space-y-4">
                   <div>
-                    <div className="text-sm text-gray-600 mb-2">{t("settings.currentlyPracticingFor")}</div>
+                    <div className="text-sm text-gray-600 dark:text-gray-300 mb-2">{t("settings.currentlyPracticingFor")}</div>
                     <div className="text-2xl font-bold text-brand mb-4">
                       {currentStateName}
                     </div>
                   </div>
 
                   <div>
-                    <label className="text-sm font-medium text-gray-700 mb-2 block">
+                    <label className="text-sm font-medium text-gray-700 dark:text-gray-200 mb-2 block">
                       {t("settings.changeState")}
                     </label>
                     <select
                       value={selectedState}
                       onChange={(e) => handleStateChange(e.target.value)}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                     >
                       {states.map((state) => (
                         <option key={state.code} value={state.code}>
@@ -228,14 +229,14 @@ export default function SettingsPage() {
                         </option>
                       ))}
                     </select>
-                    <p className="text-xs text-gray-500 mt-2">
+                    <p className="text-xs text-gray-500 dark:text-gray-400 mt-2">
                       <strong className="text-brand">Warning:</strong> {t("settings.switchStateWarning")}
                     </p>
                   </div>
                 </div>
               ) : (
                 <div className="space-y-4">
-                  <p className="text-sm text-gray-600">{t("settings.noStateSelected")}</p>
+                  <p className="text-sm text-gray-600 dark:text-gray-300">{t("settings.noStateSelected")}</p>
                   <Link href="/onboarding/select-state">
                     <Button className="w-full bg-brand hover:bg-brand-hover text-white">
                       {t("settings.chooseState")}
@@ -247,7 +248,7 @@ export default function SettingsPage() {
           </Card>
 
           {/* Profile Photo Card */}
-          <Card className="bg-gray-50">
+          <Card className="bg-gray-50 dark:bg-gray-950">
             <CardHeader>
               <CardTitle>{t("settings.profilePhoto")}</CardTitle>
             </CardHeader>
@@ -261,7 +262,7 @@ export default function SettingsPage() {
 
                 {/* User Email */}
                 <div className="text-center">
-                  <div className="text-sm text-gray-600 mb-1">{t("settings.account")}</div>
+                  <div className="text-sm text-gray-600 dark:text-gray-300 mb-1">{t("settings.account")}</div>
                   <div className="font-medium">{user.email}</div>
                 </div>
 
@@ -271,7 +272,7 @@ export default function SettingsPage() {
                     <Button
                       onClick={handleUseGooglePhoto}
                       disabled={loadingGooglePhoto}
-                      className="w-full bg-white text-black hover:bg-gray-100 border-2 border-gray-300"
+                      className="w-full bg-white dark:bg-gray-900 text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 border-2 border-gray-300 dark:border-gray-700"
                     >
                       {loadingGooglePhoto ? (
                         <>
@@ -289,7 +290,7 @@ export default function SettingsPage() {
                 )}
 
                 {!user.photoURL && (
-                  <div className="text-sm text-gray-500 text-center">
+                  <div className="text-sm text-gray-500 dark:text-gray-400 text-center">
                     {t("settings.signInWithGoogle")}
                   </div>
                 )}
@@ -297,7 +298,7 @@ export default function SettingsPage() {
                 <Button
                   onClick={handleLogout}
                   variant="outline"
-                  className="w-full text-gray-700 border-gray-300 hover:bg-gray-50"
+                  className="w-full text-gray-700 dark:text-gray-200 border-gray-300 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800"
                 >
                   <LogOut className="h-4 w-4 mr-2" aria-hidden="true" />
                   {t("common.logOut")}
@@ -307,10 +308,23 @@ export default function SettingsPage() {
           </Card>
         </div>
 
-        {/* Danger Zone */}
-        <Card className="bg-gray-50 border-red-200">
+        {/* Appearance */}
+        <Card className="bg-gray-50 dark:bg-gray-950 mb-6">
           <CardHeader>
-            <CardTitle className="text-red-600 flex items-center gap-2">
+            <CardTitle className="flex items-center gap-2">
+              <SunMoon className="h-5 w-5" />
+              {t("theme.appearance")}
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ThemeSegmentedControl />
+          </CardContent>
+        </Card>
+
+        {/* Danger Zone */}
+        <Card className="bg-gray-50 dark:bg-gray-950 border-red-200 dark:border-red-800">
+          <CardHeader>
+            <CardTitle className="text-red-600 dark:text-red-400 flex items-center gap-2">
               <AlertTriangle className="h-5 w-5" />
               {t("settings.dangerZone")}
             </CardTitle>
@@ -319,7 +333,7 @@ export default function SettingsPage() {
             <div className="space-y-4">
               <div>
                 <h3 className="font-semibold mb-2">{t("settings.resetAllData")}</h3>
-                <p className="text-sm text-gray-600 mb-4">
+                <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">
                   {t("settings.resetAllDataDesc")}
                 </p>
                 <Button
@@ -346,24 +360,24 @@ export default function SettingsPage() {
               {t("settings.switchState")}
             </DialogTitle>
             <DialogDescription className="space-y-3 pt-2 text-left">
-              <p className="font-semibold text-gray-900 text-base">
+              <p className="font-semibold text-gray-900 dark:text-gray-50 text-base">
                 {t("settings.switchStateConfirm")} {currentStateName} {t("settings.to")} {pendingStateName}.
               </p>
-              <p className="text-gray-700">
+              <p className="text-gray-700 dark:text-gray-200">
                 <strong className="text-brand">{t("settings.switchStateWarningDetail")}</strong> {currentStateName} {t("settings.willNotBeSaved")} {t("settings.willBePermanentlyLost")}. {t("settings.thisIncludes")}
               </p>
-              <ul className="list-disc list-inside space-y-1 text-gray-700 ml-2">
+              <ul className="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-200 ml-2">
                 <li>{t("settings.allTestScores")}</li>
                 <li>{t("settings.inProgressTests")}</li>
                 <li>{t("settings.trainingModeStats")}</li>
               </ul>
-              <p className="text-gray-700">
+              <p className="text-gray-700 dark:text-gray-200">
                 {t("settings.startFreshWith")} {pendingStateName} {t("settings.cannotRecover")} {currentStateName} {t("settings.progressSuffix")}
               </p>
             </DialogDescription>
           </DialogHeader>
           <DialogFooter className="gap-2 sm:gap-0">
-            <Button className="bg-white text-black hover:bg-gray-100 border-2 border-gray-300" onClick={() => setStateChangeDialog(false)}>
+            <Button className="bg-white dark:bg-gray-900 text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 border-2 border-gray-300 dark:border-gray-700" onClick={() => setStateChangeDialog(false)}>
               {t("common.cancel")}
             </Button>
             <Button variant="destructive" onClick={confirmStateChange}>
@@ -377,20 +391,20 @@ export default function SettingsPage() {
       <Dialog open={!!deleteTestId} onOpenChange={(open) => !open && setDeleteTestId(null)}>
         <DialogContent className="sm:max-w-md">
           <DialogHeader>
-            <DialogTitle className="flex items-center gap-2 text-red-600">
+            <DialogTitle className="flex items-center gap-2 text-red-600 dark:text-red-400">
               <AlertTriangle className="h-5 w-5" />
               {t("settings.deleteTestConfirm")}
             </DialogTitle>
             <DialogDescription className="space-y-3 pt-2 text-left">
-              <p className="text-gray-700">
-                {t("settings.deleteTestBody")} <strong className="text-gray-900">{deleteTest?.name}</strong>.
+              <p className="text-gray-700 dark:text-gray-200">
+                {t("settings.deleteTestBody")} <strong className="text-gray-900 dark:text-gray-50">{deleteTest?.name}</strong>.
               </p>
-              <p className="text-gray-700">{t("settings.deleteTestOthersSafe")}</p>
-              <p className="text-red-600 font-semibold">{t("settings.cannotBeUndone")}</p>
+              <p className="text-gray-700 dark:text-gray-200">{t("settings.deleteTestOthersSafe")}</p>
+              <p className="text-red-600 dark:text-red-400 font-semibold">{t("settings.cannotBeUndone")}</p>
             </DialogDescription>
           </DialogHeader>
           <DialogFooter className="gap-2 sm:gap-0">
-            <Button className="bg-white text-black hover:bg-gray-100 border-2 border-gray-300" onClick={() => setDeleteTestId(null)}>
+            <Button className="bg-white dark:bg-gray-900 text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 border-2 border-gray-300 dark:border-gray-700" onClick={() => setDeleteTestId(null)}>
               {t("common.cancel")}
             </Button>
             <Button variant="destructive" onClick={confirmDeleteTest} disabled={deletingTest}>
@@ -405,30 +419,30 @@ export default function SettingsPage() {
       <Dialog open={resetDialog} onOpenChange={setResetDialog}>
         <DialogContent className="sm:max-w-md">
           <DialogHeader>
-            <DialogTitle className="flex items-center gap-2 text-red-600">
+            <DialogTitle className="flex items-center gap-2 text-red-600 dark:text-red-400">
               <AlertTriangle className="h-5 w-5" />
               {t("settings.resetAllDataConfirm")}
             </DialogTitle>
             <DialogDescription className="space-y-3 pt-2 text-left">
-              <p className="font-semibold text-gray-900 text-base">
+              <p className="font-semibold text-gray-900 dark:text-gray-50 text-base">
                 {t("settings.permanentlyDeleteAll")}
               </p>
-              <p className="text-gray-700">
+              <p className="text-gray-700 dark:text-gray-200">
                 {t("settings.youWillLose")}
               </p>
-              <ul className="list-disc list-inside space-y-1 text-gray-700 ml-2">
+              <ul className="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-200 ml-2">
                 <li>{t("settings.allTestProgress")}</li>
                 <li>{t("settings.allTrainingStats")}</li>
                 <li>{t("settings.allAttemptHistory")}</li>
                 <li>{t("settings.dataForEveryState")}</li>
               </ul>
-              <p className="text-red-600 font-semibold">
+              <p className="text-red-600 dark:text-red-400 font-semibold">
                 {t("settings.cannotBeUndone")}
               </p>
             </DialogDescription>
           </DialogHeader>
           <DialogFooter className="gap-2 sm:gap-0">
-            <Button className="bg-white text-black hover:bg-gray-100 border-2 border-gray-300" onClick={() => setResetDialog(false)}>
+            <Button className="bg-white dark:bg-gray-900 text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 border-2 border-gray-300 dark:border-gray-700" onClick={() => setResetDialog(false)}>
               {t("common.cancel")}
             </Button>
             <Button variant="destructive" onClick={confirmReset}>

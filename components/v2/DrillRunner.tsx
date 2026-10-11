@@ -19,7 +19,6 @@ import { useIsPremium } from "@/hooks/useIsPremium";
 import { useIsNativeApp } from "@/hooks/useIsNativeApp";
 import { hasDrillProgress, isDrillLocked } from "@/lib/v2/premium";
 import { DrillLockScreen } from "./DrillLockScreen";
-import { basicsFor } from "@/lib/v2/basics";
 import { QuestionView } from "./QuestionView";
 import { useV2Paywall, V2Paywall } from "./V2Paywall";
 
@@ -52,8 +51,8 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
   const paywall = useV2Paywall(exam, "drill");
   const isNative = useIsNativeApp();
 
-  // Close goes back to the Basics overview when the drill has one.
-  const backHref = drill && basicsFor(drill).length ? routes.drill(drill.key) : routes.dashboard;
+  // Close goes back to the dashboard, where the exam level was opened from.
+  const backHref = routes.dashboard;
 
   const [question, setQuestion] = useState<QuestionV2 | null>(null);
   const [order, setOrder] = useState<number[]>([]);

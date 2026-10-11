@@ -16,10 +16,11 @@ import { hasDrillProgress, isDrillLocked } from "@/lib/v2/premium";
 import { DrillLockScreen } from "./DrillLockScreen";
 
 /**
- * Front door of a drill that has Basics: the skill list (level 1), then the
- * exam-level drill (level 2), which opens once every skill is learned or on
- * "skip ahead". Basics is free on every drill; only the exam level of a
- * Premium drill is gated, the same way DrillRunner gates it.
+ * Front door of a drill's Basics: the skill list (level 1), then the
+ * exam-level drill (level 2), whose button appears once every skill is
+ * learned. Anyone who already knows the basics opens the exam level from the
+ * dashboard's own step instead. Basics is free on every drill; only the exam
+ * level of a Premium drill is gated, the same way DrillRunner gates it.
  */
 export function DrillOverview({ exam, drillKeyParam }: { exam: ExamV2Config; drillKeyParam: string | null }) {
   const router = useRouter();
@@ -105,12 +106,11 @@ export function DrillOverview({ exam, drillKeyParam }: { exam: ExamV2Config; dri
             lock={premiumDrill}
             sub={mastered ? `${mastered} of ${questions.length} mastered` : `${questions.length} real ${exam.shortName}-style questions${premiumDrill ? ". Premium." : "."}`}
           />
-          <div className={`flex flex-col gap-2 rounded-xl border-2 p-4 ${allLearned ? "border-brand bg-brand-light" : "border-dashed border-gray-200 dark:border-gray-800"}`}>
-            <p className="text-sm text-gray-600 dark:text-gray-300">
-              {allLearned ? (mastered ? "Pick up where you left off." : "Basics done. You're ready for the real thing.") : mastered ? "Finish Basics to continue, or skip ahead." : "Opens when Basics is done."}
-            </p>
-            {!allLearned && <Link href={examHref} className="self-start text-sm font-semibold text-brand">Already know this? Skip to exam level</Link>}
-          </div>
+          {allLearned && (
+            <div className="rounded-xl border-2 border-brand bg-brand-light p-4">
+              <p className="text-sm text-gray-600 dark:text-gray-300">{mastered ? "Pick up where you left off." : "Basics done. You're ready for the real thing."}</p>
+            </div>
+          )}
         </div>
       </div>
 

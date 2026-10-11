@@ -25,8 +25,10 @@ type Status = "loading" | "audio" | "silent";
 const FACES: Record<ExplainerBeat["id"], TigerExpression> = { rule: 3, trick: 4, bad: 6, good: 1, eli5: 2, close: 1 };
 const LABELS: Record<ExplainerBeat["id"], string> = { rule: "The rule", trick: "The trick", bad: "Doesn't work", good: "Works", eli5: "ELI5 · explained like you're five", close: "" };
 
-/** How long to wait for audio and manifest before running silently. */
+/** How long to wait for the manifest (and an audio start) before running silently. */
 const AUDIO_WAIT_MS = 2500;
+/** Hard cap on the start-up wait even while audio is playing but the manifest has not arrived. */
+const MANIFEST_WAIT_MS = 8000;
 
 export function BasicsExplainer({ exam, skill, audio: given, onClose, onTryAgain }: {
   exam: ExamV2Config;
@@ -40,7 +42,6 @@ export function BasicsExplainer({ exam, skill, audio: given, onClose, onTryAgain
   const estimated = useMemo(() => estimateTimings(beats), [beats]);
 
   const audioRef = useRef<HTMLAudioElement | null>(null);
-  const audioReady = useRef(false);
   const audioFailed = useRef(false);
   const triedPlay = useRef(false);
   const mountedAt = useRef(0);
@@ -51,6 +52,7 @@ export function BasicsExplainer({ exam, skill, audio: given, onClose, onTryAgain
   const [manifest, setManifest] = useState<ExplainerManifest | null | undefined>(undefined);
   const [paused, setPaused] = useState(false);
   const [soundOffer, setSoundOffer] = useState(false);
+  const [buffering, setBuffering] = useState(false);
   const [t, setT] = useState(0);
 
   // The manifest, checked against the storyboard so stale audio never drives the wrong words.
@@ -80,18 +82,12 @@ export function BasicsExplainer({ exam, skill, audio: given, onClose, onTryAgain
       return;
     }
     a.preload = "auto";
-    const onReady = () => {
-      audioReady.current = true;
-    };
     const onError = () => {
       audioFailed.current = true;
     };
-    if (a.readyState >= 3) audioReady.current = true;
-    a.addEventListener("canplay", onReady);
     a.addEventListener("error", onError);
     return () => {
       a.pause();
-      a.removeEventListener("canplay", onReady);
       a.removeEventListener("error", onError);
     };
   }, [given, skill.id]);
@@ -102,15 +98,22 @@ export function BasicsExplainer({ exam, skill, audio: given, onClose, onTryAgain
     const tick = () => {
       const a = audioRef.current;
       const now = performance.now();
+      const goSilent = (from = 0) => {
+        // Audio started inside the tap must not keep talking under a silent run.
+        a?.pause();
+        silent.current = { accum: from, last: performance.now() };
+        shown.current = from;
+        setT(from);
+        setStatus("silent");
+      };
       if (status === "loading") {
-        const goSilent = () => {
-          // Audio started inside the tap must not keep talking under a silent run.
-          a?.pause();
-          silent.current = { accum: 0, last: performance.now() };
-          setStatus("silent");
-        };
+        const waited = now - mountedAt.current;
         if (audioFailed.current || manifest === null) goSilent();
-        else if (manifest && audioReady.current && a) {
+        else if (manifest && a) {
+          // play() accepted (in the opening tap, or here) is enough: the clock
+          // simply waits at 0 until the first bytes arrive. Phones often need
+          // longer than a fixed wait to buffer, and iPhones load nothing at
+          // all until a tap, so readiness is never a condition.
           if (!a.paused) setStatus("audio");
           else if (!triedPlay.current) {
             triedPlay.current = true;
@@ -119,15 +122,20 @@ export function BasicsExplainer({ exam, skill, audio: given, onClose, onTryAgain
               goSilent();
             });
           }
-        } else if (now - mountedAt.current > AUDIO_WAIT_MS) goSilent();
+        } else if (waited > MANIFEST_WAIT_MS || (waited > AUDIO_WAIT_MS && (!a || a.paused))) goSilent();
       } else if (status === "audio" && a) {
-        const total = manifest?.duration ?? estimated[estimated.length - 1].end;
-        const cur = a.ended ? total : a.currentTime;
-        if (Math.abs(cur - shown.current) > 0.03) {
-          shown.current = cur;
-          setT(cur);
+        if (audioFailed.current) {
+          goSilent(shown.current);
+        } else {
+          const total = manifest?.duration ?? estimated[estimated.length - 1].end;
+          const cur = a.ended ? total : a.currentTime;
+          if (Math.abs(cur - shown.current) > 0.03) {
+            shown.current = cur;
+            setT(cur);
+          }
+          setPaused(a.paused && !a.ended);
+          setBuffering(!a.paused && !a.ended && a.readyState < 3);
         }
-        setPaused(a.paused && !a.ended);
       } else if (status === "silent") {
         if (!paused) silent.current.accum += (now - silent.current.last) / 1000;
         silent.current.last = now;
@@ -135,8 +143,8 @@ export function BasicsExplainer({ exam, skill, audio: given, onClose, onTryAgain
           shown.current = silent.current.accum;
           setT(silent.current.accum);
         }
-        // Audio that showed up after we gave up on it can still be turned on.
-        if (!soundOffer && manifest && audioReady.current && !audioFailed.current) setSoundOffer(true);
+        // Sound can be turned on by a tap whenever the files exist, loaded or not.
+        if (!soundOffer && manifest && !audioFailed.current) setSoundOffer(true);
       }
       raf = requestAnimationFrame(tick);
     };
@@ -178,15 +186,21 @@ export function BasicsExplainer({ exam, skill, audio: given, onClose, onTryAgain
     } else setPaused((p) => !p);
   };
 
+  // Inside a tap, so phones allow it; the run restarts from the top in sync with the voice.
   const turnOnSound = () => {
     const a = audioRef.current;
     if (!a) return;
-    a.currentTime = 0;
+    try {
+      a.currentTime = 0;
+    } catch {
+      // Not loaded yet: it starts at 0 anyway.
+    }
     a.play()
       .then(() => {
         setSoundOffer(false);
         shown.current = 0;
         setT(0);
+        setPaused(false);
         setStatus("audio");
       })
       .catch(() => setSoundOffer(false));
@@ -218,8 +232,8 @@ export function BasicsExplainer({ exam, skill, audio: given, onClose, onTryAgain
             <div className="text-xs text-gray-500 dark:text-gray-400">Explainer · {Math.round(total)} seconds{status === "silent" ? " · no sound" : ""}</div>
           </div>
           {soundOffer && (
-            <button type="button" onClick={turnOnSound} className="flex items-center gap-1.5 rounded-full border-2 border-gray-200 dark:border-gray-800 px-3 py-1.5 text-sm font-semibold text-brand">
-              <Volume2 className="h-4 w-4" /> Sound
+            <button type="button" onClick={turnOnSound} className="v2-tap flex items-center gap-1.5 rounded-full bg-brand px-4 text-sm font-bold text-white">
+              <Volume2 className="h-4 w-4" /> Tap for sound
             </button>
           )}
         </div>
@@ -262,7 +276,7 @@ export function BasicsExplainer({ exam, skill, audio: given, onClose, onTryAgain
               <button type="button" onClick={togglePause} className="v2-tap flex w-12 items-center justify-center rounded-xl border-2 border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-200" aria-label={paused ? "Play" : "Pause"}>
                 {paused ? <Play className="h-5 w-5" /> : <Pause className="h-5 w-5" />}
               </button>
-              <div className="flex-1 text-center text-sm text-gray-500 dark:text-gray-400">{status === "loading" ? "Starting..." : "Tap anywhere to pause"}</div>
+              <div className="flex-1 text-center text-sm text-gray-500 dark:text-gray-400">{status === "loading" ? "Starting..." : buffering ? "Loading sound..." : "Tap anywhere to pause"}</div>
               <button type="button" onClick={onClose} className="v2-tap px-3 text-sm font-semibold text-gray-500 dark:text-gray-400">
                 Skip
               </button>

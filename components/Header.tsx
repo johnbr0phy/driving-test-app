@@ -13,6 +13,7 @@ import Image from "next/image";
 import { Shield, BarChart3 } from "lucide-react";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { TestSwitcher } from "@/components/TestSwitcher";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import { EXAMS } from "@/lib/exams";
 import { useExamStarted } from "@/hooks/useExamStarted";
 
@@ -50,17 +51,18 @@ export function Header() {
   }
 
   return (
-    <header className="border-b bg-white">
+    <header className="border-b bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <Link href={user || isGuest ? "/dashboard" : "/"} className="flex items-center gap-2 group flex-shrink-0">
             <Image src={isPremium ? "/tiger_face_01.png" : "/tiger.png"} alt="tigertest.io" width={40} height={40} className="w-10 h-10" />
-            <span className="text-2xl font-bold text-gray-900 group-hover:opacity-80 transition-opacity hidden sm:inline">
+            <span className="text-2xl font-bold text-gray-900 dark:text-gray-50 group-hover:opacity-80 transition-opacity hidden sm:inline">
               tigertest.io
             </span>
           </Link>
 
           <div className="flex items-center gap-2 sm:gap-4">
             <TestSwitcher />
+            <ThemeToggle />
 
             {/* Language Toggle - shown only on the homepage; other pages render it in the footer */}
             {isHomepage && <LanguageSwitcher />}
@@ -68,7 +70,7 @@ export function Header() {
             {(user || isGuest) && (
               <Link
                 href="/stats"
-                className="text-gray-600 hover:text-gray-900 transition-all duration-200 hover:scale-110 active:scale-95"
+                className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-50 transition-all duration-200 hover:scale-110 active:scale-95"
                 title={t("stats.yourStats")}
               >
                 <BarChart3 className="h-5 w-5 stats-icon" />
@@ -78,7 +80,7 @@ export function Header() {
             {user ? (
               <>
                 {isAdmin && (
-                  <Link href="/admin/v2" className="text-gray-600 hover:text-gray-900 transition-colors" title="Admin Dashboard">
+                  <Link href="/admin/v2" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-50 transition-colors" title="Admin Dashboard">
                     <Shield className="h-5 w-5" />
                   </Link>
                 )}
@@ -91,13 +93,13 @@ export function Header() {
               </>
             ) : isGuest && !isOnboarding ? (
               <Link href="/signup">
-                <Button variant="outline" className="text-gray-700 border-gray-300 hover:bg-gray-50 font-semibold">
+                <Button variant="outline" className="text-gray-700 dark:text-gray-200 border-gray-300 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800 font-semibold">
                   {t("common.signUpToSave")}
                 </Button>
               </Link>
             ) : !(guest && isOnboarding) ? (
               <Link href="/login">
-                <Button variant="outline" className="text-gray-700 border-gray-300 hover:bg-gray-50">{t("common.signIn")}</Button>
+                <Button variant="outline" className="text-gray-700 dark:text-gray-200 border-gray-300 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800">{t("common.signIn")}</Button>
               </Link>
             ) : null}
           </div>

@@ -51,7 +51,7 @@ export function WebViewGoogleWarning({ onGoogleSignIn, disabled }: WebViewGoogle
       {/* Google Sign-In Button */}
       <Button
         type="button"
-        className="w-full bg-white text-black hover:bg-gray-100 border-2 border-gray-300"
+        className="w-full bg-white dark:bg-gray-900 text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 border-2 border-gray-300 dark:border-gray-700"
         onClick={handleGoogleClick}
         disabled={disabled}
       >
@@ -79,19 +79,19 @@ export function WebViewGoogleWarning({ onGoogleSignIn, disabled }: WebViewGoogle
       {/* WebView Warning Modal */}
       {showWarning && (
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
-          <div className="bg-white rounded-lg p-6 max-w-md w-full">
+          <div className="bg-white dark:bg-gray-900 rounded-lg p-6 max-w-md w-full">
             <h3 className="text-lg font-semibold mb-2">{t("webView.openInBrowser")}</h3>
-            <p className="text-gray-600 text-sm mb-4">
+            <p className="text-gray-600 dark:text-gray-300 text-sm mb-4">
               {t("webView.googleSignInWarning")}
             </p>
-            <p className="text-gray-600 text-sm mb-4">
+            <p className="text-gray-600 dark:text-gray-300 text-sm mb-4">
               {t("webView.canAlsoUseEmail")}
             </p>
 
             <div className="space-y-3">
               <Button
                 onClick={openInDefaultBrowser}
-                className="w-full bg-black text-white hover:bg-gray-800"
+                className="w-full bg-black dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200"
               >
                 <svg className="mr-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
@@ -101,11 +101,11 @@ export function WebViewGoogleWarning({ onGoogleSignIn, disabled }: WebViewGoogle
 
               <Button
                 onClick={handleCopyLink}
-                className="w-full bg-white text-black hover:bg-gray-100 border-2 border-gray-300"
+                className="w-full bg-white dark:bg-gray-900 text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 border-2 border-gray-300 dark:border-gray-700"
               >
                 {copied ? (
                   <>
-                    <svg className="mr-2 h-4 w-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="mr-2 h-4 w-4 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                     {t("webView.linkCopied")}
@@ -122,7 +122,7 @@ export function WebViewGoogleWarning({ onGoogleSignIn, disabled }: WebViewGoogle
 
               <Button
                 onClick={() => setShowWarning(false)}
-                className="w-full bg-white text-gray-600 hover:bg-gray-50 border border-gray-200"
+                className="w-full bg-white dark:bg-gray-900 text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 border border-gray-200 dark:border-gray-800"
               >
                 {t("webView.useEmailInstead")}
               </Button>

@@ -48,21 +48,21 @@ export function QuestionView({ question, stimulus, optionOrder, answer, onAnswer
     const isSel = selected(orig);
     const isKey = question.correct?.includes(orig);
     if (reveal) {
-      if (isKey) return "border-green-500 bg-green-50";
-      if (isSel && !isKey) return "border-red-400 bg-red-50";
-      return "border-gray-200 opacity-60";
+      if (isKey) return "border-green-500 bg-green-50 dark:bg-green-950";
+      if (isSel && !isKey) return "border-red-400 dark:border-red-600 bg-red-50 dark:bg-red-950";
+      return "border-gray-200 dark:border-gray-800 opacity-60";
     }
     if (isSel) return "border-brand bg-brand-light ring-1 ring-brand";
-    return "border-gray-300 bg-white active:bg-brand-light [@media(hover:hover)]:hover:border-brand";
+    return "border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 active:bg-brand-light [@media(hover:hover)]:hover:border-brand";
   };
 
   const stimulusBlock = stimulus && (
-    <div className="rounded-xl border border-gray-200 bg-white p-4 md:p-5">
+    <div className="rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-4 md:p-5">
       <div className={`flex items-start justify-between gap-3 ${passageOpen ? "mb-2" : ""}`}>
-        <div className="text-sm font-semibold text-gray-600">{stimulus.title || "Passage"}</div>
+        <div className="text-sm font-semibold text-gray-600 dark:text-gray-300">{stimulus.title || "Passage"}</div>
         <button
           type="button"
-          className="v2-tap -m-2 shrink-0 rounded-md p-2 text-gray-500 hover:bg-gray-100 hover:text-brand"
+          className="v2-tap -m-2 shrink-0 rounded-md p-2 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-brand"
           onClick={() => setPassageOpen((o) => !o)}
           aria-label={passageOpen ? "Hide passage" : "Show passage"}
           aria-expanded={passageOpen}
@@ -86,7 +86,7 @@ export function QuestionView({ question, stimulus, optionOrder, answer, onAnswer
 
   const questionBlock = (
     <div>
-      {label && <div className="mb-2 text-xs font-semibold uppercase tracking-wide text-gray-500">{label}</div>}
+      {label && <div className="mb-2 text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400">{label}</div>}
       <RichText text={question.stem} className="text-[17px] font-medium md:text-lg" />
       {question.figure && (
         <div className="mt-3">
@@ -96,7 +96,7 @@ export function QuestionView({ question, stimulus, optionOrder, answer, onAnswer
 
       {question.format === "numeric" ? (
         <div className="mt-4">
-          <label className="block text-xs font-semibold uppercase tracking-wide text-gray-500" htmlFor={`num-${question.id}`}>
+          <label className="block text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400" htmlFor={`num-${question.id}`}>
             Your answer
           </label>
           <input
@@ -111,18 +111,18 @@ export function QuestionView({ question, stimulus, optionOrder, answer, onAnswer
             onChange={(e) => onAnswer(e.target.value.replace(/[^0-9./-]/g, "").slice(0, 7))}
             placeholder="e.g. 12, 3/4, -0.5"
             className={`v2-tap mt-1 w-full max-w-xs rounded-lg border-2 px-4 text-xl font-semibold tabular-nums outline-none focus:border-brand ${
-              reveal ? (correct ? "border-green-500 bg-green-50" : "border-red-400 bg-red-50") : "border-gray-300 bg-white"
+              reveal ? (correct ? "border-green-500 bg-green-50 dark:bg-green-950" : "border-red-400 dark:border-red-600 bg-red-50 dark:bg-red-950") : "border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900"
             }`}
           />
-          <div className="mt-1 text-xs text-gray-500">
+          <div className="mt-1 text-xs text-gray-500 dark:text-gray-400">
             {typeof answer === "string" && answer.trim() !== "" && numericValue === null ? (
-              <span className="text-red-600">Enter a number, decimal, or fraction like 3/4.</span>
+              <span className="text-red-600 dark:text-red-400">Enter a number, decimal, or fraction like 3/4.</span>
             ) : (
               "Digits, a decimal point, a slash for fractions, and a leading minus sign."
             )}
           </div>
           {reveal && !correct && question.numeric && (
-            <div className="mt-2 text-sm font-semibold text-green-700">Correct answer: {question.numeric.answers[0]}</div>
+            <div className="mt-2 text-sm font-semibold text-green-700 dark:text-green-300">Correct answer: {question.numeric.answers[0]}</div>
           )}
         </div>
       ) : (
@@ -140,7 +140,7 @@ export function QuestionView({ question, stimulus, optionOrder, answer, onAnswer
                 >
                   <span
                     className={`mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full border-2 text-sm font-bold ${
-                      selected(orig) && !reveal ? "border-brand bg-brand text-white" : "border-gray-400 text-gray-700"
+                      selected(orig) && !reveal ? "border-brand bg-brand text-white" : "border-gray-400 dark:border-gray-600 text-gray-700 dark:text-gray-200"
                     } ${reveal && question.correct?.includes(orig) ? "border-green-600 bg-green-600 text-white" : ""}`}
                   >
                     {question.format === "multi" && selected(orig) ? <Check className="h-4 w-4" /> : OPTION_LETTERS[pos]}
@@ -148,15 +148,15 @@ export function QuestionView({ question, stimulus, optionOrder, answer, onAnswer
                   <span className="flex-1 pt-0.5">
                     <RichText text={question.options?.[orig] ?? ""} className="text-[15px] md:text-base" />
                   </span>
-                  {reveal && question.correct?.includes(orig) && <Check className="mt-1 h-5 w-5 shrink-0 text-green-600" />}
-                  {reveal && selected(orig) && !question.correct?.includes(orig) && <X className="mt-1 h-5 w-5 shrink-0 text-red-500" />}
+                  {reveal && question.correct?.includes(orig) && <Check className="mt-1 h-5 w-5 shrink-0 text-green-600 dark:text-green-400" />}
+                  {reveal && selected(orig) && !question.correct?.includes(orig) && <X className="mt-1 h-5 w-5 shrink-0 text-red-500 dark:text-red-400" />}
                 </button>
                 {eliminatorOn && !reveal && onToggleEliminate && (
                   <button
                     type="button"
                     onClick={() => onToggleEliminate(orig)}
                     aria-label={struck ? `Restore choice ${OPTION_LETTERS[pos]}` : `Eliminate choice ${OPTION_LETTERS[pos]}`}
-                    className={`v2-tap w-11 shrink-0 rounded-lg border text-xs font-bold ${struck ? "border-gray-400 bg-gray-100 text-gray-600" : "border-gray-300 bg-white text-gray-500"}`}
+                    className={`v2-tap w-11 shrink-0 rounded-lg border text-xs font-bold ${struck ? "border-gray-400 dark:border-gray-600 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300" : "border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-gray-500 dark:text-gray-400"}`}
                   >
                     {struck ? "Undo" : <span className="line-through">{OPTION_LETTERS[pos]}</span>}
                   </button>
@@ -164,15 +164,15 @@ export function QuestionView({ question, stimulus, optionOrder, answer, onAnswer
               </div>
             );
           })}
-          {question.format === "multi" && !reveal && <div className="text-xs text-gray-500">Select every answer that applies.</div>}
+          {question.format === "multi" && !reveal && <div className="text-xs text-gray-500 dark:text-gray-400">Select every answer that applies.</div>}
         </div>
       )}
 
       {reveal && (
-        <div className={`v2-pop mt-5 rounded-xl border p-4 ${correct ? "border-green-200 bg-green-50" : "border-amber-200 bg-amber-50"}`}>
-          <div className={`mb-1 text-sm font-bold ${correct ? "text-green-800" : "text-amber-900"}`}>{correct ? "Correct" : "Not quite"}</div>
-          <RichText text={relabelChoices(question.explanation, optionOrder)} className="text-[15px] text-gray-800" />
-          {question.skill && <div className="mt-2 text-xs text-gray-500">Skill: {question.skill}</div>}
+        <div className={`v2-pop mt-5 rounded-xl border p-4 ${correct ? "border-green-200 dark:border-green-800 bg-green-50 dark:bg-green-950" : "border-amber-200 dark:border-amber-800 bg-amber-50 dark:bg-amber-950"}`}>
+          <div className={`mb-1 text-sm font-bold ${correct ? "text-green-800 dark:text-green-300" : "text-amber-900 dark:text-amber-200"}`}>{correct ? "Correct" : "Not quite"}</div>
+          <RichText text={relabelChoices(question.explanation, optionOrder)} className="text-[15px] text-gray-800 dark:text-gray-100" />
+          {question.skill && <div className="mt-2 text-xs text-gray-500 dark:text-gray-400">Skill: {question.skill}</div>}
         </div>
       )}
     </div>

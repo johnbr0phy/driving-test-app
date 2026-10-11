@@ -66,12 +66,12 @@ export function TestSwitcher({ className = "" }: { className?: string }) {
     <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger
         aria-label={`Switch practice test, currently ${current.shortName}`}
-        className={`relative flex items-center gap-1.5 rounded-full bg-gray-100 px-2.5 py-1.5 text-sm text-gray-700 transition-colors hover:bg-gray-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-1 ${className}`}
+        className={`relative flex items-center gap-1.5 rounded-full bg-gray-100 dark:bg-gray-800 px-2.5 py-1.5 text-sm text-gray-700 dark:text-gray-200 transition-colors hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-1 ${className}`}
       >
-        <LayoutGrid className="h-4 w-4 text-gray-500" aria-hidden="true" />
+        <LayoutGrid className="h-4 w-4 text-gray-500 dark:text-gray-400" aria-hidden="true" />
         <span className="hidden sm:inline font-medium">All tests</span>
         <ChevronDown
-          className={`h-3.5 w-3.5 text-gray-500 transition-transform ${open ? "rotate-180" : ""}`}
+          className={`h-3.5 w-3.5 text-gray-500 dark:text-gray-400 transition-transform ${open ? "rotate-180" : ""}`}
           aria-hidden="true"
         />
         {showNew && (
@@ -94,7 +94,7 @@ export function TestSwitcher({ className = "" }: { className?: string }) {
         className="w-[calc(100vw-24px)] sm:w-[20rem] p-0 overflow-hidden rounded-xl"
       >
         <div data-theme={current.theme}>
-          <div className="relative border-b border-gray-100 p-2">
+          <div className="relative border-b border-gray-100 dark:border-gray-800 p-2">
             <Search
               className="pointer-events-none absolute left-[18px] top-1/2 h-4 w-4 -translate-y-1/2 text-gray-400"
               aria-hidden="true"
@@ -115,7 +115,7 @@ export function TestSwitcher({ className = "" }: { className?: string }) {
               placeholder="Search tests"
               aria-label="Search practice tests"
               autoComplete="off"
-              className="h-9 w-full rounded-lg bg-gray-100 pl-9 pr-8 text-base sm:text-sm text-gray-900 placeholder:text-gray-400 focus:bg-white focus:outline-none focus:ring-2 focus:ring-brand"
+              className="h-9 w-full rounded-lg bg-gray-100 dark:bg-gray-800 pl-9 pr-8 text-base sm:text-sm text-gray-900 dark:text-gray-50 placeholder:text-gray-400 focus:bg-white dark:focus:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-brand"
             />
             {searching && (
               <button
@@ -125,7 +125,7 @@ export function TestSwitcher({ className = "" }: { className?: string }) {
                   inputRef.current?.focus();
                 }}
                 aria-label="Clear search"
-                className="absolute right-4 top-1/2 -translate-y-1/2 rounded p-0.5 text-gray-400 hover:text-gray-600"
+                className="absolute right-4 top-1/2 -translate-y-1/2 rounded p-0.5 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300"
               >
                 <X className="h-3.5 w-3.5" aria-hidden="true" />
               </button>
@@ -134,7 +134,7 @@ export function TestSwitcher({ className = "" }: { className?: string }) {
 
           <div className="max-h-[min(60vh,26rem,calc(var(--radix-popover-content-available-height)_-_6.5rem))] overflow-y-auto overscroll-contain p-1.5">
             {!searching && (
-              <div className="mb-1 border-b border-gray-100 pb-1.5">
+              <div className="mb-1 border-b border-gray-100 dark:border-gray-800 pb-1.5">
                 <SwitcherItem
                   test={current}
                   href={hrefFor(current)}
@@ -146,7 +146,7 @@ export function TestSwitcher({ className = "" }: { className?: string }) {
             )}
 
             {groups.length === 0 && (
-              <p className="px-2.5 py-6 text-center text-sm text-gray-500">
+              <p className="px-2.5 py-6 text-center text-sm text-gray-500 dark:text-gray-400">
                 No tests match &ldquo;{query}&rdquo;.
               </p>
             )}
@@ -176,7 +176,7 @@ export function TestSwitcher({ className = "" }: { className?: string }) {
           <Link
             href="/tests"
             onClick={close}
-            className="block border-t border-gray-100 px-4 py-2.5 text-center text-sm font-medium text-brand hover:bg-gray-50"
+            className="block border-t border-gray-100 dark:border-gray-800 px-4 py-2.5 text-center text-sm font-medium text-brand hover:bg-gray-50 dark:hover:bg-gray-800"
           >
             Browse all tests →
           </Link>
@@ -205,18 +205,18 @@ function SwitcherItem({
         href={href}
         onClick={onSelect}
         aria-current={isActive ? "page" : undefined}
-        className={`flex items-center gap-2.5 rounded-lg px-2.5 py-1.5 transition-colors hover:bg-gray-100 ${
-          isActive ? "bg-gray-100" : ""
+        className={`flex items-center gap-2.5 rounded-lg px-2.5 py-1.5 transition-colors hover:bg-gray-100 dark:hover:bg-gray-800 ${
+          isActive ? "bg-gray-100 dark:bg-gray-800" : ""
         }`}
       >
         <span className={`flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-md ${hasTigerSet(test.id) ? "" : "bg-brand text-white"}`}>
           <TestIcon examId={test.id} icon={test.icon} className={hasTigerSet(test.id) ? "h-7 w-7" : "h-3.5 w-3.5"} />
         </span>
         <span className="min-w-0 flex-1 leading-tight">
-          <span className="block truncate text-sm font-medium text-gray-900">
+          <span className="block truncate text-sm font-medium text-gray-900 dark:text-gray-50">
             {test.shortName}
           </span>
-          <span className={`block truncate text-[11px] ${started ? "font-medium text-brand" : "text-gray-500"}`}>
+          <span className={`block truncate text-[11px] ${started ? "font-medium text-brand" : "text-gray-500 dark:text-gray-400"}`}>
             {started ? "In progress" : test.org}
           </span>
         </span>

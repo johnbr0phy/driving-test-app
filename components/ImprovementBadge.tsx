@@ -17,14 +17,14 @@ export function ImprovementBadge({ firstScore, bestScore, totalQuestions }: Impr
 
   if (improvement === 0) {
     return (
-      <div className="text-sm text-gray-500">
+      <div className="text-sm text-gray-500 dark:text-gray-400">
         {t("improvement.noImprovementYet")}
       </div>
     );
   }
 
   return (
-    <div className="flex items-center gap-1 text-green-600 font-semibold">
+    <div className="flex items-center gap-1 text-green-600 dark:text-green-400 font-semibold">
       <TrendingUp className="h-4 w-4" />
       <span>+{improvement}%</span>
     </div>

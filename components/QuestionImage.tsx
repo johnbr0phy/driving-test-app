@@ -13,7 +13,7 @@ export function QuestionImage({ questionId }: QuestionImageProps) {
 
   return (
     <div
-      className="relative w-24 h-24 md:w-32 md:h-32 rounded-lg overflow-hidden border border-gray-200 shrink-0"
+      className="relative w-24 h-24 md:w-32 md:h-32 rounded-lg overflow-hidden border border-gray-200 dark:border-gray-800 shrink-0"
       style={{
         backgroundImage: "linear-gradient(135deg, #FBE7C6, #F8B5A0)",
       }}

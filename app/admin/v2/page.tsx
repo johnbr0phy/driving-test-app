@@ -264,10 +264,10 @@ function StatTile({ label, value, sub, spark, accent, delta }: {
   spark?: number[]; accent: string; delta?: React.ReactNode;
 }) {
   return (
-    <div className="bg-white rounded-xl border border-gray-200/80 shadow-sm p-5 flex flex-col gap-1.5">
-      <p className="text-[13px] font-medium text-gray-500">{label}</p>
+    <div className="bg-white dark:bg-gray-900 rounded-xl border border-gray-200/80 dark:border-gray-800/80 shadow-sm p-5 flex flex-col gap-1.5">
+      <p className="text-[13px] font-medium text-gray-500 dark:text-gray-400">{label}</p>
       <div className="flex items-end justify-between gap-3">
-        <p className="text-[32px] leading-none font-semibold text-gray-900 tracking-tight">{value}</p>
+        <p className="text-[32px] leading-none font-semibold text-gray-900 dark:text-gray-50 tracking-tight">{value}</p>
         {spark && <Sparkline points={spark} accent={accent} />}
       </div>
       {delta}
@@ -282,9 +282,9 @@ function ChartTooltip({ active, payload, label, format }: {
 }) {
   if (!active || !payload?.length) return null;
   return (
-    <div className="bg-white border border-gray-200 rounded-lg shadow-md px-3 py-2">
-      <p className="text-xs text-gray-500">{label}</p>
-      <p className="text-sm font-semibold text-gray-900">{format(Number(payload[0].value) || 0)}</p>
+    <div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-lg shadow-md px-3 py-2">
+      <p className="text-xs text-gray-500 dark:text-gray-400">{label}</p>
+      <p className="text-sm font-semibold text-gray-900 dark:text-gray-50">{format(Number(payload[0].value) || 0)}</p>
     </div>
   );
 }
@@ -295,9 +295,9 @@ function ChartCard({ title, subtitle, children, footnote }: {
   title: string; subtitle?: string; children: React.ReactNode; footnote?: string;
 }) {
   return (
-    <div className="bg-white rounded-xl border border-gray-200/80 shadow-sm p-5">
+    <div className="bg-white dark:bg-gray-900 rounded-xl border border-gray-200/80 dark:border-gray-800/80 shadow-sm p-5">
       <div className="mb-4 flex items-baseline justify-between gap-2">
-        <h2 className="text-sm font-semibold text-gray-900">{title}</h2>
+        <h2 className="text-sm font-semibold text-gray-900 dark:text-gray-50">{title}</h2>
         {subtitle && <p className="text-xs text-gray-400">{subtitle}</p>}
       </div>
       <div className="h-56">{children}</div>
@@ -332,15 +332,15 @@ function Funnel({ data }: { data: FunnelStage[] }) {
             {stage.section && (
               <p
                 className={`mb-2 text-[11px] uppercase tracking-wide text-gray-400 ${
-                  i > 0 ? "mt-4 border-t border-gray-100 pt-3" : ""
+                  i > 0 ? "mt-4 border-t border-gray-100 dark:border-gray-800 pt-3" : ""
                 }`}
               >
                 {stage.section}
               </p>
             )}
             <div className="grid grid-cols-[150px_1fr_140px] items-center gap-3">
-              <p className="text-sm text-gray-600">{stage.label}</p>
-              <div className="h-7 bg-gray-50 rounded-md overflow-hidden relative">
+              <p className="text-sm text-gray-600 dark:text-gray-300">{stage.label}</p>
+              <div className="h-7 bg-gray-50 dark:bg-gray-950 rounded-md overflow-hidden relative">
                 <div
                   className="h-full rounded-r-md flex items-center"
                   style={{ width: `${Math.max(pctOfTop, 2)}%`, backgroundColor: COLORS.funnelRamp[i] }}
@@ -403,9 +403,9 @@ function VisitorFunnel({ data }: { data: NonNullable<Metrics["visitorFunnel"]> }
   const purchased = rows.tried.purchased + rows.cold.purchased;
 
   return (
-    <div className="bg-white rounded-xl border border-gray-200/80 shadow-sm p-5">
+    <div className="bg-white dark:bg-gray-900 rounded-xl border border-gray-200/80 dark:border-gray-800/80 shadow-sm p-5">
       <div className="mb-4 flex flex-wrap items-baseline justify-between gap-2">
-        <h2 className="text-sm font-semibold text-gray-900">Funnel</h2>
+        <h2 className="text-sm font-semibold text-gray-900 dark:text-gray-50">Funnel</h2>
         <div className="flex items-center gap-3">
           {data.startedAt && (
             <p className="text-xs text-gray-400">{rate(purchased, visits)} visitor to purchase</p>
@@ -416,7 +416,7 @@ function VisitorFunnel({ data }: { data: NonNullable<Metrics["visitorFunnel"]> }
                 key={r}
                 onClick={() => setRange(r)}
                 className={`text-xs px-2 py-1 rounded-md ${
-                  range === r ? "bg-gray-900 text-white" : "text-gray-500 hover:text-gray-900"
+                  range === r ? "bg-gray-900 dark:bg-white text-white dark:text-gray-900" : "text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-50"
                 }`}
               >
                 {r === "all" ? "Since start" : r}
@@ -446,22 +446,22 @@ function VisitorFunnel({ data }: { data: NonNullable<Metrics["visitorFunnel"]> }
             ]}
           />
           <div className="mt-5 grid gap-4 sm:grid-cols-3">
-            <div className="rounded-lg bg-gray-50 p-3">
+            <div className="rounded-lg bg-gray-50 dark:bg-gray-950 p-3">
               <p className="text-[11px] uppercase tracking-wide text-gray-400">Signup page drop-off</p>
-              <p className="mt-1 text-lg font-semibold text-gray-900">
+              <p className="mt-1 text-lg font-semibold text-gray-900 dark:text-gray-50">
                 {opened > 0 ? pct(Math.max(opened - signups, 0), opened) : "n/a"}
               </p>
-              <p className="text-xs text-gray-500">opened signup, left without an account</p>
+              <p className="text-xs text-gray-500 dark:text-gray-400">opened signup, left without an account</p>
             </div>
-            <div className="rounded-lg bg-gray-50 p-3">
+            <div className="rounded-lg bg-gray-50 dark:bg-gray-950 p-3">
               <p className="text-[11px] uppercase tracking-wide text-gray-400">Tried, never signed up</p>
-              <p className="mt-1 text-lg font-semibold text-gray-900">{fmtInt(Math.max(answered - tried, 0))}</p>
-              <p className="text-xs text-gray-500">guests a signup wall would put at risk</p>
+              <p className="mt-1 text-lg font-semibold text-gray-900 dark:text-gray-50">{fmtInt(Math.max(answered - tried, 0))}</p>
+              <p className="text-xs text-gray-500 dark:text-gray-400">guests a signup wall would put at risk</p>
             </div>
-            <div className="rounded-lg bg-gray-50 p-3">
+            <div className="rounded-lg bg-gray-50 dark:bg-gray-950 p-3">
               <p className="text-[11px] uppercase tracking-wide text-gray-400">New accounts that tried first</p>
-              <p className="mt-1 text-lg font-semibold text-gray-900">{pct(tried, tried + cold)}</p>
-              <p className="text-xs text-gray-500">
+              <p className="mt-1 text-lg font-semibold text-gray-900 dark:text-gray-50">{pct(tried, tried + cold)}</p>
+              <p className="text-xs text-gray-500 dark:text-gray-400">
                 {fmtInt(tried)} tried first, {fmtInt(cold)} signed up cold
               </p>
             </div>
@@ -483,8 +483,8 @@ function VisitorFunnel({ data }: { data: NonNullable<Metrics["visitorFunnel"]> }
                   ["Tried before signing up", rows.tried],
                   ["Signed up cold", rows.cold],
                 ] as const).map(([label, o]) => (
-                  <tr key={label} className="border-t border-gray-100">
-                    <td className="py-2 font-medium text-gray-900">{label}</td>
+                  <tr key={label} className="border-t border-gray-100 dark:border-gray-800">
+                    <td className="py-2 font-medium text-gray-900 dark:text-gray-50">{label}</td>
                     <td className="py-2 pl-4 text-right tabular-nums">{fmtInt(o.accounts)}</td>
                     <td className="py-2 pl-4 text-right tabular-nums">{fmtInt(o.answered)}</td>
                     <td className="py-2 pl-4 text-right tabular-nums">{fmtInt(o.paywall)}</td>
@@ -516,9 +516,9 @@ function QuestionsByExam({ rows, totalQuestions, backfillPending }: {
   const attributed = rows.reduce((n, r) => n + r.total, 0);
   const max = rows.length > 0 ? rows[0].total : 0;
   return (
-    <div className="bg-white rounded-xl border border-gray-200/80 shadow-sm p-5">
+    <div className="bg-white dark:bg-gray-900 rounded-xl border border-gray-200/80 dark:border-gray-800/80 shadow-sm p-5">
       <div className="mb-4 flex items-baseline justify-between gap-2">
-        <h2 className="text-sm font-semibold text-gray-900">Questions by exam</h2>
+        <h2 className="text-sm font-semibold text-gray-900 dark:text-gray-50">Questions by exam</h2>
         <p className="text-xs text-gray-400">
           {fmtInt(attributed)} attributed of {fmtInt(totalQuestions)} all-time
         </p>
@@ -541,19 +541,19 @@ function QuestionsByExam({ rows, totalQuestions, backfillPending }: {
             </thead>
             <tbody>
               {rows.map((r) => (
-                <tr key={r.id} className="border-t border-gray-100">
-                  <td className="py-2 font-medium text-gray-900">{r.label}</td>
-                  <td className="py-2 pl-4 text-right tabular-nums text-gray-600">{fmtInt(r.today)}</td>
-                  <td className="py-2 pl-4 text-right tabular-nums text-gray-600">
+                <tr key={r.id} className="border-t border-gray-100 dark:border-gray-800">
+                  <td className="py-2 font-medium text-gray-900 dark:text-gray-50">{r.label}</td>
+                  <td className="py-2 pl-4 text-right tabular-nums text-gray-600 dark:text-gray-300">{fmtInt(r.today)}</td>
+                  <td className="py-2 pl-4 text-right tabular-nums text-gray-600 dark:text-gray-300">
                     {fmtInt(r.last7d)}
                     <span className="ml-1.5 text-[11px]">
                       <Delta now={r.last7d} prev={r.prev7d} suffix="vs prior 7d" />
                     </span>
                   </td>
-                  <td className="py-2 pl-4 text-right tabular-nums text-gray-900">{fmtInt(r.total)}</td>
+                  <td className="py-2 pl-4 text-right tabular-nums text-gray-900 dark:text-gray-50">{fmtInt(r.total)}</td>
                   <td className="py-2 pl-4">
                     <div className="flex items-center gap-2 justify-end">
-                      <div className="h-1.5 w-full max-w-[160px] bg-gray-100 rounded overflow-hidden">
+                      <div className="h-1.5 w-full max-w-[160px] bg-gray-100 dark:bg-gray-800 rounded overflow-hidden">
                         <div
                           className="h-full rounded"
                           style={{ width: `${max > 0 ? (r.total / max) * 100 : 0}%`, background: COLORS.engagement }}
@@ -584,9 +584,9 @@ function TestRequests({ data }: { data: NonNullable<Metrics["testRequests"]> }) 
   const max = data.byPick.reduce((m, r) => Math.max(m, r.clicks), 0);
   const pickLabel = (id: string) => data.byPick.find((p) => p.id === id)?.label ?? id;
   return (
-    <div className="bg-white rounded-xl border border-gray-200/80 shadow-sm p-5">
+    <div className="bg-white dark:bg-gray-900 rounded-xl border border-gray-200/80 dark:border-gray-800/80 shadow-sm p-5">
       <div className="mb-4 flex items-baseline justify-between gap-2">
-        <h2 className="text-sm font-semibold text-gray-900">What should we build next?</h2>
+        <h2 className="text-sm font-semibold text-gray-900 dark:text-gray-50">What should we build next?</h2>
         <p className="text-xs text-gray-400">{fmtInt(data.total)} answers</p>
       </div>
       {data.total === 0 ? (
@@ -604,12 +604,12 @@ function TestRequests({ data }: { data: NonNullable<Metrics["testRequests"]> }) 
             </thead>
             <tbody>
               {data.byPick.map((r) => (
-                <tr key={r.id} className="border-t border-gray-100">
-                  <td className="py-2 font-medium text-gray-900">{r.label}</td>
-                  <td className="py-2 pl-4 text-right tabular-nums text-gray-900">{fmtInt(r.clicks)}</td>
-                  <td className="py-2 pl-4 text-right tabular-nums text-gray-600">{fmtInt(r.withDetails)}</td>
+                <tr key={r.id} className="border-t border-gray-100 dark:border-gray-800">
+                  <td className="py-2 font-medium text-gray-900 dark:text-gray-50">{r.label}</td>
+                  <td className="py-2 pl-4 text-right tabular-nums text-gray-900 dark:text-gray-50">{fmtInt(r.clicks)}</td>
+                  <td className="py-2 pl-4 text-right tabular-nums text-gray-600 dark:text-gray-300">{fmtInt(r.withDetails)}</td>
                   <td className="py-2 pl-4">
-                    <div className="h-1.5 w-full max-w-[160px] bg-gray-100 rounded overflow-hidden ml-auto">
+                    <div className="h-1.5 w-full max-w-[160px] bg-gray-100 dark:bg-gray-800 rounded overflow-hidden ml-auto">
                       <div
                         className="h-full rounded"
                         style={{ width: `${max > 0 ? (r.clicks / max) * 100 : 0}%`, background: COLORS.engagement }}
@@ -627,8 +627,8 @@ function TestRequests({ data }: { data: NonNullable<Metrics["testRequests"]> }) 
             ) : (
               <ul className="space-y-2 max-h-72 overflow-y-auto pr-1">
                 {data.details.map((d, i) => (
-                  <li key={i} className="text-sm border-t border-gray-100 pt-2 first:border-0 first:pt-0">
-                    <p className="text-gray-900">{d.details}</p>
+                  <li key={i} className="text-sm border-t border-gray-100 dark:border-gray-800 pt-2 first:border-0 first:pt-0">
+                    <p className="text-gray-900 dark:text-gray-50">{d.details}</p>
                     <p className="text-[11px] text-gray-400">
                       {pickLabel(d.pick)}
                       {d.examId ? ` · was studying ${d.examId}` : ""}
@@ -651,9 +651,9 @@ function LaunchTest({ rows }: { rows: NonNullable<Metrics["launchTest"]> }) {
   const rate = (n: number, d: number) => (d > 0 ? `${((n / d) * 100).toFixed(1)}%` : "—");
   const bestCtr = Math.max(...rows.map((r) => (r.sent > 0 ? r.clicked / r.sent : 0)));
   return (
-    <div className="bg-white rounded-xl border border-gray-200/80 shadow-sm p-5">
+    <div className="bg-white dark:bg-gray-900 rounded-xl border border-gray-200/80 dark:border-gray-800/80 shadow-sm p-5">
       <div className="mb-4 flex items-baseline justify-between gap-2">
-        <h2 className="text-sm font-semibold text-gray-900">SAT/ACT launch email split test</h2>
+        <h2 className="text-sm font-semibold text-gray-900 dark:text-gray-50">SAT/ACT launch email split test</h2>
         <p className="text-xs text-gray-400">{fmtInt(sent)} sent to DMV readers</p>
       </div>
       {sent === 0 ? (
@@ -675,16 +675,16 @@ function LaunchTest({ rows }: { rows: NonNullable<Metrics["launchTest"]> }) {
               {rows.map((r) => {
                 const lead = r.sent > 0 && r.clicked / r.sent === bestCtr && bestCtr > 0;
                 return (
-                  <tr key={r.id} className="border-t border-gray-100">
+                  <tr key={r.id} className="border-t border-gray-100 dark:border-gray-800">
                     <td className="py-2">
-                      <div className="font-medium text-gray-900">{r.id} · {r.name}{lead ? " ★" : ""}</div>
+                      <div className="font-medium text-gray-900 dark:text-gray-50">{r.id} · {r.name}{lead ? " ★" : ""}</div>
                       <div className="text-[11px] text-gray-400">{r.subject}</div>
                     </td>
-                    <td className="py-2 pl-4 text-right tabular-nums text-gray-600">{fmtInt(r.sent)}</td>
-                    <td className="py-2 pl-4 text-right tabular-nums text-gray-600">{fmtInt(r.clicked)}</td>
-                    <td className="py-2 pl-4 text-right tabular-nums text-gray-900 font-medium">{rate(r.clicked, r.sent)}</td>
-                    <td className="py-2 pl-4 text-right tabular-nums text-gray-600">{fmtInt(r.bought)}</td>
-                    <td className="py-2 pl-4 text-right tabular-nums text-gray-900">{rate(r.bought, r.sent)}</td>
+                    <td className="py-2 pl-4 text-right tabular-nums text-gray-600 dark:text-gray-300">{fmtInt(r.sent)}</td>
+                    <td className="py-2 pl-4 text-right tabular-nums text-gray-600 dark:text-gray-300">{fmtInt(r.clicked)}</td>
+                    <td className="py-2 pl-4 text-right tabular-nums text-gray-900 dark:text-gray-50 font-medium">{rate(r.clicked, r.sent)}</td>
+                    <td className="py-2 pl-4 text-right tabular-nums text-gray-600 dark:text-gray-300">{fmtInt(r.bought)}</td>
+                    <td className="py-2 pl-4 text-right tabular-nums text-gray-900 dark:text-gray-50">{rate(r.bought, r.sent)}</td>
                   </tr>
                 );
               })}
@@ -723,9 +723,9 @@ function StudyTimes({ data }: { data: NonNullable<Metrics["studyTimes"]> }) {
   const fill = (n: number) => (n === 0 ? "#f6f5f2" : `color-mix(in srgb, ${COLORS.engagement} ${Math.round(12 + (n / max) * 88)}%, #ffffff)`);
 
   return (
-    <div className="bg-white rounded-xl border border-gray-200/80 shadow-sm p-5">
+    <div className="bg-white dark:bg-gray-900 rounded-xl border border-gray-200/80 dark:border-gray-800/80 shadow-sm p-5">
       <div className="mb-4 flex items-baseline justify-between gap-2">
-        <h2 className="text-sm font-semibold text-gray-900">When people study</h2>
+        <h2 className="text-sm font-semibold text-gray-900 dark:text-gray-50">When people study</h2>
         <p className="text-xs text-gray-400">
           {fmtInt(data.answers)} answers · last {data.days} days · Eastern time
         </p>
@@ -749,7 +749,7 @@ function StudyTimes({ data }: { data: NonNullable<Metrics["studyTimes"]> }) {
               <tbody>
                 {rows.map((r) => (
                   <tr key={r.day}>
-                    <td className="pr-2 text-[11px] text-gray-500">{DAY_NAMES[r.day]}</td>
+                    <td className="pr-2 text-[11px] text-gray-500 dark:text-gray-400">{DAY_NAMES[r.day]}</td>
                     {r.cells.map((n, h) => (
                       <td
                         key={h}
@@ -774,15 +774,15 @@ function StudyTimes({ data }: { data: NonNullable<Metrics["studyTimes"]> }) {
           <div className="mt-4 grid gap-4 sm:grid-cols-3 text-sm">
             <div>
               <p className="text-[11px] uppercase tracking-wide text-gray-400">Busiest hour</p>
-              <p className="font-medium text-gray-900">{hourLabel(peakHour)} ET · {pct(byHour[peakHour])}</p>
+              <p className="font-medium text-gray-900 dark:text-gray-50">{hourLabel(peakHour)} ET · {pct(byHour[peakHour])}</p>
             </div>
             <div>
               <p className="text-[11px] uppercase tracking-wide text-gray-400">Busiest day</p>
-              <p className="font-medium text-gray-900">{DAY_NAMES[peakDay.day]} · {pct(peakDay.n)}</p>
+              <p className="font-medium text-gray-900 dark:text-gray-50">{DAY_NAMES[peakDay.day]} · {pct(peakDay.n)}</p>
             </div>
             <div>
               <p className="text-[11px] uppercase tracking-wide text-gray-400">Top slots</p>
-              <p className="text-gray-700">{top.map((t) => `${DAY_NAMES[t.day]} ${hourLabel(t.hour)}`).join(", ")}</p>
+              <p className="text-gray-700 dark:text-gray-200">{top.map((t) => `${DAY_NAMES[t.day]} ${hourLabel(t.hour)}`).join(", ")}</p>
             </div>
           </div>
         </>
@@ -906,7 +906,7 @@ export default function AdminV2Page() {
 
   if (authLoading || loading) {
     return (
-      <div className="flex-1 bg-white flex items-center justify-center">
+      <div className="flex-1 bg-white dark:bg-gray-900 flex items-center justify-center">
         <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-brand" />
       </div>
     );
@@ -914,10 +914,10 @@ export default function AdminV2Page() {
 
   if (error || !metrics || !series || !sparks) {
     return (
-      <div className="flex-1 bg-white">
+      <div className="flex-1 bg-white dark:bg-gray-900">
         <div className="container mx-auto px-4 py-8 max-w-6xl">
-          <div className="rounded-xl border border-red-200 bg-red-50 p-4">
-            <p className="text-red-600 font-medium">{error || "Failed to load metrics"}</p>
+          <div className="rounded-xl border border-red-200 dark:border-red-800 bg-red-50 dark:bg-red-950 p-4">
+            <p className="text-red-600 dark:text-red-400 font-medium">{error || "Failed to load metrics"}</p>
           </div>
         </div>
       </div>
@@ -939,13 +939,13 @@ export default function AdminV2Page() {
   const revenueBarLabels = series.revenue.length <= 13;
 
   return (
-    <div className="flex-1 bg-gray-50">
+    <div className="flex-1 bg-gray-50 dark:bg-gray-950">
       <div className="container mx-auto px-4 py-8 max-w-6xl">
 
         {/* Header */}
         <div className="flex flex-wrap items-center justify-between gap-3 mb-6">
           <div>
-            <h1 className="text-xl font-semibold text-gray-900 tracking-tight">TigerTest Growth</h1>
+            <h1 className="text-xl font-semibold text-gray-900 dark:text-gray-50 tracking-tight">TigerTest Growth</h1>
             <p className="text-xs text-gray-400 mt-0.5">
               Live Firestore + Stripe data · updated{" "}
               {new Date(metrics.generatedAt).toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" })}
@@ -954,14 +954,14 @@ export default function AdminV2Page() {
           <div className="flex items-center gap-2">
             <Link
               href="/admin"
-              className="inline-flex items-center gap-1 text-xs text-gray-500 hover:text-gray-800 px-2 py-1.5"
+              className="inline-flex items-center gap-1 text-xs text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-100 px-2 py-1.5"
             >
               Classic admin <ExternalLink className="h-3 w-3" />
             </Link>
             <button
               onClick={() => fetchMetrics(true)}
               disabled={refreshing}
-              className="inline-flex items-center gap-1.5 text-xs font-medium text-gray-600 hover:text-gray-900 border border-gray-200 bg-white rounded-lg px-3 py-1.5 shadow-sm"
+              className="inline-flex items-center gap-1.5 text-xs font-medium text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-50 border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 rounded-lg px-3 py-1.5 shadow-sm"
             >
               <RefreshCw className={`h-3.5 w-3.5 ${refreshing ? "animate-spin" : ""}`} />
               Refresh
@@ -1008,13 +1008,13 @@ export default function AdminV2Page() {
         </div>
 
         {/* Range filter — scopes every chart below */}
-        <div className="flex items-center gap-1 mb-4 bg-white border border-gray-200/80 rounded-lg p-1 w-fit shadow-sm">
+        <div className="flex items-center gap-1 mb-4 bg-white dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800/80 rounded-lg p-1 w-fit shadow-sm">
           {([["today", "Today"], ["30d", "Last 30 days"], ["90d", "Last 90 days"], ["all", "All time"]] as const).map(([key, label]) => (
             <button
               key={key}
               onClick={() => setRange(key)}
               className={`text-xs font-medium rounded-md px-3 py-1.5 transition-colors ${
-                range === key ? "bg-gray-900 text-white" : "text-gray-500 hover:text-gray-900"
+                range === key ? "bg-gray-900 dark:bg-white text-white dark:text-gray-900" : "text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-50"
               }`}
             >
               {label}
@@ -1025,8 +1025,8 @@ export default function AdminV2Page() {
         {/* Today selected but the response has no today block — say so rather
             than rendering a page full of confident zeros. */}
         {isToday && !todayData && (
-          <div className="mb-4 rounded-xl border border-amber-200 bg-amber-50 p-4">
-            <p className="text-sm text-amber-800">
+          <div className="mb-4 rounded-xl border border-amber-200 dark:border-amber-800 bg-amber-50 dark:bg-amber-950 p-4">
+            <p className="text-sm text-amber-800 dark:text-amber-300">
               Today&apos;s data isn&apos;t in this response, most likely a cached payload from
               before this feature shipped. Hit Refresh; if it persists, the API is serving
               an older build.
@@ -1125,7 +1125,7 @@ export default function AdminV2Page() {
                   key={key}
                   onClick={() => setEngageMetric(key)}
                   className={`text-[11px] font-medium rounded-md px-2 py-1 ${
-                    engageMetric === key ? "bg-gray-100 text-gray-900" : "text-gray-400 hover:text-gray-700"
+                    engageMetric === key ? "bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-50" : "text-gray-400 hover:text-gray-700 dark:hover:text-gray-200"
                   }`}
                 >
                   {label}
@@ -1193,7 +1193,7 @@ export default function AdminV2Page() {
         {metrics.studyTimes ? (
           <StudyTimes data={metrics.studyTimes} />
         ) : (
-          <div className="bg-white rounded-xl border border-gray-200/80 shadow-sm p-5 text-sm text-gray-400">
+          <div className="bg-white dark:bg-gray-900 rounded-xl border border-gray-200/80 dark:border-gray-800/80 shadow-sm p-5 text-sm text-gray-400">
             When people study: no data yet. It is built by the nightly stats job (03:00 UTC), or run
             aggregate-stats from Vercel → Settings → Cron Jobs.
           </div>

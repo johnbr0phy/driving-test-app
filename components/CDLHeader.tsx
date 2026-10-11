@@ -12,6 +12,7 @@ import { Truck, Bike, Flag, Plane, Radio, Thermometer, HeartPulse, Pill, Syringe
 import { getExamById, getExamVariants } from "@/lib/exams";
 import Image from "next/image";
 import { TestSwitcher } from "@/components/TestSwitcher";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import { useExamStarted } from "@/hooks/useExamStarted";
 
 export function CDLHeader() {
@@ -36,7 +37,7 @@ export function CDLHeader() {
   }
 
   return (
-    <header className="border-b bg-white">
+    <header className="border-b bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <Link href={theme.logoHome} className="flex items-center gap-2 group flex-shrink-0">
           {theme.logoIcon ? (
@@ -85,13 +86,14 @@ export function CDLHeader() {
               })()}
             </div>
           )}
-          <span className="text-2xl font-bold text-gray-900 group-hover:opacity-80 transition-opacity hidden sm:inline">
+          <span className="text-2xl font-bold text-gray-900 dark:text-gray-50 group-hover:opacity-80 transition-opacity hidden sm:inline">
             {theme.headerTitle}
           </span>
         </Link>
 
         <div className="flex items-center gap-2 sm:gap-4">
           <TestSwitcher />
+          <ThemeToggle />
           {user ? (
             <>
               <Link href="/settings">
@@ -103,13 +105,13 @@ export function CDLHeader() {
             </>
           ) : isGuest ? (
             <Link href={theme.signupPath}>
-              <Button variant="outline" className="text-gray-700 border-gray-300 hover:bg-gray-50 font-semibold">
+              <Button variant="outline" className="text-gray-700 dark:text-gray-200 border-gray-300 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800 font-semibold">
                 Sign Up to Save
               </Button>
             </Link>
           ) : (
             <Link href={theme.loginPath}>
-              <Button variant="outline" className="text-gray-700 border-gray-300 hover:bg-gray-50">
+              <Button variant="outline" className="text-gray-700 dark:text-gray-200 border-gray-300 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800">
                 Sign In
               </Button>
             </Link>

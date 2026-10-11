@@ -43,7 +43,7 @@ export function TestCard({
       return <PremiumBadge variant="locked" size="sm" />;
     }
     if (locked) {
-      return <Badge variant="outline" className="bg-gray-100 hover:bg-gray-100 text-xs">{t("common.locked")}</Badge>;
+      return <Badge variant="outline" className="bg-gray-100 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-800 text-xs">{t("common.locked")}</Badge>;
     }
 
     if (status === "completed" && bestScore !== undefined) {
@@ -73,17 +73,17 @@ export function TestCard({
     }
     if (status === "in-progress") {
       const answeredCount = Math.round((progress / 100) * totalQuestions);
-      return <span className="text-yellow-600">{answeredCount}/{totalQuestions} {t("testCard.answered")}</span>;
+      return <span className="text-yellow-600 dark:text-yellow-400">{answeredCount}/{totalQuestions} {t("testCard.answered")}</span>;
     }
     if (status === "completed" && bestScore !== undefined) {
       return (
-        <span className={bestPercentage >= 70 ? 'text-green-600' : 'text-brand'}>
+        <span className={bestPercentage >= 70 ? 'text-green-600 dark:text-green-400' : 'text-brand'}>
           {bestScore}/{totalQuestions}
         </span>
       );
     }
     if (readyToTest) {
-      return <span className="text-green-600 font-medium">You&apos;re ready — give it a go →</span>;
+      return <span className="text-green-600 dark:text-green-400 font-medium">You&apos;re ready — give it a go →</span>;
     }
     return <span className="text-gray-400">{t("testCard.fiftyQuestions")}</span>;
   };
@@ -91,12 +91,12 @@ export function TestCard({
   const cardContent = (
     <Card className={`h-full transition-all ${
       locked
-        ? "bg-gray-100 border-gray-200 opacity-60"
+        ? "bg-gray-100 dark:bg-gray-800 border-gray-200 dark:border-gray-800 opacity-60"
         : isPremiumLocked
           ? "bg-gradient-to-r from-brand-light to-brand-gradient-to border-brand-border-light hover:shadow-md hover:border-brand-border cursor-pointer"
           : readyToTest
-            ? "bg-gray-50 hover:shadow-md cursor-pointer border-green-400 ring-2 ring-green-300 ring-offset-1 animate-pulse-subtle"
-            : "bg-gray-50 hover:shadow-md cursor-pointer hover:border-brand-border"
+            ? "bg-gray-50 dark:bg-gray-950 hover:shadow-md cursor-pointer border-green-400 dark:border-green-600 ring-2 ring-green-300 ring-offset-1 animate-pulse-subtle"
+            : "bg-gray-50 dark:bg-gray-950 hover:shadow-md cursor-pointer hover:border-brand-border"
     }`}>
       <CardContent className="p-4 flex items-center justify-between">
         <div className="flex flex-col">

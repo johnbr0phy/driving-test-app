@@ -133,11 +133,11 @@ export function ResultsDebriefBody({ results, upgrade }: Props) {
       />
 
       {/* ── Your plan ─────────────────────────────────────────────── */}
-      <div className="rounded-xl bg-white border border-gray-100 px-4 py-3 shadow-sm">
+      <div className="rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 px-4 py-3 shadow-sm">
         <h2 className="text-[11px] font-bold uppercase tracking-widest text-gray-400 py-1">
           {t("results.planHeading")}
         </h2>
-        <div className="divide-y divide-gray-50">
+        <div className="divide-y divide-gray-50 dark:divide-gray-800">
           {planSteps.map((step, i) => (
             <button
               key={step.key}
@@ -146,13 +146,13 @@ export function ResultsDebriefBody({ results, upgrade }: Props) {
             >
               <span
                 className={`w-7 h-7 rounded-full flex items-center justify-center text-sm font-bold shrink-0 ${
-                  step.done ? "bg-green-100 text-green-700" : "bg-brand-light text-brand"
+                  step.done ? "bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300" : "bg-brand-light text-brand"
                 }`}
               >
                 {step.done ? <Check className="h-4 w-4" strokeWidth={3} /> : i + 1}
               </span>
               <span
-                className={`flex-1 text-sm font-medium ${step.done ? "text-gray-400 line-through" : "text-gray-800"}`}
+                className={`flex-1 text-sm font-medium ${step.done ? "text-gray-400 line-through" : "text-gray-800 dark:text-gray-100"}`}
               >
                 {step.label}
               </span>
@@ -175,12 +175,12 @@ export function ResultsDebriefBody({ results, upgrade }: Props) {
       {missCount > 0 && (
         <div id="miss-drill" className="scroll-mt-4">
           <div className="mb-3 flex items-center justify-between">
-            <h2 className="text-lg font-bold text-gray-900">{t("results.drillHeading")}</h2>
+            <h2 className="text-lg font-bold text-gray-900 dark:text-gray-50">{t("results.drillHeading")}</h2>
             <span
               className={`text-xs font-semibold tabular-nums rounded-full px-2.5 py-1 ${
                 allFixed
-                  ? "bg-green-100 text-green-700"
-                  : "bg-white border border-gray-200 text-gray-500"
+                  ? "bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300"
+                  : "bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 text-gray-500 dark:text-gray-400"
               }`}
             >
               {t("results.drillProgress")
@@ -200,7 +200,7 @@ export function ResultsDebriefBody({ results, upgrade }: Props) {
                 ? t("results.communityAlsoMissed").replace("{{pct}}", String(communityQ.errorRate))
                 : undefined;
               const chip = userAnswerLetter
-                ? { value: "✗", label: t("results.wrong"), color: "text-red-500" }
+                ? { value: "✗", label: t("results.wrong"), color: "text-red-500 dark:text-red-400" }
                 : { value: "–", label: t("results.notAnswered"), color: "text-gray-400" };
               return (
                 <Fragment key={index}>
@@ -212,7 +212,7 @@ export function ResultsDebriefBody({ results, upgrade }: Props) {
                     className="w-full flex items-center gap-3 rounded-xl border border-brand-border-light bg-brand-light px-4 py-2.5 text-left hover:shadow-md transition-shadow"
                   >
                     <Lock className="h-4 w-4 text-brand shrink-0" />
-                    <span className="flex-1 text-sm font-medium text-gray-800">
+                    <span className="flex-1 text-sm font-medium text-gray-800 dark:text-gray-100">
                       {t("results.drillRatesUpsell")}
                     </span>
                     <span className="text-sm font-semibold text-brand whitespace-nowrap">
@@ -251,7 +251,7 @@ export function ResultsDebriefBody({ results, upgrade }: Props) {
                           : t("results.drillSkippedBefore")}
                       </p>
                       {answered && question.explanation && (
-                        <p className="text-xs text-gray-500 leading-relaxed animate-in fade-in duration-300">
+                        <p className="text-xs text-gray-500 dark:text-gray-400 leading-relaxed animate-in fade-in duration-300">
                           {question.explanation}
                         </p>
                       )}
@@ -264,7 +264,7 @@ export function ResultsDebriefBody({ results, upgrade }: Props) {
           </div>
 
           {allFixed && (
-            <div className="mt-3 rounded-xl bg-green-50 border border-green-200 px-4 py-3 text-sm font-semibold text-green-800 text-center">
+            <div className="mt-3 rounded-xl bg-green-50 dark:bg-green-950 border border-green-200 dark:border-green-800 px-4 py-3 text-sm font-semibold text-green-800 dark:text-green-300 text-center">
               {t("results.drillAllFixed").replace("{{n}}", String(missCount))}
             </div>
           )}
@@ -275,12 +275,12 @@ export function ResultsDebriefBody({ results, upgrade }: Props) {
       {!isGuest && hasNextTest && drillEngaged && (
         <Card className="border-2 bg-gradient-to-r from-brand-light to-brand-gradient-to border-brand-border-light">
           <CardContent className="py-5 text-center">
-            <h3 className="text-base font-bold text-gray-900 mb-1">
+            <h3 className="text-base font-bold text-gray-900 dark:text-gray-50 mb-1">
               {t("results.postDrillHeading")
                 .replace("{{fixed}}", String(fixedCount))
                 .replace("{{total}}", String(missCount))}
             </h3>
-            <p className="text-sm text-gray-600 mb-4">
+            <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">
               {nextTestIsLocked
                 ? t("results.postDrillUpgradeSub")
                 : t("results.postDrillNextSub").replace("{{n}}", String(displayTestNumber(nextTestId)))}
@@ -304,9 +304,9 @@ export function ResultsDebriefBody({ results, upgrade }: Props) {
         <div>
           <button
             onClick={() => setShowCorrect((s) => !s)}
-            className="w-full flex items-center justify-between rounded-xl bg-white border border-gray-100 px-4 py-3 hover:shadow-md transition-shadow"
+            className="w-full flex items-center justify-between rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 px-4 py-3 hover:shadow-md transition-shadow"
           >
-            <span className="text-sm font-semibold text-gray-700">
+            <span className="text-sm font-semibold text-gray-700 dark:text-gray-200">
               {t("results.correctHeading").replace("{{n}}", String(score))}
             </span>
             <span className="text-xs font-medium text-brand">
@@ -323,7 +323,7 @@ export function ResultsDebriefBody({ results, upgrade }: Props) {
                     key={index}
                     chipValue={String(index + 1)}
                     chipLabel={t("results.correctAnswer")}
-                    chipColorClass="text-green-600"
+                    chipColorClass="text-green-600 dark:text-green-400"
                     question={question.question}
                     options={[question.optionA, question.optionB, question.optionC, question.optionD].filter(Boolean)}
                     correctAnswer={optionText(question, question.correctAnswer)}
@@ -331,7 +331,7 @@ export function ResultsDebriefBody({ results, upgrade }: Props) {
                     media={signId ? <QuestionImage questionId={question.questionId} /> : undefined}
                     renderFooter={({ answered }) =>
                       answered && question.explanation ? (
-                        <p className="pt-1 px-1 text-xs text-gray-500 leading-relaxed">
+                        <p className="pt-1 px-1 text-xs text-gray-500 dark:text-gray-400 leading-relaxed">
                           {question.explanation}
                         </p>
                       ) : null
@@ -353,10 +353,10 @@ export function ResultsDebriefBody({ results, upgrade }: Props) {
                 <Cloud className="w-6 h-6 text-brand" />
               </div>
               <div className="flex-1">
-                <h3 className="text-lg font-semibold text-gray-900 mb-1">
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-50 mb-1">
                   {t("results.saveYourProgress")}
                 </h3>
-                <p className="text-gray-600 text-sm">{t("results.scoreOnlyOnDevice")}</p>
+                <p className="text-gray-600 dark:text-gray-300 text-sm">{t("results.scoreOnlyOnDevice")}</p>
               </div>
               <Link href={routes.signup}>
                 <Button className="bg-brand text-white hover:bg-brand-hover whitespace-nowrap">

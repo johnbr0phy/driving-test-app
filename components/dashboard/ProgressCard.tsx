@@ -11,9 +11,9 @@ import { Check, ChevronRight, Lock } from "lucide-react";
 
 export function Stamp({ label, color }: { label: string; color: "green" | "amber" | "red" }) {
   const colors = {
-    green: "border-green-500 text-green-600 bg-green-50",
-    amber: "border-amber-500 text-amber-600 bg-amber-50",
-    red: "border-red-400 text-red-500 bg-red-50",
+    green: "border-green-500 text-green-600 dark:text-green-400 bg-green-50 dark:bg-green-950",
+    amber: "border-amber-500 text-amber-600 dark:text-amber-400 bg-amber-50 dark:bg-amber-950",
+    red: "border-red-400 dark:border-red-600 text-red-500 dark:text-red-400 bg-red-50 dark:bg-red-950",
   };
   return (
     <div className={`px-2 py-0.5 rounded border text-[10px] font-bold uppercase tracking-wider ${colors[color]} -rotate-3`}>
@@ -49,21 +49,21 @@ export function ProgressCard({
   const content = (
     <Card className={`transition-all duration-300 ${
       completed
-        ? "bg-gradient-to-r from-green-50 to-emerald-50 border-green-200 shadow-sm"
-        : "bg-white border-gray-100 hover:shadow-md cursor-pointer"
+        ? "bg-gradient-to-r from-green-50 dark:from-green-950 to-emerald-50 dark:to-emerald-950 border-green-200 dark:border-green-800 shadow-sm"
+        : "bg-white dark:bg-gray-900 border-gray-100 dark:border-gray-800 hover:shadow-md cursor-pointer"
     } ${attachedBottom ? "rounded-b-none border-b-0 shadow-none hover:shadow-none" : ""}`}>
       <CardContent className="p-4 flex items-center gap-3">
         {/* Completion indicator */}
         <div className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center relative ${
-          completed ? "bg-green-500 text-white" : "bg-white border-2 border-gray-300 text-gray-600"
+          completed ? "bg-green-500 text-white" : "bg-white dark:bg-gray-900 border-2 border-gray-300 dark:border-gray-700 text-gray-600 dark:text-gray-300"
         }`}>
           {completed ? (
             <>
               {stepNumber ? (
                 <>
                   <span className="text-sm font-bold text-white">{stepNumber}</span>
-                  <span className="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-white border border-green-200 flex items-center justify-center leading-none">
-                    <Check className="w-2.5 h-2.5 text-green-700" strokeWidth={3} />
+                  <span className="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-white dark:bg-gray-900 border border-green-200 dark:border-green-800 flex items-center justify-center leading-none">
+                    <Check className="w-2.5 h-2.5 text-green-700 dark:text-green-300" strokeWidth={3} />
                   </span>
                 </>
               ) : (
@@ -71,19 +71,19 @@ export function ProgressCard({
               )}
             </>
           ) : stepNumber ? (
-            <span className="text-sm font-bold text-gray-600">{stepNumber}</span>
+            <span className="text-sm font-bold text-gray-600 dark:text-gray-300">{stepNumber}</span>
           ) : (
-            <div className="w-2 h-2 rounded-full bg-gray-300" />
+            <div className="w-2 h-2 rounded-full bg-gray-300 dark:bg-gray-600" />
           )}
         </div>
 
         {/* Content */}
         <div className="flex-1 min-w-0">
-          <h3 className={`font-medium text-sm flex items-center gap-1.5 ${completed ? "text-green-800" : "text-gray-700"}`}>
+          <h3 className={`font-medium text-sm flex items-center gap-1.5 ${completed ? "text-green-800 dark:text-green-300" : "text-gray-700 dark:text-gray-200"}`}>
             {title}
             {isPremiumLocked && <Lock className="w-3.5 h-3.5 text-gray-400 flex-shrink-0" />}
           </h3>
-          <p className={`text-xs mt-0.5 ${completed ? "text-green-600" : "text-gray-500"}`}>
+          <p className={`text-xs mt-0.5 ${completed ? "text-green-600 dark:text-green-400" : "text-gray-500 dark:text-gray-400"}`}>
             {subtitle}
           </p>
           {children}

@@ -262,7 +262,7 @@ function TrainingPageContent() {
       {/* Onboarding Celebration Modal */}
       {showCelebration && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm animate-in fade-in duration-300">
-          <div className="bg-white rounded-2xl p-8 mx-4 max-w-md text-center shadow-2xl animate-in zoom-in-95 duration-300">
+          <div className="bg-white dark:bg-gray-900 rounded-2xl p-8 mx-4 max-w-md text-center shadow-2xl animate-in zoom-in-95 duration-300">
             <div className="mb-4">
               <img
                 src="/tiger_face_02.png"
@@ -270,18 +270,18 @@ function TrainingPageContent() {
                 className="w-32 h-32 mx-auto"
               />
             </div>
-            <h2 className="text-3xl font-bold text-gray-900 mb-2">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-50 mb-2">
               {t("trainingPage.congratulations")}
             </h2>
             <p className="text-xl text-brand font-semibold mb-4">
               {t("trainingPage.youUnlocked")}
             </p>
-            <p className="text-gray-600 mb-6">
+            <p className="text-gray-600 dark:text-gray-300 mb-6">
               {t("trainingPage.answeredTenCorrectly")}
             </p>
             <div className="flex flex-col gap-3">
               <Link href="/dashboard">
-                <Button className="w-full bg-black text-white hover:bg-gray-800 text-lg py-6">
+                <Button className="w-full bg-black dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 text-lg py-6">
                   {t("trainingPage.chooseTrainingSet")}
                 </Button>
               </Link>
@@ -315,7 +315,7 @@ function TrainingPageContent() {
               {/* Branding header */}
               <div className="mb-6">
                 <div className="text-gray-300 text-lg font-bold tracking-widest">tigertest.io</div>
-                <div className="text-gray-500 text-xs uppercase tracking-widest mt-1">
+                <div className="text-gray-500 dark:text-gray-400 text-xs uppercase tracking-widest mt-1">
                   {language === "es" ? "ENTRENAMIENTO DMV" : language === "vi" ? "LUYỆN TẬP DMV" : language === "ko" ? "DMV 학습" : "DMV TRAINING"}
                 </div>
               </div>
@@ -337,7 +337,7 @@ function TrainingPageContent() {
               </div>
 
               {/* Giant percentage */}
-              <div className="text-7xl md:text-8xl font-black mb-3 leading-none text-green-500">
+              <div className="text-7xl md:text-8xl font-black mb-3 leading-none text-green-500 dark:text-green-400">
                 100%
               </div>
 
@@ -357,7 +357,7 @@ function TrainingPageContent() {
               </div>
 
               {/* Branding footer */}
-              <div className="text-gray-600 text-sm tracking-wider mb-8">tigertest.io</div>
+              <div className="text-gray-600 dark:text-gray-300 text-sm tracking-wider mb-8">tigertest.io</div>
 
               {/* SHARE + TRY AGAIN buttons */}
               <div className="flex gap-3 max-w-xs mx-auto">
@@ -369,7 +369,7 @@ function TrainingPageContent() {
                     passed={true}
                     setId={setNumber}
                     stateCode={selectedState}
-                    className="flex-1 bg-white text-black hover:bg-gray-100 font-bold uppercase tracking-wide h-12 text-base"
+                    className="flex-1 bg-white dark:bg-gray-900 text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 font-bold uppercase tracking-wide h-12 text-base"
                   />
                 )}
                 {!isGuest && (
@@ -402,7 +402,7 @@ function TrainingPageContent() {
                   </p>
                   <div className="flex gap-2">
                     <Button
-                      className="flex-1 bg-white text-black hover:bg-gray-200 font-semibold h-10 text-sm"
+                      className="flex-1 bg-white dark:bg-gray-900 text-black dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 font-semibold h-10 text-sm"
                       onClick={handlePracticeAgain}
                     >
                       {t("trainingPage.resetYes")}
@@ -422,7 +422,7 @@ function TrainingPageContent() {
             <div className="text-center py-5">
               <button
                 onClick={() => setShowResetConfirm(true)}
-                className="text-gray-500 hover:text-gray-300 text-sm font-medium transition-colors"
+                className="text-gray-500 dark:text-gray-400 hover:text-gray-300 text-sm font-medium transition-colors"
               >
                 {t("results.tryAgain")} →
               </button>
@@ -469,8 +469,8 @@ function TrainingPageContent() {
         ) : (
           <Card className="w-full">
             <CardContent className="p-8 text-center">
-              <p className="text-gray-600 mb-4">{t("trainingPage.noMoreQuestions")}</p>
-              <Button className="bg-black text-white hover:bg-gray-800" onClick={() => router.push("/dashboard")}>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">{t("trainingPage.noMoreQuestions")}</p>
+              <Button className="bg-black dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200" onClick={() => router.push("/dashboard")}>
                 {t("common.back")}
               </Button>
             </CardContent>
@@ -482,10 +482,10 @@ function TrainingPageContent() {
           {accessLocked ? null : isSetMode && setProgress ? (
             // Set-based progress
             <>
-              <div className="flex items-center justify-center gap-1 text-sm md:text-lg text-gray-700">
+              <div className="flex items-center justify-center gap-1 text-sm md:text-lg text-gray-700 dark:text-gray-200">
                 <span className="font-bold text-xl md:text-2xl text-brand">{setProgress.correct}</span>
-                <span className="text-gray-500">/{setProgress.total}</span>
-                <span className="text-gray-500 text-xs md:text-base ml-1">
+                <span className="text-gray-500 dark:text-gray-400">/{setProgress.total}</span>
+                <span className="text-gray-500 dark:text-gray-400 text-xs md:text-base ml-1">
                   {t("trainingPage.questionsCorrect")}
                 </span>
               </div>
@@ -499,10 +499,10 @@ function TrainingPageContent() {
           ) : !isOnboardingComplete() ? (
             // Onboarding progress
             <>
-              <div className="flex items-center justify-center gap-1 text-sm md:text-lg text-gray-700">
+              <div className="flex items-center justify-center gap-1 text-sm md:text-lg text-gray-700 dark:text-gray-200">
                 <span className="font-bold text-xl md:text-2xl text-brand">{training.totalCorrectAllTime}</span>
-                <span className="text-gray-500">/10</span>
-                <span className="text-gray-500 text-xs md:text-base ml-1">
+                <span className="text-gray-500 dark:text-gray-400">/10</span>
+                <span className="text-gray-500 dark:text-gray-400 text-xs md:text-base ml-1">
                   ({10 - training.totalCorrectAllTime} {t("trainingPage.moreToUnlock")})
                 </span>
               </div>
@@ -515,9 +515,9 @@ function TrainingPageContent() {
             </>
           ) : (
             // Post-onboarding without set - show current streak
-            <div className="flex items-center justify-center gap-1 text-sm md:text-lg text-gray-700">
+            <div className="flex items-center justify-center gap-1 text-sm md:text-lg text-gray-700 dark:text-gray-200">
               <span className="font-bold text-xl md:text-2xl text-brand">{training.currentStreak}</span>
-              <span className="text-gray-500 text-xs md:text-base ml-1">
+              <span className="text-gray-500 dark:text-gray-400 text-xs md:text-base ml-1">
                 {t("trainingPage.streak")}
               </span>
             </div>

@@ -104,12 +104,12 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
 
   // ---- Goal picker: the first thing a new student sees ----
   const goalPicker = (
-    <div className="rounded-xl bg-white border border-gray-100 p-4 mb-6">
+    <div className="rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 p-4 mb-6">
       <div className="flex items-center gap-4">
         <Image src={getTigerAsset(exam.id, 3)} alt="Tiger mascot" width={48} height={48} className="w-12 h-12 flex-shrink-0" />
         <div className="flex-1 min-w-0">
-          <h1 className="text-lg font-bold text-gray-900">{editingGoal ? "Change your goal" : "What score are you aiming for?"}</h1>
-          <p className="text-xs text-gray-500 mt-0.5">Pick a target. Your plan finishes when a full practice test hits it.</p>
+          <h1 className="text-lg font-bold text-gray-900 dark:text-gray-50">{editingGoal ? "Change your goal" : "What score are you aiming for?"}</h1>
+          <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">Pick a target. Your plan finishes when a full practice test hits it.</p>
         </div>
       </div>
       <div className="mt-4 grid grid-cols-2 gap-2 sm:grid-cols-3">
@@ -124,17 +124,17 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
                 setEditingGoal(false);
               }}
               className={`v2-tap rounded-xl border-2 px-3 py-2.5 text-left transition-colors ${
-                selected ? "border-green-500 bg-green-50" : "border-gray-200 bg-white active:bg-brand-light [@media(hover:hover)]:hover:border-brand"
+                selected ? "border-green-500 bg-green-50 dark:bg-green-950" : "border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 active:bg-brand-light [@media(hover:hover)]:hover:border-brand"
               }`}
             >
-              <div className={`text-xl font-black tabular-nums ${selected ? "text-green-700" : "text-gray-900"}`}>{g}</div>
-              <div className="text-[11px] leading-snug text-gray-500">{exam.goalNotes[g]}</div>
+              <div className={`text-xl font-black tabular-nums ${selected ? "text-green-700 dark:text-green-300" : "text-gray-900 dark:text-gray-50"}`}>{g}</div>
+              <div className="text-[11px] leading-snug text-gray-500 dark:text-gray-400">{exam.goalNotes[g]}</div>
             </button>
           );
         })}
       </div>
       {editingGoal && (
-        <button type="button" onClick={() => setEditingGoal(false)} className="mt-3 w-full text-center text-xs font-semibold text-gray-500">
+        <button type="button" onClick={() => setEditingGoal(false)} className="mt-3 w-full text-center text-xs font-semibold text-gray-500 dark:text-gray-400">
           Keep {goal}
         </button>
       )}
@@ -142,7 +142,7 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
   );
 
   return (
-    <div className="flex-1 bg-gray-50">
+    <div className="flex-1 bg-gray-50 dark:bg-gray-950">
       <div className="relative">
         <div className="absolute inset-x-0 top-0 h-96 bg-gradient-to-b from-brand-light to-transparent pointer-events-none" />
         <div className="relative container mx-auto px-4 sm:px-6 py-6 pb-10 max-w-lg md:max-w-2xl lg:max-w-4xl">
@@ -156,15 +156,15 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
             goalPicker
           ) : (
             /* Hero: tiger, steps title, counter, then the goal strip */
-            <div className="rounded-xl bg-white border border-gray-100 p-4 mb-6">
+            <div className="rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 p-4 mb-6">
               <div className="flex items-center gap-4">
                 <Image src={tigerFace(doneSteps, totalSteps, exam.id)} alt="Tiger mascot" width={48} height={48} className="w-12 h-12 flex-shrink-0" />
                 <div className="flex-1 min-w-0">
-                  <h1 className="text-lg font-bold text-gray-900">{heroTitle(doneSteps, totalSteps)}</h1>
-                  <p className="text-xs text-gray-500 mt-0.5">{heroSub(exam, doneSteps, totalSteps)}</p>
+                  <h1 className="text-lg font-bold text-gray-900 dark:text-gray-50">{heroTitle(doneSteps, totalSteps)}</h1>
+                  <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">{heroSub(exam, doneSteps, totalSteps)}</p>
                 </div>
                 <div className="flex-shrink-0 text-right">
-                  <div className={`text-2xl font-bold tabular-nums ${doneSteps === totalSteps ? "text-green-600" : "text-gray-900"}`}>
+                  <div className={`text-2xl font-bold tabular-nums ${doneSteps === totalSteps ? "text-green-600 dark:text-green-400" : "text-gray-900 dark:text-gray-50"}`}>
                     {doneSteps}/{totalSteps}
                   </div>
                   <div className="text-xs text-gray-400">complete</div>
@@ -186,7 +186,7 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
               return (
                 <div key={s.def.key}>
                   {newSection && (
-                    <p className={`text-[11px] font-semibold text-gray-500 mb-1.5 ${index === 0 ? "" : "mt-3"}`}>{section.name}</p>
+                    <p className={`text-[11px] font-semibold text-gray-500 dark:text-gray-400 mb-1.5 ${index === 0 ? "" : "mt-3"}`}>{section.name}</p>
                   )}
                   <ProgressCard
                     title={s.def.name}
@@ -253,7 +253,7 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
                     attachedBottom={isExpanded && hasAttempts}
                   >
                     {hasAttempts && (
-                      <p className={`text-xs mt-1 ${s.complete ? "text-green-600" : "text-gray-400"}`}>
+                      <p className={`text-xs mt-1 ${s.complete ? "text-green-600 dark:text-green-400" : "text-gray-400"}`}>
                         {s.attempts.length === 1 ? "1 attempt" : `${s.attempts.length} attempts`} {isExpanded ? "▴" : "▾"}
                       </p>
                     )}
@@ -293,7 +293,7 @@ function SignUpBanner({ exam, signupHref }: { exam: ExamV2Config; signupHref: st
       <div className="flex items-center gap-3">
         <div className="text-2xl">📊</div>
         <div className="flex-1">
-          <p className="text-sm text-gray-700">
+          <p className="text-sm text-gray-700 dark:text-gray-200">
             <span className="font-bold">Sign up</span> to save your {exam.shortName} progress and track every question you miss
           </p>
           <Link href={signupHref} className="text-xs text-brand hover:text-brand-dark font-medium mt-1 inline-block">
@@ -310,15 +310,15 @@ function PurchaseBanner({ exam }: { exam: ExamV2Config }) {
   const { justPurchased, dismiss } = usePurchaseReturn();
   if (!justPurchased) return null;
   return (
-    <div className="mb-4 flex items-center gap-3 rounded-xl border border-green-200 bg-gradient-to-r from-green-50 to-emerald-50 p-4">
-      <CheckCircle className="h-8 w-8 flex-shrink-0 text-green-500" />
+    <div className="mb-4 flex items-center gap-3 rounded-xl border border-green-200 dark:border-green-800 bg-gradient-to-r from-green-50 dark:from-green-950 to-emerald-50 dark:to-emerald-950 p-4">
+      <CheckCircle className="h-8 w-8 flex-shrink-0 text-green-500 dark:text-green-400" />
       <div className="flex-1">
-        <p className="text-base font-bold text-green-900">Welcome to Premium!</p>
-        <p className="mt-0.5 text-xs text-green-700">
+        <p className="text-base font-bold text-green-900 dark:text-green-200">Welcome to Premium!</p>
+        <p className="mt-0.5 text-xs text-green-700 dark:text-green-300">
           {exam.shortName} Practice Test 2 and every drill are unlocked, and so are {otherPremiumExams(exam)}.
         </p>
       </div>
-      <button type="button" onClick={dismiss} className="text-green-600 hover:text-green-800" aria-label="Dismiss">
+      <button type="button" onClick={dismiss} className="text-green-600 dark:text-green-400 hover:text-green-800 dark:hover:text-green-300" aria-label="Dismiss">
         &times;
       </button>
     </div>
@@ -331,13 +331,13 @@ function GoalStrip({ exam, goal, best, onEdit }: { exam: ExamV2Config; goal: num
   const pos = (v: number) => `${Math.max(0, Math.min(100, ((v - min) / (max - min)) * 100))}%`;
   const hit = best !== null && best >= goal;
   return (
-    <div className="mt-4 border-t border-gray-100 pt-3">
+    <div className="mt-4 border-t border-gray-100 dark:border-gray-800 pt-3">
       <div className="flex items-center justify-between text-xs">
-        <span className="text-gray-500">
-          Goal <span className="font-bold text-gray-900 tabular-nums">{goal}</span>
+        <span className="text-gray-500 dark:text-gray-400">
+          Goal <span className="font-bold text-gray-900 dark:text-gray-50 tabular-nums">{goal}</span>
           {best !== null && (
             <>
-              {" · "}Best <span className={`font-bold tabular-nums ${hit ? "text-green-600" : "text-gray-900"}`}>{best}</span>
+              {" · "}Best <span className={`font-bold tabular-nums ${hit ? "text-green-600 dark:text-green-400" : "text-gray-900 dark:text-gray-50"}`}>{best}</span>
             </>
           )}
         </span>
@@ -345,9 +345,9 @@ function GoalStrip({ exam, goal, best, onEdit }: { exam: ExamV2Config; goal: num
           <Pencil className="h-3 w-3" /> Change
         </button>
       </div>
-      <div className="relative mt-2 h-2 rounded-full bg-gray-100">
+      <div className="relative mt-2 h-2 rounded-full bg-gray-100 dark:bg-gray-800">
         {best !== null && <div className={`absolute inset-y-0 left-0 rounded-full ${hit ? "bg-green-500" : "bg-brand"}`} style={{ width: pos(best) }} />}
-        <div className="absolute -top-1 h-4 w-0.5 rounded bg-gray-900" style={{ left: pos(goal) }} aria-hidden />
+        <div className="absolute -top-1 h-4 w-0.5 rounded bg-gray-900 dark:bg-gray-100" style={{ left: pos(goal) }} aria-hidden />
       </div>
       <div className="mt-1 flex justify-between text-[10px] tabular-nums text-gray-400">
         <span>{min}</span>
@@ -378,16 +378,16 @@ function AttemptsPanel({
   onDiscard?: () => void;
 }) {
   return (
-    <div className={`rounded-b-xl border border-t-0 px-4 pb-4 ${complete ? "bg-gradient-to-r from-green-50 to-emerald-50 border-green-200" : "bg-white border-gray-100"}`}>
-      <div className="divide-y divide-gray-100">
+    <div className={`rounded-b-xl border border-t-0 px-4 pb-4 ${complete ? "bg-gradient-to-r from-green-50 dark:from-green-950 to-emerald-50 dark:to-emerald-950 border-green-200 dark:border-green-800" : "bg-white dark:bg-gray-900 border-gray-100 dark:border-gray-800"}`}>
+      <div className="divide-y divide-gray-100 dark:divide-gray-800">
         {attempts.map((a, i) => (
           <div key={a.completedAt} className="flex items-center justify-between py-2 text-sm">
-            <span className="text-gray-500">
+            <span className="text-gray-500 dark:text-gray-400">
               {i === attempts.length - 1 ? "First" : `#${attempts.length - i}`} · {shortDate(a.completedAt)}
             </span>
             <span className="flex items-center gap-3 tabular-nums">
               <span className="text-xs text-gray-400">{a.sections.map((s) => `${getSectionV2(exam, s.section).shortName} ${s.scaled}`).join(" · ")}</span>
-              <span className={`font-bold ${a.composite >= goal ? "text-green-600" : "text-gray-900"}`}>{a.composite}</span>
+              <span className={`font-bold ${a.composite >= goal ? "text-green-600 dark:text-green-400" : "text-gray-900 dark:text-gray-50"}`}>{a.composite}</span>
             </span>
           </div>
         ))}
@@ -396,7 +396,7 @@ function AttemptsPanel({
         <Link href={resultsHref} className="w-full flex items-center justify-center gap-1.5 rounded-lg bg-brand text-white font-bold text-sm px-4 py-3">
           Review the latest attempt <ChevronRight className="h-4 w-4" />
         </Link>
-        <Link href={testHref} className="w-full flex items-center justify-center gap-1.5 rounded-lg bg-white border border-gray-200 text-gray-800 font-bold text-sm px-4 py-3">
+        <Link href={testHref} className="w-full flex items-center justify-center gap-1.5 rounded-lg bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 text-gray-800 dark:text-gray-100 font-bold text-sm px-4 py-3">
           {inProgress ? "Resume the test" : "Retake the test"} <ChevronRight className="h-4 w-4" />
         </Link>
         {onDiscard && (

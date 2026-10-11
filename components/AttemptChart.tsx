@@ -106,7 +106,7 @@ export function AttemptChart({
       {/* Gridlines + y labels */}
       {[0, 50, 100].map((v) => (
         <g key={v}>
-          <line x1={PAD.l} x2={W - PAD.r} y1={y(v)} y2={y(v)} className="stroke-gray-100" strokeWidth="1" />
+          <line x1={PAD.l} x2={W - PAD.r} y1={y(v)} y2={y(v)} className="stroke-gray-100 dark:stroke-gray-800" strokeWidth="1" />
           <text x={PAD.l - 7} y={y(v) + 3} textAnchor="end" className="fill-gray-400" fontSize="10">
             {v}%
           </text>
@@ -170,7 +170,7 @@ export function AttemptChart({
           x={x(last)}
           y={Math.max(y(attempts[last].pct) - 10, 12)}
           textAnchor={last === 0 ? "middle" : "end"}
-          className="fill-gray-700"
+          className="fill-gray-700 dark:fill-gray-300"
           fontSize="11"
           fontWeight="bold"
         >
@@ -184,7 +184,7 @@ export function AttemptChart({
           x={Math.min(Math.max(x(hover), PAD.l + 40), W - PAD.r - 40)}
           y={Math.max(y(attempts[hover].pct) - 10, 12)}
           textAnchor="middle"
-          className="fill-gray-700"
+          className="fill-gray-700 dark:fill-gray-300"
           fontSize="11"
           fontWeight="bold"
         >

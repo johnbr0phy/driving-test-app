@@ -205,21 +205,21 @@ function StatsContent() {
       return {
         value: `${item.wrong}`,
         label: t("stats.wrongLabel"),
-        color: item.wrong > 0 ? "text-red-600" : "text-gray-300",
+        color: item.wrong > 0 ? "text-red-600 dark:text-red-400" : "text-gray-300",
       };
     }
     if (field === "correct") {
       return {
         value: `${item.correct}`,
         label: t("stats.correctLabel"),
-        color: item.correct > 0 ? "text-green-600" : "text-gray-300",
+        color: item.correct > 0 ? "text-green-600 dark:text-green-400" : "text-gray-300",
       };
     }
     if (field === "timesAnswered") {
       return {
         value: `${item.timesAnswered}`,
         label: t("stats.answered"),
-        color: item.timesAnswered > 0 ? "text-gray-700" : "text-gray-300",
+        color: item.timesAnswered > 0 ? "text-gray-700 dark:text-gray-200" : "text-gray-300",
       };
     }
     if (item.timesAnswered === 0) {
@@ -230,10 +230,10 @@ function StatsContent() {
       label: t("stats.accuracy"),
       color:
         item.accuracy === 100
-          ? "text-green-600"
+          ? "text-green-600 dark:text-green-400"
           : item.accuracy >= 50
-            ? "text-yellow-600"
-            : "text-red-500",
+            ? "text-yellow-600 dark:text-yellow-400"
+            : "text-red-500 dark:text-red-400",
     };
   };
 
@@ -256,18 +256,18 @@ function StatsContent() {
         correctAnswer={optionText(item.question, item.question.correctAnswer)}
         onAnswer={(correct) => trackDailyQuizAnswer(correct, "stats_yours")}
         renderFooter={() => (
-          <div className="flex items-center gap-4 pt-1 px-1 text-xs text-gray-500">
+          <div className="flex items-center gap-4 pt-1 px-1 text-xs text-gray-500 dark:text-gray-400">
             <span>
               {t("stats.answered")}:{" "}
-              <span className="font-semibold text-gray-700">{item.timesAnswered}</span>
+              <span className="font-semibold text-gray-700 dark:text-gray-200">{item.timesAnswered}</span>
             </span>
             <span>
               {t("stats.correctLabel")}:{" "}
-              <span className="font-semibold text-green-600">{item.correct}</span>
+              <span className="font-semibold text-green-600 dark:text-green-400">{item.correct}</span>
             </span>
             <span>
               {t("stats.wrongLabel")}:{" "}
-              <span className="font-semibold text-red-600">{item.wrong}</span>
+              <span className="font-semibold text-red-600 dark:text-red-400">{item.wrong}</span>
             </span>
           </div>
         )}
@@ -280,7 +280,7 @@ function StatsContent() {
   }
 
   return (
-    <div className="flex-1 bg-gray-50">
+    <div className="flex-1 bg-gray-50 dark:bg-gray-950">
       <div className="relative">
         <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-light to-transparent pointer-events-none" />
         <div className="relative container mx-auto px-4 py-6 max-w-3xl">
@@ -299,14 +299,14 @@ function StatsContent() {
         />
 
         {/* Tab Navigation */}
-        <div className="flex gap-1.5 mb-6 bg-white border border-gray-200 rounded-xl p-1.5 shadow-sm">
+        <div className="flex gap-1.5 mb-6 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl p-1.5 shadow-sm">
           <button
             onClick={() => setActiveTab("yours")}
             aria-pressed={activeTab === "yours"}
             className={`flex-1 flex items-center justify-center gap-2 text-sm font-semibold py-2.5 px-4 rounded-lg transition-all ${
               activeTab === "yours"
                 ? "bg-brand text-white shadow-sm"
-                : "text-gray-500 hover:text-gray-900 hover:bg-gray-50"
+                : "text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-50 hover:bg-gray-50 dark:hover:bg-gray-800"
             }`}
           >
             <BarChart3 className="h-4 w-4" />
@@ -318,7 +318,7 @@ function StatsContent() {
             className={`flex-1 flex items-center justify-center gap-2 text-sm font-semibold py-2.5 px-4 rounded-lg transition-all ${
               activeTab === "community"
                 ? "bg-brand text-white shadow-sm"
-                : "text-gray-500 hover:text-gray-900 hover:bg-gray-50"
+                : "text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-50 hover:bg-gray-50 dark:hover:bg-gray-800"
             }`}
           >
             <Users className="h-4 w-4" />
@@ -351,7 +351,7 @@ function StatsContent() {
                   className={`whitespace-nowrap text-sm px-3 py-1.5 rounded-full border transition-colors ${
                     sortField === field
                       ? "bg-brand-light border-brand-border text-brand-dark font-medium"
-                      : "bg-white border-gray-200 text-gray-600"
+                      : "bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-800 text-gray-600 dark:text-gray-300"
                   }`}
                 >
                   {label}
@@ -366,7 +366,7 @@ function StatsContent() {
             </div>
 
             {sortedQuestions.length === 0 ? (
-              <div className="rounded-xl bg-white border border-gray-100 p-6 text-center text-gray-500">
+              <div className="rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 p-6 text-center text-gray-500 dark:text-gray-400">
                 {t("stats.noQuestionsAvailable")}
               </div>
             ) : (
@@ -396,7 +396,7 @@ function StatsContent() {
                         return (
                           <div
                             key={item.question.questionId}
-                            className="rounded-xl bg-white border border-gray-100 px-4 py-3 flex items-center gap-4"
+                            className="rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 px-4 py-3 flex items-center gap-4"
                           >
                             <div className="shrink-0 text-center min-w-[3rem]">
                               <div className={`text-base font-bold tabular-nums leading-none ${chip.color}`}>
@@ -406,7 +406,7 @@ function StatsContent() {
                                 {chip.label}
                               </div>
                             </div>
-                            <p className="flex-1 min-w-0 text-sm leading-snug font-medium text-gray-900 line-clamp-2">
+                            <p className="flex-1 min-w-0 text-sm leading-snug font-medium text-gray-900 dark:text-gray-50 line-clamp-2">
                               {item.question.question}
                             </p>
                           </div>
@@ -416,14 +416,14 @@ function StatsContent() {
 
                     {/* Lock UI, overlaid on top of the faded cards */}
                     <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
-                      <div className="rounded-2xl bg-white/80 backdrop-blur-sm px-6 py-4 flex flex-col items-center shadow-sm border border-gray-200">
+                      <div className="rounded-2xl bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm px-6 py-4 flex flex-col items-center shadow-sm border border-gray-200 dark:border-gray-800">
                         <div className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-brand-light mb-2">
                           <Lock className="h-4 w-4 text-brand" />
                         </div>
-                        <p className="text-sm font-semibold text-gray-900 mb-1">
+                        <p className="text-sm font-semibold text-gray-900 dark:text-gray-50 mb-1">
                           {sortedQuestions.length - FREE_QUESTION_LIMIT} {t("stats.moreQuestions")}
                         </p>
-                        <p className="text-xs text-gray-500 mb-2.5">
+                        <p className="text-xs text-gray-500 dark:text-gray-400 mb-2.5">
                           {t("stats.unlockPremiumStats")}
                         </p>
                         <button
@@ -448,7 +448,7 @@ function StatsContent() {
 
 export default function StatsPage() {
   return (
-    <Suspense fallback={<div className="flex-1 bg-gray-50" />}>
+    <Suspense fallback={<div className="flex-1 bg-gray-50 dark:bg-gray-950" />}>
       <StatsContent />
     </Suspense>
   );

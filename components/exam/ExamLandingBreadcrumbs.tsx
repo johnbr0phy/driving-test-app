@@ -29,9 +29,9 @@ export function ExamLandingBreadcrumbs({ examId }: { examId: string }) {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <nav aria-label="Breadcrumb" className="bg-brand-light">
-        <ol className="max-w-4xl mx-auto px-6 pt-4 flex items-center gap-1.5 flex-wrap text-xs text-gray-500">
+        <ol className="max-w-4xl mx-auto px-6 pt-4 flex items-center gap-1.5 flex-wrap text-xs text-gray-500 dark:text-gray-400">
           <li>
-            <Link href="/" className="hover:text-gray-900">
+            <Link href="/" className="hover:text-gray-900 dark:hover:text-gray-50">
               Home
             </Link>
           </li>
@@ -39,14 +39,14 @@ export function ExamLandingBreadcrumbs({ examId }: { examId: string }) {
             <ChevronRight className="h-3 w-3 text-gray-400" />
           </li>
           <li>
-            <Link href="/tests" className="hover:text-gray-900">
+            <Link href="/tests" className="hover:text-gray-900 dark:hover:text-gray-50">
               All practice tests
             </Link>
           </li>
           <li aria-hidden="true">
             <ChevronRight className="h-3 w-3 text-gray-400" />
           </li>
-          <li className="text-gray-700" aria-current="page">
+          <li className="text-gray-700 dark:text-gray-200" aria-current="page">
             {test.name}
           </li>
         </ol>

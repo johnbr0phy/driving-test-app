@@ -140,7 +140,7 @@ export function ExamDashboard({ exam }: { exam: ExamConfig }) {
   if (hydrated && forwardTo) return null;
 
   return (
-    <div className="flex-1 bg-gray-50">
+    <div className="flex-1 bg-gray-50 dark:bg-gray-950">
       <div className="relative">
       <div className="absolute inset-x-0 top-0 h-96 bg-gradient-to-b from-brand-light to-transparent pointer-events-none" />
       <div className="relative container mx-auto px-4 sm:px-6 py-6 pb-10 max-w-lg md:max-w-2xl lg:max-w-4xl">
@@ -152,7 +152,7 @@ export function ExamDashboard({ exam }: { exam: ExamConfig }) {
               <div className="flex items-center gap-3">
                 <div className="text-2xl">📊</div>
                 <div className="flex-1">
-                  <p className="text-sm text-gray-700">
+                  <p className="text-sm text-gray-700 dark:text-gray-200">
                     <span className="font-bold">{t("common.signUp")}</span> {exam.copy.guestPrompt}
                   </p>
                   <Link href={routes.signup} className="text-xs text-brand hover:text-brand-dark font-medium mt-1 inline-block">
@@ -167,7 +167,7 @@ export function ExamDashboard({ exam }: { exam: ExamConfig }) {
         <ExamStatePrompt exam={exam} />
 
         {/* Hero card with progress */}
-        <div className="rounded-xl bg-white border border-gray-100 p-4 mb-6">
+        <div className="rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 p-4 mb-6">
           <div className="flex items-center gap-4">
             <Image
               src={getTigerFace(completedSteps, totalSteps, exam.id)}
@@ -177,11 +177,11 @@ export function ExamDashboard({ exam }: { exam: ExamConfig }) {
               className="w-12 h-12 flex-shrink-0"
             />
             <div className="flex-1 min-w-0">
-              <h1 className="text-lg font-bold text-gray-900">{heroTitle(completedSteps, totalSteps)}</h1>
-              <p className="text-xs text-gray-500 mt-0.5">{heroSub(exam, completedSteps, totalSteps)}</p>
+              <h1 className="text-lg font-bold text-gray-900 dark:text-gray-50">{heroTitle(completedSteps, totalSteps)}</h1>
+              <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">{heroSub(exam, completedSteps, totalSteps)}</p>
             </div>
             <div className="flex-shrink-0 text-right">
-              <div className="text-2xl font-bold tabular-nums text-gray-900">{completedSteps}/{totalSteps}</div>
+              <div className="text-2xl font-bold tabular-nums text-gray-900 dark:text-gray-50">{completedSteps}/{totalSteps}</div>
               <div className="text-xs text-gray-400">{t("dashboard.stampComplete").toLowerCase()}</div>
             </div>
           </div>
@@ -279,7 +279,7 @@ export function ExamDashboard({ exam }: { exam: ExamConfig }) {
                     <p className="text-xs mt-1 flex items-center gap-1.5">
                       {stillMissed === 0 && (
                         <>
-                          <span className="text-green-600 font-semibold">
+                          <span className="text-green-600 dark:text-green-400 font-semibold">
                             {testMisses.everMissed > 0
                               ? t("dashboard.allMissesFixed")
                               : t("dashboard.perfectRecord")}
@@ -287,7 +287,7 @@ export function ExamDashboard({ exam }: { exam: ExamConfig }) {
                           <span className={completed ? "text-green-300" : "text-gray-300"}>·</span>
                         </>
                       )}
-                      <span className={completed ? "text-green-600" : "text-gray-400"}>
+                      <span className={completed ? "text-green-600 dark:text-green-400" : "text-gray-400"}>
                         {testMisses.attempts === 1
                           ? t("dashboard.attemptsOne")
                           : t("dashboard.attemptsCount").replace("{{n}}", String(testMisses.attempts))}{" "}
@@ -302,8 +302,8 @@ export function ExamDashboard({ exam }: { exam: ExamConfig }) {
                     <div
                       className={`rounded-b-xl border border-t-0 px-4 pb-4 ${
                         completed
-                          ? "bg-gradient-to-r from-green-50 to-emerald-50 border-green-200"
-                          : "bg-white border-gray-100"
+                          ? "bg-gradient-to-r from-green-50 dark:from-green-950 to-emerald-50 dark:to-emerald-950 border-green-200 dark:border-green-800"
+                          : "bg-white dark:bg-gray-900 border-gray-100 dark:border-gray-800"
                       }`}
                     >
                       <AttemptChart
@@ -323,7 +323,7 @@ export function ExamDashboard({ exam }: { exam: ExamConfig }) {
                         )}
                         <button
                           onClick={() => router.push(routes.test(testId))}
-                          className="w-full flex items-center justify-center gap-1.5 rounded-lg bg-white border border-gray-200 text-gray-800 font-bold text-sm px-4 py-3 hover:bg-gray-50 transition-colors"
+                          className="w-full flex items-center justify-center gap-1.5 rounded-lg bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 text-gray-800 dark:text-gray-100 font-bold text-sm px-4 py-3 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
                         >
                           {activelyInProgress
                             ? t("dashboard.continueTest").replace("{{n}}", String(answeredCount))
@@ -349,13 +349,13 @@ export function ExamDashboard({ exam }: { exam: ExamConfig }) {
         {/* Stats entry */}
         {!isGuest && (
           <Link href={routes.stats} className="block">
-            <div className="rounded-xl bg-white border border-gray-100 p-4 flex items-center gap-3 hover:shadow-md transition-shadow">
+            <div className="rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 p-4 flex items-center gap-3 hover:shadow-md transition-shadow">
               <div className="w-8 h-8 rounded-full bg-brand-light flex items-center justify-center flex-shrink-0">
                 <BarChart3 className="h-4 w-4 text-brand" />
               </div>
               <div className="flex-1 min-w-0">
-                <h3 className="font-semibold text-sm text-gray-900">Your stats</h3>
-                <p className="text-xs text-gray-500 mt-0.5">Every question you&apos;ve seen, sorted by what you keep missing</p>
+                <h3 className="font-semibold text-sm text-gray-900 dark:text-gray-50">Your stats</h3>
+                <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">Every question you&apos;ve seen, sorted by what you keep missing</p>
               </div>
               <ChevronRight className="h-5 w-5 text-gray-300 flex-shrink-0" />
             </div>
@@ -364,7 +364,7 @@ export function ExamDashboard({ exam }: { exam: ExamConfig }) {
 
         <p className="mt-6 text-center text-[11px] text-gray-400">
           {exam.copy.sourceLine}{" "}
-          <Link href={exam.slug} className="underline hover:text-gray-600">About this practice test</Link>
+          <Link href={exam.slug} className="underline hover:text-gray-600 dark:hover:text-gray-300">About this practice test</Link>
         </p>
       </div>
       </div>

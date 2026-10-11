@@ -59,7 +59,7 @@ function Table({ lines, keyBase }: { lines: string[]; keyBase: string }) {
         <thead>
           <tr>
             {head.map((c, i) => (
-              <th key={i} className="border border-gray-300 bg-gray-50 px-3 py-1.5 text-left font-semibold">
+              <th key={i} className="border border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-gray-950 px-3 py-1.5 text-left font-semibold">
                 {inline(c, `${keyBase}-h${i}`)}
               </th>
             ))}
@@ -69,7 +69,7 @@ function Table({ lines, keyBase }: { lines: string[]; keyBase: string }) {
           {body.map((r, ri) => (
             <tr key={ri}>
               {r.map((c, ci) => (
-                <td key={ci} className="border border-gray-300 px-3 py-1.5 tabular-nums">
+                <td key={ci} className="border border-gray-300 dark:border-gray-700 px-3 py-1.5 tabular-nums">
                   {inline(c, `${keyBase}-${ri}-${ci}`)}
                 </td>
               ))}

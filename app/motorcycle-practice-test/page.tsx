@@ -113,7 +113,7 @@ const contentAreas = [
 
 export default function MotorcycleLandingPage() {
   return (
-    <div data-theme="moto" className="flex-1 bg-white">
+    <div data-theme="moto" className="flex-1 bg-white dark:bg-gray-900">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -122,9 +122,9 @@ export default function MotorcycleLandingPage() {
 
       {/* Hero */}
       <div className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28 text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 tracking-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-gray-50 mb-6 tracking-tight">
             Free Motorcycle Permit Practice Test 2026
           </h1>
           <ExamLandingHero
@@ -138,17 +138,17 @@ export default function MotorcycleLandingPage() {
 
       {/* How it works */}
       <div id="how-it-works" className="max-w-5xl mx-auto px-6 pt-8 pb-16 md:pt-12 md:pb-24">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-16">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-16">
           How It Works
         </h2>
         <div className="grid md:grid-cols-2 gap-8 md:gap-12">
           <div className="relative pt-8">
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16 bg-white border-2 border-brand-border-light rounded-full flex items-center justify-center shadow-sm">
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16 bg-white dark:bg-gray-900 border-2 border-brand-border-light rounded-full flex items-center justify-center shadow-sm">
               <Smartphone className="w-7 h-7 text-brand" />
             </div>
-            <div className="bg-gray-50 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Training by Manual Chapter</h3>
-              <p className="text-gray-600">
+            <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Training by Manual Chapter</h3>
+              <p className="text-gray-600 dark:text-gray-300">
                 Five sets that follow the MSF Motorcycle Operator Manual: preparing to ride, control,
                 positioning, intersections and hazards, special situations. Questions you miss come
                 back until you have mastered them.
@@ -156,12 +156,12 @@ export default function MotorcycleLandingPage() {
             </div>
           </div>
           <div className="relative pt-8">
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16 bg-white border-2 border-gray-200 rounded-full flex items-center justify-center shadow-sm">
-              <Monitor className="w-7 h-7 text-gray-500" />
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16 bg-white dark:bg-gray-900 border-2 border-gray-200 dark:border-gray-800 rounded-full flex items-center justify-center shadow-sm">
+              <Monitor className="w-7 h-7 text-gray-500 dark:text-gray-400" />
             </div>
-            <div className="bg-gray-50 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Practice Tests</h3>
-              <p className="text-gray-600">
+            <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Practice Tests</h3>
+              <p className="text-gray-600 dark:text-gray-300">
                 Four 50-question tests weighted the way the manual is. Score 80 percent, the pass mark
                 most states use, and you are ready for the real thing.
               </p>
@@ -171,22 +171,22 @@ export default function MotorcycleLandingPage() {
       </div>
 
       {/* Blueprint */}
-      <div className="bg-gray-50 py-16 md:py-24">
+      <div className="bg-gray-50 dark:bg-gray-950 py-16 md:py-24">
         <div className="max-w-5xl mx-auto px-6">
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
             <div className="flex-1">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">
                 Built on the MSF Motorcycle Operator Manual
               </h2>
-              <p className="text-lg text-gray-600 mb-6">
+              <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
                 Nearly every state reprints the Motorcycle Safety Foundation manual as its motorcycle
                 handbook and writes the permit test from it. Each practice test here draws from every
                 chapter in these proportions.
               </p>
               <div className="space-y-3">
                 {contentAreas.map((area) => (
-                  <div key={area.name} className="flex items-center justify-between bg-white rounded-lg px-4 py-3 border border-gray-200">
-                    <span className="font-medium text-gray-900">{area.name}</span>
+                  <div key={area.name} className="flex items-center justify-between bg-white dark:bg-gray-900 rounded-lg px-4 py-3 border border-gray-200 dark:border-gray-800">
+                    <span className="font-medium text-gray-900 dark:text-gray-50">{area.name}</span>
                     <span className="text-brand font-semibold">{area.weight}</span>
                   </div>
                 ))}
@@ -208,8 +208,8 @@ export default function MotorcycleLandingPage() {
       {/* Just launched */}
       <div className="max-w-3xl mx-auto px-6 py-16 md:py-24 text-center">
         <div className="bg-brand-light border border-brand-border-light rounded-2xl p-8 md:p-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">We Just Launched!</h2>
-          <p className="text-lg text-gray-600 mb-6 max-w-xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4">We Just Launched!</h2>
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 max-w-xl mx-auto">
             The motorcycle practice test is brand new. If a question looks wrong or you want your
             state&apos;s rules covered, tell us.
           </p>
@@ -225,14 +225,14 @@ export default function MotorcycleLandingPage() {
       </div>
 
       {/* Study guide */}
-      <div className="bg-gray-50 py-16 md:py-24">
+      <div className="bg-gray-50 dark:bg-gray-950 py-16 md:py-24">
         <div className="max-w-3xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-12">
             How to Pass the Motorcycle Permit Test
           </h2>
-          <div className="space-y-8 text-gray-600">
+          <div className="space-y-8 text-gray-600 dark:text-gray-300">
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">1. Know your state&apos;s format</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">1. Know your state&apos;s format</h3>
               <p>
                 Most states ask 20 to 30 multiple-choice questions and require about 80 percent, for
                 example 20 of 25 in California. Some states waive the written test if you complete an
@@ -240,7 +240,7 @@ export default function MotorcycleLandingPage() {
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">2. Read the MSF manual, not just the car handbook</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">2. Read the MSF manual, not just the car handbook</h3>
               <p>
                 The motorcycle test is about riding: countersteering, using both brakes, lane position,
                 the two-second following distance, SEE, and what to do at intersections where most
@@ -248,7 +248,7 @@ export default function MotorcycleLandingPage() {
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">3. Train the chapters in order</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">3. Train the chapters in order</h3>
               <p>
                 Start with Preparing to Ride and Controlling the Motorcycle, then Positioning. Together
                 they are more than half of every test. Finish with hazards, special situations, and
@@ -256,7 +256,7 @@ export default function MotorcycleLandingPage() {
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">4. Drill your weak areas</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Drill your weak areas</h3>
               <p>
                 TigerTest tracks your accuracy by chapter. After each practice test, go back to the
                 training set for the chapter you missed most, then retake until you clear 80 percent.
@@ -268,37 +268,37 @@ export default function MotorcycleLandingPage() {
 
       {/* FAQ */}
       <div className="max-w-3xl mx-auto px-6 py-16 md:py-24">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-12">
           Motorcycle Permit Test Frequently Asked Questions
         </h2>
         <div className="space-y-8">
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 mb-2">How many questions are on the motorcycle permit test?</h3>
-            <p className="text-gray-600">
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">How many questions are on the motorcycle permit test?</h3>
+            <p className="text-gray-600 dark:text-gray-300">
               Most states ask 20 to 30 multiple-choice questions and require about 80 percent to pass,
               for example 20 of 25 in California. A few states let you skip the written test by
               completing an approved rider course.
             </p>
           </div>
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 mb-2">What is the motorcycle permit test based on?</h3>
-            <p className="text-gray-600">
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">What is the motorcycle permit test based on?</h3>
+            <p className="text-gray-600 dark:text-gray-300">
               Nearly every state writes its test from the Motorcycle Safety Foundation (MSF) Motorcycle
               Operator Manual, often reprinted as the state motorcycle handbook. These 200 questions
               follow that manual chapter by chapter.
             </p>
           </div>
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 mb-2">Does this cover my state&apos;s motorcycle laws?</h3>
-            <p className="text-gray-600">
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Does this cover my state&apos;s motorcycle laws?</h3>
+            <p className="text-gray-600 dark:text-gray-300">
               It covers the riding knowledge that is the same everywhere: gear, control, positioning,
               intersections, hazards and alcohol. Helmet laws, permit restrictions and licensing steps
               vary by state, so check your state&apos;s motorcycle handbook for those.
             </p>
           </div>
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 mb-2">Is the TigerTest motorcycle practice test free?</h3>
-            <p className="text-gray-600">
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is the TigerTest motorcycle practice test free?</h3>
+            <p className="text-gray-600 dark:text-gray-300">
               Yes. All four practice tests and all five training sets are free, with no account required.
               Create a free account if you want your progress saved across devices.
             </p>
@@ -310,10 +310,10 @@ export default function MotorcycleLandingPage() {
 
       {/* Final CTA */}
       <div className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-t from-brand-light to-white pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-t from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Ready to Pass Your Motorcycle Permit Test?</h2>
-          <p className="text-lg text-gray-600 mb-10">Free to start. No account required. 200 questions from the MSF manual.</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">Ready to Pass Your Motorcycle Permit Test?</h2>
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Free to start. No account required. 200 questions from the MSF manual.</p>
           <ExamLandingCTA dashboardHref="/motorcycle/dashboard" />
         </div>
       </div>

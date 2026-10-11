@@ -110,7 +110,7 @@ const sections = [
 
 export default function Epa608LandingPage() {
   return (
-    <div data-theme="epa608" className="flex-1 bg-white">
+    <div data-theme="epa608" className="flex-1 bg-white dark:bg-gray-900">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -119,9 +119,9 @@ export default function Epa608LandingPage() {
 
       {/* Hero */}
       <div className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28 text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 tracking-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-gray-50 mb-6 tracking-tight">
             Free EPA 608 Practice Test 2026
           </h1>
           <ExamLandingHero
@@ -135,29 +135,29 @@ export default function Epa608LandingPage() {
 
       {/* How it works */}
       <div id="how-it-works" className="max-w-5xl mx-auto px-6 pt-8 pb-16 md:pt-12 md:pb-24">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-16">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-16">
           How It Works
         </h2>
         <div className="grid md:grid-cols-2 gap-8 md:gap-12">
           <div className="relative pt-8">
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16 bg-white border-2 border-brand-border-light rounded-full flex items-center justify-center shadow-sm">
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16 bg-white dark:bg-gray-900 border-2 border-brand-border-light rounded-full flex items-center justify-center shadow-sm">
               <Smartphone className="w-7 h-7 text-brand" />
             </div>
-            <div className="bg-gray-50 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">One Set per Section</h3>
-              <p className="text-gray-600">
+            <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">One Set per Section</h3>
+              <p className="text-gray-600 dark:text-gray-300">
                 Taking Type II only? Train Core and Type II. Each set is one section of the real exam,
                 and questions you miss come back until you have mastered them.
               </p>
             </div>
           </div>
           <div className="relative pt-8">
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16 bg-white border-2 border-gray-200 rounded-full flex items-center justify-center shadow-sm">
-              <Monitor className="w-7 h-7 text-gray-500" />
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16 bg-white dark:bg-gray-900 border-2 border-gray-200 dark:border-gray-800 rounded-full flex items-center justify-center shadow-sm">
+              <Monitor className="w-7 h-7 text-gray-500 dark:text-gray-400" />
             </div>
-            <div className="bg-gray-50 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Mixed Practice Tests</h3>
-              <p className="text-gray-600">
+            <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Mixed Practice Tests</h3>
+              <p className="text-gray-600 dark:text-gray-300">
                 Four 50-question tests across all four sections at the real 72 percent pass line.
                 Built for Universal candidates who want everything at once.
               </p>
@@ -167,23 +167,23 @@ export default function Epa608LandingPage() {
       </div>
 
       {/* Sections */}
-      <div className="bg-gray-50 py-16 md:py-24">
+      <div className="bg-gray-50 dark:bg-gray-950 py-16 md:py-24">
         <div className="max-w-5xl mx-auto px-6">
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
             <div className="flex-1">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">
                 The Four Sections of the EPA 608 Exam
               </h2>
-              <p className="text-lg text-gray-600 mb-6">
+              <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
                 Every section is 25 questions, 18 to pass. Core is on every certification; the type
                 sections add the equipment you will service.
               </p>
               <div className="space-y-3">
                 {sections.map((s) => (
-                  <div key={s.name} className="flex items-center justify-between gap-4 bg-white rounded-lg px-4 py-3 border border-gray-200">
+                  <div key={s.name} className="flex items-center justify-between gap-4 bg-white dark:bg-gray-900 rounded-lg px-4 py-3 border border-gray-200 dark:border-gray-800">
                     <div>
-                      <span className="block font-medium text-gray-900">{s.name}</span>
-                      <span className="block text-sm text-gray-500">{s.detail}</span>
+                      <span className="block font-medium text-gray-900 dark:text-gray-50">{s.name}</span>
+                      <span className="block text-sm text-gray-500 dark:text-gray-400">{s.detail}</span>
                     </div>
                     <span className="text-brand font-semibold whitespace-nowrap">{s.questions} questions</span>
                   </div>
@@ -206,8 +206,8 @@ export default function Epa608LandingPage() {
       {/* Just launched */}
       <div className="max-w-3xl mx-auto px-6 py-16 md:py-24 text-center">
         <div className="bg-brand-light border border-brand-border-light rounded-2xl p-8 md:p-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">We Just Launched!</h2>
-          <p className="text-lg text-gray-600 mb-6 max-w-xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4">We Just Launched!</h2>
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 max-w-xl mx-auto">
             The EPA 608 practice test is brand new. If a question looks wrong or a rule has changed
             under the AIM Act, tell us.
           </p>
@@ -223,14 +223,14 @@ export default function Epa608LandingPage() {
       </div>
 
       {/* Study guide */}
-      <div className="bg-gray-50 py-16 md:py-24">
+      <div className="bg-gray-50 dark:bg-gray-950 py-16 md:py-24">
         <div className="max-w-3xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-12">
             How to Pass the EPA 608 Exam
           </h2>
-          <div className="space-y-8 text-gray-600">
+          <div className="space-y-8 text-gray-600 dark:text-gray-300">
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">1. Decide which certification you need</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">1. Decide which certification you need</h3>
               <p>
                 Type I for small appliances, Type II for high-pressure systems like split ACs and
                 commercial refrigeration, Type III for low-pressure chillers. Most HVAC technicians go
@@ -238,7 +238,7 @@ export default function Epa608LandingPage() {
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">2. Learn the numbers</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">2. Learn the numbers</h3>
               <p>
                 Recovery levels by appliance size and type, 500 microns, 80 percent cylinder fill,
                 the 30, 20 and 10 percent leak rates with 30 days to repair, 125 F cylinder limit,
@@ -247,14 +247,14 @@ export default function Epa608LandingPage() {
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">3. Know what appears on every section</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">3. Know what appears on every section</h3>
               <p>
                 Safety, shipping, refrigerant identification and the regulations show up in every
                 section, not just Core. If you only study the type section, you will lose those points.
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">4. Drill your weak areas</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Drill your weak areas</h3>
               <p>
                 TigerTest tracks your accuracy by section. After each mixed test, go back to the set you
                 missed most and retake until you clear 72 percent with room to spare.
@@ -266,36 +266,36 @@ export default function Epa608LandingPage() {
 
       {/* FAQ */}
       <div className="max-w-3xl mx-auto px-6 py-16 md:py-24">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-12">
           EPA 608 Frequently Asked Questions
         </h2>
         <div className="space-y-8">
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 mb-2">How many questions are on the EPA 608 exam?</h3>
-            <p className="text-gray-600">
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">How many questions are on the EPA 608 exam?</h3>
+            <p className="text-gray-600 dark:text-gray-300">
               Each section has 25 multiple-choice questions and you need 18 correct, 72 percent. Core is
               required for any certification. Core plus one type gives that type; Core plus all three
               gives Universal, 100 questions in total.
             </p>
           </div>
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 mb-2">What is the difference between Type I, II and III?</h3>
-            <p className="text-gray-600">
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">What is the difference between Type I, II and III?</h3>
+            <p className="text-gray-600 dark:text-gray-300">
               Type I covers small appliances with 5 pounds or less of refrigerant. Type II covers
               high-pressure appliances such as split systems and commercial refrigeration. Type III
               covers low-pressure appliances, mainly centrifugal chillers. Universal covers all three.
             </p>
           </div>
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 mb-2">Is the EPA 608 exam open book?</h3>
-            <p className="text-gray-600">
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is the EPA 608 exam open book?</h3>
+            <p className="text-gray-600 dark:text-gray-300">
               Some providers offer Type I as an open-book online test, but Type II, Type III and
               Universal must be taken proctored and closed book. Check with your testing organization.
             </p>
           </div>
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 mb-2">Is the TigerTest EPA 608 practice test free?</h3>
-            <p className="text-gray-600">
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is the TigerTest EPA 608 practice test free?</h3>
+            <p className="text-gray-600 dark:text-gray-300">
               Yes. All four training sets and all four mixed practice tests are free, with no account
               required. Create a free account if you want your progress saved across devices.
             </p>
@@ -307,10 +307,10 @@ export default function Epa608LandingPage() {
 
       {/* Final CTA */}
       <div className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-t from-brand-light to-white pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-t from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Ready to Go Universal?</h2>
-          <p className="text-lg text-gray-600 mb-10">Free to start. No account required. 200 questions across all four sections.</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">Ready to Go Universal?</h2>
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Free to start. No account required. 200 questions across all four sections.</p>
           <ExamLandingCTA dashboardHref="/epa-608/dashboard" />
         </div>
       </div>

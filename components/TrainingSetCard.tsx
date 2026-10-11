@@ -40,7 +40,7 @@ export function TrainingSetCard({ set, locked = false, isPremiumLocked = false, 
       return <PremiumBadge variant="locked" size="sm" />;
     }
     if (locked) {
-      return <Badge variant="outline" className="bg-gray-100 hover:bg-gray-100 text-xs">{t("common.locked")}</Badge>;
+      return <Badge variant="outline" className="bg-gray-100 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-800 text-xs">{t("common.locked")}</Badge>;
     }
     if (isComplete) {
       return <Badge className="bg-emerald-400 hover:bg-emerald-400 text-xs">{t("common.complete")}</Badge>;
@@ -54,10 +54,10 @@ export function TrainingSetCard({ set, locked = false, isPremiumLocked = false, 
   const cardContent = (
     <Card className={`h-full transition-all ${
       locked
-        ? "bg-gray-100 border-gray-200 opacity-60"
+        ? "bg-gray-100 dark:bg-gray-800 border-gray-200 dark:border-gray-800 opacity-60"
         : isPremiumLocked
           ? "bg-gradient-to-r from-brand-light to-brand-gradient-to border-brand-border-light hover:shadow-md hover:border-brand-border cursor-pointer"
-          : "bg-gray-50 hover:shadow-md cursor-pointer hover:border-brand-border"
+          : "bg-gray-50 dark:bg-gray-950 hover:shadow-md cursor-pointer hover:border-brand-border"
     }`}>
       <CardContent className="p-4 flex items-center justify-between">
         <div className="flex flex-col">
@@ -71,7 +71,7 @@ export function TrainingSetCard({ set, locked = false, isPremiumLocked = false, 
             ) : isPremiumLocked ? (
               <span className="text-brand">{t("common.unlockWithPremium")}</span>
             ) : (
-              <span className={isComplete ? 'text-green-600' : 'text-gray-500'}>
+              <span className={isComplete ? 'text-green-600 dark:text-green-400' : 'text-gray-500 dark:text-gray-400'}>
                 {set.correctCount}/{set.targetCount}
               </span>
             )}

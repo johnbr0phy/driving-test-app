@@ -7,6 +7,7 @@ import { states } from "@/data/states";
 import { isViState } from "@/data/viStates";
 import { isKoState } from "@/data/koStates";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import { getExamByPath } from "@/lib/exams";
 import { relatedTests } from "@/lib/testCatalog";
 import { getExamV2ByPath } from "@/lib/v2/registry";
@@ -58,10 +59,10 @@ export function Footer() {
   const dataTheme = exam?.id;
 
   return (
-    <footer className="relative border-t bg-white mt-auto" data-theme={dataTheme}>
+    <footer className="relative border-t bg-white dark:bg-gray-900 mt-auto" data-theme={dataTheme}>
       <div className="container mx-auto px-4 py-6">
         {!isAltExam && (
-          <div className="flex flex-wrap justify-center md:justify-between gap-x-3 gap-y-1 text-sm text-gray-500">
+          <div className="flex flex-wrap justify-center md:justify-between gap-x-3 gap-y-1 text-sm text-gray-500 dark:text-gray-400">
             {popularStates.map(
               (state) =>
                 state && (
@@ -100,9 +101,9 @@ export function Footer() {
         )}
         <nav
           aria-label={t("footer.practiceTests")}
-          className={`flex flex-wrap justify-center md:justify-start items-center gap-x-3 gap-y-1 text-sm text-gray-500 ${isAltExam ? "" : "mt-3"}`}
+          className={`flex flex-wrap justify-center md:justify-start items-center gap-x-3 gap-y-1 text-sm text-gray-500 dark:text-gray-400 ${isAltExam ? "" : "mt-3"}`}
         >
-          <span className="font-medium text-gray-700">{t("footer.practiceTests")}:</span>
+          <span className="font-medium text-gray-700 dark:text-gray-200">{t("footer.practiceTests")}:</span>
           {footerTests.map((test) => (
             <Link key={test.id} href={test.href} className="hover:text-brand">
               {test.shortName}
@@ -112,10 +113,10 @@ export function Footer() {
             {t("footer.allTests")}
           </Link>
         </nav>
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 text-sm text-gray-600 mt-4">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 text-sm text-gray-600 dark:text-gray-300 mt-4">
           <p className="text-center md:text-left">
             {t("footer.madeWith")}{" "}
-            <span className="text-red-500" aria-label="love">
+            <span className="text-red-500 dark:text-red-400" aria-label="love">
               ❤️
             </span>{" "}
             {t("footer.by")}{" "}
@@ -129,8 +130,9 @@ export function Footer() {
             </a>
             .
           </p>
-          <div className="flex items-center justify-center md:justify-end gap-x-4 text-gray-500">
+          <div className="flex items-center justify-center md:justify-end gap-x-4 text-gray-500 dark:text-gray-400">
             {showLanguageToggle && <LanguageSwitcher />}
+            <ThemeToggle className="h-7 w-7" />
             {showSchools && (
               <Link href="/schools" className="hover:text-brand hover:underline">
                 Driving Schools

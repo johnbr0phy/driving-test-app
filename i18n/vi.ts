@@ -958,6 +958,12 @@ export const vi: TranslationKeys = {
   },
 
   // Language
+  theme: {
+    appearance: "Giao diện",
+    light: "Sáng",
+    dark: "Tối",
+    system: "Theo hệ thống",
+  },
   language: {
     en: "EN",
     es: "ES",

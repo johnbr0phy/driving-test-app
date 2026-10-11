@@ -35,14 +35,14 @@ export function QuestionCard({
 
     if (showResult) {
       if (isThisCorrect) {
-        return "border-green-500 bg-green-50";
+        return "border-green-500 bg-green-50 dark:bg-green-950";
       } else if (isSelected && !isCorrect) {
-        return "border-red-500 bg-red-50";
+        return "border-red-500 bg-red-50 dark:bg-red-950";
       }
-      return "border-gray-300 opacity-50";
+      return "border-gray-300 dark:border-gray-700 opacity-50";
     }
 
-    return "border-gray-300 [@media(hover:hover)]:hover:border-brand [@media(hover:hover)]:hover:bg-brand-light active:border-brand active:bg-brand-light cursor-pointer";
+    return "border-gray-300 dark:border-gray-700 [@media(hover:hover)]:hover:border-brand [@media(hover:hover)]:hover:bg-brand-light active:border-brand active:bg-brand-light cursor-pointer";
   };
 
   return (
@@ -69,10 +69,10 @@ export function QuestionCard({
                   <span className="font-bold text-lg w-6 shrink-0">{option.value})</span>
                   <span className="flex-1">{option.label}</span>
                   {showResult && isThisCorrect && (
-                    <CheckCircle2 className="h-6 w-6 text-green-600" />
+                    <CheckCircle2 className="h-6 w-6 text-green-600 dark:text-green-400" />
                   )}
                   {showResult && isSelected && !isCorrect && (
-                    <XCircle className="h-6 w-6 text-red-600" />
+                    <XCircle className="h-6 w-6 text-red-600 dark:text-red-400" />
                   )}
                 </div>
               </div>

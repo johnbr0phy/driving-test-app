@@ -6,6 +6,7 @@ import { Footer } from "@/components/Footer";
 import { Providers } from "@/components/Providers";
 import { SuperAmazingFireworks } from "@/components/SuperAmazingFireworks";
 import { NativeAppShell } from "@/components/NativeAppShell";
+import { THEME_INIT_SCRIPT } from "@/contexts/ThemeContext";
 
 // viewport-fit=cover (page extends behind the notch/home indicator) is
 // only wanted inside the native app shell, where env(safe-area-inset-*)
@@ -91,7 +92,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        {/* Applies the saved colour scheme before first paint so dark-mode
+            readers never see a white flash. See contexts/ThemeContext.tsx. */}
+        <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
+      </head>
       {/* min-h-screen (100vh) rather than min-h-dvh: dvh resizes as the iOS
           browser toolbar collapses/expands while scrolling, which can leave
           the top of the page stuck behind the toolbar on scroll-up. */}

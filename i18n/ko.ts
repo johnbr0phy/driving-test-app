@@ -960,6 +960,12 @@ export const ko: TranslationKeys = {
   },
 
   // Language
+  theme: {
+    appearance: "화면 모드",
+    light: "라이트",
+    dark: "다크",
+    system: "시스템 설정",
+  },
   language: {
     en: "EN",
     es: "ES",

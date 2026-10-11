@@ -54,19 +54,19 @@ export default function SchoolApplyPage() {
   };
 
   const inputClass =
-    "w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand bg-white text-gray-900";
+    "w-full border border-gray-200 dark:border-gray-800 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-50";
 
   if (submitted) {
     return (
       <div className="flex-1 relative">
         <div className="absolute inset-x-0 top-0 h-96 bg-gradient-to-b from-brand-light to-transparent pointer-events-none" />
       <div className="relative max-w-lg mx-auto px-6 py-20 text-center">
-        <div className="bg-green-50 border border-green-200 rounded-2xl p-10 space-y-6">
+        <div className="bg-green-50 dark:bg-green-950 border border-green-200 dark:border-green-800 rounded-2xl p-10 space-y-6">
           <div className="text-5xl">🎉</div>
-          <h2 className="text-2xl font-bold text-gray-900">
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-50">
             You&apos;re on the list.
           </h2>
-          <p className="text-gray-600">
+          <p className="text-gray-600 dark:text-gray-300">
             We&apos;ll send a custom quote within one business day. In the meantime, try TigerTest yourself — it&apos;s the same experience your students will get.
           </p>
           <div className="flex flex-col gap-3 pt-2">
@@ -93,20 +93,20 @@ export default function SchoolApplyPage() {
     <div className="flex-1 relative">
       <div className="absolute inset-x-0 top-0 h-96 bg-gradient-to-b from-brand-light to-transparent pointer-events-none" />
     <div className="relative max-w-lg mx-auto px-6 py-20">
-      <h1 className="text-3xl font-bold text-gray-900 text-center mb-3">
+      <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-50 text-center mb-3">
         Get a quote
       </h1>
-      <p className="text-gray-600 text-center mb-10">
+      <p className="text-gray-600 dark:text-gray-300 text-center mb-10">
         Tell us about your school and we&apos;ll send a custom quote within one
         business day.
       </p>
 
       <form
         onSubmit={handleSubmit}
-        className="bg-white rounded-2xl p-8 shadow-sm space-y-5 border border-gray-100"
+        className="bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-sm space-y-5 border border-gray-100 dark:border-gray-800"
       >
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">
+          <label className="block text-sm font-medium text-gray-700 dark:text-gray-200 mb-1">
             School name
           </label>
           <input
@@ -120,7 +120,7 @@ export default function SchoolApplyPage() {
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">
+          <label className="block text-sm font-medium text-gray-700 dark:text-gray-200 mb-1">
             Contact name
           </label>
           <input
@@ -134,7 +134,7 @@ export default function SchoolApplyPage() {
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">
+          <label className="block text-sm font-medium text-gray-700 dark:text-gray-200 mb-1">
             Email
           </label>
           <input
@@ -148,7 +148,7 @@ export default function SchoolApplyPage() {
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">
+          <label className="block text-sm font-medium text-gray-700 dark:text-gray-200 mb-1">
             Phone
           </label>
           <input
@@ -162,7 +162,7 @@ export default function SchoolApplyPage() {
 
         <div className="grid grid-cols-2 gap-4">
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">
+            <label className="block text-sm font-medium text-gray-700 dark:text-gray-200 mb-1">
               City
             </label>
             <input
@@ -174,7 +174,7 @@ export default function SchoolApplyPage() {
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">
+            <label className="block text-sm font-medium text-gray-700 dark:text-gray-200 mb-1">
               State
             </label>
             <input
@@ -188,7 +188,7 @@ export default function SchoolApplyPage() {
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">
+          <label className="block text-sm font-medium text-gray-700 dark:text-gray-200 mb-1">
             Estimated students per year
           </label>
           <select
@@ -205,7 +205,7 @@ export default function SchoolApplyPage() {
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">
+          <label className="block text-sm font-medium text-gray-700 dark:text-gray-200 mb-1">
             How did you hear about us?
           </label>
           <select

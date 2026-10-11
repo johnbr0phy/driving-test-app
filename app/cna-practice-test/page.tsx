@@ -115,7 +115,7 @@ const contentAreas = [
 
 export default function CnaLandingPage() {
   return (
-    <div data-theme="cna" className="flex-1 bg-white">
+    <div data-theme="cna" className="flex-1 bg-white dark:bg-gray-900">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -124,9 +124,9 @@ export default function CnaLandingPage() {
 
       {/* Hero */}
       <div className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28 text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 tracking-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-gray-50 mb-6 tracking-tight">
             Free CNA Practice Test 2026
           </h1>
           <ExamLandingHero
@@ -140,17 +140,17 @@ export default function CnaLandingPage() {
 
       {/* How it works */}
       <div id="how-it-works" className="max-w-5xl mx-auto px-6 pt-8 pb-16 md:pt-12 md:pb-24">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-16">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-16">
           How It Works
         </h2>
         <div className="grid md:grid-cols-2 gap-8 md:gap-12">
           <div className="relative pt-8">
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16 bg-white border-2 border-brand-border-light rounded-full flex items-center justify-center shadow-sm">
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16 bg-white dark:bg-gray-900 border-2 border-brand-border-light rounded-full flex items-center justify-center shadow-sm">
               <Smartphone className="w-7 h-7 text-brand" />
             </div>
-            <div className="bg-gray-50 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Training by Content Area</h3>
-              <p className="text-gray-600">
+            <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Training by Content Area</h3>
+              <p className="text-gray-600 dark:text-gray-300">
                 Four sets that follow the NNAAP outline: daily living and restorative care, basic
                 nursing skills, psychosocial care, and the role of the nurse aide. Questions you miss
                 come back until you have mastered them.
@@ -158,12 +158,12 @@ export default function CnaLandingPage() {
             </div>
           </div>
           <div className="relative pt-8">
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16 bg-white border-2 border-gray-200 rounded-full flex items-center justify-center shadow-sm">
-              <Monitor className="w-7 h-7 text-gray-500" />
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16 bg-white dark:bg-gray-900 border-2 border-gray-200 dark:border-gray-800 rounded-full flex items-center justify-center shadow-sm">
+              <Monitor className="w-7 h-7 text-gray-500 dark:text-gray-400" />
             </div>
-            <div className="bg-gray-50 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Practice Tests</h3>
-              <p className="text-gray-600">
+            <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Practice Tests</h3>
+              <p className="text-gray-600 dark:text-gray-300">
                 Four 50-question tests weighted like the real exam, written in its style: a resident
                 situation and the one thing the nurse aide should do. Basic nursing skills is nearly
                 40 percent of every test.
@@ -174,21 +174,21 @@ export default function CnaLandingPage() {
       </div>
 
       {/* Blueprint */}
-      <div className="bg-gray-50 py-16 md:py-24">
+      <div className="bg-gray-50 dark:bg-gray-950 py-16 md:py-24">
         <div className="max-w-5xl mx-auto px-6">
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
             <div className="flex-1">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">
                 Built on the NNAAP Written Exam Outline
               </h2>
-              <p className="text-lg text-gray-600 mb-6">
+              <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
                 The National Nurse Aide Assessment Program publishes the weighting of its written
                 exam, and most states use it. Every practice test here follows that weighting.
               </p>
               <div className="space-y-3">
                 {contentAreas.map((area) => (
-                  <div key={area.name} className="flex items-center justify-between bg-white rounded-lg px-4 py-3 border border-gray-200">
-                    <span className="font-medium text-gray-900">{area.name}</span>
+                  <div key={area.name} className="flex items-center justify-between bg-white dark:bg-gray-900 rounded-lg px-4 py-3 border border-gray-200 dark:border-gray-800">
+                    <span className="font-medium text-gray-900 dark:text-gray-50">{area.name}</span>
                     <span className="text-brand font-semibold">{area.weight}</span>
                   </div>
                 ))}
@@ -210,8 +210,8 @@ export default function CnaLandingPage() {
       {/* Just launched */}
       <div className="max-w-3xl mx-auto px-6 py-16 md:py-24 text-center">
         <div className="bg-brand-light border border-brand-border-light rounded-2xl p-8 md:p-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">We Just Launched!</h2>
-          <p className="text-lg text-gray-600 mb-6 max-w-xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4">We Just Launched!</h2>
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 max-w-xl mx-auto">
             The CNA practice test is brand new. If a question looks wrong or your state&apos;s exam
             differs, tell us.
           </p>
@@ -227,14 +227,14 @@ export default function CnaLandingPage() {
       </div>
 
       {/* Study guide */}
-      <div className="bg-gray-50 py-16 md:py-24">
+      <div className="bg-gray-50 dark:bg-gray-950 py-16 md:py-24">
         <div className="max-w-3xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-12">
             How to Pass the CNA Written Exam
           </h2>
-          <div className="space-y-8 text-gray-600">
+          <div className="space-y-8 text-gray-600 dark:text-gray-300">
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">1. Know your state&apos;s format</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">1. Know your state&apos;s format</h3>
               <p>
                 Most states use the NNAAP exam from Pearson VUE: 70 multiple-choice questions, 60 scored,
                 about 90 minutes, roughly 70 percent to pass, plus a separate skills evaluation. Some
@@ -242,7 +242,7 @@ export default function CnaLandingPage() {
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">2. Think like the exam</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">2. Think like the exam</h3>
               <p>
                 Almost every question is a situation followed by &quot;the nurse aide should&quot;. The
                 right answer is nearly always the one that keeps the resident safe, respects their
@@ -250,7 +250,7 @@ export default function CnaLandingPage() {
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">3. Learn the numbers and the order of things</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">3. Learn the numbers and the order of things</h3>
               <p>
                 Normal vital sign ranges, 20 seconds of handwashing, repositioning every 2 hours,
                 restraints checked every 15 minutes and released every 2 hours, bath water at 105 to 115
@@ -258,7 +258,7 @@ export default function CnaLandingPage() {
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">4. Drill your weak areas</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Drill your weak areas</h3>
               <p>
                 TigerTest tracks your accuracy by content area. After each practice test, go back to the
                 set you missed most and retake until you clear 70 percent with room to spare.
@@ -270,21 +270,21 @@ export default function CnaLandingPage() {
 
       {/* FAQ */}
       <div className="max-w-3xl mx-auto px-6 py-16 md:py-24">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-12">
           CNA Exam Frequently Asked Questions
         </h2>
         <div className="space-y-8">
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 mb-2">How many questions are on the CNA written exam?</h3>
-            <p className="text-gray-600">
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">How many questions are on the CNA written exam?</h3>
+            <p className="text-gray-600 dark:text-gray-300">
               On the NNAAP exam used by most states, 70 multiple-choice questions, 60 scored and 10
               unscored, with about 90 minutes to finish. Most states pass at roughly 70 percent, and you
               must also pass a separate skills evaluation.
             </p>
           </div>
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 mb-2">What topics does the CNA exam cover?</h3>
-            <p className="text-gray-600">
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">What topics does the CNA exam cover?</h3>
+            <p className="text-gray-600 dark:text-gray-300">
               Physical care skills are 61 percent (basic nursing skills 39, activities of daily living
               14, restorative skills 8), psychosocial care skills 13 percent, and the role of the nurse
               aide 26 percent (communication, client rights, legal and ethical behavior, and being a
@@ -292,16 +292,16 @@ export default function CnaLandingPage() {
             </p>
           </div>
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 mb-2">Does this cover the skills test?</h3>
-            <p className="text-gray-600">
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Does this cover the skills test?</h3>
+            <p className="text-gray-600 dark:text-gray-300">
               No. This prepares you for the written knowledge test. The skills evaluation is a hands-on
               demonstration of five randomly selected skills, always including handwashing, scored by
               an evaluator in person.
             </p>
           </div>
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 mb-2">Is the TigerTest CNA practice test free?</h3>
-            <p className="text-gray-600">
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is the TigerTest CNA practice test free?</h3>
+            <p className="text-gray-600 dark:text-gray-300">
               Yes. All four practice tests and all four training sets are free, with no account required.
               Create a free account if you want your progress saved across devices.
             </p>
@@ -313,10 +313,10 @@ export default function CnaLandingPage() {
 
       {/* Final CTA */}
       <div className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-t from-brand-light to-white pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-t from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Ready to Pass Your CNA Exam?</h2>
-          <p className="text-lg text-gray-600 mb-10">Free to start. No account required. 200 questions across every content area.</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">Ready to Pass Your CNA Exam?</h2>
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Free to start. No account required. 200 questions across every content area.</p>
           <ExamLandingCTA dashboardHref="/cna/dashboard" />
         </div>
       </div>

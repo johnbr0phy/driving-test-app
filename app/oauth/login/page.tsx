@@ -19,7 +19,7 @@ export default function OAuthLoginPage() {
   return (
     <Suspense
       fallback={
-        <div className="min-h-screen flex items-center justify-center bg-white">
+        <div className="min-h-screen flex items-center justify-center bg-white dark:bg-gray-900">
           <div className="animate-pulse text-gray-400">Loading...</div>
         </div>
       }
@@ -164,7 +164,7 @@ function OAuthLoginContent() {
 
   if (authLoading) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-white">
+      <div className="min-h-screen flex items-center justify-center bg-white dark:bg-gray-900">
         <div className="animate-pulse text-gray-400">Loading...</div>
       </div>
     );
@@ -172,10 +172,10 @@ function OAuthLoginContent() {
 
   if (pendingError) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-white px-4">
+      <div className="min-h-screen flex items-center justify-center bg-white dark:bg-gray-900 px-4">
         <Card className="w-full max-w-md">
           <CardHeader>
-            <CardTitle className="text-center text-red-600">Invalid Link</CardTitle>
+            <CardTitle className="text-center text-red-600 dark:text-red-400">Invalid Link</CardTitle>
             <CardDescription className="text-center">{pendingError}</CardDescription>
           </CardHeader>
         </Card>
@@ -187,7 +187,7 @@ function OAuthLoginContent() {
 
   if (alreadyAuthorized || submitting) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-white px-4">
+      <div className="min-h-screen flex items-center justify-center bg-white dark:bg-gray-900 px-4">
         <Card className="w-full max-w-md">
           <CardHeader>
             <CardTitle className="text-center">Authorizing...</CardTitle>
@@ -201,8 +201,8 @@ function OAuthLoginContent() {
   }
 
   return (
-    <div className="bg-white relative flex flex-1 items-center justify-center py-12 px-4 min-h-screen">
-      <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-light to-white pointer-events-none" />
+    <div className="bg-white dark:bg-gray-900 relative flex flex-1 items-center justify-center py-12 px-4 min-h-screen">
+      <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-light to-white dark:to-transparent pointer-events-none" />
       <Card className="relative w-full max-w-md">
         <CardHeader className="space-y-1">
           <CardTitle className="text-2xl font-bold text-center">Authorize Access</CardTitle>
@@ -214,7 +214,7 @@ function OAuthLoginContent() {
         <CardContent>
           <div className="space-y-4">
             {formError && (
-              <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded text-sm">
+              <div className="bg-red-50 dark:bg-red-950 border border-red-200 dark:border-red-800 text-red-700 dark:text-red-300 px-4 py-3 rounded text-sm">
                 {formError}
               </div>
             )}
@@ -222,7 +222,7 @@ function OAuthLoginContent() {
             {/* Google Sign-In */}
             <Button
               type="button"
-              className="w-full bg-white text-black hover:bg-gray-100 border-2 border-gray-300"
+              className="w-full bg-white dark:bg-gray-900 text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 border-2 border-gray-300 dark:border-gray-700"
               onClick={handleGoogleSignIn}
               disabled={submitting}
             >
@@ -252,7 +252,7 @@ function OAuthLoginContent() {
                 <span className="w-full border-t" />
               </div>
               <div className="relative flex justify-center text-xs uppercase">
-                <span className="bg-white px-2 text-muted-foreground">or continue with email</span>
+                <span className="bg-white dark:bg-gray-900 px-2 text-muted-foreground">or continue with email</span>
               </div>
             </div>
 
@@ -285,14 +285,14 @@ function OAuthLoginContent() {
 
               <Button
                 type="submit"
-                className="w-full bg-black text-white hover:bg-gray-800"
+                className="w-full bg-black dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200"
                 disabled={submitting}
               >
                 {submitting ? 'Signing in...' : 'Sign in and Authorize'}
               </Button>
             </form>
 
-            <p className="text-center text-xs text-gray-500">
+            <p className="text-center text-xs text-gray-500 dark:text-gray-400">
               By signing in, you allow {clientName} to read and update your TigerTest practice test
               progress.
             </p>

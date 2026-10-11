@@ -100,13 +100,13 @@ export function ResultsHeroDebrief({
       : t("results.passCta").replace("{{n}}", String(displayTestNumber(nextTestId)));
 
   return (
-    <div className="bg-gray-50">
+    <div className="bg-gray-50 dark:bg-gray-950">
       {showFireworks && (
         <Fireworks duration={3000} intensity="full" onComplete={() => setShowFireworks(false)} />
       )}
 
       <div className="relative container mx-auto px-4 pt-8 pb-4 max-w-lg md:max-w-2xl lg:max-w-4xl space-y-3">
-        <div className="rounded-xl bg-white border border-gray-100 px-4 pt-4 pb-5 shadow-sm">
+        <div className="rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 px-4 pt-4 pb-5 shadow-sm">
           {isBaseline ? (
             <>
               <div className="text-[11px] font-bold uppercase tracking-widest text-brand">
@@ -114,11 +114,11 @@ export function ResultsHeroDebrief({
               </div>
               <div className="flex items-start gap-3 mt-1">
                 <div className="flex-1">
-                  <div className="text-4xl font-black tracking-tight text-gray-900 leading-none">
+                  <div className="text-4xl font-black tracking-tight text-gray-900 dark:text-gray-50 leading-none">
                     {percentage}
                     <span className="text-2xl font-bold text-gray-400">%</span>
                   </div>
-                  <p className="text-sm text-gray-500 mt-2 leading-snug">{t("results.baselineSub")}</p>
+                  <p className="text-sm text-gray-500 dark:text-gray-400 mt-2 leading-snug">{t("results.baselineSub")}</p>
                 </div>
                 <Image
                   src={getTigerFace(percentage, routes.id)}
@@ -141,8 +141,8 @@ export function ResultsHeroDebrief({
                 priority
               />
               <div className="flex-1 min-w-0">
-                <h1 className="text-lg font-bold text-gray-900 leading-snug">{coachLine}</h1>
-                <p className="text-sm text-gray-500 mt-1 leading-snug">{coachSub}</p>
+                <h1 className="text-lg font-bold text-gray-900 dark:text-gray-50 leading-snug">{coachLine}</h1>
+                <p className="text-sm text-gray-500 dark:text-gray-400 mt-1 leading-snug">{coachSub}</p>
               </div>
             </div>
           )}
@@ -151,19 +151,19 @@ export function ResultsHeroDebrief({
           <div className="mt-10">
             <div className="relative">
               <div className="flex h-2.5 rounded-full overflow-hidden">
-                <div className="w-[55%] bg-red-100" />
-                <div className="w-[15%] bg-amber-100" />
-                <div className="w-[30%] bg-green-100" />
+                <div className="w-[55%] bg-red-100 dark:bg-red-900" />
+                <div className="w-[15%] bg-amber-100 dark:bg-amber-900" />
+                <div className="w-[30%] bg-green-100 dark:bg-green-900" />
               </div>
-              <div className="absolute left-[70%] top-2.5 w-px h-2.5 bg-gray-300" />
+              <div className="absolute left-[70%] top-2.5 w-px h-2.5 bg-gray-300 dark:bg-gray-600" />
               <div
                 className="absolute -top-7 flex flex-col items-center -translate-x-1/2"
                 style={{ left: `${Math.min(Math.max(percentage, 4), 96)}%` }}
               >
-                <div className="bg-gray-900 text-white text-[11px] font-bold rounded-md px-1.5 py-0.5 tabular-nums whitespace-nowrap">
+                <div className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 text-[11px] font-bold rounded-md px-1.5 py-0.5 tabular-nums whitespace-nowrap">
                   {percentage}%
                 </div>
-                <div className="w-0.5 h-[18px] bg-gray-900 rounded-full" />
+                <div className="w-0.5 h-[18px] bg-gray-900 dark:bg-gray-100 rounded-full" />
               </div>
             </div>
             <div className="flex justify-between text-[9px] uppercase tracking-wider text-gray-400 mt-1.5">
@@ -175,13 +175,13 @@ export function ResultsHeroDebrief({
         </div>
 
         <div className="flex gap-1.5 flex-wrap">
-          <span className="rounded-full bg-white border border-gray-200 px-2.5 py-1 text-[11px] font-medium text-gray-600">
+          <span className="rounded-full bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 px-2.5 py-1 text-[11px] font-medium text-gray-600 dark:text-gray-300">
             {t("results.chipCorrect")
               .replace("{{score}}", String(score))
               .replace("{{total}}", String(totalQuestions))}
           </span>
           {attemptNumber > 1 && improvement > 0 && (
-            <span className="rounded-full bg-green-50 border border-green-200 px-2.5 py-1 text-[11px] font-medium text-green-700">
+            <span className="rounded-full bg-green-50 dark:bg-green-950 border border-green-200 dark:border-green-800 px-2.5 py-1 text-[11px] font-medium text-green-700 dark:text-green-300">
               {t("results.chipVsFirst").replace("{{n}}", String(improvement))}
             </span>
           )}
@@ -191,7 +191,7 @@ export function ResultsHeroDebrief({
             </span>
           ) : (
             attemptNumber > 1 && (
-              <span className="rounded-full bg-white border border-gray-200 px-2.5 py-1 text-[11px] font-medium text-gray-600">
+              <span className="rounded-full bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 px-2.5 py-1 text-[11px] font-medium text-gray-600 dark:text-gray-300">
                 {t("results.chipBest").replace("{{pct}}", String(bestPercentage))}
               </span>
             )
@@ -211,7 +211,7 @@ export function ResultsHeroDebrief({
                 <Button
                   variant="outline"
                   onClick={onDrill}
-                  className="flex-1 h-12 bg-white font-semibold text-gray-700"
+                  className="flex-1 h-12 bg-white dark:bg-gray-900 font-semibold text-gray-700 dark:text-gray-200"
                 >
                   {passGhostLabel}
                 </Button>
@@ -223,7 +223,7 @@ export function ResultsHeroDebrief({
                 passed={passed}
                 testId={testId}
                 stateCode={testSession.state}
-                className="flex-1 h-12 bg-white border border-gray-200 text-gray-700 hover:bg-gray-50 font-semibold"
+                className="flex-1 h-12 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 font-semibold"
               />
             </div>
           </div>
@@ -238,7 +238,7 @@ export function ResultsHeroDebrief({
             <Button
               variant="outline"
               onClick={onDrill}
-              className="w-full sm:flex-1 h-12 bg-white font-semibold text-gray-700"
+              className="w-full sm:flex-1 h-12 bg-white dark:bg-gray-900 font-semibold text-gray-700 dark:text-gray-200"
             >
               {t("results.baselineGhost")}
             </Button>
@@ -254,7 +254,7 @@ export function ResultsHeroDebrief({
             <Button
               variant="outline"
               onClick={() => router.push(routes.test(testId))}
-              className="w-full sm:flex-1 h-12 bg-white font-semibold text-gray-700"
+              className="w-full sm:flex-1 h-12 bg-white dark:bg-gray-900 font-semibold text-gray-700 dark:text-gray-200"
             >
               {t("results.retakeGhost")}
             </Button>

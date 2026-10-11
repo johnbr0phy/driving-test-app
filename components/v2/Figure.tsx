@@ -11,11 +11,11 @@ export function Figure({ figure, compact = false }: { figure: FigureT; compact?:
       <button
         type="button"
         onClick={() => setOpen(true)}
-        className={`block w-full rounded-lg border border-gray-200 bg-white p-2 text-left ${compact ? "max-w-xs" : "max-w-md"}`}
+        className={`block w-full rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-2 text-left ${compact ? "max-w-xs" : "max-w-md"}`}
         aria-label="Open figure full size"
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={figure.src} alt={figure.alt} className="mx-auto h-auto w-full max-h-72 object-contain" loading="lazy" />
+        <img src={figure.src} alt={figure.alt} className="mx-auto h-auto w-full max-h-72 object-contain dark:invert" loading="lazy" />
         <div className="mt-1 text-center text-[11px] text-gray-400">Tap to enlarge</div>
       </button>
       {open && (
@@ -27,7 +27,7 @@ export function Figure({ figure, compact = false }: { figure: FigureT; compact?:
           </div>
           <div className="flex flex-1 items-center justify-center overflow-auto p-3">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={figure.src} alt={figure.alt} className="max-h-full w-full max-w-3xl rounded bg-white object-contain" />
+            <img src={figure.src} alt={figure.alt} className="max-h-full w-full max-w-3xl rounded bg-white dark:bg-gray-900 object-contain" />
           </div>
           <p className="px-5 pb-6 text-center text-xs text-gray-300 v2-safe-bottom">{figure.alt}</p>
         </div>

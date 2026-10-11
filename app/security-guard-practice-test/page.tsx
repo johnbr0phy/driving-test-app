@@ -120,7 +120,7 @@ const contentAreas = [
 
 export default function SecurityGuardLandingPage() {
   return (
-    <div data-theme="security" className="flex-1 bg-white">
+    <div data-theme="security" className="flex-1 bg-white dark:bg-gray-900">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -129,9 +129,9 @@ export default function SecurityGuardLandingPage() {
 
       {/* Hero */}
       <div className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28 text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 tracking-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-gray-50 mb-6 tracking-tight">
             Free Security Guard Practice Test 2026
           </h1>
           <ExamLandingHero
@@ -145,28 +145,28 @@ export default function SecurityGuardLandingPage() {
 
       {/* How it works */}
       <div id="how-it-works" className="max-w-5xl mx-auto px-6 pt-8 pb-16 md:pt-12 md:pb-24">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-16">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-16">
           How It Works
         </h2>
         <div className="grid md:grid-cols-2 gap-8 md:gap-12">
           <div className="relative pt-8">
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16 bg-white border-2 border-brand-border-light rounded-full flex items-center justify-center shadow-sm">
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16 bg-white dark:bg-gray-900 border-2 border-brand-border-light rounded-full flex items-center justify-center shadow-sm">
               <Smartphone className="w-7 h-7 text-brand" />
             </div>
-            <div className="bg-gray-50 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Training by Domain</h3>
-              <p className="text-gray-600">
+            <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Training by Domain</h3>
+              <p className="text-gray-600 dark:text-gray-300">
                 Four sets: role, ethics and legal powers; observation, patrol and access control; report writing and communication; and emergencies, safety and terrorism awareness. Questions you miss come back until you have mastered them.
               </p>
             </div>
           </div>
           <div className="relative pt-8">
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16 bg-white border-2 border-gray-200 rounded-full flex items-center justify-center shadow-sm">
-              <Monitor className="w-7 h-7 text-gray-500" />
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16 bg-white dark:bg-gray-900 border-2 border-gray-200 dark:border-gray-800 rounded-full flex items-center justify-center shadow-sm">
+              <Monitor className="w-7 h-7 text-gray-500 dark:text-gray-400" />
             </div>
-            <div className="bg-gray-50 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Practice Tests</h3>
-              <p className="text-gray-600">
+            <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Practice Tests</h3>
+              <p className="text-gray-600 dark:text-gray-300">
                 Four 50-question tests weighted the way guard card exams are, with the legal section carrying the most questions and an explanation of why each answer is right and the common wrong pick is wrong.
               </p>
             </div>
@@ -175,20 +175,20 @@ export default function SecurityGuardLandingPage() {
       </div>
 
       {/* Blueprint */}
-      <div className="bg-gray-50 py-16 md:py-24">
+      <div className="bg-gray-50 dark:bg-gray-950 py-16 md:py-24">
         <div className="max-w-5xl mx-auto px-6">
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
             <div className="flex-1">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">
                 Built on the Pre-Assignment Curriculum
               </h2>
-              <p className="text-lg text-gray-600 mb-6">
+              <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
                 Every state&apos;s unarmed guard course teaches the same core: what a guard may and may not do, how to observe and report, how to control access and how to respond when something goes wrong. The practice tests here weight the legal section most heavily because that is where candidates lose the most points.
               </p>
               <div className="space-y-3">
                 {contentAreas.map((area) => (
-                  <div key={area.name} className="flex items-center justify-between bg-white rounded-lg px-4 py-3 border border-gray-200">
-                    <span className="font-medium text-gray-900">{area.name}</span>
+                  <div key={area.name} className="flex items-center justify-between bg-white dark:bg-gray-900 rounded-lg px-4 py-3 border border-gray-200 dark:border-gray-800">
+                    <span className="font-medium text-gray-900 dark:text-gray-50">{area.name}</span>
                     <span className="text-brand font-semibold">{area.weight}</span>
                   </div>
                 ))}
@@ -210,8 +210,8 @@ export default function SecurityGuardLandingPage() {
       {/* Just launched */}
       <div className="max-w-3xl mx-auto px-6 py-16 md:py-24 text-center">
         <div className="bg-brand-light border border-brand-border-light rounded-2xl p-8 md:p-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">We Just Launched!</h2>
-          <p className="text-lg text-gray-600 mb-6 max-w-xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4">We Just Launched!</h2>
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 max-w-xl mx-auto">
             The security guard practice test is brand new. If a question looks wrong or your state&apos;s course teaches a topic differently, tell us.
           </p>
           <a
@@ -226,32 +226,32 @@ export default function SecurityGuardLandingPage() {
       </div>
 
       {/* Study guide */}
-      <div className="bg-gray-50 py-16 md:py-24">
+      <div className="bg-gray-50 dark:bg-gray-950 py-16 md:py-24">
         <div className="max-w-3xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-12">
             How to Pass the Security Guard Exam
           </h2>
-          <div className="space-y-8 text-gray-600">
+          <div className="space-y-8 text-gray-600 dark:text-gray-300">
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">1. Learn the limits of your authority</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">1. Learn the limits of your authority</h3>
               <p>
                 A guard has the powers of a private citizen and the property owner, not a police officer. Know the use of force continuum, when a detention becomes false imprisonment, why searches need consent and why most companies tell you to observe and report instead of making a citizen&apos;s arrest. When a question offers an aggressive option and a cautious one, the cautious one is almost always right.
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">2. Think observe, deter, report</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">2. Think observe, deter, report</h3>
               <p>
                 Exam writers test whether you understand the job. Suspicion comes from behavior, not appearance; patrols are varied so they cannot be timed; doors are tested by hand; unknown packages are not touched; and anything unusual goes in the log. If an answer has you leaving your post, ignoring a hazard or acting alone in a dangerous situation, eliminate it.
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">3. Memorize the acronyms</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">3. Memorize the acronyms</h3>
               <p>
                 Who, what, when, where, why and how for reports. PASS for extinguishers and RACE for fire response. Fire classes A, B, C, D and K. Run, Hide, Fight for an active threat. The phonetic alphabet from Alpha to Zulu. These are the questions you should never miss.
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">4. Add your state&apos;s specifics</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Add your state&apos;s specifics</h3>
               <p>
                 This practice covers the universal material. Your state&apos;s manual adds the licensing agency, training hours, renewal period, which crimes allow a citizen&apos;s arrest and any rules on handcuffs or pepper spray. Read those sections once, then drill here until you clear 85 percent on every set.
               </p>
@@ -262,37 +262,37 @@ export default function SecurityGuardLandingPage() {
 
       {/* FAQ */}
       <div className="max-w-3xl mx-auto px-6 py-16 md:py-24">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-12">
           Security Guard Exam Frequently Asked Questions
         </h2>
         <div className="space-y-8">
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 mb-2">How do I get a security guard license or guard card?</h3>
-            <p className="text-gray-600">
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">How do I get a security guard license or guard card?</h3>
+            <p className="text-gray-600 dark:text-gray-300">
               Most states license unarmed guards through a state agency such as the department of public safety, the state police or a licensing board. The usual steps are a background check with fingerprints, a pre-assignment training course of roughly 8 to 40 hours depending on the state, and a written exam. A few states have no state license and leave requirements to employers, so check your state&apos;s rules.
             </p>
           </div>
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 mb-2">What is on the security guard exam and what score do I need to pass?</h3>
-            <p className="text-gray-600">
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">What is on the security guard exam and what score do I need to pass?</h3>
+            <p className="text-gray-600 dark:text-gray-300">
               Guard exams cover the role of private security, legal powers and limits including arrest and use of force, observation and patrol, access control, report writing and communication, emergency response, and safety and terrorism awareness. Most are multiple choice with a pass mark of around 70 percent, though the exact number of questions and passing score vary by state.
             </p>
           </div>
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 mb-2">Does this practice test cover my state&apos;s law?</h3>
-            <p className="text-gray-600">
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Does this practice test cover my state&apos;s law?</h3>
+            <p className="text-gray-600 dark:text-gray-300">
               No. These questions cover the universal portion of guard training that is common nationwide. Arrest powers, training hours, licensing bodies, weapons rules and renewal periods vary by state, so study your state&apos;s training manual or statute for those details alongside this practice.
             </p>
           </div>
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 mb-2">Does this include armed guard or firearms content?</h3>
-            <p className="text-gray-600">
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Does this include armed guard or firearms content?</h3>
+            <p className="text-gray-600 dark:text-gray-300">
               No. This practice test is for the unarmed guard exam. Armed guard permits require separate firearms training, range qualification and a separate exam in every state that issues them, and that content is not included here.
             </p>
           </div>
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 mb-2">Who can take the security guard exam, and is the TigerTest practice test free?</h3>
-            <p className="text-gray-600">
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Who can take the security guard exam, and is the TigerTest practice test free?</h3>
+            <p className="text-gray-600 dark:text-gray-300">
               The minimum age is typically 18 for unarmed guards, with a clean criminal background check; some states set 21 for armed work. The TigerTest practice test is free: all four practice tests and all training sets, with no account required. Create a free account if you want progress saved across devices.
             </p>
           </div>
@@ -303,10 +303,10 @@ export default function SecurityGuardLandingPage() {
 
       {/* Final CTA */}
       <div className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-t from-brand-light to-white pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-t from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Ready to Pass the Security Guard Exam?</h2>
-          <p className="text-lg text-gray-600 mb-10">Free to start. No account required. 200 questions across all six content areas.</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">Ready to Pass the Security Guard Exam?</h2>
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Free to start. No account required. 200 questions across all six content areas.</p>
           <ExamLandingCTA dashboardHref="/security-guard/dashboard" />
         </div>
       </div>

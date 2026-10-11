@@ -56,8 +56,8 @@ export default function KoreanPracticeTestsByStatePage() {
   };
 
   return (
-    <div className="flex-1 bg-white relative">
-      <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-light to-white pointer-events-none" />
+    <div className="flex-1 bg-white dark:bg-gray-900 relative">
+      <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-light to-white dark:to-transparent pointer-events-none" />
 
       <script
         type="application/ld+json"
@@ -66,7 +66,7 @@ export default function KoreanPracticeTestsByStatePage() {
 
       <div className="relative container mx-auto px-4 py-8 md:py-12 max-w-5xl">
         {/* Breadcrumb */}
-        <nav className="text-sm text-gray-500 mb-6" aria-label="Breadcrumb">
+        <nav className="text-sm text-gray-500 dark:text-gray-400 mb-6" aria-label="Breadcrumb">
           <ol className="flex items-center gap-1">
             <li>
               <Link href="/" className="hover:text-brand">
@@ -76,25 +76,25 @@ export default function KoreanPracticeTestsByStatePage() {
             <li>
               <ChevronRight className="h-3 w-3 inline" />
             </li>
-            <li className="text-gray-900 font-medium">주별 필기시험 연습문제</li>
+            <li className="text-gray-900 dark:text-gray-50 font-medium">주별 필기시험 연습문제</li>
           </ol>
         </nav>
 
         {/* Hero */}
         <div className="text-center mb-12">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-gray-50 mb-4">
             주별 DMV 필기시험 연습문제
           </h1>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
             아래에서 주를 선택하면 해당 주의 공식 운전자 교본을 바탕으로 만든
             문제로 무료로 연습할 수 있습니다.
           </p>
         </div>
 
         {/* Why these states */}
-        <div className="flex items-start gap-4 bg-blue-50 border border-blue-200 rounded-2xl p-6 mb-10">
-          <Info className="h-7 w-7 text-blue-600 flex-shrink-0 mt-0.5" />
-          <p className="text-gray-700">
+        <div className="flex items-start gap-4 bg-blue-50 dark:bg-blue-950 border border-blue-200 dark:border-blue-800 rounded-2xl p-6 mb-10">
+          <Info className="h-7 w-7 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5" />
+          <p className="text-gray-700 dark:text-gray-200">
             아래 주들은 한국어 사용 인구가 많은 곳으로, 안내 페이지를 한국어로
             제공하고 있습니다. 찾으시는 주가 목록에 없다면{" "}
             <Link
@@ -115,13 +115,13 @@ export default function KoreanPracticeTestsByStatePage() {
             <Link
               key={state.slug}
               href={`/ko/${state.slug}-dmv-pilgi-siheom`}
-              className="flex items-center justify-between bg-gray-50 border border-gray-200 rounded-lg p-3 hover:border-brand-border hover:bg-brand-light transition-colors group"
+              className="flex items-center justify-between bg-gray-50 dark:bg-gray-950 border border-gray-200 dark:border-gray-800 rounded-lg p-3 hover:border-brand-border hover:bg-brand-light transition-colors group"
             >
               <div>
-                <span className="font-medium text-gray-900 group-hover:text-brand-dark">
+                <span className="font-medium text-gray-900 dark:text-gray-50 group-hover:text-brand-dark">
                   {state.name}
                 </span>
-                <span className="text-sm text-gray-500 ml-2">
+                <span className="text-sm text-gray-500 dark:text-gray-400 ml-2">
                   {state.writtenTestQuestions}문제 &middot; {state.passingScore}%
                 </span>
               </div>
@@ -131,11 +131,11 @@ export default function KoreanPracticeTestsByStatePage() {
         </div>
 
         {/* Summary Section */}
-        <div className="bg-gray-50 rounded-2xl p-6 md:p-8 mb-12">
-          <h2 className="text-xl font-bold text-gray-900 mb-4">
+        <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-6 md:p-8 mb-12">
+          <h2 className="text-xl font-bold text-gray-900 dark:text-gray-50 mb-4">
             TigerTest 주별 연습문제 소개
           </h2>
-          <div className="text-gray-600 space-y-3">
+          <div className="text-gray-600 dark:text-gray-300 space-y-3">
             <p>
               주마다 교통법규와 시험 형식, 합격 기준 점수가 다릅니다. TigerTest는{" "}
               <strong>주당 200문제</strong>를 제공하며, 지역 법규와 제한 속도 등

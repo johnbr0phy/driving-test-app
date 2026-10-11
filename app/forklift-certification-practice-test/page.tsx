@@ -119,7 +119,7 @@ const contentAreas = [
 
 export default function ForkliftLandingPage() {
   return (
-    <div data-theme="forklift" className="flex-1 bg-white">
+    <div data-theme="forklift" className="flex-1 bg-white dark:bg-gray-900">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -128,9 +128,9 @@ export default function ForkliftLandingPage() {
 
       {/* Hero */}
       <div className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28 text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 tracking-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-gray-50 mb-6 tracking-tight">
             Free Forklift Certification Practice Test 2026
           </h1>
           <ExamLandingHero
@@ -144,28 +144,28 @@ export default function ForkliftLandingPage() {
 
       {/* How it works */}
       <div id="how-it-works" className="max-w-5xl mx-auto px-6 pt-8 pb-16 md:pt-12 md:pb-24">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-16">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-16">
           How It Works
         </h2>
         <div className="grid md:grid-cols-2 gap-8 md:gap-12">
           <div className="relative pt-8">
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16 bg-white border-2 border-brand-border-light rounded-full flex items-center justify-center shadow-sm">
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16 bg-white dark:bg-gray-900 border-2 border-brand-border-light rounded-full flex items-center justify-center shadow-sm">
               <Smartphone className="w-7 h-7 text-brand" />
             </div>
-            <div className="bg-gray-50 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Training by Topic</h3>
-              <p className="text-gray-600">
+            <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Training by Topic</h3>
+              <p className="text-gray-600 dark:text-gray-300">
                 Four sets: basics, rules and inspection; stability and load capacity; safe operation; and load handling, docks and ramps. Questions you miss come back until you have mastered them.
               </p>
             </div>
           </div>
           <div className="relative pt-8">
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16 bg-white border-2 border-gray-200 rounded-full flex items-center justify-center shadow-sm">
-              <Monitor className="w-7 h-7 text-gray-500" />
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16 bg-white dark:bg-gray-900 border-2 border-gray-200 dark:border-gray-800 rounded-full flex items-center justify-center shadow-sm">
+              <Monitor className="w-7 h-7 text-gray-500 dark:text-gray-400" />
             </div>
-            <div className="bg-gray-50 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Practice Tests</h3>
-              <p className="text-gray-600">
+            <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Practice Tests</h3>
+              <p className="text-gray-600 dark:text-gray-300">
                 Four 50-question tests that sample every topic the way an employer&apos;s written evaluation does, with the OSHA rule or stability principle explained on every answer.
               </p>
             </div>
@@ -174,20 +174,20 @@ export default function ForkliftLandingPage() {
       </div>
 
       {/* Blueprint */}
-      <div className="bg-gray-50 py-16 md:py-24">
+      <div className="bg-gray-50 dark:bg-gray-950 py-16 md:py-24">
         <div className="max-w-5xl mx-auto px-6">
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
             <div className="flex-1">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">
                 Built on OSHA 1910.178
               </h2>
-              <p className="text-lg text-gray-600 mb-6">
+              <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
                 OSHA&apos;s powered industrial truck standard lists the truck-related and workplace-related topics every operator must be trained on. The practice tests here give stability and safe operation the most weight because tip-overs and pedestrian strikes cause most forklift deaths.
               </p>
               <div className="space-y-3">
                 {contentAreas.map((area) => (
-                  <div key={area.name} className="flex items-center justify-between bg-white rounded-lg px-4 py-3 border border-gray-200">
-                    <span className="font-medium text-gray-900">{area.name}</span>
+                  <div key={area.name} className="flex items-center justify-between bg-white dark:bg-gray-900 rounded-lg px-4 py-3 border border-gray-200 dark:border-gray-800">
+                    <span className="font-medium text-gray-900 dark:text-gray-50">{area.name}</span>
                     <span className="text-brand font-semibold">{area.weight}</span>
                   </div>
                 ))}
@@ -209,8 +209,8 @@ export default function ForkliftLandingPage() {
       {/* Just launched */}
       <div className="max-w-3xl mx-auto px-6 py-16 md:py-24 text-center">
         <div className="bg-brand-light border border-brand-border-light rounded-2xl p-8 md:p-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">We Just Launched!</h2>
-          <p className="text-lg text-gray-600 mb-6 max-w-xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4">We Just Launched!</h2>
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 max-w-xl mx-auto">
             The forklift practice test is brand new. If a question looks wrong or your employer&apos;s training covers something we missed, tell us.
           </p>
           <a
@@ -225,32 +225,32 @@ export default function ForkliftLandingPage() {
       </div>
 
       {/* Study guide */}
-      <div className="bg-gray-50 py-16 md:py-24">
+      <div className="bg-gray-50 dark:bg-gray-950 py-16 md:py-24">
         <div className="max-w-3xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-12">
             How to Pass the Forklift Written Test
           </h2>
-          <div className="space-y-8 text-gray-600">
+          <div className="space-y-8 text-gray-600 dark:text-gray-300">
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">1. Learn the stability triangle cold</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">1. Learn the stability triangle cold</h3>
               <p>
                 The truck stays upright only while the combined center of gravity of truck and load stays inside the triangle formed by the two front wheels and the rear axle pivot. Raising the load, tilting forward, turning fast and driving across a slope all push it toward the edge. Half the hard questions are this one idea in different clothes.
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">2. Do the load center math</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">2. Do the load center math</h3>
               <p>
                 Capacity on the data plate assumes a 24-inch load center. Multiply rated capacity by 24, then divide by the actual load center to estimate what you can lift: a 5,000-pound truck handles about 4,000 pounds at 30 inches. Attachments and fork extensions lower it further, and the manufacturer&apos;s chart always wins.
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">3. Memorize the OSHA numbers</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">3. Memorize the OSHA numbers</h3>
               <p>
                 Evaluation at least every three years. Operators 18 or older. About three truck lengths following distance. Unattended means 25 feet away or out of view. Load upgrade on grades over 10 percent. Lights required under 2 lumens per square foot. No parking within 8 feet of railroad tracks. These appear on nearly every employer test.
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">4. Drill the operating rules until they are reflexes</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Drill the operating rules until they are reflexes</h3>
               <p>
                 Forks low and tilted back, travel in reverse when the load blocks your view, horn at every blind corner, pedestrians always have the right of way, nobody under the forks, nobody riding, stay in the seat if the truck tips. TigerTest tracks your accuracy by topic, so retake the set you miss most until you clear 90 percent.
               </p>
@@ -261,37 +261,37 @@ export default function ForkliftLandingPage() {
 
       {/* FAQ */}
       <div className="max-w-3xl mx-auto px-6 py-16 md:py-24">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-12">
           Forklift Certification Frequently Asked Questions
         </h2>
         <div className="space-y-8">
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 mb-2">Does passing this practice test certify me to drive a forklift?</h3>
-            <p className="text-gray-600">
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Does passing this practice test certify me to drive a forklift?</h3>
+            <p className="text-gray-600 dark:text-gray-300">
               No. OSHA 29 CFR 1910.178 requires your employer to certify you after formal instruction, hands-on practical training and an evaluation of your performance on the actual truck in your workplace. This practice test prepares you for the written or oral knowledge portion of that training. It does not replace the hands-on evaluation and it is not a certificate.
             </p>
           </div>
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 mb-2">Is there a national forklift license?</h3>
-            <p className="text-gray-600">
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is there a national forklift license?</h3>
+            <p className="text-gray-600 dark:text-gray-300">
               No. There is no government-issued forklift license in the United States. OSHA does not issue licenses and neither does any state motor vehicle agency. The employer issues the certification, which must record the operator&apos;s name, the training and evaluation dates, and the trainer&apos;s identity. A new employer must evaluate you again before relying on earlier training.
             </p>
           </div>
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 mb-2">How often do forklift operators need to be re-certified?</h3>
-            <p className="text-gray-600">
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">How often do forklift operators need to be re-certified?</h3>
+            <p className="text-gray-600 dark:text-gray-300">
               OSHA requires an evaluation of each operator&apos;s performance at least once every three years. Refresher training is also required sooner after an accident or near miss, after unsafe operation is observed, after a failed evaluation, when you are assigned a different type of truck, or when workplace conditions change in a way that affects safe operation.
             </p>
           </div>
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 mb-2">How old do you have to be to operate a forklift?</h3>
-            <p className="text-gray-600">
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">How old do you have to be to operate a forklift?</h3>
+            <p className="text-gray-600 dark:text-gray-300">
               At least 18 in non-agricultural jobs. The federal Fair Labor Standards Act lists forklift operation as a hazardous occupation that is off limits to workers under 18. Some agricultural settings have different rules, so check your state&apos;s requirements if you work on a farm.
             </p>
           </div>
           <div>
-            <h3 className="font-semibold text-lg text-gray-900 mb-2">Is the TigerTest forklift practice test free?</h3>
-            <p className="text-gray-600">
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is the TigerTest forklift practice test free?</h3>
+            <p className="text-gray-600 dark:text-gray-300">
               Yes. All four practice tests and all training sets are free, with no account required. Create a free account if you want your progress saved across devices.
             </p>
           </div>
@@ -302,10 +302,10 @@ export default function ForkliftLandingPage() {
 
       {/* Final CTA */}
       <div className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-t from-brand-light to-white pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-t from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Ready to Pass Your Forklift Test?</h2>
-          <p className="text-lg text-gray-600 mb-10">Free to start. No account required. 200 questions across every OSHA training topic.</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">Ready to Pass Your Forklift Test?</h2>
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Free to start. No account required. 200 questions across every OSHA training topic.</p>
           <ExamLandingCTA dashboardHref="/forklift/dashboard" />
         </div>
       </div>

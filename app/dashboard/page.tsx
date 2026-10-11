@@ -342,7 +342,7 @@ function DashboardContent() {
   };
 
   return (
-    <div className="flex-1 bg-gray-50">
+    <div className="flex-1 bg-gray-50 dark:bg-gray-950">
       <div className="relative">
       <div className="absolute inset-x-0 top-0 h-96 bg-gradient-to-b from-brand-light to-transparent pointer-events-none" />
       <div className="relative container mx-auto px-4 sm:px-6 py-6 pb-10 max-w-lg md:max-w-2xl lg:max-w-4xl">
@@ -362,21 +362,21 @@ function DashboardContent() {
 
         {/* Purchase Success Message */}
         {showPurchaseSuccess && (
-          <Card className="mb-4 bg-gradient-to-r from-green-50 to-emerald-50 border-green-200">
+          <Card className="mb-4 bg-gradient-to-r from-green-50 dark:from-green-950 to-emerald-50 dark:to-emerald-950 border-green-200 dark:border-green-800">
             <CardContent className="p-4">
               <div className="flex items-center gap-3">
-                <CheckCircle className="h-8 w-8 text-green-500" />
+                <CheckCircle className="h-8 w-8 text-green-500 dark:text-green-400" />
                 <div className="flex-1">
-                  <p className="text-base font-bold text-green-900">
+                  <p className="text-base font-bold text-green-900 dark:text-green-200">
                     {t("dashboard.welcomePremium")}
                   </p>
-                  <p className="text-xs text-green-700 mt-0.5">
+                  <p className="text-xs text-green-700 dark:text-green-300 mt-0.5">
                     {t("dashboard.premiumUnlocked")}
                   </p>
                 </div>
                 <button
                   onClick={() => setShowPurchaseSuccess(false)}
-                  className="text-green-600 hover:text-green-800"
+                  className="text-green-600 dark:text-green-400 hover:text-green-800 dark:hover:text-green-300"
                 >
                   &times;
                 </button>
@@ -387,15 +387,15 @@ function DashboardContent() {
 
         {/* School joined banner */}
         {showSchoolJoined && schoolJoinedSlug && (
-          <Card className="mb-4 bg-gradient-to-r from-blue-50 to-sky-50 border-blue-200">
+          <Card className="mb-4 bg-gradient-to-r from-blue-50 dark:from-blue-950 to-sky-50 dark:to-sky-950 border-blue-200 dark:border-blue-800">
             <CardContent className="p-4">
               <div className="flex items-center gap-3">
                 <span className="text-2xl">🏫</span>
                 <div className="flex-1">
-                  <p className="text-base font-bold text-blue-900">
+                  <p className="text-base font-bold text-blue-900 dark:text-blue-200">
                     You&apos;ve joined {schoolJoinedSlug}!
                   </p>
-                  <p className="text-xs text-blue-700 mt-0.5">
+                  <p className="text-xs text-blue-700 dark:text-blue-300 mt-0.5">
                     Your instructor can now track your progress. Good luck on your test!
                   </p>
                 </div>
@@ -404,7 +404,7 @@ function DashboardContent() {
                     setShowSchoolJoined(false);
                     router.replace("/dashboard");
                   }}
-                  className="text-blue-600 hover:text-blue-800"
+                  className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300"
                 >
                   &times;
                 </button>
@@ -420,7 +420,7 @@ function DashboardContent() {
               <div className="flex items-center gap-3">
                 <div className="text-2xl">📊</div>
                 <div className="flex-1">
-                  <p className="text-sm text-gray-700">
+                  <p className="text-sm text-gray-700 dark:text-gray-200">
                     <span className="font-bold">{t("common.signUp")}</span> {t("dashboard.signUpPrompt")}
                   </p>
                   <Link href="/signup" className="text-xs text-brand hover:text-brand-dark font-medium mt-1 inline-block">
@@ -433,7 +433,7 @@ function DashboardContent() {
         )}
 
         {/* Hero section - card with progress */}
-        <div className="rounded-xl bg-white border border-gray-100 p-4 mb-6">
+        <div className="rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 p-4 mb-6">
           <div className="flex items-center gap-4">
             <Image
               src={getTigerFace(completedSteps, totalSteps)}
@@ -443,15 +443,15 @@ function DashboardContent() {
               className="w-12 h-12 flex-shrink-0"
             />
             <div className="flex-1 min-w-0">
-              <h1 className="text-lg font-bold text-gray-900">
+              <h1 className="text-lg font-bold text-gray-900 dark:text-gray-50">
                 {t(`dashboard.heroTitle${completedSteps}`)}
               </h1>
-              <p className="text-xs text-gray-500 mt-0.5">
+              <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">
                 {heroSub}
               </p>
             </div>
             <div className="flex-shrink-0 text-right">
-              <div className="text-2xl font-bold tabular-nums text-gray-900">{completedSteps}/{totalSteps}</div>
+              <div className="text-2xl font-bold tabular-nums text-gray-900 dark:text-gray-50">{completedSteps}/{totalSteps}</div>
               <div className="text-xs text-gray-400">{t("dashboard.stampComplete").toLowerCase()}</div>
             </div>
           </div>
@@ -576,7 +576,7 @@ function DashboardContent() {
                       <p className="text-xs mt-1 flex items-center gap-1.5">
                         {stillMissed === 0 && (
                           <>
-                            <span className="text-green-600 font-semibold">
+                            <span className="text-green-600 dark:text-green-400 font-semibold">
                               {testMisses.everMissed > 0
                                 ? t("dashboard.allMissesFixed")
                                 : t("dashboard.perfectRecord")}
@@ -586,7 +586,7 @@ function DashboardContent() {
                             </span>
                           </>
                         )}
-                        <span className={testCompleted ? "text-green-600" : "text-gray-400"}>
+                        <span className={testCompleted ? "text-green-600 dark:text-green-400" : "text-gray-400"}>
                           {testMisses.attempts === 1
                             ? t("dashboard.attemptsOne")
                             : t("dashboard.attemptsCount").replace(
@@ -606,8 +606,8 @@ function DashboardContent() {
                       <div
                         className={`rounded-b-xl border border-t-0 px-4 pb-4 ${
                           testCompleted
-                            ? "bg-gradient-to-r from-green-50 to-emerald-50 border-green-200"
-                            : "bg-white border-gray-100"
+                            ? "bg-gradient-to-r from-green-50 dark:from-green-950 to-emerald-50 dark:to-emerald-950 border-green-200 dark:border-green-800"
+                            : "bg-white dark:bg-gray-900 border-gray-100 dark:border-gray-800"
                         }`}
                       >
                       <AttemptChart attempts={attemptPoints} />
@@ -639,7 +639,7 @@ function DashboardContent() {
                         )}
                         <button
                           onClick={() => router.push(`/test/${id}`)}
-                          className="w-full flex items-center justify-center gap-1.5 rounded-lg bg-white border border-gray-200 text-gray-800 font-bold text-sm px-4 py-3 hover:bg-gray-50 transition-colors"
+                          className="w-full flex items-center justify-center gap-1.5 rounded-lg bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 text-gray-800 dark:text-gray-100 font-bold text-sm px-4 py-3 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
                         >
                           {activelyInProgress
                             ? t("dashboard.continueTest").replace("{{n}}", String(answeredCount))
@@ -673,11 +673,11 @@ function DashboardContent() {
           <p className="text-[11px] font-bold uppercase tracking-widest text-gray-400 mb-2">
             {samUnlocked ? t("dashboard.samUnlockedLabel") : t("dashboard.samUnlockLabel")}
           </p>
-          <div className="rounded-xl bg-white border border-gray-100 p-4 flex items-center gap-3">
+          <div className="rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 p-4 flex items-center gap-3">
             <div className="flex-1 min-w-0">
               <h3
                 className={`font-semibold text-sm flex items-center gap-1.5 ${
-                  samUnlocked ? "text-gray-900" : "text-gray-400"
+                  samUnlocked ? "text-gray-900 dark:text-gray-50" : "text-gray-400"
                 }`}
               >
                 {t("dashboard.samTitle")}
@@ -694,12 +694,12 @@ function DashboardContent() {
                 superAmazing && samUnlocked
                   ? "bg-brand"
                   : samUnlocked
-                    ? "bg-gray-200"
-                    : "bg-gray-100 cursor-not-allowed"
+                    ? "bg-gray-200 dark:bg-gray-700"
+                    : "bg-gray-100 dark:bg-gray-800 cursor-not-allowed"
               }`}
             >
               <span
-                className={`absolute top-0.5 left-0.5 w-5 h-5 rounded-full bg-white shadow transition-transform ${
+                className={`absolute top-0.5 left-0.5 w-5 h-5 rounded-full bg-white dark:bg-gray-900 shadow transition-transform ${
                   superAmazing && samUnlocked ? "translate-x-5" : ""
                 }`}
               />
@@ -715,7 +715,7 @@ function DashboardContent() {
 
 export default function DashboardPage() {
   return (
-    <Suspense fallback={<div className="flex-1 bg-gray-50" />}>
+    <Suspense fallback={<div className="flex-1 bg-gray-50 dark:bg-gray-950" />}>
       <DashboardContent />
     </Suspense>
   );

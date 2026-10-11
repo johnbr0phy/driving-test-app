@@ -64,8 +64,8 @@ export function ExamStatePrompt({ exam }: { exam: ExamConfig }) {
   const names = variants.map((v) => v.jurisdiction!.name).join(" and ");
 
   return (
-    <div className="rounded-xl bg-white border border-brand-border-light p-4 mb-4">
-      <div className="flex flex-wrap items-center gap-x-1.5 text-lg font-medium text-gray-800">
+    <div className="rounded-xl bg-white dark:bg-gray-900 border border-brand-border-light p-4 mb-4">
+      <div className="flex flex-wrap items-center gap-x-1.5 text-lg font-medium text-gray-800 dark:text-gray-100">
         <span>I&apos;m taking the exam in</span>
         <StateSelect
           value={undefined}
@@ -74,7 +74,7 @@ export function ExamStatePrompt({ exam }: { exam: ExamConfig }) {
           className="w-auto inline-flex text-lg font-semibold text-brand border-none shadow-none focus:ring-0 focus:ring-offset-0 px-1 underline decoration-brand-border decoration-2 underline-offset-4 hover:decoration-brand h-auto"
         />
       </div>
-      <p className="text-xs text-gray-500 mt-1">
+      <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
         {names} have state-specific practice. Other states get the national topics.
       </p>
     </div>
@@ -90,9 +90,9 @@ export function ExamStateLine({ exam }: { exam: ExamConfig }) {
   if (!name) return null;
 
   return (
-    <div className="mt-3 pt-3 border-t border-gray-100 flex items-center justify-between gap-3 text-xs">
-      <span className="text-gray-500 min-w-0">
-        <span className="font-semibold text-gray-800">{name}</span>
+    <div className="mt-3 pt-3 border-t border-gray-100 dark:border-gray-800 flex items-center justify-between gap-3 text-xs">
+      <span className="text-gray-500 dark:text-gray-400 min-w-0">
+        <span className="font-semibold text-gray-800 dark:text-gray-100">{name}</span>
         {exam.jurisdiction
           ? ` · ${exam.questionsPerTest} questions including ${name} law`
           : ` · national topics only, ${name} law not covered yet`}

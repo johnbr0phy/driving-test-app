@@ -958,6 +958,12 @@ export const es: TranslationKeys = {
   },
 
   // Language
+  theme: {
+    appearance: "Apariencia",
+    light: "Claro",
+    dark: "Oscuro",
+    system: "Sistema",
+  },
   language: {
     en: "EN",
     es: "ES",

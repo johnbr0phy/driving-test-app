@@ -14,6 +14,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { useAuth } from "@/contexts/AuthContext";
 import { useStore } from "@/store/useStore";
 import { TestSwitcher } from "@/components/TestSwitcher";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import { ExamV2Config } from "@/lib/v2/types";
 import { getTigerAsset, hasTigerSet } from "@/lib/tigerAssets";
 
@@ -29,7 +30,7 @@ export function V2Header({ exam }: { exam: ExamV2Config }) {
   const displayPhotoURL = photoURL || user?.photoURL;
 
   return (
-    <header className="border-b bg-white" style={style}>
+    <header className="border-b bg-white dark:bg-gray-900" style={style}>
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <Link href={exam.slug} className="flex items-center gap-2 group flex-shrink-0">
           {hasTigerSet(exam.id) ? (
@@ -39,10 +40,11 @@ export function V2Header({ exam }: { exam: ExamV2Config }) {
               <TestIcon icon={exam.icon as TestCatalogEntry["icon"]} className="h-6 w-6 text-white" />
             </div>
           )}
-          <span className="text-2xl font-bold text-gray-900 group-hover:opacity-80 transition-opacity hidden sm:inline">{exam.name}</span>
+          <span className="text-2xl font-bold text-gray-900 dark:text-gray-50 group-hover:opacity-80 transition-opacity hidden sm:inline">{exam.name}</span>
         </Link>
         <div className="flex items-center gap-2 sm:gap-4">
           <TestSwitcher />
+          <ThemeToggle />
           {user ? (
             <Link href="/settings">
               <Avatar className="h-9 w-9 cursor-pointer hover:opacity-80 transition-opacity">
@@ -52,7 +54,7 @@ export function V2Header({ exam }: { exam: ExamV2Config }) {
             </Link>
           ) : (
             <Link href={`/login?redirect=${exam.slug}`}>
-              <Button variant="outline" className="text-gray-700 border-gray-300 hover:bg-gray-50">Sign In</Button>
+              <Button variant="outline" className="text-gray-700 dark:text-gray-200 border-gray-300 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800">Sign In</Button>
             </Link>
           )}
         </div>

@@ -230,7 +230,7 @@ export function DailyMissedQuestion({ className }: { className?: string }) {
                     activeQuiz.ctaTab
                   );
                 }}
-                className="block w-full rounded-full bg-gray-900 text-white hover:bg-gray-800 px-6 py-3 text-center transition-colors"
+                className="block w-full rounded-full bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 px-6 py-3 text-center transition-colors"
               >
                 <span className="text-sm font-medium leading-snug [text-wrap:balance]">
                   {activeQuiz.ctaLabel(correct)}

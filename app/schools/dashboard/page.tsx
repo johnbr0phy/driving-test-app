@@ -184,17 +184,17 @@ function OnboardingChecklist({
               />
             ))}
           </div>
-          <span className="text-sm font-semibold text-gray-800">
+          <span className="text-sm font-semibold text-gray-800 dark:text-gray-100">
             Getting started
           </span>
-          <span className="text-xs text-gray-500">
+          <span className="text-xs text-gray-500 dark:text-gray-400">
             {completedCount}/{items.length} done
           </span>
         </div>
         <div className="flex items-center gap-1">
           <button
             onClick={handleToggleCollapse}
-            className="p-1.5 rounded-lg text-gray-400 hover:text-gray-600 hover:bg-white/60 transition-colors"
+            className="p-1.5 rounded-lg text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 hover:bg-white/60 transition-colors"
             title={collapsed ? "Expand" : "Collapse"}
           >
             {collapsed ? (
@@ -205,7 +205,7 @@ function OnboardingChecklist({
           </button>
           <button
             onClick={handleDismiss}
-            className="p-1.5 rounded-lg text-gray-400 hover:text-gray-600 hover:bg-white/60 transition-colors"
+            className="p-1.5 rounded-lg text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 hover:bg-white/60 transition-colors"
             title="Dismiss checklist"
           >
             <X className="h-3.5 w-3.5" />
@@ -228,7 +228,7 @@ function OnboardingChecklist({
                 className={`w-5 h-5 rounded-full border-2 flex items-center justify-center flex-shrink-0 transition-all ${
                   item.done
                     ? "bg-green-500 border-green-500"
-                    : "border-gray-300 bg-white"
+                    : "border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900"
                 }`}
               >
                 {item.done && <Check className="h-3 w-3 text-white" />}
@@ -238,7 +238,7 @@ function OnboardingChecklist({
               <div className="flex-1 min-w-0">
                 <p
                   className={`text-sm font-medium ${
-                    item.done ? "line-through text-gray-400" : "text-gray-800"
+                    item.done ? "line-through text-gray-400" : "text-gray-800 dark:text-gray-100"
                   }`}
                 >
                   {item.label}
@@ -264,7 +264,7 @@ function OnboardingChecklist({
 
       {/* Demo mode note */}
       {isDemoMode && !collapsed && (
-        <div className="px-5 py-2.5 bg-amber-50/80 border-t border-amber-100 text-xs text-amber-700">
+        <div className="px-5 py-2.5 bg-amber-50/80 dark:bg-amber-950/80 border-t border-amber-100 dark:border-amber-900 text-xs text-amber-700 dark:text-amber-300">
           <Link href="/login?redirect=/schools/dashboard" className="underline font-medium">Log in</Link> to save your progress.
         </div>
       )}
@@ -442,20 +442,20 @@ function SettingsPanel({
 
   return (
     <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
-      <div className="bg-white rounded-2xl w-full max-w-lg shadow-xl flex flex-col max-h-[90vh]">
+      <div className="bg-white dark:bg-gray-900 rounded-2xl w-full max-w-lg shadow-xl flex flex-col max-h-[90vh]">
         {/* Header */}
-        <div className="flex items-center justify-between px-6 pt-6 pb-4 border-b border-gray-100 flex-shrink-0">
-          <h2 className="text-lg font-bold text-gray-900">School Settings</h2>
+        <div className="flex items-center justify-between px-6 pt-6 pb-4 border-b border-gray-100 dark:border-gray-800 flex-shrink-0">
+          <h2 className="text-lg font-bold text-gray-900 dark:text-gray-50">School Settings</h2>
           <button
             onClick={onClose}
-            className="text-gray-400 hover:text-gray-600 transition-colors p-1 rounded"
+            className="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors p-1 rounded"
           >
             <X className="h-4 w-4" />
           </button>
         </div>
 
         {/* Tabs */}
-        <div className="flex gap-1 px-6 pt-3 border-b border-gray-100 flex-shrink-0">
+        <div className="flex gap-1 px-6 pt-3 border-b border-gray-100 dark:border-gray-800 flex-shrink-0">
           {tabs.map((tab) => (
             <button
               key={tab.id}
@@ -463,7 +463,7 @@ function SettingsPanel({
               className={`px-3 py-2 text-sm font-medium rounded-t-lg transition-colors ${
                 activeTab === tab.id
                   ? "text-brand border-b-2 border-brand"
-                  : "text-gray-500 hover:text-gray-700"
+                  : "text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200"
               }`}
             >
               {tab.label}
@@ -477,10 +477,10 @@ function SettingsPanel({
           {activeTab === "school" && (
             <div className="space-y-5">
               {/* Plan display */}
-              <div className="bg-gray-50 rounded-xl px-4 py-3 flex items-center justify-between">
+              <div className="bg-gray-50 dark:bg-gray-950 rounded-xl px-4 py-3 flex items-center justify-between">
                 <div>
-                  <p className="text-xs text-gray-500 uppercase tracking-wide font-medium">Current plan</p>
-                  <p className="text-sm font-semibold text-gray-900 mt-0.5">{planLabel}</p>
+                  <p className="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-wide font-medium">Current plan</p>
+                  <p className="text-sm font-semibold text-gray-900 dark:text-gray-50 mt-0.5">{planLabel}</p>
                 </div>
                 {(schoolData?.planTier === "free" || !schoolData?.planTier) && (
                   <span className="text-xs bg-brand/10 text-brand px-2.5 py-1 rounded-full font-medium">
@@ -492,20 +492,20 @@ function SettingsPanel({
               {/* Public URL */}
               {schoolId && (
                 <div>
-                  <label className="block text-xs font-semibold text-gray-700 mb-2">
+                  <label className="block text-xs font-semibold text-gray-700 dark:text-gray-200 mb-2">
                     Your public school page
                   </label>
                   <div className="flex items-center gap-2">
-                    <div className="flex-1 bg-gray-50 border border-gray-200 rounded-lg px-3 py-2 text-xs text-gray-600 font-mono truncate">
+                    <div className="flex-1 bg-gray-50 dark:bg-gray-950 border border-gray-200 dark:border-gray-800 rounded-lg px-3 py-2 text-xs text-gray-600 dark:text-gray-300 font-mono truncate">
                       {publicUrl}
                     </div>
                     <button
                       onClick={handleCopyUrl}
-                      className="flex items-center gap-1.5 px-3 py-2 text-xs font-medium rounded-lg border border-gray-200 hover:bg-gray-50 transition-colors shrink-0"
+                      className="flex items-center gap-1.5 px-3 py-2 text-xs font-medium rounded-lg border border-gray-200 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors shrink-0"
                     >
                       {copied ? (
                         <>
-                          <CheckCircle2 className="h-3.5 w-3.5 text-green-500" />
+                          <CheckCircle2 className="h-3.5 w-3.5 text-green-500 dark:text-green-400" />
                           Copied
                         </>
                       ) : (
@@ -519,7 +519,7 @@ function SettingsPanel({
                       href={publicUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="p-2 rounded-lg border border-gray-200 hover:bg-gray-50 transition-colors text-gray-500"
+                      className="p-2 rounded-lg border border-gray-200 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors text-gray-500 dark:text-gray-400"
                       title="Open school page"
                     >
                       <ExternalLink className="h-3.5 w-3.5" />
@@ -531,14 +531,14 @@ function SettingsPanel({
 
               {/* School name */}
               <div>
-                <label className="block text-xs font-semibold text-gray-700 mb-1.5">
+                <label className="block text-xs font-semibold text-gray-700 dark:text-gray-200 mb-1.5">
                   School name
                 </label>
                 <input
                   type="text"
                   value={schoolName}
                   onChange={(e) => setSchoolName(e.target.value)}
-                  className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand/30 focus:border-brand"
+                  className="w-full border border-gray-200 dark:border-gray-800 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand/30 focus:border-brand"
                   placeholder="Smith Driving Academy"
                   disabled={isDemoMode}
                 />
@@ -546,14 +546,14 @@ function SettingsPanel({
 
               {/* Contact name */}
               <div>
-                <label className="block text-xs font-semibold text-gray-700 mb-1.5">
+                <label className="block text-xs font-semibold text-gray-700 dark:text-gray-200 mb-1.5">
                   Contact name
                 </label>
                 <input
                   type="text"
                   value={adminName}
                   onChange={(e) => setAdminName(e.target.value)}
-                  className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand/30 focus:border-brand"
+                  className="w-full border border-gray-200 dark:border-gray-800 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand/30 focus:border-brand"
                   placeholder="Jane Smith"
                   disabled={isDemoMode}
                 />
@@ -561,34 +561,34 @@ function SettingsPanel({
 
               {/* Contact email */}
               <div>
-                <label className="block text-xs font-semibold text-gray-700 mb-1.5">
+                <label className="block text-xs font-semibold text-gray-700 dark:text-gray-200 mb-1.5">
                   Contact email
                 </label>
                 <input
                   type="email"
                   value={adminEmail}
                   onChange={(e) => setAdminEmail(e.target.value)}
-                  className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand/30 focus:border-brand"
+                  className="w-full border border-gray-200 dark:border-gray-800 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand/30 focus:border-brand"
                   placeholder="jane@smithdriving.com"
                   disabled={isDemoMode}
                 />
               </div>
 
               {infoError && (
-                <div className="flex items-center gap-2 text-xs text-red-600 bg-red-50 border border-red-200 rounded-lg px-3 py-2">
+                <div className="flex items-center gap-2 text-xs text-red-600 dark:text-red-400 bg-red-50 dark:bg-red-950 border border-red-200 dark:border-red-800 rounded-lg px-3 py-2">
                   <AlertTriangle className="h-3.5 w-3.5 flex-shrink-0" />
                   {infoError}
                 </div>
               )}
               {infoSuccess && (
-                <div className="flex items-center gap-2 text-xs text-green-700 bg-green-50 border border-green-200 rounded-lg px-3 py-2">
+                <div className="flex items-center gap-2 text-xs text-green-700 dark:text-green-300 bg-green-50 dark:bg-green-950 border border-green-200 dark:border-green-800 rounded-lg px-3 py-2">
                   <CheckCircle2 className="h-3.5 w-3.5 flex-shrink-0" />
                   {infoSuccess}
                 </div>
               )}
 
               {isDemoMode && (
-                <div className="bg-amber-50 border border-amber-200 rounded-xl px-4 py-3 text-xs text-amber-800">
+                <div className="bg-amber-50 dark:bg-amber-950 border border-amber-200 dark:border-amber-800 rounded-xl px-4 py-3 text-xs text-amber-800 dark:text-amber-300">
                   You&apos;re in demo mode.{" "}
                   <Link href="/login?redirect=/schools/dashboard" className="underline font-medium">Log in</Link>{" "}
                   to save changes.
@@ -616,9 +616,9 @@ function SettingsPanel({
           {activeTab === "logo" && (
             <div className="space-y-4">
               <div>
-                <h3 className="text-sm font-semibold text-gray-700 mb-3">School Logo</h3>
+                <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-200 mb-3">School Logo</h3>
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="w-20 h-20 rounded-xl border-2 border-dashed border-gray-200 flex items-center justify-center bg-gray-50 overflow-hidden flex-shrink-0">
+                  <div className="w-20 h-20 rounded-xl border-2 border-dashed border-gray-200 dark:border-gray-800 flex items-center justify-center bg-gray-50 dark:bg-gray-950 overflow-hidden flex-shrink-0">
                     {previewUrl ? (
                       <Image
                         src={previewUrl}
@@ -633,7 +633,7 @@ function SettingsPanel({
                     )}
                   </div>
                   <div>
-                    <p className="text-xs text-gray-500 mb-2">
+                    <p className="text-xs text-gray-500 dark:text-gray-400 mb-2">
                       PNG or JPG, max 2MB. Shown on your public school page and dashboard header.
                     </p>
                     <Button
@@ -665,20 +665,20 @@ function SettingsPanel({
                   </div>
                 </div>
                 {uploadError && (
-                  <div className="flex items-center gap-2 text-xs text-red-600 bg-red-50 border border-red-200 rounded-lg px-3 py-2">
+                  <div className="flex items-center gap-2 text-xs text-red-600 dark:text-red-400 bg-red-50 dark:bg-red-950 border border-red-200 dark:border-red-800 rounded-lg px-3 py-2">
                     <AlertTriangle className="h-3.5 w-3.5 flex-shrink-0" />
                     {uploadError}
                   </div>
                 )}
                 {logoSuccess && (
-                  <div className="flex items-center gap-2 text-xs text-green-700 bg-green-50 border border-green-200 rounded-lg px-3 py-2">
+                  <div className="flex items-center gap-2 text-xs text-green-700 dark:text-green-300 bg-green-50 dark:bg-green-950 border border-green-200 dark:border-green-800 rounded-lg px-3 py-2">
                     <CheckCircle2 className="h-3.5 w-3.5 flex-shrink-0" />
                     {logoSuccess}
                   </div>
                 )}
               </div>
               {isDemoMode && (
-                <div className="bg-amber-50 border border-amber-200 rounded-xl px-4 py-3 text-xs text-amber-800">
+                <div className="bg-amber-50 dark:bg-amber-950 border border-amber-200 dark:border-amber-800 rounded-xl px-4 py-3 text-xs text-amber-800 dark:text-amber-300">
                   You&apos;re in demo mode.{" "}
                   <Link href="/login?redirect=/schools/dashboard" className="underline font-medium">Log in</Link>{" "}
                   to save changes.
@@ -692,20 +692,20 @@ function SettingsPanel({
             <div className="space-y-5">
               {/* School slug info */}
               {schoolId && (
-                <div className="bg-gray-50 rounded-xl px-4 py-3">
-                  <p className="text-xs text-gray-500 uppercase tracking-wide font-medium mb-1">School slug</p>
-                  <p className="text-sm font-mono text-gray-800">{schoolId}</p>
+                <div className="bg-gray-50 dark:bg-gray-950 rounded-xl px-4 py-3">
+                  <p className="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-wide font-medium mb-1">School slug</p>
+                  <p className="text-sm font-mono text-gray-800 dark:text-gray-100">{schoolId}</p>
                   <p className="text-xs text-gray-400 mt-1">Your slug cannot be changed after signup.</p>
                 </div>
               )}
 
               {/* Delete account */}
-              <div className="border border-red-200 rounded-xl p-4">
-                <h3 className="text-sm font-semibold text-red-700 mb-2">Delete account</h3>
-                <p className="text-xs text-gray-600 mb-3">
+              <div className="border border-red-200 dark:border-red-800 rounded-xl p-4">
+                <h3 className="text-sm font-semibold text-red-700 dark:text-red-300 mb-2">Delete account</h3>
+                <p className="text-xs text-gray-600 dark:text-gray-300 mb-3">
                   Permanently deletes your school account and all student data. This cannot be undone.
                 </p>
-                <label className="block text-xs font-medium text-gray-700 mb-1.5">
+                <label className="block text-xs font-medium text-gray-700 dark:text-gray-200 mb-1.5">
                   Type <span className="font-mono font-bold">{schoolId ?? "your-school-slug"}</span> to confirm
                 </label>
                 <input
@@ -714,10 +714,10 @@ function SettingsPanel({
                   onChange={(e) => setDeleteConfirmText(e.target.value)}
                   placeholder={schoolId ?? "school-slug"}
                   disabled={isDemoMode || deleting}
-                  className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm mb-3 focus:outline-none focus:ring-2 focus:ring-red-300 focus:border-red-400"
+                  className="w-full border border-gray-200 dark:border-gray-800 rounded-lg px-3 py-2 text-sm mb-3 focus:outline-none focus:ring-2 focus:ring-red-300 focus:border-red-400 dark:focus:border-red-600"
                 />
                 {deleteError && (
-                  <div className="flex items-center gap-2 text-xs text-red-600 bg-red-50 border border-red-200 rounded-lg px-3 py-2 mb-3">
+                  <div className="flex items-center gap-2 text-xs text-red-600 dark:text-red-400 bg-red-50 dark:bg-red-950 border border-red-200 dark:border-red-800 rounded-lg px-3 py-2 mb-3">
                     <AlertTriangle className="h-3.5 w-3.5 flex-shrink-0" />
                     {deleteError}
                   </div>
@@ -730,7 +730,7 @@ function SettingsPanel({
                     deleting ||
                     deleteConfirmText !== schoolId
                   }
-                  className="w-full border-red-300 text-red-600 hover:bg-red-50 gap-2 disabled:opacity-40"
+                  className="w-full border-red-300 dark:border-red-700 text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-950 gap-2 disabled:opacity-40"
                 >
                   {deleting ? (
                     <>
@@ -755,7 +755,7 @@ function SettingsPanel({
         </div>
 
         {/* Footer */}
-        <div className="px-6 py-4 border-t border-gray-100 flex justify-end flex-shrink-0">
+        <div className="px-6 py-4 border-t border-gray-100 dark:border-gray-800 flex justify-end flex-shrink-0">
           <Button variant="outline" onClick={onClose}>
             Close
           </Button>
@@ -794,16 +794,16 @@ function SharePanel({ onClose, schoolId, schoolName }: SharePanelProps) {
 
   return (
     <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
-      <div className="bg-white rounded-2xl w-full max-w-sm shadow-xl">
+      <div className="bg-white dark:bg-gray-900 rounded-2xl w-full max-w-sm shadow-xl">
         {/* Header */}
-        <div className="flex items-center justify-between px-6 pt-6 pb-4 border-b border-gray-100">
+        <div className="flex items-center justify-between px-6 pt-6 pb-4 border-b border-gray-100 dark:border-gray-800">
           <div className="flex items-center gap-2">
             <Share2 className="h-4 w-4 text-brand" />
-            <h2 className="text-base font-bold text-gray-900">Share your school page</h2>
+            <h2 className="text-base font-bold text-gray-900 dark:text-gray-50">Share your school page</h2>
           </div>
           <button
             onClick={onClose}
-            className="text-gray-400 hover:text-gray-600 transition-colors p-1 rounded"
+            className="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors p-1 rounded"
           >
             <X className="h-4 w-4" />
           </button>
@@ -811,15 +811,15 @@ function SharePanel({ onClose, schoolId, schoolName }: SharePanelProps) {
 
         <div className="px-6 py-5 space-y-5">
           {/* Explanation */}
-          <p className="text-sm text-gray-500">
+          <p className="text-sm text-gray-500 dark:text-gray-400">
             Students who visit your school page and sign up are automatically enrolled under{" "}
-            <span className="font-medium text-gray-700">{schoolName}</span>.
+            <span className="font-medium text-gray-700 dark:text-gray-200">{schoolName}</span>.
           </p>
 
           {/* QR Code */}
           {publicUrl ? (
             <div className="flex flex-col items-center gap-3 py-2">
-              <div className="p-3 bg-white border border-gray-200 rounded-xl shadow-sm">
+              <div className="p-3 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl shadow-sm">
                 <QRCodeSVG
                   value={publicUrl}
                   size={160}
@@ -843,20 +843,20 @@ function SharePanel({ onClose, schoolId, schoolName }: SharePanelProps) {
           {/* URL + copy */}
           {publicUrl && (
             <div>
-              <label className="block text-xs font-semibold text-gray-600 mb-1.5">
+              <label className="block text-xs font-semibold text-gray-600 dark:text-gray-300 mb-1.5">
                 Your public link
               </label>
               <div className="flex items-center gap-2">
-                <div className="flex-1 bg-gray-50 border border-gray-200 rounded-lg px-3 py-2 text-xs text-gray-600 font-mono truncate">
+                <div className="flex-1 bg-gray-50 dark:bg-gray-950 border border-gray-200 dark:border-gray-800 rounded-lg px-3 py-2 text-xs text-gray-600 dark:text-gray-300 font-mono truncate">
                   {publicUrl}
                 </div>
                 <button
                   onClick={handleCopy}
-                  className="flex items-center gap-1.5 px-3 py-2 text-xs font-medium rounded-lg border border-gray-200 hover:bg-gray-50 transition-colors shrink-0"
+                  className="flex items-center gap-1.5 px-3 py-2 text-xs font-medium rounded-lg border border-gray-200 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors shrink-0"
                 >
                   {copied ? (
                     <>
-                      <CheckCircle2 className="h-3.5 w-3.5 text-green-500" />
+                      <CheckCircle2 className="h-3.5 w-3.5 text-green-500 dark:text-green-400" />
                       Copied!
                     </>
                   ) : (
@@ -872,7 +872,7 @@ function SharePanel({ onClose, schoolId, schoolName }: SharePanelProps) {
 
           {/* Tips */}
           {publicUrl && (
-            <ul className="text-xs text-gray-400 space-y-1 border-t border-gray-100 pt-4">
+            <ul className="text-xs text-gray-400 space-y-1 border-t border-gray-100 dark:border-gray-800 pt-4">
               <li className="flex items-start gap-1.5">
                 <Check className="h-3.5 w-3.5 text-green-400 mt-0.5 shrink-0" />
                 Add the link to your course syllabus
@@ -952,24 +952,24 @@ function ClassOverview({ students, totalSections }: ClassOverviewProps) {
       value: `${avgSections}/${totalSections}`,
       sub: "sections completed on avg",
       icon: <TrendingUp className="h-5 w-5" />,
-      color: "text-blue-600",
-      bg: "bg-blue-50",
+      color: "text-blue-600 dark:text-blue-400",
+      bg: "bg-blue-50 dark:bg-blue-950",
     },
     {
       label: "Passed All 8",
       value: passedAll,
       sub: totalStudents > 0 ? `${Math.round((passedAll / totalStudents) * 100)}% of students` : "no students yet",
       icon: <Award className="h-5 w-5" />,
-      color: "text-green-600",
-      bg: "bg-green-50",
+      color: "text-green-600 dark:text-green-400",
+      bg: "bg-green-50 dark:bg-green-950",
     },
     {
       label: "At-Risk",
       value: atRisk,
       sub: "0 activity in 7+ days",
       icon: <AlertCircle className="h-5 w-5" />,
-      color: atRisk > 0 ? "text-amber-600" : "text-gray-400",
-      bg: atRisk > 0 ? "bg-amber-50" : "bg-gray-50",
+      color: atRisk > 0 ? "text-amber-600 dark:text-amber-400" : "text-gray-400",
+      bg: atRisk > 0 ? "bg-amber-50 dark:bg-amber-950" : "bg-gray-50 dark:bg-gray-950",
     },
   ];
 
@@ -978,7 +978,7 @@ function ClassOverview({ students, totalSections }: ClassOverviewProps) {
       {cards.map((card) => (
         <div
           key={card.label}
-          className="bg-white border border-gray-200 rounded-xl px-4 py-4 shadow-sm flex flex-col gap-2"
+          className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl px-4 py-4 shadow-sm flex flex-col gap-2"
         >
           <div className={`w-8 h-8 rounded-lg flex items-center justify-center ${card.bg} ${card.color}`}>
             {card.icon}
@@ -987,7 +987,7 @@ function ClassOverview({ students, totalSections }: ClassOverviewProps) {
             <p className={`text-2xl font-bold tabular-nums leading-tight ${card.color}`}>
               {card.value}
             </p>
-            <p className="text-xs font-medium text-gray-500 mt-0.5 leading-tight">{card.label}</p>
+            <p className="text-xs font-medium text-gray-500 dark:text-gray-400 mt-0.5 leading-tight">{card.label}</p>
             <p className="text-xs text-gray-400 mt-0.5 leading-tight">{card.sub}</p>
           </div>
         </div>
@@ -1007,14 +1007,14 @@ function SectionTooltip({ done, totalSections }: { done: number; totalSections: 
       onMouseLeave={() => setVisible(false)}
     >
       {/* Mini progress bar */}
-      <div className="w-24 h-2 bg-gray-100 rounded-full overflow-hidden flex-shrink-0">
+      <div className="w-24 h-2 bg-gray-100 dark:bg-gray-800 rounded-full overflow-hidden flex-shrink-0">
         <div
           className={`h-full rounded-full transition-all ${
             done >= totalSections
               ? "bg-green-500"
               : done >= totalSections / 2
               ? "bg-brand"
-              : "bg-gray-300"
+              : "bg-gray-300 dark:bg-gray-600"
           }`}
           style={{ width: `${(done / totalSections) * 100}%` }}
         />
@@ -1022,7 +1022,7 @@ function SectionTooltip({ done, totalSections }: { done: number; totalSections: 
       {/* Fraction */}
       <span
         className={`text-sm font-semibold tabular-nums w-8 text-right flex-shrink-0 cursor-default ${
-          done >= totalSections ? "text-green-600" : "text-gray-700"
+          done >= totalSections ? "text-green-600 dark:text-green-400" : "text-gray-700 dark:text-gray-200"
         }`}
       >
         {done}/{totalSections}
@@ -1031,7 +1031,7 @@ function SectionTooltip({ done, totalSections }: { done: number; totalSections: 
       {/* Tooltip popover */}
       {visible && (
         <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 z-50 pointer-events-none">
-          <div className="bg-gray-900 text-white rounded-xl shadow-xl px-4 py-3 w-48">
+          <div className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 rounded-xl shadow-xl px-4 py-3 w-48">
             <p className="text-xs font-semibold text-gray-300 uppercase tracking-wide mb-2">
               Sections
             </p>
@@ -1049,7 +1049,7 @@ function SectionTooltip({ done, totalSections }: { done: number; totalSections: 
                     )}
                     <span
                       className={`text-xs ${
-                        isDone ? "text-white" : "text-gray-500"
+                        isDone ? "text-white" : "text-gray-500 dark:text-gray-400"
                       }`}
                     >
                       {section}
@@ -1061,7 +1061,7 @@ function SectionTooltip({ done, totalSections }: { done: number; totalSections: 
           </div>
           {/* Arrow */}
           <div className="flex justify-center">
-            <div className="w-2.5 h-2.5 bg-gray-900 rotate-45 -mt-1.5" />
+            <div className="w-2.5 h-2.5 bg-gray-900 dark:bg-gray-100 rotate-45 -mt-1.5" />
           </div>
         </div>
       )}
@@ -1080,14 +1080,14 @@ function getStudentStatus(student: SchoolStudent): "active" | "pending" {
 function StatusBadge({ status }: { status: "active" | "pending" }) {
   if (status === "active") {
     return (
-      <span className="inline-flex items-center gap-1 text-xs font-medium px-2 py-0.5 rounded-full bg-green-100 text-green-700">
+      <span className="inline-flex items-center gap-1 text-xs font-medium px-2 py-0.5 rounded-full bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300">
         <span className="w-1.5 h-1.5 rounded-full bg-green-500 inline-block" />
         Active
       </span>
     );
   }
   return (
-    <span className="inline-flex items-center gap-1 text-xs font-medium px-2 py-0.5 rounded-full bg-gray-100 text-gray-500">
+    <span className="inline-flex items-center gap-1 text-xs font-medium px-2 py-0.5 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400">
       <Clock className="h-3 w-3" />
       Pending
     </span>
@@ -1352,8 +1352,8 @@ function DashboardInner() {
           <School className="h-8 w-8 text-brand" />
         </div>
         <div>
-          <h2 className="text-xl font-bold text-gray-900 mb-2">No school account found</h2>
-          <p className="text-gray-500 text-sm">
+          <h2 className="text-xl font-bold text-gray-900 dark:text-gray-50 mb-2">No school account found</h2>
+          <p className="text-gray-500 dark:text-gray-400 text-sm">
             Your account is linked but we couldn&apos;t find a school profile. Let&apos;s set one up.
           </p>
         </div>
@@ -1416,8 +1416,8 @@ function DashboardInner() {
       {!isAuthenticated && (
         <div className="mb-6 bg-brand/5 border border-brand/20 rounded-xl px-4 sm:px-5 py-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4">
           <div>
-            <p className="text-sm font-semibold text-gray-900">You&apos;re viewing a demo</p>
-            <p className="text-xs text-gray-500 mt-0.5">Log in to manage your real school and students.</p>
+            <p className="text-sm font-semibold text-gray-900 dark:text-gray-50">You&apos;re viewing a demo</p>
+            <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">Log in to manage your real school and students.</p>
           </div>
           <Link href="/login?redirect=/schools/dashboard" className="self-stretch sm:self-auto">
             <Button size="sm" className="bg-brand text-white hover:bg-brand/90 gap-1.5 w-full sm:w-auto min-h-[40px]">
@@ -1446,7 +1446,7 @@ function DashboardInner() {
         <div className="flex items-center gap-3">
           {/* School logo */}
           {localLogoUrl ? (
-            <div className="w-10 h-10 rounded-lg overflow-hidden border border-gray-200 bg-gray-50 flex-shrink-0">
+            <div className="w-10 h-10 rounded-lg overflow-hidden border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-950 flex-shrink-0">
               <Image
                 src={localLogoUrl}
                 alt={`${displayName} logo`}
@@ -1462,14 +1462,14 @@ function DashboardInner() {
             </div>
           )}
           <div>
-            <h1 className="text-xl sm:text-2xl font-bold text-gray-900 leading-tight">{displayName}</h1>
-            <p className="text-sm text-gray-500 mt-0.5">
+            <h1 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-gray-50 leading-tight">{displayName}</h1>
+            <p className="text-sm text-gray-500 dark:text-gray-400 mt-0.5">
               {schoolData?.planTier
                 ? schoolData.planTier.charAt(0).toUpperCase() + schoolData.planTier.slice(1)
                 : PLAN_TIER}{" "}
               plan &middot; Instructor Dashboard
               {isDemoMode && (
-                <span className="ml-2 text-xs bg-amber-100 text-amber-700 px-2 py-0.5 rounded-full font-medium">
+                <span className="ml-2 text-xs bg-amber-100 dark:bg-amber-900 text-amber-700 dark:text-amber-300 px-2 py-0.5 rounded-full font-medium">
                   Demo
                 </span>
               )}
@@ -1488,7 +1488,7 @@ function DashboardInner() {
           </button>
           <button
             onClick={() => setShowSettings(true)}
-            className="p-2 rounded-lg text-gray-400 hover:text-gray-600 hover:bg-gray-100 transition-colors"
+            className="p-2 rounded-lg text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
             title="School settings"
           >
             <Settings className="h-5 w-5" />
@@ -1506,12 +1506,12 @@ function DashboardInner() {
 
       {/* Error banner */}
       {error && (
-        <div className="mb-5 bg-amber-50 border border-amber-200 rounded-xl px-4 py-3 flex items-center justify-between gap-3">
-          <div className="flex items-center gap-2 text-sm text-amber-800">
-            <AlertTriangle className="h-4 w-4 text-amber-500 flex-shrink-0" />
+        <div className="mb-5 bg-amber-50 dark:bg-amber-950 border border-amber-200 dark:border-amber-800 rounded-xl px-4 py-3 flex items-center justify-between gap-3">
+          <div className="flex items-center gap-2 text-sm text-amber-800 dark:text-amber-300">
+            <AlertTriangle className="h-4 w-4 text-amber-500 dark:text-amber-400 flex-shrink-0" />
             {error}
           </div>
-          <button onClick={() => setError(null)} className="text-amber-500 hover:text-amber-700">
+          <button onClick={() => setError(null)} className="text-amber-500 dark:text-amber-400 hover:text-amber-700 dark:hover:text-amber-300">
             <X className="h-4 w-4" />
           </button>
         </div>
@@ -1522,33 +1522,33 @@ function DashboardInner() {
 
       {/* Upgrade CTA — shown when on free tier */}
       {(!schoolData?.planTier || schoolData.planTier === "free") && !isDemoMode && (
-        <div className="mb-6 bg-amber-50 border border-amber-200 rounded-xl px-5 py-4">
-          <p className="text-sm font-semibold text-amber-800 mb-3">Upgrade your school plan</p>
+        <div className="mb-6 bg-amber-50 dark:bg-amber-950 border border-amber-200 dark:border-amber-800 rounded-xl px-5 py-4">
+          <p className="text-sm font-semibold text-amber-800 dark:text-amber-300 mb-3">Upgrade your school plan</p>
           <div className="flex flex-wrap gap-3">
             <button
               onClick={() => handleUpgrade("starter")}
-              className="flex-1 min-w-[140px] rounded-lg border border-amber-300 bg-white px-4 py-3 text-left hover:bg-amber-50 transition-colors"
+              className="flex-1 min-w-[140px] rounded-lg border border-amber-300 dark:border-amber-700 bg-white dark:bg-gray-900 px-4 py-3 text-left hover:bg-amber-50 dark:hover:bg-amber-950 transition-colors"
             >
-              <p className="text-xs font-semibold text-amber-700 uppercase tracking-wide">Starter</p>
-              <p className="text-sm font-bold text-gray-900">$149 / yr</p>
-              <p className="text-xs text-gray-500">10 reusable seats</p>
+              <p className="text-xs font-semibold text-amber-700 dark:text-amber-300 uppercase tracking-wide">Starter</p>
+              <p className="text-sm font-bold text-gray-900 dark:text-gray-50">$149 / yr</p>
+              <p className="text-xs text-gray-500 dark:text-gray-400">10 reusable seats</p>
             </button>
             <button
               onClick={() => handleUpgrade("growth")}
-              className="flex-1 min-w-[140px] rounded-lg border border-amber-400 bg-amber-100 px-4 py-3 text-left hover:bg-amber-200 transition-colors relative"
+              className="flex-1 min-w-[140px] rounded-lg border border-amber-400 dark:border-amber-600 bg-amber-100 dark:bg-amber-900 px-4 py-3 text-left hover:bg-amber-200 dark:hover:bg-amber-800 transition-colors relative"
             >
-              <span className="absolute top-2 right-2 text-[10px] font-semibold text-amber-700 bg-amber-200 rounded-full px-1.5 py-0.5">Popular</span>
-              <p className="text-xs font-semibold text-amber-700 uppercase tracking-wide">Growth</p>
-              <p className="text-sm font-bold text-gray-900">$349 / yr</p>
-              <p className="text-xs text-gray-500">30 reusable seats</p>
+              <span className="absolute top-2 right-2 text-[10px] font-semibold text-amber-700 dark:text-amber-300 bg-amber-200 dark:bg-amber-800 rounded-full px-1.5 py-0.5">Popular</span>
+              <p className="text-xs font-semibold text-amber-700 dark:text-amber-300 uppercase tracking-wide">Growth</p>
+              <p className="text-sm font-bold text-gray-900 dark:text-gray-50">$349 / yr</p>
+              <p className="text-xs text-gray-500 dark:text-gray-400">30 reusable seats</p>
             </button>
             <button
               onClick={() => handleUpgrade("school")}
-              className="flex-1 min-w-[140px] rounded-lg border border-amber-300 bg-white px-4 py-3 text-left hover:bg-amber-50 transition-colors"
+              className="flex-1 min-w-[140px] rounded-lg border border-amber-300 dark:border-amber-700 bg-white dark:bg-gray-900 px-4 py-3 text-left hover:bg-amber-50 dark:hover:bg-amber-950 transition-colors"
             >
-              <p className="text-xs font-semibold text-amber-700 uppercase tracking-wide">School</p>
-              <p className="text-sm font-bold text-gray-900">$699 / yr</p>
-              <p className="text-xs text-gray-500">Unlimited seats</p>
+              <p className="text-xs font-semibold text-amber-700 dark:text-amber-300 uppercase tracking-wide">School</p>
+              <p className="text-sm font-bold text-gray-900 dark:text-gray-50">$699 / yr</p>
+              <p className="text-xs text-gray-500 dark:text-gray-400">Unlimited seats</p>
             </button>
           </div>
         </div>
@@ -1566,16 +1566,16 @@ function DashboardInner() {
         const barColor =
           pct >= 90 ? "bg-red-500" : pct >= 70 ? "bg-yellow-400" : "bg-brand";
         const textColor =
-          pct >= 90 ? "text-red-600" : pct >= 70 ? "text-yellow-600" : "text-gray-700";
+          pct >= 90 ? "text-red-600 dark:text-red-400" : pct >= 70 ? "text-yellow-600 dark:text-yellow-400" : "text-gray-700 dark:text-gray-200";
         return (
-          <div className="mb-8 bg-white border border-gray-200 rounded-xl px-5 py-4 shadow-sm">
+          <div className="mb-8 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl px-5 py-4 shadow-sm">
             <div className="flex items-center justify-between mb-2">
-              <span className="text-sm font-semibold text-gray-700">Seats used</span>
+              <span className="text-sm font-semibold text-gray-700 dark:text-gray-200">Seats used</span>
               <span className={`text-sm font-bold tabular-nums ${textColor}`}>
                 {used} / {totalSeats}
               </span>
             </div>
-            <div className="w-full h-2.5 bg-gray-100 rounded-full overflow-hidden">
+            <div className="w-full h-2.5 bg-gray-100 dark:bg-gray-800 rounded-full overflow-hidden">
               <div
                 className={`h-full rounded-full transition-all ${barColor}`}
                 style={{ width: `${pct}%` }}
@@ -1594,7 +1594,7 @@ function DashboardInner() {
       <Card>
         <CardHeader className="pb-3 pt-5 px-6">
           <div className="flex items-center justify-between">
-            <CardTitle className="text-base font-semibold text-gray-900">
+            <CardTitle className="text-base font-semibold text-gray-900 dark:text-gray-50">
               Students
               <span className="ml-2 text-sm font-normal text-gray-400">
                 ({activeStudents.length})
@@ -1603,7 +1603,7 @@ function DashboardInner() {
             {inactiveStudents.length > 0 && (
               <button
                 onClick={() => setShowInactive((v) => !v)}
-                className="flex items-center gap-1.5 text-xs text-gray-400 hover:text-gray-600 transition-colors"
+                className="flex items-center gap-1.5 text-xs text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
                 title={showInactive ? "Hide inactive students" : "Show inactive students"}
               >
                 {showInactive ? (
@@ -1623,13 +1623,13 @@ function DashboardInner() {
                 <div className="w-20 h-20 rounded-2xl bg-brand/10 flex items-center justify-center">
                   <Users className="h-10 w-10 text-brand/40" />
                 </div>
-                <div className="absolute -bottom-1.5 -right-1.5 w-7 h-7 bg-white border-2 border-brand/20 rounded-full flex items-center justify-center">
+                <div className="absolute -bottom-1.5 -right-1.5 w-7 h-7 bg-white dark:bg-gray-900 border-2 border-brand/20 rounded-full flex items-center justify-center">
                   <UserPlus className="h-3.5 w-3.5 text-brand" />
                 </div>
               </div>
 
               <div>
-                <h3 className="text-base font-semibold text-gray-800 mb-1">
+                <h3 className="text-base font-semibold text-gray-800 dark:text-gray-100 mb-1">
                   No students yet
                 </h3>
                 <p className="text-sm text-gray-400 max-w-xs">
@@ -1678,20 +1678,20 @@ function DashboardInner() {
             <div className="overflow-x-auto">
             <table className="w-full text-sm min-w-[480px]">
               <thead>
-                <tr className="border-b border-gray-200 bg-gray-50/50">
-                  <th className="px-4 sm:px-6 py-3 text-left text-xs font-medium text-gray-500">
+                <tr className="border-b border-gray-200 dark:border-gray-800 bg-gray-50/50 dark:bg-gray-950/50">
+                  <th className="px-4 sm:px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400">
                     Student
                   </th>
-                  <th className="px-4 sm:px-6 py-3 text-center text-xs font-medium text-gray-500 min-w-[140px] sm:min-w-[180px]">
+                  <th className="px-4 sm:px-6 py-3 text-center text-xs font-medium text-gray-500 dark:text-gray-400 min-w-[140px] sm:min-w-[180px]">
                     Progress
                   </th>
-                  <th className="px-4 sm:px-6 py-3 text-center text-xs font-medium text-gray-500 hidden sm:table-cell">
+                  <th className="px-4 sm:px-6 py-3 text-center text-xs font-medium text-gray-500 dark:text-gray-400 hidden sm:table-cell">
                     Status
                   </th>
-                  <th className="px-4 sm:px-6 py-3 text-center text-xs font-medium text-gray-500 hidden sm:table-cell">
+                  <th className="px-4 sm:px-6 py-3 text-center text-xs font-medium text-gray-500 dark:text-gray-400 hidden sm:table-cell">
                     Tier
                   </th>
-                  <th className="px-4 sm:px-6 py-3 text-right text-xs font-medium text-gray-500 pr-4 sm:pr-6 w-24 sm:w-36">
+                  <th className="px-4 sm:px-6 py-3 text-right text-xs font-medium text-gray-500 dark:text-gray-400 pr-4 sm:pr-6 w-24 sm:w-36">
                     Actions
                   </th>
                 </tr>
@@ -1707,21 +1707,21 @@ function DashboardInner() {
                   return (
                     <tr
                       key={student.uid}
-                      className={`border-b border-gray-100 last:border-0 ${
-                        isInactive ? "opacity-50 bg-gray-50/80" : "hover:bg-gray-50/50"
+                      className={`border-b border-gray-100 dark:border-gray-800 last:border-0 ${
+                        isInactive ? "opacity-50 bg-gray-50/80 dark:bg-gray-950/80" : "hover:bg-gray-50/50 dark:hover:bg-gray-800/50"
                       }`}
                     >
                       {/* Name / Email */}
                       <td className="px-4 sm:px-6 py-3 sm:py-4">
                         <div className="flex items-center gap-2">
                           <div className="min-w-0">
-                            <p className={`font-medium truncate ${isInactive ? "text-gray-400 line-through" : "text-gray-900"}`}>
+                            <p className={`font-medium truncate ${isInactive ? "text-gray-400 line-through" : "text-gray-900 dark:text-gray-50"}`}>
                               {student.name}
                             </p>
                             <p className="text-xs text-gray-400 mt-0.5 truncate max-w-[140px] sm:max-w-none">{student.email}</p>
                           </div>
                           {isInactive && (
-                            <span className="text-xs font-medium px-1.5 py-0.5 rounded bg-gray-200 text-gray-500 shrink-0">
+                            <span className="text-xs font-medium px-1.5 py-0.5 rounded bg-gray-200 dark:bg-gray-700 text-gray-500 dark:text-gray-400 shrink-0">
                               Inactive
                             </span>
                           )}
@@ -1736,7 +1736,7 @@ function DashboardInner() {
                       {/* Status badge — hidden on mobile */}
                       <td className="px-4 sm:px-6 py-3 sm:py-4 text-center hidden sm:table-cell">
                         {isInactive ? (
-                          <span className="inline-flex items-center gap-1 text-xs font-medium px-2 py-0.5 rounded-full bg-gray-100 text-gray-400">
+                          <span className="inline-flex items-center gap-1 text-xs font-medium px-2 py-0.5 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-400">
                             Deactivated
                           </span>
                         ) : (
@@ -1747,11 +1747,11 @@ function DashboardInner() {
                       {/* Tier badge — hidden on mobile */}
                       <td className="px-4 sm:px-6 py-3 sm:py-4 text-center hidden sm:table-cell">
                         {(schoolData?.paidSeats ?? 0) > 0 && studentIndex < (schoolData?.paidSeats ?? 0) ? (
-                          <span className="inline-flex items-center text-xs font-medium px-2 py-0.5 rounded-full bg-green-100 text-green-700">
+                          <span className="inline-flex items-center text-xs font-medium px-2 py-0.5 rounded-full bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300">
                             Premium
                           </span>
                         ) : (
-                          <span className="inline-flex items-center text-xs font-medium px-2 py-0.5 rounded-full bg-gray-100 text-gray-500">
+                          <span className="inline-flex items-center text-xs font-medium px-2 py-0.5 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400">
                             Free
                           </span>
                         )}
@@ -1763,13 +1763,13 @@ function DashboardInner() {
                           <div className="flex items-center justify-end gap-2">
                             <button
                               onClick={() => setDeactivateConfirm(null)}
-                              className="text-xs text-gray-400 hover:text-gray-600"
+                              className="text-xs text-gray-400 hover:text-gray-600 dark:hover:text-gray-300"
                             >
                               Cancel
                             </button>
                             <button
                               onClick={() => handleDeactivate(student.uid)}
-                              className="text-xs font-medium text-amber-600 hover:text-amber-700"
+                              className="text-xs font-medium text-amber-600 dark:text-amber-400 hover:text-amber-700 dark:hover:text-amber-300"
                             >
                               Deactivate
                             </button>
@@ -1778,13 +1778,13 @@ function DashboardInner() {
                           <div className="flex items-center justify-end gap-2">
                             <button
                               onClick={() => setRemoveConfirm(null)}
-                              className="text-xs text-gray-400 hover:text-gray-600"
+                              className="text-xs text-gray-400 hover:text-gray-600 dark:hover:text-gray-300"
                             >
                               Cancel
                             </button>
                             <button
                               onClick={() => handleRemove(student.uid)}
-                              className="text-xs font-medium text-red-600 hover:text-red-700"
+                              className="text-xs font-medium text-red-600 dark:text-red-400 hover:text-red-700 dark:hover:text-red-300"
                             >
                               Delete
                             </button>
@@ -1793,7 +1793,7 @@ function DashboardInner() {
                           // Inactive students: only show hard remove
                           <button
                             onClick={() => setRemoveConfirm(student.uid)}
-                            className="text-gray-300 hover:text-red-500 transition-colors"
+                            className="text-gray-300 hover:text-red-500 dark:hover:text-red-400 transition-colors"
                             title="Permanently remove student"
                           >
                             <Trash2 className="h-4 w-4" />
@@ -1803,14 +1803,14 @@ function DashboardInner() {
                           <div className="flex items-center justify-end gap-1">
                             <button
                               onClick={() => setDeactivateConfirm(student.uid)}
-                              className="text-gray-300 hover:text-amber-500 transition-colors p-1 rounded"
+                              className="text-gray-300 hover:text-amber-500 dark:hover:text-amber-400 transition-colors p-1 rounded"
                               title="Deactivate student (keeps record)"
                             >
                               <UserX className="h-4 w-4" />
                             </button>
                             <button
                               onClick={() => setRemoveConfirm(student.uid)}
-                              className="text-gray-300 hover:text-red-500 transition-colors p-1 rounded"
+                              className="text-gray-300 hover:text-red-500 dark:hover:text-red-400 transition-colors p-1 rounded"
                               title="Permanently remove student"
                             >
                               <Trash2 className="h-4 w-4" />
@@ -1831,20 +1831,20 @@ function DashboardInner() {
       {/* Invite modal */}
       {showInvite && (
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
-          <div className="bg-white rounded-2xl p-6 w-full max-w-md shadow-xl">
+          <div className="bg-white dark:bg-gray-900 rounded-2xl p-6 w-full max-w-md shadow-xl">
             {/* Header */}
             <div className="flex items-start justify-between mb-1">
-              <h2 className="text-lg font-bold text-gray-900">Add students</h2>
+              <h2 className="text-lg font-bold text-gray-900 dark:text-gray-50">Add students</h2>
               <button
                 onClick={() => { setShowInvite(false); setInviteEmails(""); }}
-                className="text-gray-400 hover:text-gray-600 transition-colors -mr-1 -mt-1 p-1 rounded"
+                className="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors -mr-1 -mt-1 p-1 rounded"
               >
                 <X className="h-4 w-4" />
               </button>
             </div>
             {/* subtitle row with CSV upload */}
             <div className="flex items-center justify-between mb-1">
-              <p className="text-sm text-gray-500">
+              <p className="text-sm text-gray-500 dark:text-gray-400">
                 Paste emails — one per line or comma-separated. Max {MAX_BULK_INVITE}.
               </p>
               <button
@@ -1872,7 +1872,7 @@ function DashboardInner() {
               autoFocus
               value={inviteEmails}
               onChange={(e) => setInviteEmails(e.target.value)}
-              className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm h-36 focus:outline-none focus:ring-2 focus:ring-brand resize-none font-mono"
+              className="w-full border border-gray-200 dark:border-gray-800 rounded-lg px-4 py-3 text-sm h-36 focus:outline-none focus:ring-2 focus:ring-brand resize-none font-mono"
               placeholder={"student1@school.com\nstudent2@school.com\nstudent3@school.com"}
             />
 
@@ -1881,8 +1881,8 @@ function DashboardInner() {
               <div className="mt-3 space-y-1.5">
                 {/* Over 50-email bulk cap */}
                 {overBulkLimit && (
-                  <div className="flex items-start gap-1.5 text-xs text-red-700">
-                    <AlertTriangle className="h-3.5 w-3.5 text-red-500 flex-shrink-0 mt-0.5" />
+                  <div className="flex items-start gap-1.5 text-xs text-red-700 dark:text-red-300">
+                    <AlertTriangle className="h-3.5 w-3.5 text-red-500 dark:text-red-400 flex-shrink-0 mt-0.5" />
                     <span>
                       Too many emails — max {MAX_BULK_INVITE} per batch. You have {parsedEmails.length}. Remove some and invite in batches.
                     </span>
@@ -1891,27 +1891,27 @@ function DashboardInner() {
 
                 {/* Valid count */}
                 {!overBulkLimit && (
-                  <div className="flex items-center gap-1.5 text-xs text-green-700">
-                    <CheckCircle2 className="h-3.5 w-3.5 text-green-500 flex-shrink-0" />
+                  <div className="flex items-center gap-1.5 text-xs text-green-700 dark:text-green-300">
+                    <CheckCircle2 className="h-3.5 w-3.5 text-green-500 dark:text-green-400 flex-shrink-0" />
                     {newEmailCount} valid email{newEmailCount !== 1 ? "s" : ""} ready to invite
                   </div>
                 )}
 
                 {/* Duplicates */}
                 {duplicateEmails.length > 0 && (
-                  <div className="flex items-start gap-1.5 text-xs text-amber-700">
-                    <AlertTriangle className="h-3.5 w-3.5 text-amber-500 flex-shrink-0 mt-0.5" />
+                  <div className="flex items-start gap-1.5 text-xs text-amber-700 dark:text-amber-300">
+                    <AlertTriangle className="h-3.5 w-3.5 text-amber-500 dark:text-amber-400 flex-shrink-0 mt-0.5" />
                     <span>
                       {duplicateEmails.length} already enrolled (will be skipped):{" "}
-                      <span className="text-amber-600">{duplicateEmails.join(", ")}</span>
+                      <span className="text-amber-600 dark:text-amber-400">{duplicateEmails.join(", ")}</span>
                     </span>
                   </div>
                 )}
 
                 {/* Over seat limit */}
                 {overSeatLimit && (
-                  <div className="flex items-start gap-1.5 text-xs text-red-700">
-                    <AlertTriangle className="h-3.5 w-3.5 text-red-500 flex-shrink-0 mt-0.5" />
+                  <div className="flex items-start gap-1.5 text-xs text-red-700 dark:text-red-300">
+                    <AlertTriangle className="h-3.5 w-3.5 text-red-500 dark:text-red-400 flex-shrink-0 mt-0.5" />
                     <span>
                       Only {seatsRemaining} seat{seatsRemaining !== 1 ? "s" : ""} available.
                       Upgrade your plan to add all {newEmailCount} students.

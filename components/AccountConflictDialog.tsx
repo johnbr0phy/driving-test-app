@@ -42,7 +42,7 @@ export function AccountConflictDialog({
           </DialogDescription>
         </DialogHeader>
         <div className="py-4">
-          <p className="text-sm text-gray-600">
+          <p className="text-sm text-gray-600 dark:text-gray-300">
             {t("accountConflict.wouldYouLikeToLogIn")}
           </p>
         </div>
@@ -56,7 +56,7 @@ export function AccountConflictDialog({
           </Button>
           <Button
             onClick={onUseExisting}
-            className="flex-1 sm:flex-none bg-black text-white hover:bg-gray-800"
+            className="flex-1 sm:flex-none bg-black dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200"
           >
             {t("accountConflict.logInToExisting")}
           </Button>

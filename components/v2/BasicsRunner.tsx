@@ -47,8 +47,9 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
   const [ruleOpen, setRuleOpen] = useState(false);
   const [ruleEli5, setRuleEli5] = useState(false);
   const [another, setAnother] = useState(false);
-  // The explainer overlay after a miss, and whether the learn/review screen shows the text card instead of the video.
-  const [explainer, setExplainer] = useState(false);
+  // The explainer overlay on the question screen (after a miss, or from the Rule button), and whether the
+  // learn/review screen shows the text card instead of the video.
+  const [explainer, setExplainer] = useState<null | "miss" | "rule">(null);
   const [readMode, setReadMode] = useState(false);
 
   useEffect(() => {
@@ -62,7 +63,7 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
     setCurrent(null);
     setPicked(null);
     setAnother(false);
-    setExplainer(false);
+    setExplainer(null);
     setReadMode(false);
   }, [skillIdParam]);
 
@@ -120,9 +121,15 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
   };
 
   const explainable = hasExplainer(skill);
-  const openExplainer = () => setExplainer(true);
-  const closeExplainer = () => setExplainer(false);
-  const overlay = explainer ? <BasicsExplainer exam={exam} skill={skill} doneLabel="Try it again" onDone={closeExplainer} onClose={closeExplainer} /> : null;
+  const closeExplainer = () => setExplainer(null);
+  const openRuleSheet = () => {
+    closeExplainer();
+    setRuleOpen(true);
+  };
+  // "Read it" on the overlay drops into the text sheet, so the words are never more than a tap away.
+  const overlay = explainer ? (
+    <BasicsExplainer exam={exam} skill={skill} doneLabel={explainer === "miss" ? "Try it again" : "Back to the question"} onDone={closeExplainer} onClose={closeExplainer} onRead={openRuleSheet} />
+  ) : null;
   // On the text card, the way back to the video.
   const watchButton = explainable ? (
     <button type="button" onClick={() => setReadMode(false)} className="flex items-center gap-1.5 self-start text-[15px] font-semibold text-brand">
@@ -218,8 +225,8 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
             <div className="truncate text-sm font-bold">{skill.name}</div>
             <div className="text-xs text-gray-500 dark:text-gray-400">{run.mastered.length} of {total} right{comingBack ? ` · ${comingBack} coming back` : ""}</div>
           </div>
-          <button type="button" onClick={() => setRuleOpen(true)} className="rounded-full border-2 border-gray-200 px-3 py-1.5 text-sm font-semibold text-brand">
-            Rule
+          <button type="button" onClick={() => (explainable ? setExplainer("rule") : setRuleOpen(true))} className="flex items-center gap-1.5 rounded-full border-2 border-gray-200 px-3 py-1.5 text-sm font-semibold text-brand">
+            {explainable && <Play className="h-4 w-4" />} Rule
           </button>
         </div>
         <div className="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-gray-200 dark:bg-gray-700">
@@ -262,7 +269,7 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
                   <>
                     <p className="text-sm text-gray-800 dark:text-gray-100"><b>The trick:</b> {skill.trick}</p>
                     {explainable && (
-                      <button type="button" onClick={openExplainer} className="v2-tap mt-1 flex items-center justify-center gap-2 self-start rounded-xl bg-white dark:bg-gray-900 px-4 text-[15px] font-bold text-brand shadow-sm">
+                      <button type="button" onClick={() => setExplainer("miss")} className="v2-tap mt-1 flex items-center justify-center gap-2 self-start rounded-xl bg-white dark:bg-gray-900 px-4 text-[15px] font-bold text-brand shadow-sm">
                         <Play className="h-4 w-4" /> Watch the explainer · 30 seconds
                       </button>
                     )}
@@ -291,6 +298,18 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
         <div className="fixed inset-0 z-[90] flex items-end justify-center bg-black/50" role="dialog" aria-modal="true" aria-label="The rule" onClick={closeRule}>
           <div className="v2-pop max-h-[85%] w-full max-w-2xl overflow-y-auto rounded-t-2xl bg-white dark:bg-gray-900 p-4" onClick={(e) => e.stopPropagation()}>
             <div className="flex flex-col gap-5">
+              {explainable && (
+                <button
+                  type="button"
+                  onClick={() => {
+                    closeRule();
+                    setExplainer("rule");
+                  }}
+                  className="flex items-center gap-1.5 self-start text-[15px] font-semibold text-brand"
+                >
+                  <Play className="h-4 w-4" /> Listen instead · 30 seconds
+                </button>
+              )}
               <RuleCard skill={skill} />
               <Eli5Toggle skill={skill} open={ruleEli5} onOpen={() => setRuleEli5(true)} />
             </div>

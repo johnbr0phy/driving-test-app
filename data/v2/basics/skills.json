@@ -138,6 +138,16 @@
       { "kind": "eg", "text": "It rained all day. Therefore, the game was canceled.", "note": "Cause: rain led to canceled." }
     ],
     "another": { "text": "Transition words are road signs. \"But\" and \"however\" mean turn around, the next thing is the opposite. \"So\" and \"therefore\" mean keep going, this happened because of that. \"Also\" and \"for example\" mean more of the same.", "example": "It rained. ___ we stayed inside.\nSame direction, because of the rain → So we stayed inside." },
+    "walkthrough": {
+      "board": "It rained all day. ___, the game went on.",
+      "steps": [
+        { "say": "A transition word is a road sign between two sentences: the opposite, because of that, or more of the same." },
+        { "ask": "Rain all day, and the game went on anyway. Do the two sentences pull the same way or opposite ways?", "options": ["Opposite", "The same way"], "answer": 0, "then": "Rain should stop a game. It didn't. That is a contrast.", "line": "Rain vs the game went on → contrast" },
+        { "ask": "Which word fits the blank?", "options": ["However", "Therefore"], "answer": 0, "then": "However means turn around, the opposite happened.", "hint": "Contrast word.", "line": "However, the game went on." },
+        { "ask": "Now: 'It rained all day. ___, the game was canceled.' Which word?", "options": ["Therefore", "However"], "answer": 0, "then": "The rain caused the cancellation. Therefore means because of that.", "hint": "Did the first sentence cause the second?", "line": "Rain caused the cancel → Therefore" },
+        { "say": "Three signs to know: However (the opposite), Therefore (because of that), For example (here is one). Always read the sentence before and the sentence after." }
+      ]
+    },
     "questions": [
       { "blank": "The trail was steep. __, we reached the top before noon.", "options": ["However", "Therefore"], "answer": 0, "why": "Steep trail vs reaching the top early. They pull in different directions, so a contrast word." },
       { "blank": "He forgot his lunch. __, he was hungry all afternoon.", "options": ["However", "As a result"], "answer": 1, "why": "Forgetting lunch caused the hunger. Result word." }
@@ -154,6 +164,17 @@
       { "kind": "eg", "text": "Cost = 40 + 12m", "note": "$40 to start, then $12 more each month." }
     ],
     "another": { "text": "Think of a piggy bank. You start with some money. Every week you drop in the same amount. The money you started with is b. The amount each week is the slope, because it's how fast the bank grows.", "example": "Start with $40. Add $12 every week.\nAfter w weeks: 12w + 40" },
+    "walkthrough": {
+      "board": "y = 3x + 5",
+      "kind": "math",
+      "steps": [
+        { "say": "y = mx + b has two numbers. One is stuck to x. One is on its own. They mean different things." },
+        { "ask": "Which number is stuck to x?", "options": ["3", "5"], "answer": 0, "then": "3 is multiplied by x. That is the slope: y goes up 3 every time x goes up 1.", "hint": "Look for the number right next to the x.", "line": "Slope = 3 (stuck to x)" },
+        { "ask": "Which number is on its own?", "options": ["3", "5"], "answer": 1, "then": "5 has no x. That is the start: y = 5 when x = 0.", "line": "Start = 5 (on its own)" },
+        { "ask": "In words now: Cost = 40 + 12m for m months. What do you pay every month?", "options": ["$40", "$12"], "answer": 1, "then": "12 is stuck to m, the months. 40 is a one-time start fee.", "hint": "Which number is stuck to m?", "line": "40 + 12m: start $40, then $12 a month" },
+        { "say": "That is the whole skill. Stuck to x: the slope, the change each step. On its own: the start." }
+      ]
+    },
     "questions": [
       { "stem": "What is the slope of y = 4x − 7?", "options": ["4", "−7", "7"], "answer": 0, "why": "4 is attached to x, so it's the slope." },
       { "stem": "A gym costs C = 25 + 10m dollars for m months. What does 25 mean?", "options": ["The cost each month", "The sign-up fee", "The total after a year"], "answer": 1, "why": "25 is the number by itself, so it's the start: what you pay before any months." }
@@ -170,6 +191,17 @@
       { "kind": "eg", "text": "x − 6 = 10", "note": "Add 6: x = 16." }
     ],
     "another": { "text": "x is a present wrapped in layers. 3x + 4 means someone wrapped x in \"times 3,\" then in \"plus 4.\" Unwrap the outside layer first: take away the 4. Then take off the 3. Whatever you do to one side, do to the other side too.", "example": "2x + 5 = 11\nTake the +5 off both sides → 2x = 6\nTake the ×2 off both sides → x = 3" },
+    "walkthrough": {
+      "board": "3x + 4 = 19",
+      "kind": "math",
+      "steps": [
+        { "say": "Something was done to x: it was multiplied by 3, then 4 was added. To find x, undo those in reverse order." },
+        { "ask": "Which do you undo first?", "options": ["The + 4", "The × 3"], "answer": 0, "then": "Clear the loose number first. Subtract 4 from both sides.", "hint": "The last thing done to x was adding 4. Undo that first.", "line": "3x + 4 − 4 = 19 − 4" },
+        { "ask": "19 − 4 = ?", "options": ["15", "23"], "answer": 0, "then": "Now it reads 3x = 15.", "line": "3x = 15" },
+        { "ask": "How do you undo × 3?", "options": ["Divide by 3", "Subtract 3"], "answer": 0, "then": "Divide both sides by 3.", "hint": "Undo multiplying with dividing.", "line": "x = 15 ÷ 3 = 5" },
+        { "ask": "Check it. 3(5) + 4 = ?", "options": ["19", "15"], "answer": 0, "then": "19. It matches the original, so x = 5 is right.", "line": "Check: 3·5 + 4 = 19 ✓" }
+      ]
+    },
     "questions": [
       { "stem": "2x + 3 = 11. What is x?", "options": ["7", "4", "5"], "answer": 1, "why": "Subtract 3: 2x = 8. Divide by 2: x = 4." },
       { "stem": "x/3 = 9. What is x?", "options": ["3", "12", "27"], "answer": 2, "why": "Undo the ÷3 by multiplying both sides by 3: x = 27." }
@@ -186,6 +218,17 @@
       { "kind": "bad", "text": "Try (5, 2) for the same system", "note": "5 + 2 = 7 ✓ but 5 − 2 = 3 ✗. Not the solution." }
     ],
     "another": { "text": "Draw two straight roads on paper. Where do they cross? Usually in exactly one spot. That spot is the answer. If the roads never touch, there's no answer. If they're the same road, every spot works.", "example": "Two roads cross once → one answer\nTwo roads side by side forever → no answer\nOne road drawn twice → every point is an answer" },
+    "walkthrough": {
+      "board": "x + y = 7  and  x − y = 1",
+      "kind": "math",
+      "steps": [
+        { "say": "A system is two equations. The solution is the one (x, y) pair that works in both of them." },
+        { "ask": "Try (5, 2). Does 5 + 2 = 7?", "options": ["Yes", "No"], "answer": 0, "then": "The first equation passes.", "line": "(5, 2): 5 + 2 = 7 ✓" },
+        { "ask": "Now the second one. Does 5 − 2 = 1?", "options": ["No", "Yes"], "answer": 0, "then": "5 − 2 = 3, not 1. One failure and (5, 2) is out.", "hint": "5 − 2 = 3.", "line": "(5, 2): 5 − 2 = 3 ✗ out" },
+        { "ask": "Try (4, 3). Does it pass both?", "options": ["Yes: 4 + 3 = 7 and 4 − 3 = 1", "No: 4 − 3 is not 1"], "answer": 0, "then": "Both work, so (4, 3) is the solution.", "hint": "4 − 3 = 1. Check both.", "line": "(4, 3): 4 + 3 = 7 ✓, 4 − 3 = 1 ✓" },
+        { "say": "On a graph, (4, 3) is where the two lines cross. Same idea: the one point that is on both lines." }
+      ]
+    },
     "questions": [
       { "stem": "Which pair solves x + y = 10 and x − y = 4?", "options": ["(7, 3)", "(5, 5)", "(6, 4)"], "answer": 0, "why": "7 + 3 = 10 ✓ and 7 − 3 = 4 ✓. (5, 5) and (6, 4) pass the first equation but fail the second." },
       { "stem": "Two lines cross at (2, 5). What is the solution to that system?", "options": ["x = 5, y = 2", "x = 2, y = 5", "There is no solution"], "answer": 1, "why": "The crossing point is the solution. The first number is x, the second is y." }
@@ -202,6 +245,17 @@
       { "kind": "eg", "text": "−2x > 6 → x < −3", "note": "Divided by −2, so the sign flipped." }
     ],
     "another": { "text": "Picture a seesaw with one side up high. Multiplying by a negative flips the whole seesaw over, so the high side becomes the low side. That's why the > sign has to flip too.", "example": "−x > 3\nMultiply both sides by −1 and flip: x < −3\nCheck: x = −4 → −(−4) = 4, and 4 > 3 ✓" },
+    "walkthrough": {
+      "board": "−2x > 6",
+      "kind": "math",
+      "steps": [
+        { "say": "Solve it like an equation, with one extra rule about negatives." },
+        { "ask": "What undoes × (−2)?", "options": ["Divide by −2", "Add 2"], "answer": 0, "then": "Divide both sides by −2.", "line": "−2x ÷ (−2) > 6 ÷ (−2)" },
+        { "ask": "You divided by a negative. What happens to the > sign?", "options": ["It flips to <", "Nothing"], "answer": 0, "then": "Multiplying or dividing by a negative flips the sign. That is the one extra rule.", "hint": "This is the extra rule.", "line": "x < −3 (sign flipped)" },
+        { "ask": "Check with x = −5, which is less than −3. −2(−5) = 10. Is 10 > 6?", "options": ["Yes", "No"], "answer": 0, "then": "It works, so x < −3 is right.", "line": "Check x = −5: 10 > 6 ✓" },
+        { "ask": "Now x + 2 > 5. You subtract 2 from both sides. Does the sign flip?", "options": ["No", "Yes"], "answer": 0, "then": "Only a negative multiply or divide flips it. Subtracting never does. x > 3.", "hint": "You only subtracted.", "line": "x + 2 > 5 → x > 3 (no flip)" }
+      ]
+    },
     "questions": [
       { "stem": "Solve −3x < 12.", "options": ["x < −4", "x > −4", "x < 4"], "answer": 1, "why": "Divide by −3 and flip the sign: x > −4. Check x = 0: −3(0) = 0 < 12 ✓." },
       { "stem": "Solve 2x + 1 > 7.", "options": ["x > 3", "x < 3", "x > 4"], "answer": 0, "why": "Subtract 1: 2x > 6. Divide by positive 2: x > 3. No flip." }
@@ -218,6 +272,17 @@
       { "kind": "eg", "text": "Price goes up 10%", "note": "Multiply by 1.10" }
     ],
     "another": { "text": "Percent means \"out of 100 pieces.\" Pretend the number is a pizza cut into 100 tiny slices. 25% is 25 of those slices. 10% is the easy one: move the decimal point one spot left. Build the rest from that.", "example": "10% of 80 = 8\n20% = two of those = 16\n5% = half of one = 4" },
+    "walkthrough": {
+      "board": "30% of 50",
+      "kind": "math",
+      "steps": [
+        { "say": "Percent means out of 100. 30% is 30 out of every 100." },
+        { "ask": "Turn 30% into a decimal.", "options": ["0.30", "3.0", "30"], "answer": 0, "then": "Move the decimal two places left: 30% is 0.30.", "hint": "Two places to the left.", "line": "30% = 0.30" },
+        { "ask": "0.30 × 50 = ?", "options": ["15", "20", "1.5"], "answer": 0, "then": "15. That is 30% of 50.", "line": "0.30 × 50 = 15" },
+        { "ask": "A $20 shirt goes up 10%. What is 10% of 20?", "options": ["$2", "$10", "$0.20"], "answer": 0, "then": "0.10 × 20 = 2.", "hint": "Move the decimal: 10% is 0.10.", "line": "10% of 20 = 2" },
+        { "ask": "So the new price is?", "options": ["$22", "$18", "$30"], "answer": 0, "then": "Up means add it on: 20 + 2 = 22. Same as 20 × 1.10 in one go.", "line": "New price: 20 + 2 = $22" }
+      ]
+    },
     "questions": [
       { "stem": "What is 25% of 40?", "options": ["4", "10", "25"], "answer": 1, "why": "0.25 × 40 = 10. Or: 25% is a quarter, and a quarter of 40 is 10." },
       { "stem": "A $20 shirt goes up 10%. What's the new price?", "options": ["$21", "$30", "$22"], "answer": 2, "why": "10% of 20 is 2. Then 20 + 2 = 22. Same as 20 × 1.10." }
@@ -234,6 +299,16 @@
       { "kind": "eg", "text": "60 miles in 1 hour. How far in 4 hours?", "note": "1 → 4 is ×4, so 60 → 240 miles." }
     ],
     "another": { "text": "Find out what one costs, or what one does. Then multiply. If 4 cookies cost $2, one cookie costs 50 cents. Want 10 cookies? 10 times 50 cents.", "example": "4 cookies → $2\n1 cookie → $0.50\n10 cookies → $5" },
+    "walkthrough": {
+      "board": "2 cups of flour for 3 eggs. How much flour for 9 eggs?",
+      "kind": "text",
+      "steps": [
+        { "say": "A ratio scales. Whatever you multiply one side by, you multiply the other side by the same thing." },
+        { "ask": "3 eggs became 9 eggs. What did you multiply by?", "options": ["× 3", "× 6", "+ 6"], "answer": 0, "then": "3 × 3 = 9.", "hint": "3 times what is 9?", "line": "Eggs: 3 → 9 is × 3" },
+        { "ask": "So the flour gets multiplied by?", "options": ["× 3", "× 6"], "answer": 0, "then": "Same number, both sides. 2 × 3 = 6 cups.", "line": "Flour: 2 × 3 = 6 cups" },
+        { "ask": "Try a rate. 60 miles in 1 hour. How far in 4 hours?", "options": ["240 miles", "64 miles", "15 miles"], "answer": 0, "then": "1 → 4 is × 4, so 60 → 240.", "hint": "What did you multiply the hours by?", "line": "60 × 4 = 240 miles" }
+      ]
+    },
     "questions": [
       { "stem": "A recipe uses 3 apples for 2 pies. How many apples for 6 pies?", "options": ["6", "9", "12"], "answer": 1, "why": "2 → 6 pies is ×3. So 3 → 9 apples." },
       { "stem": "A car goes 150 miles on 5 gallons. How far on 1 gallon?", "options": ["30 miles", "50 miles", "145 miles"], "answer": 0, "why": "150 ÷ 5 = 30 miles per gallon." }
@@ -250,6 +325,17 @@
       { "kind": "eg", "text": "180 minutes to hours", "note": "Bigger unit, fewer of them: 180 ÷ 60 = 3 hours." }
     ],
     "another": { "text": "Think about how many of the small thing fit in the big thing. 60 minutes fit in 1 hour. Going from hours to minutes, you end up with more pieces, so multiply. Going from minutes to hours, you end up with fewer pieces, so divide.", "example": "2 hours → minutes: 2 × 60 = 120 minutes\n180 minutes → hours: 180 ÷ 60 = 3 hours" },
+    "walkthrough": {
+      "board": "3 feet → inches",
+      "kind": "math",
+      "steps": [
+        { "say": "Before any math, ask one question: will I end up with more or fewer?" },
+        { "ask": "Inches are smaller than feet. Is 3 feet more than 3 inches, or fewer?", "options": ["More", "Fewer"], "answer": 0, "then": "A smaller unit means more of them.", "line": "Smaller unit → more of them" },
+        { "ask": "There are 12 inches in a foot. So:", "options": ["3 × 12 = 36", "3 ÷ 12 = 0.25"], "answer": 0, "then": "More, so multiply. 36 inches.", "hint": "You said more, so multiply.", "line": "3 × 12 = 36 inches" },
+        { "ask": "180 minutes to hours. Hours are bigger. More or fewer?", "options": ["Fewer", "More"], "answer": 0, "then": "A bigger unit means fewer of them. Divide.", "line": "Bigger unit → fewer of them" },
+        { "ask": "180 ÷ 60 = ?", "options": ["3", "10,800"], "answer": 0, "then": "3 hours.", "hint": "Fewer, so divide.", "line": "180 ÷ 60 = 3 hours" }
+      ]
+    },
     "questions": [
       { "stem": "How many minutes are in 2 hours?", "options": ["60", "120", "200"], "answer": 1, "why": "Minutes are smaller, so more of them: 2 × 60 = 120." },
       { "stem": "How many feet are in 48 inches?", "options": ["4", "12", "576"], "answer": 0, "why": "Feet are bigger, so fewer of them: 48 ÷ 12 = 4." }
@@ -266,6 +352,18 @@
       { "kind": "eg", "text": "2, 4, 10, 100", "note": "Mean: 116 ÷ 4 = 29. Median: between 4 and 10 = 7." }
     ],
     "another": { "text": "Mean is \"share it out evenly.\" Five kids pool their candy and split it equally; what each kid gets is the mean. Median is \"line up and pick the middle kid.\" One kid with a giant bag changes the sharing a lot but doesn't change who's in the middle.", "example": "Candies: 2, 3, 4, 5, 6 → mean 4, median 4\nSwap the 6 for 100 → mean 22.8, median still 4" },
+    "walkthrough": {
+      "board": "3, 7, 5",
+      "kind": "math",
+      "steps": [
+        { "say": "Two kinds of average. Mean: add them up and divide. Median: sort them and take the middle." },
+        { "ask": "Mean first. 3 + 7 + 5 = ?", "options": ["15", "12"], "answer": 0, "then": "Now divide by how many numbers there are: 3.", "line": "Sum: 15" },
+        { "ask": "15 ÷ 3 = ?", "options": ["5", "15"], "answer": 0, "then": "Mean = 5.", "line": "Mean = 15 ÷ 3 = 5" },
+        { "ask": "Median. What is the first move?", "options": ["Sort them", "Add them"], "answer": 0, "then": "Always sort first: 3, 5, 7.", "hint": "Median means middle, and you can't find the middle of a jumble.", "line": "Sorted: 3, 5, 7" },
+        { "ask": "The middle number is?", "options": ["5", "3", "7"], "answer": 0, "then": "Median = 5.", "line": "Median = 5" },
+        { "ask": "Even count: 2, 4, 10, 100. The median is halfway between which two?", "options": ["4 and 10", "2 and 100"], "answer": 0, "then": "The two middle ones. Halfway between 4 and 10 is 7. The 100 barely matters, which is exactly why median is used.", "hint": "Sort, then find the two in the middle.", "line": "2, 4, 10, 100 → median 7" }
+      ]
+    },
     "questions": [
       { "stem": "What is the mean of 4, 8, and 12?", "options": ["8", "12", "24"], "answer": 0, "why": "4 + 8 + 12 = 24. Divide by 3: 8." },
       { "stem": "What is the median of 9, 2, 7?", "options": ["2", "9", "7"], "answer": 2, "why": "Sort first: 2, 7, 9. The middle number is 7." }
@@ -282,6 +380,17 @@
       { "kind": "eg", "text": "Longest side 13, one leg 5. Other leg?", "note": "25 + b² = 169, so b² = 144, b = 12." }
     ],
     "another": { "text": "Draw a square on each side of a right triangle. The two small squares together have exactly as much room as the big square. That's all a² + b² = c² says.", "example": "Short sides 3 and 4: squares of 9 and 16, together 25.\nThe big square is 25, so the long side is 5." },
+    "walkthrough": {
+      "board": "Right triangle. Legs 3 and 4. Longest side?",
+      "kind": "text",
+      "steps": [
+        { "say": "In a right triangle, a² + b² = c². The two legs are a and b. The longest side, across from the right angle, is c, and it sits alone." },
+        { "ask": "3² + 4² = ?", "options": ["9 + 16 = 25", "6 + 8 = 14"], "answer": 0, "then": "Square each leg, then add.", "hint": "Square means times itself: 3 × 3.", "line": "3² + 4² = 9 + 16 = 25" },
+        { "ask": "c² = 25. So c = ?", "options": ["5", "12.5", "25"], "answer": 0, "then": "The square root of 25 is 5.", "hint": "What times itself is 25?", "line": "c = √25 = 5" },
+        { "ask": "New triangle: longest side 13, one leg 5. Where does 13 go?", "options": ["Alone: 5² + b² = 13²", "With the 5: 5² + 13² = b²"], "answer": 0, "then": "The longest side is always c, always alone.", "hint": "Longest side = c.", "line": "5² + b² = 13²" },
+        { "ask": "25 + b² = 169. So b² = ?", "options": ["144", "194"], "answer": 0, "then": "169 − 25 = 144, and √144 = 12.", "hint": "Subtract 25 from both sides.", "line": "b² = 144, b = 12" }
+      ]
+    },
     "questions": [
       { "stem": "A right triangle has legs 6 and 8. How long is the longest side?", "options": ["10", "14", "48"], "answer": 0, "why": "36 + 64 = 100. √100 = 10. It's 3-4-5 doubled." },
       { "stem": "The longest side is 10 and one leg is 6. How long is the other leg?", "options": ["4", "8", "16"], "answer": 1, "why": "36 + b² = 100, so b² = 64 and b = 8. The longest side goes alone." }
@@ -298,6 +407,17 @@
       { "kind": "eg", "text": "Right triangle with a 30° angle", "note": "The right angle is 90. 90 + 30 = 120. 180 − 120 = 60°." }
     ],
     "another": { "text": "Cut a paper triangle into its three corners. Push the corners together, points touching. They always make a perfectly straight line. A straight line is 180°, so the three corners always add up to 180°.", "example": "Two corners are 60° and 70°.\n60 + 70 = 130, so the last corner is 180 − 130 = 50°." },
+    "walkthrough": {
+      "board": "Triangle with angles 60° and 70°. Third angle?",
+      "kind": "text",
+      "steps": [
+        { "say": "The three angles in any triangle add to 180°. Know two, find the third." },
+        { "ask": "60 + 70 = ?", "options": ["130", "120"], "answer": 0, "line": "60 + 70 = 130" },
+        { "ask": "180 − 130 = ?", "options": ["50", "70"], "answer": 0, "then": "The third angle is 50°.", "line": "180 − 130 = 50°" },
+        { "ask": "A right triangle has a 30° angle. What is the right angle worth?", "options": ["90°", "45°"], "answer": 0, "then": "90 + 30 = 120, and 180 − 120 = 60°.", "hint": "A right angle is the square corner.", "line": "90 + 30 = 120 → 180 − 120 = 60°" },
+        { "ask": "Two angles sit next to each other on a straight line. One is 110°. The other?", "options": ["70°", "250°"], "answer": 0, "then": "A straight line is 180° too. 180 − 110 = 70.", "hint": "A straight line is also 180.", "line": "Straight line: 180 − 110 = 70°" }
+      ]
+    },
     "questions": [
       { "stem": "A triangle has angles of 50° and 60°. What is the third angle?", "options": ["70°", "80°", "110°"], "answer": 0, "why": "50 + 60 = 110. 180 − 110 = 70." },
       { "stem": "Two angles sit next to each other on a straight line. One is 110°. What is the other?", "options": ["110°", "70°", "250°"], "answer": 1, "why": "A straight line is 180. 180 − 110 = 70." }
@@ -310,8 +430,19 @@
     "rule": "Find the row, find the column, read where they meet. Then read down a column: do the numbers go up, go down, or both?",
     "trick": "Most ACT Science answers are sitting in the table. You almost never need to know the science.",
     "table": { "head": ["Water temp (°C)", "Sugar dissolved (g)"], "rows": [["20", "200"], ["40", "240"], ["60", "290"], ["80", "360"]] },
-    "examples": [{ "kind": "eg", "text": "At 60 °C, how much sugar dissolved?", "note": "Row 60, column Sugar → 290 g" }],
+    "examples": [
+      { "kind": "eg", "text": "At 60 °C, how much sugar dissolved?", "note": "Row 60, column Sugar → 290 g" }
+    ],
     "another": { "text": "A table is like a seating chart. Rows are the people, columns are what we know about them. Put one finger on the row and one finger on the column, then slide them together. Where the fingers meet is your number.", "example": "Row: Tuesday. Column: Rain.\nFingers meet at 2 inches. That's Tuesday's rain." },
+    "walkthrough": {
+      "table": true,
+      "steps": [
+        { "say": "Find the row, find the column, read where they meet. You almost never need to know the science." },
+        { "ask": "At 60 °C, how much sugar dissolved? Which row?", "options": ["The 60 row", "The 40 row"], "answer": 0, "line": "Row: 60 °C" },
+        { "ask": "Slide across to the Sugar column. The value is?", "options": ["290 g", "240 g", "360 g"], "answer": 0, "hint": "Same row as 60.", "line": "60 °C → 290 g" },
+        { "ask": "Now read down the Sugar column: 200, 240, 290, 360. The trend?", "options": ["Goes up", "Goes down", "Up, then down"], "answer": 0, "then": "Hotter water, more sugar dissolves. Up in every row.", "line": "Trend: sugar goes up as temperature goes up" }
+      ]
+    },
     "questions": [
       { "stem": "At 40 °C, how much sugar dissolved?", "options": ["240 g", "200 g", "290 g"], "answer": 0, "why": "Row 40, slide across to Sugar: 240 g." },
       { "stem": "As the water gets hotter, the sugar dissolved:", "options": ["Decreases", "Increases", "Stays the same"], "answer": 1, "why": "Read down the column: 200, 240, 290, 360. It goes up every time." }
@@ -329,6 +460,16 @@
       { "kind": "eg", "text": "Height at 40 minutes?", "note": "Goes up 2 every 10 min, so 12 cm." }
     ],
     "another": { "text": "If a plant is 4 inches tall on Monday and 6 inches on Wednesday, it was probably about 5 inches on Tuesday. Nobody measured it, but it had to pass 5 to get there. Tables work the same way: in-between times get in-between numbers.", "example": "Monday 4 in., Wednesday 6 in. → Tuesday about 5 in.\nFriday? Keep growing 1 inch a day → about 8 in." },
+    "walkthrough": {
+      "table": true,
+      "steps": [
+        { "say": "Two kinds of question: a value between two rows, and a value past the last row." },
+        { "ask": "Height at 15 minutes. 15 sits between which rows?", "options": ["10 and 20", "0 and 10"], "answer": 0, "line": "15 min is between 10 and 20" },
+        { "ask": "Those rows read 6 cm and 8 cm. So at 15 minutes the height is about?", "options": ["7 cm", "9 cm", "6 cm"], "answer": 0, "then": "Between the two results.", "hint": "Between 6 and 8.", "line": "Between 6 and 8 → about 7 cm" },
+        { "ask": "Height at 40 minutes, past the table. What does the height do every 10 minutes?", "options": ["Goes up 2 cm", "Doubles"], "answer": 0, "then": "4, 6, 8, 10: plus 2 each row.", "hint": "4 → 6 → 8 → 10.", "line": "+2 cm every 10 min" },
+        { "ask": "So at 40 minutes?", "options": ["12 cm", "14 cm", "10 cm"], "answer": 0, "then": "Keep the pattern going one more step past 30 → 10.", "hint": "One more step of +2.", "line": "40 min → 12 cm" }
+      ]
+    },
     "questions": [
       { "stem": "What was the plant's height at 25 minutes?", "options": ["About 9 cm", "About 11 cm", "About 8 cm"], "answer": 0, "why": "25 is between 20 and 30, so the height is between 8 and 10. About 9." },
       { "stem": "If the pattern continues, what will the height be at 50 minutes?", "options": ["12 cm", "14 cm", "20 cm"], "answer": 1, "why": "It adds 2 cm every 10 minutes. 30 → 40 → 50 min is 10 → 12 → 14 cm." }
@@ -340,8 +481,19 @@
     "sub": "What was changed, what was measured",
     "rule": "The independent variable is what the scientist changes on purpose. The dependent variable is what they measure. Everything else stays the same.",
     "trick": "Changed = independent. Measured = dependent. In a table, the first column is usually what was changed.",
-    "examples": [{ "kind": "eg", "text": "Change the light, measure plant height", "note": "Light is independent. Height is dependent." }],
+    "examples": [
+      { "kind": "eg", "text": "Change the light, measure plant height", "note": "Light is independent. Height is dependent." }
+    ],
     "another": { "text": "Think of a cookie experiment. You decide how long to bake each batch. That's the independent variable, because you picked it. Then you see how brown the cookies get. That's the dependent variable, because it depends on what you picked.", "example": "You picked: 8, 10, or 12 minutes\nYou watched: how brown they got" },
+    "walkthrough": {
+      "board": "A student gives plants different amounts of light and measures how tall they grow.",
+      "steps": [
+        { "say": "Two variables in every experiment: the one the scientist changes on purpose, and the one they measure." },
+        { "ask": "What did the student change on purpose?", "options": ["Amount of light", "Plant height"], "answer": 0, "then": "They chose the light levels before starting. Changed = independent variable.", "hint": "Which one did the student decide in advance?", "line": "Changed: light → independent" },
+        { "ask": "What did they measure?", "options": ["Plant height", "Amount of light"], "answer": 0, "then": "Measured = dependent variable. It depends on the light.", "line": "Measured: height → dependent" },
+        { "ask": "In a results table, which one is usually the first column?", "options": ["What was changed (light)", "What was measured (height)"], "answer": 0, "then": "The first column is what they set. What they measured comes after.", "line": "Table: first column = what was changed" }
+      ]
+    },
     "questions": [
       { "stem": "A student gives plants different amounts of light and measures how tall they grow. What was changed on purpose?", "options": ["Plant height", "Amount of light", "Type of plant"], "answer": 1, "why": "The student chose the light amounts before starting. That's the independent variable." },
       { "stem": "A scientist drops balls from different heights and times how long they take to land. The dependent variable is:", "options": ["Drop height", "Time to land", "Ball color"], "answer": 1, "why": "Time is what the scientist measured. Height is what they changed." }
@@ -358,6 +510,15 @@
       { "kind": "eg", "text": "Testing a medicine", "note": "The group that gets a sugar pill is the control." }
     ],
     "another": { "text": "Say you give your plant magic juice and it grows. Was it the juice, or would it have grown anyway? The control is a second plant that gets plain water. If both plants grow the same, the juice did nothing.", "example": "Plain-water plant grew 3 cm. Magic-juice plant grew 3 cm.\nThe juice did nothing." },
+    "walkthrough": {
+      "board": "Testing a fertilizer. Group A gets 0 g, Group B gets 5 g, Group C gets 10 g.",
+      "steps": [
+        { "say": "A control is the group that gets nothing. It shows what happens on its own, so you can tell whether the treatment did anything." },
+        { "ask": "Which group is the control?", "options": ["Group A (0 g)", "Group C (10 g)"], "answer": 0, "then": "Zero, none, plain water: that is the control.", "hint": "Look for the zero.", "line": "Control = Group A, 0 g" },
+        { "ask": "Group B grew 5 cm. Group A also grew 5 cm. Did 5 g of fertilizer work?", "options": ["No, same growth as nothing", "Yes, it grew 5 cm"], "answer": 0, "then": "Plants grow 5 cm anyway. The fertilizer added nothing.", "hint": "Compare it to the control.", "line": "B = control → no effect" },
+        { "ask": "Group C grew 9 cm. Now?", "options": ["10 g made a difference", "Still no effect"], "answer": 0, "then": "9 cm against the control's 5. That extra 4 cm is the fertilizer.", "line": "C 9 cm vs control 5 cm → effect" }
+      ]
+    },
     "questions": [
       { "stem": "Students test whether salt makes water boil faster. Which pot is the control?", "options": ["The pot with 1 spoon of salt", "The pot with no salt", "The pot with 2 spoons of salt"], "answer": 1, "why": "The control gets no treatment: plain water, no salt." },
       { "stem": "Plants with fertilizer grew 5 cm. The control grew 5 cm too. What does this show?", "options": ["The fertilizer worked", "The fertilizer made no difference", "The control was done wrong"], "answer": 1, "why": "Same growth with and without fertilizer means the fertilizer didn't do anything." }

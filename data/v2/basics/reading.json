@@ -11,6 +11,15 @@
       { "kind": "bad", "text": "An octopus was found on a lab floor.", "note": "True, but it's one example, not the point." }
     ],
     "another": { "text": "Your friend asks \"what was that about?\" and you only have five seconds. What do you say? Not the little facts. The one big thing. That's the main idea. The little facts are the details.", "example": "Paragraph: My dog chewed a shoe, dug up the garden, and knocked over the trash.\nFive-second answer: My dog is trouble." },
+    "walkthrough": {
+      "passage": true,
+      "steps": [
+        { "say": "The main idea is the one point every sentence helps make. The other sentences are details that back it up." },
+        { "ask": "Sentence 1 says octopuses are escape artists. What does sentence 2 do?", "options": ["Explains how they escape", "Changes the subject"], "answer": 0, "line": "S2 backs up S1: how they squeeze out" },
+        { "ask": "Sentence 3 lists where keepers found them. Does it back up 'escape artists' too?", "options": ["Yes, more escapes", "No"], "answer": 0, "line": "S3 backs up S1: where they turned up" },
+        { "ask": "Finish it: the author mostly wants me to know that ___", "options": ["octopuses are very good at escaping", "an octopus was found on a lab floor"], "answer": 0, "then": "Every sentence supports the first one. The lab floor is one example, a detail.", "hint": "Which answer fits every sentence, not just one?", "line": "Main idea: octopuses are escape artists" }
+      ]
+    },
     "questions": [
       { "passage": "Honeybees communicate with a dance. A bee that finds flowers returns to the hive and waggles in a figure eight. The angle of the dance tells the others which direction to fly, and the length of the waggle tells them how far.", "stem": "What is the main idea?", "options": ["Bees fly in a figure eight to find flowers.", "Bees use a dance to tell each other where flowers are.", "The length of a waggle shows distance."], "answer": 1, "why": "Every sentence is about the dance as a message. The angle and the length are details that back it up." },
       { "passage": "Many people think camels store water in their humps. The humps are actually fat. A camel survives long trips because its body loses water slowly and its blood cells can swell without bursting when it finally drinks.", "stem": "What is the main idea?", "options": ["Camels survive without water because of how their bodies work, not their humps.", "Camel humps are made of fat.", "Camels drink a lot of water at once."], "answer": 0, "why": "The passage corrects a myth and gives the real reason. The fat and the blood cells are the details." }
@@ -28,6 +37,15 @@
       { "kind": "bad", "text": "How did early riders move? They pedaled slowly.", "note": "Sounds plausible, but the text says no pedals." }
     ],
     "another": { "text": "This is hide-and-seek, and the answer is hiding in the words. Don't guess where it is. Go look. If the passage says the party was on Tuesday, the answer is Tuesday, even if you were sure it was Saturday.", "example": "Text: The party was on Tuesday.\nQuestion: When was the party?\nGo look: Tuesday." },
+    "walkthrough": {
+      "passage": true,
+      "steps": [
+        { "say": "A detail question asks what the text says. Don't remember, don't guess: put your finger on the words." },
+        { "ask": "Question: how did early riders move? Which words in the text answer it?", "options": ["\"pushed along the ground with their feet\"", "\"about forty years later\""], "answer": 0, "line": "Finger on: pushed with their feet" },
+        { "ask": "An answer choice says 'they pedaled slowly'. Can you put your finger on that?", "options": ["No, the text says there were no pedals", "Yes"], "answer": 0, "then": "It sounds plausible. The text says the opposite. Plausible is not proof.", "line": "'Pedaled' ✗ not in the text" },
+        { "ask": "Question: when were pedals added? Finger on:", "options": ["\"in the 1860s\"", "\"like a scooter you sit on\""], "answer": 0, "then": "Found it. That is the whole method.", "line": "Pedals added: the 1860s" }
+      ]
+    },
     "questions": [
       { "passage": "Sea otters sleep floating on their backs. To keep from drifting apart, they hold paws or wrap themselves in kelp. A group of resting otters is called a raft.", "stem": "According to the text, why do otters hold paws?", "options": ["To stay warm", "To keep from drifting apart", "To catch kelp"], "answer": 1, "why": "The text says it directly: \"To keep from drifting apart, they hold paws.\"" },
       { "passage": "Venus is the hottest planet, even though Mercury is closer to the sun. A thick blanket of clouds traps heat on Venus, so its surface stays around 870 degrees Fahrenheit day and night.", "stem": "Why is Venus hotter than Mercury?", "options": ["It is closer to the sun.", "Its clouds trap heat.", "It has longer days."], "answer": 1, "why": "\"A thick blanket of clouds traps heat.\" Mercury is closer, and the text says Venus is still hotter." }
@@ -45,6 +63,15 @@
       { "kind": "bad", "text": "The dog ran away later that night.", "note": "Nothing in the text sets that up." }
     ],
     "another": { "text": "You come home to muddy paw prints and an empty cookie plate. Nobody told you the dog ate the cookies, but the clues make it the only thing that makes sense. That's an inference. \"The dog is sad\" would be a guess, because no clue points there.", "example": "Clues: muddy paw prints, empty plate\nInference: the dog ate the cookies\nGuess: the dog is sad" },
+    "walkthrough": {
+      "passage": true,
+      "steps": [
+        { "say": "An inference is not stated, but the clues force you to it. One small step, never a leap." },
+        { "ask": "Clue 1: the dog did not run to greet her. What is clue 2?", "options": ["His bowl was still full", "It was morning"], "answer": 0, "line": "Clues: no greeting, didn't eat" },
+        { "ask": "Clue 3: he sighed. Put the clues together. The dog is probably:", "options": ["Sick or sad", "Hungry"], "answer": 0, "then": "No greeting, no eating, a sigh. Every clue points the same way.", "hint": "His bowl is full, so not hungry.", "line": "Inference: the dog is sick or sad" },
+        { "ask": "Another choice says 'the dog ran away that night'. Good inference?", "options": ["No, nothing sets that up", "Yes"], "answer": 0, "then": "That is a leap. Nothing in the text points there. A right inference adds one small step.", "line": "'Ran away' ✗ a leap" }
+      ]
+    },
     "questions": [
       { "passage": "Priya checked the weather app three times before leaving. She packed an umbrella, a second pair of socks, and a plastic bag for her phone.", "stem": "What can you infer?", "options": ["Priya expects rain.", "Priya is going swimming.", "Priya lost her phone before."], "answer": 0, "why": "Umbrella, dry socks, a bag to keep the phone dry. Every clue points to rain." },
       { "passage": "The classroom plants on the window side had grown twice as tall as the ones near the door. Both groups got the same water and the same soil.", "stem": "What most likely explains the difference?", "options": ["The door plants got too much water.", "The window plants got more light.", "The soil was different."], "answer": 1, "why": "Water and soil were the same, so the only difference left is the window. Windows mean light." }
@@ -62,6 +89,15 @@
       { "kind": "bad", "text": "\"Tabled\" means put on a table.", "note": "The everyday meaning doesn't fit \"until spring.\"" }
     ],
     "another": { "text": "Some words have two jobs. \"Cool\" can mean chilly or awesome. The other words around it tell you which job it's doing right now. If the first meaning makes the sentence silly, try the other one.", "example": "The soup is cool now. → chilly\nThat trick was cool! → awesome" },
+    "walkthrough": {
+      "passage": true,
+      "steps": [
+        { "say": "The same word means different things in different sentences. The words around it tell you which meaning is in play." },
+        { "ask": "Cover 'tabled'. The committee ___ the proposal until spring. What is your own word for the blank?", "options": ["Postponed", "Built"], "answer": 0, "then": "'Until spring' means it was put off.", "line": "My word: put off" },
+        { "ask": "Which meaning of 'tabled' matches 'put off'?", "options": ["Postponed", "Put on a table"], "answer": 0, "then": "The everyday meaning does not fit 'until spring'.", "line": "tabled = postponed, here" },
+        { "ask": "Try it: 'Her argument was sound, and even people who disagreed admitted it.' Cover 'sound'. Your word?", "options": ["Solid", "Loud"], "answer": 0, "then": "People who disagreed still admitted it, so the argument was strong. Solid.", "hint": "What kind of argument do opponents admit to?", "line": "sound = solid, here" }
+      ]
+    },
     "questions": [
       { "passage": "After the flood, the town had to address the broken bridge before anything else.", "stem": "In this sentence, \"address\" most nearly means:", "options": ["speak to", "deal with", "write on"], "answer": 1, "why": "Cover it: the town had to ___ the broken bridge. Deal with. You can't speak to a bridge." },
       { "passage": "Her argument was sound, and even the people who disagreed with her admitted it.", "stem": "In this sentence, \"sound\" most nearly means:", "options": ["loud", "noise", "solid"], "answer": 2, "why": "An argument that opponents admit is good is solid or well-reasoned. Noise doesn't fit." }
@@ -79,6 +115,15 @@
       { "kind": "bad", "text": "The third sentence is about legs.", "note": "That's the topic, not the purpose." }
     ],
     "another": { "text": "Why did the author write this sentence? To teach you something, to convince you, to tell you a story, or to show how something works? Ask what the sentence is trying to make you do: learn, believe, feel, or understand.", "example": "Brush your teeth twice a day. → trying to convince you\nTeeth have three layers. → trying to teach you" },
+    "walkthrough": {
+      "passage": true,
+      "steps": [
+        { "say": "Purpose is the job a sentence does for the paragraph, not what it is about." },
+        { "ask": "Sentence 1: 'Most people assume spiders are insects.' Its job?", "options": ["Set up a belief the author will correct", "Prove that spiders are insects"], "answer": 0, "then": "'Assume' is the tell. The author is about to say otherwise.", "line": "S1: sets up a belief to correct" },
+        { "ask": "Sentence 2: 'They are not.' Its job?", "options": ["State the author's claim", "Give an example"], "answer": 0, "line": "S2: the claim" },
+        { "ask": "Sentence 3 counts legs and body parts. Its job?", "options": ["Back up 'They are not' with evidence", "Describe legs"], "answer": 0, "then": "'About legs' is the topic. Backing up the claim is the purpose.", "hint": "What is it doing for sentence 2?", "line": "S3: evidence for the claim" }
+      ]
+    },
     "questions": [
       { "passage": "You should learn to cook at least five meals before you move out. Takeout is expensive, and a person who can feed themselves is never stuck.", "stem": "What is the author's purpose?", "options": ["To persuade the reader to learn to cook", "To list five easy meals", "To describe the cost of takeout"], "answer": 0, "why": "\"You should\" is the giveaway. The reasons that follow are there to convince you." },
       { "passage": "Some people think the moon has a dark side that never sees the sun. In fact, every part of the moon gets sunlight; we just only ever see one side from Earth.", "stem": "What is the purpose of the first sentence?", "options": ["To state a common belief the author will correct", "To explain how the moon orbits", "To describe what the author believes"], "answer": 0, "why": "\"Some people think\" followed by \"In fact\" is the classic setup: present the myth, then fix it." }
@@ -96,6 +141,16 @@
       { "kind": "bad", "text": "A comparison of buses and cars.", "note": "Cars are mentioned, but nothing is being compared." }
     ],
     "another": { "text": "Paragraphs come in shapes, like LEGO builds. Problem then fix. This thing next to that thing. One thing makes another thing happen. First, next, last. Figure out which build it is and you know where every piece goes.", "example": "My bike had a flat. Dad patched it. → problem then fix\nI woke up, ate breakfast, went to school. → first, next, last" },
+    "walkthrough": {
+      "passage": true,
+      "steps": [
+        { "say": "Passages come in a few shapes: problem and solution, comparison, cause and effect, sequence. The signal words give the shape away." },
+        { "ask": "'Buses were late because they sat in traffic.' What does 'because' signal?", "options": ["A cause", "A comparison"], "answer": 0, "line": "because → the problem and its cause" },
+        { "ask": "'So the city painted a lane red.' What does 'so' signal?", "options": ["A response: the solution", "A list"], "answer": 0, "line": "so → the solution" },
+        { "ask": "'Within a month, trips were eight minutes shorter.' That is the:", "options": ["Result", "Problem"], "answer": 0, "line": "→ the result" },
+        { "ask": "So the shape of this passage is:", "options": ["Problem, solution, result", "A comparison of buses and cars"], "answer": 0, "then": "Cars are mentioned, but nothing is compared. Follow the signal words, not the nouns.", "hint": "Follow the signal words you just found.", "line": "Shape: problem → solution → result" }
+      ]
+    },
     "questions": [
       { "passage": "A hurricane is a tropical storm with winds over 74 miles per hour. A typhoon is the same kind of storm. The only difference is where it happens: hurricanes form in the Atlantic, typhoons in the western Pacific.", "stem": "How is this passage organized?", "options": ["As a sequence of events", "As a comparison of two things", "As a problem and a solution"], "answer": 1, "why": "Two storms, side by side, with the one difference pointed out. Comparison." },
       { "passage": "Students kept forgetting their locker combinations in September. The school tried posting reminders, which did nothing. Then it let students pick their own combinations, and the problem mostly disappeared.", "stem": "How is this passage organized?", "options": ["A problem, a failed fix, then a fix that worked", "A list of school rules", "Two types of lockers compared"], "answer": 0, "why": "Problem, first attempt, second attempt. Problem and solution with a false start." }
@@ -113,6 +168,15 @@
       { "kind": "bad", "text": "Author 2 thinks homework should be banned.", "note": "Too strong. Text 2 says \"before high school,\" not never." }
     ],
     "another": { "text": "Two kids talk about the same movie. Kid 1 loved it. Kid 2 says it was good but too long. Kid 2 doesn't hate the movie. They mostly agree, with one complaint. Don't pick \"completely disagrees\" when the second text only has a small complaint.", "example": "Text 1: The movie was great.\nText 2: Great, but too long.\nAnswer: mostly agrees, with one problem. Not \"totally disagrees.\"" },
+    "walkthrough": {
+      "passage": true,
+      "steps": [
+        { "say": "Two texts? Write one line for each author first. The answer is the relationship between those two lines." },
+        { "ask": "Author 1 thinks:", "options": ["Homework helps students practice and builds responsibility", "Homework should be banned"], "answer": 0, "line": "Author 1: homework helps" },
+        { "ask": "Author 2 thinks:", "options": ["Homework does little before high school; younger kids need sleep and play", "Homework is useless for everyone"], "answer": 0, "then": "'Before high school' is the limit. Author 2 is not against all homework.", "hint": "Read how far Author 2 actually goes.", "line": "Author 2: little effect before high school" },
+        { "ask": "The relationship? Author 2 would say:", "options": ["Homework is less useful for younger kids than Author 1 claims", "Author 1 is completely wrong"], "answer": 0, "then": "Agreement with a condition. 'Completely wrong' is too strong for what Text 2 says.", "line": "Author 2 agrees, with a limit on age" }
+      ]
+    },
     "questions": [
       { "passage": "Text 1: Electric cars produce no exhaust, so switching to them will cut city air pollution.\n\nText 2: Electric cars do cut exhaust, but the electricity still has to come from somewhere. In cities powered by coal plants, the pollution moves rather than disappears.", "stem": "How would the author of Text 2 most likely respond to Text 1?", "options": ["By agreeing completely", "By saying the benefit depends on how the electricity is made", "By arguing that electric cars pollute more than gas cars"], "answer": 1, "why": "Text 2 accepts the exhaust point and adds a condition about the power source. Not total agreement, not reversal." },
       { "passage": "Text 1: Daily quizzes make students study more consistently.\n\nText 2: Daily quizzes do raise study time. They also raise stress, and for some students the stress cancels out the gain.", "stem": "On which point do the two authors agree?", "options": ["Quizzes increase stress.", "Quizzes lead students to study more.", "Quizzes should be stopped."], "answer": 1, "why": "Text 2's second sentence repeats Text 1's claim before adding the downside." }
@@ -130,6 +194,16 @@
       { "kind": "bad", "text": "Critical.", "note": "Peeling paint sounds negative, but the sentence ends by praising the place." }
     ],
     "another": { "text": "Tone is the voice in the author's head. Read the sentence out loud like you're the author. Are you smiling? Rolling your eyes? Worried? Just saying facts like a robot? The face you make is the tone.", "example": "\"Oh great, more homework.\" → eye roll → sarcastic\n\"Homework is due Friday.\" → robot voice → neutral" },
+    "walkthrough": {
+      "passage": true,
+      "steps": [
+        { "say": "Tone is the author's attitude. You hear it in the words with the most feeling in them." },
+        { "ask": "Pull out the feeling words. 'Peeling gold paint' sounds:", "options": ["Worn, a little negative", "Glamorous"], "answer": 0, "line": "peeling paint: worn" },
+        { "ask": "'Still smell faintly of popcorn from 1975' sounds:", "options": ["Fond, a nice memory", "Disgusted"], "answer": 0, "line": "popcorn from 1975: fond" },
+        { "ask": "'The best place in town to watch a movie' sounds:", "options": ["Admiring", "Neutral"], "answer": 0, "line": "best place in town: admiring" },
+        { "ask": "One worn, two warm, and the sentence ends on praise. Tone?", "options": ["Affectionate", "Critical", "Neutral"], "answer": 0, "then": "The peeling paint is described with love, not complaint. Where the sentence lands decides it.", "hint": "How does the sentence end?", "line": "Tone: affectionate" }
+      ]
+    },
     "questions": [
       { "passage": "Once again the city council has promised to fix the potholes \"soon.\" Residents who have heard this every spring for a decade have started planting flowers in them.", "stem": "What is the tone of the passage?", "options": ["Hopeful", "Sarcastic", "Neutral"], "answer": 1, "why": "\"Once again,\" quotes around \"soon,\" and flowers in the potholes. The author is mocking the council." },
       { "passage": "The new bridge spans 1,200 feet and carries four lanes of traffic. It opened in March after three years of construction.", "stem": "What is the tone of the passage?", "options": ["Critical", "Neutral", "Excited"], "answer": 1, "why": "Numbers and dates, no feeling words. Plain reporting." }
@@ -147,6 +221,15 @@
       { "kind": "bad", "text": "The crosswalk cost $40,000.", "note": "True, but it says nothing about safety." }
     ],
     "another": { "text": "Pretend your little brother says \"nuh-uh\" to everything. You say your dog is the fastest. Which fact would make him stop? \"She won the dog race\" works. \"She has brown fur\" doesn't. Only the first one supports your claim.", "example": "Claim: My dog is the fastest.\nSupports: She won the race.\nDoesn't: She has brown fur." },
+    "walkthrough": {
+      "board": "Claim: The new crosswalk made the intersection safer.",
+      "steps": [
+        { "say": "Evidence supports a claim only if it points the same way. Test it by putting 'because' between them." },
+        { "ask": "'The intersection is safer because accidents fell from 12 a year to 3.' Does that sound like a real reason?", "options": ["Yes", "No"], "answer": 0, "then": "Fewer accidents is exactly what safer means.", "line": "Accidents 12 → 3: supports ✓" },
+        { "ask": "'The intersection is safer because the crosswalk cost $40,000.' A real reason?", "options": ["No, a change of subject", "Yes"], "answer": 0, "then": "True, maybe interesting, and says nothing about safety.", "hint": "Does the cost tell you anything about safety?", "line": "Cost $40,000: no support ✗" },
+        { "ask": "'The intersection is safer because drivers now stop 90% of the time, up from 40%.' A real reason?", "options": ["Yes", "No"], "answer": 0, "then": "Points the same way as the claim. That is all support means.", "line": "Drivers stopping 40% → 90%: supports ✓" }
+      ]
+    },
     "questions": [
       { "passage": "Claim: The town's recycling program is working.", "stem": "Which finding best supports the claim?", "options": ["The program started in 2019.", "Trash sent to the landfill has dropped 30% since the program began.", "Some residents say the bins are too small."], "answer": 1, "why": "Working, because less trash goes to the landfill. The start date proves nothing; the complaint cuts the other way." },
       { "passage": "Claim: The library's late-night hours are popular with students.", "stem": "Which finding would weaken the claim?", "options": ["On a typical night after 10 p.m., fewer than five people are in the building.", "The library added more outlets last year.", "Students can also study in the student center."], "answer": 0, "why": "Popular means people show up. Almost nobody showing up points the opposite way." }
@@ -164,6 +247,15 @@
       { "kind": "bad", "text": "attract pollinators.", "note": "A new idea. Nothing before the blank was about pollinators." }
     ],
     "another": { "text": "The sentences before the blank are stepping stones across a creek. The answer is the very next stone. Not a stone way over there. Not a jump to the far bank. Just the next step.", "example": "Stone 1: Plants need sunlight.\nStone 2: This closet has no windows.\nNext stone: A plant in the closet would not grow well." },
+    "walkthrough": {
+      "passage": true,
+      "steps": [
+        { "say": "When a text ends in a blank, read everything before it and predict the ending before you look at the choices." },
+        { "ask": "Sentence 1: desert plants lose water through leaves. Sentence 2: cactuses have no leaves. Where is this going?", "options": ["Cactuses keep their water", "Cactuses have spines"], "answer": 0, "then": "Leaves lose water. No leaves. So: no loss. The chain only leads one way.", "hint": "Follow the chain: leaves lose water, cactuses have none, so...", "line": "Chain: leaves lose water → no leaves → keeps water" },
+        { "ask": "A choice says 'attract pollinators'. Does anything before the blank set that up?", "options": ["No, it's a new idea", "Yes"], "answer": 0, "then": "A new idea at the end is the classic wrong answer.", "line": "'attract pollinators' ✗ new idea" },
+        { "ask": "So the design most likely helps a cactus:", "options": ["hold on to water", "attract pollinators"], "answer": 0, "then": "It matches your prediction. Predict first, then pick.", "line": "Answer: hold on to water" }
+      ]
+    },
     "questions": [
       { "passage": "A hummingbird's heart beats over a thousand times a minute, and it burns energy faster than almost any other animal. To survive, a hummingbird must ______", "stem": "Which choice most logically completes the text?", "options": ["sleep through the winter.", "eat almost constantly.", "avoid flying when possible."], "answer": 1, "why": "Burning energy fast means needing fuel fast. Constant eating is the next step." },
       { "passage": "The town's only grocery store closed in June. The nearest one is now a forty-minute drive. Since many older residents do not drive, the closing has made it ______", "stem": "Which choice most logically completes the text?", "options": ["easier for them to shop locally.", "harder for them to get food.", "more likely they will move to the city."], "answer": 1, "why": "Store gone, next one far, no car. Harder to get food is the next stair. Moving to the city jumps too far." }
@@ -181,6 +273,15 @@
       { "kind": "bad", "text": "The school closing caused the ferry to stop.", "note": "Backwards. Check which side of \"so\" each one is on." }
     ],
     "another": { "text": "Cause is the \"because.\" Effect is the \"so.\" I forgot my umbrella (because), so I got wet (so). To find the cause, ask \"why did that happen?\" To find the effect, ask \"and then what?\"", "example": "Why did I get wet? Because I forgot my umbrella. (cause)\nI forgot my umbrella, and then what? I got wet. (effect)" },
+    "walkthrough": {
+      "passage": true,
+      "steps": [
+        { "say": "A cause is why. An effect is what happened. Signal words tell you which side each one is on." },
+        { "ask": "'Because the river froze early, the ferry stopped.' Which is the cause?", "options": ["The river froze", "The ferry stopped"], "answer": 0, "then": "The cause sits on the 'because' side.", "line": "Cause: river froze → effect: ferry stopped" },
+        { "ask": "'...the ferry stopped, so the school closed.' Which is the effect here?", "options": ["The school closed", "The ferry stopped"], "answer": 0, "then": "The effect sits on the 'so' side. The ferry stopping is now a cause too: a chain of two.", "hint": "'So' points at what happened next.", "line": "Ferry stopped → school closed" },
+        { "ask": "Someone says the school closing made the ferry stop. Right?", "options": ["No, that's backwards", "Yes"], "answer": 0, "then": "Check which side of 'so' each one is on. Backwards is the trap.", "line": "Backwards ✗" }
+      ]
+    },
     "questions": [
       { "passage": "The drought dried the reservoir to a quarter of its usual level. As a result, the city banned lawn watering, and golf courses let their fairways go brown.", "stem": "What caused the city to ban lawn watering?", "options": ["Brown fairways", "The low reservoir", "Complaints from residents"], "answer": 1, "why": "Low reservoir, \"as a result,\" the ban. Brown fairways are another effect, not the cause." },
       { "passage": "When wolves were brought back to the park, the deer stopped grazing in open valleys where they were easy to catch. Willows along the streams, which the deer had eaten down for decades, began to grow back.", "stem": "What effect did the wolves have on the willows?", "options": ["The willows grew back.", "The wolves ate the willows.", "The willows were cut down."], "answer": 0, "why": "Wolves → deer avoid valleys → willows stop being eaten → willows grow back. A chain of effects." }
@@ -198,6 +299,15 @@
       { "kind": "bad", "text": "Order: Sam arrived, then the train left.", "note": "\"Had already left\" means the train was gone before he got there." }
     ],
     "another": { "text": "Stories can tell things out of order, like a friend who says \"I got a dog! Oh, and before that we moved.\" Words like \"before,\" \"had,\" and \"earlier\" point backward. \"Later\" and \"then\" point forward. Draw three dots and put each thing on a dot.", "example": "\"I got a dog. Before that, we had moved.\"\nDots: moved → got a dog" },
+    "walkthrough": {
+      "passage": true,
+      "steps": [
+        { "say": "Stories don't always tell events in order. 'Had', 'before' and 'earlier' mean: this happened before the thing I just told you." },
+        { "ask": "'When Sam reached the station, the train had already left.' Which happened first?", "options": ["The train left", "Sam reached the station"], "answer": 0, "then": "'Had left' points backward: it was gone before he arrived.", "hint": "'Had already' means before.", "line": "Train left, then Sam arrived" },
+        { "ask": "'He had spent ten minutes looking for his ticket at home.' When was that?", "options": ["Before everything else, at home", "After he reached the station"], "answer": 0, "hint": "'Had spent' points backward again.", "line": "Even earlier: the ticket search at home" },
+        { "ask": "So the real order is?", "options": ["Searched for the ticket, the train left, Sam arrived", "Sam arrived, the train left, searched for the ticket"], "answer": 0, "then": "Told in one order, happened in another. Follow the 'had's.", "line": "Order: search → train left → arrived" }
+      ]
+    },
     "questions": [
       { "passage": "Maya opened the envelope with shaking hands. Three months earlier she had mailed the application without telling anyone, certain she would be rejected.", "stem": "Which event happened first?", "options": ["Maya opened the envelope.", "Maya mailed the application.", "Maya was rejected."], "answer": 1, "why": "\"Three months earlier she had mailed\" places the mailing well before the envelope. Rejection never happens in the text." },
       { "passage": "After the storm passed, Theo went out to check the boat. He had tied it to the dock the night before with two extra lines, and it was still there.", "stem": "Put these in order: (A) Theo checks the boat, (B) the storm passes, (C) Theo ties the boat.", "options": ["A, B, C", "C, B, A", "B, A, C"], "answer": 1, "why": "He tied it \"the night before,\" the storm passed, then he checked. C, B, A." }

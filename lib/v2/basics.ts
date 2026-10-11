@@ -38,6 +38,39 @@ export interface BasicsQuestion {
   passage?: string;
 }
 
+/**
+ * One step of a walkthrough: either something to read (`say`) with a Next
+ * button, or a tiny question (`ask`) with two or three options. A wrong tap
+ * shows `hint` and lets them tap again; the right one shows `then`. A step
+ * with a `line` adds it to the work column under the board when it is done,
+ * so the solution builds up as the student supplies each piece.
+ */
+export interface WalkthroughStep {
+  say?: string;
+  ask?: string;
+  options?: string[];
+  answer?: number;
+  then?: string;
+  hint?: string;
+  line?: string;
+}
+
+/**
+ * The click-through tutorial for a skill that is a procedure or passage
+ * work rather than a sentence to recognise: the board (an expression, a
+ * sentence or two, the skill's passage or table) stays on top while the
+ * student works through the steps below it.
+ */
+export interface BasicsWalkthrough {
+  /** Text pinned at the top: an expression (`kind: "math"`, shown large) or a sentence or two. */
+  board?: string;
+  kind?: "math" | "text";
+  /** Pin the skill's own passage or table instead of (or as well as) `board`. */
+  passage?: boolean;
+  table?: boolean;
+  steps: WalkthroughStep[];
+}
+
 export interface BasicsSkill {
   id: string;
   name: string;
@@ -51,7 +84,13 @@ export interface BasicsSkill {
   table?: BasicsTable;
   /** A short worked passage on the rule card (reading skills). */
   passage?: string;
+  /** The step-by-step tutorial, for skills the video template does not fit. Leads the learn screen when present. */
+  walkthrough?: BasicsWalkthrough;
   questions: BasicsQuestion[];
+}
+
+export function hasWalkthrough(skill: BasicsSkill): boolean {
+  return !!skill.walkthrough && skill.walkthrough.steps.length > 0;
 }
 
 const LIBRARY: Record<string, BasicsSkill> = Object.fromEntries(

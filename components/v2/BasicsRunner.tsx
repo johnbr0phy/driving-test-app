@@ -8,7 +8,7 @@ import { Play, X } from "lucide-react";
 import { ExamV2Config } from "@/lib/v2/types";
 import { v2Routes } from "@/lib/v2/registry";
 import { BasicsQuestion, BasicsRun, BasicsSkill, BasicsTable, PUNCTUATION_NAMES, answerBasics, basicsFor, basicsKey, basicsOptionOrder, isPunctuationQuestion, newBasicsRun } from "@/lib/v2/basics";
-import { canExplain, explainerAudioUrl } from "@/lib/v2/explainer";
+import { canExplain } from "@/lib/v2/explainer";
 import { BasicsExplainer } from "./BasicsExplainer";
 import { useV2Store } from "@/store/useV2Store";
 import { useHydration } from "@/hooks/useHydration";
@@ -47,8 +47,8 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
   const [ruleOpen, setRuleOpen] = useState(false);
   const [ruleEli5, setRuleEli5] = useState(false);
   const [another, setAnother] = useState(false);
-  // The 40-second explainer overlay; `audio` is an element already started inside a tap.
-  const [explainer, setExplainer] = useState<{ audio: HTMLAudioElement | null } | null>(null);
+  // The 40-second explainer overlay (it opens on its own Play screen, so no gesture plumbing here).
+  const [explainer, setExplainer] = useState(false);
   const wantExplain = useSearchParams().get("explain") === "1";
 
   useEffect(() => {
@@ -62,12 +62,12 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
     setCurrent(null);
     setPicked(null);
     setAnother(false);
-    setExplainer(null);
+    setExplainer(false);
   }, [skillIdParam]);
 
-  // &explain=1 opens the explainer straight away (a preview link; no tap, so sound is offered, not started).
+  // &explain=1 opens the explainer straight away (a preview link).
   useEffect(() => {
-    if (wantExplain && skill && canExplain(skill)) setExplainer({ audio: null });
+    if (wantExplain && skill && canExplain(skill)) setExplainer(true);
   }, [wantExplain, skill]);
 
   // Basics of a Premium drill is gated like its questions, unless they are already in it.
@@ -123,17 +123,8 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
   };
 
   const explainable = canExplain(skill);
-  // Start the audio inside the tap so phones allow it; the overlay falls back to silent if there is none.
-  const openExplainer = () => {
-    let audio: HTMLAudioElement | null = null;
-    if (typeof Audio !== "undefined") {
-      audio = new Audio(explainerAudioUrl(skill.id));
-      audio.preload = "auto";
-      audio.play().catch(() => {});
-    }
-    setExplainer({ audio });
-  };
-  const overlay = explainer ? <BasicsExplainer exam={exam} skill={skill} audio={explainer.audio} onClose={() => setExplainer(null)} /> : null;
+  const openExplainer = () => setExplainer(true);
+  const overlay = explainer ? <BasicsExplainer exam={exam} skill={skill} onClose={() => setExplainer(false)} /> : null;
   const watchButton = explainable ? (
     <button type="button" onClick={openExplainer} className="flex items-center gap-1.5 self-start text-[15px] font-semibold text-brand">
       <Play className="h-4 w-4" /> Watch it instead · 40 seconds

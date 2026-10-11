@@ -2,7 +2,7 @@
 
 import { ReactNode, useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
-import { Pause, Play, RotateCcw, Volume2, X } from "lucide-react";
+import { Pause, Play, RotateCcw, X } from "lucide-react";
 import { ExamV2Config } from "@/lib/v2/types";
 import { BasicsSkill } from "@/lib/v2/basics";
 import { ExplainerBeat, ExplainerBeatTiming, ExplainerManifest, beatOffsets, buildExplainer, estimateTimings, explainerAudioUrl, explainerManifestUrl, words } from "@/lib/v2/explainer";
@@ -13,45 +13,35 @@ import { getTigerAsset, TigerExpression } from "@/lib/tigerAssets";
  * rule, the trick, a sentence that breaks it, one that follows it, and the
  * ELI5 picture, with the words lighting up as they are read.
  *
- * Runs off one clock. With the skill's audio and manifest in
- * public/basics-audio/ the clock is the audio element, so every highlight
- * lands on the spoken word. Without them (no voice generated yet, or
- * autoplay refused) it runs silently on estimated timings and offers a
- * "Sound" button when the audio turns out to be playable after all.
+ * It opens on a Play screen. That tap is the user gesture phones require
+ * before any sound, so play() is called inside it and nothing has to guess
+ * about autoplay. One clock then drives the run: with the skill's audio and
+ * manifest in public/basics-audio/ the audio element is the clock, so every
+ * highlight lands on the spoken word; when they are missing, or the audio
+ * fails, it runs silently on estimated timings and says so.
  */
 
-type Status = "loading" | "audio" | "silent";
+type Status = "ready" | "starting" | "audio" | "silent";
 
 const FACES: Record<ExplainerBeat["id"], TigerExpression> = { rule: 3, trick: 4, bad: 6, good: 1, eli5: 2, close: 1 };
 const LABELS: Record<ExplainerBeat["id"], string> = { rule: "The rule", trick: "The trick", bad: "Doesn't work", good: "Works", eli5: "ELI5 · explained like you're five", close: "" };
 
-/** How long to wait for the manifest (and an audio start) before running silently. */
-const AUDIO_WAIT_MS = 2500;
-/** Hard cap on the start-up wait even while audio is playing but the manifest has not arrived. */
+/** After Play, how long to wait for the manifest before running silently. */
 const MANIFEST_WAIT_MS = 8000;
 
-export function BasicsExplainer({ exam, skill, audio: given, onClose, onTryAgain }: {
-  exam: ExamV2Config;
-  skill: BasicsSkill;
-  /** An element whose play() was already called inside a tap, so iOS lets it sound. */
-  audio?: HTMLAudioElement | null;
-  onClose: () => void;
-  onTryAgain?: () => void;
-}) {
+export function BasicsExplainer({ exam, skill, onClose, onTryAgain }: { exam: ExamV2Config; skill: BasicsSkill; onClose: () => void; onTryAgain?: () => void }) {
   const beats = useMemo(() => buildExplainer(skill), [skill]);
   const estimated = useMemo(() => estimateTimings(beats), [beats]);
 
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const audioFailed = useRef(false);
-  const triedPlay = useRef(false);
-  const mountedAt = useRef(0);
+  const startedAt = useRef(0);
   const silent = useRef({ accum: 0, last: 0 });
   const shown = useRef(0);
 
-  const [status, setStatus] = useState<Status>("loading");
+  const [status, setStatus] = useState<Status>("ready");
   const [manifest, setManifest] = useState<ExplainerManifest | null | undefined>(undefined);
   const [paused, setPaused] = useState(false);
-  const [soundOffer, setSoundOffer] = useState(false);
   const [buffering, setBuffering] = useState(false);
   const [t, setT] = useState(0);
 
@@ -71,17 +61,15 @@ export function BasicsExplainer({ exam, skill, audio: given, onClose, onTryAgain
     };
   }, [skill.id, beats]);
 
-  // The audio element: the one handed in, or our own.
+  // The audio element, created up front so the Play tap only has to call play().
   useEffect(() => {
-    mountedAt.current = performance.now();
-    silent.current = { accum: 0, last: performance.now() };
-    const a = given ?? (typeof Audio !== "undefined" ? new Audio(explainerAudioUrl(skill.id)) : null);
-    audioRef.current = a;
-    if (!a) {
+    if (typeof Audio === "undefined") {
       audioFailed.current = true;
       return;
     }
+    const a = new Audio(explainerAudioUrl(skill.id));
     a.preload = "auto";
+    audioRef.current = a;
     const onError = () => {
       audioFailed.current = true;
     };
@@ -89,40 +77,43 @@ export function BasicsExplainer({ exam, skill, audio: given, onClose, onTryAgain
     return () => {
       a.pause();
       a.removeEventListener("error", onError);
+      audioRef.current = null;
     };
-  }, [given, skill.id]);
+  }, [skill.id]);
 
-  // One clock. While loading it decides between audio and silent; then it reads time.
+  const goSilent = (from = 0) => {
+    audioRef.current?.pause();
+    silent.current = { accum: from, last: performance.now() };
+    shown.current = from;
+    setT(from);
+    setPaused(false);
+    setStatus("silent");
+  };
+
+  /** The Play tap: the one user gesture, so play() is called right here. */
+  const start = () => {
+    if (status !== "ready") return;
+    const a = audioRef.current;
+    startedAt.current = performance.now();
+    if (!a || audioFailed.current || manifest === null) {
+      goSilent();
+      return;
+    }
+    setStatus("starting");
+    a.play().catch(() => goSilent());
+  };
+
+  // One clock. "starting" waits for the manifest while the audio spins up; then it reads time.
   useEffect(() => {
+    if (status === "ready") return;
     let raf = 0;
     const tick = () => {
       const a = audioRef.current;
       const now = performance.now();
-      const goSilent = (from = 0) => {
-        // Audio started inside the tap must not keep talking under a silent run.
-        a?.pause();
-        silent.current = { accum: from, last: performance.now() };
-        shown.current = from;
-        setT(from);
-        setStatus("silent");
-      };
-      if (status === "loading") {
-        const waited = now - mountedAt.current;
-        if (audioFailed.current || manifest === null) goSilent();
-        else if (manifest && a) {
-          // play() accepted (in the opening tap, or here) is enough: the clock
-          // simply waits at 0 until the first bytes arrive. Phones often need
-          // longer than a fixed wait to buffer, and iPhones load nothing at
-          // all until a tap, so readiness is never a condition.
-          if (!a.paused) setStatus("audio");
-          else if (!triedPlay.current) {
-            triedPlay.current = true;
-            a.play().then(() => setStatus("audio")).catch(() => {
-              setSoundOffer(true);
-              goSilent();
-            });
-          }
-        } else if (waited > MANIFEST_WAIT_MS || (waited > AUDIO_WAIT_MS && (!a || a.paused))) goSilent();
+      if (status === "starting") {
+        if (audioFailed.current || manifest === null || !a) goSilent();
+        else if (manifest) setStatus("audio");
+        else if (now - startedAt.current > MANIFEST_WAIT_MS) goSilent();
       } else if (status === "audio" && a) {
         if (audioFailed.current) {
           goSilent(shown.current);
@@ -143,14 +134,13 @@ export function BasicsExplainer({ exam, skill, audio: given, onClose, onTryAgain
           shown.current = silent.current.accum;
           setT(silent.current.accum);
         }
-        // Sound can be turned on by a tap whenever the files exist, loaded or not.
-        if (!soundOffer && manifest && !audioFailed.current) setSoundOffer(true);
       }
       raf = requestAnimationFrame(tick);
     };
     raf = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(raf);
-  }, [status, manifest, paused, soundOffer, estimated]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [status, manifest, paused, estimated]);
 
   const timings: ExplainerBeatTiming[] = status === "audio" && manifest ? manifest.beats : estimated;
   const total = timings[timings.length - 1].end;
@@ -160,6 +150,7 @@ export function BasicsExplainer({ exam, skill, audio: given, onClose, onTryAgain
   const timing = timings[index];
   const done = t >= total - 0.05;
   const closing = beat.id === "close";
+  const running = status === "audio" || status === "silent";
   let spoken = 0;
   for (const w of timing.words) if (w.start <= t) spoken++;
   else break;
@@ -178,32 +169,16 @@ export function BasicsExplainer({ exam, skill, audio: given, onClose, onTryAgain
   };
 
   const togglePause = () => {
+    if (status === "ready") {
+      start();
+      return;
+    }
     const a = audioRef.current;
     if (status === "audio" && a) {
       if (a.ended) seek(0);
       else if (a.paused) a.play().catch(() => {});
       else a.pause();
-    } else setPaused((p) => !p);
-  };
-
-  // Inside a tap, so phones allow it; the run restarts from the top in sync with the voice.
-  const turnOnSound = () => {
-    const a = audioRef.current;
-    if (!a) return;
-    try {
-      a.currentTime = 0;
-    } catch {
-      // Not loaded yet: it starts at 0 anyway.
-    }
-    a.play()
-      .then(() => {
-        setSoundOffer(false);
-        shown.current = 0;
-        setT(0);
-        setPaused(false);
-        setStatus("audio");
-      })
-      .catch(() => setSoundOffer(false));
+    } else if (status === "silent") setPaused((p) => !p);
   };
 
   useEffect(() => {
@@ -219,6 +194,8 @@ export function BasicsExplainer({ exam, skill, audio: given, onClose, onTryAgain
   });
 
   const tryAgain = onTryAgain ?? onClose;
+  const seconds = Math.round((manifest?.duration ?? estimated[estimated.length - 1].end) || total);
+  const subline = status === "silent" ? `Explainer · ${Math.round(total)} seconds · no sound` : `Explainer · ${seconds} seconds`;
 
   return (
     <div className="fixed inset-0 z-[95] flex flex-col bg-gray-50 text-gray-900 dark:bg-gray-950 dark:text-gray-50" role="dialog" aria-modal="true" aria-label={`${skill.name} explainer`}>
@@ -229,19 +206,14 @@ export function BasicsExplainer({ exam, skill, audio: given, onClose, onTryAgain
           </button>
           <div className="min-w-0 flex-1">
             <div className="truncate text-sm font-bold">{skill.name}</div>
-            <div className="text-xs text-gray-500 dark:text-gray-400">Explainer · {Math.round(total)} seconds{status === "silent" ? " · no sound" : ""}</div>
+            <div className="text-xs text-gray-500 dark:text-gray-400">{subline}</div>
           </div>
-          {soundOffer && (
-            <button type="button" onClick={turnOnSound} className="v2-tap flex items-center gap-1.5 rounded-full bg-brand px-4 text-sm font-bold text-white">
-              <Volume2 className="h-4 w-4" /> Tap for sound
-            </button>
-          )}
         </div>
         <div className="mt-2 flex gap-1">
           {timings.map((tm, k) =>
             beats[k].id === "close" ? null : (
-              <button key={tm.id} type="button" onClick={() => seek(tm.start)} className="h-1.5 flex-1 overflow-hidden rounded-full bg-gray-200 dark:bg-gray-700" aria-label={`Jump to ${LABELS[tm.id]}`}>
-                <div className="h-full rounded-full bg-brand transition-[width] duration-150" style={{ width: `${Math.round(Math.min(1, Math.max(0, (t - tm.start) / (tm.end - tm.start))) * 100)}%` }} />
+              <button key={tm.id} type="button" disabled={!running} onClick={() => seek(tm.start)} className="h-1.5 flex-1 overflow-hidden rounded-full bg-gray-200 dark:bg-gray-700" aria-label={`Jump to ${LABELS[tm.id]}`}>
+                <div className="h-full rounded-full bg-brand transition-[width] duration-150" style={{ width: running ? `${Math.round(Math.min(1, Math.max(0, (t - tm.start) / (tm.end - tm.start))) * 100)}%` : "0%" }} />
               </button>
             )
           )}
@@ -250,19 +222,40 @@ export function BasicsExplainer({ exam, skill, audio: given, onClose, onTryAgain
 
       <div className="flex-1 overflow-y-auto" onClick={closing ? undefined : togglePause}>
         <div className="mx-auto flex min-h-full max-w-2xl flex-col items-center justify-center gap-3 px-4 py-6 pb-16">
-          <Image key={FACES[beat.id]} src={getTigerAsset(exam.id, FACES[beat.id])} alt="" width={112} height={112} className="v2-pop h-28 w-28 object-contain" />
-          <div key={beat.id} className="v2-pop relative w-full rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-5 py-4 shadow-sm">
-            <div className="absolute -top-2 left-1/2 h-4 w-4 -translate-x-1/2 rotate-45 border-l border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900" />
-            {LABELS[beat.id] && <SectionLabel>{LABELS[beat.id]}</SectionLabel>}
-            <BeatBody beat={beat} spoken={spoken} />
-          </div>
-          {paused && !closing && <div className="text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400">Paused · tap to continue</div>}
+          {running ? (
+            <>
+              <Image key={FACES[beat.id]} src={getTigerAsset(exam.id, FACES[beat.id])} alt="" width={112} height={112} className="v2-pop h-28 w-28 object-contain" />
+              <Bubble key={beat.id}>
+                {LABELS[beat.id] && <SectionLabel>{LABELS[beat.id]}</SectionLabel>}
+                <BeatBody beat={beat} spoken={spoken} />
+              </Bubble>
+              {paused && !closing && <div className="text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400">Paused · tap to continue</div>}
+            </>
+          ) : (
+            <>
+              <Image src={getTigerAsset(exam.id, 3)} alt="" width={112} height={112} className="h-28 w-28 object-contain" />
+              <Bubble>
+                <SectionLabel>{skill.sub}</SectionLabel>
+                <p className="text-2xl font-bold leading-tight">{skill.name}, in {seconds} seconds.</p>
+                <p className="mt-2 text-[17px] leading-relaxed text-gray-600 dark:text-gray-300">The tiger talks you through the rule, one sentence that breaks it and one that follows it. Sound on.</p>
+              </Bubble>
+            </>
+          )}
         </div>
       </div>
 
       <div className="v2-safe-bottom shrink-0 border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-3 pt-3">
         <div className="mx-auto flex max-w-2xl items-center gap-2">
-          {closing || done ? (
+          {!running ? (
+            <>
+              <button type="button" onClick={onClose} className="v2-tap px-3 text-sm font-semibold text-gray-500 dark:text-gray-400">
+                Skip
+              </button>
+              <button type="button" onClick={start} disabled={status === "starting"} className="v2-tap flex flex-1 items-center justify-center gap-2 rounded-xl bg-brand text-base font-bold text-white disabled:opacity-70">
+                <Play className="h-5 w-5 fill-current" /> {status === "starting" ? "Starting..." : "Play"}
+              </button>
+            </>
+          ) : closing || done ? (
             <>
               <button type="button" onClick={() => seek(0)} className="v2-tap flex items-center justify-center gap-1.5 rounded-xl border-2 border-gray-200 dark:border-gray-800 px-4 text-sm font-semibold text-gray-700 dark:text-gray-200" aria-label="Replay">
                 <RotateCcw className="h-4 w-4" /> Replay
@@ -276,7 +269,7 @@ export function BasicsExplainer({ exam, skill, audio: given, onClose, onTryAgain
               <button type="button" onClick={togglePause} className="v2-tap flex w-12 items-center justify-center rounded-xl border-2 border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-200" aria-label={paused ? "Play" : "Pause"}>
                 {paused ? <Play className="h-5 w-5" /> : <Pause className="h-5 w-5" />}
               </button>
-              <div className="flex-1 text-center text-sm text-gray-500 dark:text-gray-400">{status === "loading" ? "Starting..." : buffering ? "Loading sound..." : "Tap anywhere to pause"}</div>
+              <div className="flex-1 text-center text-sm text-gray-500 dark:text-gray-400">{buffering ? "Loading sound..." : "Tap anywhere to pause"}</div>
               <button type="button" onClick={onClose} className="v2-tap px-3 text-sm font-semibold text-gray-500 dark:text-gray-400">
                 Skip
               </button>
@@ -284,6 +277,15 @@ export function BasicsExplainer({ exam, skill, audio: given, onClose, onTryAgain
           )}
         </div>
       </div>
+    </div>
+  );
+}
+
+function Bubble({ children }: { children: ReactNode }) {
+  return (
+    <div className="v2-pop relative w-full rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-5 py-4 shadow-sm">
+      <div className="absolute -top-2 left-1/2 h-4 w-4 -translate-x-1/2 rotate-45 border-l border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900" />
+      {children}
     </div>
   );
 }

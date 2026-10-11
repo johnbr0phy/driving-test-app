@@ -54,3 +54,15 @@ export function mergeV2(local: V2Data, remote: V2Data): V2Data {
 
   return { sessions, results, drills, goals: { ...local.goals, ...remote.goals } };
 }
+
+/** The same data with one exam's sessions, results, drills and goal removed. */
+export function withoutExamV2(data: V2Data, examId: string): V2Data {
+  const goals = { ...data.goals };
+  delete goals[examId];
+  return {
+    sessions: Object.fromEntries(Object.entries(data.sessions).filter(([, v]) => v.examId !== examId)),
+    results: data.results.filter((r) => r.examId !== examId),
+    drills: Object.fromEntries(Object.entries(data.drills).filter(([k]) => !k.startsWith(`${examId}:`))),
+    goals,
+  };
+}

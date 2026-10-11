@@ -215,9 +215,9 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
                 : gated
                   ? `Premium · ${s.total} questions`
                   : `${s.mastered}/${s.total} mastered`;
-              // Basics opens the skill list; the exam step opens the questions once
-              // Basics is done (or the drill has none), else the overview.
-              const href = basics || (s.skills > 0 && s.learned < s.skills) ? routes.drill(s.def.key) : routes.drillQuestions(s.def.key);
+              // Basics opens the skill list; the exam step goes straight to the
+              // questions. Anyone who already knows the basics just taps step 2.
+              const href = basics ? routes.drill(s.def.key) : routes.drillQuestions(s.def.key);
               return (
                 <div key={`${s.def.key}-${step.kind}`}>
                   {newSection && (

@@ -9,7 +9,7 @@
       { "kind": "eg", "text": "x² + 5x + 6", "note": "Pairs for 6: 1·6, 2·3. Which adds to 5? 2 and 3. So (x + 2)(x + 3)." },
       { "kind": "eg", "text": "x² − x − 12", "note": "Multiply to −12, add to −1: −4 and 3. So (x − 4)(x + 3)." }
     ],
-    "another": { "text": "Factoring is multiplying in reverse. If you forget, multiply your answer back out with FOIL. (x + 2)(x + 3) = x² + 3x + 2x + 6 = x² + 5x + 6. If it matches, you're right.", "example": "Signs: both positive → both +\nc negative → one +, one −\nc positive, b negative → both −" },
+    "another": { "text": "Factoring is un-multiplying. Somebody multiplied two things to get x² + 5x + 6, and you're figuring out what they were. Look for two numbers that multiply to the last number and add to the middle number. 2 and 3 multiply to 6 and add to 5.", "example": "x² + 5x + 6\nMultiply to 6, add to 5: 2 and 3\n(x + 2)(x + 3)" },
     "questions": [
       { "stem": "Factor x² + 7x + 10.", "options": ["(x + 2)(x + 5)", "(x + 1)(x + 10)", "(x + 3)(x + 4)"], "answer": 0, "why": "Multiply to 10, add to 7: 2 and 5." },
       { "stem": "Factor x² − 9x + 20.", "options": ["(x + 4)(x + 5)", "(x − 4)(x − 5)", "(x − 2)(x − 10)"], "answer": 1, "why": "Multiply to +20, add to −9: both negative, −4 and −5." },
@@ -28,7 +28,7 @@
       { "kind": "eg", "text": "y = (x − 3)² + 5", "note": "Vertex (3, 5). Opens up, so 5 is the minimum." },
       { "kind": "eg", "text": "y = −2(x + 1)² + 7", "note": "Vertex (−1, 7). Opens down, so 7 is the maximum." }
     ],
-    "another": { "text": "Think about what makes the squared part zero. (x − 3)² is zero when x = 3, and that's the smallest a square can be. So x = 3 is where y hits its lowest, and that lowest value is whatever is added on: 5.", "example": "(x + 1)² is zero when x = −1\n→ the vertex is at x = −1" },
+    "another": { "text": "A parabola is a smile or a frown. The vertex is the very bottom of the smile or the very top of the frown. The squared part can never go below zero, so the bottom (or top) happens when it IS zero. That's at x = h, and the height there is k.", "example": "y = (x − 3)² + 5\n(x − 3)² is zero when x = 3\nSo the bottom of the smile is at (3, 5)" },
     "questions": [
       { "stem": "What is the vertex of y = (x − 4)² + 2?", "options": ["(4, 2)", "(−4, 2)", "(2, 4)"], "answer": 0, "why": "Inside is x − 4, so h = 4. Outside is +2, so k = 2." },
       { "stem": "What is the vertex of y = (x + 6)² − 1?", "options": ["(6, −1)", "(−6, −1)", "(−6, 1)"], "answer": 1, "why": "Inside is x + 6, flip the sign: h = −6. Outside is −1." },
@@ -47,7 +47,7 @@
       { "kind": "eg", "text": "x³ · x⁴ = x⁷", "note": "Multiplying, so 3 + 4." },
       { "kind": "eg", "text": "(x³)⁴ = x¹²", "note": "Power of a power, so 3 × 4." }
     ],
-    "another": { "text": "Write it out when unsure. x³ · x⁴ is (x·x·x)(x·x·x·x): seven x's. (x³)⁴ is x³ four times: twelve x's. The rules are shortcuts for counting.", "example": "x⁵ ÷ x² = (x·x·x·x·x) / (x·x) = x³\nTwo cancel, three remain." },
+    "another": { "text": "Exponents just count copies. x³ is three x's in a row. x³ · x⁴ is three x's next to four x's. Count them: seven. That's why you add. If you forget a rule, write out the copies and count.", "example": "x³ · x⁴ = (x·x·x)(x·x·x·x) = seven x's = x⁷\nx⁵ ÷ x² = five x's, cross out two = x³" },
     "questions": [
       { "stem": "Simplify x⁵ · x².", "options": ["x¹⁰", "x⁷", "x³"], "answer": 1, "why": "Multiplying the same base: add exponents. 5 + 2 = 7." },
       { "stem": "Simplify x⁸ ÷ x³.", "options": ["x⁵", "x¹¹", "x²⁴"], "answer": 0, "why": "Dividing the same base: subtract. 8 − 3 = 5." },
@@ -66,7 +66,7 @@
       { "kind": "eg", "text": "y = 100 · 2ˣ", "note": "Starts at 100, doubles each step: 100, 200, 400, 800." },
       { "kind": "eg", "text": "A car loses 15% of its value a year", "note": "V = 20,000 · (0.85)ᵗ" }
     ],
-    "another": { "text": "Look at the gaps in a table. If the gaps are the same (+3, +3, +3), it's linear. If each value is the previous one times the same number (×2, ×2, ×2), it's exponential.", "example": "5, 8, 11, 14 → +3 each → linear\n5, 10, 20, 40 → ×2 each → exponential" },
+    "another": { "text": "Linear is a staircase: every step up is the same size. Exponential is a snowball rolling downhill: every turn it gets bigger by the same number of times, so it grows faster and faster. Same gap means staircase. Same multiplier means snowball.", "example": "2, 5, 8, 11 → +3 every time → staircase (linear)\n2, 4, 8, 16 → ×2 every time → snowball (exponential)" },
     "questions": [
       { "stem": "Which table shows exponential growth?", "options": ["2, 4, 6, 8", "2, 4, 8, 16", "2, 3, 5, 8"], "answer": 1, "why": "2, 4, 8, 16 doubles each time. 2, 4, 6, 8 adds 2 each time, which is linear." },
       { "stem": "A population of 500 grows 10% a year. Which equation models it?", "options": ["P = 500 · (1.10)ᵗ", "P = 500 + 10t", "P = 500 · (0.10)ᵗ"], "answer": 0, "why": "10% growth means multiply by 1.10 each year, starting from 500." },
@@ -85,7 +85,7 @@
       { "kind": "eg", "text": "f(x) = 2x + 1. Find f(3).", "note": "f(3) = 2(3) + 1 = 7." },
       { "kind": "eg", "text": "g(x) = x² − 4. Find g(−2).", "note": "g(−2) = (−2)² − 4 = 4 − 4 = 0." }
     ],
-    "another": { "text": "Think of f as a machine. You drop a number in the top, the machine does its rule, and a number comes out the bottom. f(3) = 7 says: drop in 3, get out 7. On a graph, that's the point (3, 7).", "example": "f(x) = 2x + 1\nin 0 → out 1\nin 3 → out 7\nin 10 → out 21" },
+    "another": { "text": "f is a machine. You drop a number in the top, it does its one trick, and a new number falls out the bottom. f(3) means \"drop in a 3.\" It does NOT mean f times 3. The machine's name is f and 3 is what you fed it.", "example": "Machine f doubles the number and adds 1.\nFeed it 3 → 2·3 + 1 = 7 → f(3) = 7" },
     "questions": [
       { "stem": "f(x) = 3x − 2. What is f(4)?", "options": ["10", "12", "4"], "answer": 0, "why": "Replace x with 4: 3(4) − 2 = 12 − 2 = 10." },
       { "stem": "g(x) = x² + 1. What is g(−3)?", "options": ["−8", "10", "7"], "answer": 1, "why": "(−3)² = 9, then 9 + 1 = 10. Keep the parentheses so the negative squares away." },
@@ -104,7 +104,7 @@
       { "kind": "eg", "text": "Rectangle 5 by 3", "note": "Perimeter 5 + 3 + 5 + 3 = 16. Area 5 × 3 = 15." },
       { "kind": "eg", "text": "Triangle, base 8, height 5", "note": "Area = ½ × 8 × 5 = 20." }
     ],
-    "another": { "text": "Picture tiles. Area is how many one-foot tiles cover the floor. Perimeter is how many feet of trim go around the edge. A long skinny room and a square room can have the same perimeter but very different areas.", "example": "1 by 7 room: perimeter 16, area 7\n4 by 4 room: perimeter 16, area 16" },
+    "another": { "text": "Perimeter is the fence. Walk all the way around the yard and count your steps. Area is the grass. Count how many square patches of grass fill the yard. A long skinny yard and a square yard can need the same fence but have very different amounts of grass.", "example": "1 by 7 yard: fence 16, grass 7\n4 by 4 yard: fence 16, grass 16" },
     "questions": [
       { "stem": "A rectangle is 8 cm long and 3 cm wide. What is its area?", "options": ["11 cm²", "22 cm²", "24 cm²"], "answer": 2, "why": "Area = length × width = 8 × 3 = 24. (22 is the perimeter.)" },
       { "stem": "Same rectangle, 8 by 3. What is its perimeter?", "options": ["22 cm", "24 cm", "11 cm"], "answer": 0, "why": "Add all four sides: 8 + 3 + 8 + 3 = 22." },
@@ -123,7 +123,7 @@
       { "kind": "eg", "text": "Radius 3", "note": "Area = π · 9 = 9π. Circumference = 2π · 3 = 6π." },
       { "kind": "eg", "text": "Diameter 10", "note": "Radius is 5. Area = 25π." }
     ],
-    "another": { "text": "Which formula has the square? Area, because area is always square units. Circumference is a length, so it has no square. If you mix them up, check the units.", "example": "Area → r² → square units\nCircumference → 2πr → plain units" },
+    "another": { "text": "The radius is one spoke of a bike wheel, from the middle to the edge. The diameter is two spokes in a straight line, all the way across. Circumference is the tire, the distance around. Area is how much pizza is inside.", "example": "Radius 3 → diameter 6\nTire (circumference) = 2 × π × 3 ≈ 18.8\nPizza (area) = π × 3 × 3 ≈ 28.3" },
     "questions": [
       { "stem": "A circle has a radius of 4. What is its area?", "options": ["8π", "16π", "4π"], "answer": 1, "why": "Area = πr² = π · 16 = 16π." },
       { "stem": "A circle has a radius of 4. What is its circumference?", "options": ["8π", "16π", "4π"], "answer": 0, "why": "Circumference = 2πr = 2π · 4 = 8π." },
@@ -141,7 +141,7 @@
     "examples": [
       { "kind": "eg", "text": "Right triangle with sides 3, 4, 5. Angle A is across from the 3.", "note": "sin A = 3/5, cos A = 4/5, tan A = 3/4." }
     ],
-    "another": { "text": "Label before you compute. Put H on the longest side. Put O on the side across from the angle you care about. The side left over is A. Then SOH CAH TOA is just reading off the labels.", "example": "Angle at the bottom left, right angle bottom right:\nH = slanted side, O = vertical side, A = bottom side" },
+    "another": { "text": "Sit down at the angle you care about. The side you're sitting on is Adjacent (next to you). The side across the room is Opposite. The long slanty side is the Hypotenuse. Label those three first. Then SOH CAH TOA just tells you which two to divide.", "example": "Sitting at the bottom-left corner:\nHypotenuse = the slanted side\nOpposite = the side across from you\nAdjacent = the side you're sitting on" },
     "questions": [
       { "stem": "A right triangle has legs 5 and 12 and hypotenuse 13. Angle A is across from the 5. What is sin A?", "options": ["5/13", "12/13", "5/12"], "answer": 0, "why": "SOH: opposite over hypotenuse = 5/13." },
       { "stem": "Same triangle. What is cos A?", "options": ["5/13", "12/13", "12/5"], "answer": 1, "why": "CAH: adjacent over hypotenuse. The adjacent leg is 12, so 12/13." },
@@ -161,7 +161,7 @@
       { "kind": "eg", "text": "Pick a student at random. P(walks)?", "note": "90 walkers out of 180 students = 1/2." },
       { "kind": "eg", "text": "Pick a senior at random. P(walks)?", "note": "Restricted to seniors: 60 out of 100 = 3/5." }
     ],
-    "another": { "text": "The words \"given that\" or \"of the\" shrink your world. If the question says \"of the seniors,\" pretend the juniors don't exist and only look at the senior row. The bottom of your fraction is that row's total.", "example": "Whole table: 180 people\n\"Of the seniors\": 100 people" },
+    "another": { "text": "Probability is \"how many do I want\" over \"how many are there.\" In a table, \"how many are there\" shrinks when the question says \"of the girls\" or \"of the seniors.\" Then only that row counts. Pretend the other rows disappeared.", "example": "Whole school: 180 kids\n\"Of the seniors\": only the senior row, 100 kids\nYour fraction's bottom is 100, not 180" },
     "questions": [
       { "stem": "A student is picked at random. What is the probability they are a junior?", "options": ["80/180", "80/100", "30/80"], "answer": 0, "why": "Juniors total 80 out of all 180 students." },
       { "stem": "A student is picked at random. What is the probability they are a junior who takes the bus?", "options": ["50/90", "50/80", "50/180"], "answer": 2, "why": "The junior-bus cell is 50. No restriction, so the bottom is the grand total, 180." },

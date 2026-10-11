@@ -109,13 +109,13 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
             <RuleCard skill={skill} />
             {another ? (
               <div className="flex flex-col gap-2 border-l-4 border-brand pl-3">
-                <div className="text-sm font-bold text-gray-900">Another way to see it</div>
+                <div className="text-sm font-bold text-gray-900">ELI5 <span className="font-normal text-gray-600">(explained like you&apos;re five)</span></div>
                 <p className="text-[15px] text-gray-800">{skill.another.text}</p>
                 <div className="whitespace-pre-line rounded-xl bg-brand-light px-3 py-2 text-[15px] text-gray-900">{skill.another.example}</div>
               </div>
             ) : (
               <button type="button" onClick={() => setAnother(true)} className="self-start text-sm font-semibold text-brand">
-                Still confused? Explain it another way
+                Still confused? ELI5
               </button>
             )}
           </div>

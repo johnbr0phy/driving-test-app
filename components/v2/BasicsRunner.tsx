@@ -8,7 +8,7 @@ import { Play, X } from "lucide-react";
 import { ExamV2Config } from "@/lib/v2/types";
 import { v2Routes } from "@/lib/v2/registry";
 import { BasicsQuestion, BasicsRun, BasicsSkill, BasicsTable, PUNCTUATION_NAMES, answerBasics, basicsFor, basicsKey, basicsOptionOrder, isPunctuationQuestion, newBasicsRun } from "@/lib/v2/basics";
-import { canExplain } from "@/lib/v2/explainer";
+import { hasExplainer } from "@/lib/v2/explainer";
 import { BasicsExplainer } from "./BasicsExplainer";
 import { useV2Store } from "@/store/useV2Store";
 import { useHydration } from "@/hooks/useHydration";
@@ -67,7 +67,7 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
 
   // &explain=1 opens the explainer straight away (a preview link).
   useEffect(() => {
-    if (wantExplain && skill && canExplain(skill)) setExplainer(true);
+    if (wantExplain && skill && hasExplainer(skill)) setExplainer(true);
   }, [wantExplain, skill]);
 
   // Basics of a Premium drill is gated like its questions, unless they are already in it.
@@ -122,7 +122,7 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
     setRuleEli5(false);
   };
 
-  const explainable = canExplain(skill);
+  const explainable = hasExplainer(skill);
   const openExplainer = () => setExplainer(true);
   const overlay = explainer ? <BasicsExplainer exam={exam} skill={skill} onClose={() => setExplainer(false)} /> : null;
   const watchButton = explainable ? (

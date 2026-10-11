@@ -183,7 +183,7 @@ interface AppState {
   checkUserHasData: (userId: string) => Promise<boolean>;
   saveToFirestore: () => Promise<void>;
   resetAllData: () => void;
-  /** Delete one test's progress: "dmv" or a registry exam family id. */
+  /** Delete one test's progress: "dmv" (state choice included) or a registry exam family id. */
   resetExamData: (examId: string) => void;
   clearAllDataOnLogout: () => void;
 
@@ -1077,6 +1077,8 @@ export const useStore = create<AppState>()(
           examStates,
           ...(examId === 'dmv'
             ? {
+                // Back to the state picker, so DMV leaves the started list.
+                selectedState: null,
                 superAmazing: { ...state.superAmazing, enabled: false },
                 training: {
                   questionsAnswered: [],

@@ -93,17 +93,17 @@ export const ACT: ExamV2Config = {
   // with Craft and Structure so no drill is a handful of questions.
   // legacyKey carries progress over from the four section drills these replaced.
   drills: [
-    { key: "conventions", legacyKey: "english", name: "Conventions of Standard English", section: "english", domains: ["conventions"], blurb: "Punctuation, agreement, pronouns, modifiers and sentence boundaries, passage by passage." },
-    { key: "production", legacyKey: "english", name: "Production of Writing", section: "english", domains: ["production"], blurb: "Transitions, adding or deleting a sentence, placement, topic sentences and conclusions." },
-    { key: "language", legacyKey: "english", name: "Knowledge of Language", section: "english", domains: ["language"], blurb: "Concision, redundancy, precise word choice and a consistent tone." },
-    { key: "algebra", legacyKey: "math", name: "Preparing for Higher Math", section: "math", domains: ["algebra"], blurb: "Equations, exponents, quadratics, functions and sequences, with every step shown." },
-    { key: "geometry", legacyKey: "math", name: "Geometry and Statistics", section: "math", domains: ["geometry"], blurb: "Angles, triangles, circles, area, probability, mean and median." },
-    { key: "modeling", legacyKey: "math", name: "Essential Skills and Modeling", section: "math", domains: ["modeling"], blurb: "Rates, unit conversions, ratios, percents and real-world graphs." },
-    { key: "keyIdeas", legacyKey: "reading", name: "Key Ideas and Details", section: "reading", domains: ["keyIdeas"], blurb: "Main idea, explicit detail, inference, cause and effect, and how characters change." },
-    { key: "craftIntegration", legacyKey: "reading", name: "Craft, Structure and Integration", section: "reading", domains: ["craft", "integration"], blurb: "Words in context, author's purpose, how claims are supported, and paired passages." },
-    { key: "interpretation", legacyKey: "science", name: "Interpretation of Data", section: "science", domains: ["interpretation"], blurb: "Read tables and graphs, spot trends, interpolate and extrapolate." },
-    { key: "investigation", legacyKey: "science", name: "Scientific Investigation", section: "science", domains: ["investigation"], blurb: "Variables, controls, procedures and how to design the next experiment." },
-    { key: "evaluation", legacyKey: "science", name: "Evaluation of Models", section: "science", domains: ["evaluation"], blurb: "Test claims and hypotheses against data and weigh conflicting viewpoints." },
+    { key: "conventions", legacyKey: "english", name: "Conventions of Standard English", section: "english", domains: ["conventions"], blurb: "Punctuation, agreement, pronouns, modifiers and sentence boundaries, passage by passage.", basics: ["semicolons", "colons", "itsIts", "subjectVerb", "commaSplices", "apostrophes"] },
+    { key: "production", legacyKey: "english", name: "Production of Writing", section: "english", domains: ["production"], blurb: "Transitions, adding or deleting a sentence, placement, topic sentences and conclusions.", basics: ["transitions", "addingSentence", "deletingSentence", "topicSentences", "keepOnGoal"] },
+    { key: "language", legacyKey: "english", name: "Knowledge of Language", section: "english", domains: ["language"], blurb: "Concision, redundancy, precise word choice and a consistent tone.", basics: ["redundancy", "concision", "preciseWords", "matchingTone"] },
+    { key: "algebra", legacyKey: "math", name: "Preparing for Higher Math", section: "math", domains: ["algebra"], blurb: "Equations, exponents, quadratics, functions and sequences, with every step shown.", basics: ["solveX", "systems", "inequalities", "exponentRules", "factoring", "functionNotation"] },
+    { key: "geometry", legacyKey: "math", name: "Geometry and Statistics", section: "math", domains: ["geometry"], blurb: "Angles, triangles, circles, area, probability, mean and median.", basics: ["areaPerimeter", "triangleAngles", "pythagorean", "circleBasics", "meanMedian", "probabilityTable"] },
+    { key: "modeling", legacyKey: "math", name: "Essential Skills and Modeling", section: "math", domains: ["modeling"], blurb: "Rates, unit conversions, ratios, percents and real-world graphs.", basics: ["percents", "ratios", "unitConversion", "slope", "exponentialGrowth"] },
+    { key: "keyIdeas", legacyKey: "reading", name: "Key Ideas and Details", section: "reading", domains: ["keyIdeas"], blurb: "Main idea, explicit detail, inference, cause and effect, and how characters change.", basics: ["mainIdea", "findingDetail", "inference", "causeEffect", "sequenceEvents"] },
+    { key: "craftIntegration", legacyKey: "reading", name: "Craft, Structure and Integration", section: "reading", domains: ["craft", "integration"], blurb: "Words in context, author's purpose, how claims are supported, and paired passages.", basics: ["wordsInContext", "authorPurpose", "toneWords", "textStructure", "crossText", "claimSupport"] },
+    { key: "interpretation", legacyKey: "science", name: "Interpretation of Data", section: "science", domains: ["interpretation"], blurb: "Read tables and graphs, spot trends, interpolate and extrapolate.", basics: ["readingTable", "trends", "dataSupports"] },
+    { key: "investigation", legacyKey: "science", name: "Scientific Investigation", section: "science", domains: ["investigation"], blurb: "Variables, controls, procedures and how to design the next experiment.", basics: ["variables", "controls", "whyStep", "nextExperiment"] },
+    { key: "evaluation", legacyKey: "science", name: "Evaluation of Models", section: "science", domains: ["evaluation"], blurb: "Test claims and hypotheses against data and weigh conflicting viewpoints.", basics: ["dataSupports", "conflictingScientists", "betterModel"] },
   ],
   composite: {
     name: "Composite score",
@@ -127,7 +127,7 @@ export const ACT: ExamV2Config = {
   testLength: "2 hr 45 min",
   copy: {
     heroSubs: [
-      "Eleven skill drills on your phone, then two full timed ACTs on a desktop. Test 2 stays unseen until you sit it.",
+      "Start with Basics: a short rule and a few quick questions per skill, on your phone. Each drill then opens its exam-level questions, and two full timed ACTs wait on a desktop.",
       "Mastery first. English and Reading are passage work; practice the pace.",
       "Halfway through the sections. The full test will show your composite.",
       "Hit your composite goal on a full test to finish the plan.",

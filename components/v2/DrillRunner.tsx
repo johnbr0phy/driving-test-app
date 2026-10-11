@@ -18,6 +18,7 @@ import { getTigerAsset } from "@/lib/tigerAssets";
 import { useIsPremium } from "@/hooks/useIsPremium";
 import { useIsNativeApp } from "@/hooks/useIsNativeApp";
 import { isDrillLocked, otherPremiumExams } from "@/lib/v2/premium";
+import { basicsFor } from "@/lib/v2/basics";
 import { QuestionView } from "./QuestionView";
 import { useV2Paywall, V2Paywall } from "./V2Paywall";
 
@@ -48,6 +49,9 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
   const state = drill ? drillStateFor(drillsMap, exam.id, drill, allQuestions) : EMPTY_DRILL;
   const paywall = useV2Paywall(exam, "drill");
   const isNative = useIsNativeApp();
+
+  // Close goes back to the Basics overview when the drill has one.
+  const backHref = drill && basicsFor(drill).length ? routes.drill(drill.key) : routes.dashboard;
 
   const [question, setQuestion] = useState<QuestionV2 | null>(null);
   const [order, setOrder] = useState<number[]>([]);
@@ -113,7 +117,7 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
     return (
       <div className="v2-focus">
         <div className="v2-safe-top shrink-0 bg-white px-3 pb-2">
-          <Link href={routes.dashboard} className="v2-tap -ml-1 flex w-10 items-center justify-center rounded-full text-gray-500" aria-label="Back to dashboard">
+          <Link href={backHref} className="v2-tap -ml-1 flex w-10 items-center justify-center rounded-full text-gray-500" aria-label="Back">
             <X className="h-5 w-5" />
           </Link>
         </div>
@@ -148,7 +152,7 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
     <div className="v2-focus">
       <div className="v2-safe-top shrink-0 border-b border-gray-200 bg-white px-3 pb-2">
         <div className="flex items-center gap-2">
-          <Link href={routes.dashboard} className="v2-tap -ml-1 flex w-10 items-center justify-center rounded-full text-gray-500" aria-label="Back to dashboard">
+          <Link href={backHref} className="v2-tap -ml-1 flex w-10 items-center justify-center rounded-full text-gray-500" aria-label="Back">
             <X className="h-5 w-5" />
           </Link>
           <div className="min-w-0 flex-1">

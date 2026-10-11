@@ -1,0 +1,178 @@
+[
+  {
+    "id": "redundancy",
+    "name": "Cut the repeat",
+    "sub": "Saying the same thing twice",
+    "rule": "If two words or phrases mean the same thing, one of them has to go. The test calls this redundancy, and the shortest version that keeps the meaning wins.",
+    "trick": "Cover the suspicious phrase. If the sentence means exactly the same thing without it, delete it.",
+    "examples": [
+      { "kind": "bad", "text": "She returned back to the start.", "note": "Returned already means back." },
+      { "kind": "good", "text": "She returned to the start." }
+    ],
+    "another": { "text": "Common repeats to watch for: \"return back,\" \"end result,\" \"each and every,\" \"past history,\" \"completely finished,\" \"annual yearly.\" If you hear one of these, one word is doing nothing.", "example": "\"The final outcome at the end\" → \"The outcome\"" },
+    "questions": [
+      { "stem": "Which is best?", "options": ["The two twins looked alike.", "The twins looked alike."], "answer": 1, "why": "Twins are always two. \"Two twins\" repeats." },
+      { "stem": "Which is best?", "options": ["We will meet at 7 a.m. in the morning.", "We will meet at 7 a.m."], "answer": 1, "why": "a.m. already means morning." },
+      { "stem": "Which is best?", "options": ["The results were unexpected.", "The results were unexpected and surprising."], "answer": 0, "why": "Unexpected and surprising mean the same thing. Keep one." },
+      { "stem": "Which is best?", "options": ["He finished the race first, ahead of everyone else.", "He finished the race first."], "answer": 1, "why": "First already means ahead of everyone." },
+      { "stem": "Which is best?", "options": ["In my opinion, I think the plan will work.", "I think the plan will work."], "answer": 1, "why": "\"In my opinion\" and \"I think\" are the same statement. One is enough." }
+    ]
+  },
+  {
+    "id": "concision",
+    "name": "Shorter is better",
+    "sub": "Say it in fewer words",
+    "rule": "When two answers mean the same thing, the shorter one is almost always correct. Extra words that add no meaning are wrong.",
+    "trick": "Among the choices that are grammatically correct and mean the same, pick the shortest. Long phrases like \"due to the fact that\" are usually one word in disguise: \"because.\"",
+    "examples": [
+      { "kind": "bad", "text": "Due to the fact that it rained, we stayed in." },
+      { "kind": "good", "text": "Because it rained, we stayed in." }
+    ],
+    "another": { "text": "Imagine paying a dollar per word. \"At this point in time\" costs five dollars for what \"now\" says for one. The test rewards the cheap sentence every time, as long as nothing is lost.", "example": "\"in the event that\" → \"if\"\n\"has the ability to\" → \"can\"\n\"a large number of\" → \"many\"" },
+    "questions": [
+      { "stem": "Which is best?", "options": ["At this point in time, the store is closed.", "The store is closed now."], "answer": 1, "why": "\"At this point in time\" is a long way to say \"now.\"" },
+      { "stem": "Which is best?", "options": ["She has the ability to speak three languages.", "She can speak three languages."], "answer": 1, "why": "\"Has the ability to\" is \"can.\"" },
+      { "stem": "Which is best?", "options": ["Many students walk to school.", "A large number of students walk to school."], "answer": 0, "why": "Same meaning, fewer words." },
+      { "stem": "Which is best?", "options": ["In the event that it snows, school is canceled.", "If it snows, school is canceled."], "answer": 1, "why": "\"In the event that\" is \"if.\"" },
+      { "stem": "Which is best?", "options": ["The reason he left was because he was tired.", "He left because he was tired."], "answer": 1, "why": "\"The reason was because\" doubles up. \"Because\" alone carries it." }
+    ]
+  },
+  {
+    "id": "preciseWords",
+    "name": "The precise word",
+    "sub": "Right meaning, right strength",
+    "rule": "Pick the word that says exactly what the sentence needs: not too strong, not too weak, and the right meaning for the context.",
+    "trick": "Read the whole sentence for clues about size, feeling, or direction. Then ask which choice matches those clues most exactly.",
+    "examples": [
+      { "kind": "good", "text": "The tiny crack grew into a gap you could fit a hand through.", "note": "Tiny matches \"grew into,\" which needs a small start." },
+      { "kind": "bad", "text": "The enormous crack grew into a gap you could fit a hand through.", "note": "Enormous is too strong for something that then grows to hand-sized." }
+    ],
+    "another": { "text": "Words come in ladders of strength: damp, wet, soaked. Warm, hot, scorching. The sentence usually tells you which rung you need. Match the rung, not just the general idea.", "example": "\"She was ___ when her team lost the final by one point.\"\nSad is too weak. Devastated fits." },
+    "questions": [
+      { "blank": "After a week without rain, the soil was __ and cracked.", "options": ["damp", "dry", "soaked"], "answer": 1, "why": "No rain and cracked soil means dry. Damp and soaked go the wrong direction." },
+      { "blank": "The lecture was so __ that half the audience fell asleep.", "options": ["thrilling", "brief", "dull"], "answer": 2, "why": "People sleep through dull talks, not thrilling or brief ones." },
+      { "blank": "The hikers __ the last mile, too tired to lift their feet properly.", "options": ["sprinted", "trudged", "skipped"], "answer": 1, "why": "Too tired to lift their feet is trudging. Sprinting and skipping are energetic." },
+      { "blank": "The museum __ the painting after experts confirmed it was real.", "options": ["destroyed", "ignored", "purchased"], "answer": 2, "why": "Confirming it's real leads to buying it, not destroying or ignoring it." },
+      { "blank": "The storm caused __ damage: a few shingles and one broken window.", "options": ["catastrophic", "minor", "widespread"], "answer": 1, "why": "A few shingles and a window is minor. The colon lists the clue." }
+    ]
+  },
+  {
+    "id": "matchingTone",
+    "name": "Matching the tone",
+    "sub": "Formal passage, formal words",
+    "rule": "A word has to fit the voice of the passage around it. A formal report doesn't say \"super cool,\" and a casual story doesn't say \"henceforth.\"",
+    "trick": "Read the sentence before and after. If they sound like a textbook, pick the textbook word. If they sound like a friend talking, pick the friendly word.",
+    "examples": [
+      { "kind": "bad", "text": "The committee reviewed the budget and decided the numbers were totally bogus.", "note": "\"Totally bogus\" clashes with \"committee\" and \"reviewed.\"" },
+      { "kind": "good", "text": "The committee reviewed the budget and decided the numbers were inaccurate." }
+    ],
+    "another": { "text": "Think of clothing. Slang in a formal passage is like sneakers with a tuxedo. Stiff words in a casual passage are a tuxedo at the beach. Match what everyone else in the paragraph is wearing.", "example": "Formal: inaccurate, demonstrate, significant\nCasual: wrong, show, big" },
+    "questions": [
+      { "blank": "The study's authors __ that the drug reduced symptoms in most patients.", "options": ["reckon", "concluded", "figure"], "answer": 1, "why": "\"Study's authors\" and \"patients\" are formal. \"Concluded\" matches; \"reckon\" and \"figure\" are slang." },
+      { "blank": "My little brother __ his vegetables into his napkin when Mom wasn't looking.", "options": ["transferred", "stuffed", "relocated"], "answer": 1, "why": "A family story about a little brother is casual. \"Stuffed\" fits; the other two sound like a shipping manifest." },
+      { "blank": "Engineers __ the bridge for cracks every spring.", "options": ["check out", "inspect", "eyeball"], "answer": 1, "why": "Engineers and bridges call for \"inspect.\" The other two are too casual." },
+      { "blank": "Honestly, the sequel was __ compared with the first movie.", "options": ["inferior", "a letdown", "substandard"], "answer": 1, "why": "\"Honestly\" sets a chatty voice. \"A letdown\" matches it; the other two sound like a formal review." },
+      { "blank": "The mayor's speech __ the city's progress on housing.", "options": ["highlighted", "bragged about", "hyped up"], "answer": 0, "why": "A neutral report on a speech uses \"highlighted.\" The other two add attitude the sentence doesn't have." }
+    ]
+  },
+  {
+    "id": "addingSentence",
+    "name": "Should this sentence be added?",
+    "sub": "Only if it does a job for the paragraph",
+    "rule": "A sentence belongs in a paragraph only if it supports the paragraph's main point. Interesting but off-topic is still off-topic.",
+    "trick": "Name the paragraph's point in a few words. Then ask whether the new sentence helps make that point. If it's about something else, the answer is no, even if it's true.",
+    "passage": "Paragraph: Beavers reshape rivers. Their dams slow the water, which creates ponds, and the ponds become homes for fish, frogs, and birds.",
+    "examples": [
+      { "kind": "good", "text": "Add: \"A single dam can flood several acres.\"", "note": "Supports \"reshape rivers.\"" },
+      { "kind": "bad", "text": "Add: \"Beavers have orange teeth because of iron in the enamel.\"", "note": "Cool fact, nothing to do with rivers." }
+    ],
+    "another": { "text": "Every paragraph is a short speech with one point. A new sentence either hands the speaker a better example or interrupts them. The question is never \"is this true?\" It's \"does this help the speech?\"", "example": "Point: beavers change rivers\nHelps: flooding acres\nInterrupts: tooth color" },
+    "questions": [
+      { "passage": "Paragraph: The school's new schedule starts classes an hour later. Teachers report fewer students falling asleep, and attendance in first period has gone up.", "stem": "Should the writer add: \"Teenagers' bodies naturally want to sleep later than adults' do\"?", "options": ["Yes, it explains why the later start helps", "No, it is about sleep rather than school", "No, it repeats the first sentence"], "answer": 0, "why": "The paragraph is about why a later start works. A sentence on teen sleep gives the reason." },
+      { "passage": "Paragraph: The school's new schedule starts classes an hour later. Teachers report fewer students falling asleep, and attendance in first period has gone up.", "stem": "Should the writer add: \"The school was built in 1962\"?", "options": ["Yes, it gives background on the school", "No, it has nothing to do with the schedule change"], "answer": 1, "why": "True, but it doesn't help the point about the later start." },
+      { "passage": "Paragraph: Hand-washing is the simplest way to avoid getting sick. Soap breaks apart the outer layer of most viruses, and twenty seconds of scrubbing reaches the spots a quick rinse misses.", "stem": "Which sentence would best be added at the end?", "options": ["Hand sanitizer was invented in 1966.", "Studies show regular hand-washers get about a third fewer colds.", "Soap comes in many scents."], "answer": 1, "why": "Fewer colds is evidence for \"avoid getting sick.\" The other two wander off." },
+      { "passage": "Paragraph: Our town's farmers market has grown every year. It started with six stalls in a parking lot and now fills two blocks every Saturday.", "stem": "Should the writer add: \"The market also accepts food assistance cards, which brought in many new shoppers\"?", "options": ["No, it changes the subject to payment", "Yes, it gives a reason the market grew"], "answer": 1, "why": "The paragraph is about growth. A reason for the growth belongs." },
+      { "passage": "Paragraph: Cheetahs are built for speed. Their spines flex like springs, their claws grip like cleats, and their long tails steer them through turns.", "stem": "Should the writer add: \"Cheetahs are smaller than lions\"?", "options": ["Yes, it compares two big cats", "No, size compared with lions doesn't support the speed point"], "answer": 1, "why": "Every sentence is about speed. Size versus lions is a different topic." }
+    ]
+  },
+  {
+    "id": "deletingSentence",
+    "name": "Should this sentence be deleted?",
+    "sub": "Spotting the one that doesn't belong",
+    "rule": "A sentence should be deleted if it wanders away from the paragraph's point, repeats something already said, or breaks the flow between its neighbors.",
+    "trick": "Read the paragraph once with the sentence and once without it. If it reads better without, delete. If something is now missing, keep.",
+    "passage": "Paragraph: (1) The city planted 400 trees downtown last year. (2) Trees cool the street by as much as ten degrees in summer. (3) My cousin lives downtown. (4) Shop owners say more people now linger on the shaded sidewalks.",
+    "examples": [
+      { "kind": "good", "text": "Delete sentence 3.", "note": "The cousin has nothing to do with the trees." },
+      { "kind": "bad", "text": "Delete sentence 2.", "note": "It explains why the trees matter. Without it, sentence 4 comes out of nowhere." }
+    ],
+    "another": { "text": "The odd sentence out usually feels like a change of channel. You're reading about trees and suddenly it's about a cousin. That channel-change feeling is the signal. Trust it, then confirm by reading without the sentence.", "example": "trees → cooling → [cousin] → shade and shoppers\nThe bracket is the channel change." },
+    "questions": [
+      { "passage": "(1) Sourdough bread uses wild yeast instead of packaged yeast. (2) The wild yeast comes from a starter, a mix of flour and water that bakers feed for days. (3) Rye flour is darker than wheat flour. (4) That slow process is what gives sourdough its tangy taste.", "stem": "Which sentence should be deleted?", "options": ["Sentence 2", "Sentence 3", "Sentence 4"], "answer": 1, "why": "Rye versus wheat color has nothing to do with the sourdough process. Remove it and 2 flows straight into 4." },
+      { "passage": "(1) The robotics club meets every Tuesday. (2) This year the team built a robot that sorts recycling. (3) It separates cans from bottles with a camera and a small arm. (4) The team built a robot that sorts recycling this year.", "stem": "Which sentence should be deleted?", "options": ["Sentence 1", "Sentence 3", "Sentence 4"], "answer": 2, "why": "Sentence 4 repeats sentence 2 almost word for word." },
+      { "passage": "(1) Sea turtles return to the beach where they hatched to lay their own eggs. (2) Scientists think they navigate using Earth's magnetic field. (3) Some turtles travel thousands of miles to get back. (4) Turtles can hold their breath for hours.", "stem": "Which sentence should be deleted?", "options": ["Sentence 2", "Sentence 3", "Sentence 4"], "answer": 2, "why": "Holding breath is a different topic from returning to the home beach." },
+      { "passage": "(1) Our neighborhood started a tool library. (2) Members borrow drills, ladders, and saws instead of buying them. (3) A drill can cost over a hundred dollars. (4) In its first year the library saved members an estimated $30,000.", "stem": "Should sentence 3 be kept or deleted?", "options": ["Kept, because it shows why borrowing saves money", "Deleted, because prices are off topic"], "answer": 0, "why": "The paragraph is about saving money by borrowing. A drill's price makes the savings concrete, and it sets up sentence 4." },
+      { "passage": "(1) The marathon route passes four of the city's bridges. (2) Runners cross the oldest one at mile six. (3) Bridges are usually built from steel or concrete. (4) The final bridge, at mile twenty-five, has the steepest climb of the race.", "stem": "Which sentence should be deleted?", "options": ["Sentence 1", "Sentence 3", "Sentence 4"], "answer": 1, "why": "How bridges are built in general is a change of channel from the race route." }
+    ]
+  },
+  {
+    "id": "topicSentences",
+    "name": "Topic sentences",
+    "sub": "The sentence that tells you what's coming",
+    "rule": "A topic sentence states the paragraph's main point up front. The best one covers everything the paragraph goes on to say, without being so broad it could start any paragraph.",
+    "trick": "Read the body of the paragraph first. Then pick the opener that predicts it: not too narrow (only covers one detail), not too wide (covers the whole subject).",
+    "passage": "Body: Its battery lasts two days. The camera works well in low light. And it costs a hundred dollars less than last year's model.",
+    "examples": [
+      { "kind": "good", "text": "The new phone improves on the old one in three ways.", "note": "Predicts battery, camera, and price." },
+      { "kind": "bad", "text": "The new phone has a better battery.", "note": "Too narrow. Says nothing about camera or price." }
+    ],
+    "another": { "text": "A topic sentence is a promise. Battery, camera, price is three promises kept. \"Phones are popular\" promises nothing specific. \"The battery is better\" promises one thing and then the paragraph talks about three. Pick the promise the paragraph keeps.", "example": "Too wide: Technology changes fast.\nToo narrow: The camera is better.\nJust right: It improves in three ways." },
+    "questions": [
+      { "passage": "Body: ___ Farmers lost most of the corn crop. Rivers dropped so low that barges could not move grain. In some towns, drinking water had to be trucked in.", "stem": "Which topic sentence fits best?", "options": ["Corn is an important crop.", "The drought hurt the region in several ways.", "Weather is unpredictable."], "answer": 1, "why": "Crops, rivers, and drinking water are three kinds of drought damage. The first option is too narrow, the third too wide." },
+      { "passage": "Body: ___ He learned to code from online videos. He built his first app at fourteen. By sixteen he had two thousand users and a small income.", "stem": "Which topic sentence fits best?", "options": ["Dev taught himself to build apps while still in high school.", "Apps are easy to make.", "Dev likes videos."], "answer": 0, "why": "It predicts the whole arc: self-taught, built apps, young. The others miss most of the body." },
+      { "passage": "Body: ___ The old gym floor was replaced. The library got new shelves. Every classroom now has a projector.", "stem": "Which topic sentence fits best?", "options": ["The school replaced its gym floor.", "Schools need money.", "The school made several upgrades over the summer."], "answer": 2, "why": "Gym, library, classrooms. \"Several upgrades\" covers all three." },
+      { "passage": "Body: ___ They can hear a mouse under a foot of snow. Their feathers are shaped to fly without a sound. Their eyes gather light that ours cannot.", "stem": "Which topic sentence fits best?", "options": ["Owls hunt well at night because of several special features.", "Owls have good hearing.", "Many animals are nocturnal."], "answer": 0, "why": "Hearing, silent flight, and night vision are all features for night hunting. The right opener names the pattern." },
+      { "passage": "Body: ___ The entry fee doubled. Parking is now a mile away. And the famous food stands were replaced by chain restaurants.", "stem": "Which topic sentence fits best?", "options": ["The fair has gotten worse in recent years.", "The fair has a new parking lot.", "Fairs are fun."], "answer": 0, "why": "Three complaints add up to \"gotten worse.\" Parking alone is too narrow." }
+    ]
+  },
+  {
+    "id": "notesToSentence",
+    "name": "From notes to a sentence",
+    "sub": "Using only the notes that answer the goal",
+    "rule": "When a question gives you notes and a goal, the right sentence uses the notes that serve the goal and leaves out the rest. Every choice is true; only one does the job.",
+    "trick": "Underline the goal (\"emphasize how fast,\" \"compare the two,\" \"introduce the topic to someone who has never heard of it\"). Then check each choice against the goal alone.",
+    "passage": "Notes: The Eiffel Tower was finished in 1889. It is 330 meters tall. It was built for a world's fair. It was meant to be taken down after 20 years.\n\nGoal: Emphasize that the tower was not meant to be permanent.",
+    "examples": [
+      { "kind": "good", "text": "Built for an 1889 world's fair, the Eiffel Tower was meant to be taken down after 20 years.", "note": "Hits the goal directly." },
+      { "kind": "bad", "text": "The Eiffel Tower is 330 meters tall and was finished in 1889.", "note": "True, but says nothing about being temporary." }
+    ],
+    "another": { "text": "Every answer choice is built from the notes, so none of them is false. That's the trap. You're not checking facts. You're checking which sentence a writer with that specific goal would actually write.", "example": "Goal: emphasize height → use 330 meters\nGoal: emphasize temporary → use 20 years" },
+    "questions": [
+      { "passage": "Notes: Hummingbirds weigh less than a nickel. They beat their wings up to 80 times a second. They can fly backward. They migrate up to 500 miles nonstop.\n\nGoal: Emphasize how far hummingbirds can travel.", "stem": "Which sentence best meets the goal?", "options": ["Hummingbirds beat their wings up to 80 times a second.", "Though they weigh less than a nickel, hummingbirds can migrate up to 500 miles nonstop.", "Hummingbirds are the only birds that can fly backward."], "answer": 1, "why": "Only this one mentions distance. The nickel detail makes the 500 miles more impressive, which serves the goal." },
+      { "passage": "Notes: The town library opened in 1901. It has 40,000 books. It offers free coding classes. It is open seven days a week.\n\nGoal: Introduce the library to someone unfamiliar with it.", "stem": "Which sentence best meets the goal?", "options": ["The town library, open since 1901, holds 40,000 books and runs programs like free coding classes.", "The coding classes are free.", "It is open seven days a week."], "answer": 0, "why": "An introduction gives the big picture. The other two are single details with no setup." },
+      { "passage": "Notes: Marie Curie won the Nobel Prize in Physics in 1903. She won the Nobel Prize in Chemistry in 1911. She was the first woman to win a Nobel. She discovered two elements.\n\nGoal: Emphasize that Curie won in two different fields.", "stem": "Which sentence best meets the goal?", "options": ["Marie Curie was the first woman to win a Nobel Prize.", "Marie Curie discovered two elements.", "Marie Curie won Nobel Prizes in both physics (1903) and chemistry (1911)."], "answer": 2, "why": "Two fields, named. The other facts are true but aim at different goals." },
+      { "passage": "Notes: Composting turns food scraps into soil. It takes about three months. It keeps waste out of landfills. Landfill food waste produces methane, a greenhouse gas.\n\nGoal: Explain why composting helps the environment.", "stem": "Which sentence best meets the goal?", "options": ["Composting takes about three months.", "Composting keeps food scraps out of landfills, where they would produce methane, a greenhouse gas.", "Composting turns scraps into soil."], "answer": 1, "why": "Landfills, methane, greenhouse gas: that's the environmental reason. The others describe composting without saying why it helps." },
+      { "passage": "Notes: The 1906 San Francisco earthquake lasted about 45 seconds. Fires burned for three days afterward. The fires destroyed more buildings than the quake did. About 3,000 people died.\n\nGoal: Emphasize that the fires did more damage than the shaking.", "stem": "Which sentence best meets the goal?", "options": ["The 1906 earthquake lasted about 45 seconds.", "About 3,000 people died in the 1906 earthquake.", "Although the shaking lasted only 45 seconds, the fires that followed burned for three days and destroyed more buildings than the quake itself."], "answer": 2, "why": "It sets the shaking against the fires and says which did more. That is exactly the goal." }
+    ]
+  },
+  {
+    "id": "keepOnGoal",
+    "name": "Keep it on the goal",
+    "sub": "The sentence that does what the question asks",
+    "rule": "Some questions tell you what a sentence should accomplish: set up the next paragraph, give an example, acknowledge the other side. Pick the choice that does that specific job.",
+    "trick": "Ignore which choice sounds nicest. Read the goal in the question, then ask of each choice: does it do exactly that?",
+    "passage": "Paragraph ends: ... so the new recycling bins were a success downtown.\nNext paragraph begins: In the suburbs, however, the bins mostly sat empty.",
+    "examples": [
+      { "kind": "good", "text": "Goal: transition to the next paragraph. \"Not every neighborhood saw the same result.\"", "note": "Points forward to the suburbs." },
+      { "kind": "bad", "text": "\"Recycling saves energy.\"", "note": "True, but it doesn't set up the contrast coming next." }
+    ],
+    "another": { "text": "The goal in the question is like a job posting. \"Wanted: a sentence that gives an example.\" Three applicants are fine sentences with the wrong résumé. Hire the one that matches the posting.", "example": "Posting: give a specific example\nHire: \"The library's bin filled twice a day.\"\nReject: \"Recycling is important.\"" },
+    "questions": [
+      { "passage": "The writer wants a sentence that gives a specific example of the previous claim: \"Small changes to a room can make it feel bigger.\"", "stem": "Which choice best accomplishes the goal?", "options": ["Hanging a mirror across from a window can double the light and open up the space.", "Many people wish their rooms were bigger.", "Room size matters to buyers."], "answer": 0, "why": "A mirror is one specific small change with its effect. The others are general statements." },
+      { "passage": "The writer wants to acknowledge a possible objection before answering it. The paragraph argues the city should build more bike lanes.", "stem": "Which choice best accomplishes the goal?", "options": ["Bike lanes are good for the environment.", "Some drivers worry that bike lanes will take away parking.", "The city should start building right away."], "answer": 1, "why": "Naming the drivers' worry is acknowledging the other side. The others just continue the argument." },
+      { "passage": "The paragraph has described how a volcano forms. The writer wants a sentence that transitions to the next paragraph, which is about how scientists predict eruptions.", "stem": "Which choice best accomplishes the goal?", "options": ["Volcanoes exist on every continent.", "Lava can reach 2,000 degrees.", "Knowing how a volcano forms is only half the job; the harder question is knowing when it will erupt."], "answer": 2, "why": "It closes the forming topic and opens the predicting topic in one move." },
+      { "passage": "The writer wants a concluding sentence that restates the main point: the school garden has taught students more than how to grow food.", "stem": "Which choice best accomplishes the goal?", "options": ["The garden is next to the parking lot.", "In the end, the garden's real harvest has been patience, teamwork, and pride.", "Tomatoes need six hours of sun."], "answer": 1, "why": "It says what students learned beyond growing food. The others are stray details." },
+      { "passage": "The writer wants to introduce the paragraph's topic: the surprising history of the pencil.", "stem": "Which choice best accomplishes the goal?", "options": ["The pencil, so ordinary today, has a stranger past than most people would guess.", "Pencils are usually yellow.", "I prefer pens."], "answer": 0, "why": "It names the topic and promises surprise, which is what the paragraph will deliver." }
+    ]
+  }
+]

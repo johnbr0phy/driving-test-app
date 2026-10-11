@@ -102,7 +102,7 @@ export const SAT: ExamV2Config = {
   testLength: "2 hr 14 min",
   copy: {
     heroSubs: [
-      "Start with Basics: a short rule and a few quick questions per skill, on your phone. Each drill then opens its exam-level questions, and two full timed tests wait on a desktop.",
+      "Learn the basics, then drill each skill. Two timed tests wait on a desktop.",
       "Mastery first. Each drill is one skill area the SAT scores you on.",
       "Halfway through the skills. The full test will show where you stand.",
       "Hit your goal on the full test to finish the plan.",

@@ -128,7 +128,7 @@ export const ACT: ExamV2Config = {
   testLength: "2 hr 45 min",
   copy: {
     heroSubs: [
-      "Start with Basics: a short rule and a few quick questions per skill, on your phone. Each drill then opens its exam-level questions, and two full timed ACTs wait on a desktop.",
+      "Learn the basics, then drill each skill. Two timed ACTs wait on a desktop.",
       "Mastery first. English and Reading are passage work; practice the pace.",
       "Halfway through the sections. The full test will show your composite.",
       "Hit your composite goal on a full test to finish the plan.",

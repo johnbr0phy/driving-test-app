@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { ReactNode, useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
@@ -42,7 +42,8 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
   const [run, setRun] = useState<BasicsRun | null>(null);
   const [current, setCurrent] = useState<number | null>(null);
   const [picked, setPicked] = useState<number | null>(null);
-  const [eli5Open, setEli5Open] = useState(false);
+  const [ruleOpen, setRuleOpen] = useState(false);
+  const [ruleEli5, setRuleEli5] = useState(false);
   const [another, setAnother] = useState(false);
 
   useEffect(() => {
@@ -105,6 +106,11 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
     }
   };
 
+  const closeRule = () => {
+    setRuleOpen(false);
+    setRuleEli5(false);
+  };
+
   // ---- Learn / review card ----
   if (screen === "learn" || screen === "review") {
     const review = screen === "review";
@@ -117,13 +123,7 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
             <h1 className="text-2xl font-bold leading-tight text-gray-900 dark:text-gray-50">{skill.name}</h1>
             {review && <p className="text-sm text-gray-600 dark:text-gray-300">That one&apos;s tricky. Here&apos;s the rule again before the next question.</p>}
             <RuleCard skill={skill} />
-            {another ? (
-              <Eli5Card skill={skill} />
-            ) : (
-              <button type="button" onClick={() => setAnother(true)} className="self-start text-sm font-semibold text-brand">
-                Still confused? ELI5
-              </button>
-            )}
+            <Eli5Toggle skill={skill} open={another} onOpen={() => setAnother(true)} />
           </div>
         </div>
         <div className="v2-safe-bottom shrink-0 border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-3 pt-3">
@@ -195,8 +195,8 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
             <div className="truncate text-sm font-bold">{skill.name}</div>
             <div className="text-xs text-gray-500 dark:text-gray-400">{run.mastered.length} of {total} right{comingBack ? ` · ${comingBack} coming back` : ""}</div>
           </div>
-          <button type="button" onClick={() => setEli5Open(true)} className="rounded-full border-2 border-gray-200 dark:border-gray-800 px-3 py-1.5 text-sm font-semibold text-brand">
-            ELI5
+          <button type="button" onClick={() => setRuleOpen(true)} className="rounded-full border-2 border-gray-200 px-3 py-1.5 text-sm font-semibold text-brand">
+            Rule
           </button>
         </div>
         <div className="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-gray-200 dark:bg-gray-700">
@@ -259,11 +259,14 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
         </div>
       </div>
 
-      {eli5Open && (
-        <div className="fixed inset-0 z-[90] flex items-end justify-center bg-black/50" role="dialog" aria-modal="true" aria-label="ELI5" onClick={() => setEli5Open(false)}>
+      {ruleOpen && (
+        <div className="fixed inset-0 z-[90] flex items-end justify-center bg-black/50" role="dialog" aria-modal="true" aria-label="The rule" onClick={closeRule}>
           <div className="v2-pop max-h-[85%] w-full max-w-2xl overflow-y-auto rounded-t-2xl bg-white dark:bg-gray-900 p-4" onClick={(e) => e.stopPropagation()}>
-            <Eli5Card skill={skill} />
-            <button type="button" onClick={() => setEli5Open(false)} className="v2-tap mt-4 w-full rounded-xl bg-brand text-base font-bold text-white">
+            <div className="flex flex-col gap-5">
+              <RuleCard skill={skill} />
+              <Eli5Toggle skill={skill} open={ruleEli5} onOpen={() => setRuleEli5(true)} />
+            </div>
+            <button type="button" onClick={closeRule} className="v2-tap mt-5 w-full rounded-xl bg-brand text-base font-bold text-white">
               Back to the question
             </button>
           </div>
@@ -289,40 +292,60 @@ function Header({ title, sub, closeHref }: { title: string; sub: string; closeHr
   );
 }
 
+function SectionLabel({ children }: { children: ReactNode }) {
+  return <div className="text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400">{children}</div>;
+}
+
 /** The skill explained like you're five: a picture a kid already knows, plus a tiny example story. */
 function Eli5Card({ skill }: { skill: BasicsSkill }) {
   return (
-    <div className="flex flex-col gap-2 border-l-4 border-brand pl-3">
-      <div className="text-sm font-bold text-gray-900 dark:text-gray-50">ELI5 <span className="font-normal text-gray-600 dark:text-gray-300">(explained like you&apos;re five)</span></div>
-      <p className="text-[15px] text-gray-800 dark:text-gray-100">{skill.another.text}</p>
-      <div className="whitespace-pre-line rounded-xl bg-brand-light px-3 py-2 text-[15px] text-gray-900 dark:text-gray-50">{skill.another.example}</div>
+    <div>
+      <SectionLabel>ELI5 · explained like you&apos;re five</SectionLabel>
+      <p className="mt-1.5 text-[17px] leading-relaxed text-gray-900 dark:text-gray-50">{skill.another.text}</p>
+      <div className="mt-3 whitespace-pre-line border-l-2 border-brand pl-3 text-[17px] leading-relaxed text-gray-800 dark:text-gray-100">{skill.another.example}</div>
     </div>
+  );
+}
+
+/** "Still confused? ELI5" link that turns into the ELI5 card. */
+function Eli5Toggle({ skill, open, onOpen }: { skill: BasicsSkill; open: boolean; onOpen: () => void }) {
+  if (open) return <Eli5Card skill={skill} />;
+  return (
+    <button type="button" onClick={onOpen} className="self-start text-[15px] font-semibold text-brand">
+      Still confused? ELI5
+    </button>
   );
 }
 
 /** The rule, the trick, the skill's table if any, and the examples. */
 function RuleCard({ skill }: { skill: BasicsSkill }) {
   const marks = { good: "✓", bad: "✗", eg: "→" };
-  const markClass = { good: "bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300", bad: "bg-amber-100 dark:bg-amber-900 text-amber-700 dark:text-amber-300", eg: "bg-brand-light text-brand" };
+  const markClass = { good: "text-green-600 dark:text-green-300", bad: "text-red-500 dark:text-red-300", eg: "text-brand" };
   return (
-    <div className="flex flex-col gap-3">
-      <p className="text-xl font-medium leading-snug text-gray-900 dark:text-gray-50">{skill.rule}</p>
-      <div className="rounded-xl bg-yellow-100 dark:bg-yellow-900 px-4 py-3">
-        <div className="text-[11px] font-bold uppercase tracking-wider text-yellow-900 dark:text-yellow-200">The trick</div>
-        <div className="text-[15px] text-gray-900 dark:text-gray-50">{skill.trick}</div>
+    <div className="flex flex-col gap-5">
+      <div>
+        <SectionLabel>The rule</SectionLabel>
+        <p className="mt-1.5 text-xl font-semibold leading-snug text-gray-900 dark:text-gray-50">{skill.rule}</p>
+      </div>
+      <div>
+        <SectionLabel>The trick</SectionLabel>
+        <p className="mt-1.5 text-[17px] leading-relaxed text-gray-900 dark:text-gray-50">{skill.trick}</p>
       </div>
       {skill.table && <DataTable table={skill.table} />}
       {skill.passage && <Passage text={skill.passage} />}
-      <div className="flex flex-col gap-2">
-        {skill.examples.map((e, i) => (
-          <div key={i} className="flex items-start gap-2.5 rounded-xl bg-gray-100 dark:bg-gray-800 px-3 py-2.5">
-            <span className={`mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-sm font-bold ${markClass[e.kind]}`}>{marks[e.kind]}</span>
-            <div className="min-w-0 text-[15px] text-gray-900 dark:text-gray-50">
-              {e.text}
-              {e.note && <div className="mt-0.5 text-sm text-gray-500 dark:text-gray-400">{e.note}</div>}
-            </div>
-          </div>
-        ))}
+      <div>
+        <SectionLabel>Examples</SectionLabel>
+        <ul className="mt-1 divide-y divide-gray-200 dark:divide-gray-800">
+          {skill.examples.map((e, i) => (
+            <li key={i} className="flex items-start gap-3 py-2.5">
+              <span className={`w-5 shrink-0 text-center text-[17px] font-bold leading-relaxed ${markClass[e.kind]}`}>{marks[e.kind]}</span>
+              <div className="min-w-0 text-[17px] leading-relaxed text-gray-900 dark:text-gray-50">
+                {e.text}
+                {e.note && <div className="text-[15px] leading-snug text-gray-500 dark:text-gray-400">{e.note}</div>}
+              </div>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );

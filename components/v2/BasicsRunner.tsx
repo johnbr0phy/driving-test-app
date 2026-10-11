@@ -47,8 +47,8 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
   const [ruleOpen, setRuleOpen] = useState(false);
   const [ruleEli5, setRuleEli5] = useState(false);
   const [another, setAnother] = useState(false);
-  // The explainer overlay on the question screen (after a miss, or from the Rule button), and whether the
-  // learn/review screen shows the text card instead of the video.
+  // The explainer overlay on the question screen (after a miss, or "Listen instead" on the rule sheet), and
+  // whether the learn/review screen shows the text card instead of the video.
   const [explainer, setExplainer] = useState<null | "miss" | "rule">(null);
   const [readMode, setReadMode] = useState(false);
 
@@ -225,8 +225,8 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
             <div className="truncate text-sm font-bold">{skill.name}</div>
             <div className="text-xs text-gray-500 dark:text-gray-400">{run.mastered.length} of {total} right{comingBack ? ` · ${comingBack} coming back` : ""}</div>
           </div>
-          <button type="button" onClick={() => (explainable ? setExplainer("rule") : setRuleOpen(true))} className="flex items-center gap-1.5 rounded-full border-2 border-gray-200 px-3 py-1.5 text-sm font-semibold text-brand">
-            {explainable && <Play className="h-4 w-4" />} Rule
+          <button type="button" onClick={() => setRuleOpen(true)} className="rounded-full border-2 border-gray-200 px-3 py-1.5 text-sm font-semibold text-brand">
+            Rule
           </button>
         </div>
         <div className="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-gray-200 dark:bg-gray-700">

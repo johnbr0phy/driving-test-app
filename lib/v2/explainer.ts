@@ -12,6 +12,10 @@ import voiced from "./voiced-skills.json";
  * between the pair are what the animation highlights. Worked (math `eg`
  * steps) and Data (table or passage) templates come later.
  *
+ * The storyboard is rule, trick, the bad sentence, the good one, then
+ * "now you try": under 30 seconds. The ELI5 picture stays on the rule card
+ * behind its button, for whoever still wants it after that.
+ *
  * Each beat has what the voice says, split into `lead` (a spoken lead-in
  * that is not shown), `show` (the text on screen, highlighted word by word
  * as it is read) and `tail` (lines that appear as they are spoken). Word
@@ -20,7 +24,7 @@ import voiced from "./voiced-skills.json";
  * Without that file the explainer runs silently on estimated timings.
  */
 
-export type ExplainerBeatId = "rule" | "trick" | "bad" | "good" | "eli5" | "close";
+export type ExplainerBeatId = "rule" | "trick" | "bad" | "good" | "close";
 
 export interface ExplainerToken {
   text: string;
@@ -125,8 +129,7 @@ export function buildExplainer(skill: BasicsSkill): ExplainerBeat[] {
     beats.push(beat("bad", "This one doesn't work:", bad.text, bad.note ? [bad.note] : [], { tokens: diffTokens(bad.text, good.text), example: bad }));
     beats.push(beat("good", "This one works:", good.text, good.note ? [good.note] : [], { tokens: diffTokens(good.text, bad.text), example: good }));
   }
-  beats.push(beat("eli5", "Think of it this way.", skill.another.text, skill.another.example.split("\n").map((l) => l.trim()).filter(Boolean)));
-  beats.push(beat("close", "", "Now try it again."));
+  beats.push(beat("close", "", "Now you try."));
   return beats;
 }
 

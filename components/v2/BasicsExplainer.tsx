@@ -2,16 +2,17 @@
 
 import { ReactNode, useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
-import { Pause, Play, RotateCcw, X } from "lucide-react";
+import { BookOpen, Pause, Play, RotateCcw, X } from "lucide-react";
 import { ExamV2Config } from "@/lib/v2/types";
 import { BasicsSkill } from "@/lib/v2/basics";
 import { ExplainerBeat, ExplainerBeatTiming, ExplainerManifest, beatOffsets, buildExplainer, estimateTimings, explainerAudioUrl, explainerManifestUrl, words } from "@/lib/v2/explainer";
 import { getTigerAsset, TigerExpression } from "@/lib/tigerAssets";
 
 /**
- * The 40-second explainer for one Basics skill: the tiger walks through the
- * rule, the trick, a sentence that breaks it, one that follows it, and the
- * ELI5 picture, with the words lighting up as they are read.
+ * The 30-second explainer for one Basics skill: the tiger walks through the
+ * rule, the trick, a sentence that breaks it and one that follows it, with
+ * the words lighting up as they are read. It is the first thing a voiced
+ * skill shows; the text card is one tap away ("Read it instead").
  *
  * It opens on a Play screen. That tap is the user gesture phones require
  * before any sound, so play() is called inside it and nothing has to guess
@@ -23,13 +24,23 @@ import { getTigerAsset, TigerExpression } from "@/lib/tigerAssets";
 
 type Status = "ready" | "starting" | "audio" | "silent";
 
-const FACES: Record<ExplainerBeat["id"], TigerExpression> = { rule: 3, trick: 4, bad: 6, good: 1, eli5: 2, close: 1 };
-const LABELS: Record<ExplainerBeat["id"], string> = { rule: "The rule", trick: "The trick", bad: "Doesn't work", good: "Works", eli5: "ELI5 · explained like you're five", close: "" };
+const FACES: Record<ExplainerBeat["id"], TigerExpression> = { rule: 3, trick: 4, bad: 6, good: 1, close: 2 };
+const LABELS: Record<ExplainerBeat["id"], string> = { rule: "The rule", trick: "The trick", bad: "Doesn't work", good: "Works", close: "" };
 
 /** After Play, how long to wait for the manifest before running silently. */
 const MANIFEST_WAIT_MS = 8000;
 
-export function BasicsExplainer({ exam, skill, onClose, onTryAgain }: { exam: ExamV2Config; skill: BasicsSkill; onClose: () => void; onTryAgain?: () => void }) {
+export function BasicsExplainer({ exam, skill, doneLabel, onDone, onClose, onRead }: {
+  exam: ExamV2Config;
+  skill: BasicsSkill;
+  /** The primary button at the end (and what Skip does): "Got it, try 2 questions", "Try it again"... */
+  doneLabel: string;
+  onDone: () => void;
+  /** The X in the corner. */
+  onClose: () => void;
+  /** "Read it instead" on the Play screen, when the text card is the alternative. */
+  onRead?: () => void;
+}) {
   const beats = useMemo(() => buildExplainer(skill), [skill]);
   const estimated = useMemo(() => estimateTimings(beats), [beats]);
 
@@ -193,7 +204,6 @@ export function BasicsExplainer({ exam, skill, onClose, onTryAgain }: { exam: Ex
     return () => window.removeEventListener("keydown", onKey);
   });
 
-  const tryAgain = onTryAgain ?? onClose;
   const seconds = Math.round((manifest?.duration ?? estimated[estimated.length - 1].end) || total);
   const subline = status === "silent" ? `Explainer · ${Math.round(total)} seconds · no sound` : `Explainer · ${seconds} seconds`;
 
@@ -208,6 +218,11 @@ export function BasicsExplainer({ exam, skill, onClose, onTryAgain }: { exam: Ex
             <div className="truncate text-sm font-bold">{skill.name}</div>
             <div className="text-xs text-gray-500 dark:text-gray-400">{subline}</div>
           </div>
+          {onRead && (
+            <button type="button" onClick={onRead} className="flex items-center gap-1.5 rounded-full border-2 border-gray-200 dark:border-gray-800 px-3 py-1.5 text-sm font-semibold text-brand">
+              <BookOpen className="h-4 w-4" /> Read it
+            </button>
+          )}
         </div>
         <div className="mt-2 flex gap-1">
           {timings.map((tm, k) =>
@@ -237,7 +252,7 @@ export function BasicsExplainer({ exam, skill, onClose, onTryAgain }: { exam: Ex
               <Bubble>
                 <SectionLabel>{skill.sub}</SectionLabel>
                 <p className="text-2xl font-bold leading-tight">{skill.name}, in {seconds} seconds.</p>
-                <p className="mt-2 text-[17px] leading-relaxed text-gray-600 dark:text-gray-300">The tiger talks you through the rule, one sentence that breaks it and one that follows it. Sound on.</p>
+                <p className="mt-2 text-[17px] leading-relaxed text-gray-600 dark:text-gray-300">The rule, the trick, one sentence that breaks it and one that follows it. Sound on.</p>
               </Bubble>
             </>
           )}
@@ -248,7 +263,7 @@ export function BasicsExplainer({ exam, skill, onClose, onTryAgain }: { exam: Ex
         <div className="mx-auto flex max-w-2xl items-center gap-2">
           {!running ? (
             <>
-              <button type="button" onClick={onClose} className="v2-tap px-3 text-sm font-semibold text-gray-500 dark:text-gray-400">
+              <button type="button" onClick={onDone} className="v2-tap px-3 text-sm font-semibold text-gray-500 dark:text-gray-400">
                 Skip
               </button>
               <button type="button" onClick={start} disabled={status === "starting"} className="v2-tap flex flex-1 items-center justify-center gap-2 rounded-xl bg-brand text-base font-bold text-white disabled:opacity-70">
@@ -260,8 +275,8 @@ export function BasicsExplainer({ exam, skill, onClose, onTryAgain }: { exam: Ex
               <button type="button" onClick={() => seek(0)} className="v2-tap flex items-center justify-center gap-1.5 rounded-xl border-2 border-gray-200 dark:border-gray-800 px-4 text-sm font-semibold text-gray-700 dark:text-gray-200" aria-label="Replay">
                 <RotateCcw className="h-4 w-4" /> Replay
               </button>
-              <button type="button" onClick={tryAgain} className="v2-tap flex-1 rounded-xl bg-brand text-base font-bold text-white">
-                Try it again
+              <button type="button" onClick={onDone} className="v2-tap flex-1 rounded-xl bg-brand text-base font-bold text-white">
+                {doneLabel}
               </button>
             </>
           ) : (
@@ -270,7 +285,7 @@ export function BasicsExplainer({ exam, skill, onClose, onTryAgain }: { exam: Ex
                 {paused ? <Play className="h-5 w-5" /> : <Pause className="h-5 w-5" />}
               </button>
               <div className="flex-1 text-center text-sm text-gray-500 dark:text-gray-400">{buffering ? "Loading sound..." : "Tap anywhere to pause"}</div>
-              <button type="button" onClick={onClose} className="v2-tap px-3 text-sm font-semibold text-gray-500 dark:text-gray-400">
+              <button type="button" onClick={onDone} className="v2-tap px-3 text-sm font-semibold text-gray-500 dark:text-gray-400">
                 Skip
               </button>
             </>
@@ -329,11 +344,7 @@ function BeatBody({ beat, spoken }: { beat: ExplainerBeat; spoken: number }) {
       )}
       {beat.tail.map((line, j) =>
         spoken > tailAt[j] ? (
-          beat.id === "eli5" ? (
-            <div key={j} className="v2-pop border-l-2 border-brand pl-3 text-[17px] leading-relaxed text-gray-800 dark:text-gray-100">{line}</div>
-          ) : (
-            <p key={j} className="v2-pop text-[15px] leading-snug text-gray-600 dark:text-gray-300">{line}</p>
-          )
+          <p key={j} className="v2-pop text-[15px] leading-snug text-gray-600 dark:text-gray-300">{line}</p>
         ) : null
       )}
     </div>

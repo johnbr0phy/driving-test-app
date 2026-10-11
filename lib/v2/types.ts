@@ -115,6 +115,12 @@ export interface DrillDef {
   section: string;
   domains: string[];
   blurb: string;
+  /**
+   * Basics skill ids (data/v2/basics/skills.json) this drill opens with:
+   * short rule cards and one-line questions before the exam-level items.
+   * Free on every drill, Premium or not.
+   */
+  basics?: string[];
 }
 
 export interface ExamV2Config {
@@ -226,4 +232,13 @@ export interface DrillState {
   wrongQueue: string[];
   seen: number;
   correct: number;
+}
+
+/** One learned Basics skill (lib/v2/basics), keyed `${examId}:${skillId}`. */
+export interface BasicsSkillState {
+  done: boolean;
+  /** Questions answered right on the first try in the run that completed it. */
+  firstTry: number;
+  total: number;
+  completedAt: string;
 }

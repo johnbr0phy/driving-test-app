@@ -1,7 +1,7 @@
 import { create } from "zustand";
 import { persist, createJSONStorage } from "zustand/middleware";
 import { withoutExamV2 } from "@/lib/v2/merge";
-import { DrillState, TestResultV2, TestSessionV2 } from "@/lib/v2/types";
+import { BasicsSkillState, DrillState, TestResultV2, TestSessionV2 } from "@/lib/v2/types";
 import { EMPTY_DRILL } from "@/lib/v2/training";
 import { trackFunnelStep } from "@/lib/funnel";
 
@@ -15,6 +15,8 @@ interface V2State {
   sessions: Record<string, TestSessionV2>;
   results: TestResultV2[];
   drills: Record<string, DrillState>;
+  /** Learned Basics skills, keyed by lib/v2/basics basicsKey(). */
+  basics: Record<string, BasicsSkillState>;
   goals: Record<string, number>;
   /** Account this local copy was last synced with (null = guest data). */
   syncedUid: string | null;
@@ -25,6 +27,7 @@ interface V2State {
   /** base: the state to build on when the key has none yet (a carried-over drill). */
   answerDrill: (key: string, questionId: string, correct: boolean, base?: DrillState) => void;
   resetDrill: (key: string) => void;
+  completeBasics: (key: string, state: Omit<BasicsSkillState, "done" | "completedAt">) => void;
   /** Delete one exam's sessions, results, drills and goal. */
   resetExam: (examId: string) => void;
   setGoal: (examId: string, goal: number) => void;
@@ -32,8 +35,8 @@ interface V2State {
   replaceData: (data: V2Data, syncedUid: string | null) => void;
 }
 
-export type V2Data = Pick<V2State, "sessions" | "results" | "drills" | "goals">;
-export const EMPTY_V2: V2Data = { sessions: {}, results: [], drills: {}, goals: {} };
+export type V2Data = Pick<V2State, "sessions" | "results" | "drills" | "basics" | "goals">;
+export const EMPTY_V2: V2Data = { sessions: {}, results: [], drills: {}, basics: {}, goals: {} };
 
 export const useV2Store = create<V2State>()(
   persist(
@@ -41,6 +44,7 @@ export const useV2Store = create<V2State>()(
       sessions: {},
       results: [],
       drills: {},
+      basics: {},
       goals: {},
       syncedUid: null,
 
@@ -68,9 +72,13 @@ export const useV2Store = create<V2State>()(
         });
       },
       resetDrill: (key) => set((s) => ({ drills: { ...s.drills, [key]: EMPTY_DRILL } })),
+      completeBasics: (key, state) => {
+        trackFunnelStep("answered");
+        set((s) => ({ basics: { ...s.basics, [key]: { ...state, done: true, completedAt: new Date().toISOString() } } }));
+      },
       resetExam: (examId) => set((s) => withoutExamV2(s, examId)),
       setGoal: (examId, goal) => set((s) => ({ goals: { ...s.goals, [examId]: goal } })),
-      replaceData: (data, syncedUid) => set({ ...data, syncedUid }),
+      replaceData: (data, syncedUid) => set({ ...EMPTY_V2, ...data, syncedUid }),
     }),
     {
       name: "tigertest-v2",

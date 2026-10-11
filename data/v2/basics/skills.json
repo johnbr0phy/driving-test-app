@@ -1,0 +1,435 @@
+[
+  {
+    "id": "semicolons",
+    "name": "Semicolons",
+    "sub": "Joining two full sentences",
+    "rule": "A semicolon ( ; ) joins two complete sentences.",
+    "trick": "Cover one side. Can each side stand alone as a sentence? If both can, a semicolon works.",
+    "examples": [
+      { "kind": "good", "text": "I studied all week; the test felt easy." },
+      { "kind": "bad", "text": "Because I studied all week; the test felt easy.", "note": "\"Because I studied all week\" can't stand alone." }
+    ],
+    "another": { "text": "Think of a semicolon as a period in disguise. If a period would work in that spot, a semicolon works too.", "example": "I studied all week. The test felt easy.\n→ I studied all week; the test felt easy." },
+    "questions": [
+      { "blank": "The bus was late__ we walked to school.", "options": [";", ","], "answer": 0, "why": "\"The bus was late\" and \"we walked to school\" are both full sentences. A comma alone can't join two sentences." },
+      { "blank": "After the game__ we got pizza.", "options": [";", ","], "answer": 1, "why": "\"After the game\" can't stand alone, so a semicolon doesn't work there." },
+      { "blank": "My phone died__ I couldn't text you back.", "options": [";", ","], "answer": 0, "why": "Both sides are full sentences. A period would work, so a semicolon works." },
+      { "stem": "Which one is correct?", "options": ["Running late; she grabbed her keys.", "She was running late; she grabbed her keys."], "answer": 1, "why": "\"Running late\" isn't a full sentence. \"She was running late\" is." },
+      { "blank": "Coach blew the whistle__ practice was over.", "options": [",", ";"], "answer": 1, "why": "Two full sentences. Cover either side and the other still stands alone." }
+    ]
+  },
+  {
+    "id": "colons",
+    "name": "Colons",
+    "sub": "Lists and explanations",
+    "rule": "A colon ( : ) comes after a complete sentence and points to what's next: a list, an example, or an explanation.",
+    "trick": "Read only the words before the colon. Are they a full sentence? If not, no colon.",
+    "examples": [
+      { "kind": "good", "text": "I need three things: eggs, milk, and bread." },
+      { "kind": "bad", "text": "I need: eggs, milk, and bread.", "note": "\"I need\" isn't a full sentence." }
+    ],
+    "another": { "text": "A colon is like saying \"here it is.\" Say the first part out loud. If it sounds finished, a colon can follow.", "example": "She had one goal. Here it is: win state." },
+    "questions": [
+      { "blank": "She had one goal__ win the state title.", "options": [":", ";"], "answer": 0, "why": "\"Win the state title\" isn't a full sentence, so no semicolon. The colon points to what her goal was." },
+      { "blank": "We packed__ snacks, water, and sunscreen.", "options": [":", ""], "answer": 1, "why": "\"We packed\" isn't a full sentence. Let the list follow the verb with no punctuation." },
+      { "blank": "The answer was simple__ practice every day.", "options": [",", ":"], "answer": 1, "why": "The first part is a full sentence, and the second part explains it. That's a colon's job." },
+      { "stem": "Which one is correct?", "options": ["My favorite subjects are: math and art.", "I have two favorite subjects: math and art."], "answer": 1, "why": "\"My favorite subjects are\" isn't finished. \"I have two favorite subjects\" is." },
+      { "blank": "He brought everything he needed__ a pencil, a calculator, and his ID.", "options": [":", ";"], "answer": 0, "why": "A full sentence, then a list of what he brought. Colon." }
+    ]
+  },
+  {
+    "id": "itsIts",
+    "name": "Its or it's",
+    "sub": "The most common apostrophe trap",
+    "rule": "it's means \"it is\" or \"it has.\" its means \"belongs to it.\"",
+    "trick": "Swap in \"it is.\" If the sentence still makes sense, use it's. If not, use its.",
+    "examples": [
+      { "kind": "good", "text": "It's cold out. The dog wagged its tail." },
+      { "kind": "bad", "text": "The dog wagged it's tail.", "note": "\"The dog wagged it is tail\" makes no sense." }
+    ],
+    "another": { "text": "Its works like his and her. You'd never write hi's or he'r, so never put an apostrophe in its when something owns something.", "example": "The cat licked her paw.\nThe cat licked its paw." },
+    "questions": [
+      { "blank": "__ going to rain later.", "options": ["It's", "Its"], "answer": 0, "why": "\"It is going to rain later\" works, so it's." },
+      { "blank": "The team lost __ first game.", "options": ["it's", "its"], "answer": 1, "why": "\"Lost it is first game\" doesn't work. The game belongs to the team, so its." },
+      { "blank": "__ been a long week.", "options": ["Its", "It's"], "answer": 1, "why": "It's can also mean \"it has.\" \"It has been a long week.\"" },
+      { "blank": "The phone fell and __ screen cracked.", "options": ["it's", "its"], "answer": 1, "why": "The screen belongs to the phone. \"It is screen\" makes no sense." },
+      { "blank": "I think __ your turn.", "options": ["its", "it's"], "answer": 1, "why": "\"I think it is your turn\" works, so it's." }
+    ]
+  },
+  {
+    "id": "subjectVerb",
+    "name": "Subject and verb",
+    "sub": "is or are, has or have",
+    "rule": "The verb has to match its subject. One thing: is, was, has. More than one: are, were, have.",
+    "trick": "Cross out the words between the subject and the verb, like \"of the cookies.\" Then read it again.",
+    "examples": [
+      { "kind": "good", "text": "The box of cookies is empty.", "note": "Cross out \"of cookies\": The box is empty." },
+      { "kind": "bad", "text": "The box of cookies are empty.", "note": "The box is one thing." }
+    ],
+    "another": { "text": "The test hides the real subject behind extra words. Ask: what is the sentence about? That's the subject. Ignore everything after \"of,\" \"from,\" \"on,\" and \"with.\"", "example": "The keys (on the table) are mine.\n→ The keys are mine." },
+    "questions": [
+      { "blank": "The list of chores __ long.", "options": ["is", "are"], "answer": 0, "why": "Cross out \"of chores\": The list is long. One list." },
+      { "blank": "My friends from camp __ visiting.", "options": ["is", "are"], "answer": 1, "why": "Cross out \"from camp\": My friends are visiting. More than one friend." },
+      { "blank": "Each of the players __ a jersey.", "options": ["have", "has"], "answer": 1, "why": "\"Each\" means one at a time. Cross out \"of the players\": Each has a jersey." },
+      { "blank": "The keys on the table __ mine.", "options": ["is", "are"], "answer": 1, "why": "Cross out \"on the table\": The keys are mine." },
+      { "blank": "The noise from the trucks __ loud.", "options": ["was", "were"], "answer": 0, "why": "Cross out \"from the trucks\": The noise was loud. It's the noise, not the trucks." }
+    ]
+  },
+  {
+    "id": "commaInterrupters",
+    "name": "Commas around extra info",
+    "sub": "Interrupters and names",
+    "rule": "Extra information that could be lifted out of the sentence gets a comma on both sides.",
+    "trick": "Lift the phrase out. If the sentence still works without it, wrap it in two commas. One comma is never enough.",
+    "examples": [
+      { "kind": "good", "text": "My brother, who is twelve, plays drums.", "note": "Lift out \"who is twelve\": My brother plays drums." },
+      { "kind": "bad", "text": "My brother, who is twelve plays drums.", "note": "Only one comma. The second one is missing." }
+    ],
+    "another": { "text": "The two commas work like a pair of handles. Whatever sits between them can be picked up and carried away, and the sentence closes up behind it.", "example": "Our coach, a former pro, runs a tough practice.\n→ Our coach runs a tough practice." },
+    "questions": [
+      { "stem": "Which one is correct?", "options": ["The movie, which came out in May, was a hit.", "The movie, which came out in May was a hit."], "answer": 0, "why": "\"Which came out in May\" is extra info. It needs a comma on both sides." },
+      { "stem": "Which one is correct?", "options": ["Maya my cousin, is visiting.", "Maya, my cousin, is visiting."], "answer": 1, "why": "\"My cousin\" can be lifted out: Maya is visiting. Two commas." },
+      { "stem": "Which one is correct?", "options": ["The park, however, closes at dusk.", "The park however, closes at dusk."], "answer": 0, "why": "\"However\" interrupts the sentence, so it gets a comma on each side." },
+      { "stem": "Which one is correct?", "options": ["Students, who skip breakfast, do worse on tests.", "Students who skip breakfast do worse on tests."], "answer": 1, "why": "\"Who skip breakfast\" isn't extra here. Lift it out and the sentence says all students do worse. No commas." },
+      { "stem": "Which one is correct?", "options": ["The new phone, released last week, sold out.", "The new phone released last week, sold out."], "answer": 0, "why": "\"Released last week\" can be lifted out: The new phone sold out. Two commas." }
+    ]
+  },
+  {
+    "id": "danglingModifiers",
+    "name": "Who is doing the action?",
+    "sub": "Dangling modifiers",
+    "rule": "A describing phrase at the start of a sentence has to describe the very next thing after the comma.",
+    "trick": "Read the opening phrase, then ask \"who did that?\" That person or thing must come right after the comma.",
+    "examples": [
+      { "kind": "good", "text": "Running to the bus, Jamal dropped his bag.", "note": "Who was running? Jamal. He comes right after the comma." },
+      { "kind": "bad", "text": "Running to the bus, the bag fell.", "note": "The bag wasn't running." }
+    ],
+    "another": { "text": "Picture it literally. If the sentence puts a backpack on a treadmill or has a pizza eating dinner, the wrong thing is sitting after the comma.", "example": "Covered in cheese, we ate the pizza. (We're covered in cheese?)\n→ Covered in cheese, the pizza was perfect." },
+    "questions": [
+      { "stem": "Which one is correct?", "options": ["Walking home, the rain soaked Priya.", "Walking home, Priya got soaked by the rain."], "answer": 1, "why": "Who was walking home? Priya, so she comes right after the comma." },
+      { "stem": "Which one is correct?", "options": ["After finishing the test, the pencils were put away by the students.", "After finishing the test, the students put away their pencils."], "answer": 1, "why": "Who finished the test? The students. Pencils don't finish tests." },
+      { "stem": "Which one is correct?", "options": ["Exhausted from practice, the couch looked perfect to Leo.", "Exhausted from practice, Leo collapsed on the couch."], "answer": 1, "why": "Who was exhausted? Leo, not the couch." },
+      { "stem": "Which one is correct?", "options": ["Built in 1920, the house still has its original windows.", "Built in 1920, the owners love the house's original windows."], "answer": 0, "why": "What was built in 1920? The house. The owners weren't built." },
+      { "stem": "Which one is correct?", "options": ["Hoping for a snow day, the forecast was checked every hour.", "Hoping for a snow day, we checked the forecast every hour."], "answer": 1, "why": "Who was hoping? We were. A forecast can't hope." }
+    ]
+  },
+  {
+    "id": "commaSplices",
+    "name": "Comma splices",
+    "sub": "A comma can't join two sentences by itself",
+    "rule": "Two complete sentences can't be joined with only a comma. Use a period, a semicolon, or a comma plus and, but, or so.",
+    "trick": "If you could put a period there, a comma alone is wrong.",
+    "examples": [
+      { "kind": "good", "text": "It was raining, so we stayed in." },
+      { "kind": "bad", "text": "It was raining, we stayed in.", "note": "Two full sentences held together by a comma. That's a splice." }
+    ],
+    "another": { "text": "A comma is too weak to hold two sentences apart on its own. It needs a helper word (and, but, so) or has to be swapped for something stronger: a period or a semicolon.", "example": "It was raining, we stayed in. ✗\nIt was raining. We stayed in. ✓\nIt was raining; we stayed in. ✓\nIt was raining, so we stayed in. ✓" },
+    "questions": [
+      { "stem": "Which one is correct?", "options": ["The store was closed, we went home.", "The store was closed, so we went home."], "answer": 1, "why": "Both halves are full sentences. The comma needs a helper word like so." },
+      { "stem": "Which one is correct?", "options": ["I love this song; I play it every day.", "I love this song, I play it every day."], "answer": 0, "why": "Two full sentences. A semicolon can hold them; a comma alone can't." },
+      { "stem": "Which one is correct?", "options": ["She practiced for months, she still felt nervous.", "She practiced for months, but she still felt nervous."], "answer": 1, "why": "Comma plus but joins two sentences correctly. Comma alone is a splice." },
+      { "stem": "Which one is correct?", "options": ["Dinner is ready, come eat.", "Dinner is ready. Come eat."], "answer": 1, "why": "\"Dinner is ready\" and \"come eat\" are both full sentences. A period fixes the splice." },
+      { "stem": "Which one is correct?", "options": ["Hoping to win, the team practiced late.", "The team practiced late, they hoped to win."], "answer": 0, "why": "The second option joins two full sentences with only a comma. The first opens with a describing phrase, which is fine." }
+    ]
+  },
+  {
+    "id": "apostrophes",
+    "name": "Apostrophes",
+    "sub": "Owning something vs more than one",
+    "rule": "An apostrophe shows owning (the dog's bowl). Plain plurals never get one (two dogs).",
+    "trick": "Ask: does something belong to it? Yes: apostrophe. Is it just more than one? No apostrophe.",
+    "examples": [
+      { "kind": "good", "text": "The girl's bike. The girls' bikes. Three girls." },
+      { "kind": "bad", "text": "I have two dog's.", "note": "Nothing belongs to the dogs. Just two dogs." }
+    ],
+    "another": { "text": "For a group that owns something, the apostrophe goes after the s. One girl's bike. Two girls' bikes. Say how many owners first, then add the apostrophe after that word.", "example": "one teacher → the teacher's desk\nmany teachers → the teachers' lounge" },
+    "questions": [
+      { "blank": "The __ tail is fluffy.", "options": ["cats", "cat's"], "answer": 1, "why": "The tail belongs to the cat. Apostrophe." },
+      { "blank": "We saw three __ at the park.", "options": ["dogs", "dog's"], "answer": 0, "why": "Just more than one dog. Nothing belongs to them. No apostrophe." },
+      { "blank": "Both __ lockers were open.", "options": ["students'", "students"], "answer": 0, "why": "More than one student, and the lockers belong to them. Apostrophe after the s." },
+      { "blank": "__ car is in the shop.", "options": ["Marcus", "Marcus's"], "answer": 1, "why": "The car belongs to Marcus. One owner, so apostrophe then s." },
+      { "blank": "The __ are selling tickets.", "options": ["seniors", "senior's"], "answer": 0, "why": "More than one senior, nothing owned. No apostrophe." }
+    ]
+  },
+  {
+    "id": "transitions",
+    "name": "Transition words",
+    "sub": "However, therefore, for example",
+    "rule": "A transition word tells the reader how the next sentence connects to the last one: a contrast, a result, or an example.",
+    "trick": "Read the sentence before and the sentence after. Do they disagree (however), does one cause the other (therefore), or is the second an example (for example)?",
+    "examples": [
+      { "kind": "eg", "text": "It rained all day. However, the game went on.", "note": "Disagree: rain vs game went on." },
+      { "kind": "eg", "text": "It rained all day. Therefore, the game was canceled.", "note": "Cause: rain led to canceled." }
+    ],
+    "another": { "text": "Try the three families out loud. Contrast: however, but, still. Result: therefore, so, as a result. Example or more of the same: for example, in addition, also. Pick the family first, then the word.", "example": "She trained hard. ___, she won.\nResult family → Therefore, she won." },
+    "questions": [
+      { "blank": "The trail was steep. __, we reached the top before noon.", "options": ["However", "Therefore"], "answer": 0, "why": "Steep trail vs reaching the top early. They pull in different directions, so a contrast word." },
+      { "blank": "He forgot his lunch. __, he was hungry all afternoon.", "options": ["However", "As a result"], "answer": 1, "why": "Forgetting lunch caused the hunger. Result word." },
+      { "blank": "Many animals hibernate. __, bears sleep most of the winter.", "options": ["For example", "In contrast"], "answer": 0, "why": "Bears are an example of animals that hibernate." },
+      { "blank": "The library is quiet. __, it has fast wifi.", "options": ["However", "In addition"], "answer": 1, "why": "Both are good things about the library. Adding, not contrasting." },
+      { "blank": "The recipe looked easy. __, it took three hours.", "options": ["Therefore", "However"], "answer": 1, "why": "Looked easy vs took three hours. Contrast." }
+    ]
+  },
+  {
+    "id": "slope",
+    "name": "Slope and starting value",
+    "sub": "What the numbers in y = mx + b mean",
+    "rule": "In y = mx + b, m is the slope: how much y changes each step. b is the start: the value of y when x is 0.",
+    "trick": "The number attached to x is the slope. The number by itself is the start.",
+    "examples": [
+      { "kind": "eg", "text": "y = 3x + 5", "note": "Slope 3, starts at 5." },
+      { "kind": "eg", "text": "Cost = 40 + 12m", "note": "$40 to start, then $12 more each month." }
+    ],
+    "another": { "text": "Picture a phone plan. You pay a fee once (the start), then the same amount every month (the slope).", "example": "$40 fee, then $12 a month\n→ C = 12m + 40" },
+    "questions": [
+      { "stem": "What is the slope of y = 4x − 7?", "options": ["4", "−7", "7"], "answer": 0, "why": "4 is attached to x, so it's the slope." },
+      { "stem": "Where does y = 2x + 9 start (the y-intercept)?", "options": ["2", "11", "9"], "answer": 2, "why": "9 is the number by itself. When x is 0, y is 9." },
+      { "stem": "A gym costs C = 25 + 10m dollars for m months. What does 25 mean?", "options": ["The cost each month", "The sign-up fee", "The total after a year"], "answer": 1, "why": "25 is the number by itself, so it's the start: what you pay before any months." },
+      { "stem": "Same gym: C = 25 + 10m. What does 10 mean?", "options": ["The cost each month", "The sign-up fee", "The number of months"], "answer": 0, "why": "10 is attached to m (months), so it's how much the cost goes up each month." },
+      { "stem": "Which line is steeper?", "options": ["y = 2x + 8", "y = 5x + 1"], "answer": 1, "why": "Steeper means a bigger slope. 5 is bigger than 2. The 8 only moves where the line starts." }
+    ]
+  },
+  {
+    "id": "solveX",
+    "name": "Solving for x",
+    "sub": "Undo what was done to x",
+    "rule": "To solve for x, undo each operation in reverse order. Whatever you do to one side, do to the other.",
+    "trick": "Undo adding with subtracting, undo multiplying with dividing. Clear the loose number first, then the number stuck to x.",
+    "examples": [
+      { "kind": "eg", "text": "3x + 4 = 19", "note": "Subtract 4: 3x = 15. Divide by 3: x = 5." },
+      { "kind": "eg", "text": "x − 6 = 10", "note": "Add 6: x = 16." }
+    ],
+    "another": { "text": "Think of x as wrapped in layers. 3x + 4 means x was multiplied by 3, then 4 was added. Unwrap in reverse: take off the +4 first, then the ×3.", "example": "2x − 5 = 9\n+5 both sides → 2x = 14\n÷2 both sides → x = 7" },
+    "questions": [
+      { "stem": "x + 8 = 15. What is x?", "options": ["23", "7", "8"], "answer": 1, "why": "Undo the +8 by subtracting 8 from both sides: x = 7." },
+      { "stem": "4x = 28. What is x?", "options": ["7", "24", "32"], "answer": 0, "why": "Undo the ×4 by dividing both sides by 4: x = 7." },
+      { "stem": "2x + 3 = 11. What is x?", "options": ["7", "4", "5"], "answer": 1, "why": "Subtract 3: 2x = 8. Divide by 2: x = 4." },
+      { "stem": "5x − 10 = 20. What is x?", "options": ["2", "6", "4"], "answer": 1, "why": "Add 10: 5x = 30. Divide by 5: x = 6." },
+      { "stem": "x/3 = 9. What is x?", "options": ["3", "12", "27"], "answer": 2, "why": "Undo the ÷3 by multiplying both sides by 3: x = 27." }
+    ]
+  },
+  {
+    "id": "systems",
+    "name": "What a system's solution is",
+    "sub": "Two equations, one answer that fits both",
+    "rule": "The solution to a system is the one (x, y) pair that makes both equations true at the same time. On a graph, it's where the two lines cross.",
+    "trick": "To check an answer, plug the x and y into both equations. If either one fails, it's not the solution.",
+    "examples": [
+      { "kind": "eg", "text": "x + y = 7 and x − y = 1", "note": "Try (4, 3): 4 + 3 = 7 ✓ and 4 − 3 = 1 ✓. Solution." },
+      { "kind": "bad", "text": "Try (5, 2) for the same system", "note": "5 + 2 = 7 ✓ but 5 − 2 = 3 ✗. Not the solution." }
+    ],
+    "another": { "text": "Each equation is a line. A single line has endless points on it. Two different lines share only one point, and that shared point is the solution.", "example": "Parallel lines never cross → no solution.\nSame line twice → every point works, infinitely many." },
+    "questions": [
+      { "stem": "Which pair solves x + y = 10 and x − y = 4?", "options": ["(7, 3)", "(5, 5)", "(6, 4)"], "answer": 0, "why": "7 + 3 = 10 ✓ and 7 − 3 = 4 ✓. (5, 5) and (6, 4) pass the first equation but fail the second." },
+      { "stem": "Two lines cross at (2, 5). What is the solution to that system?", "options": ["x = 5, y = 2", "x = 2, y = 5", "There is no solution"], "answer": 1, "why": "The crossing point is the solution. The first number is x, the second is y." },
+      { "stem": "Two lines are parallel and never touch. How many solutions does the system have?", "options": ["One", "Infinitely many", "None"], "answer": 2, "why": "No crossing point means no (x, y) pair works for both. No solution." },
+      { "stem": "Is (3, 1) a solution to y = x − 2 and x + y = 4?", "options": ["Yes", "No, it fails the first equation", "No, it fails the second equation"], "answer": 0, "why": "y = 3 − 2 = 1 ✓ and 3 + 1 = 4 ✓. Both work." },
+      { "stem": "Is (1, 4) a solution to y = 2x + 2 and y = x + 2?", "options": ["Yes", "No"], "answer": 1, "why": "First: 2(1) + 2 = 4 ✓. Second: 1 + 2 = 3, not 4 ✗. It has to pass both." }
+    ]
+  },
+  {
+    "id": "inequalities",
+    "name": "Inequalities",
+    "sub": "Reading the sign, and when it flips",
+    "rule": "Solve an inequality like an equation. One extra rule: if you multiply or divide both sides by a negative number, flip the sign.",
+    "trick": "The open side of the sign faces the bigger thing. x > 3 means x is bigger than 3. Flip only on a negative multiply or divide.",
+    "examples": [
+      { "kind": "eg", "text": "x + 2 > 5 → x > 3", "note": "Subtracting 2 doesn't flip anything." },
+      { "kind": "eg", "text": "−2x > 6 → x < −3", "note": "Divided by −2, so the sign flipped." }
+    ],
+    "another": { "text": "Check with a number. After solving −2x > 6, you got x < −3. Try x = −4: −2(−4) = 8, and 8 > 6 ✓. If your check fails, the sign went the wrong way.", "example": "x ≥ 5 means 5 or anything bigger.\nx < 5 means anything smaller than 5, not 5 itself." },
+    "questions": [
+      { "stem": "Which number makes x > 4 true?", "options": ["4", "5", "3"], "answer": 1, "why": "x has to be bigger than 4. 4 itself doesn't count, since the sign isn't ≥." },
+      { "stem": "Solve x − 3 ≤ 2.", "options": ["x ≤ 5", "x ≥ 5", "x ≤ −1"], "answer": 0, "why": "Add 3 to both sides. No negative multiply or divide, so the sign stays." },
+      { "stem": "Solve −3x < 12.", "options": ["x < −4", "x > −4", "x < 4"], "answer": 1, "why": "Divide by −3 and flip the sign: x > −4. Check x = 0: −3(0) = 0 < 12 ✓." },
+      { "stem": "Solve 2x + 1 > 7.", "options": ["x > 3", "x < 3", "x > 4"], "answer": 0, "why": "Subtract 1: 2x > 6. Divide by positive 2: x > 3. No flip." },
+      { "stem": "A ride requires h ≥ 48 inches. Who can ride?", "options": ["Someone 47 inches tall", "Someone exactly 48 inches tall"], "answer": 1, "why": "≥ means 48 or more. Exactly 48 counts." }
+    ]
+  },
+  {
+    "id": "percents",
+    "name": "Percents",
+    "sub": "Percent of, percent off, percent up",
+    "rule": "Percent means \"out of 100.\" To find a percent of a number, turn the percent into a decimal and multiply.",
+    "trick": "Move the decimal two places left: 30% → 0.30. Then multiply.",
+    "examples": [
+      { "kind": "eg", "text": "30% of 50", "note": "0.30 × 50 = 15" },
+      { "kind": "eg", "text": "Price goes up 10%", "note": "Multiply by 1.10" }
+    ],
+    "another": { "text": "Start with 10%: move the decimal one spot left. 10% of 80 is 8. Build the rest from that. 20% is two of those. 5% is half of one.", "example": "10% of 80 = 8\n20% of 80 = 16\n5% of 80 = 4" },
+    "questions": [
+      { "stem": "What is 10% of 80?", "options": ["8", "0.8", "10"], "answer": 0, "why": "Move the decimal one spot left: 80 → 8." },
+      { "stem": "What is 25% of 40?", "options": ["4", "10", "25"], "answer": 1, "why": "0.25 × 40 = 10. Or: 25% is a quarter, and a quarter of 40 is 10." },
+      { "stem": "Shoes cost $60 and are 50% off. What's the sale price?", "options": ["$30", "$10", "$50"], "answer": 0, "why": "50% is half. Half of $60 is $30 off, so you pay $30." },
+      { "stem": "A $20 shirt goes up 10%. What's the new price?", "options": ["$21", "$30", "$22"], "answer": 2, "why": "10% of 20 is 2. Then 20 + 2 = 22. Same as 20 × 1.10." },
+      { "stem": "12 out of 50 students walk to school. What percent is that?", "options": ["12%", "24%", "6%"], "answer": 1, "why": "Out of 50 is half of out of 100. Double both: 24 out of 100, so 24%." }
+    ]
+  },
+  {
+    "id": "ratios",
+    "name": "Ratios and rates",
+    "sub": "Scaling a recipe up or down",
+    "rule": "A ratio compares two amounts. If one amount gets multiplied, the other gets multiplied by the same number.",
+    "trick": "Find what you multiplied the known number by. Multiply the other number by the same thing.",
+    "examples": [
+      { "kind": "eg", "text": "2 cups flour for 3 eggs. How much flour for 9 eggs?", "note": "3 → 9 is ×3, so 2 → 6 cups." },
+      { "kind": "eg", "text": "60 miles in 1 hour. How far in 4 hours?", "note": "1 → 4 is ×4, so 60 → 240 miles." }
+    ],
+    "another": { "text": "Find the amount for one first. If 4 tickets cost $20, one ticket is $5. Then multiply by however many you need. That works even when the numbers don't scale neatly.", "example": "4 tickets → $20\n1 ticket → $5\n7 tickets → $35" },
+    "questions": [
+      { "stem": "A recipe uses 3 apples for 2 pies. How many apples for 6 pies?", "options": ["6", "9", "12"], "answer": 1, "why": "2 → 6 pies is ×3. So 3 → 9 apples." },
+      { "stem": "A car goes 150 miles on 5 gallons. How far on 1 gallon?", "options": ["30 miles", "50 miles", "145 miles"], "answer": 0, "why": "150 ÷ 5 = 30 miles per gallon." },
+      { "stem": "5 pencils cost $2. How much do 20 pencils cost?", "options": ["$4", "$10", "$8"], "answer": 2, "why": "5 → 20 is ×4. So $2 → $8." },
+      { "stem": "The ratio of cats to dogs at a shelter is 3 to 4. There are 12 dogs. How many cats?", "options": ["9", "16", "11"], "answer": 0, "why": "4 → 12 dogs is ×3. So 3 → 9 cats." },
+      { "stem": "A printer prints 40 pages in 2 minutes. How long for 100 pages?", "options": ["4 minutes", "5 minutes", "10 minutes"], "answer": 1, "why": "40 pages in 2 minutes is 20 pages a minute. 100 ÷ 20 = 5 minutes." }
+    ]
+  },
+  {
+    "id": "unitConversion",
+    "name": "Unit conversion",
+    "sub": "Minutes to hours, feet to inches",
+    "rule": "To change units, multiply or divide by the conversion number. Going to a smaller unit, the number gets bigger. Going to a bigger unit, the number gets smaller.",
+    "trick": "Ask: should I end up with more or fewer? Inches are smaller than feet, so 3 feet becomes more inches (36), not fewer.",
+    "examples": [
+      { "kind": "eg", "text": "3 feet to inches", "note": "Smaller unit, more of them: 3 × 12 = 36 inches." },
+      { "kind": "eg", "text": "180 minutes to hours", "note": "Bigger unit, fewer of them: 180 ÷ 60 = 3 hours." }
+    ],
+    "another": { "text": "Write the conversion as a fraction that equals 1 and put the unit you want to get rid of on the bottom so it cancels.", "example": "2.5 hours × (60 min / 1 hour) = 150 min\nThe hours cancel, minutes stay." },
+    "questions": [
+      { "stem": "How many minutes are in 2 hours?", "options": ["60", "120", "200"], "answer": 1, "why": "Minutes are smaller, so more of them: 2 × 60 = 120." },
+      { "stem": "How many feet are in 48 inches?", "options": ["4", "12", "576"], "answer": 0, "why": "Feet are bigger, so fewer of them: 48 ÷ 12 = 4." },
+      { "stem": "A snack has 1.5 kilograms of nuts. How many grams is that?", "options": ["150", "1,500", "15"], "answer": 1, "why": "1 kilogram is 1,000 grams. 1.5 × 1,000 = 1,500 grams." },
+      { "stem": "A movie runs 150 minutes. How long is that in hours?", "options": ["1.5 hours", "2.5 hours", "15 hours"], "answer": 1, "why": "150 ÷ 60 = 2.5 hours." },
+      { "stem": "A room is 4 yards long. How many feet is that?", "options": ["12", "48", "1.33"], "answer": 0, "why": "1 yard is 3 feet. 4 × 3 = 12 feet." }
+    ]
+  },
+  {
+    "id": "meanMedian",
+    "name": "Mean and median",
+    "sub": "Two kinds of average",
+    "rule": "Mean: add everything up and divide by how many. Median: put the numbers in order and take the middle one.",
+    "trick": "Median always starts with sorting. With an even count, the median is halfway between the two middle numbers.",
+    "examples": [
+      { "kind": "eg", "text": "3, 7, 5", "note": "Mean: 15 ÷ 3 = 5. Median: sort to 3, 5, 7, middle is 5." },
+      { "kind": "eg", "text": "2, 4, 10, 100", "note": "Mean: 116 ÷ 4 = 29. Median: between 4 and 10 = 7." }
+    ],
+    "another": { "text": "One giant number drags the mean way up but barely moves the median. That's why the test loves to ask which one changes when an outlier is added.", "example": "Scores 80, 85, 90 → mean 85, median 85\nAdd a 20 → mean 68.75, median 82.5" },
+    "questions": [
+      { "stem": "What is the mean of 4, 8, and 12?", "options": ["8", "12", "24"], "answer": 0, "why": "4 + 8 + 12 = 24. Divide by 3: 8." },
+      { "stem": "What is the median of 9, 2, 7?", "options": ["2", "9", "7"], "answer": 2, "why": "Sort first: 2, 7, 9. The middle number is 7." },
+      { "stem": "What is the median of 1, 3, 5, 11?", "options": ["3", "4", "5"], "answer": 1, "why": "Even count. The two middle numbers are 3 and 5, and halfway between them is 4." },
+      { "stem": "Five friends have test scores of 90, 92, 94, 96, and 98. One more friend scores 20. Which changes more?", "options": ["The mean", "The median", "They change the same"], "answer": 0, "why": "The 20 drags the mean from 94 down to about 81.7. The median only moves from 94 to 93." },
+      { "stem": "A team's scores are 10, 10, 10, 10, 50. What is the median?", "options": ["18", "10", "50"], "answer": 1, "why": "Already sorted. The middle (third) number is 10. The mean would be 18, but that's not the median." }
+    ]
+  },
+  {
+    "id": "pythagorean",
+    "name": "Pythagorean theorem",
+    "sub": "Finding the missing side of a right triangle",
+    "rule": "In a right triangle, a² + b² = c². The two short sides are a and b. The longest side, across from the right angle, is c.",
+    "trick": "c is always the longest side and is always alone on one side of the equation. Square, add, square root.",
+    "examples": [
+      { "kind": "eg", "text": "Legs 3 and 4. Longest side?", "note": "9 + 16 = 25. √25 = 5." },
+      { "kind": "eg", "text": "Longest side 13, one leg 5. Other leg?", "note": "25 + b² = 169, so b² = 144, b = 12." }
+    ],
+    "another": { "text": "Memorize the common triples and the test gets faster: 3-4-5, 5-12-13, 8-15-17. Any multiple works too, like 6-8-10.", "example": "Legs 6 and 8 → that's 3-4-5 doubled → 10." },
+    "questions": [
+      { "stem": "A right triangle has legs 6 and 8. How long is the longest side?", "options": ["10", "14", "48"], "answer": 0, "why": "36 + 64 = 100. √100 = 10. It's 3-4-5 doubled." },
+      { "stem": "A right triangle has legs 5 and 12. How long is the longest side?", "options": ["17", "13", "60"], "answer": 1, "why": "25 + 144 = 169. √169 = 13." },
+      { "stem": "The longest side is 10 and one leg is 6. How long is the other leg?", "options": ["4", "8", "16"], "answer": 1, "why": "36 + b² = 100, so b² = 64 and b = 8. The longest side goes alone." },
+      { "stem": "A ladder leans against a wall. Its foot is 3 feet from the wall and it reaches 4 feet up. How long is the ladder?", "options": ["5 feet", "7 feet", "12 feet"], "answer": 0, "why": "The ladder is the longest side. 9 + 16 = 25, √25 = 5." },
+      { "stem": "Which side is c in a² + b² = c²?", "options": ["Either of the short sides", "The side across from the right angle"], "answer": 1, "why": "c is always the longest side, the one across from the right angle." }
+    ]
+  },
+  {
+    "id": "triangleAngles",
+    "name": "Angles in a triangle",
+    "sub": "They always add to 180",
+    "rule": "The three angles inside any triangle add up to 180°. A straight line is also 180°.",
+    "trick": "Add the two angles you know, then subtract from 180.",
+    "examples": [
+      { "kind": "eg", "text": "Angles 60° and 70°. Third angle?", "note": "60 + 70 = 130. 180 − 130 = 50°." },
+      { "kind": "eg", "text": "Right triangle with a 30° angle", "note": "The right angle is 90. 90 + 30 = 120. 180 − 120 = 60°." }
+    ],
+    "another": { "text": "Tear the three corners off a paper triangle and line them up. They form a straight line every time. That's the whole rule.", "example": "Isosceles: two equal sides, two equal angles.\nEquilateral: all 60°." },
+    "questions": [
+      { "stem": "A triangle has angles of 50° and 60°. What is the third angle?", "options": ["70°", "80°", "110°"], "answer": 0, "why": "50 + 60 = 110. 180 − 110 = 70." },
+      { "stem": "A right triangle has one angle of 35°. What is the other non-right angle?", "options": ["65°", "55°", "145°"], "answer": 1, "why": "90 + 35 = 125. 180 − 125 = 55." },
+      { "stem": "An equilateral triangle has all equal angles. Each one is:", "options": ["45°", "90°", "60°"], "answer": 2, "why": "180 ÷ 3 = 60." },
+      { "stem": "Two angles of a triangle are each 40°. What is the third?", "options": ["100°", "80°", "40°"], "answer": 0, "why": "40 + 40 = 80. 180 − 80 = 100." },
+      { "stem": "Two angles sit next to each other on a straight line. One is 110°. What is the other?", "options": ["110°", "70°", "250°"], "answer": 1, "why": "A straight line is 180. 180 − 110 = 70." }
+    ]
+  },
+  {
+    "id": "readingTable",
+    "name": "Reading a table",
+    "sub": "Find a value, spot a trend",
+    "rule": "Find the row, find the column, read where they meet. Then read down a column: do the numbers go up, go down, or both?",
+    "trick": "Most ACT Science answers are sitting in the table. You almost never need to know the science.",
+    "table": { "head": ["Water temp (°C)", "Sugar dissolved (g)"], "rows": [["20", "200"], ["40", "240"], ["60", "290"], ["80", "360"]] },
+    "examples": [{ "kind": "eg", "text": "At 60 °C, how much sugar dissolved?", "note": "Row 60, column Sugar → 290 g" }],
+    "another": { "text": "Put your finger on the row label, then slide it across to the column you need. That's your number. For a trend, read the column top to bottom and say \"up\" or \"down\" at each step.", "example": "200 → 240 → 290 → 360\nup, up, up = increases" },
+    "questions": [
+      { "stem": "At 40 °C, how much sugar dissolved?", "options": ["240 g", "200 g", "290 g"], "answer": 0, "why": "Row 40, slide across to Sugar: 240 g." },
+      { "stem": "As the water gets hotter, the sugar dissolved:", "options": ["Decreases", "Increases", "Stays the same"], "answer": 1, "why": "Read down the column: 200, 240, 290, 360. It goes up every time." },
+      { "stem": "Which temperature dissolved 290 g?", "options": ["40 °C", "80 °C", "60 °C"], "answer": 2, "why": "Find 290 in the Sugar column, then look left: 60 °C." },
+      { "stem": "Predict: at 100 °C, the sugar dissolved would most likely be:", "options": ["More than 360 g", "About 290 g", "Less than 200 g"], "answer": 0, "why": "The trend goes up as temperature goes up, so past 80 °C it should keep going past 360 g." },
+      { "stem": "Between which two temperatures did the sugar dissolved increase the most?", "options": ["20 and 40 °C", "60 and 80 °C"], "answer": 1, "why": "20 to 40 added 40 g. 60 to 80 added 70 g. The biggest jump is at the bottom of the table." }
+    ]
+  },
+  {
+    "id": "trends",
+    "name": "Trends and in-between values",
+    "sub": "Interpolate and extrapolate",
+    "rule": "If a value sits between two rows, the answer sits between their results. If it's past the last row, follow the pattern onward.",
+    "trick": "Between two rows: pick a number between the two results. Past the table: keep going in the same direction.",
+    "table": { "head": ["Time (min)", "Plant height (cm)"], "rows": [["0", "4"], ["10", "6"], ["20", "8"], ["30", "10"]] },
+    "examples": [
+      { "kind": "eg", "text": "Height at 15 minutes?", "note": "Between 10 and 20 min, so between 6 and 8 cm. About 7." },
+      { "kind": "eg", "text": "Height at 40 minutes?", "note": "Goes up 2 every 10 min, so 12 cm." }
+    ],
+    "another": { "text": "Picture the table as a graph. In-between times fall on the line between two dots. Later times keep the line going. You never need the exact formula, just the direction and roughly how fast.", "example": "Every 10 minutes: +2 cm\n30 → 40 min: 10 + 2 = 12 cm" },
+    "questions": [
+      { "stem": "What was the plant's height at 25 minutes?", "options": ["About 9 cm", "About 11 cm", "About 8 cm"], "answer": 0, "why": "25 is between 20 and 30, so the height is between 8 and 10. About 9." },
+      { "stem": "If the pattern continues, what will the height be at 50 minutes?", "options": ["12 cm", "14 cm", "20 cm"], "answer": 1, "why": "It adds 2 cm every 10 minutes. 30 → 40 → 50 min is 10 → 12 → 14 cm." },
+      { "stem": "How much does the plant grow every 10 minutes?", "options": ["2 cm", "4 cm", "10 cm"], "answer": 0, "why": "4, 6, 8, 10: each step is +2 cm." },
+      { "stem": "At what time was the plant about 7 cm tall?", "options": ["About 5 minutes", "About 15 minutes", "About 25 minutes"], "answer": 1, "why": "7 is between 6 (at 10 min) and 8 (at 20 min), so about 15 minutes." },
+      { "stem": "As time increases, plant height:", "options": ["Increases", "Decreases", "Increases, then decreases"], "answer": 0, "why": "Read down the height column: it goes up at every step." }
+    ]
+  },
+  {
+    "id": "variables",
+    "name": "Variables",
+    "sub": "What was changed, what was measured",
+    "rule": "The independent variable is what the scientist changes on purpose. The dependent variable is what they measure. Everything else stays the same.",
+    "trick": "Changed = independent. Measured = dependent. In a table, the first column is usually what was changed.",
+    "examples": [{ "kind": "eg", "text": "Change the light, measure plant height", "note": "Light is independent. Height is dependent." }],
+    "another": { "text": "Ask two questions. What did the scientist pick before starting? That's independent. What did they wait to find out? That's dependent.", "example": "Picked: hours of light\nFound out: how tall the plants grew" },
+    "questions": [
+      { "stem": "A student gives plants different amounts of light and measures how tall they grow. What was changed on purpose?", "options": ["Plant height", "Amount of light", "Type of plant"], "answer": 1, "why": "The student chose the light amounts before starting. That's the independent variable." },
+      { "stem": "Same experiment. What was measured?", "options": ["Plant height", "Amount of light", "Amount of water"], "answer": 0, "why": "Height is what the student waited to find out. That's the dependent variable." },
+      { "stem": "To make it a fair test, what should stay the same for every plant?", "options": ["Amount of light", "Plant height", "Amount of water"], "answer": 2, "why": "Only the light should change. If water changed too, you couldn't tell which one made the plants grow." },
+      { "stem": "In this table, what was changed on purpose?", "options": ["Water temperature", "Sugar dissolved"], "answer": 0, "table": { "head": ["Water temp (°C)", "Sugar dissolved (g)"], "rows": [["20", "200"], ["40", "240"], ["60", "290"], ["80", "360"]] }, "why": "Temperature is in the first column, set in neat steps of 20. Sugar dissolved is what got measured." },
+      { "stem": "A scientist drops balls from different heights and times how long they take to land. The dependent variable is:", "options": ["Drop height", "Time to land", "Ball color"], "answer": 1, "why": "Time is what the scientist measured. Height is what they changed." }
+    ]
+  },
+  {
+    "id": "controls",
+    "name": "Controls",
+    "sub": "The one group nothing happens to",
+    "rule": "A control is the group that gets no treatment. You compare every other group to it to see if the treatment did anything.",
+    "trick": "Look for the group with zero, none, or plain water. That's the control.",
+    "examples": [
+      { "kind": "eg", "text": "Testing a fertilizer: Group A gets 0 g, B gets 5 g, C gets 10 g", "note": "Group A (0 g) is the control." },
+      { "kind": "eg", "text": "Testing a medicine", "note": "The group that gets a sugar pill is the control." }
+    ],
+    "another": { "text": "Without a control, you can't tell if the plants grew because of the fertilizer or because it was a sunny week. The control shows what would have happened anyway.", "example": "Control grew 3 cm. Fertilizer group grew 3 cm.\n→ The fertilizer did nothing." },
+    "questions": [
+      { "stem": "Students test whether salt makes water boil faster. Which pot is the control?", "options": ["The pot with 1 spoon of salt", "The pot with no salt", "The pot with 2 spoons of salt"], "answer": 1, "why": "The control gets no treatment: plain water, no salt." },
+      { "stem": "Why does an experiment need a control?", "options": ["To have more data points", "To see what happens with no treatment", "To make the experiment take longer"], "answer": 1, "why": "The control shows what would happen anyway, so you can tell if the treatment made a difference." },
+      { "stem": "In a medicine trial, one group gets a pill with no medicine in it. That group is:", "options": ["The control group", "The treatment group"], "answer": 0, "why": "No medicine means no treatment. That's the control." },
+      { "stem": "Plants with fertilizer grew 5 cm. The control grew 5 cm too. What does this show?", "options": ["The fertilizer worked", "The fertilizer made no difference", "The control was done wrong"], "answer": 1, "why": "Same growth with and without fertilizer means the fertilizer didn't do anything." },
+      { "stem": "A scientist tests three different fertilizers but forgets to grow a plant with none. What's the problem?", "options": ["Three groups is too many", "There's nothing to compare the fertilizers against", "Fertilizers can't be compared"], "answer": 1, "why": "Without a no-fertilizer plant, you can't tell how much growth was from the fertilizer and how much would have happened anyway." }
+    ]
+  }
+]

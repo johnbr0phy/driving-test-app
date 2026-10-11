@@ -14,6 +14,7 @@ import { getBank } from "@/lib/v2/bank";
 import { getSectionV2, stagesOf, v2Routes } from "@/lib/v2/registry";
 import { sessionKey } from "@/lib/v2/session";
 import { drillKey, drillQuestions, drillStateFor, heldOutTests, EMPTY_DRILL } from "@/lib/v2/training";
+import { basicsDone, basicsFor } from "@/lib/v2/basics";
 import { useV2Store, resultsForExam } from "@/store/useV2Store";
 import { useHydration } from "@/hooks/useHydration";
 import { useAuth } from "@/contexts/AuthContext";
@@ -63,6 +64,7 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
   const sessions = useV2Store((s) => s.sessions);
   const results = useV2Store((s) => s.results);
   const drills = useV2Store((s) => s.drills);
+  const basics = useV2Store((s) => s.basics);
   const savedGoal = useV2Store((s) => s.goals[exam.id]);
   const setGoal = useV2Store((s) => s.setGoal);
   const removeSession = useV2Store((s) => s.removeSession);
@@ -86,7 +88,11 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
     const mastered = st.masteredIds.filter((id) => qs.some((q) => q.id === id)).length;
     // Same rule as the drill page: open for anyone already working in it.
     const locked = premiumReady && isDrillLocked(exam, d.key, isPremium) && !(hydrated && drills[drillKey(exam.id, d.key)]);
-    return { def: d, total: qs.length, mastered, locked, started: st.seen > 0, complete: qs.length > 0 && mastered === qs.length };
+    // Basics: the free rule-card level in front of the questions (lib/v2/basics).
+    const skills = basicsFor(d);
+    const learned = hydrated ? basicsDone(basics, exam.id, skills) : 0;
+    const basicsOpen = skills.length > 0 && learned < skills.length;
+    return { def: d, total: qs.length, mastered, locked, started: st.seen > 0 || learned > 0, complete: qs.length > 0 && mastered === qs.length, skills: skills.length, learned, basicsOpen };
   });
   const testSteps = exam.tests.map((t) => {
     const attempts = history.filter((r) => r.testNumber === t.number);
@@ -181,7 +187,9 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
           <div className="mb-6 space-y-1.5">
             {drillSteps.map((s, index) => {
               const section = getSectionV2(exam, s.def.section);
-              const isStartHere = index === 0 && !anyProgress;
+              // Start on the first drill with Basics when there is one, else step 1.
+              const firstBasics = drillSteps.findIndex((x) => x.skills > 0);
+              const isStartHere = index === (firstBasics === -1 ? 0 : firstBasics) && !anyProgress;
               const newSection = index === 0 || drillSteps[index - 1].def.section !== s.def.section;
               return (
                 <div key={s.def.key}>
@@ -190,7 +198,13 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
                   )}
                   <ProgressCard
                     title={s.def.name}
-                    subtitle={s.locked ? `Premium · ${s.total} questions` : `${s.mastered}/${s.total} mastered`}
+                    subtitle={
+                      s.basicsOpen
+                        ? `Basics ${s.learned}/${s.skills} · then ${s.total} exam-level${s.locked ? " (Premium)" : ""}`
+                        : s.locked
+                          ? `Premium · ${s.total} questions`
+                          : `${s.skills ? "Basics done ✓ · " : ""}${s.mastered}/${s.total} mastered`
+                    }
                     completed={s.complete}
                     stepNumber={index + 1}
                     stamp={
@@ -203,9 +217,20 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
                             : undefined
                     }
                     isPremiumLocked={s.locked}
-                    href={s.locked ? undefined : routes.drill(s.def.key)}
-                    onClick={s.locked ? () => paywall.open(`drill_${s.def.key}`, `${s.def.name} drill`) : undefined}
-                  />
+                    href={s.locked && !s.skills ? undefined : routes.drill(s.def.key)}
+                    onClick={s.locked && !s.skills ? () => paywall.open(`drill_${s.def.key}`, `${s.def.name} drill`) : undefined}
+                  >
+                    {s.skills > 0 && !s.complete && (
+                      <div className="mt-1.5 flex gap-1" aria-hidden>
+                        <div className="h-1 flex-1 overflow-hidden rounded-full bg-gray-100">
+                          <div className="h-full rounded-full bg-brand" style={{ width: `${(s.learned / s.skills) * 100}%` }} />
+                        </div>
+                        <div className="h-1 flex-[3] overflow-hidden rounded-full bg-gray-100">
+                          <div className="h-full rounded-full bg-green-500" style={{ width: `${s.total ? (s.mastered / s.total) * 100 : 0}%` }} />
+                        </div>
+                      </div>
+                    )}
+                  </ProgressCard>
                 </div>
               );
             })}

@@ -17,7 +17,8 @@ import { useSound } from "@/hooks/useSound";
 import { getTigerAsset } from "@/lib/tigerAssets";
 import { useIsPremium } from "@/hooks/useIsPremium";
 import { useIsNativeApp } from "@/hooks/useIsNativeApp";
-import { isDrillLocked, otherPremiumExams } from "@/lib/v2/premium";
+import { hasDrillProgress, isDrillLocked } from "@/lib/v2/premium";
+import { DrillLockScreen } from "./DrillLockScreen";
 import { basicsFor } from "@/lib/v2/basics";
 import { QuestionView } from "./QuestionView";
 import { useV2Paywall, V2Paywall } from "./V2Paywall";
@@ -42,7 +43,8 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
   // A Premium drill stays open for anyone already working in it (their own
   // saved progress, not progress carried over from a retired drill).
   const { isPremium, ready: premiumReady } = useIsPremium();
-  const locked = !!drill && premiumReady && isDrillLocked(exam, drill.key, isPremium) && !drillsMap[key];
+  const basicsMap = useV2Store((s) => s.basics);
+  const locked = !!drill && premiumReady && isDrillLocked(exam, drill.key, isPremium) && !hasDrillProgress(drillsMap, basicsMap, exam, drill);
   // Free drills never wait on auth: only a Premium drill needs to know who's signed in.
   const gateReady = !drill || !exam.premium?.lockedDrills.includes(drill.key) || premiumReady;
   // Own progress, or what carried over from the drill this one was split from.
@@ -114,35 +116,7 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
   }
 
   if (locked) {
-    return (
-      <div className="v2-focus">
-        <div className="v2-safe-top shrink-0 bg-white px-3 pb-2">
-          <Link href={backHref} className="v2-tap -ml-1 flex w-10 items-center justify-center rounded-full text-gray-500" aria-label="Back">
-            <X className="h-5 w-5" />
-          </Link>
-        </div>
-        <div className="v2-scroll">
-          <div className="mx-auto max-w-md px-6 py-8 text-center">
-            <Image src={getTigerAsset(exam.id, 3)} alt="" width={112} height={112} className="mx-auto h-28 w-28 object-contain" />
-            <h1 className="mt-3 flex items-center justify-center gap-2 text-xl font-bold text-gray-900">
-              <Lock className="h-5 w-5 text-gray-400" /> {drill.name}
-            </h1>
-            <p className="mt-2 text-sm text-gray-600">
-              {drill.blurb} {allQuestions.length} questions, part of TigerTest Premium along with Practice Test 2 and {otherPremiumExams(exam)}.
-            </p>
-            <button
-              type="button"
-              onClick={() => paywall.open(`drill_${drill.key}`, `${drill.name} drill`)}
-              className="v2-tap mt-6 w-full rounded-xl bg-brand text-base font-bold text-white"
-            >
-              Unlock with Premium{isNative ? "" : " · $9.99"}
-            </button>
-            <Link href={routes.dashboard} className="mt-3 block text-sm font-semibold text-gray-500">Back to the dashboard</Link>
-          </div>
-        </div>
-        <V2Paywall exam={exam} {...paywall.modalProps} />
-      </div>
-    );
+    return <DrillLockScreen exam={exam} drill={drill} detail={`${allQuestions.length} questions`} backHref={backHref} />;
   }
 
   const mastered = state.masteredIds.filter((id) => questions.some((q) => q.id === id)).length;

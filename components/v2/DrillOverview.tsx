@@ -8,13 +8,12 @@ import { ExamV2Config } from "@/lib/v2/types";
 import { getBank } from "@/lib/v2/bank";
 import { getSectionV2, v2Routes } from "@/lib/v2/registry";
 import { basicsFor, basicsKey } from "@/lib/v2/basics";
-import { drillKey, drillQuestions, drillStateFor, heldOutTests, EMPTY_DRILL } from "@/lib/v2/training";
+import { drillQuestions, drillStateFor, heldOutTests } from "@/lib/v2/training";
 import { useV2Store } from "@/store/useV2Store";
 import { useHydration } from "@/hooks/useHydration";
 import { useIsPremium } from "@/hooks/useIsPremium";
-import { useIsNativeApp } from "@/hooks/useIsNativeApp";
-import { isDrillLocked } from "@/lib/v2/premium";
-import { useV2Paywall, V2Paywall } from "./V2Paywall";
+import { hasDrillProgress, isDrillLocked } from "@/lib/v2/premium";
+import { DrillLockScreen } from "./DrillLockScreen";
 
 /**
  * Front door of a drill that has Basics: the skill list (level 1), then the
@@ -31,8 +30,6 @@ export function DrillOverview({ exam, drillKeyParam }: { exam: ExamV2Config; dri
   const basicsMap = useV2Store((s) => s.basics);
   const drillsMap = useV2Store((s) => s.drills);
   const { isPremium, ready: premiumReady } = useIsPremium();
-  const paywall = useV2Paywall(exam, "drill");
-  const isNative = useIsNativeApp();
 
   useEffect(() => {
     if (hydrated && !drill) router.replace(routes.dashboard);
@@ -50,19 +47,18 @@ export function DrillOverview({ exam, drillKeyParam }: { exam: ExamV2Config; dri
   const allLearned = learned === skills.length;
   const nextSkill = skills.find((s) => !basicsMap[basicsKey(exam.id, s.id)]?.done);
   const examHref = routes.drillQuestions(drill.key);
-  // Same rule as DrillRunner: a Premium drill stays open for anyone already in it.
-  const locked = premiumReady && isDrillLocked(exam, drill.key, isPremium) && !drillsMap[drillKey(exam.id, drill.key)] && state === EMPTY_DRILL;
+  // A Premium drill, Basics included, stays open only for anyone already in it.
   const premiumDrill = !!exam.premium?.lockedDrills.includes(drill.key);
-  const openPaywall = () => paywall.open(`drill_${drill.key}`, `${drill.name} drill`);
+  if (premiumDrill && !premiumReady) {
+    return <div className="v2-focus items-center justify-center text-gray-600">Loading...</div>;
+  }
+  if (isDrillLocked(exam, drill.key, isPremium) && !hasDrillProgress(drillsMap, basicsMap, exam, drill)) {
+    return <DrillLockScreen exam={exam} drill={drill} detail={`${skills.length} Basics skills and ${questions.length} exam-level questions`} />;
+  }
 
-  const examButton = (label: string) =>
-    locked ? (
-      <button type="button" onClick={openPaywall} className="v2-tap flex w-full items-center justify-center gap-2 rounded-xl bg-brand text-base font-bold text-white">
-        <Lock className="h-4 w-4" /> {label}{isNative ? "" : " · $9.99"}
-      </button>
-    ) : (
-      <Link href={examHref} className="v2-tap flex items-center justify-center rounded-xl bg-brand text-base font-bold text-white">{label}</Link>
-    );
+  const examButton = (label: string) => (
+    <Link href={examHref} className="v2-tap flex items-center justify-center rounded-xl bg-brand text-base font-bold text-white">{label}</Link>
+  );
 
   return (
     <div className="v2-focus">
@@ -113,12 +109,7 @@ export function DrillOverview({ exam, drillKeyParam }: { exam: ExamV2Config; dri
             <p className="text-sm text-gray-600">
               {allLearned ? (mastered ? "Pick up where you left off." : "Basics done. You're ready for the real thing.") : mastered ? "Finish Basics to continue, or skip ahead." : "Opens when Basics is done."}
             </p>
-            {!allLearned &&
-              (locked ? (
-                <button type="button" onClick={openPaywall} className="self-start text-sm font-semibold text-brand">Already know this? Skip to exam level</button>
-              ) : (
-                <Link href={examHref} className="self-start text-sm font-semibold text-brand">Already know this? Skip to exam level</Link>
-              ))}
+            {!allLearned && <Link href={examHref} className="self-start text-sm font-semibold text-brand">Already know this? Skip to exam level</Link>}
           </div>
         </div>
       </div>
@@ -134,7 +125,6 @@ export function DrillOverview({ exam, drillKeyParam }: { exam: ExamV2Config; dri
           )}
         </div>
       </div>
-      <V2Paywall exam={exam} {...paywall.modalProps} />
     </div>
   );
 }

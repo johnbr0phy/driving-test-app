@@ -16,10 +16,10 @@ import { hasDrillProgress, isDrillLocked } from "@/lib/v2/premium";
 import { DrillLockScreen } from "./DrillLockScreen";
 
 /**
- * Front door of a drill's Basics: the skill list (level 1), then the
- * exam-level drill (level 2), whose button appears once every skill is
- * learned. Anyone who already knows the basics opens the exam level from the
- * dashboard's own step instead. Basics is free on every drill; only the exam
+ * Front door of a drill's Basics: the skill list, with the exam-level
+ * button taking over the bottom bar once every skill is learned. Anyone who
+ * already knows the basics opens the exam level from the dashboard's own
+ * step instead. Basics is free on every drill; only the exam
  * level of a Premium drill is gated, the same way DrillRunner gates it.
  */
 export function DrillOverview({ exam, drillKeyParam }: { exam: ExamV2Config; drillKeyParam: string | null }) {
@@ -97,20 +97,6 @@ export function DrillOverview({ exam, drillKeyParam }: { exam: ExamV2Config; dri
               );
             })}
           </div>
-
-          <Stage
-            number={2}
-            done={questions.length > 0 && mastered === questions.length}
-            muted={!allLearned}
-            title="Exam level"
-            lock={premiumDrill}
-            sub={mastered ? `${mastered} of ${questions.length} mastered` : `${questions.length} real ${exam.shortName}-style questions${premiumDrill ? ". Premium." : "."}`}
-          />
-          {allLearned && (
-            <div className="rounded-xl border-2 border-brand bg-brand-light p-4">
-              <p className="text-sm text-gray-600 dark:text-gray-300">{mastered ? "Pick up where you left off." : "Basics done. You're ready for the real thing."}</p>
-            </div>
-          )}
         </div>
       </div>
 

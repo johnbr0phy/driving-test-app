@@ -16,6 +16,7 @@ import { sessionKey } from "@/lib/v2/session";
 import { drillKey, drillQuestions, drillStateFor, heldOutTests, EMPTY_DRILL } from "@/lib/v2/training";
 import { useV2Store, resultsForExam } from "@/store/useV2Store";
 import { useHydration } from "@/hooks/useHydration";
+import { useAuth } from "@/contexts/AuthContext";
 import { ProgressCard, Collapse } from "@/components/dashboard/ProgressCard";
 import { getTigerAsset, TigerExpression } from "@/lib/tigerAssets";
 import { useIsPremium } from "@/hooks/useIsPremium";
@@ -72,6 +73,8 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
   const [expandedTest, setExpandedTest] = useState<number | null>(null);
   const { isPremium, ready: premiumReady } = useIsPremium();
   const paywall = useV2Paywall(exam, "dashboard");
+  const { user, loading: authLoading } = useAuth();
+  const signedOut = hydrated && !authLoading && !user;
 
   const goal = savedGoal ?? exam.defaultGoal;
   const hasGoal = hydrated && savedGoal !== undefined;
@@ -146,6 +149,7 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
           <Suspense fallback={null}>
             <PurchaseBanner exam={exam} />
           </Suspense>
+          {signedOut && <SignUpBanner exam={exam} signupHref={`/signup?redirect=${encodeURIComponent(routes.dashboard)}`} />}
           {!hydrated ? (
             <div className="h-40" />
           ) : !hasGoal || editingGoal ? (
@@ -277,6 +281,26 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
         </div>
       </div>
       <V2Paywall exam={exam} {...paywall.modalProps} />
+    </div>
+  );
+}
+
+/** Same sign-up prompt as the v1 exam dashboards, for signed-out visitors.
+ *  data-theme pulls the exam's gradient and border tokens from globals.css. */
+function SignUpBanner({ exam, signupHref }: { exam: ExamV2Config; signupHref: string }) {
+  return (
+    <div data-theme={exam.id} className="mb-4 rounded-xl border border-brand-border-light bg-gradient-to-r from-brand-light to-brand-gradient-to p-4">
+      <div className="flex items-center gap-3">
+        <div className="text-2xl">📊</div>
+        <div className="flex-1">
+          <p className="text-sm text-gray-700">
+            <span className="font-bold">Sign up</span> to save your {exam.shortName} progress and track every question you miss
+          </p>
+          <Link href={signupHref} className="text-xs text-brand hover:text-brand-dark font-medium mt-1 inline-block">
+            Create free account →
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

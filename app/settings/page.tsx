@@ -21,8 +21,8 @@ import { useStore } from "@/store/useStore";
 import { useHydration } from "@/hooks/useHydration";
 import { states } from "@/data/states";
 import { TEST_CATALOG } from "@/lib/testCatalog";
+import { useStartedTests } from "@/hooks/useStartedTests";
 import { useV2Store } from "@/store/useV2Store";
-import { getExamById, getExamForSetId, getExamForTestId, examFamilyId } from "@/lib/exams";
 import { EXAMS_V2 } from "@/lib/v2/registry";
 import { TestIcon } from "@/components/TestIcon";
 import { hasTigerSet } from "@/lib/tigerAssets";
@@ -38,9 +38,6 @@ export default function SettingsPage() {
   const resetExamData = useStore((state) => state.resetExamData);
   const selectedState = useStore((state) => state.selectedState);
   const setSelectedState = useStore((state) => state.setSelectedState);
-  const completedTests = useStore((state) => state.completedTests);
-  const currentTests = useStore((state) => state.currentTests);
-  const trainingSets = useStore((state) => state.trainingSets);
 
   const [loadingGooglePhoto, setLoadingGooglePhoto] = useState(false);
   const [stateChangeDialog, setStateChangeDialog] = useState(false);
@@ -97,27 +94,8 @@ export default function SettingsPage() {
     router.push(selectedState ? "/dashboard" : "/tests");
   };
 
-  // Which tests this account has touched. Each test keeps its own ID range
-  // in the store (see CLAUDE.md, Additional Exams); state variants count
-  // toward their family.
-  const ownedBy = (examId: string, exam: ReturnType<typeof getExamForTestId>) => !!exam && examFamilyId(exam) === examId;
-  // v2 exams (SAT) keep their progress in their own store.
-  const v2 = useV2Store();
-  const v2Started = (examId: string) =>
-    v2.results.some((r) => r.examId === examId) ||
-    Object.values(v2.sessions).some((s) => s.examId === examId) ||
-    Object.entries(v2.drills).some(([k, d]) => k.startsWith(`${examId}:`) && d.seen > 0);
-
-  const hasStarted = (testId: string): boolean => {
-    if (testId === "dmv") return !!selectedState;
-    if (v2Started(testId)) return true;
-    if (!getExamById(testId)) return false;
-    return (
-      completedTests.some((t) => ownedBy(testId, getExamForTestId(t.testNumber))) ||
-      Object.keys(currentTests).some((k) => ownedBy(testId, getExamForTestId(Number(k)))) ||
-      Object.keys(trainingSets).some((k) => ownedBy(testId, getExamForSetId(Number(k))))
-    );
-  };
+  const hasStarted = useStartedTests();
+  const resetV2Exam = useV2Store((s) => s.resetExam);
 
   // Started tests only: the All tests menu already lists every test.
   const startedTests = TEST_CATALOG.filter((test) => hasStarted(test.id));
@@ -125,7 +103,7 @@ export default function SettingsPage() {
 
   const confirmDeleteTest = () => {
     if (!deleteTestId) return;
-    if (EXAMS_V2.some((e) => e.id === deleteTestId)) v2.resetExam(deleteTestId);
+    if (EXAMS_V2.some((e) => e.id === deleteTestId)) resetV2Exam(deleteTestId);
     else resetExamData(deleteTestId);
     setDeleteTestId(null);
   };

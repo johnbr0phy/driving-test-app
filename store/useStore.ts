@@ -176,6 +176,14 @@ interface AppState {
    */
   examStates: Record<string, string>;
   setExamState: (familyId: string, code: string) => void;
+  /**
+   * Exam families whose dashboard this browser has opened (the landing CTA's
+   * "Start practicing"). Landing pages and headers show "Go to Dashboard" and
+   * "Sign up to save" only for these, so starting CDL never makes the DMV, or
+   * any other exam, look started. Local only: progress covers other devices.
+   */
+  startedExams: string[];
+  markExamStarted: (examId: string) => void;
   setUserId: (userId: string | null) => void;
   setPhotoURL: (photoURL: string | null) => void;
   setEmailConsent: (consent: boolean) => void;
@@ -232,6 +240,7 @@ export const useStore = create<AppState>()(
       emailConsent: true,
       primaryExam: null,
       examStates: {},
+      startedExams: [],
       currentTests: {},
       completedTests: [],
       testAttempts: [],
@@ -286,6 +295,11 @@ export const useStore = create<AppState>()(
         if (get().examStates[familyId] === code) return;
         set({ examStates: { ...get().examStates, [familyId]: code } });
         get().saveToFirestore();
+      },
+
+      markExamStarted: (examId: string) => {
+        if (get().startedExams.includes(examId)) return;
+        set({ startedExams: [...get().startedExams, examId] });
       },
 
       setEmailConsent: (consent: boolean) => {
@@ -1075,6 +1089,7 @@ export const useStore = create<AppState>()(
           trainingSets: Object.fromEntries(Object.entries(state.trainingSets).filter(([id]) => keepSet(Number(id)))),
           trainingAnswerHistory: state.trainingAnswerHistory.filter((h) => keepQuestion(h.questionId)),
           examStates,
+          startedExams: state.startedExams.filter((id) => id !== examId),
           ...(examId === 'dmv'
             ? {
                 // Back to the state picker, so DMV leaves the started list.
@@ -1101,6 +1116,7 @@ export const useStore = create<AppState>()(
           isGuest: false,
           selectedState: null,
           examStates: {},
+          startedExams: [],
           currentTests: {},
           completedTests: [],
           testAttempts: [],

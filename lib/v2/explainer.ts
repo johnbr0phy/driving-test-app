@@ -1,4 +1,5 @@
 import { BasicsExample, BasicsSkill } from "./basics";
+import voiced from "./voiced-skills.json";
 
 /**
  * Basics explainer: a 40-second animated walk through one skill, played
@@ -76,6 +77,14 @@ export const words = (s: string) => s.split(/\s+/).filter(Boolean);
 export function canExplain(skill: BasicsSkill): boolean {
   const kinds = new Set(skill.examples.map((e) => e.kind));
   return kinds.has("good") && kinds.has("bad") && !skill.table && !skill.passage;
+}
+
+/** Skills whose voice is built: `lib/v2/voiced-skills.json`, rewritten by scripts/build-basics-audio.ts from public/basics-audio/. */
+const VOICED = new Set<string>(voiced as string[]);
+
+/** Only a skill with a template and a recorded voice shows the "Watch" buttons. */
+export function hasExplainer(skill: BasicsSkill): boolean {
+  return canExplain(skill) && VOICED.has(skill.id);
 }
 
 /**

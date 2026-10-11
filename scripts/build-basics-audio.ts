@@ -22,7 +22,7 @@
  * Print the script a skill would be read, without generating:
  *   npx tsx scripts/build-basics-audio.ts --script semicolons
  */
-import { mkdir, readFile, writeFile, access } from "node:fs/promises";
+import { mkdir, readFile, readdir, writeFile, access } from "node:fs/promises";
 import { join } from "node:path";
 import grammar from "../data/v2/basics/skills.json";
 import reading from "../data/v2/basics/reading.json";
@@ -171,6 +171,15 @@ async function align(skillId: string, audioPath: string, wordsPath: string) {
   await writeFile(join(OUT_DIR, `${skill.id}.mp3`), await readFile(audioPath));
   await writeFile(join(OUT_DIR, `${skill.id}.json`), JSON.stringify(manifest) + "\n");
   console.log(`${skill.id}: ${manifest.duration.toFixed(1)}s, ${timed.length} words aligned from ${spoken.length} spoken`);
+  await writeVoicedList();
+}
+
+/** Rewrite lib/v2/voiced-skills.json from what is on disk, so the "Watch" buttons appear only where a voice exists. */
+async function writeVoicedList() {
+  const files = await readdir(OUT_DIR).catch(() => [] as string[]);
+  const ids = files.filter((f) => f.endsWith(".json")).map((f) => f.slice(0, -5)).filter((id) => files.includes(`${id}.mp3`)).sort();
+  await writeFile(join(process.cwd(), "lib", "v2", "voiced-skills.json"), JSON.stringify(ids) + "\n");
+  console.log(`voiced skills: ${ids.join(", ") || "(none)"}`);
 }
 
 async function exists(p: string) {
@@ -215,6 +224,7 @@ async function main() {
     }
     await generate(skill, apiKey, voice, model);
   }
+  await writeVoicedList();
 }
 
 main().catch((e) => {

@@ -121,6 +121,8 @@ export interface DrillDef {
    * Free on every drill, Premium or not.
    */
   basics?: string[];
+  /** Exam-level questions this drill runs; overrides the exam's `drillSize`. */
+  size?: number;
 }
 
 export interface ExamV2Config {
@@ -142,6 +144,13 @@ export interface ExamV2Config {
   /** Full tests. A held-out test's items never appear in drills, so it stays a clean measurement. */
   tests: { number: number; name: string; heldOut?: boolean }[];
   domainLabels: Record<string, string>;
+  /**
+   * Exam-level questions per drill, an even spread of the drill's pool by
+   * difficulty. Unset means the whole pool (TEAS, HESI, ASVAB, ACCUPLACER,
+   * whose banks are 200 items). SAT and ACT cap at 20 so a drill is one
+   * sitting after Basics.
+   */
+  drillSize?: number;
   drills: DrillDef[];
   /** Composite from the scored sections (scaled, raw and total per section, in exam order). */
   composite: { name: string; min: number; max: number; combine: (sections: SectionResult[]) => number };

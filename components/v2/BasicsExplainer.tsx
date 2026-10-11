@@ -204,8 +204,9 @@ export function BasicsExplainer({ exam, skill, doneLabel, onDone, onClose, onRea
     return () => window.removeEventListener("keydown", onKey);
   });
 
-  const seconds = Math.round((manifest?.duration ?? estimated[estimated.length - 1].end) || total);
-  const subline = status === "silent" ? `Explainer · ${Math.round(total)} seconds · no sound` : `Explainer · ${seconds} seconds`;
+  // The real length once the manifest is in; before that, no number to flicker.
+  const length = manifest ? `${Math.round(manifest.duration)} seconds` : "half a minute";
+  const subline = status === "silent" ? `Explainer · ${Math.round(total)} seconds · no sound` : `Explainer · ${length}`;
 
   return (
     <div className="fixed inset-0 z-[95] flex flex-col bg-gray-50 text-gray-900 dark:bg-gray-950 dark:text-gray-50" role="dialog" aria-modal="true" aria-label={`${skill.name} explainer`}>
@@ -251,7 +252,7 @@ export function BasicsExplainer({ exam, skill, doneLabel, onDone, onClose, onRea
               <Image src={getTigerAsset(exam.id, 3)} alt="" width={112} height={112} className="h-28 w-28 object-contain" />
               <Bubble>
                 <SectionLabel>{skill.sub}</SectionLabel>
-                <p className="text-2xl font-bold leading-tight">{skill.name}, in {seconds} seconds.</p>
+                <p className="text-2xl font-bold leading-tight">{skill.name}, in {length}.</p>
                 <p className="mt-2 text-[17px] leading-relaxed text-gray-600 dark:text-gray-300">The rule, the trick, one sentence that breaks it and one that follows it. Sound on.</p>
               </Bubble>
             </>

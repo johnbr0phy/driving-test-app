@@ -12,6 +12,9 @@ import { useV2Store } from "@/store/useV2Store";
 import { useHydration } from "@/hooks/useHydration";
 import { useSound } from "@/hooks/useSound";
 import { getTigerAsset } from "@/lib/tigerAssets";
+import { useIsPremium } from "@/hooks/useIsPremium";
+import { hasDrillProgress, isDrillLocked } from "@/lib/v2/premium";
+import { DrillLockScreen } from "./DrillLockScreen";
 
 /**
  * One Basics skill on the phone: a 20-second rule card, then a handful of
@@ -26,6 +29,8 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
   const { playCorrectSound, playIncorrectSound } = useSound();
   const completeBasics = useV2Store((s) => s.completeBasics);
   const basicsMap = useV2Store((s) => s.basics);
+  const drillsMap = useV2Store((s) => s.drills);
+  const { isPremium, ready: premiumReady } = useIsPremium();
 
   const drill = exam.drills.find((d) => d.key === drillKeyParam);
   const skills = drill ? basicsFor(drill) : [];
@@ -53,11 +58,16 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
     setAnother(false);
   }, [skillIdParam]);
 
-  if (!hydrated || !drill || !skill) {
+  // Basics of a Premium drill is gated like its questions, unless they are already in it.
+  const premiumDrill = !!drill && !!exam.premium?.lockedDrills.includes(drill.key);
+  if (!hydrated || !drill || !skill || (premiumDrill && !premiumReady)) {
     return <div className="v2-focus items-center justify-center text-gray-600">Loading...</div>;
   }
-
   const overviewHref = routes.drill(drill.key);
+  if (isDrillLocked(exam, drill.key, isPremium) && !hasDrillProgress(drillsMap, basicsMap, exam, drill)) {
+    return <DrillLockScreen exam={exam} drill={drill} detail={`${skills.length} Basics skills`} backHref={overviewHref} />;
+  }
+
   const nextSkill = skills.find((s, i) => i !== skillIndex && !basicsMap[basicsKey(exam.id, s.id)]?.done);
   const total = skill.questions.length;
 

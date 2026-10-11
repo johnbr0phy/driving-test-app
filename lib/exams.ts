@@ -74,7 +74,7 @@ export interface ExamConfig {
     trainingHeading: string;
     trainingSub: string;
     testsHeading: string;
-    /** Five subtitles for 0%, <40%, <70%, <100%, 100% of steps complete. */
+    /** Five subtitles for 0%, <40%, <70%, <100%, 100% of steps complete. 80 characters max each (tools/check_hero_subs.py). */
     heroSubs: [string, string, string, string, string];
     /** Footer line on the dashboard naming the outline source. */
     sourceLine: string;
@@ -145,7 +145,7 @@ const cdl: ExamConfig = {
     trainingSub: "Six sets covering the whole general knowledge manual. Instant feedback, and missed questions come back until you master them.",
     testsHeading: "Practice tests · 50 questions like the real exam",
     heroSubs: [
-      "Six topics, six full tests. Inspection, control and safe driving carry the most weight.",
+      "Six topics, six full tests. Inspection and safe driving carry the most weight.",
       "Mastery first, then test. The sets follow the CDL manual's chapters.",
       "Halfway through the manual. The practice tests will show where you stand.",
       "Fix the misses, then retake. 80% is the pass line on the real test.",
@@ -201,7 +201,7 @@ const cdlx: ExamConfig = {
     trainingSub: "One set per endorsement, straight from the FMCSA manual section. Instant feedback, and missed questions come back until you master them.",
     testsHeading: "Mixed practice tests · 50 questions across all five, 80% to pass",
     heroSubs: [
-      "Five endorsements, four mixed tests. Pick the set for the endorsement you are adding.",
+      "Five endorsements, four mixed tests. Start with the one you're adding.",
       "Mastery first, then test. Each set is one section of the CDL manual.",
       "Halfway through. The mixed tests will show where you stand across endorsements.",
       "Fix the misses, then retake. Every endorsement test wants 80%.",
@@ -261,7 +261,7 @@ const moto: ExamConfig = {
     testsHeading: "Practice tests · 50 questions, 80% to pass",
     heroSubs: [
       "Five chapters, four full tests. Control and positioning carry the most weight.",
-      "Mastery first, then test. The sets follow the MSF manual your state test is written from.",
+      "Mastery first, then test. The sets follow the MSF manual.",
       "Halfway through the manual. The practice tests will show where you stand.",
       "Fix the misses, then retake. Most states want 80% on the real test.",
       "Full prep done. Go book your permit test at the DMV.",
@@ -318,11 +318,11 @@ const civics: ExamConfig = {
     trainingSub: "Four sets with 200 adapted study items for the 2025 civics test. Review the official questions and prepare your own local answers.",
     testsHeading: "Multiple-choice practice · 50 questions · 60% practice target",
     heroSubs: [
-      "200 adapted study items and four practice tests. Prepare your own local answers before the interview.",
+      "200 study items, four practice tests. Prep your local answers too.",
       "Mastery first, then test. The sets follow the USCIS list section by section.",
       "Halfway through the list. The practice tests will show where you stand.",
       "Fix the misses, then retake. On the real test you need 12 of 20.",
-      "Practice complete. Review official USCIS questions, local answers, and the test version for your application.",
+      "Practice complete. Review the official USCIS list and your local answers.",
     ],
     sourceLine: "Built from the official USCIS 2025 civics test list (128 questions). Officials' names change; check uscis.gov/citizenship/testupdates.",
     analyticsKey: "civics",
@@ -439,7 +439,7 @@ const ham: ExamConfig = {
     trainingSub: "Six sets covering the whole official 2026-2030 question pool. Instant feedback, and missed questions come back until you master them.",
     testsHeading: "Practice exams · 35 questions drawn like the real exam, 26 to pass",
     heroSubs: [
-      "The whole official pool, four full exams. Every question you see here can appear on the real test.",
+      "The whole official pool, four full exams. Any of these can be on the test.",
       "Mastery first, then test. The sets follow the pool's ten subelements.",
       "Halfway through the pool. The practice exams will show where you stand.",
       "Fix the misses, then retake. The real exam wants 26 of 35.",
@@ -554,7 +554,7 @@ const cna: ExamConfig = {
     trainingSub: "Four sets following the NNAAP written exam outline. Instant feedback, and missed questions come back until you master them.",
     testsHeading: "Practice tests · 50 questions weighted like the real exam",
     heroSubs: [
-      "Four content areas, four full tests. Basic nursing skills is almost 40% of the exam.",
+      "Four areas, four full tests. Basic nursing skills is almost 40% of it.",
       "Mastery first, then test. The sets follow the NNAAP outline most states use.",
       "Halfway through the outline. The practice tests will show where you stand.",
       "Fix the misses, then retake. Most states want about 70%.",
@@ -607,10 +607,10 @@ const ptcb: ExamConfig = {
     trainingSub: "Four sets matching the four PTCE domains. Instant feedback, worked math, and missed questions come back until you master them.",
     testsHeading: "Practice tests · 50 questions weighted like the real exam",
     heroSubs: [
-      "Four domains, four full tests. Medications is 35% of the exam and math runs through all of it.",
+      "Four domains, four full tests. Medications is 35% of the exam.",
       "Mastery first, then test. The sets follow the 2026 PTCE content outline.",
       "Halfway through the outline. The practice tests will show where you stand.",
-      "Fix the misses, then retake. Aim for 70% or better on every test before exam day.",
+      "Fix the misses, then retake. Aim for 70% or better on every test.",
       "Full prep done. Schedule your PTCE at a Pearson VUE center.",
     ],
     sourceLine: "Weighted to the PTCB PTCE content outline effective January 2026. Federal law only; state rules vary.",
@@ -663,10 +663,10 @@ const phleb: ExamConfig = {
     trainingSub: "Four sets following the NHA CPT test plan. Instant feedback, and missed questions come back until you master them.",
     testsHeading: "Practice tests · 50 questions weighted like the real exam",
     heroSubs: [
-      "Five domains, four full tests. Routine collections and safety are more than half the exam.",
+      "Five domains, four full tests. Collections and safety are over half.",
       "Mastery first, then test. The sets follow the NHA CPT test plan.",
       "Halfway through the outline. The practice tests will show where you stand.",
-      "Fix the misses, then retake. Aim for 70% or better on every test before exam day.",
+      "Fix the misses, then retake. Aim for 70% or better on every test.",
       "Full prep done. Schedule your CPT, PBT or RPT exam.",
     ],
     sourceLine: "Weighted to the NHA CPT test plan. Order of draw and technique follow CLSI GP41 and GP42.",
@@ -735,10 +735,10 @@ const ccma: ExamConfig = {
     trainingSub: "Four sets covering all seven NHA CCMA domains. Instant feedback, and missed questions come back until you master them.",
     testsHeading: "Practice tests · 50 questions weighted like the real exam",
     heroSubs: [
-      "Seven domains, four full tests. Clinical patient care is more than half the exam.",
+      "Seven domains, four full tests. Clinical patient care is over half.",
       "Mastery first, then test. The sets follow the NHA CCMA test plan.",
       "Halfway through the outline. The practice tests will show where you stand.",
-      "Fix the misses, then retake. Aim for 70% or better on every test before exam day.",
+      "Fix the misses, then retake. Aim for 70% or better on every test.",
       "Full prep done. Schedule your CCMA exam with NHA.",
     ],
     sourceLine: "Weighted to the NHA CCMA test plan (3.0). Scope of practice varies by state.",
@@ -789,7 +789,7 @@ const cet: ExamConfig = {
       "Three domains, four full tests. Acquisition is almost half the exam.",
       "Mastery first, then test. The sets follow the NHA CET test plan.",
       "Halfway through the outline. The practice tests will show where you stand.",
-      "Fix the misses, then retake. Aim for 70% or better on every test before exam day.",
+      "Fix the misses, then retake. Aim for 70% or better on every test.",
       "Full prep done. Schedule your CET exam with NHA.",
     ],
     sourceLine: "Weighted to the NHA CET test plan. Rhythm items describe the strip in words; practice with real tracings too.",
@@ -845,10 +845,10 @@ const danb: ExamConfig = {
     trainingSub: "Four sets covering General Chairside, Radiation Health and Safety, and Infection Control. Instant feedback, and missed questions come back until you master them.",
     testsHeading: "Practice tests · 50 questions across all three CDA components",
     heroSubs: [
-      "Three component exams, four full tests. Chairside dentistry is half of the GC exam.",
+      "Three exams, four full tests. Chairside is half of the GC exam.",
       "Mastery first, then test. The sets follow the DANB GC, RHS and ICE outlines.",
       "Halfway through the outlines. The practice tests will show where you stand.",
-      "Fix the misses, then retake. Aim for 70% or better on every test before exam day.",
+      "Fix the misses, then retake. Aim for 70% or better on every test.",
       "Full prep done. Schedule your GC, RHS and ICE exams with DANB.",
     ],
     sourceLine: "Weighted to the DANB GC, RHS (March 2025) and ICE (March 2025) outlines. Expanded functions vary by state.",
@@ -904,7 +904,7 @@ const emt: ExamConfig = {
       "Five domains, four full tests. Primary assessment is more than 40% of the exam.",
       "Mastery first, then test. The sets follow the 2025 NREMT test plan.",
       "Halfway through the outline. The practice tests will show where you stand.",
-      "Fix the misses, then retake. Aim for 70% or better on every test before exam day.",
+      "Fix the misses, then retake. Aim for 70% or better on every test.",
       "Full prep done. Schedule your NREMT cognitive exam at Pearson VUE.",
     ],
     sourceLine: "Weighted to the NREMT EMT examination specifications (April 2025). Protocols vary; follow local medical direction.",
@@ -960,8 +960,8 @@ const foodmgr: ExamConfig = {
     trainingSub: "Four sets covering every Food Code content area on the manager exam. Instant feedback, and missed questions come back until you master them.",
     testsHeading: "Practice tests \u00b7 50 questions weighted like the real exam",
     heroSubs: [
-      "Seven content areas, four full tests. Temperatures and the flow of food are the big ones.",
-      "Mastery first, then test. The sets follow the FDA Food Code the manager exams are built on.",
+      "Seven areas, four full tests. Temperatures and flow of food lead.",
+      "Mastery first, then test. The sets follow the FDA Food Code.",
       "Halfway through the content. The practice tests will show where you stand.",
       "Fix the misses, then retake. The real exams pass at 75%, so aim higher here.",
       "Full prep done. Book your accredited manager exam with any ANAB-CFP provider.",
@@ -1022,8 +1022,8 @@ const realestate: ExamConfig = {
     trainingSub: "Four sets covering all eight national outline areas. Instant feedback, worked math, and missed questions come back until you master them.",
     testsHeading: "Practice tests \u00b7 50 questions weighted like the national exam",
     heroSubs: [
-      "Eight content areas, four full tests. Contracts and agency is a fifth of the exam.",
-      "Mastery first, then test. The sets follow the Pearson VUE and PSI national outlines.",
+      "Eight areas, four full tests. Contracts and agency is a fifth of it.",
+      "Mastery first, then test. The sets follow the national outlines.",
       "Halfway through the outline. The practice tests will show where you stand.",
       "Fix the misses, then retake. Most states pass the national portion at 70 to 75%.",
       "Full prep done. Add your state's law portion and schedule your exam.",
@@ -1080,7 +1080,7 @@ const realestateCA: ExamConfig = {
     trainingSub: "Four sets with 150 source-checked questions for California, including California law. Missed questions come back until you master them.",
     testsHeading: "Full-length practice exam \u00b7 150 questions weighted to the DRE outline",
     heroSubs: [
-      "California salesperson practice: national topics checked against California law, plus California-only rules.",
+      "National topics checked against California law, plus CA-only rules.",
       "Mastery first, then the full-length exam.",
       "Halfway through. The full-length exam will show where you stand.",
       "Review the misses, then retake. The DRE exam passes at 70%.",
@@ -1133,7 +1133,7 @@ const realestateNJ: ExamConfig = {
     trainingSub: "Four sets with 110 source-checked questions for New Jersey, general and New Jersey law. Missed questions come back until you master them.",
     testsHeading: "Full-length practice exam \u00b7 110 questions, 80 general and 30 New Jersey",
     heroSubs: [
-      "New Jersey salesperson practice: general topics checked against New Jersey law, plus New Jersey rules.",
+      "General topics checked against New Jersey law, plus NJ-only rules.",
       "Mastery first, then the full-length exam.",
       "Halfway through. The full-length exam will show where you stand.",
       "Review the misses, then retake. The PSI exam passes at 70%.",
@@ -1197,7 +1197,7 @@ const insurance: ExamConfig = {
     trainingSub: "Four sets covering the general portion of the life and health exam. Instant feedback, and missed questions come back until you master them.",
     testsHeading: "Practice tests \u00b7 50 questions weighted like the general portion",
     heroSubs: [
-      "Nine content areas, four full tests. Life policies and provisions are almost 40% of the exam.",
+      "Nine areas, four full tests. Life policies and provisions are about 40%.",
       "Mastery first, then test. The sets follow the general portion every state tests.",
       "Halfway through the outline. The practice tests will show where you stand.",
       "Fix the misses, then retake. Most states pass at 70%, so aim higher here.",
@@ -1254,10 +1254,10 @@ const notary: ExamConfig = {
     testsHeading: "Practice tests \u00b7 50 questions on general notary law",
     heroSubs: [
       "Five topics, four full tests. Acts and identification are half of every test.",
-      "Study the practice topics, then check the duties and rules in your state’s official handbook.",
+      "Study the topics, then check your state’s official handbook.",
       "Halfway through the topics. The practice tests will show where you stand.",
-      "Fix the misses, then retake. Aim for 80% or better, then study your state's handbook.",
-      "You completed these practice sets. Review your state’s commissioning requirements and official materials, including any required exam.",
+      "Fix the misses, then retake. Aim for 80%, then read your state's handbook.",
+      "Practice complete. Check your state’s commission rules and any required exam.",
     ],
     sourceLine: "Practice draws on model notary concepts. Model laws are not a substitute for your state’s enacted rules, official handbook or exam requirements.",
     analyticsKey: "notary",
@@ -1372,7 +1372,7 @@ const aplus: ExamConfig = {
     trainingSub: "Four sets covering all nine A+ domains across Core 1 and Core 2. Instant feedback, and missed questions come back until you master them.",
     testsHeading: "Practice tests \u00b7 50 questions split across Core 1 and Core 2",
     heroSubs: [
-      "Nine domains, two cores, four full tests. Troubleshooting is the biggest piece of each.",
+      "Two cores, four full tests. Troubleshooting is the biggest piece of each.",
       "Mastery first, then test. The sets follow the 220-1201 and 220-1202 objectives.",
       "Halfway through the objectives. The practice tests will show where you stand.",
       "Fix the misses, then retake. Core 1 passes at 675 and Core 2 at 700 of 900.",
@@ -1430,8 +1430,8 @@ const foodhandler: ExamConfig = {
       "Five topics, four full tests. Time and temperature is the biggest piece.",
       "Mastery first, then test. The sets follow the FDA Food Code the courses teach.",
       "Halfway through the topics. The practice tests will show where you stand.",
-      "Review missed topics, then try another practice test. Check your accepted provider’s actual passing score.",
-      "You completed these practice sets. Check and complete your local authority’s accepted course and card requirements.",
+      "Review the misses, then retake. Check your provider’s passing score.",
+      "Practice complete. Finish your local course and card requirements.",
     ],
     sourceLine: "Based on the FDA Food Code as taught in ANAB-accredited food handler courses. Card requirements vary by state and county.",
     analyticsKey: "foodhandler",
@@ -1483,8 +1483,8 @@ const boating: ExamConfig = {
     trainingSub: "Five sets covering the boater education standards: boat basics, required equipment, navigation rules and buoys, safe operation, emergencies. Missed questions come back until you master them.",
     testsHeading: "Practice tests \u00b7 50 questions in the state exam's proportions",
     heroSubs: [
-      "Five topics, four full tests. Navigation rules and safe operation are the biggest pieces.",
-      "Mastery first, then test. The sets follow the NASBLA standards every state course uses.",
+      "Five topics, four full tests. Navigation and operation are the biggest.",
+      "Mastery first, then test. The sets follow the NASBLA standards.",
       "Halfway through the topics. The practice tests will show where you stand.",
       "Fix the misses, then retake. Most state exams pass at 80 percent.",
       "Full prep done. Take your state's course exam and get your boater card.",
@@ -1542,7 +1542,7 @@ const hunter: ExamConfig = {
     testsHeading: "Practice tests \u00b7 50 questions in the state exam's proportions",
     heroSubs: [
       "Six topics, four full tests. Firearm safety is almost a third of every test.",
-      "Mastery first, then test. The sets follow the IHEA standards every state course uses.",
+      "Mastery first, then test. The sets follow the IHEA standards.",
       "Halfway through the topics. The practice tests will show where you stand.",
       "Fix the misses, then retake. Most state exams pass at 80 percent.",
       "Full prep done. Take your state's hunter education exam and get certified.",
@@ -1598,7 +1598,7 @@ const secplus: ExamConfig = {
     testsHeading: "Practice tests \u00b7 50 questions weighted like SY0-701",
     heroSubs: [
       "Five domains, four full tests. Security operations is the biggest piece.",
-      "Mastery first, then test. The sets follow the SY0-701 objectives domain by domain.",
+      "Mastery first, then test. The sets follow the SY0-701 objectives.",
       "Halfway through the domains. The practice tests will show where you stand.",
       "Fix the misses, then retake. Security+ passes at 750 of 900.",
       "Full prep done. Schedule SY0-701 at Pearson VUE.",
@@ -1655,7 +1655,7 @@ const cpr: ExamConfig = {
     testsHeading: "Practice tests · 50 questions in the course exam's proportions",
     heroSubs: [
       "Five topics, four full tests. First aid and adult CPR are the biggest pieces.",
-      "Mastery first, then test. The sets follow the current resuscitation guidelines every course teaches.",
+      "Mastery first, then test. The sets follow current CPR guidelines.",
       "Halfway through the topics. The practice tests will show where you stand.",
       "Fix the misses, then retake. Most CPR written exams pass at 84 percent.",
       "Full prep done. Book your skills session and get certified.",
@@ -1713,8 +1713,8 @@ const osha: ExamConfig = {
     trainingSub: "Five sets covering the OSHA 10 modules: worker rights, fall protection, the rest of the Focus Four, hazard communication and PPE, health hazards, tools and fire. Missed questions come back until you master them.",
     testsHeading: "Practice tests · 50 questions in the course exam's proportions",
     heroSubs: [
-      "Six topics, four full tests. The Focus Four hazards are more than half of every test.",
-      "Mastery first, then test. The sets follow the OSHA Outreach modules every authorized trainer uses.",
+      "Six topics, four full tests. The Focus Four are over half of each test.",
+      "Mastery first, then test. The sets follow the OSHA Outreach modules.",
       "Halfway through the topics. The practice tests will show where you stand.",
       "Fix the misses, then retake. Most OSHA 10 finals pass at 70 percent.",
       "Full prep done. Finish your authorized course and get your card.",
@@ -1769,8 +1769,8 @@ const forklift: ExamConfig = {
     trainingSub: "Four sets covering the forklift operator written test: basics, rules and inspection, stability and load capacity, safe operation, load handling. Missed questions come back until you master them.",
     testsHeading: "Practice tests · 50 questions in the operator test's proportions",
     heroSubs: [
-      "Five topics, four full tests. Stability and safe operation are half of every test.",
-      "Mastery first, then test. The sets follow the OSHA 1910.178 training topics every employer covers.",
+      "Five topics, four full tests. Stability and operation are half of each.",
+      "Mastery first, then test. The sets follow OSHA 1910.178 topics.",
       "Halfway through the topics. The practice tests will show where you stand.",
       "Fix the misses, then retake. Most operator tests pass at 75 percent.",
       "Full prep done. Take your employer's written and hands-on evaluation.",
@@ -1824,11 +1824,11 @@ const alcohol: ExamConfig = {
     trainingSub: "Four practice sets on alcohol effects, intoxication, identification, intervention and service responsibilities. Use the materials required by your jurisdiction or exam provider.",
     testsHeading: "Practice tests · 50 supplemental questions",
     heroSubs: [
-      "Five topics, four full tests. Spotting intoxication and stepping in is the biggest piece.",
-      "Study alcohol-service concepts, then use the curriculum required by your jurisdiction or provider.",
+      "Five topics, four full tests. Spotting intoxication is the biggest.",
+      "Study the concepts, then take the course your state requires.",
       "Halfway through the topics. The practice tests will show where you stand.",
-      "Review missed topics, then try another practice test. Check the official passing score for your required exam.",
-      "You completed these practice sets. Complete any required approved training and official exam.",
+      "Review the misses, then retake. Check your exam's official passing score.",
+      "Practice complete. Finish any required training and official exam.",
     ],
     sourceLine: "Based on responsible beverage service curricula used nationwide. Permit requirements, hours of sale and penalties vary by state.",
     analyticsKey: "alcohol",
@@ -1884,7 +1884,7 @@ const security: ExamConfig = {
     testsHeading: "Practice tests · 50 questions in the state exam's proportions",
     heroSubs: [
       "Six topics, four full tests. Legal powers and limits is the biggest piece.",
-      "Mastery first, then test. The sets follow the pre-assignment training topics every state course covers.",
+      "Mastery first, then test. The sets follow pre-assignment training topics.",
       "Halfway through the topics. The practice tests will show where you stand.",
       "Fix the misses, then retake. Most state guard exams pass at 70 percent.",
       "Full prep done. Finish your state's training hours and sit the licensing exam.",
@@ -1938,8 +1938,8 @@ const lifeguard: ExamConfig = {
     trainingSub: "Four sets covering the lifeguard written exam: surveillance and victim recognition, water rescue skills, first aid, CPR and AED, facility safety and legal duties. Missed questions come back until you master them.",
     testsHeading: "Practice tests · 50 questions in the course exam's proportions",
     heroSubs: [
-      "Five topics, four full tests. Rescue skills and emergency care are half of every test.",
-      "Mastery first, then test. The sets follow the lifeguarding curriculum every certifying provider teaches.",
+      "Five topics, four full tests. Rescue and emergency care are half of each.",
+      "Mastery first, then test. The sets follow the standard lifeguard curriculum.",
       "Halfway through the topics. The practice tests will show where you stand.",
       "Fix the misses, then retake. Most lifeguard written exams pass at 80 percent.",
       "Full prep done. Pass the in-water skills and get your certificate.",
@@ -1999,8 +1999,8 @@ const pnc: ExamConfig = {
     trainingSub: "Four sets covering the general portion of the P&C exam: basics and policy provisions, dwelling and homeowners, personal auto, commercial lines and other coverages. Missed questions come back until you master them.",
     testsHeading: "Practice tests · 50 questions in the exam outline's proportions",
     heroSubs: [
-      "Seven topics, four full tests. Homeowners and personal auto are the biggest pieces.",
-      "Mastery first, then test. The sets follow the general-portion outline every state's vendor uses.",
+      "Seven topics, four full tests. Homeowners and auto are the biggest.",
+      "Mastery first, then test. The sets follow the general-portion outline.",
       "Halfway through the topics. The practice tests will show where you stand.",
       "Fix the misses, then retake. Most states pass the P&C exam at 70 percent.",
       "Full prep done. Schedule your state exam and add the state-law portion.",
@@ -2113,7 +2113,7 @@ const cst: ExamConfig = {
     trainingSub: "Sets follow the NBSTSA outline. Instant feedback, and missed questions come back until you master them.",
     testsHeading: "Practice tests · 50 questions weighted like the real exam",
     heroSubs: [
-      "Three domains, four full tests. Intraoperative procedures carry almost half the exam.",
+      "Three domains, four full tests. Intraop procedures are almost half.",
       "Mastery first, then test. The sets mirror the NBSTSA content outline.",
       "Halfway through the outline. The practice tests will show where you stand.",
       "Fix the misses, then retake. That's how the pass line gets closer.",
@@ -2172,7 +2172,7 @@ const crcst: ExamConfig = {
     trainingSub: "Sets follow the seven HSPA sections. Instant feedback, and missed questions come back until you master them.",
     testsHeading: "Practice tests · 50 questions weighted like the real exam",
     heroSubs: [
-      "Seven sections, four full tests. Decontamination, prep and sterilization are 63% of the exam.",
+      "Seven sections, four full tests. Decon, prep and sterilization are 63%.",
       "Mastery first, then test. The sets mirror the HSPA content outline.",
       "Halfway through the outline. The practice tests will show where you stand.",
       "Fix the misses, then retake. That's how the pass line gets closer.",

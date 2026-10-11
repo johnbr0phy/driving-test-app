@@ -176,7 +176,7 @@ export interface ExamV2Config {
     benefits: string[];
   };
   copy: {
-    /** Five hero subtitles for 0%, <40%, <70%, <100%, 100% of steps complete. */
+    /** Five hero subtitles for 0%, <40%, <70%, <100%, 100% of steps complete. 80 characters max each (tools/check_hero_subs.py). */
     heroSubs: [string, string, string, string, string];
     sourceLine: string;
     /** One line under the composite on the results page saying what the score is. */

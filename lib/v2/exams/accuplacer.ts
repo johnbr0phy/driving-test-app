@@ -62,7 +62,7 @@ export const ACCUPLACER: ExamV2Config = {
   testLength: "Untimed, about 2 hours",
   copy: {
     heroSubs: [
-      "Five section drills on your phone, then two untimed placement tests on a desktop.",
+      "Five section drills on your phone, then two placement tests on a desktop.",
       "Mastery first. Each drill is one ACCUPLACER section.",
       "Halfway through the sections. The practice tests will show your placement band.",
       "Hit your goal on a practice test to finish the plan.",

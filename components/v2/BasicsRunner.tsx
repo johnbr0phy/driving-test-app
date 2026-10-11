@@ -1,15 +1,17 @@
 "use client";
 
-import { ReactNode, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import { Play, X } from "lucide-react";
 import { ExamV2Config } from "@/lib/v2/types";
 import { v2Routes } from "@/lib/v2/registry";
-import { BasicsQuestion, BasicsRun, BasicsSkill, BasicsTable, PUNCTUATION_NAMES, answerBasics, basicsFor, basicsKey, basicsOptionOrder, isPunctuationQuestion, newBasicsRun } from "@/lib/v2/basics";
+import { BasicsQuestion, BasicsRun, BasicsSkill, PUNCTUATION_NAMES, answerBasics, basicsFor, basicsKey, basicsOptionOrder, isPunctuationQuestion, newBasicsRun } from "@/lib/v2/basics";
 import { hasExplainer } from "@/lib/v2/explainer";
 import { BasicsExplainer } from "./BasicsExplainer";
+import { BasicsRuleSheet } from "./BasicsRuleSheet";
+import { DataTable, Eli5Toggle, Passage, RuleCard } from "./BasicsRuleCard";
 import { useV2Store } from "@/store/useV2Store";
 import { useHydration } from "@/hooks/useHydration";
 import { useSound } from "@/hooks/useSound";
@@ -45,11 +47,9 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
   const [current, setCurrent] = useState<number | null>(null);
   const [picked, setPicked] = useState<number | null>(null);
   const [ruleOpen, setRuleOpen] = useState(false);
-  const [ruleEli5, setRuleEli5] = useState(false);
   const [another, setAnother] = useState(false);
-  // The explainer overlay on the question screen (after a miss, or "Listen instead" on the rule sheet), and
-  // whether the learn/review screen shows the text card instead of the video.
-  const [explainer, setExplainer] = useState<null | "miss" | "rule">(null);
+  // The explainer overlay after a miss, and whether the learn/review screen shows the text card instead of the video.
+  const [explainer, setExplainer] = useState(false);
   const [readMode, setReadMode] = useState(false);
 
   useEffect(() => {
@@ -63,7 +63,7 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
     setCurrent(null);
     setPicked(null);
     setAnother(false);
-    setExplainer(null);
+    setExplainer(false);
     setReadMode(false);
   }, [skillIdParam]);
 
@@ -115,21 +115,16 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
     }
   };
 
-  const closeRule = () => {
-    setRuleOpen(false);
-    setRuleEli5(false);
-  };
+  const closeRule = () => setRuleOpen(false);
 
   const explainable = hasExplainer(skill);
-  const closeExplainer = () => setExplainer(null);
+  const closeExplainer = () => setExplainer(false);
+  // "Read it" on the miss overlay drops into the text sheet, so the words are never more than a tap away.
   const openRuleSheet = () => {
     closeExplainer();
     setRuleOpen(true);
   };
-  // "Read it" on the overlay drops into the text sheet, so the words are never more than a tap away.
-  const overlay = explainer ? (
-    <BasicsExplainer exam={exam} skill={skill} doneLabel={explainer === "miss" ? "Try it again" : "Back to the question"} onDone={closeExplainer} onClose={closeExplainer} onRead={openRuleSheet} />
-  ) : null;
+  const overlay = explainer ? <BasicsExplainer exam={exam} skill={skill} doneLabel="Try it again" onDone={closeExplainer} onClose={closeExplainer} onRead={openRuleSheet} /> : null;
   // On the text card, the way back to the video.
   const watchButton = explainable ? (
     <button type="button" onClick={() => setReadMode(false)} className="flex items-center gap-1.5 self-start text-[15px] font-semibold text-brand">
@@ -269,7 +264,7 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
                   <>
                     <p className="text-sm text-gray-800 dark:text-gray-100"><b>The trick:</b> {skill.trick}</p>
                     {explainable && (
-                      <button type="button" onClick={() => setExplainer("miss")} className="v2-tap mt-1 flex items-center justify-center gap-2 self-start rounded-xl bg-white dark:bg-gray-900 px-4 text-[15px] font-bold text-brand shadow-sm">
+                      <button type="button" onClick={() => setExplainer(true)} className="v2-tap mt-1 flex items-center justify-center gap-2 self-start rounded-xl bg-white dark:bg-gray-900 px-4 text-[15px] font-bold text-brand shadow-sm">
                         <Play className="h-4 w-4" /> Watch the explainer · 30 seconds
                       </button>
                     )}
@@ -294,31 +289,7 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
         </div>
       </div>
 
-      {ruleOpen && (
-        <div className="fixed inset-0 z-[90] flex items-end justify-center bg-black/50" role="dialog" aria-modal="true" aria-label="The rule" onClick={closeRule}>
-          <div className="v2-pop max-h-[85%] w-full max-w-2xl overflow-y-auto rounded-t-2xl bg-white dark:bg-gray-900 p-4" onClick={(e) => e.stopPropagation()}>
-            <div className="flex flex-col gap-5">
-              {explainable && (
-                <button
-                  type="button"
-                  onClick={() => {
-                    closeRule();
-                    setExplainer("rule");
-                  }}
-                  className="flex items-center gap-1.5 self-start text-[15px] font-semibold text-brand"
-                >
-                  <Play className="h-4 w-4" /> Listen instead · 30 seconds
-                </button>
-              )}
-              <RuleCard skill={skill} />
-              <Eli5Toggle skill={skill} open={ruleEli5} onOpen={() => setRuleEli5(true)} />
-            </div>
-            <button type="button" onClick={closeRule} className="v2-tap mt-5 w-full rounded-xl bg-brand text-base font-bold text-white">
-              Back to the question
-            </button>
-          </div>
-        </div>
-      )}
+      <BasicsRuleSheet exam={exam} skill={skill} open={ruleOpen} onClose={closeRule} />
       {overlay}
     </div>
   );
@@ -335,65 +306,6 @@ function Header({ title, sub, closeHref }: { title: string; sub: string; closeHr
           <div className="truncate text-sm font-bold">{title}</div>
           <div className="truncate text-xs text-gray-500 dark:text-gray-400">{sub}</div>
         </div>
-      </div>
-    </div>
-  );
-}
-
-function SectionLabel({ children }: { children: ReactNode }) {
-  return <div className="text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400">{children}</div>;
-}
-
-/** The skill explained like you're five: a picture a kid already knows, plus a tiny example story. */
-function Eli5Card({ skill }: { skill: BasicsSkill }) {
-  return (
-    <div>
-      <SectionLabel>ELI5 · explained like you&apos;re five</SectionLabel>
-      <p className="mt-1.5 text-[17px] leading-relaxed text-gray-900 dark:text-gray-50">{skill.another.text}</p>
-      <div className="mt-3 whitespace-pre-line border-l-2 border-brand pl-3 text-[17px] leading-relaxed text-gray-800 dark:text-gray-100">{skill.another.example}</div>
-    </div>
-  );
-}
-
-/** "Still confused? ELI5" link that turns into the ELI5 card. */
-function Eli5Toggle({ skill, open, onOpen }: { skill: BasicsSkill; open: boolean; onOpen: () => void }) {
-  if (open) return <Eli5Card skill={skill} />;
-  return (
-    <button type="button" onClick={onOpen} className="self-start text-[15px] font-semibold text-brand">
-      Still confused? ELI5
-    </button>
-  );
-}
-
-/** The rule, the trick, the skill's table if any, and the examples. */
-function RuleCard({ skill }: { skill: BasicsSkill }) {
-  const marks = { good: "✓", bad: "✗", eg: "→" };
-  const markClass = { good: "text-green-600 dark:text-green-300", bad: "text-red-500 dark:text-red-300", eg: "text-brand" };
-  return (
-    <div className="flex flex-col gap-5">
-      <div>
-        <SectionLabel>The rule</SectionLabel>
-        <p className="mt-1.5 text-xl font-semibold leading-snug text-gray-900 dark:text-gray-50">{skill.rule}</p>
-      </div>
-      <div>
-        <SectionLabel>The trick</SectionLabel>
-        <p className="mt-1.5 text-[17px] leading-relaxed text-gray-900 dark:text-gray-50">{skill.trick}</p>
-      </div>
-      {skill.table && <DataTable table={skill.table} />}
-      {skill.passage && <Passage text={skill.passage} />}
-      <div>
-        <SectionLabel>Examples</SectionLabel>
-        <ul className="mt-1 divide-y divide-gray-200 dark:divide-gray-800">
-          {skill.examples.map((e, i) => (
-            <li key={i} className="flex items-start gap-3 py-2.5">
-              <span className={`w-5 shrink-0 text-center text-[17px] font-bold leading-relaxed ${markClass[e.kind]}`}>{marks[e.kind]}</span>
-              <div className="min-w-0 text-[17px] leading-relaxed text-gray-900 dark:text-gray-50">
-                {e.text}
-                {e.note && <div className="text-[15px] leading-snug text-gray-500 dark:text-gray-400">{e.note}</div>}
-              </div>
-            </li>
-          ))}
-        </ul>
       </div>
     </div>
   );
@@ -419,31 +331,3 @@ function Prompt({ q, revealed, punct }: { q: BasicsQuestion; revealed: boolean; 
   );
 }
 
-function Passage({ text }: { text: string }) {
-  return <div className="whitespace-pre-line rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-4 py-3 text-[16px] leading-relaxed text-gray-800 dark:text-gray-100">{text}</div>;
-}
-
-function DataTable({ table }: { table: BasicsTable }) {
-  return (
-    <div className="overflow-x-auto">
-      <table className="w-full border-collapse text-[15px] tabular-nums">
-        <thead>
-          <tr>
-            {table.head.map((h) => (
-              <th key={h} className="border border-gray-200 dark:border-gray-800 bg-gray-100 dark:bg-gray-800 px-2.5 py-2 text-left text-xs font-semibold text-gray-700 dark:text-gray-200">{h}</th>
-            ))}
-          </tr>
-        </thead>
-        <tbody>
-          {table.rows.map((r, i) => (
-            <tr key={i}>
-              {r.map((c, j) => (
-                <td key={j} className="border border-gray-200 dark:border-gray-800 px-2.5 py-2">{c}</td>
-              ))}
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-  );
-}

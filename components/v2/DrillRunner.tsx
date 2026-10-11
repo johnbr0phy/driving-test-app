@@ -4,7 +4,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import { X, RotateCcw, Lock } from "lucide-react";
+import { X, RotateCcw, Lock, BookOpen, Play } from "lucide-react";
 import { ExamV2Config, AnswerValue, QuestionV2 } from "@/lib/v2/types";
 import { getBank, getStimulus } from "@/lib/v2/bank";
 import { v2Routes } from "@/lib/v2/registry";
@@ -18,6 +18,9 @@ import { getTigerAsset } from "@/lib/tigerAssets";
 import { useIsPremium } from "@/hooks/useIsPremium";
 import { useIsNativeApp } from "@/hooks/useIsNativeApp";
 import { hasDrillProgress, isDrillLocked } from "@/lib/v2/premium";
+import { matchBasicsSkill } from "@/lib/v2/skillMatch";
+import { hasExplainer } from "@/lib/v2/explainer";
+import { BasicsRuleSheet } from "./BasicsRuleSheet";
 import { DrillLockScreen } from "./DrillLockScreen";
 import { QuestionView } from "./QuestionView";
 import { useV2Paywall, V2Paywall } from "./V2Paywall";
@@ -60,6 +63,8 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
   const [revealed, setRevealed] = useState(false);
   const [done, setDone] = useState(false);
   const [confirmReset, setConfirmReset] = useState(false);
+  // The Basics rule sheet offered under a miss.
+  const [brushUp, setBrushUp] = useState(false);
   const currentId = useRef<string | null>(null);
   const scroller = useRef<HTMLDivElement>(null);
 
@@ -80,6 +85,7 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
     setOrder(optionOrderFor(next));
     setAnswer(undefined);
     setRevealed(false);
+    setBrushUp(false);
     setDone(false);
     scroller.current?.scrollTo({ top: 0 });
   }, [drill, exam.id, allQuestions, questions]);
@@ -120,6 +126,8 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
 
   const mastered = state.masteredIds.filter((id) => questions.some((q) => q.id === id)).length;
   const pct = questions.length ? Math.round((mastered / questions.length) * 100) : 0;
+  // After a miss, the Basics skill the question was really about, if the drill has one for it.
+  const missedSkill = question && revealed && !isCorrect(question, answer) ? matchBasicsSkill(question, drill) : null;
 
   return (
     <div className="v2-focus">
@@ -167,6 +175,18 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
               label={`${exam.domainLabels[question.domain] ?? question.domain}${question.skill ? ` · ${question.skill}` : ""}`}
             />
           ) : null}
+          {missedSkill && (
+            <div className="v2-pop mt-4 rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-4 py-3">
+              <div className="text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400">Brush up on the basics</div>
+              <button type="button" onClick={() => setBrushUp(true)} className="v2-tap mt-1 flex w-full items-center gap-3 text-left">
+                {hasExplainer(missedSkill) ? <Play className="h-5 w-5 shrink-0 text-brand" /> : <BookOpen className="h-5 w-5 shrink-0 text-brand" />}
+                <span className="min-w-0 flex-1">
+                  <span className="block text-[17px] font-bold text-gray-900 dark:text-gray-50">{missedSkill.name}</span>
+                  <span className="block text-sm text-gray-500 dark:text-gray-400">{hasExplainer(missedSkill) ? "Listen to the 30-second explainer, or read the rule" : "The rule, the trick and two examples"}</span>
+                </span>
+              </button>
+            </div>
+          )}
         </div>
       </div>
 
@@ -185,6 +205,8 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
       )}
 
       <V2Paywall exam={exam} {...paywall.modalProps} />
+
+      {missedSkill && <BasicsRuleSheet exam={exam} skill={missedSkill} open={brushUp} onClose={() => setBrushUp(false)} />}
 
       {confirmReset && (
         <div className="fixed inset-0 z-[90] flex items-center justify-center bg-black/50 p-4" role="alertdialog" aria-modal="true">

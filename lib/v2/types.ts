@@ -27,6 +27,8 @@ export interface QuestionV2 {
   variant?: "lower" | "upper";
   domain: string;
   skill?: string;
+  /** The Basics skill (lib/v2/basics) this item really tests, for the "Brush up" card under a miss. Set by hand; absent means no card. */
+  basics?: string;
   difficulty: 1 | 2 | 3;
   format: QuestionFormat;
   /** Inline stimulus (passage, notes, data) rendered beside or above the stem. */

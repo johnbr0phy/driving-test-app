@@ -16,6 +16,7 @@ delimiter.
   "variant": "upper",          // optional; adaptive module 2 variants ("lower" | "upper")
   "domain": "craftStructure",  // key from the exam config's domains
   "skill": "Words in context", // free text, shown in results
+  "basics": "wordsInContext", // optional: Basics skill id offered under a miss ("Brush up on the basics")
   "difficulty": 2,             // 1 easy, 2 medium, 3 hard
   "format": "single",          // "single" | "multi" | "numeric"
   "passage": "...",            // optional stimulus shown above/beside the stem

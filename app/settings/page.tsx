@@ -24,6 +24,7 @@ import { TEST_CATALOG } from "@/lib/testCatalog";
 import { useStartedTests } from "@/hooks/useStartedTests";
 import { useV2Store } from "@/store/useV2Store";
 import { EXAMS_V2 } from "@/lib/v2/registry";
+import { deleteV2Exam } from "@/lib/v2/sync";
 import { TestIcon } from "@/components/TestIcon";
 import { hasTigerSet } from "@/lib/tigerAssets";
 
@@ -101,10 +102,26 @@ export default function SettingsPage() {
   const startedTests = TEST_CATALOG.filter((test) => hasStarted(test.id));
   const deleteTest = TEST_CATALOG.find((test) => test.id === deleteTestId);
 
-  const confirmDeleteTest = () => {
+  const [deletingTest, setDeletingTest] = useState(false);
+  const confirmDeleteTest = async () => {
     if (!deleteTestId) return;
-    if (EXAMS_V2.some((e) => e.id === deleteTestId)) resetV2Exam(deleteTestId);
-    else resetExamData(deleteTestId);
+    if (EXAMS_V2.some((e) => e.id === deleteTestId)) {
+      // v2 progress syncs by merging, so delete it on the account too or the
+      // next v2 page would merge it straight back.
+      setDeletingTest(true);
+      try {
+        if (user) await deleteV2Exam(user.uid, deleteTestId);
+        else resetV2Exam(deleteTestId);
+      } catch (e) {
+        // Keep the dialog open so a retry is one tap away.
+        console.error("Deleting test progress failed:", e);
+        setDeletingTest(false);
+        return;
+      }
+      setDeletingTest(false);
+    } else {
+      resetExamData(deleteTestId);
+    }
     setDeleteTestId(null);
   };
 
@@ -376,7 +393,8 @@ export default function SettingsPage() {
             <Button className="bg-white text-black hover:bg-gray-100 border-2 border-gray-300" onClick={() => setDeleteTestId(null)}>
               {t("common.cancel")}
             </Button>
-            <Button variant="destructive" onClick={confirmDeleteTest}>
+            <Button variant="destructive" onClick={confirmDeleteTest} disabled={deletingTest}>
+              {deletingTest && <Loader2 className="h-4 w-4 mr-2 animate-spin" />}
               {t("settings.deleteTestYes")}
             </Button>
           </DialogFooter>

@@ -1,5 +1,6 @@
 import { create } from "zustand";
 import { persist, createJSONStorage } from "zustand/middleware";
+import { withoutExamV2 } from "@/lib/v2/merge";
 import { DrillState, TestResultV2, TestSessionV2 } from "@/lib/v2/types";
 import { EMPTY_DRILL } from "@/lib/v2/training";
 import { trackFunnelStep } from "@/lib/funnel";
@@ -67,17 +68,7 @@ export const useV2Store = create<V2State>()(
         });
       },
       resetDrill: (key) => set((s) => ({ drills: { ...s.drills, [key]: EMPTY_DRILL } })),
-      resetExam: (examId) =>
-        set((s) => {
-          const goals = { ...s.goals };
-          delete goals[examId];
-          return {
-            sessions: Object.fromEntries(Object.entries(s.sessions).filter(([, v]) => v.examId !== examId)),
-            results: s.results.filter((r) => r.examId !== examId),
-            drills: Object.fromEntries(Object.entries(s.drills).filter(([k]) => !k.startsWith(`${examId}:`))),
-            goals,
-          };
-        }),
+      resetExam: (examId) => set((s) => withoutExamV2(s, examId)),
       setGoal: (examId, goal) => set((s) => ({ goals: { ...s.goals, [examId]: goal } })),
       replaceData: (data, syncedUid) => set({ ...data, syncedUid }),
     }),

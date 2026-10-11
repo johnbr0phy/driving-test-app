@@ -1,7 +1,7 @@
 "use client";
 
 import { ReactNode, useEffect, useState } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import { Play, X } from "lucide-react";
@@ -47,9 +47,9 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
   const [ruleOpen, setRuleOpen] = useState(false);
   const [ruleEli5, setRuleEli5] = useState(false);
   const [another, setAnother] = useState(false);
-  // The 40-second explainer overlay (it opens on its own Play screen, so no gesture plumbing here).
+  // The explainer overlay after a miss, and whether the learn/review screen shows the text card instead of the video.
   const [explainer, setExplainer] = useState(false);
-  const wantExplain = useSearchParams().get("explain") === "1";
+  const [readMode, setReadMode] = useState(false);
 
   useEffect(() => {
     if (hydrated && (!drill || !skill)) router.replace(drill ? routes.drill(drill.key) : routes.dashboard);
@@ -63,12 +63,8 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
     setPicked(null);
     setAnother(false);
     setExplainer(false);
+    setReadMode(false);
   }, [skillIdParam]);
-
-  // &explain=1 opens the explainer straight away (a preview link).
-  useEffect(() => {
-    if (wantExplain && skill && hasExplainer(skill)) setExplainer(true);
-  }, [wantExplain, skill]);
 
   // Basics of a Premium drill is gated like its questions, unless they are already in it.
   const premiumDrill = !!drill && !!exam.premium?.lockedDrills.includes(drill.key);
@@ -91,6 +87,7 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
     }
     if (r.misses >= 2 && !r.reviewed) {
       setRun({ ...r, reviewed: true });
+      setReadMode(false);
       setScreen("review");
       return;
     }
@@ -124,16 +121,21 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
 
   const explainable = hasExplainer(skill);
   const openExplainer = () => setExplainer(true);
-  const overlay = explainer ? <BasicsExplainer exam={exam} skill={skill} onClose={() => setExplainer(false)} /> : null;
+  const closeExplainer = () => setExplainer(false);
+  const overlay = explainer ? <BasicsExplainer exam={exam} skill={skill} doneLabel="Try it again" onDone={closeExplainer} onClose={closeExplainer} /> : null;
+  // On the text card, the way back to the video.
   const watchButton = explainable ? (
-    <button type="button" onClick={openExplainer} className="flex items-center gap-1.5 self-start text-[15px] font-semibold text-brand">
-      <Play className="h-4 w-4" /> Watch it instead · 40 seconds
+    <button type="button" onClick={() => setReadMode(false)} className="flex items-center gap-1.5 self-start text-[15px] font-semibold text-brand">
+      <Play className="h-4 w-4" /> Watch it instead · 30 seconds
     </button>
   ) : null;
 
-  // ---- Learn / review card ----
+  // ---- Learn / review: the video first for a voiced skill, the text card behind "Read it" ----
   if (screen === "learn" || screen === "review") {
     const review = screen === "review";
+    if (explainable && !readMode) {
+      return <BasicsExplainer exam={exam} skill={skill} doneLabel={review ? "Got it, keep going" : `Got it, try ${total} questions`} onDone={start} onClose={() => setReadMode(true)} onRead={() => setReadMode(true)} />;
+    }
     return (
       <div className="v2-focus">
         <Header title={skill.name} sub={`Basics · ${drill.name}`} closeHref={overviewHref} />
@@ -154,7 +156,6 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
             </button>
           </div>
         </div>
-        {overlay}
       </div>
     );
   }
@@ -262,7 +263,7 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
                     <p className="text-sm text-gray-800 dark:text-gray-100"><b>The trick:</b> {skill.trick}</p>
                     {explainable && (
                       <button type="button" onClick={openExplainer} className="v2-tap mt-1 flex items-center justify-center gap-2 self-start rounded-xl bg-white dark:bg-gray-900 px-4 text-[15px] font-bold text-brand shadow-sm">
-                        <Play className="h-4 w-4" /> Watch the 40-second explainer
+                        <Play className="h-4 w-4" /> Watch the explainer · 30 seconds
                       </button>
                     )}
                     <p className="text-xs text-gray-500 dark:text-gray-400">This one will come back in a minute.</p>

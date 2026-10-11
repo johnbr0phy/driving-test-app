@@ -38,39 +38,91 @@ const DEFAULT_MODEL = "eleven_multilingual_v2";
 
 const LIBRARY = ([...grammar, ...reading, ...math, ...science, ...writing] as BasicsSkill[]);
 
-/** Beats are read with a blank line between them so the voice pauses. */
+/**
+ * How one written word is read aloud, as spoken words. Math notation stays
+ * as written on screen ("x²", "1·6,", "2)(x") but the voice needs words,
+ * so the TTS text and the aligner both go through this. Prose words come
+ * back unchanged (as a one-item list).
+ */
+export function speakable(word: string): string[] {
+  let w = word;
+  if (/^[−-]\d/.test(w)) w = "negative " + w.slice(1);
+  w = w
+    .replace(/²/g, " squared")
+    .replace(/³/g, " cubed")
+    .replace(/√/g, " square root of ")
+    .replace(/[·×]/g, " times ")
+    .replace(/÷/g, " divided by ")
+    .replace(/\)\(/g, ", times ")
+    .replace(/[()]/g, "")
+    .replace(/^[−-]$/, "minus")
+    .replace(/^\+$/, "plus")
+    .replace(/^=$/, "equals")
+    .replace(/^≠$/, "is not equal to")
+    .replace(/^≤$/, "is at most")
+    .replace(/^≥$/, "is at least")
+    .replace(/^<$/, "is less than")
+    .replace(/^>$/, "is greater than")
+    .replace(/%/g, " percent")
+    .replace(/(\d)([a-z])/gi, "$1 $2")
+    // A letter coefficient on x ("bx", "mx") is read as two letters.
+    .replace(/^([abcdkmn])x([,.;:]?)$/, "$1 x$2");
+  return w.split(/\s+/).filter(Boolean);
+}
+
+/**
+ * The text sent to the voice: each beat on its own paragraph so the voice
+ * pauses between them, every word made speakable, and a full stop after a
+ * shown expression that has none ("x² + 5x + 6" then a pause, not a run-on
+ * into the first step).
+ */
 export function scriptText(beats: ExplainerBeat[]) {
-  return beats.map((b) => b.say).join("\n\n");
+  return beats
+    .map((b) => {
+      const show = /[.?!:]$/.test(b.show.trim()) ? b.show : `${b.show}.`;
+      return [b.lead, show, ...b.tail].map((s) => s.trim()).filter(Boolean).join(" ");
+    })
+    .map((line) => words(line).flatMap(speakable).join(" "))
+    .join("\n\n");
+}
+
+/** The written script, as shown on screen: what the manifest's word count must match. */
+export function writtenWords(beats: ExplainerBeat[]) {
+  return beats.flatMap((b) => words(b.say));
 }
 
 const norm = (s: string) => s.toLowerCase().replace(/[^\p{L}\p{N}]/gu, "");
 
 /**
- * Give every script word a time by walking the spoken words in order.
- * A script word that the transcript dropped or merged gets the time of its
- * neighbours; a spoken word with no script match is skipped.
+ * Give every written word a time by walking the spoken words in order. A
+ * written word may be several spoken ones ("x²" is "x squared"), so each is
+ * expanded with `speakable()` first and gets the span from its first spoken
+ * word to its last. A word the transcript dropped or merged gets the time of
+ * its neighbours; a spoken word with no script match is skipped.
  */
 export function alignWords(script: string[], spoken: ExplainerWord[]): ExplainerWord[] {
   const out: (ExplainerWord | null)[] = [];
   let j = 0;
   for (const w of script) {
-    const key = norm(w);
-    let hit = -1;
-    for (let k = j; k < Math.min(spoken.length, j + 4); k++) {
-      if (norm(spoken[k].text) === key) {
-        hit = k;
-        break;
+    let first: ExplainerWord | null = null;
+    let last: ExplainerWord | null = null;
+    for (const part of speakable(w)) {
+      const key = norm(part);
+      if (!key) continue;
+      let hit = -1;
+      for (let k = j; k < Math.min(spoken.length, j + 6); k++) {
+        if (norm(spoken[k].text) === key) {
+          hit = k;
+          break;
+        }
       }
-    }
-    if (hit >= 0) {
-      out.push({ text: w, start: spoken[hit].start, end: spoken[hit].end });
+      if (hit < 0) continue;
+      first ??= spoken[hit];
+      last = spoken[hit];
       j = hit + 1;
-    } else if (key === "") {
-      // Pure punctuation such as "(" or ";" is not spoken; it rides with the previous word.
-      out.push(null);
-    } else {
-      out.push(null);
     }
+    // Pure punctuation such as "(" or ";" is not spoken; it rides with its neighbours.
+    out.push(first && last ? { text: w, start: first.start, end: last.end } : null);
   }
   // Fill gaps from the nearest timed neighbours.
   const timed: ExplainerWord[] = [];
@@ -149,7 +201,7 @@ async function generate(skill: BasicsSkill, apiKey: string, voice: string, model
   if (!res.ok) throw new Error(`${skill.id}: ElevenLabs ${res.status} ${await res.text()}`);
   const data = (await res.json()) as { audio_base64: string; alignment: { characters: string[]; character_start_times_seconds: number[]; character_end_times_seconds: number[] } };
   const spoken = wordsFromAlignment(data.alignment);
-  const timed = alignWords(words(text), spoken);
+  const timed = alignWords(writtenWords(beats), spoken);
   const manifest = manifestFor(skill, beats, timed, voice, model);
   await writeFile(join(OUT_DIR, `${skill.id}.mp3`), Buffer.from(data.audio_base64, "base64"));
   await writeFile(join(OUT_DIR, `${skill.id}.json`), JSON.stringify(manifest) + "\n");
@@ -165,7 +217,7 @@ async function align(skillId: string, audioPath: string, wordsPath: string) {
   const parsed = JSON.parse(await readFile(wordsPath, "utf8")) as RawWord[] | { words: RawWord[] };
   const raw = Array.isArray(parsed) ? parsed : parsed.words;
   const spoken: ExplainerWord[] = raw.filter((w) => w.type === undefined || w.type === "word").map((w) => ({ text: w.text ?? w.word ?? "", start: w.start, end: w.end }));
-  const timed = alignWords(words(scriptText(beats)), spoken);
+  const timed = alignWords(writtenWords(beats), spoken);
   const manifest = manifestFor(skill, beats, timed, "external", "external");
   await mkdir(OUT_DIR, { recursive: true });
   await writeFile(join(OUT_DIR, `${skill.id}.mp3`), await readFile(audioPath));

@@ -60,11 +60,11 @@ export const HESI: ExamV2Config = {
   testLength: "3 hr 3 min",
   copy: {
     heroSubs: [
-      "Seven section drills on your phone, then the full timed battery on a desktop.",
-      "Mastery first. Programs usually look at every section, not just the total.",
-      "Halfway through the sections. The full battery will show where you stand.",
-      "Hit your goal on the full battery to finish the plan.",
-      "Goal hit. Book your HESI A2 through your program.",
+      "Drill each section, then take the full test.",
+      "Master each drill first.",
+      "Halfway there. Try the full test.",
+      "Hit your goal on the full battery.",
+      "Goal hit. Book your HESI A2.",
     ],
     sourceLine: "Based on the HESI A2 section outlines (math, reading, vocabulary, grammar, biology, chemistry, anatomy and physiology). Physics is not included. Not affiliated with Elsevier.",
     scoreNote: "Each section is scored as percent correct, like the HESI report. Most programs want 75 percent or better in each section they require.",

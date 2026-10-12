@@ -128,11 +128,11 @@ export const ACT: ExamV2Config = {
   testLength: "2 hr 45 min",
   copy: {
     heroSubs: [
-      "Start with Basics: a short rule and a few quick questions per skill, on your phone. Each drill then opens its exam-level questions, and two full timed ACTs wait on a desktop.",
-      "Mastery first. English and Reading are passage work; practice the pace.",
-      "Halfway through the sections. The full test will show your composite.",
-      "Hit your composite goal on a full test to finish the plan.",
-      "Goal hit. Go register for your ACT.",
+      "Learn the basics, then drill each skill.",
+      "Master each drill first.",
+      "Halfway there. Try the full test.",
+      "Hit your composite goal on a full test.",
+      "Goal hit. Go register for the ACT.",
     ],
     sourceLine: "Original passages and questions written to the enhanced ACT format (2025): four choices, 50/45/36/40 questions, Science optional. Not affiliated with ACT, Inc. Score estimates are unofficial.",
     scoreNote: "Section scores are estimates on the 1 to 36 scale from a typical conversion. The composite averages English, Math and Reading; Science is reported on its own, as on the enhanced ACT.",

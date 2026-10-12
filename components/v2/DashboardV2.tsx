@@ -224,7 +224,7 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
                     <p className={`text-[11px] font-semibold text-gray-500 dark:text-gray-400 mb-1.5 ${index === 0 ? "" : "mt-3"}`}>{section.name}</p>
                   )}
                   <ProgressCard
-                    title={basics ? `${s.def.name} Basics` : s.def.name}
+                    title={basics ? `${s.def.name} [Basics]` : s.def.name}
                     subtitle={subtitle}
                     completed={step.complete}
                     stepNumber={index + 1}

@@ -35,6 +35,7 @@ import {
   verifyCronSecret,
   emailedRecently,
   DAY_MS,
+  JOHN_SENDER,
 } from "@/lib/cron-email";
 import { EMAIL_TEMPLATES } from "@/lib/email-templates";
 import { LAUNCH_EXPERIMENT, LAUNCH_VARIANTS, pickLaunchVariant } from "@/lib/email-launch";
@@ -89,6 +90,7 @@ export async function GET(req: NextRequest) {
           ? { emailVariants: { [LAUNCH_EXPERIMENT]: { variant: pickLaunchVariant(u.uid).id, sentAt: new Date().toISOString() } } }
           : {},
       users: eligible,
+      sender: JOHN_SENDER,
     });
 
     return NextResponse.json(result);

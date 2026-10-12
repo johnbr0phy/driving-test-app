@@ -15,6 +15,8 @@
 export const LAUNCH_EXPERIMENT = "newTests2026";
 
 const SITE = "https://tigertest.io";
+/** Images skip the apex-to-www redirect, which many mail clients won't follow for images. */
+const IMG = "https://www.tigertest.io";
 const SAT = "#1450d2";
 const SAT_LIGHT = "#ebf1ff";
 const ACT = "#b6203a";
@@ -38,7 +40,7 @@ function track(variant: string, path: string): string {
 function tiger(exam: "sat" | "act", expression: number, size = 128): string {
   const [color, light, label] = exam === "sat" ? [SAT, SAT_LIGHT, "SAT"] : [ACT, ACT_LIGHT, "ACT"];
   return `<td align="center" valign="bottom" style="padding: 0 6px;">
-                    <img src="${SITE}/tigers/${exam}/tiger_face_0${expression}.png" width="${size}" height="${size}" alt="${label} tiger" style="display: block; width: ${size}px; height: ${size}px; border: 0;" />
+                    <img src="${IMG}/tigers/${exam}/tiger_face_0${expression}.png" width="${size}" height="${size}" alt="${label} tiger" style="display: block; width: ${size}px; height: ${size}px; border: 0;" />
                     <span style="display: inline-block; margin-top: 8px; padding: 4px 14px; border-radius: 50px; background-color: ${light}; color: ${color}; font-size: 13px; font-weight: 700; letter-spacing: 0.06em;">${label}</span>
                   </td>`;
 }
@@ -107,6 +109,29 @@ function shell(v: { subject: string; preheader: string }, heroHtml: string, head
 const SAT_PAGE = "/sat-practice-test";
 const ACT_PAGE = "/act-practice-test";
 
+/** Other tests a permit-age reader may be facing soon, most timely first. */
+const MORE_TESTS: [string, string][] = [
+  ["Food Handler card", "/food-handler-practice-test"],
+  ["ASVAB", "/asvab-practice-test"],
+  ["Hunter Safety", "/hunter-safety-practice-test"],
+  ["Motorcycle permit", "/motorcycle-practice-test"],
+  ["ACCUPLACER", "/accuplacer-practice-test"],
+  ["CPR and First Aid", "/cpr-practice-test"],
+];
+
+/** The same "and more" lines under every variant, so it doesn't skew the test. */
+function moreTests(id: string): string {
+  const plain = (path: string, label: string) =>
+    `<a href="${track(id, path)}" style="color: #1a1a1a; text-decoration: underline;">${label}</a>`;
+  const items = [...MORE_TESTS, ["See all 40+ practice tests", "/tests"]]
+    .map(([label, path]) => `<li style="margin: 0 0 6px;">${plain(path, label)}</li>`)
+    .join("");
+  return (
+    `<p style="margin: 0 0 8px; ${TEXT}"><strong>Also new on TigerTest:</strong></p>` +
+    `<ul style="margin: 0 0 22px; padding-left: 22px; ${TEXT}">${items}</ul>`
+  );
+}
+
 function variant(
   id: string,
   name: string,
@@ -121,7 +146,7 @@ function variant(
     preheader,
     html: () => {
       const parts = build({ sat: track(id, SAT_PAGE), act: track(id, ACT_PAGE) });
-      return shell({ subject, preheader }, parts.hero, parts.heading, parts.body);
+      return shell({ subject, preheader }, parts.hero, parts.heading, parts.body + moreTests(id));
     },
   };
 }

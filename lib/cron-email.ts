@@ -21,10 +21,21 @@ import {
 import { isUnsubscribed, listUnsubscribeHeaders, unsubscribeToken } from "@/lib/unsubscribe";
 
 /**
- * Every campaign email is from John, and replies should reach him. The
- * sender stays noreply@ (the verified domain); this is the Reply-To.
+ * Every campaign email is from John, and replies should reach him. Most go
+ * out from noreply@ with this as the Reply-To; a campaign can pass
+ * JOHN_SENDER to come from john@tigertest.io itself.
  */
 export const CAMPAIGN_REPLY_TO = process.env.EMAIL_REPLY_TO ?? "john@johnbrophy.net";
+
+/** Sent as John himself, so a reply lands in his tigertest.io inbox. */
+export interface Sender {
+  from: string;
+  replyTo: string;
+}
+export const JOHN_SENDER: Sender = {
+  from: "John from TigerTest <john@tigertest.io>",
+  replyTo: "john@tigertest.io",
+};
 
 /**
  * Per-run cap. Defaults to this cron's fair share of the daily campaign budget
@@ -304,7 +315,9 @@ export async function sendCronEmail(
   html: string,
   emailKey: string,
   /** Extra fields merged into the user doc with the sent marker (e.g. a split-test variant). */
-  record: Record<string, unknown> = {}
+  record: Record<string, unknown> = {},
+  /** Overrides the default noreply@ sender and Reply-To. */
+  sender?: Sender
 ): Promise<CronSendOutcome> {
   const db = getAdminDb();
 
@@ -318,7 +331,8 @@ export async function sendCronEmail(
     subject,
     html,
     kind: "campaign",
-    replyTo: CAMPAIGN_REPLY_TO,
+    ...(sender ? { from: sender.from } : {}),
+    replyTo: sender?.replyTo ?? CAMPAIGN_REPLY_TO,
     headers: listUnsubscribeHeaders(uid),
   });
 
@@ -358,6 +372,8 @@ export interface BatchOptions {
   extras?: (user: UserDoc) => Record<string, string>;
   /** Fields written to the user doc on a successful send, e.g. the split-test variant. */
   record?: (user: UserDoc) => Record<string, unknown>;
+  /** Send as someone other than noreply@, e.g. JOHN_SENDER. */
+  sender?: Sender;
 }
 
 export interface BatchResult {
@@ -390,7 +406,7 @@ export async function processBatch(opts: BatchOptions): Promise<BatchResult> {
       const html = buildHtml(template, user.uid, opts.extras?.(user) ?? {});
       const subject =
         typeof opts.subject === "function" ? opts.subject(user) : opts.subject;
-      const outcome = await sendCronEmail(user.uid, user.email, subject, html, opts.emailKey, opts.record?.(user) ?? {});
+      const outcome = await sendCronEmail(user.uid, user.email, subject, html, opts.emailKey, opts.record?.(user) ?? {}, opts.sender);
       if (outcome === "sent") sent++;
       else skipped++;
     } catch (err) {

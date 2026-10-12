@@ -117,14 +117,14 @@ const MORE_TESTS: [string, string][] = [
   ["CPR and First Aid", "/cpr-practice-test"],
 ];
 
-/** The same "and more" block under every variant, so it doesn't skew the test. */
+/** The same "and more" lines under every variant, so it doesn't skew the test. */
 function moreTests(id: string): string {
   const links = MORE_TESTS.map(([label, path]) => link(track(id, path), label)).join(" &nbsp;&bull;&nbsp; ");
-  return `<div style="margin: 8px 0 22px; padding: 16px 18px; background-color: #FFF9F5; border-radius: 10px;">
-                <p style="margin: 0 0 8px; color: #1a1a1a; font-size: 15px; font-weight: 700;">Also on TigerTest</p>
-                <p style="margin: 0 0 8px; ${TEXT} font-size: 15px;">${links}</p>
-                <p style="margin: 0; ${TEXT} font-size: 15px;">${link(track(id, "/tests"), "See all 40+ practice tests")}</p>
-              </div>`;
+  return (
+    p("<strong>Also on TigerTest:</strong>") +
+    p(links) +
+    p(link(track(id, "/tests"), "See all 40+ practice tests"))
+  );
 }
 
 function variant(

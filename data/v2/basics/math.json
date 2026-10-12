@@ -243,5 +243,196 @@
       { "stem": "A student is picked at random. What is the probability they are a junior who takes the bus?", "options": ["50/90", "50/80", "50/180"], "answer": 2, "why": "The junior-bus cell is 50. No restriction, so the bottom is the grand total, 180." },
       { "stem": "Of the juniors, what fraction take the bus?", "options": ["50/80", "50/180", "50/90"], "answer": 0, "why": "\"Of the juniors\" shrinks the world to the junior row: 50 out of 80." }
     ]
+  },
+  {
+    "id": "fractionConvert",
+    "name": "Fractions, decimals and percents",
+    "sub": "Three ways to write the same amount",
+    "rule": "A fraction is a division: 3/8 means 3 ÷ 8. Divide to get a decimal, then move the decimal two places right to get a percent.",
+    "trick": "To compare a mix like 0.7, 2/3 and 69%, turn every one into a decimal first. Then line them up.",
+    "examples": [
+      { "kind": "eg", "text": "3/8 as a percent", "note": "3 ÷ 8 = 0.375, so 37.5%." },
+      { "kind": "eg", "text": "Biggest of 0.7, 2/3 and 69%?", "note": "As decimals: 0.70, 0.67, 0.69. So 0.7." }
+    ],
+    "another": { "text": "A dollar is 100 cents. A quarter is 1/4 of a dollar, 0.25 of a dollar, and 25 cents out of 100, so 25%. Same money, three ways to say it.", "example": "1/4 = 0.25 = 25%\n1/2 = 0.50 = 50%\n3/4 = 0.75 = 75%" },
+    "walkthrough": {
+      "board": "3/8 → percent",
+      "kind": "math",
+      "steps": [
+        { "say": "A fraction bar means divide. 3/8 is 3 ÷ 8." },
+        { "ask": "3 ÷ 8 = ?", "options": ["0.375", "2.67", "0.38"], "answer": 0, "then": "The TEAS gives you a calculator for this part.", "hint": "Top number divided by the bottom: 3 ÷ 8, not 8 ÷ 3.", "line": "3/8 = 3 ÷ 8 = 0.375" },
+        { "ask": "Decimal to percent: move the decimal two places…", "options": ["Right: 37.5%", "Left: 0.00375%"], "answer": 0, "then": "Percent means out of 100, so the number gets bigger.", "line": "0.375 → 37.5%" },
+        { "ask": "Now compare 0.7, 2/3 and 69%. 2/3 is about 0.67. What is 69% as a decimal?", "options": ["0.69", "6.9", "69"], "answer": 0, "hint": "Move the decimal two places left.", "line": "0.70 · 0.67 · 0.69" },
+        { "ask": "So the greatest is?", "options": ["0.7", "69%", "2/3"], "answer": 0, "then": "0.70 beats 0.69 and 0.67. Give them the same number of decimal places, then compare.", "line": "Greatest: 0.7" }
+      ]
+    },
+    "questions": [
+      { "stem": "What is 1/5 written as a percent?", "options": ["5%", "20%", "0.2%"], "answer": 1, "why": "1 ÷ 5 = 0.2. Move the decimal two places right: 20%." },
+      { "stem": "Which is the smallest: 0.4, 3/8 or 41%?", "options": ["0.4", "41%", "3/8"], "answer": 2, "why": "As decimals: 0.4, 0.41 and 0.375. So 3/8 is the smallest." }
+    ]
+  },
+  {
+    "id": "fractionOps",
+    "name": "Adding and dividing fractions",
+    "sub": "Same bottom to add, flip to divide",
+    "rule": "To add or subtract fractions, give them the same bottom number first, then add the tops. To divide, flip the second fraction and multiply.",
+    "trick": "Mixed numbers: add the wholes, add the fractions, then combine. Dividing is keep, change, flip: keep the first, change ÷ to ×, flip the second.",
+    "examples": [
+      { "kind": "eg", "text": "1/3 + 1/4", "note": "4/12 + 3/12 = 7/12" },
+      { "kind": "eg", "text": "1/2 ÷ 3/4", "note": "1/2 × 4/3 = 4/6 = 2/3" }
+    ],
+    "another": { "text": "You can't add slices from pizzas cut different ways until they're cut the same. A third of a pizza and a quarter of a pizza: cut both into 12 slices. Now it's 4 slices plus 3 slices, so 7 of the 12.", "example": "1/3 = 4/12\n1/4 = 3/12\n4/12 + 3/12 = 7/12" },
+    "walkthrough": {
+      "board": "1 1/2 + 2 2/3",
+      "kind": "math",
+      "steps": [
+        { "say": "Mixed numbers: deal with the whole numbers and the fractions separately." },
+        { "ask": "Whole numbers first: 1 + 2 = ?", "options": ["3", "4"], "answer": 0, "line": "1 + 2 = 3" },
+        { "ask": "1/2 and 2/3 need the same bottom. What's the smallest number 2 and 3 both go into?", "options": ["6", "5", "12"], "answer": 0, "then": "6. Now rewrite each fraction over 6.", "hint": "Count by 3s: 3, 6. Does 2 go into 6?", "line": "Same bottom: 6" },
+        { "ask": "1/2 = 3/6. What is 2/3 over 6?", "options": ["4/6", "2/6", "5/6"], "answer": 0, "hint": "3 × 2 = 6, so multiply the top by 2 as well.", "line": "3/6 + 4/6 = 7/6" },
+        { "ask": "7/6 is more than 1. As a mixed number it's…", "options": ["1 1/6", "1 7/6", "7 1/6"], "answer": 0, "then": "Six sixths make 1, with 1/6 left over.", "line": "7/6 = 1 1/6" },
+        { "ask": "Add it to the 3 wholes. Total?", "options": ["4 1/6", "3 1/6", "3 7/6"], "answer": 0, "line": "3 + 1 1/6 = 4 1/6" },
+        { "ask": "Dividing is different: 1/2 ÷ 3/4. Keep, change, flip gives:", "options": ["1/2 × 4/3", "2/1 × 3/4", "1/2 × 3/4"], "answer": 0, "then": "1 × 4 = 4 on top, 2 × 3 = 6 on the bottom: 4/6, which is 2/3.", "hint": "Flip only the second fraction.", "line": "1/2 ÷ 3/4 = 1/2 × 4/3 = 4/6 = 2/3" }
+      ]
+    },
+    "questions": [
+      { "stem": "1/2 + 1/3 = ?", "options": ["2/5", "5/6", "1/6"], "answer": 1, "why": "Same bottom first: 3/6 + 2/6 = 5/6. Adding tops and bottoms (2/5) is the classic mistake." },
+      { "stem": "1/2 ÷ 1/4 = ?", "options": ["1/8", "2", "4"], "answer": 1, "why": "Keep, change, flip: 1/2 × 4/1 = 4/2 = 2. It makes sense: two quarters fit in a half." }
+    ]
+  },
+  {
+    "id": "orderOfOperations",
+    "name": "Order of operations",
+    "sub": "PEMDAS, and what absolute value bars do",
+    "rule": "Work in this order: parentheses (and absolute value bars), then exponents and roots, then multiply and divide left to right, then add and subtract left to right.",
+    "trick": "Multiply and divide are a tie, so go left to right. Same for add and subtract. Absolute value bars work like parentheses: do the inside, then make it positive.",
+    "examples": [
+      { "kind": "eg", "text": "2 + 3 × 4", "note": "Multiply first: 3 × 4 = 12. Then 2 + 12 = 14, not 20." },
+      { "kind": "eg", "text": "|−3 − 6|", "note": "Inside first: −9. The bars make it positive: 9." }
+    ],
+    "another": { "text": "Getting dressed has an order: socks before shoes, or it doesn't work. Math has an order too. Brackets are the socks, always first. Then powers, then times and divide, then plus and minus last.", "example": "2 + 3 × 4\nTimes first: 3 × 4 = 12\nThen plus: 2 + 12 = 14 (not 20)" },
+    "walkthrough": {
+      "board": "20 − 2 × (1 − 4)² ÷ 3",
+      "kind": "math",
+      "steps": [
+        { "say": "Never just go left to right. The order is parentheses, exponents, multiply and divide, then add and subtract." },
+        { "ask": "Parentheses first: 1 − 4 = ?", "options": ["−3", "3", "5"], "answer": 0, "hint": "Start at 1 and go down 4.", "line": "20 − 2 × (−3)² ÷ 3" },
+        { "ask": "Exponent next: (−3)² = ?", "options": ["9", "−9", "−6"], "answer": 0, "hint": "(−3) × (−3). A negative times a negative is positive.", "line": "20 − 2 × 9 ÷ 3" },
+        { "ask": "Multiply and divide, left to right: 2 × 9 ÷ 3 = ?", "options": ["6", "1.5"], "answer": 0, "then": "2 × 9 = 18, then 18 ÷ 3 = 6.", "hint": "Left to right: the multiply comes first.", "line": "20 − 6" },
+        { "ask": "Last, subtract: 20 − 6 = ?", "options": ["14", "26"], "answer": 0, "line": "= 14" },
+        { "ask": "Absolute value bars act like parentheses. |−3 − 6|: the inside is −9, so the value is?", "options": ["9", "−9", "3"], "answer": 0, "then": "The bars make the result positive.", "line": "|−3 − 6| = |−9| = 9" }
+      ]
+    },
+    "questions": [
+      { "stem": "4 + 2 × 5 = ?", "options": ["30", "14", "22"], "answer": 1, "why": "Multiply first: 2 × 5 = 10. Then 4 + 10 = 14." },
+      { "stem": "|2 − 10| − 3 = ?", "options": ["5", "−11", "11"], "answer": 0, "why": "Inside the bars: 2 − 10 = −8. The bars make it 8. Then 8 − 3 = 5." }
+    ]
+  },
+  {
+    "id": "percentChange",
+    "name": "Percent change",
+    "sub": "The change divided by the start",
+    "rule": "Percent change = (new − old) ÷ old, then turn it into a percent. Always divide by the number you started with.",
+    "trick": "Divide by where you started. $80 down to $60 is a $20 drop out of 80, so 25%. Dividing by 60 gives 33%, a wrong answer the test loves to offer.",
+    "examples": [
+      { "kind": "eg", "text": "50 up to 60", "note": "Change 10. 10 ÷ 50 = 0.2, so up 20%." },
+      { "kind": "eg", "text": "$80 down to $60", "note": "Change 20. 20 ÷ 80 = 0.25, so down 25%." }
+    ],
+    "another": { "text": "You had 10 stickers and now you have 15. You gained 5. Compared with the 10 you started with, that's half again: up 50%. Always compare the change with what you had at the start.", "example": "10 → 15\nChange: 5\n5 ÷ 10 = 0.5 → up 50%" },
+    "walkthrough": {
+      "board": "50 → 60",
+      "kind": "math",
+      "steps": [
+        { "say": "Percent change is three moves: find the change, divide by the start, turn it into a percent." },
+        { "ask": "The change: 60 − 50 = ?", "options": ["10", "110"], "answer": 0, "line": "Change = 60 − 50 = 10" },
+        { "ask": "Divide the change by which number?", "options": ["50, where it started", "60, where it ended"], "answer": 0, "hint": "Always the original number.", "line": "10 ÷ 50 = 0.2" },
+        { "ask": "0.2 as a percent?", "options": ["20%", "2%", "0.2%"], "answer": 0, "then": "It went up, so it's a 20% increase.", "line": "0.2 → up 20%" },
+        { "ask": "A price drops from $80 to $60. The change is 20. Divide 20 by:", "options": ["80", "60"], "answer": 0, "then": "20 ÷ 80 = 0.25, a 25% decrease. 20 ÷ 60 would give 33%, the trap answer.", "hint": "Where did the price start?", "line": "20 ÷ 80 = 0.25 → down 25%" }
+      ]
+    },
+    "questions": [
+      { "stem": "A patient's weight goes from 200 lb to 180 lb. What is the percent decrease?", "options": ["10%", "11%", "20%"], "answer": 0, "why": "Change 20. Divide by the start: 20 ÷ 200 = 0.10, so 10%." },
+      { "stem": "A clinic goes from 40 to 50 patients a day. What is the percent increase?", "options": ["20%", "25%", "10%"], "answer": 1, "why": "Change 10. 10 ÷ 40 = 0.25, so 25%. (20% comes from dividing by the new number.)" }
+    ]
+  },
+  {
+    "id": "scientificNotation",
+    "name": "Scientific notation",
+    "sub": "Multiplying with powers of 10",
+    "rule": "Scientific notation is a number from 1 to just under 10, times 10 to a power. To multiply two of them, multiply the front numbers and add the powers.",
+    "trick": "If the front number ends up 10 or more, move its decimal one place left and add 1 to the power: 12 × 10³ is 1.2 × 10⁴.",
+    "examples": [
+      { "kind": "eg", "text": "(2 × 10³)(4 × 10²)", "note": "2 × 4 = 8 and 3 + 2 = 5, so 8 × 10⁵." },
+      { "kind": "eg", "text": "(5 × 10⁴)(3 × 10⁻¹)", "note": "15 × 10³, then fix the front: 1.5 × 10⁴." }
+    ],
+    "another": { "text": "10³ is a shortcut for 1,000: a 1 with three zeros. 4 × 10³ means 4 thousands, which is 4,000. A negative power goes the other way: 10⁻² is a hundredth, 0.01.", "example": "4 × 10³ = 4,000\n4 × 10⁻² = 0.04" },
+    "walkthrough": {
+      "board": "(4 × 10³)(3 × 10⁻¹)",
+      "kind": "math",
+      "steps": [
+        { "say": "Two parts to multiply: the front numbers, and the powers of 10." },
+        { "ask": "Front numbers: 4 × 3 = ?", "options": ["12", "7"], "answer": 0, "line": "4 × 3 = 12" },
+        { "ask": "Powers of 10 multiply by adding the exponents: 3 + (−1) = ?", "options": ["2", "4", "−3"], "answer": 0, "hint": "Adding a negative is subtracting.", "line": "10³ × 10⁻¹ = 10²" },
+        { "ask": "That makes 12 × 10², but the front has to be under 10. Which is the same number?", "options": ["1.2 × 10³", "1.2 × 10²", "12 × 10³"], "answer": 0, "then": "Move the decimal one place left, add 1 to the power.", "hint": "Making the front 10 times smaller means making the power one bigger.", "line": "12 × 10² = 1.2 × 10³" }
+      ]
+    },
+    "questions": [
+      { "stem": "(2 × 10⁴)(3 × 10²) = ?", "options": ["6 × 10⁸", "5 × 10⁶", "6 × 10⁶"], "answer": 2, "why": "2 × 3 = 6. Add the powers: 4 + 2 = 6. So 6 × 10⁶." },
+      { "stem": "Which is 25 × 10³ written in scientific notation?", "options": ["2.5 × 10⁴", "2.5 × 10²", "25 × 10⁴"], "answer": 0, "why": "The front must be under 10: 25 becomes 2.5, so the power goes up by one, to 10⁴." }
+    ]
+  },
+  {
+    "id": "dosage",
+    "name": "Dosage calculations",
+    "sub": "Ordered over on hand, and mg per kg",
+    "rule": "For a liquid dose: (dose ordered ÷ dose on hand) × the volume it comes in. For a weight-based dose: change pounds to kilograms first, then multiply by the mg per kg.",
+    "trick": "Write the units beside every number. If they cancel down to the unit the question asks for (mL or mg), the setup is right.",
+    "examples": [
+      { "kind": "eg", "text": "Order 250 mg. On hand: 125 mg per 5 mL.", "note": "250 ÷ 125 = 2, and 2 × 5 mL = 10 mL." },
+      { "kind": "eg", "text": "33 lb child, 10 mg/kg", "note": "33 ÷ 2.2 = 15 kg, and 15 × 10 = 150 mg." }
+    ],
+    "another": { "text": "Think of a spoon. The bottle says every 5 mL spoonful has 125 mg of medicine in it. The doctor wants 250 mg. How many spoonfuls is that? Two. Two spoonfuls of 5 mL is 10 mL.", "example": "250 mg wanted ÷ 125 mg per spoonful = 2 spoonfuls\n2 spoonfuls × 5 mL = 10 mL" },
+    "walkthrough": {
+      "board": "Order: 250 mg. On hand: 125 mg per 5 mL.",
+      "kind": "text",
+      "steps": [
+        { "say": "A liquid dose is two steps: how many portions of the medicine you need, then how many mL that is." },
+        { "ask": "Ordered ÷ on hand: 250 mg ÷ 125 mg = ?", "options": ["2", "0.5", "125"], "answer": 0, "hint": "How many 125s fit in 250?", "line": "250 mg ÷ 125 mg = 2" },
+        { "ask": "Each portion is 5 mL. So give:", "options": ["10 mL", "2.5 mL", "7 mL"], "answer": 0, "then": "2 × 5 mL = 10 mL.", "line": "2 × 5 mL = 10 mL" },
+        { "say": "A weight-based order is per kilogram, but the weight is often in pounds. Change pounds to kilograms first." },
+        { "ask": "A child weighs 33 lb. Using 1 kg = 2.2 lb, the weight in kg is:", "options": ["15 kg", "72.6 kg", "30.8 kg"], "answer": 0, "hint": "Kilograms are bigger, so there are fewer of them: divide by 2.2.", "line": "33 lb ÷ 2.2 = 15 kg" },
+        { "ask": "The order is 10 mg/kg. The dose is:", "options": ["150 mg", "330 mg", "1.5 mg"], "answer": 0, "then": "15 kg × 10 mg per kg = 150 mg. Multiplying the 33 pounds instead gives 330, the classic trap.", "line": "15 kg × 10 mg/kg = 150 mg" }
+      ]
+    },
+    "questions": [
+      { "stem": "Order: 500 mg. On hand: 250 mg per 5 mL. How many mL do you give?", "options": ["2 mL", "10 mL", "2.5 mL"], "answer": 1, "why": "500 ÷ 250 = 2. Then 2 × 5 mL = 10 mL." },
+      { "stem": "A 66 lb child is ordered 5 mg/kg. Using 1 kg = 2.2 lb, how many mg is the dose?", "options": ["330 mg", "150 mg", "30 mg"], "answer": 1, "why": "66 ÷ 2.2 = 30 kg. Then 30 × 5 = 150 mg. 330 comes from skipping the pounds-to-kilograms step." }
+    ]
+  },
+  {
+    "id": "volume",
+    "name": "Volume",
+    "sub": "Length × width × height",
+    "rule": "Volume is the space inside a 3D shape. For a box, multiply length × width × height. The answer is in cubic units (cm³, ft³).",
+    "trick": "Area multiplies two numbers (square units). Volume multiplies three (cubic units). 1 liter is 1,000 cm³, so divide cm³ by 1,000 to get liters.",
+    "examples": [
+      { "kind": "eg", "text": "Box 4 by 3 by 2", "note": "4 × 3 × 2 = 24 cubic units." },
+      { "kind": "eg", "text": "Cube 10 cm on each side", "note": "10 × 10 × 10 = 1,000 cm³, exactly 1 liter." }
+    ],
+    "another": { "text": "Fill a shoebox with sugar cubes. The bottom layer might be 4 cubes by 3 cubes, so 12 cubes. Stack 2 layers and you've used 24. Length × width is one layer; the height is how many layers.", "example": "Bottom layer: 4 × 3 = 12 cubes\n2 layers: 12 × 2 = 24 cubes" },
+    "walkthrough": {
+      "board": "A box is 25 cm × 10 cm × 8 cm. How many liters does it hold?",
+      "kind": "text",
+      "steps": [
+        { "say": "The volume of a box is length × width × height. Three numbers, cubic units." },
+        { "ask": "The bottom layer: 25 × 10 = ?", "options": ["250", "35"], "answer": 0, "line": "25 × 10 = 250" },
+        { "ask": "Times the height, 8:", "options": ["2,000 cm³", "258 cm³", "200 cm³"], "answer": 0, "line": "250 × 8 = 2,000 cm³" },
+        { "ask": "1 L = 1,000 cm³. Liters are bigger, so:", "options": ["2,000 ÷ 1,000 = 2 L", "2,000 × 1,000 = 2,000,000 L"], "answer": 0, "then": "2 liters.", "hint": "Bigger unit, fewer of them: divide.", "line": "2,000 ÷ 1,000 = 2 L" }
+      ]
+    },
+    "questions": [
+      { "stem": "A box is 5 in by 4 in by 3 in. What is its volume?", "options": ["12 in³", "60 in³", "47 in³"], "answer": 1, "why": "5 × 4 × 3 = 60 cubic inches." },
+      { "stem": "A tank holds 3,000 cm³. Using 1 L = 1,000 cm³, how many liters is that?", "options": ["3 L", "30 L", "0.3 L"], "answer": 0, "why": "Liters are bigger, so divide: 3,000 ÷ 1,000 = 3." }
+    ]
   }
 ]

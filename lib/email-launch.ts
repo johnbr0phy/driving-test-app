@@ -15,6 +15,8 @@
 export const LAUNCH_EXPERIMENT = "newTests2026";
 
 const SITE = "https://tigertest.io";
+/** Images skip the apex-to-www redirect, which many mail clients won't follow for images. */
+const IMG = "https://www.tigertest.io";
 const SAT = "#1450d2";
 const SAT_LIGHT = "#ebf1ff";
 const ACT = "#b6203a";
@@ -38,7 +40,7 @@ function track(variant: string, path: string): string {
 function tiger(exam: "sat" | "act", expression: number, size = 128): string {
   const [color, light, label] = exam === "sat" ? [SAT, SAT_LIGHT, "SAT"] : [ACT, ACT_LIGHT, "ACT"];
   return `<td align="center" valign="bottom" style="padding: 0 6px;">
-                    <img src="${SITE}/tigers/${exam}/tiger_face_0${expression}.png" width="${size}" height="${size}" alt="${label} tiger" style="display: block; width: ${size}px; height: ${size}px; border: 0;" />
+                    <img src="${IMG}/tigers/${exam}/tiger_face_0${expression}.png" width="${size}" height="${size}" alt="${label} tiger" style="display: block; width: ${size}px; height: ${size}px; border: 0;" />
                     <span style="display: inline-block; margin-top: 8px; padding: 4px 14px; border-radius: 50px; background-color: ${light}; color: ${color}; font-size: 13px; font-weight: 700; letter-spacing: 0.06em;">${label}</span>
                   </td>`;
 }

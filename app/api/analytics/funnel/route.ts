@@ -6,6 +6,8 @@ import { FieldValue } from 'firebase-admin/firestore';
 // and per UTC day; signups are also split by whether the browser practiced
 // before signing up.
 const STEPS = new Set(['visit', 'answered', 'signup_view', 'signup']);
+// Mirrors VISIT_SOURCES in lib/funnel.ts (that module imports the client SDK).
+const VISIT_SOURCES = new Set(['chatgpt', 'perplexity', 'gemini', 'copilot', 'claude', 'search', 'direct', 'other']);
 
 export async function POST(request: NextRequest) {
   try {
@@ -21,6 +23,9 @@ export async function POST(request: NextRequest) {
     const bump = { total: FieldValue.increment(1), daily: { [today]: FieldValue.increment(1) } };
     const steps: Record<string, unknown> = { [step]: bump };
     if (step === 'signup') steps[triedFirst ? 'signup_tried' : 'signup_cold'] = bump;
+    if (step === 'visit' && typeof body.source === 'string' && VISIT_SOURCES.has(body.source)) {
+      steps[`visit_${body.source}`] = bump;
+    }
 
     // Nested-object merge, same pattern as analytics/paywalls.
     await db.doc('analytics/funnel').set({ steps }, { merge: true });

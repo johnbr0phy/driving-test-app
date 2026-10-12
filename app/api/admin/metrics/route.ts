@@ -453,6 +453,11 @@ function buildVisitorFunnel(
   for (const key of ['visit', 'answered', 'signup_view', 'signup', 'signup_tried', 'signup_cold']) {
     daily[key] = steps?.[key]?.daily || {};
   }
+  // Visits by source (visit_chatgpt, visit_search...), counted from the AI
+  // referrer tracking deploy on, so they sum to less than all-time visits.
+  for (const key of Object.keys(steps || {})) {
+    if (key.startsWith('visit_')) daily[key] = steps?.[key]?.daily || {};
+  }
   const emptyCohort = (): Record<CohortStage, Record<string, number>> => ({
     accounts: {},
     answered: {},

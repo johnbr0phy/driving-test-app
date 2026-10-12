@@ -7,6 +7,7 @@ import { Providers } from "@/components/Providers";
 import { SuperAmazingFireworks } from "@/components/SuperAmazingFireworks";
 import { NativeAppShell } from "@/components/NativeAppShell";
 import { THEME_INIT_SCRIPT } from "@/contexts/ThemeContext";
+import { SITE_JSON_LD } from "@/lib/siteSchema";
 
 // viewport-fit=cover (page extends behind the notch/home indicator) is
 // only wanted inside the native app shell, where env(safe-area-inset-*)
@@ -97,6 +98,7 @@ export default function RootLayout({
         {/* Applies the saved colour scheme before first paint so dark-mode
             readers never see a white flash. See contexts/ThemeContext.tsx. */}
         <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SITE_JSON_LD) }} />
       </head>
       {/* min-h-screen (100vh) rather than min-h-dvh: dvh resizes as the iOS
           browser toolbar collapses/expands while scrolling, which can leave

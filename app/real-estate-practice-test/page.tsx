@@ -4,6 +4,7 @@ import { getTigerAsset } from "@/lib/tigerAssets";
 import { Smartphone, Monitor } from "lucide-react";
 import { ExamLandingHero, ExamLandingCTA } from "@/components/exam/ExamLandingHero";
 import { ExamLandingBreadcrumbs } from "@/components/exam/ExamLandingBreadcrumbs";
+import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
@@ -158,6 +159,8 @@ export default function RealestateLandingPage() {
         </div>
       </div>
 
+      <ExamFacts examId="realestate" />
+
       {/* How it works */}
       <div id="how-it-works" className="max-w-5xl mx-auto px-6 pt-8 pb-16 md:pt-12 md:pb-24">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-16">
@@ -248,12 +251,12 @@ export default function RealestateLandingPage() {
         </div>
       </div>
 
-      {/* Just launched */}
+      {/* Feedback */}
       <div className="max-w-3xl mx-auto px-6 py-16 md:py-24 text-center">
         <div className="bg-brand-light border border-brand-border-light rounded-2xl p-8 md:p-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4">We Just Launched!</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4">Spot a Mistake? Tell Us</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 max-w-xl mx-auto">
-            The real estate practice test is brand new. If a question looks wrong or your state teaches it differently, tell us.
+            If a question looks wrong or your state teaches it differently, tell us.
           </p>
           <a
             href="https://johnbrophy.net/#contact"

@@ -102,11 +102,11 @@ export const SAT: ExamV2Config = {
   testLength: "2 hr 14 min",
   copy: {
     heroSubs: [
-      "Learn the basics, then drill each skill. Two timed tests wait on a desktop.",
-      "Mastery first. Each drill is one skill area the SAT scores you on.",
-      "Halfway through the skills. The full test will show where you stand.",
-      "Hit your goal on the full test to finish the plan.",
-      "Goal hit. You're ready to book your SAT.",
+      "Learn the basics, then drill each skill.",
+      "Master each drill first.",
+      "Halfway there. Try the full test.",
+      "Hit your goal on the full test.",
+      "Goal hit. Go book your SAT.",
     ],
     sourceLine: "Original questions written to the digital SAT specifications. Not affiliated with College Board. Score estimates are unofficial.",
     scoreNote: "Section scores are estimates from a typical conversion. Real scores vary by test form by about 30 points per section.",

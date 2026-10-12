@@ -62,11 +62,11 @@ export const ACCUPLACER: ExamV2Config = {
   testLength: "Untimed, about 2 hours",
   copy: {
     heroSubs: [
-      "Five section drills on your phone, then two untimed placement tests on a desktop.",
-      "Mastery first. Each drill is one ACCUPLACER section.",
-      "Halfway through the sections. The practice tests will show your placement band.",
-      "Hit your goal on a practice test to finish the plan.",
-      "Goal hit. Ask your college how to schedule the ACCUPLACER.",
+      "Drill each section, then take two practice tests.",
+      "Master each drill first.",
+      "Halfway there. Try the full test.",
+      "Hit your goal on a practice test.",
+      "Goal hit. Ask your college about scheduling.",
     ],
     sourceLine: "Based on the College Board Next-Generation ACCUPLACER section outlines. Cut scores are set by each college. The WritePlacer essay is not included. Not affiliated with the College Board.",
     scoreNote: "Section scores are estimates on the 200 to 300 ACCUPLACER scale from a typical conversion; the real test is adaptive. Your college publishes the cut scores that matter.",

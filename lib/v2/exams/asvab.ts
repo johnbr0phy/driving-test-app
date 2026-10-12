@@ -74,11 +74,11 @@ export const ASVAB: ExamV2Config = {
   testLength: "2 hr 57 min",
   copy: {
     heroSubs: [
-      "Eight subtest drills on your phone, then one full CAT-ASVAB on a desktop.",
-      "Mastery first. Put the four AFQT subtests ahead of the rest.",
-      "Halfway through the subtests. The full test will show your AFQT estimate.",
-      "Hit your AFQT goal on the full test to finish the plan.",
-      "Goal hit. Talk to a recruiter about scheduling your ASVAB.",
+      "Drill each subtest, then take the full test.",
+      "Master each drill first.",
+      "Halfway there. Try the full test.",
+      "Hit your AFQT goal on the full test.",
+      "Goal hit. Talk to a recruiter.",
     ],
     sourceLine: "Covers eight of the CAT-ASVAB subtests in test order with the real time limits. Assembling Objects uses figures and is not included. Minimum AFQT scores vary by branch and change with recruiting needs.",
     scoreNote: "AFQT is estimated from Arithmetic Reasoning, Word Knowledge, Paragraph Comprehension and Mathematics Knowledge with a typical conversion, not the official one. Other subtests show percent correct.",

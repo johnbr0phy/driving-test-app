@@ -83,11 +83,11 @@ export const TEAS: ExamV2Config = {
   testLength: "3 hr 29 min",
   copy: {
     heroSubs: [
-      "Four section drills on your phone, then one full timed TEAS on a desktop.",
-      "Mastery first. Science and reading are more than half the exam.",
-      "Halfway through the sections. The full test will show where you stand.",
-      "Hit your goal on the full test to finish the plan.",
-      "Goal hit. Schedule your TEAS with ATI or your program.",
+      "Drill each section, then take the full test.",
+      "Master each drill first.",
+      "Halfway there. Try the full test.",
+      "Hit your goal on the full test.",
+      "Goal hit. Schedule your TEAS.",
     ],
     sourceLine: "Matched to the ATI TEAS 7 blueprint and timing. Every item here is four-option single answer; the real exam also has other item types. Not affiliated with ATI.",
     scoreNote: "Scores are percent correct per section, like the ATI score report. Program cutoffs vary; many ask for 60 to 70 percent.",

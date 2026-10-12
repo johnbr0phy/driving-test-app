@@ -121,11 +121,14 @@ const MORE_TESTS: [string, string][] = [
 
 /** The same "and more" lines under every variant, so it doesn't skew the test. */
 function moreTests(id: string): string {
-  const links = MORE_TESTS.map(([label, path]) => link(track(id, path), label)).join(" &nbsp;&bull;&nbsp; ");
+  const plain = (path: string, label: string) =>
+    `<a href="${track(id, path)}" style="color: #1a1a1a; text-decoration: underline;">${label}</a>`;
+  const items = [...MORE_TESTS, ["See all 40+ practice tests", "/tests"]]
+    .map(([label, path]) => `<li style="margin: 0 0 6px;">${plain(path, label)}</li>`)
+    .join("");
   return (
-    p("<strong>Also new on TigerTest:</strong>") +
-    p(links) +
-    p(link(track(id, "/tests"), "See all 40+ practice tests"))
+    `<p style="margin: 0 0 8px; ${TEXT}"><strong>Also new on TigerTest:</strong></p>` +
+    `<ul style="margin: 0 0 22px; padding-left: 22px; ${TEXT}">${items}</ul>`
   );
 }
 

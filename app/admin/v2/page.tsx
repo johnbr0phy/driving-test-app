@@ -370,6 +370,49 @@ function Funnel({ data }: { data: FunnelStage[] }) {
   );
 }
 
+// New visitors by where they came from (lib/funnel.ts visitSource), AI answer
+// engines first. Counting started after the funnel did, so the shares are of
+// tracked-source visits, not of all visits.
+const SOURCE_LABELS: [string, string][] = [
+  ["chatgpt", "ChatGPT"],
+  ["perplexity", "Perplexity"],
+  ["gemini", "Gemini"],
+  ["copilot", "Copilot"],
+  ["claude", "Claude"],
+  ["search", "Search engines"],
+  ["direct", "Direct"],
+  ["other", "Other sites"],
+];
+const AI_SOURCE_KEYS = ["chatgpt", "perplexity", "gemini", "copilot", "claude"];
+
+function VisitSources({ sum }: { sum: (step: string) => number }) {
+  const counts = SOURCE_LABELS.map(([key, label]) => ({ key, label, n: sum(`visit_${key}`) }));
+  const total = counts.reduce((n, c) => n + c.n, 0);
+  if (total === 0) return null;
+  const ai = counts.filter((c) => AI_SOURCE_KEYS.includes(c.key)).reduce((n, c) => n + c.n, 0);
+  const pct = (n: number) => `${((n / total) * 100).toFixed(1)}%`;
+  return (
+    <div className="mt-5 rounded-lg bg-gray-50 dark:bg-gray-950 p-3">
+      <div className="flex flex-wrap items-baseline justify-between gap-2">
+        <p className="text-[11px] uppercase tracking-wide text-gray-400">New visitors by source</p>
+        <p className="text-xs text-gray-500 dark:text-gray-400">
+          AI answer engines: <span className="font-semibold text-gray-900 dark:text-gray-50">{fmtInt(ai)}</span> ({pct(ai)})
+        </p>
+      </div>
+      <div className="mt-2 grid grid-cols-2 sm:grid-cols-4 gap-x-4 gap-y-1 text-sm">
+        {counts.map((c) => (
+          <div key={c.key} className="flex justify-between gap-2">
+            <span className="text-gray-600 dark:text-gray-300">{c.label}</span>
+            <span className="font-medium text-gray-900 dark:text-gray-50">
+              {fmtInt(c.n)} <span className="text-xs text-gray-400">{pct(c.n)}</span>
+            </span>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 // One funnel from first page view to purchase. Signed-out steps count browsers
 // (lib/funnel.ts); after signup it follows the tracked accounts (signupOrigins)
 // by signup day, so a purchase lands in the window the account was created in.
@@ -466,6 +509,7 @@ function VisitorFunnel({ data }: { data: NonNullable<Metrics["visitorFunnel"]> }
               </p>
             </div>
           </div>
+          <VisitSources sum={sum} />
           <div className="mt-5 overflow-x-auto">
             <table className="w-full text-sm">
               <thead>

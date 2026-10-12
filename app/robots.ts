@@ -1,84 +1,62 @@
 import { SITEMAP_SEGMENTS } from "@/lib/sitemaps";
 import { MetadataRoute } from "next";
 
+// App routes with nothing to cite: practice sessions, accounts, admin. The
+// same list applies to every crawler, AI or not, so AI crawl budget goes to
+// the landing and state pages people actually ask about.
+const DISALLOW = [
+  "/api/",
+  "/test",
+  "/training",
+  "/dashboard",
+  "/settings",
+  "/stats",
+  "/admin",
+  "/onboarding",
+  "/login",
+  "/signup",
+  "/unsubscribe",
+  "/request-test",
+  // Exam app routes (/cdl/dashboard, /teas/test/...) are not listed
+  // here: they carry a noindex meta tag (lib/examSeo.ts), which
+  // crawlers only see when allowed to fetch the page.
+];
+
+// AI crawlers, named so a future tightening of the "*" group never shuts them
+// out by accident. Search crawlers feed answer engines (OAI-SearchBot for
+// ChatGPT Search, Claude-SearchBot, PerplexityBot); user agents fetch a page
+// when someone asks about it (ChatGPT-User, Claude-User, Perplexity-User);
+// the rest are training or grounding crawlers (GPTBot, ClaudeBot,
+// Google-Extended for Gemini and AI Overviews, Applebot-Extended, CCBot).
+const AI_CRAWLERS = [
+  "GPTBot",
+  "OAI-SearchBot",
+  "ChatGPT-User",
+  "ClaudeBot",
+  "Claude-SearchBot",
+  "Claude-User",
+  "anthropic-ai",
+  "PerplexityBot",
+  "Perplexity-User",
+  "Google-Extended",
+  "Applebot-Extended",
+  "Amazonbot",
+  "DuckAssistBot",
+  "MistralAI-User",
+  "CCBot",
+];
+
+// "/test" is a prefix rule, so it also caught the /tests hub. The longer
+// allow wins for Google and Bing.
+const ALLOW = ["/", "/tests"];
+
 export default function robots(): MetadataRoute.Robots {
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
   return {
     rules: [
-      {
-        userAgent: "*",
-        allow: "/",
-        disallow: [
-          "/api/",
-          "/test",
-          "/training",
-          "/dashboard",
-          "/settings",
-          "/stats",
-          "/admin",
-          "/onboarding",
-          "/login",
-          "/signup",
-          "/unsubscribe",
-          "/request-test",
-          // Exam app routes (/cdl/dashboard, /teas/test/...) are not listed
-          // here: they carry a noindex meta tag (lib/examSeo.ts), which
-          // crawlers only see when allowed to fetch the page.
-        ],
-      },
-      // Explicitly allow major AI crawlers
-      {
-        userAgent: "GPTBot",
-        allow: "/",
-        disallow: ["/api/", "/admin/"],
-      },
-      {
-        userAgent: "ClaudeBot",
-        allow: "/",
-        disallow: ["/api/", "/admin/"],
-      },
-      {
-        userAgent: "PerplexityBot",
-        allow: "/",
-        disallow: ["/api/", "/admin/"],
-      },
-      {
-        userAgent: "anthropic-ai",
-        allow: "/",
-        disallow: ["/api/", "/admin/"],
-      },
-      // Google's AI training/grounding crawler (Gemini, AI Overviews). Gated
-      // separately from Googlebot, so it must be allowed explicitly.
-      {
-        userAgent: "Google-Extended",
-        allow: "/",
-        disallow: ["/api/", "/admin/"],
-      },
-      // OpenAI's search crawler (ChatGPT Search), distinct from GPTBot.
-      {
-        userAgent: "OAI-SearchBot",
-        allow: "/",
-        disallow: ["/api/", "/admin/"],
-      },
-      // Perplexity's user-initiated fetch agent, distinct from PerplexityBot.
-      {
-        userAgent: "Perplexity-User",
-        allow: "/",
-        disallow: ["/api/", "/admin/"],
-      },
-      // Apple Intelligence / Siri grounding crawler.
-      {
-        userAgent: "Applebot-Extended",
-        allow: "/",
-        disallow: ["/api/", "/admin/"],
-      },
-      // Common Crawl — feeds many downstream LLM training sets.
-      {
-        userAgent: "CCBot",
-        allow: "/",
-        disallow: ["/api/", "/admin/"],
-      },
+      { userAgent: "*", allow: ALLOW, disallow: DISALLOW },
+      { userAgent: AI_CRAWLERS, allow: ALLOW, disallow: DISALLOW },
     ],
     sitemap: [
       `${siteUrl}/sitemap.xml`,

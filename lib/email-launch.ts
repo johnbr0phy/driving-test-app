@@ -107,6 +107,26 @@ function shell(v: { subject: string; preheader: string }, heroHtml: string, head
 const SAT_PAGE = "/sat-practice-test";
 const ACT_PAGE = "/act-practice-test";
 
+/** Other tests a permit-age reader may be facing soon, most timely first. */
+const MORE_TESTS: [string, string][] = [
+  ["Food Handler card", "/food-handler-practice-test"],
+  ["ASVAB", "/asvab-practice-test"],
+  ["Hunter Safety", "/hunter-safety-practice-test"],
+  ["Motorcycle permit", "/motorcycle-practice-test"],
+  ["ACCUPLACER", "/accuplacer-practice-test"],
+  ["CPR and First Aid", "/cpr-practice-test"],
+];
+
+/** The same "and more" block under every variant, so it doesn't skew the test. */
+function moreTests(id: string): string {
+  const links = MORE_TESTS.map(([label, path]) => link(track(id, path), label)).join(" &nbsp;&bull;&nbsp; ");
+  return `<div style="margin: 8px 0 22px; padding: 16px 18px; background-color: #FFF9F5; border-radius: 10px;">
+                <p style="margin: 0 0 8px; color: #1a1a1a; font-size: 15px; font-weight: 700;">Also on TigerTest</p>
+                <p style="margin: 0 0 8px; ${TEXT} font-size: 15px;">${links}</p>
+                <p style="margin: 0; ${TEXT} font-size: 15px;">${link(track(id, "/tests"), "See all 40+ practice tests")}</p>
+              </div>`;
+}
+
 function variant(
   id: string,
   name: string,
@@ -121,7 +141,7 @@ function variant(
     preheader,
     html: () => {
       const parts = build({ sat: track(id, SAT_PAGE), act: track(id, ACT_PAGE) });
-      return shell({ subject, preheader }, parts.hero, parts.heading, parts.body);
+      return shell({ subject, preheader }, parts.hero, parts.heading, parts.body + moreTests(id));
     },
   };
 }

@@ -121,7 +121,7 @@ const MORE_TESTS: [string, string][] = [
 function moreTests(id: string): string {
   const links = MORE_TESTS.map(([label, path]) => link(track(id, path), label)).join(" &nbsp;&bull;&nbsp; ");
   return (
-    p("<strong>Also on TigerTest:</strong>") +
+    p("<strong>Also new on TigerTest:</strong>") +
     p(links) +
     p(link(track(id, "/tests"), "See all 40+ practice tests"))
   );

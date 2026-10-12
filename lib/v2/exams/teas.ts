@@ -35,7 +35,7 @@ export const TEAS: ExamV2Config = {
       modules: [{ module: 1, questionCount: 38, timeLimit: 57 * 60 }],
       directions: "Numbers and algebra, then measurement and data. A four-function calculator is provided on the real test and here, so the work is in setting each problem up correctly.",
       scale: percentScale(38),
-      domains: ["teasMath"],
+      domains: ["teasNumbers", "teasMeasurement"],
     },
     {
       key: "science",
@@ -53,21 +53,31 @@ export const TEAS: ExamV2Config = {
       modules: [{ module: 1, questionCount: 37, timeLimit: 37 * 60 }],
       directions: "Conventions of standard English, knowledge of language, and vocabulary acquisition. One minute per question on the real test.",
       scale: percentScale(37),
-      domains: ["teasEnglish"],
+      domains: ["teasConventions", "teasLanguage"],
     },
   ],
   tests: [{ number: 1, name: "Full-length TEAS" }],
   domainLabels: {
     teasReading: "Reading",
-    teasMath: "Mathematics",
+    teasNumbers: "Numbers and Algebra",
+    teasMeasurement: "Measurement and Data",
     teasScience: "Science",
+    teasConventions: "Conventions of Standard English",
+    teasLanguage: "Knowledge of Language and Vocabulary",
+    // Results saved before Math and English were split by subdomain.
+    teasMath: "Mathematics",
     teasEnglish: "English and Language Usage",
   },
+  // Math and English are split by ATI subdomain so each drill opens with a
+  // short Basics list; legacyKey carries progress from the old one-per-section
+  // drills. Science has no Basics yet (anatomy and physiology needs its own).
   drills: [
-    { key: "reading", name: "Reading", section: "reading", domains: ["teasReading"], blurb: "Passages with main idea, detail, inference and structure questions." },
-    { key: "math", name: "Mathematics", section: "math", domains: ["teasMath"], blurb: "Fractions, percents, ratios, conversions, data and every step worked." },
+    { key: "reading", name: "Reading", section: "reading", domains: ["teasReading"], blurb: "Passages with main idea, detail, inference and structure questions.", basics: ["mainIdea", "findingDetail", "inference", "sequenceEvents", "authorPurpose", "textStructure", "wordsInContext"] },
+    { key: "numbers", legacyKey: "math", name: "Numbers and Algebra", section: "math", domains: ["teasNumbers"], blurb: "Fractions, percents, ratios, order of operations and equations, every step worked.", basics: ["fractionConvert", "fractionOps", "orderOfOperations", "percents", "percentChange", "ratios", "solveX", "inequalities", "scientificNotation"] },
+    { key: "measurement", legacyKey: "math", name: "Measurement and Data", section: "math", domains: ["teasMeasurement"], blurb: "Dosage, unit conversions, area, circles, volume and the Pythagorean theorem, plus mean and median.", basics: ["dosage", "unitConversion", "areaPerimeter", "circleBasics", "volume", "pythagorean", "meanMedian"] },
     { key: "science", name: "Science", section: "science", domains: ["teasScience"], blurb: "Anatomy and physiology first, then biology, chemistry and reasoning." },
-    { key: "english", name: "English and Language Usage", section: "english", domains: ["teasEnglish"], blurb: "Grammar, punctuation, sentence structure and vocabulary." },
+    { key: "conventions", legacyKey: "english", name: "Grammar and Punctuation", section: "english", domains: ["teasConventions"], blurb: "Spelling, capitalization, punctuation, agreement and sentence structure.", basics: ["semicolons", "colons", "apostrophes", "itsIts", "subjectVerb", "danglingModifiers"] },
+    { key: "language", legacyKey: "english", name: "Language and Vocabulary", section: "english", domains: ["teasLanguage"], blurb: "Tone, concision, transitions, word meaning in context and medical word parts.", basics: ["matchingTone", "concision", "redundancy", "transitions", "wordsInContext", "preciseWords"] },
   ],
   composite: { name: "Composite score", min: 0, max: 100, combine: overallPercent },
   defaultGoal: 70,
@@ -83,7 +93,7 @@ export const TEAS: ExamV2Config = {
   testLength: "3 hr 29 min",
   copy: {
     heroSubs: [
-      "Drill each section, then take the full test.",
+      "Learn the basics, then drill each skill.",
       "Master each drill first.",
       "Halfway there. Try the full test.",
       "Hit your goal on the full test.",

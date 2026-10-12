@@ -53,6 +53,7 @@ const jsonLd = {
         "A full-length timed TEAS: four sections, 170 questions, 209 minutes",
         "Percent scores per section and a composite, like the ATI report",
         "Mastery drills for reading, math, science and English",
+        "Step-by-step basics lessons: fractions, dosage, formulas, grammar",
         "Instant feedback with explanations",
         "Progress syncs between phone and computer",
       ],
@@ -103,7 +104,7 @@ const jsonLd = {
           name: "Is the TigerTest TEAS practice test free?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. The full-length test and all four drills are free, with no account required. Create a free account to keep your progress in step between your phone and your computer.",
+            text: "Yes. The full-length test and all six drills are free, with no account required. Create a free account to keep your progress in step between your phone and your computer.",
           },
         },
       ],
@@ -158,7 +159,7 @@ export default function TeasLandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Skill Drills on Your Phone</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four drills, one per TEAS section: reading passages beside the question, math with every step shown, science weighted to anatomy and physiology, and English and language usage. One tap checks each answer, and every miss comes back until you have mastered it.
+                Six drills across the four TEAS sections: reading passages beside the question, two math drills with every step shown, science weighted to anatomy and physiology, and two for English. Most open with short basics lessons you tap through step by step. One tap checks each answer, and every miss comes back until you have mastered it.
               </p>
             </div>
           </div>
@@ -243,7 +244,7 @@ export default function TeasLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">2. Do the math on paper first</h3>
               <p>
-                Fractions, percents, ratios, proportions, unit conversions, mean and median, area and volume. The real exam gives you a four-function calculator, so the mistakes come from setting problems up wrong. Every math question here shows its working.
+                Fractions, percents, ratios, proportions, unit conversions, mean and median, area and volume. The real exam gives you a four-function calculator, so the mistakes come from setting problems up wrong. Every math question here shows its working, and the basics lessons walk through dosage and the formulas worth knowing by heart: area, circles, volume and the Pythagorean theorem.
               </p>
             </div>
             <div>
@@ -295,7 +296,7 @@ export default function TeasLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is the TigerTest TEAS practice test free?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              Yes. The full-length test and all four drills are free, with no account required. Create a free account to keep your progress in step between your phone and your computer.
+              Yes. The full-length test and all six drills are free, with no account required. Create a free account to keep your progress in step between your phone and your computer.
             </p>
           </div>
         </div>

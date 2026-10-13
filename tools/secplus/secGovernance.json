@@ -1,0 +1,752 @@
+[
+  {
+    "domain": "secGovernance",
+    "test": 1,
+    "skill": "Governance structures",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A multinational company lets each regional business unit write and enforce its own security policies with little oversight from headquarters. Which governance structure does this describe?",
+    "options": [
+      "Government entity oversight",
+      "Decentralized governance",
+      "Board-directed committee governance",
+      "Centralized governance"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Decentralized governance pushes security decisions down to individual business units. Centralized governance would have headquarters set and enforce one policy set for every region."
+  },
+  {
+    "domain": "secGovernance",
+    "test": 1,
+    "skill": "Acceptable use policy",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Before receiving a laptop and network credentials, a new hire must sign a document listing permitted uses of company email, internet, and devices. Which policy is this?",
+    "options": [
+      "Acceptable use policy",
+      "Business continuity policy",
+      "Information security policy",
+      "Change management policy"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An acceptable use policy defines what users may and may not do with organizational resources and is commonly signed at onboarding. The broader information security policy sets overall security direction rather than individual usage rules."
+  },
+  {
+    "domain": "secGovernance",
+    "test": 1,
+    "skill": "Security standards",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A document requires that all passwords contain at least 14 characters and that data at rest use AES-256. Which type of governance document is this MOST likely?",
+    "options": [
+      "Policy",
+      "Standard",
+      "Guideline",
+      "Procedure"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Standards set specific, mandatory technical requirements such as password length and encryption strength. A policy states high-level intent, while a guideline is only a recommendation."
+  },
+  {
+    "domain": "secGovernance",
+    "test": 1,
+    "skill": "Playbooks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The SOC manager wants analysts to follow the same step-by-step actions, contacts, and isolation steps whenever a ransomware alert fires. Which document should be created?",
+    "options": [
+      "Business impact analysis",
+      "Playbook",
+      "Risk register",
+      "Incident response policy"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A playbook is a procedure that gives repeatable, step-by-step response actions for a specific scenario. The incident response policy defines authority and goals but not the detailed steps."
+  },
+  {
+    "domain": "secGovernance",
+    "test": 1,
+    "skill": "Offboarding",
+    "difficulty": 1,
+    "format": "multi",
+    "select": 3,
+    "stem": "An employee is terminated, and HR notifies IT. Which THREE actions belong in the offboarding process? (Choose three.)",
+    "options": [
+      "Disable the user's accounts",
+      "Collect the badge and laptop",
+      "Revoke remote access tokens",
+      "Assign security awareness training",
+      "Have the user sign the AUP",
+      "Create a new email mailbox"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Offboarding removes access: accounts are disabled, physical assets and badges are recovered, and remote access is revoked. Signing the acceptable use policy and training belong to onboarding."
+  },
+  {
+    "domain": "secGovernance",
+    "test": 1,
+    "skill": "External considerations",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A payment processor must comply with PCI DSS, a requirement set by the card brands rather than by any government. Which external consideration BEST describes this?",
+    "options": [
+      "Industry",
+      "Local/regional",
+      "National",
+      "Regulatory"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "PCI DSS is an industry standard enforced through contracts with the card brands. It is tempting to call it regulatory, but no government agency issues or enforces it."
+  },
+  {
+    "domain": "secGovernance",
+    "test": 1,
+    "skill": "Quantitative risk",
+    "difficulty": 2,
+    "format": "multi",
+    "select": 2,
+    "stem": "A risk analyst must calculate the annualized loss expectancy for a flood scenario. Which TWO values are multiplied to produce it? (Choose two.)",
+    "options": [
+      "Single loss expectancy",
+      "Annualized rate of occurrence",
+      "Exposure factor",
+      "Asset value",
+      "Recovery time objective in hours"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "ALE equals SLE times ARO. Exposure factor and asset value are multiplied to get the SLE, so they feed the calculation but are not its direct inputs."
+  },
+  {
+    "domain": "secGovernance",
+    "test": 1,
+    "skill": "Data roles",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which data role is accountable for classifying a dataset and approving who may access it, usually a senior business manager?",
+    "options": [
+      "Data owner",
+      "Data processor",
+      "Data steward",
+      "Data custodian"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The data owner holds ultimate accountability for classification and access decisions. The custodian implements those decisions technically but does not make them."
+  },
+  {
+    "domain": "secGovernance",
+    "test": 1,
+    "skill": "Data roles",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A database administrator performs nightly backups and applies the access permissions that the business unit has approved. Which data role is the administrator performing?",
+    "options": [
+      "Owner",
+      "Custodian",
+      "Data subject",
+      "Controller"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A custodian handles the day-to-day technical protection of data, such as backups and access enforcement. The owner decides the protections; the custodian carries them out."
+  },
+  {
+    "domain": "secGovernance",
+    "test": 1,
+    "skill": "GDPR roles",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A retailer hires a cloud payroll company to calculate wages using employee data, strictly following the retailer's instructions. Under GDPR, what role does the payroll company hold?",
+    "options": [
+      "Data processor",
+      "Data controller",
+      "Data subject",
+      "Data owner"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A processor handles personal data on behalf of and under the instructions of the controller. The retailer decides why and how data is used, so the retailer is the controller."
+  },
+  {
+    "domain": "secGovernance",
+    "test": 1,
+    "skill": "Privacy rights",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A former customer living in the EU asks a company to erase all personal information it holds about her. Which privacy right is she exercising?",
+    "options": [
+      "Right to rectification",
+      "Right to data portability",
+      "Right of access",
+      "Right to be forgotten"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The right to be forgotten (erasure) lets a data subject request deletion of personal data. The right of access only lets her see what is held, not remove it."
+  },
+  {
+    "domain": "secGovernance",
+    "test": 1,
+    "skill": "Risk management process",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "A company is starting a formal risk management program. Place the steps in the order they should occur.",
+    "options": [
+      "Identify threats to key assets",
+      "Analyze likelihood and impact",
+      "Select a risk response strategy",
+      "Implement the chosen controls",
+      "Monitor risks and report"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "explanation": "Risks must be identified before they can be analyzed, and analysis drives which response to choose. Controls are implemented after the response is chosen, and monitoring continues afterward to catch changes."
+  },
+  {
+    "domain": "secGovernance",
+    "test": 1,
+    "skill": "Qualitative risk",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A risk committee rates each threat as high, medium, or low based on expert judgment instead of dollar values. Which analysis approach is being used?",
+    "options": [
+      "Quantitative",
+      "Qualitative",
+      "Single loss expectancy",
+      "Annualized rate of occurrence"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Qualitative analysis uses relative ratings such as high, medium, and low. Quantitative analysis assigns monetary values using metrics like SLE and ALE."
+  },
+  {
+    "domain": "secGovernance",
+    "test": 1,
+    "skill": "Single loss expectancy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A file server valued at \\$200,000 would lose 40% of its value in a flood. What is the single loss expectancy?",
+    "options": [
+      "\\$120,000",
+      "\\$500,000",
+      "\\$80,000",
+      "\\$40,000"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "SLE = asset value x exposure factor = \\$200,000 x 0.40 = \\$80,000. The \\$120,000 figure is the value that survives the flood, not the loss."
+  },
+  {
+    "domain": "secGovernance",
+    "test": 1,
+    "skill": "Annualized loss expectancy",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A data breach has a single loss expectancy of \\$50,000 and is expected once every four years. What is the annualized loss expectancy?",
+    "options": [
+      "\\$25,000",
+      "\\$200,000",
+      "\\$12,500",
+      "\\$50,000"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Once every four years is an ARO of 0.25, so ALE = SLE x ARO = \\$50,000 x 0.25 = \\$12,500. Multiplying by 4 instead of 0.25 gives the wrong \\$200,000."
+  },
+  {
+    "domain": "secGovernance",
+    "test": 1,
+    "skill": "Exposure factor",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An asset valued at \\$400,000 has a calculated single loss expectancy of \\$100,000. What is its exposure factor?",
+    "options": [
+      "4%",
+      "75%",
+      "25%",
+      "40%"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Exposure factor = SLE / asset value = \\$100,000 / \\$400,000 = 25%. The 75% figure is the portion of value that remains after the loss."
+  },
+  {
+    "domain": "secGovernance",
+    "test": 1,
+    "skill": "Penetration testing",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "During an exercise, attackers and defenders share findings in real time so detections are tuned while the attack proceeds. Which penetration testing approach is this?",
+    "options": [
+      "Defensive",
+      "Physical",
+      "Offensive",
+      "Integrated"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Integrated (purple team) testing combines offensive and defensive teams working together. Offensive testing alone simulates attackers without collaborative tuning of defenses."
+  },
+  {
+    "domain": "secGovernance",
+    "test": 1,
+    "skill": "RTO and RPO",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A BIA sets an RTO of 4 hours and an RPO of 1 hour. Backups run every 2 hours, and restoration takes 3 hours. Which statement is correct?",
+    "options": [
+      "Only the RPO is missed",
+      "Both objectives are missed",
+      "Only the RTO is missed",
+      "Both objectives are met"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A 3-hour restore fits the 4-hour RTO, but 2-hour backup intervals can lose up to 2 hours of data, exceeding the 1-hour RPO. RPO measures tolerable data loss, not restoration time."
+  },
+  {
+    "domain": "secGovernance",
+    "test": 2,
+    "skill": "Anomalous behavior",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An employee accidentally emails a spreadsheet of customer records to the wrong external recipient. Which type of anomalous behavior does this represent?",
+    "options": [
+      "Unintentional",
+      "Unexpected",
+      "Malicious",
+      "Risky"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An honest mistake with no intent to cause harm is unintentional behavior. Risky behavior is a deliberate choice that ignores policy, such as bypassing a control for convenience."
+  },
+  {
+    "domain": "secGovernance",
+    "test": 2,
+    "skill": "Business impact analysis",
+    "difficulty": 2,
+    "format": "multi",
+    "select": 2,
+    "stem": "During a business impact analysis, which TWO objectives state how much downtime and how much data loss a process can tolerate? (Choose two.)",
+    "options": [
+      "Recovery time objective",
+      "Recovery point objective",
+      "Mean time to repair",
+      "Mean time between failures",
+      "Annualized loss expectancy"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "The RTO sets the maximum acceptable downtime and the RPO sets the maximum acceptable data loss measured in time. MTTR is a measured average of repair time, not a tolerance the business sets."
+  },
+  {
+    "domain": "secGovernance",
+    "test": 2,
+    "skill": "Risk register",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which document records identified risks along with their risk owners, key risk indicators, thresholds, and planned responses?",
+    "options": [
+      "Statement of work",
+      "Risk register",
+      "Business impact analysis",
+      "Acceptable use policy"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A risk register tracks each identified risk with its owner, indicators, thresholds and planned response. A business impact analysis measures the effect of disruptions on processes but is not the running list of risks."
+  },
+  {
+    "domain": "secGovernance",
+    "test": 2,
+    "skill": "Key risk indicators",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The CISO wants a metric that alerts leadership when phishing click rates rise above 5%, signaling growing exposure. What is this metric called?",
+    "options": [
+      "Recovery point objective",
+      "Key risk indicator",
+      "Key performance indicator",
+      "Risk owner"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A key risk indicator signals rising risk before it becomes an incident. A key performance indicator measures how well a process is achieving its goals rather than warning of risk."
+  },
+  {
+    "domain": "secGovernance",
+    "test": 2,
+    "skill": "Risk appetite",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Leadership at a fast-growing startup is willing to accept substantial risk to expand quickly into new markets. Which risk appetite does this describe?",
+    "options": [
+      "Conservative",
+      "Avoidant",
+      "Expansionary",
+      "Neutral"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An expansionary risk appetite accepts higher risk in pursuit of growth and reward. A conservative appetite would favor minimizing risk even if it slows expansion."
+  },
+  {
+    "domain": "secGovernance",
+    "test": 2,
+    "skill": "Risk tolerance",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which term describes the acceptable level of variation from the organization's risk appetite for a specific risk?",
+    "options": [
+      "Inherent risk",
+      "Risk tolerance",
+      "Residual risk",
+      "Risk register entry"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Risk tolerance is how much deviation from the overall risk appetite the organization will accept for a given risk. Residual risk is the risk left after controls, not the acceptable variation."
+  },
+  {
+    "domain": "secGovernance",
+    "test": 2,
+    "skill": "Risk responses",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "For each decision, select the risk management strategy it represents.",
+    "rows": [
+      "Buy cyber insurance for ransomware costs",
+      "Cancel a risky product launch",
+      "Approve an exception for an unpatched system",
+      "Add MFA to remote access",
+      "Stop storing customer card data"
+    ],
+    "columns": [
+      "Avoid",
+      "Transfer",
+      "Accept",
+      "Mitigate"
+    ],
+    "correct": [
+      1,
+      0,
+      2,
+      3,
+      0
+    ],
+    "explanation": "Insurance transfers financial impact, canceling the launch and no longer storing card data avoid the risk entirely, a documented exception accepts it, and MFA mitigates it. Dropping card storage looks like mitigation, but removing the activity is avoidance."
+  },
+  {
+    "domain": "secGovernance",
+    "test": 2,
+    "skill": "Risk exceptions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A legacy system cannot be patched, and management formally documents approval to keep running it outside the patching policy. Which BEST describes this?",
+    "options": [
+      "Mitigation using a compensating control",
+      "Avoidance by decommissioning the system",
+      "Transference through cyber insurance",
+      "Acceptance with an exception"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Formally approving operation outside policy is risk acceptance with an exception. Decommissioning the system would be avoidance, which management chose not to do."
+  },
+  {
+    "domain": "secGovernance",
+    "test": 2,
+    "skill": "Vendor contracts",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A company wants contractual permission to inspect a cloud vendor's security controls and records when needed. Which clause should be included?",
+    "options": [
+      "Right-to-audit clause",
+      "Force majeure clause",
+      "Indemnification clause",
+      "Non-disclosure clause"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A right-to-audit clause gives the customer the contractual ability to examine the vendor's controls. A non-disclosure clause protects confidential information but grants no inspection rights."
+  },
+  {
+    "domain": "secGovernance",
+    "test": 2,
+    "skill": "Conflict of interest",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "During vendor selection, a procurement manager learns that her spouse owns one of the companies bidding for the contract. What must she disclose?",
+    "options": [
+      "A breach of the SLA",
+      "A due diligence finding",
+      "A rules of engagement violation",
+      "A conflict of interest"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A personal financial relationship with a bidder is a conflict of interest that must be disclosed. Due diligence evaluates the vendor itself, not the evaluator's personal relationships."
+  },
+  {
+    "domain": "secGovernance",
+    "test": 2,
+    "skill": "Agreement types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two universities sign a non-binding document expressing their mutual intent to share threat intelligence. Which agreement type is this?",
+    "options": [
+      "Master service agreement",
+      "Service-level agreement",
+      "Memorandum of agreement",
+      "Memorandum of understanding"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An MOU states shared intent and is generally not legally binding. An MOA is more formal and defines specific responsibilities each party agrees to."
+  },
+  {
+    "domain": "secGovernance",
+    "test": 2,
+    "skill": "Agreement types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company has a master contract with a consultant and now needs to define deliverables, timeline, and cost for one project. Which document should be issued?",
+    "options": [
+      "Memorandum of understanding",
+      "Statement of work",
+      "Master service agreement",
+      "Non-disclosure agreement"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A statement of work (work order) defines the scope, deliverables, and schedule of a specific engagement. The MSA already sets the general terms and is not reissued for each project."
+  },
+  {
+    "domain": "secGovernance",
+    "test": 2,
+    "skill": "Agreement types",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Two companies form a joint venture and need a document defining profit sharing, responsibilities, and how decisions are made. Which agreement fits BEST?",
+    "options": [
+      "Non-disclosure agreement",
+      "Business partners agreement",
+      "Master service agreement and work order",
+      "Memorandum of understanding"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A BPA defines how partners share profits, responsibilities, and decision-making. An MOU expresses intent but does not govern ongoing profit and responsibility sharing."
+  },
+  {
+    "domain": "secGovernance",
+    "test": 2,
+    "skill": "Vendor monitoring",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "After signing a contract, a company reviews its provider's quarterly SOC 2 reports and uptime figures against the SLA. Which activity is this?",
+    "options": [
+      "Due diligence",
+      "Vendor selection",
+      "Vendor monitoring",
+      "Supply chain analysis"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Ongoing review of a vendor's performance and assurance reports after contracting is vendor monitoring. Due diligence is the evaluation performed before the vendor is selected."
+  },
+  {
+    "domain": "secGovernance",
+    "test": 2,
+    "skill": "Rules of engagement",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Before a penetration test, the client and testers document approved targets, testing hours, out-of-scope systems, and emergency contacts. What is this document called?",
+    "options": [
+      "Service-level agreement",
+      "Non-disclosure agreement",
+      "Rules of engagement",
+      "Statement of work"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Rules of engagement define the scope, timing, and boundaries of a test. A statement of work covers deliverables and cost but not the detailed operating limits for testers."
+  },
+  {
+    "domain": "secGovernance",
+    "test": 2,
+    "skill": "Supply chain analysis",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A manufacturer evaluates whether a chip supplier's own component sources could introduce counterfeit or tampered parts. Which vendor assessment activity is this?",
+    "options": [
+      "Right-to-audit review",
+      "Penetration testing",
+      "Supply chain analysis",
+      "Vendor questionnaire"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Supply chain analysis examines risk introduced by a vendor's upstream suppliers. A questionnaire asks the vendor about its own controls and rarely reveals sub-supplier risk."
+  },
+  {
+    "domain": "secGovernance",
+    "test": 2,
+    "skill": "Non-compliance consequences",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "After repeated failed examinations, a regulator revokes a bank's authorization to operate in one state. Which consequence of non-compliance is this?",
+    "options": [
+      "Contractual impacts",
+      "Fines",
+      "Reputational damage",
+      "Loss of license"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Revoking authorization to operate is loss of license. Fines are monetary penalties and would not by themselves remove the right to operate."
+  },
+  {
+    "domain": "secGovernance",
+    "test": 2,
+    "skill": "Compliance monitoring",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Every year, employees must confirm in writing that they have read and will follow the security policies. Which compliance monitoring element is this?",
+    "options": [
+      "Continuous automated compliance monitoring",
+      "Independent third-party audit",
+      "Due care",
+      "Attestation and acknowledgement"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Written confirmation that users understand and accept policies is attestation and acknowledgement. Due care is the ongoing effort to maintain protections, not a signed user statement."
+  },
+  {
+    "domain": "secGovernance",
+    "test": 0,
+    "skill": "Regulatory examinations",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "State examiners arrive at a credit union to review its security controls, documentation, and audit records. Which type of assessment is this?",
+    "options": [
+      "Penetration test",
+      "Internal compliance self-assessment",
+      "Audit committee review",
+      "Regulatory examination"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A review conducted by a government regulator is an external regulatory examination. A self-assessment is performed by the organization's own staff, not by examiners."
+  },
+  {
+    "domain": "secGovernance",
+    "test": 0,
+    "skill": "Penetration testing",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Testers receive network diagrams, source code, and valid credentials before assessing a web application. Which penetration testing environment is this?",
+    "options": [
+      "Integrated environment",
+      "Partially known environment",
+      "Known environment",
+      "Unknown environment"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Giving testers full information is a known (white box) environment test. A partially known environment provides only limited details, such as a network range."
+  },
+  {
+    "domain": "secGovernance",
+    "test": 0,
+    "skill": "Reconnaissance",
+    "difficulty": 2,
+    "format": "multi",
+    "select": 2,
+    "stem": "A penetration tester begins reconnaissance for an engagement. Which TWO activities are passive reconnaissance? (Choose two.)",
+    "options": [
+      "Reading WHOIS registration records",
+      "Searching social media for staff names",
+      "Port scanning the web server",
+      "Grabbing version banners from open services",
+      "Sending a test phishing email"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "WHOIS records and social media are public sources that never touch the target's systems. Port scanning and banner grabbing send traffic to the target, which makes them active reconnaissance."
+  },
+  {
+    "domain": "secGovernance",
+    "test": 0,
+    "skill": "Security awareness",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A simulated phishing campaign shows that 18% of employees clicked the link but only 2% reported the message. What should awareness training emphasize NEXT?",
+    "options": [
+      "Hybrid work environment security",
+      "Recognizing and reporting suspicious messages",
+      "Password complexity requirements",
+      "Proper handling of removable media and cables"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The results show weak recognition and very low reporting, so training should target identifying and reporting phishing. Password and removable media topics do not address the observed gap."
+  }
+]

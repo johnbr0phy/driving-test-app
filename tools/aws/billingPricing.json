@@ -1,0 +1,446 @@
+[
+  {
+    "domain": "billingPricing",
+    "test": 1,
+    "skill": "Reserved Instances",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company runs a database server on EC2 around the clock with a stable, predictable load for the next three years. It will not change instance families. Which purchasing option gives the lowest cost?",
+    "options": [
+      "3-year Standard Reserved Instances",
+      "On-Demand Instances",
+      "Spot Instances",
+      "1-year Convertible Reserved Instances"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A 3-year Standard Reserved Instance gives the deepest RI discount (up to 72%) for steady, predictable usage. Convertible RIs and shorter terms discount less, and Spot Instances can be interrupted, which a database cannot tolerate."
+  },
+  {
+    "domain": "billingPricing",
+    "test": 1,
+    "skill": "Reserved Instances",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company wants a Reserved Instance discount but expects to switch instance families and operating systems during the term. Which option should it purchase?",
+    "options": [
+      "Standard Reserved Instances",
+      "Convertible Reserved Instances",
+      "Spot Instances",
+      "On-Demand Capacity Reservations"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Convertible Reserved Instances can be exchanged for RIs with a different instance family, operating system or tenancy. Standard RIs offer a larger discount but cannot be exchanged for a different instance family."
+  },
+  {
+    "domain": "billingPricing",
+    "test": 1,
+    "skill": "Savings Plans",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A company runs workloads on Amazon EC2, AWS Lambda and AWS Fargate and wants one flexible commitment that discounts all three. Which pricing model fits?",
+    "options": [
+      "EC2 Instance Savings Plans",
+      "Standard Reserved Instances",
+      "Compute Savings Plans",
+      "Dedicated Hosts"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Compute Savings Plans apply to EC2 in any family or Region, Lambda and Fargate in exchange for a 1- or 3-year hourly spend commitment. EC2 Instance Savings Plans give a bigger discount but cover only one instance family in one Region and do not cover Lambda or Fargate."
+  },
+  {
+    "domain": "billingPricing",
+    "test": 1,
+    "skill": "Spot Instances",
+    "difficulty": 1,
+    "format": "multi",
+    "select": 2,
+    "stem": "A company wants to cut Amazon EC2 costs with Spot Instances. Which workloads are good candidates? (Choose two.)",
+    "options": [
+      "Image rendering batch jobs",
+      "Primary production database",
+      "Stateless CI build workers",
+      "Checkout service for a store",
+      "Long jobs that cannot checkpoint"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "Spot Instances can be reclaimed with a two-minute warning, so they suit flexible, interruption-tolerant work such as rendering batches and stateless build workers. A long job that cannot checkpoint looks like a cheap batch job, but one interruption throws away all of its progress, and databases and checkout services need steady capacity."
+  },
+  {
+    "domain": "billingPricing",
+    "test": 1,
+    "skill": "Dedicated Hosts",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A company must bring existing server-bound software licenses priced per physical core and socket to AWS. Which EC2 option provides that visibility?",
+    "options": [
+      "Dedicated Instances",
+      "Dedicated Hosts",
+      "Spot Instances",
+      "Convertible Reserved Instances"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Dedicated Hosts give a whole physical server with visibility into sockets and cores, which bring-your-own-license terms often require. Dedicated Instances also run on single-tenant hardware but give no control over or visibility into the underlying host."
+  },
+  {
+    "domain": "billingPricing",
+    "test": 1,
+    "skill": "Capacity Reservations",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A retailer needs guaranteed EC2 capacity in one Availability Zone for a two-week sales event and wants no long-term commitment. Which option should it use?",
+    "options": [
+      "Compute Savings Plans",
+      "Spot Instances",
+      "On-Demand Capacity Reservations",
+      "Dedicated Instances"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "On-Demand Capacity Reservations reserve capacity in a specific Availability Zone for any duration and can be cancelled at any time. Savings Plans lower the price but do not reserve capacity, and they require a 1- or 3-year commitment."
+  },
+  {
+    "domain": "billingPricing",
+    "test": 1,
+    "skill": "EC2 pricing factors",
+    "difficulty": 1,
+    "format": "multi",
+    "select": 2,
+    "stem": "A company is estimating the hourly price of an On-Demand Amazon EC2 instance. Which factors change that price? (Choose two.)",
+    "options": [
+      "The instance type and size",
+      "The number of IAM users",
+      "The AWS Region",
+      "The AWS Support plan",
+      "The number of security groups"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "On-Demand EC2 prices depend on the instance type and size, the Region and the operating system. The Support plan is tempting because it is also an AWS charge, but it is billed separately and does not change an instance's hourly rate."
+  },
+  {
+    "domain": "billingPricing",
+    "test": 1,
+    "skill": "Data transfer costs",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company is estimating the network charges for a new web application. Which type of data transfer is generally free of charge?",
+    "options": [
+      "Data transferred into AWS from the internet",
+      "Data transferred out of AWS to the internet",
+      "Data transferred between two AWS Regions",
+      "Data transferred between Availability Zones"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Inbound data transfer from the internet is generally not charged. Outbound transfer to the internet, cross-Region transfer and most cross-AZ transfer are billed per GB."
+  },
+  {
+    "domain": "billingPricing",
+    "test": 2,
+    "skill": "S3 storage classes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A law firm must keep scanned case files for ten years. The files are almost never read, and retrieval within 12 hours is acceptable. Which S3 storage class costs least?",
+    "options": [
+      "S3 Glacier Instant Retrieval",
+      "S3 Standard-Infrequent Access",
+      "S3 Glacier Deep Archive",
+      "S3 Intelligent-Tiering"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "S3 Glacier Deep Archive has the lowest storage price, with standard retrievals completed within 12 hours. Glacier Instant Retrieval returns data in milliseconds but stores it at a higher per-GB price than needed here."
+  },
+  {
+    "domain": "billingPricing",
+    "test": 2,
+    "skill": "S3 storage classes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An analytics team stores data with unpredictable, changing access patterns and wants storage costs optimized automatically without paying retrieval fees. Which S3 storage class should it choose?",
+    "options": [
+      "S3 Standard-Infrequent Access",
+      "S3 One Zone-Infrequent Access",
+      "S3 Glacier Flexible Retrieval",
+      "S3 Intelligent-Tiering"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "S3 Intelligent-Tiering moves objects between access tiers based on use for a small monitoring fee and charges no retrieval fees. Standard-IA and One Zone-IA charge a per-GB retrieval fee, which adds up when access is unpredictable."
+  },
+  {
+    "domain": "billingPricing",
+    "test": 2,
+    "skill": "Billing Conductor",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An AWS Partner that resells AWS wants to group customer accounts, apply its own pricing rates and produce pro forma bills for each group. Which service should it use?",
+    "options": [
+      "AWS Billing Conductor",
+      "AWS Cost Explorer",
+      "AWS Budgets",
+      "AWS Pricing Calculator"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "AWS Billing Conductor lets you group accounts, define custom pricing rules and generate pro forma billing data for showback or chargeback. Cost Explorer only analyzes the actual AWS charges and cannot apply custom rates."
+  },
+  {
+    "domain": "billingPricing",
+    "test": 2,
+    "skill": "AWS Budgets",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A team wants an email alert when its forecasted monthly AWS spending is expected to exceed \\$5,000. Which service meets this requirement?",
+    "options": [
+      "AWS Cost Explorer",
+      "AWS Budgets",
+      "AWS Trusted Advisor",
+      "AWS Cost and Usage Report"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "AWS Budgets sends alerts when actual or forecasted cost or usage exceeds a threshold you set. Cost Explorer can show forecasts but does not send alerts, and a CloudWatch billing alarm watches only actual estimated charges."
+  },
+  {
+    "domain": "billingPricing",
+    "test": 2,
+    "skill": "Cost Explorer",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A finance analyst wants to view charts of the last 12 months of spending by service and see a forecast for the coming months. Which tool should the analyst use?",
+    "options": [
+      "AWS Pricing Calculator",
+      "AWS Cost and Usage Report",
+      "AWS Billing Conductor",
+      "AWS Cost Explorer"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "AWS Cost Explorer provides an interactive view of historical costs, filtering by service, account or tag, and cost forecasts. The Cost and Usage Report is the most detailed data, but it is delivered as raw files rather than ready-made charts."
+  },
+  {
+    "domain": "billingPricing",
+    "test": 2,
+    "skill": "Cost and Usage Report",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which AWS billing resource delivers the most granular, line-item cost and usage data to an Amazon S3 bucket for querying with Amazon Athena?",
+    "options": [
+      "AWS Cost and Usage Report",
+      "AWS Cost Explorer",
+      "AWS Budgets",
+      "AWS CloudTrail"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The AWS Cost and Usage Report, now delivered through AWS Data Exports as CUR 2.0, writes the most comprehensive line-item billing data to S3, where Athena, Redshift or QuickSight can analyze it. CloudTrail records API activity, not costs."
+  },
+  {
+    "domain": "billingPricing",
+    "test": 2,
+    "skill": "Pricing Calculator",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A company planning a migration wants to estimate the monthly cost of a proposed architecture before creating any AWS resources. Which tool should it use?",
+    "options": [
+      "AWS Cost Explorer",
+      "AWS Pricing Calculator",
+      "AWS Compute Optimizer",
+      "AWS Budgets"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "AWS Pricing Calculator models the cost of services you have not deployed yet. Cost Explorer analyzes spending that has already happened, and Compute Optimizer right-sizes resources that are already running."
+  },
+  {
+    "domain": "billingPricing",
+    "test": 2,
+    "skill": "Consolidated billing",
+    "difficulty": 2,
+    "format": "multi",
+    "select": 2,
+    "stem": "A company with 15 AWS accounts turns on consolidated billing in AWS Organizations. Which benefits does it gain? (Choose two.)",
+    "options": [
+      "One bill for all member accounts",
+      "Free Business Support for every account",
+      "Combined usage for volume pricing",
+      "Automatic rightsizing of instances",
+      "Separate bills for each IAM user"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "Consolidated billing gives one bill for the organization and combines usage across accounts, so tiered prices and Reserved Instance or Savings Plans discounts apply more widely. It does not include a Support plan, which is still purchased and billed per account."
+  },
+  {
+    "domain": "billingPricing",
+    "test": 0,
+    "skill": "Cost allocation tags",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company wants its billing reports to break down AWS costs by department and project. What should the company do?",
+    "options": [
+      "Enable AWS CloudTrail logging",
+      "Create a separate VPC per department",
+      "Activate cost allocation tags",
+      "Assign IAM groups per department"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "After resources are tagged and the tags are activated as cost allocation tags, Cost Explorer and the Cost and Usage Report can group costs by those tags. VPCs and IAM groups organize networking and permissions, not billing data."
+  },
+  {
+    "domain": "billingPricing",
+    "test": 0,
+    "skill": "Cost Anomaly Detection",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company wants to be notified automatically when its spending pattern suddenly deviates from normal, using machine learning to detect the change. Which service should it use?",
+    "options": [
+      "Amazon CloudWatch billing alarm",
+      "AWS Compute Optimizer",
+      "AWS Trusted Advisor",
+      "AWS Cost Anomaly Detection"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "AWS Cost Anomaly Detection uses machine learning to spot unusual spending and sends alerts with root-cause details. A CloudWatch billing alarm fires only when charges cross a fixed threshold, and Compute Optimizer gives right-sizing advice."
+  },
+  {
+    "domain": "billingPricing",
+    "test": 0,
+    "skill": "Support plans",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A company needs a designated Technical Account Manager and a 15-minute response for business-critical outages, at the lowest cost. Which Support plan should it choose?",
+    "options": [
+      "AWS Enterprise Support",
+      "AWS Business Support+",
+      "AWS Developer Support",
+      "AWS Basic Support"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Enterprise Support assigns a designated Technical Account Manager and targets a 15-minute response for business-critical outages. Business Support+ costs less, but its fastest response target is 30 minutes and it does not include a designated TAM."
+  },
+  {
+    "domain": "billingPricing",
+    "test": 0,
+    "skill": "Support plans",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A new AWS account has not purchased any Support plan. Which Support plan does it already have at no extra cost?",
+    "options": [
+      "AWS Developer Support",
+      "AWS Basic Support",
+      "AWS Business Support+",
+      "AWS Enterprise Support"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Basic Support comes with every AWS account and covers account and billing customer service, documentation, AWS re:Post, AWS Health and the core Trusted Advisor checks. Developer Support is tempting as the entry-level plan, but it is a paid plan."
+  },
+  {
+    "domain": "billingPricing",
+    "test": 0,
+    "skill": "Support plans",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which AWS Enterprise Support feature gives customers a team of billing and account experts for non-technical billing questions?",
+    "options": [
+      "Concierge Support Team",
+      "Technical Account Manager",
+      "AWS Professional Services",
+      "AWS Partner Network"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Concierge Support Team, included in Enterprise Support, handles billing and account questions. The Technical Account Manager is the customer's technical advocate for architecture and operations, not billing."
+  },
+  {
+    "domain": "billingPricing",
+    "test": 0,
+    "skill": "Cost management tools",
+    "difficulty": 2,
+    "format": "multi",
+    "select": 2,
+    "stem": "A finance team wants to understand what the company has already spent on AWS. Which tools provide data on past spending? (Choose two.)",
+    "options": [
+      "AWS Cost Explorer",
+      "AWS Pricing Calculator",
+      "Cost and Usage Report",
+      "AWS Artifact",
+      "AWS Compute Optimizer"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "Cost Explorer charts historical costs and usage, and the Cost and Usage Report (now delivered through AWS Data Exports) gives line-item detail of past charges. Pricing Calculator is tempting because it shows costs, but it estimates architectures that have not been deployed yet, and Compute Optimizer reports utilization rather than spending."
+  },
+  {
+    "domain": "billingPricing",
+    "test": 0,
+    "skill": "AWS Marketplace",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A company wants to buy a third-party firewall appliance, deploy it in minutes and pay for it through its AWS bill. Which resource should it use?",
+    "options": [
+      "AWS Partner Network",
+      "AWS Marketplace",
+      "AWS Professional Services",
+      "AWS Managed Services"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "AWS Marketplace is a curated catalog of third-party software that can be deployed quickly and billed through the AWS account. The Partner Network is a program for consulting and technology partners, not a software storefront."
+  },
+  {
+    "domain": "billingPricing",
+    "test": 0,
+    "skill": "AWS Abuse team",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company notices that an Amazon EC2 instance in another AWS account is sending spam and port scans to its servers. Whom should the company report this to?",
+    "options": [
+      "AWS Concierge Support Team",
+      "AWS Health Dashboard",
+      "AWS Abuse team",
+      "Technical Account Manager"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The AWS Abuse team (AWS Trust & Safety) investigates reports of AWS resources used for spam, port scanning, DDoS or other abuse. AWS Health Dashboard shows service events affecting your own account and does not take abuse reports."
+  }
+]

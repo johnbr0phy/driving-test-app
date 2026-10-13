@@ -13,7 +13,7 @@
  * This file must stay free of question-data imports (the store imports it).
  */
 
-export type ExamId = "realestate-ca" | "realestate-nj" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "emt" | "foodmgr" | "realestate" | "insurance" | "notary" | "aws" | "aplus" | "foodhandler" | "boating" | "hunter" | "secplus" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "htl" | "cst" | "crcst";
+export type ExamId = "realestate-ca" | "realestate-nj" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "htl" | "cst" | "crcst";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (?set=N). */
@@ -856,62 +856,6 @@ const danb: ExamConfig = {
   },
 };
 
-const emt: ExamConfig = {
-  id: "emt",
-  stateCode: "EMT",
-  idBase: 1700,
-  slug: "/emt",
-  landingPath: "/emt-practice-test",
-  name: "EMT Practice Test",
-  shortName: "EMT",
-  examLabel: "NREMT EMT Exam",
-  fullName: "National Registry EMT cognitive exam",
-  questionIdPrefix: "EMT-",
-  icon: "siren",
-  testCount: 4,
-  questionsPerTest: 50,
-  passPct: 70,
-  // NREMT EMT examination specifications (April 2025, 2023 practice
-  // analysis): Scene Size-up and Safety 15-19%, Primary Assessment 39-43%,
-  // Secondary Assessment 5-9%, Patient Treatment and Transport 20-24%,
-  // Operations 10-14%. Real exam: adaptive, 70 to 120 items in 2 hours.
-  blueprint: {
-    sceneSizeUp: 9,
-    primaryAssessment: 20,
-    secondaryAssessment: 4,
-    treatmentTransport: 11,
-    emsOperations: 6,
-  },
-  trainingSets: [
-    { setNumber: 1, id: 1701, name: "Scene Size-up & Safety", categories: ["sceneSizeUp"], size: 36, weightLabel: "17% of the exam" },
-    { setNumber: 2, id: 1702, name: "Primary Assessment", categories: ["primaryAssessment"], size: 80, weightLabel: "41% of the exam" },
-    { setNumber: 3, id: 1703, name: "Secondary Assessment & Operations", categories: ["secondaryAssessment", "emsOperations"], size: 40, weightLabel: "19% of the exam" },
-    { setNumber: 4, id: 1704, name: "Patient Treatment & Transport", categories: ["treatmentTransport"], size: 44, weightLabel: "22% of the exam" },
-  ],
-  categoryLabels: {
-    sceneSizeUp: "Scene Size-up & Safety",
-    primaryAssessment: "Primary Assessment",
-    secondaryAssessment: "Secondary Assessment",
-    treatmentTransport: "Patient Treatment & Transport",
-    emsOperations: "Operations",
-  },
-  copy: {
-    guestPrompt: "to save your NREMT progress and track every question you miss",
-    trainingHeading: "Train by domain",
-    trainingSub: "Four sets covering the five NREMT EMT domains. Instant feedback, and missed questions come back until you master them.",
-    testsHeading: "Practice tests \u00b7 50 questions weighted like the real exam",
-    heroSubs: [
-      "Five domains, four tests. Primary assessment weighs most.",
-      "Master each set, then test.",
-      "Halfway there. Try a practice test.",
-      "Fix the misses, then retake.",
-      "All done. Schedule your NREMT exam.",
-    ],
-    sourceLine: "Weighted to the NREMT EMT examination specifications (April 2025). Protocols vary; follow local medical direction.",
-    analyticsKey: "emt",
-  },
-};
-
 const foodmgr: ExamConfig = {
   id: "foodmgr",
   stateCode: "FOODMGR",
@@ -1265,124 +1209,6 @@ const notary: ExamConfig = {
 };
 
 
-const aws: ExamConfig = {
-  id: "aws",
-  stateCode: "AWSCCP",
-  idBase: 2300,
-  slug: "/aws-cloud-practitioner",
-  landingPath: "/aws-cloud-practitioner-practice-test",
-  name: "AWS Cloud Practitioner Practice Test",
-  shortName: "AWS CCP",
-  examLabel: "AWS CLF-C02",
-  fullName: "AWS Certified Cloud Practitioner (CLF-C02) exam",
-  questionIdPrefix: "AWS-",
-  icon: "cloud",
-  testCount: 4,
-  questionsPerTest: 50,
-  passPct: 70,
-  // AWS Certified Cloud Practitioner CLF-C02: Cloud Concepts 24%, Security
-  // and Compliance 30%, Cloud Technology and Services 34%, Billing, Pricing
-  // and Support 12%. Real exam: 65 items (50 scored), 700 of 1000 to pass.
-  blueprint: {
-    cloudConcepts: 12,
-    securityCompliance: 15,
-    technologyServices: 17,
-    billingPricing: 6,
-  },
-  trainingSets: [
-    { setNumber: 1, id: 2301, name: "Cloud Concepts", categories: ["cloudConcepts"], size: 48, weightLabel: "24% of the exam" },
-    { setNumber: 2, id: 2302, name: "Security & Compliance", categories: ["securityCompliance"], size: 60, weightLabel: "30% of the exam" },
-    { setNumber: 3, id: 2303, name: "Cloud Technology & Services", categories: ["technologyServices"], size: 68, weightLabel: "34% of the exam" },
-    { setNumber: 4, id: 2304, name: "Billing, Pricing & Support", categories: ["billingPricing"], size: 24, weightLabel: "12% of the exam" },
-  ],
-  categoryLabels: {
-    cloudConcepts: "Cloud Concepts",
-    securityCompliance: "Security & Compliance",
-    technologyServices: "Cloud Technology & Services",
-    billingPricing: "Billing, Pricing & Support",
-  },
-  copy: {
-    guestPrompt: "to save your AWS exam progress and track every question you miss",
-    trainingHeading: "Train by domain",
-    trainingSub: "Four sets matching the four CLF-C02 domains. Instant feedback, and missed questions come back until you master them.",
-    testsHeading: "Practice tests \u00b7 50 questions weighted like the real exam",
-    heroSubs: [
-      "Four domains, four tests. Technology weighs most.",
-      "Master each set, then test.",
-      "Halfway there. Try a practice test.",
-      "Fix the misses, then retake.",
-      "All done. Schedule your CLF-C02.",
-    ],
-    sourceLine: "Weighted to the AWS Certified Cloud Practitioner (CLF-C02) exam guide. Service names and features as of 2026.",
-    analyticsKey: "aws",
-  },
-};
-
-const aplus: ExamConfig = {
-  id: "aplus",
-  stateCode: "APLUS",
-  idBase: 2400,
-  slug: "/comptia-a-plus",
-  landingPath: "/comptia-a-plus-practice-test",
-  name: "CompTIA A+ Practice Test",
-  shortName: "CompTIA A+",
-  examLabel: "A+ Core 1 & 2",
-  fullName: "CompTIA A+ (220-1201 and 220-1202) exams",
-  questionIdPrefix: "AP-",
-  icon: "cpu",
-  testCount: 4,
-  questionsPerTest: 50,
-  passPct: 70,
-  // CompTIA A+ Core 1 (220-1201: Mobile 13%, Networking 23%, Hardware 25%,
-  // Virtualization and Cloud 11%, Hardware and Network Troubleshooting 28%)
-  // and Core 2 (220-1202: Operating Systems 28%, Security 28%, Software
-  // Troubleshooting 23%, Operational Procedures 21%). Mixed 50-item tests
-  // split 25/25 across the two cores in each core's proportions.
-  blueprint: {
-    aplusMobile: 3,
-    aplusNetworking: 6,
-    aplusHardware: 6,
-    aplusVirtCloud: 3,
-    aplusHwTroubleshooting: 7,
-    aplusOS: 7,
-    aplusSecurity: 7,
-    aplusSwTroubleshooting: 6,
-    aplusOperational: 5,
-  },
-  trainingSets: [
-    { setNumber: 1, id: 2401, name: "Core 1: Mobile, Networking & Hardware", categories: ["aplusMobile", "aplusNetworking", "aplusHardware"], size: 60, weightLabel: "30% of the tests" },
-    { setNumber: 2, id: 2402, name: "Core 1: Cloud & Hardware Troubleshooting", categories: ["aplusVirtCloud", "aplusHwTroubleshooting"], size: 40, weightLabel: "20% of the tests" },
-    { setNumber: 3, id: 2403, name: "Core 2: Operating Systems & Security", categories: ["aplusOS", "aplusSecurity"], size: 56, weightLabel: "28% of the tests" },
-    { setNumber: 4, id: 2404, name: "Core 2: Software Troubleshooting & Procedures", categories: ["aplusSwTroubleshooting", "aplusOperational"], size: 44, weightLabel: "22% of the tests" },
-  ],
-  categoryLabels: {
-    aplusMobile: "Mobile Devices",
-    aplusNetworking: "Networking",
-    aplusHardware: "Hardware",
-    aplusVirtCloud: "Virtualization & Cloud Computing",
-    aplusHwTroubleshooting: "Hardware & Network Troubleshooting",
-    aplusOS: "Operating Systems",
-    aplusSecurity: "Security",
-    aplusSwTroubleshooting: "Software Troubleshooting",
-    aplusOperational: "Operational Procedures",
-  },
-  copy: {
-    guestPrompt: "to save your A+ progress and track every question you miss",
-    trainingHeading: "Train by core and domain",
-    trainingSub: "Four sets covering all nine A+ domains across Core 1 and Core 2. Instant feedback, and missed questions come back until you master them.",
-    testsHeading: "Practice tests \u00b7 50 questions split across Core 1 and Core 2",
-    heroSubs: [
-      "Two cores, four tests. Troubleshooting weighs most.",
-      "Master each set, then test.",
-      "Halfway there. Try a practice test.",
-      "Fix the misses, then retake.",
-      "All done. Schedule Core 1 and Core 2.",
-    ],
-    sourceLine: "Weighted to the CompTIA A+ 220-1201 and 220-1202 objectives (version 15, 2025). Performance-based items are not simulated.",
-    analyticsKey: "aplus",
-  },
-};
-
 const foodhandler: ExamConfig = {
   id: "foodhandler",
   stateCode: "FOODHANDLER",
@@ -1551,64 +1377,6 @@ const hunter: ExamConfig = {
     analyticsKey: "hunter",
   },
 };
-
-const secplus: ExamConfig = {
-  id: "secplus",
-  stateCode: "SECPLUS",
-  idBase: 2800,
-  slug: "/comptia-security-plus",
-  landingPath: "/comptia-security-plus-practice-test",
-  name: "CompTIA Security+ Practice Test",
-  shortName: "Security+",
-  examLabel: "Security+ SY0-701",
-  fullName: "CompTIA Security+ (SY0-701) exam",
-  questionIdPrefix: "SEC-",
-  icon: "lock",
-  testCount: 4,
-  questionsPerTest: 50,
-  passPct: 83,
-  // CompTIA Security+ SY0-701: General Security Concepts 12%, Threats, Vulnerabilities
-  // and Mitigations 22%, Security Architecture 18%, Security Operations 28%, Security
-  // Program Management and Oversight 20%. Up to 90 questions, 750 of 900 to pass.
-  blueprint: {
-    secConcepts: 6,
-    secThreats: 11,
-    secArchitecture: 9,
-    secOperations: 14,
-    secGovernance: 10,
-  },
-  trainingSets: [
-    { setNumber: 1, id: 2801, name: "General Security Concepts", categories: ["secConcepts"], size: 24, weightLabel: "12% of the tests" },
-    { setNumber: 2, id: 2802, name: "Threats, Vulnerabilities & Mitigations", categories: ["secThreats"], size: 44, weightLabel: "22% of the tests" },
-    { setNumber: 3, id: 2803, name: "Security Architecture", categories: ["secArchitecture"], size: 36, weightLabel: "18% of the tests" },
-    { setNumber: 4, id: 2804, name: "Security Operations", categories: ["secOperations"], size: 56, weightLabel: "28% of the tests" },
-    { setNumber: 5, id: 2805, name: "Program Management & Oversight", categories: ["secGovernance"], size: 40, weightLabel: "20% of the tests" },
-  ],
-  categoryLabels: {
-    secConcepts: "General Security Concepts",
-    secThreats: "Threats & Vulnerabilities",
-    secArchitecture: "Security Architecture",
-    secOperations: "Security Operations",
-    secGovernance: "Program Management",
-  },
-  copy: {
-    guestPrompt: "to save your Security+ progress and track every question you miss",
-    trainingHeading: "Train by domain",
-    trainingSub: "Five sets, one per SY0-701 domain. Instant feedback, and missed questions come back until you master them.",
-    testsHeading: "Practice tests \u00b7 50 questions weighted like SY0-701",
-    heroSubs: [
-      "Five domains, four tests. Operations weighs most.",
-      "Master each set, then test.",
-      "Halfway there. Try a practice test.",
-      "Fix the misses, then retake.",
-      "All done. Schedule your SY0-701.",
-    ],
-    sourceLine: "Weighted to the CompTIA Security+ SY0-701 objectives. Performance-based items are not simulated.",
-    analyticsKey: "secplus",
-  },
-};
-
-
 
 const cpr: ExamConfig = {
   id: "cpr",
@@ -2183,7 +1951,7 @@ const crcst: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, cet, danb, emt, foodmgr, realestate, insurance, notary, aws, aplus, foodhandler, boating, hunter, secplus, cpr, osha, forklift, alcohol, security, lifeguard, pnc, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, cet, danb, foodmgr, realestate, insurance, notary, foodhandler, boating, hunter, cpr, osha, forklift, alcohol, security, lifeguard, pnc, htl, cst, crcst];
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */
 export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ];

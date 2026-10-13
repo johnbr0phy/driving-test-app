@@ -1,0 +1,836 @@
+[
+  {
+    "domain": "treatmentTransport",
+    "test": 1,
+    "skill": "Suctioning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "While suctioning thick secretions from the airway of an unresponsive 4-year-old boy, what is the maximum duration of each suction attempt?",
+    "options": [
+      "5 seconds",
+      "10 seconds",
+      "15 seconds",
+      "Until the airway is fully clear"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Children are suctioned no more than 10 seconds at a time (adults 15, infants 5) because suction removes oxygen along with secretions. Fifteen seconds is the adult limit and risks hypoxia and bradycardia in a child."
+  },
+  {
+    "domain": "treatmentTransport",
+    "test": 1,
+    "skill": "Airway adjuncts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 34-year-old woman is postictal after a seizure with snoring respirations. She gags as you insert an oropharyngeal airway. You should:",
+    "options": [
+      "Advance it past the gag reflex and tape it in",
+      "Insert a smaller OPA without rotating it",
+      "Leave it partly inserted to hold the tongue forward",
+      "Remove it and insert a lubricated NPA"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An OPA is only for patients with no gag reflex, and forcing one invites vomiting and aspiration. A lubricated nasopharyngeal airway, bevel toward the septum, is tolerated by patients who still gag."
+  },
+  {
+    "domain": "treatmentTransport",
+    "test": 1,
+    "skill": "Airway adjuncts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 27-year-old man fell 15 feet, responds to pain, and has clear fluid draining from his nose and bruising behind both ears. Which adjunct should you avoid?",
+    "options": [
+      "Oropharyngeal airway",
+      "Rigid-tip suction catheter",
+      "Nasopharyngeal airway",
+      "Bag-valve mask with oxygen reservoir"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "CSF from the nose and Battle's sign suggest a basilar skull fracture, where an NPA can pass through the fractured skull base. An OPA remains acceptable if he has no gag reflex, and suction and BVM are still needed."
+  },
+  {
+    "domain": "treatmentTransport",
+    "test": 1,
+    "skill": "BVM ventilation",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "You and your partner are ventilating a 58-year-old man who has a carotid pulse but is apneic. Which BVM approach is best?",
+    "options": [
+      "One rescuer, one breath every 3 seconds",
+      "Two rescuers, one breath every 3 seconds",
+      "One rescuer, one breath every 8 to 10 seconds",
+      "Two rescuers, one breath every 6 seconds"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An apneic adult with a pulse gets 1 breath every 6 seconds (10 per minute), each over 1 second with visible chest rise, and two-rescuer BVM gives the best mask seal. Every 3 seconds is the pediatric rate and overventilates an adult, causing gastric inflation and reduced venous return."
+  },
+  {
+    "domain": "treatmentTransport",
+    "test": 1,
+    "skill": "Pediatric ventilation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 3-year-old girl pulled from a backyard pool has a pulse of 96 and gasping respirations of 4 per minute. How often should you ventilate her?",
+    "options": [
+      "One breath every 6 seconds",
+      "One breath every 8 to 10 seconds",
+      "One breath every 2 to 3 seconds",
+      "Two quick breaths every 5 seconds"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Children and infants with a pulse but inadequate breathing are ventilated at 1 breath every 2-3 seconds (20-30 per minute). Every 6 seconds is the adult rate and would underventilate this child; gasping is not adequate breathing."
+  },
+  {
+    "domain": "treatmentTransport",
+    "test": 1,
+    "skill": "Oxygen therapy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 62-year-old woman with a cough and fever is alert, breathing 18 per minute without distress, and has an SpO2 of 92%. Which oxygen delivery is most appropriate?",
+    "options": [
+      "Nonrebreather mask at 15 L/min",
+      "Bag-valve mask at 15 L/min",
+      "Nasal cannula at 2 to 4 L/min",
+      "No oxygen because she is not short of breath"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Oxygen is indicated when SpO2 is below 94% per most protocols, and a low-flow nasal cannula is enough to bring this comfortable, alert patient to 94% or higher. A nonrebreather is for severe hypoxia or shock, and a BVM is for inadequate breathing."
+  },
+  {
+    "domain": "treatmentTransport",
+    "test": 1,
+    "skill": "CPAP",
+    "difficulty": 3,
+    "format": "matrix",
+    "stem": "Several adults have moderate to severe respiratory distress. For each, specify whether CPAP is appropriate or contraindicated per local protocol.",
+    "rows": [
+      "Alert, CHF with crackles, BP 156/94",
+      "Confused and not following commands",
+      "Absent breath sounds after chest trauma",
+      "Actively vomiting, BP 138/84",
+      "Alert COPD patient, BP 142/88"
+    ],
+    "columns": [
+      "Appropriate",
+      "Contraindicated"
+    ],
+    "correct": [
+      0,
+      1,
+      1,
+      1,
+      0
+    ],
+    "explanation": "CPAP suits alert patients who follow commands, protect the airway and have a systolic pressure above 90, such as CHF or COPD in distress. Altered mental status, suspected pneumothorax and vomiting are contraindications even with a good blood pressure."
+  },
+  {
+    "domain": "treatmentTransport",
+    "test": 1,
+    "skill": "Supraglottic airways",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Your 49-year-old cardiac arrest patient cannot be ventilated adequately with a BVM despite repositioning and an OPA. Per local protocol, the next step is:",
+    "options": [
+      "Insert a supraglottic airway if authorized",
+      "Perform endotracheal intubation yourself",
+      "Stop ventilations and continue compressions only",
+      "Switch to a nonrebreather mask at 15 L/min"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Where protocol permits, EMTs may place a supraglottic airway when BVM ventilation fails, then give 1 breath every 6 seconds with continuous compressions. Endotracheal intubation is outside EMT scope, and a nonrebreather cannot ventilate an arrested patient."
+  },
+  {
+    "domain": "treatmentTransport",
+    "test": 1,
+    "skill": "Patient positioning",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A 40-year-old man unresponsive from alcohol intoxication has a patent airway, adequate respirations of 14 per minute, and no suspected trauma. How should you position him?",
+    "options": [
+      "Recovery position on his side",
+      "Supine with legs raised 12 inches",
+      "Prone with the head turned to one side",
+      "Seated upright at 90 degrees"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An unresponsive patient who is breathing adequately and has no suspected spinal injury goes in the recovery position so vomit and secretions drain from the mouth. Supine lets the tongue and vomitus block the airway, and prone prevents airway monitoring."
+  },
+  {
+    "domain": "treatmentTransport",
+    "test": 1,
+    "skill": "Stoma ventilation",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A 66-year-old man with a laryngectomy stoma in his neck is apneic but has a pulse. How should you deliver BVM ventilations?",
+    "options": [
+      "Seal an adult mask over the mouth and nose",
+      "Seal an infant or child mask over the stoma",
+      "Insert an OPA and ventilate through the mouth",
+      "Cover the stoma and ventilate through the mouth"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A laryngectomy patient breathes only through the stoma, so seal a small round mask over it and ventilate; close the mouth and nose if air escapes there. Ventilating through the mouth will not reach the lungs of a total laryngectomy patient."
+  },
+  {
+    "domain": "treatmentTransport",
+    "test": 1,
+    "skill": "Head injury ventilation",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A 30-year-old man with a head injury has a GCS of 5, a fixed dilated left pupil, and extension posturing. How should you ventilate him?",
+    "options": [
+      "About 10 breaths per minute regardless of signs",
+      "About 20 breaths per minute per protocol",
+      "About 30 breaths per minute to lower pressure",
+      "About 6 breaths per minute to avoid gastric distension"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Hyperventilation is reserved for signs of brain herniation such as a unilateral fixed dilated pupil, posturing or Cushing's triad; an adult is then ventilated at about 20 per minute per protocol. Routine hyperventilation, or rates as high as 30, constricts cerebral vessels and worsens brain ischemia."
+  },
+  {
+    "domain": "treatmentTransport",
+    "test": 1,
+    "skill": "Adult CPR",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "You begin CPR on a 55-year-old woman in cardiac arrest. What compression rate and depth should you use?",
+    "options": [
+      "80-100 per minute, 1.5 inches deep",
+      "120-140 per minute, 2.5 to 3 inches deep",
+      "100-120 per minute, 1.5 to 2 inches",
+      "100-120 per minute, 2 to 2.4 inches"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "AHA adult CPR is 100-120 compressions per minute at 2 to 2.4 inches with full chest recoil. Shallower compressions do not generate adequate blood flow, and rates above 120 shorten filling time."
+  },
+  {
+    "domain": "treatmentTransport",
+    "test": 1,
+    "skill": "Infant CPR",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "You and your partner perform CPR on a 6-month-old infant in cardiac arrest. Which technique and ratio are correct?",
+    "options": [
+      "Two fingers on the lower sternum, 30:2",
+      "Two hands on the sternum, 15:2",
+      "Two-thumb encircling hands, 15:2",
+      "Two-thumb encircling hands, 30:2"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "With two rescuers, infants and children receive 15 compressions to 2 breaths, and the two-thumb encircling technique compresses about 1.5 inches, one third of chest depth. The 30:2 ratio is for a single rescuer, and two hands are for larger children and adults."
+  },
+  {
+    "domain": "treatmentTransport",
+    "test": 1,
+    "skill": "AED use",
+    "difficulty": 1,
+    "format": "order",
+    "stem": "CPR is in progress on a 55-year-old woman when the AED arrives. Place the AED steps in order.",
+    "options": [
+      "Clear everyone for analysis",
+      "Resume compressions right away",
+      "Apply pads to the bare chest",
+      "Press shock when advised",
+      "Turn on the AED"
+    ],
+    "correct": [
+      4,
+      2,
+      0,
+      3,
+      1
+    ],
+    "explanation": "Power on, attach the pads, keep everyone clear while it analyzes, shock if advised, then resume compressions at once for 2 minutes. Pausing for a pulse check right after the shock instead of resuming CPR wastes perfusion time."
+  },
+  {
+    "domain": "treatmentTransport",
+    "test": 1,
+    "skill": "Hypothermic arrest",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A 45-year-old man rescued from icy water is pulseless and very cold to the touch. The AED advises a shock. You should:",
+    "options": [
+      "Shock once, resume CPR, handle him gently",
+      "Withhold all shocks until he is rewarmed",
+      "Deliver three stacked shocks, then check a pulse",
+      "Rub his arms and legs vigorously before shocking"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "In severe hypothermia, deliver the indicated shock, immediately resume CPR, and handle the patient gently because rough movement can trigger VF; further shocks follow local protocol. Stacked shocks are no longer used, and rubbing the extremities is harmful."
+  },
+  {
+    "domain": "treatmentTransport",
+    "test": 2,
+    "skill": "Tourniquet use",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "A 23-year-old has spurting thigh bleeding that soaks through firm direct pressure. Place the tourniquet steps in order.",
+    "options": [
+      "Lock the windlass in its clip",
+      "Place it 2 to 3 inches above the wound",
+      "Record the time applied",
+      "Pull the strap tight and secure it",
+      "Twist the windlass until bleeding stops"
+    ],
+    "correct": [
+      1,
+      3,
+      4,
+      0,
+      2
+    ],
+    "explanation": "The tourniquet goes above the wound and is snugged down first, then the windlass is turned until bleeding stops, locked, and the time recorded for the hospital. Twisting before the strap is snug wastes turns and may never close the artery."
+  },
+  {
+    "domain": "treatmentTransport",
+    "test": 2,
+    "skill": "Junctional hemorrhage",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A 31-year-old woman has a stab wound to the right groin with steady dark bleeding that direct pressure is not controlling. The next step is:",
+    "options": [
+      "Apply a tourniquet directly over the groin wound",
+      "Elevate the leg and place ice packs on it",
+      "Cover it with a dry dressing and transport",
+      "Pack it with hemostatic gauze and hold pressure"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Junctional wounds of the groin or axilla cannot be controlled with a tourniquet, so pack the wound tightly with hemostatic or plain gauze, hold firm pressure, then secure a pressure dressing. Elevation, ice and a loose dressing do not control this bleeding."
+  },
+  {
+    "domain": "treatmentTransport",
+    "test": 2,
+    "skill": "Shock management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 38-year-old woman fell from a horse and has a tender, distended abdomen, pulse 124, BP 86/60, and cool clammy skin. Besides oxygen, you should:",
+    "options": [
+      "Keep her supine and warm, transport rapidly",
+      "Give small sips of water for her thirst",
+      "Sit her upright for patient comfort",
+      "Stay on scene to obtain several sets of vital signs"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Decompensated hypovolemic shock from likely internal bleeding needs oxygen, supine positioning, prevention of heat loss and rapid transport to surgical care, with ALS per protocol. Nothing is given by mouth, and delaying on scene worsens outcome."
+  },
+  {
+    "domain": "treatmentTransport",
+    "test": 2,
+    "skill": "Aspirin",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A 58-year-old man has crushing chest pain radiating to his jaw. He has no aspirin allergy and no active bleeding. Per protocol, give aspirin:",
+    "options": [
+      "162-324 mg, chewed",
+      "81 mg, swallowed whole",
+      "650 mg, swallowed with water",
+      "324 mg, placed under the tongue"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Chewing 162-324 mg of aspirin speeds absorption and inhibits platelet clumping in acute coronary syndrome. Aspirin is withheld for allergy or active bleeding, and it is not a sublingual medication."
+  },
+  {
+    "domain": "treatmentTransport",
+    "test": 2,
+    "skill": "Nitroglycerin",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "A 57-year-old man with chest pain asks for help taking his nitroglycerin. Which findings mean you should withhold it? Select all that apply.",
+    "options": [
+      "Systolic BP of 84",
+      "Tadalafil taken 30 hours ago",
+      "Prescription in his wife's name",
+      "Sildenafil taken 72 hours ago",
+      "Heart rate of 88",
+      "Pain that began an hour ago"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Withhold nitroglycerin for a systolic pressure below 90 to 100 per local protocol, tadalafil within 48 hours, or a prescription that is not the patient's own. Sildenafil is restricted for 24 to 48 hours depending on protocol, so a dose 72 hours ago does not by itself rule it out."
+  },
+  {
+    "domain": "treatmentTransport",
+    "test": 2,
+    "skill": "Epistaxis",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A 52-year-old man with hypertension has a steady nosebleed, is alert, and has a BP of 178/98. How should you control the bleeding?",
+    "options": [
+      "Tilt his head back and pinch the soft nostrils",
+      "Lay him supine with ice on his neck",
+      "Pack both nostrils tightly with gauze",
+      "Have him lean forward; pinch the nostrils"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Leaning forward while pinching the soft nostrils keeps blood out of the airway and stomach, where it can cause vomiting or aspiration. Tilting the head back sends blood down the throat."
+  },
+  {
+    "domain": "treatmentTransport",
+    "test": 2,
+    "skill": "Spinal motion restriction",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A 29-year-old driver, alert and sober, has midline neck tenderness after a rear-end crash. She is seated in her car with no deficits. You should:",
+    "options": [
+      "Rapidly extricate her onto a long backboard with straps",
+      "Skip spinal precautions since she has no deficits",
+      "Have her walk to the ambulance without a collar",
+      "Apply a collar and let her self-extricate to the cot"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Midline tenderness is an indication for spinal motion restriction, but an alert, cooperative patient moves the spine least by self-extricating to the cot with a collar on. Long backboards are for patients who cannot move themselves, and normal neurologic findings do not rule out injury."
+  },
+  {
+    "domain": "treatmentTransport",
+    "test": 2,
+    "skill": "Splinting",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "A 25-year-old has a painful, deformed forearm with good distal pulses. Place the splinting steps in order.",
+    "options": [
+      "Measure the splint on the uninjured arm",
+      "Apply manual stabilization",
+      "Recheck distal pulse, motor and sensation",
+      "Check distal pulse, motor and sensation",
+      "Secure joints above and below the injury"
+    ],
+    "correct": [
+      1,
+      3,
+      0,
+      4,
+      2
+    ],
+    "explanation": "Stabilize the limb, document pulse, motor and sensation, size the splint and immobilize the joints above and below, then recheck function. Without the first check, a later loss of pulse cannot be tied to the splint."
+  },
+  {
+    "domain": "treatmentTransport",
+    "test": 2,
+    "skill": "Traction splints",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Four trauma patients have thigh injuries. Which one is an appropriate candidate for a traction splint?",
+    "options": [
+      "Femur fracture with an unstable pelvis",
+      "Isolated closed midshaft femur fracture",
+      "Femur fracture with an ankle fracture on that leg",
+      "Fracture at the knee joint itself"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A traction splint is for an isolated closed midshaft femur fracture. Pelvic, hip, knee or ankle injury on the same leg are contraindications because the splint anchors against or pulls through those structures."
+  },
+  {
+    "domain": "treatmentTransport",
+    "test": 2,
+    "skill": "Pelvic binders",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 70-year-old woman struck by a car has pelvic pain and instability on one gentle compression, pulse 120, and BP 88/60. You should:",
+    "options": [
+      "Rock the pelvis again to confirm instability",
+      "Apply a pelvic binder at the greater trochanters",
+      "Apply a traction splint to the painful leg",
+      "Logroll her several times to inspect her back and buttocks"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An unstable pelvis with shock signs calls for a pelvic binder centered over the greater trochanters to reduce pelvic volume and bleeding. Repeated rocking or logrolling can dislodge clots and worsen hemorrhage."
+  },
+  {
+    "domain": "treatmentTransport",
+    "test": 2,
+    "skill": "Splinting",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A 15-year-old skateboarder has a painful deformity of the left clavicle with good distal pulses and sensation. Which immobilization is most appropriate?",
+    "options": [
+      "Traction splint",
+      "Sling and swathe",
+      "Long board splint along the arm",
+      "Air splint inflated to full pressure"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A sling supports the arm and a swathe binds it to the chest, immobilizing the clavicle and shoulder. Traction and long rigid splints are for long-bone extremity fractures, not the shoulder girdle."
+  },
+  {
+    "domain": "treatmentTransport",
+    "test": 2,
+    "skill": "Helmet removal",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 22-year-old motorcyclist in a full-face helmet is breathing adequately, the helmet fits snugly, and you have full airway access. You should:",
+    "options": [
+      "Leave the helmet on and stabilize the head",
+      "Remove the helmet before applying a collar",
+      "Remove the helmet to look for scalp bleeding",
+      "Cut the chin strap and pull the helmet off"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A well-fitting helmet that does not interfere with airway management or ventilation is left in place and stabilized. Remove it with two rescuers only if it blocks the airway, fits poorly or prevents CPR."
+  },
+  {
+    "domain": "treatmentTransport",
+    "test": 2,
+    "skill": "Oral glucose",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A 61-year-old diabetic man is confused but follows commands and swallows normally. His glucose is 48 mg/dL. Per protocol, you should give:",
+    "options": [
+      "Oral glucose only after he becomes unresponsive",
+      "Nothing by mouth until ALS arrives",
+      "Insulin from his own supply",
+      "Oral glucose, 15 to 25 g"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Hypoglycemia with symptoms is treated with 15-25 g of oral glucose when the patient can swallow and protect the airway. An unresponsive patient must never receive anything by mouth, and insulin would worsen the low glucose."
+  },
+  {
+    "domain": "treatmentTransport",
+    "test": 2,
+    "skill": "Epinephrine auto-injector",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An 8-year-old girl weighing 25 kg has hives, wheezing, and lip swelling after eating peanuts. Which epinephrine auto-injector dose and site?",
+    "options": [
+      "0.3 mg in the deltoid",
+      "0.15 mg in the deltoid",
+      "0.15 mg in the anterolateral thigh",
+      "0.5 mg in the anterolateral thigh muscle"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Children weighing 15-30 kg receive the 0.15 mg auto-injector, and adults or patients over 30 kg receive 0.3 mg, both injected into the anterolateral thigh. The deltoid is not the recommended site for auto-injectors."
+  },
+  {
+    "domain": "treatmentTransport",
+    "test": 2,
+    "skill": "Metered-dose inhalers",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 19-year-old with asthma is wheezing and has his prescribed albuterol inhaler with a spacer. After checking the medication, which instruction is correct?",
+    "options": [
+      "Inhale quickly, then exhale right after the puff",
+      "Spray it into the mouth while exhaling",
+      "Exhale fully, then inhale deeply as it is activated",
+      "Take four rapid puffs without pausing"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Shake the inhaler, have the patient exhale fully, seal the lips around the spacer, and press the canister while he inhales slowly and deeply, then hold the breath about 10 seconds. Spraying during exhalation or rapid repeated puffs deposits little drug in the lungs."
+  },
+  {
+    "domain": "treatmentTransport",
+    "test": 0,
+    "skill": "Opioid overdose",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A 26-year-old man is unresponsive with pinpoint pupils, cyanosis, SpO2 78%, and respirations of 4 per minute. Your first action should be:",
+    "options": [
+      "Give 4 mg naloxone intranasally",
+      "Ventilate with a BVM and oxygen",
+      "Apply a nonrebreather at 15 L/min",
+      "Perform a sternal rub to arouse him"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Ventilation comes first because hypoxia kills before naloxone (0.4 mg IM/IN or 4 mg IN per protocol) takes effect. A nonrebreather cannot help a patient breathing 4 times a minute."
+  },
+  {
+    "domain": "treatmentTransport",
+    "test": 0,
+    "skill": "Medical direction",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "By radio, medical direction orders nitroglycerin 0.4 mg sublingual for your 63-year-old chest pain patient. Before giving it, you should:",
+    "options": [
+      "Give it immediately to save transport time",
+      "Repeat the order back, then check the rights",
+      "Wait until handoff to confirm the order",
+      "Ask the patient if the dose sounds right"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Repeating the order word for word catches errors, then verify the rights: right patient, medication, dose, route, time and documentation, plus the expiration date. Giving it without confirmation risks a dose or drug error."
+  },
+  {
+    "domain": "treatmentTransport",
+    "test": 0,
+    "skill": "Poisoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 3-year-old ate an unknown number of her grandmother's pills 30 minutes ago and is alert. Regarding activated charcoal, you should:",
+    "options": [
+      "Give it right away for every pill ingestion",
+      "Induce vomiting first, then give it",
+      "Give it only if medical direction orders it",
+      "Mix it with milk before giving it"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Contact Poison Control or medical direction; activated charcoal is given only on their order and never to a patient who cannot swallow or protect the airway. Inducing vomiting is not recommended, and milk reduces charcoal's binding."
+  },
+  {
+    "domain": "treatmentTransport",
+    "test": 0,
+    "skill": "Childbirth",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "During delivery of a full-term infant, the head delivers and you feel the umbilical cord wrapped loosely around the neck. You should:",
+    "options": [
+      "Clamp and cut the cord immediately",
+      "Gently slip the cord over the head",
+      "Pull the infant out quickly to ease tension",
+      "Push the head back into the vagina"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A loose nuchal cord is slipped over the head; only if it is too tight to move is it clamped in two places and cut between per protocol. Pulling on the infant can tear the cord or injure the baby."
+  },
+  {
+    "domain": "treatmentTransport",
+    "test": 0,
+    "skill": "Newborn resuscitation",
+    "difficulty": 3,
+    "format": "matrix",
+    "stem": "A newborn has been dried, warmed and stimulated. For each finding, specify the care indicated.",
+    "rows": [
+      "Crying, heart rate 150",
+      "Apneic, heart rate 90",
+      "Gasping, heart rate 120",
+      "Heart rate 50 after 30 s of ventilation",
+      "Weak breaths, heart rate 80"
+    ],
+    "columns": [
+      "Routine care",
+      "BVM ventilation",
+      "Compressions and ventilation"
+    ],
+    "correct": [
+      0,
+      1,
+      1,
+      2,
+      1
+    ],
+    "explanation": "Apnea, gasping or a heart rate under 100 calls for BVM ventilation at 40 to 60 a minute, and compressions are added only when the rate stays under 60 after 30 seconds of effective ventilation. A gasping newborn with a rate over 100 still needs ventilation, because gasping is not effective breathing."
+  },
+  {
+    "domain": "treatmentTransport",
+    "test": 0,
+    "skill": "Cord prolapse",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A 28-year-old woman in labor at term has the umbilical cord protruding from the vagina before the baby. You should:",
+    "options": [
+      "Use gloved fingers to lift the baby off the cord",
+      "Gently push the cord back into the vagina",
+      "Have her push hard to speed delivery",
+      "Clamp and cut the exposed cord"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "With a prolapsed cord, raise the hips (knee-chest or Trendelenburg), push the presenting part off the cord with a gloved hand, keep the cord moist, give oxygen and transport rapidly. Never push the cord back in or cut it."
+  },
+  {
+    "domain": "treatmentTransport",
+    "test": 0,
+    "skill": "Anticoagulant risk",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "An 84-year-old woman fell and struck her head. Which medications on her list raise her risk of a delayed brain bleed? Select all that apply.",
+    "options": [
+      "Warfarin",
+      "Apixaban",
+      "Clopidogrel",
+      "Metformin",
+      "Levothyroxine",
+      "Lisinopril"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Anticoagulants such as warfarin and apixaban and antiplatelets such as clopidogrel make intracranial bleeding more likely after even minor head trauma, so she needs transport and reassessment. Metformin, levothyroxine and lisinopril do not affect clotting."
+  },
+  {
+    "domain": "treatmentTransport",
+    "test": 0,
+    "skill": "Bariatric patients",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A 420-pound man with shortness of breath is in a second-floor bedroom. He is alert with stable vital signs. To move him safely, you should:",
+    "options": [
+      "Use a standard stair chair with two EMTs",
+      "Have him walk down the stairs alone",
+      "Call for added personnel and bariatric equipment",
+      "Drag him on a blanket down the stairs"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Moving a bariatric patient safely requires enough lifters and rated equipment such as a bariatric stretcher, using power-lift technique and knowing your limits. Overloading a standard stair chair or two EMTs risks injury to everyone."
+  },
+  {
+    "domain": "treatmentTransport",
+    "test": 0,
+    "skill": "Patient restraint",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 30-year-old combative man must be restrained per protocol with police assistance. Which restraint practice is correct?",
+    "options": [
+      "Prone with hands tied to the ankles",
+      "Prone with an officer kneeling on his back",
+      "Supine or on his side, monitored continuously",
+      "Left alone in the patient compartment once secured"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Restrained patients are positioned supine or on their side and monitored continuously for airway, breathing and circulation, with the reason documented. Prone, hog-tied or compressed positions cause positional asphyxia and death."
+  },
+  {
+    "domain": "treatmentTransport",
+    "test": 0,
+    "skill": "Child abuse",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A 2-year-old has bruises in different stages of healing and a round burn like a cigarette. The parent says she fell off a couch. You should:",
+    "options": [
+      "Treat, transport, and report per state law",
+      "Confront the parent about the inconsistent story",
+      "Leave the burns out of the report",
+      "Ask the parent's permission before reporting"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Injuries inconsistent with the history suggest abuse, and EMTs are mandated reporters who must report per state law and document objectively. Confronting the caregiver can escalate the scene and endanger the child."
+  },
+  {
+    "domain": "treatmentTransport",
+    "test": 0,
+    "skill": "Supine hypotension",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 32-year-old woman at 36 weeks of pregnancy becomes dizzy and hypotensive while lying supine on the stretcher. How should you position her?",
+    "options": [
+      "Supine with the legs elevated",
+      "Prone with a pillow under the hips",
+      "Seated upright at 90 degrees",
+      "On her left side"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "After 20 weeks the uterus compresses the vena cava when the patient is supine, so transport her on her left side or with left lateral tilt. Supine positioning is for other shock patients and CHF patients sit upright, but supine worsens this patient."
+  },
+  {
+    "domain": "treatmentTransport",
+    "test": 0,
+    "skill": "Stroke destination",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 66-year-old man has had right-sided weakness and slurred speech for 40 minutes. A community hospital is 8 minutes away; a stroke center is 20. Transport him:",
+    "options": [
+      "To the closest hospital regardless of capability",
+      "To the stroke center per protocol",
+      "To his primary care physician's office",
+      "Only after symptoms resolve on scene"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Destination protocols send stroke patients within the treatment window to a stroke center that can give thrombolytics or thrombectomy when the extra time is modest. The closest hospital may lack those capabilities."
+  },
+  {
+    "domain": "treatmentTransport",
+    "test": 0,
+    "skill": "Radio reports",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "You are transporting a 71-year-old man with abdominal pain and a BP of 132/80. Which information belongs in your radio report?",
+    "options": [
+      "His full name and home address",
+      "Age, complaint, vital signs, treatment and ETA",
+      "Your opinion of his lifestyle",
+      "Every past illness in detail"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A radio report is concise: unit, age and sex, chief complaint, key findings and vitals, treatment and response, and ETA. Names do not belong on the radio for privacy, and long histories are saved for handoff."
+  },
+  {
+    "domain": "treatmentTransport",
+    "test": 0,
+    "skill": "Handoff reports",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "You arrive at the trauma center with a 24-year-old stabbing victim. Which handoff format organizes mechanism, injuries, signs and treatment?",
+    "options": [
+      "MIST",
+      "SAMPLE",
+      "OPQRST",
+      "AVPU"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "MIST stands for Mechanism, Injuries, Signs (vital signs) and Treatment, a trauma handoff format; SBAR serves the same role for medical patients. SAMPLE and OPQRST are history tools and AVPU grades responsiveness."
+  }
+]

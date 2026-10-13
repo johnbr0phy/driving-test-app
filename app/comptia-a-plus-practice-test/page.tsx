@@ -50,8 +50,9 @@ const jsonLd = {
       offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
       featureList: [
         "200 A+ practice questions",
-        "4 practice tests weighted to the 220-1201 and 220-1202 objectives",
-        "Training sets for every domain",
+        "Full practice exam: Core 1 and Core 2, 90 questions each in 90 minutes",
+        "4 drills, two per core",
+        "Choose-two, matching and ordering items",
         "Instant feedback with explanations",
         "Auto-save progress",
       ],
@@ -86,7 +87,7 @@ const jsonLd = {
           name: "Does this include performance-based questions?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "No. Everything here is four-option single answer, which is most of the real exam. Performance-based items simulate a console or configuration task, so pair this bank with hands-on practice in Windows, a home router and a virtual machine.",
+            text: "Partly. Alongside single-answer and choose-two items, each core includes matching (a table) and ordering items that stand in for performance-based questions. Real PBQs simulate a console or configuration task, which is not modelled here, so pair this bank with hands-on practice in Windows, a home router and a virtual machine.",
           },
         },
         {
@@ -94,7 +95,7 @@ const jsonLd = {
           name: "Should I take Core 1 or Core 2 first?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Most candidates take Core 1 first because hardware and networking are more concrete, but either order works. The training sets here are split by core, so you can prepare for one exam at a time.",
+            text: "Most candidates take Core 1 first because hardware and networking are more concrete, but either order works. The drills here are split by core, two each, so you can prepare for one exam at a time.",
           },
         },
         {
@@ -102,7 +103,7 @@ const jsonLd = {
           name: "Is the TigerTest A+ practice test free?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. All four practice tests and all training sets are free, with no account required. Create a free account if you want your progress saved across devices.",
+            text: "Yes. The full Core 1 and Core 2 practice exam and all four drills are free, with no account required. Create a free account if you want your progress saved across devices.",
           },
         },
       ],
@@ -139,7 +140,7 @@ export default function AplusLandingPage() {
             Free CompTIA A+ Practice Test 2026
           </h1>
           <ExamLandingHero
-            dashboardHref="/comptia-a-plus/dashboard"
+            dashboardHref="/comptia-a-plus"
             shortName="CompTIA A+"
             subtitle="200 questions weighted to the 220-1201 and 220-1202 objectives. Tuned for mobile. No account needed."
             shots={{ mobile: "/landing/aplus-mobile.png", desktop: "/landing/aplus-desktop.png" }}
@@ -160,9 +161,9 @@ export default function AplusLandingPage() {
               <Smartphone className="w-7 h-7 text-brand" />
             </div>
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Training by Domain</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Drills by Domain</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four sets covering both cores: Core 1 mobile, networking and hardware; Core 1 cloud and hardware troubleshooting; Core 2 operating systems and security; and Core 2 software troubleshooting and operational procedures. Questions you miss come back until you have mastered them.
+                Four drills, two per core: Core 1 mobile, networking and hardware; Core 1 cloud and hardware troubleshooting; Core 2 operating systems and security; and Core 2 software troubleshooting and operational procedures. Questions you miss come back until you have mastered them.
               </p>
             </div>
           </div>
@@ -173,7 +174,7 @@ export default function AplusLandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Practice Tests</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four 50-question tests, half Core 1 and half Core 2, written the CompTIA way: a technician, a symptom, and the thing to do FIRST, NEXT or BEST.
+                One full practice exam like the real pair: Core 1 (90 questions in 90 minutes), a 10-minute break, then Core 2 (90 in 90), written the CompTIA way: a technician, a symptom, and the thing to do FIRST, NEXT or BEST.
               </p>
             </div>
           </div>
@@ -189,7 +190,7 @@ export default function AplusLandingPage() {
                 Built on the 2025 A+ Objectives
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-                CompTIA publishes the domain weighting for each exam, and version 15 (220-1201 and 220-1202) launched in 2025. Every practice test here splits 25 questions per core in each core&apos;s proportions, so troubleshooting, hardware, networking, operating systems and security get the most weight.
+                CompTIA publishes the domain weighting for each exam, and version 15 (220-1201 and 220-1202) launched in 2025. The practice exam weights each core&apos;s 90 questions in its own proportions, so troubleshooting, hardware, networking, operating systems and security get the most weight.
               </p>
               <div className="space-y-3">
                 {contentAreas.map((area) => (
@@ -259,7 +260,7 @@ export default function AplusLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Drill your weak domain and take both cores</h3>
               <p>
-                TigerTest tracks your accuracy by domain. Core 1 passes at 675 and Core 2 at 700 of 900, and you need both to certify. Retake the set you missed most until you clear 80 percent with room to spare, then expect performance-based items on exam day.
+                TigerTest tracks your accuracy by domain. Core 1 passes at 675 and Core 2 at 700 of 900, and you need both to certify. Retake the drill you missed most until you clear 80 percent with room to spare, then expect performance-based items on exam day.
               </p>
             </div>
           </div>
@@ -287,19 +288,19 @@ export default function AplusLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Does this include performance-based questions?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              No. Everything here is four-option single answer, which is most of the real exam. Performance-based items simulate a console or configuration task, so pair this bank with hands-on practice in Windows, a home router and a virtual machine.
+              Partly. Alongside single-answer and choose-two items, each core includes matching (a table) and ordering items that stand in for performance-based questions. Real PBQs simulate a console or configuration task, which is not modelled here, so pair this bank with hands-on practice in Windows, a home router and a virtual machine.
             </p>
           </div>
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Should I take Core 1 or Core 2 first?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              Most candidates take Core 1 first because hardware and networking are more concrete, but either order works. The training sets here are split by core, so you can prepare for one exam at a time.
+              Most candidates take Core 1 first because hardware and networking are more concrete, but either order works. The drills here are split by core, two each, so you can prepare for one exam at a time.
             </p>
           </div>
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is the TigerTest A+ practice test free?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              Yes. All four practice tests and all training sets are free, with no account required. Create a free account if you want your progress saved across devices.
+              Yes. The full Core 1 and Core 2 practice exam and all four drills are free, with no account required. Create a free account if you want your progress saved across devices.
             </p>
           </div>
         </div>
@@ -313,7 +314,7 @@ export default function AplusLandingPage() {
         <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">Ready to Pass the CompTIA A+?</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Free to start. No account required. 200 questions across all nine domains.</p>
-          <ExamLandingCTA dashboardHref="/comptia-a-plus/dashboard" />
+          <ExamLandingCTA dashboardHref="/comptia-a-plus" />
         </div>
       </div>
     </div>

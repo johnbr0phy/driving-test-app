@@ -1,0 +1,466 @@
+[
+  {
+    "domain": "aplusNetworking",
+    "test": 1,
+    "skill": "Port numbers",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A technician needs to securely manage a Linux server's command line from a remote office. Which port must be open on the server's firewall?",
+    "options": [
+      "23",
+      "3389",
+      "22",
+      "161"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "SSH uses TCP 22 and encrypts the session. Telnet on port 23 also provides a remote shell but sends everything, including passwords, in clear text."
+  },
+  {
+    "domain": "aplusNetworking",
+    "test": 1,
+    "skill": "Port numbers",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Users can no longer open shared folders on a Windows file server after a firewall rule change. Which port was MOST likely blocked?",
+    "options": [
+      "445",
+      "389",
+      "3389",
+      "143"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "SMB file and printer sharing runs on TCP 445. Port 3389 is Remote Desktop, which would not affect mapped drives or shared folders."
+  },
+  {
+    "domain": "aplusNetworking",
+    "test": 1,
+    "skill": "Secure protocols",
+    "difficulty": 2,
+    "format": "multi",
+    "select": 2,
+    "stem": "A security audit flags Telnet and FTP on company servers because both send credentials in clear text. Which two protocols should replace them? (Choose two.)",
+    "options": [
+      "TFTP",
+      "SNMPv1",
+      "SSH",
+      "HTTP",
+      "SFTP",
+      "LDAP"
+    ],
+    "correct": [
+      2,
+      4
+    ],
+    "explanation": "SSH replaces Telnet with an encrypted remote shell, and SFTP carries file transfers inside SSH. TFTP sounds like a file transfer upgrade, but it has no authentication or encryption at all."
+  },
+  {
+    "domain": "aplusNetworking",
+    "test": 1,
+    "skill": "Port numbers",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A help desk technician cannot reach a remote user's Windows desktop with Remote Desktop Connection. Which port should the technician verify on the firewall?",
+    "options": [
+      "443",
+      "3389",
+      "445",
+      "23"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Remote Desktop Protocol listens on TCP 3389. Port 445 is SMB file sharing, a common mix-up because both are Windows services."
+  },
+  {
+    "domain": "aplusNetworking",
+    "test": 1,
+    "skill": "Port numbers",
+    "difficulty": 3,
+    "format": "matrix",
+    "stem": "For each port, specify which kind of service uses it.",
+    "rows": [
+      "TCP 587",
+      "TCP 22",
+      "UDP 67",
+      "TCP 3389",
+      "UDP 53",
+      "TCP 993"
+    ],
+    "columns": [
+      "Email",
+      "Remote access",
+      "Addressing and naming"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      1,
+      2,
+      0
+    ],
+    "explanation": "587 (SMTP submission) and 993 (IMAP over TLS) are email, 22 (SSH) and 3389 (RDP) are remote access, and 67 (DHCP) and 53 (DNS) hand out addresses and resolve names. 993 is the one most often misplaced, but it is a mail port, not a remote access port."
+  },
+  {
+    "domain": "aplusNetworking",
+    "test": 1,
+    "skill": "Port numbers",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which of the following protocols and ports does a client use to query a directory service such as Active Directory without encryption?",
+    "options": [
+      "SMB on 445",
+      "SNMP on 161",
+      "LDAP on 389",
+      "NetBIOS on 137"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "LDAP on TCP/UDP 389 is the directory access protocol used by Active Directory. SMB on 445 is also a Windows protocol, but it handles file and printer sharing."
+  },
+  {
+    "domain": "aplusNetworking",
+    "test": 1,
+    "skill": "Power over Ethernet",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A technician must install access points on a ceiling where no electrical outlets exist. Which of the following should power them over the Ethernet runs?",
+    "options": [
+      "An unmanaged eight-port hub",
+      "A PoE-capable switch",
+      "A Cat 6 patch panel",
+      "A DOCSIS cable modem"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Power over Ethernet switches deliver DC power and data on the same twisted-pair cable. A patch panel only terminates cabling and supplies no power."
+  },
+  {
+    "domain": "aplusNetworking",
+    "test": 1,
+    "skill": "Power over Ethernet",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A new PTZ camera requires 25 W, but the existing switch supplies only 15.4 W per port. Which standard must a replacement switch support at minimum?",
+    "options": [
+      "802.3af",
+      "802.3ab",
+      "802.11ax",
+      "802.3at"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "802.3at (PoE+) provides up to 30 W per port, enough for 25 W. 802.3af is the original 15.4 W PoE the current switch already offers, and 802.3ab is Gigabit Ethernet over copper, not a power standard."
+  },
+  {
+    "domain": "aplusNetworking",
+    "test": 1,
+    "skill": "Switch types",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A small office needs a switch that supports VLANs and lets the administrator view per-port traffic statistics. Which of the following should be purchased?",
+    "options": [
+      "Unmanaged switch",
+      "Hub",
+      "Managed switch",
+      "Patch panel"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Managed switches offer VLANs, port monitoring, and remote configuration. An unmanaged switch forwards frames but has no configuration interface for VLANs."
+  },
+  {
+    "domain": "aplusNetworking",
+    "test": 1,
+    "skill": "Wireless channels",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A technician is placing several 2.4 GHz access points in an office and wants to avoid channel overlap. Which channels should be used?",
+    "options": [
+      "1, 6, and 11",
+      "1, 5, and 9",
+      "2, 7, and 12",
+      "1, 4, 8, and 11"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "In North America, channels 1, 6, and 11 are the only non-overlapping 20 MHz channels in the 2.4 GHz band. Channels four or five apart still overlap partially."
+  },
+  {
+    "domain": "aplusNetworking",
+    "test": 1,
+    "skill": "Wi-Fi standards",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which of the following wireless standards first added support for the 6 GHz band, marketed as Wi-Fi 6E?",
+    "options": [
+      "802.11ac",
+      "802.11n",
+      "802.11g",
+      "802.11ax"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Wi-Fi 6E is 802.11ax extended into 6 GHz. 802.11ac (Wi-Fi 5) operates only in 5 GHz, so it cannot use 6 GHz channels."
+  },
+  {
+    "domain": "aplusNetworking",
+    "test": 1,
+    "skill": "Wi-Fi standards",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Users in an apartment building report slow Wi-Fi caused by dozens of neighboring 2.4 GHz networks. All devices support Wi-Fi 6E. Which of the following should the technician do?",
+    "options": [
+      "Lower transmit power to the minimum",
+      "Move the clients to the 6 GHz band",
+      "Switch the access point to 802.11b",
+      "Disable WPA3 encryption"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The 6 GHz band offers many clean channels that older neighboring networks cannot use. Dropping to 802.11b would reduce speed further and stay in the congested 2.4 GHz band."
+  },
+  {
+    "domain": "aplusNetworking",
+    "test": 1,
+    "skill": "Internet connection types",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A rural client has no cable, DSL, or fiber, but has line of sight to a provider's tower 8 km away and needs low latency for video calls. Which service BEST fits?",
+    "options": [
+      "Geostationary satellite",
+      "WISP fixed wireless",
+      "Dial-up",
+      "Metro Ethernet"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A wireless ISP delivers fixed wireless over line of sight with low latency. Geostationary satellite is available almost anywhere, but its round-trip delay of roughly 600 ms hurts video calls."
+  },
+  {
+    "domain": "aplusNetworking",
+    "test": 1,
+    "skill": "Network types",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A network that connects several office buildings across a single city is BEST described as which of the following network types?",
+    "options": [
+      "LAN",
+      "PAN",
+      "MAN",
+      "SAN"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A metropolitan area network spans a city or campus-sized area larger than a LAN but smaller than a WAN. A LAN covers a single building or site."
+  },
+  {
+    "domain": "aplusNetworking",
+    "test": 1,
+    "skill": "Cable jackets",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A technician must run network cable through the space above a drop ceiling that is used for air circulation. Which cable jacket is required?",
+    "options": [
+      "Plenum",
+      "PVC",
+      "Direct burial",
+      "Riser"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Plenum-rated jackets resist fire and produce low toxic smoke, as fire codes require in air-handling spaces. Riser cable is rated for vertical shafts between floors, not plenum spaces."
+  },
+  {
+    "domain": "aplusNetworking",
+    "test": 1,
+    "skill": "Cable categories",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A technician must run 10 Gbps copper Ethernet to a switch located 90 m away. Which cable category is the minimum that supports this?",
+    "options": [
+      "Cat 5e STP",
+      "Cat 6",
+      "Cat 5",
+      "Cat 6a"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Cat 6a supports 10 Gbps up to 100 m. Cat 6 also supports 10 Gbps, but only up to about 55 m, so it falls short at 90 m."
+  },
+  {
+    "domain": "aplusNetworking",
+    "test": 1,
+    "skill": "Cable connectors",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "For each connector, specify the type of cable it terminates.",
+    "rows": [
+      "F-type",
+      "RJ45",
+      "LC",
+      "BNC",
+      "SC",
+      "RJ11"
+    ],
+    "columns": [
+      "Twisted pair",
+      "Coaxial",
+      "Fiber optic"
+    ],
+    "correct": [
+      1,
+      0,
+      2,
+      1,
+      2,
+      0
+    ],
+    "explanation": "F-type and BNC are coaxial connectors, RJ45 and RJ11 are modular twisted-pair plugs, and LC and SC are fiber connectors. RJ11 is the tempting miss: it is smaller than RJ45 but still terminates twisted-pair phone wire."
+  },
+  {
+    "domain": "aplusNetworking",
+    "test": 1,
+    "skill": "Fiber optic cabling",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company needs a 10 km fiber link between two buildings. Which of the following cable types should the technician specify?",
+    "options": [
+      "Multimode OM3 fiber",
+      "Single-mode fiber",
+      "Shielded Cat 6a",
+      "RG-59 coaxial cable"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Single-mode fiber carries signals for many kilometers. Multimode fiber is cheaper but is limited to a few hundred meters at high speeds."
+  },
+  {
+    "domain": "aplusNetworking",
+    "test": 1,
+    "skill": "APIPA",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A user's workstation shows an IPv4 address of 169.254.33.10 and cannot reach the internet. Which of the following is the MOST likely cause?",
+    "options": [
+      "The DNS server address is wrong",
+      "The workstation has a static public address",
+      "The default gateway is mistyped",
+      "No DHCP server responded"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Windows assigns an APIPA address from 169.254.0.0/16 when no DHCP server answers. A wrong DNS server would not change the IP address itself."
+  },
+  {
+    "domain": "aplusNetworking",
+    "test": 1,
+    "skill": "Private IPv4 ranges",
+    "difficulty": 3,
+    "format": "multi",
+    "select": 2,
+    "stem": "Which two of the following addresses fall within the RFC 1918 private IPv4 ranges? (Choose two.)",
+    "options": [
+      "172.32.1.1",
+      "10.45.2.1",
+      "169.254.8.20",
+      "192.169.1.10",
+      "172.20.14.5",
+      "11.0.0.5"
+    ],
+    "correct": [
+      1,
+      4
+    ],
+    "explanation": "The private ranges are 10.0.0.0/8, 172.16.0.0/12 (172.16 through 172.31) and 192.168.0.0/16. 169.254.8.20 is also not routed on the internet, but it is an APIPA link-local address, not an RFC 1918 private one, and 172.32.1.1 sits just outside the 172.16/12 block."
+  },
+  {
+    "domain": "aplusNetworking",
+    "test": 1,
+    "skill": "DHCP reservations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A technician wants a network printer to always receive the same IP address from the SOHO router's DHCP server. Which of the following should be configured?",
+    "options": [
+      "A shorter lease time",
+      "A DHCP reservation",
+      "A DNS CNAME record",
+      "APIPA on the printer"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A reservation ties the printer's MAC address to a fixed address from the scope. A shorter lease only makes renewals more frequent and does not guarantee the same address."
+  },
+  {
+    "domain": "aplusNetworking",
+    "test": 0,
+    "skill": "DNS records",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A web server was just given an IPv6 address. Which DNS record should the technician create so clients can resolve its name to that address?",
+    "options": [
+      "A",
+      "MX",
+      "CNAME",
+      "AAAA"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An AAAA record maps a hostname to an IPv6 address. An A record does the same job but only for IPv4 addresses."
+  },
+  {
+    "domain": "aplusNetworking",
+    "test": 0,
+    "skill": "Network tools",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A technician needs to find which patch panel port connects to an unlabeled wall jack in a cubicle. Which of the following tools should be used?",
+    "options": [
+      "Toner probe",
+      "Loopback plug",
+      "Crimper",
+      "Wi-Fi analyzer"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A toner injects a signal at the jack, and the probe locates the matching cable in the wiring closet. A loopback plug tests a port's own send and receive, not which cable leads where."
+  },
+  {
+    "domain": "aplusNetworking",
+    "test": 0,
+    "skill": "Network tools",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A technician is terminating Cat 6 wires onto the back of a new patch panel in a wiring closet. Which of the following tools is required?",
+    "options": [
+      "Crimper",
+      "RJ45 loopback plug",
+      "Punchdown tool",
+      "Toner probe"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A punchdown tool seats each wire into the panel's IDC block and trims the excess. A crimper attaches RJ45 plugs to cable ends, not wires to a patch panel."
+  }
+]

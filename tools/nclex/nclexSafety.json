@@ -4,18 +4,23 @@
     "test": 1,
     "skill": "PPE donning order",
     "difficulty": 1,
-    "format": "single",
-    "stem": "After hand hygiene, the nurse prepares to enter the room of a client on contact and droplet precautions. Which item should the nurse put on first?",
+    "format": "order",
+    "stem": "The nurse prepares to enter the room of a client on contact and droplet precautions. Place the steps in the order the nurse should perform them.",
     "options": [
-      "Clean gloves",
-      "Isolation gown",
-      "Surgical mask",
-      "Eye protection"
+      "Perform hand hygiene",
+      "Put on the isolation gown",
+      "Put on the surgical mask",
+      "Put on eye protection",
+      "Put on clean gloves"
     ],
     "correct": [
-      1
+      0,
+      1,
+      2,
+      3,
+      4
     ],
-    "explanation": "The CDC donning sequence is gown, then mask or respirator, then eye protection, then gloves, so the gloves cover the gown cuffs. Starting with the mask is a common error."
+    "explanation": "The CDC donning sequence is hand hygiene, gown, mask, eye protection, then gloves, so the gloves go on last and cover the gown cuffs. Putting gloves on before the gown leaves the wrists exposed and contaminates the gloves while tying the gown."
   },
   {
     "domain": "nclexSafety",
@@ -176,19 +181,30 @@
     "domain": "nclexSafety",
     "test": 1,
     "skill": "Seizure safety",
-    "difficulty": 2,
-    "format": "single",
-    "stem": "A client has a generalized tonic-clonic seizure while in bed. Which action should the nurse take?",
-    "options": [
+    "difficulty": 1,
+    "format": "matrix",
+    "stem": "A client has a generalized tonic-clonic seizure while in bed. For each action, specify whether it is indicated or contraindicated during the seizure.",
+    "rows": [
       "Turn the client onto one side",
-      "Insert a padded tongue blade",
-      "Hold the arms to stop jerking",
-      "Give oral glucose gel at once"
+      "Insert an oral airway",
+      "Hold the limbs still",
+      "Note the time it began",
+      "Loosen clothing at the neck",
+      "Give oral glucose gel"
+    ],
+    "columns": [
+      "Indicated",
+      "Contraindicated"
     ],
     "correct": [
-      0
+      0,
+      1,
+      1,
+      0,
+      0,
+      1
     ],
-    "explanation": "Side-lying keeps the airway clear and lets saliva drain while the nurse protects the head and times the seizure. Nothing is placed in the mouth, restraining movement can cause injury, and nothing is given by mouth during a seizure."
+    "explanation": "Side-lying keeps the airway clear, timing the seizure guides treatment, and loosening tight clothing eases breathing. Nothing goes into the mouth during a seizure, including an airway or glucose gel, and holding the limbs can cause fractures."
   },
   {
     "domain": "nclexSafety",
@@ -272,18 +288,23 @@
     "test": 2,
     "skill": "PPE removal order",
     "difficulty": 2,
-    "format": "single",
-    "stem": "After caring for a client on contact and droplet precautions, which item should the nurse remove last?",
+    "format": "order",
+    "stem": "After caring for a client on contact and droplet precautions, the nurse removes PPE. Place the steps in the order the nurse should perform them.",
     "options": [
-      "Gown, pulled away and rolled inward",
-      "Gloves, using glove-to-glove technique",
-      "Goggles, by the earpieces",
-      "Mask, by the ties or loops"
+      "Remove gloves glove-to-glove",
+      "Remove goggles by the earpieces",
+      "Remove the gown, rolling it inward",
+      "Remove the mask by the ties",
+      "Perform hand hygiene"
     ],
     "correct": [
-      3
+      0,
+      1,
+      2,
+      3,
+      4
     ],
-    "explanation": "The mask is removed last, at the doorway or after leaving the room (a respirator always after leaving), touching only the ties or loops, followed by hand hygiene. Gloves come off first because they are the most contaminated, then eye protection and the gown."
+    "explanation": "The CDC doffing sequence removes the most contaminated item first: gloves, then eye protection, then the gown, then the mask by its ties, followed by hand hygiene. Taking the mask off before the gown brings contaminated hands near the face."
   },
   {
     "domain": "nclexSafety",
@@ -311,19 +332,28 @@
     "domain": "nclexSafety",
     "test": 2,
     "skill": "Radiation safety",
-    "difficulty": 3,
-    "format": "single",
-    "stem": "A client has a sealed radioactive implant for cervical cancer. Which action by the nurse is correct?",
-    "options": [
-      "Pick up a loose implant with gloves",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "A client has a sealed radioactive implant for cervical cancer. For each nursing action, specify whether it is appropriate or inappropriate.",
+    "rows": [
       "Keep a lead container in the room",
-      "Assign the same nurse every day",
-      "Allow brief visits from children"
+      "Pick up a loose implant by hand",
+      "Rotate nurses assigned to the client",
+      "Let a pregnant sister visit briefly",
+      "Wear a dosimeter badge during care"
+    ],
+    "columns": [
+      "Appropriate",
+      "Inappropriate"
     ],
     "correct": [
-      1
+      0,
+      1,
+      0,
+      1,
+      0
     ],
-    "explanation": "A lead container and long-handled forceps stay in the room so a dislodged implant can be picked up with forceps, never by hand, and shielded. Staff assignments rotate to limit each nurse's exposure, and children and pregnant visitors are not allowed."
+    "explanation": "A lead container with long-handled forceps stays in the room, assignments rotate to limit each nurse's exposure, and staff wear dosimeters to track dose. A dislodged implant is picked up only with forceps, never by hand, even gloved, and pregnant visitors are not allowed at all."
   },
   {
     "domain": "nclexSafety",
@@ -425,18 +455,21 @@
     "test": 0,
     "skill": "Fire response",
     "difficulty": 1,
-    "format": "single",
-    "stem": "The nurse discovers a small fire in a client's room. Which action should the nurse take first?",
+    "format": "order",
+    "stem": "The nurse discovers a small fire in a client's room. Place the steps in the order the nurse should perform them.",
     "options": [
+      "Move the client out of the room",
       "Pull the nearest fire alarm",
-      "Close all doors on the unit",
-      "Use the fire extinguisher",
-      "Remove the client from the room"
+      "Close the door to the room",
+      "Use the extinguisher on the fire"
     ],
     "correct": [
+      0,
+      1,
+      2,
       3
     ],
-    "explanation": "The RACE sequence is Rescue, Alarm, Contain, Extinguish, so the nurse first removes the client from danger. Pulling the alarm comes next, then closing doors and using the extinguisher if the fire is small."
+    "explanation": "The RACE sequence is Rescue, Alarm, Contain, Extinguish, so the client is moved out of danger first, then the alarm is pulled and the door closed. The extinguisher comes last and only for a small fire, because fighting the fire first leaves the client in danger."
   },
   {
     "domain": "nclexSafety",

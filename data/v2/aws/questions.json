@@ -1,0 +1,4298 @@
+[
+  {
+    "id": "AWS-T1-001",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "AWS CLI",
+    "stem": "A developer wants to manage AWS resources by running repeatable commands and shell scripts from a laptop terminal. Which tool should the developer use?",
+    "options": [
+      "AWS Command Line Interface (AWS CLI)",
+      "AWS Management Console",
+      "AWS Systems Manager Session Manager",
+      "Amazon CloudWatch"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The AWS CLI issues AWS API calls as terminal commands that can be scripted and repeated. The Management Console is a browser-based point-and-click interface, so it is not suited to scripting."
+  },
+  {
+    "id": "AWS-T1-002",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Shared responsibility",
+    "stem": "A company runs a web application on Amazon EC2 instances. Under the AWS shared responsibility model, which task is the company's responsibility?",
+    "options": [
+      "Maintaining the physical hosts in the data center",
+      "Patching the guest operating system",
+      "Patching the hypervisor that runs the instances",
+      "Replacing failed storage hardware in the Region"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "EC2 is infrastructure as a service, so the customer patches and secures the guest operating system and everything above it. The hypervisor, host hardware and facilities are security of the cloud, which AWS owns."
+  },
+  {
+    "id": "AWS-T1-003",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "cloudConcepts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Cloud benefits",
+    "stem": "A company wants to stop guessing how many servers it will need for a product launch next quarter. Which advantage of cloud computing does this describe?",
+    "options": [
+      "Go global in minutes",
+      "Stop guessing capacity",
+      "Benefit from massive economies of scale",
+      "Trade fixed expense for variable expense"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "In the cloud a company provisions what it needs and scales up or down with demand, so it no longer has to forecast capacity in advance. Economies of scale lower prices, but they do not remove the need to forecast server counts."
+  },
+  {
+    "id": "AWS-T1-004",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "billingPricing",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Reserved Instances",
+    "stem": "A company runs a database server on EC2 around the clock with a stable, predictable load for the next three years. It will not change instance families. Which purchasing option gives the lowest cost?",
+    "options": [
+      "3-year Standard Reserved Instances",
+      "On-Demand Instances",
+      "Spot Instances",
+      "1-year Convertible Reserved Instances"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A 3-year Standard Reserved Instance gives the deepest RI discount (up to 72%) for steady, predictable usage. Convertible RIs and shorter terms discount less, and Spot Instances can be interrupted, which a database cannot tolerate."
+  },
+  {
+    "id": "AWS-T1-005",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "AWS CloudFormation",
+    "stem": "A company wants to provision identical development, test and production environments repeatedly from version-controlled JSON or YAML templates. Which AWS service meets this need?",
+    "options": [
+      "AWS Config",
+      "AWS Systems Manager",
+      "AWS CloudFormation",
+      "AWS Trusted Advisor"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "CloudFormation is infrastructure as code: a template in JSON or YAML defines resources that are created the same way every time as a stack. AWS Config records and evaluates resource configurations but does not provision them."
+  },
+  {
+    "id": "AWS-T1-006",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Shared responsibility",
+    "stem": "A company moves its relational database to Amazon RDS. Which task remains the company's responsibility under the shared responsibility model?",
+    "options": [
+      "Patching the database engine software",
+      "Managing database user accounts and permissions",
+      "Maintaining the underlying host hardware",
+      "Applying operating system patches to the database host"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "On RDS, AWS patches the database engine and host operating system and maintains the hardware. The customer still controls who can access the database, including database users, IAM access and network rules."
+  },
+  {
+    "id": "AWS-T1-007",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "cloudConcepts",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Cloud benefits",
+    "stem": "A company wants to replace large upfront hardware purchases with monthly payments based only on what it actually uses. Which advantage of cloud computing applies?",
+    "options": [
+      "Increase speed and agility",
+      "Go global in minutes",
+      "Trade fixed expense for variable expense",
+      "Stop spending money running and maintaining data centers"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Paying only for consumed resources turns capital expenditure on hardware into variable operating expense. Stopping spending on data centers is a related advantage, but it describes freeing staff from facility work, not the CapEx-to-OpEx pricing shift."
+  },
+  {
+    "id": "AWS-T1-008",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "AWS CDK",
+    "stem": "Developers on a team prefer to define cloud infrastructure in familiar programming languages such as TypeScript and Python instead of templates. Which AWS offering supports this?",
+    "options": [
+      "AWS SDK for Python (Boto3)",
+      "AWS Cloud Development Kit",
+      "AWS Command Line Interface",
+      "AWS Elastic Beanstalk"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The CDK lets developers model infrastructure as code in general-purpose languages and synthesizes it into CloudFormation templates. An AWS SDK calls service APIs from application code but is not an infrastructure-as-code framework."
+  },
+  {
+    "id": "AWS-T1-009",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Shared responsibility",
+    "stem": "Which statement best summarizes the AWS shared responsibility model?",
+    "options": [
+      "AWS secures all customer data once any support plan is purchased",
+      "Customers secure hardware; AWS secures customer data",
+      "AWS and customers split every security control equally",
+      "AWS secures the cloud; customers secure what they put in it"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "AWS is responsible for security OF the cloud (infrastructure, hardware, facilities), while customers are responsible for security IN the cloud (data, identities, configuration). No support plan transfers data protection to AWS."
+  },
+  {
+    "id": "AWS-T1-010",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "cloudConcepts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Economies of scale",
+    "stem": "Why is AWS able to offer lower pay-as-you-go prices than most companies could achieve by running their own data centers?",
+    "options": [
+      "Aggregated usage from many customers creates economies of scale",
+      "Each customer receives dedicated physical hardware",
+      "Customers pay for reserved capacity instead of usage",
+      "Customers are responsible for maintaining the physical data center facilities"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Because AWS aggregates usage from hundreds of thousands of customers, it achieves higher economies of scale and passes the savings on as lower prices. Customers never maintain AWS facilities; physical security and maintenance are AWS's responsibility."
+  },
+  {
+    "id": "AWS-T1-011",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Elastic Beanstalk",
+    "stem": "A team wants to upload its Java web application code and let AWS automatically handle capacity provisioning, load balancing, scaling and health monitoring. Which service should the team use?",
+    "options": [
+      "Amazon EC2 with manually configured instances",
+      "AWS CloudFormation",
+      "Amazon Lightsail",
+      "AWS Elastic Beanstalk"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Elastic Beanstalk is a platform service: you upload code and it deploys and manages the underlying EC2, load balancing and Auto Scaling for you. CloudFormation can build the same resources but you must define and manage every one yourself."
+  },
+  {
+    "id": "AWS-T1-012",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Shared responsibility",
+    "stem": "A developer deploys application code to AWS Lambda. Which responsibility remains with the developer rather than with AWS?",
+    "options": [
+      "Patching the operating system that runs functions",
+      "Scaling the physical compute fleet behind Lambda",
+      "Maintaining the runtime hosts in each Availability Zone",
+      "Securing the function code and its IAM permissions"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "With Lambda, AWS manages the servers, operating system, runtime patching and scaling. The customer remains responsible for its own code, the data it handles and the IAM permissions granted to the function."
+  },
+  {
+    "id": "AWS-T1-013",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "billingPricing",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Reserved Instances",
+    "stem": "A company wants a Reserved Instance discount but expects to switch instance families and operating systems during the term. Which option should it purchase?",
+    "options": [
+      "Standard Reserved Instances",
+      "Convertible Reserved Instances",
+      "Spot Instances",
+      "On-Demand Capacity Reservations"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Convertible Reserved Instances can be exchanged for RIs with a different instance family, operating system or tenancy. Standard RIs offer a larger discount but cannot be exchanged for a different instance family."
+  },
+  {
+    "id": "AWS-T1-014",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Deployment models",
+    "stem": "Which statement best describes a hybrid cloud deployment model?",
+    "options": [
+      "All workloads running entirely in AWS Regions",
+      "On-premises infrastructure connected to resources running in AWS",
+      "All workloads running in a private on-premises data center",
+      "Workloads spread across multiple Availability Zones in one Region"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A hybrid deployment links existing on-premises infrastructure with cloud resources, often over VPN or Direct Connect. Running everything in AWS, even across several Availability Zones, is a cloud (cloud-native) deployment."
+  },
+  {
+    "id": "AWS-T1-015",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "cloudConcepts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Speed and agility",
+    "stem": "A company wants its developers to experiment with new ideas by launching test environments in minutes and discarding them cheaply. Which cloud benefit does this represent?",
+    "options": [
+      "High availability across Availability Zones",
+      "Economies of scale",
+      "Increased speed and agility",
+      "Fault tolerance"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Agility means resources are available in minutes, so the cost and time of experimenting drops sharply. High availability is about keeping workloads running during failures, not about how fast teams can try new ideas."
+  },
+  {
+    "id": "AWS-T1-016",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Shared responsibility",
+    "stem": "A company stores confidential documents in Amazon S3. Which security task is the company responsible for?",
+    "options": [
+      "Replicating objects across multiple devices for durability",
+      "Securing storage hardware inside AWS facilities",
+      "Configuring bucket policies and Block Public Access",
+      "Destroying disks that once held customer data"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Access control on buckets and objects is security in the cloud, so the customer configures bucket policies and Block Public Access. Durability, storage hardware and media destruction are handled by AWS."
+  },
+  {
+    "id": "AWS-T1-017",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "AWS Direct Connect",
+    "stem": "A financial firm needs a dedicated private network connection from its data center to AWS with consistent bandwidth that does not travel over the public internet. Which service should it use?",
+    "options": [
+      "AWS Site-to-Site VPN",
+      "Amazon CloudFront",
+      "AWS Global Accelerator",
+      "AWS Direct Connect"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Direct Connect provides a dedicated private link between a data center and AWS with more consistent performance than the internet. A Site-to-Site VPN is encrypted but still travels over the public internet."
+  },
+  {
+    "id": "AWS-T1-018",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "cloudConcepts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Elasticity",
+    "stem": "A company wants its ticketing website to add servers automatically during sudden demand spikes and remove them when demand drops. Which cloud concept is this?",
+    "options": [
+      "Elasticity",
+      "Fault tolerance",
+      "Durability",
+      "Disaster recovery"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Elasticity is the ability to acquire resources as demand rises and release them as it falls, typically with Amazon EC2 Auto Scaling. Fault tolerance keeps a system running when components fail, which is a different goal."
+  },
+  {
+    "id": "AWS-T1-019",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "Shared controls",
+    "select": 3,
+    "stem": "The AWS shared responsibility model lists some controls as shared, applied by AWS to its layer and by the customer to its own. Which controls are shared? (Choose three.)",
+    "options": [
+      "Patch management",
+      "Physical and environmental security",
+      "Configuration management",
+      "Awareness and training",
+      "Data center access logging",
+      "Disposal of storage media"
+    ],
+    "correct": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "AWS names patch management, configuration management, and awareness and training as shared controls: AWS handles its infrastructure and staff, and customers handle their own systems and people. Physical and environmental security is tempting because it protects every workload, but it is an inherited control that AWS alone provides, as are data center access logging and media disposal."
+  },
+  {
+    "id": "AWS-T1-020",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Site-to-Site VPN",
+    "stem": "A branch office needs an encrypted connection to its Amazon VPC that can be set up within hours using its existing internet link. Which option is most appropriate?",
+    "options": [
+      "AWS Site-to-Site VPN",
+      "AWS Direct Connect dedicated connection",
+      "VPC peering",
+      "Amazon Route 53"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A Site-to-Site VPN creates IPsec-encrypted tunnels over the existing internet connection and can be set up quickly at low cost. Direct Connect requires a physical circuit that typically takes weeks to provision."
+  },
+  {
+    "id": "AWS-T1-021",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "billingPricing",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Savings Plans",
+    "stem": "A company runs workloads on Amazon EC2, AWS Lambda and AWS Fargate and wants one flexible commitment that discounts all three. Which pricing model fits?",
+    "options": [
+      "EC2 Instance Savings Plans",
+      "Standard Reserved Instances",
+      "Compute Savings Plans",
+      "Dedicated Hosts"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Compute Savings Plans apply to EC2 in any family or Region, Lambda and Fargate in exchange for a 1- or 3-year hourly spend commitment. EC2 Instance Savings Plans give a bigger discount but cover only one instance family in one Region and do not cover Lambda or Fargate."
+  },
+  {
+    "id": "AWS-T1-022",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "AWS SDKs",
+    "stem": "A mobile app developer wants application code written in Java to read and write objects in Amazon S3 and items in DynamoDB directly. What should the developer use?",
+    "options": [
+      "The AWS Management Console",
+      "AWS CloudFormation templates",
+      "The AWS SDK for Java",
+      "The AWS Command Line Interface"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "AWS SDKs provide language-specific libraries that let application code call AWS APIs programmatically. The CLI also calls the APIs, but from a terminal rather than from inside the application's own code."
+  },
+  {
+    "id": "AWS-T1-023",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Shared controls",
+    "stem": "How does the AWS shared responsibility model handle security awareness and training?",
+    "options": [
+      "AWS trains every customer employee on security at no charge",
+      "AWS trains its employees; customers train their own employees",
+      "Customers must train AWS data center staff",
+      "Only AWS Partners may deliver security training"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Awareness and training is a shared control: each party applies it within its own scope, so AWS trains AWS staff and customers train their own people. AWS does not take over customer staff training."
+  },
+  {
+    "id": "AWS-T1-024",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "cloudConcepts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Global reach",
+    "stem": "A company wants to serve customers in Asia and Europe with low latency within days, without building any new data centers. Which cloud advantage is this?",
+    "options": [
+      "Stop guessing capacity",
+      "Go global in minutes",
+      "Trade fixed expense for variable expense",
+      "Benefit from massive economies of scale"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "AWS Regions around the world let a company deploy close to customers in a few clicks. Stop guessing capacity is about sizing infrastructure, not about geographic reach."
+  },
+  {
+    "id": "AWS-T1-025",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Choosing a Region",
+    "select": 3,
+    "stem": "A company is choosing the AWS Region for a new application. Which factors should it consider? (Choose three.)",
+    "options": [
+      "Data residency requirements",
+      "Number of IAM users in the account",
+      "Proximity to end users",
+      "AWS Support plan level",
+      "Services available in the Region",
+      "Number of edge locations worldwide"
+    ],
+    "correct": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "Region choice is driven by compliance and data residency, proximity to users for low latency, service availability and pricing. The number of edge locations is tempting because edge locations reduce latency, but the edge network is global and the same whichever Region is chosen, and IAM and Support plans apply to the whole account."
+  },
+  {
+    "id": "AWS-T1-026",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Shared responsibility",
+    "stem": "A company runs containers on Amazon ECS and is deciding between EC2 instances and AWS Fargate. How does choosing Fargate change its responsibilities?",
+    "options": [
+      "The company must now patch the host kernel",
+      "AWS becomes responsible for container image code",
+      "The company no longer needs IAM permissions",
+      "AWS manages and patches the underlying servers"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Fargate is serverless compute for containers, so AWS provisions, patches and scales the underlying hosts. The customer still owns its container images, application code and IAM configuration."
+  },
+  {
+    "id": "AWS-T1-027",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "cloudConcepts",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "Reliability pillar",
+    "select": 3,
+    "stem": "A team is reviewing its workload against the reliability pillar of the AWS Well-Architected Framework. Which design principles belong to this pillar? (Choose three.)",
+    "options": [
+      "Automatically recover from failure",
+      "Implement a strong identity foundation",
+      "Test recovery procedures",
+      "Use serverless architectures",
+      "Scale horizontally for availability",
+      "Analyze and attribute expenditure"
+    ],
+    "correct": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "Automatically recovering from failure, testing recovery procedures and scaling horizontally to increase aggregate availability are reliability design principles. Using serverless architectures sounds resilient, but it is a performance efficiency principle; a strong identity foundation belongs to security and attributing expenditure to cost optimization."
+  },
+  {
+    "id": "AWS-T1-028",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Availability Zones",
+    "stem": "A company's web application must remain available if a single data center fails. Which architecture provides this high availability at the lowest complexity?",
+    "options": [
+      "EC2 instances in multiple Availability Zones behind a load balancer",
+      "Larger EC2 instances in a single Availability Zone",
+      "One EC2 instance in a Local Zone",
+      "Content cached at multiple edge locations"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Each Availability Zone is one or more discrete data centers with independent power and networking, so spreading instances across AZs behind a load balancer survives a data center failure. A bigger instance in one AZ is still a single point of failure."
+  },
+  {
+    "id": "AWS-T1-029",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "billingPricing",
+    "difficulty": 1,
+    "format": "multi",
+    "skill": "Spot Instances",
+    "select": 2,
+    "stem": "A company wants to cut Amazon EC2 costs with Spot Instances. Which workloads are good candidates? (Choose two.)",
+    "options": [
+      "Image rendering batch jobs",
+      "Primary production database",
+      "Stateless CI build workers",
+      "Checkout service for a store",
+      "Long jobs that cannot checkpoint"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "Spot Instances can be reclaimed with a two-minute warning, so they suit flexible, interruption-tolerant work such as rendering batches and stateless build workers. A long job that cannot checkpoint looks like a cheap batch job, but one interruption throws away all of its progress, and databases and checkout services need steady capacity."
+  },
+  {
+    "id": "AWS-T1-030",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Shared responsibility",
+    "stem": "A company's security officer asks who protects the data center buildings that host the company's Amazon EC2 instances. What is the correct answer?",
+    "options": [
+      "The customer",
+      "AWS",
+      "The customer and AWS equally",
+      "The AWS Partner that resells the account"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Physical and environmental security of AWS facilities is entirely AWS's responsibility under the shared responsibility model. Customers never manage data center access, whatever service they use."
+  },
+  {
+    "id": "AWS-T1-031",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "cloudConcepts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Scalability",
+    "stem": "Which term describes a system's ability to handle a growing workload by adding resources, such as more instances or storage?",
+    "options": [
+      "Scalability",
+      "Durability",
+      "Fault tolerance",
+      "Data residency"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Scalability is the ability to grow to meet increased load, either by adding instances or by using larger ones. Durability refers to protecting stored data from loss, not to handling more workload."
+  },
+  {
+    "id": "AWS-T1-032",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Data residency",
+    "stem": "A healthcare provider is legally required to keep patient records stored within its own country. What should it consider first when designing its AWS deployment?",
+    "options": [
+      "Choosing an edge location inside that country",
+      "Enabling AWS Global Accelerator for the application",
+      "Spreading data across multiple Availability Zones",
+      "Choosing an AWS Region located in that country"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Data stored in a Region stays in that Region unless the customer moves it, so Region choice is how data residency is met. Edge locations cache content for delivery and are not where a company chooses to store its primary data."
+  },
+  {
+    "id": "AWS-T1-033",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Shared responsibility",
+    "select": 2,
+    "stem": "A company stores application data in Amazon DynamoDB. Under the shared responsibility model, which tasks does AWS handle? (Choose two.)",
+    "options": [
+      "Patching the database servers",
+      "Writing IAM policies for the tables",
+      "Replacing failed storage hardware",
+      "Classifying the data in the tables",
+      "Turning on point-in-time recovery"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "DynamoDB is fully managed, so AWS patches the underlying servers and replaces failed hardware. Point-in-time recovery is tempting because it is a DynamoDB backup feature, but the customer must choose to turn it on, just as it writes IAM policies and classifies its own data."
+  },
+  {
+    "id": "AWS-T1-034",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 1,
+    "format": "multi",
+    "skill": "Serverless compute",
+    "select": 2,
+    "stem": "A startup wants to run code without provisioning or managing servers. Which AWS compute services are serverless? (Choose two.)",
+    "options": [
+      "Amazon EC2",
+      "AWS Lambda",
+      "Amazon Lightsail",
+      "AWS Fargate",
+      "EC2 Dedicated Hosts"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "explanation": "Lambda runs functions and Fargate runs containers without any servers for the customer to provision, patch or scale. Lightsail is tempting because it is simple to use, but it still gives you a virtual server that you size and maintain."
+  },
+  {
+    "id": "AWS-T1-035",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "cloudConcepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cloud benefits",
+    "stem": "A company wants its IT staff to build customer features instead of racking servers and managing power and cooling. Which cloud advantage applies?",
+    "options": [
+      "Stop spending money running and maintaining data centers",
+      "Go global in minutes",
+      "Increase speed and agility",
+      "Stop guessing capacity"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "AWS handles the heavy lifting of racking, stacking, and powering servers, so staff can focus on customers. Speed and agility is related but describes how quickly resources can be provisioned, not removing facility work."
+  },
+  {
+    "id": "AWS-T1-036",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Data encryption",
+    "stem": "A company stores sensitive data on Amazon EBS volumes attached to EC2 instances. Who is responsible for enabling encryption of that data at rest?",
+    "options": [
+      "AWS, automatically for every workload",
+      "AWS Support, once a support plan exists",
+      "The customer",
+      "The AWS compliance team through AWS Artifact"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Protecting customer data, including choosing to encrypt EBS volumes with KMS keys, is the customer's responsibility. AWS provides the encryption feature, but the customer must enable and manage it."
+  },
+  {
+    "id": "AWS-T1-037",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "billingPricing",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Dedicated Hosts",
+    "stem": "A company must bring existing server-bound software licenses priced per physical core and socket to AWS. Which EC2 option provides that visibility?",
+    "options": [
+      "Dedicated Instances",
+      "Dedicated Hosts",
+      "Spot Instances",
+      "Convertible Reserved Instances"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Dedicated Hosts give a whole physical server with visibility into sockets and cores, which bring-your-own-license terms often require. Dedicated Instances also run on single-tenant hardware but give no control over or visibility into the underlying host."
+  },
+  {
+    "id": "AWS-T1-038",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Global Accelerator",
+    "stem": "An online gaming company runs a UDP-based application and wants fixed static IP addresses that route players over the AWS global network to the healthiest regional endpoint. Which service fits best?",
+    "options": [
+      "Amazon CloudFront",
+      "Network Load Balancer in one Region",
+      "AWS Transit Gateway",
+      "AWS Global Accelerator"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Global Accelerator provides two static anycast IP addresses and sends TCP or UDP traffic across the AWS backbone to the optimal healthy endpoint. CloudFront is designed for caching HTTP content, not for non-HTTP gaming traffic with static IPs."
+  },
+  {
+    "id": "AWS-T1-039",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "cloudConcepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Shared responsibility",
+    "stem": "A company moving to AWS wants to know which security benefit it gains automatically for the physical infrastructure. Which statement is correct?",
+    "options": [
+      "AWS patches the guest operating systems on all EC2 instances",
+      "AWS configures the customer's security group rules",
+      "AWS manages permissions for the customer's IAM users",
+      "AWS secures the data centers, hardware, and global network"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Under the shared responsibility model, AWS is responsible for security of the cloud: facilities, hardware, and network infrastructure. Patching the guest operating system on EC2 remains the customer's job."
+  },
+  {
+    "id": "AWS-T1-040",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Shared responsibility",
+    "stem": "Which responsibility belongs to AWS for every AWS service, regardless of whether it is infrastructure, container or managed?",
+    "options": [
+      "Configuring the security group rules for customer instances",
+      "Managing customer IAM user credentials",
+      "Protecting the infrastructure that runs the services",
+      "Encrypting customer application data"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "AWS always protects the global infrastructure: hardware, software, networking and facilities that run AWS services. Security groups, IAM credentials and data encryption choices remain customer tasks."
+  },
+  {
+    "id": "AWS-T1-041",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "AWS Wavelength",
+    "stem": "A telecommunications partner wants to deploy applications for 5G mobile devices with ultra-low latency by running compute inside carrier networks. Which AWS offering is designed for this?",
+    "options": [
+      "AWS Local Zones",
+      "AWS Wavelength",
+      "AWS Outposts",
+      "Amazon CloudFront"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Wavelength Zones embed AWS compute and storage within telecom providers' 5G networks so traffic does not leave the carrier network. Local Zones place AWS infrastructure near large cities but not inside carrier 5G networks."
+  },
+  {
+    "id": "AWS-T1-042",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "cloudConcepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pay-as-you-go pricing",
+    "stem": "A company runs a reporting workload only during the last three days of each month. Which cloud benefit lowers its cost most directly?",
+    "options": [
+      "Pay-as-you-go pricing for resources actually used",
+      "Global reach through hundreds of CloudFront edge locations",
+      "Eleven nines of durability in Amazon S3",
+      "Multi-AZ deployment for high availability"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "With pay-as-you-go pricing the company pays only while the reporting resources run and can shut them down for the rest of the month. Multi-AZ deployment improves availability but adds cost rather than removing it."
+  },
+  {
+    "id": "AWS-T1-043",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Shared responsibility",
+    "stem": "A company replaces self-managed MySQL on Amazon EC2 with Amazon RDS for MySQL. Which responsibility moves from the company to AWS?",
+    "options": [
+      "Controlling which users can query the data",
+      "Installing database engine and OS patches",
+      "Encrypting sensitive columns in the application",
+      "Restricting network access to the database port"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Moving to RDS hands database engine and operating system patching to AWS. User access, application-level encryption and security group rules stay with the customer."
+  },
+  {
+    "id": "AWS-T1-044",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "AWS Outposts",
+    "stem": "A manufacturer must run AWS services inside its own factory data center for low-latency access to local systems, using the same AWS APIs and tools. Which service should it choose?",
+    "options": [
+      "AWS Local Zones",
+      "AWS Wavelength",
+      "AWS Outposts",
+      "AWS Storage Gateway"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Outposts delivers AWS-managed racks or servers into the customer's own facility, running AWS services with the same APIs. Local Zones are AWS-operated sites near population centers, not hardware installed on the customer's premises."
+  },
+  {
+    "id": "AWS-T1-045",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "billingPricing",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Capacity Reservations",
+    "stem": "A retailer needs guaranteed EC2 capacity in one Availability Zone for a two-week sales event and wants no long-term commitment. Which option should it use?",
+    "options": [
+      "Compute Savings Plans",
+      "Spot Instances",
+      "On-Demand Capacity Reservations",
+      "Dedicated Instances"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "On-Demand Capacity Reservations reserve capacity in a specific Availability Zone for any duration and can be cancelled at any time. Savings Plans lower the price but do not reserve capacity, and they require a 1- or 3-year commitment."
+  },
+  {
+    "id": "AWS-T1-046",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "AWS Local Zones",
+    "stem": "A film studio in a large city far from the nearest AWS Region needs single-digit millisecond latency for rendering workstations without installing hardware on site. Which option should it use?",
+    "options": [
+      "AWS Local Zones",
+      "AWS Outposts",
+      "Amazon CloudFront edge locations",
+      "AWS Wavelength"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Local Zones extend a Region with AWS-operated compute and storage close to large metropolitan areas for very low latency. Outposts would also give low latency, but it requires installing AWS hardware in the studio's own facility."
+  },
+  {
+    "id": "AWS-T1-047",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Security groups",
+    "stem": "A company hosts an application on Amazon EC2. Who is responsible for configuring the security group rules that control inbound traffic to the instances?",
+    "options": [
+      "The company",
+      "AWS",
+      "AWS Support, upon request",
+      "AWS Managed Services, for every account"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Network and firewall configuration, including security group rules, is security in the cloud and belongs to the customer. AWS provides the feature but does not decide which traffic a workload should allow."
+  },
+  {
+    "id": "AWS-T1-048",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "cloudConcepts",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Availability Zones",
+    "select": 2,
+    "stem": "Which statements correctly describe AWS Availability Zones? (Choose two.)",
+    "options": [
+      "One or more discrete data centers",
+      "Each located in a different country",
+      "Linked by low-latency networking",
+      "Sites that cache CloudFront content",
+      "Share one power source per Region"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "An Availability Zone is one or more discrete data centers with redundant power and networking, and the AZs in a Region are connected by low-latency, high-bandwidth links. Caching CloudFront content is tempting because it also improves performance, but that is the job of edge locations; the AZs of a Region sit in the same geographic area, not in different countries."
+  },
+  {
+    "id": "AWS-T1-049",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Spot Instances",
+    "stem": "A company runs nightly image-processing jobs that can be stopped and restarted at any time without harm. Which EC2 purchasing option is most cost-effective?",
+    "options": [
+      "On-Demand Instances",
+      "Spot Instances",
+      "Standard Reserved Instances",
+      "Dedicated Hosts"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Spot Instances use spare EC2 capacity at up to 90% off and suit interruption-tolerant workloads. On-Demand works but costs far more for jobs that can tolerate being interrupted."
+  },
+  {
+    "id": "AWS-T1-050",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Encryption in transit",
+    "stem": "A company must make sure data sent from users' browsers to its application on AWS is encrypted. Who is responsible for configuring that encryption in transit?",
+    "options": [
+      "AWS, which encrypts all traffic automatically",
+      "AWS Shield, which encrypts web requests",
+      "The customer, for example by enforcing TLS",
+      "The edge location operators in each Region"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Network traffic protection for a customer's application is the customer's responsibility, typically by using HTTPS with TLS certificates. AWS Shield protects against DDoS attacks and does not encrypt traffic."
+  },
+  {
+    "id": "AWS-T1-051",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "cloudConcepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Operational excellence",
+    "stem": "A company wants to run and monitor systems, make frequent small reversible changes, and learn from operational failures. Which Well-Architected pillar is this?",
+    "options": [
+      "Performance efficiency",
+      "Operational excellence",
+      "Reliability",
+      "Cost optimization"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Operational excellence covers running and monitoring systems, performing operations as code, and making frequent, small, reversible changes. Reliability focuses on recovering from failures and meeting demand, not on improving operational procedures."
+  },
+  {
+    "id": "AWS-T1-052",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "EC2 instance types",
+    "select": 2,
+    "stem": "Which workloads are best suited to Amazon EC2 compute optimized instances? (Choose two.)",
+    "options": [
+      "High performance web servers",
+      "In-memory databases",
+      "Dedicated gaming servers",
+      "Machine learning training on GPUs",
+      "Data warehouses on local disks"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "Compute optimized instances have a high ratio of CPU to memory for compute-bound work such as high performance web servers, dedicated gaming servers, batch processing and media transcoding. GPU model training sounds compute heavy, but it runs on accelerated computing instances; in-memory databases suit memory optimized and local-disk warehouses storage optimized instances."
+  },
+  {
+    "id": "AWS-T1-053",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "billingPricing",
+    "difficulty": 1,
+    "format": "multi",
+    "skill": "EC2 pricing factors",
+    "select": 2,
+    "stem": "A company is estimating the hourly price of an On-Demand Amazon EC2 instance. Which factors change that price? (Choose two.)",
+    "options": [
+      "The instance type and size",
+      "The number of IAM users",
+      "The AWS Region",
+      "The AWS Support plan",
+      "The number of security groups"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "On-Demand EC2 prices depend on the instance type and size, the Region and the operating system. The Support plan is tempting because it is also an AWS charge, but it is billed separately and does not change an instance's hourly rate."
+  },
+  {
+    "id": "AWS-T1-054",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Shared responsibility",
+    "stem": "A startup wants to minimize the infrastructure it must secure, patch and manage. Which compute option shifts the most responsibility to AWS?",
+    "options": [
+      "AWS Lambda",
+      "Amazon EC2 instances",
+      "Amazon EC2 Dedicated Hosts",
+      "AWS Outposts racks"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "With Lambda, AWS manages servers, operating systems, runtimes and scaling, leaving the customer mainly its code and permissions. EC2 instances, Dedicated Hosts and Outposts all leave the guest operating system to the customer."
+  },
+  {
+    "id": "AWS-T1-055",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "EC2 instance types",
+    "stem": "An analytics application processes very large datasets entirely in RAM and needs a high ratio of memory to vCPU. Which EC2 instance family should be chosen?",
+    "options": [
+      "Memory optimized",
+      "Compute optimized",
+      "Storage optimized",
+      "Accelerated computing"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Memory optimized instances are built for workloads that process large datasets in memory, such as in-memory databases and analytics. Compute optimized instances favor high CPU performance relative to memory."
+  },
+  {
+    "id": "AWS-T1-056",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "cloudConcepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Security pillar",
+    "stem": "Which Well-Architected pillar includes the design principles of implementing a strong identity foundation and enabling traceability?",
+    "options": [
+      "Reliability",
+      "Operational excellence",
+      "Security",
+      "Sustainability"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A strong identity foundation, traceability, and applying security at all layers are design principles of the security pillar. Operational excellence includes observability, but identity and traceability for protection belong to security."
+  },
+  {
+    "id": "AWS-T1-057",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "AWS Artifact",
+    "stem": "A company's external auditors request a copy of the AWS SOC 2 report. Which AWS service should the company use to download it?",
+    "options": [
+      "AWS Audit Manager",
+      "AWS Config",
+      "AWS Artifact",
+      "AWS Security Hub"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "AWS Artifact is the self-service portal for AWS compliance reports such as SOC, PCI and ISO, plus agreements like the BAA. Audit Manager collects evidence about the customer's own usage, not AWS's reports."
+  },
+  {
+    "id": "AWS-T1-058",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "EC2 Auto Scaling",
+    "stem": "Traffic to a news website spikes unpredictably during breaking stories. Which service automatically adds EC2 instances during spikes and removes them when demand drops?",
+    "options": [
+      "Elastic Load Balancing",
+      "Amazon CloudWatch",
+      "Amazon EC2 Auto Scaling",
+      "AWS Compute Optimizer recommendations"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "EC2 Auto Scaling launches and terminates instances to match demand, which provides elasticity. CloudWatch supplies the metrics and alarms that can trigger scaling, but it does not launch instances by itself."
+  },
+  {
+    "id": "AWS-T1-059",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "cloudConcepts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Reliability pillar",
+    "stem": "A company wants its workload to recover automatically from infrastructure failures and to perform its intended function consistently. Which pillar addresses this?",
+    "options": [
+      "Reliability",
+      "Performance efficiency",
+      "Security",
+      "Sustainability"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The reliability pillar covers automatically recovering from failure, testing recovery procedures, and scaling horizontally. Performance efficiency is about using resources efficiently, not about recovering from failures."
+  },
+  {
+    "id": "AWS-T1-060",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "AWS Audit Manager",
+    "stem": "A company wants to continuously and automatically collect evidence from its own AWS usage to prepare for a PCI DSS audit. Which service should it use?",
+    "options": [
+      "AWS Audit Manager",
+      "AWS Artifact",
+      "Amazon Inspector",
+      "AWS Trusted Advisor"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Audit Manager maps a customer's AWS usage to frameworks like PCI DSS and gathers audit-ready evidence automatically. Artifact only provides AWS's own compliance reports and agreements."
+  },
+  {
+    "id": "AWS-T1-061",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Load balancers",
+    "stem": "A company runs several microservices and needs to route HTTPS requests to different targets based on the URL path, such as /api or /images. Which load balancer type should it use?",
+    "options": [
+      "Network Load Balancer",
+      "Gateway Load Balancer",
+      "Amazon Route 53 weighted routing",
+      "Application Load Balancer"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An Application Load Balancer works at layer 7 and supports path-based and host-based routing for HTTP and HTTPS. A Network Load Balancer works at layer 4 and cannot inspect URL paths."
+  },
+  {
+    "id": "AWS-T1-062",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "billingPricing",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Data transfer costs",
+    "stem": "A company is estimating the network charges for a new web application. Which type of data transfer is generally free of charge?",
+    "options": [
+      "Data transferred into AWS from the internet",
+      "Data transferred out of AWS to the internet",
+      "Data transferred between two AWS Regions",
+      "Data transferred between Availability Zones"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Inbound data transfer from the internet is generally not charged. Outbound transfer to the internet, cross-Region transfer and most cross-AZ transfer are billed per GB."
+  },
+  {
+    "id": "AWS-T1-063",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "cloudConcepts",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Performance efficiency",
+    "stem": "A company wants to select the most suitable resource types, adopt serverless architectures, and experiment more often as requirements change. Which pillar applies?",
+    "options": [
+      "Cost optimization",
+      "Reliability",
+      "Performance efficiency",
+      "Operational excellence"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Performance efficiency focuses on using computing resources efficiently, including serverless architectures, democratizing advanced technologies, and experimenting more often. Cost optimization also involves choosing resources, but its goal is the lowest price rather than meeting performance requirements."
+  },
+  {
+    "id": "AWS-T1-064",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "AWS CloudTrail",
+    "stem": "A security team must find out which IAM user deleted an Amazon S3 bucket last week. Which AWS service records this information?",
+    "options": [
+      "Amazon CloudWatch",
+      "AWS Config",
+      "Amazon GuardDuty",
+      "AWS CloudTrail"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "CloudTrail records API calls, including who made the call, from where and when, so it answers who deleted the bucket. CloudWatch tracks metrics and logs for performance, not an audit of API activity."
+  },
+  {
+    "id": "AWS-T1-065",
+    "section": "aws",
+    "test": 1,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "AWS Lambda",
+    "stem": "A photo-sharing app must create a thumbnail whenever a user uploads an image to Amazon S3, without the team managing any servers. Which service should run the thumbnail code?",
+    "options": [
+      "Amazon EC2",
+      "AWS Batch",
+      "AWS Lambda",
+      "AWS Elastic Beanstalk"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Lambda runs code in response to events such as S3 uploads, scales automatically and bills only for execution time. EC2 could run the code but would require the team to provision and manage servers."
+  },
+  {
+    "id": "AWS-T2-001",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "AWS Fargate",
+    "stem": "A company wants to run Docker containers on Amazon ECS without provisioning, patching or scaling the underlying EC2 instances. Which option should it use?",
+    "options": [
+      "AWS Fargate",
+      "Amazon ECS with the EC2 launch type",
+      "Amazon EC2 Auto Scaling",
+      "Amazon Lightsail"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Fargate is a serverless compute engine for containers that removes the need to manage servers or clusters of instances. The ECS EC2 launch type still leaves the customer responsible for the EC2 instances in the cluster."
+  },
+  {
+    "id": "AWS-T2-002",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "AWS Config",
+    "stem": "A company needs to track configuration changes to its resources over time and flag security groups that allow unrestricted SSH access. Which service should it use?",
+    "options": [
+      "AWS Config",
+      "AWS CloudTrail",
+      "Amazon Inspector",
+      "AWS Shield"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "AWS Config records resource configuration history and evaluates it against rules, such as restricted SSH, to report compliance. CloudTrail logs the API calls but does not evaluate resource configurations against rules."
+  },
+  {
+    "id": "AWS-T2-003",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "cloudConcepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cost optimization pillar",
+    "stem": "A company wants to stop paying for idle resources, adopt a consumption model, and attribute spending to teams. Which Well-Architected pillar is this?",
+    "options": [
+      "Performance efficiency",
+      "Sustainability",
+      "Operational excellence",
+      "Cost optimization"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Cost optimization principles include adopting a consumption model, measuring overall efficiency, and analyzing and attributing expenditure. Sustainability also reduces waste, but its goal is environmental impact rather than spending."
+  },
+  {
+    "id": "AWS-T2-004",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "billingPricing",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "S3 storage classes",
+    "stem": "A law firm must keep scanned case files for ten years. The files are almost never read, and retrieval within 12 hours is acceptable. Which S3 storage class costs least?",
+    "options": [
+      "S3 Glacier Instant Retrieval",
+      "S3 Standard-Infrequent Access",
+      "S3 Glacier Deep Archive",
+      "S3 Intelligent-Tiering"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "S3 Glacier Deep Archive has the lowest storage price, with standard retrievals completed within 12 hours. Glacier Instant Retrieval returns data in milliseconds but stores it at a higher per-GB price than needed here."
+  },
+  {
+    "id": "AWS-T2-005",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Amazon EKS",
+    "stem": "An organization already runs its containerized applications on Kubernetes on premises and wants AWS to manage the Kubernetes control plane in the cloud. Which service should it adopt?",
+    "options": [
+      "Amazon Elastic Container Service (Amazon ECS)",
+      "Amazon Elastic Kubernetes Service (Amazon EKS)",
+      "AWS Elastic Beanstalk",
+      "AWS Batch"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "EKS is a managed Kubernetes service that runs the control plane for you and is compatible with standard Kubernetes tooling. ECS is an AWS-native container orchestrator and does not run Kubernetes."
+  },
+  {
+    "id": "AWS-T2-006",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "Auditing and compliance",
+    "select": 2,
+    "stem": "A security team must find out which user changed a security group yesterday and whether the group's settings now break a company rule. Which services provide this information? (Choose two.)",
+    "options": [
+      "AWS CloudTrail",
+      "Amazon Inspector",
+      "AWS Config",
+      "AWS Artifact",
+      "Amazon Macie"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "CloudTrail records the API call, including who made the change and when, and AWS Config records the security group's configuration history and evaluates it against rules. Inspector is tempting because it is a security service, but it scans workloads for software vulnerabilities rather than tracking configuration changes."
+  },
+  {
+    "id": "AWS-T2-007",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "cloudConcepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sustainability pillar",
+    "stem": "A company wants to minimize the environmental impact of its workloads by maximizing utilization and reducing energy consumption. Which pillar addresses this?",
+    "options": [
+      "Cost optimization",
+      "Sustainability",
+      "Performance efficiency",
+      "Reliability"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The sustainability pillar, added in 2021, focuses on reducing environmental impact through higher utilization and more efficient hardware and software. Cost optimization often lowers usage too, but it targets spending rather than energy and emissions."
+  },
+  {
+    "id": "AWS-T2-008",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Amazon Lightsail",
+    "stem": "A small bakery with little cloud experience wants to launch a WordPress website on a simple virtual private server for a low, predictable monthly price. Which service is the best fit?",
+    "options": [
+      "Amazon EC2 Reserved Instances",
+      "Amazon Lightsail",
+      "AWS Fargate",
+      "Amazon Elastic Kubernetes Service"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Lightsail bundles a virtual server, storage, and data transfer into simple fixed monthly plans with preconfigured apps such as WordPress. EC2 offers more flexibility but requires more setup and has less predictable pricing for beginners."
+  },
+  {
+    "id": "AWS-T2-009",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "AWS KMS",
+    "stem": "A company wants a managed service to create and control encryption keys that integrates natively with Amazon S3 and Amazon EBS. Which service should it use?",
+    "options": [
+      "AWS CloudHSM",
+      "AWS KMS",
+      "AWS Secrets Manager",
+      "AWS Certificate Manager"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "AWS KMS creates and manages encryption keys, integrates with S3, EBS and most other services, and logs key use in CloudTrail. CloudHSM provides dedicated hardware but requires more management and is chosen for single-tenant requirements."
+  },
+  {
+    "id": "AWS-T2-010",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "cloudConcepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Design for failure",
+    "stem": "A company wants its architecture to assume that any component can fail at any time and to keep the application running anyway. Which design principle is this?",
+    "options": [
+      "Design for failure",
+      "Scale vertically",
+      "Use tightly coupled components",
+      "Right-size every instance"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Designing for failure means building redundancy and automatic recovery so that no single component failure stops the application. Tightly coupled components do the opposite, because one failure cascades to the others."
+  },
+  {
+    "id": "AWS-T2-011",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "AWS Batch",
+    "stem": "A research lab needs to run hundreds of thousands of computing jobs, with AWS queueing the jobs and provisioning the right amount of compute for each. Which service should it use?",
+    "options": [
+      "AWS Lambda",
+      "Amazon Lightsail",
+      "AWS Batch",
+      "Amazon EC2 Auto Scaling"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "AWS Batch manages job queues and dynamically provisions the optimal compute resources for large numbers of batch jobs. Lambda suits short event-driven functions and has a 15-minute maximum run time per invocation."
+  },
+  {
+    "id": "AWS-T2-012",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "AWS CloudHSM",
+    "stem": "Regulations require a company to store its encryption keys in dedicated single-tenant hardware security modules that it exclusively controls. Which service meets this requirement?",
+    "options": [
+      "AWS KMS with AWS managed keys",
+      "AWS Secrets Manager",
+      "AWS Certificate Manager",
+      "AWS CloudHSM"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "CloudHSM provides dedicated, single-tenant FIPS-validated hardware security modules under the customer's exclusive control. AWS KMS uses HSMs too, but they are multi-tenant and managed by AWS."
+  },
+  {
+    "id": "AWS-T2-013",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "billingPricing",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "S3 storage classes",
+    "stem": "An analytics team stores data with unpredictable, changing access patterns and wants storage costs optimized automatically without paying retrieval fees. Which S3 storage class should it choose?",
+    "options": [
+      "S3 Standard-Infrequent Access",
+      "S3 One Zone-Infrequent Access",
+      "S3 Glacier Flexible Retrieval",
+      "S3 Intelligent-Tiering"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "S3 Intelligent-Tiering moves objects between access tiers based on use for a small monitoring fee and charges no retrieval fees. Standard-IA and One Zone-IA charge a per-GB retrieval fee, which adds up when access is unpredictable."
+  },
+  {
+    "id": "AWS-T2-014",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Serverless compute",
+    "stem": "Which is a characteristic of serverless compute such as AWS Lambda compared with virtual machines on Amazon EC2?",
+    "options": [
+      "No servers to manage, and you pay only for compute used",
+      "You choose, install and patch the guest operating system",
+      "You pay hourly for instances even when they sit idle",
+      "You must size and manage the cluster's worker nodes"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "With serverless compute AWS manages the servers and operating system, and billing is based on requests and execution time. Choosing and patching the operating system is a customer task on EC2 virtual machines, not on Lambda."
+  },
+  {
+    "id": "AWS-T2-015",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "cloudConcepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Loose coupling",
+    "stem": "A company wants its order service to keep accepting orders even when the downstream fulfillment service is temporarily unavailable. Which approach supports this?",
+    "options": [
+      "Run both services on one large EC2 instance",
+      "Connect the services with synchronous API calls",
+      "Decouple the services with an Amazon SQS queue",
+      "Place both services in the same Availability Zone"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An SQS queue buffers orders so the producer keeps working while the consumer is down, and the consumer processes the backlog when it recovers. Synchronous API calls create tight coupling, so a failed fulfillment service would block order intake."
+  },
+  {
+    "id": "AWS-T2-016",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Secrets Manager",
+    "stem": "An application has database passwords hard-coded in its source files. The company wants to store them centrally and rotate them automatically. Which service should it use?",
+    "options": [
+      "AWS KMS",
+      "AWS Certificate Manager",
+      "Amazon Cognito",
+      "AWS Secrets Manager"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Secrets Manager stores credentials securely, lets applications retrieve them at runtime and rotates them automatically. KMS manages encryption keys, not application secrets with rotation."
+  },
+  {
+    "id": "AWS-T2-017",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Amazon EC2",
+    "stem": "A company is migrating a legacy application that needs full administrative control of the operating system and custom kernel-level software. Which compute service should it use?",
+    "options": [
+      "AWS Lambda",
+      "AWS Fargate",
+      "AWS App Runner",
+      "Amazon EC2"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "EC2 provides virtual machines where the customer has full control over the operating system and installed software. Lambda, Fargate, and App Runner abstract the operating system away, so custom kernel-level software cannot be installed."
+  },
+  {
+    "id": "AWS-T2-018",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "cloudConcepts",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Loose coupling",
+    "select": 2,
+    "stem": "A company is redesigning a tightly coupled application. Which practices make its components more loosely coupled? (Choose two.)",
+    "options": [
+      "Put a message queue between components",
+      "Deploy all components together",
+      "Have components share one database schema",
+      "Communicate through well-defined APIs",
+      "Make every call synchronous and blocking"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "explanation": "A queue such as Amazon SQS buffers work between components, and well-defined APIs hide each component's internals, so one can change or fail without breaking the others. A shared database schema may look efficient, but it ties every component to the same data structure, which is tight coupling."
+  },
+  {
+    "id": "AWS-T2-019",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Certificate Manager",
+    "stem": "A company needs public SSL/TLS certificates for its Application Load Balancer that are provisioned at no extra cost and renewed automatically. Which service should it use?",
+    "options": [
+      "AWS Key Management Service (AWS KMS)",
+      "AWS CloudHSM",
+      "AWS Secrets Manager",
+      "AWS Certificate Manager (ACM)"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "ACM issues public TLS certificates for integrated services such as ELB and CloudFront at no additional cost and renews them automatically. KMS manages encryption keys, not certificates."
+  },
+  {
+    "id": "AWS-T2-020",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Amazon RDS",
+    "stem": "A company runs MySQL on self-managed EC2 instances and wants AWS to handle patching, automated backups and Multi-AZ failover while keeping its relational schema. Which service should it move to?",
+    "options": [
+      "Amazon RDS for MySQL",
+      "Amazon DynamoDB",
+      "Amazon Redshift",
+      "MySQL on larger Amazon EC2 instances"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Amazon RDS is a managed relational database service that automates patching, backups, and Multi-AZ failover. Staying on EC2 keeps the database self-hosted, so the company would still manage those tasks itself."
+  },
+  {
+    "id": "AWS-T2-021",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "billingPricing",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Billing Conductor",
+    "stem": "An AWS Partner that resells AWS wants to group customer accounts, apply its own pricing rates and produce pro forma bills for each group. Which service should it use?",
+    "options": [
+      "AWS Billing Conductor",
+      "AWS Cost Explorer",
+      "AWS Budgets",
+      "AWS Pricing Calculator"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "AWS Billing Conductor lets you group accounts, define custom pricing rules and generate pro forma billing data for showback or chargeback. Cost Explorer only analyzes the actual AWS charges and cannot apply custom rates."
+  },
+  {
+    "id": "AWS-T2-022",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Amazon DynamoDB",
+    "stem": "A gaming company needs a serverless NoSQL key-value database that delivers single-digit millisecond performance at any scale for player profiles. Which service should it choose?",
+    "options": [
+      "Amazon RDS for PostgreSQL",
+      "Amazon Neptune",
+      "Amazon DynamoDB",
+      "Amazon Redshift"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "DynamoDB is a fully managed, serverless key-value and document database with consistent single-digit millisecond latency at any scale. RDS for PostgreSQL is relational and requires choosing and sizing database instances."
+  },
+  {
+    "id": "AWS-T2-023",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Data residency",
+    "stem": "Data residency laws require a company to keep customer data inside the European Union. How can the company control where its data is stored on AWS?",
+    "options": [
+      "Deploy resources only in EU Regions",
+      "Enable AWS Shield Advanced on all accounts",
+      "Ask AWS Support to place the data",
+      "Store data in EU edge locations"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Customers choose the Region where content is stored, and AWS does not move it out of that Region without customer action. Edge locations cache content for delivery and are not a data residency control."
+  },
+  {
+    "id": "AWS-T2-024",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "cloudConcepts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Horizontal scaling",
+    "stem": "A company wants to handle increasing web traffic by adding more EC2 instances behind an Elastic Load Balancer. What type of scaling is this?",
+    "options": [
+      "Vertical scaling",
+      "Right-sizing",
+      "Capacity reservation",
+      "Horizontal scaling"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Adding more instances is horizontal scaling (scaling out), which also removes single points of failure. Vertical scaling means moving to a larger instance, which has size limits and keeps one point of failure."
+  },
+  {
+    "id": "AWS-T2-025",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Amazon Neptune",
+    "stem": "A social network wants to store users and the relationships between them to power friend-of-friend recommendations. Which database service is purpose-built for this?",
+    "options": [
+      "Amazon DocumentDB",
+      "Amazon Neptune",
+      "Amazon Redshift",
+      "Amazon ElastiCache"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Neptune is a managed graph database designed to store and query highly connected data such as social relationships. DocumentDB is a MongoDB-compatible document database and is not optimized for traversing relationships."
+  },
+  {
+    "id": "AWS-T2-026",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Encryption at rest",
+    "select": 3,
+    "stem": "A company must show auditors how it protects stored data. Which measures protect data at rest? (Choose three.)",
+    "options": [
+      "Default encryption on an S3 bucket",
+      "Enforcing HTTPS with TLS",
+      "Encrypting an EBS volume with KMS",
+      "Connecting through a Site-to-Site VPN",
+      "Encrypting RDS database storage",
+      "Restricting ports in a security group"
+    ],
+    "correct": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "S3 default encryption, KMS-encrypted EBS volumes and encrypted RDS storage all protect data where it is stored. TLS and a VPN tunnel are tempting because they encrypt, but they protect data in transit, and a security group filters traffic without encrypting anything."
+  },
+  {
+    "id": "AWS-T2-027",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "cloudConcepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Infrastructure as code",
+    "stem": "A company wants to create identical, repeatable environments from templates instead of configuring resources manually in the console. Which AWS service supports this?",
+    "options": [
+      "AWS Config",
+      "AWS CloudFormation",
+      "Amazon CloudWatch",
+      "AWS Trusted Advisor"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "CloudFormation provisions resources from infrastructure-as-code templates, supporting the design principle of performing operations as code. AWS Config records and evaluates resource configurations, but it does not build environments."
+  },
+  {
+    "id": "AWS-T2-028",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Amazon Redshift",
+    "stem": "Business analysts need to run complex SQL queries across petabytes of historical sales data for reporting and business intelligence. Which AWS service should the company use?",
+    "options": [
+      "Amazon RDS for MySQL",
+      "Amazon DynamoDB",
+      "Amazon ElastiCache",
+      "Amazon Redshift"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Redshift is a columnar data warehouse built for analytical SQL queries over very large datasets. RDS is designed for transactional (OLTP) workloads and is not optimized for petabyte-scale analytics."
+  },
+  {
+    "id": "AWS-T2-029",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "billingPricing",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "AWS Budgets",
+    "stem": "A team wants an email alert when its forecasted monthly AWS spending is expected to exceed \\$5,000. Which service meets this requirement?",
+    "options": [
+      "AWS Cost Explorer",
+      "AWS Budgets",
+      "AWS Trusted Advisor",
+      "AWS Cost and Usage Report"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "AWS Budgets sends alerts when actual or forecasted cost or usage exceeds a threshold you set. Cost Explorer can show forecasts but does not send alerts, and a CloudWatch billing alarm watches only actual estimated charges."
+  },
+  {
+    "id": "AWS-T2-030",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Amazon Macie",
+    "stem": "A company wants to automatically discover sensitive data, such as credit card numbers and personal information, stored in its Amazon S3 buckets. Which service should it use?",
+    "options": [
+      "Amazon GuardDuty",
+      "Amazon Macie",
+      "Amazon Inspector",
+      "AWS Shield"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Macie uses machine learning and pattern matching to find and report sensitive data such as PII in S3. GuardDuty detects threats from log analysis but does not classify data content."
+  },
+  {
+    "id": "AWS-T2-031",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "cloudConcepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Managed services",
+    "stem": "A company wants to reduce time spent on database patching, backups, and hardware provisioning. Which approach best follows AWS design principles?",
+    "options": [
+      "Install the database software on Amazon EC2 instances",
+      "Keep the database on on-premises servers",
+      "Use a managed database service such as Amazon RDS",
+      "Attach larger EBS volumes to the database server"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Managed services such as Amazon RDS handle patching, backups, and hardware so teams can focus on applications. Running the database on EC2 leaves operating system and database maintenance with the customer."
+  },
+  {
+    "id": "AWS-T2-032",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Amazon ElastiCache",
+    "stem": "An application's relational database is overloaded by repeated identical read queries. The company wants to keep frequently accessed results in memory for microsecond responses. Which service should it add?",
+    "options": [
+      "Amazon ElastiCache",
+      "Amazon Redshift",
+      "Amazon DocumentDB",
+      "Amazon CloudFront"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "ElastiCache provides managed in-memory caching with Redis OSS, Valkey, or Memcached, which offloads repeated reads from the database. CloudFront caches web content at edge locations, not database query results inside the application tier."
+  },
+  {
+    "id": "AWS-T2-033",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Amazon GuardDuty",
+    "stem": "A company wants intelligent threat detection that analyzes CloudTrail events, VPC Flow Logs and DNS logs to find activity such as cryptocurrency mining. Which service fits?",
+    "options": [
+      "Amazon Macie",
+      "Amazon Detective",
+      "Amazon GuardDuty",
+      "AWS Config conformance packs"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "GuardDuty continuously analyzes CloudTrail, VPC Flow Logs and DNS logs to detect malicious or unauthorized behavior. Detective helps investigate findings after they occur rather than detecting threats itself."
+  },
+  {
+    "id": "AWS-T2-034",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Database migration",
+    "stem": "A company wants to migrate an on-premises Oracle database to Amazon Aurora PostgreSQL with minimal downtime, including converting the schema. Which AWS tools should it use?",
+    "options": [
+      "AWS DataSync with AWS Snowball Edge",
+      "AWS DMS with the AWS Schema Conversion Tool",
+      "AWS Application Migration Service",
+      "AWS Storage Gateway with AWS Backup"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Schema Conversion Tool converts the Oracle schema to PostgreSQL, and DMS replicates the data with continuous replication to minimize downtime. Application Migration Service rehosts whole servers and does not convert a database engine."
+  },
+  {
+    "id": "AWS-T2-035",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "cloudConcepts",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Stateless design",
+    "stem": "A company wants any web server to be replaceable at any time without losing user session data. Which design practice supports this?",
+    "options": [
+      "Keep session data on the local disk of each instance",
+      "Store session state externally in Amazon DynamoDB",
+      "Assign an Elastic IP address to every server",
+      "Increase the size of each web server"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Keeping servers stateless, with session data in a shared store such as DynamoDB or ElastiCache, lets any instance be terminated or replaced. Data on a local disk is lost when the instance is replaced."
+  },
+  {
+    "id": "AWS-T2-036",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Amazon Inspector",
+    "stem": "A company wants automated, continual scanning of its EC2 instances, container images and Lambda functions for software vulnerabilities. Which service should it use?",
+    "options": [
+      "Amazon GuardDuty",
+      "Amazon Inspector",
+      "AWS Trusted Advisor",
+      "Amazon Macie"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Inspector scans EC2, ECR container images and Lambda functions for known software vulnerabilities (CVEs) and unintended network exposure. GuardDuty detects active threats from logs, not software vulnerabilities."
+  },
+  {
+    "id": "AWS-T2-037",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "billingPricing",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Cost Explorer",
+    "stem": "A finance analyst wants to view charts of the last 12 months of spending by service and see a forecast for the coming months. Which tool should the analyst use?",
+    "options": [
+      "AWS Pricing Calculator",
+      "AWS Cost and Usage Report",
+      "AWS Billing Conductor",
+      "AWS Cost Explorer"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "AWS Cost Explorer provides an interactive view of historical costs, filtering by service, account or tag, and cost forecasts. The Cost and Usage Report is the most detailed data, but it is delivered as raw files rather than ready-made charts."
+  },
+  {
+    "id": "AWS-T2-038",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "VPC subnets",
+    "stem": "In an Amazon VPC, what makes a subnet a public subnet?",
+    "options": [
+      "Its route table has a route to an internet gateway",
+      "Its network ACL allows all inbound HTTP traffic",
+      "Its instances use a security group that allows all ports",
+      "It sends outbound traffic through a NAT gateway"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A subnet is public when its associated route table sends internet-bound traffic (0.0.0.0/0) to an internet gateway. A subnet whose default route points to a NAT gateway is a private subnet, and permissive security groups or ACLs do not create a path to the internet."
+  },
+  {
+    "id": "AWS-T2-039",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "cloudConcepts",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Security pillar",
+    "stem": "A company wants to protect its application with controls at the edge, the VPC, the subnet, the instance, and the code. Which security design principle is this?",
+    "options": [
+      "Enable traceability",
+      "Automate security best practices",
+      "Keep people away from data",
+      "Apply security at all layers"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Applying security at all layers means defense in depth across edge, network, compute, and application controls. Enabling traceability is also a security principle, but it concerns logging and monitoring actions rather than layered defenses."
+  },
+  {
+    "id": "AWS-T2-040",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "AWS Security Hub",
+    "stem": "A security team wants one place that aggregates findings from GuardDuty, Inspector and Macie and checks accounts against security best practice standards. Which service fits?",
+    "options": [
+      "Amazon Detective",
+      "AWS Firewall Manager",
+      "Amazon CloudWatch",
+      "AWS Security Hub"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Security Hub aggregates and prioritizes findings from AWS security services and runs automated checks against standards such as the CIS benchmarks. Detective is for investigating root causes, not aggregating posture."
+  },
+  {
+    "id": "AWS-T2-041",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "NAT gateway",
+    "stem": "Application servers in a private subnet must download operating system patches from the internet, but must not accept connections initiated from the internet. What should be added?",
+    "options": [
+      "An internet gateway route from the private subnet",
+      "A NAT gateway in a public subnet",
+      "A VPC peering connection",
+      "An AWS Direct Connect connection"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A NAT gateway lets instances in private subnets start outbound connections to the internet while blocking connections initiated from outside. Routing the private subnet straight to an internet gateway would make it public and expose the servers."
+  },
+  {
+    "id": "AWS-T2-042",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "cloudConcepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "AWS CAF perspectives",
+    "stem": "A company wants to address skills gaps, new job roles, and organizational change management as it moves to the cloud. Which AWS CAF perspective covers this?",
+    "options": [
+      "People",
+      "Business",
+      "Platform",
+      "Governance"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The People perspective bridges technology and business through culture, workforce transformation, and change management. Governance focuses on program and risk management rather than skills and roles."
+  },
+  {
+    "id": "AWS-T2-043",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Amazon Detective",
+    "stem": "After GuardDuty reports a suspicious finding, an analyst must investigate its root cause by visualizing related activity over time. Which service should the analyst use?",
+    "options": [
+      "Amazon Inspector",
+      "Amazon Detective",
+      "AWS Security Hub",
+      "AWS Audit Manager"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Detective builds a linked graph from logs so analysts can investigate the root cause and scope of findings. Security Hub aggregates findings but does not provide that investigation graph."
+  },
+  {
+    "id": "AWS-T2-044",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Security groups and NACLs",
+    "stem": "Which statement correctly compares security groups and network ACLs in an Amazon VPC?",
+    "options": [
+      "Security groups are stateless; network ACLs are stateful",
+      "Both operate at the subnet level and support deny rules",
+      "Security groups are stateful; network ACLs are stateless",
+      "Network ACLs attach to instances; security groups attach to subnets"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Security groups act at the instance (network interface) level, are stateful so return traffic is allowed automatically, and support only allow rules. Network ACLs act at the subnet level, are stateless, and support both allow and deny rules."
+  },
+  {
+    "id": "AWS-T2-045",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "billingPricing",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cost and Usage Report",
+    "stem": "Which AWS billing resource delivers the most granular, line-item cost and usage data to an Amazon S3 bucket for querying with Amazon Athena?",
+    "options": [
+      "AWS Cost and Usage Report",
+      "AWS Cost Explorer",
+      "AWS Budgets",
+      "AWS CloudTrail"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The AWS Cost and Usage Report, now delivered through AWS Data Exports as CUR 2.0, writes the most comprehensive line-item billing data to S3, where Athena, Redshift or QuickSight can analyze it. CloudTrail records API activity, not costs."
+  },
+  {
+    "id": "AWS-T2-046",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "AWS Transit Gateway",
+    "stem": "A company runs 40 VPCs across several accounts and also connects two on-premises data centers. It wants a central hub instead of managing a full mesh of peering connections. Which service fits?",
+    "options": [
+      "VPC peering",
+      "AWS Global Accelerator",
+      "NAT gateway",
+      "AWS Transit Gateway"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Transit Gateway acts as a regional hub that connects many VPCs and on-premises networks through a single gateway. VPC peering is one-to-one and not transitive, so 40 VPCs would need hundreds of separate peering connections."
+  },
+  {
+    "id": "AWS-T2-047",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Penetration testing",
+    "stem": "A company plans to run a penetration test against its own EC2 instances. What does the AWS penetration testing policy require?",
+    "options": [
+      "No prior approval for permitted services",
+      "Written approval from AWS Support first",
+      "A subscription to AWS Shield Advanced",
+      "A request submitted through AWS Artifact"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "AWS allows customers to run penetration tests against a list of permitted services, including EC2, without prior approval. Prohibited activities such as DoS flooding are still not allowed."
+  },
+  {
+    "id": "AWS-T2-048",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "cloudConcepts",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "AWS CAF perspectives",
+    "select": 2,
+    "stem": "A company is using the AWS Cloud Adoption Framework (AWS CAF) to plan its move to the cloud. Which of the following are AWS CAF perspectives? (Choose two.)",
+    "options": [
+      "Reliability",
+      "Platform",
+      "Sustainability",
+      "Governance",
+      "Cost optimization"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "explanation": "The six AWS CAF perspectives are Business, People, Governance, Platform, Security and Operations. Reliability, sustainability and cost optimization are tempting because they sound like planning areas, but they are pillars of the AWS Well-Architected Framework, a separate framework."
+  },
+  {
+    "id": "AWS-T2-049",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 1,
+    "format": "multi",
+    "skill": "Hybrid connectivity",
+    "select": 2,
+    "stem": "A company wants to connect its on-premises data center to an Amazon VPC. Which AWS services provide this connection? (Choose two.)",
+    "options": [
+      "AWS Direct Connect",
+      "Amazon CloudFront",
+      "AWS Site-to-Site VPN",
+      "VPC peering",
+      "AWS Global Accelerator"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "Site-to-Site VPN builds encrypted tunnels over the internet, and Direct Connect provides a dedicated private link; both connect an on-premises network to a VPC. VPC peering is tempting, but it connects one VPC to another VPC, not to an on-premises network."
+  },
+  {
+    "id": "AWS-T2-050",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "AWS Shield",
+    "stem": "A company's public website suffers frequent DDoS attacks and needs 24/7 access to the Shield Response Team plus protection from scaling charges. Which service should it use?",
+    "options": [
+      "AWS Shield Standard",
+      "AWS WAF",
+      "AWS Shield Advanced",
+      "Amazon GuardDuty"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Shield Advanced adds enhanced DDoS detection, 24/7 Shield Response Team access and cost protection for attack-related scaling. Shield Standard is free and automatic but includes neither the response team nor cost protection."
+  },
+  {
+    "id": "AWS-T2-051",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "cloudConcepts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Migration strategies",
+    "stem": "A company wants to move hundreds of on-premises virtual machines to Amazon EC2 quickly without changing the applications. Which migration strategy should it use?",
+    "options": [
+      "Refactor",
+      "Repurchase",
+      "Retain",
+      "Rehost"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Rehosting, or lift and shift, moves applications as they are and is the fastest way to migrate at scale. Refactoring re-architects the application, which takes far more time and effort."
+  },
+  {
+    "id": "AWS-T2-052",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Route 53 routing",
+    "stem": "An application is deployed in three AWS Regions, and the company wants Amazon Route 53 to send each user to the Region that responds fastest for them. Which routing policy should it choose?",
+    "options": [
+      "Latency-based routing",
+      "Geolocation routing",
+      "Multivalue answer routing",
+      "Failover routing"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Latency-based routing answers DNS queries with the Region that has the lowest measured network latency for the user. Geolocation routing decides by the user's location, which is not always the fastest path."
+  },
+  {
+    "id": "AWS-T2-053",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "billingPricing",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Pricing Calculator",
+    "stem": "A company planning a migration wants to estimate the monthly cost of a proposed architecture before creating any AWS resources. Which tool should it use?",
+    "options": [
+      "AWS Cost Explorer",
+      "AWS Pricing Calculator",
+      "AWS Compute Optimizer",
+      "AWS Budgets"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "AWS Pricing Calculator models the cost of services you have not deployed yet. Cost Explorer analyzes spending that has already happened, and Compute Optimizer right-sizes resources that are already running."
+  },
+  {
+    "id": "AWS-T2-054",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "AWS WAF",
+    "stem": "A company needs to block SQL injection and cross-site scripting requests before they reach its web application behind Amazon CloudFront. Which service should it use?",
+    "options": [
+      "AWS WAF",
+      "AWS Shield Standard",
+      "Network ACLs",
+      "Amazon Inspector"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "AWS WAF is a web application firewall that filters HTTP requests with rules for attacks such as SQL injection and XSS. Shield Standard defends against network-layer DDoS attacks, not application-layer exploits."
+  },
+  {
+    "id": "AWS-T2-055",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Amazon CloudFront",
+    "stem": "A streaming media company wants to cache videos and images at edge locations worldwide so viewers get low-latency delivery. Which AWS service meets this need?",
+    "options": [
+      "AWS Global Accelerator",
+      "AWS Direct Connect",
+      "Amazon Route 53",
+      "Amazon CloudFront"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "CloudFront is a content delivery network that caches content at edge locations close to viewers. Global Accelerator also uses the AWS edge network, but it routes TCP and UDP traffic to endpoints and does not cache content."
+  },
+  {
+    "id": "AWS-T2-056",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "cloudConcepts",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Migration strategies",
+    "stem": "A company wants to move its self-managed MySQL database to Amazon RDS during migration without changing application code. Which migration strategy is this?",
+    "options": [
+      "Rehost",
+      "Replatform",
+      "Refactor",
+      "Retire"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Replatforming (lift, tinker, and shift) makes a few cloud optimizations, such as moving to a managed database, without changing the core architecture. Rehosting would move the database server as it is onto EC2."
+  },
+  {
+    "id": "AWS-T2-057",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "AWS Network Firewall",
+    "stem": "A company needs a managed, stateful network firewall with intrusion prevention to filter traffic at the perimeter of its entire VPC. Which service should it use?",
+    "options": [
+      "AWS Network Firewall",
+      "AWS WAF",
+      "Security groups",
+      "AWS Shield Advanced"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "AWS Network Firewall is a managed service providing stateful inspection and intrusion prevention for VPC traffic. AWS WAF only inspects web (HTTP/HTTPS) requests to specific resources."
+  },
+  {
+    "id": "AWS-T2-058",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Amazon API Gateway",
+    "stem": "Developers want to publish, secure and throttle REST APIs that invoke AWS Lambda functions, including API keys and usage plans for partners. Which service should they use?",
+    "options": [
+      "AWS AppSync",
+      "Network Load Balancer",
+      "Amazon API Gateway",
+      "Amazon CloudFront"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "API Gateway creates, publishes and secures REST, HTTP and WebSocket APIs, with throttling, API keys and usage plans built in. AppSync is for managed GraphQL APIs, not REST APIs with usage plans."
+  },
+  {
+    "id": "AWS-T2-059",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "cloudConcepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Migration strategies",
+    "stem": "A company wants to replace its on-premises customer relationship management application with a software as a service (SaaS) product. Which strategy is this?",
+    "options": [
+      "Relocate",
+      "Repurchase",
+      "Replatform",
+      "Retain"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Repurchasing means moving to a different product, commonly a SaaS offering, and dropping the existing application. Replatforming keeps the same application while making small optimizations."
+  },
+  {
+    "id": "AWS-T2-060",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "AWS Firewall Manager",
+    "stem": "A company with many accounts in AWS Organizations wants to centrally configure and enforce AWS WAF rules and security group policies across all accounts. Which service fits?",
+    "options": [
+      "AWS Network Firewall",
+      "AWS Security Hub",
+      "AWS Config",
+      "AWS Firewall Manager"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Firewall Manager centrally manages WAF rules, Shield Advanced, security group policies and Network Firewall across accounts in an organization. Network Firewall is the firewall itself, not the cross-account policy manager."
+  },
+  {
+    "id": "AWS-T2-061",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 1,
+    "format": "multi",
+    "skill": "Relational databases",
+    "select": 2,
+    "stem": "A company needs a managed relational database for a transactional order system that uses SQL joins. Which AWS services fit? (Choose two.)",
+    "options": [
+      "Amazon Aurora",
+      "Amazon DynamoDB",
+      "Amazon RDS",
+      "Amazon Neptune",
+      "Amazon DocumentDB"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "Amazon Aurora and Amazon RDS are managed relational database services for transactional SQL workloads. DynamoDB is tempting because it is fully managed and fast, but it is a NoSQL key-value database without joins; Neptune is a graph database and DocumentDB a document database."
+  },
+  {
+    "id": "AWS-T2-062",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "billingPricing",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Consolidated billing",
+    "select": 2,
+    "stem": "A company with 15 AWS accounts turns on consolidated billing in AWS Organizations. Which benefits does it gain? (Choose two.)",
+    "options": [
+      "One bill for all member accounts",
+      "Free Business Support for every account",
+      "Combined usage for volume pricing",
+      "Automatic rightsizing of instances",
+      "Separate bills for each IAM user"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "Consolidated billing gives one bill for the organization and combines usage across accounts, so tiered prices and Reserved Instance or Savings Plans discounts apply more widely. It does not include a Support plan, which is still purchased and billed per account."
+  },
+  {
+    "id": "AWS-T2-063",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "cloudConcepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Migration strategies",
+    "stem": "A company wants to re-architect a monolithic application into serverless microservices to add features and improve scalability. Which migration strategy is this?",
+    "options": [
+      "Refactor",
+      "Rehost",
+      "Relocate",
+      "Replatform"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Refactoring (re-architecting) changes how the application is built to use cloud-native features, driven by needs that are hard to meet in the current design. Replatforming makes only minor optimizations without changing the architecture."
+  },
+  {
+    "id": "AWS-T2-064",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 1,
+    "format": "multi",
+    "skill": "S3 access control",
+    "select": 2,
+    "stem": "A company wants to control who can read objects in its Amazon S3 buckets. Which features control access to S3 data? (Choose two.)",
+    "options": [
+      "S3 bucket policies",
+      "S3 Lifecycle rules",
+      "S3 Block Public Access",
+      "S3 Transfer Acceleration",
+      "S3 Intelligent-Tiering"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "Bucket policies grant or deny access to a bucket and its objects, and Block Public Access overrides any setting that would make data public. Lifecycle rules are tempting because they act on objects automatically, but they manage storage class and expiry, not who can read the data."
+  },
+  {
+    "id": "AWS-T2-065",
+    "section": "aws",
+    "test": 2,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "S3 storage classes",
+    "select": 2,
+    "stem": "Which Amazon S3 storage classes keep data in a single Availability Zone? (Choose two.)",
+    "options": [
+      "S3 Standard",
+      "S3 One Zone-IA",
+      "S3 Intelligent-Tiering",
+      "S3 Express One Zone",
+      "S3 Glacier Deep Archive"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "explanation": "S3 One Zone-IA and S3 Express One Zone store data in one Availability Zone, trading AZ-level resilience for lower cost or, with Express One Zone, single-digit millisecond access. S3 Intelligent-Tiering is tempting because it moves data to cheaper tiers, but like S3 Standard and Glacier Deep Archive it stores data across at least three Availability Zones."
+  },
+  {
+    "id": "AWS-D-001",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "S3 storage classes",
+    "stem": "Audit records must be kept for ten years, are almost never read, and a retrieval time of up to 48 hours is acceptable. Which S3 storage class has the lowest storage cost?",
+    "options": [
+      "S3 Glacier Deep Archive",
+      "S3 Glacier Instant Retrieval",
+      "S3 Glacier Flexible Retrieval",
+      "S3 Standard-Infrequent Access"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Glacier Deep Archive is the lowest-cost S3 storage class, built for long-term retention with retrievals within 12 to 48 hours. Glacier Flexible Retrieval restores data faster but costs more to store."
+  },
+  {
+    "id": "AWS-D-002",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Network ACLs",
+    "stem": "A company must block a specific malicious IP address range from reaching every instance in a subnet. Which VPC feature should it use?",
+    "options": [
+      "A security group deny rule",
+      "A network ACL deny rule",
+      "An IAM policy deny statement",
+      "An AWS Shield Standard rule"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Network ACLs apply at the subnet level and support explicit deny rules, so they can block an IP range. Security groups support only allow rules, so they cannot explicitly deny an address."
+  },
+  {
+    "id": "AWS-D-003",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "cloudConcepts",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Migration services",
+    "select": 2,
+    "stem": "A company has finished planning its migration. Which AWS services copy its on-premises servers and databases into AWS? (Choose two.)",
+    "options": [
+      "AWS Application Discovery Service",
+      "AWS Application Migration Service",
+      "AWS Database Migration Service",
+      "AWS Compute Optimizer",
+      "AWS Control Tower"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "explanation": "AWS Application Migration Service replicates servers for a lift-and-shift cutover, and AWS DMS migrates databases while the source stays online. Application Discovery Service is tempting because it is a migration tool, but it only collects server and dependency data for planning and does not move workloads."
+  },
+  {
+    "id": "AWS-D-004",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "S3 Lifecycle",
+    "stem": "Log files in an S3 bucket should move to a cheaper storage class after 30 days and be deleted automatically after one year. Which S3 feature does this?",
+    "options": [
+      "S3 Versioning",
+      "S3 Lifecycle rules",
+      "S3 Replication",
+      "S3 Transfer Acceleration"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Lifecycle rules transition objects to other storage classes and expire them after set periods. Versioning keeps prior versions of objects but does not move or delete them on a schedule."
+  },
+  {
+    "id": "AWS-D-005",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "billingPricing",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cost allocation tags",
+    "stem": "A company wants its billing reports to break down AWS costs by department and project. What should the company do?",
+    "options": [
+      "Enable AWS CloudTrail logging",
+      "Create a separate VPC per department",
+      "Activate cost allocation tags",
+      "Assign IAM groups per department"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "After resources are tagged and the tags are activated as cost allocation tags, Cost Explorer and the Cost and Usage Report can group costs by those tags. VPCs and IAM groups organize networking and permissions, not billing data."
+  },
+  {
+    "id": "AWS-D-006",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Trusted Advisor",
+    "stem": "A company wants free automated checks that flag security groups with unrestricted ports and confirm that MFA is enabled on the root user. Which service provides these?",
+    "options": [
+      "Amazon Inspector",
+      "Amazon GuardDuty",
+      "AWS Artifact",
+      "AWS Trusted Advisor"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Trusted Advisor core security checks, free for all accounts, include unrestricted security group ports and root user MFA. Inspector scans workloads for software vulnerabilities rather than account configuration best practices."
+  },
+  {
+    "id": "AWS-D-007",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "cloudConcepts",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Migration services",
+    "stem": "A company wants to gather server specifications, utilization data, and dependencies from its on-premises data center to plan a migration. Which AWS service helps?",
+    "options": [
+      "AWS Application Migration Service",
+      "AWS Application Discovery Service",
+      "AWS Config",
+      "Amazon Inspector"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Application Discovery Service collects configuration, usage, and dependency data from on-premises servers to help plan migrations. Application Migration Service performs the actual lift-and-shift replication after planning."
+  },
+  {
+    "id": "AWS-D-008",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "S3 Object Lock",
+    "stem": "Regulators require that trade records be stored in a write-once-read-many (WORM) model so that no one, even an administrator, can delete them during retention. Which feature meets this?",
+    "options": [
+      "S3 Versioning with MFA Delete enabled",
+      "S3 Cross-Region Replication",
+      "S3 Glacier Instant Retrieval",
+      "S3 Object Lock in compliance mode"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "S3 Object Lock in compliance mode enforces WORM retention, so no user, including the root user, can delete or overwrite a protected version until retention expires. Versioning with MFA Delete makes deletion harder, but an authorized user with MFA can still delete versions."
+  },
+  {
+    "id": "AWS-D-009",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "IAM groups",
+    "stem": "An administrator must give twelve developers identical permissions and be able to change them all at once later. What is the most efficient approach?",
+    "options": [
+      "Attach the same inline policy to each user",
+      "Share one IAM user's credentials among them",
+      "Add the users to an IAM group with a policy",
+      "Give each developer the root user password"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Attaching a policy to an IAM group grants it to every member, and one change updates them all. Separate inline policies must be edited user by user, and shared credentials break accountability."
+  },
+  {
+    "id": "AWS-D-010",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Amazon EBS",
+    "stem": "A self-managed database on one EC2 instance needs low-latency block storage that persists when the instance stops and can be backed up with point-in-time snapshots. Which option fits?",
+    "options": [
+      "EC2 instance store",
+      "Amazon S3 Standard",
+      "Amazon EBS volume",
+      "Amazon FSx for Lustre"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "EBS provides persistent block storage attached to an EC2 instance, and EBS snapshots give incremental point-in-time backups stored in S3. Instance store is also block storage, but its data is lost when the instance stops or terminates."
+  },
+  {
+    "id": "AWS-D-011",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "cloudConcepts",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Migration services",
+    "stem": "A company wants to lift and shift physical and virtual servers to AWS with continuous block-level replication and minimal cutover downtime. Which service should it use?",
+    "options": [
+      "AWS Application Discovery Service",
+      "AWS DataSync",
+      "AWS Application Migration Service",
+      "AWS Database Migration Service"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "AWS Application Migration Service (MGN) continuously replicates source servers to AWS and launches them with short cutover windows, making it the recommended rehost tool. Application Discovery Service only collects planning data and does not move servers."
+  },
+  {
+    "id": "AWS-D-012",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "IAM roles",
+    "stem": "An application running on Amazon EC2 needs to read objects from an S3 bucket. What is the most secure way to grant this access?",
+    "options": [
+      "Store an IAM user's access keys on the instance",
+      "Embed root user access keys in the code",
+      "Make the bucket publicly readable",
+      "Attach an IAM role to the EC2 instance"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An IAM role attached through an instance profile supplies temporary, automatically rotated credentials to the application. Storing long-term access keys on the instance risks leaking them."
+  },
+  {
+    "id": "AWS-D-013",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Amazon EFS",
+    "stem": "Hundreds of Linux EC2 instances in several Availability Zones must read and write the same files at once through NFS, and capacity should grow automatically. Which service should be used?",
+    "options": [
+      "Amazon EBS",
+      "Amazon EFS",
+      "Amazon FSx for Windows File Server",
+      "AWS Storage Gateway Volume Gateway"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Amazon EFS is a managed, elastic NFS file system that many Linux instances across multiple Availability Zones can mount at the same time. An EBS volume is block storage normally attached to a single instance in one Availability Zone, and FSx for Windows File Server serves SMB shares to Windows clients."
+  },
+  {
+    "id": "AWS-D-014",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "billingPricing",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cost Anomaly Detection",
+    "stem": "A company wants to be notified automatically when its spending pattern suddenly deviates from normal, using machine learning to detect the change. Which service should it use?",
+    "options": [
+      "Amazon CloudWatch billing alarm",
+      "AWS Compute Optimizer",
+      "AWS Trusted Advisor",
+      "AWS Cost Anomaly Detection"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "AWS Cost Anomaly Detection uses machine learning to spot unusual spending and sends alerts with root-cause details. A CloudWatch billing alarm fires only when charges cross a fixed threshold, and Compute Optimizer gives right-sizing advice."
+  },
+  {
+    "id": "AWS-D-015",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Least privilege",
+    "stem": "Which statement describes the principle of least privilege?",
+    "options": [
+      "Grant administrator access, then trim it during audits",
+      "Give every user read-only access to all services",
+      "Grant only the permissions required for a task",
+      "Grant permissions based on each user's seniority"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Least privilege means granting only the permissions needed to perform a task, and nothing more. Starting broad and trimming later leaves excess access in place in the meantime."
+  },
+  {
+    "id": "AWS-D-016",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "cloudConcepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Database migration",
+    "stem": "A company wants to migrate an Oracle database to Amazon Aurora while keeping the source database fully operational during the migration. Which service should it use?",
+    "options": [
+      "AWS DataSync",
+      "AWS Snowball Edge",
+      "AWS Database Migration Service",
+      "AWS Application Discovery Service"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "AWS DMS migrates databases while the source stays operational and supports heterogeneous migrations, with the Schema Conversion Tool converting the schema. DataSync copies files and objects, not live database changes."
+  },
+  {
+    "id": "AWS-D-017",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "File storage",
+    "select": 2,
+    "stem": "Many Amazon EC2 instances must mount the same shared file system at the same time. Which AWS services provide this managed file storage? (Choose two.)",
+    "options": [
+      "Amazon EFS",
+      "Amazon EBS gp3 volumes",
+      "Amazon FSx",
+      "EC2 instance store",
+      "S3 Glacier Deep Archive"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "Amazon EFS and the Amazon FSx family (for Windows File Server, Lustre, NetApp ONTAP and OpenZFS) are managed file systems that many instances can mount at once. An EBS volume is tempting because it is fast, but it is block storage attached to a single instance, and gp3 volumes do not support Multi-Attach."
+  },
+  {
+    "id": "AWS-D-018",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 1,
+    "format": "multi",
+    "skill": "Root user",
+    "select": 2,
+    "stem": "A company has just created a new AWS account. Which actions follow best practice for the root user? (Choose two.)",
+    "options": [
+      "Enable MFA on the root user",
+      "Create root access keys for scripts",
+      "Share the root password with admins",
+      "Use it only for tasks that need it",
+      "Use it for daily administration"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "explanation": "AWS recommends protecting the root user with MFA and using it only for the few tasks that require it, with IAM identities for everything else. Root access keys for scripts may seem convenient, but they give unrestricted long-term access and should not exist."
+  },
+  {
+    "id": "AWS-D-019",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Storage Gateway",
+    "stem": "On-premises applications must keep writing to local NFS and SMB file shares while the files are stored durably in Amazon S3, with frequently used data cached locally. Which service fits?",
+    "options": [
+      "AWS Snowball Edge",
+      "AWS Storage Gateway",
+      "Amazon EFS",
+      "AWS Direct Connect"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Storage Gateway (S3 File Gateway) presents local file shares and stores files as objects in S3, with a local cache for low-latency access. Direct Connect is only a network link and does not provide file shares."
+  },
+  {
+    "id": "AWS-D-020",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "cloudConcepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Offline data transfer",
+    "stem": "A company that already orders AWS Snowball Edge devices wants to move 500 TB of archived data to AWS, but its internet connection would take months to transfer it. Which service should it use?",
+    "options": [
+      "AWS Snowball Edge",
+      "AWS DataSync",
+      "AWS Transfer Family",
+      "Amazon S3 Transfer Acceleration"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Snowball Edge devices move large datasets physically, which is faster than a slow network for hundreds of terabytes; since November 2025 only existing customers can order them. S3 Transfer Acceleration speeds uploads over the internet but still depends on the limited connection."
+  },
+  {
+    "id": "AWS-D-021",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Root user",
+    "stem": "In a standalone AWS account, which task requires signing in as the root user?",
+    "options": [
+      "Creating an IAM group",
+      "Launching an EC2 instance",
+      "Closing the AWS account",
+      "Viewing CloudTrail event history"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Closing a standalone account is one of the few tasks that require root user credentials. Creating groups, launching instances and viewing CloudTrail history can be granted to IAM identities."
+  },
+  {
+    "id": "AWS-D-022",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "AWS Backup",
+    "stem": "A company wants one central policy to schedule and retain backups of its EBS volumes, RDS databases, DynamoDB tables and EFS file systems across accounts. What should it use?",
+    "options": [
+      "AWS Elastic Disaster Recovery",
+      "S3 Cross-Region Replication",
+      "AWS Backup",
+      "Amazon Data Lifecycle Manager"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "AWS Backup centrally manages and automates backup plans and retention across many AWS services and accounts. Elastic Disaster Recovery continuously replicates servers for fast failover; it is not a policy-based backup service for databases and file systems."
+  },
+  {
+    "id": "AWS-D-023",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "billingPricing",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Support plans",
+    "stem": "A company needs a designated Technical Account Manager and a 15-minute response for business-critical outages, at the lowest cost. Which Support plan should it choose?",
+    "options": [
+      "AWS Enterprise Support",
+      "AWS Business Support+",
+      "AWS Developer Support",
+      "AWS Basic Support"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Enterprise Support assigns a designated Technical Account Manager and targets a 15-minute response for business-critical outages. Business Support+ costs less, but its fastest response target is 30 minutes and it does not include a designated TAM."
+  },
+  {
+    "id": "AWS-D-024",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Access keys",
+    "stem": "An employee uses the AWS CLI on a workstation to call AWS APIs with long-term IAM user credentials. Which credential type does the CLI require?",
+    "options": [
+      "A console user name and password",
+      "An Amazon EC2 key pair",
+      "An access key ID and secret access key",
+      "A public certificate from ACM"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Programmatic access through the CLI, SDKs or APIs uses an access key ID and secret access key. A console password only signs in to the AWS Management Console, and EC2 key pairs are for logging in to instances."
+  },
+  {
+    "id": "AWS-D-025",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "cloudConcepts",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Online data transfer",
+    "stem": "A company wants to automate recurring online transfers of files from on-premises NFS shares to Amazon S3 and Amazon EFS. Which service should it use?",
+    "options": [
+      "AWS Transfer Family",
+      "AWS Snowball Edge",
+      "AWS Database Migration Service",
+      "AWS DataSync"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "DataSync automates and accelerates online data movement between on-premises storage such as NFS or SMB shares and AWS storage services. Transfer Family provides managed SFTP, FTPS, and FTP endpoints for partners, not scheduled bulk copies from file shares."
+  },
+  {
+    "id": "AWS-D-026",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Amazon Rekognition",
+    "stem": "A social media startup wants to detect faces, objects and unsafe content in user-uploaded photos without building or training its own machine learning models. Which service fits?",
+    "options": [
+      "Amazon Rekognition",
+      "Amazon Textract",
+      "Amazon Comprehend",
+      "Amazon SageMaker custom models"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Rekognition is a pretrained image and video analysis service that detects faces, objects and inappropriate content through an API. SageMaker could do this too, but the team would have to build, train and host its own models."
+  },
+  {
+    "id": "AWS-D-027",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "IAM Identity Center",
+    "stem": "A company with 40 AWS accounts wants employees to sign in once with their corporate directory credentials and reach their assigned accounts. Which service should it use?",
+    "options": [
+      "Amazon Cognito",
+      "IAM users in every account",
+      "AWS Secrets Manager",
+      "AWS IAM Identity Center"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "IAM Identity Center provides single sign-on for workforce users across all accounts in an organization and connects to existing identity providers. Cognito is designed for customers of applications, not employees."
+  },
+  {
+    "id": "AWS-D-028",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Amazon Textract",
+    "stem": "An insurer receives thousands of scanned claim forms and wants to automatically extract printed text, handwriting, tables and form fields. Which AWS service should it use?",
+    "options": [
+      "Amazon Rekognition",
+      "Amazon Comprehend",
+      "Amazon Kendra",
+      "Amazon Textract"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Textract extracts text, handwriting, tables and key-value form data from scanned documents. Rekognition can find text in images, but it does not understand document structure such as forms and tables."
+  },
+  {
+    "id": "AWS-D-029",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "cloudConcepts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Fixed vs variable cost",
+    "stem": "A company is comparing on-premises costs with AWS. Which of these is a fixed, upfront expense in a traditional data center?",
+    "options": [
+      "Paying per second for EC2 instance usage",
+      "Paying per gigabyte of Amazon S3 storage used",
+      "Buying physical servers and storage arrays",
+      "Paying per request for AWS Lambda functions"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Hardware purchases are capital expenditures paid upfront regardless of later usage, which makes them a fixed cost. EC2, S3, and Lambda charges are variable costs that track actual consumption."
+  },
+  {
+    "id": "AWS-D-030",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Amazon Cognito",
+    "stem": "A mobile app needs sign-up and sign-in for millions of customers, including sign-in through social identity providers. Which AWS service should the developers use?",
+    "options": [
+      "AWS IAM Identity Center",
+      "Amazon Cognito",
+      "IAM users and groups",
+      "AWS Directory Service"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Cognito provides user sign-up, sign-in and federation with social providers for web and mobile app users at scale. IAM Identity Center manages workforce access to AWS accounts, not app customers."
+  },
+  {
+    "id": "AWS-D-031",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Amazon Comprehend",
+    "stem": "A retailer wants to analyze thousands of written product reviews to find customer sentiment and key phrases using natural language processing. Which service should it choose?",
+    "options": [
+      "Amazon Translate",
+      "Amazon Transcribe",
+      "Amazon Polly",
+      "Amazon Comprehend"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Comprehend is a natural language processing service that identifies sentiment, key phrases, entities and language in text. Transcribe converts speech to text and does not analyze sentiment in written reviews."
+  },
+  {
+    "id": "AWS-D-032",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "billingPricing",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Support plans",
+    "stem": "A new AWS account has not purchased any Support plan. Which Support plan does it already have at no extra cost?",
+    "options": [
+      "AWS Developer Support",
+      "AWS Basic Support",
+      "AWS Business Support+",
+      "AWS Enterprise Support"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Basic Support comes with every AWS account and covers account and billing customer service, documentation, AWS re:Post, AWS Health and the core Trusted Advisor checks. Developer Support is tempting as the entry-level plan, but it is a paid plan."
+  },
+  {
+    "id": "AWS-D-033",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "cloudConcepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rightsizing",
+    "stem": "A company finds that its Amazon EC2 instances average 5 percent CPU utilization all month. Which cost optimization action should it take first?",
+    "options": [
+      "Add more instances to the Auto Scaling group",
+      "Move the instances to Dedicated Hosts",
+      "Migrate the same instances to a different AWS Region for lower prices",
+      "Right-size the instances to smaller instance types"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Right-sizing matches instance types to actual workload needs, and AWS Compute Optimizer recommends smaller sizes for underused instances. Adding instances would increase spending on capacity that is already idle."
+  },
+  {
+    "id": "AWS-D-034",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Cross-account roles",
+    "stem": "An auditing firm needs temporary access to resources in a company's AWS account without the company creating IAM users for it. What should the company configure?",
+    "options": [
+      "An IAM user with shared access keys",
+      "The root user credentials protected by MFA",
+      "A security group allowing the firm's IP",
+      "A cross-account IAM role the firm can assume"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A cross-account role lets identities in another account assume it and receive temporary credentials. Shared access keys are long-term, hard to audit and against best practice."
+  },
+  {
+    "id": "AWS-D-035",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "AI language services",
+    "select": 2,
+    "stem": "A call center wants to convert recorded customer calls into text and then translate that text into Spanish. Which AWS services should it use? (Choose two.)",
+    "options": [
+      "Amazon Transcribe",
+      "Amazon Polly",
+      "Amazon Translate",
+      "Amazon Lex",
+      "Amazon Comprehend"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "Amazon Transcribe converts speech to text, and Amazon Translate translates text between languages. Amazon Polly is tempting because it works with speech, but it does the reverse, turning text into spoken audio."
+  },
+  {
+    "id": "AWS-D-036",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Amazon Bedrock",
+    "stem": "To build a generative AI application, a team wants API access to foundation models from several providers without training models or managing any infrastructure. Which service fits best?",
+    "options": [
+      "Amazon SageMaker",
+      "Amazon Comprehend",
+      "Amazon Bedrock",
+      "Amazon Kendra"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Bedrock is a fully managed, serverless service that offers foundation models from Amazon and other providers through one API. SageMaker is for building, training and deploying your own models, which involves more ML expertise and infrastructure choices."
+  },
+  {
+    "id": "AWS-D-037",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "AWS STS",
+    "stem": "Which AWS service issues the temporary security credentials provided when an IAM role is assumed?",
+    "options": [
+      "AWS Key Management Service",
+      "AWS Secrets Manager",
+      "AWS Security Token Service (AWS STS)",
+      "AWS Certificate Manager"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "AWS STS issues short-lived credentials when a role is assumed or a federated user signs in. Secrets Manager stores and rotates secrets but does not issue role credentials."
+  },
+  {
+    "id": "AWS-D-038",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "cloudConcepts",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Licensing strategies",
+    "stem": "A company wants to use its existing Microsoft Windows Server and SQL Server licenses on AWS to reduce costs. Which licensing approach supports this?",
+    "options": [
+      "Bring your own license (BYOL)",
+      "License-included Amazon EC2 instances",
+      "AWS Free Tier offers",
+      "Spot Instance pricing"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "BYOL lets a company apply licenses it already owns, often on Dedicated Hosts, and AWS License Manager helps track them. License-included instances bundle the license cost into the hourly price, so the company would pay for licenses twice."
+  },
+  {
+    "id": "AWS-D-039",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Amazon Athena",
+    "stem": "Analysts want to run standard SQL queries directly against CSV and Parquet files in Amazon S3, paying per query with no servers or clusters to manage. Which service should they use?",
+    "options": [
+      "Amazon Athena",
+      "Amazon EMR",
+      "Amazon Kinesis Data Streams",
+      "Amazon OpenSearch Service"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Athena is a serverless, interactive query service that runs SQL on data in S3 and charges per amount of data scanned. EMR runs big data frameworks such as Spark on clusters that must be sized and managed."
+  },
+  {
+    "id": "AWS-D-040",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "billingPricing",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Support plans",
+    "stem": "Which AWS Enterprise Support feature gives customers a team of billing and account experts for non-technical billing questions?",
+    "options": [
+      "Concierge Support Team",
+      "Technical Account Manager",
+      "AWS Professional Services",
+      "AWS Partner Network"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Concierge Support Team, included in Enterprise Support, handles billing and account questions. The Technical Account Manager is the customer's technical advocate for architecture and operations, not billing."
+  },
+  {
+    "id": "AWS-D-041",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "IAM roles",
+    "stem": "A company's AWS Lambda function must write logs to Amazon CloudWatch Logs and read from DynamoDB. How should the company grant these permissions?",
+    "options": [
+      "An execution role the function assumes",
+      "An IAM user with access keys for the function",
+      "A resource tag on the log group",
+      "A network ACL allowing the function"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "AWS services act on a customer's behalf through service roles, and Lambda uses an execution role for its permissions. Long-term IAM user keys in a function are unnecessary and riskier."
+  },
+  {
+    "id": "AWS-D-042",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "cloudConcepts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Cost optimization",
+    "stem": "A company wants to cut costs by automatically stopping its development EC2 instances every night and weekend. Which approach should it use?",
+    "options": [
+      "Purchase three-year Reserved Instances for development",
+      "Move the development instances to Dedicated Hosts",
+      "Increase the instance sizes to finish work faster",
+      "Automate stop and start schedules for the instances"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Automation such as Instance Scheduler on AWS or Systems Manager stops instances when no one needs them, so the company pays nothing for compute while they are off. Reserved Instances bill for the full term whether or not the instances run, which suits steady workloads rather than part-time ones."
+  },
+  {
+    "id": "AWS-D-043",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Amazon Kinesis",
+    "stem": "An e-commerce site must ingest and process millions of clickstream events per second in real time for live analytics. Which AWS service is designed for this?",
+    "options": [
+      "Amazon Kinesis Data Streams",
+      "Amazon Athena",
+      "AWS Glue",
+      "Amazon QuickSight"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Kinesis Data Streams captures and processes large streams of data records in real time. Glue is a serverless ETL and data catalog service for batch preparation of data, not real-time stream ingestion."
+  },
+  {
+    "id": "AWS-D-044",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Password policy",
+    "stem": "A security team requires every IAM user password to be at least 14 characters and include symbols. Which feature enforces this requirement?",
+    "options": [
+      "A service control policy",
+      "An IAM account password policy",
+      "An AWS Config managed rule",
+      "An IAM permissions boundary"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The IAM account password policy sets length, complexity and rotation rules for IAM user passwords. An AWS Config rule can report whether such a policy exists, but it does not enforce password complexity."
+  },
+  {
+    "id": "AWS-D-045",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Amazon QuickSight",
+    "stem": "Business managers need interactive dashboards and visualizations of sales data, with machine learning insights, which they can share across the company. Which AWS service should be used?",
+    "options": [
+      "AWS Glue",
+      "Amazon EMR",
+      "Amazon QuickSight",
+      "AWS Data Exchange"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "QuickSight is a cloud business intelligence service for building and sharing interactive dashboards. Data Exchange is for finding and subscribing to third-party data sets, not for visualizing them."
+  },
+  {
+    "id": "AWS-D-046",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "cloudConcepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Total cost of ownership",
+    "stem": "When estimating total cost of ownership, which cost does a company typically reduce by moving a self-managed database to Amazon RDS?",
+    "options": [
+      "Data transfer charges for traffic out to the internet",
+      "Per-gigabyte charges for stored database data",
+      "Staff time for patching, backups, and maintenance",
+      "Monthly fees for an AWS Support plan"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Managed services take over undifferentiated operational tasks, lowering labor costs that are a large part of TCO. Data transfer out is still charged whether the database is self-managed or on RDS."
+  },
+  {
+    "id": "AWS-D-047",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Service control policies",
+    "stem": "A company using AWS Organizations must stop all member accounts, including their administrators, from using AWS Regions outside Europe. Which feature should it use?",
+    "options": [
+      "Service control policies (SCPs)",
+      "IAM password policies",
+      "IAM Identity Center permission sets",
+      "VPC security groups"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "SCPs set guardrails on the maximum permissions in member accounts, so they can deny actions in disallowed Regions even for administrators. Permission sets grant access to users but cannot restrict an account's administrators."
+  },
+  {
+    "id": "AWS-D-048",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Decoupling services",
+    "select": 2,
+    "stem": "A company wants its application components to exchange messages so they are decoupled from each other. Which AWS services are designed for this? (Choose two.)",
+    "options": [
+      "Amazon SQS",
+      "Amazon Athena",
+      "Amazon SNS",
+      "AWS Glue",
+      "Amazon Redshift"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "Amazon SQS queues messages until a consumer processes them, and Amazon SNS publishes messages to many subscribers, so senders and receivers do not call each other directly. AWS Glue is tempting because it moves data between systems, but it is a batch ETL service, not a messaging layer."
+  },
+  {
+    "id": "AWS-D-049",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "billingPricing",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Cost management tools",
+    "select": 2,
+    "stem": "A finance team wants to understand what the company has already spent on AWS. Which tools provide data on past spending? (Choose two.)",
+    "options": [
+      "AWS Cost Explorer",
+      "AWS Pricing Calculator",
+      "Cost and Usage Report",
+      "AWS Artifact",
+      "AWS Compute Optimizer"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "Cost Explorer charts historical costs and usage, and the Cost and Usage Report (now delivered through AWS Data Exports) gives line-item detail of past charges. Pricing Calculator is tempting because it shows costs, but it estimates architectures that have not been deployed yet, and Compute Optimizer reports utilization rather than spending."
+  },
+  {
+    "id": "AWS-D-050",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Service control policies",
+    "stem": "Which statement about service control policies (SCPs) in AWS Organizations is correct?",
+    "options": [
+      "They grant permissions to users in member accounts",
+      "They replace IAM policies in member accounts",
+      "They can be attached only to individual IAM users",
+      "They limit maximum permissions and grant none"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "SCPs define the maximum available permissions for accounts or OUs but never grant access themselves. IAM policies are still needed to grant permissions within those limits."
+  },
+  {
+    "id": "AWS-D-051",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "cloudConcepts",
+    "difficulty": 1,
+    "format": "multi",
+    "skill": "Total cost of ownership",
+    "select": 3,
+    "stem": "A company is building a total cost of ownership (TCO) comparison. Which costs belong on the on-premises side of the comparison? (Choose three.)",
+    "options": [
+      "Power and cooling",
+      "Amazon S3 request charges",
+      "Data center floor space",
+      "EC2 per-second compute charges",
+      "Server hardware refreshes",
+      "AWS Support plan fees"
+    ],
+    "correct": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "An on-premises TCO includes power and cooling, facility space and periodic hardware refreshes, along with staff time. Compute is a large cost on both sides, but per-second EC2 charges are an AWS cost, as are S3 requests and Support plan fees."
+  },
+  {
+    "id": "AWS-D-052",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "AWS Step Functions",
+    "stem": "A team must coordinate several Lambda functions into a visual workflow with sequencing, branching, retries and error handling. Which AWS service provides this orchestration?",
+    "options": [
+      "Amazon EventBridge",
+      "Amazon SQS",
+      "AWS CodePipeline",
+      "AWS Step Functions"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Step Functions orchestrates multiple services into state-machine workflows with built-in branching, retries and error handling. EventBridge routes events between services but does not manage a multi-step workflow."
+  },
+  {
+    "id": "AWS-D-053",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "MFA",
+    "stem": "A company wants a second layer of protection for IAM user console sign-ins in case a password is stolen. What should it enable?",
+    "options": [
+      "Multi-factor authentication (MFA)",
+      "A stricter IAM password policy",
+      "AWS Shield Advanced",
+      "Regular access key rotation"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "MFA requires a second factor, such as an authenticator app or security key, so a stolen password alone is not enough. A stronger password policy still relies on a single factor."
+  },
+  {
+    "id": "AWS-D-054",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "AWS CodePipeline",
+    "stem": "Every time developers push code, a company wants to automatically build, test and deploy the application through defined release stages. Which service orchestrates this release process?",
+    "options": [
+      "AWS CodeBuild",
+      "AWS CodeDeploy",
+      "AWS CodePipeline",
+      "AWS X-Ray"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "CodePipeline is a continuous delivery service that models and automates the release stages from source through build, test and deploy. CodeBuild only compiles and tests code, and CodeDeploy only handles the deployment step."
+  },
+  {
+    "id": "AWS-D-055",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "cloudConcepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Total cost of ownership",
+    "stem": "A company wants to compare the full cost of running workloads on premises against AWS, including hardware, facilities, and staff. Which concept should it evaluate?",
+    "options": [
+      "Recovery point objective (RPO)",
+      "Service level agreement (SLA)",
+      "Total cost of ownership (TCO)",
+      "Recovery time objective (RTO)"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "TCO captures both direct and indirect costs, including hardware, facilities, power, and labor, over the life of the workload. RPO and RTO are disaster recovery targets, not cost measures."
+  },
+  {
+    "id": "AWS-D-056",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Credential report",
+    "stem": "An auditor needs a list of all IAM users showing the status of their passwords, access keys and MFA devices. What should the administrator provide?",
+    "options": [
+      "An AWS Artifact report",
+      "CloudTrail event history",
+      "An Amazon Inspector finding",
+      "The IAM credential report"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The IAM credential report lists every user and the status of their passwords, access keys and MFA devices. AWS Artifact holds AWS's compliance reports, not account credential details."
+  },
+  {
+    "id": "AWS-D-057",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Amazon CloudWatch",
+    "stem": "An operations team wants an alert sent when average CPU usage on its EC2 instances stays above 80 percent for 10 minutes. Which service should it use?",
+    "options": [
+      "Amazon CloudWatch",
+      "AWS CloudTrail",
+      "AWS Config",
+      "AWS Trusted Advisor"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "CloudWatch collects metrics such as CPU utilization and uses alarms to trigger notifications or actions when thresholds are crossed. CloudTrail records API activity for auditing and does not monitor performance metrics."
+  },
+  {
+    "id": "AWS-D-058",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "billingPricing",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "AWS Marketplace",
+    "stem": "A company wants to buy a third-party firewall appliance, deploy it in minutes and pay for it through its AWS bill. Which resource should it use?",
+    "options": [
+      "AWS Partner Network",
+      "AWS Marketplace",
+      "AWS Professional Services",
+      "AWS Managed Services"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "AWS Marketplace is a curated catalog of third-party software that can be deployed quickly and billed through the AWS account. The Partner Network is a program for consulting and technology partners, not a software storefront."
+  },
+  {
+    "id": "AWS-D-059",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Security resources",
+    "stem": "A security engineer wants to keep up with new AWS security features, best practices and solutions written by AWS security experts. Which resource should the engineer follow?",
+    "options": [
+      "AWS Artifact",
+      "AWS Health Dashboard",
+      "AWS Security Blog",
+      "AWS Pricing Calculator"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The AWS Security Blog publishes security announcements, best practices and solution walkthroughs by AWS experts. The AWS Health Dashboard reports service events affecting accounts, not guidance articles."
+  },
+  {
+    "id": "AWS-D-060",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "cloudConcepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "EC2 pricing models",
+    "stem": "A company wants the lowest compute cost for fault-tolerant batch jobs that can be stopped and restarted at any time. Which pricing model fits best?",
+    "options": [
+      "On-Demand Instances",
+      "Spot Instances",
+      "Dedicated Hosts",
+      "Standard Reserved Instances"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Spot Instances use spare EC2 capacity at up to 90 percent off On-Demand prices but can be interrupted with a two-minute warning, which batch jobs can tolerate. Reserved Instances require a one- or three-year commitment and suit steady workloads instead."
+  },
+  {
+    "id": "AWS-D-061",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "AWS Systems Manager",
+    "stem": "An administrator needs to patch and run commands on a fleet of EC2 instances and on-premises servers without opening SSH ports or using bastion hosts. What should be used?",
+    "options": [
+      "AWS Config",
+      "Amazon Inspector",
+      "AWS Health Dashboard",
+      "AWS Systems Manager"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Systems Manager provides Patch Manager, Run Command and Session Manager to operate EC2 and on-premises servers without inbound SSH. Inspector finds software vulnerabilities but does not apply patches."
+  },
+  {
+    "id": "AWS-D-062",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "AWS re:Post",
+    "stem": "A developer has a question about securing an S3 bucket and wants answers from the AWS community and AWS experts in a Q&A forum. Which resource fits?",
+    "options": [
+      "AWS re:Post",
+      "AWS Artifact",
+      "AWS Marketplace",
+      "AWS Trusted Advisor"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "AWS re:Post is the community Q&A service where AWS experts and users answer questions, and it also hosts Knowledge Center articles. Trusted Advisor runs automated checks rather than answering questions."
+  },
+  {
+    "id": "AWS-D-063",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Amazon WorkSpaces",
+    "stem": "A company with remote staff wants managed, persistent Windows and Linux virtual desktops that employees can reach from any device. Which AWS service meets this need?",
+    "options": [
+      "Amazon WorkSpaces Applications",
+      "Amazon WorkSpaces",
+      "Amazon Lightsail",
+      "AWS Device Farm"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "WorkSpaces is a managed desktop-as-a-service offering persistent virtual desktops. WorkSpaces Applications (formerly AppStream 2.0) streams individual applications to a browser instead of providing a full persistent desktop."
+  },
+  {
+    "id": "AWS-D-064",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "cloudConcepts",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "EC2 pricing models",
+    "select": 2,
+    "stem": "A company's application runs on Amazon EC2 at a steady level around the clock and must not be interrupted for the next three years. Which purchase options lower its cost in exchange for a commitment? (Choose two.)",
+    "options": [
+      "Spot Instances",
+      "Compute Savings Plans",
+      "On-Demand Capacity Reservations",
+      "Standard Reserved Instances",
+      "On-Demand Instances"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "explanation": "Compute Savings Plans (up to 66 percent off) and Standard Reserved Instances (up to 72 percent off) both trade a 1- or 3-year commitment for a discount on steady usage. Spot Instances can be cheaper still, but AWS can reclaim them with a two-minute warning, and On-Demand Capacity Reservations reserve capacity at the full On-Demand price."
+  },
+  {
+    "id": "AWS-D-065",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "IAM best practices",
+    "select": 3,
+    "stem": "A security team is writing rules for identity management in its AWS accounts. Which practices follow IAM security best practices? (Choose three.)",
+    "options": [
+      "Grant only the permissions needed",
+      "Share access keys within each team",
+      "Require MFA for human users",
+      "Embed access keys in application code",
+      "Use IAM roles for workloads on AWS",
+      "Give all developers administrator access"
+    ],
+    "correct": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "Least privilege, MFA for people and IAM roles with temporary credentials for workloads are core IAM best practices. Giving developers administrator access can look like a time saver, but it breaks least privilege, and shared or embedded access keys are long-term credentials that leak easily."
+  },
+  {
+    "id": "AWS-D-066",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "AWS IoT Core",
+    "stem": "Thousands of factory sensors must securely connect to AWS and publish telemetry using MQTT, with rules that route the messages to other services. Which service should be used?",
+    "options": [
+      "AWS IoT Core",
+      "Amazon SNS",
+      "Amazon SQS",
+      "AWS Direct Connect"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "IoT Core securely connects devices to AWS over protocols such as MQTT and routes their messages to other services with rules. SNS is a pub/sub notification service for applications and does not manage device connections or identity."
+  },
+  {
+    "id": "AWS-D-067",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "billingPricing",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "AWS Abuse team",
+    "stem": "A company notices that an Amazon EC2 instance in another AWS account is sending spam and port scans to its servers. Whom should the company report this to?",
+    "options": [
+      "AWS Concierge Support Team",
+      "AWS Health Dashboard",
+      "AWS Abuse team",
+      "Technical Account Manager"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The AWS Abuse team (AWS Trust & Safety) investigates reports of AWS resources used for spam, port scanning, DDoS or other abuse. AWS Health Dashboard shows service events affecting your own account and does not take abuse reports."
+  },
+  {
+    "id": "AWS-D-068",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "cloudConcepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "EC2 pricing models",
+    "stem": "A company is launching a short-term project with unpredictable usage that cannot be interrupted and does not allow any long-term commitment. Which pricing model fits?",
+    "options": [
+      "Spot Instances",
+      "Three-year Reserved Instances",
+      "Compute Savings Plans",
+      "On-Demand Instances"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "On-Demand Instances need no commitment and run until the company stops them, which suits short, unpredictable workloads. Savings Plans and Reserved Instances require one- or three-year commitments, and Spot Instances can be interrupted."
+  },
+  {
+    "id": "AWS-D-069",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "securityCompliance",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Security help",
+    "select": 2,
+    "stem": "A company lacks in-house security expertise and wants experts to help design and build its cloud security architecture. Which options provide this hands-on help? (Choose two.)",
+    "options": [
+      "AWS Professional Services",
+      "AWS Trusted Advisor",
+      "AWS consulting partners",
+      "AWS Artifact",
+      "AWS re:Post"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "AWS Professional Services and consulting firms in the AWS Partner Network provide experts who design and implement solutions with the customer. Trusted Advisor is tempting because it gives security recommendations, but its automated checks do not design or build anything, and re:Post offers community answers only."
+  },
+  {
+    "id": "AWS-D-070",
+    "section": "aws",
+    "test": 0,
+    "module": 1,
+    "domain": "technologyServices",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "AWS Amplify",
+    "stem": "Front-end developers want to quickly build, host and deploy a full-stack web and mobile app with built-in authentication and CI/CD, with little backend expertise. Which service fits best?",
+    "options": [
+      "AWS AppSync",
+      "AWS Amplify",
+      "AWS Device Farm",
+      "Amazon API Gateway"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Amplify gives front-end developers tools and managed hosting to build, connect and deploy full-stack web and mobile apps. AppSync is only a managed GraphQL API layer, and Device Farm tests apps on real devices."
+  }
+]

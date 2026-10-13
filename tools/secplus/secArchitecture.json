@@ -1,0 +1,671 @@
+[
+  {
+    "domain": "secArchitecture",
+    "test": 1,
+    "skill": "Shared responsibility",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A company migrates its application servers to an IaaS provider. Under the shared responsibility matrix, which task remains the customer's responsibility?",
+    "options": [
+      "Physical security of the data center",
+      "Replacing failed hypervisor host hardware",
+      "Supplying power and cooling to racks",
+      "Patching the guest operating systems"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "In IaaS the customer manages everything from the guest operating system upward, including patching. Physical security, host hardware and facilities stay with the provider, which is why those tempting choices are wrong."
+  },
+  {
+    "domain": "secArchitecture",
+    "test": 1,
+    "skill": "Infrastructure as code",
+    "difficulty": 1,
+    "format": "multi",
+    "select": 2,
+    "stem": "A DevOps team defines its cloud networks, firewall rules and servers in version-controlled infrastructure as code templates. Which TWO security benefits does this provide MOST directly? (Choose two.)",
+    "options": [
+      "Consistent, repeatable deployments",
+      "Changes tracked in version control",
+      "No need for vulnerability scanning",
+      "Automatic protection from zero-days",
+      "Encryption of every stored file"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Templates rebuild the same configuration every time, which limits drift, and version control gives every change a reviewable history. IaC does not remove the need to scan, because a template can faithfully deploy a vulnerable image."
+  },
+  {
+    "domain": "secArchitecture",
+    "test": 1,
+    "skill": "Serverless",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A developer deploys code as functions that run only when an event triggers them, and the team never manages the underlying servers. Which architecture is this?",
+    "options": [
+      "Microservices",
+      "Containerization",
+      "Serverless",
+      "Virtualization"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Serverless (function as a service) runs event-driven code while the provider manages all servers and scaling. Microservices is tempting, but it describes splitting an application into services that may still run on servers the team manages."
+  },
+  {
+    "domain": "secArchitecture",
+    "test": 1,
+    "skill": "Microservices",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An online retailer splits its monolithic application into small, independently deployable services that communicate through APIs. Which resilience advantage does this microservices design provide?",
+    "options": [
+      "Every component shares one codebase and database",
+      "A failed service does not take down the others",
+      "Fewer APIs means a smaller attack surface",
+      "Patching requires only a single application restart"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Microservices isolate functions, so one failing service can be restarted or scaled without bringing down the whole application. They actually add APIs and therefore attack surface, so the smaller-attack-surface choice is wrong."
+  },
+  {
+    "domain": "secArchitecture",
+    "test": 1,
+    "skill": "Air-gapped networks",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A water utility must protect a safety-critical control network from all internet-borne threats. Which network architecture provides the STRONGEST isolation?",
+    "options": [
+      "VLAN segmentation on the corporate switches",
+      "An air-gapped network with no external connections",
+      "A stateful firewall with a default-deny rule",
+      "A site-to-site VPN to headquarters"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An air gap physically separates the network so there is no path for remote attacks. VLANs and firewalls are logical segmentation and still leave a network path that misconfiguration or exploits could open."
+  },
+  {
+    "domain": "secArchitecture",
+    "test": 1,
+    "skill": "Software-defined networking",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which of the following BEST describes the core principle of software-defined networking?",
+    "options": [
+      "Encrypting branch traffic over the public internet",
+      "Assigning each switch port to a VLAN manually",
+      "Isolating hosts with dedicated physical cabling",
+      "Separating the control plane from the data plane"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "SDN decouples the control plane (routing decisions, made centrally in software) from the data plane that forwards packets. Encrypting branch traffic over the internet describes a VPN or SD-WAN, not SDN itself."
+  },
+  {
+    "domain": "secArchitecture",
+    "test": 1,
+    "skill": "Network appliances",
+    "difficulty": 2,
+    "format": "multi",
+    "select": 2,
+    "stem": "A security team needs devices that can actively block malicious traffic in real time before it reaches the web servers. Which TWO should be deployed inline? (Choose two.)",
+    "options": [
+      "Intrusion prevention system",
+      "Web application firewall",
+      "IDS attached to a network tap",
+      "Passive network tap",
+      "Packet capture appliance"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "An IPS and a WAF sit in the traffic path and can drop malicious requests. An IDS on a tap only sees a copy of the traffic, so it can alert but cannot block."
+  },
+  {
+    "domain": "secArchitecture",
+    "test": 1,
+    "skill": "Embedded systems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A hospital infusion pump runs a real-time operating system on proprietary embedded hardware. Which consideration is MOST likely to limit the security team's options?",
+    "options": [
+      "Excess compute capacity for security agents",
+      "Frequent automatic updates that disrupt clinicians",
+      "Built-in support for enterprise EDR agents",
+      "Limited patch availability from the manufacturer"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Embedded and RTOS devices depend on the manufacturer for firmware updates and usually lack the compute to run security agents. They rarely have excess capacity or EDR support, so those choices describe the opposite of reality."
+  },
+  {
+    "domain": "secArchitecture",
+    "test": 1,
+    "skill": "Containerization",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An administrator learns that a single kernel vulnerability on a host could affect every workload running on it. Which architecture is MOST exposed because workloads share the host kernel?",
+    "options": [
+      "Type 1 hypervisor virtual machines",
+      "Air-gapped physical servers",
+      "Containerization",
+      "Dedicated bare-metal hosts"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Containers share the host operating system kernel, so a kernel flaw can affect all containers on that host. Virtual machines are tempting, but each VM runs its own guest kernel isolated by the hypervisor."
+  },
+  {
+    "domain": "secArchitecture",
+    "test": 1,
+    "skill": "IoT segmentation",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A company deploys hundreds of smart building sensors that ship with default credentials and weak update mechanisms. Which approach BEST reduces the risk they pose to corporate systems?",
+    "options": [
+      "Place them on an isolated IoT network segment",
+      "Join them to the corporate Active Directory domain",
+      "Allow vendor support through open inbound ports",
+      "Put them on the same VLAN as file servers"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Isolating IoT devices on their own segment limits what an attacker can reach if a weak device is compromised. Putting them on the file server VLAN or opening inbound ports expands the attack surface instead."
+  },
+  {
+    "domain": "secArchitecture",
+    "test": 1,
+    "skill": "Failure modes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An inline IPS protecting a payment network fails, and company policy states that security takes priority over availability. How should the IPS be configured to behave?",
+    "options": [
+      "Fail-closed, blocking all traffic",
+      "Fail-open, passing all traffic",
+      "Switch to passive monitoring",
+      "Reroute traffic through the load balancer"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Fail-closed stops all traffic when the device fails, preserving security at the cost of availability. Fail-open keeps traffic flowing but uninspected, which suits availability-first environments, not this one."
+  },
+  {
+    "domain": "secArchitecture",
+    "test": 1,
+    "skill": "Device placement",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A team wants to inspect network traffic for attacks without adding latency or a point of failure to the production link. Which deployment BEST meets this requirement?",
+    "options": [
+      "An IPS deployed inline",
+      "A WAF in front of the web server",
+      "An IDS connected to a network tap",
+      "A proxy server in transparent mode"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A passive IDS on a tap or SPAN port sees copies of traffic, so it cannot slow or break the link. An inline IPS can block attacks but sits in the traffic path, adding latency and a possible failure point."
+  },
+  {
+    "domain": "secArchitecture",
+    "test": 1,
+    "skill": "Jump servers",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Administrators must manage servers in a secure network zone, but direct connections from their workstations are prohibited. Which device should they connect through first?",
+    "options": [
+      "Forward proxy",
+      "Load balancer",
+      "Jump server",
+      "Network tap"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A jump server is a hardened, monitored host in the secure zone used as the single entry point for administration. A forward proxy is tempting, but it brokers outbound web requests rather than administrative sessions."
+  },
+  {
+    "domain": "secArchitecture",
+    "test": 1,
+    "skill": "802.1X authentication",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A company configures switch ports so devices receive network access only after authenticating with EAP against a RADIUS server. In this 802.1X design, which component is the authenticator?",
+    "options": [
+      "The client supplicant",
+      "The RADIUS server",
+      "The certificate authority",
+      "The switch"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "In 802.1X the switch or access point is the authenticator that relays EAP messages between the supplicant and the authentication server. The RADIUS server is tempting, but it is the authentication server that makes the decision."
+  },
+  {
+    "domain": "secArchitecture",
+    "test": 1,
+    "skill": "Web application firewalls",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A public web application is repeatedly targeted with SQL injection and cross-site scripting attempts. Which security device is BEST suited to block these attacks?",
+    "options": [
+      "Web application firewall",
+      "Layer 4 stateful firewall",
+      "Network load balancer",
+      "Site-to-site VPN concentrator"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A WAF inspects HTTP requests and blocks application-layer attacks such as SQL injection and XSS. A layer 4 firewall only sees addresses and ports, so it cannot recognize malicious content inside allowed web traffic."
+  },
+  {
+    "domain": "secArchitecture",
+    "test": 1,
+    "skill": "Next-gen firewalls",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A firewall must block one specific social media application even though it uses port 443 like all other web traffic. Which capability is required?",
+    "options": [
+      "Layer 4 port filtering",
+      "Stateless packet filtering",
+      "Network address translation",
+      "Layer 7 application awareness"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Next-generation firewalls inspect traffic at layer 7 and can identify individual applications regardless of port. Layer 4 filtering would have to block all of port 443 and cannot tell applications apart."
+  },
+  {
+    "domain": "secArchitecture",
+    "test": 2,
+    "skill": "IPSec modes",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A site-to-site VPN must encrypt the entire original IP packet, including its headers, between two gateways. Which IPSec configuration should be used?",
+    "options": [
+      "AH in transport mode",
+      "ESP in transport mode",
+      "ESP in tunnel mode",
+      "AH in tunnel mode"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "ESP provides encryption, and tunnel mode wraps the whole original packet in a new header, which suits gateway-to-gateway VPNs. Transport mode protects only the payload, and AH provides integrity without encryption."
+  },
+  {
+    "domain": "secArchitecture",
+    "test": 2,
+    "skill": "SD-WAN",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A retailer with 200 branches wants to replace costly MPLS circuits with ordinary internet links while centrally managing and prioritizing traffic paths. Which technology BEST fits?",
+    "options": [
+      "Dedicated leased lines",
+      "Clientless TLS VPN",
+      "Network access control",
+      "SD-WAN"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "SD-WAN uses software to manage multiple internet and private links centrally, choosing paths by policy. A clientless TLS VPN is tempting, but it serves individual remote users through a browser, not branch-to-branch routing."
+  },
+  {
+    "domain": "secArchitecture",
+    "test": 2,
+    "skill": "SASE",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A mostly remote organization wants cloud-delivered networking combined with secure web gateway, CASB and zero trust access in one service. Which framework BEST describes this?",
+    "options": [
+      "Software-defined networking",
+      "Secure access service edge",
+      "Unified threat management",
+      "Screened subnet architecture"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "SASE delivers SD-WAN and security services such as SWG, CASB and ZTNA from the cloud near the user. UTM is tempting, but it is an on-premises appliance bundling security functions at one network edge."
+  },
+  {
+    "domain": "secArchitecture",
+    "test": 2,
+    "skill": "Screened subnets",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A company is deploying a public-facing web server that must be reachable from the internet while keeping the internal network protected. Where should the server be placed?",
+    "options": [
+      "On the internal server VLAN",
+      "Behind the internal database firewall",
+      "On the management network",
+      "In a screened subnet"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A screened subnet (DMZ) sits between the internet and the internal network, so a compromised public server does not give direct access inside. Placing it on the internal VLAN would expose internal systems to internet-originated attacks."
+  },
+  {
+    "domain": "secArchitecture",
+    "test": 2,
+    "skill": "Data states",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A security architect wants to protect sensitive records while they are being processed in a server's memory. Which data state does this address?",
+    "options": [
+      "Data at rest",
+      "Data in use",
+      "Data in transit",
+      "Archived data"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Data being processed in memory is data in use. Data at rest is stored on disk or other media, which is not where these records are while they are processed."
+  },
+  {
+    "domain": "secArchitecture",
+    "test": 2,
+    "skill": "Data sovereignty",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A European company learns that customer records stored in a cloud region abroad are subject to the laws of that country. Which concept does this describe?",
+    "options": [
+      "Data masking",
+      "Data classification",
+      "Data sovereignty",
+      "Data retention"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Data sovereignty means data is subject to the laws of the country where it is physically stored. Data classification is tempting, but it labels data by sensitivity and does not address which nation's laws apply."
+  },
+  {
+    "domain": "secArchitecture",
+    "test": 2,
+    "skill": "Data obfuscation",
+    "difficulty": 3,
+    "format": "multi",
+    "select": 2,
+    "stem": "A payment team must protect stored card numbers, yet authorized staff need to recover the original values to process refunds. Which TWO methods allow the original data to be recovered? (Choose two.)",
+    "options": [
+      "Tokenization with a secure vault",
+      "Symmetric encryption with AES",
+      "One-way hashing with SHA-256",
+      "Truncation to the last four digits",
+      "Redaction from stored records"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "A token maps back to the original through the vault, and encrypted data can be decrypted with the key. Hashing is one-way by design, so the original card number cannot be recovered from it."
+  },
+  {
+    "domain": "secArchitecture",
+    "test": 2,
+    "skill": "Geolocation controls",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Regulations require that a company's customer database be accessible only to users located within its home country. Which control BEST enforces this requirement?",
+    "options": [
+      "Salted hashing of all stored customer records",
+      "Role-based permissions for the sales department",
+      "Geolocation-based access restrictions",
+      "Masking account numbers in printed reports"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Geographic restrictions use the user's geolocation, such as IP location, to allow or deny access by country. Role-based permissions control what a role can do but not where the user is connecting from."
+  },
+  {
+    "domain": "secArchitecture",
+    "test": 2,
+    "skill": "Data types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Proprietary formulas that give a company its competitive edge, protected by keeping them confidential rather than patenting them, are BEST described as which data type?",
+    "options": [
+      "Trade secret",
+      "Regulated data",
+      "Legal information",
+      "Financial information"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A trade secret is valuable proprietary information protected by secrecy. Regulated data is tempting, but that term covers data governed by laws such as HIPAA or PCI DSS rather than commercial secrets."
+  },
+  {
+    "domain": "secArchitecture",
+    "test": 2,
+    "skill": "Data classification",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which data classification label is intended for information that can be released freely without harming the organization?",
+    "options": [
+      "Restricted",
+      "Public",
+      "Confidential",
+      "Critical"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Public data carries no harm if disclosed, such as marketing material. Restricted and confidential labels mark data whose disclosure would cause damage, and critical marks data essential to operations."
+  },
+  {
+    "domain": "secArchitecture",
+    "test": 2,
+    "skill": "High availability",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two database servers share storage, and one automatically takes over the workload when the other fails. Which high availability approach is this?",
+    "options": [
+      "Round-robin load balancing",
+      "Cold site recovery",
+      "Failover clustering",
+      "Platform diversity"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A failover cluster has nodes that share resources and take over for a failed member. Load balancing is tempting, but it spreads requests across independent servers rather than handing a shared workload from one node to another."
+  },
+  {
+    "domain": "secArchitecture",
+    "test": 2,
+    "skill": "Recovery sites",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company needs a recovery site that already has hardware and network connectivity but needs recent data restored before operations resume. Which site type fits?",
+    "options": [
+      "Hot site",
+      "Cold site",
+      "Mobile site",
+      "Warm site"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A warm site has equipment and connectivity but not current data, balancing cost against recovery time. A hot site is fully mirrored and ready immediately, while a cold site has only space and power."
+  },
+  {
+    "domain": "secArchitecture",
+    "test": 2,
+    "skill": "Geographic dispersion",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A company's primary data center and its backup site are located in the same coastal flood zone. Which resilience principle does this arrangement violate?",
+    "options": [
+      "Geographic dispersion",
+      "Platform diversity",
+      "Capacity planning",
+      "Journaling"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Geographic dispersion places sites far enough apart that one regional disaster cannot affect both. Platform diversity is tempting, but it concerns using different technologies, not different locations."
+  },
+  {
+    "domain": "secArchitecture",
+    "test": 2,
+    "skill": "Multi-cloud",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "To avoid one provider outage taking down every service, a company runs the same workloads across two different public cloud providers. Which strategy is this?",
+    "options": [
+      "Hybrid cloud",
+      "Multi-cloud",
+      "Serverless architecture",
+      "Vertical scaling"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Multi-cloud uses more than one cloud provider to avoid dependence on a single vendor. Hybrid cloud is tempting, but it combines on-premises infrastructure with a cloud provider."
+  },
+  {
+    "domain": "secArchitecture",
+    "test": 2,
+    "skill": "Platform diversity",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An architect runs the web tier on both Linux and Windows servers so that one operating system vulnerability cannot disable the entire service. Which concept is applied?",
+    "options": [
+      "Geographic dispersion",
+      "Capacity planning",
+      "Platform diversity",
+      "Continuity of operations"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Platform diversity uses different operating systems or vendors so a single flaw does not affect everything. Geographic dispersion is tempting, but it spreads systems across locations rather than across technologies."
+  },
+  {
+    "domain": "secArchitecture",
+    "test": 2,
+    "skill": "Capacity planning",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "During continuity planning, a manager verifies that enough cross-trained staff exist to run critical systems if key employees are unavailable. Which capacity planning area is this?",
+    "options": [
+      "People",
+      "Technology",
+      "Infrastructure",
+      "Power"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Capacity planning covers people, technology and infrastructure, and staffing with adequate skills is the people element. Technology is tempting, but it refers to systems and software capacity, not personnel."
+  },
+  {
+    "domain": "secArchitecture",
+    "test": 0,
+    "skill": "Resilience testing",
+    "difficulty": 3,
+    "format": "matrix",
+    "stem": "A company tests its recovery capabilities in several ways. For each activity, select the testing method it describes.",
+    "rows": [
+      "Staff talk through a scenario at a table",
+      "New system runs beside production on live data",
+      "Workloads shift to the standby cluster",
+      "Team responds to staged events on test systems"
+    ],
+    "columns": [
+      "Tabletop exercise",
+      "Simulation",
+      "Failover test",
+      "Parallel processing"
+    ],
+    "correct": [
+      0,
+      3,
+      2,
+      1
+    ],
+    "explanation": "A discussion-only walkthrough is a tabletop exercise, running the new system alongside production with live data is parallel processing, moving workloads to the standby is a failover test, and responding hands-on to staged events is a simulation. The simulation is easy to mistake for a tabletop, but a tabletop never touches systems."
+  },
+  {
+    "domain": "secArchitecture",
+    "test": 0,
+    "skill": "Journaling",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A database administrator must recover transactions up to the moment before a crash, beyond what the last full backup contains. Which technique enables this?",
+    "options": [
+      "Weekly offsite tape rotation",
+      "Journaling",
+      "A monthly virtual machine snapshot",
+      "Encrypting the backup media"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Journaling records each change as it occurs, so transactions can be replayed after restoring the last backup. Snapshots are tempting, but a monthly snapshot only captures one point in time."
+  },
+  {
+    "domain": "secArchitecture",
+    "test": 0,
+    "skill": "Backup strategy",
+    "difficulty": 2,
+    "format": "multi",
+    "select": 2,
+    "stem": "After a ransomware attack encrypted both servers and the backup share, a company redesigns its backups. Which TWO practices BEST ensure it can recover next time? (Choose two.)",
+    "options": [
+      "Keep an immutable or offline copy",
+      "Test restores on a regular schedule",
+      "Store backups on the same file server",
+      "Give all users write access to backups",
+      "Back up critical data once a quarter"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "An immutable or offline copy cannot be encrypted by ransomware that reaches the network, and regular restore tests prove the backups actually work. Quarterly backups would still run, but they could lose up to three months of data."
+  },
+  {
+    "domain": "secArchitecture",
+    "test": 0,
+    "skill": "Power resilience",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A data center must keep its servers running for several hours during an extended utility power outage. Which solution is MOST appropriate?",
+    "options": [
+      "A backup generator",
+      "A UPS by itself",
+      "A surge protector",
+      "Dual power supplies"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Generators supply power for hours or days as long as they have fuel. A UPS is tempting, but its batteries are designed to bridge only minutes until a generator starts or systems shut down cleanly."
+  }
+]

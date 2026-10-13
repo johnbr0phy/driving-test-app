@@ -1,0 +1,17 @@
+[
+  {
+    "id": "NCLEX-CS1",
+    "title": "Case study: heart failure exacerbation",
+    "text": "Emergency department, 1400. A 72-year-old client with heart failure (ejection fraction 30%), hypertension and type 2 diabetes comes in with 4 days of worsening shortness of breath. The client says, \"I have to sleep sitting up in my recliner now.\" The client ran out of furosemide 1 week ago and ate ham and canned soup at a family gathering over the weekend.\n\nHome medications: furosemide 40 mg PO daily, lisinopril 10 mg PO daily, metoprolol succinate 50 mg PO daily, metformin 500 mg PO twice daily.\n\n| Assessment | Finding |\n|---|---|\n| BP | 158/94 mm Hg |\n| Heart rate | 108/min, regular |\n| Respirations | 28/min |\n| SpO2 | 89% on room air |\n| Temperature | 98.4 F |\n| Weight | 84.5 kg (clinic weight 2 weeks ago: 81.0 kg) |\n| Neck veins | Distended with head of bed at 45 degrees |\n| Ankles | 3+ pitting edema on both sides |"
+  },
+  {
+    "id": "NCLEX-CS2",
+    "title": "Case study: urinary sepsis in an older adult",
+    "text": "Medical unit, 0700. An 81-year-old client from an assisted living facility was admitted overnight with a urinary tract infection. History: type 2 diabetes, hypertension, mild cognitive impairment. Weight 58 kg. Baseline per her daughter: oriented to person and place, follows a conversation, forgets recent events, walks with a walker.\n\nHome medications: metformin 1,000 mg PO twice daily, lisinopril 20 mg PO daily, amlodipine 5 mg PO daily. No known allergies.\n\n| 0700 assessment | Finding |\n|---|---|\n| BP | 88/50 mm Hg (home average 142/80) |\n| Heart rate | 112/min |\n| Respirations | 24/min |\n| Temperature | 101.8 F |\n| SpO2 | 94% on room air |\n| Urine | 60 mL of dark, cloudy urine since 2300 |\n\nThe daughter says, \"She's not herself. Yesterday she was chatting with me on the phone.\""
+  },
+  {
+    "id": "NCLEX-CS3",
+    "title": "Case study: diabetic ketoacidosis",
+    "text": "Emergency department, 2200. A 19-year-old college student with type 1 diabetes comes in with 2 days of vomiting and abdominal pain. The roommate says the client stopped taking insulin glargine 2 days ago \"because I wasn't eating.\" The client is drowsy but answers questions.\n\n| Assessment | Finding |\n|---|---|\n| BP | 98/58 mm Hg |\n| Heart rate | 124/min |\n| Respirations | 32/min, deep |\n| Temperature | 99.1 F |\n| Weight | 62 kg |\n| Bedside glucose | 486 mg/dL |"
+  }
+]

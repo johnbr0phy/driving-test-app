@@ -58,6 +58,11 @@ const nextConfig: NextConfig = {
       { source: "/htl", destination: "/htl-practice-test", permanent: true },
       { source: "/cst", destination: "/cst-practice-test", permanent: true },
       { source: "/crcst", destination: "/crcst-practice-test", permanent: true },
+      // These exams moved to the v2 engine (tests 1 and 2); old v1 test ids go to the dashboard.
+      { source: "/emt/test/:id(17\\d\\d)/:rest*", destination: "/emt", permanent: true },
+      { source: "/aws-cloud-practitioner/test/:id(23\\d\\d)/:rest*", destination: "/aws-cloud-practitioner", permanent: true },
+      { source: "/comptia-a-plus/test/:id(24\\d\\d)/:rest*", destination: "/comptia-a-plus", permanent: true },
+      { source: "/comptia-security-plus/test/:id(28\\d\\d)/:rest*", destination: "/comptia-security-plus", permanent: true },
     ];
   },
   async headers() {

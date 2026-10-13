@@ -99,7 +99,7 @@ export const TEAS: ExamV2Config = {
       "Hit your goal on the full test.",
       "Goal hit. Schedule your TEAS.",
     ],
-    sourceLine: "Matched to the ATI TEAS 7 blueprint and timing. Every item here is four-option single answer; the real exam also has other item types. Not affiliated with ATI.",
+    sourceLine: "Matched to the ATI TEAS 7 blueprint and timing. Includes select-all-that-apply, fill-in and ordered-response items like the real exam; image hot spots are not modelled. Not affiliated with ATI.",
     scoreNote: "Scores are percent correct per section, like the ATI score report. Program cutoffs vary; many ask for 60 to 70 percent.",
   },
 };

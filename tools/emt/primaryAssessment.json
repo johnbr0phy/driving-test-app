@@ -1,0 +1,1524 @@
+[
+  {
+    "domain": "primaryAssessment",
+    "test": 1,
+    "skill": "Patient approach",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "You reach a 45-year-old man sitting on a park bench holding his chest. He is alert and watching you approach. What should you do first?",
+    "options": [
+      "Introduce yourself and ask if you may help him",
+      "Ask bystanders for his medical history first",
+      "Place a nonrebreather mask on him at 15 L/min",
+      "Begin a head-to-toe exam while he describes his pain"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An alert adult must give expressed consent, and introducing yourself builds the rapport that makes the rest of the assessment work. Applying a mask or touching him without consent is unsafe for rapport and can be battery."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 1,
+    "skill": "Communication barriers",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A 62-year-old woman who speaks only Vietnamese has abdominal pain. Her 10-year-old grandson offers to translate. The best approach is to:",
+    "options": [
+      "Speak English loudly and slowly to her",
+      "Request a trained interpreter or language line",
+      "Skip the history and transport without questions",
+      "Rely on the grandson for all medical questions"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A trained interpreter gives accurate, private communication, while a child may omit or misread sensitive details. Use the grandson only for urgent basics when nothing better exists."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 1,
+    "skill": "Pediatric assessment",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 4-year-old girl with a painful, deformed forearm clings to her mother and cries as you approach. To assess her, you should:",
+    "options": [
+      "Separate her from her mother to reduce distraction",
+      "Promise her that nothing you do will hurt",
+      "Examine her while she sits on her mother's lap",
+      "Start at her head and move quickly down"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Keeping a young child with the caregiver lowers fear and improves cooperation, and toddlers tolerate a toe-to-head approach better. Promising no pain is dishonest and destroys trust when it does hurt."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 1,
+    "skill": "Behavioral emergencies",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 30-year-old man is pacing and shouting at a bus stop. Police have secured the scene. He yells that he does not want help. You should:",
+    "options": [
+      "Restrain him on the cot before trying to talk with him",
+      "Ignore what he says and start your exam",
+      "Stand close and firmly order him to sit",
+      "Speak calmly, keep a safe distance, and listen"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A calm voice, a safe distance and active listening de-escalate an agitated patient and protect the crew. Crowding or restraining him without need escalates the situation and restraint requires enough personnel and protocol."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 1,
+    "skill": "General impression",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "You enter a room and see a 58-year-old woman slumped in a chair, gray in color, with gurgling respirations. Your next action should be to:",
+    "options": [
+      "Open and suction her airway immediately",
+      "Measure her blood pressure and pulse rate",
+      "Obtain a SAMPLE history from her husband",
+      "Ask her husband when she was last well"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Gray skin and gurgling seen from the doorway mean she is sick and the airway is threatened, so it is managed at once. History and vital signs come after life threats to the airway are fixed."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 1,
+    "skill": "Pediatric assessment triangle",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The three components of the pediatric assessment triangle are:",
+    "options": [
+      "Pulse, blood pressure, and respiratory rate",
+      "Appearance, work of breathing, circulation to skin",
+      "Airway, breathing, and circulation",
+      "Eye opening, best verbal response, and best motor response"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The pediatric assessment triangle is a hands-off, across-the-room look at appearance, work of breathing and skin circulation. Airway, breathing, circulation is the hands-on primary survey that follows, and eye, verbal, motor is the GCS."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 1,
+    "skill": "Pediatric assessment triangle",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "A 2-year-old is ill. For each finding, specify which part of the pediatric assessment triangle it belongs to.",
+    "rows": [
+      "Does not track your face",
+      "Nasal flaring",
+      "Mottled skin on the legs",
+      "Limp muscle tone",
+      "Retractions between the ribs",
+      "Pale lips and skin"
+    ],
+    "columns": [
+      "Appearance",
+      "Work of breathing",
+      "Circulation to skin"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      0,
+      1,
+      2
+    ],
+    "explanation": "Gaze and tone are appearance, flaring and retractions are work of breathing, and mottling and pallor are circulation to skin. Pale lips may tempt a breathing answer, but the triangle scores skin color under circulation."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 1,
+    "skill": "General impression",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 34-year-old woman lies very still on her side with her knees drawn to her chest and refuses to move. This position most suggests:",
+    "options": [
+      "Respiratory distress from a lung infection such as pneumonia",
+      "Low blood sugar with confusion",
+      "The recovery phase after a seizure",
+      "Abdominal pain, possibly peritoneal irritation"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Patients with peritoneal irritation lie still with knees drawn up because movement worsens the pain. A patient in respiratory distress usually sits upright or tripods rather than curling on the side."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 1,
+    "skill": "Hemorrhage control",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A 25-year-old man stabbed in the thigh is talking to you. Bright red blood is spurting and pooling under him. Your first action is to:",
+    "options": [
+      "Control the bleeding immediately",
+      "Open his airway with a jaw thrust",
+      "Apply oxygen by nonrebreather mask",
+      "Count his respirations and radial pulse"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Massive external bleeding is an obvious life threat that can kill in minutes, so it is controlled first. He is talking, so his airway is open and does not need to be opened before the bleeding is stopped."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 1,
+    "skill": "AVPU",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A 72-year-old woman found in bed opens her eyes and moans only when you speak loudly to her. On the AVPU scale she is:",
+    "options": [
+      "Alert",
+      "Responsive to verbal stimuli",
+      "Unresponsive",
+      "Responsive to painful stimuli"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "She responds to your voice, so she is V on AVPU even though the response is only a moan. She is not P, because pain was not needed to get a response."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 1,
+    "skill": "AVPU",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 19-year-old found after a party does not respond to your voice but groans and pulls away when you pinch his trapezius. This means:",
+    "options": [
+      "U on AVPU, and he needs CPR now",
+      "A on AVPU, and he is simply drunk",
+      "P on AVPU; he may not protect his airway",
+      "V on AVPU, and his airway is fully protected"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Responding only to a painful stimulus places him at P, and patients at P or U often cannot protect their own airway. He reacts to pain, so he is not U, and nothing suggests cardiac arrest."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 1,
+    "skill": "Glasgow Coma Scale",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "After a fall, a 40-year-old man opens his eyes only to pain, makes incomprehensible sounds, and withdraws from pain. His Glasgow Coma Scale score is:",
+    "options": [
+      "7",
+      "10",
+      "9",
+      "8"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Eye opening to pain is 2, incomprehensible sounds is 2, and withdrawal from pain is 4, so 2 + 2 + 4 = 8. A score of 7 would require abnormal flexion, which scores 3 for motor."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 1,
+    "skill": "Glasgow Coma Scale",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 28-year-old woman in a crash opens her eyes spontaneously, is confused about the date, and follows commands. Her Glasgow Coma Scale score is:",
+    "options": [
+      "14",
+      "12",
+      "15",
+      "13"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Spontaneous eye opening is 4, confused speech is 4, and obeying commands is 6, so 4 + 4 + 6 = 14. A score of 15 requires fully oriented speech, which she lacks."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 1,
+    "skill": "Altered mental status",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An 80-year-old woman has been confused for 2 days, with a fever and foul-smelling urine. Her daughter says she is normally sharp. You should conclude:",
+    "options": [
+      "This is a psychiatric problem, not medical",
+      "New confusion may signal infection and is significant",
+      "She is probably just tired and dehydrated from poor sleep",
+      "Confusion like this is normal at her age"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A sudden change in mental status in an older adult is often the main sign of infection or another serious illness. Never assume confusion is normal aging, especially when the family says it is new."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 1,
+    "skill": "Infant responsiveness",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 6-month-old lies limp in her crib and does not respond when her mother calls her. To check responsiveness, you should:",
+    "options": [
+      "Pinch her trapezius muscle hard",
+      "Shake her firmly by the shoulders",
+      "Tap or flick the soles of her feet",
+      "Rub her sternum firmly with your knuckles"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Tapping or flicking the soles of the feet is the standard gentle stimulus for an infant. Shaking an infant can cause brain injury, and adult pain stimuli are not appropriate."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 1,
+    "skill": "Airway management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 65-year-old man is supine after a witnessed seizure with no trauma. He has snoring respirations at 14 per minute. Your first action is to:",
+    "options": [
+      "Begin BVM ventilations at 10 breaths per minute",
+      "Apply a nonrebreather mask at 15 L/min",
+      "Suction his mouth for 15 seconds",
+      "Open the airway with a head-tilt chin-lift"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Snoring means the tongue is partly blocking the upper airway, which is fixed by repositioning. Oxygen through a partly blocked airway does little, and his rate of 14 does not by itself call for ventilation."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 1,
+    "skill": "Airway sounds",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "An adult has noisy breathing. Which sounds point to a problem in the upper airway? Select all that apply.",
+    "options": [
+      "Snoring on inspiration",
+      "Gurgling with each breath",
+      "High-pitched inspiratory stridor",
+      "Expiratory wheezing",
+      "Fine crackles at the bases"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Snoring (the tongue), gurgling (fluid) and stridor (swelling or a foreign body) come from the upper airway and call for positioning, suction or rapid transport. Wheezing comes from narrowed lower airways and crackles from fluid in the alveoli."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 1,
+    "skill": "Pediatric airway",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A feverish 3-year-old girl sits upright, drooling, with high-pitched inspiratory stridor. She is anxious but alert. You should:",
+    "options": [
+      "Lay her supine and insert an oral airway to hold it open",
+      "Keep her calm with her parent and transport",
+      "Look at her throat with a tongue depressor",
+      "Give 5 back slaps and 5 chest thrusts"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Drooling, fever and stridor suggest epiglottitis, and upsetting her or probing the throat can cause complete obstruction. Keep her in a position of comfort with her parent, give oxygen as tolerated, and transport."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 1,
+    "skill": "Airway obstruction",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A 35-year-old man in a restaurant clutches his throat. He cannot speak or cough and his lips are turning blue. You should:",
+    "options": [
+      "Give 2 rescue breaths, then reassess",
+      "Encourage him to keep coughing hard",
+      "Give back blows and abdominal thrusts",
+      "Perform a blind finger sweep"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Inability to speak or cough means a severe obstruction, treated in a conscious adult with cycles of 5 back blows and 5 abdominal thrusts per current guidelines and local protocol. Coughing is only encouraged in a mild obstruction with good air exchange, and blind finger sweeps can push the object deeper."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 1,
+    "skill": "Airway management",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A 22-year-old motorcyclist is unresponsive at a crash scene with snoring respirations. The best way to open his airway is the:",
+    "options": [
+      "Tongue-jaw lift with neck extension",
+      "Head-tilt chin-lift maneuver",
+      "Head tilt with the neck fully hyperextended",
+      "Jaw-thrust maneuver without head tilt"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A jaw thrust opens the airway while keeping the cervical spine in line for a patient with possible spinal injury. If the jaw thrust does not open the airway, the airway takes priority and a head tilt is then used."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 1,
+    "skill": "Airway adjuncts",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "An unresponsive 50-year-old with no gag reflex needs an oropharyngeal airway. Place the insertion steps in order.",
+    "options": [
+      "Insert with the tip toward the palate",
+      "Rest the flange on the lips",
+      "Measure mouth corner to earlobe",
+      "Rotate 180 degrees while advancing",
+      "Open the mouth with crossed fingers"
+    ],
+    "correct": [
+      2,
+      4,
+      0,
+      3,
+      1
+    ],
+    "explanation": "Size the airway first, open the mouth, insert it tip up so it slides over the tongue, then rotate it into place until the flange rests on the lips. Rotating before the tip reaches the back of the tongue can push the tongue into the pharynx."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 1,
+    "skill": "Airway adjuncts",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A 45-year-old man still snores after repositioning following a seizure. His teeth are clenched and he has a gag reflex. There is no head trauma. The best adjunct is:",
+    "options": [
+      "An oropharyngeal airway",
+      "A lubricated nasopharyngeal airway",
+      "A supraglottic airway device",
+      "A bite block forced between the teeth"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An NPA is tolerated by patients with a gag reflex and does not need the mouth opened. An OPA or supraglottic airway would trigger gagging and vomiting in a patient who still gags."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 1,
+    "skill": "Airway adjuncts",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A 30-year-old assaulted with a bat has bruising behind both ears and clear fluid draining from his nose. He has snoring respirations. Which is contraindicated?",
+    "options": [
+      "A jaw-thrust maneuver",
+      "Suctioning blood from the mouth",
+      "A nasopharyngeal airway",
+      "Supplemental oxygen"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Battle's sign and fluid from the nose point to a basilar skull fracture, so an NPA could enter the cranial vault. Jaw thrust, oral suction and oxygen are all appropriate."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 1,
+    "skill": "Airway burns",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 40-year-old man rescued from a house fire has singed nasal hair, soot in his mouth, and a hoarse voice. He is alert. This means:",
+    "options": [
+      "He needs only a nasal cannula at 2 L/min",
+      "Minor smoke irritation that is not urgent",
+      "He can wait for a full secondary exam on scene",
+      "His airway may swell shut; transport rapidly"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Singed nasal hair, soot and hoarseness are signs of an airway burn, and swelling can close the airway quickly. He needs high-flow oxygen, ALS and rapid transport rather than delay on scene."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 1,
+    "skill": "Primary assessment",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "You find a 48-year-old man slumped in a chair with no trauma. He moans when you speak. Place the primary assessment steps in order.",
+    "options": [
+      "Assess breathing adequacy",
+      "Form a general impression",
+      "Decide transport priority",
+      "Open and assess the airway",
+      "Check pulse, skin and bleeding",
+      "Check responsiveness with AVPU"
+    ],
+    "correct": [
+      1,
+      5,
+      3,
+      0,
+      4,
+      2
+    ],
+    "explanation": "The general impression and AVPU come first, then airway, breathing and circulation in that order, ending with a transport decision. In a breathing medical patient without major bleeding, circulation does not come before the airway."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 1,
+    "skill": "Pediatric breathing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 5-year-old with asthma has respirations of 44, retractions, and speaks in short phrases. SpO2 is 91%. Her breathing is best described as:",
+    "options": [
+      "Anxiety hyperventilation that needs coaching",
+      "Respiratory distress; the rate is too fast",
+      "Normal, since children breathe faster than adults",
+      "Apnea requiring immediate CPR"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Normal respirations for a school-age child are about 20 to 30, so 44 with retractions and low SpO2 is distress. Children do breathe faster than adults, but not this fast."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 1,
+    "skill": "Pediatric breathing",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A sleepy 4-month-old with bronchiolitis has shallow respirations of 12 per minute with pauses. Pulse is 90. You should:",
+    "options": [
+      "Give blow-by oxygen and observe her closely en route",
+      "Apply a nasal cannula at 2 L/min",
+      "Ventilate with a BVM at 20-30 per minute",
+      "Start chest compressions at 15:2"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An infant should breathe 30 to 60 times a minute, so 12 with pauses is inadequate and needs ventilation at 1 breath every 2 to 3 seconds. Her pulse is low but above 60, so ventilation, not compressions, comes first."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 1,
+    "skill": "Agonal respirations",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A 59-year-old man collapsed at work. He is unresponsive and makes occasional gasping breaths about every 15 seconds. These breaths should be treated as:",
+    "options": [
+      "A normal post-fainting breathing pattern",
+      "Adequate breathing at a slow rate",
+      "Hyperventilation from anxiety",
+      "Agonal gasps, not effective breathing"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Occasional gasps in an unresponsive patient are agonal respirations and are a sign of cardiac arrest. Mistaking them for breathing delays CPR and the AED."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 2,
+    "skill": "Respiratory distress",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A 67-year-old woman with COPD sits in a tripod position, uses her neck muscles to breathe, speaks two words at a time, and has cyanotic lips. Respirations are 32. This indicates:",
+    "options": [
+      "Severe respiratory distress",
+      "A normal pattern for a COPD patient",
+      "Anxiety with adequate breathing",
+      "Mild distress typical of stable COPD"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Tripod position, accessory muscle use, two-word dyspnea and cyanosis are all signs of inadequate breathing. COPD patients may live with some breathlessness, but these findings are never their baseline."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 2,
+    "skill": "Breath sounds",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 70-year-old man with heart failure has crackles in both lower lungs and an SpO2 of 88%. Crackles most likely indicate:",
+    "options": [
+      "A partial upper airway obstruction",
+      "Fluid in the small airways and alveoli",
+      "Air trapped in the pleural space",
+      "Narrowed lower airways from bronchospasm"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Crackles, or rales, are fine popping sounds caused by fluid in the small airways, typical of pulmonary edema in heart failure. Bronchospasm causes wheezing, and upper airway obstruction causes stridor."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 2,
+    "skill": "Oxygen therapy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 30-year-old woman, 30 weeks pregnant with pneumonia, is alert with respirations of 22 and good chest rise. SpO2 is 91%. You should:",
+    "options": [
+      "Begin BVM ventilations at 10 per minute",
+      "Withhold oxygen to avoid harming the developing fetus",
+      "Give oxygen; her ventilation is adequate",
+      "Insert an oral airway and assist breaths"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "She is alert with an adequate rate and depth but is hypoxic, so she needs oxygen, not assisted ventilation. Oxygen protects the fetus too, so withholding it is wrong."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 2,
+    "skill": "Pulse oximetry",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "In which situations can a pulse oximetry reading be inaccurate? Select all that apply.",
+    "options": [
+      "Suspected carbon monoxide poisoning",
+      "Cold fingers with poor perfusion",
+      "Dark nail polish on the finger",
+      "Shivering with a moving hand",
+      "Warm, still, well-perfused finger",
+      "Oxygen by nasal cannula"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "Carbon monoxide reads as oxygen and gives a falsely normal value, while cold fingers, dark polish and motion give low or erratic readings. Supplemental oxygen raises the true saturation but does not make the reading wrong."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 2,
+    "skill": "Pulse oximetry",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A 77-year-old woman with cold hands and dark nail polish has an SpO2 of 82% with an erratic waveform. She is pink and speaking full sentences. You should:",
+    "options": [
+      "Move the probe to a warmer site without polish",
+      "Begin BVM ventilations immediately",
+      "Accept the reading and call for ALS",
+      "Stop using pulse oximetry on this call"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Cold fingers and dark nail polish cause false low readings, and her clinical picture does not match the number. Treat the patient, not the monitor, and recheck at a better site such as another finger or the earlobe."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 2,
+    "skill": "Infant pulse check",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "In an unresponsive infant, the preferred site to check for a pulse is the:",
+    "options": [
+      "Carotid artery",
+      "Brachial artery",
+      "Dorsalis pedis artery",
+      "Radial artery"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The brachial artery on the inside of the upper arm is the recommended pulse check site for infants. An infant's short, chubby neck makes the carotid pulse hard to find."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 2,
+    "skill": "Shock recognition",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A 45-year-old man is awake after a car crash. You cannot feel a radial pulse, but his carotid pulse is weak and rapid. This suggests:",
+    "options": [
+      "Cardiac arrest requiring chest compressions",
+      "An isolated injury to his arm only",
+      "Poor perfusion, likely decompensated shock",
+      "A normal finding in an anxious patient"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A missing radial pulse with a weak, fast carotid pulse means blood pressure is low enough to lose peripheral pulses. He has a carotid pulse, so this is shock, not cardiac arrest."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 2,
+    "skill": "Shock in pregnancy",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A 28-year-old woman, 34 weeks pregnant, fell down stairs. She is anxious, pale, cool, and clammy. Pulse is 118 and BP is 112/70. You should suspect:",
+    "options": [
+      "A normal pregnancy-related heart rate",
+      "Anxiety only, since her BP is normal",
+      "Neurogenic shock from a spinal injury",
+      "Compensated shock that pregnancy can mask"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Pale, cool, clammy skin with tachycardia and a normal BP is compensated shock, and the larger blood volume of pregnancy can hide significant blood loss. A normal BP does not rule out shock, and neurogenic shock causes warm, dry skin with a slow pulse."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 2,
+    "skill": "Shock recognition",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "For each finding in a child after 2 days of vomiting, specify whether it is an early or a late sign of shock.",
+    "rows": [
+      "Falling blood pressure",
+      "Rapid heart rate",
+      "Lethargy or unresponsiveness",
+      "Delayed capillary refill",
+      "Slowing heart rate",
+      "Restlessness or anxiety"
+    ],
+    "columns": [
+      "Early sign",
+      "Late sign"
+    ],
+    "correct": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    "explanation": "Tachycardia, delayed refill and restlessness are compensation, while hypotension, bradycardia and lethargy mean the child is decompensating. Children hold a normal blood pressure until late, so a falling pressure is never an early sign."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 2,
+    "skill": "Hemorrhage control",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 19-year-old struck by a car lies supine in dark clothing on wet pavement. His airway is open and breathing is adequate. To check for major bleeding, you should:",
+    "options": [
+      "Check his blood pressure, since bleeding lowers it early",
+      "Expose him and sweep gloved hands beneath him",
+      "Ask him whether he feels any bleeding",
+      "Wait for the secondary assessment to look"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Dark clothing and wet pavement hide blood, so you expose and sweep under the patient during the primary assessment to find life-threatening bleeding. Hypotension is a late sign, so waiting for it misses the bleeding."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 2,
+    "skill": "Tourniquet use",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 35-year-old has a chainsaw wound to the lower leg. Bright red blood keeps soaking through firm direct pressure. You should next:",
+    "options": [
+      "Apply a tourniquet directly over the knee",
+      "Remove soaked dressings and apply fresh ones",
+      "Apply a tourniquet 2-3 inches above the wound",
+      "Elevate the leg and use pressure points"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Life-threatening extremity bleeding that direct pressure cannot control needs a tourniquet placed 2 to 3 inches above the wound and not over a joint. Removing soaked dressings disrupts clots, and elevation with pressure points is not reliable."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 2,
+    "skill": "Pediatric CPR",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 6-year-old pulled from a pool is unresponsive and apneic. You feel no pulse within 10 seconds. With two rescuers, you should begin:",
+    "options": [
+      "CPR at 30 compressions to 2 breaths",
+      "Rescue breathing only at 20 per minute",
+      "Abdominal thrusts to clear the water",
+      "CPR at 15 compressions to 2 breaths"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A child with no pulse needs CPR, and two-rescuer child CPR uses a 15:2 ratio to give more ventilations. Rescue breathing alone is for a child who has a pulse, and abdominal thrusts delay care and do not remove aspirated water."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 2,
+    "skill": "Stroke assessment",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 72-year-old woman has right facial droop, right arm drift and slurred speech. Her husband says she was normal at bedtime and woke this way. Her last known well time is:",
+    "options": [
+      "When she woke with symptoms",
+      "When she went to bed",
+      "When her husband called 911",
+      "When you arrived on scene"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Last known well is the last time the patient was seen at her neurologic baseline, so for a wake-up stroke it is when she went to bed. Using the time she woke would wrongly place her inside treatment windows that may have closed."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 2,
+    "skill": "Acute coronary syndrome",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A 58-year-old diabetic man reports 30 minutes of chest pressure radiating to his jaw, with sweating and nausea. BP 148/90, pulse 96, SpO2 95%. You should suspect:",
+    "options": [
+      "Gastric reflux after a meal",
+      "Chest wall muscle strain",
+      "Acute coronary syndrome",
+      "A panic attack"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Pressure radiating to the jaw with diaphoresis and nausea in a diabetic male is acute coronary syndrome until proven otherwise, which calls for aspirin, an early 12-lead where permitted and prompt transport. Reflux or anxiety are diagnoses of exclusion an EMT should never assume."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 2,
+    "skill": "Anaphylaxis",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "A 9-year-old who ate peanuts has hives. Which added findings mean anaphylaxis that calls for epinephrine? Select all that apply.",
+    "options": [
+      "Wheezing and chest tightness",
+      "BP 78/50 with a weak pulse",
+      "Hoarse voice with stridor",
+      "Itching around the mouth",
+      "Hives spreading to the legs",
+      "Watery eyes and sneezing"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Wheezing, hypotension and stridor show airway, breathing or circulatory involvement, which is anaphylaxis, so give epinephrine per local protocol. Spreading hives, itching or sneezing alone fit a simple allergic reaction."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 2,
+    "skill": "Diabetic emergencies",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 45-year-old diabetic man who took insulin and skipped lunch is confused, pale and sweaty with cool skin. Pulse 110, respirations 18. These findings best fit:",
+    "options": [
+      "Hypoglycemia",
+      "Diabetic ketoacidosis",
+      "Hyperosmolar hyperglycemic state",
+      "Heat exhaustion"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Rapid onset of confusion with cool, pale, diaphoretic skin after insulin without food is classic hypoglycemia; check the glucose. DKA develops over days with warm dry skin, fruity breath and deep rapid Kussmaul respirations."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 2,
+    "skill": "Opioid overdose",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 30-year-old man is found unresponsive with pinpoint pupils, shallow respirations of 4 per minute and SpO2 78%. Your first action should be:",
+    "options": [
+      "Give naloxone before any other care",
+      "Apply a nonrebreather at 15 L/min",
+      "Place him in the recovery position",
+      "Ventilate with a BVM and oxygen"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Inadequate breathing is the immediate life threat, so ventilate with a BVM first and then give naloxone per protocol. A nonrebreather does nothing for a patient who is barely breathing."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 2,
+    "skill": "Seizures",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A 26-year-old woman with epilepsy had a 2-minute generalized seizure. She is now drowsy and confused, breathing adequately with a clear airway. Her condition is best described as:",
+    "options": [
+      "The postictal state",
+      "Status epilepticus",
+      "A brief absence seizure",
+      "A syncopal episode"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Drowsiness and confusion that gradually improve after a seizure is the postictal phase; place her in the recovery position and monitor. Status epilepticus is a seizure lasting over 5 minutes or repeated seizures without regaining consciousness."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 2,
+    "skill": "Heart failure",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A 67-year-old man with prior heart attacks sits upright gasping, with crackles in both lungs, pink frothy sputum and ankle swelling. BP 170/100. The most likely cause is:",
+    "options": [
+      "An acute asthma attack",
+      "Pulmonary edema from heart failure",
+      "A COPD exacerbation with bronchospasm",
+      "A spontaneous pneumothorax"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Crackles, pink frothy sputum, edema and hypertension in a cardiac patient point to congestive heart failure with pulmonary edema, which may benefit from CPAP per protocol. Asthma and COPD typically produce wheezing rather than frothy sputum and crackles."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 2,
+    "skill": "Asthma",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A 15-year-old asthmatic had loud wheezing 20 minutes ago. Now she is drowsy, breath sounds are barely audible, and SpO2 is 86%. This change most likely indicates:",
+    "options": [
+      "The airway opening as she improves",
+      "Impending respiratory failure",
+      "Resolution after her inhaler",
+      "Anxiety-driven hyperventilation"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A silent chest with falling mental status and SpO2 means too little air is moving to produce wheezes, so she is tiring toward respiratory arrest. Assist ventilations as needed and transport rapidly; quieter breath sounds here are not improvement."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 2,
+    "skill": "Sepsis",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An 81-year-old nursing home resident with a urinary catheter has new confusion, temperature 101.8 F, pulse 118, respirations 26 and BP 88/54. You should suspect:",
+    "options": [
+      "Sepsis with shock",
+      "Progression of her dementia",
+      "Normal aging changes",
+      "A low blood sugar reaction"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Fever, tachycardia, tachypnea, hypotension and new confusion with a catheter suggest sepsis, and confusion is often the main sign of infection in older adults. Never assume new confusion in an older patient is normal or due to dementia."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 2,
+    "skill": "Heat emergencies",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 22-year-old football player collapsed during practice in 95 F heat. He is confused and combative with hot skin, pulse 132 and BP 100/60. The life threat is:",
+    "options": [
+      "Heat exhaustion",
+      "Heat cramps",
+      "Simple dehydration",
+      "Heat stroke"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Altered mental status with high body temperature defines heat stroke, which needs aggressive cooling such as ice water immersion where possible and rapid transport. Heat exhaustion does not cause significant confusion, and exertional heat stroke patients may still be sweating."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 2,
+    "skill": "Cold emergencies",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 70-year-old man found outside on a 20 F night is confused with slurred speech. He has stopped shivering, and his pulse is 48. This indicates:",
+    "options": [
+      "Moderate to severe hypothermia",
+      "Mild hypothermia",
+      "Normal response to cold",
+      "Alcohol intoxication without cold injury"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Loss of shivering, altered mental status and bradycardia indicate moderate to severe hypothermia, so handle him gently to avoid triggering ventricular fibrillation. Mild hypothermia features vigorous shivering with an intact mental status."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 2,
+    "skill": "Abdominal emergencies",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A 74-year-old man with hypertension reports sudden tearing pain in his lower back and abdomen. He is pale, BP 86/50, and you feel a pulsating abdominal mass. You should suspect:",
+    "options": [
+      "A kidney stone",
+      "Lumbar muscle strain from lifting",
+      "Acute appendicitis",
+      "Abdominal aortic aneurysm"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Sudden tearing abdominal or back pain, a pulsating mass and hypotension in an older hypertensive man suggest a leaking AAA; avoid palpating the mass further and transport rapidly. A kidney stone causes severe flank pain but not a pulsating mass or shock."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 2,
+    "skill": "Obstetric emergencies",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A 28-year-old woman with a missed period has sudden sharp lower left abdominal pain and dizziness. She is pale, pulse 124, BP 92/60. The most likely life threat is:",
+    "options": [
+      "Urinary tract infection",
+      "Ordinary menstrual cramps with nausea",
+      "Food poisoning",
+      "Ruptured ectopic pregnancy"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Any woman of childbearing age with abdominal pain, a missed period and signs of shock should be treated as a ruptured ectopic pregnancy with internal bleeding. Treat for shock and transport rapidly; benign causes do not produce tachycardia and hypotension."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 2,
+    "skill": "Behavioral emergencies",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "While assessing a 40-year-old man during a behavioral emergency, which finding most strongly warns that he may become violent?",
+    "options": [
+      "Quiet crying while seated",
+      "Clenched fists and pacing toward you",
+      "Slow speech with a flat affect",
+      "Repeated questions about the hospital"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Clenched fists, pacing, a loud voice and moving toward the crew are warning signs of imminent violence, so keep an exit open and request law enforcement. Crying or a flat affect suggests sadness or depression rather than aggression."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 2,
+    "skill": "Pediatric airway",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 4-year-old sits leaning forward and drooling, with a fever of 103 F, a muffled voice and soft stridor that began suddenly. These findings most suggest:",
+    "options": [
+      "Croup",
+      "Bronchiolitis",
+      "Epiglottitis",
+      "Simple ear infection"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Sudden high fever, drooling, tripod positioning and a muffled voice suggest epiglottitis; keep the child calm with the parent and never examine the throat. Croup develops gradually with a barking cough and low-grade fever."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 2,
+    "skill": "Chest trauma",
+    "difficulty": 3,
+    "format": "matrix",
+    "stem": "For each finding, specify whether it points to tension pneumothorax, cardiac tamponade, or both.",
+    "rows": [
+      "Absent breath sounds on one side",
+      "Muffled heart sounds",
+      "Distended neck veins",
+      "Low blood pressure",
+      "Tracheal shift away from injury"
+    ],
+    "columns": [
+      "Tension pneumothorax",
+      "Cardiac tamponade",
+      "Both"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      2,
+      0
+    ],
+    "explanation": "Absent breath sounds on one side and a late tracheal shift point to tension pneumothorax, and muffled heart sounds to tamponade. Both block blood return to the heart, so distended neck veins and hypotension do not tell them apart."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 0,
+    "skill": "Chest trauma",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 55-year-old driver struck the steering wheel. A section of his left chest moves inward when he inhales and outward when he exhales. This finding indicates:",
+    "options": [
+      "A single rib fracture",
+      "Cardiac tamponade",
+      "An open pneumothorax",
+      "Flail chest"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Paradoxical movement of a chest wall segment means two or more adjacent ribs are broken in two or more places; support ventilation with a BVM if breathing is inadequate. A single rib fracture causes pain but not paradoxical motion."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 0,
+    "skill": "Chest trauma",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A 27-year-old with a stab wound just left of the sternum has distended neck veins, muffled heart sounds, equal breath sounds and BP 80/66. These signs suggest:",
+    "options": [
+      "Tension pneumothorax",
+      "Cardiac tamponade",
+      "An open pneumothorax",
+      "Neurogenic shock"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "JVD, muffled heart tones and hypotension with a narrow pulse pressure form Beck's triad of cardiac tamponade, which needs rapid transport for surgical care. Equal breath sounds make tension pneumothorax less likely."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 0,
+    "skill": "Head trauma",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "A 45-year-old who fell from a ladder now responds only to pain. Which findings make up Cushing's triad of rising intracranial pressure? (Choose three.)",
+    "options": [
+      "Slowing pulse rate",
+      "Falling blood pressure",
+      "Irregular respirations",
+      "Pinpoint pupils",
+      "Rising blood pressure",
+      "Rapid, weak pulse"
+    ],
+    "correct": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "Rising blood pressure, a slowing pulse and irregular respirations form Cushing's triad, a late sign of brain herniation that needs rapid transport. A rapid weak pulse with falling pressure is the opposite pattern, hypovolemic shock.",
+    "select": 3
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 0,
+    "skill": "Abdominal trauma",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A 38-year-old driver in a side-impact crash has left upper abdominal tenderness and left shoulder pain. Pulse 122, BP 102/78, skin pale and cool. You should suspect:",
+    "options": [
+      "A rotator cuff tear",
+      "A seat belt abrasion",
+      "A bruised rib from the intruding door panel",
+      "Splenic injury with internal bleeding"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Left upper quadrant tenderness with referred left shoulder pain and signs of compensated shock suggest a bleeding spleen. Treat for shock and transport rapidly; attributing the tachycardia to pain or a minor injury delays care."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 0,
+    "skill": "Pelvic injuries",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 60-year-old pedestrian struck by a car has pelvic pain and instability with one gentle compression. Pulse 128, BP 90/60. Your main concern is:",
+    "options": [
+      "Severe internal bleeding from the pelvis",
+      "Bladder rupture causing later abdominal infection",
+      "Hip dislocation",
+      "Nerve damage to the legs"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An unstable pelvic fracture can hide a large volume of blood loss, so apply a pelvic binder per protocol, treat for shock and transport rapidly. Do not rock or repeatedly compress the pelvis, which can worsen bleeding."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 0,
+    "skill": "Chest trauma",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A 24-year-old has a gunshot wound to the right chest that bubbles and makes a sucking sound with each breath. Your immediate priority is:",
+    "options": [
+      "Pack the wound tightly with gauze",
+      "Seal it with an occlusive dressing",
+      "Cover it with a bulky dry dressing",
+      "Roll him onto his uninjured side to breathe"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An open chest wound lets air enter the pleural space, so seal it immediately with an occlusive dressing and watch for tension pneumothorax, burping the dressing if needed. A dry gauze dressing lets air pass through."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 0,
+    "skill": "Trauma primary assessment",
+    "difficulty": 3,
+    "format": "order",
+    "stem": "A 19-year-old ejected in a rollover has spurting thigh bleeding, snoring respirations and pale, cool skin. Place your primary assessment actions in order.",
+    "options": [
+      "Assess breathing; give oxygen",
+      "Begin rapid transport to trauma center",
+      "Open the airway with a jaw thrust",
+      "Check pulse and treat for shock",
+      "Apply a tourniquet to the thigh"
+    ],
+    "correct": [
+      4,
+      2,
+      0,
+      3,
+      1
+    ],
+    "explanation": "Massive external bleeding is controlled first because it kills fastest, then airway, breathing and circulation, then a rapid transport decision. Opening the airway first lets a spurting thigh wound bleed out within minutes."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 0,
+    "skill": "Vital sign norms",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "For each resting patient, specify whether the respiratory rate is normal or abnormal for the age.",
+    "rows": [
+      "6-month-old, 40 per minute",
+      "Adult, 8 per minute",
+      "5-year-old, 24 per minute",
+      "Adult, 16 per minute",
+      "4-month-old, 12 per minute",
+      "Adult, 32 per minute"
+    ],
+    "columns": [
+      "Normal",
+      "Abnormal"
+    ],
+    "correct": [
+      0,
+      1,
+      0,
+      0,
+      1,
+      1
+    ],
+    "explanation": "Infants breathe about 30 to 60 times a minute, a 5-year-old about 20 to 30 and adults 12 to 20, so 40, 24 and 16 are normal. An infant at 12 is dangerously slow even though 12 is normal for an adult."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 0,
+    "skill": "Pediatric vital signs",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A 4-year-old boy struck by a car has pale skin and delayed capillary refill. What is the minimum acceptable systolic blood pressure for his age?",
+    "options": [
+      "78 mmHg",
+      "70 mmHg",
+      "90 mmHg",
+      "64 mmHg"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The minimum systolic pressure for a child aged 1 to 10 is about 70 plus twice the age in years, so 70 + 8 = 78 mmHg. A value of 70 mmHg applies only to a 1-year-old."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 0,
+    "skill": "Pulse pressure",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A 50-year-old with blunt chest trauma now has BP 92/80, down from 118/76 ten minutes ago. The narrowing pulse pressure most suggests:",
+    "options": [
+      "Improving perfusion",
+      "Falling cardiac output from shock",
+      "Rising intracranial pressure",
+      "Normal variation caused by anxiety and pain"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Pulse pressure is systolic minus diastolic; a drop from 42 to 12 mmHg suggests decreasing cardiac output from shock or tamponade. A widening pulse pressure, not a narrowing one, accompanies rising intracranial pressure."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 0,
+    "skill": "Orthostatic vital signs",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A 68-year-old woman with black tarry stools feels dizzy when sitting up. Her pulse rises from 88 to 116 and her systolic pressure drops 24 mmHg. This indicates:",
+    "options": [
+      "A normal postural response",
+      "Inner ear vertigo",
+      "Medication-induced bradycardia",
+      "Significant blood volume loss"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A pulse increase of about 20 or more beats per minute or a systolic drop of 20 mmHg or more when sitting up is a positive orthostatic test, here suggesting GI bleeding with volume loss. Return her to supine and treat for shock rather than repeating the test."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 0,
+    "skill": "Vital sign technique",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "When obtaining a baseline respiratory rate on an adult whose breathing is regular, the recommended method is to count:",
+    "options": [
+      "For 5 seconds and multiply by 12",
+      "For 10 seconds and multiply by 6",
+      "For 30 seconds and multiply by 2",
+      "After telling the patient you are counting"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Count regular respirations for 30 seconds and double it, or a full minute if irregular, without telling the patient since awareness changes breathing. Very short counts multiply small errors into large ones."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 0,
+    "skill": "Head trauma",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A 52-year-old man found unresponsive after a fall has a dilated right pupil that does not react to light. The left pupil is normal. This most suggests:",
+    "options": [
+      "An opioid overdose",
+      "Sympathetic stimulation from fear and pain",
+      "Increasing pressure inside the skull",
+      "A normal finding with age"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A unilateral fixed, dilated pupil in an unresponsive head-injured patient suggests brain swelling or bleeding compressing a cranial nerve and requires rapid transport. Opioids cause bilateral pinpoint pupils."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 0,
+    "skill": "Diabetic emergencies",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A 60-year-old diabetic woman is confused but follows commands and swallows normally. Her glucose meter reads 52 mg/dL. You should:",
+    "options": [
+      "Wait for ALS before treating",
+      "Give her prescribed insulin",
+      "Recheck in 30 minutes before acting",
+      "Give oral glucose per protocol"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A glucose under 70 mg/dL with symptoms in a patient who can swallow and protect the airway calls for oral glucose, 15 to 25 g, per protocol. Insulin would lower her sugar further and is outside EMT scope."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 0,
+    "skill": "Oxygen therapy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 56-year-old with suspected acute coronary syndrome has no shortness of breath and an SpO2 of 97% on room air. Regarding oxygen, you should:",
+    "options": [
+      "Withhold it and keep monitoring SpO2",
+      "Apply a nonrebreather at 15 L/min",
+      "Give a nasal cannula at 6 L/min routinely",
+      "Assist ventilations with a BVM"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Oxygen is given for hypoxia (SpO2 below 90 to 94% per local protocol), shock or respiratory distress, because unneeded oxygen in heart attack patients may worsen outcomes. Routine oxygen for a well-saturated patient is no longer recommended."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 0,
+    "skill": "Carbon monoxide",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 34-year-old man rescued from a house fire has a headache and confusion. His SpO2 reads 99% on room air. You should:",
+    "options": [
+      "Give high-flow oxygen despite the reading",
+      "Withhold oxygen since saturation is normal",
+      "Apply a nasal cannula at 2 L/min",
+      "Move the probe to his earlobe"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Carbon monoxide binds hemoglobin and pulse oximeters read it as oxygen, so SpO2 can be falsely normal; give high-flow oxygen by nonrebreather. Moving the probe does not correct this limitation."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 0,
+    "skill": "12-lead ECG",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Your protocol permits EMT 12-lead acquisition. A 61-year-old with chest pain has a tracing interpreted as acute STEMI. You should:",
+    "options": [
+      "Wait for ALS to confirm before leaving",
+      "Repeat the tracing twice on scene first",
+      "Give nitroglycerin from ambulance stock",
+      "Transmit it and call a STEMI alert"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Early transmission and a STEMI alert let the hospital activate the cath lab before arrival, shortening time to reperfusion. EMTs only assist with the patient's own prescribed nitroglycerin, and delaying transport for repeat tracings wastes heart muscle."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 0,
+    "skill": "Capnography",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "You are ventilating a 40-year-old in respiratory arrest through a supraglottic airway with waveform capnography. ETCO2 is 38 mmHg with a consistent waveform. This indicates:",
+    "options": [
+      "The device has slipped into the esophagus",
+      "Proper placement and ventilation",
+      "Severe hyperventilation",
+      "Oxygen saturation is 38%"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Normal ETCO2 is about 35 to 45 mmHg, and a steady waveform confirms exhaled carbon dioxide from the lungs. Esophageal placement would show little or no ETCO2, and ETCO2 measures exhaled carbon dioxide, not oxygen saturation."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 0,
+    "skill": "Stroke destination",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A 66-year-old woman developed left arm weakness and facial droop 50 minutes ago. Her glucose is 112 mg/dL. Per local protocol, the best destination is:",
+    "options": [
+      "The nearest urgent care clinic",
+      "Her own physician's office",
+      "A stroke center, with a prehospital alert",
+      "Any hospital, with routine notification"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A stroke patient within the treatment window should go to a stroke center with early notification so the team is ready for imaging and clot-busting or clot-removal therapy. Urgent care and routine notification delay time-critical treatment."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 0,
+    "skill": "Field triage criteria",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "Under national field triage guidelines, which injured patients meet a high-risk injury criterion for the highest-level trauma center? Select all that apply.",
+    "options": [
+      "Fractures of both femurs",
+      "Stab wound to the upper chest",
+      "Amputation above the wrist",
+      "Closed fracture of one wrist",
+      "Forearm cut, bleeding controlled",
+      "Sprained ankle with swelling"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Two or more proximal long-bone fractures, penetrating torso injury and amputation proximal to the wrist or ankle are high-risk injury patterns. A closed distal fracture or a controlled laceration with normal vital signs can usually go to the closest appropriate hospital."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 0,
+    "skill": "Pediatric seizures",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 6-year-old has seized continuously for 8 minutes. You are managing his airway with suction and oxygen, and the hospital is 30 minutes away. You should:",
+    "options": [
+      "Stay on scene until the seizure stops",
+      "Give oral glucose to stop the seizure",
+      "Request an ALS intercept and begin transport",
+      "Restrain his arms to prevent injury"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A seizure lasting over 5 minutes is status epilepticus, which needs benzodiazepines from ALS, so request an intercept and transport. Never give anything by mouth to a seizing patient or restrain the extremities."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 0,
+    "skill": "Air medical",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 28-year-old with GCS 7 after a motorcycle crash is trapped in a rural ravine, 70 minutes by ground from the trauma center. You should:",
+    "options": [
+      "Wait until extrication ends to request help",
+      "Drive him to the nearest clinic",
+      "Request air medical transport early",
+      "Request one more BLS ground unit"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A critical trauma patient far from a trauma center benefits from air medical, and requesting it early lets the aircraft arrive during extrication. Waiting adds avoidable delay, and a clinic cannot provide trauma care."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 0,
+    "skill": "Childbirth",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 26-year-old in her second pregnancy has contractions 2 minutes apart, an urge to push, and the head is crowning. The hospital is 20 minutes away. You should:",
+    "options": [
+      "Begin rapid transport immediately",
+      "Prepare to deliver on scene",
+      "Have her cross her legs en route",
+      "Tell her to hold back from pushing"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Crowning means delivery is imminent, so prepare to deliver on scene rather than in a moving ambulance. Trying to delay delivery by crossing legs or withholding pushing can harm the mother and baby."
+  },
+  {
+    "domain": "primaryAssessment",
+    "test": 0,
+    "skill": "Cardiac arrest management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 70-year-old man in witnessed cardiac arrest has a shockable rhythm on your AED. ALS is 5 minutes away. Your best plan is to:",
+    "options": [
+      "Continue CPR and AED cycles on scene",
+      "Load him and do CPR during transport",
+      "Wait for ALS before using the AED",
+      "Check his pulse for a full minute"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "High-quality CPR and early defibrillation work best on scene, because CPR in a moving ambulance is less effective and dangerous for the crew. Pulse checks should take no more than 10 seconds, and the AED should be used as soon as it is available."
+  }
+]

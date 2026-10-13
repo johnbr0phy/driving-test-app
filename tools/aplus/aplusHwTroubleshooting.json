@@ -1,0 +1,526 @@
+[
+  {
+    "domain": "aplusHwTroubleshooting",
+    "test": 1,
+    "skill": "Troubleshooting methodology",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A technician has questioned a user about a laptop that will not join Wi-Fi and has established a theory of probable cause. What should the technician do NEXT?",
+    "options": [
+      "Document findings, actions, and outcomes",
+      "Verify full system functionality",
+      "Test the theory to determine the cause",
+      "Implement preventive measures"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Step 3 of the CompTIA methodology is to test the theory before planning or implementing a fix. Documenting and verifying come only after a solution has been implemented."
+  },
+  {
+    "domain": "aplusHwTroubleshooting",
+    "test": 1,
+    "skill": "Troubleshooting methodology",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "While troubleshooting a desktop that randomly freezes, a technician tests a theory and finds it was not the cause. What should the technician do NEXT?",
+    "options": [
+      "Establish a new theory or escalate",
+      "Implement the original plan of action",
+      "Document the outcome and close the ticket",
+      "Verify full system functionality"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "When a theory is not confirmed, the methodology says to re-establish a new theory or escalate. Implementing a plan built on an unconfirmed theory wastes time and may cause new problems."
+  },
+  {
+    "domain": "aplusHwTroubleshooting",
+    "test": 1,
+    "skill": "Troubleshooting methodology",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A technician plans to repair a failing boot volume on an accountant's laptop that holds unsynced client spreadsheets. Which should the technician do FIRST before making changes?",
+    "options": [
+      "Run chkdsk with the repair switch",
+      "Update the system UEFI firmware",
+      "Reinstall the operating system",
+      "Back up the user's data"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Step 1 of the methodology includes backing up data before making changes. Running a disk repair first can make the data harder or impossible to recover."
+  },
+  {
+    "domain": "aplusHwTroubleshooting",
+    "test": 1,
+    "skill": "Troubleshooting methodology",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "After a technician replaces a faulty power supply, the workstation boots normally. According to CompTIA's troubleshooting methodology, what should the technician do NEXT?",
+    "options": [
+      "Document findings, actions, and outcomes",
+      "Verify functionality and implement preventive measures",
+      "Ask the user to sign off and close the ticket immediately",
+      "Establish a new theory of probable cause"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Step 5 is verifying full system functionality and, if applicable, implementing preventive measures. Documentation is the final step and comes only after verification."
+  },
+  {
+    "domain": "aplusHwTroubleshooting",
+    "test": 1,
+    "skill": "Troubleshooting methodology",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "Place the steps of the CompTIA troubleshooting methodology in order.",
+    "options": [
+      "Identify the problem",
+      "Establish a theory of probable cause",
+      "Test the theory to determine the cause",
+      "Establish a plan of action",
+      "Verify full system functionality",
+      "Document findings, actions and outcomes"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "explanation": "The methodology moves from identifying the problem to a theory, then tests it before planning and implementing a fix. Verification, with preventive measures if applicable, comes before documentation, which is always the final step."
+  },
+  {
+    "domain": "aplusHwTroubleshooting",
+    "test": 1,
+    "skill": "CMOS battery",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A desktop PC resets to January 1 and loses its boot order every time it is unplugged overnight. What is the MOST likely cause?",
+    "options": [
+      "A corrupted Windows Time service",
+      "A failing power supply",
+      "An outdated chipset driver",
+      "A depleted CMOS battery"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The CMOS battery keeps the real-time clock and firmware settings when the PC has no AC power. A Windows Time service problem would not erase UEFI settings such as boot order."
+  },
+  {
+    "domain": "aplusHwTroubleshooting",
+    "test": 1,
+    "skill": "Overheating",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A workstation shuts down without warning about 20 minutes into video rendering. The CPU cooler was removed and reinstalled last week. What is the MOST likely cause?",
+    "options": [
+      "A depleted CMOS battery",
+      "Insufficient virtual memory",
+      "Missing or poorly applied thermal paste",
+      "A loose SATA data cable on the boot drive"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Reseating a cooler without fresh thermal paste leaves poor heat transfer, so the CPU overheats under load and the system shuts down to protect itself. Low virtual memory causes slowdowns or app errors, not sudden power-offs."
+  },
+  {
+    "domain": "aplusHwTroubleshooting",
+    "test": 1,
+    "skill": "POST beep codes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "After a user installs an additional DDR5 module, the PC powers on and the fans spin, but it beeps repeatedly with no display. What should the technician do FIRST?",
+    "options": [
+      "Replace the power supply",
+      "Reseat the new memory module",
+      "Flash the motherboard firmware",
+      "Replace the graphics card"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Repeating POST beep codes right after a RAM upgrade usually indicate a memory problem, so reseating the new module is the quickest test. Fans spinning show the power supply is delivering power."
+  },
+  {
+    "domain": "aplusHwTroubleshooting",
+    "test": 1,
+    "skill": "Motherboard failure",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A technician smells something burning from an older PC that reboots randomly and sees bulging, leaking capacitors near the CPU socket. What should the technician do?",
+    "options": [
+      "Replace the motherboard",
+      "Apply new thermal paste",
+      "Reinstall the operating system",
+      "Replace the CMOS battery"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Swollen or leaking capacitors are physical motherboard failures that cause instability and cannot be fixed by software. New thermal paste addresses overheating, not failed board components."
+  },
+  {
+    "domain": "aplusHwTroubleshooting",
+    "test": 1,
+    "skill": "Power supply failure",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A desktop shows no lights or fan movement when the power button is pressed. The outlet and power cord are confirmed good. What should the technician do NEXT?",
+    "options": [
+      "Replace the CMOS battery",
+      "Reseat the memory modules and the graphics card",
+      "Test the power supply with a PSU tester",
+      "Reinstall the operating system"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "With a known-good outlet and cord, a completely dead system points to the power supply, which a PSU tester can confirm. Bad memory would still let the fans and lights come on."
+  },
+  {
+    "domain": "aplusHwTroubleshooting",
+    "test": 1,
+    "skill": "Failing hard drives",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A PC shows a S.M.A.R.T. warning at startup and its hard drive makes a repetitive clicking sound. What should the technician do FIRST?",
+    "options": [
+      "Defragment the hard drive",
+      "Back up the user's data immediately",
+      "Rebuild the master boot record",
+      "Update the storage controller driver"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "S.M.A.R.T. warnings and clicking indicate an impending mechanical failure, so preserving the data comes first. Defragmenting stresses a failing drive and could cause total data loss."
+  },
+  {
+    "domain": "aplusHwTroubleshooting",
+    "test": 1,
+    "skill": "RAID recovery",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A file server with a four-disk RAID 5 array reports one failed disk, but users can still open their files. What should the technician do?",
+    "options": [
+      "Restore all data from the last backup",
+      "Convert the array to RAID 0",
+      "Replace the failed disk and rebuild the array",
+      "Delete the array and recreate it with all four disks"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "RAID 5 tolerates one disk failure using parity, so hot-swapping the failed disk and rebuilding restores redundancy without data loss. Restoring from backup is unnecessary because the array is still running degraded."
+  },
+  {
+    "domain": "aplusHwTroubleshooting",
+    "test": 1,
+    "skill": "Drive initialization",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "After installing a second NVMe SSD, a technician cannot find the drive in File Explorer. Disk Management lists it as unknown and not initialized. What should the technician do NEXT?",
+    "options": [
+      "Enable RAID mode in UEFI",
+      "Replace the M.2 SSD",
+      "Reinstall the chipset and storage controller drivers",
+      "Initialize, partition, and format the drive"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A new drive shown as not initialized is detected but has no partition table, so it needs initializing, partitioning, and formatting. Since the OS already sees the drive, replacing it is unnecessary."
+  },
+  {
+    "domain": "aplusHwTroubleshooting",
+    "test": 1,
+    "skill": "Projector issues",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A conference room projector shows a No Signal message. The laptop is connected by HDMI and its own screen works normally. What should the technician check FIRST?",
+    "options": [
+      "The projector's selected input source",
+      "The projector's lamp hours",
+      "The laptop's graphics driver version and display settings",
+      "The projector's keystone correction"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "No Signal with a working laptop most often means the projector is set to the wrong input, the obvious thing to check first. A failed lamp would show no image at all, not a No Signal message."
+  },
+  {
+    "domain": "aplusHwTroubleshooting",
+    "test": 1,
+    "skill": "Projector issues",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A classroom projector's image has grown steadily dimmer over several months, even with brightness set to maximum. What is the MOST likely cause?",
+    "options": [
+      "The HDMI cable is failing",
+      "The resolution is set too high",
+      "The laptop's display driver is outdated or corrupted",
+      "The lamp is nearing the end of its life"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Projector lamps lose brightness gradually as they age, and the lamp-hour counter can confirm it. A failing cable typically causes flickering, sparkles, or signal loss rather than slow dimming."
+  },
+  {
+    "domain": "aplusHwTroubleshooting",
+    "test": 1,
+    "skill": "Display burn-in",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A lobby monitor that displays the same company logo all day now shows a faint ghost of the logo over other content. What is this condition called?",
+    "options": [
+      "Dead pixels",
+      "Burn-in",
+      "Screen flickering",
+      "Incorrect color depth"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Burn-in is a persistent ghost image caused by showing the same static content for long periods, especially on OLED and plasma panels. Dead pixels are individual dots that stay black and do not form an image."
+  },
+  {
+    "domain": "aplusHwTroubleshooting",
+    "test": 1,
+    "skill": "Display issues",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A monitor connected with a VGA cable suddenly shows everything with a strong purple tint. What should the technician check FIRST?",
+    "options": [
+      "The monitor's backlight inverter",
+      "The operating system's color calibration profile settings",
+      "The video cable for loose connections or bent pins",
+      "The graphics card's cooling fan"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A sudden color tint on an analog VGA connection usually means a missing color channel from a loose cable or bent pin. A failing backlight makes the image dim or dark, not discolored."
+  },
+  {
+    "domain": "aplusHwTroubleshooting",
+    "test": 1,
+    "skill": "Swollen batteries",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A laptop's touchpad has started bulging upward and the case no longer closes flat. What should the technician do FIRST?",
+    "options": [
+      "Power it off and remove the swollen battery",
+      "Recalibrate the touchpad in Settings",
+      "Replace the touchpad assembly",
+      "Generate a battery health report"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A bulging touchpad is a classic sign of a swollen lithium-ion battery, which is a fire hazard and must be removed and recycled safely. Replacing the touchpad ignores the battery pressing it up from below."
+  },
+  {
+    "domain": "aplusHwTroubleshooting",
+    "test": 1,
+    "skill": "Touchscreen calibration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A tablet registers taps slightly away from where the user touches, and the pointer drifts on its own. What should the technician try FIRST?",
+    "options": [
+      "Replace the device battery",
+      "Recalibrate the touchscreen digitizer",
+      "Perform a factory reset",
+      "Replace the LCD panel"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Inaccurate touch points and cursor drift are digitizer calibration symptoms, and recalibration is the least invasive fix. A factory reset erases user data and should not be the first step."
+  },
+  {
+    "domain": "aplusHwTroubleshooting",
+    "test": 1,
+    "skill": "Charging port issues",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A smartphone charges only when the cable is held at a certain angle, and several known-good cables behave the same way. What is the MOST likely cause?",
+    "options": [
+      "A degraded battery",
+      "Malware consuming power",
+      "An outdated operating system with a charging bug",
+      "Debris or damage in the charging port"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Charging that depends on cable angle points to a loose connection, usually lint or a damaged charging port. A degraded battery would hold less charge but would not care about the cable's position."
+  },
+  {
+    "domain": "aplusHwTroubleshooting",
+    "test": 1,
+    "skill": "Liquid damage",
+    "difficulty": 2,
+    "format": "multi",
+    "select": 2,
+    "stem": "A user dropped a smartphone into a sink and pulled it out while it was still on. Which two things should the technician advise FIRST? (Choose two.)",
+    "options": [
+      "Power the phone off now",
+      "Dry the ports with hot air",
+      "Plug it in to test charging",
+      "Keep it off the charger",
+      "Run a malware scan on it",
+      "Restart it to check for damage"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "explanation": "Turning the phone off and keeping it off power stops current from shorting wet circuits while it dries. Hot air from a hair dryer is tempting, but the heat can damage the battery and seals and pushes water deeper."
+  },
+  {
+    "domain": "aplusHwTroubleshooting",
+    "test": 1,
+    "skill": "Laser printer faults",
+    "difficulty": 2,
+    "format": "multi",
+    "select": 2,
+    "stem": "Which two symptoms point to a failing fuser assembly in a laser printer? (Choose two.)",
+    "options": [
+      "A vertical line on every page",
+      "Toner rubs off the printed page",
+      "Several sheets feed at once",
+      "Garbled symbols in place of text",
+      "Pages exit creased or wrinkled",
+      "Pages print completely blank"
+    ],
+    "correct": [
+      1,
+      4
+    ],
+    "explanation": "The fuser's heated rollers melt toner into the paper, so a failing fuser leaves toner that rubs off and can crease pages as they pass through. A repeating vertical line comes from a scratched drum, not the fuser."
+  },
+  {
+    "domain": "aplusHwTroubleshooting",
+    "test": 1,
+    "skill": "Laser printer faults",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A laser printer produces a thin vertical black line in the same position on every page. What is the MOST likely cause?",
+    "options": [
+      "A scratch on the imaging drum",
+      "A worn pickup roller",
+      "An incorrect paper size setting",
+      "A failing fuser heating element"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A scratch on the drum holds toner in the same spot as it rotates, printing a consistent vertical line, which is fixed by replacing the toner cartridge or drum. A worn pickup roller causes feeding problems, not print marks."
+  },
+  {
+    "domain": "aplusHwTroubleshooting",
+    "test": 1,
+    "skill": "Printer drivers",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "After a new printer is added on a workstation, every print job outputs pages of random symbols and characters. What should the technician do FIRST?",
+    "options": [
+      "Replace the toner cartridge",
+      "Clean the fuser assembly",
+      "Install the correct driver for the printer",
+      "Run the printer's built-in calibration routine"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Garbled output right after installing a printer typically means the wrong driver or page description language (PCL vs PostScript) is in use. Consumables like toner affect print quality, not the characters printed."
+  },
+  {
+    "domain": "aplusHwTroubleshooting",
+    "test": 1,
+    "skill": "Paper feed issues",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A laser printer frequently pulls several sheets of paper at once from the main tray. Which component should the technician check FIRST?",
+    "options": [
+      "The fuser assembly",
+      "The separation pad",
+      "The imaging drum",
+      "The transfer belt"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The separation pad uses friction to let only one sheet past the pickup roller, so a worn pad causes multipage misfeeds. The fuser and drum act on paper after it is fed and cannot cause it to pull extra sheets."
+  },
+  {
+    "domain": "aplusHwTroubleshooting",
+    "test": 0,
+    "skill": "Network troubleshooting",
+    "difficulty": 3,
+    "format": "order",
+    "stem": "A PC cannot open a website by name. Place the ping tests in the order a technician should run them, from local to remote.",
+    "options": [
+      "Ping 127.0.0.1",
+      "Ping the PC's own IP address",
+      "Ping the default gateway",
+      "Ping a remote server's IP address",
+      "Ping the website by its name"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "explanation": "Working outward isolates the fault: loopback tests the TCP/IP stack, the PC's own address tests its NIC configuration, the gateway tests the local network, and a remote IP tests routing. The name test comes last because it adds DNS; if the remote IP answers but the name fails, DNS is the problem."
+  },
+  {
+    "domain": "aplusHwTroubleshooting",
+    "test": 0,
+    "skill": "Wireless interference",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Wireless users in an office break room lose connectivity whenever the microwave oven is running. What should the technician do to BEST resolve this?",
+    "options": [
+      "Move the clients to the 5 GHz band",
+      "Rename the 2.4 GHz SSID",
+      "Change WPA3 encryption to WPA2",
+      "Increase the DHCP lease time"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Microwave ovens emit interference around 2.4 GHz, so moving clients to 5 GHz avoids it. Renaming the SSID or changing encryption does nothing about radio-frequency interference."
+  },
+  {
+    "domain": "aplusHwTroubleshooting",
+    "test": 0,
+    "skill": "VoIP quality",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Users report choppy VoIP calls with clipped words during busy hours, while web browsing still seems normal. What should the technician configure to BEST resolve this?",
+    "options": [
+      "DHCP reservations for each phone",
+      "A longer DNS cache timeout",
+      "Port forwarding for HTTPS traffic",
+      "QoS to prioritize voice traffic"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Choppy audio during congestion points to jitter and latency, and QoS prioritizes real-time voice packets over bulk data. DHCP reservations give phones consistent addresses but do nothing for packet timing."
+  }
+]

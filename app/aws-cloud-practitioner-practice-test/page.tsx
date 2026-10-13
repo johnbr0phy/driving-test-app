@@ -50,8 +50,9 @@ const jsonLd = {
       offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
       featureList: [
         "200 AWS practice questions",
-        "4 practice tests weighted to the CLF-C02 exam guide",
-        "Training sets for every domain",
+        "2 full 65-question practice tests in 90 minutes",
+        "4 drills, one per CLF-C02 domain",
+        "Choose-two and choose-three multiple-response items",
         "Instant feedback with explanations",
         "Auto-save progress",
       ],
@@ -94,7 +95,7 @@ const jsonLd = {
           name: "Is this practice test the same format as the real exam?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Every question here has a single correct answer out of four, like most of the real exam. The real exam also has multiple-response items where you pick two or three, so use this bank to learn the content and expect a few of those on exam day.",
+            text: "Yes. Each practice test is 65 questions in 90 minutes with flagging and review, mixing single-answer items with choose-two and choose-three multiple-response items like the real exam. Scores here are percent correct; the real exam reports a scaled score from 100 to 1000, with 700 to pass.",
           },
         },
         {
@@ -102,7 +103,7 @@ const jsonLd = {
           name: "Is the TigerTest AWS practice test free?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. All four practice tests and all training sets are free, with no account required. Create a free account if you want your progress saved across devices.",
+            text: "Yes. Both practice tests and all four drills are free, with no account required. Create a free account if you want your progress saved across devices.",
           },
         },
       ],
@@ -134,7 +135,7 @@ export default function AwsLandingPage() {
             Free AWS Cloud Practitioner Practice Test 2026
           </h1>
           <ExamLandingHero
-            dashboardHref="/aws-cloud-practitioner/dashboard"
+            dashboardHref="/aws-cloud-practitioner"
             shortName="AWS CCP"
             subtitle="200 questions weighted to the CLF-C02 exam guide. Tuned for mobile. No account needed."
             shots={{ mobile: "/landing/aws-mobile.png", desktop: "/landing/aws-desktop.png" }}
@@ -155,9 +156,9 @@ export default function AwsLandingPage() {
               <Smartphone className="w-7 h-7 text-brand" />
             </div>
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Training by Domain</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Drills by Domain</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four sets matching the four exam domains: cloud concepts, security and compliance, cloud technology and services, and billing, pricing and support. Questions you miss come back until you have mastered them.
+                Four drills, one per exam domain: cloud concepts, security and compliance, cloud technology and services, and billing, pricing and support. Questions you miss come back until you have mastered them.
               </p>
             </div>
           </div>
@@ -168,7 +169,7 @@ export default function AwsLandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Practice Tests</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four 50-question tests weighted like the real exam and written in its style: a company needs something, and you pick the AWS service, feature or principle that fits.
+                Two 65-question tests in 90 minutes, written in the real exam&apos;s style: a company needs something, and you pick the AWS service, feature or principle that fits, sometimes two or three. Practice Test 2 is held out of the drills, so it measures readiness.
               </p>
             </div>
           </div>
@@ -254,7 +255,7 @@ export default function AwsLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Drill your weak domain</h3>
               <p>
-                TigerTest tracks your accuracy by domain. The exam is scored on a 100 to 1000 scale with 700 to pass, roughly 70 percent. Retake the set you missed most until you clear 80 percent with room to spare.
+                TigerTest tracks your accuracy by domain. The exam is scored on a 100 to 1000 scale with 700 to pass, which is not a fixed percent. Retake the drill you missed most until you clear 80 percent with room to spare.
               </p>
             </div>
           </div>
@@ -288,13 +289,13 @@ export default function AwsLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is this practice test the same format as the real exam?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              Every question here has a single correct answer out of four, like most of the real exam. The real exam also has multiple-response items where you pick two or three, so use this bank to learn the content and expect a few of those on exam day.
+              Yes. Each practice test is 65 questions in 90 minutes with flagging and review, mixing single-answer items with choose-two and choose-three multiple-response items like the real exam. Scores here are percent correct; the real exam reports a scaled score from 100 to 1000, with 700 to pass.
             </p>
           </div>
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is the TigerTest AWS practice test free?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              Yes. All four practice tests and all training sets are free, with no account required. Create a free account if you want your progress saved across devices.
+              Yes. Both practice tests and all four drills are free, with no account required. Create a free account if you want your progress saved across devices.
             </p>
           </div>
         </div>
@@ -308,7 +309,7 @@ export default function AwsLandingPage() {
         <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">Ready to Pass the AWS Cloud Practitioner?</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Free to start. No account required. 200 questions across all four domains.</p>
-          <ExamLandingCTA dashboardHref="/aws-cloud-practitioner/dashboard" />
+          <ExamLandingCTA dashboardHref="/aws-cloud-practitioner" />
         </div>
       </div>
     </div>

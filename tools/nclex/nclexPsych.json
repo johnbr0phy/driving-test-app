@@ -22,19 +22,49 @@
     "test": 1,
     "skill": "Alcohol withdrawal",
     "difficulty": 3,
-    "format": "single",
-    "passage": "Nurses' notes, 2200: Last drink 36 hours ago per spouse. Tremulous and diaphoretic. BP 168/98 mm Hg, HR 118 beats/min, T 100.4 F. Picking at the sheets and says bugs are crawling on the wall.",
-    "stem": "A client admitted for a fractured femur has a history of daily heavy drinking. Which action should the nurse take first?",
-    "options": [
-      "Give the prescribed lorazepam",
-      "Explain the bugs are not real",
-      "Obtain a urine drug screen",
-      "Encourage oral fluids and rest"
+    "format": "bowtie",
+    "passage": "Day 2, 2200 Nurses' notes: Last drink about 60 hours ago, the night before admission, per the spouse, who reports years of daily heavy drinking. Tremulous and diaphoretic, picking at the sheets, says bugs are crawling on the wall. Disoriented to time and place. BP 172/100 mm Hg, HR 122/min, T 100.6 F, SpO2 97% on room air. No petechiae noted.",
+    "stem": "A client was admitted 2 days ago with a fractured femur. Complete the diagram by choosing 2 actions the nurse should take, the condition the client is most likely experiencing, and 2 parameters the nurse should monitor.",
+    "groups": [
+      {
+        "label": "Actions to take",
+        "pick": 2,
+        "options": [
+          "Give lorazepam as prescribed",
+          "Apply bilateral wrist restraints",
+          "Start seizure precautions",
+          "Withhold all oral fluids"
+        ]
+      },
+      {
+        "label": "Condition most likely experiencing",
+        "pick": 1,
+        "options": [
+          "Alcohol withdrawal delirium",
+          "Fat embolism syndrome",
+          "Opioid withdrawal syndrome",
+          "Hypoglycemia from poor intake"
+        ]
+      },
+      {
+        "label": "Parameters to monitor",
+        "pick": 2,
+        "options": [
+          "Vital signs every hour",
+          "Orientation and alertness",
+          "Hemoglobin A1C level",
+          "Bowel sounds in each quadrant"
+        ]
+      }
     ],
     "correct": [
-      0
+      0,
+      2,
+      4,
+      8,
+      9
     ],
-    "explanation": "Rising vital signs, fever, tremor and visual hallucinations at 36 hours show worsening withdrawal that can progress to seizures or delirium tremens, so the prescribed benzodiazepine comes first. Gentle reality orientation helps but does not treat the physiological danger."
+    "explanation": "Hallucinations, disorientation, fever and rising vital signs 2 to 3 days after the last drink are alcohol withdrawal delirium, treated with the prescribed benzodiazepine and seizure precautions while vital signs and level of consciousness are watched for worsening. Fat embolism after a femur fracture also causes confusion and fever, but it brings hypoxemia and petechiae, which this client does not have; restraints raise agitation and injury risk."
   },
   {
     "domain": "nclexPsych",
@@ -98,19 +128,15 @@
     "test": 1,
     "skill": "Suicide warning signs",
     "difficulty": 3,
-    "format": "single",
-    "passage": "Nurses' notes:\nDay 1: Withdrawn, flat affect, stays in bed most of the day.\nDay 12: Smiling and energetic. Gave her watch and family photos to her sister. Says, \"Everything is settled now.\"",
-    "stem": "The nurse reviews the record of a client with major depression who began sertraline 12 days ago. Which action should the nurse take?",
-    "options": [
-      "Document improved mood and energy",
-      "Ask directly about a plan for suicide",
-      "Encourage group activity attendance",
-      "Begin discharge teaching with the sister"
-    ],
+    "format": "highlight",
+    "passage": "Day 12 Nurses' note: Client with major depression began sertraline 12 days ago. After a week of staying in bed, today she is {{smiling and energetic}}. {{Gave her watch and family photos to her sister}}. {{Ate all of breakfast and lunch}}. Says, {{\"Everything is settled now.\"}} {{Attended group therapy this morning}}. {{Slept 7 hours last night}}.",
+    "stem": "Highlight the findings that suggest an increased risk of suicide.",
     "correct": [
-      1
+      0,
+      1,
+      3
     ],
-    "explanation": "A sudden calm, giving away valued belongings and \"everything is settled\" after early antidepressant therapy are warning signs that the client may have a suicide plan and the energy to carry it out. Recording this as improvement misses the risk."
+    "explanation": "A sudden lift in mood and energy early in antidepressant therapy, giving away valued belongings and saying everything is settled can mean the client has made a suicide plan and now has the energy to act on it. Eating, attending group and sleeping 7 hours are true improvements and do not by themselves raise concern."
   },
   {
     "domain": "nclexPsych",
@@ -190,21 +216,19 @@
   {
     "domain": "nclexPsych",
     "test": 2,
-    "skill": "Delirium vs dementia",
-    "difficulty": 3,
-    "format": "single",
-    "passage": "Nurses' notes:\nAdmission: Alert, oriented x3, calm, follows the conversation.\nPostop day 2, 0200: Pulling at IV, thinks the year is 1975, loses track mid-sentence.\nPostop day 2, 1000: Calmer, answers most questions correctly.",
-    "stem": "An 82-year-old client is 2 days post hip repair. Which finding most strongly suggests delirium rather than dementia?",
-    "options": [
-      "Age older than 80 years",
-      "Pulling at the IV line",
-      "Abrupt onset after surgery",
-      "Disoriented to the current year"
-    ],
+    "skill": "Recognizing delirium",
+    "difficulty": 2,
+    "format": "highlight",
+    "passage": "0730 Nurses' note: {{Oriented to person only}}. {{Recognizes her daughter}}. {{Loses track of questions mid-sentence}}. {{Cannot recall what she ate yesterday}}. {{Uses her walker to stand}}. {{Alternates between drowsy and agitated}}. {{Speech clear}}.",
+    "stimulusId": "NCLEX-CS2",
+    "caseStep": 1,
+    "stem": "The nurse compares this assessment with the baseline the daughter describes. Highlight the findings that represent an acute change from baseline.",
     "correct": [
-      2
+      0,
+      2,
+      5
     ],
-    "explanation": "Delirium has an acute onset and fluctuating attention, while dementia develops over months to years. Disorientation and pulling at lines occur in both, and age is a risk factor rather than a distinguishing feature."
+    "explanation": "Losing orientation to place, being unable to hold attention and a level of alertness that swings between drowsy and agitated are new since yesterday and point to delirium, often the first sign of sepsis in an older adult. Forgetting recent events and using a walker are part of her baseline, and recognizing her daughter and clear speech are reassuring."
   },
   {
     "domain": "nclexPsych",
@@ -287,19 +311,16 @@
     "test": 2,
     "skill": "Child neglect",
     "difficulty": 2,
-    "format": "single",
-    "passage": "4-year-old at a clinic visit: weight below the 3rd percentile, down from the 50th a year ago. Untreated dental caries, unbathed with a severe untreated rash, no immunizations since age 1. Parent missed the last three appointments.",
-    "stem": "Based on the findings, which action is required of the nurse?",
-    "options": [
-      "Gather proof before reporting",
-      "Report suspected neglect to CPS",
-      "Ask the parent before reporting",
-      "Refer the family to a food bank"
-    ],
+    "format": "highlight",
+    "passage": "4-year-old at a clinic visit: {{Weight below the 3rd percentile}}, down from the 50th a year ago. {{Height at the 40th percentile}}. {{Untreated dental caries}}. {{Unbathed, with a severe untreated rash}}. {{Bruise on the left shin}}. {{No immunizations since age 1}}. {{Talks in full sentences}}. {{Plays with toys in the waiting room}}. The parent missed the last three appointments.",
+    "stem": "Highlight the findings that suggest neglect.",
     "correct": [
-      1
+      0,
+      2,
+      3,
+      5
     ],
-    "explanation": "Nurses are mandated reporters and must report a reasonable suspicion of neglect; proof and parental permission are not required. A food bank referral may help but does not meet the legal duty to report."
+    "explanation": "Falling from the 50th to below the 3rd weight percentile, untreated caries, poor hygiene with an untreated rash and missed immunizations together show unmet basic needs, which the nurse must report as suspected neglect. A single shin bruise is common in active preschoolers, and normal height, speech and play are expected."
   },
   {
     "domain": "nclexPsych",

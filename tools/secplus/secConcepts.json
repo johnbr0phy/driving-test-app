@@ -1,0 +1,460 @@
+[
+  {
+    "domain": "secConcepts",
+    "test": 1,
+    "skill": "CIA triad",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A software team publishes a SHA-256 value beside each download. A user's computed hash does not match the published value. Which part of the CIA triad has been violated?",
+    "options": [
+      "Integrity",
+      "Confidentiality",
+      "Availability",
+      "Accounting"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A mismatched hash shows the file was altered, which is a loss of integrity. Confidentiality concerns unauthorized disclosure, and nothing here shows the file's contents were exposed."
+  },
+  {
+    "domain": "secConcepts",
+    "test": 1,
+    "skill": "Non-repudiation",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A purchasing manager approves a contract by email and later claims she never sent the approval. Which control would BEST prevent her from credibly denying it?",
+    "options": [
+      "Encrypting messages with the recipient's public key",
+      "Requiring TLS for all mail server connections",
+      "Digitally signing messages with her private key",
+      "Hashing every message with SHA-256"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A digital signature made with the sender's private key provides non-repudiation because only she holds that key. Encrypting with the recipient's public key protects confidentiality but proves nothing about who sent the message."
+  },
+  {
+    "domain": "secConcepts",
+    "test": 1,
+    "skill": "AAA framework",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "After an outage, auditors need to determine which administrator changed a router configuration and when. Which element of AAA provides this information?",
+    "options": [
+      "Authentication",
+      "Accounting",
+      "Authorization",
+      "Attestation"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Accounting records what authenticated users did and when, creating the trail auditors need. Authorization only determines what the administrator was allowed to do, not what was actually done."
+  },
+  {
+    "domain": "secConcepts",
+    "test": 1,
+    "skill": "Gap analysis",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A CISO wants to compare the organization's current security controls against the NIST Cybersecurity Framework to identify missing controls. Which activity should be performed?",
+    "options": [
+      "Penetration test",
+      "Business impact analysis",
+      "Vulnerability scan",
+      "Gap analysis"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A gap analysis measures the current state against a target framework or baseline and lists the differences. A business impact analysis identifies critical functions and recovery needs, not missing controls."
+  },
+  {
+    "domain": "secConcepts",
+    "test": 1,
+    "skill": "Zero trust",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "In a zero trust architecture, which component evaluates an access request against policy and threat intelligence and decides to grant, deny, or revoke access?",
+    "options": [
+      "Policy enforcement point",
+      "Policy engine",
+      "Policy administrator",
+      "Threat scope reduction"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The policy engine in the control plane makes the access decision using policy, identity and threat data. The policy administrator only carries out that decision by setting up or tearing down the session path."
+  },
+  {
+    "domain": "secConcepts",
+    "test": 1,
+    "skill": "Zero trust",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A zero trust deployment places a gateway in front of a finance application that allows or blocks each session as instructed by the control plane. Which component is this gateway?",
+    "options": [
+      "Policy enforcement point",
+      "Policy engine",
+      "Policy administrator",
+      "Adaptive identity service"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The policy enforcement point sits in the data plane between the subject and the resource and enforces the decisions it receives. The policy engine makes decisions in the control plane but does not sit in the traffic path."
+  },
+  {
+    "domain": "secConcepts",
+    "test": 1,
+    "skill": "Physical security",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Employees report that unauthorized visitors are following badge holders through the data center's main door. Which physical control would BEST prevent this tailgating?",
+    "options": [
+      "Additional video surveillance cameras",
+      "Bollards at the building entrance",
+      "Brighter lighting at the doorway",
+      "Access control vestibule"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An access control vestibule lets only one person through at a time, physically stopping tailgating. Video surveillance can record tailgating after the fact but does not prevent it."
+  },
+  {
+    "domain": "secConcepts",
+    "test": 1,
+    "skill": "Control categories",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "For each control, select the security control category it belongs to.",
+    "rows": [
+      "Bollards at the lobby entrance",
+      "Full-disk encryption on laptops",
+      "Annual enterprise risk assessment",
+      "Security awareness training",
+      "Firewall rule blocking Telnet"
+    ],
+    "columns": [
+      "Technical",
+      "Managerial",
+      "Operational",
+      "Physical"
+    ],
+    "correct": [
+      3,
+      0,
+      1,
+      2,
+      0
+    ],
+    "explanation": "Bollards are physical; disk encryption and firewall rules are technical controls enforced by systems; a risk assessment is a managerial (oversight) control; awareness training is operational because people carry it out. Training is often mistaken for managerial, but managerial controls set direction rather than perform day-to-day work."
+  },
+  {
+    "domain": "secConcepts",
+    "test": 1,
+    "skill": "Physical sensors",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A museum wants an alarm that detects intruders by their body heat as they move through a dark gallery. Which sensor type BEST fits this requirement?",
+    "options": [
+      "Pressure",
+      "Ultrasonic",
+      "Infrared",
+      "Microwave"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Passive infrared sensors detect changes in heat signatures, such as a warm body crossing the field of view. Microwave and ultrasonic sensors detect motion from reflected signals, not body heat."
+  },
+  {
+    "domain": "secConcepts",
+    "test": 1,
+    "skill": "Deception technology",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A database administrator inserts a fake customer record with a unique email address that is never used legitimately; any message to it signals a breach. Which deception technology is this?",
+    "options": [
+      "Honeypot",
+      "Honeyfile",
+      "Honeynet",
+      "Honeytoken"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A honeytoken is fake data, such as a bogus record or credential, whose use proves that data was accessed or stolen. A honeyfile is a decoy file that alerts when opened, not a record planted inside a database."
+  },
+  {
+    "domain": "secConcepts",
+    "test": 1,
+    "skill": "Change management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A network team plans a core switch firmware upgrade. Before approving, the change advisory board asks how service will be restored if the upgrade fails. Which document answers this?",
+    "options": [
+      "Backout plan",
+      "Impact analysis",
+      "Standard operating procedure",
+      "Test results"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A backout plan defines how to roll back a change and restore the previous state if it fails. An impact analysis estimates the effects and risk of the change but does not describe the rollback steps."
+  },
+  {
+    "domain": "secConcepts",
+    "test": 2,
+    "skill": "Change management",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "A team needs to upgrade the firmware on a core switch under the company's change management process. Place the steps in the order they should occur.",
+    "options": [
+      "Submit a formal change request",
+      "Analyze impact and dependencies",
+      "Obtain change advisory board approval",
+      "Implement during the maintenance window",
+      "Verify results and update documentation"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "explanation": "The request starts the process, the impact analysis gives the CAB what it needs to decide, and only an approved change is implemented in its window. Verification and documentation come last so diagrams and baselines match what was actually changed."
+  },
+  {
+    "domain": "secConcepts",
+    "test": 2,
+    "skill": "Certificate types",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A company hosts mail.example.com, shop.example.com and vpn.example.com and wants one certificate covering all of them and any future subdomains. Which certificate type should it request?",
+    "options": [
+      "Self-signed certificate",
+      "Code-signing certificate",
+      "Root certificate",
+      "Wildcard certificate"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A wildcard certificate for *.example.com covers any first-level subdomain, including ones added later. A self-signed certificate is not trusted by outside browsers, so it is unsuitable for public services."
+  },
+  {
+    "domain": "secConcepts",
+    "test": 2,
+    "skill": "Encryption levels",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A laptop is stolen from an employee's car. Which encryption level would BEST ensure that no data on its drive, including the operating system and swap space, can be read?",
+    "options": [
+      "File-level encryption",
+      "Full-disk encryption",
+      "Record-level encryption",
+      "Transport encryption"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Full-disk encryption protects everything on the drive, including the OS, temporary files and swap space. File-level encryption protects only the files selected, leaving other data readable."
+  },
+  {
+    "domain": "secConcepts",
+    "test": 2,
+    "skill": "Key exchange",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two servers that have never communicated must agree on a shared symmetric session key over an untrusted network without transmitting the key itself. Which method should they use?",
+    "options": [
+      "AES-256 encryption",
+      "SHA-256 hashing",
+      "Diffie-Hellman",
+      "PBKDF2 key stretching"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Diffie-Hellman lets two parties derive the same secret key over an insecure channel without ever sending it. AES-256 is the symmetric cipher that would use the key, but it cannot securely establish the key on its own."
+  },
+  {
+    "domain": "secConcepts",
+    "test": 2,
+    "skill": "Asymmetric algorithms",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which asymmetric algorithm provides strength comparable to RSA with much smaller keys, making it well suited to mobile and IoT devices?",
+    "options": [
+      "ECC",
+      "ChaCha20",
+      "AES",
+      "SHA-256"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Elliptic curve cryptography is asymmetric and achieves RSA-level security with far shorter keys, saving processing power and battery. ChaCha20 also runs well on mobile hardware, but it is a symmetric stream cipher."
+  },
+  {
+    "domain": "secConcepts",
+    "test": 2,
+    "skill": "Key escrow",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Company policy requires that a copy of each employee's private encryption key be held by a trusted third party so data can be recovered if the key is lost. What is this called?",
+    "options": [
+      "Key escrow",
+      "Key stretching",
+      "Key exchange",
+      "Certificate revocation"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Key escrow stores copies of keys with a trusted party so encrypted data can be recovered when needed. Key stretching strengthens weak passwords or keys and has nothing to do with recovery."
+  },
+  {
+    "domain": "secConcepts",
+    "test": 2,
+    "skill": "Hardware security modules",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A bank needs dedicated, tamper-resistant hardware to generate and store thousands of keys for its payment servers with high-speed cryptographic processing. Which solution is BEST?",
+    "options": [
+      "Trusted Platform Module chip",
+      "Secure enclave",
+      "Hardware security module",
+      "Key management system"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An HSM is a dedicated, often network-attached appliance built to generate, store and use many keys at scale. A TPM is a chip on one motherboard that protects that single device's keys and boot integrity, not an enterprise key store."
+  },
+  {
+    "domain": "secConcepts",
+    "test": 2,
+    "skill": "Data obfuscation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A merchant replaces stored credit card numbers with random substitute values and keeps the mapping in a separate secured vault. Which obfuscation technique is this?",
+    "options": [
+      "Data masking",
+      "Tokenization",
+      "Steganography",
+      "Hashing"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Tokenization swaps sensitive data for a random token and keeps the real value in a protected vault so authorized systems can retrieve it. Data masking hides part of a value, such as all but the last four digits, and does not map back to the original."
+  },
+  {
+    "domain": "secConcepts",
+    "test": 2,
+    "skill": "Password salting",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Attackers stole a password hash database and are cracking it quickly with precomputed rainbow tables. Which change would MOST directly defeat this technique for future hashes?",
+    "options": [
+      "Encrypting the database with AES",
+      "Storing hashes on a separate server",
+      "Requiring longer password expiration periods",
+      "Adding a unique salt to each password"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A unique random salt makes each hash different even for identical passwords, so precomputed rainbow tables no longer match. Encrypting the database protects it at rest but does not change how stolen hashes are cracked."
+  },
+  {
+    "domain": "secConcepts",
+    "test": 2,
+    "skill": "Password hashing",
+    "difficulty": 3,
+    "format": "multi",
+    "select": 2,
+    "stem": "Attackers who stole a password hash database are cracking it quickly with GPUs and precomputed tables. Which TWO changes would MOST directly slow cracking of future hashes? (Choose two.)",
+    "options": [
+      "Add a unique salt per password",
+      "Use a key stretching algorithm",
+      "Encode hashes with Base64",
+      "Switch from SHA-256 to MD5",
+      "Shorten the password expiration period"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "A unique salt defeats precomputed rainbow tables, and key stretching such as bcrypt or PBKDF2 makes every guess far slower. Base64 is only an encoding and adds no work for the attacker."
+  },
+  {
+    "domain": "secConcepts",
+    "test": 2,
+    "skill": "Blockchain",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which technology records transactions in an open public ledger where each block contains the hash of the previous block, making tampering evident?",
+    "options": [
+      "Certificate revocation list",
+      "Key management system",
+      "Tokenization vault",
+      "Blockchain"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A blockchain is a distributed public ledger in which each block chains to the prior block's hash, so altering one block breaks every later block. A certificate revocation list is a CA-signed list of revoked certificates, not a chained ledger."
+  },
+  {
+    "domain": "secConcepts",
+    "test": 0,
+    "skill": "Certificate revocation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A browser must check whether a server's certificate has been revoked in real time without downloading a large list from the certificate authority. Which protocol does it use?",
+    "options": [
+      "OCSP",
+      "CRL",
+      "CSR",
+      "Kerberos"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "OCSP lets a client query the status of a single certificate in real time. A CRL must be downloaded in full and is only as current as its last publication."
+  },
+  {
+    "domain": "secConcepts",
+    "test": 0,
+    "skill": "Certificate issuance",
+    "difficulty": 3,
+    "format": "order",
+    "stem": "A web administrator needs a publicly trusted TLS certificate for a new server. Place the steps in the order they occur.",
+    "options": [
+      "Generate a public and private key pair",
+      "Create a certificate signing request",
+      "Submit the CSR to the CA",
+      "CA validates control of the domain",
+      "CA signs and issues the certificate",
+      "Install the certificate on the server"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "explanation": "The CSR contains the public key, so the key pair must exist first. The CA validates the requester before signing, and the signed certificate is installed last alongside the private key that never left the server."
+  }
+]

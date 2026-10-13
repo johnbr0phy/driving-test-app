@@ -1,8 +1,11 @@
 "use client";
 
-import { ExamResultsPage } from "@/components/exam/ExamResultsPage";
-import { getExamById } from "@/lib/exams";
+import { useParams } from "next/navigation";
+import { ResultsV2 } from "@/components/v2/ResultsV2";
+import { getExamV2 } from "@/lib/v2/registry";
+import "@/lib/v2/banks/secplus";
 
-export default function SecplusResultsPage() {
-  return <ExamResultsPage exam={getExamById("secplus")!} />;
+export default function ResultsPage() {
+  const params = useParams();
+  return <ResultsV2 exam={getExamV2("secplus")} testNumber={parseInt(params.id as string, 10) || 0} />;
 }

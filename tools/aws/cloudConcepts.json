@@ -1,0 +1,891 @@
+[
+  {
+    "domain": "cloudConcepts",
+    "test": 1,
+    "skill": "Cloud benefits",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A company wants to stop guessing how many servers it will need for a product launch next quarter. Which advantage of cloud computing does this describe?",
+    "options": [
+      "Go global in minutes",
+      "Stop guessing capacity",
+      "Benefit from massive economies of scale",
+      "Trade fixed expense for variable expense"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "In the cloud a company provisions what it needs and scales up or down with demand, so it no longer has to forecast capacity in advance. Economies of scale lower prices, but they do not remove the need to forecast server counts."
+  },
+  {
+    "domain": "cloudConcepts",
+    "test": 1,
+    "skill": "Cloud benefits",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A company wants to replace large upfront hardware purchases with monthly payments based only on what it actually uses. Which advantage of cloud computing applies?",
+    "options": [
+      "Increase speed and agility",
+      "Go global in minutes",
+      "Trade fixed expense for variable expense",
+      "Stop spending money running and maintaining data centers"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Paying only for consumed resources turns capital expenditure on hardware into variable operating expense. Stopping spending on data centers is a related advantage, but it describes freeing staff from facility work, not the CapEx-to-OpEx pricing shift."
+  },
+  {
+    "domain": "cloudConcepts",
+    "test": 1,
+    "skill": "Economies of scale",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Why is AWS able to offer lower pay-as-you-go prices than most companies could achieve by running their own data centers?",
+    "options": [
+      "Aggregated usage from many customers creates economies of scale",
+      "Each customer receives dedicated physical hardware",
+      "Customers pay for reserved capacity instead of usage",
+      "Customers are responsible for maintaining the physical data center facilities"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Because AWS aggregates usage from hundreds of thousands of customers, it achieves higher economies of scale and passes the savings on as lower prices. Customers never maintain AWS facilities; physical security and maintenance are AWS's responsibility."
+  },
+  {
+    "domain": "cloudConcepts",
+    "test": 1,
+    "skill": "Speed and agility",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A company wants its developers to experiment with new ideas by launching test environments in minutes and discarding them cheaply. Which cloud benefit does this represent?",
+    "options": [
+      "High availability across Availability Zones",
+      "Economies of scale",
+      "Increased speed and agility",
+      "Fault tolerance"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Agility means resources are available in minutes, so the cost and time of experimenting drops sharply. High availability is about keeping workloads running during failures, not about how fast teams can try new ideas."
+  },
+  {
+    "domain": "cloudConcepts",
+    "test": 1,
+    "skill": "Elasticity",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A company wants its ticketing website to add servers automatically during sudden demand spikes and remove them when demand drops. Which cloud concept is this?",
+    "options": [
+      "Elasticity",
+      "Fault tolerance",
+      "Durability",
+      "Disaster recovery"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Elasticity is the ability to acquire resources as demand rises and release them as it falls, typically with Amazon EC2 Auto Scaling. Fault tolerance keeps a system running when components fail, which is a different goal."
+  },
+  {
+    "domain": "cloudConcepts",
+    "test": 1,
+    "skill": "Global reach",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A company wants to serve customers in Asia and Europe with low latency within days, without building any new data centers. Which cloud advantage is this?",
+    "options": [
+      "Stop guessing capacity",
+      "Go global in minutes",
+      "Trade fixed expense for variable expense",
+      "Benefit from massive economies of scale"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "AWS Regions around the world let a company deploy close to customers in a few clicks. Stop guessing capacity is about sizing infrastructure, not about geographic reach."
+  },
+  {
+    "domain": "cloudConcepts",
+    "test": 1,
+    "skill": "Reliability pillar",
+    "difficulty": 3,
+    "format": "multi",
+    "select": 3,
+    "stem": "A team is reviewing its workload against the reliability pillar of the AWS Well-Architected Framework. Which design principles belong to this pillar? (Choose three.)",
+    "options": [
+      "Automatically recover from failure",
+      "Implement a strong identity foundation",
+      "Test recovery procedures",
+      "Use serverless architectures",
+      "Scale horizontally for availability",
+      "Analyze and attribute expenditure"
+    ],
+    "correct": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "Automatically recovering from failure, testing recovery procedures and scaling horizontally to increase aggregate availability are reliability design principles. Using serverless architectures sounds resilient, but it is a performance efficiency principle; a strong identity foundation belongs to security and attributing expenditure to cost optimization."
+  },
+  {
+    "domain": "cloudConcepts",
+    "test": 1,
+    "skill": "Scalability",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which term describes a system's ability to handle a growing workload by adding resources, such as more instances or storage?",
+    "options": [
+      "Scalability",
+      "Durability",
+      "Fault tolerance",
+      "Data residency"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Scalability is the ability to grow to meet increased load, either by adding instances or by using larger ones. Durability refers to protecting stored data from loss, not to handling more workload."
+  },
+  {
+    "domain": "cloudConcepts",
+    "test": 1,
+    "skill": "Cloud benefits",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company wants its IT staff to build customer features instead of racking servers and managing power and cooling. Which cloud advantage applies?",
+    "options": [
+      "Stop spending money running and maintaining data centers",
+      "Go global in minutes",
+      "Increase speed and agility",
+      "Stop guessing capacity"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "AWS handles the heavy lifting of racking, stacking, and powering servers, so staff can focus on customers. Speed and agility is related but describes how quickly resources can be provisioned, not removing facility work."
+  },
+  {
+    "domain": "cloudConcepts",
+    "test": 1,
+    "skill": "Shared responsibility",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company moving to AWS wants to know which security benefit it gains automatically for the physical infrastructure. Which statement is correct?",
+    "options": [
+      "AWS patches the guest operating systems on all EC2 instances",
+      "AWS configures the customer's security group rules",
+      "AWS manages permissions for the customer's IAM users",
+      "AWS secures the data centers, hardware, and global network"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Under the shared responsibility model, AWS is responsible for security of the cloud: facilities, hardware, and network infrastructure. Patching the guest operating system on EC2 remains the customer's job."
+  },
+  {
+    "domain": "cloudConcepts",
+    "test": 1,
+    "skill": "Pay-as-you-go pricing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company runs a reporting workload only during the last three days of each month. Which cloud benefit lowers its cost most directly?",
+    "options": [
+      "Pay-as-you-go pricing for resources actually used",
+      "Global reach through hundreds of CloudFront edge locations",
+      "Eleven nines of durability in Amazon S3",
+      "Multi-AZ deployment for high availability"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "With pay-as-you-go pricing the company pays only while the reporting resources run and can shut them down for the rest of the month. Multi-AZ deployment improves availability but adds cost rather than removing it."
+  },
+  {
+    "domain": "cloudConcepts",
+    "test": 1,
+    "skill": "Availability Zones",
+    "difficulty": 2,
+    "format": "multi",
+    "select": 2,
+    "stem": "Which statements correctly describe AWS Availability Zones? (Choose two.)",
+    "options": [
+      "One or more discrete data centers",
+      "Each located in a different country",
+      "Linked by low-latency networking",
+      "Sites that cache CloudFront content",
+      "Share one power source per Region"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "An Availability Zone is one or more discrete data centers with redundant power and networking, and the AZs in a Region are connected by low-latency, high-bandwidth links. Caching CloudFront content is tempting because it also improves performance, but that is the job of edge locations; the AZs of a Region sit in the same geographic area, not in different countries."
+  },
+  {
+    "domain": "cloudConcepts",
+    "test": 1,
+    "skill": "Operational excellence",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company wants to run and monitor systems, make frequent small reversible changes, and learn from operational failures. Which Well-Architected pillar is this?",
+    "options": [
+      "Performance efficiency",
+      "Operational excellence",
+      "Reliability",
+      "Cost optimization"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Operational excellence covers running and monitoring systems, performing operations as code, and making frequent, small, reversible changes. Reliability focuses on recovering from failures and meeting demand, not on improving operational procedures."
+  },
+  {
+    "domain": "cloudConcepts",
+    "test": 1,
+    "skill": "Security pillar",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which Well-Architected pillar includes the design principles of implementing a strong identity foundation and enabling traceability?",
+    "options": [
+      "Reliability",
+      "Operational excellence",
+      "Security",
+      "Sustainability"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A strong identity foundation, traceability, and applying security at all layers are design principles of the security pillar. Operational excellence includes observability, but identity and traceability for protection belong to security."
+  },
+  {
+    "domain": "cloudConcepts",
+    "test": 1,
+    "skill": "Reliability pillar",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A company wants its workload to recover automatically from infrastructure failures and to perform its intended function consistently. Which pillar addresses this?",
+    "options": [
+      "Reliability",
+      "Performance efficiency",
+      "Security",
+      "Sustainability"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The reliability pillar covers automatically recovering from failure, testing recovery procedures, and scaling horizontally. Performance efficiency is about using resources efficiently, not about recovering from failures."
+  },
+  {
+    "domain": "cloudConcepts",
+    "test": 1,
+    "skill": "Performance efficiency",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A company wants to select the most suitable resource types, adopt serverless architectures, and experiment more often as requirements change. Which pillar applies?",
+    "options": [
+      "Cost optimization",
+      "Reliability",
+      "Performance efficiency",
+      "Operational excellence"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Performance efficiency focuses on using computing resources efficiently, including serverless architectures, democratizing advanced technologies, and experimenting more often. Cost optimization also involves choosing resources, but its goal is the lowest price rather than meeting performance requirements."
+  },
+  {
+    "domain": "cloudConcepts",
+    "test": 2,
+    "skill": "Cost optimization pillar",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company wants to stop paying for idle resources, adopt a consumption model, and attribute spending to teams. Which Well-Architected pillar is this?",
+    "options": [
+      "Performance efficiency",
+      "Sustainability",
+      "Operational excellence",
+      "Cost optimization"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Cost optimization principles include adopting a consumption model, measuring overall efficiency, and analyzing and attributing expenditure. Sustainability also reduces waste, but its goal is environmental impact rather than spending."
+  },
+  {
+    "domain": "cloudConcepts",
+    "test": 2,
+    "skill": "Sustainability pillar",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company wants to minimize the environmental impact of its workloads by maximizing utilization and reducing energy consumption. Which pillar addresses this?",
+    "options": [
+      "Cost optimization",
+      "Sustainability",
+      "Performance efficiency",
+      "Reliability"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The sustainability pillar, added in 2021, focuses on reducing environmental impact through higher utilization and more efficient hardware and software. Cost optimization often lowers usage too, but it targets spending rather than energy and emissions."
+  },
+  {
+    "domain": "cloudConcepts",
+    "test": 2,
+    "skill": "Design for failure",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company wants its architecture to assume that any component can fail at any time and to keep the application running anyway. Which design principle is this?",
+    "options": [
+      "Design for failure",
+      "Scale vertically",
+      "Use tightly coupled components",
+      "Right-size every instance"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Designing for failure means building redundancy and automatic recovery so that no single component failure stops the application. Tightly coupled components do the opposite, because one failure cascades to the others."
+  },
+  {
+    "domain": "cloudConcepts",
+    "test": 2,
+    "skill": "Loose coupling",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company wants its order service to keep accepting orders even when the downstream fulfillment service is temporarily unavailable. Which approach supports this?",
+    "options": [
+      "Run both services on one large EC2 instance",
+      "Connect the services with synchronous API calls",
+      "Decouple the services with an Amazon SQS queue",
+      "Place both services in the same Availability Zone"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An SQS queue buffers orders so the producer keeps working while the consumer is down, and the consumer processes the backlog when it recovers. Synchronous API calls create tight coupling, so a failed fulfillment service would block order intake."
+  },
+  {
+    "domain": "cloudConcepts",
+    "test": 2,
+    "skill": "Loose coupling",
+    "difficulty": 2,
+    "format": "multi",
+    "select": 2,
+    "stem": "A company is redesigning a tightly coupled application. Which practices make its components more loosely coupled? (Choose two.)",
+    "options": [
+      "Put a message queue between components",
+      "Deploy all components together",
+      "Have components share one database schema",
+      "Communicate through well-defined APIs",
+      "Make every call synchronous and blocking"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "explanation": "A queue such as Amazon SQS buffers work between components, and well-defined APIs hide each component's internals, so one can change or fail without breaking the others. A shared database schema may look efficient, but it ties every component to the same data structure, which is tight coupling."
+  },
+  {
+    "domain": "cloudConcepts",
+    "test": 2,
+    "skill": "Horizontal scaling",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A company wants to handle increasing web traffic by adding more EC2 instances behind an Elastic Load Balancer. What type of scaling is this?",
+    "options": [
+      "Vertical scaling",
+      "Right-sizing",
+      "Capacity reservation",
+      "Horizontal scaling"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Adding more instances is horizontal scaling (scaling out), which also removes single points of failure. Vertical scaling means moving to a larger instance, which has size limits and keeps one point of failure."
+  },
+  {
+    "domain": "cloudConcepts",
+    "test": 2,
+    "skill": "Infrastructure as code",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company wants to create identical, repeatable environments from templates instead of configuring resources manually in the console. Which AWS service supports this?",
+    "options": [
+      "AWS Config",
+      "AWS CloudFormation",
+      "Amazon CloudWatch",
+      "AWS Trusted Advisor"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "CloudFormation provisions resources from infrastructure-as-code templates, supporting the design principle of performing operations as code. AWS Config records and evaluates resource configurations, but it does not build environments."
+  },
+  {
+    "domain": "cloudConcepts",
+    "test": 2,
+    "skill": "Managed services",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company wants to reduce time spent on database patching, backups, and hardware provisioning. Which approach best follows AWS design principles?",
+    "options": [
+      "Install the database software on Amazon EC2 instances",
+      "Keep the database on on-premises servers",
+      "Use a managed database service such as Amazon RDS",
+      "Attach larger EBS volumes to the database server"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Managed services such as Amazon RDS handle patching, backups, and hardware so teams can focus on applications. Running the database on EC2 leaves operating system and database maintenance with the customer."
+  },
+  {
+    "domain": "cloudConcepts",
+    "test": 2,
+    "skill": "Stateless design",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A company wants any web server to be replaceable at any time without losing user session data. Which design practice supports this?",
+    "options": [
+      "Keep session data on the local disk of each instance",
+      "Store session state externally in Amazon DynamoDB",
+      "Assign an Elastic IP address to every server",
+      "Increase the size of each web server"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Keeping servers stateless, with session data in a shared store such as DynamoDB or ElastiCache, lets any instance be terminated or replaced. Data on a local disk is lost when the instance is replaced."
+  },
+  {
+    "domain": "cloudConcepts",
+    "test": 2,
+    "skill": "Security pillar",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A company wants to protect its application with controls at the edge, the VPC, the subnet, the instance, and the code. Which security design principle is this?",
+    "options": [
+      "Enable traceability",
+      "Automate security best practices",
+      "Keep people away from data",
+      "Apply security at all layers"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Applying security at all layers means defense in depth across edge, network, compute, and application controls. Enabling traceability is also a security principle, but it concerns logging and monitoring actions rather than layered defenses."
+  },
+  {
+    "domain": "cloudConcepts",
+    "test": 2,
+    "skill": "AWS CAF perspectives",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company wants to address skills gaps, new job roles, and organizational change management as it moves to the cloud. Which AWS CAF perspective covers this?",
+    "options": [
+      "People",
+      "Business",
+      "Platform",
+      "Governance"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The People perspective bridges technology and business through culture, workforce transformation, and change management. Governance focuses on program and risk management rather than skills and roles."
+  },
+  {
+    "domain": "cloudConcepts",
+    "test": 2,
+    "skill": "AWS CAF perspectives",
+    "difficulty": 2,
+    "format": "multi",
+    "select": 2,
+    "stem": "A company is using the AWS Cloud Adoption Framework (AWS CAF) to plan its move to the cloud. Which of the following are AWS CAF perspectives? (Choose two.)",
+    "options": [
+      "Reliability",
+      "Platform",
+      "Sustainability",
+      "Governance",
+      "Cost optimization"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "explanation": "The six AWS CAF perspectives are Business, People, Governance, Platform, Security and Operations. Reliability, sustainability and cost optimization are tempting because they sound like planning areas, but they are pillars of the AWS Well-Architected Framework, a separate framework."
+  },
+  {
+    "domain": "cloudConcepts",
+    "test": 2,
+    "skill": "Migration strategies",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A company wants to move hundreds of on-premises virtual machines to Amazon EC2 quickly without changing the applications. Which migration strategy should it use?",
+    "options": [
+      "Refactor",
+      "Repurchase",
+      "Retain",
+      "Rehost"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Rehosting, or lift and shift, moves applications as they are and is the fastest way to migrate at scale. Refactoring re-architects the application, which takes far more time and effort."
+  },
+  {
+    "domain": "cloudConcepts",
+    "test": 2,
+    "skill": "Migration strategies",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A company wants to move its self-managed MySQL database to Amazon RDS during migration without changing application code. Which migration strategy is this?",
+    "options": [
+      "Rehost",
+      "Replatform",
+      "Refactor",
+      "Retire"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Replatforming (lift, tinker, and shift) makes a few cloud optimizations, such as moving to a managed database, without changing the core architecture. Rehosting would move the database server as it is onto EC2."
+  },
+  {
+    "domain": "cloudConcepts",
+    "test": 2,
+    "skill": "Migration strategies",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company wants to replace its on-premises customer relationship management application with a software as a service (SaaS) product. Which strategy is this?",
+    "options": [
+      "Relocate",
+      "Repurchase",
+      "Replatform",
+      "Retain"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Repurchasing means moving to a different product, commonly a SaaS offering, and dropping the existing application. Replatforming keeps the same application while making small optimizations."
+  },
+  {
+    "domain": "cloudConcepts",
+    "test": 2,
+    "skill": "Migration strategies",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company wants to re-architect a monolithic application into serverless microservices to add features and improve scalability. Which migration strategy is this?",
+    "options": [
+      "Refactor",
+      "Rehost",
+      "Relocate",
+      "Replatform"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Refactoring (re-architecting) changes how the application is built to use cloud-native features, driven by needs that are hard to meet in the current design. Replatforming makes only minor optimizations without changing the architecture."
+  },
+  {
+    "domain": "cloudConcepts",
+    "test": 0,
+    "skill": "Migration services",
+    "difficulty": 2,
+    "format": "multi",
+    "select": 2,
+    "stem": "A company has finished planning its migration. Which AWS services copy its on-premises servers and databases into AWS? (Choose two.)",
+    "options": [
+      "AWS Application Discovery Service",
+      "AWS Application Migration Service",
+      "AWS Database Migration Service",
+      "AWS Compute Optimizer",
+      "AWS Control Tower"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "explanation": "AWS Application Migration Service replicates servers for a lift-and-shift cutover, and AWS DMS migrates databases while the source stays online. Application Discovery Service is tempting because it is a migration tool, but it only collects server and dependency data for planning and does not move workloads."
+  },
+  {
+    "domain": "cloudConcepts",
+    "test": 0,
+    "skill": "Migration services",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A company wants to gather server specifications, utilization data, and dependencies from its on-premises data center to plan a migration. Which AWS service helps?",
+    "options": [
+      "AWS Application Migration Service",
+      "AWS Application Discovery Service",
+      "AWS Config",
+      "Amazon Inspector"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Application Discovery Service collects configuration, usage, and dependency data from on-premises servers to help plan migrations. Application Migration Service performs the actual lift-and-shift replication after planning."
+  },
+  {
+    "domain": "cloudConcepts",
+    "test": 0,
+    "skill": "Migration services",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A company wants to lift and shift physical and virtual servers to AWS with continuous block-level replication and minimal cutover downtime. Which service should it use?",
+    "options": [
+      "AWS Application Discovery Service",
+      "AWS DataSync",
+      "AWS Application Migration Service",
+      "AWS Database Migration Service"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "AWS Application Migration Service (MGN) continuously replicates source servers to AWS and launches them with short cutover windows, making it the recommended rehost tool. Application Discovery Service only collects planning data and does not move servers."
+  },
+  {
+    "domain": "cloudConcepts",
+    "test": 0,
+    "skill": "Database migration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company wants to migrate an Oracle database to Amazon Aurora while keeping the source database fully operational during the migration. Which service should it use?",
+    "options": [
+      "AWS DataSync",
+      "AWS Snowball Edge",
+      "AWS Database Migration Service",
+      "AWS Application Discovery Service"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "AWS DMS migrates databases while the source stays operational and supports heterogeneous migrations, with the Schema Conversion Tool converting the schema. DataSync copies files and objects, not live database changes."
+  },
+  {
+    "domain": "cloudConcepts",
+    "test": 0,
+    "skill": "Offline data transfer",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company that already orders AWS Snowball Edge devices wants to move 500 TB of archived data to AWS, but its internet connection would take months to transfer it. Which service should it use?",
+    "options": [
+      "AWS Snowball Edge",
+      "AWS DataSync",
+      "AWS Transfer Family",
+      "Amazon S3 Transfer Acceleration"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Snowball Edge devices move large datasets physically, which is faster than a slow network for hundreds of terabytes; since November 2025 only existing customers can order them. S3 Transfer Acceleration speeds uploads over the internet but still depends on the limited connection."
+  },
+  {
+    "domain": "cloudConcepts",
+    "test": 0,
+    "skill": "Online data transfer",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A company wants to automate recurring online transfers of files from on-premises NFS shares to Amazon S3 and Amazon EFS. Which service should it use?",
+    "options": [
+      "AWS Transfer Family",
+      "AWS Snowball Edge",
+      "AWS Database Migration Service",
+      "AWS DataSync"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "DataSync automates and accelerates online data movement between on-premises storage such as NFS or SMB shares and AWS storage services. Transfer Family provides managed SFTP, FTPS, and FTP endpoints for partners, not scheduled bulk copies from file shares."
+  },
+  {
+    "domain": "cloudConcepts",
+    "test": 0,
+    "skill": "Fixed vs variable cost",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A company is comparing on-premises costs with AWS. Which of these is a fixed, upfront expense in a traditional data center?",
+    "options": [
+      "Paying per second for EC2 instance usage",
+      "Paying per gigabyte of Amazon S3 storage used",
+      "Buying physical servers and storage arrays",
+      "Paying per request for AWS Lambda functions"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Hardware purchases are capital expenditures paid upfront regardless of later usage, which makes them a fixed cost. EC2, S3, and Lambda charges are variable costs that track actual consumption."
+  },
+  {
+    "domain": "cloudConcepts",
+    "test": 0,
+    "skill": "Rightsizing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company finds that its Amazon EC2 instances average 5 percent CPU utilization all month. Which cost optimization action should it take first?",
+    "options": [
+      "Add more instances to the Auto Scaling group",
+      "Move the instances to Dedicated Hosts",
+      "Migrate the same instances to a different AWS Region for lower prices",
+      "Right-size the instances to smaller instance types"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Right-sizing matches instance types to actual workload needs, and AWS Compute Optimizer recommends smaller sizes for underused instances. Adding instances would increase spending on capacity that is already idle."
+  },
+  {
+    "domain": "cloudConcepts",
+    "test": 0,
+    "skill": "Licensing strategies",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A company wants to use its existing Microsoft Windows Server and SQL Server licenses on AWS to reduce costs. Which licensing approach supports this?",
+    "options": [
+      "Bring your own license (BYOL)",
+      "License-included Amazon EC2 instances",
+      "AWS Free Tier offers",
+      "Spot Instance pricing"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "BYOL lets a company apply licenses it already owns, often on Dedicated Hosts, and AWS License Manager helps track them. License-included instances bundle the license cost into the hourly price, so the company would pay for licenses twice."
+  },
+  {
+    "domain": "cloudConcepts",
+    "test": 0,
+    "skill": "Cost optimization",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A company wants to cut costs by automatically stopping its development EC2 instances every night and weekend. Which approach should it use?",
+    "options": [
+      "Purchase three-year Reserved Instances for development",
+      "Move the development instances to Dedicated Hosts",
+      "Increase the instance sizes to finish work faster",
+      "Automate stop and start schedules for the instances"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Automation such as Instance Scheduler on AWS or Systems Manager stops instances when no one needs them, so the company pays nothing for compute while they are off. Reserved Instances bill for the full term whether or not the instances run, which suits steady workloads rather than part-time ones."
+  },
+  {
+    "domain": "cloudConcepts",
+    "test": 0,
+    "skill": "Total cost of ownership",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "When estimating total cost of ownership, which cost does a company typically reduce by moving a self-managed database to Amazon RDS?",
+    "options": [
+      "Data transfer charges for traffic out to the internet",
+      "Per-gigabyte charges for stored database data",
+      "Staff time for patching, backups, and maintenance",
+      "Monthly fees for an AWS Support plan"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Managed services take over undifferentiated operational tasks, lowering labor costs that are a large part of TCO. Data transfer out is still charged whether the database is self-managed or on RDS."
+  },
+  {
+    "domain": "cloudConcepts",
+    "test": 0,
+    "skill": "Total cost of ownership",
+    "difficulty": 1,
+    "format": "multi",
+    "select": 3,
+    "stem": "A company is building a total cost of ownership (TCO) comparison. Which costs belong on the on-premises side of the comparison? (Choose three.)",
+    "options": [
+      "Power and cooling",
+      "Amazon S3 request charges",
+      "Data center floor space",
+      "EC2 per-second compute charges",
+      "Server hardware refreshes",
+      "AWS Support plan fees"
+    ],
+    "correct": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "An on-premises TCO includes power and cooling, facility space and periodic hardware refreshes, along with staff time. Compute is a large cost on both sides, but per-second EC2 charges are an AWS cost, as are S3 requests and Support plan fees."
+  },
+  {
+    "domain": "cloudConcepts",
+    "test": 0,
+    "skill": "Total cost of ownership",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company wants to compare the full cost of running workloads on premises against AWS, including hardware, facilities, and staff. Which concept should it evaluate?",
+    "options": [
+      "Recovery point objective (RPO)",
+      "Service level agreement (SLA)",
+      "Total cost of ownership (TCO)",
+      "Recovery time objective (RTO)"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "TCO captures both direct and indirect costs, including hardware, facilities, power, and labor, over the life of the workload. RPO and RTO are disaster recovery targets, not cost measures."
+  },
+  {
+    "domain": "cloudConcepts",
+    "test": 0,
+    "skill": "EC2 pricing models",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company wants the lowest compute cost for fault-tolerant batch jobs that can be stopped and restarted at any time. Which pricing model fits best?",
+    "options": [
+      "On-Demand Instances",
+      "Spot Instances",
+      "Dedicated Hosts",
+      "Standard Reserved Instances"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Spot Instances use spare EC2 capacity at up to 90 percent off On-Demand prices but can be interrupted with a two-minute warning, which batch jobs can tolerate. Reserved Instances require a one- or three-year commitment and suit steady workloads instead."
+  },
+  {
+    "domain": "cloudConcepts",
+    "test": 0,
+    "skill": "EC2 pricing models",
+    "difficulty": 2,
+    "format": "multi",
+    "select": 2,
+    "stem": "A company's application runs on Amazon EC2 at a steady level around the clock and must not be interrupted for the next three years. Which purchase options lower its cost in exchange for a commitment? (Choose two.)",
+    "options": [
+      "Spot Instances",
+      "Compute Savings Plans",
+      "On-Demand Capacity Reservations",
+      "Standard Reserved Instances",
+      "On-Demand Instances"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "explanation": "Compute Savings Plans (up to 66 percent off) and Standard Reserved Instances (up to 72 percent off) both trade a 1- or 3-year commitment for a discount on steady usage. Spot Instances can be cheaper still, but AWS can reclaim them with a two-minute warning, and On-Demand Capacity Reservations reserve capacity at the full On-Demand price."
+  },
+  {
+    "domain": "cloudConcepts",
+    "test": 0,
+    "skill": "EC2 pricing models",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company is launching a short-term project with unpredictable usage that cannot be interrupted and does not allow any long-term commitment. Which pricing model fits?",
+    "options": [
+      "Spot Instances",
+      "Three-year Reserved Instances",
+      "Compute Savings Plans",
+      "On-Demand Instances"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "On-Demand Instances need no commitment and run until the company stops them, which suits short, unpredictable workloads. Savings Plans and Reserved Instances require one- or three-year commitments, and Spot Instances can be interrupted."
+  }
+]

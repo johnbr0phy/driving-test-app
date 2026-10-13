@@ -1,0 +1,531 @@
+[
+  {
+    "domain": "aplusOS",
+    "test": 1,
+    "skill": "Windows editions",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A small business bought laptops running Windows 11 Home and now needs them joined to its Active Directory domain. Which of the following should the technician recommend?",
+    "options": [
+      "Install the latest Windows feature update before joining",
+      "Upgrade the laptops to Windows 11 Pro",
+      "Create a matching local administrator account on each laptop",
+      "Enable Remote Desktop and rejoin from the server console"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Windows Home editions cannot join an Active Directory domain; Pro, Pro for Workstations, and Enterprise can. A feature update keeps the same edition, so it does not add domain join."
+  },
+  {
+    "domain": "aplusOS",
+    "test": 1,
+    "skill": "Windows editions",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An engineer needs Windows on a dual-processor workstation with 4 TB of RAM, ReFS volumes, and persistent memory support. Which edition should the technician install?",
+    "options": [
+      "Windows 11 Pro",
+      "Windows 11 Home",
+      "Windows 11 Education",
+      "Windows 11 Pro for Workstations"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Pro for Workstations supports up to 6 TB of RAM, ReFS, and persistent memory for high-end hardware. Windows 11 Pro is the tempting choice but tops out at 2 TB of RAM and lacks full ReFS creation support."
+  },
+  {
+    "domain": "aplusOS",
+    "test": 1,
+    "skill": "Windows editions",
+    "difficulty": 2,
+    "format": "multi",
+    "select": 2,
+    "stem": "A user asks what Windows 11 Pro adds over Windows 11 Home. Which two features are available in Pro but NOT in Home? (Choose two.)",
+    "options": [
+      "Windows Hello sign-in",
+      "BitLocker drive encryption",
+      "Snap layouts for windows",
+      "Microsoft Defender Antivirus scans",
+      "Hosting Remote Desktop sessions",
+      "Microsoft Store apps"
+    ],
+    "correct": [
+      1,
+      4
+    ],
+    "explanation": "Pro adds BitLocker and the ability to host incoming Remote Desktop sessions, along with domain join and Group Policy. Home has only the simpler Device Encryption, while Windows Hello, Defender Antivirus, Snap layouts and the Store come with every edition."
+  },
+  {
+    "domain": "aplusOS",
+    "test": 1,
+    "skill": "Event Viewer",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A user reports that a workstation restarted unexpectedly overnight. The technician wants to review the critical errors recorded around that time. Which tool should the technician use?",
+    "options": [
+      "Task Scheduler",
+      "Resource Monitor",
+      "Event Viewer",
+      "Disk Cleanup"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Event Viewer stores the System and Application logs, including Kernel-Power and bugcheck events that explain an unexpected restart. Resource Monitor shows only live resource usage, not past events."
+  },
+  {
+    "domain": "aplusOS",
+    "test": 1,
+    "skill": "Clean boot",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A desktop takes several minutes to reach the sign-in screen, and the technician suspects a third-party service. Which tool lets the technician hide Microsoft services and disable the rest for a clean boot?",
+    "options": [
+      "System Information (msinfo32)",
+      "Registry Editor (regedit)",
+      "System Configuration (msconfig)",
+      "Performance Monitor (perfmon.msc)"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The msconfig Services tab has a Hide all Microsoft services check box, so the remaining third-party services can be disabled for a clean boot. System Information only reports configuration and cannot change services."
+  },
+  {
+    "domain": "aplusOS",
+    "test": 1,
+    "skill": "Power options",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A laptop's USB mouse stops responding after a few idle minutes and works again only after it is unplugged and reconnected. Which Power Options setting should the technician disable?",
+    "options": [
+      "USB selective suspend",
+      "Fast startup",
+      "Hibernate after a set time",
+      "Turn off hard disk after"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "USB selective suspend powers down idle USB ports, which can leave some devices unresponsive. Fast startup affects only shutdown and boot behavior, not idle USB power."
+  },
+  {
+    "domain": "aplusOS",
+    "test": 1,
+    "skill": "System Information",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Without rebooting, a technician needs to confirm a PC's BIOS version, installed physical memory, and Secure Boot state in a single window. Which utility should the technician run?",
+    "options": [
+      "Device Manager",
+      "msinfo32",
+      "Disk Management",
+      "Resource Monitor"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "System Information (msinfo32) shows the BIOS version and mode, installed RAM, and Secure Boot state on its System Summary page. Device Manager lists hardware and drivers but not firmware or Secure Boot status."
+  },
+  {
+    "domain": "aplusOS",
+    "test": 1,
+    "skill": "Disk Management",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A newly added NVMe SSD shows in Device Manager but not in File Explorer. Which Windows tool should the technician use to make it usable?",
+    "options": [
+      "Defragment and Optimize Drives",
+      "Disk Cleanup",
+      "Device Manager",
+      "Disk Management"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A new drive must be initialized and given a formatted volume and drive letter, which Disk Management does. Device Manager already shows a working driver, so the missing piece is the partition, not the device."
+  },
+  {
+    "domain": "aplusOS",
+    "test": 1,
+    "skill": "Search indexing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Staff report that Windows Search cannot find text inside documents stored in a new D:\\Projects folder. Which Control Panel utility should the technician use to add the folder to the search index?",
+    "options": [
+      "File Explorer Options",
+      "Internet Options",
+      "Programs and Features",
+      "Indexing Options"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Indexing Options controls which locations Windows indexes, including file contents, so adding D:\\Projects fixes the searches. File Explorer Options changes view and search behavior but does not add indexed locations."
+  },
+  {
+    "domain": "aplusOS",
+    "test": 1,
+    "skill": "Robocopy",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A technician must copy a department share to a new file server so the destination exactly matches the source, deleting files that no longer exist there. Which command should the technician use?",
+    "options": [
+      "xcopy with the /E switch",
+      "robocopy with the /MIR switch",
+      "copy with the /V switch",
+      "move with the /Y switch"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "robocopy /MIR mirrors a directory tree, copying subfolders and purging destination files missing from the source. xcopy /E copies subfolders, including empty ones, but never deletes extra files at the destination."
+  },
+  {
+    "domain": "aplusOS",
+    "test": 1,
+    "skill": "Group Policy commands",
+    "difficulty": 2,
+    "format": "multi",
+    "select": 2,
+    "stem": "An administrator changed a GPO, but a workstation still shows the old drive mapping. Which two commands should the technician run to reapply policy and confirm which GPOs applied? (Choose two.)",
+    "options": [
+      "sfc /scannow",
+      "gpupdate /force",
+      "ipconfig /renew",
+      "net user /domain",
+      "gpresult /r",
+      "chkdsk /f"
+    ],
+    "correct": [
+      1,
+      4
+    ],
+    "explanation": "gpupdate /force reapplies computer and user policy immediately, and gpresult /r then lists the GPOs that applied. ipconfig /renew is tempting as a refresh, but it renews a DHCP lease, not Group Policy."
+  },
+  {
+    "domain": "aplusOS",
+    "test": 1,
+    "skill": "Windows installation",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "A technician is performing a clean install of Windows 11 on a user's existing PC. Place the steps in the order the technician should perform them.",
+    "options": [
+      "Back up the user's data",
+      "Boot from the installation media",
+      "Select and partition the target drive",
+      "Complete setup and sign in",
+      "Install drivers and Windows updates"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "explanation": "A clean install erases the drive, so the backup must come first, followed by booting the media and choosing the drive. Drivers and updates can only be installed once setup finishes and someone signs in."
+  },
+  {
+    "domain": "aplusOS",
+    "test": 1,
+    "skill": "ipconfig",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "While documenting a workstation, a technician needs its MAC address, DHCP lease details, and configured DNS servers. Which command shows all of this information?",
+    "options": [
+      "ipconfig /all",
+      "ipconfig /displaydns",
+      "netstat -a",
+      "hostname"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "ipconfig /all lists every adapter's physical address, DHCP lease times, gateway, and DNS servers. ipconfig /displaydns shows only the cached DNS name lookups, not adapter settings."
+  },
+  {
+    "domain": "aplusOS",
+    "test": 1,
+    "skill": "pathping",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A user reports intermittent slowness reaching a cloud application. The technician wants packet-loss statistics for every router hop along the path. Which command is BEST?",
+    "options": [
+      "tracert",
+      "ping -t",
+      "pathping",
+      "ipconfig /flushdns"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "pathping traces the route and then sends repeated probes to each hop, reporting loss and latency per router. tracert shows the hops but not loss statistics gathered over time."
+  },
+  {
+    "domain": "aplusOS",
+    "test": 1,
+    "skill": "Domains and workgroups",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A growing office of 25 users shares files in a Windows workgroup. The owner wants single sign-on and centrally managed accounts and policies. What should the technician recommend?",
+    "options": [
+      "Create matching local accounts on every workstation",
+      "Switch every network profile from Public to Private",
+      "Enable a HomeGroup on all of the workstations",
+      "Deploy a domain controller and join the PCs to it"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A domain authenticates accounts centrally on a domain controller and allows Group Policy management. Matching local accounts in a workgroup still have to be maintained separately on each PC, and HomeGroup was removed from Windows."
+  },
+  {
+    "domain": "aplusOS",
+    "test": 1,
+    "skill": "net use",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A technician must map \\\\FS01\\Sales as drive S: for a user so that it reconnects at every sign-in. Which command should the technician run?",
+    "options": [
+      "net user S: \\\\FS01\\Sales /add",
+      "net use S: \\\\FS01\\Sales /persistent:yes",
+      "net use S: \\\\FS01\\Sales /delete",
+      "net share S=\\\\FS01\\Sales /grant:everyone"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "net use maps a drive letter to a share, and /persistent:yes restores the mapping at each sign-in. net user manages user accounts, and net share creates shares on the local machine rather than mapping remote ones."
+  },
+  {
+    "domain": "aplusOS",
+    "test": 1,
+    "skill": "Network profiles",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A salesperson connects a Windows laptop to free Wi-Fi at an airport. The technician wants network discovery and file sharing blocked on that network. Which setting should be used?",
+    "options": [
+      "Set the network profile to Private",
+      "Set the network profile to Public",
+      "Mark the connection as metered",
+      "Configure a manual proxy server"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Public profile applies stricter Windows Defender Firewall rules and turns off network discovery and file sharing. The Private profile is meant for trusted networks and allows the laptop to be discovered."
+  },
+  {
+    "domain": "aplusOS",
+    "test": 1,
+    "skill": "Metered connections",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A remote employee works over a cellular hotspot with a limited data plan and complains that large Windows updates use up the allowance. What should the technician configure?",
+    "options": [
+      "Set the connection as metered",
+      "Change the network profile to Public",
+      "Disable the Windows Defender Firewall",
+      "Connect through the corporate VPN"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A metered connection tells Windows to defer most update downloads and background sync to save data. The Public profile changes firewall and discovery settings but does not limit data use."
+  },
+  {
+    "domain": "aplusOS",
+    "test": 1,
+    "skill": "File systems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A user cannot copy a 12 GB video onto a FAT32 flash drive that must work on both Windows and macOS computers. What should the technician do?",
+    "options": [
+      "Reformat the drive as NTFS",
+      "Reformat the drive as ext4",
+      "Reformat the drive as APFS",
+      "Reformat the drive as exFAT"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "FAT32 limits files to 4 GB, while exFAT supports large files and is read-write on both Windows and macOS. NTFS handles large files but macOS mounts it read-only by default."
+  },
+  {
+    "domain": "aplusOS",
+    "test": 1,
+    "skill": "32-bit vs 64-bit",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A 64-bit application installer fails on an older Windows 10 PC, and System Information reports an x86-based OS on an x64-capable processor. Which of the following is the MOST likely cause?",
+    "options": [
+      "The processor lacks hardware virtualization support",
+      "The installer needs to be run as administrator",
+      "A 64-bit app cannot run on a 32-bit OS",
+      "The system drive uses the FAT32 file system"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An x86-based PC in System Information means a 32-bit Windows installation, which cannot run 64-bit code even on a 64-bit CPU. Running as administrator fixes permission errors, not architecture mismatches."
+  },
+  {
+    "domain": "aplusOS",
+    "test": 1,
+    "skill": "Windows lifecycle",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A dental clinic still runs Windows 10 22H2 PCs in late 2026 and has not purchased Extended Security Updates. Which of the following is the MOST significant concern?",
+    "options": [
+      "The PCs will stop booting once activation expires",
+      "Microsoft Defender will be removed from the PCs automatically",
+      "Their NTFS volumes will switch to read-only mode",
+      "The PCs no longer receive security patches"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Windows 10 reached end of support on October 14, 2025, so without ESU it receives no security updates and becomes a compliance and malware risk. The OS keeps booting and working; it simply stops being patched."
+  },
+  {
+    "domain": "aplusOS",
+    "test": 1,
+    "skill": "PXE boot",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A technician must deploy Windows 11 to 40 new desktops without USB or optical media by booting each one from the deployment server. Which boot method should be enabled in UEFI?",
+    "options": [
+      "Boot from the recovery partition",
+      "Boot from an external hot-swappable drive",
+      "PXE network boot",
+      "Boot from optical media"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "PXE lets the NIC fetch a boot image from a network deployment server, so no local media is needed. A recovery partition only restores the factory image already on that disk."
+  },
+  {
+    "domain": "aplusOS",
+    "test": 1,
+    "skill": "Partition styles",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A technician is preparing a new 4 TB drive as the Windows 11 system disk on a UEFI computer. Which partition style should the technician choose?",
+    "options": [
+      "GPT",
+      "MBR",
+      "exFAT",
+      "Extended partition"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Windows 11 boots in UEFI mode from GPT, which also supports disks over 2 TB and up to 128 partitions. MBR is limited to 2 TB and four primary partitions, and exFAT is a file system, not a partition style."
+  },
+  {
+    "domain": "aplusOS",
+    "test": 1,
+    "skill": "Upgrade types",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A user's Windows 10 Pro PC meets the Windows 11 hardware requirements. The user wants to keep every installed app, file, and setting. Which installation type should the technician perform?",
+    "options": [
+      "Clean install",
+      "In-place upgrade",
+      "Image deployment",
+      "Reset this PC with Remove everything"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An in-place upgrade runs setup from within Windows and preserves apps, files, and settings. A clean install or a Remove everything reset wipes the user's apps and data."
+  },
+  {
+    "domain": "aplusOS",
+    "test": 1,
+    "skill": "macOS backups",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A Mac user wants automatic hourly backups to an external drive and the ability to restore earlier versions of deleted documents. Which built-in feature should the technician configure?",
+    "options": [
+      "Time Machine",
+      "Disk Utility",
+      "FileVault",
+      "iCloud Keychain"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Time Machine keeps hourly, daily, and weekly snapshots on an external or network drive for version restores. FileVault encrypts the startup disk but makes no backup copies."
+  },
+  {
+    "domain": "aplusOS",
+    "test": 0,
+    "skill": "macOS Force Quit",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A Mac application is frozen with a spinning wait cursor and will not quit from its menu. Which of the following should the technician do FIRST?",
+    "options": [
+      "Run First Aid on the disk in Disk Utility",
+      "Press Command+Option+Esc and use Force Quit",
+      "Press Control+Alt+Delete to open Task Manager",
+      "Open Mission Control and close the window"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Command+Option+Esc opens the Force Quit Applications window, the macOS way to end a hung app. Control+Alt+Delete and Task Manager are Windows tools, and Disk Utility First Aid repairs disks rather than ending processes."
+  },
+  {
+    "domain": "aplusOS",
+    "test": 0,
+    "skill": "Linux permissions",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A Linux user who owns backup.sh gets Permission denied when running ./backup.sh, and ls -l shows -rw-r--r--. Which command should the technician run?",
+    "options": [
+      "chown \\$USER backup.sh",
+      "sudo apt-get install backup.sh",
+      "mv backup.sh /usr/bin/",
+      "chmod u+x backup.sh"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The file lacks the execute bit, and chmod u+x grants it to the owner. chown changes ownership, but the user already owns the file, so it would not fix the error."
+  },
+  {
+    "domain": "aplusOS",
+    "test": 0,
+    "skill": "Linux commands",
+    "difficulty": 3,
+    "format": "matrix",
+    "stem": "For each Linux command, specify what it is mainly used for.",
+    "rows": [
+      "chmod",
+      "ps",
+      "df",
+      "chown",
+      "top",
+      "du"
+    ],
+    "columns": [
+      "Permissions and ownership",
+      "Running processes",
+      "Disk space"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      0,
+      1,
+      2
+    ],
+    "explanation": "chmod and chown change permissions and ownership, ps and top show running processes, and df and du report disk space. du is easy to misplace, but it measures how much space a directory uses, while df shows free space per filesystem."
+  }
+]

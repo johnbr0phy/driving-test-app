@@ -21,20 +21,20 @@
   {
     "domain": "nclexPhys",
     "test": 1,
-    "skill": "Heart failure worsening",
-    "difficulty": 1,
-    "format": "single",
-    "stem": "A client with heart failure is being treated at home. Which finding indicates the condition is worsening?",
-    "options": [
-      "Weight up 2 kg in 2 days",
-      "Heart rate 78 beats/min",
-      "Dry mouth after furosemide",
-      "Trace ankle edema at bedtime"
-    ],
+    "skill": "Recognizing heart failure cues",
+    "difficulty": 2,
+    "format": "highlight",
+    "passage": "1415 Nurses' note: Sitting upright on the stretcher, {{speaking in 3 to 4 word phrases}}. {{Alert and oriented x4}}. {{Crackles in both lungs to midlung}}. {{SpO2 89% on room air}}. {{Bowel sounds active x4}}. {{Pedal pulses 2+ on both sides}}. {{Weight up 3.5 kg in 2 weeks}}. {{Oral temperature 98.4 F}}.",
+    "stimulusId": "NCLEX-CS1",
+    "caseStep": 1,
+    "stem": "The nurse completes the initial assessment. Highlight the findings that require follow-up.",
     "correct": [
-      0
+      0,
+      2,
+      3,
+      6
     ],
-    "explanation": "Rapid weight gain reflects fluid retention, and a gain of about 1 kg in a day or 2 kg in a week should be reported. Trace ankle edema at the end of the day can be a stable baseline, and a heart rate of 78 is normal."
+    "explanation": "Speaking in short phrases, crackles to midlung, an SpO2 of 89% and a 3.5 kg gain in 2 weeks show pulmonary congestion and fluid retention that need treatment now. Orientation, active bowel sounds, 2+ pedal pulses and a normal temperature are expected and need no follow-up."
   },
   {
     "domain": "nclexPhys",
@@ -139,17 +139,15 @@
     "test": 1,
     "skill": "Burn fluid resuscitation",
     "difficulty": 3,
-    "format": "single",
-    "stem": "A 70 kg adult has partial- and full-thickness burns over 40% of the body. The HCP prescribes lactated Ringer's at 4 mL/kg/%TBSA over 24 hours using the Parkland formula. How much fluid should the client receive in the first 8 hours after the burn?",
-    "options": [
-      "2,800 mL",
-      "5,600 mL",
-      "8,400 mL",
-      "11,200 mL"
-    ],
-    "correct": [
-      1
-    ],
+    "format": "numeric",
+    "stem": "A 70 kg adult has partial- and full-thickness burns over 40% of the body. The HCP prescribes lactated Ringer's at 4 mL/kg/%TBSA over 24 hours using the Parkland formula. How many mL should the client receive in the first 8 hours after the burn? Record your answer as a whole number without commas.",
+    "numeric": {
+      "answers": [
+        "5600",
+        "5600.0"
+      ],
+      "tolerance": 0
+    },
     "explanation": "The 24-hour total is 4 x 70 x 40 = 11,200 mL, and half of it, 5,600 mL, is given in the first 8 hours from the time of the burn. 11,200 mL is the full-day total, not the first 8 hours."
   },
   {
@@ -173,20 +171,32 @@
   {
     "domain": "nclexPhys",
     "test": 1,
-    "skill": "Hyperkalemia on ECG",
-    "difficulty": 1,
-    "format": "single",
-    "stem": "A client has a serum potassium of 6.8 mEq/L. Which finding would the nurse expect on the cardiac monitor?",
-    "options": [
-      "Prominent U waves",
-      "Flattened T waves",
-      "Tall, peaked T waves",
-      "Positive Trousseau sign"
+    "skill": "Heart failure hypotheses",
+    "difficulty": 2,
+    "format": "cloze",
+    "passage": "The chest x-ray shows an enlarged heart and vascular congestion with no focal infiltrate. Troponin I is within the reference range.",
+    "stimulusId": "NCLEX-CS1",
+    "caseStep": 3,
+    "stem": "Complete the sentence. The client's findings are most consistent with [[1]], most likely triggered by [[2]].",
+    "blanks": [
+      [
+        "acute decompensated heart failure",
+        "community-acquired pneumonia",
+        "acute pulmonary embolism",
+        "acute ST-elevation myocardial infarction"
+      ],
+      [
+        "missed diuretics and salty meals",
+        "a viral lower respiratory infection",
+        "a clot in a pulmonary artery",
+        "a reaction to the ACE inhibitor"
+      ]
     ],
     "correct": [
-      2
+      0,
+      0
     ],
-    "explanation": "Hyperkalemia produces tall, peaked T waves and can progress to a widened QRS and asystole. Prominent U waves and flat T waves are signs of hypokalemia, and Trousseau sign reflects hypocalcemia."
+    "explanation": "Orthopnea, crackles, distended neck veins, edema and a 3.5 kg gain after stopping furosemide and eating high-sodium foods describe acute decompensated heart failure from fluid and sodium retention. Pneumonia is less likely with no fever and no infiltrate, and a normal troponin argues against a heart attack."
   },
   {
     "domain": "nclexPhys",
@@ -210,39 +220,58 @@
   {
     "domain": "nclexPhys",
     "test": 2,
-    "skill": "ABG with NG suction",
+    "skill": "ABG interpretation",
     "difficulty": 3,
-    "format": "single",
+    "format": "cloze",
     "passage": "| ABG | Result |\n|---|---|\n| pH | 7.50 |\n| PaCO2 | 46 mm Hg |\n| HCO3 | 32 mEq/L |",
-    "stem": "A client has had nasogastric suction for 3 days after bowel surgery. Which interpretation of the arterial blood gas is correct?",
-    "options": [
-      "Uncompensated metabolic alkalosis",
-      "Partly compensated metabolic alkalosis",
-      "Partly compensated respiratory acidosis",
-      "Uncompensated respiratory alkalosis"
+    "stem": "A client has had nasogastric suction for 3 days after bowel surgery. Complete the sentence. The arterial blood gas shows [[1]] that is [[2]].",
+    "blanks": [
+      [
+        "metabolic alkalosis",
+        "respiratory alkalosis",
+        "metabolic acidosis",
+        "respiratory acidosis"
+      ],
+      [
+        "uncompensated",
+        "partly compensated",
+        "fully compensated"
+      ]
     ],
     "correct": [
+      0,
       1
     ],
-    "explanation": "The high pH and high bicarbonate show metabolic alkalosis from loss of gastric acid, and the PaCO2 above 45 shows the lungs retaining CO2 to compensate while the pH is still abnormal. Without compensation the PaCO2 would still be in the 35 to 45 range."
+    "explanation": "A high pH with a high bicarbonate is metabolic alkalosis from losing gastric acid, and a PaCO2 above 45 shows the lungs retaining CO2 to compensate while the pH is still abnormal, so it is partly compensated. It would be uncompensated if the PaCO2 were still 35 to 45, and fully compensated only if the pH were back in range."
   },
   {
     "domain": "nclexPhys",
     "test": 2,
-    "skill": "Hypovolemic shock",
+    "skill": "Sepsis hypotheses",
     "difficulty": 2,
-    "format": "single",
-    "stem": "A client with an upper GI bleed has a BP of 78/40 mm Hg and a heart rate of 128 beats/min. The airway is patent and SpO2 is 95% on oxygen. Which action should the nurse take first?",
-    "options": [
-      "Place in steep Trendelenburg",
-      "Insert two large-bore IV catheters",
-      "Insert an indwelling urinary catheter",
-      "Offer oral fluids as tolerated"
+    "format": "cloze",
+    "stimulusId": "NCLEX-CS2",
+    "caseStep": 3,
+    "stem": "Complete the sentence. The client is most likely developing [[1]], and the greatest immediate risk is [[2]].",
+    "blanks": [
+      [
+        "sepsis from a urinary source",
+        "dehydration from poor intake",
+        "a hypertensive emergency",
+        "worsening cognitive impairment"
+      ],
+      [
+        "progression to septic shock",
+        "hypoglycemia from metformin",
+        "diabetic ketoacidosis",
+        "a hypertensive stroke"
+      ]
     ],
     "correct": [
-      1
+      0,
+      0
     ],
-    "explanation": "With the airway and breathing secure, restoring circulating volume is the priority, and that requires large-bore IV access for fluids and blood. Steep Trendelenburg is no longer recommended because it impairs breathing and does little for perfusion."
+    "explanation": "A urinary infection with fever, tachycardia, tachypnea, hypotension, new confusion, a high lactate and rising creatinine is sepsis with organ dysfunction, which can progress to septic shock. Dehydration alone would not explain the fever and high white count, and the BP is far below her baseline, not high."
   },
   {
     "domain": "nclexPhys",
@@ -346,18 +375,23 @@
     "test": 2,
     "skill": "Sepsis bundle",
     "difficulty": 2,
-    "format": "single",
-    "stem": "A client with suspected sepsis has a new prescription for IV antibiotics and IV fluids. Which action should the nurse take first?",
+    "format": "multi",
+    "stimulusId": "NCLEX-CS2",
+    "caseStep": 4,
+    "stem": "The nurse notifies the HCP. Which prescriptions should the nurse anticipate? Select all that apply.",
     "options": [
-      "Give the IV antibiotic",
-      "Draw blood cultures",
-      "Start norepinephrine",
-      "Insert a urinary catheter"
+      "Two sets of blood cultures",
+      "Lisinopril 20 mg PO now",
+      "Broad-spectrum IV antibiotic",
+      "Furosemide 40 mg IV every 12 hours",
+      "Crystalloid bolus of 30 mL/kg"
     ],
     "correct": [
-      1
+      0,
+      2,
+      4
     ],
-    "explanation": "Blood cultures are drawn before the first antibiotic dose so the organism can be identified, as long as this does not delay the antibiotic. Norepinephrine is added only if hypotension persists after fluids."
+    "explanation": "Sepsis care starts with blood cultures drawn before a broad-spectrum antibiotic given within the first hour and a 30 mL/kg crystalloid bolus for hypotension and a high lactate. Lisinopril and furosemide both lower blood pressure and volume in a client who is already hypotensive."
   },
   {
     "domain": "nclexPhys",
@@ -420,21 +454,32 @@
   {
     "domain": "nclexPhys",
     "test": 0,
-    "skill": "ABG with anxiety",
-    "difficulty": 1,
-    "format": "single",
-    "passage": "| ABG | Result |\n|---|---|\n| pH | 7.49 |\n| PaCO2 | 30 mm Hg |\n| HCO3 | 23 mEq/L |",
-    "stem": "A client having a panic attack is breathing rapidly. Which interpretation of the arterial blood gas is correct?",
-    "options": [
-      "Uncompensated metabolic alkalosis",
-      "Uncompensated respiratory alkalosis",
-      "Partly compensated metabolic acidosis",
-      "Partly compensated respiratory acidosis"
+    "skill": "DKA hypotheses",
+    "difficulty": 2,
+    "format": "cloze",
+    "passage": "Serum potassium 5.6 mEq/L. Serum sodium 131 mEq/L. Lipase within the reference range.",
+    "stimulusId": "NCLEX-CS3",
+    "caseStep": 3,
+    "stem": "Complete the sentence. The client is most likely experiencing [[1]], and the priority problem is [[2]].",
+    "blanks": [
+      [
+        "diabetic ketoacidosis",
+        "hyperosmolar hyperglycemic state",
+        "acute pancreatitis",
+        "starvation ketosis"
+      ],
+      [
+        "severe fluid volume deficit",
+        "hypoglycemia from fasting",
+        "fluid volume excess",
+        "hyperkalemia causing dysrhythmia"
+      ]
     ],
     "correct": [
-      1
+      0,
+      0
     ],
-    "explanation": "Rapid breathing blows off CO2, so the high pH with a low PaCO2 is respiratory alkalosis, and the normal bicarbonate shows no compensation yet. Metabolic alkalosis would show a bicarbonate above 26 mEq/L."
+    "explanation": "A glucose of 486 mg/dL with ketones, a pH of 7.18 and a low bicarbonate after stopping basal insulin is diabetic ketoacidosis, and the hypotension and tachycardia show the fluid deficit that is treated first. Hyperosmolar hyperglycemic state has little or no ketoacidosis, and starvation ketosis comes with a normal glucose. The potassium of 5.6 mEq/L reflects a shift out of cells and falls quickly once fluids and insulin start."
   },
   {
     "domain": "nclexPhys",
@@ -478,38 +523,84 @@
   {
     "domain": "nclexPhys",
     "test": 0,
-    "skill": "DKA potassium",
+    "skill": "Analyzing DKA cues",
     "difficulty": 2,
-    "format": "single",
-    "stem": "A client with diabetic ketoacidosis has a prescription for a continuous regular insulin infusion. Which lab result must the nurse check before starting it?",
-    "options": [
-      "Serum sodium",
-      "Serum potassium",
-      "Serum phosphate",
-      "Hemoglobin A1c"
+    "format": "matrix",
+    "passage": "2230 Arterial blood gas: pH 7.18, PaCO2 22 mm Hg, HCO3 9 mEq/L. Serum ketones high.",
+    "stimulusId": "NCLEX-CS3",
+    "caseStep": 2,
+    "stem": "For each finding, specify whether it is mainly caused by ketoacidosis or by fluid volume deficit.",
+    "rows": [
+      "Deep, rapid respirations",
+      "Capillary refill 4 seconds",
+      "Fruity breath odor",
+      "BP 98/58 mm Hg",
+      "Dry mucous membranes",
+      "Bicarbonate 9 mEq/L"
+    ],
+    "columns": [
+      "Ketoacidosis",
+      "Fluid volume deficit"
     ],
     "correct": [
-      1
+      0,
+      1,
+      0,
+      1,
+      1,
+      0
     ],
-    "explanation": "Insulin drives potassium into cells, so a low starting potassium (below 3.3 mEq/L) must be corrected before insulin to prevent dangerous hypokalemia. Sodium and phosphate are monitored but do not hold the start of insulin."
+    "explanation": "Deep, rapid Kussmaul breathing blows off CO2 to offset the acid, acetone causes the fruity odor, and bicarbonate is used up buffering ketoacids. Osmotic diuresis and vomiting cause the slow capillary refill, low BP and dry mucosa; the BP is tempting to blame on acidosis, but it reflects lost volume."
   },
   {
     "domain": "nclexPhys",
     "test": 0,
     "skill": "Anaphylaxis",
-    "difficulty": 1,
-    "format": "single",
-    "stem": "A client receiving an IV antibiotic develops hives, wheezing and a BP of 82/50 mm Hg. The nurse stops the infusion. Which action should the nurse take next?",
-    "options": [
-      "Give diphenhydramine IV",
-      "Give IM epinephrine in the thigh",
-      "Give albuterol by nebulizer",
-      "Give methylprednisolone IV"
+    "difficulty": 2,
+    "format": "bowtie",
+    "passage": "1410 Nurses' note: 10 minutes after an IV cefazolin infusion started, the client reports throat tightness. Hives on the chest and arms, wheezing in all lung fields. BP 82/50 mm Hg, HR 128/min, SpO2 90% on room air. Temperature 98.6 F.",
+    "stem": "Complete the diagram by choosing 2 actions the nurse should take, the condition the client is most likely experiencing, and 2 parameters the nurse should monitor.",
+    "groups": [
+      {
+        "label": "Actions to take",
+        "pick": 2,
+        "options": [
+          "Stop the cefazolin infusion",
+          "Give IM epinephrine",
+          "Give diphenhydramine by mouth now",
+          "Place the client prone",
+          "Slow the infusion rate"
+        ]
+      },
+      {
+        "label": "Condition most likely experiencing",
+        "pick": 1,
+        "options": [
+          "Anaphylaxis",
+          "Acute asthma attack",
+          "Pulmonary embolism",
+          "Septic shock"
+        ]
+      },
+      {
+        "label": "Parameters to monitor",
+        "pick": 2,
+        "options": [
+          "Blood pressure and heart rate",
+          "Serum potassium level",
+          "Airway and breath sounds",
+          "Capillary blood glucose every hour"
+        ]
+      }
     ],
     "correct": [
-      1
+      0,
+      1,
+      5,
+      9,
+      11
     ],
-    "explanation": "Epinephrine IM in the lateral thigh is the first-line treatment for anaphylaxis because it reverses bronchospasm and hypotension. Antihistamines, bronchodilators and steroids are adjuncts and do not treat the shock."
+    "explanation": "Hives, wheezing and hypotension minutes into a new antibiotic are anaphylaxis, so the infusion is stopped and IM epinephrine given, then blood pressure and the airway are watched closely. Slowing the infusion still delivers the allergen, diphenhydramine by mouth is too slow and does not treat shock, and asthma alone would not explain the hives and hypotension."
   },
   {
     "domain": "nclexPhys",

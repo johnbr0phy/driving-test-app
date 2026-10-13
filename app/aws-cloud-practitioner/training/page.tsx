@@ -1,8 +1,5 @@
-"use client";
+import { permanentRedirect } from "next/navigation";
 
-import { ExamTrainingPage } from "@/components/exam/ExamTrainingPage";
-import { getExamById } from "@/lib/exams";
-
-export default function AwsTrainingPage() {
-  return <ExamTrainingPage exam={getExamById("aws")!} />;
+export default function OldTraining() {
+  permanentRedirect("/aws-cloud-practitioner");
 }

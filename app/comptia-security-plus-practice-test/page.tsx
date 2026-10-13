@@ -50,8 +50,9 @@ const jsonLd = {
       offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
       featureList: [
         "200 Security+ practice questions",
-        "4 practice tests weighted to the SY0-701 objectives",
-        "Training sets for every domain",
+        "2 full 90-question practice tests in 90 minutes with flagging and review",
+        "5 drills, one per SY0-701 domain",
+        "Choose-two and choose-three, matching and ordering items",
         "Instant feedback with explanations",
         "Auto-save progress",
       ],
@@ -78,7 +79,7 @@ const jsonLd = {
           name: "Does this include performance-based questions?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "No. Everything here is four-option single answer, which is most of the real exam. Performance-based items simulate a firewall rule set, a log review or a network diagram, so pair this bank with hands-on practice.",
+            text: "Partly. Alongside single-answer and choose-two or choose-three items, the practice tests include matching (a table) and ordering items that stand in for performance-based questions. Real PBQs are simulations of a firewall rule set, a log review or a network diagram, which are not modelled here, so pair this bank with hands-on practice.",
           },
         },
         {
@@ -102,7 +103,7 @@ const jsonLd = {
           name: "Is the TigerTest Security+ practice test free?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. All four practice tests and all training sets are free, with no account required. Create a free account if you want your progress saved across devices.",
+            text: "Yes. Both practice tests and all five drills are free, with no account required. Create a free account if you want your progress saved across devices.",
           },
         },
       ],
@@ -135,7 +136,7 @@ export default function SecplusLandingPage() {
             Free CompTIA Security+ Practice Test 2026
           </h1>
           <ExamLandingHero
-            dashboardHref="/comptia-security-plus/dashboard"
+            dashboardHref="/comptia-security-plus"
             shortName="Security+"
             subtitle="200 questions weighted to the SY0-701 objectives. Tuned for mobile. No account needed."
             shots={{ mobile: "/landing/secplus-mobile.png", desktop: "/landing/secplus-desktop.png" }}
@@ -156,9 +157,9 @@ export default function SecplusLandingPage() {
               <Smartphone className="w-7 h-7 text-brand" />
             </div>
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Training by Domain</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Drills by Domain</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Five sets, one per domain: general security concepts, threats, vulnerabilities and mitigations, security architecture, security operations, and program management and oversight. Questions you miss come back until you have mastered them.
+                Five drills, one per domain: general security concepts, threats, vulnerabilities and mitigations, security architecture, security operations, and program management and oversight. Questions you miss come back until you have mastered them.
               </p>
             </div>
           </div>
@@ -169,7 +170,7 @@ export default function SecplusLandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Practice Tests</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four 50-question tests written the CompTIA way: an analyst, a log or a symptom, and the control or action that BEST fits.
+                Two 90-question tests in 90 minutes with flagging and review, written the CompTIA way: an analyst, a log or a symptom, and the control or action that BEST fits. Practice Test 2 is held out of the drills, so it measures readiness.
               </p>
             </div>
           </div>
@@ -255,7 +256,7 @@ export default function SecplusLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Drill your weak domain</h3>
               <p>
-                TigerTest tracks your accuracy by domain. Security+ passes at 750 of 900, so retake the domain you miss most until you clear 85 percent with room to spare, then expect a few performance-based items at the start of the real exam.
+                TigerTest tracks your accuracy by domain. Security+ passes at 750 of 900, a scaled score that is not a fixed percent, so retake the drill you miss most until you clear 85 percent with room to spare, then expect a few performance-based items at the start of the real exam.
               </p>
             </div>
           </div>
@@ -277,7 +278,7 @@ export default function SecplusLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Does this include performance-based questions?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              No. Everything here is four-option single answer, which is most of the real exam. Performance-based items simulate a firewall rule set, a log review or a network diagram, so pair this bank with hands-on practice.
+              Partly. Alongside single-answer and choose-two or choose-three items, the practice tests include matching (a table) and ordering items that stand in for performance-based questions. Real PBQs are simulations of a firewall rule set, a log review or a network diagram, which are not modelled here, so pair this bank with hands-on practice.
             </p>
           </div>
           <div>
@@ -295,7 +296,7 @@ export default function SecplusLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is the TigerTest Security+ practice test free?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              Yes. All four practice tests and all training sets are free, with no account required. Create a free account if you want your progress saved across devices.
+              Yes. Both practice tests and all five drills are free, with no account required. Create a free account if you want your progress saved across devices.
             </p>
           </div>
         </div>
@@ -309,7 +310,7 @@ export default function SecplusLandingPage() {
         <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">Ready to Pass Security+?</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Free to start. No account required. 200 questions across all five domains.</p>
-          <ExamLandingCTA dashboardHref="/comptia-security-plus/dashboard" />
+          <ExamLandingCTA dashboardHref="/comptia-security-plus" />
         </div>
       </div>
     </div>

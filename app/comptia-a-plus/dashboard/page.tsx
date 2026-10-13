@@ -1,8 +1,5 @@
-"use client";
+import { permanentRedirect } from "next/navigation";
 
-import { ExamDashboard } from "@/components/exam/ExamDashboard";
-import { getExamById } from "@/lib/exams";
-
-export default function AplusDashboardPage() {
-  return <ExamDashboard exam={getExamById("aplus")!} />;
+export default function OldDashboard() {
+  permanentRedirect("/comptia-a-plus");
 }

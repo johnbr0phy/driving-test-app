@@ -10,7 +10,7 @@ import { getBank, getStimulus } from "@/lib/v2/bank";
 import { v2Routes } from "@/lib/v2/registry";
 import { drillKey, drillQuestions, drillStateFor, nextDrillQuestion, EMPTY_DRILL } from "@/lib/v2/training";
 import { optionOrderFor } from "@/lib/v2/session";
-import { isAnswered, isCorrect } from "@/lib/v2/grading";
+import { isComplete, isCorrect } from "@/lib/v2/grading";
 import { useV2Store } from "@/store/useV2Store";
 import { useHydration } from "@/hooks/useHydration";
 import { useSound } from "@/hooks/useSound";
@@ -97,7 +97,7 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
   const check = (value?: AnswerValue) => {
     if (!question || revealed) return;
     const final = value ?? answer;
-    if (!isAnswered(final)) return;
+    if (!isComplete(question, final)) return;
     setAnswer(final);
     const ok = isCorrect(question, final);
     setRevealed(true);
@@ -112,7 +112,7 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
   const onAnswer = (value: AnswerValue) => {
     if (revealed) return;
     setAnswer(value);
-    // One tap checks a single-choice item; numeric and multi wait for Check.
+    // One tap checks a single-choice item; every other format waits for Check.
     if (question?.format === "single") check(value);
   };
 
@@ -198,7 +198,7 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
             ) : question.format === "single" ? (
               <div className="v2-tap flex w-full items-center justify-center text-sm text-gray-500 dark:text-gray-400">Tap an answer to check it</div>
             ) : (
-              <button type="button" onClick={() => check()} disabled={!isAnswered(answer)} className="v2-tap w-full rounded-xl bg-brand text-base font-bold text-white disabled:opacity-40">Check</button>
+              <button type="button" onClick={() => check()} disabled={!isComplete(question, answer)} className="v2-tap w-full rounded-xl bg-brand text-base font-bold text-white disabled:opacity-40">Check</button>
             )}
           </div>
         </div>

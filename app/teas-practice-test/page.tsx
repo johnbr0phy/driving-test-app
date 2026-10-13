@@ -88,7 +88,7 @@ const jsonLd = {
           name: "Does this have the same question types as the real TEAS?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "The real exam mixes multiple choice with select-all-that-apply, fill-in, hot-spot and ordered-response items. Everything here is four-option single answer, with each reading passage shown beside its question, so use this to learn the content and the timing and expect the other formats on exam day.",
+            text: "The real exam mixes multiple choice with select-all-that-apply, fill-in, hot-spot and ordered-response items. TigerTest includes select-all-that-apply, fill-in and ordered-response items alongside multiple choice, with each reading passage shown beside its question. Image hot spots are the one format not modelled here.",
           },
         },
         {
@@ -284,7 +284,7 @@ export default function TeasLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Does this have the same question types as the real TEAS?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              The real exam mixes multiple choice with select-all-that-apply, fill-in, hot-spot and ordered-response items. Everything here is four-option single answer, with each reading passage shown beside its question, so use this to learn the content and the timing and expect the other formats on exam day.
+              The real exam mixes multiple choice with select-all-that-apply, fill-in, hot-spot and ordered-response items. TigerTest includes select-all-that-apply, fill-in and ordered-response items alongside multiple choice, with each reading passage shown beside its question. Image hot spots are the one format not modelled here.
             </p>
           </div>
           <div>

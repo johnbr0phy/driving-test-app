@@ -1,0 +1,4418 @@
+[
+  {
+    "id": "EMT-T1-001",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Patient approach",
+    "stem": "You reach a 45-year-old man sitting on a park bench holding his chest. He is alert and watching you approach. What should you do first?",
+    "options": [
+      "Introduce yourself and ask if you may help him",
+      "Ask bystanders for his medical history first",
+      "Place a nonrebreather mask on him at 15 L/min",
+      "Begin a head-to-toe exam while he describes his pain"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An alert adult must give expressed consent, and introducing yourself builds the rapport that makes the rest of the assessment work. Applying a mask or touching him without consent is unsafe for rapport and can be battery."
+  },
+  {
+    "id": "EMT-T1-002",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "treatmentTransport",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Suctioning",
+    "stem": "While suctioning thick secretions from the airway of an unresponsive 4-year-old boy, what is the maximum duration of each suction attempt?",
+    "options": [
+      "5 seconds",
+      "10 seconds",
+      "15 seconds",
+      "Until the airway is fully clear"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Children are suctioned no more than 10 seconds at a time (adults 15, infants 5) because suction removes oxygen along with secretions. Fifteen seconds is the adult limit and risks hypoxia and bradycardia in a child."
+  },
+  {
+    "id": "EMT-T1-003",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "sceneSizeUp",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Scene safety",
+    "stem": "Dispatch sends you to a bar for a 24-year-old man with a gunshot wound; police are en route but not on scene. You should:",
+    "options": [
+      "Enter quickly since the shooter has probably fled",
+      "Park at the front door with lights off",
+      "Ask the caller by phone whether the scene is safe now",
+      "Stage nearby until police report the scene secure"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "At a violent scene the EMT stages at a safe distance until law enforcement secures it, because injured or dead rescuers help no one. A caller's opinion or an assumption that the shooter left is not a secured scene."
+  },
+  {
+    "id": "EMT-T1-004",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Communication barriers",
+    "stem": "A 62-year-old woman who speaks only Vietnamese has abdominal pain. Her 10-year-old grandson offers to translate. The best approach is to:",
+    "options": [
+      "Speak English loudly and slowly to her",
+      "Request a trained interpreter or language line",
+      "Skip the history and transport without questions",
+      "Rely on the grandson for all medical questions"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A trained interpreter gives accurate, private communication, while a child may omit or misread sensitive details. Use the grandson only for urgent basics when nothing better exists."
+  },
+  {
+    "id": "EMT-T1-005",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "emsOperations",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Oxygen cylinder duration",
+    "stem": "A D cylinder reads 2,000 psi. You give 15 L/min by nonrebreather. Using a 200 psi safe residual, how long will it last?",
+    "options": [
+      "About 21 minutes",
+      "About 19 minutes",
+      "About 34 minutes",
+      "About 10 minutes"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Duration = (2,000 - 200) x 0.16 / 15 = 288 / 15, about 19 minutes. Skipping the 200 psi safe residual gives 21 minutes, and using the E constant of 0.28 gives about 34."
+  },
+  {
+    "id": "EMT-T1-006",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "secondaryAssessment",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Focused exam",
+    "stem": "A 45-year-old woman twisted her ankle stepping off a curb. She is alert with no other complaints. Your physical exam should be:",
+    "options": [
+      "A focused exam of the injured ankle",
+      "A rapid head-to-toe trauma exam",
+      "A detailed exam deferred to the hospital",
+      "Vital signs only, with no hands-on exam"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "With an isolated injury and no significant mechanism, a focused exam of the complaint area is appropriate. A rapid full-body trauma exam is reserved for significant mechanisms or unresponsive patients."
+  },
+  {
+    "id": "EMT-T1-007",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pediatric assessment",
+    "stem": "A 4-year-old girl with a painful, deformed forearm clings to her mother and cries as you approach. To assess her, you should:",
+    "options": [
+      "Separate her from her mother to reduce distraction",
+      "Promise her that nothing you do will hurt",
+      "Examine her while she sits on her mother's lap",
+      "Start at her head and move quickly down"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Keeping a young child with the caregiver lowers fear and improves cooperation, and toddlers tolerate a toe-to-head approach better. Promising no pain is dishonest and destroys trust when it does hurt."
+  },
+  {
+    "id": "EMT-T1-008",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "treatmentTransport",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Airway adjuncts",
+    "stem": "A 34-year-old woman is postictal after a seizure with snoring respirations. She gags as you insert an oropharyngeal airway. You should:",
+    "options": [
+      "Advance it past the gag reflex and tape it in",
+      "Insert a smaller OPA without rotating it",
+      "Leave it partly inserted to hold the tongue forward",
+      "Remove it and insert a lubricated NPA"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An OPA is only for patients with no gag reflex, and forcing one invites vomiting and aspiration. A lubricated nasopharyngeal airway, bevel toward the septum, is tolerated by patients who still gag."
+  },
+  {
+    "id": "EMT-T1-009",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "sceneSizeUp",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Mechanism of injury",
+    "stem": "While en route, which dispatch details should prompt an early request for more resources? Select all that apply.",
+    "options": [
+      "Roofer fell 25 feet onto concrete",
+      "Driver pinned with fuel leaking",
+      "Rollover with five occupants hurt",
+      "Adult with a twisted ankle",
+      "Teen with a steady nosebleed"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "A high fall suggests multisystem trauma that needs ALS, entrapment with a fuel leak needs the fire department, and five patients outnumber one crew. A twisted ankle or a nosebleed in a stable patient is handled by the responding unit."
+  },
+  {
+    "id": "EMT-T1-010",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Behavioral emergencies",
+    "stem": "A 30-year-old man is pacing and shouting at a bus stop. Police have secured the scene. He yells that he does not want help. You should:",
+    "options": [
+      "Restrain him on the cot before trying to talk with him",
+      "Ignore what he says and start your exam",
+      "Stand close and firmly order him to sit",
+      "Speak calmly, keep a safe distance, and listen"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A calm voice, a safe distance and active listening de-escalate an agitated patient and protect the crew. Crowding or restraining him without need escalates the situation and restraint requires enough personnel and protocol."
+  },
+  {
+    "id": "EMT-T1-011",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "General impression",
+    "stem": "You enter a room and see a 58-year-old woman slumped in a chair, gray in color, with gurgling respirations. Your next action should be to:",
+    "options": [
+      "Open and suction her airway immediately",
+      "Measure her blood pressure and pulse rate",
+      "Obtain a SAMPLE history from her husband",
+      "Ask her husband when she was last well"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Gray skin and gurgling seen from the doorway mean she is sick and the airway is threatened, so it is managed at once. History and vital signs come after life threats to the airway are fixed."
+  },
+  {
+    "id": "EMT-T1-012",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "treatmentTransport",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Airway adjuncts",
+    "stem": "A 27-year-old man fell 15 feet, responds to pain, and has clear fluid draining from his nose and bruising behind both ears. Which adjunct should you avoid?",
+    "options": [
+      "Oropharyngeal airway",
+      "Rigid-tip suction catheter",
+      "Nasopharyngeal airway",
+      "Bag-valve mask with oxygen reservoir"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "CSF from the nose and Battle's sign suggest a basilar skull fracture, where an NPA can pass through the fractured skull base. An OPA remains acceptable if he has no gag reflex, and suction and BVM are still needed."
+  },
+  {
+    "id": "EMT-T1-013",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "emsOperations",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Oxygen cylinder duration",
+    "stem": "An E cylinder reads 1,200 psi. A COPD patient is on a nasal cannula at 4 L/min. How long will it last?",
+    "options": [
+      "About 84 minutes",
+      "About 40 minutes",
+      "About 7 minutes",
+      "About 70 minutes"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Duration = (1,200 - 200) x 0.28 / 4 = 280 / 4 = 70 minutes. Forgetting the 200 psi safe residual gives 84 minutes, and using the D constant of 0.16 gives 40."
+  },
+  {
+    "id": "EMT-T1-014",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "sceneSizeUp",
+    "difficulty": 1,
+    "format": "matrix",
+    "skill": "Additional resources",
+    "stem": "For each scene, specify whether the crew may approach the patient now or must stay back.",
+    "rows": [
+      "Assault scene police have secured",
+      "Downed wire lying across the car",
+      "Rollover car cribbed by firefighters",
+      "Tanker leaking a vapor cloud",
+      "Large dog loose in the yard"
+    ],
+    "columns": [
+      "Approach now",
+      "Stay back"
+    ],
+    "correct": [
+      0,
+      1,
+      0,
+      1,
+      1
+    ],
+    "explanation": "A scene secured by police and a car stabilized by firefighters can be entered. Treat a downed wire as energized until the utility cuts power, stay upwind of an unknown vapor, and wait for a loose dog to be confined."
+  },
+  {
+    "id": "EMT-T1-015",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Pediatric assessment triangle",
+    "stem": "The three components of the pediatric assessment triangle are:",
+    "options": [
+      "Pulse, blood pressure, and respiratory rate",
+      "Appearance, work of breathing, circulation to skin",
+      "Airway, breathing, and circulation",
+      "Eye opening, best verbal response, and best motor response"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The pediatric assessment triangle is a hands-off, across-the-room look at appearance, work of breathing and skin circulation. Airway, breathing, circulation is the hands-on primary survey that follows, and eye, verbal, motor is the GCS."
+  },
+  {
+    "id": "EMT-T1-016",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Pediatric assessment triangle",
+    "stem": "A 2-year-old is ill. For each finding, specify which part of the pediatric assessment triangle it belongs to.",
+    "rows": [
+      "Does not track your face",
+      "Nasal flaring",
+      "Mottled skin on the legs",
+      "Limp muscle tone",
+      "Retractions between the ribs",
+      "Pale lips and skin"
+    ],
+    "columns": [
+      "Appearance",
+      "Work of breathing",
+      "Circulation to skin"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      0,
+      1,
+      2
+    ],
+    "explanation": "Gaze and tone are appearance, flaring and retractions are work of breathing, and mottling and pallor are circulation to skin. Pale lips may tempt a breathing answer, but the triangle scores skin color under circulation."
+  },
+  {
+    "id": "EMT-T1-017",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "treatmentTransport",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "BVM ventilation",
+    "stem": "You and your partner are ventilating a 58-year-old man who has a carotid pulse but is apneic. Which BVM approach is best?",
+    "options": [
+      "One rescuer, one breath every 3 seconds",
+      "Two rescuers, one breath every 3 seconds",
+      "One rescuer, one breath every 8 to 10 seconds",
+      "Two rescuers, one breath every 6 seconds"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An apneic adult with a pulse gets 1 breath every 6 seconds (10 per minute), each over 1 second with visible chest rise, and two-rescuer BVM gives the best mask seal. Every 3 seconds is the pediatric rate and overventilates an adult, causing gastric inflation and reduced venous return."
+  },
+  {
+    "id": "EMT-T1-018",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "secondaryAssessment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rapid trauma exam",
+    "stem": "A 28-year-old unrestrained driver hit a tree at 50 mph and responds only to pain. After the primary assessment, you should perform:",
+    "options": [
+      "A focused exam of his chief complaint",
+      "An exam limited to the head and neck",
+      "A rapid full-body exam for hidden injuries",
+      "A detailed OPQRST interview with the patient"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A significant mechanism with altered mental status calls for a rapid head-to-toe exam to find hidden life threats. A focused exam or OPQRST interview is not possible or adequate for a patient who responds only to pain."
+  },
+  {
+    "id": "EMT-T1-019",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "General impression",
+    "stem": "A 34-year-old woman lies very still on her side with her knees drawn to her chest and refuses to move. This position most suggests:",
+    "options": [
+      "Respiratory distress from a lung infection such as pneumonia",
+      "Low blood sugar with confusion",
+      "The recovery phase after a seizure",
+      "Abdominal pain, possibly peritoneal irritation"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Patients with peritoneal irritation lie still with knees drawn up because movement worsens the pain. A patient in respiratory distress usually sits upright or tripods rather than curling on the side."
+  },
+  {
+    "id": "EMT-T1-020",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "sceneSizeUp",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Scene hazards",
+    "stem": "At night during an ice storm, you are sent to a rural farmhouse with a long unpaved driveway for a 70-year-old woman who fell. Before arrival you should:",
+    "options": [
+      "Drive faster to make up for weather delays",
+      "Plan for access and icy footing hazards",
+      "Assume a private home is a safe scene",
+      "Leave equipment in the truck to move faster"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Weather and access shape the plan: route, where to park, how to carry the patient over ice, and whether more hands are needed. Speeding on ice increases the risk of an ambulance crash, and no residence should be assumed safe."
+  },
+  {
+    "id": "EMT-T1-021",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "treatmentTransport",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pediatric ventilation",
+    "stem": "A 3-year-old girl pulled from a backyard pool has a pulse of 96 and gasping respirations of 4 per minute. How often should you ventilate her?",
+    "options": [
+      "One breath every 6 seconds",
+      "One breath every 8 to 10 seconds",
+      "One breath every 2 to 3 seconds",
+      "Two quick breaths every 5 seconds"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Children and infants with a pulse but inadequate breathing are ventilated at 1 breath every 2-3 seconds (20-30 per minute). Every 6 seconds is the adult rate and would underventilate this child; gasping is not adequate breathing."
+  },
+  {
+    "id": "EMT-T1-022",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Hemorrhage control",
+    "stem": "A 25-year-old man stabbed in the thigh is talking to you. Bright red blood is spurting and pooling under him. Your first action is to:",
+    "options": [
+      "Control the bleeding immediately",
+      "Open his airway with a jaw thrust",
+      "Apply oxygen by nonrebreather mask",
+      "Count his respirations and radial pulse"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Massive external bleeding is an obvious life threat that can kill in minutes, so it is controlled first. He is talking, so his airway is open and does not need to be opened before the bleeding is stopped."
+  },
+  {
+    "id": "EMT-T1-023",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "emsOperations",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Equipment checks",
+    "stem": "At the start of your shift, the AED self-test indicator shows an error. You should:",
+    "options": [
+      "Take it out of service and replace it",
+      "Leave it in service until shift ends",
+      "Use it only if no other AED is nearby",
+      "Wait for the next scheduled weekly check"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Equipment that fails a start-of-shift check must be removed from service and replaced, then reported per agency policy. Keeping a faulty AED on the unit risks a failure during a cardiac arrest."
+  },
+  {
+    "id": "EMT-T1-024",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "AVPU",
+    "stem": "A 72-year-old woman found in bed opens her eyes and moans only when you speak loudly to her. On the AVPU scale she is:",
+    "options": [
+      "Alert",
+      "Responsive to verbal stimuli",
+      "Unresponsive",
+      "Responsive to painful stimuli"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "She responds to your voice, so she is V on AVPU even though the response is only a moan. She is not P, because pain was not needed to get a response."
+  },
+  {
+    "id": "EMT-T1-025",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "sceneSizeUp",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electrical hazards",
+    "stem": "A snapped utility pole has left a wire lying across the hood of a crashed car. The 40-year-old driver is alert and talking. You should:",
+    "options": [
+      "Help him step out onto the dry pavement",
+      "Tell him to stay inside and request the power company",
+      "Move the wire aside with a dry wooden branch",
+      "Approach wearing rubber boots and gloves to assess him"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Treat every downed wire as energized: an alert occupant is safest inside the vehicle until the utility cuts power. Stepping out, moving the wire or relying on boots can create a path to ground and electrocute the patient or rescuer."
+  },
+  {
+    "id": "EMT-T1-026",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "treatmentTransport",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Oxygen therapy",
+    "stem": "A 62-year-old woman with a cough and fever is alert, breathing 18 per minute without distress, and has an SpO2 of 92%. Which oxygen delivery is most appropriate?",
+    "options": [
+      "Nonrebreather mask at 15 L/min",
+      "Bag-valve mask at 15 L/min",
+      "Nasal cannula at 2 to 4 L/min",
+      "No oxygen because she is not short of breath"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Oxygen is indicated when SpO2 is below 94% per most protocols, and a low-flow nasal cannula is enough to bring this comfortable, alert patient to 94% or higher. A nonrebreather is for severe hypoxia or shock, and a BVM is for inadequate breathing."
+  },
+  {
+    "id": "EMT-T1-027",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "AVPU",
+    "stem": "A 19-year-old found after a party does not respond to your voice but groans and pulls away when you pinch his trapezius. This means:",
+    "options": [
+      "U on AVPU, and he needs CPR now",
+      "A on AVPU, and he is simply drunk",
+      "P on AVPU; he may not protect his airway",
+      "V on AVPU, and his airway is fully protected"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Responding only to a painful stimulus places him at P, and patients at P or U often cannot protect their own airway. He reacts to pain, so he is not U, and nothing suggests cardiac arrest."
+  },
+  {
+    "id": "EMT-T1-028",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Glasgow Coma Scale",
+    "stem": "After a fall, a 40-year-old man opens his eyes only to pain, makes incomprehensible sounds, and withdraws from pain. His Glasgow Coma Scale score is:",
+    "options": [
+      "7",
+      "10",
+      "9",
+      "8"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Eye opening to pain is 2, incomprehensible sounds is 2, and withdrawal from pain is 4, so 2 + 2 + 4 = 8. A score of 7 would require abnormal flexion, which scores 3 for motor."
+  },
+  {
+    "id": "EMT-T1-029",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "secondaryAssessment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rapid medical exam",
+    "stem": "Family found an 80-year-old woman unresponsive in bed, and no history is available. After the primary assessment, your exam should be:",
+    "options": [
+      "A focused exam of the region family points to",
+      "A rapid full-body medical assessment",
+      "Deferred until her family returns",
+      "A stroke scale exam only"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An unresponsive medical patient cannot tell you what hurts, so a rapid full-body medical assessment comes first, then vitals and history from bystanders. A focused exam requires a responsive patient who can localize a complaint."
+  },
+  {
+    "id": "EMT-T1-030",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "sceneSizeUp",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Vehicle stabilization",
+    "stem": "A sedan lies on its side after a rollover, and the 22-year-old driver is moaning inside. Before anyone reaches in, you should:",
+    "options": [
+      "Rock the car gently to test whether it is stable",
+      "Climb onto the upper side to open the door",
+      "Pull her through the windshield right away",
+      "Have trained personnel stabilize the vehicle"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An unstable vehicle can roll onto rescuers or worsen the patient's injuries, so cribbing and stabilization come before access. Climbing on or rocking the car is exactly the movement that causes it to shift."
+  },
+  {
+    "id": "EMT-T1-031",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "treatmentTransport",
+    "difficulty": 3,
+    "format": "matrix",
+    "skill": "CPAP",
+    "stem": "Several adults have moderate to severe respiratory distress. For each, specify whether CPAP is appropriate or contraindicated per local protocol.",
+    "rows": [
+      "Alert, CHF with crackles, BP 156/94",
+      "Confused and not following commands",
+      "Absent breath sounds after chest trauma",
+      "Actively vomiting, BP 138/84",
+      "Alert COPD patient, BP 142/88"
+    ],
+    "columns": [
+      "Appropriate",
+      "Contraindicated"
+    ],
+    "correct": [
+      0,
+      1,
+      1,
+      1,
+      0
+    ],
+    "explanation": "CPAP suits alert patients who follow commands, protect the airway and have a systolic pressure above 90, such as CHF or COPD in distress. Altered mental status, suspected pneumothorax and vomiting are contraindications even with a good blood pressure."
+  },
+  {
+    "id": "EMT-T1-032",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "emsOperations",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Medication checks",
+    "stem": "During your rig check, the solution in an epinephrine auto-injector window looks brown and cloudy. You should:",
+    "options": [
+      "Keep it on the unit as a backup dose",
+      "Shake it until it looks clear",
+      "Remove it and restock a new one",
+      "Use it first on the next call"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Discolored or cloudy epinephrine has degraded and must be removed and replaced. Keeping it as a backup risks giving an ineffective dose to a patient in anaphylaxis."
+  },
+  {
+    "id": "EMT-T1-033",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Glasgow Coma Scale",
+    "stem": "A 28-year-old woman in a crash opens her eyes spontaneously, is confused about the date, and follows commands. Her Glasgow Coma Scale score is:",
+    "options": [
+      "14",
+      "12",
+      "15",
+      "13"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Spontaneous eye opening is 4, confused speech is 4, and obeying commands is 6, so 4 + 4 + 6 = 14. A score of 15 requires fully oriented speech, which she lacks."
+  },
+  {
+    "id": "EMT-T1-034",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Altered mental status",
+    "stem": "An 80-year-old woman has been confused for 2 days, with a fever and foul-smelling urine. Her daughter says she is normally sharp. You should conclude:",
+    "options": [
+      "This is a psychiatric problem, not medical",
+      "New confusion may signal infection and is significant",
+      "She is probably just tired and dehydrated from poor sleep",
+      "Confusion like this is normal at her age"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A sudden change in mental status in an older adult is often the main sign of infection or another serious illness. Never assume confusion is normal aging, especially when the family says it is new."
+  },
+  {
+    "id": "EMT-T1-035",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "sceneSizeUp",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Carbon monoxide",
+    "stem": "A family of four reports headache and nausea; two are drowsy, and a furnace ran all night with the windows shut. Your first action is to:",
+    "options": [
+      "Move everyone to fresh air and request the fire department",
+      "Check pulse oximetry to rule out a low oxygen level",
+      "Begin assessing the drowsiest child right there in the living room",
+      "Open a window and start oxygen inside the house"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Multiple patients with the same complaints in a closed, heated home suggest carbon monoxide, so the first step is to get everyone, including you, out of the atmosphere. Pulse oximetry reads falsely normal with carbon monoxide and cannot rule it out."
+  },
+  {
+    "id": "EMT-T1-036",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "treatmentTransport",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Supraglottic airways",
+    "stem": "Your 49-year-old cardiac arrest patient cannot be ventilated adequately with a BVM despite repositioning and an OPA. Per local protocol, the next step is:",
+    "options": [
+      "Insert a supraglottic airway if authorized",
+      "Perform endotracheal intubation yourself",
+      "Stop ventilations and continue compressions only",
+      "Switch to a nonrebreather mask at 15 L/min"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Where protocol permits, EMTs may place a supraglottic airway when BVM ventilation fails, then give 1 breath every 6 seconds with continuous compressions. Endotracheal intubation is outside EMT scope, and a nonrebreather cannot ventilate an arrested patient."
+  },
+  {
+    "id": "EMT-T1-037",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Infant responsiveness",
+    "stem": "A 6-month-old lies limp in her crib and does not respond when her mother calls her. To check responsiveness, you should:",
+    "options": [
+      "Pinch her trapezius muscle hard",
+      "Shake her firmly by the shoulders",
+      "Tap or flick the soles of her feet",
+      "Rub her sternum firmly with your knuckles"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Tapping or flicking the soles of the feet is the standard gentle stimulus for an infant. Shaking an infant can cause brain injury, and adult pain stimuli are not appropriate."
+  },
+  {
+    "id": "EMT-T1-038",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Airway management",
+    "stem": "A 65-year-old man is supine after a witnessed seizure with no trauma. He has snoring respirations at 14 per minute. Your first action is to:",
+    "options": [
+      "Begin BVM ventilations at 10 breaths per minute",
+      "Apply a nonrebreather mask at 15 L/min",
+      "Suction his mouth for 15 seconds",
+      "Open the airway with a head-tilt chin-lift"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Snoring means the tongue is partly blocking the upper airway, which is fixed by repositioning. Oxygen through a partly blocked airway does little, and his rate of 14 does not by itself call for ventilation."
+  },
+  {
+    "id": "EMT-T1-039",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "emsOperations",
+    "difficulty": 2,
+    "format": "order",
+    "skill": "Oxygen setup",
+    "stem": "Place the steps for starting oxygen by nonrebreather from a new portable cylinder in order.",
+    "options": [
+      "Prefill the reservoir bag",
+      "Attach the regulator to the cylinder",
+      "Place the mask on the patient",
+      "Remove the seal; crack the valve",
+      "Set the flow to 15 L/min",
+      "Open the valve; read the pressure"
+    ],
+    "correct": [
+      3,
+      1,
+      5,
+      4,
+      0,
+      2
+    ],
+    "explanation": "Cracking the valve blows out debris before the regulator goes on; then open the tank, confirm the pressure, set the flow and prefill the bag so the first breath is oxygen. A mask placed before the reservoir fills leaves the patient breathing against an empty bag."
+  },
+  {
+    "id": "EMT-T1-040",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "treatmentTransport",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Patient positioning",
+    "stem": "A 40-year-old man unresponsive from alcohol intoxication has a patent airway, adequate respirations of 14 per minute, and no suspected trauma. How should you position him?",
+    "options": [
+      "Recovery position on his side",
+      "Supine with legs raised 12 inches",
+      "Prone with the head turned to one side",
+      "Seated upright at 90 degrees"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An unresponsive patient who is breathing adequately and has no suspected spinal injury goes in the recovery position so vomit and secretions drain from the mouth. Supine lets the tongue and vomitus block the airway, and prone prevents airway monitoring."
+  },
+  {
+    "id": "EMT-T1-041",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "sceneSizeUp",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Fire scene safety",
+    "stem": "At a working house fire, a woman says her 60-year-old husband is still inside a smoke-filled bedroom. You should:",
+    "options": [
+      "Crawl in low under the smoke to find him",
+      "Enter quickly wearing an N95 mask and eye protection",
+      "Send a bystander who knows the floor plan",
+      "Tell firefighters and stay out of the structure"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Entry into a burning, smoke-filled building requires turnout gear, SCBA and training, so the EMT relays the information to firefighters and prepares to treat. An N95 offers no protection against smoke, heat or carbon monoxide."
+  },
+  {
+    "id": "EMT-T1-042",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "secondaryAssessment",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "OPQRST",
+    "stem": "A 58-year-old man with chest pain answers your questions. For each answer, specify the OPQRST element it addresses.",
+    "rows": [
+      "\"Started while I was shoveling snow\"",
+      "\"Worse when I breathe deeply\"",
+      "\"Feels like heavy pressure\"",
+      "\"Spreads into my left jaw\"",
+      "\"Better when I sit still\""
+    ],
+    "columns": [
+      "Onset",
+      "Provocation",
+      "Quality",
+      "Radiation"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3,
+      1
+    ],
+    "explanation": "What he was doing when it began is onset, what makes it better or worse is provocation, the description is quality and spread to the jaw is radiation. Shoveling snow may tempt provocation, but it tells you when the pain started."
+  },
+  {
+    "id": "EMT-T1-043",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Airway sounds",
+    "stem": "An adult has noisy breathing. Which sounds point to a problem in the upper airway? Select all that apply.",
+    "options": [
+      "Snoring on inspiration",
+      "Gurgling with each breath",
+      "High-pitched inspiratory stridor",
+      "Expiratory wheezing",
+      "Fine crackles at the bases"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Snoring (the tongue), gurgling (fluid) and stridor (swelling or a foreign body) come from the upper airway and call for positioning, suction or rapid transport. Wheezing comes from narrowed lower airways and crackles from fluid in the alveoli."
+  },
+  {
+    "id": "EMT-T1-044",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pediatric airway",
+    "stem": "A feverish 3-year-old girl sits upright, drooling, with high-pitched inspiratory stridor. She is anxious but alert. You should:",
+    "options": [
+      "Lay her supine and insert an oral airway to hold it open",
+      "Keep her calm with her parent and transport",
+      "Look at her throat with a tongue depressor",
+      "Give 5 back slaps and 5 chest thrusts"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Drooling, fever and stridor suggest epiglottitis, and upsetting her or probing the throat can cause complete obstruction. Keep her in a position of comfort with her parent, give oxygen as tolerated, and transport."
+  },
+  {
+    "id": "EMT-T1-045",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "treatmentTransport",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Stoma ventilation",
+    "stem": "A 66-year-old man with a laryngectomy stoma in his neck is apneic but has a pulse. How should you deliver BVM ventilations?",
+    "options": [
+      "Seal an adult mask over the mouth and nose",
+      "Seal an infant or child mask over the stoma",
+      "Insert an OPA and ventilate through the mouth",
+      "Cover the stoma and ventilate through the mouth"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A laryngectomy patient breathes only through the stoma, so seal a small round mask over it and ventilate; close the mouth and nose if air escapes there. Ventilating through the mouth will not reach the lungs of a total laryngectomy patient."
+  },
+  {
+    "id": "EMT-T1-046",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "sceneSizeUp",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ambulance positioning",
+    "stem": "At a highway crash, a fire engine is parked behind the wreck blocking the lane. Where should the ambulance park?",
+    "options": [
+      "Behind the engine, upstream of the crash",
+      "Beside the wreck in the open travel lane for quick loading",
+      "Beyond the crash, downstream from the wreckage",
+      "In the median across both directions"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The larger apparatus blocks upstream to shield the scene, and the ambulance parks past the crash so the patient can be loaded behind protection. Parking in an open lane or the median exposes the crew to traffic."
+  },
+  {
+    "id": "EMT-T1-047",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Airway obstruction",
+    "stem": "A 35-year-old man in a restaurant clutches his throat. He cannot speak or cough and his lips are turning blue. You should:",
+    "options": [
+      "Give 2 rescue breaths, then reassess",
+      "Encourage him to keep coughing hard",
+      "Give back blows and abdominal thrusts",
+      "Perform a blind finger sweep"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Inability to speak or cough means a severe obstruction, treated in a conscious adult with cycles of 5 back blows and 5 abdominal thrusts per current guidelines and local protocol. Coughing is only encouraged in a mild obstruction with good air exchange, and blind finger sweeps can push the object deeper."
+  },
+  {
+    "id": "EMT-T1-048",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "emsOperations",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Documentation",
+    "stem": "You wrote the wrong pulse rate on a paper PCR before submitting it. The correct way to fix the error is to:",
+    "options": [
+      "Black it out and write over it",
+      "Cover it with correction fluid",
+      "Start a new PCR and discard the original one",
+      "Draw one line through it, initial and date"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A single line through the error, with initials and date, keeps the original readable and shows the correction was honest. Obliterating the entry or discarding the original looks like falsification."
+  },
+  {
+    "id": "EMT-T1-049",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Airway management",
+    "stem": "A 22-year-old motorcyclist is unresponsive at a crash scene with snoring respirations. The best way to open his airway is the:",
+    "options": [
+      "Tongue-jaw lift with neck extension",
+      "Head-tilt chin-lift maneuver",
+      "Head tilt with the neck fully hyperextended",
+      "Jaw-thrust maneuver without head tilt"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A jaw thrust opens the airway while keeping the cervical spine in line for a patient with possible spinal injury. If the jaw thrust does not open the airway, the airway takes priority and a head tilt is then used."
+  },
+  {
+    "id": "EMT-T1-050",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "treatmentTransport",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Head injury ventilation",
+    "stem": "A 30-year-old man with a head injury has a GCS of 5, a fixed dilated left pupil, and extension posturing. How should you ventilate him?",
+    "options": [
+      "About 10 breaths per minute regardless of signs",
+      "About 20 breaths per minute per protocol",
+      "About 30 breaths per minute to lower pressure",
+      "About 6 breaths per minute to avoid gastric distension"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Hyperventilation is reserved for signs of brain herniation such as a unilateral fixed dilated pupil, posturing or Cushing's triad; an adult is then ventilated at about 20 per minute per protocol. Routine hyperventilation, or rates as high as 30, constricts cerebral vessels and worsens brain ischemia."
+  },
+  {
+    "id": "EMT-T1-051",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "sceneSizeUp",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Scene safety",
+    "stem": "You arrive for a 55-year-old diabetic man who is confused, but a large dog is lunging and barking at the screen door. You should:",
+    "options": [
+      "Ask the occupant to secure the dog first",
+      "Enter slowly while keeping eye contact with the dog",
+      "Distract the dog with food and walk past",
+      "Use your jump bag as a shield and go in"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Animals are a scene hazard; the crew does not enter until the dog is confined by the owner or animal control. A bitten EMT becomes a second patient and cannot care for the first."
+  },
+  {
+    "id": "EMT-T1-052",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 2,
+    "format": "order",
+    "skill": "Airway adjuncts",
+    "stem": "An unresponsive 50-year-old with no gag reflex needs an oropharyngeal airway. Place the insertion steps in order.",
+    "options": [
+      "Insert with the tip toward the palate",
+      "Rest the flange on the lips",
+      "Measure mouth corner to earlobe",
+      "Rotate 180 degrees while advancing",
+      "Open the mouth with crossed fingers"
+    ],
+    "correct": [
+      2,
+      4,
+      0,
+      3,
+      1
+    ],
+    "explanation": "Size the airway first, open the mouth, insert it tip up so it slides over the tongue, then rotate it into place until the flange rests on the lips. Rotating before the tip reaches the back of the tongue can push the tongue into the pharynx."
+  },
+  {
+    "id": "EMT-T1-053",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "secondaryAssessment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "OPQRST",
+    "stem": "A 62-year-old woman describes her abdominal pain as tearing and says it moves into her back. These answers describe:",
+    "options": [
+      "Onset and time",
+      "Quality and radiation",
+      "Provocation and severity",
+      "Severity and time"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Tearing describes the quality of the pain and moving into the back describes radiation, a pattern that should raise concern for an aortic aneurysm. Severity is the 1-10 rating, not the description."
+  },
+  {
+    "id": "EMT-T1-054",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "treatmentTransport",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Adult CPR",
+    "stem": "You begin CPR on a 55-year-old woman in cardiac arrest. What compression rate and depth should you use?",
+    "options": [
+      "80-100 per minute, 1.5 inches deep",
+      "120-140 per minute, 2.5 to 3 inches deep",
+      "100-120 per minute, 1.5 to 2 inches",
+      "100-120 per minute, 2 to 2.4 inches"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "AHA adult CPR is 100-120 compressions per minute at 2 to 2.4 inches with full chest recoil. Shallower compressions do not generate adequate blood flow, and rates above 120 shorten filling time."
+  },
+  {
+    "id": "EMT-T1-055",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Airway adjuncts",
+    "stem": "A 45-year-old man still snores after repositioning following a seizure. His teeth are clenched and he has a gag reflex. There is no head trauma. The best adjunct is:",
+    "options": [
+      "An oropharyngeal airway",
+      "A lubricated nasopharyngeal airway",
+      "A supraglottic airway device",
+      "A bite block forced between the teeth"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An NPA is tolerated by patients with a gag reflex and does not need the mouth opened. An OPA or supraglottic airway would trigger gagging and vomiting in a patient who still gags."
+  },
+  {
+    "id": "EMT-T1-056",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Airway adjuncts",
+    "stem": "A 30-year-old assaulted with a bat has bruising behind both ears and clear fluid draining from his nose. He has snoring respirations. Which is contraindicated?",
+    "options": [
+      "A jaw-thrust maneuver",
+      "Suctioning blood from the mouth",
+      "A nasopharyngeal airway",
+      "Supplemental oxygen"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Battle's sign and fluid from the nose point to a basilar skull fracture, so an NPA could enter the cranial vault. Jaw thrust, oral suction and oxygen are all appropriate."
+  },
+  {
+    "id": "EMT-T1-057",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "sceneSizeUp",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Violent scenes",
+    "stem": "While you assess an intoxicated 28-year-old man, he suddenly pulls a knife and threatens your partner. You should:",
+    "options": [
+      "Retreat to safety and call law enforcement",
+      "Disarm him while your partner holds his arms",
+      "Keep treating him while speaking in a calm voice",
+      "Secure him to the stretcher with soft restraints"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A weapon makes the scene unsafe, so the crew withdraws and waits for police to secure it before resuming care. Disarming or restraining an armed person is a law enforcement task, not an EMT one."
+  },
+  {
+    "id": "EMT-T1-058",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "emsOperations",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Documentation",
+    "stem": "After submitting a PCR, you recall that the patient's daughter gave her aspirin before you arrived. You should:",
+    "options": [
+      "Edit the original narrative to add it",
+      "Leave it out because your crew did not give it",
+      "Add a dated addendum marked as a late entry",
+      "Tell the nurse and skip documenting it"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Information added after submission goes in a dated, labeled late entry or addendum, never by altering the original report. Pre-arrival medications are pertinent and must be documented."
+  },
+  {
+    "id": "EMT-T1-059",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "treatmentTransport",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Infant CPR",
+    "stem": "You and your partner perform CPR on a 6-month-old infant in cardiac arrest. Which technique and ratio are correct?",
+    "options": [
+      "Two fingers on the lower sternum, 30:2",
+      "Two hands on the sternum, 15:2",
+      "Two-thumb encircling hands, 15:2",
+      "Two-thumb encircling hands, 30:2"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "With two rescuers, infants and children receive 15 compressions to 2 breaths, and the two-thumb encircling technique compresses about 1.5 inches, one third of chest depth. The 30:2 ratio is for a single rescuer, and two hands are for larger children and adults."
+  },
+  {
+    "id": "EMT-T1-060",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Airway burns",
+    "stem": "A 40-year-old man rescued from a house fire has singed nasal hair, soot in his mouth, and a hoarse voice. He is alert. This means:",
+    "options": [
+      "He needs only a nasal cannula at 2 L/min",
+      "Minor smoke irritation that is not urgent",
+      "He can wait for a full secondary exam on scene",
+      "His airway may swell shut; transport rapidly"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Singed nasal hair, soot and hoarseness are signs of an airway burn, and swelling can close the airway quickly. He needs high-flow oxygen, ALS and rapid transport rather than delay on scene."
+  },
+  {
+    "id": "EMT-T1-061",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 2,
+    "format": "order",
+    "skill": "Primary assessment",
+    "stem": "You find a 48-year-old man slumped in a chair with no trauma. He moans when you speak. Place the primary assessment steps in order.",
+    "options": [
+      "Assess breathing adequacy",
+      "Form a general impression",
+      "Decide transport priority",
+      "Open and assess the airway",
+      "Check pulse, skin and bleeding",
+      "Check responsiveness with AVPU"
+    ],
+    "correct": [
+      1,
+      5,
+      3,
+      0,
+      4,
+      2
+    ],
+    "explanation": "The general impression and AVPU come first, then airway, breathing and circulation in that order, ending with a transport decision. In a breathing medical patient without major bleeding, circulation does not come before the airway."
+  },
+  {
+    "id": "EMT-T1-062",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "sceneSizeUp",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Violent scenes",
+    "stem": "While you treat a 19-year-old with a gunshot wound to the thigh in a park, a hostile crowd gathers and begins shouting. You should:",
+    "options": [
+      "Finish a complete secondary assessment on scene",
+      "Ask the crowd to form a protective circle",
+      "Load him promptly and continue care en route",
+      "Leave him and wait inside the ambulance"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "When a crowd turns hostile, the safest choice is to move the patient into the ambulance and leave, treating life threats on the way. Staying for a full assessment prolongs the danger, and abandoning the patient is not appropriate while you can safely remove him."
+  },
+  {
+    "id": "EMT-T1-063",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "treatmentTransport",
+    "difficulty": 1,
+    "format": "order",
+    "skill": "AED use",
+    "stem": "CPR is in progress on a 55-year-old woman when the AED arrives. Place the AED steps in order.",
+    "options": [
+      "Clear everyone for analysis",
+      "Resume compressions right away",
+      "Apply pads to the bare chest",
+      "Press shock when advised",
+      "Turn on the AED"
+    ],
+    "correct": [
+      4,
+      2,
+      0,
+      3,
+      1
+    ],
+    "explanation": "Power on, attach the pads, keep everyone clear while it analyzes, shock if advised, then resume compressions at once for 2 minutes. Pausing for a pulse check right after the shock instead of resuming CPR wastes perfusion time."
+  },
+  {
+    "id": "EMT-T1-064",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pediatric breathing",
+    "stem": "A 5-year-old with asthma has respirations of 44, retractions, and speaks in short phrases. SpO2 is 91%. Her breathing is best described as:",
+    "options": [
+      "Anxiety hyperventilation that needs coaching",
+      "Respiratory distress; the rate is too fast",
+      "Normal, since children breathe faster than adults",
+      "Apnea requiring immediate CPR"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Normal respirations for a school-age child are about 20 to 30, so 44 with retractions and low SpO2 is distress. Children do breathe faster than adults, but not this fast."
+  },
+  {
+    "id": "EMT-T1-065",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "secondaryAssessment",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "SAMPLE history",
+    "stem": "A 24-year-old man with diabetes is confused and sweaty. Asking when he last ate addresses which SAMPLE element?",
+    "options": [
+      "Last oral intake",
+      "Pertinent past history",
+      "Events leading up",
+      "Signs and symptoms"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The L in SAMPLE is last oral intake, which is key for suspected hypoglycemia. His diabetes is pertinent past history, but the question about his last meal is the L element."
+  },
+  {
+    "id": "EMT-T1-066",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "emsOperations",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Patient refusals",
+    "stem": "An alert, oriented 55-year-old with chest pain refuses transport. Which belong in your refusal documentation? Select all that apply.",
+    "options": [
+      "His decision-making capacity",
+      "Risks explained, including death",
+      "His signature and a witness",
+      "Advice to call 911 again",
+      "Your opinion of his choice",
+      "That he was rude to the crew"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "A defensible refusal shows capacity, informed risks, a witnessed signature and advice to call back, with medical direction contacted per local protocol. Opinions and labels about his manner are not objective and weaken the record."
+  },
+  {
+    "id": "EMT-T1-067",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Pediatric breathing",
+    "stem": "A sleepy 4-month-old with bronchiolitis has shallow respirations of 12 per minute with pauses. Pulse is 90. You should:",
+    "options": [
+      "Give blow-by oxygen and observe her closely en route",
+      "Apply a nasal cannula at 2 L/min",
+      "Ventilate with a BVM at 20-30 per minute",
+      "Start chest compressions at 15:2"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An infant should breathe 30 to 60 times a minute, so 12 with pauses is inadequate and needs ventilation at 1 breath every 2 to 3 seconds. Her pulse is low but above 60, so ventilation, not compressions, comes first."
+  },
+  {
+    "id": "EMT-T1-068",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "sceneSizeUp",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Technical rescue",
+    "stem": "A 35-year-old construction worker is buried to the waist in a partially collapsed trench and is calling for help. You should:",
+    "options": [
+      "Climb in to give oxygen and reassurance",
+      "Lower your partner into the trench on a rope to assess him",
+      "Stay out and request a technical rescue team",
+      "Dig the soil from around him with shovels"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Trench walls can collapse again without warning, so only trained rescuers using shoring enter; the EMT stays clear and calls for technical rescue. Entering or digging adds weight and vibration near the edge and creates more victims."
+  },
+  {
+    "id": "EMT-T1-069",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "treatmentTransport",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Hypothermic arrest",
+    "stem": "A 45-year-old man rescued from icy water is pulseless and very cold to the touch. The AED advises a shock. You should:",
+    "options": [
+      "Shock once, resume CPR, handle him gently",
+      "Withhold all shocks until he is rewarmed",
+      "Deliver three stacked shocks, then check a pulse",
+      "Rub his arms and legs vigorously before shocking"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "In severe hypothermia, deliver the indicated shock, immediately resume CPR, and handle the patient gently because rough movement can trigger VF; further shocks follow local protocol. Stacked shocks are no longer used, and rubbing the extremities is harmful."
+  },
+  {
+    "id": "EMT-T1-070",
+    "section": "emt",
+    "test": 1,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Agonal respirations",
+    "stem": "A 59-year-old man collapsed at work. He is unresponsive and makes occasional gasping breaths about every 15 seconds. These breaths should be treated as:",
+    "options": [
+      "A normal post-fainting breathing pattern",
+      "Adequate breathing at a slow rate",
+      "Hyperventilation from anxiety",
+      "Agonal gasps, not effective breathing"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Occasional gasps in an unresponsive patient are agonal respirations and are a sign of cardiac arrest. Mistaking them for breathing delays CPR and the AED."
+  },
+  {
+    "id": "EMT-T2-001",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Respiratory distress",
+    "stem": "A 67-year-old woman with COPD sits in a tripod position, uses her neck muscles to breathe, speaks two words at a time, and has cyanotic lips. Respirations are 32. This indicates:",
+    "options": [
+      "Severe respiratory distress",
+      "A normal pattern for a COPD patient",
+      "Anxiety with adequate breathing",
+      "Mild distress typical of stable COPD"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Tripod position, accessory muscle use, two-word dyspnea and cyanosis are all signs of inadequate breathing. COPD patients may live with some breathlessness, but these findings are never their baseline."
+  },
+  {
+    "id": "EMT-T2-002",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "treatmentTransport",
+    "difficulty": 2,
+    "format": "order",
+    "skill": "Tourniquet use",
+    "stem": "A 23-year-old has spurting thigh bleeding that soaks through firm direct pressure. Place the tourniquet steps in order.",
+    "options": [
+      "Lock the windlass in its clip",
+      "Place it 2 to 3 inches above the wound",
+      "Record the time applied",
+      "Pull the strap tight and secure it",
+      "Twist the windlass until bleeding stops"
+    ],
+    "correct": [
+      1,
+      3,
+      4,
+      0,
+      2
+    ],
+    "explanation": "The tourniquet goes above the wound and is snugged down first, then the windlass is turned until bleeding stops, locked, and the time recorded for the hospital. Twisting before the strap is snug wastes turns and may never close the artery."
+  },
+  {
+    "id": "EMT-T2-003",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "sceneSizeUp",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Water and ice rescue",
+    "stem": "A 12-year-old has fallen through pond ice and clings to the edge about 30 feet out. You have no ice rescue training. You should:",
+    "options": [
+      "Walk out on the ice to grab him",
+      "Swim out to him with a rope tied around your waist",
+      "Lie flat and crawl out to pull him",
+      "Reach or throw a flotation device from shore"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Untrained rescuers follow reach, throw, row, go and stay ashore while specialized rescue is requested. Going onto the ice or into the water without training and equipment often adds a second victim."
+  },
+  {
+    "id": "EMT-T2-004",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Breath sounds",
+    "stem": "A 70-year-old man with heart failure has crackles in both lower lungs and an SpO2 of 88%. Crackles most likely indicate:",
+    "options": [
+      "A partial upper airway obstruction",
+      "Fluid in the small airways and alveoli",
+      "Air trapped in the pleural space",
+      "Narrowed lower airways from bronchospasm"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Crackles, or rales, are fine popping sounds caused by fluid in the small airways, typical of pulmonary edema in heart failure. Bronchospasm causes wheezing, and upper airway obstruction causes stridor."
+  },
+  {
+    "id": "EMT-T2-005",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "emsOperations",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Documentation",
+    "stem": "A 30-year-old man smells of alcohol and says he drank six beers. Which entry best belongs in your PCR narrative?",
+    "options": [
+      "Patient is drunk and belligerent.",
+      "Patient states he drank \"six beers\" tonight.",
+      "Patient appears to be an alcoholic.",
+      "Patient is clearly intoxicated, per crew impression."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Objective documentation quotes the patient and records observations, which makes the PCR defensible. Labels like drunk or alcoholic are opinions and may be considered libel."
+  },
+  {
+    "id": "EMT-T2-006",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "secondaryAssessment",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "SAMPLE history",
+    "stem": "A 40-year-old woman with hives gives this history. For each statement, specify the SAMPLE element it belongs to.",
+    "rows": [
+      "\"Penicillin gives me a rash\"",
+      "\"I use an albuterol inhaler\"",
+      "\"I have had asthma since childhood\"",
+      "\"I was gardening when I got stung\"",
+      "\"I take birth control pills\""
+    ],
+    "columns": [
+      "Allergies",
+      "Medications",
+      "Past history",
+      "Events"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3,
+      1
+    ],
+    "explanation": "A known drug reaction is an allergy, current drugs are medications, lifelong asthma is past history, and what she was doing when it began is events. The sting may tempt allergies, but it is what happened today, so it belongs to events."
+  },
+  {
+    "id": "EMT-T2-007",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Oxygen therapy",
+    "stem": "A 30-year-old woman, 30 weeks pregnant with pneumonia, is alert with respirations of 22 and good chest rise. SpO2 is 91%. You should:",
+    "options": [
+      "Begin BVM ventilations at 10 per minute",
+      "Withhold oxygen to avoid harming the developing fetus",
+      "Give oxygen; her ventilation is adequate",
+      "Insert an oral airway and assist breaths"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "She is alert with an adequate rate and depth but is hypoxic, so she needs oxygen, not assisted ventilation. Oxygen protects the fetus too, so withholding it is wrong."
+  },
+  {
+    "id": "EMT-T2-008",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "treatmentTransport",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Junctional hemorrhage",
+    "stem": "A 31-year-old woman has a stab wound to the right groin with steady dark bleeding that direct pressure is not controlling. The next step is:",
+    "options": [
+      "Apply a tourniquet directly over the groin wound",
+      "Elevate the leg and place ice packs on it",
+      "Cover it with a dry dressing and transport",
+      "Pack it with hemostatic gauze and hold pressure"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Junctional wounds of the groin or axilla cannot be controlled with a tourniquet, so pack the wound tightly with hemostatic or plain gauze, hold firm pressure, then secure a pressure dressing. Elevation, ice and a loose dressing do not control this bleeding."
+  },
+  {
+    "id": "EMT-T2-009",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "sceneSizeUp",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Standard precautions",
+    "stem": "Your gloves are on. In which situations should you also wear eye protection? Select all that apply.",
+    "options": [
+      "Arterial bleeding spurting from the arm",
+      "Suctioning vomit from an airway",
+      "Delivering a baby in the field",
+      "Taking a BP over intact skin",
+      "Applying a cold pack to an ankle"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Arterial spray, suctioning and childbirth can all splash blood or fluid into the eyes, so eye protection is added to gloves. Taking a blood pressure or applying a cold pack over intact skin carries no splash risk."
+  },
+  {
+    "id": "EMT-T2-010",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "Pulse oximetry",
+    "stem": "In which situations can a pulse oximetry reading be inaccurate? Select all that apply.",
+    "options": [
+      "Suspected carbon monoxide poisoning",
+      "Cold fingers with poor perfusion",
+      "Dark nail polish on the finger",
+      "Shivering with a moving hand",
+      "Warm, still, well-perfused finger",
+      "Oxygen by nasal cannula"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "Carbon monoxide reads as oxygen and gives a falsely normal value, while cold fingers, dark polish and motion give low or erratic readings. Supplemental oxygen raises the true saturation but does not make the reading wrong."
+  },
+  {
+    "id": "EMT-T2-011",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Pulse oximetry",
+    "stem": "A 77-year-old woman with cold hands and dark nail polish has an SpO2 of 82% with an erratic waveform. She is pink and speaking full sentences. You should:",
+    "options": [
+      "Move the probe to a warmer site without polish",
+      "Begin BVM ventilations immediately",
+      "Accept the reading and call for ALS",
+      "Stop using pulse oximetry on this call"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Cold fingers and dark nail polish cause false low readings, and her clinical picture does not match the number. Treat the patient, not the monitor, and recheck at a better site such as another finger or the earlobe."
+  },
+  {
+    "id": "EMT-T2-012",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "treatmentTransport",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Shock management",
+    "stem": "A 38-year-old woman fell from a horse and has a tender, distended abdomen, pulse 124, BP 86/60, and cool clammy skin. Besides oxygen, you should:",
+    "options": [
+      "Keep her supine and warm, transport rapidly",
+      "Give small sips of water for her thirst",
+      "Sit her upright for patient comfort",
+      "Stay on scene to obtain several sets of vital signs"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Decompensated hypovolemic shock from likely internal bleeding needs oxygen, supine positioning, prevention of heat loss and rapid transport to surgical care, with ALS per protocol. Nothing is given by mouth, and delaying on scene worsens outcome."
+  },
+  {
+    "id": "EMT-T2-013",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "emsOperations",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Pertinent negatives",
+    "stem": "A 60-year-old woman with chest pain denies shortness of breath and nausea. Documenting these denials records:",
+    "options": [
+      "Pertinent negatives",
+      "The chief complaint",
+      "Objective findings",
+      "The mechanism of injury"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Pertinent negatives are findings you would expect but the patient denies, and they are a standard PCR element. They are reported by the patient, so they are not objective findings."
+  },
+  {
+    "id": "EMT-T2-014",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "sceneSizeUp",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Airborne precautions",
+    "stem": "A 50-year-old man recently released from prison has a productive cough, night sweats, weight loss, and is coughing up blood. You should wear:",
+    "options": [
+      "A surgical mask only",
+      "Gloves and a gown only",
+      "Eye protection and gloves only",
+      "A fit-tested N95 respirator"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "These findings suggest tuberculosis, which spreads by the airborne route, so the EMT wears a fit-tested N95 and places a surgical mask on the patient if tolerated. A surgical mask on the EMT does not filter airborne particles."
+  },
+  {
+    "id": "EMT-T2-015",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Infant pulse check",
+    "stem": "In an unresponsive infant, the preferred site to check for a pulse is the:",
+    "options": [
+      "Carotid artery",
+      "Brachial artery",
+      "Dorsalis pedis artery",
+      "Radial artery"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The brachial artery on the inside of the upper arm is the recommended pulse check site for infants. An infant's short, chubby neck makes the carotid pulse hard to find."
+  },
+  {
+    "id": "EMT-T2-016",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Shock recognition",
+    "stem": "A 45-year-old man is awake after a car crash. You cannot feel a radial pulse, but his carotid pulse is weak and rapid. This suggests:",
+    "options": [
+      "Cardiac arrest requiring chest compressions",
+      "An isolated injury to his arm only",
+      "Poor perfusion, likely decompensated shock",
+      "A normal finding in an anxious patient"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A missing radial pulse with a weak, fast carotid pulse means blood pressure is low enough to lose peripheral pulses. He has a carotid pulse, so this is shock, not cardiac arrest."
+  },
+  {
+    "id": "EMT-T2-017",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "treatmentTransport",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Aspirin",
+    "stem": "A 58-year-old man has crushing chest pain radiating to his jaw. He has no aspirin allergy and no active bleeding. Per protocol, give aspirin:",
+    "options": [
+      "162-324 mg, chewed",
+      "81 mg, swallowed whole",
+      "650 mg, swallowed with water",
+      "324 mg, placed under the tongue"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Chewing 162-324 mg of aspirin speeds absorption and inhibits platelet clumping in acute coronary syndrome. Aspirin is withheld for allergy or active bleeding, and it is not a sublingual medication."
+  },
+  {
+    "id": "EMT-T2-018",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "secondaryAssessment",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "DCAP-BTLS",
+    "stem": "During a rapid trauma exam of a fall victim, the letter L in DCAP-BTLS stands for:",
+    "options": [
+      "Lesions",
+      "Lividity",
+      "Lacerations",
+      "Level of consciousness"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "DCAP-BTLS is deformities, contusions, abrasions, punctures or penetrations, burns, tenderness, lacerations and swelling. Lividity is a sign of death, not part of the mnemonic."
+  },
+  {
+    "id": "EMT-T2-019",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Shock in pregnancy",
+    "stem": "A 28-year-old woman, 34 weeks pregnant, fell down stairs. She is anxious, pale, cool, and clammy. Pulse is 118 and BP is 112/70. You should suspect:",
+    "options": [
+      "A normal pregnancy-related heart rate",
+      "Anxiety only, since her BP is normal",
+      "Neurogenic shock from a spinal injury",
+      "Compensated shock that pregnancy can mask"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Pale, cool, clammy skin with tachycardia and a normal BP is compensated shock, and the larger blood volume of pregnancy can hide significant blood loss. A normal BP does not rule out shock, and neurogenic shock causes warm, dry skin with a slow pulse."
+  },
+  {
+    "id": "EMT-T2-020",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "sceneSizeUp",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Standard precautions",
+    "stem": "A 25-year-old woman is crowning, with heavy amniotic fluid and blood expected. Beyond gloves, which PPE should you add?",
+    "options": [
+      "A second pair of gloves alone",
+      "An N95 respirator alone",
+      "Gown, mask, and eye protection",
+      "A helmet with a face shield and turnout coat"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Childbirth produces large volumes of blood and fluid that can splash the face and soak clothing, so a gown, mask and eye protection are indicated. Double gloves or an N95 alone do not protect the eyes or clothing."
+  },
+  {
+    "id": "EMT-T2-021",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "treatmentTransport",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "Nitroglycerin",
+    "stem": "A 57-year-old man with chest pain asks for help taking his nitroglycerin. Which findings mean you should withhold it? Select all that apply.",
+    "options": [
+      "Systolic BP of 84",
+      "Tadalafil taken 30 hours ago",
+      "Prescription in his wife's name",
+      "Sildenafil taken 72 hours ago",
+      "Heart rate of 88",
+      "Pain that began an hour ago"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Withhold nitroglycerin for a systolic pressure below 90 to 100 per local protocol, tadalafil within 48 hours, or a prescription that is not the patient's own. Sildenafil is restricted for 24 to 48 hours depending on protocol, so a dose 72 hours ago does not by itself rule it out."
+  },
+  {
+    "id": "EMT-T2-022",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Shock recognition",
+    "stem": "For each finding in a child after 2 days of vomiting, specify whether it is an early or a late sign of shock.",
+    "rows": [
+      "Falling blood pressure",
+      "Rapid heart rate",
+      "Lethargy or unresponsiveness",
+      "Delayed capillary refill",
+      "Slowing heart rate",
+      "Restlessness or anxiety"
+    ],
+    "columns": [
+      "Early sign",
+      "Late sign"
+    ],
+    "correct": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    "explanation": "Tachycardia, delayed refill and restlessness are compensation, while hypotension, bradycardia and lethargy mean the child is decompensating. Children hold a normal blood pressure until late, so a falling pressure is never an early sign."
+  },
+  {
+    "id": "EMT-T2-023",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "emsOperations",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Consent",
+    "stem": "For each patient, specify whether care proceeds under expressed or implied consent.",
+    "rows": [
+      "Alert adult agrees to a splint",
+      "Unresponsive driver after a crash",
+      "Injured 14-year-old, parents unreachable",
+      "Alert woman holds out her arm for a BP",
+      "Adult found alone, actively seizing"
+    ],
+    "columns": [
+      "Expressed",
+      "Implied"
+    ],
+    "correct": [
+      0,
+      1,
+      1,
+      0,
+      1
+    ],
+    "explanation": "Agreement by words or by action, such as holding out an arm, is expressed consent. Implied consent covers an unresponsive or seizing adult and a minor who needs emergency care when no parent can be reached."
+  },
+  {
+    "id": "EMT-T2-024",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Hemorrhage control",
+    "stem": "A 19-year-old struck by a car lies supine in dark clothing on wet pavement. His airway is open and breathing is adequate. To check for major bleeding, you should:",
+    "options": [
+      "Check his blood pressure, since bleeding lowers it early",
+      "Expose him and sweep gloved hands beneath him",
+      "Ask him whether he feels any bleeding",
+      "Wait for the secondary assessment to look"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Dark clothing and wet pavement hide blood, so you expose and sweep under the patient during the primary assessment to find life-threatening bleeding. Hypotension is a late sign, so waiting for it misses the bleeding."
+  },
+  {
+    "id": "EMT-T2-025",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "sceneSizeUp",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Extrication PPE",
+    "stem": "You must stay with a 45-year-old trapped driver while firefighters cut the roof with hydraulic tools. Appropriate PPE includes:",
+    "options": [
+      "Gloves, a surgical mask, and a disposable gown",
+      "An N95 respirator with gloves and shoe covers",
+      "A reflective vest with a single pair of gloves",
+      "Helmet, eye protection, and turnout gear"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Extrication produces flying glass, sharp metal and debris, so anyone inside the vehicle needs a helmet, eye protection and turnout gear over medical gloves. A disposable gown or vest does not protect against cuts or impact."
+  },
+  {
+    "id": "EMT-T2-026",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "treatmentTransport",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Epistaxis",
+    "stem": "A 52-year-old man with hypertension has a steady nosebleed, is alert, and has a BP of 178/98. How should you control the bleeding?",
+    "options": [
+      "Tilt his head back and pinch the soft nostrils",
+      "Lay him supine with ice on his neck",
+      "Pack both nostrils tightly with gauze",
+      "Have him lean forward; pinch the nostrils"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Leaning forward while pinching the soft nostrils keeps blood out of the airway and stomach, where it can cause vomiting or aspiration. Tilting the head back sends blood down the throat."
+  },
+  {
+    "id": "EMT-T2-027",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Tourniquet use",
+    "stem": "A 35-year-old has a chainsaw wound to the lower leg. Bright red blood keeps soaking through firm direct pressure. You should next:",
+    "options": [
+      "Apply a tourniquet directly over the knee",
+      "Remove soaked dressings and apply fresh ones",
+      "Apply a tourniquet 2-3 inches above the wound",
+      "Elevate the leg and use pressure points"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Life-threatening extremity bleeding that direct pressure cannot control needs a tourniquet placed 2 to 3 inches above the wound and not over a joint. Removing soaked dressings disrupts clots, and elevation with pressure points is not reliable."
+  },
+  {
+    "id": "EMT-T2-028",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pediatric CPR",
+    "stem": "A 6-year-old pulled from a pool is unresponsive and apneic. You feel no pulse within 10 seconds. With two rescuers, you should begin:",
+    "options": [
+      "CPR at 30 compressions to 2 breaths",
+      "Rescue breathing only at 20 per minute",
+      "Abdominal thrusts to clear the water",
+      "CPR at 15 compressions to 2 breaths"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A child with no pulse needs CPR, and two-rescuer child CPR uses a 15:2 ratio to give more ventilations. Rescue breathing alone is for a child who has a pulse, and abdominal thrusts delay care and do not remove aspirated water."
+  },
+  {
+    "id": "EMT-T2-029",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "secondaryAssessment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Head exam findings",
+    "stem": "A 22-year-old assault victim has bruising behind both ears found during your head exam. This finding suggests:",
+    "options": [
+      "A simple scalp contusion",
+      "A fractured mandible",
+      "A cervical spine fracture",
+      "A basilar skull fracture"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Bruising over the mastoid process (Battle's sign) suggests a basilar skull fracture, which also means avoiding a nasopharyngeal airway. It is a late sign of a deep fracture, not a simple scalp bruise."
+  },
+  {
+    "id": "EMT-T2-030",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "sceneSizeUp",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Hazardous materials",
+    "stem": "A placarded tanker is leaking a vapor cloud, and its 40-year-old driver lies near the cab. Trained at awareness level, you should:",
+    "options": [
+      "Wear an N95 and quickly drag him clear",
+      "Stay upwind in the cold zone and call HazMat",
+      "Hold your breath and pull him out",
+      "Approach from downhill wearing a gown and gloves"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Awareness-level EMTs recognize the hazard, isolate, stay upwind and uphill in the cold zone, and request HazMat; patients are decontaminated before EMS treats them. No standard EMS PPE, including an N95, protects against an unknown chemical vapor."
+  },
+  {
+    "id": "EMT-T2-031",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "treatmentTransport",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Spinal motion restriction",
+    "stem": "A 29-year-old driver, alert and sober, has midline neck tenderness after a rear-end crash. She is seated in her car with no deficits. You should:",
+    "options": [
+      "Rapidly extricate her onto a long backboard with straps",
+      "Skip spinal precautions since she has no deficits",
+      "Have her walk to the ambulance without a collar",
+      "Apply a collar and let her self-extricate to the cot"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Midline tenderness is an indication for spinal motion restriction, but an alert, cooperative patient moves the spine least by self-extricating to the cot with a collar on. Long backboards are for patients who cannot move themselves, and normal neurologic findings do not rule out injury."
+  },
+  {
+    "id": "EMT-T2-032",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "emsOperations",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Negligence",
+    "stem": "An on-duty EMT fails to splint an obvious fracture, and the patient suffers nerve damage. Negligence requires duty, breach, causation and:",
+    "options": [
+      "Intent",
+      "Abandonment",
+      "Battery",
+      "Damages"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Negligence requires a duty to act, a breach of that duty, damages and proof that the breach caused the damages. Intent is not required, and Good Samaritan laws do not protect on-duty EMTs."
+  },
+  {
+    "id": "EMT-T2-033",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Stroke assessment",
+    "stem": "A 72-year-old woman has right facial droop, right arm drift and slurred speech. Her husband says she was normal at bedtime and woke this way. Her last known well time is:",
+    "options": [
+      "When she woke with symptoms",
+      "When she went to bed",
+      "When her husband called 911",
+      "When you arrived on scene"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Last known well is the last time the patient was seen at her neurologic baseline, so for a wake-up stroke it is when she went to bed. Using the time she woke would wrongly place her inside treatment windows that may have closed."
+  },
+  {
+    "id": "EMT-T2-034",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Acute coronary syndrome",
+    "stem": "A 58-year-old diabetic man reports 30 minutes of chest pressure radiating to his jaw, with sweating and nausea. BP 148/90, pulse 96, SpO2 95%. You should suspect:",
+    "options": [
+      "Gastric reflux after a meal",
+      "Chest wall muscle strain",
+      "Acute coronary syndrome",
+      "A panic attack"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Pressure radiating to the jaw with diaphoresis and nausea in a diabetic male is acute coronary syndrome until proven otherwise, which calls for aspirin, an early 12-lead where permitted and prompt transport. Reflux or anxiety are diagnoses of exclusion an EMT should never assume."
+  },
+  {
+    "id": "EMT-T2-035",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "sceneSizeUp",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Extrication PPE",
+    "stem": "During a long extrication, saws and a generator run continuously beside the vehicle. Which PPE is often overlooked?",
+    "options": [
+      "A second pair of exam gloves",
+      "A fit-tested N95 respirator for airborne infection",
+      "Disposable shoe covers",
+      "Hearing protection for rescuers and the patient"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Prolonged high noise from tools and generators can cause hearing damage and blocks communication, so hearing protection is part of extrication PPE for crews and the patient. Shoe covers and an extra pair of gloves do not address the noise hazard."
+  },
+  {
+    "id": "EMT-T2-036",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "treatmentTransport",
+    "difficulty": 2,
+    "format": "order",
+    "skill": "Splinting",
+    "stem": "A 25-year-old has a painful, deformed forearm with good distal pulses. Place the splinting steps in order.",
+    "options": [
+      "Measure the splint on the uninjured arm",
+      "Apply manual stabilization",
+      "Recheck distal pulse, motor and sensation",
+      "Check distal pulse, motor and sensation",
+      "Secure joints above and below the injury"
+    ],
+    "correct": [
+      1,
+      3,
+      0,
+      4,
+      2
+    ],
+    "explanation": "Stabilize the limb, document pulse, motor and sensation, size the splint and immobilize the joints above and below, then recheck function. Without the first check, a later loss of pulse cannot be tied to the splint."
+  },
+  {
+    "id": "EMT-T2-037",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Anaphylaxis",
+    "stem": "A 9-year-old who ate peanuts has hives. Which added findings mean anaphylaxis that calls for epinephrine? Select all that apply.",
+    "options": [
+      "Wheezing and chest tightness",
+      "BP 78/50 with a weak pulse",
+      "Hoarse voice with stridor",
+      "Itching around the mouth",
+      "Hives spreading to the legs",
+      "Watery eyes and sneezing"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Wheezing, hypotension and stridor show airway, breathing or circulatory involvement, which is anaphylaxis, so give epinephrine per local protocol. Spreading hives, itching or sneezing alone fit a simple allergic reaction."
+  },
+  {
+    "id": "EMT-T2-038",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Diabetic emergencies",
+    "stem": "A 45-year-old diabetic man who took insulin and skipped lunch is confused, pale and sweaty with cool skin. Pulse 110, respirations 18. These findings best fit:",
+    "options": [
+      "Hypoglycemia",
+      "Diabetic ketoacidosis",
+      "Hyperosmolar hyperglycemic state",
+      "Heat exhaustion"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Rapid onset of confusion with cool, pale, diaphoretic skin after insulin without food is classic hypoglycemia; check the glucose. DKA develops over days with warm dry skin, fruity breath and deep rapid Kussmaul respirations."
+  },
+  {
+    "id": "EMT-T2-039",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "emsOperations",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Abandonment",
+    "stem": "At a busy emergency department, you leave an unstable patient on a hallway stretcher without giving a report to staff. This is:",
+    "options": [
+      "Battery",
+      "False imprisonment",
+      "Breach of confidentiality",
+      "Abandonment"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Ending care without transferring it to someone of equal or higher training is abandonment. Battery is touching a patient without consent, which did not occur here."
+  },
+  {
+    "id": "EMT-T2-040",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "treatmentTransport",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Traction splints",
+    "stem": "Four trauma patients have thigh injuries. Which one is an appropriate candidate for a traction splint?",
+    "options": [
+      "Femur fracture with an unstable pelvis",
+      "Isolated closed midshaft femur fracture",
+      "Femur fracture with an ankle fracture on that leg",
+      "Fracture at the knee joint itself"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A traction splint is for an isolated closed midshaft femur fracture. Pelvic, hip, knee or ankle injury on the same leg are contraindications because the splint anchors against or pulls through those structures."
+  },
+  {
+    "id": "EMT-T2-041",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "sceneSizeUp",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number of patients",
+    "stem": "At a three-car crash at night, you find two injured drivers right away. Before committing to their care, you should:",
+    "options": [
+      "Begin treating the louder of the two drivers",
+      "Walk the scene to account for every occupant",
+      "Ask the drivers whether anyone else was in their cars",
+      "Request air medical for both drivers"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Size-up includes determining the total number of patients, and at night people may be thrown clear, wander off or be hidden in vehicles. Relying on injured drivers' reports can miss a patient."
+  },
+  {
+    "id": "EMT-T2-042",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "secondaryAssessment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Chest exam findings",
+    "stem": "Palpating the chest of a 50-year-old crash victim, you feel crackling like crisped rice under the skin. This indicates:",
+    "options": [
+      "Rib fragments grinding together",
+      "Air leaking into the soft tissue",
+      "Fluid collecting in both lower lung fields",
+      "Blood pooling under the skin"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Crackling under the skin is subcutaneous emphysema from air leaking out of the lung or airway, a clue to pneumothorax. Grating of bone ends is felt at a fracture site, not as diffuse crackling under the skin."
+  },
+  {
+    "id": "EMT-T2-043",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Opioid overdose",
+    "stem": "A 30-year-old man is found unresponsive with pinpoint pupils, shallow respirations of 4 per minute and SpO2 78%. Your first action should be:",
+    "options": [
+      "Give naloxone before any other care",
+      "Apply a nonrebreather at 15 L/min",
+      "Place him in the recovery position",
+      "Ventilate with a BVM and oxygen"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Inadequate breathing is the immediate life threat, so ventilate with a BVM first and then give naloxone per protocol. A nonrebreather does nothing for a patient who is barely breathing."
+  },
+  {
+    "id": "EMT-T2-044",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Seizures",
+    "stem": "A 26-year-old woman with epilepsy had a 2-minute generalized seizure. She is now drowsy and confused, breathing adequately with a clear airway. Her condition is best described as:",
+    "options": [
+      "The postictal state",
+      "Status epilepticus",
+      "A brief absence seizure",
+      "A syncopal episode"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Drowsiness and confusion that gradually improve after a seizure is the postictal phase; place her in the recovery position and monitor. Status epilepticus is a seizure lasting over 5 minutes or repeated seizures without regaining consciousness."
+  },
+  {
+    "id": "EMT-T2-045",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "treatmentTransport",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pelvic binders",
+    "stem": "A 70-year-old woman struck by a car has pelvic pain and instability on one gentle compression, pulse 120, and BP 88/60. You should:",
+    "options": [
+      "Rock the pelvis again to confirm instability",
+      "Apply a pelvic binder at the greater trochanters",
+      "Apply a traction splint to the painful leg",
+      "Logroll her several times to inspect her back and buttocks"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An unstable pelvis with shock signs calls for a pelvic binder centered over the greater trochanters to reduce pelvic volume and bleeding. Repeated rocking or logrolling can dislodge clots and worsen hemorrhage."
+  },
+  {
+    "id": "EMT-T2-046",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "sceneSizeUp",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number of patients",
+    "stem": "A 26-year-old woman is alone in a crashed sedan, but an empty child safety seat is buckled in the back. You should:",
+    "options": [
+      "Assume no child was in the car",
+      "Note the empty seat on the report and begin transport",
+      "Ask her about a child and search the area",
+      "Have police check her home later"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An empty child seat is a classic clue to a possible hidden patient who may have been ejected or carried off by a bystander. Assuming the seat was empty can leave an injured child undiscovered."
+  },
+  {
+    "id": "EMT-T2-047",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Heart failure",
+    "stem": "A 67-year-old man with prior heart attacks sits upright gasping, with crackles in both lungs, pink frothy sputum and ankle swelling. BP 170/100. The most likely cause is:",
+    "options": [
+      "An acute asthma attack",
+      "Pulmonary edema from heart failure",
+      "A COPD exacerbation with bronchospasm",
+      "A spontaneous pneumothorax"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Crackles, pink frothy sputum, edema and hypertension in a cardiac patient point to congestive heart failure with pulmonary edema, which may benefit from CPAP per protocol. Asthma and COPD typically produce wheezing rather than frothy sputum and crackles."
+  },
+  {
+    "id": "EMT-T2-048",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "emsOperations",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Advance directives",
+    "stem": "An 84-year-old man is in cardiac arrest. His wife says he has a DNR order, but no one can find it. You should:",
+    "options": [
+      "Begin resuscitation per local protocol",
+      "Withhold CPR based on her statement",
+      "Wait until she locates the form",
+      "Give compressions only, without ventilations"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A DNR or POLST must be valid and present to withhold resuscitation, so start CPR and contact medical direction per local protocol. Withholding care on a verbal report alone is not supported."
+  },
+  {
+    "id": "EMT-T2-049",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Asthma",
+    "stem": "A 15-year-old asthmatic had loud wheezing 20 minutes ago. Now she is drowsy, breath sounds are barely audible, and SpO2 is 86%. This change most likely indicates:",
+    "options": [
+      "The airway opening as she improves",
+      "Impending respiratory failure",
+      "Resolution after her inhaler",
+      "Anxiety-driven hyperventilation"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A silent chest with falling mental status and SpO2 means too little air is moving to produce wheezes, so she is tiring toward respiratory arrest. Assist ventilations as needed and transport rapidly; quieter breath sounds here are not improvement."
+  },
+  {
+    "id": "EMT-T2-050",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "treatmentTransport",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Splinting",
+    "stem": "A 15-year-old skateboarder has a painful deformity of the left clavicle with good distal pulses and sensation. Which immobilization is most appropriate?",
+    "options": [
+      "Traction splint",
+      "Sling and swathe",
+      "Long board splint along the arm",
+      "Air splint inflated to full pressure"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A sling supports the arm and a swathe binds it to the chest, immobilizing the clavicle and shoulder. Traction and long rigid splints are for long-bone extremity fractures, not the shoulder girdle."
+  },
+  {
+    "id": "EMT-T2-051",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "sceneSizeUp",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number of patients",
+    "stem": "A pickup rolled over in a field; its 30-year-old driver says three friends were riding in the bed, and you find one. You should:",
+    "options": [
+      "Treat the driver and friend you have found",
+      "Request more units and search for the other two",
+      "Wait for the driver to recall where they landed",
+      "Assume the others left uninjured on foot"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Occupants ejected from a truck bed may lie far from the vehicle and be critically injured, so the count must be reconciled and additional resources requested. Treating only the patients you see risks missing the sickest ones."
+  },
+  {
+    "id": "EMT-T2-052",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sepsis",
+    "stem": "An 81-year-old nursing home resident with a urinary catheter has new confusion, temperature 101.8 F, pulse 118, respirations 26 and BP 88/54. You should suspect:",
+    "options": [
+      "Sepsis with shock",
+      "Progression of her dementia",
+      "Normal aging changes",
+      "A low blood sugar reaction"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Fever, tachycardia, tachypnea, hypotension and new confusion with a catheter suggest sepsis, and confusion is often the main sign of infection in older adults. Never assume new confusion in an older patient is normal or due to dementia."
+  },
+  {
+    "id": "EMT-T2-053",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "secondaryAssessment",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Medication history",
+    "stem": "A 70-year-old confused man takes metformin and insulin daily. This medication history should prompt you to:",
+    "options": [
+      "Assist with his nitroglycerin",
+      "Withhold oxygen until ALS arrives",
+      "Check his blood glucose",
+      "Give oral glucose without testing"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Insulin and metformin indicate diabetes, so altered mental status should prompt a glucose check. Oral glucose is given only when glucose is low and the patient can swallow and protect the airway."
+  },
+  {
+    "id": "EMT-T2-054",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "treatmentTransport",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Helmet removal",
+    "stem": "A 22-year-old motorcyclist in a full-face helmet is breathing adequately, the helmet fits snugly, and you have full airway access. You should:",
+    "options": [
+      "Leave the helmet on and stabilize the head",
+      "Remove the helmet before applying a collar",
+      "Remove the helmet to look for scalp bleeding",
+      "Cut the chin strap and pull the helmet off"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A well-fitting helmet that does not interfere with airway management or ventilation is left in place and stabilized. Remove it with two rescuers only if it blocks the airway, fits poorly or prevents CPR."
+  },
+  {
+    "id": "EMT-T2-055",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Heat emergencies",
+    "stem": "A 22-year-old football player collapsed during practice in 95 F heat. He is confused and combative with hot skin, pulse 132 and BP 100/60. The life threat is:",
+    "options": [
+      "Heat exhaustion",
+      "Heat cramps",
+      "Simple dehydration",
+      "Heat stroke"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Altered mental status with high body temperature defines heat stroke, which needs aggressive cooling such as ice water immersion where possible and rapid transport. Heat exhaustion does not cause significant confusion, and exertional heat stroke patients may still be sweating."
+  },
+  {
+    "id": "EMT-T2-056",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cold emergencies",
+    "stem": "A 70-year-old man found outside on a 20 F night is confused with slurred speech. He has stopped shivering, and his pulse is 48. This indicates:",
+    "options": [
+      "Moderate to severe hypothermia",
+      "Mild hypothermia",
+      "Normal response to cold",
+      "Alcohol intoxication without cold injury"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Loss of shivering, altered mental status and bradycardia indicate moderate to severe hypothermia, so handle him gently to avoid triggering ventricular fibrillation. Mild hypothermia features vigorous shivering with an intact mental status."
+  },
+  {
+    "id": "EMT-T2-057",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "sceneSizeUp",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mechanism of injury",
+    "stem": "An unrestrained 34-year-old driver struck a tree. You note a starred windshield and a bent steering wheel. You should suspect:",
+    "options": [
+      "Isolated knee and hip injuries from the dash",
+      "Only minor bruising since the airbag deployed",
+      "Head, neck, and chest injuries",
+      "An injury limited to the lower legs"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A starred windshield suggests the head struck the glass, and a deformed steering wheel suggests chest impact, so head, cervical spine and chest injuries are likely. Airbag deployment does not exclude serious injury, especially in an unrestrained occupant."
+  },
+  {
+    "id": "EMT-T2-058",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "emsOperations",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "HIPAA",
+    "stem": "A 3-year-old has patterned burns and an inconsistent story. You report suspected abuse to child protective services. Under HIPAA, this report is:",
+    "options": [
+      "Prohibited without the parents' written consent",
+      "Permitted, because state law requires it",
+      "Allowed only after the hospital reports first",
+      "Allowed only if police ask for it"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "HIPAA permits disclosures required by law, and EMTs are mandated reporters of suspected child abuse in most states. Waiting for parental consent would defeat the purpose of the report."
+  },
+  {
+    "id": "EMT-T2-059",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "treatmentTransport",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Oral glucose",
+    "stem": "A 61-year-old diabetic man is confused but follows commands and swallows normally. His glucose is 48 mg/dL. Per protocol, you should give:",
+    "options": [
+      "Oral glucose only after he becomes unresponsive",
+      "Nothing by mouth until ALS arrives",
+      "Insulin from his own supply",
+      "Oral glucose, 15 to 25 g"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Hypoglycemia with symptoms is treated with 15-25 g of oral glucose when the patient can swallow and protect the airway. An unresponsive patient must never receive anything by mouth, and insulin would worsen the low glucose."
+  },
+  {
+    "id": "EMT-T2-060",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Abdominal emergencies",
+    "stem": "A 74-year-old man with hypertension reports sudden tearing pain in his lower back and abdomen. He is pale, BP 86/50, and you feel a pulsating abdominal mass. You should suspect:",
+    "options": [
+      "A kidney stone",
+      "Lumbar muscle strain from lifting",
+      "Acute appendicitis",
+      "Abdominal aortic aneurysm"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Sudden tearing abdominal or back pain, a pulsating mass and hypotension in an older hypertensive man suggest a leaking AAA; avoid palpating the mass further and transport rapidly. A kidney stone causes severe flank pain but not a pulsating mass or shock."
+  },
+  {
+    "id": "EMT-T2-061",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Obstetric emergencies",
+    "stem": "A 28-year-old woman with a missed period has sudden sharp lower left abdominal pain and dizziness. She is pale, pulse 124, BP 92/60. The most likely life threat is:",
+    "options": [
+      "Urinary tract infection",
+      "Ordinary menstrual cramps with nausea",
+      "Food poisoning",
+      "Ruptured ectopic pregnancy"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Any woman of childbearing age with abdominal pain, a missed period and signs of shock should be treated as a ruptured ectopic pregnancy with internal bleeding. Treat for shock and transport rapidly; benign causes do not produce tachycardia and hypotension."
+  },
+  {
+    "id": "EMT-T2-062",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "sceneSizeUp",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Nature of illness",
+    "stem": "Called for an unresponsive 19-year-old in a dorm room, you see a syringe and a bent spoon on the desk. These clues suggest:",
+    "options": [
+      "Possible opioid overdose and a sharps hazard",
+      "A diabetic patient who injected too much of his insulin",
+      "A seizure disorder with a missed medication",
+      "A head injury from a fall out of bed"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The environment gives the nature of illness: a spoon and syringe point to injected drugs such as opioids and warn of uncapped needles. Insulin users do not need a spoon, and the scene does not suggest trauma."
+  },
+  {
+    "id": "EMT-T2-063",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "treatmentTransport",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Epinephrine auto-injector",
+    "stem": "An 8-year-old girl weighing 25 kg has hives, wheezing, and lip swelling after eating peanuts. Which epinephrine auto-injector dose and site?",
+    "options": [
+      "0.3 mg in the deltoid",
+      "0.15 mg in the deltoid",
+      "0.15 mg in the anterolateral thigh",
+      "0.5 mg in the anterolateral thigh muscle"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Children weighing 15-30 kg receive the 0.15 mg auto-injector, and adults or patients over 30 kg receive 0.3 mg, both injected into the anterolateral thigh. The deltoid is not the recommended site for auto-injectors."
+  },
+  {
+    "id": "EMT-T2-064",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Behavioral emergencies",
+    "stem": "While assessing a 40-year-old man during a behavioral emergency, which finding most strongly warns that he may become violent?",
+    "options": [
+      "Quiet crying while seated",
+      "Clenched fists and pacing toward you",
+      "Slow speech with a flat affect",
+      "Repeated questions about the hospital"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Clenched fists, pacing, a loud voice and moving toward the crew are warning signs of imminent violence, so keep an exit open and request law enforcement. Crying or a flat affect suggests sadness or depression rather than aggression."
+  },
+  {
+    "id": "EMT-T2-065",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "secondaryAssessment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Medication history",
+    "stem": "A 66-year-old woman fell and struck her head. She takes warfarin daily. This history matters because she:",
+    "options": [
+      "Has a higher risk of brain bleeding",
+      "Should get aspirin before transport",
+      "Can be released if her exam is normal",
+      "Most likely had a seizure first"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Anticoagulants such as warfarin raise the risk of intracranial bleeding after even minor head trauma, so she needs transport and close reassessment. A normal initial exam does not rule out a slow bleed."
+  },
+  {
+    "id": "EMT-T2-066",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "emsOperations",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Crime scenes",
+    "stem": "A 25-year-old man was shot in the abdomen at an active crime scene secured by police. When exposing the wound, you should:",
+    "options": [
+      "Wait for police photos before exposing it",
+      "Cut straight through the hole for speed",
+      "Cut around the bullet hole, not through it",
+      "Remove all clothing and leave it on the ground"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Patient care comes first, but cutting around holes and bagging clothing preserves evidence. Delaying care for police photos is wrong because treatment takes priority."
+  },
+  {
+    "id": "EMT-T2-067",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pediatric airway",
+    "stem": "A 4-year-old sits leaning forward and drooling, with a fever of 103 F, a muffled voice and soft stridor that began suddenly. These findings most suggest:",
+    "options": [
+      "Croup",
+      "Bronchiolitis",
+      "Epiglottitis",
+      "Simple ear infection"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Sudden high fever, drooling, tripod positioning and a muffled voice suggest epiglottitis; keep the child calm with the parent and never examine the throat. Croup develops gradually with a barking cough and low-grade fever."
+  },
+  {
+    "id": "EMT-T2-068",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "sceneSizeUp",
+    "difficulty": 3,
+    "format": "matrix",
+    "skill": "START triage",
+    "stem": "At a mass-casualty incident using START, assign each adult patient a category.",
+    "rows": [
+      "Walked to the designated area",
+      "Cannot walk, respirations 36",
+      "Cannot walk, RR 20, radial pulse, obeys",
+      "Cannot walk, RR 22, no radial pulse",
+      "Cannot walk, RR 18, cannot obey commands"
+    ],
+    "columns": [
+      "Immediate",
+      "Delayed",
+      "Minor"
+    ],
+    "correct": [
+      2,
+      0,
+      1,
+      0,
+      0
+    ],
+    "explanation": "Walking patients are minor, and anyone who cannot walk is immediate with respirations over 30, no radial pulse or failure to obey commands. Only the patient who passes all three checks is delayed, even though he cannot walk."
+  },
+  {
+    "id": "EMT-T2-069",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "treatmentTransport",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Metered-dose inhalers",
+    "stem": "A 19-year-old with asthma is wheezing and has his prescribed albuterol inhaler with a spacer. After checking the medication, which instruction is correct?",
+    "options": [
+      "Inhale quickly, then exhale right after the puff",
+      "Spray it into the mouth while exhaling",
+      "Exhale fully, then inhale deeply as it is activated",
+      "Take four rapid puffs without pausing"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Shake the inhaler, have the patient exhale fully, seal the lips around the spacer, and press the canister while he inhales slowly and deeply, then hold the breath about 10 seconds. Spraying during exhalation or rapid repeated puffs deposits little drug in the lungs."
+  },
+  {
+    "id": "EMT-T2-070",
+    "section": "emt",
+    "test": 2,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 3,
+    "format": "matrix",
+    "skill": "Chest trauma",
+    "stem": "For each finding, specify whether it points to tension pneumothorax, cardiac tamponade, or both.",
+    "rows": [
+      "Absent breath sounds on one side",
+      "Muffled heart sounds",
+      "Distended neck veins",
+      "Low blood pressure",
+      "Tracheal shift away from injury"
+    ],
+    "columns": [
+      "Tension pneumothorax",
+      "Cardiac tamponade",
+      "Both"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      2,
+      0
+    ],
+    "explanation": "Absent breath sounds on one side and a late tracheal shift point to tension pneumothorax, and muffled heart sounds to tamponade. Both block blood return to the heart, so distended neck veins and hypotension do not tell them apart."
+  },
+  {
+    "id": "EMT-D-001",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Chest trauma",
+    "stem": "A 55-year-old driver struck the steering wheel. A section of his left chest moves inward when he inhales and outward when he exhales. This finding indicates:",
+    "options": [
+      "A single rib fracture",
+      "Cardiac tamponade",
+      "An open pneumothorax",
+      "Flail chest"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Paradoxical movement of a chest wall segment means two or more adjacent ribs are broken in two or more places; support ventilation with a BVM if breathing is inadequate. A single rib fracture causes pain but not paradoxical motion."
+  },
+  {
+    "id": "EMT-D-002",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "treatmentTransport",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Opioid overdose",
+    "stem": "A 26-year-old man is unresponsive with pinpoint pupils, cyanosis, SpO2 78%, and respirations of 4 per minute. Your first action should be:",
+    "options": [
+      "Give 4 mg naloxone intranasally",
+      "Ventilate with a BVM and oxygen",
+      "Apply a nonrebreather at 15 L/min",
+      "Perform a sternal rub to arouse him"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Ventilation comes first because hypoxia kills before naloxone (0.4 mg IM/IN or 4 mg IN per protocol) takes effect. A nonrebreather cannot help a patient breathing 4 times a minute."
+  },
+  {
+    "id": "EMT-D-003",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "sceneSizeUp",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "START triage",
+    "stem": "A 55-year-old man with an open leg fracture cannot walk, breathes 20 per minute, has a radial pulse, and obeys commands. Using START, tag him:",
+    "options": [
+      "Immediate (red)",
+      "Minor (green)",
+      "Delayed (yellow)",
+      "Expectant (black)"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "He fails only the walking test: respirations under 30, radial pulse present and following commands make him delayed. The painful fracture does not by itself make him immediate under START."
+  },
+  {
+    "id": "EMT-D-004",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Chest trauma",
+    "stem": "A 27-year-old with a stab wound just left of the sternum has distended neck veins, muffled heart sounds, equal breath sounds and BP 80/66. These signs suggest:",
+    "options": [
+      "Tension pneumothorax",
+      "Cardiac tamponade",
+      "An open pneumothorax",
+      "Neurogenic shock"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "JVD, muffled heart tones and hypotension with a narrow pulse pressure form Beck's triad of cardiac tamponade, which needs rapid transport for surgical care. Equal breath sounds make tension pneumothorax less likely."
+  },
+  {
+    "id": "EMT-D-005",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "emsOperations",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Infection exposure",
+    "stem": "While restraining a combative patient, a used needle punctures your gloved hand. After washing the site, you should:",
+    "options": [
+      "Report it promptly to the infection control officer",
+      "Wait to see whether symptoms develop",
+      "Ask the patient yourself for an HIV test",
+      "Report it to your supervisor at the start of next shift"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Exposures should be washed and reported immediately to the designated infection control officer, because post-exposure treatment works best within hours. Waiting for symptoms or the next shift delays that care."
+  },
+  {
+    "id": "EMT-D-006",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "Head trauma",
+    "stem": "A 45-year-old who fell from a ladder now responds only to pain. Which findings make up Cushing's triad of rising intracranial pressure? (Choose three.)",
+    "options": [
+      "Slowing pulse rate",
+      "Falling blood pressure",
+      "Irregular respirations",
+      "Pinpoint pupils",
+      "Rising blood pressure",
+      "Rapid, weak pulse"
+    ],
+    "correct": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "Rising blood pressure, a slowing pulse and irregular respirations form Cushing's triad, a late sign of brain herniation that needs rapid transport. A rapid weak pulse with falling pressure is the opposite pattern, hypovolemic shock.",
+    "select": 3
+  },
+  {
+    "id": "EMT-D-007",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "treatmentTransport",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Medical direction",
+    "stem": "By radio, medical direction orders nitroglycerin 0.4 mg sublingual for your 63-year-old chest pain patient. Before giving it, you should:",
+    "options": [
+      "Give it immediately to save transport time",
+      "Repeat the order back, then check the rights",
+      "Wait until handoff to confirm the order",
+      "Ask the patient if the dose sounds right"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Repeating the order word for word catches errors, then verify the rights: right patient, medication, dose, route, time and documentation, plus the expiration date. Giving it without confirmation risks a dose or drug error."
+  },
+  {
+    "id": "EMT-D-008",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "secondaryAssessment",
+    "difficulty": 1,
+    "format": "order",
+    "skill": "Assessment sequence",
+    "stem": "Place the parts of the patient assessment for a responsive medical patient in the order they are performed.",
+    "options": [
+      "Secondary assessment",
+      "Scene size-up",
+      "Reassessment en route",
+      "History taking",
+      "Primary assessment"
+    ],
+    "correct": [
+      1,
+      4,
+      3,
+      0,
+      2
+    ],
+    "explanation": "Scene safety comes first, then life threats in the primary assessment; a responsive medical patient's history guides the secondary exam, and reassessment continues to handoff. In an unresponsive patient the rapid exam comes before the history from bystanders."
+  },
+  {
+    "id": "EMT-D-009",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Abdominal trauma",
+    "stem": "A 38-year-old driver in a side-impact crash has left upper abdominal tenderness and left shoulder pain. Pulse 122, BP 102/78, skin pale and cool. You should suspect:",
+    "options": [
+      "A rotator cuff tear",
+      "A seat belt abrasion",
+      "A bruised rib from the intruding door panel",
+      "Splenic injury with internal bleeding"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Left upper quadrant tenderness with referred left shoulder pain and signs of compensated shock suggest a bleeding spleen. Treat for shock and transport rapidly; attributing the tachycardia to pain or a minor injury delays care."
+  },
+  {
+    "id": "EMT-D-010",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "sceneSizeUp",
+    "difficulty": 2,
+    "format": "order",
+    "skill": "START triage",
+    "stem": "Place the START triage checks in the order you perform them.",
+    "options": [
+      "Check radial pulse or capillary refill",
+      "Direct walking patients to one area",
+      "Check ability to follow commands",
+      "Assess breathing and respiratory rate"
+    ],
+    "correct": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "explanation": "START moves the walking wounded first, then checks respirations, perfusion and mental status (RPM) in that order. Breathing is checked before perfusion because an airway or rate problem kills fastest."
+  },
+  {
+    "id": "EMT-D-011",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "treatmentTransport",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Poisoning",
+    "stem": "A 3-year-old ate an unknown number of her grandmother's pills 30 minutes ago and is alert. Regarding activated charcoal, you should:",
+    "options": [
+      "Give it right away for every pill ingestion",
+      "Induce vomiting first, then give it",
+      "Give it only if medical direction orders it",
+      "Mix it with milk before giving it"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Contact Poison Control or medical direction; activated charcoal is given only on their order and never to a patient who cannot swallow or protect the airway. Inducing vomiting is not recommended, and milk reduces charcoal's binding."
+  },
+  {
+    "id": "EMT-D-012",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pelvic injuries",
+    "stem": "A 60-year-old pedestrian struck by a car has pelvic pain and instability with one gentle compression. Pulse 128, BP 90/60. Your main concern is:",
+    "options": [
+      "Severe internal bleeding from the pelvis",
+      "Bladder rupture causing later abdominal infection",
+      "Hip dislocation",
+      "Nerve damage to the legs"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An unstable pelvic fracture can hide a large volume of blood loss, so apply a pelvic binder per protocol, treat for shock and transport rapidly. Do not rock or repeatedly compress the pelvis, which can worsen bleeding."
+  },
+  {
+    "id": "EMT-D-013",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "emsOperations",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Lifting and moving",
+    "stem": "You and your partner lift a 90 kg patient on a cot. Using the power lift technique, you should:",
+    "options": [
+      "Bend at the waist and lift with your back",
+      "Twist your torso to turn as you lift",
+      "Lock your back and lift with your legs",
+      "Hold the cot well away from your body"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The power lift keeps the back locked, feet shoulder-width apart, the load close, and the legs doing the work. Twisting or lifting with the back is a common cause of EMS back injury."
+  },
+  {
+    "id": "EMT-D-014",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Chest trauma",
+    "stem": "A 24-year-old has a gunshot wound to the right chest that bubbles and makes a sucking sound with each breath. Your immediate priority is:",
+    "options": [
+      "Pack the wound tightly with gauze",
+      "Seal it with an occlusive dressing",
+      "Cover it with a bulky dry dressing",
+      "Roll him onto his uninjured side to breathe"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An open chest wound lets air enter the pleural space, so seal it immediately with an occlusive dressing and watch for tension pneumothorax, burping the dressing if needed. A dry gauze dressing lets air pass through."
+  },
+  {
+    "id": "EMT-D-015",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "sceneSizeUp",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "JumpSTART triage",
+    "stem": "At a school bus crash, a 4-year-old is not breathing after you open the airway but has a palpable pulse. Under JumpSTART you should:",
+    "options": [
+      "Give 5 rescue breaths and reassess",
+      "Tag her expectant and move on",
+      "Begin chest compressions immediately",
+      "Tag her delayed until more help arrives"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "JumpSTART recognizes that apnea in children is often respiratory, so an apneic child with a pulse gets 5 rescue breaths; if breathing resumes she is immediate. Tagging her expectant without the breaths, as in adult START, would miss a salvageable child."
+  },
+  {
+    "id": "EMT-D-016",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "treatmentTransport",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Childbirth",
+    "stem": "During delivery of a full-term infant, the head delivers and you feel the umbilical cord wrapped loosely around the neck. You should:",
+    "options": [
+      "Clamp and cut the cord immediately",
+      "Gently slip the cord over the head",
+      "Pull the infant out quickly to ease tension",
+      "Push the head back into the vagina"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A loose nuchal cord is slipped over the head; only if it is too tight to move is it clamped in two places and cut between per protocol. Pulling on the infant can tear the cord or injure the baby."
+  },
+  {
+    "id": "EMT-D-017",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 3,
+    "format": "order",
+    "skill": "Trauma primary assessment",
+    "stem": "A 19-year-old ejected in a rollover has spurting thigh bleeding, snoring respirations and pale, cool skin. Place your primary assessment actions in order.",
+    "options": [
+      "Assess breathing; give oxygen",
+      "Begin rapid transport to trauma center",
+      "Open the airway with a jaw thrust",
+      "Check pulse and treat for shock",
+      "Apply a tourniquet to the thigh"
+    ],
+    "correct": [
+      4,
+      2,
+      0,
+      3,
+      1
+    ],
+    "explanation": "Massive external bleeding is controlled first because it kills fastest, then airway, breathing and circulation, then a rapid transport decision. Opening the airway first lets a spurting thigh wound bleed out within minutes."
+  },
+  {
+    "id": "EMT-D-018",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Vital sign norms",
+    "stem": "For each resting patient, specify whether the respiratory rate is normal or abnormal for the age.",
+    "rows": [
+      "6-month-old, 40 per minute",
+      "Adult, 8 per minute",
+      "5-year-old, 24 per minute",
+      "Adult, 16 per minute",
+      "4-month-old, 12 per minute",
+      "Adult, 32 per minute"
+    ],
+    "columns": [
+      "Normal",
+      "Abnormal"
+    ],
+    "correct": [
+      0,
+      1,
+      0,
+      0,
+      1,
+      1
+    ],
+    "explanation": "Infants breathe about 30 to 60 times a minute, a 5-year-old about 20 to 30 and adults 12 to 20, so 40, 24 and 16 are normal. An infant at 12 is dangerously slow even though 12 is normal for an adult."
+  },
+  {
+    "id": "EMT-D-019",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "emsOperations",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Stress management",
+    "stem": "Two weeks after a fatal pediatric call, your partner has nightmares, poor sleep and irritability. The best response is to:",
+    "options": [
+      "Tell him to avoid talking about the call",
+      "Encourage help through CISM or counseling",
+      "Suggest a drink to help him fall asleep",
+      "Recommend overtime shifts as a distraction"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Persistent sleep loss and irritability after a critical incident are stress reactions that warrant critical incident stress management or professional help. Alcohol and extra shifts worsen fatigue and stress."
+  },
+  {
+    "id": "EMT-D-020",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "treatmentTransport",
+    "difficulty": 3,
+    "format": "matrix",
+    "skill": "Newborn resuscitation",
+    "stem": "A newborn has been dried, warmed and stimulated. For each finding, specify the care indicated.",
+    "rows": [
+      "Crying, heart rate 150",
+      "Apneic, heart rate 90",
+      "Gasping, heart rate 120",
+      "Heart rate 50 after 30 s of ventilation",
+      "Weak breaths, heart rate 80"
+    ],
+    "columns": [
+      "Routine care",
+      "BVM ventilation",
+      "Compressions and ventilation"
+    ],
+    "correct": [
+      0,
+      1,
+      1,
+      2,
+      1
+    ],
+    "explanation": "Apnea, gasping or a heart rate under 100 calls for BVM ventilation at 40 to 60 a minute, and compressions are added only when the rate stays under 60 after 30 seconds of effective ventilation. A gasping newborn with a rate over 100 still needs ventilation, because gasping is not effective breathing."
+  },
+  {
+    "id": "EMT-D-021",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "sceneSizeUp",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "SALT triage",
+    "stem": "In SALT triage, which lifesaving intervention may be performed before assigning a category?",
+    "options": [
+      "Full spinal motion restriction",
+      "Applying a tourniquet for major hemorrhage",
+      "Splinting a closed forearm fracture",
+      "Starting CPR on a pulseless patient"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "SALT allows quick lifesaving interventions, such as hemorrhage control, opening the airway, chest decompression and auto-injector antidotes, before categorizing. CPR and splinting are too resource-intensive during initial MCI triage."
+  },
+  {
+    "id": "EMT-D-022",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Pediatric vital signs",
+    "stem": "A 4-year-old boy struck by a car has pale skin and delayed capillary refill. What is the minimum acceptable systolic blood pressure for his age?",
+    "options": [
+      "78 mmHg",
+      "70 mmHg",
+      "90 mmHg",
+      "64 mmHg"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The minimum systolic pressure for a child aged 1 to 10 is about 70 plus twice the age in years, so 70 + 8 = 78 mmHg. A value of 70 mmHg applies only to a 1-year-old."
+  },
+  {
+    "id": "EMT-D-023",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "secondaryAssessment",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Reassessment",
+    "stem": "A 25-year-old woman with an isolated wrist injury has normal vital signs and is alert. You should reassess her at least every:",
+    "options": [
+      "5 minutes",
+      "30 minutes",
+      "45 minutes",
+      "15 minutes"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Stable patients are reassessed at least every 15 minutes. Reassessing every 5 minutes is acceptable but required only for unstable patients; 30 minutes is too long."
+  },
+  {
+    "id": "EMT-D-024",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "treatmentTransport",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Cord prolapse",
+    "stem": "A 28-year-old woman in labor at term has the umbilical cord protruding from the vagina before the baby. You should:",
+    "options": [
+      "Use gloved fingers to lift the baby off the cord",
+      "Gently push the cord back into the vagina",
+      "Have her push hard to speed delivery",
+      "Clamp and cut the exposed cord"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "With a prolapsed cord, raise the hips (knee-chest or Trendelenburg), push the presenting part off the cord with a gloved hand, keep the cord moist, give oxygen and transport rapidly. Never push the cord back in or cut it."
+  },
+  {
+    "id": "EMT-D-025",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Pulse pressure",
+    "stem": "A 50-year-old with blunt chest trauma now has BP 92/80, down from 118/76 ten minutes ago. The narrowing pulse pressure most suggests:",
+    "options": [
+      "Improving perfusion",
+      "Falling cardiac output from shock",
+      "Rising intracranial pressure",
+      "Normal variation caused by anxiety and pain"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Pulse pressure is systolic minus diastolic; a drop from 42 to 12 mmHg suggests decreasing cardiac output from shock or tamponade. A widening pulse pressure, not a narrowing one, accompanies rising intracranial pressure."
+  },
+  {
+    "id": "EMT-D-026",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Orthostatic vital signs",
+    "stem": "A 68-year-old woman with black tarry stools feels dizzy when sitting up. Her pulse rises from 88 to 116 and her systolic pressure drops 24 mmHg. This indicates:",
+    "options": [
+      "A normal postural response",
+      "Inner ear vertigo",
+      "Medication-induced bradycardia",
+      "Significant blood volume loss"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A pulse increase of about 20 or more beats per minute or a systolic drop of 20 mmHg or more when sitting up is a positive orthostatic test, here suggesting GI bleeding with volume loss. Return her to supine and treat for shock rather than repeating the test."
+  },
+  {
+    "id": "EMT-D-027",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "emsOperations",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Emergency driving",
+    "stem": "Running lights and siren to a cardiac arrest, you approach a red light at a busy intersection. You should:",
+    "options": [
+      "Proceed since you have the right of way",
+      "Slow slightly and rely on the siren",
+      "Follow closely behind a police escort",
+      "Come to a stop, then clear each lane"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Lights and sirens only request the right of way, and most ambulance crashes occur at intersections, so drive with due regard and clear each lane. Escorts are discouraged because drivers may not expect the second vehicle."
+  },
+  {
+    "id": "EMT-D-028",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "sceneSizeUp",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Triage reassessment",
+    "stem": "A 60-year-old woman tagged yellow 20 minutes ago now has respirations of 34 and new confusion in the treatment area. You should:",
+    "options": [
+      "Leave the yellow tag to avoid confusion",
+      "Wait for the triage officer to reassess her",
+      "Re-triage her and change her tag to immediate",
+      "Move her to the end of the transport line"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Triage is dynamic, and patients are reassessed and retagged as their condition changes. Her rapid respirations and altered mental status now meet immediate criteria, so leaving the original tag delays her care."
+  },
+  {
+    "id": "EMT-D-029",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "treatmentTransport",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Anticoagulant risk",
+    "stem": "An 84-year-old woman fell and struck her head. Which medications on her list raise her risk of a delayed brain bleed? Select all that apply.",
+    "options": [
+      "Warfarin",
+      "Apixaban",
+      "Clopidogrel",
+      "Metformin",
+      "Levothyroxine",
+      "Lisinopril"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Anticoagulants such as warfarin and apixaban and antiplatelets such as clopidogrel make intracranial bleeding more likely after even minor head trauma, so she needs transport and reassessment. Metformin, levothyroxine and lisinopril do not affect clotting."
+  },
+  {
+    "id": "EMT-D-030",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Vital sign technique",
+    "stem": "When obtaining a baseline respiratory rate on an adult whose breathing is regular, the recommended method is to count:",
+    "options": [
+      "For 5 seconds and multiply by 12",
+      "For 10 seconds and multiply by 6",
+      "For 30 seconds and multiply by 2",
+      "After telling the patient you are counting"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Count regular respirations for 30 seconds and double it, or a full minute if irregular, without telling the patient since awareness changes breathing. Very short counts multiply small errors into large ones."
+  },
+  {
+    "id": "EMT-D-031",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Head trauma",
+    "stem": "A 52-year-old man found unresponsive after a fall has a dilated right pupil that does not react to light. The left pupil is normal. This most suggests:",
+    "options": [
+      "An opioid overdose",
+      "Sympathetic stimulation from fear and pain",
+      "Increasing pressure inside the skull",
+      "A normal finding with age"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A unilateral fixed, dilated pupil in an unresponsive head-injured patient suggests brain swelling or bleeding compressing a cranial nerve and requires rapid transport. Opioids cause bilateral pinpoint pupils."
+  },
+  {
+    "id": "EMT-D-032",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "treatmentTransport",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Bariatric patients",
+    "stem": "A 420-pound man with shortness of breath is in a second-floor bedroom. He is alert with stable vital signs. To move him safely, you should:",
+    "options": [
+      "Use a standard stair chair with two EMTs",
+      "Have him walk down the stairs alone",
+      "Call for added personnel and bariatric equipment",
+      "Drag him on a blanket down the stairs"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Moving a bariatric patient safely requires enough lifters and rated equipment such as a bariatric stretcher, using power-lift technique and knowing your limits. Overloading a standard stair chair or two EMTs risks injury to everyone."
+  },
+  {
+    "id": "EMT-D-033",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "sceneSizeUp",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "ALS intercept",
+    "stem": "A 62-year-old man with chest pain is pale and diaphoretic, BP 82/50, pulse 42. The hospital is 35 minutes away. You should:",
+    "options": [
+      "Begin transport and request an ALS intercept",
+      "Assist with his nitroglycerin before moving him",
+      "Wait on scene until a paramedic unit arrives",
+      "Transport without notifying dispatch or the hospital"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Hypotension and bradycardia with chest pain need ALS care, and an intercept brings it without delaying transport. Nitroglycerin is contraindicated with a systolic pressure this low, and waiting on scene wastes time."
+  },
+  {
+    "id": "EMT-D-034",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Diabetic emergencies",
+    "stem": "A 60-year-old diabetic woman is confused but follows commands and swallows normally. Her glucose meter reads 52 mg/dL. You should:",
+    "options": [
+      "Wait for ALS before treating",
+      "Give her prescribed insulin",
+      "Recheck in 30 minutes before acting",
+      "Give oral glucose per protocol"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A glucose under 70 mg/dL with symptoms in a patient who can swallow and protect the airway calls for oral glucose, 15 to 25 g, per protocol. Insulin would lower her sugar further and is outside EMT scope."
+  },
+  {
+    "id": "EMT-D-035",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "emsOperations",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ambulance operations",
+    "stem": "You must back the ambulance into a narrow hospital bay at night. The safest practice is to:",
+    "options": [
+      "Rely on the backup camera and mirrors alone",
+      "Sound the horn and back up slowly",
+      "Use a spotter at the rear in your mirror",
+      "Back in quickly before traffic arrives"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A spotter positioned behind the vehicle and visible in the driver's mirror is the standard for backing. A camera has blind spots and is not a substitute for a spotter."
+  },
+  {
+    "id": "EMT-D-036",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Oxygen therapy",
+    "stem": "A 56-year-old with suspected acute coronary syndrome has no shortness of breath and an SpO2 of 97% on room air. Regarding oxygen, you should:",
+    "options": [
+      "Withhold it and keep monitoring SpO2",
+      "Apply a nonrebreather at 15 L/min",
+      "Give a nasal cannula at 6 L/min routinely",
+      "Assist ventilations with a BVM"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Oxygen is given for hypoxia (SpO2 below 90 to 94% per local protocol), shock or respiratory distress, because unneeded oxygen in heart attack patients may worsen outcomes. Routine oxygen for a well-saturated patient is no longer recommended."
+  },
+  {
+    "id": "EMT-D-037",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "treatmentTransport",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Patient restraint",
+    "stem": "A 30-year-old combative man must be restrained per protocol with police assistance. Which restraint practice is correct?",
+    "options": [
+      "Prone with hands tied to the ankles",
+      "Prone with an officer kneeling on his back",
+      "Supine or on his side, monitored continuously",
+      "Left alone in the patient compartment once secured"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Restrained patients are positioned supine or on their side and monitored continuously for airway, breathing and circulation, with the reason documented. Prone, hog-tied or compressed positions cause positional asphyxia and death."
+  },
+  {
+    "id": "EMT-D-038",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "secondaryAssessment",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Reassessment",
+    "stem": "A 35-year-old with a head injury is reassessed en route. His GCS dropped from 14 to 10 and his BP rose. You should:",
+    "options": [
+      "Recheck in 15 minutes before acting",
+      "Repeat the primary assessment",
+      "Finish the focused exam of his scalp",
+      "Ventilate him at 30 breaths per minute"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A falling GCS signals deterioration, so return to the primary assessment, manage the airway and notify the receiving hospital. Hyperventilation is not used unless signs of herniation are present, and waiting 15 minutes ignores the change."
+  },
+  {
+    "id": "EMT-D-039",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Carbon monoxide",
+    "stem": "A 34-year-old man rescued from a house fire has a headache and confusion. His SpO2 reads 99% on room air. You should:",
+    "options": [
+      "Give high-flow oxygen despite the reading",
+      "Withhold oxygen since saturation is normal",
+      "Apply a nasal cannula at 2 L/min",
+      "Move the probe to his earlobe"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Carbon monoxide binds hemoglobin and pulse oximeters read it as oxygen, so SpO2 can be falsely normal; give high-flow oxygen by nonrebreather. Moving the probe does not correct this limitation."
+  },
+  {
+    "id": "EMT-D-040",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "sceneSizeUp",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Additional resources",
+    "stem": "At a home, a 45-year-old woman is dizzy and you smell a strong odor of natural gas. After moving everyone outside, you should request:",
+    "options": [
+      "Law enforcement to secure the home",
+      "Air medical transport for the patient",
+      "Poison control for exposure advice",
+      "The fire department and the gas utility"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A gas leak is an explosion hazard that needs the fire department to secure the scene and the utility to shut off and repair the supply. Police and poison control cannot control the source of the hazard."
+  },
+  {
+    "id": "EMT-D-041",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "treatmentTransport",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Child abuse",
+    "stem": "A 2-year-old has bruises in different stages of healing and a round burn like a cigarette. The parent says she fell off a couch. You should:",
+    "options": [
+      "Treat, transport, and report per state law",
+      "Confront the parent about the inconsistent story",
+      "Leave the burns out of the report",
+      "Ask the parent's permission before reporting"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Injuries inconsistent with the history suggest abuse, and EMTs are mandated reporters who must report per state law and document objectively. Confronting the caregiver can escalate the scene and endanger the child."
+  },
+  {
+    "id": "EMT-D-042",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "12-lead ECG",
+    "stem": "Your protocol permits EMT 12-lead acquisition. A 61-year-old with chest pain has a tracing interpreted as acute STEMI. You should:",
+    "options": [
+      "Wait for ALS to confirm before leaving",
+      "Repeat the tracing twice on scene first",
+      "Give nitroglycerin from ambulance stock",
+      "Transmit it and call a STEMI alert"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Early transmission and a STEMI alert let the hospital activate the cath lab before arrival, shortening time to reperfusion. EMTs only assist with the patient's own prescribed nitroglycerin, and delaying transport for repeat tracings wastes heart muscle."
+  },
+  {
+    "id": "EMT-D-043",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "emsOperations",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Air medical safety",
+    "stem": "A medical helicopter has landed in your 100 by 100 foot landing zone on a slight slope. You should approach:",
+    "options": [
+      "From the front, after the pilot signals",
+      "From the rear, away from the main rotor",
+      "From the uphill side, as soon as it lands",
+      "From the side, before the rotors slow"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Approach only from the front, within the pilot's view, and only when signaled. The tail rotor makes the rear deadly, and the main rotor dips closer to the ground on the uphill side."
+  },
+  {
+    "id": "EMT-D-044",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Capnography",
+    "stem": "You are ventilating a 40-year-old in respiratory arrest through a supraglottic airway with waveform capnography. ETCO2 is 38 mmHg with a consistent waveform. This indicates:",
+    "options": [
+      "The device has slipped into the esophagus",
+      "Proper placement and ventilation",
+      "Severe hyperventilation",
+      "Oxygen saturation is 38%"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Normal ETCO2 is about 35 to 45 mmHg, and a steady waveform confirms exhaled carbon dioxide from the lungs. Esophageal placement would show little or no ETCO2, and ETCO2 measures exhaled carbon dioxide, not oxygen saturation."
+  },
+  {
+    "id": "EMT-D-045",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "sceneSizeUp",
+    "difficulty": 2,
+    "format": "order",
+    "skill": "Incident command",
+    "stem": "You are the first unit at a bus crash with about 20 injured passengers. Place your actions in order.",
+    "options": [
+      "Move patients to treatment areas",
+      "Establish command; request more units",
+      "Transport patients by priority",
+      "Check the scene for hazards",
+      "Begin START triage of patients"
+    ],
+    "correct": [
+      3,
+      1,
+      4,
+      0,
+      2
+    ],
+    "explanation": "Scene safety comes first, then command and a call for resources so help is moving while triage sorts patients. Treatment areas and transport follow triage; treating the first patient you reach leaves the scene unorganized."
+  },
+  {
+    "id": "EMT-D-046",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "treatmentTransport",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Supine hypotension",
+    "stem": "A 32-year-old woman at 36 weeks of pregnancy becomes dizzy and hypotensive while lying supine on the stretcher. How should you position her?",
+    "options": [
+      "Supine with the legs elevated",
+      "Prone with a pillow under the hips",
+      "Seated upright at 90 degrees",
+      "On her left side"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "After 20 weeks the uterus compresses the vena cava when the patient is supine, so transport her on her left side or with left lateral tilt. Supine positioning is for other shock patients and CHF patients sit upright, but supine worsens this patient."
+  },
+  {
+    "id": "EMT-D-047",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Stroke destination",
+    "stem": "A 66-year-old woman developed left arm weakness and facial droop 50 minutes ago. Her glucose is 112 mg/dL. Per local protocol, the best destination is:",
+    "options": [
+      "The nearest urgent care clinic",
+      "Her own physician's office",
+      "A stroke center, with a prehospital alert",
+      "Any hospital, with routine notification"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A stroke patient within the treatment window should go to a stroke center with early notification so the team is ready for imaging and clot-busting or clot-removal therapy. Urgent care and routine notification delay time-critical treatment."
+  },
+  {
+    "id": "EMT-D-048",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "Field triage criteria",
+    "stem": "Under national field triage guidelines, which injured patients meet a high-risk injury criterion for the highest-level trauma center? Select all that apply.",
+    "options": [
+      "Fractures of both femurs",
+      "Stab wound to the upper chest",
+      "Amputation above the wrist",
+      "Closed fracture of one wrist",
+      "Forearm cut, bleeding controlled",
+      "Sprained ankle with swelling"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Two or more proximal long-bone fractures, penetrating torso injury and amputation proximal to the wrist or ankle are high-risk injury patterns. A closed distal fracture or a controlled laceration with normal vital signs can usually go to the closest appropriate hospital."
+  },
+  {
+    "id": "EMT-D-049",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "emsOperations",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Incident command",
+    "stem": "At a mass-casualty incident, match each task to the ICS officer responsible for it.",
+    "rows": [
+      "Tags patients using START",
+      "Assigns ambulances to hospitals",
+      "Holds arriving units until needed",
+      "Oversees care in treatment areas",
+      "Tracks where each patient went"
+    ],
+    "columns": [
+      "Triage",
+      "Treatment",
+      "Transportation",
+      "Staging"
+    ],
+    "correct": [
+      0,
+      2,
+      3,
+      1,
+      2
+    ],
+    "explanation": "Triage sorts patients, treatment runs the treatment area, staging holds vehicles in reserve, and transportation assigns ambulances, picks destinations and tracks patients. Staging manages arriving units but does not send patients to hospitals."
+  },
+  {
+    "id": "EMT-D-050",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "treatmentTransport",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Stroke destination",
+    "stem": "A 66-year-old man has had right-sided weakness and slurred speech for 40 minutes. A community hospital is 8 minutes away; a stroke center is 20. Transport him:",
+    "options": [
+      "To the closest hospital regardless of capability",
+      "To the stroke center per protocol",
+      "To his primary care physician's office",
+      "Only after symptoms resolve on scene"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Destination protocols send stroke patients within the treatment window to a stroke center that can give thrombolytics or thrombectomy when the extra time is modest. The closest hospital may lack those capabilities."
+  },
+  {
+    "id": "EMT-D-051",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "sceneSizeUp",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Landing zone setup",
+    "stem": "Air medical is coming for a 25-year-old with severe head trauma 70 minutes from a trauma center. The landing zone should be:",
+    "options": [
+      "About 30 by 30 feet next to the patient",
+      "About 100 by 100 feet, flat, and clear of wires",
+      "On a sloped hill so the pilot sees it",
+      "Beside the crash under the nearest power lines"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A landing zone of about 100 by 100 feet on level ground, free of wires and debris, is the common standard, and crews approach the aircraft from the front within the pilot's view. A small or sloped zone or nearby wires risk a crash."
+  },
+  {
+    "id": "EMT-D-052",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pediatric seizures",
+    "stem": "A 6-year-old has seized continuously for 8 minutes. You are managing his airway with suction and oxygen, and the hospital is 30 minutes away. You should:",
+    "options": [
+      "Stay on scene until the seizure stops",
+      "Give oral glucose to stop the seizure",
+      "Request an ALS intercept and begin transport",
+      "Restrain his arms to prevent injury"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A seizure lasting over 5 minutes is status epilepticus, which needs benzodiazepines from ALS, so request an intercept and transport. Never give anything by mouth to a seizing patient or restrain the extremities."
+  },
+  {
+    "id": "EMT-D-053",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "secondaryAssessment",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Vital sign trends",
+    "stem": "Over 15 minutes, a 40-year-old crash victim's pulse rises from 88 to 104 to 122 while BP stays 124/80. This trend suggests:",
+    "options": [
+      "Compensated shock",
+      "Decompensated shock",
+      "Rising intracranial pressure",
+      "Stable condition"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A climbing pulse with a maintained blood pressure is the trend of compensated shock, and it calls for rapid transport. Decompensated shock adds hypotension, and rising intracranial pressure causes bradycardia, not tachycardia."
+  },
+  {
+    "id": "EMT-D-054",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "treatmentTransport",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Radio reports",
+    "stem": "You are transporting a 71-year-old man with abdominal pain and a BP of 132/80. Which information belongs in your radio report?",
+    "options": [
+      "His full name and home address",
+      "Age, complaint, vital signs, treatment and ETA",
+      "Your opinion of his lifestyle",
+      "Every past illness in detail"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A radio report is concise: unit, age and sex, chief complaint, key findings and vitals, treatment and response, and ETA. Names do not belong on the radio for privacy, and long histories are saved for handoff."
+  },
+  {
+    "id": "EMT-D-055",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Air medical",
+    "stem": "A 28-year-old with GCS 7 after a motorcycle crash is trapped in a rural ravine, 70 minutes by ground from the trauma center. You should:",
+    "options": [
+      "Wait until extrication ends to request help",
+      "Drive him to the nearest clinic",
+      "Request air medical transport early",
+      "Request one more BLS ground unit"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A critical trauma patient far from a trauma center benefits from air medical, and requesting it early lets the aircraft arrive during extrication. Waiting adds avoidable delay, and a clinic cannot provide trauma care."
+  },
+  {
+    "id": "EMT-D-056",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Childbirth",
+    "stem": "A 26-year-old in her second pregnancy has contractions 2 minutes apart, an urge to push, and the head is crowning. The hospital is 20 minutes away. You should:",
+    "options": [
+      "Begin rapid transport immediately",
+      "Prepare to deliver on scene",
+      "Have her cross her legs en route",
+      "Tell her to hold back from pushing"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Crowning means delivery is imminent, so prepare to deliver on scene rather than in a moving ambulance. Trying to delay delivery by crossing legs or withholding pushing can harm the mother and baby."
+  },
+  {
+    "id": "EMT-D-057",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "emsOperations",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Hazardous materials",
+    "stem": "At an overturned tanker leaking an unknown liquid, you see a placard with a four-digit number. As an awareness-level EMT, you should:",
+    "options": [
+      "Approach the tanker to read the shipping papers",
+      "Stay upwind in the cold zone and use the ERG",
+      "Enter the warm zone to begin triage",
+      "Treat victims before they are decontaminated"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Awareness-level EMTs stay uphill, upwind and in the cold zone, using the placard number in the Emergency Response Guidebook. Patients are decontaminated before EMTs treat them."
+  },
+  {
+    "id": "EMT-D-058",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "sceneSizeUp",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Mutual aid",
+    "stem": "All ambulances in your county are committed to a large apartment fire with many injured residents. To obtain more transport units, request:",
+    "options": [
+      "Mutual aid from neighboring EMS agencies",
+      "Police cars to transport the stable patients",
+      "Bystanders to drive patients in private cars",
+      "An air medical helicopter for each patient"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Mutual aid agreements let neighboring agencies send ambulances when local resources are overwhelmed. Police cars and private vehicles provide no patient care en route, and air medical is reserved for patients who need its speed or skills."
+  },
+  {
+    "id": "EMT-D-059",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "treatmentTransport",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Handoff reports",
+    "stem": "You arrive at the trauma center with a 24-year-old stabbing victim. Which handoff format organizes mechanism, injuries, signs and treatment?",
+    "options": [
+      "MIST",
+      "SAMPLE",
+      "OPQRST",
+      "AVPU"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "MIST stands for Mechanism, Injuries, Signs (vital signs) and Treatment, a trauma handoff format; SBAR serves the same role for medical patients. SAMPLE and OPQRST are history tools and AVPU grades responsiveness."
+  },
+  {
+    "id": "EMT-D-060",
+    "section": "emt",
+    "test": 0,
+    "module": 1,
+    "domain": "primaryAssessment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cardiac arrest management",
+    "stem": "A 70-year-old man in witnessed cardiac arrest has a shockable rhythm on your AED. ALS is 5 minutes away. Your best plan is to:",
+    "options": [
+      "Continue CPR and AED cycles on scene",
+      "Load him and do CPR during transport",
+      "Wait for ALS before using the AED",
+      "Check his pulse for a full minute"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "High-quality CPR and early defibrillation work best on scene, because CPR in a moving ambulance is less effective and dangerous for the crew. Pulse checks should take no more than 10 seconds, and the AED should be used as soon as it is available."
+  }
+]

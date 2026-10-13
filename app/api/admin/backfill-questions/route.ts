@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getAdminDb, getAdminAuth } from '@/lib/firebase-admin';
 import { isAdminEmail } from '@/lib/admin';
 import { computeAnswersByExamByDay } from '@/lib/server/answersByDay';
+import { getInternalUids } from '@/lib/server/internalUsers';
 
 // Seeds the analytics/questions aggregate's history from every user's stored
 // answer data. Runs as its own endpoint (triggered by the admin dashboard when
@@ -44,6 +45,8 @@ export async function POST(request: NextRequest) {
     // Same history split per exam (DMV included) for the "Questions by exam" table.
     const computedByExam: Record<string, Record<string, number>> = {};
     let usersScanned = 0;
+    // Internal accounts (lib/internal) never count toward the answered totals.
+    const internalUids = await getInternalUids();
     let cursor: FirebaseFirestore.QueryDocumentSnapshot | null = null;
     for (;;) {
       let query = db
@@ -56,6 +59,7 @@ export async function POST(request: NextRequest) {
       if (snap.empty) break;
 
       for (const doc of snap.docs) {
+        if (internalUids.has(doc.id)) continue;
         usersScanned++;
         const byExam = computeAnswersByExamByDay(doc.data() as Record<string, unknown>);
         for (const [examKey, byDay] of Object.entries(byExam)) {

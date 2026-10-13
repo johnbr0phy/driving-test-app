@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getAdminDb, getAdminAuth } from '@/lib/firebase-admin';
 import { isAdminEmail } from '@/lib/admin';
+import { getInternalUids } from '@/lib/server/internalUsers';
 import { computeAnswersByDay } from '@/lib/server/answersByDay';
 import { states } from '@/data/states';
 
@@ -267,7 +268,7 @@ export async function GET(request: NextRequest) {
     //
     const db = getAdminDb();
 
-    const [lightSnap, fullSnap, sharesDoc, paywallsDoc, questionsDoc] = await Promise.all([
+    const [lightSnapRaw, fullSnapRaw, sharesDoc, paywallsDoc, questionsDoc, internalUids] = await Promise.all([
       db.collection('users')
         .select('selectedState', 'lastUpdated', 'activeDates', 'subscription', 'createdAt', 'paywallHits', '_stats', 'superAmazing')
         .get(),
@@ -278,7 +279,11 @@ export async function GET(request: NextRequest) {
       db.doc('analytics/shares').get(),
       db.doc('analytics/paywalls').get(),
       db.doc('analytics/questions').get(),
+      getInternalUids(),
     ]);
+    // Internal accounts (lib/internal) are left out of every stat and the table.
+    const lightSnap = { docs: lightSnapRaw.docs.filter((d) => !internalUids.has(d.id)) };
+    const fullSnap = { docs: fullSnapRaw.docs.filter((d) => !internalUids.has(d.id)) };
 
     // ── Conversion stats: time from signup → purchase ──────────────────────
     // `createdAt` is sparsely populated (older accounts predate it), so we
@@ -426,7 +431,7 @@ export async function GET(request: NextRequest) {
       })
       .sort((a, b) => b.attempts - a.attempts);
 
-    const totalUsers = lightSnap.size;
+    const totalUsers = lightSnap.docs.length;
     const dailyActiveUsers = calculateDailyActiveUsers(usersForDau);
 
     const activeUsers7d = usersForDau.filter(u => {

@@ -4,8 +4,23 @@ import { join } from "path";
 import { getExamById } from "@/lib/exams";
 import { getTigerAsset } from "@/lib/tigerAssets";
 import { EXAMS_V2 } from "@/lib/v2/registry";
+import type { ExamV2Config } from "@/lib/v2/types";
 
 export const runtime = "nodejs";
+
+// v2 copy follows the exam's real shape: only SAT-style exams are adaptive,
+// and percent-scored exams (NCLEX, EMT, TEAS...) have no scaled range to quote.
+function v2Card(e: ExamV2Config) {
+  const adaptive = e.sections.some((s) => s.modules.some((m) => m.adaptive));
+  const scaled = e.composite.max !== 100;
+  const tests = e.tests.length === 1 ? "1 full practice test" : `${e.tests.length} full practice tests`;
+  return {
+    id: e.id,
+    shortName: e.shortName,
+    fullName: scaled ? `Full-length ${e.fullName} with a ${e.composite.min} to ${e.composite.max} score estimate` : `Full-length ${e.fullName} practice, timed like the real exam`,
+    line: `${tests} · ${adaptive ? "adaptive modules · " : ""}skill drills for your phone · free`,
+  };
+}
 
 // Open Graph / Twitter card image for an exam landing page (/og/<examId>).
 // Lives outside /api/ so robots.txt does not block Google from fetching it.
@@ -22,7 +37,7 @@ export async function GET(
   // v1 registry exams and v2 exams (SAT) share one card layout.
   const exam = v1
     ? { id: v1.id, shortName: v1.shortName, fullName: v1.fullName, line: `${v1.testCount * v1.questionsPerTest} questions · ${v1.testCount} practice tests · no account needed` }
-    : { id: v2!.id, shortName: v2!.shortName, fullName: `Full-length ${v2!.fullName} with a ${v2!.composite.min} to ${v2!.composite.max} score estimate`, line: `Timed, adaptive modules · skill drills for your phone · free` };
+    : v2Card(v2!);
 
   const tigerPath = join(process.cwd(), "public", getTigerAsset(exam.id, 3).slice(1));
   const tigerData = await readFile(tigerPath);

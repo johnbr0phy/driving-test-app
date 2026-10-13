@@ -21,6 +21,7 @@ import { useStore } from "@/store/useStore";
 import { trackFunnelStep } from "@/lib/funnel";
 import { WebViewGoogleWarning } from "@/components/WebViewGoogleWarning";
 import { useIsNativeApp } from "@/hooks/useIsNativeApp";
+import { examNameForPath } from "@/hooks/useThemePath";
 import { auth, db } from "@/lib/firebase";
 import { doc, getDoc, setDoc, serverTimestamp } from "firebase/firestore";
 
@@ -77,6 +78,8 @@ function SignupPageContent() {
 
   // Check for redirect param (e.g. /signup?redirect=/schools/create)
   const redirectTo = searchParams.get("redirect");
+  // Exam pages are English-only, so their copy is not in i18n
+  const redirectExamName = examNameForPath(redirectTo);
 
   const [selectedState, setSelectedState] = useState<string | null>(preselectedState);
 
@@ -307,7 +310,9 @@ function SignupPageContent() {
           <CardDescription className="text-center">
             {guestHasState
               ? t("signup.createFreeAccountCloud")
-              : t("signup.signUpToStart")}
+              : redirectExamName
+                ? `Sign up free to save your progress on the ${redirectExamName}`
+                : t("signup.signUpToStart")}
           </CardDescription>
         </CardHeader>
         <CardContent>

@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useThemePath } from "@/hooks/useThemePath";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { states } from "@/data/states";
 import { isViState } from "@/data/viStates";
@@ -27,11 +28,12 @@ const popularStates = popularStateSlugs
 export function Footer() {
   const { t, language, setLanguage } = useTranslation();
   const pathname = usePathname();
+  const themePath = useThemePath();
   const isEs = language === "es";
   const isVi = language === "vi";
   const isKo = language === "ko";
-  const v1Exam = getExamByPath(pathname);
-  const v2Exam = getExamV2ByPath(pathname);
+  const v1Exam = getExamByPath(themePath);
+  const v2Exam = getExamV2ByPath(themePath);
   const exam = v1Exam ?? (v2Exam ? { id: v2Exam.id } : undefined);
   // Non-DMV exams share the compact footer (no state links, no language toggle).
   const isAltExam = !!exam;

@@ -1,6 +1,6 @@
 "use client";
 
-import { usePathname } from "next/navigation";
+import { useThemePath } from "@/hooks/useThemePath";
 import { Header } from "@/components/Header";
 import { CDLHeader } from "@/components/CDLHeader";
 import { TestThemeProvider } from "@/contexts/TestThemeContext";
@@ -9,7 +9,7 @@ import { V2Header } from "@/components/v2/V2Header";
 import { getExamV2ByPath } from "@/lib/v2/registry";
 
 export function HeaderSwitch() {
-  const pathname = usePathname();
+  const pathname = useThemePath();
   const exam = getExamByPath(pathname);
   const examV2 = getExamV2ByPath(pathname);
 

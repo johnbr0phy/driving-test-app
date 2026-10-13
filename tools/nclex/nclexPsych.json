@@ -1,0 +1,342 @@
+[
+  {
+    "domain": "nclexPsych",
+    "test": 1,
+    "skill": "Suicide assessment",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client whose wife died 2 months ago says, \"I don't see the point of going on anymore.\" Which response by the nurse is best?",
+    "options": [
+      "\"Things will get easier as time goes by.\"",
+      "\"Your children still need you so much.\"",
+      "\"Are you thinking of ending your life?\"",
+      "\"Why do you feel there is no point now?\""
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A statement of hopelessness calls for a direct question about suicidal thoughts, which does not plant the idea and opens the door to a safety assessment. False reassurance and \"why\" questions block communication and leave the risk unassessed."
+  },
+  {
+    "domain": "nclexPsych",
+    "test": 1,
+    "skill": "Alcohol withdrawal",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "Nurses' notes, 2200: Last drink 36 hours ago per spouse. Tremulous and diaphoretic. BP 168/98 mm Hg, HR 118 beats/min, T 100.4 F. Picking at the sheets and says bugs are crawling on the wall.",
+    "stem": "A client admitted for a fractured femur has a history of daily heavy drinking. Which action should the nurse take first?",
+    "options": [
+      "Give the prescribed lorazepam",
+      "Explain the bugs are not real",
+      "Obtain a urine drug screen",
+      "Encourage oral fluids and rest"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Rising vital signs, fever, tremor and visual hallucinations at 36 hours show worsening withdrawal that can progress to seizures or delirium tremens, so the prescribed benzodiazepine comes first. Gentle reality orientation helps but does not treat the physiological danger."
+  },
+  {
+    "domain": "nclexPsych",
+    "test": 1,
+    "skill": "Opioid withdrawal",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "A client who uses heroin daily has had no opioids for 18 hours. Which findings indicate opioid withdrawal? Select all that apply.",
+    "options": [
+      "Pinpoint pupils",
+      "Frequent yawning",
+      "Dilated pupils",
+      "Slow, shallow breathing",
+      "Gooseflesh on the arms"
+    ],
+    "correct": [
+      1,
+      2,
+      4
+    ],
+    "explanation": "Yawning, dilated pupils and piloerection are classic signs of opioid withdrawal. Pinpoint pupils and slow, shallow breathing are signs of opioid intoxication, not withdrawal."
+  },
+  {
+    "domain": "nclexPsych",
+    "test": 1,
+    "skill": "Hallucinations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client with schizophrenia stares at an empty corner and says, \"Do you hear them too? They're laughing at me.\" Which response by the nurse is best?",
+    "options": [
+      "\"Yes, I hear them. What are they saying?\"",
+      "\"Why would they be laughing at you?\"",
+      "\"Try to ignore them and watch TV.\"",
+      "\"I don't hear them, but you look scared.\""
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The nurse presents reality without arguing and acknowledges the feeling behind the experience. Agreeing reinforces the hallucination, \"why\" questions ask for an explanation the client cannot give, and telling the client to ignore the voices dismisses them."
+  },
+  {
+    "domain": "nclexPsych",
+    "test": 1,
+    "skill": "Child abuse signs",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The nurse assesses a 2-year-old brought to the emergency department after a fall. Which finding is most suggestive of physical abuse?",
+    "options": [
+      "Bruising over both shins",
+      "Loop-shaped marks on back",
+      "Scraped palms and knees",
+      "Small bump on the forehead"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Patterned loop marks suggest a cord or belt, and the back is not a typical site for accidental injury. Bruised shins, scraped palms and knees and forehead bumps are common accidental injuries in a toddler who is learning to run."
+  },
+  {
+    "domain": "nclexPsych",
+    "test": 1,
+    "skill": "Suicide warning signs",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "Nurses' notes:\nDay 1: Withdrawn, flat affect, stays in bed most of the day.\nDay 12: Smiling and energetic. Gave her watch and family photos to her sister. Says, \"Everything is settled now.\"",
+    "stem": "The nurse reviews the record of a client with major depression who began sertraline 12 days ago. Which action should the nurse take?",
+    "options": [
+      "Document improved mood and energy",
+      "Ask directly about a plan for suicide",
+      "Encourage group activity attendance",
+      "Begin discharge teaching with the sister"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A sudden calm, giving away valued belongings and \"everything is settled\" after early antidepressant therapy are warning signs that the client may have a suicide plan and the energy to carry it out. Recording this as improvement misses the risk."
+  },
+  {
+    "domain": "nclexPsych",
+    "test": 1,
+    "skill": "Acute mania",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A client in an acute manic episode is pacing the unit and talking rapidly. Which activity should the nurse suggest?",
+    "options": [
+      "A team volleyball tournament",
+      "Card game in the dayroom",
+      "Reading a novel quietly",
+      "Walking with a staff member"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A noncompetitive physical activity with one staff member uses excess energy with little stimulation. Team and competitive games overstimulate, and a client in acute mania cannot concentrate on a novel."
+  },
+  {
+    "domain": "nclexPsych",
+    "test": 1,
+    "skill": "Normal grief",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client whose spouse died 3 weeks ago reports crying daily, poor sleep and sometimes hearing the spouse's voice at night. How should the nurse interpret these findings?",
+    "options": [
+      "Normal, uncomplicated grief",
+      "New-onset psychotic disorder",
+      "Prolonged, complicated grief",
+      "Major depressive episode"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Sadness, sleep changes and briefly sensing or hearing the deceased are common in the early weeks of grief. Prolonged grief is not considered until symptoms persist about a year in adults, and the voice here does not make the client psychotic."
+  },
+  {
+    "domain": "nclexPsych",
+    "test": 2,
+    "skill": "Therapeutic responses",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A client just diagnosed with cancer says, \"I don't know how I'm going to tell my kids.\" Which response by the nurse is best?",
+    "options": [
+      "\"Children cope better than adults expect.\"",
+      "\"It may be best to wait until treatment ends.\"",
+      "\"What worries you most about telling them?\"",
+      "\"Your HCP can tell them for you if you like.\""
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An open-ended question invites the client to explore the concern. The other replies reassure, advise or take over the task without learning what the client fears."
+  },
+  {
+    "domain": "nclexPsych",
+    "test": 2,
+    "skill": "Panic attack care",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "A client is having a panic attack in the clinic waiting room. Which actions should the nurse take? Select all that apply.",
+    "options": [
+      "Stay with the client",
+      "Use short, simple sentences",
+      "Teach new coping techniques",
+      "Move to a quiet, dim area",
+      "Ask what set off the attack"
+    ],
+    "correct": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "During severe anxiety the nurse stays, speaks in short calm statements and reduces stimulation. A client in panic cannot learn new skills or analyze triggers; those wait until anxiety has eased."
+  },
+  {
+    "domain": "nclexPsych",
+    "test": 2,
+    "skill": "Delirium vs dementia",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "Nurses' notes:\nAdmission: Alert, oriented x3, calm, follows the conversation.\nPostop day 2, 0200: Pulling at IV, thinks the year is 1975, loses track mid-sentence.\nPostop day 2, 1000: Calmer, answers most questions correctly.",
+    "stem": "An 82-year-old client is 2 days post hip repair. Which finding most strongly suggests delirium rather than dementia?",
+    "options": [
+      "Age older than 80 years",
+      "Pulling at the IV line",
+      "Abrupt onset after surgery",
+      "Disoriented to the current year"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Delirium has an acute onset and fluctuating attention, while dementia develops over months to years. Disorientation and pulling at lines occur in both, and age is a risk factor rather than a distinguishing feature."
+  },
+  {
+    "domain": "nclexPsych",
+    "test": 2,
+    "skill": "De-escalation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client on the mental health unit is pacing, shouting and clenching both fists but has not hit anyone. Which action should the nurse take first?",
+    "options": [
+      "Speak calmly and offer choices",
+      "Apply restraints until calm",
+      "Give the PRN IM haloperidol",
+      "Leave the client alone to calm"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Verbal de-escalation is the least restrictive intervention and comes first when the client is escalating but not yet violent. Medication and restraints are used only if less restrictive measures fail, and leaving the client removes support and monitoring."
+  },
+  {
+    "domain": "nclexPsych",
+    "test": 2,
+    "skill": "Language access",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A client who speaks only Vietnamese is having a mental health assessment through a qualified medical interpreter. Which action by the nurse is appropriate?",
+    "options": [
+      "Face the interpreter when asking",
+      "Ask the interpreter to summarize replies",
+      "Have the client's adult son interpret",
+      "Face and speak directly to the client"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The nurse looks at and speaks to the client in the first person, and the interpreter translates everything word for word. A summary loses the client's own words, which matter in a mental status assessment, and a family member may filter answers about mood, safety or substance use."
+  },
+  {
+    "domain": "nclexPsych",
+    "test": 2,
+    "skill": "Partner violence",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "A client in the emergency department has bruises on the upper arms and says a partner \"gets rough sometimes.\" Which actions are appropriate? Select all that apply.",
+    "options": [
+      "Offer a hotline number discreetly",
+      "Interview the client privately",
+      "Ask directly about feeling safe",
+      "Insist the client leave today",
+      "Document injuries on a body map"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "explanation": "Private interview, direct safety questions, discreet resources and precise documentation support the client. Insisting the client leave removes the client's choice, and leaving is often the most dangerous time, so safety planning is preferred."
+  },
+  {
+    "domain": "nclexPsych",
+    "test": 2,
+    "skill": "OCD rituals",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client admitted with obsessive-compulsive disorder washes hands for hours each day. Which approach should the nurse use at first?",
+    "options": [
+      "Stop all rituals on day one",
+      "Allow time for the rituals",
+      "Lock the bathroom after meals",
+      "Explain rituals are irrational"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Rituals relieve severe anxiety, so early in care the nurse allows time for them and then limits them gradually with the client. Abruptly stopping or blocking them raises anxiety, and the client usually already knows the rituals are excessive."
+  },
+  {
+    "domain": "nclexPsych",
+    "test": 2,
+    "skill": "Child neglect",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "4-year-old at a clinic visit: weight below the 3rd percentile, down from the 50th a year ago. Untreated dental caries, unbathed with a severe untreated rash, no immunizations since age 1. Parent missed the last three appointments.",
+    "stem": "Based on the findings, which action is required of the nurse?",
+    "options": [
+      "Gather proof before reporting",
+      "Report suspected neglect to CPS",
+      "Ask the parent before reporting",
+      "Refer the family to a food bank"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Nurses are mandated reporters and must report a reasonable suspicion of neglect; proof and parental permission are not required. A food bank referral may help but does not meet the legal duty to report."
+  },
+  {
+    "domain": "nclexPsych",
+    "test": 0,
+    "skill": "Suicide risk factors",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The nurse screens several clients for suicide risk. Which client is at highest risk?",
+    "options": [
+      "Woman, 35, with a supportive spouse",
+      "Teen, 16, who failed a math test",
+      "Man, 45, with new type 2 diabetes",
+      "Man, 74, widowed, keeps a handgun"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Older age, male sex, the loss of a spouse and access to a firearm are major risk factors combined in one client. The others have a single minor stressor or protective factors."
+  },
+  {
+    "domain": "nclexPsych",
+    "test": 0,
+    "skill": "Sundowning care",
+    "difficulty": 1,
+    "format": "multi",
+    "stem": "A client with dementia becomes agitated every evening. Which interventions should the nurse include in the plan? Select all that apply.",
+    "options": [
+      "Correct false beliefs firmly",
+      "Keep the same daily routine",
+      "Schedule baths for late evening",
+      "Open blinds during the day",
+      "Add a busy evening group"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "explanation": "A predictable routine and daytime light exposure help regulate the sleep cycle and reduce evening agitation. Arguing with false beliefs, late-evening baths and busy evening activities add stress when the client is least able to cope."
+  }
+]

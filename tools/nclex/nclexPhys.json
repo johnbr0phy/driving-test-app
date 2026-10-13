@@ -1,0 +1,535 @@
+[
+  {
+    "domain": "nclexPhys",
+    "test": 1,
+    "skill": "ABG interpretation",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "| ABG | Result |\n|---|---|\n| pH | 7.30 |\n| PaCO2 | 58 mm Hg |\n| HCO3 | 26 mEq/L |\n| PaO2 | 70 mm Hg |",
+    "stem": "A client receiving morphine by PCA after surgery has a respiratory rate of 8 breaths/min. Which interpretation of the arterial blood gas is correct?",
+    "options": [
+      "Uncompensated respiratory acidosis",
+      "Partly compensated respiratory acidosis",
+      "Uncompensated metabolic acidosis",
+      "Uncompensated respiratory alkalosis"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The pH is low and the PaCO2 is high, so the cause is respiratory acidosis from hypoventilation, and the normal bicarbonate shows the kidneys have not yet compensated. Partial compensation would show a bicarbonate above 26 mEq/L."
+  },
+  {
+    "domain": "nclexPhys",
+    "test": 1,
+    "skill": "Heart failure worsening",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A client with heart failure is being treated at home. Which finding indicates the condition is worsening?",
+    "options": [
+      "Weight up 2 kg in 2 days",
+      "Heart rate 78 beats/min",
+      "Dry mouth after furosemide",
+      "Trace ankle edema at bedtime"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Rapid weight gain reflects fluid retention, and a gain of about 1 kg in a day or 2 kg in a week should be reported. Trace ankle edema at the end of the day can be a stable baseline, and a heart rate of 78 is normal."
+  },
+  {
+    "domain": "nclexPhys",
+    "test": 1,
+    "skill": "Acute coronary syndrome",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client arrives at the emergency department with crushing chest pain. SpO2 is 96% on room air. Which action should the nurse take first?",
+    "options": [
+      "Draw a serum troponin",
+      "Obtain a 12-lead ECG",
+      "Apply oxygen at 4 L/min",
+      "Prepare for a chest x-ray"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A 12-lead ECG within 10 minutes of arrival identifies ST-elevation MI, which determines urgent reperfusion. Oxygen is not needed with an SpO2 of 96%, and troponin results take longer and do not replace the ECG."
+  },
+  {
+    "domain": "nclexPhys",
+    "test": 1,
+    "skill": "DKA findings",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which findings would the nurse expect in a client with diabetic ketoacidosis? Select all that apply.",
+    "options": [
+      "Deep, rapid respirations",
+      "Glucose 920 mg/dL, no ketones",
+      "Fruity odor on the breath",
+      "Bicarbonate 12 mEq/L",
+      "Heart rate 50 beats/min"
+    ],
+    "correct": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "Kussmaul breathing, a fruity breath odor and a low bicarbonate reflect ketone-driven metabolic acidosis. Very high glucose without ketones describes hyperosmolar hyperglycemic state, and dehydration in DKA causes tachycardia, not bradycardia."
+  },
+  {
+    "domain": "nclexPhys",
+    "test": 1,
+    "skill": "Increased ICP",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "| Time | BP | HR | RR | GCS |\n|---|---|---|---|---|\n| 1600 | 132/78 | 84 | 16 | 14 |\n| 1800 | 158/70 | 64 | 12, irregular | 11 |\n| 2000 | 176/62 | 52 | 10, irregular | 9 |",
+    "stem": "The nurse reviews neurologic checks for a client admitted after a fall with a head injury. No opioids have been given. Which problem do these findings most likely indicate?",
+    "options": [
+      "Hypovolemic shock",
+      "Rising intracranial pressure",
+      "Opioid oversedation",
+      "Expected course after injury"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Rising systolic pressure with a widening pulse pressure, a slowing pulse and irregular breathing (Cushing triad) with a falling GCS signal increasing intracranial pressure. Hypovolemic shock causes hypotension and tachycardia instead."
+  },
+  {
+    "domain": "nclexPhys",
+    "test": 1,
+    "skill": "Acute stroke",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A client has sudden right-sided facial droop and slurred speech. Which information is most important for the nurse to obtain first?",
+    "options": [
+      "Time of the last meal",
+      "Time last known well",
+      "Family history of stroke",
+      "Smoking history in pack-years"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The time the client was last known to be normal determines eligibility for thrombolytic and clot-retrieval therapy, so it is gathered immediately. Family and smoking history are risk factors that do not change acute treatment."
+  },
+  {
+    "domain": "nclexPhys",
+    "test": 1,
+    "skill": "Septic shock",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "A client with pneumonia has received a 30 mL/kg fluid bolus. Which findings support a diagnosis of septic shock? Select all that apply.",
+    "options": [
+      "MAP 58 mm Hg after fluids",
+      "Lactate 4.6 mmol/L",
+      "Capillary refill 2 seconds",
+      "Urine output 15 mL/hr",
+      "New confusion"
+    ],
+    "correct": [
+      0,
+      1,
+      3,
+      4
+    ],
+    "explanation": "Septic shock is hypotension needing vasopressors to keep MAP at 65 or above despite fluids, with signs of poor perfusion such as high lactate, low urine output and altered mental status. A capillary refill of 2 seconds is normal."
+  },
+  {
+    "domain": "nclexPhys",
+    "test": 1,
+    "skill": "Burn fluid resuscitation",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A 70 kg adult has partial- and full-thickness burns over 40% of the body. The HCP prescribes lactated Ringer's at 4 mL/kg/%TBSA over 24 hours using the Parkland formula. How much fluid should the client receive in the first 8 hours after the burn?",
+    "options": [
+      "2,800 mL",
+      "5,600 mL",
+      "8,400 mL",
+      "11,200 mL"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The 24-hour total is 4 x 70 x 40 = 11,200 mL, and half of it, 5,600 mL, is given in the first 8 hours from the time of the burn. 11,200 mL is the full-day total, not the first 8 hours."
+  },
+  {
+    "domain": "nclexPhys",
+    "test": 1,
+    "skill": "Chest tube air leak",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client has a chest tube to suction for a pneumothorax. The nurse notes continuous bubbling in the water seal chamber. Which action should the nurse take first?",
+    "options": [
+      "Increase suction to -40 cm H2O",
+      "Check tubing connections for leaks",
+      "Strip the tubing toward the drain",
+      "Document it as an expected finding"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Continuous bubbling in the water seal chamber signals an air leak, which is most often a loose connection in the system, so the nurse checks from the dressing to the drain. Intermittent bubbling with exhalation or coughing is expected, but continuous bubbling is not."
+  },
+  {
+    "domain": "nclexPhys",
+    "test": 1,
+    "skill": "Hyperkalemia on ECG",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A client has a serum potassium of 6.8 mEq/L. Which finding would the nurse expect on the cardiac monitor?",
+    "options": [
+      "Prominent U waves",
+      "Flattened T waves",
+      "Tall, peaked T waves",
+      "Positive Trousseau sign"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Hyperkalemia produces tall, peaked T waves and can progress to a widened QRS and asystole. Prominent U waves and flat T waves are signs of hypokalemia, and Trousseau sign reflects hypocalcemia."
+  },
+  {
+    "domain": "nclexPhys",
+    "test": 1,
+    "skill": "Ventilator alarms",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "0300: High-pressure alarm sounding on the ventilator. Client coughing and restless. Coarse rhonchi over the trachea and both upper lobes. SpO2 91%, down from 96%.",
+    "stem": "The nurse responds to a ventilator alarm. Which action should the nurse take first?",
+    "options": [
+      "Check the circuit for disconnection",
+      "Increase the set tidal volume",
+      "Suction the endotracheal tube",
+      "Silence the alarm and recheck"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A high-pressure alarm with coughing and coarse rhonchi points to secretions blocking the airway, which suctioning clears. A disconnection causes a low-pressure alarm, and raising the tidal volume would raise airway pressure further."
+  },
+  {
+    "domain": "nclexPhys",
+    "test": 2,
+    "skill": "ABG with NG suction",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "| ABG | Result |\n|---|---|\n| pH | 7.50 |\n| PaCO2 | 46 mm Hg |\n| HCO3 | 32 mEq/L |",
+    "stem": "A client has had nasogastric suction for 3 days after bowel surgery. Which interpretation of the arterial blood gas is correct?",
+    "options": [
+      "Uncompensated metabolic alkalosis",
+      "Partly compensated metabolic alkalosis",
+      "Partly compensated respiratory acidosis",
+      "Uncompensated respiratory alkalosis"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The high pH and high bicarbonate show metabolic alkalosis from loss of gastric acid, and the PaCO2 above 45 shows the lungs retaining CO2 to compensate while the pH is still abnormal. Without compensation the PaCO2 would still be in the 35 to 45 range."
+  },
+  {
+    "domain": "nclexPhys",
+    "test": 2,
+    "skill": "Hypovolemic shock",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client with an upper GI bleed has a BP of 78/40 mm Hg and a heart rate of 128 beats/min. The airway is patent and SpO2 is 95% on oxygen. Which action should the nurse take first?",
+    "options": [
+      "Place in steep Trendelenburg",
+      "Insert two large-bore IV catheters",
+      "Insert an indwelling urinary catheter",
+      "Offer oral fluids as tolerated"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "With the airway and breathing secure, restoring circulating volume is the priority, and that requires large-bore IV access for fluids and blood. Steep Trendelenburg is no longer recommended because it impairs breathing and does little for perfusion."
+  },
+  {
+    "domain": "nclexPhys",
+    "test": 2,
+    "skill": "COPD oxygen target",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A client with COPD and chronic CO2 retention is admitted with an exacerbation. Which SpO2 range should the nurse aim for when adjusting oxygen?",
+    "options": [
+      "94% to 98%",
+      "88% to 92%",
+      "85% to 88%",
+      "96% to 100%"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A target of 88% to 92% gives adequate oxygenation while limiting the risk of worsening CO2 retention in clients who retain CO2. The 94% to 98% target applies to most other adults."
+  },
+  {
+    "domain": "nclexPhys",
+    "test": 2,
+    "skill": "SIADH findings",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which findings would the nurse expect in a client with syndrome of inappropriate antidiuretic hormone (SIADH)? Select all that apply.",
+    "options": [
+      "Serum sodium 124 mEq/L",
+      "Urine specific gravity 1.032",
+      "Urine output 6 L per day",
+      "Weight gain with no edema",
+      "Serum osmolality 310 mOsm/kg"
+    ],
+    "correct": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Excess ADH retains free water, causing dilutional hyponatremia, concentrated urine and weight gain without edema. Large volumes of dilute urine describe diabetes insipidus, and serum osmolality is low, not high, in SIADH."
+  },
+  {
+    "domain": "nclexPhys",
+    "test": 2,
+    "skill": "Stable SVT",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A client has a regular narrow-complex tachycardia at 190 beats/min. BP is 118/76 mm Hg, and the client is alert and reports palpitations. Which intervention should the nurse anticipate first?",
+    "options": [
+      "Synchronized cardioversion",
+      "Vagal maneuvers",
+      "Defibrillation at 200 joules",
+      "Atropine 1 mg IV"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Stable supraventricular tachycardia is treated first with vagal maneuvers, then adenosine if they fail. Synchronized cardioversion is for a client who is unstable, with hypotension, chest pain or altered mental status."
+  },
+  {
+    "domain": "nclexPhys",
+    "test": 2,
+    "skill": "Fluid volume excess",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "1400: IV running at 150 mL/hr since surgery. Intake exceeds output by 3,200 mL over 24 hours.\n1415: Crackles in both lungs, neck veins distended at 45 degrees. SpO2 89%, RR 26.",
+    "stem": "The nurse reviews notes on a 78-year-old client receiving IV fluids after surgery. Which problem do the findings best support?",
+    "options": [
+      "Fluid volume excess",
+      "Community-acquired pneumonia",
+      "Pulmonary embolism",
+      "Hypovolemia"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Bilateral crackles, distended neck veins and a large positive fluid balance in an older adult on continuous IV fluids point to fluid overload. Pneumonia would not explain the neck vein distention or the fluid balance."
+  },
+  {
+    "domain": "nclexPhys",
+    "test": 2,
+    "skill": "Managing raised ICP",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which actions should the nurse include for a client with increased intracranial pressure? Select all that apply.",
+    "options": [
+      "Cluster all care at once",
+      "Elevate the HOB to 30 degrees",
+      "Suction often for 30 seconds",
+      "Keep the head in midline",
+      "Avoid extreme hip flexion"
+    ],
+    "correct": [
+      1,
+      3,
+      4
+    ],
+    "explanation": "Raising the head of the bed, keeping the head midline and avoiding sharp hip flexion all improve venous drainage from the brain. Care should be spaced out rather than clustered, and suctioning is done only as needed and limited to about 10 seconds because it raises ICP."
+  },
+  {
+    "domain": "nclexPhys",
+    "test": 2,
+    "skill": "Sepsis bundle",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client with suspected sepsis has a new prescription for IV antibiotics and IV fluids. Which action should the nurse take first?",
+    "options": [
+      "Give the IV antibiotic",
+      "Draw blood cultures",
+      "Start norepinephrine",
+      "Insert a urinary catheter"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Blood cultures are drawn before the first antibiotic dose so the organism can be identified, as long as this does not delay the antibiotic. Norepinephrine is added only if hypotension persists after fluids."
+  },
+  {
+    "domain": "nclexPhys",
+    "test": 2,
+    "skill": "Inhalation injury",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A client rescued from a house fire has singed nasal hair and facial burns. Which finding requires immediate action?",
+    "options": [
+      "Pain rated 8 of 10",
+      "Blistered forearms",
+      "Hoarseness and stridor",
+      "Heart rate 108 beats/min"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Hoarseness and stridor signal airway edema from inhalation injury, and early intubation may be needed before the airway closes. Pain, blisters and a mildly elevated heart rate matter but do not threaten the airway."
+  },
+  {
+    "domain": "nclexPhys",
+    "test": 2,
+    "skill": "Tension pneumothorax",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "Which findings would the nurse expect in a client with a tension pneumothorax? Select all that apply.",
+    "options": [
+      "Trachea shifted to one side",
+      "Bilateral expiratory wheezes",
+      "Absent breath sounds on one side",
+      "Distended neck veins",
+      "Falling blood pressure"
+    ],
+    "correct": [
+      0,
+      2,
+      3,
+      4
+    ],
+    "explanation": "Trapped air collapses one lung and pushes the mediastinum aside, shifting the trachea, silencing breath sounds on that side and impeding venous return, which causes neck vein distention and hypotension. Bilateral wheezes point to bronchospasm, not pneumothorax."
+  },
+  {
+    "domain": "nclexPhys",
+    "test": 2,
+    "skill": "Acute kidney injury",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client with oliguric acute kidney injury has new lab results. Which result is the priority for the nurse to report?",
+    "options": [
+      "BUN 48 mg/dL",
+      "Creatinine 3.2 mg/dL",
+      "Potassium 6.4 mEq/L",
+      "Phosphorus 5.0 mg/dL"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A potassium of 6.4 mEq/L can cause life-threatening dysrhythmias and needs urgent treatment. The raised BUN, creatinine and phosphorus are expected in acute kidney injury and are not immediately life-threatening."
+  },
+  {
+    "domain": "nclexPhys",
+    "test": 0,
+    "skill": "ABG with anxiety",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "| ABG | Result |\n|---|---|\n| pH | 7.49 |\n| PaCO2 | 30 mm Hg |\n| HCO3 | 23 mEq/L |",
+    "stem": "A client having a panic attack is breathing rapidly. Which interpretation of the arterial blood gas is correct?",
+    "options": [
+      "Uncompensated metabolic alkalosis",
+      "Uncompensated respiratory alkalosis",
+      "Partly compensated metabolic acidosis",
+      "Partly compensated respiratory acidosis"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Rapid breathing blows off CO2, so the high pH with a low PaCO2 is respiratory alkalosis, and the normal bicarbonate shows no compensation yet. Metabolic alkalosis would show a bicarbonate above 26 mEq/L."
+  },
+  {
+    "domain": "nclexPhys",
+    "test": 0,
+    "skill": "Left-sided heart failure",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which findings would the nurse expect in a client with left-sided heart failure? Select all that apply.",
+    "options": [
+      "Jugular vein distention",
+      "Crackles in both lung bases",
+      "Dependent leg edema",
+      "Sleeps on three pillows",
+      "Enlarged, tender liver"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "explanation": "Left-sided failure backs fluid into the lungs, causing crackles and orthopnea that make the client sleep propped up. Neck vein distention, dependent edema and liver enlargement reflect right-sided failure with systemic venous congestion."
+  },
+  {
+    "domain": "nclexPhys",
+    "test": 0,
+    "skill": "Symptomatic bradycardia",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "0900: Monitor shows sinus bradycardia at 38 beats/min. BP 78/44 mm Hg.\n0905: Client reports dizziness, skin cool and diaphoretic. Alert and breathing without distress.",
+    "stem": "The nurse reviews telemetry notes. Which medication should the nurse anticipate the HCP will prescribe first?",
+    "options": [
+      "Adenosine 6 mg rapid IV push",
+      "Atropine 1 mg IV push",
+      "Amiodarone 150 mg IV",
+      "Metoprolol 5 mg IV"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Bradycardia with hypotension, dizziness and diaphoresis is symptomatic, and atropine 1 mg IV is the first-line drug. Adenosine treats stable narrow-complex tachycardia, and metoprolol would slow the heart further."
+  },
+  {
+    "domain": "nclexPhys",
+    "test": 0,
+    "skill": "DKA potassium",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client with diabetic ketoacidosis has a prescription for a continuous regular insulin infusion. Which lab result must the nurse check before starting it?",
+    "options": [
+      "Serum sodium",
+      "Serum potassium",
+      "Serum phosphate",
+      "Hemoglobin A1c"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Insulin drives potassium into cells, so a low starting potassium (below 3.3 mEq/L) must be corrected before insulin to prevent dangerous hypokalemia. Sodium and phosphate are monitored but do not hold the start of insulin."
+  },
+  {
+    "domain": "nclexPhys",
+    "test": 0,
+    "skill": "Anaphylaxis",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A client receiving an IV antibiotic develops hives, wheezing and a BP of 82/50 mm Hg. The nurse stops the infusion. Which action should the nurse take next?",
+    "options": [
+      "Give diphenhydramine IV",
+      "Give IM epinephrine in the thigh",
+      "Give albuterol by nebulizer",
+      "Give methylprednisolone IV"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Epinephrine IM in the lateral thigh is the first-line treatment for anaphylaxis because it reverses bronchospasm and hypotension. Antihistamines, bronchodilators and steroids are adjuncts and do not treat the shock."
+  },
+  {
+    "domain": "nclexPhys",
+    "test": 0,
+    "skill": "Right hemisphere stroke",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "Which findings would the nurse expect in a client with a stroke in the right cerebral hemisphere? Select all that apply.",
+    "options": [
+      "Expressive aphasia",
+      "Left-sided weakness",
+      "Ignores the left side of body",
+      "Right visual field loss",
+      "Impulsive, poor judgment"
+    ],
+    "correct": [
+      1,
+      2,
+      4
+    ],
+    "explanation": "A right hemisphere stroke causes left-sided weakness, left neglect and impulsive behavior with poor safety awareness. Expressive aphasia usually follows a left hemisphere stroke, and the visual field loss would be on the left, not the right."
+  }
+]

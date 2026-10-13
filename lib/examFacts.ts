@@ -309,6 +309,19 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the ATI TEAS 7 blueprint",
     source: { name: "ATI", url: "https://www.atitesting.com/teas" },
   },
+  nclex: {
+    answer:
+      "The NCLEX-RN is the licensure exam for registered nurses in the US and Canada. It is computerized adaptive: you answer 85 to 150 questions in up to five hours, the test stops once it is 95% certain you are above or below the passing standard, and you get a pass or fail, not a percent. Next Generation NCLEX formats include unfolding case studies and select all that apply items, and the 2026 test plan weights Management of Care (15 to 21%) and Pharmacological and Parenteral Therapies (13 to 19%) the most.",
+    rows: [
+      { label: "Questions", value: "85 to 150 (15 unscored)" },
+      { label: "Time", value: "Up to 5 hours" },
+      { label: "Format", value: "Computerized adaptive, no going back" },
+      { label: "Result", value: "Pass or fail" },
+      { label: "Developed by", value: "NCSBN (given at Pearson VUE centers)" },
+    ],
+    basedOn: "the NCSBN 2026 NCLEX-RN Test Plan",
+    source: { name: "NCSBN", url: "https://www.nclex.com" },
+  },
   hesi: {
     answer:
       "The HESI A2 is a nursing school entrance exam with separately scored sections: math, reading, vocabulary, grammar, biology, chemistry, anatomy and physiology, and physics. Programs choose which sections you take; a full battery takes about four hours. Most programs want 75% or higher on each required section.",

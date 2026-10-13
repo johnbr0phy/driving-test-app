@@ -1,0 +1,345 @@
+[
+  {
+    "domain": "nclexHealth",
+    "test": 1,
+    "skill": "Postpartum fundus",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "| Time | BP | HR | Fundus | Lochia |\n|---|---|---|---|---|\n| 1300 | 118/74 | 80 | Firm, midline, at umbilicus | Moderate rubra |\n| 1500 | 120/76 | 84 | Firm, 2 cm above umbilicus, deviated right | Moderate rubra |",
+    "stem": "A client is 2 hours postpartum after a vaginal birth. Based on the assessment, which action should the nurse take first?",
+    "options": [
+      "Massage the fundus vigorously",
+      "Increase the IV fluid rate",
+      "Assist the client to void",
+      "Notify the HCP of bleeding"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A firm fundus that is above the umbilicus and displaced to one side points to a full bladder, so emptying the bladder comes first. Massage is for a boggy fundus, and this one is firm."
+  },
+  {
+    "domain": "nclexHealth",
+    "test": 1,
+    "skill": "Infant milestones",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The nurse assesses a 12-month-old at a well-child visit. Which finding requires follow-up?",
+    "options": [
+      "Cannot sit without support",
+      "Not yet walking alone",
+      "Says only two or three words",
+      "Cries when the parent leaves"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Most infants sit without support by about 9 months, so a 12-month-old who cannot sit needs a developmental evaluation. Walking alone can normally begin as late as 15 months, and a few words and separation anxiety are expected at this age."
+  },
+  {
+    "domain": "nclexHealth",
+    "test": 1,
+    "skill": "Breastfeeding adequacy",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "The nurse teaches the parent of a 5-day-old breastfed newborn how to tell whether the infant is feeding well. Which findings indicate adequate intake? Select all that apply.",
+    "options": [
+      "Feeds every 5 to 6 hours",
+      "Six or more wet diapers daily",
+      "Weight 12% below birth weight",
+      "Audible swallowing at feeds",
+      "Yellow, seedy stools"
+    ],
+    "correct": [
+      1,
+      3,
+      4
+    ],
+    "explanation": "Six or more wet diapers, audible swallowing and yellow seedy stools by day 5 show good milk transfer. Newborns should feed 8 to 12 times a day, not every 5 to 6 hours, and a loss over 10% of birth weight needs evaluation."
+  },
+  {
+    "domain": "nclexHealth",
+    "test": 1,
+    "skill": "Live vaccine safety",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Several clients are due for the measles, mumps and rubella (MMR) vaccine. For which client should the nurse withhold the vaccine and notify the HCP?",
+    "options": [
+      "Toddler with a cold and no fever",
+      "Adult who is breastfeeding",
+      "Child with an egg allergy",
+      "Adult who is 10 weeks pregnant"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "MMR is a live vaccine and is contraindicated in pregnancy. A mild illness without fever, breastfeeding and egg allergy are not reasons to withhold MMR."
+  },
+  {
+    "domain": "nclexHealth",
+    "test": 1,
+    "skill": "Normal aging changes",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "The nurse assesses a 78-year-old client at an annual wellness visit. Which findings are expected age-related changes? Select all that apply.",
+    "options": [
+      "Reduced skin elasticity",
+      "New confusion over 2 days",
+      "Needs more light to read",
+      "Resting heart rate of 44",
+      "Urinating 12 times daily"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "Loss of skin elasticity and needing more light to read are normal with aging. Confusion that develops over days suggests delirium, a heart rate of 44 is bradycardia, and urinating 12 times a day suggests infection or another disorder, so none of these should be dismissed as aging."
+  },
+  {
+    "domain": "nclexHealth",
+    "test": 1,
+    "skill": "Apgar scoring",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Newborn at 1 minute: heart rate 110 beats/min, slow irregular breathing with a weak cry, some flexion of the arms and legs, grimaces when the soles are flicked, body pink with blue hands and feet.",
+    "stem": "Based on the 1-minute assessment, what Apgar score should the nurse record?",
+    "options": [
+      "4",
+      "6",
+      "7",
+      "8"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Heart rate over 100 scores 2; slow, weak cry 1; some flexion 1; grimace 1; pink body with blue extremities 1, for a total of 6. A score of 7 would require one more point, such as active motion or a vigorous cry."
+  },
+  {
+    "domain": "nclexHealth",
+    "test": 1,
+    "skill": "Late decelerations",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A client in active labor is receiving an oxytocin infusion. The fetal monitor shows recurrent late decelerations with minimal variability. Which action should the nurse take first?",
+    "options": [
+      "Prepare for cesarean birth",
+      "Stop the oxytocin infusion",
+      "Apply oxygen at 2 L/min",
+      "Recheck the tracing in 15 min"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Late decelerations reflect uteroplacental insufficiency, and oxytocin increases contraction strength, so stopping it is the first step in intrauterine resuscitation. Low-flow oxygen does not address the cause, and cesarean birth is considered only if the pattern persists."
+  },
+  {
+    "domain": "nclexHealth",
+    "test": 1,
+    "skill": "Abdominal assessment",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The nurse is performing an abdominal assessment on an adult client. Which technique should the nurse perform first?",
+    "options": [
+      "Auscultate all four quadrants",
+      "Inspect the abdominal contour",
+      "Lightly palpate each quadrant",
+      "Percuss over the liver"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The abdomen is assessed in the order inspection, auscultation, percussion, palpation. Auscultation comes second, before touching the abdomen can alter bowel sounds."
+  },
+  {
+    "domain": "nclexHealth",
+    "test": 2,
+    "skill": "Adult screening",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "A 52-year-old client with average risk who has never smoked asks which screenings are recommended. Which screenings should the nurse include? Select all that apply.",
+    "options": [
+      "Colorectal cancer screening",
+      "Annual chest radiograph",
+      "Blood pressure measurement",
+      "One-time hepatitis C test",
+      "Yearly whole-body skin exam"
+    ],
+    "correct": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "Colorectal screening from age 45, periodic blood pressure checks and a one-time hepatitis C test for adults 18 to 79 are recommended. Chest x-rays are not a screening tool, and routine whole-body skin exams lack evidence for average-risk adults."
+  },
+  {
+    "domain": "nclexHealth",
+    "test": 2,
+    "skill": "Newborn vital signs",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The nurse assesses a newborn at 4 hours of age. Which finding should the nurse report to the HCP?",
+    "options": [
+      "Heart rate 140 beats/min",
+      "Bluish hands and feet",
+      "White papules on the nose",
+      "Respiratory rate 72/min"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A newborn respiratory rate above 60/min is tachypnea and needs evaluation. A heart rate of 140, acrocyanosis and milia are all normal findings in the first day."
+  },
+  {
+    "domain": "nclexHealth",
+    "test": 2,
+    "skill": "Pregnancy danger signs",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A client at 30 weeks of gestation calls the clinic. Which report requires immediate follow-up?",
+    "options": [
+      "Headache with blurred vision",
+      "Ankle swelling by evening",
+      "Heartburn after large meals",
+      "Occasional painless tightening"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Headache with visual changes can signal preeclampsia with severe features and needs prompt evaluation. Dependent ankle edema, heartburn and painless Braxton Hicks contractions are common in the third trimester."
+  },
+  {
+    "domain": "nclexHealth",
+    "test": 2,
+    "skill": "Rh immune globulin",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "| Test | Result |\n|---|---|\n| Client blood type | O negative |\n| Client indirect Coombs | Negative |\n| Newborn blood type | A positive |\n| Newborn direct Coombs | Negative |",
+    "stem": "The nurse reviews laboratory results for a client who gave birth yesterday. Which action is indicated?",
+    "options": [
+      "Give Rh immune globulin to the newborn",
+      "Withhold it since the Coombs is negative",
+      "Give Rh immune globulin to the client",
+      "No Rh immune globulin is needed"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An Rh-negative client who is not sensitized (negative indirect Coombs) and has an Rh-positive newborn should receive Rh immune globulin within 72 hours. The negative Coombs is the reason to give it, not to withhold it, and the medication is never given to the newborn."
+  },
+  {
+    "domain": "nclexHealth",
+    "test": 2,
+    "skill": "Toddler autonomy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The parent of a 2-year-old says the child has a tantrum every morning over choosing clothes. Which guidance should the nurse give?",
+    "options": [
+      "Dress the child before waking",
+      "Let the child choose any outfit freely",
+      "Offer two outfits to choose from",
+      "Ignore choices until age 4"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Toddlers are working on autonomy, and a limited choice between two acceptable options supports independence while keeping limits. Unlimited choice overwhelms a toddler and can lead to unsafe or unsuitable picks, and removing choice increases power struggles."
+  },
+  {
+    "domain": "nclexHealth",
+    "test": 2,
+    "skill": "True labor signs",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "A client at 39 weeks of gestation comes to the birthing unit with contractions. Which findings indicate true labor? Select all that apply.",
+    "options": [
+      "Progressive cervical dilation",
+      "Discomfort only in the groin",
+      "Contractions stronger with walking",
+      "Contractions ease after rest",
+      "Intervals growing shorter"
+    ],
+    "correct": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "True labor brings cervical change and regular contractions that grow closer and intensify with walking. Contractions that ease with rest and discomfort limited to the lower abdomen and groin are typical of false labor."
+  },
+  {
+    "domain": "nclexHealth",
+    "test": 2,
+    "skill": "DTaP contraindications",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A 4-month-old is due for the second DTaP dose. Which finding is a contraindication to giving the dose?",
+    "options": [
+      "Encephalopathy within 7 days of dose 1",
+      "Redness and swelling at the last site",
+      "Temperature of 100.2 F today",
+      "A sibling receiving chemotherapy"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Encephalopathy within 7 days of a previous pertussis-containing dose is a contraindication to further DTaP. Local reactions and a low-grade temperature are not reasons to withhold, and an immunocompromised sibling matters only for some live vaccines, not DTaP."
+  },
+  {
+    "domain": "nclexHealth",
+    "test": 2,
+    "skill": "Prediabetes screening",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "| Test | Result |\n|---|---|\n| BMI | 29 |\n| Blood pressure | 136/86 mm Hg |\n| Fasting glucose | 118 mg/dL |\n| Hemoglobin A1C | 5.4% |\n| Triglycerides | 140 mg/dL |",
+    "stem": "The nurse reviews screening results for a 45-year-old client. Which result falls in the prediabetes range?",
+    "options": [
+      "Hemoglobin A1C 5.4%",
+      "Blood pressure 136/86 mm Hg",
+      "Triglycerides 140 mg/dL",
+      "Fasting glucose 118 mg/dL"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A fasting glucose of 100 to 125 mg/dL is in the prediabetes range. An A1C of 5.4% is normal (prediabetes is 5.7% to 6.4%), and blood pressure and triglycerides are not used to define prediabetes."
+  },
+  {
+    "domain": "nclexHealth",
+    "test": 0,
+    "skill": "Testicular self-exam",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "A 17-year-old client asks the nurse how to perform a testicular self-exam. Which instructions are correct? Select all that apply.",
+    "options": [
+      "Examine after a warm shower",
+      "Begin the exams at age 40",
+      "Roll each testicle gently",
+      "Report any painless firm lump",
+      "Expect a soft cord behind each"
+    ],
+    "correct": [
+      0,
+      2,
+      3,
+      4
+    ],
+    "explanation": "Warm water relaxes the scrotum, each testicle is rolled between the thumb and fingers, a painless firm lump is the classic sign of testicular cancer, and the soft cordlike epididymis behind each testicle is normal. Testicular cancer is most common in ages 15 to 35, so waiting until 40 is wrong."
+  },
+  {
+    "domain": "nclexHealth",
+    "test": 0,
+    "skill": "Sun protection",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The nurse teaches a client about preventing skin cancer. Which statement indicates understanding?",
+    "options": [
+      "\"I use SPF 8 sunscreen on cloudy days.\"",
+      "\"I reapply it every 2 hours outdoors.\"",
+      "\"I skip sunscreen since my skin is darker.\"",
+      "\"One coat in the morning lasts all day.\""
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Broad-spectrum SPF 30 or higher should be reapplied about every 2 hours and after swimming or sweating. UV rays pass through clouds, darker skin still burns and develops skin cancer, and a single morning coat does not last all day."
+  }
+]

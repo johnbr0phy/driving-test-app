@@ -1,0 +1,346 @@
+[
+  {
+    "domain": "nclexComfort",
+    "test": 1,
+    "skill": "Cane use",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A client with weakness in the left leg is learning to walk with a single-point cane. Which statement indicates correct understanding?",
+    "options": [
+      "\"I'll move the cane with my right leg.\"",
+      "\"I'll hold the cane in my right hand.\"",
+      "\"I'll hold the cane in my left hand.\"",
+      "\"Going down stairs, I'll lead with my right.\""
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The cane is held on the stronger side (right) and advanced with the weaker leg so it shares that leg's load. Going down stairs, the cane and weaker leg lead, so leading with the stronger right leg is incorrect."
+  },
+  {
+    "domain": "nclexComfort",
+    "test": 1,
+    "skill": "Pressure injury prevention",
+    "difficulty": 2,
+    "format": "multi",
+    "passage": "Client, 82, 2 days after hip repair. Braden score 12. Incontinent of urine. Eats about half of each meal. Sacral skin intact with blanchable redness.",
+    "stem": "Which interventions should the nurse include in this client's plan of care? Select all that apply.",
+    "options": [
+      "Keep the head of bed at 45 degrees",
+      "Cleanse skin promptly after voids",
+      "Use a low-air-loss mattress",
+      "Turn at least every 2 hours",
+      "Massage the reddened sacral skin"
+    ],
+    "correct": [
+      1,
+      2,
+      3
+    ],
+    "explanation": "A Braden score of 12 is high risk, so the plan includes regular repositioning, a pressure redistribution surface and prompt cleansing of moisture. Massaging reddened skin damages tissue, and raising the head of the bed above 30 degrees increases sacral shear."
+  },
+  {
+    "domain": "nclexComfort",
+    "test": 1,
+    "skill": "Enteral feeding",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client receives a continuous nasogastric tube feeding. Which action best reduces the risk of aspiration?",
+    "options": [
+      "Use a larger-bore feeding tube",
+      "Add blue food dye to the formula",
+      "Hold feeding for any residual",
+      "Keep HOB at 30 to 45 degrees"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Elevating the head of the bed at least 30 degrees during continuous feeding is the main aspiration safeguard. Blue dye is no longer recommended, and holding feeds for any small residual interrupts nutrition without lowering risk."
+  },
+  {
+    "domain": "nclexComfort",
+    "test": 1,
+    "skill": "Constipation",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "An older adult on bed rest after a fall has not had a bowel movement in 3 days. Which intervention should the nurse include in the plan of care?",
+    "options": [
+      "Encourage a low-residue diet",
+      "Offer the bedpan only on request",
+      "Increase fluid and fiber intake",
+      "Keep the client flat in bed"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Fluid and fiber soften stool and add bulk, countering the slowed peristalsis of immobility. A low-residue diet reduces stool bulk and worsens constipation."
+  },
+  {
+    "domain": "nclexComfort",
+    "test": 1,
+    "skill": "Sleep promotion",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The nurse teaches sleep hygiene to a client with insomnia. Which statement indicates a need for further teaching?",
+    "options": [
+      "\"I'll get up at the same time each day.\"",
+      "\"I'll get out of bed if I can't sleep.\"",
+      "\"I'll watch TV in bed until I'm sleepy.\"",
+      "\"I'll stop drinking coffee after lunch.\""
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The bed should be linked only with sleep, and screen light delays sleep onset. A fixed wake time, avoiding afternoon caffeine and leaving the bed after about 20 minutes awake are all correct sleep hygiene."
+  },
+  {
+    "domain": "nclexComfort",
+    "test": 1,
+    "skill": "Crutch use",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "The nurse observes a client using axillary crutches. Which observation indicates correct crutch fit and use?",
+    "options": [
+      "Elbows flexed about 60 degrees",
+      "Weight resting on axillary pads",
+      "Pads 1.5 to 2 inches below axillae",
+      "Tips placed 1 inch beside each foot"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Pads should sit 1.5 to 2 inches (2 to 3 finger widths) below the axillae with weight on the hands, which prevents brachial nerve injury. Elbows should flex about 20 to 30 degrees, and tips sit about 6 inches in front of and beside the feet."
+  },
+  {
+    "domain": "nclexComfort",
+    "test": 1,
+    "skill": "Therapeutic diets",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "A client with heart failure is prescribed a 2 g sodium diet. Which foods are appropriate choices? Select all that apply.",
+    "options": [
+      "Deli turkey sandwich",
+      "Dill pickle spear",
+      "Unsalted oatmeal",
+      "Fresh apple slices",
+      "Canned tomato soup"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "explanation": "Fresh fruit and oatmeal cooked without salt are naturally low in sodium. Canned soups, pickles and deli meats are among the highest-sodium foods."
+  },
+  {
+    "domain": "nclexComfort",
+    "test": 1,
+    "skill": "Urinary retention",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "1400 Nurses' note: Client 6 hours after hip surgery under spinal anesthesia. Has not voided since surgery. Reports lower abdominal fullness. Bladder scan shows 650 mL.",
+    "stem": "The client tried to void with privacy, sitting upright, and running water but could not. Which action should the nurse take next?",
+    "options": [
+      "Encourage more oral fluids",
+      "Rescan the bladder in 4 hours",
+      "Insert an indwelling catheter",
+      "Straight catheterize per protocol"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A bladder volume of 650 mL with failed voiding attempts calls for intermittent catheterization to relieve retention. An indwelling catheter adds infection risk without need, and more fluid or waiting further distends the bladder."
+  },
+  {
+    "domain": "nclexComfort",
+    "test": 2,
+    "skill": "Walker use",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which action by a client using a standard walker indicates correct technique?",
+    "options": [
+      "Steps past the front crossbar",
+      "Pushes off chair arms to stand",
+      "Keeps walker a long stride ahead",
+      "Pulls up on the walker to stand"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The client pushes up from the chair arms, then grips the walker once standing, because a walker tips when pulled on. The walker is moved about one step ahead and the client steps into it, not past the front bar."
+  },
+  {
+    "domain": "nclexComfort",
+    "test": 2,
+    "skill": "Pressure injury staging",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Wound note: Sacrum, 3 cm x 2 cm shallow open area. Wound bed pink and moist. No slough, no eschar, no visible fat.",
+    "stem": "How should the nurse document this wound?",
+    "options": [
+      "Stage 2 pressure injury",
+      "Stage 3 pressure injury",
+      "Unstageable pressure injury",
+      "Stage 1 pressure injury"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Partial-thickness skin loss with a pink, moist bed and no slough or visible fat is Stage 2. Stage 1 is intact skin, and Stage 3 shows full-thickness loss with visible fat."
+  },
+  {
+    "domain": "nclexComfort",
+    "test": 2,
+    "skill": "Dysphagia",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "The nurse observes an AP assisting a client with dysphagia after a stroke during lunch. Which action by the AP requires the nurse to intervene?",
+    "options": [
+      "Positions the client at 30 degrees",
+      "Offers small bites of soft food",
+      "Has the client tuck chin to swallow",
+      "Checks cheeks for pocketed food"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A client with dysphagia should sit fully upright, near 90 degrees, to protect the airway. Small bites, the chin-tuck swallow and checking the weak side for pocketed food are all correct."
+  },
+  {
+    "domain": "nclexComfort",
+    "test": 2,
+    "skill": "Comfort measures",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A client sprained an ankle 2 hours ago. Which comfort measure should the nurse recommend now?",
+    "options": [
+      "Massage the ankle firmly",
+      "Apply a heating pad on low",
+      "Soak the ankle in warm water",
+      "Apply ice wrapped in a towel"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Cold in the first 24 to 48 hours limits swelling and pain by vasoconstriction; it is wrapped to protect the skin. Heat in the acute phase increases swelling."
+  },
+  {
+    "domain": "nclexComfort",
+    "test": 2,
+    "skill": "Immobility complications",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "A client is on prolonged bed rest. Which interventions help prevent complications of immobility? Select all that apply.",
+    "options": [
+      "Do range-of-motion exercises",
+      "Apply sequential compression devices",
+      "Teach coughing and deep breathing",
+      "Massage the calves to aid flow",
+      "Restrict fluids to limit voiding"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Deep breathing prevents atelectasis, range of motion prevents contractures, and compression devices reduce venous stasis. Calf massage can dislodge a clot, and fluid restriction raises the risk of urinary stasis, constipation and thrombosis."
+  },
+  {
+    "domain": "nclexComfort",
+    "test": 2,
+    "skill": "Oral hygiene",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The nurse provides oral care to an unconscious client. Which action is most important?",
+    "options": [
+      "Position client on the side",
+      "Hold the mouth open with fingers",
+      "Swab with lemon-glycerin sticks",
+      "Keep the head of bed flat"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Side-lying lets fluid drain from the mouth, preventing aspiration; suction should be ready. Lemon-glycerin dries the mucosa, and fingers in the mouth risk a bite injury."
+  },
+  {
+    "domain": "nclexComfort",
+    "test": 2,
+    "skill": "Renal diet",
+    "difficulty": 3,
+    "format": "multi",
+    "passage": "Client with chronic kidney disease, not yet on dialysis.\n\n| Lab | Result |\n|---|---|\n| Potassium | 5.8 mEq/L |\n| Phosphorus | 6.0 mg/dL |",
+    "stem": "Which foods should the nurse teach this client to limit? Select all that apply.",
+    "options": [
+      "Plain white rice",
+      "Orange juice",
+      "Bananas",
+      "Baked potatoes",
+      "Dark cola drinks"
+    ],
+    "correct": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "explanation": "Bananas, potatoes and orange juice are high in potassium, and dark colas are high in phosphorus, so all are limited with these results. White rice is low in both potassium and phosphorus."
+  },
+  {
+    "domain": "nclexComfort",
+    "test": 2,
+    "skill": "Urinary incontinence",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "Client, 79, with arthritis and mild dementia. Voiding diary: incontinent at 0700, 1000, 1300 and 1600. Stays dry when assisted to the toilet. Urinalysis negative.",
+    "stem": "Which intervention is most appropriate for this client?",
+    "options": [
+      "Toilet the client every 2 hours",
+      "Apply adult briefs at all times",
+      "Restrict fluids to 1 L daily",
+      "Insert an indwelling catheter"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The client stays dry when helped to the toilet, which points to functional incontinence; scheduled toileting before the usual 3-hour pattern prevents episodes. Fluid restriction concentrates urine and irritates the bladder, and briefs alone do not treat the cause."
+  },
+  {
+    "domain": "nclexComfort",
+    "test": 0,
+    "skill": "Gluten-free diet",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "A client with celiac disease is choosing foods. Which choices are gluten-free? Select all that apply.",
+    "options": [
+      "Steamed white rice",
+      "Grilled plain salmon",
+      "Beef barley soup",
+      "Corn tortillas",
+      "Rye crackers"
+    ],
+    "correct": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Corn, rice and plain fish contain no gluten. Barley and rye contain gluten, as does wheat."
+  },
+  {
+    "domain": "nclexComfort",
+    "test": 0,
+    "skill": "Safe transfers",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client with right-sided weakness after a stroke will transfer from bed to wheelchair. Where should the nurse place the wheelchair?",
+    "options": [
+      "On the right, angled toward bed",
+      "On the left, angled toward bed",
+      "Behind the client's back",
+      "At the foot, facing the bed"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The chair goes on the client's strong (left) side, angled to the bed, so the client pivots on the stronger leg. Placing it on the weak side forces weight onto the affected leg."
+  }
+]

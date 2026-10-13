@@ -1,0 +1,609 @@
+[
+  {
+    "domain": "nclexPharm",
+    "test": 1,
+    "skill": "Heparin infusion",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "| Time | aPTT | Heparin rate |\n|---|---|---|\n| 0600 | 62 sec | 1,000 units/hr |\n| 1200 | 118 sec | 1,000 units/hr |\n\nControl aPTT: 30 sec. No visible bleeding.",
+    "stem": "A client receives a continuous IV heparin infusion titrated by protocol (goal aPTT 1.5 to 2.5 times control). Based on the 1200 result, which action should the nurse take?",
+    "options": [
+      "Increase the rate per protocol",
+      "Give vitamin K as prescribed",
+      "Hold the infusion and notify the HCP",
+      "Continue the current infusion rate"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An aPTT of 118 seconds is nearly 4 times control, well above the 45 to 75 second goal, so the infusion is held (protocols then restart it at a lower rate) and the HCP notified because of bleeding risk. Vitamin K reverses warfarin, not heparin; protamine sulfate is the heparin antidote."
+  },
+  {
+    "domain": "nclexPharm",
+    "test": 1,
+    "skill": "Digoxin toxicity",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "0800 Nurses' note: Client reports nausea and seeing yellow halos around lights. Apical pulse 54/min, irregular.\n\n| Lab | Result |\n|---|---|\n| Potassium | 3.0 mEq/L |\n| Digoxin | 2.6 ng/mL |",
+    "stem": "A client with heart failure takes digoxin and furosemide. Which action should the nurse take first?",
+    "options": [
+      "Withhold the digoxin dose",
+      "Recheck the level in 6 hours",
+      "Give an oral antiemetic first",
+      "Give the scheduled furosemide"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Nausea, yellow halos, bradycardia and a level above 2.0 ng/mL point to digoxin toxicity, so the next dose is withheld before anything else. Furosemide would lower the already low potassium, which worsens toxicity."
+  },
+  {
+    "domain": "nclexPharm",
+    "test": 1,
+    "skill": "IV potassium",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "The nurse prepares to give IV potassium chloride to an adult client through a peripheral line. Which actions are appropriate? Select all that apply.",
+    "options": [
+      "Give it by slow IV push",
+      "Infuse 40 mEq over 30 minutes",
+      "Run it on an infusion pump",
+      "Dilute it in IV fluid first",
+      "Confirm adequate urine output"
+    ],
+    "correct": [
+      2,
+      3,
+      4
+    ],
+    "explanation": "Potassium is always diluted, pump-controlled, and given only when urine output shows the kidneys can clear it. It is never given by IV push, which can cause fatal dysrhythmias, and peripheral rates are commonly limited to about 10 mEq/hr, so 40 mEq in 30 minutes is far too fast."
+  },
+  {
+    "domain": "nclexPharm",
+    "test": 1,
+    "skill": "Opioid overdose",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A postoperative client receiving IV morphine is difficult to arouse and has a respiratory rate of 7/min. Which medication should the nurse prepare to give?",
+    "options": [
+      "Atropine",
+      "Naloxone",
+      "Flumazenil",
+      "Acetylcysteine"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Naloxone is the opioid antagonist that reverses opioid-induced respiratory depression. Flumazenil reverses benzodiazepines, not opioids."
+  },
+  {
+    "domain": "nclexPharm",
+    "test": 1,
+    "skill": "Transfusion reaction",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Fifteen minutes into a unit of packed red blood cells, a client reports chills and low back pain. Temperature has risen from 98.8 F to 101.2 F (38.4 C). Which action should the nurse take first?",
+    "options": [
+      "Slow the transfusion rate",
+      "Notify the blood bank",
+      "Stop the transfusion",
+      "Give the PRN acetaminophen"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Chills, fever and back pain early in a transfusion suggest an acute hemolytic reaction, so the transfusion is stopped at once, then the line is kept open with 0.9% saline at a new tubing set. Notifying the blood bank is required, but only after the infusion is stopped."
+  },
+  {
+    "domain": "nclexPharm",
+    "test": 1,
+    "skill": "Parenteral nutrition",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Total parenteral nutrition is prescribed at 83 mL/hr. At the start of the shift, the nurse finds the bag is 300 mL behind schedule. Which action should the nurse take?",
+    "options": [
+      "Keep the rate at 83 mL/hr",
+      "Spread the 300 mL over the shift",
+      "Increase the rate to catch up",
+      "Stop the bag and hang a new one"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "TPN is never sped up to make up lost volume, because a rapid dextrose load can cause hyperglycemia and fluid overload; the nurse keeps the prescribed rate and reports the shortfall. Spreading the missed volume over the shift is still a catch-up increase."
+  },
+  {
+    "domain": "nclexPharm",
+    "test": 1,
+    "skill": "Vancomycin reaction",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "During an IV vancomycin infusion, a client develops flushing and a red rash on the face, neck, and upper chest. BP is 118/76 mm Hg, and the lungs are clear with no stridor. Which action should the nurse take first?",
+    "options": [
+      "Apply cool compresses to rash",
+      "Give epinephrine 0.3 mg IM",
+      "Draw a vancomycin trough level",
+      "Stop the vancomycin infusion"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Flushing and an upper-body rash during infusion with stable vital signs is vancomycin infusion reaction, usually from running it too fast; the infusion is stopped, and it is later resumed more slowly, often after an antihistamine. Epinephrine is for anaphylaxis, which this stable client without airway signs does not show."
+  },
+  {
+    "domain": "nclexPharm",
+    "test": 1,
+    "skill": "MAOI diet",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "A client starting phenelzine asks which foods to avoid. Which foods should the nurse list? Select all that apply.",
+    "options": [
+      "Fresh roasted chicken",
+      "Aged cheddar cheese",
+      "Plain cottage cheese",
+      "Draft beer on tap",
+      "Dry-cured salami"
+    ],
+    "correct": [
+      1,
+      3,
+      4
+    ],
+    "explanation": "Aged cheese, cured meats and tap beer are high in tyramine, which can trigger hypertensive crisis with an MAOI. Freshly cooked chicken and fresh, unaged cheeses such as cottage cheese are low in tyramine."
+  },
+  {
+    "domain": "nclexPharm",
+    "test": 1,
+    "skill": "ACE inhibitors",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A client started lisinopril 2 days ago. Which finding requires immediate action by the nurse?",
+    "options": [
+      "Potassium 5.0 mEq/L",
+      "Dry, nonproductive cough",
+      "Dizziness when standing up",
+      "Swelling of lips and tongue"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Angioedema can obstruct the airway and is an emergency; the drug is stopped and the airway protected. A dry cough is a common, non-urgent ACE inhibitor effect, and potassium 5.0 mEq/L is within normal range."
+  },
+  {
+    "domain": "nclexPharm",
+    "test": 1,
+    "skill": "Loop diuretics",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "A client with heart failure received IV furosemide 40 mg this morning. Which findings indicate the medication is effective? Select all that apply.",
+    "options": [
+      "New 2+ edema of both ankles",
+      "Urine output 20 mL/hr",
+      "Fewer crackles in the lung bases",
+      "Potassium 3.2 mEq/L",
+      "Weight down 1.2 kg since yesterday"
+    ],
+    "correct": [
+      2,
+      4
+    ],
+    "explanation": "Weight loss and clearing crackles show fluid removal. Potassium 3.2 mEq/L is an adverse effect, not a sign of benefit; new edema and urine output of 20 mL/hr show the diuretic is not working."
+  },
+  {
+    "domain": "nclexPharm",
+    "test": 1,
+    "skill": "Dosage calculation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A heparin infusion of 25,000 units in 250 mL D5W is prescribed to run at 1,200 units/hr. At what rate should the nurse set the infusion pump?",
+    "options": [
+      "120 mL/hr",
+      "1.2 mL/hr",
+      "12 mL/hr",
+      "24 mL/hr"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The concentration is 25,000 units / 250 mL = 100 units/mL, and 1,200 units/hr / 100 units/mL = 12 mL/hr. 120 mL/hr comes from a decimal error and would deliver ten times the dose."
+  },
+  {
+    "domain": "nclexPharm",
+    "test": 1,
+    "skill": "Anticonvulsants",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "The nurse teaches a client starting oral phenytoin for a seizure disorder. Which instructions should the nurse include? Select all that apply.",
+    "options": [
+      "Double the next dose if missed",
+      "Avoid alcohol while taking it",
+      "Take it with an antacid dose",
+      "Keep scheduled blood level checks",
+      "Brush and floss teeth daily"
+    ],
+    "correct": [
+      1,
+      3,
+      4
+    ],
+    "explanation": "Phenytoin causes gingival hyperplasia, has a narrow therapeutic range (about 10 to 20 mcg/mL), and interacts with alcohol. Antacids reduce its absorption and should be separated by about 2 hours, and doubling a dose risks toxicity."
+  },
+  {
+    "domain": "nclexPharm",
+    "test": 1,
+    "skill": "IV infiltration",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A client's peripheral IV of 0.9% sodium chloride is running. The site is cool, pale, and swollen. Which action should the nurse take first?",
+    "options": [
+      "Apply a warm compress",
+      "Elevate the arm on a pillow",
+      "Flush the line to test it",
+      "Stop the infusion"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Cool, pale, swollen tissue signals infiltration, so the infusion is stopped first and the catheter then removed. Elevating the arm and applying a compress come after, and flushing pushes more fluid into the tissue."
+  },
+  {
+    "domain": "nclexPharm",
+    "test": 1,
+    "skill": "Magnesium sulfate",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "| Time | RR | Reflexes | Urine output |\n|---|---|---|---|\n| 1000 | 16/min | 2+ | 40 mL/hr |\n| 1200 | 10/min | Absent | 20 mL/hr |\n\nSerum magnesium at 1200: 9.2 mg/dL.",
+    "stem": "A client with preeclampsia receives magnesium sulfate 2 g/hr IV. Which action should the nurse take first?",
+    "options": [
+      "Recheck reflexes in 1 hour",
+      "Increase maintenance IV fluids",
+      "Stop the magnesium infusion",
+      "Prepare calcium gluconate IV"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Absent reflexes, a respiratory rate of 10/min and a level of 9.2 mg/dL (therapeutic about 4 to 7 mg/dL) show magnesium toxicity, so the infusion is stopped first. Calcium gluconate is the antidote and is given next, but continuing the infusion while preparing it adds more drug."
+  },
+  {
+    "domain": "nclexPharm",
+    "test": 2,
+    "skill": "Warfarin reversal",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Client, 74, takes warfarin 5 mg daily for atrial fibrillation.\n\n0900 Nurses' note: Gums bleed when brushing teeth. No other bleeding. BP 132/80 mm Hg, HR 78/min.\n\nLab: INR 6.8.",
+    "stem": "The HCP prescribes the reversal agent for this client's anticoagulant. Which medication should the nurse expect?",
+    "options": [
+      "Protamine sulfate",
+      "Phytonadione (vitamin K)",
+      "Idarucizumab",
+      "Andexanet alfa"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Phytonadione restores vitamin K-dependent clotting factors and reverses warfarin; with an INR of 6.8 and only minor bleeding, warfarin is held and a low oral dose is typical. Protamine reverses heparin, idarucizumab reverses dabigatran, and andexanet alfa reverses factor Xa inhibitors."
+  },
+  {
+    "domain": "nclexPharm",
+    "test": 2,
+    "skill": "Mixing insulin",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The nurse will draw regular and NPH insulin into one syringe and has already injected air into both vials. What should the nurse do next?",
+    "options": [
+      "Roll the regular vial to mix it",
+      "Withdraw the NPH insulin",
+      "Add more air to the NPH vial",
+      "Withdraw the regular insulin"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Clear regular insulin is drawn up before cloudy NPH so the regular vial is never contaminated with intermediate-acting insulin. NPH is the vial that is rolled to mix, and it is drawn second."
+  },
+  {
+    "domain": "nclexPharm",
+    "test": 2,
+    "skill": "PCA safety",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The nurse reviews a morphine patient-controlled analgesia (PCA) pump with a client's family. Which statement by the family indicates a need for further teaching?",
+    "options": [
+      "\"We'll tell you if he gets hard to wake up.\"",
+      "\"We'll press the button when he's asleep.\"",
+      "\"He should press it before pain gets severe.\"",
+      "\"The pump limits how much he gets each hour.\""
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Only the client should press the PCA button; the safety of PCA depends on a sedated client being unable to dose himself, and \"PCA by proxy\" causes overdoses. Pressing before pain becomes severe is correct teaching."
+  },
+  {
+    "domain": "nclexPharm",
+    "test": 2,
+    "skill": "Blood transfusion",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Before starting a unit of packed red blood cells, which actions should the nurse take? Select all that apply.",
+    "options": [
+      "Plan to infuse it over 6 hours",
+      "Obtain baseline vital signs",
+      "Use a filtered blood tubing set",
+      "Check the unit with a second nurse",
+      "Prime tubing with 0.9% saline"
+    ],
+    "correct": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "explanation": "Dual verification, saline priming, a filtered blood set and baseline vital signs are all required before a transfusion. A unit should finish within 4 hours of leaving the blood bank, so a 6-hour plan raises bacterial growth risk."
+  },
+  {
+    "domain": "nclexPharm",
+    "test": 2,
+    "skill": "Central line safety",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "While the nurse changes a central venous catheter cap, the client suddenly becomes short of breath with chest pain and hypotension. After clamping the catheter, how should the nurse position the client?",
+    "options": [
+      "Right side-lying, head down",
+      "Left side-lying, head down",
+      "Supine with legs elevated",
+      "High Fowler's, legs dependent"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "These signs suggest air embolism; the left lateral, head-down position helps trap air in the right atrium away from the pulmonary outflow. Right side-lying moves the air toward the pulmonary artery."
+  },
+  {
+    "domain": "nclexPharm",
+    "test": 2,
+    "skill": "Aminoglycosides",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "A client receives IV gentamicin every 8 hours. Which findings should the nurse report as possible adverse effects? Select all that apply.",
+    "options": [
+      "Creatinine up to 2.1 mg/dL",
+      "Urine output 60 mL/hr",
+      "Trough level 0.8 mcg/mL",
+      "Ringing in both ears",
+      "BUN 14 mg/dL"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "explanation": "Tinnitus signals ototoxicity and a rising creatinine signals nephrotoxicity, the two key aminoglycoside toxicities. Urine output of 60 mL/hr and BUN of 14 mg/dL are normal, and a gentamicin trough below 1 to 2 mcg/mL is acceptable."
+  },
+  {
+    "domain": "nclexPharm",
+    "test": 2,
+    "skill": "Lithium toxicity",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "1000 Nurses' note: Coarse hand tremor, vomited 3 times since breakfast, speech slurred.\n\n| Lab | Result |\n|---|---|\n| Lithium | 2.2 mEq/L |\n| Sodium | 134 mEq/L |",
+    "stem": "A client with bipolar disorder takes lithium 300 mg three times daily. Which action should the nurse take first?",
+    "options": [
+      "Increase dietary salt intake",
+      "Give the dose with a meal",
+      "Hold the next lithium dose",
+      "Recheck level after next dose"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A level of 2.2 mEq/L with vomiting, coarse tremor and slurred speech is moderate toxicity (maintenance range about 0.6 to 1.2 mEq/L), so further doses are held and the HCP notified. Raising sodium intake does not treat toxicity already present."
+  },
+  {
+    "domain": "nclexPharm",
+    "test": 2,
+    "skill": "Clozapine monitoring",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "| Week | ANC |\n|---|---|\n| 10 | 2,400/mcL |\n| 11 | 1,900/mcL |\n| 12 | 900/mcL |\n\nWeek 12 note: Client reports sore throat. Temperature 100.9 F (38.3 C).",
+    "stem": "A client with schizophrenia has taken clozapine for 3 months. Which action should the nurse take?",
+    "options": [
+      "Hold the dose and notify the HCP",
+      "Give the dose, recheck ANC weekly",
+      "Give the dose with acetaminophen",
+      "Give half the usual dose today"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An ANC of 900/mcL is moderate neutropenia (500 to 999), and with sore throat and fever it may signal infection, so clozapine is interrupted and the HCP notified; ANC monitoring still applies after the REMS ended. Giving any dose, even a reduced one, continues the drug causing the neutropenia."
+  },
+  {
+    "domain": "nclexPharm",
+    "test": 2,
+    "skill": "Beta blockers",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "MAR: Metoprolol tartrate 50 mg PO at 0900. Hold for HR less than 60/min or SBP less than 100 mm Hg.\n\n| Time | BP | HR | RR |\n|---|---|---|---|\n| 0845 | 112/70 | 56/min | 16/min |",
+    "stem": "A client is due for a scheduled oral beta blocker. Which action should the nurse take?",
+    "options": [
+      "Hold the dose per parameters",
+      "Give half of the dose now",
+      "Give the dose as scheduled",
+      "Give it, recheck HR in 1 hour"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The heart rate of 56/min is below the hold parameter of 60, so the dose is held and the reason documented and reported. A partial dose is not an option the nurse can choose without a prescription."
+  },
+  {
+    "domain": "nclexPharm",
+    "test": 2,
+    "skill": "Nitrates",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A client with chest pain has a prescription for sublingual nitroglycerin. Which information requires the nurse to withhold the drug and contact the HCP?",
+    "options": [
+      "Had a headache after last dose",
+      "Takes atorvastatin each night",
+      "Took sildenafil 12 hours ago",
+      "Took aspirin 81 mg this morning"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Nitrates taken within 24 hours of sildenafil (48 hours for tadalafil) can cause severe, refractory hypotension. Headache is an expected nitrate effect and does not prevent use."
+  },
+  {
+    "domain": "nclexPharm",
+    "test": 2,
+    "skill": "Dosage calculation",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Amoxicillin 40 mg/kg/day PO divided every 12 hours is prescribed for a child who weighs 33 lb. The suspension contains 250 mg/5 mL. How many mL should the nurse give per dose?",
+    "options": [
+      "3 mL",
+      "12 mL",
+      "13.2 mL",
+      "6 mL"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "33 lb / 2.2 = 15 kg; 40 mg x 15 kg = 600 mg/day, or 300 mg per dose; 300 mg / 250 mg x 5 mL = 6 mL. 12 mL is the whole daily dose in one dose, and 13.2 mL comes from using pounds instead of kilograms."
+  },
+  {
+    "domain": "nclexPharm",
+    "test": 2,
+    "skill": "Dosage calculation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The nurse must infuse 1,000 mL of 0.9% sodium chloride over 8 hours by gravity using tubing with a drop factor of 15 gtt/mL. At how many drops per minute should the nurse regulate the infusion?",
+    "options": [
+      "31 gtt/min",
+      "125 gtt/min",
+      "21 gtt/min",
+      "42 gtt/min"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "1,000 mL / 8 hr = 125 mL/hr; 125 mL x 15 gtt/mL / 60 min = 31.25, rounded to 31 gtt/min. 125 is the mL/hr rate, and 21 and 42 come from using drop factors of 10 and 20."
+  },
+  {
+    "domain": "nclexPharm",
+    "test": 2,
+    "skill": "Thyroid replacement",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which statement by a client prescribed levothyroxine indicates understanding of the teaching?",
+    "options": [
+      "\"I'll take it on an empty stomach.\"",
+      "\"I can stop it once my energy is back.\"",
+      "\"I'll take it with my calcium supplement.\"",
+      "\"I'll take it with my coffee and toast.\""
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Levothyroxine is best absorbed on an empty stomach 30 to 60 minutes before breakfast, and therapy is usually lifelong. Calcium, iron and food reduce its absorption, so the doses should be separated by about 4 hours."
+  },
+  {
+    "domain": "nclexPharm",
+    "test": 2,
+    "skill": "Low molecular weight heparin",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "The nurse gives subcutaneous enoxaparin from a prefilled syringe. Which actions are correct? Select all that apply.",
+    "options": [
+      "Inject into the deltoid muscle",
+      "Massage the site after injecting",
+      "Inject 2 inches from the navel",
+      "Aspirate before injecting the drug",
+      "Leave the air bubble in place"
+    ],
+    "correct": [
+      2,
+      4
+    ],
+    "explanation": "Enoxaparin goes into abdominal fat at least 2 inches from the umbilicus, and the prefilled syringe's air bubble is not expelled so the full dose is given. Aspirating and massaging increase bruising, and it is never given intramuscularly."
+  },
+  {
+    "domain": "nclexPharm",
+    "test": 0,
+    "skill": "Dosage calculation",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Morphine 4 mg IV push is prescribed. The vial contains 10 mg/mL. How many mL should the nurse draw up?",
+    "options": [
+      "2.5 mL",
+      "0.4 mL",
+      "0.25 mL",
+      "4 mL"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Desired over have times volume: 4 mg / 10 mg x 1 mL = 0.4 mL. 2.5 mL comes from inverting the ratio (10 / 4)."
+  },
+  {
+    "domain": "nclexPharm",
+    "test": 0,
+    "skill": "Serotonin syndrome",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "A client who takes sertraline started tramadol 2 days ago. Which findings suggest serotonin syndrome? Select all that apply.",
+    "options": [
+      "Slowed reflexes, HR 52/min",
+      "Diaphoresis, HR 118/min",
+      "Temperature 101.8 F",
+      "Hyperreflexia and clonus",
+      "Agitation and restlessness"
+    ],
+    "correct": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "explanation": "Tramadol adds serotonergic activity to an SSRI; serotonin syndrome shows neuromuscular excitation, hyperthermia, agitation and autonomic instability such as sweating and tachycardia. Slowed reflexes and bradycardia are the opposite of this picture."
+  },
+  {
+    "domain": "nclexPharm",
+    "test": 0,
+    "skill": "Insulin and hypoglycemia",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "MAR: Insulin glargine 20 units subcut at 2100. Insulin lispro per scale with meals.\n\n0700 Nurses' note: Client alert, diaphoretic, shaky. Bedside glucose 62 mg/dL. Breakfast tray not yet arrived.",
+    "stem": "Which action should the nurse take first?",
+    "options": [
+      "Hold the bedtime glargine",
+      "Give 4 oz of fruit juice",
+      "Give 50% dextrose IV push",
+      "Recheck glucose in 1 hour"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An alert client who can swallow with a glucose of 62 mg/dL gets 15 g of fast-acting carbohydrate such as 4 oz of juice, then a recheck in 15 minutes. IV dextrose is for a client who cannot safely swallow, and waiting an hour delays treatment."
+  },
+  {
+    "domain": "nclexPharm",
+    "test": 0,
+    "skill": "Antibiotic teaching",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which instruction is most important for the nurse to give a client prescribed oral metronidazole?",
+    "options": [
+      "Limit dairy foods while taking it",
+      "Avoid foods high in tyramine",
+      "Stop it once symptoms resolve",
+      "Avoid alcohol until 3 days after"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Metronidazole with alcohol can cause a disulfiram-like reaction (flushing, vomiting, tachycardia), so alcohol is avoided during therapy and for 3 days after the last dose. Tyramine restriction applies to MAOIs, and stopping early promotes treatment failure."
+  }
+]

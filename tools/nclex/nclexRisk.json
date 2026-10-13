@@ -1,0 +1,458 @@
+[
+  {
+    "domain": "nclexRisk",
+    "test": 1,
+    "skill": "Diuretic lab review",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A client receiving furosemide 40 mg IV twice daily has morning labs drawn. Which result should the nurse report to the health care provider (HCP)?",
+    "options": [
+      "Sodium 138 mEq/L",
+      "Potassium 3.0 mEq/L",
+      "Magnesium 2.0 mEq/L",
+      "Calcium 9.2 mg/dL"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Loop diuretics waste potassium, and 3.0 mEq/L is below the 3.5 to 5.0 range and raises the risk of dysrhythmias. The sodium, magnesium and calcium values are all within normal limits."
+  },
+  {
+    "domain": "nclexRisk",
+    "test": 1,
+    "skill": "Cardiac cath site bleeding",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two hours after a cardiac catheterization through the right femoral artery, the nurse finds the dressing saturated and blood pooling under the client's thigh. Which action should the nurse take first?",
+    "options": [
+      "Elevate the head of the bed",
+      "Recheck the vital signs in 15 minutes",
+      "Apply firm pressure above the site",
+      "Notify the HCP of the bleeding"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Active arterial bleeding is stopped with direct manual pressure just above the puncture site, then the HCP is notified. Raising the head of the bed flexes the hip and can worsen bleeding, and waiting to recheck vitals delays control of hemorrhage."
+  },
+  {
+    "domain": "nclexRisk",
+    "test": 1,
+    "skill": "Postoperative hemorrhage",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "| Time | BP | HR | RR | Urine |\n|---|---|---|---|---|\n| 0800 | 128/78 | 82 | 16 | 60 mL/hr |\n| 1000 | 112/70 | 98 | 18 | 40 mL/hr |\n| 1200 | 96/62 | 116 | 22 | 20 mL/hr |",
+    "stem": "The nurse reviews the vital signs of a client who had an abdominal hysterectomy this morning. Which problem do these findings most likely indicate?",
+    "options": [
+      "Uncontrolled incisional pain",
+      "Hypovolemia from bleeding",
+      "Early postoperative atelectasis",
+      "Opioid-induced hypotension"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Falling blood pressure with a rising heart rate and respiratory rate and a drop in urine output is the classic pattern of hypovolemia from internal bleeding. Opioid-related hypotension comes with slowed breathing and a slower pulse, not tachycardia and tachypnea."
+  },
+  {
+    "domain": "nclexRisk",
+    "test": 1,
+    "skill": "Thoracentesis complications",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "One hour after a thoracentesis, which finding should the nurse report to the HCP immediately?",
+    "options": [
+      "Soreness at puncture site",
+      "New dyspnea, SpO2 88%",
+      "Pinpoint serous drainage",
+      "Heart rate 88 beats/min"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Sudden shortness of breath with falling oxygen saturation after thoracentesis suggests pneumothorax and needs immediate follow-up. Mild site soreness and a small spot of serous drainage are expected after the procedure."
+  },
+  {
+    "domain": "nclexRisk",
+    "test": 1,
+    "skill": "DVT prevention",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "A client is on the first postoperative day after a total hip replacement. Which actions should the nurse include to reduce the risk of deep vein thrombosis? Select all that apply.",
+    "options": [
+      "Apply sequential compression devices",
+      "Encourage ankle pumps every hour",
+      "Massage the calf if it cramps",
+      "Place a pillow under the knees",
+      "Ambulate as soon as prescribed"
+    ],
+    "correct": [
+      0,
+      1,
+      4
+    ],
+    "explanation": "Compression devices, ankle pumps and early ambulation all promote venous return. Massaging the calf could dislodge an existing clot, and a pillow under the knees compresses the popliteal veins and slows flow."
+  },
+  {
+    "domain": "nclexRisk",
+    "test": 1,
+    "skill": "Paracentesis preparation",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A client with ascites is scheduled for a paracentesis. Which action should the nurse take just before the procedure?",
+    "options": [
+      "Keep the client NPO for 12 hours",
+      "Position the client supine and flat",
+      "Have the client empty the bladder",
+      "Give a cleansing enema"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Emptying the bladder lowers the risk of puncturing it when the needle enters the lower abdomen. The client sits upright or in high Fowler's position, not flat, and fasting and an enema are not required."
+  },
+  {
+    "domain": "nclexRisk",
+    "test": 1,
+    "skill": "Post-endoscopy care",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client is back on the unit after an upper endoscopy (EGD) with moderate sedation and asks for something to drink. Which action should the nurse take first?",
+    "options": [
+      "Offer small sips of water",
+      "Assess the gag reflex",
+      "Provide ice chips only",
+      "Give warm tea for the throat"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The throat is anesthetized for the procedure, so the gag reflex must return before any fluids, including ice chips, to prevent aspiration. Offering sips first skips that safety check."
+  },
+  {
+    "domain": "nclexRisk",
+    "test": 1,
+    "skill": "Heparin and platelets",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "| Lab | Day 1 | Day 5 |\n|---|---|---|\n| Platelets | 250,000/mm3 | 95,000/mm3 |\n| aPTT | 32 sec | 68 sec |\n| Hemoglobin | 13.6 g/dL | 13.2 g/dL |\n| WBC | 8,100/mm3 | 8,400/mm3 |",
+    "stem": "A client is on day 5 of a continuous heparin infusion for a deep vein thrombosis. Which finding requires immediate follow-up?",
+    "options": [
+      "aPTT of 68 seconds",
+      "Hemoglobin 13.2 g/dL",
+      "Platelets 95,000/mm3",
+      "WBC count 8,400/mm3"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A platelet drop of more than 50% from baseline 5 to 10 days after starting heparin suggests heparin-induced thrombocytopenia, which needs the heparin stopped and the HCP notified. An aPTT of 68 seconds is within a typical therapeutic range, so it is not the concern."
+  },
+  {
+    "domain": "nclexRisk",
+    "test": 1,
+    "skill": "Postoperative atelectasis",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "On the first day after abdominal surgery, a client has a temperature of 100.4°F (38°C) and diminished breath sounds in both bases. Which action should the nurse take?",
+    "options": [
+      "Coach incentive spirometer use",
+      "Obtain blood cultures right away",
+      "Apply a hypothermia blanket",
+      "Increase the IV infusion rate"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A low-grade fever with diminished bases in the first 24 to 48 hours after surgery most often reflects atelectasis, which is treated with deep breathing and incentive spirometry. Blood cultures are not the first step for this pattern this early after surgery."
+  },
+  {
+    "domain": "nclexRisk",
+    "test": 1,
+    "skill": "Cardiac cath complications",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "Four hours after a cardiac catheterization through the left femoral artery, which findings require immediate follow-up? Select all that apply.",
+    "options": [
+      "Small bruise at the insertion site",
+      "Absent pedal pulse in left foot",
+      "Cool, pale left foot",
+      "Increased urine output after dye",
+      "New back or flank pain"
+    ],
+    "correct": [
+      1,
+      2,
+      4
+    ],
+    "explanation": "An absent pulse and a cool, pale foot suggest arterial occlusion, and new back or flank pain can signal a retroperitoneal bleed. A small bruise is expected, and increased urine output reflects the osmotic effect of contrast and the IV fluids given to clear it."
+  },
+  {
+    "domain": "nclexRisk",
+    "test": 2,
+    "skill": "Contrast and metformin",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client who takes metformin is scheduled for a CT scan with IV contrast. Which laboratory result is most important for the nurse to review before the scan?",
+    "options": [
+      "Serum magnesium",
+      "Hemoglobin A1c level",
+      "Serum creatinine",
+      "Serum bilirubin"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Contrast can injure the kidneys, and metformin with poor kidney clearance raises the risk of lactic acidosis, so creatinine and eGFR guide whether metformin is held. Hemoglobin A1c reflects long-term glucose control and does not affect contrast safety."
+  },
+  {
+    "domain": "nclexRisk",
+    "test": 2,
+    "skill": "Post-thyroidectomy calcium",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "0600: Voice slightly hoarse, speaking in full sentences. Drain with 20 mL serosanguineous fluid since surgery.\n0630: Client reports tingling around the lips and in both hands. Rates incision pain 4 of 10.",
+    "stem": "The nurse reviews notes on a client who had a total thyroidectomy 18 hours ago. Which finding requires immediate follow-up?",
+    "options": [
+      "Mildly hoarse, raspy voice",
+      "Drain output of 20 mL total",
+      "Tingling lips and fingers",
+      "Incision pain rated 4 of 10"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Tingling around the mouth and in the fingers signals hypocalcemia from parathyroid injury, which can progress to tetany and laryngospasm. Mild hoarseness from intubation and a small amount of serosanguineous drainage are expected."
+  },
+  {
+    "domain": "nclexRisk",
+    "test": 2,
+    "skill": "Post-tonsillectomy bleeding",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 6-year-old child is 8 hours past a tonsillectomy. Which finding should the nurse report to the HCP?",
+    "options": [
+      "Refuses to eat dry toast",
+      "Reports pain in both ears",
+      "Frequent swallowing",
+      "Temperature 99.5°F (37.5°C)"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Frequent swallowing suggests blood trickling down the back of the throat and is an early sign of hemorrhage. Ear pain is common referred pain after tonsillectomy, and refusing rough food is expected."
+  },
+  {
+    "domain": "nclexRisk",
+    "test": 2,
+    "skill": "MRI preparation",
+    "difficulty": 1,
+    "format": "multi",
+    "stem": "The nurse prepares a client for an MRI of the brain. Which actions are appropriate? Select all that apply.",
+    "options": [
+      "Ask about implanted devices",
+      "Remove metal jewelry and patches",
+      "Withhold food for 24 hours",
+      "Ask about fear of closed spaces",
+      "Shave the scalp over the area"
+    ],
+    "correct": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Implanted devices, jewelry and foil-backed medication patches can be pulled or heated by the magnet, and claustrophobia may require sedation or an open scanner. A 24-hour fast is not required, and shaving has no role in MRI."
+  },
+  {
+    "domain": "nclexRisk",
+    "test": 2,
+    "skill": "Post lumbar puncture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client who had a lumbar puncture this morning reports a headache that worsens when sitting up and eases when lying down. Which action should the nurse take?",
+    "options": [
+      "Raise the head of the bed to 45 degrees",
+      "Position flat and encourage fluids",
+      "Limit oral fluid intake",
+      "Apply a warm pack to the site"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A positional headache after lumbar puncture comes from CSF leaking at the puncture site, and lying flat with generous fluids relieves it while it seals. Raising the head of the bed worsens it, and restricting fluids slows CSF replacement."
+  },
+  {
+    "domain": "nclexRisk",
+    "test": 2,
+    "skill": "Pre-biopsy coagulation",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "| Lab | Result |\n|---|---|\n| INR | 2.8 |\n| Platelets | 210,000/mm3 |\n| Hemoglobin | 12.9 g/dL |\n| Potassium | 4.1 mEq/L |",
+    "stem": "A client who takes warfarin for atrial fibrillation is scheduled for a percutaneous liver biopsy this afternoon. Which result should the nurse report before the procedure?",
+    "options": [
+      "INR 2.8",
+      "Platelets 210,000/mm3",
+      "Hemoglobin 12.9 g/dL",
+      "Potassium 4.1 mEq/L"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The liver is very vascular, and an INR of 2.8 carries a high bleeding risk, so the HCP must address it before the biopsy. The platelet count, hemoglobin and potassium are within normal limits."
+  },
+  {
+    "domain": "nclexRisk",
+    "test": 2,
+    "skill": "Dialysis access check",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The nurse assesses a client with an arteriovenous fistula in the left forearm used for hemodialysis. Which finding should the nurse report?",
+    "options": [
+      "Absent thrill over the fistula",
+      "Bruit heard with a stethoscope",
+      "Weight up 1 kg since dialysis",
+      "BP 138/84 in the right arm"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A palpable thrill and audible bruit show blood flowing through the fistula, so an absent thrill suggests clotting and needs prompt follow-up. A bruit is the expected finding, and a 1 kg gain between sessions is common."
+  },
+  {
+    "domain": "nclexRisk",
+    "test": 2,
+    "skill": "Bladder irrigation risks",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "A client is 6 hours past a transurethral resection of the prostate with continuous bladder irrigation. Which findings require follow-up? Select all that apply.",
+    "options": [
+      "Light pink urine in the tubing",
+      "Bright red urine with clots",
+      "Mild urge to void",
+      "Output less than irrigant volume",
+      "Sodium 126 mEq/L"
+    ],
+    "correct": [
+      1,
+      3,
+      4
+    ],
+    "explanation": "Bright red urine with clots suggests arterial bleeding, output below the instilled volume suggests a blocked catheter, and low sodium suggests fluid absorption (TUR syndrome). Light pink drainage is expected, and an urge to void is common with the catheter balloon in place."
+  },
+  {
+    "domain": "nclexRisk",
+    "test": 2,
+    "skill": "Postoperative PE",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A client 2 days after hip surgery suddenly reports sharp chest pain and shortness of breath. Heart rate is 120 beats/min and SpO2 is 86%. A colleague calls the rapid response team. Which action should the nurse take first?",
+    "options": [
+      "Obtain a 12-lead ECG at bedside",
+      "Raise the HOB and apply oxygen",
+      "Draw an arterial blood gas sample",
+      "Start a continuous heparin drip"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "These findings suggest pulmonary embolism, and the first priority is oxygenation: sitting the client up and giving oxygen. The ECG and blood gases come next, and heparin requires an HCP prescription after the diagnosis is considered."
+  },
+  {
+    "domain": "nclexRisk",
+    "test": 2,
+    "skill": "Postoperative urine output",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "| Time | Urine output |\n|---|---|\n| 1300 | 45 mL |\n| 1400 | 35 mL |\n| 1500 | 22 mL |\n| 1600 | 18 mL |",
+    "stem": "The nurse reviews hourly output from the indwelling catheter of a 70 kg client after major surgery. Which interpretation is accurate?",
+    "options": [
+      "Output within the expected range",
+      "Output below 0.5 mL/kg/hr",
+      "Output shows fluid overload",
+      "Output expected after anesthesia"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The minimum for a 70 kg adult is 0.5 mL/kg/hr, or 35 mL/hr, and the last two hours fell to 22 and 18 mL/hr, which suggests hypovolemia or poor kidney perfusion. Lower output after surgery is common, but not below this threshold."
+  },
+  {
+    "domain": "nclexRisk",
+    "test": 0,
+    "skill": "Liver biopsy aftercare",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "After a percutaneous liver biopsy, in which position should the nurse place the client?",
+    "options": [
+      "Left side with knees bent",
+      "Right side with a pillow",
+      "Supine, legs elevated",
+      "High Fowler's position"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Lying on the right side presses the liver against the chest wall and helps tamponade the puncture site to prevent bleeding. Lying on the left side takes that pressure off the site."
+  },
+  {
+    "domain": "nclexRisk",
+    "test": 0,
+    "skill": "Postoperative lab review",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "The nurse reviews morning labs for an adult client after surgery. Which results should the nurse report to the HCP? Select all that apply.",
+    "options": [
+      "Potassium 5.9 mEq/L",
+      "Sodium 140 mEq/L",
+      "Hemoglobin 7.2 g/dL",
+      "Glucose 92 mg/dL",
+      "Platelets 48,000/mm3"
+    ],
+    "correct": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "Potassium above 5.0, hemoglobin well below 12 and platelets below 150,000 all fall outside normal ranges and carry risks of dysrhythmia, poor oxygen delivery and bleeding. Sodium 140 and fasting glucose 92 are normal."
+  },
+  {
+    "domain": "nclexRisk",
+    "test": 0,
+    "skill": "Post-bronchoscopy airway",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "1000: Returned from bronchoscopy with biopsy. Gag reflex absent.\n1100: Gag reflex still absent. Small amount of blood-streaked sputum. Reports sore throat.\n1115: High-pitched sound heard on inspiration. SpO2 90%.",
+    "stem": "The nurse reviews notes on a client who had a bronchoscopy with biopsy. Which finding requires immediate follow-up?",
+    "options": [
+      "Small blood-streaked sputum",
+      "Sore and scratchy throat",
+      "Noisy high-pitched breathing",
+      "Gag reflex not yet returned"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "High-pitched inspiratory noise is stridor, a sign of laryngeal edema or laryngospasm that threatens the airway. Blood-streaked sputum after biopsy, a sore throat and a gag reflex still absent at 1 hour are expected."
+  },
+  {
+    "domain": "nclexRisk",
+    "test": 0,
+    "skill": "Preoperative findings",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "The nurse completes a preoperative assessment on a client scheduled for surgery under general anesthesia this morning. Which findings should the nurse report to the surgeon? Select all that apply.",
+    "options": [
+      "Feeling anxious about surgery",
+      "Potassium 2.9 mEq/L",
+      "Ate breakfast 2 hours ago",
+      "Wears reading glasses",
+      "Temperature 101.2°F (38.4°C)"
+    ],
+    "correct": [
+      1,
+      2,
+      4
+    ],
+    "explanation": "Low potassium raises the risk of dysrhythmias under anesthesia, a recent meal raises the risk of aspiration, and fever may signal infection, so each can delay surgery. Anxiety is addressed by the nurse, and reading glasses are simply removed and stored."
+  }
+]

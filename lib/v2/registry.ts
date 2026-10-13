@@ -2,11 +2,12 @@ import { ExamV2Config } from "./types";
 import { SAT } from "./exams/sat";
 import { TEAS } from "./exams/teas";
 import { HESI } from "./exams/hesi";
+import { NCLEX } from "./exams/nclex";
 import { ASVAB } from "./exams/asvab";
 import { ACCUPLACER } from "./exams/accuplacer";
 import { ACT } from "./exams/act";
 
-export const EXAMS_V2: ExamV2Config[] = [SAT, ACT, TEAS, HESI, ASVAB, ACCUPLACER];
+export const EXAMS_V2: ExamV2Config[] = [SAT, ACT, TEAS, HESI, ASVAB, ACCUPLACER, NCLEX];
 
 export function getExamV2(id: string): ExamV2Config {
   const exam = EXAMS_V2.find((e) => e.id === id);

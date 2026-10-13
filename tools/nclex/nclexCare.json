@@ -1,0 +1,685 @@
+[
+  {
+    "domain": "nclexCare",
+    "test": 1,
+    "skill": "Prioritizing clients",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "The nurse receives handoff report on four clients. Which client should the nurse assess first?",
+    "options": [
+      "COPD client, SpO2 89% on 2 L/min",
+      "Asthma client, wheezes gone, SpO2 88%",
+      "Heart failure client, 2+ ankle edema",
+      "New colostomy client, beefy red stoma"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Wheezing that disappears while SpO2 falls during an asthma attack signals a silent chest from severe airflow obstruction and impending respiratory failure. An SpO2 near 89% is an acceptable target for many clients with COPD, ankle edema is a chronic heart failure finding, and a beefy red stoma is normal."
+  },
+  {
+    "domain": "nclexCare",
+    "test": 1,
+    "skill": "Delegation to AP",
+    "difficulty": 1,
+    "format": "multi",
+    "stem": "The RN is planning care on a medical-surgical unit. Which tasks can the RN delegate to assistive personnel (AP)? Select all that apply.",
+    "options": [
+      "Obtain vital signs on a stable client",
+      "Assess a new stage 2 pressure injury",
+      "Help a client with a bed bath",
+      "Record oral intake at mealtimes",
+      "Teach use of an incentive spirometer"
+    ],
+    "correct": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "AP can perform routine, standardized tasks for stable clients, such as vital signs, hygiene and measuring intake. Assessing a new pressure injury and teaching require RN judgment and cannot be delegated to AP."
+  },
+  {
+    "domain": "nclexCare",
+    "test": 1,
+    "skill": "LPN assignment",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The charge nurse is making assignments. Which client is most appropriate to assign to the licensed practical nurse (LPN)?",
+    "options": [
+      "Client needing initial teaching on warfarin",
+      "Client starting a first unit of packed RBCs",
+      "Client with chest pain admitted 30 minutes ago",
+      "Client with stable diabetes due for insulin"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An LPN can care for a stable client with a predictable condition, including giving scheduled subcutaneous insulin. A new admission with chest pain needs RN assessment, initial teaching is an RN responsibility, and the start of a transfusion, when reactions are most likely, is monitored by the RN."
+  },
+  {
+    "domain": "nclexCare",
+    "test": 1,
+    "skill": "Informed consent",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client scheduled for a colectomy tells the nurse, \"I'm not sure what the surgeon is going to remove.\" The consent form is not yet signed. Which action should the nurse take?",
+    "options": [
+      "Ask the spouse to sign the consent",
+      "Explain the procedure to the client",
+      "Notify the surgeon before signing",
+      "Have the client sign and clarify later"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The surgeon must explain the procedure, risks and alternatives, so the nurse holds the signing and notifies the surgeon when the client lacks understanding. Explaining the surgery is not the nurse's role in consent, which is to witness the signature and confirm the client understands."
+  },
+  {
+    "domain": "nclexCare",
+    "test": 1,
+    "skill": "Health care proxy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The nurse teaches a client about naming a durable power of attorney for health care. Which client statement indicates understanding?",
+    "options": [
+      "\"It only takes effect after I have died.\"",
+      "\"My sister will decide for me if I can't decide.\"",
+      "\"My sister can overrule me even while I'm alert.\"",
+      "\"This also lets my sister pay my bills for me.\""
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A health care agent makes decisions only when the client cannot, and the client's own choices govern while the client has capacity. Financial matters need a separate financial power of attorney, and the authority ends, rather than begins, at death."
+  },
+  {
+    "domain": "nclexCare",
+    "test": 1,
+    "skill": "Confidentiality",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which actions by health care staff violate client confidentiality? Select all that apply.",
+    "options": [
+      "Discussing a client's diagnosis in an elevator",
+      "Sharing lab results with a consulting HCP",
+      "Giving handoff report in a private area",
+      "Posting a photo showing a client's name board",
+      "Reviewing the chart of a client in your care"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "explanation": "Talking about a client in a public space and posting images with identifying details are privacy breaches. Sharing results with a treating HCP, private handoff and reviewing the record of an assigned client are permitted uses of information for care."
+  },
+  {
+    "domain": "nclexCare",
+    "test": 1,
+    "skill": "Incident reports",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client's 0900 antibiotic was missed and given at 1130. Which statement about the incident report is correct?",
+    "options": [
+      "Chart that an incident report was completed",
+      "Have the client sign the completed report",
+      "Complete it only if the client is harmed",
+      "File it separately from the client's record"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An incident report is a confidential quality improvement document kept out of the medical record, and the chart describes only the facts and the care given, not that a report was filed. Reports are completed for errors and near misses whether or not harm occurred."
+  },
+  {
+    "domain": "nclexCare",
+    "test": 1,
+    "skill": "SBAR communication",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The nurse calls the HCP about a client with a possible postoperative bleed using SBAR. Which statement belongs in the Recommendation?",
+    "options": [
+      "\"He had a bowel resection yesterday.\"",
+      "\"I think he may be bleeding internally.\"",
+      "\"Please come see him within 15 minutes.\"",
+      "\"I'm calling about Mr. Lee in room 4.\""
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Recommendation states what the nurse needs, such as a bedside evaluation within a set time. The other statements are the Situation, Background and Assessment."
+  },
+  {
+    "domain": "nclexCare",
+    "test": 1,
+    "skill": "Multiple client priority",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "| Client | Report from night nurse |\n|---|---|\n| A, 4 hours after thyroidectomy | Hoarse voice, noisy breathing |\n| B, cellulitis of the leg | Temperature 100.6 F |\n| C, heart failure | Weight up 0.5 kg since yesterday |\n| D, appendectomy yesterday | Incision pain 6/10 |",
+    "stem": "The nurse reviews the night nurse's report. Which client should the nurse see first?",
+    "options": [
+      "Client A, after thyroidectomy",
+      "Client B, with cellulitis",
+      "Client C, with heart failure",
+      "Client D, after appendectomy"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Hoarseness with noisy breathing after a thyroidectomy suggests laryngeal edema or nerve injury and an airway at risk, which comes first. A low-grade fever with cellulitis, a small weight gain and expected incision pain need attention but do not threaten the airway."
+  },
+  {
+    "domain": "nclexCare",
+    "test": 1,
+    "skill": "Discharge readiness",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Nurses' notes, day of planned discharge: 64-year-old client 2 days after hernia repair, newly diagnosed with type 2 diabetes, starting insulin glargine at home. Incision pain 2/10. Last bowel movement yesterday. Temperature 99.0 F. Could not set the dose on the insulin pen during return demonstration.",
+    "stem": "Which finding should the nurse address before this client goes home?",
+    "options": [
+      "Cannot set the insulin pen dose",
+      "Incision pain rated 2 out of 10",
+      "No bowel movement since yesterday",
+      "Oral temperature of 99.0 F"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A client who cannot set an insulin dose safely is not ready to self-manage, so the nurse reteaches, involves a caregiver or arranges home health follow-up before discharge. Mild incision pain, a bowel movement yesterday and a temperature of 99.0 F are acceptable at discharge."
+  },
+  {
+    "domain": "nclexCare",
+    "test": 1,
+    "skill": "Leaving against advice",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A client being treated for pneumonia tells the nurse, \"I'm leaving now, I don't care what the doctor says.\" Which action is appropriate?",
+    "options": [
+      "Keep the client's clothes until the HCP comes",
+      "Apply restraints until the HCP arrives",
+      "Tell the client insurance will not pay",
+      "Notify the HCP and explain the risks"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A competent adult may leave against medical advice, so the nurse explains the risks, notifies the HCP and asks the client to sign the AMA form. Holding belongings or restraining the client is false imprisonment, and warning about insurance is a misleading pressure tactic."
+  },
+  {
+    "domain": "nclexCare",
+    "test": 1,
+    "skill": "Ethical principles",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A nurse supports a competent client's decision to stop dialysis, although the nurse believes dialysis would help. Which ethical principle is the nurse upholding?",
+    "options": [
+      "Nonmaleficence, avoiding harm",
+      "Justice in allocating care",
+      "Respect for autonomy",
+      "Beneficence toward the client"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Autonomy is the client's right to make informed choices about their own care, including refusing treatment. Beneficence, doing good, is the principle the nurse sets aside here in favor of the client's choice."
+  },
+  {
+    "domain": "nclexCare",
+    "test": 1,
+    "skill": "LPN scope of practice",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "The RN is working with a licensed practical nurse (LPN) on a medical unit. Which tasks are appropriate to assign to the LPN? Select all that apply.",
+    "options": [
+      "Reinforce teaching on a low-sodium diet",
+      "Perform the admission assessment",
+      "Give scheduled oral medications",
+      "Change a dressing on a stable wound",
+      "Teach a new diabetic to self-inject"
+    ],
+    "correct": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "LPNs can reinforce teaching the RN has started, give scheduled oral medications and do routine dressing changes on stable clients. The admission assessment and initial teaching for a new diagnosis require the RN."
+  },
+  {
+    "domain": "nclexCare",
+    "test": 1,
+    "skill": "Supervising AP",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "| Time | BP | HR | Recorded by |\n|---|---|---|---|\n| 0800 | 128/74 | 82 | AP |\n| 1000 | 86/50 | 112 | AP |\n| 1200 | 94/58 | 104 | AP |\nThe AP did not report the 1000 or 1200 readings to the RN.",
+    "stem": "At 1300 the RN reviews this flow sheet for a client who had surgery yesterday. Which action should the RN take first?",
+    "options": [
+      "Assess the client at the bedside now",
+      "Review reporting expectations with the AP",
+      "Complete an incident report on the delay",
+      "Recheck the AP's skill at measuring BP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The unreported low blood pressure and rising heart rate suggest bleeding or hypovolemia, so the RN assesses the client first and then notifies the surgeon. Feedback to the AP and reporting the delay follow once the client is safe."
+  },
+  {
+    "domain": "nclexCare",
+    "test": 1,
+    "skill": "Quality improvement",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A unit's quality improvement team is tracking fall prevention. Which measure is an outcome measure?",
+    "options": [
+      "Percent of clients screened for fall risk",
+      "Number of bed alarms on the unit",
+      "Hours of staff fall-prevention training",
+      "Falls per 1,000 client days"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Outcome measures track results for clients, such as the fall rate. The percent of clients screened is a process measure, and equipment and staff training are structure measures."
+  },
+  {
+    "domain": "nclexCare",
+    "test": 2,
+    "skill": "Prioritizing clients",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "After change-of-shift report, which client should the nurse assess first?",
+    "options": [
+      "Type 1 diabetes client, glucose 245 mg/dL",
+      "Client with dementia calling out for family",
+      "Post-MI client with new crackles and dyspnea",
+      "Sickle cell client reporting pain of 7/10"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "New dyspnea and crackles after an MI suggest acute heart failure or pulmonary edema, a breathing problem that comes first. Sickle cell pain needs prompt treatment next, and the elevated glucose and calling out are not immediately life-threatening."
+  },
+  {
+    "domain": "nclexCare",
+    "test": 2,
+    "skill": "Supervising AP",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The RN supervises an AP caring for a client 2 days after hip replacement. Which statement by the AP requires the RN to intervene?",
+    "options": [
+      "\"I'll help him to the chair with his walker.\"",
+      "\"I'll hang his next bag of IV fluids now.\"",
+      "\"I'll tell you if his heart rate is over 100.\"",
+      "\"I'll keep the pillow between his knees.\""
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Hanging IV fluids is outside the AP's scope, so the RN stops the AP and does it. Assisting with ambulation, reporting vital sign changes and keeping the abduction pillow in place are appropriate AP actions."
+  },
+  {
+    "domain": "nclexCare",
+    "test": 2,
+    "skill": "Informed consent",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Before a client signs a consent for surgery, which conditions must be met? Select all that apply.",
+    "options": [
+      "The client is an adult or emancipated",
+      "The client is not impaired by sedatives",
+      "The HCP has explained risks and options",
+      "The family agrees with the decision",
+      "The nurse has explained the procedure"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Valid consent requires legal age or emancipation, capacity free of impairing medication, and disclosure of risks, benefits and alternatives by the HCP. Family agreement is not required for a competent adult, and explaining the procedure is the HCP's duty, not the nurse's."
+  },
+  {
+    "domain": "nclexCare",
+    "test": 2,
+    "skill": "Advance directives",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "Nurses' notes, 0300: 81-year-old client with end-stage COPD, unresponsive, RR 8/min, SpO2 78%. Chart contains a signed living will refusing intubation and mechanical ventilation. Daughter at bedside: \"Do whatever it takes. Put her on a breathing machine.\"",
+    "stem": "Based on the nurses' notes and the living will, which action should the nurse take?",
+    "options": [
+      "Prepare for intubation as the daughter asks",
+      "Ask the daughter to sign intubation consent",
+      "Start bag-mask breathing until HCP decides",
+      "Honor the living will and notify the HCP"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A valid living will states the client's own wishes and is followed even when family disagrees; the nurse notifies the HCP so orders match it and keeps the client comfortable. The daughter cannot override the client's documented refusal, and bag-mask ventilation is the assisted breathing the client declined."
+  },
+  {
+    "domain": "nclexCare",
+    "test": 2,
+    "skill": "Confidentiality",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A caller says he is a client's son and asks how the client's surgery went. Which action should the nurse take?",
+    "options": [
+      "Hand the call to the charge nurse to answer",
+      "Give a brief update, since he is family",
+      "Verify he is on the client's contact list",
+      "Say there is no such client on the unit"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Information is released only to people the client has authorized, often confirmed with a privacy code, so the nurse checks that first. Being a relative does not by itself give a right to health information, and passing the call along does not settle the privacy question."
+  },
+  {
+    "domain": "nclexCare",
+    "test": 2,
+    "skill": "Impaired colleague",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A nurse sees a coworker put a client's prescribed oxycodone tablet into her own pocket. Which action should the nurse take?",
+    "options": [
+      "Count the opioids in the cabinet tonight",
+      "Report it to the nurse manager at once",
+      "Talk with the coworker privately first",
+      "Watch for a second incident before acting"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Suspected drug diversion endangers clients and is reported promptly through the chain of command, which protects clients and gets the coworker help. A private talk or waiting for more evidence delays action and leaves clients at risk."
+  },
+  {
+    "domain": "nclexCare",
+    "test": 2,
+    "skill": "Discharge planning",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "When should the nurse begin discharge planning for a client admitted with pneumonia?",
+    "options": [
+      "At the time of admission",
+      "When the discharge order is written",
+      "Once the client's fever has resolved",
+      "On the day before planned discharge"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Discharge planning starts at admission so needs such as equipment, teaching and home support are found early and the client leaves safely on time. Waiting for the order, the fever to resolve or the last day leaves too little time to arrange services."
+  },
+  {
+    "domain": "nclexCare",
+    "test": 2,
+    "skill": "SBAR communication",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "| Time | BP | HR | RR | Urine output |\n|---|---|---|---|---|\n| 0800 | 124/78 | 84 | 16 | 50 mL/hr |\n| 1000 | 108/70 | 98 | 20 | 35 mL/hr |\n| 1200 | 94/62 | 114 | 24 | 20 mL/hr |",
+    "stem": "A client had abdominal surgery yesterday. The nurse calls the surgeon using SBAR. Which recommendation is most appropriate?",
+    "options": [
+      "Request vital sign checks every 4 hours",
+      "Request an increase in the IV morphine dose",
+      "Request a urinalysis and urine culture",
+      "Request bedside evaluation and a stat CBC"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Falling BP, rising heart and respiratory rates, and dropping urine output point to hypovolemia, possibly from bleeding, so the nurse asks for prompt evaluation and labs. Less frequent vital signs or more opioid would delay care or worsen hypotension, and the low urine output reflects poor perfusion, not infection."
+  },
+  {
+    "domain": "nclexCare",
+    "test": 2,
+    "skill": "Float nurse assignment",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A pediatric nurse floats to an adult medical unit. Which client is most appropriate for the charge nurse to assign to this nurse?",
+    "options": [
+      "Client on a continuous insulin infusion for DKA",
+      "Client just returned from cardiac catheterization",
+      "Client with stable asthma on scheduled inhalers",
+      "Client with a new tracheostomy and copious secretions"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A float nurse should receive a stable client whose care matches skills the nurse already has, such as asthma management. A fresh tracheostomy, an insulin infusion for DKA and a client just back from catheterization are less stable and need closer, unit-specific monitoring."
+  },
+  {
+    "domain": "nclexCare",
+    "test": 2,
+    "skill": "Questioning orders",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The HCP orders a medication dose that is twice the usual maximum dose. Which action should the nurse take?",
+    "options": [
+      "Ask pharmacy to send a lower dose",
+      "Clarify the order with the HCP",
+      "Give the dose as it is written",
+      "Give half the dose and document why"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The nurse is accountable for every dose given, so an order outside the safe range is clarified with the prescriber before giving anything. Changing the dose or asking pharmacy to substitute is practicing outside the nurse's authority."
+  },
+  {
+    "domain": "nclexCare",
+    "test": 2,
+    "skill": "Recognizing urgent findings",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "After receiving handoff report, which findings require the nurse's immediate attention? Select all that apply.",
+    "options": [
+      "Postoperative client, SpO2 86% on room air",
+      "Client on heparin with new black stools",
+      "Client with pneumonia, temperature 100.2 F",
+      "Client after stroke with new slurred speech",
+      "Client with chest pain despite nitroglycerin"
+    ],
+    "correct": [
+      0,
+      1,
+      3,
+      4
+    ],
+    "explanation": "Hypoxemia, signs of GI bleeding during anticoagulation, a new neurologic deficit and unrelieved chest pain are all unstable findings. A low-grade fever of 100.2 F in a client being treated for pneumonia is expected and can wait."
+  },
+  {
+    "domain": "nclexCare",
+    "test": 2,
+    "skill": "Interprofessional referral",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client recovering from a stroke coughs and clears the throat during meals. Which team member should the nurse request a referral to?",
+    "options": [
+      "Occupational therapist",
+      "Registered dietitian nutritionist",
+      "Respiratory therapist",
+      "Speech-language pathologist"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Coughing and throat clearing during meals are signs of dysphagia and aspiration risk, which a speech-language pathologist evaluates with a swallow study. An occupational therapist helps with adaptive utensils and a dietitian with textures and nutrition once the swallow is assessed."
+  },
+  {
+    "domain": "nclexCare",
+    "test": 2,
+    "skill": "Managing conflict",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two staff nurses are arguing loudly at the nurses' station about their assignments. Which action should the charge nurse take first?",
+    "options": [
+      "Report both nurses to the unit manager",
+      "Leave them to settle it on their own",
+      "Move the discussion to a private area",
+      "Reassign both nurses' clients now"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The first step is to stop the public conflict, which affects clients and staff, by moving it somewhere private and then helping the nurses resolve it. Reassigning or reporting both nurses skips that step, and ignoring it lets the conflict continue in front of clients."
+  },
+  {
+    "domain": "nclexCare",
+    "test": 2,
+    "skill": "Consent by minors",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which client can legally sign their own consent for surgery?",
+    "options": [
+      "Adult with dementia who has a legal guardian",
+      "17-year-old serving on active military duty",
+      "15-year-old who wants an elective tonsillectomy",
+      "Adult given IV morphine 30 minutes ago"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Minors on active military duty are considered emancipated in most states and can consent for themselves. A 15-year-old needs a parent or guardian for elective surgery, recent opioid sedation impairs capacity, and a client with a court-appointed guardian relies on that guardian."
+  },
+  {
+    "domain": "nclexCare",
+    "test": 2,
+    "skill": "LPN assignment",
+    "difficulty": 3,
+    "format": "multi",
+    "passage": "| Client | Status |\n|---|---|\n| A | 68 years, stable COPD, scheduled nebulizers |\n| B | 45 years, admitted 20 minutes ago with GI bleed |\n| C | 72 years, 3 days after hip repair, stable |\n| D | 59 years, needs first teaching for new colostomy |\n| E | 50 years, blood transfusion just started |",
+    "stem": "The RN is assigning clients for the shift. Which clients are appropriate to assign to the LPN? Select all that apply.",
+    "options": [
+      "Client A, stable COPD",
+      "Client B, new GI bleed",
+      "Client C, hip repair day 3",
+      "Client D, new colostomy",
+      "Client E, transfusion started"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "Stable clients with predictable needs, A and C, fit the LPN's scope. The new GI bleed needs RN assessment, initial ostomy teaching is an RN responsibility, and the first minutes of a transfusion, when reactions occur, need RN monitoring."
+  },
+  {
+    "domain": "nclexCare",
+    "test": 0,
+    "skill": "Using interpreters",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client who speaks limited English must give consent for a procedure. The client's 15-year-old daughter offers to interpret. Which action should the nurse take?",
+    "options": [
+      "Let the daughter interpret since she's here",
+      "Explain slowly using simple English",
+      "Ask a bilingual housekeeper to help",
+      "Arrange a qualified medical interpreter"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Consent and other medical discussions need a qualified medical interpreter, in person, by phone or by video, for accuracy and privacy. Family members, especially minors, may filter or misstate information, and simple English does not ensure understanding."
+  },
+  {
+    "domain": "nclexCare",
+    "test": 0,
+    "skill": "Mandatory reporting",
+    "difficulty": 1,
+    "format": "multi",
+    "stem": "Which diagnoses must be reported to the public health department? Select all that apply.",
+    "options": [
+      "Active pulmonary tuberculosis",
+      "Uncomplicated urinary tract infection",
+      "Measles in a school-age child",
+      "Newly diagnosed primary syphilis",
+      "Strep throat in a teenager"
+    ],
+    "correct": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "Tuberculosis, measles and syphilis are notifiable diseases that health departments track to trace contacts and control spread. A simple urinary tract infection and strep throat are treated without a public health report."
+  },
+  {
+    "domain": "nclexCare",
+    "test": 0,
+    "skill": "Case management",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A client on a critical pathway after knee replacement cannot walk on postoperative day 1 as the pathway expects. How should the nurse classify this?",
+    "options": [
+      "An adverse event from the surgery",
+      "A variance from the pathway",
+      "A sentinel event requiring review",
+      "A near miss for the safety report"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A variance is any deviation from the expected outcome or timeline on a critical pathway, which the case manager reviews and addresses. A sentinel event involves death or serious harm, and a near miss is an error caught before it reached the client."
+  },
+  {
+    "domain": "nclexCare",
+    "test": 0,
+    "skill": "Incident reports",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which situations should the nurse document in an incident report? Select all that apply.",
+    "options": [
+      "A medication given 2 hours late",
+      "A visitor slipping on a wet floor",
+      "An IV pump found at the wrong rate",
+      "A client refusing a scheduled bath",
+      "A meal tray given to the wrong client"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "explanation": "Late medications, visitor injuries, wrong infusion rates and a meal given to the wrong client are errors or unexpected events that belong in an incident report. A client's refusal of a bath is the client's right and is documented in the chart, not reported as an incident."
+  },
+  {
+    "domain": "nclexCare",
+    "test": 0,
+    "skill": "Prioritizing lab results",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "| Client | Result |\n|---|---|\n| A, receiving furosemide | Potassium 3.4 mEq/L |\n| B, chronic kidney disease | Creatinine 3.8 mg/dL |\n| C, heparin infusion | aPTT 112 seconds |\n| D, warfarin for atrial fibrillation | INR 2.7 |",
+    "stem": "The nurse reviews morning laboratory results for four clients. Which client should the nurse follow up on first?",
+    "options": [
+      "Client A, receiving furosemide",
+      "Client B, chronic kidney disease",
+      "Client C, heparin infusion",
+      "Client D, warfarin therapy"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An aPTT of 112 seconds is far above a typical therapeutic heparin range of about 1.5 to 2.5 times control, so the client is at risk for bleeding and the nurse follows the heparin protocol and notifies the HCP. The slightly low potassium needs replacement soon, a high creatinine is expected in chronic kidney disease, and an INR of 2.7 is therapeutic for atrial fibrillation."
+  },
+  {
+    "domain": "nclexCare",
+    "test": 0,
+    "skill": "Discharge referrals",
+    "difficulty": 3,
+    "format": "multi",
+    "passage": "Nurses' notes: 82-year-old client, day 4 after hip fracture repair, discharge planned in 2 days. Walks 15 feet with a walker and standby assist. Lives alone in a two-story home, bedroom upstairs. Daughter lives out of state. Speech clear, swallowing without difficulty.",
+    "stem": "Which referrals should the nurse anticipate for this client's discharge plan? Select all that apply.",
+    "options": [
+      "Speech therapy swallow evaluation",
+      "Physical therapy for gait training",
+      "Hospice care for end-of-life support",
+      "Occupational therapy home evaluation",
+      "Case manager for post-acute care options"
+    ],
+    "correct": [
+      1,
+      3,
+      4
+    ],
+    "explanation": "Limited walking, living alone and an upstairs bedroom call for physical therapy, an occupational therapy home safety evaluation and a case manager to arrange rehabilitation or home support. Swallowing is normal, so speech therapy is not needed, and nothing suggests end-of-life care."
+  }
+]

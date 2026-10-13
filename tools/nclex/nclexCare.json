@@ -170,21 +170,32 @@
   {
     "domain": "nclexCare",
     "test": 1,
-    "skill": "Discharge readiness",
+    "skill": "Evaluating heart failure care",
     "difficulty": 2,
-    "format": "single",
-    "passage": "Nurses' notes, day of planned discharge: 64-year-old client 2 days after hernia repair, newly diagnosed with type 2 diabetes, starting insulin glargine at home. Incision pain 2/10. Last bowel movement yesterday. Temperature 99.0 F. Could not set the dose on the insulin pen during return demonstration.",
-    "stem": "Which finding should the nurse address before this client goes home?",
-    "options": [
-      "Cannot set the insulin pen dose",
-      "Incision pain rated 2 out of 10",
-      "No bowel movement since yesterday",
-      "Oral temperature of 99.0 F"
+    "format": "matrix",
+    "passage": "Day 3, 0800: Weight 81.4 kg. Lungs clear. SpO2 95% on room air. Sleeps on one pillow. 3+ pitting edema of both ankles. The client says, \"Once my ankles look normal, I can stop the water pill.\"",
+    "stimulusId": "NCLEX-CS1",
+    "caseStep": 6,
+    "stem": "The nurse evaluates the client's response to treatment before discharge. For each finding, specify whether it shows improvement or needs follow-up.",
+    "rows": [
+      "Weight 81.4 kg",
+      "Sleeps on one pillow",
+      "SpO2 95% on room air",
+      "3+ pitting ankle edema",
+      "Plans to stop the water pill"
+    ],
+    "columns": [
+      "Shows improvement",
+      "Needs follow-up"
     ],
     "correct": [
-      0
+      0,
+      0,
+      0,
+      1,
+      1
     ],
-    "explanation": "A client who cannot set an insulin dose safely is not ready to self-manage, so the nurse reteaches, involves a caregiver or arranges home health follow-up before discharge. Mild incision pain, a bowel movement yesterday and a temperature of 99.0 F are acceptable at discharge."
+    "explanation": "A 3.1 kg weight loss, sleeping flat on one pillow and a normal SpO2 on room air show the congestion has resolved. Ankle edema unchanged at 3+ still needs follow-up, and planning to stop furosemide when the ankles improve is a teaching gap that could cause another admission."
   },
   {
     "domain": "nclexCare",
@@ -247,20 +258,17 @@
     "domain": "nclexCare",
     "test": 1,
     "skill": "Supervising AP",
-    "difficulty": 3,
-    "format": "single",
-    "passage": "| Time | BP | HR | Recorded by |\n|---|---|---|---|\n| 0800 | 128/74 | 82 | AP |\n| 1000 | 86/50 | 112 | AP |\n| 1200 | 94/58 | 104 | AP |\nThe AP did not report the 1000 or 1200 readings to the RN.",
-    "stem": "At 1300 the RN reviews this flow sheet for a client who had surgery yesterday. Which action should the RN take first?",
-    "options": [
-      "Assess the client at the bedside now",
-      "Review reporting expectations with the AP",
-      "Complete an incident report on the delay",
-      "Recheck the AP's skill at measuring BP"
-    ],
+    "difficulty": 2,
+    "format": "highlight",
+    "passage": "| Time | Finding recorded by the AP |\n|---|---|\n| 0800 | {{BP 126/78 mm Hg}}, {{HR 84/min}} |\n| 1000 | {{BP 92/54 mm Hg}}, {{HR 116/min}} |\n| 1000 | {{Rates pain 3 of 10}} |\n| 1000 | {{Urine 15 mL in 2 hours}} |\n| 1000 | {{Drank half of the clear liquids}} |\n| 1000 | {{Restless, keeps trying to get up}} |",
+    "stem": "At 1030 the RN reviews the flow sheet an AP kept for a client who had a bowel resection yesterday. Highlight the findings the AP should have reported to the RN at once.",
     "correct": [
-      0
+      2,
+      3,
+      5,
+      7
     ],
-    "explanation": "The unreported low blood pressure and rising heart rate suggest bleeding or hypovolemia, so the RN assesses the client first and then notifies the surgeon. Feedback to the AP and reporting the delay follow once the client is safe."
+    "explanation": "A drop in BP to 92/54 with a heart rate of 116, urine output under 30 mL/hr and new restlessness are signs of hypovolemia or bleeding that the AP must report immediately. The 0800 vital signs, mild pain and taking half of a clear liquid tray are expected the day after surgery."
   },
   {
     "domain": "nclexCare",
@@ -395,20 +403,20 @@
   {
     "domain": "nclexCare",
     "test": 2,
-    "skill": "Discharge planning",
-    "difficulty": 1,
-    "format": "single",
-    "stem": "When should the nurse begin discharge planning for a client admitted with pneumonia?",
-    "options": [
-      "At the time of admission",
-      "When the discharge order is written",
-      "Once the client's fever has resolved",
-      "On the day before planned discharge"
-    ],
+    "skill": "Evaluating sepsis care",
+    "difficulty": 3,
+    "format": "highlight",
+    "passage": "1500 Nurses' note: After the fluid bolus and the first antibiotic dose, {{BP 112/64 mm Hg}}, {{HR 96/min}}, {{T 99.8 F}}. {{Urine 25 mL in the last 2 hours}}. Repeat {{lactate 3.9 mmol/L}}. {{Crackles in both lung bases}}, {{SpO2 89% on 2 L/min}}. {{Oriented to person and place}}.",
+    "stimulusId": "NCLEX-CS2",
+    "caseStep": 6,
+    "stem": "The nurse evaluates the client's response to treatment. Highlight the findings that require follow-up.",
     "correct": [
-      0
+      3,
+      4,
+      5,
+      6
     ],
-    "explanation": "Discharge planning starts at admission so needs such as equipment, teaching and home support are found early and the client leaves safely on time. Waiting for the order, the fever to resolve or the last day leaves too little time to arrange services."
+    "explanation": "Urine output under 0.5 mL/kg/hr (29 mL/hr for 58 kg) and a lactate that rose from 3.4 show perfusion is still poor, while new crackles and an SpO2 of 89% suggest the fluid is overloading her lungs. The improved BP, heart rate and temperature and a return to her baseline orientation show partial response and do not need escalation on their own."
   },
   {
     "domain": "nclexCare",
@@ -566,19 +574,28 @@
     "domain": "nclexCare",
     "test": 0,
     "skill": "Using interpreters",
-    "difficulty": 2,
-    "format": "single",
-    "stem": "A client who speaks limited English must give consent for a procedure. The client's 15-year-old daughter offers to interpret. Which action should the nurse take?",
-    "options": [
-      "Let the daughter interpret since she's here",
-      "Explain slowly using simple English",
-      "Ask a bilingual housekeeper to help",
-      "Arrange a qualified medical interpreter"
+    "difficulty": 1,
+    "format": "matrix",
+    "stem": "A client who speaks Spanish and limited English must give consent for a procedure. For each option, specify whether it is appropriate or not appropriate for interpreting the consent discussion.",
+    "rows": [
+      "The client's 15-year-old daughter",
+      "A hospital video interpreter",
+      "A bilingual housekeeper",
+      "A qualified phone interpreter",
+      "The nurse's basic Spanish"
+    ],
+    "columns": [
+      "Appropriate",
+      "Not appropriate"
     ],
     "correct": [
-      3
+      1,
+      0,
+      1,
+      0,
+      1
     ],
-    "explanation": "Consent and other medical discussions need a qualified medical interpreter, in person, by phone or by video, for accuracy and privacy. Family members, especially minors, may filter or misstate information, and simple English does not ensure understanding."
+    "explanation": "Consent needs a qualified medical interpreter, and video and phone interpreter services both meet that standard. A minor family member, an untrained bilingual staff member and a nurse with basic Spanish may misstate information or breach privacy."
   },
   {
     "domain": "nclexCare",
@@ -644,21 +661,16 @@
   {
     "domain": "nclexCare",
     "test": 0,
-    "skill": "Prioritizing lab results",
-    "difficulty": 3,
-    "format": "single",
-    "passage": "| Client | Result |\n|---|---|\n| A, receiving furosemide | Potassium 3.4 mEq/L |\n| B, chronic kidney disease | Creatinine 3.8 mg/dL |\n| C, heparin infusion | aPTT 112 seconds |\n| D, warfarin for atrial fibrillation | INR 2.7 |",
-    "stem": "The nurse reviews morning laboratory results for four clients. Which client should the nurse follow up on first?",
-    "options": [
-      "Client A, receiving furosemide",
-      "Client B, chronic kidney disease",
-      "Client C, heparin infusion",
-      "Client D, warfarin therapy"
-    ],
+    "skill": "Reviewing lab results",
+    "difficulty": 2,
+    "format": "highlight",
+    "passage": "| Client | Results |\n|---|---|\n| A, receiving furosemide | Potassium {{3.1 mEq/L}}, sodium {{138 mEq/L}} |\n| B, chronic kidney disease | Creatinine {{3.8 mg/dL}} (baseline 3.7), hemoglobin {{10.2 g/dL}} (baseline 10.0) |\n| C, heparin infusion | aPTT {{112 seconds}} (control 30), platelets {{240,000/mm3}} |\n| D, warfarin for atrial fibrillation | INR {{2.6}}, hemoglobin {{13.4 g/dL}} |",
+    "stem": "The nurse reviews morning laboratory results for four clients. Highlight the results the nurse should report to the HCP.",
     "correct": [
-      2
+      0,
+      4
     ],
-    "explanation": "An aPTT of 112 seconds is far above a typical therapeutic heparin range of about 1.5 to 2.5 times control, so the client is at risk for bleeding and the nurse follows the heparin protocol and notifies the HCP. The slightly low potassium needs replacement soon, a high creatinine is expected in chronic kidney disease, and an INR of 2.7 is therapeutic for atrial fibrillation."
+    "explanation": "A potassium of 3.1 mEq/L on furosemide risks dysrhythmias, and an aPTT of 112 seconds is far above the heparin goal of about 1.5 to 2.5 times control. The creatinine and hemoglobin in chronic kidney disease are at baseline, and an INR of 2.6 is therapeutic for atrial fibrillation."
   },
   {
     "domain": "nclexCare",

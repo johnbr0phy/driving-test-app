@@ -1,0 +1,460 @@
+[
+  {
+    "domain": "aplusHardware",
+    "test": 1,
+    "skill": "USB and Thunderbolt",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A technician must connect an external NVMe enclosure to a laptop with a Thunderbolt 4 port. What maximum data rate does Thunderbolt 4 provide?",
+    "options": [
+      "10 Gbps",
+      "40 Gbps",
+      "20 Gbps",
+      "480 Mbps"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Thunderbolt 4 supports up to 40 Gbps, the same as Thunderbolt 3 and the original USB4 specification. 20 Gbps is the top USB 3.2 Gen 2x2 rate, not Thunderbolt 4."
+  },
+  {
+    "domain": "aplusHardware",
+    "test": 1,
+    "skill": "USB speeds",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A user complains that an external SSD copies files slowly. The technician finds it plugged into a USB 2.0 port. What is that port's maximum speed?",
+    "options": [
+      "12 Mbps",
+      "5 Gbps",
+      "10 Gbps",
+      "480 Mbps"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "USB 2.0 Hi-Speed tops out at 480 Mbps, which bottlenecks a modern SSD. 5 Gbps is USB 3.x Gen 1, so moving the drive to a USB 3.x or USB-C port would help."
+  },
+  {
+    "domain": "aplusHardware",
+    "test": 1,
+    "skill": "Video connectors",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A conference room projector must receive both video and audio from a laptop over a single cable. Which connector should the technician use?",
+    "options": [
+      "HDMI",
+      "VGA",
+      "DVI-D",
+      "USB 2.0 Type-A"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "HDMI carries digital video and audio on one cable. VGA is analog video only, and DVI-D carries digital video without a standard audio channel."
+  },
+  {
+    "domain": "aplusHardware",
+    "test": 1,
+    "skill": "PSU connectors",
+    "difficulty": 2,
+    "format": "multi",
+    "select": 2,
+    "stem": "A technician is cabling a desktop that has a SATA SSD and an older optical drive with a 4-pin peripheral power socket. Which two power connectors are needed? (Choose two.)",
+    "options": [
+      "8-pin EPS12V",
+      "24-pin ATX main power",
+      "15-pin SATA power",
+      "PCIe 6+2-pin",
+      "4-pin Molex",
+      "4-pin CPU fan header"
+    ],
+    "correct": [
+      2,
+      4
+    ],
+    "explanation": "The SATA SSD takes the flat 15-pin SATA power plug, and the older drive's 4-pin peripheral socket takes a Molex connector. The 8-pin EPS12V plug looks like a drive or GPU connector, but it powers only the CPU."
+  },
+  {
+    "domain": "aplusHardware",
+    "test": 1,
+    "skill": "Memory channels",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A technician adds two identical DDR5 DIMMs to a motherboard with four color-coded slots. Where should the modules be installed to run in dual-channel mode?",
+    "options": [
+      "In two adjacent slots of different colors",
+      "In whichever two slots are closest to the CPU",
+      "In the two slots of matching color",
+      "In any slots; dual channel is always automatic"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Boards color-code slots so that matching colors place one module on each channel, enabling dual-channel operation. Adjacent slots usually share a channel, which leaves the pair in single-channel mode."
+  },
+  {
+    "domain": "aplusHardware",
+    "test": 1,
+    "skill": "ECC memory",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company is building a database server that must detect and correct single-bit memory errors. Which type of RAM should the technician order?",
+    "options": [
+      "ECC memory",
+      "Non-ECC unbuffered DIMMs",
+      "SODIMM modules",
+      "Memory with larger heat spreaders"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Error-correcting code (ECC) memory detects and corrects single-bit errors, which is why servers use it. Standard non-ECC DIMMs cannot correct errors regardless of speed or cooling."
+  },
+  {
+    "domain": "aplusHardware",
+    "test": 1,
+    "skill": "Memory compatibility",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A technician tries to install a DDR4 DIMM in a new DDR5 motherboard, but the module will not seat in the slot. What is the MOST likely reason?",
+    "options": [
+      "The board requires SODIMM modules",
+      "XMP must be enabled in UEFI first",
+      "The slot needs a riser adapter",
+      "Its key notch is offset"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "DDR4 and DDR5 DIMMs both have 288 pins but the notch is offset, so neither fits the other's slot. XMP is a speed profile and has nothing to do with physically seating a module."
+  },
+  {
+    "domain": "aplusHardware",
+    "test": 1,
+    "skill": "RAID levels",
+    "difficulty": 3,
+    "format": "matrix",
+    "stem": "For each RAID level, specify the minimum number of drives it requires.",
+    "rows": [
+      "RAID 0",
+      "RAID 1",
+      "RAID 5",
+      "RAID 6",
+      "RAID 10"
+    ],
+    "columns": [
+      "Two",
+      "Three",
+      "Four"
+    ],
+    "correct": [
+      0,
+      0,
+      1,
+      2,
+      2
+    ],
+    "explanation": "RAID 0 and RAID 1 need two drives, RAID 5 needs three to hold distributed parity, and RAID 6 and RAID 10 need four. RAID 6 is the usual miss: its second parity block requires a fourth drive."
+  },
+  {
+    "domain": "aplusHardware",
+    "test": 1,
+    "skill": "RAID levels",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A video editor has four identical drives and wants both striping performance and protection against a drive failure. Which RAID level should the technician configure?",
+    "options": [
+      "RAID 0",
+      "RAID 1",
+      "RAID 5",
+      "RAID 10"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "RAID 10 mirrors pairs of drives and stripes across them, giving speed and redundancy with a minimum of four drives. RAID 0 is fast but has no redundancy, so one failure loses everything."
+  },
+  {
+    "domain": "aplusHardware",
+    "test": 1,
+    "skill": "M.2 interfaces",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A technician installs an M.2 SSD in a desktop, but UEFI does not detect it. The motherboard manual says the slot supports SATA only. What is the MOST likely cause?",
+    "options": [
+      "The SSD needs a Molex power cable",
+      "The SSD is an NVMe drive",
+      "The CMOS battery is depleted",
+      "RAID 0 must be enabled first"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "M.2 is a form factor, and a SATA-only M.2 slot cannot run an NVMe (PCIe) drive. M.2 drives draw power from the slot, so no separate power cable is involved."
+  },
+  {
+    "domain": "aplusHardware",
+    "test": 1,
+    "skill": "Hard drive speeds",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A customer wants a replacement hard drive for a laptop where battery life and low noise matter more than speed. Which spindle speed is MOST appropriate?",
+    "options": [
+      "5,400 rpm",
+      "7,200 rpm",
+      "10,000 rpm",
+      "15,000 rpm"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A 5,400 rpm drive uses less power and runs quieter, suiting a battery-focused laptop. 7,200 rpm and faster drives improve performance at the cost of power, heat and noise."
+  },
+  {
+    "domain": "aplusHardware",
+    "test": 1,
+    "skill": "Motherboard form factors",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A customer wants the smallest common motherboard form factor for a compact home theater PC. Which form factor should the technician recommend?",
+    "options": [
+      "ATX",
+      "Micro-ATX",
+      "Mini-ITX",
+      "Extended ATX"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Mini-ITX boards measure about 6.7 by 6.7 inches, the smallest of the common desktop form factors. Micro-ATX is smaller than ATX but still larger than ITX."
+  },
+  {
+    "domain": "aplusHardware",
+    "test": 1,
+    "skill": "CPU sockets",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "While replacing a CPU, a technician notices the pins are in the motherboard socket rather than on the processor. Which socket type is this?",
+    "options": [
+      "LGA",
+      "PGA",
+      "BGA",
+      "Slot-type cartridge"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Land grid array (LGA) sockets put the pins on the motherboard and flat contacts on the CPU. Pin grid array (PGA) is the opposite, with pins on the processor."
+  },
+  {
+    "domain": "aplusHardware",
+    "test": 1,
+    "skill": "Secure Boot",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "After a user installs an unsigned bootloader, the PC refuses to boot and reports a security violation. Which UEFI setting is MOST likely blocking it?",
+    "options": [
+      "Fast Boot",
+      "Boot device order",
+      "Secure Boot",
+      "Fan profile"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Secure Boot allows only bootloaders signed by trusted keys, so an unsigned loader is blocked. Fast Boot only shortens hardware initialization and does not check signatures."
+  },
+  {
+    "domain": "aplusHardware",
+    "test": 1,
+    "skill": "Expansion slots",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A technician is installing a high-end graphics card in a desktop. Which expansion slot provides the bandwidth the card is designed for?",
+    "options": [
+      "PCIe x1",
+      "PCIe x4",
+      "M.2 Key E",
+      "PCIe x16"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Discrete graphics cards are built for PCIe x16 slots, which provide the most lanes. An x1 or x4 slot either will not fit the card or severely limits its bandwidth."
+  },
+  {
+    "domain": "aplusHardware",
+    "test": 1,
+    "skill": "TPM",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "BitLocker setup on a new desktop reports that no compatible TPM was found, although the CPU includes firmware TPM 2.0. What should the technician do FIRST?",
+    "options": [
+      "Install a discrete TPM header module",
+      "Enable fTPM or PTT in UEFI",
+      "Disable Secure Boot in UEFI",
+      "Convert the drive from GPT to MBR"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Firmware TPM (AMD fTPM or Intel PTT) is often disabled by default and must be turned on in UEFI setup. Buying a discrete module is unnecessary when the CPU already provides TPM 2.0."
+  },
+  {
+    "domain": "aplusHardware",
+    "test": 1,
+    "skill": "CPU installation",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "A technician is replacing the CPU in a desktop. Place the steps in the order the technician should perform them.",
+    "options": [
+      "Shut down and unplug the PC",
+      "Remove the cooler and old CPU",
+      "Seat the new CPU in the socket",
+      "Apply thermal paste to the CPU",
+      "Mount the cooler and connect its fan"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "explanation": "Power comes off before anything is touched, and the cooler must come off before the old CPU can be lifted out. Thermal paste goes on only after the new CPU is seated, and mounting the cooler last spreads the paste into a thin, even layer."
+  },
+  {
+    "domain": "aplusHardware",
+    "test": 1,
+    "skill": "Multithreading",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A user asks why Task Manager shows 16 logical processors on a CPU with 8 physical cores. What explains this?",
+    "options": [
+      "Simultaneous multithreading",
+      "Dual-channel memory controllers",
+      "Integrated GPU execution units",
+      "Virtual RAM page files"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Simultaneous multithreading (Intel Hyper-Threading) lets each physical core run two threads, so the OS sees two logical processors per core. Memory channels and GPU cores are not counted as logical processors."
+  },
+  {
+    "domain": "aplusHardware",
+    "test": 1,
+    "skill": "PSU connectors",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A technician is installing a graphics card that has an 8-pin supplemental power socket. Which power supply connector should be used?",
+    "options": [
+      "8-pin EPS12V",
+      "24-pin ATX",
+      "4-pin Molex adapter",
+      "PCIe 6+2-pin"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Graphics cards use PCIe 6-pin or 6+2-pin (8-pin) connectors. The 8-pin EPS12V connector powers the CPU and is keyed differently, so forcing it into a GPU is a serious mistake."
+  },
+  {
+    "domain": "aplusHardware",
+    "test": 1,
+    "skill": "Redundant power",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A file server must keep running if one of its power supplies fails. What should the technician install?",
+    "options": [
+      "A modular power supply",
+      "A higher-wattage single PSU",
+      "Redundant power supplies",
+      "A dual-voltage 115/230 V PSU"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Redundant power supplies share the load so the server keeps running if one unit fails, and failed units can often be hot-swapped. A higher-wattage or modular single PSU is still a single point of failure."
+  },
+  {
+    "domain": "aplusHardware",
+    "test": 1,
+    "skill": "Laser imaging process",
+    "difficulty": 3,
+    "format": "order",
+    "stem": "After a laser printer processes the page data, it runs the rest of its imaging process. Place those steps in order.",
+    "options": [
+      "Charging",
+      "Exposing",
+      "Developing",
+      "Transferring",
+      "Fusing",
+      "Cleaning"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "explanation": "The drum is charged, the laser exposes the image by discharging areas, and toner develops onto those areas before transferring to the paper and being fused by heat and pressure. Cleaning comes last, clearing leftover toner and charge before the next rotation."
+  },
+  {
+    "domain": "aplusHardware",
+    "test": 1,
+    "skill": "Printer maintenance",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A busy office laser printer displays a 'perform maintenance' message after 200,000 pages. What should the technician install?",
+    "options": [
+      "A new toner cartridge",
+      "An updated PCL driver",
+      "A duplexing assembly",
+      "A maintenance kit"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Maintenance kits replace wear parts such as the fuser, rollers and separation pads at manufacturer page-count intervals. Toner is a consumable that the printer reports separately."
+  },
+  {
+    "domain": "aplusHardware",
+    "test": 0,
+    "skill": "Secure printing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A law firm wants confidential documents to print only when the sender is standing at the printer. Which feature should the technician enable?",
+    "options": [
+      "Audit logging for every print job",
+      "Automatic duplex printing",
+      "Secure print with badge release",
+      "Scan-to-folder network service"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Secure print holds jobs until the user authenticates at the device with a badge or PIN, so pages never sit unattended in the tray. Audit logs record activity but do not keep documents from being seen."
+  },
+  {
+    "domain": "aplusHardware",
+    "test": 0,
+    "skill": "Impact printers",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A warehouse needs to print multipart carbon-copy shipping forms. Which printer type should the technician recommend?",
+    "options": [
+      "Laser",
+      "Impact",
+      "Inkjet",
+      "Thermal"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Impact (dot matrix) printers strike the page through a ribbon, so the pressure transfers to every carbon copy. Laser, inkjet and thermal printers do not apply the pressure needed for multipart forms."
+  }
+]

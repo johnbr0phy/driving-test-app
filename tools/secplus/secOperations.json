@@ -1,0 +1,1052 @@
+[
+  {
+    "domain": "secOperations",
+    "test": 1,
+    "skill": "Secure baselines",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A company wants every new Windows server to start from the same hardened configuration that meets CIS recommendations. What should the security team create FIRST?",
+    "options": [
+      "A disaster recovery runbook",
+      "A secure baseline configuration",
+      "A vulnerability exception register",
+      "A network topology diagram for the data center"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A secure baseline defines the approved hardened settings that are then deployed and maintained on every server. A runbook or topology diagram documents other things and does not set configuration standards."
+  },
+  {
+    "domain": "secOperations",
+    "test": 1,
+    "skill": "Server hardening",
+    "difficulty": 1,
+    "format": "multi",
+    "select": 3,
+    "stem": "An administrator is building a new Linux web server from a minimal image. Which THREE steps harden it? (Choose three.)",
+    "options": [
+      "Disable services that are not needed",
+      "Apply the latest security patches",
+      "Change default account passwords",
+      "Enable Telnet for backup access",
+      "Run the web service as root",
+      "Allow all inbound ports for monitoring"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Removing unneeded services shrinks the attack surface, patching closes known flaws, and changing defaults stops credential guessing. Enabling Telnet adds a cleartext management protocol and weakens the server."
+  },
+  {
+    "domain": "secOperations",
+    "test": 1,
+    "skill": "Wireless security",
+    "difficulty": 2,
+    "format": "multi",
+    "select": 2,
+    "stem": "A small office is replacing an aging WPA2 access point. Which TWO settings BEST strengthen the new wireless network? (Choose two.)",
+    "options": [
+      "Enable WPA3 with SAE",
+      "Disable Wi-Fi Protected Setup",
+      "Use TKIP for compatibility",
+      "Rely on MAC address filtering alone",
+      "Enable WEP for old printers"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "WPA3 with SAE resists offline dictionary attacks, and disabling WPS removes a PIN feature that is easily brute forced. MAC filtering is tempting but MAC addresses are trivial to spoof."
+  },
+  {
+    "domain": "secOperations",
+    "test": 1,
+    "skill": "Wireless site surveys",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Before deploying Wi-Fi in a large warehouse, an engineer wants to map signal strength and find dead zones and interference. What should the engineer perform?",
+    "options": [
+      "A site survey producing a heat map",
+      "A packet capture of the wired uplink",
+      "A NetFlow analysis on the core router",
+      "An SNMP trap review on each access point"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A wireless site survey measures coverage and interference and is often visualized as a heat map. Packet captures and NetFlow show traffic, not RF coverage."
+  },
+  {
+    "domain": "secOperations",
+    "test": 1,
+    "skill": "WPA3",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which WPA3 feature replaces the WPA2 pre-shared key handshake and protects against offline dictionary attacks?",
+    "options": [
+      "Simultaneous Authentication of Equals (SAE)",
+      "Temporal Key Integrity Protocol (TKIP)",
+      "Wi-Fi Protected Setup push-button configuration (WPS)",
+      "Wired Equivalent Privacy (WEP)"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "SAE (Dragonfly) is the WPA3-Personal handshake that resists offline password guessing and adds forward secrecy. TKIP is a deprecated WPA-era cipher, not a WPA3 handshake."
+  },
+  {
+    "domain": "secOperations",
+    "test": 1,
+    "skill": "Enterprise Wi-Fi",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company wants employees to authenticate to Wi-Fi with their individual directory credentials instead of a shared passphrase. Which configuration BEST meets this requirement?",
+    "options": [
+      "WPA3-Personal with a longer passphrase",
+      "WPA3-Enterprise with 802.1X and a RADIUS server",
+      "WPA2-Personal with a unique passphrase rotated every thirty days",
+      "MAC address filtering on every access point"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Enterprise mode uses 802.1X/EAP with a RADIUS server so each user authenticates with their own credentials. Any Personal mode still relies on one shared passphrase, however long or often rotated."
+  },
+  {
+    "domain": "secOperations",
+    "test": 1,
+    "skill": "Mobile deployment models",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An organization buys smartphones, retains full management control, and allows employees reasonable personal use of them. Which deployment model is this?",
+    "options": [
+      "BYOD",
+      "COPE",
+      "CYOD",
+      "Corporate-owned, business only (COBO)"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Corporate-owned, personally enabled (COPE) devices are company property that staff may also use personally. CYOD lets users pick from an approved list but does not by itself define personal use."
+  },
+  {
+    "domain": "secOperations",
+    "test": 1,
+    "skill": "Mobile device management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Under a BYOD policy, which MDM capability BEST protects corporate data while respecting the employee's personal content?",
+    "options": [
+      "Containerization with selective wipe",
+      "Full device wipe on any policy violation",
+      "Disabling the camera and personal app store",
+      "Requiring a corporate SIM card in every phone"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "MDM containerization separates work apps and data so only the corporate container is wiped. A full device wipe would destroy the employee's personal data on a device they own."
+  },
+  {
+    "domain": "secOperations",
+    "test": 1,
+    "skill": "Input validation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A developer finds that a web form passes user-supplied text directly into a database query. Which control BEST mitigates the resulting risk?",
+    "options": [
+      "Server-side input validation with parameterized queries",
+      "Client-side JavaScript length checks only",
+      "Encrypting the database at rest",
+      "Hiding all database error messages from end users"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Server-side validation plus parameterized queries prevents SQL injection. Client-side checks are easily bypassed, and encryption at rest does nothing to stop a malicious query."
+  },
+  {
+    "domain": "secOperations",
+    "test": 1,
+    "skill": "Secure cookies",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A penetration tester notes that session cookies can be read by client-side scripts and are sent over plain HTTP. Which cookie attributes should be set?",
+    "options": [
+      "Secure and HttpOnly",
+      "Domain and Path",
+      "Expires and Max-Age",
+      "SameSite=None and Partitioned"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Secure limits the cookie to HTTPS and HttpOnly blocks JavaScript access, reducing session theft via XSS. Domain and Path only scope where the cookie is sent."
+  },
+  {
+    "domain": "secOperations",
+    "test": 1,
+    "skill": "Code signing",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Users must be able to verify that a downloaded installer came from the vendor and was not altered in transit. Which control provides this?",
+    "options": [
+      "Code signing",
+      "Sandboxing",
+      "Obfuscation",
+      "Input validation"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A code-signing certificate lets users verify the publisher and the integrity of the file. Obfuscation only makes code harder to read and proves nothing about its origin."
+  },
+  {
+    "domain": "secOperations",
+    "test": 1,
+    "skill": "Sandboxing",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A security analyst wants to detonate a suspicious email attachment to observe its behavior without risking production systems. What should the analyst use?",
+    "options": [
+      "A jump server",
+      "A screened subnet",
+      "A load balancer",
+      "A sandbox"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A sandbox is an isolated environment for safely executing and observing untrusted code. A screened subnet isolates public-facing services, not malware detonation."
+  },
+  {
+    "domain": "secOperations",
+    "test": 1,
+    "skill": "Asset inventory",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "During an audit, the security team cannot say how many laptops are in use or who is responsible for each one. Which process is MOST lacking?",
+    "options": [
+      "Data loss prevention policy enforcement on endpoints",
+      "Vulnerability exception management",
+      "Change advisory board approvals",
+      "Asset inventory with assigned ownership"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Asset management tracks inventory, enumeration, and assignment of an owner for each device. DLP protects data in motion and use but does not track hardware or ownership."
+  },
+  {
+    "domain": "secOperations",
+    "test": 1,
+    "skill": "Media sanitization",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A company plans to sell retired SSDs to a refurbisher. Which approach BEST ensures data cannot be recovered while keeping the drives reusable?",
+    "options": [
+      "Cryptographic or vendor secure erase",
+      "Degaussing each drive",
+      "Physically shredding the drives",
+      "Quick-formatting the drives and deleting all partitions"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Secure erase or crypto erase sanitizes flash media and leaves it usable. Degaussing does not affect SSD flash cells, and shredding prevents reuse."
+  },
+  {
+    "domain": "secOperations",
+    "test": 1,
+    "skill": "Certificate of destruction",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A third-party vendor destroys a hospital's old hard drives on its behalf. What should the hospital obtain to document that destruction occurred?",
+    "options": [
+      "A service level agreement",
+      "A memorandum of understanding",
+      "A certificate of destruction",
+      "A purchase order receipt from the vendor"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Certification of destruction is the formal evidence that media was sanitized or destroyed. An SLA defines expected service levels but proves nothing about a specific job."
+  },
+  {
+    "domain": "secOperations",
+    "test": 1,
+    "skill": "Static code analysis",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team wants to find insecure coding patterns in source code before the application is compiled or executed. Which technique should they use?",
+    "options": [
+      "Dynamic application security testing",
+      "Static code analysis",
+      "Fuzzing the running application",
+      "An unauthenticated network vulnerability scan"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Static analysis (SAST) reviews source code without running it. Dynamic testing and fuzzing both require a running application."
+  },
+  {
+    "domain": "secOperations",
+    "test": 1,
+    "skill": "Credentialed scanning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A vulnerability scanner reports few findings on Windows servers, but administrators know several patches are missing. What change would MOST improve accuracy?",
+    "options": [
+      "Switch to an unauthenticated external scan",
+      "Run credentialed scans",
+      "Limit the scan to the top 100 ports",
+      "Pause plugin updates while scanning"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Credentialed scans log in and read installed software and patch levels, reducing false negatives. An unauthenticated external scan sees even less of the host."
+  },
+  {
+    "domain": "secOperations",
+    "test": 1,
+    "skill": "Threat intelligence",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A regional hospital wants threat intelligence that is shared specifically among healthcare organizations about attacks they are seeing. Which source BEST fits?",
+    "options": [
+      "A dark web marketplace",
+      "A vendor's proprietary antivirus feed",
+      "Public OSINT searches of social media",
+      "An industry ISAC"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Information Sharing and Analysis Centers share sector-specific threat intelligence among members. A proprietary vendor feed is general-purpose rather than built around a single industry's peers."
+  },
+  {
+    "domain": "secOperations",
+    "test": 1,
+    "skill": "False positives",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A scanner flags an Apache vulnerability on a server, but the administrator confirms the server runs IIS with no Apache installed. What is this finding?",
+    "options": [
+      "A false negative",
+      "A false positive",
+      "A true positive",
+      "A zero-day vulnerability"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A false positive reports a vulnerability that does not exist. A false negative is the opposite: a real vulnerability the scanner missed."
+  },
+  {
+    "domain": "secOperations",
+    "test": 1,
+    "skill": "CVE identifiers",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A vendor advisory references CVE-2024-3094. What does this identifier represent?",
+    "options": [
+      "A severity score from 0 to 10",
+      "A unique ID for a publicly disclosed vulnerability",
+      "A vendor's internal patch build number",
+      "A compliance checklist item from a CIS hardening benchmark"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Common Vulnerabilities and Exposures assigns unique identifiers to publicly known vulnerabilities. The 0 to 10 severity score comes from CVSS, not CVE."
+  },
+  {
+    "domain": "secOperations",
+    "test": 1,
+    "skill": "Vulnerability prioritization",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two servers share the same critical CVSS base score; one is internet-facing and the other sits on an isolated lab network. How should the analyst prioritize?",
+    "options": [
+      "Remediate the internet-facing server first",
+      "Remediate both simultaneously regardless of exposure",
+      "Remediate the lab server first because it is unmonitored",
+      "Defer both until the next annual audit"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Environmental variables such as exposure adjust real-world priority beyond the CVSS base score. The isolated lab host is far less reachable, so it ranks lower."
+  },
+  {
+    "domain": "secOperations",
+    "test": 1,
+    "skill": "Compensating controls",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A critical server cannot be patched until the vendor certifies the update next quarter. Which response is MOST appropriate in the meantime?",
+    "options": [
+      "Accept the risk with no documentation",
+      "Uninstall the vendor application from the server immediately",
+      "Apply compensating controls such as segmentation",
+      "Disable logging to reduce the attack surface"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Compensating controls like segmentation reduce risk until patching is possible, usually under a documented exception. Accepting risk without documentation skips the required exception process."
+  },
+  {
+    "domain": "secOperations",
+    "test": 1,
+    "skill": "Remediation validation",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "After patches are applied for a critical finding, what should the security team do to validate the remediation?",
+    "options": [
+      "Close the ticket based on the patch report",
+      "Rescan the affected systems",
+      "Lower the CVSS score of the finding",
+      "Notify the vendor that patching is complete"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Rescanning verifies that the vulnerability is actually gone. A patch report shows that a patch was pushed, not that it installed and fixed the issue."
+  },
+  {
+    "domain": "secOperations",
+    "test": 1,
+    "skill": "Vulnerability management",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "A security team runs its vulnerability management program for a new set of servers. Place the activities in the order they occur.",
+    "options": [
+      "Identify vulnerabilities with a scan",
+      "Analyze and prioritize the findings",
+      "Remediate or apply compensating controls",
+      "Rescan to validate remediation",
+      "Report results to stakeholders"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "explanation": "Findings must exist before they can be prioritized, and only prioritized findings are remediated. Validation by rescanning confirms the fix, and reporting comes last so it reflects verified results rather than patch claims."
+  },
+  {
+    "domain": "secOperations",
+    "test": 1,
+    "skill": "SIEM",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A security team needs to correlate logs from firewalls, servers, and applications in one place and alert on suspicious patterns. Which tool BEST meets this need?",
+    "options": [
+      "NetFlow collector",
+      "SCAP scanner",
+      "SIEM",
+      "DLP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A SIEM aggregates and correlates log data from many sources and generates alerts. A NetFlow collector only summarizes network traffic flows."
+  },
+  {
+    "domain": "secOperations",
+    "test": 2,
+    "skill": "SCAP",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An organization wants to automate checking systems against configuration benchmarks using standardized, machine-readable content. Which framework supports this?",
+    "options": [
+      "SNMPv3",
+      "SAML 2.0",
+      "SCAP",
+      "TAXII"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Security Content Automation Protocol provides standard formats for automated configuration and vulnerability checking against benchmarks. TAXII transports threat intelligence, not configuration checks."
+  },
+  {
+    "domain": "secOperations",
+    "test": 2,
+    "skill": "NetFlow",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An analyst needs to see which internal hosts talked to an external IP, how much data moved, and when, without full packet contents. Which data source is BEST?",
+    "options": [
+      "SNMP traps",
+      "Full packet captures",
+      "Application debug logs",
+      "NetFlow records"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "NetFlow records metadata about conversations: endpoints, ports, byte counts, and times. Full packet captures also include payloads, which the analyst does not need and which cost far more to store."
+  },
+  {
+    "domain": "secOperations",
+    "test": 2,
+    "skill": "SNMP traps",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A network team wants routers to proactively notify the monitoring server the moment an interface goes down. Which mechanism does this?",
+    "options": [
+      "SNMP traps",
+      "NetFlow sampling",
+      "Port mirroring",
+      "SNMP GET polling"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "SNMP traps are unsolicited alerts that agents push to the manager when an event occurs. GET polling waits for the manager to ask, so it is not proactive."
+  },
+  {
+    "domain": "secOperations",
+    "test": 2,
+    "skill": "Data loss prevention",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A company wants to block employees from emailing files that contain customer credit card numbers to external recipients. Which control BEST accomplishes this?",
+    "options": [
+      "Data loss prevention",
+      "File integrity monitoring",
+      "DNS filtering",
+      "Network access control"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "DLP inspects content for sensitive patterns such as card numbers and blocks unauthorized transfers. File integrity monitoring detects changes to files, not data leaving the organization."
+  },
+  {
+    "domain": "secOperations",
+    "test": 2,
+    "skill": "Firewall rules",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A firewall has an allow rule for HTTPS followed by a final deny-all rule. Traffic on TCP 8080 arrives that matches no explicit allow rule. What happens?",
+    "options": [
+      "It is allowed because the HTTPS rule matches first",
+      "It is forwarded to the screened subnet",
+      "It is blocked by the deny-all rule",
+      "It is logged and allowed by default"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Firewall rules are processed top-down, and traffic matching no allow rule falls to the deny-all (implicit deny). The HTTPS rule matches only port 443, not 8080."
+  },
+  {
+    "domain": "secOperations",
+    "test": 2,
+    "skill": "Behavior-based detection",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An IPS fails to detect a new attack because no matching pattern exists in its database yet. Which detection method would MOST likely have caught it?",
+    "options": [
+      "Signature-based detection",
+      "Port-based access lists",
+      "Static allow-list filtering",
+      "Behavior-based detection"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Behavior- or anomaly-based detection flags deviations from a learned baseline, so it can catch new attacks. Signature-based detection needs a known pattern, which is exactly what was missing."
+  },
+  {
+    "domain": "secOperations",
+    "test": 2,
+    "skill": "Web filtering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Remote employees often work off the corporate network, but their web browsing must still be filtered by category. Which solution BEST fits?",
+    "options": [
+      "A centralized on-premises proxy only",
+      "DNS sinkholing on the internal resolver",
+      "A port-based firewall rule on the office edge",
+      "Agent-based web filtering"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An agent on each device enforces filtering wherever the user connects. An on-premises proxy only filters traffic that passes through the corporate network."
+  },
+  {
+    "domain": "secOperations",
+    "test": 2,
+    "skill": "Group Policy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A Windows administrator must enforce password complexity and disable USB storage across all domain-joined computers. Which tool should be used?",
+    "options": [
+      "Group Policy",
+      "SELinux",
+      "MDM selective wipe",
+      "A RADIUS server"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Group Policy centrally applies security settings to Windows domain members. SELinux is a Linux mandatory access control framework and does not manage Windows hosts."
+  },
+  {
+    "domain": "secOperations",
+    "test": 2,
+    "skill": "Secure protocols",
+    "difficulty": 1,
+    "format": "matrix",
+    "stem": "An audit finds several insecure protocols in use. For each one, select the secure alternative that should replace it.",
+    "rows": [
+      "Telnet for router management",
+      "FTP for file transfers",
+      "HTTP for the intranet portal",
+      "LDAP for directory queries"
+    ],
+    "columns": [
+      "SSH",
+      "SFTP",
+      "HTTPS",
+      "LDAPS"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "SSH replaces Telnet, SFTP replaces FTP, HTTPS replaces HTTP, and LDAPS (LDAP over TLS on port 636) replaces plain LDAP. SSH is tempting for FTP too, but the file transfer protocol built on it is SFTP."
+  },
+  {
+    "domain": "secOperations",
+    "test": 2,
+    "skill": "DNS filtering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company wants to stop users from resolving known malicious domains on every device that uses its internal resolver. Which control BEST meets this?",
+    "options": [
+      "DNS filtering",
+      "DMARC enforcement",
+      "File integrity monitoring",
+      "SNMP trap forwarding"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "DNS filtering refuses or sinkholes lookups for known bad domains at the resolver. DMARC protects email domains from spoofing and does not affect name resolution."
+  },
+  {
+    "domain": "secOperations",
+    "test": 2,
+    "skill": "Email authentication",
+    "difficulty": 3,
+    "format": "multi",
+    "select": 3,
+    "stem": "Attackers are sending phishing emails that spoof the company's domain. Which THREE DNS-published email authentication mechanisms help receiving servers detect the spoofed messages? (Choose three.)",
+    "options": [
+      "SPF",
+      "DKIM",
+      "DMARC",
+      "DNSSEC",
+      "MX record",
+      "CNAME record"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "SPF lists the servers allowed to send for the domain, DKIM signs messages, and DMARC tells receivers how to handle mail that fails those checks. DNSSEC protects the integrity of DNS answers but does not authenticate email senders."
+  },
+  {
+    "domain": "secOperations",
+    "test": 2,
+    "skill": "File integrity monitoring",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An administrator wants to be alerted whenever critical system binaries or configuration files on a web server are modified. Which tool BEST meets this need?",
+    "options": [
+      "Data loss prevention",
+      "File integrity monitoring",
+      "A web application firewall",
+      "A NetFlow analyzer"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "FIM hashes monitored files and alerts when they change unexpectedly. A WAF filters HTTP requests but does not watch files on disk."
+  },
+  {
+    "domain": "secOperations",
+    "test": 2,
+    "skill": "Network access control",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company wants to verify that devices have current antivirus and patches before they are allowed onto the wired network. Which solution should it deploy?",
+    "options": [
+      "A web content filter",
+      "A screened subnet",
+      "A SIEM correlation rule for new devices",
+      "Network access control (NAC)"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "NAC performs posture assessment and admits, quarantines, or remediates devices before granting access. A SIEM rule can alert on new devices but cannot block them from connecting."
+  },
+  {
+    "domain": "secOperations",
+    "test": 2,
+    "skill": "XDR",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A SOC wants to correlate telemetry from endpoints, email, network, and cloud workloads in a single detection and response platform. Which solution BEST fits?",
+    "options": [
+      "EDR",
+      "HIDS",
+      "XDR",
+      "NGFW"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Extended detection and response unifies telemetry across endpoints, network, email, and cloud. EDR focuses only on endpoints."
+  },
+  {
+    "domain": "secOperations",
+    "test": 2,
+    "skill": "User behavior analytics",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A user who normally works 9 to 5 suddenly downloads gigabytes of files at 2 a.m. Which capability is designed to flag this deviation?",
+    "options": [
+      "Signature-based antivirus",
+      "Port security",
+      "Certificate pinning",
+      "User behavior analytics"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "UBA baselines normal user activity and flags anomalies such as unusual hours or data volumes. Signature-based antivirus looks for known malware, not abnormal user behavior."
+  },
+  {
+    "domain": "secOperations",
+    "test": 2,
+    "skill": "Account deprovisioning",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "An employee was terminated yesterday, but the account is still active and was used to log in last night. Which process failed?",
+    "options": [
+      "Identity proofing during onboarding",
+      "Federation",
+      "Account deprovisioning",
+      "Password expiration"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Deprovisioning disables or removes accounts when users leave. Identity proofing verifies who a person is when the account is created, not when they depart."
+  },
+  {
+    "domain": "secOperations",
+    "test": 2,
+    "skill": "SAML federation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Employees should sign in once with corporate credentials to reach a partner's SaaS application using XML-based assertions. Which standard supports this?",
+    "options": [
+      "LDAP",
+      "Kerberos",
+      "SAML",
+      "RADIUS"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "SAML exchanges XML assertions between an identity provider and a service provider for federated SSO. LDAP is a directory query protocol that does not federate across organizations."
+  },
+  {
+    "domain": "secOperations",
+    "test": 2,
+    "skill": "OAuth",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A mobile app needs permission to read a user's calendar from another service without ever receiving the user's password. Which protocol provides this delegated authorization?",
+    "options": [
+      "LDAP",
+      "SAML",
+      "TACACS+",
+      "OAuth"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "OAuth issues access tokens that grant limited, delegated access to resources without sharing credentials. SAML is mainly used for web SSO authentication assertions, not API authorization tokens."
+  },
+  {
+    "domain": "secOperations",
+    "test": 2,
+    "skill": "Attribute-based access control",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Access to a records system must depend on the user's department, the file's sensitivity, device compliance status, and time of request. Which model fits BEST?",
+    "options": [
+      "Discretionary access control",
+      "Role-based access control",
+      "Attribute-based access control",
+      "Mandatory access control"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "ABAC evaluates many attributes of subject, object, and environment in a policy. Role-based access control grants rights by job role alone and cannot weigh device or time attributes together."
+  },
+  {
+    "domain": "secOperations",
+    "test": 2,
+    "skill": "Multifactor authentication",
+    "difficulty": 1,
+    "format": "multi",
+    "select": 2,
+    "stem": "Users currently sign in with a password only. Which TWO additions would each turn the login into multifactor authentication? (Choose two.)",
+    "options": [
+      "Fingerprint scan",
+      "Code from an authenticator app",
+      "Answer to a personal security question",
+      "A second, different password",
+      "Four-digit PIN"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "A fingerprint is something you are and an authenticator app code is something you have, each a different factor from the password. A security question, second password or PIN is just another something you know."
+  },
+  {
+    "domain": "secOperations",
+    "test": 2,
+    "skill": "Password policy",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Users bypass the password history rule by changing their password several times in a row to reuse an old one. Which setting BEST stops this?",
+    "options": [
+      "Maximum password age",
+      "Password complexity",
+      "Minimum password age",
+      "Account lockout threshold"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A minimum password age prevents rapid successive changes that cycle through history. Maximum age forces changes but does not stop users from cycling back quickly."
+  },
+  {
+    "domain": "secOperations",
+    "test": 2,
+    "skill": "Just-in-time access",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Administrators hold permanent domain admin rights. The security team wants elevated rights granted only when needed and revoked automatically afterward. Which approach BEST fits?",
+    "options": [
+      "Password expiration every 30 days",
+      "Role-based access with standing admin groups",
+      "Just-in-time privileged access",
+      "A shared administrator account stored in a vault"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Just-in-time permissions in PAM grant temporary, time-limited elevation and remove standing privilege. A vaulted shared account still leaves permanent privilege in place."
+  },
+  {
+    "domain": "secOperations",
+    "test": 2,
+    "skill": "Automation benefits",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company scripts new-hire account creation, group membership, and mailbox setup, triggered from the HR system. Which benefit is MOST directly realized?",
+    "options": [
+      "Elimination of all technical debt",
+      "Removal of the need for audits",
+      "Lower complexity of the overall environment",
+      "Time savings and consistent provisioning"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Automating user provisioning saves time and applies the same configuration every time. Automation usually adds complexity and can create technical debt rather than eliminating it."
+  },
+  {
+    "domain": "secOperations",
+    "test": 2,
+    "skill": "Automation risks",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A security team relies on one orchestration server to run every automated response playbook. Which concern should it raise FIRST?",
+    "options": [
+      "Employee retention",
+      "Single point of failure",
+      "Workforce multiplier effect",
+      "Reaction time"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "If the single orchestration server fails, every automated response stops. Employee retention, workforce multiplier, and reaction time are benefits of automation, not risks."
+  },
+  {
+    "domain": "secOperations",
+    "test": 2,
+    "skill": "Incident response",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "An analyst receives an alert that a file server may be infected with malware. Place the incident response phases in the order they should occur.",
+    "options": [
+      "Detection",
+      "Analysis",
+      "Containment",
+      "Eradication",
+      "Recovery",
+      "Lessons learned"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "explanation": "The incident is detected and analyzed to confirm scope, then contained to stop spread before the malware is eradicated. Systems are recovered only after the cause is removed, and lessons learned closes the incident."
+  },
+  {
+    "domain": "secOperations",
+    "test": 0,
+    "skill": "Tabletop exercises",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Team members walk through a ransomware scenario in a conference room, discussing their roles without touching any systems. What is this activity?",
+    "options": [
+      "A simulation",
+      "A failover test",
+      "A tabletop exercise",
+      "A full-scale penetration test"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A tabletop exercise is a discussion-based walkthrough of an incident plan. A simulation goes further by exercising realistic events, often with systems or injected activity."
+  },
+  {
+    "domain": "secOperations",
+    "test": 0,
+    "skill": "Threat hunting",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Without any alert being triggered, analysts proactively search logs for signs of an adversary using a newly reported technique. What is this activity?",
+    "options": [
+      "Root cause analysis",
+      "Alert tuning",
+      "Vulnerability scanning",
+      "Threat hunting"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Threat hunting is the proactive search for threats that evaded existing detections. Root cause analysis happens after an incident to determine why it occurred."
+  },
+  {
+    "domain": "secOperations",
+    "test": 0,
+    "skill": "Legal hold",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Legal counsel anticipates a lawsuit and instructs IT to stop deleting specific employees' email under the routine retention schedule. What is this called?",
+    "options": [
+      "Chain of custody",
+      "E-discovery production",
+      "A legal hold",
+      "Data sanitization"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A legal hold suspends normal deletion so potentially relevant data is preserved. E-discovery is the later process of identifying and producing that data for the case."
+  },
+  {
+    "domain": "secOperations",
+    "test": 0,
+    "skill": "Chain of custody",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "An investigator records every person who handled a seized laptop, along with times and reasons. What is the purpose of this documentation?",
+    "options": [
+      "Establishing a legal hold",
+      "Calculating the exposure factor",
+      "Performing root cause analysis",
+      "Maintaining chain of custody"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Chain of custody documents who handled evidence and when, preserving its admissibility. A legal hold preserves data from deletion but does not track handling of physical evidence."
+  },
+  {
+    "domain": "secOperations",
+    "test": 0,
+    "skill": "Log analysis",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An analyst wants to confirm whether a specific external IP was denied when it tried to reach the internal SSH server. Which log should be checked FIRST?",
+    "options": [
+      "Application logs",
+      "Firewall logs",
+      "Endpoint antivirus logs",
+      "Badge reader logs"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Firewall logs record allowed and denied connections by source, destination, and port. Application logs would only show the attempt if it reached the SSH service."
+  },
+  {
+    "domain": "secOperations",
+    "test": 0,
+    "skill": "Order of volatility",
+    "difficulty": 3,
+    "format": "order",
+    "stem": "A forensic analyst arrives at a running server suspected of compromise. Place the evidence sources in the order they should be collected, according to the order of volatility.",
+    "options": [
+      "CPU registers and cache",
+      "System memory (RAM)",
+      "Swap and temporary files",
+      "Local disk drives",
+      "Archived backup media"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "explanation": "Evidence is collected from most to least volatile: registers and cache change in nanoseconds, RAM is lost at power off, swap and temp files are overwritten quickly, disks persist, and archived backups are the most stable."
+  }
+]

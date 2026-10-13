@@ -1,0 +1,229 @@
+[
+  {
+    "domain": "aplusMobile",
+    "test": 1,
+    "skill": "Laptop memory",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A technician must add memory to a laptop whose existing module is DDR5. Which of the following should the technician order?",
+    "options": [
+      "DDR5 full-size DIMM",
+      "DDR5 SODIMM",
+      "DDR5 registered ECC DIMM",
+      "DDR4 SODIMM"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Laptops use the small-outline SODIMM form factor, and the generation must match the existing DDR5 slot. A full-size DIMM fits desktops only, and DDR4 is keyed differently and will not seat in a DDR5 slot."
+  },
+  {
+    "domain": "aplusMobile",
+    "test": 1,
+    "skill": "Laptop display parts",
+    "difficulty": 2,
+    "format": "multi",
+    "select": 2,
+    "stem": "A technician is replacing a cracked laptop display panel. Which two connections typically run through the hinge into the lid and must be detached? (Choose two.)",
+    "options": [
+      "SODIMM memory module",
+      "Wi-Fi antenna leads",
+      "CMOS coin battery",
+      "M.2 storage drive",
+      "Display data cable",
+      "Keyboard ribbon cable"
+    ],
+    "correct": [
+      1,
+      4
+    ],
+    "explanation": "The Wi-Fi antenna leads and the display (eDP) cable run from the base through the hinge into the lid, so both must be freed to remove the panel. The keyboard ribbon is tempting, but it stays in the base with the memory, SSD and CMOS battery."
+  },
+  {
+    "domain": "aplusMobile",
+    "test": 1,
+    "skill": "Laptop storage upgrade",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A technician is upgrading a laptop that has a 2.5-inch SATA SSD and an empty M.2 slot that supports PCIe. Which of the following drives would give the BEST performance?",
+    "options": [
+      "M.2 NVMe SSD",
+      "M.2 SATA SSD",
+      "2.5-inch SATA SSD",
+      "2.5-inch 7200 rpm hard drive"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An NVMe drive uses PCIe lanes and is several times faster than SATA. An M.2 SATA SSD fits the same slot but is still limited to the 6 Gbps SATA interface."
+  },
+  {
+    "domain": "aplusMobile",
+    "test": 1,
+    "skill": "Docking stations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A user wants one cable from a laptop to charge it and connect two monitors, wired Ethernet, and a keyboard at the desk. Which of the following should the technician recommend?",
+    "options": [
+      "USB 2.0 hub with four ports",
+      "HDMI splitter with two outputs",
+      "Bluetooth keyboard and mouse adapter",
+      "Thunderbolt 4 docking station"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A Thunderbolt or USB-C dock carries power delivery, video, network, and USB over one cable. A USB 2.0 hub cannot drive two displays or charge the laptop, and an HDMI splitter only mirrors one video signal."
+  },
+  {
+    "domain": "aplusMobile",
+    "test": 1,
+    "skill": "USB-C power delivery",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A laptop connected to a USB-C docking station shows both external monitors correctly, but its battery slowly drains while docked. Which of the following is the MOST likely cause?",
+    "options": [
+      "The dock's power rating is too low",
+      "The laptop's display driver is outdated",
+      "The Ethernet cable is unplugged",
+      "The monitors are set to the wrong input"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "When a dock's USB-C power delivery rating is below what the laptop draws, the laptop runs but cannot charge. The monitors already work, so a display driver or input problem is not the cause."
+  },
+  {
+    "domain": "aplusMobile",
+    "test": 1,
+    "skill": "Mobile hotspot",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A sales representative needs internet access on a laptop while traveling where no Wi-Fi is available. The representative's phone has unlimited cellular data. Which of the following should the technician configure?",
+    "options": [
+      "NFC pairing between the devices",
+      "A mobile hotspot on the phone",
+      "Airplane mode on the laptop",
+      "A Bluetooth audio profile"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A hotspot (tethering) shares the phone's cellular connection with the laptop over Wi-Fi, USB, or Bluetooth. NFC only works within a few centimeters and is used for pairing and payments, not sharing internet."
+  },
+  {
+    "domain": "aplusMobile",
+    "test": 1,
+    "skill": "NFC",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which of the following wireless technologies is used for tap-to-pay at a point-of-sale terminal and works only within a few centimeters?",
+    "options": [
+      "Bluetooth Low Energy",
+      "Wi-Fi Direct",
+      "NFC",
+      "Infrared"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Near-field communication has a range of about 4 cm, which suits contactless payments. Bluetooth Low Energy reaches many meters, so it is not the tap-to-pay technology."
+  },
+  {
+    "domain": "aplusMobile",
+    "test": 1,
+    "skill": "Bluetooth pairing",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A user's new Bluetooth headset does not appear in the list of available devices on the user's phone. Which of the following should the technician do FIRST?",
+    "options": [
+      "Factory reset the phone to clear old pairings",
+      "Enable NFC on the phone",
+      "Replace the headset battery",
+      "Put the headset into pairing mode"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A Bluetooth device is only discoverable while in pairing mode, so this is the simplest first step. A factory reset is drastic and should never come before the obvious fix."
+  },
+  {
+    "domain": "aplusMobile",
+    "test": 1,
+    "skill": "Mail ports",
+    "difficulty": 3,
+    "format": "matrix",
+    "stem": "A technician is setting up mail on a phone. For each incoming mail port, specify whether it is the TLS-encrypted port or the original unencrypted port.",
+    "rows": [
+      "IMAP on TCP 143",
+      "IMAP on TCP 993",
+      "POP3 on TCP 110",
+      "POP3 on TCP 995"
+    ],
+    "columns": [
+      "Encrypted (TLS)",
+      "Unencrypted"
+    ],
+    "correct": [
+      1,
+      0,
+      1,
+      0
+    ],
+    "explanation": "IMAP uses 993 and POP3 uses 995 when wrapped in TLS from the first packet. Ports 143 and 110 are the original plaintext ports; STARTTLS can upgrade them, which is why they are tempting, but they start unencrypted."
+  },
+  {
+    "domain": "aplusMobile",
+    "test": 1,
+    "skill": "Mail ports",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A user can receive email on a tablet, but outgoing messages fail. The provider requires authenticated SMTP submission with STARTTLS. Which port should the outgoing server use?",
+    "options": [
+      "25",
+      "587",
+      "110",
+      "993"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Port 587 is the SMTP submission port for authenticated clients using STARTTLS. Port 25 is for server-to-server relay and is commonly blocked by ISPs for client use."
+  },
+  {
+    "domain": "aplusMobile",
+    "test": 1,
+    "skill": "Mobile device management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company lets employees use personal phones for corporate email and wants to erase only company data if a phone is lost. Which of the following should the technician implement?",
+    "options": [
+      "A full-device factory reset policy",
+      "A locator app on each phone",
+      "MDM with a separate work profile",
+      "POP3 accounts for corporate email"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Mobile device management with a work profile or container allows a selective wipe of corporate data on BYOD phones. A full-device reset would erase the employee's personal data, which is inappropriate for BYOD."
+  },
+  {
+    "domain": "aplusMobile",
+    "test": 1,
+    "skill": "Mobile account sync",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A user moved to a new phone and email works, but contacts and calendar events from the corporate account did not appear. Which of the following should the technician check FIRST?",
+    "options": [
+      "The outgoing SMTP server port number",
+      "Whether Bluetooth is enabled on the phone",
+      "Location services permissions for the mail app",
+      "Contacts and calendar sync for the account"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Mail, contacts, and calendars synchronize separately, and each can be toggled per account. The SMTP port only affects sending mail, which is not the reported problem."
+  }
+]

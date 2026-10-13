@@ -1,0 +1,459 @@
+[
+  {
+    "domain": "aplusSwTroubleshooting",
+    "test": 1,
+    "skill": "Driver rollback",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A user reports a blue screen error every time Windows loads after installing a new graphics driver. The PC starts normally in Safe Mode. Which of the following should the technician do NEXT?",
+    "options": [
+      "Replace the graphics card with a new one",
+      "Roll back the display driver in Device Manager",
+      "Reimage the workstation from the company's standard image",
+      "Run chkdsk /r on the system drive"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The stop errors began right after the driver change and Safe Mode loads a basic display driver, so rolling back the driver is the least invasive fix. Reimaging would also work but discards user data and settings when a simple rollback addresses the cause."
+  },
+  {
+    "domain": "aplusSwTroubleshooting",
+    "test": 1,
+    "skill": "Startup apps",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A Windows 11 laptop takes ten minutes to become usable after login, and Task Manager shows dozens of third-party startup apps consuming memory. Which of the following should the technician do FIRST?",
+    "options": [
+      "Disable unneeded startup apps in Task Manager",
+      "Perform a clean install of Windows 11 from USB media",
+      "Run Disk Cleanup on the system drive",
+      "Install an additional SODIMM module"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Disabling unnecessary startup items removes the memory pressure at no cost and is the quickest fix to try first. Adding RAM is a valid later step, but it costs money and leaves the bloated startup list in place."
+  },
+  {
+    "domain": "aplusSwTroubleshooting",
+    "test": 1,
+    "skill": "System File Checker",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Several applications on a Windows 10 workstation crash randomly, and Event Viewer logs show protected operating system files are corrupted. Which command should the technician run?",
+    "options": [
+      "sfc /scannow",
+      "gpupdate /force",
+      "chkdsk /f",
+      "diskpart"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "System File Checker scans protected Windows files and replaces corrupted copies from the component store. chkdsk repairs file system and disk errors, not individual damaged system files."
+  },
+  {
+    "domain": "aplusSwTroubleshooting",
+    "test": 1,
+    "skill": "User profiles",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A domain user receives a message that Windows signed in with a temporary profile, and her desktop files appear missing. Other users on the PC are unaffected. Which of the following should the technician do?",
+    "options": [
+      "Defragment the system drive",
+      "Enable Fast Startup in Power Options",
+      "Rebuild the user's corrupted profile",
+      "Reset the user's domain password"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A temporary profile means Windows could not load the user's profile, so the fix is to rebuild it and migrate her data. Resetting the password does not help because authentication already succeeded."
+  },
+  {
+    "domain": "aplusSwTroubleshooting",
+    "test": 1,
+    "skill": "Windows tools",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "For each task, specify the Windows tool a technician should use.",
+    "rows": [
+      "Review errors from an overnight restart",
+      "Restart the stopped Print Spooler",
+      "Initialize a newly installed SSD",
+      "Set a service to start automatically",
+      "Extend the C: volume into free space"
+    ],
+    "columns": [
+      "Event Viewer",
+      "Services console",
+      "Disk Management"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      1,
+      2
+    ],
+    "explanation": "Event Viewer holds the logs that explain a restart, the Services console starts services and sets their startup type, and Disk Management initializes disks and extends volumes. The Print Spooler is tempting to place under Event Viewer, where its failure is logged, but it is restarted in services.msc."
+  },
+  {
+    "domain": "aplusSwTroubleshooting",
+    "test": 1,
+    "skill": "Update rollback",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "After a monthly Windows quality update, a line-of-business accounting application crashes on launch for every user. The vendor has no patch yet. Which of the following is the BEST temporary solution?",
+    "options": [
+      "Increase the paging file size",
+      "Disable User Account Control",
+      "Reimage each affected workstation",
+      "Uninstall the recent quality update"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The crashes began with the update, so rolling it back restores the application while the vendor works on a fix. Reimaging would likely reinstall the same update and wastes time."
+  },
+  {
+    "domain": "aplusSwTroubleshooting",
+    "test": 1,
+    "skill": "USB resources",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A user connects a webcam, headset, and several drives to a USB hub and receives a warning about insufficient USB controller resources. Which of the following should the technician do?",
+    "options": [
+      "Move some devices to ports on a different controller",
+      "Reinstall the webcam and headset applications and drivers",
+      "Disable USB selective suspend",
+      "Replace all of the USB cables"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The controller has run out of endpoints, so spreading devices across ports served by another controller resolves the warning. USB selective suspend is a power-saving setting and does not add controller resources."
+  },
+  {
+    "domain": "aplusSwTroubleshooting",
+    "test": 1,
+    "skill": "Boot repair",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "After a power outage, a desktop displays \"No operating system found,\" but the NVMe drive is listed in the UEFI setup. Which of the following should the technician try FIRST?",
+    "options": [
+      "Replace the NVMe drive",
+      "Replace the CMOS battery",
+      "Run Startup Repair from WinRE",
+      "Reinstall Windows from USB media"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The firmware still detects the drive, so the boot configuration is most likely damaged and Startup Repair in WinRE can rebuild it. Replacing the drive is premature because the hardware is clearly being detected."
+  },
+  {
+    "domain": "aplusSwTroubleshooting",
+    "test": 1,
+    "skill": "Browser hijacking",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A user's browser now opens an unfamiliar search engine, redirects searches to shopping sites, and shows pop-ups despite the pop-up blocker. Which of the following is the MOST likely cause?",
+    "options": [
+      "A malicious browser extension",
+      "An expired certificate on the homepage",
+      "Corrupted temporary internet files",
+      "An outdated network adapter driver"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Changed default search, random redirects, and pop-ups that bypass the blocker are classic browser hijacker symptoms, usually from a malicious extension. A corrupted cache can slow pages but does not change the search engine or inject ads."
+  },
+  {
+    "domain": "aplusSwTroubleshooting",
+    "test": 1,
+    "skill": "Scareware",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "While browsing, a user sees a full-screen alert claiming the PC is infected and urging a call to a toll-free support number. The installed antivirus reports nothing. This is BEST described as:",
+    "options": [
+      "A pending OS update notification",
+      "A legitimate Microsoft Defender detection",
+      "A false antivirus alert from scareware",
+      "A Windows activation reminder"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Alerts that do not come from the installed security software and push a phone number or payment are rogue, false antivirus warnings. Microsoft Defender reports through Windows Security notifications and never asks users to call a number."
+  },
+  {
+    "domain": "aplusSwTroubleshooting",
+    "test": 1,
+    "skill": "Rogue certificates",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A user receives certificate warnings on every HTTPS website, including major banks. The system clock is correct, and the certificates show the same unknown issuer. Which of the following is the MOST likely cause?",
+    "options": [
+      "A failed DNS server on the LAN",
+      "A full browser cache",
+      "An expired domain user password",
+      "A rogue root certificate"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "When every site's certificate is issued by the same unknown authority, malware has likely installed a rogue root certificate to intercept traffic. A DNS failure would stop name resolution entirely rather than produce certificate warnings."
+  },
+  {
+    "domain": "aplusSwTroubleshooting",
+    "test": 1,
+    "skill": "Ransomware response",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A user's documents have all been renamed with a .locked extension, and a text file on the desktop demands cryptocurrency payment. Which of the following should the technician do FIRST?",
+    "options": [
+      "Run a full antivirus scan immediately",
+      "Restore the files from last night's backup",
+      "Disconnect the computer from the network",
+      "Pay the ransom to recover the files"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "This is ransomware, and isolating the system first prevents it from encrypting network shares or spreading. Restoring from backup comes later, because restoring onto a still-infected system would get the files encrypted again."
+  },
+  {
+    "domain": "aplusSwTroubleshooting",
+    "test": 1,
+    "skill": "Malware symptoms",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Windows Update fails repeatedly on a workstation, Microsoft Defender has been turned off and cannot be re-enabled, and the user cannot reach security vendor websites. Which of the following is the MOST likely cause?",
+    "options": [
+      "A malware infection",
+      "Insufficient free space on the system drive",
+      "An expired Windows license key",
+      "A corrupted Windows Update download cache"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Failed updates, disabled antivirus, and blocked security sites together point to malware protecting itself. Low disk space can make updates fail, but it would not turn off Defender or block vendor websites."
+  },
+  {
+    "domain": "aplusSwTroubleshooting",
+    "test": 1,
+    "skill": "Malware removal",
+    "difficulty": 2,
+    "format": "multi",
+    "select": 2,
+    "stem": "A technician has verified that a workstation is infected with malware. Which two actions quarantine the system? (Choose two.)",
+    "options": [
+      "Disable System Restore",
+      "Unplug its Ethernet cable",
+      "Educate the end user",
+      "Turn off its Wi-Fi adapter",
+      "Update anti-malware definitions",
+      "Create a new restore point"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "explanation": "Quarantine cuts the PC off from the network, so both the wired and the wireless connection are removed. Disabling System Restore is the step right after quarantine, not part of it."
+  },
+  {
+    "domain": "aplusSwTroubleshooting",
+    "test": 1,
+    "skill": "Malware removal",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Before remediating an infected Windows PC, a technician disables System Restore. Which of the following BEST explains why this step is performed?",
+    "options": [
+      "Restore points may harbor the malware",
+      "It frees disk space for the anti-malware software",
+      "Restore points slow down anti-malware scans",
+      "System Restore blocks safe mode from loading"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Restore points can capture infected files, so they are deleted to stop the malware from coming back through a later restore. Freeing disk space is a side effect, not the reason for the step."
+  },
+  {
+    "domain": "aplusSwTroubleshooting",
+    "test": 1,
+    "skill": "Malware removal",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "During remediation, malware on a quarantined PC reloads itself every time Windows starts normally, preventing removal. After updating the anti-malware definitions, how should the technician run the scan?",
+    "options": [
+      "Scan with the network connection re-enabled",
+      "Scan after re-enabling System Restore",
+      "Scan while logged in as the user",
+      "Scan from Safe Mode or Windows PE"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Safe Mode or a preinstallation environment loads only minimal drivers and services, so the malware cannot run and protect its files during the scan. Reconnecting the network before the system is clean risks spreading the infection."
+  },
+  {
+    "domain": "aplusSwTroubleshooting",
+    "test": 1,
+    "skill": "Malware removal",
+    "difficulty": 3,
+    "format": "order",
+    "stem": "A technician has investigated and verified malware symptoms on a Windows PC. Place the remaining CompTIA malware removal steps in order.",
+    "options": [
+      "Quarantine the infected system",
+      "Disable System Restore",
+      "Remediate the infected system",
+      "Schedule scans and run updates",
+      "Enable System Restore and create a restore point",
+      "Educate the end user"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "explanation": "Isolation comes first so the malware cannot spread, then System Restore is disabled so infected restore points are not kept, and remediation updates the tools and removes the malware. Scans and updates are scheduled before System Restore is re-enabled with a clean point, and user education closes the process."
+  },
+  {
+    "domain": "aplusSwTroubleshooting",
+    "test": 1,
+    "skill": "Malware removal",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A PC became infected after a user opened a phishing attachment. The technician has cleaned the system and created a new restore point. Which of the following is the FINAL step?",
+    "options": [
+      "Investigate and verify the malware symptoms",
+      "Schedule weekly anti-malware scans",
+      "Update the anti-malware definitions",
+      "Educate the end user"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Educating the end user is the seventh and final step in CompTIA's malware removal process and helps prevent a repeat infection. Scheduling scans is step five and comes before re-enabling System Restore."
+  },
+  {
+    "domain": "aplusSwTroubleshooting",
+    "test": 1,
+    "skill": "Mobile app crashes",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "After an update, a user's banking app on an Android phone closes immediately every time it is opened. Other apps work normally. Which of the following should the technician do FIRST?",
+    "options": [
+      "Replace the phone's battery",
+      "Force stop the app and clear its cache",
+      "Roll back the Android OS version",
+      "Perform a factory reset on the phone"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "When only one app fails, force stopping it and clearing its cache is the least disruptive first step, followed by reinstalling the app if needed. A factory reset erases the whole device for a problem limited to one app."
+  },
+  {
+    "domain": "aplusSwTroubleshooting",
+    "test": 1,
+    "skill": "Screen rotation",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A user reports that a tablet's display stays in portrait mode when the device is turned sideways in any app. Which of the following should the technician check FIRST?",
+    "options": [
+      "Whether the OS needs an update",
+      "Whether rotation lock is enabled",
+      "Whether the digitizer needs recalibration",
+      "Whether the accelerometer has failed"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A screen that will not autorotate is most often caused by the rotation lock setting, which takes seconds to check. A failed accelerometer is possible but should be considered only after the simple setting is ruled out."
+  },
+  {
+    "domain": "aplusSwTroubleshooting",
+    "test": 1,
+    "skill": "Mobile OS updates",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An iPhone repeatedly fails to install the latest iOS update, showing an error each time. The device has 900 MB of free storage. Which of the following should the technician do?",
+    "options": [
+      "Reset the device's network settings",
+      "Enable Low Power Mode during the update",
+      "Free up storage space and retry the update",
+      "Turn off Wi-Fi and use cellular data"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "OS updates need several gigabytes of free space to download and install, so clearing storage is the fix. Resetting network settings addresses connectivity problems, not a lack of space."
+  },
+  {
+    "domain": "aplusSwTroubleshooting",
+    "test": 0,
+    "skill": "Mobile malware",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A user's phone runs hot, has sluggish response, and triggered a data-usage limit notification after the user sideloaded a game from an unofficial website. Which of the following is the MOST likely cause?",
+    "options": [
+      "Carrier throttling of cellular data",
+      "A malicious sideloaded app",
+      "A failing lithium-ion battery",
+      "An outdated mobile operating system"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Heat, sluggishness, and high network traffic right after sideloading point to a bootleg app running hidden tasks such as cryptomining or data exfiltration. A failing battery can cause heat, but it would not generate unusual data usage."
+  },
+  {
+    "domain": "aplusSwTroubleshooting",
+    "test": 0,
+    "skill": "Jailbreaking",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The MDM solution flags a corporate iPhone as noncompliant because it has been jailbroken. Which of the following BEST explains the security risk?",
+    "options": [
+      "It permanently reduces battery capacity",
+      "It disables the Bluetooth radio",
+      "It prevents the device from receiving phone calls or texts",
+      "It bypasses OS security controls and app sandboxing"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Jailbreaking or rooting grants root access and removes the OS protections that keep apps isolated, letting malicious apps reach corporate data. It does not stop calls or Bluetooth from working."
+  },
+  {
+    "domain": "aplusSwTroubleshooting",
+    "test": 0,
+    "skill": "Account compromise",
+    "difficulty": 2,
+    "format": "multi",
+    "select": 2,
+    "stem": "A user gets alerts about sign-ins to her cloud account from another country, and contacts report odd messages sent from it. Which two actions should the technician take FIRST? (Choose two.)",
+    "options": [
+      "Factory reset her smartphone",
+      "Change the account password",
+      "Uninstall the mail app on her phone",
+      "Turn on MFA for the account",
+      "Disable location services on it",
+      "Clear her browser's cached files"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "explanation": "A new password locks the attacker out, and MFA keeps stolen credentials from working again. A factory reset of the phone is tempting but does nothing about an attacker signing in from another device."
+  }
+]

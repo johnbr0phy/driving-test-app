@@ -1,0 +1,222 @@
+[
+  {
+    "domain": "aplusVirtCloud",
+    "test": 1,
+    "skill": "Cloud service models",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company wants to rent virtual servers, storage and networking from a provider but install and patch the operating systems itself. Which cloud service model fits?",
+    "options": [
+      "PaaS",
+      "SaaS",
+      "IaaS",
+      "Private cloud"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Infrastructure as a Service supplies compute, storage and networking while the customer manages the OS and above. In PaaS, the provider manages the OS and runtime."
+  },
+  {
+    "domain": "aplusVirtCloud",
+    "test": 1,
+    "skill": "Cloud service models",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Developers want to deploy web code without managing servers or OS patches, while the provider supplies the runtime and database. Which cloud model should they use?",
+    "options": [
+      "PaaS",
+      "IaaS",
+      "SaaS",
+      "Hybrid cloud"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Platform as a Service provides a managed runtime and services so developers only supply code and data. IaaS would leave the operating system and patching to the developers."
+  },
+  {
+    "domain": "aplusVirtCloud",
+    "test": 1,
+    "skill": "Cloud service models",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A small business wants email and office applications delivered through a browser, with the provider managing everything including the software. Which cloud service model is this?",
+    "options": [
+      "IaaS",
+      "PaaS",
+      "Community cloud",
+      "SaaS"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Software as a Service delivers complete applications the provider runs and maintains, such as Microsoft 365 or Google Workspace. PaaS provides a development platform, not finished end-user applications."
+  },
+  {
+    "domain": "aplusVirtCloud",
+    "test": 1,
+    "skill": "Cloud deployment models",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A hospital keeps patient records on its own private cloud but moves its public website to a public provider during traffic peaks. Which deployment model is this?",
+    "options": [
+      "Public",
+      "Hybrid",
+      "Private",
+      "Community"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A hybrid cloud combines private and public infrastructure, letting sensitive data stay private while other workloads burst to a public provider. Private alone would not involve the public provider."
+  },
+  {
+    "domain": "aplusVirtCloud",
+    "test": 1,
+    "skill": "Cloud deployment models",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Several state agencies with the same regulatory requirements jointly build and share cloud infrastructure. Which cloud deployment model does this describe?",
+    "options": [
+      "Hybrid",
+      "Public",
+      "Private",
+      "Community"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A community cloud is shared by organizations with common concerns such as compliance or mission. It is not public because access is limited to the member organizations."
+  },
+  {
+    "domain": "aplusVirtCloud",
+    "test": 1,
+    "skill": "Cloud characteristics",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An online retailer's cloud servers add capacity automatically during holiday traffic and release it afterward. Which cloud characteristic does this demonstrate?",
+    "options": [
+      "Rapid elasticity",
+      "Metered utilization",
+      "High availability",
+      "File synchronization"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Rapid elasticity means resources scale out and back in quickly to match demand. Metered utilization describes how that usage is billed, not the scaling itself."
+  },
+  {
+    "domain": "aplusVirtCloud",
+    "test": 1,
+    "skill": "Cloud characteristics",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A finance manager asks a technician why the monthly cloud bill changes based on how much storage and compute were consumed. Which characteristic explains this?",
+    "options": [
+      "Rapid elasticity",
+      "Shared resource pooling",
+      "Metered utilization",
+      "High availability"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Metered utilization means customers pay for what they actually use, so bills vary with consumption. Rapid elasticity causes the usage to change, but the billing model is metering."
+  },
+  {
+    "domain": "aplusVirtCloud",
+    "test": 1,
+    "skill": "Virtual desktops",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company wants employees to reach a centrally managed Windows desktop from thin clients and personal tablets. Which solution should the technician recommend?",
+    "options": [
+      "A Type 2 hypervisor on each tablet",
+      "Virtual desktop infrastructure",
+      "A file synchronization service",
+      "Microsoft Remote Assistance sessions"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "VDI hosts desktops on central servers and streams them to any client, so thin clients and tablets get the same managed desktop. A local hypervisor on each tablet would not be centrally hosted and is impractical on tablets."
+  },
+  {
+    "domain": "aplusVirtCloud",
+    "test": 1,
+    "skill": "Hypervisor types",
+    "difficulty": 3,
+    "format": "multi",
+    "select": 2,
+    "stem": "A technician needs a hypervisor that runs directly on server hardware rather than as an application on a host OS. Which two products are Type 1 hypervisors? (Choose two.)",
+    "options": [
+      "Oracle VirtualBox",
+      "VMware ESXi",
+      "VMware Workstation Pro",
+      "Microsoft Hyper-V",
+      "Parallels Desktop",
+      "Docker Engine"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "explanation": "ESXi and Hyper-V run directly on the hardware; even on Windows Pro, Hyper-V places the Windows host in a partition above itself. VirtualBox, Workstation Pro and Parallels are Type 2 apps on a host OS, and Docker runs containers, not virtual machines."
+  },
+  {
+    "domain": "aplusVirtCloud",
+    "test": 1,
+    "skill": "Virtualization requirements",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A technician enables Hyper-V on Windows 11 Pro, but virtual machines fail to start with a message that virtualization is disabled. What should the technician do FIRST?",
+    "options": [
+      "Upgrade to Windows 11 Enterprise",
+      "Increase the page file size",
+      "Disable Secure Boot",
+      "Enable VT-x or AMD-V in UEFI"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Hardware virtualization extensions must be enabled in firmware before a hypervisor can run VMs. Windows 11 Pro already supports Hyper-V, so an edition upgrade is unnecessary."
+  },
+  {
+    "domain": "aplusVirtCloud",
+    "test": 0,
+    "skill": "Sandbox VMs",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A security analyst needs to open a suspicious email attachment to see what it does. Which approach is BEST?",
+    "options": [
+      "Open it on the host with antivirus paused",
+      "Run it in an isolated sandbox VM",
+      "Use a VM with clipboard and folders shared",
+      "Copy it to a mapped network share first"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A sandbox VM with networking disabled isolates the malware from the host and the network so it can be observed safely. Sharing the clipboard or folders with the host weakens that isolation."
+  },
+  {
+    "domain": "aplusVirtCloud",
+    "test": 0,
+    "skill": "VM resource planning",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A technician plans to run three VMs needing 8 GB of RAM each on a workstation whose host OS needs 8 GB. What is the minimum RAM required?",
+    "options": [
+      "16 GB",
+      "24 GB",
+      "32 GB",
+      "64 GB"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Each running VM needs its allocated RAM in addition to the host's own requirement: 3 x 8 GB plus 8 GB equals 32 GB. 24 GB covers only the VMs and leaves nothing for the host."
+  }
+]

@@ -5,6 +5,7 @@ import { Check, X, Eye, EyeOff } from "lucide-react";
 import { AnswerValue, QuestionV2, Stimulus } from "@/lib/v2/types";
 import { OPTION_LETTERS, isCorrect, parseNumeric, relabelChoices } from "@/lib/v2/grading";
 import { RichText } from "./RichText";
+import { BowtieInput, MatrixInput, OrderInput, slotRenderer } from "./FormatInputs";
 import { Figure } from "./Figure";
 
 interface Props {
@@ -33,11 +34,15 @@ export function QuestionView({ question, stimulus, optionOrder, answer, onAnswer
   const numericValue = useMemo(() => (typeof answer === "string" ? parseNumeric(answer) : null), [answer]);
 
   const selected = (orig: number) => Array.isArray(answer) && answer.includes(orig);
+  const atCap = question.format === "multi" && !!question.select && Array.isArray(answer) && answer.length >= question.select;
+  const inputProps = { question, answer, onAnswer, reveal, disabled };
+  const renderSlot = slotRenderer(inputProps);
 
   const pick = (orig: number) => {
     if (disabled) return;
     if (question.format === "multi") {
       const cur = Array.isArray(answer) ? answer : [];
+      if (!cur.includes(orig) && atCap) return;
       onAnswer(cur.includes(orig) ? cur.filter((i) => i !== orig) : [...cur, orig].sort((a, b) => a - b));
     } else {
       onAnswer([orig]);
@@ -78,7 +83,7 @@ export function QuestionView({ question, stimulus, optionOrder, answer, onAnswer
               <Figure figure={stimulus.figure} />
             </div>
           )}
-          <RichText text={stimulus.text} className="text-[15px] md:text-base" />
+          <RichText text={stimulus.text} className="text-[15px] md:text-base" renderSlot={renderSlot} />
         </div>
       )}
     </div>
@@ -87,14 +92,26 @@ export function QuestionView({ question, stimulus, optionOrder, answer, onAnswer
   const questionBlock = (
     <div>
       {label && <div className="mb-2 text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400">{label}</div>}
-      <RichText text={question.stem} className="text-[17px] font-medium md:text-lg" />
+      <RichText text={question.stem} className="text-[17px] font-medium md:text-lg" renderSlot={renderSlot} />
       {question.figure && (
         <div className="mt-3">
           <Figure figure={question.figure} />
         </div>
       )}
 
-      {question.format === "numeric" ? (
+      {question.format === "order" ? (
+        <OrderInput {...inputProps} optionOrder={optionOrder} />
+      ) : question.format === "matrix" ? (
+        <MatrixInput {...inputProps} />
+      ) : question.format === "bowtie" ? (
+        <BowtieInput {...inputProps} />
+      ) : question.format === "highlight" || question.format === "cloze" ? (
+        !reveal && (
+          <div className="mt-3 text-xs text-gray-500 dark:text-gray-400">
+            {question.format === "highlight" ? "Tap each phrase to highlight it; tap again to clear it." : "Choose an option for each blank."}
+          </div>
+        )
+      ) : question.format === "numeric" ? (
         <div className="mt-4">
           <label className="block text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400" htmlFor={`num-${question.id}`}>
             Your answer
@@ -164,7 +181,11 @@ export function QuestionView({ question, stimulus, optionOrder, answer, onAnswer
               </div>
             );
           })}
-          {question.format === "multi" && !reveal && <div className="text-xs text-gray-500 dark:text-gray-400">Select every answer that applies.</div>}
+          {question.format === "multi" && !reveal && (
+            <div className={`text-xs ${atCap ? "font-semibold text-gray-700 dark:text-gray-200" : "text-gray-500 dark:text-gray-400"}`}>
+              {question.select ? (atCap ? `${question.select} selected. Tap one to clear it before choosing another.` : `Select ${question.select}.`) : "Select every answer that applies."}
+            </div>
+          )}
         </div>
       )}
 

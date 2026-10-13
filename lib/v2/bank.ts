@@ -35,8 +35,14 @@ export function getQuestionIndex(examId: string): Map<string, QuestionV2> {
   return INDEX[examId];
 }
 
+/**
+ * What shows beside the question: its own passage, a shared stimulus, or for
+ * a case study both. The item's own update comes first, so new findings (and
+ * any highlight markers) are in view without scrolling past the whole case.
+ */
 export function getStimulus(examId: string, q: QuestionV2): Stimulus | null {
+  const shared = q.stimulusId ? getBank(examId).stimuli[q.stimulusId] ?? null : null;
+  if (shared && q.passage) return { ...shared, text: `**New information**\n\n${q.passage}\n\n**The case so far**\n\n${shared.text}` };
   if (q.passage) return { id: q.id, text: q.passage };
-  if (q.stimulusId) return getBank(examId).stimuli[q.stimulusId] ?? null;
-  return null;
+  return shared;
 }

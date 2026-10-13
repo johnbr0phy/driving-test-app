@@ -1,0 +1,683 @@
+[
+  {
+    "domain": "sceneSizeUp",
+    "test": 1,
+    "skill": "Scene safety",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Dispatch sends you to a bar for a 24-year-old man with a gunshot wound; police are en route but not on scene. You should:",
+    "options": [
+      "Enter quickly since the shooter has probably fled",
+      "Park at the front door with lights off",
+      "Ask the caller by phone whether the scene is safe now",
+      "Stage nearby until police report the scene secure"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "At a violent scene the EMT stages at a safe distance until law enforcement secures it, because injured or dead rescuers help no one. A caller's opinion or an assumption that the shooter left is not a secured scene."
+  },
+  {
+    "domain": "sceneSizeUp",
+    "test": 1,
+    "skill": "Mechanism of injury",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "While en route, which dispatch details should prompt an early request for more resources? Select all that apply.",
+    "options": [
+      "Roofer fell 25 feet onto concrete",
+      "Driver pinned with fuel leaking",
+      "Rollover with five occupants hurt",
+      "Adult with a twisted ankle",
+      "Teen with a steady nosebleed"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "A high fall suggests multisystem trauma that needs ALS, entrapment with a fuel leak needs the fire department, and five patients outnumber one crew. A twisted ankle or a nosebleed in a stable patient is handled by the responding unit."
+  },
+  {
+    "domain": "sceneSizeUp",
+    "test": 1,
+    "skill": "Additional resources",
+    "difficulty": 1,
+    "format": "matrix",
+    "stem": "For each scene, specify whether the crew may approach the patient now or must stay back.",
+    "rows": [
+      "Assault scene police have secured",
+      "Downed wire lying across the car",
+      "Rollover car cribbed by firefighters",
+      "Tanker leaking a vapor cloud",
+      "Large dog loose in the yard"
+    ],
+    "columns": [
+      "Approach now",
+      "Stay back"
+    ],
+    "correct": [
+      0,
+      1,
+      0,
+      1,
+      1
+    ],
+    "explanation": "A scene secured by police and a car stabilized by firefighters can be entered. Treat a downed wire as energized until the utility cuts power, stay upwind of an unknown vapor, and wait for a loose dog to be confined."
+  },
+  {
+    "domain": "sceneSizeUp",
+    "test": 1,
+    "skill": "Scene hazards",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "At night during an ice storm, you are sent to a rural farmhouse with a long unpaved driveway for a 70-year-old woman who fell. Before arrival you should:",
+    "options": [
+      "Drive faster to make up for weather delays",
+      "Plan for access and icy footing hazards",
+      "Assume a private home is a safe scene",
+      "Leave equipment in the truck to move faster"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Weather and access shape the plan: route, where to park, how to carry the patient over ice, and whether more hands are needed. Speeding on ice increases the risk of an ambulance crash, and no residence should be assumed safe."
+  },
+  {
+    "domain": "sceneSizeUp",
+    "test": 1,
+    "skill": "Electrical hazards",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A snapped utility pole has left a wire lying across the hood of a crashed car. The 40-year-old driver is alert and talking. You should:",
+    "options": [
+      "Help him step out onto the dry pavement",
+      "Tell him to stay inside and request the power company",
+      "Move the wire aside with a dry wooden branch",
+      "Approach wearing rubber boots and gloves to assess him"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Treat every downed wire as energized: an alert occupant is safest inside the vehicle until the utility cuts power. Stepping out, moving the wire or relying on boots can create a path to ground and electrocute the patient or rescuer."
+  },
+  {
+    "domain": "sceneSizeUp",
+    "test": 1,
+    "skill": "Vehicle stabilization",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A sedan lies on its side after a rollover, and the 22-year-old driver is moaning inside. Before anyone reaches in, you should:",
+    "options": [
+      "Rock the car gently to test whether it is stable",
+      "Climb onto the upper side to open the door",
+      "Pull her through the windshield right away",
+      "Have trained personnel stabilize the vehicle"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An unstable vehicle can roll onto rescuers or worsen the patient's injuries, so cribbing and stabilization come before access. Climbing on or rocking the car is exactly the movement that causes it to shift."
+  },
+  {
+    "domain": "sceneSizeUp",
+    "test": 1,
+    "skill": "Carbon monoxide",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A family of four reports headache and nausea; two are drowsy, and a furnace ran all night with the windows shut. Your first action is to:",
+    "options": [
+      "Move everyone to fresh air and request the fire department",
+      "Check pulse oximetry to rule out a low oxygen level",
+      "Begin assessing the drowsiest child right there in the living room",
+      "Open a window and start oxygen inside the house"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Multiple patients with the same complaints in a closed, heated home suggest carbon monoxide, so the first step is to get everyone, including you, out of the atmosphere. Pulse oximetry reads falsely normal with carbon monoxide and cannot rule it out."
+  },
+  {
+    "domain": "sceneSizeUp",
+    "test": 1,
+    "skill": "Fire scene safety",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "At a working house fire, a woman says her 60-year-old husband is still inside a smoke-filled bedroom. You should:",
+    "options": [
+      "Crawl in low under the smoke to find him",
+      "Enter quickly wearing an N95 mask and eye protection",
+      "Send a bystander who knows the floor plan",
+      "Tell firefighters and stay out of the structure"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Entry into a burning, smoke-filled building requires turnout gear, SCBA and training, so the EMT relays the information to firefighters and prepares to treat. An N95 offers no protection against smoke, heat or carbon monoxide."
+  },
+  {
+    "domain": "sceneSizeUp",
+    "test": 1,
+    "skill": "Ambulance positioning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "At a highway crash, a fire engine is parked behind the wreck blocking the lane. Where should the ambulance park?",
+    "options": [
+      "Behind the engine, upstream of the crash",
+      "Beside the wreck in the open travel lane for quick loading",
+      "Beyond the crash, downstream from the wreckage",
+      "In the median across both directions"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The larger apparatus blocks upstream to shield the scene, and the ambulance parks past the crash so the patient can be loaded behind protection. Parking in an open lane or the median exposes the crew to traffic."
+  },
+  {
+    "domain": "sceneSizeUp",
+    "test": 1,
+    "skill": "Scene safety",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "You arrive for a 55-year-old diabetic man who is confused, but a large dog is lunging and barking at the screen door. You should:",
+    "options": [
+      "Ask the occupant to secure the dog first",
+      "Enter slowly while keeping eye contact with the dog",
+      "Distract the dog with food and walk past",
+      "Use your jump bag as a shield and go in"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Animals are a scene hazard; the crew does not enter until the dog is confined by the owner or animal control. A bitten EMT becomes a second patient and cannot care for the first."
+  },
+  {
+    "domain": "sceneSizeUp",
+    "test": 1,
+    "skill": "Violent scenes",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "While you assess an intoxicated 28-year-old man, he suddenly pulls a knife and threatens your partner. You should:",
+    "options": [
+      "Retreat to safety and call law enforcement",
+      "Disarm him while your partner holds his arms",
+      "Keep treating him while speaking in a calm voice",
+      "Secure him to the stretcher with soft restraints"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A weapon makes the scene unsafe, so the crew withdraws and waits for police to secure it before resuming care. Disarming or restraining an armed person is a law enforcement task, not an EMT one."
+  },
+  {
+    "domain": "sceneSizeUp",
+    "test": 1,
+    "skill": "Violent scenes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "While you treat a 19-year-old with a gunshot wound to the thigh in a park, a hostile crowd gathers and begins shouting. You should:",
+    "options": [
+      "Finish a complete secondary assessment on scene",
+      "Ask the crowd to form a protective circle",
+      "Load him promptly and continue care en route",
+      "Leave him and wait inside the ambulance"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "When a crowd turns hostile, the safest choice is to move the patient into the ambulance and leave, treating life threats on the way. Staying for a full assessment prolongs the danger, and abandoning the patient is not appropriate while you can safely remove him."
+  },
+  {
+    "domain": "sceneSizeUp",
+    "test": 1,
+    "skill": "Technical rescue",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 35-year-old construction worker is buried to the waist in a partially collapsed trench and is calling for help. You should:",
+    "options": [
+      "Climb in to give oxygen and reassurance",
+      "Lower your partner into the trench on a rope to assess him",
+      "Stay out and request a technical rescue team",
+      "Dig the soil from around him with shovels"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Trench walls can collapse again without warning, so only trained rescuers using shoring enter; the EMT stays clear and calls for technical rescue. Entering or digging adds weight and vibration near the edge and creates more victims."
+  },
+  {
+    "domain": "sceneSizeUp",
+    "test": 2,
+    "skill": "Water and ice rescue",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 12-year-old has fallen through pond ice and clings to the edge about 30 feet out. You have no ice rescue training. You should:",
+    "options": [
+      "Walk out on the ice to grab him",
+      "Swim out to him with a rope tied around your waist",
+      "Lie flat and crawl out to pull him",
+      "Reach or throw a flotation device from shore"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Untrained rescuers follow reach, throw, row, go and stay ashore while specialized rescue is requested. Going onto the ice or into the water without training and equipment often adds a second victim."
+  },
+  {
+    "domain": "sceneSizeUp",
+    "test": 2,
+    "skill": "Standard precautions",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Your gloves are on. In which situations should you also wear eye protection? Select all that apply.",
+    "options": [
+      "Arterial bleeding spurting from the arm",
+      "Suctioning vomit from an airway",
+      "Delivering a baby in the field",
+      "Taking a BP over intact skin",
+      "Applying a cold pack to an ankle"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Arterial spray, suctioning and childbirth can all splash blood or fluid into the eyes, so eye protection is added to gloves. Taking a blood pressure or applying a cold pack over intact skin carries no splash risk."
+  },
+  {
+    "domain": "sceneSizeUp",
+    "test": 2,
+    "skill": "Airborne precautions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 50-year-old man recently released from prison has a productive cough, night sweats, weight loss, and is coughing up blood. You should wear:",
+    "options": [
+      "A surgical mask only",
+      "Gloves and a gown only",
+      "Eye protection and gloves only",
+      "A fit-tested N95 respirator"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "These findings suggest tuberculosis, which spreads by the airborne route, so the EMT wears a fit-tested N95 and places a surgical mask on the patient if tolerated. A surgical mask on the EMT does not filter airborne particles."
+  },
+  {
+    "domain": "sceneSizeUp",
+    "test": 2,
+    "skill": "Standard precautions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 25-year-old woman is crowning, with heavy amniotic fluid and blood expected. Beyond gloves, which PPE should you add?",
+    "options": [
+      "A second pair of gloves alone",
+      "An N95 respirator alone",
+      "Gown, mask, and eye protection",
+      "A helmet with a face shield and turnout coat"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Childbirth produces large volumes of blood and fluid that can splash the face and soak clothing, so a gown, mask and eye protection are indicated. Double gloves or an N95 alone do not protect the eyes or clothing."
+  },
+  {
+    "domain": "sceneSizeUp",
+    "test": 2,
+    "skill": "Extrication PPE",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "You must stay with a 45-year-old trapped driver while firefighters cut the roof with hydraulic tools. Appropriate PPE includes:",
+    "options": [
+      "Gloves, a surgical mask, and a disposable gown",
+      "An N95 respirator with gloves and shoe covers",
+      "A reflective vest with a single pair of gloves",
+      "Helmet, eye protection, and turnout gear"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Extrication produces flying glass, sharp metal and debris, so anyone inside the vehicle needs a helmet, eye protection and turnout gear over medical gloves. A disposable gown or vest does not protect against cuts or impact."
+  },
+  {
+    "domain": "sceneSizeUp",
+    "test": 2,
+    "skill": "Hazardous materials",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A placarded tanker is leaking a vapor cloud, and its 40-year-old driver lies near the cab. Trained at awareness level, you should:",
+    "options": [
+      "Wear an N95 and quickly drag him clear",
+      "Stay upwind in the cold zone and call HazMat",
+      "Hold your breath and pull him out",
+      "Approach from downhill wearing a gown and gloves"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Awareness-level EMTs recognize the hazard, isolate, stay upwind and uphill in the cold zone, and request HazMat; patients are decontaminated before EMS treats them. No standard EMS PPE, including an N95, protects against an unknown chemical vapor."
+  },
+  {
+    "domain": "sceneSizeUp",
+    "test": 2,
+    "skill": "Extrication PPE",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "During a long extrication, saws and a generator run continuously beside the vehicle. Which PPE is often overlooked?",
+    "options": [
+      "A second pair of exam gloves",
+      "A fit-tested N95 respirator for airborne infection",
+      "Disposable shoe covers",
+      "Hearing protection for rescuers and the patient"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Prolonged high noise from tools and generators can cause hearing damage and blocks communication, so hearing protection is part of extrication PPE for crews and the patient. Shoe covers and an extra pair of gloves do not address the noise hazard."
+  },
+  {
+    "domain": "sceneSizeUp",
+    "test": 2,
+    "skill": "Number of patients",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "At a three-car crash at night, you find two injured drivers right away. Before committing to their care, you should:",
+    "options": [
+      "Begin treating the louder of the two drivers",
+      "Walk the scene to account for every occupant",
+      "Ask the drivers whether anyone else was in their cars",
+      "Request air medical for both drivers"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Size-up includes determining the total number of patients, and at night people may be thrown clear, wander off or be hidden in vehicles. Relying on injured drivers' reports can miss a patient."
+  },
+  {
+    "domain": "sceneSizeUp",
+    "test": 2,
+    "skill": "Number of patients",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 26-year-old woman is alone in a crashed sedan, but an empty child safety seat is buckled in the back. You should:",
+    "options": [
+      "Assume no child was in the car",
+      "Note the empty seat on the report and begin transport",
+      "Ask her about a child and search the area",
+      "Have police check her home later"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An empty child seat is a classic clue to a possible hidden patient who may have been ejected or carried off by a bystander. Assuming the seat was empty can leave an injured child undiscovered."
+  },
+  {
+    "domain": "sceneSizeUp",
+    "test": 2,
+    "skill": "Number of patients",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A pickup rolled over in a field; its 30-year-old driver says three friends were riding in the bed, and you find one. You should:",
+    "options": [
+      "Treat the driver and friend you have found",
+      "Request more units and search for the other two",
+      "Wait for the driver to recall where they landed",
+      "Assume the others left uninjured on foot"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Occupants ejected from a truck bed may lie far from the vehicle and be critically injured, so the count must be reconciled and additional resources requested. Treating only the patients you see risks missing the sickest ones."
+  },
+  {
+    "domain": "sceneSizeUp",
+    "test": 2,
+    "skill": "Mechanism of injury",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An unrestrained 34-year-old driver struck a tree. You note a starred windshield and a bent steering wheel. You should suspect:",
+    "options": [
+      "Isolated knee and hip injuries from the dash",
+      "Only minor bruising since the airbag deployed",
+      "Head, neck, and chest injuries",
+      "An injury limited to the lower legs"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A starred windshield suggests the head struck the glass, and a deformed steering wheel suggests chest impact, so head, cervical spine and chest injuries are likely. Airbag deployment does not exclude serious injury, especially in an unrestrained occupant."
+  },
+  {
+    "domain": "sceneSizeUp",
+    "test": 2,
+    "skill": "Nature of illness",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Called for an unresponsive 19-year-old in a dorm room, you see a syringe and a bent spoon on the desk. These clues suggest:",
+    "options": [
+      "Possible opioid overdose and a sharps hazard",
+      "A diabetic patient who injected too much of his insulin",
+      "A seizure disorder with a missed medication",
+      "A head injury from a fall out of bed"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The environment gives the nature of illness: a spoon and syringe point to injected drugs such as opioids and warn of uncapped needles. Insulin users do not need a spoon, and the scene does not suggest trauma."
+  },
+  {
+    "domain": "sceneSizeUp",
+    "test": 2,
+    "skill": "START triage",
+    "difficulty": 3,
+    "format": "matrix",
+    "stem": "At a mass-casualty incident using START, assign each adult patient a category.",
+    "rows": [
+      "Walked to the designated area",
+      "Cannot walk, respirations 36",
+      "Cannot walk, RR 20, radial pulse, obeys",
+      "Cannot walk, RR 22, no radial pulse",
+      "Cannot walk, RR 18, cannot obey commands"
+    ],
+    "columns": [
+      "Immediate",
+      "Delayed",
+      "Minor"
+    ],
+    "correct": [
+      2,
+      0,
+      1,
+      0,
+      0
+    ],
+    "explanation": "Walking patients are minor, and anyone who cannot walk is immediate with respirations over 30, no radial pulse or failure to obey commands. Only the patient who passes all three checks is delayed, even though he cannot walk."
+  },
+  {
+    "domain": "sceneSizeUp",
+    "test": 0,
+    "skill": "START triage",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 55-year-old man with an open leg fracture cannot walk, breathes 20 per minute, has a radial pulse, and obeys commands. Using START, tag him:",
+    "options": [
+      "Immediate (red)",
+      "Minor (green)",
+      "Delayed (yellow)",
+      "Expectant (black)"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "He fails only the walking test: respirations under 30, radial pulse present and following commands make him delayed. The painful fracture does not by itself make him immediate under START."
+  },
+  {
+    "domain": "sceneSizeUp",
+    "test": 0,
+    "skill": "START triage",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "Place the START triage checks in the order you perform them.",
+    "options": [
+      "Check radial pulse or capillary refill",
+      "Direct walking patients to one area",
+      "Check ability to follow commands",
+      "Assess breathing and respiratory rate"
+    ],
+    "correct": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "explanation": "START moves the walking wounded first, then checks respirations, perfusion and mental status (RPM) in that order. Breathing is checked before perfusion because an airway or rate problem kills fastest."
+  },
+  {
+    "domain": "sceneSizeUp",
+    "test": 0,
+    "skill": "JumpSTART triage",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "At a school bus crash, a 4-year-old is not breathing after you open the airway but has a palpable pulse. Under JumpSTART you should:",
+    "options": [
+      "Give 5 rescue breaths and reassess",
+      "Tag her expectant and move on",
+      "Begin chest compressions immediately",
+      "Tag her delayed until more help arrives"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "JumpSTART recognizes that apnea in children is often respiratory, so an apneic child with a pulse gets 5 rescue breaths; if breathing resumes she is immediate. Tagging her expectant without the breaths, as in adult START, would miss a salvageable child."
+  },
+  {
+    "domain": "sceneSizeUp",
+    "test": 0,
+    "skill": "SALT triage",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "In SALT triage, which lifesaving intervention may be performed before assigning a category?",
+    "options": [
+      "Full spinal motion restriction",
+      "Applying a tourniquet for major hemorrhage",
+      "Splinting a closed forearm fracture",
+      "Starting CPR on a pulseless patient"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "SALT allows quick lifesaving interventions, such as hemorrhage control, opening the airway, chest decompression and auto-injector antidotes, before categorizing. CPR and splinting are too resource-intensive during initial MCI triage."
+  },
+  {
+    "domain": "sceneSizeUp",
+    "test": 0,
+    "skill": "Triage reassessment",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 60-year-old woman tagged yellow 20 minutes ago now has respirations of 34 and new confusion in the treatment area. You should:",
+    "options": [
+      "Leave the yellow tag to avoid confusion",
+      "Wait for the triage officer to reassess her",
+      "Re-triage her and change her tag to immediate",
+      "Move her to the end of the transport line"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Triage is dynamic, and patients are reassessed and retagged as their condition changes. Her rapid respirations and altered mental status now meet immediate criteria, so leaving the original tag delays her care."
+  },
+  {
+    "domain": "sceneSizeUp",
+    "test": 0,
+    "skill": "ALS intercept",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A 62-year-old man with chest pain is pale and diaphoretic, BP 82/50, pulse 42. The hospital is 35 minutes away. You should:",
+    "options": [
+      "Begin transport and request an ALS intercept",
+      "Assist with his nitroglycerin before moving him",
+      "Wait on scene until a paramedic unit arrives",
+      "Transport without notifying dispatch or the hospital"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Hypotension and bradycardia with chest pain need ALS care, and an intercept brings it without delaying transport. Nitroglycerin is contraindicated with a systolic pressure this low, and waiting on scene wastes time."
+  },
+  {
+    "domain": "sceneSizeUp",
+    "test": 0,
+    "skill": "Additional resources",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "At a home, a 45-year-old woman is dizzy and you smell a strong odor of natural gas. After moving everyone outside, you should request:",
+    "options": [
+      "Law enforcement to secure the home",
+      "Air medical transport for the patient",
+      "Poison control for exposure advice",
+      "The fire department and the gas utility"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A gas leak is an explosion hazard that needs the fire department to secure the scene and the utility to shut off and repair the supply. Police and poison control cannot control the source of the hazard."
+  },
+  {
+    "domain": "sceneSizeUp",
+    "test": 0,
+    "skill": "Incident command",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "You are the first unit at a bus crash with about 20 injured passengers. Place your actions in order.",
+    "options": [
+      "Move patients to treatment areas",
+      "Establish command; request more units",
+      "Transport patients by priority",
+      "Check the scene for hazards",
+      "Begin START triage of patients"
+    ],
+    "correct": [
+      3,
+      1,
+      4,
+      0,
+      2
+    ],
+    "explanation": "Scene safety comes first, then command and a call for resources so help is moving while triage sorts patients. Treatment areas and transport follow triage; treating the first patient you reach leaves the scene unorganized."
+  },
+  {
+    "domain": "sceneSizeUp",
+    "test": 0,
+    "skill": "Landing zone setup",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Air medical is coming for a 25-year-old with severe head trauma 70 minutes from a trauma center. The landing zone should be:",
+    "options": [
+      "About 30 by 30 feet next to the patient",
+      "About 100 by 100 feet, flat, and clear of wires",
+      "On a sloped hill so the pilot sees it",
+      "Beside the crash under the nearest power lines"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A landing zone of about 100 by 100 feet on level ground, free of wires and debris, is the common standard, and crews approach the aircraft from the front within the pilot's view. A small or sloped zone or nearby wires risk a crash."
+  },
+  {
+    "domain": "sceneSizeUp",
+    "test": 0,
+    "skill": "Mutual aid",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "All ambulances in your county are committed to a large apartment fire with many injured residents. To obtain more transport units, request:",
+    "options": [
+      "Mutual aid from neighboring EMS agencies",
+      "Police cars to transport the stable patients",
+      "Bystanders to drive patients in private cars",
+      "An air medical helicopter for each patient"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Mutual aid agreements let neighboring agencies send ambulances when local resources are overwhelmed. Police cars and private vehicles provide no patient care en route, and air medical is reserved for patients who need its speed or skills."
+  }
+]

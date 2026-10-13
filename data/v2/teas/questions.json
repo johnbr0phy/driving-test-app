@@ -116,19 +116,24 @@
     "domain": "teasReading",
     "basics": "sequenceEvents",
     "difficulty": 2,
-    "format": "single",
-    "passage": "To request a parking permit, complete Form P-2 in blue or black ink. Attach a copy of your vehicle registration, but do not attach your driver's license. Submit the form to the security office by Friday at noon. Requests sent by email will not be accepted. An employee fills out Form P-2 in black ink on Thursday.",
-    "stem": "What should the employee do next?",
+    "format": "order",
+    "passage": "To request a parking permit, start by printing Form P-2 from the staff website. Before you fill it out, ask your supervisor for your department code, because the form cannot be processed without it. Complete the form in blue or black ink, then attach a copy of your vehicle registration. Once everything is attached, deliver the packet to the security office. Requests sent by email will not be accepted.",
+    "stem": "Place the steps in the order the employee should complete them.",
     "options": [
-      "Attach the driver's license and email the form.",
-      "Attach copies of both the driver's license and the vehicle registration.",
-      "Email the completed form to the security office.",
-      "Attach the registration copy and deliver it to security."
+      "Print Form P-2",
+      "Get the department code",
+      "Fill out the form in ink",
+      "Attach the registration copy",
+      "Deliver the packet to security"
     ],
     "correct": [
-      3
+      0,
+      1,
+      2,
+      3,
+      4
     ],
-    "explanation": "The directions require a registration copy and delivery to the security office by Friday noon. Emailing is tempting but the notice says emailed requests will not be accepted, and the license must not be attached."
+    "explanation": "Signal words set the order: start by printing, get the code before filling out the form, then attach the registration, and deliver once everything is attached. The department code is mentioned after printing but must come before the form is filled out."
   },
   {
     "id": "TEAS-RD-007",
@@ -268,20 +273,27 @@
     "module": 1,
     "domain": "teasReading",
     "basics": "sequenceEvents",
-    "difficulty": 2,
-    "format": "single",
-    "passage": "Clara Barton worked as a teacher and later as a clerk in the U.S. Patent Office. During the Civil War, she delivered supplies and nursed wounded soldiers. After the war, she traveled to Europe, where she learned about the International Red Cross. In 1881, she founded the American Red Cross.",
-    "stem": "According to the passage, which event occurred just before Barton founded the American Red Cross?",
+    "difficulty": 3,
+    "format": "order",
+    "passage": "Clara Barton is best remembered for founding the American Red Cross in 1881, but she came to that work late in life. As a young woman she taught school for more than a decade, and in 1854 she moved to Washington to work as a clerk in the Patent Office. When the Civil War began in 1861, she started carrying supplies to wounded soldiers. After the war she ran an office that searched for missing soldiers. In 1869 she traveled to Europe to rest, and there she learned about the International Red Cross.",
+    "stem": "Place the events from Barton's life in the order they happened.",
     "options": [
-      "She nursed wounded soldiers in the Civil War.",
-      "She worked as a clerk in the Patent Office.",
-      "She learned about the Red Cross in Europe.",
-      "She taught school before taking a government job."
+      "Taught school",
+      "Worked as a Patent Office clerk",
+      "Carried supplies to wounded soldiers",
+      "Searched for missing soldiers",
+      "Learned of the Red Cross in Europe",
+      "Founded the American Red Cross"
     ],
     "correct": [
-      2
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
     ],
-    "explanation": "The passage lists her trip to Europe, where she learned of the International Red Cross, immediately before the 1881 founding. Nursing soldiers came earlier, during the Civil War."
+    "explanation": "The dates and signal words (as a young woman, 1854, 1861, after the war, 1869, 1881) set the order. Founding the American Red Cross is told first, but it happened last."
   },
   {
     "id": "TEAS-RD-014",
@@ -420,19 +432,23 @@
     "module": 1,
     "domain": "teasReading",
     "difficulty": 2,
-    "format": "single",
-    "passage": "The Great Wall of China was not built all at once. Several states built early walls of packed earth as far back as the seventh century BCE. Much of the brick-and-stone wall visible today was built during the Ming dynasty, between the 1300s and 1600s. Its main purpose was to slow raiders from the north.",
-    "stem": "Which detail best supports the idea that the wall was built over a long period?",
+    "format": "multi",
+    "passage": "St. Agnes Hospital opened in 1902 as a six-bed house on Pine Street. A surgical wing was added in 1925, after a fire destroyed the old operating room. The nursing school, now the hospital's best-known program, began in 1948. A children's unit followed in 1971. Today the hospital employs more than 3,000 people and treats patients from four counties.",
+    "stem": "Which details show that the hospital added facilities or programs over a long period? Select all that apply.",
     "options": [
-      "Early walls and Ming walls were built centuries apart.",
-      "The wall's main purpose was slowing raiders from the north.",
-      "Several states used packed earth for their walls.",
-      "Much of the visible wall is brick and stone."
+      "A surgical wing was added in 1925.",
+      "It now employs over 3,000 people.",
+      "The nursing school began in 1948.",
+      "It treats patients from four counties.",
+      "A children's unit opened in 1971.",
+      "The nursing school is its best-known program."
     ],
     "correct": [
-      0
+      0,
+      2,
+      4
     ],
-    "explanation": "Construction stretching from the seventh century BCE to the Ming dynasty shows building over many centuries. The purpose of slowing raiders explains why it was built, not how long it took."
+    "explanation": "The additions dated 1925, 1948 and 1971 show the hospital growing across seven decades. The staff of 3,000 shows its present size but says nothing about when its parts were built."
   },
   {
     "id": "TEAS-RD-021",
@@ -869,19 +885,21 @@
     "module": 1,
     "domain": "teasReading",
     "difficulty": 2,
-    "format": "single",
+    "format": "multi",
     "passage": "A city council member argues that adding bike lanes on Main Street will reduce traffic injuries. She points out that cyclists currently share lanes with cars and buses. Opponents argue that the lanes will slow traffic and hurt local businesses.",
-    "stem": "Which evidence would best support the council member's argument?",
+    "stem": "Which pieces of evidence would support the council member's argument? Select all that apply.",
     "options": [
-      "Injury data from similar streets before and after adding lanes",
-      "A survey of drivers who dislike sharing the road with cyclists",
-      "The number of shops and restaurants that are located along Main Street",
-      "The cost of painting new lane markings per mile"
+      "Injury rates on similar streets after lanes",
+      "Drivers' complaints about sharing lanes with cyclists",
+      "Studies linking separate lanes to fewer crashes",
+      "The number of shops on Main Street",
+      "The cost of painting lane markings"
     ],
     "correct": [
-      0
+      0,
+      2
     ],
-    "explanation": "Before-and-after injury data from comparable streets directly tests whether bike lanes reduce injuries. Driver attitudes toward cyclists say nothing about injury rates."
+    "explanation": "Injury data from comparable streets and studies tying separate lanes to fewer crashes both speak directly to injuries. Drivers' complaints about cyclists show frustration, not whether lanes prevent injuries."
   },
   {
     "id": "TEAS-RD-042",
@@ -972,7 +990,7 @@
     "id": "TEAS-RD-046",
     "section": "reading",
     "test": 0,
-    "module": 0,
+    "module": 1,
     "domain": "teasReading",
     "basics": "inference",
     "difficulty": 2,
@@ -994,28 +1012,31 @@
     "id": "TEAS-RD-047",
     "section": "reading",
     "test": 0,
-    "module": 0,
+    "module": 1,
     "domain": "teasReading",
-    "difficulty": 2,
-    "format": "single",
-    "passage": "A writer argues that the town should cancel its summer reading program. She notes that last year the program had fewer participants than the summer before. From this, she concludes that children no longer like to read.",
-    "stem": "Which is the main flaw in the writer's reasoning?",
+    "difficulty": 3,
+    "format": "multi",
+    "select": 2,
+    "passage": "A writer argues that the town should cancel its summer reading program. She notes that only 40 of the town's 600 children signed up this year and says that a program unable to reach every child is a failure. She adds that her own two children would rather play outside than read, which proves that children today have lost interest in books.",
+    "stem": "Which are flaws in the writer's reasoning? (Choose two.)",
     "options": [
-      "She draws a broad conclusion from one limited fact.",
-      "She relies too heavily on data from many years.",
-      "She quotes too many experts on children's reading.",
-      "She agrees too readily with the program's strongest supporters."
+      "Treats partial success as total failure",
+      "Cites the number of children enrolled",
+      "Generalizes from her own two children",
+      "States her position in the first sentence",
+      "Focuses on a program the town runs"
     ],
     "correct": [
-      0
+      0,
+      2
     ],
-    "explanation": "One year's drop in sign-ups could have many causes and does not show that children dislike reading. She compares only two summers, so she does not rely on many years of data."
+    "explanation": "Calling the program a failure because it does not reach every child is an all-or-nothing error, and two children cannot show what all children want. Citing enrollment numbers is evidence, not a flaw, even if she draws the wrong conclusion from it."
   },
   {
     "id": "TEAS-RD-048",
     "section": "reading",
     "test": 0,
-    "module": 0,
+    "module": 1,
     "domain": "teasReading",
     "difficulty": 2,
     "format": "single",
@@ -1036,28 +1057,33 @@
     "id": "TEAS-RD-049",
     "section": "reading",
     "test": 0,
-    "module": 0,
+    "module": 1,
     "domain": "teasReading",
     "difficulty": 2,
-    "format": "single",
-    "passage": "A bus schedule posted at the stop shows that Route 9 leaves Center Station at 7:15, 7:45, and 8:15 a.m. A notice on the transit website, dated yesterday, says that because of road work, all morning Route 9 departures are delayed 10 minutes this week. A rider needs the first Route 9 bus this week.",
-    "stem": "When should she expect it to leave Center Station?",
+    "format": "order",
+    "passage": "By the time the ambulance pulled away, Lena's hands had finally stopped shaking. Only an hour earlier she had been jogging along the river path when she spotted a man slumped on a bench. She checked that he was breathing, then called 911 and stayed beside him until the paramedics arrived. Later that evening, a nurse phoned to say the man was recovering well.",
+    "stem": "Place the events of the story in the order they happened.",
     "options": [
-      "7:15 a.m.",
-      "7:25 a.m.",
-      "7:05 a.m.",
-      "7:55 a.m."
+      "Spotted a man slumped on a bench",
+      "Checked that the man was breathing",
+      "Called 911 for help",
+      "Watched the ambulance pull away",
+      "Got a call from a nurse"
     ],
     "correct": [
-      1
+      0,
+      1,
+      2,
+      3,
+      4
     ],
-    "explanation": "The first scheduled departure is 7:15, and the newer notice adds a 10-minute delay, giving 7:25 a.m. Choosing 7:15 ignores the more recent notice."
+    "explanation": "The story opens near the end and flashes back an hour earlier; the signal words then and later evening fix the rest. The ambulance leaving is told first, but it happened after the 911 call."
   },
   {
     "id": "TEAS-RD-050",
     "section": "reading",
     "test": 0,
-    "module": 0,
+    "module": 1,
     "domain": "teasReading",
     "basics": "mainIdea",
     "difficulty": 2,
@@ -1079,7 +1105,7 @@
     "id": "TEAS-RD-051",
     "section": "reading",
     "test": 0,
-    "module": 0,
+    "module": 1,
     "domain": "teasReading",
     "difficulty": 2,
     "format": "single",
@@ -1100,7 +1126,7 @@
     "id": "TEAS-RD-052",
     "section": "reading",
     "test": 0,
-    "module": 0,
+    "module": 1,
     "domain": "teasReading",
     "difficulty": 2,
     "format": "single",
@@ -1523,19 +1549,23 @@
     "module": 1,
     "domain": "teasNumbers",
     "basics": "fractionConvert",
-    "difficulty": 2,
-    "format": "single",
-    "stem": "Which number lies between −1/2 and −1/4 on a number line?",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "Which numbers lie between −1/2 and −1/4 on a number line? Select all that apply.",
     "options": [
-      "−0.55",
       "−0.3",
-      "−0.2",
-      "0.3"
+      "−0.6",
+      "−3/8",
+      "−1/5",
+      "−45%",
+      "−0.25"
     ],
     "correct": [
-      1
+      0,
+      2,
+      4
     ],
-    "explanation": "−1/2 = −0.5 and −1/4 = −0.25, and −0.5 < −0.3 < −0.25. −0.2 is tempting, but it is greater than −0.25, so it lies to the right of −1/4."
+    "explanation": "−1/2 = −0.5 and −1/4 = −0.25; −0.3, −3/8 = −0.375 and −45% = −0.45 all fall between them. −0.25 is tempting, but it equals −1/4, an endpoint, so it is not between the two numbers."
   },
   {
     "id": "TEAS-MA-021",
@@ -1544,18 +1574,16 @@
     "module": 1,
     "domain": "teasNumbers",
     "difficulty": 2,
-    "format": "single",
-    "stem": "Estimate 48.7 × 21.3 by rounding each factor to the nearest ten. What is the estimate?",
-    "options": [
-      "1,000",
-      "1,050",
-      "980",
-      "1,037.31"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "48.7 rounds to 50 and 21.3 rounds to 20, so 50 × 20 = 1,000. 1,037.31 is the exact product, not the estimate asked for, and 1,050 rounds 21.3 to 21 instead of to the nearest ten."
+    "format": "numeric",
+    "stem": "Estimate 38.6 × 52.4 by first rounding each factor to the nearest ten. What is the estimate?",
+    "numeric": {
+      "answers": [
+        "2000",
+        "2,000"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "Rounding gives 40 × 50 = 2,000, close to the exact product of about 2,023. Rounding 38.6 down to 30 instead of up to 40 gives 1,500, an estimate far below the true value."
   },
   {
     "id": "TEAS-MA-022",
@@ -1565,18 +1593,15 @@
     "domain": "teasMeasurement",
     "basics": "dosage",
     "difficulty": 2,
-    "format": "single",
-    "stem": "A child weighing 44 lb is ordered a medication at 15 mg/kg. Using 1 kg = 2.2 lb, how many milligrams should the child receive?",
-    "options": [
-      "300 mg",
-      "660 mg",
-      "1,452 mg",
-      "30 mg"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "Convert pounds to kilograms first: 44 ÷ 2.2 = 20 kg, then 20 × 15 = 300 mg. 660 mg multiplies 15 by the weight in pounds, and 1,452 mg multiplies by 2.2 instead of dividing."
+    "format": "numeric",
+    "stem": "A child weighing 33 lb is ordered a medication at 10 mg/kg. Using 1 kg = 2.2 lb, how many milligrams should the child receive?",
+    "numeric": {
+      "answers": [
+        "150"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "Convert pounds to kilograms first: 33 ÷ 2.2 = 15 kg, then 15 × 10 = 150 mg. Multiplying 10 by the weight in pounds gives 330 mg, more than twice the ordered dose."
   },
   {
     "id": "TEAS-MA-023",
@@ -1626,18 +1651,17 @@
     "module": 1,
     "domain": "teasMeasurement",
     "difficulty": 2,
-    "format": "single",
-    "stem": "A table lists clinic visits: Monday 42, Tuesday 35, Wednesday 51, Thursday 38, Friday 44. About what percent of the week's visits occurred on Wednesday?",
-    "options": [
-      "32.1%",
-      "20.0%",
-      "51.0%",
-      "24.3%"
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "The week's total is 42 + 35 + 51 + 38 + 44 = 210, and 51 ÷ 210 ≈ 0.243 = 24.3%. 32.1% divides by the other four days (159) instead of the full total, and 20.0% assumes each day is an equal one-fifth."
+    "format": "numeric",
+    "passage": "| Day | Clinic visits |\n|---|---|\n| Monday | 42 |\n| Tuesday | 35 |\n| Wednesday | 51 |\n| Thursday | 38 |\n| Friday | 44 |",
+    "stem": "The table shows a clinic's visits for one week. What percent of the week's visits occurred on Wednesday? Round to the nearest whole percent.",
+    "numeric": {
+      "answers": [
+        "24",
+        "24%"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "The week's total is 42 + 35 + 51 + 38 + 44 = 210, and 51 ÷ 210 ≈ 0.243, or about 24%. Dividing by the other four days only (159) gives about 32%, which leaves Wednesday out of the total."
   },
   {
     "id": "TEAS-MA-026",
@@ -1728,18 +1752,15 @@
     "module": 1,
     "domain": "teasMeasurement",
     "difficulty": 2,
-    "format": "single",
-    "stem": "Resting heart rates for eight patients are 72, 68, 75, 72, 80, 68, 72 and 91 beats per minute. What are the mode and the range?",
-    "options": [
-      "Mode 68, range 23",
-      "Mode 72, range 19",
-      "Mode 74.75, range 23",
-      "Mode 72, range 23"
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "72 appears three times, more than any other value, so the mode is 72; the range is the highest minus the lowest, 91 − 68 = 23. 68 appears only twice, and 19 subtracts the mode (91 − 72) instead of the minimum."
+    "format": "numeric",
+    "stem": "Respiratory rates for seven patients are 16, 22, 18, 14, 20, 18 and 26 breaths per minute. What is the range of the data, in breaths per minute?",
+    "numeric": {
+      "answers": [
+        "12"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "Range is the greatest value minus the least: 26 - 14 = 12. Subtracting the first listed value (26 - 16 = 10) is tempting, but 14 is the smallest value in the set."
   },
   {
     "id": "TEAS-MA-031",
@@ -1768,19 +1789,22 @@
     "test": 1,
     "module": 1,
     "domain": "teasMeasurement",
-    "difficulty": 2,
-    "format": "single",
-    "stem": "Hospital length-of-stay data for 500 patients have a mean of 6.8 days and a median of 4 days. Which best describes the distribution?",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "Hospital length-of-stay data for 500 patients have a mean of 6.8 days and a median of 4 days. Which statements are supported by these data? Select all that apply.",
     "options": [
-      "Skewed left, with a few very short stays",
-      "Skewed right, with a few very long stays",
-      "Symmetric, with mean and median about equal",
-      "Uniform, with every length equally common"
+      "The data are skewed to the right.",
+      "Most patients stayed about 6.8 days.",
+      "At least half stayed 4 days or less.",
+      "The data are skewed to the left.",
+      "A few long stays pull the mean up."
     ],
     "correct": [
-      1
+      0,
+      2,
+      4
     ],
-    "explanation": "When the mean (6.8) is well above the median (4), a few unusually large values are pulling the mean up, which is a right (positive) skew. A left skew would put the mean below the median."
+    "explanation": "A median of 4 means at least half the stays were 4 days or shorter, and a mean well above the median shows a few long stays stretching the data to the right. The mean of 6.8 is tempting as a typical stay, but those long stays inflate it."
   },
   {
     "id": "TEAS-MA-033",
@@ -1851,18 +1875,15 @@
     "module": 1,
     "domain": "teasMeasurement",
     "difficulty": 2,
-    "format": "single",
-    "stem": "A patient's temperature is 38.5°C. Using °F = (9/5 × °C) + 32, what is the temperature in degrees Fahrenheit?",
-    "options": [
-      "69.3°F",
-      "53.4°F",
-      "126.9°F",
-      "101.3°F"
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "Multiply first, then add: 9/5 × 38.5 = 69.3, and 69.3 + 32 = 101.3°F. 69.3°F forgets to add 32, and 53.4°F uses 5/9, which is the factor for converting Fahrenheit to Celsius."
+    "format": "numeric",
+    "stem": "A patient's temperature is 39.2°C. Using °F = (9/5 × °C) + 32, what is the temperature in degrees Fahrenheit? Round to the nearest tenth.",
+    "numeric": {
+      "answers": [
+        "102.6"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "Multiply first, then add: 9/5 × 39.2 = 70.56, and 70.56 + 32 = 102.56, which rounds to 102.6°F. Adding 32 before multiplying gives about 128.2°F, an impossible body temperature."
   },
   {
     "id": "TEAS-MA-037",
@@ -1910,7 +1931,7 @@
     "id": "TEAS-MA-039",
     "section": "math",
     "test": 0,
-    "module": 0,
+    "module": 1,
     "domain": "teasMeasurement",
     "basics": "areaPerimeter",
     "difficulty": 2,
@@ -1931,7 +1952,7 @@
     "id": "TEAS-MA-040",
     "section": "math",
     "test": 0,
-    "module": 0,
+    "module": 1,
     "domain": "teasMeasurement",
     "basics": "circleBasics",
     "difficulty": 2,
@@ -1952,28 +1973,25 @@
     "id": "TEAS-MA-041",
     "section": "math",
     "test": 0,
-    "module": 0,
+    "module": 1,
     "domain": "teasMeasurement",
     "basics": "volume",
     "difficulty": 2,
-    "format": "single",
-    "stem": "A storage bin measures 20 cm by 15 cm by 10 cm. Using 1 L = 1,000 cm³, how many liters does it hold?",
-    "options": [
-      "3 L",
-      "30 L",
-      "0.3 L",
-      "1.3 L"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "Volume = 20 × 15 × 10 = 3,000 cm³, and 3,000 ÷ 1,000 = 3 L. 1.3 L uses the surface area (1,300 cm²) instead of the volume, and 30 L or 0.3 L misplace the decimal point."
+    "format": "numeric",
+    "stem": "A rectangular water tank measures 30 cm by 20 cm by 25 cm. Using 1 L = 1,000 cm³, how many liters does the tank hold when full?",
+    "numeric": {
+      "answers": [
+        "15"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "Volume is length × width × height: 30 × 20 × 25 = 15,000 cm³, and 15,000 ÷ 1,000 = 15 L. Stopping at 15,000 gives the volume in cubic centimeters, not liters."
   },
   {
     "id": "TEAS-MA-042",
     "section": "math",
     "test": 0,
-    "module": 0,
+    "module": 1,
     "domain": "teasMeasurement",
     "basics": "pythagorean",
     "difficulty": 2,
@@ -1994,27 +2012,24 @@
     "id": "TEAS-MA-043",
     "section": "math",
     "test": 0,
-    "module": 0,
+    "module": 1,
     "domain": "teasMeasurement",
     "difficulty": 2,
-    "format": "single",
-    "stem": "An IV infusion starts at 9:45 PM and runs for 7 hours 30 minutes. At what time will it finish?",
-    "options": [
-      "4:15 AM",
-      "5:15 PM",
-      "2:15 PM",
-      "5:15 AM"
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "9:45 PM + 7 hours = 4:45 AM, and 4:45 AM + 30 minutes = 5:15 AM. 4:15 AM forgets to carry the extra hour from 45 + 30 = 75 minutes, and 5:15 PM misses the change from PM to AM after midnight."
+    "format": "numeric",
+    "stem": "A provider orders 1,000 mL of IV fluid to infuse over 8 hours. At what rate, in milliliters per hour, should the pump be set?",
+    "numeric": {
+      "answers": [
+        "125"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "Rate is volume divided by time: 1,000 mL ÷ 8 h = 125 mL per hour. Multiplying instead of dividing gives 8,000, which would run the bag in under 8 minutes."
   },
   {
     "id": "TEAS-MA-044",
     "section": "math",
     "test": 0,
-    "module": 0,
+    "module": 1,
     "domain": "teasNumbers",
     "basics": "percents",
     "difficulty": 2,
@@ -2038,18 +2053,25 @@
     "module": 1,
     "domain": "teasScience",
     "difficulty": 2,
-    "format": "single",
-    "stem": "Blood returning from the lungs through the pulmonary veins enters which chamber of the heart first?",
+    "format": "order",
+    "stem": "Deoxygenated blood returns to the heart through the venae cavae. Place the structures in the order the blood passes through them next.",
     "options": [
-      "Left atrium",
       "Right atrium",
-      "Left ventricle",
-      "Right ventricle"
+      "Right ventricle",
+      "Pulmonary arteries",
+      "Pulmonary veins",
+      "Left atrium",
+      "Left ventricle"
     ],
     "correct": [
-      0
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
     ],
-    "explanation": "The pulmonary veins carry oxygenated blood to the left atrium, which passes it through the mitral valve to the left ventricle. The right atrium receives deoxygenated blood from the venae cavae, not from the lungs."
+    "explanation": "Blood moves from the right atrium to the right ventricle, out the pulmonary arteries to the lungs, back through the pulmonary veins to the left atrium, then to the left ventricle, which pumps it into the aorta. The pulmonary veins come after the lungs, so they cannot precede the pulmonary arteries."
   },
   {
     "id": "TEAS-SC-002",
@@ -2278,18 +2300,22 @@
     "module": 1,
     "domain": "teasScience",
     "difficulty": 2,
-    "format": "single",
-    "stem": "A person is suddenly frightened by a loud noise. Which response is produced by the sympathetic division of the autonomic nervous system?",
+    "format": "multi",
+    "stem": "A person is suddenly frightened by a loud noise. Which responses are produced by the sympathetic division of the autonomic nervous system? Select all that apply.",
     "options": [
-      "Constricted pupils and a slowed heart rate",
-      "Increased salivation and digestive activity",
-      "Dilated pupils and an increased heart rate",
-      "Bladder contraction to promote urination"
+      "Pupils dilate",
+      "Digestive activity increases",
+      "Heart rate increases",
+      "Pupils constrict",
+      "Bronchioles widen",
+      "Saliva flow increases"
     ],
     "correct": [
-      2
+      0,
+      2,
+      4
     ],
-    "explanation": "The sympathetic fight-or-flight response dilates the pupils, speeds the heart and shifts blood to skeletal muscle. Constricted pupils and a slower heart rate are parasympathetic rest-and-digest effects."
+    "explanation": "The fight-or-flight response dilates the pupils, speeds the heart and widens the airways to deliver more oxygen. Increased digestion and saliva flow are parasympathetic, rest-and-digest effects."
   },
   {
     "id": "TEAS-SC-014",
@@ -2458,18 +2484,23 @@
     "module": 1,
     "domain": "teasScience",
     "difficulty": 2,
-    "format": "single",
-    "stem": "In the nephron, blood plasma is first filtered out of the blood at which structure?",
+    "format": "order",
+    "stem": "Place the kidney structures in the order filtrate flows through them, starting where filtrate first forms.",
     "options": [
+      "Glomerular capsule",
+      "Proximal convoluted tubule",
       "Loop of Henle",
-      "Glomerulus",
-      "Collecting duct",
-      "Distal convoluted tubule"
+      "Distal convoluted tubule",
+      "Collecting duct"
     ],
     "correct": [
-      1
+      0,
+      1,
+      2,
+      3,
+      4
     ],
-    "explanation": "Blood pressure in the glomerular capillaries pushes water and small solutes into Bowman's capsule, forming filtrate. The loop of Henle later helps concentrate the filtrate, but it does not filter blood."
+    "explanation": "Plasma is filtered from the glomerulus into the glomerular (Bowman's) capsule, then flows through the proximal tubule, the loop of Henle and the distal tubule before draining into a collecting duct. The collecting duct is shared by many nephrons and comes last, after the distal tubule."
   },
   {
     "id": "TEAS-SC-023",
@@ -2518,18 +2549,22 @@
     "module": 1,
     "domain": "teasScience",
     "difficulty": 2,
-    "format": "single",
-    "stem": "Which defense is part of the adaptive (specific) immune response rather than the innate response?",
+    "format": "multi",
+    "stem": "Which defenses are part of the adaptive (specific) immune response? Select all that apply.",
     "options": [
-      "Inflammation at a wound site",
-      "Antibody production by plasma cells",
-      "Phagocytosis of bacteria by neutrophils",
-      "Intact skin acting as a barrier"
+      "Antibodies made by plasma cells",
+      "Neutrophils engulfing invading bacteria",
+      "Cytotoxic T cells killing infected cells",
+      "Intact skin blocking pathogen entry",
+      "Memory B cells formed after vaccination",
+      "Fever raising body temperature"
     ],
     "correct": [
-      1
+      0,
+      2,
+      4
     ],
-    "explanation": "Plasma cells come from B lymphocytes and make antibodies against a specific antigen, and the response leaves memory cells. Neutrophil phagocytosis is innate because it attacks any invader without prior exposure."
+    "explanation": "Antibodies, cytotoxic T cells and memory B cells all target a specific antigen and come from lymphocytes, which defines adaptive immunity. Neutrophil phagocytosis is tempting but is innate: it attacks any invader without prior exposure."
   },
   {
     "id": "TEAS-SC-026",
@@ -2898,18 +2933,22 @@
     "module": 1,
     "domain": "teasScience",
     "difficulty": 2,
-    "format": "single",
-    "stem": "Which pair of elements is most likely to form an ionic bond when they react with each other?",
+    "format": "multi",
+    "stem": "Which pairs of elements are most likely to form an ionic bond when they react? Select all that apply.",
     "options": [
-      "Potassium and fluorine",
-      "Carbon and hydrogen",
-      "Nitrogen and oxygen",
-      "Two chlorine atoms bonded together"
+      "Sodium and chlorine",
+      "Carbon and oxygen",
+      "Magnesium and oxygen",
+      "Nitrogen and hydrogen",
+      "Potassium and bromine",
+      "Carbon and hydrogen"
     ],
     "correct": [
-      0
+      0,
+      2,
+      4
     ],
-    "explanation": "Ionic bonds form when a metal transfers electrons to a nonmetal with a large electronegativity difference, as with potassium and fluorine. The other pairs are both nonmetals, so they share electrons in covalent bonds."
+    "explanation": "Ionic bonds form between a metal that loses electrons and a nonmetal that gains them, as in Na-Cl, Mg-O and K-Br. Carbon and oxygen are both nonmetals, so they share electrons in covalent bonds."
   },
   {
     "id": "TEAS-SC-045",
@@ -2978,18 +3017,17 @@
     "module": 1,
     "domain": "teasScience",
     "difficulty": 2,
-    "format": "single",
-    "stem": "A technician dissolves 15 g of glucose in enough water to make 300 mL of solution. What is the concentration in percent weight per volume?",
-    "options": [
-      "20%",
-      "5%",
-      "0.05%",
-      "15%"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "Percent w/v = grams per 100 mL: 15 g / 300 mL = 0.05, and 0.05 x 100 = 5%. Dividing 300 by 15 gives 20, which inverts the ratio."
+    "format": "numeric",
+    "stem": "A technician dissolves 12 g of sodium chloride in enough water to make 400 mL of solution. What is the concentration as a percent weight/volume (grams per 100 mL)?",
+    "numeric": {
+      "answers": [
+        "3",
+        "3.0",
+        "3%"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "Percent w/v is grams per 100 mL: 12 g ÷ 400 mL × 100 = 3%. Dividing 400 by 12 gives about 33, which inverts the ratio."
   },
   {
     "id": "TEAS-SC-049",
@@ -2997,19 +3035,16 @@
     "test": 1,
     "module": 1,
     "domain": "teasScience",
-    "difficulty": 2,
-    "format": "single",
-    "stem": "When the equation Al + O2 -> Al2O3 is balanced using the smallest whole numbers, what is the coefficient for O2?",
-    "options": [
-      "2",
-      "4",
-      "3",
-      "6"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "The balanced equation is 4Al + 3O2 -> 2Al2O3, giving 4 Al and 6 O atoms on each side. The coefficient 2 belongs to Al2O3, and 6 is the total number of oxygen atoms, not the O2 coefficient."
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "When the equation C3H8 + O2 -> CO2 + H2O is balanced using the smallest whole numbers, what is the coefficient for O2?",
+    "numeric": {
+      "answers": [
+        "5"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "Balance carbon (3CO2), then hydrogen (4H2O), then oxygen: 3 × 2 + 4 × 1 = 10 oxygen atoms, so 5O2. Answering 10 counts the oxygen atoms instead of the O2 molecules."
   },
   {
     "id": "TEAS-SC-050",
@@ -3035,27 +3070,32 @@
     "id": "TEAS-SC-051",
     "section": "science",
     "test": 0,
-    "module": 0,
+    "module": 1,
     "domain": "teasScience",
     "difficulty": 2,
-    "format": "single",
-    "stem": "A student notices that plants near a sunny window grow taller than plants in a dim hallway. According to the scientific method, what should the student do next?",
+    "format": "order",
+    "stem": "A student notices that plants near a sunny window grow taller than plants in a dim hallway. Place the steps of her investigation in the order the scientific method calls for.",
     "options": [
-      "Form a testable hypothesis",
-      "Publish the conclusion that light causes growth",
-      "Accept the observation as a proven theory",
-      "Analyze data from the finished experiment"
+      "Observe the difference in plant height",
+      "Propose that light affects growth",
+      "Grow plants under controlled light levels",
+      "Measure and compare plant heights",
+      "Decide whether the data support her idea"
     ],
     "correct": [
-      0
+      0,
+      1,
+      2,
+      3,
+      4
     ],
-    "explanation": "After an observation and question, the next step is a testable hypothesis that an experiment can check. Drawing or publishing a conclusion before testing skips the experiment entirely."
+    "explanation": "An observation leads to a testable hypothesis, which is tested by a controlled experiment, followed by data analysis and a conclusion. Measuring heights comes after the experiment, because the data come from it."
   },
   {
     "id": "TEAS-SC-052",
     "section": "science",
     "test": 0,
-    "module": 0,
+    "module": 1,
     "domain": "teasScience",
     "difficulty": 2,
     "format": "single",
@@ -3075,7 +3115,7 @@
     "id": "TEAS-SC-053",
     "section": "science",
     "test": 0,
-    "module": 0,
+    "module": 1,
     "domain": "teasScience",
     "difficulty": 2,
     "format": "single",
@@ -3095,7 +3135,7 @@
     "id": "TEAS-SC-054",
     "section": "science",
     "test": 0,
-    "module": 0,
+    "module": 1,
     "domain": "teasScience",
     "difficulty": 2,
     "format": "single",
@@ -3115,27 +3155,30 @@
     "id": "TEAS-SC-055",
     "section": "science",
     "test": 0,
-    "module": 0,
+    "module": 1,
     "domain": "teasScience",
     "difficulty": 2,
-    "format": "single",
-    "stem": "To test whether a new fertilizer increases tomato yield, a gardener applies it to 20 plants. Which group would serve as the best control group?",
+    "format": "multi",
+    "stem": "To test whether a new fertilizer increases tomato yield, a gardener will compare 20 plants that get the fertilizer with 20 plants that do not. Which factors should she keep the same for both groups? Select all that apply.",
     "options": [
-      "20 matching plants given no fertilizer",
-      "20 plants given double the fertilizer",
-      "5 pepper plants given the same fertilizer",
-      "20 plants given fertilizer but less water"
+      "Water given to each plant",
+      "Whether fertilizer is applied",
+      "Hours of sunlight each day",
+      "Pounds of tomatoes harvested",
+      "Variety of tomato plant"
     ],
     "correct": [
-      0
+      0,
+      2,
+      4
     ],
-    "explanation": "A control group matches the experimental group in every way except the factor being tested, so it receives no fertilizer. Giving less water would add a second changing variable, and different species or numbers make comparison unfair."
+    "explanation": "Water, sunlight and plant variety are controlled variables, held equal so only the fertilizer differs. Fertilizer use is the independent variable the gardener changes on purpose, and the harvest is the dependent variable she measures."
   },
   {
     "id": "TEAS-SC-056",
     "section": "science",
     "test": 0,
-    "module": 0,
+    "module": 1,
     "domain": "teasScience",
     "difficulty": 2,
     "format": "single",
@@ -3155,7 +3198,7 @@
     "id": "TEAS-SC-057",
     "section": "science",
     "test": 0,
-    "module": 0,
+    "module": 1,
     "domain": "teasScience",
     "difficulty": 2,
     "format": "single",
@@ -3175,27 +3218,24 @@
     "id": "TEAS-SC-058",
     "section": "science",
     "test": 0,
-    "module": 0,
+    "module": 1,
     "domain": "teasScience",
     "difficulty": 2,
-    "format": "single",
-    "stem": "In a trial, average systolic pressure fell from 150 to 138 mm Hg with Drug A and from 150 to 148 mm Hg with a placebo. Which conclusion is best supported?",
-    "options": [
-      "Drug A cures high blood pressure in every patient",
-      "The placebo raised the patients' blood pressure",
-      "Both treatments were equally effective",
-      "Drug A lowered blood pressure more than placebo"
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "Drug A produced a 12 mm Hg drop (150 - 138) versus 2 mm Hg (150 - 148) for placebo, so it lowered pressure more. Averages cannot show that every patient was cured, so claiming a cure overstates the data."
+    "format": "numeric",
+    "stem": "In a trial, average systolic pressure fell from 146 to 131 mm Hg in the group given a new drug and from 146 to 142 mm Hg in the placebo group. By how many mm Hg did the drug group's average drop exceed the placebo group's?",
+    "numeric": {
+      "answers": [
+        "11"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "The drug group dropped 146 - 131 = 15 mm Hg and the placebo group 146 - 142 = 4 mm Hg, so the difference is 15 - 4 = 11. Answering 15 ignores the drop the placebo group shows would have happened anyway."
   },
   {
     "id": "TEAS-SC-059",
     "section": "science",
     "test": 0,
-    "module": 0,
+    "module": 1,
     "domain": "teasScience",
     "difficulty": 2,
     "format": "single",
@@ -3215,7 +3255,7 @@
     "id": "TEAS-SC-060",
     "section": "science",
     "test": 0,
-    "module": 0,
+    "module": 1,
     "domain": "teasScience",
     "difficulty": 2,
     "format": "single",
@@ -3258,18 +3298,22 @@
     "module": 1,
     "domain": "teasConventions",
     "difficulty": 2,
-    "format": "single",
-    "stem": "A nursing student is proofreading an incident report. Which of the following words is spelled correctly?",
+    "format": "multi",
+    "stem": "A nursing student is proofreading an incident report. Which words are spelled correctly? Select all that apply.",
     "options": [
-      "occurence",
-      "ocurrence",
-      "occurrance",
-      "occurrence"
+      "occurrence",
+      "recieve",
+      "necessary",
+      "seperate",
+      "privilege",
+      "accomodate"
     ],
     "correct": [
-      3
+      0,
+      2,
+      4
     ],
-    "explanation": "\"Occurrence\" doubles both the c and the r and ends in -ence. The most common error drops the second r, as in \"occurence.\""
+    "explanation": "Occurrence, necessary and privilege are correct. Recieve breaks the i-before-e-except-after-c pattern (receive), and separate and accommodate are the correct spellings of the other two."
   },
   {
     "id": "TEAS-EN-003",
@@ -3440,19 +3484,23 @@
     "test": 1,
     "module": 1,
     "domain": "teasConventions",
-    "difficulty": 2,
-    "format": "single",
-    "stem": "Which of the following is a complete sentence rather than a fragment?",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "Which of the following are complete sentences rather than fragments? Select all that apply.",
     "options": [
-      "Because the clinic closed early on Friday.",
-      "Because the clinic closed early, we rescheduled.",
-      "Rescheduling the visit after the clinic closed early.",
-      "After the clinic, which had closed early."
+      "The nurse checked the chart.",
+      "Because the lab closed early.",
+      "Please wash your hands.",
+      "Running down the hall to help.",
+      "After the shift ended, Ana left.",
+      "The doctor who ordered the test."
     ],
     "correct": [
-      1
+      0,
+      2,
+      4
     ],
-    "explanation": "This option joins a dependent clause to an independent clause with its own subject and verb, \"we rescheduled.\" A \"because\" clause standing alone is a fragment even though it has a subject and verb."
+    "explanation": "Each key has a subject and verb and expresses a complete thought; Please wash your hands is a command whose subject, you, is understood. The doctor who ordered the test is tempting, but it has no main verb for doctor, so it is a fragment."
   },
   {
     "id": "TEAS-EN-012",
@@ -3751,18 +3799,23 @@
     "module": 1,
     "domain": "teasLanguage",
     "difficulty": 2,
-    "format": "single",
-    "stem": "Sentences for a paragraph on blood donation: (1) After screening, blood is drawn. (2) First, donors complete a health screening. (3) Finally, donors rest and eat a snack. Which order is most logical?",
+    "format": "order",
+    "stem": "Place the sentences in the order that makes the most logical paragraph.",
     "options": [
-      "1, 2, 3",
-      "2, 1, 3",
-      "3, 2, 1",
-      "2, 3, 1"
+      "Vaccines teach the body to recognize a virus.",
+      "First, a harmless piece of the virus is injected.",
+      "Next, the body makes antibodies against that piece.",
+      "Some of the responding cells become memory cells.",
+      "Later, memory cells quickly attack the real virus."
     ],
     "correct": [
-      1
+      0,
+      1,
+      2,
+      3,
+      4
     ],
-    "explanation": "The signal words \"First,\" \"After screening,\" and \"Finally\" set a chronological order of 2, 1, 3. Keeping the numbered order would describe the blood draw before the screening it depends on."
+    "explanation": "The topic sentence comes first, and the transitions first, next and later order the process. The memory cells sentence must come before later, because that sentence refers back to memory cells already introduced."
   },
   {
     "id": "TEAS-EN-027",
@@ -3992,7 +4045,7 @@
     "id": "TEAS-EN-038",
     "section": "english",
     "test": 0,
-    "module": 0,
+    "module": 1,
     "domain": "teasLanguage",
     "difficulty": 2,
     "format": "single",
@@ -4012,7 +4065,7 @@
     "id": "TEAS-EN-039",
     "section": "english",
     "test": 0,
-    "module": 0,
+    "module": 1,
     "domain": "teasLanguage",
     "difficulty": 2,
     "format": "single",
@@ -4032,27 +4085,30 @@
     "id": "TEAS-EN-040",
     "section": "english",
     "test": 0,
-    "module": 0,
+    "module": 1,
     "domain": "teasLanguage",
     "difficulty": 2,
-    "format": "single",
-    "stem": "Which word has the most positive connotation for describing someone who spends money carefully?",
+    "format": "multi",
+    "select": 2,
+    "stem": "Which words have a positive connotation for describing someone who spends money carefully? (Choose two.)",
     "options": [
-      "thrifty",
       "stingy",
-      "cheap",
-      "penny-pinching"
+      "thrifty",
+      "miserly",
+      "frugal",
+      "cheap"
     ],
     "correct": [
-      0
+      1,
+      3
     ],
-    "explanation": "\"Thrifty\" suggests wise, responsible use of money. \"Stingy,\" \"cheap,\" and \"penny-pinching\" share the same basic denotation but suggest selfishness or an unwillingness to share."
+    "explanation": "Thrifty and frugal praise careful spending as a sensible habit. Stingy, miserly and cheap describe the same behavior as selfish or mean, so they carry a negative connotation."
   },
   {
     "id": "TEAS-EN-041",
     "section": "english",
     "test": 0,
-    "module": 0,
+    "module": 1,
     "domain": "teasLanguage",
     "difficulty": 2,
     "format": "single",
@@ -4072,7 +4128,7 @@
     "id": "TEAS-EN-042",
     "section": "english",
     "test": 0,
-    "module": 0,
+    "module": 1,
     "domain": "teasLanguage",
     "basics": "preciseWords",
     "difficulty": 2,
@@ -4093,27 +4149,32 @@
     "id": "TEAS-EN-043",
     "section": "english",
     "test": 0,
-    "module": 0,
+    "module": 1,
     "domain": "teasLanguage",
     "difficulty": 2,
-    "format": "single",
-    "stem": "A student finishes a first draft, then rearranges paragraphs and adds supporting evidence. Which stage of the writing process is this?",
+    "format": "order",
+    "stem": "Place the stages of the writing process in the order a student usually completes them.",
     "options": [
-      "editing",
-      "revising",
-      "prewriting",
-      "publishing"
+      "Brainstorm and outline ideas",
+      "Write a first draft",
+      "Revise content and organization",
+      "Edit grammar and spelling",
+      "Publish the final copy"
     ],
     "correct": [
-      1
+      0,
+      1,
+      2,
+      3,
+      4
     ],
-    "explanation": "Revising involves changing content and organization, such as moving paragraphs and adding evidence. Editing comes later and focuses on surface errors in grammar, spelling, and punctuation."
+    "explanation": "Prewriting, drafting, revising, editing and publishing is the standard sequence. Revising comes before editing because there is no point fixing the spelling of sentences that may be cut or rewritten."
   },
   {
     "id": "TEAS-EN-044",
     "section": "english",
     "test": 0,
-    "module": 0,
+    "module": 1,
     "domain": "teasLanguage",
     "difficulty": 2,
     "format": "single",

@@ -1,8 +1,5 @@
-"use client";
+import { permanentRedirect } from "next/navigation";
 
-import { ExamTrainingPage } from "@/components/exam/ExamTrainingPage";
-import { getExamById } from "@/lib/exams";
-
-export default function AplusTrainingPage() {
-  return <ExamTrainingPage exam={getExamById("aplus")!} />;
+export default function OldTraining() {
+  permanentRedirect("/comptia-a-plus");
 }

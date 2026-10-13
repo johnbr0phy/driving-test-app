@@ -1,0 +1,317 @@
+[
+  {
+    "domain": "secondaryAssessment",
+    "test": 1,
+    "skill": "Focused exam",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A 45-year-old woman twisted her ankle stepping off a curb. She is alert with no other complaints. Your physical exam should be:",
+    "options": [
+      "A focused exam of the injured ankle",
+      "A rapid head-to-toe trauma exam",
+      "A detailed exam deferred to the hospital",
+      "Vital signs only, with no hands-on exam"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "With an isolated injury and no significant mechanism, a focused exam of the complaint area is appropriate. A rapid full-body trauma exam is reserved for significant mechanisms or unresponsive patients."
+  },
+  {
+    "domain": "secondaryAssessment",
+    "test": 1,
+    "skill": "Rapid trauma exam",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 28-year-old unrestrained driver hit a tree at 50 mph and responds only to pain. After the primary assessment, you should perform:",
+    "options": [
+      "A focused exam of his chief complaint",
+      "An exam limited to the head and neck",
+      "A rapid full-body exam for hidden injuries",
+      "A detailed OPQRST interview with the patient"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A significant mechanism with altered mental status calls for a rapid head-to-toe exam to find hidden life threats. A focused exam or OPQRST interview is not possible or adequate for a patient who responds only to pain."
+  },
+  {
+    "domain": "secondaryAssessment",
+    "test": 1,
+    "skill": "Rapid medical exam",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Family found an 80-year-old woman unresponsive in bed, and no history is available. After the primary assessment, your exam should be:",
+    "options": [
+      "A focused exam of the region family points to",
+      "A rapid full-body medical assessment",
+      "Deferred until her family returns",
+      "A stroke scale exam only"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An unresponsive medical patient cannot tell you what hurts, so a rapid full-body medical assessment comes first, then vitals and history from bystanders. A focused exam requires a responsive patient who can localize a complaint."
+  },
+  {
+    "domain": "secondaryAssessment",
+    "test": 1,
+    "skill": "OPQRST",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "A 58-year-old man with chest pain answers your questions. For each answer, specify the OPQRST element it addresses.",
+    "rows": [
+      "\"Started while I was shoveling snow\"",
+      "\"Worse when I breathe deeply\"",
+      "\"Feels like heavy pressure\"",
+      "\"Spreads into my left jaw\"",
+      "\"Better when I sit still\""
+    ],
+    "columns": [
+      "Onset",
+      "Provocation",
+      "Quality",
+      "Radiation"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3,
+      1
+    ],
+    "explanation": "What he was doing when it began is onset, what makes it better or worse is provocation, the description is quality and spread to the jaw is radiation. Shoveling snow may tempt provocation, but it tells you when the pain started."
+  },
+  {
+    "domain": "secondaryAssessment",
+    "test": 1,
+    "skill": "OPQRST",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 62-year-old woman describes her abdominal pain as tearing and says it moves into her back. These answers describe:",
+    "options": [
+      "Onset and time",
+      "Quality and radiation",
+      "Provocation and severity",
+      "Severity and time"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Tearing describes the quality of the pain and moving into the back describes radiation, a pattern that should raise concern for an aortic aneurysm. Severity is the 1-10 rating, not the description."
+  },
+  {
+    "domain": "secondaryAssessment",
+    "test": 1,
+    "skill": "SAMPLE history",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A 24-year-old man with diabetes is confused and sweaty. Asking when he last ate addresses which SAMPLE element?",
+    "options": [
+      "Last oral intake",
+      "Pertinent past history",
+      "Events leading up",
+      "Signs and symptoms"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The L in SAMPLE is last oral intake, which is key for suspected hypoglycemia. His diabetes is pertinent past history, but the question about his last meal is the L element."
+  },
+  {
+    "domain": "secondaryAssessment",
+    "test": 2,
+    "skill": "SAMPLE history",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "A 40-year-old woman with hives gives this history. For each statement, specify the SAMPLE element it belongs to.",
+    "rows": [
+      "\"Penicillin gives me a rash\"",
+      "\"I use an albuterol inhaler\"",
+      "\"I have had asthma since childhood\"",
+      "\"I was gardening when I got stung\"",
+      "\"I take birth control pills\""
+    ],
+    "columns": [
+      "Allergies",
+      "Medications",
+      "Past history",
+      "Events"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3,
+      1
+    ],
+    "explanation": "A known drug reaction is an allergy, current drugs are medications, lifelong asthma is past history, and what she was doing when it began is events. The sting may tempt allergies, but it is what happened today, so it belongs to events."
+  },
+  {
+    "domain": "secondaryAssessment",
+    "test": 2,
+    "skill": "DCAP-BTLS",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "During a rapid trauma exam of a fall victim, the letter L in DCAP-BTLS stands for:",
+    "options": [
+      "Lesions",
+      "Lividity",
+      "Lacerations",
+      "Level of consciousness"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "DCAP-BTLS is deformities, contusions, abrasions, punctures or penetrations, burns, tenderness, lacerations and swelling. Lividity is a sign of death, not part of the mnemonic."
+  },
+  {
+    "domain": "secondaryAssessment",
+    "test": 2,
+    "skill": "Head exam findings",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 22-year-old assault victim has bruising behind both ears found during your head exam. This finding suggests:",
+    "options": [
+      "A simple scalp contusion",
+      "A fractured mandible",
+      "A cervical spine fracture",
+      "A basilar skull fracture"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Bruising over the mastoid process (Battle's sign) suggests a basilar skull fracture, which also means avoiding a nasopharyngeal airway. It is a late sign of a deep fracture, not a simple scalp bruise."
+  },
+  {
+    "domain": "secondaryAssessment",
+    "test": 2,
+    "skill": "Chest exam findings",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Palpating the chest of a 50-year-old crash victim, you feel crackling like crisped rice under the skin. This indicates:",
+    "options": [
+      "Rib fragments grinding together",
+      "Air leaking into the soft tissue",
+      "Fluid collecting in both lower lung fields",
+      "Blood pooling under the skin"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Crackling under the skin is subcutaneous emphysema from air leaking out of the lung or airway, a clue to pneumothorax. Grating of bone ends is felt at a fracture site, not as diffuse crackling under the skin."
+  },
+  {
+    "domain": "secondaryAssessment",
+    "test": 2,
+    "skill": "Medication history",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A 70-year-old confused man takes metformin and insulin daily. This medication history should prompt you to:",
+    "options": [
+      "Assist with his nitroglycerin",
+      "Withhold oxygen until ALS arrives",
+      "Check his blood glucose",
+      "Give oral glucose without testing"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Insulin and metformin indicate diabetes, so altered mental status should prompt a glucose check. Oral glucose is given only when glucose is low and the patient can swallow and protect the airway."
+  },
+  {
+    "domain": "secondaryAssessment",
+    "test": 2,
+    "skill": "Medication history",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 66-year-old woman fell and struck her head. She takes warfarin daily. This history matters because she:",
+    "options": [
+      "Has a higher risk of brain bleeding",
+      "Should get aspirin before transport",
+      "Can be released if her exam is normal",
+      "Most likely had a seizure first"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Anticoagulants such as warfarin raise the risk of intracranial bleeding after even minor head trauma, so she needs transport and close reassessment. A normal initial exam does not rule out a slow bleed."
+  },
+  {
+    "domain": "secondaryAssessment",
+    "test": 0,
+    "skill": "Assessment sequence",
+    "difficulty": 1,
+    "format": "order",
+    "stem": "Place the parts of the patient assessment for a responsive medical patient in the order they are performed.",
+    "options": [
+      "Secondary assessment",
+      "Scene size-up",
+      "Reassessment en route",
+      "History taking",
+      "Primary assessment"
+    ],
+    "correct": [
+      1,
+      4,
+      3,
+      0,
+      2
+    ],
+    "explanation": "Scene safety comes first, then life threats in the primary assessment; a responsive medical patient's history guides the secondary exam, and reassessment continues to handoff. In an unresponsive patient the rapid exam comes before the history from bystanders."
+  },
+  {
+    "domain": "secondaryAssessment",
+    "test": 0,
+    "skill": "Reassessment",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A 25-year-old woman with an isolated wrist injury has normal vital signs and is alert. You should reassess her at least every:",
+    "options": [
+      "5 minutes",
+      "30 minutes",
+      "45 minutes",
+      "15 minutes"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Stable patients are reassessed at least every 15 minutes. Reassessing every 5 minutes is acceptable but required only for unstable patients; 30 minutes is too long."
+  },
+  {
+    "domain": "secondaryAssessment",
+    "test": 0,
+    "skill": "Reassessment",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A 35-year-old with a head injury is reassessed en route. His GCS dropped from 14 to 10 and his BP rose. You should:",
+    "options": [
+      "Recheck in 15 minutes before acting",
+      "Repeat the primary assessment",
+      "Finish the focused exam of his scalp",
+      "Ventilate him at 30 breaths per minute"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A falling GCS signals deterioration, so return to the primary assessment, manage the airway and notify the receiving hospital. Hyperventilation is not used unless signs of herniation are present, and waiting 15 minutes ignores the change."
+  },
+  {
+    "domain": "secondaryAssessment",
+    "test": 0,
+    "skill": "Vital sign trends",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Over 15 minutes, a 40-year-old crash victim's pulse rises from 88 to 104 to 122 while BP stays 124/80. This trend suggests:",
+    "options": [
+      "Compensated shock",
+      "Decompensated shock",
+      "Rising intracranial pressure",
+      "Stable condition"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A climbing pulse with a maintained blood pressure is the trend of compensated shock, and it calls for rapid transport. Decompensated shock adds hypotension, and rising intracranial pressure causes bradycardia, not tachycardia."
+  }
+]

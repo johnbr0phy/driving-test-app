@@ -9,4 +9,8 @@ export const BANK_SIZES: Record<string, number> = {
   asvab: 200,
   accuplacer: 200,
   nclex: 200,
+  emt: 200,
+  secplus: 200,
+  aplus: 200,
+  aws: 200,
 };

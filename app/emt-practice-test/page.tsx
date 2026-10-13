@@ -50,8 +50,9 @@ const jsonLd = {
       offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
       featureList: [
         "200 EMT practice questions",
-        "4 practice tests weighted to the 2025 NREMT test plan",
-        "Training sets for every domain",
+        "2 full 70-question practice tests in 2 hours, answered in order like the NREMT",
+        "5 drills, one per NREMT domain",
+        "Build-list, options-box and select-all items alongside single answer",
         "Instant feedback with explanations",
         "Auto-save progress",
       ],
@@ -86,7 +87,7 @@ const jsonLd = {
           name: "Does the real exam have multiple-response questions?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. The 2025 exam added items where you pick two or three correct answers from five or six, along with single-answer questions. Every question here is single-answer, so use these to learn the content and expect a few multiple-response items on exam day.",
+            text: "Yes. Since 2025 the exam mixes single-answer questions with technology-enhanced items: select all that apply, build list (put steps in order) and options box (classify each row in a table). The practice tests and drills here include all three.",
           },
         },
         {
@@ -94,7 +95,7 @@ const jsonLd = {
           name: "What score do I need to pass?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "There is no percentage. The adaptive exam measures whether you are consistently above the entry-level standard. Aiming for 70 percent or better on every practice test here, across every domain, is a realistic target.",
+            text: "There is no percentage. The adaptive exam is pass or fail, measuring whether you are consistently above the entry-level standard. Scores here are percent correct; aiming for 75 percent or better on both practice tests, across every domain, is a realistic target.",
           },
         },
         {
@@ -102,7 +103,7 @@ const jsonLd = {
           name: "Is the TigerTest EMT practice test free?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. All four practice tests and all training sets are free, with no account required. Create a free account if you want your progress saved across devices.",
+            text: "Yes. Both practice tests and all five drills are free, with no account required. Create a free account if you want your progress saved across devices.",
           },
         },
       ],
@@ -135,7 +136,7 @@ export default function EmtLandingPage() {
             Free EMT Practice Test 2026
           </h1>
           <ExamLandingHero
-            dashboardHref="/emt/dashboard"
+            dashboardHref="/emt"
             shortName="EMT"
             subtitle="200 questions weighted to the 2025 NREMT EMT test plan. Tuned for mobile. No account needed."
             shots={{ mobile: "/landing/emt-mobile.png", desktop: "/landing/emt-desktop.png" }}
@@ -156,9 +157,9 @@ export default function EmtLandingPage() {
               <Smartphone className="w-7 h-7 text-brand" />
             </div>
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Training by Domain</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Drills by Domain</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four sets covering the five NREMT domains: scene size-up and safety, primary assessment, secondary assessment with operations, and patient treatment and transport. Questions you miss come back until you have mastered them.
+                Five drills, one per NREMT domain: scene size-up and safety, primary assessment, secondary assessment, patient treatment and transport, and operations. Questions you miss come back until you have mastered them.
               </p>
             </div>
           </div>
@@ -169,7 +170,7 @@ export default function EmtLandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Practice Tests</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four 50-question tests weighted like the real exam and written in its style: a patient with an age, a history and a set of vitals, and the one thing you should do next.
+                Two 70-question tests in 2 hours, answered in order with no going back, like the adaptive NREMT. Practice Test 2 is held out of the drills, so it measures readiness, not memory. Expect build-list, options-box and select-all items alongside single answer.
               </p>
             </div>
           </div>
@@ -255,7 +256,7 @@ export default function EmtLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Drill your weak domain</h3>
               <p>
-                TigerTest tracks your accuracy by domain. The real exam is adaptive and ends when it is confident about you, so there is no room to be weak in a domain. Retake each set until you clear 70 percent with room to spare.
+                TigerTest tracks your accuracy by domain. The real exam is adaptive and ends when it is confident about you, so there is no room to be weak in a domain. Retake each drill until you clear 75 percent with room to spare.
               </p>
             </div>
           </div>
@@ -283,19 +284,19 @@ export default function EmtLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Does the real exam have multiple-response questions?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              Yes. The 2025 exam added items where you pick two or three correct answers from five or six, along with single-answer questions. Every question here is single-answer, so use these to learn the content and expect a few multiple-response items on exam day.
+              Yes. Since 2025 the exam mixes single-answer questions with technology-enhanced items: select all that apply, build list (put steps in order) and options box (classify each row in a table). The practice tests and drills here include all three.
             </p>
           </div>
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">What score do I need to pass?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              There is no percentage. The adaptive exam measures whether you are consistently above the entry-level standard. Aiming for 70 percent or better on every practice test here, across every domain, is a realistic target.
+              There is no percentage. The adaptive exam is pass or fail, measuring whether you are consistently above the entry-level standard. Scores here are percent correct; aiming for 75 percent or better on both practice tests, across every domain, is a realistic target.
             </p>
           </div>
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is the TigerTest EMT practice test free?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              Yes. All four practice tests and all training sets are free, with no account required. Create a free account if you want your progress saved across devices.
+              Yes. Both practice tests and all five drills are free, with no account required. Create a free account if you want your progress saved across devices.
             </p>
           </div>
         </div>
@@ -309,7 +310,7 @@ export default function EmtLandingPage() {
         <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">Ready to Pass the NREMT?</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Free to start. No account required. 200 questions across all five domains.</p>
-          <ExamLandingCTA dashboardHref="/emt/dashboard" />
+          <ExamLandingCTA dashboardHref="/emt" />
         </div>
       </div>
     </div>

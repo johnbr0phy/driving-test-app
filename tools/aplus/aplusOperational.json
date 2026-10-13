@@ -1,0 +1,373 @@
+[
+  {
+    "domain": "aplusOperational",
+    "test": 1,
+    "skill": "Ticket escalation",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A tier 1 help desk technician cannot resolve a user's VPN issue within the time allowed by the service desk process. Which of the following should the technician do?",
+    "options": [
+      "Tell the user to reinstall the VPN client software tonight",
+      "Escalate the ticket to tier 2 with detailed notes",
+      "Close the ticket and ask for a new one",
+      "Lower the ticket's severity to buy time"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Escalation passes the issue to more experienced staff, and clear notes keep them from repeating work already done. Closing the ticket loses the history and leaves the user without help."
+  },
+  {
+    "domain": "aplusOperational",
+    "test": 1,
+    "skill": "Asset management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company needs to track each laptop's serial number, assigned user, purchase date, and warranty expiration. Which of the following should the IT department use?",
+    "options": [
+      "A knowledge base article",
+      "An acceptable use policy",
+      "An asset management database",
+      "A network topology diagram of all devices"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An asset management database keyed to asset tags records inventory, assigned users, procurement dates, and warranty and licensing details. A network topology diagram shows how devices connect, not who owns them or their warranty status."
+  },
+  {
+    "domain": "aplusOperational",
+    "test": 1,
+    "skill": "Acceptable use policy",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "New employees must sign a document stating which activities are permitted on company computers, email, and internet access. Which type of document is this?",
+    "options": [
+      "Service-level agreement",
+      "Incident report",
+      "Standard operating procedure",
+      "Acceptable use policy"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An acceptable use policy defines what users may and may not do with organizational systems, and employees acknowledge it by signing. A standard operating procedure gives step-by-step instructions for a task, not user conduct rules."
+  },
+  {
+    "domain": "aplusOperational",
+    "test": 1,
+    "skill": "Offboarding",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "An employee's last day is Friday. Which document helps IT ensure the employee's accounts are disabled and the laptop and badge are returned?",
+    "options": [
+      "Offboarding checklist",
+      "Splash screen",
+      "Change request form",
+      "New-user setup checklist"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An offboarding checklist lists every step for a departing user, such as disabling accounts and collecting equipment. A new-user checklist covers the opposite process of onboarding."
+  },
+  {
+    "domain": "aplusOperational",
+    "test": 1,
+    "skill": "Change management",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A change advisory board reviews a request to replace the core firewall and asks how the team will restore the old configuration if the change fails. Which element is the board requesting?",
+    "options": [
+      "Rollback plan",
+      "Scope of the change",
+      "End-user acceptance",
+      "Risk analysis"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A rollback plan documents how to return systems to their previous state if a change causes problems. Risk analysis estimates the likelihood and impact of failure but does not describe how to undo the change."
+  },
+  {
+    "domain": "aplusOperational",
+    "test": 1,
+    "skill": "Sandbox testing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Before deploying a new database patch to production, a technician wants to confirm it will not break the payroll application. Which of the following should the technician do?",
+    "options": [
+      "Obtain end-user acceptance first",
+      "Document the change in the knowledge base",
+      "Apply the patch to production after hours",
+      "Test the patch in a sandbox environment"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Sandbox testing runs the change in an isolated copy of the environment so problems appear before production is affected. Patching production after hours still risks breaking payroll without any prior testing."
+  },
+  {
+    "domain": "aplusOperational",
+    "test": 1,
+    "skill": "Change management",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "A technician must replace a core switch under the company's change management process. Place the steps in order.",
+    "options": [
+      "Submit a change request form",
+      "Obtain change board approval",
+      "Implement the change as scheduled",
+      "Confirm end-user acceptance"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "The request form documents the purpose, scope, risk and rollback plan, and the change board must approve it before any work begins. End-user acceptance confirms the change works for the people affected, so it follows implementation."
+  },
+  {
+    "domain": "aplusOperational",
+    "test": 1,
+    "skill": "Backup types",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A server receives a full backup every Sunday night and incremental backups Monday through Saturday nights. The drive fails Thursday morning. Which backups are needed to restore?",
+    "options": [
+      "Sunday's full backup plus Wednesday's incremental backup only",
+      "Wednesday's incremental backup only",
+      "Sunday's full plus Monday through Wednesday's incrementals",
+      "Sunday's full backup only"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Each incremental backup contains only changes since the previous backup, so all of them after the full backup are required. Using only the latest backup after the full would work with differential backups, not incremental ones."
+  },
+  {
+    "domain": "aplusOperational",
+    "test": 1,
+    "skill": "3-2-1 backup rule",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A small business owner asks what the 3-2-1 backup rule requires. Which of the following is the correct description?",
+    "options": [
+      "Three daily copies, two weekly copies, one monthly copy kept",
+      "Three servers, two RAID arrays, one cloud",
+      "Three copies, two media types, one copy off-site",
+      "Three daily copies kept for twenty-one days"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The 3-2-1 rule calls for three copies of the data on two different types of media with one copy stored off-site. Daily, weekly, and monthly retention tiers describe grandfather-father-son rotation, not 3-2-1."
+  },
+  {
+    "domain": "aplusOperational",
+    "test": 1,
+    "skill": "Backup rotation",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An administrator wants a tape rotation that keeps daily backups for a week, weekly backups for a month, and monthly backups for a year. Which scheme meets this requirement?",
+    "options": [
+      "Synthetic full backup",
+      "Grandfather-father-son",
+      "On-site mirroring",
+      "Differential backup"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Grandfather-father-son rotation uses daily (son), weekly (father), and monthly (grandfather) sets with increasing retention. A synthetic full is a backup type that merges incrementals into a new full, not a rotation scheme."
+  },
+  {
+    "domain": "aplusOperational",
+    "test": 1,
+    "skill": "ESD protection",
+    "difficulty": 1,
+    "format": "multi",
+    "select": 2,
+    "stem": "A technician is installing a DDR5 module in a desktop on a dry winter day. Which two practices BEST protect the module from electrostatic discharge? (Choose two.)",
+    "options": [
+      "Wear safety goggles while working",
+      "Leave it in its antistatic bag",
+      "Work on a carpeted floor area",
+      "Keep the PC powered and plugged in",
+      "Clip a wrist strap to the chassis",
+      "Hold the module by its gold pins"
+    ],
+    "correct": [
+      1,
+      4
+    ],
+    "explanation": "A wrist strap clipped to the chassis keeps the technician and the PC at the same potential, and the antistatic bag shields the module until it goes in. Safety goggles protect the eyes but do nothing to prevent a static discharge."
+  },
+  {
+    "domain": "aplusOperational",
+    "test": 1,
+    "skill": "Fire safety",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A power strip under a desk in the server room begins burning with visible flames. Which type of fire extinguisher should be used?",
+    "options": [
+      "Class K wet chemical extinguisher",
+      "Class D dry powder extinguisher",
+      "Class C carbon dioxide extinguisher",
+      "Class A water extinguisher"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Electrical fires require a nonconductive agent such as the CO2 in a Class C extinguisher, which also leaves no residue on equipment. Water conducts electricity and could electrocute the user."
+  },
+  {
+    "domain": "aplusOperational",
+    "test": 1,
+    "skill": "Safety data sheets",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A technician needs to know how to safely handle and dispose of a leaking laser printer toner cartridge. Which of the following should the technician consult?",
+    "options": [
+      "The company's acceptable use policy",
+      "The printer's network configuration page",
+      "The printer's EULA",
+      "The toner's safety data sheet (SDS)"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A safety data sheet describes a product's hazards, handling precautions, spill cleanup, and disposal requirements. An acceptable use policy governs user behavior and says nothing about chemical handling."
+  },
+  {
+    "domain": "aplusOperational",
+    "test": 1,
+    "skill": "Power protection",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Brief power outages several times a month cause office workstations to shut down unexpectedly and lose unsaved work. Which of the following should the technician recommend?",
+    "options": [
+      "Power strip with circuit breaker",
+      "Uninterruptible power supply",
+      "Surge suppressor",
+      "Redundant power supply"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A UPS supplies battery power during outages so systems keep running or shut down gracefully. A surge suppressor only absorbs voltage spikes and provides no power when the utility power fails."
+  },
+  {
+    "domain": "aplusOperational",
+    "test": 1,
+    "skill": "Chain of custody",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "During a security incident, a technician removes a hard drive from a suspect's computer and hands it to the forensics team. Which document records everyone who handled the drive?",
+    "options": [
+      "Incident report summary",
+      "Asset inventory list",
+      "Chain of custody form",
+      "Certificate of destruction"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A chain of custody form logs each person who possessed the evidence, along with when and why, so it remains admissible. An incident report describes what happened but does not track evidence handling."
+  },
+  {
+    "domain": "aplusOperational",
+    "test": 1,
+    "skill": "Regulated data",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A medical clinic stores patient diagnoses and treatment histories in its scheduling system. Which type of regulated data must the clinic protect?",
+    "options": [
+      "Open-source licensed data",
+      "Public directory information",
+      "Payment card data under PCI DSS",
+      "Protected health information (PHI)"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Diagnoses and treatment histories are protected health information, which health privacy regulations require organizations to safeguard. PCI DSS applies to credit card transaction data, not medical records."
+  },
+  {
+    "domain": "aplusOperational",
+    "test": 1,
+    "skill": "Software licensing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A user wants to install photo-editing software purchased under a personal home license on a company workstation. Which of the following should the technician tell the user?",
+    "options": [
+      "The EULA is void on domain-joined computers",
+      "Corporate use requires a valid corporate license",
+      "Open-source licensing applies to commercial software",
+      "Personal licenses cover any computer the user operates"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Personal licenses typically restrict use to noncommercial or home use, so business use needs a properly purchased corporate license. A personal license does not follow the user to any computer they operate."
+  },
+  {
+    "domain": "aplusOperational",
+    "test": 1,
+    "skill": "Customer service",
+    "difficulty": 1,
+    "format": "multi",
+    "select": 2,
+    "stem": "A customer is angry that a laptop repair is late and raises his voice at the technician. Which two responses BEST show professionalism? (Choose two.)",
+    "options": [
+      "Blame the parts vendor for the delay",
+      "Listen without interrupting him",
+      "Argue the facts to correct him",
+      "Restate his concern back to him",
+      "Leave until he calms down",
+      "Check your phone while he talks"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "explanation": "Listening without interrupting and restating the concern show the customer he has been heard and help calm the situation. Blaming the vendor sounds like an excuse and does not address his concern."
+  },
+  {
+    "domain": "aplusOperational",
+    "test": 1,
+    "skill": "Scripting",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A technician writes a script that remaps network drives at login using Windows PowerShell cmdlets. Which file extension should the script use?",
+    "options": [
+      ".bat",
+      ".vbs",
+      ".sh",
+      ".ps1"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "PowerShell scripts use the .ps1 extension. A .bat file runs in the Command Prompt and cannot execute PowerShell cmdlets directly."
+  },
+  {
+    "domain": "aplusOperational",
+    "test": 0,
+    "skill": "Remote access",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A technician needs to manage a Linux server's command line remotely over an encrypted connection. Which of the following should the technician use?",
+    "options": [
+      "SSH",
+      "Telnet",
+      "RDP",
+      "VNC"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "SSH provides an encrypted remote command-line session and is the standard for managing Linux servers. Telnet offers the same kind of shell access but sends everything, including passwords, in plaintext."
+  }
+]

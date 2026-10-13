@@ -2,20 +2,32 @@
   {
     "domain": "nclexRisk",
     "test": 1,
-    "skill": "Diuretic lab review",
-    "difficulty": 1,
-    "format": "single",
-    "stem": "A client receiving furosemide 40 mg IV twice daily has morning labs drawn. Which result should the nurse report to the health care provider (HCP)?",
-    "options": [
-      "Sodium 138 mEq/L",
-      "Potassium 3.0 mEq/L",
-      "Magnesium 2.0 mEq/L",
-      "Calcium 9.2 mg/dL"
+    "skill": "Diagnostic results in heart failure",
+    "difficulty": 2,
+    "format": "matrix",
+    "passage": "1445 Results:\n\n| Test | Result |\n|---|---|\n| BNP | 1,240 pg/mL |\n| Potassium | 4.2 mEq/L |\n| Chest x-ray | Vascular congestion, small effusions on both sides |\n| Troponin I | Within the reference range |\n| Hemoglobin | 13.6 g/dL |",
+    "stimulusId": "NCLEX-CS1",
+    "caseStep": 2,
+    "stem": "For each result, specify whether it is consistent or not consistent with fluid volume overload.",
+    "rows": [
+      "BNP 1,240 pg/mL",
+      "Potassium 4.2 mEq/L",
+      "Vascular congestion on chest x-ray",
+      "Troponin I in reference range",
+      "Hemoglobin 13.6 g/dL"
+    ],
+    "columns": [
+      "Consistent",
+      "Not consistent"
     ],
     "correct": [
+      0,
+      1,
+      0,
+      1,
       1
     ],
-    "explanation": "Loop diuretics waste potassium, and 3.0 mEq/L is below the 3.5 to 5.0 range and raises the risk of dysrhythmias. The sodium, magnesium and calcium values are all within normal limits."
+    "explanation": "A BNP far above 100 pg/mL is released by stretched, overloaded ventricles, and vascular congestion with effusions is fluid backing into the lungs. A normal potassium, hemoglobin and troponin do not point to overload; the normal troponin is the tempting one, but it argues against a heart attack, not for fluid excess."
   },
   {
     "domain": "nclexRisk",
@@ -40,19 +52,28 @@
     "test": 1,
     "skill": "Postoperative hemorrhage",
     "difficulty": 2,
-    "format": "single",
+    "format": "cloze",
     "passage": "| Time | BP | HR | RR | Urine |\n|---|---|---|---|---|\n| 0800 | 128/78 | 82 | 16 | 60 mL/hr |\n| 1000 | 112/70 | 98 | 18 | 40 mL/hr |\n| 1200 | 96/62 | 116 | 22 | 20 mL/hr |",
-    "stem": "The nurse reviews the vital signs of a client who had an abdominal hysterectomy this morning. Which problem do these findings most likely indicate?",
-    "options": [
-      "Uncontrolled incisional pain",
-      "Hypovolemia from bleeding",
-      "Early postoperative atelectasis",
-      "Opioid-induced hypotension"
+    "stem": "The nurse reviews the vital signs of a client who had an abdominal hysterectomy this morning. Complete the sentence. The client is most likely experiencing [[1]], as shown by [[2]].",
+    "blanks": [
+      [
+        "hypovolemia from bleeding",
+        "uncontrolled incisional pain",
+        "opioid-induced hypotension",
+        "early atelectasis"
+      ],
+      [
+        "rising pulse with falling BP",
+        "a slowing pulse and respiratory rate",
+        "a new fever above 101 F",
+        "crackles in both bases"
+      ]
     ],
     "correct": [
-      1
+      0,
+      0
     ],
-    "explanation": "Falling blood pressure with a rising heart rate and respiratory rate and a drop in urine output is the classic pattern of hypovolemia from internal bleeding. Opioid-related hypotension comes with slowed breathing and a slower pulse, not tachycardia and tachypnea."
+    "explanation": "Falling blood pressure and urine output with a rising heart rate and respiratory rate is the pattern of hypovolemia from internal bleeding. Opioid-induced hypotension would come with a slowing pulse and breathing, not tachycardia and tachypnea."
   },
   {
     "domain": "nclexRisk",
@@ -210,19 +231,50 @@
     "test": 2,
     "skill": "Post-thyroidectomy calcium",
     "difficulty": 3,
-    "format": "single",
-    "passage": "0600: Voice slightly hoarse, speaking in full sentences. Drain with 20 mL serosanguineous fluid since surgery.\n0630: Client reports tingling around the lips and in both hands. Rates incision pain 4 of 10.",
-    "stem": "The nurse reviews notes on a client who had a total thyroidectomy 18 hours ago. Which finding requires immediate follow-up?",
-    "options": [
-      "Mildly hoarse, raspy voice",
-      "Drain output of 20 mL total",
-      "Tingling lips and fingers",
-      "Incision pain rated 4 of 10"
+    "format": "bowtie",
+    "passage": "0630 Nurses' note: Total thyroidectomy 18 hours ago. Client reports tingling around the lips and in both hands. The face twitches when the cheek is tapped, and the hand spasms while the BP cuff is inflated. Voice slightly hoarse, speaking in full sentences. Drain has 20 mL serosanguineous fluid. T 98.8 F, HR 88/min.",
+    "stem": "Complete the diagram by choosing 2 actions the nurse should take, the condition the client is most likely experiencing, and 2 parameters the nurse should monitor.",
+    "groups": [
+      {
+        "label": "Actions to take",
+        "pick": 2,
+        "options": [
+          "Prepare IV calcium gluconate",
+          "Notify the surgeon of findings",
+          "Apply an ice pack to the neck",
+          "Lay the client flat without pillows",
+          "Give levothyroxine now"
+        ]
+      },
+      {
+        "label": "Condition most likely experiencing",
+        "pick": 1,
+        "options": [
+          "Hypocalcemia",
+          "Thyroid storm",
+          "Laryngeal nerve injury",
+          "Neck hematoma"
+        ]
+      },
+      {
+        "label": "Parameters to monitor",
+        "pick": 2,
+        "options": [
+          "Serum calcium level",
+          "Serum potassium level",
+          "Airway for stridor",
+          "Capillary blood glucose"
+        ]
+      }
     ],
     "correct": [
-      2
+      0,
+      1,
+      5,
+      9,
+      11
     ],
-    "explanation": "Tingling around the mouth and in the fingers signals hypocalcemia from parathyroid injury, which can progress to tetany and laryngospasm. Mild hoarseness from intubation and a small amount of serosanguineous drainage are expected."
+    "explanation": "Perioral and hand tingling with positive Chvostek and Trousseau signs mean hypocalcemia from parathyroid injury, so the surgeon is notified, IV calcium gluconate is kept ready, and calcium and the airway are watched because laryngospasm can follow. Thyroid storm would bring fever and tachycardia, and mild hoarseness while speaking in full sentences is common after this surgery and does not explain the tingling and spasms."
   },
   {
     "domain": "nclexRisk",
@@ -303,20 +355,34 @@
   {
     "domain": "nclexRisk",
     "test": 2,
-    "skill": "Dialysis access check",
-    "difficulty": 1,
-    "format": "single",
-    "stem": "The nurse assesses a client with an arteriovenous fistula in the left forearm used for hemodialysis. Which finding should the nurse report?",
-    "options": [
-      "Absent thrill over the fistula",
-      "Bruit heard with a stethoscope",
-      "Weight up 1 kg since dialysis",
-      "BP 138/84 in the right arm"
+    "skill": "Sepsis laboratory results",
+    "difficulty": 2,
+    "format": "matrix",
+    "passage": "0800 Laboratory results:\n\n| Lab | Result |\n|---|---|\n| WBC | 18,400/mm3 |\n| Sodium | 139 mEq/L |\n| Lactate | 3.4 mmol/L |\n| Hemoglobin | 12.8 g/dL |\n| Creatinine | 1.9 mg/dL (baseline 0.9) |\n| Platelets | 245,000/mm3 |",
+    "stimulusId": "NCLEX-CS2",
+    "caseStep": 2,
+    "stem": "For each laboratory result, specify whether it is consistent or not consistent with sepsis.",
+    "rows": [
+      "WBC 18,400/mm3",
+      "Sodium 139 mEq/L",
+      "Lactate 3.4 mmol/L",
+      "Hemoglobin 12.8 g/dL",
+      "Creatinine 1.9 mg/dL",
+      "Platelets 245,000/mm3"
+    ],
+    "columns": [
+      "Consistent with sepsis",
+      "Not consistent"
     ],
     "correct": [
-      0
+      0,
+      1,
+      0,
+      1,
+      0,
+      1
     ],
-    "explanation": "A palpable thrill and audible bruit show blood flowing through the fistula, so an absent thrill suggests clotting and needs prompt follow-up. A bruit is the expected finding, and a 1 kg gain between sessions is common."
+    "explanation": "Leukocytosis shows infection, a lactate above 2 mmol/L shows tissue hypoperfusion, and creatinine doubled from baseline shows kidney injury from poor perfusion. Sodium, hemoglobin and platelets are normal; a falling platelet count would suggest sepsis, but 245,000 does not."
   },
   {
     "domain": "nclexRisk",
@@ -379,20 +445,19 @@
   {
     "domain": "nclexRisk",
     "test": 0,
-    "skill": "Liver biopsy aftercare",
+    "skill": "Recognizing DKA cues",
     "difficulty": 1,
-    "format": "single",
-    "stem": "After a percutaneous liver biopsy, in which position should the nurse place the client?",
-    "options": [
-      "Left side with knees bent",
-      "Right side with a pillow",
-      "Supine, legs elevated",
-      "High Fowler's position"
-    ],
+    "format": "highlight",
+    "passage": "2215 Nurses' note: {{Fruity odor on the breath}}. {{Dry, sticky mucous membranes}}. {{Pupils equal and reactive}}. {{Capillary refill 4 seconds}}. {{Lungs clear on both sides}}. {{Moves all four limbs}}. {{Speech clear}}.",
+    "stimulusId": "NCLEX-CS3",
+    "caseStep": 1,
+    "stem": "Highlight the findings that require follow-up.",
     "correct": [
-      1
+      0,
+      1,
+      3
     ],
-    "explanation": "Lying on the right side presses the liver against the chest wall and helps tamponade the puncture site to prevent bleeding. Lying on the left side takes that pressure off the site."
+    "explanation": "A fruity breath odor points to ketones, and dry mucous membranes with a capillary refill of 4 seconds show a significant fluid deficit. Reactive pupils, clear lungs, normal movement and clear speech are reassuring findings."
   },
   {
     "domain": "nclexRisk",

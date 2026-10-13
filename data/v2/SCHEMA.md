@@ -40,3 +40,40 @@ Rules: original items only (never reproduce College Board, ACT or other
 publishers' questions), plain apostrophes, every option plausible, one
 unambiguous key, explanations say why the key is right and why the strongest
 distractor is wrong.
+
+## Formats beyond single, multi and numeric
+
+Every answer is stored as a `number[]` (or a string for numeric), so sync,
+merge and analytics need nothing new. Scoring is all or nothing per item.
+
+| format | fields | `correct` | answer while working |
+|---|---|---|---|
+| `single` | `options` (2 to 6) | `[i]` | `[i]` |
+| `multi` | `options` (2 to 6), optional `select: N` ("Choose two"; exactly N correct) | option indices | chosen indices |
+| `numeric` | `numeric.answers`, `tolerance` | none | typed string |
+| `order` | `options` (3 to 6) are the steps, shown shuffled | every option index, in the right order | indices in the order tapped |
+| `highlight` | `{{phrase}}` markers in `passage` (or in `stem` when there is no passage); 4 to 10 markers; no `options` | marker indices (0-based, order of appearance) that should be selected | selected marker indices |
+| `matrix` | `rows` (2 to 6 statements), `columns` (2 to 4 headings) | column index per row | column per row, -1 = unanswered |
+| `cloze` | `[[1]]`, `[[2]]`... in `stem`; `blanks[k]` = choices for `[[k+1]]` (3 to 5 each) | choice index per blank | choice per blank, -1 = unanswered |
+| `bowtie` | `groups`: exactly 3, `{ "label", "pick", "options" }` in the order actions to take (pick 2), condition most likely (pick 1), parameters to monitor (pick 2) | flat indices: group 0 options first, then group 1, then group 2 | selected flat indices |
+
+```jsonc
+{ "format": "order", "stem": "Place the steps for donning PPE in order.",
+  "options": ["Gown", "Mask or respirator", "Goggles or face shield", "Gloves"], "correct": [0, 1, 2, 3] }
+{ "format": "highlight", "passage": "| Time | Finding |\n|---|---|\n| 0800 | {{BP 88/50 mm Hg}} |\n| 0800 | {{Oriented x3}} |",
+  "stem": "Highlight the findings that require immediate follow-up.", "correct": [0] }
+{ "format": "matrix", "stem": "For each finding, specify whether it is expected or unexpected 2 hours after a cesarean birth.",
+  "rows": ["Fundus firm at the umbilicus", "Saturated pad in 15 minutes"], "columns": ["Expected", "Unexpected"], "correct": [0, 1] }
+{ "format": "cloze", "stem": "The client is most likely experiencing [[1]] as shown by [[2]].",
+  "blanks": [["hypokalemia", "hyperkalemia", "hyponatremia"], ["peaked T waves", "a U wave", "muscle twitching"]], "correct": [1, 0] }
+{ "format": "bowtie", "groups": [
+    { "label": "Actions to take", "pick": 2, "options": ["...", "...", "...", "..."] },
+    { "label": "Condition most likely experiencing", "pick": 1, "options": ["...", "...", "...", "..."] },
+    { "label": "Parameters to monitor", "pick": 2, "options": ["...", "...", "...", "..."] } ],
+  "correct": [0, 2, 5, 8, 10] }
+```
+
+**Case studies.** An item may carry both `stimulusId` (the shared case, in the
+bank's `stimuli`) and its own `passage` (what changed: new vitals, new orders);
+the screen shows the update first ("New information") and the case under it. Never put highlight
+markers in a shared stimulus.

@@ -4,7 +4,14 @@
  * shares nothing with it: separate store, routes, components and banks.
  */
 
-export type QuestionFormat = "single" | "multi" | "numeric";
+export type QuestionFormat = "single" | "multi" | "numeric" | "order" | "highlight" | "matrix" | "cloze" | "bowtie";
+
+/** One side (or the middle) of a bowtie item: choose `pick` of `options`. */
+export interface BowtieGroup {
+  label: string;
+  pick: number;
+  options: string[];
+}
 
 export interface Figure {
   src: string;
@@ -36,8 +43,24 @@ export interface QuestionV2 {
   /** Shared stimulus id, resolved against the bank's stimuli. */
   stimulusId?: string;
   stem: string;
+  /** single, multi and order: the choices (order: the steps, shown shuffled). */
   options?: string[];
+  /**
+   * The key, by format (data/v2/SCHEMA.md): option indices (single, multi),
+   * every option index in sequence (order), marker indices (highlight), the
+   * column per row (matrix), the choice per blank (cloze), flat indices across
+   * the groups (bowtie).
+   */
   correct?: number[];
+  /** multi: exactly this many to choose ("Choose two."). Unset means select all that apply. */
+  select?: number;
+  /** matrix: one statement per row, and the column headings to classify them under. */
+  rows?: string[];
+  columns?: string[];
+  /** cloze: choices for each [[n]] placeholder in the stem, in order. */
+  blanks?: string[][];
+  /** bowtie: actions to take, condition most likely, parameters to monitor. */
+  groups?: BowtieGroup[];
   numeric?: NumericAnswer;
   lockedOrder?: boolean;
   figure?: Figure;
@@ -57,7 +80,11 @@ export interface QuestionBank {
   stimuli: Record<string, Stimulus>;
 }
 
-/** Student answer: option indices for choice items, raw string for numeric. */
+/**
+ * Student answer: option indices for choice items (in tap order for order
+ * items; one entry per row or blank, -1 unanswered, for matrix and cloze),
+ * raw string for numeric.
+ */
 export type AnswerValue = number[] | string;
 
 export interface ModuleDef {

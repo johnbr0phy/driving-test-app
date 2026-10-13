@@ -7,7 +7,7 @@ import { ExamV2Config, StageState, TestSessionV2, AnswerValue } from "@/lib/v2/t
 import { getBank, getQuestionIndex, getStimulus } from "@/lib/v2/bank";
 import { stagesOf, v2Routes } from "@/lib/v2/registry";
 import { createSession, remainingNow, resolveAdaptive, scoreSession, sessionKey } from "@/lib/v2/session";
-import { isAnswered } from "@/lib/v2/grading";
+import { isAnswered, isComplete } from "@/lib/v2/grading";
 import { useV2Store } from "@/store/useV2Store";
 import { useHydration } from "@/hooks/useHydration";
 import { QuestionView } from "./QuestionView";
@@ -108,9 +108,9 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
     const onKey = (e: KeyboardEvent) => {
       if ((e.target as HTMLElement)?.tagName === "INPUT") return;
       const linearNow = !!def?.section.linear;
-      if (e.key === "ArrowRight") { if (!linearNow || isAnswered(stage!.answers[question.id])) goTo(1); }
+      if (e.key === "ArrowRight") { if (!linearNow || isComplete(question, stage!.answers[question.id])) goTo(1); }
       else if (e.key === "ArrowLeft") { if (!linearNow) goTo(-1); }
-      else if (/^[a-eA-E]$/.test(e.key) && question.format !== "numeric") {
+      else if (/^[a-fA-F]$/.test(e.key) && (question.format === "single" || question.format === "multi")) {
         const pos = e.key.toUpperCase().charCodeAt(0) - 65;
         const orig = stage!.optionOrder[question.id]?.[pos];
         if (orig !== undefined) setAnswer(question.format === "multi" ? toggleMulti(stage!.answers[question.id], orig) : [orig]);
@@ -137,7 +137,9 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
 
   function toggleMulti(cur: AnswerValue | undefined, orig: number): number[] {
     const arr = Array.isArray(cur) ? cur : [];
-    return arr.includes(orig) ? arr.filter((i) => i !== orig) : [...arr, orig].sort((a, b) => a - b);
+    if (arr.includes(orig)) return arr.filter((i) => i !== orig);
+    if (question?.select && arr.length >= question.select) return arr;
+    return [...arr, orig].sort((a, b) => a - b);
   }
 
   function setAnswer(value: AnswerValue) {
@@ -297,7 +299,8 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
   if (!question) return null;
   const flagged = stage.flagged.includes(question.id);
   const isLast = stage.current === total - 1;
-  const answeredHere = isAnswered(stage.answers[question.id]);
+  // A linear section (no going back) needs a complete answer before Next.
+  const answeredHere = isComplete(question, stage.answers[question.id]);
   const unanswered = total - answeredCount;
 
   return (
@@ -318,7 +321,7 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
                 <BookOpen className="h-5 w-5" />
               </IconButton>
             )}
-            {question.format !== "numeric" && (
+            {(question.format === "single" || question.format === "multi") && (
               <IconButton label="Eliminate choices" active={eliminator} onClick={() => setEliminator((e) => !e)}>
                 <Strikethrough className="h-5 w-5" />
               </IconButton>

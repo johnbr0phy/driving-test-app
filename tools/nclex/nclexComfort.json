@@ -42,38 +42,50 @@
   {
     "domain": "nclexComfort",
     "test": 1,
-    "skill": "Enteral feeding",
+    "skill": "Nasogastric tube insertion",
     "difficulty": 2,
-    "format": "single",
-    "stem": "A client receives a continuous nasogastric tube feeding. Which action best reduces the risk of aspiration?",
+    "format": "order",
+    "stem": "The nurse inserts a nasogastric tube that will be used for tube feeding. Place the steps in the order the nurse should perform them.",
     "options": [
-      "Use a larger-bore feeding tube",
-      "Add blue food dye to the formula",
-      "Hold feeding for any residual",
-      "Keep HOB at 30 to 45 degrees"
+      "Measure nose to earlobe to xiphoid",
+      "Lubricate the tip with water-soluble gel",
+      "Pass the tube through the nostril",
+      "Have the client tuck chin and swallow",
+      "Advance the tube to the marked length",
+      "Confirm placement with an x-ray"
     ],
     "correct": [
-      3
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
     ],
-    "explanation": "Elevating the head of the bed at least 30 degrees during continuous feeding is the main aspiration safeguard. Blue dye is no longer recommended, and holding feeds for any small residual interrupts nutrition without lowering risk."
+    "explanation": "The tube is measured and marked first, lubricated, passed through the nostril to the throat, then advanced to the mark while the client flexes the neck and swallows to close the airway. Placement for feeding is confirmed by x-ray before anything is instilled, because auscultating an air bolus is not reliable."
   },
   {
     "domain": "nclexComfort",
     "test": 1,
-    "skill": "Constipation",
-    "difficulty": 1,
-    "format": "single",
-    "stem": "An older adult on bed rest after a fall has not had a bowel movement in 3 days. Which intervention should the nurse include in the plan of care?",
+    "skill": "Heart failure plan of care",
+    "difficulty": 2,
+    "format": "multi",
+    "stimulusId": "NCLEX-CS1",
+    "caseStep": 4,
+    "stem": "The client is admitted to the cardiac unit. Which interventions should the nurse include in the plan of care? Select all that apply.",
     "options": [
-      "Encourage a low-residue diet",
-      "Offer the bedpan only on request",
-      "Increase fluid and fiber intake",
-      "Keep the client flat in bed"
+      "Raise the head of the bed high",
+      "Weigh daily before breakfast",
+      "Offer 3 L of oral fluids daily",
+      "Elevate both legs above the heart",
+      "Limit sodium to 2 g per day"
     ],
     "correct": [
-      2
+      0,
+      1,
+      4
     ],
-    "explanation": "Fluid and fiber soften stool and add bulk, countering the slowed peristalsis of immobility. A low-residue diet reduces stool bulk and worsens constipation."
+    "explanation": "High Fowler's eases breathing, a daily weight on the same scale before breakfast tracks fluid, and a 2 g sodium limit reduces fluid retention. Pushing 3 L of fluid adds to the overload, and raising the legs above the heart returns more blood to an already congested heart and lungs."
   },
   {
     "domain": "nclexComfort",
@@ -330,17 +342,25 @@
     "test": 0,
     "skill": "Safe transfers",
     "difficulty": 2,
-    "format": "single",
-    "stem": "A client with right-sided weakness after a stroke will transfer from bed to wheelchair. Where should the nurse place the wheelchair?",
-    "options": [
-      "On the right, angled toward bed",
-      "On the left, angled toward bed",
-      "Behind the client's back",
-      "At the foot, facing the bed"
+    "format": "cloze",
+    "stem": "A client with right-sided weakness after a stroke will transfer from bed to wheelchair. Complete the sentence. The nurse should place the wheelchair [[1]] and have the client bear weight on the [[2]].",
+    "blanks": [
+      [
+        "on the left, angled to the bed",
+        "on the right, angled to the bed",
+        "behind the client's back",
+        "at the foot, facing the bed"
+      ],
+      [
+        "left leg",
+        "right leg",
+        "both legs equally"
+      ]
     ],
     "correct": [
-      1
+      0,
+      0
     ],
-    "explanation": "The chair goes on the client's strong (left) side, angled to the bed, so the client pivots on the stronger leg. Placing it on the weak side forces weight onto the affected leg."
+    "explanation": "The chair goes on the strong left side, angled to the bed, so the client pivots on the stronger left leg. Placing it on the weak right side forces weight onto the affected leg and raises fall risk."
   }
 ]

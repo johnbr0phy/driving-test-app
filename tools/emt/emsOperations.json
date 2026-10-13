@@ -1,0 +1,466 @@
+[
+  {
+    "domain": "emsOperations",
+    "test": 1,
+    "skill": "Oxygen cylinder duration",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A D cylinder reads 2,000 psi. You give 15 L/min by nonrebreather. Using a 200 psi safe residual, how long will it last?",
+    "options": [
+      "About 21 minutes",
+      "About 19 minutes",
+      "About 34 minutes",
+      "About 10 minutes"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Duration = (2,000 - 200) x 0.16 / 15 = 288 / 15, about 19 minutes. Skipping the 200 psi safe residual gives 21 minutes, and using the E constant of 0.28 gives about 34."
+  },
+  {
+    "domain": "emsOperations",
+    "test": 1,
+    "skill": "Oxygen cylinder duration",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An E cylinder reads 1,200 psi. A COPD patient is on a nasal cannula at 4 L/min. How long will it last?",
+    "options": [
+      "About 84 minutes",
+      "About 40 minutes",
+      "About 7 minutes",
+      "About 70 minutes"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Duration = (1,200 - 200) x 0.28 / 4 = 280 / 4 = 70 minutes. Forgetting the 200 psi safe residual gives 84 minutes, and using the D constant of 0.16 gives 40."
+  },
+  {
+    "domain": "emsOperations",
+    "test": 1,
+    "skill": "Equipment checks",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "At the start of your shift, the AED self-test indicator shows an error. You should:",
+    "options": [
+      "Take it out of service and replace it",
+      "Leave it in service until shift ends",
+      "Use it only if no other AED is nearby",
+      "Wait for the next scheduled weekly check"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Equipment that fails a start-of-shift check must be removed from service and replaced, then reported per agency policy. Keeping a faulty AED on the unit risks a failure during a cardiac arrest."
+  },
+  {
+    "domain": "emsOperations",
+    "test": 1,
+    "skill": "Medication checks",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "During your rig check, the solution in an epinephrine auto-injector window looks brown and cloudy. You should:",
+    "options": [
+      "Keep it on the unit as a backup dose",
+      "Shake it until it looks clear",
+      "Remove it and restock a new one",
+      "Use it first on the next call"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Discolored or cloudy epinephrine has degraded and must be removed and replaced. Keeping it as a backup risks giving an ineffective dose to a patient in anaphylaxis."
+  },
+  {
+    "domain": "emsOperations",
+    "test": 1,
+    "skill": "Oxygen setup",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "Place the steps for starting oxygen by nonrebreather from a new portable cylinder in order.",
+    "options": [
+      "Prefill the reservoir bag",
+      "Attach the regulator to the cylinder",
+      "Place the mask on the patient",
+      "Remove the seal; crack the valve",
+      "Set the flow to 15 L/min",
+      "Open the valve; read the pressure"
+    ],
+    "correct": [
+      3,
+      1,
+      5,
+      4,
+      0,
+      2
+    ],
+    "explanation": "Cracking the valve blows out debris before the regulator goes on; then open the tank, confirm the pressure, set the flow and prefill the bag so the first breath is oxygen. A mask placed before the reservoir fills leaves the patient breathing against an empty bag."
+  },
+  {
+    "domain": "emsOperations",
+    "test": 1,
+    "skill": "Documentation",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "You wrote the wrong pulse rate on a paper PCR before submitting it. The correct way to fix the error is to:",
+    "options": [
+      "Black it out and write over it",
+      "Cover it with correction fluid",
+      "Start a new PCR and discard the original one",
+      "Draw one line through it, initial and date"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A single line through the error, with initials and date, keeps the original readable and shows the correction was honest. Obliterating the entry or discarding the original looks like falsification."
+  },
+  {
+    "domain": "emsOperations",
+    "test": 1,
+    "skill": "Documentation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "After submitting a PCR, you recall that the patient's daughter gave her aspirin before you arrived. You should:",
+    "options": [
+      "Edit the original narrative to add it",
+      "Leave it out because your crew did not give it",
+      "Add a dated addendum marked as a late entry",
+      "Tell the nurse and skip documenting it"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Information added after submission goes in a dated, labeled late entry or addendum, never by altering the original report. Pre-arrival medications are pertinent and must be documented."
+  },
+  {
+    "domain": "emsOperations",
+    "test": 1,
+    "skill": "Patient refusals",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "An alert, oriented 55-year-old with chest pain refuses transport. Which belong in your refusal documentation? Select all that apply.",
+    "options": [
+      "His decision-making capacity",
+      "Risks explained, including death",
+      "His signature and a witness",
+      "Advice to call 911 again",
+      "Your opinion of his choice",
+      "That he was rude to the crew"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "A defensible refusal shows capacity, informed risks, a witnessed signature and advice to call back, with medical direction contacted per local protocol. Opinions and labels about his manner are not objective and weaken the record."
+  },
+  {
+    "domain": "emsOperations",
+    "test": 2,
+    "skill": "Documentation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 30-year-old man smells of alcohol and says he drank six beers. Which entry best belongs in your PCR narrative?",
+    "options": [
+      "Patient is drunk and belligerent.",
+      "Patient states he drank \"six beers\" tonight.",
+      "Patient appears to be an alcoholic.",
+      "Patient is clearly intoxicated, per crew impression."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Objective documentation quotes the patient and records observations, which makes the PCR defensible. Labels like drunk or alcoholic are opinions and may be considered libel."
+  },
+  {
+    "domain": "emsOperations",
+    "test": 2,
+    "skill": "Pertinent negatives",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A 60-year-old woman with chest pain denies shortness of breath and nausea. Documenting these denials records:",
+    "options": [
+      "Pertinent negatives",
+      "The chief complaint",
+      "Objective findings",
+      "The mechanism of injury"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Pertinent negatives are findings you would expect but the patient denies, and they are a standard PCR element. They are reported by the patient, so they are not objective findings."
+  },
+  {
+    "domain": "emsOperations",
+    "test": 2,
+    "skill": "Consent",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "For each patient, specify whether care proceeds under expressed or implied consent.",
+    "rows": [
+      "Alert adult agrees to a splint",
+      "Unresponsive driver after a crash",
+      "Injured 14-year-old, parents unreachable",
+      "Alert woman holds out her arm for a BP",
+      "Adult found alone, actively seizing"
+    ],
+    "columns": [
+      "Expressed",
+      "Implied"
+    ],
+    "correct": [
+      0,
+      1,
+      1,
+      0,
+      1
+    ],
+    "explanation": "Agreement by words or by action, such as holding out an arm, is expressed consent. Implied consent covers an unresponsive or seizing adult and a minor who needs emergency care when no parent can be reached."
+  },
+  {
+    "domain": "emsOperations",
+    "test": 2,
+    "skill": "Negligence",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An on-duty EMT fails to splint an obvious fracture, and the patient suffers nerve damage. Negligence requires duty, breach, causation and:",
+    "options": [
+      "Intent",
+      "Abandonment",
+      "Battery",
+      "Damages"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Negligence requires a duty to act, a breach of that duty, damages and proof that the breach caused the damages. Intent is not required, and Good Samaritan laws do not protect on-duty EMTs."
+  },
+  {
+    "domain": "emsOperations",
+    "test": 2,
+    "skill": "Abandonment",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "At a busy emergency department, you leave an unstable patient on a hallway stretcher without giving a report to staff. This is:",
+    "options": [
+      "Battery",
+      "False imprisonment",
+      "Breach of confidentiality",
+      "Abandonment"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Ending care without transferring it to someone of equal or higher training is abandonment. Battery is touching a patient without consent, which did not occur here."
+  },
+  {
+    "domain": "emsOperations",
+    "test": 2,
+    "skill": "Advance directives",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An 84-year-old man is in cardiac arrest. His wife says he has a DNR order, but no one can find it. You should:",
+    "options": [
+      "Begin resuscitation per local protocol",
+      "Withhold CPR based on her statement",
+      "Wait until she locates the form",
+      "Give compressions only, without ventilations"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A DNR or POLST must be valid and present to withhold resuscitation, so start CPR and contact medical direction per local protocol. Withholding care on a verbal report alone is not supported."
+  },
+  {
+    "domain": "emsOperations",
+    "test": 2,
+    "skill": "HIPAA",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A 3-year-old has patterned burns and an inconsistent story. You report suspected abuse to child protective services. Under HIPAA, this report is:",
+    "options": [
+      "Prohibited without the parents' written consent",
+      "Permitted, because state law requires it",
+      "Allowed only after the hospital reports first",
+      "Allowed only if police ask for it"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "HIPAA permits disclosures required by law, and EMTs are mandated reporters of suspected child abuse in most states. Waiting for parental consent would defeat the purpose of the report."
+  },
+  {
+    "domain": "emsOperations",
+    "test": 2,
+    "skill": "Crime scenes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 25-year-old man was shot in the abdomen at an active crime scene secured by police. When exposing the wound, you should:",
+    "options": [
+      "Wait for police photos before exposing it",
+      "Cut straight through the hole for speed",
+      "Cut around the bullet hole, not through it",
+      "Remove all clothing and leave it on the ground"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Patient care comes first, but cutting around holes and bagging clothing preserves evidence. Delaying care for police photos is wrong because treatment takes priority."
+  },
+  {
+    "domain": "emsOperations",
+    "test": 0,
+    "skill": "Infection exposure",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "While restraining a combative patient, a used needle punctures your gloved hand. After washing the site, you should:",
+    "options": [
+      "Report it promptly to the infection control officer",
+      "Wait to see whether symptoms develop",
+      "Ask the patient yourself for an HIV test",
+      "Report it to your supervisor at the start of next shift"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Exposures should be washed and reported immediately to the designated infection control officer, because post-exposure treatment works best within hours. Waiting for symptoms or the next shift delays that care."
+  },
+  {
+    "domain": "emsOperations",
+    "test": 0,
+    "skill": "Lifting and moving",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "You and your partner lift a 90 kg patient on a cot. Using the power lift technique, you should:",
+    "options": [
+      "Bend at the waist and lift with your back",
+      "Twist your torso to turn as you lift",
+      "Lock your back and lift with your legs",
+      "Hold the cot well away from your body"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The power lift keeps the back locked, feet shoulder-width apart, the load close, and the legs doing the work. Twisting or lifting with the back is a common cause of EMS back injury."
+  },
+  {
+    "domain": "emsOperations",
+    "test": 0,
+    "skill": "Stress management",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Two weeks after a fatal pediatric call, your partner has nightmares, poor sleep and irritability. The best response is to:",
+    "options": [
+      "Tell him to avoid talking about the call",
+      "Encourage help through CISM or counseling",
+      "Suggest a drink to help him fall asleep",
+      "Recommend overtime shifts as a distraction"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Persistent sleep loss and irritability after a critical incident are stress reactions that warrant critical incident stress management or professional help. Alcohol and extra shifts worsen fatigue and stress."
+  },
+  {
+    "domain": "emsOperations",
+    "test": 0,
+    "skill": "Emergency driving",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Running lights and siren to a cardiac arrest, you approach a red light at a busy intersection. You should:",
+    "options": [
+      "Proceed since you have the right of way",
+      "Slow slightly and rely on the siren",
+      "Follow closely behind a police escort",
+      "Come to a stop, then clear each lane"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Lights and sirens only request the right of way, and most ambulance crashes occur at intersections, so drive with due regard and clear each lane. Escorts are discouraged because drivers may not expect the second vehicle."
+  },
+  {
+    "domain": "emsOperations",
+    "test": 0,
+    "skill": "Ambulance operations",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "You must back the ambulance into a narrow hospital bay at night. The safest practice is to:",
+    "options": [
+      "Rely on the backup camera and mirrors alone",
+      "Sound the horn and back up slowly",
+      "Use a spotter at the rear in your mirror",
+      "Back in quickly before traffic arrives"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A spotter positioned behind the vehicle and visible in the driver's mirror is the standard for backing. A camera has blind spots and is not a substitute for a spotter."
+  },
+  {
+    "domain": "emsOperations",
+    "test": 0,
+    "skill": "Air medical safety",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A medical helicopter has landed in your 100 by 100 foot landing zone on a slight slope. You should approach:",
+    "options": [
+      "From the front, after the pilot signals",
+      "From the rear, away from the main rotor",
+      "From the uphill side, as soon as it lands",
+      "From the side, before the rotors slow"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Approach only from the front, within the pilot's view, and only when signaled. The tail rotor makes the rear deadly, and the main rotor dips closer to the ground on the uphill side."
+  },
+  {
+    "domain": "emsOperations",
+    "test": 0,
+    "skill": "Incident command",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "At a mass-casualty incident, match each task to the ICS officer responsible for it.",
+    "rows": [
+      "Tags patients using START",
+      "Assigns ambulances to hospitals",
+      "Holds arriving units until needed",
+      "Oversees care in treatment areas",
+      "Tracks where each patient went"
+    ],
+    "columns": [
+      "Triage",
+      "Treatment",
+      "Transportation",
+      "Staging"
+    ],
+    "correct": [
+      0,
+      2,
+      3,
+      1,
+      2
+    ],
+    "explanation": "Triage sorts patients, treatment runs the treatment area, staging holds vehicles in reserve, and transportation assigns ambulances, picks destinations and tracks patients. Staging manages arriving units but does not send patients to hospitals."
+  },
+  {
+    "domain": "emsOperations",
+    "test": 0,
+    "skill": "Hazardous materials",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "At an overturned tanker leaking an unknown liquid, you see a placard with a four-digit number. As an awareness-level EMT, you should:",
+    "options": [
+      "Approach the tanker to read the shipping papers",
+      "Stay upwind in the cold zone and use the ERG",
+      "Enter the warm zone to begin triage",
+      "Treat victims before they are decontaminated"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Awareness-level EMTs stay uphill, upwind and in the cold zone, using the placard number in the Emergency Response Guidebook. Patients are decontaminated before EMTs treat them."
+  }
+]

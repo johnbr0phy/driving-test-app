@@ -1,8 +1,5 @@
-"use client";
+import { permanentRedirect } from "next/navigation";
 
-import { ExamDrillPage } from "@/components/exam/ExamDrillPage";
-import { getExamById } from "@/lib/exams";
-
-export default function SecplusDrillPage() {
-  return <ExamDrillPage exam={getExamById("secplus")!} />;
+export default function OldDrill() {
+  permanentRedirect("/comptia-security-plus");
 }

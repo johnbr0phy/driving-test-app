@@ -23,18 +23,29 @@
     "test": 1,
     "skill": "Infant milestones",
     "difficulty": 2,
-    "format": "single",
-    "stem": "The nurse assesses a 12-month-old at a well-child visit. Which finding requires follow-up?",
-    "options": [
+    "format": "matrix",
+    "stem": "The nurse assesses a 12-month-old at a well-child visit. For each finding, specify whether it is expected or requires follow-up.",
+    "rows": [
+      "Pulls to stand and cruises",
       "Cannot sit without support",
-      "Not yet walking alone",
-      "Says only two or three words",
-      "Cries when the parent leaves"
+      "Says \"mama\" with meaning",
+      "Does not respond to own name",
+      "Bangs two blocks together",
+      "Not yet walking alone"
+    ],
+    "columns": [
+      "Expected",
+      "Requires follow-up"
     ],
     "correct": [
+      0,
+      1,
+      0,
+      1,
+      0,
       0
     ],
-    "explanation": "Most infants sit without support by about 9 months, so a 12-month-old who cannot sit needs a developmental evaluation. Walking alone can normally begin as late as 15 months, and a few words and separation anxiety are expected at this age."
+    "explanation": "Cruising, a first meaningful word, banging blocks together and not yet walking are all expected at 12 months, since walking alone can start as late as 15 months. Sitting without support is expected by about 9 months and responding to one's name by about 9 months, so both need a developmental evaluation."
   },
   {
     "domain": "nclexHealth",
@@ -118,19 +129,28 @@
     "domain": "nclexHealth",
     "test": 1,
     "skill": "Late decelerations",
-    "difficulty": 3,
-    "format": "single",
-    "stem": "A client in active labor is receiving an oxytocin infusion. The fetal monitor shows recurrent late decelerations with minimal variability. Which action should the nurse take first?",
-    "options": [
-      "Prepare for cesarean birth",
-      "Stop the oxytocin infusion",
-      "Apply oxygen at 2 L/min",
-      "Recheck the tracing in 15 min"
+    "difficulty": 2,
+    "format": "cloze",
+    "stem": "A client in active labor is receiving an oxytocin infusion. The fetal monitor shows recurrent late decelerations with minimal variability. Complete the sentence. This pattern most often reflects [[1]], so the nurse should first [[2]].",
+    "blanks": [
+      [
+        "uteroplacental insufficiency",
+        "umbilical cord compression",
+        "compression of the fetal head",
+        "a fetal sleep cycle"
+      ],
+      [
+        "stop the oxytocin infusion",
+        "prepare for an amniotomy",
+        "increase the oxytocin rate",
+        "recheck the tracing in 1 hour"
+      ]
     ],
     "correct": [
-      1
+      0,
+      0
     ],
-    "explanation": "Late decelerations reflect uteroplacental insufficiency, and oxytocin increases contraction strength, so stopping it is the first step in intrauterine resuscitation. Low-flow oxygen does not address the cause, and cesarean birth is considered only if the pattern persists."
+    "explanation": "Late decelerations mean the placenta is not delivering enough oxygen during contractions, and oxytocin strengthens contractions, so stopping it is the first step of intrauterine resuscitation. Cord compression causes variable decelerations, not late ones, and waiting an hour delays care for a fetus that may be hypoxic."
   },
   {
     "domain": "nclexHealth",
@@ -174,20 +194,29 @@
   {
     "domain": "nclexHealth",
     "test": 2,
-    "skill": "Newborn vital signs",
+    "skill": "Newborn assessment",
     "difficulty": 1,
-    "format": "single",
-    "stem": "The nurse assesses a newborn at 4 hours of age. Which finding should the nurse report to the HCP?",
-    "options": [
-      "Heart rate 140 beats/min",
+    "format": "matrix",
+    "stem": "The nurse assesses a newborn at 4 hours of age. For each finding, specify whether it is expected or should be reported to the HCP.",
+    "rows": [
+      "Heart rate 140/min",
       "Bluish hands and feet",
+      "Respiratory rate 72/min",
       "White papules on the nose",
-      "Respiratory rate 72/min"
+      "Expiratory grunting"
+    ],
+    "columns": [
+      "Expected",
+      "Report to the HCP"
     ],
     "correct": [
-      3
+      0,
+      0,
+      1,
+      0,
+      1
     ],
-    "explanation": "A newborn respiratory rate above 60/min is tachypnea and needs evaluation. A heart rate of 140, acrocyanosis and milia are all normal findings in the first day."
+    "explanation": "A heart rate of 140, acrocyanosis and milia are normal in the first day. A respiratory rate above 60/min and expiratory grunting are signs of respiratory distress that need evaluation."
   },
   {
     "domain": "nclexHealth",
@@ -286,21 +315,17 @@
   {
     "domain": "nclexHealth",
     "test": 2,
-    "skill": "Prediabetes screening",
+    "skill": "Adult screening results",
     "difficulty": 2,
-    "format": "single",
-    "passage": "| Test | Result |\n|---|---|\n| BMI | 29 |\n| Blood pressure | 136/86 mm Hg |\n| Fasting glucose | 118 mg/dL |\n| Hemoglobin A1C | 5.4% |\n| Triglycerides | 140 mg/dL |",
-    "stem": "The nurse reviews screening results for a 45-year-old client. Which result falls in the prediabetes range?",
-    "options": [
-      "Hemoglobin A1C 5.4%",
-      "Blood pressure 136/86 mm Hg",
-      "Triglycerides 140 mg/dL",
-      "Fasting glucose 118 mg/dL"
-    ],
+    "format": "highlight",
+    "passage": "| Test | Result |\n|---|---|\n| BMI | {{29}} |\n| Blood pressure | {{136/86 mm Hg}} |\n| Fasting glucose | {{118 mg/dL}} |\n| Hemoglobin A1C | {{5.4%}} |\n| Triglycerides | {{140 mg/dL}} |\n| HDL cholesterol | {{54 mg/dL}} |\n| LDL cholesterol | {{92 mg/dL}} |",
+    "stem": "The nurse reviews screening results for a 45-year-old client. Highlight the results that fall outside the healthy range for an adult.",
     "correct": [
-      3
+      0,
+      1,
+      2
     ],
-    "explanation": "A fasting glucose of 100 to 125 mg/dL is in the prediabetes range. An A1C of 5.4% is normal (prediabetes is 5.7% to 6.4%), and blood pressure and triglycerides are not used to define prediabetes."
+    "explanation": "A BMI of 29 is overweight, 136/86 mm Hg is in the stage 1 hypertension range, and a fasting glucose of 118 mg/dL is in the prediabetes range of 100 to 125. An A1C of 5.4% is normal (prediabetes starts at 5.7%), and the triglyceride, HDL and LDL values are all within healthy limits."
   },
   {
     "domain": "nclexHealth",
@@ -327,19 +352,31 @@
   {
     "domain": "nclexHealth",
     "test": 0,
-    "skill": "Sun protection",
-    "difficulty": 1,
-    "format": "single",
-    "stem": "The nurse teaches a client about preventing skin cancer. Which statement indicates understanding?",
-    "options": [
-      "\"I use SPF 8 sunscreen on cloudy days.\"",
-      "\"I reapply it every 2 hours outdoors.\"",
-      "\"I skip sunscreen since my skin is darker.\"",
-      "\"One coat in the morning lasts all day.\""
+    "skill": "Sick day teaching",
+    "difficulty": 2,
+    "format": "matrix",
+    "passage": "Day 2: The acidosis has resolved, and the client is eating and back on subcutaneous insulin. The nurse reviews sick day rules before discharge.",
+    "stimulusId": "NCLEX-CS3",
+    "caseStep": 6,
+    "stem": "For each client statement, specify whether it shows understanding or needs more teaching.",
+    "rows": [
+      "\"I'll keep taking my long-acting insulin.\"",
+      "\"I'll check my glucose every 3 to 4 hours.\"",
+      "\"If I can't eat, I'll skip my insulin.\"",
+      "\"I'll test for ketones if glucose is over 240.\"",
+      "\"I'll wait 2 days of vomiting to call.\""
+    ],
+    "columns": [
+      "Shows understanding",
+      "Needs more teaching"
     ],
     "correct": [
+      0,
+      0,
+      1,
+      0,
       1
     ],
-    "explanation": "Broad-spectrum SPF 30 or higher should be reapplied about every 2 hours and after swimming or sweating. UV rays pass through clouds, darker skin still burns and develops skin cancer, and a single morning coat does not last all day."
+    "explanation": "Basal insulin continues during illness, glucose is checked every 2 to 4 hours, and ketones are tested when glucose is above 240 mg/dL. Skipping insulin when not eating is what caused this admission, and vomiting that keeps fluids from staying down for more than a few hours needs a call to the provider, not a 2-day wait."
   }
 ]

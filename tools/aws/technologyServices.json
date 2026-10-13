@@ -1,0 +1,1255 @@
+[
+  {
+    "domain": "technologyServices",
+    "test": 1,
+    "skill": "AWS CLI",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A developer wants to manage AWS resources by running repeatable commands and shell scripts from a laptop terminal. Which tool should the developer use?",
+    "options": [
+      "AWS Command Line Interface (AWS CLI)",
+      "AWS Management Console",
+      "AWS Systems Manager Session Manager",
+      "Amazon CloudWatch"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The AWS CLI issues AWS API calls as terminal commands that can be scripted and repeated. The Management Console is a browser-based point-and-click interface, so it is not suited to scripting."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 1,
+    "skill": "AWS CloudFormation",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A company wants to provision identical development, test and production environments repeatedly from version-controlled JSON or YAML templates. Which AWS service meets this need?",
+    "options": [
+      "AWS Config",
+      "AWS Systems Manager",
+      "AWS CloudFormation",
+      "AWS Trusted Advisor"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "CloudFormation is infrastructure as code: a template in JSON or YAML defines resources that are created the same way every time as a stack. AWS Config records and evaluates resource configurations but does not provision them."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 1,
+    "skill": "AWS CDK",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Developers on a team prefer to define cloud infrastructure in familiar programming languages such as TypeScript and Python instead of templates. Which AWS offering supports this?",
+    "options": [
+      "AWS SDK for Python (Boto3)",
+      "AWS Cloud Development Kit",
+      "AWS Command Line Interface",
+      "AWS Elastic Beanstalk"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The CDK lets developers model infrastructure as code in general-purpose languages and synthesizes it into CloudFormation templates. An AWS SDK calls service APIs from application code but is not an infrastructure-as-code framework."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 1,
+    "skill": "Elastic Beanstalk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team wants to upload its Java web application code and let AWS automatically handle capacity provisioning, load balancing, scaling and health monitoring. Which service should the team use?",
+    "options": [
+      "Amazon EC2 with manually configured instances",
+      "AWS CloudFormation",
+      "Amazon Lightsail",
+      "AWS Elastic Beanstalk"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Elastic Beanstalk is a platform service: you upload code and it deploys and manages the underlying EC2, load balancing and Auto Scaling for you. CloudFormation can build the same resources but you must define and manage every one yourself."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 1,
+    "skill": "Deployment models",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which statement best describes a hybrid cloud deployment model?",
+    "options": [
+      "All workloads running entirely in AWS Regions",
+      "On-premises infrastructure connected to resources running in AWS",
+      "All workloads running in a private on-premises data center",
+      "Workloads spread across multiple Availability Zones in one Region"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A hybrid deployment links existing on-premises infrastructure with cloud resources, often over VPN or Direct Connect. Running everything in AWS, even across several Availability Zones, is a cloud (cloud-native) deployment."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 1,
+    "skill": "AWS Direct Connect",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A financial firm needs a dedicated private network connection from its data center to AWS with consistent bandwidth that does not travel over the public internet. Which service should it use?",
+    "options": [
+      "AWS Site-to-Site VPN",
+      "Amazon CloudFront",
+      "AWS Global Accelerator",
+      "AWS Direct Connect"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Direct Connect provides a dedicated private link between a data center and AWS with more consistent performance than the internet. A Site-to-Site VPN is encrypted but still travels over the public internet."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 1,
+    "skill": "Site-to-Site VPN",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A branch office needs an encrypted connection to its Amazon VPC that can be set up within hours using its existing internet link. Which option is most appropriate?",
+    "options": [
+      "AWS Site-to-Site VPN",
+      "AWS Direct Connect dedicated connection",
+      "VPC peering",
+      "Amazon Route 53"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A Site-to-Site VPN creates IPsec-encrypted tunnels over the existing internet connection and can be set up quickly at low cost. Direct Connect requires a physical circuit that typically takes weeks to provision."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 1,
+    "skill": "AWS SDKs",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A mobile app developer wants application code written in Java to read and write objects in Amazon S3 and items in DynamoDB directly. What should the developer use?",
+    "options": [
+      "The AWS Management Console",
+      "AWS CloudFormation templates",
+      "The AWS SDK for Java",
+      "The AWS Command Line Interface"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "AWS SDKs provide language-specific libraries that let application code call AWS APIs programmatically. The CLI also calls the APIs, but from a terminal rather than from inside the application's own code."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 1,
+    "skill": "Choosing a Region",
+    "difficulty": 2,
+    "format": "multi",
+    "select": 3,
+    "stem": "A company is choosing the AWS Region for a new application. Which factors should it consider? (Choose three.)",
+    "options": [
+      "Data residency requirements",
+      "Number of IAM users in the account",
+      "Proximity to end users",
+      "AWS Support plan level",
+      "Services available in the Region",
+      "Number of edge locations worldwide"
+    ],
+    "correct": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "Region choice is driven by compliance and data residency, proximity to users for low latency, service availability and pricing. The number of edge locations is tempting because edge locations reduce latency, but the edge network is global and the same whichever Region is chosen, and IAM and Support plans apply to the whole account."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 1,
+    "skill": "Availability Zones",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A company's web application must remain available if a single data center fails. Which architecture provides this high availability at the lowest complexity?",
+    "options": [
+      "EC2 instances in multiple Availability Zones behind a load balancer",
+      "Larger EC2 instances in a single Availability Zone",
+      "One EC2 instance in a Local Zone",
+      "Content cached at multiple edge locations"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Each Availability Zone is one or more discrete data centers with independent power and networking, so spreading instances across AZs behind a load balancer survives a data center failure. A bigger instance in one AZ is still a single point of failure."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 1,
+    "skill": "Data residency",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A healthcare provider is legally required to keep patient records stored within its own country. What should it consider first when designing its AWS deployment?",
+    "options": [
+      "Choosing an edge location inside that country",
+      "Enabling AWS Global Accelerator for the application",
+      "Spreading data across multiple Availability Zones",
+      "Choosing an AWS Region located in that country"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Data stored in a Region stays in that Region unless the customer moves it, so Region choice is how data residency is met. Edge locations cache content for delivery and are not where a company chooses to store its primary data."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 1,
+    "skill": "Serverless compute",
+    "difficulty": 1,
+    "format": "multi",
+    "select": 2,
+    "stem": "A startup wants to run code without provisioning or managing servers. Which AWS compute services are serverless? (Choose two.)",
+    "options": [
+      "Amazon EC2",
+      "AWS Lambda",
+      "Amazon Lightsail",
+      "AWS Fargate",
+      "EC2 Dedicated Hosts"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "explanation": "Lambda runs functions and Fargate runs containers without any servers for the customer to provision, patch or scale. Lightsail is tempting because it is simple to use, but it still gives you a virtual server that you size and maintain."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 1,
+    "skill": "Global Accelerator",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An online gaming company runs a UDP-based application and wants fixed static IP addresses that route players over the AWS global network to the healthiest regional endpoint. Which service fits best?",
+    "options": [
+      "Amazon CloudFront",
+      "Network Load Balancer in one Region",
+      "AWS Transit Gateway",
+      "AWS Global Accelerator"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Global Accelerator provides two static anycast IP addresses and sends TCP or UDP traffic across the AWS backbone to the optimal healthy endpoint. CloudFront is designed for caching HTTP content, not for non-HTTP gaming traffic with static IPs."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 1,
+    "skill": "AWS Wavelength",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A telecommunications partner wants to deploy applications for 5G mobile devices with ultra-low latency by running compute inside carrier networks. Which AWS offering is designed for this?",
+    "options": [
+      "AWS Local Zones",
+      "AWS Wavelength",
+      "AWS Outposts",
+      "Amazon CloudFront"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Wavelength Zones embed AWS compute and storage within telecom providers' 5G networks so traffic does not leave the carrier network. Local Zones place AWS infrastructure near large cities but not inside carrier 5G networks."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 1,
+    "skill": "AWS Outposts",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A manufacturer must run AWS services inside its own factory data center for low-latency access to local systems, using the same AWS APIs and tools. Which service should it choose?",
+    "options": [
+      "AWS Local Zones",
+      "AWS Wavelength",
+      "AWS Outposts",
+      "AWS Storage Gateway"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Outposts delivers AWS-managed racks or servers into the customer's own facility, running AWS services with the same APIs. Local Zones are AWS-operated sites near population centers, not hardware installed on the customer's premises."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 1,
+    "skill": "AWS Local Zones",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A film studio in a large city far from the nearest AWS Region needs single-digit millisecond latency for rendering workstations without installing hardware on site. Which option should it use?",
+    "options": [
+      "AWS Local Zones",
+      "AWS Outposts",
+      "Amazon CloudFront edge locations",
+      "AWS Wavelength"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Local Zones extend a Region with AWS-operated compute and storage close to large metropolitan areas for very low latency. Outposts would also give low latency, but it requires installing AWS hardware in the studio's own facility."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 1,
+    "skill": "Spot Instances",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A company runs nightly image-processing jobs that can be stopped and restarted at any time without harm. Which EC2 purchasing option is most cost-effective?",
+    "options": [
+      "On-Demand Instances",
+      "Spot Instances",
+      "Standard Reserved Instances",
+      "Dedicated Hosts"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Spot Instances use spare EC2 capacity at up to 90% off and suit interruption-tolerant workloads. On-Demand works but costs far more for jobs that can tolerate being interrupted."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 1,
+    "skill": "EC2 instance types",
+    "difficulty": 3,
+    "format": "multi",
+    "select": 2,
+    "stem": "Which workloads are best suited to Amazon EC2 compute optimized instances? (Choose two.)",
+    "options": [
+      "High performance web servers",
+      "In-memory databases",
+      "Dedicated gaming servers",
+      "Machine learning training on GPUs",
+      "Data warehouses on local disks"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "Compute optimized instances have a high ratio of CPU to memory for compute-bound work such as high performance web servers, dedicated gaming servers, batch processing and media transcoding. GPU model training sounds compute heavy, but it runs on accelerated computing instances; in-memory databases suit memory optimized and local-disk warehouses storage optimized instances."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 1,
+    "skill": "EC2 instance types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An analytics application processes very large datasets entirely in RAM and needs a high ratio of memory to vCPU. Which EC2 instance family should be chosen?",
+    "options": [
+      "Memory optimized",
+      "Compute optimized",
+      "Storage optimized",
+      "Accelerated computing"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Memory optimized instances are built for workloads that process large datasets in memory, such as in-memory databases and analytics. Compute optimized instances favor high CPU performance relative to memory."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 1,
+    "skill": "EC2 Auto Scaling",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Traffic to a news website spikes unpredictably during breaking stories. Which service automatically adds EC2 instances during spikes and removes them when demand drops?",
+    "options": [
+      "Elastic Load Balancing",
+      "Amazon CloudWatch",
+      "Amazon EC2 Auto Scaling",
+      "AWS Compute Optimizer recommendations"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "EC2 Auto Scaling launches and terminates instances to match demand, which provides elasticity. CloudWatch supplies the metrics and alarms that can trigger scaling, but it does not launch instances by itself."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 1,
+    "skill": "Load balancers",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company runs several microservices and needs to route HTTPS requests to different targets based on the URL path, such as /api or /images. Which load balancer type should it use?",
+    "options": [
+      "Network Load Balancer",
+      "Gateway Load Balancer",
+      "Amazon Route 53 weighted routing",
+      "Application Load Balancer"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An Application Load Balancer works at layer 7 and supports path-based and host-based routing for HTTP and HTTPS. A Network Load Balancer works at layer 4 and cannot inspect URL paths."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 1,
+    "skill": "AWS Lambda",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A photo-sharing app must create a thumbnail whenever a user uploads an image to Amazon S3, without the team managing any servers. Which service should run the thumbnail code?",
+    "options": [
+      "Amazon EC2",
+      "AWS Batch",
+      "AWS Lambda",
+      "AWS Elastic Beanstalk"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Lambda runs code in response to events such as S3 uploads, scales automatically and bills only for execution time. EC2 could run the code but would require the team to provision and manage servers."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 2,
+    "skill": "AWS Fargate",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company wants to run Docker containers on Amazon ECS without provisioning, patching or scaling the underlying EC2 instances. Which option should it use?",
+    "options": [
+      "AWS Fargate",
+      "Amazon ECS with the EC2 launch type",
+      "Amazon EC2 Auto Scaling",
+      "Amazon Lightsail"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Fargate is a serverless compute engine for containers that removes the need to manage servers or clusters of instances. The ECS EC2 launch type still leaves the customer responsible for the EC2 instances in the cluster."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 2,
+    "skill": "Amazon EKS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An organization already runs its containerized applications on Kubernetes on premises and wants AWS to manage the Kubernetes control plane in the cloud. Which service should it adopt?",
+    "options": [
+      "Amazon Elastic Container Service (Amazon ECS)",
+      "Amazon Elastic Kubernetes Service (Amazon EKS)",
+      "AWS Elastic Beanstalk",
+      "AWS Batch"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "EKS is a managed Kubernetes service that runs the control plane for you and is compatible with standard Kubernetes tooling. ECS is an AWS-native container orchestrator and does not run Kubernetes."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 2,
+    "skill": "Amazon Lightsail",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A small bakery with little cloud experience wants to launch a WordPress website on a simple virtual private server for a low, predictable monthly price. Which service is the best fit?",
+    "options": [
+      "Amazon EC2 Reserved Instances",
+      "Amazon Lightsail",
+      "AWS Fargate",
+      "Amazon Elastic Kubernetes Service"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Lightsail bundles a virtual server, storage, and data transfer into simple fixed monthly plans with preconfigured apps such as WordPress. EC2 offers more flexibility but requires more setup and has less predictable pricing for beginners."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 2,
+    "skill": "AWS Batch",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A research lab needs to run hundreds of thousands of computing jobs, with AWS queueing the jobs and provisioning the right amount of compute for each. Which service should it use?",
+    "options": [
+      "AWS Lambda",
+      "Amazon Lightsail",
+      "AWS Batch",
+      "Amazon EC2 Auto Scaling"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "AWS Batch manages job queues and dynamically provisions the optimal compute resources for large numbers of batch jobs. Lambda suits short event-driven functions and has a 15-minute maximum run time per invocation."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 2,
+    "skill": "Serverless compute",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which is a characteristic of serverless compute such as AWS Lambda compared with virtual machines on Amazon EC2?",
+    "options": [
+      "No servers to manage, and you pay only for compute used",
+      "You choose, install and patch the guest operating system",
+      "You pay hourly for instances even when they sit idle",
+      "You must size and manage the cluster's worker nodes"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "With serverless compute AWS manages the servers and operating system, and billing is based on requests and execution time. Choosing and patching the operating system is a customer task on EC2 virtual machines, not on Lambda."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 2,
+    "skill": "Amazon EC2",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company is migrating a legacy application that needs full administrative control of the operating system and custom kernel-level software. Which compute service should it use?",
+    "options": [
+      "AWS Lambda",
+      "AWS Fargate",
+      "AWS App Runner",
+      "Amazon EC2"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "EC2 provides virtual machines where the customer has full control over the operating system and installed software. Lambda, Fargate, and App Runner abstract the operating system away, so custom kernel-level software cannot be installed."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 2,
+    "skill": "Amazon RDS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company runs MySQL on self-managed EC2 instances and wants AWS to handle patching, automated backups and Multi-AZ failover while keeping its relational schema. Which service should it move to?",
+    "options": [
+      "Amazon RDS for MySQL",
+      "Amazon DynamoDB",
+      "Amazon Redshift",
+      "MySQL on larger Amazon EC2 instances"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Amazon RDS is a managed relational database service that automates patching, backups, and Multi-AZ failover. Staying on EC2 keeps the database self-hosted, so the company would still manage those tasks itself."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 2,
+    "skill": "Amazon DynamoDB",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A gaming company needs a serverless NoSQL key-value database that delivers single-digit millisecond performance at any scale for player profiles. Which service should it choose?",
+    "options": [
+      "Amazon RDS for PostgreSQL",
+      "Amazon Neptune",
+      "Amazon DynamoDB",
+      "Amazon Redshift"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "DynamoDB is a fully managed, serverless key-value and document database with consistent single-digit millisecond latency at any scale. RDS for PostgreSQL is relational and requires choosing and sizing database instances."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 2,
+    "skill": "Amazon Neptune",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A social network wants to store users and the relationships between them to power friend-of-friend recommendations. Which database service is purpose-built for this?",
+    "options": [
+      "Amazon DocumentDB",
+      "Amazon Neptune",
+      "Amazon Redshift",
+      "Amazon ElastiCache"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Neptune is a managed graph database designed to store and query highly connected data such as social relationships. DocumentDB is a MongoDB-compatible document database and is not optimized for traversing relationships."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 2,
+    "skill": "Amazon Redshift",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Business analysts need to run complex SQL queries across petabytes of historical sales data for reporting and business intelligence. Which AWS service should the company use?",
+    "options": [
+      "Amazon RDS for MySQL",
+      "Amazon DynamoDB",
+      "Amazon ElastiCache",
+      "Amazon Redshift"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Redshift is a columnar data warehouse built for analytical SQL queries over very large datasets. RDS is designed for transactional (OLTP) workloads and is not optimized for petabyte-scale analytics."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 2,
+    "skill": "Amazon ElastiCache",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An application's relational database is overloaded by repeated identical read queries. The company wants to keep frequently accessed results in memory for microsecond responses. Which service should it add?",
+    "options": [
+      "Amazon ElastiCache",
+      "Amazon Redshift",
+      "Amazon DocumentDB",
+      "Amazon CloudFront"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "ElastiCache provides managed in-memory caching with Redis OSS, Valkey, or Memcached, which offloads repeated reads from the database. CloudFront caches web content at edge locations, not database query results inside the application tier."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 2,
+    "skill": "Database migration",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A company wants to migrate an on-premises Oracle database to Amazon Aurora PostgreSQL with minimal downtime, including converting the schema. Which AWS tools should it use?",
+    "options": [
+      "AWS DataSync with AWS Snowball Edge",
+      "AWS DMS with the AWS Schema Conversion Tool",
+      "AWS Application Migration Service",
+      "AWS Storage Gateway with AWS Backup"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Schema Conversion Tool converts the Oracle schema to PostgreSQL, and DMS replicates the data with continuous replication to minimize downtime. Application Migration Service rehosts whole servers and does not convert a database engine."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 2,
+    "skill": "VPC subnets",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "In an Amazon VPC, what makes a subnet a public subnet?",
+    "options": [
+      "Its route table has a route to an internet gateway",
+      "Its network ACL allows all inbound HTTP traffic",
+      "Its instances use a security group that allows all ports",
+      "It sends outbound traffic through a NAT gateway"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A subnet is public when its associated route table sends internet-bound traffic (0.0.0.0/0) to an internet gateway. A subnet whose default route points to a NAT gateway is a private subnet, and permissive security groups or ACLs do not create a path to the internet."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 2,
+    "skill": "NAT gateway",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Application servers in a private subnet must download operating system patches from the internet, but must not accept connections initiated from the internet. What should be added?",
+    "options": [
+      "An internet gateway route from the private subnet",
+      "A NAT gateway in a public subnet",
+      "A VPC peering connection",
+      "An AWS Direct Connect connection"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A NAT gateway lets instances in private subnets start outbound connections to the internet while blocking connections initiated from outside. Routing the private subnet straight to an internet gateway would make it public and expose the servers."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 2,
+    "skill": "Security groups and NACLs",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which statement correctly compares security groups and network ACLs in an Amazon VPC?",
+    "options": [
+      "Security groups are stateless; network ACLs are stateful",
+      "Both operate at the subnet level and support deny rules",
+      "Security groups are stateful; network ACLs are stateless",
+      "Network ACLs attach to instances; security groups attach to subnets"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Security groups act at the instance (network interface) level, are stateful so return traffic is allowed automatically, and support only allow rules. Network ACLs act at the subnet level, are stateless, and support both allow and deny rules."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 2,
+    "skill": "AWS Transit Gateway",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A company runs 40 VPCs across several accounts and also connects two on-premises data centers. It wants a central hub instead of managing a full mesh of peering connections. Which service fits?",
+    "options": [
+      "VPC peering",
+      "AWS Global Accelerator",
+      "NAT gateway",
+      "AWS Transit Gateway"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Transit Gateway acts as a regional hub that connects many VPCs and on-premises networks through a single gateway. VPC peering is one-to-one and not transitive, so 40 VPCs would need hundreds of separate peering connections."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 2,
+    "skill": "Hybrid connectivity",
+    "difficulty": 1,
+    "format": "multi",
+    "select": 2,
+    "stem": "A company wants to connect its on-premises data center to an Amazon VPC. Which AWS services provide this connection? (Choose two.)",
+    "options": [
+      "AWS Direct Connect",
+      "Amazon CloudFront",
+      "AWS Site-to-Site VPN",
+      "VPC peering",
+      "AWS Global Accelerator"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "Site-to-Site VPN builds encrypted tunnels over the internet, and Direct Connect provides a dedicated private link; both connect an on-premises network to a VPC. VPC peering is tempting, but it connects one VPC to another VPC, not to an on-premises network."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 2,
+    "skill": "Route 53 routing",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An application is deployed in three AWS Regions, and the company wants Amazon Route 53 to send each user to the Region that responds fastest for them. Which routing policy should it choose?",
+    "options": [
+      "Latency-based routing",
+      "Geolocation routing",
+      "Multivalue answer routing",
+      "Failover routing"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Latency-based routing answers DNS queries with the Region that has the lowest measured network latency for the user. Geolocation routing decides by the user's location, which is not always the fastest path."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 2,
+    "skill": "Amazon CloudFront",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A streaming media company wants to cache videos and images at edge locations worldwide so viewers get low-latency delivery. Which AWS service meets this need?",
+    "options": [
+      "AWS Global Accelerator",
+      "AWS Direct Connect",
+      "Amazon Route 53",
+      "Amazon CloudFront"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "CloudFront is a content delivery network that caches content at edge locations close to viewers. Global Accelerator also uses the AWS edge network, but it routes TCP and UDP traffic to endpoints and does not cache content."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 2,
+    "skill": "Amazon API Gateway",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Developers want to publish, secure and throttle REST APIs that invoke AWS Lambda functions, including API keys and usage plans for partners. Which service should they use?",
+    "options": [
+      "AWS AppSync",
+      "Network Load Balancer",
+      "Amazon API Gateway",
+      "Amazon CloudFront"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "API Gateway creates, publishes and secures REST, HTTP and WebSocket APIs, with throttling, API keys and usage plans built in. AppSync is for managed GraphQL APIs, not REST APIs with usage plans."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 2,
+    "skill": "Relational databases",
+    "difficulty": 1,
+    "format": "multi",
+    "select": 2,
+    "stem": "A company needs a managed relational database for a transactional order system that uses SQL joins. Which AWS services fit? (Choose two.)",
+    "options": [
+      "Amazon Aurora",
+      "Amazon DynamoDB",
+      "Amazon RDS",
+      "Amazon Neptune",
+      "Amazon DocumentDB"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "Amazon Aurora and Amazon RDS are managed relational database services for transactional SQL workloads. DynamoDB is tempting because it is fully managed and fast, but it is a NoSQL key-value database without joins; Neptune is a graph database and DocumentDB a document database."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 2,
+    "skill": "S3 storage classes",
+    "difficulty": 3,
+    "format": "multi",
+    "select": 2,
+    "stem": "Which Amazon S3 storage classes keep data in a single Availability Zone? (Choose two.)",
+    "options": [
+      "S3 Standard",
+      "S3 One Zone-IA",
+      "S3 Intelligent-Tiering",
+      "S3 Express One Zone",
+      "S3 Glacier Deep Archive"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "explanation": "S3 One Zone-IA and S3 Express One Zone store data in one Availability Zone, trading AZ-level resilience for lower cost or, with Express One Zone, single-digit millisecond access. S3 Intelligent-Tiering is tempting because it moves data to cheaper tiers, but like S3 Standard and Glacier Deep Archive it stores data across at least three Availability Zones."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 0,
+    "skill": "S3 storage classes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Audit records must be kept for ten years, are almost never read, and a retrieval time of up to 48 hours is acceptable. Which S3 storage class has the lowest storage cost?",
+    "options": [
+      "S3 Glacier Deep Archive",
+      "S3 Glacier Instant Retrieval",
+      "S3 Glacier Flexible Retrieval",
+      "S3 Standard-Infrequent Access"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Glacier Deep Archive is the lowest-cost S3 storage class, built for long-term retention with retrievals within 12 to 48 hours. Glacier Flexible Retrieval restores data faster but costs more to store."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 0,
+    "skill": "S3 Lifecycle",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Log files in an S3 bucket should move to a cheaper storage class after 30 days and be deleted automatically after one year. Which S3 feature does this?",
+    "options": [
+      "S3 Versioning",
+      "S3 Lifecycle rules",
+      "S3 Replication",
+      "S3 Transfer Acceleration"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Lifecycle rules transition objects to other storage classes and expire them after set periods. Versioning keeps prior versions of objects but does not move or delete them on a schedule."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 0,
+    "skill": "S3 Object Lock",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Regulators require that trade records be stored in a write-once-read-many (WORM) model so that no one, even an administrator, can delete them during retention. Which feature meets this?",
+    "options": [
+      "S3 Versioning with MFA Delete enabled",
+      "S3 Cross-Region Replication",
+      "S3 Glacier Instant Retrieval",
+      "S3 Object Lock in compliance mode"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "S3 Object Lock in compliance mode enforces WORM retention, so no user, including the root user, can delete or overwrite a protected version until retention expires. Versioning with MFA Delete makes deletion harder, but an authorized user with MFA can still delete versions."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 0,
+    "skill": "Amazon EBS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A self-managed database on one EC2 instance needs low-latency block storage that persists when the instance stops and can be backed up with point-in-time snapshots. Which option fits?",
+    "options": [
+      "EC2 instance store",
+      "Amazon S3 Standard",
+      "Amazon EBS volume",
+      "Amazon FSx for Lustre"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "EBS provides persistent block storage attached to an EC2 instance, and EBS snapshots give incremental point-in-time backups stored in S3. Instance store is also block storage, but its data is lost when the instance stops or terminates."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 0,
+    "skill": "Amazon EFS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Hundreds of Linux EC2 instances in several Availability Zones must read and write the same files at once through NFS, and capacity should grow automatically. Which service should be used?",
+    "options": [
+      "Amazon EBS",
+      "Amazon EFS",
+      "Amazon FSx for Windows File Server",
+      "AWS Storage Gateway Volume Gateway"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Amazon EFS is a managed, elastic NFS file system that many Linux instances across multiple Availability Zones can mount at the same time. An EBS volume is block storage normally attached to a single instance in one Availability Zone, and FSx for Windows File Server serves SMB shares to Windows clients."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 0,
+    "skill": "File storage",
+    "difficulty": 2,
+    "format": "multi",
+    "select": 2,
+    "stem": "Many Amazon EC2 instances must mount the same shared file system at the same time. Which AWS services provide this managed file storage? (Choose two.)",
+    "options": [
+      "Amazon EFS",
+      "Amazon EBS gp3 volumes",
+      "Amazon FSx",
+      "EC2 instance store",
+      "S3 Glacier Deep Archive"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "Amazon EFS and the Amazon FSx family (for Windows File Server, Lustre, NetApp ONTAP and OpenZFS) are managed file systems that many instances can mount at once. An EBS volume is tempting because it is fast, but it is block storage attached to a single instance, and gp3 volumes do not support Multi-Attach."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 0,
+    "skill": "Storage Gateway",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "On-premises applications must keep writing to local NFS and SMB file shares while the files are stored durably in Amazon S3, with frequently used data cached locally. Which service fits?",
+    "options": [
+      "AWS Snowball Edge",
+      "AWS Storage Gateway",
+      "Amazon EFS",
+      "AWS Direct Connect"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Storage Gateway (S3 File Gateway) presents local file shares and stores files as objects in S3, with a local cache for low-latency access. Direct Connect is only a network link and does not provide file shares."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 0,
+    "skill": "AWS Backup",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company wants one central policy to schedule and retain backups of its EBS volumes, RDS databases, DynamoDB tables and EFS file systems across accounts. What should it use?",
+    "options": [
+      "AWS Elastic Disaster Recovery",
+      "S3 Cross-Region Replication",
+      "AWS Backup",
+      "Amazon Data Lifecycle Manager"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "AWS Backup centrally manages and automates backup plans and retention across many AWS services and accounts. Elastic Disaster Recovery continuously replicates servers for fast failover; it is not a policy-based backup service for databases and file systems."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 0,
+    "skill": "Amazon Rekognition",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A social media startup wants to detect faces, objects and unsafe content in user-uploaded photos without building or training its own machine learning models. Which service fits?",
+    "options": [
+      "Amazon Rekognition",
+      "Amazon Textract",
+      "Amazon Comprehend",
+      "Amazon SageMaker custom models"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Rekognition is a pretrained image and video analysis service that detects faces, objects and inappropriate content through an API. SageMaker could do this too, but the team would have to build, train and host its own models."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 0,
+    "skill": "Amazon Textract",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An insurer receives thousands of scanned claim forms and wants to automatically extract printed text, handwriting, tables and form fields. Which AWS service should it use?",
+    "options": [
+      "Amazon Rekognition",
+      "Amazon Comprehend",
+      "Amazon Kendra",
+      "Amazon Textract"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Textract extracts text, handwriting, tables and key-value form data from scanned documents. Rekognition can find text in images, but it does not understand document structure such as forms and tables."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 0,
+    "skill": "Amazon Comprehend",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A retailer wants to analyze thousands of written product reviews to find customer sentiment and key phrases using natural language processing. Which service should it choose?",
+    "options": [
+      "Amazon Translate",
+      "Amazon Transcribe",
+      "Amazon Polly",
+      "Amazon Comprehend"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Comprehend is a natural language processing service that identifies sentiment, key phrases, entities and language in text. Transcribe converts speech to text and does not analyze sentiment in written reviews."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 0,
+    "skill": "AI language services",
+    "difficulty": 2,
+    "format": "multi",
+    "select": 2,
+    "stem": "A call center wants to convert recorded customer calls into text and then translate that text into Spanish. Which AWS services should it use? (Choose two.)",
+    "options": [
+      "Amazon Transcribe",
+      "Amazon Polly",
+      "Amazon Translate",
+      "Amazon Lex",
+      "Amazon Comprehend"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "Amazon Transcribe converts speech to text, and Amazon Translate translates text between languages. Amazon Polly is tempting because it works with speech, but it does the reverse, turning text into spoken audio."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 0,
+    "skill": "Amazon Bedrock",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "To build a generative AI application, a team wants API access to foundation models from several providers without training models or managing any infrastructure. Which service fits best?",
+    "options": [
+      "Amazon SageMaker",
+      "Amazon Comprehend",
+      "Amazon Bedrock",
+      "Amazon Kendra"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Bedrock is a fully managed, serverless service that offers foundation models from Amazon and other providers through one API. SageMaker is for building, training and deploying your own models, which involves more ML expertise and infrastructure choices."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 0,
+    "skill": "Amazon Athena",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Analysts want to run standard SQL queries directly against CSV and Parquet files in Amazon S3, paying per query with no servers or clusters to manage. Which service should they use?",
+    "options": [
+      "Amazon Athena",
+      "Amazon EMR",
+      "Amazon Kinesis Data Streams",
+      "Amazon OpenSearch Service"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Athena is a serverless, interactive query service that runs SQL on data in S3 and charges per amount of data scanned. EMR runs big data frameworks such as Spark on clusters that must be sized and managed."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 0,
+    "skill": "Amazon Kinesis",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An e-commerce site must ingest and process millions of clickstream events per second in real time for live analytics. Which AWS service is designed for this?",
+    "options": [
+      "Amazon Kinesis Data Streams",
+      "Amazon Athena",
+      "AWS Glue",
+      "Amazon QuickSight"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Kinesis Data Streams captures and processes large streams of data records in real time. Glue is a serverless ETL and data catalog service for batch preparation of data, not real-time stream ingestion."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 0,
+    "skill": "Amazon QuickSight",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Business managers need interactive dashboards and visualizations of sales data, with machine learning insights, which they can share across the company. Which AWS service should be used?",
+    "options": [
+      "AWS Glue",
+      "Amazon EMR",
+      "Amazon QuickSight",
+      "AWS Data Exchange"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "QuickSight is a cloud business intelligence service for building and sharing interactive dashboards. Data Exchange is for finding and subscribing to third-party data sets, not for visualizing them."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 0,
+    "skill": "Decoupling services",
+    "difficulty": 2,
+    "format": "multi",
+    "select": 2,
+    "stem": "A company wants its application components to exchange messages so they are decoupled from each other. Which AWS services are designed for this? (Choose two.)",
+    "options": [
+      "Amazon SQS",
+      "Amazon Athena",
+      "Amazon SNS",
+      "AWS Glue",
+      "Amazon Redshift"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "Amazon SQS queues messages until a consumer processes them, and Amazon SNS publishes messages to many subscribers, so senders and receivers do not call each other directly. AWS Glue is tempting because it moves data between systems, but it is a batch ETL service, not a messaging layer."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 0,
+    "skill": "AWS Step Functions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team must coordinate several Lambda functions into a visual workflow with sequencing, branching, retries and error handling. Which AWS service provides this orchestration?",
+    "options": [
+      "Amazon EventBridge",
+      "Amazon SQS",
+      "AWS CodePipeline",
+      "AWS Step Functions"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Step Functions orchestrates multiple services into state-machine workflows with built-in branching, retries and error handling. EventBridge routes events between services but does not manage a multi-step workflow."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 0,
+    "skill": "AWS CodePipeline",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Every time developers push code, a company wants to automatically build, test and deploy the application through defined release stages. Which service orchestrates this release process?",
+    "options": [
+      "AWS CodeBuild",
+      "AWS CodeDeploy",
+      "AWS CodePipeline",
+      "AWS X-Ray"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "CodePipeline is a continuous delivery service that models and automates the release stages from source through build, test and deploy. CodeBuild only compiles and tests code, and CodeDeploy only handles the deployment step."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 0,
+    "skill": "Amazon CloudWatch",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "An operations team wants an alert sent when average CPU usage on its EC2 instances stays above 80 percent for 10 minutes. Which service should it use?",
+    "options": [
+      "Amazon CloudWatch",
+      "AWS CloudTrail",
+      "AWS Config",
+      "AWS Trusted Advisor"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "CloudWatch collects metrics such as CPU utilization and uses alarms to trigger notifications or actions when thresholds are crossed. CloudTrail records API activity for auditing and does not monitor performance metrics."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 0,
+    "skill": "AWS Systems Manager",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An administrator needs to patch and run commands on a fleet of EC2 instances and on-premises servers without opening SSH ports or using bastion hosts. What should be used?",
+    "options": [
+      "AWS Config",
+      "Amazon Inspector",
+      "AWS Health Dashboard",
+      "AWS Systems Manager"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Systems Manager provides Patch Manager, Run Command and Session Manager to operate EC2 and on-premises servers without inbound SSH. Inspector finds software vulnerabilities but does not apply patches."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 0,
+    "skill": "Amazon WorkSpaces",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company with remote staff wants managed, persistent Windows and Linux virtual desktops that employees can reach from any device. Which AWS service meets this need?",
+    "options": [
+      "Amazon WorkSpaces Applications",
+      "Amazon WorkSpaces",
+      "Amazon Lightsail",
+      "AWS Device Farm"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "WorkSpaces is a managed desktop-as-a-service offering persistent virtual desktops. WorkSpaces Applications (formerly AppStream 2.0) streams individual applications to a browser instead of providing a full persistent desktop."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 0,
+    "skill": "AWS IoT Core",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Thousands of factory sensors must securely connect to AWS and publish telemetry using MQTT, with rules that route the messages to other services. Which service should be used?",
+    "options": [
+      "AWS IoT Core",
+      "Amazon SNS",
+      "Amazon SQS",
+      "AWS Direct Connect"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "IoT Core securely connects devices to AWS over protocols such as MQTT and routes their messages to other services with rules. SNS is a pub/sub notification service for applications and does not manage device connections or identity."
+  },
+  {
+    "domain": "technologyServices",
+    "test": 0,
+    "skill": "AWS Amplify",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Front-end developers want to quickly build, host and deploy a full-stack web and mobile app with built-in authentication and CI/CD, with little backend expertise. Which service fits best?",
+    "options": [
+      "AWS AppSync",
+      "AWS Amplify",
+      "AWS Device Farm",
+      "Amazon API Gateway"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Amplify gives front-end developers tools and managed hosting to build, connect and deploy full-stack web and mobile apps. AppSync is only a managed GraphQL API layer, and Device Farm tests apps on real devices."
+  }
+]

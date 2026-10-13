@@ -12,17 +12,13 @@ import phlebQuestions from "@/data/phlebotomy-questions.json";
 import ccmaQuestions from "@/data/ccma-questions.json";
 import cetQuestions from "@/data/cet-questions.json";
 import danbQuestions from "@/data/danb-questions.json";
-import emtQuestions from "@/data/emt-questions.json";
 import foodmgrQuestions from "@/data/food-manager-questions.json";
 import realestateQuestions from "@/data/real-estate-questions.json";
 import insuranceQuestions from "@/data/life-health-questions.json";
 import notaryQuestions from "@/data/notary-questions.json";
-import awsQuestions from "@/data/aws-ccp-questions.json";
-import aplusQuestions from "@/data/comptia-aplus-questions.json";
 import foodhandlerQuestions from "@/data/food-handler-questions.json";
 import boatingQuestions from "@/data/boating-questions.json";
 import hunterQuestions from "@/data/hunter-questions.json";
-import secplusQuestions from "@/data/comptia-secplus-questions.json";
 import cprQuestions from "@/data/cpr-questions.json";
 import oshaQuestions from "@/data/osha-questions.json";
 import forkliftQuestions from "@/data/forklift-questions.json";
@@ -53,19 +49,15 @@ const BANKS: Record<ExamId, Question[]> = {
   ccma: ccmaQuestions as Question[],
   cet: cetQuestions as Question[],
   danb: danbQuestions as Question[],
-  emt: emtQuestions as Question[],
   foodmgr: foodmgrQuestions as Question[],
   realestate: realestateQuestions as Question[],
   "realestate-ca": realestateCaQuestions as Question[],
   "realestate-nj": realestateNjQuestions as Question[],
   insurance: insuranceQuestions as Question[],
   notary: notaryQuestions as Question[],
-  aws: awsQuestions as Question[],
-  aplus: aplusQuestions as Question[],
   foodhandler: foodhandlerQuestions as Question[],
   boating: boatingQuestions as Question[],
   hunter: hunterQuestions as Question[],
-  secplus: secplusQuestions as Question[],
   cpr: cprQuestions as Question[],
   osha: oshaQuestions as Question[],
   forklift: forkliftQuestions as Question[],

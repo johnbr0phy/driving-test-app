@@ -154,20 +154,32 @@
   {
     "domain": "nclexPharm",
     "test": 1,
-    "skill": "ACE inhibitors",
-    "difficulty": 1,
-    "format": "single",
-    "stem": "A client started lisinopril 2 days ago. Which finding requires immediate action by the nurse?",
-    "options": [
-      "Potassium 5.0 mEq/L",
-      "Dry, nonproductive cough",
-      "Dizziness when standing up",
-      "Swelling of lips and tongue"
+    "skill": "Heart failure medications",
+    "difficulty": 3,
+    "format": "matrix",
+    "passage": "1800: After the first dose of IV furosemide the client has voided 900 mL. BP 142/86 mm Hg, HR 98/min, SpO2 93% on 2 L/min by nasal cannula.\n\n| Lab | Result |\n|---|---|\n| Potassium | 3.2 mEq/L |\n| Creatinine | 1.6 mg/dL (1.5 on arrival, baseline 1.1) |",
+    "stimulusId": "NCLEX-CS1",
+    "caseStep": 5,
+    "stem": "The nurse reviews the admission prescriptions. For each prescription, specify whether the nurse should give it as prescribed or clarify it with the HCP.",
+    "rows": [
+      "Furosemide 40 mg IV every 12 hours",
+      "Potassium chloride 20 mEq PO now",
+      "Enoxaparin 40 mg subcut daily",
+      "Metformin 500 mg PO twice daily",
+      "D5W IV at 125 mL/hr"
+    ],
+    "columns": [
+      "Give as prescribed",
+      "Clarify with the HCP"
     ],
     "correct": [
-      3
+      0,
+      0,
+      0,
+      1,
+      1
     ],
-    "explanation": "Angioedema can obstruct the airway and is an emergency; the drug is stopped and the airway protected. A dry cough is a common, non-urgent ACE inhibitor effect, and potassium 5.0 mEq/L is within normal range."
+    "explanation": "Furosemide is working and still needed because the creatinine was already up from congestion on arrival, potassium 3.2 mEq/L needs replacement, and enoxaparin prevents clots in a hospitalized client with limited mobility. Metformin is held in an acutely ill client with hypoxemia and a creatinine above baseline because of lactic acidosis risk, and a continuous IV at 125 mL/hr adds volume to a client being treated for overload."
   },
   {
     "domain": "nclexPharm",
@@ -194,17 +206,15 @@
     "test": 1,
     "skill": "Dosage calculation",
     "difficulty": 2,
-    "format": "single",
-    "stem": "A heparin infusion of 25,000 units in 250 mL D5W is prescribed to run at 1,200 units/hr. At what rate should the nurse set the infusion pump?",
-    "options": [
-      "120 mL/hr",
-      "1.2 mL/hr",
-      "12 mL/hr",
-      "24 mL/hr"
-    ],
-    "correct": [
-      2
-    ],
+    "format": "numeric",
+    "stem": "A heparin infusion of 25,000 units in 250 mL D5W is prescribed to run at 1,200 units/hr. At what rate in mL/hr should the nurse set the infusion pump? Record your answer as a whole number.",
+    "numeric": {
+      "answers": [
+        "12",
+        "12.0"
+      ],
+      "tolerance": 0
+    },
     "explanation": "The concentration is 25,000 units / 250 mL = 100 units/mL, and 1,200 units/hr / 100 units/mL = 12 mL/hr. 120 mL/hr comes from a decimal error and would deliver ten times the dose."
   },
   {
@@ -288,19 +298,24 @@
     "domain": "nclexPharm",
     "test": 2,
     "skill": "Mixing insulin",
-    "difficulty": 1,
-    "format": "single",
-    "stem": "The nurse will draw regular and NPH insulin into one syringe and has already injected air into both vials. What should the nurse do next?",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "The nurse will give regular and NPH insulin in one syringe. Place the steps in the order the nurse should perform them.",
     "options": [
-      "Roll the regular vial to mix it",
-      "Withdraw the NPH insulin",
-      "Add more air to the NPH vial",
-      "Withdraw the regular insulin"
+      "Roll the NPH vial between the palms",
+      "Inject air into the NPH vial",
+      "Inject air into the regular vial",
+      "Withdraw the regular insulin dose",
+      "Withdraw the NPH insulin dose"
     ],
     "correct": [
-      3
+      0,
+      1,
+      2,
+      3,
+      4
     ],
-    "explanation": "Clear regular insulin is drawn up before cloudy NPH so the regular vial is never contaminated with intermediate-acting insulin. NPH is the vial that is rolled to mix, and it is drawn second."
+    "explanation": "NPH is rolled to mix it, air goes into the NPH vial first and then into the regular vial, and the clear regular insulin is withdrawn before the cloudy NPH. Drawing NPH first would risk pushing intermediate-acting insulin into the regular vial."
   },
   {
     "domain": "nclexPharm",
@@ -384,20 +399,29 @@
     "domain": "nclexPharm",
     "test": 2,
     "skill": "Lithium toxicity",
-    "difficulty": 3,
-    "format": "single",
+    "difficulty": 2,
+    "format": "cloze",
     "passage": "1000 Nurses' note: Coarse hand tremor, vomited 3 times since breakfast, speech slurred.\n\n| Lab | Result |\n|---|---|\n| Lithium | 2.2 mEq/L |\n| Sodium | 134 mEq/L |",
-    "stem": "A client with bipolar disorder takes lithium 300 mg three times daily. Which action should the nurse take first?",
-    "options": [
-      "Increase dietary salt intake",
-      "Give the dose with a meal",
-      "Hold the next lithium dose",
-      "Recheck level after next dose"
+    "stem": "A client with bipolar disorder takes lithium 300 mg three times daily. Complete the sentence. The findings are most consistent with [[1]], and the nurse should first [[2]].",
+    "blanks": [
+      [
+        "lithium toxicity",
+        "a manic relapse",
+        "serotonin syndrome",
+        "viral gastroenteritis"
+      ],
+      [
+        "hold the next dose",
+        "give the dose with food",
+        "increase dietary salt",
+        "recheck the level tomorrow"
+      ]
     ],
     "correct": [
-      2
+      0,
+      0
     ],
-    "explanation": "A level of 2.2 mEq/L with vomiting, coarse tremor and slurred speech is moderate toxicity (maintenance range about 0.6 to 1.2 mEq/L), so further doses are held and the HCP notified. Raising sodium intake does not treat toxicity already present."
+    "explanation": "A level of 2.2 mEq/L with vomiting, coarse tremor and slurred speech is lithium toxicity (maintenance range about 0.6 to 1.2 mEq/L), so further doses are held and the HCP notified. Gastroenteritis can cause vomiting but not a toxic level, and adding salt does not treat toxicity already present."
   },
   {
     "domain": "nclexPharm",
@@ -421,21 +445,34 @@
   {
     "domain": "nclexPharm",
     "test": 2,
-    "skill": "Beta blockers",
-    "difficulty": 2,
-    "format": "single",
-    "passage": "MAR: Metoprolol tartrate 50 mg PO at 0900. Hold for HR less than 60/min or SBP less than 100 mm Hg.\n\n| Time | BP | HR | RR |\n|---|---|---|---|\n| 0845 | 112/70 | 56/min | 16/min |",
-    "stem": "A client is due for a scheduled oral beta blocker. Which action should the nurse take?",
-    "options": [
-      "Hold the dose per parameters",
-      "Give half of the dose now",
-      "Give the dose as scheduled",
-      "Give it, recheck HR in 1 hour"
+    "skill": "Medications in sepsis",
+    "difficulty": 3,
+    "format": "matrix",
+    "passage": "0930: Blood cultures were drawn at 0905. The crystalloid bolus is infusing. BP 86/48 mm Hg, HR 116/min.",
+    "stimulusId": "NCLEX-CS2",
+    "caseStep": 5,
+    "stem": "The nurse reviews the client's prescriptions. For each prescription, specify whether the nurse should implement it or hold it and clarify with the HCP.",
+    "rows": [
+      "Piperacillin-tazobactam IV now",
+      "Lisinopril 20 mg PO daily",
+      "Lactated Ringer's 1,740 mL IV",
+      "Metformin 1,000 mg PO twice daily",
+      "Heparin 5,000 units subcut every 8 hours",
+      "Amlodipine 5 mg PO daily"
+    ],
+    "columns": [
+      "Implement",
+      "Hold and clarify"
     ],
     "correct": [
-      0
+      0,
+      1,
+      0,
+      1,
+      0,
+      1
     ],
-    "explanation": "The heart rate of 56/min is below the hold parameter of 60, so the dose is held and the reason documented and reported. A partial dose is not an option the nurse can choose without a prescription."
+    "explanation": "The antibiotic is given now that cultures are drawn, the bolus is 30 mL/kg for a 58 kg client, and subcutaneous heparin prevents clots in an immobile client with normal platelets and is safe with her poor kidney function. Lisinopril and amlodipine would deepen the hypotension, and metformin is held because a high lactate and acute kidney injury raise the risk of lactic acidosis."
   },
   {
     "domain": "nclexPharm",
@@ -460,17 +497,15 @@
     "test": 2,
     "skill": "Dosage calculation",
     "difficulty": 3,
-    "format": "single",
-    "stem": "Amoxicillin 40 mg/kg/day PO divided every 12 hours is prescribed for a child who weighs 33 lb. The suspension contains 250 mg/5 mL. How many mL should the nurse give per dose?",
-    "options": [
-      "3 mL",
-      "12 mL",
-      "13.2 mL",
-      "6 mL"
-    ],
-    "correct": [
-      3
-    ],
+    "format": "numeric",
+    "stem": "Amoxicillin 40 mg/kg/day PO divided every 12 hours is prescribed for a child who weighs 33 lb. The suspension contains 250 mg/5 mL. How many mL should the nurse give per dose? Record your answer as a whole number.",
+    "numeric": {
+      "answers": [
+        "6",
+        "6.0"
+      ],
+      "tolerance": 0
+    },
     "explanation": "33 lb / 2.2 = 15 kg; 40 mg x 15 kg = 600 mg/day, or 300 mg per dose; 300 mg / 250 mg x 5 mL = 6 mL. 12 mL is the whole daily dose in one dose, and 13.2 mL comes from using pounds instead of kilograms."
   },
   {
@@ -478,18 +513,15 @@
     "test": 2,
     "skill": "Dosage calculation",
     "difficulty": 2,
-    "format": "single",
-    "stem": "The nurse must infuse 1,000 mL of 0.9% sodium chloride over 8 hours by gravity using tubing with a drop factor of 15 gtt/mL. At how many drops per minute should the nurse regulate the infusion?",
-    "options": [
-      "31 gtt/min",
-      "125 gtt/min",
-      "21 gtt/min",
-      "42 gtt/min"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "1,000 mL / 8 hr = 125 mL/hr; 125 mL x 15 gtt/mL / 60 min = 31.25, rounded to 31 gtt/min. 125 is the mL/hr rate, and 21 and 42 come from using drop factors of 10 and 20."
+    "format": "numeric",
+    "stem": "The nurse must infuse 1,000 mL of 0.9% sodium chloride over 8 hours by gravity using tubing with a drop factor of 15 gtt/mL. At how many drops per minute should the nurse regulate the infusion? Round to the nearest whole number.",
+    "numeric": {
+      "answers": [
+        "31"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "1,000 mL / 8 hr = 125 mL/hr; 125 mL x 15 gtt/mL / 60 min = 31.25, rounded to 31 gtt/min. 125 is the mL/hr rate, not the drip rate."
   },
   {
     "domain": "nclexPharm",
@@ -534,17 +566,16 @@
     "test": 0,
     "skill": "Dosage calculation",
     "difficulty": 1,
-    "format": "single",
-    "stem": "Morphine 4 mg IV push is prescribed. The vial contains 10 mg/mL. How many mL should the nurse draw up?",
-    "options": [
-      "2.5 mL",
-      "0.4 mL",
-      "0.25 mL",
-      "4 mL"
-    ],
-    "correct": [
-      1
-    ],
+    "format": "numeric",
+    "stem": "Morphine 4 mg IV push is prescribed. The vial contains 10 mg/mL. How many mL should the nurse draw up? Record your answer to one decimal place.",
+    "numeric": {
+      "answers": [
+        "0.4",
+        ".4",
+        "0.40"
+      ],
+      "tolerance": 0
+    },
     "explanation": "Desired over have times volume: 4 mg / 10 mg x 1 mL = 0.4 mL. 2.5 mL comes from inverting the ratio (10 / 4)."
   },
   {
@@ -572,38 +603,54 @@
   {
     "domain": "nclexPharm",
     "test": 0,
-    "skill": "Insulin and hypoglycemia",
+    "skill": "DKA treatment",
     "difficulty": 2,
-    "format": "single",
-    "passage": "MAR: Insulin glargine 20 units subcut at 2100. Insulin lispro per scale with meals.\n\n0700 Nurses' note: Client alert, diaphoretic, shaky. Bedside glucose 62 mg/dL. Breakfast tray not yet arrived.",
-    "stem": "Which action should the nurse take first?",
+    "format": "multi",
+    "stimulusId": "NCLEX-CS3",
+    "caseStep": 4,
+    "stem": "Which prescriptions should the nurse anticipate for initial treatment? Select all that apply.",
     "options": [
-      "Hold the bedtime glargine",
-      "Give 4 oz of fruit juice",
-      "Give 50% dextrose IV push",
-      "Recheck glucose in 1 hour"
+      "0.9% sodium chloride IV bolus",
+      "Sodium bicarbonate IV push",
+      "Regular insulin IV infusion",
+      "Potassium chloride 40 mEq IV now",
+      "Bedside glucose every hour"
     ],
     "correct": [
-      1
+      0,
+      2,
+      4
     ],
-    "explanation": "An alert client who can swallow with a glucose of 62 mg/dL gets 15 g of fast-acting carbohydrate such as 4 oz of juice, then a recheck in 15 minutes. IV dextrose is for a client who cannot safely swallow, and waiting an hour delays treatment."
+    "explanation": "DKA care starts with isotonic fluid, a continuous regular insulin infusion once potassium is at least about 3.5 mEq/L, and hourly glucose checks. Potassium is added only when it falls below about 5.0 mEq/L, so it is not given now at 5.6, and bicarbonate is reserved for a pH below about 7.0."
   },
   {
     "domain": "nclexPharm",
     "test": 0,
-    "skill": "Antibiotic teaching",
-    "difficulty": 2,
-    "format": "single",
-    "stem": "Which instruction is most important for the nurse to give a client prescribed oral metronidazole?",
-    "options": [
-      "Limit dairy foods while taking it",
-      "Avoid foods high in tyramine",
-      "Stop it once symptoms resolve",
-      "Avoid alcohol until 3 days after"
+    "skill": "Insulin infusion adjustments",
+    "difficulty": 3,
+    "format": "matrix",
+    "passage": "0200: Insulin infusing at 0.1 units/kg/hr. Bedside glucose 236 mg/dL, falling about 70 mg/dL per hour. Potassium 3.6 mEq/L. Bicarbonate 13 mEq/L. Anion gap 18. Urine output 80 mL/hr.",
+    "stimulusId": "NCLEX-CS3",
+    "caseStep": 5,
+    "stem": "For each action, specify whether it is indicated or not indicated now.",
+    "rows": [
+      "Add dextrose to the IV fluids",
+      "Stop the insulin infusion",
+      "Add potassium to the IV fluids",
+      "Give sodium bicarbonate IV",
+      "Keep checking glucose hourly"
+    ],
+    "columns": [
+      "Indicated",
+      "Not indicated"
     ],
     "correct": [
-      3
+      0,
+      1,
+      0,
+      1,
+      0
     ],
-    "explanation": "Metronidazole with alcohol can cause a disulfiram-like reaction (flushing, vomiting, tachycardia), so alcohol is avoided during therapy and for 3 days after the last dose. Tyramine restriction applies to MAOIs, and stopping early promotes treatment failure."
+    "explanation": "Once glucose falls below 250 mg/dL, dextrose is added so insulin can keep clearing ketones without causing hypoglycemia, and potassium is added because 3.6 mEq/L is below 5.0 with good urine output. A bicarbonate of 13 and an anion gap of 18 show ketoacidosis is still present, so stopping insulin now is the tempting error, and sodium bicarbonate is not needed above a pH of about 7.0."
   }
 ]

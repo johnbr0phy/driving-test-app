@@ -1,0 +1,498 @@
+[
+  {
+    "domain": "nclexSafety",
+    "test": 1,
+    "skill": "PPE donning order",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "After hand hygiene, the nurse prepares to enter the room of a client on contact and droplet precautions. Which item should the nurse put on first?",
+    "options": [
+      "Clean gloves",
+      "Isolation gown",
+      "Surgical mask",
+      "Eye protection"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The CDC donning sequence is gown, then mask or respirator, then eye protection, then gloves, so the gloves cover the gown cuffs. Starting with the mask is a common error."
+  },
+  {
+    "domain": "nclexSafety",
+    "test": 1,
+    "skill": "Airborne precautions",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "A client is admitted with suspected active pulmonary tuberculosis. Which measures should the nurse implement? Select all that apply.",
+    "options": [
+      "Negative-pressure private room",
+      "Surgical mask for staff entering",
+      "Fit-tested N95 respirator for staff",
+      "Surgical mask on client during transport",
+      "Door left open if the client is masked"
+    ],
+    "correct": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "Airborne precautions require a negative-pressure isolation room with the door closed, a fit-tested N95 or higher respirator for staff, and a surgical mask on the client outside the room. A surgical mask does not protect staff from airborne droplet nuclei."
+  },
+  {
+    "domain": "nclexSafety",
+    "test": 1,
+    "skill": "Spore precautions",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Lab result: stool positive for Clostridioides difficile toxin.\nOrders: contact precautions. Oral vancomycin 125 mg every 6 hours.",
+    "stem": "Which action should the nurse take when leaving this client's room after care?",
+    "options": [
+      "Use alcohol-based hand rub",
+      "Remove the gown in the hallway",
+      "Clean equipment with alcohol wipes",
+      "Wash hands with soap and water"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Alcohol does not kill C. difficile spores, so hands are washed with soap and water, whose friction and rinsing remove spores. The gown is removed before leaving the room, and shared equipment needs a sporicidal disinfectant such as bleach, not alcohol."
+  },
+  {
+    "domain": "nclexSafety",
+    "test": 1,
+    "skill": "Responding to falls",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Nurses' notes, 0215: 79-year-old client found sitting on the floor beside the bed. States, \"I was going to the bathroom.\" Alert and oriented. Bed alarm was off.",
+    "stem": "The nurse responds to this fall. Which action should the nurse take first?",
+    "options": [
+      "Complete an incident report",
+      "Notify the HCP about the fall",
+      "Assess the client for injury",
+      "Help the client back into bed"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The nurse checks for injury, such as head trauma or hip pain, before moving the client, because moving an injured client can worsen harm. Helping the client up, notifying the HCP and completing an incident report follow the assessment."
+  },
+  {
+    "domain": "nclexSafety",
+    "test": 1,
+    "skill": "Restraint safety",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "A client has soft wrist restraints ordered to protect an endotracheal tube. Which actions by the nurse are correct? Select all that apply.",
+    "options": [
+      "Tie the straps to the side rails",
+      "Use a quick-release knot",
+      "Renew the order every 72 hours",
+      "Release and reposition every 2 hours",
+      "Check circulation once each shift"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "explanation": "Restraints are secured to the bed frame with a quick-release knot, and the client is released, repositioned and checked at least every 2 hours. Side rails move and can tighten the strap, orders are renewed at least daily under most facility policies, and circulation is checked much more often than once a shift."
+  },
+  {
+    "domain": "nclexSafety",
+    "test": 1,
+    "skill": "Client identification",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Before giving a medication, which pair of identifiers should the nurse use?",
+    "options": [
+      "Full name and date of birth",
+      "Name and room number",
+      "Room and bed number",
+      "Name on the door and chart"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Two person-specific identifiers, such as full name and date of birth or medical record number, are checked against the wristband and the MAR. A room or bed number is never an identifier because clients move."
+  },
+  {
+    "domain": "nclexSafety",
+    "test": 1,
+    "skill": "Disaster triage",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "At a mass casualty scene, the nurse uses START triage. Which adult should be tagged immediate (red)?",
+    "options": [
+      "Apneic after the airway is repositioned",
+      "Walking and talking, deep arm cut",
+      "RR 24, cap refill 1 s, obeys commands",
+      "RR 34, cap refill 1 s, obeys commands"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "In START, a respiratory rate over 30 earns an immediate (red) tag even when perfusion and mental status are normal. The victim with RR 24, brisk capillary refill and who obeys commands is delayed (yellow), the walking victim is minor (green), and no breathing after repositioning the airway is expectant (black)."
+  },
+  {
+    "domain": "nclexSafety",
+    "test": 1,
+    "skill": "Surgical asepsis",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "The nurse is setting up a sterile field for a dressing change. Which actions contaminate the field? Select all that apply.",
+    "options": [
+      "Holding sterile items below the waist",
+      "Reaching across the sterile field",
+      "Treating a 1-inch border as nonsterile",
+      "Turning away from the sterile field",
+      "Setting a wet item on a sterile drape"
+    ],
+    "correct": [
+      0,
+      1,
+      3,
+      4
+    ],
+    "explanation": "Items below waist level or out of sight are considered contaminated, reaching over the field can drop particles onto it, and moisture wicks microorganisms through the drape. Treating the outer 1-inch border as nonsterile is correct technique."
+  },
+  {
+    "domain": "nclexSafety",
+    "test": 1,
+    "skill": "Chemical exposure",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A cleaning chemical splashes into a nurse's eye. Which action should the nurse take first?",
+    "options": [
+      "Cover the eye with a dry gauze pad",
+      "Flush the eye at an eyewash station",
+      "Find the safety data sheet for it",
+      "Report to occupational health"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Immediate irrigation, generally for at least 15 minutes, limits tissue damage from a chemical splash. The safety data sheet and an occupational health report are important next steps but must not delay flushing."
+  },
+  {
+    "domain": "nclexSafety",
+    "test": 1,
+    "skill": "Seizure safety",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client has a generalized tonic-clonic seizure while in bed. Which action should the nurse take?",
+    "options": [
+      "Turn the client onto one side",
+      "Insert a padded tongue blade",
+      "Hold the arms to stop jerking",
+      "Give oral glucose gel at once"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Side-lying keeps the airway clear and lets saliva drain while the nurse protects the head and times the seizure. Nothing is placed in the mouth, restraining movement can cause injury, and nothing is given by mouth during a seizure."
+  },
+  {
+    "domain": "nclexSafety",
+    "test": 1,
+    "skill": "Safe client handling",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "Mobility assessment: 58-year-old client, 118 kg. Cannot bear weight on either leg. Needs help to sit up and has poor trunk control. Follows commands. Order: out of bed to chair twice daily.",
+    "stem": "Which method should the nurse use to move this client from the bed to a chair?",
+    "options": [
+      "Powered sit-to-stand lift with one staff",
+      "Two-person pivot with a gait belt",
+      "Slide board with one staff member",
+      "Full-body mechanical lift and two staff"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A client who cannot bear weight and has poor trunk control needs a full-body mechanical lift operated by at least two staff to protect both client and staff. A sit-to-stand lift and pivot transfers require partial weight bearing, and a slide board requires trunk control."
+  },
+  {
+    "domain": "nclexSafety",
+    "test": 2,
+    "skill": "Fall prevention",
+    "difficulty": 1,
+    "format": "multi",
+    "stem": "Which interventions should the nurse include to reduce fall risk for a client with dementia? Select all that apply.",
+    "options": [
+      "Keep the bed low with wheels locked",
+      "Raise all four side rails at night",
+      "Offer toileting every 2 hours",
+      "Apply a vest restraint during sleep",
+      "Provide nonskid socks or footwear"
+    ],
+    "correct": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "A low, locked bed, scheduled toileting and nonskid footwear address common causes of falls. Four raised rails and a vest restraint are restraints that increase injury when a confused client climbs over or struggles against them."
+  },
+  {
+    "domain": "nclexSafety",
+    "test": 2,
+    "skill": "Restraint monitoring",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "| Time | Client in soft wrist restraints |\n|---|---|\n| 1000 | Applied per HCP order, straps tied to bed frame, hands warm and pink |\n| 1100 | Two fingers fit under each restraint |\n| 1200 | Right hand cool, capillary refill 5 seconds |\n| 1200 | Client asks for a drink of water |",
+    "stem": "Which restraint monitoring finding requires the nurse's immediate action?",
+    "options": [
+      "Straps tied to the bed frame",
+      "Right hand cool, refill 5 seconds",
+      "Client asking for a drink of water",
+      "Two fingers fit under restraint"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A cool hand with delayed capillary refill means the restraint is impairing circulation, so the nurse loosens it and reassesses at once. A two-finger fit and tying to the frame are correct practice, and the request for water is met after circulation is restored."
+  },
+  {
+    "domain": "nclexSafety",
+    "test": 2,
+    "skill": "Droplet precautions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client is admitted with suspected meningococcal meningitis. Which precaution should the nurse implement?",
+    "options": [
+      "Surgical mask on entering the room",
+      "Fit-tested N95 for all room entry",
+      "Gown and gloves for any contact",
+      "Negative-pressure isolation room"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Neisseria meningitidis spreads by large droplets, so droplet precautions with a surgical mask are used until the client has had 24 hours of effective antibiotics. An N95 and a negative-pressure room are for airborne diseases such as tuberculosis, measles and varicella."
+  },
+  {
+    "domain": "nclexSafety",
+    "test": 2,
+    "skill": "PPE removal order",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "After caring for a client on contact and droplet precautions, which item should the nurse remove last?",
+    "options": [
+      "Gown, pulled away and rolled inward",
+      "Gloves, using glove-to-glove technique",
+      "Goggles, by the earpieces",
+      "Mask, by the ties or loops"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The mask is removed last, at the doorway or after leaving the room (a respirator always after leaving), touching only the ties or loops, followed by hand hygiene. Gloves come off first because they are the most contaminated, then eye protection and the gown."
+  },
+  {
+    "domain": "nclexSafety",
+    "test": 2,
+    "skill": "Enhanced barrier precautions",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "A nursing home resident with an indwelling urinary catheter is on enhanced barrier precautions. For which activities should staff wear a gown and gloves? Select all that apply.",
+    "options": [
+      "Bathing or showering the resident",
+      "Handing the resident a meal tray",
+      "Providing urinary catheter care",
+      "Transferring the resident to a chair",
+      "Changing the resident's bed linens"
+    ],
+    "correct": [
+      0,
+      2,
+      3,
+      4
+    ],
+    "explanation": "Enhanced barrier precautions call for a gown and gloves during high-contact care such as bathing, transfers, changing linens and device care, when hands and clothing can pick up multidrug-resistant organisms. Brief contact like delivering a tray needs only standard precautions."
+  },
+  {
+    "domain": "nclexSafety",
+    "test": 2,
+    "skill": "Radiation safety",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A client has a sealed radioactive implant for cervical cancer. Which action by the nurse is correct?",
+    "options": [
+      "Pick up a loose implant with gloves",
+      "Keep a lead container in the room",
+      "Assign the same nurse every day",
+      "Allow brief visits from children"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A lead container and long-handled forceps stay in the room so a dislodged implant can be picked up with forceps, never by hand, and shielded. Staff assignments rotate to limit each nurse's exposure, and children and pregnant visitors are not allowed."
+  },
+  {
+    "domain": "nclexSafety",
+    "test": 2,
+    "skill": "Error classification",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A nurse prepares a medication for the wrong client but notices the error while checking the wristband and does not give it. How is this event classified?",
+    "options": [
+      "A near miss",
+      "A sentinel event",
+      "An adverse event",
+      "A never event"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A near miss is an error caught before it reaches the client, and reporting it helps find the system cause. Adverse, sentinel and never events are errors or events that actually reached a client."
+  },
+  {
+    "domain": "nclexSafety",
+    "test": 2,
+    "skill": "Alarm safety",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "Nurses' notes, 2330: 84-year-old client, high fall risk, received zolpidem 5 mg at 2200. AP reports: \"The bed alarm in his room kept going off, so I turned it off. He's asleep now.\"",
+    "stem": "Based on the AP's report, which action should the nurse take first?",
+    "options": [
+      "Ask the HCP to discontinue the zolpidem",
+      "Apply a vest restraint for the night",
+      "Remind the AP of the bed alarm policy",
+      "Check the client and turn the alarm on"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The alarm was the safeguard for a sedated older client at high fall risk, so the nurse checks on the client and restores it right away. Discussing zolpidem, a Beers list drug, with the HCP and coaching the AP are appropriate next steps, and a vest restraint is not a fall-prevention measure."
+  },
+  {
+    "domain": "nclexSafety",
+    "test": 2,
+    "skill": "Home oxygen safety",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "The nurse teaches a client who will use oxygen at home. Which instructions should the nurse include? Select all that apply.",
+    "options": [
+      "Post no-smoking signs in the home",
+      "Use wool blankets to stay warm",
+      "Keep tanks upright and secured",
+      "Raise the flow rate when short of breath",
+      "Use water-based lip moisturizer"
+    ],
+    "correct": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "Oxygen feeds combustion, so no smoking, secured upright tanks and water-based rather than petroleum-based products reduce fire risk. Wool can create static sparks, and the flow rate is prescribed and should not be raised without the HCP."
+  },
+  {
+    "domain": "nclexSafety",
+    "test": 2,
+    "skill": "Workplace violence",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client becomes agitated, shouts threats, and paces in his room. Which action should the nurse take?",
+    "options": [
+      "Stand within arm's reach of him",
+      "Keep a clear path to the exit",
+      "Close the door for the client's privacy",
+      "Touch his arm to calm him down"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "With an escalating client, the nurse stays at a safe distance with an open route out of the room and calls for help as needed. Closing the door can trap the nurse, and moving close or touching an agitated client can be taken as a threat."
+  },
+  {
+    "domain": "nclexSafety",
+    "test": 2,
+    "skill": "Room assignment",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "Bed board: one open bed, in a semiprivate room. New admission: 70-year-old client with vancomycin-resistant enterococcus (VRE) in the urine, on contact precautions. No private rooms are available.",
+    "stem": "Which client is the best roommate for the new admission?",
+    "options": [
+      "Client also colonized with VRE",
+      "Client with an MRSA wound infection",
+      "Client with neutropenia from chemotherapy",
+      "Client with C. difficile diarrhea"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "When private rooms are unavailable, clients with the same organism can be cohorted. Pairing with a different organism such as MRSA or C. difficile risks cross-infection, and an immunosuppressed client should not room with someone carrying a resistant organism."
+  },
+  {
+    "domain": "nclexSafety",
+    "test": 0,
+    "skill": "Fire response",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The nurse discovers a small fire in a client's room. Which action should the nurse take first?",
+    "options": [
+      "Pull the nearest fire alarm",
+      "Close all doors on the unit",
+      "Use the fire extinguisher",
+      "Remove the client from the room"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The RACE sequence is Rescue, Alarm, Contain, Extinguish, so the nurse first removes the client from danger. Pulling the alarm comes next, then closing doors and using the extinguisher if the fire is small."
+  },
+  {
+    "domain": "nclexSafety",
+    "test": 0,
+    "skill": "Contact precautions",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "Wound culture: methicillin-resistant Staphylococcus aureus (MRSA).\nOrders: contact precautions. Change sacral wound dressing daily.",
+    "stem": "Which action by the nurse is appropriate when caring for this client?",
+    "options": [
+      "Remove the gown after leaving the room",
+      "Wear gloves only when touching the wound",
+      "Keep a dedicated stethoscope in the room",
+      "Wear an N95 respirator for wound care"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Contact precautions use dedicated or disposable equipment so organisms are not carried to other clients, along with a gown and gloves on entry. An N95 is for airborne diseases, the gown comes off before leaving, and gloves are worn for any contact with the client or the room."
+  },
+  {
+    "domain": "nclexSafety",
+    "test": 0,
+    "skill": "Medication error prevention",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which practices help prevent medication errors? Select all that apply.",
+    "options": [
+      "Read back telephone orders",
+      "Write QD for once-daily doses",
+      "Use a trailing zero, as in 5.0 mg",
+      "Use a leading zero, as in 0.5 mg",
+      "Take verbal orders for routine care"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "explanation": "Reading back orders and writing a leading zero prevent misheard orders and tenfold dosing errors. QD is on the do-not-use list, a trailing zero can be misread as 50 mg, and verbal orders are reserved for emergencies."
+  },
+  {
+    "domain": "nclexSafety",
+    "test": 0,
+    "skill": "Latex allergy",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which client should the nurse identify as having the highest risk for a latex allergy?",
+    "options": [
+      "Client allergic to kiwi and avocado",
+      "Client allergic to shellfish",
+      "Client allergic to penicillin",
+      "Client with seasonal pollen allergy"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Kiwi, avocado, banana and chestnut share proteins with natural rubber latex, so these food allergies point to latex-fruit syndrome. Shellfish and penicillin allergies are not linked to latex, and seasonal pollen allergy is a much weaker association."
+  }
+]

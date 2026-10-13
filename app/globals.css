@@ -406,6 +406,20 @@
     --brand-gradient-to: 340 70% 95%;
   }
 
+  /* NCLEX-RN theme: clinical blue */
+  [data-theme="nclex"] {
+    --brand: 200 80% 36%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 200 80% 95%;
+    --brand-hover: 200 80% 31%;
+    --brand-dark: 200 80% 26%;
+    --brand-darker: 200 70% 14%;
+    --brand-muted: 200 45% 72%;
+    --brand-border: 200 50% 78%;
+    --brand-border-light: 200 45% 88%;
+    --brand-gradient-to: 185 70% 95%;
+  }
+
   /* ASVAB theme: army green */
   [data-theme="asvab"] {
     --brand: 95 30% 34%;
@@ -952,6 +966,18 @@
     --brand-muted: 310 40% 45%;
     --brand-dark: 310 60% 65%;
     --brand-darker: 310 50% 78%;
+  }
+
+  .dark [data-theme="nclex"] {
+    --brand: 200 80% 50%;
+    --brand-hover: 200 80% 42%;
+    --brand-light: 200 45% 13%;
+    --brand-gradient-to: 185 40% 11%;
+    --brand-border-light: 200 35% 24%;
+    --brand-border: 200 40% 34%;
+    --brand-muted: 200 45% 45%;
+    --brand-dark: 200 80% 65%;
+    --brand-darker: 200 70% 78%;
   }
 
   .dark [data-theme="asvab"] {

@@ -12,6 +12,7 @@ import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { WebViewGoogleWarning } from "@/components/WebViewGoogleWarning";
 import { useIsNativeApp } from "@/hooks/useIsNativeApp";
+import { examNameForPath } from "@/hooks/useThemePath";
 
 export default function LoginPage() {
   return (
@@ -41,6 +42,8 @@ function LoginPageContent() {
   const isNative = useIsNativeApp();
 
   const redirectTo = searchParams.get("redirect");
+  // Exam pages are English-only, so their copy is not in i18n
+  const redirectExamName = examNameForPath(redirectTo);
 
   // Route signed-in users onward. This is what completes the mobile
   // signInWithRedirect flow: the page reloads after the Google round trip
@@ -124,7 +127,7 @@ function LoginPageContent() {
         <CardHeader className="space-y-1">
           <CardTitle className="text-2xl font-bold text-center">{t("login.welcomeBack")}</CardTitle>
           <CardDescription className="text-center">
-            {t("login.logInToContinue")}
+            {redirectExamName ? `Log in to continue the ${redirectExamName}` : t("login.logInToContinue")}
           </CardDescription>
         </CardHeader>
         <CardContent>

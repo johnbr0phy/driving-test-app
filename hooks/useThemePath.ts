@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
+import { getExamByPath } from "@/lib/exams";
+import { getExamV2ByPath } from "@/lib/v2/registry";
 
 const AUTH_PATHS = ["/signup", "/login"];
 
@@ -27,4 +29,11 @@ export function useThemePath(): string | null {
   }, [pathname]);
 
   return redirect ?? pathname;
+}
+
+/** The exam a ?redirect= target belongs to, for auth page copy. */
+export function examNameForPath(path: string | null): string | null {
+  if (!path || !path.startsWith("/") || path.startsWith("//")) return null;
+  const clean = path.split("?")[0];
+  return getExamV2ByPath(clean)?.name ?? getExamByPath(clean)?.name ?? null;
 }

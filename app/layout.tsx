@@ -21,8 +21,13 @@ export const viewport: Viewport = {
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
+// Share images (relative og:image / twitter:image URLs) resolve against the
+// host that actually serves the site. tigertest.io redirects to www, and
+// some card crawlers (X) will not follow a redirect for an image.
+const assetOrigin = siteUrl.replace("://tigertest.io", "://www.tigertest.io");
+
 export const metadata: Metadata = {
-  metadataBase: new URL(siteUrl),
+  metadataBase: new URL(assetOrigin),
   title: {
     default: "Free DMV Practice Test 2026 - All 50 States | TigerTest",
     template: "%s | TigerTest",
@@ -66,8 +71,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/tiger.png",
-        width: 512,
-        height: 512,
+        width: 1024,
+        height: 1024,
         alt: "TigerTest - US Driving Test Practice",
       },
     ],

@@ -1,4 +1,5 @@
 import { auth } from "@/lib/firebase";
+import { isInternalBrowser } from "@/lib/internal";
 
 // ─── Visitor funnel ──────────────────────────────────────────────────────────
 // The account funnel on /admin/v2 starts at "Created an account", so it can't
@@ -70,14 +71,14 @@ function setFlag(step: FunnelStep) {
 
 /** Steps before signup: counted only while nobody is signed in. */
 export function trackFunnelStep(step: Exclude<FunnelStep, "signup">) {
-  if (typeof window === "undefined" || auth.currentUser || hasFlag(step)) return;
+  if (typeof window === "undefined" || auth.currentUser || hasFlag(step) || isInternalBrowser()) return;
   setFlag(step);
   void post(step === "visit" ? { step, source: visitSource() } : { step });
 }
 
 /** A brand-new account. Tags it with whether this browser practiced first. */
 export function trackFunnelSignup() {
-  if (typeof window === "undefined" || hasFlag("signup")) return;
+  if (typeof window === "undefined" || hasFlag("signup") || isInternalBrowser(auth.currentUser?.email)) return;
   setFlag("signup");
   void post({ step: "signup", triedFirst: hasFlag("answered") });
 }

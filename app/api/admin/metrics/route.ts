@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getAdminDb, getAdminAuth } from '@/lib/firebase-admin';
 import { isAdminEmail } from '@/lib/admin';
+import { isInternalEmail } from '@/lib/internal';
+import { getInternalUids } from '@/lib/server/internalUsers';
 import { examAnalyticsLabel } from '@/lib/exams';
 import { EXAMS_V2 } from '@/lib/v2/registry';
 import { TEST_REQUEST_PICKS } from '@/lib/test-requests';
@@ -77,7 +79,7 @@ export async function GET(request: NextRequest) {
     }
 
     const db = getAdminDb();
-    const [usersSnap, paymentsSnap, questionsDoc, testRequestsSnap, studyTimesDoc, funnelDoc, originsSnap] = await Promise.all([
+    const [usersSnapRaw, paymentsSnap, questionsDoc, testRequestsSnap, studyTimesDoc, funnelDoc, originsSnap, internalUids] = await Promise.all([
       db.collection('users')
         .select('selectedState', 'lastUpdated', 'activeDates', 'subscription', 'createdAt', 'paywallHits', '_stats', 'emailVariants', 'emailClicks')
         .get(),
@@ -87,7 +89,13 @@ export async function GET(request: NextRequest) {
       db.doc('globalStats/studyTimes').get(),
       db.doc('analytics/funnel').get(),
       db.collection('signupOrigins').get(),
+      getInternalUids(),
     ]);
+    // Internal accounts (lib/internal) never count: drop their users, payments,
+    // test requests and signup origins before anything is aggregated.
+    const usersSnap = { docs: usersSnapRaw.docs.filter((d) => !internalUids.has(d.id)) };
+    const isInternalPayment = (p: Record<string, unknown>) =>
+      (typeof p.userId === 'string' && internalUids.has(p.userId)) || isInternalEmail(p.email as string | undefined);
 
     // ── "What test should we build next?" answers ───────────────────────────
     // One doc per user per category (lib/test-requests). Counts per category
@@ -95,8 +103,11 @@ export async function GET(request: NextRequest) {
     // exam to build.
     const requestCounts = new Map<string, { clicks: number; withDetails: number }>();
     const requestDetails: { pick: string; details: string; examId: string | null; source: string; at: string }[] = [];
+    let testRequestsTotal = 0;
     testRequestsSnap.forEach((doc) => {
       const d = doc.data();
+      if (typeof d.uid === 'string' && internalUids.has(d.uid)) return;
+      testRequestsTotal += 1;
       const pick = typeof d.pick === 'string' ? d.pick : 'other';
       const entry = requestCounts.get(pick) ?? { clicks: 0, withDetails: 0 };
       entry.clicks += 1;
@@ -116,7 +127,7 @@ export async function GET(request: NextRequest) {
     // Sent = users stamped with a variant at send time. Clicked = clicked any
     // tracked link in that email. Bought = Premium purchased after the send.
     const variantStats = new Map(LAUNCH_VARIANTS.map((v) => [v.id, { sent: 0, clicked: 0, bought: 0 }]));
-    usersSnap.forEach((doc) => {
+    usersSnap.docs.forEach((doc) => {
       const d = doc.data();
       const sent = d.emailVariants?.[LAUNCH_EXPERIMENT];
       const row = sent && variantStats.get(sent.variant);
@@ -134,7 +145,7 @@ export async function GET(request: NextRequest) {
     }));
 
     const testRequests = {
-      total: testRequestsSnap.size,
+      total: testRequestsTotal,
       byPick: TEST_REQUEST_PICKS.map((p) => ({
         id: p.id,
         label: p.label,
@@ -162,7 +173,7 @@ export async function GET(request: NextRequest) {
     let revenueAllTimeCents = 0;
     paymentsSnap.docs.forEach((doc) => {
       const p = doc.data() as Record<string, unknown>;
-      if (p.status !== 'succeeded') return;
+      if (p.status !== 'succeeded' || isInternalPayment(p)) return;
       const amount = typeof p.amount === 'number' ? p.amount : 0;
       const day = typeof p.createdAt === 'string' ? dayKey(p.createdAt) : null;
       if (p.userId) paidUserIds.add(p.userId as string);
@@ -347,7 +358,7 @@ export async function GET(request: NextRequest) {
     // v2BackfilledAt: re-seeds once more now that the backfill counts v2 (SAT, ACT...) history.
     const questionsByExamBackfillPending = !questionsData?.v2BackfilledAt;
 
-    const totalUsers = usersSnap.size;
+    const totalUsers = usersSnap.docs.length;
     const payload = {
       generatedAt: new Date().toISOString(),
       kpis: {
@@ -403,7 +414,7 @@ export async function GET(request: NextRequest) {
         // day's real total (2,886).
         questions: questionsByDay[etToday] || 0,
       },
-      visitorFunnel: buildVisitorFunnel(funnelDoc, originsSnap, premiumIds, accountStages),
+      visitorFunnel: buildVisitorFunnel(funnelDoc, originsSnap, premiumIds, accountStages, internalUids),
       funnel: {
         signups: totalUsers,
         engaged: engagedUsers,
@@ -445,6 +456,7 @@ function buildVisitorFunnel(
   originsSnap: QuerySnapshot,
   premiumIds: Set<string>,
   accountStages: Map<string, { answered: boolean; paywall: boolean }>,
+  internalUids: Set<string>,
 ) {
   const steps = (funnelDoc.exists ? funnelDoc.get('steps') : null) as
     | Record<string, { daily?: Record<string, number> }>
@@ -470,6 +482,7 @@ function buildVisitorFunnel(
     cold: { accounts: 0, purchased: 0 },
   };
   originsSnap.forEach((doc) => {
+    if (internalUids.has(doc.id)) return;
     const origin = doc.get('origin') === 'tried' ? 'tried' : 'cold';
     const purchased = premiumIds.has(doc.id);
     origins[origin].accounts++;

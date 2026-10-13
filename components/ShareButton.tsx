@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Loader2 } from "lucide-react";
 import { useTranslation } from "@/contexts/LanguageContext";
+import { isInternalBrowser } from "@/lib/internal";
 
 interface ShareButtonProps {
   score: number;
@@ -89,7 +90,7 @@ export function ShareButton({
       }
 
       // Track share click (fire and forget)
-      fetch("/api/analytics/share", { method: "POST" }).catch(() => {});
+      if (!isInternalBrowser()) fetch("/api/analytics/share", { method: "POST" }).catch(() => {});
     } catch (err: unknown) {
       if (err instanceof Error && err.name === "AbortError") return;
       setError(t("results.shareError"));

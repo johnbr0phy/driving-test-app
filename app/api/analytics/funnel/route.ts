@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getAdminDb, getAdminAuth } from '@/lib/firebase-admin';
 import { FieldValue } from 'firebase-admin/firestore';
+import { isInternalEmail } from '@/lib/internal';
 
 // Visitor funnel aggregate (see lib/funnel.ts). One counter per step, total
 // and per UTC day; signups are also split by whether the browser practiced
@@ -20,6 +21,21 @@ export async function POST(request: NextRequest) {
     const today = new Date().toISOString().split('T')[0]; // YYYY-MM-DD (UTC)
     const db = getAdminDb();
 
+    // A signup carries the new account's token. Internal accounts (lib/internal) count nowhere.
+    let signupUid: string | null = null;
+    if (step === 'signup') {
+      const authHeader = request.headers.get('authorization');
+      if (authHeader?.startsWith('Bearer ')) {
+        try {
+          const decoded = await getAdminAuth().verifyIdToken(authHeader.split('Bearer ')[1]);
+          if (isInternalEmail(decoded.email)) return NextResponse.json({ ok: true });
+          signupUid = decoded.uid;
+        } catch {
+          // Invalid token: the aggregate still counts, without the per-account stamp.
+        }
+      }
+    }
+
     const bump = { total: FieldValue.increment(1), daily: { [today]: FieldValue.increment(1) } };
     const steps: Record<string, unknown> = { [step]: bump };
     if (step === 'signup') steps[triedFirst ? 'signup_tried' : 'signup_cold'] = bump;
@@ -33,18 +49,14 @@ export async function POST(request: NextRequest) {
     // Record the account's origin so purchases can be split by it. Kept out of
     // users/{uid}: a stub doc written here before the client's first save
     // would be read back as the account's data.
-    if (step === 'signup') {
-      const authHeader = request.headers.get('authorization');
-      if (authHeader?.startsWith('Bearer ')) {
-        try {
-          const { uid } = await getAdminAuth().verifyIdToken(authHeader.split('Bearer ')[1]);
-          await db.doc(`signupOrigins/${uid}`).create({
-            origin: triedFirst ? 'tried' : 'cold',
-            at: new Date().toISOString(),
-          });
-        } catch {
-          // Invalid token, or already recorded: the aggregate still counted.
-        }
+    if (signupUid) {
+      try {
+        await db.doc(`signupOrigins/${signupUid}`).create({
+          origin: triedFirst ? 'tried' : 'cold',
+          at: new Date().toISOString(),
+        });
+      } catch {
+        // Already recorded: the aggregate still counted.
       }
     }
 

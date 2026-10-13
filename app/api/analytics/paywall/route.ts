@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getAdminDb, getAdminAuth } from '@/lib/firebase-admin';
 import { FieldValue } from 'firebase-admin/firestore';
+import { isInternalEmail } from '@/lib/internal';
 
 const KEY_RE = /^[a-zA-Z0-9_]+$/;
 
@@ -18,6 +19,19 @@ export async function POST(request: NextRequest) {
     const key = `${location}:${itemId}`;
     const today = new Date().toISOString().split('T')[0]; // YYYY-MM-DD
     const db = getAdminDb();
+
+    // Signed-in hits carry a token. Internal accounts (lib/internal) record nothing.
+    let uid: string | null = null;
+    const authHeader = request.headers.get('authorization');
+    if (authHeader?.startsWith('Bearer ')) {
+      try {
+        const decoded = await getAdminAuth().verifyIdToken(authHeader.split('Bearer ')[1]);
+        if (isInternalEmail(decoded.email)) return NextResponse.json({ ok: true });
+        uid = decoded.uid;
+      } catch {
+        // Invalid token: aggregate count is still recorded, skip attribution.
+      }
+    }
 
     // Aggregate counters (includes guests). Nested-object merge avoids the
     // dotted-field-path ambiguity in set({ merge: true }).
@@ -40,27 +54,21 @@ export async function POST(request: NextRequest) {
 
     // Per-user attribution (logged-in users only) so the admin dashboard can
     // compute which paywall converts users to premium.
-    const authHeader = request.headers.get('authorization');
-    if (authHeader?.startsWith('Bearer ')) {
-      try {
-        const decoded = await getAdminAuth().verifyIdToken(authHeader.split('Bearer ')[1]);
-        await db.doc(`users/${decoded.uid}`).set(
-          {
-            paywallHits: {
-              [key]: {
-                count: FieldValue.increment(1),
-                lastAt: new Date().toISOString(),
-                label,
-                location,
-                itemId,
-              },
+    if (uid) {
+      await db.doc(`users/${uid}`).set(
+        {
+          paywallHits: {
+            [key]: {
+              count: FieldValue.increment(1),
+              lastAt: new Date().toISOString(),
+              label,
+              location,
+              itemId,
             },
           },
-          { merge: true }
-        );
-      } catch {
-        // Invalid token: aggregate count is still recorded, skip attribution.
-      }
+        },
+        { merge: true }
+      );
     }
 
     return NextResponse.json({ ok: true });

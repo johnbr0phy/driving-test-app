@@ -1,6 +1,7 @@
 import { auth } from "@/lib/firebase";
 import { DMV_ANALYTICS_KEY, type ExamAnalyticsKey } from "@/lib/exams";
 import { trackFunnelStep } from "@/lib/funnel";
+import { isInternalBrowser } from "@/lib/internal";
 
 declare global {
   interface Window {
@@ -46,6 +47,7 @@ export function trackPaywallHit(itemId: string, itemName: string, location = "da
 // Persist the hit to Firestore (via API) so the admin dashboard can report
 // paywall hits and per-paywall conversion. Fire-and-forget; never blocks UI.
 async function recordPaywallHit(itemId: string, itemName: string, location: string) {
+  if (isInternalBrowser(auth.currentUser?.email)) return;
   try {
     const headers: Record<string, string> = { "Content-Type": "application/json" };
     const user = auth.currentUser;
@@ -79,7 +81,7 @@ let answerFlushTimer: ReturnType<typeof setTimeout> | null = null;
 
 // examKey: a v1 analytics key, or a v2 exam id (sat, act...) from useV2Store.
 export function trackQuestionsAnswered(count = 1, examKey: ExamAnalyticsKey | string = DMV_ANALYTICS_KEY) {
-  if (count <= 0) return;
+  if (count <= 0 || isInternalBrowser(auth.currentUser?.email)) return;
   trackFunnelStep("answered");
   pendingByExam[examKey] = (pendingByExam[examKey] || 0) + count;
   if (!answerFlushTimer) {

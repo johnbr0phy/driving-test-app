@@ -20,6 +20,7 @@ import { auth } from "@/lib/firebase";
 import { useStore } from "@/store/useStore";
 import { examIdFromSignupUrl } from "@/lib/email-voice";
 import { AccountConflictDialog } from "@/components/AccountConflictDialog";
+import { isInternalEmail, markInternalBrowser } from "@/lib/internal";
 
 interface AccountConflict {
   user: User;
@@ -120,6 +121,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, async (user) => {
       setUser(user);
+      // An internal login (lib/internal) marks this browser so its counters stay out of /admin.
+      if (isInternalEmail(user?.email)) markInternalBrowser();
       try {
         if (user) {
           // firestoreLoaded is persisted to localStorage, so on a fresh

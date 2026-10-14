@@ -43,10 +43,10 @@ export const ASVAB: ExamV2Config = {
     asvabMechanical: "Mechanical Comprehension",
   },
   drills: [
-    { key: "ar", name: "Arithmetic Reasoning", section: "ar", domains: ["asvabArithmetic"], blurb: "Word problems by hand, every step shown." },
-    { key: "wk", name: "Word Knowledge", section: "wk", domains: ["asvabWordKnowledge"], blurb: "Closest-meaning vocabulary at ASVAB pace." },
-    { key: "pc", name: "Paragraph Comprehension", section: "pc", domains: ["asvabParagraph"], blurb: "Short passages with main idea, detail and inference questions." },
-    { key: "mk", name: "Mathematics Knowledge", section: "mk", domains: ["asvabMathKnowledge"], blurb: "Algebra and geometry without a calculator." },
+    { key: "ar", name: "Arithmetic Reasoning", section: "ar", domains: ["asvabArithmetic"], blurb: "Word problems by hand, every step shown.", basics: ["wordProblems", "fractionOps", "decimals", "percents", "percentChange", "ratios", "rateProblems", "meanMedian", "areaPerimeter"] },
+    { key: "wk", name: "Word Knowledge", section: "wk", domains: ["asvabWordKnowledge"], blurb: "Closest-meaning vocabulary at ASVAB pace.", basics: ["synonyms", "wordParts", "wordsInContext"] },
+    { key: "pc", name: "Paragraph Comprehension", section: "pc", domains: ["asvabParagraph"], blurb: "Short passages with main idea, detail and inference questions.", basics: ["mainIdea", "findingDetail", "inference", "wordsInContext", "authorPurpose", "toneWords", "causeEffect"] },
+    { key: "mk", name: "Mathematics Knowledge", section: "mk", domains: ["asvabMathKnowledge"], blurb: "Algebra and geometry without a calculator.", basics: ["solveX", "inequalities", "distributing", "exponentRules", "squareRoots", "factoring", "areaPerimeter", "circleBasics", "triangleAngles", "pythagorean"] },
     { key: "gs", name: "General Science", section: "gs", domains: ["asvabGeneralScience"], blurb: "Life, earth and physical science basics." },
     { key: "ei", name: "Electronics Information", section: "ei", domains: ["asvabElectronics"], blurb: "Circuits, components and electrical safety." },
     { key: "as", name: "Auto and Shop Information", section: "as", domains: ["asvabAutoShop"], blurb: "Engines, systems, tools and shop practice." },
@@ -74,7 +74,7 @@ export const ASVAB: ExamV2Config = {
   testLength: "2 hr 57 min",
   copy: {
     heroSubs: [
-      "Drill each subtest, then take the full test.",
+      "Learn the basics, then drill each subtest.",
       "Master each drill first.",
       "Halfway there. Try the full test.",
       "Hit your AFQT goal on the full test.",

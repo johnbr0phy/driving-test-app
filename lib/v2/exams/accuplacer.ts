@@ -21,7 +21,7 @@ export const ACCUPLACER: ExamV2Config = {
   breakSeconds: 0,
   sections: [
     { key: "reading", name: "Reading", shortName: "Reading", modules: [{ module: 1, questionCount: 20, timeLimit: 0 }], directions: "Each question comes with its own passage. Information and ideas, rhetoric, synthesis and vocabulary in context. The real test is untimed, and so is this.", scale: acc(20), domains: ["accReading"] },
-    { key: "writing", name: "Writing", shortName: "Writing", modules: [{ module: 1, questionCount: 20, timeLimit: 0 }], directions: "Revise sentences and paragraphs: expression of ideas and standard English conventions. Untimed.", scale: acc(20), domains: ["accWriting"] },
+    { key: "writing", name: "Writing", shortName: "Writing", modules: [{ module: 1, questionCount: 20, timeLimit: 0 }], directions: "Revise sentences and paragraphs: expression of ideas and standard English conventions. Untimed.", scale: acc(20), domains: ["accConventions", "accExpression"] },
     { key: "arithmetic", name: "Arithmetic", shortName: "Arith", modules: [{ module: 1, questionCount: 20, timeLimit: 0 }], directions: "Whole numbers, fractions, decimals, percents and number comparisons. The real test provides a calculator only on specific items, so work by hand. Untimed.", scale: acc(20), domains: ["accArithmetic"] },
     { key: "qas", name: "Quantitative Reasoning, Algebra and Statistics", shortName: "QAS", modules: [{ module: 1, questionCount: 20, timeLimit: 0 }], directions: "Rational numbers, ratios, exponents, linear equations and inequalities, graphs, probability and descriptive statistics. Untimed.", scale: acc(20), domains: ["accQAS"] },
     { key: "aaf", name: "Advanced Algebra and Functions", shortName: "AAF", modules: [{ module: 1, questionCount: 10, timeLimit: 0 }], directions: "Linear, quadratic, exponential and other functions, systems, factoring and geometry concepts. Untimed.", scale: acc(10), domains: ["accAAF"] },
@@ -32,17 +32,23 @@ export const ACCUPLACER: ExamV2Config = {
   ],
   domainLabels: {
     accReading: "Reading",
-    accWriting: "Writing",
+    accConventions: "Standard English Conventions",
+    accExpression: "Expression of Ideas",
     accArithmetic: "Arithmetic",
     accQAS: "Quantitative Reasoning, Algebra and Statistics",
     accAAF: "Advanced Algebra and Functions",
+    // Results saved before Writing was split into two drills.
+    accWriting: "Writing",
   },
+  // Writing is split by its two outline areas so each drill opens with a
+  // short Basics list; legacyKey carries progress from the old Writing drill.
   drills: [
-    { key: "reading", name: "Reading", section: "reading", domains: ["accReading"], blurb: "Passages with main idea, purpose, tone, inference and vocabulary questions." },
-    { key: "writing", name: "Writing", section: "writing", domains: ["accWriting"], blurb: "Fix the bracketed part, pick the best revision, keep the paragraph on topic." },
-    { key: "arithmetic", name: "Arithmetic", section: "arithmetic", domains: ["accArithmetic"], blurb: "Fractions, decimals, percents and estimation by hand." },
-    { key: "qas", name: "Quantitative Reasoning, Algebra and Statistics", section: "qas", domains: ["accQAS"], blurb: "Ratios, linear equations, graphs, probability and statistics." },
-    { key: "aaf", name: "Advanced Algebra and Functions", section: "aaf", domains: ["accAAF"], blurb: "Functions, quadratics, exponentials and systems." },
+    { key: "reading", name: "Reading", section: "reading", domains: ["accReading"], blurb: "Passages with main idea, purpose, tone, inference and vocabulary questions.", basics: ["mainIdea", "findingDetail", "inference", "wordsInContext", "authorPurpose", "toneWords", "textStructure", "crossText"] },
+    { key: "conventions", legacyKey: "writing", name: "Standard English Conventions", section: "writing", domains: ["accConventions"], blurb: "Agreement, tense, pronouns, apostrophes, confused words and sentence boundaries.", basics: ["subjectVerb", "verbTense", "pronounCase", "apostrophes", "itsIts", "commonlyConfused", "commaSplices", "semicolons", "listIntroCommas", "danglingModifiers"] },
+    { key: "expression", legacyKey: "writing", name: "Expression of Ideas", section: "writing", domains: ["accExpression"], blurb: "Transitions, concise wording, tone, and keeping the paragraph on topic.", basics: ["transitions", "concision", "matchingTone", "deletingSentence", "addingSentence", "topicSentences"] },
+    { key: "arithmetic", name: "Arithmetic", section: "arithmetic", domains: ["accArithmetic"], blurb: "Fractions, decimals, percents and estimation by hand.", basics: ["fractionOps", "fractionConvert", "decimals", "percents", "percentChange", "ratios", "orderOfOperations", "rounding", "negativeNumbers", "gcfLcm"] },
+    { key: "qas", name: "Quantitative Reasoning, Algebra and Statistics", section: "qas", domains: ["accQAS"], blurb: "Ratios, linear equations, graphs, probability and statistics.", basics: ["solveX", "inequalities", "distributing", "exponentRules", "scientificNotation", "slope", "meanMedian", "probabilityTable", "areaPerimeter", "pythagorean"] },
+    { key: "aaf", name: "Advanced Algebra and Functions", section: "aaf", domains: ["accAAF"], blurb: "Functions, quadratics, exponentials and systems.", basics: ["factoring", "vertexForm", "functionNotation", "exponentialGrowth", "squareRoots", "sohcahtoa"] },
   ],
   composite: {
     name: "Average section score",
@@ -62,7 +68,7 @@ export const ACCUPLACER: ExamV2Config = {
   testLength: "Untimed, about 2 hours",
   copy: {
     heroSubs: [
-      "Drill each section, then take two practice tests.",
+      "Learn the basics, then drill each section.",
       "Master each drill first.",
       "Halfway there. Try the full test.",
       "Hit your goal on a practice test.",

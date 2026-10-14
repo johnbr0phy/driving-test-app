@@ -434,5 +434,1113 @@
       { "stem": "A box is 5 in by 4 in by 3 in. What is its volume?", "options": ["12 in³", "60 in³", "47 in³"], "answer": 1, "why": "5 × 4 × 3 = 60 cubic inches." },
       { "stem": "A tank holds 3,000 cm³. Using 1 L = 1,000 cm³, how many liters is that?", "options": ["3 L", "30 L", "0.3 L"], "answer": 0, "why": "Liters are bigger, so divide: 3,000 ÷ 1,000 = 3." }
     ]
+  },
+  {
+    "id": "romanNumerals",
+    "name": "Roman numerals",
+    "sub": "Reading and writing MCMXLIV",
+    "rule": "I = 1, V = 5, X = 10, L = 50, C = 100, D = 500, M = 1,000. Add the symbols from left to right. When a smaller one sits just before a bigger one, subtract it instead.",
+    "trick": "Split the numeral into chunks first: thousands, hundreds, tens, ones. Only six pairs subtract: IV 4, IX 9, XL 40, XC 90, CD 400, CM 900.",
+    "examples": [
+      {
+        "kind": "eg",
+        "text": "XIV",
+        "note": "X + IV = 10 + 4 = 14"
+      },
+      {
+        "kind": "eg",
+        "text": "CDLXXXIX",
+        "note": "CD 400 + LXXX 80 + IX 9 = 489"
+      }
+    ],
+    "another": {
+      "text": "Roman numerals are like paying with coins. Count the coins from biggest to smallest. If a small coin is put in front of a bigger one, it's a discount: take it off.",
+      "example": "VI = 5 + 1 = 6\nIV = 5 − 1 = 4\nXI = 11, IX = 9"
+    },
+    "walkthrough": {
+      "board": "MCMXLIV",
+      "kind": "math",
+      "steps": [
+        {
+          "say": "Split it into chunks, biggest first: M | CM | XL | IV."
+        },
+        {
+          "ask": "M = ?",
+          "options": [
+            "1,000",
+            "500",
+            "100"
+          ],
+          "answer": 0,
+          "line": "M = 1,000"
+        },
+        {
+          "ask": "CM is a small C before a bigger M. So it's…",
+          "options": [
+            "1,000 − 100 = 900",
+            "1,000 + 100 = 1,100"
+          ],
+          "answer": 0,
+          "hint": "Small before big means subtract.",
+          "line": "CM = 900"
+        },
+        {
+          "ask": "XL = ?",
+          "options": [
+            "40",
+            "60",
+            "90"
+          ],
+          "answer": 0,
+          "then": "L is 50, and the X in front takes 10 off.",
+          "line": "XL = 40"
+        },
+        {
+          "ask": "IV = ?",
+          "options": [
+            "4",
+            "6"
+          ],
+          "answer": 0,
+          "line": "IV = 4"
+        },
+        {
+          "ask": "Add the chunks: 1,000 + 900 + 40 + 4 = ?",
+          "options": [
+            "1944",
+            "1964",
+            "2144"
+          ],
+          "answer": 0,
+          "line": "MCMXLIV = 1944"
+        },
+        {
+          "ask": "The other way: 489 = 400 + 80 + 9. Which is 400?",
+          "options": [
+            "CD",
+            "CCCC",
+            "DC"
+          ],
+          "answer": 0,
+          "then": "CD is 100 before 500. So 489 = CD + LXXX + IX = CDLXXXIX.",
+          "hint": "Never four of the same symbol in a row.",
+          "line": "489 = CD LXXX IX"
+        }
+      ]
+    },
+    "questions": [
+      {
+        "stem": "What is XLVII?",
+        "options": [
+          "47",
+          "67",
+          "43"
+        ],
+        "answer": 0,
+        "why": "XL = 40 and VII = 7. 40 + 7 = 47."
+      },
+      {
+        "stem": "Which is 94?",
+        "options": [
+          "XCIV",
+          "LXXXXIV",
+          "IVC"
+        ],
+        "answer": 0,
+        "why": "90 is XC and 4 is IV: XCIV."
+      }
+    ]
+  },
+  {
+    "id": "militaryTime",
+    "name": "Military time",
+    "sub": "The 24-hour clock",
+    "rule": "Military time counts the hours from 0000 (midnight) to 2359. Morning hours stay the same. From 1 PM on, add 12 to the hour.",
+    "trick": "PM after noon: add 12 (3:15 PM = 1515). To go back, subtract 12 from anything 1300 or later. Midnight is 0000, noon is 1200. Past 2400, start over at 0000.",
+    "examples": [
+      {
+        "kind": "eg",
+        "text": "9:20 PM",
+        "note": "9 + 12 = 21, so 2120"
+      },
+      {
+        "kind": "eg",
+        "text": "0745",
+        "note": "Under 1200, so 7:45 AM"
+      }
+    ],
+    "another": {
+      "text": "Picture the day as one long line of 24 hours instead of two laps around a 12-hour clock. After lunch you just keep counting: 1 PM is hour 13, 2 PM is hour 14.",
+      "example": "12 noon = 1200\n1 PM = 1300\n6 PM = 1800\n11 PM = 2300"
+    },
+    "walkthrough": {
+      "board": "9:20 PM, then every 6 hours",
+      "kind": "math",
+      "steps": [
+        {
+          "say": "Change to military time first, then add, then wrap past midnight."
+        },
+        {
+          "ask": "9:20 PM in military time?",
+          "options": [
+            "2120",
+            "0920",
+            "2220"
+          ],
+          "answer": 0,
+          "hint": "PM after noon: add 12 to the hour.",
+          "line": "9:20 PM = 2120"
+        },
+        {
+          "ask": "Add 6 hours: 21 + 6 = ?",
+          "options": [
+            "27",
+            "26",
+            "15"
+          ],
+          "answer": 0,
+          "line": "21 + 6 = 27"
+        },
+        {
+          "ask": "There's no hour 27. The clock starts over after 24. 27 − 24 = ?",
+          "options": [
+            "3",
+            "7",
+            "5"
+          ],
+          "answer": 0,
+          "then": "Past midnight, so it's early the next morning.",
+          "line": "27 − 24 = 3"
+        },
+        {
+          "ask": "So the next dose is due at…",
+          "options": [
+            "0320",
+            "1520",
+            "2720"
+          ],
+          "answer": 0,
+          "then": "0320: 3:20 in the morning.",
+          "line": "Next dose: 0320"
+        }
+      ]
+    },
+    "questions": [
+      {
+        "stem": "What is 4:45 PM in military time?",
+        "options": [
+          "0445",
+          "1645",
+          "1445"
+        ],
+        "answer": 1,
+        "why": "PM, so add 12: 4 + 12 = 16. 1645."
+      },
+      {
+        "stem": "What is 1930 in regular time?",
+        "options": [
+          "7:30 PM",
+          "9:30 PM",
+          "7:30 AM"
+        ],
+        "answer": 0,
+        "why": "It's past 1200, so subtract 12: 19 − 12 = 7. 7:30 PM."
+      }
+    ]
+  },
+  {
+    "id": "decimals",
+    "name": "Decimals",
+    "sub": "Lining up, counting places, moving the point",
+    "rule": "To add or subtract, line up the decimal points. To multiply, multiply as if there were no points, then count the decimal places in both numbers and give the answer that many. To divide by a decimal, move the point in both numbers until you're dividing by a whole number.",
+    "trick": "Estimate first. 0.6 × 0.35 is a bit more than half of 0.35, so about 0.2. A misplaced point shows up right away.",
+    "examples": [
+      {
+        "kind": "eg",
+        "text": "0.6 × 0.35",
+        "note": "6 × 35 = 210. Places: 1 + 2 = 3. So 0.210"
+      },
+      {
+        "kind": "eg",
+        "text": "12.5 ÷ 0.5",
+        "note": "Move both one place: 125 ÷ 5 = 25"
+      }
+    ],
+    "another": {
+      "text": "Dividing by 0.5 asks how many halves fit. Moving the point in both numbers is like changing dollars into dimes on both sides: the answer stays the same, but now it's all whole numbers.",
+      "example": "12.5 ÷ 0.5\n= 125 ÷ 5\n= 25"
+    },
+    "walkthrough": {
+      "board": "0.6 × 0.35",
+      "kind": "math",
+      "steps": [
+        {
+          "say": "Ignore the decimal points for now. Multiply the plain numbers."
+        },
+        {
+          "ask": "6 × 35 = ?",
+          "options": [
+            "210",
+            "180",
+            "215"
+          ],
+          "answer": 0,
+          "line": "6 × 35 = 210"
+        },
+        {
+          "ask": "Count the digits after the points: 0.6 has 1, 0.35 has 2. Total?",
+          "options": [
+            "3",
+            "2",
+            "1"
+          ],
+          "answer": 0,
+          "line": "1 + 2 = 3 places"
+        },
+        {
+          "ask": "Give 210 three decimal places:",
+          "options": [
+            "0.210",
+            "2.10",
+            "21.0"
+          ],
+          "answer": 0,
+          "then": "0.210 is the same as 0.21. A bit more than half of 0.35, so it checks out.",
+          "line": "0.6 × 0.35 = 0.21"
+        },
+        {
+          "ask": "Dividing: 12.6 ÷ 0.35. Move both points 2 places right to get…",
+          "options": [
+            "1260 ÷ 35",
+            "126 ÷ 35",
+            "1260 ÷ 3.5"
+          ],
+          "answer": 0,
+          "then": "Moving both by the same amount keeps the answer the same.",
+          "hint": "Move until the number you divide by is whole: 0.35 becomes 35.",
+          "line": "12.6 ÷ 0.35 = 1260 ÷ 35"
+        },
+        {
+          "ask": "1260 ÷ 35 = ?",
+          "options": [
+            "36",
+            "3.6",
+            "360"
+          ],
+          "answer": 0,
+          "line": "= 36"
+        }
+      ]
+    },
+    "questions": [
+      {
+        "stem": "4.07 + 12.8 = ?",
+        "options": [
+          "16.87",
+          "5.288",
+          "16.15"
+        ],
+        "answer": 0,
+        "why": "Line up the points: 4.07 + 12.80 = 16.87."
+      },
+      {
+        "stem": "0.4 × 0.2 = ?",
+        "options": [
+          "0.8",
+          "0.08",
+          "8"
+        ],
+        "answer": 1,
+        "why": "4 × 2 = 8, and there are 2 decimal places in all, so 0.08."
+      }
+    ]
+  },
+  {
+    "id": "rounding",
+    "name": "Rounding and estimating",
+    "sub": "Look one place to the right",
+    "rule": "To round, find the place you're rounding to and look at the digit just to its right. 5 or more rounds up; 4 or less leaves it alone. Everything after it becomes zero, or drops off after the decimal point.",
+    "trick": "Underline the place, then look at its right-hand neighbor. To estimate, round each number first, then do the easy math.",
+    "examples": [
+      {
+        "kind": "eg",
+        "text": "3.4762 to the nearest hundredth",
+        "note": "Hundredths digit 7, neighbor 6: round up to 3.48"
+      },
+      {
+        "kind": "eg",
+        "text": "398 × 51",
+        "note": "About 400 × 50 = 20,000"
+      }
+    ],
+    "another": {
+      "text": "Rounding asks which friend's house you're closer to. 47 is between 40 and 50, and it's closer to 50. A 5 sits exactly in the middle, and the rule says go up.",
+      "example": "43 → 40 (closer to 40)\n47 → 50 (closer to 50)\n45 → 50 (middle goes up)"
+    },
+    "walkthrough": {
+      "board": "46,871 to the nearest thousand",
+      "kind": "math",
+      "steps": [
+        {
+          "ask": "Which digit is in the thousands place?",
+          "options": [
+            "6",
+            "4",
+            "8"
+          ],
+          "answer": 0,
+          "hint": "Count from the right: ones, tens, hundreds, thousands.",
+          "line": "46,871: thousands digit is 6"
+        },
+        {
+          "ask": "Look one place to the right. The neighbor is…",
+          "options": [
+            "8",
+            "7",
+            "4"
+          ],
+          "answer": 0,
+          "line": "Neighbor: 8"
+        },
+        {
+          "ask": "8 is 5 or more, so the 6…",
+          "options": [
+            "goes up to 7",
+            "stays 6"
+          ],
+          "answer": 0,
+          "line": "6 → 7"
+        },
+        {
+          "ask": "Everything after it becomes zero. Answer?",
+          "options": [
+            "47,000",
+            "46,000",
+            "47,871"
+          ],
+          "answer": 0,
+          "line": "46,871 ≈ 47,000"
+        },
+        {
+          "ask": "Estimate 398 × 51 by rounding each number first:",
+          "options": [
+            "400 × 50 = 20,000",
+            "300 × 50 = 15,000",
+            "400 × 51 = 20,400"
+          ],
+          "answer": 0,
+          "hint": "Round to numbers that are easy to multiply.",
+          "line": "398 × 51 ≈ 20,000"
+        }
+      ]
+    },
+    "questions": [
+      {
+        "stem": "Round 2.746 to the nearest tenth.",
+        "options": [
+          "2.7",
+          "2.8",
+          "2.75"
+        ],
+        "answer": 0,
+        "why": "Tenths digit 7, neighbor 4. 4 or less stays, so 2.7."
+      },
+      {
+        "stem": "Round 1,250 to the nearest hundred.",
+        "options": [
+          "1,200",
+          "1,300",
+          "1,000"
+        ],
+        "answer": 1,
+        "why": "Hundreds digit 2, neighbor 5. 5 rounds up: 1,300."
+      }
+    ]
+  },
+  {
+    "id": "negativeNumbers",
+    "name": "Negative numbers",
+    "sub": "Adding, subtracting and the double minus",
+    "rule": "Subtracting a negative is the same as adding: 5 − (−3) = 5 + 3. Adding a negative is the same as subtracting. When you multiply or divide, two negatives make a positive and one negative makes a negative.",
+    "trick": "Turn every \"minus a negative\" into a plus before you do anything else. A drop from 14 degrees to −9 degrees is 14 − (−9) = 23.",
+    "examples": [
+      {
+        "kind": "eg",
+        "text": "−7 + 12 − (−4)",
+        "note": "−7 + 12 + 4 = 9"
+      },
+      {
+        "kind": "eg",
+        "text": "(−3) × (−4)",
+        "note": "Two negatives make a positive: 12"
+      }
+    ],
+    "another": {
+      "text": "Think of a thermometer. Going up is adding, going down is subtracting. Taking away cold (subtracting a negative) makes it warmer.",
+      "example": "From 14° down to −9°:\n14 down to 0 is 14\n0 down to −9 is 9\nTotal drop: 23°"
+    },
+    "walkthrough": {
+      "board": "−7 + 12 − (−4)",
+      "kind": "math",
+      "steps": [
+        {
+          "say": "Two signs side by side. Fix them first."
+        },
+        {
+          "ask": "− (−4) is the same as…",
+          "options": [
+            "+ 4",
+            "− 4"
+          ],
+          "answer": 0,
+          "then": "Minus a negative is a plus.",
+          "line": "−7 + 12 + 4"
+        },
+        {
+          "ask": "Start at −7 and go up 12. Where are you?",
+          "options": [
+            "5",
+            "−19",
+            "19"
+          ],
+          "answer": 0,
+          "hint": "From −7, going up 7 gets you to 0. Then 5 more.",
+          "line": "−7 + 12 = 5"
+        },
+        {
+          "ask": "5 + 4 = ?",
+          "options": [
+            "9",
+            "1"
+          ],
+          "answer": 0,
+          "line": "= 9"
+        },
+        {
+          "ask": "Noon was 14°, midnight was −9°. How far did it fall? 14 − (−9) = ?",
+          "options": [
+            "23",
+            "5",
+            "−23"
+          ],
+          "answer": 0,
+          "then": "14 down to 0, then 9 more below zero: 23 degrees.",
+          "line": "14 − (−9) = 23"
+        }
+      ]
+    },
+    "questions": [
+      {
+        "stem": "−5 − (−8) = ?",
+        "options": [
+          "3",
+          "−13",
+          "13"
+        ],
+        "answer": 0,
+        "why": "Minus a negative is a plus: −5 + 8 = 3."
+      },
+      {
+        "stem": "(−6) × 3 = ?",
+        "options": [
+          "18",
+          "−18",
+          "−3"
+        ],
+        "answer": 1,
+        "why": "One negative sign, so the answer is negative: −18."
+      }
+    ]
+  },
+  {
+    "id": "gcfLcm",
+    "name": "GCF and LCM",
+    "sub": "Biggest shared factor, smallest shared multiple",
+    "rule": "The greatest common factor (GCF) is the biggest number that divides evenly into both numbers. The least common multiple (LCM) is the smallest number both numbers divide into.",
+    "trick": "LCM: count by the bigger number until the smaller one divides in. GCF: list the factors of the smaller number from the top down and take the first one that also divides the bigger number.",
+    "examples": [
+      {
+        "kind": "eg",
+        "text": "LCM of 6 and 8",
+        "note": "Count by 8: 8, 16, 24. 6 goes into 24."
+      },
+      {
+        "kind": "eg",
+        "text": "GCF of 36 and 48",
+        "note": "36's factors from the top: 36, 18, 12. 12 goes into 48."
+      }
+    ],
+    "another": {
+      "text": "LCM is two friends hopping along a number line, one by 6s and one by 8s. The first spot they both land on is the LCM. GCF is the biggest box size that packs both piles with nothing left over.",
+      "example": "6s: 6, 12, 18, 24\n8s: 8, 16, 24\nBoth land on 24."
+    },
+    "walkthrough": {
+      "board": "LCM of 6 and 8",
+      "kind": "math",
+      "steps": [
+        {
+          "say": "Least common multiple: the smallest number that both 6 and 8 go into."
+        },
+        {
+          "ask": "Count by the bigger number, 8. What comes after 8 and 16?",
+          "options": [
+            "24",
+            "20",
+            "32"
+          ],
+          "answer": 0,
+          "line": "8, 16, 24"
+        },
+        {
+          "ask": "Does 6 go into 16?",
+          "options": [
+            "No",
+            "Yes"
+          ],
+          "answer": 0,
+          "hint": "Count by 6: 6, 12, 18. It skips 16.",
+          "line": "16: no"
+        },
+        {
+          "ask": "Does 6 go into 24?",
+          "options": [
+            "Yes, 4 times",
+            "No"
+          ],
+          "answer": 0,
+          "line": "LCM = 24"
+        },
+        {
+          "ask": "Now the GCF of 36 and 48. Factors of 36 from the top: 36, 18, 12. Which is the first to go into 48?",
+          "options": [
+            "12",
+            "18",
+            "36"
+          ],
+          "answer": 0,
+          "then": "48 ÷ 12 = 4. So 12 is the greatest common factor.",
+          "hint": "48 ÷ 18 isn't a whole number. Try the next one.",
+          "line": "GCF of 36 and 48 = 12"
+        }
+      ]
+    },
+    "questions": [
+      {
+        "stem": "What is the LCM of 4 and 10?",
+        "options": [
+          "20",
+          "40",
+          "2"
+        ],
+        "answer": 0,
+        "why": "Count by 10: 10, 20. 4 goes into 20."
+      },
+      {
+        "stem": "What is the GCF of 18 and 24?",
+        "options": [
+          "6",
+          "3",
+          "72"
+        ],
+        "answer": 0,
+        "why": "Factors of 18 from the top: 18, 9, 6. 6 goes into 24."
+      }
+    ]
+  },
+  {
+    "id": "distributing",
+    "name": "Distributing and like terms",
+    "sub": "Multiply into the parentheses, then combine",
+    "rule": "A number in front of parentheses multiplies every term inside: 4(2x − 3) = 8x − 12. Then combine like terms: x terms with x terms, plain numbers with plain numbers.",
+    "trick": "A minus in front of the parentheses flips every sign inside: −3(x − 5) = −3x + 15. Two parentheses multiply every term by every term.",
+    "examples": [
+      {
+        "kind": "eg",
+        "text": "4(2x − 3)",
+        "note": "8x − 12"
+      },
+      {
+        "kind": "eg",
+        "text": "(x + 3)²",
+        "note": "(x + 3)(x + 3) = x² + 3x + 3x + 9 = x² + 6x + 9"
+      }
+    ],
+    "another": {
+      "text": "The number outside is a mail carrier who has to stop at every house inside the parentheses. Skip one and the answer is wrong. Then sort the mail: x's in one pile, plain numbers in another.",
+      "example": "3(x + 2)\n= 3·x + 3·2\n= 3x + 6"
+    },
+    "walkthrough": {
+      "board": "4(2x − 3) − 3(x − 5)",
+      "kind": "math",
+      "steps": [
+        {
+          "ask": "4 times each term: 4(2x − 3) = ?",
+          "options": [
+            "8x − 12",
+            "8x − 3",
+            "6x − 7"
+          ],
+          "answer": 0,
+          "hint": "Both terms get multiplied by 4.",
+          "line": "4(2x − 3) = 8x − 12"
+        },
+        {
+          "ask": "Now −3(x − 5). What is −3 × −5?",
+          "options": [
+            "+15",
+            "−15"
+          ],
+          "answer": 0,
+          "then": "The minus out front flips the sign inside: −3x + 15.",
+          "line": "−3(x − 5) = −3x + 15"
+        },
+        {
+          "ask": "Combine the x terms: 8x − 3x = ?",
+          "options": [
+            "5x",
+            "11x",
+            "−5x"
+          ],
+          "answer": 0,
+          "line": "8x − 3x = 5x"
+        },
+        {
+          "ask": "Combine the plain numbers: −12 + 15 = ?",
+          "options": [
+            "3",
+            "−27",
+            "27"
+          ],
+          "answer": 0,
+          "line": "−12 + 15 = 3"
+        },
+        {
+          "ask": "So the whole thing is…",
+          "options": [
+            "5x + 3",
+            "5x − 27",
+            "11x + 3"
+          ],
+          "answer": 0,
+          "line": "= 5x + 3"
+        }
+      ]
+    },
+    "questions": [
+      {
+        "stem": "Simplify 2(x + 5).",
+        "options": [
+          "2x + 5",
+          "2x + 10",
+          "x + 10"
+        ],
+        "answer": 1,
+        "why": "The 2 multiplies both terms: 2x + 10."
+      },
+      {
+        "stem": "Simplify 5x − 2(x − 1).",
+        "options": [
+          "3x + 2",
+          "3x − 2",
+          "7x − 2"
+        ],
+        "answer": 0,
+        "why": "−2 × −1 = +2, so 5x − 2x + 2 = 3x + 2."
+      }
+    ]
+  },
+  {
+    "id": "substitution",
+    "name": "Plugging in values",
+    "sub": "Swap each letter for its number",
+    "rule": "To evaluate a formula, replace every letter with its number in parentheses, then follow the order of operations.",
+    "trick": "Always plug in with parentheses, especially negatives: if b = −2, then b² is (−2)² = 4, not −4.",
+    "examples": [
+      {
+        "kind": "eg",
+        "text": "2a² − 3ab + b, a = 3, b = −2",
+        "note": "2(9) − 3(3)(−2) + (−2) = 18 + 18 − 2 = 34"
+      },
+      {
+        "kind": "eg",
+        "text": "C = (F − 32) × 5/9, F = 102.2",
+        "note": "70.2 × 5/9 = 39"
+      }
+    ],
+    "another": {
+      "text": "A formula is a recipe with blank spots. The letters are the blanks. You're told what goes in each blank, then you cook it in the right order.",
+      "example": "y = 3x − 4, x = 5\ny = 3(5) − 4\ny = 15 − 4 = 11"
+    },
+    "walkthrough": {
+      "board": "C = (F − 32) × 5/9, F = 102.2",
+      "kind": "math",
+      "steps": [
+        {
+          "ask": "Put 102.2 in for F:",
+          "options": [
+            "(102.2 − 32) × 5/9",
+            "102.2 − 32 × 5/9"
+          ],
+          "answer": 0,
+          "hint": "Keep the parentheses from the formula.",
+          "line": "C = (102.2 − 32) × 5/9"
+        },
+        {
+          "ask": "Parentheses first: 102.2 − 32 = ?",
+          "options": [
+            "70.2",
+            "134.2",
+            "70.8"
+          ],
+          "answer": 0,
+          "line": "= 70.2 × 5/9"
+        },
+        {
+          "ask": "70.2 × 5 = 351. Then 351 ÷ 9 = ?",
+          "options": [
+            "39",
+            "35.1",
+            "40"
+          ],
+          "answer": 0,
+          "line": "= 351 ÷ 9 = 39"
+        },
+        {
+          "ask": "One more: if b = −2, what is b²?",
+          "options": [
+            "4",
+            "−4"
+          ],
+          "answer": 0,
+          "then": "(−2) × (−2) = 4. The parentheses keep the minus inside.",
+          "line": "(−2)² = 4"
+        }
+      ]
+    },
+    "questions": [
+      {
+        "stem": "If x = 4, what is 3x²?",
+        "options": [
+          "48",
+          "144",
+          "24"
+        ],
+        "answer": 0,
+        "why": "Exponent first: 4² = 16, then 3 × 16 = 48."
+      },
+      {
+        "stem": "If a = −3, what is a² + 1?",
+        "options": [
+          "10",
+          "−8",
+          "7"
+        ],
+        "answer": 0,
+        "why": "(−3)² = 9, and 9 + 1 = 10."
+      }
+    ]
+  },
+  {
+    "id": "squareRoots",
+    "name": "Square roots",
+    "sub": "Perfect squares and simplifying √",
+    "rule": "The square root of a number is what you multiply by itself to get it: √49 = 7 because 7 × 7 = 49. To simplify a root, pull out the biggest perfect square inside it: √72 = √36 × √2 = 6√2.",
+    "trick": "Know the perfect squares by heart: 1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144. If x² = 81, x can be 9 or −9.",
+    "examples": [
+      {
+        "kind": "eg",
+        "text": "√144",
+        "note": "12, because 12 × 12 = 144"
+      },
+      {
+        "kind": "eg",
+        "text": "√50",
+        "note": "Between √49 = 7 and √64 = 8"
+      }
+    ],
+    "another": {
+      "text": "A square root asks: how long is each side of a square with this many tiles inside? A square made of 49 tiles is 7 tiles on each side.",
+      "example": "49 tiles → 7 by 7\n√49 = 7"
+    },
+    "walkthrough": {
+      "board": "√72",
+      "kind": "math",
+      "steps": [
+        {
+          "say": "Look for the biggest perfect square that goes into 72."
+        },
+        {
+          "ask": "Which perfect square goes into 72?",
+          "options": [
+            "36",
+            "25",
+            "49"
+          ],
+          "answer": 0,
+          "then": "72 = 36 × 2.",
+          "hint": "72 ÷ 25 and 72 ÷ 49 aren't whole numbers.",
+          "line": "√72 = √36 × √2"
+        },
+        {
+          "ask": "√36 = ?",
+          "options": [
+            "6",
+            "18"
+          ],
+          "answer": 0,
+          "line": "= 6√2"
+        },
+        {
+          "ask": "√50 is between which two whole numbers?",
+          "options": [
+            "7 and 8",
+            "6 and 7",
+            "24 and 25"
+          ],
+          "answer": 0,
+          "hint": "49 and 64 are the perfect squares on either side of 50.",
+          "line": "√49 < √50 < √64, so 7 to 8"
+        },
+        {
+          "ask": "If x² = 81, x can be…",
+          "options": [
+            "9 or −9",
+            "only 9",
+            "40.5"
+          ],
+          "answer": 0,
+          "then": "(−9) × (−9) is also 81.",
+          "line": "x = 9 or x = −9"
+        }
+      ]
+    },
+    "questions": [
+      {
+        "stem": "√121 = ?",
+        "options": [
+          "11",
+          "60.5",
+          "12"
+        ],
+        "answer": 0,
+        "why": "11 × 11 = 121."
+      },
+      {
+        "stem": "Simplify √18.",
+        "options": [
+          "3√2",
+          "9√2",
+          "2√3"
+        ],
+        "answer": 0,
+        "why": "18 = 9 × 2 and √9 = 3, so 3√2."
+      }
+    ]
+  },
+  {
+    "id": "rateProblems",
+    "name": "Rate, time and distance",
+    "sub": "Distance = rate × time",
+    "rule": "Distance = rate × time. Cover the one you need: rate = distance ÷ time, time = distance ÷ rate. The same idea works for any rate: gallons per minute, miles per gallon, dollars per hour.",
+    "trick": "Make the time units match first: 2 hours 45 minutes is 2.75 hours. Two things moving toward each other: add their speeds.",
+    "examples": [
+      {
+        "kind": "eg",
+        "text": "1,320 miles in 2 h 45 min",
+        "note": "1,320 ÷ 2.75 = 480 mph"
+      },
+      {
+        "kind": "eg",
+        "text": "300 miles apart, 55 and 65 mph toward each other",
+        "note": "300 ÷ 120 = 2.5 hours"
+      }
+    ],
+    "another": {
+      "text": "Speed is how many miles fit into one hour. If you go 60 miles every hour for 3 hours, that's 60 + 60 + 60 = 180 miles. Every rate problem is that same picture.",
+      "example": "60 mph × 3 h = 180 miles\n180 ÷ 3 = 60 mph\n180 ÷ 60 = 3 h"
+    },
+    "walkthrough": {
+      "board": "A plane flies 1,320 miles in 2 hours 45 minutes. What is its average speed?",
+      "kind": "text",
+      "steps": [
+        {
+          "ask": "We want miles per hour. Which formula?",
+          "options": [
+            "rate = distance ÷ time",
+            "rate = distance × time"
+          ],
+          "answer": 0,
+          "line": "rate = distance ÷ time"
+        },
+        {
+          "ask": "45 minutes is what part of an hour?",
+          "options": [
+            "0.75",
+            "0.45",
+            "0.25"
+          ],
+          "answer": 0,
+          "hint": "45 out of 60 minutes.",
+          "line": "2 h 45 min = 2.75 h"
+        },
+        {
+          "ask": "1,320 ÷ 2.75 = ?",
+          "options": [
+            "480",
+            "528",
+            "440"
+          ],
+          "answer": 0,
+          "then": "Check: 480 × 2.75 = 1,320.",
+          "line": "1,320 ÷ 2.75 = 480 mph"
+        },
+        {
+          "ask": "Two cars 300 miles apart drive toward each other at 55 and 65 mph. How fast does the gap close?",
+          "options": [
+            "120 mph",
+            "10 mph",
+            "65 mph"
+          ],
+          "answer": 0,
+          "hint": "Both cars are eating up the same gap.",
+          "line": "55 + 65 = 120 mph"
+        },
+        {
+          "ask": "Time to meet: 300 ÷ 120 = ?",
+          "options": [
+            "2.5 hours",
+            "2 hours",
+            "3 hours"
+          ],
+          "answer": 0,
+          "line": "300 ÷ 120 = 2.5 h"
+        }
+      ]
+    },
+    "questions": [
+      {
+        "stem": "A pump moves 15 gallons per minute. How long does it take to empty 900 gallons?",
+        "options": [
+          "60 minutes",
+          "13,500 minutes",
+          "45 minutes"
+        ],
+        "answer": 0,
+        "why": "time = amount ÷ rate = 900 ÷ 15 = 60."
+      },
+      {
+        "stem": "A car goes 150 miles in 2.5 hours. What is its speed?",
+        "options": [
+          "60 mph",
+          "375 mph",
+          "50 mph"
+        ],
+        "answer": 0,
+        "why": "rate = distance ÷ time = 150 ÷ 2.5 = 60."
+      }
+    ]
+  },
+  {
+    "id": "wordProblems",
+    "name": "Setting up word problems",
+    "sub": "Find the question, then the numbers",
+    "rule": "Read the last sentence first: it tells you what to find. Then list the numbers you're given and decide what to do with each. Work one step at a time and check that the answer makes sense.",
+    "trick": "Watch for two-step traps: \"how many remain,\" \"how much change,\" \"how many girls\" when you were given boys. The first number you get is often a wrong answer choice.",
+    "examples": [
+      {
+        "kind": "eg",
+        "text": "30 students, 40% boys. How many girls?",
+        "note": "40% of 30 = 12 boys. 30 − 12 = 18 girls."
+      },
+      {
+        "kind": "eg",
+        "text": "3 notebooks at $2.25, paid with $10",
+        "note": "3 × 2.25 = 6.75. 10 − 6.75 = $3.25 change."
+      }
+    ],
+    "another": {
+      "text": "A word problem is a story with a question hidden at the end. Find the question first, like reading the last page of a mystery, so you know which clues matter.",
+      "example": "Story: 8 boxes of 24 meals, 150 eaten.\nQuestion: how many are left?\nClues: 8 × 24 = 192, then 192 − 150 = 42."
+    },
+    "walkthrough": {
+      "board": "A class has 30 students, and 40 percent of them are boys. How many girls are in the class?",
+      "kind": "text",
+      "steps": [
+        {
+          "ask": "What does the question ask for?",
+          "options": [
+            "The number of girls",
+            "The number of boys",
+            "The percent of girls"
+          ],
+          "answer": 0,
+          "then": "Boys are given, girls are asked. That makes it two steps.",
+          "line": "Find: girls"
+        },
+        {
+          "ask": "Step 1: how many boys? 40% of 30 = ?",
+          "options": [
+            "12",
+            "18",
+            "70"
+          ],
+          "answer": 0,
+          "hint": "0.40 × 30.",
+          "line": "Boys: 0.40 × 30 = 12"
+        },
+        {
+          "ask": "12 is one of the answer choices. Is it the answer?",
+          "options": [
+            "No, that's the boys",
+            "Yes"
+          ],
+          "answer": 0,
+          "then": "That's the trap: the first number you find is usually on the list.",
+          "line": "12 = boys, not the answer"
+        },
+        {
+          "ask": "Step 2: girls = ?",
+          "options": [
+            "30 − 12 = 18",
+            "30 + 12 = 42",
+            "12 ÷ 30"
+          ],
+          "answer": 0,
+          "line": "Girls: 30 − 12 = 18"
+        },
+        {
+          "ask": "Check: does 18 make sense?",
+          "options": [
+            "Yes, 60% of 30 is 18",
+            "No"
+          ],
+          "answer": 0,
+          "then": "If 40% are boys, 60% are girls, and 60% of 30 is 18.",
+          "line": "Check: 0.60 × 30 = 18 ✓"
+        }
+      ]
+    },
+    "questions": [
+      {
+        "stem": "A unit has 8 cases of 24 meals. After 150 meals are eaten, how many remain?",
+        "options": [
+          "42",
+          "192",
+          "150"
+        ],
+        "answer": 0,
+        "why": "8 × 24 = 192 meals, then 192 − 150 = 42. 192 is the first-step trap."
+      },
+      {
+        "stem": "Pens cost 3 for $2. How much do 15 pens cost?",
+        "options": [
+          "$10",
+          "$30",
+          "$6"
+        ],
+        "answer": 0,
+        "why": "15 pens is 5 groups of 3, and 5 × $2 = $10."
+      }
+    ]
   }
 ]

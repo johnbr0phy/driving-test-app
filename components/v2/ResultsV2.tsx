@@ -55,7 +55,7 @@ export function ResultsV2({ exam, testNumber }: { exam: ExamV2Config; testNumber
         <Image src={getTigerAsset(exam.id, result.composite >= goal ? 2 : 4)} alt="" width={80} height={80} className="h-20 w-20 shrink-0 object-contain" />
         <div>
           <div className="text-5xl font-black tabular-nums md:text-6xl">{result.composite}</div>
-          <div className="text-sm text-gray-600 dark:text-gray-300">{exam.composite.name} estimate · goal {goal}</div>
+          <div className="text-sm text-gray-600 dark:text-gray-300">{exam.copy.scoreLabel ?? `${exam.composite.name} estimate`} · goal {goal}</div>
         </div>
         {delta !== null && (
           <div className={`rounded-full px-3 py-1 text-sm font-bold ${delta >= 0 ? "bg-green-50 dark:bg-green-950 text-green-700 dark:text-green-300" : "bg-red-50 dark:bg-red-950 text-red-700 dark:text-red-300"}`}>

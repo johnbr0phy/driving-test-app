@@ -8,8 +8,9 @@ import { percentScale, overallPercent } from "../scales";
 // Management of Care 15-21%, Safety and Infection Prevention and Control
 // 10-16%, Health Promotion 6-12%, Psychosocial 6-12%, Basic Care 6-12%,
 // Pharmacological 13-19%, Reduction of Risk 9-15%, Physiological Adaptation
-// 11-17%. About a quarter of items are select all that apply. Bowtie,
-// matrix and drag-and-drop NGN formats are not modelled.
+// 11-17%. Includes select all that apply, matrix, bowtie and other NGN-style
+// items. Fixed practice items use all-or-nothing scoring, not adaptive
+// ability estimation or partial credit. Scores do not predict NCLEX results.
 const minutes = (n: number) => n * 60;
 
 const DOMAINS = ["nclexCare", "nclexSafety", "nclexHealth", "nclexPsych", "nclexComfort", "nclexPharm", "nclexRisk", "nclexPhys"];
@@ -61,27 +62,30 @@ export const NCLEX: ExamV2Config = {
     { key: "risk", name: "Reduction of Risk Potential", section: "nclex", domains: ["nclexRisk"], blurb: "Labs to report, procedure prep and post-op complications." },
     { key: "phys", name: "Physiological Adaptation", section: "nclex", domains: ["nclexPhys"], blurb: "Shock, sepsis, DKA, heart failure, ABGs and emergencies." },
   ],
-  composite: { name: "Percent correct", min: 0, max: 100, combine: overallPercent },
+  composite: { name: "Practice percent correct", min: 0, max: 100, combine: overallPercent },
   defaultGoal: 70,
   goalChoices: [60, 65, 70, 75, 80, 85],
   goalNotes: {
-    60: "Borderline: keep drilling",
-    65: "Close to the passing line",
-    70: "Comfortably passing on practice items",
-    75: "Strong: ready to schedule",
-    80: "Very strong",
-    85: "Top band",
+    60: "60% practice score target",
+    65: "65% practice score target",
+    70: "70% practice score target",
+    75: "75% practice score target",
+    80: "80% practice score target",
+    85: "85% practice score target",
   },
   testLength: "2 hr 50 min",
   copy: {
+    completedTitle: "Practice steps complete",
+    progressNote: "Your goal tracks practice progress only. Practice percentages do not predict your NCLEX result or tell you when to schedule the exam.",
+    scoreLabel: "Practice percent correct",
     heroSubs: [
       "Drill each Client Needs area, then take a full test.",
       "Master each drill first.",
       "Halfway there. Try Practice Test 1.",
       "Hit your goal on both practice tests.",
-      "Goal hit. Schedule your NCLEX.",
+      "Practice goal hit. Review your missed questions and rationales.",
     ],
     sourceLine: "Based on the NCSBN 2026 NCLEX-RN Test Plan Client Needs categories. Original questions, not affiliated with NCSBN.",
-    scoreNote: "Percent correct on 85 practice items. The real NCLEX is pass or fail against an ability standard, not a percent; 70 percent here is a solid sign.",
+    scoreNote: "Percent correct on these 85 practice items, scored all or nothing per item. Practice percentages do not predict your NCLEX result or tell you when to schedule the exam. The real NCLEX is adaptive and reports pass or fail against an ability standard, not a percentage.",
   },
 };

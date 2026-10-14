@@ -154,11 +154,13 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
   if (screen === "learn" || screen === "review") {
     const review = screen === "review";
     const doneLabel = review ? "Got it, keep going" : `Got it, try ${total} questions`;
+    // X leaves the skill for the drill's Basics list, like the text card's X; "Read it" is the way to the card.
+    const exitToOverview = () => router.push(overviewHref);
     if (walkable && !readMode) {
-      return <BasicsWalkthrough exam={exam} skill={skill} doneLabel={doneLabel} onDone={start} onClose={() => setReadMode(true)} onRead={() => setReadMode(true)} />;
+      return <BasicsWalkthrough exam={exam} skill={skill} doneLabel={doneLabel} onDone={start} onClose={exitToOverview} onRead={() => setReadMode(true)} />;
     }
     if (explainable && !readMode) {
-      return <BasicsExplainer exam={exam} skill={skill} doneLabel={doneLabel} onDone={start} onClose={() => setReadMode(true)} onRead={() => setReadMode(true)} />;
+      return <BasicsExplainer exam={exam} skill={skill} doneLabel={doneLabel} onDone={start} onClose={exitToOverview} onRead={() => setReadMode(true)} />;
     }
     return (
       <div className="v2-focus">

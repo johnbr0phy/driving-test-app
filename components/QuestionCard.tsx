@@ -67,17 +67,17 @@ export function QuestionCard({
             return (
               <button
                 key={option.value}
-              type="button"
-              aria-pressed={selectedAnswer === option.value}
-              aria-disabled={showResult || selectedAnswer !== undefined}
+                type="button"
+                aria-pressed={selectedAnswer === option.value}
+                aria-disabled={showResult || selectedAnswer !== undefined}
                 onClick={() => !showResult && selectedAnswer === undefined && onAnswerChange(option.value)}
                 className={`w-full text-left border-2 rounded-lg p-4 transition-all ${getOptionClasses(option.value)}`}
               >
                 <div className="flex items-center justify-between gap-2">
                   <span className="font-bold text-lg w-6 shrink-0">{option.value})</span>
                   <span className="flex-1">{option.label}</span>
-                {showResult && option.value === question.correctAnswer && <span className="sr-only">{t("trainingCard.correct")}</span>}
-                {showResult && option.value === selectedAnswer && !isCorrect && <span className="sr-only">{t("trainingCard.incorrect")}</span>}
+                  {showResult && option.value === question.correctAnswer && <span className="sr-only">{t("trainingCard.correct")}</span>}
+                  {showResult && option.value === selectedAnswer && !isCorrect && <span className="sr-only">{t("trainingCard.incorrect")}</span>}
                   {showResult && isThisCorrect && (
                     <CheckCircle2 className="h-6 w-6 text-green-600 dark:text-green-400" />
                   )}

@@ -224,7 +224,7 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
               )}
               {linear && <span className="rounded-full bg-amber-50 dark:bg-amber-950 px-3 py-1 font-semibold text-amber-800 dark:text-amber-300">No going back</span>}
             </div>
-            {session.stage === 0 && !stage.runningSince && stage.current === 0 && Object.keys(stage.answers).length === 0 && (
+            {stagesOf(exam).some(({ module }) => module.timeLimit > 0) && session.stage === 0 && stage.remaining === def.module.timeLimit && !stage.runningSince && stage.current === 0 && Object.keys(stage.answers).length === 0 && (
               <label className="mt-4 flex items-center gap-2 text-sm">
                 <input type="checkbox" checked={session.timing === "untimed"} onChange={(e) => update(s => ({ ...s, timing: e.target.checked ? "untimed" : "standard" }))} />
                 Untimed practice (recorded with your result)
@@ -395,7 +395,7 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
             <button type="button" onClick={() => goTo(-1)} disabled={stage.current === 0} className="v2-tap w-14 shrink-0 rounded-xl border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 disabled:opacity-40 md:w-28" aria-label="Previous question">
               <ChevronLeft className="mx-auto h-6 w-6" />
             </button>
-            <button type="button" onClick={() => setTool("palette")} className="v2-tap flex-1 rounded-xl border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-sm font-semibold">
+            <button type="button" onClick={() => setTool("palette")} aria-haspopup="dialog" aria-label={`Questions: ${stage.current + 1} / ${total}, ${answeredCount} answered`} className="v2-tap flex-1 rounded-xl border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-sm font-semibold">
               {stage.current + 1} / {total}
               <span className="ml-2 font-normal text-gray-500 dark:text-gray-400">{answeredCount} answered</span>
             </button>

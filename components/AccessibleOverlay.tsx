@@ -21,6 +21,7 @@ export function AccessibleOverlay({ onClose, modal = true, children, ...props }:
         }}
         {...props}
       >
+        <Dialog.Title className="sr-only">{props["aria-label"]}</Dialog.Title>
         {children}
       </Dialog.Content>
     </Dialog.Root>

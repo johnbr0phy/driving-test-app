@@ -32,7 +32,7 @@ export function V2Header({ exam }: { exam: ExamV2Config }) {
   return (
     <header className="border-b bg-white dark:bg-gray-900" style={style}>
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <Link href={exam.slug} className="flex items-center gap-2 group flex-shrink-0">
+        <Link href={exam.slug} aria-label={`${exam.name} home`} className="flex items-center gap-2 group flex-shrink-0">
           {hasTigerSet(exam.id) ? (
             <Image src={getTigerAsset(exam.id)} alt="" width={40} height={40} className="h-10 w-10 object-contain" />
           ) : (

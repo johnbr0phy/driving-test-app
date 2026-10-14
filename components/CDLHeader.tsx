@@ -96,7 +96,7 @@ export function CDLHeader() {
           <ThemeToggle />
           {user ? (
             <>
-              <Link href="/settings">
+              <Link href="/settings" aria-label="Profile and settings">
                 <Avatar className="h-9 w-9 cursor-pointer hover:opacity-80 transition-opacity">
                   <AvatarImage src={displayPhotoURL || undefined} alt="Profile" />
                   <AvatarFallback className="text-lg">😊</AvatarFallback>
@@ -104,17 +104,17 @@ export function CDLHeader() {
               </Link>
             </>
           ) : isGuest ? (
-            <Link href={theme.signupPath}>
-              <Button variant="outline" className="text-gray-700 dark:text-gray-200 border-gray-300 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800 font-semibold">
+            <Button asChild variant="outline" className="text-gray-700 dark:text-gray-200 border-gray-300 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800 font-semibold">
+              <Link href={theme.signupPath}>
                 Sign Up to Save
-              </Button>
-            </Link>
+              </Link>
+            </Button>
           ) : (
-            <Link href={theme.loginPath}>
-              <Button variant="outline" className="text-gray-700 dark:text-gray-200 border-gray-300 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800">
+            <Button asChild variant="outline" className="text-gray-700 dark:text-gray-200 border-gray-300 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800">
+              <Link href={theme.loginPath}>
                 Sign In
-              </Button>
-            </Link>
+              </Link>
+            </Button>
           )}
         </div>
       </div>

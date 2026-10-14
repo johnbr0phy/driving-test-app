@@ -43,15 +43,14 @@ export function ThemeToggle({ className = "" }: { className?: string }) {
       </PopoverTrigger>
 
       <PopoverContent align="end" className="w-44 p-1">
-        <ul role="listbox" aria-label={t("theme.appearance")}>
+        <ul role="group" aria-label={t("theme.appearance")}>
           {OPTIONS.map(({ value, Icon: OptionIcon }) => {
             const isActive = theme === value;
             return (
               <li key={value}>
                 <button
                   type="button"
-                  role="option"
-                  aria-selected={isActive}
+                  aria-pressed={isActive}
                   onClick={() => {
                     setTheme(value);
                     setOpen(false);
@@ -89,15 +88,14 @@ export function ThemeSegmentedControl() {
   };
 
   return (
-    <div role="radiogroup" aria-label={t("theme.appearance")} className="inline-flex rounded-lg border border-gray-200 bg-white p-1 dark:border-gray-700 dark:bg-gray-900">
+    <div role="group" aria-label={t("theme.appearance")} className="inline-flex rounded-lg border border-gray-200 bg-white p-1 dark:border-gray-700 dark:bg-gray-900">
       {OPTIONS.map(({ value, Icon }) => {
         const isActive = mounted && theme === value;
         return (
           <button
             key={value}
             type="button"
-            role="radio"
-            aria-checked={isActive}
+            aria-pressed={isActive}
             onClick={() => setTheme(value)}
             className={`flex items-center gap-2 rounded-md px-3 py-1.5 text-sm font-medium transition-colors ${
               isActive

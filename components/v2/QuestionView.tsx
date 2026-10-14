@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo, useState, useId, useRef, useEffect } from "react";
 import { Check, X, Eye, EyeOff } from "lucide-react";
 import { AnswerValue, QuestionV2, Stimulus } from "@/lib/v2/types";
 import { OPTION_LETTERS, isCorrect, parseNumeric, relabelChoices } from "@/lib/v2/grading";
@@ -26,9 +26,13 @@ interface Props {
   disabled?: boolean;
   /** Shown above the stem, e.g. "Question 4 of 27". */
   label?: string;
+  focusOnChange?: boolean;
 }
 
-export function QuestionView({ question, stimulus, optionOrder, answer, onAnswer, eliminated = [], onToggleEliminate, eliminatorOn = false, reveal = false, layout = "split", disabled = false, label }: Props) {
+export function QuestionView({ question, stimulus, optionOrder, answer, onAnswer, eliminated = [], onToggleEliminate, eliminatorOn = false, reveal = false, layout = "split", disabled = false, label, focusOnChange = false }: Props) {
+  const id = useId();
+  const stem = useRef<HTMLDivElement>(null);
+  useEffect(() => { if (focusOnChange) stem.current?.focus({ preventScroll: true }); }, [question.id, focusOnChange]);
   const [passageOpen, setPassageOpen] = useState(true);
   const correct = reveal ? isCorrect(question, answer) : false;
   const numericValue = useMemo(() => (typeof answer === "string" ? parseNumeric(answer) : null), [answer]);
@@ -39,7 +43,7 @@ export function QuestionView({ question, stimulus, optionOrder, answer, onAnswer
   const renderSlot = slotRenderer(inputProps);
 
   const pick = (orig: number) => {
-    if (disabled) return;
+    if (disabled || reveal) return;
     if (question.format === "multi") {
       const cur = Array.isArray(answer) ? answer : [];
       if (!cur.includes(orig) && atCap) return;
@@ -71,13 +75,14 @@ export function QuestionView({ question, stimulus, optionOrder, answer, onAnswer
           onClick={() => setPassageOpen((o) => !o)}
           aria-label={passageOpen ? "Hide passage" : "Show passage"}
           aria-expanded={passageOpen}
+          aria-controls={`${id}-passage`}
           title={passageOpen ? "Hide passage" : "Show passage"}
         >
           {passageOpen ? <EyeOff className="h-5 w-5" /> : <Eye className="h-5 w-5" />}
         </button>
       </div>
       {passageOpen && (
-        <div>
+        <div id={`${id}-passage`}>
           {stimulus.figure && (
             <div className="mb-3">
               <Figure figure={stimulus.figure} />
@@ -92,7 +97,7 @@ export function QuestionView({ question, stimulus, optionOrder, answer, onAnswer
   const questionBlock = (
     <div>
       {label && <div className="mb-2 text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400">{label}</div>}
-      <RichText text={question.stem} className="text-[17px] font-medium md:text-lg" renderSlot={renderSlot} />
+      <div id={`${id}-stem`} ref={stem} tabIndex={-1}><RichText text={question.stem} className="text-[17px] font-medium md:text-lg" renderSlot={renderSlot} /></div>
       {question.figure && (
         <div className="mt-3">
           <Figure figure={question.figure} />
@@ -118,12 +123,14 @@ export function QuestionView({ question, stimulus, optionOrder, answer, onAnswer
           </label>
           <input
             id={`num-${question.id}`}
+            aria-describedby={`${id}-numeric-help`}
+            aria-invalid={typeof answer === "string" && answer.trim() !== "" && numericValue === null}
             type="text"
             inputMode="decimal"
             autoComplete="off"
             autoCorrect="off"
             spellCheck={false}
-            disabled={disabled}
+            disabled={disabled || reveal}
             value={typeof answer === "string" ? answer : ""}
             onChange={(e) => onAnswer(e.target.value.replace(/[^0-9./-]/g, "").slice(0, 7))}
             placeholder="e.g. 12, 3/4, -0.5"
@@ -131,7 +138,7 @@ export function QuestionView({ question, stimulus, optionOrder, answer, onAnswer
               reveal ? (correct ? "border-green-500 bg-green-50 dark:bg-green-950" : "border-red-400 dark:border-red-600 bg-red-50 dark:bg-red-950") : "border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900"
             }`}
           />
-          <div className="mt-1 text-xs text-gray-500 dark:text-gray-400">
+          <div id={`${id}-numeric-help`} className="mt-1 text-xs text-gray-500 dark:text-gray-400">
             {typeof answer === "string" && answer.trim() !== "" && numericValue === null ? (
               <span className="text-red-600 dark:text-red-400">Enter a number, decimal, or fraction like 3/4.</span>
             ) : (
@@ -143,16 +150,17 @@ export function QuestionView({ question, stimulus, optionOrder, answer, onAnswer
           )}
         </div>
       ) : (
-        <div className="mt-4 space-y-2.5">
+        <div role="group" aria-labelledby={`${id}-stem`} className="mt-4 space-y-2.5">
           {optionOrder.map((orig, pos) => {
             const struck = eliminated.includes(orig);
             return (
               <div key={orig} className="flex items-stretch gap-2">
                 <button
                   type="button"
-                  disabled={disabled}
+                  disabled={disabled || reveal}
                   onClick={() => pick(orig)}
                   aria-pressed={selected(orig)}
+                  aria-disabled={disabled || reveal || (atCap && !selected(orig))}
                   className={`v2-tap flex flex-1 items-start gap-3 rounded-xl border-2 px-3 py-3 text-left transition-colors ${optionClass(orig)} ${struck && !reveal ? "v2-struck" : ""}`}
                 >
                   <span
@@ -160,11 +168,13 @@ export function QuestionView({ question, stimulus, optionOrder, answer, onAnswer
                       selected(orig) && !reveal ? "border-brand bg-brand text-white" : "border-gray-400 dark:border-gray-600 text-gray-700 dark:text-gray-200"
                     } ${reveal && question.correct?.includes(orig) ? "border-green-600 bg-green-600 text-white" : ""}`}
                   >
-                    {question.format === "multi" && selected(orig) ? <Check className="h-4 w-4" /> : OPTION_LETTERS[pos]}
+                    {question.format === "multi" && selected(orig) ? <><span className="sr-only">{OPTION_LETTERS[pos]}</span><Check className="h-4 w-4" /></> : OPTION_LETTERS[pos]}
                   </span>
                   <span className="flex-1 pt-0.5">
                     <RichText text={question.options?.[orig] ?? ""} className="text-[15px] md:text-base" />
                   </span>
+                  {struck && !reveal && <span className="sr-only">Eliminated. </span>}
+                  {reveal && <span className="sr-only">{question.correct?.includes(orig) ? "Correct answer. " : selected(orig) ? "Incorrect answer. " : ""}</span>}
                   {reveal && question.correct?.includes(orig) && <Check className="mt-1 h-5 w-5 shrink-0 text-green-600 dark:text-green-400" />}
                   {reveal && selected(orig) && !question.correct?.includes(orig) && <X className="mt-1 h-5 w-5 shrink-0 text-red-500 dark:text-red-400" />}
                 </button>
@@ -182,13 +192,14 @@ export function QuestionView({ question, stimulus, optionOrder, answer, onAnswer
             );
           })}
           {question.format === "multi" && !reveal && (
-            <div className={`text-xs ${atCap ? "font-semibold text-gray-700 dark:text-gray-200" : "text-gray-500 dark:text-gray-400"}`}>
+            <div role="status" className={`text-xs ${atCap ? "font-semibold text-gray-700 dark:text-gray-200" : "text-gray-500 dark:text-gray-400"}`}>
               {question.select ? (atCap ? `${question.select} selected. Tap one to clear it before choosing another.` : `Select ${question.select}.`) : "Select every answer that applies."}
             </div>
           )}
         </div>
       )}
 
+      <div role="status" aria-atomic="true" className="sr-only">{reveal ? (correct ? "Correct. " : "Not quite. ") + relabelChoices(question.explanation, optionOrder) : ""}</div>
       {reveal && (
         <div className={`v2-pop mt-5 rounded-xl border p-4 ${correct ? "border-green-200 dark:border-green-800 bg-green-50 dark:bg-green-950" : "border-amber-200 dark:border-amber-800 bg-amber-50 dark:bg-amber-950"}`}>
           <div className={`mb-1 text-sm font-bold ${correct ? "text-green-800 dark:text-green-300" : "text-amber-900 dark:text-amber-200"}`}>{correct ? "Correct" : "Not quite"}</div>

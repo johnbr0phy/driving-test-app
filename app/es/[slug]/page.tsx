@@ -358,14 +358,14 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
             el primer intento. Practica con 200 preguntas específicas de{" "}
             {state.name} basadas en el manual oficial de conducir.
           </p>
-          <Link href={`/signup?state=${state.code}`}>
-            <Button
+          <Button asChild
               size="lg"
               className="text-lg px-8 py-6 bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 font-bold rounded-xl"
             >
+            <Link href={`/signup?state=${state.code}`}>
               Empezar a Practicar Gratis
-            </Button>
-          </Link>
+            </Link>
+          </Button>
         </div>
 
         {/* State Stats Cards */}
@@ -556,14 +556,14 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
             Únete a miles de conductores de {state.name} que aprobaron en su
             primer intento con TigerTest
           </p>
-          <Link href={`/signup?state=${state.code}`}>
-            <Button
+          <Button asChild
               size="lg"
               className="text-lg px-8 py-6 bg-white dark:bg-gray-900 text-brand-dark hover:bg-gray-100 dark:hover:bg-gray-800 font-bold rounded-xl"
             >
+            <Link href={`/signup?state=${state.code}`}>
               Empezar a Practicar Ahora — Es Gratis
-            </Button>
-          </Link>
+            </Link>
+          </Button>
         </div>
 
         {/* Testimonials */}
@@ -635,14 +635,14 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
             ¿Listo para empezar a estudiar para tu examen de permiso de{" "}
             {state.name}?
           </p>
-          <Link href={`/signup?state=${state.code}`}>
-            <Button
+          <Button asChild
               size="lg"
               className="text-lg px-8 py-6 bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 font-bold rounded-xl"
             >
+            <Link href={`/signup?state=${state.code}`}>
               Empezar a Practicar Gratis
-            </Button>
-          </Link>
+            </Link>
+          </Button>
           <p className="text-sm text-gray-500 dark:text-gray-400 mt-3">
             No se requiere cuenta. Gratis para empezar.
           </p>

@@ -371,14 +371,14 @@ export default async function StateDMVPracticeTestPage({
             free practice questions drawn from the official{" "}
             {landingInfo.handbookName} so you pass on your first try.
           </p>
-          <Link href={`/signup?state=${state.code}`}>
-            <Button
+          <Button asChild
               size="lg"
               className="text-lg px-8 py-6 bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 font-bold rounded-xl"
             >
+            <Link href={`/signup?state=${state.code}`}>
               Start Practicing Free
-            </Button>
-          </Link>
+            </Link>
+          </Button>
         </div>
 
         {/* State Stats Cards */}
@@ -579,14 +579,14 @@ export default async function StateDMVPracticeTestPage({
             Join thousands of {state.name} drivers who passed on their first
             try with TigerTest
           </p>
-          <Link href={`/signup?state=${state.code}`}>
-            <Button
+          <Button asChild
               size="lg"
               className="text-lg px-8 py-6 bg-white dark:bg-gray-900 text-brand-dark hover:bg-gray-100 dark:hover:bg-gray-800 font-bold rounded-xl"
             >
+            <Link href={`/signup?state=${state.code}`}>
               Start Practicing Now — It&apos;s Free
-            </Button>
-          </Link>
+            </Link>
+          </Button>
         </div>
 
         {/* Testimonials */}
@@ -657,14 +657,14 @@ export default async function StateDMVPracticeTestPage({
           <p className="text-gray-600 dark:text-gray-300 mb-4">
             Ready to start studying for your {state.name} permit test?
           </p>
-          <Link href={`/signup?state=${state.code}`}>
-            <Button
+          <Button asChild
               size="lg"
               className="text-lg px-8 py-6 bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 font-bold rounded-xl"
             >
+            <Link href={`/signup?state=${state.code}`}>
               Start Practicing Free
-            </Button>
-          </Link>
+            </Link>
+          </Button>
           <p className="text-sm text-gray-500 dark:text-gray-400 mt-3">
             No account required. Free to start.
           </p>

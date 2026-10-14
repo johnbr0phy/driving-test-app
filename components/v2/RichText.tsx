@@ -19,7 +19,7 @@ type RenderSlot = (slot: Slot) => ReactNode;
 
 function tex(src: string, display: boolean): string {
   try {
-    return katex.renderToString(src, { displayMode: display, throwOnError: false, strict: "ignore", output: "html" });
+    return katex.renderToString(src, { displayMode: display, throwOnError: false, strict: "ignore", output: "htmlAndMathml" });
   } catch {
     return src;
   }
@@ -71,7 +71,7 @@ function Table({ lines, keyBase, renderSlot }: { lines: string[]; keyBase: strin
         <thead>
           <tr>
             {head.map((c, i) => (
-              <th key={i} className="border border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-gray-950 px-3 py-1.5 text-left font-semibold">
+              <th scope="col" key={i} className="border border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-gray-950 px-3 py-1.5 text-left font-semibold">
                 {inline(c, `${keyBase}-h${i}`, renderSlot)}
               </th>
             ))}

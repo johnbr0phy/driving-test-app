@@ -219,11 +219,11 @@ function ExamTrainingContent({ exam }: { exam: ExamConfig }) {
               {t("trainingPage.answeredTenCorrectly")}
             </p>
             <div className="flex flex-col gap-3">
-              <Link href={routes.dashboard}>
-                <Button className="w-full bg-black dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 text-lg py-6">
+              <Button asChild className="w-full bg-black dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 text-lg py-6">
+                <Link href={routes.dashboard}>
                   {t("trainingPage.chooseTrainingSet")}
-                </Button>
-              </Link>
+                </Link>
+              </Button>
               <Button
                 variant="outline"
                 className="w-full"
@@ -242,12 +242,12 @@ function ExamTrainingContent({ exam }: { exam: ExamConfig }) {
           <div className="min-h-screen bg-gradient-to-b from-gray-950 to-green-950">
             {/* Back button */}
             <div className="relative max-w-6xl mx-auto px-4 pt-4">
-              <Link href={routes.dashboard}>
-                <Button variant="ghost" className="text-gray-400 hover:text-white hover:bg-white/10 -ml-2">
+              <Button asChild variant="ghost" className="text-gray-400 hover:text-white hover:bg-white/10 -ml-2">
+                <Link href={routes.dashboard}>
                   <ArrowLeft className="h-4 w-4 mr-2" />
                   {t("common.back")}
-                </Button>
-              </Link>
+                </Link>
+              </Button>
             </div>
 
             <div className="relative text-center px-6 pt-4 pb-10 max-w-lg mx-auto">
@@ -312,13 +312,13 @@ function ExamTrainingContent({ exam }: { exam: ExamConfig }) {
                   />
                 )}
                 {!isGuest && (
-                  <Link href={routes.stats} className="flex-1">
-                    <Button
+                  <Button asChild
                       className="w-full bg-transparent text-white hover:bg-white/10 border border-white/30 font-bold uppercase tracking-wide h-12 text-base"
                     >
+                    <Link href={routes.stats} className="flex-1">
                       {t("results.viewStats")}
-                    </Button>
-                  </Link>
+                    </Link>
+                  </Button>
                 )}
               </div>
 

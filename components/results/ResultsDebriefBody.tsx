@@ -358,11 +358,11 @@ export function ResultsDebriefBody({ results, upgrade }: Props) {
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300 text-sm">{t("results.scoreOnlyOnDevice")}</p>
               </div>
-              <Link href={routes.signup}>
-                <Button className="bg-brand text-white hover:bg-brand-hover whitespace-nowrap">
+              <Button asChild className="bg-brand text-white hover:bg-brand-hover whitespace-nowrap">
+                <Link href={routes.signup}>
                   {t("results.signUpFree")}
-                </Button>
-              </Link>
+                </Link>
+              </Button>
             </div>
           </CardContent>
         </Card>

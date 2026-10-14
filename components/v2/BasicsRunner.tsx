@@ -1,5 +1,7 @@
 "use client";
 
+import { FocusMode } from "./FocusMode";
+
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
@@ -76,7 +78,7 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
   // Basics of a Premium drill is gated like its questions, unless they are already in it.
   const premiumDrill = !!drill && !!exam.premium?.lockedDrills.includes(drill.key);
   if (!hydrated || !drill || !skill || (premiumDrill && !premiumReady)) {
-    return <div className="v2-focus items-center justify-center text-gray-600 dark:text-gray-300">Loading...</div>;
+    return <FocusMode className="v2-focus items-center justify-center text-gray-600 dark:text-gray-300">Loading...</FocusMode>;
   }
   const overviewHref = routes.drill(drill.key);
   if (isDrillLocked(exam, drill.key, isPremium) && !hasDrillProgress(drillsMap, basicsMap, exam, drill)) {
@@ -161,7 +163,7 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
       return <BasicsExplainer exam={exam} skill={skill} doneLabel={doneLabel} onDone={start} onClose={() => setReadMode(true)} onRead={() => setReadMode(true)} />;
     }
     return (
-      <div className="v2-focus">
+      <FocusMode className="v2-focus">
         <Header title={skill.name} sub={`Basics · ${drill.name}`} closeHref={overviewHref} />
         <div className="v2-scroll">
           <div className="mx-auto flex max-w-2xl flex-col gap-4 px-4 py-5">
@@ -180,7 +182,7 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
             </button>
           </div>
         </div>
-      </div>
+      </FocusMode>
     );
   }
 
@@ -188,7 +190,7 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
   if (screen === "done" && run) {
     const firstTry = total - run.retried.length;
     return (
-      <div className="v2-focus">
+      <FocusMode className="v2-focus">
         <div className="v2-scroll">
           <div className="v2-pop mx-auto flex max-w-md flex-col items-center gap-3 px-6 pt-10 text-center">
             <Image src={getTigerAsset(exam.id, 1)} alt="" width={120} height={120} className="h-28 w-28 object-contain" />
@@ -217,12 +219,12 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
             )}
           </div>
         </div>
-      </div>
+      </FocusMode>
     );
   }
 
   // ---- Question ----
-  if (!run || current === null) return <div className="v2-focus items-center justify-center text-gray-600 dark:text-gray-300">Loading...</div>;
+  if (!run || current === null) return <FocusMode className="v2-focus items-center justify-center text-gray-600 dark:text-gray-300">Loading...</FocusMode>;
   const q = skill.questions[current];
   const revealed = picked !== null;
   const correct = revealed && picked === q.answer;
@@ -232,7 +234,7 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
   const order = basicsOptionOrder(skill.id, current, q.options.length);
 
   return (
-    <div className="v2-focus">
+    <FocusMode className="v2-focus">
       <div className="v2-safe-top shrink-0 border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-3 pb-2">
         <div className="flex items-center gap-2">
           <Link href={overviewHref} className="v2-tap -ml-1 flex w-10 items-center justify-center rounded-full text-gray-500 dark:text-gray-400" aria-label="Back to the drill">
@@ -317,7 +319,7 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
 
       <BasicsRuleSheet exam={exam} skill={skill} open={ruleOpen} onClose={closeRule} />
       {overlay}
-    </div>
+    </FocusMode>
   );
 }
 

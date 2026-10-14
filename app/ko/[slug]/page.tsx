@@ -357,14 +357,14 @@ export default async function KoreanStateDMVPage({ params }: PageProps) {
             운전자 교본을 바탕으로 만든 {state.name} 맞춤 연습문제 200개로
             대비할 수 있습니다.
           </p>
-          <Link href={`/signup?state=${state.code}`}>
-            <Button
+          <Button asChild
               size="lg"
               className="text-lg px-8 py-6 bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 font-bold rounded-xl"
             >
+            <Link href={`/signup?state=${state.code}`}>
               무료로 연습 시작하기
-            </Button>
-          </Link>
+            </Link>
+          </Button>
         </div>
 
         {/* State Stats Cards */}
@@ -556,14 +556,14 @@ export default async function KoreanStateDMVPage({ params }: PageProps) {
           <p className="text-brand-light text-lg mb-6">
             TigerTest로 첫 응시에 합격한 수많은 {state.name} 운전자들과 함께하세요
           </p>
-          <Link href={`/signup?state=${state.code}`}>
-            <Button
+          <Button asChild
               size="lg"
               className="text-lg px-8 py-6 bg-white dark:bg-gray-900 text-brand-dark hover:bg-gray-100 dark:hover:bg-gray-800 font-bold rounded-xl"
             >
+            <Link href={`/signup?state=${state.code}`}>
               지금 연습 시작하기 — 무료입니다
-            </Button>
-          </Link>
+            </Link>
+          </Button>
         </div>
 
         {/* Testimonials */}
@@ -638,14 +638,14 @@ export default async function KoreanStateDMVPage({ params }: PageProps) {
           <p className="text-gray-600 dark:text-gray-300 mb-4">
             {state.name} 운전면허 필기시험 공부, 지금 시작해 볼까요?
           </p>
-          <Link href={`/signup?state=${state.code}`}>
-            <Button
+          <Button asChild
               size="lg"
               className="text-lg px-8 py-6 bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 font-bold rounded-xl"
             >
+            <Link href={`/signup?state=${state.code}`}>
               무료로 연습 시작하기
-            </Button>
-          </Link>
+            </Link>
+          </Button>
           <p className="text-sm text-gray-500 dark:text-gray-400 mt-3">
             계정이 필요 없습니다. 무료로 시작하세요.
           </p>

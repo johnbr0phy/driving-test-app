@@ -215,10 +215,10 @@ export default function SettingsPage() {
                   </div>
 
                   <div>
-                    <label className="text-sm font-medium text-gray-700 dark:text-gray-200 mb-2 block">
+                    <label htmlFor="settings-state" className="text-sm font-medium text-gray-700 dark:text-gray-200 mb-2 block">
                       {t("settings.changeState")}
                     </label>
-                    <select
+                    <select id="settings-state"
                       value={selectedState}
                       onChange={(e) => handleStateChange(e.target.value)}
                       className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -237,11 +237,11 @@ export default function SettingsPage() {
               ) : (
                 <div className="space-y-4">
                   <p className="text-sm text-gray-600 dark:text-gray-300">{t("settings.noStateSelected")}</p>
-                  <Link href="/onboarding/select-state">
-                    <Button className="w-full bg-brand hover:bg-brand-hover text-white">
+                  <Button asChild className="w-full bg-brand hover:bg-brand-hover text-white">
+                    <Link href="/onboarding/select-state">
                       {t("settings.chooseState")}
-                    </Button>
-                  </Link>
+                    </Link>
+                  </Button>
                 </div>
               )}
             </CardContent>

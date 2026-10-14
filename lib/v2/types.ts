@@ -219,6 +219,8 @@ export interface ExamV2Config {
 
 /** One in-progress or finished full-length test. */
 export interface TestSessionV2 {
+  /** Untimed practice is chosen before the first module starts. */
+  timing?: "standard" | "untimed";
   key: string;
   examId: string;
   testNumber: number;
@@ -261,6 +263,7 @@ export interface SectionResult {
 }
 
 export interface TestResultV2 {
+  timing?: "standard" | "untimed";
   key: string;
   examId: string;
   testNumber: number;

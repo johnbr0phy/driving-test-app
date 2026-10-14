@@ -258,7 +258,7 @@ function SignupPageContent() {
         <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative text-center space-y-8">
           {error && (
-            <div className="bg-red-50 dark:bg-red-950 border border-red-200 dark:border-red-800 text-red-700 dark:text-red-300 px-4 py-3 rounded mb-4">
+            <div id="auth-error" role="alert" className="bg-red-50 dark:bg-red-950 border border-red-200 dark:border-red-800 text-red-700 dark:text-red-300 px-4 py-3 rounded mb-4">
               {error}
             </div>
           )}
@@ -266,7 +266,7 @@ function SignupPageContent() {
           <div className="flex flex-wrap items-center justify-center gap-2 text-2xl md:text-3xl font-medium text-gray-800 dark:text-gray-100">
             <span>{t("signup.iNeedToPass")}</span>
             <Select onValueChange={setSelectedState} value={selectedState || undefined}>
-              <SelectTrigger className="w-auto inline-flex text-2xl md:text-3xl font-semibold text-brand border-none shadow-none focus:ring-0 focus:ring-offset-0 px-1 underline decoration-brand-border decoration-2 underline-offset-4 hover:decoration-brand h-auto">
+              <SelectTrigger aria-label={t("signup.selectLocation")} className="w-auto inline-flex text-2xl md:text-3xl font-semibold text-brand border-none shadow-none focus:ring-0 focus:ring-offset-0 px-1 underline decoration-brand-border decoration-2 underline-offset-4 hover:decoration-brand h-auto">
                 <SelectValue placeholder={t("signup.selectLocation")} />
               </SelectTrigger>
               <SelectContent>
@@ -319,7 +319,7 @@ function SignupPageContent() {
           {schoolBanner}
 
           {error && (
-            <div className="bg-red-50 dark:bg-red-950 border border-red-200 dark:border-red-800 text-red-700 dark:text-red-300 px-4 py-3 rounded mb-4">
+            <div id="auth-error" role="alert" className="bg-red-50 dark:bg-red-950 border border-red-200 dark:border-red-800 text-red-700 dark:text-red-300 px-4 py-3 rounded mb-4">
               {error}
             </div>
           )}
@@ -352,6 +352,8 @@ function SignupPageContent() {
                   <Label htmlFor="email">{t("common.email")}</Label>
                   <Input
                     id="email"
+                aria-describedby={error ? "auth-error" : undefined}
+                autoComplete="email"
                     type="email"
                     placeholder="your@email.com"
                     value={email}
@@ -365,6 +367,8 @@ function SignupPageContent() {
                   <Label htmlFor="password">{t("common.password")}</Label>
                   <Input
                     id="password"
+                aria-describedby={error ? "auth-error" : undefined}
+                autoComplete="new-password"
                     type="password"
                     placeholder="••••••••"
                     value={password}

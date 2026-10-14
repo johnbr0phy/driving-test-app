@@ -1,5 +1,6 @@
 "use client";
 
+import { useId, useEffect, useRef } from "react";
 import { Question } from "@/types";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle2, XCircle } from "lucide-react";
@@ -20,6 +21,9 @@ export function QuestionCard({
   showResult = false,
 }: QuestionCardProps) {
   const { t } = useTranslation();
+  const headingId = useId();
+  const heading = useRef<HTMLHeadingElement>(null);
+  useEffect(() => { heading.current?.focus({ preventScroll: true }); }, [question.questionId]);
   const options = [
     { value: "A", label: question.optionA },
     { value: "B", label: question.optionB },
@@ -42,6 +46,7 @@ export function QuestionCard({
       return "border-gray-300 dark:border-gray-700 opacity-50";
     }
 
+    if (isSelected) return "border-brand bg-brand-light ring-1 ring-brand";
     return "border-gray-300 dark:border-gray-700 [@media(hover:hover)]:hover:border-brand [@media(hover:hover)]:hover:bg-brand-light active:border-brand active:bg-brand-light cursor-pointer";
   };
 
@@ -49,25 +54,30 @@ export function QuestionCard({
     <Card className="w-full">
       <CardHeader>
         <div className="flex items-start gap-4">
-          <CardTitle className="text-xl flex-1">{question.question}</CardTitle>
+          <CardTitle role="heading" aria-level={2} id={headingId} ref={heading} tabIndex={-1} className="text-xl flex-1">{question.question}</CardTitle>
           <QuestionImage questionId={question.questionId} />
         </div>
       </CardHeader>
       <CardContent>
-        <div className="space-y-3">
+        <div role="group" aria-labelledby={headingId} className="space-y-3">
           {options.map((option) => {
             const isThisCorrect = option.value === question.correctAnswer;
             const isSelected = selectedAnswer === option.value;
 
             return (
-              <div
+              <button
                 key={option.value}
-                onClick={() => !showResult && onAnswerChange(option.value)}
-                className={`border-2 rounded-lg p-4 transition-all ${getOptionClasses(option.value)}`}
+              type="button"
+              aria-pressed={selectedAnswer === option.value}
+              aria-disabled={showResult || selectedAnswer !== undefined}
+                onClick={() => !showResult && selectedAnswer === undefined && onAnswerChange(option.value)}
+                className={`w-full text-left border-2 rounded-lg p-4 transition-all ${getOptionClasses(option.value)}`}
               >
                 <div className="flex items-center justify-between gap-2">
                   <span className="font-bold text-lg w-6 shrink-0">{option.value})</span>
                   <span className="flex-1">{option.label}</span>
+                {showResult && option.value === question.correctAnswer && <span className="sr-only">{t("trainingCard.correct")}</span>}
+                {showResult && option.value === selectedAnswer && !isCorrect && <span className="sr-only">{t("trainingCard.incorrect")}</span>}
                   {showResult && isThisCorrect && (
                     <CheckCircle2 className="h-6 w-6 text-green-600 dark:text-green-400" />
                   )}
@@ -75,7 +85,7 @@ export function QuestionCard({
                     <XCircle className="h-6 w-6 text-red-600 dark:text-red-400" />
                   )}
                 </div>
-              </div>
+              </button>
             );
           })}
         </div>

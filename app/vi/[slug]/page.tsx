@@ -365,14 +365,14 @@ export default async function VietnameseStateDMVPage({ params }: PageProps) {
             tiên. Luyện với 200 câu hỏi tiếng Việt dành riêng cho {state.name},
             dựa trên cẩm nang lái xe chính thức.
           </p>
-          <Link href={`/signup?state=${state.code}`}>
-            <Button
+          <Button asChild
               size="lg"
               className="text-lg px-8 py-6 bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 font-bold rounded-xl"
             >
+            <Link href={`/signup?state=${state.code}`}>
               Bắt Đầu Luyện Thi Miễn Phí
-            </Button>
-          </Link>
+            </Link>
+          </Button>
         </div>
 
         {/* Vietnamese-language availability callout */}
@@ -576,14 +576,14 @@ export default async function VietnameseStateDMVPage({ params }: PageProps) {
             Hãy cùng hàng ngàn người lái xe ở {state.name} đã đậu ngay lần đầu
             với TigerTest
           </p>
-          <Link href={`/signup?state=${state.code}`}>
-            <Button
+          <Button asChild
               size="lg"
               className="text-lg px-8 py-6 bg-white dark:bg-gray-900 text-brand-dark hover:bg-gray-100 dark:hover:bg-gray-800 font-bold rounded-xl"
             >
+            <Link href={`/signup?state=${state.code}`}>
               Bắt Đầu Luyện Thi Ngay — Miễn Phí
-            </Button>
-          </Link>
+            </Link>
+          </Button>
         </div>
 
         {/* Testimonials */}
@@ -654,14 +654,14 @@ export default async function VietnameseStateDMVPage({ params }: PageProps) {
           <p className="text-gray-600 dark:text-gray-300 mb-4">
             Sẵn sàng bắt đầu ôn cho bài thi lấy giấy phép ở {state.name}?
           </p>
-          <Link href={`/signup?state=${state.code}`}>
-            <Button
+          <Button asChild
               size="lg"
               className="text-lg px-8 py-6 bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 font-bold rounded-xl"
             >
+            <Link href={`/signup?state=${state.code}`}>
               Bắt Đầu Luyện Thi Miễn Phí
-            </Button>
-          </Link>
+            </Link>
+          </Button>
           <p className="text-sm text-gray-500 dark:text-gray-400 mt-3">
             Không cần tài khoản. Bắt đầu miễn phí.
           </p>

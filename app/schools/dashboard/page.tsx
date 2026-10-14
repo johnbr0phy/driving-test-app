@@ -1357,11 +1357,11 @@ function DashboardInner() {
             Your account is linked but we couldn&apos;t find a school profile. Let&apos;s set one up.
           </p>
         </div>
-        <Link href="/schools/create">
-          <Button className="bg-brand text-white hover:bg-brand/90">
+        <Button asChild className="bg-brand text-white hover:bg-brand/90">
+          <Link href="/schools/create">
             Set up your school →
-          </Button>
-        </Link>
+          </Link>
+        </Button>
       </div>
     );
   }
@@ -1419,12 +1419,12 @@ function DashboardInner() {
             <p className="text-sm font-semibold text-gray-900 dark:text-gray-50">You&apos;re viewing a demo</p>
             <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">Log in to manage your real school and students.</p>
           </div>
-          <Link href="/login?redirect=/schools/dashboard" className="self-stretch sm:self-auto">
-            <Button size="sm" className="bg-brand text-white hover:bg-brand/90 gap-1.5 w-full sm:w-auto min-h-[40px]">
+          <Button asChild size="sm" className="bg-brand text-white hover:bg-brand/90 gap-1.5 w-full sm:w-auto min-h-[40px]">
+            <Link href="/login?redirect=/schools/dashboard" className="self-stretch sm:self-auto">
               <LogIn className="h-4 w-4" />
               Log in to your school →
-            </Button>
-          </Link>
+            </Link>
+          </Button>
         </div>
       )}
 

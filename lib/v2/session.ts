@@ -133,6 +133,7 @@ export function scoreSession(exam: ExamV2Config, session: TestSessionV2, byId: M
     key: session.key,
     examId: exam.id,
     testNumber: session.testNumber,
+    timing: session.timing ?? "standard",
     completedAt: new Date().toISOString(),
     sections,
     composite: exam.composite.combine(sections),

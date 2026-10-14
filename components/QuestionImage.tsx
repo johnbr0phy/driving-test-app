@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { getSignIdForQuestion } from "@/lib/signImages";
+import { getSignIdForQuestion, SIGN_DESCRIPTIONS } from "@/lib/signImages";
 
 interface QuestionImageProps {
   questionId: string;
@@ -20,7 +20,8 @@ export function QuestionImage({ questionId }: QuestionImageProps) {
     >
       <Image
         src={`/signs/${signId}.svg`}
-        alt=""
+        lang="en"
+        alt={SIGN_DESCRIPTIONS[signId] ?? "Road sign shown with the question."}
         fill
         sizes="128px"
         className="object-contain p-2 drop-shadow-[0_2px_6px_rgba(0,0,0,0.25)]"

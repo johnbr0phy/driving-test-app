@@ -1,4 +1,5 @@
 "use client";
+import { useTranslation } from "@/contexts/LanguageContext";
 
 import { useState } from "react";
 import { Check, ChevronDown, X } from "lucide-react";
@@ -50,6 +51,7 @@ export function QuizRow({
   expanded?: boolean;
   onToggleExpanded?: () => void;
 }) {
+  const { t } = useTranslation();
   const [internalExpanded, setInternalExpanded] = useState(false);
   const expanded = controlledExpanded ?? internalExpanded;
   const initialPickedIndex = initialAnswer ? options.indexOf(initialAnswer) : -1;
@@ -111,8 +113,11 @@ export function QuizRow({
         />
       </div>
 
+      <div role="status" aria-atomic="true" className="sr-only">{answered ? `${pickedCorrect ? t("trainingCard.correct") : t("trainingCard.incorrect")} ${correctAnswer}` : ""}</div>
       {/* Expanding quiz panel */}
       <div
+        inert={!expanded}
+        aria-hidden={!expanded}
         className={`grid transition-[grid-template-rows] duration-300 ease-out motion-reduce:transition-none ${
           expanded ? "[grid-template-rows:1fr]" : "[grid-template-rows:0fr]"
         }`}
@@ -144,7 +149,8 @@ export function QuizRow({
                       e.stopPropagation();
                       pickOption(idx);
                     }}
-                    disabled={answered}
+                    aria-disabled={answered}
+                    aria-pressed={isPicked}
                     style={{ transitionDelay: expanded && !answered ? `${idx * 50}ms` : "0ms" }}
                     className={`w-full flex items-start gap-2 rounded-lg border px-3 py-2 text-sm text-left transition-all duration-300 motion-reduce:transition-none ${
                       expanded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-1"
@@ -162,6 +168,7 @@ export function QuizRow({
                       {letter}
                     </span>
                     <span className="flex-1 min-w-0">{opt}</span>
+                    {answered && <span className="sr-only">{isCorrect ? t("trainingCard.correct") : isPicked ? t("trainingCard.incorrect") : ""}</span>}
                     {answered && isCorrect && (
                       <Check className="h-4 w-4 text-green-600 dark:text-green-400 shrink-0 mt-0.5" strokeWidth={3} />
                     )}

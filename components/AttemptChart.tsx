@@ -99,8 +99,8 @@ export function AttemptChart({
     <svg
       viewBox={`0 0 ${W} ${H}`}
       className="w-full h-auto"
-      role="img"
-      aria-label={attempts.map((a) => `${a.pct}%`).join(", ")}
+      role="group"
+      aria-label={`Attempt history. Pass mark ${passPct}%. ${attempts.map((a) => `Attempt ${a.n}, ${a.date}: ${a.score} out of ${a.total}, ${a.pct}%, ${a.passed ? "passed" : "not passed"}`).join(". ")}`}
       onMouseLeave={() => setHover(null)}
     >
       {/* Gridlines + y labels */}
@@ -159,6 +159,11 @@ export function AttemptChart({
             width={attempts.length > 1 ? iw / (attempts.length - 1) : iw}
             height={ih}
             fill="transparent"
+            tabIndex={0}
+            role="img"
+            aria-label={`Attempt ${a.n}, ${a.date}: ${a.score} of ${a.total}, ${a.pct}%`}
+            onFocus={() => setHover(i)}
+            onBlur={() => setHover(null)}
             onMouseEnter={() => setHover(i)}
           />
         </g>

@@ -1,5 +1,7 @@
 "use client";
 
+import { AccessibleOverlay } from "@/components/AccessibleOverlay";
+
 import { useEffect, useState } from "react";
 import { ListChecks, Play } from "lucide-react";
 import { ExamV2Config } from "@/lib/v2/types";
@@ -46,7 +48,7 @@ export function BasicsRuleSheet({ exam, skill, open, onClose, doneLabel = "Back 
   }
 
   return (
-    <div className="fixed inset-0 z-[90] flex items-end justify-center bg-black/50" role="dialog" aria-modal="true" aria-label="The rule" onClick={onClose}>
+    <AccessibleOverlay onClose={onClose} className="fixed inset-0 z-[90] flex items-end justify-center bg-black/50" aria-label="The rule" onClick={onClose}>
       <div className="v2-pop max-h-[85%] w-full max-w-2xl overflow-y-auto rounded-t-2xl bg-white dark:bg-gray-900 p-4" onClick={(e) => e.stopPropagation()}>
         <div className="flex flex-col gap-5">
           {walkable && (
@@ -66,6 +68,6 @@ export function BasicsRuleSheet({ exam, skill, open, onClose, doneLabel = "Back 
           {doneLabel}
         </button>
       </div>
-    </div>
+    </AccessibleOverlay>
   );
 }

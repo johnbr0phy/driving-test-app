@@ -50,3 +50,37 @@ export const SIGN_BY_QUESTION_ID: Record<string, string> = {
 export function getSignIdForQuestion(questionId: string): string | null {
   return SIGN_BY_QUESTION_ID[questionId] ?? null;
 }
+
+// Describe only visible shapes, symbols and printed words. Do not supply the
+// meaning or required driving action: those are what the question assesses.
+export const SIGN_DESCRIPTIONS: Record<string, string> = {
+  "warning-diamond": "Yellow diamond with a black arrow bending sharply to the right.",
+  "railroad-crossing-circle": "Yellow circle with a black X and an R on each side.",
+  "signal-flashing-red": "Vertical traffic signal with the top red lamp illuminated and rings around it; the yellow and green lamps are dark.",
+  "signal-flashing-yellow": "Vertical traffic signal with the middle yellow lamp illuminated and rings around it; the red and green lamps are dark.",
+  "regulatory-rect": "White upright rectangle with red words NO PARKING ANY TIME and a left-pointing arrow.",
+  "no-passing-pennant": "Yellow triangular pennant pointing right with a black border.",
+  "curve-left": "Yellow diamond with a black upward arrow curving to the left.",
+  "two-way-traffic": "Yellow diamond with two black arrows side by side: the left arrow points down and the right arrow points up.",
+  "merge": "Yellow diamond with a black upward arrow and a diagonal branch joining it from the lower right.",
+  "deer-crossing": "Yellow diamond with a black silhouette of a leaping deer.",
+  "slippery-road": "Yellow diamond with a black car and two wavy tracks behind it.",
+  "steep-grade": "Yellow diamond with a black truck tilted down a slope to the left.",
+  "wrong-way": "Red horizontal rectangle with the white words WRONG WAY.",
+  "do-not-enter": "Red circle with a white horizontal bar and the white words DO NOT ENTER.",
+  "bumps": "Yellow diamond with the black word BUMP.",
+  "yield": "Downward-pointing triangle with a red border, white centre and the word YIELD.",
+  "speed-limit": "White upright rectangle with the black words SPEED LIMIT above the number 50.",
+  "handicap-parking": "White rectangle with green words RESERVED PARKING, a white wheelchair symbol on a blue square and a green double-headed horizontal arrow.",
+  "hov-lane": "White upright rectangle with a white diamond in a black top panel, followed by HOV 2+ ONLY and 2 OR MORE PERSONS PER VEHICLE.",
+  "keep-right": "White rectangle with a black shape on the left and an upward arrow bending around its right side.",
+  "lane-ends": "Yellow diamond with two black lane edges: the left edge is straight and the right edge bends left. A dashed vertical line separates them below the bend.",
+  "railroad-crossbuck": "Two white boards crossing in an X, with the black words RAILROAD CROSSING.",
+  "winding-road": "Yellow diamond with a black upward arrow bending repeatedly left and right.",
+  "side-road": "Yellow diamond with a thick black vertical line and a short horizontal branch extending right.",
+  "signal-ahead": "Yellow diamond showing a vertical traffic signal with red, yellow and green lamps.",
+  "chevron": "Yellow rectangle with a thick black left-pointing chevron.",
+  "low-clearance": "Yellow diamond with 12 feet 6 inches between an upward arrow and a downward arrow.",
+  "bike-lane": "Green rectangle with a white bicycle symbol and the words BIKE ROUTE.",
+  "no-turn-on-red": "White upright rectangle with the black words NO TURN ON RED and a red circle below.",
+};

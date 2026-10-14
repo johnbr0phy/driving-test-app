@@ -31,11 +31,11 @@
     --chart-5: 27 87% 67%;
 
     /* Brand theme tokens - DMV orange is default */
-    --brand: 24 95% 53%;
+    --brand: 24 95% 39.0%;
     --brand-foreground: 0 0% 100%;
     --brand-light: 33 100% 96%;
-    --brand-hover: 24 95% 45%;
-    --brand-dark: 24 90% 40%;
+    --brand-hover: 24 95% 39.0%;
+    --brand-dark: 24 90% 37%;
     --brand-darker: 24 80% 25%;
     --brand-muted: 24 90% 75%;
     --brand-border: 24 80% 80%;
@@ -44,7 +44,7 @@
   }
 
   [data-theme="cdl"] {
-    --brand: 217 91% 60%;
+    --brand: 217 91% 52.2%;
     --brand-foreground: 0 0% 100%;
     --brand-light: 214 100% 97%;
     --brand-hover: 217 91% 50%;
@@ -72,7 +72,7 @@
 
   /* CST (surgical technology) theme: surgical teal */
   [data-theme="cst"] {
-    --brand: 172 66% 36%;
+    --brand: 172 66% 30.6%;
     --brand-foreground: 0 0% 100%;
     --brand-light: 170 70% 95%;
     --brand-hover: 172 66% 30%;
@@ -100,7 +100,7 @@
 
   /* FAA Part 107 theme: sky blue */
   [data-theme="part107"] {
-    --brand: 199 89% 40%;
+    --brand: 199 89% 36.3%;
     --brand-foreground: 0 0% 100%;
     --brand-light: 199 95% 95%;
     --brand-hover: 199 89% 34%;
@@ -114,10 +114,10 @@
 
   /* Ham radio theme: amber */
   [data-theme="ham"] {
-    --brand: 32 90% 42%;
+    --brand: 32 90% 35.6%;
     --brand-foreground: 0 0% 100%;
     --brand-light: 36 100% 95%;
-    --brand-hover: 32 90% 36%;
+    --brand-hover: 32 90% 35.6%;
     --brand-dark: 32 90% 28%;
     --brand-darker: 32 70% 16%;
     --brand-muted: 32 60% 70%;
@@ -128,7 +128,7 @@
 
   /* EPA 608 theme: green */
   [data-theme="epa608"] {
-    --brand: 150 60% 34%;
+    --brand: 150 60% 32.2%;
     --brand-foreground: 0 0% 100%;
     --brand-light: 150 60% 95%;
     --brand-hover: 150 60% 28%;
@@ -184,7 +184,7 @@
 
   /* CCMA theme: sky blue */
   [data-theme="ccma"] {
-    --brand: 188 70% 36%;
+    --brand: 188 70% 32.8%;
     --brand-foreground: 0 0% 100%;
     --brand-light: 188 70% 95%;
     --brand-hover: 188 70% 30%;
@@ -212,7 +212,7 @@
 
   /* DANB (dental) theme: mint */
   [data-theme="danb"] {
-    --brand: 165 60% 34%;
+    --brand: 165 60% 31.8%;
     --brand-foreground: 0 0% 100%;
     --brand-light: 165 60% 95%;
     --brand-hover: 165 60% 28%;
@@ -240,10 +240,10 @@
 
   /* Food manager theme: amber */
   [data-theme="foodmgr"] {
-    --brand: 42 90% 40%;
+    --brand: 42 90% 31.1%;
     --brand-foreground: 0 0% 100%;
     --brand-light: 42 90% 95%;
-    --brand-hover: 42 90% 34%;
+    --brand-hover: 42 90% 31.1%;
     --brand-dark: 42 90% 28%;
     --brand-darker: 42 80% 16%;
     --brand-muted: 42 70% 72%;
@@ -296,7 +296,7 @@
 
   /* TEAS theme: olive */
   [data-theme="teas"] {
-    --brand: 95 50% 36%;
+    --brand: 95 50% 33.5%;
     --brand-foreground: 0 0% 100%;
     --brand-light: 95 60% 95%;
     --brand-hover: 95 50% 30%;
@@ -310,7 +310,7 @@
 
   /* AWS theme: orange */
   [data-theme="aws"] {
-    --brand: 20 90% 46%;
+    --brand: 20 90% 41.4%;
     --brand-foreground: 0 0% 100%;
     --brand-light: 20 90% 95%;
     --brand-hover: 20 90% 40%;
@@ -338,7 +338,7 @@
 
   /* Food handler theme: kitchen green */
   [data-theme="foodhandler"] {
-    --brand: 135 55% 38%;
+    --brand: 135 55% 33.4%;
     --brand-foreground: 0 0% 100%;
     --brand-light: 135 65% 95%;
     --brand-hover: 135 55% 32%;
@@ -366,7 +366,7 @@
 
   /* Hunter safety theme: olive */
   [data-theme="hunter"] {
-    --brand: 70 45% 34%;
+    --brand: 70 45% 32.9%;
     --brand-foreground: 0 0% 100%;
     --brand-light: 70 55% 95%;
     --brand-hover: 70 45% 28%;
@@ -464,7 +464,7 @@
 
   /* Forklift theme: mustard */
   [data-theme="forklift"] {
-    --brand: 42 80% 36%;
+    --brand: 42 80% 32.3%;
     --brand-foreground: 0 0% 100%;
     --brand-light: 42 80% 95%;
     --brand-hover: 42 80% 30%;
@@ -548,7 +548,7 @@
 
   /* Lifeguard theme: aqua */
   [data-theme="lifeguard"] {
-    --brand: 190 75% 34%;
+    --brand: 190 75% 33.0%;
     --brand-foreground: 0 0% 100%;
     --brand-light: 190 80% 95%;
     --brand-hover: 190 75% 28%;
@@ -604,7 +604,7 @@
 
   /* CRCST (sterile processing) theme: deep cyan */
   [data-theme="crcst"] {
-    --brand: 195 85% 36%;
+    --brand: 195 85% 34.3%;
     --brand-foreground: 0 0% 100%;
     --brand-light: 195 100% 95%;
     --brand-hover: 195 85% 30%;
@@ -683,8 +683,8 @@
   }
 
   .dark [data-theme="cst"] {
-    --brand: 172 66% 50%;
-    --brand-hover: 172 66% 42%;
+    --brand: 172 66% 30.6%;
+    --brand-hover: 172 66% 30.6%;
     --brand-light: 170 45% 13%;
     --brand-gradient-to: 190 40% 11%;
     --brand-border-light: 172 35% 24%;
@@ -695,7 +695,7 @@
   }
 
   .dark [data-theme="cdlx"] {
-    --brand: 205 70% 50%;
+    --brand: 205 70% 42.3%;
     --brand-hover: 205 70% 42%;
     --brand-light: 205 45% 13%;
     --brand-gradient-to: 190 40% 11%;
@@ -707,8 +707,8 @@
   }
 
   .dark [data-theme="part107"] {
-    --brand: 199 89% 50%;
-    --brand-hover: 199 89% 42%;
+    --brand: 199 89% 36.3%;
+    --brand-hover: 199 89% 36.3%;
     --brand-light: 199 45% 13%;
     --brand-gradient-to: 45 40% 11%;
     --brand-border-light: 199 35% 24%;
@@ -719,8 +719,8 @@
   }
 
   .dark [data-theme="ham"] {
-    --brand: 32 90% 50%;
-    --brand-hover: 32 90% 42%;
+    --brand: 32 90% 35.6%;
+    --brand-hover: 32 90% 35.6%;
     --brand-light: 36 45% 13%;
     --brand-gradient-to: 48 40% 11%;
     --brand-border-light: 32 35% 24%;
@@ -731,8 +731,8 @@
   }
 
   .dark [data-theme="epa608"] {
-    --brand: 150 60% 50%;
-    --brand-hover: 150 60% 42%;
+    --brand: 150 60% 32.2%;
+    --brand-hover: 150 60% 32.2%;
     --brand-light: 150 45% 13%;
     --brand-gradient-to: 80 40% 11%;
     --brand-border-light: 150 35% 24%;
@@ -765,8 +765,8 @@
   }
 
   .dark [data-theme="phleb"] {
-    --brand: 120 40% 50%;
-    --brand-hover: 120 40% 42%;
+    --brand: 120 40% 36.6%;
+    --brand-hover: 120 40% 36.6%;
     --brand-light: 120 45% 13%;
     --brand-gradient-to: 80 40% 11%;
     --brand-border-light: 120 30% 24%;
@@ -777,8 +777,8 @@
   }
 
   .dark [data-theme="ccma"] {
-    --brand: 188 70% 50%;
-    --brand-hover: 188 70% 42%;
+    --brand: 188 70% 32.8%;
+    --brand-hover: 188 70% 32.8%;
     --brand-light: 188 45% 13%;
     --brand-gradient-to: 160 40% 11%;
     --brand-border-light: 188 35% 24%;
@@ -789,7 +789,7 @@
   }
 
   .dark [data-theme="cet"] {
-    --brand: 8 72% 50%;
+    --brand: 8 72% 48.5%;
     --brand-hover: 8 72% 42%;
     --brand-light: 8 45% 13%;
     --brand-gradient-to: 35 40% 11%;
@@ -801,8 +801,8 @@
   }
 
   .dark [data-theme="danb"] {
-    --brand: 165 60% 50%;
-    --brand-hover: 165 60% 42%;
+    --brand: 165 60% 31.8%;
+    --brand-hover: 165 60% 31.8%;
     --brand-light: 165 45% 13%;
     --brand-gradient-to: 200 40% 11%;
     --brand-border-light: 165 35% 24%;
@@ -825,8 +825,8 @@
   }
 
   .dark [data-theme="foodmgr"] {
-    --brand: 42 90% 50%;
-    --brand-hover: 42 90% 42%;
+    --brand: 42 90% 31.1%;
+    --brand-hover: 42 90% 31.1%;
     --brand-light: 42 45% 13%;
     --brand-gradient-to: 20 40% 11%;
     --brand-border-light: 42 35% 24%;
@@ -837,8 +837,8 @@
   }
 
   .dark [data-theme="realestate"] {
-    --brand: 200 45% 50%;
-    --brand-hover: 200 45% 42%;
+    --brand: 200 45% 41.8%;
+    --brand-hover: 200 45% 41.8%;
     --brand-light: 200 45% 13%;
     --brand-gradient-to: 170 40% 11%;
     --brand-border-light: 200 20% 24%;
@@ -861,8 +861,8 @@
   }
 
   .dark [data-theme="notary"] {
-    --brand: 35 45% 50%;
-    --brand-hover: 35 45% 42%;
+    --brand: 35 45% 39.6%;
+    --brand-hover: 35 45% 39.6%;
     --brand-light: 35 45% 13%;
     --brand-gradient-to: 50 40% 11%;
     --brand-border-light: 35 20% 24%;
@@ -873,8 +873,8 @@
   }
 
   .dark [data-theme="teas"] {
-    --brand: 95 50% 50%;
-    --brand-hover: 95 50% 42%;
+    --brand: 95 50% 33.5%;
+    --brand-hover: 95 50% 33.5%;
     --brand-light: 95 45% 13%;
     --brand-gradient-to: 60 40% 11%;
     --brand-border-light: 95 25% 24%;
@@ -885,8 +885,8 @@
   }
 
   .dark [data-theme="aws"] {
-    --brand: 20 90% 50%;
-    --brand-hover: 20 90% 42%;
+    --brand: 20 90% 41.4%;
+    --brand-hover: 20 90% 41.4%;
     --brand-light: 20 45% 13%;
     --brand-gradient-to: 40 40% 11%;
     --brand-border-light: 20 35% 24%;
@@ -909,8 +909,8 @@
   }
 
   .dark [data-theme="foodhandler"] {
-    --brand: 135 55% 50%;
-    --brand-hover: 135 55% 42%;
+    --brand: 135 55% 33.4%;
+    --brand-hover: 135 55% 33.4%;
     --brand-light: 135 45% 13%;
     --brand-gradient-to: 165 40% 11%;
     --brand-border-light: 135 30% 24%;
@@ -933,8 +933,8 @@
   }
 
   .dark [data-theme="hunter"] {
-    --brand: 70 45% 50%;
-    --brand-hover: 70 45% 42%;
+    --brand: 70 45% 32.9%;
+    --brand-hover: 70 45% 32.9%;
     --brand-light: 70 45% 13%;
     --brand-gradient-to: 40 40% 11%;
     --brand-border-light: 70 20% 24%;
@@ -957,7 +957,7 @@
   }
 
   .dark [data-theme="hesi"] {
-    --brand: 310 60% 50%;
+    --brand: 310 60% 48.6%;
     --brand-hover: 310 60% 42%;
     --brand-light: 310 45% 13%;
     --brand-gradient-to: 340 40% 11%;
@@ -969,8 +969,8 @@
   }
 
   .dark [data-theme="nclex"] {
-    --brand: 200 80% 50%;
-    --brand-hover: 200 80% 42%;
+    --brand: 200 80% 38.0%;
+    --brand-hover: 200 80% 38.0%;
     --brand-light: 200 45% 13%;
     --brand-gradient-to: 185 40% 11%;
     --brand-border-light: 200 35% 24%;
@@ -981,8 +981,8 @@
   }
 
   .dark [data-theme="asvab"] {
-    --brand: 95 30% 50%;
-    --brand-hover: 95 30% 42%;
+    --brand: 95 30% 37.7%;
+    --brand-hover: 95 30% 37.7%;
     --brand-light: 95 40% 13%;
     --brand-gradient-to: 60 40% 11%;
     --brand-border-light: 95 20% 24%;
@@ -1005,7 +1005,7 @@
   }
 
   .dark [data-theme="osha"] {
-    --brand: 205 55% 50%;
+    --brand: 205 55% 43.4%;
     --brand-hover: 205 55% 42%;
     --brand-light: 205 45% 13%;
     --brand-gradient-to: 180 40% 11%;
@@ -1017,8 +1017,8 @@
   }
 
   .dark [data-theme="forklift"] {
-    --brand: 42 80% 50%;
-    --brand-hover: 42 80% 42%;
+    --brand: 42 80% 32.3%;
+    --brand-hover: 42 80% 32.3%;
     --brand-light: 42 45% 13%;
     --brand-gradient-to: 20 40% 11%;
     --brand-border-light: 42 35% 24%;
@@ -1065,8 +1065,8 @@
   }
 
   .dark [data-theme="accuplacer"] {
-    --brand: 175 55% 50%;
-    --brand-hover: 175 55% 42%;
+    --brand: 175 55% 32.5%;
+    --brand-hover: 175 55% 32.5%;
     --brand-light: 175 45% 13%;
     --brand-gradient-to: 150 40% 11%;
     --brand-border-light: 175 30% 24%;
@@ -1089,8 +1089,8 @@
   }
 
   .dark [data-theme="lifeguard"] {
-    --brand: 190 75% 50%;
-    --brand-hover: 190 75% 42%;
+    --brand: 190 75% 33.0%;
+    --brand-hover: 190 75% 33.0%;
     --brand-light: 190 45% 13%;
     --brand-gradient-to: 165 40% 11%;
     --brand-border-light: 190 35% 24%;
@@ -1101,8 +1101,8 @@
   }
 
   .dark [data-theme="pnc"] {
-    --brand: 160 50% 50%;
-    --brand-hover: 160 50% 42%;
+    --brand: 160 50% 33.9%;
+    --brand-hover: 160 50% 33.9%;
     --brand-light: 160 45% 13%;
     --brand-gradient-to: 135 40% 11%;
     --brand-border-light: 160 25% 24%;
@@ -1137,8 +1137,8 @@
   }
 
   .dark [data-theme="crcst"] {
-    --brand: 195 85% 50%;
-    --brand-hover: 195 85% 42%;
+    --brand: 195 85% 34.3%;
+    --brand-hover: 195 85% 34.3%;
     --brand-light: 195 45% 13%;
     --brand-gradient-to: 210 40% 11%;
     --brand-border-light: 195 35% 24%;
@@ -1199,3 +1199,23 @@ html.native-app body {
   padding-left: env(safe-area-inset-left);
   padding-right: env(safe-area-inset-right);
 }
+
+/* Keyboard focus is independent of each exam's brand colour. */
+:where(a, button, input, select, textarea, [tabindex]):focus-visible {
+  outline: 3px solid #1d4ed8 !important;
+  outline-offset: 3px;
+  scroll-margin-block: 6rem;
+}
+.dark :where(a, button, input, select, textarea, [tabindex]):focus-visible {
+  outline-color: #93c5fd !important;
+}
+.skip-link { position: fixed; top: .5rem; left: .5rem; z-index: 100; padding: .75rem 1rem; background: #fff; color: #111827; transform: translateY(-200%); }
+.skip-link:focus { transform: translateY(0); }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+}
+
+/* Text needs stronger contrast than decorative brand accents. */
+.text-brand { color: hsl(var(--brand-dark)); }
+html:not(.dark) :is(.text-gray-400, .text-gray-500) { color: #626b79; }
+html:not(.dark) .fill-gray-400 { fill: #626b79; }

@@ -71,7 +71,7 @@ export function LanguageSwitcher({
                     {lang.flag}
                   </span>
                   <span className="flex-1">{lang.label}</span>
-                  {isActive && <Check className="h-4 w-4 text-brand" aria-hidden="true" />}
+                  {isActive && <Check className="h-4 w-4 text-brand-dark" aria-hidden="true" />}
                 </button>
               </li>
             );

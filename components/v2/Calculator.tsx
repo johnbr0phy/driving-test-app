@@ -140,7 +140,7 @@ export function Calculator() {
           placeholder="0"
           aria-label="Calculator expression"
         />
-        <div className="min-h-6 text-2xl font-bold tabular-nums">{result ?? ""}</div>
+        <div role="status" aria-live="polite" aria-atomic="true" className="min-h-6 text-2xl font-bold tabular-nums">{result ?? ""}</div>
       </div>
       <div className="mt-2 grid grid-cols-5 gap-1.5">
         {KEYS.flat().map((k, i) => (
@@ -148,6 +148,7 @@ export function Calculator() {
             key={i}
             type="button"
             onClick={() => press(k)}
+            aria-label={k === "⌫" ? "Delete last character" : k === "C" ? "Clear calculator" : k}
             className={`v2-tap rounded-lg border text-sm font-semibold ${k === "=" ? "border-brand bg-brand text-white" : /^[0-9.]$/.test(k) ? "border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900" : "border-gray-200 dark:border-gray-800 bg-gray-100 dark:bg-gray-800"}`}
           >
             {k}

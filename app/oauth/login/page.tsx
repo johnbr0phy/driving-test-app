@@ -20,7 +20,7 @@ export default function OAuthLoginPage() {
     <Suspense
       fallback={
         <div className="min-h-screen flex items-center justify-center bg-white dark:bg-gray-900">
-          <div className="animate-pulse text-gray-400">Loading...</div>
+          <div className="animate-pulse text-gray-500 dark:text-gray-400">Loading...</div>
         </div>
       }
     >
@@ -165,7 +165,7 @@ function OAuthLoginContent() {
   if (authLoading) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-white dark:bg-gray-900">
-        <div className="animate-pulse text-gray-400">Loading...</div>
+        <div className="animate-pulse text-gray-500 dark:text-gray-400">Loading...</div>
       </div>
     );
   }

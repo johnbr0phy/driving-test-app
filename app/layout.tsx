@@ -112,8 +112,9 @@ export default function RootLayout({
         <NativeAppShell />
         <Providers>
           <SuperAmazingFireworks />
+          <a href="#main-content" className="skip-link">Skip to main content</a>
           <HeaderSwitch />
-          <main className="flex-1 flex flex-col">{children}</main>
+          <main id="main-content" tabIndex={-1} className="flex-1 flex flex-col">{children}</main>
           <Footer />
         </Providers>
         <Script

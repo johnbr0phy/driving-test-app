@@ -30,7 +30,7 @@ export function DrillLockScreen({ exam, drill, detail, backHref }: { exam: ExamV
         <div className="mx-auto max-w-md px-6 py-8 text-center">
           <Image src={getTigerAsset(exam.id, 3)} alt="" width={112} height={112} className="mx-auto h-28 w-28 object-contain" />
           <h1 className="mt-3 flex items-center justify-center gap-2 text-xl font-bold text-gray-900 dark:text-gray-50">
-            <Lock className="h-5 w-5 text-gray-400" /> {drill.name}
+            <Lock className="h-5 w-5 text-gray-500 dark:text-gray-400" /> {drill.name}
           </h1>
           <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">
             {drill.blurb} {detail}, part of TigerTest Premium along with Practice Test 2 and {otherPremiumExams(exam)}.

@@ -46,7 +46,7 @@ export function TrainingTestNudge({ trainingCorrectCount, state }: TrainingTestN
         {/* Dismiss button */}
         <button
           onClick={handleDismiss}
-          className="absolute top-3 right-3 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 z-10 p-1"
+          className="absolute top-3 right-3 text-gray-500 dark:text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 z-10 p-1"
           aria-label="Dismiss"
         >
           <X className="h-4 w-4" />
@@ -68,8 +68,8 @@ export function TrainingTestNudge({ trainingCorrectCount, state }: TrainingTestN
             {/* Text */}
             <div className="flex-1 min-w-0">
               <div className="flex items-center gap-1.5 mb-0.5">
-                <Zap className="h-3.5 w-3.5 text-brand flex-shrink-0" />
-                <p className="text-xs font-semibold text-brand uppercase tracking-wide">
+                <Zap className="h-3.5 w-3.5 text-brand-dark flex-shrink-0" />
+                <p className="text-xs font-semibold text-brand-dark uppercase tracking-wide">
                   Ready to test yourself?
                 </p>
               </div>

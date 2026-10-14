@@ -1,5 +1,7 @@
 "use client";
 
+import { AccessibleOverlay } from "@/components/AccessibleOverlay";
+
 import { useState, useEffect, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
@@ -18,7 +20,7 @@ export default function LoginPage() {
   return (
     <Suspense fallback={
       <div className="bg-white dark:bg-gray-900 relative min-h-[80vh] flex items-center justify-center">
-        <div className="animate-pulse text-gray-400">Loading...</div>
+        <div className="animate-pulse text-gray-500 dark:text-gray-400">Loading...</div>
       </div>
     }>
       <LoginPageContent />
@@ -133,13 +135,13 @@ function LoginPageContent() {
         <CardContent>
           <div className="space-y-4">
             {error && (
-              <div className="bg-red-50 dark:bg-red-950 border border-red-200 dark:border-red-800 text-red-700 dark:text-red-300 px-4 py-3 rounded">
+              <div id="auth-error" role="alert" className="bg-red-50 dark:bg-red-950 border border-red-200 dark:border-red-800 text-red-700 dark:text-red-300 px-4 py-3 rounded">
                 {error}
               </div>
             )}
 
             {success && (
-              <div className="bg-green-50 dark:bg-green-950 border border-green-200 dark:border-green-800 text-green-700 dark:text-green-300 px-4 py-3 rounded">
+              <div role="status" className="bg-green-50 dark:bg-green-950 border border-green-200 dark:border-green-800 text-green-700 dark:text-green-300 px-4 py-3 rounded">
                 {success}
               </div>
             )}
@@ -171,6 +173,8 @@ function LoginPageContent() {
                 <Label htmlFor="email">{t("common.email")}</Label>
               <Input
                 id="email"
+                aria-describedby={error ? "auth-error" : undefined}
+                autoComplete="email"
                 type="email"
                 placeholder="your@email.com"
                 value={email}
@@ -186,13 +190,15 @@ function LoginPageContent() {
                 <button
                   type="button"
                   onClick={() => setShowResetPassword(true)}
-                  className="text-sm text-brand hover:underline"
+                  className="text-sm text-brand-dark hover:underline"
                 >
                   {t("common.forgotPassword")}
                 </button>
               </div>
               <Input
                 id="password"
+                aria-describedby={error ? "auth-error" : undefined}
+                autoComplete="current-password"
                 type="password"
                 placeholder="••••••••"
                 value={password}
@@ -208,7 +214,7 @@ function LoginPageContent() {
 
               <div className="text-center text-sm text-gray-600 dark:text-gray-300">
                 {t("common.noAccount")}{" "}
-                <Link href={redirectTo ? `/signup?redirect=${encodeURIComponent(redirectTo)}` : "/signup"} className="text-brand hover:underline font-semibold">
+                <Link href={redirectTo ? `/signup?redirect=${encodeURIComponent(redirectTo)}` : "/signup"} className="text-brand-dark hover:underline font-semibold">
                   {t("common.signUp")}
                 </Link>
               </div>
@@ -216,14 +222,18 @@ function LoginPageContent() {
 
             {/* Password Reset Modal */}
             {showResetPassword && (
-              <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
+              <AccessibleOverlay onClose={() => setShowResetPassword(false)} aria-label={t("login.resetPassword")} className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
                 <div className="bg-white dark:bg-gray-900 rounded-lg p-6 max-w-md w-full">
                   <h3 className="text-lg font-semibold mb-2">{t("login.resetPassword")}</h3>
                   <p className="text-gray-600 dark:text-gray-300 text-sm mb-4">
                     {t("login.resetPasswordDesc")}
                   </p>
                   <form onSubmit={handleResetPassword} className="space-y-4">
+                    {error && <p id="reset-error" role="alert" className="text-sm text-red-700 dark:text-red-300">{error}</p>}
                     <Input
+                      aria-label={t("common.email")}
+                      aria-describedby={error ? "reset-error" : undefined}
+                      autoComplete="email"
                       type="email"
                       placeholder="your@email.com"
                       value={email}
@@ -250,7 +260,7 @@ function LoginPageContent() {
                     </div>
                   </form>
                 </div>
-              </div>
+              </AccessibleOverlay>
             )}
           </div>
         </CardContent>

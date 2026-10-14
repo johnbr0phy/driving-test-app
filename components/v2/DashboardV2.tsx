@@ -182,7 +182,7 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
                   <div className={`text-2xl font-bold tabular-nums ${doneSteps === totalSteps ? "text-green-600 dark:text-green-400" : "text-gray-900 dark:text-gray-50"}`}>
                     {doneSteps}/{totalSteps}
                   </div>
-                  <div className="text-xs text-gray-400">complete</div>
+                  <div className="text-xs text-gray-500 dark:text-gray-400">complete</div>
                 </div>
               </div>
               <GoalStrip exam={exam} goal={goal} best={bestOverall} onEdit={() => setEditingGoal(true)} />
@@ -191,7 +191,7 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
           )}
 
           {/* Drills: one per skill area, built for the phone */}
-          <p className="text-[11px] font-bold uppercase tracking-widest text-gray-400 mb-2 flex items-center gap-1.5">
+          <p className="text-[11px] font-bold uppercase tracking-widest text-gray-500 dark:text-gray-400 mb-2 flex items-center gap-1.5">
             <Smartphone className="h-3.5 w-3.5" /> Train by skill · on your phone
           </p>
           <div className="mb-6 space-y-1.5">
@@ -241,7 +241,7 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
           </div>
 
           {/* Full-length tests: the desktop simulation */}
-          <p className="text-[11px] font-bold uppercase tracking-widest text-gray-400 mb-2 flex items-center gap-1.5">
+          <p className="text-[11px] font-bold uppercase tracking-widest text-gray-500 dark:text-gray-400 mb-2 flex items-center gap-1.5">
             <Monitor className="h-3.5 w-3.5" /> Full practice test · on a desktop, timed
           </p>
           <div className="mb-6 space-y-1.5">
@@ -282,7 +282,7 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
                     attachedBottom={isExpanded && hasAttempts}
                   >
                     {hasAttempts && (
-                      <p className={`text-xs mt-1 ${s.complete ? "text-green-600 dark:text-green-400" : "text-gray-400"}`}>
+                      <p className={`text-xs mt-1 ${s.complete ? "text-green-600 dark:text-green-400" : "text-gray-500 dark:text-gray-400"}`}>
                         {s.attempts.length === 1 ? "1 attempt" : `${s.attempts.length} attempts`} {isExpanded ? "▴" : "▾"}
                       </p>
                     )}
@@ -306,7 +306,7 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
             })}
           </div>
 
-          <p className="mt-6 text-center text-[11px] text-gray-400">{exam.copy.sourceLine}</p>
+          <p className="mt-6 text-center text-[11px] text-gray-500 dark:text-gray-400">{exam.copy.sourceLine}</p>
         </div>
       </div>
       <V2Paywall exam={exam} {...paywall.modalProps} />
@@ -325,7 +325,7 @@ function SignUpBanner({ exam, signupHref }: { exam: ExamV2Config; signupHref: st
           <p className="text-sm text-gray-700 dark:text-gray-200">
             <span className="font-bold">Sign up</span> to save your {exam.shortName} progress and track every question you miss
           </p>
-          <Link href={signupHref} className="text-xs text-brand hover:text-brand-dark font-medium mt-1 inline-block">
+          <Link href={signupHref} className="text-xs text-brand-dark hover:text-brand-darker font-medium mt-1 inline-block">
             Create free account →
           </Link>
         </div>
@@ -370,7 +370,7 @@ function GoalStrip({ exam, goal, best, onEdit }: { exam: ExamV2Config; goal: num
             </>
           )}
         </span>
-        <button type="button" onClick={onEdit} className="flex items-center gap-1 font-semibold text-brand">
+        <button type="button" onClick={onEdit} className="flex items-center gap-1 font-semibold text-brand-dark">
           <Pencil className="h-3 w-3" /> Change
         </button>
       </div>
@@ -378,7 +378,7 @@ function GoalStrip({ exam, goal, best, onEdit }: { exam: ExamV2Config; goal: num
         {best !== null && <div className={`absolute inset-y-0 left-0 rounded-full ${hit ? "bg-green-500" : "bg-brand"}`} style={{ width: pos(best) }} />}
         <div className="absolute -top-1 h-4 w-0.5 rounded bg-gray-900 dark:bg-gray-100" style={{ left: pos(goal) }} aria-hidden />
       </div>
-      <div className="mt-1 flex justify-between text-[10px] tabular-nums text-gray-400">
+      <div className="mt-1 flex justify-between text-[10px] tabular-nums text-gray-500 dark:text-gray-400">
         <span>{min}</span>
         <span>{best === null ? "Take the full test to see your score" : hit ? "Goal hit" : `${goal - best} to go`}</span>
         <span>{max}</span>
@@ -415,7 +415,7 @@ function AttemptsPanel({
               {i === attempts.length - 1 ? "First" : `#${attempts.length - i}`} · {shortDate(a.completedAt)}
             </span>
             <span className="flex items-center gap-3 tabular-nums">
-              <span className="text-xs text-gray-400">{a.sections.map((s) => `${getSectionV2(exam, s.section).shortName} ${s.scaled}`).join(" · ")}</span>
+              <span className="text-xs text-gray-500 dark:text-gray-400">{a.sections.map((s) => `${getSectionV2(exam, s.section).shortName} ${s.scaled}`).join(" · ")}</span>
               <span className={`font-bold ${a.composite >= goal ? "text-green-600 dark:text-green-400" : "text-gray-900 dark:text-gray-50"}`}>{a.composite}</span>
             </span>
           </div>
@@ -434,7 +434,7 @@ function AttemptsPanel({
             onClick={() => {
               if (window.confirm("Discard the test in progress and start over next time?")) onDiscard();
             }}
-            className="w-full text-center text-xs font-semibold text-gray-400"
+            className="w-full text-center text-xs font-semibold text-gray-500 dark:text-gray-400"
           >
             Discard the attempt in progress
           </button>

@@ -357,21 +357,21 @@ export default async function KoreanStateDMVPage({ params }: PageProps) {
             운전자 교본을 바탕으로 만든 {state.name} 맞춤 연습문제 200개로
             대비할 수 있습니다.
           </p>
-          <Link href={`/signup?state=${state.code}`}>
-            <Button
+          <Button asChild
               size="lg"
               className="text-lg px-8 py-6 bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 font-bold rounded-xl"
             >
+            <Link href={`/signup?state=${state.code}`}>
               무료로 연습 시작하기
-            </Button>
-          </Link>
+            </Link>
+          </Button>
         </div>
 
         {/* State Stats Cards */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
           <Card className="bg-gradient-to-br from-brand-light to-brand-gradient-to border-brand-border-light">
             <CardContent className="p-4 md:p-6 text-center">
-              <FileText className="h-6 w-6 md:h-8 md:w-8 text-brand mx-auto mb-2" />
+              <FileText className="h-6 w-6 md:h-8 md:w-8 text-brand-dark mx-auto mb-2" />
               <div className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 mb-1">
                 {state.writtenTestQuestions}
               </div>
@@ -381,7 +381,7 @@ export default async function KoreanStateDMVPage({ params }: PageProps) {
 
           <Card className="bg-gradient-to-br from-brand-light to-brand-gradient-to border-brand-border-light">
             <CardContent className="p-4 md:p-6 text-center">
-              <Target className="h-6 w-6 md:h-8 md:w-8 text-brand mx-auto mb-2" />
+              <Target className="h-6 w-6 md:h-8 md:w-8 text-brand-dark mx-auto mb-2" />
               <div className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 mb-1">
                 {state.passingScore}%
               </div>
@@ -391,7 +391,7 @@ export default async function KoreanStateDMVPage({ params }: PageProps) {
 
           <Card className="bg-gradient-to-br from-brand-light to-brand-gradient-to border-brand-border-light">
             <CardContent className="p-4 md:p-6 text-center">
-              <Clock className="h-6 w-6 md:h-8 md:w-8 text-brand mx-auto mb-2" />
+              <Clock className="h-6 w-6 md:h-8 md:w-8 text-brand-dark mx-auto mb-2" />
               <div className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 mb-1">
                 {state.minPermitAge}
               </div>
@@ -401,7 +401,7 @@ export default async function KoreanStateDMVPage({ params }: PageProps) {
 
           <Card className="bg-gradient-to-br from-brand-light to-brand-gradient-to border-brand-border-light">
             <CardContent className="p-4 md:p-6 text-center">
-              <AlertCircle className="h-6 w-6 md:h-8 md:w-8 text-brand mx-auto mb-2" />
+              <AlertCircle className="h-6 w-6 md:h-8 md:w-8 text-brand-dark mx-auto mb-2" />
               <div className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 mb-1">
                 {rawPassing}/{state.writtenTestQuestions}
               </div>
@@ -491,7 +491,7 @@ export default async function KoreanStateDMVPage({ params }: PageProps) {
                   href={landingInfo.handbookUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-brand hover:text-brand-dark font-medium"
+                  className="inline-flex items-center gap-2 text-brand-dark hover:text-brand-darker font-medium"
                 >
                   <BookOpen className="h-4 w-4" />
                   {landingInfo.handbookName} 내려받기
@@ -556,14 +556,14 @@ export default async function KoreanStateDMVPage({ params }: PageProps) {
           <p className="text-brand-light text-lg mb-6">
             TigerTest로 첫 응시에 합격한 수많은 {state.name} 운전자들과 함께하세요
           </p>
-          <Link href={`/signup?state=${state.code}`}>
-            <Button
+          <Button asChild
               size="lg"
               className="text-lg px-8 py-6 bg-white dark:bg-gray-900 text-brand-dark hover:bg-gray-100 dark:hover:bg-gray-800 font-bold rounded-xl"
             >
+            <Link href={`/signup?state=${state.code}`}>
               지금 연습 시작하기 — 무료입니다
-            </Button>
-          </Link>
+            </Link>
+          </Button>
         </div>
 
         {/* Testimonials */}
@@ -625,7 +625,7 @@ export default async function KoreanStateDMVPage({ params }: PageProps) {
                       <span className="font-medium text-gray-900 dark:text-gray-50">
                         {neighbor.name}
                       </span>
-                      <ChevronRight className="h-4 w-4 text-gray-400" />
+                      <ChevronRight className="h-4 w-4 text-gray-500 dark:text-gray-400" />
                     </Link>
                   )
               )}
@@ -638,14 +638,14 @@ export default async function KoreanStateDMVPage({ params }: PageProps) {
           <p className="text-gray-600 dark:text-gray-300 mb-4">
             {state.name} 운전면허 필기시험 공부, 지금 시작해 볼까요?
           </p>
-          <Link href={`/signup?state=${state.code}`}>
-            <Button
+          <Button asChild
               size="lg"
               className="text-lg px-8 py-6 bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 font-bold rounded-xl"
             >
+            <Link href={`/signup?state=${state.code}`}>
               무료로 연습 시작하기
-            </Button>
-          </Link>
+            </Link>
+          </Button>
           <p className="text-sm text-gray-500 dark:text-gray-400 mt-3">
             계정이 필요 없습니다. 무료로 시작하세요.
           </p>

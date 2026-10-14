@@ -68,7 +68,7 @@ export default function OnboardingSelectStatePage() {
         <div className="flex flex-wrap items-center justify-center gap-2 text-2xl md:text-3xl font-medium text-gray-800 dark:text-gray-100">
           <span>{t("onboarding.iNeedToPass")}</span>
           <Select onValueChange={setSelectedState} value={selectedState || undefined}>
-            <SelectTrigger className="w-auto inline-flex text-2xl md:text-3xl font-semibold text-brand border-none shadow-none focus:ring-0 focus:ring-offset-0 px-1 underline decoration-brand-border decoration-2 underline-offset-4 hover:decoration-brand h-auto">
+            <SelectTrigger aria-label={t("signup.selectLocation")} className="w-auto inline-flex text-2xl md:text-3xl font-semibold text-brand-dark border-none shadow-none focus:ring-0 focus:ring-offset-0 px-1 underline decoration-brand-border decoration-2 underline-offset-4 hover:decoration-brand h-auto">
               <SelectValue placeholder={t("onboarding.selectLocation")} />
             </SelectTrigger>
             <SelectContent>
@@ -92,7 +92,7 @@ export default function OnboardingSelectStatePage() {
 
         <div className="text-center text-sm text-gray-600 dark:text-gray-300">
           {t("common.alreadyHaveAccount")}{" "}
-          <Link href="/login" className="text-brand hover:underline font-semibold">
+          <Link href="/login" className="text-brand-dark hover:underline font-semibold">
             {t("common.logIn")}
           </Link>
         </div>

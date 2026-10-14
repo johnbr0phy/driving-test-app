@@ -1,5 +1,9 @@
 "use client";
 
+import { FocusMode } from "./FocusMode";
+
+import { AccessibleOverlay } from "@/components/AccessibleOverlay";
+
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
@@ -117,7 +121,7 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
   };
 
   if (!hydrated || !drill || !gateReady) {
-    return <div className="v2-focus items-center justify-center text-gray-600 dark:text-gray-300">Loading...</div>;
+    return <FocusMode className="v2-focus items-center justify-center text-gray-600 dark:text-gray-300">Loading...</FocusMode>;
   }
 
   if (locked) {
@@ -130,7 +134,7 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
   const missedSkill = question && revealed && !isCorrect(question, answer) ? matchBasicsSkill(question, drill) : null;
 
   return (
-    <div className="v2-focus">
+    <FocusMode className="v2-focus">
       <div className="v2-safe-top shrink-0 border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-3 pb-2">
         <div className="flex items-center gap-2">
           <Link href={backHref} className="v2-tap -ml-1 flex w-10 items-center justify-center rounded-full text-gray-500 dark:text-gray-400" aria-label="Back">
@@ -162,7 +166,7 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
               </div>
             </div>
           ) : question ? (
-            <QuestionView
+            <QuestionView focusOnChange
               key={question.id}
               question={question}
               stimulus={getStimulus(exam.id, question)}
@@ -179,7 +183,7 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
             <div className="v2-pop mt-4 rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-4 py-3">
               <div className="text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400">Brush up on the basics</div>
               <button type="button" onClick={() => setBrushUp(true)} className="v2-tap mt-1 flex w-full items-center gap-3 text-left">
-                {hasExplainer(missedSkill) ? <Play className="h-5 w-5 shrink-0 text-brand" /> : <BookOpen className="h-5 w-5 shrink-0 text-brand" />}
+                {hasExplainer(missedSkill) ? <Play className="h-5 w-5 shrink-0 text-brand-dark" /> : <BookOpen className="h-5 w-5 shrink-0 text-brand-dark" />}
                 <span className="min-w-0 flex-1">
                   <span className="block text-[17px] font-bold text-gray-900 dark:text-gray-50">{missedSkill.name}</span>
                   <span className="block text-sm text-gray-500 dark:text-gray-400">{hasExplainer(missedSkill) ? "Listen to the 30-second explainer, or read the rule" : "The rule, the trick and two examples"}</span>
@@ -209,7 +213,7 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
       {missedSkill && <BasicsRuleSheet exam={exam} skill={missedSkill} open={brushUp} onClose={() => setBrushUp(false)} />}
 
       {confirmReset && (
-        <div className="fixed inset-0 z-[90] flex items-center justify-center bg-black/50 p-4" role="alertdialog" aria-modal="true">
+        <AccessibleOverlay onClose={() => setConfirmReset(false)} aria-label="Reset this drill?" className="fixed inset-0 z-[90] flex items-center justify-center bg-black/50 p-4" role="alertdialog">
           <div className="v2-pop w-full max-w-sm rounded-2xl bg-white dark:bg-gray-900 p-5 shadow-xl">
             <div className="text-lg font-bold">Reset this drill?</div>
             <p className="mt-1 text-sm text-gray-600 dark:text-gray-300">Mastery for {drill.name} starts over. Your test scores are not affected.</p>
@@ -218,8 +222,8 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
               <button type="button" onClick={() => { resetDrill(key); setConfirmReset(false); currentId.current = null; setQuestion(null); setDone(false); }} className="v2-tap flex-1 rounded-xl bg-brand text-sm font-bold text-white">Reset</button>
             </div>
           </div>
-        </div>
+        </AccessibleOverlay>
       )}
-    </div>
+    </FocusMode>
   );
 }

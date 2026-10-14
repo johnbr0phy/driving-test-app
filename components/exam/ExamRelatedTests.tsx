@@ -30,7 +30,7 @@ export function ExamRelatedTests({ examId }: { examId: string }) {
         ))}
       </ul>
       <p className="text-center mt-8">
-        <Link href="/tests" className="text-brand font-medium hover:underline">
+        <Link href="/tests" className="text-brand-dark font-medium hover:underline">
           See all {TEST_CATALOG.length} practice tests
         </Link>
       </p>

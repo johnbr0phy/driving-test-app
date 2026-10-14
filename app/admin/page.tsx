@@ -312,11 +312,11 @@ export default function AdminPage() {
           <Card>
             <CardContent className="p-4">
               <div className="flex items-center gap-4">
-                <Users className="h-8 w-8 text-brand" />
+                <Users className="h-8 w-8 text-brand-dark" />
                 <div>
                   <p className="text-2xl font-bold">{stats?.totalUsers || 0}</p>
                   <p className="text-sm text-gray-500 dark:text-gray-400">Total Users</p>
-                  <p className="text-xs text-gray-400">
+                  <p className="text-xs text-gray-500 dark:text-gray-400">
                     {stats?.payingUsers || 0} paying
                   </p>
                 </div>
@@ -330,7 +330,7 @@ export default function AdminPage() {
                 <div>
                   <p className="text-2xl font-bold">{stats?.activeUsers7d || 0}</p>
                   <p className="text-sm text-gray-500 dark:text-gray-400">Active (7 days)</p>
-                  <p className="text-xs text-gray-400">
+                  <p className="text-xs text-gray-500 dark:text-gray-400">
                     {stats?.totalUsers ? Math.round((stats.activeUsers7d / stats.totalUsers) * 100) : 0}% of users
                   </p>
                 </div>
@@ -344,7 +344,7 @@ export default function AdminPage() {
                 <div>
                   <p className="text-2xl font-bold">{stats?.newUsers7d || 0}</p>
                   <p className="text-sm text-gray-500 dark:text-gray-400">New Users (7d)</p>
-                  <p className="text-xs text-gray-400">
+                  <p className="text-xs text-gray-500 dark:text-gray-400">
                     {stats?.totalUsers ? ((stats.newUsers7d / stats.totalUsers) * 100).toFixed(1) : 0}% of total
                   </p>
                 </div>
@@ -361,7 +361,7 @@ export default function AdminPage() {
                   const isUp = pct > 0;
                   const isDown = pct < 0;
                   const Icon = isUp ? TrendingUp : isDown ? TrendingDown : Minus;
-                  const color = isUp ? 'text-green-500 dark:text-green-400' : isDown ? 'text-red-500 dark:text-red-400' : 'text-gray-400';
+                  const color = isUp ? 'text-green-500 dark:text-green-400' : isDown ? 'text-red-500 dark:text-red-400' : 'text-gray-500 dark:text-gray-400';
                   return (
                     <>
                       <Icon className={`h-8 w-8 ${color}`} />
@@ -370,7 +370,7 @@ export default function AdminPage() {
                           {isUp ? '+' : ''}{pct}%
                         </p>
                         <p className="text-sm text-gray-500 dark:text-gray-400">7d Trend</p>
-                        <p className="text-xs text-gray-400">
+                        <p className="text-xs text-gray-500 dark:text-gray-400">
                           {prev} → {curr} active
                         </p>
                       </div>
@@ -391,7 +391,7 @@ export default function AdminPage() {
                       : "—"}
                   </p>
                   <p className="text-sm text-gray-500 dark:text-gray-400">Conversion</p>
-                  <p className="text-xs text-gray-400">
+                  <p className="text-xs text-gray-500 dark:text-gray-400">
                     {stats?.conversion?.medianDaysToPurchase != null
                       ? `~${stats.conversion.medianDaysToPurchase.toFixed(1)}d to upgrade`
                       : "no purchases yet"}
@@ -407,7 +407,7 @@ export default function AdminPage() {
                 <div>
                   <p className="text-2xl font-bold">{stats?.totalShareClicks || 0}</p>
                   <p className="text-sm text-gray-500 dark:text-gray-400">Share Clicks</p>
-                  <p className="text-xs text-gray-400">
+                  <p className="text-xs text-gray-500 dark:text-gray-400">
                     {(() => {
                       const today = new Date().toISOString().split('T')[0];
                       const todayCount = stats?.shareClicksDaily?.[today] || 0;
@@ -425,7 +425,7 @@ export default function AdminPage() {
                 <div>
                   <p className="text-2xl font-bold">{stats?.superAmazing?.enabledUsers ?? 0}</p>
                   <p className="text-sm text-gray-500 dark:text-gray-400">Super Amazing On</p>
-                  <p className="text-xs text-gray-400">
+                  <p className="text-xs text-gray-500 dark:text-gray-400">
                     {stats?.superAmazing?.eligibleUsers ?? 0} eligible · {stats?.superAmazing?.everEnabledUsers ?? 0} ever on
                   </p>
                 </div>
@@ -531,7 +531,7 @@ export default function AdminPage() {
               </ResponsiveContainer>
             </div>
             {graphMetric === 'questions' && (
-              <p className="mt-2 text-xs text-gray-400">
+              <p className="mt-2 text-xs text-gray-500 dark:text-gray-400">
                 {questionsBackfillPending
                   ? 'Backfilling history from stored answer data — showing the 100 most recently active users until it completes (usually under a minute).'
                   : 'Counts every training + test answer across all users (guests included), recorded permanently as questions are answered.'}
@@ -546,7 +546,7 @@ export default function AdminPage() {
               <CardTitle className="flex items-center gap-2">
                 <GraduationCap className="h-5 w-5 text-emerald-500 dark:text-emerald-400" />
                 Pass Rate by State
-                <span className="text-xs font-normal text-gray-400 ml-1">
+                <span className="text-xs font-normal text-gray-500 dark:text-gray-400 ml-1">
                   (top 100 active users)
                 </span>
               </CardTitle>
@@ -564,11 +564,11 @@ export default function AdminPage() {
                         <div className="flex items-center justify-between text-sm mb-1">
                           <span className="font-medium">
                             {getStateName(s.code)}{" "}
-                            <span className="text-gray-400 text-xs">({s.code})</span>
+                            <span className="text-gray-500 dark:text-gray-400 text-xs">({s.code})</span>
                           </span>
                           <span className="text-gray-600 dark:text-gray-300 tabular-nums">
                             {pct.toFixed(0)}%{" "}
-                            <span className="text-gray-400 text-xs">({s.passed}/{s.attempts})</span>
+                            <span className="text-gray-500 dark:text-gray-400 text-xs">({s.passed}/{s.attempts})</span>
                           </span>
                         </div>
                         <div className="h-2 w-full bg-gray-100 dark:bg-gray-800 rounded overflow-hidden">
@@ -641,7 +641,7 @@ export default function AdminPage() {
                     })}
                   </tbody>
                 </table>
-                <p className="mt-3 text-xs text-gray-400">
+                <p className="mt-3 text-xs text-gray-500 dark:text-gray-400">
                   Conversion = signed-in users who hit a paywall and later became premium. Anonymous hits count toward
                   &ldquo;Hits&rdquo; but not &ldquo;Users&rdquo;. Attribution starts accumulating from first deploy.
                 </p>
@@ -663,7 +663,7 @@ export default function AdminPage() {
               </CardTitle>
               <div className="flex flex-wrap items-center gap-2">
                 <div className="relative">
-                  <Search className="h-4 w-4 absolute left-2 top-1/2 -translate-y-1/2 text-gray-400" />
+                  <Search className="h-4 w-4 absolute left-2 top-1/2 -translate-y-1/2 text-gray-500 dark:text-gray-400" />
                   <input
                     type="text"
                     value={userSearch}
@@ -736,18 +736,18 @@ export default function AdminPage() {
                             {getStateName(userData.selectedState)} ({userData.selectedState})
                           </span>
                         ) : (
-                          <span className="text-gray-400">Not selected</span>
+                          <span className="text-gray-500 dark:text-gray-400">Not selected</span>
                         )}
                       </td>
                       <td className="py-3 px-4 text-gray-600 dark:text-gray-300">
-                        {userData.lastUpdated ? formatDate(userData.lastUpdated) : <span className="text-gray-400">Never</span>}
+                        {userData.lastUpdated ? formatDate(userData.lastUpdated) : <span className="text-gray-500 dark:text-gray-400">Never</span>}
                       </td>
                       <td className="py-3 px-4">
                         <span className="font-medium">{userData.trainingQuestionsAnswered}</span>
                       </td>
                       <td className="py-3 px-4">
                         <span className="font-medium">{userData.testQuestionsAnswered}</span>
-                        <span className="text-gray-400 text-xs ml-1">({userData.testsCompleted} tests)</span>
+                        <span className="text-gray-500 dark:text-gray-400 text-xs ml-1">({userData.testsCompleted} tests)</span>
                       </td>
                       <td className="py-3 px-4">
                         {userData.convertedPaywall ? (
@@ -758,9 +758,9 @@ export default function AdminPage() {
                             {userData.convertedPaywall.label}
                           </span>
                         ) : userData.isPremium ? (
-                          <span className="text-gray-400 text-xs">Unknown</span>
+                          <span className="text-gray-500 dark:text-gray-400 text-xs">Unknown</span>
                         ) : (
-                          <span className="text-gray-400">—</span>
+                          <span className="text-gray-500 dark:text-gray-400">—</span>
                         )}
                       </td>
                       <td className="py-3 px-4 text-right">

@@ -99,7 +99,7 @@ function UnsubscribeContent() {
             </button>
             <button
               onClick={() => setStatus("standard-exit")}
-              className="text-sm text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 underline underline-offset-2 transition-colors"
+              className="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 underline underline-offset-2 transition-colors"
             >
               Not yet, just unsubscribing
             </button>
@@ -144,11 +144,11 @@ function UnsubscribeContent() {
             <p className="text-gray-600 dark:text-gray-300 mb-6">
               No more emails from us. Good luck with the test — you&apos;ve got this.
             </p>
-            <Link href="/dashboard">
-              <Button className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200">
+            <Button asChild className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200">
+              <Link href="/dashboard">
                 Back to TigerTest
-              </Button>
-            </Link>
+              </Link>
+            </Button>
             <div className="mt-6">
               <Link href={requestHref} className="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 underline underline-offset-2">
                 One last thing: what test should we build next?
@@ -167,11 +167,11 @@ function UnsubscribeContent() {
             </div>
             <h1 className="text-2xl font-semibold mb-3">Something went wrong</h1>
             <p className="text-gray-600 dark:text-gray-300 mb-8">{errorMessage}</p>
-            <Link href="/">
-              <Button className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200">
+            <Button asChild className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200">
+              <Link href="/">
                 Go Home
-              </Button>
-            </Link>
+              </Link>
+            </Button>
           </>
         )}
 

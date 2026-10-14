@@ -155,7 +155,7 @@ export function ExamDashboard({ exam }: { exam: ExamConfig }) {
                   <p className="text-sm text-gray-700 dark:text-gray-200">
                     <span className="font-bold">{t("common.signUp")}</span> {exam.copy.guestPrompt}
                   </p>
-                  <Link href={routes.signup} className="text-xs text-brand hover:text-brand-dark font-medium mt-1 inline-block">
+                  <Link href={routes.signup} className="text-xs text-brand-dark hover:text-brand-darker font-medium mt-1 inline-block">
                     {t("dashboard.createFreeAccount")}
                   </Link>
                 </div>
@@ -182,14 +182,14 @@ export function ExamDashboard({ exam }: { exam: ExamConfig }) {
             </div>
             <div className="flex-shrink-0 text-right">
               <div className="text-2xl font-bold tabular-nums text-gray-900 dark:text-gray-50">{completedSteps}/{totalSteps}</div>
-              <div className="text-xs text-gray-400">{t("dashboard.stampComplete").toLowerCase()}</div>
+              <div className="text-xs text-gray-500 dark:text-gray-400">{t("dashboard.stampComplete").toLowerCase()}</div>
             </div>
           </div>
           <ExamStateLine exam={exam} />
         </div>
 
         {/* Training sets, one per content area */}
-        <p className="text-[11px] font-bold uppercase tracking-widest text-gray-400 mb-2">
+        <p className="text-[11px] font-bold uppercase tracking-widest text-gray-500 dark:text-gray-400 mb-2">
           {exam.copy.trainingHeading}
         </p>
         <div className="mb-6 space-y-1.5">
@@ -221,7 +221,7 @@ export function ExamDashboard({ exam }: { exam: ExamConfig }) {
         </div>
 
         {/* Practice tests */}
-        <p className="text-[11px] font-bold uppercase tracking-widest text-gray-400 mb-2">
+        <p className="text-[11px] font-bold uppercase tracking-widest text-gray-500 dark:text-gray-400 mb-2">
           {exam.copy.testsHeading}
         </p>
         <div className="mb-6 space-y-1.5">
@@ -287,7 +287,7 @@ export function ExamDashboard({ exam }: { exam: ExamConfig }) {
                           <span className={completed ? "text-green-300" : "text-gray-300"}>·</span>
                         </>
                       )}
-                      <span className={completed ? "text-green-600 dark:text-green-400" : "text-gray-400"}>
+                      <span className={completed ? "text-green-600 dark:text-green-400" : "text-gray-500 dark:text-gray-400"}>
                         {testMisses.attempts === 1
                           ? t("dashboard.attemptsOne")
                           : t("dashboard.attemptsCount").replace("{{n}}", String(testMisses.attempts))}{" "}
@@ -331,7 +331,7 @@ export function ExamDashboard({ exam }: { exam: ExamConfig }) {
                           <ChevronRight className="h-4 w-4" />
                         </button>
                         {stillMissed > 0 && (
-                          <p className="text-center text-[11px] text-gray-400">
+                          <p className="text-center text-[11px] text-gray-500 dark:text-gray-400">
                             {t("dashboard.drillTip")
                               .replace("{{n}}", String(stillMissed))
                               .replace("{{pct}}", String(Math.max(...attemptPoints.map((p) => p.pct))))}
@@ -351,7 +351,7 @@ export function ExamDashboard({ exam }: { exam: ExamConfig }) {
           <Link href={routes.stats} className="block">
             <div className="rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 p-4 flex items-center gap-3 hover:shadow-md transition-shadow">
               <div className="w-8 h-8 rounded-full bg-brand-light flex items-center justify-center flex-shrink-0">
-                <BarChart3 className="h-4 w-4 text-brand" />
+                <BarChart3 className="h-4 w-4 text-brand-dark" />
               </div>
               <div className="flex-1 min-w-0">
                 <h3 className="font-semibold text-sm text-gray-900 dark:text-gray-50">Your stats</h3>
@@ -362,7 +362,7 @@ export function ExamDashboard({ exam }: { exam: ExamConfig }) {
           </Link>
         )}
 
-        <p className="mt-6 text-center text-[11px] text-gray-400">
+        <p className="mt-6 text-center text-[11px] text-gray-500 dark:text-gray-400">
           {exam.copy.sourceLine}{" "}
           <Link href={exam.slug} className="underline hover:text-gray-600 dark:hover:text-gray-300">About this practice test</Link>
         </p>

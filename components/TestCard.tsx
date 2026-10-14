@@ -66,10 +66,10 @@ export function TestCard({
 
   const getSubtext = () => {
     if (locked) {
-      return <span className="text-gray-400">{t("common.locked")}</span>;
+      return <span className="text-gray-500 dark:text-gray-400">{t("common.locked")}</span>;
     }
     if (isPremiumLocked) {
-      return <span className="text-brand">{t("common.unlockWithPremium")}</span>;
+      return <span className="text-brand-dark">{t("common.unlockWithPremium")}</span>;
     }
     if (status === "in-progress") {
       const answeredCount = Math.round((progress / 100) * totalQuestions);
@@ -77,7 +77,7 @@ export function TestCard({
     }
     if (status === "completed" && bestScore !== undefined) {
       return (
-        <span className={bestPercentage >= 70 ? 'text-green-600 dark:text-green-400' : 'text-brand'}>
+        <span className={bestPercentage >= 70 ? 'text-green-600 dark:text-green-400' : 'text-brand-dark'}>
           {bestScore}/{totalQuestions}
         </span>
       );
@@ -85,7 +85,7 @@ export function TestCard({
     if (readyToTest) {
       return <span className="text-green-600 dark:text-green-400 font-medium">You&apos;re ready — give it a go →</span>;
     }
-    return <span className="text-gray-400">{t("testCard.fiftyQuestions")}</span>;
+    return <span className="text-gray-500 dark:text-gray-400">{t("testCard.fiftyQuestions")}</span>;
   };
 
   const cardContent = (
@@ -108,7 +108,7 @@ export function TestCard({
             {getSubtext()}
           </p>
         </div>
-        {!locked && <ChevronRight className={`h-5 w-5 ${isPremiumLocked ? "text-brand-muted" : "text-gray-400"}`} />}
+        {!locked && <ChevronRight className={`h-5 w-5 ${isPremiumLocked ? "text-brand-muted" : "text-gray-500 dark:text-gray-400"}`} />}
       </CardContent>
     </Card>
   );

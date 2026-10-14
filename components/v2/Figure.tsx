@@ -1,5 +1,7 @@
 "use client";
 
+import { AccessibleOverlay } from "@/components/AccessibleOverlay";
+
 import { useState } from "react";
 import { Figure as FigureT } from "@/lib/v2/types";
 
@@ -12,14 +14,14 @@ export function Figure({ figure, compact = false }: { figure: FigureT; compact?:
         type="button"
         onClick={() => setOpen(true)}
         className={`block w-full rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-2 text-left ${compact ? "max-w-xs" : "max-w-md"}`}
-        aria-label="Open figure full size"
+        aria-label={`Open figure full size: ${figure.alt}`}
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={figure.src} alt={figure.alt} className="mx-auto h-auto w-full max-h-72 object-contain dark:invert" loading="lazy" />
-        <div className="mt-1 text-center text-[11px] text-gray-400">Tap to enlarge</div>
+        <div className="mt-1 text-center text-[11px] text-gray-500 dark:text-gray-400">Tap to enlarge</div>
       </button>
       {open && (
-        <div className="fixed inset-0 z-[80] flex flex-col bg-black/90" onClick={() => setOpen(false)} role="dialog" aria-modal="true">
+        <AccessibleOverlay onClose={() => setOpen(false)} aria-label="Figure full size" className="fixed inset-0 z-[80] flex flex-col bg-black/90" onClick={() => setOpen(false)}>
           <div className="flex justify-end p-3 v2-safe-top">
             <button type="button" className="v2-tap rounded-full bg-white/15 px-4 text-sm font-semibold text-white" onClick={() => setOpen(false)}>
               Close
@@ -30,7 +32,7 @@ export function Figure({ figure, compact = false }: { figure: FigureT; compact?:
             <img src={figure.src} alt={figure.alt} className="max-h-full w-full max-w-3xl rounded bg-white dark:bg-gray-900 object-contain" />
           </div>
           <p className="px-5 pb-6 text-center text-xs text-gray-300 v2-safe-bottom">{figure.alt}</p>
-        </div>
+        </AccessibleOverlay>
       )}
     </>
   );

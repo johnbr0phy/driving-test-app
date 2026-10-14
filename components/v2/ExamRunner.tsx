@@ -1,5 +1,9 @@
 "use client";
 
+import { FocusMode } from "./FocusMode";
+
+import { AccessibleOverlay } from "@/components/AccessibleOverlay";
+
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 import { Flag, ChevronLeft, ChevronRight, Calculator as CalcIcon, BookOpen, X, Strikethrough } from "lucide-react";
@@ -106,7 +110,11 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
   useEffect(() => {
     if (!session || session.phase !== "questions" || !question || tool !== "none") return;
     const onKey = (e: KeyboardEvent) => {
-      if ((e.target as HTMLElement)?.tagName === "INPUT") return;
+      if (confirm || e.defaultPrevented || e.repeat || e.ctrlKey || e.altKey || e.metaKey || e.shiftKey) return;
+      // Shortcuts work wherever focus is (including a just-clicked answer),
+      // except while typing or inside an open figure or dialog.
+      const target = e.target as HTMLElement;
+      if (target.closest("input, textarea, select, [contenteditable=true], [role=dialog], [role=alertdialog]")) return;
       const linearNow = !!def?.section.linear;
       if (e.key === "ArrowRight") { if (!linearNow || isComplete(question, stage!.answers[question.id])) goTo(1); }
       else if (e.key === "ArrowLeft") { if (!linearNow) goTo(-1); }
@@ -119,20 +127,20 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [session?.phase, question?.id, tool, stage]);
+  }, [session?.phase, question?.id, tool, stage, confirm]);
 
   if (!hydrated || !session || !stage || !def) {
     return (
-      <div className="v2-focus items-center justify-center">
+      <FocusMode className="v2-focus items-center justify-center">
         <div className="text-gray-600 dark:text-gray-300">Loading your test...</div>
-      </div>
+      </FocusMode>
     );
   }
 
   const total = stage.questionIds.length;
   const answeredCount = stage.questionIds.filter((id) => isAnswered(stage.answers[id])).length;
   const stageTitle = def.section.modules.length > 1 ? `${def.section.name} · Module ${def.module.module}` : def.section.name;
-  const timed = def.module.timeLimit > 0;
+  const timed = def.module.timeLimit > 0 && session.timing !== "untimed";
   const linear = !!def.section.linear;
 
   function toggleMulti(cur: AnswerValue | undefined, orig: number): number[] {
@@ -174,7 +182,7 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
     update((s) => ({
       ...s,
       phase: "questions",
-      stages: s.stages.map((st, i) => (i === s.stage ? { ...st, runningSince: new Date().toISOString() } : st)),
+      stages: s.stages.map((st, i) => (i === s.stage ? { ...st, runningSince: s.timing === "untimed" ? undefined : new Date().toISOString() } : st)),
     }));
   }
 
@@ -187,8 +195,8 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
   }
 
   function resumeClockIfNeeded() {
-    if (!stage.runningSince && !stage.submittedAt) {
-      update((s) => ({ ...s, stages: s.stages.map((st, i) => (i === s.stage ? { ...st, runningSince: new Date().toISOString() } : st)) }));
+    if (timed && !stage.runningSince && !stage.submittedAt) {
+      update((s) => ({ ...s, stages: s.stages.map((st, i) => (i === s.stage ? { ...st, runningSince: s.timing === "untimed" ? undefined : new Date().toISOString() } : st)) }));
     }
   }
 
@@ -196,11 +204,11 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
   if (session.phase === "intro") {
     const isResume = timed && stage.runningSince === undefined && stage.remaining < def.module.timeLimit;
     return (
-      <div className="v2-focus">
+      <FocusMode className="v2-focus">
         <TopBar title={exam.shortName} onExit={() => setConfirm("exit")} />
         <div className="v2-scroll">
           <div className="mx-auto max-w-2xl px-4 py-8">
-            <div className="text-sm font-semibold uppercase tracking-wide text-brand">Section {exam.sections.findIndex((s) => s.key === def.section.key) + 1} of {exam.sections.length}</div>
+            <div className="text-sm font-semibold uppercase tracking-wide text-brand-dark">Section {exam.sections.findIndex((s) => s.key === def.section.key) + 1} of {exam.sections.length}</div>
             <h1 className="mt-1 text-2xl font-bold md:text-3xl">{stageTitle}</h1>
             <div className="mt-3 flex flex-wrap gap-2 text-sm">
               <span className="rounded-full bg-gray-100 dark:bg-gray-800 px-3 py-1 font-semibold">{total} questions</span>
@@ -217,6 +225,12 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
               )}
               {linear && <span className="rounded-full bg-amber-50 dark:bg-amber-950 px-3 py-1 font-semibold text-amber-800 dark:text-amber-300">No going back</span>}
             </div>
+            {stagesOf(exam).some(({ module }) => module.timeLimit > 0) && session.stage === 0 && stage.remaining === def.module.timeLimit && !stage.runningSince && stage.current === 0 && Object.keys(stage.answers).length === 0 && (
+              <label className="mt-4 flex items-center gap-2 text-sm">
+                <input type="checkbox" checked={session.timing === "untimed"} onChange={(e) => update(s => ({ ...s, timing: e.target.checked ? "untimed" : "standard" }))} />
+                Untimed practice (recorded with your result)
+              </label>
+            )}
             <div className="mt-6 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-5">
               <div className="mb-2 font-semibold">Directions</div>
               <RichText text={def.section.directions} className="text-[15px] text-gray-700 dark:text-gray-200" />
@@ -238,14 +252,14 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
           </button>
         </BottomBar>
         {confirm === "exit" && <Confirm title="Leave the test?" body="Your progress is saved and the clock pauses. Resume any time from the dashboard." okLabel="Leave" onOk={exitAndPause} onCancel={() => setConfirm(null)} />}
-      </div>
+      </FocusMode>
     );
   }
 
   // ---------- Break ----------
   if (session.phase === "break") {
     return (
-      <div className="v2-focus">
+      <FocusMode className="v2-focus">
         <TopBar title={exam.shortName} onExit={() => setConfirm("exit")} />
         <div className="v2-scroll">
           <div className="mx-auto max-w-xl px-4 py-12 text-center">
@@ -260,7 +274,7 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
           </button>
         </BottomBar>
         {confirm === "exit" && <Confirm title="Leave the test?" body="Your progress is saved. Resume any time from the dashboard." okLabel="Leave" onOk={exitAndPause} onCancel={() => setConfirm(null)} />}
-      </div>
+      </FocusMode>
     );
   }
 
@@ -269,7 +283,7 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
     resumeClockIfNeeded();
     const unanswered = total - answeredCount;
     return (
-      <div className="v2-focus">
+      <FocusMode className="v2-focus">
         <TopBar title={stageTitle} onExit={() => setConfirm("exit")} right={timed ? <Timer remaining={remaining} onExpire={submitStage} /> : undefined} />
         <div className="v2-scroll">
           <div className="mx-auto max-w-2xl px-4 py-6">
@@ -290,7 +304,7 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
         </BottomBar>
         {confirm === "submit" && <Confirm title={`${unanswered} unanswered`} body="There is no penalty for guessing. Submit anyway?" okLabel="Submit" onOk={submitStage} onCancel={() => setConfirm(null)} />}
         {confirm === "exit" && <Confirm title="Leave the test?" body="Your progress is saved and the clock pauses." okLabel="Leave" onOk={exitAndPause} onCancel={() => setConfirm(null)} />}
-      </div>
+      </FocusMode>
     );
   }
 
@@ -304,7 +318,7 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
   const unanswered = total - answeredCount;
 
   return (
-    <div className="v2-focus">
+    <FocusMode className="v2-focus">
       <TopBar
         title={stageTitle}
         onExit={() => setConfirm("exit")}
@@ -333,7 +347,7 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
         <div className="mx-auto max-w-6xl px-4 py-4 md:py-6">
           <div className="mb-3 flex items-center justify-between">
             <div className="text-sm font-semibold text-gray-700 dark:text-gray-200">
-              Question {stage.current + 1} <span className="font-normal text-gray-400">of {total}</span>
+              Question {stage.current + 1} <span className="font-normal text-gray-500 dark:text-gray-400">of {total}</span>
             </div>
             {!linear && <button
               type="button"
@@ -345,7 +359,7 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
               {flagged ? "Flagged" : "Flag for review"}
             </button>}
           </div>
-          <QuestionView
+          <QuestionView focusOnChange
             key={question.stimulusId ?? question.id}
             question={question}
             stimulus={getStimulus(exam.id, question)}
@@ -380,7 +394,7 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
             <button type="button" onClick={() => goTo(-1)} disabled={stage.current === 0} className="v2-tap w-14 shrink-0 rounded-xl border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 disabled:opacity-40 md:w-28" aria-label="Previous question">
               <ChevronLeft className="mx-auto h-6 w-6" />
             </button>
-            <button type="button" onClick={() => setTool("palette")} className="v2-tap flex-1 rounded-xl border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-sm font-semibold">
+            <button type="button" onClick={() => setTool("palette")} aria-haspopup="dialog" aria-label={`Questions: ${stage.current + 1} / ${total}, ${answeredCount} answered`} className="v2-tap flex-1 rounded-xl border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-sm font-semibold">
               {stage.current + 1} / {total}
               <span className="ml-2 font-normal text-gray-500 dark:text-gray-400">{answeredCount} answered</span>
             </button>
@@ -400,7 +414,7 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
       {tool === "palette" && (
         <Sheet title="Questions" onClose={() => setTool("none")}>
           <Palette stage={stage} onJump={jumpTo} />
-          <button type="button" onClick={() => { setTool("none"); update((s) => ({ ...s, phase: "review" })); }} className="v2-tap mt-4 w-full rounded-xl border-2 border-brand text-sm font-bold text-brand">
+          <button type="button" onClick={() => { setTool("none"); update((s) => ({ ...s, phase: "review" })); }} className="v2-tap mt-4 w-full rounded-xl border-2 border-brand text-sm font-bold text-brand-dark">
             Go to review screen
           </button>
         </Sheet>
@@ -417,7 +431,7 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
       )}
       {confirm === "submit" && <Confirm title={`${unanswered} unanswered`} body="There is no penalty for guessing. Submit anyway?" okLabel="Submit" onOk={submitStage} onCancel={() => setConfirm(null)} />}
       {confirm === "exit" && <Confirm title="Leave the test?" body="Your answers are saved and the clock pauses until you come back. The real test never pauses, so finish in one sitting when you can." okLabel="Leave" onOk={exitAndPause} onCancel={() => setConfirm(null)} />}
-    </div>
+    </FocusMode>
   );
 }
 
@@ -452,14 +466,20 @@ function IconButton({ label, active, onClick, children }: { label: string; activ
 }
 
 function Sheet({ title, children, onClose, side = false }: { title: string; children: React.ReactNode; onClose: () => void; side?: boolean }) {
+  const [mobile, setMobile] = useState(false);
+  useEffect(() => {
+    const query = window.matchMedia("(max-width: 767px)");
+    const update = () => setMobile(query.matches);
+    update();
+    query.addEventListener("change", update);
+    return () => query.removeEventListener("change", update);
+  }, []);
   return (
     // Side tools (calculator, reference) float beside the question on desktop
     // so the student keeps working; everything is a bottom sheet on phones.
-    <div
+    <AccessibleOverlay onClose={onClose} aria-label={title} modal={!side || mobile}
       className={`fixed inset-0 z-[70] flex items-end justify-center bg-black/40 md:items-stretch md:justify-end ${side ? "md:pointer-events-none md:bg-transparent" : ""}`}
       onClick={onClose}
-      role="dialog"
-      aria-modal={!side}
     >
       <div
         onClick={(e) => e.stopPropagation()}
@@ -473,7 +493,7 @@ function Sheet({ title, children, onClose, side = false }: { title: string; chil
         </div>
         <div className="v2-safe-bottom overflow-y-auto px-4 py-4">{children}</div>
       </div>
-    </div>
+    </AccessibleOverlay>
   );
 }
 
@@ -512,7 +532,7 @@ function Palette({ stage, onJump }: { stage: StageState; onJump: (i: number) => 
 
 function Confirm({ title, body, okLabel, onOk, onCancel }: { title: string; body: string; okLabel: string; onOk: () => void; onCancel: () => void }) {
   return (
-    <div className="fixed inset-0 z-[90] flex items-center justify-center bg-black/50 p-4" role="alertdialog" aria-modal="true">
+    <AccessibleOverlay onClose={onCancel} aria-label={title} className="fixed inset-0 z-[90] flex items-center justify-center bg-black/50 p-4" role="alertdialog">
       <div className="v2-pop w-full max-w-sm rounded-2xl bg-white dark:bg-gray-900 p-5 shadow-xl">
         <div className="text-lg font-bold">{title}</div>
         <p className="mt-1 text-sm text-gray-600 dark:text-gray-300">{body}</p>
@@ -521,6 +541,6 @@ function Confirm({ title, body, okLabel, onOk, onCancel }: { title: string; body
           <button type="button" onClick={onOk} className="v2-tap flex-1 rounded-xl bg-brand text-sm font-bold text-white">{okLabel}</button>
         </div>
       </div>
-    </div>
+    </AccessibleOverlay>
   );
 }

@@ -95,7 +95,7 @@ export function Footer() {
                       ? "/ko/juibyeol-dmv-pilgi-siheom"
                       : "/practice-tests-by-state"
               }
-              className="text-brand hover:text-brand-dark font-medium"
+              className="text-brand-dark hover:text-brand-darker font-medium"
             >
               {t("footer.allStates")}
             </Link>
@@ -111,7 +111,7 @@ export function Footer() {
               {test.shortName}
             </Link>
           ))}
-          <Link href="/tests" className="text-brand hover:text-brand-dark font-medium">
+          <Link href="/tests" className="text-brand-dark hover:text-brand-darker font-medium">
             {t("footer.allTests")}
           </Link>
         </nav>
@@ -126,7 +126,7 @@ export function Footer() {
               href="https://x.com/JohnBr0"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-brand hover:text-brand-dark font-medium hover:underline"
+              className="text-brand-dark hover:text-brand-darker font-medium hover:underline"
             >
               @JohnBr0
             </a>

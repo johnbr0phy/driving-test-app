@@ -187,7 +187,7 @@ export default function PracticeTestsByStatePage() {
                     <td className="px-4 py-3">
                       <Link
                         href={`/${state.slug}-dmv-practice-test`}
-                        className="text-brand hover:text-brand-dark font-medium inline-flex items-center gap-1"
+                        className="text-brand-dark hover:text-brand-darker font-medium inline-flex items-center gap-1"
                       >
                         Start free
                         <ChevronRight className="h-3 w-3" />
@@ -223,7 +223,7 @@ export default function PracticeTestsByStatePage() {
                         {state.passingScore}%
                       </span>
                     </div>
-                    <ChevronRight className="h-4 w-4 text-gray-400 group-hover:text-brand" />
+                    <ChevronRight className="h-4 w-4 text-gray-500 dark:text-gray-400 group-hover:text-brand" />
                   </Link>
                 ))}
               </div>

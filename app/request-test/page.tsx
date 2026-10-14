@@ -97,7 +97,7 @@ function RequestTestContent() {
               required
               className="w-full border border-gray-200 dark:border-gray-800 rounded-xl px-4 py-3 mb-2 text-gray-900 dark:text-gray-50 placeholder:text-gray-400"
             />
-            <p className="text-xs text-gray-400 mb-6">
+            <p className="text-xs text-gray-500 dark:text-gray-400 mb-6">
               The state, the exam name, when you&apos;re taking it. Anything helps.
             </p>
 
@@ -115,7 +115,7 @@ function RequestTestContent() {
               {status === "sending" ? "Sending..." : "Send to John"}
             </button>
 
-            <p className="mt-6 text-center text-sm text-gray-400">
+            <p className="mt-6 text-center text-sm text-gray-500 dark:text-gray-400">
               <Link href="/tests" className="underline underline-offset-2 hover:text-gray-600 dark:hover:text-gray-300">
                 See the 30 tests we have today
               </Link>

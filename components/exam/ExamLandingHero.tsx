@@ -48,11 +48,11 @@ export function ExamLandingHero({
       <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-10 max-w-2xl mx-auto">{subtitle}</p>
 
       <div className="flex flex-col items-center gap-3">
-        <Link href={dashboardHref} onClick={onStart}>
-          <Button className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 px-8 py-6 text-lg rounded-full">
+        <Button asChild className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 px-8 py-6 text-lg rounded-full">
+          <Link href={dashboardHref} onClick={onStart}>
             {hasSession ? "Go to Dashboard" : "Start practicing"}
-          </Button>
-        </Link>
+          </Link>
+        </Button>
         {!hasSession && (
           <a href="#how-it-works" className="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 underline">
             See how it works
@@ -95,10 +95,10 @@ export function ExamLandingCTA({ dashboardHref }: { dashboardHref: string }) {
   const { hasSession, onStart } = useStartCta(dashboardHref);
 
   return (
-    <Link href={dashboardHref} onClick={onStart}>
-      <Button className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 px-8 py-6 text-lg rounded-full">
+    <Button asChild className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 px-8 py-6 text-lg rounded-full">
+      <Link href={dashboardHref} onClick={onStart}>
         {hasSession ? "Go to Dashboard" : "Start practicing"}
-      </Button>
-    </Link>
+      </Link>
+    </Button>
   );
 }

@@ -1,5 +1,7 @@
 "use client";
 
+import { AccessibleOverlay } from "@/components/AccessibleOverlay";
+
 import { ReactNode, useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { BookOpen, X } from "lucide-react";
@@ -81,7 +83,7 @@ export function BasicsWalkthrough({ exam, skill, doneLabel, onDone, onClose, onR
   const face = !isAsk ? 3 : solved ? 1 : wrong.length ? 5 : 4;
 
   return (
-    <div className="fixed inset-0 z-[95] flex flex-col bg-gray-50 text-gray-900 dark:bg-gray-950 dark:text-gray-50" role="dialog" aria-modal="true" aria-label={`${skill.name} walkthrough`}>
+    <AccessibleOverlay onClose={onClose} className="fixed inset-0 z-[95] flex flex-col bg-gray-50 text-gray-900 dark:bg-gray-950 dark:text-gray-50" aria-label={`${skill.name} walkthrough`}>
       <div className="v2-safe-top shrink-0 border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-3 pb-2">
         <div className="flex items-center gap-2">
           <button type="button" onClick={onClose} className="v2-tap -ml-1 flex w-10 items-center justify-center rounded-full text-gray-500 dark:text-gray-400" aria-label="Close the walkthrough">
@@ -92,7 +94,7 @@ export function BasicsWalkthrough({ exam, skill, doneLabel, onDone, onClose, onR
             <div className="text-xs text-gray-500 dark:text-gray-400">Walk through it · step {index + 1} of {steps.length}</div>
           </div>
           {onRead && (
-            <button type="button" onClick={onRead} className="flex items-center gap-1.5 rounded-full border-2 border-gray-200 dark:border-gray-800 px-3 py-1.5 text-sm font-semibold text-brand">
+            <button type="button" onClick={onRead} className="flex items-center gap-1.5 rounded-full border-2 border-gray-200 dark:border-gray-800 px-3 py-1.5 text-sm font-semibold text-brand-dark">
               <BookOpen className="h-4 w-4" /> Read it
             </button>
           )}
@@ -172,7 +174,7 @@ export function BasicsWalkthrough({ exam, skill, doneLabel, onDone, onClose, onR
           )}
         </div>
       </div>
-    </div>
+    </AccessibleOverlay>
   );
 }
 

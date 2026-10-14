@@ -78,7 +78,7 @@ export function PaywallModal({
         {/* What you get section */}
         <div className="rounded-xl border border-brand-border-light overflow-hidden mb-5 bg-brand-light">
           <div className="p-4 pb-3">
-            <div className="text-xs font-bold text-brand tracking-wider mb-3">
+            <div className="text-xs font-bold text-brand-dark tracking-wider mb-3">
               {t("paywall.whatYouGet")}
             </div>
             <ul className="space-y-2.5">
@@ -97,7 +97,7 @@ export function PaywallModal({
           <div className="mb-5">
             <div className="flex items-baseline justify-between">
               <span className="text-4xl font-bold text-gray-900 dark:text-gray-50">$9.99</span>
-              <span className="border border-brand text-brand text-xs font-semibold px-3 py-1 rounded-full">
+              <span className="border border-brand text-brand-dark text-xs font-semibold px-3 py-1 rounded-full">
                 {t("paywall.cheaperThanRetest")}
               </span>
             </div>
@@ -131,7 +131,7 @@ export function PaywallModal({
             </Button>
             <button
               onClick={() => onOpenChange(false)}
-              className="text-sm text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 py-2 transition-colors"
+              className="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 py-2 transition-colors"
             >
               {t("paywall.illTakeMyChances")}
             </button>
@@ -148,7 +148,7 @@ export function PaywallModal({
             <button
               onClick={() => onOpenChange(false)}
               disabled={loading}
-              className="text-sm text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 py-2 transition-colors disabled:opacity-50"
+              className="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 py-2 transition-colors disabled:opacity-50"
             >
               {t("paywall.illTakeMyChances")}
             </button>

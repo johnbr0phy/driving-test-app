@@ -12,7 +12,7 @@ import { Check, ChevronRight, Lock } from "lucide-react";
 export function Stamp({ label, color }: { label: string; color: "green" | "amber" | "red" }) {
   const colors = {
     green: "border-green-500 text-green-600 dark:text-green-400 bg-green-50 dark:bg-green-950",
-    amber: "border-amber-500 text-amber-600 dark:text-amber-400 bg-amber-50 dark:bg-amber-950",
+    amber: "border-amber-500 text-amber-700 dark:text-amber-400 bg-amber-50 dark:bg-amber-950",
     red: "border-red-400 dark:border-red-600 text-red-500 dark:text-red-400 bg-red-50 dark:bg-red-950",
   };
   return (
@@ -81,7 +81,7 @@ export function ProgressCard({
         <div className="flex-1 min-w-0">
           <h3 className={`font-medium text-sm flex items-center gap-1.5 ${completed ? "text-green-800 dark:text-green-300" : "text-gray-700 dark:text-gray-200"}`}>
             {title}
-            {isPremiumLocked && <Lock className="w-3.5 h-3.5 text-gray-400 flex-shrink-0" />}
+            {isPremiumLocked && <Lock className="w-3.5 h-3.5 text-gray-500 dark:text-gray-400 flex-shrink-0" />}
           </h3>
           <p className={`text-xs mt-0.5 ${completed ? "text-green-600 dark:text-green-400" : "text-gray-500 dark:text-gray-400"}`}>
             {subtitle}

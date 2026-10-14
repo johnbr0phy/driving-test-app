@@ -124,7 +124,7 @@ export default function SpanishPracticeTestsByStatePage() {
                         {state.passingScore}%
                       </span>
                     </div>
-                    <ChevronRight className="h-4 w-4 text-gray-400 group-hover:text-brand" />
+                    <ChevronRight className="h-4 w-4 text-gray-500 dark:text-gray-400 group-hover:text-brand" />
                   </Link>
                 ))}
               </div>

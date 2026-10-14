@@ -45,26 +45,26 @@ export function HomeHero() {
       </p>
 
       {hasSession ? (
-        <Link href="/dashboard">
-          <Button className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 px-8 py-6 text-lg rounded-full">
+        <Button asChild className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 px-8 py-6 text-lg rounded-full">
+          <Link href="/dashboard">
             {t("common.goToDashboard")}
-          </Button>
-        </Link>
+          </Link>
+        </Button>
       ) : signedInNoState ? (
-        <Link href="/onboarding/select-state">
-          <Button className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 px-8 py-6 text-lg rounded-full">
+        <Button asChild className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 px-8 py-6 text-lg rounded-full">
+          <Link href="/onboarding/select-state">
             {t("common.startPracticing")}
-          </Button>
-        </Link>
+          </Link>
+        </Button>
       ) : loading ? (
         <div className="h-[104px]" aria-hidden />
       ) : (
         <div className="flex flex-col items-center gap-3">
-          <Link href="/signup">
-            <Button className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 px-8 py-6 text-lg rounded-full">
+          <Button asChild className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 px-8 py-6 text-lg rounded-full">
+            <Link href="/signup">
               {t("common.startPracticing")}
-            </Button>
-          </Link>
+            </Link>
+          </Button>
           <button
             onClick={handleTryFree}
             className="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 underline"
@@ -113,26 +113,26 @@ export function HomeCTA() {
   return (
     <>
       {hasSession ? (
-        <Link href="/dashboard">
-          <Button className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 px-8 py-6 text-lg rounded-full">
+        <Button asChild className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 px-8 py-6 text-lg rounded-full">
+          <Link href="/dashboard">
             {t("common.goToDashboard")}
-          </Button>
-        </Link>
+          </Link>
+        </Button>
       ) : signedInNoState ? (
-        <Link href="/onboarding/select-state">
-          <Button className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 px-8 py-6 text-lg rounded-full">
+        <Button asChild className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 px-8 py-6 text-lg rounded-full">
+          <Link href="/onboarding/select-state">
             {t("common.startPracticing")}
-          </Button>
-        </Link>
+          </Link>
+        </Button>
       ) : loading ? (
         <div className="h-[104px]" aria-hidden />
       ) : (
         <div className="flex flex-col items-center gap-3">
-          <Link href="/signup">
-            <Button className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 px-8 py-6 text-lg rounded-full">
+          <Button asChild className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 px-8 py-6 text-lg rounded-full">
+            <Link href="/signup">
               {t("common.startPracticing")}
-            </Button>
-          </Link>
+            </Link>
+          </Button>
           <button
             onClick={handleTryFree}
             className="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 underline"

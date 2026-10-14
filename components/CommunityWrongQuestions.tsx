@@ -30,7 +30,7 @@ export function CommunityWrongQuestions({ isPremium, onUpgradeClick }: Props) {
 
   if (!data || data.questions.length === 0) {
     return (
-      <p className="text-gray-400 text-sm text-center py-8">
+      <p className="text-gray-500 dark:text-gray-400 text-sm text-center py-8">
         {t("stats.notEnoughData")}
       </p>
     );
@@ -62,7 +62,7 @@ export function CommunityWrongQuestions({ isPremium, onUpgradeClick }: Props) {
               onAnswer={(correct) => trackDailyQuizAnswer(correct, "stats_community")}
               renderFooter={({ answered }) => (
                 <div className="pt-1 px-1">
-                  <p className="text-xs text-gray-400">
+                  <p className="text-xs text-gray-500 dark:text-gray-400">
                     {q.wrong} {t("stats.outOf")} {q.total} {t("stats.peopleGotWrong")}
                   </p>
                   {answered && q.explanation && (
@@ -95,7 +95,7 @@ export function CommunityWrongQuestions({ isPremium, onUpgradeClick }: Props) {
                   <div className="text-base font-bold text-red-500 dark:text-red-400 tabular-nums leading-none">
                     {q.errorRate}%
                   </div>
-                  <div className="text-[9px] uppercase tracking-wide text-gray-400 mt-0.5">
+                  <div className="text-[9px] uppercase tracking-wide text-gray-500 dark:text-gray-400 mt-0.5">
                     {t("dashboard.dailyMissedGetWrong")}
                   </div>
                 </div>
@@ -110,7 +110,7 @@ export function CommunityWrongQuestions({ isPremium, onUpgradeClick }: Props) {
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
             <div className="rounded-2xl bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm px-6 py-4 flex flex-col items-center shadow-sm border border-gray-200 dark:border-gray-800">
               <div className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-brand-light mb-2">
-                <Lock className="h-4 w-4 text-brand" />
+                <Lock className="h-4 w-4 text-brand-dark" />
               </div>
               <p className="text-sm font-semibold text-gray-900 dark:text-gray-50 mb-1">
                 {lockedCount} {t("stats.questionsLocked")}

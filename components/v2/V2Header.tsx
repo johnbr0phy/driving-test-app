@@ -32,7 +32,7 @@ export function V2Header({ exam }: { exam: ExamV2Config }) {
   return (
     <header className="border-b bg-white dark:bg-gray-900" style={style}>
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <Link href={exam.slug} className="flex items-center gap-2 group flex-shrink-0">
+        <Link href={exam.slug} aria-label={`${exam.name} home`} className="flex items-center gap-2 group flex-shrink-0">
           {hasTigerSet(exam.id) ? (
             <Image src={getTigerAsset(exam.id)} alt="" width={40} height={40} className="h-10 w-10 object-contain" />
           ) : (
@@ -46,16 +46,16 @@ export function V2Header({ exam }: { exam: ExamV2Config }) {
           <TestSwitcher />
           <ThemeToggle />
           {user ? (
-            <Link href="/settings">
+            <Link href="/settings" aria-label="Profile and settings">
               <Avatar className="h-9 w-9 cursor-pointer hover:opacity-80 transition-opacity">
                 <AvatarImage src={displayPhotoURL || undefined} alt="Profile" />
                 <AvatarFallback className="text-lg">😊</AvatarFallback>
               </Avatar>
             </Link>
           ) : (
-            <Link href={`/login?redirect=${exam.slug}`}>
-              <Button variant="outline" className="text-gray-700 dark:text-gray-200 border-gray-300 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800">Sign In</Button>
-            </Link>
+            <Button asChild variant="outline" className="text-gray-700 dark:text-gray-200 border-gray-300 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800">
+              <Link href={`/login?redirect=${exam.slug}`}>Sign In</Link>
+            </Button>
           )}
         </div>
       </div>

@@ -50,7 +50,7 @@ export default function SchoolNotFound() {
           <p className="text-gray-500 dark:text-gray-400 mb-2">
             This school page doesn&apos;t exist or may have been removed.
           </p>
-          <p className="text-sm text-gray-400 mb-10">
+          <p className="text-sm text-gray-500 dark:text-gray-400 mb-10">
             If your instructor sent you this link, ask them to double-check the address.
           </p>
 
@@ -72,7 +72,7 @@ export default function SchoolNotFound() {
             </Link>
           </div>
 
-          <p className="text-xs text-gray-400 mt-8">
+          <p className="text-xs text-gray-500 dark:text-gray-400 mt-8">
             Are you an instructor?{" "}
             <Link href="/schools/create" className="text-indigo-600 dark:text-indigo-400 hover:underline font-medium">
               Create your school page →
@@ -83,7 +83,7 @@ export default function SchoolNotFound() {
 
       {/* Footer */}
       <footer className="w-full bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800 px-4 py-5">
-        <div className="max-w-4xl mx-auto text-center text-sm text-gray-400">
+        <div className="max-w-4xl mx-auto text-center text-sm text-gray-500 dark:text-gray-400">
           <Link href="/" className="text-indigo-600 dark:text-indigo-400 hover:underline font-medium">TigerTest</Link>
           {" "}— Free DMV practice tests
         </div>

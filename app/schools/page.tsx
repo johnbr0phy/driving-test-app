@@ -102,7 +102,7 @@ export default function SchoolsPage() {
               {
                 title: "Admin dashboard",
                 desc: "See every student's progress, tests taken, and pass-readiness at a glance.",
-                icon: <LayoutDashboard className="w-7 h-7 text-brand" />,
+                icon: <LayoutDashboard className="w-7 h-7 text-brand-dark" />,
                 highlight: true,
               },
               {
@@ -204,7 +204,7 @@ export default function SchoolsPage() {
                   <th className="text-left py-3 pr-4 font-medium text-gray-500 dark:text-gray-400">
                     Feature
                   </th>
-                  <th className="text-center py-3 px-4 font-semibold text-brand">
+                  <th className="text-center py-3 px-4 font-semibold text-brand-dark">
                     TigerTest
                   </th>
                   <th className="text-center py-3 pl-4 font-medium text-gray-500 dark:text-gray-400">

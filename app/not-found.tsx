@@ -10,16 +10,16 @@ export default function NotFound() {
           This page doesn&apos;t exist.
         </p>
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
-          <Link href="/">
-            <Button className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 px-6 py-5 rounded-full">
+          <Button asChild className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 px-6 py-5 rounded-full">
+            <Link href="/">
               Go Home
-            </Button>
-          </Link>
-          <Link href="/practice-tests-by-state">
-            <Button variant="outline" className="px-6 py-5 rounded-full">
+            </Link>
+          </Button>
+          <Button asChild variant="outline" className="px-6 py-5 rounded-full">
+            <Link href="/practice-tests-by-state">
               Browse All States
-            </Button>
-          </Link>
+            </Link>
+          </Button>
         </div>
       </div>
     </div>

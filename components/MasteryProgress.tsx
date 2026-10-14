@@ -28,7 +28,7 @@ export function MasteryProgress({ totalBestScore, totalPossible }: MasteryProgre
       <CardContent>
         <div className="space-y-4">
           <div className="flex items-baseline gap-2">
-            <span className="text-5xl font-bold text-brand">{masteryPercentage}%</span>
+            <span className="text-5xl font-bold text-brand-dark">{masteryPercentage}%</span>
             <span className="text-gray-600 dark:text-gray-300">{t("mastery.masteredSuffix")}</span>
           </div>
           <Progress value={masteryPercentage} className="h-4 [&>div]:bg-brand" />

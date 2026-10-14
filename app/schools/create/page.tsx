@@ -111,7 +111,7 @@ export default function CreateSchoolPage() {
   if (authLoading || !user) {
     return (
       <div className="min-h-screen bg-gradient-to-b from-brand-light to-white dark:to-transparent flex items-center justify-center">
-        <Loader2 className="h-8 w-8 animate-spin text-brand" />
+        <Loader2 className="h-8 w-8 animate-spin text-brand-dark" />
       </div>
     );
   }
@@ -144,7 +144,7 @@ export default function CreateSchoolPage() {
                   autoComplete="organization"
                 />
                 {form.schoolName && (
-                  <p className="text-xs text-gray-400">
+                  <p className="text-xs text-gray-500 dark:text-gray-400">
                     Your school URL: tigertest.io/schools/{slugify(form.schoolName) || "..."}
                   </p>
                 )}
@@ -186,14 +186,14 @@ export default function CreateSchoolPage() {
 
             <p className="text-center text-sm text-gray-500 dark:text-gray-400 mt-4">
               Already have a school?{" "}
-              <Link href="/schools/dashboard" className="text-brand hover:underline font-medium">
+              <Link href="/schools/dashboard" className="text-brand-dark hover:underline font-medium">
                 Go to dashboard
               </Link>
             </p>
           </CardContent>
         </Card>
 
-        <p className="text-center text-xs text-gray-400 mt-6">
+        <p className="text-center text-xs text-gray-500 dark:text-gray-400 mt-6">
           Free plan includes unlimited student invites. Students practice for free.{" "}
           <Link href="/schools" className="underline hover:text-gray-600 dark:hover:text-gray-300">
             See plans

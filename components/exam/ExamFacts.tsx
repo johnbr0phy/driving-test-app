@@ -69,7 +69,7 @@ export function ExamFacts({ examId }: { examId: string }) {
                 href={facts.source.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-0.5 text-brand hover:underline"
+                className="inline-flex items-center gap-0.5 text-brand-dark hover:underline"
               >
                 {facts.source.name}
                 <ExternalLink className="h-3 w-3" aria-hidden="true" />

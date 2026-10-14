@@ -1,5 +1,6 @@
 "use client";
 
+import { useId, useLayoutEffect, useRef } from "react";
 import { Check, X } from "lucide-react";
 import { AnswerValue, QuestionV2 } from "@/lib/v2/types";
 import { bowtieStarts } from "@/lib/v2/grading";
@@ -35,15 +36,24 @@ const chipDim = "border-gray-200 dark:border-gray-800 opacity-60";
 
 /** Order: tap the steps in sequence; tap a placed step to take it back. */
 export function OrderInput({ question, optionOrder, answer, onAnswer, reveal, disabled }: InputProps & { optionOrder: number[] }) {
+  const container = useRef<HTMLDivElement>(null);
+  const pendingFocus = useRef<number | null>(null);
+  useLayoutEffect(() => {
+    if (pendingFocus.current !== null) {
+      container.current?.querySelector<HTMLButtonElement>(`[data-step="${pendingFocus.current}"]`)?.focus();
+      pendingFocus.current = null;
+    }
+  }, [answer]);
   const options = question.options ?? [];
   const seq = list(answer);
   const key = question.correct ?? [];
   const remaining = optionOrder.filter((o) => !seq.includes(o));
-  const add = (o: number) => !disabled && !reveal && onAnswer([...seq, o]);
-  const remove = (o: number) => !disabled && !reveal && onAnswer(seq.filter((x) => x !== o));
+  const add = (o: number) => { if (disabled || reveal) return; pendingFocus.current = remaining.find(x => x !== o) ?? o; onAnswer([...seq, o]); };
+  const remove = (o: number) => { if (disabled || reveal) return; pendingFocus.current = o; onAnswer(seq.filter((x) => x !== o)); };
 
   return (
-    <div className="mt-4 space-y-4">
+    <div ref={container} className="mt-4 space-y-4">
+      <div role="status" className="sr-only">{seq.length} of {options.length} steps placed.</div>
       <div>
         <div className="mb-2 text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400">Your order</div>
         <ol className="space-y-2">
@@ -51,7 +61,7 @@ export function OrderInput({ question, optionOrder, answer, onAnswer, reveal, di
             const o = seq[pos];
             if (o === undefined) {
               return (
-                <li key={pos} className="flex min-h-[3rem] items-center gap-3 rounded-xl border-2 border-dashed border-gray-300 dark:border-gray-700 px-3 text-sm text-gray-400">
+                <li key={pos} className="flex min-h-[3rem] items-center gap-3 rounded-xl border-2 border-dashed border-gray-300 dark:border-gray-700 px-3 text-sm text-gray-500 dark:text-gray-400">
                   <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border-2 border-dashed border-gray-300 dark:border-gray-700 font-bold">{pos + 1}</span>
                   {pos === seq.length && !reveal ? "Tap the next step below" : ""}
                 </li>
@@ -60,9 +70,10 @@ export function OrderInput({ question, optionOrder, answer, onAnswer, reveal, di
             const ok = key[pos] === o;
             return (
               <li key={pos}>
-                <button type="button" disabled={disabled || reveal} onClick={() => remove(o)} className={`flex w-full items-start gap-3 ${chipBase} ${reveal ? (ok ? chipRight : chipWrong) : chipOn}`}>
+                <button data-step={o} aria-label={reveal ? `Step ${pos + 1}: ${options[o]}. ${ok ? "Correct position" : "Incorrect position"}` : `Remove step ${pos + 1}: ${options[o]}`} type="button" disabled={disabled || reveal} onClick={() => remove(o)} className={`flex w-full items-start gap-3 ${chipBase} ${reveal ? (ok ? chipRight : chipWrong) : chipOn}`}>
                   <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-brand text-sm font-bold text-white">{pos + 1}</span>
                   <span className="flex-1 pt-0.5"><RichText text={options[o]} /></span>
+                  {reveal && <span className="sr-only">{ok ? "Correct position" : "Incorrect position"}</span>}
                   {reveal && (ok ? <Check className="mt-1 h-5 w-5 shrink-0 text-green-600 dark:text-green-400" /> : <X className="mt-1 h-5 w-5 shrink-0 text-red-500 dark:text-red-400" />)}
                 </button>
               </li>
@@ -75,7 +86,7 @@ export function OrderInput({ question, optionOrder, answer, onAnswer, reveal, di
           <div className="mb-2 text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400">Steps</div>
           <div className="space-y-2">
             {remaining.map((o) => (
-              <button key={o} type="button" disabled={disabled} onClick={() => add(o)} className={`block w-full ${chipBase} ${chipIdle}`}>
+              <button key={o} data-step={o} type="button" disabled={disabled} onClick={() => add(o)} className={`block w-full ${chipBase} ${chipIdle}`}>
                 <RichText text={options[o]} />
               </button>
             ))}
@@ -83,7 +94,7 @@ export function OrderInput({ question, optionOrder, answer, onAnswer, reveal, di
         </div>
       )}
       {!reveal && seq.length > 0 && <div className="text-xs text-gray-500 dark:text-gray-400">Tap a placed step to take it back.</div>}
-      {reveal && seq.some((o, i) => key[i] !== o) && (
+      {reveal && (seq.length !== key.length || seq.some((o, i) => key[i] !== o)) && (
         <div className="rounded-xl border border-green-200 dark:border-green-800 bg-green-50 dark:bg-green-950 p-3 text-sm">
           <div className="mb-1 font-semibold text-green-800 dark:text-green-300">Correct order</div>
           <ol className="list-decimal space-y-0.5 pl-5 text-gray-800 dark:text-gray-100">
@@ -99,6 +110,7 @@ export function OrderInput({ question, optionOrder, answer, onAnswer, reveal, di
 
 /** Matrix: one choice per row, as a row of column buttons (a table that also fits a phone). */
 export function MatrixInput({ question, answer, onAnswer, reveal, disabled }: InputProps) {
+  const id = useId();
   const rows = question.rows ?? [];
   const cols = question.columns ?? [];
   const cur = filled(answer, rows.length);
@@ -112,9 +124,9 @@ export function MatrixInput({ question, answer, onAnswer, reveal, disabled }: In
   return (
     <div className="mt-4 space-y-3">
       {rows.map((row, r) => (
-        <div key={r} className="rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-3 md:flex md:items-center md:gap-4">
+        <div key={r} role="group" aria-labelledby={`${id}-${r}`} className="rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-3 md:flex md:items-center md:gap-4">
           <div className="mb-2 flex items-start gap-2 md:mb-0 md:flex-1">
-            <RichText text={row} className="flex-1 text-[15px] font-medium md:text-base" />
+            <div id={`${id}-${r}`} className="flex-1"><RichText text={row} className="text-[15px] font-medium md:text-base" /></div>
             {reveal && (cur[r] === key[r] ? <Check className="h-5 w-5 shrink-0 text-green-600 dark:text-green-400" /> : <X className="h-5 w-5 shrink-0 text-red-500 dark:text-red-400" />)}
           </div>
           <div className={`grid gap-2 md:shrink-0 ${cols.length >= 3 ? "grid-cols-1 sm:grid-cols-3 md:w-[30rem]" : "grid-cols-2 md:w-[20rem]"}`}>
@@ -124,6 +136,7 @@ export function MatrixInput({ question, answer, onAnswer, reveal, disabled }: In
               return (
                 <button key={c} type="button" disabled={disabled || reveal} aria-pressed={on} onClick={() => set(r, c)} className={`${chipBase} py-2 text-center text-sm md:text-[15px] ${cls}`}>
                   {col}
+                  {reveal && <span className="sr-only">{key[r] === c ? ". Correct answer" : on ? ". Incorrect answer" : ""}</span>}
                 </button>
               );
             })}
@@ -136,6 +149,7 @@ export function MatrixInput({ question, answer, onAnswer, reveal, disabled }: In
 
 /** Bowtie: three groups; on wide screens the condition sits in the middle like the knot. */
 export function BowtieInput({ question, answer, onAnswer, reveal, disabled }: InputProps) {
+  const id = useId();
   const groups = question.groups ?? [];
   const starts = bowtieStarts(question);
   const cur = list(answer);
@@ -156,9 +170,9 @@ export function BowtieInput({ question, answer, onAnswer, reveal, disabled }: In
         const g = groups[gi];
         if (!g) return null;
         return (
-          <div key={gi} className={`rounded-xl border-2 p-3 ${gi === 1 ? "border-brand bg-brand-light" : "border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900"} ${gi === 1 ? "md:order-2" : gi === 0 ? "md:order-1" : "md:order-3"}`}>
-            <div className="mb-2 text-sm font-semibold text-gray-900 dark:text-gray-50">
-              {g.label} <span className="font-normal text-gray-500 dark:text-gray-400">(choose {g.pick})</span>
+          <div key={gi} role="group" aria-labelledby={`${id}-${gi}`} className={`rounded-xl border-2 p-3 ${gi === 1 ? "border-brand bg-brand-light" : "border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900"} ${gi === 1 ? "md:order-2" : gi === 0 ? "md:order-1" : "md:order-3"}`}>
+            <div id={`${id}-${gi}`} className="mb-2 text-sm font-semibold text-gray-900 dark:text-gray-50">
+              {g.label} <span className="font-normal text-gray-600 dark:text-gray-300">(choose {g.pick})</span>
             </div>
             <div className="space-y-2">
               {g.options.map((opt, oi) => {
@@ -169,7 +183,8 @@ export function BowtieInput({ question, answer, onAnswer, reveal, disabled }: In
                 return (
                   <button key={oi} type="button" disabled={disabled || reveal} aria-pressed={on} onClick={() => toggle(gi, flat)} className={`flex w-full items-start gap-2 ${chipBase} py-2 text-sm md:text-[15px] ${cls}`}>
                     <span className="flex-1"><RichText text={opt} /></span>
-                    {on && !reveal && <Check className="mt-0.5 h-4 w-4 shrink-0 text-brand" />}
+                    {reveal && <span className="sr-only">{isKey ? "Correct answer" : on ? "Incorrect answer" : ""}</span>}
+                    {on && !reveal && <Check className="mt-0.5 h-4 w-4 shrink-0 text-brand-dark" />}
                   </button>
                 );
               })}
@@ -214,6 +229,7 @@ export function slotRenderer({ question, answer, onAnswer, reveal, disabled }: I
           className={`inline rounded px-0.5 text-left font-[inherit] text-inherit ${cls}`}
         >
           {slot.text}
+          {reveal && <span className="sr-only">{isKey ? ". Correct answer" : on ? ". Incorrect answer" : ""}</span>}
         </button>
       );
     };

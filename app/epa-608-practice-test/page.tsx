@@ -144,7 +144,7 @@ export default function Epa608LandingPage() {
         <div className="grid md:grid-cols-2 gap-8 md:gap-12">
           <div className="relative pt-8">
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16 bg-white dark:bg-gray-900 border-2 border-brand-border-light rounded-full flex items-center justify-center shadow-sm">
-              <Smartphone className="w-7 h-7 text-brand" />
+              <Smartphone className="w-7 h-7 text-brand-dark" />
             </div>
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">One Set per Section</h3>
@@ -188,7 +188,7 @@ export default function Epa608LandingPage() {
                       <span className="block font-medium text-gray-900 dark:text-gray-50">{s.name}</span>
                       <span className="block text-sm text-gray-500 dark:text-gray-400">{s.detail}</span>
                     </div>
-                    <span className="text-brand font-semibold whitespace-nowrap">{s.questions} questions</span>
+                    <span className="text-brand-dark font-semibold whitespace-nowrap">{s.questions} questions</span>
                   </div>
                 ))}
               </div>

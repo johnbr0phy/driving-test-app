@@ -300,7 +300,7 @@ function TrainingPageContent() {
       {/* Set Complete - Full-bleed Score Card */}
       {showSetComplete && isSetMode && (
         <div className="fixed inset-0 z-50 overflow-y-auto animate-in fade-in duration-300">
-          <div className="min-h-screen bg-gradient-to-b from-gray-950 to-green-950">
+          <div className="contrast-dark-surface min-h-screen bg-gradient-to-b from-gray-950 to-green-950">
             {/* Back button */}
             <div className="relative max-w-6xl mx-auto px-4 pt-4">
               <Button asChild variant="ghost" className="text-gray-400 hover:text-white hover:bg-white/10 -ml-2">

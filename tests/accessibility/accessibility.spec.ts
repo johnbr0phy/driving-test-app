@@ -203,3 +203,58 @@ test('untimed accommodation preserves SAT scoring and adaptive routing', async (
     expect(remainingNow({ ...stage, runningSince: new Date(0).toISOString() }, 5000)).toBe(stage.remaining - 5);
     expect(remainingNow(untimed.stages[0], 5000)).toBe(stage.remaining);
 });
+
+
+test('ordering review names include position correctness instead of a remove action', async ({ page }) => {
+    await fixture(page, 'order');
+    await page.getByRole('button', { name: 'Second choice', exact: true }).click();
+    await page.getByRole('button', { name: 'Third choice', exact: true }).click();
+    await page.getByRole('button', { name: 'Check', exact: true }).click();
+    await expect(page.getByRole('button', { name: 'Step 1: Second choice. Correct position', exact: true })).toBeDisabled();
+    await expect(page.getByRole('button', { name: 'Step 2: Third choice. Incorrect position', exact: true })).toBeDisabled();
+    await expect(page.getByRole('button', { name: /^Remove step/ })).toHaveCount(0);
+});
+
+test('muted copy contrast preserves dark completion surfaces and hover feedback', async ({ page }) => {
+    await fixture(page, 'contrast');
+    await scan(page);
+    const light = page.getByRole('button', { name: 'Light surface action' });
+    const dark = page.getByRole('button', { name: 'Dark surface action' });
+    await expect(light).toHaveCSS('color', 'rgb(98, 107, 121)');
+    await expect(dark).toHaveCSS('color', 'rgb(156, 163, 175)');
+    await light.hover();
+    await expect(light).toHaveCSS('color', 'rgb(55, 65, 81)');
+    await dark.hover();
+    await expect(dark).toHaveCSS('color', 'rgb(255, 255, 255)');
+});
+
+test('calculator side tool allows desktop answers and traps focus only on mobile', async ({ page }) => {
+    await page.goto('/sat/test/1');
+    await expect(page.getByRole('button', { name: 'Start module' })).toBeVisible();
+    await page.evaluate(() => {
+        const stored = JSON.parse(localStorage.getItem('tigertest-v2')!);
+        stored.state.sessions['sat:1'].stage = 2;
+        localStorage.setItem('tigertest-v2', JSON.stringify(stored));
+    });
+    await page.reload();
+    await page.getByRole('button', { name: 'Start module' }).click();
+    const trigger = page.getByRole('button', { name: 'Calculator', exact: true });
+    await trigger.click();
+    await page.getByLabel('Calculator expression').fill('2+2');
+    await page.keyboard.press('Enter');
+    const answer = page.locator('[data-exam-shortcuts] button[aria-pressed]').first();
+    await answer.click();
+    await expect(answer).toHaveAttribute('aria-pressed', 'true');
+    await expect(page.getByRole('dialog', { name: 'Calculator', exact: true })).toBeVisible();
+    await page.keyboard.press('Escape');
+    await expect(trigger).toBeFocused();
+    await page.setViewportSize({ width: 390, height: 844 });
+    await trigger.click();
+    const dialog = page.getByRole('dialog', { name: 'Calculator', exact: true });
+    await expect(dialog).toHaveAttribute('aria-modal', 'true');
+    await dialog.getByRole('button', { name: 'Close', exact: true }).focus();
+    await page.keyboard.press('Shift+Tab');
+    expect(await dialog.evaluate(el => el.contains(document.activeElement))).toBe(true);
+    await page.keyboard.press('Escape');
+    await expect(trigger).toBeFocused();
+});

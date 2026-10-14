@@ -45,6 +45,16 @@ Before/after screenshots at 1280px and 390px were captured for home, login and S
 - `node --test tests/nclex-copy.test.cjs`: 5 passed.
 - `git diff --check` passed.
 
+## Final diff review
+
+The review found and fixed three introduced issues: graded ordering controls now include correctness in their accessible names; muted-text contrast rules preserve hover feedback and always-dark completion cards; and modal overlays explicitly expose `aria-modal` (the installed Radix version does not add it automatically).
+
+Ten targeted review checks passed, including three added scenarios. There are now 37 verified scenarios across the recorded runs. Desktop calculator use still permits answering questions while the tool remains open; mobile calculator focus stays inside the modal and returns to its opener on Escape. TypeScript and lint passed again. Timer defaults, result scoring and adaptive routing remained unchanged in the reviewed tests and source diff. No API endpoint, store, grading or synchronization implementation changed.
+
+GitHub reported no commit statuses, no check runs and no pull-request-triggered workflow runs at the reviewed head. This is local validation, not passed CI. The PR remains a draft; remote mergeability is checked separately from accessibility coverage.
+
+VoiceOver was not running on the shared Mac. It was not enabled, and no user accessibility settings were changed. Actual screen-reader validation therefore remains open.
+
 ## Remaining coverage gaps
 
 - No actual VoiceOver, NVDA or JAWS speech/navigation run. Browser roles, focus assertions and axe do not substitute for that test.

@@ -12,6 +12,7 @@ export function AccessibleOverlay({ onClose, modal = true, children, ...props }:
   return (
     <Dialog.Root open modal={modal} onOpenChange={(open) => { if (!open) onClose(); }}>
       <Dialog.Content
+        aria-modal={modal || undefined}
         aria-describedby={undefined}
         onInteractOutside={(event) => { if (!modal) event.preventDefault(); }}
         onOpenAutoFocus={() => { opener.current = document.activeElement as HTMLElement; }}

@@ -70,7 +70,7 @@ export function OrderInput({ question, optionOrder, answer, onAnswer, reveal, di
             const ok = key[pos] === o;
             return (
               <li key={pos}>
-                <button data-step={o} aria-label={`Remove step ${pos + 1}: ${options[o]}`} type="button" disabled={disabled || reveal} onClick={() => remove(o)} className={`flex w-full items-start gap-3 ${chipBase} ${reveal ? (ok ? chipRight : chipWrong) : chipOn}`}>
+                <button data-step={o} aria-label={reveal ? `Step ${pos + 1}: ${options[o]}. ${ok ? "Correct position" : "Incorrect position"}` : `Remove step ${pos + 1}: ${options[o]}`} type="button" disabled={disabled || reveal} onClick={() => remove(o)} className={`flex w-full items-start gap-3 ${chipBase} ${reveal ? (ok ? chipRight : chipWrong) : chipOn}`}>
                   <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-brand text-sm font-bold text-white">{pos + 1}</span>
                   <span className="flex-1 pt-0.5"><RichText text={options[o]} /></span>
                   {reveal && <span className="sr-only">{ok ? "Correct position" : "Incorrect position"}</span>}

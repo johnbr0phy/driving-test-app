@@ -1217,5 +1217,8 @@ html.native-app body {
 
 /* Text needs stronger contrast than decorative brand accents. */
 .text-brand { color: hsl(var(--brand-dark)); }
-html:not(.dark) :is(.text-gray-400, .text-gray-500) { color: #626b79; }
-html:not(.dark) .fill-gray-400 { fill: #626b79; }
+:where(html:not(.dark)) :is(.text-gray-400, .text-gray-500) { color: #626b79; }
+:where(html:not(.dark)) .fill-gray-400 { fill: #626b79; }
+
+/* Completion cards keep their dark surface in both appearance modes. */
+:where(html:not(.dark) .contrast-dark-surface) :is(.text-gray-400, .text-gray-500) { color: #9ca3af; }

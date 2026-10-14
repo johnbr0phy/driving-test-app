@@ -19,7 +19,7 @@ export const HESI: ExamV2Config = {
   theme: { brand: "310 60% 45%", brandDark: "310 60% 33%", brandLight: "310 70% 95%" },
   breakSeconds: 0,
   sections: [
-    { key: "math", name: "Mathematics", shortName: "Math", calculator: true, modules: [{ module: 1, questionCount: 36, timeLimit: minutes(33) }], directions: "Basic math, fractions, decimals, ratios, conversions and dosage calculations. An on-screen calculator is provided, as on the real exam.", scale: percentScale(36), domains: ["hesiMath"] },
+    { key: "math", name: "Mathematics", shortName: "Math", calculator: true, modules: [{ module: 1, questionCount: 36, timeLimit: minutes(33) }], directions: "Basic math, fractions, decimals, ratios, conversions and dosage calculations. An on-screen calculator is provided, as on the real exam.", scale: percentScale(36), domains: ["hesiNumbers", "hesiConversions"] },
     { key: "reading", name: "Reading Comprehension", shortName: "Reading", modules: [{ module: 1, questionCount: 32, timeLimit: minutes(35) }], directions: "Each question comes with a short health-related passage. Main idea, supporting detail, meaning in context, inference and tone.", scale: percentScale(32), domains: ["hesiReading"] },
     { key: "vocabulary", name: "Vocabulary and General Knowledge", shortName: "Vocab", modules: [{ module: 1, questionCount: 32, timeLimit: minutes(29) }], directions: "Health care vocabulary and general words used in nursing contexts.", scale: percentScale(32), domains: ["hesiVocabulary"] },
     { key: "grammar", name: "Grammar", shortName: "Grammar", modules: [{ module: 1, questionCount: 32, timeLimit: minutes(29) }], directions: "Parts of speech, agreement, pronouns, commonly confused words and sentence structure.", scale: percentScale(32), domains: ["hesiGrammar"] },
@@ -29,19 +29,26 @@ export const HESI: ExamV2Config = {
   ],
   tests: [{ number: 1, name: "Full HESI A2 battery" }],
   domainLabels: {
-    hesiMath: "Mathematics",
+    hesiNumbers: "Numbers and Operations",
+    hesiConversions: "Conversions and Dosage",
     hesiReading: "Reading Comprehension",
     hesiVocabulary: "Vocabulary",
     hesiGrammar: "Grammar",
     hesiBiology: "Biology",
     hesiChemistry: "Chemistry",
     hesiAnatomy: "Anatomy and Physiology",
+    // Results saved before Math was split into two drills.
+    hesiMath: "Mathematics",
   },
+  // Math is split in two so each drill opens with a short Basics list;
+  // legacyKey carries progress from the old single Math drill. The science
+  // drills have no Basics yet.
   drills: [
-    { key: "math", name: "Mathematics", section: "math", domains: ["hesiMath"], blurb: "Dosage, conversions, fractions and decimals with every step shown." },
-    { key: "reading", name: "Reading Comprehension", section: "reading", domains: ["hesiReading"], blurb: "Short health passages with main idea, detail and inference questions." },
-    { key: "vocabulary", name: "Vocabulary", section: "vocabulary", domains: ["hesiVocabulary"], blurb: "The words nursing programs expect you to know." },
-    { key: "grammar", name: "Grammar", section: "grammar", domains: ["hesiGrammar"], blurb: "Agreement, pronouns, confused words and sentence structure." },
+    { key: "numbers", legacyKey: "math", name: "Numbers and Operations", section: "math", domains: ["hesiNumbers"], blurb: "Fractions, decimals, percents, ratios, Roman numerals and basic algebra, every step worked.", basics: ["fractionOps", "decimals", "rounding", "ratios", "percents", "percentChange", "orderOfOperations", "romanNumerals", "solveX", "distributing"] },
+    { key: "conversions", legacyKey: "math", name: "Conversions and Dosage", section: "math", domains: ["hesiConversions"], blurb: "Household and metric units, dosage, IV rates, military time and temperature.", basics: ["unitConversion", "dosage", "militaryTime", "substitution"] },
+    { key: "reading", name: "Reading Comprehension", section: "reading", domains: ["hesiReading"], blurb: "Short health passages with main idea, detail and inference questions.", basics: ["mainIdea", "findingDetail", "inference", "wordsInContext", "authorPurpose", "toneWords", "factOpinion", "sequenceEvents", "causeEffect"] },
+    { key: "vocabulary", name: "Vocabulary", section: "vocabulary", domains: ["hesiVocabulary"], blurb: "The words nursing programs expect you to know.", basics: ["wordsInContext", "wordParts"] },
+    { key: "grammar", name: "Grammar", section: "grammar", domains: ["hesiGrammar"], blurb: "Agreement, pronouns, confused words and sentence structure.", basics: ["subjectVerb", "pronounCase", "verbTense", "commonlyConfused", "apostrophes", "commaSplices", "semicolons", "colons", "listIntroCommas"] },
     { key: "biology", name: "Biology", section: "biology", domains: ["hesiBiology"], blurb: "Cells, genetics, metabolism and classification." },
     { key: "chemistry", name: "Chemistry", section: "chemistry", domains: ["hesiChemistry"], blurb: "Atoms, bonding, reactions, solutions and pH." },
     { key: "anatomy", name: "Anatomy and Physiology", section: "anatomy", domains: ["hesiAnatomy"], blurb: "Body systems and the terms that describe them." },
@@ -60,7 +67,7 @@ export const HESI: ExamV2Config = {
   testLength: "3 hr 3 min",
   copy: {
     heroSubs: [
-      "Drill each section, then take the full test.",
+      "Learn the basics, then drill each section.",
       "Master each drill first.",
       "Halfway there. Try the full test.",
       "Hit your goal on the full battery.",

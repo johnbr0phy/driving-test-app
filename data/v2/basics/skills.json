@@ -523,5 +523,173 @@
       { "stem": "Students test whether salt makes water boil faster. Which pot is the control?", "options": ["The pot with 1 spoon of salt", "The pot with no salt", "The pot with 2 spoons of salt"], "answer": 1, "why": "The control gets no treatment: plain water, no salt." },
       { "stem": "Plants with fertilizer grew 5 cm. The control grew 5 cm too. What does this show?", "options": ["The fertilizer worked", "The fertilizer made no difference", "The control was done wrong"], "answer": 1, "why": "Same growth with and without fertilizer means the fertilizer didn't do anything." }
     ]
+  },
+  {
+    "id": "commonlyConfused",
+    "name": "Commonly confused words",
+    "sub": "affect or effect, their or there, fewer or less",
+    "rule": "Some word pairs sound alike but mean different things. Affect is usually the action, effect the result. Their owns, there points, they're is \"they are.\" Fewer is for things you can count, less for amounts. Than compares, then is about time.",
+    "trick": "Use a stand-in: if \"the result\" fits, use effect. If you can count them, use fewer. If \"they are\" fits, use they're.",
+    "examples": [
+      {
+        "kind": "good",
+        "text": "The drug had a calming effect, and fewer patients woke at night."
+      },
+      {
+        "kind": "bad",
+        "text": "The drug had a calming affect, and less patients woke at night.",
+        "note": "\"A calming result\" fits, so effect. Patients can be counted, so fewer."
+      }
+    ],
+    "another": {
+      "text": "These words are like twins who look alike but have different jobs. One quick question tells them apart: can you count it? Is it the thing that happened, or the doing? Does \"they are\" fit?",
+      "example": "fewer cookies (you can count them)\nless milk (you can't)\nThe rain affected us. The effect was a soggy picnic."
+    },
+    "questions": [
+      {
+        "blank": "Stress can __ how well you sleep.",
+        "options": [
+          "affect",
+          "effect"
+        ],
+        "answer": 0,
+        "why": "Here it's the action, so affect."
+      },
+      {
+        "blank": "The patient is taller __ his brother.",
+        "options": [
+          "than",
+          "then"
+        ],
+        "answer": 0,
+        "why": "Comparing two things: than. Then is about time."
+      }
+    ]
+  },
+  {
+    "id": "pronounCase",
+    "name": "I or me, who or whom",
+    "sub": "Doing the action or receiving it",
+    "rule": "Use I, he, she, we, they and who for the one doing the action. Use me, him, her, us, them and whom for the one receiving it, or after words like to, with, for and between.",
+    "trick": "Drop the other person: \"gave it to Maria and me\" becomes \"gave it to me,\" which sounds right. For who or whom, answer with he or him: him means whom.",
+    "examples": [
+      {
+        "kind": "good",
+        "text": "The nurse gave the chart to Maria and me."
+      },
+      {
+        "kind": "bad",
+        "text": "The nurse gave the chart to Maria and I.",
+        "note": "Drop Maria: \"gave the chart to I\" sounds wrong."
+      }
+    ],
+    "another": {
+      "text": "I and me are the same person doing different jobs. I is the one doing something. Me is the one something happens to. Cover up the other person in the sentence and your ear will pick the right one.",
+      "example": "Sam and I went to the store. (I went)\nMom drove Sam and me. (drove me)"
+    },
+    "questions": [
+      {
+        "blank": "My sister and __ finished the project.",
+        "options": [
+          "I",
+          "me"
+        ],
+        "answer": 0,
+        "why": "Drop \"my sister\": \"I finished\" sounds right, \"me finished\" doesn't."
+      },
+      {
+        "blank": "To __ should I send the report?",
+        "options": [
+          "who",
+          "whom"
+        ],
+        "answer": 1,
+        "why": "Answer it: send it to him. Him means whom."
+      }
+    ]
+  },
+  {
+    "id": "verbTense",
+    "name": "Verb tense",
+    "sub": "Keeping the time straight",
+    "rule": "The verb shows when something happens. Keep the tense the same unless the time really changes. Use had + verb for something finished before another past event, and has or have + verb for something that started in the past and still matters now.",
+    "trick": "Find the time clue (yesterday, next week, by the time, since) and match the verb to it. Some verbs have their own forms: drink, drank, has drunk.",
+    "examples": [
+      {
+        "kind": "good",
+        "text": "By the time the ambulance arrived, the patient had regained consciousness."
+      },
+      {
+        "kind": "bad",
+        "text": "By the time the ambulance arrived, the patient regains consciousness.",
+        "note": "Both events are in the past and one finished first, so had regained."
+      }
+    ],
+    "another": {
+      "text": "Verbs are little time machines. They tell you if something already happened, is happening, or will happen. If the sentence says \"yesterday,\" the verb has to live in yesterday too.",
+      "example": "Yesterday I walk. ✗\nYesterday I walked. ✓\nTomorrow I will walk. ✓"
+    },
+    "questions": [
+      {
+        "blank": "Next month the clinic __ a new wing.",
+        "options": [
+          "opened",
+          "will open"
+        ],
+        "answer": 1,
+        "why": "\"Next month\" is the future, so will open."
+      },
+      {
+        "blank": "Since breakfast, she has __ two glasses of water.",
+        "options": [
+          "drank",
+          "drunk"
+        ],
+        "answer": 1,
+        "why": "After has or have, use the third form: drink, drank, has drunk."
+      }
+    ]
+  },
+  {
+    "id": "listIntroCommas",
+    "name": "Commas in lists and openers",
+    "sub": "The two commas you use most",
+    "rule": "Put commas between three or more items in a list, including before \"and.\" Put a comma after an opening phrase or clause that comes before the main sentence. Don't put a comma between two verbs that share one subject.",
+    "trick": "If the sentence starts with When, After, Because, If or Although, the comma goes where the main sentence begins.",
+    "examples": [
+      {
+        "kind": "good",
+        "text": "After the code ended, the team met to debrief."
+      },
+      {
+        "kind": "bad",
+        "text": "After the code ended the team met to debrief.",
+        "note": "The opener \"After the code ended\" needs a comma before the main sentence starts."
+      }
+    ],
+    "another": {
+      "text": "A comma is a short breath. You take one between the things on a list, and one after the warm-up part of a sentence before the main part starts.",
+      "example": "Bring gauze, tape, and saline.\nWhen the bell rang, we left."
+    },
+    "questions": [
+      {
+        "stem": "Which one is correct?",
+        "options": [
+          "When the museum closed the staff moved the art.",
+          "When the museum closed, the staff moved the art."
+        ],
+        "answer": 1,
+        "why": "The opener \"When the museum closed\" ends where the main sentence starts. The comma goes there."
+      },
+      {
+        "stem": "Which one is correct?",
+        "options": [
+          "The crew repaired the roof, and replaced the gutters.",
+          "The crew repaired the roof and replaced the gutters."
+        ],
+        "answer": 1,
+        "why": "One subject, two verbs. \"Replaced the gutters\" isn't a full sentence on its own, so no comma."
+      }
+    ]
   }
 ]

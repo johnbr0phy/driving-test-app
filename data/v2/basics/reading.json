@@ -312,5 +312,281 @@
       { "passage": "Maya opened the envelope with shaking hands. Three months earlier she had mailed the application without telling anyone, certain she would be rejected.", "stem": "Which event happened first?", "options": ["Maya opened the envelope.", "Maya mailed the application.", "Maya was rejected."], "answer": 1, "why": "\"Three months earlier she had mailed\" places the mailing well before the envelope. Rejection never happens in the text." },
       { "passage": "After the storm passed, Theo went out to check the boat. He had tied it to the dock the night before with two extra lines, and it was still there.", "stem": "Put these in order: (A) Theo checks the boat, (B) the storm passes, (C) Theo ties the boat.", "options": ["A, B, C", "C, B, A", "B, A, C"], "answer": 1, "why": "He tied it \"the night before,\" the storm passed, then he checked. C, B, A." }
     ]
+  },
+  {
+    "id": "factOpinion",
+    "name": "Fact or opinion",
+    "sub": "Can you prove it?",
+    "rule": "A fact can be checked and shown to be true or false. An opinion is a belief or judgment that people could disagree about.",
+    "trick": "Look for judgment words: best, worst, most enjoyable, should, beautiful, valuable. Numbers, dates and measurements usually mark a fact.",
+    "passage": "Olive oil is high in monounsaturated fat. It is the most delicious oil for cooking, and every kitchen should have a bottle.",
+    "examples": [
+      {
+        "kind": "eg",
+        "text": "Olive oil is high in monounsaturated fat.",
+        "note": "Fact: a lab could measure it."
+      },
+      {
+        "kind": "eg",
+        "text": "It is the most delicious oil for cooking.",
+        "note": "Opinion: \"most delicious\" is a judgment."
+      }
+    ],
+    "another": {
+      "text": "A fact is something you could check with a ruler, a clock or a book. An opinion is something two friends could argue about and both be fine.",
+      "example": "The pizza has 8 slices. → fact\nPizza is the best food. → opinion"
+    },
+    "walkthrough": {
+      "passage": true,
+      "steps": [
+        {
+          "say": "For each sentence, ask: could I prove this true or false?"
+        },
+        {
+          "ask": "\"Olive oil is high in monounsaturated fat.\" Can it be checked?",
+          "options": [
+            "Yes, it's a fact",
+            "No, it's an opinion"
+          ],
+          "answer": 0,
+          "then": "A lab could measure it.",
+          "line": "Sentence 1: fact"
+        },
+        {
+          "ask": "\"It is the most delicious oil for cooking.\" Which words give it away?",
+          "options": [
+            "most delicious",
+            "oil",
+            "for cooking"
+          ],
+          "answer": 0,
+          "then": "Delicious to whom? People could disagree.",
+          "line": "Sentence 2: opinion (most delicious)"
+        },
+        {
+          "ask": "\"Every kitchen should have a bottle.\" Fact or opinion?",
+          "options": [
+            "Opinion",
+            "Fact"
+          ],
+          "answer": 0,
+          "hint": "\"Should\" tells you what someone thinks ought to happen.",
+          "line": "Sentence 3: opinion (should)"
+        }
+      ]
+    },
+    "questions": [
+      {
+        "stem": "Which is an opinion?",
+        "options": [
+          "The clinic opens at 8 a.m.",
+          "The clinic has the friendliest staff in town.",
+          "The clinic has 12 exam rooms."
+        ],
+        "answer": 1,
+        "why": "\"Friendliest\" is a judgment. The other two can be checked."
+      },
+      {
+        "stem": "Which is a fact?",
+        "options": [
+          "Walking is the best exercise.",
+          "Everyone should walk every day.",
+          "Walking for 30 minutes burns about 150 calories."
+        ],
+        "answer": 2,
+        "why": "A measured number can be checked. \"Best\" and \"should\" are judgments."
+      }
+    ]
+  },
+  {
+    "id": "wordParts",
+    "name": "Word parts",
+    "sub": "Prefixes and roots that give the meaning away",
+    "rule": "Many hard words are built from small parts. A prefix at the front changes the meaning (bi- two, hyper- over, hypo- under, post- after), a root carries the core idea (cardi heart, therm heat), and a suffix at the end adds to it (-itis inflammation, -ology study of).",
+    "trick": "Break the word into pieces and translate each one. Then pick the answer that matches the pieces.",
+    "examples": [
+      {
+        "kind": "eg",
+        "text": "bilateral",
+        "note": "bi (two) + lateral (side) = affecting both sides"
+      },
+      {
+        "kind": "eg",
+        "text": "hypertension",
+        "note": "hyper (over) + tension (pressure) = high blood pressure"
+      }
+    ],
+    "another": {
+      "text": "Big words are built like LEGO. Pull one apart and each brick has its own small meaning. Put the brick meanings back together and you've got the big word.",
+      "example": "un + believ + able\n= not + believe + can be\n= can't be believed"
+    },
+    "walkthrough": {
+      "board": "The chest X-ray showed bilateral pneumonia.",
+      "kind": "text",
+      "steps": [
+        {
+          "say": "Break the word into parts: bi + lateral."
+        },
+        {
+          "ask": "bi- means…",
+          "options": [
+            "two",
+            "half",
+            "life"
+          ],
+          "answer": 0,
+          "hint": "Think of a bicycle.",
+          "line": "bi = two"
+        },
+        {
+          "ask": "lateral means…",
+          "options": [
+            "side",
+            "lung",
+            "late"
+          ],
+          "answer": 0,
+          "hint": "A lateral move goes sideways.",
+          "line": "lateral = side"
+        },
+        {
+          "ask": "So bilateral pneumonia is in…",
+          "options": [
+            "both lungs",
+            "one lung",
+            "the heart"
+          ],
+          "answer": 0,
+          "line": "bilateral = both sides"
+        },
+        {
+          "ask": "Try one: hypothermia. hypo- means under, therm means heat. So it means…",
+          "options": [
+            "body temperature too low",
+            "a fever",
+            "a fast heartbeat"
+          ],
+          "answer": 0,
+          "then": "Under + heat: the body is too cold.",
+          "line": "hypo + therm = too little heat"
+        },
+        {
+          "ask": "And benevolent: bene- means good. A benevolent person is…",
+          "options": [
+            "kind",
+            "angry",
+            "sleepy"
+          ],
+          "answer": 0,
+          "line": "bene = good, so kind"
+        }
+      ]
+    },
+    "questions": [
+      {
+        "stem": "Tachycardia (tachy = fast, cardi = heart) means:",
+        "options": [
+          "a fast heartbeat",
+          "a weak heart",
+          "heart pain"
+        ],
+        "answer": 0,
+        "why": "Fast + heart: a fast heartbeat."
+      },
+      {
+        "stem": "Postoperative means:",
+        "options": [
+          "after surgery",
+          "before surgery",
+          "during surgery"
+        ],
+        "answer": 0,
+        "why": "post- means after, as in postpone or postscript."
+      }
+    ]
+  },
+  {
+    "id": "synonyms",
+    "name": "Closest meaning",
+    "sub": "Make your own definition first",
+    "rule": "For a \"most nearly means\" question, decide what the word means before you look at the choices. Then pick the choice that could replace the word in a sentence.",
+    "trick": "Put the word in a short sentence you know (\"a candid answer\"). Swap each choice into your sentence. The one that keeps the meaning wins. Cross out choices that are opposites.",
+    "examples": [
+      {
+        "kind": "eg",
+        "text": "Frugal",
+        "note": "\"A frugal shopper saves money.\" Thrifty fits; wasteful is the opposite."
+      },
+      {
+        "kind": "eg",
+        "text": "Hinder",
+        "note": "\"Rain will hinder the march.\" Obstruct fits; help is the opposite."
+      }
+    ],
+    "another": {
+      "text": "It's like finding a substitute player. The new player has to do the same job in the same spot. Try each choice in the word's spot and see who plays it right.",
+      "example": "a candid answer\nan honest answer ✓\na secret answer ✗"
+    },
+    "walkthrough": {
+      "board": "Candid most nearly means",
+      "kind": "text",
+      "steps": [
+        {
+          "say": "Don't read the choices yet. Put the word in a sentence first."
+        },
+        {
+          "ask": "Which sentence sounds right?",
+          "options": [
+            "She gave a candid answer about her mistake.",
+            "She ate a candid apple."
+          ],
+          "answer": 0,
+          "line": "She gave a candid answer about her mistake."
+        },
+        {
+          "ask": "In that sentence, candid sounds like…",
+          "options": [
+            "open and truthful",
+            "sweet",
+            "angry"
+          ],
+          "answer": 0,
+          "line": "My word: truthful"
+        },
+        {
+          "ask": "Now the choices: honest, sweet, secret, rude. Which keeps the meaning?",
+          "options": [
+            "honest",
+            "secret",
+            "sweet"
+          ],
+          "answer": 0,
+          "then": "\"She gave an honest answer.\" Same meaning. Secret is close to the opposite.",
+          "line": "candid = honest"
+        }
+      ]
+    },
+    "questions": [
+      {
+        "stem": "Diligent most nearly means:",
+        "options": [
+          "hardworking",
+          "lazy",
+          "late"
+        ],
+        "answer": 0,
+        "why": "\"A diligent student studies every night.\" Hardworking fits; lazy is the opposite."
+      },
+      {
+        "stem": "Obsolete most nearly means:",
+        "options": [
+          "outdated",
+          "new",
+          "broken"
+        ],
+        "answer": 0,
+        "why": "\"Obsolete phones are no longer made.\" Outdated fits."
+      }
+    ]
   }
 ]

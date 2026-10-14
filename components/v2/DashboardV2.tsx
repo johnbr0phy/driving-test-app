@@ -25,9 +25,9 @@ import { usePurchaseReturn } from "@/hooks/usePurchaseReturn";
 import { hasDrillProgress, isDrillLocked, isTestLocked, otherPremiumExams } from "@/lib/v2/premium";
 import { useV2Paywall, V2Paywall } from "./V2Paywall";
 
-function heroTitle(done: number, total: number): string {
+function heroTitle(done: number, total: number, completedTitle = "You're ready"): string {
   if (done === 0) return `Complete all ${total} steps`;
-  if (done === total) return "You're ready";
+  if (done === total) return completedTitle;
   if (done === total - 1) return "One left";
   if (done === 1) return `Good start. 1 of ${total} done`;
   const frac = done / total;
@@ -147,6 +147,7 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
           );
         })}
       </div>
+      {exam.copy.progressNote && <p className="mt-3 text-xs text-gray-600 dark:text-gray-300">{exam.copy.progressNote}</p>}
       {editingGoal && (
         <button type="button" onClick={() => setEditingGoal(false)} className="mt-3 w-full text-center text-xs font-semibold text-gray-500 dark:text-gray-400">
           Keep {goal}
@@ -174,7 +175,7 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
               <div className="flex items-center gap-4">
                 <Image src={tigerFace(doneSteps, totalSteps, exam.id)} alt="Tiger mascot" width={48} height={48} className="w-12 h-12 flex-shrink-0" />
                 <div className="flex-1 min-w-0">
-                  <h1 className="text-lg font-bold text-gray-900 dark:text-gray-50">{heroTitle(doneSteps, totalSteps)}</h1>
+                  <h1 className="text-lg font-bold text-gray-900 dark:text-gray-50">{heroTitle(doneSteps, totalSteps, exam.copy.completedTitle)}</h1>
                   <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">{heroSub(exam, doneSteps, totalSteps)}</p>
                 </div>
                 <div className="flex-shrink-0 text-right">
@@ -185,6 +186,7 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
                 </div>
               </div>
               <GoalStrip exam={exam} goal={goal} best={bestOverall} onEdit={() => setEditingGoal(true)} />
+              {exam.copy.progressNote && <p className="mt-3 text-xs text-gray-600 dark:text-gray-300">{exam.copy.progressNote}</p>}
             </div>
           )}
 

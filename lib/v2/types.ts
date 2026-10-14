@@ -203,6 +203,12 @@ export interface ExamV2Config {
     benefits: string[];
   };
   copy: {
+    /** Optional completion heading; otherwise the dashboard uses its standard heading. */
+    completedTitle?: string;
+    /** Optional guidance shown beside goal selection and dashboard progress. */
+    progressNote?: string;
+    /** Optional results label replacing the default composite estimate label. */
+    scoreLabel?: string;
     /** Five hero subtitles for 0%, <40%, <70%, <100%, 100% of steps complete. */
     heroSubs: [string, string, string, string, string];
     sourceLine: string;

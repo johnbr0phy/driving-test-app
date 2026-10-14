@@ -20,7 +20,7 @@ const faqs = [
   },
   {
     q: "What percentage do I need to pass the NCLEX?",
-    a: "There is no percent. The NCLEX scores ability against a fixed passing standard and reports pass or fail. Because each question is pitched near your ability, almost everyone answers roughly half correctly, pass or fail; what matters is how hard those questions were. On TigerTest practice items, 70 percent or better across both practice tests is a solid sign.",
+    a: "There is no percentage pass mark. The real NCLEX is adaptive: it assesses ability against a passing standard and reports pass or fail. TigerTest reports percent correct on fixed practice items. Practice percentages do not predict your NCLEX result or tell you when to schedule the exam. Use them to track practice progress and choose topics to review.",
   },
   {
     q: "What is on the 2026 NCLEX-RN test plan?",
@@ -28,7 +28,7 @@ const faqs = [
   },
   {
     q: "Does TigerTest have Next Generation NCLEX questions?",
-    a: "About a quarter of the questions are select all that apply, scored all or nothing, and about a quarter give you a short chart (vital signs, labs, nurses' notes or orders) to read before you answer, the way NGN items do. Bowtie, matrix and drag-and-drop formats are not here yet.",
+    a: "Yes. The bank includes select all that apply, matrix, bowtie, drop-down, highlight, ordering and numeric items, plus case studies with charts. TigerTest scores each item all or nothing. It does not reproduce the real exam's partial-credit scoring or adaptive ability assessment.",
   },
   {
     q: "Is the TigerTest NCLEX practice test free?",
@@ -74,7 +74,7 @@ const jsonLd = {
       featureList: [
         "200 original NCLEX-RN practice questions with rationales",
         "Two 85-question practice tests answered in order, no going back",
-        "Select all that apply and chart-based items",
+        "Select all that apply, matrix, bowtie and chart-based items",
         "Weighted by the NCSBN 2026 Client Needs categories",
         "Mastery drills for all eight Client Needs areas",
         "Progress syncs between phone and computer",
@@ -153,7 +153,7 @@ export default function NclexLandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Practice Tests</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                85 questions at the real test&apos;s minimum length, answered in order with no going back, like the NCLEX. Practice Test 2 never appears in the drills, so it measures readiness instead of memory. Finish with a score by Client Needs category and a plan for what to drill next.
+                85 questions at the real test&apos;s minimum length, answered in order with no going back, like the NCLEX. Practice Test 2 questions do not appear in the drills, so you can check your practice performance on a separate set of questions. Finish with a score by Client Needs category and a plan for what to drill next.
               </p>
             </div>
           </div>
@@ -215,7 +215,7 @@ export default function NclexLandingPage() {
       <div className="bg-gray-50 dark:bg-gray-950 py-16 md:py-24">
         <div className="max-w-3xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-12">
-            How to Pass the NCLEX-RN
+            How to Practice for the NCLEX-RN
           </h2>
           <div className="space-y-8 text-gray-600 dark:text-gray-300">
             <div>
@@ -239,7 +239,7 @@ export default function NclexLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Read the rationales, then drill your weakest area</h3>
               <p>
-                TigerTest scores you by Client Needs category. Drill the one you miss most until it is above 75 percent, then take Practice Test 2 cold to check that it holds.
+                TigerTest shows practice scores by Client Needs category. Review the rationales in the area you miss most, then use Practice Test 2 to check your progress on a separate set of questions. These scores do not predict your result on the real adaptive exam.
               </p>
             </div>
           </div>
@@ -267,7 +267,7 @@ export default function NclexLandingPage() {
       <div className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-t from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">Ready to Pass the NCLEX?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">Start Your NCLEX Practice</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Free to start. No account required. 200 questions across all eight Client Needs areas.</p>
           <ExamLandingCTA dashboardHref="/nclex" />
         </div>

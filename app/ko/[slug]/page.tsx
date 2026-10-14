@@ -371,7 +371,7 @@ export default async function KoreanStateDMVPage({ params }: PageProps) {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
           <Card className="bg-gradient-to-br from-brand-light to-brand-gradient-to border-brand-border-light">
             <CardContent className="p-4 md:p-6 text-center">
-              <FileText className="h-6 w-6 md:h-8 md:w-8 text-brand mx-auto mb-2" />
+              <FileText className="h-6 w-6 md:h-8 md:w-8 text-brand-dark mx-auto mb-2" />
               <div className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 mb-1">
                 {state.writtenTestQuestions}
               </div>
@@ -381,7 +381,7 @@ export default async function KoreanStateDMVPage({ params }: PageProps) {
 
           <Card className="bg-gradient-to-br from-brand-light to-brand-gradient-to border-brand-border-light">
             <CardContent className="p-4 md:p-6 text-center">
-              <Target className="h-6 w-6 md:h-8 md:w-8 text-brand mx-auto mb-2" />
+              <Target className="h-6 w-6 md:h-8 md:w-8 text-brand-dark mx-auto mb-2" />
               <div className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 mb-1">
                 {state.passingScore}%
               </div>
@@ -391,7 +391,7 @@ export default async function KoreanStateDMVPage({ params }: PageProps) {
 
           <Card className="bg-gradient-to-br from-brand-light to-brand-gradient-to border-brand-border-light">
             <CardContent className="p-4 md:p-6 text-center">
-              <Clock className="h-6 w-6 md:h-8 md:w-8 text-brand mx-auto mb-2" />
+              <Clock className="h-6 w-6 md:h-8 md:w-8 text-brand-dark mx-auto mb-2" />
               <div className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 mb-1">
                 {state.minPermitAge}
               </div>
@@ -401,7 +401,7 @@ export default async function KoreanStateDMVPage({ params }: PageProps) {
 
           <Card className="bg-gradient-to-br from-brand-light to-brand-gradient-to border-brand-border-light">
             <CardContent className="p-4 md:p-6 text-center">
-              <AlertCircle className="h-6 w-6 md:h-8 md:w-8 text-brand mx-auto mb-2" />
+              <AlertCircle className="h-6 w-6 md:h-8 md:w-8 text-brand-dark mx-auto mb-2" />
               <div className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 mb-1">
                 {rawPassing}/{state.writtenTestQuestions}
               </div>
@@ -491,7 +491,7 @@ export default async function KoreanStateDMVPage({ params }: PageProps) {
                   href={landingInfo.handbookUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-brand hover:text-brand-dark font-medium"
+                  className="inline-flex items-center gap-2 text-brand-dark hover:text-brand-darker font-medium"
                 >
                   <BookOpen className="h-4 w-4" />
                   {landingInfo.handbookName} 내려받기
@@ -625,7 +625,7 @@ export default async function KoreanStateDMVPage({ params }: PageProps) {
                       <span className="font-medium text-gray-900 dark:text-gray-50">
                         {neighbor.name}
                       </span>
-                      <ChevronRight className="h-4 w-4 text-gray-400" />
+                      <ChevronRight className="h-4 w-4 text-gray-500 dark:text-gray-400" />
                     </Link>
                   )
               )}

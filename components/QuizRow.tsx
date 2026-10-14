@@ -93,7 +93,7 @@ export function QuizRow({
           <div className={`text-base font-bold tabular-nums leading-none ${chipColorClass}`}>
             {chipValue}
           </div>
-          <div className="text-[9px] uppercase tracking-wide text-gray-400 mt-0.5 whitespace-nowrap">
+          <div className="text-[9px] uppercase tracking-wide text-gray-500 dark:text-gray-400 mt-0.5 whitespace-nowrap">
             {chipLabel}
           </div>
         </div>
@@ -103,11 +103,11 @@ export function QuizRow({
           >
             {question}
           </p>
-          {subtitle && <p className="text-xs text-gray-400 mt-0.5">{subtitle}</p>}
+          {subtitle && <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">{subtitle}</p>}
         </div>
         {media && <div className="shrink-0">{media}</div>}
         <ChevronDown
-          className={`h-4 w-4 text-gray-400 shrink-0 transition-transform duration-300 motion-reduce:transition-none ${
+          className={`h-4 w-4 text-gray-500 dark:text-gray-400 shrink-0 transition-transform duration-300 motion-reduce:transition-none ${
             expanded ? "rotate-180" : ""
           }`}
         />
@@ -137,7 +137,7 @@ export function QuizRow({
                   } else if (isPicked) {
                     optionStyle = "bg-red-50 dark:bg-red-950 border-red-200 dark:border-red-800 text-red-700 dark:text-red-300";
                   } else {
-                    optionStyle = "bg-gray-50 dark:bg-gray-950 border-gray-100 dark:border-gray-800 text-gray-400";
+                    optionStyle = "bg-gray-50 dark:bg-gray-950 border-gray-100 dark:border-gray-800 text-gray-500 dark:text-gray-400";
                   }
                 }
 

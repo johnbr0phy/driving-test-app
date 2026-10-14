@@ -67,9 +67,9 @@ export function TrainingSetCard({ set, locked = false, isPremiumLocked = false, 
           </div>
           <p className="text-xs">
             {locked ? (
-              <span className="text-gray-400">{t("common.locked")}</span>
+              <span className="text-gray-500 dark:text-gray-400">{t("common.locked")}</span>
             ) : isPremiumLocked ? (
-              <span className="text-brand">{t("common.unlockWithPremium")}</span>
+              <span className="text-brand-dark">{t("common.unlockWithPremium")}</span>
             ) : (
               <span className={isComplete ? 'text-green-600 dark:text-green-400' : 'text-gray-500 dark:text-gray-400'}>
                 {set.correctCount}/{set.targetCount}
@@ -77,7 +77,7 @@ export function TrainingSetCard({ set, locked = false, isPremiumLocked = false, 
             )}
           </p>
         </div>
-        {!locked && <ChevronRight className={`h-5 w-5 ${isPremiumLocked ? "text-brand-muted" : "text-gray-400"}`} />}
+        {!locked && <ChevronRight className={`h-5 w-5 ${isPremiumLocked ? "text-brand-muted" : "text-gray-500 dark:text-gray-400"}`} />}
       </CardContent>
     </Card>
   );

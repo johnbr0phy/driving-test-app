@@ -142,7 +142,7 @@ export function ExamTestPage({ exam }: { exam: ExamConfig }) {
           !isGuest ? (
             <Link
               href={routes.stats}
-              className="text-sm font-medium text-brand hover:text-brand-dark transition-colors"
+              className="text-sm font-medium text-brand-dark hover:text-brand-darker transition-colors"
             >
               {t("dashboard.viewStats")}
             </Link>
@@ -174,7 +174,7 @@ export function ExamTestPage({ exam }: { exam: ExamConfig }) {
                     ? "border-brand bg-brand text-white"
                     : answers[index]
                     ? "border-brand bg-brand-light text-brand-dark"
-                    : "border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-gray-400"
+                    : "border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-gray-500 dark:text-gray-400"
                   }
                 `}
               >

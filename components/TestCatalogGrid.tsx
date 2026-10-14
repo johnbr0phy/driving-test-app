@@ -32,7 +32,7 @@ function TestCard({ test }: { test: TestCatalogEntry }) {
           <span className="text-gray-500 dark:text-gray-400">
             {test.questions} questions · {test.pricing ?? "Free"}
           </span>
-          <span className="inline-flex items-center gap-1 font-semibold text-brand group-hover:gap-2 transition-all">
+          <span className="inline-flex items-center gap-1 font-semibold text-brand-dark group-hover:gap-2 transition-all">
             Start <ArrowRight className="h-4 w-4" aria-hidden="true" />
           </span>
         </div>
@@ -57,7 +57,7 @@ export function TestCatalogGrid() {
       <div className="mx-auto mb-10 max-w-xl">
         <div className="relative">
           <Search
-            className="pointer-events-none absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-gray-400"
+            className="pointer-events-none absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-gray-500 dark:text-gray-400"
             aria-hidden="true"
           />
           <input
@@ -75,7 +75,7 @@ export function TestCatalogGrid() {
               type="button"
               onClick={() => setQuery("")}
               aria-label="Clear search"
-              className="absolute right-3 top-1/2 -translate-y-1/2 rounded-md p-1 text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-gray-600 dark:hover:text-gray-300"
+              className="absolute right-3 top-1/2 -translate-y-1/2 rounded-md p-1 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-gray-600 dark:hover:text-gray-300"
             >
               <X className="h-4 w-4" aria-hidden="true" />
             </button>

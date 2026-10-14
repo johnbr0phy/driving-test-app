@@ -194,7 +194,7 @@ function OnboardingChecklist({
         <div className="flex items-center gap-1">
           <button
             onClick={handleToggleCollapse}
-            className="p-1.5 rounded-lg text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 hover:bg-white/60 transition-colors"
+            className="p-1.5 rounded-lg text-gray-500 dark:text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 hover:bg-white/60 transition-colors"
             title={collapsed ? "Expand" : "Collapse"}
           >
             {collapsed ? (
@@ -205,7 +205,7 @@ function OnboardingChecklist({
           </button>
           <button
             onClick={handleDismiss}
-            className="p-1.5 rounded-lg text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 hover:bg-white/60 transition-colors"
+            className="p-1.5 rounded-lg text-gray-500 dark:text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 hover:bg-white/60 transition-colors"
             title="Dismiss checklist"
           >
             <X className="h-3.5 w-3.5" />
@@ -238,12 +238,12 @@ function OnboardingChecklist({
               <div className="flex-1 min-w-0">
                 <p
                   className={`text-sm font-medium ${
-                    item.done ? "line-through text-gray-400" : "text-gray-800 dark:text-gray-100"
+                    item.done ? "line-through text-gray-500 dark:text-gray-400" : "text-gray-800 dark:text-gray-100"
                   }`}
                 >
                   {item.label}
                 </p>
-                <p className="text-xs text-gray-400 truncate">{item.description}</p>
+                <p className="text-xs text-gray-500 dark:text-gray-400 truncate">{item.description}</p>
               </div>
 
               {/* Action button */}
@@ -448,7 +448,7 @@ function SettingsPanel({
           <h2 className="text-lg font-bold text-gray-900 dark:text-gray-50">School Settings</h2>
           <button
             onClick={onClose}
-            className="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors p-1 rounded"
+            className="text-gray-500 dark:text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors p-1 rounded"
           >
             <X className="h-4 w-4" />
           </button>
@@ -462,7 +462,7 @@ function SettingsPanel({
               onClick={() => setActiveTab(tab.id)}
               className={`px-3 py-2 text-sm font-medium rounded-t-lg transition-colors ${
                 activeTab === tab.id
-                  ? "text-brand border-b-2 border-brand"
+                  ? "text-brand-dark border-b-2 border-brand"
                   : "text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200"
               }`}
             >
@@ -483,7 +483,7 @@ function SettingsPanel({
                   <p className="text-sm font-semibold text-gray-900 dark:text-gray-50 mt-0.5">{planLabel}</p>
                 </div>
                 {(schoolData?.planTier === "free" || !schoolData?.planTier) && (
-                  <span className="text-xs bg-brand/10 text-brand px-2.5 py-1 rounded-full font-medium">
+                  <span className="text-xs bg-brand/10 text-brand-dark px-2.5 py-1 rounded-full font-medium">
                     Upgrade available
                   </span>
                 )}
@@ -525,7 +525,7 @@ function SettingsPanel({
                       <ExternalLink className="h-3.5 w-3.5" />
                     </a>
                   </div>
-                  <p className="text-xs text-gray-400 mt-1.5">Share this link with your students to enroll them.</p>
+                  <p className="text-xs text-gray-500 dark:text-gray-400 mt-1.5">Share this link with your students to enroll them.</p>
                 </div>
               )}
 
@@ -695,7 +695,7 @@ function SettingsPanel({
                 <div className="bg-gray-50 dark:bg-gray-950 rounded-xl px-4 py-3">
                   <p className="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-wide font-medium mb-1">School slug</p>
                   <p className="text-sm font-mono text-gray-800 dark:text-gray-100">{schoolId}</p>
-                  <p className="text-xs text-gray-400 mt-1">Your slug cannot be changed after signup.</p>
+                  <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">Your slug cannot be changed after signup.</p>
                 </div>
               )}
 
@@ -745,7 +745,7 @@ function SettingsPanel({
                   )}
                 </Button>
                 {isDemoMode && (
-                  <p className="text-xs text-gray-400 mt-2 text-center">
+                  <p className="text-xs text-gray-500 dark:text-gray-400 mt-2 text-center">
                     Log in to manage your account.
                   </p>
                 )}
@@ -798,12 +798,12 @@ function SharePanel({ onClose, schoolId, schoolName }: SharePanelProps) {
         {/* Header */}
         <div className="flex items-center justify-between px-6 pt-6 pb-4 border-b border-gray-100 dark:border-gray-800">
           <div className="flex items-center gap-2">
-            <Share2 className="h-4 w-4 text-brand" />
+            <Share2 className="h-4 w-4 text-brand-dark" />
             <h2 className="text-base font-bold text-gray-900 dark:text-gray-50">Share your school page</h2>
           </div>
           <button
             onClick={onClose}
-            className="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors p-1 rounded"
+            className="text-gray-500 dark:text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors p-1 rounded"
           >
             <X className="h-4 w-4" />
           </button>
@@ -829,12 +829,12 @@ function SharePanel({ onClose, schoolId, schoolName }: SharePanelProps) {
                   includeMargin={false}
                 />
               </div>
-              <p className="text-xs text-gray-400 text-center">
+              <p className="text-xs text-gray-500 dark:text-gray-400 text-center">
                 Print this and hand it out — or drop it in your course materials.
               </p>
             </div>
           ) : (
-            <div className="flex flex-col items-center gap-2 py-4 text-gray-400">
+            <div className="flex flex-col items-center gap-2 py-4 text-gray-500 dark:text-gray-400">
               <School className="h-10 w-10 opacity-30" />
               <p className="text-sm">Log in to generate your QR code.</p>
             </div>
@@ -872,7 +872,7 @@ function SharePanel({ onClose, schoolId, schoolName }: SharePanelProps) {
 
           {/* Tips */}
           {publicUrl && (
-            <ul className="text-xs text-gray-400 space-y-1 border-t border-gray-100 dark:border-gray-800 pt-4">
+            <ul className="text-xs text-gray-500 dark:text-gray-400 space-y-1 border-t border-gray-100 dark:border-gray-800 pt-4">
               <li className="flex items-start gap-1.5">
                 <Check className="h-3.5 w-3.5 text-green-400 mt-0.5 shrink-0" />
                 Add the link to your course syllabus
@@ -894,7 +894,7 @@ function SharePanel({ onClose, schoolId, schoolName }: SharePanelProps) {
               href={publicUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-1.5 w-full text-sm font-medium text-brand border border-brand/30 rounded-xl py-2.5 hover:bg-brand/5 transition-colors"
+              className="flex items-center justify-center gap-1.5 w-full text-sm font-medium text-brand-dark border border-brand/30 rounded-xl py-2.5 hover:bg-brand/5 transition-colors"
             >
               <ExternalLink className="h-4 w-4" />
               Preview your school page
@@ -944,7 +944,7 @@ function ClassOverview({ students, totalSections }: ClassOverviewProps) {
       value: totalStudents,
       sub: totalStudents === 1 ? "active student" : "active students",
       icon: <Users className="h-5 w-5" />,
-      color: "text-brand",
+      color: "text-brand-dark",
       bg: "bg-brand/10",
     },
     {
@@ -968,7 +968,7 @@ function ClassOverview({ students, totalSections }: ClassOverviewProps) {
       value: atRisk,
       sub: "0 activity in 7+ days",
       icon: <AlertCircle className="h-5 w-5" />,
-      color: atRisk > 0 ? "text-amber-600 dark:text-amber-400" : "text-gray-400",
+      color: atRisk > 0 ? "text-amber-600 dark:text-amber-400" : "text-gray-500 dark:text-gray-400",
       bg: atRisk > 0 ? "bg-amber-50 dark:bg-amber-950" : "bg-gray-50 dark:bg-gray-950",
     },
   ];
@@ -988,7 +988,7 @@ function ClassOverview({ students, totalSections }: ClassOverviewProps) {
               {card.value}
             </p>
             <p className="text-xs font-medium text-gray-500 dark:text-gray-400 mt-0.5 leading-tight">{card.label}</p>
-            <p className="text-xs text-gray-400 mt-0.5 leading-tight">{card.sub}</p>
+            <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5 leading-tight">{card.sub}</p>
           </div>
         </div>
       ))}
@@ -1098,8 +1098,8 @@ function StatusBadge({ status }: { status: "active" | "pending" }) {
 export default function SchoolDashboardPage() {
   return (
     <Suspense fallback={
-      <div className="max-w-3xl mx-auto px-6 py-24 flex flex-col items-center gap-4 text-gray-400">
-        <Loader2 className="h-8 w-8 animate-spin text-brand" />
+      <div className="max-w-3xl mx-auto px-6 py-24 flex flex-col items-center gap-4 text-gray-500 dark:text-gray-400">
+        <Loader2 className="h-8 w-8 animate-spin text-brand-dark" />
         <p className="text-sm">Loading…</p>
       </div>
     }>
@@ -1337,8 +1337,8 @@ function DashboardInner() {
   // ── Auth loading ────────────────────────────────────────────────────────
   if (authLoading) {
     return (
-      <div className="max-w-3xl mx-auto px-6 py-24 flex flex-col items-center gap-4 text-gray-400">
-        <Loader2 className="h-8 w-8 animate-spin text-brand" />
+      <div className="max-w-3xl mx-auto px-6 py-24 flex flex-col items-center gap-4 text-gray-500 dark:text-gray-400">
+        <Loader2 className="h-8 w-8 animate-spin text-brand-dark" />
         <p className="text-sm">Checking your account…</p>
       </div>
     );
@@ -1349,7 +1349,7 @@ function DashboardInner() {
     return (
       <div className="max-w-lg mx-auto px-6 py-24 flex flex-col items-center text-center gap-6">
         <div className="bg-brand/10 rounded-full p-4">
-          <School className="h-8 w-8 text-brand" />
+          <School className="h-8 w-8 text-brand-dark" />
         </div>
         <div>
           <h2 className="text-xl font-bold text-gray-900 dark:text-gray-50 mb-2">No school account found</h2>
@@ -1369,8 +1369,8 @@ function DashboardInner() {
   // ── Student list loading ─────────────────────────────────────────────────
   if (loading) {
     return (
-      <div className="max-w-3xl mx-auto px-6 py-24 flex flex-col items-center gap-4 text-gray-400">
-        <Loader2 className="h-8 w-8 animate-spin text-brand" />
+      <div className="max-w-3xl mx-auto px-6 py-24 flex flex-col items-center gap-4 text-gray-500 dark:text-gray-400">
+        <Loader2 className="h-8 w-8 animate-spin text-brand-dark" />
         <p className="text-sm">Loading student data…</p>
       </div>
     );
@@ -1458,7 +1458,7 @@ function DashboardInner() {
             </div>
           ) : (
             <div className="w-10 h-10 rounded-lg bg-brand/10 flex items-center justify-center flex-shrink-0">
-              <School className="h-5 w-5 text-brand" />
+              <School className="h-5 w-5 text-brand-dark" />
             </div>
           )}
           <div>
@@ -1481,14 +1481,14 @@ function DashboardInner() {
         <div className="flex items-center gap-2 sm:shrink-0">
           <button
             onClick={() => setShowShare(true)}
-            className="p-2 rounded-lg text-gray-400 hover:text-brand hover:bg-brand/5 transition-colors"
+            className="p-2 rounded-lg text-gray-500 dark:text-gray-400 hover:text-brand hover:bg-brand/5 transition-colors"
             title="Share your school page"
           >
             <Share2 className="h-5 w-5" />
           </button>
           <button
             onClick={() => setShowSettings(true)}
-            className="p-2 rounded-lg text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+            className="p-2 rounded-lg text-gray-500 dark:text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
             title="School settings"
           >
             <Settings className="h-5 w-5" />
@@ -1581,7 +1581,7 @@ function DashboardInner() {
                 style={{ width: `${pct}%` }}
               />
             </div>
-            <p className="text-xs text-gray-400 mt-2">
+            <p className="text-xs text-gray-500 dark:text-gray-400 mt-2">
               {remaining > 0
                 ? `${remaining} seat${remaining !== 1 ? "s" : ""} remaining on your ${planName} plan`
                 : `All ${totalSeats} seats filled — upgrade to add more students`}
@@ -1596,14 +1596,14 @@ function DashboardInner() {
           <div className="flex items-center justify-between">
             <CardTitle className="text-base font-semibold text-gray-900 dark:text-gray-50">
               Students
-              <span className="ml-2 text-sm font-normal text-gray-400">
+              <span className="ml-2 text-sm font-normal text-gray-500 dark:text-gray-400">
                 ({activeStudents.length})
               </span>
             </CardTitle>
             {inactiveStudents.length > 0 && (
               <button
                 onClick={() => setShowInactive((v) => !v)}
-                className="flex items-center gap-1.5 text-xs text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
+                className="flex items-center gap-1.5 text-xs text-gray-500 dark:text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
                 title={showInactive ? "Hide inactive students" : "Show inactive students"}
               >
                 {showInactive ? (
@@ -1624,7 +1624,7 @@ function DashboardInner() {
                   <Users className="h-10 w-10 text-brand/40" />
                 </div>
                 <div className="absolute -bottom-1.5 -right-1.5 w-7 h-7 bg-white dark:bg-gray-900 border-2 border-brand/20 rounded-full flex items-center justify-center">
-                  <UserPlus className="h-3.5 w-3.5 text-brand" />
+                  <UserPlus className="h-3.5 w-3.5 text-brand-dark" />
                 </div>
               </div>
 
@@ -1632,7 +1632,7 @@ function DashboardInner() {
                 <h3 className="text-base font-semibold text-gray-800 dark:text-gray-100 mb-1">
                   No students yet
                 </h3>
-                <p className="text-sm text-gray-400 max-w-xs">
+                <p className="text-sm text-gray-500 dark:text-gray-400 max-w-xs">
                   Invite your first student and start tracking their DMV prep progress.
                 </p>
               </div>
@@ -1651,7 +1651,7 @@ function DashboardInner() {
                       const url = `https://tigertest.io/schools/${schoolId}`;
                       try { await navigator.clipboard.writeText(url); } catch { /* ignore */ }
                     }}
-                    className="flex items-center justify-center gap-1.5 text-sm text-brand border border-brand/30 rounded-lg px-4 py-2 hover:bg-brand/5 transition-colors"
+                    className="flex items-center justify-center gap-1.5 text-sm text-brand-dark border border-brand/30 rounded-lg px-4 py-2 hover:bg-brand/5 transition-colors"
                   >
                     <Share2 className="h-4 w-4" />
                     Copy school link
@@ -1660,13 +1660,13 @@ function DashboardInner() {
               </div>
 
               {schoolId && (
-                <p className="text-xs text-gray-400 mt-1">
+                <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
                   Or share{" "}
                   <a
                     href={`/schools/${schoolId}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-brand hover:underline"
+                    className="text-brand-dark hover:underline"
                   >
                     your school page
                   </a>{" "}
@@ -1715,10 +1715,10 @@ function DashboardInner() {
                       <td className="px-4 sm:px-6 py-3 sm:py-4">
                         <div className="flex items-center gap-2">
                           <div className="min-w-0">
-                            <p className={`font-medium truncate ${isInactive ? "text-gray-400 line-through" : "text-gray-900 dark:text-gray-50"}`}>
+                            <p className={`font-medium truncate ${isInactive ? "text-gray-500 dark:text-gray-400 line-through" : "text-gray-900 dark:text-gray-50"}`}>
                               {student.name}
                             </p>
-                            <p className="text-xs text-gray-400 mt-0.5 truncate max-w-[140px] sm:max-w-none">{student.email}</p>
+                            <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5 truncate max-w-[140px] sm:max-w-none">{student.email}</p>
                           </div>
                           {isInactive && (
                             <span className="text-xs font-medium px-1.5 py-0.5 rounded bg-gray-200 dark:bg-gray-700 text-gray-500 dark:text-gray-400 shrink-0">
@@ -1736,7 +1736,7 @@ function DashboardInner() {
                       {/* Status badge — hidden on mobile */}
                       <td className="px-4 sm:px-6 py-3 sm:py-4 text-center hidden sm:table-cell">
                         {isInactive ? (
-                          <span className="inline-flex items-center gap-1 text-xs font-medium px-2 py-0.5 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-400">
+                          <span className="inline-flex items-center gap-1 text-xs font-medium px-2 py-0.5 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400">
                             Deactivated
                           </span>
                         ) : (
@@ -1763,7 +1763,7 @@ function DashboardInner() {
                           <div className="flex items-center justify-end gap-2">
                             <button
                               onClick={() => setDeactivateConfirm(null)}
-                              className="text-xs text-gray-400 hover:text-gray-600 dark:hover:text-gray-300"
+                              className="text-xs text-gray-500 dark:text-gray-400 hover:text-gray-600 dark:hover:text-gray-300"
                             >
                               Cancel
                             </button>
@@ -1778,7 +1778,7 @@ function DashboardInner() {
                           <div className="flex items-center justify-end gap-2">
                             <button
                               onClick={() => setRemoveConfirm(null)}
-                              className="text-xs text-gray-400 hover:text-gray-600 dark:hover:text-gray-300"
+                              className="text-xs text-gray-500 dark:text-gray-400 hover:text-gray-600 dark:hover:text-gray-300"
                             >
                               Cancel
                             </button>
@@ -1837,7 +1837,7 @@ function DashboardInner() {
               <h2 className="text-lg font-bold text-gray-900 dark:text-gray-50">Add students</h2>
               <button
                 onClick={() => { setShowInvite(false); setInviteEmails(""); }}
-                className="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors -mr-1 -mt-1 p-1 rounded"
+                className="text-gray-500 dark:text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors -mr-1 -mt-1 p-1 rounded"
               >
                 <X className="h-4 w-4" />
               </button>
@@ -1850,7 +1850,7 @@ function DashboardInner() {
               <button
                 type="button"
                 onClick={() => csvInputRef.current?.click()}
-                className="text-xs text-brand hover:text-brand/80 font-medium underline underline-offset-2 shrink-0 ml-3"
+                className="text-xs text-brand-dark hover:text-brand/80 font-medium underline underline-offset-2 shrink-0 ml-3"
               >
                 Upload CSV
               </button>
@@ -1864,7 +1864,7 @@ function DashboardInner() {
             </div>
 
             {/* Seats remaining hint */}
-            <p className="text-xs text-gray-400 mb-4">
+            <p className="text-xs text-gray-500 dark:text-gray-400 mb-4">
               {seatsRemaining} seat{seatsRemaining !== 1 ? "s" : ""} remaining on your plan.
             </p>
 

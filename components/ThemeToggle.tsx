@@ -61,7 +61,7 @@ export function ThemeToggle({ className = "" }: { className?: string }) {
                 >
                   <OptionIcon className="h-4 w-4 text-gray-500 dark:text-gray-400" aria-hidden="true" />
                   <span className="flex-1">{labels[value]}</span>
-                  {isActive && <Check className="h-4 w-4 text-brand" aria-hidden="true" />}
+                  {isActive && <Check className="h-4 w-4 text-brand-dark" aria-hidden="true" />}
                 </button>
               </li>
             );

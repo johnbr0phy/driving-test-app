@@ -157,7 +157,7 @@ export function ExamStatsPage({ exam }: { exam: ExamConfig }) {
                 {sortField === field && <span className="ml-1">{sortDirection === "asc" ? "↑" : "↓"}</span>}
               </button>
             ))}
-            <span className="ml-auto text-xs text-gray-400 whitespace-nowrap">
+            <span className="ml-auto text-xs text-gray-500 dark:text-gray-400 whitespace-nowrap">
               {sortedQuestions.length} {t("stats.questions")}
             </span>
           </div>

@@ -94,7 +94,7 @@ export function BasicsWalkthrough({ exam, skill, doneLabel, onDone, onClose, onR
             <div className="text-xs text-gray-500 dark:text-gray-400">Walk through it · step {index + 1} of {steps.length}</div>
           </div>
           {onRead && (
-            <button type="button" onClick={onRead} className="flex items-center gap-1.5 rounded-full border-2 border-gray-200 dark:border-gray-800 px-3 py-1.5 text-sm font-semibold text-brand">
+            <button type="button" onClick={onRead} className="flex items-center gap-1.5 rounded-full border-2 border-gray-200 dark:border-gray-800 px-3 py-1.5 text-sm font-semibold text-brand-dark">
               <BookOpen className="h-4 w-4" /> Read it
             </button>
           )}

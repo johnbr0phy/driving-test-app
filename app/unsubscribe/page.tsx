@@ -99,7 +99,7 @@ function UnsubscribeContent() {
             </button>
             <button
               onClick={() => setStatus("standard-exit")}
-              className="text-sm text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 underline underline-offset-2 transition-colors"
+              className="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 underline underline-offset-2 transition-colors"
             >
               Not yet, just unsubscribing
             </button>

@@ -111,9 +111,10 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
     if (!session || session.phase !== "questions" || !question || tool !== "none") return;
     const onKey = (e: KeyboardEvent) => {
       if (confirm || e.defaultPrevented || e.repeat || e.ctrlKey || e.altKey || e.metaKey || e.shiftKey) return;
+      // Shortcuts work wherever focus is (including a just-clicked answer),
+      // except while typing or inside an open figure or dialog.
       const target = e.target as HTMLElement;
-      if (!target.closest("[data-exam-shortcuts]")) return;
-      if (target.closest("input, textarea, select, button, a, [contenteditable=true]")) return;
+      if (target.closest("input, textarea, select, [contenteditable=true], [role=dialog], [role=alertdialog]")) return;
       const linearNow = !!def?.section.linear;
       if (e.key === "ArrowRight") { if (!linearNow || isComplete(question, stage!.answers[question.id])) goTo(1); }
       else if (e.key === "ArrowLeft") { if (!linearNow) goTo(-1); }
@@ -207,7 +208,7 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
         <TopBar title={exam.shortName} onExit={() => setConfirm("exit")} />
         <div className="v2-scroll">
           <div className="mx-auto max-w-2xl px-4 py-8">
-            <div className="text-sm font-semibold uppercase tracking-wide text-brand">Section {exam.sections.findIndex((s) => s.key === def.section.key) + 1} of {exam.sections.length}</div>
+            <div className="text-sm font-semibold uppercase tracking-wide text-brand-dark">Section {exam.sections.findIndex((s) => s.key === def.section.key) + 1} of {exam.sections.length}</div>
             <h1 className="mt-1 text-2xl font-bold md:text-3xl">{stageTitle}</h1>
             <div className="mt-3 flex flex-wrap gap-2 text-sm">
               <span className="rounded-full bg-gray-100 dark:bg-gray-800 px-3 py-1 font-semibold">{total} questions</span>
@@ -346,7 +347,7 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
         <div className="mx-auto max-w-6xl px-4 py-4 md:py-6">
           <div className="mb-3 flex items-center justify-between">
             <div className="text-sm font-semibold text-gray-700 dark:text-gray-200">
-              Question {stage.current + 1} <span className="font-normal text-gray-400">of {total}</span>
+              Question {stage.current + 1} <span className="font-normal text-gray-500 dark:text-gray-400">of {total}</span>
             </div>
             {!linear && <button
               type="button"
@@ -358,7 +359,6 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
               {flagged ? "Flagged" : "Flag for review"}
             </button>}
           </div>
-          <div data-exam-shortcuts tabIndex={0} role="group" aria-label="Question. A through F select answers; left and right arrows navigate questions.">
           <QuestionView focusOnChange
             key={question.stimulusId ?? question.id}
             question={question}
@@ -371,7 +371,6 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
             eliminatorOn={eliminator}
             layout="split"
           />
-          </div>
         </div>
       </div>
       <BottomBar>
@@ -415,7 +414,7 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
       {tool === "palette" && (
         <Sheet title="Questions" onClose={() => setTool("none")}>
           <Palette stage={stage} onJump={jumpTo} />
-          <button type="button" onClick={() => { setTool("none"); update((s) => ({ ...s, phase: "review" })); }} className="v2-tap mt-4 w-full rounded-xl border-2 border-brand text-sm font-bold text-brand">
+          <button type="button" onClick={() => { setTool("none"); update((s) => ({ ...s, phase: "review" })); }} className="v2-tap mt-4 w-full rounded-xl border-2 border-brand text-sm font-bold text-brand-dark">
             Go to review screen
           </button>
         </Sheet>

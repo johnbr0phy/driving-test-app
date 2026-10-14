@@ -20,7 +20,7 @@ export default function LoginPage() {
   return (
     <Suspense fallback={
       <div className="bg-white dark:bg-gray-900 relative min-h-[80vh] flex items-center justify-center">
-        <div className="animate-pulse text-gray-400">Loading...</div>
+        <div className="animate-pulse text-gray-500 dark:text-gray-400">Loading...</div>
       </div>
     }>
       <LoginPageContent />
@@ -190,7 +190,7 @@ function LoginPageContent() {
                 <button
                   type="button"
                   onClick={() => setShowResetPassword(true)}
-                  className="text-sm text-brand hover:underline"
+                  className="text-sm text-brand-dark hover:underline"
                 >
                   {t("common.forgotPassword")}
                 </button>
@@ -214,7 +214,7 @@ function LoginPageContent() {
 
               <div className="text-center text-sm text-gray-600 dark:text-gray-300">
                 {t("common.noAccount")}{" "}
-                <Link href={redirectTo ? `/signup?redirect=${encodeURIComponent(redirectTo)}` : "/signup"} className="text-brand hover:underline font-semibold">
+                <Link href={redirectTo ? `/signup?redirect=${encodeURIComponent(redirectTo)}` : "/signup"} className="text-brand-dark hover:underline font-semibold">
                   {t("common.signUp")}
                 </Link>
               </div>

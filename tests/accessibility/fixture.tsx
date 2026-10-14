@@ -35,7 +35,7 @@ function Fixture() {
  {mode === 'test' && <QuestionCard question={dmv} selectedAnswer={typeof answer === 'string' ? answer : undefined} onAnswerChange={select} showResult={reveal}/>}
  {questions[mode] && <><QuestionView question={questions[mode]} stimulus={{ id: 'passage', title: 'Reference', text: 'Read this reference.' }} optionOrder={[0, 1, 2]} answer={answer} onAnswer={select} reveal={reveal} disabled={reveal}/><button onClick={() => setReveal(true)}>Check</button></>}
  {mode === 'figure' && <Figure figure={{ src: '/signs/warning-diamond.svg', alt: 'Yellow diamond with a black border.' }}/>}
- {mode === 'contrast' && <><button className="text-gray-400 hover:text-gray-700">Light surface action</button><div className="contrast-dark-surface bg-gradient-to-b from-gray-950 to-green-950 p-4"><button className="text-gray-400 hover:text-white">Dark surface action</button><p className="text-gray-500">Training complete</p></div></>}
+ {mode === 'contrast' && <><button className="text-gray-500 dark:text-gray-400 hover:text-gray-700">Light surface action</button><div className="bg-gradient-to-b from-gray-950 to-green-950 p-4"><button className="text-gray-400 hover:text-white">Dark surface action</button><p className="text-gray-400">Training complete</p></div></>}
  {mode === 'calculator' && <Calculator />}
  {mode === 'quiz' && <QuizRow chipValue="10" chipLabel="misses" question={dmv.question} options={['First choice', 'Second choice']} correctAnswer="Second choice"/>}
  {mode === 'paywall' && <><button onClick={() => setOpen(true)}>Open premium</button><PaywallModal open={open} onOpenChange={setOpen} feature="fixture" onUpgrade={async () => { }} isGuest onSignUp={() => { }}/></>}

@@ -138,7 +138,7 @@ export default async function SchoolLandingPage({ params }: Props) {
             </div>
 
             {/* Eyebrow */}
-            <p className="text-sm font-medium text-brand uppercase tracking-wider mb-2">
+            <p className="text-sm font-medium text-brand-dark uppercase tracking-wider mb-2">
               Practice test — provided by
             </p>
 
@@ -150,7 +150,7 @@ export default async function SchoolLandingPage({ params }: Props) {
             {/* Value prop */}
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
               Free DMV practice tests, set up by{" "}
-              <span className="text-brand font-semibold">{school.schoolName}</span>
+              <span className="text-brand-dark font-semibold">{school.schoolName}</span>
             </p>
 
             <p className="text-gray-500 dark:text-gray-400 mb-10 max-w-lg mx-auto">
@@ -161,7 +161,7 @@ export default async function SchoolLandingPage({ params }: Props) {
             {/* Primary CTA */}
             <SchoolLandingCta signupUrl={signupUrl} />
 
-            <p className="mt-4 text-sm text-gray-400">
+            <p className="mt-4 text-sm text-gray-500 dark:text-gray-400">
               No credit card required. Takes 30 seconds to sign up.
             </p>
           </div>

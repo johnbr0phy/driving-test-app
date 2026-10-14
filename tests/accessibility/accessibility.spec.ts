@@ -104,18 +104,27 @@ test('calculator result is announced', async ({ page }) => { await fixture(page,
 for (const route of ['/', '/tests', '/login', '/signup', '/dashboard', '/training?set=1', '/test/1', '/sat', '/sat/test/1', '/nclex', '/sat/test/1/results'])
     test(`route scan ${route}`, async ({ page }) => { await page.goto(route); await page.waitForTimeout(1000); expect(new URL(page.url()).pathname).toBe(route.split('?')[0]); await scan(page); });
 test('password reset modal has a label, traps focus and restores trigger', async ({ page }) => { await page.goto('/login'); const trigger = page.getByRole('button', { name: /Forgot password/i }); await trigger.click(); await expect(page.getByRole('dialog')).toBeVisible(); await expect(page.getByRole('dialog').getByRole('textbox', { name: 'Email' })).toBeFocused(); await scan(page); await page.keyboard.press('Escape'); await expect(trigger).toBeFocused(); });
-test('untimed exam persists mode, keeps chrome out of tab order and uses focused shortcuts', async ({ page }) => {
+test('untimed exam persists mode, keeps chrome out of tab order and keeps shortcuts after a click', async ({ page }) => {
     await page.goto('/sat/test/1');
     await page.getByLabel('Untimed practice (recorded with your result)').check();
     await page.getByRole('button', { name: 'Start module' }).click();
     await expect(page.getByRole('button', { name: /remaining.*timer/ })).toHaveCount(0);
     await expect(page.locator('.skip-link')).toHaveAttribute('inert', '');
-    const answer = page.locator('[data-exam-shortcuts] [aria-pressed]').first();
+    const answer = page.locator('[role="group"][aria-labelledby$="-stem"] button[aria-pressed]').first();
     await answer.focus();
     await page.keyboard.press('Enter');
     await expect(answer).toHaveAttribute('aria-pressed', 'true');
     await page.getByRole('button', { name: 'Next question', exact: true }).click();
     await expect(page.locator('[id$="-stem"]')).toBeFocused();
+    // Shortcuts still work with focus on a just-clicked answer.
+    const counter = page.getByRole('button', { name: /^Questions: / });
+    await expect(counter).toHaveAccessibleName(/^Questions: 2 \//);
+    await page.locator('[role="group"][aria-labelledby$="-stem"] button[aria-pressed]').first().click();
+    await page.keyboard.press('ArrowRight');
+    await expect(counter).toHaveAccessibleName(/^Questions: 3 \//);
+    await page.keyboard.press('ArrowLeft');
+    await page.keyboard.press('b');
+    await expect(page.locator('[role="group"][aria-labelledby$="-stem"] button[aria-pressed]').nth(1)).toHaveAttribute('aria-pressed', 'true');
     const palette = page.getByRole('button', { name: /Questions/ });
     await palette.click();
     await expect(page.getByRole('dialog', { name: /Questions/ })).toBeVisible();
@@ -220,7 +229,7 @@ test('muted copy contrast preserves dark completion surfaces and hover feedback'
     await scan(page);
     const light = page.getByRole('button', { name: 'Light surface action' });
     const dark = page.getByRole('button', { name: 'Dark surface action' });
-    await expect(light).toHaveCSS('color', 'rgb(98, 107, 121)');
+    await expect(light).toHaveCSS('color', 'rgb(107, 114, 128)');
     await expect(dark).toHaveCSS('color', 'rgb(156, 163, 175)');
     await light.hover();
     await expect(light).toHaveCSS('color', 'rgb(55, 65, 81)');
@@ -242,7 +251,7 @@ test('calculator side tool allows desktop answers and traps focus only on mobile
     await trigger.click();
     await page.getByLabel('Calculator expression').fill('2+2');
     await page.keyboard.press('Enter');
-    const answer = page.locator('[data-exam-shortcuts] button[aria-pressed]').first();
+    const answer = page.locator('[role="group"][aria-labelledby$="-stem"] button[aria-pressed]').first();
     await answer.click();
     await expect(answer).toHaveAttribute('aria-pressed', 'true');
     await expect(page.getByRole('dialog', { name: 'Calculator', exact: true })).toBeVisible();

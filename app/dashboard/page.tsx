@@ -423,7 +423,7 @@ function DashboardContent() {
                   <p className="text-sm text-gray-700 dark:text-gray-200">
                     <span className="font-bold">{t("common.signUp")}</span> {t("dashboard.signUpPrompt")}
                   </p>
-                  <Link href="/signup" className="text-xs text-brand hover:text-brand-dark font-medium mt-1 inline-block">
+                  <Link href="/signup" className="text-xs text-brand-dark hover:text-brand-darker font-medium mt-1 inline-block">
                     {t("dashboard.createFreeAccount")}
                   </Link>
                 </div>
@@ -452,7 +452,7 @@ function DashboardContent() {
             </div>
             <div className="flex-shrink-0 text-right">
               <div className="text-2xl font-bold tabular-nums text-gray-900 dark:text-gray-50">{completedSteps}/{totalSteps}</div>
-              <div className="text-xs text-gray-400">{t("dashboard.stampComplete").toLowerCase()}</div>
+              <div className="text-xs text-gray-500 dark:text-gray-400">{t("dashboard.stampComplete").toLowerCase()}</div>
             </div>
           </div>
         </div>
@@ -586,7 +586,7 @@ function DashboardContent() {
                             </span>
                           </>
                         )}
-                        <span className={testCompleted ? "text-green-600 dark:text-green-400" : "text-gray-400"}>
+                        <span className={testCompleted ? "text-green-600 dark:text-green-400" : "text-gray-500 dark:text-gray-400"}>
                           {testMisses.attempts === 1
                             ? t("dashboard.attemptsOne")
                             : t("dashboard.attemptsCount").replace(
@@ -647,7 +647,7 @@ function DashboardContent() {
                           <ChevronRight className="h-4 w-4" />
                         </button>
                         {stillMissed > 0 && (
-                          <p className="text-center text-[11px] text-gray-400">
+                          <p className="text-center text-[11px] text-gray-500 dark:text-gray-400">
                             {t("dashboard.drillTip")
                               .replace("{{n}}", String(stillMissed))
                               .replace(
@@ -670,18 +670,18 @@ function DashboardContent() {
             the latched achievement rather than current progress, so retaking a
             test never takes it away. */}
         <div className="mb-6">
-          <p className="text-[11px] font-bold uppercase tracking-widest text-gray-400 mb-2">
+          <p className="text-[11px] font-bold uppercase tracking-widest text-gray-500 dark:text-gray-400 mb-2">
             {samUnlocked ? t("dashboard.samUnlockedLabel") : t("dashboard.samUnlockLabel")}
           </p>
           <div className="rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 p-4 flex items-center gap-3">
             <div className="flex-1 min-w-0">
               <h3
                 className={`font-semibold text-sm flex items-center gap-1.5 ${
-                  samUnlocked ? "text-gray-900 dark:text-gray-50" : "text-gray-400"
+                  samUnlocked ? "text-gray-900 dark:text-gray-50" : "text-gray-500 dark:text-gray-400"
                 }`}
               >
                 {t("dashboard.samTitle")}
-                {!samUnlocked && <Lock className="w-3.5 h-3.5 text-gray-400 flex-shrink-0" />}
+                {!samUnlocked && <Lock className="w-3.5 h-3.5 text-gray-500 dark:text-gray-400 flex-shrink-0" />}
               </h3>
             </div>
             <button

@@ -50,7 +50,7 @@ export function ResultsV2({ exam, testNumber }: { exam: ExamV2Config; testNumber
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-6 md:py-10">
-      <div className="text-sm font-semibold uppercase tracking-wide text-brand">{exam.shortName} · Practice Test {testNumber}</div>
+      <div className="text-sm font-semibold uppercase tracking-wide text-brand-dark">{exam.shortName} · Practice Test {testNumber}</div>
       <div className="mt-2 flex flex-wrap items-end gap-x-6 gap-y-2">
         <Image src={getTigerAsset(exam.id, result.composite >= goal ? 2 : 4)} alt="" width={80} height={80} className="h-20 w-20 shrink-0 object-contain" />
         <div>
@@ -145,7 +145,7 @@ export function ResultsV2({ exam, testNumber }: { exam: ExamV2Config; testNumber
                     <span className="font-semibold">{getSectionV2(exam, it.section).shortName} {numbers.get(it.id)}</span>
                     <span className="text-gray-500 dark:text-gray-400"> · {exam.domainLabels[it.domain] ?? it.domain}{q.skill ? ` · ${q.skill}` : ""}</span>
                   </span>
-                  {isOpen ? <ChevronUp className="h-4 w-4 text-gray-400" /> : <ChevronDown className="h-4 w-4 text-gray-400" />}
+                  {isOpen ? <ChevronUp className="h-4 w-4 text-gray-500 dark:text-gray-400" /> : <ChevronDown className="h-4 w-4 text-gray-500 dark:text-gray-400" />}
                 </button>
                 {isOpen && (
                   <div className="border-t border-gray-100 dark:border-gray-800 px-4 py-4">

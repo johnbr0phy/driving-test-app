@@ -107,7 +107,7 @@ export function AttemptChart({
       {[0, 50, 100].map((v) => (
         <g key={v}>
           <line x1={PAD.l} x2={W - PAD.r} y1={y(v)} y2={y(v)} className="stroke-gray-100 dark:stroke-gray-800" strokeWidth="1" />
-          <text x={PAD.l - 7} y={y(v) + 3} textAnchor="end" className="fill-gray-400" fontSize="10">
+          <text x={PAD.l - 7} y={y(v) + 3} textAnchor="end" className="fill-gray-500 dark:fill-gray-400" fontSize="10">
             {v}%
           </text>
         </g>
@@ -134,7 +134,7 @@ export function AttemptChart({
           x={x(i)}
           y={H - 8}
           textAnchor={i === 0 ? "start" : i === last ? "end" : "middle"}
-          className="fill-gray-400"
+          className="fill-gray-500 dark:fill-gray-400"
           fontSize="10"
         >
           {attempts[i].date}

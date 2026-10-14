@@ -96,7 +96,7 @@ export function TestSwitcher({ className = "" }: { className?: string }) {
         <div data-theme={current.theme}>
           <div className="relative border-b border-gray-100 dark:border-gray-800 p-2">
             <Search
-              className="pointer-events-none absolute left-[18px] top-1/2 h-4 w-4 -translate-y-1/2 text-gray-400"
+              className="pointer-events-none absolute left-[18px] top-1/2 h-4 w-4 -translate-y-1/2 text-gray-500 dark:text-gray-400"
               aria-hidden="true"
             />
             <input
@@ -125,7 +125,7 @@ export function TestSwitcher({ className = "" }: { className?: string }) {
                   inputRef.current?.focus();
                 }}
                 aria-label="Clear search"
-                className="absolute right-4 top-1/2 -translate-y-1/2 rounded p-0.5 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300"
+                className="absolute right-4 top-1/2 -translate-y-1/2 rounded p-0.5 text-gray-500 dark:text-gray-400 hover:text-gray-600 dark:hover:text-gray-300"
               >
                 <X className="h-3.5 w-3.5" aria-hidden="true" />
               </button>
@@ -153,7 +153,7 @@ export function TestSwitcher({ className = "" }: { className?: string }) {
 
             {groups.map((g) => (
               <div key={g.title} className="mb-1">
-                <p className="px-2.5 pb-0.5 pt-2 text-[11px] font-semibold uppercase tracking-wide text-gray-400">
+                <p className="px-2.5 pb-0.5 pt-2 text-[11px] font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400">
                   {g.title}
                 </p>
                 <ul>
@@ -176,7 +176,7 @@ export function TestSwitcher({ className = "" }: { className?: string }) {
           <Link
             href="/tests"
             onClick={close}
-            className="block border-t border-gray-100 dark:border-gray-800 px-4 py-2.5 text-center text-sm font-medium text-brand hover:bg-gray-50 dark:hover:bg-gray-800"
+            className="block border-t border-gray-100 dark:border-gray-800 px-4 py-2.5 text-center text-sm font-medium text-brand-dark hover:bg-gray-50 dark:hover:bg-gray-800"
           >
             Browse all tests →
           </Link>
@@ -216,12 +216,12 @@ function SwitcherItem({
           <span className="block truncate text-sm font-medium text-gray-900 dark:text-gray-50">
             {test.shortName}
           </span>
-          <span className={`block truncate text-[11px] ${started ? "font-medium text-brand" : "text-gray-500 dark:text-gray-400"}`}>
+          <span className={`block truncate text-[11px] ${started ? "font-medium text-brand-dark" : "text-gray-500 dark:text-gray-400"}`}>
             {started ? "In progress" : test.org}
           </span>
         </span>
         {isActive && (
-          <span className="flex-shrink-0 text-[10px] font-semibold uppercase tracking-wide text-brand">
+          <span className="flex-shrink-0 text-[10px] font-semibold uppercase tracking-wide text-brand-dark">
             Current
           </span>
         )}

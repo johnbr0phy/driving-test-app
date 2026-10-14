@@ -78,7 +78,7 @@ export default function SchoolApplyPage() {
             </Link>
             <Link
               href="/schools"
-              className="inline-block text-brand text-sm font-medium hover:underline"
+              className="inline-block text-brand-dark text-sm font-medium hover:underline"
             >
               ← Back to the Schools page
             </Link>

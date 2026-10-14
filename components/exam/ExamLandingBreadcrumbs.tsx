@@ -36,7 +36,7 @@ export function ExamLandingBreadcrumbs({ examId }: { examId: string }) {
             </Link>
           </li>
           <li aria-hidden="true">
-            <ChevronRight className="h-3 w-3 text-gray-400" />
+            <ChevronRight className="h-3 w-3 text-gray-500 dark:text-gray-400" />
           </li>
           <li>
             <Link href="/tests" className="hover:text-gray-900 dark:hover:text-gray-50">
@@ -44,7 +44,7 @@ export function ExamLandingBreadcrumbs({ examId }: { examId: string }) {
             </Link>
           </li>
           <li aria-hidden="true">
-            <ChevronRight className="h-3 w-3 text-gray-400" />
+            <ChevronRight className="h-3 w-3 text-gray-500 dark:text-gray-400" />
           </li>
           <li className="text-gray-700 dark:text-gray-200" aria-current="page">
             {test.name}

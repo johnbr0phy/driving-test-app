@@ -210,13 +210,13 @@ export function MissDrill({ routes }: { routes: ExamRoutes }) {
                       }
                       className="w-full flex items-center gap-3 rounded-xl border border-brand-border-light bg-brand-light px-4 py-2.5 text-left hover:shadow-md transition-shadow"
                     >
-                      <Lock className="h-4 w-4 text-brand shrink-0" />
+                      <Lock className="h-4 w-4 text-brand-dark shrink-0" />
                       <span className="flex-1 text-sm font-medium text-gray-800 dark:text-gray-100">
                         {lockedCount === 1
                           ? t("drill.lockedUpsellOne")
                           : t("drill.lockedUpsell").replace("{{n}}", String(lockedCount))}
                       </span>
-                      <span className="text-sm font-semibold text-brand whitespace-nowrap">
+                      <span className="text-sm font-semibold text-brand-dark whitespace-nowrap">
                         {t("drill.unlock")}
                       </span>
                     </button>
@@ -230,7 +230,7 @@ export function MissDrill({ routes }: { routes: ExamRoutes }) {
                     <div className="flex items-center gap-4">
                       <div className="shrink-0 text-center min-w-[3rem]">
                         <div className="text-lg font-bold text-red-500 dark:text-red-400">✗</div>
-                        <div className="text-[10px] text-gray-400 uppercase tracking-wide">
+                        <div className="text-[10px] text-gray-500 dark:text-gray-400 uppercase tracking-wide">
                           {t("drill.missedTimes").replace("{{n}}", String(entry.timesMissed))}
                         </div>
                       </div>
@@ -263,7 +263,7 @@ export function MissDrill({ routes }: { routes: ExamRoutes }) {
                 }}
                 renderFooter={({ answered }) => (
                   <div className="pt-1 px-1 space-y-1.5">
-                    <p className="text-xs text-gray-400">
+                    <p className="text-xs text-gray-500 dark:text-gray-400">
                       {entry.lastAnswer
                         ? t("drill.lastPicked")
                             .replace("{{context}}", missedLabel)

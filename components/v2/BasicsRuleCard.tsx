@@ -24,7 +24,7 @@ export function Eli5Card({ skill }: { skill: BasicsSkill }) {
 export function Eli5Toggle({ skill, open, onOpen }: { skill: BasicsSkill; open: boolean; onOpen: () => void }) {
   if (open) return <Eli5Card skill={skill} />;
   return (
-    <button type="button" onClick={onOpen} className="self-start text-[15px] font-semibold text-brand">
+    <button type="button" onClick={onOpen} className="self-start text-[15px] font-semibold text-brand-dark">
       Still confused? ELI5
     </button>
   );
@@ -33,7 +33,7 @@ export function Eli5Toggle({ skill, open, onOpen }: { skill: BasicsSkill; open: 
 /** The rule, the trick, the skill's table if any, and the examples. */
 export function RuleCard({ skill }: { skill: BasicsSkill }) {
   const marks = { good: "✓", bad: "✗", eg: "→" };
-  const markClass = { good: "text-green-600 dark:text-green-300", bad: "text-red-500 dark:text-red-300", eg: "text-brand" };
+  const markClass = { good: "text-green-600 dark:text-green-300", bad: "text-red-500 dark:text-red-300", eg: "text-brand-dark" };
   return (
     <div className="flex flex-col gap-5">
       <div>

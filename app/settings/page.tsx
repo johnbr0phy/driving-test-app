@@ -173,14 +173,14 @@ export default function SettingsPage() {
                       </span>
                       <span className="flex-1 min-w-0">
                         <span className="block font-medium text-gray-900 dark:text-gray-50">{test.name}</span>
-                        <span className="block text-sm text-brand font-medium">{status}</span>
+                        <span className="block text-sm text-brand-dark font-medium">{status}</span>
                       </span>
-                      <ChevronRight className="h-5 w-5 text-gray-400 flex-shrink-0" />
+                      <ChevronRight className="h-5 w-5 text-gray-500 dark:text-gray-400 flex-shrink-0" />
                     </Link>
                     <button
                       type="button"
                       onClick={() => setDeleteTestId(test.id)}
-                      className="mr-2 flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-lg text-gray-400 hover:bg-red-50 dark:hover:bg-red-950 hover:text-red-600 dark:hover:text-red-400 transition-colors"
+                      className="mr-2 flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-lg text-gray-500 dark:text-gray-400 hover:bg-red-50 dark:hover:bg-red-950 hover:text-red-600 dark:hover:text-red-400 transition-colors"
                       title={t("settings.deleteTestProgress")}
                       aria-label={`${t("settings.deleteTestProgress")}: ${test.name}`}
                     >
@@ -209,7 +209,7 @@ export default function SettingsPage() {
                 <div className="space-y-4">
                   <div>
                     <div className="text-sm text-gray-600 dark:text-gray-300 mb-2">{t("settings.currentlyPracticingFor")}</div>
-                    <div className="text-2xl font-bold text-brand mb-4">
+                    <div className="text-2xl font-bold text-brand-dark mb-4">
                       {currentStateName}
                     </div>
                   </div>
@@ -230,7 +230,7 @@ export default function SettingsPage() {
                       ))}
                     </select>
                     <p className="text-xs text-gray-500 dark:text-gray-400 mt-2">
-                      <strong className="text-brand">Warning:</strong> {t("settings.switchStateWarning")}
+                      <strong className="text-brand-dark">Warning:</strong> {t("settings.switchStateWarning")}
                     </p>
                   </div>
                 </div>
@@ -355,7 +355,7 @@ export default function SettingsPage() {
       <Dialog open={stateChangeDialog} onOpenChange={setStateChangeDialog}>
         <DialogContent className="sm:max-w-md">
           <DialogHeader>
-            <DialogTitle className="flex items-center gap-2 text-brand">
+            <DialogTitle className="flex items-center gap-2 text-brand-dark">
               <AlertTriangle className="h-5 w-5" />
               {t("settings.switchState")}
             </DialogTitle>
@@ -364,7 +364,7 @@ export default function SettingsPage() {
                 {t("settings.switchStateConfirm")} {currentStateName} {t("settings.to")} {pendingStateName}.
               </p>
               <p className="text-gray-700 dark:text-gray-200">
-                <strong className="text-brand">{t("settings.switchStateWarningDetail")}</strong> {currentStateName} {t("settings.willNotBeSaved")} {t("settings.willBePermanentlyLost")}. {t("settings.thisIncludes")}
+                <strong className="text-brand-dark">{t("settings.switchStateWarningDetail")}</strong> {currentStateName} {t("settings.willNotBeSaved")} {t("settings.willBePermanentlyLost")}. {t("settings.thisIncludes")}
               </p>
               <ul className="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-200 ml-2">
                 <li>{t("settings.allTestScores")}</li>

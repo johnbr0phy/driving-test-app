@@ -143,11 +143,11 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
   ) : null;
   // On the text card, the way back to the lesson.
   const watchButton = walkable ? (
-    <button type="button" onClick={() => setReadMode(false)} className="flex items-center gap-1.5 self-start text-[15px] font-semibold text-brand">
+    <button type="button" onClick={() => setReadMode(false)} className="flex items-center gap-1.5 self-start text-[15px] font-semibold text-brand-dark">
       <ListChecks className="h-4 w-4" /> Walk through it instead
     </button>
   ) : explainable ? (
-    <button type="button" onClick={() => setReadMode(false)} className="flex items-center gap-1.5 self-start text-[15px] font-semibold text-brand">
+    <button type="button" onClick={() => setReadMode(false)} className="flex items-center gap-1.5 self-start text-[15px] font-semibold text-brand-dark">
       <Play className="h-4 w-4" /> Watch it instead · 30 seconds
     </button>
   ) : null;
@@ -167,7 +167,7 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
         <Header title={skill.name} sub={`Basics · ${drill.name}`} closeHref={overviewHref} />
         <div className="v2-scroll">
           <div className="mx-auto flex max-w-2xl flex-col gap-4 px-4 py-5">
-            <div className="text-xs font-semibold uppercase tracking-wider text-brand">{review ? "One more look" : "Learn it · 20 seconds"}</div>
+            <div className="text-xs font-semibold uppercase tracking-wider text-brand-dark">{review ? "One more look" : "Learn it · 20 seconds"}</div>
             <h1 className="text-2xl font-bold leading-tight text-gray-900 dark:text-gray-50">{skill.name}</h1>
             {review && <p className="text-sm text-gray-600 dark:text-gray-300">That one&apos;s tricky. Here&apos;s the rule again before the next question.</p>}
             {watchButton}
@@ -194,7 +194,7 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
         <div className="v2-scroll">
           <div className="v2-pop mx-auto flex max-w-md flex-col items-center gap-3 px-6 pt-10 text-center">
             <Image src={getTigerAsset(exam.id, 1)} alt="" width={120} height={120} className="h-28 w-28 object-contain" />
-            <div className="text-xs font-semibold uppercase tracking-wider text-brand">Skill learned</div>
+            <div className="text-xs font-semibold uppercase tracking-wider text-brand-dark">Skill learned</div>
             <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-50">{skill.name}</h1>
             <div className="flex flex-wrap justify-center gap-2 text-xs font-semibold">
               <span className="rounded-full bg-gray-100 dark:bg-gray-800 px-3 py-1.5">{firstTry} of {total} right first try</span>
@@ -244,7 +244,7 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
             <div className="truncate text-sm font-bold">{skill.name}</div>
             <div className="text-xs text-gray-500 dark:text-gray-400">{run.mastered.length} of {total} right{comingBack ? ` · ${comingBack} coming back` : ""}</div>
           </div>
-          <button type="button" onClick={() => setRuleOpen(true)} className="rounded-full border-2 border-gray-200 px-3 py-1.5 text-sm font-semibold text-brand">
+          <button type="button" onClick={() => setRuleOpen(true)} className="rounded-full border-2 border-gray-200 px-3 py-1.5 text-sm font-semibold text-brand-dark">
             Rule
           </button>
         </div>
@@ -288,11 +288,11 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
                   <>
                     <p className="text-sm text-gray-800 dark:text-gray-100"><b>The trick:</b> {skill.trick}</p>
                     {walkable ? (
-                      <button type="button" onClick={() => setWalking(true)} className="v2-tap mt-1 flex items-center justify-center gap-2 self-start rounded-xl bg-white dark:bg-gray-900 px-4 text-[15px] font-bold text-brand shadow-sm">
+                      <button type="button" onClick={() => setWalking(true)} className="v2-tap mt-1 flex items-center justify-center gap-2 self-start rounded-xl bg-white dark:bg-gray-900 px-4 text-[15px] font-bold text-brand-dark shadow-sm">
                         <ListChecks className="h-4 w-4" /> Walk through it again
                       </button>
                     ) : explainable ? (
-                      <button type="button" onClick={() => setExplainer(true)} className="v2-tap mt-1 flex items-center justify-center gap-2 self-start rounded-xl bg-white dark:bg-gray-900 px-4 text-[15px] font-bold text-brand shadow-sm">
+                      <button type="button" onClick={() => setExplainer(true)} className="v2-tap mt-1 flex items-center justify-center gap-2 self-start rounded-xl bg-white dark:bg-gray-900 px-4 text-[15px] font-bold text-brand-dark shadow-sm">
                         <Play className="h-4 w-4" /> Watch the explainer · 30 seconds
                       </button>
                     ) : null}

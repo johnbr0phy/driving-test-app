@@ -183,7 +183,7 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
             <div className="v2-pop mt-4 rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-4 py-3">
               <div className="text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400">Brush up on the basics</div>
               <button type="button" onClick={() => setBrushUp(true)} className="v2-tap mt-1 flex w-full items-center gap-3 text-left">
-                {hasExplainer(missedSkill) ? <Play className="h-5 w-5 shrink-0 text-brand" /> : <BookOpen className="h-5 w-5 shrink-0 text-brand" />}
+                {hasExplainer(missedSkill) ? <Play className="h-5 w-5 shrink-0 text-brand-dark" /> : <BookOpen className="h-5 w-5 shrink-0 text-brand-dark" />}
                 <span className="min-w-0 flex-1">
                   <span className="block text-[17px] font-bold text-gray-900 dark:text-gray-50">{missedSkill.name}</span>
                   <span className="block text-sm text-gray-500 dark:text-gray-400">{hasExplainer(missedSkill) ? "Listen to the 30-second explainer, or read the rule" : "The rule, the trick and two examples"}</span>

@@ -134,7 +134,7 @@ export function ResultsDebriefBody({ results, upgrade }: Props) {
 
       {/* ── Your plan ─────────────────────────────────────────────── */}
       <div className="rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 px-4 py-3 shadow-sm">
-        <h2 className="text-[11px] font-bold uppercase tracking-widest text-gray-400 py-1">
+        <h2 className="text-[11px] font-bold uppercase tracking-widest text-gray-500 dark:text-gray-400 py-1">
           {t("results.planHeading")}
         </h2>
         <div className="divide-y divide-gray-50 dark:divide-gray-800">
@@ -146,13 +146,13 @@ export function ResultsDebriefBody({ results, upgrade }: Props) {
             >
               <span
                 className={`w-7 h-7 rounded-full flex items-center justify-center text-sm font-bold shrink-0 ${
-                  step.done ? "bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300" : "bg-brand-light text-brand"
+                  step.done ? "bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300" : "bg-brand-light text-brand-dark"
                 }`}
               >
                 {step.done ? <Check className="h-4 w-4" strokeWidth={3} /> : i + 1}
               </span>
               <span
-                className={`flex-1 text-sm font-medium ${step.done ? "text-gray-400 line-through" : "text-gray-800 dark:text-gray-100"}`}
+                className={`flex-1 text-sm font-medium ${step.done ? "text-gray-500 dark:text-gray-400 line-through" : "text-gray-800 dark:text-gray-100"}`}
               >
                 {step.label}
               </span>
@@ -161,7 +161,7 @@ export function ResultsDebriefBody({ results, upgrade }: Props) {
                   <span className="text-[11px] font-bold text-brand-dark bg-brand-light border border-brand-border-light rounded-full px-2 py-0.5">
                     $9.99
                   </span>
-                  <Lock className="h-3.5 w-3.5 text-gray-400" />
+                  <Lock className="h-3.5 w-3.5 text-gray-500 dark:text-gray-400" />
                 </span>
               ) : (
                 <ChevronRight className="h-4 w-4 text-gray-300 group-hover:text-gray-400 shrink-0" />
@@ -201,7 +201,7 @@ export function ResultsDebriefBody({ results, upgrade }: Props) {
                 : undefined;
               const chip = userAnswerLetter
                 ? { value: "✗", label: t("results.wrong"), color: "text-red-500 dark:text-red-400" }
-                : { value: "–", label: t("results.notAnswered"), color: "text-gray-400" };
+                : { value: "–", label: t("results.notAnswered"), color: "text-gray-500 dark:text-gray-400" };
               return (
                 <Fragment key={index}>
                 {drillIdx === FREE_RATE_LIMIT && ratesLockable && hasCommunityRates && (
@@ -211,11 +211,11 @@ export function ResultsDebriefBody({ results, upgrade }: Props) {
                     }
                     className="w-full flex items-center gap-3 rounded-xl border border-brand-border-light bg-brand-light px-4 py-2.5 text-left hover:shadow-md transition-shadow"
                   >
-                    <Lock className="h-4 w-4 text-brand shrink-0" />
+                    <Lock className="h-4 w-4 text-brand-dark shrink-0" />
                     <span className="flex-1 text-sm font-medium text-gray-800 dark:text-gray-100">
                       {t("results.drillRatesUpsell")}
                     </span>
-                    <span className="text-sm font-semibold text-brand whitespace-nowrap">
+                    <span className="text-sm font-semibold text-brand-dark whitespace-nowrap">
                       {t("common.unlockWithPremium")}
                     </span>
                   </button>
@@ -245,7 +245,7 @@ export function ResultsDebriefBody({ results, upgrade }: Props) {
                   }}
                   renderFooter={({ answered }) => (
                     <div className="pt-1 px-1 space-y-1.5">
-                      <p className="text-xs text-gray-400">
+                      <p className="text-xs text-gray-500 dark:text-gray-400">
                         {userAnswerLetter
                           ? t("results.drillPickedBefore").replace("{{letter}}", userAnswerLetter)
                           : t("results.drillSkippedBefore")}
@@ -309,7 +309,7 @@ export function ResultsDebriefBody({ results, upgrade }: Props) {
             <span className="text-sm font-semibold text-gray-700 dark:text-gray-200">
               {t("results.correctHeading").replace("{{n}}", String(score))}
             </span>
-            <span className="text-xs font-medium text-brand">
+            <span className="text-xs font-medium text-brand-dark">
               {showCorrect ? t("results.correctHide") : t("results.correctShow")}
             </span>
           </button>
@@ -350,7 +350,7 @@ export function ResultsDebriefBody({ results, upgrade }: Props) {
           <CardContent className="py-6">
             <div className="flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
               <div className="w-12 h-12 bg-brand-light rounded-full flex items-center justify-center shrink-0">
-                <Cloud className="w-6 h-6 text-brand" />
+                <Cloud className="w-6 h-6 text-brand-dark" />
               </div>
               <div className="flex-1">
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-50 mb-1">
@@ -369,7 +369,7 @@ export function ResultsDebriefBody({ results, upgrade }: Props) {
       )}
 
       {/* Full total for orientation, without verdict framing */}
-      <p className="text-center text-xs text-gray-400">
+      <p className="text-center text-xs text-gray-500 dark:text-gray-400">
         {score}/{totalQuestions} {t("results.correctLabel")} ·{" "}
         {results.stateName}
       </p>

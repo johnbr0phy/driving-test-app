@@ -71,7 +71,7 @@ export function ExamStatePrompt({ exam }: { exam: ExamConfig }) {
           value={undefined}
           onChange={choose}
           placeholder="choose a state"
-          className="w-auto inline-flex text-lg font-semibold text-brand border-none shadow-none focus:ring-0 focus:ring-offset-0 px-1 underline decoration-brand-border decoration-2 underline-offset-4 hover:decoration-brand h-auto"
+          className="w-auto inline-flex text-lg font-semibold text-brand-dark border-none shadow-none focus:ring-0 focus:ring-offset-0 px-1 underline decoration-brand-border decoration-2 underline-offset-4 hover:decoration-brand h-auto"
         />
       </div>
       <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
@@ -102,7 +102,7 @@ export function ExamStateLine({ exam }: { exam: ExamConfig }) {
         onChange={choose}
         placeholder="Change"
         label="Change"
-        className="w-auto h-auto p-0 border-none shadow-none focus:ring-0 focus:ring-offset-0 text-brand font-medium text-xs gap-1 flex-shrink-0"
+        className="w-auto h-auto p-0 border-none shadow-none focus:ring-0 focus:ring-offset-0 text-brand-dark font-medium text-xs gap-1 flex-shrink-0"
       />
     </div>
   );

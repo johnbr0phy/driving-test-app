@@ -109,14 +109,14 @@ export function ResultsHeroDebrief({
         <div className="rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 px-4 pt-4 pb-5 shadow-sm">
           {isBaseline ? (
             <>
-              <div className="text-[11px] font-bold uppercase tracking-widest text-brand">
+              <div className="text-[11px] font-bold uppercase tracking-widest text-brand-dark">
                 {t("results.baselineEyebrow")}
               </div>
               <div className="flex items-start gap-3 mt-1">
                 <div className="flex-1">
                   <div className="text-4xl font-black tracking-tight text-gray-900 dark:text-gray-50 leading-none">
                     {percentage}
-                    <span className="text-2xl font-bold text-gray-400">%</span>
+                    <span className="text-2xl font-bold text-gray-500 dark:text-gray-400">%</span>
                   </div>
                   <p className="text-sm text-gray-500 dark:text-gray-400 mt-2 leading-snug">{t("results.baselineSub")}</p>
                 </div>
@@ -166,7 +166,7 @@ export function ResultsHeroDebrief({
                 <div className="w-0.5 h-[18px] bg-gray-900 dark:bg-gray-100 rounded-full" />
               </div>
             </div>
-            <div className="flex justify-between text-[9px] uppercase tracking-wider text-gray-400 mt-1.5">
+            <div className="flex justify-between text-[9px] uppercase tracking-wider text-gray-500 dark:text-gray-400 mt-1.5">
               <span>{t("results.meterBuilding")}</span>
               <span className="pl-8">{t("results.meterClose")}</span>
               <span>{t("results.meterReady")}</span>

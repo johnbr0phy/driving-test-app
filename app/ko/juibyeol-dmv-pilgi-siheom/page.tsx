@@ -99,7 +99,7 @@ export default function KoreanPracticeTestsByStatePage() {
             제공하고 있습니다. 찾으시는 주가 목록에 없다면{" "}
             <Link
               href="/practice-tests-by-state"
-              className="text-brand hover:text-brand-dark font-medium underline"
+              className="text-brand-dark hover:text-brand-darker font-medium underline"
             >
               TigerTest 영어 페이지
             </Link>
@@ -125,7 +125,7 @@ export default function KoreanPracticeTestsByStatePage() {
                   {state.writtenTestQuestions}문제 &middot; {state.passingScore}%
                 </span>
               </div>
-              <ChevronRight className="h-4 w-4 text-gray-400 group-hover:text-brand" />
+              <ChevronRight className="h-4 w-4 text-gray-500 dark:text-gray-400 group-hover:text-brand" />
             </Link>
           ))}
         </div>

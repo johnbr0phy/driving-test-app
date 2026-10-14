@@ -153,7 +153,7 @@ export default function Home() {
         <div className="grid md:grid-cols-2 gap-8 md:gap-12">
           <div className="relative pt-8">
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16 bg-white dark:bg-gray-900 border-2 border-brand-border-light rounded-full flex items-center justify-center shadow-sm">
-              <Smartphone className="w-7 h-7 text-brand" />
+              <Smartphone className="w-7 h-7 text-brand-dark" />
             </div>
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">
@@ -184,7 +184,7 @@ export default function Home() {
       {/* Short on time? Urgency / Premium hook */}
       <div className="bg-brand-light py-14">
         <div className="max-w-2xl mx-auto px-6 text-center">
-          <p className="text-xs font-semibold uppercase tracking-widest text-brand mb-3">
+          <p className="text-xs font-semibold uppercase tracking-widest text-brand-dark mb-3">
             <T k="landing.urgencyEyebrow">Short on time?</T>
           </p>
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 mb-4">
@@ -259,7 +259,7 @@ export default function Home() {
                     <span className="font-medium text-gray-900 dark:text-gray-50 text-sm">
                       {state.name}
                     </span>
-                    <span className="text-xs text-gray-400">{state.writtenTestQuestions}Q</span>
+                    <span className="text-xs text-gray-500 dark:text-gray-400">{state.writtenTestQuestions}Q</span>
                   </Link>
                 )
             )}
@@ -267,7 +267,7 @@ export default function Home() {
           <div className="text-center mt-8">
             <Link
               href="/practice-tests-by-state"
-              className="text-brand hover:text-brand-dark font-medium hover:underline"
+              className="text-brand-dark hover:text-brand-darker font-medium hover:underline"
             >
               <T k="landing.viewAllStates">View all 50 states</T> &rarr;
             </Link>
@@ -438,7 +438,7 @@ export default function Home() {
               I run a driving school. Can my students use TigerTest?
             </h3>
             <p className="text-gray-600 dark:text-gray-300">
-              Absolutely! We partner with driving schools to help students prepare for their permit test. Visit our <Link href="/schools" className="text-brand hover:text-brand-dark underline">driving schools page</Link> to learn more and get your school listed.
+              Absolutely! We partner with driving schools to help students prepare for their permit test. Visit our <Link href="/schools" className="text-brand-dark hover:text-brand-darker underline">driving schools page</Link> to learn more and get your school listed.
             </p>
           </div>
         </div>

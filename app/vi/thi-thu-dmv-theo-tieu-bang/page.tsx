@@ -104,7 +104,7 @@ export default function VietnamesePracticeTestsByStatePage() {
             chỉ có tiếng Anh hoặc các ngôn ngữ khác — bạn có thể luyện bằng{" "}
             <Link
               href="/practice-tests-by-state"
-              className="text-brand hover:text-brand-dark font-medium underline"
+              className="text-brand-dark hover:text-brand-darker font-medium underline"
             >
               bản tiếng Anh của TigerTest
             </Link>
@@ -129,7 +129,7 @@ export default function VietnamesePracticeTestsByStatePage() {
                   %
                 </span>
               </div>
-              <ChevronRight className="h-4 w-4 text-gray-400 group-hover:text-brand" />
+              <ChevronRight className="h-4 w-4 text-gray-500 dark:text-gray-400 group-hover:text-brand" />
             </Link>
           ))}
         </div>

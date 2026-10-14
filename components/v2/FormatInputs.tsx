@@ -61,7 +61,7 @@ export function OrderInput({ question, optionOrder, answer, onAnswer, reveal, di
             const o = seq[pos];
             if (o === undefined) {
               return (
-                <li key={pos} className="flex min-h-[3rem] items-center gap-3 rounded-xl border-2 border-dashed border-gray-300 dark:border-gray-700 px-3 text-sm text-gray-400">
+                <li key={pos} className="flex min-h-[3rem] items-center gap-3 rounded-xl border-2 border-dashed border-gray-300 dark:border-gray-700 px-3 text-sm text-gray-500 dark:text-gray-400">
                   <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border-2 border-dashed border-gray-300 dark:border-gray-700 font-bold">{pos + 1}</span>
                   {pos === seq.length && !reveal ? "Tap the next step below" : ""}
                 </li>
@@ -172,7 +172,7 @@ export function BowtieInput({ question, answer, onAnswer, reveal, disabled }: In
         return (
           <div key={gi} role="group" aria-labelledby={`${id}-${gi}`} className={`rounded-xl border-2 p-3 ${gi === 1 ? "border-brand bg-brand-light" : "border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900"} ${gi === 1 ? "md:order-2" : gi === 0 ? "md:order-1" : "md:order-3"}`}>
             <div id={`${id}-${gi}`} className="mb-2 text-sm font-semibold text-gray-900 dark:text-gray-50">
-              {g.label} <span className="font-normal text-gray-500 dark:text-gray-400">(choose {g.pick})</span>
+              {g.label} <span className="font-normal text-gray-600 dark:text-gray-300">(choose {g.pick})</span>
             </div>
             <div className="space-y-2">
               {g.options.map((opt, oi) => {
@@ -184,7 +184,7 @@ export function BowtieInput({ question, answer, onAnswer, reveal, disabled }: In
                   <button key={oi} type="button" disabled={disabled || reveal} aria-pressed={on} onClick={() => toggle(gi, flat)} className={`flex w-full items-start gap-2 ${chipBase} py-2 text-sm md:text-[15px] ${cls}`}>
                     <span className="flex-1"><RichText text={opt} /></span>
                     {reveal && <span className="sr-only">{isKey ? "Correct answer" : on ? "Incorrect answer" : ""}</span>}
-                    {on && !reveal && <Check className="mt-0.5 h-4 w-4 shrink-0 text-brand" />}
+                    {on && !reveal && <Check className="mt-0.5 h-4 w-4 shrink-0 text-brand-dark" />}
                   </button>
                 );
               })}

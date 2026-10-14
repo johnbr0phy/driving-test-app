@@ -273,7 +273,7 @@ function TrainingPageContent() {
             <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-50 mb-2">
               {t("trainingPage.congratulations")}
             </h2>
-            <p className="text-xl text-brand font-semibold mb-4">
+            <p className="text-xl text-brand-dark font-semibold mb-4">
               {t("trainingPage.youUnlocked")}
             </p>
             <p className="text-gray-600 dark:text-gray-300 mb-6">
@@ -300,7 +300,7 @@ function TrainingPageContent() {
       {/* Set Complete - Full-bleed Score Card */}
       {showSetComplete && isSetMode && (
         <div className="fixed inset-0 z-50 overflow-y-auto animate-in fade-in duration-300">
-          <div className="contrast-dark-surface min-h-screen bg-gradient-to-b from-gray-950 to-green-950">
+          <div className="min-h-screen bg-gradient-to-b from-gray-950 to-green-950">
             {/* Back button */}
             <div className="relative max-w-6xl mx-auto px-4 pt-4">
               <Button asChild variant="ghost" className="text-gray-400 hover:text-white hover:bg-white/10 -ml-2">
@@ -315,7 +315,7 @@ function TrainingPageContent() {
               {/* Branding header */}
               <div className="mb-6">
                 <div className="text-gray-300 text-lg font-bold tracking-widest">tigertest.io</div>
-                <div className="text-gray-500 dark:text-gray-400 text-xs uppercase tracking-widest mt-1">
+                <div className="text-gray-400 text-xs uppercase tracking-widest mt-1">
                   {language === "es" ? "ENTRENAMIENTO DMV" : language === "vi" ? "LUYỆN TẬP DMV" : language === "ko" ? "DMV 학습" : "DMV TRAINING"}
                 </div>
               </div>
@@ -357,7 +357,7 @@ function TrainingPageContent() {
               </div>
 
               {/* Branding footer */}
-              <div className="text-gray-600 dark:text-gray-300 text-sm tracking-wider mb-8">tigertest.io</div>
+              <div className="text-gray-400 text-sm tracking-wider mb-8">tigertest.io</div>
 
               {/* SHARE + TRY AGAIN buttons */}
               <div className="flex gap-3 max-w-xs mx-auto">
@@ -422,7 +422,7 @@ function TrainingPageContent() {
             <div className="text-center py-5">
               <button
                 onClick={() => setShowResetConfirm(true)}
-                className="text-gray-500 dark:text-gray-400 hover:text-gray-300 text-sm font-medium transition-colors"
+                className="text-gray-400 hover:text-gray-300 text-sm font-medium transition-colors"
               >
                 {t("results.tryAgain")} →
               </button>
@@ -437,7 +437,7 @@ function TrainingPageContent() {
           isPremium ? (
             <Link
               href="/stats"
-              className="text-sm font-medium text-brand hover:text-brand-dark transition-colors"
+              className="text-sm font-medium text-brand-dark hover:text-brand-darker transition-colors"
             >
               {t("dashboard.viewStats")}
             </Link>
@@ -448,7 +448,7 @@ function TrainingPageContent() {
                 if (!isGuest) trackStatsEntry("training_header");
                 setPaywallOpen(true);
               }}
-              className="text-sm font-medium text-brand hover:text-brand-dark transition-colors"
+              className="text-sm font-medium text-brand-dark hover:text-brand-darker transition-colors"
             >
               {ctaText}
             </button>
@@ -483,7 +483,7 @@ function TrainingPageContent() {
             // Set-based progress
             <>
               <div className="flex items-center justify-center gap-1 text-sm md:text-lg text-gray-700 dark:text-gray-200">
-                <span className="font-bold text-xl md:text-2xl text-brand">{setProgress.correct}</span>
+                <span className="font-bold text-xl md:text-2xl text-brand-dark">{setProgress.correct}</span>
                 <span className="text-gray-500 dark:text-gray-400">/{setProgress.total}</span>
                 <span className="text-gray-500 dark:text-gray-400 text-xs md:text-base ml-1">
                   {t("trainingPage.questionsCorrect")}
@@ -500,7 +500,7 @@ function TrainingPageContent() {
             // Onboarding progress
             <>
               <div className="flex items-center justify-center gap-1 text-sm md:text-lg text-gray-700 dark:text-gray-200">
-                <span className="font-bold text-xl md:text-2xl text-brand">{training.totalCorrectAllTime}</span>
+                <span className="font-bold text-xl md:text-2xl text-brand-dark">{training.totalCorrectAllTime}</span>
                 <span className="text-gray-500 dark:text-gray-400">/10</span>
                 <span className="text-gray-500 dark:text-gray-400 text-xs md:text-base ml-1">
                   ({10 - training.totalCorrectAllTime} {t("trainingPage.moreToUnlock")})
@@ -516,7 +516,7 @@ function TrainingPageContent() {
           ) : (
             // Post-onboarding without set - show current streak
             <div className="flex items-center justify-center gap-1 text-sm md:text-lg text-gray-700 dark:text-gray-200">
-              <span className="font-bold text-xl md:text-2xl text-brand">{training.currentStreak}</span>
+              <span className="font-bold text-xl md:text-2xl text-brand-dark">{training.currentStreak}</span>
               <span className="text-gray-500 dark:text-gray-400 text-xs md:text-base ml-1">
                 {t("trainingPage.streak")}
               </span>

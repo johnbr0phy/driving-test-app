@@ -52,12 +52,12 @@ export function BasicsRuleSheet({ exam, skill, open, onClose, doneLabel = "Back 
       <div className="v2-pop max-h-[85%] w-full max-w-2xl overflow-y-auto rounded-t-2xl bg-white dark:bg-gray-900 p-4" onClick={(e) => e.stopPropagation()}>
         <div className="flex flex-col gap-5">
           {walkable && (
-            <button type="button" onClick={() => setWalking(true)} className="flex items-center gap-1.5 self-start text-[15px] font-semibold text-brand">
+            <button type="button" onClick={() => setWalking(true)} className="flex items-center gap-1.5 self-start text-[15px] font-semibold text-brand-dark">
               <ListChecks className="h-4 w-4" /> Walk through it, step by step
             </button>
           )}
           {voiced && (
-            <button type="button" onClick={() => setListening(true)} className="flex items-center gap-1.5 self-start text-[15px] font-semibold text-brand">
+            <button type="button" onClick={() => setListening(true)} className="flex items-center gap-1.5 self-start text-[15px] font-semibold text-brand-dark">
               <Play className="h-4 w-4" /> Listen instead · 30 seconds
             </button>
           )}

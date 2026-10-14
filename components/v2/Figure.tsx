@@ -18,7 +18,7 @@ export function Figure({ figure, compact = false }: { figure: FigureT; compact?:
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={figure.src} alt={figure.alt} className="mx-auto h-auto w-full max-h-72 object-contain dark:invert" loading="lazy" />
-        <div className="mt-1 text-center text-[11px] text-gray-400">Tap to enlarge</div>
+        <div className="mt-1 text-center text-[11px] text-gray-500 dark:text-gray-400">Tap to enlarge</div>
       </button>
       {open && (
         <AccessibleOverlay onClose={() => setOpen(false)} aria-label="Figure full size" className="fixed inset-0 z-[80] flex flex-col bg-black/90" onClick={() => setOpen(false)}>

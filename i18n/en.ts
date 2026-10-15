@@ -621,6 +621,9 @@ export const en = {
     submitTest: "Submit Test",
     progressOverview: "Progress Overview",
     selectAnswerToAdvance: "Select your answer to automatically advance to the next question",
+    superAmazing: "Super amazing mode",
+    superAmazingHint: "Confetti and hype on every answer. Your score stays secret until the end.",
+    superAmazingHype: "Locked in!|Boom!|Unstoppable!|Keep it rolling!|Legend!|On fire!",
   },
 
   // Results page

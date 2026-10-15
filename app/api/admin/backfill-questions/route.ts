@@ -3,6 +3,7 @@ import { getAdminDb, getAdminAuth } from '@/lib/firebase-admin';
 import { isAdminEmail } from '@/lib/admin';
 import { computeAnswersByExamByDay } from '@/lib/server/answersByDay';
 import { getInternalUids } from '@/lib/server/internalUsers';
+import { enrolledExamKeys, enrollmentDocId } from '@/lib/server/enrollments';
 
 // Seeds the analytics/questions aggregate's history from every user's stored
 // answer data. Runs as its own endpoint (triggered by the admin dashboard when
@@ -47,6 +48,11 @@ export async function POST(request: NextRequest) {
     let usersScanned = 0;
     // Internal accounts (lib/internal) never count toward the answered totals.
     const internalUids = await getInternalUids();
+    // Seeds the enrollments collection (lib/enrollment) for accounts that
+    // answered before live tracking: idempotent sets, one doc per (exam, uid).
+    const writer = db.bulkWriter();
+    const enrollments = db.collection('enrollments');
+    let enrollmentsWritten = 0;
     let cursor: FirebaseFirestore.QueryDocumentSnapshot | null = null;
     for (;;) {
       let query = db
@@ -61,7 +67,12 @@ export async function POST(request: NextRequest) {
       for (const doc of snap.docs) {
         if (internalUids.has(doc.id)) continue;
         usersScanned++;
-        const byExam = computeAnswersByExamByDay(doc.data() as Record<string, unknown>);
+        const data = doc.data() as Record<string, unknown>;
+        for (const exam of enrolledExamKeys(data)) {
+          void writer.set(enrollments.doc(enrollmentDocId(exam, 'u', doc.id)), { exam, uid: doc.id }, { merge: true });
+          enrollmentsWritten++;
+        }
+        const byExam = computeAnswersByExamByDay(data);
         for (const [examKey, byDay] of Object.entries(byExam)) {
           const examDays = (computedByExam[examKey] ||= {});
           for (const [day, count] of Object.entries(byDay)) {
@@ -75,6 +86,8 @@ export async function POST(request: NextRequest) {
       if (snap.size < PAGE_SIZE) break;
       cursor = snap.docs[snap.docs.length - 1];
     }
+
+    await writer.close();
 
     const ref = db.doc('analytics/questions');
     const existingDoc = (await ref.get()).data() || {};
@@ -102,13 +115,14 @@ export async function POST(request: NextRequest) {
     // Nested merge updates only the listed days; live counters and days the
     // aggregate already knows more about are left untouched.
     const stamp = new Date().toISOString();
-    await ref.set({ daily, byExam, backfilledAt: stamp, byExamBackfilledAt: stamp, v2BackfilledAt: stamp }, { merge: true });
+    await ref.set({ daily, byExam, backfilledAt: stamp, byExamBackfilledAt: stamp, v2BackfilledAt: stamp, enrollmentsBackfilledAt: stamp }, { merge: true });
 
     return NextResponse.json({
       ok: true,
       usersScanned,
       daysWritten: Object.keys(daily).length,
       examDaysWritten,
+      enrollmentsWritten,
     });
   } catch (error) {
     console.error('[admin/backfill-questions]', error);

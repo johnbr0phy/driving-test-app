@@ -61,6 +61,8 @@ Guest mode allows using the app without an account; guest data converts on signu
 
 The visitor funnel on `/admin/v2` (`lib/funnel.ts`, `/api/analytics/funnel`) counts signed-out browsers once per step: first visit, first question answered, signup page opened, account created. Counts go to `analytics/funnel`; each new account's origin (`tried` first or `cold`) goes to `signupOrigins/{uid}`, kept out of `users/{uid}` so it never races the first load.
 
+The "Questions by exam" table's Enrolled column counts distinct people with at least one answer per exam: one doc per (exam, person) in `enrollments` (`lib/enrollment.ts`, `/api/analytics/enrollment`), keyed `{exam}__u_{uid}` or `{exam}__b_{browserId}` for guests; signing in claims the browser's guest docs so a converted guest counts once. Accounts that predate it are seeded by `/api/admin/backfill-questions` (`enrollmentsBackfilledAt`).
+
 **Internal accounts never count in /admin.** `lib/internal.ts` (`isInternalEmail`: `ADMIN_EMAILS`, `@johnbrophy.net`, `@stensul.com`) is applied on read by `/api/admin/metrics`, `/api/admin/users` and `/api/admin/backfill-questions` (uids from one cached Auth listing in `lib/server/internalUsers.ts`: users, payments, test requests and signup origins are dropped), and on write: an internal login marks the browser (`tigertest-internal` in localStorage, set in `AuthContext`, never cleared), after which the anonymous counters (questions answered, funnel steps, paywall hits, shares) are not sent from it even signed out; the paywall and funnel-signup routes also drop a request whose token is internal. Counts recorded before the flag existed stay in the aggregates. The stats cron has its own, broader `isTest()`.
 
 ### Additional Exams (CDL, HTL, CST, CRCST)

@@ -341,6 +341,20 @@ export async function GET(request: NextRequest) {
     // the split shipped (and before the backfill ran) only count in the headline.
     const byExamRaw =
       (questionsData?.byExam as Record<string, { daily?: Record<string, number> }>) || {};
+    // Enrolled: distinct people (accounts + guest browsers) with at least one
+    // answer in the exam, one doc each in enrollments (lib/enrollment). A
+    // count() aggregation per exam; internal accounts are never written there.
+    const enrolledEntries = await Promise.all(
+      Object.keys(byExamRaw).map(async (id) => {
+        try {
+          const snap = await db.collection('enrollments').where('exam', '==', id).count().get();
+          return [id, snap.data().count] as const;
+        } catch {
+          return [id, 0] as const;
+        }
+      })
+    );
+    const enrolledByExam = Object.fromEntries(enrolledEntries);
     const questionsByExam = Object.entries(byExamRaw)
       .map(([id, rec]) => {
         const days = rec?.daily || {};
@@ -351,12 +365,14 @@ export async function GET(request: NextRequest) {
           last7d: sumWindow(days, daysAgoKey(6), todayKey),
           prev7d: sumWindow(days, daysAgoKey(13), daysAgoKey(7)),
           today: days[etToday] || 0,
+          enrolled: enrolledByExam[id] || 0,
         };
       })
       .filter((row) => row.total > 0)
       .sort((a, b) => b.total - a.total);
     // v2BackfilledAt: re-seeds once more now that the backfill counts v2 (SAT, ACT...) history.
-    const questionsByExamBackfillPending = !questionsData?.v2BackfilledAt;
+    // enrollmentsBackfilledAt: one more pass to seed enrollments from account records.
+    const questionsByExamBackfillPending = !questionsData?.v2BackfilledAt || !questionsData?.enrollmentsBackfilledAt;
 
     const totalUsers = usersSnap.docs.length;
     const payload = {

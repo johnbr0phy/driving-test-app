@@ -55,7 +55,7 @@ interface Metrics {
   activeWeekly: { date: string; count: number }[];
   activeMonthly: { date: string; count: number }[];
   // Optional: older cached payloads predate the per-exam split.
-  questionsByExam?: { id: string; label: string; total: number; last7d: number; prev7d: number; today: number }[];
+  questionsByExam?: { id: string; label: string; total: number; last7d: number; prev7d: number; today: number; enrolled?: number }[];
   launchTest?: { id: string; name: string; subject: string; sent: number; clicked: number; bought: number }[];
   studyTimes?: {
     grid: Record<string, number[]>;
@@ -580,6 +580,7 @@ function QuestionsByExam({ rows, totalQuestions, backfillPending }: {
                 <th className="text-right font-medium pb-2 pl-4">Today</th>
                 <th className="text-right font-medium pb-2 pl-4">Last 7d</th>
                 <th className="text-right font-medium pb-2 pl-4">All-time</th>
+                <th className="text-right font-medium pb-2 pl-4" title="Distinct people who answered at least one question">Enrolled</th>
                 <th className="text-right font-medium pb-2 pl-4 w-1/3">Share</th>
               </tr>
             </thead>
@@ -595,6 +596,9 @@ function QuestionsByExam({ rows, totalQuestions, backfillPending }: {
                     </span>
                   </td>
                   <td className="py-2 pl-4 text-right tabular-nums text-gray-900 dark:text-gray-50">{fmtInt(r.total)}</td>
+                  <td className="py-2 pl-4 text-right tabular-nums text-gray-900 dark:text-gray-50">
+                    {r.enrolled !== undefined ? fmtInt(r.enrolled) : "—"}
+                  </td>
                   <td className="py-2 pl-4">
                     <div className="flex items-center gap-2 justify-end">
                       <div className="h-1.5 w-full max-w-[160px] bg-gray-100 dark:bg-gray-800 rounded overflow-hidden">
@@ -617,7 +621,8 @@ function QuestionsByExam({ rows, totalQuestions, backfillPending }: {
       <p className="mt-4 text-[11px] text-gray-500 dark:text-gray-400">
         Every training and test answer, guests included, filed under the exam it belongs to.
         Signed-in history is seeded from user records; guest answers before the split shipped
-        only count in the all-time total above.
+        only count in the all-time total above. Enrolled counts distinct people with at least one
+        answer in the exam, all-time: accounts plus guest browsers (a guest who signs up counts once).
         {backfillPending ? " History seed is running; refresh in a minute." : ""}
       </p>
     </div>

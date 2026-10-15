@@ -21,6 +21,7 @@ import { useStore } from "@/store/useStore";
 import { examIdFromSignupUrl } from "@/lib/email-voice";
 import { AccountConflictDialog } from "@/components/AccountConflictDialog";
 import { isInternalEmail, markInternalBrowser } from "@/lib/internal";
+import { claimEnrollments } from "@/lib/enrollment";
 
 interface AccountConflict {
   user: User;
@@ -123,6 +124,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       setUser(user);
       // An internal login (lib/internal) marks this browser so its counters stay out of /admin.
       if (isInternalEmail(user?.email)) markInternalBrowser();
+      // Move this browser's guest "enrolled" marks onto the account (lib/enrollment).
+      if (user) claimEnrollments();
       try {
         if (user) {
           // firestoreLoaded is persisted to localStorage, so on a fresh

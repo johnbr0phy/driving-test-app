@@ -3,6 +3,7 @@ import { getAdminDb } from '@/lib/firebase-admin';
 import { FieldValue } from 'firebase-admin/firestore';
 import { EXAM_ANALYTICS_KEYS } from '@/lib/exams';
 import { EXAMS_V2 } from '@/lib/v2/registry';
+import { grantAnswers, requestIp } from '@/lib/server/answerRateLimit';
 
 // Largest batch a client can legitimately accumulate: a full test completion
 // (171 questions on the ACT) plus a burst of training answers.
@@ -22,7 +23,22 @@ export async function POST(request: NextRequest) {
     if (raw < 1) {
       return NextResponse.json({ ok: true });
     }
-    const count = Math.min(raw, MAX_BATCH);
+    const requested = Math.min(raw, MAX_BATCH);
+
+    const db = getAdminDb();
+    const today = new Date().toISOString().split('T')[0]; // YYYY-MM-DD (UTC)
+
+    // Per-IP budget (lib/server/answerRateLimit): anything over it is dropped
+    // here and tallied under rateLimited so a capped spike still shows up.
+    const count = await grantAnswers(db, requestIp(request), requested);
+    if (count < requested) {
+      const dropped = requested - count;
+      await db.doc('analytics/questions').set(
+        { rateLimited: { total: FieldValue.increment(dropped), daily: { [today]: FieldValue.increment(dropped) } } },
+        { merge: true }
+      );
+      if (count <= 0) return NextResponse.json({ ok: true, limited: true });
+    }
 
     // Optional per-exam split ({ dmv: 3, cdl: 2 }). Unknown keys are dropped
     // and the split can never exceed the (capped) total it accompanies.
@@ -38,9 +54,6 @@ export async function POST(request: NextRequest) {
         if (splitTotal >= count) break;
       }
     }
-
-    const db = getAdminDb();
-    const today = new Date().toISOString().split('T')[0]; // YYYY-MM-DD (UTC)
 
     // Nested-object merge avoids the dotted-field-path ambiguity in
     // set({ merge: true }) — same pattern as analytics/paywalls.

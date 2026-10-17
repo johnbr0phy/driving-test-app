@@ -18,7 +18,7 @@ import { basicsDone, basicsFor } from "@/lib/v2/basics";
 import { useV2Store, resultsForExam } from "@/store/useV2Store";
 import { useHydration } from "@/hooks/useHydration";
 import { useAuth } from "@/contexts/AuthContext";
-import { GuestSaveCard } from "@/components/GuestSaveCard";
+import { GuestSaveCard, v2GuestAnswered } from "@/components/GuestSaveCard";
 import { ProgressCard, Collapse } from "@/components/dashboard/ProgressCard";
 import { getTigerAsset, TigerExpression } from "@/lib/tigerAssets";
 import { useIsPremium } from "@/hooks/useIsPremium";
@@ -80,12 +80,7 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
   const { user, loading: authLoading } = useAuth();
   const signedOut = hydrated && !authLoading && !user;
   // What a signed-out visitor stands to lose: drill answers plus test items.
-  const guestAnswered = useMemo(
-    () =>
-      Object.entries(drills).reduce((n, [k, d]) => (k.startsWith(`${exam.id}:`) ? n + d.seen : n), 0) +
-      history.reduce((n, r) => n + r.items.filter((i) => i.answer !== undefined).length, 0),
-    [drills, history, exam.id]
-  );
+  const guestAnswered = useMemo(() => v2GuestAnswered(drills, history, exam.id), [drills, history, exam.id]);
 
   const goal = savedGoal ?? exam.defaultGoal;
   const hasGoal = hydrated && savedGoal !== undefined;

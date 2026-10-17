@@ -961,6 +961,8 @@ export const ko: TranslationKeys = {
 
   // Language
   guestSave: {
+    streakKicker: "두 문제 연속 정답. 좋아요!",
+    keepPracticing: "계속 연습하기",
     titleFresh: "공부하면서 진행 상황을 저장하세요",
     titleAnswers: "{{n}}개의 답변이 이 브라우저에만 저장되어 있습니다",
     titleAnswersTests: "{{n}}개의 답변과 시험 점수가 이 브라우저에만 저장되어 있습니다",

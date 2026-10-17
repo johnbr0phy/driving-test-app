@@ -959,6 +959,8 @@ export const en = {
 
   // Language
   guestSave: {
+    streakKicker: "Two in a row. Nice.",
+    keepPracticing: "Keep practicing",
     titleFresh: "Save your progress as you go",
     titleAnswers: "Your {{n}} answers are only saved on this browser",
     titleAnswersTests: "Your {{n}} answers and test scores are only saved on this browser",

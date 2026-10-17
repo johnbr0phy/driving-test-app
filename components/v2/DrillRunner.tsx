@@ -28,6 +28,10 @@ import { BasicsRuleSheet } from "./BasicsRuleSheet";
 import { DrillLockScreen } from "./DrillLockScreen";
 import { QuestionView } from "./QuestionView";
 import { useV2Paywall, V2Paywall } from "./V2Paywall";
+import { useAuth } from "@/contexts/AuthContext";
+import { useGuestPrompt } from "@/hooks/useGuestPrompt";
+import { GuestPromptStep } from "@/components/GuestPromptStep";
+import { v2GuestAnswered } from "@/components/GuestSaveCard";
 
 /**
  * Phone-first mastery drill: one question, one tap, instant feedback, big
@@ -57,6 +61,10 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
   const state = drill ? drillStateFor(drillsMap, exam.id, drill, allQuestions) : EMPTY_DRILL;
   const paywall = useV2Paywall(exam, "drill");
   const isNative = useIsNativeApp();
+  const results = useV2Store((s) => s.results);
+  const { user, loading: authLoading } = useAuth();
+  // Signed-out visitors get the sign-up prompt in place of a question now and then.
+  const guestPrompt = useGuestPrompt(!authLoading && !user, "drill");
 
   // Close goes back to the dashboard, where the exam level was opened from.
   const backHref = routes.dashboard;
@@ -105,6 +113,7 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
     setAnswer(final);
     const ok = isCorrect(question, final);
     setRevealed(true);
+    guestPrompt.record(ok);
     answerDrill(key, question.id, ok, drill ? drillStateFor(useV2Store.getState().drills, exam.id, drill, allQuestions) : undefined);
     if (ok) playCorrectSound();
     else {
@@ -165,6 +174,14 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
                 <button type="button" onClick={() => { resetDrill(key); currentId.current = null; setDone(false); }} className="v2-tap rounded-xl border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-sm font-semibold">Run it again</button>
               </div>
             </div>
+          ) : guestPrompt.showing ? (
+            <GuestPromptStep
+              signupHref={`/signup?redirect=${encodeURIComponent(routes.drillQuestions(drill.key))}`}
+              answered={v2GuestAnswered(drillsMap, results, exam.id)}
+              where="drill"
+              dataTheme={exam.id}
+              onSkip={() => { guestPrompt.skip(); load(); }}
+            />
           ) : question ? (
             <QuestionView focusOnChange
               key={question.id}
@@ -179,7 +196,7 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
               label={`${exam.domainLabels[question.domain] ?? question.domain}${question.skill ? ` · ${question.skill}` : ""}`}
             />
           ) : null}
-          {missedSkill && (
+          {missedSkill && !guestPrompt.showing && (
             <div className="v2-pop mt-4 rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-4 py-3">
               <div className="text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400">Brush up on the basics</div>
               <button type="button" onClick={() => setBrushUp(true)} className="v2-tap mt-1 flex w-full items-center gap-3 text-left">
@@ -194,11 +211,11 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
         </div>
       </div>
 
-      {!done && question && (
+      {!done && question && !guestPrompt.showing && (
         <div className="v2-safe-bottom shrink-0 border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-3 pt-3">
           <div className="mx-auto flex max-w-2xl gap-2">
             {revealed ? (
-              <button type="button" onClick={load} className="v2-tap w-full rounded-xl bg-brand text-base font-bold text-white">Next</button>
+              <button type="button" onClick={() => { if (!guestPrompt.takeStep()) load(); }} className="v2-tap w-full rounded-xl bg-brand text-base font-bold text-white">Next</button>
             ) : question.format === "single" ? (
               <div className="v2-tap flex w-full items-center justify-center text-sm text-gray-500 dark:text-gray-400">Tap an answer to check it</div>
             ) : (

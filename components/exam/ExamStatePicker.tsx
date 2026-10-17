@@ -61,7 +61,7 @@ export function ExamStatePrompt({ exam }: { exam: ExamConfig }) {
   const { familyId, chosen, choose } = useExamStateChoice(exam);
   const variants = getExamVariants(familyId);
   if (!hydrated || variants.length === 0 || exam.variantOf || chosen) return null;
-  const names = variants.map((v) => v.jurisdiction!.name).join(" and ");
+  const names = new Intl.ListFormat("en", { type: "conjunction" }).format(variants.map((v) => v.jurisdiction!.name));
 
   return (
     <div className="rounded-xl bg-white dark:bg-gray-900 border border-brand-border-light p-4 mb-4">

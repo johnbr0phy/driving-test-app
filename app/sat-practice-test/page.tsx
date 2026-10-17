@@ -201,9 +201,9 @@ export default function SatLandingPage() {
       {/* Feedback */}
       <div className="max-w-3xl mx-auto px-6 py-16 md:py-24 text-center">
         <div className="bg-brand-light border border-brand-border-light rounded-2xl p-8 md:p-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4">Spot a Mistake? Tell Us</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4">Help Make TigerTest Better</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 max-w-xl mx-auto">
-            If a question looks wrong or your score estimate feels off, tell us.
+            Have an idea, a topic you&apos;d like covered, or a question that could be clearer? We read every message and use it to improve every test.
           </p>
           <a
             href="https://johnbrophy.net/#contact"
@@ -211,7 +211,7 @@ export default function SatLandingPage() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-brand text-white px-6 py-3 rounded-xl font-medium hover:bg-brand-hover transition-colors"
           >
-            Send Us Feedback
+            Share Feedback
           </a>
         </div>
       </div>

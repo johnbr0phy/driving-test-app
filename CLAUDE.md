@@ -59,6 +59,8 @@ App Router pages in `/app/`. Key routes:
 
 Guest mode allows using the app without an account; guest data converts on signup.
 
+**Super Amazing Mode** (site-wide continuous fireworks, `components/SuperAmazingFireworks.tsx` in the root layout, flag `superAmazingMode` in localStorage) is earned by turning any dashboard all green: DMV 8/8, a registry exam's sets plus tests, or every v2 step (Premium-locked steps included, so SAT and ACT need Premium). `components/SuperAmazingCard.tsx` sits at the bottom of all three dashboards and owns the unlock: one site-wide latch (`superAmazingUnlockedAt`, never cleared by later progress), the toggle synced to `users/{uid}.superAmazing` for /admin. Every dashboard must stay completable: every training set needs at least its `size` unique questions and every DMV state at least 40 state-specific questions.
+
 The visitor funnel on `/admin/v2` (`lib/funnel.ts`, `/api/analytics/funnel`) counts signed-out browsers once per step: first visit, first question answered, signup page opened, account created. Counts go to `analytics/funnel`; each new account's origin (`tried` first or `cold`) goes to `signupOrigins/{uid}`, kept out of `users/{uid}` so it never races the first load.
 
 The "Questions by exam" table's Enrolled column counts distinct people with at least one answer per exam: one doc per (exam, person) in `enrollments` (`lib/enrollment.ts`, `/api/analytics/enrollment`), keyed `{exam}__u_{uid}` or `{exam}__b_{browserId}` for guests; signing in claims the browser's guest docs so a converted guest counts once. Accounts that predate it are seeded by `/api/admin/backfill-questions` (`enrollmentsBackfilledAt`).

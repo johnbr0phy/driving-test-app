@@ -210,7 +210,7 @@ export const en = {
     continueTest: "Continue the test ({{n}}/50 answered)",
     drillTip: "Drilling just your {{n}} misses is the fastest way to beat your {{pct}}%",
     chartPassLine: "80% to pass",
-    samUnlockLabel: "Complete 8/8 to unlock:",
+    samUnlockLabel: "Complete {{n}}/{{n}} to unlock:",
     samUnlockedLabel: "Unlocked:",
     samTitle: "Super Amazing Mode",
     trainingNudge0: "You've nailed the training. Try a practice test. It's the closest thing to the real exam.",

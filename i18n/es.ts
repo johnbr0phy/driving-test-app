@@ -210,7 +210,7 @@ export const es: TranslationKeys = {
     continueTest: "Continuar el examen ({{n}}/50 respondidas)",
     drillTip: "Repasar solo tus {{n}} fallos es la forma más rápida de superar tu {{pct}}%",
     chartPassLine: "80% para aprobar",
-    samUnlockLabel: "Completa las 8/8 para desbloquear:",
+    samUnlockLabel: "Completa las {{n}}/{{n}} para desbloquear:",
     samUnlockedLabel: "Desbloqueado:",
     samTitle: "Modo Súper Increíble",
     trainingNudge0: "Dominaste el entrenamiento. Prueba un examen de práctica. Es lo más parecido al examen real.",

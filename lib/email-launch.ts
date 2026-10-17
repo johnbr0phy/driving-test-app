@@ -152,8 +152,10 @@ function variant(
 }
 
 /**
- * Every variant in the test. Drop one from this list to stop sending it.
- * Ids stay fixed (no renumbering) so recorded results keep their meaning.
+ * Every variant in the test, sent or retired. /admin/v2 reports on all of
+ * them, so a retired variant stays here; add its id to RETIRED_VARIANTS to
+ * stop sending it. Ids stay fixed (no renumbering) so recorded results keep
+ * their meaning.
  */
 export const LAUNCH_VARIANTS: LaunchVariant[] = [
   variant("v1", "Next step", "Permit test: done. SAT: next.", "Same TigerTest format, now for the SAT and ACT. First practice test is free.", ({ sat, act }) => ({
@@ -194,22 +196,31 @@ export const LAUNCH_VARIANTS: LaunchVariant[] = [
   })),
 ];
 
+/**
+ * Dropped Oct 17 after the first five batches: v1 and v3 opened at 15-18%,
+ * v4 and v5 at about 25%.
+ */
+const RETIRED_VARIANTS = new Set(["v1", "v3"]);
+
+/** The variants still being sent. */
+export const SENDING_VARIANTS = LAUNCH_VARIANTS.filter((v) => !RETIRED_VARIANTS.has(v.id));
+
 export function getLaunchVariant(id: unknown): LaunchVariant | null {
   return LAUNCH_VARIANTS.find((v) => v.id === id) ?? null;
 }
 
 /**
  * Stable variant for a user: FNV-1a of the uid, mod the variant count.
- * NEW_TESTS_WINNER=v3 (say) sends everyone not yet emailed that variant,
+ * NEW_TESTS_WINNER=v4 (say) sends everyone not yet emailed that variant,
  * for when the test has a clear winner and the rest of the list is waiting.
  */
 export function pickLaunchVariant(uid: string, winner = process.env.NEW_TESTS_WINNER): LaunchVariant {
-  const forced = getLaunchVariant(winner);
+  const forced = SENDING_VARIANTS.find((v) => v.id === winner);
   if (forced) return forced;
   let h = 0x811c9dc5;
   for (let i = 0; i < uid.length; i++) {
     h ^= uid.charCodeAt(i);
     h = Math.imul(h, 0x01000193) >>> 0;
   }
-  return LAUNCH_VARIANTS[h % LAUNCH_VARIANTS.length];
+  return SENDING_VARIANTS[h % SENDING_VARIANTS.length];
 }

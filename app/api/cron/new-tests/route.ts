@@ -38,7 +38,7 @@ import {
   JOHN_SENDER,
 } from "@/lib/cron-email";
 import { EMAIL_TEMPLATES } from "@/lib/email-templates";
-import { LAUNCH_EXPERIMENT, LAUNCH_VARIANTS, pickLaunchVariant } from "@/lib/email-launch";
+import { LAUNCH_EXPERIMENT, SENDING_VARIANTS, pickLaunchVariant } from "@/lib/email-launch";
 
 const EMAIL_KEY = LAUNCH_EXPERIMENT;
 const INCLUDE_LEGACY = process.env.INCLUDE_LEGACY_CONSENT === "true";
@@ -69,7 +69,7 @@ export async function GET(req: NextRequest) {
 
     if (!ENABLED) {
       const dmvUsers = eligible.filter((u) => u.voice.id === "dmv");
-      const byVariant = Object.fromEntries(LAUNCH_VARIANTS.map((v) => [v.id, 0]));
+      const byVariant = Object.fromEntries(SENDING_VARIANTS.map((v) => [v.id, 0]));
       for (const u of dmvUsers) byVariant[pickLaunchVariant(u.uid).id]++;
       const summary = { paused: true, eligible: eligible.length, dmv: dmvUsers.length, other: eligible.length - dmvUsers.length, byVariant };
       console.log(`[new-tests] paused (set NEW_TESTS_CAMPAIGN=send to send): ${JSON.stringify(summary)}`);

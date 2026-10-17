@@ -1,0 +1,112 @@
+{
+ "include": [
+  "RE-PROP-001",
+  "RE-PROP-002",
+  "RE-PROP-011",
+  "RE-PROP-014",
+  "RE-PROP-017",
+  "RE-PROP-019",
+  "RE-PROP-022",
+  "RE-PROP-024",
+  "RE-OWN-003",
+  "RE-OWN-007",
+  "RE-OWN-008",
+  "RE-OWN-011",
+  "RE-OWN-015",
+  "RE-OWN-018",
+  "RE-OWN-020",
+  "RE-VAL-001",
+  "RE-VAL-003",
+  "RE-VAL-005",
+  "RE-VAL-008",
+  "RE-VAL-011",
+  "RE-VAL-017",
+  "RE-VAL-020",
+  "RE-VAL-022",
+  "RE-VAL-023",
+  "RE-CON-002",
+  "RE-CON-004",
+  "RE-CON-007",
+  "RE-CON-018",
+  "RE-CON-020",
+  "RE-CON-038",
+  "RE-PRAC-003",
+  "RE-PRAC-005",
+  "RE-PRAC-015",
+  "RE-PRAC-023",
+  "RE-DISC-001",
+  "RE-DISC-016",
+  "RE-FIN-002",
+  "RE-FIN-003",
+  "RE-FIN-004",
+  "RE-FIN-006",
+  "RE-FIN-007",
+  "RE-FIN-008",
+  "RE-FIN-009",
+  "RE-FIN-010",
+  "RE-FIN-012",
+  "RE-FIN-013",
+  "RE-FIN-014",
+  "RE-MATH-005",
+  "RE-MATH-008",
+  "RE-MATH-010",
+  "RE-MATH-012",
+  "RE-MATH-017"
+ ],
+ "overrides": {
+  "RE-OWN-003": {
+   "explanation": "Florida recognizes tenancy by the entireties for married couples: it carries survivorship and neither spouse can convey or encumber it alone. Under section 689.15, Florida Statutes, it becomes a tenancy in common on divorce, while a joint tenant can sever by conveying a share."
+  },
+  "RE-FIN-003": {
+   "question": "Florida is a lien-theory state. A borrower who signs a mortgage to finance a Florida home purchase:",
+   "explanation": "Section 697.02, Florida Statutes, makes a mortgage a specific lien on the property, not a conveyance of legal title, so the borrower (mortgagor) keeps legal title. In title-theory states the lender holds legal title until payoff, the tempting but wrong answer here."
+  },
+  "RE-DISC-016": {
+   "explanation": "Under Johnson v. Davis (Fla. 1985) a seller must disclose known facts that materially affect value and are not readily observable, and every Florida brokerage relationship includes that duty for residential property (section 475.278). Obedience never covers concealing a defect, and confidentiality protects things like the seller's motivation, not physical defects.",
+   "question": "A seller of a single-family home tells the listing agent the roof leaks in heavy rain but asks the agent not to mention it. The agent should:"
+  },
+  "RE-PROP-024": {
+   "question": "A Florida home has a taxable value of $240,000 after exemptions, and the total millage rate is 22 mills. What is the annual property tax?",
+   "explanation": "One mill is $0.001 per dollar of taxable value, so 22 mills = 0.022, and $240,000 x 0.022 = $5,280. In Florida, millage applies to taxable value, meaning assessed value minus exemptions such as homestead. The $52,800 answer treats 22 mills as 22 percent."
+  },
+  "RE-OWN-007": {
+   "explanation": "Words such as 'so long as' create a fee simple determinable, which ends automatically when the condition is broken, leaving the grantor a possibility of reverter. A fee simple subject to a condition subsequent ('but if') instead requires the grantor to exercise a right of reentry. In Florida, section 689.18 limits reverter provisions to 21 years, but that limit does not apply to conveyances to governmental or charitable grantees such as this town."
+  },
+  "RE-OWN-015": {
+   "question": "A roofer who was not paid for replacing a home's roof records a construction (mechanic's) lien against that home. The lien is:",
+   "explanation": "A construction lien attaches only to the property where the work was done, making it specific, and it arises by law without the owner's consent, making it involuntary. Florida's construction lien law is Chapter 713. A mortgage is a specific voluntary lien, while a judgment lien is general and involuntary."
+  },
+  "RE-PRAC-005": {
+   "question": "A Florida sales associate works as an independent contractor for a brokerage. Who is responsible for supervising the sales associate's real estate activities?",
+   "optionA": "The Florida Real Estate Commission",
+   "optionD": "The sales associate alone, as a contractor",
+   "explanation": "A sales associate may act only for the registered employing broker, who must supervise that sales associate's real estate activities. Independent contractor status is a tax classification and does not remove the broker's supervisory duty."
+  },
+  "RE-FIN-013": {
+   "question": "A title company offers a sales associate $200 for every buyer the sales associate refers to it. Under RESPA, accepting this payment is:",
+   "optionA": "Legal if paid through the associate's broker"
+  }
+ },
+ "excluded": {
+  "RE-CON-026": "Dual agency with consent: Florida bars disclosed and nondisclosed dual agency (s. 475.278(1)(a)); replaced by REFL-FLAGY-002 and the transition item.",
+  "RE-CON-027": "Generic designated agency: in Florida designated sales associates are allowed only in nonresidential deals with the asset test (s. 475.2755); covered by REFL-FLAGY-007.",
+  "RE-CON-028": "'In states that allow it' transaction broker: Florida presumes transaction brokerage; covered by REFL-FLAGY-001 and -003.",
+  "RE-CON-029": "MLS subagency and client/customer framing does not match Florida's transaction broker / single agent / no brokerage relationship model.",
+  "RE-CON-039": "Customer duties framed as seller's agent vs unrepresented buyer; Florida states these as no-brokerage-relationship duties (REFL-FLAGY-006).",
+  "RE-CON-040": "Open house disclosure timing 'varies by state': Florida exempts bona fide open houses and times the notices to showing or representation (s. 475.278(5)).",
+  "RE-CON-022": "Escrow dispute answer ('hold until agreement or court') omits Florida's mandatory FREC notice and settlement procedures (Rule 61J2-10.032); replaced by REFL-FLESC-003.",
+  "RE-CON-037": "Duplicate of RE-DISC-016 (same flooding basement scenario); kept DISC-016 with a Florida explanation.",
+  "RE-PRAC-002": "Earnest money timing 'varies by state': Florida sets end of next business day (Rule 61J2-14.009); replaced by REFL-FLESC-002.",
+  "RE-PRAC-009": "Net listing legality in Florida not verified in current statute or rule; left out rather than risk a wrong explanation.",
+  "RE-DISC-015": "'Requirements vary by state' seller disclosure item; Florida's answer is the Johnson v. Davis duty plus statutory summaries, covered by Florida items.",
+  "RE-DISC-018": "Stigmatized property 'disclosure rules vary': Florida s. 689.25 answers it (not a material fact); replaced by REFL-FLDIS-004.",
+  "RE-FIN-001": "Deed of trust with nonjudicial sale: Florida mortgages are foreclosed judicially in equity (s. 702.01); replaced by REFL-FLFIN-001.",
+  "RE-FIN-015": "Assumes the seller prepaid the year's taxes; Florida taxes are paid in arrears (November), so the item teaches the wrong default; replaced by REFL-FLMTH-004.",
+  "RE-MATH-006": "Assessment at 40% of market value; Florida assesses at just value (Art. VII, s. 4), so the setup misleads Florida candidates.",
+  "RE-MATH-015": "Proration with seller owning closing day and a 360-day year, the reverse of the Florida contract convention (buyer owns closing day) and the 365-day year used on the Florida exam; replaced by REFL-FLMTH-004.",
+  "RE-MATH-016": "Generic local transfer tax ($1.10 per $500); Florida uses documentary stamp tax at 70 cents per $100 (s. 201.02); replaced by REFL-FLMTH-001.",
+  "RE-OWN-004": "Community property state rule; Florida is not a community property state and the outline does not cover it.",
+  "RE-OWN-021": "Adverse possession with a 12-year statutory period; Florida's period is 7 years (ss. 95.16, 95.18); replaced by REFL-FLOWN-007.",
+  "RE-VAL-028": "Explains the gap as an assessment ratio; Florida assesses at just value, with homestead caps and exemptions explaining lower assessed values."
+ }
+}

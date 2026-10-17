@@ -1,0 +1,92 @@
+{
+ "include": [
+  "RE-CON-005",
+  "RE-CON-029",
+  "RE-CON-031",
+  "RE-CON-033",
+  "RE-CON-035",
+  "RE-CON-036",
+  "RE-DISC-001",
+  "RE-DISC-004",
+  "RE-DISC-009",
+  "RE-DISC-007",
+  "RE-FIN-003",
+  "RE-FIN-006",
+  "RE-FIN-007",
+  "RE-FIN-012",
+  "RE-FIN-015",
+  "RE-MATH-004",
+  "RE-MATH-006",
+  "RE-MATH-009",
+  "RE-MATH-016",
+  "RE-MATH-018",
+  "RE-OWN-001",
+  "RE-OWN-003",
+  "RE-OWN-005",
+  "RE-OWN-012",
+  "RE-OWN-015",
+  "RE-OWN-018",
+  "RE-OWN-019",
+  "RE-OWN-021",
+  "RE-PRAC-015",
+  "RE-PRAC-016",
+  "RE-PRAC-020",
+  "RE-PROP-021",
+  "RE-PROP-023",
+  "RE-PROP-026",
+  "RE-PROP-028",
+  "RE-VAL-003",
+  "RE-VAL-016",
+  "RE-VAL-025",
+  "RE-VAL-027"
+ ],
+ "overrides": {
+  "RE-OWN-003": {
+   "explanation": "Tenancy by the entirety is only for married couples and carries a survivorship right neither spouse can destroy alone, with no partition while the marriage lasts. One spouse may convey or mortgage his or her own interest, but the buyer takes subject to the other spouse's survivorship. Under EPTL 6-2.2 a conveyance to a married couple creates it unless the deed says otherwise.",
+   "question": "A married couple holds title so that neither spouse alone can sever the tenancy or force a partition, and the survivor takes the entire property. This is:"
+  },
+  "RE-OWN-021": {
+   "question": "A possessor openly occupies a fenced parcel for 6 years, then sells to a buyer who occupies it for 5 more. New York's statutory period is 10 years. The buyer:",
+   "optionA": "Must restart the 10-year period",
+   "optionD": "Has no claim, since 5 years is too short",
+   "explanation": "Successive adverse possessors in privity may tack their periods, so 6 + 5 = 11 years exceeds New York's 10-year period (CPLR 212), assuming the other elements of adverse possession are met. Prescription yields only a right of use, while exclusive occupancy like this supports title by adverse possession."
+  },
+  "RE-FIN-003": {
+   "question": "In New York, a lien-theory state, a borrower who signs a mortgage to finance a home purchase:",
+   "explanation": "A New York mortgage creates a lien, and the borrower (mortgagor) keeps legal title and the usual rights of ownership, as the DOS salesperson syllabus puts it. In title-theory states the lender holds legal title until the loan is repaid, which is the tempting but wrong answer here."
+  },
+  "RE-MATH-016": {
+   "question": "A house outside New York City sells for $347,500. The New York State transfer tax is $2 for each $500 of consideration. How much transfer tax is due?",
+   "optionA": "$6,950",
+   "optionB": "$695",
+   "optionC": "$1,390",
+   "optionD": "$139",
+   "explanation": "$347,500 / $500 = 695 units, and 695 x $2 = $1,390, paid by the seller as grantor under Tax Law section 1404. Counting $100 units (3,475) gives $6,950, and counting $1,000 units (347.5) gives $695."
+  },
+  "RE-VAL-027": {
+   "question": "A homeowner asks a listing salesperson for an appraisal to use in a $600,000 refinance with a federally regulated lender. The salesperson should explain that:"
+  },
+  "RE-VAL-025": {
+   "question": "An appraiser divides the sale prices of comparable small office buildings by their annual gross income from all sources (rent plus parking and other income) to estimate a subject's value. The factor derived is the:"
+  }
+ },
+ "excluded": {
+  "RE-CON-017": "Cites the Uniform Electronic Transactions Act; New York never adopted UETA (it has its own Electronic Signatures and Records Act), so the stem misstates NY law.",
+  "RE-CON-026": "Not wrong (NY allows dual agency with informed written consent), but superseded by the NY RPL 443 dual agency items RENY-NYAGY-005.",
+  "RE-CON-027": "Calls the arrangement 'designated agency'; under RPL 443 the broker is a dual agent and the salespeople are designated sales agents, so the keyed term is misleading in NY.",
+  "RE-CON-028": "Transaction brokerage / facilitator status is not an agency role recognized by RPL 443.",
+  "RE-CON-040": "Says disclosure timing 'varies by state'; NY fixes it at first substantive contact (RPL 443), covered by RENY-NYAGY-001.",
+  "RE-DISC-015": "Keys 'requirements vary by state'; in NY the Property Condition Disclosure Act form is mandatory with no credit opt-out since March 20, 2024 (RENY-NYDSC-001/002).",
+  "RE-DISC-018": "Not wrong, but NY has a specific rule (RPL 443-a), covered by RENY-NYDSC-005.",
+  "RE-FIN-001": "Deed of trust with nonjudicial trustee sale is not the New York home-loan instrument; NY uses mortgages foreclosed in court.",
+  "RE-OWN-004": "Community property; New York is not a community property state.",
+  "RE-OWN-020": "Special warranty deed; the NY syllabus uses bargain and sale deeds with or without covenants instead.",
+  "RE-PRAC-009": "Computes the broker's take under a net listing; net listings are prohibited in NY (19 NYCRR 175.19), covered by RENY-NYLIC-006.",
+  "RE-PRAC-002": "Says deposit deadlines vary by state; NY sets three business days (19 NYCRR 175.1), covered by RENY-NYLIC-007.",
+  "RE-PROP-017": "Rectangular (government) survey system is not used in New York and is not in the DOS syllabus.",
+  "RE-PROP-018": "Rectangular survey; not used in New York.",
+  "RE-PROP-019": "Rectangular survey; not used in New York.",
+  "RE-PROP-020": "Rectangular survey; not used in New York.",
+  "RE-MATH-003": "Quarter-section (rectangular survey) math; not used in New York."
+ }
+}

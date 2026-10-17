@@ -13,7 +13,7 @@
  * This file must stay free of question-data imports (the store imports it).
  */
 
-export type ExamId = "realestate-ca" | "realestate-nj" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "htl" | "cst" | "crcst";
+export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "htl" | "cst" | "crcst";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (?set=N). */
@@ -1088,6 +1088,169 @@ const realestateNJ: ExamConfig = {
   },
 };
 
+// Texas, Florida and New York come from tools/build_re_state_variant.py:
+// national items checked against state law (some excluded, some reworded)
+// plus state-law items, one full-length test. TX 4001, FL 4051, NY 4101.
+const realestateTX: ExamConfig = {
+  id: "realestate-tx",
+  variantOf: "realestate",
+  jurisdiction: { code: "TX", name: "Texas" },
+  stateCode: "REALESTATE_TX",
+  idBase: 4000,
+  slug: "/real-estate/tx",
+  landingPath: "/real-estate-practice-test",
+  name: "Texas Real Estate Practice Test",
+  shortName: "TX Real Estate",
+  examLabel: "Texas Sales Agent",
+  fullName: "Texas real estate sales agent exam",
+  questionIdPrefix: "RETX-",
+  icon: "house",
+  testCount: 1,
+  questionsPerTest: 120,
+  passPct: 70,
+  // 80 national and 40 Texas items, the scored counts in the Pearson VUE Texas
+  // candidate handbook (Sept 2026; state outline effective Jan 1, 2026).
+  blueprint: {
+    rePropertyCharacteristics: 11,
+    reOwnershipTitle: 13,
+    reValuation: 11,
+    reContractsAgency: 33,
+    rePractice: 25,
+    reDisclosures: 13,
+    reFinancing: 7,
+    reMath: 7,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 4001, name: "Property, Ownership & Title", categories: ["rePropertyCharacteristics", "reOwnershipTitle"], size: 24, weightLabel: "20% of the practice exam" },
+    { setNumber: 2, id: 4002, name: "Contracts & Agency", categories: ["reContractsAgency"], size: 33, weightLabel: "28% of the practice exam" },
+    { setNumber: 3, id: 4003, name: "Practice & Disclosures", categories: ["rePractice", "reDisclosures"], size: 38, weightLabel: "32% of the practice exam" },
+    { setNumber: 4, id: 4004, name: "Valuation, Financing & Math", categories: ["reValuation", "reFinancing", "reMath"], size: 25, weightLabel: "21% of the practice exam" },
+  ],
+  categoryLabels: realestate.categoryLabels,
+  copy: {
+    guestPrompt: "to save your Texas real estate progress and track every question you miss",
+    trainingHeading: "Train by content area",
+    trainingSub: "Four sets with 120 source-checked questions for Texas, national and Texas law. Missed questions come back until you master them.",
+    testsHeading: "Full-length practice exam \u00b7 120 questions, 80 national and 40 Texas",
+    heroSubs: [
+      "National topics plus Texas rules.",
+      "Master each set, then take the full exam.",
+      "Halfway there. Try the full test.",
+      "Fix the misses, then retake. 70% passes each part.",
+      "All done. Go schedule your Pearson VUE exam.",
+    ],
+    sourceLine: "Source-checked practice on the Pearson VUE Texas outlines (national Mar 2025, state Jan 2026). Not affiliated with TREC or Pearson VUE; confirm rules in official TREC materials.",
+    analyticsKey: "realestate",
+  },
+};
+
+const realestateFL: ExamConfig = {
+  id: "realestate-fl",
+  variantOf: "realestate",
+  jurisdiction: { code: "FL", name: "Florida" },
+  stateCode: "REALESTATE_FL",
+  idBase: 4050,
+  slug: "/real-estate/fl",
+  landingPath: "/real-estate-practice-test",
+  name: "Florida Real Estate Practice Test",
+  shortName: "FL Real Estate",
+  examLabel: "Florida Sales Associate",
+  fullName: "Florida real estate sales associate exam",
+  questionIdPrefix: "REFL-",
+  icon: "house",
+  testCount: 1,
+  questionsPerTest: 100,
+  passPct: 75,
+  // 100 items like the real exam: 52 principles and 48 Florida law items,
+  // mapped from the 19 areas in the DBPR candidate booklet (Jan 2025).
+  blueprint: {
+    rePropertyCharacteristics: 11,
+    reOwnershipTitle: 14,
+    reValuation: 10,
+    reContractsAgency: 16,
+    rePractice: 22,
+    reDisclosures: 6,
+    reFinancing: 12,
+    reMath: 9,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 4051, name: "Property, Ownership & Title", categories: ["rePropertyCharacteristics", "reOwnershipTitle"], size: 25, weightLabel: "25% of the practice exam" },
+    { setNumber: 2, id: 4052, name: "Contracts & Agency", categories: ["reContractsAgency"], size: 16, weightLabel: "16% of the practice exam" },
+    { setNumber: 3, id: 4053, name: "Practice & Disclosures", categories: ["rePractice", "reDisclosures"], size: 28, weightLabel: "28% of the practice exam" },
+    { setNumber: 4, id: 4054, name: "Valuation, Financing & Math", categories: ["reValuation", "reFinancing", "reMath"], size: 31, weightLabel: "31% of the practice exam" },
+  ],
+  categoryLabels: realestate.categoryLabels,
+  copy: {
+    guestPrompt: "to save your Florida real estate progress and track every question you miss",
+    trainingHeading: "Train by content area",
+    trainingSub: "Four sets with 100 source-checked questions for Florida, including Chapter 475 and FREC rules. Missed questions come back until you master them.",
+    testsHeading: "Full-length practice exam \u00b7 100 questions weighted to the DBPR outline",
+    heroSubs: [
+      "Principles plus Florida law and math.",
+      "Master each set, then take the full exam.",
+      "Halfway there. Try the full test.",
+      "Fix the misses, then retake. 75% passes.",
+      "All done. Go schedule your Pearson VUE exam.",
+    ],
+    sourceLine: "Source-checked practice on the DBPR sales associate outline (candidate booklet Jan 2025). Not affiliated with DBPR, FREC or Pearson VUE; confirm rules in official materials.",
+    analyticsKey: "realestate",
+  },
+};
+
+const realestateNY: ExamConfig = {
+  id: "realestate-ny",
+  variantOf: "realestate",
+  jurisdiction: { code: "NY", name: "New York" },
+  stateCode: "REALESTATE_NY",
+  idBase: 4100,
+  slug: "/real-estate/ny",
+  landingPath: "/real-estate-practice-test",
+  name: "New York Real Estate Practice Test",
+  shortName: "NY Real Estate",
+  examLabel: "New York Salesperson",
+  fullName: "New York real estate salesperson exam",
+  questionIdPrefix: "RENY-",
+  icon: "house",
+  testCount: 1,
+  questionsPerTest: 75,
+  passPct: 70,
+  // 75 items weighted by the hours of the DOS 77-hour qualifying course (19
+  // NYCRR 176.3, eff. Dec 2022). DOS does not publish the count or pass mark;
+  // 75 and 70% are the figures course providers report.
+  blueprint: {
+    rePropertyCharacteristics: 6,
+    reOwnershipTitle: 11,
+    reValuation: 6,
+    reContractsAgency: 14,
+    rePractice: 15,
+    reDisclosures: 11,
+    reFinancing: 7,
+    reMath: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 4101, name: "Property, Ownership & Title", categories: ["rePropertyCharacteristics", "reOwnershipTitle"], size: 17, weightLabel: "23% of the practice exam" },
+    { setNumber: 2, id: 4102, name: "Contracts & Agency", categories: ["reContractsAgency"], size: 14, weightLabel: "19% of the practice exam" },
+    { setNumber: 3, id: 4103, name: "Practice & Disclosures", categories: ["rePractice", "reDisclosures"], size: 26, weightLabel: "35% of the practice exam" },
+    { setNumber: 4, id: 4104, name: "Valuation, Financing & Math", categories: ["reValuation", "reFinancing", "reMath"], size: 18, weightLabel: "24% of the practice exam" },
+  ],
+  categoryLabels: realestate.categoryLabels,
+  copy: {
+    guestPrompt: "to save your New York real estate progress and track every question you miss",
+    trainingHeading: "Train by content area",
+    trainingSub: "Four sets with 75 source-checked questions for New York, including license law, agency disclosure and the Human Rights Law. Missed questions come back until you master them.",
+    testsHeading: "Full-length practice exam \u00b7 75 questions weighted to the 77-hour course",
+    heroSubs: [
+      "National topics plus New York rules.",
+      "Master each set, then take the full exam.",
+      "Halfway there. Try the full test.",
+      "Fix the misses, then retake. Aim for 70%.",
+      "All done. Go schedule your DOS exam.",
+    ],
+    sourceLine: "Source-checked practice weighted to the NY DOS 77-hour salesperson course. Not affiliated with NY DOS; confirm rules in official DOS materials.",
+    analyticsKey: "realestate",
+  },
+};
+
 const insurance: ExamConfig = {
   id: "insurance",
   stateCode: "LIFEHEALTH",
@@ -1954,7 +2117,7 @@ const crcst: ExamConfig = {
 export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, cet, danb, foodmgr, realestate, insurance, notary, foodhandler, boating, hunter, cpr, osha, forklift, alcohol, security, lifeguard, pnc, htl, cst, crcst];
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */
-export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ];
+export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ, realestateTX, realestateFL, realestateNY];
 /** Every exam the store and app routes resolve, variants first. */
 export const ALL_EXAMS: ExamConfig[] = [...EXAM_VARIANTS, ...EXAMS];
 

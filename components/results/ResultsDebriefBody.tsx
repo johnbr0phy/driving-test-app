@@ -3,10 +3,11 @@
 import { Fragment, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { Check, ChevronRight, Cloud, Lock } from "lucide-react";
+import { Check, ChevronRight, Lock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { PaywallModal } from "@/components/PaywallModal";
+import { GuestSaveCard } from "@/components/GuestSaveCard";
 import { QuizRow } from "@/components/QuizRow";
 import { QuestionImage } from "@/components/QuestionImage";
 import { getSignIdForQuestion } from "@/lib/signImages";
@@ -346,26 +347,7 @@ export function ResultsDebriefBody({ results, upgrade }: Props) {
 
       {/* ── Guest save banner — after they've seen what they'd lose ── */}
       {isGuest && (
-        <Card className="bg-gradient-to-r from-brand-light to-brand-gradient-to border-brand-border-light">
-          <CardContent className="py-6">
-            <div className="flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
-              <div className="w-12 h-12 bg-brand-light rounded-full flex items-center justify-center shrink-0">
-                <Cloud className="w-6 h-6 text-brand-dark" />
-              </div>
-              <div className="flex-1">
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-50 mb-1">
-                  {t("results.saveYourProgress")}
-                </h3>
-                <p className="text-gray-600 dark:text-gray-300 text-sm">{t("results.scoreOnlyOnDevice")}</p>
-              </div>
-              <Button asChild className="bg-brand text-white hover:bg-brand-hover whitespace-nowrap">
-                <Link href={routes.signup}>
-                  {t("results.signUpFree")}
-                </Link>
-              </Button>
-            </div>
-          </CardContent>
-        </Card>
+        <GuestSaveCard signupHref={routes.signup} score={{ score, total: totalQuestions }} />
       )}
 
       {/* Full total for orientation, without verdict framing */}

@@ -4,6 +4,7 @@ import { useEffect, useState, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { PaywallModal } from "@/components/PaywallModal";
 import { SuperAmazingCard } from "@/components/SuperAmazingCard";
+import { GuestSaveCard, v1GuestCounts } from "@/components/GuestSaveCard";
 import { Card, CardContent } from "@/components/ui/card";
 import { ChevronRight, CheckCircle, Lock } from "lucide-react";
 import Link from "next/link";
@@ -38,6 +39,7 @@ function DashboardContent() {
   const isOnboardingComplete = useStore((state) => state.isOnboardingComplete);
   const completeTest = useStore((state) => state.completeTest);
   const completedTests = useStore((state) => state.completedTests);
+  const trainingAnswerHistory = useStore((state) => state.trainingAnswerHistory);
 
   // Per-question miss aggregation across all attempts (for the test drop-downs)
   const missSummary = computeMissSummary(hydrated ? completedTests : [], selectedState);
@@ -347,21 +349,11 @@ function DashboardContent() {
 
         {/* Sign-up prompt for guests */}
         {isGuest && (
-          <Card className="mb-4 bg-gradient-to-r from-brand-light to-brand-gradient-to border-brand-border-light">
-            <CardContent className="p-4">
-              <div className="flex items-center gap-3">
-                <div className="text-2xl">📊</div>
-                <div className="flex-1">
-                  <p className="text-sm text-gray-700 dark:text-gray-200">
-                    <span className="font-bold">{t("common.signUp")}</span> {t("dashboard.signUpPrompt")}
-                  </p>
-                  <Link href="/signup" className="text-xs text-brand-dark hover:text-brand-darker font-medium mt-1 inline-block">
-                    {t("dashboard.createFreeAccount")}
-                  </Link>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+          <GuestSaveCard
+            className="mb-4"
+            signupHref="/signup"
+            {...v1GuestCounts(selectedState, completedTests, trainingAnswerHistory)}
+          />
         )}
 
         {/* Hero section - card with progress */}

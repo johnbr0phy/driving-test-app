@@ -621,9 +621,6 @@ export const vi: TranslationKeys = {
     submitTest: "Nộp bài thi",
     progressOverview: "Tổng quan tiến độ",
     selectAnswerToAdvance: "Chọn câu trả lời của bạn để tự động chuyển sang câu hỏi tiếp theo",
-    superAmazing: "Chế độ siêu tuyệt vời",
-    superAmazingHint: "Pháo giấy và cổ vũ sau mỗi câu trả lời. Điểm của bạn được giữ bí mật đến cuối.",
-    superAmazingHype: "Chốt!|Bùm!|Không thể cản!|Tiếp tục nào!|Huyền thoại!|Quá đỉnh!",
   },
 
   // Results page

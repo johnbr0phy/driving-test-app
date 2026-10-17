@@ -621,9 +621,6 @@ export const es: TranslationKeys = {
     submitTest: "Enviar examen",
     progressOverview: "Resumen del progreso",
     selectAnswerToAdvance: "Selecciona tu respuesta para avanzar automáticamente a la siguiente pregunta",
-    superAmazing: "Modo súper increíble",
-    superAmazingHint: "Confeti y ánimo en cada respuesta. Tu puntaje sigue en secreto hasta el final.",
-    superAmazingHype: "¡Listo!|¡Bum!|¡Imparable!|¡Sigue así!|¡Leyenda!|¡Que nivel!",
   },
 
   // Results page

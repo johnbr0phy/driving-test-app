@@ -18,7 +18,6 @@ import { QuestionView } from "./QuestionView";
 import { Timer, formatClock } from "./Timer";
 import { Calculator } from "./Calculator";
 import { RichText } from "./RichText";
-import { SuperAmazingBurst, SuperAmazingToggle } from "@/components/SuperAmazingMode";
 
 /**
  * Full-length exam simulation: section intro, timed module, review screen,
@@ -43,7 +42,6 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
   const [tool, setTool] = useState<"none" | "calc" | "ref" | "palette">("none");
   const [eliminator, setEliminator] = useState(false);
   const [confirm, setConfirm] = useState<"submit" | "exit" | null>(null);
-  const [answerCount, setAnswerCount] = useState(0);
 
   // Create the session on first visit.
   useEffect(() => {
@@ -154,8 +152,6 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
 
   function setAnswer(value: AnswerValue) {
     if (!question) return;
-    // Celebrate taps, not keystrokes: numeric and multi-part answers count once, when first filled in.
-    if (question.format === "single" || question.format === "multi" || !isAnswered(stage!.answers[question.id])) setAnswerCount((n) => n + 1);
     updateStage((st) => ({ ...st, answers: { ...st.answers, [question.id]: value } }));
   }
 
@@ -375,10 +371,8 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
             eliminatorOn={eliminator}
             layout="split"
           />
-          <SuperAmazingToggle className="mx-auto mt-8 max-w-3xl" />
         </div>
       </div>
-      <SuperAmazingBurst trigger={answerCount} />
       <BottomBar>
         {linear ? (
           <>

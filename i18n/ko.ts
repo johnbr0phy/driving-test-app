@@ -623,9 +623,6 @@ export const ko: TranslationKeys = {
     submitTest: "시험 제출",
     progressOverview: "진행 상황",
     selectAnswerToAdvance: "답을 선택하면 다음 문제로 자동으로 넘어갑니다",
-    superAmazing: "슈퍼 어메이징 모드",
-    superAmazingHint: "답할 때마다 축하 효과가 나와요. 점수는 끝날 때까지 비밀이에요.",
-    superAmazingHype: "결정!|쾅!|멈출 수 없어!|계속 가자!|전설!|불타오른다!",
   },
 
   // Results page

@@ -3,7 +3,6 @@
 import { useState, useEffect, useRef } from "react";
 import { useParams, useRouter } from "next/navigation";
 import { QuestionCard } from "@/components/QuestionCard";
-import { SuperAmazingBurst, SuperAmazingToggle } from "@/components/SuperAmazingMode";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Link from "next/link";
@@ -86,7 +85,6 @@ export default function TestPage() {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [answers, setAnswers] = useState<{ [key: number]: string }>({});
   const [loading, setLoading] = useState(true);
-  const [answerCount, setAnswerCount] = useState(0);
 
   // Reset when test changes
   useEffect(() => {
@@ -155,7 +153,6 @@ export default function TestPage() {
 
     const updatedAnswers = { ...answers, [currentQuestionIndex]: answer };
     setAnswers(updatedAnswers);
-    setAnswerCount((n) => n + 1);
     // Save to store
     setAnswer(testId, currentQuestionIndex, answer);
 
@@ -285,9 +282,6 @@ export default function TestPage() {
             {t("testPage.selectAnswerToAdvance")}
           </div>
         </div>
-
-        <SuperAmazingToggle className="mt-8" />
-        <SuperAmazingBurst trigger={answerCount} />
       </div>
 
       <PaywallModal

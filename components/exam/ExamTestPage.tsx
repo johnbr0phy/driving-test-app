@@ -7,7 +7,6 @@ import { useState, useEffect, useRef } from "react";
 import { useParams, useRouter } from "next/navigation";
 import Link from "next/link";
 import { QuestionCard } from "@/components/QuestionCard";
-import { SuperAmazingBurst, SuperAmazingToggle } from "@/components/SuperAmazingMode";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { TestPageHeader } from "@/components/TestPageHeader";
@@ -39,7 +38,6 @@ export function ExamTestPage({ exam }: { exam: ExamConfig }) {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [answers, setAnswers] = useState<{ [key: number]: string }>({});
   const [loading, setLoading] = useState(true);
-  const [answerCount, setAnswerCount] = useState(0);
 
   // Reset when test changes
   useEffect(() => {
@@ -92,7 +90,6 @@ export function ExamTestPage({ exam }: { exam: ExamConfig }) {
 
     const updatedAnswers = { ...answers, [currentQuestionIndex]: answer };
     setAnswers(updatedAnswers);
-    setAnswerCount((n) => n + 1);
     setAnswer(testId, currentQuestionIndex, answer);
 
     // Auto-advance; the last answer auto-submits
@@ -189,9 +186,6 @@ export function ExamTestPage({ exam }: { exam: ExamConfig }) {
             {t("testPage.selectAnswerToAdvance")}
           </div>
         </div>
-
-        <SuperAmazingToggle className="mt-8" />
-        <SuperAmazingBurst trigger={answerCount} />
       </div>
     </div>
   );

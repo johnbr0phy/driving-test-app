@@ -8,9 +8,13 @@ import { useTranslation } from "@/contexts/LanguageContext";
 interface WebViewGoogleWarningProps {
   onGoogleSignIn: () => void;
   disabled?: boolean;
+  /** Button text; defaults to "Continue with Google". */
+  label?: React.ReactNode;
+  /** Extra classes for the button (size, height). */
+  className?: string;
 }
 
-export function WebViewGoogleWarning({ onGoogleSignIn, disabled }: WebViewGoogleWarningProps) {
+export function WebViewGoogleWarning({ onGoogleSignIn, disabled, label, className = "" }: WebViewGoogleWarningProps) {
   const { t } = useTranslation();
   const [isWebView, setIsWebView] = useState(false);
   const [showWarning, setShowWarning] = useState(false);
@@ -51,7 +55,7 @@ export function WebViewGoogleWarning({ onGoogleSignIn, disabled }: WebViewGoogle
       {/* Google Sign-In Button */}
       <Button
         type="button"
-        className="w-full bg-white dark:bg-gray-900 text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 border-2 border-gray-300 dark:border-gray-700"
+        className={`w-full bg-white dark:bg-gray-900 text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 border-2 border-gray-300 dark:border-gray-700 ${className}`}
         onClick={handleGoogleClick}
         disabled={disabled}
       >
@@ -73,7 +77,7 @@ export function WebViewGoogleWarning({ onGoogleSignIn, disabled }: WebViewGoogle
             d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
           />
         </svg>
-        {t("common.continueWithGoogle")}
+        {label ?? t("common.continueWithGoogle")}
       </Button>
 
       {/* WebView Warning Modal */}

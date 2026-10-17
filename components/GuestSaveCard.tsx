@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Check, Cloud } from "lucide-react";
+import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { WebViewGoogleWarning } from "@/components/WebViewGoogleWarning";
 import { useAuth } from "@/contexts/AuthContext";
@@ -81,47 +81,59 @@ export function GuestSaveCard({ signupHref, answered = 0, tests = 0, score, data
     }
   };
 
-  const benefits = [t("guestSave.benefitDevices"), t("guestSave.benefitSafe"), t("guestSave.benefitMisses")];
+  const benefits = [t("guestSave.benefitSafe"), t("guestSave.benefitMisses")];
 
   return (
     <div
       data-theme={dataTheme}
-      className={`rounded-xl border border-brand-border-light bg-gradient-to-r from-brand-light to-brand-gradient-to p-4 sm:p-5 ${className}`}
+      className={`rounded-xl border border-brand-border-light bg-gradient-to-r from-brand-light to-brand-gradient-to p-3 sm:p-4 ${className}`}
     >
-      <div className="flex items-start gap-3">
-        <div className="w-10 h-10 rounded-full bg-white/80 dark:bg-gray-900/60 flex items-center justify-center shrink-0">
-          <Cloud className="w-5 h-5 text-brand-dark" />
-        </div>
-        <div className="flex-1 min-w-0">
-          <p className="font-semibold text-gray-900 dark:text-gray-50 leading-snug">{title}</p>
-          <p className="text-sm text-gray-600 dark:text-gray-300 mt-0.5">{t("guestSave.sub")}</p>
-          <ul className="mt-2 grid gap-1 sm:grid-cols-3 sm:gap-3">
-            {benefits.map((b) => (
-              <li key={b} className="flex items-start gap-1.5 text-xs text-gray-700 dark:text-gray-200">
-                <Check className="w-3.5 h-3.5 text-green-600 shrink-0 mt-0.5" />
-                {b}
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
+      <p className="text-sm sm:text-base font-semibold text-gray-900 dark:text-gray-50 leading-snug">{title}</p>
+      <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-300 mt-0.5">{t("guestSave.sub")}</p>
+      {/* Phone stays to title, one line and two buttons; the extras are desktop only. */}
+      <ul className="hidden sm:flex flex-wrap gap-x-4 gap-y-1 mt-2">
+        {benefits.map((b) => (
+          <li key={b} className="flex items-center gap-1.5 text-xs text-gray-700 dark:text-gray-200">
+            <Check className="w-3.5 h-3.5 text-green-600 shrink-0" />
+            {b}
+          </li>
+        ))}
+      </ul>
 
-      <div className="mt-4 flex flex-col sm:flex-row gap-2">
+      <div className="mt-3 flex gap-2">
         {/* Hidden in the native app, like the signup page (Google blocks
             OAuth in WebViews; offering it on iOS would need Apple sign-in). */}
         {!isNative && (
-          <div className="sm:flex-1">
-            <WebViewGoogleWarning onGoogleSignIn={handleGoogle} disabled={busy} />
+          <div className="flex-1 min-w-0">
+            <WebViewGoogleWarning
+              onGoogleSignIn={handleGoogle}
+              disabled={busy}
+              className="h-9 border"
+              label={
+                <>
+                  <span className="sm:hidden">Google</span>
+                  <span className="hidden sm:inline">{t("common.continueWithGoogle")}</span>
+                </>
+              }
+            />
           </div>
         )}
-        <Button asChild className="sm:flex-1 bg-brand text-white hover:bg-brand-hover">
-          <Link href={signupHref}>{isNative ? t("guestSave.createCta") : t("guestSave.emailCta")}</Link>
+        <Button asChild className="flex-1 h-9 bg-brand text-white hover:bg-brand-hover">
+          <Link href={signupHref}>
+            {isNative ? (
+              t("guestSave.createCta")
+            ) : (
+              <>
+                <span className="sm:hidden">{t("guestSave.emailShort")}</span>
+                <span className="hidden sm:inline">{t("guestSave.emailCta")}</span>
+              </>
+            )}
+          </Link>
         </Button>
       </div>
       {error && (
         <p role="alert" className="mt-2 text-xs text-red-700 dark:text-red-300">{t("guestSave.googleFailed")}</p>
       )}
-      <p className="mt-2 text-center text-xs text-gray-500 dark:text-gray-400">{t("guestSave.free")}</p>
     </div>
   );
 }

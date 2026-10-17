@@ -4,6 +4,11 @@
 // continuous fireworks behind the UI on every page except the marketing
 // homepage. Toggled from the dashboard card, which dispatches
 // "super-amazing-mode" so this reacts in the same tab.
+//
+// Layering: the fireworks layer paints the page background colour itself and
+// sits at z-0; while it runs, `sam-on` on <html> makes the page wrapper
+// transparent and lifts header, main and footer above it (globals.css), so
+// the show is visible only between cards, never over the UI or site chrome.
 
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
@@ -28,7 +33,18 @@ export function SuperAmazingFireworks() {
   }, []);
 
   const isMarketingHome = pathname === "/" || pathname === "/es";
-  if (!enabled || isMarketingHome) return null;
+  const on = enabled && !isMarketingHome;
 
-  return <Fireworks continuous className="fixed inset-0 z-0 pointer-events-none" />;
+  useEffect(() => {
+    document.documentElement.classList.toggle("sam-on", on);
+    return () => document.documentElement.classList.remove("sam-on");
+  }, [on]);
+
+  if (!on) return null;
+
+  return (
+    <div className="sam-bg fixed inset-0 z-0 pointer-events-none" aria-hidden>
+      <Fireworks continuous className="absolute inset-0 pointer-events-none" />
+    </div>
+  );
 }

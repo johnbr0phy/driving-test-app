@@ -1218,3 +1218,20 @@ html.native-app body {
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
 }
+
+/* Super Amazing Mode layering (components/SuperAmazingFireworks.tsx).
+   The fireworks layer (.sam-bg, fixed, z-0) carries the page background; the
+   page wrapper goes transparent and the site chrome and page sit above it, so
+   fireworks show only in the gaps between cards. A page whose wrapper is not
+   matched here simply keeps its own background and shows no fireworks. */
+html.sam-on .sam-bg { background-color: #f9fafb; }
+html.sam-on:has(main > .flex-1.bg-white, main > * > .flex-1.bg-white) .sam-bg { background-color: #fff; }
+html.dark.sam-on .sam-bg { background-color: #030712; }
+html.dark.sam-on:has(main > .flex-1.bg-white, main > * > .flex-1.bg-white) .sam-bg { background-color: #111827; }
+html.sam-on main > :is(.flex-1.bg-gray-50, .flex-1.bg-white, .v2-shell),
+html.sam-on main > * > :is(.flex-1.bg-gray-50, .flex-1.bg-white, .v2-shell) {
+  background-color: transparent !important;
+}
+html.sam-on main { position: relative; z-index: 2; }
+html.sam-on header:not(main header):not(.sticky),
+html.sam-on footer:not(main footer) { position: relative; z-index: 1; }

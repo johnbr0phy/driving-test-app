@@ -44,7 +44,7 @@ export async function GET(req: NextRequest) {
     const users = await getEligibleUsers(authMap, INCLUDE_LEGACY);
 
     const eligible = users.filter((u) => {
-      if (u.examId !== "dmv") return false;                  // the 8/8 latch is DMV-only
+      if (u.examId !== "dmv") return false;                  // the copy is DMV-only (any all-green dashboard unlocks it)
       if (u.emailsSent.includes(EMAIL_KEY)) return false;
       if (emailedRecently(u, now, GAP_MS)) return false;
       if (!u.superAmazingUnlockedAt) return false;

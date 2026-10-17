@@ -210,7 +210,7 @@ export const vi: TranslationKeys = {
     continueTest: "Tiếp tục bài thi (đã trả lời {{n}}/50)",
     drillTip: "Chỉ ôn {{n}} câu bạn làm sai là cách nhanh nhất để vượt qua mức {{pct}}%",
     chartPassLine: "80% để đậu",
-    samUnlockLabel: "Hoàn thành 8/8 để mở khóa:",
+    samUnlockLabel: "Hoàn thành {{n}}/{{n}} để mở khóa:",
     samUnlockedLabel: "Đã mở khóa:",
     samTitle: "Chế Độ Siêu Tuyệt Vời",
     trainingNudge0: "Bạn đã chinh phục phần luyện tập. Thử một bài thi thử đi. Nó giống kỳ thi thật nhất đấy.",

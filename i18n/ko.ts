@@ -212,7 +212,7 @@ export const ko: TranslationKeys = {
     continueTest: "시험 이어서 하기 ({{n}}/50 완료)",
     drillTip: "틀린 {{n}}문제만 집중 연습하는 게 {{pct}}%를 넘는 가장 빠른 길이에요",
     chartPassLine: "합격선 80%",
-    samUnlockLabel: "8/8을 완료하면 잠금 해제:",
+    samUnlockLabel: "{{n}}/{{n}}을 완료하면 잠금 해제:",
     samUnlockedLabel: "잠금 해제됨:",
     samTitle: "슈퍼 어메이징 모드",
     trainingNudge0: "학습을 완벽하게 마치셨네요. 모의고사에 도전해 보세요. 실제 시험과 가장 비슷합니다.",

@@ -1,5 +1,6 @@
 "use client";
 
+import { runQuestionsBackfill } from "@/lib/questionsBackfillClient";
 import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { useAuth } from "@/contexts/AuthContext";
@@ -227,12 +228,7 @@ export default function AdminPage() {
     backfillTriggered.current = true;
     (async () => {
       try {
-        const idToken = await user.getIdToken();
-        const res = await fetch("/api/admin/backfill-questions", {
-          method: "POST",
-          headers: { Authorization: `Bearer ${idToken}` },
-        });
-        if (res.ok) fetchUsers(true);
+        if (await runQuestionsBackfill(() => user.getIdToken())) fetchUsers(true);
       } catch (err) {
         console.error("Questions backfill failed:", err);
       }

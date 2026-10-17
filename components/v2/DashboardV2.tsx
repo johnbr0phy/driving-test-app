@@ -308,7 +308,7 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
           </div>
 
           <div className="mt-6">
-            <SuperAmazingCard allComplete={totalSteps > 0 && doneSteps === totalSteps} totalSteps={totalSteps} />
+            <SuperAmazingCard dashboardKey={`v2:${exam.id}`} allComplete={totalSteps > 0 && doneSteps === totalSteps} totalSteps={totalSteps} />
           </div>
 
           <p className="mt-6 text-center text-[11px] text-gray-500 dark:text-gray-400">{exam.copy.sourceLine}</p>

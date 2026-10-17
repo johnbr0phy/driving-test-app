@@ -364,7 +364,7 @@ export function ExamDashboard({ exam }: { exam: ExamConfig }) {
         )}
 
         <div className="mt-6">
-          <SuperAmazingCard allComplete={completedSteps === totalSteps} totalSteps={totalSteps} />
+          <SuperAmazingCard dashboardKey={exam.id} allComplete={completedSteps === totalSteps} totalSteps={totalSteps} />
         </div>
 
         <p className="mt-6 text-center text-[11px] text-gray-500 dark:text-gray-400">

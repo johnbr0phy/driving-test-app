@@ -1,9 +1,10 @@
 "use client";
 
 // Super Amazing Mode card for the bottom of every dashboard (DMV, registry
-// exams, v2 exams). Turning one dashboard all green earns it: the achievement
-// is one site-wide latch (superAmazingUnlockedAt) because the fireworks
-// themselves are site-wide (SuperAmazingFireworks in the root layout).
+// exams, v2 exams). Each dashboard unlocks its own switch by going all green
+// (superAmazingUnlocks[dashboardKey]); the fireworks themselves are site-wide
+// (SuperAmazingFireworks in the root layout), so a switch flipped on one
+// earned dashboard keeps them running everywhere.
 // Free and premium alike earn it the same way. The localStorage flag drives
 // the fireworks; the store copy syncs the toggle to Firestore so adoption is
 // visible in the admin dashboard.
@@ -16,14 +17,14 @@ import { useAuth } from "@/contexts/AuthContext";
 import { useHydration } from "@/hooks/useHydration";
 import { useTranslation } from "@/contexts/LanguageContext";
 
-export function SuperAmazingCard({ allComplete, totalSteps }: { allComplete: boolean; totalSteps: number }) {
+export function SuperAmazingCard({ dashboardKey, allComplete, totalSteps }: { dashboardKey: string; allComplete: boolean; totalSteps: number }) {
   const { t } = useTranslation();
   const hydrated = useHydration();
   const { user } = useAuth();
   const firestoreLoaded = useStore((state) => state.firestoreLoaded);
   const superAmazingSync = useStore((state) => state.superAmazing);
   const setSuperAmazingEnabled = useStore((state) => state.setSuperAmazingEnabled);
-  const superAmazingUnlockedAt = useStore((state) => state.superAmazingUnlockedAt);
+  const superAmazingUnlocks = useStore((state) => state.superAmazingUnlocks);
   const unlockSuperAmazing = useStore((state) => state.unlockSuperAmazing);
   const [superAmazing, setSuperAmazing] = useState(false);
 
@@ -45,34 +46,38 @@ export function SuperAmazingCard({ allComplete, totalSteps }: { allComplete: boo
 
   // Once earned, always earned. Current progress can dip below all green when
   // someone retakes a test or retrains a set; the reward does not dip with it.
-  const samUnlocked = hydrated && !!superAmazingUnlockedAt;
+  // samUnlocked: this dashboard has been all green. earnedAnywhere: some
+  // dashboard has, which is what keeps the fireworks flag alive.
+  const unlocks = superAmazingUnlocks ?? {};
+  const samUnlocked = hydrated && !!unlocks[dashboardKey];
+  const earnedAnywhere = hydrated && Object.keys(unlocks).length > 0;
 
   // An all-green dashboard latches the achievement in the store (and
   // Firestore) and switches the fireworks on so the reward is immediate. Wait
   // for Firestore on signed-in users so a not-yet-loaded remote doc can't hide
   // an existing latch or record one against stale local progress.
   useEffect(() => {
-    if (!hydrated || !allComplete || superAmazingUnlockedAt) return;
+    if (!hydrated || !allComplete || samUnlocked) return;
     if (user && !firestoreLoaded) return;
-    unlockSuperAmazing();
+    unlockSuperAmazing(dashboardKey);
     setLocalFlag(true);
-  }, [hydrated, allComplete, superAmazingUnlockedAt, user, firestoreLoaded, unlockSuperAmazing, setLocalFlag]);
+  }, [hydrated, allComplete, samUnlocked, dashboardKey, user, firestoreLoaded, unlockSuperAmazing, setLocalFlag]);
 
   // Retire a stale local fireworks flag only for someone who has never earned
-  // the achievement (e.g. leftover from a previous account on this device).
+  // it on any dashboard (e.g. leftover from a previous account on this device).
   useEffect(() => {
-    if (!hydrated || samUnlocked) return;
+    if (!hydrated || earnedAnywhere) return;
     if (user && !firestoreLoaded) return;
     if (localStorage.getItem(SUPER_AMAZING_KEY) === "1") setLocalFlag(false);
     if (superAmazingSync.enabled) setSuperAmazingEnabled(false);
-  }, [hydrated, samUnlocked, user, firestoreLoaded, superAmazingSync.enabled, setSuperAmazingEnabled, setLocalFlag]);
+  }, [hydrated, earnedAnywhere, user, firestoreLoaded, superAmazingSync.enabled, setSuperAmazingEnabled, setLocalFlag]);
 
   // Reconcile the synced flag with this device once the achievement is known:
   // pull a remote-enabled toggle down to localStorage (cross-device), and push
   // a pre-sync local-only flag up once (only before any recorded toggle, so a
   // deliberate turn-off on another device isn't resurrected).
   useEffect(() => {
-    if (!hydrated || !samUnlocked) return;
+    if (!hydrated || !earnedAnywhere) return;
     if (user && !firestoreLoaded) return;
     const local = localStorage.getItem(SUPER_AMAZING_KEY) === "1";
     if (superAmazingSync.enabled && !local) {
@@ -80,7 +85,7 @@ export function SuperAmazingCard({ allComplete, totalSteps }: { allComplete: boo
     } else if (!superAmazingSync.enabled && local && superAmazingSync.lastToggledAt === null) {
       setSuperAmazingEnabled(true);
     }
-  }, [hydrated, samUnlocked, user, firestoreLoaded, superAmazingSync, setSuperAmazingEnabled, setLocalFlag]);
+  }, [hydrated, earnedAnywhere, user, firestoreLoaded, superAmazingSync, setSuperAmazingEnabled, setLocalFlag]);
 
   return (
     <div className="mb-6">

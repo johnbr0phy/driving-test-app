@@ -215,7 +215,15 @@ interface AppState {
    * person on the device has not earned it.
    */
   superAmazingUnlockedAt: string | null;
-  unlockSuperAmazing: () => void;
+  /**
+   * Which dashboards have been all green, keyed "dmv", a registry exam id, or
+   * "v2:<examId>", each with when it first happened. The toggle on a dashboard
+   * only works once that dashboard is in here; superAmazingUnlockedAt stays the
+   * first unlock anywhere (email and admin read it) but never unlocks a switch
+   * by itself. Same latching and clearing rules as superAmazingUnlockedAt.
+   */
+  superAmazingUnlocks: Record<string, string>;
+  unlockSuperAmazing: (dashboardKey: string) => void;
 
   // Subscription/Premium
   subscription: Subscription;
@@ -265,6 +273,7 @@ export const useStore = create<AppState>()(
         lastToggledAt: null,
       },
       superAmazingUnlockedAt: null,
+      superAmazingUnlocks: {},
       subscription: {
         isPremium: false,
         purchasedAt: null,
@@ -333,9 +342,14 @@ export const useStore = create<AppState>()(
        * later calls are ignored, so the timestamp keeps pointing at the moment
        * they earned it and the congratulations email can only ever fire once.
        */
-      unlockSuperAmazing: () => {
-        if (get().superAmazingUnlockedAt) return;
-        set({ superAmazingUnlockedAt: new Date().toISOString() });
+      unlockSuperAmazing: (dashboardKey: string) => {
+        const { superAmazingUnlockedAt, superAmazingUnlocks } = get();
+        if (superAmazingUnlocks[dashboardKey]) return;
+        const now = new Date().toISOString();
+        set({
+          superAmazingUnlockedAt: superAmazingUnlockedAt || now,
+          superAmazingUnlocks: { ...superAmazingUnlocks, [dashboardKey]: now },
+        });
         get().saveToFirestore();
       },
 
@@ -889,6 +903,14 @@ export const useStore = create<AppState>()(
                 data.superAmazing?.firstEnabledAt ||
                 get().superAmazingUnlockedAt ||
                 null,
+              // Union of this device and the account, so a guest's unlock
+              // survives signing in. Deliberately no fallback to the old
+              // site-wide latch: it was set on accounts that never went green.
+              // Anyone still all green re-latches on their next dashboard visit.
+              superAmazingUnlocks: {
+                ...get().superAmazingUnlocks,
+                ...(data.superAmazingUnlocks || {}),
+              },
               userId,
               subscription: data.subscription || {
                 isPremium: false,
@@ -923,7 +945,7 @@ export const useStore = create<AppState>()(
       },
 
       saveToFirestore: async () => {
-        const { userId, isGuest, selectedState, currentTests, completedTests, testAttempts, training, trainingSets, trainingAnswerHistory, activeDates, photoURL, language, emailConsent, superAmazing, superAmazingUnlockedAt, primaryExam, examStates } = get();
+        const { userId, isGuest, selectedState, currentTests, completedTests, testAttempts, training, trainingSets, trainingAnswerHistory, activeDates, photoURL, language, emailConsent, superAmazing, superAmazingUnlockedAt, superAmazingUnlocks, primaryExam, examStates } = get();
         if (!userId || isGuest) return; // Don't save if no user is logged in or guest mode
 
         try {
@@ -1021,6 +1043,7 @@ export const useStore = create<AppState>()(
             language,
             superAmazing,
             superAmazingUnlockedAt,
+            superAmazingUnlocks,
             lastUpdated: new Date().toISOString(),
             // Denormalized counters for admin dashboard
             _stats: {
@@ -1112,6 +1135,15 @@ export const useStore = create<AppState>()(
       },
 
       clearAllDataOnLogout: () => {
+        // The fireworks flag is a device setting (SUPER_AMAZING_KEY / _EVENT in
+        // components/SuperAmazingFireworks.tsx); the next person to sign in
+        // here has not earned it.
+        if (typeof window !== 'undefined') {
+          try {
+            localStorage.setItem('superAmazingMode', '0');
+            window.dispatchEvent(new Event('super-amazing-mode'));
+          } catch {}
+        }
         set({
           isGuest: false,
           selectedState: null,
@@ -1144,6 +1176,7 @@ export const useStore = create<AppState>()(
           // earned it. Retests, resets and state switches deliberately leave it
           // alone, and it is restored from Firestore on the next sign-in.
           superAmazingUnlockedAt: null,
+          superAmazingUnlocks: {},
           subscription: {
             isPremium: false,
             purchasedAt: null,
@@ -1242,6 +1275,7 @@ export const useStore = create<AppState>()(
               lastToggledAt: null,
             },
             superAmazingUnlockedAt: null,
+            superAmazingUnlocks: {},
             subscription: {
               isPremium: false,
               purchasedAt: null,

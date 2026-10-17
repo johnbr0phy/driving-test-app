@@ -598,7 +598,7 @@ function DashboardContent() {
           })}
         </div>
 
-        <SuperAmazingCard allComplete={allComplete} totalSteps={totalSteps} />
+        <SuperAmazingCard dashboardKey="dmv" allComplete={allComplete} totalSteps={totalSteps} />
 
       </div>
       </div>

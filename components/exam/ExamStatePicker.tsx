@@ -1,7 +1,7 @@
 "use client";
 
-// State choice for exam families with state variants (real estate: California
-// and New Jersey have their own exams; every other state uses the national
+// State choice for exam families with state variants (real estate: California,
+// Texas, Florida, New York and New Jersey have their own exams; every other state uses the national
 // bank). Same "I'm taking the exam in [State]" dropdown as DMV onboarding, but
 // per exam family and never destructive: each state variant keeps its own
 // progress, and the choice (examStates[familyId]) never touches the DMV state.

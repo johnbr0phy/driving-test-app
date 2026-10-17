@@ -1,0 +1,146 @@
+{
+ "include": [
+  "RE-PROP-001",
+  "RE-PROP-002",
+  "RE-PROP-003",
+  "RE-PROP-010",
+  "RE-PROP-011",
+  "RE-PROP-014",
+  "RE-PROP-015",
+  "RE-PROP-017",
+  "RE-PROP-021",
+  "RE-PROP-022",
+  "RE-PROP-026",
+  "RE-OWN-001",
+  "RE-OWN-004",
+  "RE-OWN-007",
+  "RE-OWN-011",
+  "RE-OWN-014",
+  "RE-OWN-017",
+  "RE-OWN-018",
+  "RE-OWN-020",
+  "RE-OWN-023",
+  "RE-VAL-001",
+  "RE-VAL-002",
+  "RE-VAL-003",
+  "RE-VAL-005",
+  "RE-VAL-011",
+  "RE-VAL-014",
+  "RE-VAL-016",
+  "RE-VAL-018",
+  "RE-VAL-020",
+  "RE-VAL-022",
+  "RE-VAL-026",
+  "RE-CON-002",
+  "RE-CON-004",
+  "RE-CON-005",
+  "RE-CON-007",
+  "RE-CON-009",
+  "RE-CON-014",
+  "RE-CON-015",
+  "RE-CON-018",
+  "RE-CON-020",
+  "RE-CON-031",
+  "RE-CON-032",
+  "RE-CON-033",
+  "RE-CON-035",
+  "RE-CON-037",
+  "RE-CON-039",
+  "RE-CON-040",
+  "RE-PRAC-001",
+  "RE-PRAC-002",
+  "RE-PRAC-006",
+  "RE-PRAC-007",
+  "RE-PRAC-008",
+  "RE-PRAC-014",
+  "RE-PRAC-015",
+  "RE-PRAC-019",
+  "RE-PRAC-021",
+  "RE-PRAC-023",
+  "RE-DISC-001",
+  "RE-DISC-002",
+  "RE-DISC-003",
+  "RE-DISC-004",
+  "RE-DISC-007",
+  "RE-DISC-009",
+  "RE-DISC-011",
+  "RE-DISC-014",
+  "RE-DISC-018",
+  "RE-FIN-001",
+  "RE-FIN-003",
+  "RE-FIN-004",
+  "RE-FIN-008",
+  "RE-FIN-012",
+  "RE-FIN-013",
+  "RE-FIN-014",
+  "RE-MATH-001",
+  "RE-MATH-004",
+  "RE-MATH-010",
+  "RE-MATH-011",
+  "RE-MATH-012",
+  "RE-MATH-019",
+  "RE-MATH-020"
+ ],
+ "overrides": {
+  "RE-CON-037": {
+   "explanation": "A Texas license holder who knows of a significant latent defect must disclose it to a potential buyer under Occupations Code 1101.652(b)(4), whatever the seller instructs. Waiting for a buyer to ask is not enough because inspection would not reveal it."
+  },
+  "RE-CON-040": {
+   "explanation": "Occupations Code 1101.558(b) requires a Texas license holder to disclose whom she represents at her first contact with another party, so she says so before he shares his budget. The written IABS notice is not required for a conversation about the property at its open house."
+  },
+  "RE-OWN-004": {
+   "explanation": "Texas is a community property state, and Family Code 3.001 makes property a spouse acquires during marriage by gift, devise or descent that spouse's separate property. Other property acquired during the marriage is presumed community property under Family Code 3.003."
+  },
+  "RE-OWN-023": {
+   "explanation": "Under Property Code 13.001 an unrecorded deed is void as to a later purchaser for value without notice, so Buyer 2, who paid value, had no notice and recorded, prevails. Buyer 1's deed still binds the seller, who signed it."
+  },
+  "RE-PRAC-001": {
+   "explanation": "Drafting custom legal language is the unauthorized practice of law under Occupations Code 1101.654 and TREC Rule 537.11, so a Texas license holder fills in TREC forms and refers legal questions to an attorney. Having the broker draft it is still practicing law.",
+   "question": "A seller asks the listing sales agent to write a custom clause reserving a life estate in the sales contract. The sales agent should:"
+  },
+  "RE-PRAC-002": {
+   "question": "A sales agent receives a buyer's earnest money check with an offer on Friday afternoon. What should the sales agent do with it?",
+   "optionD": "Promptly turn it over to the sponsoring broker",
+   "explanation": "TREC Rule 535.146 bars a sales agent from keeping a trust account and requires trust money to go to the sponsoring broker immediately; the broker deposits it, or delivers it to the escrow agent, by the close of the second working day unless the parties agree otherwise in writing. Holding it or handing it to the seller breaches the duty to account.",
+   "optionC": "Keep it in the sales agent's desk until closing"
+  },
+  "RE-DISC-018": {
+   "explanation": "A stigmatized property carries a psychological impact from an event such as a crime or death, not a physical flaw. In Texas, Occupations Code 1101.556 removes any duty to disclose a death by natural causes, suicide or accident unrelated to the property's condition; a latent defect is a hidden physical problem."
+  },
+  "RE-FIN-013": {
+   "explanation": "RESPA Section 8 bans payments for referring settlement service business, and TREC Rule 535.148 separately bars a Texas license holder from taking a fee for referring a title company. Disclosure does not make a referral fee legal.",
+   "question": "A title company offers a sales agent $200 for every buyer the sales agent refers to it. Under RESPA, accepting this payment is:",
+   "optionA": "Legal if paid through the sales agent's broker"
+  },
+  "RE-CON-032": {
+   "question": "Without authorization, a sales agent negotiates an offer on a home that is not listed. The owner then accepts the offer and agrees to pay the fee. This agency arose by:"
+  },
+  "RE-PRAC-021": {
+   "question": "A sales agent knowingly overstates a home's square footage in the MLS. The buyer can also sue the sponsoring broker under the doctrine of:",
+   "explanation": "Vicarious liability makes a broker answerable for the acts of sponsored sales agents within the scope of their work, and TREC rules make the broker responsible for their authorized acts. Caveat emptor does not excuse a license holder's misrepresentation."
+  },
+  "RE-OWN-017": {
+   "explanation": "A valid deed needs a competent grantor, an identifiable grantee, a granting clause, a legal description, the grantor's signature, and delivery and acceptance. The grantee usually does not sign, a gift deed is valid without consideration, and recording is not required for validity between the parties."
+  },
+  "RE-CON-002": {
+   "explanation": "Only the owner makes a promise, and the broker earns the fee only by performing, so the contract is unilateral. A bilateral contract needs a promise from each side. In Texas the broker could not sue for this fee unless the promise is in writing and signed by the owner (Occupations Code 1101.806)."
+  },
+  "RE-PROP-017": {
+   "explanation": "A section has 640 acres, so 640 / 4 = 160 acres for the SW 1/4, and 160 / 4 = 40 acres for the NE 1/4 of it. The 160-acre answer stops at the quarter section and ignores the second division. The rectangular survey is tested on the national portion; Texas was never surveyed this way and uses metes and bounds and recorded plats."
+  }
+ },
+ "excluded": {
+  "RE-CON-026": "Dual agency with consent: Texas does not use dual agency; a broker representing both sides must act as an intermediary under Occupations Code 1101.559-1101.561. Covered by RETX-TXAGY items.",
+  "RE-CON-027": "Designated agency: the Texas equivalent is an intermediary with appointed license holders (1101.560), with different consent and notice rules. Keyed term would mislead.",
+  "RE-CON-028": "Transaction broker or facilitator status does not exist in Texas law.",
+  "RE-CON-029": "Cooperating subagent: S.B. 1968 (89th Leg., effective January 1, 2026) removed subagency references from the Act (TREC Legal Update II 2026-2027).",
+  "RE-PRAC-009": "Net listing keyed as the broker keeping all of the excess: TREC Rule 535.16 allows a net listing only if the principal requires it and the agreement limits the broker to a specified maximum commission.",
+  "RE-OWN-003": "Tenancy by the entirety is not a Texas form of ownership; Texas spouses hold community property.",
+  "RE-OWN-021": "Hypothetical 12-year adverse possession period does not match any Texas limitations period and could mislead a Texas candidate.",
+  "RE-MATH-006": "Assumes assessment at 40% of market value; Texas appraisal districts appraise at market value, so the assessment-ratio step misleads.",
+  "RE-VAL-028": "Keys that assessments are often a fraction of market value; Texas appraises property at market value.",
+  "RE-MATH-016": "Transfer tax calculation; Texas has no deed transfer tax, so the item tests a step a Texas closing does not have.",
+  "RE-DISC-015": "Keys that seller disclosure requirements vary by state; Texas has a specific statutory notice (Property Code 5.008) tested by RETX-TXCON items instead.",
+  "RE-DISC-020": "Inspection contingency framing; TREC resale contracts use a paid termination option period rather than an inspection contingency, so the item could mislead."
+ }
+}

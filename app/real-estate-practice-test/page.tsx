@@ -20,6 +20,21 @@ const statePractice = [
     href: "/real-estate/nj/dashboard",
     body: "110 source-checked questions on the PSI New Jersey outline: 80 general and 30 New Jersey questions.",
   },
+  {
+    name: "Texas",
+    href: "/real-estate/tx/dashboard",
+    body: "120 source-checked questions on the Pearson VUE Texas outlines: 80 national and 40 Texas questions, including the 2026 buyer agreement rules.",
+  },
+  {
+    name: "Florida",
+    href: "/real-estate/fl/dashboard",
+    body: "100 source-checked questions weighted to the DBPR sales associate outline: principles plus Chapter 475, FREC rules, brokerage relationships and Florida math.",
+  },
+  {
+    name: "New York",
+    href: "/real-estate/ny/dashboard",
+    body: "75 source-checked questions weighted to the 77-hour course: national topics plus license law, agency disclosure, the Human Rights Law and the PCDA.",
+  },
 ];
 
 const title = "Free Real Estate Practice Test 2026 - National Salesperson Exam Prep";
@@ -91,7 +106,7 @@ const jsonLd = {
           name: "Does this cover my state's exam?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "California and New Jersey have their own practice: 150 source-checked questions for California and 110 for New Jersey, each including state law. For other states, the 200-question bank covers the national portion, which is the same in every Pearson VUE or PSI state; your state law portion is separate and not covered yet.",
+            text: "California, Texas, Florida, New York and New Jersey have their own practice: 150 source-checked questions for California, 120 for Texas, 100 for Florida, 75 for New York and 110 for New Jersey, each including state law. For other states, the 200-question bank covers the national portion, which is the same in every Pearson VUE or PSI state; your state law portion is separate and not covered yet.",
           },
         },
         {
@@ -195,12 +210,12 @@ export default function RealestateLandingPage() {
       {/* State practice */}
       <div className="max-w-5xl mx-auto px-6 pb-16 md:pb-24">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-4">
-          California and New Jersey Practice
+          State Practice: CA, TX, FL, NY and NJ
         </h2>
         <p className="text-lg text-gray-600 dark:text-gray-300 text-center max-w-2xl mx-auto mb-10">
-          Taking the exam in California or New Jersey? Practice with questions checked against your state&apos;s law, including state-only rules. Progress is saved separately for each state.
+          Taking the exam in California, Texas, Florida, New York or New Jersey? Practice with questions checked against your state&apos;s law, including state-only rules. Progress is saved separately for each state.
         </p>
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {statePractice.map((s) => (
             <a
               key={s.href}
@@ -214,7 +229,7 @@ export default function RealestateLandingPage() {
           ))}
         </div>
         <p className="text-sm text-gray-500 dark:text-gray-400 text-center mt-6">
-          Practice only. Not affiliated with the California DRE, NJ REC or PSI, and a practice score does not predict your exam result.
+          Practice only. Not affiliated with the California DRE, TREC, Florida DBPR or FREC, NY DOS, NJ REC, PSI or Pearson VUE, and a practice score does not predict your exam result.
         </p>
       </div>
 
@@ -319,7 +334,7 @@ export default function RealestateLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Does this cover my state&apos;s exam?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              California and New Jersey have their own practice: 150 source-checked questions for California and 110 for New Jersey, each including state law. For other states, the 200-question bank covers the national portion, which is the same in every Pearson VUE or PSI state; your state law portion is separate and not covered yet.
+              California, Texas, Florida, New York and New Jersey have their own practice: 150 source-checked questions for California, 120 for Texas, 100 for Florida, 75 for New York and 110 for New Jersey, each including state law. For other states, the 200-question bank covers the national portion, which is the same in every Pearson VUE or PSI state; your state law portion is separate and not covered yet.
             </p>
           </div>
           <div>

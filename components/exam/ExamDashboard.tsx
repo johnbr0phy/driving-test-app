@@ -9,9 +9,9 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import { Card, CardContent } from "@/components/ui/card";
 import { BarChart3, ChevronRight } from "lucide-react";
 import { useStore } from "@/store/useStore";
+import { GuestSaveCard, v1GuestCounts } from "@/components/GuestSaveCard";
 import { useAuth } from "@/contexts/AuthContext";
 import { useHydration } from "@/hooks/useHydration";
 import { useTranslation } from "@/contexts/LanguageContext";
@@ -68,6 +68,7 @@ export function ExamDashboard({ exam }: { exam: ExamConfig }) {
   const getTrainingSetProgress = useStore((state) => state.getTrainingSetProgress);
   const completeTest = useStore((state) => state.completeTest);
   const completedTests = useStore((state) => state.completedTests);
+  const trainingAnswerHistory = useStore((state) => state.trainingAnswerHistory);
 
   const PASS_SCORE = Math.ceil((exam.passPct / 100) * exam.questionsPerTest);
 
@@ -148,21 +149,11 @@ export function ExamDashboard({ exam }: { exam: ExamConfig }) {
 
         {/* Sign-up prompt for guests */}
         {isGuest && (
-          <Card className="mb-4 bg-gradient-to-r from-brand-light to-brand-gradient-to border-brand-border-light">
-            <CardContent className="p-4">
-              <div className="flex items-center gap-3">
-                <div className="text-2xl">📊</div>
-                <div className="flex-1">
-                  <p className="text-sm text-gray-700 dark:text-gray-200">
-                    <span className="font-bold">{t("common.signUp")}</span> {exam.copy.guestPrompt}
-                  </p>
-                  <Link href={routes.signup} className="text-xs text-brand-dark hover:text-brand-darker font-medium mt-1 inline-block">
-                    {t("dashboard.createFreeAccount")}
-                  </Link>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+          <GuestSaveCard
+            className="mb-4"
+            signupHref={routes.signup}
+            {...v1GuestCounts(exam.stateCode, completedTests, trainingAnswerHistory)}
+          />
         )}
 
         <ExamStatePrompt exam={exam} />

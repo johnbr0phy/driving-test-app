@@ -960,6 +960,19 @@ export const ko: TranslationKeys = {
   },
 
   // Language
+  guestSave: {
+    titleFresh: "공부하면서 진행 상황을 저장하세요",
+    titleAnswers: "{{n}}개의 답변이 이 브라우저에만 저장되어 있습니다",
+    titleAnswersTests: "{{n}}개의 답변과 시험 점수가 이 브라우저에만 저장되어 있습니다",
+    titleScore: "{{score}}/{{total}} 점수가 이 브라우저에만 저장되어 있습니다",
+    sub: "무료 계정, 10초면 됩니다. 어느 기기에서나 사용하세요.",
+    benefitSafe: "브라우저 데이터가 지워져도 그대로 유지",
+    benefitMisses: "틀린 문제와 점수를 한곳에서 확인",
+    emailCta: "이메일로 가입",
+    createCta: "무료 계정 만들기",
+    emailShort: "이메일",
+    googleFailed: "Google 로그인에 실패했습니다. 다시 시도하거나 이메일로 가입하세요.",
+  },
   theme: {
     appearance: "화면 모드",
     light: "라이트",

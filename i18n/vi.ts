@@ -958,6 +958,19 @@ export const vi: TranslationKeys = {
   },
 
   // Language
+  guestSave: {
+    titleFresh: "Lưu tiến độ của bạn khi học",
+    titleAnswers: "{{n}} câu trả lời của bạn chỉ được lưu trên trình duyệt này",
+    titleAnswersTests: "{{n}} câu trả lời và điểm thi của bạn chỉ được lưu trên trình duyệt này",
+    titleScore: "Điểm {{score}}/{{total}} của bạn chỉ được lưu trên trình duyệt này",
+    sub: "Tài khoản miễn phí, chỉ mất 10 giây. Dùng trên mọi thiết bị.",
+    benefitSafe: "Không mất gì nếu trình duyệt bị xóa dữ liệu",
+    benefitMisses: "Mọi câu sai và điểm số ở cùng một nơi",
+    emailCta: "Đăng ký bằng email",
+    createCta: "Tạo tài khoản miễn phí",
+    emailShort: "Email",
+    googleFailed: "Đăng nhập Google không thành công. Hãy thử lại hoặc đăng ký bằng email.",
+  },
   theme: {
     appearance: "Giao diện",
     light: "Sáng",

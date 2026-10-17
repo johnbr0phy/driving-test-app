@@ -958,6 +958,19 @@ export const en = {
   },
 
   // Language
+  guestSave: {
+    titleFresh: "Save your progress as you go",
+    titleAnswers: "Your {{n}} answers are only saved on this browser",
+    titleAnswersTests: "Your {{n}} answers and test scores are only saved on this browser",
+    titleScore: "Your {{score}}/{{total}} is only saved on this browser",
+    sub: "Free account, takes 10 seconds. Use it on any device.",
+    benefitSafe: "Nothing lost if your browser clears",
+    benefitMisses: "Every missed question and score in one place",
+    emailCta: "Sign up with email",
+    createCta: "Create free account",
+    emailShort: "Email",
+    googleFailed: "Google sign-in didn't work. Try again or sign up with email.",
+  },
   theme: {
     appearance: "Appearance",
     light: "Light",

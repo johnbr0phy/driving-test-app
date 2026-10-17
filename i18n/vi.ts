@@ -959,6 +959,8 @@ export const vi: TranslationKeys = {
 
   // Language
   guestSave: {
+    streakKicker: "Đúng hai câu liên tiếp. Tuyệt!",
+    keepPracticing: "Tiếp tục luyện tập",
     titleFresh: "Lưu tiến độ của bạn khi học",
     titleAnswers: "{{n}} câu trả lời của bạn chỉ được lưu trên trình duyệt này",
     titleAnswersTests: "{{n}} câu trả lời và điểm thi của bạn chỉ được lưu trên trình duyệt này",

@@ -9,9 +9,11 @@ import { useAuth } from "@/contexts/AuthContext";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { useIsNativeApp } from "@/hooks/useIsNativeApp";
 import { trackFunnelStep } from "@/lib/funnel";
+import { trackGuestPrompt } from "@/lib/analytics";
 import { getExamByStateCode, isExamQuestionId } from "@/lib/exams";
 import { useStore } from "@/store/useStore";
 import type { TestSession } from "@/types";
+import type { DrillState, TestResultV2 } from "@/lib/v2/types";
 
 /** Answers and finished tests a signed-out visitor has on this browser for
  *  one v1 exam (a DMV state code or a registry exam's pseudo state code). */
@@ -28,6 +30,15 @@ export function v1GuestCounts(
   return { answered: trained + tests.reduce((n, t) => n + t.answers.length, 0), tests: tests.length };
 }
 
+/** Answers a signed-out visitor has on this browser for one v2 exam: drill
+ *  answers plus answered test items. */
+export function v2GuestAnswered(drills: Record<string, DrillState>, results: TestResultV2[], examId: string) {
+  return (
+    Object.entries(drills).reduce((n, [k, d]) => (k.startsWith(`${examId}:`) ? n + d.seen : n), 0) +
+    results.filter((r) => r.examId === examId).reduce((n, r) => n + r.items.filter((i) => i.answer !== undefined).length, 0)
+  );
+}
+
 const IGNORED_GOOGLE_ERRORS = ["auth/popup-closed-by-user", "auth/cancelled-popup-request", "auth/user-cancelled"];
 
 interface Props {
@@ -41,6 +52,8 @@ interface Props {
   /** v2 dashboards sit outside a themed wrapper, so they pass their exam id. */
   dataTheme?: string;
   className?: string;
+  /** Set by the in-training prompt so its button taps are counted (trackGuestPrompt). */
+  promptSource?: string;
 }
 
 /**
@@ -49,7 +62,7 @@ interface Props {
  * tap (AuthContext converts the guest's progress when the popup returns, so
  * this page just re-renders signed in), and email via the signup page.
  */
-export function GuestSaveCard({ signupHref, answered = 0, tests = 0, score, dataTheme, className = "" }: Props) {
+export function GuestSaveCard({ signupHref, answered = 0, tests = 0, score, dataTheme, className = "", promptSource }: Props) {
   const { t } = useTranslation();
   const { loginWithGoogle } = useAuth();
   const isNative = useIsNativeApp();
@@ -66,6 +79,7 @@ export function GuestSaveCard({ signupHref, answered = 0, tests = 0, score, data
   const handleGoogle = async () => {
     setError(false);
     setBusy(true);
+    if (promptSource) trackGuestPrompt("google", promptSource);
     // The funnel's "opened signup" step, so one-tap signups still show up
     // between first answer and account created.
     trackFunnelStep("signup_view");
@@ -119,7 +133,7 @@ export function GuestSaveCard({ signupHref, answered = 0, tests = 0, score, data
           </div>
         )}
         <Button asChild className="flex-1 h-9 bg-brand text-white hover:bg-brand-hover">
-          <Link href={signupHref}>
+          <Link href={signupHref} onClick={promptSource ? () => trackGuestPrompt("email", promptSource) : undefined}>
             {isNative ? (
               t("guestSave.createCta")
             ) : (

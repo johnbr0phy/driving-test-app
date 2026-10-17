@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, Suspense, useRef } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { TrainingCard } from "@/components/TrainingCard";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -22,6 +22,10 @@ import { Fireworks } from "@/components/Fireworks";
 import { TestPageHeader } from "@/components/TestPageHeader";
 import Link from "next/link";
 import { useTranslation } from "@/contexts/LanguageContext";
+import { useAuth } from "@/contexts/AuthContext";
+import { useGuestPrompt } from "@/hooks/useGuestPrompt";
+import { GuestPromptStep } from "@/components/GuestPromptStep";
+import { v1GuestCounts } from "@/components/GuestSaveCard";
 
 // Shared training page for registry exams: the DMV training page (set mode
 // with mastery + wrong-answer queue, set-complete share card) on the exam's
@@ -35,6 +39,12 @@ function ExamTrainingContent({ exam }: { exam: ExamConfig }) {
   const { t } = useTranslation();
 
   const isGuest = useStore((state) => state.isGuest);
+  const completedTests = useStore((state) => state.completedTests);
+  const trainingAnswerHistory = useStore((state) => state.trainingAnswerHistory);
+  const pathname = usePathname();
+  const { user, loading: authLoading } = useAuth();
+  // Signed-out visitors get the sign-up prompt in place of a question now and then.
+  const guestPrompt = useGuestPrompt(!authLoading && !user, "training");
 
   const training = useStore((state) => state.training);
   const trainingSets = useStore((state) => state.trainingSets);
@@ -166,6 +176,8 @@ function ExamTrainingContent({ exam }: { exam: ExamConfig }) {
       playIncorrectSound();
     }
 
+    guestPrompt.record(isCorrect);
+
     // Track progress
     if (isSetMode && setId) {
       answerTrainingSetQuestion(setId, currentQuestion.questionId, isCorrect);
@@ -175,6 +187,12 @@ function ExamTrainingContent({ exam }: { exam: ExamConfig }) {
   };
 
   const handleNext = () => {
+    if (guestPrompt.takeStep()) return;
+    loadNextQuestion();
+  };
+
+  const handleSkipPrompt = () => {
+    guestPrompt.skip();
     loadNextQuestion();
   };
 
@@ -376,7 +394,14 @@ function ExamTrainingContent({ exam }: { exam: ExamConfig }) {
       <div className="relative container mx-auto px-4 py-4 max-w-lg md:max-w-2xl lg:max-w-4xl">
 
         {/* Question Card */}
-        {accessLocked ? null : currentQuestion ? (
+        {accessLocked ? null : guestPrompt.showing ? (
+          <GuestPromptStep
+            signupHref={`/signup?redirect=${encodeURIComponent(`${pathname}?${searchParams.toString()}`)}`}
+            answered={v1GuestCounts(exam.stateCode, completedTests, trainingAnswerHistory).answered}
+            where="training"
+            onSkip={handleSkipPrompt}
+          />
+        ) : currentQuestion ? (
           <TrainingCard
             key={currentQuestion.questionId}
             question={currentQuestion}

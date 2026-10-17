@@ -143,3 +143,9 @@ export function trackPurchase(transactionId: string) {
     items: [PREMIUM_ITEM],
   });
 }
+
+// The in-training sign-up prompt (components/GuestPromptStep): shown, skipped,
+// or one of its buttons tapped. where: "training" (v1 exam sets) | "drill" (v2).
+export function trackGuestPrompt(action: "shown" | "skipped" | "google" | "email", where: string) {
+  window.gtag?.("event", "guest_prompt", { action, where });
+}

@@ -13,7 +13,7 @@
  * This file must stay free of question-data imports (the store imports it).
  */
 
-export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "htl" | "cst" | "crcst";
+export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "htl" | "cst" | "crcst";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (?set=N). */
@@ -1088,7 +1088,7 @@ const realestateNJ: ExamConfig = {
   },
 };
 
-// Texas, Florida and New York come from tools/build_re_state_variant.py:
+// Texas, Florida and New York come from tools/build_state_variant.py:
 // national items checked against state law (some excluded, some reworded)
 // plus state-law items, one full-length test. TX 4001, FL 4051, NY 4101.
 const realestateTX: ExamConfig = {
@@ -2114,10 +2114,331 @@ const crcst: ExamConfig = {
   },
 };
 
+// Life & Health and P&C state variants, built by tools/build_state_variant.py
+// like the TX, FL and NY real estate ones. ID blocks: L&H TX 4150, FL 4200,
+// CA 4250; P&C TX 4300, FL 4350, CA 4400.
+const insuranceTX: ExamConfig = {
+  id: "insurance-tx",
+  variantOf: "insurance",
+  jurisdiction: { code: "TX", name: "Texas" },
+  stateCode: "LIFEHEALTH_TX",
+  idBase: 4150,
+  slug: "/life-health-insurance/tx",
+  landingPath: "/life-health-insurance-practice-test",
+  name: "Texas Life & Health Insurance Practice Test",
+  shortName: "TX L&H Insurance",
+  examLabel: "Texas Life, Accident & Health",
+  fullName: "Texas life and health insurance license exam",
+  questionIdPrefix: "LHTX-",
+  icon: "umbrella",
+  testCount: 1,
+  questionsPerTest: 130,
+  passPct: 70,
+  // 100 general and 30 Texas items, the scored counts in the Pearson VUE
+  // Texas content outline (#124401, effective Sept 1, 2026).
+  blueprint: {
+    insuranceRegulation: 23,
+    generalInsurance: 9,
+    lifeBasics: 7,
+    lifePolicyTypes: 10,
+    lifeProvisions: 17,
+    annuitiesRetirement: 8,
+    healthBasics: 16,
+    healthProvisions: 17,
+    healthPolicyTypes: 23,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 4151, name: "Insurance Basics & Regulation", categories: ["insuranceRegulation", "generalInsurance"], size: 32, weightLabel: "25% of the practice exam" },
+    { setNumber: 2, id: 4152, name: "Life Insurance Policies & Provisions", categories: ["lifeBasics", "lifePolicyTypes", "lifeProvisions"], size: 34, weightLabel: "26% of the practice exam" },
+    { setNumber: 3, id: 4153, name: "Annuities, Taxation & Health Basics", categories: ["annuitiesRetirement", "healthBasics"], size: 24, weightLabel: "18% of the practice exam" },
+    { setNumber: 4, id: 4154, name: "Health Policy Provisions & Types", categories: ["healthProvisions", "healthPolicyTypes"], size: 40, weightLabel: "31% of the practice exam" },
+  ],
+  categoryLabels: insurance.categoryLabels,
+  copy: {
+    guestPrompt: "to save your Texas life & health progress and track every question you miss",
+    trainingHeading: "Train by content area",
+    trainingSub: "Four sets with 130 source-checked questions for Texas, general topics and Texas law. Missed questions come back until you master them.",
+    testsHeading: "Full-length practice exam \u00b7 130 questions, 100 general and 30 Texas",
+    heroSubs: [
+      "General topics plus Texas rules.",
+      "Master each set, then take the full exam.",
+      "Halfway there. Try the full test.",
+      "Fix the misses, then retake. 70% passes.",
+      "All done. Go schedule your Pearson VUE exam.",
+    ],
+    sourceLine: "Source-checked practice on the Pearson VUE Texas life, accident and health outline (Sept 2026). Not affiliated with TDI or Pearson VUE; confirm rules in official TDI materials.",
+    analyticsKey: "insurance",
+  },
+};
+
+const insuranceFL: ExamConfig = {
+  id: "insurance-fl",
+  variantOf: "insurance",
+  jurisdiction: { code: "FL", name: "Florida" },
+  stateCode: "LIFEHEALTH_FL",
+  idBase: 4200,
+  slug: "/life-health-insurance/fl",
+  landingPath: "/life-health-insurance-practice-test",
+  name: "Florida Life & Health Insurance Practice Test",
+  shortName: "FL L&H Insurance",
+  examLabel: "Florida 2-15 Life, Health & Annuity",
+  fullName: "Florida life and health insurance license exam",
+  questionIdPrefix: "LHFL-",
+  icon: "umbrella",
+  testCount: 1,
+  questionsPerTest: 150,
+  passPct: 70,
+  // 150 items like the real 2-15 exam: 100 general knowledge and 50 Florida
+  // law, weighted to the Pearson VUE Florida outline (effective Jan 1, 2026).
+  blueprint: {
+    insuranceRegulation: 22,
+    generalInsurance: 13,
+    lifeBasics: 11,
+    lifePolicyTypes: 11,
+    lifeProvisions: 21,
+    annuitiesRetirement: 11,
+    healthBasics: 16,
+    healthProvisions: 23,
+    healthPolicyTypes: 22,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 4201, name: "Insurance Basics & Regulation", categories: ["insuranceRegulation", "generalInsurance"], size: 35, weightLabel: "23% of the practice exam" },
+    { setNumber: 2, id: 4202, name: "Life Insurance Policies & Provisions", categories: ["lifeBasics", "lifePolicyTypes", "lifeProvisions"], size: 43, weightLabel: "29% of the practice exam" },
+    { setNumber: 3, id: 4203, name: "Annuities, Taxation & Health Basics", categories: ["annuitiesRetirement", "healthBasics"], size: 27, weightLabel: "18% of the practice exam" },
+    { setNumber: 4, id: 4204, name: "Health Policy Provisions & Types", categories: ["healthProvisions", "healthPolicyTypes"], size: 45, weightLabel: "30% of the practice exam" },
+  ],
+  categoryLabels: insurance.categoryLabels,
+  copy: {
+    guestPrompt: "to save your Florida life & health progress and track every question you miss",
+    trainingHeading: "Train by content area",
+    trainingSub: "Four sets with 150 source-checked questions for Florida, general topics and Florida law. Missed questions come back until you master them.",
+    testsHeading: "Full-length practice exam \u00b7 150 questions weighted to the 2-15 outline",
+    heroSubs: [
+      "General topics plus Florida law.",
+      "Master each set, then take the full exam.",
+      "Halfway there. Try the full test.",
+      "Fix the misses, then retake. 70% passes.",
+      "All done. Go schedule your Pearson VUE exam.",
+    ],
+    sourceLine: "Source-checked practice on the Pearson VUE Florida 2-15 outline (Jan 2026). Not affiliated with Florida DFS or Pearson VUE; confirm rules in official DFS materials.",
+    analyticsKey: "insurance",
+  },
+};
+
+const insuranceCA: ExamConfig = {
+  id: "insurance-ca",
+  variantOf: "insurance",
+  jurisdiction: { code: "CA", name: "California" },
+  stateCode: "LIFEHEALTH_CA",
+  idBase: 4250,
+  slug: "/life-health-insurance/ca",
+  landingPath: "/life-health-insurance-practice-test",
+  name: "California Life & Health Insurance Practice Test",
+  shortName: "CA L&H Insurance",
+  examLabel: "California Life, Accident & Health",
+  fullName: "California life and health insurance license exam",
+  questionIdPrefix: "LHCA-",
+  icon: "umbrella",
+  testCount: 1,
+  questionsPerTest: 150,
+  passPct: 60,
+  // 150 items like CDI's combined Life and Accident & Health exam (75 + 75),
+  // weighted by the 2025 CDI examination objectives. PSI passes at 60%.
+  blueprint: {
+    insuranceRegulation: 14,
+    generalInsurance: 26,
+    lifeBasics: 12,
+    lifePolicyTypes: 12,
+    lifeProvisions: 18,
+    annuitiesRetirement: 11,
+    healthBasics: 12,
+    healthProvisions: 22,
+    healthPolicyTypes: 23,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 4251, name: "Insurance Basics & Regulation", categories: ["insuranceRegulation", "generalInsurance"], size: 40, weightLabel: "27% of the practice exam" },
+    { setNumber: 2, id: 4252, name: "Life Insurance Policies & Provisions", categories: ["lifeBasics", "lifePolicyTypes", "lifeProvisions"], size: 42, weightLabel: "28% of the practice exam" },
+    { setNumber: 3, id: 4253, name: "Annuities, Taxation & Health Basics", categories: ["annuitiesRetirement", "healthBasics"], size: 23, weightLabel: "15% of the practice exam" },
+    { setNumber: 4, id: 4254, name: "Health Policy Provisions & Types", categories: ["healthProvisions", "healthPolicyTypes"], size: 45, weightLabel: "30% of the practice exam" },
+  ],
+  categoryLabels: insurance.categoryLabels,
+  copy: {
+    guestPrompt: "to save your California life & health progress and track every question you miss",
+    trainingHeading: "Train by content area",
+    trainingSub: "Four sets with 150 source-checked questions for California, general topics and California law. Missed questions come back until you master them.",
+    testsHeading: "Full-length practice exam \u00b7 150 questions like the combined CDI exam",
+    heroSubs: [
+      "General topics plus California law.",
+      "Master each set, then take the full exam.",
+      "Halfway there. Try the full test.",
+      "Fix the misses, then retake. 60% passes.",
+      "All done. Go schedule your PSI exam.",
+    ],
+    sourceLine: "Source-checked practice weighted to the 2025 CDI life and accident and health objectives. Not affiliated with CDI or PSI; confirm rules in official CDI materials.",
+    analyticsKey: "insurance",
+  },
+};
+
+const pncTX: ExamConfig = {
+  id: "pnc-tx",
+  variantOf: "pnc",
+  jurisdiction: { code: "TX", name: "Texas" },
+  stateCode: "PNC_TX",
+  idBase: 4300,
+  slug: "/property-casualty-insurance/tx",
+  landingPath: "/property-casualty-insurance-practice-test",
+  name: "Texas Property & Casualty Insurance Practice Test",
+  shortName: "TX P&C Insurance",
+  examLabel: "Texas General Lines P&C",
+  fullName: "Texas property and casualty insurance license exam",
+  questionIdPrefix: "PCTX-",
+  icon: pnc.icon,
+  testCount: 1,
+  questionsPerTest: 130,
+  passPct: 70,
+  // 100 general and 30 Texas items, the scored counts in the Pearson VUE
+  // Texas content outline (#124401, effective Sept 1, 2026).
+  blueprint: {
+    pcGeneral: 44,
+    pcPolicy: 26,
+    pcHomeowners: 18,
+    pcAuto: 14,
+    pcCommercial: 11,
+    pcLiability: 10,
+    pcOther: 7,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 4301, name: "Basics, Underwriting & Policy Provisions", categories: ["pcGeneral", "pcPolicy"], size: 70, weightLabel: "54% of the practice exam" },
+    { setNumber: 2, id: 4302, name: "Dwelling & Homeowners", categories: ["pcHomeowners"], size: 18, weightLabel: "14% of the practice exam" },
+    { setNumber: 3, id: 4303, name: "Personal Auto", categories: ["pcAuto"], size: 14, weightLabel: "11% of the practice exam" },
+    { setNumber: 4, id: 4304, name: "Commercial Lines & Other Coverages", categories: ["pcCommercial", "pcLiability", "pcOther"], size: 28, weightLabel: "22% of the practice exam" },
+  ],
+  categoryLabels: pnc.categoryLabels,
+  copy: {
+    guestPrompt: "to save your Texas property & casualty progress and track every question you miss",
+    trainingHeading: "Train by content area",
+    trainingSub: "Four sets with 130 source-checked questions for Texas, general topics and Texas law. Missed questions come back until you master them.",
+    testsHeading: "Full-length practice exam \u00b7 130 questions, 100 general and 30 Texas",
+    heroSubs: [
+      "General topics plus Texas rules.",
+      "Master each set, then take the full exam.",
+      "Halfway there. Try the full test.",
+      "Fix the misses, then retake. 70% passes.",
+      "All done. Go schedule your Pearson VUE exam.",
+    ],
+    sourceLine: "Source-checked practice on the Pearson VUE Texas property and casualty outline (Sept 2026). Not affiliated with TDI or Pearson VUE; confirm rules in official TDI materials.",
+    analyticsKey: "pnc",
+  },
+};
+
+const pncFL: ExamConfig = {
+  id: "pnc-fl",
+  variantOf: "pnc",
+  jurisdiction: { code: "FL", name: "Florida" },
+  stateCode: "PNC_FL",
+  idBase: 4350,
+  slug: "/property-casualty-insurance/fl",
+  landingPath: "/property-casualty-insurance-practice-test",
+  name: "Florida Property & Casualty Insurance Practice Test",
+  shortName: "FL P&C Insurance",
+  examLabel: "Florida 2-20 General Lines",
+  fullName: "Florida property and casualty insurance license exam",
+  questionIdPrefix: "PCFL-",
+  icon: pnc.icon,
+  testCount: 1,
+  questionsPerTest: 150,
+  passPct: 70,
+  // 150 items (the real 2-20 has 160 scored): 96 general knowledge and 54
+  // Florida law, weighted to the Pearson VUE Florida outline (Jan 1, 2026).
+  blueprint: {
+    pcGeneral: 47,
+    pcPolicy: 22,
+    pcHomeowners: 19,
+    pcAuto: 23,
+    pcCommercial: 9,
+    pcLiability: 13,
+    pcOther: 17,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 4351, name: "Basics, Underwriting & Policy Provisions", categories: ["pcGeneral", "pcPolicy"], size: 69, weightLabel: "46% of the practice exam" },
+    { setNumber: 2, id: 4352, name: "Dwelling & Homeowners", categories: ["pcHomeowners"], size: 19, weightLabel: "13% of the practice exam" },
+    { setNumber: 3, id: 4353, name: "Personal Auto", categories: ["pcAuto"], size: 23, weightLabel: "15% of the practice exam" },
+    { setNumber: 4, id: 4354, name: "Commercial Lines & Other Coverages", categories: ["pcCommercial", "pcLiability", "pcOther"], size: 39, weightLabel: "26% of the practice exam" },
+  ],
+  categoryLabels: pnc.categoryLabels,
+  copy: {
+    guestPrompt: "to save your Florida property & casualty progress and track every question you miss",
+    trainingHeading: "Train by content area",
+    trainingSub: "Four sets with 150 source-checked questions for Florida, general topics and Florida law. Missed questions come back until you master them.",
+    testsHeading: "Full-length practice exam \u00b7 150 questions weighted to the 2-20 outline",
+    heroSubs: [
+      "General topics plus Florida law.",
+      "Master each set, then take the full exam.",
+      "Halfway there. Try the full test.",
+      "Fix the misses, then retake. 70% passes.",
+      "All done. Go schedule your Pearson VUE exam.",
+    ],
+    sourceLine: "Source-checked practice on the Pearson VUE Florida 2-20 outline (Jan 2026). Not affiliated with Florida DFS or Pearson VUE; confirm rules in official DFS materials.",
+    analyticsKey: "pnc",
+  },
+};
+
+const pncCA: ExamConfig = {
+  id: "pnc-ca",
+  variantOf: "pnc",
+  jurisdiction: { code: "CA", name: "California" },
+  stateCode: "PNC_CA",
+  idBase: 4400,
+  slug: "/property-casualty-insurance/ca",
+  landingPath: "/property-casualty-insurance-practice-test",
+  name: "California Property & Casualty Insurance Practice Test",
+  shortName: "CA P&C Insurance",
+  examLabel: "California Property & Casualty",
+  fullName: "California property and casualty insurance license exam",
+  questionIdPrefix: "PCCA-",
+  icon: pnc.icon,
+  testCount: 1,
+  questionsPerTest: 150,
+  passPct: 60,
+  // 150 items like CDI's combined Property and Casualty exam (75 + 75), weighted
+  // by the 2025 CDI examination objectives. PSI passes at 60%.
+  blueprint: {
+    pcGeneral: 24,
+    pcPolicy: 23,
+    pcHomeowners: 24,
+    pcAuto: 22,
+    pcCommercial: 20,
+    pcLiability: 25,
+    pcOther: 12,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 4401, name: "Basics, Underwriting & Policy Provisions", categories: ["pcGeneral", "pcPolicy"], size: 47, weightLabel: "31% of the practice exam" },
+    { setNumber: 2, id: 4402, name: "Dwelling & Homeowners", categories: ["pcHomeowners"], size: 24, weightLabel: "16% of the practice exam" },
+    { setNumber: 3, id: 4403, name: "Personal Auto", categories: ["pcAuto"], size: 22, weightLabel: "15% of the practice exam" },
+    { setNumber: 4, id: 4404, name: "Commercial Lines & Other Coverages", categories: ["pcCommercial", "pcLiability", "pcOther"], size: 57, weightLabel: "38% of the practice exam" },
+  ],
+  categoryLabels: pnc.categoryLabels,
+  copy: {
+    guestPrompt: "to save your California property & casualty progress and track every question you miss",
+    trainingHeading: "Train by content area",
+    trainingSub: "Four sets with 150 source-checked questions for California, general topics and California law. Missed questions come back until you master them.",
+    testsHeading: "Full-length practice exam \u00b7 150 questions like the combined CDI exam",
+    heroSubs: [
+      "General topics plus California law.",
+      "Master each set, then take the full exam.",
+      "Halfway there. Try the full test.",
+      "Fix the misses, then retake. 60% passes.",
+      "All done. Go schedule your PSI exam.",
+    ],
+    sourceLine: "Source-checked practice weighted to the 2025 CDI property and casualty objectives. Not affiliated with CDI or PSI; confirm rules in official CDI materials.",
+    analyticsKey: "pnc",
+  },
+};
+
 export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, cna, ptcb, phleb, ccma, cet, danb, foodmgr, realestate, insurance, notary, foodhandler, boating, hunter, cpr, osha, forklift, alcohol, security, lifeguard, pnc, htl, cst, crcst];
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */
-export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ, realestateTX, realestateFL, realestateNY];
+export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ, realestateTX, realestateFL, realestateNY, insuranceTX, insuranceFL, insuranceCA, pncTX, pncFL, pncCA];
 /** Every exam the store and app routes resolve, variants first. */
 export const ALL_EXAMS: ExamConfig[] = [...EXAM_VARIANTS, ...EXAMS];
 

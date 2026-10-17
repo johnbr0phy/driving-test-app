@@ -34,6 +34,12 @@ import realestateNjQuestions from "@/data/real-estate-nj-questions.json";
 import realestateTxQuestions from "@/data/real-estate-tx-questions.json";
 import realestateFlQuestions from "@/data/real-estate-fl-questions.json";
 import realestateNyQuestions from "@/data/real-estate-ny-questions.json";
+import insuranceTxQuestions from "@/data/life-health-tx-questions.json";
+import insuranceFlQuestions from "@/data/life-health-fl-questions.json";
+import insuranceCaQuestions from "@/data/life-health-ca-questions.json";
+import pncTxQuestions from "@/data/property-casualty-tx-questions.json";
+import pncFlQuestions from "@/data/property-casualty-fl-questions.json";
+import pncCaQuestions from "@/data/property-casualty-ca-questions.json";
 import type { ExamId } from "./exams";
 
 // Question banks by exam. Kept apart from lib/exams.ts so the store can
@@ -59,6 +65,12 @@ const BANKS: Record<ExamId, Question[]> = {
   "realestate-tx": realestateTxQuestions as Question[],
   "realestate-fl": realestateFlQuestions as Question[],
   "realestate-ny": realestateNyQuestions as Question[],
+  "insurance-tx": insuranceTxQuestions as Question[],
+  "insurance-fl": insuranceFlQuestions as Question[],
+  "insurance-ca": insuranceCaQuestions as Question[],
+  "pnc-tx": pncTxQuestions as Question[],
+  "pnc-fl": pncFlQuestions as Question[],
+  "pnc-ca": pncCaQuestions as Question[],
   insurance: insuranceQuestions as Question[],
   notary: notaryQuestions as Question[],
   foodhandler: foodhandlerQuestions as Question[],

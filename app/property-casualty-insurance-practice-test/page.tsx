@@ -9,6 +9,24 @@ import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
+const statePractice = [
+  {
+    name: "Texas",
+    href: "/property-casualty-insurance/tx/dashboard",
+    body: "130 source-checked questions on the Pearson VUE Texas outline: 100 general and 30 Texas questions, including TWIA, the FAIR Plan and PIP.",
+  },
+  {
+    name: "Florida",
+    href: "/property-casualty-insurance/fl/dashboard",
+    body: "150 questions weighted to the 2-20 general lines outline: general knowledge plus Florida law, PIP, hurricane rules and Citizens.",
+  },
+  {
+    name: "California",
+    href: "/property-casualty-insurance/ca/dashboard",
+    body: "150 questions like CDI's combined property and casualty exam, with Prop 103, the earthquake offer, wildfire rules and the FAIR Plan.",
+  },
+];
+
 const title = "Free Property & Casualty Insurance Practice Test 2026 - P&C License Exam";
 const description =
   "Free property and casualty insurance license practice tests with 200 questions on the general portion every state tests: insurance basics and underwriting, policy provisions, dwelling and homeowners forms, the Personal Auto Policy, commercial property and the BOP, general liability and workers compensation, flood and surety. Worked arithmetic on every coinsurance and split-limit item.";
@@ -78,7 +96,7 @@ const jsonLd = {
           name: "Does this cover my state's exam?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "It covers the general portion, which is shared by every state's exam: insurance concepts, policy structure, the ISO dwelling and homeowners forms, the Personal Auto Policy, the commercial package and businessowners policies, general liability, workers compensation, flood and surety. The state portion (license law, cancellation notice periods, minimum auto limits, financial responsibility rules) is separate and not covered here.",
+            text: "Texas, Florida and California have their own full-length practice with state law: 130 questions for Texas, 150 for Florida's 2-20 and 150 for California. For other states, the 200-question bank covers the general portion shared by every state's exam: insurance concepts, policy structure, the ISO dwelling and homeowners forms, the Personal Auto Policy, commercial package and businessowners policies, general liability, workers compensation, flood and surety. The state portion (license law, cancellation notice periods, minimum auto limits, financial responsibility rules) is separate.",
           },
         },
         {
@@ -178,6 +196,32 @@ export default function PncLandingPage() {
         </div>
       </div>
 
+      {/* State practice */}
+      <div className="max-w-5xl mx-auto px-6 pb-16 md:pb-24">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-4">
+          State Practice: Texas, Florida and California
+        </h2>
+        <p className="text-lg text-gray-600 dark:text-gray-300 text-center max-w-2xl mx-auto mb-10">
+          Taking the exam in Texas, Florida or California? Practice a full-length exam with questions checked against your state&apos;s insurance law, including state-only rules. Progress is saved separately for each state.
+        </p>
+        <div className="grid md:grid-cols-3 gap-6">
+          {statePractice.map((s) => (
+            <a
+              key={s.href}
+              href={s.href}
+              className="block bg-gray-50 dark:bg-gray-950 rounded-2xl p-6 border border-gray-200 dark:border-gray-800 hover:border-brand transition-colors"
+            >
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-2">{s.name}</h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-3">{s.body}</p>
+              <span className="text-brand-dark font-semibold">Start {s.name} practice &rarr;</span>
+            </a>
+          ))}
+        </div>
+        <p className="text-sm text-gray-500 dark:text-gray-400 text-center mt-6">
+          Practice only. Not affiliated with TDI, Florida DFS, CDI, Pearson VUE or PSI, and a practice score does not predict your exam result.
+        </p>
+      </div>
+
       {/* Blueprint */}
       <div className="bg-gray-50 dark:bg-gray-950 py-16 md:py-24">
         <div className="max-w-5xl mx-auto px-6">
@@ -257,7 +301,7 @@ export default function PncLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Drill your weak domain, then book the state portion</h3>
               <p>
-                TigerTest tracks your accuracy by content area. Most states pass at 70 percent, so retake the set you miss most until you clear 85 percent with room to spare, then spend your last week on your state&apos;s own license law, which this test does not cover.
+                TigerTest tracks your accuracy by content area. Most states pass at 70 percent, so retake the set you miss most until you clear 85 percent with room to spare, then spend your last week on your state&apos;s own license law, which this site covers only for Texas, Florida and California.
               </p>
             </div>
           </div>
@@ -279,7 +323,7 @@ export default function PncLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Does this cover my state&apos;s exam?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              It covers the general portion, which is shared by every state&apos;s exam: insurance concepts, policy structure, the ISO dwelling and homeowners forms, the Personal Auto Policy, the commercial package and businessowners policies, general liability, workers compensation, flood and surety. The state portion (license law, cancellation notice periods, minimum auto limits, financial responsibility rules) is separate and not covered here.
+              Texas, Florida and California have their own full-length practice with state law: 130 questions for Texas, 150 for Florida&apos;s 2-20 and 150 for California. For other states, the 200-question bank covers the general portion shared by every state&apos;s exam: insurance concepts, policy structure, the ISO dwelling and homeowners forms, the Personal Auto Policy, commercial package and businessowners policies, general liability, workers compensation, flood and surety. The state portion (license law, cancellation notice periods, minimum auto limits, financial responsibility rules) is separate.
             </p>
           </div>
           <div>

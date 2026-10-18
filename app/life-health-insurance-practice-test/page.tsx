@@ -9,6 +9,24 @@ import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
+const statePractice = [
+  {
+    name: "Texas",
+    href: "/life-health-insurance/tx/dashboard",
+    body: "130 source-checked questions on the Pearson VUE Texas outline: 100 general and 30 Texas questions, including HMO rules.",
+  },
+  {
+    name: "Florida",
+    href: "/life-health-insurance/fl/dashboard",
+    body: "150 questions like the real 2-15 exam: general knowledge plus Florida law for life, annuities (including variable) and health.",
+  },
+  {
+    name: "California",
+    href: "/life-health-insurance/ca/dashboard",
+    body: "150 questions like CDI's combined life and accident and health exam, with California law, senior protections and Cal-COBRA.",
+  },
+];
+
 const title = "Free Life and Health Insurance Practice Test 2026 - License Exam Prep";
 const description =
   "Free life and health insurance license practice tests with 200 questions on the general portion every state tests: insurance concepts and regulation, life insurance policies, provisions and riders, annuities and taxation, health insurance basics, provisions and policy types including disability, Medicare supplement and long-term care.";
@@ -78,7 +96,7 @@ const jsonLd = {
           name: "Does this cover my state's exam?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "It covers the general portion, which is shared by every state's Pearson VUE, PSI or Prometric exam. The state portion (license law, free-look lengths, replacement rules, guaranty limits) is separate, and no question here states one state's rule as universal.",
+            text: "Texas, Florida and California have their own full-length practice with state law: 130 questions for Texas, 150 for Florida's 2-15 and 150 for California's combined exam. For other states, the 200-question bank covers the general portion shared by every Pearson VUE, PSI or Prometric exam; the state portion (license law, free-look lengths, replacement rules, guaranty limits) is separate, and no question here states one state's rule as universal.",
           },
         },
         {
@@ -180,6 +198,32 @@ export default function InsuranceLandingPage() {
         </div>
       </div>
 
+      {/* State practice */}
+      <div className="max-w-5xl mx-auto px-6 pb-16 md:pb-24">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-4">
+          State Practice: Texas, Florida and California
+        </h2>
+        <p className="text-lg text-gray-600 dark:text-gray-300 text-center max-w-2xl mx-auto mb-10">
+          Taking the exam in Texas, Florida or California? Practice a full-length exam with questions checked against your state&apos;s insurance law, including state-only rules. Progress is saved separately for each state.
+        </p>
+        <div className="grid md:grid-cols-3 gap-6">
+          {statePractice.map((s) => (
+            <a
+              key={s.href}
+              href={s.href}
+              className="block bg-gray-50 dark:bg-gray-950 rounded-2xl p-6 border border-gray-200 dark:border-gray-800 hover:border-brand transition-colors"
+            >
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-2">{s.name}</h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-3">{s.body}</p>
+              <span className="text-brand-dark font-semibold">Start {s.name} practice &rarr;</span>
+            </a>
+          ))}
+        </div>
+        <p className="text-sm text-gray-500 dark:text-gray-400 text-center mt-6">
+          Practice only. Not affiliated with TDI, Florida DFS, CDI, Pearson VUE or PSI, and a practice score does not predict your exam result.
+        </p>
+      </div>
+
       {/* Blueprint */}
       <div className="bg-gray-50 dark:bg-gray-950 py-16 md:py-24">
         <div className="max-w-5xl mx-auto px-6">
@@ -189,7 +233,7 @@ export default function InsuranceLandingPage() {
                 Built on the General Portion Every State Tests
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-                State life and health producer exams from Pearson VUE, PSI and Prometric share a general section built on the NAIC model and the same prelicensing texts. Every practice test here follows that weighting. The state law section is separate and not covered.
+                State life and health producer exams from Pearson VUE, PSI and Prometric share a general section built on the NAIC model and the same prelicensing texts. Every practice test here follows that weighting. The state law section is covered for Texas, Florida and California below.
               </p>
               <div className="space-y-3">
                 {contentAreas.map((area) => (
@@ -259,7 +303,7 @@ export default function InsuranceLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Then study your state portion separately</h3>
               <p>
-                This bank covers the general portion only. Your state exam adds licensing rules, continuing education, replacement forms and guaranty association limits. Clear 75 percent here with room to spare, then study your state&apos;s candidate handbook.
+                Outside Texas, Florida and California, this bank covers the general portion only. Your state exam adds licensing rules, continuing education, replacement forms and guaranty association limits. Clear 75 percent here with room to spare, then study your state&apos;s candidate handbook.
               </p>
             </div>
           </div>
@@ -281,7 +325,7 @@ export default function InsuranceLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Does this cover my state&apos;s exam?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              It covers the general portion, which is shared by every state&apos;s Pearson VUE, PSI or Prometric exam. The state portion (license law, free-look lengths, replacement rules, guaranty limits) is separate, and no question here states one state&apos;s rule as universal.
+              Texas, Florida and California have their own full-length practice with state law: 130 questions for Texas, 150 for Florida&apos;s 2-15 and 150 for California&apos;s combined exam. For other states, the 200-question bank covers the general portion shared by every Pearson VUE, PSI or Prometric exam; the state portion (license law, free-look lengths, replacement rules, guaranty limits) is separate, and no question here states one state&apos;s rule as universal.
             </p>
           </div>
           <div>

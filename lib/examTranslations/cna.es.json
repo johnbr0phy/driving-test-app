@@ -10,7 +10,8 @@
     },
     "2": {
       "name": "Habilidades básicas de enfermería",
-      "weightLabel": "39% del examen"
+      "weightLabel": "39% del examen",
+      "partNames": ["Control de infecciones y seguridad", "Signos vitales, piel e informes"]
     },
     "3": {
       "name": "Cuidado psicosocial",

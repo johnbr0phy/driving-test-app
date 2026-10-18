@@ -371,7 +371,7 @@ function ExamTrainingContent({ exam: source }: { exam: ExamConfig }) {
               {followingPart && setNumber && (
                 <Button asChild className="w-full max-w-xs mx-auto mb-3 flex bg-green-500 hover:bg-green-600 text-white font-bold uppercase tracking-wide h-12 text-base">
                   <Link href={routes.training(setNumber, followingPart.part)}>
-                    {ui.nextPart(followingPart.part, followingPart.partCount)}
+                    {ui.nextPart(trainingPartName(followingPart, lang))}
                   </Link>
                 </Button>
               )}

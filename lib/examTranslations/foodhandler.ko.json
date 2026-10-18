@@ -6,7 +6,8 @@
   "trainingSets": {
     "1": {
       "name": "식품 안전 기초와 개인 위생",
-      "weightLabel": "시험의 40%"
+      "weightLabel": "시험의 40%",
+      "partNames": ["식품 안전 기초", "개인 위생"]
     },
     "2": {
       "name": "오염과 알레르기 유발 물질",

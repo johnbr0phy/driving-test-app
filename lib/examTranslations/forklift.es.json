@@ -6,7 +6,8 @@
   "trainingSets": {
     "1": {
       "name": "Conceptos básicos, reglas e inspección",
-      "weightLabel": "36% de los exámenes"
+      "weightLabel": "36% de los exámenes",
+      "partNames": ["Conceptos básicos y reglas de OSHA", "Inspección, combustible y carga de baterías"]
     },
     "2": {
       "name": "Estabilidad y capacidad de carga",

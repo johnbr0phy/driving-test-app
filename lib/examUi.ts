@@ -20,7 +20,8 @@ export interface ExamUi {
   trainingBadge: (shortName: string) => string;
   masteredMyTraining: (shortName: string) => string;
   mastered: string;
-  nextPart: (part: number, partCount: number) => string;
+  /** Button to the next unfinished part of a split set, by its display name. */
+  nextPart: (name: string) => string;
   setN: (n: number) => string;
   statsSeen: (seen: number, total: number, shortName: string) => string;
   /** Locale for attempt-chart dates. */
@@ -51,7 +52,7 @@ const en: ExamUi = {
   trainingBadge: (shortName) => `${shortName} TRAINING`,
   masteredMyTraining: (shortName) => `MASTERED MY ${shortName} TRAINING`,
   mastered: "MASTERED",
-  nextPart: (part, partCount) => `Next: part ${part} of ${partCount}`,
+  nextPart: (name) => `Next: ${name}`,
   setN: (n) => `Set ${n}`,
   statsSeen: (seen, total, shortName) =>
     `${seen} of ${total} ${shortName} questions seen. Tap any row to answer it again.`,
@@ -82,7 +83,7 @@ const es: ExamUi = {
   trainingBadge: (shortName) => `ENTRENAMIENTO ${shortName}`,
   masteredMyTraining: (shortName) => `DOMINÉ MI ENTRENAMIENTO ${shortName}`,
   mastered: "DOMINADO",
-  nextPart: (part, partCount) => `Siguiente: parte ${part} de ${partCount}`,
+  nextPart: (name) => `Siguiente: ${name}`,
   setN: (n) => `Grupo ${n}`,
   statsSeen: (seen, total, shortName) =>
     `Has visto ${seen} de ${total} preguntas de ${shortName}. Toca cualquier fila para responderla de nuevo.`,
@@ -113,7 +114,7 @@ const vi: ExamUi = {
   trainingBadge: (shortName) => `LUYỆN TẬP ${shortName}`,
   masteredMyTraining: (shortName) => `ĐÃ NẮM VỮNG PHẦN LUYỆN TẬP ${shortName}`,
   mastered: "ĐÃ NẮM VỮNG",
-  nextPart: (part, partCount) => `Tiếp theo: phần ${part}/${partCount}`,
+  nextPart: (name) => `Tiếp theo: ${name}`,
   setN: (n) => `Bộ ${n}`,
   statsSeen: (seen, total, shortName) => `Đã gặp ${seen}/${total} câu hỏi ${shortName}. Chạm vào hàng bất kỳ để trả lời lại.`,
   dateLocale: "vi-VN",
@@ -143,7 +144,7 @@ const ko: ExamUi = {
   trainingBadge: (shortName) => `${shortName} 연습`,
   masteredMyTraining: (shortName) => `${shortName} 연습 마스터 완료`,
   mastered: "마스터 완료",
-  nextPart: (part, partCount) => `다음: ${partCount}부 중 ${part}부`,
+  nextPart: (name) => `다음: ${name}`,
   setN: (n) => `세트 ${n}`,
   statsSeen: (seen, total, shortName) => `${shortName} 문제 ${total}개 중 ${seen}개를 봤어요. 아무 줄이나 눌러 다시 풀어 보세요.`,
   dateLocale: "ko-KR",

@@ -236,7 +236,7 @@
     "optionD": "Every other compliance period",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "11 NCAC 6A .0802(b) requires property, personal lines and adjuster licensees to complete a 3-credit flood and NFIP course in every other biennial compliance period. It counts toward the 24 credits, including 3 of ethics, due each period.",
+    "explanation": "11 NCAC 6A .0802(b) requires property, personal lines and adjuster licensees to complete a 3-credit course on flood insurance and the NFIP in every other biennial compliance period. Separately, .0802(a) requires 24 credits each period, including a 3-credit ethics course.",
     "sourceQuestionId": "PCNC-NCLIC-004"
   },
   {
@@ -941,7 +941,7 @@
     "optionD": "Is a nonadmitted surplus lines carrier",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "A vehicle is uninsured when there is no liability policy, the limits are below the state minimum, the insurer denies coverage or is insolvent, or the vehicle is a hit-and-run. North Carolina's G.S. 20-279.21(b)(3) includes the insolvent-insurer case, and equal limits make it insured, not uninsured.",
+    "explanation": "A vehicle is uninsured when it has no liability policy, its limits are below the state minimum, or its insurer denies coverage or is insolvent; a hit-and-run vehicle also counts. North Carolina's G.S. 20-279.21(b)(3) names each of these cases, and limits equal to the insured's do not make a vehicle uninsured.",
     "sourceQuestionId": "PC-AUTO-016"
   },
   {
@@ -956,7 +956,7 @@
     "optionD": "The insured's own limits are below the state minimum",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "UIM fills the gap when the at-fault driver's liability limits are lower than the insured's UIM limits and are not enough to pay the damages. A driver with no insurance triggers UM rather than UIM.",
+    "explanation": "In North Carolina a vehicle is underinsured when the at-fault driver's total liability limits are less than the injured person's damages (G.S. 20-279.21(b)(4)), and UIM pays that shortfall up to its own limits. A driver with no insurance at all triggers UM rather than UIM.",
     "sourceQuestionId": "PC-AUTO-017"
   },
   {
@@ -1046,7 +1046,7 @@
     "optionD": "Needs it only above minimums",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "G.S. 20-279.21(b)(3), (b)(4) and (m) now require every such policy to include uninsured motorist bodily injury and property damage and underinsured motorist coverage. The insured may choose other limits, but not below the minimum financial responsibility limits.",
+    "explanation": "For policies issued or renewed on or after July 1, 2025, G.S. 20-279.21(b)(3), (b)(4) and (m) require every such policy to include uninsured motorist bodily injury and property damage and underinsured motorist coverage. The insured may choose other limits, but not below the minimum financial responsibility limits.",
     "sourceQuestionId": "PCNC-NCAUT-001"
   },
   {

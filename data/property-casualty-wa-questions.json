@@ -1220,13 +1220,13 @@
     "questionId": "PCWA-WAHOM-003",
     "category": "pcHomeowners",
     "question": "Under Washington law, an insurer may NOT use a consumer's credit history to:",
-    "optionA": "Cancel or nonrenew a home policy",
+    "optionA": "Nonrenew a homeowners policy",
     "optionB": "Deny with other underwriting factors",
     "optionC": "Place the risk with an affiliate",
     "optionD": "Assign a higher rating tier",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "RCW 48.18.545(3) bars canceling or nonrenewing personal insurance based in whole or part on credit history or an insurance score. Credit may be used to deny only with other substantive factors, and to rate with an adverse action notice.",
+    "explanation": "RCW 48.18.545(3) bars nonrenewing or canceling personal insurance based in whole or part on credit history or an insurance score; only a cancellation in the first 60 days counts as a denial. Credit may be used to deny only with other substantive factors, and to rate with an adverse action notice.",
     "sourceQuestionId": "PCWA-WAHOM-003"
   },
   {

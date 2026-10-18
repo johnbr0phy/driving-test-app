@@ -1691,7 +1691,7 @@
     "optionD": "One year after the loss",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "The legal actions provision required by Insurance Law section 3216(d)(1) bars suit until 60 days after written proof of loss and after three years from the time proof of loss was required. The 60 days give the insurer time to pay before litigation starts.",
+    "explanation": "The legal actions provision required by Insurance Law section 3216(d)(1) bars suit earlier than 60 days after written proof of loss or later than three years after proof of loss was required. The 60 days give the insurer time to pay before litigation starts.",
     "sourceQuestionId": "LHNY-NYHPR-004"
   },
   {

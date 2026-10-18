@@ -1,5 +1,6 @@
 "use client";
 
+import "@/lib/banks/lifeHealthStates";
 import { ExamTrainingPage } from "@/components/exam/ExamTrainingPage";
 import { useExamVariant } from "@/hooks/useExamVariant";
 

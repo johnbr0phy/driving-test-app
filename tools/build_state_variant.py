@@ -1,11 +1,12 @@
 """Build a state variant bank from a family's national bank plus that state's
-own items. Families: realestate (TX, FL, NY), insurance (life & health) and
-pnc (property & casualty), each for TX, FL and CA.
+own items. Families: realestate, insurance (life & health) and pnc (property
+& casualty), for the states listed in FAMILIES plus any whose national.json
+carries a "total".
 
 Usage: python3 tools/build_state_variant.py <family> <ST> <dir>
 
 <dir> holds:
-  national.json     {"include": [national ids], "overrides": {id: {field: text}}}
+  national.json     {"total": N, "include": [national ids], "overrides": {id: {field: text}}}
                     National items reused on the state form. Overrides change
                     wording only (to fit state law), never the key.
   state_items.json  State-law items, already in bank schema with ids <P><ST>-<ST><SEG>-NNN
@@ -72,10 +73,10 @@ for q in bank:
     assert q["category"] in CATEGORIES, q["questionId"]
     assert "ABCD".index(q["correctAnswer"]) == q["correctIndex"], q["questionId"]
     assert "—" not in json.dumps(q, ensure_ascii=False), ("em-dash", q["questionId"])
-assert len(bank) == EXPECTED[code] == len({q["questionId"] for q in bank}), len(bank)
+assert len(bank) == EXPECTED.get(code, spec.get("total")) == len({q["questionId"] for q in bank}), len(bank)
 bank.sort(key=lambda q: (CATEGORIES.index(q["category"]), q["questionId"]))
 (root / f"data/{fam['bank']}-{code.lower()}-questions.json").write_text(
     json.dumps(bank, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 counts = {c: sum(q["category"] == c for q in bank) for c in CATEGORIES}
-state_n = sum(q["questionId"].startswith(prefix + code) for q in bank)
+state_n = sum(q["questionId"] == q["sourceQuestionId"] for q in bank)
 print(code, len(bank), f"({len(bank) - state_n} national, {state_n} state)", counts)

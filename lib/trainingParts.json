@@ -312,5 +312,65 @@
       34,
       35
     ]
+  },
+  "5501": {
+    "starts": [
+      "PCPA-GEN-001",
+      "PCPA-PALIC-004"
+    ],
+    "sizes": [
+      31,
+      32
+    ]
+  },
+  "5551": {
+    "starts": [
+      "PCIL-GEN-001",
+      "PCIL-ILLIC-009"
+    ],
+    "sizes": [
+      45,
+      45
+    ]
+  },
+  "5651": {
+    "starts": [
+      "PCGA-GALIC-001",
+      "PCGA-GEN-017"
+    ],
+    "sizes": [
+      36,
+      36
+    ]
+  },
+  "5751": {
+    "starts": [
+      "PCMI-GEN-003",
+      "PCMI-MIMKT-003"
+    ],
+    "sizes": [
+      30,
+      31
+    ]
+  },
+  "5801": {
+    "starts": [
+      "PCNJ-GEN-001",
+      "PCNJ-NJPRA-007"
+    ],
+    "sizes": [
+      39,
+      39
+    ]
+  },
+  "5901": {
+    "starts": [
+      "PCWA-GEN-001",
+      "PCWA-POL-017"
+    ],
+    "sizes": [
+      31,
+      32
+    ]
   }
 }

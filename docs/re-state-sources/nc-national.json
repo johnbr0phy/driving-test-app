@@ -1,0 +1,156 @@
+{
+ "total": 140,
+ "include": [
+  "RE-PROP-001",
+  "RE-PROP-002",
+  "RE-PROP-003",
+  "RE-PROP-014",
+  "RE-PROP-015",
+  "RE-PROP-017",
+  "RE-PROP-021",
+  "RE-PROP-022",
+  "RE-PROP-026",
+  "RE-OWN-001",
+  "RE-OWN-003",
+  "RE-OWN-007",
+  "RE-OWN-011",
+  "RE-OWN-014",
+  "RE-OWN-017",
+  "RE-OWN-018",
+  "RE-OWN-023",
+  "RE-VAL-001",
+  "RE-VAL-002",
+  "RE-VAL-003",
+  "RE-VAL-005",
+  "RE-VAL-011",
+  "RE-VAL-014",
+  "RE-VAL-016",
+  "RE-VAL-018",
+  "RE-VAL-020",
+  "RE-VAL-022",
+  "RE-VAL-026",
+  "RE-CON-002",
+  "RE-CON-003",
+  "RE-CON-004",
+  "RE-CON-005",
+  "RE-CON-009",
+  "RE-CON-014",
+  "RE-CON-015",
+  "RE-CON-018",
+  "RE-CON-020",
+  "RE-CON-026",
+  "RE-CON-027",
+  "RE-CON-031",
+  "RE-CON-035",
+  "RE-CON-037",
+  "RE-CON-039",
+  "RE-CON-040",
+  "RE-PRAC-001",
+  "RE-PRAC-002",
+  "RE-PRAC-003",
+  "RE-PRAC-004",
+  "RE-PRAC-006",
+  "RE-PRAC-007",
+  "RE-PRAC-008",
+  "RE-PRAC-014",
+  "RE-PRAC-015",
+  "RE-PRAC-016",
+  "RE-PRAC-019",
+  "RE-PRAC-020",
+  "RE-PRAC-021",
+  "RE-PRAC-023",
+  "RE-DISC-001",
+  "RE-DISC-002",
+  "RE-DISC-003",
+  "RE-DISC-004",
+  "RE-DISC-007",
+  "RE-DISC-009",
+  "RE-DISC-011",
+  "RE-DISC-014",
+  "RE-FIN-001",
+  "RE-FIN-004",
+  "RE-FIN-008",
+  "RE-FIN-010",
+  "RE-FIN-012",
+  "RE-FIN-013",
+  "RE-FIN-014",
+  "RE-MATH-001",
+  "RE-MATH-004",
+  "RE-MATH-009",
+  "RE-MATH-010",
+  "RE-MATH-011",
+  "RE-MATH-012",
+  "RE-MATH-019"
+ ],
+ "overrides": {
+  "RE-PROP-017": {
+   "explanation": "A section has 640 acres, so 640 / 4 = 160 acres for the SW 1/4, and 160 / 4 = 40 acres for the NE 1/4 of it. The 160-acre answer stops at the quarter section. The rectangular survey is tested on the National section; North Carolina was never surveyed this way and uses metes and bounds and recorded plats."
+  },
+  "RE-OWN-003": {
+   "explanation": "Tenancy by the entirety, which North Carolina recognizes for spouses (G.S. 41-56), carries survivorship, and neither spouse may convey or encumber the property without the other's written joinder (G.S. 41-58). A joint tenant, by contrast, can end the survivorship by conveying a share."
+  },
+  "RE-OWN-023": {
+   "explanation": "Under North Carolina's Conner Act (G.S. 47-18) an unrecorded deed is not valid against a later purchaser for value, and priority follows the order of recording, so Buyer 2 prevails. Buyer 1's deed still binds the seller who signed it."
+  },
+  "RE-CON-002": {
+   "explanation": "Only the owner makes a promise, and the broker earns the fee only by performing, so the contract is unilateral. A bilateral contract needs a promise from each side. In North Carolina the broker could not sue on this oral promise, because G.S. 93A-13 requires a signed writing."
+  },
+  "RE-CON-026": {
+   "explanation": "Dual agency is lawful only with each principal's informed written authority; in North Carolina Rule 58A .0104(d) requires it, and some states ban dual agency entirely. Telling only the seller leaves the buyer unaware of the divided loyalty."
+  },
+  "RE-CON-027": {
+   "question": "A firm assigns one of its brokers to represent the seller and another of its brokers to represent the buyer in the same sale. This arrangement is:",
+   "explanation": "In designated agency the firm, as a dual agent, assigns separate brokers to each client, which North Carolina allows with the clients' prior approval under Rule 58A .0104(j). Subagency involves a cooperating broker working for the seller through the listing firm."
+  },
+  "RE-CON-037": {
+   "explanation": "A known latent material defect must be disclosed, and the duty of obedience covers only lawful instructions. In North Carolina, G.S. 93A-6(a)(1) and Rule 58A .0114(c) make this the broker's own duty, whatever the seller instructs or marks on the disclosure statement."
+  },
+  "RE-CON-040": {
+   "explanation": "Rule 58A .0104(e) requires a broker working with a buyer as a seller's agent to disclose the seller agency in writing at first substantial contact, before the buyer shares confidential information. Collecting his maximum price first would let him reveal information the seller's agent must share with her client."
+  },
+  "RE-PRAC-001": {
+   "question": "A seller asks the listing broker to write a custom clause reserving a life estate in the sales contract. The broker should:",
+   "optionC": "Have the broker-in-charge write it",
+   "explanation": "Drafting legal language is the practice of law, which G.S. 93A-6(a)(11) and Rule 58A .0111 forbid; a broker may only complete preprinted forms and must refer legal questions to an attorney. Having the broker-in-charge draft it is still practicing law."
+  },
+  "RE-PRAC-002": {
+   "question": "A provisional broker receives a buyer's earnest money check with an offer on Friday afternoon. What should the provisional broker do with it?",
+   "optionC": "Keep it in a desk drawer until closing",
+   "optionD": "Promptly turn it over to the firm's BIC",
+   "explanation": "Rule 58A .0116(b)(1) requires a provisional broker to deliver all trust money upon receipt to the broker with whom he or she is affiliated, normally the broker-in-charge, who deposits it in the firm's trust account. Holding it or handing it to the seller breaches the duty to account."
+  },
+  "RE-PRAC-016": {
+   "question": "A broker mails flyers claiming a minority family's arrival will lower values and urges owners to sell now. This is:"
+  },
+  "RE-PRAC-021": {
+   "question": "A provisional broker knowingly overstates a home's square footage in the MLS. The buyer can also sue the brokerage firm under the doctrine of:",
+   "explanation": "Vicarious liability makes a firm answerable for the acts of its brokers within the scope of their work, and Rule 58A .0506(d) makes the broker-in-charge responsible for supervising provisional brokers. Caveat emptor does not excuse a broker's misrepresentation."
+  },
+  "RE-FIN-001": {
+   "question": "In a deed of trust, which party holds title for the lender and may conduct a foreclosure sale under a power of sale if the borrower defaults?",
+   "explanation": "The trustee holds title on behalf of the lender (beneficiary) and has the power of sale; the borrower is the trustor. In North Carolina a power of sale foreclosure first requires a hearing before the clerk of superior court under G.S. 45-21.16."
+  },
+  "RE-OWN-017": {
+   "explanation": "A valid deed needs a competent grantor, an identifiable grantee, words of conveyance, an adequate legal description, the grantor's signature, and delivery and acceptance. The grantee usually does not sign. Recording protects against later purchasers (G.S. 47-18), and in North Carolina a deed of gift is void unless recorded within two years (G.S. 47-26)."
+  },
+  "RE-FIN-013": {
+   "question": "A title company offers a broker $200 for every buyer the broker refers to it. Under RESPA, accepting this payment is:",
+   "optionA": "Legal if paid through the broker's firm",
+   "explanation": "RESPA Section 8 bans fees, kickbacks or anything of value for referring settlement service business, and Rule 58A .0109(i) bars North Carolina brokers from accepting any fee RESPA prohibits. Disclosure does not make a referral fee legal."
+  }
+ },
+ "excluded": {
+  "RE-OWN-004": "Community property: North Carolina is not a community property state; spouses hold entireties property instead (G.S. 41-56).",
+  "RE-OWN-021": "Hypothetical 12-year adverse possession period matches no North Carolina period (20 years under G.S. 1-40, or 7 under color of title under G.S. 1-38) and could mislead.",
+  "RE-CON-006": "Keys that a lease longer than one year must be in writing; North Carolina's Statute of Frauds (G.S. 22-2) covers leases exceeding three years. Tested correctly by RENC-NCCON-001.",
+  "RE-CON-028": "Transaction broker / facilitator status does not exist under North Carolina law; Rule 58A .0104 recognizes only agency (including dual and designated agency).",
+  "RE-MATH-006": "Assumes assessment at 40% of market value; North Carolina appraises property at its true value in money, meaning market value (G.S. 105-283), so the assessment-ratio step misleads.",
+  "RE-VAL-028": "Keys that assessments are often a fraction of market value; North Carolina appraises at market value as of the reappraisal date (G.S. 105-283, 105-286).",
+  "RE-MATH-016": "Transfer tax at $1.10 per $500; North Carolina's excise tax is $1 per $500 (G.S. 105-228.30), tested by RENC-NCTAX-001. Overriding cannot change the keyed number.",
+  "RE-DISC-015": "Keys that disclosure requirements vary by state; North Carolina has a specific statutory form (Chapter 47E, Rule 58A .0114) tested by RENC-NCOTH items.",
+  "RE-DISC-020": "Inspection contingency framing; the standard North Carolina offer form uses a due diligence period instead, so the keyed purpose could mislead.",
+  "RE-FIN-003": "Lien theory framing; North Carolina uses deeds of trust with a trustee and the label is contested in NC texts, so the item could mislead.",
+  "RE-DISC-016": "Near-duplicate of RE-CON-037 (flooding basement), which is included.",
+  "RE-PRAC-009": "Net listing keyed as the broker keeping the excess; left out because net listing rules vary by state and the item adds nothing NC-specific; dropped for weighting."
+ }
+}

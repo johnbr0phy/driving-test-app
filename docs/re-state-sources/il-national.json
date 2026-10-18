@@ -1,0 +1,160 @@
+{
+ "total": 140,
+ "include": [
+  "RE-PROP-001",
+  "RE-PROP-002",
+  "RE-PROP-014",
+  "RE-PROP-015",
+  "RE-PROP-017",
+  "RE-PROP-026",
+  "RE-PROP-028",
+  "RE-OWN-001",
+  "RE-OWN-002",
+  "RE-OWN-015",
+  "RE-PROP-021",
+  "RE-PROP-022",
+  "RE-PROP-023",
+  "RE-PROP-025",
+  "RE-OWN-007",
+  "RE-VAL-001",
+  "RE-VAL-003",
+  "RE-VAL-005",
+  "RE-VAL-011",
+  "RE-VAL-014",
+  "RE-VAL-016",
+  "RE-VAL-022",
+  "RE-VAL-026",
+  "RE-FIN-002",
+  "RE-FIN-003",
+  "RE-FIN-004",
+  "RE-FIN-006",
+  "RE-FIN-008",
+  "RE-FIN-009",
+  "RE-FIN-010",
+  "RE-FIN-012",
+  "RE-FIN-013",
+  "RE-FIN-014",
+  "RE-CON-001",
+  "RE-CON-002",
+  "RE-CON-003",
+  "RE-CON-004",
+  "RE-CON-005",
+  "RE-CON-007",
+  "RE-CON-009",
+  "RE-CON-010",
+  "RE-CON-011",
+  "RE-CON-014",
+  "RE-CON-015",
+  "RE-CON-016",
+  "RE-CON-006",
+  "RE-CON-018",
+  "RE-CON-019",
+  "RE-CON-020",
+  "RE-CON-021",
+  "RE-CON-022",
+  "RE-OWN-013",
+  "RE-CON-026",
+  "RE-CON-027",
+  "RE-CON-031",
+  "RE-CON-032",
+  "RE-CON-033",
+  "RE-CON-035",
+  "RE-CON-036",
+  "RE-CON-037",
+  "RE-CON-038",
+  "RE-CON-039",
+  "RE-CON-040",
+  "RE-PRAC-006",
+  "RE-PRAC-007",
+  "RE-DISC-001",
+  "RE-DISC-004",
+  "RE-DISC-007",
+  "RE-DISC-009",
+  "RE-DISC-011",
+  "RE-DISC-017",
+  "RE-DISC-020",
+  "RE-PRAC-011",
+  "RE-PRAC-019",
+  "RE-PRAC-020",
+  "RE-OWN-017",
+  "RE-OWN-018",
+  "RE-OWN-019",
+  "RE-OWN-020",
+  "RE-OWN-024",
+  "RE-FIN-016",
+  "RE-PRAC-003",
+  "RE-PRAC-004",
+  "RE-PRAC-005",
+  "RE-PRAC-014",
+  "RE-PRAC-015",
+  "RE-PRAC-016",
+  "RE-PRAC-017",
+  "RE-PRAC-018",
+  "RE-PRAC-013",
+  "RE-PRAC-022",
+  "RE-PRAC-023",
+  "RE-PRAC-024",
+  "RE-MATH-011",
+  "RE-MATH-005",
+  "RE-MATH-017",
+  "RE-MATH-014",
+  "RE-MATH-008",
+  "RE-MATH-004",
+  "RE-MATH-013"
+ ],
+ "overrides": {
+  "RE-FIN-013": {
+   "question": "A title company offers a sponsored broker $200 for every buyer the broker refers to it. Under RESPA, accepting this payment is:",
+   "optionA": "Legal if paid through the sponsoring broker",
+   "optionB": "Legal if the managing broker approves",
+   "explanation": "RESPA Section 8 bans fees, kickbacks or anything of value given for referring settlement service business on federally related loans, and 225 ILCS 454/10-15(f) keeps RESPA in force for Illinois licensees. Disclosure does not make a referral fee legal; only bona fide payment for services actually performed is allowed."
+  },
+  "RE-CON-027": {
+   "question": "The sponsoring broker names one licensee to represent the seller and another licensee from the same firm to represent the buyer in one sale. This arrangement is:",
+   "explanation": "In designated agency the sponsoring broker names separate licensees as agents of each client, and under 225 ILCS 454/15-50 the firm is not then acting for more than one party. Subagency, a cooperating licensee working for the seller, cannot be offered through an Illinois MLS under Section 15-55."
+  },
+  "RE-CON-026": {
+   "explanation": "225 ILCS 454/15-45 allows an Illinois licensee to act as a dual agent only with the informed written consent of all clients. Telling only the seller leaves the buyer unaware of the divided loyalty."
+  },
+  "RE-CON-032": {
+   "question": "Without authorization, a broker negotiates an offer on a home that is not listed. The owner then accepts the offer and agrees to pay the fee. This agency arose by:"
+  },
+  "RE-CON-036": {
+   "question": "Under the duty of accounting, an agent must:",
+   "explanation": "225 ILCS 454/15-15(a)(2)(D) requires an Illinois licensee to timely account for all money and property received in which the client has an interest, which means safeguarding and reporting on it. Disclosing material facts is the separate duty in Section 15-15(a)(2)(C)."
+  },
+  "RE-CON-037": {
+   "explanation": "225 ILCS 454/15-25 requires a licensee working for a seller to disclose to prospective buyers latent material adverse facts about the property's physical condition that the licensee actually knows, whatever the seller instructs. Waiting for a buyer to ask is not enough because the defect cannot be discovered by inspection."
+  },
+  "RE-CON-039": {
+   "explanation": "Under 225 ILCS 454/15-25 an Illinois licensee must treat customers honestly, never knowingly or negligently give them false information, and disclose known latent material defects. Loyalty and the other client duties of Section 15-15 belong only to the client."
+  },
+  "RE-CON-040": {
+   "explanation": "225 ILCS 454/15-35(c) requires written notice that the licensee is not the customer's agent at a time intended to prevent disclosure of confidential information, and no later than preparing an offer. Collecting his maximum price first would let him reveal information the seller's agent must share with her client."
+  },
+  "RE-CON-022": {
+   "explanation": "Illinois Rule 1450.750(h) requires the sponsoring broker to keep disputed escrow moneys in the escrow account until a written release from all parties, a court action, or transfer to the State Treasurer as unclaimed property. The broker cannot decide the dispute by paying either party on its own."
+  },
+  "RE-PRAC-005": {
+   "question": "An Illinois broker works as an independent contractor for a brokerage. Who is responsible for supervising the broker's real estate activities?",
+   "optionC": "The sponsoring broker",
+   "optionD": "The broker alone, as a contractor",
+   "explanation": "A licensee may act only for her sponsoring broker under 225 ILCS 454/10-20, and the sponsoring broker supervises through its designated managing broker under Section 10-55 and Rule 1450.705. Independent contractor status does not remove that supervisory duty."
+  },
+  "RE-PRAC-016": {
+   "question": "A broker mails flyers claiming a minority family's arrival will lower values and urges owners to sell now. This is:"
+  },
+  "RE-PRAC-024": {
+   "question": "An Illinois broker plans to cold-call homeowners about listing their homes. Under federal Do Not Call rules, the broker must:"
+  },
+  "RE-PRAC-014": {
+   "explanation": "Familial status protects households with children under 18 and pregnant women. Marital status is protected by the Illinois Human Rights Act but not the federal Fair Housing Act, and the refusal here is about children."
+  },
+  "RE-VAL-026": {
+   "explanation": "A broker price opinion (BPO) is the term used for a broker's estimate of probable selling price prepared for a lender or other third party, often on distressed property. Under 225 ILCS 454/10-45 either a BPO or a CMA must be in writing and state that it is not an appraisal."
+  },
+  "RE-FIN-003": {
+   "explanation": "Illinois is a lien-theory state: the mortgage creates only a lien, and the borrower (mortgagor) keeps legal title. In title-theory states the lender holds legal title until the loan is repaid, which is the tempting but wrong answer here."
+  }
+ }
+}

@@ -16,6 +16,10 @@ import { readFileSync, writeFileSync } from "fs";
 import { join } from "path";
 import { ALL_EXAMS, TRAINING_PART_MAX, TRAINING_PART_TARGET } from "@/lib/exams";
 import { getExamQuestions } from "@/lib/examData";
+// State variant banks are registered by these modules, not by examData itself.
+import "@/lib/banks/realEstateStates";
+import "@/lib/banks/lifeHealthStates";
+import "@/lib/banks/propertyCasualtyStates";
 
 const out: Record<string, { starts: string[]; sizes: number[] }> = {};
 const problems: string[] = [];

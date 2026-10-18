@@ -30,23 +30,12 @@ import pncQuestions from "@/data/property-casualty-questions.json";
 import htlQuestions from "@/data/htl-questions.json";
 import cstQuestions from "@/data/cst-questions.json";
 import crcstQuestions from "@/data/crcst-questions.json";
-import realestateCaQuestions from "@/data/real-estate-ca-questions.json";
-import realestateNjQuestions from "@/data/real-estate-nj-questions.json";
-import realestateTxQuestions from "@/data/real-estate-tx-questions.json";
-import realestateFlQuestions from "@/data/real-estate-fl-questions.json";
-import realestateNyQuestions from "@/data/real-estate-ny-questions.json";
-import insuranceTxQuestions from "@/data/life-health-tx-questions.json";
-import insuranceFlQuestions from "@/data/life-health-fl-questions.json";
-import insuranceCaQuestions from "@/data/life-health-ca-questions.json";
-import pncTxQuestions from "@/data/property-casualty-tx-questions.json";
-import pncFlQuestions from "@/data/property-casualty-fl-questions.json";
-import pncCaQuestions from "@/data/property-casualty-ca-questions.json";
 import type { ExamId } from "./exams";
 import type { Language } from "@/i18n";
 
 // Question banks by exam. Kept apart from lib/exams.ts so the store can
 // import the registry without bundling every bank.
-const BANKS: Record<ExamId, Question[]> = {
+const BANKS: Partial<Record<ExamId, Question[]>> = {
   cdl: cdlQuestions as Question[],
   cdlx: cdlxQuestions as Question[],
   moto: motoQuestions as Question[],
@@ -62,17 +51,6 @@ const BANKS: Record<ExamId, Question[]> = {
   danb: danbQuestions as Question[],
   foodmgr: foodmgrQuestions as Question[],
   realestate: realestateQuestions as Question[],
-  "realestate-ca": realestateCaQuestions as Question[],
-  "realestate-nj": realestateNjQuestions as Question[],
-  "realestate-tx": realestateTxQuestions as Question[],
-  "realestate-fl": realestateFlQuestions as Question[],
-  "realestate-ny": realestateNyQuestions as Question[],
-  "insurance-tx": insuranceTxQuestions as Question[],
-  "insurance-fl": insuranceFlQuestions as Question[],
-  "insurance-ca": insuranceCaQuestions as Question[],
-  "pnc-tx": pncTxQuestions as Question[],
-  "pnc-fl": pncFlQuestions as Question[],
-  "pnc-ca": pncCaQuestions as Question[],
   insurance: insuranceQuestions as Question[],
   notary: notaryQuestions as Question[],
   foodhandler: foodhandlerQuestions as Question[],
@@ -90,6 +68,12 @@ const BANKS: Record<ExamId, Question[]> = {
   crcst: crcstQuestions as Question[],
 };
 
+/** State variant banks register here from lib/banks/*States.ts, which only the
+ *  app/<slug>/[state] pages import, so no other exam's pages bundle them. */
+export function registerExamBanks(banks: Partial<Record<ExamId, Question[]>>) {
+  Object.assign(BANKS, banks);
+}
+
 // Translated banks: same questionIds, categories and answer keys as the
 // English bank, so tests, sets and progress line up in every language.
 // An exam listed here also needs ExamConfig.translations.
@@ -98,5 +82,7 @@ const TRANSLATED_BANKS: Partial<Record<ExamId, Partial<Record<Language, Question
 };
 
 export function getExamQuestions(examId: ExamId, language: Language = "en"): Question[] {
-  return TRANSLATED_BANKS[examId]?.[language] ?? BANKS[examId];
+  const bank = TRANSLATED_BANKS[examId]?.[language] ?? BANKS[examId];
+  if (!bank) throw new Error(`No question bank registered for ${examId}`);
+  return bank;
 }

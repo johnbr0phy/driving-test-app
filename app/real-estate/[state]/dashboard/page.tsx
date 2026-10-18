@@ -1,5 +1,6 @@
 "use client";
 
+import "@/lib/banks/realEstateStates";
 import { ExamDashboard } from "@/components/exam/ExamDashboard";
 import { useExamVariant } from "@/hooks/useExamVariant";
 

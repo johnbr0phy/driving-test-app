@@ -117,16 +117,19 @@ export function TeachLanding({ signedIn }: { signedIn: boolean }) {
             )}
           </div>
 
-          <div className="mt-16 flex flex-col md:flex-row items-center md:items-end justify-center gap-10 md:gap-12">
-            <div>
+          <div className="mt-16 flex flex-col md:flex-row items-center justify-center gap-10 md:gap-8 lg:gap-10">
+            <div className="shrink-0">
               <PhonePreview />
-              <p className="text-sm text-gray-500 dark:text-gray-400 mt-5">Students join in seconds</p>
+              <p className="text-sm text-gray-500 dark:text-gray-400 mt-4 md:hidden">Students join with just a name</p>
             </div>
-            <div>
+            <div className="w-full md:w-auto md:flex-1 max-w-[640px]">
               <BrowserPreview />
-              <p className="text-sm text-gray-500 dark:text-gray-400 mt-5">You see the whole class</p>
+              <p className="text-sm text-gray-500 dark:text-gray-400 mt-4 md:hidden">You see the whole class</p>
             </div>
           </div>
+          <p className="hidden md:block text-sm text-gray-500 dark:text-gray-400 mt-8">
+            Students join on their phone with just a name. You see the whole class.
+          </p>
         </div>
       </div>
 
@@ -135,7 +138,7 @@ export function TeachLanding({ signedIn }: { signedIn: boolean }) {
         <div className="max-w-4xl mx-auto px-6 py-8 grid grid-cols-3 gap-4 text-center">
           {[
             [`${testCount}`, "tests, from DMV to NCLEX"],
-            ["0", "student accounts needed"],
+            ["1", "link for your whole class"],
             ["$0", "for you and your students"],
           ].map(([n, l]) => (
             <div key={l}>

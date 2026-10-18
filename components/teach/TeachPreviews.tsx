@@ -6,29 +6,40 @@ import { Users } from "lucide-react";
 
 export function PhonePreview() {
   return (
-    <div className="w-[230px] md:w-[250px] rounded-[2rem] border-[6px] border-gray-900 dark:border-gray-700 bg-gray-50 dark:bg-gray-950 shadow-2xl overflow-hidden" aria-hidden="true">
-      <div className="h-6 flex items-center justify-center">
-        <div className="h-1.5 w-16 rounded-full bg-gray-300 dark:bg-gray-700" />
+    <div className="w-[260px] h-[520px] rounded-[2.75rem] border-[10px] border-gray-900 dark:border-gray-700 bg-gray-50 dark:bg-gray-950 shadow-2xl overflow-hidden flex flex-col text-left" aria-hidden="true">
+      <div className="relative h-8 shrink-0 flex items-center justify-between px-6 text-[11px] font-semibold text-gray-900 dark:text-gray-50">
+        <span>9:41</span>
+        <span className="absolute left-1/2 top-1.5 -translate-x-1/2 h-5 w-20 rounded-full bg-gray-900 dark:bg-gray-700" />
+        <span className="flex items-end gap-0.5">
+          <span className="w-0.5 h-1.5 rounded-sm bg-current" />
+          <span className="w-0.5 h-2 rounded-sm bg-current" />
+          <span className="w-0.5 h-2.5 rounded-sm bg-current" />
+          <span className="ml-1 w-5 h-2.5 rounded-[3px] border border-current" />
+        </span>
       </div>
-      <div className="px-3 pb-5 pt-2">
-        <div className="rounded-2xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 p-4 text-left">
-          <div className="flex items-center gap-1.5 text-[10px] text-gray-500 dark:text-gray-400 mb-1">
-            <Users className="w-3 h-3" /> East Central CC · Ms. Shirley
+      <div className="shrink-0 mx-3 mt-1 mb-3 h-7 rounded-full bg-gray-200/70 dark:bg-gray-800 text-[11px] text-gray-500 dark:text-gray-400 flex items-center justify-center">
+        tigertest.io/c/K7QF2
+      </div>
+      <div className="px-3">
+        <div className="rounded-2xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 p-4 shadow-sm">
+          <div className="flex items-center gap-1.5 text-[11px] text-gray-500 dark:text-gray-400 mb-2">
+            <Users className="w-3.5 h-3.5" /> East Central CC · Ms. Shirley
           </div>
-          <p className="text-base font-bold text-gray-900 dark:text-gray-50 leading-tight">Join your class</p>
-          <p className="text-[11px] text-gray-600 dark:text-gray-300 mt-0.5 mb-3">Surgical Tech, Fall: CST practice</p>
-          <p className="text-[10px] text-gray-700 dark:text-gray-200 mb-1">Your name, as your instructor knows it</p>
-          <div className="h-8 rounded-md border border-gray-300 dark:border-gray-700 px-2 flex items-center text-xs text-gray-900 dark:text-gray-50">
-            Phoebe B.<span className="ml-0.5 w-px h-3.5 bg-gray-900 dark:bg-gray-50 animate-pulse" />
+          <p className="text-xl font-bold text-gray-900 dark:text-gray-50 leading-tight">Join your class</p>
+          <p className="text-[13px] text-gray-600 dark:text-gray-300 mt-1 mb-4">Surgical Tech, Fall: CST practice</p>
+          <p className="text-xs font-medium text-gray-700 dark:text-gray-200 mb-1.5">Your name, as your instructor knows it</p>
+          <div className="h-10 rounded-lg border-2 border-brand-border-light px-3 flex items-center text-sm text-gray-900 dark:text-gray-50">
+            Phoebe B.<span className="ml-0.5 w-px h-4 bg-gray-900 dark:bg-gray-50 animate-pulse" />
           </div>
-          <div className="mt-3 h-8 rounded-md bg-black dark:bg-white text-white dark:text-gray-900 text-xs font-medium flex items-center justify-center">
+          <div className="mt-3 h-10 rounded-lg bg-black dark:bg-white text-white dark:text-gray-900 text-sm font-medium flex items-center justify-center">
             Start practicing
           </div>
-          <p className="text-[9px] text-gray-500 dark:text-gray-400 mt-2 leading-snug">
-            Ms. Shirley will see your practice scores on this exam. Free, no account needed.
+          <p className="text-[11px] text-gray-500 dark:text-gray-400 mt-3 leading-snug">
+            Ms. Shirley will see your practice scores on this exam. No account needed.
           </p>
         </div>
       </div>
+      <div className="mt-auto mb-2 mx-auto h-1 w-24 rounded-full bg-gray-900/80 dark:bg-gray-500" />
     </div>
   );
 }
@@ -52,36 +63,36 @@ function barColor(p: number) {
 
 export function BrowserPreview() {
   return (
-    <div className="w-[330px] sm:w-[440px] md:w-[540px] rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 shadow-2xl overflow-hidden text-left" aria-hidden="true">
-      <div className="flex items-center gap-1.5 px-3 h-8 border-b border-gray-200 dark:border-gray-800 bg-gray-100 dark:bg-gray-800">
+    <div className="w-full max-w-[640px] rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 shadow-2xl overflow-hidden text-left" aria-hidden="true">
+      <div className="flex items-center gap-1.5 px-3 h-9 border-b border-gray-200 dark:border-gray-800 bg-gray-100 dark:bg-gray-800">
         <span className="w-2.5 h-2.5 rounded-full bg-red-400" />
         <span className="w-2.5 h-2.5 rounded-full bg-amber-400" />
         <span className="w-2.5 h-2.5 rounded-full bg-green-400" />
-        <span className="ml-3 flex-1 h-5 rounded bg-white dark:bg-gray-900 text-[10px] text-gray-500 dark:text-gray-400 flex items-center px-2 truncate">
+        <span className="ml-3 flex-1 h-6 rounded-md bg-white dark:bg-gray-900 text-xs text-gray-500 dark:text-gray-400 flex items-center px-2 truncate">
           tigertest.io/teach/classes/K7QF2
         </span>
       </div>
-      <div className="p-4 bg-gray-50 dark:bg-gray-950 space-y-3">
+      <div className="p-4 sm:p-5 bg-gray-50 dark:bg-gray-950 space-y-3">
         <div>
-          <p className="text-sm font-bold text-gray-900 dark:text-gray-50">Surgical Tech, Fall</p>
-          <p className="text-[11px] text-gray-500 dark:text-gray-400">CST · 18 students</p>
+          <p className="text-lg font-bold text-gray-900 dark:text-gray-50">Surgical Tech, Fall</p>
+          <p className="text-xs text-gray-500 dark:text-gray-400">CST · 18 students</p>
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
           {[["Active this week", "14 of 18"], ["Answered", "3,912"], ["Accuracy", "72%"], ["Passed a test", "9 of 18"]].map(([k, v]) => (
-            <div key={k} className="rounded-lg bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 px-2 py-1.5">
-              <p className="text-[9px] text-gray-500 dark:text-gray-400 truncate">{k}</p>
-              <p className="text-sm font-bold text-gray-900 dark:text-gray-50">{v}</p>
+            <div key={k} className="rounded-lg bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 px-2.5 py-2">
+              <p className="text-[11px] text-gray-500 dark:text-gray-400 truncate">{k}</p>
+              <p className="text-base font-bold text-gray-900 dark:text-gray-50">{v}</p>
             </div>
           ))}
         </div>
         <div className="rounded-lg bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 p-3">
-          <p className="text-[11px] font-semibold text-gray-900 dark:text-gray-50 mb-2">Where your class struggles</p>
+          <p className="text-[13px] font-semibold text-gray-900 dark:text-gray-50 mb-2">Where your class struggles</p>
           <div className="space-y-1.5">
             {TOPICS.map((t) => (
-              <div key={t.label} className="grid grid-cols-[6rem_1fr_2rem] items-center gap-2 text-[10px] text-gray-700 dark:text-gray-200">
+              <div key={t.label} className="grid grid-cols-[6.5rem_1fr_2.25rem] items-center gap-2 text-xs text-gray-700 dark:text-gray-200">
                 <span className="truncate">{t.label}</span>
-                <div className="h-1.5 rounded bg-gray-100 dark:bg-gray-800">
-                  <div className={`h-1.5 rounded ${barColor(t.pct)}`} style={{ width: `${t.pct}%` }} />
+                <div className="h-2 rounded bg-gray-100 dark:bg-gray-800">
+                  <div className={`h-2 rounded ${barColor(t.pct)}`} style={{ width: `${t.pct}%` }} />
                 </div>
                 <span className="text-right tabular-nums">{t.pct}%</span>
               </div>
@@ -89,9 +100,9 @@ export function BrowserPreview() {
           </div>
         </div>
         <div className="rounded-lg bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 p-3">
-          <p className="text-[11px] font-semibold text-gray-900 dark:text-gray-50 mb-1.5">Students</p>
+          <p className="text-[13px] font-semibold text-gray-900 dark:text-gray-50 mb-1.5">Students</p>
           {STUDENTS.map((s) => (
-            <div key={s.name} className="grid grid-cols-[4.5rem_1fr_auto] sm:grid-cols-[5rem_4.5rem_1fr_auto] items-center gap-2 py-1 border-t border-gray-100 dark:border-gray-800 first:border-0 text-[10px] text-gray-800 dark:text-gray-100">
+            <div key={s.name} className="grid grid-cols-[4.5rem_1fr_auto] sm:grid-cols-[5.5rem_5.5rem_1fr_auto] items-center gap-2 py-1.5 border-t border-gray-100 dark:border-gray-800 first:border-0 text-xs text-gray-800 dark:text-gray-100">
               <span>{s.name}</span>
               <span className="hidden sm:block text-gray-500 dark:text-gray-400">{s.when}</span>
               <span className="tabular-nums whitespace-nowrap">{s.answered} · {s.acc}%</span>

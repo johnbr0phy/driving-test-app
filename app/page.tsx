@@ -98,7 +98,7 @@ const popularStates = popularStateSlugs
 
 const quotes = [
   { text: "Used this to help me study. Passed today! Thank you :)", who: "u/Naive_Usual1910", href: "https://www.reddit.com/r/driving/comments/1ep1644/comment/lxra5co/" },
-  { text: "passed within seven minutes", who: "vivacious-vi" },
+  { text: "it was sooooo much better than Quizlet or making my own flashcards", who: "u/yabukothestray" },
   { text: "it was very helpful... I passed the written test this morning", who: "ideapad101" },
   { text: "The interface is smooth and easy to navigate, unlike other free practice tests. I passed with only two mistakes!", who: "Yzabelle" },
   { text: "i passed in 3 minutes", who: "u/Curdled_Cave", href: "https://www.reddit.com/r/driving/comments/1ep1644/comment/m6ndsvp/" },
@@ -266,7 +266,7 @@ export default async function Home() {
       <div className="bg-brand-light py-14">
         <div className="max-w-5xl mx-auto px-6">
           <p className="text-gray-600 dark:text-gray-300 text-center mb-8 flex items-center justify-center gap-2">
-            From r/driving and r/DMV on
+            From r/driving, r/DMV and r/Histology on
             <Image src="/reddit.png" alt="Reddit" width={72} height={24} className="h-[55px] w-auto inline-block" />
           </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

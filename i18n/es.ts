@@ -61,7 +61,7 @@ export const es: TranslationKeys = {
     chooseYourStateDesc: "Selecciona tu estado a continuación para empezar a practicar con preguntas basadas en el manual oficial de conducir y los requisitos del DMV de tu estado.",
     viewAllStates: "Ver los 50 estados",
     builtForPeople: "Hecho para Personas que Solo Necesitan Aprobar",
-    fromReddit: "De r/driving y r/DMV en",
+    fromReddit: "De r/driving, r/DMV y r/Histology en",
     otherTestsTitle: "¿Estudias para otro examen?",
     otherTestsSub: "TigerTest también tiene exámenes de práctica gratis para otros exámenes.",
     otherTestsAll: "Todos los exámenes",

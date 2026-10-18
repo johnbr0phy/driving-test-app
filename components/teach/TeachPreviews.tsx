@@ -3,6 +3,7 @@
 // they stay in step with the product and work in dark mode.
 
 import { Users } from "lucide-react";
+import { scoreBar, scoreChip, scoreLevel, scoreTrack } from "./scoreColors";
 
 export function PhonePreview() {
   return (
@@ -57,17 +58,13 @@ const STUDENTS = [
   { name: "Ashley T.", when: "3 days ago", answered: 150, acc: 74, test: "Test 1 · 72%", pass: true },
 ];
 
-function barColor(p: number) {
-  return p >= 70 ? "bg-green-500" : p >= 55 ? "bg-amber-500" : "bg-red-500";
-}
-
 export function BrowserPreview() {
   return (
     <div className="w-full max-w-[640px] rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 shadow-2xl overflow-hidden text-left" aria-hidden="true">
       <div className="flex items-center gap-1.5 px-3 h-9 border-b border-gray-200 dark:border-gray-800 bg-gray-100 dark:bg-gray-800">
-        <span className="w-2.5 h-2.5 rounded-full bg-red-400" />
-        <span className="w-2.5 h-2.5 rounded-full bg-amber-400" />
-        <span className="w-2.5 h-2.5 rounded-full bg-green-400" />
+        <span className="w-2.5 h-2.5 rounded-full bg-gray-300 dark:bg-gray-600" />
+        <span className="w-2.5 h-2.5 rounded-full bg-gray-300 dark:bg-gray-600" />
+        <span className="w-2.5 h-2.5 rounded-full bg-gray-300 dark:bg-gray-600" />
         <span className="ml-3 flex-1 h-6 rounded-md bg-white dark:bg-gray-900 text-xs text-gray-500 dark:text-gray-400 flex items-center px-2 truncate">
           tigertest.io/teach/classes/K7QF2
         </span>
@@ -91,8 +88,8 @@ export function BrowserPreview() {
             {TOPICS.map((t) => (
               <div key={t.label} className="grid grid-cols-[6.5rem_1fr_2.25rem] items-center gap-2 text-xs text-gray-700 dark:text-gray-200">
                 <span className="truncate">{t.label}</span>
-                <div className="h-2 rounded bg-gray-100 dark:bg-gray-800">
-                  <div className={`h-2 rounded ${barColor(t.pct)}`} style={{ width: `${t.pct}%` }} />
+                <div className={`h-2 rounded-sm ${scoreTrack}`}>
+                  <div className={`h-2 rounded-sm ${scoreBar(scoreLevel(t.pct, 70))}`} style={{ width: `${t.pct}%` }} />
                 </div>
                 <span className="text-right tabular-nums">{t.pct}%</span>
               </div>
@@ -106,7 +103,7 @@ export function BrowserPreview() {
               <span>{s.name}</span>
               <span className="hidden sm:block text-gray-500 dark:text-gray-400">{s.when}</span>
               <span className="tabular-nums whitespace-nowrap">{s.answered} · {s.acc}%</span>
-              <span className={`whitespace-nowrap rounded px-1.5 py-0.5 ${s.pass ? "bg-green-50 dark:bg-green-950 text-green-700 dark:text-green-300" : "bg-amber-50 dark:bg-amber-950 text-amber-700 dark:text-amber-300"}`}>{s.test}</span>
+              <span className={`whitespace-nowrap rounded-sm px-1.5 py-0.5 font-medium ${scoreChip(s.pass ? "good" : "near")}`}>{s.test}</span>
             </div>
           ))}
         </div>

@@ -35,7 +35,7 @@ The bulletin is real text (pdftotext, 66 pages, "Updated 3/24/2026"); the ODI an
 State items rotate the correct letter A, B, C, D across all Ohio items.
 
 ## Law sources (official current text, codes.ohio.gov)
-URL patterns: ORC https://codes.ohio.gov/ohio-revised-code/section-<section>, OAC https://codes.ohio.gov/ohio-administrative-code/rule-<rule>. Each page fetched as real text with its "Effective" line (local copies in scratchpad `oh-src/law/`).
+URL patterns: ORC https://codes.ohio.gov/ohio-revised-code/section-<section>, OAC https://codes.ohio.gov/ohio-administrative-code/rule-<rule>. Each page fetched as real text with its "Effective" line (local copies in scratchpad `oh-src/law/`). Independent review on 2026-10-18 re-fetched every cited section from codes.ohio.gov and found the text identical to these copies.
 
 | Section | Effective / latest legislation | Facts used |
 |---|---|---|

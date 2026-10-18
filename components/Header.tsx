@@ -7,13 +7,13 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { useAuth } from "@/contexts/AuthContext";
 import { useStore } from "@/store/useStore";
 import { AdminLink } from "@/components/AdminLink";
+import { TeachLink } from "@/components/TeachLink";
 import { useHydration } from "@/hooks/useHydration";
 import { useTranslation } from "@/contexts/LanguageContext";
 import Image from "next/image";
 import { BarChart3 } from "lucide-react";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { TestSwitcher } from "@/components/TestSwitcher";
-import { ThemeToggle } from "@/components/ThemeToggle";
 import { EXAMS } from "@/lib/exams";
 import { useExamStarted } from "@/hooks/useExamStarted";
 
@@ -61,7 +61,6 @@ export function Header() {
 
           <div className="flex items-center gap-2 sm:gap-4">
             <TestSwitcher />
-            <ThemeToggle />
 
             {/* Language Toggle - shown only on the homepage; other pages render it in the footer */}
             {isHomepage && <LanguageSwitcher />}
@@ -78,6 +77,7 @@ export function Header() {
 
             {user ? (
               <>
+                <TeachLink />
                 <AdminLink />
                 <Link href="/settings" aria-label="Profile and settings">
                   <Avatar className="h-9 w-9 cursor-pointer hover:opacity-80 transition-opacity">

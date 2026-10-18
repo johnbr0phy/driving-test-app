@@ -8,6 +8,7 @@ import { ChevronRight, Plus, Users } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 import { teachFetch } from "@/lib/teachClient";
 import { TeachLanding } from "@/components/teach/TeachLanding";
+import { markTeacher } from "@/components/TeachLink";
 import type { ClassSummary } from "@/lib/classes";
 
 export default function TeachPage() {
@@ -20,7 +21,10 @@ export default function TeachPage() {
       return;
     }
     teachFetch<{ classes: ClassSummary[] }>(user, "/api/classes")
-      .then((d) => setClasses(d.classes))
+      .then((d) => {
+        setClasses(d.classes);
+        markTeacher(user.uid, d.classes.length > 0);
+      })
       .catch(() => setClasses([]));
   }, [user]);
 

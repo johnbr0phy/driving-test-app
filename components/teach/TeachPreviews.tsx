@@ -54,8 +54,8 @@ const TOPICS = [
 
 const STUDENTS = [
   { name: "Phoebe B.", when: "Today", answered: 412, acc: 81, test: "Test 2 · 84%", pass: true },
-  { name: "Devon W.", when: "Yesterday", answered: 288, acc: 69, test: "Test 1 · 66%", pass: false },
-  { name: "Ashley T.", when: "3 days ago", answered: 150, acc: 74, test: "Test 1 · 72%", pass: true },
+  { name: "Maya B.", when: "Yesterday", answered: 288, acc: 69, test: "Test 1 · 66%", pass: false },
+  { name: "Barney B.", when: "3 days ago", answered: 150, acc: 74, test: "Test 1 · 72%", pass: true },
 ];
 
 export function BrowserPreview() {

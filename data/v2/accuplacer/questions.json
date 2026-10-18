@@ -998,7 +998,7 @@
     "basics": "authorPurpose",
     "difficulty": 2,
     "format": "single",
-    "passage": "In the 1850s, John Snow mapped the homes of cholera victims in a London neighborhood and found them clustered around a single public water pump. When the pump handle was removed, new cases dropped sharply. At the time, most doctors blamed \"bad air\" for the disease. Snow's map is now taught as a founding case in the field of epidemiology.",
+    "passage": "In the 1850s, John Snow mapped the homes of cholera victims in a London neighborhood and found them clustered around a single public water pump. He persuaded officials to remove the pump handle, and the outbreak, which was already declining, soon ended. At the time, most doctors blamed \"bad air\" for the disease. Snow's map is now taught as a founding case in the field of epidemiology.",
     "stem": "The author includes the detail that most doctors blamed bad air in order to",
     "options": [
       "criticize Snow for ignoring other theories",
@@ -1685,7 +1685,7 @@
     "correct": [
       2
     ],
-    "explanation": "A noun meaning a result is \"effect.\" \"Affect\" is usually a verb meaning to influence, and the other two choices do not fit the sentence."
+    "explanation": "A noun meaning a result is \"effect.\" \"Affect\" is usually a verb meaning to influence, and \"affection\" and \"effecting\" do not fit the sentence."
   },
   {
     "id": "ACC-WR-026",

@@ -13,6 +13,8 @@
  * This file must stay free of question-data imports (the store imports it).
  */
 
+import TRAINING_PARTS from "./trainingParts.json";
+
 export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "htl" | "cst" | "crcst";
 
 export interface ExamTrainingSetDef {
@@ -2492,6 +2494,52 @@ export function getExamByPath(pathname: string | null | undefined): ExamConfig |
 export function getExamTrainingSetSize(setId: number): number {
   const exam = getExamForSetId(setId);
   return exam?.trainingSets.find((s) => s.id === setId)?.size ?? 50;
+}
+
+/**
+ * Training sets over TRAINING_PART_MAX questions are split into parts of
+ * about TRAINING_PART_TARGET, so no session runs much past 50. A part is a
+ * contiguous run of the set in question-ID order; where each one starts is
+ * generated into lib/trainingParts.json by scripts/build-training-parts.ts
+ * (the dashboard cannot read the bank). Progress stays stored per set id and
+ * a part just filters it, so a set is complete exactly when all its parts are.
+ */
+export const TRAINING_PART_MAX = 60;
+export const TRAINING_PART_TARGET = 50;
+
+export interface TrainingPart {
+  set: ExamTrainingSetDef;
+  /** 1-based; 1 of 1 for a set that is not split. */
+  part: number;
+  partCount: number;
+  size: number;
+}
+
+const PARTS = TRAINING_PARTS as Record<string, { starts: string[]; sizes: number[] }>;
+
+export function trainingParts(def: ExamTrainingSetDef): TrainingPart[] {
+  const split = PARTS[def.id];
+  if (!split) return [{ set: def, part: 1, partCount: 1, size: def.size }];
+  return split.sizes.map((size, i) => ({ set: def, part: i + 1, partCount: split.sizes.length, size }));
+}
+
+/** Every step a dashboard shows for the exam's training: one per part. */
+export function examTrainingParts(exam: ExamConfig): TrainingPart[] {
+  return exam.trainingSets.flatMap(trainingParts);
+}
+
+/** Which part of a set a question belongs to (1 when the set is not split). */
+export function trainingPartOf(setId: number, questionId: string): number {
+  const starts = PARTS[setId]?.starts;
+  if (!starts) return 1;
+  let part = 1;
+  for (let i = 1; i < starts.length; i++) if (questionId.localeCompare(starts[i]) >= 0) part = i + 1;
+  return part;
+}
+
+/** Display name: "Safe Driving & Hazards, part 2 of 3". */
+export function trainingPartName(p: TrainingPart): string {
+  return p.partCount > 1 ? `${p.set.name}, part ${p.part} of ${p.partCount}` : p.set.name;
 }
 
 export function isExamQuestionId(questionId: string): boolean {

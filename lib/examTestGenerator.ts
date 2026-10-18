@@ -1,6 +1,6 @@
 import { Question } from "@/types";
 import { shuffleQuestionOptions } from "./testGenerator";
-import { ExamConfig } from "./exams";
+import { ExamConfig, trainingPartOf } from "./exams";
 import { getExamQuestions } from "./examData";
 
 function shuffle<T>(array: T[]): T[] {
@@ -37,12 +37,16 @@ export function generateExamTest(exam: ExamConfig, testNumber: number): Question
   return shuffle(questions);
 }
 
-/** Fixed, ordered question list for a training set (one or more categories). */
-export function getExamTrainingSetQuestions(exam: ExamConfig, setNumber: number): Question[] {
+/**
+ * Fixed, ordered question list for a training set (one or more categories),
+ * or for one part of it when the set is split (see trainingParts).
+ */
+export function getExamTrainingSetQuestions(exam: ExamConfig, setNumber: number, part?: number): Question[] {
   const def = exam.trainingSets.find((s) => s.setNumber === setNumber);
   if (!def) throw new Error(`Set number must be between 1 and ${exam.trainingSets.length}`);
   return getExamQuestions(exam.id)
     .filter((q) => def.categories.includes(q.category))
+    .filter((q) => part === undefined || trainingPartOf(def.id, q.questionId) === part)
     .sort((a, b) => a.questionId.localeCompare(b.questionId));
 }
 
@@ -52,9 +56,10 @@ export function getNextExamTrainingSetQuestion(
   setNumber: number,
   masteredIds: string[],
   wrongQueue: string[] = [],
-  currentQuestionId: string | null = null
+  currentQuestionId: string | null = null,
+  part?: number
 ): Question | null {
-  const questions = getExamTrainingSetQuestions(exam, setNumber);
+  const questions = getExamTrainingSetQuestions(exam, setNumber, part);
   let unmastered = questions.filter((q) => !masteredIds.includes(q.questionId));
   if (unmastered.length === 0) return null;
   if (currentQuestionId && unmastered.length > 1) {

@@ -10,11 +10,11 @@ import { useUpgradeFlow } from "@/hooks/useUpgradeFlow";
 import { TestPageHeader } from "@/components/TestPageHeader";
 import { ResultsHeroDebrief } from "@/components/results/ResultsHeroDebrief";
 import { ResultsDebriefBody } from "@/components/results/ResultsDebriefBody";
-import { getExamRoutes } from "@/lib/examRoutes";
 import { ExamConfig } from "@/lib/exams";
+import { useLocalizedExam } from "@/hooks/useLocalizedExam";
 
 export function ExamResultsPage({ exam }: { exam: ExamConfig }) {
-  const routes = getExamRoutes(exam.id);
+  const { routes, ui } = useLocalizedExam(exam);
   const params = useParams();
   const testId = parseInt(params.id as string);
   const results = useTestResults(testId, routes);
@@ -40,7 +40,7 @@ export function ExamResultsPage({ exam }: { exam: ExamConfig }) {
         sticky
         right={
           <span className="text-sm text-gray-500 dark:text-gray-400">
-            {stateName} · Test {displayTestNumber(testId)} ·{" "}
+            {stateName} · {ui.testN(displayTestNumber(testId)).replace("🎯 ", "")} ·{" "}
             {attemptNumber === 1 ? t("results.firstAttempt") : `${t("results.attempt")} ${attemptNumber}`}
           </span>
         }

@@ -11,15 +11,15 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { TestPageHeader } from "@/components/TestPageHeader";
 import { generateExamTest, shuffleQuestionOptions } from "@/lib/examTestGenerator";
-import { getExamRoutes } from "@/lib/examRoutes";
 import { ExamConfig } from "@/lib/exams";
 import { Question } from "@/types";
 import { useStore } from "@/store/useStore";
 import { useHydration } from "@/hooks/useHydration";
 import { useTranslation } from "@/contexts/LanguageContext";
+import { useLocalizedExam } from "@/hooks/useLocalizedExam";
 
-export function ExamTestPage({ exam }: { exam: ExamConfig }) {
-  const routes = getExamRoutes(exam.id);
+export function ExamTestPage({ exam: source }: { exam: ExamConfig }) {
+  const { exam, routes, ui, lang } = useLocalizedExam(source);
   const params = useParams();
   const router = useRouter();
   const testId = parseInt(params.id as string);
@@ -68,7 +68,7 @@ export function ExamTestPage({ exam }: { exam: ExamConfig }) {
           firstUnansweredIndex !== -1 ? firstUnansweredIndex : savedTest.questions.length - 1
         );
       } else {
-        const testQuestions = generateExamTest(exam, testNumber).map(shuffleQuestionOptions);
+        const testQuestions = generateExamTest(exam, testNumber, lang).map(shuffleQuestionOptions);
         setQuestions(testQuestions);
         startTest(testId, testQuestions);
       }
@@ -79,7 +79,7 @@ export function ExamTestPage({ exam }: { exam: ExamConfig }) {
       console.error(`Error loading ${exam.shortName} questions:`, error);
       setLoading(false);
     }
-  }, [hydrated, testId, testNumber, exam, routes, getCurrentTest, startTest, router]);
+  }, [hydrated, testId, testNumber, exam, lang, routes, getCurrentTest, startTest, router]);
 
   const currentQuestion = questions[currentQuestionIndex];
   const totalQuestions = questions.length;
@@ -162,7 +162,7 @@ export function ExamTestPage({ exam }: { exam: ExamConfig }) {
         {/* Progress Overview - View Only */}
         <div className="mt-8">
           <div className="text-sm font-semibold mb-3">
-            🎯 {t("progressOverviewWithTest").replace("{test}", `${exam.shortName} Test ${testNumber}`)}
+            🎯 {t("progressOverviewWithTest").replace("{test}", ui.examTestN(exam.shortName, testNumber))}
           </div>
           <div className="grid grid-cols-10 gap-1">
             {questions.map((_, index) => (

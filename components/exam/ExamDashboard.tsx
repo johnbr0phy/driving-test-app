@@ -18,23 +18,11 @@ import { useTranslation } from "@/contexts/LanguageContext";
 import { ProgressCard, Collapse } from "@/components/dashboard/ProgressCard";
 import { AttemptChart, sessionsToAttemptPoints } from "@/components/AttemptChart";
 import { computeMissSummary } from "@/lib/missedQuestions";
-import { getExamRoutes } from "@/lib/examRoutes";
 import { ExamConfig, TrainingPart, examFamilyId, examTrainingParts, getExamVariant, trainingPartName, trainingPartOf } from "@/lib/exams";
 import { ExamStateLine, ExamStatePrompt } from "@/components/exam/ExamStatePicker";
 import { getTigerAsset } from "@/lib/tigerAssets";
 import { SuperAmazingCard } from "@/components/SuperAmazingCard";
-
-function heroTitle(done: number, total: number): string {
-  if (done === 0) return `Complete all ${total} steps`;
-  if (done === total) return "You're ready";
-  if (done === total - 1) return "One left";
-  if (done === 1) return `Good start. 1 of ${total} done`;
-  const frac = done / total;
-  if (frac < 0.45) return `${done} of ${total} done`;
-  if (frac < 0.55) return "Halfway there";
-  if (frac < 0.8) return "More than halfway";
-  return `${done} of ${total}, almost there`;
-}
+import { useLocalizedExam } from "@/hooks/useLocalizedExam";
 
 function heroSub(exam: ExamConfig, done: number, total: number): string {
   const frac = total > 0 ? done / total : 0;
@@ -55,8 +43,8 @@ function getTigerFace(complete: number, total: number, examId: string): string {
   return getTigerAsset(examId, 8);
 }
 
-export function ExamDashboard({ exam }: { exam: ExamConfig }) {
-  const routes = getExamRoutes(exam.id);
+export function ExamDashboard({ exam: source }: { exam: ExamConfig }) {
+  const { exam, routes, ui, lang } = useLocalizedExam(source);
   const router = useRouter();
   const hydrated = useHydration();
   const { t } = useTranslation();
@@ -179,7 +167,7 @@ export function ExamDashboard({ exam }: { exam: ExamConfig }) {
               className="w-12 h-12 flex-shrink-0"
             />
             <div className="flex-1 min-w-0">
-              <h1 className="text-lg font-bold text-gray-900 dark:text-gray-50">{heroTitle(completedSteps, totalSteps)}</h1>
+              <h1 className="text-lg font-bold text-gray-900 dark:text-gray-50">{ui.heroTitle(completedSteps, totalSteps)}</h1>
               <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">{heroSub(exam, completedSteps, totalSteps)}</p>
             </div>
             <div className="flex-shrink-0 text-right">
@@ -202,7 +190,7 @@ export function ExamDashboard({ exam }: { exam: ExamConfig }) {
             return (
               <ProgressCard
                 key={`${def.id}-${p.part}`}
-                title={trainingPartName(p)}
+                title={trainingPartName(p, lang)}
                 subtitle={`${progress.correct}/${progress.total} · ${def.weightLabel}`}
                 completed={progress.complete}
                 stepNumber={index + 1}
@@ -241,18 +229,18 @@ export function ExamDashboard({ exam }: { exam: ExamConfig }) {
             const testSessions = hydrated
               ? completedTests.filter((s) => s.state === exam.stateCode && s.testNumber === testId)
               : [];
-            const attemptPoints = sessionsToAttemptPoints(testSessions, "en-US", exam.passPct);
+            const attemptPoints = sessionsToAttemptPoints(testSessions, ui.dateLocale, exam.passPct);
             const isExpanded = expandedTest === testId;
             const stillMissed = testMisses?.stillMissed ?? 0;
 
             // The translated string only covers 50-question tests (ham has 35, CA real estate 150).
-            let subtitle = exam.questionsPerTest === 50 ? t("testCard.fiftyQuestions") : `${exam.questionsPerTest} questions`;
+            let subtitle = exam.questionsPerTest === 50 ? t("testCard.fiftyQuestions") : ui.questionsCount(exam.questionsPerTest);
             if (activelyInProgress) {
               subtitle = `${answeredCount}/${exam.questionsPerTest} ${t("testCard.answered")}`;
             } else if (completed && bestPct !== null) {
               subtitle = `${t("dashboard.bestScore")}: ${bestPct}%`;
             } else if (bestPct !== null) {
-              subtitle = `${t("dashboard.bestScore")}: ${bestPct}%. Need ${exam.passPct}%+ to pass`;
+              subtitle = `${t("dashboard.bestScore")}: ${bestPct}%. ${ui.needToPass(exam.passPct)}`;
             }
 
             let stamp: { label: string; color: "green" | "amber" | "red" } | undefined;
@@ -267,7 +255,7 @@ export function ExamDashboard({ exam }: { exam: ExamConfig }) {
             return (
               <div key={testId}>
                 <ProgressCard
-                  title={exam.testCount === 1 ? "🎯 Full-length exam" : `🎯 Test ${n}`}
+                  title={exam.testCount === 1 ? ui.fullLengthExam : ui.testN(n)}
                   subtitle={subtitle}
                   completed={completed}
                   stepNumber={parts.length + index + 1}
@@ -310,7 +298,7 @@ export function ExamDashboard({ exam }: { exam: ExamConfig }) {
                       <AttemptChart
                         attempts={attemptPoints}
                         passPct={exam.passPct}
-                        passLabel={`${exam.passPct}% to pass`}
+                        passLabel={ui.pctToPass(exam.passPct)}
                       />
                       <div className="mt-2 space-y-2">
                         {stillMissed > 0 && (
@@ -355,8 +343,8 @@ export function ExamDashboard({ exam }: { exam: ExamConfig }) {
                 <BarChart3 className="h-4 w-4 text-brand-dark" />
               </div>
               <div className="flex-1 min-w-0">
-                <h3 className="font-semibold text-sm text-gray-900 dark:text-gray-50">Your stats</h3>
-                <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">Every question you&apos;ve seen, sorted by what you keep missing</p>
+                <h3 className="font-semibold text-sm text-gray-900 dark:text-gray-50">{ui.yourStats}</h3>
+                <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">{ui.yourStatsSub}</p>
               </div>
               <ChevronRight className="h-5 w-5 text-gray-300 flex-shrink-0" />
             </div>
@@ -369,7 +357,7 @@ export function ExamDashboard({ exam }: { exam: ExamConfig }) {
 
         <p className="mt-6 text-center text-[11px] text-gray-500 dark:text-gray-400">
           {exam.copy.sourceLine}{" "}
-          <Link href={exam.slug} className="underline hover:text-gray-600 dark:hover:text-gray-300">About this practice test</Link>
+          <Link href={exam.slug} className="underline hover:text-gray-600 dark:hover:text-gray-300">{ui.aboutThisTest}</Link>
         </p>
       </div>
       </div>

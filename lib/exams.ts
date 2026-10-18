@@ -14,6 +14,7 @@
  */
 
 import TRAINING_PARTS from "./trainingParts.json";
+import type { Language } from "@/i18n";
 
 export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "htl" | "cst" | "crcst";
 
@@ -83,6 +84,21 @@ export interface ExamConfig {
     /** Theme-specific analytics tag suffix. */
     analyticsKey: string;
   };
+  /** Other languages the exam is offered in (a translated bank in
+   *  lib/examData.ts plus this copy). The language switcher shows on the
+   *  exam's app pages only when there is at least one. */
+  translations?: Partial<Record<Exclude<Language, "en">, ExamTranslation>>;
+}
+
+/** Everything a person reads in an ExamConfig, in one other language. */
+export interface ExamTranslation {
+  name: string;
+  examLabel: string;
+  fullName: string;
+  /** By setNumber. */
+  trainingSets: Record<number, { name: string; weightLabel: string }>;
+  categoryLabels: Record<string, string>;
+  copy: Omit<ExamConfig["copy"], "analyticsKey">;
 }
 
 const cdl: ExamConfig = {
@@ -155,6 +171,50 @@ const cdl: ExamConfig = {
     ],
     sourceLine: "Covers the CDL general knowledge exam. 80% to pass on the real test.",
     analyticsKey: "cdl",
+  },
+  translations: {
+    es: {
+      name: "Examen de práctica CDL",
+      examLabel: "CDL Conocimientos Generales",
+      fullName: "examen de conocimientos generales de la CDL",
+      trainingSets: {
+        1: { name: "Inspección del vehículo", weightLabel: "14% de cada examen" },
+        2: { name: "Control básico y frenos", weightLabel: "20% de cada examen" },
+        3: { name: "Sistemas del vehículo y carga", weightLabel: "16% de cada examen" },
+        4: { name: "Conducción segura y peligros", weightLabel: "24% de cada examen" },
+        5: { name: "Condiciones de manejo", weightLabel: "12% de cada examen" },
+        6: { name: "Emergencias, alcohol y drogas", weightLabel: "14% de cada examen" },
+      },
+      categoryLabels: {
+        vehicleInspection: "Inspección del vehículo",
+        basicControl: "Control básico del vehículo",
+        brakingSystems: "Sistemas de frenos",
+        vehicleSystems: "Sistemas del vehículo",
+        cargoHandling: "Manejo de la carga",
+        safeDriving: "Conducción segura",
+        hazardPerception: "Percepción de peligros",
+        weatherDriving: "Manejo con mal tiempo",
+        nightDriving: "Manejo de noche",
+        mountainDriving: "Manejo en montañas",
+        railroadCrossings: "Cruces de ferrocarril",
+        emergencyProcedures: "Procedimientos de emergencia",
+        alcoholDrugs: "Alcohol y drogas",
+      },
+      copy: {
+        guestPrompt: "para guardar tu progreso de la CDL y ver cada pregunta que fallas",
+        trainingHeading: "Practica por tema",
+        trainingSub: "Seis grupos que cubren todo el manual de conocimientos generales. Respuesta al instante, y las preguntas que fallas vuelven hasta que las domines.",
+        testsHeading: "Exámenes de práctica · 50 preguntas como el examen real",
+        heroSubs: [
+          "Seis temas, seis exámenes. La inspección pesa más.",
+          "Domina cada grupo y luego haz un examen.",
+          "Vas a la mitad. Prueba un examen de práctica.",
+          "Corrige las fallas y vuelve a intentarlo.",
+          "Todo listo. Programa tu examen de conocimientos de la CDL.",
+        ],
+        sourceLine: "Cubre el examen de conocimientos generales de la CDL. Se aprueba con 80% en el examen real.",
+      },
+    },
   },
 };
 
@@ -2538,8 +2598,45 @@ export function trainingPartOf(setId: number, questionId: string): number {
 }
 
 /** Display name: "Safe Driving & Hazards, part 2 of 3". */
-export function trainingPartName(p: TrainingPart): string {
-  return p.partCount > 1 ? `${p.set.name}, part ${p.part} of ${p.partCount}` : p.set.name;
+export function trainingPartName(p: TrainingPart, lang: Language = "en"): string {
+  if (p.partCount === 1) return p.set.name;
+  return lang === "es"
+    ? `${p.set.name}, parte ${p.part} de ${p.partCount}`
+    : `${p.set.name}, part ${p.part} of ${p.partCount}`;
+}
+
+/** Languages an exam is offered in, English first. */
+export function examLanguages(exam: ExamConfig): Language[] {
+  return ["en", ...(Object.keys(exam.translations ?? {}) as Language[])];
+}
+
+/** The language an exam's content shows in: the person's choice when the
+ *  exam is offered in it, English otherwise. */
+export function examLanguage(exam: ExamConfig, language: Language): Language {
+  return examLanguages(exam).includes(language) ? language : "en";
+}
+
+const localized = new Map<string, ExamConfig>();
+
+/** The exam with its copy, set names and category labels in `lang`. IDs,
+ *  blueprint and everything else stay as they are. */
+export function localizeExam(exam: ExamConfig, lang: Language): ExamConfig {
+  const tr = lang === "en" ? undefined : exam.translations?.[lang];
+  if (!tr) return exam;
+  const key = `${exam.id}:${lang}`;
+  const cached = localized.get(key);
+  if (cached) return cached;
+  const result: ExamConfig = {
+    ...exam,
+    name: tr.name,
+    examLabel: tr.examLabel,
+    fullName: tr.fullName,
+    trainingSets: exam.trainingSets.map((s) => ({ ...s, ...tr.trainingSets[s.setNumber] })),
+    categoryLabels: { ...exam.categoryLabels, ...tr.categoryLabels },
+    copy: { ...exam.copy, ...tr.copy },
+  };
+  localized.set(key, result);
+  return result;
 }
 
 export function isExamQuestionId(questionId: string): boolean {

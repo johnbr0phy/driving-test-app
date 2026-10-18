@@ -98,7 +98,7 @@ Also checked for national items: RCW 48.05.010 (alien insurer, PC-GEN-024); RCW 
 ## Facts checked and deliberately not used
 - WAC 284-30-360/-370/-380 claim timelines changed on 2026-10-18 (WSR 26-17-089, 30 calendar days from notice of claim); too new for a 4/1/2026 outline, no item.
 - Auto financial responsibility minimums (RCW 46.29.090) and PIP benefit amounts (RCW 48.22.095, .100) were verified but, per house rules, no X/Y/Z or dollar-limit item.
-- Credit-based insurance scores remain usable for rating in Washington subject to RCW 48.18.545 (PCWA-WAHOM-003 keeps "assign a higher rating tier" as a permitted use with an adverse action notice); a 2021 OIC emergency rule banning their use was not in effect and is not reflected in WAC 284-24.
+- PCWA-WAHOM-003 keeps "assign a higher rating tier" as a permitted use of credit: RCW 48.18.545(1)(a)(ii)(B) treats tier placement as an adverse action that needs the notice, not a banned use, and current WAC 284-24-140 regulates insurers that use insurance scores to assign rating tiers (RCW 48.19.035).
 
 ## Category table
 | Category | National | Washington | Total |

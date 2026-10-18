@@ -319,14 +319,14 @@
     "state": "AZ",
     "questionId": "REAZ-AZOWN-005",
     "category": "reOwnershipTitle",
-    "question": "After an Arizona homeowner gives the association notice of a pending sale, the HOA must provide the bylaws, rules and other resale documents within:",
+    "question": "In an Arizona planned community of 50 or more homes, the seller gives the HOA written notice of an accepted offer. The HOA must send the buyer the bylaws, rules and other resale documents within:",
     "optionA": "10 days",
     "optionB": "30 days",
     "optionC": "5 days",
     "optionD": "15 days",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "A.R.S. 33-1806(A) requires a planned community association to furnish the resale documents within ten days after receiving written notice of a pending sale. A.R.S. 33-1260 sets the same ten-day period for condominiums.",
+    "explanation": "A.R.S. 33-1806(A) requires the association of a planned community with 50 or more properties to deliver the resale documents to the buyer or the buyer's agent within ten days after receiving the seller's written notice. In smaller communities the seller delivers them within ten days after acceptance, and A.R.S. 33-1260(A) sets the same rules for condominiums.",
     "sourceQuestionId": "REAZ-AZOWN-005"
   },
   {
@@ -1114,7 +1114,7 @@
     "state": "AZ",
     "questionId": "REAZ-AZADV-004",
     "category": "rePractice",
-    "question": "An Arizona builder offers a free dinner to anyone who tours its model homes. The rules forbid describing the dinner as a:",
+    "question": "An Arizona broker marketing a builder's model homes offers a free dinner to anyone who tours them. The rules forbid calling the dinner a:",
     "optionA": "Complimentary meal",
     "optionB": "Prize",
     "optionC": "Thank-you gift",
@@ -1241,7 +1241,7 @@
     "optionD": "Marital status",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "A.R.S. 41-1491.14 bans discrimination in sale or rental because of race, color, religion, sex, familial status or national origin, and 41-1491.19 adds disability. Marital status, age and source of income are not on the state list.",
+    "explanation": "A.R.S. 41-1491.14 bans discrimination in sale or rental because of race, color, religion, sex, familial status or national origin, and 41-1491.19 adds disability. Marital status, age and source of income are not on the state list, though some city ordinances add classes.",
     "sourceQuestionId": "REAZ-AZCPA-004"
   },
   {
@@ -1811,7 +1811,7 @@
     "optionD": "Has her broker's approval",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "A.R.S. 32-2155(D) bars collecting compensation for negotiating loans unless the licensee is licensed under Title 6, Chapter 9 or works for a firm licensed under it, and discloses both fees. Broker approval alone is not enough.",
+    "explanation": "A.R.S. 32-2155(D) bars a real estate licensee from collecting compensation for negotiating loans secured by real property unless she is licensed under the mortgage licensing laws (Title 6, Chapter 9) or is an employee, officer or partner of a firm licensed under them, and discloses that she is paid for both services. Broker approval alone is not enough.",
     "sourceQuestionId": "REAZ-AZBUS-004"
   },
   {
@@ -1841,7 +1841,7 @@
     "optionD": "The buyer's loan approval",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "A.R.S. 11-1133 requires a deed evidencing a transfer of title to have an affidavit of the buyer and seller, on the Department of Revenue form, stating the price, financing and property use. A.R.S. 11-1134 exempts gifts, court-ordered transfers and similar deeds.",
+    "explanation": "A.R.S. 11-1133(A) requires a deed evidencing a transfer of title to have an affidavit of legal value appended at recording, signed by the buyer and seller or their agents on the Department of Revenue's Affidavit of Property Value form, stating the price, financing and property use. The recorder refuses a deed without it unless it notes an exemption under 11-1134. Arizona has no transfer tax.",
     "sourceQuestionId": "REAZ-AZCLS-001"
   },
   {

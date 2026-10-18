@@ -89,7 +89,10 @@
    "explanation": "Required insurance is 80 percent of $500,000, or $400,000. The insured carried $300,000, so $300,000 / $400,000 = 0.75 and the insurer pays 0.75 x $100,000 = $75,000. In North Carolina such a clause is valid only when \"coinsurance contract\" is printed on the policy (G.S. 58-3-15)."
   },
   "PC-AUTO-016": {
-   "explanation": "A vehicle is uninsured when there is no liability policy, the limits are below the state minimum, the insurer denies coverage or is insolvent, or the vehicle is a hit-and-run. North Carolina's G.S. 20-279.21(b)(3) includes the insolvent-insurer case, and equal limits make it insured, not uninsured."
+   "explanation": "A vehicle is uninsured when it has no liability policy, its limits are below the state minimum, or its insurer denies coverage or is insolvent; a hit-and-run vehicle also counts. North Carolina's G.S. 20-279.21(b)(3) names each of these cases, and limits equal to the insured's do not make a vehicle uninsured."
+  },
+  "PC-AUTO-017": {
+   "explanation": "In North Carolina a vehicle is underinsured when the at-fault driver's total liability limits are less than the injured person's damages (G.S. 20-279.21(b)(4)), and UIM pays that shortfall up to its own limits. A driver with no insurance at all triggers UM rather than UIM."
   }
  }
 }

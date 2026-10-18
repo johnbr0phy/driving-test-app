@@ -200,13 +200,21 @@ export function TeachLanding({ signedIn }: { signedIn: boolean }) {
         </div>
       </div>
 
-      {/* Quote */}
-      <div className="py-14">
+      {/* Instructor callout */}
+      <div className="py-14 md:py-20">
         <div className="max-w-2xl mx-auto px-6 text-center">
-          <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-200 italic mb-4">
-            A surgical tech program in Mississippi posted TigerTest as a Canvas assignment. Seventeen students were practicing within seventeen minutes.
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4">We&apos;re building this for instructors</h2>
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+            A surgical tech program in Mississippi posted TigerTest as a Canvas assignment, and seventeen students were practicing within seventeen minutes. We&apos;d love to work with you too. Tell us about your class, what you teach and what would help, and we&apos;ll build it with you.
           </p>
-          <p className="text-gray-500 dark:text-gray-400 text-sm">October 2026</p>
+          <a
+            href="https://johnbrophy.net/#contact"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={ctaClass}
+          >
+            Get in touch
+          </a>
         </div>
       </div>
 

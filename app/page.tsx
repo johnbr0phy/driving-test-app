@@ -113,7 +113,6 @@ export default async function Home() {
       <div className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 pt-14 pb-12 md:pt-20 md:pb-16 text-center">
-          <Image src="/tiger.png" alt="TigerTest" width={80} height={80} className="mx-auto mb-6 w-16 md:w-20" priority />
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-gray-50 tracking-tight mb-6">
             Free practice tests that get you to a pass
           </h1>

@@ -199,7 +199,7 @@
     "state": "PA",
     "questionId": "LHPA-PAMKT-003",
     "category": "insuranceRegulation",
-    "question": "A producer pays an unlicensed hairdresser for referring clients who want life insurance. This is permitted if the hairdresser:",
+    "question": "A producer pays an unlicensed hairdresser for referring clients who want life insurance. This is permitted only if the hairdresser:",
     "optionA": "Receives a share of commission",
     "optionB": "Explains the policy's key terms",
     "optionC": "Gets a one-time nominal flat fee",

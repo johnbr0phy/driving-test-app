@@ -131,7 +131,7 @@
     "optionD": "Ownership in severalty",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Tenants in common may hold unequal undivided interests and each can sell or will a share, with no right of survivorship. Joint tenancy requires equal interests and passes a deceased owner's share to the survivors, and severalty is ownership by one person alone.",
+    "explanation": "Tenants in common may hold unequal undivided interests and each can sell or will a share, with no right of survivorship. A joint tenancy needs equal interests, and in Tennessee (Tenn. Code Ann. 66-1-107) survivorship applies only if the deed expressly says so; severalty is sole ownership.",
     "sourceQuestionId": "RE-OWN-001"
   },
   {
@@ -139,14 +139,14 @@
     "state": "TN",
     "questionId": "RETN-OWN-002",
     "category": "reOwnershipTitle",
-    "question": "Gil, Hal and Ivy own a $450,000 property as joint tenants. Gil sells his interest to Jo, and later Hal dies. What is Jo's interest worth?",
+    "question": "Gil, Hal and Ivy own a $450,000 property as joint tenants with an express right of survivorship. Gil sells his interest to Jo, and later Hal dies. What is Jo's interest worth?",
     "optionA": "$150,000",
     "optionB": "$225,000",
     "optionC": "$300,000",
     "optionD": "$0, since Jo is not a survivor",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Gil's sale breaks the unities of time and title for that share, so Jo holds 1/3 as a tenant in common: $450,000 / 3 = $150,000. Hal's share passes by survivorship only to Ivy, the remaining joint tenant, so Jo's interest does not grow to $225,000.",
+    "explanation": "Gil's sale severs his share, so Jo holds 1/3 as a tenant in common: $450,000 / 3 = $150,000. Hal's share passes by the deed's survivorship right only to Ivy, so Jo's interest does not grow to $225,000. Tennessee (66-1-107) recognizes survivorship only when the deed states it.",
     "sourceQuestionId": "RE-OWN-002"
   },
   {
@@ -379,7 +379,7 @@
     "state": "TN",
     "questionId": "RETN-VAL-027",
     "category": "reValuation",
-    "question": "A homeowner asks a listing salesperson for an appraisal to use in refinancing with a federally regulated lender. The salesperson should explain that:",
+    "question": "A homeowner asks a listing affiliate broker for an appraisal to use in refinancing with a federally regulated lender. The affiliate broker should explain that:",
     "optionA": "A comparative market analysis will satisfy the lender",
     "optionB": "A broker price opinion meets FIRREA requirements",
     "optionC": "Only a licensed or certified appraiser can provide it",
@@ -1181,7 +1181,7 @@
     "optionD": "After 30 days in broker release status",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "TREC Rule 1260-02-.02(2) bars a released licensee from any licensed activity until a change of affiliation is received and processed by the Commission, and requires the measures within ten days of release.",
+    "explanation": "TREC Rule 1260-02-.02(2) bars a released licensee from any licensed activity until a change of affiliation is received and processed by the Commission. A complete online transfer counts as processed once submitted and confirmed (Rule 1260-02-.02(3)).",
     "sourceQuestionId": "RETN-TNAFF-003"
   },
   {
@@ -1301,7 +1301,7 @@
     "optionD": "120 hours",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Tenn. Code Ann. 62-13-303(b)(2) requires 60 classroom hours, including 30 on the basic principles of real estate, with the exam application. The 120 hours apply to the broker license under 62-13-303(c).",
+    "explanation": "Tenn. Code Ann. 62-13-303(b)(2) and TREC Rule 1260-05-.03(3) require a 60-hour basic principles course before the exam. The 30-hour Course for New Affiliates follows before licensure (90 hours in all), and 120 hours apply to the broker license.",
     "sourceQuestionId": "RETN-TNLIC-001"
   },
   {
@@ -1316,7 +1316,7 @@
     "optionD": "Only if the principal broker requires it",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Tenn. Code Ann. 62-13-303(a)(3)(B) requires this course, in addition to the prelicense hours, before the original affiliate broker license is issued. It is separate from the 16 hours of continuing education due every two years under 62-13-303(g).",
+    "explanation": "Tenn. Code Ann. 62-13-303(a)(3)(B) requires this Course for New Affiliates before the original license is issued, and TREC wants its certificate with the license application. It is separate from the 16 hours of continuing education due every two years under 62-13-303(g).",
     "sourceQuestionId": "RETN-TNLIC-002"
   },
   {

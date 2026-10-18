@@ -133,6 +133,16 @@
   "RE-PRAC-022": {
    "explanation": "Errors and omissions insurance covers claims arising from negligent mistakes in professional services, and Tenn. Code Ann. 62-13-112 requires every active licensee to carry it. General liability covers bodily injury and property damage, such as a fall at an open house."
   },
+  "RE-OWN-001": {
+   "explanation": "Tenants in common may hold unequal undivided interests and each can sell or will a share, with no right of survivorship. A joint tenancy needs equal interests, and in Tennessee (Tenn. Code Ann. 66-1-107) survivorship applies only if the deed expressly says so; severalty is sole ownership."
+  },
+  "RE-OWN-002": {
+   "question": "Gil, Hal and Ivy own a $450,000 property as joint tenants with an express right of survivorship. Gil sells his interest to Jo, and later Hal dies. What is Jo's interest worth?",
+   "explanation": "Gil's sale severs his share, so Jo holds 1/3 as a tenant in common: $450,000 / 3 = $150,000. Hal's share passes by the deed's survivorship right only to Ivy, so Jo's interest does not grow to $225,000. Tennessee (66-1-107) recognizes survivorship only when the deed states it."
+  },
+  "RE-VAL-027": {
+   "question": "A homeowner asks a listing affiliate broker for an appraisal to use in refinancing with a federally regulated lender. The affiliate broker should explain that:"
+  },
   "RE-FIN-001": {
    "explanation": "The trustee holds title on behalf of the lender (beneficiary) and has the power of sale; the borrower is the trustor. The deed of trust is the usual security instrument in Tennessee, and the promissory note is the borrower's promise to pay."
   }

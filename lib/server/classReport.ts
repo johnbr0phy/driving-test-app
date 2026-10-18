@@ -1,7 +1,5 @@
-import { getExamById } from "@/lib/exams";
-import { getExamQuestions } from "@/lib/examData";
-import "@/lib/banks/all";
-import { classExamName, type ClassReport, type ClassStudentRow } from "@/lib/classes";
+import { classExamInfo, type ClassReport, type ClassStudentRow } from "@/lib/classes";
+import { classQuestionLookup } from "@/lib/server/classQuestions";
 
 // The teacher's view of a class, from the class doc and its member docs:
 // totals, topics weakest first, the most-missed questions (with the right
@@ -29,8 +27,9 @@ export function buildClassReport(
   members: MemberDoc[],
   now = Date.now(),
 ): ClassReport {
-  const exam = getExamById(c.examId);
+  const exam = classExamInfo(c.examId, c.state);
   const passPct = exam?.passPct ?? 70;
+  const label = (k: string) => exam?.topicLabel(k) ?? k;
   const weekAgo = now - WEEK_MS;
 
   const topicTotals: Record<string, { a: number; c: number }> = {};
@@ -60,21 +59,19 @@ export function buildClassReport(
     };
   });
 
-  const bank = exam ? safeBank(exam.id) : [];
-  const byId = new Map(bank.map((q) => [q.questionId, q]));
+  const lookup = classQuestionLookup(c.examId);
   const questions = [...new Set([...Object.keys(seenTotals), ...Object.keys(missTotals)])]
     .flatMap((questionId) => {
-      const q = byId.get(questionId);
+      const q = lookup(questionId);
       if (!q) return [];
       const missed = missTotals[questionId] ?? 0;
-      const options = [q.optionA, q.optionB, q.optionC, q.optionD].filter(Boolean);
       return [{
         questionId,
         question: q.question,
-        options,
-        answer: q[`option${q.correctAnswer}` as "optionA"] ?? "",
-        topic: exam?.categoryLabels[q.category] ?? q.category,
-        explanation: q.explanation ?? "",
+        options: q.options,
+        answer: q.answer,
+        topic: label(q.category),
+        explanation: q.explanation,
         // A member recorded before per-question counts only has misses.
         answered: Math.max(seenTotals[questionId] ?? 0, missed),
         missed,
@@ -86,7 +83,8 @@ export function buildClassReport(
     code,
     name: c.name,
     examId: c.examId,
-    examName: classExamName(exam),
+    examName: exam?.name ?? c.examId,
+    ...(c.state ? { state: c.state } : {}),
     teacherName: c.teacherName,
     school: c.school ?? "",
     createdAt: c.createdAt,
@@ -97,17 +95,9 @@ export function buildClassReport(
     activeThisWeek: students.filter((s) => s.lastActive && Date.parse(s.lastActive) >= weekAgo).length,
     passedATest: students.filter((s) => s.bestTest && s.bestTest.pct >= passPct).length,
     topics: Object.entries(topicTotals)
-      .map(([key, v]) => ({ key, label: exam?.categoryLabels[key] ?? key, answered: v.a, correct: v.c }))
+      .map(([key, v]) => ({ key, label: label(key), answered: v.a, correct: v.c }))
       .sort((a, b) => a.correct / a.answered - b.correct / b.answered),
     questions,
     students: students.sort((a, b) => (b.lastActive ?? "").localeCompare(a.lastActive ?? "") || a.name.localeCompare(b.name)),
   };
-}
-
-function safeBank(examId: string) {
-  try {
-    return getExamQuestions(examId as Parameters<typeof getExamQuestions>[0]);
-  } catch {
-    return [];
-  }
 }

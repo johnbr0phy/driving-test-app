@@ -95,8 +95,13 @@ function enqueue(examId: string, add: (q: { answers: ClassAnswerEvent[]; tests: 
 }
 
 /** One answered question on an exam; reported to every class for that exam. */
-export function recordClassAnswer(examId: string, question: Question, correct: boolean) {
-  enqueue(examId, (q) => q.answers.push({ q: question.questionId, c: question.category ?? "other", ok: correct }));
+export function recordClassAnswer(examId: string, question: Pick<Question, "questionId" | "category">, correct: boolean) {
+  recordClassAnswerById(examId, question.questionId, question.category ?? "other", correct);
+}
+
+/** Same, for banks whose questions are not v1 Questions (v2: id and domain). */
+export function recordClassAnswerById(examId: string, questionId: string, category: string, correct: boolean) {
+  enqueue(examId, (q) => q.answers.push({ q: questionId, c: category || "other", ok: correct }));
 }
 
 /** A finished practice test. */

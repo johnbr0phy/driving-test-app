@@ -24,6 +24,8 @@ import { PaywallModal } from "@/components/PaywallModal";
 import { useAuth } from "@/contexts/AuthContext";
 import { auth } from "@/lib/firebase";
 import { trackBeginCheckout, trackStatsEntry } from "@/lib/analytics";
+import { DMV_EXAM_ID } from "@/lib/classes";
+import { recordClassAnswer } from "@/lib/classProgress";
 
 function TrainingPageContent() {
   const router = useRouter();
@@ -226,6 +228,8 @@ function TrainingPageContent() {
     } else {
       playIncorrectSound();
     }
+
+    recordClassAnswer(DMV_EXAM_ID, currentQuestion, isCorrect);
 
     // Track progress
     if (isSetMode) {

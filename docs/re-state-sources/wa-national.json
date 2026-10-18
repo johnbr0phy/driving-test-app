@@ -1,0 +1,188 @@
+{
+ "total": 130,
+ "include": [
+  "RE-PROP-001",
+  "RE-PROP-002",
+  "RE-PROP-014",
+  "RE-PROP-015",
+  "RE-PROP-017",
+  "RE-PROP-026",
+  "RE-PROP-028",
+  "RE-PROP-021",
+  "RE-PROP-022",
+  "RE-PROP-023",
+  "RE-PROP-025",
+  "RE-PROP-024",
+  "RE-OWN-001",
+  "RE-OWN-004",
+  "RE-OWN-015",
+  "RE-OWN-017",
+  "RE-OWN-018",
+  "RE-OWN-019",
+  "RE-OWN-020",
+  "RE-OWN-023",
+  "RE-OWN-024",
+  "RE-OWN-011",
+  "RE-OWN-013",
+  "RE-VAL-001",
+  "RE-VAL-003",
+  "RE-VAL-005",
+  "RE-VAL-011",
+  "RE-VAL-014",
+  "RE-VAL-020",
+  "RE-VAL-022",
+  "RE-VAL-026",
+  "RE-CON-001",
+  "RE-CON-002",
+  "RE-CON-003",
+  "RE-CON-004",
+  "RE-CON-005",
+  "RE-CON-007",
+  "RE-CON-009",
+  "RE-CON-010",
+  "RE-CON-011",
+  "RE-CON-014",
+  "RE-CON-015",
+  "RE-CON-016",
+  "RE-CON-017",
+  "RE-CON-018",
+  "RE-CON-019",
+  "RE-CON-020",
+  "RE-CON-021",
+  "RE-CON-026",
+  "RE-CON-030",
+  "RE-CON-031",
+  "RE-CON-032",
+  "RE-CON-035",
+  "RE-CON-036",
+  "RE-CON-037",
+  "RE-CON-038",
+  "RE-CON-039",
+  "RE-PRAC-006",
+  "RE-PRAC-007",
+  "RE-PRAC-008",
+  "RE-PRAC-010",
+  "RE-PRAC-011",
+  "RE-PRAC-019",
+  "RE-PRAC-020",
+  "RE-PRAC-001",
+  "RE-PRAC-003",
+  "RE-PRAC-004",
+  "RE-PRAC-013",
+  "RE-PRAC-014",
+  "RE-PRAC-015",
+  "RE-PRAC-016",
+  "RE-PRAC-017",
+  "RE-PRAC-018",
+  "RE-PRAC-022",
+  "RE-PRAC-023",
+  "RE-PRAC-024",
+  "RE-DISC-001",
+  "RE-DISC-002",
+  "RE-DISC-004",
+  "RE-DISC-007",
+  "RE-DISC-009",
+  "RE-DISC-011",
+  "RE-DISC-018",
+  "RE-FIN-001",
+  "RE-FIN-003",
+  "RE-FIN-004",
+  "RE-FIN-006",
+  "RE-FIN-007",
+  "RE-FIN-008",
+  "RE-FIN-010",
+  "RE-FIN-012",
+  "RE-FIN-013",
+  "RE-FIN-014",
+  "RE-MATH-004",
+  "RE-MATH-005",
+  "RE-MATH-011",
+  "RE-MATH-013",
+  "RE-MATH-014",
+  "RE-MATH-015",
+  "RE-MATH-017"
+ ],
+ "overrides": {
+  "RE-CON-002": {
+   "explanation": "Only the owner makes a promise, and the broker earns the fee only by performing, so the contract is unilateral. A bilateral contract needs a promise from each side. In Washington the firm could not collect this fee anyway: RCW 19.36.010 requires an agreement employing a broker for compensation to be in writing, and RCW 18.86.080(7) requires a written services agreement."
+  },
+  "RE-CON-026": {
+   "question": "A listing broker's own buyer client wants to make an offer on that broker's listing. Before acting as a limited dual agent, the broker must have:",
+   "optionA": "Written notice to the seller only",
+   "optionB": "Both parties' written consent",
+   "optionC": "A referral to a different firm",
+   "optionD": "Approval from the Department of Licensing",
+   "explanation": "RCW 18.86.060(1) lets a Washington broker act as a limited dual agent only with the written consent of both parties, set forth in each services agreement and separately initialed under RCW 18.86.020(2)(b)(iv). Telling only the seller leaves the buyer unaware of the divided loyalty."
+  },
+  "RE-CON-032": {
+   "question": "Without authorization, a broker negotiates an offer on a home that is not listed. The owner then accepts the offer and agrees to pay the fee. This agency arose by:"
+  },
+  "RE-CON-035": {
+   "explanation": "A seller's willingness to take less is confidential information, and RCW 18.86.040(1)(d) bars a seller's agent from disclosing it, even after the agency ends. It is not a material fact about the property, so the duty to disclose material facts under RCW 18.86.030 does not reach it."
+  },
+  "RE-CON-036": {
+   "question": "Under the agent's duty of accounting, an agent must:",
+   "explanation": "Accounting means handling client funds and documents properly, such as trust account deposits, and reporting on them. In Washington it is a statutory duty owed to all parties, to account in a timely manner for all money and property (RCW 18.86.030(1)(e)); disclosing facts is a separate duty."
+  },
+  "RE-CON-037": {
+   "explanation": "RCW 18.86.030(1)(d) requires a Washington broker to disclose to all parties every existing material fact the broker knows that is not apparent or readily ascertainable, and a seller cannot waive that duty. Waiting for a buyer to ask is not enough because the defect cannot be seen at a showing."
+  },
+  "RE-CON-039": {
+   "explanation": "Customers are owed honesty and disclosure of known material facts even without an agency relationship; in Washington these are duties to all parties under RCW 18.86.030. Loyalty and confidentiality belong only to the principal (RCW 18.86.040), and RCW 18.86.110 makes all of them statutory rather than common-law fiduciary duties."
+  },
+  "RE-OWN-004": {
+   "explanation": "Washington is a community property state. RCW 26.16.010 makes property a spouse owned before marriage or acquired by gift, bequest, devise, descent or inheritance that spouse's separate property; other property acquired during the marriage is community property under RCW 26.16.030."
+  },
+  "RE-OWN-017": {
+   "explanation": "A valid deed needs a competent grantor, an identifiable grantee, a granting clause, a legal description, the grantor's signature, and delivery and acceptance; Washington also requires a deed to be acknowledged (RCW 64.04.020). The grantee usually does not sign, and recording is not required for validity between the parties."
+  },
+  "RE-OWN-023": {
+   "explanation": "Under RCW 65.08.070 an unrecorded conveyance is void against a later good-faith purchaser for value whose conveyance is recorded first, so Buyer 2 prevails. Buyer 1's deed was still valid between Buyer 1 and the seller."
+  },
+  "RE-PRAC-001": {
+   "question": "A seller asks the listing broker to write a custom clause reserving a life estate in the sales contract. The broker should:",
+   "optionC": "Have the managing broker write the clause",
+   "explanation": "Washington brokers may complete standard printed forms, but drafting custom legal language is the practice of law, so the broker refers the seller to an attorney (RCW 18.86.040(1)(c) also requires advising the principal to seek expert advice). Having a managing broker draft it is still practicing law.",
+   "optionD": "Add the clause after the buyer has signed"
+  },
+  "RE-PRAC-016": {
+   "question": "A broker mails flyers claiming a minority family's arrival will lower values and urges owners to sell now. This is:"
+  },
+  "RE-PRAC-024": {
+   "question": "A broker plans to cold-call homeowners about listing their homes. Under federal Do Not Call rules, the broker must:"
+  },
+  "RE-DISC-018": {
+   "explanation": "A stigmatized property carries a psychological impact from an event such as a crime or death, not a physical flaw. In Washington, RCW 18.86.010(11) says the fact or suspicion of a murder or other violent crime on the property is not a material fact; a latent defect is a hidden physical problem."
+  },
+  "RE-FIN-013": {
+   "question": "A title company offers a broker $200 for every buyer the broker refers to it. Under RESPA, accepting this payment is:",
+   "optionA": "Legal if paid through the broker's firm",
+   "optionB": "Legal if the designated broker approves",
+   "explanation": "RESPA Section 8 bans fees, kickbacks or anything of value given for referring settlement service business, and RCW 18.85.053(2) separately bars a Washington licensee from accepting anything of value a title company may not lawfully give. Disclosure does not make a referral fee legal."
+  },
+  "RE-FIN-001": {
+   "explanation": "The trustee holds title for the lender (beneficiary) and has the power of sale; the borrower is the grantor or trustor. The deed of trust is the usual security instrument in Washington, where the Deed of Trust Act (chapter 61.24 RCW) allows a nonjudicial trustee's sale."
+  }
+ },
+ "excluded": {
+  "RE-OWN-003": "Tenancy by the entirety does not exist in Washington; spouses and registered domestic partners hold community property (RCW 26.16.030).",
+  "RE-OWN-021": "Hypothetical 12-year adverse possession period; Washington's is 10 years (RCW 4.16.020), or 7 with color of title and taxes paid (RCW 7.28.070).",
+  "RE-MATH-006": "Assessment at 40% of market value; Washington assesses at 100% of true and fair value (RCW 84.40.030).",
+  "RE-VAL-028": "Keys that assessments are often a fraction of market value; Washington assesses at 100% of true and fair value (RCW 84.40.030).",
+  "RE-MATH-016": "Flat transfer tax per $500; Washington's real estate excise tax (chapter 82.45 RCW) is a graduated percentage, so the step misleads.",
+  "RE-CON-022": "Keys holding disputed earnest money until agreement or court order; RCW 18.85.285(9) lets the designated broker give written notice and disburse within 30 days.",
+  "RE-CON-027": "Designated agency is not a Washington term; in-house transactions make the designated broker and supervising managing broker limited dual agents (RCW 18.86.060(5)).",
+  "RE-CON-028": "Transaction broker or facilitator status does not exist under chapter 18.86 RCW; a broker serving a buyer is a buyer's agent by default (RCW 18.86.020(1)).",
+  "RE-CON-029": "Cooperating subagent of the seller; under RCW 18.86.020(1) a broker working with a buyer is the buyer's agent unless the firm is appointed by the seller.",
+  "RE-CON-033": "Agency ending on the seller's death; RCW 18.86.070 lists the ways a Washington agency ends and does not include death, so the keyed rule could mislead.",
+  "RE-CON-034": "Same issue as RE-CON-033 (termination events beyond RCW 18.86.070).",
+  "RE-PRAC-012": "Same issue as RE-CON-033 (destruction of property as a termination event).",
+  "RE-PRAC-002": "Earnest money delivery 'promptly' with deadlines that vary by state; Washington's two-business-day and next-banking-day rules are tested by REWA-WAACT-001 and -002.",
+  "RE-DISC-015": "Keys that seller disclosure varies by state; Washington has its own statutory form (RCW 64.06.020, Form 17).",
+  "RE-DISC-016": "Duplicate of RE-CON-037 (basement flooding), which is used with a Washington citation.",
+  "RE-CON-040": "Open-house agency disclosure framed as 'first'; Washington ties written agency disclosure and the pamphlet to signing an offer (RCW 18.86.030(1)(f), (g)).",
+  "RE-PRAC-009": "Net listing; not addressed in Washington law and a conflict-of-interest item better left out.",
+  "RE-PRAC-021": "Vicarious liability of the broker; RCW 18.86.090 limits a principal's vicarious liability, and the item's framing could mislead.",
+  "RE-PRAC-005": "Employing broker and salesperson terms; Washington supervision by designated and managing brokers is tested by REWA items."
+ }
+}

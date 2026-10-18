@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, BookOpenCheck, ClipboardCheck, Target } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { TEST_CATALOG } from "@/lib/testCatalog";
 import { TestCard, TestCatalogGrid } from "@/components/TestCatalogGrid";
 import { getPopularTests } from "@/lib/server/popularTests";
@@ -95,24 +95,6 @@ const popularStateSlugs = [
 const popularStates = popularStateSlugs
   .map((slug) => states.find((s) => s.slug === slug))
   .filter((s): s is (typeof states)[number] => !!s);
-
-const steps = [
-  {
-    icon: BookOpenCheck,
-    title: "Train with instant answers",
-    body: "Every question tells you right away why the answer is right. Questions you miss come back until you know them.",
-  },
-  {
-    icon: ClipboardCheck,
-    title: "Take full practice tests",
-    body: "When you are ready, sit a full-length test built like the real one, with the same mix of topics.",
-  },
-  {
-    icon: Target,
-    title: "Fix what you keep missing",
-    body: "Your results show the topics and questions that still trip you up, so you study those and skip the rest.",
-  },
-];
 
 const quotes = [
   { text: "Used this to help me study. Passed today! Thank you :)", who: "u/Naive_Usual1910" },
@@ -219,21 +201,69 @@ export default async function Home() {
         </div>
       </div>
 
-      {/* How it works */}
-      <div className="max-w-5xl mx-auto px-6 py-16 md:py-20">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-12">
+      {/* How it works: real screens from the app, one step per row */}
+      <div className="max-w-5xl mx-auto px-6 py-16 md:py-24">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-14 md:mb-20">
           How TigerTest works
         </h2>
-        <div className="grid md:grid-cols-3 gap-6">
-          {steps.map(({ icon: Icon, title: stepTitle, body }) => (
-            <div key={stepTitle} className="rounded-2xl bg-gray-50 dark:bg-gray-950 p-7">
-              <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-brand text-white">
-                <Icon className="h-6 w-6" aria-hidden="true" />
-              </div>
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-50 mb-2">{stepTitle}</h3>
-              <p className="text-gray-600 dark:text-gray-300">{body}</p>
+
+        <div className="space-y-16 md:space-y-24">
+          <div className="grid md:grid-cols-5 gap-8 md:gap-12 items-center">
+            <div className="md:col-span-2">
+              <p className="text-sm font-semibold text-brand-dark mb-2">Step 1</p>
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 mb-3">Learn it on your phone</h3>
+              <p className="text-lg text-gray-600 dark:text-gray-300">
+                Tap an answer and see right away whether it&apos;s right and why. Questions you miss come back until you
+                get them, so a few minutes on the bus actually counts.
+              </p>
             </div>
-          ))}
+            <div className="md:col-span-3 flex justify-center items-start gap-3 sm:gap-4">
+              {[
+                { src: "/landing/sat-mobile.png", alt: "SAT math drill on a phone" },
+                { src: "/landing/cst-mobile.png", alt: "Surgical technologist question on a phone" },
+                { src: "/landing/cna-mobile.png", alt: "CNA practice question on a phone" },
+              ].map((shot, i) => (
+                <div
+                  key={shot.src}
+                  className={`rounded-2xl shadow-xl overflow-hidden border border-gray-200 dark:border-gray-800 bg-white w-[30%] max-w-[180px] ${i === 1 ? "md:-mt-6" : "md:mt-6"}`}
+                >
+                  <Image src={shot.src} alt={shot.alt} width={768} height={1280} sizes="(min-width: 768px) 180px, 30vw" className="w-full h-auto" />
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-5 gap-8 md:gap-12 items-center">
+            <div className="md:col-span-2 md:order-2">
+              <p className="text-sm font-semibold text-brand-dark mb-2">Step 2</p>
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 mb-3">Sit the real thing</h3>
+              <p className="text-lg text-gray-600 dark:text-gray-300">
+                When the questions feel easy, take a full practice test built from the real exam&apos;s outline, with the
+                same mix of topics. Then you know your score before it counts.
+              </p>
+            </div>
+            <div className="md:col-span-3 md:order-1">
+              <div className="rounded-2xl shadow-xl overflow-hidden border border-gray-200 dark:border-gray-800 bg-white">
+                <Image src="/landing/sat-desktop.png" alt="Timed SAT practice test on a computer" width={1215} height={790} sizes="(min-width: 1024px) 560px, 100vw" className="w-full h-auto" />
+              </div>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-5 gap-8 md:gap-12 items-center">
+            <div className="md:col-span-2">
+              <p className="text-sm font-semibold text-brand-dark mb-2">Step 3</p>
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 mb-3">Know when you&apos;re ready</h3>
+              <p className="text-lg text-gray-600 dark:text-gray-300">
+                Your dashboard turns green as you finish each set and pass each test. When it&apos;s all green, go book
+                the exam.
+              </p>
+            </div>
+            <div className="md:col-span-3">
+              <div className="rounded-2xl shadow-xl overflow-hidden border border-gray-200 dark:border-gray-800 bg-white">
+                <Image src="/dashboard.png" alt="TigerTest DMV dashboard with training sets and practice tests" width={955} height={745} sizes="(min-width: 1024px) 560px, 100vw" className="w-full h-auto" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 

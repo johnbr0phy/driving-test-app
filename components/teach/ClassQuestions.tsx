@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { QuizRow } from "@/components/QuizRow";
 import type { ClassQuestionRow } from "@/lib/classes";
+import { scoreText } from "@/components/teach/scoreColors";
 
 function pct(correct: number, answered: number): number {
   return answered ? Math.round((correct / answered) * 100) : 0;
@@ -47,8 +48,8 @@ export function ClassQuestions({ questions }: { questions: ClassQuestionRow[] })
           const accuracy = pct(q.answered - q.missed, q.answered);
           const chip =
             sort === "missed"
-              ? { value: `${q.missed}`, label: "missed", color: q.missed > 0 ? "text-red-500 dark:text-red-400" : "text-gray-400" }
-              : { value: `${accuracy}%`, label: "right", color: accuracy >= 70 ? "text-green-600 dark:text-green-400" : accuracy >= 50 ? "text-yellow-600 dark:text-yellow-400" : "text-red-500 dark:text-red-400" };
+              ? { value: `${q.missed}`, label: "missed", color: q.missed > 0 ? scoreText("low") : "text-gray-400" }
+              : { value: `${accuracy}%`, label: "right", color: scoreText(accuracy >= 70 ? "good" : accuracy >= 50 ? "near" : "low") };
           return (
             <QuizRow
               key={q.questionId}
@@ -64,8 +65,8 @@ export function ClassQuestions({ questions }: { questions: ClassQuestionRow[] })
                 <div className="pt-1 px-1 space-y-1.5">
                   <div className="flex items-center gap-4 text-xs text-gray-500 dark:text-gray-400">
                     <span>Answered: <span className="font-semibold text-gray-700 dark:text-gray-200">{q.answered}</span></span>
-                    <span>Right: <span className="font-semibold text-green-600 dark:text-green-400">{q.answered - q.missed}</span></span>
-                    <span>Missed: <span className="font-semibold text-red-600 dark:text-red-400">{q.missed}</span></span>
+                    <span>Right: <span className={`font-semibold ${scoreText("good")}`}>{q.answered - q.missed}</span></span>
+                    <span>Missed: <span className={`font-semibold ${scoreText("low")}`}>{q.missed}</span></span>
                   </div>
                   {q.explanation && <p className="text-xs text-gray-500 dark:text-gray-400 leading-relaxed">{q.explanation}</p>}
                 </div>

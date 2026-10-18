@@ -12,6 +12,7 @@ import { useAuth } from "@/contexts/AuthContext";
 import { classLink, classUrl, teachFetch } from "@/lib/teachClient";
 import { normalizeClassCode, type ClassReport } from "@/lib/classes";
 import { ClassQuestions } from "@/components/teach/ClassQuestions";
+import { scoreBar, scoreChip, scoreLevel, scoreTrack } from "@/components/teach/scoreColors";
 
 function pct(correct: number, answered: number): number {
   return answered ? Math.round((correct / answered) * 100) : 0;
@@ -23,12 +24,6 @@ function ago(iso: string | null): string {
   if (days <= 0) return "Today";
   if (days === 1) return "Yesterday";
   return `${days} days ago`;
-}
-
-function barColor(p: number, pass: number): string {
-  if (p >= pass) return "bg-green-500";
-  if (p >= pass - 15) return "bg-amber-500";
-  return "bg-red-500";
 }
 
 export default function ClassPage() {
@@ -140,8 +135,8 @@ export default function ClassPage() {
                     return (
                       <div key={t.key} className="grid grid-cols-[minmax(0,10rem)_1fr_3rem] sm:grid-cols-[minmax(0,14rem)_1fr_3rem] items-center gap-3 text-sm">
                         <span className="truncate text-gray-800 dark:text-gray-100" title={t.label}>{t.label}</span>
-                        <div className="h-2.5 rounded bg-gray-100 dark:bg-gray-800" title={`${t.correct} of ${t.answered} right`}>
-                          <div className={`h-2.5 rounded ${barColor(p, report.passPct)}`} style={{ width: `${p}%` }} />
+                        <div className={`h-2.5 rounded-sm ${scoreTrack}`} title={`${t.correct} of ${t.answered} right`}>
+                          <div className={`h-2.5 rounded-sm ${scoreBar(scoreLevel(p, report.passPct))}`} style={{ width: `${p}%` }} />
                         </div>
                         <span className="text-right tabular-nums text-gray-800 dark:text-gray-100">{p}%</span>
                       </div>
@@ -179,7 +174,7 @@ export default function ClassPage() {
                       <td className="pr-3 tabular-nums">{s.answered ? `${pct(s.correct, s.answered)}%` : "-"}</td>
                       <td>
                         {s.bestTest ? (
-                          <span className={`rounded-md px-2 py-0.5 text-xs ${s.bestTest.pct >= report.passPct ? "bg-green-50 dark:bg-green-950 text-green-700 dark:text-green-300" : "bg-amber-50 dark:bg-amber-950 text-amber-700 dark:text-amber-300"}`}>
+                          <span className={`rounded-sm px-2 py-0.5 text-xs font-medium ${scoreChip(s.bestTest.pct >= report.passPct ? "good" : "near")}`}>
                             Test {s.bestTest.testNumber} · {s.bestTest.pct}%
                           </span>
                         ) : (

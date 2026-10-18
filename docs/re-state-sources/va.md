@@ -43,6 +43,8 @@ Pass mark: the real exam has two marks (70% national, 75% state, each passed sep
 
 Dual and designated agency items (RE-CON-026, -027) are kept because Virginia allows both with written consent (Code 54.1-2139, 54.1-2139.1). RE-FIN-001 (deed of trust) fits Virginia practice. RE-OWN-003 (tenancy by the entirety) is Virginia law (55.1-136).
 
+Reviewed 2026-10-18 against the live law.lis.virginia.gov text (Code and 18VAC135-20 as amended eff. April 1, 2026) and the PSI bulletin rev. 2/18/2026.
+
 ## Law sources (official current text, law.lis.virginia.gov)
 - Code of Virginia Title 54.1 Chapter 21 (real estate license law): https://law.lis.virginia.gov/vacode/title54.1/chapter21/ . Sections 54.1-2100, 2103, 2105, 2105.01, 2105.03, 2108.1, 2108.2, 2130, 2131, 2132, 2137, 2138, 2138.1, 2138.2, 2139, 2139.1, 2140, 2141, 2142, 2142.1. Chapter 21 Article 3 carries 2025 cc. 479 and 495 (buyer brokerage agreement before showing).
 - 18VAC135-20, Real Estate Board Licensing Regulations: https://law.lis.virginia.gov/admincode/title18/agency135/chapter20/ . Comprehensively amended effective April 1, 2026 (Va. Reg. 42:14): escrow moved from section 180 (repealed) to 181, post-license education to section 95. Sections used: 70, 90, 95, 101, 165, 170, 181, 185, 190, 220, 260, 270, 280, 300, 330, 335.
@@ -78,7 +80,7 @@ Dual and designated agency items (RE-CON-026, -027) are kept because Virginia al
 | REVA-VADSC-008 | Code 55.1-2312(B); 55.1-2309(B) |
 | REVA-VADSC-009 | Code 55.1-2309(A) |
 | REVA-VADSC-010 | 18VAC135-20-190(A), (B) |
-| REVA-VAAGY-001 | Code 54.1-2132(A)(1); 54.1-2137(B); 54.1-2131(G) |
+| REVA-VAAGY-001 | Code 54.1-2132(A)(1) (2025 cc. 479, 495, HB 1684/SB 1309, effective July 1, 2025); 54.1-2137(B); 54.1-2131(G) |
 | REVA-VAAGY-002 | Code 54.1-2137(A), (C)(1) |
 | REVA-VAAGY-003 | Code 54.1-2137(C) |
 | REVA-VAAGY-004 | Code 54.1-2138(A); 18VAC135-20-220(A) |
@@ -109,13 +111,13 @@ Dual and designated agency items (RE-CON-026, -027) are kept because Virginia al
 | RE-CON-026, -027 | Cite 54.1-2139 and 54.1-2139.1 (supervising broker is the dual agent) |
 | RE-CON-035, -037, -039, -040 | Cite 54.1-2131(A)(3), 54.1-2131(B) (written disclosure of known physical defects), 54.1-2138(A) |
 | RE-PRAC-003 | Cites 18VAC135-20-181(D) |
-| RE-PRAC-005 | "Employing broker" becomes "principal broker" (stem and option C), cites 18VAC135-20-165, -330 |
+| RE-PRAC-005 | "Employing broker" becomes "principal broker" (stem and option C), cites Code 54.1-2110.1 and 18VAC135-20-165, -330 |
 
 ## National exclusions
 | Item | Reason |
 |---|---|
 | RE-OWN-004 | Community property; Virginia is not a community property state |
-| RE-OWN-021 | Hypothetical 12-year adverse possession period; Virginia's is 15 years |
+| RE-OWN-021 | Hypothetical 12-year adverse possession period; Virginia's is 15 years (Code 8.01-236) |
 | RE-CON-028 | Transaction broker/facilitator does not exist in Virginia; the nonagency option is an independent contractor (54.1-2130) |
 | RE-CON-029 | MLS subagency; 54.1-2141 says MLS use creates no brokerage relationship |
 | RE-CON-032 | Agency by ratification; Virginia requires a written brokerage agreement before services (54.1-2137(B)) and abrogates inconsistent common law (54.1-2144) |
@@ -123,7 +125,7 @@ Dual and designated agency items (RE-CON-026, -027) are kept because Virginia al
 | RE-CON-022, RE-PRAC-002 | Earnest money rules covered by the Virginia escrow items (54.1-2108.2) |
 | RE-PRAC-009 | Net listing keyed as lawful; improper in Virginia (18VAC135-20-280(A)(5)) |
 | RE-PRAC-021 | Broker vicarious liability keyed broadly; 18VAC135-20-330 and 54.1-2142 limit it |
-| RE-MATH-006, RE-VAL-028, RE-PROP-024 | Fractional assessment or mills; Virginia assesses at fair market value with rates per $100 |
+| RE-MATH-006, RE-VAL-028, RE-PROP-024 | Fractional assessment or mills; Virginia assesses at fair market value (Const. Art. X, sec. 2; Code 58.1-3201: 100 percent) with rates per $100 |
 | RE-MATH-016 | Local transfer tax figure unlike Virginia's grantor and recordation taxes |
 | RE-DISC-015, RE-DISC-018 | Generic disclosure and stigma items; Virginia rules tested by REVA-VADSC items |
 | RE-FIN-003 | Lien-theory mortgage framing; Virginia practice is the deed of trust |
@@ -143,4 +145,4 @@ Dual and designated agency items (RE-CON-026, -027) are kept because Virginia al
 
 Correct letters across the 120: A 30, B 31, C 34, D 25.
 
-Note: the build tool's printed split reads "74 national, 46 state" because it counts ids starting `REVA-VA`, which also matches the six re-namespaced national valuation items (`REVA-VAL-...`). The real split is 80 + 40.
+The build tool prints the split as 80 national, 40 state.

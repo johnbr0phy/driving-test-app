@@ -251,7 +251,7 @@
     "optionD": "Domestic insurer",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "An alien insurer is formed under the laws of another country. A foreign insurer is formed in another US state, and a domestic insurer is formed in the state in question.",
+    "explanation": "Under N.J.S.A. 17B:17-7, an alien insurer is formed under the laws of another country. A foreign insurer is formed in another US state, and a domestic insurer is formed in New Jersey.",
     "sourceQuestionId": "PC-GEN-024"
   },
   {
@@ -499,7 +499,7 @@
     "state": "NJ",
     "questionId": "PCNJ-NJPRA-001",
     "category": "pcGeneral",
-    "question": "A producer opens an office in a new location. She must notify the Department of the change of business address within:",
+    "question": "A producer moves her business office to a new address. She must notify the Department of the change within:",
     "optionA": "30 days",
     "optionB": "10 days",
     "optionC": "60 days",
@@ -664,14 +664,14 @@
     "state": "NJ",
     "questionId": "PCNJ-NJPRA-012",
     "category": "pcGeneral",
-    "question": "A New Jersey resident tells an insurer he lives in Pennsylvania to get a cheaper auto policy. Under N.J.S.A. 17:33A-4, this is:",
+    "question": "A New Jersey resident falsely tells a Pennsylvania insurer he lives there to buy a cheaper auto policy. Under N.J.S.A. 17:33A-4, this is:",
     "optionA": "Legal if he owns a home there",
     "optionB": "Only a breach of contract",
     "optionC": "A motor vehicle matter only",
     "optionD": "Insurance fraud",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "The Insurance Fraud Prevention Act names a false statement about principal residence to obtain a motor vehicle policy as a violation. Penalties run up to $5,000, $10,000 and $15,000 for first, second and later violations.",
+    "explanation": "N.J.S.A. 17:33A-4(f) makes it a violation for a New Jersey resident to obtain an out-of-state auto policy by falsely claiming a principal residence or garaging location in that state; truthful second-residence policies are allowed. Penalties run up to $5,000, $10,000 and $15,000 for first, second and later violations.",
     "sourceQuestionId": "PCNJ-NJPRA-012"
   },
   {
@@ -716,7 +716,7 @@
     "optionD": "Only if domiciled in New Jersey",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "N.J.S.A. 17:30A-6 makes membership a condition of a member insurer's authority to transact insurance in New Jersey. The association pays covered claims of insolvent insurers and also runs the Unsatisfied Claim and Judgment Fund.",
+    "explanation": "N.J.S.A. 17:30A-6 makes membership a condition of a member insurer's authority to transact insurance in New Jersey. The association pays covered claims of insolvent insurers and also administers the Unsatisfied Claim and Judgment Fund.",
     "sourceQuestionId": "PCNJ-NJPRA-015"
   },
   {
@@ -1496,7 +1496,7 @@
     "optionD": "Bodily injury caused by an uninsured or hit-and-run driver",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "UM pays bodily injury damages the insured is legally entitled to recover from an at-fault driver who has no liability insurance or cannot be identified. Property damage UM is available only in some states, so it varies by state.",
+    "explanation": "UM pays bodily injury damages the insured is legally entitled to recover from an at-fault driver who has no liability insurance or cannot be identified. New Jersey policies must also include UM property damage, subject to a $500 exclusion, under N.J.S.A. 17:28-1.1, but the coverage does not pay the uninsured driver's own bills.",
     "sourceQuestionId": "PC-AUTO-015"
   },
   {

@@ -6,7 +6,7 @@
 |---|---|---|
 | Regulator | Ohio Department of Insurance (ODI), superintendent of insurance; property and casualty are separate lines of authority (ORC 3905.06(B)(3), (4)) | ORC 3905.06, https://codes.ohio.gov/ohio-revised-code/section-3905.06 |
 | Vendor | PSI Services LLC, in-person at PSI test centers (remote proctored exams ended 3/13/2026) | PSI Ohio Insurance License Examination Candidate Information Bulletin, updated 3/24/2026, hosted by ODI: https://dam.assets.ohio.gov/image/upload/insurance.ohio.gov/Agent/Documents/Candidate_Handbook_updated_3.20.2025.pdf (same text at https://test-takers.psiexams.com/api/content/bulletin/5493) |
-| Exams | Combined "Ohio Property and Casualty Insurance Agent", Series 11-36; Ohio also offers separate property, casualty and personal lines exams | Bulletin, "Examination Content Outlines" |
+| Exams | Combined "Ohio Property and Casualty Insurance Agent", Series 11-36; Ohio also offers separate Property (Series 11-46), Casualty (Series 11-47) and Personal Lines (Series 11-43) exams | Bulletin, "Examination Content Outlines" |
 | Items and time | 150 questions, 2.5 hours | Bulletin, Series 11-36 outline header |
 | Unscored items | Up to about 10% experimental items may be added; they count against time | Bulletin, "Non-Scored Questions" |
 | Pass mark | Minimum passing score 70% | Bulletin, "Examination Content Outlines" |
@@ -114,7 +114,7 @@ Excluded on purpose:
 - PC-AUTO-030 (ISO PAP: after 60 days cancel only for listed reasons): Ohio's statute counts 90 days (ORC 3937.31(C)); replaced by PCOH-OHAUT-004.
 - PC-AUTO-018 (UM stacking "varies by state"): Ohio expressly lets policies bar stacking (ORC 3937.18(F)), and the key is a "varies" phrase.
 - PC-LIA-019 (why workers' comp is an exclusive remedy): its distractor "Only one insurer may write it in each state" is literally true of Ohio's monopolistic state fund, so an Ohio candidate could defend it; PCOH-OHWC-002 covers exclusive remedy instead.
-- Remaining national items not picked were left out only for count and duplication (for example PC-HO-011 to PC-HO-014 special limits beyond the two kept).
+- Remaining national items not picked were left out only for count and duplication (for example the PC-HO-011 and PC-HO-014 special limits, beyond the two kept).
 
 Checked and kept: PAP UM definitions (PC-AUTO-015, PC-AUTO-016 insolvent or denying insurer) match ORC 3937.18(B); UIM "too little insurance" (PC-AUTO-017) matches the limits-to-limits test in 3937.18(C); valued policy concept (PC-POL-028 not picked, but PCOH-OHPOL-001 covers Ohio's version); binders (PC-GEN-028) consistent with ORC 4509.56; FAIR plan purpose (PC-OTH-014) matches ORC 3929.41.
 

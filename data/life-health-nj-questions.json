@@ -229,7 +229,7 @@
     "state": "NJ",
     "questionId": "LHNJ-NJPRA-001",
     "category": "insuranceRegulation",
-    "question": "A producer opens an office in a new location. She must notify the Department of the change of business address within:",
+    "question": "A producer moves her business office to a new address. She must notify the Department of the change within:",
     "optionA": "30 days",
     "optionB": "10 days",
     "optionC": "60 days",
@@ -1121,7 +1121,7 @@
     "optionD": "5 years of the missed premium",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "N.J.S.A. 17B:25-9 requires a reinstatement right for 3 years from the first unpaid premium, with evidence of insurability and back premiums plus interest, unless the cash value is exhausted or extended term has expired. Thirty-one days is the grace period range, not reinstatement.",
+    "explanation": "N.J.S.A. 17B:25-9 requires a reinstatement right for 3 years from the first unpaid premium, with evidence of insurability and back premiums plus interest, unless the cash value is exhausted or extended term has expired. Thirty-one days is a typical grace or conversion period, not the reinstatement window.",
     "sourceQuestionId": "LHNJ-NJLIF-002"
   },
   {

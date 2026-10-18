@@ -1,5 +1,6 @@
 "use client";
 
+import "@/lib/banks/cet";
 import { ExamStatsPage } from "@/components/exam/ExamStatsPage";
 import { getExamById } from "@/lib/exams";
 

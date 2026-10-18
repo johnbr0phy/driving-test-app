@@ -1,5 +1,6 @@
 "use client";
 
+import "@/lib/banks/notary";
 import { ExamTestPage } from "@/components/exam/ExamTestPage";
 import { getExamById } from "@/lib/exams";
 

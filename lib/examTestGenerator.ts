@@ -1,5 +1,5 @@
 import { Question } from "@/types";
-import { shuffleQuestionOptions } from "./testGenerator";
+import { shuffleQuestionOptions } from "./shuffleOptions";
 import { ExamConfig, trainingPartOf } from "./exams";
 import { getExamQuestions } from "./examData";
 import type { Language } from "@/i18n";

@@ -18,10 +18,8 @@ import { readFileSync, writeFileSync } from "fs";
 import { join } from "path";
 import { ALL_EXAMS, TRAINING_PART_MAX, TRAINING_PART_TARGET } from "@/lib/exams";
 import { getExamQuestions } from "@/lib/examData";
-// State variant banks are registered by these modules, not by examData itself.
-import "@/lib/banks/realEstateStates";
-import "@/lib/banks/lifeHealthStates";
-import "@/lib/banks/propertyCasualtyStates";
+// Banks register from lib/banks/*, not from examData itself.
+import "@/lib/banks/all";
 
 /** Cuts at a category change cost nothing extra; a cut inside a category
  *  costs this many questions of imbalance, so a set is split mid-topic only

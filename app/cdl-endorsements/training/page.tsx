@@ -1,5 +1,6 @@
 "use client";
 
+import "@/lib/banks/cdlx";
 import { ExamTrainingPage } from "@/components/exam/ExamTrainingPage";
 import { getExamById } from "@/lib/exams";
 

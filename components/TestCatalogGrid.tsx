@@ -32,7 +32,7 @@ export function TestCard({ test, answered }: { test: TestCatalogEntry; answered?
               <TestIcon examId={test.id} icon={test.icon} className={tiger ? "h-12 w-12" : "h-6 w-6"} />
             </div>
             <div className="min-w-0">
-              <h2 className="truncate text-lg font-semibold leading-snug text-gray-900 dark:text-gray-50">{test.name}</h2>
+              <h2 className="text-balance text-lg font-semibold leading-snug text-gray-900 dark:text-gray-50">{test.name}</h2>
               {/* Two lines tall either way: a long org wraps into the second, a multilingual test puts its flags there. */}
               {test.languages.length > 1 ? (
                 <div className="min-h-[2.5rem] text-sm leading-5 text-gray-500 dark:text-gray-400">

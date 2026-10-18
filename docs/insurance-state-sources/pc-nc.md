@@ -76,7 +76,8 @@ Law changes checked for 2025-2026: minimum financial responsibility limits are n
 
 ## National overrides (text only, keys unchanged)
 - PC-POL-012: explanation fixes a garbled sentence and adds that a North Carolina coinsurance clause needs "coinsurance contract" printed on the policy (G.S. 58-3-15).
-- PC-AUTO-016: explanation cites G.S. 20-279.21(b)(3), which counts an insolvent liability insurer as uninsured.
+- PC-AUTO-016: explanation cites G.S. 20-279.21(b)(3), which names each uninsured case (no insurance, limits below the minimum, insurer denies coverage or is insolvent).
+- PC-AUTO-017 (added in review): the national explanation compared the at-fault limits with the insured's UIM limits; North Carolina's current definition of an underinsured highway vehicle in G.S. 20-279.21(b)(4) compares the at-fault limits with the injured person's damages, so the explanation now says that. Key unchanged.
 
 ## National exclusions
 - PC-AUTO-030 (ISO PAP cancellation rule after 60 days): North Carolina limits auto terminations to the reasons in G.S. 58-36-85(b) and 58-37-50, with 15/60-day notice; tested by PCNC-NCAUT-002 instead.

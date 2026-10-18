@@ -19,7 +19,7 @@ export function ResultsV2({ exam, testNumber }: { exam: ExamV2Config; testNumber
   const goal = useV2Store((s) => s.goals[exam.id]) ?? exam.defaultGoal;
   const byId = useMemo(() => getQuestionIndex(exam.id), [exam.id]);
   const history = useMemo(() => resultsForExam(results, exam.id).filter((r) => r.testNumber === testNumber), [results, exam.id, testNumber]);
-  const [filter, setFilter] = useState<"wrong" | "all">("wrong");
+  const [filter, setFilter] = useState<"wrong" | "all">("all");
   const [open, setOpen] = useState<string | null>(null);
   const [sectionFilter, setSectionFilter] = useState<string>("all");
 
@@ -121,13 +121,15 @@ export function ResultsV2({ exam, testNumber }: { exam: ExamV2Config; testNumber
       <div className="mt-8">
         <div className="flex flex-wrap items-center justify-between gap-2">
           <h2 className="text-lg font-bold">Review</h2>
-          <div className="flex gap-1 text-sm">
-            <select aria-label="Filter review by section" value={sectionFilter} onChange={(e) => setSectionFilter(e.target.value)} className="v2-tap rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 px-2 text-sm">
+          <div className="flex flex-wrap items-center gap-3 text-sm">
+            <select aria-label="Filter review by section" value={sectionFilter} onChange={(e) => setSectionFilter(e.target.value)} className="v2-tap rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 pl-3 pr-8 text-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-brand">
               <option value="all">All sections</option>
               {exam.sections.map((s) => <option key={s.key} value={s.key}>{s.name}</option>)}
             </select>
-            <button type="button" aria-pressed={filter === "wrong"} onClick={() => setFilter("wrong")} className={`v2-tap rounded-lg px-3 font-semibold ${filter === "wrong" ? "bg-brand text-white" : "bg-gray-100 dark:bg-gray-800"}`}>Missed</button>
-            <button type="button" aria-pressed={filter === "all"} onClick={() => setFilter("all")} className={`v2-tap rounded-lg px-3 font-semibold ${filter === "all" ? "bg-brand text-white" : "bg-gray-100 dark:bg-gray-800"}`}>All</button>
+            <div className="flex gap-1">
+              <button type="button" aria-pressed={filter === "all"} onClick={() => setFilter("all")} className={`v2-tap rounded-lg px-3 font-semibold ${filter === "all" ? "bg-brand text-white" : "bg-gray-100 dark:bg-gray-800"}`}>All</button>
+              <button type="button" aria-pressed={filter === "wrong"} onClick={() => setFilter("wrong")} className={`v2-tap rounded-lg px-3 font-semibold ${filter === "wrong" ? "bg-brand text-white" : "bg-gray-100 dark:bg-gray-800"}`}>Missed</button>
+            </div>
           </div>
         </div>
         <div className="mt-3 space-y-2">

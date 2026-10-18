@@ -8,8 +8,9 @@
  *   CST   300s  (tests 301-304, sets 301-305)
  *   CRCST 400s  (tests 401-404, sets 401-406)
  *
- * Adding an exam = one entry here, a question bank in data/, a data import
- * in lib/examData.ts, a theme block in globals.css, and app/<slug>/ wrappers.
+ * Adding an exam = one entry here, a question bank in data/, a bank module
+ * lib/banks/<examId>.ts imported by its test, training and stats pages, a
+ * theme block in globals.css, and app/<slug>/ wrappers.
  * This file must stay free of question-data imports (the store imports it).
  */
 
@@ -96,7 +97,7 @@ export interface ExamConfig {
     analyticsKey: string;
   };
   /** Other languages the exam is offered in (a translated bank in
-   *  lib/examData.ts plus this copy). The language switcher shows on the
+   *  lib/banks/<examId>.ts plus this copy). The language switcher shows on the
    *  exam's app pages only when there is at least one. */
   translations?: Partial<Record<Exclude<Language, "en">, ExamTranslation>>;
 }

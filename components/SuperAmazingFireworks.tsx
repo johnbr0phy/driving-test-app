@@ -32,7 +32,7 @@ export function SuperAmazingFireworks() {
     };
   }, []);
 
-  const isMarketingHome = pathname === "/" || pathname === "/es";
+  const isMarketingHome = pathname === "/" || pathname === "/dmv-practice-test" || pathname === "/es";
   const on = enabled && !isMarketingHome;
 
   useEffect(() => {

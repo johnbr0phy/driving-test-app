@@ -10,8 +10,9 @@ import {
 } from "@/lib/testCatalog";
 import { TestIcon } from "@/components/TestIcon";
 import { hasTigerSet } from "@/lib/tigerAssets";
+import { LANGUAGES } from "@/i18n";
 
-function TestCard({ test }: { test: TestCatalogEntry }) {
+export function TestCard({ test }: { test: TestCatalogEntry }) {
   return (
     <div data-theme={test.theme} className="h-full">
       <Link
@@ -28,6 +29,7 @@ function TestCard({ test }: { test: TestCatalogEntry }) {
           </div>
         </div>
         <p className="flex-1 text-gray-600 dark:text-gray-300">{test.blurb}</p>
+        {test.languages.length > 1 && <LanguageFlags languages={test.languages} />}
         <div className="mt-5 flex items-center justify-between text-sm">
           <span className="text-gray-500 dark:text-gray-400">
             {test.questions} questions · {test.pricing ?? "Free"}
@@ -41,14 +43,34 @@ function TestCard({ test }: { test: TestCatalogEntry }) {
   );
 }
 
+/** The flags of every language a test comes in, same flags as the language switcher. */
+function LanguageFlags({ languages }: { languages: TestCatalogEntry["languages"] }) {
+  const langs = LANGUAGES.filter((l) => languages.includes(l.code));
+  const names = langs.map((l) => l.englishName).join(", ");
+  return (
+    <p className="mt-4 flex items-center gap-1.5 text-sm text-gray-500 dark:text-gray-400" title={`Available in ${names}`}>
+      <span className="sr-only">Available in {names}</span>
+      {langs.map((l) => (
+        <span key={l.code} aria-hidden="true" className="text-lg leading-none">
+          {l.flag}
+        </span>
+      ))}
+    </p>
+  );
+}
+
 /**
  * The /tests hub body: a search box plus every test grouped by category.
  * Rendered on the client so typing filters instantly; with an empty query it
  * shows the full catalog exactly as the server would.
  */
-export function TestCatalogGrid() {
+export function TestCatalogGrid({ showPopular = true }: { showPopular?: boolean } = {}) {
   const [query, setQuery] = useState("");
-  const groups = useMemo(() => searchTestGroups(query), [query]);
+  // The homepage shows its own live "Popular this week" row above the grid.
+  const groups = useMemo(
+    () => searchTestGroups(query).filter((g) => showPopular || g.title !== "Most popular"),
+    [query, showPopular]
+  );
   const count = groups.reduce((n, g) => n + g.tests.length, 0);
   const searching = query.trim().length > 0;
 

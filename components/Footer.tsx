@@ -39,7 +39,7 @@ export function Footer() {
   // Site-wide links stay inside the current test's cluster (driving tests on
   // DMV pages, nursing on nursing pages...). The /tests hub links everything.
   const footerTests = relatedTests(exam?.id ?? "dmv", 8);
-  const isHomepage = pathname === "/";
+  const isHomepage = pathname === "/dmv-practice-test";
   // Driving schools only belong next to driving tests (DMV, CDL, motorcycle).
 
   // SEO landing pages have dedicated /es/ and /vi/ URLs, so they manage

@@ -1,4 +1,5 @@
-import { EXAMS, ExamConfig, examLandingPath } from "./exams";
+import { EXAMS, ExamConfig, examLandingPath, examLanguages } from "./exams";
+import type { Language } from "@/i18n";
 import { EXAMS_V2 } from "./v2/registry";
 import { BANK_SIZES } from "./v2/bankSizes";
 import type { ExamV2Config } from "./v2/types";
@@ -27,6 +28,8 @@ export interface TestCatalogEntry {
    * the whole test is free, which is every exam except the DMV.
    */
   pricing?: string;
+  /** Languages the test can be taken in, English first. */
+  languages: Language[];
 }
 
 const dmv: TestCatalogEntry = {
@@ -35,13 +38,15 @@ const dmv: TestCatalogEntry = {
   name: "DMV Permit Test",
   org: "All 50 states + DC",
   blurb: "State-specific permit and driver's license knowledge tests. Signs, rules of the road, safety and your state's laws.",
-  href: "/",
+  href: "/dmv-practice-test",
   dashboardHref: "/dashboard",
   questions: 200,
   icon: "car",
   // Tests 1-2 and training sets 1-2 are free; 3-4 need the one-time premium
   // unlock (app/dashboard/page.tsx), so this card cannot say plain "Free".
   pricing: "2 free, 2 premium",
+  // Spanish for every state; Vietnamese and Korean for selected states.
+  languages: ["en", "es", "vi", "ko"],
 };
 
 const EXAM_BLURBS: Record<string, string> = {
@@ -102,6 +107,7 @@ const examEntry = (exam: ExamConfig): TestCatalogEntry => ({
   questions: exam.testCount * exam.questionsPerTest,
   icon: exam.icon,
   theme: exam.id,
+  languages: examLanguages(exam),
 });
 
 // v2 exams (sectioned, timed, scaled scores) live outside the v1 registry.
@@ -116,6 +122,7 @@ const v2Entry = (exam: ExamV2Config): TestCatalogEntry => ({
   questions: BANK_SIZES[exam.id] ?? 0,
   icon: exam.icon as TestCatalogEntry["icon"],
   theme: exam.id,
+  languages: ["en"],
   // Exams with a Premium tier say so on their hub card; the rest read "Free".
   ...(exam.premium
     ? { pricing: `${exam.tests.length - exam.premium.lockedTests.length} free, ${exam.premium.lockedTests.length} premium` }

@@ -48,7 +48,8 @@ The store in `/store/useStore.ts` is the single source of truth. Key sections:
 ### Routing
 
 App Router pages in `/app/`. Key routes:
-- `/` — landing page
+- `/` — TigerTest hub homepage: "Popular this week" (six tests ranked by questions answered in the last 7 days from `analytics/questions.byExam`, `lib/server/popularTests.ts`, revalidated hourly), a DMV state grid, how it works with real app screenshots, the full catalog and a TigerTest FAQ. Catalog cards show a flag per language from `TestCatalogEntry.languages` (the DMV's es/vi/ko, a v1 exam's `translations`)
+- `/dmv-practice-test` — the DMV landing (the homepage until Oct 2026; same copy, own canonical; the catalog's DMV `href`)
 - `/dashboard` — main hub (4 tests + 4 training sets)
 - `/test/[id]` — practice test (1-4)
 - `/test/[id]/results` — test results with performance breakdown

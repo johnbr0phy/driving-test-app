@@ -43,8 +43,8 @@ export function Header() {
   // Hide sign up prompt on onboarding pages (too early in flow)
   const isOnboarding = pathname?.startsWith("/onboarding");
 
-  // Language toggle lives in the header only on the homepage; the footer renders it elsewhere.
-  const isHomepage = pathname === "/";
+  // Language toggle lives in the header only on the DMV landing; the footer renders it elsewhere.
+  const isHomepage = pathname === "/dmv-practice-test";
 
   if (hideHeader) {
     return null;

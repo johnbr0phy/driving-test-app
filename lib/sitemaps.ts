@@ -122,6 +122,15 @@ export async function buildSegment(segment: SitemapSegment): Promise<SitemapEntr
           changeFrequency: "monthly" as const,
           priority: 0.8,
         })),
+        // Translated landings (/es/examen-practica-cdl).
+        ...EXAMS.flatMap((exam) =>
+          Object.values(exam.translations ?? {}).map((tr) => ({
+            url: `${SITE_URL}${tr.landingPath}`,
+            lastModified: EXAM_LANDINGS_UPDATED_AT,
+            changeFrequency: "monthly" as const,
+            priority: 0.7,
+          }))
+        ),
       ];
     case "schools": {
       const slugs = await getActiveSchoolSlugs();

@@ -92,6 +92,8 @@ export interface ExamConfig {
 
 /** Everything a person reads in an ExamConfig, in one other language. */
 export interface ExamTranslation {
+  /** The exam's landing page in this language (/es/examen-practica-cdl). */
+  landingPath: string;
   name: string;
   examLabel: string;
   fullName: string;
@@ -174,6 +176,7 @@ const cdl: ExamConfig = {
   },
   translations: {
     es: {
+      landingPath: "/es/examen-practica-cdl",
       name: "Examen de práctica CDL",
       examLabel: "CDL Conocimientos Generales",
       fullName: "examen de conocimientos generales de la CDL",
@@ -2547,7 +2550,11 @@ export function getExamByPath(pathname: string | null | undefined): ExamConfig |
   // Families only: a variant's pages live under its family slug
   // (/real-estate/ca/...), so theme, header and footer follow the family.
   return EXAMS.find(
-    (e) => pathname === e.slug || pathname.startsWith(`${e.slug}/`) || pathname === e.landingPath
+    (e) =>
+      pathname === e.slug ||
+      pathname.startsWith(`${e.slug}/`) ||
+      pathname === e.landingPath ||
+      Object.values(e.translations ?? {}).some((tr) => tr.landingPath === pathname)
   );
 }
 

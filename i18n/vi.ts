@@ -61,7 +61,7 @@ export const vi: TranslationKeys = {
     chooseYourStateDesc: "Chọn tiểu bang của bạn bên dưới để bắt đầu luyện tập với các câu hỏi dựa trên sổ tay lái xe chính thức và yêu cầu của DMV tiểu bang bạn.",
     viewAllStates: "Xem tất cả 50 tiểu bang",
     builtForPeople: "Được Tạo cho Những Người Chỉ Cần Thi Đậu",
-    fromReddit: "Từ r/driving và r/DMV trên",
+    fromReddit: "Từ r/driving, r/DMV và r/Histology trên",
     otherTestsTitle: "Đang ôn thi kỳ thi khác?",
     otherTestsSub: "TigerTest cũng có bài thi thử miễn phí cho các kỳ thi khác.",
     otherTestsAll: "Tất cả bài thi",

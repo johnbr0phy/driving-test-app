@@ -63,7 +63,7 @@ export const ko: TranslationKeys = {
     chooseYourStateDesc: "아래에서 주를 선택하면 해당 주의 공식 운전자 교본과 DMV 기준에 맞춘 문제로 연습을 시작할 수 있습니다.",
     viewAllStates: "50개 주 전체 보기",
     builtForPeople: "그냥 합격하면 되는 분들을 위해 만들었습니다",
-    fromReddit: "출처: r/driving 및 r/DMV",
+    fromReddit: "출처: r/driving, r/DMV 및 r/Histology",
     otherTestsTitle: "다른 시험을 준비 중이신가요?",
     otherTestsSub: "TigerTest는 다른 시험을 위한 무료 연습 시험도 제공합니다.",
     otherTestsAll: "전체 시험 보기",

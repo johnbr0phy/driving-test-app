@@ -61,7 +61,7 @@ export const en = {
     chooseYourStateDesc: "Select your state below to start practicing with questions based on your state's official driver's manual and DMV requirements.",
     viewAllStates: "View all 50 states",
     builtForPeople: "Built for People Who Just Need to Pass",
-    fromReddit: "From r/driving and r/DMV on",
+    fromReddit: "From r/driving, r/DMV and r/Histology on",
     otherTestsTitle: "Studying for something else?",
     otherTestsSub: "TigerTest also has free practice tests for other exams.",
     otherTestsAll: "All tests",

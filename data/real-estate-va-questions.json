@@ -142,7 +142,7 @@
     "question": "Under the Virginia Underground Utility Damage Prevention Act, before starting any excavation an excavator must:",
     "optionA": "Submit a locate request first",
     "optionB": "Notify each adjoining owner",
-    "optionC": "Paint-mark the dig area first",
+    "optionC": "Hire a private locator first",
     "optionD": "Obtain a county building permit",
     "correctAnswer": "A",
     "correctIndex": 0,
@@ -791,7 +791,7 @@
     "optionD": "Within 10 days of first contact",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "The 2025 amendments to Code 54.1-2132(A)(1) require a buyer's licensee to sign a brokerage agreement before showing property, and 54.1-2137(B) requires one before providing brokerage services. A listing agent may still show its own listing without one (54.1-2131(G)).",
+    "explanation": "The 2025 amendments to Code 54.1-2132(A)(1), in effect since July 1, 2025, require a buyer's licensee to sign a brokerage agreement before showing property, and 54.1-2137(B) requires one before providing brokerage services. A listing agent may still show its own listing without one (54.1-2131(G)).",
     "sourceQuestionId": "REVA-VAAGY-001"
   },
   {
@@ -986,7 +986,7 @@
     "optionD": "The salesperson alone, as a contractor",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "A Virginia salesperson may act only under the principal broker (or a supervising broker the principal broker designates), who must supervise the salesperson's activities under Board regulations 18VAC135-20-165 and -330. Independent contractor status is a tax classification and does not remove that duty.",
+    "explanation": "A Virginia salesperson may act only under the principal broker (or a supervising broker the principal broker designates), who must supervise the salesperson's activities under Code 54.1-2110.1 and Board regulations 18VAC135-20-165 and -330. Independent contractor status is a tax classification and does not remove that duty.",
     "sourceQuestionId": "RE-PRAC-005"
   },
   {

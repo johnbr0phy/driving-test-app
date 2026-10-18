@@ -116,7 +116,7 @@
   "RE-PRAC-005": {
    "question": "A salesperson works as an independent contractor for a Virginia brokerage. Who is responsible for supervising the salesperson's real estate activities?",
    "optionC": "The principal broker",
-   "explanation": "A Virginia salesperson may act only under the principal broker (or a supervising broker the principal broker designates), who must supervise the salesperson's activities under Board regulations 18VAC135-20-165 and -330. Independent contractor status is a tax classification and does not remove that duty."
+   "explanation": "A Virginia salesperson may act only under the principal broker (or a supervising broker the principal broker designates), who must supervise the salesperson's activities under Code 54.1-2110.1 and Board regulations 18VAC135-20-165 and -330. Independent contractor status is a tax classification and does not remove that duty."
   },
   "RE-PRAC-003": {
    "explanation": "Commingling is mixing client or customer funds with the broker's own money, and Board regulation 18VAC135-20-181(D) lists it as improper maintenance of escrow funds. Conversion is the more serious act of actually using those funds for the broker's own purposes."
@@ -124,7 +124,7 @@
  },
  "excluded": {
   "RE-OWN-004": "Community property: Virginia is not a community property state.",
-  "RE-OWN-021": "Hypothetical 12-year adverse possession period; Virginia's period for recovery of land is 15 years, so the number could mislead.",
+  "RE-OWN-021": "Hypothetical 12-year adverse possession period; Virginia's period for recovery of land is 15 years (Code 8.01-236), so the number could mislead.",
   "RE-CON-028": "Transaction broker or facilitator status does not exist in Virginia law; the nonagency option there is an independent contractor under a written brokerage agreement (Code 54.1-2130).",
   "RE-CON-029": "Subagency through the MLS: Code 54.1-2141 says using a common source information company creates no brokerage relationship, so the subagent framing misleads.",
   "RE-CON-032": "Agency by ratification: Code 54.1-2130 and 54.1-2137(B) require a written brokerage agreement before brokerage services, and the common law is abrogated where inconsistent (54.1-2144).",
@@ -133,8 +133,8 @@
   "RE-PRAC-009": "Net listing keyed as lawful: Board regulation 18VAC135-20-280(A)(5) makes a net listing an improper financial transaction in Virginia.",
   "RE-PRAC-021": "Vicarious liability of the broker: Board regulation 18VAC135-20-330 and Code 54.1-2142 limit broker responsibility to what the broker knew or should have known, so the keyed doctrine is too broad for Virginia.",
   "RE-PRAC-002": "Earnest money handling: the Virginia rule (fifth business banking day after ratification, Code 54.1-2108.2) is tested by REVA-VAESC-001.",
-  "RE-MATH-006": "Assessment at 40% of market value; Virginia assesses real estate at fair market value (Constitution of Virginia, Art. X, sec. 2).",
-  "RE-VAL-028": "Keys that assessments are often a fraction of market value; Virginia assesses at fair market value.",
+  "RE-MATH-006": "Assessment at 40% of market value; Virginia assesses real estate at fair market value (Constitution of Virginia, Art. X, sec. 2; Code 58.1-3201).",
+  "RE-VAL-028": "Keys that assessments are often a fraction of market value; Virginia assesses at 100 percent of fair market value (Code 58.1-3201).",
   "RE-PROP-024": "Tax stated in mills on an assessed value; Virginia localities set rates per $100 of fair market value.",
   "RE-MATH-016": "Local transfer tax at $1.10 per $500; Virginia's grantor and recordation taxes use different rates, so the figure could mislead.",
   "RE-DISC-015": "Keys that disclosure forms vary by state; Virginia's buyer-beware statement (Code 55.1-703) is tested by REVA-VADSC items.",

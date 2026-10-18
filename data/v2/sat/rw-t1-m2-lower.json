@@ -568,18 +568,18 @@
     "skill": "Rhetorical synthesis",
     "difficulty": 2,
     "format": "single",
-    "passage": "While researching a topic, a student has taken the following notes:\n\n- Copenhagen, Denmark, began building separated bicycle lanes in the 1960s.\n- Separated lanes have a curb between cyclists and motor traffic.\n- In the 1960s, most Copenhagen residents commuted by car.\n- Today roughly half of the city's residents commute to work or school by bicycle.\n- The city now has more bicycles than cars.\n\nThe student wants to emphasize how much commuting habits in Copenhagen have changed over time. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Copenhagen, Denmark, has had bicycle tracks separated from motor traffic since the early 1900s.\n- Separated tracks have a curb between cyclists and motor traffic.\n- As car ownership grew after World War II, cycling in Copenhagen declined through the 1960s.\n- Today almost half of all trips to work or school in the city are made by bicycle.\n- The city now has more bicycles than cars.\n\nThe student wants to emphasize how much commuting habits in Copenhagen have changed over time. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
     "stem": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
     "options": [
-      "Although most Copenhagen residents commuted by car in the 1960s, today roughly half of them commute by bicycle.",
-      "Copenhagen's separated bicycle lanes have a curb between cyclists and motor traffic.",
-      "Copenhagen began building separated bicycle lanes in the 1960s, and the city now has more bicycles than cars.",
-      "Roughly half of Copenhagen residents commute to work or school by bicycle."
+      "Although cycling in Copenhagen declined through the 1960s as car ownership grew, today almost half of all trips to work or school in the city are made by bicycle.",
+      "Copenhagen's separated bicycle tracks have a curb between cyclists and motor traffic.",
+      "Copenhagen has had separated bicycle tracks since the early 1900s, and the city now has more bicycles than cars.",
+      "Almost half of all trips to work or school in Copenhagen are made by bicycle."
     ],
     "correct": [
       0
     ],
-    "explanation": "To show change over time, the sentence needs both the earlier situation and the current one, and only the choice beginning \"Although most Copenhagen residents commuted by car\" contrasts car commuting in the 1960s with bicycle commuting today. The choice about bicycle lanes and the number of bicycles is tempting because it spans the same period, but it never says how residents commuted then or now. The choice giving only today's figure shows the present without the past."
+    "explanation": "To show change over time, the sentence needs both the earlier situation and the current one, and only the choice beginning \"Although cycling in Copenhagen declined through the 1960s\" contrasts the decline of cycling then with bicycle commuting today. The choice about separated tracks since the early 1900s and the number of bicycles is tempting because it spans a long period, but it never says how residents commuted then or now. The choice giving only today's figure shows the present without the past."
   },
   {
     "id": "SAT-RW-326",

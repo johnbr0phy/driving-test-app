@@ -35,7 +35,7 @@ const dmv: TestCatalogEntry = {
   name: "DMV Permit Test",
   org: "All 50 states + DC",
   blurb: "State-specific permit and driver's license knowledge tests. Signs, rules of the road, safety and your state's laws.",
-  href: "/",
+  href: "/dmv-practice-test",
   dashboardHref: "/dashboard",
   questions: 200,
   icon: "car",

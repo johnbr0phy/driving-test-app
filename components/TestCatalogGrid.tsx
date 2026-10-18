@@ -11,7 +11,7 @@ import {
 import { TestIcon } from "@/components/TestIcon";
 import { hasTigerSet } from "@/lib/tigerAssets";
 
-function TestCard({ test }: { test: TestCatalogEntry }) {
+export function TestCard({ test }: { test: TestCatalogEntry }) {
   return (
     <div data-theme={test.theme} className="h-full">
       <Link
@@ -46,9 +46,13 @@ function TestCard({ test }: { test: TestCatalogEntry }) {
  * Rendered on the client so typing filters instantly; with an empty query it
  * shows the full catalog exactly as the server would.
  */
-export function TestCatalogGrid() {
+export function TestCatalogGrid({ showPopular = true }: { showPopular?: boolean } = {}) {
   const [query, setQuery] = useState("");
-  const groups = useMemo(() => searchTestGroups(query), [query]);
+  // The homepage shows its own live "Popular this week" row above the grid.
+  const groups = useMemo(
+    () => searchTestGroups(query).filter((g) => showPopular || g.title !== "Most popular"),
+    [query, showPopular]
+  );
   const count = groups.reduce((n, g) => n + g.tests.length, 0);
   const searching = query.trim().length > 0;
 

@@ -54,7 +54,8 @@ export async function buildSegment(segment: SitemapSegment): Promise<SitemapEntr
   switch (segment) {
     case "dmv":
       return [
-        { url: SITE_URL, lastModified: STATE_PAGES_UPDATED_AT, changeFrequency: "weekly", priority: 1 },
+        { url: SITE_URL, lastModified: HUB_PAGES_UPDATED_AT, changeFrequency: "daily", priority: 1 },
+        { url: `${SITE_URL}/dmv-practice-test`, lastModified: STATE_PAGES_UPDATED_AT, changeFrequency: "weekly", priority: 0.9 },
         {
           url: `${SITE_URL}/practice-tests-by-state`,
           lastModified: STATE_PAGES_UPDATED_AT,

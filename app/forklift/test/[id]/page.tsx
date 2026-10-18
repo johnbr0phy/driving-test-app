@@ -1,5 +1,6 @@
 "use client";
 
+import "@/lib/banks/forklift";
 import { ExamTestPage } from "@/components/exam/ExamTestPage";
 import { getExamById } from "@/lib/exams";
 

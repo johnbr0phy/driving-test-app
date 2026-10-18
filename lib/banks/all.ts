@@ -1,0 +1,36 @@
+// Every question bank, for scripts that need all of them at once
+// (scripts/build-training-parts.ts). Never import this from an app page:
+// it would bundle every exam's questions into that page.
+import "./alcohol";
+import "./boating";
+import "./ccma";
+import "./cdl";
+import "./cdlx";
+import "./cet";
+import "./civics";
+import "./cna";
+import "./cpr";
+import "./crcst";
+import "./cst";
+import "./danb";
+import "./epa608";
+import "./foodhandler";
+import "./foodmgr";
+import "./forklift";
+import "./ham";
+import "./htl";
+import "./hunter";
+import "./insurance";
+import "./lifeHealthStates";
+import "./lifeguard";
+import "./moto";
+import "./notary";
+import "./osha";
+import "./part107";
+import "./phleb";
+import "./pnc";
+import "./propertyCasualtyStates";
+import "./ptcb";
+import "./realEstateStates";
+import "./realestate";
+import "./security";

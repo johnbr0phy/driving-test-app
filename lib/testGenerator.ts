@@ -4,6 +4,9 @@ import questionsDataEn from "@/data/questions.json";
 import questionsDataEs from "@/data/questions_es.json";
 import questionsDataVi from "@/data/questions_vi.json";
 import questionsDataKo from "@/data/questions_ko.json";
+import { shuffleQuestionOptions } from "./shuffleOptions";
+
+export { shuffleQuestionOptions };
 
 // The Vietnamese bank now mirrors the English one row-for-row, with any
 // untranslated string emitted as its English original at build time, so this
@@ -42,55 +45,6 @@ function shuffle<T>(array: T[]): T[] {
     [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
   }
   return shuffled;
-}
-
-// Check if a question has position-dependent answers (e.g., "A and B", "Both B and C")
-// These questions should not have their answers randomized
-function hasPositionDependentAnswers(question: Question): boolean {
-  const options = [question.optionA, question.optionB, question.optionC, question.optionD];
-
-  // Pattern to detect references to other answer options (English, Spanish,
-  // Vietnamese, Korean).
-  // Matches: "A and B", "B and C", "Both A and B", "A, B, and C", "A y B", "Tanto A como B",
-  // "Todas las anteriores", "Cả A và B", "Tất cả các câu trên", "A와 B", etc.
-  // Korean has no space before the particle ("A와 B"), so that branch uses \s*
-  // rather than the \s+ the Latin-script branches rely on.
-  const positionReferencePattern = /\b(A|B|C|D)\s+(and|or|y|o|và|hoặc|,)\s+(A|B|C|D)\b|\bBoth\s+(A|B|C|D)\s+and\s+(A|B|C|D)\b|\bTanto\s+(A|B|C|D)\s+como\s+(A|B|C|D)\b|\bAll of the above\b|\bNone of the above\b|\bTodas las anteriores\b|\bNinguna de las anteriores\b|Tất cả các câu trên|Không câu nào đúng|(A|B|C|D)\s*(와|과|및)\s*(A|B|C|D)|위의 모든 것|위의 어느 것도 아님|위 항목 모두|정답 없음/i;
-
-  return options.some(option => positionReferencePattern.test(option));
-}
-
-// Shuffle the answer options for a question (returns new question with shuffled options)
-// Skips shuffling for questions with position-dependent answers
-export function shuffleQuestionOptions(question: Question): Question {
-  // Don't shuffle if any option references other options by letter
-  if (hasPositionDependentAnswers(question)) {
-    return question;
-  }
-
-  const options = [
-    { letter: 'A', text: question.optionA },
-    { letter: 'B', text: question.optionB },
-    { letter: 'C', text: question.optionC },
-    { letter: 'D', text: question.optionD },
-  ];
-
-  const shuffled = shuffle(options);
-
-  // Find new position of correct answer
-  const correctOptionText = question[`option${question.correctAnswer}` as keyof Question] as string;
-  const newCorrectIndex = shuffled.findIndex(opt => opt.text === correctOptionText);
-  const newCorrectLetter = ['A', 'B', 'C', 'D'][newCorrectIndex];
-
-  return {
-    ...question,
-    optionA: shuffled[0].text,
-    optionB: shuffled[1].text,
-    optionC: shuffled[2].text,
-    optionD: shuffled[3].text,
-    correctAnswer: newCorrectLetter,
-    correctIndex: newCorrectIndex,
-  };
 }
 
 // Get questions for a specific test

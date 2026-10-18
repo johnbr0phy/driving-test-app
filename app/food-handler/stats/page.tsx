@@ -1,5 +1,6 @@
 "use client";
 
+import "@/lib/banks/foodhandler";
 import { ExamStatsPage } from "@/components/exam/ExamStatsPage";
 import { getExamById } from "@/lib/exams";
 

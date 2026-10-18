@@ -1,5 +1,6 @@
 "use client";
 
+import "@/lib/banks/alcohol";
 import { ExamTestPage } from "@/components/exam/ExamTestPage";
 import { getExamById } from "@/lib/exams";
 

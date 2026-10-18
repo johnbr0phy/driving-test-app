@@ -10,7 +10,7 @@ import { ArrowLeft } from "lucide-react";
 import Image from "next/image";
 import { ShareButton } from "@/components/ShareButton";
 import { useStore } from "@/store/useStore";
-import { shuffleQuestionOptions } from "@/lib/testGenerator";
+import { shuffleQuestionOptions } from "@/lib/shuffleOptions";
 import { getExamTrainingSetQuestions, getNextExamTrainingSetQuestion } from "@/lib/examTestGenerator";
 import { ExamConfig, examSetId, trainingPartName, trainingParts } from "@/lib/exams";
 import { getTigerAsset } from "@/lib/tigerAssets";

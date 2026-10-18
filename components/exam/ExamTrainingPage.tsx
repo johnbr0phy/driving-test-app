@@ -11,6 +11,7 @@ import Image from "next/image";
 import { ShareButton } from "@/components/ShareButton";
 import { useStore } from "@/store/useStore";
 import { shuffleQuestionOptions } from "@/lib/shuffleOptions";
+import { recordClassAnswer } from "@/lib/classProgress";
 import { getExamTrainingSetQuestions, getNextExamTrainingSetQuestion } from "@/lib/examTestGenerator";
 import { ExamConfig, examSetId, trainingPartName, trainingParts } from "@/lib/exams";
 import { getTigerAsset } from "@/lib/tigerAssets";
@@ -224,6 +225,7 @@ function ExamTrainingContent({ exam: source }: { exam: ExamConfig }) {
     }
 
     guestPrompt.record(isCorrect);
+    recordClassAnswer(exam.id, currentQuestion, isCorrect);
 
     // Track progress
     if (isSetMode && setId) {

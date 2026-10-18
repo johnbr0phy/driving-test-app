@@ -17,6 +17,7 @@ import { useStore } from "@/store/useStore";
 import { useHydration } from "@/hooks/useHydration";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { useLocalizedExam } from "@/hooks/useLocalizedExam";
+import { recordClassAnswer, recordClassTest } from "@/lib/classProgress";
 
 export function ExamTestPage({ exam: source }: { exam: ExamConfig }) {
   const { exam, routes, ui, lang } = useLocalizedExam(source);
@@ -91,6 +92,7 @@ export function ExamTestPage({ exam: source }: { exam: ExamConfig }) {
     const updatedAnswers = { ...answers, [currentQuestionIndex]: answer };
     setAnswers(updatedAnswers);
     setAnswer(testId, currentQuestionIndex, answer);
+    recordClassAnswer(exam.id, currentQuestion, answer === currentQuestion.correctAnswer);
 
     // Auto-advance; the last answer auto-submits
     setTimeout(() => {
@@ -102,6 +104,7 @@ export function ExamTestPage({ exam: source }: { exam: ExamConfig }) {
           if (updatedAnswers[index] === question.correctAnswer) correctCount++;
         });
         completeTest(testId, correctCount, questions, updatedAnswers);
+        recordClassTest(exam.id, testNumber, correctCount, questions.length);
         router.push(routes.results(testId));
       }
     }, 300);

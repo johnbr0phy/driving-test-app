@@ -12,7 +12,6 @@ import { ShareButton } from "@/components/ShareButton";
 import { useStore } from "@/store/useStore";
 import { shuffleQuestionOptions } from "@/lib/testGenerator";
 import { getExamTrainingSetQuestions, getNextExamTrainingSetQuestion } from "@/lib/examTestGenerator";
-import { getExamRoutes } from "@/lib/examRoutes";
 import { ExamConfig, examSetId, trainingPartName, trainingParts } from "@/lib/exams";
 import { getTigerAsset } from "@/lib/tigerAssets";
 import { Question } from "@/types";
@@ -26,12 +25,13 @@ import { useAuth } from "@/contexts/AuthContext";
 import { useGuestPrompt } from "@/hooks/useGuestPrompt";
 import { GuestPromptStep } from "@/components/GuestPromptStep";
 import { v1GuestCounts } from "@/components/GuestSaveCard";
+import { useLocalizedExam } from "@/hooks/useLocalizedExam";
 
 // Shared training page for registry exams: the DMV training page (set mode
 // with mastery + wrong-answer queue, set-complete share card) on the exam's
 // content-area sets. Set mode only, no state selection, no premium gate.
-function ExamTrainingContent({ exam }: { exam: ExamConfig }) {
-  const routes = getExamRoutes(exam.id);
+function ExamTrainingContent({ exam: source }: { exam: ExamConfig }) {
+  const { exam, routes, ui, lang } = useLocalizedExam(source);
   const router = useRouter();
   const searchParams = useSearchParams();
   const hydrated = useHydration();
@@ -68,7 +68,7 @@ function ExamTrainingContent({ exam }: { exam: ExamConfig }) {
   const partInfo = isSplit ? setParts.find((p) => p.part === partParam) : undefined;
   const part = partInfo?.part;
   const partQuestionIds = isSplit && setNumber && part
-    ? getExamTrainingSetQuestions(exam, setNumber, part).map((q) => q.questionId)
+    ? getExamTrainingSetQuestions(exam, setNumber, part, lang).map((q) => q.questionId)
     : null;
 
   const [currentQuestion, setCurrentQuestion] = useState<Question | null>(null);
@@ -99,7 +99,7 @@ function ExamTrainingContent({ exam }: { exam: ExamConfig }) {
     if (!setNumber) return undefined;
     const mastered = setData?.masteredIds ?? [];
     const open = setParts.filter((p) =>
-      getExamTrainingSetQuestions(exam, setNumber, p.part).some((q) => !mastered.includes(q.questionId))
+      getExamTrainingSetQuestions(exam, setNumber, p.part, lang).some((q) => !mastered.includes(q.questionId))
     );
     return open.find((p) => p.part > after) ?? open.find((p) => p.part !== after);
   };
@@ -176,7 +176,8 @@ function ExamTrainingContent({ exam }: { exam: ExamConfig }) {
         currentSetData.masteredIds,
         currentSetData.wrongQueue,
         currentQuestionIdRef.current,  // Use ref for reliable current question ID
-        part
+        part,
+        lang
       );
 
       // If all questions are mastered, show completion overlay with fireworks on top
@@ -256,7 +257,7 @@ function ExamTrainingContent({ exam }: { exam: ExamConfig }) {
     return null;
   }
 
-  const setLabel = partInfo ? trainingPartName(partInfo) : setDef?.name ?? `Set ${setNumber}`;
+  const setLabel = partInfo ? trainingPartName(partInfo, lang) : setDef?.name ?? ui.setN(setNumber ?? 0);
   const followingPart = part ? unfinishedPart(part) : undefined;
 
   return (
@@ -323,7 +324,7 @@ function ExamTrainingContent({ exam }: { exam: ExamConfig }) {
               <div className="mb-6">
                 <div className="text-gray-300 text-lg font-bold tracking-widest">tigertest.io</div>
                 <div className="text-gray-400 text-xs uppercase tracking-widest mt-1">
-                  {exam.shortName} TRAINING
+                  {ui.trainingBadge(exam.shortName)}
                 </div>
               </div>
 
@@ -340,7 +341,7 @@ function ExamTrainingContent({ exam }: { exam: ExamConfig }) {
 
               {/* Tagline */}
               <div className="text-base md:text-lg font-extrabold uppercase tracking-widest mb-4 text-green-300">
-                MASTERED MY {exam.shortName} TRAINING
+                {ui.masteredMyTraining(exam.shortName)}
               </div>
 
               {/* Giant percentage */}
@@ -355,7 +356,7 @@ function ExamTrainingContent({ exam }: { exam: ExamConfig }) {
 
               {/* MASTERED badge */}
               <Badge className="text-lg px-6 py-2 mb-5 bg-green-600 hover:bg-green-700">
-                MASTERED
+                {ui.mastered}
               </Badge>
 
               {/* Exam + set name */}
@@ -370,7 +371,7 @@ function ExamTrainingContent({ exam }: { exam: ExamConfig }) {
               {followingPart && setNumber && (
                 <Button asChild className="w-full max-w-xs mx-auto mb-3 flex bg-green-500 hover:bg-green-600 text-white font-bold uppercase tracking-wide h-12 text-base">
                   <Link href={routes.training(setNumber, followingPart.part)}>
-                    Next: part {followingPart.part} of {followingPart.partCount}
+                    {ui.nextPart(followingPart.part, followingPart.partCount)}
                   </Link>
                 </Button>
               )}
@@ -498,7 +499,7 @@ function ExamTrainingContent({ exam }: { exam: ExamConfig }) {
                 />
               </div>
               {partInfo && (
-                <p className="text-xs text-gray-500 dark:text-gray-400 mt-2">{trainingPartName(partInfo)}</p>
+                <p className="text-xs text-gray-500 dark:text-gray-400 mt-2">{trainingPartName(partInfo, lang)}</p>
               )}
             </>
           ) : !isOnboardingComplete() ? (

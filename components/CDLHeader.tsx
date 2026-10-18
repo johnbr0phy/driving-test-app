@@ -9,7 +9,9 @@ import { useStore } from "@/store/useStore";
 import { useHydration } from "@/hooks/useHydration";
 import { useTestTheme } from "@/contexts/TestThemeContext";
 import { Truck, Bike, Flag, Plane, Radio, Thermometer, HeartPulse, Pill, Syringe, Stethoscope, Activity, SmilePlus, Siren, Utensils, House, Umbrella, Stamp, GraduationCap, Cloud, Cpu, ChefHat, Sailboat, Target, LockKeyhole, BookOpenCheck, Medal, Bandage, HardHat, Forklift, Wine, PencilLine, BadgeCheck, LifeBuoy, Building2, Microscope, Scissors, ShieldCheck } from "lucide-react";
-import { getExamById, getExamVariants } from "@/lib/exams";
+import { examLanguage, getExamById, getExamVariants } from "@/lib/exams";
+import { useTranslation } from "@/contexts/LanguageContext";
+import { createT, type Language } from "@/i18n";
 import Image from "next/image";
 import { TestSwitcher } from "@/components/TestSwitcher";
 import { ThemeToggle } from "@/components/ThemeToggle";
@@ -27,6 +29,12 @@ export function CDLHeader() {
   const hydrated = useHydration();
 
   const displayPhotoURL = photoURL || user?.photoURL;
+  // English unless this exam is offered in the person's language (CDL in
+  // Spanish); a translated landing (/es/examen-practica-cdl) is in its own.
+  const { language } = useTranslation();
+  const exam = getExamById(theme.id);
+  const landingLang = Object.entries(exam?.translations ?? {}).find(([, tr]) => tr.landingPath === pathname)?.[0];
+  const t = createT((landingLang as Language | undefined) ?? (exam ? examLanguage(exam, language) : "en"));
 
   // State variants (/real-estate/ca) run their tests under the family's header.
   const bases = [theme.routeBase, ...getExamVariants(theme.id).map((v) => v.slug)];
@@ -106,13 +114,13 @@ export function CDLHeader() {
           ) : isGuest ? (
             <Button asChild variant="outline" className="text-gray-700 dark:text-gray-200 border-gray-300 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800 font-semibold">
               <Link href={theme.signupPath}>
-                Sign Up to Save
+                {t("common.signUpToSave")}
               </Link>
             </Button>
           ) : (
             <Button asChild variant="outline" className="text-gray-700 dark:text-gray-200 border-gray-300 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800">
               <Link href={theme.loginPath}>
-                Sign In
+                {t("common.signIn")}
               </Link>
             </Button>
           )}

@@ -15,9 +15,9 @@ import { useTranslation } from "@/contexts/LanguageContext";
 import { trackDailyQuizAnswer } from "@/lib/analytics";
 import { Question } from "@/types";
 import { getExamQuestions } from "@/lib/examData";
-import { getExamRoutes } from "@/lib/examRoutes";
 import { ExamConfig } from "@/lib/exams";
 import { QuizRow } from "@/components/QuizRow";
+import { useLocalizedExam } from "@/hooks/useLocalizedExam";
 
 type SortField = "timesAnswered" | "correct" | "wrong" | "accuracy";
 type SortDirection = "asc" | "desc";
@@ -35,8 +35,8 @@ function optionText(q: Question, letter: string): string {
   return map[letter] ?? "";
 }
 
-export function ExamStatsPage({ exam }: { exam: ExamConfig }) {
-  const routes = getExamRoutes(exam.id);
+export function ExamStatsPage({ exam: source }: { exam: ExamConfig }) {
+  const { exam, routes, ui, lang } = useLocalizedExam(source);
   const router = useRouter();
   const hydrated = useHydration();
   const { t } = useTranslation();
@@ -52,7 +52,7 @@ export function ExamStatsPage({ exam }: { exam: ExamConfig }) {
     if (hydrated && isGuest) router.push(routes.signup);
   }, [hydrated, isGuest, router]);
 
-  const examQuestions = useMemo(() => getExamQuestions(exam.id), [exam.id]);
+  const examQuestions = useMemo(() => getExamQuestions(exam.id, lang), [exam.id, lang]);
 
   const questionsWithPerformance = useMemo((): QuestionWithPerformance[] => {
     if (!hydrated) return [];
@@ -132,7 +132,7 @@ export function ExamStatsPage({ exam }: { exam: ExamConfig }) {
           <div className="rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 p-4 mb-6">
             <h1 className="text-lg font-bold text-gray-900 dark:text-gray-50">{t("stats.yourStats")}</h1>
             <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">
-              {answeredCount} of {examQuestions.length} {exam.shortName} questions seen. Tap any row to answer it again.
+              {ui.statsSeen(answeredCount, examQuestions.length, exam.shortName)}
             </p>
           </div>
 

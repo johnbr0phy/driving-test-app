@@ -3,7 +3,8 @@
  * other exams. DMV_ROUTES reproduces the original behaviour exactly; HTL
  * maps the same flow onto its namespaced IDs (201-204) under /htl.
  */
-import { ALL_EXAMS, ExamConfig, examTestIds, getExamById } from "./exams";
+import { ALL_EXAMS, ExamConfig, examTestIds, getExamById, localizeExam } from "./exams";
+import type { Language } from "@/i18n";
 import { isDrillFree as isDmvDrillFree } from "./missedQuestions";
 
 export interface PlanTrainingSet {
@@ -63,7 +64,7 @@ export const DMV_ROUTES: ExamRoutes = {
 };
 
 /** Routes for a registry exam (HTL, CST, CRCST): all free, namespaced IDs. */
-export function routesForExam(exam: ExamConfig): ExamRoutes {
+export function routesForExam(exam: ExamConfig, lang: Language = "en"): ExamRoutes {
   const base = exam.slug;
   return {
     id: exam.id,
@@ -91,7 +92,10 @@ export function routesForExam(exam: ExamConfig): ExamRoutes {
         [...exam.trainingSets].sort((a, b) => b.size - a.size)[0];
       return {
         setNumber: set.setNumber,
-        label: `Train the ${set.name} set — same material, mastery-style`,
+        label:
+          lang === "es"
+            ? `Practica el grupo ${set.name}: el mismo material, hasta dominarlo`
+            : `Train the ${set.name} set — same material, mastery-style`,
       };
     },
   };
@@ -101,10 +105,22 @@ const EXAM_ROUTES: Record<string, ExamRoutes> = Object.fromEntries(
   ALL_EXAMS.map((e) => [e.id, routesForExam(e)])
 );
 
-export function getExamRoutes(examId: string): ExamRoutes {
+const LOCALIZED_ROUTES = new Map<string, ExamRoutes>();
+
+/** `lang` only changes labels (examLabel, the plan step), never routes or IDs;
+ *  pass the exam's content language from examLanguage(). */
+export function getExamRoutes(examId: string, lang: Language = "en"): ExamRoutes {
   const routes = EXAM_ROUTES[examId];
   if (!routes) throw new Error(`Unknown exam: ${examId}`);
-  return routes;
+  if (lang === "en") return routes;
+  const key = `${examId}:${lang}`;
+  let localized = LOCALIZED_ROUTES.get(key);
+  if (!localized) {
+    const exam = getExamById(examId)!;
+    localized = routesForExam(localizeExam(exam, lang), lang);
+    LOCALIZED_ROUTES.set(key, localized);
+  }
+  return localized;
 }
 
 export const HTL_ROUTES: ExamRoutes = getExamRoutes(getExamById("htl")!.id);

@@ -1,5 +1,6 @@
 import { Question } from "@/types";
 import cdlQuestions from "@/data/cdl-questions.json";
+import cdlQuestionsEs from "@/data/cdl-questions_es.json";
 import cdlxQuestions from "@/data/cdl-endorsement-questions.json";
 import motoQuestions from "@/data/motorcycle-questions.json";
 import civicsQuestions from "@/data/civics-questions.json";
@@ -41,6 +42,7 @@ import pncTxQuestions from "@/data/property-casualty-tx-questions.json";
 import pncFlQuestions from "@/data/property-casualty-fl-questions.json";
 import pncCaQuestions from "@/data/property-casualty-ca-questions.json";
 import type { ExamId } from "./exams";
+import type { Language } from "@/i18n";
 
 // Question banks by exam. Kept apart from lib/exams.ts so the store can
 // import the registry without bundling every bank.
@@ -88,6 +90,13 @@ const BANKS: Record<ExamId, Question[]> = {
   crcst: crcstQuestions as Question[],
 };
 
-export function getExamQuestions(examId: ExamId): Question[] {
-  return BANKS[examId];
+// Translated banks: same questionIds, categories and answer keys as the
+// English bank, so tests, sets and progress line up in every language.
+// An exam listed here also needs ExamConfig.translations.
+const TRANSLATED_BANKS: Partial<Record<ExamId, Partial<Record<Language, Question[]>>>> = {
+  cdl: { es: cdlQuestionsEs as Question[] },
+};
+
+export function getExamQuestions(examId: ExamId, language: Language = "en"): Question[] {
+  return TRANSLATED_BANKS[examId]?.[language] ?? BANKS[examId];
 }

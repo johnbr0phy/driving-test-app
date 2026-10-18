@@ -12,19 +12,24 @@ import { LANGUAGES, type Language } from "@/i18n";
  * popover — the width stays constant no matter how many languages we add.
  *
  * `onSelect` lets SEO pages navigate to their localized URL instead of only
- * flipping the in-app language.
+ * flipping the in-app language. `languages` limits the list to the ones a
+ * page is offered in (an exam translated into Spanish only); when the chosen
+ * language is not among them the page reads English, so English shows as current.
  */
 export function LanguageSwitcher({
   onSelect,
+  languages,
   className = "",
 }: {
   onSelect?: (lang: Language) => void;
+  languages?: Language[];
   className?: string;
 }) {
   const { language, setLanguage } = useTranslation();
   const [open, setOpen] = useState(false);
 
-  const current = LANGUAGES.find((l) => l.code === language) ?? LANGUAGES[0];
+  const options = languages ? LANGUAGES.filter((l) => languages.includes(l.code)) : LANGUAGES;
+  const current = options.find((l) => l.code === language) ?? options[0];
 
   const handleSelect = (lang: Language) => {
     setOpen(false);
@@ -54,8 +59,8 @@ export function LanguageSwitcher({
 
       <PopoverContent align="end" className="w-44 p-1">
         <ul>
-          {LANGUAGES.map((lang) => {
-            const isActive = lang.code === language;
+          {options.map((lang) => {
+            const isActive = lang.code === current.code;
             return (
               <li key={lang.code}>
                 <button

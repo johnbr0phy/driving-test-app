@@ -9,7 +9,7 @@
 | General (national) portion | "Arizona Real Estate Sales - General": 80 scored + 5 pretest = 85 items, 150 minutes | Handbook "Examination Information" table; National/General Exam Content Outline for Salespersons, effective April 1, 2025 (#090301, 01/2026) |
 | State portion | "Arizona Real Estate Sales - State": 60 scored + 5 pretest = 65 items, 90 minutes | Handbook table; Arizona Real Estate Salesperson Licensing Examination Content Outline, effective January 1, 2026 |
 | Pass mark | 75% of questions correct (percent score, 0-100%) | Handbook "Score Explanation" |
-| Scoring | The two portions are listed as separate exams with their own item counts and time; the 75% standard is applied to each | Handbook table and score explanation |
+| Scoring | The handbook lists General and State as separate exams, each with its own item count, time, fee and retake fee, and says 75% of questions correct passes "the examination"; read together, each portion must be passed at 75% on its own and only a failed portion is retaken. The handbook never states the per-portion rule in so many words (its retake section calls the salesperson exam "a single exam" that must be passed within one year before applying), so the combined 140-item practice form at 75% is a simplification | Handbook pp. 4, 10-12 |
 | Prelicensing | 90 hours before the exam; 6-hour contract writing course before licensure; apply within one year of passing | Handbook pp. iv, 3; A.R.S. 32-2124(B), (M); A.A.C. R4-28-401 |
 
 ### Arizona state outline (salesperson, effective January 1, 2026), 60 items
@@ -24,6 +24,8 @@ Property 11, ownership/title 9, valuation 11, contracts and agency 16, practice 
 National picks by outline area: property 11 (fixtures, trade fixtures, emblements, situs, immobility, metes and bounds, plat, rectangular survey acreage, eminent domain, variance, appurtenant easement); ownership 9 (tenancy in common, community property separate-property rule, fee on limitation, tenancy at sufferance, lien priority, deed validity and delivery, special warranty deed, recording acts); valuation 11; contracts and agency 16 (adds dual agency with written consent, lawful in Arizona); practice 10 (earnest money, commingling, listing types, fair housing, vicarious liability, antitrust); disclosures 9; financing 7 (deed of trust trustee, secondary market, due-on-sale, VA, TRID, RESPA, ECOA); math 7.
 
 ## Law sources (official current text)
+
+Reviewed 2026-10-18 against the live azleg.gov section pages (every cited A.R.S. section re-fetched) and the LII mirror of the A.A.C.; no 2025-2026 change affects a key.
 - Arizona Revised Statutes, Arizona Legislature, https://www.azleg.gov/ars/ (section pages such as https://www.azleg.gov/ars/32/02151-02.htm): Title 32, Chapter 20 sections 32-2101, 32-2106, 32-2122, 32-2124, 32-2130, 32-2151, 32-2151.02, 32-2155, 32-2156, 32-2173, 32-2183, 32-2183.01, 32-2186, 32-2197.03; Title 33 sections 33-405, 33-412, 33-422, 33-431, 33-729, 33-801, 33-803, 33-807, 33-813, 33-814, 33-993, 33-1102, 33-1103, 33-1260, 33-1806; Title 25 sections 25-211, 25-214; Title 44 sections 44-101, 44-1521, 44-1522, 44-1524; Title 41 sections 41-1491.14, 41-1491.19; Title 42 section 42-18052; Title 45 section 45-576; Title 11 sections 11-1133, 11-1134; Title 6 sections 6-801, 6-813; Title 20 section 20-1567; Title 12 section 12-526.
 - Arizona Constitution Article 26, Section 1 and Article 9, Section 24, https://www.azleg.gov/viewDocument/?docName=http://www.azleg.gov/const/26/1.htm and .../const/9/24.htm
 - Commissioner's Rules, A.A.C. Title 4, Chapter 28: R4-28-401, R4-28-402, R4-28-502, R4-28-503, R4-28-1101, R4-28-1102, R4-28-1103. The Secretary of State PDF (https://apps.azsos.gov/public_services/Title_04/4-28.pdf) returned a Cloudflare challenge page, so the text was read from the Cornell LII mirror of the Arizona Administrative Code (https://www.law.cornell.edu/regulations/arizona/Ariz-Admin-Code-SS-R4-28-1101 and siblings), whose history notes match the SOS supplements (R4-28-1101 last amended 11 A.A.R. 506, effective March 5, 2005).
@@ -78,7 +80,7 @@ National picks by outline area: property 11 (fixtures, trade fixtures, emblement
 | REAZ-AZCON-005 | R4-28-1101(J)(2) |
 | REAZ-AZCON-006 | R4-28-1101(K) |
 | REAZ-AZCON-007 | A.R.S. 25-214(C)(1) |
-| REAZ-AZCLS-001 | A.R.S. 11-1133(A), 11-1134 |
+| REAZ-AZCLS-001 | A.R.S. 11-1133(A), (C), 11-1134 (statute: "affidavit of legal value"; ADOR form title: Affidavit of Property Value) |
 | REAZ-AZBUS-001 | A.R.S. 6-813, 6-801 (department, deputy director) |
 | REAZ-AZBUS-002 | A.R.S. 33-803(A) |
 | REAZ-AZBUS-003 | A.R.S. 33-801 |
@@ -88,7 +90,7 @@ National picks by outline area: property 11 (fixtures, trade fixtures, emblement
 | REAZ-AZOWN-002 | A.R.S. 33-431(A), (B) |
 | REAZ-AZOWN-003 | A.R.S. 33-405(E), (F) |
 | REAZ-AZOWN-004 | A.R.S. 33-993(A) |
-| REAZ-AZOWN-005 | A.R.S. 33-1806(A); 33-1260 |
+| REAZ-AZOWN-005 | A.R.S. 33-1806(A); 33-1260(A) (current text: association delivers within ten days of the seller's notice in communities of 50 or more; the seller delivers in smaller ones) |
 | REAZ-AZFCL-001 | A.R.S. 33-814(G), (H); 33-729(A) |
 | REAZ-AZFCL-002 | A.R.S. 33-807(D) |
 | REAZ-AZFCL-003 | A.R.S. 33-813(A) |

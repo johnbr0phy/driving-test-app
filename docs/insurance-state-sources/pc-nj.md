@@ -99,7 +99,7 @@ National picks for the 88 general slots (property 50 and casualty 50 scaled by 0
 | PCNJ-NJAUT-006 | N.J.S.A. 17:28-1.1(c) |
 | PCNJ-NJAUT-007 | N.J.S.A. 17:28-1.1(e)(1) |
 | PCNJ-NJAUT-008 | N.J.S.A. 17:29C-8; 17:29C-7; 17:29C-6 |
-| PCNJ-NJAUT-009 | N.J.S.A. 17:29C-9 |
+| PCNJ-NJAUT-009 | N.J.S.A. 17:29C-9; N.J.A.C. 11:3-8.6(a) |
 | PCNJ-NJWC-001 | N.J.S.A. 34:15-14 |
 | PCNJ-NJWC-002 | N.J.S.A. 34:15-12(a) |
 | PCNJ-NJWC-003 | N.J.S.A. 17:36-5.29 |
@@ -108,7 +108,7 @@ National picks for the 88 general slots (property 50 and casualty 50 scaled by 0
 
 ## National overrides (text only, keys unchanged)
 - PC-GEN-024: stem names New Jersey instead of "a US state"; explanation cites N.J.S.A. 17B:17-7.
-- PC-AUTO-015: explanation adds that New Jersey policies must include UM property damage with a $500 exclusion (N.J.S.A. 17:28-1.1); the national line said property damage UM "varies by state".
+- PC-AUTO-015: explanation adds that New Jersey policies must include UM property damage (not for hit-and-run vehicles) with a $500 exclusion (N.J.S.A. 17:28-1.1), while many states do not require it, so option C ("in every state") stays wrong; the national line said property damage UM "varies by state".
 
 ## National exclusions (conflict or risk of conflict with New Jersey law)
 - PC-AUTO-018 (stacking "varies by state"): New Jersey bars stacking (17:28-1.1(c)); tested by PCNJ-NJAUT-006 instead.

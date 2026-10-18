@@ -150,6 +150,9 @@
   "RE-PRAC-014": {
    "explanation": "Familial status protects households with children under 18 and pregnant women. Marital status is protected by the Illinois Human Rights Act but not the federal Fair Housing Act, and the refusal here is about children."
   },
+  "RE-VAL-026": {
+   "explanation": "A broker price opinion (BPO) is the term used for a broker's estimate of probable selling price prepared for a lender or other third party, often on distressed property. Under 225 ILCS 454/10-45 either a BPO or a CMA must be in writing and state that it is not an appraisal."
+  },
   "RE-FIN-003": {
    "explanation": "Illinois is a lien-theory state: the mortgage creates only a lien, and the borrower (mortgagor) keeps legal title. In title-theory states the lender holds legal title until the loan is repaid, which is the tempting but wrong answer here."
   }

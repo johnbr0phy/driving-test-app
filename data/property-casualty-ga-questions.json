@@ -19,14 +19,14 @@
     "state": "GA",
     "questionId": "PCGA-GALIC-002",
     "category": "pcGeneral",
-    "question": "A resident Georgia property and casualty agent has been licensed continuously for 22 years. Each two-year license period, the agent must complete:",
+    "question": "A resident Georgia property and casualty agent has been licensed continuously for 22 years and still sells new business. Each two-year license period, the agent must complete:",
     "optionA": "24 hours, including 3 in ethics",
     "optionB": "10 hours, including 2 in ethics",
     "optionC": "No continuing education",
     "optionD": "20 hours, including 3 in ethics",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Rule 120-2-3-.15(1) requires 20 hours each biennium, 3 in ethics, for licensees continuously licensed 20 years or longer, and 24 hours for everyone else. Long licensure lowers the hours but does not remove the requirement.",
+    "explanation": "Rule 120-2-3-.15(1) requires 20 hours each biennium, 3 in ethics, for licensees continuously licensed 20 years or longer, and 24 hours for everyone else. Long licensure lowers the hours; only an agent of ten years or more who just collects renewal commissions is exempt under O.C.G.A. 33-23-18(e).",
     "sourceQuestionId": "PCGA-GALIC-002"
   },
   {
@@ -35,7 +35,7 @@
     "questionId": "PCGA-GALIC-003",
     "category": "pcGeneral",
     "question": "An agent dies, and the Commissioner issues a temporary license to a family member to keep the agency running. The temporary licensee may:",
-    "optionA": "Renew existing policies only",
+    "optionA": "Service existing accounts only",
     "optionB": "Write any new business",
     "optionC": "Sell new personal lines only",
     "optionD": "Bind new risks for 30 days",
@@ -671,7 +671,7 @@
     "optionD": "5 days",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "O.C.G.A. 33-24-44(b) requires at least 30 days' written notice of cancellation, but subsection (d) allows 10 days when the cancellation is for nonpayment of premium or the policy has been in force less than 60 days. Any unearned premium is refunded pro rata.",
+    "explanation": "O.C.G.A. 33-24-44(b) requires at least 30 days' written notice of cancellation, but subsection (d) allows 10 days when the cancellation is for nonpayment of premium or the policy has been in force less than 60 days. The 45-day notice for commercial policies in 33-24-47 expressly leaves nonpayment cancellations to 33-24-44.",
     "sourceQuestionId": "PCGA-GAPOL-001"
   },
   {

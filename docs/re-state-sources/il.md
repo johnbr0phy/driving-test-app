@@ -134,6 +134,7 @@ Statutes from the Illinois General Assembly ILCS section pages (https://ilga.gov
 | RE-PRAC-024 | stem: Illinois broker | terminology |
 | RE-PRAC-014 | explanation: Illinois protects marital status | 775 ILCS 5/1-103(Q) |
 | RE-FIN-003 | explanation: Illinois is a lien-theory state | |
+| RE-VAL-026 | explanation: drops "a CMA is prepared for a seller", since 10-45(a) lets either be prepared for a seller such as an REO bank | 225 ILCS 454/10-45 |
 
 ## Category table
 | Category | National | Illinois | Total |

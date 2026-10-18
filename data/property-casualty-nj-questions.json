@@ -671,7 +671,7 @@
     "optionD": "Insurance fraud",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "N.J.S.A. 17:33A-4(f) makes it a violation for a New Jersey resident to obtain an out-of-state auto policy by falsely claiming a principal residence or garaging location in that state; truthful second-residence policies are allowed. Penalties run up to $5,000, $10,000 and $15,000 for first, second and later violations.",
+    "explanation": "N.J.S.A. 17:33A-4(f) makes it a violation for a New Jersey resident to obtain an out-of-state auto policy by falsely claiming a principal residence or garaging location in that state; truthful second-residence policies are allowed. Under N.J.S.A. 17:33A-5 the penalties are $5,000, $10,000 and $15,000 for first, second and later violations.",
     "sourceQuestionId": "PCNJ-NJPRA-012"
   },
   {
@@ -1496,7 +1496,7 @@
     "optionD": "Bodily injury caused by an uninsured or hit-and-run driver",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "UM pays bodily injury damages the insured is legally entitled to recover from an at-fault driver who has no liability insurance or cannot be identified. New Jersey policies must also include UM property damage, subject to a $500 exclusion, under N.J.S.A. 17:28-1.1, but the coverage does not pay the uninsured driver's own bills.",
+    "explanation": "UM pays bodily injury damages the insured is legally entitled to recover from an at-fault driver who has no liability insurance or cannot be identified. New Jersey policies also include UM property damage (not for hit-and-run vehicles, and subject to a $500 exclusion) under N.J.S.A. 17:28-1.1, but many states do not require it, and UM never pays the uninsured driver's own bills.",
     "sourceQuestionId": "PC-AUTO-015"
   },
   {
@@ -1706,7 +1706,7 @@
     "optionD": "90 days",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "N.J.S.A. 17:29C-9 requires at least 60 days' notice of intent not to renew, which the commissioner may extend by up to 30 more days by regulation. Twenty days applies to midterm cancellations.",
+    "explanation": "N.J.S.A. 17:29C-9 requires at least 60 days' notice of intent not to renew, and N.J.A.C. 11:3-8.6(a) sets the window at no less than 60 and no more than 90 days before expiration. Twenty days applies to midterm cancellations.",
     "sourceQuestionId": "PCNJ-NJAUT-009"
   },
   {

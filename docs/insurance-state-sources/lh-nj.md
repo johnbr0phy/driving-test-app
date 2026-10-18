@@ -43,7 +43,7 @@ National picks for the 88 general slots, by outline area (life 50 and health 50 
 - Field underwriting and contract law 8: GEN-003, 011, 012, 013, 014, 017; HLTH-009, 010.
 
 ## Law sources (official current text)
-- New Jersey Statutes: the Legislature's full statutes text file, https://pub.njleg.state.nj.us/statutes/STATUTES-TEXT.zip (STATUTES.TXT, server last-modified 17 Oct 2026, so it includes 2025-2026 laws). Each cited section was read from that file; the section history notes were checked (for example 17B:27-30 as amended by P.L.2025, c.194, 17:33A-4 and -5 as amended by P.L.2021, c.167, 17B:26-9.1 as amended by P.L.2023, c.296). Sections used: 17:1-2, 17:1-15, 17:22A-28, -32, -33, -35, -36, -37, -41.1, -42, -45, -47, -47.1; 17:33A-4, -5, -9; 17B:17-7, -11, -12; 17B:24-1.1; 17B:25-2.1, -3, -4, -5, -6, -9, -15, -36, -38; 17B:26-6, -7, -9.1; 17B:26A-4, -8; 17B:27-30, -30.5, -36.2; 17B:27A-17; 17B:32A-5, -17; 43:21-38, -39.
+- New Jersey Statutes: the Legislature's full statutes text file, https://pub.njleg.state.nj.us/statutes/STATUTES-TEXT.zip (STATUTES.TXT, server last-modified 17 Oct 2026, so it includes 2025-2026 laws). Each cited section was read from that file; the section history notes were checked (for example 17B:27-30 as amended by P.L.2025, c.194, 17:33A-4 and -5 as amended by P.L.2021, c.167, 17B:26-9.1 as amended by P.L.2023, c.296). Sections used: 17:1-2, 17:1-15, 17:22A-28, -32, -33, -35, -36, -37, -41.1, -42, -45, -47, -47.1; 17:33A-4, -5, -9; 17B:17-7, -11, -12; 17B:24-1.1; 17B:25-2.1, -3, -4, -5, -6, -9, -15, -36, -38; 17B:26-6, -7, -9.1; 17B:26A-4, -8; 17B:27-30, -30.5, -36.2, -72; 17B:27A-17; 17B:32A-5, -17; 43:21-38, -39.
 - New Jersey Administrative Code Title 11, read from the Cornell LII mirror of the official N.J.A.C. (https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-11-17-2-1 pattern; the official code is published through LexisNexis, as the outlines say). Each page was checked as real rule text with its New Jersey Register history note. Rules used: 11:17-2.1, 2.5, 2.6, 2.8, 2.9, 2.10, 2.11, 3.4, 3.6; 11:17A-2.3, 4.2, 4.6, 4.8; 11:17C-2.1, 2.2, 2.3; 11:17D-2.7; 11:4-2.3, 2.4, 11.3.
 - Federal and case law for the textbook jurisdiction items: Paul v. Virginia (1869); United States v. South-Eastern Underwriters Ass'n (1944); McCarran-Ferguson Act, 15 U.S.C. 1011-1015.
 
@@ -113,6 +113,7 @@ National picks for the 88 general slots, by outline area (life 50 and health 50 
 - LH-REG-002: stem moved from Florida to New Jersey; explanation cites N.J.S.A. 17B:17-7 (alien insurer).
 - LH-REG-003: stem moved from Texas to New Jersey; explanation cites N.J.S.A. 17B:17-7 and 17B:17-11 (foreign, authorized).
 - LH-PROV-004: explanation states the New Jersey grace period (30 days, or one month of at least 30 days, N.J.S.A. 17B:25-3).
+- LH-LIFE-016: explanation cites the New Jersey group life conversion right (apply and pay within 31 days, no evidence of insurability, N.J.S.A. 17B:27-72(i)).
 
 ## National items deliberately not picked
 - LH-PROV-005 (reinstatement) and LH-PROV-011 (free look): New Jersey items LHNJ-NJLIF-002 (3 years, 17B:25-9) and LHNJ-NJLIF-001 (10 days, 17B:25-2.1) test the state rule instead.
@@ -124,7 +125,7 @@ National picks for the 88 general slots, by outline area (life 50 and health 50 
 Life: entire contract and representations (17B:25-5), incontestability 2 years (17B:25-4), misstatement of age (17B:25-6), insurable interest at inception (17B:24-1.1(b)). Health uniform provisions in the national bank (grace 7/10/31 days, reinstatement 45 and 10 days) match 17B:26-6 and 17B:26-7.
 
 ## Facts deliberately not used
-- Group life conversion: the outline cites N.J.S.A. 17B:27-1 to -25, but those sections are not in the Legislature's current statutes file, so no New Jersey group life item was written (national LH-LIFE-016, the standard 31-day conversion, is kept).
+- Group life conversion: the outline cites N.J.S.A. 17B:27-1 to -25, which P.L.2005, c.190 replaced with 17B:27-68 to -75. The current 17B:27-72 requires a 31-day grace period (b), two-year incontestability (c) and a 31-day conversion right without evidence of insurability (i), plus conversion on group termination after five years insured, capped at $10,000 (j). National LH-LIFE-016 (31-day conversion) matches and its explanation now cites 17B:27-72(i); no separate New Jersey group life item was written.
 - Small employer lower bound: N.J.S.A. 17B:27A-17 says at least two but not more than 50 employees; the item asks only for the upper bound (50) to avoid the one-employee federal definition.
 - Dollar penalties: only two statutory penalty caps are asked (17:22A-45 first offense $5,000; 17:33A-5 third and later violation $15,000), because the outline lists penalties and fraud, and both figures are fixed in statute (not indexed).
 

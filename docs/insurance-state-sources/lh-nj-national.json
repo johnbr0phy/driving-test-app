@@ -105,6 +105,9 @@
   },
   "LH-PROV-004": {
    "explanation": "New Jersey requires a grace period of 30 days, or one month of at least 30 days (N.J.S.A. 17B:25-3), so the policy was still in force on March 20. The insurer pays the face amount minus the overdue premium: $100,000 - $1,200 = $98,800, not the full $100,000."
+  },
+  "LH-LIFE-016": {
+   "explanation": "New Jersey requires every group life policy to let a person whose coverage ends with employment convert to an individual policy, without evidence of insurability, if he applies and pays within 31 days (N.J.S.A. 17B:27-72(i)). COBRA continuation applies to group health plans, not group life."
   }
  }
 }

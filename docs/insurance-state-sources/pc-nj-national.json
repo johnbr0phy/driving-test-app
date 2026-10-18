@@ -100,7 +100,7 @@
    "explanation": "Under N.J.S.A. 17B:17-7, an alien insurer is formed under the laws of another country. A foreign insurer is formed in another US state, and a domestic insurer is formed in New Jersey."
   },
   "PC-AUTO-015": {
-   "explanation": "UM pays bodily injury damages the insured is legally entitled to recover from an at-fault driver who has no liability insurance or cannot be identified. New Jersey policies must also include UM property damage, subject to a $500 exclusion, under N.J.S.A. 17:28-1.1, but the coverage does not pay the uninsured driver's own bills."
+   "explanation": "UM pays bodily injury damages the insured is legally entitled to recover from an at-fault driver who has no liability insurance or cannot be identified. New Jersey policies also include UM property damage (not for hit-and-run vehicles, and subject to a $500 exclusion) under N.J.S.A. 17:28-1.1, but many states do not require it, and UM never pays the uninsured driver's own bills."
   }
  }
 }

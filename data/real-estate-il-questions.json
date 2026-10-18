@@ -184,7 +184,7 @@
     "state": "IL",
     "questionId": "REIL-ILLAW-001",
     "category": "reOwnershipTitle",
-    "question": "As of 2026, the Illinois homestead exemption protects an individual's interest in a home the person occupies as a residence up to:",
+    "question": "As of 2026, Illinois law shields an individual's interest in the home the person lives in from judgment creditors up to:",
     "optionA": "$50,000",
     "optionB": "$15,000",
     "optionC": "$100,000",
@@ -521,7 +521,7 @@
     "optionD": "Assessed valuation",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "A broker price opinion (BPO) is a value estimate a broker prepares for a lender or other third party, often on distressed property. A CMA is prepared for a seller or buyer client to help set or evaluate price; neither one is an appraisal.",
+    "explanation": "A broker price opinion (BPO) is the term used for a broker's estimate of probable selling price prepared for a lender or other third party, often on distressed property. Under 225 ILCS 454/10-45 either a BPO or a CMA must be in writing and state that it is not an appraisal.",
     "sourceQuestionId": "RE-VAL-026"
   },
   {
@@ -1061,7 +1061,7 @@
     "optionD": "Fill in blanks on standard forms",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "The 1966 Illinois Supreme Court decision lets brokers fill in the blanks of customary offer and contract forms as a necessary incident of their brokerage business. Drafting deeds or other legal instruments and advising on legal rights such as how to hold title remain the practice of law.",
+    "explanation": "The 1966 Illinois Supreme Court decision lets brokers fill in the blanks of customary offer and contract forms as an incident of their brokerage business, with no separate charge for it. Drafting deeds or other legal instruments and advising on legal rights such as how to hold title remain the practice of law.",
     "sourceQuestionId": "REIL-ILACT-016"
   },
   {
@@ -1076,7 +1076,7 @@
     "optionD": "Each client's oral consent at closing",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "225 ILCS 454/15-45(a) permits dual agency only with the informed written consent of all clients, using a form presented when the brokerage agreement is signed. Section 15-45(c) also requires written confirmation of that consent when the offer or contract is signed.",
+    "explanation": "225 ILCS 454/15-45(a) permits dual agency only with the informed written consent of all clients, and Section 15-45(b) requires the consent form to be presented when the brokerage agreement is signed. Section 15-45(c) also requires written confirmation of that consent when the offer or contract is signed.",
     "sourceQuestionId": "REIL-ILDSC-001"
   },
   {

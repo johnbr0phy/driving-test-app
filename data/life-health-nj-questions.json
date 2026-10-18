@@ -971,7 +971,7 @@
     "optionD": "Convert within 90 days with evidence of insurability",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Group life lets a departing employee convert to an individual permanent policy within 31 days without evidence of insurability, at attained-age rates. COBRA continuation applies to group health plans, not group life.",
+    "explanation": "New Jersey requires every group life policy to let a person whose coverage ends with employment convert to an individual policy, without evidence of insurability, if he applies and pays within 31 days (N.J.S.A. 17B:27-72(i)). COBRA continuation applies to group health plans, not group life.",
     "sourceQuestionId": "LH-LIFE-016"
   },
   {

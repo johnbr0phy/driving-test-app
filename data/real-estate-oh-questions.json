@@ -769,7 +769,7 @@
     "state": "OH",
     "questionId": "REOH-OHAGY-002",
     "category": "reContractsAgency",
-    "question": "Under ORC 4735.55, an Ohio licensee must have a written agency agreement before:",
+    "question": "Under ORC 4735.55, for a residential sale an Ohio licensee must have a written agency agreement before:",
     "optionA": "Giving a buyer lender names",
     "optionB": "Making an offer for a buyer",
     "optionC": "Emailing a buyer listings",
@@ -911,7 +911,7 @@
     "optionD": "The unauthorized practice of law",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "ORC 4735.02(A) says nothing in the license law authorizes a broker or salesperson to perform any service that is the practice of law, and 4735.18(A)(32) makes it a ground for discipline. Preparing a deed for another person is legal work for an attorney.",
+    "explanation": "ORC 4735.02(A) says nothing in the license law authorizes a broker or salesperson to perform any service that is the practice of law, and 4735.18(A)(32) makes such services, as determined by a court, a ground for discipline. Ohio courts treat preparing a deed for another person as legal work for an attorney, fee or no fee.",
     "sourceQuestionId": "REOH-OHAGY-012"
   },
   {
@@ -1271,7 +1271,7 @@
     "optionD": "It is stated in the sales contract",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "ORC 4735.18(A)(14) prohibits offering anything of value other than the consideration recited in the sales contract as an inducement to buy or sell. An inducement written into the contract is part of that consideration, while the broker's approval alone does not make an unrecited one lawful.",
+    "explanation": "ORC 4735.18(A)(14) prohibits offering anything of value other than the consideration recited in the sales contract as an inducement to buy or sell, so a gift to a buyer is lawful only when it is written into the purchase contract. A low dollar value or the broker's approval does not cure an unrecited inducement.",
     "sourceQuestionId": "REOH-OHRUL-012"
   },
   {

@@ -54,7 +54,7 @@ State governance of the real estate profession 4 (commission powers and structur
 - RE-CON-037 explanation: cites ORC 4735.67(A) (licensee's duty to disclose known material defects not discoverable by a reasonably diligent inspection).
 
 ## Law sources (official current text, codes.ohio.gov)
-ORC sections were read on https://codes.ohio.gov/ohio-revised-code/section-NNNN.NN; OAC rules on https://codes.ohio.gov/ohio-administrative-code/rule-1301:5-N-NN. Effective dates as shown on those pages. Recent changes checked: 4735.55 and 4735.56 (written agency agreement before advertising or showing for a seller or making an offer for a purchaser; amended by H.B. 96, 136th GA, effective September 30, 2025), 4735.18 (composite text effective March 20, 2026, S.B. 155 and S.B. 56, 136th GA; adds (A)(39) right-to-list agreements and (A)(40) wholesalers), 4735.24 (earnest money, current January 2026 text), 4735.09 (effective September 30, 2025), 4735.59 (effective October 24, 2024).
+ORC sections were read on https://codes.ohio.gov/ohio-revised-code/section-NNNN.NN; OAC rules on https://codes.ohio.gov/ohio-administrative-code/rule-1301:5-N-NN. Effective dates as shown on those pages. Recent changes checked: 4735.55 and 4735.56 (written agency agreement before advertising or showing for a seller or making an offer for a purchaser; amended by H.B. 96, 136th GA, effective September 30, 2025), 4735.18 (composite text effective March 20, 2026, S.B. 155 and S.B. 56, 136th GA; adds (A)(39) right-to-list agreements and (A)(40) wholesalers), 4735.24 (earnest money, effective March 2, 2026), 4735.09 (effective September 30, 2025), 4735.59 (effective October 24, 2024).
 
 | Item | Source |
 |---|---|

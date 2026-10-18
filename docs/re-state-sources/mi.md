@@ -96,7 +96,7 @@ The picked list is `mi-national.json`.
 | REMI-MILIC-004 | MCL 339.2505(6)(b) |
 | REMI-MILIC-005 | MCL 339.2503(1), 339.2501(u), (v) |
 | REMI-MIACT-001 | MCL 339.2512(1)(k)(v); R 339.22134(3) |
-| REMI-MIACT-002 | MCL 339.2502b(3) |
+| REMI-MIACT-002 | MCL 339.2502b(3), (1)(d) |
 | REMI-MIACT-003 | MCL 339.2510(1) |
 | REMI-MIACT-004 | MCL 339.2512e(3) |
 | REMI-MIACT-005 | MCL 339.2512e(4) |
@@ -116,7 +116,7 @@ The picked list is `mi-national.json`.
 | REMI-MISPC-004 | MCL 554.602 |
 | REMI-MISPC-005 | MCL 554.633(1)(d), (3) |
 | REMI-MISPC-006 | MCL 445.772, 445.778(2) |
-| REMI-MISPC-007 | MCL 207.525(1); 207.504 |
+| REMI-MISPC-007 | MCL 207.525(1); 207.504 (55 cents, up to 75 cents in counties of 2,000,000 or more) |
 | REMI-MISPC-008 | MCL 559.184(2), (4)(a) |
 | REMI-MISPC-009 | MCL 560.261 |
 | REMI-MISPC-010 | MCL 560.109(4); 286.473 |

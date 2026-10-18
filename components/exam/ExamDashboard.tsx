@@ -19,7 +19,7 @@ import { ProgressCard, Collapse } from "@/components/dashboard/ProgressCard";
 import { AttemptChart, sessionsToAttemptPoints } from "@/components/AttemptChart";
 import { computeMissSummary } from "@/lib/missedQuestions";
 import { getExamRoutes } from "@/lib/examRoutes";
-import { ExamConfig, examFamilyId, getExamVariant } from "@/lib/exams";
+import { ExamConfig, TrainingPart, examFamilyId, examTrainingParts, getExamVariant, trainingPartName, trainingPartOf } from "@/lib/exams";
 import { ExamStateLine, ExamStatePrompt } from "@/components/exam/ExamStatePicker";
 import { getTigerAsset } from "@/lib/tigerAssets";
 import { SuperAmazingCard } from "@/components/SuperAmazingCard";
@@ -66,6 +66,7 @@ export function ExamDashboard({ exam }: { exam: ExamConfig }) {
   const getTestAttemptStats = useStore((state) => state.getTestAttemptStats);
   const getCurrentTest = useStore((state) => state.getCurrentTest);
   const getTrainingSetProgress = useStore((state) => state.getTrainingSetProgress);
+  const trainingSets = useStore((state) => state.trainingSets);
   const completeTest = useStore((state) => state.completeTest);
   const completedTests = useStore((state) => state.completedTests);
   const trainingAnswerHistory = useStore((state) => state.trainingAnswerHistory);
@@ -122,7 +123,16 @@ export function ExamDashboard({ exam }: { exam: ExamConfig }) {
     });
   }, [hydrated]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  const trainingSetComplete = (id: number) => hydrated && getTrainingSetProgress(id).complete;
+  // Big sets show as parts of about 50 (see trainingParts); progress is still
+  // stored per set, so a part counts the set's mastered questions that fall in it.
+  const parts = examTrainingParts(exam);
+  const partProgress = (p: TrainingPart) => {
+    if (!hydrated) return { correct: 0, total: p.size, complete: false };
+    if (p.partCount === 1) return getTrainingSetProgress(p.set.id);
+    const mastered = trainingSets[p.set.id]?.masteredIds ?? [];
+    const correct = Math.min(p.size, mastered.filter((id) => trainingPartOf(p.set.id, id) === p.part).length);
+    return { correct, total: p.size, complete: correct >= p.size };
+  };
   const testComplete = (testId: number) => {
     if (!hydrated) return false;
     const stats = getTestAttemptStats(testId);
@@ -130,10 +140,10 @@ export function ExamDashboard({ exam }: { exam: ExamConfig }) {
   };
 
   const completedSteps = [
-    ...exam.trainingSets.map((s) => trainingSetComplete(s.id)),
+    ...parts.map((p) => partProgress(p).complete),
     ...routes.testIds.map(testComplete),
   ].filter(Boolean).length;
-  const totalSteps = exam.trainingSets.length + routes.testIds.length;
+  const totalSteps = parts.length + routes.testIds.length;
   const anyProgress =
     completedSteps > 0 ||
     exam.trainingSets.some((s) => hydrated && getTrainingSetProgress(s.id).correct > 0);
@@ -185,15 +195,14 @@ export function ExamDashboard({ exam }: { exam: ExamConfig }) {
           {exam.copy.trainingHeading}
         </p>
         <div className="mb-6 space-y-1.5">
-          {exam.trainingSets.map((def, index) => {
-            const progress = hydrated
-              ? getTrainingSetProgress(def.id)
-              : { correct: 0, total: def.size, complete: false };
+          {parts.map((p, index) => {
+            const def = p.set;
+            const progress = partProgress(p);
             const isStartHere = index === 0 && !anyProgress;
             return (
               <ProgressCard
-                key={def.id}
-                title={def.name}
+                key={`${def.id}-${p.part}`}
+                title={trainingPartName(p)}
                 subtitle={`${progress.correct}/${progress.total} · ${def.weightLabel}`}
                 completed={progress.complete}
                 stepNumber={index + 1}
@@ -206,7 +215,7 @@ export function ExamDashboard({ exam }: { exam: ExamConfig }) {
                         ? { label: t("dashboard.stampContinue"), color: "amber" as const }
                         : undefined
                 }
-                href={routes.training(def.setNumber)}
+                href={routes.training(def.setNumber, p.partCount > 1 ? p.part : undefined)}
               />
             );
           })}
@@ -261,7 +270,7 @@ export function ExamDashboard({ exam }: { exam: ExamConfig }) {
                   title={exam.testCount === 1 ? "🎯 Full-length exam" : `🎯 Test ${n}`}
                   subtitle={subtitle}
                   completed={completed}
-                  stepNumber={exam.trainingSets.length + index + 1}
+                  stepNumber={parts.length + index + 1}
                   stamp={stamp}
                   href={hasAttempts ? undefined : routes.test(testId)}
                   onClick={hasAttempts ? () => setExpandedTest(isExpanded ? null : testId) : undefined}

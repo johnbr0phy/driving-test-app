@@ -19,7 +19,8 @@ export interface ExamRoutes {
   stats: string;
   test: (testId: number) => string;
   results: (testId: number) => string;
-  training: (setNumber: number) => string;
+  /** A split set (see trainingParts) takes the part; without one the page picks the first unfinished part. */
+  training: (setNumber: number, part?: number) => string;
   drill: (testId?: number) => string;
   /** Sign-up / sign-in links. Non-DMV exams pass ?redirect= so signup skips
    *  the DMV state picker and auth returns to the exam dashboard. */
@@ -70,7 +71,7 @@ export function routesForExam(exam: ExamConfig): ExamRoutes {
     stats: `${base}/stats`,
     test: (id) => `${base}/test/${id}`,
     results: (id) => `${base}/test/${id}/results`,
-    training: (set) => `${base}/training?set=${set}`,
+    training: (set, part) => `${base}/training?set=${set}${part ? `&part=${part}` : ""}`,
     drill: (id) => (id ? `${base}/drill?test=${id}` : `${base}/drill`),
     signup: `/signup?redirect=${base}/dashboard`,
     login: `/login?redirect=${base}/dashboard`,

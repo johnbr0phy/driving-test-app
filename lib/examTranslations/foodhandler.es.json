@@ -6,7 +6,8 @@
   "trainingSets": {
     "1": {
       "name": "Conceptos básicos e higiene personal",
-      "weightLabel": "40% de los exámenes"
+      "weightLabel": "40% de los exámenes",
+      "partNames": ["Conceptos básicos de seguridad alimentaria", "Higiene personal"]
     },
     "2": {
       "name": "Contaminación y alérgenos",

@@ -37,6 +37,10 @@ export interface ExamTrainingSetDef {
   size: number;
   /** Shown under the set name on the dashboard, e.g. "30–40% of the exam". */
   weightLabel: string;
+  /** One name per part when the set is split (see TRAINING_PART_MAX), in
+   *  part order, so the dashboard says what each part covers instead of
+   *  "part 2 of 3". scripts/build-training-parts.ts checks the count. */
+  partNames?: string[];
 }
 
 export interface ExamConfig {
@@ -105,7 +109,7 @@ export interface ExamTranslation {
   examLabel: string;
   fullName: string;
   /** By setNumber. */
-  trainingSets: Record<number, { name: string; weightLabel: string }>;
+  trainingSets: Record<number, { name: string; weightLabel: string; partNames?: string[] }>;
   categoryLabels: Record<string, string>;
   copy: Omit<ExamConfig["copy"], "analyticsKey">;
 }
@@ -152,11 +156,11 @@ const cdl: ExamConfig = {
   },
   trainingSets: [
     { setNumber: 1, id: 121, name: "Vehicle Inspection", categories: ["vehicleInspection"], size: 60, weightLabel: "14% of each test" },
-    { setNumber: 2, id: 122, name: "Basic Control & Braking", categories: ["basicControl", "brakingSystems"], size: 100, weightLabel: "20% of each test" },
-    { setNumber: 3, id: 123, name: "Vehicle Systems & Cargo", categories: ["vehicleSystems", "cargoHandling"], size: 100, weightLabel: "16% of each test" },
-    { setNumber: 4, id: 124, name: "Safe Driving & Hazards", categories: ["safeDriving", "hazardPerception"], size: 125, weightLabel: "24% of each test" },
-    { setNumber: 5, id: 125, name: "Driving Conditions", categories: ["weatherDriving", "nightDriving", "mountainDriving", "railroadCrossings"], size: 125, weightLabel: "12% of each test" },
-    { setNumber: 6, id: 126, name: "Emergencies, Alcohol & Drugs", categories: ["emergencyProcedures", "alcoholDrugs"], size: 90, weightLabel: "14% of each test" },
+    { setNumber: 2, id: 122, name: "Basic Control & Braking", categories: ["basicControl", "brakingSystems"], size: 100, weightLabel: "20% of each test", partNames: ["Basic Vehicle Control", "Braking Systems"] },
+    { setNumber: 3, id: 123, name: "Vehicle Systems & Cargo", categories: ["vehicleSystems", "cargoHandling"], size: 100, weightLabel: "16% of each test", partNames: ["Cargo Handling", "Vehicle Systems"] },
+    { setNumber: 4, id: 124, name: "Safe Driving & Hazards", categories: ["safeDriving", "hazardPerception"], size: 125, weightLabel: "24% of each test", partNames: ["Speed, Space & Scanning", "Trouble on the Road", "Spotting Hazards"] },
+    { setNumber: 5, id: 125, name: "Driving Conditions", categories: ["weatherDriving", "nightDriving", "mountainDriving", "railroadCrossings"], size: 125, weightLabel: "12% of each test", partNames: ["Night Driving", "Weather Driving", "Mountains & Railroad Crossings"] },
+    { setNumber: 6, id: 126, name: "Emergencies, Alcohol & Drugs", categories: ["emergencyProcedures", "alcoholDrugs"], size: 90, weightLabel: "14% of each test", partNames: ["Emergency Procedures", "Alcohol & Drugs"] },
   ],
   categoryLabels: {
     vehicleInspection: "Vehicle Inspection",
@@ -196,11 +200,11 @@ const cdl: ExamConfig = {
       fullName: "examen de conocimientos generales de la CDL",
       trainingSets: {
         1: { name: "Inspección del vehículo", weightLabel: "14% de cada examen" },
-        2: { name: "Control básico y frenos", weightLabel: "20% de cada examen" },
-        3: { name: "Sistemas del vehículo y carga", weightLabel: "16% de cada examen" },
-        4: { name: "Conducción segura y peligros", weightLabel: "24% de cada examen" },
-        5: { name: "Condiciones de manejo", weightLabel: "12% de cada examen" },
-        6: { name: "Emergencias, alcohol y drogas", weightLabel: "14% de cada examen" },
+        2: { name: "Control básico y frenos", weightLabel: "20% de cada examen", partNames: ["Control básico del vehículo", "Sistemas de frenos"] },
+        3: { name: "Sistemas del vehículo y carga", weightLabel: "16% de cada examen", partNames: ["Manejo de la carga", "Sistemas del vehículo"] },
+        4: { name: "Conducción segura y peligros", weightLabel: "24% de cada examen", partNames: ["Velocidad, espacio y observación", "Problemas en la carretera", "Detectar peligros"] },
+        5: { name: "Condiciones de manejo", weightLabel: "12% de cada examen", partNames: ["Manejo de noche", "Manejo con mal tiempo", "Montañas y cruces de ferrocarril"] },
+        6: { name: "Emergencias, alcohol y drogas", weightLabel: "14% de cada examen", partNames: ["Procedimientos de emergencia", "Alcohol y drogas"] },
       },
       categoryLabels: {
         vehicleInspection: "Inspección del vehículo",
@@ -381,8 +385,8 @@ const civics: ExamConfig = {
   },
   trainingSets: [
     { setNumber: 1, id: 601, name: "Principles, Rights & Responsibilities", categories: ["principlesDemocracy", "rightsResponsibilities"], size: 40, weightLabel: "20% of each test" },
-    { setNumber: 2, id: 602, name: "System of Government", categories: ["systemGovernment"], size: 72, weightLabel: "36% of each test" },
-    { setNumber: 3, id: 603, name: "American History", categories: ["colonialIndependence", "history1800s", "recentHistory"], size: 72, weightLabel: "36% of each test" },
+    { setNumber: 2, id: 602, name: "System of Government", categories: ["systemGovernment"], size: 72, weightLabel: "36% of each test", partNames: ["Congress & Elected Officials", "President, Courts & Powers"] },
+    { setNumber: 3, id: 603, name: "American History", categories: ["colonialIndependence", "history1800s", "recentHistory"], size: 72, weightLabel: "36% of each test", partNames: ["Colonial Era & the 1800s", "Recent American History"] },
     { setNumber: 4, id: 604, name: "Symbols & Holidays", categories: ["symbolsHolidays"], size: 16, weightLabel: "8% of each test" },
   ],
   categoryLabels: {
@@ -440,7 +444,7 @@ const part107: ExamConfig = {
     { setNumber: 2, id: 802, name: "Airspace & Charts", categories: ["airspace"], size: 40, weightLabel: "15-25% of the exam" },
     { setNumber: 3, id: 803, name: "Weather", categories: ["weather"], size: 28, weightLabel: "11-16% of the exam" },
     { setNumber: 4, id: 804, name: "Loading & Performance", categories: ["loadingPerformance"], size: 20, weightLabel: "7-11% of the exam" },
-    { setNumber: 5, id: 805, name: "Operations", categories: ["operations"], size: 72, weightLabel: "35-45% of the exam" },
+    { setNumber: 5, id: 805, name: "Operations", categories: ["operations"], size: 72, weightLabel: "35-45% of the exam", partNames: ["Airports, Radio & Emergencies", "Pilot Health & Preflight"] },
   ],
   categoryLabels: {
     regulations: "Regulations",
@@ -496,11 +500,11 @@ const ham: ExamConfig = {
     hamSafety: 3,
   },
   trainingSets: [
-    { setNumber: 1, id: 901, name: "FCC Rules (T1)", categories: ["hamRules"], size: 68, weightLabel: "6 of 35 exam questions" },
-    { setNumber: 2, id: 902, name: "Operating & Propagation (T2, T3)", categories: ["hamOperating", "hamPropagation"], size: 72, weightLabel: "6 of 35 exam questions" },
-    { setNumber: 3, id: 903, name: "Practices & Electrical Principles (T4, T5)", categories: ["hamPractices", "hamElectrical"], size: 73, weightLabel: "6 of 35 exam questions" },
-    { setNumber: 4, id: 904, name: "Components & Circuits (T6, T7)", categories: ["hamComponents", "hamCircuits"], size: 78, weightLabel: "8 of 35 exam questions" },
-    { setNumber: 5, id: 905, name: "Signals & Antennas (T8, T9)", categories: ["hamSignals", "hamAntennas"], size: 70, weightLabel: "6 of 35 exam questions" },
+    { setNumber: 1, id: 901, name: "FCC Rules (T1)", categories: ["hamRules"], size: 68, weightLabel: "6 of 35 exam questions", partNames: ["Licenses, Bands & Station ID", "Station Control & Repeaters"] },
+    { setNumber: 2, id: 902, name: "Operating & Propagation (T2, T3)", categories: ["hamOperating", "hamPropagation"], size: 72, weightLabel: "6 of 35 exam questions", partNames: ["Operating Procedures (T2)", "Radio Wave Propagation (T3)"] },
+    { setNumber: 3, id: 903, name: "Practices & Electrical Principles (T4, T5)", categories: ["hamPractices", "hamElectrical"], size: 73, weightLabel: "6 of 35 exam questions", partNames: ["Amateur Radio Practices (T4)", "Electrical Principles (T5)"] },
+    { setNumber: 4, id: 904, name: "Components & Circuits (T6, T7)", categories: ["hamComponents", "hamCircuits"], size: 78, weightLabel: "8 of 35 exam questions", partNames: ["Electronic Components (T6)", "Practical Circuits (T7)"] },
+    { setNumber: 5, id: 905, name: "Signals & Antennas (T8, T9)", categories: ["hamSignals", "hamAntennas"], size: 70, weightLabel: "6 of 35 exam questions", partNames: ["Signals & Emissions (T8)", "Antennas & Feed Lines (T9)"] },
     { setNumber: 6, id: 906, name: "Safety (T0)", categories: ["hamSafety"], size: 36, weightLabel: "3 of 35 exam questions" },
   ],
   categoryLabels: {
@@ -556,7 +560,7 @@ const epa608: ExamConfig = {
     epaType3: 9,
   },
   trainingSets: [
-    { setNumber: 1, id: 1001, name: "Core", categories: ["epaCore"], size: 72, weightLabel: "Required for every certification" },
+    { setNumber: 1, id: 1001, name: "Core", categories: ["epaCore"], size: 72, weightLabel: "Required for every certification", partNames: ["Ozone, Laws & Certification", "Recovery, Evacuation & Safety"] },
     { setNumber: 2, id: 1002, name: "Type I: Small Appliances", categories: ["epaType1"], size: 40, weightLabel: "Charges of 5 lb or less" },
     { setNumber: 3, id: 1003, name: "Type II: High-Pressure", categories: ["epaType2"], size: 52, weightLabel: "Split systems, commercial refrigeration" },
     { setNumber: 4, id: 1004, name: "Type III: Low-Pressure", categories: ["epaType3"], size: 36, weightLabel: "Low-pressure chillers" },
@@ -615,7 +619,7 @@ const cna: ExamConfig = {
   },
   trainingSets: [
     { setNumber: 1, id: 1101, name: "Daily Living & Restorative Care", categories: ["activitiesDailyLiving", "restorativeSkills"], size: 48, weightLabel: "22% of the exam" },
-    { setNumber: 2, id: 1102, name: "Basic Nursing Skills", categories: ["basicNursingSkills"], size: 76, weightLabel: "39% of the exam" },
+    { setNumber: 2, id: 1102, name: "Basic Nursing Skills", categories: ["basicNursingSkills"], size: 76, weightLabel: "39% of the exam", partNames: ["Infection Control & Safety", "Vital Signs, Skin & Reporting"] },
     { setNumber: 3, id: 1103, name: "Psychosocial Care", categories: ["emotionalMentalHealth", "spiritualCultural"], size: 24, weightLabel: "13% of the exam" },
     { setNumber: 4, id: 1104, name: "Role of the Nurse Aide", categories: ["communication", "clientRights", "legalEthical", "healthCareTeam"], size: 52, weightLabel: "26% of the exam" },
   ],
@@ -675,7 +679,7 @@ const ptcb: ExamConfig = {
     ptcbFederal: 9,
   },
   trainingSets: [
-    { setNumber: 1, id: 1201, name: "Medications", categories: ["ptcbMedications"], size: 72, weightLabel: "35% of the exam" },
+    { setNumber: 1, id: 1201, name: "Medications", categories: ["ptcbMedications"], size: 72, weightLabel: "35% of the exam", partNames: ["Drug Names & Dose Math", "Side Effects, Uses & Storage"] },
     { setNumber: 2, id: 1202, name: "Patient Safety & Quality Assurance", categories: ["ptcbPatientSafety"], size: 48, weightLabel: "24% of the exam" },
     { setNumber: 3, id: 1203, name: "Order Entry & Processing", categories: ["ptcbOrderEntry"], size: 44, weightLabel: "22% of the exam" },
     { setNumber: 4, id: 1204, name: "Federal Requirements", categories: ["ptcbFederal"], size: 36, weightLabel: "19% of the exam" },
@@ -856,8 +860,8 @@ const cet: ExamConfig = {
     ekgAnalysis: 12,
   },
   trainingSets: [
-    { setNumber: 1, id: 1501, name: "EKG Acquisition: Setup & Leads", categories: ["ekgAcquisition"], size: 88, weightLabel: "44% of the exam" },
-    { setNumber: 2, id: 1502, name: "Safety, Compliance & Patient Care", categories: ["ekgSafetyPatientCare"], size: 64, weightLabel: "32% of the exam" },
+    { setNumber: 1, id: 1501, name: "EKG Acquisition: Setup & Leads", categories: ["ekgAcquisition"], size: 88, weightLabel: "44% of the exam", partNames: ["Machine Setup & Lead Placement", "Artifact, Holter & Stress Tests"] },
+    { setNumber: 2, id: 1502, name: "Safety, Compliance & Patient Care", categories: ["ekgSafetyPatientCare"], size: 64, weightLabel: "32% of the exam", partNames: ["Privacy, Infection Control & Ethics", "Vitals, Communication & Emergencies"] },
     { setNumber: 3, id: 1503, name: "EKG Analysis & Interpretation", categories: ["ekgAnalysis"], size: 48, weightLabel: "24% of the exam" },
   ],
   categoryLabels: {
@@ -969,7 +973,7 @@ const foodmgr: ExamConfig = {
     managementSystems: 3,
   },
   trainingSets: [
-    { setNumber: 1, id: 1801, name: "Contamination & Personal Hygiene", categories: ["foodborneContamination", "personalHygiene"], size: 64, weightLabel: "32% of the exam" },
+    { setNumber: 1, id: 1801, name: "Contamination & Personal Hygiene", categories: ["foodborneContamination", "personalHygiene"], size: 64, weightLabel: "32% of the exam", partNames: ["Foodborne Illness & Contamination", "Personal Hygiene & Employee Health"] },
     { setNumber: 2, id: 1802, name: "The Flow of Food", categories: ["flowOfFood"], size: 48, weightLabel: "24% of the exam" },
     { setNumber: 3, id: 1803, name: "Time & Temperature Control", categories: ["timeTemperature"], size: 40, weightLabel: "20% of the exam" },
     { setNumber: 4, id: 1804, name: "Cleaning, Facilities & Management", categories: ["cleaningSanitizing", "facilitiesPests", "managementSystems"], size: 48, weightLabel: "24% of the exam" },
@@ -1368,7 +1372,7 @@ const insurance: ExamConfig = {
   },
   trainingSets: [
     { setNumber: 1, id: 2001, name: "Insurance Basics & Regulation", categories: ["insuranceRegulation", "generalInsurance"], size: 36, weightLabel: "18% of the exam" },
-    { setNumber: 2, id: 2002, name: "Life Insurance Policies & Provisions", categories: ["lifeBasics", "lifePolicyTypes", "lifeProvisions"], size: 76, weightLabel: "38% of the exam" },
+    { setNumber: 2, id: 2002, name: "Life Insurance Policies & Provisions", categories: ["lifeBasics", "lifePolicyTypes", "lifeProvisions"], size: 76, weightLabel: "38% of the exam", partNames: ["Life Basics & Policy Provisions", "Life Policy Types"] },
     { setNumber: 3, id: 2003, name: "Annuities, Taxation & Health Basics", categories: ["annuitiesRetirement", "healthBasics"], size: 40, weightLabel: "20% of the exam" },
     { setNumber: 4, id: 2004, name: "Health Policy Provisions & Types", categories: ["healthProvisions", "healthPolicyTypes"], size: 48, weightLabel: "24% of the exam" },
   ],
@@ -1430,7 +1434,7 @@ const notary: ExamConfig = {
     { setNumber: 1, id: 2101, name: "Notarial Acts & Certificates", categories: ["notarialActs"], size: 56, weightLabel: "28% of the tests" },
     { setNumber: 2, id: 2102, name: "Identification & Signers", categories: ["signerIdentification"], size: 40, weightLabel: "20% of the tests" },
     { setNumber: 3, id: 2103, name: "Journal, Seal & Records", categories: ["journalSealRecords"], size: 40, weightLabel: "20% of the tests" },
-    { setNumber: 4, id: 2104, name: "Ethics, Commission & Liability", categories: ["ethicsProhibitedActs", "commissionLiability"], size: 64, weightLabel: "32% of the tests" },
+    { setNumber: 4, id: 2104, name: "Ethics, Commission & Liability", categories: ["ethicsProhibitedActs", "commissionLiability"], size: 64, weightLabel: "32% of the tests", partNames: ["Commission & Liability", "Ethics & Prohibited Acts"] },
   ],
   categoryLabels: {
     notarialActs: "Notarial Acts & Certificates",
@@ -1483,7 +1487,7 @@ const foodhandler: ExamConfig = {
     fhCleaning: 8,
   },
   trainingSets: [
-    { setNumber: 1, id: 2501, name: "Food Safety Basics & Personal Hygiene", categories: ["fhBasics", "fhHygiene"], size: 80, weightLabel: "40% of the tests" },
+    { setNumber: 1, id: 2501, name: "Food Safety Basics & Personal Hygiene", categories: ["fhBasics", "fhHygiene"], size: 80, weightLabel: "40% of the tests", partNames: ["Food Safety Basics", "Personal Hygiene"] },
     { setNumber: 2, id: 2502, name: "Contamination & Allergens", categories: ["fhContamination"], size: 40, weightLabel: "20% of the tests" },
     { setNumber: 3, id: 2503, name: "Time & Temperature Control", categories: ["fhTimeTemp"], size: 48, weightLabel: "24% of the tests" },
     { setNumber: 4, id: 2504, name: "Cleaning, Sanitizing & Pests", categories: ["fhCleaning"], size: 32, weightLabel: "16% of the tests" },
@@ -1775,7 +1779,7 @@ const forklift: ExamConfig = {
     forkLoads: 8,
   },
   trainingSets: [
-    { setNumber: 1, id: 3301, name: "Basics, Rules & Inspection", categories: ["forkBasics", "forkInspection"], size: 72, weightLabel: "36% of the tests" },
+    { setNumber: 1, id: 3301, name: "Basics, Rules & Inspection", categories: ["forkBasics", "forkInspection"], size: 72, weightLabel: "36% of the tests", partNames: ["Forklift Basics & OSHA Rules", "Inspection, Fueling & Charging"] },
     { setNumber: 2, id: 3302, name: "Stability & Load Capacity", categories: ["forkStability"], size: 48, weightLabel: "24% of the tests" },
     { setNumber: 3, id: 3303, name: "Safe Operation", categories: ["forkOperation"], size: 48, weightLabel: "24% of the tests" },
     { setNumber: 4, id: 3304, name: "Load Handling, Docks & Ramps", categories: ["forkLoads"], size: 32, weightLabel: "16% of the tests" },
@@ -1834,7 +1838,7 @@ const alcohol: ExamConfig = {
   },
   trainingSets: [
     { setNumber: 1, id: 3401, name: "Alcohol & the Body", categories: ["alcEffects"], size: 44, weightLabel: "22% of the tests" },
-    { setNumber: 2, id: 3402, name: "Recognizing Intoxication & Intervening", categories: ["alcIntoxication", "alcIntervention"], size: 80, weightLabel: "40% of the tests" },
+    { setNumber: 2, id: 3402, name: "Recognizing Intoxication & Intervening", categories: ["alcIntoxication", "alcIntervention"], size: 80, weightLabel: "40% of the tests", partNames: ["Recognizing Intoxication", "Intervention & Refusing Service"] },
     { setNumber: 3, id: 3403, name: "Checking IDs & Minors", categories: ["alcChecking"], size: 40, weightLabel: "20% of the tests" },
     { setNumber: 4, id: 3404, name: "Laws & Liability", categories: ["alcLaw"], size: 36, weightLabel: "18% of the tests" },
   ],
@@ -1891,7 +1895,7 @@ const security: ExamConfig = {
     sgSafety: 4,
   },
   trainingSets: [
-    { setNumber: 1, id: 3601, name: "Role, Ethics & Legal Powers", categories: ["sgRole", "sgLegal"], size: 76, weightLabel: "38% of the tests" },
+    { setNumber: 1, id: 3601, name: "Role, Ethics & Legal Powers", categories: ["sgRole", "sgLegal"], size: 76, weightLabel: "38% of the tests", partNames: ["Legal Powers & Limits", "Role & Professionalism"] },
     { setNumber: 2, id: 3602, name: "Observation, Patrol & Access Control", categories: ["sgObservation"], size: 40, weightLabel: "20% of the tests" },
     { setNumber: 3, id: 3603, name: "Report Writing & Communication", categories: ["sgReports"], size: 32, weightLabel: "16% of the tests" },
     { setNumber: 4, id: 3604, name: "Emergencies, Safety & Terrorism Awareness", categories: ["sgEmergency", "sgSafety"], size: 52, weightLabel: "26% of the tests" },
@@ -1947,7 +1951,7 @@ const lifeguard: ExamConfig = {
     lgFacility: 8,
   },
   trainingSets: [
-    { setNumber: 1, id: 3701, name: "Surveillance & Victim Recognition", categories: ["lgProfessional", "lgRecognition"], size: 72, weightLabel: "36% of the tests" },
+    { setNumber: 1, id: 3701, name: "Surveillance & Victim Recognition", categories: ["lgProfessional", "lgRecognition"], size: 72, weightLabel: "36% of the tests", partNames: ["Lifeguard Duties & Surveillance", "Recognizing Drowning & Distress"] },
     { setNumber: 2, id: 3702, name: "Water Rescue Skills", categories: ["lgRescue"], size: 48, weightLabel: "24% of the tests" },
     { setNumber: 3, id: 3703, name: "First Aid, CPR & AED", categories: ["lgCare"], size: 48, weightLabel: "24% of the tests" },
     { setNumber: 4, id: 3704, name: "Facility Safety & Legal", categories: ["lgFacility"], size: 32, weightLabel: "16% of the tests" },
@@ -2009,7 +2013,7 @@ const pnc: ExamConfig = {
     { setNumber: 1, id: 3801, name: "Basics, Underwriting & Policy Provisions", categories: ["pcGeneral", "pcPolicy"], size: 56, weightLabel: "28% of the tests" },
     { setNumber: 2, id: 3802, name: "Dwelling & Homeowners", categories: ["pcHomeowners"], size: 36, weightLabel: "18% of the tests" },
     { setNumber: 3, id: 3803, name: "Personal Auto", categories: ["pcAuto"], size: 36, weightLabel: "18% of the tests" },
-    { setNumber: 4, id: 3804, name: "Commercial Lines & Other Coverages", categories: ["pcCommercial", "pcLiability", "pcOther"], size: 72, weightLabel: "36% of the tests" },
+    { setNumber: 4, id: 3804, name: "Commercial Lines & Other Coverages", categories: ["pcCommercial", "pcLiability", "pcOther"], size: 72, weightLabel: "36% of the tests", partNames: ["Commercial Property & BOP", "Liability, Workers Comp & Other"] },
   ],
   categoryLabels: {
     pcGeneral: "Insurance Basics & Underwriting",
@@ -2063,7 +2067,7 @@ const htl: ExamConfig = {
     { setNumber: 1, id: 201, name: "Fixation", categories: ["fixation"], size: 40, weightLabel: "15–25% of the exam" },
     { setNumber: 2, id: 202, name: "Processing", categories: ["processing"], size: 28, weightLabel: "10–20% of the exam" },
     { setNumber: 3, id: 203, name: "Embedding & Microtomy", categories: ["embeddingMicrotomy"], size: 40, weightLabel: "15–25% of the exam" },
-    { setNumber: 4, id: 204, name: "Staining", categories: ["staining"], size: 72, weightLabel: "30–40% of the exam" },
+    { setNumber: 4, id: 204, name: "Staining", categories: ["staining"], size: 72, weightLabel: "30–40% of the exam", partNames: ["H&E & Special Stains", "Immunostains & Other Methods"] },
     { setNumber: 5, id: 205, name: "Laboratory Operations", categories: ["laboratoryOperations"], size: 20, weightLabel: "10–15% of the exam" },
   ],
   categoryLabels: {
@@ -2119,7 +2123,7 @@ const cst: ExamConfig = {
   },
   trainingSets: [
     { setNumber: 1, id: 301, name: "Preoperative Preparation", categories: ["preoperativePreparation"], size: 24, weightLabel: "13% of the exam" },
-    { setNumber: 2, id: 302, name: "Intraoperative Procedures", categories: ["intraoperativeProcedures"], size: 92, weightLabel: "45% of the exam" },
+    { setNumber: 2, id: 302, name: "Intraoperative Procedures", categories: ["intraoperativeProcedures"], size: 92, weightLabel: "45% of the exam", partNames: ["Sterile Technique, Counts & Instruments", "Equipment, Meds & Emergencies"] },
     { setNumber: 3, id: 303, name: "Postoperative Procedures", categories: ["postoperativeProcedures"], size: 12, weightLabel: "7% of the exam" },
     { setNumber: 4, id: 304, name: "Ancillary Duties", categories: ["administrativePersonnel", "equipmentSterilization"], size: 28, weightLabel: "15% of the exam" },
     { setNumber: 5, id: 305, name: "Basic Science", categories: ["anatomyPhysiology", "microbiology", "surgicalPharmacology"], size: 44, weightLabel: "20% of the exam" },
@@ -2404,7 +2408,7 @@ const pncTX: ExamConfig = {
     pcOther: 7,
   },
   trainingSets: [
-    { setNumber: 1, id: 4301, name: "Basics, Underwriting & Policy Provisions", categories: ["pcGeneral", "pcPolicy"], size: 70, weightLabel: "54% of the practice exam" },
+    { setNumber: 1, id: 4301, name: "Basics, Underwriting & Policy Provisions", categories: ["pcGeneral", "pcPolicy"], size: 70, weightLabel: "54% of the practice exam", partNames: ["Risk, Contracts & Agency Basics", "Texas Law & Policy Provisions"] },
     { setNumber: 2, id: 4302, name: "Dwelling & Homeowners", categories: ["pcHomeowners"], size: 18, weightLabel: "14% of the practice exam" },
     { setNumber: 3, id: 4303, name: "Personal Auto", categories: ["pcAuto"], size: 14, weightLabel: "11% of the practice exam" },
     { setNumber: 4, id: 4304, name: "Commercial Lines & Other Coverages", categories: ["pcCommercial", "pcLiability", "pcOther"], size: 28, weightLabel: "22% of the practice exam" },
@@ -2456,7 +2460,7 @@ const pncFL: ExamConfig = {
     pcOther: 17,
   },
   trainingSets: [
-    { setNumber: 1, id: 4351, name: "Basics, Underwriting & Policy Provisions", categories: ["pcGeneral", "pcPolicy"], size: 69, weightLabel: "46% of the practice exam" },
+    { setNumber: 1, id: 4351, name: "Basics, Underwriting & Policy Provisions", categories: ["pcGeneral", "pcPolicy"], size: 69, weightLabel: "46% of the practice exam", partNames: ["Florida Law & Risk Basics", "Contracts, Agency & Policy Provisions"] },
     { setNumber: 2, id: 4352, name: "Dwelling & Homeowners", categories: ["pcHomeowners"], size: 19, weightLabel: "13% of the practice exam" },
     { setNumber: 3, id: 4353, name: "Personal Auto", categories: ["pcAuto"], size: 23, weightLabel: "15% of the practice exam" },
     { setNumber: 4, id: 4354, name: "Commercial Lines & Other Coverages", categories: ["pcCommercial", "pcLiability", "pcOther"], size: 39, weightLabel: "26% of the practice exam" },
@@ -3686,7 +3690,7 @@ const pncPA: ExamConfig = {
     pcOther: 13,
   },
   trainingSets: [
-    { setNumber: 1, id: 5501, name: "Basics, Underwriting & Policy Provisions", categories: ["pcGeneral", "pcPolicy"], size: 63, weightLabel: "42% of the practice exam" },
+    { setNumber: 1, id: 5501, name: "Basics, Underwriting & Policy Provisions", categories: ["pcGeneral", "pcPolicy"], size: 63, weightLabel: "42% of the practice exam", partNames: ["Risk Basics & Pennsylvania Licensing", "Pennsylvania Rules & Policy Provisions"] },
     { setNumber: 2, id: 5502, name: "Dwelling & Homeowners", categories: ["pcHomeowners"], size: 16, weightLabel: "11% of the practice exam" },
     { setNumber: 3, id: 5503, name: "Personal Auto", categories: ["pcAuto"], size: 22, weightLabel: "15% of the practice exam" },
     { setNumber: 4, id: 5504, name: "Commercial Lines & Other Coverages", categories: ["pcCommercial", "pcLiability", "pcOther"], size: 49, weightLabel: "33% of the practice exam" },
@@ -3738,7 +3742,7 @@ const pncIL: ExamConfig = {
     pcOther: 5,
   },
   trainingSets: [
-    { setNumber: 1, id: 5551, name: "Basics, Underwriting & Policy Provisions", categories: ["pcGeneral", "pcPolicy"], size: 90, weightLabel: "60% of the practice exam" },
+    { setNumber: 1, id: 5551, name: "Basics, Underwriting & Policy Provisions", categories: ["pcGeneral", "pcPolicy"], size: 90, weightLabel: "60% of the practice exam", partNames: ["Risk Basics & Illinois Licensing", "Illinois Conduct & Policy Provisions"] },
     { setNumber: 2, id: 5552, name: "Dwelling & Homeowners", categories: ["pcHomeowners"], size: 16, weightLabel: "11% of the practice exam" },
     { setNumber: 3, id: 5553, name: "Personal Auto", categories: ["pcAuto"], size: 20, weightLabel: "13% of the practice exam" },
     { setNumber: 4, id: 5554, name: "Commercial Lines & Other Coverages", categories: ["pcCommercial", "pcLiability", "pcOther"], size: 24, weightLabel: "16% of the practice exam" },
@@ -3842,7 +3846,7 @@ const pncGA: ExamConfig = {
     pcOther: 6,
   },
   trainingSets: [
-    { setNumber: 1, id: 5651, name: "Basics, Underwriting & Policy Provisions", categories: ["pcGeneral", "pcPolicy"], size: 72, weightLabel: "58% of the practice exam" },
+    { setNumber: 1, id: 5651, name: "Basics, Underwriting & Policy Provisions", categories: ["pcGeneral", "pcPolicy"], size: 72, weightLabel: "58% of the practice exam", partNames: ["Risk Basics & Georgia Licensing", "Policy Provisions & Conditions"] },
     { setNumber: 2, id: 5652, name: "Dwelling & Homeowners", categories: ["pcHomeowners"], size: 14, weightLabel: "11% of the practice exam" },
     { setNumber: 3, id: 5653, name: "Personal Auto", categories: ["pcAuto"], size: 14, weightLabel: "11% of the practice exam" },
     { setNumber: 4, id: 5654, name: "Commercial Lines & Other Coverages", categories: ["pcCommercial", "pcLiability", "pcOther"], size: 25, weightLabel: "20% of the practice exam" },
@@ -3946,7 +3950,7 @@ const pncMI: ExamConfig = {
     pcOther: 4,
   },
   trainingSets: [
-    { setNumber: 1, id: 5751, name: "Basics, Underwriting & Policy Provisions", categories: ["pcGeneral", "pcPolicy"], size: 61, weightLabel: "41% of the practice exam" },
+    { setNumber: 1, id: 5751, name: "Basics, Underwriting & Policy Provisions", categories: ["pcGeneral", "pcPolicy"], size: 61, weightLabel: "41% of the practice exam", partNames: ["Risk Basics & Michigan Producers", "Policy Provisions & Michigan Fire Law"] },
     { setNumber: 2, id: 5752, name: "Dwelling & Homeowners", categories: ["pcHomeowners"], size: 26, weightLabel: "17% of the practice exam" },
     { setNumber: 3, id: 5753, name: "Personal Auto", categories: ["pcAuto"], size: 22, weightLabel: "15% of the practice exam" },
     { setNumber: 4, id: 5754, name: "Commercial Lines & Other Coverages", categories: ["pcCommercial", "pcLiability", "pcOther"], size: 41, weightLabel: "27% of the practice exam" },
@@ -3998,7 +4002,7 @@ const pncNJ: ExamConfig = {
     pcOther: 5,
   },
   trainingSets: [
-    { setNumber: 1, id: 5801, name: "Basics, Underwriting & Policy Provisions", categories: ["pcGeneral", "pcPolicy"], size: 78, weightLabel: "52% of the practice exam" },
+    { setNumber: 1, id: 5801, name: "Basics, Underwriting & Policy Provisions", categories: ["pcGeneral", "pcPolicy"], size: 78, weightLabel: "52% of the practice exam", partNames: ["Risk Basics & New Jersey Licensing", "New Jersey Regulation & Policy Provisions"] },
     { setNumber: 2, id: 5802, name: "Dwelling & Homeowners", categories: ["pcHomeowners"], size: 17, weightLabel: "11% of the practice exam" },
     { setNumber: 3, id: 5803, name: "Personal Auto", categories: ["pcAuto"], size: 19, weightLabel: "13% of the practice exam" },
     { setNumber: 4, id: 5804, name: "Commercial Lines & Other Coverages", categories: ["pcCommercial", "pcLiability", "pcOther"], size: 36, weightLabel: "24% of the practice exam" },
@@ -4102,7 +4106,7 @@ const pncWA: ExamConfig = {
     pcOther: 7,
   },
   trainingSets: [
-    { setNumber: 1, id: 5901, name: "Basics, Underwriting & Policy Provisions", categories: ["pcGeneral", "pcPolicy"], size: 63, weightLabel: "42% of the practice exam" },
+    { setNumber: 1, id: 5901, name: "Basics, Underwriting & Policy Provisions", categories: ["pcGeneral", "pcPolicy"], size: 63, weightLabel: "42% of the practice exam", partNames: ["Risk, Contracts & Policy Provisions", "Washington Law & Producer Rules"] },
     { setNumber: 2, id: 5902, name: "Dwelling & Homeowners", categories: ["pcHomeowners"], size: 21, weightLabel: "14% of the practice exam" },
     { setNumber: 3, id: 5903, name: "Personal Auto", categories: ["pcAuto"], size: 32, weightLabel: "21% of the practice exam" },
     { setNumber: 4, id: 5904, name: "Commercial Lines & Other Coverages", categories: ["pcCommercial", "pcLiability", "pcOther"], size: 34, weightLabel: "23% of the practice exam" },
@@ -4230,9 +4234,12 @@ export function trainingPartOf(setId: number, questionId: string): number {
   return part;
 }
 
-/** Display name: "Safe Driving & Hazards, part 2 of 3". */
+/** Display name: the part's own name ("Night Driving") when the set has
+ *  `partNames`, else "Safe Driving & Hazards, part 2 of 3". */
 export function trainingPartName(p: TrainingPart, lang: Language = "en"): string {
   if (p.partCount === 1) return p.set.name;
+  const own = p.set.partNames?.[p.part - 1];
+  if (own) return own;
   if (lang === "es") return `${p.set.name}, parte ${p.part} de ${p.partCount}`;
   if (lang === "vi") return `${p.set.name}, phần ${p.part}/${p.partCount}`;
   if (lang === "ko") return `${p.set.name}, ${p.partCount}부 중 ${p.part}부`;
@@ -4265,7 +4272,9 @@ export function localizeExam(exam: ExamConfig, lang: Language): ExamConfig {
     name: tr.name,
     examLabel: tr.examLabel,
     fullName: tr.fullName,
-    trainingSets: exam.trainingSets.map((s) => ({ ...s, ...tr.trainingSets[s.setNumber] })),
+    // English part names never show in another language: a translation
+    // brings its own or the part falls back to "<set>, parte 2 de 3".
+    trainingSets: exam.trainingSets.map((s) => ({ ...s, partNames: undefined, ...tr.trainingSets[s.setNumber] })),
     categoryLabels: { ...exam.categoryLabels, ...tr.categoryLabels },
     copy: { ...exam.copy, ...tr.copy },
   };

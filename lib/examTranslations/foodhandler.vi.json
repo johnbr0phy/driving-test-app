@@ -6,7 +6,8 @@
   "trainingSets": {
     "1": {
       "name": "Kiến thức cơ bản về an toàn thực phẩm & Vệ sinh cá nhân",
-      "weightLabel": "40% bài thi"
+      "weightLabel": "40% bài thi",
+      "partNames": ["Kiến thức cơ bản về an toàn thực phẩm", "Vệ sinh cá nhân"]
     },
     "2": {
       "name": "Nhiễm bẩn & Chất gây dị ứng",

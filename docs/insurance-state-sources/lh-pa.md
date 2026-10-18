@@ -22,7 +22,7 @@ Both outline PDFs and the booklet were downloaded with curl and checked as real 
 ## Chosen form
 150 items = the real scored length. Pass 70%. Because Pennsylvania integrates state law into every area, the form uses 101 national items for the general concepts and 49 Pennsylvania items placed in the areas whose outline lines cite Pennsylvania statutes or regulations (roughly a third of the outline lines do). Experimental items are not modeled.
 
-National picks by outline area: regulation (federal law, agency, twisting, defamation, insurer classes, unfair claims) 12; general concepts and field underwriting 13; life basics (insurable interest, needs, business uses, group basics) 9; life policy types 10; provisions, options and riders 12; annuities 7 + federal tax 6 = 13; medical plans, renewability and HSA 10; A&H provisions, COBRA and ACA 10; disability, medical expense, dental, Medicare and LTC 12. Five national items have letter balance as one selection reason: the state keys could not do it alone, because national keys are fixed.
+National picks by outline area: regulation (federal law, agency, twisting, defamation, insurer classes, unfair claims) 12; general concepts and field underwriting 13; life basics (insurable interest, needs, business uses, group basics) 9; life policy types 10; provisions, options and riders 12; annuities 7 + federal tax 6 = 13; medical plans, renewability and HSA 10; A&H provisions, COBRA and ACA 10; disability, medical expense, dental, Medicare and LTC 12. Twelve national picks were swapped for same-area items keyed D to keep every answer letter between 20% and 30% (national keys are fixed, so state keys alone could not balance the form), and five state items were moved off the plain A-B-C-D rotation for the same reason.
 
 | Category | National | Pennsylvania | Total |
 |---|---|---|---|
@@ -127,4 +127,4 @@ National items that state a rule Pennsylvania also uses: life grace (ICL 410(b))
 - Dollar amounts (license fees, the $125 gift limit as the asked fact, guaranty association limits).
 - Pennsylvania mandated benefits (mammography, serious mental illness, newborns): the outline cites them, but their statute text (40 P.S. 764b-764g, 771-775) was not retrieved from an official source in this session, so no item rests on them.
 - Annuity suitability (Act 48 of 2018) and viatical settlement rules: official text not retrieved.
-- The 31-day dependent age 19 limit in ICL 617(A)(3): federal ACA dependent coverage to 26 overrides it for major medical, so no item.
+- The age 19 limit for children on family policies in ICL 617(A)(3): federal ACA dependent coverage to age 26 applies to major medical, so no item asks it.

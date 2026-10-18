@@ -157,14 +157,7 @@ export default async function Home() {
         </div>
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {popular.map(({ test, answered }) => (
-            <div key={test.id} className="flex flex-col">
-              <TestCard test={test} />
-              {answered !== null && (
-                <p className="mt-2 px-1 text-xs text-gray-500 dark:text-gray-400">
-                  {answered.toLocaleString("en-US")} questions answered this week
-                </p>
-              )}
-            </div>
+            <TestCard key={test.id} test={test} answered={answered} />
           ))}
         </div>
       </div>

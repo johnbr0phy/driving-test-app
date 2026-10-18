@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
-import { ArrowRight, Search, X } from "lucide-react";
+import { ChevronRight, Search, X } from "lucide-react";
 import {
   searchTestGroups,
   TEST_CATALOG,
@@ -12,31 +12,59 @@ import { TestIcon } from "@/components/TestIcon";
 import { hasTigerSet } from "@/lib/tigerAssets";
 import { LANGUAGES } from "@/i18n";
 
-export function TestCard({ test }: { test: TestCatalogEntry }) {
+/**
+ * One test on the hub. Every card has the same rows so a grid lines up:
+ * name and certifying body (always two lines tall, flags on the second for
+ * multilingual tests), a chip row (size, price) and the optional weekly count,
+ * with a chevron on the right like the dashboard rows.
+ */
+export function TestCard({ test, answered }: { test: TestCatalogEntry; answered?: number | null }) {
+  const tiger = hasTigerSet(test.id);
   return (
     <div data-theme={test.theme} className="h-full">
       <Link
         href={test.href}
-        className="group flex h-full flex-col rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 transition-all hover:border-brand hover:shadow-lg"
+        className="group flex h-full items-center gap-3 rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-5 transition-all hover:border-brand hover:shadow-lg"
       >
-        <div className="mb-4 flex items-center gap-3">
-          <div className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-xl ${hasTigerSet(test.id) ? "" : "bg-brand text-white"}`}>
-            <TestIcon examId={test.id} icon={test.icon} className={hasTigerSet(test.id) ? "h-11 w-11" : "h-6 w-6"} />
+        <div className="min-w-0 flex-1">
+          <div className="flex items-start gap-3">
+            <div className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-xl ${tiger ? "" : "bg-brand text-white"}`}>
+              <TestIcon examId={test.id} icon={test.icon} className={tiger ? "h-12 w-12" : "h-6 w-6"} />
+            </div>
+            <div className="min-w-0">
+              <h2 className="truncate text-lg font-semibold leading-snug text-gray-900 dark:text-gray-50">{test.name}</h2>
+              {/* Two lines tall either way: a long org wraps into the second, a multilingual test puts its flags there. */}
+              {test.languages.length > 1 ? (
+                <div className="min-h-[2.5rem] text-sm leading-5 text-gray-500 dark:text-gray-400">
+                  <p className="truncate">{test.org}</p>
+                  <LanguageFlags languages={test.languages} />
+                </div>
+              ) : (
+                <p className="line-clamp-2 min-h-[2.5rem] text-sm leading-5 text-gray-500 dark:text-gray-400">{test.org}</p>
+              )}
+            </div>
           </div>
-          <div>
-            <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-50">{test.name}</h2>
-            <p className="text-sm text-gray-500 dark:text-gray-400">{test.org}</p>
+
+          <div className="mt-4 flex flex-wrap items-center gap-2 text-xs font-medium">
+            <span className="rounded-full bg-gray-100 dark:bg-gray-800 px-2.5 py-1 text-gray-700 dark:text-gray-300">
+              {test.questions} questions
+            </span>
+            <span
+              className="rounded-full bg-brand-light px-2.5 py-1 text-brand-dark"
+              title={test.pricing ? `Practice tests: ${test.pricing}` : undefined}
+            >
+              {test.pricing ? "Free + Premium" : "Free"}
+            </span>
           </div>
+
+          {answered ? (
+            <p className="mt-3 text-xs text-gray-500 dark:text-gray-400">{answered.toLocaleString("en-US")} answered this week</p>
+          ) : null}
         </div>
-        {test.languages.length > 1 && <LanguageFlags languages={test.languages} />}
-        <div className="mt-auto flex items-center justify-between pt-1 text-sm">
-          <span className="text-gray-500 dark:text-gray-400">
-            {test.questions} questions · {test.pricing ?? "Free"}
-          </span>
-          <span className="inline-flex items-center gap-1 font-semibold text-brand-dark group-hover:gap-2 transition-all">
-            Start <ArrowRight className="h-4 w-4" aria-hidden="true" />
-          </span>
-        </div>
+        <ChevronRight
+          className="h-5 w-5 shrink-0 text-gray-300 dark:text-gray-600 transition-all group-hover:translate-x-0.5 group-hover:text-brand"
+          aria-hidden="true"
+        />
       </Link>
     </div>
   );
@@ -47,14 +75,14 @@ function LanguageFlags({ languages }: { languages: TestCatalogEntry["languages"]
   const langs = LANGUAGES.filter((l) => languages.includes(l.code));
   const names = langs.map((l) => l.englishName).join(", ");
   return (
-    <p className="mb-4 flex items-center gap-1.5 text-sm text-gray-500 dark:text-gray-400" title={`Available in ${names}`}>
+    <span className="flex h-5 items-center gap-1" title={`Available in ${names}`}>
       <span className="sr-only">Available in {names}</span>
       {langs.map((l) => (
-        <span key={l.code} aria-hidden="true" className="text-lg leading-none">
+        <span key={l.code} aria-hidden="true" className="text-sm leading-none">
           {l.flag}
         </span>
       ))}
-    </p>
+    </span>
   );
 }
 

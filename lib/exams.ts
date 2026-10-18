@@ -4233,9 +4233,10 @@ export function trainingPartOf(setId: number, questionId: string): number {
 /** Display name: "Safe Driving & Hazards, part 2 of 3". */
 export function trainingPartName(p: TrainingPart, lang: Language = "en"): string {
   if (p.partCount === 1) return p.set.name;
-  return lang === "es"
-    ? `${p.set.name}, parte ${p.part} de ${p.partCount}`
-    : `${p.set.name}, part ${p.part} of ${p.partCount}`;
+  if (lang === "es") return `${p.set.name}, parte ${p.part} de ${p.partCount}`;
+  if (lang === "vi") return `${p.set.name}, phần ${p.part}/${p.partCount}`;
+  if (lang === "ko") return `${p.set.name}, ${p.partCount}부 중 ${p.part}부`;
+  return `${p.set.name}, part ${p.part} of ${p.partCount}`;
 }
 
 /** Languages an exam is offered in, English first. */

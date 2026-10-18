@@ -9,6 +9,7 @@ import {
   TestCatalogEntry,
 } from "@/lib/testCatalog";
 import { TestIcon } from "@/components/TestIcon";
+import { CountUp } from "@/components/CountUp";
 import { hasTigerSet } from "@/lib/tigerAssets";
 import { LANGUAGES } from "@/i18n";
 
@@ -58,7 +59,9 @@ export function TestCard({ test, answered }: { test: TestCatalogEntry; answered?
           </div>
 
           {answered ? (
-            <p className="mt-3 text-xs text-gray-500 dark:text-gray-400">{answered.toLocaleString("en-US")} answered this week</p>
+            <p className="mt-4 border-t border-gray-200 dark:border-gray-800 pt-3 text-center text-xs text-gray-500 dark:text-gray-400">
+              <CountUp value={answered} className="text-sm font-semibold text-gray-900 dark:text-gray-50" /> answered this week
+            </p>
           ) : null}
         </div>
         <ChevronRight

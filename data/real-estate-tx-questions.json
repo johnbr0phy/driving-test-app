@@ -791,7 +791,7 @@
     "optionD": "Negotiating a two-year residential lease",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Occupations Code 1101.558(c) exempts a communication at a property held open for any prospective buyer when it concerns that property. The lease exemption covers residential leases of less than one year where no sale is considered, so a two-year lease does not qualify.",
+    "explanation": "Occupations Code 1101.558 exempts a communication at a property held open for any prospective buyer when it concerns that property. The lease exemption covers residential leases of not more than one year where no sale is considered, so a two-year lease does not qualify.",
     "sourceQuestionId": "RETX-TXAGY-002"
   },
   {

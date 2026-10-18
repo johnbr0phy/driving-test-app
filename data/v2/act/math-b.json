@@ -265,7 +265,7 @@
       },
       "lockedOrder": true,
       "calculator": true,
-      "explanation": "Because the zeros are $-1$ and $5$, the function can be written $f(x) = a(x + 1)(x - 5)$. Using the $y$-intercept, $f(0) = a(1)(-5) = 5$ gives $a = -1$, so $f(x) = -(x + 1)(x - 5)$. The maximum occurs at the axis of symmetry, halfway between the zeros at $x = 2$, where $f(2) = -(3)(-3) = 9$. Choice A is the $y$-intercept, not the vertex, and choice D results from using $a = 1$ and ignoring the sign."
+      "explanation": "Because the zeros are $-1$ and $5$, the function can be written $f(x) = a(x + 1)(x - 5)$. Using the $y$-intercept, $f(0) = a(1)(-5) = 5$ gives $a = -1$, so $f(x) = -(x + 1)(x - 5)$. The maximum occurs at the axis of symmetry, halfway between the zeros at $x = 2$, where $f(2) = -(3)(-3) = 9$. Choice A is the $y$-intercept, not the vertex."
     },
     {
       "id": "ACT-MA-135",
@@ -428,7 +428,7 @@
       ],
       "lockedOrder": true,
       "calculator": true,
-      "explanation": "There are $\\binom{9}{3} = 84$ equally likely committees. The number with exactly 2 seniors and 1 junior is $\\binom{5}{2} \\cdot \\binom{4}{1} = 10 \\cdot 4 = 40$, so the probability is $\\dfrac{40}{84} = \\dfrac{10}{21}$. Choice A, $\\dfrac{5}{9} \\cdot \\dfrac{4}{8} \\cdot \\dfrac{4}{7}$, counts only one order of drawing senior, senior, junior; the three possible orders must be added. Choice B forgets to count which junior is chosen."
+      "explanation": "There are $\\binom{9}{3} = 84$ equally likely committees. The number with exactly 2 seniors and 1 junior is $\\binom{5}{2} \\cdot \\binom{4}{1} = 10 \\cdot 4 = 40$, so the probability is $\\dfrac{40}{84} = \\dfrac{10}{21}$. Choice A, $\\dfrac{5}{9} \\cdot \\dfrac{4}{8} \\cdot \\dfrac{4}{7}$, counts only one order of drawing senior, senior, junior; the three possible orders must be added."
     },
     {
       "id": "ACT-MA-142",

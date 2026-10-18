@@ -417,7 +417,7 @@
     "optionD": "Send the call sign using only a phone emission",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "A station transmitting phone may identify using either a voice (phone) emission or CW (Morse code) [97.119(b)(2)]. That is why choice D, phone only, is wrong."
+    "explanation": "A station transmitting phone may identify using either a voice (phone) emission or CW (Morse code) [97.119(b)(2)]. That is why the answer saying phone emission only is wrong."
   },
   {
     "type": "HAM",
@@ -879,7 +879,7 @@
     "optionD": "No, you must wait until the license has been renewed",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "No, you may not transmit during the grace period; it only gives you time to renew, and you must wait until the renewal is granted [97.21(b)]. The two-year grace period is a common trap in choice A."
+    "explanation": "No, you may not transmit during the grace period; it only gives you time to renew, and you must wait until the renewal is granted [97.21(b)]. The two-year grace period is a common trap: the answer \"Yes, for up to two years\" confuses the grace period with permission to transmit."
   },
   {
     "type": "HAM",

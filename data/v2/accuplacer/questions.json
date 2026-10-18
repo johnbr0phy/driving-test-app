@@ -998,7 +998,7 @@
     "basics": "authorPurpose",
     "difficulty": 2,
     "format": "single",
-    "passage": "In the 1850s, John Snow mapped the homes of cholera victims in a London neighborhood and found them clustered around a single public water pump. When the pump handle was removed, new cases dropped sharply. At the time, most doctors blamed \"bad air\" for the disease. Snow's map is now taught as a founding case in the field of epidemiology.",
+    "passage": "In the 1850s, John Snow mapped the homes of cholera victims in a London neighborhood and found them clustered around a single public water pump. He persuaded officials to remove the pump handle, and the outbreak, which was already declining, soon ended. At the time, most doctors blamed \"bad air\" for the disease. Snow's map is now taught as a founding case in the field of epidemiology.",
     "stem": "The author includes the detail that most doctors blamed bad air in order to",
     "options": [
       "criticize Snow for ignoring other theories",
@@ -1184,7 +1184,7 @@
     "correct": [
       1
     ],
-    "explanation": "Two independent clauses need a comma plus a conjunction or a semicolon. The last option keeps the comma splice, the third removes all punctuation and makes a run-on, and the first inserts a stray comma after \"finishing\"."
+    "explanation": "Two independent clauses need a comma plus a conjunction or a semicolon. Keeping only the comma leaves a comma splice, removing all punctuation makes a run-on, and the version with \"finishing,\" adds a stray comma that splits the phrase."
   },
   {
     "id": "ACC-WR-003",
@@ -1272,7 +1272,7 @@
     "correct": [
       1
     ],
-    "explanation": "Placing the description right after \"players\" makes clear who was muddy. The original and the third and fourth options all attach the modifier to the coach, and the first option is redundant (\"told by the coach ... the coach said\")."
+    "explanation": "Placing the description right after \"players\" makes clear who was muddy. The original sentence and the version with \"The coach, covered in mud\" both attach the modifier to the coach, and the version ending \"the coach said\" is redundant (\"told by the coach ... the coach said\")."
   },
   {
     "id": "ACC-WR-007",
@@ -1359,7 +1359,7 @@
     "correct": [
       3
     ],
-    "explanation": "A semicolon alone joins two closely related independent clauses. A comma alone is a comma splice, a semicolon plus \"and\" doubles the connector, and the last option puts the comma in the wrong place."
+    "explanation": "A semicolon alone joins two closely related independent clauses. A comma alone is a comma splice, a semicolon plus \"and\" doubles the connector, and \"days many, families\" puts the comma in the wrong place."
   },
   {
     "id": "ACC-WR-011",
@@ -1380,7 +1380,7 @@
     "correct": [
       2
     ],
-    "explanation": "A colon introduces a list after a complete sentence. A semicolon must join two independent clauses, a comma makes the list read as part of a longer series, and the last option puts the colon in the wrong place."
+    "explanation": "A colon introduces a list after a complete sentence. A semicolon must join two independent clauses, a comma makes the list read as part of a longer series, and placing the colon after \"needed\" splits \"for the trip\" from the sentence it belongs to."
   },
   {
     "id": "ACC-WR-012",
@@ -1445,7 +1445,7 @@
     "correct": [
       2
     ],
-    "explanation": "The two facts contrast, so \"although\" shows the relationship. \"So\" wrongly implies cause, the comma-only version is a splice, and the last option is not a complete sentence."
+    "explanation": "The two facts contrast, so \"although\" shows the relationship. \"So\" wrongly implies cause, the comma-only version is a splice, and \"most customers, arriving after eight\" leaves the second part without a main verb."
   },
   {
     "id": "ACC-WR-015",
@@ -1598,7 +1598,7 @@
     "correct": [
       1
     ],
-    "explanation": "In the original, \"she\" could refer to Maria or her sister. Repeating \"Maria\" removes the ambiguity; \"she herself\" is still unclear, and the last option changes the meaning and has an agreement error."
+    "explanation": "In the original, \"she\" could refer to Maria or her sister. Repeating \"Maria\" removes the ambiguity. \"She herself\" is still unclear, and \"her sister and she was\" changes the meaning and pairs a plural subject with the singular \"was.\""
   },
   {
     "id": "ACC-WR-022",
@@ -1685,7 +1685,7 @@
     "correct": [
       2
     ],
-    "explanation": "A noun meaning a result is \"effect.\" \"Affect\" is usually a verb meaning to influence, and the other two choices do not fit the sentence."
+    "explanation": "A noun meaning a result is \"effect.\" \"Affect\" is usually a verb meaning to influence, and \"affection\" and \"effecting\" do not fit the sentence."
   },
   {
     "id": "ACC-WR-026",
@@ -1794,7 +1794,7 @@
     "correct": [
       0
     ],
-    "explanation": "When two verbs share one subject, no comma is needed before \"and.\" A comma alone leaves the sentence incomplete, and a semicolon needs independent clauses on both sides."
+    "explanation": "When two verbs share one subject, no comma is needed before \"and.\" Joining the verbs with only a comma drops the needed \"and,\" and a semicolon needs independent clauses on both sides."
   },
   {
     "id": "ACC-WR-031",
@@ -1837,7 +1837,7 @@
     "correct": [
       3
     ],
-    "explanation": "Folding the two descriptions into adjectives is concise and grammatical. Repeating \"and it was\" is wordy, \"being\" is unnecessary, and the last option has a comma error."
+    "explanation": "Folding the two descriptions into adjectives is concise and grammatical. Repeating \"and it was\" is wordy, \"being\" is unnecessary, and \"long, difficult to read\" joins the two descriptions with a comma and no \"and.\""
   },
   {
     "id": "ACC-WR-033",
@@ -3863,7 +3863,7 @@
     "correct": [
       2
     ],
-    "explanation": "Factor: (x - 7)(x + 2) = 0, so x = 7 or x = -2. Check the middle term: -7 + 2 = -5. The pair 7 and 2 would give a middle term of 5x or -9x, not -5x."
+    "explanation": "Factor: (x - 7)(x + 2) = 0, so x = 7 or x = -2. Check the middle term: -7 + 2 = -5 and the constant: (-7)(2) = -14. The roots 7 and 2 would come from (x - 7)(x - 2) = x^2 - 9x + 14, which is a different equation."
   },
   {
     "id": "ACC-AAF-002",

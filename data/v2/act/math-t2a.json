@@ -281,7 +281,7 @@
       ],
       "lockedOrder": true,
       "calculator": true,
-      "explanation": "The range is the greatest value minus the least value: $5 - 0 = 5$. The mode is the value that appears most often: $2$ appears three times, more than any other value. The sum is $5 + 2 = 7$. The choice $5$ is the range alone, $2$ is the mode alone (and also the median), and $4$ comes from using $1$ as the least value when finding the range."
+      "explanation": "The range is the greatest value minus the least value: $5 - 0 = 5$. The mode is the value that appears most often: $2$ appears three times, more than any other value. The sum is $5 + 2 = 7$. The choice $5$ is the range alone, $2$ is the mode alone (and also the median), and $4$ is the range found by mistakenly using $1$ as the least value, with the mode left out."
     },
     {
       "id": "ACT-MA-213",

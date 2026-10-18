@@ -314,7 +314,7 @@
     "skill": "Systems of two linear equations",
     "difficulty": 3,
     "format": "single",
-    "stem": "$ax + 4y = 9$  $6x - 8y = -18$  In the system of equations above, $a$ is a constant. If the system has infinitely many solutions, what is the value of $a$?",
+    "stem": "$ax + 4y = 9$\n\n$6x - 8y = -18$\n\nIn the system of equations above, $a$ is a constant. If the system has infinitely many solutions, what is the value of $a$?",
     "options": [
       "$-12$",
       "$-3$",

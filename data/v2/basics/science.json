@@ -111,7 +111,7 @@
     "sub": "Which idea fits all the data",
     "rule": "The better explanation is the one that fits every observation, not just most of them. One observation that an explanation can't handle is a serious problem for it.",
     "trick": "Test each explanation against each row of data. The first one to hit a row it can't explain loses.",
-    "table": { "head": ["Month", "Street flooding", "Rainfall (in)", "Storm drains cleaned?"], "rows": [["March", "Yes", "6", "No"], ["April", "No", "6", "Yes"], ["May", "Yes", "2", "No"], ["June", "No", "7", "Yes"]] },
+    "table": { "head": ["Month", "Street flooding", "Rainfall (in)", "Storm drains cleaned?"], "rows": [["March", "Yes", "6", "No"], ["April", "No", "1", "Yes"], ["May", "Yes", "2", "No"], ["June", "No", "7", "Yes"]] },
     "examples": [
       { "kind": "good", "text": "Explanation: flooding happens when drains aren't cleaned. Fits every row.", "note": "Every \"No\" clean is a flood, every \"Yes\" clean is dry." },
       { "kind": "bad", "text": "Explanation: flooding happens when it rains a lot. Fails.", "note": "May flooded with 2 inches; June stayed dry with 7." }

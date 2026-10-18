@@ -547,7 +547,7 @@
     ],
     "lockedOrder": true,
     "calculator": true,
-    "explanation": "First find the speed in kilometers per hour: $\\frac{54}{2.25} = 24$ km per hour. Convert kilometers to meters by multiplying by $1{,}000$ and hours to minutes by dividing by $60$: $\\frac{24 \\times 1000}{60} = 400$ meters per minute. The choice $24$ is the speed in km per hour without converting. The choice $1{,}440$ comes from multiplying by $60$ instead of dividing, as if minutes were larger than hours, and $240$ divides by $100$ instead of $60$, as if an hour had $100$ minutes."
+    "explanation": "First find the speed in kilometers per hour: $\\frac{54}{2.25} = 24$ km per hour. Convert kilometers to meters by multiplying by $1{,}000$ and hours to minutes by dividing by $60$: $\\frac{24 \\times 1000}{60} = 400$ meters per minute. The choice $24$ is the speed in km per hour without converting. The choice $1{,}440$ multiplies $24$ by $60$ instead of dividing and skips the conversion from kilometers to meters, and $240$ divides by $100$ instead of $60$, as if an hour had $100$ minutes."
   },
   {
     "id": "SAT-MA-061",

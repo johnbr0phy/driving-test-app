@@ -555,7 +555,7 @@
     "id": "militaryTime",
     "name": "Military time",
     "sub": "The 24-hour clock",
-    "rule": "Military time counts the hours from 0000 (midnight) to 2359. Morning hours stay the same. From 1 PM on, add 12 to the hour.",
+    "rule": "Military time counts the hours from 0000 (midnight) to 2359. Morning hours stay the same, except the hour after midnight: 12:30 AM is 0030. From 1 PM on, add 12 to the hour.",
     "trick": "PM after noon: add 12 (3:15 PM = 1515). To go back, subtract 12 from anything 1300 or later. Midnight is 0000, noon is 1200. Past 2400, start over at 0000.",
     "examples": [
       {

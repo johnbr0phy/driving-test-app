@@ -147,7 +147,7 @@
       "correct": [
         2
       ],
-      "explanation": "If the period were directly proportional to length, doubling the length would double the period, so a 2.00 m string would have a period of about 4.02 s. Table 1 shows 2.84 s instead, only about 1.4 times the period at 1.00 m, and the same ratio appears between 0.25 m (1.00 s) and 0.50 m (1.42 s). The period does increase with length, but increasing is not the same as doubling, so the first choice does not establish proportionality."
+      "explanation": "If the period were directly proportional to length, doubling the length would double the period, so a 2.00 m string would have a period of about 4.02 s. Table 1 shows 2.84 s instead, only about 1.4 times the period at 1.00 m, and the same ratio appears between 0.25 m (1.00 s) and 0.50 m (1.42 s). The period does increase with length, but increasing is not the same as doubling, so the choice answering yes because the period increased each time does not establish proportionality."
     },
     {
       "id": "ACT-SC-207",

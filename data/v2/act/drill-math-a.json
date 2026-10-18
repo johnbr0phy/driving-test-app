@@ -94,7 +94,7 @@
       ],
       "lockedOrder": true,
       "calculator": true,
-      "explanation": "Supplementary angles add to $180^\\circ$, so $2x + 10 + 50 = 180$. Subtract $60$ from both sides to get $2x = 120$, so $x = 60$. The choice $20$ comes from setting the two angles equal to each other ($2x + 10 = 50$), and $40$ comes from using $90^\\circ$ (complementary) instead of $180^\\circ$."
+      "explanation": "Supplementary angles add to $180^\\circ$, so $2x + 10 + 50 = 180$. Subtract $60$ from both sides to get $2x = 120$, so $x = 60$. The choice $20$ comes from setting the two angles equal to each other ($2x + 10 = 50$), and $40$ comes from setting the first angle alone equal to $90^\\circ$ ($2x + 10 = 90$)."
     },
     {
       "id": "ACT-MA-005",

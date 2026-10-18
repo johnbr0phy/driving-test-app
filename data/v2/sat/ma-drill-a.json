@@ -354,7 +354,7 @@
       0
     ],
     "calculator": true,
-    "explanation": "Both lists sum to $80$, so both means are $\\frac{80}{5} = 16$, and each list has $16$ as its middle value, so the medians are also equal. Standard deviation measures spread about the mean: Player B's scores reach $8$ points from the mean ($8$ and $24$) while Player A's stay within $4$, so B's standard deviation is greater. The choice claiming B's mean is greater is tempting because B has the single highest score, $24$, but the low score of $8$ balances it exactly. Equal medians say nothing about spread, so the last choice is false."
+    "explanation": "Both lists sum to $80$, so both means are $\\frac{80}{5} = 16$, and each list has $16$ as its middle value, so the medians are also equal. Standard deviation measures spread about the mean: Player B's scores reach $8$ points from the mean ($8$ and $24$) while Player A's stay within $4$, so B's standard deviation is greater. The choice claiming B's mean is greater is tempting because B has the single highest score, $24$, but the low score of $8$ balances it exactly. Equal medians say nothing about spread, so the choice claiming the standard deviations are equal because the medians are equal is false."
   },
   {
     "id": "SAT-MA-017",
@@ -448,7 +448,7 @@
       "alt": "Scatterplot of selling price in thousands of dollars (vertical axis, 0 to 30) versus age in years (horizontal axis, 0 to 10) for 11 used cars, with a line of best fit that passes through (0, 25) and (10, 5). The points are approximately (1, 23), (2, 20), (2, 22), (3, 18), (4, 17), (5, 16), (6, 12), (7, 12), (8, 8), (9, 8) and (10, 6)."
     },
     "calculator": true,
-    "explanation": "The line passes through $(0, 25)$ and $(10, 5)$, so its slope is $\\frac{5 - 25}{10 - 0} = -2$ thousand dollars per year: each additional year of age lowers the predicted price by about \\$2,000. The choice about \\$25,000 for a new car describes the $y$-intercept, where the line meets the vertical axis, not the slope. The choice of \\$25,000 per year confuses that intercept with the rate of change, and the last choice inverts the slope by treating age as the predicted variable."
+    "explanation": "The line passes through $(0, 25)$ and $(10, 5)$, so its slope is $\\frac{5 - 25}{10 - 0} = -2$ thousand dollars per year: each additional year of age lowers the predicted price by about \\$2,000. The choice about \\$25,000 for a new car describes the $y$-intercept, where the line meets the vertical axis, not the slope. The choice of \\$25,000 per year confuses that intercept with the rate of change, and the choice saying predicted age increases by about $2$ years per \\$1,000 inverts the slope by treating age as the predicted variable."
   },
   {
     "id": "SAT-MA-021",

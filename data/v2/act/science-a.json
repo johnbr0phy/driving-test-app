@@ -175,7 +175,7 @@
       "correct": [
         2
       ],
-      "explanation": "To test the effect of one variable, change only that variable and hold the others constant. The first procedure keeps the salt and the temperature fixed while changing the mass of water, so any change in the measured solubility can be attributed to the mass of water. The other procedures change the temperature, the starting temperature of the cooling procedure, or the salt, while keeping the mass of water at 100 g."
+      "explanation": "To test the effect of one variable, change only that variable and hold the others constant. Repeating the Table 1 procedure for Salt B at 20°C with 50 g and then 200 g of water keeps the salt and the temperature fixed while changing the mass of water, so any change in the measured solubility can be attributed to the mass of water. The other procedures change the temperature, the starting temperature of the cooling procedure, or the salt, while keeping the mass of water at 100 g."
     },
     {
       "id": "ACT-SC-108",
@@ -242,7 +242,7 @@
       "correct": [
         3
       ],
-      "explanation": "Trials 5 through 8 give speeds of 3.5 m/s on plastic, 3.3 m/s on wood, 2.9 m/s on the rubber mat, and 2.4 m/s on carpet. From lowest to highest speed, the order is carpet, rubber mat, wood, plastic. The second choice lists the surfaces in order of decreasing speed, the reverse of what the question asks."
+      "explanation": "Trials 5 through 8 give speeds of 3.5 m/s on plastic, 3.3 m/s on wood, 2.9 m/s on the rubber mat, and 2.4 m/s on carpet. From lowest to highest speed, the order is carpet, rubber mat, wood, plastic. The order plastic, wood, rubber mat, carpet lists the surfaces by decreasing speed, the reverse of what the question asks."
     },
     {
       "id": "ACT-SC-111",
@@ -311,7 +311,7 @@
       "correct": [
         1
       ],
-      "explanation": "To find out whether ramp length matters, the students must vary the length while holding the angle, surface, and cart mass constant, which only the first choice does. Adding steeper angles only extends the existing angle data, and changing the surface or the wheels introduces a different variable while leaving the length at 2.0 m."
+      "explanation": "To find out whether ramp length matters, the students must vary the length while holding the angle, surface, and cart mass constant, which only the trials with 1.0 m, 2.0 m, and 3.0 m ramps at the same angle do. Adding steeper angles only extends the existing angle data, and changing the surface or the wheels introduces a different variable while leaving the length at 2.0 m."
     },
     {
       "id": "ACT-SC-114",

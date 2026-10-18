@@ -4,6 +4,7 @@ import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { TEST_CATALOG } from "@/lib/testCatalog";
 import { TestCard, TestCatalogGrid } from "@/components/TestCatalogGrid";
+import { CountUp } from "@/components/CountUp";
 import { getPopularTests } from "@/lib/server/popularTests";
 import { ORGANIZATION_ID, WEBSITE_ID } from "@/lib/siteSchema";
 import { states } from "@/data/states";
@@ -139,7 +140,7 @@ export default async function Home() {
           </div>
           {totalAnswered !== null && totalAnswered > 0 && (
             <p className="mt-6 text-sm text-gray-500 dark:text-gray-400">
-              {totalAnswered.toLocaleString("en-US")} questions answered this week
+              <CountUp value={totalAnswered} className="font-semibold text-gray-900 dark:text-gray-50" /> questions answered this week
             </p>
           )}
         </div>

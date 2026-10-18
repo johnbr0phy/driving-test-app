@@ -171,7 +171,7 @@ export default async function Home() {
         <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-10">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 mb-3">
-              Taking your permit test?
+              Taking your DMV permit test?
             </h2>
             <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
               200 questions written from your state&apos;s own driver&apos;s manual, for all 50 states and DC.{" "}

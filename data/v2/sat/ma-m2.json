@@ -284,7 +284,7 @@
       "alt": "Triangle ABC with A at the top, B at the lower left, and C at the lower right. Point D is on side AB and point E is on side AC, and segment DE is drawn parallel to BC. Segment AD is labeled 6, segment DB is labeled 4, and segment DE is labeled 9. The figure is not drawn to scale."
     },
     "calculator": true,
-    "explanation": "Because $\\overline{DE} \\parallel \\overline{BC}$, triangles $ADE$ and $ABC$ share angle $A$ and have equal corresponding angles, so they are similar. Corresponding sides are proportional: $\\frac{AD}{AB} = \\frac{DE}{BC}$, and $AB = AD + DB = 10$, so $\\frac{6}{10} = \\frac{9}{BC}$ gives $BC = 15$. Choice D uses $\\frac{DB}{AD}$ as if $DB$ were a full side of the large triangle, and choice B adds $4$ to $DE$, treating the difference in lengths as constant rather than proportional.",
+    "explanation": "Because $\\overline{DE} \\parallel \\overline{BC}$, triangles $ADE$ and $ABC$ share angle $A$ and have equal corresponding angles, so they are similar. Corresponding sides are proportional: $\\frac{AD}{AB} = \\frac{DE}{BC}$, and $AB = AD + DB = 10$, so $\\frac{6}{10} = \\frac{9}{BC}$ gives $BC = 15$. Choice D pairs $DB$ with $DE$, solving $\\frac{4}{10} = \\frac{9}{BC}$, but $DE$ corresponds to $AD$, not $DB$, and choice B adds $4$ to $DE$, treating the difference in lengths as constant rather than proportional.",
     "variant": "upper"
   },
   {

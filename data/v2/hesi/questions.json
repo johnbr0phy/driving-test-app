@@ -688,7 +688,7 @@
     "correct": [
       0
     ],
-    "explanation": "4(2x - 3) = 8x - 12 and -3(x - 5) = -3x + 15, so 8x - 3x - 12 + 15 = 5x + 3. The answer 5x - 17 forgets to distribute the negative sign to the -5."
+    "explanation": "4(2x - 3) = 8x - 12 and -3(x - 5) = -3x + 15, so 8x - 3x - 12 + 15 = 5x + 3. The answer 5x - 27 forgets to distribute the negative sign to the -5, which makes -15 instead of +15."
   },
   {
     "id": "HESI-MA-034",

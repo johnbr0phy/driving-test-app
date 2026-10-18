@@ -2913,7 +2913,7 @@
     "difficulty": 3,
     "format": "single",
     "skill": "Epinephrine auto-injector",
-    "stem": "An 8-year-old girl weighing 25 kg has hives, wheezing, and lip swelling after eating peanuts. Which epinephrine auto-injector dose and site?",
+    "stem": "An 8-year-old girl weighing 20 kg has hives, wheezing, and lip swelling after eating peanuts. Which epinephrine auto-injector dose and site?",
     "options": [
       "0.3 mg in the deltoid",
       "0.15 mg in the deltoid",

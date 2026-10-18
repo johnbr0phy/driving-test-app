@@ -1106,7 +1106,7 @@
     "correct": [
       2
     ],
-    "explanation": "The area is 15 × 12 = 180 square feet, and 180 × \\$4 = \\$720. The \\$108 answer uses the perimeter (54 feet) instead of the area."
+    "explanation": "The area is 15 × 12 = 180 square feet, and 180 × \\$4 = \\$720. The \\$108 answer multiplies only one length and one width (15 + 12 = 27 feet, half the perimeter) by \\$4 instead of using the area."
   },
   {
     "id": "ASVAB-AR-035",

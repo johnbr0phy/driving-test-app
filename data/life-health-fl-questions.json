@@ -470,13 +470,13 @@
     "questionId": "LHFL-GEN-017",
     "category": "generalInsurance",
     "question": "For two years an insurer accepted late premiums without objection. When it later tries to lapse the policy over a late payment, a court prevents it. This is:",
-    "optionA": "Waiver",
+    "optionA": "Indemnity",
     "optionB": "Subrogation",
     "optionC": "Concealment",
     "optionD": "Estoppel",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Estoppel prevents a party from reasserting a right it has given up when the other party relied on that conduct. Waiver is the voluntary giving up of a known right, which is what the insurer did by accepting late premiums; estoppel is the legal bar that results.",
+    "explanation": "Estoppel prevents a party from reasserting a right after its own conduct led the other party to rely on it giving that right up. By accepting late premiums for two years, the insurer led the owner to rely on that practice, so a court bars the lapse. Indemnity is the principle of restoring an insured to the pre-loss condition and has nothing to do with this dispute.",
     "sourceQuestionId": "LH-GEN-017"
   },
   {

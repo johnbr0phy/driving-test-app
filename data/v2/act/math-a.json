@@ -496,7 +496,7 @@
       ],
       "lockedOrder": true,
       "calculator": true,
-      "explanation": "A parabola $y = x^2 + bx + c$ opens upward and has its minimum at $x = -\\frac{b}{2} = 3$. Then $f(3) = 9 - 18 + c = c - 9$, and setting $c - 9 = -4$ gives $c = 5$. Equivalently, completing the square gives $f(x) = (x - 3)^2 + (c - 9)$. The choice $-13$ comes from setting $f(3) = 9 + 18 + c$ with a sign error, and $9$ is the value that would make the minimum $0$."
+      "explanation": "A parabola $y = x^2 + bx + c$ opens upward and has its minimum at $x = -\\frac{b}{2} = 3$. Then $f(3) = 9 - 18 + c = c - 9$, and setting $c - 9 = -4$ gives $c = 5$. Equivalently, completing the square gives $f(x) = (x - 3)^2 + (c - 9)$. The choice $-13$ comes from a sign slip when solving, writing $c + 9 = -4$ instead of $c - 9 = -4$, and $9$ is the value that would make the minimum $0$."
     },
     {
       "id": "ACT-MA-122",

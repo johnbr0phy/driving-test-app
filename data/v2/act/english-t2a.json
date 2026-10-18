@@ -124,7 +124,7 @@
         "NO CHANGE",
         "hands, and partly",
         "hands partly",
-        "hands, partly, it"
+        "hands, partly,"
       ],
       "correct": [
         1
@@ -464,7 +464,7 @@
       "skill": "Writer's purpose",
       "difficulty": 3,
       "format": "single",
-      "stem": "[20] Suppose the writer's main purpose had been to explain why lighthouse keepers were eventually no longer needed. Would this essay accomplish that purpose?",
+      "stem": "Suppose the writer's main purpose had been to explain why lighthouse keepers were eventually no longer needed. Would this essay accomplish that purpose?",
       "options": [
         "Yes, because it describes the inventions that took over the keepers' tasks one by one.",
         "Yes, because it lists the duties a keeper performed in the nineteenth century.",

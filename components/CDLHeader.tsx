@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { useAuth } from "@/contexts/AuthContext";
@@ -9,7 +9,8 @@ import { useStore } from "@/store/useStore";
 import { useHydration } from "@/hooks/useHydration";
 import { useTestTheme } from "@/contexts/TestThemeContext";
 import { Truck, Bike, Flag, Plane, Radio, Thermometer, HeartPulse, Pill, Syringe, Stethoscope, Activity, SmilePlus, Siren, Utensils, House, Umbrella, Stamp, GraduationCap, Cloud, Cpu, ChefHat, Sailboat, Target, LockKeyhole, BookOpenCheck, Medal, Bandage, HardHat, Forklift, Wine, PencilLine, BadgeCheck, LifeBuoy, Building2, Microscope, Scissors, ShieldCheck } from "lucide-react";
-import { examLanguage, getExamById, getExamVariants } from "@/lib/exams";
+import { examLandingPath, examLanguage, examLanguages, getExamById, getExamVariants } from "@/lib/exams";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { createT, type Language } from "@/i18n";
 import Image from "next/image";
@@ -31,10 +32,25 @@ export function CDLHeader() {
   const displayPhotoURL = photoURL || user?.photoURL;
   // English unless this exam is offered in the person's language (CDL in
   // Spanish); a translated landing (/es/examen-practica-cdl) is in its own.
-  const { language } = useTranslation();
+  const { language, setLanguage } = useTranslation();
+  const router = useRouter();
   const exam = getExamById(theme.id);
-  const landingLang = Object.entries(exam?.translations ?? {}).find(([, tr]) => tr.landingPath === pathname)?.[0];
-  const t = createT((landingLang as Language | undefined) ?? (exam ? examLanguage(exam, language) : "en"));
+  const landingLang = Object.entries(exam?.translations ?? {}).find(([, tr]) => tr.landingPath === pathname)?.[0] as
+    | Language
+    | undefined;
+  const t = createT(landingLang ?? (exam ? examLanguage(exam, language) : "en"));
+  // A translated exam's landings carry the DMV homepage's language switcher:
+  // each language is its own URL, so picking one goes there (and sets the app
+  // language for the dashboard behind it).
+  const onLanding = !!exam && (pathname === examLandingPath(exam) || !!landingLang);
+  const landingLangs = exam ? examLanguages(exam) : [];
+  const pageLang: Language = landingLang ?? "en";
+  const goToLanding = (lang: Language) => {
+    if (!exam) return;
+    setLanguage(lang);
+    const href = lang === "en" ? examLandingPath(exam) : exam.translations?.[lang as Exclude<Language, "en">]?.landingPath;
+    if (href && href !== pathname) router.push(href);
+  };
 
   // State variants (/real-estate/ca) run their tests under the family's header.
   const bases = [theme.routeBase, ...getExamVariants(theme.id).map((v) => v.slug)];
@@ -102,6 +118,9 @@ export function CDLHeader() {
         <div className="flex items-center gap-2 sm:gap-4">
           <TestSwitcher />
           <ThemeToggle />
+          {onLanding && landingLangs.length > 1 && (
+            <LanguageSwitcher languages={landingLangs} current={pageLang} onSelect={goToLanding} />
+          )}
           {user ? (
             <>
               <Link href="/settings" aria-label="Profile and settings">

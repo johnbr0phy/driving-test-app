@@ -1,6 +1,5 @@
 import { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
 import { getTigerAsset } from "@/lib/tigerAssets";
 import { Smartphone, Monitor } from "lucide-react";
 import { ExamLandingHero, ExamLandingCTA } from "@/components/exam/ExamLandingHero";
@@ -124,14 +123,6 @@ export default function CDLLandingPage() {
       <div className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28 text-center">
-          <Link
-            href="/es/examen-practica-cdl"
-            hrefLang="es"
-            lang="es"
-            className="inline-block mb-4 text-sm text-brand-dark hover:underline"
-          >
-            🇪🇸 Examen de práctica CDL en español
-          </Link>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-gray-50 mb-6 tracking-tight">
             Free CDL Practice Test 2026 - General Knowledge
           </h1>

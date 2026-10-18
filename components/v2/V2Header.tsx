@@ -15,6 +15,7 @@ import { useAuth } from "@/contexts/AuthContext";
 import { useStore } from "@/store/useStore";
 import { TestSwitcher } from "@/components/TestSwitcher";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { AdminLink } from "@/components/AdminLink";
 import { ExamV2Config } from "@/lib/v2/types";
 import { getTigerAsset, hasTigerSet } from "@/lib/tigerAssets";
 
@@ -46,12 +47,15 @@ export function V2Header({ exam }: { exam: ExamV2Config }) {
           <TestSwitcher />
           <ThemeToggle />
           {user ? (
-            <Link href="/settings" aria-label="Profile and settings">
-              <Avatar className="h-9 w-9 cursor-pointer hover:opacity-80 transition-opacity">
-                <AvatarImage src={displayPhotoURL || undefined} alt="Profile" />
-                <AvatarFallback className="text-lg">😊</AvatarFallback>
-              </Avatar>
-            </Link>
+            <>
+              <AdminLink />
+              <Link href="/settings" aria-label="Profile and settings">
+                <Avatar className="h-9 w-9 cursor-pointer hover:opacity-80 transition-opacity">
+                  <AvatarImage src={displayPhotoURL || undefined} alt="Profile" />
+                  <AvatarFallback className="text-lg">😊</AvatarFallback>
+                </Avatar>
+              </Link>
+            </>
           ) : (
             <Button asChild variant="outline" className="text-gray-700 dark:text-gray-200 border-gray-300 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800">
               <Link href={`/login?redirect=${exam.slug}`}>Sign In</Link>

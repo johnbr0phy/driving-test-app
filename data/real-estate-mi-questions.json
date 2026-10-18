@@ -889,14 +889,14 @@
     "state": "MI",
     "questionId": "REMI-MIACT-002",
     "category": "rePractice",
-    "question": "A salesperson is selling a rental house she owns, and a buyer is interested. She must disclose her ownership and her license to the buyer in writing:",
+    "question": "A salesperson is selling a rental house she owns through her employing broker. She must disclose her ownership and her license to the buyer in writing:",
     "optionA": "At or before the closing",
     "optionB": "Before an offer is signed",
     "optionC": "Only if the buyer asks about it",
     "optionD": "Within 5 days after acceptance",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "MCL 339.2502b(3) requires a licensee selling property the licensee owns or has an interest in to reveal that interest and the licensure to the purchaser, in writing, before an offer to purchase is signed. Disclosure at closing comes too late.",
+    "explanation": "MCL 339.2502b(3) requires a licensee selling property the licensee owns or has an interest in to reveal that interest and the licensure to the purchaser, in writing, before an offer to purchase is signed. Disclosure at closing comes too late, and since the house is not her principal residence, MCL 339.2502b(1)(d) has her sell it through a broker.",
     "sourceQuestionId": "REMI-MIACT-002"
   },
   {
@@ -1009,7 +1009,7 @@
     "state": "MI",
     "questionId": "REMI-MIBRD-003",
     "category": "rePractice",
-    "question": "A buyer believes a licensee violated Article 25 of the Occupational Code during a sale that closed last spring. A complaint seeking a penalty must be filed within:",
+    "question": "A buyer believes a licensee broke a prohibited-conduct rule in MCL 339.2512 during a sale that closed last spring. A complaint seeking a penalty must be filed within:",
     "optionA": "6 months after the closing",
     "optionB": "1 year after the violation",
     "optionC": "18 months after the closing",
@@ -1721,7 +1721,7 @@
     "optionD": "$1,125",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "MCL 207.525 sets the state tax at $3.75 for each $500, so $300,000 / $500 = 600 units x $3.75 = $2,250. The $330 is the county tax at 55 cents per $500 under MCL 207.504, and $2,580 is both taxes together.",
+    "explanation": "MCL 207.525 sets the state tax at $3.75 for each $500, so $300,000 / $500 = 600 units x $3.75 = $2,250. The $330 is the county tax at 55 cents per $500 under MCL 207.504 (Wayne County may charge up to 75 cents), and $2,580 is both taxes together.",
     "sourceQuestionId": "REMI-MISPC-007"
   }
 ]

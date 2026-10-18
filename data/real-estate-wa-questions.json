@@ -484,14 +484,14 @@
     "state": "WA",
     "questionId": "REWA-CON-002",
     "category": "reContractsAgency",
-    "question": "An owner tells a broker, \"If you bring me a buyer at $400,000, I will pay you a fee.\" The broker promises nothing. This agreement is:",
+    "question": "In a signed note, an owner tells a broker, \"If you bring me a buyer at $400,000, I will pay your firm a fee.\" The broker promises nothing. This agreement is:",
     "optionA": "A bilateral contract",
     "optionB": "An implied contract",
     "optionC": "A void agreement for lack of consideration",
     "optionD": "A unilateral contract",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Only the owner makes a promise, and the broker earns the fee only by performing, so the contract is unilateral. A bilateral contract needs a promise from each side. In Washington the firm could not collect this fee anyway: RCW 19.36.010 requires an agreement employing a broker for compensation to be in writing, and RCW 18.86.080(7) requires a written services agreement.",
+    "explanation": "Only the owner makes a promise, and the broker earns the fee only by performing, so the contract is unilateral. A bilateral contract needs a promise from each side. The note matters in Washington: RCW 19.36.010(5) makes an agreement employing a broker for a commission void unless it is in writing and signed, and RCW 18.86.080(7) requires a services agreement stating the compensation.",
     "sourceQuestionId": "RE-CON-002"
   },
   {
@@ -1091,7 +1091,7 @@
     "optionD": "Source of income",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Familial status protects households with children under 18 and pregnant women. Marital status is not a protected class under the federal Fair Housing Act, though some state and local laws add it.",
+    "explanation": "Familial status protects households with children under 18 and pregnant women; Washington law protects families with children as well (RCW 49.60.222). Marital status is not a protected class under the federal Fair Housing Act, though Washington adds it.",
     "sourceQuestionId": "RE-PRAC-014"
   },
   {
@@ -1399,14 +1399,14 @@
     "state": "WA",
     "questionId": "REWA-WAACT-013",
     "category": "rePractice",
-    "question": "Under the 2026 public marketing law, a broker may market a residential listing to a private group of buyers only if:",
-    "optionA": "It is also marketed to the public at once",
+    "question": "Under RCW 18.86.130, unless it is needed to protect the owner's or occupant's health or safety, a broker may market a residential listing to a private group of buyers only if:",
+    "optionA": "The public and all brokers get it at once",
     "optionB": "The seller consents to it in writing",
     "optionC": "The group has fewer than ten buyers",
     "optionD": "The private period lasts under 30 days",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "RCW 18.86.130 (Laws of 2026, ch. 57, effective June 11, 2026) bars marketing residential property to a limited or exclusive group unless it is concurrently marketed to the general public and all other brokers, except as needed for the owner's or occupant's health or safety. Seller consent is not an exception.",
+    "explanation": "RCW 18.86.130 (Laws of 2026, ch. 57, effective June 11, 2026) bars marketing residential property to a limited or exclusive group unless it is concurrently marketed to the general public and all other brokers, except as reasonably necessary for the owner's or occupant's health or safety. Seller consent alone is not an exception, and public marketing does not require the owner to allow showings.",
     "sourceQuestionId": "REWA-WAACT-013"
   },
   {
@@ -1567,11 +1567,11 @@
     "question": "Which person needs a Washington real estate license for the activity described?",
     "optionA": "An attorney-in-fact acting without pay",
     "optionB": "An owner selling her own house",
-    "optionC": "A person paid to negotiate rentals",
+    "optionC": "A person paid to negotiate others' leases",
     "optionD": "A trustee selling under a deed of trust",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Negotiating a lease or rental for another for compensation is a real estate brokerage service under RCW 18.85.011. RCW 18.85.151 exempts owners acting for their own account, unpaid attorneys-in-fact and trustees selling under a deed of trust.",
+    "explanation": "Negotiating a lease or rental for another for compensation is a real estate brokerage service under RCW 18.85.011(17). RCW 18.85.151 exempts owners acting for their own account, unpaid attorneys-in-fact and trustees selling under a deed of trust.",
     "sourceQuestionId": "REWA-WALIC-007"
   },
   {

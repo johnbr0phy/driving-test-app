@@ -104,7 +104,8 @@
  ],
  "overrides": {
   "RE-CON-002": {
-   "explanation": "Only the owner makes a promise, and the broker earns the fee only by performing, so the contract is unilateral. A bilateral contract needs a promise from each side. In Washington the firm could not collect this fee anyway: RCW 19.36.010 requires an agreement employing a broker for compensation to be in writing, and RCW 18.86.080(7) requires a written services agreement."
+   "explanation": "Only the owner makes a promise, and the broker earns the fee only by performing, so the contract is unilateral. A bilateral contract needs a promise from each side. The note matters in Washington: RCW 19.36.010(5) makes an agreement employing a broker for a commission void unless it is in writing and signed, and RCW 18.86.080(7) requires a services agreement stating the compensation.",
+   "question": "In a signed note, an owner tells a broker, \"If you bring me a buyer at $400,000, I will pay your firm a fee.\" The broker promises nothing. This agreement is:"
   },
   "RE-CON-026": {
    "question": "A listing broker's own buyer client wants to make an offer on that broker's listing. Before acting as a limited dual agent, the broker must have:",
@@ -162,6 +163,9 @@
   },
   "RE-FIN-001": {
    "explanation": "The trustee holds title for the lender (beneficiary) and has the power of sale; the borrower is the grantor or trustor. The deed of trust is the usual security instrument in Washington, where the Deed of Trust Act (chapter 61.24 RCW) allows a nonjudicial trustee's sale."
+  },
+  "RE-PRAC-014": {
+   "explanation": "Familial status protects households with children under 18 and pregnant women; Washington law protects families with children as well (RCW 49.60.222). Marital status is not a protected class under the federal Fair Housing Act, though Washington adds it."
   }
  },
  "excluded": {

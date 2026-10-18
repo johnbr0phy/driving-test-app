@@ -78,5 +78,5 @@ bank.sort(key=lambda q: (CATEGORIES.index(q["category"]), q["questionId"]))
 (root / f"data/{fam['bank']}-{code.lower()}-questions.json").write_text(
     json.dumps(bank, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 counts = {c: sum(q["category"] == c for q in bank) for c in CATEGORIES}
-state_n = sum(q["questionId"].startswith(prefix + code) for q in bank)
+state_n = sum(q["questionId"] == q["sourceQuestionId"] for q in bank)
 print(code, len(bank), f"({len(bank) - state_n} national, {state_n} state)", counts)

@@ -1,0 +1,154 @@
+{
+ "total": 120,
+ "include": [
+  "RE-PROP-001",
+  "RE-PROP-002",
+  "RE-PROP-014",
+  "RE-PROP-015",
+  "RE-PROP-021",
+  "RE-PROP-022",
+  "RE-PROP-023",
+  "RE-PROP-025",
+  "RE-OWN-001",
+  "RE-OWN-002",
+  "RE-OWN-005",
+  "RE-OWN-008",
+  "RE-OWN-011",
+  "RE-OWN-013",
+  "RE-OWN-017",
+  "RE-OWN-018",
+  "RE-OWN-020",
+  "RE-OWN-023",
+  "RE-OWN-024",
+  "RE-VAL-001",
+  "RE-VAL-003",
+  "RE-VAL-016",
+  "RE-VAL-022",
+  "RE-VAL-026",
+  "RE-VAL-027",
+  "RE-FIN-001",
+  "RE-FIN-005",
+  "RE-FIN-006",
+  "RE-FIN-008",
+  "RE-FIN-009",
+  "RE-FIN-010",
+  "RE-FIN-012",
+  "RE-FIN-013",
+  "RE-CON-003",
+  "RE-CON-004",
+  "RE-CON-005",
+  "RE-CON-006",
+  "RE-CON-007",
+  "RE-CON-009",
+  "RE-CON-010",
+  "RE-CON-011",
+  "RE-CON-014",
+  "RE-CON-015",
+  "RE-CON-016",
+  "RE-CON-018",
+  "RE-CON-020",
+  "RE-CON-021",
+  "RE-CON-024",
+  "RE-CON-026",
+  "RE-CON-027",
+  "RE-CON-028",
+  "RE-CON-031",
+  "RE-CON-033",
+  "RE-CON-035",
+  "RE-CON-036",
+  "RE-CON-037",
+  "RE-CON-039",
+  "RE-CON-040",
+  "RE-DISC-001",
+  "RE-DISC-004",
+  "RE-DISC-007",
+  "RE-DISC-009",
+  "RE-DISC-017",
+  "RE-DISC-018",
+  "RE-PRAC-001",
+  "RE-PRAC-002",
+  "RE-PRAC-003",
+  "RE-PRAC-005",
+  "RE-PRAC-006",
+  "RE-PRAC-014",
+  "RE-PRAC-015",
+  "RE-PRAC-019",
+  "RE-PRAC-022",
+  "RE-PRAC-023",
+  "RE-MATH-004",
+  "RE-MATH-010",
+  "RE-MATH-011",
+  "RE-MATH-013",
+  "RE-MATH-015",
+  "RE-MATH-017"
+ ],
+ "overrides": {
+  "RE-CON-026": {
+   "explanation": "Tenn. Code Ann. 62-13-312(b)(7) bars acting for more than one party without the knowledge and written consent of all parties for whom the licensee acts. A Tennessee agency agreement may instead provide that the licensee becomes a facilitator (62-13-102(9)(B))."
+  },
+  "RE-CON-027": {
+   "question": "The principal broker appoints one affiliate broker to represent the seller and another affiliate broker from the same firm to represent the buyer in one sale. This arrangement is:",
+   "explanation": "Under Tenn. Code Ann. 62-13-406 the managing broker may appoint designated agents for each client, and is not a dual agent if neither designated agent represents the other party. Subagency involves a cooperating licensee working for the seller through the listing broker."
+  },
+  "RE-CON-028": {
+   "question": "In Tennessee, a licensee who helps both buyer and seller complete a sale without representing either as an advocate is a:",
+   "explanation": "Tennessee calls this licensee a facilitator, and Tenn. Code Ann. 62-13-102(9) allows \"transaction broker\" to be used in its place; a facilitator may advise either party but advocates for neither. A dual agent represents both parties under written agency agreements."
+  },
+  "RE-CON-037": {
+   "explanation": "Tenn. Code Ann. 62-13-403(2) requires a licensee to disclose to each party any adverse facts the licensee actually knows, and the duty to obey covers only lawful instructions. Waiting for a buyer to ask is not enough."
+  },
+  "RE-CON-039": {
+   "explanation": "Under Tenn. Code Ann. 62-13-403 a licensee owes every party, client or not, honesty and good faith and disclosure of known adverse facts. Loyalty and the client duties in 62-13-404 belong only to the client."
+  },
+  "RE-CON-040": {
+   "explanation": "Tenn. Code Ann. 62-13-405(a) requires a licensee assisting an unrepresented buyer to disclose her agent or facilitator status verbally before providing services, confirmed in writing before an offer is prepared. Collecting his maximum price first would let him reveal information she must share with the seller."
+  },
+  "RE-DISC-018": {
+   "explanation": "A stigmatized property carries a psychological impact from an event such as a crime or death, not a physical flaw. Tenn. Code Ann. 66-5-207 bars any claim against an owner or licensee for not disclosing that a property was the site of a homicide, felony or suicide; a latent defect is a hidden physical problem."
+  },
+  "RE-OWN-023": {
+   "explanation": "Tenn. Code Ann. 66-26-103 makes an unregistered deed void as to later bona fide purchasers without notice, so Buyer 2, who paid value, had no notice and recorded, prevails. Buyer 1's deed still binds the seller, who signed it."
+  },
+  "RE-FIN-013": {
+   "question": "A title company offers an affiliate broker $200 for every buyer the affiliate refers to it. Under RESPA, accepting this payment is:",
+   "optionA": "Legal if paid through the principal broker",
+   "explanation": "RESPA Section 8 bans payments for referring settlement service business, and disclosure does not make a referral fee legal. Separately, Tenn. Code Ann. 62-13-312(b)(11) bars an affiliate broker from taking compensation from anyone but the principal broker."
+  },
+  "RE-PRAC-001": {
+   "question": "A seller asks the listing affiliate broker to write a custom clause reserving a life estate in the sales contract. The affiliate broker should:",
+   "explanation": "Drafting custom legal language is the unauthorized practice of law, a ground for discipline under Tenn. Code Ann. 62-13-312(b)(19), so licensees fill in standard forms and refer legal questions to an attorney. Having the broker draft it is still practicing law."
+  },
+  "RE-PRAC-002": {
+   "question": "An affiliate broker receives a buyer's earnest money check with an offer on Friday afternoon. What should the affiliate broker do with it?",
+   "optionC": "Keep it in the affiliate's desk until closing",
+   "optionD": "Promptly turn it over to the principal broker",
+   "explanation": "TREC Rule 1260-02-.09(3) requires an affiliate to pay all trust money over to the principal broker immediately upon receipt, and Rule 1260-02-.09(11) has it deposited promptly upon acceptance. Holding it or handing it to the seller breaches the duty to account."
+  },
+  "RE-PRAC-005": {
+   "question": "An affiliate broker works as an independent contractor for a firm. Who is responsible for supervising the affiliate broker's real estate activities?",
+   "optionC": "The principal broker",
+   "optionD": "The affiliate alone, as a contractor",
+   "explanation": "Tenn. Code Ann. 62-13-312(b)(15) and TREC Rule 1260-02-.01 make the principal broker responsible for supervising affiliated licensees. Independent contractor status is a tax classification and does not remove that duty."
+  },
+  "RE-PRAC-022": {
+   "explanation": "Errors and omissions insurance covers claims arising from negligent mistakes in professional services, and Tenn. Code Ann. 62-13-112 requires every active licensee to carry it. General liability covers bodily injury and property damage, such as a fall at an open house."
+  },
+  "RE-FIN-001": {
+   "explanation": "The trustee holds title on behalf of the lender (beneficiary) and has the power of sale; the borrower is the trustor. The deed of trust is the usual security instrument in Tennessee, and the promissory note is the borrower's promise to pay."
+  }
+ },
+ "excluded": {
+  "RE-CON-002": "Owner's bare promise of a fee keyed as a unilateral contract: under Tenn. Code Ann. 62-13-401 no agency arises without a written bilateral agreement, so the item could mislead a Tennessee candidate.",
+  "RE-CON-022": "Keys holding disputed earnest money until the parties agree or a court decides; TREC Rule 1260-02-.09(9) requires disbursement, interpleader or referral to an attorney within 21 days of a written request (tested by RETN-TNTRU-001).",
+  "RE-CON-029": "MLS subagency of a cooperating agent: Tenn. Code Ann. 62-13-401 bars any agency or subagency without a written bilateral agreement, and an unagreed licensee is a facilitator.",
+  "RE-CON-032": "Agency by ratification: Tenn. Code Ann. 62-13-401 says agency shall not be assumed, implied or created without a written bilateral agreement.",
+  "RE-PRAC-009": "Net listing keyed as the broker keeping the excess: TREC Rule 1260-02-.07 prohibits net price listings (tested by RETN-TNIMP-001).",
+  "RE-OWN-004": "Community property: Tennessee is not a community property state.",
+  "RE-OWN-021": "Hypothetical 12-year adverse possession period does not match Tennessee's periods and could mislead.",
+  "RE-PROP-017": "Rectangular survey fractions: Tennessee was never surveyed under the PLSS and uses metes and bounds and recorded plats (same for RE-PROP-018, RE-PROP-019, RE-PROP-020, RE-MATH-003).",
+  "RE-MATH-006": "Tax in mills on a 40% assessment; Tennessee states rates per $100 of assessed value with set assessment ratios, so the item's steps mislead (same for RE-PROP-024).",
+  "RE-MATH-016": "Hypothetical $1.10 per $500 transfer tax differs from Tennessee's statewide transfer tax rate and could mislead.",
+  "RE-DISC-015": "Keys that seller disclosure requirements vary by state; Tennessee has its own Residential Property Disclosure Act (title 66, chapter 5, part 2).",
+  "RE-DISC-016": "Duplicate of RE-CON-037 (flooding basement), which is used instead."
+ }
+}

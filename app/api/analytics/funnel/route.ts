@@ -8,7 +8,7 @@ import { isInternalEmail } from '@/lib/internal';
 // before signing up.
 const STEPS = new Set(['visit', 'answered', 'signup_view', 'signup']);
 // Mirrors VISIT_SOURCES in lib/funnel.ts (that module imports the client SDK).
-const VISIT_SOURCES = new Set(['chatgpt', 'perplexity', 'gemini', 'copilot', 'claude', 'search', 'direct', 'other']);
+const VISIT_SOURCES = new Set(['chatgpt', 'perplexity', 'gemini', 'copilot', 'claude', 'ai_other', 'search', 'direct', 'other']);
 
 export async function POST(request: NextRequest) {
   try {
@@ -41,6 +41,8 @@ export async function POST(request: NextRequest) {
     if (step === 'signup') steps[triedFirst ? 'signup_tried' : 'signup_cold'] = bump;
     if (step === 'visit' && typeof body.source === 'string' && VISIT_SOURCES.has(body.source)) {
       steps[`visit_${body.source}`] = bump;
+      // Sub-count of direct: no referrer, landed on a deep page (likely AI apps).
+      if (body.source === 'direct' && body.deep === true) steps.visit_direct_deep = bump;
     }
 
     // Nested-object merge, same pattern as analytics/paywalls.

@@ -380,17 +380,19 @@ const SOURCE_LABELS: [string, string][] = [
   ["gemini", "Gemini"],
   ["copilot", "Copilot"],
   ["claude", "Claude"],
+  ["ai_other", "Other AI"],
   ["search", "Search engines"],
   ["direct", "Direct"],
   ["other", "Other sites"],
 ];
-const AI_SOURCE_KEYS = ["chatgpt", "perplexity", "gemini", "copilot", "claude"];
+const AI_SOURCE_KEYS = ["chatgpt", "perplexity", "gemini", "copilot", "claude", "ai_other"];
 
 function VisitSources({ sum }: { sum: (step: string) => number }) {
   const counts = SOURCE_LABELS.map(([key, label]) => ({ key, label, n: sum(`visit_${key}`) }));
   const total = counts.reduce((n, c) => n + c.n, 0);
   if (total === 0) return null;
   const ai = counts.filter((c) => AI_SOURCE_KEYS.includes(c.key)).reduce((n, c) => n + c.n, 0);
+  const deepDirect = sum("visit_direct_deep");
   const pct = (n: number) => `${((n / total) * 100).toFixed(1)}%`;
   return (
     <div className="mt-5 rounded-lg bg-gray-50 dark:bg-gray-950 p-3">
@@ -410,6 +412,12 @@ function VisitSources({ sum }: { sum: (step: string) => number }) {
           </div>
         ))}
       </div>
+      {deepDirect > 0 && (
+        <p className="mt-2 text-xs text-gray-500 dark:text-gray-400">
+          Of Direct, {fmtInt(deepDirect)} ({pct(deepDirect)}) landed on a page other than the home page with no referrer:
+          mostly links from AI apps that hide where they came from (Claude, Gemini), chats and bookmarks. Counted since Oct 18, 2026.
+        </p>
+      )}
     </div>
   );
 }

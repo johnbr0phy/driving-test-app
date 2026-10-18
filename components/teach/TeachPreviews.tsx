@@ -7,7 +7,7 @@ import { scoreBar, scoreChip, scoreLevel, scoreTrack } from "./scoreColors";
 
 export function PhonePreview() {
   return (
-    <div className="w-[260px] h-[520px] rounded-[2.75rem] border-[10px] border-gray-900 dark:border-gray-700 bg-gray-50 dark:bg-gray-950 shadow-2xl overflow-hidden flex flex-col text-left" aria-hidden="true">
+    <div className="w-[260px] h-[520px] rounded-[2.25rem] border-[5px] border-gray-900 dark:border-gray-700 bg-gray-50 dark:bg-gray-950 shadow-2xl overflow-hidden flex flex-col text-left" aria-hidden="true">
       <div className="relative h-8 shrink-0 flex items-center justify-between px-6 text-[11px] font-semibold text-gray-900 dark:text-gray-50">
         <span>9:41</span>
         <span className="absolute left-1/2 top-1.5 -translate-x-1/2 h-5 w-20 rounded-full bg-gray-900 dark:bg-gray-700" />

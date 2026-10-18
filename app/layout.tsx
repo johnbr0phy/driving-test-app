@@ -70,10 +70,10 @@ export const metadata: Metadata = {
       "Free DMV practice tests for all 50 states. 200+ questions per state with instant feedback and detailed explanations.",
     images: [
       {
-        url: "/tiger.png",
-        width: 1024,
-        height: 1024,
-        alt: "TigerTest - US Driving Test Practice",
+        url: "/og-home.png",
+        width: 1200,
+        height: 630,
+        alt: "TigerTest: free practice tests for DMV, CDL, nursing and more",
       },
     ],
   },
@@ -82,7 +82,7 @@ export const metadata: Metadata = {
     title: "Free DMV Practice Test 2026 | TigerTest",
     description:
       "Free DMV practice tests for all 50 states. 200+ questions with instant feedback.",
-    images: ["/tiger.png"],
+    images: ["/og-home.png"],
   },
   icons: {
     icon: "/tiger.png",

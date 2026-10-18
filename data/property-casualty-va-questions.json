@@ -1226,7 +1226,7 @@
     "optionD": "The insured's own limits are below the state minimum",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "UIM fills the gap when the at-fault driver's liability limits are lower than the insured's UIM limits and are not enough to pay the damages. A driver with no insurance triggers UM rather than UIM.",
+    "explanation": "UIM responds when the at-fault driver's liability coverage is less than the damages, up to the insured's UIM limits. In Virginia it is paid on top of that liability coverage unless a named insured elects to reduce it (Va. Code § 38.2-2206(A)). A driver with no insurance triggers UM rather than UIM.",
     "sourceQuestionId": "PC-AUTO-017"
   },
   {
@@ -1436,7 +1436,7 @@
     "optionD": "Notify the insurer's agent",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Va. Code § 46.2-707 requires the owner of an uninsured registered vehicle to surrender its plates immediately unless the registration has been deactivated, and operating it is a Class 3 misdemeanor. The current Code gives no fee alternative to insurance.",
+    "explanation": "Va. Code § 46.2-707 requires the owner of an uninsured registered vehicle to surrender its plates immediately unless the registration has been deactivated, and operating it is a Class 3 misdemeanor. Virginia repealed the uninsured motor vehicle fee option effective July 1, 2024, so paying a fee is no longer an alternative to insurance.",
     "sourceQuestionId": "PCVA-VAAUT-007"
   },
   {

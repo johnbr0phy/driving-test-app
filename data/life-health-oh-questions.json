@@ -86,7 +86,7 @@
     "optionD": "It moves to inactive status automatically",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "ORC 3905.06(E) suspends an unrenewed license on the first day of the second month after the renewal date, and the agent may apply for reinstatement within the following twelve months. Only if it is not reinstated does division (F) cancel it.",
+    "explanation": "ORC 3905.06(E) suspends an unrenewed license on the first day of the second month after the renewal date, and the agent may apply for reinstatement within twelve months after the missed renewal date. Only if it is not reinstated does division (F) cancel it.",
     "sourceQuestionId": "LHOH-OHLIC-004"
   },
   {
@@ -2231,7 +2231,7 @@
     "optionD": "60 days before the lapse",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "OAC 3901-4-01, the unintentional lapse provision, requires lapse notice to the insured and any designated third party at least 30 days before the lapse, and the notice may not be sent until a premium has been due and unpaid for 30 days.",
+    "explanation": "OAC 3901-4-01(G)(1)(c), the unintentional lapse provision, requires notice by first-class mail to the insured and any designated third party at least 30 days before the lapse, and the notice may not be sent until a premium has been due and unpaid for 30 days.",
     "sourceQuestionId": "LHOH-OHSR-005"
   },
   {

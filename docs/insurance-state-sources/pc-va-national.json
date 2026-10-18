@@ -108,6 +108,9 @@
   },
   "PC-POL-024": {
    "explanation": "When the insurer cancels, the insured receives the full unearned portion in proportion to time remaining. Short rate, which keeps a penalty, applies when the insured cancels, as in the Virginia standard fire policy (Va. Code § 38.2-2105)."
+  },
+  "PC-AUTO-017": {
+   "explanation": "UIM responds when the at-fault driver's liability coverage is less than the damages, up to the insured's UIM limits. In Virginia it is paid on top of that liability coverage unless a named insured elects to reduce it (Va. Code § 38.2-2206(A)). A driver with no insurance triggers UM rather than UIM."
   }
  },
  "excluded": {

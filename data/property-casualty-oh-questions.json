@@ -1226,7 +1226,7 @@
     "optionD": "The mortgage lender's release",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "ORC 3929.86 bars paying such a fire claim until the named insured furnishes the county treasurer's certificate of delinquent taxes and demolition costs. If the agreed loss is 60 percent or more of the fire limits, part of the proceeds is also held for the municipality or township to secure or remove the building.",
+    "explanation": "ORC 3929.86 bars paying such a fire claim until the named insured furnishes the county treasurer's certificate of delinquent taxes and demolition costs. Where the township or city has adopted the demolition fund procedure and the agreed loss is 60 percent or more of all fire limits, part of the proceeds is also held to secure or remove the building.",
     "sourceQuestionId": "PCOH-OHHOM-004"
   },
   {
@@ -2006,7 +2006,7 @@
     "optionD": "Medical expenses only, up to the policy limit",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Part One pays the benefits required by the workers compensation law of the states listed, with no dollar limit, because it is statutory coverage. Lawsuits by employees are the province of Part Two.",
+    "explanation": "Part One pays the benefits required by the workers compensation law of the states listed, with no dollar limit, because it is statutory coverage. Lawsuits by employees are the province of Part Two. Ohio is a monopolistic state, so Ohio benefits come from the state insurance fund or self-insurance (ORC 4123.35), not a private Part One.",
     "sourceQuestionId": "PC-LIA-015"
   },
   {
@@ -2021,7 +2021,7 @@
     "optionD": "Employee suits outside the compensation law",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Part Two responds to lawsuits by employees for work-related injuries not covered by the compensation law, such as third-party-over actions, when an employee or a third party can sue the employer despite the exclusive remedy rule. Discrimination claims need employment practices liability.",
+    "explanation": "Part Two responds to lawsuits by employees for work-related injuries not covered by the compensation law, such as third-party-over actions, when an employee or a third party can sue the employer despite the exclusive remedy rule. In Ohio, private insurers sell this as stop gap coverage alongside the state fund. Discrimination claims need employment practices liability.",
     "sourceQuestionId": "PC-LIA-016"
   },
   {

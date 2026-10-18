@@ -59,7 +59,7 @@ Code of Virginia from https://law.lis.virginia.gov/vacode/title<t>/chapter<ch>/s
 | PCVA-VAAUT-004 | § 38.2-2212(E), (H) |
 | PCVA-VAAUT-005 | § 38.2-2230 |
 | PCVA-VAAUT-006 | § 38.2-510(C) |
-| PCVA-VAAUT-007 | § 46.2-707 |
+| PCVA-VAAUT-007 | § 46.2-707 (current text, history through 2025 cc. 163, 177; the uninsured motor vehicle fee option was repealed effective July 1, 2024) |
 | PCVA-VAWC-001 | § 65.2-101 ("Employee", exclusion of employers with fewer than three); § 65.2-300(A) |
 | PCVA-VAWC-002 | § 65.2-820; § 38.2-2000.1 |
 | PCVA-VAWC-003 | § 65.2-300(B) |
@@ -69,6 +69,7 @@ Code of Virginia from https://law.lis.virginia.gov/vacode/title<t>/chapter<ch>/s
 
 ## National overrides (text only)
 - PC-POL-012: explanation had a garbled phrase ("Did over should"); now reads "Carried divided by required". Key unchanged.
+- PC-AUTO-017: explanation adds that Virginia UIM is paid on top of the at-fault driver's liability coverage unless a named insured elects to reduce it (§ 38.2-2206(A)). Key unchanged.
 - PC-POL-024: explanation adds that the short-rate rule on insured cancellation is the Virginia standard fire policy rule (§ 38.2-2105, which also gives pro rata on insurer cancellation).
 
 ## National exclusions

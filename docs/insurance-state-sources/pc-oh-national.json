@@ -117,5 +117,12 @@
   "PC-OTH-015",
   "PC-OTH-016"
  ],
- "overrides": {}
+ "overrides": {
+  "PC-LIA-015": {
+   "explanation": "Part One pays the benefits required by the workers compensation law of the states listed, with no dollar limit, because it is statutory coverage. Lawsuits by employees are the province of Part Two. Ohio is a monopolistic state, so Ohio benefits come from the state insurance fund or self-insurance (ORC 4123.35), not a private Part One."
+  },
+  "PC-LIA-016": {
+   "explanation": "Part Two responds to lawsuits by employees for work-related injuries not covered by the compensation law, such as third-party-over actions, when an employee or a third party can sue the employer despite the exclusive remedy rule. In Ohio, private insurers sell this as stop gap coverage alongside the state fund. Discrimination claims need employment practices liability."
+  }
+ }
 }

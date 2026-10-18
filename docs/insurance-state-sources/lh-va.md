@@ -76,7 +76,7 @@ Code of Virginia from the General Assembly's Legislative Information System, pat
 | LHVA-VASEN-007 | § 38.2-5207(1), (3) |
 
 ## National overrides (text only)
-- LH-HPRV-008: explanation said "one of 12 mandatory provisions"; Virginia requires 13 (cancellation by insured added, § 38.2-3503 provision 13), so it now cites the Virginia list.
+- LH-HPRV-008: the stem named the NAIC model law and the explanation said "one of 12 mandatory provisions"; Virginia requires 13 (cancellation by insured added, § 38.2-3503 provision 13), so the stem now asks about Virginia's required provisions and the explanation cites the Virginia list. Key unchanged.
 
 ## National exclusions
 - LH-PROV-011 (generic free look), LH-PROV-004 (grace computation), LH-PROV-005 (reinstatement): the Virginia rules (10 days, 31 days, three years) are tested directly by state items.

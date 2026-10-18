@@ -104,6 +104,7 @@
  ],
  "overrides": {
   "LH-HPRV-008": {
+   "question": "Which of the following is a required provision for individual accident and sickness policies in Virginia?",
    "explanation": "The insurer may examine a claimant at its own expense while a claim is pending and request an autopsy where law allows; it is one of Virginia's required uniform provisions, along with change of beneficiary, payment of claims and cancellation by insured (Va. Code § 38.2-3503). Illegal occupation, intoxicants and relation of earnings are optional provisions under § 38.2-3504."
   }
  },

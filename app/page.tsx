@@ -97,8 +97,11 @@ const popularStates = popularStateSlugs
   .filter((s): s is (typeof states)[number] => !!s);
 
 const quotes = [
-  { text: "Used this to help me study. Passed today! Thank you :)", who: "u/Naive_Usual1910" },
+  { text: "Used this to help me study. Passed today! Thank you :)", who: "u/Naive_Usual1910", href: "https://www.reddit.com/r/driving/comments/1ep1644/comment/lxra5co/" },
+  { text: "passed within seven minutes", who: "vivacious-vi" },
+  { text: "it was very helpful... I passed the written test this morning", who: "ideapad101" },
   { text: "The interface is smooth and easy to navigate, unlike other free practice tests. I passed with only two mistakes!", who: "Yzabelle" },
+  { text: "i passed in 3 minutes", who: "u/Curdled_Cave", href: "https://www.reddit.com/r/driving/comments/1ep1644/comment/m6ndsvp/" },
   { text: "felt confident after just studying the previous day", who: "JayjayX12" },
 ];
 
@@ -269,13 +272,26 @@ export default async function Home() {
       {/* Social proof */}
       <div className="bg-brand-light py-14">
         <div className="max-w-5xl mx-auto px-6">
-          <div className="grid md:grid-cols-3 gap-6">
-            {quotes.map((q) => (
-              <figure key={q.who} className="rounded-2xl bg-white dark:bg-gray-900 p-6">
-                <blockquote className="text-gray-800 dark:text-gray-100 mb-3">&quot;{q.text}&quot;</blockquote>
-                <figcaption className="text-sm text-gray-500 dark:text-gray-400">{q.who}</figcaption>
-              </figure>
-            ))}
+          <p className="text-gray-600 dark:text-gray-300 text-center mb-8 flex items-center justify-center gap-2">
+            From r/driving and r/DMV on
+            <Image src="/reddit.png" alt="Reddit" width={72} height={24} className="h-[55px] w-auto inline-block" />
+          </p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {quotes.map((q) => {
+              const body = (
+                <>
+                  <blockquote className="text-gray-800 dark:text-gray-100 mb-3">&quot;{q.text}&quot;</blockquote>
+                  <figcaption className="text-sm text-gray-500 dark:text-gray-400">{q.who}</figcaption>
+                </>
+              );
+              return q.href ? (
+                <a key={q.who} href={q.href} target="_blank" rel="noopener noreferrer" className="block rounded-2xl bg-white dark:bg-gray-900 p-6 hover:shadow-md transition-shadow">
+                  <figure>{body}</figure>
+                </a>
+              ) : (
+                <figure key={q.who} className="rounded-2xl bg-white dark:bg-gray-900 p-6">{body}</figure>
+              );
+            })}
           </div>
         </div>
       </div>

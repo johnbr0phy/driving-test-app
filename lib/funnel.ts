@@ -19,17 +19,35 @@ export type FunnelStep = "visit" | "answered" | "signup_view" | "signup";
 
 // Where a first visit came from, so /admin/v2 can show how many new visitors
 // AI answer engines send. Read from utm_source first (ChatGPT tags its links
-// utm_source=chatgpt.com), then the referrer.
-export const VISIT_SOURCES = ["chatgpt", "perplexity", "gemini", "copilot", "claude", "search", "direct", "other"] as const;
+// utm_source=chatgpt.com), then the referrer. Android apps send an
+// android-app://<package>/ referrer, so the AI apps' package names are listed
+// beside their sites. Claude's and Gemini's apps often send no referrer at all,
+// so a referrer-less first visit is also flagged when it lands on a deep page
+// (not the home page): nobody types tigertest.io/cdl-practice-test, but a
+// link from an answer engine, a chat or a bookmark lands there.
+export const VISIT_SOURCES = ["chatgpt", "perplexity", "gemini", "copilot", "claude", "ai_other", "search", "direct", "other"] as const;
 export type VisitSource = (typeof VISIT_SOURCES)[number];
 
 const SOURCE_HOSTS: [VisitSource, RegExp][] = [
-  ["chatgpt", /(^|\.)(chatgpt\.com|openai\.com)$/],
-  ["perplexity", /(^|\.)perplexity\.ai$/],
-  ["gemini", /(^|\.)gemini\.google\.com$/],
-  ["copilot", /(^|\.)copilot\.microsoft\.com$/],
-  ["claude", /(^|\.)claude\.ai$/],
-  ["search", /(^|\.)(google\.[a-z.]+|bing\.com|duckduckgo\.com|search\.yahoo\.com|search\.brave\.com|ecosia\.org)$/],
+  ["chatgpt", /(^|\.)(chatgpt\.com|openai\.com|com\.openai\.chatgpt)$/],
+  ["perplexity", /(^|\.)(perplexity\.ai|pplx\.ai|ai\.perplexity\.app\.android)$/],
+  ["gemini", /(^|\.)(gemini\.google\.com|bard\.google\.com|com\.google\.android\.apps\.bard)$/],
+  // Copilot in the Edge sidebar refers from edgeservices.bing.com; Copilot on
+  // bing.com itself can't be told from Bing search.
+  ["copilot", /(^|\.)(copilot\.microsoft\.com|copilot\.cloud\.microsoft|copilot\.com|edgeservices\.bing\.com|com\.microsoft\.copilot)$/],
+  ["claude", /(^|\.)(claude\.ai|claude\.com|com\.anthropic\.claude)$/],
+  ["ai_other", /(^|\.)(deepseek\.com|grok\.com|x\.ai|meta\.ai|you\.com|phind\.com|chat\.mistral\.ai|poe\.com|kimi\.com|chat\.qwen\.ai)$/],
+  ["search", /(^|\.)(google\.[a-z.]+|bing\.com|duckduckgo\.com|search\.yahoo\.com|search\.brave\.com|ecosia\.org|com\.google\.android\.googlequicksearchbox)$/],
+];
+
+// utm_source values without a domain (utm_source=perplexity, =copilot).
+const UTM_NAMES: [VisitSource, RegExp][] = [
+  ["chatgpt", /^(chatgpt|openai)/],
+  ["perplexity", /^perplexity/],
+  ["gemini", /^gemini/],
+  ["copilot", /^copilot/],
+  ["claude", /^claude/],
+  ["ai_other", /^(deepseek|grok|meta\.?ai|you|phind|mistral|poe)/],
 ];
 
 function hostSource(host: string): VisitSource | null {
@@ -37,10 +55,15 @@ function hostSource(host: string): VisitSource | null {
   return SOURCE_HOSTS.find(([, re]) => re.test(h))?.[0] ?? null;
 }
 
+function utmSource(utm: string): VisitSource | null {
+  const u = utm.toLowerCase().trim();
+  return hostSource(u) ?? UTM_NAMES.find(([, re]) => re.test(u))?.[0] ?? null;
+}
+
 export function visitSource(): VisitSource {
   try {
     const utm = new URLSearchParams(window.location.search).get("utm_source");
-    const fromUtm = utm ? hostSource(utm) : null;
+    const fromUtm = utm ? utmSource(utm) : null;
     if (fromUtm) return fromUtm;
     if (!document.referrer) return "direct";
     const host = new URL(document.referrer).hostname;
@@ -49,6 +72,11 @@ export function visitSource(): VisitSource {
   } catch {
     return "other";
   }
+}
+
+/** A referrer-less first visit that landed somewhere other than the home page. */
+function isDeepDirect(source: VisitSource): boolean {
+  return source === "direct" && window.location.pathname !== "/";
 }
 
 const FLAG_PREFIX = "tigertest-funnel:";
@@ -73,7 +101,9 @@ function setFlag(step: FunnelStep) {
 export function trackFunnelStep(step: Exclude<FunnelStep, "signup">) {
   if (typeof window === "undefined" || auth.currentUser || hasFlag(step) || isInternalBrowser()) return;
   setFlag(step);
-  void post(step === "visit" ? { step, source: visitSource() } : { step });
+  if (step !== "visit") return void post({ step });
+  const source = visitSource();
+  void post({ step, source, deep: isDeepDirect(source) || undefined });
 }
 
 /** A brand-new account. Tags it with whether this browser practiced first. */
@@ -83,7 +113,7 @@ export function trackFunnelSignup() {
   void post({ step: "signup", triedFirst: hasFlag("answered") });
 }
 
-async function post(body: { step: FunnelStep; triedFirst?: boolean; source?: VisitSource }) {
+async function post(body: { step: FunnelStep; triedFirst?: boolean; source?: VisitSource; deep?: boolean }) {
   try {
     const headers: Record<string, string> = { "Content-Type": "application/json" };
     const user = auth.currentUser;

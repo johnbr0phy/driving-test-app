@@ -193,7 +193,7 @@
     "optionD": "Only when problems are suspected",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Federal regulations require drivers to inspect critical items like tires, brakes, and cargo securement every 150 miles or three hours, whichever comes first."
+    "explanation": "Federal rules require you to check your cargo and its securement devices within the first 50 miles of a trip, then every 150 miles or every three hours, whichever comes first, and after every break."
   },
   {
     "questionId": "CDL-GK-015",
@@ -207,7 +207,7 @@
     "optionD": "Only safety-critical system problems",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "The post-trip report must document any defects or deficiencies discovered during operation, even minor ones, to inform the next driver and maintenance personnel."
+    "explanation": "Federal rules require the post-trip report to list any defect or deficiency you found or were told about that would affect safe operation or could cause a breakdown, so the next driver and the mechanic know what needs attention."
   },
   {
     "questionId": "CDL-GK-016",
@@ -459,7 +459,7 @@
     "optionD": "Report it on the post-trip report",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "All defects, regardless of severity, must be reported on the post-trip inspection report to maintain proper vehicle maintenance records and prevent problems from worsening."
+    "explanation": "Write it on the post-trip report. Federal rules require reporting any defect that could affect safety or cause a breakdown, and reporting smaller ones too lets maintenance fix them before they get worse."
   },
   {
     "questionId": "CDL-GK-034",
@@ -848,10 +848,10 @@
     "optionA": "Two seconds behind the vehicle ahead, regardless of vehicle length or weight",
     "optionB": "Three seconds behind the vehicle ahead, plus additional time for weather conditions",
     "optionC": "Four seconds behind the vehicle ahead, adjusted for road surface conditions",
-    "optionD": "One second for every 10 feet of vehicle length, plus one second",
+    "optionD": "One second for every 10 feet of vehicle length, plus one second above 40 mph",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "The proper following distance for commercial vehicles is one second for every 10 feet of vehicle length, plus one additional second for safety."
+    "explanation": "The manual says to leave at least one second for each 10 feet of vehicle length at speeds below 40 mph, and to add one more second at speeds above 40 mph."
   },
   {
     "questionId": "CDL-GK-062",
@@ -1323,7 +1323,7 @@
     "question": "What is the most important factor in preventing rollovers?",
     "optionA": "Proper tire inflation pressure and regular tire maintenance",
     "optionB": "Regular brake maintenance and proper adjustment of all systems",
-    "optionC": "Proper load distribution and securing cargo with appropriate restraints",
+    "optionC": "Loading the heaviest cargo high and toward the rear of the trailer",
     "optionD": "Keeping speed appropriate for conditions, especially curves",
     "correctAnswer": "D",
     "correctIndex": 3,
@@ -1421,7 +1421,7 @@
     "question": "What is the purpose of engine braking?",
     "optionA": "To save fuel during downhill driving",
     "optionB": "To improve acceleration performance",
-    "optionC": "To reduce wear on service brakes",
+    "optionC": "To stop the truck faster in a panic stop",
     "optionD": "To help maintain speed and reduce brake wear",
     "correctAnswer": "D",
     "correctIndex": 3,
@@ -1562,10 +1562,10 @@
     "optionA": "Early morning rush hour with heavy commuter traffic",
     "optionB": "Late night after midnight when driver fatigue is common",
     "optionC": "Midday when traffic is heaviest on most major highways",
-    "optionD": "Dusk and dawn when visibility changes rapidly",
-    "correctAnswer": "D",
-    "correctIndex": 3,
-    "explanation": "Dusk and dawn are especially dangerous due to rapidly changing light conditions that affect visibility and driver adaptation."
+    "optionD": "Midafternoon on clear days with dry roads",
+    "correctAnswer": "B",
+    "correctIndex": 1,
+    "explanation": "The manual warns that night driving carries greater risk: you see less, other drivers may be tired or impaired, and fatigue is most common late at night, especially between midnight and 6 a.m."
   },
   {
     "questionId": "CDL-GK-113",
@@ -1712,14 +1712,14 @@
     "type": "CDL",
     "state": "ALL",
     "category": "safeDriving",
-    "question": "When is it safe to use your cell phone while driving?",
+    "question": "When is it safe to hold and dial a hand-held cell phone while driving?",
     "optionA": "During long straight stretches of highway with light traffic",
     "optionB": "Never - pull over safely if you must use it",
-    "optionC": "Only for brief emergency calls to report accidents",
+    "optionC": "While briefly stopped at a red light or in traffic",
     "optionD": "When traffic is light and road conditions are ideal",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Cell phone use while driving a commercial vehicle is prohibited and dangerous - always pull over safely if phone use is necessary."
+    "explanation": "Federal rules ban holding, dialing or texting on a hand-held phone while driving a commercial vehicle, including while briefly stopped in traffic or at a light. Pull off the road to a safe place first; only hands-free, single-touch use is allowed while driving."
   },
   {
     "questionId": "CDL-GK-124",
@@ -1839,7 +1839,7 @@
     "state": "ALL",
     "category": "safeDriving",
     "question": "When should you use your emergency flashers?",
-    "optionA": "When driving slowly in traffic to warn other drivers",
+    "optionA": "When driving at normal speed in heavy rain",
     "optionB": "When making wide turns that require extra time",
     "optionC": "When parked illegally to indicate temporary parking",
     "optionD": "When stopped or moving slowly on the roadway",
@@ -1941,8 +1941,8 @@
     "optionB": "Move to another lane if possible to help them merge",
     "optionC": "Adjust your space cushion based on merging traffic",
     "optionD": "Both B and C are correct approaches",
-    "correctAnswer": "C",
-    "correctIndex": 2,
+    "correctAnswer": "D",
+    "correctIndex": 3,
     "explanation": "When encountering merging traffic, adjust your following distance and lane position to create safe space, and change lanes if safely possible to help traffic flow."
   },
   {
@@ -2205,7 +2205,7 @@
     "question": "What is the most important consideration when coupling a trailer?",
     "optionA": "Speed of the coupling process and time efficiency",
     "optionB": "Weather conditions affecting visibility and traction during coupling",
-    "optionC": "Trailer height relative to tractor for proper connection",
+    "optionC": "Distance from the trailer to the nearest loading dock",
     "optionD": "Proper height and alignment of fifth wheel",
     "correctAnswer": "D",
     "correctIndex": 3,
@@ -2258,14 +2258,14 @@
     "type": "CDL",
     "state": "ALL",
     "category": "basicControl",
-    "question": "When should you avoid making wide right turns?",
-    "optionA": "In areas with pedestrians and cyclists",
-    "optionB": "During peak traffic hours",
-    "optionC": "In rural areas only",
-    "optionD": "When the trailer is empty",
+    "question": "What should you avoid when making a right turn in a long vehicle?",
+    "optionA": "Swinging wide to the left before you start the turn",
+    "optionB": "Turning slowly to give others time to react",
+    "optionC": "Keeping the rear of the vehicle close to the curb",
+    "optionD": "Turning wide as you complete the turn",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Wide right turns should be avoided in areas with pedestrians and cyclists, as they can be caught in the vehicle's path during the turn."
+    "explanation": "Swinging wide to the left before a right turn leaves a gap where a car can pull up on your right and be struck. Turn slowly, keep the rear close to the curb, and use the extra room as you complete the turn."
   },
   {
     "questionId": "CDL-GK-163",
@@ -2371,13 +2371,13 @@
     "state": "ALL",
     "category": "basicControl",
     "question": "What is button hooking in commercial vehicle operations?",
-    "optionA": "A method to swing wide during right turns",
+    "optionA": "A method to turn wide while completing right turns",
     "optionB": "A parking technique for tight spaces",
     "optionC": "A backing procedure for loading docks",
     "optionD": "A coupling method for trailers",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Button hooking refers to swinging wide to the left before making a right turn to provide adequate clearance for the trailer to clear the corner."
+    "explanation": "A button hook is a right-turn technique: keep the rear close to the curb, drive farther into the intersection, then turn sharply right, using the extra room as you complete the turn. Swinging left before the turn (a jughandle) is not a button hook and lets cars slip in on your right."
   },
   {
     "questionId": "CDL-GK-171",
@@ -2597,7 +2597,7 @@
     "question": "When coupling, how do you know the fifth wheel jaws are locked?",
     "optionA": "Listen for clicking sounds",
     "optionB": "Check that jaws are closed around kingpin",
-    "optionC": "Test by pulling forward gently",
+    "optionC": "Check that the landing gear is fully lowered",
     "optionD": "Look for green indicator light",
     "correctAnswer": "B",
     "correctIndex": 1,
@@ -2664,14 +2664,14 @@
     "type": "CDL",
     "state": "ALL",
     "category": "cargoHandling",
-    "question": "What is the minimum number of tiedowns required for cargo weighing 5,000 pounds?",
-    "optionA": "One tiedown for every 2,500 pounds",
+    "question": "What is the minimum number of tiedowns for an 8-foot article of cargo weighing 5,000 pounds?",
+    "optionA": "One tiedown, since it is under 10 feet long",
     "optionB": "At least three tiedowns regardless of weight",
     "optionC": "One tiedown plus one for every additional 5,000 pounds",
-    "optionD": "Two tiedowns regardless of length",
+    "optionD": "Two tiedowns, based on its length and weight",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "For cargo weighing 5,000 pounds or less, at least two tiedowns are required regardless of length. This ensures minimum securement standards are met."
+    "explanation": "Under 49 CFR 393.110, an article 5 to 10 feet long needs at least two tiedowns regardless of weight, and any article over 1,100 pounds needs two even if shorter. The tiedowns' combined working load limit must also be at least half the cargo weight, 2,500 pounds here."
   },
   {
     "questionId": "CDL-GK-192",
@@ -2708,7 +2708,7 @@
     "category": "cargoHandling",
     "question": "When hauling a load that is 20 feet long, what is the minimum number of tiedowns required?",
     "optionA": "Two tiedowns regardless of weight",
-    "optionB": "Three tiedowns for any load over 15 feet",
+    "optionB": "Four tiedowns for any load over 15 feet",
     "optionC": "One tiedown for every 5 feet of length",
     "optionD": "One tiedown for every 10 feet plus one additional",
     "correctAnswer": "D",
@@ -2720,14 +2720,14 @@
     "type": "CDL",
     "state": "ALL",
     "category": "cargoHandling",
-    "question": "What is the maximum weight that can be carried on the steer axle of a commercial vehicle?",
-    "optionA": "10,000 pounds under normal conditions",
-    "optionB": "12,000 pounds under federal weight limits",
-    "optionC": "14,000 pounds with proper permits",
-    "optionD": "15,000 pounds for interstate commerce",
+    "question": "What is the federal maximum weight on a single axle on the Interstate Highway System?",
+    "optionA": "12,000 pounds on any single axle",
+    "optionB": "20,000 pounds on a single axle",
+    "optionC": "34,000 pounds on a single axle",
+    "optionD": "40,000 pounds on a single axle",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Federal regulations limit steer axle weight to 12,000 pounds to ensure steering control and braking effectiveness are not compromised."
+    "explanation": "Federal limits on the Interstate System are 20,000 pounds on a single axle, 34,000 pounds on a tandem axle and 80,000 pounds gross vehicle weight. Steer axle weight is also limited by tire and axle ratings and by state law."
   },
   {
     "questionId": "CDL-GK-196",
@@ -2820,12 +2820,12 @@
     "category": "cargoHandling",
     "question": "When is a sealed or containerized load exempt from cargo securement inspections?",
     "optionA": "Never, all loads must be inspected for securement",
-    "optionB": "When the shipper certifies proper loading and securement",
+    "optionB": "When you have been ordered not to open the sealed load",
     "optionC": "Only when crossing state lines with proper documentation",
     "optionD": "When the container weight is under 26,000 pounds",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Sealed containers are exempt from cargo securement inspections when the shipper certifies that the cargo has been loaded properly and secured according to regulations."
+    "explanation": "Inspection rules do not apply to sealed loads you have been ordered not to open, or loads loaded so that inspection is impractical. You must still make sure you do not exceed gross weight and axle weight limits."
   },
   {
     "questionId": "CDL-GK-203",
@@ -3019,8 +3019,8 @@
     "optionB": "Poor weight distribution can reduce braking effectiveness",
     "optionC": "Increased weight always improves braking by adding traction",
     "optionD": "Only affects braking when cargo exceeds legal limits",
-    "correctAnswer": "C",
-    "correctIndex": 2,
+    "correctAnswer": "B",
+    "correctIndex": 1,
     "explanation": "Improper cargo loading and weight distribution can significantly reduce braking effectiveness by affecting weight transfer, traction, and vehicle stability during braking."
   },
   {
@@ -3059,11 +3059,11 @@
     "question": "Which tiedown material should NOT be used for securing cargo?",
     "optionA": "Grade 70 transport chains with proper hardware",
     "optionB": "Web straps with appropriate working load limits",
-    "optionC": "Manila rope or natural fiber cordage",
+    "optionC": "Web straps with knots, cuts, or burns in them",
     "optionD": "Wire rope with proper end fittings",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Manila rope and other natural fiber cordage are prohibited for cargo securement because they can weaken when wet and lack the strength and reliability of approved synthetic materials."
+    "explanation": "Tiedowns must be in good condition. Federal rules do not allow tiedowns that are knotted, cut, burned, or otherwise damaged, because they can fail without warning. Chains, web straps, wire rope, and fiber rope in good condition with a known working load limit can be used."
   },
   {
     "questionId": "CDL-GK-220",
@@ -3075,8 +3075,8 @@
     "optionB": "At scheduled maintenance intervals only to avoid over-inspection",
     "optionC": "When weather conditions change significantly affecting road surface traction",
     "optionD": "According to inspection schedule and when weather changes affect securement integrity",
-    "correctAnswer": "A",
-    "correctIndex": 0,
+    "correctAnswer": "D",
+    "correctIndex": 3,
     "explanation": "Cargo securement should be adjusted whenever you discover loose, damaged, or inadequate securement during your regular inspections, not just when cargo movement is visible."
   },
   {
@@ -3159,8 +3159,8 @@
     "optionB": "Extra weight from insulation materials",
     "optionC": "Temperature-sensitive cargo placement and air circulation",
     "optionD": "Additional tie-down requirements for cold cargo",
-    "correctAnswer": "D",
-    "correctIndex": 3,
+    "correctAnswer": "C",
+    "correctIndex": 2,
     "explanation": "Temperature-sensitive cargo requires proper placement to ensure adequate air circulation around products, maintaining cold chain integrity and preventing spoilage."
   },
   {
@@ -3187,8 +3187,8 @@
     "optionB": "Use cruise control to maintain steady speed",
     "optionC": "Increase following distance and avoid sudden maneuvers",
     "optionD": "Take turns and curves at higher speeds for stability",
-    "correctAnswer": "D",
-    "correctIndex": 3,
+    "correctAnswer": "C",
+    "correctIndex": 2,
     "explanation": "High center of gravity loads require reduced speeds in turns, increased following distance, and avoiding sudden maneuvers to prevent rollover."
   },
   {
@@ -3268,12 +3268,12 @@
     "category": "cargoHandling",
     "question": "What should you do if your tiedown equipment doesn't have visible working load limit markings?",
     "optionA": "Estimate the capacity based on similar equipment",
-    "optionB": "Do not use the equipment for cargo securement",
+    "optionB": "Use the default working load limit federal rules set for that type",
     "optionC": "Use manufacturer specifications if available",
     "optionD": "Test the equipment with gradually increasing loads",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Tiedown equipment without visible working load limit markings should not be used, as you cannot verify its capacity meets regulatory requirements."
+    "explanation": "Under federal rules, a tiedown with no working load limit marking is treated as having the default working load limit listed for its type and size. Use that value when figuring whether you have enough tiedowns, and never guess or test the capacity yourself."
   },
   {
     "questionId": "CDL-GK-235",
@@ -3310,12 +3310,12 @@
     "category": "cargoHandling",
     "question": "What is the minimum number of tiedowns required for any load, regardless of size or weight?",
     "optionA": "At least two tiedowns for every load",
-    "optionB": "One tiedown if the load is under 5 feet long",
+    "optionB": "One tiedown if the load is under 10 feet long",
     "optionC": "Three tiedowns for loads over 20 feet long",
     "optionD": "The number varies based on cargo type only",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Federal regulations require a minimum of two tiedowns for every load, regardless of size or weight, to provide redundancy in case of equipment failure."
+    "explanation": "The CDL manual says cargo should have at least one tiedown for each 10 feet of cargo, and that no matter how small the cargo is, it should have at least two tiedowns."
   },
   {
     "questionId": "CDL-GK-238",
@@ -3381,7 +3381,7 @@
     "question": "If your brakes fail while driving, what should you do first?",
     "optionA": "Pump the brake pedal rapidly",
     "optionB": "Apply the parking brake immediately",
-    "optionC": "Shift to a lower gear",
+    "optionC": "Shift into neutral and coast",
     "optionD": "Downshift and use engine braking",
     "correctAnswer": "D",
     "correctIndex": 3,
@@ -3495,9 +3495,9 @@
     "optionB": "Pour water on the tire to extinguish the flames",
     "optionC": "Use sand to smother the fire and cut off oxygen",
     "optionD": "Call for professional help and evacuate the immediate area",
-    "correctAnswer": "A",
-    "correctIndex": 0,
-    "explanation": "Tire fires burn very hot and are difficult to extinguish. If possible, remove the tire and roll it away from the vehicle to prevent the fire from spreading."
+    "correctAnswer": "B",
+    "correctIndex": 1,
+    "explanation": "The CDL manual says water is used on tire fires to cool the tire. A burning tire is very hot and can reignite, so keep cooling it with plenty of water and do not try to remove it."
   },
   {
     "questionId": "CDL-GK-251",
@@ -3518,14 +3518,14 @@
     "type": "CDL",
     "state": "ALL",
     "category": "emergencyProcedures",
-    "question": "How many seconds do you have to safely exit your vehicle if there's a hazardous material fire?",
-    "optionA": "About 10 seconds or less",
-    "optionB": "30 seconds to gather essential items",
-    "optionC": "1 minute if you move quickly",
-    "optionD": "5 minutes for orderly evacuation",
+    "question": "What should you do if a fire involves hazardous materials cargo?",
+    "optionA": "Stay away, keep others back, and call for help",
+    "optionB": "Open the trailer doors to let the smoke out",
+    "optionC": "Spray it with water from the nearest hydrant",
+    "optionD": "Drive to a fire station to have it put out",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "With hazardous material fires, you have approximately 10 seconds or less to safely exit the vehicle before the situation becomes life-threatening."
+    "explanation": "Do not try to fight a hazardous materials fire unless you have special training and equipment. Keep people away from the vehicle, notify the authorities, and tell them what is in the cargo."
   },
   {
     "questionId": "CDL-GK-253",
@@ -3549,7 +3549,7 @@
     "question": "What is the first priority at any accident scene?",
     "optionA": "Keep injured people safe and get medical help",
     "optionB": "Exchange insurance information with all parties involved",
-    "optionC": "Move vehicles out of traffic to prevent secondary collisions",
+    "optionC": "Move the other driver's vehicle yourself to clear the road",
     "optionD": "Document the scene with photos for insurance claims",
     "correctAnswer": "A",
     "correctIndex": 0,
@@ -3574,14 +3574,14 @@
     "type": "CDL",
     "state": "ALL",
     "category": "emergencyProcedures",
-    "question": "On a straight, level road, how far should the farthest warning triangle be placed?",
+    "question": "On a straight, level two-way road, how far behind your vehicle should the rear warning triangle be placed?",
     "optionA": "50 feet",
     "optionB": "75 feet",
     "optionC": "100 feet",
     "optionD": "200 feet",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "On straight, level roads, place the farthest triangle 100 feet behind your vehicle to give other drivers adequate warning distance to slow down or change lanes."
+    "explanation": "On a two-way road, place one triangle within 10 feet of the vehicle on the traffic side, one about 100 feet behind, and one about 100 feet ahead. On a divided or one-way road, all three go behind, at about 10, 100, and 200 feet."
   },
   {
     "questionId": "CDL-GK-257",
@@ -3592,7 +3592,7 @@
     "optionA": "Within 5 minutes",
     "optionB": "Within 15 minutes",
     "optionC": "Within 10 minutes",
-    "optionD": "As soon as possible",
+    "optionD": "Within 30 minutes",
     "correctAnswer": "C",
     "correctIndex": 2,
     "explanation": "Federal regulations require that warning triangles be set up within 10 minutes of stopping to ensure other drivers have adequate warning of your stopped vehicle."
@@ -3620,7 +3620,7 @@
     "optionA": "Don't move them unless they're in immediate danger",
     "optionB": "Move them to a comfortable position",
     "optionC": "Give them water if they're conscious",
-    "optionD": "Apply pressure to any bleeding wounds",
+    "optionD": "Help them stand up and walk to your truck",
     "correctAnswer": "A",
     "correctIndex": 0,
     "explanation": "Don't move injured people unless they are in immediate danger from fire or traffic. Moving someone with spinal injuries can cause permanent damage."
@@ -3735,7 +3735,7 @@
     "optionD": "Using the parking brake to stop during service brake failure",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Stab braking involves applying the brakes fully until the wheels lock, then releasing and immediately reapplying. This technique allows you to retain steering capability."
+    "explanation": "Stab braking means applying the brakes all the way, releasing them when the wheels lock, and reapplying them as soon as the wheels start rolling again. Reapplying before the wheels roll will not let the vehicle straighten out."
   },
   {
     "questionId": "CDL-GK-268",
@@ -3803,8 +3803,8 @@
     "optionB": "The ABS system may not be working properly",
     "optionC": "The regular brakes are not working",
     "optionD": "The parking brake is still engaged",
-    "correctAnswer": "A",
-    "correctIndex": 0,
+    "correctAnswer": "B",
+    "correctIndex": 1,
     "explanation": "If the ABS light stays on after startup, it indicates the ABS system may not be working properly. However, your regular braking system still functions normally."
   },
   {
@@ -3817,8 +3817,8 @@
     "optionB": "When other drivers might be startled into a dangerous reaction",
     "optionC": "When it's nighttime",
     "optionD": "You should always use your horn in emergencies",
-    "correctAnswer": "D",
-    "correctIndex": 3,
+    "correctAnswer": "B",
+    "correctIndex": 1,
     "explanation": "There are rare situations where using the horn might startle another driver into a more dangerous reaction, such as when they might swerve into your path."
   },
   {
@@ -3869,13 +3869,13 @@
     "state": "ALL",
     "category": "emergencyProcedures",
     "question": "When placing warning triangles on a divided highway, where should they be positioned?",
-    "optionA": "Only behind your vehicle",
+    "optionA": "One ahead of and two behind your vehicle",
     "optionB": "On both sides of the highway",
     "optionC": "On your side of the highway only",
     "optionD": "In the median strip",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "On divided highways, place warning triangles only on your side of the highway since traffic on the other side is separated and not directly affected by your stopped vehicle."
+    "explanation": "On a divided or one-way highway, place all three triangles on your side of the highway, behind your vehicle toward approaching traffic, at about 10, 100, and 200 feet. None go ahead of the vehicle or across the median."
   },
   {
     "questionId": "CDL-GK-278",
@@ -4166,10 +4166,10 @@
     "optionA": "Only if the driver was injured and hospitalized",
     "optionB": "Only for accidents over $10,000 damage to vehicles",
     "optionC": "Only if police were called to investigate the scene",
-    "optionD": "After any accident involving a fatality, injury, or citation",
+    "optionD": "After a fatality, or a citation with an injury or tow-away",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Post-accident testing is required when there's a fatality, an injury requiring medical treatment, or the driver receives a citation for a moving violation."
+    "explanation": "Post-accident testing is required after any crash with a fatality. It is also required when someone is treated for injuries away from the scene, or a vehicle must be towed, and the CMV driver receives a citation for a moving violation."
   },
   {
     "questionId": "CDL-GK-299",
@@ -4359,7 +4359,7 @@
     "state": "ALL",
     "category": "alcoholDrugs",
     "question": "What happens during an out-of-service order related to alcohol or drugs?",
-    "optionA": "You get a 24-hour rest period",
+    "optionA": "You may keep driving after a 1-hour rest",
     "optionB": "You are immediately prohibited from driving for 24 hours",
     "optionC": "You can finish your current trip",
     "optionD": "You must find a substitute driver",
@@ -4393,7 +4393,7 @@
     "optionD": "No record keeping required",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Employers must maintain detailed records of all drug and alcohol testing, including results, training, and violations, for at least 5 years."
+    "explanation": "Employers must keep key records, such as positive alcohol results, verified positive drug results, refusals and return-to-duty evaluations, for at least 5 years. Records of negative and canceled tests are kept for 1 year."
   },
   {
     "questionId": "CDL-GK-315",
@@ -4473,11 +4473,11 @@
     "question": "When can employers conduct follow-up testing after a positive result?",
     "optionA": "Never allowed once initial testing requirement is completed",
     "optionB": "Only with written union approval and collective bargaining agreement",
-    "optionC": "Up to 6 unannounced tests over 60 months",
+    "optionC": "At least 6 unannounced tests in the first 12 months",
     "optionD": "Required monthly testing for exactly one calendar year period",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "After a positive test and return to duty, employers may conduct up to 6 unannounced follow-up tests during the first 60 months back on duty."
+    "explanation": "After a driver returns to duty, the substance abuse professional sets a follow-up plan of at least 6 unannounced tests in the first 12 months. Follow-up testing can continue for up to 60 months."
   },
   {
     "questionId": "CDL-GK-321",
@@ -4629,9 +4629,9 @@
     "optionB": "From sunset to sunrise and during any poor visibility conditions",
     "optionC": "Only in heavily populated urban areas with insufficient street lighting",
     "optionD": "From one hour after sunset to one hour before sunrise",
-    "correctAnswer": "D",
-    "correctIndex": 3,
-    "explanation": "Most states require headlights from one hour after sunset to one hour before sunrise, plus during poor visibility conditions."
+    "correctAnswer": "B",
+    "correctIndex": 1,
+    "explanation": "Use your headlights at night and whenever visibility is poor. State laws set the exact times, commonly from 30 minutes after sunset to 30 minutes before sunrise, so having them on from sunset to sunrise always meets the rule."
   },
   {
     "questionId": "CDL-GK-332",
@@ -4654,12 +4654,12 @@
     "category": "nightDriving",
     "question": "When should you dim your high beam headlights?",
     "optionA": "Never dim them as they provide the best visibility available",
-    "optionB": "Within 500 feet of oncoming traffic or 300 feet when following",
+    "optionB": "Within 500 feet of oncoming traffic or a vehicle you follow",
     "optionC": "Only in heavy traffic with multiple vehicles in close proximity",
     "optionD": "When driving in city limits only with adequate street lighting",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "High beams must be dimmed within 500 feet of oncoming vehicles or within 300 feet when following another vehicle."
+    "explanation": "The CDL manual says to dim your high beams within 500 feet of an oncoming vehicle and when following another vehicle within 500 feet, so you do not blind other drivers."
   },
   {
     "questionId": "CDL-GK-334",
@@ -4727,9 +4727,9 @@
     "optionB": "Late evening after dinner",
     "optionC": "Noon to 2 PM",
     "optionD": "Just after sunrise",
-    "correctAnswer": "B",
-    "correctIndex": 1,
-    "explanation": "Late evening hours and early morning (2-6 AM) are when the body's circadian rhythm naturally causes increased drowsiness."
+    "correctAnswer": "A",
+    "correctIndex": 0,
+    "explanation": "Your body's circadian rhythm makes drowsiness most likely in the early morning hours, between midnight and 6 AM, when your body expects to be asleep."
   },
   {
     "questionId": "CDL-GK-339",
@@ -4965,8 +4965,8 @@
     "optionB": "Look toward the right side of the road",
     "optionC": "Speed up to pass them quickly",
     "optionD": "Turn on your high beams too",
-    "correctAnswer": "A",
-    "correctIndex": 0,
+    "correctAnswer": "B",
+    "correctIndex": 1,
     "explanation": "Looking toward the right side of the road helps avoid glare from oncoming high beams while maintaining some forward vision."
   },
   {
@@ -5035,8 +5035,8 @@
     "optionB": "Keep your windshield clean",
     "optionC": "Look directly at the lights briefly",
     "optionD": "Use high beams to counter the glare",
-    "correctAnswer": "C",
-    "correctIndex": 2,
+    "correctAnswer": "B",
+    "correctIndex": 1,
     "explanation": "A clean windshield reduces glare and improves visibility by eliminating dirt and film that scatter and intensify bright lights."
   },
   {
@@ -5357,8 +5357,8 @@
     "optionB": "You should drive through standing water quickly",
     "optionC": "Brake earlier and more gently than normal",
     "optionD": "Following distance can remain the same",
-    "correctAnswer": "B",
-    "correctIndex": 1,
+    "correctAnswer": "C",
+    "correctIndex": 2,
     "explanation": "Rain reduces traction and increases stopping distances, requiring earlier and gentler brake application than in dry conditions."
   },
   {
@@ -5455,8 +5455,8 @@
     "optionB": "Use lower gears to control speed",
     "optionC": "Apply brakes firmly to maintain control",
     "optionD": "Increase following distance slightly",
-    "correctAnswer": "A",
-    "correctIndex": 0,
+    "correctAnswer": "B",
+    "correctIndex": 1,
     "explanation": "Lower gears provide better engine braking and more controlled power delivery when driving in snow and slush conditions."
   },
   {
@@ -5790,7 +5790,7 @@
     "optionA": "The clutch is disengaged",
     "optionB": "The engine is turned off",
     "optionC": "The engine RPM is high",
-    "optionD": "You're in the proper low gear",
+    "optionD": "You're in the highest gear",
     "correctAnswer": "C",
     "correctIndex": 2,
     "explanation": "Engine braking effectiveness increases with RPM; proper low gear selection keeps RPM high for maximum braking power."
@@ -5805,8 +5805,8 @@
     "optionB": "Any vehicle losing speed control on downgrades",
     "optionC": "Only emergency vehicles",
     "optionD": "Passenger cars only",
-    "correctAnswer": "A",
-    "correctIndex": 0,
+    "correctAnswer": "B",
+    "correctIndex": 1,
     "explanation": "Any vehicle losing speed control on a downgrade should use escape ramps rather than risk a more serious accident."
   },
   {
@@ -5819,8 +5819,8 @@
     "optionB": "Shift to a higher gear",
     "optionC": "Be prepared for the downgrade ahead",
     "optionD": "Turn on hazard lights",
-    "correctAnswer": "A",
-    "correctIndex": 0,
+    "correctAnswer": "C",
+    "correctIndex": 2,
     "explanation": "Approaching the crest requires preparation for what lies ahead, which could be a steep downgrade requiring immediate gear selection."
   },
   {
@@ -5861,8 +5861,8 @@
     "optionB": "Use wheel chocks and parking brake",
     "optionC": "Leave the vehicle in neutral",
     "optionD": "Turn off the engine to save fuel",
-    "correctAnswer": "A",
-    "correctIndex": 0,
+    "correctAnswer": "B",
+    "correctIndex": 1,
     "explanation": "Wheel chocks and parking brake provide redundant protection against vehicle rollaway when parked on grades."
   },
   {
@@ -6015,8 +6015,8 @@
     "optionB": "Speed up to cool them with air flow",
     "optionC": "Pour water on them immediately",
     "optionD": "Stop and let them cool before continuing",
-    "correctAnswer": "A",
-    "correctIndex": 0,
+    "correctAnswer": "D",
+    "correctIndex": 3,
     "explanation": "Hot brake smell indicates dangerous brake fade; stopping and allowing cooling prevents brake failure and potential accidents."
   },
   {
@@ -6137,13 +6137,13 @@
     "state": "ALL",
     "category": "railroadCrossings",
     "question": "When you stop at a railroad crossing, you should?",
-    "optionA": "Turn off your engine and listen for trains",
-    "optionB": "Keep the engine running and look both ways",
+    "optionA": "Turn off radios and fans, open the window, and listen",
+    "optionB": "Turn up the radio and watch only for signals",
     "optionC": "Set the parking brake",
     "optionD": "Turn on hazard lights",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Turning off the engine allows you to listen for approaching trains, which is part of the required stopping procedure."
+    "explanation": "At a crossing, turn off radios and noisy fans and open your window so you can hear an approaching train, then look both ways. Keep the engine running so you do not stall."
   },
   {
     "questionId": "CDL-GK-440",
@@ -6180,7 +6180,7 @@
     "category": "railroadCrossings",
     "question": "What does a crossbuck sign indicate?",
     "optionA": "Trains run on schedule only",
-    "optionB": "Yield to trains",
+    "optionB": "Trains must yield to you",
     "optionC": "This is a railroad crossing",
     "optionD": "Maximum train speed",
     "correctAnswer": "C",
@@ -6365,8 +6365,8 @@
     "optionB": "Slow down and proceed with caution",
     "optionC": "Stop at all crossings and follow proper procedures",
     "optionD": "Radio for permission to cross",
-    "correctAnswer": "A",
-    "correctIndex": 0,
+    "correctAnswer": "C",
+    "correctIndex": 2,
     "explanation": "Buses and hazmat vehicles must stop at all railroad crossings and follow specific procedures including listening and looking for trains."
   },
   {
@@ -6409,7 +6409,7 @@
     "optionD": "Come to a complete stop",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Federal law requires all traffic to stop when a school bus displays flashing red lights, as children may be crossing the road."
+    "explanation": "Every state requires traffic to stop when a school bus displays flashing red lights, because children may be crossing the road."
   },
   {
     "questionId": "CDL-GK-459",
@@ -6430,7 +6430,7 @@
     "type": "CDL",
     "state": "ALL",
     "category": "hazardPerception",
-    "question": "When sharing the road with cyclists, what is the minimum safe following distance?",
+    "question": "When passing a cyclist, what is the minimum clearance most states require?",
     "optionA": "At least 3 feet when passing",
     "optionB": "Same distance as for passenger cars",
     "optionC": "One foot clearance is legally sufficient",
@@ -7179,7 +7179,7 @@
     "optionD": "Vehicle pulls to one side during normal braking",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Properly functioning automatic slack adjusters maintain correct brake pushrod travel distance, typically no more than 1 to 1.5 inches when brakes are applied."
+    "explanation": "Properly working automatic slack adjusters keep brake pushrod travel within the adjustment limit for that brake chamber. If pushrod travel is too long, or a slack adjuster moves more than about 1 inch when you pull it by hand with the brakes released, the brakes need service."
   },
   {
     "questionId": "CDL-GK-514",
@@ -7298,14 +7298,14 @@
     "type": "CDL",
     "state": "ALL",
     "category": "brakingSystems",
-    "question": "What is the maximum pushrod stroke for most air brake systems?",
-    "optionA": "Three inches for heavy duty applications",
-    "optionB": "1 to 1.5 inches",
-    "optionC": "Four inches maximum under any conditions",
-    "optionD": "Two and a half inches for standard systems",
+    "question": "With the engine off and brakes released, how far should a manual slack adjuster move when you pull hard on it?",
+    "optionA": "Three inches or more is normal",
+    "optionB": "No more than about 1 inch",
+    "optionC": "At least four inches",
+    "optionD": "About two and a half inches",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Most air brake systems should have pushrod stroke (travel) of no more than 1 to 1.5 inches when brakes are fully applied, indicating proper adjustment."
+    "explanation": "The CDL manual says to pull hard on each slack adjuster with the engine off and brakes released. If it moves more than about 1 inch where the pushrod attaches, it probably needs adjustment."
   },
   {
     "questionId": "CDL-GK-523",
@@ -7333,7 +7333,7 @@
     "optionD": "Only during annual inspection",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Manual slack adjusters should be adjusted whenever pushrod travel exceeds manufacturer specifications, typically when it exceeds 1 to 1.5 inches."
+    "explanation": "Manual slack adjusters must be adjusted whenever pushrod travel exceeds the limit for that brake chamber. A quick check: with the brakes released, a slack adjuster that moves more than about 1 inch when pulled by hand probably needs adjustment."
   },
   {
     "questionId": "CDL-GK-525",
@@ -7550,14 +7550,14 @@
     "type": "CDL",
     "state": "ALL",
     "category": "brakingSystems",
-    "question": "What is the maximum allowable air loss rate with brakes released?",
+    "question": "With brakes released, what is the maximum allowable air loss rate for a combination vehicle?",
     "optionA": "3 psi per minute",
     "optionB": "5 psi per minute",
     "optionC": "7 psi per minute",
     "optionD": "10 psi per minute",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "With brakes released, air pressure loss should not exceed 3 psi per minute, indicating acceptable air system leakage rates."
+    "explanation": "With the engine off and brakes released, air loss should be less than 2 psi per minute for a single vehicle and less than 3 psi per minute for a combination vehicle."
   },
   {
     "questionId": "CDL-GK-541",
@@ -7690,14 +7690,14 @@
     "type": "CDL",
     "state": "ALL",
     "category": "brakingSystems",
-    "question": "What is the maximum allowable air loss with brakes applied?",
+    "question": "With brakes fully applied, what is the maximum allowable air loss for a single vehicle?",
     "optionA": "3 psi per minute",
     "optionB": "6 psi per minute",
     "optionC": "10 psi per minute",
     "optionD": "15 psi per minute",
-    "correctAnswer": "B",
-    "correctIndex": 1,
-    "explanation": "With brakes fully applied, air pressure loss should not exceed 6 psi per minute, indicating acceptable system integrity under load."
+    "correctAnswer": "A",
+    "correctIndex": 0,
+    "explanation": "After the initial pressure drop with the service brake fully applied, air loss should be less than 3 psi per minute for a single vehicle and less than 4 psi per minute for a combination vehicle."
   },
   {
     "questionId": "CDL-GK-551",
@@ -8138,7 +8138,7 @@
     "type": "CDL",
     "state": "ALL",
     "category": "vehicleSystems",
-    "question": "What should you verify about the landing gear before coupling to a trailer?",
+    "question": "After coupling to a trailer, what should you verify about the landing gear before driving away?",
     "optionA": "Fully raised and the crank handle is secured",
     "optionB": "Partially lowered for stability during the coupling process",
     "optionC": "Disconnected from the trailer and stored separately",
@@ -8168,7 +8168,7 @@
     "category": "vehicleSystems",
     "question": "What should you do if your alternator warning light comes on?",
     "optionA": "Continue driving normally and ignore the warning light",
-    "optionB": "Turn off all unnecessary electrical equipment to conserve power",
+    "optionB": "Turn on extra lights to test how strong the battery is",
     "optionC": "Increase engine speed to charge faster and clear warning",
     "optionD": "Stop as soon as safely possible and have the charging system checked",
     "correctAnswer": "D",

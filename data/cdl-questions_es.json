@@ -193,7 +193,7 @@
     "optionD": "Solo cuando se sospeche de un problema",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Las normas federales exigen que los conductores inspeccionen elementos críticos como las llantas, los frenos y la sujeción de la carga cada 150 millas o tres horas, lo que ocurra primero."
+    "explanation": "Las normas federales exigen revisar la carga y sus dispositivos de sujeción dentro de las primeras 50 millas del viaje, y luego cada 150 millas o cada tres horas, lo que ocurra primero, y después de cada descanso."
   },
   {
     "questionId": "CDL-GK-015",
@@ -207,7 +207,7 @@
     "optionD": "Solo los problemas de los sistemas críticos de seguridad",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "El informe posterior al viaje debe documentar cualquier defecto o deficiencia descubierta durante la operación, incluso los menores, para informar al siguiente conductor y al personal de mantenimiento."
+    "explanation": "Las normas federales exigen que el informe posterior al viaje incluya cualquier defecto o deficiencia que usted haya encontrado o que le hayan reportado y que afecte la operación segura o pueda causar una avería, para que el siguiente conductor y el mecánico sepan qué se debe atender."
   },
   {
     "questionId": "CDL-GK-016",
@@ -459,7 +459,7 @@
     "optionD": "Reportarlo en el informe posterior al viaje",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Todos los defectos, sin importar su gravedad, se deben reportar en el informe de inspección posterior al viaje para mantener registros de mantenimiento adecuados y evitar que los problemas empeoren."
+    "explanation": "Anótelo en el informe posterior al viaje. Las normas federales exigen reportar cualquier defecto que pueda afectar la seguridad o causar una avería, y reportar también los menores permite que el personal de mantenimiento los repare antes de que empeoren."
   },
   {
     "questionId": "CDL-GK-034",
@@ -848,10 +848,10 @@
     "optionA": "Dos segundos detrás del vehículo de adelante, sin importar el largo o el peso del vehículo",
     "optionB": "Tres segundos detrás del vehículo de adelante, más tiempo adicional según el clima",
     "optionC": "Cuatro segundos detrás del vehículo de adelante, ajustados según la superficie del camino",
-    "optionD": "Un segundo por cada 10 pies de largo del vehículo, más un segundo",
+    "optionD": "Un segundo por cada 10 pies de largo del vehículo, más un segundo a más de 40 mph",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "La distancia de seguimiento correcta para los vehículos comerciales es un segundo por cada 10 pies de largo del vehículo, más un segundo adicional por seguridad."
+    "explanation": "El manual indica dejar al menos un segundo por cada 10 pies de largo del vehículo a velocidades menores de 40 mph, y agregar un segundo más a velocidades mayores de 40 mph."
   },
   {
     "questionId": "CDL-GK-062",
@@ -1323,7 +1323,7 @@
     "question": "¿Cuál es el factor más importante para evitar volcaduras?",
     "optionA": "La presión de inflado correcta y el mantenimiento regular de las llantas",
     "optionB": "El mantenimiento regular de los frenos y el ajuste correcto de los sistemas",
-    "optionC": "La distribución correcta de la carga y su sujeción con amarres adecuados",
+    "optionC": "Colocar la carga más pesada en lo alto y hacia la parte trasera del remolque",
     "optionD": "Mantener una velocidad adecuada a las condiciones, sobre todo en las curvas",
     "correctAnswer": "D",
     "correctIndex": 3,
@@ -1421,7 +1421,7 @@
     "question": "¿Cuál es el propósito del frenado con motor?",
     "optionA": "Ahorrar combustible al conducir cuesta abajo",
     "optionB": "Mejorar el rendimiento de la aceleración",
-    "optionC": "Reducir el desgaste de los frenos de servicio",
+    "optionC": "Detener el camión más rápido en un frenado de pánico",
     "optionD": "Ayudar a mantener la velocidad y reducir el desgaste de los frenos",
     "correctAnswer": "D",
     "correctIndex": 3,
@@ -1562,10 +1562,10 @@
     "optionA": "La hora pico de la mañana, con mucho tráfico de trabajadores",
     "optionB": "Después de la medianoche, cuando es común la fatiga",
     "optionC": "El mediodía, cuando hay más tráfico en las carreteras principales",
-    "optionD": "El atardecer y el amanecer, cuando la visibilidad cambia rápidamente",
-    "correctAnswer": "D",
-    "correctIndex": 3,
-    "explanation": "El atardecer y el amanecer son especialmente peligrosos, porque la luz cambia rápidamente y eso afecta la visibilidad y la adaptación del conductor."
+    "optionD": "A media tarde, en días despejados con el camino seco",
+    "correctAnswer": "B",
+    "correctIndex": 1,
+    "explanation": "El manual advierte que conducir de noche es más riesgoso: se ve menos, otros conductores pueden estar cansados o bajo los efectos del alcohol, y la fatiga es más común tarde en la noche, sobre todo entre la medianoche y las 6 a.m."
   },
   {
     "questionId": "CDL-GK-113",
@@ -1712,14 +1712,14 @@
     "type": "CDL",
     "state": "ALL",
     "category": "safeDriving",
-    "question": "¿Cuándo es seguro usar el teléfono celular mientras conduce?",
+    "question": "¿Cuándo es seguro sostener y marcar un teléfono celular de mano mientras conduce?",
     "optionA": "En tramos rectos y largos de carretera con poco tráfico",
     "optionB": "Nunca; oríllese en un lugar seguro si necesita usarlo",
-    "optionC": "Solo para llamadas breves de emergencia para reportar accidentes",
+    "optionC": "Mientras está detenido brevemente en un semáforo o en el tráfico",
     "optionD": "Cuando hay poco tráfico y el camino está en condiciones ideales",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Usar el celular mientras conduce un vehículo comercial está prohibido y es peligroso. Siempre oríllese en un lugar seguro si necesita usar el teléfono."
+    "explanation": "Las normas federales prohíben sostener, marcar o enviar mensajes con un teléfono de mano mientras conduce un vehículo comercial, incluso cuando está detenido brevemente en el tráfico o en un semáforo. Primero oríllese en un lugar seguro; mientras conduce solo se permite el uso de manos libres con un solo toque."
   },
   {
     "questionId": "CDL-GK-124",
@@ -1839,7 +1839,7 @@
     "state": "ALL",
     "category": "safeDriving",
     "question": "¿Cuándo debe usar las luces intermitentes de emergencia?",
-    "optionA": "Al avanzar despacio en el tráfico para advertir a otros conductores",
+    "optionA": "Al conducir a velocidad normal bajo lluvia intensa",
     "optionB": "Al dar vueltas abiertas que requieren más tiempo",
     "optionC": "Al estacionarse en un lugar prohibido para indicar que es temporal",
     "optionD": "Cuando está detenido o avanza despacio en el camino",
@@ -1941,8 +1941,8 @@
     "optionB": "Pasarse a otro carril si es posible para ayudarlos a incorporarse",
     "optionC": "Ajustar su espacio de seguridad según el tráfico que se incorpora",
     "optionD": "Tanto B como C son formas correctas",
-    "correctAnswer": "C",
-    "correctIndex": 2,
+    "correctAnswer": "D",
+    "correctIndex": 3,
     "explanation": "Ante el tráfico que se incorpora, ajuste su distancia de seguimiento y su posición en el carril para crear un espacio seguro, y cámbiese de carril si puede hacerlo con seguridad para facilitar la circulación."
   },
   {
@@ -2205,7 +2205,7 @@
     "question": "¿Qué es lo más importante a considerar al acoplar un remolque?",
     "optionA": "La rapidez del acoplamiento y el ahorro de tiempo",
     "optionB": "El clima que afecta la visibilidad y la tracción al acoplar",
-    "optionC": "La altura del remolque respecto al tractor para conectarlo",
+    "optionC": "La distancia del remolque al andén de carga más cercano",
     "optionD": "La altura y la alineación correctas de la quinta rueda",
     "correctAnswer": "D",
     "correctIndex": 3,
@@ -2258,14 +2258,14 @@
     "type": "CDL",
     "state": "ALL",
     "category": "basicControl",
-    "question": "¿Cuándo debe evitar dar vueltas abiertas a la derecha?",
-    "optionA": "En zonas con peatones y ciclistas",
-    "optionB": "En las horas pico de tráfico",
-    "optionC": "Solo en zonas rurales",
-    "optionD": "Cuando el remolque va vacío",
+    "question": "¿Qué debe evitar al dar vuelta a la derecha con un vehículo largo?",
+    "optionA": "Abrirse hacia la izquierda antes de comenzar la vuelta",
+    "optionB": "Dar la vuelta despacio para que otros puedan reaccionar",
+    "optionC": "Mantener la parte trasera del vehículo cerca de la acera",
+    "optionD": "Abrirse al completar la vuelta",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Debe evitar las vueltas abiertas a la derecha en zonas con peatones y ciclistas, porque pueden quedar atrapados en el trayecto del vehículo durante la vuelta."
+    "explanation": "Abrirse hacia la izquierda antes de una vuelta a la derecha deja un espacio por donde un auto puede meterse a su derecha y ser golpeado. Dé la vuelta despacio, mantenga la parte trasera cerca de la acera y use el espacio adicional al completar la vuelta."
   },
   {
     "questionId": "CDL-GK-163",
@@ -2371,13 +2371,13 @@
     "state": "ALL",
     "category": "basicControl",
     "question": "¿Qué es el \"button hooking\" en la operación de vehículos comerciales?",
-    "optionA": "Un método para abrirse al dar vuelta a la derecha",
+    "optionA": "Un método para abrirse al completar una vuelta a la derecha",
     "optionB": "Una técnica para estacionarse en espacios reducidos",
     "optionC": "Un procedimiento para retroceder hacia andenes de carga",
     "optionD": "Un método para acoplar remolques",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "El \"button hooking\" consiste en abrirse hacia la izquierda antes de dar vuelta a la derecha para dejar suficiente espacio para que el remolque libre la esquina."
+    "explanation": "El \"button hooking\" es una técnica para dar vuelta a la derecha: mantenga la parte trasera cerca de la acera, avance más dentro de la intersección y luego gire con fuerza a la derecha, usando el espacio adicional al completar la vuelta. Abrirse hacia la izquierda antes de la vuelta no es \"button hooking\" y permite que los autos se metan a su derecha."
   },
   {
     "questionId": "CDL-GK-171",
@@ -2597,7 +2597,7 @@
     "question": "Al acoplar, ¿cómo sabe que las mordazas de la quinta rueda están trabadas?",
     "optionA": "Escuchando si hacen clic",
     "optionB": "Comprobando que las mordazas estén cerradas alrededor del perno rey",
-    "optionC": "Probando con un jalón suave hacia adelante",
+    "optionC": "Comprobando que el tren de aterrizaje esté totalmente bajado",
     "optionD": "Buscando una luz indicadora verde",
     "correctAnswer": "B",
     "correctIndex": 1,
@@ -2664,14 +2664,14 @@
     "type": "CDL",
     "state": "ALL",
     "category": "cargoHandling",
-    "question": "¿Cuál es el número mínimo de amarres requeridos para una carga de 5,000 libras?",
-    "optionA": "Un amarre por cada 2,500 libras",
+    "question": "¿Cuál es el número mínimo de amarres para un artículo de carga de 8 pies de largo que pesa 5,000 libras?",
+    "optionA": "Un amarre, porque mide menos de 10 pies",
     "optionB": "Al menos tres amarres sin importar el peso",
     "optionC": "Un amarre más uno por cada 5,000 libras adicionales",
-    "optionD": "Dos amarres sin importar la longitud",
+    "optionD": "Dos amarres, según su longitud y su peso",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Para una carga de 5,000 libras o menos, se requieren al menos dos amarres sin importar la longitud. Así se cumplen las normas mínimas de sujeción."
+    "explanation": "Según 49 CFR 393.110, un artículo de 5 a 10 pies de largo necesita al menos dos amarres sin importar el peso, y cualquier artículo de más de 1,100 libras necesita dos aunque sea más corto. Además, el límite de carga de trabajo combinado de los amarres debe ser al menos la mitad del peso de la carga, en este caso 2,500 libras."
   },
   {
     "questionId": "CDL-GK-192",
@@ -2708,7 +2708,7 @@
     "category": "cargoHandling",
     "question": "Al transportar una carga de 20 pies de largo, ¿cuál es el número mínimo de amarres requeridos?",
     "optionA": "Dos amarres sin importar el peso",
-    "optionB": "Tres amarres para cualquier carga de más de 15 pies",
+    "optionB": "Cuatro amarres para cualquier carga de más de 15 pies",
     "optionC": "Un amarre por cada 5 pies de longitud",
     "optionD": "Un amarre por cada 10 pies más uno adicional",
     "correctAnswer": "D",
@@ -2720,14 +2720,14 @@
     "type": "CDL",
     "state": "ALL",
     "category": "cargoHandling",
-    "question": "¿Cuál es el peso máximo que puede llevar el eje de dirección de un vehículo comercial?",
-    "optionA": "10,000 libras en condiciones normales",
-    "optionB": "12,000 libras según los límites federales de peso",
-    "optionC": "14,000 libras con los permisos correspondientes",
-    "optionD": "15,000 libras en el comercio interestatal",
+    "question": "¿Cuál es el peso máximo federal en un eje sencillo en el Sistema de Carreteras Interestatales?",
+    "optionA": "12,000 libras en cualquier eje sencillo",
+    "optionB": "20,000 libras en un eje sencillo",
+    "optionC": "34,000 libras en un eje sencillo",
+    "optionD": "40,000 libras en un eje sencillo",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Las normas federales limitan el peso del eje de dirección a 12,000 libras para no afectar el control de la dirección ni la eficacia del frenado."
+    "explanation": "Los límites federales en el Sistema Interestatal son 20,000 libras en un eje sencillo, 34,000 libras en un eje tándem y 80,000 libras de peso bruto vehicular. El peso del eje de dirección también está limitado por la capacidad de las llantas y del eje y por las leyes estatales."
   },
   {
     "questionId": "CDL-GK-196",
@@ -2820,12 +2820,12 @@
     "category": "cargoHandling",
     "question": "¿Cuándo está exenta una carga sellada o en contenedor de las inspecciones de sujeción de la carga?",
     "optionA": "Nunca, todas las cargas deben inspeccionarse para verificar su sujeción",
-    "optionB": "Cuando el remitente certifica que se cargó y sujetó correctamente",
+    "optionB": "Cuando le han ordenado no abrir la carga sellada",
     "optionC": "Solo al cruzar fronteras estatales con la documentación adecuada",
     "optionD": "Cuando el peso del contenedor es menor de 26,000 libras",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Los contenedores sellados están exentos de las inspecciones de sujeción de la carga cuando el remitente certifica que la carga se cargó correctamente y se sujetó de acuerdo con el reglamento."
+    "explanation": "Las reglas de inspección no se aplican a las cargas selladas que le han ordenado no abrir, ni a las cargas colocadas de modo que no es práctico inspeccionarlas. Aun así, debe asegurarse de no exceder los límites de peso bruto y de peso por eje."
   },
   {
     "questionId": "CDL-GK-203",
@@ -3019,8 +3019,8 @@
     "optionB": "Una mala distribución del peso puede reducir la eficacia del frenado",
     "optionC": "Más peso siempre mejora el frenado al aumentar la tracción",
     "optionD": "Solo afecta el frenado cuando la carga excede los límites legales",
-    "correctAnswer": "C",
-    "correctIndex": 2,
+    "correctAnswer": "B",
+    "correctIndex": 1,
     "explanation": "Una carga mal colocada y una mala distribución del peso pueden reducir mucho la eficacia del frenado, porque afectan la transferencia de peso, la tracción y la estabilidad del vehículo al frenar."
   },
   {
@@ -3059,11 +3059,11 @@
     "question": "¿Qué material de amarre NO debe usarse para sujetar la carga?",
     "optionA": "Cadenas de transporte grado 70 con los herrajes adecuados",
     "optionB": "Correas de tejido con límites de carga de trabajo apropiados",
-    "optionC": "Cuerda de manila o cordeles de fibra natural",
+    "optionC": "Correas de tejido con nudos, cortes o quemaduras",
     "optionD": "Cable de acero con los terminales adecuados",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "La cuerda de manila y otros cordeles de fibra natural están prohibidos para sujetar la carga, porque se debilitan al mojarse y no tienen la resistencia ni la confiabilidad de los materiales sintéticos aprobados."
+    "explanation": "Los amarres deben estar en buen estado. El reglamento federal no permite amarres con nudos, cortes, quemaduras u otros daños, porque pueden fallar sin aviso. Se pueden usar cadenas, correas de tejido, cable de acero y cuerda de fibra en buen estado con un límite de carga de trabajo conocido."
   },
   {
     "questionId": "CDL-GK-220",
@@ -3075,8 +3075,8 @@
     "optionB": "Solo en los intervalos de mantenimiento programado para evitar inspecciones excesivas",
     "optionC": "Cuando el clima cambie mucho y afecte la tracción en la superficie de la carretera",
     "optionD": "Según el programa de inspección y cuando el clima afecte la integridad de la sujeción",
-    "correctAnswer": "A",
-    "correctIndex": 0,
+    "correctAnswer": "D",
+    "correctIndex": 3,
     "explanation": "La sujeción de la carga debe ajustarse siempre que encuentre amarres flojos, dañados o insuficientes durante sus inspecciones regulares, no solo cuando el movimiento de la carga sea visible."
   },
   {
@@ -3159,8 +3159,8 @@
     "optionB": "El peso adicional de los materiales aislantes",
     "optionC": "La colocación de la carga sensible a la temperatura y la circulación del aire",
     "optionD": "Requisitos adicionales de amarre para la carga fría",
-    "correctAnswer": "D",
-    "correctIndex": 3,
+    "correctAnswer": "C",
+    "correctIndex": 2,
     "explanation": "La carga sensible a la temperatura debe colocarse de modo que el aire circule bien alrededor de los productos, para mantener la cadena de frío y evitar que se echen a perder."
   },
   {
@@ -3187,8 +3187,8 @@
     "optionB": "Usar el control de crucero para mantener una velocidad constante",
     "optionC": "Aumentar la distancia de seguimiento y evitar maniobras repentinas",
     "optionD": "Tomar las vueltas y curvas a mayor velocidad para tener estabilidad",
-    "correctAnswer": "D",
-    "correctIndex": 3,
+    "correctAnswer": "C",
+    "correctIndex": 2,
     "explanation": "Las cargas con centro de gravedad alto requieren menor velocidad en las curvas, mayor distancia de seguimiento y evitar maniobras repentinas para prevenir volcaduras."
   },
   {
@@ -3268,12 +3268,12 @@
     "category": "cargoHandling",
     "question": "¿Qué debe hacer si su equipo de amarre no tiene marcas visibles del límite de carga de trabajo?",
     "optionA": "Calcular la capacidad a partir de equipo similar",
-    "optionB": "No usar ese equipo para sujetar la carga",
+    "optionB": "Usar el límite de carga de trabajo predeterminado que fija el reglamento federal para ese tipo",
     "optionC": "Usar las especificaciones del fabricante si las tiene",
     "optionD": "Probar el equipo con cargas cada vez mayores",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "El equipo de amarre sin marcas visibles del límite de carga de trabajo no debe usarse, porque no se puede comprobar que su capacidad cumpla los requisitos del reglamento."
+    "explanation": "Según el reglamento federal, un amarre sin marca de límite de carga de trabajo se considera con el límite predeterminado indicado para su tipo y tamaño. Use ese valor al calcular si tiene suficientes amarres, y nunca adivine ni pruebe la capacidad usted mismo."
   },
   {
     "questionId": "CDL-GK-235",
@@ -3310,12 +3310,12 @@
     "category": "cargoHandling",
     "question": "¿Cuál es el número mínimo de amarres requerido para cualquier carga, sin importar su tamaño o peso?",
     "optionA": "Al menos dos amarres para cada carga",
-    "optionB": "Un amarre si la carga mide menos de 5 pies de largo",
+    "optionB": "Un amarre si la carga mide menos de 10 pies de largo",
     "optionC": "Tres amarres para cargas de más de 20 pies de largo",
     "optionD": "El número varía solo según el tipo de carga",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "El reglamento federal exige un mínimo de dos amarres para cada carga, sin importar su tamaño o peso, para tener respaldo en caso de que falle algún equipo."
+    "explanation": "El manual de la CDL dice que la carga debe tener al menos un amarre por cada 10 pies de carga y que, sin importar lo pequeña que sea, debe tener al menos dos amarres."
   },
   {
     "questionId": "CDL-GK-238",
@@ -3381,7 +3381,7 @@
     "question": "Si sus frenos fallan mientras maneja, ¿qué debe hacer primero?",
     "optionA": "Bombear rápidamente el pedal del freno",
     "optionB": "Aplicar el freno de estacionamiento de inmediato",
-    "optionC": "Cambiar a una velocidad más baja",
+    "optionC": "Poner la transmisión en neutral y avanzar por inercia",
     "optionD": "Reducir la velocidad de la transmisión y usar el freno de motor",
     "correctAnswer": "D",
     "correctIndex": 3,
@@ -3495,9 +3495,9 @@
     "optionB": "Echar agua sobre la llanta para apagar las llamas",
     "optionC": "Usar arena para sofocar el fuego y cortarle el oxígeno",
     "optionD": "Pedir ayuda profesional y evacuar el área inmediata",
-    "correctAnswer": "A",
-    "correctIndex": 0,
-    "explanation": "Los incendios de llantas arden a temperaturas muy altas y son difíciles de apagar. Si es posible, quite la llanta y ruédela lejos del vehículo para evitar que el fuego se propague."
+    "correctAnswer": "B",
+    "correctIndex": 1,
+    "explanation": "El manual de la CDL dice que en los incendios de llantas se usa agua para enfriar la llanta. Una llanta que se quema está muy caliente y puede volver a encenderse, así que siga enfriándola con mucha agua y no intente quitarla."
   },
   {
     "questionId": "CDL-GK-251",
@@ -3518,14 +3518,14 @@
     "type": "CDL",
     "state": "ALL",
     "category": "emergencyProcedures",
-    "question": "Si hay un incendio de materiales peligrosos, ¿cuántos segundos tiene para salir de su vehículo con seguridad?",
-    "optionA": "Unos 10 segundos o menos",
-    "optionB": "30 segundos para recoger sus cosas esenciales",
-    "optionC": "1 minuto si se mueve rápido",
-    "optionD": "5 minutos para una evacuación ordenada",
+    "question": "¿Qué debe hacer si un incendio afecta una carga de materiales peligrosos?",
+    "optionA": "Mantenerse lejos, alejar a los demás y pedir ayuda",
+    "optionB": "Abrir las puertas del remolque para que salga el humo",
+    "optionC": "Echarle agua de la boca de incendios más cercana",
+    "optionD": "Manejar a una estación de bomberos para que lo apaguen",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "En los incendios de materiales peligrosos, tiene aproximadamente 10 segundos o menos para salir del vehículo con seguridad antes de que la situación ponga en peligro su vida."
+    "explanation": "No intente combatir un incendio de materiales peligrosos a menos que tenga capacitación y equipo especiales. Mantenga a las personas lejos del vehículo, avise a las autoridades y dígales qué lleva la carga."
   },
   {
     "questionId": "CDL-GK-253",
@@ -3549,7 +3549,7 @@
     "question": "¿Cuál es la primera prioridad en el lugar de cualquier choque?",
     "optionA": "Mantener seguros a los heridos y conseguir ayuda médica",
     "optionB": "Intercambiar datos del seguro con todas las partes involucradas",
-    "optionC": "Sacar los vehículos del tránsito para evitar choques secundarios",
+    "optionC": "Mover usted mismo el vehículo del otro conductor para despejar la vía",
     "optionD": "Documentar el lugar con fotos para los reclamos al seguro",
     "correctAnswer": "A",
     "correctIndex": 0,
@@ -3574,14 +3574,14 @@
     "type": "CDL",
     "state": "ALL",
     "category": "emergencyProcedures",
-    "question": "En una carretera recta y plana, ¿a qué distancia debe colocarse el triángulo de advertencia más lejano?",
+    "question": "En una carretera recta y plana de doble sentido, ¿a qué distancia detrás de su vehículo debe colocarse el triángulo de advertencia trasero?",
     "optionA": "50 pies",
     "optionB": "75 pies",
     "optionC": "100 pies",
     "optionD": "200 pies",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "En carreteras rectas y planas, coloque el triángulo más lejano a 100 pies detrás de su vehículo para dar a los demás conductores suficiente distancia de aviso para reducir la velocidad o cambiar de carril."
+    "explanation": "En una carretera de doble sentido, coloque un triángulo a menos de 10 pies del vehículo del lado del tránsito, otro a unos 100 pies detrás y otro a unos 100 pies adelante. En una carretera dividida o de un solo sentido, los tres van detrás, a unos 10, 100 y 200 pies."
   },
   {
     "questionId": "CDL-GK-257",
@@ -3592,7 +3592,7 @@
     "optionA": "En 5 minutos",
     "optionB": "En 15 minutos",
     "optionC": "En 10 minutos",
-    "optionD": "Lo antes posible",
+    "optionD": "En 30 minutos",
     "correctAnswer": "C",
     "correctIndex": 2,
     "explanation": "El reglamento federal exige colocar los triángulos de advertencia en los 10 minutos siguientes a la detención, para que los demás conductores tengan un aviso adecuado de su vehículo detenido."
@@ -3620,7 +3620,7 @@
     "optionA": "No moverlo a menos que esté en peligro inmediato",
     "optionB": "Ponerlo en una posición cómoda",
     "optionC": "Darle agua si está consciente",
-    "optionD": "Hacer presión sobre cualquier herida que sangre",
+    "optionD": "Ayudarlo a ponerse de pie y caminar hasta su camión",
     "correctAnswer": "A",
     "correctIndex": 0,
     "explanation": "No mueva a los heridos a menos que estén en peligro inmediato por fuego o por el tránsito. Mover a alguien con una lesión de columna puede causar daños permanentes."
@@ -3735,7 +3735,7 @@
     "optionD": "Usar el freno de estacionamiento cuando fallan los frenos de servicio",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "El frenado intermitente consiste en aplicar los frenos a fondo hasta que se bloqueen las ruedas, luego soltarlos y volver a aplicarlos de inmediato. Esta técnica le permite conservar la capacidad de dirigir."
+    "explanation": "El frenado intermitente consiste en aplicar los frenos a fondo, soltarlos cuando se bloqueen las ruedas y volver a aplicarlos en cuanto las ruedas empiecen a girar de nuevo. Si los vuelve a aplicar antes de que giren las ruedas, el vehículo no se enderezará."
   },
   {
     "questionId": "CDL-GK-268",
@@ -3803,8 +3803,8 @@
     "optionB": "Es posible que el sistema ABS no funcione bien",
     "optionC": "Los frenos normales no funcionan",
     "optionD": "El freno de estacionamiento sigue puesto",
-    "correctAnswer": "A",
-    "correctIndex": 0,
+    "correctAnswer": "B",
+    "correctIndex": 1,
     "explanation": "Si la luz del ABS se queda encendida después de arrancar, indica que es posible que el sistema ABS no funcione bien. Sin embargo, su sistema de frenos normal sigue funcionando."
   },
   {
@@ -3817,8 +3817,8 @@
     "optionB": "Cuando otros conductores podrían asustarse y reaccionar de forma peligrosa",
     "optionC": "Cuando es de noche",
     "optionD": "Siempre debe usar la bocina en las emergencias",
-    "correctAnswer": "D",
-    "correctIndex": 3,
+    "correctAnswer": "B",
+    "correctIndex": 1,
     "explanation": "Hay situaciones poco comunes en las que la bocina podría asustar a otro conductor y provocar una reacción más peligrosa, por ejemplo, que se desvíe hacia su camino."
   },
   {
@@ -3869,13 +3869,13 @@
     "state": "ALL",
     "category": "emergencyProcedures",
     "question": "Al colocar los triángulos de advertencia en una carretera dividida, ¿dónde deben ponerse?",
-    "optionA": "Solo detrás de su vehículo",
+    "optionA": "Uno delante y dos detrás de su vehículo",
     "optionB": "En ambos lados de la carretera",
     "optionC": "Solo en su lado de la carretera",
     "optionD": "En el camellón central",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "En las carreteras divididas, coloque los triángulos de advertencia solo en su lado de la carretera, porque el tránsito del otro lado está separado y su vehículo detenido no lo afecta directamente."
+    "explanation": "En una carretera dividida o de un solo sentido, coloque los tres triángulos en su lado de la carretera, detrás de su vehículo hacia el tránsito que se acerca, a unos 10, 100 y 200 pies. Ninguno va delante del vehículo ni al otro lado del camellón."
   },
   {
     "questionId": "CDL-GK-278",
@@ -4166,10 +4166,10 @@
     "optionA": "Solo si el conductor resultó herido y fue hospitalizado",
     "optionB": "Solo en choques con más de $10,000 de daños a los vehículos",
     "optionC": "Solo si se llamó a la policía para investigar el lugar",
-    "optionD": "Después de cualquier choque con un muerto, un herido o una multa",
+    "optionD": "Tras un muerto, o una multa con un herido o un remolque",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "La prueba después de un choque es obligatoria cuando hay un muerto, un herido que requiere atención médica o el conductor recibe una multa por una infracción de tránsito en movimiento."
+    "explanation": "La prueba después de un choque es obligatoria tras cualquier choque con un muerto. También es obligatoria cuando alguien recibe atención médica por lesiones fuera del lugar, o un vehículo debe ser remolcado, y el conductor del CMV recibe una multa por una infracción de tránsito en movimiento."
   },
   {
     "questionId": "CDL-GK-299",
@@ -4359,7 +4359,7 @@
     "state": "ALL",
     "category": "alcoholDrugs",
     "question": "¿Qué sucede durante una orden de fuera de servicio relacionada con alcohol o drogas?",
-    "optionA": "Recibe un periodo de descanso de 24 horas",
+    "optionA": "Puede seguir manejando después de descansar 1 hora",
     "optionB": "Se le prohíbe de inmediato manejar durante 24 horas",
     "optionC": "Puede terminar su viaje actual",
     "optionD": "Debe buscar un conductor sustituto",
@@ -4393,7 +4393,7 @@
     "optionD": "No se requiere llevar registros",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Los empleadores deben conservar registros detallados de todas las pruebas de drogas y alcohol, incluidos resultados, capacitación e infracciones, durante al menos 5 años."
+    "explanation": "Los empleadores deben conservar los registros clave, como resultados positivos de alcohol, resultados positivos de drogas verificados, negativas a hacerse la prueba y evaluaciones para el regreso al trabajo, durante al menos 5 años. Los registros de pruebas negativas y canceladas se conservan durante 1 año."
   },
   {
     "questionId": "CDL-GK-315",
@@ -4473,11 +4473,11 @@
     "question": "¿Cuándo pueden los empleadores realizar pruebas de seguimiento después de un resultado positivo?",
     "optionA": "Nunca, una vez cumplido el requisito de la prueba inicial",
     "optionB": "Solo con aprobación escrita del sindicato y un convenio colectivo",
-    "optionC": "Hasta 6 pruebas sin previo aviso durante 60 meses",
+    "optionC": "Al menos 6 pruebas sin previo aviso en los primeros 12 meses",
     "optionD": "Pruebas mensuales obligatorias durante exactamente un año calendario",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Después de una prueba positiva y del regreso al trabajo, los empleadores pueden realizar hasta 6 pruebas de seguimiento sin previo aviso durante los primeros 60 meses de servicio."
+    "explanation": "Cuando un conductor regresa al trabajo, el profesional en abuso de sustancias fija un plan de seguimiento de al menos 6 pruebas sin previo aviso en los primeros 12 meses. Las pruebas de seguimiento pueden continuar hasta por 60 meses."
   },
   {
     "questionId": "CDL-GK-321",
@@ -4629,9 +4629,9 @@
     "optionB": "Desde la puesta hasta la salida del sol y con cualquier visibilidad deficiente",
     "optionC": "Solo en zonas urbanas muy pobladas con alumbrado público insuficiente",
     "optionD": "Desde una hora después de la puesta del sol hasta una hora antes de su salida",
-    "correctAnswer": "D",
-    "correctIndex": 3,
-    "explanation": "La mayoría de los estados exigen usar los faros desde una hora después de la puesta del sol hasta una hora antes de su salida, además de cuando la visibilidad es deficiente."
+    "correctAnswer": "B",
+    "correctIndex": 1,
+    "explanation": "Use los faros de noche y siempre que la visibilidad sea deficiente. Las leyes estatales fijan el horario exacto, por lo general desde 30 minutos después de la puesta del sol hasta 30 minutos antes de su salida, así que tenerlos encendidos desde la puesta hasta la salida del sol siempre cumple la regla."
   },
   {
     "questionId": "CDL-GK-332",
@@ -4654,12 +4654,12 @@
     "category": "nightDriving",
     "question": "¿Cuándo debe bajar las luces altas de sus faros?",
     "optionA": "Nunca, porque ofrecen la mejor visibilidad posible",
-    "optionB": "A menos de 500 pies del tráfico que viene de frente o de 300 pies cuando sigue a otro vehículo",
+    "optionB": "A menos de 500 pies del tráfico de frente o del vehículo que sigue",
     "optionC": "Solo con tráfico pesado y varios vehículos muy cerca",
     "optionD": "Solo al manejar dentro de la ciudad con alumbrado público adecuado",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Las luces altas deben bajarse a menos de 500 pies de los vehículos que vienen de frente o a menos de 300 pies cuando sigue a otro vehículo."
+    "explanation": "El manual de CDL indica bajar las luces altas a menos de 500 pies de un vehículo que viene de frente y cuando sigue a otro vehículo a menos de 500 pies, para no deslumbrar a otros conductores."
   },
   {
     "questionId": "CDL-GK-334",
@@ -4727,9 +4727,9 @@
     "optionB": "Tarde en la noche después de cenar",
     "optionC": "Del mediodía a las 2 PM",
     "optionD": "Justo después del amanecer",
-    "correctAnswer": "B",
-    "correctIndex": 1,
-    "explanation": "Las últimas horas de la noche y la madrugada (de 2 a 6 AM) son cuando el ritmo circadiano del cuerpo causa naturalmente más somnolencia."
+    "correctAnswer": "A",
+    "correctIndex": 0,
+    "explanation": "El ritmo circadiano del cuerpo hace que la somnolencia sea más probable en las primeras horas de la madrugada, entre la medianoche y las 6 AM, cuando el cuerpo espera estar dormido."
   },
   {
     "questionId": "CDL-GK-339",
@@ -4965,8 +4965,8 @@
     "optionB": "Mirar hacia el lado derecho del camino",
     "optionC": "Acelerar para pasarlo rápidamente",
     "optionD": "Encender también sus luces altas",
-    "correctAnswer": "A",
-    "correctIndex": 0,
+    "correctAnswer": "B",
+    "correctIndex": 1,
     "explanation": "Mirar hacia el lado derecho del camino ayuda a evitar el resplandor de las luces altas que vienen de frente y le permite mantener algo de visión hacia adelante."
   },
   {
@@ -5035,8 +5035,8 @@
     "optionB": "Mantener limpio el parabrisas",
     "optionC": "Mirar directamente las luces por un momento",
     "optionD": "Usar las luces altas para contrarrestar el resplandor",
-    "correctAnswer": "C",
-    "correctIndex": 2,
+    "correctAnswer": "B",
+    "correctIndex": 1,
     "explanation": "Un parabrisas limpio reduce el resplandor y mejora la visibilidad, porque elimina la suciedad y la película que dispersan e intensifican las luces brillantes."
   },
   {
@@ -5357,8 +5357,8 @@
     "optionB": "Debe pasar rápido por el agua estancada",
     "optionC": "Frene antes y con más suavidad de lo normal",
     "optionD": "La distancia de seguimiento puede seguir igual",
-    "correctAnswer": "B",
-    "correctIndex": 1,
+    "correctAnswer": "C",
+    "correctIndex": 2,
     "explanation": "La lluvia reduce la tracción y aumenta las distancias de detención, por lo que hay que frenar antes y con más suavidad que en condiciones secas."
   },
   {
@@ -5455,8 +5455,8 @@
     "optionB": "Usar cambios bajos para controlar la velocidad",
     "optionC": "Frenar con firmeza para mantener el control",
     "optionD": "Aumentar un poco la distancia de seguimiento",
-    "correctAnswer": "A",
-    "correctIndex": 0,
+    "correctAnswer": "B",
+    "correctIndex": 1,
     "explanation": "Los cambios bajos ofrecen mejor frenado con motor y una entrega de potencia más controlada al manejar con nieve y aguanieve."
   },
   {
@@ -5790,7 +5790,7 @@
     "optionA": "El embrague está desacoplado",
     "optionB": "El motor está apagado",
     "optionC": "Las RPM del motor son altas",
-    "optionD": "Está en el cambio bajo adecuado",
+    "optionD": "Está en el cambio más alto",
     "correctAnswer": "C",
     "correctIndex": 2,
     "explanation": "La eficacia del freno de motor aumenta con las RPM; seleccionar el cambio bajo adecuado mantiene las RPM altas para obtener la máxima fuerza de frenado."
@@ -5805,8 +5805,8 @@
     "optionB": "Cualquier vehículo que pierda el control de la velocidad en una bajada",
     "optionC": "Solo los vehículos de emergencia",
     "optionD": "Solo los automóviles de pasajeros",
-    "correctAnswer": "A",
-    "correctIndex": 0,
+    "correctAnswer": "B",
+    "correctIndex": 1,
     "explanation": "Cualquier vehículo que pierda el control de la velocidad en una bajada debe usar las rampas de escape en lugar de arriesgarse a un accidente más grave."
   },
   {
@@ -5819,8 +5819,8 @@
     "optionB": "Cambiar a un cambio más alto",
     "optionC": "Estar preparado para la bajada que viene",
     "optionD": "Encender las luces intermitentes de emergencia",
-    "correctAnswer": "A",
-    "correctIndex": 0,
+    "correctAnswer": "C",
+    "correctIndex": 2,
     "explanation": "Al acercarse a la cima hay que prepararse para lo que viene, que podría ser una bajada pronunciada que requiera seleccionar el cambio de inmediato."
   },
   {
@@ -5861,8 +5861,8 @@
     "optionB": "Usar calzas para las ruedas y el freno de estacionamiento",
     "optionC": "Dejar el vehículo en neutral",
     "optionD": "Apagar el motor para ahorrar combustible",
-    "correctAnswer": "A",
-    "correctIndex": 0,
+    "correctAnswer": "B",
+    "correctIndex": 1,
     "explanation": "Las calzas para las ruedas y el freno de estacionamiento ofrecen doble protección para que el vehículo no se desplace cuando está estacionado en una pendiente."
   },
   {
@@ -6015,8 +6015,8 @@
     "optionB": "Acelerar para enfriarlos con el flujo de aire",
     "optionC": "Echarles agua de inmediato",
     "optionD": "Detenerse y dejar que se enfríen antes de continuar",
-    "correctAnswer": "A",
-    "correctIndex": 0,
+    "correctAnswer": "D",
+    "correctIndex": 3,
     "explanation": "El olor a frenos calientes indica un peligroso desvanecimiento de los frenos; detenerse y dejar que se enfríen evita una falla de frenos y posibles accidentes."
   },
   {
@@ -6137,13 +6137,13 @@
     "state": "ALL",
     "category": "railroadCrossings",
     "question": "¿Cuando se detiene en un cruce de ferrocarril, usted debe?",
-    "optionA": "Apagar el motor y escuchar si vienen trenes",
-    "optionB": "Dejar el motor encendido y mirar a ambos lados",
+    "optionA": "Apagar el radio y los ventiladores, abrir la ventana y escuchar",
+    "optionB": "Subir el volumen del radio y fijarse solo en las señales",
     "optionC": "Poner el freno de estacionamiento",
     "optionD": "Encender las luces de emergencia",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Apagar el motor le permite escuchar si se acercan trenes, lo cual es parte del procedimiento obligatorio de parada."
+    "explanation": "En un cruce, apague el radio y los ventiladores ruidosos y abra la ventana para poder oír si se acerca un tren; luego mire a ambos lados. Mantenga el motor encendido para no ahogarlo."
   },
   {
     "questionId": "CDL-GK-440",
@@ -6180,7 +6180,7 @@
     "category": "railroadCrossings",
     "question": "¿Qué indica una señal en forma de cruz (crossbuck)?",
     "optionA": "Los trenes solo pasan según horario",
-    "optionB": "Ceda el paso a los trenes",
+    "optionB": "Los trenes deben cederle el paso",
     "optionC": "Esto es un cruce de ferrocarril",
     "optionD": "La velocidad máxima del tren",
     "correctAnswer": "C",
@@ -6365,8 +6365,8 @@
     "optionB": "Reducir la velocidad y avanzar con precaución",
     "optionC": "Detenerse en todos los cruces y seguir los procedimientos correctos",
     "optionD": "Pedir permiso por radio para cruzar",
-    "correctAnswer": "A",
-    "correctIndex": 0,
+    "correctAnswer": "C",
+    "correctIndex": 2,
     "explanation": "Los autobuses y los vehículos de materiales peligrosos deben detenerse en todos los cruces de ferrocarril y seguir procedimientos específicos, como escuchar y mirar si vienen trenes."
   },
   {
@@ -6409,7 +6409,7 @@
     "optionD": "Detenerse por completo",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "La ley exige que todo el tráfico se detenga cuando un autobús escolar muestra luces rojas intermitentes, ya que puede haber niños cruzando el camino."
+    "explanation": "Todos los estados exigen que el tráfico se detenga cuando un autobús escolar muestra luces rojas intermitentes, ya que puede haber niños cruzando el camino."
   },
   {
     "questionId": "CDL-GK-459",
@@ -6430,7 +6430,7 @@
     "type": "CDL",
     "state": "ALL",
     "category": "hazardPerception",
-    "question": "¿Al compartir el camino con ciclistas, cuál es la distancia mínima segura?",
+    "question": "¿Al rebasar a un ciclista, cuál es la separación mínima que exigen la mayoría de los estados?",
     "optionA": "Al menos 3 pies al rebasar",
     "optionB": "La misma distancia que con los automóviles de pasajeros",
     "optionC": "Un pie de separación es legalmente suficiente",
@@ -7179,7 +7179,7 @@
     "optionD": "El vehículo se jala hacia un lado al frenar normalmente",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Los ajustadores de holgura automáticos que funcionan bien mantienen el recorrido correcto de la varilla de empuje, normalmente no más de 1 a 1.5 pulgadas al aplicar los frenos."
+    "explanation": "Los ajustadores de holgura automáticos que funcionan bien mantienen el recorrido de la varilla de empuje dentro del límite de ajuste de esa cámara de freno. Si el recorrido es demasiado largo, o si un ajustador de holgura se mueve más de 1 pulgada aproximadamente al jalarlo con la mano con los frenos liberados, los frenos necesitan servicio."
   },
   {
     "questionId": "CDL-GK-514",
@@ -7298,14 +7298,14 @@
     "type": "CDL",
     "state": "ALL",
     "category": "brakingSystems",
-    "question": "¿Cuál es el recorrido máximo de la varilla de empuje en la mayoría de los sistemas de frenos de aire?",
-    "optionA": "Tres pulgadas en aplicaciones de servicio pesado",
-    "optionB": "De 1 a 1.5 pulgadas",
-    "optionC": "Cuatro pulgadas como máximo en cualquier condición",
-    "optionD": "Dos pulgadas y media en sistemas estándar",
+    "question": "Con el motor apagado y los frenos liberados, ¿cuánto debe moverse un ajustador de holgura manual al jalarlo con fuerza?",
+    "optionA": "Tres pulgadas o más es normal",
+    "optionB": "No más de 1 pulgada aproximadamente",
+    "optionC": "Al menos cuatro pulgadas",
+    "optionD": "Unas dos pulgadas y media",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "En la mayoría de los sistemas de frenos de aire, el recorrido de la varilla de empuje no debe ser de más de 1 a 1.5 pulgadas con los frenos totalmente aplicados, lo que indica un ajuste correcto."
+    "explanation": "El manual de CDL indica jalar con fuerza cada ajustador de holgura con el motor apagado y los frenos liberados. Si se mueve más de 1 pulgada aproximadamente donde se une la varilla de empuje, probablemente necesita ajuste."
   },
   {
     "questionId": "CDL-GK-523",
@@ -7333,7 +7333,7 @@
     "optionD": "Solo en la inspección anual",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Los ajustadores de holgura manuales deben ajustarse cada vez que el recorrido de la varilla de empuje supere las especificaciones del fabricante, normalmente cuando pasa de 1 a 1.5 pulgadas."
+    "explanation": "Los ajustadores de holgura manuales deben ajustarse cada vez que el recorrido de la varilla de empuje supere el límite de esa cámara de freno. Una revisión rápida: con los frenos liberados, si un ajustador de holgura se mueve más de 1 pulgada aproximadamente al jalarlo con la mano, probablemente necesita ajuste."
   },
   {
     "questionId": "CDL-GK-525",
@@ -7550,14 +7550,14 @@
     "type": "CDL",
     "state": "ALL",
     "category": "brakingSystems",
-    "question": "¿Cuál es la tasa máxima permitida de pérdida de aire con los frenos liberados?",
+    "question": "Con los frenos liberados, ¿cuál es la tasa máxima permitida de pérdida de aire en un vehículo combinado?",
     "optionA": "3 psi por minuto",
     "optionB": "5 psi por minuto",
     "optionC": "7 psi por minuto",
     "optionD": "10 psi por minuto",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Con los frenos liberados, la pérdida de presión de aire no debe superar 3 psi por minuto, lo que indica una tasa de fugas aceptable en el sistema de aire."
+    "explanation": "Con el motor apagado y los frenos liberados, la pérdida de aire debe ser menor de 2 psi por minuto en un vehículo sencillo y menor de 3 psi por minuto en un vehículo combinado."
   },
   {
     "questionId": "CDL-GK-541",
@@ -7690,14 +7690,14 @@
     "type": "CDL",
     "state": "ALL",
     "category": "brakingSystems",
-    "question": "¿Cuál es la pérdida máxima de aire permitida con los frenos aplicados?",
+    "question": "Con los frenos totalmente aplicados, ¿cuál es la pérdida máxima de aire permitida en un vehículo sencillo?",
     "optionA": "3 psi por minuto",
     "optionB": "6 psi por minuto",
     "optionC": "10 psi por minuto",
     "optionD": "15 psi por minuto",
-    "correctAnswer": "B",
-    "correctIndex": 1,
-    "explanation": "Con los frenos totalmente aplicados, la pérdida de presión de aire no debe superar 6 psi por minuto, lo que indica que el sistema está en buen estado bajo carga."
+    "correctAnswer": "A",
+    "correctIndex": 0,
+    "explanation": "Después de la caída inicial de presión con el freno de servicio totalmente aplicado, la pérdida de aire debe ser menor de 3 psi por minuto en un vehículo sencillo y menor de 4 psi por minuto en un vehículo combinado."
   },
   {
     "questionId": "CDL-GK-551",
@@ -8138,7 +8138,7 @@
     "type": "CDL",
     "state": "ALL",
     "category": "vehicleSystems",
-    "question": "¿Qué debe verificar del tren de aterrizaje antes de acoplarse a un remolque?",
+    "question": "Después de acoplarse a un remolque, ¿qué debe verificar del tren de aterrizaje antes de arrancar?",
     "optionA": "Que esté totalmente levantado y la manivela asegurada",
     "optionB": "Que esté parcialmente bajado para dar estabilidad al acoplar",
     "optionC": "Que esté desconectado del remolque y guardado aparte",
@@ -8168,7 +8168,7 @@
     "category": "vehicleSystems",
     "question": "¿Qué debe hacer si se enciende la luz de advertencia del alternador?",
     "optionA": "Seguir conduciendo normalmente sin hacer caso a la luz",
-    "optionB": "Apagar todo el equipo eléctrico innecesario para ahorrar energía",
+    "optionB": "Encender luces adicionales para probar la fuerza de la batería",
     "optionC": "Acelerar el motor para cargar más rápido y apagar la luz",
     "optionD": "Detenerse en cuanto sea seguro y hacer revisar el sistema de carga",
     "correctAnswer": "D",

@@ -10,6 +10,7 @@ import {
 } from "@/lib/testCatalog";
 import { TestIcon } from "@/components/TestIcon";
 import { hasTigerSet } from "@/lib/tigerAssets";
+import { LANGUAGES } from "@/i18n";
 
 export function TestCard({ test }: { test: TestCatalogEntry }) {
   return (
@@ -28,6 +29,7 @@ export function TestCard({ test }: { test: TestCatalogEntry }) {
           </div>
         </div>
         <p className="flex-1 text-gray-600 dark:text-gray-300">{test.blurb}</p>
+        {test.languages.length > 1 && <LanguageFlags languages={test.languages} />}
         <div className="mt-5 flex items-center justify-between text-sm">
           <span className="text-gray-500 dark:text-gray-400">
             {test.questions} questions · {test.pricing ?? "Free"}
@@ -38,6 +40,22 @@ export function TestCard({ test }: { test: TestCatalogEntry }) {
         </div>
       </Link>
     </div>
+  );
+}
+
+/** The flags of every language a test comes in, same flags as the language switcher. */
+function LanguageFlags({ languages }: { languages: TestCatalogEntry["languages"] }) {
+  const langs = LANGUAGES.filter((l) => languages.includes(l.code));
+  const names = langs.map((l) => l.englishName).join(", ");
+  return (
+    <p className="mt-4 flex items-center gap-1.5 text-sm text-gray-500 dark:text-gray-400" title={`Available in ${names}`}>
+      <span className="sr-only">Available in {names}</span>
+      {langs.map((l) => (
+        <span key={l.code} aria-hidden="true" className="text-lg leading-none">
+          {l.flag}
+        </span>
+      ))}
+    </p>
   );
 }
 

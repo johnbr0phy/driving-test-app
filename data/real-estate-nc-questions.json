@@ -326,7 +326,7 @@
     "optionD": "Words of conveyance (granting clause)",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "A valid deed needs a competent grantor, an identifiable grantee, consideration, a granting clause, a legal description, the grantor's signature, and delivery and acceptance. The grantee usually does not sign, and recording is not required for validity between the parties.",
+    "explanation": "A valid deed needs a competent grantor, an identifiable grantee, words of conveyance, an adequate legal description, the grantor's signature, and delivery and acceptance. The grantee usually does not sign. Recording protects against later purchasers (G.S. 47-18), and in North Carolina a deed of gift is void unless recorded within two years (G.S. 47-26).",
     "sourceQuestionId": "RE-OWN-017"
   },
   {
@@ -996,7 +996,7 @@
     "category": "reContractsAgency",
     "question": "In an in-house sale using designated agency, a provisional broker is designated to represent the buyer. Who may not be designated to represent the seller?",
     "optionA": "Any full broker at the firm",
-    "optionB": "A broker from another office",
+    "optionB": "A broker in the firm's other office",
     "optionC": "The broker who took the listing",
     "optionD": "That provisional broker's BIC",
     "correctAnswer": "D",
@@ -1286,7 +1286,7 @@
     "optionD": "Any amount, if it is ledgered",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Rule 58A .0117(c)(4)(C) lets a broker keep a maximum of $100 of company funds in the trust account to pay its service charges, tracked on a separate company ledger. Any other firm money in the account is commingling under G.S. 93A-6(a)(12).",
+    "explanation": "Rule 58A .0117(c)(4)(C) lets a broker keep a maximum of $100 of company funds in the trust account to pay its service charges (more only when monthly charges exceed $100), tracked on a separate company ledger. Any other firm money in the account is commingling under G.S. 93A-6(a)(12).",
     "sourceQuestionId": "RENC-NCPRC-006"
   },
   {
@@ -1774,14 +1774,14 @@
     "state": "NC",
     "questionId": "RENC-NCOTH-001",
     "category": "reDisclosures",
-    "question": "A buyer makes an offer without receiving the Residential Property Disclosure Statement, and the seller accepts. Unless settlement or occupancy comes first, the buyer's right to cancel ends at the end of the:",
+    "question": "A buyer makes an offer without receiving the Residential Property Disclosure Statement, the seller accepts, and the statement is never delivered. Unless settlement or occupancy comes first, the buyer's right to cancel ends at the end of the:",
     "optionA": "Third calendar day after the contract",
     "optionB": "Fifth calendar day after receipt",
     "optionC": "Tenth calendar day after the contract",
     "optionD": "Last day before closing",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "G.S. 47E-5(b) lets the buyer cancel when the statement was not delivered by the time of the offer, but the right ends at the earliest of the third calendar day after receipt, the third calendar day after the contract was made, or settlement or occupancy. A delivery after the contract therefore cannot extend it past the third day after contract.",
+    "explanation": "G.S. 47E-5(b) lets the buyer cancel when the statement was not delivered by the time of the offer, but the right ends at the earliest of the third calendar day after receipt, the third calendar day after the contract was made, or settlement or occupancy. With no statement ever delivered, the third day after the contract is the limit; a late delivery cannot extend it.",
     "sourceQuestionId": "RENC-NCOTH-001"
   },
   {

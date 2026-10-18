@@ -602,6 +602,21 @@
   {
     "type": "REALESTATE",
     "state": "IL",
+    "questionId": "REIL-CON-006",
+    "category": "reContractsAgency",
+    "question": "Under the Statute of Frauds, which lease generally must be in writing to be enforceable?",
+    "optionA": "A month-to-month residential lease",
+    "optionB": "A six-month apartment lease",
+    "optionC": "A lease longer than one year",
+    "optionD": "Any lease that requires a security deposit",
+    "correctAnswer": "C",
+    "correctIndex": 2,
+    "explanation": "The Statute of Frauds covers real estate sales and leases for more than one year. A security deposit does not by itself trigger the writing requirement.",
+    "sourceQuestionId": "RE-CON-006"
+  },
+  {
+    "type": "REALESTATE",
+    "state": "IL",
     "questionId": "REIL-CON-007",
     "category": "reContractsAgency",
     "question": "A 17-year-old signs a contract to buy a condominium from an adult seller. Under general contract law, the contract is:",
@@ -703,21 +718,6 @@
     "correctIndex": 2,
     "explanation": "In an assignment the original party stays secondarily liable. A novation substitutes a new party or contract and releases the original party, which did not happen here.",
     "sourceQuestionId": "RE-CON-016"
-  },
-  {
-    "type": "REALESTATE",
-    "state": "IL",
-    "questionId": "REIL-CON-017",
-    "category": "reContractsAgency",
-    "question": "Under the federal E-SIGN Act and the Uniform Electronic Transactions Act, an electronic signature on a purchase contract is:",
-    "optionA": "Valid only if a notary witnesses the electronic signing",
-    "optionB": "Valid only for leases under one year",
-    "optionC": "As legally effective as a handwritten signature",
-    "optionD": "Effective only after the deed is recorded",
-    "correctAnswer": "C",
-    "correctIndex": 2,
-    "explanation": "E-SIGN and UETA give electronic signatures and records the same legal effect as paper ones. Notarization is not required for a sales contract to be signed electronically.",
-    "sourceQuestionId": "RE-CON-017"
   },
   {
     "type": "REALESTATE",

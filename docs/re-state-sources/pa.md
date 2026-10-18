@@ -11,7 +11,7 @@ All sources accessed 2026-10-18. Local copies (PDFs and extracted text) were kep
 | Candidate handbook | Pennsylvania Real Estate Commission Candidate Handbook #093900, October 2026 | https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/093900.pdf |
 | Content outlines | #093901, 03/2026: national/general salesperson outline effective April 1, 2025; Pennsylvania salesperson state outline effective March 16, 2026 | https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/093901.pdf |
 | National portion | 80 scored items + 5 to 10 pretest, 150 minutes | Handbook "Available Exams and Time Allotted" table; outline #093901 |
-| State portion | 40 scored items + 10 pretest, 60 minutes | Handbook table; PA salesperson outline ("made up of 40 scored items ... also contains ten pretest items") |
+| State portion | 40 scored items + 10 pretest (the handbook table says 5 to 10), 60 minutes | Handbook table; PA salesperson outline ("made up of 40 scored items ... also contains ten pretest items") |
 | Pass mark | 75% minimum passing score on each portion (scaled 0 to 100; numeric score shown only to failing candidates) | Handbook table and "Score Explanation" |
 | Parts scored separately | Yes. A candidate who passes one part and fails the other retakes only the failed part within the authorization period | Handbook "Retaking the Exam" |
 | Score validity | Exam results are good for 3 years; the license application must reach the Commission within 3 years of passing | Handbook; RELRA 522(c); 49 Pa. Code 35.223(a)(1) |
@@ -49,7 +49,7 @@ Notes from the text: 49 Pa. Code 35.272 still says 60 hours of pre-license educa
 | REPA-PACOM-005 | rePractice | RELRA 604(a) |
 | REPA-PALIC-001 | rePractice | RELRA 521(2) (Act 75 of 2018); Pearson VUE handbook #093900 |
 | REPA-PALIC-002 | rePractice | RELRA 522(c); 49 Pa. Code 35.223(a)(1); handbook |
-| REPA-PALIC-003 | rePractice | RELRA 201 (broker, salesperson, wholesale transaction), 304(1) (Act 52 of 2024) |
+| REPA-PALIC-003 | rePractice | RELRA 201 (broker, salesperson, wholesale transaction), 304(1) (Act 52 of 2024, signed July 8, 2024, effective January 4, 2025) |
 | REPA-PALIC-004 | rePractice | RELRA 304(5), 201 |
 | REPA-PALIC-005 | rePractice | RELRA 501(b), 404.1(e)(4) |
 | REPA-PALIC-006 | rePractice | RELRA 404.1(b); 49 Pa. Code 35.382(a) |
@@ -100,14 +100,14 @@ Notes from the text: 49 Pa. Code 35.272 still says 60 hours of pre-license educa
 |---|---|
 | RE-FIN-001 | Deed of trust with a trustee's nonjudicial sale; Pennsylvania uses mortgages and judicial foreclosure |
 | RE-OWN-004 | Community property; Pennsylvania is not a community property state |
-| RE-OWN-021 | Hypothetical 12-year adverse possession period; Pennsylvania's is 21 years (42 Pa.C.S. 5530) |
+| RE-OWN-021 | Hypothetical 12-year adverse possession period; Pennsylvania's periods are 21 years in general (42 Pa.C.S. 5530) and 10 years for a lot of half an acre or less improved by a single-family dwelling (42 Pa.C.S. 5527.1, effective June 2019) |
 | RE-DISC-015 | Keys "requirements vary by state"; Pennsylvania's Seller Disclosure Law is tested by REPA-PAMSC-001 |
 | RE-DISC-016 | Same stem as RE-CON-037, which is on the form |
 | RE-CON-028 | Keys "transaction broker"; the Pennsylvania status is transaction licensee (RELRA 606.6), tested by REPA-PAAGY-006 |
 | RE-PRAC-009 | Net listing keyed as the broker keeping the excess; 49 Pa. Code 35.332(b) requires an exclusive listing to state the commission expected, so the item could mislead |
 | RE-VAL-023 | Same $72,000 NOI and $900,000 answer as RE-MATH-004; RE-VAL-024 (GRM) used instead |
+| RE-FIN-003 | Lien theory vs title theory: hypothetical, but Pennsylvania is usually classed as title-theory (or intermediate), so a Pennsylvania candidate could read the lien-theory key as the local rule; RE-FIN-006 (due-on-sale clause) used instead |
 
-RE-FIN-003 (lien theory) is kept as the national concept it tests; it makes no claim about Pennsylvania, which courts often describe as a title-theory state.
 
 ## Category table
 | Category | National | Pennsylvania | Total |

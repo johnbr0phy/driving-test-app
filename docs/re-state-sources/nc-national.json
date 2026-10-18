@@ -130,6 +130,9 @@
    "question": "In a deed of trust, which party holds title for the lender and may conduct a foreclosure sale under a power of sale if the borrower defaults?",
    "explanation": "The trustee holds title on behalf of the lender (beneficiary) and has the power of sale; the borrower is the trustor. In North Carolina a power of sale foreclosure first requires a hearing before the clerk of superior court under G.S. 45-21.16."
   },
+  "RE-OWN-017": {
+   "explanation": "A valid deed needs a competent grantor, an identifiable grantee, words of conveyance, an adequate legal description, the grantor's signature, and delivery and acceptance. The grantee usually does not sign. Recording protects against later purchasers (G.S. 47-18), and in North Carolina a deed of gift is void unless recorded within two years (G.S. 47-26)."
+  },
   "RE-FIN-013": {
    "question": "A title company offers a broker $200 for every buyer the broker refers to it. Under RESPA, accepting this payment is:",
    "optionA": "Legal if paid through the broker's firm",

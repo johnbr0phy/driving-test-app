@@ -67,7 +67,7 @@
   "RE-DISC-011",
   "RE-DISC-014",
   "RE-DISC-017",
-  "RE-FIN-003",
+  "RE-FIN-006",
   "RE-FIN-004",
   "RE-FIN-008",
   "RE-FIN-012",
@@ -112,7 +112,8 @@
  "excluded": {
   "RE-FIN-001": "Deed of trust trustee and nonjudicial sale: Pennsylvania real estate is financed with mortgages and foreclosed through the courts, so the item tests an instrument a Pennsylvania closing does not use.",
   "RE-OWN-004": "Community property: Pennsylvania is not a community property state, and the item could mislead a Pennsylvania candidate about marital property.",
-  "RE-OWN-021": "Hypothetical 12-year adverse possession period; Pennsylvania's period is 21 years, so the stated figure could mislead.",
+  "RE-OWN-021": "Hypothetical 12-year adverse possession period; Pennsylvania's periods are 21 years in general (42 Pa.C.S. 5530) and 10 years for a lot of half an acre or less improved by a single-family dwelling (42 Pa.C.S. 5527.1, effective June 2019), so the stated figure could mislead.",
+  "RE-FIN-003": "Lien theory versus title theory: the item is hypothetical, but Pennsylvania is usually classed as a title-theory (or intermediate) state, and a Pennsylvania candidate could take the lien-theory answer as the local rule; replaced by RE-FIN-006 (due-on-sale clause), another mortgage-concepts item.",
   "RE-DISC-015": "Keys that seller disclosure requirements vary by state; Pennsylvania has a specific statute (68 Pa.C.S. Chapter 73) tested by REPA-PAMSC-001 instead.",
   "RE-DISC-016": "Near-duplicate of RE-CON-037 (same flooding basement stem), which is on the form.",
   "RE-PRAC-009": "Net listing keyed as the broker keeping the excess; 49 Pa. Code 35.332 requires an exclusive listing to state the price and the commission expected, so a net arrangement sits badly with Pennsylvania rules and the item could mislead.",

@@ -866,7 +866,7 @@
     "optionD": "Cannot recover a fee from the buyer",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Under RELRA section 606.1(b)(1) and 49 Pa. Code 35.281(c), a licensee may perform services before an agreement is signed but is not entitled to recover a fee from the consumer without one. Only an open listing or nonexclusive buyer agency may be oral, and then only with a written memorandum.",
+    "explanation": "Under RELRA section 606.1(b)(1) and 49 Pa. Code 35.281(c), a licensee may perform services before an agreement is signed but is not entitled to recover a fee from the consumer without one. An open listing or nonexclusive buyer agency may be oral, but only if the consumer gets a written memorandum of its terms.",
     "sourceQuestionId": "REPA-PAAGY-008"
   },
   {
@@ -1024,14 +1024,14 @@
     "state": "PA",
     "questionId": "REPA-PALIC-003",
     "category": "rePractice",
-    "question": "Under RELRA as amended in 2024, a person who contracts to buy a house and sells that contract to an investor for a fee, without taking title, must:",
+    "question": "Since Act 52 of 2024 took effect in January 2025, a person who contracts to buy a house and then assigns that contract to an investor for a fee, without ever taking title, must:",
     "optionA": "Register as a wholesaler only",
     "optionB": "Post a bond with the Commission",
     "optionC": "Hold a real estate license",
     "optionD": "Do nothing, as the equitable owner",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Act 52 of 2024 added the wholesale transaction to RELRA section 201, made anyone who engages in one, for themselves or for another, a broker, and amended section 304(1) so the owner exclusion does not apply. Holding only an equitable interest is exactly what the definition covers.",
+    "explanation": "Act 52 of 2024, effective January 4, 2025, added the wholesale transaction (assigning an equitable interest in residential property for a fee without taking title) to RELRA section 201, made anyone who engages in one a broker, and amended section 304(1) so the owner exclusion does not apply. Holding only an equitable interest is exactly what the definition covers.",
     "sourceQuestionId": "REPA-PALIC-003"
   },
   {
@@ -1592,21 +1592,6 @@
   {
     "type": "REALESTATE",
     "state": "PA",
-    "questionId": "REPA-FIN-003",
-    "category": "reFinancing",
-    "question": "In a lien-theory state, a borrower who signs a mortgage to finance a home purchase:",
-    "optionA": "Conveys legal title to the lender until payoff",
-    "optionB": "Keeps legal title; the lender holds a lien",
-    "optionC": "Conveys legal title to a neutral trustee",
-    "optionD": "Receives only equitable title until payoff",
-    "correctAnswer": "B",
-    "correctIndex": 1,
-    "explanation": "In lien-theory states the mortgage creates only a lien, and the borrower (mortgagor) keeps legal title. In title-theory states the lender holds legal title until the loan is repaid, which is the tempting but wrong answer here.",
-    "sourceQuestionId": "RE-FIN-003"
-  },
-  {
-    "type": "REALESTATE",
-    "state": "PA",
     "questionId": "REPA-FIN-004",
     "category": "reFinancing",
     "question": "A bank originates conforming mortgage loans and then sells them to Fannie Mae to obtain more money to lend. The sale takes place in the:",
@@ -1618,6 +1603,21 @@
     "correctIndex": 3,
     "explanation": "Fannie Mae, Freddie Mac and Ginnie Mae operate in the secondary market, buying or guaranteeing loans so lenders can replenish funds. The primary market is where the bank originally made the loans to borrowers.",
     "sourceQuestionId": "RE-FIN-004"
+  },
+  {
+    "type": "REALESTATE",
+    "state": "PA",
+    "questionId": "REPA-FIN-006",
+    "category": "reFinancing",
+    "question": "A homeowner sells the property to a buyer without paying off the existing loan, and the lender demands the entire balance immediately. The lender is enforcing the:",
+    "optionA": "Defeasance clause",
+    "optionB": "Due-on-sale clause",
+    "optionC": "Subordination clause",
+    "optionD": "Prepayment clause",
+    "correctAnswer": "B",
+    "correctIndex": 1,
+    "explanation": "A due-on-sale (alienation) clause lets the lender accelerate the debt when the property is transferred. The defeasance clause requires the lender to release the lien when the loan is paid in full, which is the opposite situation.",
+    "sourceQuestionId": "RE-FIN-006"
   },
   {
     "type": "REALESTATE",

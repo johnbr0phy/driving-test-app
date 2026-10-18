@@ -26,6 +26,7 @@ import { usePurchaseReturn } from "@/hooks/usePurchaseReturn";
 import { hasDrillProgress, isDrillLocked, isTestLocked, otherPremiumExams } from "@/lib/v2/premium";
 import { useV2Paywall, V2Paywall } from "./V2Paywall";
 import { SuperAmazingCard } from "@/components/SuperAmazingCard";
+import { ClassBanner } from "@/components/exam/ClassBanner";
 
 function heroTitle(done: number, total: number, completedTitle = "You're ready"): string {
   if (done === 0) return `Complete all ${total} steps`;
@@ -168,6 +169,7 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
           <Suspense fallback={null}>
             <PurchaseBanner exam={exam} />
           </Suspense>
+          <ClassBanner examId={exam.id} className="mb-4" />
           {signedOut && (
             <GuestSaveCard
               className="mb-4"

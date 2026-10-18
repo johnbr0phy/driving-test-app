@@ -18,6 +18,7 @@ import { QuestionView } from "./QuestionView";
 import { Timer, formatClock } from "./Timer";
 import { Calculator } from "./Calculator";
 import { RichText } from "./RichText";
+import { recordClassAnswerById, recordClassTest } from "@/lib/classProgress";
 
 /**
  * Full-length exam simulation: section intro, timed module, review screen,
@@ -77,6 +78,9 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
     (s: TestSessionV2) => {
       const result = scoreSession(exam, s, byId);
       addResult(result);
+      // A finished test reports every item to the student's class, if any.
+      for (const item of result.items) recordClassAnswerById(exam.id, item.id, item.domain, item.correct);
+      recordClassTest(exam.id, result.testNumber, result.items.filter((i) => i.correct).length, result.items.length);
       removeSession(s.key);
       router.replace(routes.results(testNumber));
     },

@@ -9,8 +9,14 @@ import Link from "next/link";
 import { Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { classExamHome, normalizeClassCode, type ClassPublicInfo } from "@/lib/classes";
+import { DMV_EXAM_ID, classExamHome, normalizeClassCode, type ClassPublicInfo } from "@/lib/classes";
 import { getMembership, joinClass } from "@/lib/classProgress";
+import { useAuth } from "@/contexts/AuthContext";
+import { useStore } from "@/store/useStore";
+import { useHydration } from "@/hooks/useHydration";
+import { states } from "@/data/states";
+
+const stateName = (code: string | null | undefined) => states.find((s) => s.code === code)?.name ?? code ?? "";
 
 export default function JoinClassPage() {
   const params = useParams();
@@ -22,6 +28,12 @@ export default function JoinClassPage() {
   const [joined, setJoined] = useState(false);
   const [error, setError] = useState("");
   const [busy, setBusy] = useState(false);
+  const { user } = useAuth();
+  const hydrated = useHydration();
+  const selectedState = useStore((st) => st.selectedState);
+  const setSelectedState = useStore((st) => st.setSelectedState);
+  const isGuest = useStore((st) => st.isGuest);
+  const startGuestSession = useStore((st) => st.startGuestSession);
 
   useEffect(() => {
     let alive = true;
@@ -42,7 +54,12 @@ export default function JoinClassPage() {
     };
   }, [code]);
 
-  const submit = async (e: React.FormEvent) => {
+  // A DMV class is for one state. A student practicing another state chooses:
+  // switch (which resets their DMV progress, as Settings warns) or keep theirs.
+  const dmvState = info?.examId === DMV_EXAM_ID ? info.state : undefined;
+  const otherState = !!dmvState && hydrated && !!selectedState && selectedState !== dmvState ? selectedState : null;
+
+  const submit = async (e: React.FormEvent, switchState = true) => {
     e.preventDefault();
     if (!info) return;
     if (!name.trim()) {
@@ -53,6 +70,10 @@ export default function JoinClassPage() {
     setError("");
     try {
       await joinClass(info, name);
+      if (dmvState) {
+        if (!user && !isGuest) startGuestSession();
+        if (!selectedState || (switchState && selectedState !== dmvState)) setSelectedState(dmvState);
+      }
       router.push(classExamHome(info.examId));
     } catch (err) {
       setError(err instanceof Error ? err.message : "Couldn't join. Try again.");
@@ -97,9 +118,24 @@ export default function JoinClassPage() {
               autoFocus={!joined}
             />
             {error && <p className="text-sm text-red-600 dark:text-red-400 mt-2">{error}</p>}
+            {otherState && (
+              <p className="text-sm text-amber-800 dark:text-amber-200 bg-amber-50 dark:bg-amber-950 rounded-lg px-3 py-2 mt-4">
+                This class practices for {stateName(dmvState)}. You&apos;re set up for {stateName(otherState)}; switching resets your {stateName(otherState)} DMV progress on this device.
+              </p>
+            )}
             <Button type="submit" disabled={busy} className="w-full mt-4 bg-black dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200">
-              {busy ? "Joining…" : joined ? "Continue practicing" : "Start practicing"}
+              {busy ? "Joining…" : otherState ? `Switch to ${stateName(dmvState)} and start` : joined ? "Continue practicing" : "Start practicing"}
             </Button>
+            {otherState && (
+              <button
+                type="button"
+                disabled={busy}
+                onClick={(e) => void submit(e as unknown as React.FormEvent, false)}
+                className="w-full mt-2 text-sm underline text-gray-700 dark:text-gray-200"
+              >
+                Keep practicing {stateName(otherState)}
+              </button>
+            )}
             <p className="text-xs text-gray-500 dark:text-gray-400 mt-3">
               {info.teacherName} will see your practice scores on this exam: questions answered, accuracy and test scores. Free, no account needed.
             </p>

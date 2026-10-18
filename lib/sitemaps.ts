@@ -17,8 +17,7 @@ import {
 //   /sitemaps/dmv.xml       home, state hub, 51 state DMV pages
 //   /sitemaps/dmv-es-vi-ko.xml  Spanish, Vietnamese and Korean DMV pages
 //   /sitemaps/exams.xml     /tests hub and every exam landing
-//   /sitemaps/schools.xml   driving school pages (Firestore)
-export const SITEMAP_SEGMENTS = ["dmv", "dmv-es-vi-ko", "exams", "schools"] as const;
+export const SITEMAP_SEGMENTS = ["dmv", "dmv-es-vi-ko", "exams"] as const;
 export type SitemapSegment = (typeof SITEMAP_SEGMENTS)[number];
 
 export interface SitemapEntry {
@@ -33,21 +32,6 @@ export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.i
 
 export function isSitemapSegment(value: string): value is SitemapSegment {
   return (SITEMAP_SEGMENTS as readonly string[]).includes(value);
-}
-
-// Active school slugs for sitemap entries (best-effort: [] on error).
-async function getActiveSchoolSlugs(): Promise<string[]> {
-  try {
-    const { getAdminDb } = await import("@/lib/firebase-admin");
-    const snap = await getAdminDb()
-      .collection("school_accounts")
-      .where("active", "==", true)
-      .select()
-      .get();
-    return snap.docs.map((doc) => doc.id);
-  } catch {
-    return [];
-  }
 }
 
 export async function buildSegment(segment: SitemapSegment): Promise<SitemapEntry[]> {
@@ -110,6 +94,7 @@ export async function buildSegment(segment: SitemapSegment): Promise<SitemapEntr
     case "exams":
       return [
         { url: `${SITE_URL}/tests`, lastModified: HUB_PAGES_UPDATED_AT, changeFrequency: "weekly", priority: 0.8 },
+        { url: `${SITE_URL}/teach`, lastModified: HUB_PAGES_UPDATED_AT, changeFrequency: "monthly", priority: 0.7 },
         ...EXAMS_V2.map((exam) => ({
           url: `${SITE_URL}${exam.landingPath}`,
           lastModified: EXAM_LANDINGS_UPDATED_AT,
@@ -132,15 +117,6 @@ export async function buildSegment(segment: SitemapSegment): Promise<SitemapEntr
           }))
         ),
       ];
-    case "schools": {
-      const slugs = await getActiveSchoolSlugs();
-      return slugs.map((slug) => ({
-        url: `${SITE_URL}/schools/${slug}`,
-        lastModified: HUB_PAGES_UPDATED_AT,
-        changeFrequency: "weekly" as const,
-        priority: 0.6,
-      }));
-    }
   }
 }
 

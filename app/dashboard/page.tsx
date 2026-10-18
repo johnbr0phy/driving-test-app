@@ -19,6 +19,7 @@ import { computeMissSummary, isDrillFree } from "@/lib/missedQuestions";
 import { ProgressCard, Collapse } from "@/components/dashboard/ProgressCard";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { trackBeginCheckout, trackPaywallDismissed, trackPaywallHit, trackPurchase, trackViewItem } from "@/lib/analytics";
+import { ClassBanner } from "@/components/exam/ClassBanner";
 
 function DashboardContent() {
   const router = useRouter();
@@ -346,6 +347,8 @@ function DashboardContent() {
             </CardContent>
           </Card>
         )}
+
+        <ClassBanner examId="dmv" className="mb-4" />
 
         {/* Sign-up prompt for guests */}
         {isGuest && (

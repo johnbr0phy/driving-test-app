@@ -20,6 +20,7 @@ import { AttemptChart, sessionsToAttemptPoints } from "@/components/AttemptChart
 import { computeMissSummary } from "@/lib/missedQuestions";
 import { ExamConfig, TrainingPart, examFamilyId, examTrainingParts, getExamVariant, trainingPartName, trainingPartOf } from "@/lib/exams";
 import { ExamStateLine, ExamStatePrompt } from "@/components/exam/ExamStatePicker";
+import { ClassBanner } from "@/components/exam/ClassBanner";
 import { getTigerAsset } from "@/lib/tigerAssets";
 import { SuperAmazingCard } from "@/components/SuperAmazingCard";
 import { useLocalizedExam } from "@/hooks/useLocalizedExam";
@@ -153,6 +154,8 @@ export function ExamDashboard({ exam: source }: { exam: ExamConfig }) {
             {...v1GuestCounts(exam.stateCode, completedTests, trainingAnswerHistory)}
           />
         )}
+
+        <ClassBanner examId={exam.id} className="mb-4" />
 
         <ExamStatePrompt exam={exam} />
 

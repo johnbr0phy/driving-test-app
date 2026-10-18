@@ -6,11 +6,11 @@ import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { useAuth } from "@/contexts/AuthContext";
 import { useStore } from "@/store/useStore";
-import { useAdmin } from "@/hooks/useAdmin";
+import { AdminLink } from "@/components/AdminLink";
 import { useHydration } from "@/hooks/useHydration";
 import { useTranslation } from "@/contexts/LanguageContext";
 import Image from "next/image";
-import { Shield, BarChart3 } from "lucide-react";
+import { BarChart3 } from "lucide-react";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { TestSwitcher } from "@/components/TestSwitcher";
 import { ThemeToggle } from "@/components/ThemeToggle";
@@ -22,7 +22,6 @@ export function Header() {
   const pathname = usePathname();
   const photoURL = useStore((state) => state.photoURL);
   const guest = useStore((state) => state.isGuest);
-  const isAdmin = useAdmin();
   const hydrated = useHydration();
   // Guest of the DMV test only: a guest who started another exam has no DMV
   // dashboard or stats yet, so they see "Sign In" here, not "Sign up to save".
@@ -79,11 +78,7 @@ export function Header() {
 
             {user ? (
               <>
-                {isAdmin && (
-                  <Link href="/admin/v2" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-50 transition-colors" title="Admin Dashboard">
-                    <Shield className="h-5 w-5" />
-                  </Link>
-                )}
+                <AdminLink />
                 <Link href="/settings" aria-label="Profile and settings">
                   <Avatar className="h-9 w-9 cursor-pointer hover:opacity-80 transition-opacity">
                     <AvatarImage src={displayPhotoURL || undefined} alt="Profile" />

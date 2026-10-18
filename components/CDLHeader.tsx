@@ -16,6 +16,7 @@ import { createT, type Language } from "@/i18n";
 import Image from "next/image";
 import { TestSwitcher } from "@/components/TestSwitcher";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { AdminLink } from "@/components/AdminLink";
 import { useExamStarted } from "@/hooks/useExamStarted";
 
 export function CDLHeader() {
@@ -128,6 +129,7 @@ export function CDLHeader() {
           )}
           {user ? (
             <>
+              <AdminLink />
               <Link href="/settings" aria-label="Profile and settings">
                 <Avatar className="h-9 w-9 cursor-pointer hover:opacity-80 transition-opacity">
                   <AvatarImage src={displayPhotoURL || undefined} alt="Profile" />

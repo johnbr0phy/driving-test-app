@@ -18,6 +18,8 @@ export interface MemberDoc {
   correct?: number;
   byCategory?: Record<string, { a?: number; c?: number }>;
   missed?: Record<string, number>;
+  /** Answers per question; older members only have `missed`. */
+  seen?: Record<string, number>;
   tests?: Record<string, { best: number; attempts: number }>;
 }
 
@@ -33,6 +35,7 @@ export function buildClassReport(
 
   const topicTotals: Record<string, { a: number; c: number }> = {};
   const missTotals: Record<string, number> = {};
+  const seenTotals: Record<string, number> = {};
   const students: ClassStudentRow[] = members.map((m) => {
     for (const [cat, v] of Object.entries(m.byCategory ?? {})) {
       topicTotals[cat] = topicTotals[cat] ?? { a: 0, c: 0 };
@@ -40,6 +43,7 @@ export function buildClassReport(
       topicTotals[cat].c += v.c ?? 0;
     }
     for (const [q, n] of Object.entries(m.missed ?? {})) missTotals[q] = (missTotals[q] ?? 0) + n;
+    for (const [q, n] of Object.entries(m.seen ?? {})) seenTotals[q] = (seenTotals[q] ?? 0) + n;
     const tests = Object.entries(m.tests ?? {});
     const best = tests.reduce<{ testNumber: number; pct: number } | null>(
       (top, [n, t]) => (!top || t.best > top.pct ? { testNumber: Number(n), pct: t.best } : top),
@@ -58,15 +62,25 @@ export function buildClassReport(
 
   const bank = exam ? safeBank(exam.id) : [];
   const byId = new Map(bank.map((q) => [q.questionId, q]));
-  const mostMissed = Object.entries(missTotals)
-    .sort((a, b) => b[1] - a[1])
-    .slice(0, 5)
-    .flatMap(([questionId, misses]) => {
+  const questions = [...new Set([...Object.keys(seenTotals), ...Object.keys(missTotals)])]
+    .flatMap((questionId) => {
       const q = byId.get(questionId);
       if (!q) return [];
-      const answer = q[`option${q.correctAnswer}` as "optionA"] ?? "";
-      return [{ questionId, question: q.question, answer, misses }];
-    });
+      const missed = missTotals[questionId] ?? 0;
+      const options = [q.optionA, q.optionB, q.optionC, q.optionD].filter(Boolean);
+      return [{
+        questionId,
+        question: q.question,
+        options,
+        answer: q[`option${q.correctAnswer}` as "optionA"] ?? "",
+        topic: exam?.categoryLabels[q.category] ?? q.category,
+        explanation: q.explanation ?? "",
+        // A member recorded before per-question counts only has misses.
+        answered: Math.max(seenTotals[questionId] ?? 0, missed),
+        missed,
+      }];
+    })
+    .sort((a, b) => b.missed - a.missed || a.answered - b.answered);
 
   return {
     code,
@@ -85,7 +99,7 @@ export function buildClassReport(
     topics: Object.entries(topicTotals)
       .map(([key, v]) => ({ key, label: exam?.categoryLabels[key] ?? key, answered: v.a, correct: v.c }))
       .sort((a, b) => a.correct / a.answered - b.correct / b.answered),
-    mostMissed,
+    questions,
     students: students.sort((a, b) => (b.lastActive ?? "").localeCompare(a.lastActive ?? "") || a.name.localeCompare(b.name)),
   };
 }

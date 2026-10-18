@@ -88,6 +88,18 @@ export interface ClassStudentRow {
   bestTest: { testNumber: number; pct: number } | null;
 }
 
+export interface ClassQuestionRow {
+  questionId: string;
+  question: string;
+  options: string[];
+  /** The correct option's text. */
+  answer: string;
+  topic: string;
+  explanation: string;
+  answered: number;
+  missed: number;
+}
+
 export interface ClassReport extends ClassSummary {
   passPct: number;
   answered: number;
@@ -95,7 +107,8 @@ export interface ClassReport extends ClassSummary {
   activeThisWeek: number;
   passedATest: number;
   topics: { key: string; label: string; answered: number; correct: number }[];
-  mostMissed: { questionId: string; question: string; answer: string; misses: number }[];
+  /** Every question the class answered, most-missed first. */
+  questions: ClassQuestionRow[];
   students: ClassStudentRow[];
 }
 

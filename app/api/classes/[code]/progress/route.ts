@@ -46,7 +46,9 @@ export async function POST(request: NextRequest, { params }: { params: Promise<{
       const byCategory: Record<string, { a: FieldValue; c: FieldValue }> = {};
       const counts: Record<string, { a: number; c: number }> = {};
       const missed: Record<string, number> = {};
+      const seen: Record<string, number> = {};
       for (const a of answers) {
+        seen[a.q] = (seen[a.q] ?? 0) + 1;
         counts[a.c] = counts[a.c] ?? { a: 0, c: 0 };
         counts[a.c].a++;
         if (a.ok) counts[a.c].c++;
@@ -60,6 +62,7 @@ export async function POST(request: NextRequest, { params }: { params: Promise<{
         correct: FieldValue.increment(correct),
         byCategory,
         missed: Object.fromEntries(Object.entries(missed).map(([q, n]) => [q, FieldValue.increment(n)])),
+        seen: Object.fromEntries(Object.entries(seen).map(([q, n]) => [q, FieldValue.increment(n)])),
       });
     }
 

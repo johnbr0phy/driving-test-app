@@ -127,6 +127,7 @@ The Taxes/Insurance area has no separate insurance item; the National picks carr
 |---|---|---|
 | RE-PROP-017 | Explanation | Notes NC does not use the rectangular survey |
 | RE-OWN-003 | Explanation | G.S. 41-56, 41-58 |
+| RE-OWN-017 | Explanation | Drops consideration as a deed requirement; G.S. 47-26 (deed of gift void unless recorded within two years) |
 | RE-OWN-023 | Explanation | Conner Act, G.S. 47-18 |
 | RE-CON-002 | Explanation | G.S. 93A-13 (written, signed agreement needed to sue) |
 | RE-CON-026 | Explanation | Rule 58A .0104(d) |

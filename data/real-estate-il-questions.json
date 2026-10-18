@@ -11,7 +11,7 @@
     "optionD": "Obtain a county building permit",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "765 ILCS 205/1(a) requires a survey and subdivision plat by an Illinois registered land surveyor whenever land is divided into 2 or more parts and any part is under 5 acres. The exemptions in Section 1(b) do not apply when the division involves a new street.",
+    "explanation": "765 ILCS 205/1(a) requires a survey and subdivision plat by an Illinois registered land surveyor whenever land is divided into 2 or more parts and any part is under 5 acres. The 5-acre exemption in Section 1(b) applies only when every parcel is 5 acres or more and no new street is involved.",
     "sourceQuestionId": "REIL-ILLAW-006"
   },
   {
@@ -889,7 +889,7 @@
     "state": "IL",
     "questionId": "REIL-CON-036",
     "category": "reContractsAgency",
-    "question": "Under the duty to account for client funds, an agent must:",
+    "question": "Under the duty of accounting, an agent must:",
     "optionA": "Safeguard and report on client funds",
     "optionB": "Prepare the client's income tax return",
     "optionC": "Obtain the highest possible price",

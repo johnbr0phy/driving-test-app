@@ -211,7 +211,9 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
               const s = step.drill;
               const section = getSectionV2(exam, s.def.section);
               const isStartHere = index === 0 && !anyProgress;
-              const newSection = index === 0 || phoneSteps[index - 1].drill.def.section !== s.def.section;
+              // Section labels only help when the drills span more than one section.
+              const newSection =
+                exam.sections.length > 1 && (index === 0 || phoneSteps[index - 1].drill.def.section !== s.def.section);
               const basics = step.kind === "basics";
               // A Premium drill gates both its steps, Basics included.
               const gated = s.locked;

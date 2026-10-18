@@ -847,7 +847,7 @@
     "question": "An instrument fractures during surgery and injures a patient. Through which FDA program should the event be reported?",
     "optionA": "HazCom",
     "optionB": "NIOSH",
-    "optionC": "IndexNow",
+    "optionC": "OSHA 300 Log",
     "optionD": "MedWatch",
     "correctAnswer": "D",
     "correctIndex": 3,
@@ -2699,7 +2699,7 @@
     "optionD": "After the biological indicator result is negative",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Implant loads must be monitored with a BI, and the load is quarantined until the BI is read negative. Early release is allowed only for a documented emergency and requires a Class 5 or 6 indicator and exception documentation."
+    "explanation": "Implant loads must be monitored with a BI, and the load is quarantined until the BI is read negative. Early release is allowed only in a documented emergency, when the PCD also contains a Class 5 integrating indicator, and requires exception documentation."
   },
   {
     "type": "CRCST",

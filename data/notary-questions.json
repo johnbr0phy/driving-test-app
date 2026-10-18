@@ -2160,14 +2160,14 @@
     "state": "ALL",
     "questionId": "NP-ID-035",
     "category": "signerIdentification",
-    "question": "A signer speaks only Mandarin, and you speak only English. Her son offers to interpret. In most states you should:",
+    "question": "A signer speaks only Mandarin, and you speak only English. Her son offers to interpret. Under standard best practice you should:",
     "optionA": "Proceed with the son interpreting",
     "optionB": "Proceed using a translation app",
     "optionC": "Refer her to a notary who speaks Mandarin",
     "optionD": "Proceed because the document is in English",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Most states require the notary to communicate directly with the signer, so an interpreter is not acceptable; this varies by state. The son also has a possible interest and cannot vouch for her understanding."
+    "explanation": "Best practice, and the rule in some states, is that the notary communicates directly with the signer, so the safest course is a notary who speaks her language; whether an interpreter may be used varies by state. The son may also have an interest in the document and cannot vouch for her understanding."
   },
   {
     "type": "NOTARY",

@@ -2461,7 +2461,7 @@
     "optionD": "Left with the landing gear fully raised",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "OSHA 1910.178 requires fixed jacks or trailer stands when a trailer is not coupled to a tractor, because the weight of a forklift at the front of the trailer can collapse the landing gear or tip the nose down."
+    "explanation": "OSHA 1910.178(k)(3) warns that fixed jacks may be necessary to support a semitrailer that is not coupled to a tractor, and safe practice is to place fixed jacks or trailer stands before entering, because the weight of a forklift at the front of the trailer can collapse the landing gear or tip the nose down."
   },
   {
     "type": "FORKLIFT",

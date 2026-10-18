@@ -371,11 +371,11 @@
     "question": "What is the maximum civil penalty EPA may assess for violating the Clean Air Act refrigerant rules, as adjusted for inflation?",
     "optionA": "Up to $500 per incident",
     "optionB": "Up to $5,000 per calendar year",
-    "optionC": "Up to $44,539 per day per violation",
+    "optionC": "Over $100,000 per day per violation",
     "optionD": "Up to $1,000 per day per violation",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Violations of Section 608 can bring civil penalties of up to $44,539 per day for each violation, as adjusted for inflation. Each pound vented or each day out of compliance can count as a separate violation."
+    "explanation": "Violations of Section 608 can bring civil penalties of more than $120,000 per day for each violation; the figure is adjusted for inflation every year (40 CFR Part 19), so older study guides show lower amounts such as $37,500 or $44,539. Each pound vented or each day out of compliance can count as a separate violation."
   },
   {
     "type": "EPA608",
@@ -977,7 +977,7 @@
     "optionD": "Toxic acids and phosgene gas",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Heat decomposes CFCs, HCFCs and HFCs into hydrochloric and hydrofluoric acids and phosgene-type gases, so purge refrigerant before brazing. Wear safety glasses and gloves, since liquid refrigerant can also cause frostbite."
+    "explanation": "Heat decomposes CFCs and HCFCs into hydrochloric and hydrofluoric acids and phosgene gas, and HFCs into hydrofluoric acid and carbonyl fluoride, so recover the refrigerant and purge with nitrogen before brazing. Wear safety glasses and gloves, since liquid refrigerant can also cause frostbite."
   },
   {
     "type": "EPA608",
@@ -1506,10 +1506,10 @@
     "optionA": "R-12 or R-502",
     "optionB": "R-123 or R-11",
     "optionC": "R-717 or R-744",
-    "optionD": "R-410A or R-32",
+    "optionD": "R-32 or R-290",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "R-22 production ended January 1, 2020; room and window units moved to R-410A and, increasingly, the lower-GWP R-32 or R-290."
+    "explanation": "R-22 could not be used in new equipment after 2010, and room units moved to R-410A. Since January 1, 2025, EPA's Technology Transitions rule limits new room and window units to refrigerants with a GWP below 700, so they now use R-32 (GWP about 675) or the hydrocarbon R-290."
   },
   {
     "type": "EPA608",

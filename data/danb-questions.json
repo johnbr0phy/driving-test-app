@@ -636,12 +636,12 @@
     "category": "gcChairside",
     "question": "A standard local anesthetic cartridge (carpule) used in dental offices in the United States contains about:",
     "optionA": "0.5 mL of solution",
-    "optionB": "1.7 mL of solution",
+    "optionB": "1.8 mL of solution",
     "optionC": "About 3.0 mL of solution",
     "optionD": "5.0 mL of solution",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Standard dental cartridges hold about 1.7 to 1.8 mL of anesthetic. Volumes of 3 to 5 mL describe larger medical syringes, not dental carpules."
+    "explanation": "Standard US dental cartridges hold about 1.8 mL of anesthetic (older references say 1.7 mL). Volumes of 3 to 5 mL describe larger medical syringes, not dental carpules."
   },
   {
     "type": "DANB",
@@ -2461,7 +2461,7 @@
     "optionD": "Follow current ADA and state guidance",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "The ADA's 2023 recommendations note that aprons and thyroid collars may not be needed with rectangular collimation and fast receptors, but some states still require them, so the office follows current ADA and state guidance. Saying shielding is never used ignores state requirements."
+    "explanation": "The ADA's 2024 recommendations note that aprons and thyroid collars may not be needed with rectangular collimation and fast receptors, but some states still require them, so the office follows current ADA and state guidance. Saying shielding is never used ignores state requirements."
   },
   {
     "type": "DANB",

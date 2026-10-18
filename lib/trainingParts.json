@@ -1,0 +1,376 @@
+{
+  "122": {
+    "starts": [
+      "CDL-GK-141",
+      "CDL-GK-501"
+    ],
+    "sizes": [
+      50,
+      50
+    ]
+  },
+  "123": {
+    "starts": [
+      "CDL-GK-191",
+      "CDL-GK-551"
+    ],
+    "sizes": [
+      50,
+      50
+    ]
+  },
+  "124": {
+    "starts": [
+      "CDL-GK-061",
+      "CDL-GK-102",
+      "CDL-GK-459"
+    ],
+    "sizes": [
+      41,
+      42,
+      42
+    ]
+  },
+  "125": {
+    "starts": [
+      "CDL-GK-331",
+      "CDL-GK-372",
+      "CDL-GK-414"
+    ],
+    "sizes": [
+      41,
+      42,
+      42
+    ]
+  },
+  "126": {
+    "starts": [
+      "CDL-GK-241",
+      "CDL-GK-286"
+    ],
+    "sizes": [
+      45,
+      45
+    ]
+  },
+  "204": {
+    "starts": [
+      "HTL-STN-001",
+      "HTL-STN-037"
+    ],
+    "sizes": [
+      36,
+      36
+    ]
+  },
+  "302": {
+    "starts": [
+      "CST-INT-001",
+      "CST-INT-047"
+    ],
+    "sizes": [
+      46,
+      46
+    ]
+  },
+  "602": {
+    "starts": [
+      "CIV-GOV-001",
+      "CIV-GOV-037"
+    ],
+    "sizes": [
+      36,
+      36
+    ]
+  },
+  "603": {
+    "starts": [
+      "CIV-1800-001",
+      "CIV-COL-021"
+    ],
+    "sizes": [
+      36,
+      36
+    ]
+  },
+  "805": {
+    "starts": [
+      "P107-OPS-001",
+      "P107-OPS-037"
+    ],
+    "sizes": [
+      36,
+      36
+    ]
+  },
+  "901": {
+    "starts": [
+      "HAM-T1-001",
+      "HAM-T1-035"
+    ],
+    "sizes": [
+      34,
+      34
+    ]
+  },
+  "902": {
+    "starts": [
+      "HAM-T2-001",
+      "HAM-T2-037"
+    ],
+    "sizes": [
+      36,
+      36
+    ]
+  },
+  "903": {
+    "starts": [
+      "HAM-T4-001",
+      "HAM-T5-014"
+    ],
+    "sizes": [
+      36,
+      37
+    ]
+  },
+  "904": {
+    "starts": [
+      "HAM-T6-001",
+      "HAM-T7-006"
+    ],
+    "sizes": [
+      39,
+      39
+    ]
+  },
+  "905": {
+    "starts": [
+      "HAM-T8-001",
+      "HAM-T8-036"
+    ],
+    "sizes": [
+      35,
+      35
+    ]
+  },
+  "1001": {
+    "starts": [
+      "EPA-CORE-001",
+      "EPA-CORE-037"
+    ],
+    "sizes": [
+      36,
+      36
+    ]
+  },
+  "1102": {
+    "starts": [
+      "CNA-BNS-001",
+      "CNA-BNS-039"
+    ],
+    "sizes": [
+      38,
+      38
+    ]
+  },
+  "1201": {
+    "starts": [
+      "PTCB-MED-001",
+      "PTCB-MED-037"
+    ],
+    "sizes": [
+      36,
+      36
+    ]
+  },
+  "1501": {
+    "starts": [
+      "CET-ACQ-001",
+      "CET-ACQ-045"
+    ],
+    "sizes": [
+      44,
+      44
+    ]
+  },
+  "1502": {
+    "starts": [
+      "CET-SAF-001",
+      "CET-SAF-033"
+    ],
+    "sizes": [
+      32,
+      32
+    ]
+  },
+  "1801": {
+    "starts": [
+      "FSM-CON-001",
+      "FSM-HYG-001"
+    ],
+    "sizes": [
+      32,
+      32
+    ]
+  },
+  "2002": {
+    "starts": [
+      "LH-LIFE-001",
+      "LH-PROV-019"
+    ],
+    "sizes": [
+      38,
+      38
+    ]
+  },
+  "2104": {
+    "starts": [
+      "NP-COM-001",
+      "NP-ETH-009"
+    ],
+    "sizes": [
+      32,
+      32
+    ]
+  },
+  "2501": {
+    "starts": [
+      "FH-BAS-001",
+      "FH-HYG-001"
+    ],
+    "sizes": [
+      40,
+      40
+    ]
+  },
+  "3301": {
+    "starts": [
+      "FORK-BAS-001",
+      "FORK-BAS-037"
+    ],
+    "sizes": [
+      36,
+      36
+    ]
+  },
+  "3402": {
+    "starts": [
+      "ALC-INT-001",
+      "ALC-IVN-001"
+    ],
+    "sizes": [
+      40,
+      40
+    ]
+  },
+  "3601": {
+    "starts": [
+      "SG-LEG-001",
+      "SG-LEG-039"
+    ],
+    "sizes": [
+      38,
+      38
+    ]
+  },
+  "3701": {
+    "starts": [
+      "LG-PRO-001",
+      "LG-PRO-037"
+    ],
+    "sizes": [
+      36,
+      36
+    ]
+  },
+  "3804": {
+    "starts": [
+      "PC-COM-001",
+      "PC-LIA-005"
+    ],
+    "sizes": [
+      36,
+      36
+    ]
+  },
+  "4301": {
+    "starts": [
+      "PCTX-GEN-001",
+      "PCTX-POL-010"
+    ],
+    "sizes": [
+      35,
+      35
+    ]
+  },
+  "4351": {
+    "starts": [
+      "PCFL-FLPOL-001",
+      "PCFL-GEN-006"
+    ],
+    "sizes": [
+      34,
+      35
+    ]
+  },
+  "5501": {
+    "starts": [
+      "PCPA-GEN-001",
+      "PCPA-PALIC-004"
+    ],
+    "sizes": [
+      31,
+      32
+    ]
+  },
+  "5551": {
+    "starts": [
+      "PCIL-GEN-001",
+      "PCIL-ILLIC-009"
+    ],
+    "sizes": [
+      45,
+      45
+    ]
+  },
+  "5651": {
+    "starts": [
+      "PCGA-GALIC-001",
+      "PCGA-GEN-017"
+    ],
+    "sizes": [
+      36,
+      36
+    ]
+  },
+  "5751": {
+    "starts": [
+      "PCMI-GEN-003",
+      "PCMI-MIMKT-003"
+    ],
+    "sizes": [
+      30,
+      31
+    ]
+  },
+  "5801": {
+    "starts": [
+      "PCNJ-GEN-001",
+      "PCNJ-NJPRA-007"
+    ],
+    "sizes": [
+      39,
+      39
+    ]
+  },
+  "5901": {
+    "starts": [
+      "PCWA-GEN-001",
+      "PCWA-POL-017"
+    ],
+    "sizes": [
+      31,
+      32
+    ]
+  }
+}

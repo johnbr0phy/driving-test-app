@@ -319,7 +319,7 @@
     "optionD": "Sliced tomatoes",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Cut tomatoes are TCS food and must be kept at 41 F or lower. Whole onions, bread and dry beans are not TCS until they are cut, cooked or moistened."
+    "explanation": "Cut tomatoes are TCS food and must be kept at 41 F or lower. Whole onions, bread rolls and dry beans are not TCS; dry beans become TCS only once they are cooked."
   },
   {
     "type": "FOODHANDLER",

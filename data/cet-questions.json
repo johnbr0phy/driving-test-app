@@ -19,13 +19,13 @@
     "questionId": "CET-ACQ-002",
     "category": "ekgAcquisition",
     "question": "At standard gain, the standardization (calibration) mark printed at the start of the tracing should measure:",
-    "optionA": "10 mm tall, 2 small boxes wide",
+    "optionA": "10 mm tall, two large boxes high",
     "optionB": "20 mm tall and 10 small boxes wide",
     "optionC": "5 mm tall, 1 small box wide",
     "optionD": "1 mm tall, 2 large boxes wide",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "A 1 mV calibration pulse at 10 mm/mV draws a mark 10 mm (two large boxes) tall and about 2 small boxes wide. A 5 mm mark means the gain was set to half standard."
+    "explanation": "A 1 mV calibration pulse at 10 mm/mV draws a mark 10 mm (two large boxes) tall. Its width varies by machine and only reflects paper speed; a 5 mm tall mark means the gain was set to half standard, and a 20 mm mark means double gain."
   },
   {
     "type": "CET",
@@ -1425,7 +1425,7 @@
     "optionD": "Half gain, 5 mm/mV",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "The standard mark is 10 mm tall (10 mm/mV) and 2 small boxes wide; a 5 mm mark shows the gain was halved, often for very tall complexes, so every amplitude reads at half size. Paper speed changes the mark's width, not its height."
+    "explanation": "The standard mark is 10 mm tall (10 mm/mV); a 5 mm mark shows the gain was halved, often for very tall complexes, so every amplitude reads at half size. Paper speed changes the mark's width, not its height."
   },
   {
     "type": "CET",
@@ -2475,7 +2475,7 @@
     "optionD": "Pulse 64, respirations 22, SpO2 91%",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Normal adult ranges are pulse 60-100, respirations 12-20, and SpO2 95-100%, and only the first set fits all three. A pulse of 64 is normal, but respirations of 22 and SpO2 of 91% are not."
+    "explanation": "Normal adult ranges are pulse 60-100, respirations 12-20, and SpO2 95-100%, and only pulse 76, respirations 16 and SpO2 98% fits all three. A pulse of 64 is normal, but respirations of 22 and SpO2 of 91% are not."
   },
   {
     "type": "CET",

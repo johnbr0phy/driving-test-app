@@ -1,4 +1,9 @@
 import { Question } from "@/types";
+import realestateCaQuestions from "@/data/real-estate-ca-questions.json";
+import realestateNjQuestions from "@/data/real-estate-nj-questions.json";
+import realestateTxQuestions from "@/data/real-estate-tx-questions.json";
+import realestateFlQuestions from "@/data/real-estate-fl-questions.json";
+import realestateNyQuestions from "@/data/real-estate-ny-questions.json";
 import realestatePaQuestions from "@/data/real-estate-pa-questions.json";
 import realestateIlQuestions from "@/data/real-estate-il-questions.json";
 import realestateOhQuestions from "@/data/real-estate-oh-questions.json";
@@ -14,6 +19,11 @@ import { registerExamBanks } from "@/lib/examData";
 // State variant banks for the realestate family. Imported for its side effect by the
 // app/<slug>/[state] pages only, so other exams never bundle these.
 registerExamBanks({
+  "realestate-ca": realestateCaQuestions as Question[],
+  "realestate-nj": realestateNjQuestions as Question[],
+  "realestate-tx": realestateTxQuestions as Question[],
+  "realestate-fl": realestateFlQuestions as Question[],
+  "realestate-ny": realestateNyQuestions as Question[],
   "realestate-pa": realestatePaQuestions as Question[],
   "realestate-il": realestateIlQuestions as Question[],
   "realestate-oh": realestateOhQuestions as Question[],

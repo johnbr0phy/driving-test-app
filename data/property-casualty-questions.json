@@ -2167,7 +2167,7 @@
     "optionD": "Bailee's customers coverage",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Bailee's customers coverage pays for customers' property in the bailee's care regardless of legal liability. The BPP form covers only property of others for which the insured is liable, and the CGL excludes property in the insured's care."
+    "explanation": "Bailee's customers coverage pays for customers' property in the bailee's care regardless of legal liability, and it is built for a business whose main exposure is other people's goods. The BPP form treats property of others as a limited add-on rather than the core coverage, and the CGL excludes property in the insured's care, custody or control."
   },
   {
     "type": "PNC",

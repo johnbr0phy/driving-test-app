@@ -1183,11 +1183,11 @@
     "question": "Which compression technique should a single rescuer use first for an infant?",
     "optionA": "Two stacked hands on the upper half of the breastbone",
     "optionB": "One palm flat across the whole chest",
-    "optionC": "Two fingers just below the nipple line",
+    "optionC": "Two thumbs, hands encircling the chest",
     "optionD": "One thumb on the upper breastbone",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "A lone rescuer starts with two fingers, or two thumbs with the hands encircling the chest if they can reach, centered just below the nipple line. The heel of one hand is a fallback only when two fingers cannot reach about 1.5 inches of depth; two stacked hands are for adults."
+    "explanation": "The 2025 AHA guidelines dropped the two-finger technique. A lone rescuer places two thumbs on the center of the breastbone just below the nipple line with the hands encircling the chest, or uses the heel of one hand if the hands cannot encircle it. Two stacked hands are the adult technique."
   },
   {
     "type": "CPR",
@@ -1201,7 +1201,7 @@
     "optionD": "Two stacked hands on the breastbone",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "With two rescuers, the two thumb-encircling hands technique produces better depth and more consistent pressure, while the other rescuer manages breaths. Two fingers is the fallback for a single rescuer."
+    "explanation": "With two rescuers, one uses the two thumb-encircling hands technique, which produces better depth and more consistent pressure, while the other manages breaths. The 2025 AHA guidelines no longer recommend the two-finger technique; if the hands cannot encircle the chest, the heel of one hand is used."
   },
   {
     "type": "CPR",
@@ -1243,7 +1243,7 @@
     "optionD": "Both hands over the left side of the chest",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Children can be compressed with one or two hands, whichever achieves the proper depth, on the lower half of the sternum. Two fingers is the infant technique."
+    "explanation": "Children can be compressed with one or two hands, whichever achieves the proper depth of about one-third of the chest, on the lower half of the sternum. Two fingers is not used for children, and the 2025 AHA guidelines dropped it for infants as well."
   },
   {
     "type": "CPR",
@@ -1474,14 +1474,14 @@
     "state": "ALL",
     "questionId": "CPR-CHI-026",
     "category": "cprChildInfant",
-    "question": "Why is complete chest recoil especially important when using the two-finger technique on an infant?",
+    "question": "Why is complete chest recoil especially important during compressions on an infant?",
     "optionA": "It keeps the fingers from slipping",
     "optionB": "It helps the infant breathe on their own",
     "optionC": "Leaning stops the heart from refilling",
     "optionD": "It keeps the AED pads from loosening",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Recoil allows venous return, which fills the heart for the next compression; rescuers tend to lean when using two fingers, especially as they tire. Recoil does not restart spontaneous breathing."
+    "explanation": "Recoil allows venous return, which fills the heart for the next compression; on a small chest rescuers tend to lean, especially as they tire. Recoil does not restart spontaneous breathing."
   },
   {
     "type": "CPR",
@@ -1814,10 +1814,10 @@
     "optionA": "Heel of the hand on the upper abdomen",
     "optionB": "Two fingers near the collarbones",
     "optionC": "A flat palm over the whole chest",
-    "optionD": "Two fingers just below the nipple line",
+    "optionD": "Center of the breastbone, below the nipples",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Chest thrusts use the same landmark as infant compressions, the center of the breastbone just below the nipple line, with the head lower than the body, but they are delivered as separate sharp pushes. The abdomen is never used in infants."
+    "explanation": "Chest thrusts use the same landmark as infant compressions, the center of the breastbone just below the nipple line, with the head lower than the body, delivered as separate sharp pushes; the 2025 AHA guidelines use the heel of one hand rather than two fingers. The abdomen is never used in infants."
   },
   {
     "type": "CPR",
@@ -1845,7 +1845,7 @@
     "optionD": "Tell the child to swallow hard",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Children receive abdominal thrusts like adults, repeated until the object comes out or the child becomes unresponsive; kneeling puts you at the right height. The forearm back slap technique is for infants, who are small enough to hold that way."
+    "explanation": "A responsive choking child is treated like an adult: kneel behind the child and give cycles of 5 back blows and 5 abdominal thrusts until the object comes out or the child becomes unresponsive. Holding the victim face down on your forearm is the infant technique, used only for babies small enough to hold that way."
   },
   {
     "type": "CPR",
@@ -2013,7 +2013,7 @@
     "optionD": "An asthma attack; help with an inhaler",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "A cough that stops while the victim remains distressed means air is no longer moving and the obstruction is now complete, so begin thrusts immediately. Silence is a danger sign, not a sign of relief."
+    "explanation": "A cough that stops while the victim remains distressed means air is no longer moving and the obstruction is now severe, so act immediately with cycles of 5 back blows and 5 abdominal thrusts. Silence is a danger sign, not a sign of relief."
   },
   {
     "type": "CPR",

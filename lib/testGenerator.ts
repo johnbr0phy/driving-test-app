@@ -51,11 +51,11 @@ function hasPositionDependentAnswers(question: Question): boolean {
 
   // Pattern to detect references to other answer options (English, Spanish,
   // Vietnamese, Korean).
-  // Matches: "A and B", "B and C", "Both A and B", "A, B, and C", "A y B",
+  // Matches: "A and B", "B and C", "Both A and B", "A, B, and C", "A y B", "Tanto A como B",
   // "Todas las anteriores", "Cả A và B", "Tất cả các câu trên", "A와 B", etc.
   // Korean has no space before the particle ("A와 B"), so that branch uses \s*
   // rather than the \s+ the Latin-script branches rely on.
-  const positionReferencePattern = /\b(A|B|C|D)\s+(and|or|y|o|và|hoặc|,)\s+(A|B|C|D)\b|\bBoth\s+(A|B|C|D)\s+and\s+(A|B|C|D)\b|\bAll of the above\b|\bNone of the above\b|\bTodas las anteriores\b|\bNinguna de las anteriores\b|Tất cả các câu trên|Không câu nào đúng|(A|B|C|D)\s*(와|과|및)\s*(A|B|C|D)|위의 모든 것|위의 어느 것도 아님|위 항목 모두|정답 없음/i;
+  const positionReferencePattern = /\b(A|B|C|D)\s+(and|or|y|o|và|hoặc|,)\s+(A|B|C|D)\b|\bBoth\s+(A|B|C|D)\s+and\s+(A|B|C|D)\b|\bTanto\s+(A|B|C|D)\s+como\s+(A|B|C|D)\b|\bAll of the above\b|\bNone of the above\b|\bTodas las anteriores\b|\bNinguna de las anteriores\b|Tất cả các câu trên|Không câu nào đúng|(A|B|C|D)\s*(와|과|및)\s*(A|B|C|D)|위의 모든 것|위의 어느 것도 아님|위 항목 모두|정답 없음/i;
 
   return options.some(option => positionReferencePattern.test(option));
 }

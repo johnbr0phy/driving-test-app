@@ -126,7 +126,8 @@ interface AppState {
   };
   answerTrainingSetQuestion: (setId: number, questionId: string, isCorrect: boolean) => void;
   getTrainingSetProgress: (setId: number) => { correct: number; total: number; complete: boolean };
-  resetTrainingSet: (setId: number) => void;
+  /** Clears a set, or only the given question IDs (one part of a split set). */
+  resetTrainingSet: (setId: number, onlyIds?: string[]) => void;
 
   // Training answer history (for question performance tracking)
   trainingAnswerHistory: { questionId: string; isCorrect: boolean; answeredAt?: string }[];
@@ -659,13 +660,17 @@ export const useStore = create<AppState>()(
         };
       },
 
-      resetTrainingSet: (setId: number) => {
-        set((state) => ({
-          trainingSets: {
-            ...state.trainingSets,
-            [setId]: { masteredIds: [], wrongQueue: [] },
-          },
-        }));
+      resetTrainingSet: (setId: number, onlyIds?: string[]) => {
+        set((state) => {
+          const current = state.trainingSets[setId] || { masteredIds: [], wrongQueue: [] };
+          const keep = (id: string) => !!onlyIds && !onlyIds.includes(id);
+          return {
+            trainingSets: {
+              ...state.trainingSets,
+              [setId]: { masteredIds: current.masteredIds.filter(keep), wrongQueue: current.wrongQueue.filter(keep) },
+            },
+          };
+        });
         get().saveToFirestore();
       },
 

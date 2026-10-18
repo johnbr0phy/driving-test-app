@@ -1,4 +1,7 @@
 import { Question } from "@/types";
+import insuranceTxQuestions from "@/data/life-health-tx-questions.json";
+import insuranceFlQuestions from "@/data/life-health-fl-questions.json";
+import insuranceCaQuestions from "@/data/life-health-ca-questions.json";
 import insuranceNyQuestions from "@/data/life-health-ny-questions.json";
 import insurancePaQuestions from "@/data/life-health-pa-questions.json";
 import insuranceIlQuestions from "@/data/life-health-il-questions.json";
@@ -14,6 +17,9 @@ import { registerExamBanks } from "@/lib/examData";
 // State variant banks for the insurance family. Imported for its side effect by the
 // app/<slug>/[state] pages only, so other exams never bundle these.
 registerExamBanks({
+  "insurance-tx": insuranceTxQuestions as Question[],
+  "insurance-fl": insuranceFlQuestions as Question[],
+  "insurance-ca": insuranceCaQuestions as Question[],
   "insurance-ny": insuranceNyQuestions as Question[],
   "insurance-pa": insurancePaQuestions as Question[],
   "insurance-il": insuranceIlQuestions as Question[],

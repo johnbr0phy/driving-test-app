@@ -11,9 +11,8 @@ import Image from "next/image";
 import { ShareButton } from "@/components/ShareButton";
 import { useStore } from "@/store/useStore";
 import { shuffleQuestionOptions } from "@/lib/testGenerator";
-import { getNextExamTrainingSetQuestion } from "@/lib/examTestGenerator";
-import { getExamRoutes } from "@/lib/examRoutes";
-import { ExamConfig, examSetId } from "@/lib/exams";
+import { getExamTrainingSetQuestions, getNextExamTrainingSetQuestion } from "@/lib/examTestGenerator";
+import { ExamConfig, examSetId, trainingPartName, trainingParts } from "@/lib/exams";
 import { getTigerAsset } from "@/lib/tigerAssets";
 import { Question } from "@/types";
 import { useHydration } from "@/hooks/useHydration";
@@ -26,12 +25,13 @@ import { useAuth } from "@/contexts/AuthContext";
 import { useGuestPrompt } from "@/hooks/useGuestPrompt";
 import { GuestPromptStep } from "@/components/GuestPromptStep";
 import { v1GuestCounts } from "@/components/GuestSaveCard";
+import { useLocalizedExam } from "@/hooks/useLocalizedExam";
 
 // Shared training page for registry exams: the DMV training page (set mode
 // with mastery + wrong-answer queue, set-complete share card) on the exam's
 // content-area sets. Set mode only, no state selection, no premium gate.
-function ExamTrainingContent({ exam }: { exam: ExamConfig }) {
-  const routes = getExamRoutes(exam.id);
+function ExamTrainingContent({ exam: source }: { exam: ExamConfig }) {
+  const { exam, routes, ui, lang } = useLocalizedExam(source);
   const router = useRouter();
   const searchParams = useSearchParams();
   const hydrated = useHydration();
@@ -61,6 +61,15 @@ function ExamTrainingContent({ exam }: { exam: ExamConfig }) {
   const setDef = isSetMode && setNumber ? exam.trainingSets.find((s) => s.setNumber === setNumber) : undefined;
   // Store IDs are namespaced per exam (see examSetId)
   const setId = isSetMode && setNumber ? examSetId(exam, setNumber) : null;
+  // Sets over about 60 questions run in parts (?part=N); progress stays on the set.
+  const setParts = setDef ? trainingParts(setDef) : [];
+  const isSplit = setParts.length > 1;
+  const partParam = parseInt(searchParams.get('part') ?? '');
+  const partInfo = isSplit ? setParts.find((p) => p.part === partParam) : undefined;
+  const part = partInfo?.part;
+  const partQuestionIds = isSplit && setNumber && part
+    ? getExamTrainingSetQuestions(exam, setNumber, part, lang).map((q) => q.questionId)
+    : null;
 
   const [currentQuestion, setCurrentQuestion] = useState<Question | null>(null);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
@@ -77,8 +86,23 @@ function ExamTrainingContent({ exam }: { exam: ExamConfig }) {
   // Get current set progress
   const setProgress = isSetMode && setId ? getTrainingSetProgress(setId) : null;
   const setData = isSetMode && setId ? (trainingSets[setId] || { masteredIds: [], wrongQueue: [] }) : null;
-  const setMasteredIds = setData?.masteredIds || [];
-  const setWrongQueue = setData?.wrongQueue || [];
+  // In a part, show that part's progress rather than the whole set's.
+  const partProgress = partQuestionIds && setData
+    ? (() => {
+        const correct = setData.masteredIds.filter((id) => partQuestionIds.includes(id)).length;
+        return { correct, total: partQuestionIds.length, complete: correct >= partQuestionIds.length };
+      })()
+    : null;
+  const progress = partProgress ?? setProgress;
+  // First unfinished part of the set, preferring the ones after this part.
+  const unfinishedPart = (after: number) => {
+    if (!setNumber) return undefined;
+    const mastered = setData?.masteredIds ?? [];
+    const open = setParts.filter((p) =>
+      getExamTrainingSetQuestions(exam, setNumber, p.part, lang).some((q) => !mastered.includes(q.questionId))
+    );
+    return open.find((p) => p.part > after) ?? open.find((p) => p.part !== after);
+  };
 
   // Nothing on registry exams is locked.
   const accessLocked = false;
@@ -89,6 +113,27 @@ function ExamTrainingContent({ exam }: { exam: ExamConfig }) {
   useEffect(() => {
     if (hydrated && !isSetMode) router.replace(routes.dashboard);
   }, [hydrated, isSetMode, router, routes.dashboard]);
+
+  // A split set opened without a valid part (the results plan links to the
+  // set) goes to its first unfinished part.
+  const needsPart = hydrated && isSplit && !part;
+  useEffect(() => {
+    if (needsPart && setNumber) router.replace(routes.training(setNumber, unfinishedPart(0)?.part ?? 1));
+  }, [needsPart]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  // Moving on to the next part keeps this page mounted: start it fresh.
+  const firstPartRender = useRef(true);
+  useEffect(() => {
+    if (firstPartRender.current) {
+      firstPartRender.current = false;
+      return;
+    }
+    setShowSetComplete(false);
+    setShowFireworks(false);
+    setShowResetConfirm(false);
+    currentQuestionIdRef.current = null;
+    setCurrentQuestion(null);
+  }, [part]);
 
   // Detect when user unlocks practice tests (crosses 10 correct answers) - onboarding only
   useEffect(() => {
@@ -110,10 +155,10 @@ function ExamTrainingContent({ exam }: { exam: ExamConfig }) {
 
   // Load first question on mount
   useEffect(() => {
-    if (hydrated && isSetMode && !currentQuestion && !accessLocked) {
+    if (hydrated && isSetMode && !needsPart && !currentQuestion && !accessLocked) {
       loadNextQuestion();
     }
-  }, [hydrated, isSetMode, currentQuestion, accessLocked]);
+  }, [hydrated, isSetMode, needsPart, currentQuestion, accessLocked]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const loadNextQuestion = () => {
     let question: Question | null = null;
@@ -130,7 +175,9 @@ function ExamTrainingContent({ exam }: { exam: ExamConfig }) {
         setNumber,
         currentSetData.masteredIds,
         currentSetData.wrongQueue,
-        currentQuestionIdRef.current  // Use ref for reliable current question ID
+        currentQuestionIdRef.current,  // Use ref for reliable current question ID
+        part,
+        lang
       );
 
       // If all questions are mastered, show completion overlay with fireworks on top
@@ -198,16 +245,20 @@ function ExamTrainingContent({ exam }: { exam: ExamConfig }) {
 
   const handlePracticeAgain = () => {
     if (setId) {
-      resetTrainingSet(setId);
+      // In a part, only that part's questions start over.
+      resetTrainingSet(setId, partQuestionIds ?? undefined);
       setShowSetComplete(false);
       // Load the first question after reset
       setTimeout(() => loadNextQuestion(), 0);
     }
   };
 
-  if (!hydrated || !isSetMode) {
+  if (!hydrated || !isSetMode || needsPart) {
     return null;
   }
+
+  const setLabel = partInfo ? trainingPartName(partInfo, lang) : setDef?.name ?? ui.setN(setNumber ?? 0);
+  const followingPart = part ? unfinishedPart(part) : undefined;
 
   return (
     <div className="flex-1 bg-gradient-to-br from-brand-light to-brand-gradient-to">
@@ -273,7 +324,7 @@ function ExamTrainingContent({ exam }: { exam: ExamConfig }) {
               <div className="mb-6">
                 <div className="text-gray-300 text-lg font-bold tracking-widest">tigertest.io</div>
                 <div className="text-gray-400 text-xs uppercase tracking-widest mt-1">
-                  {exam.shortName} TRAINING
+                  {ui.trainingBadge(exam.shortName)}
                 </div>
               </div>
 
@@ -290,7 +341,7 @@ function ExamTrainingContent({ exam }: { exam: ExamConfig }) {
 
               {/* Tagline */}
               <div className="text-base md:text-lg font-extrabold uppercase tracking-widest mb-4 text-green-300">
-                MASTERED MY {exam.shortName} TRAINING
+                {ui.masteredMyTraining(exam.shortName)}
               </div>
 
               {/* Giant percentage */}
@@ -300,28 +351,37 @@ function ExamTrainingContent({ exam }: { exam: ExamConfig }) {
 
               {/* 50 out of 50 correct */}
               <div className="text-xl md:text-2xl text-gray-400 mb-5">
-                {setProgress?.total ?? 50} {t("results.outOf")} {setProgress?.total ?? 50} {t("results.correctLabel")}
+                {progress?.total ?? 50} {t("results.outOf")} {progress?.total ?? 50} {t("results.correctLabel")}
               </div>
 
               {/* MASTERED badge */}
               <Badge className="text-lg px-6 py-2 mb-5 bg-green-600 hover:bg-green-700">
-                MASTERED
+                {ui.mastered}
               </Badge>
 
               {/* Exam + set name */}
               <div className="text-gray-400 text-base mb-2">
-                {exam.examLabel} · {setDef?.name ?? `Set ${setNumber}`}
+                {exam.examLabel} · {setLabel}
               </div>
 
               {/* Branding footer */}
               <div className="text-gray-400 text-sm tracking-wider mb-8">tigertest.io</div>
 
+              {/* Split set: straight on to the next unfinished part */}
+              {followingPart && setNumber && (
+                <Button asChild className="w-full max-w-xs mx-auto mb-3 flex bg-green-500 hover:bg-green-600 text-white font-bold uppercase tracking-wide h-12 text-base">
+                  <Link href={routes.training(setNumber, followingPart.part)}>
+                    {ui.nextPart(followingPart.part, followingPart.partCount)}
+                  </Link>
+                </Button>
+              )}
+
               {/* SHARE + TRY AGAIN buttons */}
               <div className="flex gap-3 max-w-xs mx-auto">
                 {setNumber && (
                   <ShareButton
-                    score={setProgress?.total ?? 50}
-                    totalQuestions={setProgress?.total ?? 50}
+                    score={progress?.total ?? 50}
+                    totalQuestions={progress?.total ?? 50}
                     percentage={100}
                     passed={true}
                     setId={setNumber}
@@ -422,12 +482,12 @@ function ExamTrainingContent({ exam }: { exam: ExamConfig }) {
 
         {/* Progress */}
         <div className="mt-4 md:mt-6 text-center">
-          {accessLocked ? null : isSetMode && setProgress ? (
+          {accessLocked ? null : isSetMode && progress ? (
             // Set-based progress
             <>
               <div className="flex items-center justify-center gap-1 text-sm md:text-lg text-gray-700 dark:text-gray-200">
-                <span className="font-bold text-xl md:text-2xl text-brand-dark">{setProgress.correct}</span>
-                <span className="text-gray-500 dark:text-gray-400">/{setProgress.total}</span>
+                <span className="font-bold text-xl md:text-2xl text-brand-dark">{progress.correct}</span>
+                <span className="text-gray-500 dark:text-gray-400">/{progress.total}</span>
                 <span className="text-gray-500 dark:text-gray-400 text-xs md:text-base ml-1">
                   {t("trainingPage.questionsCorrect")}
                 </span>
@@ -435,9 +495,12 @@ function ExamTrainingContent({ exam }: { exam: ExamConfig }) {
               <div className="w-full bg-brand-border-light rounded-full h-2 mt-2 max-w-md mx-auto">
                 <div
                   className="bg-brand h-2 rounded-full transition-all"
-                  style={{ width: `${(setProgress.correct / setProgress.total) * 100}%` }}
+                  style={{ width: `${(progress.correct / progress.total) * 100}%` }}
                 />
               </div>
+              {partInfo && (
+                <p className="text-xs text-gray-500 dark:text-gray-400 mt-2">{trainingPartName(partInfo, lang)}</p>
+              )}
             </>
           ) : !isOnboardingComplete() ? (
             // Onboarding progress

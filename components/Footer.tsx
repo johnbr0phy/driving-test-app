@@ -9,7 +9,7 @@ import { isViState } from "@/data/viStates";
 import { isKoState } from "@/data/koStates";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { ThemeToggle } from "@/components/ThemeToggle";
-import { getExamByPath } from "@/lib/exams";
+import { examLanguages, getExamByPath } from "@/lib/exams";
 import { relatedTests } from "@/lib/testCatalog";
 import { getExamV2ByPath } from "@/lib/v2/registry";
 
@@ -56,7 +56,11 @@ export function Footer() {
     pathname === "/vi/thi-thu-dmv-theo-tieu-bang" ||
     pathname === "/ko/juibyeol-dmv-pilgi-siheom";
 
-  const showLanguageToggle = !isHomepage && !isAltExam && !isSeoPage;
+  // A translated exam (CDL in Spanish) gets the toggle on its app pages, not
+  // on its English landing page.
+  const examLangs = v1Exam ? examLanguages(v1Exam) : [];
+  const onTranslatedExamApp = !!v1Exam && examLangs.length > 1 && !!pathname?.startsWith(`${v1Exam.slug}/`);
+  const showLanguageToggle = !isHomepage && !isSeoPage && (!isAltExam || onTranslatedExamApp);
 
   const dataTheme = exam?.id;
 
@@ -133,7 +137,7 @@ export function Footer() {
             .
           </p>
           <div className="flex items-center justify-center md:justify-end gap-x-4 text-gray-500 dark:text-gray-400">
-            {showLanguageToggle && <LanguageSwitcher />}
+            {showLanguageToggle && <LanguageSwitcher languages={isAltExam ? examLangs : undefined} />}
             <ThemeToggle className="h-7 w-7" />
             {showSchools && (
               <Link href="/schools" className="hover:text-brand hover:underline">

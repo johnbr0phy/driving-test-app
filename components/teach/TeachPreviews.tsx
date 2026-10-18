@@ -19,7 +19,7 @@ export function PhonePreview() {
           <p className="text-[11px] text-gray-600 dark:text-gray-300 mt-0.5 mb-3">Surgical Tech, Fall: CST practice</p>
           <p className="text-[10px] text-gray-700 dark:text-gray-200 mb-1">Your name, as your instructor knows it</p>
           <div className="h-8 rounded-md border border-gray-300 dark:border-gray-700 px-2 flex items-center text-xs text-gray-900 dark:text-gray-50">
-            Maria G.<span className="ml-0.5 w-px h-3.5 bg-gray-900 dark:bg-gray-50 animate-pulse" />
+            Phoebe B.<span className="ml-0.5 w-px h-3.5 bg-gray-900 dark:bg-gray-50 animate-pulse" />
           </div>
           <div className="mt-3 h-8 rounded-md bg-black dark:bg-white text-white dark:text-gray-900 text-xs font-medium flex items-center justify-center">
             Start practicing
@@ -41,7 +41,7 @@ const TOPICS = [
 ];
 
 const STUDENTS = [
-  { name: "Maria G.", when: "Today", answered: 412, acc: 81, test: "Test 2 · 84%", pass: true },
+  { name: "Phoebe B.", when: "Today", answered: 412, acc: 81, test: "Test 2 · 84%", pass: true },
   { name: "Devon W.", when: "Yesterday", answered: 288, acc: 69, test: "Test 1 · 66%", pass: false },
   { name: "Ashley T.", when: "3 days ago", answered: 150, acc: 74, test: "Test 1 · 72%", pass: true },
 ];

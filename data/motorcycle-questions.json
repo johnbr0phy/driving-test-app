@@ -1145,7 +1145,7 @@
     "optionD": "Grip firmly and ease off the throttle",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Grip the handlebars firmly without fighting the wobble and ease off the throttle to slow down. Do not brake hard, because braking can make the wobble worse; pull off and check the load, tires, and steering."
+    "explanation": "Grip the handlebars firmly without fighting the wobble and close the throttle gradually to slow down. Do not apply the brakes, because braking can make the wobble worse. Pull off and check the load, tires, and steering."
   },
   {
     "type": "MOTO",
@@ -2727,7 +2727,7 @@
     "optionD": "Steer quickly against each shake",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "During a wobble, grip the handlebars firmly without fighting it, close the throttle gradually and do not brake hard or accelerate. Pull off and find the cause."
+    "explanation": "During a wobble, grip the handlebars firmly without fighting it and close the throttle gradually. Do not apply the brakes or accelerate, since either can make the wobble worse. Pull off and find the cause."
   },
   {
     "type": "MOTO",

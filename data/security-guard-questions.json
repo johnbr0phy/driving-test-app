@@ -851,7 +851,7 @@
     "optionD": "The guard cannot promise or threaten prosecution",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Charging decisions belong to police and prosecutors, so a guard who threatens arrest or prosecution is bluffing and may be liable for coercion, even after witnessing a crime. Cooperation is gained by calmly explaining what will happen next."
+    "explanation": "Whether anyone is charged is decided by police, prosecutors and the client, not the guard, so threatening prosecution to gain cooperation promises something the guard does not control and can be treated as coercion. Even when a guard witnessed a crime, threats escalate the situation; cooperation is gained by calmly explaining what will happen next."
   },
   {
     "type": "SECGUARD",

@@ -2545,7 +2545,7 @@
     "optionD": "4:00 p.m.",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Reheating for hot holding must bring food to 165 F (74 C) within 2 hours, so 10:00 a.m. plus 2 hours is noon 2:00 p.m. reflects the 4-hour holding check, which does not apply to reheating."
+    "explanation": "Food cooked and cooled in the operation and reheated for hot holding must reach 165 F (74 C) for 15 seconds within 2 hours, so 10:00 a.m. plus 2 hours is noon. 2:00 p.m. and 4:00 p.m. allow 4 or 6 hours, far longer than the reheating limit."
   },
   {
     "type": "FOODMGR",

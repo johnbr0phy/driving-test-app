@@ -179,7 +179,7 @@
     "optionD": "A waiver issued under 14 CFR 107.205",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "The Mode C veil is a transponder rule for manned aircraft under 14 CFR 91.215, and 14 CFR 107.53 bars sUAS transponder use unless authorized. Class G requires no ATC authorization, so the veil itself adds nothing."
+    "explanation": "The Mode C veil is a transponder rule for manned aircraft under 14 CFR 91.215, and 14 CFR 107.52 bars operating a small UA with a transponder on unless authorized. Class G requires no ATC authorization, so the veil itself adds nothing."
   },
   {
     "type": "P107",

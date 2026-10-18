@@ -1229,7 +1229,7 @@
     "optionD": "4",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Hazardous materials are grouped into nine hazard classes, Class 1 explosives through Class 9 miscellaneous, plus the ORM-D designation."
+    "explanation": "Hazardous materials are grouped into nine hazard classes, from Class 1 explosives through Class 9 miscellaneous hazardous materials. The older ORM-D designation was phased out at the start of 2021."
   },
   {
     "type": "CDLE",
@@ -1271,7 +1271,7 @@
     "optionD": "Optional Reporting Material-Division",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "ORM-D means Other Regulated Material-Domestic, used for limited-quantity consumer commodities such as some aerosols."
+    "explanation": "ORM-D means Other Regulated Material-Domestic. It was used for consumer commodities such as some aerosols, but since January 1, 2021 those items ship as limited quantities instead. Some CDL manuals still mention the term."
   },
   {
     "type": "CDLE",
@@ -2069,7 +2069,7 @@
     "optionD": "Liquid Class 6 poison",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Buses may carry small-arms ammunition labeled ORM-D, emergency hospital supplies, and drugs. Division 2.3 poison gas, tear gas, and liquid Class 6 poison may never be carried."
+    "explanation": "Buses may carry small-arms ammunition (the CDL manual still calls it ORM-D, a marking now replaced by limited quantity), emergency hospital supplies, and drugs. Division 2.3 poison gas, tear gas, and liquid Class 6 poison may never be carried."
   },
   {
     "type": "CDLE",
@@ -2363,7 +2363,7 @@
     "optionD": "10,000 gallons",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "A tank vehicle carries liquid or gaseous materials in tanks with an aggregate rated capacity of 1,000 gallons or more. 500 gallons is below the threshold, and 2,500 or 5,000 gallons overstate it."
+    "explanation": "A tank vehicle carries liquid or gaseous materials in tanks with an aggregate rated capacity of 1,000 gallons or more (49 CFR 383.5). 500 gallons is below the threshold, and 2,500 or 10,000 gallons overstate it."
   },
   {
     "type": "CDLE",

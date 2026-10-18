@@ -11,6 +11,7 @@ import { Check, Copy, QrCode, RefreshCw } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 import { classLink, classUrl, teachFetch } from "@/lib/teachClient";
 import { normalizeClassCode, type ClassReport } from "@/lib/classes";
+import { ClassQuestions } from "@/components/teach/ClassQuestions";
 
 function pct(correct: number, answered: number): number {
   return answered ? Math.round((correct / answered) * 100) : 0;
@@ -150,21 +151,7 @@ export default function ClassPage() {
               </div>
             )}
 
-            {report.mostMissed.length > 0 && (
-              <div className={card}>
-                <h2 className="font-semibold text-gray-900 dark:text-gray-50 mb-3">Most-missed questions</h2>
-                <ol className="space-y-3">
-                  {report.mostMissed.map((m) => (
-                    <li key={m.questionId} className="text-sm border-t border-gray-100 dark:border-gray-800 pt-3 first:border-0 first:pt-0">
-                      <p className="text-gray-900 dark:text-gray-50">{m.question}</p>
-                      <p className="text-gray-600 dark:text-gray-300 mt-1">
-                        Answer: <span className="text-green-700 dark:text-green-300">{m.answer}</span> · missed {m.misses} {m.misses === 1 ? "time" : "times"}
-                      </p>
-                    </li>
-                  ))}
-                </ol>
-              </div>
-            )}
+            {report.questions.length > 0 && <ClassQuestions questions={report.questions} />}
 
             <div className={`${card} overflow-x-auto`}>
               <div className="flex items-center justify-between mb-3">
@@ -213,3 +200,4 @@ export default function ClassPage() {
     </div>
   );
 }
+

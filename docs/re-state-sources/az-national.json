@@ -1,0 +1,128 @@
+{
+ "total": 140,
+ "include": [
+  "RE-PROP-001",
+  "RE-PROP-002",
+  "RE-PROP-003",
+  "RE-PROP-010",
+  "RE-PROP-011",
+  "RE-PROP-014",
+  "RE-PROP-015",
+  "RE-PROP-017",
+  "RE-PROP-021",
+  "RE-PROP-022",
+  "RE-PROP-026",
+  "RE-OWN-001",
+  "RE-OWN-004",
+  "RE-OWN-007",
+  "RE-OWN-011",
+  "RE-OWN-014",
+  "RE-OWN-017",
+  "RE-OWN-018",
+  "RE-OWN-020",
+  "RE-OWN-023",
+  "RE-VAL-001",
+  "RE-VAL-002",
+  "RE-VAL-003",
+  "RE-VAL-005",
+  "RE-VAL-011",
+  "RE-VAL-014",
+  "RE-VAL-016",
+  "RE-VAL-018",
+  "RE-VAL-020",
+  "RE-VAL-022",
+  "RE-VAL-026",
+  "RE-CON-002",
+  "RE-CON-004",
+  "RE-CON-005",
+  "RE-CON-007",
+  "RE-CON-014",
+  "RE-CON-015",
+  "RE-CON-018",
+  "RE-CON-020",
+  "RE-CON-026",
+  "RE-CON-031",
+  "RE-CON-032",
+  "RE-CON-033",
+  "RE-CON-035",
+  "RE-CON-037",
+  "RE-CON-039",
+  "RE-CON-040",
+  "RE-PRAC-002",
+  "RE-PRAC-003",
+  "RE-PRAC-006",
+  "RE-PRAC-007",
+  "RE-PRAC-008",
+  "RE-PRAC-014",
+  "RE-PRAC-015",
+  "RE-PRAC-019",
+  "RE-PRAC-021",
+  "RE-PRAC-023",
+  "RE-DISC-001",
+  "RE-DISC-002",
+  "RE-DISC-003",
+  "RE-DISC-004",
+  "RE-DISC-007",
+  "RE-DISC-009",
+  "RE-DISC-011",
+  "RE-DISC-014",
+  "RE-DISC-018",
+  "RE-FIN-001",
+  "RE-FIN-004",
+  "RE-FIN-006",
+  "RE-FIN-008",
+  "RE-FIN-012",
+  "RE-FIN-013",
+  "RE-FIN-014",
+  "RE-MATH-001",
+  "RE-MATH-004",
+  "RE-MATH-010",
+  "RE-MATH-011",
+  "RE-MATH-012",
+  "RE-MATH-019",
+  "RE-MATH-020"
+ ],
+ "overrides": {
+  "RE-OWN-004": {
+   "explanation": "Arizona is a community property state, and A.R.S. 25-211(A) excepts property acquired by gift, devise or descent from the community, so an inheritance is the wife's separate property. Other property either spouse acquires during the marriage is community property."
+  },
+  "RE-OWN-023": {
+   "explanation": "Under A.R.S. 33-412 an unrecorded conveyance is void as to a later purchaser for value without notice, so Buyer 2, who paid value, had no notice and recorded, prevails. Buyer 1's deed is still valid between Buyer 1 and the seller under 33-412(B)."
+  },
+  "RE-CON-002": {
+   "explanation": "Only the owner makes a promise, and the broker earns the fee only by performing, so the contract is unilateral. A bilateral contract needs a promise from each side. In Arizona the broker could not sue for this fee unless the agreement is in writing and signed by the owner (A.R.S. 44-101(7))."
+  },
+  "RE-CON-005": {
+   "explanation": "Arizona's statute of frauds, A.R.S. 44-101(6), bars an action on an agreement for the sale of real property unless it is in writing and signed by the party to be charged. It is not void for lack of consideration because the price was agreed."
+  },
+  "RE-CON-026": {
+   "explanation": "Arizona permits dual representation, but Commissioner's Rule R4-28-1101(F) bars representing more than one party without the prior written consent of all parties. Telling only the seller leaves the buyer unaware of the divided loyalty."
+  },
+  "RE-CON-037": {
+   "explanation": "Commissioner's Rule R4-28-1101(B)(3) requires an Arizona licensee to disclose in writing to all other parties any material defect in the property, whatever the seller instructs. Waiting for a buyer to ask is not enough because inspection would not reveal it."
+  },
+  "RE-DISC-018": {
+   "explanation": "A stigmatized property carries a psychological impact from an event such as a crime or death, not a physical flaw. In Arizona, A.R.S. 32-2156 bars any action against a seller, landlord or licensee for not disclosing a natural death, suicide, homicide or other felony on the property; a latent defect is a hidden physical problem."
+  },
+  "RE-PRAC-002": {
+   "explanation": "A.R.S. 32-2151(A) requires the broker to place entrusted money in a neutral escrow or, on receipt, in the broker's trust fund account, so the salesperson delivers the check promptly to the employing broker. Handing it to the seller or holding it personally breaches the duty to account for client funds."
+  },
+  "RE-PRAC-021": {
+   "explanation": "Vicarious liability makes a broker answerable for the acts of affiliated licensees within the scope of their work, and Commissioner's Rule R4-28-1103(D) makes an Arizona employing broker responsible for them. Caveat emptor does not excuse a licensee's misrepresentation."
+  },
+  "RE-FIN-001": {
+   "explanation": "Under A.R.S. 33-801 and 33-807, the trustee of an Arizona deed of trust holds the power of sale for the lender (beneficiary); the borrower is the trustor. Arizona home loans are usually secured by deeds of trust and foreclosed by trustee's sale."
+  },
+  "RE-FIN-013": {
+   "explanation": "RESPA Section 8 bans payments for referring settlement service business, and A.R.S. 32-2155(A) separately lets an Arizona salesperson accept compensation only from the employing broker. Disclosure does not make a referral fee legal."
+  }
+ },
+ "excluded": {
+  "RE-CON-028": "Transaction broker or facilitator status does not exist in Arizona law; Arizona licensees represent clients under R4-28-1101 or act with written consent under R4-28-1101(F).",
+  "RE-OWN-003": "Tenancy by the entirety is not an Arizona form of ownership; Arizona spouses hold community property or community property with right of survivorship (A.R.S. 33-431(C)). Covered by REAZ-AZOWN-001.",
+  "RE-OWN-021": "Hypothetical 12-year adverse possession period; Arizona's general period is ten years (A.R.S. 12-526), so the number could mislead an Arizona candidate.",
+  "RE-PRAC-001": "Keys referring a custom contract clause to an attorney; Article 26 of the Arizona Constitution lets licensees draft and fill out instruments incident to the transaction, so the item's premise conflicts with Arizona law. Covered by REAZ-AZREG-002.",
+  "RE-MATH-016": "Transfer tax calculation; Arizona Constitution Article 9, Section 24 bars new real property transfer taxes and Arizona has no deed transfer tax, so the step does not occur at an Arizona closing.",
+  "RE-FIN-003": "Lien-theory mortgage framing; Arizona home loans are secured almost entirely by deeds of trust (A.R.S. 33-801 to 33-821), tested by RE-FIN-001 and REAZ-AZBUS items instead."
+ }
+}

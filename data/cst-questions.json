@@ -767,7 +767,7 @@
     "optionD": "Finish the current step, then change gloves at closing",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "A perforated glove is contaminated and must be changed immediately. The circulator removes the contaminated glove and another sterile team member regloves the ST using assisted (open) gloving."
+    "explanation": "A perforated glove is contaminated and must be changed immediately. The circulator removes the contaminated glove and another sterile team member regloves the ST using assisted gloving."
   },
   {
     "type": "CST",
@@ -1313,7 +1313,7 @@
     "optionD": "At the midpoint, point toward the wrist",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "The needle is clamped one half to two thirds of the way from the point, just behind the swage, with the point facing the surgeon's thumb when placed in the hand. This lets the surgeon suture without repositioning."
+    "explanation": "The needle is clamped about two thirds of the way back from the point (one third of the way from the swage end), never on the swage itself, with the point facing the surgeon's thumb when placed in the hand. This lets the surgeon suture without repositioning."
   },
   {
     "type": "CST",
@@ -2335,7 +2335,7 @@
     "optionD": "Housekeeping schedule for the terminal clean",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "The debrief confirms the name of the procedure, that counts are correct, that specimens are labeled, and identifies equipment problems or concerns for recovery. It is part of the Universal Protocol."
+    "explanation": "The debrief confirms the name of the procedure, that counts are correct, that specimens are labeled, and identifies equipment problems or concerns for recovery. It corresponds to the sign-out phase of the WHO Surgical Safety Checklist, which follows the Universal Protocol time-out."
   },
   {
     "type": "CST",
@@ -2391,7 +2391,7 @@
     "optionD": "In the regular trash after the blades are capped",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "OSHA Standard Precautions require all sharps to be disposed of in closable, puncture-resistant, labeled containers. Blades are removed with an instrument, never by hand, and needles are not recapped or bent."
+    "explanation": "The OSHA Bloodborne Pathogens Standard requires all sharps to be disposed of in closable, puncture-resistant, labeled containers. Blades are removed with an instrument, never by hand, and needles are not recapped or bent."
   },
   {
     "type": "CST",
@@ -2556,10 +2556,10 @@
     "optionA": "60 to 65 degrees Fahrenheit",
     "optionB": "75 to 80 degrees Fahrenheit",
     "optionC": "55 to 60 degrees Fahrenheit",
-    "optionD": "68 to 73 degrees Fahrenheit",
+    "optionD": "68 to 75 degrees Fahrenheit",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "OR temperature is kept between 68 and 73 degrees F (20 to 23 C) with relative humidity between 20 and 60 percent. This balances patient normothermia with inhibition of microbial growth and staff comfort."
+    "explanation": "ASHRAE 170, which AORN and AST follow, sets OR temperature at 68 to 75 degrees F (20 to 24 C) with relative humidity between 20 and 60 percent. This balances patient normothermia with inhibition of microbial growth and staff comfort."
   },
   {
     "type": "CST",

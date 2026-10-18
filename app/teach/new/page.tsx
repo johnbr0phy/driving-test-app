@@ -156,13 +156,13 @@ function NewClassForm() {
           <div className="grid sm:grid-cols-2 gap-4">
             <div>
               <label htmlFor="teacher-name" className={fieldClass}>Your name, as students know you</label>
-              <Input id="teacher-name" value={teacherName} onChange={(e) => setTeacherName(e.target.value)} placeholder="Ms. Shirley" maxLength={40} />
+              <Input id="teacher-name" value={teacherName} onChange={(e) => setTeacherName(e.target.value)} placeholder="Ms. Rivera" maxLength={40} />
             </div>
             <div>
               <label htmlFor="school" className={fieldClass}>
                 School <span className="font-normal text-gray-500 dark:text-gray-400">(optional)</span>
               </label>
-              <Input id="school" value={school} onChange={(e) => setSchool(e.target.value)} placeholder="East Central Community College" maxLength={40} />
+              <Input id="school" value={school} onChange={(e) => setSchool(e.target.value)} placeholder="Lakeview Community College" maxLength={40} />
             </div>
           </div>
           {error && <p className="text-sm text-red-600 dark:text-red-400">{error}</p>}

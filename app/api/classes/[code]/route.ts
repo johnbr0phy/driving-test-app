@@ -13,7 +13,8 @@ export async function GET(_request: NextRequest, { params }: { params: Promise<{
     code,
     name: c.name,
     examId: c.examId,
-    examName: classExamNameById(c.examId),
+    examName: classExamNameById(c.examId, c.state),
+    ...(c.state ? { state: c.state } : {}),
     teacherName: c.teacherName,
     school: c.school ?? "",
   };

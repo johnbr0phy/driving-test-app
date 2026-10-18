@@ -17,6 +17,8 @@ import { PaywallModal } from "@/components/PaywallModal";
 import { useAuth } from "@/contexts/AuthContext";
 import { auth } from "@/lib/firebase";
 import { trackBeginCheckout, trackStatsEntry } from "@/lib/analytics";
+import { DMV_EXAM_ID } from "@/lib/classes";
+import { recordClassAnswer, recordClassTest } from "@/lib/classProgress";
 
 export default function TestPage() {
   const params = useParams();
@@ -155,6 +157,7 @@ export default function TestPage() {
     setAnswers(updatedAnswers);
     // Save to store
     setAnswer(testId, currentQuestionIndex, answer);
+    recordClassAnswer(DMV_EXAM_ID, currentQuestion, answer === currentQuestion.correctAnswer);
 
     // Auto-advance to next question after brief delay
     setTimeout(() => {
@@ -169,6 +172,7 @@ export default function TestPage() {
           }
         });
         completeTest(testId, correctCount, questions, updatedAnswers);
+        recordClassTest(DMV_EXAM_ID, testId, correctCount, questions.length);
         router.push(`/test/${testId}/results`);
       }
     }, 300);
@@ -185,6 +189,7 @@ export default function TestPage() {
 
     // Save completed test to store
     completeTest(testId, correctCount, questions, answers);
+    recordClassTest(DMV_EXAM_ID, testId, correctCount, questions.length);
 
     // Navigate to results page with score
     router.push(`/test/${testId}/results`);

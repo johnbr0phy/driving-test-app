@@ -97,10 +97,10 @@ const jsonLd = {
         },
         {
           "@type": "Question",
-          name: "I run a driving school. Can my students use TigerTest?",
+          name: "I teach driver's ed or run a driving school. Can my students use TigerTest?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes! TigerTest partners with driving schools to help students prepare for their permit test. Visit tigertest.io/schools to learn more about our driving school program and get your school listed.",
+            text: "Yes, for free. Make a class at tigertest.io/teach, post one link, and students join with just their name. You see who practiced, their test scores and the topics your class misses most.",
           },
         },
         {
@@ -437,10 +437,10 @@ export default function DmvLandingPage() {
           </div>
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">
-              I run a driving school. Can my students use TigerTest?
+              I teach driver&apos;s ed or run a driving school. Can my students use TigerTest?
             </h3>
             <p className="text-gray-600 dark:text-gray-300">
-              Absolutely! We partner with driving schools to help students prepare for their permit test. Visit our <Link href="/schools" className="text-brand-dark hover:text-brand-darker underline">driving schools page</Link> to learn more and get your school listed.
+              Yes, for free. <Link href="/teach" className="text-brand-dark hover:text-brand-darker underline">Make a class</Link>, post one link, and students join with just their name. You see who practiced, their test scores and the topics your class misses most.
             </p>
           </div>
         </div>

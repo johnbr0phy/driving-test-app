@@ -6,7 +6,9 @@ import {
   CLASS_CODE_ALPHABET,
   CLASS_CODE_LENGTH,
   MAX_CLASSES_PER_TEACHER,
+  DMV_EXAM_ID,
   cleanName,
+  isDmvState,
   classExamNameById,
   isClassExamId,
   type ClassSummary,
@@ -32,6 +34,8 @@ export async function POST(request: NextRequest) {
   if (!name) return NextResponse.json({ error: "Give the class a name" }, { status: 400 });
   if (!teacherName) return NextResponse.json({ error: "Add the name your students know you by" }, { status: 400 });
   if (!isClassExamId(body.examId)) return NextResponse.json({ error: "Pick an exam" }, { status: 400 });
+  const state = body.examId === DMV_EXAM_ID ? body.state : null;
+  if (body.examId === DMV_EXAM_ID && !isDmvState(state)) return NextResponse.json({ error: "Pick your state" }, { status: 400 });
 
   const db = getAdminDb();
   const mine = await db.collection("classes").where("teacherUid", "==", caller.uid).count().get();
@@ -47,6 +51,7 @@ export async function POST(request: NextRequest) {
         code,
         name,
         examId: body.examId,
+        state,
         teacherUid: caller.uid,
         teacherEmail: caller.email ?? null,
         teacherName,
@@ -72,7 +77,8 @@ export async function GET(request: NextRequest) {
       code: c.code,
       name: c.name,
       examId: c.examId,
-      examName: classExamNameById(c.examId),
+      examName: classExamNameById(c.examId, c.state),
+      ...(c.state ? { state: c.state } : {}),
       teacherName: c.teacherName,
       school: c.school ?? "",
       createdAt: c.createdAt,

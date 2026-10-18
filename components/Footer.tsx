@@ -13,7 +13,6 @@ import { examLanguages, getExamByPath } from "@/lib/exams";
 import { relatedTests } from "@/lib/testCatalog";
 import { getExamV2ByPath } from "@/lib/v2/registry";
 
-const DRIVING_TEST_IDS = ["dmv", "cdl", "cdlx", "moto"];
 
 const popularStateSlugs = [
   "california", "texas", "florida", "new-york", "pennsylvania",
@@ -42,7 +41,6 @@ export function Footer() {
   const footerTests = relatedTests(exam?.id ?? "dmv", 8);
   const isHomepage = pathname === "/dmv-practice-test";
   // Driving schools only belong next to driving tests (DMV, CDL, motorcycle).
-  const showSchools = !exam || DRIVING_TEST_IDS.includes(exam.id);
 
   // SEO landing pages have dedicated /es/ and /vi/ URLs, so they manage
   // language by routing.
@@ -139,11 +137,9 @@ export function Footer() {
           <div className="flex items-center justify-center md:justify-end gap-x-4 text-gray-500 dark:text-gray-400">
             {showLanguageToggle && <LanguageSwitcher languages={isAltExam ? examLangs : undefined} />}
             <ThemeToggle className="h-7 w-7" />
-            {showSchools && (
-              <Link href="/schools" className="hover:text-brand hover:underline">
-                Driving Schools
-              </Link>
-            )}
+            <Link href="/teach" className="hover:text-brand hover:underline">
+              For teachers
+            </Link>
             <Link href="/privacy" className="hover:text-brand hover:underline">
               Privacy Policy
             </Link>

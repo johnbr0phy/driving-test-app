@@ -55,6 +55,9 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       // Certification landings moved to keyword URLs; the app keeps the short base.
+      // The driving-school program became instructor classes at /teach.
+      { source: "/schools", destination: "/teach", permanent: true },
+      { source: "/schools/:path*", destination: "/teach", permanent: true },
       { source: "/htl", destination: "/htl-practice-test", permanent: true },
       { source: "/cst", destination: "/cst-practice-test", permanent: true },
       { source: "/crcst", destination: "/crcst-practice-test", permanent: true },

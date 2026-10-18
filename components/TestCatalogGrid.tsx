@@ -28,9 +28,8 @@ export function TestCard({ test }: { test: TestCatalogEntry }) {
             <p className="text-sm text-gray-500 dark:text-gray-400">{test.org}</p>
           </div>
         </div>
-        <p className="flex-1 text-gray-600 dark:text-gray-300">{test.blurb}</p>
         {test.languages.length > 1 && <LanguageFlags languages={test.languages} />}
-        <div className="mt-5 flex items-center justify-between text-sm">
+        <div className="mt-auto flex items-center justify-between pt-1 text-sm">
           <span className="text-gray-500 dark:text-gray-400">
             {test.questions} questions · {test.pricing ?? "Free"}
           </span>
@@ -48,7 +47,7 @@ function LanguageFlags({ languages }: { languages: TestCatalogEntry["languages"]
   const langs = LANGUAGES.filter((l) => languages.includes(l.code));
   const names = langs.map((l) => l.englishName).join(", ");
   return (
-    <p className="mt-4 flex items-center gap-1.5 text-sm text-gray-500 dark:text-gray-400" title={`Available in ${names}`}>
+    <p className="mb-4 flex items-center gap-1.5 text-sm text-gray-500 dark:text-gray-400" title={`Available in ${names}`}>
       <span className="sr-only">Available in {names}</span>
       {langs.map((l) => (
         <span key={l.code} aria-hidden="true" className="text-lg leading-none">

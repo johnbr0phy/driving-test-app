@@ -1,0 +1,45 @@
+{
+  "landingPath": "/es/examen-montacargas",
+  "name": "Examen de práctica de montacargas",
+  "examLabel": "Operador de montacargas",
+  "fullName": "examen de certificación de operador de montacargas",
+  "trainingSets": {
+    "1": {
+      "name": "Conceptos básicos, reglas e inspección",
+      "weightLabel": "36% de los exámenes"
+    },
+    "2": {
+      "name": "Estabilidad y capacidad de carga",
+      "weightLabel": "24% de los exámenes"
+    },
+    "3": {
+      "name": "Operación segura",
+      "weightLabel": "24% de los exámenes"
+    },
+    "4": {
+      "name": "Manejo de cargas, muelles y rampas",
+      "weightLabel": "16% de los exámenes"
+    }
+  },
+  "categoryLabels": {
+    "forkBasics": "Conceptos básicos y reglas de OSHA",
+    "forkStability": "Estabilidad y capacidad de carga",
+    "forkInspection": "Inspección, combustible y carga de baterías",
+    "forkOperation": "Operación segura y peatones",
+    "forkLoads": "Manejo de cargas, muelles y rampas"
+  },
+  "copy": {
+    "guestPrompt": "para guardar tu progreso de montacargas y ver cada pregunta que fallas",
+    "trainingHeading": "Practica por tema",
+    "trainingSub": "Cuatro grupos que cubren el examen escrito de operador de montacargas: conceptos básicos, reglas e inspección, estabilidad y capacidad de carga, operación segura y manejo de cargas. Las preguntas que fallas vuelven hasta que las domines.",
+    "testsHeading": "Exámenes de práctica · 50 preguntas en las proporciones del examen de operador",
+    "heroSubs": [
+      "Cinco temas, cuatro exámenes. La estabilidad pesa más.",
+      "Domina cada grupo y luego haz un examen.",
+      "Vas a la mitad. Prueba un examen de práctica.",
+      "Corrige las fallas y vuelve a intentarlo.",
+      "Todo listo. Haz la evaluación de tu empleador."
+    ],
+    "sourceLine": "Basado en el contenido de capacitación de operadores de OSHA 29 CFR 1910.178 y ANSI/ITSDF B56.1. La certificación la da tu empleador después de tu capacitación y evaluación."
+  }
+}

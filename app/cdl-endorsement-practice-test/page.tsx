@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { examLandingAlternates } from "@/lib/examSeo";
 import Image from "next/image";
 import { getTigerAsset } from "@/lib/tigerAssets";
 import { Smartphone, Monitor } from "lucide-react";
@@ -20,6 +21,7 @@ export const metadata: Metadata = {
     "CDL hazmat practice test, hazardous materials endorsement test, CDL air brakes practice test, combination vehicles practice test, tanker endorsement practice test, passenger endorsement practice test, CDL endorsement test questions",
   alternates: {
     canonical: `${siteUrl}/cdl-endorsement-practice-test`,
+    languages: examLandingAlternates("cdlx"),
   },
   openGraph: {
     title,

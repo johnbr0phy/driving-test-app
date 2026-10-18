@@ -422,11 +422,11 @@ export const ko: TranslationKeys = {
     aplusSwTroubleshooting: "Software Troubleshooting",
     aplusOperational: "Operational Procedures",
     // Food handler card categories
-    fhBasics: "Food Safety Basics",
-    fhHygiene: "Personal Hygiene",
-    fhContamination: "Contamination & Allergens",
-    fhTimeTemp: "Time & Temperature",
-    fhCleaning: "Cleaning & Sanitizing",
+    fhBasics: "식품 안전 기초",
+    fhHygiene: "개인 위생",
+    fhContamination: "오염과 알레르기 유발 물질",
+    fhTimeTemp: "시간과 온도",
+    fhCleaning: "세척과 소독",
     // Boating safety categories
     boatBasics: "Boat Basics",
     boatEquipment: "Required Equipment",

@@ -1,0 +1,45 @@
+{
+  "landingPath": "/es/examen-manipulador-de-alimentos",
+  "name": "Examen de práctica de manipulador de alimentos",
+  "examLabel": "Tarjeta de manipulador de alimentos",
+  "fullName": "examen del certificado de manipulador de alimentos",
+  "trainingSets": {
+    "1": {
+      "name": "Conceptos básicos e higiene personal",
+      "weightLabel": "40% de los exámenes"
+    },
+    "2": {
+      "name": "Contaminación y alérgenos",
+      "weightLabel": "20% de los exámenes"
+    },
+    "3": {
+      "name": "Control de tiempo y temperatura",
+      "weightLabel": "24% de los exámenes"
+    },
+    "4": {
+      "name": "Limpieza, desinfección y plagas",
+      "weightLabel": "16% de los exámenes"
+    }
+  },
+  "categoryLabels": {
+    "fhBasics": "Conceptos básicos de seguridad alimentaria",
+    "fhHygiene": "Higiene personal",
+    "fhContamination": "Contaminación y alérgenos",
+    "fhTimeTemp": "Tiempo y temperatura",
+    "fhCleaning": "Limpieza y desinfección"
+  },
+  "copy": {
+    "guestPrompt": "para guardar tu progreso de manipulador de alimentos y ver cada pregunta que fallas",
+    "trainingHeading": "Practica por tema",
+    "trainingSub": "Cuatro grupos de práctica sobre seguridad alimentaria, higiene, contaminación, temperaturas y limpieza. Usa los materiales de tu proveedor aceptado para el curso y el examen reales.",
+    "testsHeading": "Exámenes de práctica · 50 preguntas de apoyo",
+    "heroSubs": [
+      "Cinco temas, cuatro exámenes. La temperatura pesa más.",
+      "Domina cada grupo y luego haz un examen.",
+      "Vas a la mitad. Prueba un examen de práctica.",
+      "Corrige las fallas y vuelve a intentarlo.",
+      "Todo listo. Saca tu tarjeta de manipulador de alimentos local."
+    ],
+    "sourceLine": "Basado en el Código de Alimentos de la FDA que enseñan los cursos de manipulador de alimentos acreditados por ANAB. Los requisitos de la tarjeta varían según el estado y el condado."
+  }
+}

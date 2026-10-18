@@ -52,3 +52,16 @@ export function siteShareMetadata(title: string): Metadata {
     twitter: { card: "summary", title, description, images: [image.url] },
   };
 }
+
+/**
+ * hreflang for a registry exam's landing in every language it exists in
+ * (ExamConfig.translations), for the English and translated landings alike.
+ */
+export function examLandingAlternates(examId: string): Record<string, string> {
+  const exam = getExamById(examId)!;
+  const enUrl = `${siteUrl}${examLandingPath(exam)}`;
+  const translated = Object.fromEntries(
+    Object.entries(exam.translations ?? {}).map(([lang, tr]) => [lang, `${siteUrl}${tr.landingPath}`])
+  );
+  return { en: enUrl, ...translated, "x-default": enUrl };
+}

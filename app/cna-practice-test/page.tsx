@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { examLandingAlternates } from "@/lib/examSeo";
 import Image from "next/image";
 import { getTigerAsset } from "@/lib/tigerAssets";
 import { Smartphone, Monitor } from "lucide-react";
@@ -20,6 +21,7 @@ export const metadata: Metadata = {
     "CNA practice test, nurse aide practice test, CNA written exam questions, NNAAP practice test, certified nursing assistant exam prep, CNA test 2026, free CNA practice questions",
   alternates: {
     canonical: `${siteUrl}/cna-practice-test`,
+    languages: examLandingAlternates("cna"),
   },
   openGraph: {
     title,

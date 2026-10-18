@@ -1,0 +1,49 @@
+{
+  "landingPath": "/es/examen-cna",
+  "name": "Examen de práctica CNA",
+  "examLabel": "Examen escrito CNA",
+  "fullName": "examen escrito (de conocimientos) de asistente de enfermería",
+  "trainingSets": {
+    "1": {
+      "name": "Vida diaria y cuidado restaurativo",
+      "weightLabel": "22% del examen"
+    },
+    "2": {
+      "name": "Habilidades básicas de enfermería",
+      "weightLabel": "39% del examen"
+    },
+    "3": {
+      "name": "Cuidado psicosocial",
+      "weightLabel": "13% del examen"
+    },
+    "4": {
+      "name": "El rol del asistente de enfermería",
+      "weightLabel": "26% del examen"
+    }
+  },
+  "categoryLabels": {
+    "activitiesDailyLiving": "Actividades de la vida diaria",
+    "basicNursingSkills": "Habilidades básicas de enfermería",
+    "restorativeSkills": "Habilidades restaurativas",
+    "emotionalMentalHealth": "Necesidades emocionales y de salud mental",
+    "spiritualCultural": "Necesidades espirituales y culturales",
+    "communication": "Comunicación",
+    "clientRights": "Derechos del residente",
+    "legalEthical": "Conducta legal y ética",
+    "healthCareTeam": "Miembro del equipo de salud"
+  },
+  "copy": {
+    "guestPrompt": "para guardar tu progreso del examen CNA y ver cada pregunta que fallas",
+    "trainingHeading": "Practica por área de contenido",
+    "trainingSub": "Cuatro grupos que siguen el temario del examen escrito NNAAP. Respuesta al instante, y las preguntas que fallas vuelven hasta que las domines.",
+    "testsHeading": "Exámenes de práctica · 50 preguntas repartidas como el examen real",
+    "heroSubs": [
+      "Cuatro áreas, cuatro exámenes. Las habilidades de enfermería pesan más.",
+      "Domina cada grupo y luego haz un examen.",
+      "Vas a la mitad. Prueba un examen de práctica.",
+      "Corrige las fallas y vuelve a intentarlo.",
+      "Todo listo. Programa el examen CNA de tu estado."
+    ],
+    "sourceLine": "Repartido según el temario del examen escrito NNAAP. Tu estado puede usar Prometric o Headmaster con un temario parecido."
+  }
+}

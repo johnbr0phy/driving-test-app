@@ -1,0 +1,50 @@
+{
+  "landingPath": "/es/examen-osha-10",
+  "name": "Examen de práctica OSHA 10",
+  "examLabel": "OSHA 10 horas",
+  "fullName": "examen final del curso Outreach de 10 horas de OSHA",
+  "trainingSets": {
+    "1": {
+      "name": "Introducción a OSHA y derechos del trabajador",
+      "weightLabel": "16% de los exámenes"
+    },
+    "2": {
+      "name": "Protección contra caídas",
+      "weightLabel": "18% de los exámenes"
+    },
+    "3": {
+      "name": "Electricidad, golpeado por y atrapado en",
+      "weightLabel": "28% de los exámenes"
+    },
+    "4": {
+      "name": "Comunicación de peligros y EPP",
+      "weightLabel": "20% de los exámenes"
+    },
+    "5": {
+      "name": "Peligros a la salud, herramientas e incendios",
+      "weightLabel": "18% de los exámenes"
+    }
+  },
+  "categoryLabels": {
+    "oshaIntro": "Introducción a OSHA y derechos del trabajador",
+    "oshaFalls": "Protección contra caídas",
+    "oshaElectrical": "Seguridad eléctrica",
+    "oshaStruckCaught": "Golpeado por y atrapado en",
+    "oshaHazcom": "Comunicación de peligros y EPP",
+    "oshaHealth": "Peligros a la salud, herramientas e incendios"
+  },
+  "copy": {
+    "guestPrompt": "para guardar tu progreso de OSHA 10 y ver cada pregunta que fallas",
+    "trainingHeading": "Practica por tema",
+    "trainingSub": "Cinco grupos que cubren los módulos de OSHA 10: derechos del trabajador, protección contra caídas, el resto de los Focus Four, comunicación de peligros y EPP, y peligros a la salud, herramientas e incendios. Las preguntas que fallas vuelven hasta que las domines.",
+    "testsHeading": "Exámenes de práctica · 50 preguntas en las proporciones del examen del curso",
+    "heroSubs": [
+      "Seis temas, cuatro exámenes. Los Focus Four pesan más.",
+      "Domina cada grupo y luego haz un examen.",
+      "Vas a la mitad. Prueba un examen de práctica.",
+      "Corrige las fallas y vuelve a intentarlo.",
+      "Todo listo. Termina tu curso y recibe tu tarjeta."
+    ],
+    "sourceLine": "Basado en los temas del Programa de Capacitación Outreach de OSHA y en 29 CFR 1926 y 1910. No es un curso oficial de OSHA; las tarjetas solo las dan entrenadores autorizados."
+  }
+}

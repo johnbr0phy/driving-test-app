@@ -1,0 +1,45 @@
+{
+  "landingPath": "/ko/food-handler-siheom",
+  "name": "푸드 핸들러 연습 시험",
+  "examLabel": "푸드 핸들러 카드",
+  "fullName": "푸드 핸들러(식품 취급자) 자격 시험",
+  "trainingSets": {
+    "1": {
+      "name": "식품 안전 기초와 개인 위생",
+      "weightLabel": "시험의 40%"
+    },
+    "2": {
+      "name": "오염과 알레르기 유발 물질",
+      "weightLabel": "시험의 20%"
+    },
+    "3": {
+      "name": "시간과 온도 관리",
+      "weightLabel": "시험의 24%"
+    },
+    "4": {
+      "name": "세척, 소독과 해충",
+      "weightLabel": "시험의 16%"
+    }
+  },
+  "categoryLabels": {
+    "fhBasics": "식품 안전 기초",
+    "fhHygiene": "개인 위생",
+    "fhContamination": "오염과 알레르기 유발 물질",
+    "fhTimeTemp": "시간과 온도",
+    "fhCleaning": "세척과 소독"
+  },
+  "copy": {
+    "guestPrompt": "푸드 핸들러 진도를 저장하고 틀린 문제를 모두 확인하려면",
+    "trainingHeading": "주제별로 연습하기",
+    "trainingSub": "식품 안전, 위생, 오염, 온도, 세척을 다루는 4개의 연습 세트예요. 실제 교육과 시험은 승인된 교육 기관의 자료를 이용하세요.",
+    "testsHeading": "연습 시험 · 보충 문제 50개",
+    "heroSubs": [
+      "다섯 가지 주제, 네 번의 시험. 온도 문제가 가장 많아요.",
+      "세트를 하나씩 마스터한 다음 시험을 보세요.",
+      "절반 왔어요. 연습 시험을 풀어 보세요.",
+      "틀린 문제를 고치고 다시 도전하세요.",
+      "모두 끝났어요. 지역 푸드 핸들러 카드를 받으세요."
+    ],
+    "sourceLine": "ANAB 인증 푸드 핸들러 교육 과정에서 가르치는 FDA 식품 규정(Food Code)을 바탕으로 해요. 카드 요건은 주와 카운티마다 달라요."
+  }
+}

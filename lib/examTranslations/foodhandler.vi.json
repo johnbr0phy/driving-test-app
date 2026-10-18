@@ -1,0 +1,45 @@
+{
+  "landingPath": "/vi/thi-thu-the-food-handler",
+  "name": "Thi thử thẻ Food Handler",
+  "examLabel": "Thẻ Food Handler",
+  "fullName": "bài thi chứng chỉ an toàn thực phẩm cho nhân viên (food handler)",
+  "trainingSets": {
+    "1": {
+      "name": "Kiến thức cơ bản về an toàn thực phẩm & Vệ sinh cá nhân",
+      "weightLabel": "40% bài thi"
+    },
+    "2": {
+      "name": "Nhiễm bẩn & Chất gây dị ứng",
+      "weightLabel": "20% bài thi"
+    },
+    "3": {
+      "name": "Kiểm soát thời gian & nhiệt độ",
+      "weightLabel": "24% bài thi"
+    },
+    "4": {
+      "name": "Làm sạch, khử trùng & Côn trùng gây hại",
+      "weightLabel": "16% bài thi"
+    }
+  },
+  "categoryLabels": {
+    "fhBasics": "Kiến thức cơ bản về an toàn thực phẩm",
+    "fhHygiene": "Vệ sinh cá nhân",
+    "fhContamination": "Nhiễm bẩn & Chất gây dị ứng",
+    "fhTimeTemp": "Thời gian & Nhiệt độ",
+    "fhCleaning": "Làm sạch & Khử trùng"
+  },
+  "copy": {
+    "guestPrompt": "để lưu tiến độ ôn thi food handler và theo dõi mọi câu bạn trả lời sai",
+    "trainingHeading": "Luyện tập theo chủ đề",
+    "trainingSub": "Bốn bộ luyện tập về an toàn thực phẩm, vệ sinh, nhiễm bẩn, nhiệt độ và làm sạch. Hãy dùng tài liệu của đơn vị đào tạo được chấp nhận cho khóa học và bài thi chính thức.",
+    "testsHeading": "Bài thi thử · 50 câu hỏi bổ trợ",
+    "heroSubs": [
+      "Năm chủ đề, bốn bài thi. Nhiệt độ chiếm nhiều nhất.",
+      "Nắm vững từng bộ, rồi làm bài thi.",
+      "Đã được một nửa. Hãy thử một bài thi thử.",
+      "Ôn lại các câu sai, rồi thi lại.",
+      "Đã xong hết. Hãy lấy thẻ food handler tại địa phương của bạn."
+    ],
+    "sourceLine": "Dựa trên Bộ luật Thực phẩm FDA (FDA Food Code) như được giảng dạy trong các khóa food handler được ANAB công nhận. Yêu cầu về thẻ khác nhau tùy tiểu bang và quận."
+  }
+}

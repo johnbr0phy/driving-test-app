@@ -41,6 +41,24 @@ const COPY = {
     mobileAlt: (name: string) => `Práctica por tema del examen ${name} de TigerTest en el celular`,
     desktopAlt: (name: string) => `Examen de práctica ${name} de TigerTest en la computadora`,
   },
+  vi: {
+    start: "Bắt đầu luyện tập",
+    dashboard: "Đến bảng điều khiển",
+    how: "Xem cách hoạt động",
+    mobile: "Luyện tập trên điện thoại",
+    desktop: "Thi thử trên máy tính",
+    mobileAlt: (name: string) => `Chế độ luyện tập bài thi thử ${name} của TigerTest trên điện thoại`,
+    desktopAlt: (name: string) => `Bài thi thử ${name} của TigerTest trên máy tính`,
+  },
+  ko: {
+    start: "연습 시작하기",
+    dashboard: "대시보드로 가기",
+    how: "이용 방법 보기",
+    mobile: "휴대폰으로 연습",
+    desktop: "컴퓨터로 시험",
+    mobileAlt: (name: string) => `휴대폰에서 보는 TigerTest ${name} 연습 시험 연습 모드`,
+    desktopAlt: (name: string) => `컴퓨터에서 보는 TigerTest ${name} 연습 시험`,
+  },
 };
 type CopyLang = keyof typeof COPY;
 

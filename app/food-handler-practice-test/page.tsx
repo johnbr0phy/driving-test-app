@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { examLandingAlternates } from "@/lib/examSeo";
 import Image from "next/image";
 import { getTigerAsset } from "@/lib/tigerAssets";
 import { Smartphone, Monitor } from "lucide-react";
@@ -20,6 +21,7 @@ export const metadata: Metadata = {
     "food handler practice test, food handler card test, food handler certificate practice questions, food safety test answers, servsafe food handler practice test, food handler exam 2026, free food handler test",
   alternates: {
     canonical: `${siteUrl}/food-handler-practice-test`,
+    languages: examLandingAlternates("foodhandler"),
   },
   openGraph: {
     title,

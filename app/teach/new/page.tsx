@@ -12,6 +12,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useAuth } from "@/contexts/AuthContext";
 import { teachFetch } from "@/lib/teachClient";
+import { markTeacher } from "@/components/TeachLink";
 import { DMV_EXAM_ID, classExamGroups, type ClassExamChoice } from "@/lib/classes";
 
 const fieldClass = "block text-sm font-medium text-gray-800 dark:text-gray-100 mb-1.5";
@@ -66,6 +67,7 @@ function NewClassForm() {
         method: "POST",
         body: JSON.stringify({ name, examId, state, teacherName, school }),
       });
+      markTeacher(user.uid, true);
       router.push(`/teach/classes/${code}`);
     } catch (err) {
       setError(err instanceof Error ? err.message : "Couldn't make the class. Try again.");

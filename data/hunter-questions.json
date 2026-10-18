@@ -230,12 +230,12 @@
     "category": "hsFirearmsAmmo",
     "question": "About how far can typical shotgun pellets travel, compared with a shotgun slug?",
     "optionA": "Pellets about 50 yards; slugs about 200 yards",
-    "optionB": "Pellets about 500 yards; slugs over a mile",
+    "optionB": "Pellets about 500 yards; slugs over half a mile",
     "optionC": "Pellets and slugs both about 100 yards",
     "optionD": "Pellets over a mile; slugs about 500 yards",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Shotgun pellets can carry about 500 yards and a slug can travel more than a mile, far beyond their effective ranges. Hunters must know the maximum travel distance to judge a safe zone of fire."
+    "explanation": "Shotgun pellets can carry a few hundred yards, about 500 for larger shot, and a slug can travel more than half a mile, far beyond their effective ranges. Hunters must know the maximum travel distance to judge a safe zone of fire."
   },
   {
     "type": "HUNTER",

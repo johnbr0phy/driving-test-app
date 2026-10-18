@@ -340,28 +340,28 @@
     "state": "ALL",
     "questionId": "PTCB-FED-025",
     "category": "ptcbFederal",
-    "question": "A customer wants pseudoephedrine 30 mg tablets packaged 24 per box (720 mg per box). What is the most boxes a retail pharmacy may sell in one day?",
+    "question": "A customer wants pseudoephedrine tablets packaged so each box contains 720 mg of pseudoephedrine base. What is the most boxes a retail pharmacy may sell in one day?",
     "optionA": "4 boxes",
     "optionB": "5 boxes",
     "optionC": "6 boxes",
     "optionD": "12 boxes",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "The federal daily limit is 3.6 g, and 3,600 mg / 720 mg = 5 boxes exactly. Six boxes would be 4,320 mg, and 12 boxes reflects the 9 g per 30-day retail limit (9,000 / 720 = 12.5), not the daily one."
+    "explanation": "The federal daily limit is 3.6 g of pseudoephedrine base, and 3,600 mg / 720 mg = 5 boxes exactly. Six boxes would be 4,320 mg, and 12 boxes reflects the 9 g per 30-day retail limit (9,000 / 720 = 12.5), not the daily one. The CMEA limits count the base, not the salt weight printed as the tablet strength."
   },
   {
     "type": "PTCB",
     "state": "ALL",
     "questionId": "PTCB-FED-026",
     "category": "ptcbFederal",
-    "question": "A mail-order pharmacy ships pseudoephedrine 30 mg x 24-count boxes (720 mg each). What is the maximum number of boxes per customer in 30 days?",
+    "question": "A mail-order pharmacy ships pseudoephedrine boxes that each contain 720 mg of pseudoephedrine base. What is the maximum number of boxes per customer in 30 days?",
     "optionA": "12 boxes",
     "optionB": "11 boxes",
     "optionC": "5 boxes",
     "optionD": "10 boxes",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Mail-order sales are capped at 7.5 g per 30 days: 7,500 mg / 720 mg = 10.4, so 10 boxes (7,200 mg) is the maximum and 11 boxes (7,920 mg) is over. Twelve boxes is the walk-in retail answer, based on the 9 g per 30-day limit (9,000 / 720 = 12.5)."
+    "explanation": "Mail-order sales are capped at 7.5 g of pseudoephedrine base per 30 days: 7,500 mg / 720 mg = 10.4, so 10 boxes (7,200 mg) is the maximum and 11 boxes (7,920 mg) is over. Twelve boxes is the walk-in retail answer, based on the 9 g per 30-day limit (9,000 / 720 = 12.5)."
   },
   {
     "type": "PTCB",

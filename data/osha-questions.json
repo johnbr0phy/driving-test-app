@@ -1187,7 +1187,7 @@
     "optionD": "5 amperes",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "At roughly 10 to 20 mA, muscles contract involuntarily and the victim 'freezes' to the circuit; 50 to 100 mA can cause ventricular fibrillation. A standard 15-ampere circuit carries more than a thousand times the lethal level."
+    "explanation": "At roughly 10 to 20 mA, muscles contract involuntarily and the victim 'freezes' to the circuit; 50 to 100 mA can cause ventricular fibrillation. A standard 15-ampere circuit can deliver well over a hundred times the current that can stop the heart."
   },
   {
     "type": "OSHA",
@@ -2223,7 +2223,7 @@
     "optionD": "Require the worker to shave off any beard",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Respirators increase breathing resistance and heat stress, so a physician or other licensed health care professional must clear the worker before fit testing and use. Facial hair is the worker's responsibility, and OSHA does not issue releases."
+    "explanation": "Respirators increase breathing resistance and heat stress, so a physician or other licensed health care professional must clear the worker before fit testing and use. A beard matters only where it crosses the sealing surface, and then the employer may not allow a tight-fitting respirator; OSHA does not require waivers or issue releases."
   },
   {
     "type": "OSHA",

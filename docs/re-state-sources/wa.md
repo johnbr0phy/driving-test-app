@@ -85,7 +85,7 @@ National picks by outline area (category in parentheses):
 ## National overrides (wording only, keys unchanged)
 | Item | Change and reason |
 |---|---|
-| RE-CON-002 | Explanation adds RCW 19.36.010(5) and 18.86.080(7): Washington needs a written agreement to collect a fee |
+| RE-CON-002 | Stem makes the promise a signed note, because RCW 19.36.010(5) voids an oral agreement employing a broker for a commission; explanation adds that and RCW 18.86.080(7) |
 | RE-CON-026 | Reworded for limited dual agency with written consent in the services agreement (RCW 18.86.060(1), 18.86.020(2)(b)(iv)); options reworded, still B |
 | RE-CON-032, RE-PRAC-016, RE-PRAC-024 | "Salesperson" changed to "broker", Washington's license title |
 | RE-CON-035 | Explanation cites confidential information under RCW 18.86.040(1)(d) |
@@ -98,6 +98,7 @@ National picks by outline area (category in parentheses):
 | RE-PRAC-001 | "Salesperson" to "broker"; options C and D reworded; explanation cites RCW 18.86.040(1)(c) |
 | RE-DISC-018 | Explanation cites RCW 18.86.010(11): stigma is not a material fact |
 | RE-FIN-001 | Explanation cites the Deed of Trust Act, chapter 61.24 RCW |
+| RE-PRAC-014 | Explanation adds that Washington protects marital status and families with children (RCW 49.60.222) |
 | RE-FIN-013 | "Salesperson" to "broker"; options A and B reworded; explanation adds RCW 18.85.053(2) |
 
 ## National exclusions
@@ -136,5 +137,5 @@ National picks by outline area (category in parentheses):
 Correct letters across the 130: A 34, B 32, C 32, D 32.
 
 ## Caveats
-- The PSI bulletin is dated March 28, 2024 but is still the one PSI links for the Washington Broker test in October 2026. It predates SSB 6091 (2026), so REWA-WAACT-013 (public marketing, RCW 18.86.130) may not yet be on the real exam; it is current law.
+- The PSI bulletin is dated March 28, 2024 but is still the one PSI links for the Washington Broker test in October 2026. It predates SSB 6091 (2026), so REWA-WAACT-013 (public marketing, RCW 18.86.130) may not yet be on the real exam. It is kept because it is enacted law in force since June 11, 2026 (checked against the current RCW text on 2026-10-18), and its stem states the statute's health-or-safety exception so the key is not arguable.
 - Washington DOL publishes no current pass rate or item bank; counts and weights come only from the PSI bulletin.

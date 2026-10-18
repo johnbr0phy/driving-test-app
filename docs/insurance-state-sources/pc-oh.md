@@ -54,7 +54,7 @@ URL patterns: ORC https://codes.ohio.gov/ohio-revised-code/section-<section>, OA
 | ORC 3937.25 | 3/20/2019, SB 273 | commercial cancellation after 90 days: listed grounds, 30/10-day notice |
 | ORC 3929.50, 3929.56 | 4/27/2005; 10/3/2023, HB 33 | mine subsidence definition; 26 mandatory and 11 optional counties |
 | ORC 3937.47 | 3/20/2019 | personal lines nonpayment cancellation, 10 days |
-| ORC 3929.86 | 9/29/2015 | fire claims over $5,000: county treasurer certificate; 60% demolition holdback |
+| ORC 3929.86 | 9/29/2015, HB 64 | (A), (B) fire claims over $5,000 under all policies: county treasurer certificate; (C) 60% demolition holdback only where the municipality or township has adopted the procedure and filed it with the superintendent |
 | ORC 3937.18 | 3/14/2023, SB 56 | UM/UIM optional; UIM not excess; 3-year claim limit |
 | ORC 3937.31, 3937.32 | 9/22/2013; 9/29/2017 | auto cancellation after 90 days only for listed reasons; 30/10-day notice |
 | ORC 1345.81 | 9/13/2022 | non-OEM aftermarket crash parts estimate notice |
@@ -83,7 +83,7 @@ URL patterns: ORC https://codes.ohio.gov/ohio-revised-code/section-<section>, OA
 | PCOH-OHREG-006 | ORC 3901.86(A) |
 | PCOH-OHPOL-001 | ORC 3929.25 |
 | PCOH-OHPOL-002 | ORC 3929.25 |
-| PCOH-OHPOL-003 | OAC 3901-1-54 (acknowledgment of claims) |
+| PCOH-OHPOL-003 | OAC 3901-1-54(F)(2) |
 | PCOH-OHPOL-004 | OAC 3901-1-54(G)(1) |
 | PCOH-OHPOL-005 | ORC 3937.25(B), (D) |
 | PCOH-OHHOM-001 | ORC 3929.56(A)(1), (A)(2)(a) |
@@ -108,7 +108,9 @@ URL patterns: ORC https://codes.ohio.gov/ohio-revised-code/section-<section>, OA
 ## National picks, exclusions and overrides
 National picks by outline area: general and regulation 20 (risk, hazards, law of large numbers, risk techniques, insurable interest, indemnity, contract characteristics, representations and concealment, estoppel, adverse selection, reinsurance, alien insurer, apparent authority, binders); provisions 15 (policy parts, open perils, indirect loss, ACV, coinsurance, other insurance, excess, subrogation, appraisal, mortgage clause, pro rata return, liberalization); dwelling 6 and homeowners 20; auto 14 (PAP Parts A to E, split and single limits, UM/UIM definitions, collision vs other than collision, eligibility); commercial 21 (CPP, common conditions, BPP, causes of loss, coinsurance, agreed value, business income, extra expense, BOP, inland marine, crime); liability 13 (CGL coverages and triggers, aggregate, products, employee exclusion, workers' comp policy Parts One and Two, umbrella, professional); other 6 (NFIP, surety, FAIR plans, TRIA, twisting).
 
-No overrides were needed.
+Overrides (wording only, keys unchanged):
+- PC-LIA-015: explanation adds that Ohio is monopolistic, so Ohio benefits come from the state insurance fund or self-insurance (ORC 4123.35, 4123.82), not a private Part One.
+- PC-LIA-016: explanation adds that in Ohio private insurers sell employers liability as stop gap coverage alongside the state fund.
 
 Excluded on purpose:
 - PC-AUTO-030 (ISO PAP: after 60 days cancel only for listed reasons): Ohio's statute counts 90 days (ORC 3937.31(C)); replaced by PCOH-OHAUT-004.

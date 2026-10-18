@@ -81,7 +81,7 @@ URL patterns: ORC https://codes.ohio.gov/ohio-revised-code/section-<section>, OA
 | ORC 3924.01 | 4/9/2025, HB 238 | small employer 2 to 50 |
 | OAC 3901-8-08 | 5/1/2023 | Medicare supplement 30-day right to return |
 | ORC 3923.44 | 9/10/2007 | LTC: no cancellation for age or health; six-month preexisting; 30-day prior stay cap; (H)(1) 30-day free look |
-| OAC 3901-4-01 | 9/13/2024 | LTC unintentional lapse notice; guaranteed renewable or noncancellable only |
+| OAC 3901-4-01 | 9/13/2024 | (G)(1)(c) LTC unintentional lapse notice; guaranteed renewable or noncancellable only |
 
 ## Item-to-source map
 | Item | Source |
@@ -133,7 +133,7 @@ URL patterns: ORC https://codes.ohio.gov/ohio-revised-code/section-<section>, OA
 | LHOH-OHSR-002 | ORC 3923.44(H)(1); 3923.31 |
 | LHOH-OHSR-003 | ORC 3923.44(B)(4), (5) |
 | LHOH-OHSR-004 | ORC 3923.44 (prior institutional stay limit) |
-| LHOH-OHSR-005 | OAC 3901-4-01 (unintentional lapse) |
+| LHOH-OHSR-005 | OAC 3901-4-01(G)(1)(c) (unintentional lapse: 30-day notice by first-class mail, not before 30 days unpaid) |
 | LHOH-OHSR-006 | ORC 3923.44(B)(1) |
 
 ## National picks, exclusions and overrides

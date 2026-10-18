@@ -92,11 +92,16 @@ export function Header() {
                 </Link>
               </>
             ) : isGuest && !isOnboarding ? (
-              <Button asChild variant="outline" className="text-gray-700 dark:text-gray-200 border-gray-300 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800 font-semibold">
-                <Link href="/signup">
-                  {t("common.signUpToSave")}
+              <>
+                <Link href="/login" className="hidden sm:inline text-sm font-semibold text-gray-700 dark:text-gray-200 hover:underline">
+                  {t("common.logIn")}
                 </Link>
-              </Button>
+                <Button asChild variant="outline" className="text-gray-700 dark:text-gray-200 border-gray-300 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800 font-semibold">
+                  <Link href="/signup">
+                    {t("common.signUpToSave")}
+                  </Link>
+                </Button>
+              </>
             ) : !(guest && isOnboarding) ? (
               <Button asChild variant="outline" className="text-gray-700 dark:text-gray-200 border-gray-300 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800">
                 <Link href="/login">{t("common.signIn")}</Link>

@@ -148,6 +148,12 @@ export function GuestSaveCard({ signupHref, answered = 0, tests = 0, score, data
       {error && (
         <p role="alert" className="mt-2 text-xs text-red-700 dark:text-red-300">{t("guestSave.googleFailed")}</p>
       )}
+      <p className="mt-2 text-center text-xs sm:text-sm text-gray-600 dark:text-gray-300">
+        {t("common.alreadyHaveAccount")}{" "}
+        <Link href={signupHref.replace(/^\/signup/, "/login")} className="font-semibold text-brand-dark hover:underline">
+          {t("common.logIn")}
+        </Link>
+      </p>
     </div>
   );
 }

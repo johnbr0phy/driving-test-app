@@ -24,7 +24,7 @@ export function PhonePreview() {
       <div className="px-3">
         <div className="rounded-2xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 p-4 shadow-sm">
           <div className="flex items-center gap-1.5 text-[11px] text-gray-500 dark:text-gray-400 mb-2">
-            <Users className="w-3.5 h-3.5" /> East Central CC · Ms. Shirley
+            <Users className="w-3.5 h-3.5" /> Lakeview CC · Ms. Rivera
           </div>
           <p className="text-xl font-bold text-gray-900 dark:text-gray-50 leading-tight">Join your class</p>
           <p className="text-[13px] text-gray-600 dark:text-gray-300 mt-1 mb-4">Surgical Tech, Fall: CST practice</p>
@@ -36,7 +36,7 @@ export function PhonePreview() {
             Start practicing
           </div>
           <p className="text-[11px] text-gray-500 dark:text-gray-400 mt-3 leading-snug">
-            Ms. Shirley will see your practice scores on this exam. No account needed.
+            Ms. Rivera will see your practice scores on this exam. No account needed.
           </p>
         </div>
       </div>

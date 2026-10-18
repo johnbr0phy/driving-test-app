@@ -421,6 +421,13 @@ function SignupPageContent() {
                   </Button>
                 </div>
               </form>
+
+            <div className="text-center text-sm text-gray-600 dark:text-gray-300">
+              {t("common.alreadyHaveAccount")}{" "}
+              <Link href={redirectTo ? `/login?redirect=${encodeURIComponent(redirectTo)}` : "/login"} className="text-brand-dark hover:underline font-semibold">
+                {t("common.logIn")}
+              </Link>
+            </div>
           </div>
         </CardContent>
       </Card>

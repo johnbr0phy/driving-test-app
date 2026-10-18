@@ -119,6 +119,9 @@
   },
   "LH-HPRV-001": {
    "explanation": "Insurance Law section 3216(d)(1) requires a 10-day grace period for monthly premiums, so coverage continues through June 11 and any unpaid premium can be deducted from a claim. The 7-day period applies only to weekly premiums, and 31 days applies to other modes."
+  },
+  "LH-HPRV-017": {
+   "explanation": "COBRA lets the employer charge up to 102% of the full premium, and 1.02 x $600 = $612. Rita has 60 days to elect coverage, and federal continuation lasts up to 18 months after a layoff; an insured New York group plan must then offer continuation up to 36 months in all under Insurance Law section 3221(m)."
   }
  }
 }

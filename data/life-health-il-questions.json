@@ -11,7 +11,7 @@
     "optionD": "An Illinois HMO subscriber contract",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "215 ILCS 5/531.03 covers direct life, health and annuity policies of member insurers, including HMO subscriber contracts, for Illinois residents. Self-funded employer plans and Medicare and Medicaid coverage are excluded.",
+    "explanation": "215 ILCS 5/531.03 covers direct life, health and annuity policies of member insurers, including HMO subscriber contracts, for Illinois residents. Self-funded or uninsured employer plans, stop-loss coverage and Medicare Part C and D or Medicaid plans are excluded under 5/531.03(2)(b).",
     "sourceQuestionId": "LHIL-ILAH-013"
   },
   {
@@ -281,7 +281,7 @@
     "optionD": "Two years",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "215 ILCS 5/500-35(a) issues a 2-year producer license. The Department sets expiration at the last day of the producer's birth month, so the first term is prorated.",
+    "explanation": "215 ILCS 5/500-35(a) issues a 2-year producer license. It stays in effect, unless revoked or suspended, as long as the renewal fee is paid and the continuing education is completed on time.",
     "sourceQuestionId": "LHIL-ILLIC-007"
   },
   {
@@ -311,7 +311,7 @@
     "optionD": "Reinstate it free of charge, no exam",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "215 ILCS 5/500-35(d) allows a lapsed license to be reissued within 12 months after the renewal date without an exam, with a penalty of double the unpaid renewal fee, and CE must be current. After more than a year the Department requires the prelicensing course and exams again.",
+    "explanation": "215 ILCS 5/500-35(d) allows a lapsed license to be reissued within 12 months after the renewal date without an exam, with a penalty of double the unpaid renewal fee. Once those 12 months pass, the no-exam reissue is no longer available.",
     "sourceQuestionId": "LHIL-ILLIC-009"
   },
   {
@@ -356,7 +356,7 @@
     "optionD": "Six months of establishing residence",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "215 ILCS 5/500-45(b) exempts a relocating producer from prelicensing education and exams for lines already held if the application is made within 90 days after establishing legal residence. Thirty days is the window for a producer leaving Illinois to get a license in the new home state.",
+    "explanation": "215 ILCS 5/500-45(b) exempts a relocating producer from prelicensing education and exams for lines already held if the application is made within 90 days after establishing legal residence. Thirty days is the deadline under 5/500-40(c) for a producer leaving Illinois to file the change of address with the new home state's certification.",
     "sourceQuestionId": "LHIL-ILLIC-012"
   },
   {
@@ -1691,7 +1691,7 @@
     "optionD": "Barred, except for excepted benefits",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "215 ILCS 97/20 now says group health coverage may not impose any preexisting condition exclusion, except for excepted benefits. The 12- and 18-month limits were the older rules it replaced.",
+    "explanation": "215 ILCS 97/20(A), as amended by the 102nd General Assembly, bars any preexisting condition exclusion on health insurance coverage issued, amended, delivered or renewed since then, except for excepted benefits. The 12- and 18-month limits were the older rules it replaced.",
     "sourceQuestionId": "LHIL-ILAH-011"
   },
   {

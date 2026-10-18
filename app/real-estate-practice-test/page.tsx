@@ -35,6 +35,58 @@ const statePractice = [
     href: "/real-estate/ny/dashboard",
     body: "75 source-checked questions weighted to the 77-hour course: national topics plus license law, agency disclosure, the Human Rights Law and the PCDA.",
   },
+  // state variants batch 2 (generated)
+  {
+    name: "Pennsylvania",
+    href: "/real-estate/pa/dashboard",
+    body: "120 source-checked questions on the Pearson VUE outlines: 80 national and 40 Pennsylvania questions on licensing, agency and the Consumer Notice, escrow and seller disclosure.",
+  },
+  {
+    name: "Illinois",
+    href: "/real-estate/il/dashboard",
+    body: "140 source-checked questions like the PSI broker exam: 100 national and 40 Illinois questions on the License Act, IDFPR rules and Illinois disclosure laws.",
+  },
+  {
+    name: "Ohio",
+    href: "/real-estate/oh/dashboard",
+    body: "120 source-checked questions like the PSI exam: 80 national and 40 Ohio questions on license law, commission rules and Ohio agency law, including the 2025 written agency agreement rule.",
+  },
+  {
+    name: "Georgia",
+    href: "/real-estate/ga/dashboard",
+    body: "150 source-checked questions shaped like the PSI exam: 99 national and 51 Georgia questions on license law, the brokerage relationships act, security deeds and Georgia closings.",
+  },
+  {
+    name: "North Carolina",
+    href: "/real-estate/nc/dashboard",
+    body: "140 source-checked questions like the real broker exam: 80 national and 60 North Carolina questions on License Law and Commission rules, agency, trust accounts and disclosure.",
+  },
+  {
+    name: "Michigan",
+    href: "/real-estate/mi/dashboard",
+    body: "115 source-checked questions like the PSI exam: 80 national and 35 Michigan questions on license law, agency, trust accounts, seller disclosure and Elliott-Larsen.",
+  },
+  {
+    name: "Virginia",
+    href: "/real-estate/va/dashboard",
+    body: "120 source-checked questions like the PSI exam: 80 national and 40 Virginia questions on license law, Board regulations (rewritten April 2026), disclosures, agency and fair housing.",
+  },
+  {
+    name: "Washington",
+    href: "/real-estate/wa/dashboard",
+    body: "130 source-checked questions like the PSI broker exam: 100 national and 30 Washington questions on RCW 18.85, the brokerage relationships act and DOL rules.",
+  },
+  {
+    name: "Arizona",
+    href: "/real-estate/az/dashboard",
+    body: "140 source-checked questions on the Pearson VUE outlines: 80 national and 60 Arizona questions, from the Commissioner's Rules and agency to community property and trustee's sales.",
+  },
+  {
+    name: "Tennessee",
+    href: "/real-estate/tn/dashboard",
+    body: "120 source-checked questions like the PSI affiliate broker exam: 80 national and 40 Tennessee questions on the Broker License Act and TREC rules.",
+  },
+  // end batch 2
 ];
 
 const title = "Free Real Estate Practice Test 2026 - National Salesperson Exam Prep";
@@ -106,7 +158,7 @@ const jsonLd = {
           name: "Does this cover my state's exam?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "California, Texas, Florida, New York and New Jersey have their own practice: 150 source-checked questions for California, 120 for Texas, 100 for Florida, 75 for New York and 110 for New Jersey, each including state law. For other states, the 200-question bank covers the national portion, which is the same in every Pearson VUE or PSI state; your state law portion is separate and not covered yet.",
+            text: "Fifteen states have their own practice with state law: Arizona, California, Florida, Georgia, Illinois, Michigan, New Jersey, New York, North Carolina, Ohio, Pennsylvania, Tennessee, Texas, Virginia and Washington. Each is one full-length exam shaped like that state's, and progress is saved separately per state. For other states, the 200-question bank covers the national portion, which is the same in every Pearson VUE or PSI state; your state law portion is separate and not covered yet.",
           },
         },
         {
@@ -210,10 +262,10 @@ export default function RealestateLandingPage() {
       {/* State practice */}
       <div className="max-w-5xl mx-auto px-6 pb-16 md:pb-24">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-4">
-          State Practice: CA, TX, FL, NY and NJ
+          State Practice: 15 States
         </h2>
         <p className="text-lg text-gray-600 dark:text-gray-300 text-center max-w-2xl mx-auto mb-10">
-          Taking the exam in California, Texas, Florida, New York or New Jersey? Practice with questions checked against your state&apos;s law, including state-only rules. Progress is saved separately for each state.
+          Taking the exam in one of these states? Practice with questions checked against your state&apos;s law, including state-only rules. Progress is saved separately for each state.
         </p>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {statePractice.map((s) => (
@@ -229,7 +281,7 @@ export default function RealestateLandingPage() {
           ))}
         </div>
         <p className="text-sm text-gray-500 dark:text-gray-400 text-center mt-6">
-          Practice only. Not affiliated with the California DRE, TREC, Florida DBPR or FREC, NY DOS, NJ REC, PSI or Pearson VUE, and a practice score does not predict your exam result.
+          Practice only. Not affiliated with any state regulator, PSI, Pearson VUE or Prometric, and a practice score does not predict your exam result.
         </p>
       </div>
 
@@ -334,7 +386,7 @@ export default function RealestateLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Does this cover my state&apos;s exam?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              California, Texas, Florida, New York and New Jersey have their own practice: 150 source-checked questions for California, 120 for Texas, 100 for Florida, 75 for New York and 110 for New Jersey, each including state law. For other states, the 200-question bank covers the national portion, which is the same in every Pearson VUE or PSI state; your state law portion is separate and not covered yet.
+              Fifteen states have their own practice with state law: Arizona, California, Florida, Georgia, Illinois, Michigan, New Jersey, New York, North Carolina, Ohio, Pennsylvania, Tennessee, Texas, Virginia and Washington. Each is one full-length exam shaped like that state&apos;s, and progress is saved separately per state. For other states, the 200-question bank covers the national portion, which is the same in every Pearson VUE or PSI state; your state law portion is separate and not covered yet.
             </p>
           </div>
           <div>

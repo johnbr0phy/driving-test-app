@@ -95,6 +95,10 @@
  "overrides": {
   "PC-AUTO-015": {
    "explanation": "Part C of the Personal Auto Policy pays bodily injury damages the insured is legally entitled to recover from an at-fault driver who has no liability insurance or cannot be identified. Illinois also makes uninsured motorist property damage coverage available for private passenger vehicles under 215 ILCS 5/143a, but that is a state addition, not part of the standard Part C insuring agreement."
+  },
+  "PC-GEN-017": {
+   "question": "An insurer may void a policy because of an innocent misrepresentation only when the false statement is:",
+   "explanation": "A material misrepresentation is one that would have changed the underwriting decision. Under 215 ILCS 5/154, a misrepresentation in the policy or written application defeats it only if made with actual intent to deceive or if it materially affects acceptance of the risk, so an innocent, immaterial error does not allow the insurer to void coverage."
   }
  }
 }

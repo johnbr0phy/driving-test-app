@@ -1256,7 +1256,7 @@
     "optionD": "The vehicle's actual cash value",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Insurance Law section 3420(f)(2) makes SUM coverage available at the insured's option up to the policy's bodily injury liability limits, and the insurer must notify insureds of it at issue and at least once a year. It applies when the other driver's bodily injury limits are lower than the insured's.",
+    "explanation": "Insurance Law section 3420(f)(2) makes SUM coverage available at the insured's option up to the policy's bodily injury liability limits, subject to a statutory maximum of $250,000/$500,000, and the insurer must notify insureds of it at issue and at least once a year. It applies when the other driver's bodily injury limits are lower than the insured's.",
     "sourceQuestionId": "PCNY-NYAUT-002"
   },
   {
@@ -1871,7 +1871,7 @@
     "optionD": "It covers only medical costs, not lost wages",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Employees receive statutory no-fault benefits and generally give up the right to sue the employer for negligence; that is the compensation bargain. In New York, Workers' Compensation Law section 11 lets an employee sue instead only if the employer failed to secure compensation.",
+    "explanation": "Employees receive statutory no-fault benefits and generally give up the right to sue the employer for negligence; that is the compensation bargain. In New York, Workers' Compensation Law section 11 lifts that bar when the employer has failed to secure compensation, letting the injured employee sue instead.",
     "sourceQuestionId": "PC-LIA-019"
   },
   {

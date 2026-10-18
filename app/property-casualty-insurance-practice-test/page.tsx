@@ -25,6 +25,58 @@ const statePractice = [
     href: "/property-casualty-insurance/ca/dashboard",
     body: "150 questions like CDI's combined property and casualty exam, with Prop 103, the earthquake offer, wildfire rules and the FAIR Plan.",
   },
+  // state variants batch 2 (generated)
+  {
+    name: "New York",
+    href: "/property-casualty-insurance/ny/dashboard",
+    body: "150 questions like PSI's Series 17-56 exam, with New York no-fault, UM/SUM, Regulation 79, 3425/3426 cancellation rules, workers' comp, DBL and excess lines.",
+  },
+  {
+    name: "Pennsylvania",
+    href: "/property-casualty-insurance/pa/dashboard",
+    body: "150 questions like PSI's Series 16-06 exam, with Pennsylvania tort election, first-party benefits, UM/UIM stacking, cancellation rules, workers' comp and the FAIR Plan.",
+  },
+  {
+    name: "Illinois",
+    href: "/property-casualty-insurance/il/dashboard",
+    body: "Both Illinois lines, Property and Casualty, in one 150-question test: 90 general and 60 Illinois questions on cancellation and nonrenewal, the FAIR Plan, UM/UIM and licensing.",
+  },
+  {
+    name: "Ohio",
+    href: "/property-casualty-insurance/oh/dashboard",
+    body: "150 questions like PSI's combined property and casualty exam (Series 11-36), including Ohio's valued policy law, mine subsidence, UM/UIM, auto cancellation and the state workers' comp fund.",
+  },
+  {
+    name: "Georgia",
+    href: "/property-casualty-insurance/ga/dashboard",
+    body: "125 questions like Pearson VUE's Georgia property and casualty combo exam: 100 general and 25 Georgia questions, including UM options and the 2025 DUI rule.",
+  },
+  {
+    name: "North Carolina",
+    href: "/property-casualty-insurance/nc/dashboard",
+    body: "Both North Carolina exams in one 110-question test: Property Agent and Casualty Agent, with 28 North Carolina questions on the Rate Bureau, coastal and FAIR plans, required UM/UIM and workers' comp.",
+  },
+  {
+    name: "Michigan",
+    href: "/property-casualty-insurance/mi/dashboard",
+    body: "150 questions like PSI's combined property and casualty exam (16-81), including the 2019 no-fault reform (PIP choices, $3,000 mini-tort), the Essential Insurance Act and workers' comp.",
+  },
+  {
+    name: "New Jersey",
+    href: "/property-casualty-insurance/nj/dashboard",
+    body: "Both New Jersey producer exams, Property and Casualty, in one 150-question test: 88 general and 62 New Jersey questions, from tort options, PIP and SAIP to the FAIR Plan and workers' comp.",
+  },
+  {
+    name: "Virginia",
+    href: "/property-casualty-insurance/va/dashboard",
+    body: "135 questions like Prometric's Series 11-03 exam: general topics with Virginia licensing, homeowners, auto UM and cancellation, and workers' comp law.",
+  },
+  {
+    name: "Washington",
+    href: "/property-casualty-insurance/wa/dashboard",
+    body: "150 questions like PSI's property and casualty combo exam: 105 general and 45 Washington questions, including UIM and the 60-day cancellation notice.",
+  },
+  // end batch 2
 ];
 
 const title = "Free Property & Casualty Insurance Practice Test 2026 - P&C License Exam";
@@ -96,7 +148,7 @@ const jsonLd = {
           name: "Does this cover my state's exam?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Texas, Florida and California have their own full-length practice with state law: 130 questions for Texas, 150 for Florida's 2-20 and 150 for California. For other states, the 200-question bank covers the general portion shared by every state's exam: insurance concepts, policy structure, the ISO dwelling and homeowners forms, the Personal Auto Policy, commercial package and businessowners policies, general liability, workers compensation, flood and surety. The state portion (license law, cancellation notice periods, minimum auto limits, financial responsibility rules) is separate.",
+            text: "Thirteen states have their own full-length practice with state law: California, Florida, Georgia, Illinois, Michigan, New Jersey, New York, North Carolina, Ohio, Pennsylvania, Texas, Virginia and Washington. For other states, the 200-question bank covers the general portion shared by every state's exam; the state portion (license law, cancellation notice periods, minimum auto limits, financial responsibility rules) is separate.",
           },
         },
         {
@@ -199,10 +251,10 @@ export default function PncLandingPage() {
       {/* State practice */}
       <div className="max-w-5xl mx-auto px-6 pb-16 md:pb-24">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-4">
-          State Practice: Texas, Florida and California
+          State Practice: 13 States
         </h2>
         <p className="text-lg text-gray-600 dark:text-gray-300 text-center max-w-2xl mx-auto mb-10">
-          Taking the exam in Texas, Florida or California? Practice a full-length exam with questions checked against your state&apos;s insurance law, including state-only rules. Progress is saved separately for each state.
+          Taking the exam in one of these states? Practice a full-length exam with questions checked against your state&apos;s insurance law, including state-only rules. Progress is saved separately for each state.
         </p>
         <div className="grid md:grid-cols-3 gap-6">
           {statePractice.map((s) => (
@@ -218,7 +270,7 @@ export default function PncLandingPage() {
           ))}
         </div>
         <p className="text-sm text-gray-500 dark:text-gray-400 text-center mt-6">
-          Practice only. Not affiliated with TDI, Florida DFS, CDI, Pearson VUE or PSI, and a practice score does not predict your exam result.
+          Practice only. Not affiliated with any state regulator, PSI, Pearson VUE or Prometric, and a practice score does not predict your exam result.
         </p>
       </div>
 
@@ -301,7 +353,7 @@ export default function PncLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Drill your weak domain, then book the state portion</h3>
               <p>
-                TigerTest tracks your accuracy by content area. Most states pass at 70 percent, so retake the set you miss most until you clear 85 percent with room to spare, then spend your last week on your state&apos;s own license law, which this site covers only for Texas, Florida and California.
+                TigerTest tracks your accuracy by content area. Most states pass at 70 percent, so retake the set you miss most until you clear 85 percent with room to spare, then spend your last week on your state&apos;s own license law, which this site covers for 12 states.
               </p>
             </div>
           </div>
@@ -323,7 +375,7 @@ export default function PncLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Does this cover my state&apos;s exam?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              Texas, Florida and California have their own full-length practice with state law: 130 questions for Texas, 150 for Florida&apos;s 2-20 and 150 for California. For other states, the 200-question bank covers the general portion shared by every state&apos;s exam: insurance concepts, policy structure, the ISO dwelling and homeowners forms, the Personal Auto Policy, commercial package and businessowners policies, general liability, workers compensation, flood and surety. The state portion (license law, cancellation notice periods, minimum auto limits, financial responsibility rules) is separate.
+              Thirteen states have their own full-length practice with state law: California, Florida, Georgia, Illinois, Michigan, New Jersey, New York, North Carolina, Ohio, Pennsylvania, Texas, Virginia and Washington. For other states, the 200-question bank covers the general portion shared by every state&apos;s exam; the state portion (license law, cancellation notice periods, minimum auto limits, financial responsibility rules) is separate.
             </p>
           </div>
           <div>

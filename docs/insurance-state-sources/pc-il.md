@@ -24,6 +24,8 @@ The 2026 and 2027 outlines have the same scored counts and the same section weig
 ## How the law was checked (read this)
 ilga.gov (the Illinois General Assembly, including the ILCS and the JCAR administrative code) could not be reached from this environment: its server sends an incomplete TLS certificate chain (Sectigo OV R40 intermediate missing) and the fetch tool got HTTP 503. Statute text was therefore read from the FindLaw mirror of the ILCS (codes.findlaw.com, each page marked "Current as of January 01, 2025"), and administrative rules from the Cornell LII mirror of the Illinois Administrative Code (law.cornell.edu/regulations/illinois/...), each page checked as real rule text with its Illinois Register history note. Current practice facts (prelicensing, CE timing, reinstatement, LTC and annuity training, moving to Illinois) were confirmed on official IDOI pages accessed 2026-10-18. Searches for 2025-2026 Public Acts touching the cited sections found none enacted (bills such as HB 2775 and HB 4330 on Medicare supplement switching stalled in Rules). 50 Ill. Adm. Code 3119 (CE) was amended effective 12/30/2025 for CE reciprocity; the statutory 24 hours with 3 hours of ethics in 5/500-35 is unchanged and is what the items use. The wirer or a reviewer with ilga.gov access should spot-check the cited sections against the official text.
 
+**Review against ilga.gov (2026-10-18).** A reviewer reached ilga.gov (TLS verified with Sectigo's public intermediate added to the CA bundle) and read every cited ILCS section at ilga.gov/Documents/legislation/ilcs/documents/<code>.htm and every cited rule part at ilga.gov/agencies/JCAR/EntirePart. All keys match the official text. Public Acts found in that text that touch cited sections: 5/500-35 (P.A. 104-417, 104-730; 24 CE hours with 3 ethics, 12-month reinstatement and 30-day address change unchanged); 5/424 (P.A. 104-55, 104-439, eff. 1-1-26, new senior solicitation rules, cited items unaffected); 5/224 (P.A. 104-481, eff. 1-1-27; grace period and 10-day free look unchanged); 5/532 (P.A. 104-529, eff. 6-26-26; purpose unchanged); 5/143.17 (P.A. 104-534, eff. 1-1-27, personal lines nonrenewal notice 30 to 60 days, plus 104-752/753 eff. 7-1-27); 5/143.29 (P.A. 104-753, eff. 7-1-27, defensive driving course 8 to 4 hours; 3-year discount unchanged); 5/524 (P.A. 104-645, eff. 1-1-27, FAIR Plan statewide, 3 attempts kept); 5/801.1 and 5/805.1 (P.A. 104-519, eff. 1-1-27; the Fund stays the reinsurer); 625 ILCS 5/7-601 (P.A. 104-854, eff. 1-1-27, adds micromobility exemption).
+
 ### Property general outline (50 scored)
 I Types of policies 22 (HO-2 to HO-8, DP-1 to DP-3, CPP, commercial property, causes of loss, business income, extra expense, equipment breakdown, BOP, builders risk, cyber first party, inland marine, NFIP, earthquake, mobile homes, watercraft, farm, windstorm); II Insurance terms and related concepts 15; III Policy provisions and contract law 13 (incl. FCRA, GLBA, TRIA, territory).
 
@@ -98,7 +100,7 @@ Official pages: IDOI producer pages as listed in the life and health file (becom
 | PCIL-ILPC-001 | 215 ILCS 5/143.15 |
 | PCIL-ILPC-002 | 215 ILCS 5/143.15 |
 | PCIL-ILPC-003 | 215 ILCS 5/143.19 |
-| PCIL-ILPC-004 | 215 ILCS 5/143.17(a) |
+| PCIL-ILPC-004 | 215 ILCS 5/143.17(c) |
 | PCIL-ILPC-005 | 215 ILCS 5/513a3(b) |
 | PCIL-ILPC-006 | 215 ILCS 157/20 |
 | PCIL-ILPC-007 | 215 ILCS 5/143.24c |
@@ -106,7 +108,7 @@ Official pages: IDOI producer pages as listed in the life and health file (becom
 | PCIL-ILPC-009 | 215 ILCS 5/154 |
 | PCIL-ILPRP-001 | 215 ILCS 5/524 |
 | PCIL-ILPRP-002 | 215 ILCS 5/155.22 |
-| PCIL-ILPRP-003 | 215 ILCS 5/805.1 |
+| PCIL-ILPRP-003 | 215 ILCS 5/801.1, 805.1 |
 | PCIL-ILCAS-001 | 215 ILCS 5/143a |
 | PCIL-ILCAS-002 | 215 ILCS 5/143a-2(1) |
 | PCIL-ILCAS-003 | 215 ILCS 5/143a-2(4) |
@@ -119,6 +121,7 @@ Official pages: IDOI producer pages as listed in the life and health file (becom
 
 ## National overrides (text only)
 - PC-AUTO-015: explanation now notes that Illinois makes uninsured motorist property damage coverage available under 215 ILCS 5/143a, in place of the generic "varies by state" line. Key unchanged.
+- PC-GEN-017: stem now says "innocent misrepresentation" and the explanation cites 5/154, because in Illinois a misrepresentation made with actual intent to deceive also defeats a policy, so "only when material" was not the whole Illinois rule. Key unchanged.
 
 ## National exclusions and checks
 - PC-OTH-014 (FAIR plans, general) not picked: the Illinois FAIR Plan is tested as a state item (PCIL-ILPRP-001).
@@ -128,9 +131,11 @@ Official pages: IDOI producer pages as listed in the life and health file (becom
 - Checked and kept: ISO HO and DP forms, PAP Parts A to D (framed as ISO forms), CGL, workers comp exclusive remedy, pro rata return on insurer cancellation, NFIP administration, TRIA, UIM limits comparison (matches 5/143a-2(4)).
 
 ## Facts deliberately not used
-- Auto liability minimums (625 ILCS 5/7-203, 25/50/20 on the FindLaw copy): X/Y/Z limits are off-limits, and a 2025 change could not be ruled out without ilga.gov.
+- Auto liability minimums (625 ILCS 5/7-203, 25/50/20 on the FindLaw copy): X/Y/Z limits are off-limits, and ilga.gov confirms 25/50/20 is unchanged (P.A. 102-982).
 - Child restraint replacement coverage (5/143.32): the FindLaw page marks the section as repealed or moved, so no item.
-- Mine subsidence waiver rules (5/805.1): the statute's mandatory-county and waiver details could not be read in full, so the item asks only the Fund's role.
+- Mine subsidence waiver rules (5/805.1): changed by P.A. 104-519 on January 1, 2027 (renewal notice after a waiver, no deductible), so the item asks only the Fund's role.
+- Personal lines nonrenewal notice days (5/143.17(a)): 30 days now, 60 days from January 1, 2027 (P.A. 104-534), so PCIL-ILPC-004 asks the stable 143.17(c) rule instead.
+- Assigned risk eligibility: 625 ILCS 5/7-501's "rejected by 3 carriers" trigger applies only if carriers fail to subscribe to a plan; the Illinois Automobile Insurance Plan's own eligibility rule (an attestation of failing to obtain coverage) is in the AIPSO plan manual, which could not be read, so PCIL-ILCAS-007 asks how 7-501 apportions assignments.
 - Oral premium estimate (5/155.28) applies only to producers in municipalities over 500,000; skipped as too narrow.
 
 ## Category table

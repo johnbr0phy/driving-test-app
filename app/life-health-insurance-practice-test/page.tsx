@@ -25,6 +25,58 @@ const statePractice = [
     href: "/life-health-insurance/ca/dashboard",
     body: "150 questions like CDI's combined life and accident and health exam, with California law, senior protections and Cal-COBRA.",
   },
+  // state variants batch 2 (generated)
+  {
+    name: "New York",
+    href: "/life-health-insurance/ny/dashboard",
+    body: "150 questions like PSI's combined Series 17-55 exam, with New York Insurance Law, Regulations 60, 187 and 194, DBL and Paid Family Leave woven in.",
+  },
+  {
+    name: "Pennsylvania",
+    href: "/life-health-insurance/pa/dashboard",
+    body: "150 questions like PSI's Series 16-03 exam, with Pennsylvania free look, grace, reinstatement, Medigap, long-term care and the 2024 rebating and CE rules.",
+  },
+  {
+    name: "Illinois",
+    href: "/life-health-insurance/il/dashboard",
+    body: "Both Illinois lines, Life and Accident & Health, in one 150-question test: 88 general and 62 Illinois questions on licensing, replacement, Medicare supplement and long-term care.",
+  },
+  {
+    name: "Ohio",
+    href: "/life-health-insurance/oh/dashboard",
+    body: "150 questions like PSI's combined life, accident and health exam (Series 11-35), with Ohio rules on licensing, replacement, health insuring corporations, dependents and long-term care.",
+  },
+  {
+    name: "Georgia",
+    href: "/life-health-insurance/ga/dashboard",
+    body: "125 questions like Pearson VUE's Georgia life, accident and sickness combo exam: 100 general and 25 Georgia law questions.",
+  },
+  {
+    name: "North Carolina",
+    href: "/life-health-insurance/nc/dashboard",
+    body: "Both North Carolina exams in one 110-question test: the Life Agent and Accident and Health Agent exams, with 28 North Carolina law questions.",
+  },
+  {
+    name: "Michigan",
+    href: "/life-health-insurance/mi/dashboard",
+    body: "150 questions like PSI's combined life, accident and health exam (16-80), with Michigan Insurance Code rules on licensing, life policy provisions, dependents and long-term care.",
+  },
+  {
+    name: "New Jersey",
+    href: "/life-health-insurance/nj/dashboard",
+    body: "Both New Jersey producer exams, Life and Accident & Health, in one 150-question test: 88 general and 62 New Jersey questions, including replacement, prompt pay and temporary disability.",
+  },
+  {
+    name: "Virginia",
+    href: "/life-health-insurance/va/dashboard",
+    body: "140 questions like Prometric's combined Series 11-01 exam: general topics with Virginia licensing, policy, Medicare supplement and long-term care law.",
+  },
+  {
+    name: "Washington",
+    href: "/life-health-insurance/wa/dashboard",
+    body: "150 questions like PSI's life and disability combo exam: 105 general and 45 Washington insurance law questions.",
+  },
+  // end batch 2
 ];
 
 const title = "Free Life and Health Insurance Practice Test 2026 - License Exam Prep";
@@ -96,7 +148,7 @@ const jsonLd = {
           name: "Does this cover my state's exam?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Texas, Florida and California have their own full-length practice with state law: 130 questions for Texas, 150 for Florida's 2-15 and 150 for California's combined exam. For other states, the 200-question bank covers the general portion shared by every Pearson VUE, PSI or Prometric exam; the state portion (license law, free-look lengths, replacement rules, guaranty limits) is separate, and no question here states one state's rule as universal.",
+            text: "Thirteen states have their own full-length practice with state law: California, Florida, Georgia, Illinois, Michigan, New Jersey, New York, North Carolina, Ohio, Pennsylvania, Texas, Virginia and Washington. For other states, the 200-question bank covers the general portion shared by every Pearson VUE, PSI or Prometric exam; the state portion (license law, free-look lengths, replacement rules, guaranty limits) is separate, and no question here states one state's rule as universal.",
           },
         },
         {
@@ -201,10 +253,10 @@ export default function InsuranceLandingPage() {
       {/* State practice */}
       <div className="max-w-5xl mx-auto px-6 pb-16 md:pb-24">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-4">
-          State Practice: Texas, Florida and California
+          State Practice: 13 States
         </h2>
         <p className="text-lg text-gray-600 dark:text-gray-300 text-center max-w-2xl mx-auto mb-10">
-          Taking the exam in Texas, Florida or California? Practice a full-length exam with questions checked against your state&apos;s insurance law, including state-only rules. Progress is saved separately for each state.
+          Taking the exam in one of these states? Practice a full-length exam with questions checked against your state&apos;s insurance law, including state-only rules. Progress is saved separately for each state.
         </p>
         <div className="grid md:grid-cols-3 gap-6">
           {statePractice.map((s) => (
@@ -220,7 +272,7 @@ export default function InsuranceLandingPage() {
           ))}
         </div>
         <p className="text-sm text-gray-500 dark:text-gray-400 text-center mt-6">
-          Practice only. Not affiliated with TDI, Florida DFS, CDI, Pearson VUE or PSI, and a practice score does not predict your exam result.
+          Practice only. Not affiliated with any state regulator, PSI, Pearson VUE or Prometric, and a practice score does not predict your exam result.
         </p>
       </div>
 
@@ -233,7 +285,7 @@ export default function InsuranceLandingPage() {
                 Built on the General Portion Every State Tests
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-                State life and health producer exams from Pearson VUE, PSI and Prometric share a general section built on the NAIC model and the same prelicensing texts. Every practice test here follows that weighting. The state law section is covered for Texas, Florida and California below.
+                State life and health producer exams from Pearson VUE, PSI and Prometric share a general section built on the NAIC model and the same prelicensing texts. Every practice test here follows that weighting. The state law section is covered for the states below.
               </p>
               <div className="space-y-3">
                 {contentAreas.map((area) => (
@@ -303,7 +355,7 @@ export default function InsuranceLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Then study your state portion separately</h3>
               <p>
-                Outside Texas, Florida and California, this bank covers the general portion only. Your state exam adds licensing rules, continuing education, replacement forms and guaranty association limits. Clear 75 percent here with room to spare, then study your state&apos;s candidate handbook.
+                Outside the states with their own practice, this bank covers the general portion only. Your state exam adds licensing rules, continuing education, replacement forms and guaranty association limits. Clear 75 percent here with room to spare, then study your state&apos;s candidate handbook.
               </p>
             </div>
           </div>
@@ -325,7 +377,7 @@ export default function InsuranceLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Does this cover my state&apos;s exam?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              Texas, Florida and California have their own full-length practice with state law: 130 questions for Texas, 150 for Florida&apos;s 2-15 and 150 for California&apos;s combined exam. For other states, the 200-question bank covers the general portion shared by every Pearson VUE, PSI or Prometric exam; the state portion (license law, free-look lengths, replacement rules, guaranty limits) is separate, and no question here states one state&apos;s rule as universal.
+              Thirteen states have their own full-length practice with state law: California, Florida, Georgia, Illinois, Michigan, New Jersey, New York, North Carolina, Ohio, Pennsylvania, Texas, Virginia and Washington. For other states, the 200-question bank covers the general portion shared by every Pearson VUE, PSI or Prometric exam; the state portion (license law, free-look lengths, replacement rules, guaranty limits) is separate, and no question here states one state&apos;s rule as universal.
             </p>
           </div>
           <div>

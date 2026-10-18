@@ -42,7 +42,7 @@ National picks by area: regulation 3 (alien insurer reworded for New York, FCRA,
 ## Law sources
 New York statutes were read on the Senate's official Open Legislation pages, https://www.nysenate.gov/legislation/laws/<LAW>/<section> (ISC = Insurance Law, FIS = Financial Services Law, WKC = Workers' Compensation Law, PBH = Public Health Law), each page checked for its "most recent revision" date. The pages sit behind a Cloudflare challenge for curl, so they were read with a browser-style fetch; nothing rests on a challenge page. Regulations (11 NYCRR) were read on Cornell LII's mirror of the official NYCRR (https://www.law.cornell.edu/regulations/new-york/11-NYCRR-<part.section>), with each page's NYS Register history note checked. DFS pages and the Department of Health Partnership brochure were downloaded with curl.
 
-Changes watched for: Ins. Law 2103 revised 2023-04-07, 2137 revised 2023-04-07, 3209 revised 2023-01-06, 3231 revised 2023-10-27 (a further version takes effect 2028-12-28, not relevant to the facts used), 11 NYCRR Part 20 CE topics amended 2021, Reg 79 not used here. No item rests on a figure changed in 2025-2026.
+Changes watched for: Ins. Law 3216 revised 2026-10-02 and 3221 revised 2026-06-05 (re-read at review: the 3216(a)(4) dependent ages, 3216(c)(4) newborn and incapacity rules, the 3216(d)(1) grace, time limit, reinstatement, proof of loss and legal action provisions, the 3221(e) 60-day conversion and the 3221(m) 36-month, 102% continuation used here are unchanged), Ins. Law 2103 revised 2023-04-07, 2137 revised 2023-04-07, 3209 revised 2023-01-06, 3231 revised 2023-10-27 (a further version takes effect 2028-12-28, not relevant to the facts used), 11 NYCRR Part 20 CE topics amended 2021, Reg 79 not used here. No item rests on a figure changed in 2025-2026.
 
 ## Item-to-source map
 | Item | Source |
@@ -57,7 +57,7 @@ Changes watched for: Ins. Law 2103 revised 2023-04-07, 2137 revised 2023-04-07, 
 | LHNY-NYMKT-002 | 11 NYCRR 30.3(a), (b) (Reg 194) |
 | LHNY-NYCON-001 | Ins. Law 3105(b), (c) |
 | LHNY-NYUND-001 | Ins. Law 3205(c) |
-| LHNY-NYUND-002 | Ins. Law 3208(a), (b) |
+| LHNY-NYUND-002 | Ins. Law 3208(a) (policy dating), 3208(b) (application dating) |
 | LHNY-NYUND-003 | Ins. Law 2611(a), (b) |
 | LHNY-NYSAL-001 | Ins. Law 3209(b) |
 | LHNY-NYSAL-002 | 11 NYCRR 51.6(d) (Reg 60) |
@@ -103,6 +103,7 @@ Changes watched for: Ins. Law 2103 revised 2023-04-07, 2137 revised 2023-04-07, 
 - LH-HTYP-023: explanation said insurers "in most states may underwrite" after the six-month window; it now adds that New York requires year-round acceptance at community rates (3231).
 - LH-HTYP-028: explanation now describes New York Partnership protection (dollar for dollar or total asset) and cites 11 NYCRR 52.25.
 - LH-HPRV-001: explanation now cites Ins. Law 3216(d)(1) (7/10/31-day grace periods, which match).
+- LH-HPRV-017: explanation adds that an insured New York group plan must offer continuation up to 36 months in all after COBRA ends (3221(m)(6)).
 
 ## National exclusions (conflict with New York law)
 - LH-PROV-004: keyed $98,800 (face minus the full annual premium). Ins. Law 3203(a)(2) limits the grace-period deduction to the unpaid premium for the period ending with the policy month of death, so the New York answer would differ.

@@ -109,7 +109,7 @@
  ],
  "overrides": {
   "PC-LIA-019": {
-   "explanation": "Employees receive statutory no-fault benefits and generally give up the right to sue the employer for negligence; that is the compensation bargain. In New York, Workers' Compensation Law section 11 lets an employee sue instead only if the employer failed to secure compensation."
+   "explanation": "Employees receive statutory no-fault benefits and generally give up the right to sue the employer for negligence; that is the compensation bargain. In New York, Workers' Compensation Law section 11 lifts that bar when the employer has failed to secure compensation, letting the injured employee sue instead."
   }
  }
 }

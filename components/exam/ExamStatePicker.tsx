@@ -1,7 +1,7 @@
 "use client";
 
-// State choice for exam families with state variants (real estate in CA, TX,
-// FL, NY and NJ; life & health and P&C insurance in TX, FL and CA; every
+// State choice for exam families with state variants (real estate in 15
+// states, life & health and P&C insurance in 13; see EXAM_VARIANTS; every
 // other state uses the family's national bank). Same "I'm taking the exam in
 // [State]" sentence as DMV onboarding, but the dropdown lists only states with
 // a variant plus "Other state", so it never implies coverage we don't have.

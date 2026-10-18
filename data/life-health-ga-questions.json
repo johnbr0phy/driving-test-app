@@ -56,7 +56,7 @@
     "optionD": "Within 90 days of the change",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Rule 120-2-3-.37 requires every licensee to notify the Commissioner of any change in information included in its filings or applications within 30 days of the change. Waiting until renewal is too late.",
+    "explanation": "O.C.G.A. 33-23-33(b) requires a change in a licensee's office or residence address to be sent to the Commissioner within 30 days, and Rule 120-2-3-.37 applies the same 30 days to any change in information included in filings or applications. Waiting until renewal is too late.",
     "sourceQuestionId": "LHGA-GALIC-004"
   },
   {
@@ -229,14 +229,14 @@
     "state": "GA",
     "questionId": "LHGA-GAUTP-004",
     "category": "insuranceRegulation",
-    "question": "An insurer pays part of an agreed first-party claim and marks the check as a final release of the whole claim. Under Georgia law, this is:",
+    "question": "An insurer pays part of a first-party claim it does not dispute, with no settlement agreed, and marks the check as a final release of the whole claim. Under Georgia law, this is:",
     "optionA": "An unfair claims practice",
     "optionB": "Allowed if the check is cashed",
     "optionC": "Allowed for health claims",
     "optionD": "Required on partial payments",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "O.C.G.A. 33-6-34(13) makes it an unfair claims settlement practice to indicate that a payment is final or a release unless the policy limit has been paid or a compromise settlement was agreed. Cashing the check does not cure it.",
+    "explanation": "O.C.G.A. 33-6-34(13) makes it an unfair claims settlement practice to indicate that a payment is final or a release unless the policy limit has been paid or a compromise settlement was agreed, and 33-6-34(14) bars partial-settlement checks with release language. Cashing the check does not cure it.",
     "sourceQuestionId": "LHGA-GAUTP-004"
   },
   {

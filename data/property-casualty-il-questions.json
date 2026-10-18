@@ -229,14 +229,14 @@
     "state": "IL",
     "questionId": "PCIL-GEN-017",
     "category": "pcGeneral",
-    "question": "An insurer may void a policy because of a misrepresentation only when the false statement is:",
+    "question": "An insurer may void a policy because of an innocent misrepresentation only when the false statement is:",
     "optionA": "Discovered within the first 30 days",
     "optionB": "Related to a prior claim of any size",
     "optionC": "Material to the decision to insure",
     "optionD": "Made in writing on a separate form",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "A material misrepresentation is one that would have changed the underwriting decision. Minor errors that would not have affected acceptance or premium do not allow the insurer to void coverage.",
+    "explanation": "A material misrepresentation is one that would have changed the underwriting decision. Under 215 ILCS 5/154, a misrepresentation in the policy or written application defeats it only if made with actual intent to deceive or if it materially affects acceptance of the risk, so an innocent, immaterial error does not allow the insurer to void coverage.",
     "sourceQuestionId": "PC-GEN-017"
   },
   {
@@ -656,7 +656,7 @@
     "optionD": "Four years",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "215 ILCS 5/500-35(a) issues a 2-year producer license. The Department sets expiration at the last day of the producer's birth month, so the first term is prorated.",
+    "explanation": "215 ILCS 5/500-35(a) issues a 2-year producer license. It stays in effect, unless revoked or suspended, as long as the renewal fee is paid and the continuing education is completed on time.",
     "sourceQuestionId": "PCIL-ILLIC-007"
   },
   {
@@ -686,7 +686,7 @@
     "optionD": "Reinstate it free of charge, no exam",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "215 ILCS 5/500-35(d) allows a lapsed license to be reissued within 12 months after the renewal date without an exam, with a penalty of double the unpaid renewal fee, and CE must be current. After more than a year the Department requires the prelicensing course and exams again.",
+    "explanation": "215 ILCS 5/500-35(d) allows a lapsed license to be reissued within 12 months after the renewal date without an exam, with a penalty of double the unpaid renewal fee. Once those 12 months pass, the no-exam reissue is no longer available.",
     "sourceQuestionId": "PCIL-ILLIC-009"
   },
   {
@@ -731,7 +731,7 @@
     "optionD": "90 days of establishing residence",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "215 ILCS 5/500-45(b) exempts a relocating producer from prelicensing education and exams for lines already held if the application is made within 90 days after establishing legal residence. Thirty days is the window for a producer leaving Illinois to get a license in the new home state.",
+    "explanation": "215 ILCS 5/500-45(b) exempts a relocating producer from prelicensing education and exams for lines already held if the application is made within 90 days after establishing legal residence. Thirty days is the deadline under 5/500-40(c) for a producer leaving Illinois to file the change of address with the new home state's certification.",
     "sourceQuestionId": "PCIL-ILLIC-012"
   },
   {
@@ -1009,14 +1009,14 @@
     "state": "IL",
     "questionId": "PCIL-ILPC-004",
     "category": "pcPolicy",
-    "question": "An Illinois insurer decides not to renew a personal auto policy. It must mail notice to the named insured at least:",
-    "optionA": "60 days before expiration",
-    "optionB": "10 days before expiration",
-    "optionC": "45 days before expiration",
-    "optionD": "30 days before expiration",
+    "question": "An Illinois insurer fails to send the required notice before nonrenewing a personal auto policy. The policy ends:",
+    "optionA": "On its original expiration date",
+    "optionB": "Ten days after its expiration date",
+    "optionC": "When the Director approves the nonrenewal",
+    "optionD": "When the insured gets similar coverage",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "215 ILCS 5/143.17(a) requires at least 30 days' mailed notice of nonrenewal for personal lines, with copies to the agent or broker and any lienholder. Sixty days is the nonrenewal notice for commercial policies under 5/143.17a.",
+    "explanation": "Under 215 ILCS 5/143.17(c), if the insurer does not give the required nonrenewal notice, the policy terminates only on the effective date of similar insurance the insured buys for the same subject. P.A. 104-534 lengthens the personal lines nonrenewal notice from 30 to 60 days on January 1, 2027, but this rule stays the same.",
     "sourceQuestionId": "PCIL-ILPC-004"
   },
   {
@@ -1586,7 +1586,7 @@
     "optionD": "Pays earthquake losses statewide",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Under 215 ILCS 5/805.1 and the Fund's own description, insurers write the mine subsidence coverage and the Fund reinsures it, sets the premium and must confirm in writing that damage was caused by mine subsidence before the insurer pays.",
+    "explanation": "215 ILCS 5/801.1 makes the Illinois Mine Subsidence Insurance Fund the reinsurer of the mine subsidence coverage that insurers must include on Illinois property policies unless the insured waives it in writing (5/805.1), and the Fund sets the premium. The insurer, not the Fund, sells the coverage.",
     "sourceQuestionId": "PCIL-ILPRP-003"
   },
   {
@@ -1781,7 +1781,7 @@
     "optionD": "Less than the insured's BI limits",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "215 ILCS 5/143a-2(4) defines an underinsured vehicle by comparing limits: the at-fault driver's available liability limits are less than the insured's underinsured coverage limits. A driver below the state minimum is uninsured, and the comparison is not to the size of the damages.",
+    "explanation": "215 ILCS 5/143a-2(4) defines an underinsured vehicle by comparing limits: the at-fault driver's available liability limits are less than the insured's underinsured coverage limits. The comparison is not to the size of the damages or to the state minimum limits.",
     "sourceQuestionId": "PCIL-ILCAS-003"
   },
   {
@@ -1796,7 +1796,7 @@
     "optionD": "3 years from completion",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "215 ILCS 5/143.29 requires a premium reduction for drivers over 55 who complete an approved course of at least 8 hours, for 3 years from completion. Certain recent violations or license suspensions delay or bar it.",
+    "explanation": "215 ILCS 5/143.29 requires a premium reduction for drivers over 55 who complete an approved course (at least 8 hours, cut to 4 hours from July 1, 2027 by P.A. 104-753), for 3 years from completion. Certain recent violations or license suspensions delay or bar it.",
     "sourceQuestionId": "PCIL-ILCAS-004"
   },
   {
@@ -1834,14 +1834,14 @@
     "state": "IL",
     "questionId": "PCIL-ILCAS-007",
     "category": "pcAuto",
-    "question": "An Illinois applicant may be assigned to an insurer through the state's assigned risk plan after being rejected by:",
-    "optionA": "1 insurance carrier",
-    "optionB": "2 insurance carriers",
-    "optionC": "3 insurance carriers",
-    "optionD": "5 insurance carriers",
+    "question": "Under Illinois assigned risk law, auto applicants are spread among insurers in proportion to each insurer's:",
+    "optionA": "Number of appointed producers",
+    "optionB": "Total admitted assets nationwide",
+    "optionC": "Illinois auto bodily injury premiums",
+    "optionD": "Share of auto claims paid in the last year",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "625 ILCS 5/7-501 makes an applicant eligible for assignment after applying in good faith and being rejected by 3 carriers. Assignments are spread among insurers in proportion to their auto bodily injury premiums.",
+    "explanation": "625 ILCS 5/7-501 requires carriers writing auto bodily injury liability in Illinois to take part in an approved assigned risk plan, today the Illinois Automobile Insurance Plan, and distributes assignments in proportion to each carrier's net direct auto bodily injury premium writings. A carrier that refuses may have its license suspended.",
     "sourceQuestionId": "PCIL-ILCAS-007"
   },
   {
@@ -2179,14 +2179,14 @@
     "state": "IL",
     "questionId": "PCIL-ILPRP-001",
     "category": "pcOther",
-    "question": "To apply to the Illinois FAIR Plan, an owner of urban property generally must first show:",
+    "question": "To apply to the Illinois FAIR Plan, a property owner generally must first show:",
     "optionA": "Three failed attempts to get coverage",
     "optionB": "A prior fire loss within three years",
     "optionC": "A home value under the plan's limit",
     "optionD": "Two years of prior continuous coverage",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "215 ILCS 5/524 lets a person with an insurable interest in urban property apply after 3 attempts to procure basic property insurance have failed. The Plan then inspects the property promptly.",
+    "explanation": "215 ILCS 5/524 lets a person with an insurable interest in eligible property apply after 3 attempts to procure basic property insurance have failed, and the property is then inspected. From January 1, 2027, P.A. 104-645 opens the Plan to property anywhere in Illinois, not only urban areas, and keeps the 3-attempt rule.",
     "sourceQuestionId": "PCIL-ILPRP-001"
   },
   {

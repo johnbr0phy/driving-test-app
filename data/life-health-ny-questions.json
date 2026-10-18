@@ -484,14 +484,14 @@
     "state": "NY",
     "questionId": "LHNY-NYUND-002",
     "category": "lifeBasics",
-    "question": "An agent wants to date a new New York life policy back to an earlier age to save the client premium. The furthest it may be dated before the application is:",
+    "question": "A client asks that a new New York life policy be dated back to an earlier age to save premium. The furthest the insurer may date it before the application is:",
     "optionA": "Three months",
     "optionB": "One year",
     "optionC": "Six months",
     "optionD": "31 days",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Insurance Law section 3208 bars dating a life policy more than six months before the application date when doing so lowers the premium, and it applies to agents and brokers who prepare backdated applications as well as insurers.",
+    "explanation": "Insurance Law section 3208(a) bars an insurer from dating a life policy more than six months before the application date when doing so lowers the premium. Section 3208(b) separately bars agents and brokers from dating the application itself earlier than the day it was made.",
     "sourceQuestionId": "LHNY-NYUND-002"
   },
   {
@@ -1601,7 +1601,7 @@
     "optionD": "$612",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "COBRA lets the employer charge up to 102% of the full premium, and 1.02 x $600 = $612. Rita has 60 days to elect coverage, and continuation lasts up to 18 months after a layoff.",
+    "explanation": "COBRA lets the employer charge up to 102% of the full premium, and 1.02 x $600 = $612. Rita has 60 days to elect coverage, and federal continuation lasts up to 18 months after a layoff; an insured New York group plan must then offer continuation up to 36 months in all under Insurance Law section 3221(m).",
     "sourceQuestionId": "LH-HPRV-017"
   },
   {
@@ -1714,14 +1714,14 @@
     "state": "NY",
     "questionId": "LHNY-NYHPR-006",
     "category": "healthProvisions",
-    "question": "A worker at a 12-person New York firm loses his job. Federal COBRA does not apply, but New York continuation lets him keep the group medical coverage for up to:",
+    "question": "A worker at a 12-person New York firm loses his job. Federal COBRA does not apply, but New York continuation lets him keep the firm's insured group medical coverage for up to:",
     "optionA": "18 months",
     "optionB": "12 months",
     "optionC": "36 months",
     "optionD": "29 months",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Insurance Law section 3221(m) lets employees and dependents continue group hospital, surgical or medical coverage for up to 36 months, electing within 60 days. Federal COBRA applies only to employers with 20 or more employees, and its 18 and 29-month periods do not cap the New York right.",
+    "explanation": "Insurance Law section 3221(m) lets employees and dependents continue insured group hospital, surgical or medical coverage for up to 36 months, electing within 60 days, with no minimum employer size. Federal COBRA applies only to employers with 20 or more employees, and someone who exhausts a shorter COBRA period must be offered continuation up to 36 months in all.",
     "sourceQuestionId": "LHNY-NYHPR-006"
   },
   {

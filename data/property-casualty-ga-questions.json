@@ -229,14 +229,14 @@
     "state": "GA",
     "questionId": "PCGA-GAUTP-005",
     "category": "pcGeneral",
-    "question": "A mortgage lender tells a Georgia borrower that the homeowners policy on the house must be written through the lender's affiliated agency. This is:",
+    "question": "A mortgage lender and its affiliated agency require a Georgia borrower to buy the homeowners policy through that agency as a condition of the loan. This is:",
     "optionA": "Allowed for any secured loan",
     "optionB": "Allowed if the rate is lower",
     "optionC": "A required loan condition",
     "optionD": "An unfair trade practice",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "O.C.G.A. 33-6-4(b)(11) makes it unfair to require, as a condition of a loan secured by property, that insurance on the property be written through a particular insurer or agent. The lender may still reject an insurer for sound reasons such as solvency.",
+    "explanation": "O.C.G.A. 33-6-4(b)(11) makes it unfair for an insurer or agent to be a party to requiring, as a condition of a loan secured by property, that insurance on the property be written through a particular insurer or agent. The lender may still reject an insurer for sound reasons such as solvency.",
     "sourceQuestionId": "PCGA-GAUTP-005"
   },
   {
@@ -244,14 +244,14 @@
     "state": "GA",
     "questionId": "PCGA-GAUTP-006",
     "category": "pcGeneral",
-    "question": "An insurer pays part of an agreed first-party property claim and marks the check as a final release of the whole claim. Under Georgia law, this is:",
+    "question": "An insurer pays part of a first-party property claim it does not dispute, with no settlement agreed, and marks the check as a final release of the whole claim. Under Georgia law, this is:",
     "optionA": "An unfair claims practice",
     "optionB": "Allowed if the check is cashed",
     "optionC": "Allowed for auto claims",
     "optionD": "Required on partial payments",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "O.C.G.A. 33-6-34(13) makes it an unfair claims settlement practice to indicate that a payment is final or a release unless the policy limit has been paid or a compromise settlement was agreed. Cashing the check does not cure it.",
+    "explanation": "O.C.G.A. 33-6-34(13) makes it an unfair claims settlement practice to indicate that a payment is final or a release unless the policy limit has been paid or a compromise settlement was agreed, and 33-6-34(14) bars partial-settlement checks with release language. Cashing the check does not cure it.",
     "sourceQuestionId": "PCGA-GAUTP-006"
   },
   {
@@ -589,14 +589,14 @@
     "state": "GA",
     "questionId": "PCGA-GEN-024",
     "category": "pcGeneral",
-    "question": "An insurer incorporated in Canada and licensed to do business in a US state is classified in that state as a(n):",
+    "question": "An insurer incorporated in Canada and licensed to do business in Georgia is classified in Georgia as a(n):",
     "optionA": "Alien insurer",
     "optionB": "Reciprocal insurer",
     "optionC": "Foreign insurer",
     "optionD": "Domestic insurer",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "O.C.G.A. 33-3-1 defines an alien insurer as one formed under the laws of a country other than the United States. A foreign insurer is formed in another U.S. state, and a domestic insurer is formed in the state in question.",
+    "explanation": "O.C.G.A. 33-3-1 defines an alien insurer as one formed under the laws of a country other than the United States. A foreign insurer is formed in another U.S. state, and a domestic insurer is formed under Georgia law.",
     "sourceQuestionId": "PC-GEN-024"
   },
   {
@@ -1376,7 +1376,7 @@
     "optionD": "The insured's own limits are below the state minimum",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "UIM fills the gap when the at-fault driver's liability limits are lower than the insured's UIM limits and are not enough to pay the damages. A driver with no insurance triggers UM rather than UIM.",
+    "explanation": "Georgia folds underinsured protection into uninsured motorist coverage: under O.C.G.A. 33-7-11(b)(1)(D)(ii) an at-fault vehicle whose liability insurance is too small for the insured's damages is treated as uninsured, and by default the UM limits pay on top of that liability coverage. A driver with no insurance at all is the classic uninsured case, not an underinsured one.",
     "sourceQuestionId": "PC-AUTO-017"
   },
   {
@@ -1459,14 +1459,14 @@
     "state": "GA",
     "questionId": "PCGA-GAAUT-002",
     "category": "pcAuto",
-    "question": "Every named driver age 25 or older on a Georgia auto policy has a clean three-year record and completes an approved defensive driving course. The insurer must offer:",
+    "question": "Every named driver on a Georgia auto policy is 25 or older, has no traffic offenses or at-fault claims in three years, and completes an approved defensive driving course. The insurer must offer:",
     "optionA": "At least a 5% discount for 1 year",
     "optionB": "At least a 15% discount for life",
     "optionC": "A discount at its own discretion",
     "optionD": "At least a 10% discount for 3 years",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "O.C.G.A. 33-9-42 requires insurers to offer a premium reduction of at least 10 percent on liability, first-party medical and collision coverages when all named drivers qualify, and eligibility continues for three years if no driver has a traffic offense or at-fault claim.",
+    "explanation": "O.C.G.A. 33-9-42 requires insurers to offer a premium reduction of at least 10 percent on liability, first-party medical and collision coverages when all named drivers qualify (drivers under 25 qualify through a new-driver course instead), and eligibility continues for three years if no driver has a traffic offense or at-fault claim.",
     "sourceQuestionId": "PCGA-GAAUT-002"
   },
   {
@@ -1496,7 +1496,7 @@
     "optionD": "60 days after filing, no approval",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Under O.C.G.A. 33-9-21(b)(2), as amended in 2023, rates for personal auto policies above the mandatory minimum limits take effect 60 days after filing without the Commissioner's approval. Minimum-limits-only policies need approval or a 45-day review period instead.",
+    "explanation": "Under O.C.G.A. 33-9-21(b)(2), as amended in 2023, rates for personal auto policies above the mandatory minimum limits take effect 60 days after filing without the Commissioner's approval, unless the Commissioner allows an earlier date or the insurer names a later one. Minimum-limits-only policies need approval or a 45-day review period, a route insurers may also choose for other auto filings.",
     "sourceQuestionId": "PCGA-GAPOL-003"
   },
   {

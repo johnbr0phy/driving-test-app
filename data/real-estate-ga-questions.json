@@ -221,7 +221,7 @@
     "optionD": "One and a half months' rent",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "O.C.G.A. 44-7-30.1, added by the Safe at Home Act (HB 404, effective July 1, 2024), caps a residential security deposit at the equivalent of two months' rent. Earlier drafts of the bill would have allowed three months.",
+    "explanation": "O.C.G.A. 44-7-30.1, added by the Safe at Home Act (HB 404, effective July 1, 2024), caps a residential security deposit at the equivalent of two months' rent for leases entered into or renewed on or after that date. No Georgia law sets a one-month cap.",
     "sourceQuestionId": "REGA-GAPM-001"
   },
   {
@@ -236,7 +236,7 @@
     "optionD": "60 days",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "O.C.G.A. 44-7-34(a), as amended in 2018, requires return within 30 days after termination of the lease and surrender of the premises, with a written statement of any amount kept. Wrongful withholding can cost three times the amount plus attorney's fees (44-7-35(c)).",
+    "explanation": "O.C.G.A. 44-7-34(a) requires return within 30 days after the tenancy ends and the premises are surrendered, with a written statement of any amount kept. Wrongful withholding can cost three times the amount plus attorney's fees (44-7-35(c)).",
     "sourceQuestionId": "REGA-GAPM-002"
   },
   {
@@ -2104,14 +2104,14 @@
     "state": "GA",
     "questionId": "REGA-GAFIN-008",
     "category": "reFinancing",
-    "question": "Georgia's intangible recording tax applies to a note secured by real estate when any part of the principal falls due more than how long after the note's date?",
-    "optionA": "One year",
-    "optionB": "Two years",
-    "optionC": "Five years",
-    "optionD": "Three years",
+    "question": "Since July 1, 2025, Georgia's intangible recording tax applies to a note secured by real estate when any part of the principal falls due more than how long after the note's date?",
+    "optionA": "36 months",
+    "optionB": "48 months",
+    "optionC": "60 months",
+    "optionD": "62 months",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "O.C.G.A. 48-6-60 defines a long-term note as one with any principal due more than three years from the note or security instrument date, and 48-6-61 taxes those notes. A note due entirely within three years is a short-term note.",
+    "explanation": "HB 586 (2025) amended O.C.G.A. 48-6-60(3) so a long-term note has principal due more than 62 months from the note or security instrument date, replacing the old three-year line. A note due within 62 months is not taxed (DOR Bulletin 2025-02).",
     "sourceQuestionId": "REGA-GAFIN-008"
   },
   {

@@ -38,7 +38,12 @@ export function CDLHeader() {
   const landingLang = Object.entries(exam?.translations ?? {}).find(([, tr]) => tr.landingPath === pathname)?.[0] as
     | Language
     | undefined;
-  const t = createT(landingLang ?? (exam ? examLanguage(exam, language) : "en"));
+  const contentLang: Language = landingLang ?? (exam ? examLanguage(exam, language) : "en");
+  const t = createT(contentLang);
+  // The logo goes to the landing in the language the person is using, so
+  // choosing Spanish and then tapping the logo lands on the Spanish page.
+  const logoHref =
+    (contentLang !== "en" && exam?.translations?.[contentLang as Exclude<Language, "en">]?.landingPath) || theme.logoHome;
   // A translated exam's landings carry the DMV homepage's language switcher:
   // each language is its own URL, so picking one goes there (and sets the app
   // language for the dashboard behind it).
@@ -63,7 +68,7 @@ export function CDLHeader() {
   return (
     <header className="border-b bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <Link href={theme.logoHome} className="flex items-center gap-2 group flex-shrink-0">
+        <Link href={logoHref} className="flex items-center gap-2 group flex-shrink-0">
           {theme.logoIcon ? (
             <Image src={theme.logoIcon} alt={theme.name} width={40} height={40} className="w-10 h-10" />
           ) : (

@@ -1,0 +1,49 @@
+{
+  "landingPath": "/es/examen-endosos-cdl",
+  "name": "Endosos de la CDL",
+  "examLabel": "Endosos de la CDL",
+  "fullName": "exámenes de conocimientos de los endosos de la CDL",
+  "trainingSets": {
+    "1": {
+      "name": "Materiales peligrosos (H)",
+      "weightLabel": "Examen real: 30 preguntas, 80%"
+    },
+    "2": {
+      "name": "Frenos de aire",
+      "weightLabel": "Examen real: 25 preguntas, 80%"
+    },
+    "3": {
+      "name": "Vehículos combinados",
+      "weightLabel": "Examen real: 20 preguntas, 80%"
+    },
+    "4": {
+      "name": "Vehículos tanque (N)",
+      "weightLabel": "Examen real: 20 preguntas, 80%"
+    },
+    "5": {
+      "name": "Transporte de pasajeros (P)",
+      "weightLabel": "Examen real: 20 preguntas, 80%"
+    }
+  },
+  "categoryLabels": {
+    "hazmatEndorsement": "Materiales peligrosos",
+    "airBrakes": "Frenos de aire",
+    "combinationVehicles": "Vehículos combinados",
+    "tankVehicles": "Vehículos tanque",
+    "passengerTransport": "Transporte de pasajeros"
+  },
+  "copy": {
+    "guestPrompt": "para guardar tu progreso de los endosos y ver cada pregunta que fallas",
+    "trainingHeading": "Practica un endoso a la vez",
+    "trainingSub": "Un grupo por endoso, sacado directo de la sección del manual de la FMCSA. Respuesta al instante, y las preguntas que fallas vuelven hasta que las domines.",
+    "testsHeading": "Exámenes de práctica mixtos · 50 preguntas de los cinco temas, se aprueba con 80%",
+    "heroSubs": [
+      "Elige el grupo de tu endoso.",
+      "Domina cada grupo y luego haz un examen.",
+      "Vas a la mitad. Prueba un examen de práctica.",
+      "Corrige las fallas y vuelve a intentarlo.",
+      "Todo listo. Programa tus exámenes de endosos."
+    ],
+    "sourceLine": "Basado en las secciones 4, 5, 6, 8 y 9 del manual de la CDL de la FMCSA. El endoso de materiales peligrosos también requiere una evaluación de amenaza de seguridad de la TSA."
+  }
+}

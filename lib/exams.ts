@@ -15,6 +15,13 @@
 
 import TRAINING_PARTS from "./trainingParts.json";
 import type { Language } from "@/i18n";
+import foodhandlerEs from "./examTranslations/foodhandler.es.json";
+import foodhandlerVi from "./examTranslations/foodhandler.vi.json";
+import foodhandlerKo from "./examTranslations/foodhandler.ko.json";
+import cdlxEs from "./examTranslations/cdlx.es.json";
+import oshaEs from "./examTranslations/osha.es.json";
+import forkliftEs from "./examTranslations/forklift.es.json";
+import cnaEs from "./examTranslations/cna.es.json";
 
 export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "htl" | "cst" | "crcst";
 
@@ -101,6 +108,13 @@ export interface ExamTranslation {
   trainingSets: Record<number, { name: string; weightLabel: string }>;
   categoryLabels: Record<string, string>;
   copy: Omit<ExamConfig["copy"], "analyticsKey">;
+}
+
+/** A translation loaded from lib/examTranslations/*.json, checked for the
+ *  one shape JSON cannot express (five hero subtitles). */
+function examTranslation(json: Omit<ExamTranslation, "copy"> & { copy: Omit<ExamTranslation["copy"], "heroSubs"> & { heroSubs: string[] } }): ExamTranslation {
+  if (json.copy.heroSubs.length !== 5) throw new Error(`${json.landingPath}: heroSubs needs 5 lines`);
+  return json as ExamTranslation;
 }
 
 const cdl: ExamConfig = {
@@ -274,6 +288,9 @@ const cdlx: ExamConfig = {
     ],
     sourceLine: "Based on FMCSA CDL Manual sections 4, 5, 6, 8 and 9. HazMat also needs a TSA security threat assessment.",
     analyticsKey: "cdlx",
+  },
+  translations: {
+    es: examTranslation(cdlxEs),
   },
 };
 
@@ -627,6 +644,9 @@ const cna: ExamConfig = {
     ],
     sourceLine: "Weighted to the NNAAP written exam content outline. Your state may use Prometric or Headmaster with a similar outline.",
     analyticsKey: "cna",
+  },
+  translations: {
+    es: examTranslation(cnaEs),
   },
 };
 
@@ -1490,6 +1510,11 @@ const foodhandler: ExamConfig = {
     sourceLine: "Based on the FDA Food Code as taught in ANAB-accredited food handler courses. Card requirements vary by state and county.",
     analyticsKey: "foodhandler",
   },
+  translations: {
+    es: examTranslation(foodhandlerEs),
+    vi: examTranslation(foodhandlerVi),
+    ko: examTranslation(foodhandlerKo),
+  },
 };
 
 const boating: ExamConfig = {
@@ -1718,6 +1743,9 @@ const osha: ExamConfig = {
     sourceLine: "Based on the OSHA Outreach Training Program topics and 29 CFR 1926 and 1910. Not an official OSHA course; cards come only from authorized trainers.",
     analyticsKey: "osha",
   },
+  translations: {
+    es: examTranslation(oshaEs),
+  },
 };
 
 const forklift: ExamConfig = {
@@ -1773,6 +1801,9 @@ const forklift: ExamConfig = {
     ],
     sourceLine: "Based on OSHA 29 CFR 1910.178 and ANSI/ITSDF B56.1 operator training content. Certification comes from your employer's training and evaluation.",
     analyticsKey: "forklift",
+  },
+  translations: {
+    es: examTranslation(forkliftEs),
   },
 };
 
@@ -4202,9 +4233,10 @@ export function trainingPartOf(setId: number, questionId: string): number {
 /** Display name: "Safe Driving & Hazards, part 2 of 3". */
 export function trainingPartName(p: TrainingPart, lang: Language = "en"): string {
   if (p.partCount === 1) return p.set.name;
-  return lang === "es"
-    ? `${p.set.name}, parte ${p.part} de ${p.partCount}`
-    : `${p.set.name}, part ${p.part} of ${p.partCount}`;
+  if (lang === "es") return `${p.set.name}, parte ${p.part} de ${p.partCount}`;
+  if (lang === "vi") return `${p.set.name}, phần ${p.part}/${p.partCount}`;
+  if (lang === "ko") return `${p.set.name}, ${p.partCount}부 중 ${p.part}부`;
+  return `${p.set.name}, part ${p.part} of ${p.partCount}`;
 }
 
 /** Languages an exam is offered in, English first. */

@@ -1,6 +1,13 @@
 import { Question } from "@/types";
 import cdlQuestions from "@/data/cdl-questions.json";
 import cdlQuestionsEs from "@/data/cdl-questions_es.json";
+import foodhandlerQuestionsEs from "@/data/food-handler-questions_es.json";
+import foodhandlerQuestionsKo from "@/data/food-handler-questions_ko.json";
+import foodhandlerQuestionsVi from "@/data/food-handler-questions_vi.json";
+import cdlxQuestionsEs from "@/data/cdl-endorsement-questions_es.json";
+import oshaQuestionsEs from "@/data/osha-questions_es.json";
+import forkliftQuestionsEs from "@/data/forklift-questions_es.json";
+import cnaQuestionsEs from "@/data/cna-questions_es.json";
 import cdlxQuestions from "@/data/cdl-endorsement-questions.json";
 import motoQuestions from "@/data/motorcycle-questions.json";
 import civicsQuestions from "@/data/civics-questions.json";
@@ -79,6 +86,11 @@ export function registerExamBanks(banks: Partial<Record<ExamId, Question[]>>) {
 // An exam listed here also needs ExamConfig.translations.
 const TRANSLATED_BANKS: Partial<Record<ExamId, Partial<Record<Language, Question[]>>>> = {
   cdl: { es: cdlQuestionsEs as Question[] },
+  foodhandler: { es: foodhandlerQuestionsEs as Question[], vi: foodhandlerQuestionsVi as Question[], ko: foodhandlerQuestionsKo as Question[] },
+  cdlx: { es: cdlxQuestionsEs as Question[] },
+  osha: { es: oshaQuestionsEs as Question[] },
+  forklift: { es: forkliftQuestionsEs as Question[] },
+  cna: { es: cnaQuestionsEs as Question[] },
 };
 
 export function getExamQuestions(examId: ExamId, language: Language = "en"): Question[] {

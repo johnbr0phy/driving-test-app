@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { examLandingAlternates } from "@/lib/examSeo";
 import Image from "next/image";
 import { getTigerAsset } from "@/lib/tigerAssets";
 import { Smartphone, Monitor } from "lucide-react";
@@ -20,6 +21,7 @@ export const metadata: Metadata = {
     "forklift certification practice test, forklift test questions and answers, OSHA forklift test, forklift operator written test, forklift license practice test, powered industrial truck test, free forklift practice test 2026",
   alternates: {
     canonical: `${siteUrl}/forklift-certification-practice-test`,
+    languages: examLandingAlternates("forklift"),
   },
   openGraph: {
     title,

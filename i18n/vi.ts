@@ -420,11 +420,11 @@ export const vi: TranslationKeys = {
     aplusSwTroubleshooting: "Software Troubleshooting",
     aplusOperational: "Operational Procedures",
     // Food handler card categories
-    fhBasics: "Food Safety Basics",
-    fhHygiene: "Personal Hygiene",
-    fhContamination: "Contamination & Allergens",
-    fhTimeTemp: "Time & Temperature",
-    fhCleaning: "Cleaning & Sanitizing",
+    fhBasics: "Kiến thức cơ bản về an toàn thực phẩm",
+    fhHygiene: "Vệ sinh cá nhân",
+    fhContamination: "Nhiễm bẩn & Chất gây dị ứng",
+    fhTimeTemp: "Thời gian & Nhiệt độ",
+    fhCleaning: "Làm sạch & Khử trùng",
     // Boating safety categories
     boatBasics: "Boat Basics",
     boatEquipment: "Required Equipment",

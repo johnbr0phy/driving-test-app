@@ -89,7 +89,67 @@ const es: ExamUi = {
   dateLocale: "es-US",
 };
 
-const EXAM_UI: Partial<Record<Language, ExamUi>> = { en, es };
+const vi: ExamUi = {
+  heroTitle: (done, total) => {
+    if (done === 0) return `Hoàn thành cả ${total} bước`;
+    if (done === total) return `Bạn đã sẵn sàng`;
+    if (done === total - 1) return `Còn một bước`;
+    if (done === 1) return `Khởi đầu tốt. Xong 1/${total}`;
+    const frac = done / total;
+    if (frac < 0.45) return `Xong ${done}/${total}`;
+    if (frac < 0.55) return `Đã được một nửa`;
+    if (frac < 0.8) return `Đã hơn một nửa`;
+    return `${done}/${total}, sắp xong rồi`;
+  },
+  questionsCount: (n) => `${n} câu hỏi`,
+  needToPass: (pct) => `Cần đạt ${pct}% trở lên để đậu`,
+  fullLengthExam: "🎯 Bài thi đầy đủ",
+  testN: (n) => `🎯 Bài thi ${n}`,
+  examTestN: (shortName, n) => `Bài thi ${shortName} số ${n}`,
+  pctToPass: (pct) => `${pct}% để đậu`,
+  yourStats: "Thống kê của bạn",
+  yourStatsSub: "Mọi câu hỏi bạn đã gặp, sắp xếp theo những câu bạn hay sai nhất",
+  aboutThisTest: "Về bài thi thử này",
+  trainingBadge: (shortName) => `LUYỆN TẬP ${shortName}`,
+  masteredMyTraining: (shortName) => `ĐÃ NẮM VỮNG PHẦN LUYỆN TẬP ${shortName}`,
+  mastered: "ĐÃ NẮM VỮNG",
+  nextPart: (part, partCount) => `Tiếp theo: phần ${part}/${partCount}`,
+  setN: (n) => `Bộ ${n}`,
+  statsSeen: (seen, total, shortName) => `Đã gặp ${seen}/${total} câu hỏi ${shortName}. Chạm vào hàng bất kỳ để trả lời lại.`,
+  dateLocale: "vi-VN",
+};
+
+const ko: ExamUi = {
+  heroTitle: (done, total) => {
+    if (done === 0) return `${total}단계를 모두 완료하세요`;
+    if (done === total) return `준비됐어요`;
+    if (done === total - 1) return `하나 남았어요`;
+    if (done === 1) return `좋은 출발이에요. ${total}개 중 1개 완료`;
+    const frac = done / total;
+    if (frac < 0.45) return `${total}개 중 ${done}개 완료`;
+    if (frac < 0.55) return `절반 왔어요`;
+    if (frac < 0.8) return `절반 넘었어요`;
+    return `${total}개 중 ${done}개, 거의 다 왔어요`;
+  },
+  questionsCount: (n) => `${n}문항`,
+  needToPass: (pct) => `합격하려면 ${pct}% 이상 필요해요`,
+  fullLengthExam: "🎯 실전 길이 시험",
+  testN: (n) => `🎯 시험 ${n}`,
+  examTestN: (shortName, n) => `${shortName} 시험 ${n}`,
+  pctToPass: (pct) => `합격 기준 ${pct}%`,
+  yourStats: "내 통계",
+  yourStatsSub: "지금까지 본 모든 문제를 자주 틀리는 순서로 정리했어요",
+  aboutThisTest: "이 연습 시험에 대해",
+  trainingBadge: (shortName) => `${shortName} 연습`,
+  masteredMyTraining: (shortName) => `${shortName} 연습 마스터 완료`,
+  mastered: "마스터 완료",
+  nextPart: (part, partCount) => `다음: ${partCount}부 중 ${part}부`,
+  setN: (n) => `세트 ${n}`,
+  statsSeen: (seen, total, shortName) => `${shortName} 문제 ${total}개 중 ${seen}개를 봤어요. 아무 줄이나 눌러 다시 풀어 보세요.`,
+  dateLocale: "ko-KR",
+};
+
+const EXAM_UI: Partial<Record<Language, ExamUi>> = { en, es, vi, ko };
 
 export function examUi(lang: Language): ExamUi {
   return EXAM_UI[lang] ?? en;

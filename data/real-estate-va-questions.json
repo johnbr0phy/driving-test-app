@@ -176,7 +176,7 @@
     "optionD": "Community property",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Tenancy by the entirety, which Virginia recognizes for spouses under Code 55.1-136, carries survivorship and cannot be severed except by a deed signed by both spouses. A joint tenant, by contrast, can sever the joint tenancy by conveying a share alone.",
+    "explanation": "Tenancy by the entirety, which Virginia recognizes for spouses under Code 55.1-136, carries survivorship and cannot be severed by one spouse's deed alone; a severing deed must be signed by both spouses. A joint tenant, by contrast, can sever the joint tenancy by conveying a share alone.",
     "sourceQuestionId": "RE-OWN-003"
   },
   {
@@ -304,7 +304,7 @@
     "state": "VA",
     "questionId": "REVA-VAACT-001",
     "category": "reOwnershipTitle",
-    "question": "Under the Virginia Condominium Act, a balcony reserved for the exclusive use of one unit is a:",
+    "question": "Under the Virginia Condominium Act, a balcony the declaration reserves for the exclusive use of one unit is a:",
     "optionA": "Limited common element",
     "optionB": "General common element",
     "optionC": "Part of the unit itself",
@@ -848,7 +848,7 @@
     "optionA": "A clause in the purchase contract",
     "optionB": "A separate form both clients sign",
     "optionC": "A form signed before it begins",
-    "optionD": "A written notice to both clients",
+    "optionD": "A form using the statutory wording",
     "correctAnswer": "A",
     "correctIndex": 0,
     "explanation": "Code 54.1-2139(D) says the dual agency disclosure does not comply if it is not signed by the client or is given in a purchase agreement, lease or other transaction document. It must be a separate signed writing given before the dual agency begins.",
@@ -937,7 +937,7 @@
     "question": "A Virginia salesperson is buying a home for herself from an unrepresented seller. She must disclose in writing that she is a licensee:",
     "optionA": "Before the deed is recorded",
     "optionB": "Only if the seller asks her",
-    "optionC": "At the first substantive talk",
+    "optionC": "Upon substantive discussions",
     "optionD": "Within five days of ratification",
     "correctAnswer": "C",
     "correctIndex": 2,
@@ -1159,7 +1159,7 @@
     "state": "VA",
     "questionId": "REVA-VAESC-002",
     "category": "rePractice",
-    "question": "A Virginia sale falls through, and both parties claim the earnest money in the firm's escrow account. With no court order, no interpleader and no clear contract terms, the broker should:",
+    "question": "A Virginia sale falls through, and both parties claim the earnest money in the firm's escrow account. No court has ruled, nothing is interpleaded and the contract's terms do not decide it. The broker should:",
     "optionA": "Return it to the buyer in 15 days",
     "optionB": "Hold it until both agree in writing",
     "optionC": "Split it evenly between them",
@@ -1316,7 +1316,7 @@
     "optionD": "Three times in any 24 months",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Since the 2024 amendment, the definition of real estate broker in Code 54.1-2100 includes anyone who, for compensation, deals in real estate contracts, including assignable contracts, on two or more occasions in any 12-month period. A single deal falls below that line.",
+    "explanation": "The definition of real estate broker in Code 54.1-2100, as amended in 2024, includes anyone who, for compensation, deals in real estate contracts, including assignable contracts, on two or more occasions in any 12-month period. A single deal falls below that line.",
     "sourceQuestionId": "REVA-VALIC-006"
   },
   {

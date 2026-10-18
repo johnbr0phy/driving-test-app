@@ -166,7 +166,30 @@ export interface ClassStudentRow {
   correct: number;
   testsTaken: number;
   bestTest: { testNumber: number; pct: number } | null;
+  detail: ClassStudentDetail;
 }
+
+/**
+ * What one student needs help with, for the drill-down from the class page.
+ * Topic accuracy is only judged once a topic has STUDENT_TOPIC_MIN_ANSWERS
+ * answers, and the "needs help" call waits for STUDENT_MIN_ANSWERS overall,
+ * so a handful of answers never brands a topic weak.
+ */
+export interface ClassStudentDetail {
+  /**
+   * Every topic the student answered, weakest first; `judged` false below the
+   * minimum. `othersPct` is the rest of the class (null when nobody else answered it).
+   */
+  topics: { key: string; label: string; answered: number; correct: number; othersPct: number | null; judged: boolean }[];
+  /** Judged topics below the pass line, weakest first, at most three. Empty until STUDENT_MIN_ANSWERS. */
+  focus: string[];
+  /** Questions the student missed (ids into ClassReport.questions), most-missed first. */
+  missed: { questionId: string; missed: number; answered: number }[];
+  tests: { testNumber: number; best: number; last: number | null; attempts: number }[];
+}
+
+export const STUDENT_MIN_ANSWERS = 20;
+export const STUDENT_TOPIC_MIN_ANSWERS = 5;
 
 export interface ClassQuestionRow {
   questionId: string;

@@ -1,9 +1,17 @@
-import { classExamInfo, type ClassReport, type ClassStudentRow } from "@/lib/classes";
+import {
+  STUDENT_MIN_ANSWERS,
+  STUDENT_TOPIC_MIN_ANSWERS,
+  classExamInfo,
+  type ClassReport,
+  type ClassStudentDetail,
+  type ClassStudentRow,
+} from "@/lib/classes";
 import { classQuestionLookup } from "@/lib/server/classQuestions";
 
 // The teacher's view of a class, from the class doc and its member docs:
 // totals, topics weakest first, the most-missed questions (with the right
-// answer, read from the bank) and one row per student. Pure apart from the
+// answer, read from the bank) and one row per student, each with what that
+// student needs help with. Pure apart from the
 // bank lookup, so it can be checked against stored data directly.
 
 const WEEK_MS = 7 * 24 * 60 * 60 * 1000;
@@ -18,7 +26,48 @@ export interface MemberDoc {
   missed?: Record<string, number>;
   /** Answers per question; older members only have `missed`. */
   seen?: Record<string, number>;
-  tests?: Record<string, { best: number; attempts: number }>;
+  tests?: Record<string, { best: number; attempts: number; last?: number }>;
+}
+
+function studentDetail(
+  m: MemberDoc,
+  label: (k: string) => string,
+  classTopics: Record<string, { a: number; c: number }>,
+  passPct: number,
+): ClassStudentDetail {
+  const share = (c: number, a: number) => (a ? c / a : 0);
+  const topics = Object.entries(m.byCategory ?? {})
+    .map(([key, v]) => {
+      const answered = v.a ?? 0;
+      const correct = v.c ?? 0;
+      // The rest of the class, so a student is never compared with themselves.
+      const cls = classTopics[key];
+      const othersA = (cls?.a ?? 0) - answered;
+      const othersC = (cls?.c ?? 0) - correct;
+      return {
+        key,
+        label: label(key),
+        answered,
+        correct,
+        othersPct: othersA > 0 ? Math.round((othersC / othersA) * 100) : null,
+        judged: answered >= STUDENT_TOPIC_MIN_ANSWERS,
+      };
+    })
+    .filter((t) => t.answered > 0)
+    // Judged topics first, weakest first; the rest by how much they've seen.
+    .sort((a, b) => Number(b.judged) - Number(a.judged) || (a.judged ? share(a.correct, a.answered) - share(b.correct, b.answered) : b.answered - a.answered));
+  const focus =
+    (m.answered ?? 0) >= STUDENT_MIN_ANSWERS
+      ? topics.filter((t) => t.judged && (t.correct / t.answered) * 100 < passPct).slice(0, 3).map((t) => t.key)
+      : [];
+  const missed = Object.entries(m.missed ?? {})
+    .filter(([, n]) => n > 0)
+    .map(([questionId, n]) => ({ questionId, missed: n, answered: Math.max(m.seen?.[questionId] ?? 0, n) }))
+    .sort((a, b) => b.missed - a.missed || b.answered - a.answered);
+  const tests = Object.entries(m.tests ?? {})
+    .map(([n, t]) => ({ testNumber: Number(n), best: t.best, last: t.last ?? null, attempts: t.attempts ?? 0 }))
+    .sort((a, b) => a.testNumber - b.testNumber);
+  return { topics, focus, missed, tests };
 }
 
 export function buildClassReport(
@@ -35,12 +84,14 @@ export function buildClassReport(
   const topicTotals: Record<string, { a: number; c: number }> = {};
   const missTotals: Record<string, number> = {};
   const seenTotals: Record<string, number> = {};
-  const students: ClassStudentRow[] = members.map((m) => {
+  for (const m of members) {
     for (const [cat, v] of Object.entries(m.byCategory ?? {})) {
       topicTotals[cat] = topicTotals[cat] ?? { a: 0, c: 0 };
       topicTotals[cat].a += v.a ?? 0;
       topicTotals[cat].c += v.c ?? 0;
     }
+  }
+  const students: ClassStudentRow[] = members.map((m) => {
     for (const [q, n] of Object.entries(m.missed ?? {})) missTotals[q] = (missTotals[q] ?? 0) + n;
     for (const [q, n] of Object.entries(m.seen ?? {})) seenTotals[q] = (seenTotals[q] ?? 0) + n;
     const tests = Object.entries(m.tests ?? {});
@@ -56,6 +107,7 @@ export function buildClassReport(
       correct: m.correct ?? 0,
       testsTaken: tests.reduce((s, [, t]) => s + (t.attempts ?? 0), 0),
       bestTest: best,
+      detail: studentDetail(m, label, topicTotals, passPct),
     };
   });
 

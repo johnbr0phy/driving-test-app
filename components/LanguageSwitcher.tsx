@@ -15,21 +15,25 @@ import { LANGUAGES, type Language } from "@/i18n";
  * flipping the in-app language. `languages` limits the list to the ones a
  * page is offered in (an exam translated into Spanish only); when the chosen
  * language is not among them the page reads English, so English shows as current.
+ * `current` overrides the shown language on a page whose language is fixed by
+ * its URL (the English and Spanish CDL landings).
  */
 export function LanguageSwitcher({
   onSelect,
   languages,
+  current: currentOverride,
   className = "",
 }: {
   onSelect?: (lang: Language) => void;
   languages?: Language[];
+  current?: Language;
   className?: string;
 }) {
   const { language, setLanguage } = useTranslation();
   const [open, setOpen] = useState(false);
 
   const options = languages ? LANGUAGES.filter((l) => languages.includes(l.code)) : LANGUAGES;
-  const current = options.find((l) => l.code === language) ?? options[0];
+  const current = options.find((l) => l.code === (currentOverride ?? language)) ?? options[0];
 
   const handleSelect = (lang: Language) => {
     setOpen(false);

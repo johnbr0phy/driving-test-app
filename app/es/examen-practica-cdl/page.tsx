@@ -148,11 +148,6 @@ export default function CDLLandingPageEs() {
           <li><Link href="/tests" className="hover:text-brand">Todos los exámenes</Link></li>
           <li aria-hidden="true"><ChevronRight className="h-3 w-3" /></li>
           <li aria-current="page" className="text-gray-700 dark:text-gray-200">Examen de práctica CDL</li>
-          <li className="ml-auto">
-            <Link href="/cdl-practice-test" hrefLang="en" lang="en" className="hover:text-brand underline">
-              English
-            </Link>
-          </li>
         </ol>
       </nav>
 

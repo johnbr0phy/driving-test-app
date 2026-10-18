@@ -2,8 +2,10 @@
 
 // State choice for exam families with state variants (real estate in CA, TX,
 // FL, NY and NJ; life & health and P&C insurance in TX, FL and CA; every
-// other state uses the family's national bank). Same "I'm taking the exam in [State]" dropdown as DMV onboarding, but
-// per exam family and never destructive: each state variant keeps its own
+// other state uses the family's national bank). Same "I'm taking the exam in
+// [State]" sentence as DMV onboarding, but the dropdown lists only states with
+// a variant plus "Other state", so it never implies coverage we don't have.
+// Per exam family and never destructive: each state variant keeps its own
 // progress, and the choice (examStates[familyId]) never touches the DMV state.
 // Until a state is chosen the dashboard shows a prompt card; after that the
 // state is one line in the hero with a Change control.
@@ -12,8 +14,19 @@ import { useRouter } from "next/navigation";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useStore } from "@/store/useStore";
 import { useHydration } from "@/hooks/useHydration";
-import { states } from "@/data/states";
 import { ExamConfig, examFamilyId, getExamById, getExamVariant, getExamVariants } from "@/lib/exams";
+
+/** Stored for any state without its own variant; it stays on the national bank. */
+const OTHER_STATE = "OTHER";
+const OTHER_LABEL = "Other state";
+
+/** The dropdown: states with a variant (A to Z), then "Other state". */
+function stateOptions(familyId: string) {
+  const variants = getExamVariants(familyId)
+    .map((v) => ({ code: v.jurisdiction!.code, name: v.jurisdiction!.name }))
+    .sort((a, b) => a.name.localeCompare(b.name));
+  return [...variants, { code: OTHER_STATE, name: OTHER_LABEL }];
+}
 
 function useExamStateChoice(exam: ExamConfig) {
   const router = useRouter();
@@ -22,7 +35,9 @@ function useExamStateChoice(exam: ExamConfig) {
   const chosen = useStore((state) => state.examStates[familyId]);
   const setExamState = useStore((state) => state.setExamState);
   // On a variant page the page itself is the state; elsewhere the saved choice.
-  const code = exam.jurisdiction?.code ?? chosen;
+  // A state saved before the dropdown narrowed (e.g. "AZ") reads as Other.
+  const saved = exam.jurisdiction?.code ?? chosen;
+  const code = saved && !getExamVariant(familyId, saved) ? OTHER_STATE : saved;
   const choose = (next: string) => {
     setExamState(familyId, next);
     const target = getExamVariant(familyId, next) ?? family;
@@ -31,7 +46,8 @@ function useExamStateChoice(exam: ExamConfig) {
   return { familyId, family, chosen, code, choose };
 }
 
-function StateSelect({ value, onChange, className, placeholder, label }: {
+function StateSelect({ familyId, value, onChange, className, placeholder, label }: {
+  familyId: string;
   value: string | undefined;
   onChange: (code: string) => void;
   className: string;
@@ -45,7 +61,7 @@ function StateSelect({ value, onChange, className, placeholder, label }: {
         {label ?? <SelectValue placeholder={placeholder} />}
       </SelectTrigger>
       <SelectContent>
-        {states.map((s) => (
+        {stateOptions(familyId).map((s) => (
           <SelectItem key={s.code} value={s.code}>
             {s.name}
           </SelectItem>
@@ -68,6 +84,7 @@ export function ExamStatePrompt({ exam }: { exam: ExamConfig }) {
       <div className="flex flex-wrap items-center gap-x-1.5 text-lg font-medium text-gray-800 dark:text-gray-100">
         <span>I&apos;m taking the exam in</span>
         <StateSelect
+          familyId={familyId}
           value={undefined}
           onChange={choose}
           placeholder="choose a state"
@@ -86,7 +103,7 @@ export function ExamStateLine({ exam }: { exam: ExamConfig }) {
   const hydrated = useHydration();
   const { familyId, code, choose } = useExamStateChoice(exam);
   if (!hydrated || getExamVariants(familyId).length === 0 || !code) return null;
-  const name = states.find((s) => s.code === code)?.name;
+  const name = stateOptions(familyId).find((s) => s.code === code)?.name;
   if (!name) return null;
 
   return (
@@ -95,9 +112,10 @@ export function ExamStateLine({ exam }: { exam: ExamConfig }) {
         <span className="font-semibold text-gray-800 dark:text-gray-100">{name}</span>
         {exam.jurisdiction
           ? ` · ${exam.questionsPerTest} questions including ${name} law`
-          : ` · national topics only, ${name} law not covered yet`}
+          : " · national topics only, state law not covered yet"}
       </span>
       <StateSelect
+        familyId={familyId}
         value={code}
         onChange={choose}
         placeholder="Change"

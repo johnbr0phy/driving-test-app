@@ -117,8 +117,8 @@ export default async function Home() {
             Free practice tests that get you to a pass
           </h1>
           <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-8">
-            {examCount} exams in one place: your DMV permit test, the SAT and ACT, nursing and healthcare
-            certifications, CDL, IT certs and more. Every answer explained. No account needed to start.
+            {examCount} exams, from the DMV permit test to the SAT, nursing and IT certs. Every answer
+            explained. No signup.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
             <a
@@ -136,7 +136,7 @@ export default async function Home() {
           </div>
           {totalAnswered !== null && totalAnswered > 0 && (
             <p className="mt-6 text-sm text-gray-500 dark:text-gray-400">
-              {totalAnswered.toLocaleString("en-US")} questions answered on TigerTest in the last 7 days
+              {totalAnswered.toLocaleString("en-US")} questions answered this week
             </p>
           )}
         </div>

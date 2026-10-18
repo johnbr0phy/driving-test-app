@@ -47,7 +47,7 @@ Tennessee's official code is published through LexisNexis (linked from TREC's la
 - Public Chapter 1039 (2026, HB2530), effective July 1, 2026: electronic notices (62-13-104, -112(j)(2), (l)(2), -313(b), -317), office zoning and sign wording removed from 62-13-309(a), (b), broker post-licensing education 4 years (62-13-303(h)), violent offenses added to 62-13-312(b)(12), guilty pleas in 62-13-312(f), reinstatement window in 62-13-319(c). https://publications.tnsosfiles.com/acts/114/pub/pc1039.pdf. Because of it, no item tests office signs, zoning letters or the broker post-licensing deadline; TREC says rule changes to match are coming.
 - Public Chapter 1095 (2026, SB1786): vacation lodging designated agents (62-13-104). https://publications.tnsosfiles.com/acts/114/pub/pc1095.pdf (not tested)
 - TREC Rules, Chapter 1260-01 (Licensing) and 1260-02 (Rules of Conduct), "September, 2025 (Revised)", effective September 23, 2025: https://publications.tnsosfiles.com/rules/1260/1260-01.20250923.pdf, https://publications.tnsosfiles.com/rules/1260/1260-02.20250923.pdf (index https://publications.tnsosfiles.com/rules/1260/1260.htm).
-- Tenn. Code Ann. 66-32-114 (Time-Share Act rescission), 66-5-207 (stigmatized property), 66-26-103 (unregistered instruments), 29-2-101 (statute of frauds): LawServer, same caveat as above.
+- Tenn. Code Ann. 66-1-107 (joint tenancy survivorship only if expressly created, Peebles v. Peebles, 1969), 66-32-114 (Time-Share Act rescission; the 10/15-day periods are restated in TREC Rule 1260-06-.04, amended Nov. 2023), 66-5-207 (stigmatized property), 66-26-103 (unregistered instruments), 29-2-101 (statute of frauds): LawServer, same caveat as above.
 - TREC newsletters (legislative summaries used to find amendments): Spring 2025, Summer 2025, Fall 2025, Summer 2026, https://www.tn.gov/content/dam/tn/commerce/documents/regboards/trec/newsletters/<Season-Year>.pdf
 
 ## Item-to-source map
@@ -57,7 +57,7 @@ Tennessee's official code is published through LexisNexis (linked from TREC's la
 | RETN-TNCOM-002 | Rule 1260-02-.02(8) |
 | RETN-TNCOM-003 | 62-13-313(a)(2) |
 | RETN-TNCOM-004 | 62-13-312(f), as amended by PC 1039 (2026) |
-| RETN-TNLIC-001 | 62-13-303(b)(2) |
+| RETN-TNLIC-001 | 62-13-303(b)(2); Rule 1260-05-.03(3) |
 | RETN-TNLIC-002 | 62-13-303(a)(3)(B); 62-13-303(g) in explanation |
 | RETN-TNLIC-003 | 62-13-303(d), as amended by PC 524 (2025) |
 | RETN-TNLIC-004 | 62-13-112(a), (j), (k), (l) |
@@ -70,7 +70,7 @@ Tennessee's official code is published through LexisNexis (linked from TREC's la
 | RETN-TNADV-007 | Rule 1260-02-.12(3)(f)2; Rule 1260-02-.41(4) |
 | RETN-TNAFF-001 | 62-13-312(b)(11) |
 | RETN-TNAFF-002 | Rule 1260-02-.02(4) |
-| RETN-TNAFF-003 | Rule 1260-02-.02(2) |
+| RETN-TNAFF-003 | Rule 1260-02-.02(2), (3) |
 | RETN-TNAFF-004 | Rule 1260-02-.39 |
 | RETN-TNAFF-005 | Rule 1260-02-.38(1)-(3) |
 | RETN-TNREC-001 | 62-13-312(b)(6); Rule 1260-02-.40; 62-13-321 |
@@ -106,6 +106,9 @@ Tennessee's official code is published through LexisNexis (linked from TREC's la
 | RE-DISC-018 | explanation | 66-5-207 (no cause of action for not disclosing homicide, felony or suicide) |
 | RE-OWN-023 | explanation | 66-26-103 unregistered instruments |
 | RE-FIN-001 | explanation | Deed of trust is the usual Tennessee security instrument |
+| RE-OWN-001 | explanation | Survivorship in a Tennessee joint tenancy only when the deed states it, 66-1-107 |
+| RE-OWN-002 | question, explanation | Stem says "with an express right of survivorship" (66-1-107) |
+| RE-VAL-027 | question | "Salesperson" becomes affiliate broker |
 | RE-FIN-013 | question, option A, explanation | Affiliate broker terms; 62-13-312(b)(11) |
 | RE-PRAC-001 | question, explanation | Affiliate broker terms; unauthorized practice of law, 62-13-312(b)(19) |
 | RE-PRAC-002 | question, options C and D, explanation | Affiliate pays trust money to the principal broker immediately, Rule 1260-02-.09(3), (11) |

@@ -364,7 +364,7 @@
     "state": "NJ",
     "questionId": "LHNJ-NJPRA-010",
     "category": "insuranceRegulation",
-    "question": "A producer offers to donate to a qualified charity whenever a client buys a policy. Under N.J.A.C. 11:17A-2.3(f), this is allowed only if:",
+    "question": "A producer offers to donate to a qualified charity whenever a client buys a policy. Under N.J.A.C. 11:17A-2.3(f), one condition for this to be allowed is that:",
     "optionA": "The client takes the tax deduction",
     "optionB": "Premium and commission are unchanged",
     "optionC": "The donation is paid to the client",
@@ -1736,7 +1736,7 @@
     "optionD": "Require a medical exam first",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "New Jersey bars group health policies from excluding a person or setting rates or terms based on an actual or expected health condition or any genetic characteristic. The ban covers both eligibility and the rates or terms charged.",
+    "explanation": "New Jersey bars group health policies from excluding a person or setting rates or terms based on an actual or expected health condition or any genetic characteristic. It applies to every such policy delivered, issued or renewed in New Jersey.",
     "sourceQuestionId": "LHNJ-NJHLT-005"
   },
   {

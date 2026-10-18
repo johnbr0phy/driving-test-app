@@ -3,7 +3,7 @@
 // every test on the site, FAQ, final call to action.
 
 import Link from "next/link";
-import { BarChart3, Gift, Link2, Lock, MonitorSmartphone, Plus, Smartphone, Users } from "lucide-react";
+import { BarChart3, Gift, Link2, Lock, MonitorSmartphone, Plus, Smartphone } from "lucide-react";
 import { TEST_CATALOG, TEST_GROUPS } from "@/lib/testCatalog";
 import { BrowserPreview, PhonePreview } from "@/components/teach/TeachPreviews";
 import { ClassQuestions } from "@/components/teach/ClassQuestions";
@@ -99,9 +99,6 @@ export function TeachLanding({ signedIn }: { signedIn: boolean }) {
       <div className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-5xl mx-auto px-6 pt-14 pb-20 md:pt-20 md:pb-24 text-center">
-          <p className="inline-flex items-center gap-2 rounded-full border border-brand-border-light bg-white/70 dark:bg-gray-900/70 px-4 py-1.5 text-sm font-medium text-brand-dark mb-6">
-            <Users className="w-4 h-4" aria-hidden="true" /> For teachers
-          </p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-gray-50 mb-6 tracking-tight text-balance">
             Free practice tests for your whole class
           </h1>

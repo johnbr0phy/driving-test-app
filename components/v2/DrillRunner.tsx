@@ -32,7 +32,7 @@ import { useAuth } from "@/contexts/AuthContext";
 import { useGuestPrompt } from "@/hooks/useGuestPrompt";
 import { GuestPromptStep } from "@/components/GuestPromptStep";
 import { v2GuestAnswered } from "@/components/GuestSaveCard";
-import { recordClassAnswerById } from "@/lib/classProgress";
+import { recordClassAnswerById, v2Pick } from "@/lib/classProgress";
 
 /**
  * Phone-first mastery drill: one question, one tap, instant feedback, big
@@ -115,7 +115,7 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
     const ok = isCorrect(question, final);
     setRevealed(true);
     guestPrompt.record(ok);
-    recordClassAnswerById(exam.id, question.id, question.domain, ok);
+    recordClassAnswerById(exam.id, question.id, question.domain, ok, v2Pick(question.format, final));
     answerDrill(key, question.id, ok, drill ? drillStateFor(useV2Store.getState().drills, exam.id, drill, allQuestions) : undefined);
     if (ok) playCorrectSound();
     else {

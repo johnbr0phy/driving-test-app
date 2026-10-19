@@ -11,6 +11,7 @@ import {
   type ClassStudentRow,
 } from "@/lib/classes";
 import { scoreBar, scoreChip, scoreLevel, scoreText, scoreTrack } from "@/components/teach/scoreColors";
+import { topWrongPick, untrackedNote } from "@/components/teach/ClassQuestions";
 
 // One student, opened from the class page's Students table: what they need
 // help with (only judged once they've answered enough), every topic against
@@ -139,16 +140,18 @@ function Body({ student, report }: { student: ClassStudentRow; report: ClassRepo
                   chipLabel="missed"
                   chipColorClass={scoreText(m.missed >= 2 ? "low" : "near")}
                   question={m.q.question}
-                  subtitle={m.q.topic}
+                  subtitle={[m.q.topic, topWrongPick(m.picks)].filter(Boolean).join(" · ")}
                   options={m.q.options}
                   correctAnswer={m.q.answer}
                   revealAnswer
+                  optionPicks={m.picks}
                   renderFooter={() => (
                     <div className="pt-1 px-1 space-y-1.5">
                       <p className="text-xs text-gray-500 dark:text-gray-400">
                         {student.name}: missed {m.missed} of {m.answered} {m.answered === 1 ? "try" : "tries"}
 . Class: {m.q.answered - m.q.missed} of {m.q.answered} right.
                       </p>
+                      {untrackedNote(m.picks, m.missed) && <p className="text-xs text-gray-500 dark:text-gray-400">{untrackedNote(m.picks, m.missed)}</p>}
                       {m.q.explanation && <p className="text-xs text-gray-500 dark:text-gray-400 leading-relaxed">{m.q.explanation}</p>}
                     </div>
                   )}

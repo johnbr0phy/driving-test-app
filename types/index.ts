@@ -326,6 +326,8 @@ export interface Question {
   correctAnswer: string; // "A", "B", "C", or "D"
   correctIndex: number; // 0, 1, 2, or 3
   explanation: string;
+  /** After shuffleQuestionOptions: the bank letter shown at A, B, C, D ("CADB"). */
+  optionOrder?: string;
 }
 
 // User answer types

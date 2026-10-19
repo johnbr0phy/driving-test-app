@@ -20,6 +20,7 @@ const SAMPLE_QUESTIONS: ClassQuestionRow[] = [
     explanation: "Protamine sulfate binds heparin and neutralizes it. Vitamin K reverses warfarin; naloxone and flumazenil reverse opioids and benzodiazepines.",
     answered: 16,
     missed: 9,
+    picks: [6, 0, 2, 1],
   },
   {
     questionId: "sample-2",
@@ -30,6 +31,7 @@ const SAMPLE_QUESTIONS: ClassQuestionRow[] = [
     explanation: "Polyglactin 910 (Vicryl) is absorbed over weeks. Silk, nylon and polypropylene are nonabsorbable.",
     answered: 17,
     missed: 6,
+    picks: [4, 1, 0, 1],
   },
   {
     questionId: "sample-3",
@@ -40,6 +42,7 @@ const SAMPLE_QUESTIONS: ClassQuestionRow[] = [
     explanation: "Moisture wicks microorganisms through the wrap, so a wet pack is treated as contaminated and goes back through processing.",
     answered: 15,
     missed: 4,
+    picks: [1, 0, 3, 0],
   },
 ];
 

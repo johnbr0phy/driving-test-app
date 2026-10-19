@@ -157,7 +157,7 @@ export default function TestPage() {
     setAnswers(updatedAnswers);
     // Save to store
     setAnswer(testId, currentQuestionIndex, answer);
-    recordClassAnswer(DMV_EXAM_ID, currentQuestion, answer === currentQuestion.correctAnswer);
+    recordClassAnswer(DMV_EXAM_ID, currentQuestion, answer === currentQuestion.correctAnswer, answer);
 
     // Auto-advance to next question after brief delay
     setTimeout(() => {

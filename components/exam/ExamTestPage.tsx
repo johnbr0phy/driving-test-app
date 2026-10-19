@@ -92,7 +92,7 @@ export function ExamTestPage({ exam: source }: { exam: ExamConfig }) {
     const updatedAnswers = { ...answers, [currentQuestionIndex]: answer };
     setAnswers(updatedAnswers);
     setAnswer(testId, currentQuestionIndex, answer);
-    recordClassAnswer(exam.id, currentQuestion, answer === currentQuestion.correctAnswer);
+    recordClassAnswer(exam.id, currentQuestion, answer === currentQuestion.correctAnswer, answer);
 
     // Auto-advance; the last answer auto-submits
     setTimeout(() => {

@@ -94,14 +94,34 @@ function enqueue(examId: string, add: (q: { answers: ClassAnswerEvent[]; tests: 
   if (!timer) timer = setTimeout(flushClassProgress, FLUSH_MS);
 }
 
-/** One answered question on an exam; reported to every class for that exam. */
-export function recordClassAnswer(examId: string, question: Pick<Question, "questionId" | "category">, correct: boolean) {
-  recordClassAnswerById(examId, question.questionId, question.category ?? "other", correct);
+const LETTERS = "ABCD";
+
+/**
+ * One answered question on an exam; reported to every class for that exam.
+ * `picked` is the letter as shown; a wrong pick is reported as its option's
+ * position in the bank (questions from before optionOrder existed send none).
+ */
+export function recordClassAnswer(
+  examId: string,
+  question: Pick<Question, "questionId" | "category" | "optionOrder">,
+  correct: boolean,
+  picked?: string,
+) {
+  const bankLetter = picked && question.optionOrder ? question.optionOrder[LETTERS.indexOf(picked)] : undefined;
+  const pick = bankLetter ? LETTERS.indexOf(bankLetter) : -1;
+  recordClassAnswerById(examId, question.questionId, question.category ?? "other", correct, pick >= 0 ? pick : undefined);
+}
+
+/** A v2 answer's pick, for single-choice items only (answers are bank indices). */
+export function v2Pick(format: string | undefined, answer: unknown): number | undefined {
+  return format === "single" && Array.isArray(answer) && typeof answer[0] === "number" ? answer[0] : undefined;
 }
 
 /** Same, for banks whose questions are not v1 Questions (v2: id and domain). */
-export function recordClassAnswerById(examId: string, questionId: string, category: string, correct: boolean) {
-  enqueue(examId, (q) => q.answers.push({ q: questionId, c: category || "other", ok: correct }));
+export function recordClassAnswerById(examId: string, questionId: string, category: string, correct: boolean, pick?: number) {
+  enqueue(examId, (q) =>
+    q.answers.push({ q: questionId, c: category || "other", ok: correct, ...(!correct && pick !== undefined ? { p: pick } : {}) }),
+  );
 }
 
 /** A finished practice test. */

@@ -126,12 +126,12 @@ function TrainingPageContent() {
   // Redirect to onboarding if no state selected, or gate locked sets
   useEffect(() => {
     if (hydrated && !selectedState) {
-      router.push("/onboarding/select-state");
+      router.push("/dmv/dashboard");
       return;
     }
     if (!hydrated || setNumber === null) return;
     if (!isTrainingSetUnlocked(setNumber)) {
-      router.push("/dashboard");
+      router.push("/dmv/dashboard");
       return;
     }
   }, [hydrated, selectedState, setNumber, isTrainingSetUnlocked, router]);
@@ -293,7 +293,7 @@ function TrainingPageContent() {
             </p>
             <div className="flex flex-col gap-3">
               <Button asChild className="w-full bg-black dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 text-lg py-6">
-                <Link href="/dashboard">
+                <Link href="/dmv/dashboard">
                   {t("trainingPage.chooseTrainingSet")}
                 </Link>
               </Button>
@@ -316,7 +316,7 @@ function TrainingPageContent() {
             {/* Back button */}
             <div className="relative max-w-6xl mx-auto px-4 pt-4">
               <Button asChild variant="ghost" className="text-gray-400 hover:text-white hover:bg-white/10 -ml-2">
-                <Link href="/dashboard">
+                <Link href="/dmv/dashboard">
                   <ArrowLeft className="h-4 w-4 mr-2" />
                   {t("common.back")}
                 </Link>
@@ -444,7 +444,7 @@ function TrainingPageContent() {
       )}
 
       <TestPageHeader
-        backHref="/dashboard"
+        backHref="/dmv/dashboard"
         right={
           isPremium ? (
             <Link
@@ -482,7 +482,7 @@ function TrainingPageContent() {
           <Card className="w-full">
             <CardContent className="p-8 text-center">
               <p className="text-gray-600 dark:text-gray-300 mb-4">{t("trainingPage.noMoreQuestions")}</p>
-              <Button className="bg-black dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200" onClick={() => router.push("/dashboard")}>
+              <Button className="bg-black dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200" onClick={() => router.push("/dmv/dashboard")}>
                 {t("common.back")}
               </Button>
             </CardContent>

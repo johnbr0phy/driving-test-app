@@ -277,7 +277,7 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
 
     const lockedDrillCount = (id: string) => premiumV2.find((e) => e.id === id)!.premium!.lockedDrills.length;
 
-    const dmvLine = `${link("/dashboard", "DMV permit test")}: Safety &amp; Emergencies and State Laws, practice tests C and D, and your stats page`;
+    const dmvLine = `${link("/dmv/dashboard", "DMV permit test")}: Safety &amp; Emergencies and State Laws, practice tests C and D, and your stats page`;
     // The exam they bought from goes first, then the other v2 exams, then the DMV.
     const v2Lines = [...premiumV2]
       .sort((a, b) => Number(b.id === v.id) - Number(a.id === v.id))

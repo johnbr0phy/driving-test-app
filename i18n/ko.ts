@@ -18,7 +18,7 @@ export const ko: TranslationKeys = {
     unlockWithPremium: "프리미엄으로 잠금 해제",
     goToDashboard: "대시보드로 가기",
     startPracticing: "연습 시작하기",
-    tryItFirst: "먼저 체험해 보기",
+    change: "변경",
     createAccount: "계정 만들기",
     maybeLater: "나중에 하기",
     continueWithGoogle: "Google로 계속하기",

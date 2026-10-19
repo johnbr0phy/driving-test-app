@@ -369,7 +369,7 @@ export default async function VietnameseStateDMVPage({ params }: PageProps) {
               size="lg"
               className="text-lg px-8 py-6 bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 font-bold rounded-xl"
             >
-            <Link href={`/signup?state=${state.code}`}>
+            <Link href={`/dmv/dashboard?state=${state.code}`}>
               Bắt Đầu Luyện Thi Miễn Phí
             </Link>
           </Button>
@@ -580,7 +580,7 @@ export default async function VietnameseStateDMVPage({ params }: PageProps) {
               size="lg"
               className="text-lg px-8 py-6 bg-white dark:bg-gray-900 text-brand-dark hover:bg-gray-100 dark:hover:bg-gray-800 font-bold rounded-xl"
             >
-            <Link href={`/signup?state=${state.code}`}>
+            <Link href={`/dmv/dashboard?state=${state.code}`}>
               Bắt Đầu Luyện Thi Ngay — Miễn Phí
             </Link>
           </Button>
@@ -658,7 +658,7 @@ export default async function VietnameseStateDMVPage({ params }: PageProps) {
               size="lg"
               className="text-lg px-8 py-6 bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 font-bold rounded-xl"
             >
-            <Link href={`/signup?state=${state.code}`}>
+            <Link href={`/dmv/dashboard?state=${state.code}`}>
               Bắt Đầu Luyện Thi Miễn Phí
             </Link>
           </Button>

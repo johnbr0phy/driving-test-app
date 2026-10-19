@@ -10,13 +10,6 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { states } from "@/data/states";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import { useStore } from "@/store/useStore";
 import { trackFunnelStep } from "@/lib/funnel";
 import { WebViewGoogleWarning } from "@/components/WebViewGoogleWarning";
@@ -81,33 +74,20 @@ function SignupPageContent() {
   // Exam pages are English-only, so their copy is not in i18n
   const redirectExamName = examNameForPath(redirectTo);
 
-  const [selectedState, setSelectedState] = useState<string | null>(preselectedState);
-
-  // If guest already has a state selected, or state was provided via URL, skip step 1
+  // The state is chosen on the DMV dashboard, not here; an old ?state= link
+  // still sets it for a new account.
+  const selectedState = preselectedState;
   const guestHasState = isGuest && storeSelectedState;
-  const hasPreselectedState = !!preselectedState;
-  // If arriving from a school page, jump straight to credentials
-  const [step, setStep] = useState<1 | 2>(guestHasState || hasPreselectedState || !!schoolSlug || !!redirectTo ? 2 : 1);
-
-  const handleStateSelect = () => {
-    if (!selectedState) {
-      setError(t("signup.pleaseSelectLocation"));
-      return;
-    }
-    setError("");
-    // Move to step 2 (credentials)
-    setStep(2);
-  };
 
   /** After any successful auth, optionally enroll in a school then redirect. */
   const handlePostSignup = async (uid: string, userEmail: string) => {
     if (schoolSlug) {
       await enrollInSchool(schoolSlug, uid, userEmail);
-      router.push(`/dashboard?school_joined=${encodeURIComponent(schoolSlug)}`);
+      router.push(`/dmv/dashboard?school_joined=${encodeURIComponent(schoolSlug)}`);
     } else if (redirectTo) {
       router.push(redirectTo);
     } else {
-      router.push("/dashboard");
+      router.push("/dmv/dashboard");
     }
   };
 
@@ -168,12 +148,6 @@ function SignupPageContent() {
   const handleGoogleSignIn = async () => {
     // For guests, use existing state; for preselected from URL or manual selection
     const stateToUse = guestHasState ? storeSelectedState : selectedState;
-    // When arriving via a school link or redirect we don't need a state choice up front
-    if (!stateToUse && !schoolSlug && !redirectTo) {
-      setError(t("signup.pleaseSelectLocation"));
-      return;
-    }
-
     setError("");
     setLoading(true);
 
@@ -276,53 +250,6 @@ function SignupPageContent() {
       🏫 You&apos;re joining a school on TigerTest. Create a free account to get started.
     </div>
   ) : null;
-
-  if (step === 1) {
-    return (
-      <div className="bg-white dark:bg-gray-900 relative min-h-[80vh] flex items-center justify-center px-4">
-        <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-light to-white dark:to-transparent pointer-events-none" />
-        <div className="relative text-center space-y-8">
-          {error && (
-            <div id="auth-error" role="alert" className="bg-red-50 dark:bg-red-950 border border-red-200 dark:border-red-800 text-red-700 dark:text-red-300 px-4 py-3 rounded mb-4">
-              {error}
-            </div>
-          )}
-
-          <div className="flex flex-wrap items-center justify-center gap-2 text-2xl md:text-3xl font-medium text-gray-800 dark:text-gray-100">
-            <span>{t("signup.iNeedToPass")}</span>
-            <Select onValueChange={setSelectedState} value={selectedState || undefined}>
-              <SelectTrigger aria-label={t("signup.selectLocation")} className="w-auto inline-flex text-2xl md:text-3xl font-semibold text-brand-dark border-none shadow-none focus:ring-0 focus:ring-offset-0 px-1 underline decoration-brand-border decoration-2 underline-offset-4 hover:decoration-brand h-auto">
-                <SelectValue placeholder={t("signup.selectLocation")} />
-              </SelectTrigger>
-              <SelectContent>
-                {states.map((state) => (
-                  <SelectItem key={state.code} value={state.code}>
-                    {state.name}
-                  </SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
-            <span>{t("signup.drivingTest")}</span>
-          </div>
-
-          <Button
-            onClick={handleStateSelect}
-            disabled={!selectedState || loading}
-            className="bg-black dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 px-8 py-3 text-lg"
-          >
-            {t("common.continue")}
-          </Button>
-
-          <div className="text-center text-sm text-gray-600 dark:text-gray-300">
-            {t("common.alreadyHaveAccount")}{" "}
-            <Link href={redirectTo ? `/login?redirect=${encodeURIComponent(redirectTo)}` : "/login"} className="text-brand-dark hover:underline font-semibold">
-              {t("common.logIn")}
-            </Link>
-          </div>
-        </div>
-      </div>
-    );
-  }
 
   return (
     <div className="bg-white dark:bg-gray-900 relative flex items-center justify-center py-12 px-4 min-h-[calc(100vh-200px)]">
@@ -435,7 +362,7 @@ function SignupPageContent() {
                 <div className="flex gap-3">
                   <Button
                     type="button"
-                    onClick={() => guestHasState ? router.push("/dashboard") : setStep(1)}
+                    onClick={() => guestHasState ? router.push("/dmv/dashboard") : router.back()}
                     disabled={loading}
                     className="w-full bg-white dark:bg-gray-900 text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 border-2 border-gray-300 dark:border-gray-700"
                   >

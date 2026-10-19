@@ -17,6 +17,7 @@ import { states } from "@/data/states";
 import { AttemptChart, sessionsToAttemptPoints } from "@/components/AttemptChart";
 import { computeMissSummary, isDrillFree } from "@/lib/missedQuestions";
 import { ProgressCard, Collapse } from "@/components/dashboard/ProgressCard";
+import { DmvStatePrompt, DmvStateLine } from "@/components/dashboard/DmvStatePicker";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { trackBeginCheckout, trackPaywallDismissed, trackPaywallHit, trackPurchase, trackViewItem } from "@/lib/analytics";
 import { ClassBanner } from "@/components/exam/ClassBanner";
@@ -25,7 +26,7 @@ function DashboardContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const hydrated = useHydration();
-  const { user } = useAuth();
+  const { user, loading: authLoading } = useAuth();
   const { t, language } = useTranslation();
   const isGuest = useStore((state) => state.isGuest);
   const selectedState = useStore((state) => state.selectedState);
@@ -81,17 +82,28 @@ function DashboardContent() {
   // Get state name from code
   const stateName = states.find((s) => s.code === selectedState)?.name || selectedState;
 
-  // Redirect to onboarding if no state selected. For logged-in users, wait
-  // for Firestore to load first — otherwise a fresh browsing context (e.g.
-  // clicking the welcome email on a different device) bounces them back to
-  // onboarding while their actual state is still in flight from Firestore.
+  // Anyone who reaches the dashboard without an account is a guest, like the
+  // exam dashboards: that is what shows "Sign up to save" and protects their
+  // progress if they later sign in to an existing account.
+  const startGuestSession = useStore((state) => state.startGuestSession);
   useEffect(() => {
-    if (!hydrated) return;
-    if (user && !firestoreLoaded) return;
-    if (!selectedState) {
-      router.push("/onboarding/select-state");
-    }
-  }, [hydrated, firestoreLoaded, user, selectedState, router]);
+    if (hydrated && !authLoading && !user && !isGuest) startGuestSession();
+  }, [hydrated, authLoading, user, isGuest, startGuestSession]);
+
+  // A state landing page links here with ?state=OH. Taken only while no state
+  // is chosen: switching states deletes progress, which a link never should.
+  const stateParam = searchParams.get("state");
+  const setSelectedState = useStore((state) => state.setSelectedState);
+  useEffect(() => {
+    if (!hydrated || selectedState || (user && !firestoreLoaded)) return;
+    if (stateParam && states.some((s) => s.code === stateParam)) setSelectedState(stateParam);
+  }, [hydrated, selectedState, user, firestoreLoaded, stateParam, setSelectedState]);
+
+  // No state yet: the state picker sits at the top and the steps wait under
+  // it. A signed-in account on a new device has its state in flight from
+  // Firestore, so the picker only shows once that load is done.
+  const noState = hydrated && !selectedState;
+  const needsState = noState && (!user || firestoreLoaded);
 
   // The DMV is the exam this person's emails should be about, until they
   // open another exam's dashboard.
@@ -149,14 +161,14 @@ function DashboardContent() {
               stripePaymentId: sessionId,
             });
             setShowPurchaseSuccess(true);
-            router.replace("/dashboard");
+            router.replace("/dmv/dashboard");
           }
         })
         .catch((err) => console.error("Failed to verify purchase:", err));
     }
 
     if (canceled === "true") {
-      router.replace("/dashboard");
+      router.replace("/dmv/dashboard");
     }
   }, [searchParams, user?.uid, setPremiumStatus, router]);
 
@@ -337,7 +349,7 @@ function DashboardContent() {
                 <button
                   onClick={() => {
                     setShowSchoolJoined(false);
-                    router.replace("/dashboard");
+                    router.replace("/dmv/dashboard");
                   }}
                   className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300"
                 >
@@ -350,8 +362,10 @@ function DashboardContent() {
 
         <ClassBanner examId="dmv" className="mb-4" />
 
+        {needsState && <DmvStatePrompt />}
+
         {/* Sign-up prompt for guests */}
-        {isGuest && (
+        {isGuest && selectedState && (
           <GuestSaveCard
             className="mb-4"
             signupHref="/signup"
@@ -382,10 +396,14 @@ function DashboardContent() {
               <div className="text-xs text-gray-500 dark:text-gray-400">{t("dashboard.stampComplete").toLowerCase()}</div>
             </div>
           </div>
+          <DmvStateLine />
         </div>
 
         {/* Interleaved Training + Tests */}
-        <div className="mb-6 space-y-2">
+        <div
+          className={`mb-6 space-y-2 ${noState ? "opacity-50 pointer-events-none select-none" : ""}`}
+          aria-hidden={noState || undefined}
+        >
           {[1, 2, 3, 4].map((id) => {
             const trainingProgress = hydrated ? getTrainingSetProgress(id) : { correct: 0, total: 50, complete: false };
             const trainingComplete = trainingProgress.complete;

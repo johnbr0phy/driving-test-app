@@ -18,7 +18,7 @@ export const es: TranslationKeys = {
     unlockWithPremium: "Desbloquear con Premium",
     goToDashboard: "Ir al panel",
     startPracticing: "Empezar a practicar",
-    tryItFirst: "Pruébalo primero",
+    change: "Cambiar",
     createAccount: "Crear cuenta",
     maybeLater: "Quizás más tarde",
     continueWithGoogle: "Continuar con Google",

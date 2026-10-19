@@ -39,7 +39,7 @@ const dmv: TestCatalogEntry = {
   org: "All 50 states + DC",
   blurb: "State-specific permit and driver's license knowledge tests. Signs, rules of the road, safety and your state's laws.",
   href: "/dmv-practice-test",
-  dashboardHref: "/dashboard",
+  dashboardHref: "/dmv/dashboard",
   questions: 200,
   icon: "car",
   // Tests 1-2 and training sets 1-2 are free; 3-4 need the one-time premium

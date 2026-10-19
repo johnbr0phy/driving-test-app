@@ -134,7 +134,7 @@ function StatsContent() {
   // Redirect to onboarding if no state selected
   useEffect(() => {
     if (hydrated && !selectedState) {
-      router.push("/onboarding/select-state");
+      router.push("/dmv/dashboard");
     }
   }, [hydrated, selectedState, router]);
 

@@ -50,9 +50,8 @@ function LoginPageContent() {
   // Route signed-in users onward. This is what completes the mobile
   // signInWithRedirect flow: the page reloads after the Google round trip
   // with no click handler in flight, so navigation has to happen here.
-  // Don't decide between dashboard and onboarding until Firestore has
-  // loaded — routing on a not-yet-loaded store briefly flashes the state
-  // selector for users who already have a state.
+  // Wait for Firestore to load: the dashboard shows its state picker while
+  // no state is known, which would flash for users who already have one.
   useEffect(() => {
     if (authLoading || !user) return;
     if (redirectTo) {
@@ -60,8 +59,7 @@ function LoginPageContent() {
       return;
     }
     if (!firestoreLoaded) return;
-    const hasState = useStore.getState().selectedState;
-    router.push(hasState ? "/dashboard" : "/onboarding/select-state");
+    router.push("/dmv/dashboard");
   }, [authLoading, user, redirectTo, firestoreLoaded, router]);
 
   // If sign-in ends without a user (e.g. cancelling the guest-conflict

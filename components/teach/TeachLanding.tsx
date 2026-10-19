@@ -202,7 +202,7 @@ export function TeachLanding({ signedIn }: { signedIn: boolean }) {
         <div className="max-w-2xl mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4">We&apos;re building this for instructors</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
-            A surgical tech program in Mississippi posted TigerTest as a Canvas assignment, and seventeen students were practicing within seventeen minutes. We&apos;d love to work with you too. Tell us about your class, what you teach and what would help, and we&apos;ll build it with you.
+            We want to work with teachers to make TigerTest great for your class. Get in touch and tell us what you teach and what would help, and we&apos;ll build it with you.
           </p>
           <a
             href="https://johnbrophy.net/#contact"

@@ -12,7 +12,7 @@ const MAX_TESTS = 5;
 
 function validAnswer(a: unknown): a is ClassAnswerEvent {
   const x = a as ClassAnswerEvent;
-  return !!x && typeof x.ok === "boolean" && /^[A-Za-z0-9_-]{1,40}$/.test(String(x.q)) && /^[A-Za-z0-9_]{1,40}$/.test(String(x.c));
+  return !!x && typeof x.ok === "boolean" && /^[A-Za-z0-9_-]{1,64}$/.test(String(x.q)) && /^[A-Za-z0-9_]{1,40}$/.test(String(x.c));
 }
 
 function validTest(t: unknown): t is ClassTestEvent {

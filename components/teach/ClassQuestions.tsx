@@ -60,7 +60,7 @@ export function ClassQuestions({ questions }: { questions: ClassQuestionRow[] })
               subtitle={q.topic}
               options={q.options}
               correctAnswer={q.answer}
-              initialAnswer={q.answer}
+              revealAnswer
               renderFooter={() => (
                 <div className="pt-1 px-1 space-y-1.5">
                   <div className="flex items-center gap-4 text-xs text-gray-500 dark:text-gray-400">

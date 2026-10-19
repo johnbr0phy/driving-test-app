@@ -123,16 +123,11 @@ export function Header() {
                 </Link>
               </>
             ) : dashboardHasSaveCard && guest ? null : isGuest && !isOnboarding ? (
-              <>
-                <Link href="/login" className="hidden sm:inline text-sm font-semibold text-gray-700 dark:text-gray-200 hover:underline">
-                  {t("common.signIn")}
+              <Button asChild variant="outline" className="text-gray-700 dark:text-gray-200 border-gray-300 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800 font-semibold">
+                <Link href="/signup">
+                  {t("common.signUpToSave")}
                 </Link>
-                <Button asChild variant="outline" className="text-gray-700 dark:text-gray-200 border-gray-300 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800 font-semibold">
-                  <Link href="/signup">
-                    {t("common.signUpToSave")}
-                  </Link>
-                </Button>
-              </>
+              </Button>
             ) : !(guest && isOnboarding) ? (
               <Button asChild variant="outline" className="text-gray-700 dark:text-gray-200 border-gray-300 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800">
                 <Link href="/login">{t("common.signIn")}</Link>

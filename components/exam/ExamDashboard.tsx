@@ -21,6 +21,7 @@ import { computeMissSummary } from "@/lib/missedQuestions";
 import { ExamConfig, TrainingPart, examFamilyId, examLandingPath, getExamById, examTrainingParts, getExamVariant, trainingPartName, trainingPartOf } from "@/lib/exams";
 import { ExamStateLine, ExamStatePrompt } from "@/components/exam/ExamStatePicker";
 import { ClassBanner } from "@/components/exam/ClassBanner";
+import { ClassMissRecovery } from "@/components/exam/ClassMissRecovery";
 import { TeachNudge } from "@/components/TeachNudge";
 import { getTigerAsset } from "@/lib/tigerAssets";
 import { SuperAmazingCard } from "@/components/SuperAmazingCard";
@@ -157,6 +158,7 @@ export function ExamDashboard({ exam: source }: { exam: ExamConfig }) {
         )}
 
         <ClassBanner examId={exam.id} className="mb-4" />
+        <ClassMissRecovery examId={exam.id} />
 
         <ExamStatePrompt exam={exam} />
 

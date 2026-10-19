@@ -26,11 +26,13 @@ import { auth } from "@/lib/firebase";
 import { trackBeginCheckout, trackStatsEntry } from "@/lib/analytics";
 import { DMV_EXAM_ID } from "@/lib/classes";
 import { recordClassAnswer } from "@/lib/classProgress";
+import { useClassMissRecovery } from "@/components/exam/ClassMissRecovery";
 
 function TrainingPageContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const hydrated = useHydration();
+  useClassMissRecovery(DMV_EXAM_ID);
   const { playCorrectSound, playIncorrectSound } = useSound();
   const { t, language } = useTranslation();
 

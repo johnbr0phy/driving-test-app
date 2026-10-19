@@ -1,5 +1,5 @@
 import type { Question } from "@/types";
-import type { ClassAnswerEvent, ClassPublicInfo, ClassTestEvent } from "@/lib/classes";
+import type { ClassAnswerEvent, ClassHistoryAnswer, ClassPublicInfo, ClassTestEvent } from "@/lib/classes";
 
 // The student side of instructor classes (lib/classes.ts). The classes this
 // browser joined live in localStorage; practice on a class's exam is queued
@@ -142,5 +142,44 @@ export function flushClassProgress() {
       body: JSON.stringify({ memberId: q.memberId, answers: q.answers.slice(0, 200), tests: q.tests }),
       keepalive: true,
     }).catch(() => {});
+  }
+}
+
+// ─── One-time miss recovery ─────────────────────────────────────────────────
+
+const RECOVERED_KEY = "tigertest-classes-recovered";
+
+/**
+ * Send this browser's answer history for an exam once per class, so the
+ * class page gets back the per-question misses that were wiped before the
+ * Oct 19 2026 fix. The server keeps whichever count is higher, so a repeat
+ * never double counts.
+ */
+export function recoverClassMisses(examId: string, history: ClassHistoryAnswer[]) {
+  if (typeof window === "undefined" || !history.length) return;
+  let done: string[] = [];
+  try {
+    done = JSON.parse(localStorage.getItem(RECOVERED_KEY) ?? "[]");
+    if (!Array.isArray(done)) done = [];
+  } catch {
+    done = [];
+  }
+  for (const m of membershipsForExam(examId)) {
+    if (done.includes(m.code)) continue;
+    void fetch(`/api/classes/${m.code}/recover`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ memberId: m.memberId, answers: history.slice(-3000) }),
+    })
+      .then((res) => {
+        if (!res.ok) return;
+        done.push(m.code);
+        try {
+          localStorage.setItem(RECOVERED_KEY, JSON.stringify(done));
+        } catch {
+          // Storage blocked: it runs again next visit, which is harmless.
+        }
+      })
+      .catch(() => {});
   }
 }

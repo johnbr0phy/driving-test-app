@@ -104,7 +104,7 @@ Landed on: <a href="https://tigertest.io${esc(a.landing)}">${esc(a.landing)}</a>
 ${
   cls
     ? `<p>It is a class join link.<br>
-Class: ${esc(cls.name || cls.code)} (${esc(cls.code)})<br>
+Class: <a href="https://tigertest.io/teach/classes/${esc(cls.code)}">${esc(cls.name || cls.code)}</a> (${esc(cls.code)})<br>
 Teacher: ${esc(cls.teacherName || 'not given')}<br>
 School: ${esc(cls.school || 'not given')}</p>
 `

@@ -840,9 +840,10 @@ export const es: TranslationKeys = {
 
   // Onboarding
   onboarding: {
-    iNeedToPass: "Necesito aprobar el examen de",
-    selectLocation: "seleccionar ubicación",
-    drivingTest: "de manejo.",
+    takingTestIn: "Voy a tomar el examen de manejo en",
+    chooseState: "elige un estado",
+    takingTestInSuffix: "",
+    stateNote: "Cada estado tiene sus propias preguntas, tomadas de su manual del conductor.",
     letsGo: "¡Vamos!",
   },
 

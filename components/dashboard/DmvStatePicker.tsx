@@ -2,8 +2,9 @@
 
 // The DMV state choice, on the dashboard itself (it used to be its own
 // onboarding page and the first step of signup). Same shape as the exam
-// families' picker (components/exam/ExamStatePicker.tsx): a prompt card at the
-// top until a state is chosen, then one line in the hero with a Change control.
+// families' picker (components/exam/ExamStatePicker.tsx), down to the card's
+// classes: a prompt card at the top until a state is chosen, then one line in
+// the hero with a Change control.
 // Unlike an exam family, switching DMV states deletes the current state's
 // progress (setSelectedState), so Change asks first when there is any.
 
@@ -34,15 +35,15 @@ export function DmvStatePrompt() {
   if (selectedState) return null;
 
   return (
-    <div className="rounded-xl bg-white dark:bg-gray-900 border-2 border-brand-border-light p-5 mb-6 text-center">
-      <div className="flex flex-wrap items-center justify-center gap-x-1.5 text-xl md:text-2xl font-medium text-gray-800 dark:text-gray-100">
-        <span>{t("onboarding.iNeedToPass")}</span>
+    <div className="rounded-xl bg-white dark:bg-gray-900 border border-brand-border-light p-4 mb-4">
+      <div className="flex flex-wrap items-center gap-x-1.5 text-lg font-medium text-gray-800 dark:text-gray-100">
+        {t("onboarding.takingTestIn") && <span>{t("onboarding.takingTestIn")}</span>}
         <Select onValueChange={choose}>
           <SelectTrigger
             aria-label={t("signup.selectLocation")}
-            className="w-auto inline-flex text-xl md:text-2xl font-semibold text-brand-dark border-none shadow-none focus:ring-0 focus:ring-offset-0 px-1 underline decoration-brand-border decoration-2 underline-offset-4 hover:decoration-brand h-auto"
+            className="w-auto inline-flex text-lg font-semibold text-brand-dark border-none shadow-none focus:ring-0 focus:ring-offset-0 px-1 underline decoration-brand-border decoration-2 underline-offset-4 hover:decoration-brand h-auto"
           >
-            <SelectValue placeholder={t("onboarding.selectLocation")} />
+            <SelectValue placeholder={t("onboarding.chooseState")} />
           </SelectTrigger>
           <SelectContent>
             {states.map((s) => (
@@ -52,8 +53,9 @@ export function DmvStatePrompt() {
             ))}
           </SelectContent>
         </Select>
-        <span>{t("onboarding.drivingTest")}</span>
+        {t("onboarding.takingTestInSuffix") && <span>{t("onboarding.takingTestInSuffix")}</span>}
       </div>
+      <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">{t("onboarding.stateNote")}</p>
     </div>
   );
 }

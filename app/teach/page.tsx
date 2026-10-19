@@ -2,18 +2,23 @@
 
 // /teach: the instructor landing, or (signed in with classes) your classes.
 
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 import Link from "next/link";
 import { ChevronRight, Plus, Users } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 import { teachFetch } from "@/lib/teachClient";
 import { TeachLanding } from "@/components/teach/TeachLanding";
-import { markTeacher } from "@/components/TeachLink";
+import { markTeacher, teachesHint } from "@/components/TeachLink";
 import type { ClassSummary } from "@/lib/classes";
 
 export default function TeachPage() {
-  const { user } = useAuth();
+  const { user, loading } = useAuth();
   const [classes, setClasses] = useState<ClassSummary[] | null>(null);
+  // Set before first paint, so a teacher opening /teach never sees the landing
+  // flash up while sign-in settles on a fresh load (the server render is
+  // always the landing, for crawlers and signed-out visitors).
+  const [deviceTeaches, setDeviceTeaches] = useState(false);
+  useLayoutEffect(() => setDeviceTeaches(!!teachesHint()), []);
 
   useEffect(() => {
     if (!user) {
@@ -27,6 +32,11 @@ export default function TeachPage() {
       })
       .catch(() => setClasses([]));
   }, [user]);
+
+  // Hold an empty page instead of the landing while we find out, unless this
+  // device already knows the account has no classes.
+  const waiting = user ? classes === null && teachesHint(user.uid) !== false : loading && deviceTeaches;
+  if (waiting) return <div className="flex-1 bg-gray-50 dark:bg-gray-950" />;
 
   if (!user || !classes?.length) return <TeachLanding signedIn={!!user} />;
 

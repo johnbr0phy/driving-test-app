@@ -27,6 +27,7 @@ import { hasDrillProgress, isDrillLocked, isTestLocked, otherPremiumExams } from
 import { useV2Paywall, V2Paywall } from "./V2Paywall";
 import { SuperAmazingCard } from "@/components/SuperAmazingCard";
 import { ClassBanner } from "@/components/exam/ClassBanner";
+import { TeachNudge } from "@/components/TeachNudge";
 
 function heroTitle(done: number, total: number, completedTitle = "You're ready"): string {
   if (done === 0) return `Complete all ${total} steps`;
@@ -201,6 +202,7 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
               </div>
               <GoalStrip exam={exam} goal={goal} best={bestOverall} onEdit={() => setEditingGoal(true)} />
               {exam.copy.progressNote && <p className="mt-3 text-xs text-gray-600 dark:text-gray-300">{exam.copy.progressNote}</p>}
+              <TeachNudge dashboardKey={`v2:${exam.id}`} examId={exam.id} done={doneSteps} />
             </div>
           )}
 

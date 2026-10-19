@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
+import { ThemedScreenshot } from "@/components/ThemedScreenshot";
 import { Button } from "@/components/ui/button";
 import { useAuth } from "@/contexts/AuthContext";
 import { useStore } from "@/store/useStore";
@@ -112,7 +112,7 @@ export function ExamLandingHero({
       <div className="mt-16 flex flex-col md:flex-row items-center justify-center gap-8">
         <div className="relative">
           <div className="rounded-2xl shadow-2xl overflow-hidden border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900">
-            <Image
+            <ThemedScreenshot
               src={shots.mobile}
               alt={copy.mobileAlt(shortName)}
               width={384}
@@ -125,7 +125,7 @@ export function ExamLandingHero({
 
         <div className="relative">
           <div className="rounded-2xl shadow-2xl overflow-hidden border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900">
-            <Image
+            <ThemedScreenshot
               src={shots.desktop}
               alt={copy.desktopAlt(shortName)}
               width={1215}

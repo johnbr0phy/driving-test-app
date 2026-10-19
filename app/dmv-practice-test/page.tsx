@@ -299,7 +299,14 @@ export default function DmvLandingPage() {
             alt="Reddit"
             width={72}
             height={24}
-            className="h-[55px] w-auto inline-block"
+            className="h-[55px] w-auto inline-block dark:hidden"
+          />
+          <Image
+            src="/reddit-dark.png"
+            alt="Reddit"
+            width={72}
+            height={24}
+            className="h-[55px] w-auto hidden dark:inline-block"
           />
         </p>
 

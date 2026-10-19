@@ -321,6 +321,8 @@ export const useStore = create<AppState>()(
       markExamStarted: (examId: string) => {
         if (get().startedExams.includes(examId)) return;
         set({ startedExams: [...get().startedExams, examId] });
+        // Synced so the settings list of your tests matches on every device.
+        get().saveToFirestore();
       },
 
       setEmailConsent: (consent: boolean) => {
@@ -906,6 +908,9 @@ export const useStore = create<AppState>()(
               primaryExam: typeof data.primaryExam === 'string' ? data.primaryExam : get().primaryExam,
               // Account choices win; a guest's choice fills only families the account has not set.
               examStates: { ...get().examStates, ...(data.examStates && typeof data.examStates === 'object' ? data.examStates : {}) },
+              // The account's list wins so a test deleted on one device stays gone;
+              // accounts saved before the field existed keep this device's list.
+              startedExams: Array.isArray(data.startedExams) ? data.startedExams.filter((id: unknown) => typeof id === 'string') : get().startedExams,
               superAmazing: {
                 enabled: data.superAmazing?.enabled === true,
                 firstEnabledAt: data.superAmazing?.firstEnabledAt || null,
@@ -962,7 +967,7 @@ export const useStore = create<AppState>()(
       },
 
       saveToFirestore: async () => {
-        const { userId, isGuest, selectedState, currentTests, completedTests, testAttempts, training, trainingSets, trainingAnswerHistory, activeDates, photoURL, language, emailConsent, superAmazing, superAmazingUnlockedAt, superAmazingUnlocks, primaryExam, examStates } = get();
+        const { userId, isGuest, selectedState, currentTests, completedTests, testAttempts, training, trainingSets, trainingAnswerHistory, activeDates, photoURL, language, emailConsent, superAmazing, superAmazingUnlockedAt, superAmazingUnlocks, primaryExam, examStates, startedExams } = get();
         if (!userId || isGuest) return; // Don't save if no user is logged in or guest mode
         // Never write an account this store has not loaded: it would replace
         // the saved progress with whatever this browser holds.
@@ -1042,6 +1047,7 @@ export const useStore = create<AppState>()(
             emailConsent,
             ...(primaryExam ? { primaryExam } : {}),
             examStates,
+            startedExams,
             currentTests: currentTestsForFirestore,
             completedTests: completedTests.map(test => ({
               ...test,

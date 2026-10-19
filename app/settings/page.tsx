@@ -25,6 +25,7 @@ import { useStartedTests } from "@/hooks/useStartedTests";
 import { useV2Store } from "@/store/useV2Store";
 import { EXAMS_V2 } from "@/lib/v2/registry";
 import { deleteV2Exam } from "@/lib/v2/sync";
+import { V2Sync } from "@/components/v2/V2Sync";
 import { TestIcon } from "@/components/TestIcon";
 import { hasTigerSet } from "@/lib/tigerAssets";
 import { ThemeSegmentedControl } from "@/components/ThemeToggle";
@@ -149,6 +150,9 @@ export default function SettingsPage() {
 
   return (
     <div className="flex-1 bg-white dark:bg-gray-900">
+      {/* v2 progress (SAT, ACT...) otherwise loads only on v2 pages, so this
+          device's list would miss tests started on another one. */}
+      <V2Sync />
       <div className="relative">
         <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative container mx-auto px-4 py-8 max-w-6xl">

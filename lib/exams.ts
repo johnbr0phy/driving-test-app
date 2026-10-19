@@ -185,7 +185,7 @@ const cdl: ExamConfig = {
     trainingSub: "Six sets covering the whole general knowledge manual. Instant feedback, and missed questions come back until you master them.",
     testsHeading: "Practice tests · 50 questions like the real exam",
     heroSubs: [
-      "Six topics, six tests. Inspection weighs most.",
+      "Six sets, six tests. Safe driving weighs most.",
       "Master each set, then test.",
       "Halfway there. Try a practice test.",
       "Fix the misses, then retake.",
@@ -829,7 +829,7 @@ const ccma: ExamConfig = {
     trainingSub: "Four sets covering all seven NHA CCMA domains. Instant feedback, and missed questions come back until you master them.",
     testsHeading: "Practice tests · 50 questions weighted like the real exam",
     heroSubs: [
-      "Seven domains, four tests. Patient care weighs most.",
+      "Seven domains, four tests. Clinical care is over half.",
       "Master each set, then test.",
       "Halfway there. Try a practice test.",
       "Fix the misses, then retake.",
@@ -998,7 +998,7 @@ const foodmgr: ExamConfig = {
     trainingSub: "Four sets covering every Food Code content area on the manager exam. Instant feedback, and missed questions come back until you master them.",
     testsHeading: "Practice tests \u00b7 50 questions weighted like the real exam",
     heroSubs: [
-      "Seven areas, four tests. Temperatures weigh most.",
+      "Seven areas, four tests. Flow of food is the biggest single area.",
       "Master each set, then test.",
       "Halfway there. Try a practice test.",
       "Fix the misses, then retake.",
@@ -1454,7 +1454,7 @@ const notary: ExamConfig = {
     trainingSub: "Four practice sets on notarial procedures and responsibilities. State laws and exam requirements vary; use official materials for your state.",
     testsHeading: "Practice tests \u00b7 50 questions on general notary law",
     heroSubs: [
-      "Five topics, four tests. Acts and ID weigh most.",
+      "Five topics, four tests. Notarial acts are the biggest single topic.",
       "Master each set. Check your state's handbook too.",
       "Halfway there. Try a practice test.",
       "Fix the misses, then retake. Aim for 80%.",
@@ -1510,7 +1510,7 @@ const foodhandler: ExamConfig = {
     trainingSub: "Four practice sets on food safety, hygiene, contamination, temperatures and cleaning. Use your accepted provider’s materials for the actual course and test.",
     testsHeading: "Practice tests · 50 supplemental questions",
     heroSubs: [
-      "Five topics, four tests. Temperature weighs most.",
+      "Five topics, four tests. Temperature is the biggest single topic.",
       "Master each set, then test.",
       "Halfway there. Try a practice test.",
       "Fix the misses, then retake.",
@@ -1571,7 +1571,7 @@ const boating: ExamConfig = {
     trainingSub: "Five sets covering the boater education standards: boat basics, required equipment, navigation rules and buoys, safe operation, emergencies. Missed questions come back until you master them.",
     testsHeading: "Practice tests \u00b7 50 questions in the state exam's proportions",
     heroSubs: [
-      "Five topics, four tests. Navigation weighs most.",
+      "Five topics, four tests. Navigation and operation weigh most.",
       "Master each set, then test.",
       "Halfway there. Try a practice test.",
       "Fix the misses, then retake.",
@@ -1684,7 +1684,7 @@ const cpr: ExamConfig = {
     trainingSub: "Four sets covering the CPR, AED and first aid written exam: basics and choking, adult CPR and AED, child and infant CPR, first aid. Missed questions come back until you master them.",
     testsHeading: "Practice tests · 50 questions in the course exam's proportions",
     heroSubs: [
-      "Five topics, four tests. First aid weighs most.",
+      "Five topics, four tests. First aid is the biggest single topic.",
       "Master each set, then test.",
       "Halfway there. Try a practice test.",
       "Fix the misses, then retake.",
@@ -1802,7 +1802,7 @@ const forklift: ExamConfig = {
     trainingSub: "Four sets covering the forklift operator written test: basics, rules and inspection, stability and load capacity, safe operation, load handling. Missed questions come back until you master them.",
     testsHeading: "Practice tests · 50 questions in the operator test's proportions",
     heroSubs: [
-      "Five topics, four tests. Stability weighs most.",
+      "Five topics, four tests. Stability and operation are the biggest single topics.",
       "Master each set, then test.",
       "Halfway there. Try a practice test.",
       "Fix the misses, then retake.",
@@ -1860,7 +1860,7 @@ const alcohol: ExamConfig = {
     trainingSub: "Four practice sets on alcohol effects, intoxication, identification, intervention and service responsibilities. Use the materials required by your jurisdiction or exam provider.",
     testsHeading: "Practice tests · 50 supplemental questions",
     heroSubs: [
-      "Five topics, four tests. Intervention weighs most.",
+      "Five topics, four tests. Intoxication and intervention weigh most.",
       "Master each set, then test.",
       "Halfway there. Try a practice test.",
       "Fix the misses, then retake.",
@@ -1974,7 +1974,7 @@ const lifeguard: ExamConfig = {
     trainingSub: "Four sets covering the lifeguard written exam: surveillance and victim recognition, water rescue skills, first aid, CPR and AED, facility safety and legal duties. Missed questions come back until you master them.",
     testsHeading: "Practice tests · 50 questions in the course exam's proportions",
     heroSubs: [
-      "Five topics, four tests. Rescue and care weigh most.",
+      "Five topics, four tests. Rescue and care are the biggest single topics.",
       "Master each set, then test.",
       "Halfway there. Try a practice test.",
       "Fix the misses, then retake.",
@@ -2035,7 +2035,7 @@ const pnc: ExamConfig = {
     trainingSub: "Four sets covering the general portion of the P&C exam: basics and policy provisions, dwelling and homeowners, personal auto, commercial lines and other coverages. Missed questions come back until you master them.",
     testsHeading: "Practice tests · 50 questions in the exam outline's proportions",
     heroSubs: [
-      "Seven topics, four tests. Home and auto weigh most.",
+      "Seven topics, four tests. Home and auto are the biggest single topics.",
       "Master each set, then test.",
       "Halfway there. Try a practice test.",
       "Fix the misses, then retake.",
@@ -2208,7 +2208,7 @@ const crcst: ExamConfig = {
     trainingSub: "Sets follow the seven HSPA sections. Instant feedback, and missed questions come back until you master them.",
     testsHeading: "Practice tests · 50 questions weighted like the real exam",
     heroSubs: [
-      "Seven sections, four tests. Sterilization weighs most.",
+      "Seven sections, four tests, weighted like HSPA.",
       "Master each set, then test.",
       "Halfway there. Try a practice test.",
       "Fix the misses, then retake.",

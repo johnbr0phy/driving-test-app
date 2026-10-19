@@ -1235,3 +1235,10 @@ html.sam-on main > * > :is(.flex-1.bg-gray-50, .flex-1.bg-white, .v2-shell) {
 html.sam-on main { position: relative; z-index: 2; }
 html.sam-on header:not(main header):not(.sticky),
 html.sam-on footer:not(main footer) { position: relative; z-index: 1; }
+
+/* v2 headers set their brand inline (light values), so the logo's subtitle
+   takes the dark tint from lib/v2/darkTheme.ts here. */
+.dark .v2-header-logo {
+  --brand: var(--v2-brand-dm-override);
+  --brand-dark: var(--v2-brand-dark-dm-override);
+}

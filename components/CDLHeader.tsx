@@ -19,6 +19,7 @@ import { ThemeToggle } from "@/components/ThemeToggle";
 import { AdminLink } from "@/components/AdminLink";
 import { TeachLink } from "@/components/TeachLink";
 import { useExamStarted } from "@/hooks/useExamStarted";
+import { BrandLockup } from "@/components/BrandLockup";
 
 export function CDLHeader() {
   const { user } = useAuth();
@@ -60,7 +61,9 @@ export function CDLHeader() {
   };
 
   // State variants (/real-estate/ca) run their tests under the family's header.
-  const bases = [theme.routeBase, ...getExamVariants(theme.id).map((v) => v.slug)];
+  const variants = getExamVariants(theme.id);
+  const variant = variants.find((v) => pathname === v.slug || pathname?.startsWith(`${v.slug}/`));
+  const bases = [theme.routeBase, ...variants.map((v) => v.slug)];
   const hideHeader = bases.some((b) => pathname?.startsWith(`${b}/test`) || pathname?.startsWith(`${b}/practice/`));
 
   if (hideHeader) {
@@ -70,56 +73,58 @@ export function CDLHeader() {
   return (
     <header className="border-b bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <Link href={logoHref} className="flex items-center gap-2 group flex-shrink-0">
-          {theme.logoIcon ? (
-            <Image src={theme.logoIcon} alt={theme.name} width={40} height={40} className="w-10 h-10" />
-          ) : (
-            <div className="w-10 h-10 bg-brand rounded-lg flex items-center justify-center">
-              {(() => {
-                const icon = getExamById(theme.id)?.icon;
-                if (icon === "bike") return <Bike className="h-6 w-6 text-white" />;
-                if (icon === "flag") return <Flag className="h-6 w-6 text-white" />;
-                if (icon === "plane") return <Plane className="h-6 w-6 text-white" />;
-                if (icon === "radio") return <Radio className="h-6 w-6 text-white" />;
-                if (icon === "thermometer") return <Thermometer className="h-6 w-6 text-white" />;
-                if (icon === "heart") return <HeartPulse className="h-6 w-6 text-white" />;
-                if (icon === "pill") return <Pill className="h-6 w-6 text-white" />;
-                if (icon === "syringe") return <Syringe className="h-6 w-6 text-white" />;
-                if (icon === "stethoscope") return <Stethoscope className="h-6 w-6 text-white" />;
-                if (icon === "activity") return <Activity className="h-6 w-6 text-white" />;
-                if (icon === "tooth") return <SmilePlus className="h-6 w-6 text-white" />;
-                if (icon === "siren") return <Siren className="h-6 w-6 text-white" />;
-                if (icon === "utensils") return <Utensils className="h-6 w-6 text-white" />;
-                if (icon === "house") return <House className="h-6 w-6 text-white" />;
-                if (icon === "umbrella") return <Umbrella className="h-6 w-6 text-white" />;
-                if (icon === "stamp") return <Stamp className="h-6 w-6 text-white" />;
-                if (icon === "graduation") return <GraduationCap className="h-6 w-6 text-white" />;
-                if (icon === "cloud") return <Cloud className="h-6 w-6 text-white" />;
-                if (icon === "cpu") return <Cpu className="h-6 w-6 text-white" />;
-                if (icon === "chef") return <ChefHat className="h-6 w-6 text-white" />;
-                if (icon === "sailboat") return <Sailboat className="h-6 w-6 text-white" />;
-                if (icon === "target") return <Target className="h-6 w-6 text-white" />;
-                if (icon === "lock") return <LockKeyhole className="h-6 w-6 text-white" />;
-                if (icon === "book") return <BookOpenCheck className="h-6 w-6 text-white" />;
-                if (icon === "medal") return <Medal className="h-6 w-6 text-white" />;
-                if (icon === "bandage") return <Bandage className="h-6 w-6 text-white" />;
-                if (icon === "hardhat") return <HardHat className="h-6 w-6 text-white" />;
-                if (icon === "forklift") return <Forklift className="h-6 w-6 text-white" />;
-                if (icon === "wine") return <Wine className="h-6 w-6 text-white" />;
-                if (icon === "pencil") return <PencilLine className="h-6 w-6 text-white" />;
-                if (icon === "badge") return <BadgeCheck className="h-6 w-6 text-white" />;
-                if (icon === "lifebuoy") return <LifeBuoy className="h-6 w-6 text-white" />;
-                if (icon === "building") return <Building2 className="h-6 w-6 text-white" />;
-                if (icon === "microscope") return <Microscope className="h-6 w-6 text-white" />;
-                if (icon === "scissors") return <Scissors className="h-6 w-6 text-white" />;
-                if (icon === "shield") return <ShieldCheck className="h-6 w-6 text-white" />;
-                return <Truck className="h-6 w-6 text-white" />;
-              })()}
-            </div>
-          )}
-          <span className="text-2xl font-bold text-gray-900 dark:text-gray-50 group-hover:opacity-80 transition-opacity hidden sm:inline">
-            {theme.headerTitle}
-          </span>
+        <Link href={logoHref} className="group flex-shrink-0">
+          <BrandLockup
+            subtitle={variant?.name ?? theme.headerTitle}
+            icon={
+              theme.logoIcon ? (
+                <Image src={theme.logoIcon} alt={theme.name} width={40} height={40} className="w-10 h-10" />
+              ) : (
+                <div className="w-10 h-10 bg-brand rounded-lg flex items-center justify-center">
+                  {(() => {
+                    const icon = getExamById(theme.id)?.icon;
+                    if (icon === "bike") return <Bike className="h-6 w-6 text-white" />;
+                    if (icon === "flag") return <Flag className="h-6 w-6 text-white" />;
+                    if (icon === "plane") return <Plane className="h-6 w-6 text-white" />;
+                    if (icon === "radio") return <Radio className="h-6 w-6 text-white" />;
+                    if (icon === "thermometer") return <Thermometer className="h-6 w-6 text-white" />;
+                    if (icon === "heart") return <HeartPulse className="h-6 w-6 text-white" />;
+                    if (icon === "pill") return <Pill className="h-6 w-6 text-white" />;
+                    if (icon === "syringe") return <Syringe className="h-6 w-6 text-white" />;
+                    if (icon === "stethoscope") return <Stethoscope className="h-6 w-6 text-white" />;
+                    if (icon === "activity") return <Activity className="h-6 w-6 text-white" />;
+                    if (icon === "tooth") return <SmilePlus className="h-6 w-6 text-white" />;
+                    if (icon === "siren") return <Siren className="h-6 w-6 text-white" />;
+                    if (icon === "utensils") return <Utensils className="h-6 w-6 text-white" />;
+                    if (icon === "house") return <House className="h-6 w-6 text-white" />;
+                    if (icon === "umbrella") return <Umbrella className="h-6 w-6 text-white" />;
+                    if (icon === "stamp") return <Stamp className="h-6 w-6 text-white" />;
+                    if (icon === "graduation") return <GraduationCap className="h-6 w-6 text-white" />;
+                    if (icon === "cloud") return <Cloud className="h-6 w-6 text-white" />;
+                    if (icon === "cpu") return <Cpu className="h-6 w-6 text-white" />;
+                    if (icon === "chef") return <ChefHat className="h-6 w-6 text-white" />;
+                    if (icon === "sailboat") return <Sailboat className="h-6 w-6 text-white" />;
+                    if (icon === "target") return <Target className="h-6 w-6 text-white" />;
+                    if (icon === "lock") return <LockKeyhole className="h-6 w-6 text-white" />;
+                    if (icon === "book") return <BookOpenCheck className="h-6 w-6 text-white" />;
+                    if (icon === "medal") return <Medal className="h-6 w-6 text-white" />;
+                    if (icon === "bandage") return <Bandage className="h-6 w-6 text-white" />;
+                    if (icon === "hardhat") return <HardHat className="h-6 w-6 text-white" />;
+                    if (icon === "forklift") return <Forklift className="h-6 w-6 text-white" />;
+                    if (icon === "wine") return <Wine className="h-6 w-6 text-white" />;
+                    if (icon === "pencil") return <PencilLine className="h-6 w-6 text-white" />;
+                    if (icon === "badge") return <BadgeCheck className="h-6 w-6 text-white" />;
+                    if (icon === "lifebuoy") return <LifeBuoy className="h-6 w-6 text-white" />;
+                    if (icon === "building") return <Building2 className="h-6 w-6 text-white" />;
+                    if (icon === "microscope") return <Microscope className="h-6 w-6 text-white" />;
+                    if (icon === "scissors") return <Scissors className="h-6 w-6 text-white" />;
+                    if (icon === "shield") return <ShieldCheck className="h-6 w-6 text-white" />;
+                    return <Truck className="h-6 w-6 text-white" />;
+                  })()}
+                </div>
+              )
+            }
+          />
         </Link>
 
         <div className="flex items-center gap-1 sm:gap-2">

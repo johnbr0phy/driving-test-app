@@ -17,7 +17,8 @@ import { TestSwitcher } from "@/components/TestSwitcher";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { EXAMS } from "@/lib/exams";
 import { useExamStarted } from "@/hooks/useExamStarted";
-import { getStateBySlug } from "@/data/states";
+import { getStateBySlug, states } from "@/data/states";
+import { BrandLockup } from "@/components/BrandLockup";
 
 const DMV_APP_PREFIXES = ["/dashboard", "/stats", "/drill", "/practice", "/training", "/test/", "/onboarding", "/dmv-practice-test", "/practice-tests-by-state"];
 const DMV_LOCALE_HUBS = ["/es/examenes-practica-por-estado", "/ko/juibyeol-dmv-pilgi-siheom", "/vi/thi-thu-dmv-theo-tieu-bang"];
@@ -28,9 +29,13 @@ function isDmvPath(pathname: string | null): boolean {
   if (!pathname) return false;
   if (DMV_APP_PREFIXES.some((p) => pathname === p || pathname.startsWith(p.endsWith("/") ? p : `${p}/`))) return true;
   if (DMV_LOCALE_HUBS.includes(pathname)) return true;
-  // State pages: /california-dmv-practice-test and the es/ko/vi equivalents.
-  const m = pathname.match(/^\/(?:(?:es|ko|vi)\/)?([a-z-]+?)-(?:dmv-practice-test|examen-practica-dmv|dmv-pilgi-siheom|thi-thu-dmv)$/);
-  return !!m && !!getStateBySlug(m[1]);
+  return !!dmvLandingState(pathname);
+}
+
+/** The state a DMV state page is about: /california-dmv-practice-test and the es/ko/vi equivalents. */
+function dmvLandingState(pathname: string | null) {
+  const m = pathname?.match(/^\/(?:(?:es|ko|vi)\/)?([a-z-]+?)-(?:dmv-practice-test|examen-practica-dmv|dmv-pilgi-siheom|thi-thu-dmv)$/);
+  return m ? getStateBySlug(m[1]) : undefined;
 }
 
 export function Header() {
@@ -45,9 +50,19 @@ export function Header() {
   const isGuest = guest && dmvStarted;
   const subscription = useStore((state) => state.subscription);
   const isPremium = hydrated && !guest && !!user && subscription?.isPremium === true;
-  const { t } = useTranslation();
+  const { t, language } = useTranslation();
 
   const displayPhotoURL = photoURL || user?.photoURL;
+  const selectedState = useStore((state) => state.selectedState);
+
+  // Under the wordmark, DMV pages name the state test: the page's own state, else the
+  // reader's chosen one (English only, other languages keep the plain title).
+  const dmvState = dmvLandingState(pathname) ?? (hydrated ? states.find((s) => s.code === selectedState) : undefined);
+  const dmvSubtitle = !isDmvPath(pathname)
+    ? null
+    : dmvState && language === "en"
+      ? `${dmvState.name} DMV Practice Test`
+      : t("common.dmvHeaderTitle");
 
   // Hide header on test and training pages (DMV and registry exams)
   const hideHeader =
@@ -70,10 +85,10 @@ export function Header() {
     <header className="border-b bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <Link href={user || isGuest ? "/dashboard" : "/"} className="flex items-center gap-2 group flex-shrink-0">
-            <Image src={isPremium ? "/tiger_face_01.png" : "/tiger.png"} alt="tigertest.io" width={40} height={40} className="w-10 h-10" />
-            <span className="text-2xl font-bold text-gray-900 dark:text-gray-50 group-hover:opacity-80 transition-opacity hidden sm:inline">
-              {isDmvPath(pathname) ? t("common.dmvHeaderTitle") : "tigertest.io"}
-            </span>
+            <BrandLockup
+              icon={<Image src={isPremium ? "/tiger_face_01.png" : "/tiger.png"} alt="tigertest.io" width={40} height={40} className="w-10 h-10" />}
+              subtitle={dmvSubtitle}
+            />
           </Link>
 
           <div className="flex items-center gap-1 sm:gap-2">

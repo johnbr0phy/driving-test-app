@@ -77,12 +77,10 @@ export const metadata: Metadata = {
       },
     ],
   },
+  // Card type only: X falls back to each page's og:title, og:description and
+  // og:image, so a page that sets openGraph never shows this layout's DMV copy.
   twitter: {
     card: "summary_large_image",
-    title: "Free DMV Practice Test 2026 | TigerTest",
-    description:
-      "Free DMV practice tests for all 50 states. 200+ questions with instant feedback.",
-    images: ["/og-home.png"],
   },
   icons: {
     icon: "/tiger.png",

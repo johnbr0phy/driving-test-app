@@ -962,11 +962,10 @@ export const es: TranslationKeys = {
   guestSave: {
     streakKicker: "Dos seguidas. ¡Bien!",
     keepPracticing: "Seguir practicando",
-    titleFresh: "Guarda tu progreso mientras estudias",
+    titleFresh: "Guarda tu progreso con una cuenta gratis",
     titleAnswers: "Tus {{n}} respuestas solo están guardadas en este navegador",
     titleAnswersTests: "Tus {{n}} respuestas y resultados solo están guardados en este navegador",
     titleScore: "Tu {{score}}/{{total}} solo está guardado en este navegador",
-    sub: "Cuenta gratis, toma 10 segundos. Úsala en cualquier dispositivo.",
     benefitSafe: "No pierdes nada si se borra tu navegador",
     benefitMisses: "Todas tus preguntas falladas y resultados en un solo lugar",
     emailCta: "Registrarse con correo",

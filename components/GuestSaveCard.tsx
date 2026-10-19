@@ -103,7 +103,6 @@ export function GuestSaveCard({ signupHref, answered = 0, tests = 0, score, data
       className={`rounded-xl border border-brand-border-light bg-gradient-to-r from-brand-light to-brand-gradient-to p-3 sm:p-4 ${className}`}
     >
       <p className="text-sm sm:text-base font-semibold text-gray-900 dark:text-gray-50 leading-snug">{title}</p>
-      <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-300 mt-0.5">{t("guestSave.sub")}</p>
       {/* Phone stays to title, one line and two buttons; the extras are desktop only. */}
       <ul className="hidden sm:flex flex-wrap gap-x-4 gap-y-1 mt-2">
         {benefits.map((b) => (

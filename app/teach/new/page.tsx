@@ -13,6 +13,7 @@ import { Input } from "@/components/ui/input";
 import { useAuth } from "@/contexts/AuthContext";
 import { teachFetch } from "@/lib/teachClient";
 import { markTeacher } from "@/components/TeachLink";
+import { trackTeachStep } from "@/lib/teachTracking";
 import { DMV_EXAM_ID, classExamGroups, type ClassExamChoice } from "@/lib/classes";
 
 const fieldClass = "block text-sm font-medium text-gray-800 dark:text-gray-100 mb-1.5";
@@ -31,6 +32,12 @@ function NewClassForm() {
   const [school, setSchool] = useState("");
   const [error, setError] = useState("");
   const [busy, setBusy] = useState(false);
+
+  // A "Create a free class" click, before any sign-in detour.
+  useEffect(() => trackTeachStep("new_open"), []);
+  useEffect(() => {
+    if (user) trackTeachStep("new_form");
+  }, [user]);
 
   useEffect(() => {
     const here = `/teach/new${params.get("exam") ? `?exam=${params.get("exam")}` : ""}`;

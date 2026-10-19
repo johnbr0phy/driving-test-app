@@ -11,6 +11,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { DMV_EXAM_ID, classExamHome, normalizeClassCode, type ClassPublicInfo } from "@/lib/classes";
 import { getMembership, joinClass } from "@/lib/classProgress";
+import { trackClassJoinView } from "@/lib/teachTracking";
 import { useAuth } from "@/contexts/AuthContext";
 import { useStore } from "@/store/useStore";
 import { useHydration } from "@/hooks/useHydration";
@@ -42,6 +43,7 @@ export default function JoinClassPage() {
       .then((data: ClassPublicInfo) => {
         if (!alive) return;
         setInfo(data);
+        trackClassJoinView(data.code);
         const existing = getMembership(data.code);
         if (existing) {
           setName(existing.name);

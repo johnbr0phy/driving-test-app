@@ -7,6 +7,7 @@ import { BarChart3, Gift, Link2, Lock, MonitorSmartphone, Plus, Smartphone } fro
 import { TEST_CATALOG, TEST_GROUPS } from "@/lib/testCatalog";
 import { BrowserPreview, PhonePreview } from "@/components/teach/TeachPreviews";
 import { ClassQuestions } from "@/components/teach/ClassQuestions";
+import { TeachLandingTracker } from "@/components/teach/TeachLandingTracker";
 import type { ClassQuestionRow } from "@/lib/classes";
 
 const SAMPLE_QUESTIONS: ClassQuestionRow[] = [
@@ -94,6 +95,7 @@ export function TeachLanding({ signedIn }: { signedIn: boolean }) {
   return (
     <div className="flex-1 bg-white dark:bg-gray-900">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <TeachLandingTracker />
 
       {/* Hero */}
       <div className="relative overflow-hidden">

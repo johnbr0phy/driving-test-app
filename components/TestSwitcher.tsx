@@ -18,6 +18,7 @@ import {
 import { TestIcon } from "@/components/TestIcon";
 import { hasTigerSet } from "@/lib/tigerAssets";
 import { useStartedTests } from "@/hooks/useStartedTests";
+import { useCurrentTest } from "@/hooks/useHomePath";
 
 const SEEN_KEY = "tigertest-seen-all-tests";
 
@@ -25,9 +26,9 @@ const SEEN_KEY = "tigertest-seen-all-tests";
  * Header menu for moving between the site's practice tests. Lives in both
  * the DMV header and the exam headers. A search box filters a compact,
  * grouped list; items link to each test's landing page (the SEO page),
- * with the current test pinned at the top (only once it is started: a visitor
- * who has not begun anything has no current test). Tests already in progress link to
- * their dashboard instead. Enter opens the first match.
+ * with the current test (the last dashboard opened, see useCurrentTest)
+ * pinned at the top; a visitor who has opened no dashboard has none. Tests
+ * already in progress link to their dashboard instead. Enter opens the first match.
  */
 export function TestSwitcher({ className = "" }: { className?: string }) {
   const pathname = useThemePath();
@@ -35,10 +36,11 @@ export function TestSwitcher({ className = "" }: { className?: string }) {
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
-  const current = getCatalogEntryByPath(pathname);
+  // The menu takes the page's colors; the pinned test is the current one.
+  const pageTest = getCatalogEntryByPath(pathname);
+  const current = useCurrentTest();
   const hasStarted = useStartedTests();
-  const hrefFor = (t: TestCatalogEntry) => (hasStarted(t.id) ? t.dashboardHref : t.href);
-  const hasCurrent = hasStarted(current.id);
+  const hrefFor = (t: TestCatalogEntry) => (hasStarted(t.id) || t.id === current?.id ? t.dashboardHref : t.href);
   // "New" badge until the menu is opened once. Read after mount so the
   // server render (no badge) matches the first client render.
   const [showNew, setShowNew] = useState(false);
@@ -68,7 +70,7 @@ export function TestSwitcher({ className = "" }: { className?: string }) {
   return (
     <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger
-        aria-label={hasCurrent ? `Switch practice test, currently ${current.shortName}` : "Choose a practice test"}
+        aria-label={current ? `Switch practice test, currently ${current.shortName}` : "Choose a practice test"}
         className={`relative flex items-center gap-1.5 rounded-full bg-gray-100 dark:bg-gray-800 px-2.5 py-1.5 text-sm text-gray-700 dark:text-gray-200 transition-colors hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-1 ${className}`}
       >
         <LayoutGrid className="h-4 w-4 text-gray-500 dark:text-gray-400 sm:hidden" aria-hidden="true" />
@@ -96,7 +98,7 @@ export function TestSwitcher({ className = "" }: { className?: string }) {
         }}
         className="w-[calc(100vw-24px)] sm:w-[20rem] p-0 overflow-hidden rounded-xl"
       >
-        <div data-theme={current.theme}>
+        <div data-theme={pageTest.theme}>
           <div className="relative border-b border-gray-100 dark:border-gray-800 p-2">
             <Search
               className="pointer-events-none absolute left-[18px] top-1/2 h-4 w-4 -translate-y-1/2 text-gray-500 dark:text-gray-400"
@@ -136,7 +138,7 @@ export function TestSwitcher({ className = "" }: { className?: string }) {
           </div>
 
           <div className="max-h-[min(60vh,26rem,calc(var(--radix-popover-content-available-height)_-_6.5rem))] overflow-y-auto overscroll-contain p-1.5">
-            {!searching && hasCurrent && (
+            {!searching && current && (
               <div className="mb-1 border-b border-gray-100 dark:border-gray-800 pb-1.5">
                 <SwitcherItem
                   test={current}
@@ -166,7 +168,7 @@ export function TestSwitcher({ className = "" }: { className?: string }) {
                         test={t}
                         href={hrefFor(t)}
                         started={hasStarted(t.id)}
-                        isActive={!searching && hasCurrent && t.id === current.id}
+                        isActive={!searching && t.id === current?.id}
                         onSelect={close}
                       />
                     </li>

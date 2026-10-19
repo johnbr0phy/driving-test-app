@@ -5,7 +5,7 @@
 // that turn green, and the tiger calming down as steps complete. Built on the
 // same ProgressCard and tiger artwork as the v1 exam dashboards.
 
-import { Suspense, useMemo, useState } from "react";
+import { Suspense, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { ChevronRight, Smartphone, Monitor, Pencil, CheckCircle } from "lucide-react";
@@ -17,6 +17,7 @@ import { drillQuestions, drillStateFor, EMPTY_DRILL } from "@/lib/v2/training";
 import { basicsDone, basicsFor } from "@/lib/v2/basics";
 import { useV2Store, resultsForExam } from "@/store/useV2Store";
 import { useHydration } from "@/hooks/useHydration";
+import { useStore } from "@/store/useStore";
 import { useAuth } from "@/contexts/AuthContext";
 import { GuestSaveCard, v2GuestAnswered } from "@/components/GuestSaveCard";
 import { ProgressCard, Collapse } from "@/components/dashboard/ProgressCard";
@@ -65,6 +66,11 @@ function shortDate(iso: string) {
 export function DashboardV2({ exam }: { exam: ExamV2Config }) {
   const routes = v2Routes(exam);
   const hydrated = useHydration();
+  // Opening this dashboard makes it the current test (the logo's home).
+  const setPrimaryExam = useStore((s) => s.setPrimaryExam);
+  useEffect(() => {
+    if (hydrated) setPrimaryExam(exam.id);
+  }, [hydrated, exam.id, setPrimaryExam]);
   const sessions = useV2Store((s) => s.sessions);
   const results = useV2Store((s) => s.results);
   const drills = useV2Store((s) => s.drills);

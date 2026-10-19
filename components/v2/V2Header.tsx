@@ -1,14 +1,11 @@
 "use client";
 
-// Exam header for v2 exams, matching the v1 exam header (CDLHeader): brand
-// tile, exam name, test switcher, account. Hidden on the full-screen runners.
+// Exam header for v2 exams, matching the v1 exam header (CDLHeader): the
+// tigertest logo, test switcher, account. Hidden on the full-screen runners.
 
 import Link from "next/link";
-import Image from "next/image";
 import type { CSSProperties } from "react";
 import { usePathname } from "next/navigation";
-import { TestIcon } from "@/components/TestIcon";
-import type { TestCatalogEntry } from "@/lib/testCatalog";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { useAuth } from "@/contexts/AuthContext";
@@ -20,7 +17,6 @@ import { BrandLockup } from "@/components/BrandLockup";
 import { v2DarkThemeStyle } from "@/lib/v2/darkTheme";
 import { TeachLink } from "@/components/TeachLink";
 import { ExamV2Config } from "@/lib/v2/types";
-import { getTigerAsset, hasTigerSet } from "@/lib/tigerAssets";
 
 export function V2Header({ exam }: { exam: ExamV2Config }) {
   const { user } = useAuth();
@@ -30,7 +26,7 @@ export function V2Header({ exam }: { exam: ExamV2Config }) {
   if (pathname?.startsWith(`${exam.slug}/test/`) && !pathname.endsWith("/results")) return null;
   if (pathname?.startsWith(`${exam.slug}/practice/`)) return null;
 
-  // The dark tints ride along so .v2-header-logo can lift the logo's subtitle in dark mode.
+  // The dark tints ride along for the header's brand-colored controls.
   const style = {
     "--brand": exam.theme.brand,
     "--brand-dark": exam.theme.brandDark,
@@ -44,20 +40,7 @@ export function V2Header({ exam }: { exam: ExamV2Config }) {
   return (
     <header className="border-b bg-white dark:bg-gray-900" style={style}>
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <Link href={`${exam.slug}/dashboard`} aria-label={`${exam.name} home`} className="v2-header-logo group flex-shrink-0">
-          <BrandLockup
-            subtitle={exam.name}
-            icon={
-              hasTigerSet(exam.id) ? (
-                <Image src={getTigerAsset(exam.id)} alt="" width={40} height={40} className="h-10 w-10 object-contain" />
-              ) : (
-                <div className="w-10 h-10 bg-brand rounded-lg flex items-center justify-center">
-                  <TestIcon icon={exam.icon as TestCatalogEntry["icon"]} className="h-6 w-6 text-white" />
-                </div>
-              )
-            }
-          />
-        </Link>
+        <BrandLockup />
         <div className="flex items-center gap-1 sm:gap-2">
           <TestSwitcher />
           <ThemeToggle />

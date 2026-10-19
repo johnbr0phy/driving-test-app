@@ -164,11 +164,14 @@ interface AppState {
   photoURL: string | null;
   emailConsent: boolean;
   /**
-   * "dmv" or the registry exam this person last opened a dashboard for. Saved
-   * to Firestore so the welcome and lifecycle emails talk about the right
-   * exam and link to the right dashboard.
+   * The current test: "dmv", a registry exam family or a v2 exam, whichever
+   * dashboard this person opened last. The header logo goes to its dashboard
+   * (hooks/useHomePath.ts), and the welcome and lifecycle emails talk about it.
+   * Synced to the account; primaryExamAt (ms) lets the newer visit win when
+   * a device and the account disagree.
    */
   primaryExam: string | null;
+  primaryExamAt: number;
   setPrimaryExam: (examId: string) => void;
   /**
    * Study state per exam family with state variants, e.g. { realestate: "CA" }.
@@ -254,6 +257,7 @@ export const useStore = create<AppState>()(
       selectedState: null,
       emailConsent: true,
       primaryExam: null,
+      primaryExamAt: 0,
       examStates: {},
       startedExams: [],
       currentTests: {},
@@ -331,10 +335,17 @@ export const useStore = create<AppState>()(
 
       setPrimaryExam: (examId: string) => {
         if (get().primaryExam === examId) return;
-        set({ primaryExam: examId });
-        // Persist right away so a signup that follows (or a cron that runs
-        // tonight) sees the exam even if nothing else is saved today.
-        get().saveToFirestore();
+        const primaryExamAt = Date.now();
+        set({ primaryExam: examId, primaryExamAt });
+        // Only these two fields, right away: a full save could run before
+        // loadUserData and overwrite the account with this device's copy.
+        // A guest's choice goes up with convertGuestToUser instead.
+        const { userId, isGuest } = get();
+        if (userId && !isGuest) {
+          updateDoc(doc(db, 'users', userId), { primaryExam: examId, primaryExamAt }).catch(() => {
+            // No user doc yet (brand-new account): its first full save carries it.
+          });
+        }
       },
 
       setSuperAmazingEnabled: (enabled: boolean) => {
@@ -905,7 +916,10 @@ export const useStore = create<AppState>()(
               trainingAnswerHistory: data.trainingAnswerHistory || [],
               activeDates: data.activeDates || [],
               photoURL: data.photoURL || null,
-              primaryExam: typeof data.primaryExam === 'string' ? data.primaryExam : get().primaryExam,
+              // The newer dashboard visit wins, this device's or the account's.
+              ...(typeof data.primaryExam === 'string' && (Number(data.primaryExamAt) || 0) >= get().primaryExamAt
+                ? { primaryExam: data.primaryExam, primaryExamAt: Number(data.primaryExamAt) || 0 }
+                : {}),
               // Account choices win; a guest's choice fills only families the account has not set.
               examStates: { ...get().examStates, ...(data.examStates && typeof data.examStates === 'object' ? data.examStates : {}) },
               // The account's list wins so a test deleted on one device stays gone;
@@ -946,6 +960,12 @@ export const useStore = create<AppState>()(
             // New user - set userId
             set({ userId, firestoreLoaded: true, loadedUid: userId });
           }
+          // This device visited a dashboard more recently than the account
+          // remembers: send it up.
+          const { primaryExam, primaryExamAt } = get();
+          if (userDoc.exists() && primaryExam && primaryExam !== userDoc.data().primaryExam) {
+            updateDoc(doc(db, 'users', userId), { primaryExam, primaryExamAt }).catch(() => {});
+          }
         } catch (error) {
           console.error('Error loading user data:', error);
           // Mark as loaded even on failure so gated UI doesn't hang forever
@@ -967,7 +987,7 @@ export const useStore = create<AppState>()(
       },
 
       saveToFirestore: async () => {
-        const { userId, isGuest, selectedState, currentTests, completedTests, testAttempts, training, trainingSets, trainingAnswerHistory, activeDates, photoURL, language, emailConsent, superAmazing, superAmazingUnlockedAt, superAmazingUnlocks, primaryExam, examStates, startedExams } = get();
+        const { userId, isGuest, selectedState, currentTests, completedTests, testAttempts, training, trainingSets, trainingAnswerHistory, activeDates, photoURL, language, emailConsent, superAmazing, superAmazingUnlockedAt, superAmazingUnlocks, primaryExam, primaryExamAt, examStates, startedExams } = get();
         if (!userId || isGuest) return; // Don't save if no user is logged in or guest mode
         // Never write an account this store has not loaded: it would replace
         // the saved progress with whatever this browser holds.
@@ -1045,7 +1065,7 @@ export const useStore = create<AppState>()(
             selectedState,
             photoURL,
             emailConsent,
-            ...(primaryExam ? { primaryExam } : {}),
+            ...(primaryExam ? { primaryExam, primaryExamAt } : {}),
             examStates,
             startedExams,
             currentTests: currentTestsForFirestore,
@@ -1173,6 +1193,8 @@ export const useStore = create<AppState>()(
         set({
           isGuest: false,
           selectedState: null,
+          primaryExam: null,
+          primaryExamAt: 0,
           examStates: {},
           startedExams: [],
           currentTests: {},

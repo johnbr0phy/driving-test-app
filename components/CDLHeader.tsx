@@ -122,7 +122,7 @@ export function CDLHeader() {
           </span>
         </Link>
 
-        <div className="flex items-center gap-2 sm:gap-4">
+        <div className="flex items-center gap-1 sm:gap-2">
           <TestSwitcher />
           <ThemeToggle />
           {onLanding && landingLangs.length > 1 && (
@@ -142,7 +142,7 @@ export function CDLHeader() {
           ) : isGuest ? (
             <>
               <Link href={theme.loginPath} className="hidden sm:inline text-sm font-semibold text-gray-700 dark:text-gray-200 hover:underline">
-                {t("common.logIn")}
+                {t("common.signIn")}
               </Link>
               <Button asChild variant="outline" className="text-gray-700 dark:text-gray-200 border-gray-300 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800 font-semibold">
                 <Link href={theme.signupPath}>

@@ -28,7 +28,7 @@ export const en = {
     forgotPassword: "Forgot password?",
     noAccount: "Don't have an account?",
     alreadyHaveAccount: "Already have an account?",
-    logIn: "Log in",
+    logIn: "Sign in",
   },
 
   // Header is minimal - just the auth buttons covered by common

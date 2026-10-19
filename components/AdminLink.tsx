@@ -9,7 +9,7 @@ export function AdminLink() {
   const isAdmin = useAdmin();
   if (!isAdmin) return null;
   return (
-    <Link href="/admin/v2" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-50 transition-colors" title="Admin Dashboard">
+    <Link href="/admin/v2" className="flex h-9 w-9 items-center justify-center rounded-full text-gray-600 transition-colors hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-gray-50" title="Admin Dashboard">
       <Shield className="h-5 w-5" />
     </Link>
   );

@@ -29,7 +29,8 @@ export function CDLHeader() {
   // Guest of this exam only: starting another exam must not show
   // "Sign Up to Save" here before this one is started.
   const guest = useStore((state) => state.isGuest);
-  const isGuest = useExamStarted(theme.id) && guest;
+  const started = useExamStarted(theme.id);
+  const isGuest = started && guest;
   const hydrated = useHydration();
 
   const displayPhotoURL = photoURL || user?.photoURL;
@@ -43,9 +44,10 @@ export function CDLHeader() {
     | undefined;
   const contentLang: Language = landingLang ?? (exam ? examLanguage(exam, language) : "en");
   const t = createT(contentLang);
-  // The logo goes to the landing in the language the person is using, so
-  // choosing Spanish and then tapping the logo lands on the Spanish page.
-  const logoHref =
+  // Before the exam is started the logo goes to the landing in the language
+  // the person is using, so choosing Spanish and then tapping the logo lands
+  // on the Spanish page.
+  const landingHref =
     (contentLang !== "en" && exam?.translations?.[contentLang as Exclude<Language, "en">]?.landingPath) || theme.logoHome;
   // A translated exam's landings carry the DMV homepage's language switcher:
   // each language is its own URL, so picking one goes there (and sets the app
@@ -64,6 +66,9 @@ export function CDLHeader() {
   const variants = getExamVariants(theme.id);
   const variant = variants.find((v) => pathname === v.slug || pathname?.startsWith(`${v.slug}/`));
   const bases = [theme.routeBase, ...variants.map((v) => v.slug)];
+  // Once it is started the logo goes back to its dashboard, not the landing
+  // page the person has already been through.
+  const logoHref = started ? (variant ? `${variant.slug}/dashboard` : theme.dashboardPath) : landingHref;
   // The dashboard's own save card (GuestSaveCard) already offers Google, email and
   // sign in to a guest, so the header leaves that ask to it.
   const onDashboard = bases.some((b) => pathname === `${b}/dashboard`);

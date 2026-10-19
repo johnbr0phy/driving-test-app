@@ -4,6 +4,7 @@ import { sendEmail } from '@/lib/resend';
 import { CAMPAIGN_REPLY_TO } from '@/lib/cron-email';
 import { SCHOOL_KIND_LABELS, schoolKind } from '@/lib/schoolHosts';
 import { getCatalogEntryByPath } from '@/lib/testCatalog';
+import { classExamInfo, isClassCode, normalizeClassCode } from '@/lib/classes';
 
 // Visits from a school's LMS or website (lib/schoolReferral.ts). One doc per
 // host in schoolReferrals, with per-course and per-landing counts. The first
@@ -85,7 +86,10 @@ async function alertJohn(a: { host: string; kind: keyof typeof SCHOOL_KIND_LABEL
   });
   if (!allowed) return;
 
-  const exam = getCatalogEntryByPath(a.landing);
+  // A class join link (/c/<code>) says nothing about its test in the path,
+  // so the class doc names the test and the teacher.
+  const cls = await classForLanding(a.landing);
+  const exam = cls ? { name: cls.examName, shortName: cls.examName } : getCatalogEntryByPath(a.landing);
   const lms = SCHOOL_KIND_LABELS[a.kind];
   const courseUrl = a.course && a.kind === 'canvas' ? `https://${a.host}/courses/${a.course}` : '';
   const what = a.newHost ? 'A new school sent a visitor' : 'A new course at a known school sent a visitor';
@@ -97,9 +101,40 @@ async function alertJohn(a: { host: string; kind: keyof typeof SCHOOL_KIND_LABEL
 <p>School: ${esc(a.host)} (${lms})<br>
 ${a.course ? `Course id: ${esc(a.course)}${courseUrl ? ` (<a href="${courseUrl}">${esc(courseUrl)}</a>, needs a login there)` : ''}<br>` : ''}
 Landed on: <a href="https://tigertest.io${esc(a.landing)}">${esc(a.landing)}</a> (${esc(exam.name)})</p>
-<p>Look the school up and find the program's instructor: they already chose TigerTest.</p>`,
+${
+  cls
+    ? `<p>It is a class join link.<br>
+Class: ${esc(cls.name || cls.code)} (${esc(cls.code)})<br>
+Teacher: ${esc(cls.teacherName || 'not given')}<br>
+School: ${esc(cls.school || 'not given')}</p>
+`
+    : ''
+}<p>Look the school up and find the program's instructor: they already chose TigerTest.</p>`,
   });
   if (!result.ok) console.error('[school-referral] alert failed:', result.error);
+}
+
+async function classForLanding(landing: string) {
+  const m = /^\/c\/([^/]+)\/?$/.exec(landing);
+  if (!m) return null;
+  const code = normalizeClassCode(m[1]);
+  if (!isClassCode(code)) return null;
+  try {
+    const snap = await getAdminDb().collection('classes').doc(code).get();
+    const c = snap.data();
+    const info = c && typeof c.examId === 'string' ? classExamInfo(c.examId, c.state) : undefined;
+    if (!c || !info) return null;
+    return {
+      code,
+      examName: info.name,
+      name: String(c.name ?? ''),
+      teacherName: String(c.teacherName ?? ''),
+      school: String(c.school ?? ''),
+    };
+  } catch (error) {
+    console.error('[school-referral] class lookup failed:', error);
+    return null;
+  }
 }
 
 function esc(s: string): string {

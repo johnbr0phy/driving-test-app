@@ -5,6 +5,7 @@ import { Smartphone, Monitor } from "lucide-react";
 import { ExamLandingHero, ExamLandingCTA } from "@/components/exam/ExamLandingHero";
 import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
+import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
@@ -104,6 +105,7 @@ const jsonLd = {
             text: "Both. The bank follows the 2020 resuscitation guidelines that every provider's course is built on. Lay rescuer items cover hands-only CPR, AED steps, choking and first aid; healthcare-level items cover pulse checks, two-rescuer ratios, advanced airway ventilation rates and team roles. The training sets let you focus on whichever you need.",
           },
         },
+        classFaqJsonLd("cpr"),
       ],
     },
   ],
@@ -296,6 +298,7 @@ export default function CprLandingPage() {
               Both. The bank follows the 2020 resuscitation guidelines that every provider&apos;s course is built on. Lay rescuer items cover hands-only CPR, AED steps, choking and first aid; healthcare-level items cover pulse checks, two-rescuer ratios, advanced airway ventilation rates and team roles. The training sets let you focus on whichever you need.
             </p>
           </div>
+          <ExamClassFaq examId="cpr" />
         </div>
       </div>
 

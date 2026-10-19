@@ -6,6 +6,7 @@ import { Smartphone, Monitor } from "lucide-react";
 import { ExamLandingHero, ExamLandingCTA } from "@/components/exam/ExamLandingHero";
 import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
+import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
@@ -106,6 +107,7 @@ const jsonLd = {
             text: "No. TigerTest is a free study tool, not an OSHA-authorized Outreach course, and it does not issue a card. Use it to learn the material and check your readiness, then take the real course from an OSHA-authorized trainer. All four practice tests and all training sets are free, with no account required.",
           },
         },
+        classFaqJsonLd("osha"),
       ],
     },
   ],
@@ -299,6 +301,7 @@ export default function OshaLandingPage() {
               No. TigerTest is a free study tool, not an OSHA-authorized Outreach course, and it does not issue a card. Use it to learn the material and check your readiness, then take the real course from an OSHA-authorized trainer. All four practice tests and all training sets are free, with no account required.
             </p>
           </div>
+          <ExamClassFaq examId="osha" />
         </div>
       </div>
 

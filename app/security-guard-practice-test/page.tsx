@@ -5,6 +5,7 @@ import { Smartphone, Monitor } from "lucide-react";
 import { ExamLandingHero, ExamLandingCTA } from "@/components/exam/ExamLandingHero";
 import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
+import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
@@ -104,6 +105,7 @@ const jsonLd = {
             text: "The minimum age is typically 18 for unarmed guards, with a clean criminal background check; some states set 21 for armed work. The TigerTest practice test is free: all four practice tests and all training sets, with no account required. Create a free account if you want progress saved across devices.",
           },
         },
+        classFaqJsonLd("security"),
       ],
     },
   ],
@@ -297,6 +299,7 @@ export default function SecurityGuardLandingPage() {
               The minimum age is typically 18 for unarmed guards, with a clean criminal background check; some states set 21 for armed work. The TigerTest practice test is free: all four practice tests and all training sets, with no account required. Create a free account if you want progress saved across devices.
             </p>
           </div>
+          <ExamClassFaq examId="security" />
         </div>
       </div>
 

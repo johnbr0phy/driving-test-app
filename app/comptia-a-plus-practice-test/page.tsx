@@ -5,6 +5,7 @@ import { Smartphone, Monitor } from "lucide-react";
 import { ExamLandingHero, ExamLandingCTA } from "@/components/exam/ExamLandingHero";
 import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
+import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
@@ -105,6 +106,7 @@ const jsonLd = {
             text: "Yes. The full Core 1 and Core 2 practice exam and all four drills are free, with no account required. Create a free account if you want your progress saved across devices.",
           },
         },
+        classFaqJsonLd("aplus"),
       ],
     },
   ],
@@ -301,6 +303,7 @@ export default function AplusLandingPage() {
               Yes. The full Core 1 and Core 2 practice exam and all four drills are free, with no account required. Create a free account if you want your progress saved across devices.
             </p>
           </div>
+          <ExamClassFaq examId="aplus" />
         </div>
       </div>
 

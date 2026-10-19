@@ -5,6 +5,7 @@ import { Smartphone, Monitor } from "lucide-react";
 import { ExamLandingHero, ExamLandingCTA } from "@/components/exam/ExamLandingHero";
 import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
+import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
@@ -104,6 +105,7 @@ const jsonLd = {
             text: "Start with TigerTest's training mode to learn questions with instant feedback. Work through the six topic training sets, then take the six practice tests to simulate the real exam. Aim for 80%+ scores consistently.",
           },
         },
+        classFaqJsonLd("cdl"),
       ],
     },
   ],
@@ -380,6 +382,7 @@ export default function CDLLandingPage() {
               80% or higher. Some people need only a few days, others prefer 2-3 weeks of preparation.
             </p>
           </div>
+          <ExamClassFaq examId="cdl" />
         </div>
       </div>
 

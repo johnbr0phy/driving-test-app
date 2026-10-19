@@ -5,6 +5,7 @@ import { Smartphone, Monitor } from "lucide-react";
 import { ExamLandingHero, ExamLandingCTA } from "@/components/exam/ExamLandingHero";
 import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
+import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
@@ -174,6 +175,7 @@ const jsonLd = {
             text: "No. Property and casualty and life and health are separate license lines with separate exams, though both share the same insurance basics and agency law. TigerTest has a separate Life & Health practice test. All four P&C practice tests and all training sets here are free, with no account required.",
           },
         },
+        classFaqJsonLd("pnc"),
       ],
     },
   ],
@@ -394,6 +396,7 @@ export default function PncLandingPage() {
               No. Property and casualty and life and health are separate license lines with separate exams, though both share the same insurance basics and agency law. TigerTest has a separate Life &amp; Health practice test. All four P&amp;C practice tests and all training sets here are free, with no account required.
             </p>
           </div>
+          <ExamClassFaq examId="pnc" />
         </div>
       </div>
 

@@ -5,6 +5,7 @@ import { Smartphone, Monitor } from "lucide-react";
 import { ExamLandingHero, ExamLandingCTA } from "@/components/exam/ExamLandingHero";
 import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
+import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
@@ -105,6 +106,7 @@ const jsonLd = {
             text: "Yes. The full battery and all seven drills are free, with no account required. Create a free account to keep your progress in step between your phone and your computer.",
           },
         },
+        classFaqJsonLd("hesi"),
       ],
     },
   ],
@@ -299,6 +301,7 @@ export default function HesiLandingPage() {
               Yes. The full battery and all seven drills are free, with no account required. Create a free account to keep your progress in step between your phone and your computer.
             </p>
           </div>
+          <ExamClassFaq examId="hesi" />
         </div>
       </div>
 

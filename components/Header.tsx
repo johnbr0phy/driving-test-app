@@ -73,6 +73,9 @@ export function Header() {
 
   // Hide sign up prompt on onboarding pages (too early in flow)
   const isOnboarding = pathname?.startsWith("/onboarding");
+  // The dashboard's own save card (GuestSaveCard) already offers Google, email and
+  // sign in once a state is chosen, so the header leaves that ask to it.
+  const dashboardHasSaveCard = pathname === "/dmv/dashboard" && hydrated && !!selectedState;
 
   // Language toggle lives in the header only on the DMV landing; the footer renders it elsewhere.
   const isHomepage = pathname === "/dmv-practice-test";
@@ -119,7 +122,7 @@ export function Header() {
                   </Avatar>
                 </Link>
               </>
-            ) : isGuest && !isOnboarding ? (
+            ) : dashboardHasSaveCard && guest ? null : isGuest && !isOnboarding ? (
               <>
                 <Link href="/login" className="hidden sm:inline text-sm font-semibold text-gray-700 dark:text-gray-200 hover:underline">
                   {t("common.signIn")}

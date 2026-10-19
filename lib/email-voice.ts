@@ -2,7 +2,7 @@
  * The exam-specific words and links every email is written against.
  *
  * TigerTest emails were all written for the DMV test: "your DMV test",
- * "/dashboard", "50 questions", "$9.99 unlocks State Laws". A citizenship or
+ * "/dmv/dashboard", "50 questions", "$9.99 unlocks State Laws". A citizenship or
  * Security+ user signing up got the same copy, and every button sent them to
  * the DMV dashboard, which bounced them to "pick your state". Every template
  * now takes an EmailVoice, built here from the exam registry, so the words,
@@ -65,7 +65,7 @@ const DMV_VOICE: EmailVoice = {
   testCount: 4,
   stepCount: 8,
   passPct: 80,
-  dashboardPath: "/dashboard",
+  dashboardPath: "/dmv/dashboard",
   statsPath: "/stats",
   hasPremium: true,
   inactiveDays: 3,

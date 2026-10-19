@@ -76,7 +76,7 @@ export function classExamInfo(examId: string, state?: string | null): ClassExamI
       id: examId,
       kind: "dmv",
       name: st ? `${st.name} DMV Permit Test` : "DMV Permit Test",
-      home: "/dashboard",
+      home: "/dmv/dashboard",
       passPct: st?.passingScore ?? 70,
       topicLabel: (k) => DMV_TOPICS[k] ?? k,
     };

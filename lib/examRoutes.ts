@@ -45,7 +45,7 @@ export interface ExamRoutes {
 
 export const DMV_ROUTES: ExamRoutes = {
   id: "dmv",
-  dashboard: "/dashboard",
+  dashboard: "/dmv/dashboard",
   stats: "/stats",
   test: (id) => `/test/${id}`,
   results: (id) => `/test/${id}/results`,

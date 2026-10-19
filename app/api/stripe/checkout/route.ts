@@ -27,7 +27,7 @@ export async function POST(request: NextRequest) {
     const returnPath =
       typeof rawReturnPath === 'string' && /^\/[A-Za-z0-9/_-]*$/.test(rawReturnPath) && !rawReturnPath.startsWith('//')
         ? rawReturnPath
-        : '/dashboard';
+        : '/dmv/dashboard';
     const userId = decodedToken.uid;
 
     // Validate required fields

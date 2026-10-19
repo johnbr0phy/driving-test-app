@@ -2,40 +2,43 @@
 
 import Link from "next/link";
 import { ThemedScreenshot } from "@/components/ThemedScreenshot";
-import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { useAuth } from "@/contexts/AuthContext";
 import { useStore } from "@/store/useStore";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { useExamStarted } from "@/hooks/useExamStarted";
 
-// "Go to Dashboard" only once the DMV test was started (a state picked in
-// onboarding). Being a guest is site-wide, so a guest who only started CDL
-// still gets the DMV's "Start practicing" here.
+// The DMV dashboard is open to everyone and asks for the state at the top, so
+// the CTA always goes straight there, like the exam landings
+// (components/exam/ExamLandingHero.tsx). Fresh visitors become guests on the
+// way in. "Go to Dashboard" only once the DMV was started (a state picked):
+// being a guest is site-wide, so a guest who only started CDL still gets
+// "Start practicing" here.
 function useHomeCta() {
   const { user, loading } = useAuth();
-  const router = useRouter();
-  const startGuestSession = useStore((state) => state.startGuestSession);
   const isGuest = useStore((state) => state.isGuest);
-  const firestoreLoaded = useStore((state) => state.firestoreLoaded);
+  const startGuestSession = useStore((state) => state.startGuestSession);
   const dmvStarted = useExamStarted("dmv");
-  // `user` is set as soon as Firebase restores the session, but `loading`
-  // stays true until Firestore data finishes loading. Decide on `user` so a
-  // signed-in visitor never sees the signup CTA during (or after a failed)
-  // load; only a loaded account with no state is sent to pick one.
-  const signedInNoState = !!user && firestoreLoaded && !dmvStarted;
-  const hasSession = (!!user && !signedInNoState) || (isGuest && dmvStarted);
-
-  const handleTryFree = () => {
-    startGuestSession();
-    router.push("/onboarding/select-state");
+  const hasSession = (!!user || isGuest) && dmvStarted;
+  const onStart = () => {
+    if (!loading && !user && !isGuest) startGuestSession();
   };
+  return { hasSession, onStart };
+}
 
-  return { hasSession, signedInNoState, loading, handleTryFree };
+function StartButton() {
+  const { hasSession, onStart } = useHomeCta();
+  const { t } = useTranslation();
+  return (
+    <Button asChild className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 px-8 py-6 text-lg rounded-full">
+      <Link href="/dmv/dashboard" onClick={onStart}>
+        {hasSession ? t("common.goToDashboard") : t("common.startPracticing")}
+      </Link>
+    </Button>
+  );
 }
 
 export function HomeHero() {
-  const { hasSession, signedInNoState, loading, handleTryFree } = useHomeCta();
   const { t } = useTranslation();
 
   return (
@@ -44,35 +47,7 @@ export function HomeHero() {
         {t("landing.heroSubtitle")}
       </p>
 
-      {hasSession ? (
-        <Button asChild className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 px-8 py-6 text-lg rounded-full">
-          <Link href="/dashboard">
-            {t("common.goToDashboard")}
-          </Link>
-        </Button>
-      ) : signedInNoState ? (
-        <Button asChild className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 px-8 py-6 text-lg rounded-full">
-          <Link href="/onboarding/select-state">
-            {t("common.startPracticing")}
-          </Link>
-        </Button>
-      ) : loading ? (
-        <div className="h-[104px]" aria-hidden />
-      ) : (
-        <div className="flex flex-col items-center gap-3">
-          <Button asChild className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 px-8 py-6 text-lg rounded-full">
-            <Link href="/signup">
-              {t("common.startPracticing")}
-            </Link>
-          </Button>
-          <button
-            onClick={handleTryFree}
-            className="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 underline"
-          >
-            {t("common.tryItFirst")}
-          </button>
-        </div>
-      )}
+      <StartButton />
 
       {/* Product Screenshots */}
       <div className="mt-16 flex flex-col md:flex-row items-center justify-center gap-8">
@@ -107,40 +82,5 @@ export function HomeHero() {
 }
 
 export function HomeCTA() {
-  const { hasSession, signedInNoState, loading, handleTryFree } = useHomeCta();
-  const { t } = useTranslation();
-
-  return (
-    <>
-      {hasSession ? (
-        <Button asChild className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 px-8 py-6 text-lg rounded-full">
-          <Link href="/dashboard">
-            {t("common.goToDashboard")}
-          </Link>
-        </Button>
-      ) : signedInNoState ? (
-        <Button asChild className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 px-8 py-6 text-lg rounded-full">
-          <Link href="/onboarding/select-state">
-            {t("common.startPracticing")}
-          </Link>
-        </Button>
-      ) : loading ? (
-        <div className="h-[104px]" aria-hidden />
-      ) : (
-        <div className="flex flex-col items-center gap-3">
-          <Button asChild className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 px-8 py-6 text-lg rounded-full">
-            <Link href="/signup">
-              {t("common.startPracticing")}
-            </Link>
-          </Button>
-          <button
-            onClick={handleTryFree}
-            className="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 underline"
-          >
-            {t("common.tryItFirst")}
-          </button>
-        </div>
-      )}
-    </>
-  );
+  return <StartButton />;
 }

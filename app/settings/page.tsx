@@ -93,7 +93,7 @@ export default function SettingsPage() {
     setResetDialog(false);
     // Exam-only users have no DMV state; /dashboard would bounce them into
     // the state picker, so send them to the test hub instead.
-    router.push(selectedState ? "/dashboard" : "/tests");
+    router.push(selectedState ? "/dmv/dashboard" : "/tests");
   };
 
   const hasStarted = useStartedTests();
@@ -137,7 +137,7 @@ export default function SettingsPage() {
     setSelectedState(pendingStateCode);
     setStateChangeDialog(false);
     setPendingStateCode(null);
-    router.push("/dashboard");
+    router.push("/dmv/dashboard");
   };
 
   const currentStateName = states.find(s => s.code === selectedState)?.name || selectedState;
@@ -238,7 +238,7 @@ export default function SettingsPage() {
                 <div className="space-y-4">
                   <p className="text-sm text-gray-600 dark:text-gray-300">{t("settings.noStateSelected")}</p>
                   <Button asChild className="w-full bg-brand hover:bg-brand-hover text-white">
-                    <Link href="/onboarding/select-state">
+                    <Link href="/dmv/dashboard">
                       {t("settings.chooseState")}
                     </Link>
                   </Button>

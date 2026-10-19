@@ -20,7 +20,7 @@ import { useExamStarted } from "@/hooks/useExamStarted";
 import { getStateBySlug, states } from "@/data/states";
 import { BrandLockup } from "@/components/BrandLockup";
 
-const DMV_APP_PREFIXES = ["/dashboard", "/stats", "/drill", "/practice", "/training", "/test/", "/onboarding", "/dmv-practice-test", "/practice-tests-by-state"];
+const DMV_APP_PREFIXES = ["/dmv/", "/dashboard", "/stats", "/drill", "/practice", "/training", "/test/", "/onboarding", "/dmv-practice-test", "/practice-tests-by-state"];
 const DMV_LOCALE_HUBS = ["/es/examenes-practica-por-estado", "/ko/juibyeol-dmv-pilgi-siheom", "/vi/thi-thu-dmv-theo-tieu-bang"];
 
 /** DMV pages wear the "DMV Practice Test" title like every exam wears its own;
@@ -84,7 +84,7 @@ export function Header() {
   return (
     <header className="border-b bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <Link href={user || isGuest ? "/dashboard" : "/"} className="flex items-center gap-2 group flex-shrink-0">
+        <Link href={user || isGuest ? "/dmv/dashboard" : "/"} className="flex items-center gap-2 group flex-shrink-0">
             <BrandLockup
               icon={<Image src={isPremium ? "/tiger_face_01.png" : "/tiger.png"} alt="tigertest.io" width={40} height={40} className="w-10 h-10" />}
               subtitle={dmvSubtitle}

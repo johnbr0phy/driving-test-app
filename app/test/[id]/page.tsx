@@ -103,7 +103,7 @@ export default function TestPage() {
 
     // Check if test is unlocked
     if (!isTestUnlocked(testId)) {
-      router.push("/dashboard");
+      router.push("/dmv/dashboard");
       return;
     }
 
@@ -213,7 +213,7 @@ export default function TestPage() {
           <CardContent className="p-8 text-center">
             <div className="text-xl font-semibold mb-2">{t("testPage.noQuestionsAvailable")}</div>
             <div className="text-gray-600 dark:text-gray-300 mb-4">{t("testPage.unableToLoad")}</div>
-            <Button className="bg-black dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200" onClick={() => router.push("/dashboard")}>
+            <Button className="bg-black dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200" onClick={() => router.push("/dmv/dashboard")}>
               {t("common.back")}
             </Button>
           </CardContent>
@@ -225,7 +225,7 @@ export default function TestPage() {
   return (
     <div className="flex-1 bg-gray-50 dark:bg-gray-950">
       <TestPageHeader
-        backHref="/dashboard"
+        backHref="/dmv/dashboard"
         right={
           isPremium ? (
             <Link

@@ -49,6 +49,11 @@ const nextConfig: NextConfig = {
         destination: "/:slug-dmv-practice-test",
         permanent: true,
       },
+      // The DMV dashboard lives beside the exam dashboards now, and picks the
+      // state itself. Not permanent: old links (emails, Stripe returns,
+      // bookmarks) keep working and their query strings carry over.
+      { source: "/dashboard", destination: "/dmv/dashboard", permanent: false },
+      { source: "/onboarding/select-state", destination: "/dmv/dashboard", permanent: false },
       {
         source: "/questions",
         destination: "/stats",

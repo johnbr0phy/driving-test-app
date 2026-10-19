@@ -19,7 +19,7 @@ export type PaywallFeature = string;
 //
 // returnPath is where Stripe sends the buyer back, and where the purchase is
 // verified (/dashboard for the DMV, the exam dashboard for SAT and ACT).
-export function useUpgradeFlow(location: string, returnPath = "/dashboard") {
+export function useUpgradeFlow(location: string, returnPath = "/dmv/dashboard") {
   const router = useRouter();
   const { user } = useAuth();
   const [paywallOpen, setPaywallOpen] = useState(false);
@@ -39,7 +39,7 @@ export function useUpgradeFlow(location: string, returnPath = "/dashboard") {
 
   const handleUpgrade = async () => {
     if (!user?.email || !user?.uid) {
-      router.push(returnPath === "/dashboard" ? "/signup" : `/signup?redirect=${encodeURIComponent(returnPath)}`);
+      router.push(returnPath === "/dmv/dashboard" ? "/signup" : `/signup?redirect=${encodeURIComponent(returnPath)}`);
       return;
     }
     try {

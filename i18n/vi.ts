@@ -18,7 +18,7 @@ export const vi: TranslationKeys = {
     unlockWithPremium: "Mở khóa với Premium",
     goToDashboard: "Đến trang chính",
     startPracticing: "Bắt đầu luyện tập",
-    tryItFirst: "Thử trước đã",
+    change: "Thay đổi",
     createAccount: "Tạo tài khoản",
     maybeLater: "Để sau",
     continueWithGoogle: "Tiếp tục với Google",

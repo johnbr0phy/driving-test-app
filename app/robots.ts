@@ -10,6 +10,7 @@ const DISALLOW = [
   "/training",
   "/practice/", // not "/practice": that would also block /practice-tests-by-state
   "/dashboard",
+  "/dmv/",
   "/settings",
   "/stats",
   "/admin",

@@ -16,7 +16,7 @@ export const en = {
     unlockWithPremium: "Unlock with Premium",
     goToDashboard: "Go to Dashboard",
     startPracticing: "Start practicing",
-    tryItFirst: "Try it first",
+    change: "Change",
     createAccount: "Create Account",
     maybeLater: "Maybe Later",
     continueWithGoogle: "Continue with Google",

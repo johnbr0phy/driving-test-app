@@ -145,7 +145,7 @@ function UnsubscribeContent() {
               No more emails from us. Good luck with the test — you&apos;ve got this.
             </p>
             <Button asChild className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200">
-              <Link href="/dashboard">
+              <Link href="/dmv/dashboard">
                 Back to TigerTest
               </Link>
             </Button>

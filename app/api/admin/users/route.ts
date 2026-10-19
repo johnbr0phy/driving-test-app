@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getAdminDb, getAdminAuth } from '@/lib/firebase-admin';
+import { shareDailyCounts } from '@/lib/shareCounts';
 import { isAdminEmail } from '@/lib/admin';
 import { getInternalUids } from '@/lib/server/internalUsers';
 import { computeAnswersByDay } from '@/lib/server/answersByDay';
@@ -534,7 +535,7 @@ export async function GET(request: NextRequest) {
           everEnabledUsers: samEverEnabledUsers,
         },
         totalShareClicks: (sharesData?.total as number) || 0,
-        shareClicksDaily: (sharesData?.daily as Record<string, number>) || {},
+        shareClicksDaily: shareDailyCounts(sharesData),
         conversion: {
           paidCount: payingUsers,
           baselineUsers: totalUsers,

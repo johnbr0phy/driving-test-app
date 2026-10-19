@@ -41,8 +41,8 @@ export default function SettingsPage() {
   const resetExamData = useStore((state) => state.resetExamData);
   const selectedState = useStore((state) => state.selectedState);
   const setSelectedState = useStore((state) => state.setSelectedState);
+  const examStates = useStore((state) => state.examStates);
 
-  const [loadingGooglePhoto, setLoadingGooglePhoto] = useState(false);
   const [stateChangeDialog, setStateChangeDialog] = useState(false);
   const [resetDialog, setResetDialog] = useState(false);
   const [deleteTestId, setDeleteTestId] = useState<string | null>(null);
@@ -55,27 +55,11 @@ export default function SettingsPage() {
     }
   }, [hydrated, user, router]);
 
-  const handleUseGooglePhoto = async () => {
-    if (!user) return;
-
-    // Check if user has a Google photo URL
-    const googlePhotoURL = user.photoURL;
-    if (!googlePhotoURL) {
-      alert("No Google profile photo found. Please sign in with Google to use your Google photo.");
-      return;
-    }
-
-    setLoadingGooglePhoto(true);
-    try {
-      // Use the Google photo URL directly
-      setPhotoURL(googlePhotoURL);
-      alert("Google photo set successfully!");
-    } catch (error) {
-      console.error("Error using Google photo:", error);
-      alert("Failed to use Google photo. Please try again.");
-    } finally {
-      setLoadingGooglePhoto(false);
-    }
+  // The Google photo already shows when no other photo is saved, so the
+  // button is only for going back to it from a different one.
+  const canUseGooglePhoto = !!user?.photoURL && !!photoURL && photoURL !== user.photoURL;
+  const handleUseGooglePhoto = () => {
+    if (user?.photoURL) setPhotoURL(user.photoURL);
   };
 
   const displayPhotoURL = photoURL || user?.photoURL;
@@ -102,6 +86,7 @@ export default function SettingsPage() {
 
   // Started tests only: the All tests menu already lists every test.
   const startedTests = TEST_CATALOG.filter((test) => hasStarted(test.id));
+  const hasDmv = startedTests.some((test) => test.id === "dmv");
   const deleteTest = TEST_CATALOG.find((test) => test.id === deleteTestId);
 
   const [deletingTest, setDeletingTest] = useState(false);
@@ -127,22 +112,21 @@ export default function SettingsPage() {
     setDeleteTestId(null);
   };
 
-  const handleStateChange = (newStateCode: string) => {
-    if (newStateCode === selectedState) return;
-    setPendingStateCode(newStateCode);
+  const openStateDialog = () => {
+    setPendingStateCode(selectedState);
     setStateChangeDialog(true);
   };
+  const stateChanged = !!pendingStateCode && pendingStateCode !== selectedState;
 
   const confirmStateChange = () => {
-    if (!pendingStateCode) return;
+    if (!stateChanged || !pendingStateCode) return;
     setSelectedState(pendingStateCode);
     setStateChangeDialog(false);
     setPendingStateCode(null);
     router.push("/dmv/dashboard");
   };
 
-  const currentStateName = states.find(s => s.code === selectedState)?.name || selectedState;
-  const pendingStateName = states.find(s => s.code === pendingStateCode)?.name || pendingStateCode;
+  const stateName = (code: string) => states.find((s) => s.code === code)?.name || code;
 
   if (!hydrated || !user) {
     return null;
@@ -155,9 +139,49 @@ export default function SettingsPage() {
       <V2Sync />
       <div className="relative">
         <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-light to-white dark:to-transparent pointer-events-none" />
-        <div className="relative container mx-auto px-4 py-8 max-w-6xl">
-        {/* The tests this account has started, each with its own delete */}
-        {startedTests.length > 0 && (
+        <div className="relative container mx-auto px-4 py-8 max-w-3xl">
+        <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-50 mb-6">{t("settings.settings")}</h1>
+
+        {/* Account: who is signed in, their photo, log out */}
+        <Card className="bg-gray-50 dark:bg-gray-950 mb-6">
+          <CardContent className="p-5">
+            <div className="flex flex-col sm:flex-row sm:items-center gap-4">
+              <div className="flex items-center gap-4 flex-1 min-w-0">
+                <Avatar className="h-16 w-16 flex-shrink-0">
+                  <AvatarImage src={displayPhotoURL || undefined} alt="" />
+                  <AvatarFallback className="text-3xl">😊</AvatarFallback>
+                </Avatar>
+                <div className="min-w-0">
+                  <div className="text-sm text-gray-600 dark:text-gray-300">{t("settings.signedInAs")}</div>
+                  <div className="font-medium text-gray-900 dark:text-gray-50 truncate">{user.email}</div>
+                  {canUseGooglePhoto ? (
+                    <button
+                      type="button"
+                      onClick={handleUseGooglePhoto}
+                      className="mt-1 inline-flex items-center gap-1 text-sm font-medium text-brand-dark hover:underline"
+                    >
+                      <User className="h-3.5 w-3.5" aria-hidden="true" />
+                      {t("settings.useGooglePhoto")}
+                    </button>
+                  ) : !user.photoURL && (
+                    <div className="mt-1 text-xs text-gray-500 dark:text-gray-400">{t("settings.signInWithGoogle")}</div>
+                  )}
+                </div>
+              </div>
+              <Button
+                onClick={handleLogout}
+                variant="outline"
+                className="sm:w-auto w-full text-gray-700 dark:text-gray-200 border-gray-300 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800"
+              >
+                <LogOut className="h-4 w-4 mr-2" aria-hidden="true" />
+                {t("common.logOut")}
+              </Button>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* The tests this account has started, each with its own delete. The
+            DMV state is part of the DMV row: it only ever applied to the DMV. */}
         <Card className="bg-gray-50 dark:bg-gray-950 mb-6">
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
@@ -166,9 +190,11 @@ export default function SettingsPage() {
             </CardTitle>
           </CardHeader>
           <CardContent>
+            {startedTests.length > 0 ? (
             <ul className="divide-y divide-gray-200 dark:divide-gray-800 rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900">
               {startedTests.map((test) => {
-                const status = test.id === "dmv" && selectedState ? currentStateName : t("settings.inProgress");
+                const stateCode = test.id === "dmv" ? selectedState : examStates[test.id];
+                const status = stateCode ? stateName(stateCode) : t("settings.inProgress");
                 return (
                   <li key={test.id} data-theme={test.theme} className="flex items-center">
                     <Link href={test.dashboardHref} className="flex flex-1 min-w-0 items-center gap-3 px-4 py-3 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
@@ -177,10 +203,28 @@ export default function SettingsPage() {
                       </span>
                       <span className="flex-1 min-w-0">
                         <span className="block font-medium text-gray-900 dark:text-gray-50">{test.name}</span>
-                        <span className="block text-sm text-brand-dark font-medium">{status}</span>
+                        <span className="flex items-center gap-1 text-sm text-brand-dark font-medium">
+                          {stateCode && <MapPin className="h-3.5 w-3.5" aria-hidden="true" />}
+                          {status}
+                        </span>
                       </span>
                       <ChevronRight className="h-5 w-5 text-gray-500 dark:text-gray-400 flex-shrink-0" />
                     </Link>
+                    {/* Same-width slot on every row keeps the chevrons in a column */}
+                    {hasDmv && (
+                      <span className="flex w-20 flex-shrink-0 justify-end">
+                        {test.id === "dmv" && (
+                          <button
+                            type="button"
+                            onClick={openStateDialog}
+                            className="rounded-lg px-2.5 py-1.5 text-sm font-medium text-brand-dark hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+                            aria-label={t("settings.changeDmvState")}
+                          >
+                            {t("settings.change")}
+                          </button>
+                        )}
+                      </span>
+                    )}
                     <button
                       type="button"
                       onClick={() => setDeleteTestId(test.id)}
@@ -194,123 +238,13 @@ export default function SettingsPage() {
                 );
               })}
             </ul>
+            ) : (
+              <Button asChild className="bg-brand hover:bg-brand-hover text-white">
+                <Link href="/tests">{t("footer.allTests")}</Link>
+              </Button>
+            )}
           </CardContent>
         </Card>
-        )}
-
-        {/* State Selection and Profile Photo Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-          {/* State Selection Card */}
-          <Card className="bg-gray-50 dark:bg-gray-950">
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <MapPin className="h-5 w-5" />
-                {t("settings.stateSelection")}
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              {selectedState ? (
-                <div className="space-y-4">
-                  <div>
-                    <div className="text-sm text-gray-600 dark:text-gray-300 mb-2">{t("settings.currentlyPracticingFor")}</div>
-                    <div className="text-2xl font-bold text-brand-dark mb-4">
-                      {currentStateName}
-                    </div>
-                  </div>
-
-                  <div>
-                    <label htmlFor="settings-state" className="text-sm font-medium text-gray-700 dark:text-gray-200 mb-2 block">
-                      {t("settings.changeState")}
-                    </label>
-                    <select id="settings-state"
-                      value={selectedState}
-                      onChange={(e) => handleStateChange(e.target.value)}
-                      className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    >
-                      {states.map((state) => (
-                        <option key={state.code} value={state.code}>
-                          {state.name} ({state.code})
-                        </option>
-                      ))}
-                    </select>
-                    <p className="text-xs text-gray-500 dark:text-gray-400 mt-2">
-                      <strong className="text-brand-dark">Warning:</strong> {t("settings.switchStateWarning")}
-                    </p>
-                  </div>
-                </div>
-              ) : (
-                <div className="space-y-4">
-                  <p className="text-sm text-gray-600 dark:text-gray-300">{t("settings.noStateSelected")}</p>
-                  <Button asChild className="w-full bg-brand hover:bg-brand-hover text-white">
-                    <Link href="/dmv/dashboard">
-                      {t("settings.chooseState")}
-                    </Link>
-                  </Button>
-                </div>
-              )}
-            </CardContent>
-          </Card>
-
-          {/* Profile Photo Card */}
-          <Card className="bg-gray-50 dark:bg-gray-950">
-            <CardHeader>
-              <CardTitle>{t("settings.profilePhoto")}</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="flex flex-col items-center gap-6">
-                {/* Current Photo */}
-                <Avatar className="h-32 w-32">
-                  <AvatarImage src={displayPhotoURL || undefined} alt="Profile" />
-                  <AvatarFallback className="text-6xl">😊</AvatarFallback>
-                </Avatar>
-
-                {/* User Email */}
-                <div className="text-center">
-                  <div className="text-sm text-gray-600 dark:text-gray-300 mb-1">{t("settings.account")}</div>
-                  <div className="font-medium">{user.email}</div>
-                </div>
-
-                {/* Google Photo Option */}
-                {user.photoURL && (
-                  <div className="w-full">
-                    <Button
-                      onClick={handleUseGooglePhoto}
-                      disabled={loadingGooglePhoto}
-                      className="w-full bg-white dark:bg-gray-900 text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 border-2 border-gray-300 dark:border-gray-700"
-                    >
-                      {loadingGooglePhoto ? (
-                        <>
-                          <Loader2 className="h-4 w-4 mr-2 animate-spin" />
-                          {t("common.loading")}
-                        </>
-                      ) : (
-                        <>
-                          <User className="h-4 w-4 mr-2" />
-                          {t("settings.useGooglePhoto")}
-                        </>
-                      )}
-                    </Button>
-                  </div>
-                )}
-
-                {!user.photoURL && (
-                  <div className="text-sm text-gray-500 dark:text-gray-400 text-center">
-                    {t("settings.signInWithGoogle")}
-                  </div>
-                )}
-
-                <Button
-                  onClick={handleLogout}
-                  variant="outline"
-                  className="w-full text-gray-700 dark:text-gray-200 border-gray-300 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800"
-                >
-                  <LogOut className="h-4 w-4 mr-2" aria-hidden="true" />
-                  {t("common.logOut")}
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
 
         {/* Appearance */}
         <Card className="bg-gray-50 dark:bg-gray-950 mb-6">
@@ -355,36 +289,43 @@ export default function SettingsPage() {
         </div>
       </div>
 
-      {/* State Change Confirmation Dialog */}
+      {/* DMV state change: the picker and the warning in one step */}
       <Dialog open={stateChangeDialog} onOpenChange={setStateChangeDialog}>
         <DialogContent className="sm:max-w-md">
           <DialogHeader>
-            <DialogTitle className="flex items-center gap-2 text-brand-dark">
-              <AlertTriangle className="h-5 w-5" />
-              {t("settings.switchState")}
+            <DialogTitle className="flex items-center gap-2">
+              <MapPin className="h-5 w-5" />
+              {t("settings.changeDmvState")}
             </DialogTitle>
-            <DialogDescription className="space-y-3 pt-2 text-left">
-              <p className="font-semibold text-gray-900 dark:text-gray-50 text-base">
-                {t("settings.switchStateConfirm")} {currentStateName} {t("settings.to")} {pendingStateName}.
-              </p>
-              <p className="text-gray-700 dark:text-gray-200">
-                <strong className="text-brand-dark">{t("settings.switchStateWarningDetail")}</strong> {currentStateName} {t("settings.willNotBeSaved")} {t("settings.willBePermanentlyLost")}. {t("settings.thisIncludes")}
-              </p>
-              <ul className="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-200 ml-2">
+            <DialogDescription className="pt-1 text-left">{t("settings.stateDialogBody")}</DialogDescription>
+          </DialogHeader>
+          <select
+            aria-label={t("settings.changeDmvState")}
+            value={pendingStateCode ?? ""}
+            onChange={(e) => setPendingStateCode(e.target.value)}
+            className="w-full px-4 py-2 rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-50 focus:outline-none focus:ring-2 focus:ring-brand"
+          >
+            {states.map((state) => (
+              <option key={state.code} value={state.code}>
+                {state.name}
+              </option>
+            ))}
+          </select>
+          {stateChanged && (
+            <div className="rounded-lg border border-red-200 dark:border-red-800 bg-red-50 dark:bg-red-950 p-3 text-sm text-red-700 dark:text-red-300">
+              <p className="font-semibold">{t("settings.switchStateWarning")}</p>
+              <ul className="list-disc list-inside mt-1 space-y-0.5">
                 <li>{t("settings.allTestScores")}</li>
                 <li>{t("settings.inProgressTests")}</li>
                 <li>{t("settings.trainingModeStats")}</li>
               </ul>
-              <p className="text-gray-700 dark:text-gray-200">
-                {t("settings.startFreshWith")} {pendingStateName} {t("settings.cannotRecover")} {currentStateName} {t("settings.progressSuffix")}
-              </p>
-            </DialogDescription>
-          </DialogHeader>
+            </div>
+          )}
           <DialogFooter className="gap-2 sm:gap-0">
             <Button className="bg-white dark:bg-gray-900 text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 border-2 border-gray-300 dark:border-gray-700" onClick={() => setStateChangeDialog(false)}>
               {t("common.cancel")}
             </Button>
-            <Button variant="destructive" onClick={confirmStateChange}>
+            <Button variant="destructive" onClick={confirmStateChange} disabled={!stateChanged}>
               {t("settings.yesSwitchState")}
             </Button>
           </DialogFooter>

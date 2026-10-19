@@ -239,6 +239,17 @@ export interface ClassTestEvent {
   total: number;
 }
 
+/**
+ * One answer from the browser's own history, re-sent once to rebuild the
+ * per-question misses an all-correct batch used to wipe (fixed Oct 19 2026).
+ */
+export interface ClassHistoryAnswer {
+  q: string;
+  ok: boolean;
+  /** When it was answered (ISO), so practice from before joining is left out. */
+  t: string;
+}
+
 export interface ClassProgressBody {
   memberId: string;
   answers?: ClassAnswerEvent[];

@@ -21,6 +21,7 @@ import { DmvStatePrompt, DmvStateLine } from "@/components/dashboard/DmvStatePic
 import { useTranslation } from "@/contexts/LanguageContext";
 import { trackBeginCheckout, trackPaywallDismissed, trackPaywallHit, trackPurchase, trackViewItem } from "@/lib/analytics";
 import { ClassBanner } from "@/components/exam/ClassBanner";
+import { ClassMissRecovery } from "@/components/exam/ClassMissRecovery";
 
 function DashboardContent() {
   const router = useRouter();
@@ -361,6 +362,7 @@ function DashboardContent() {
         )}
 
         <ClassBanner examId="dmv" className="mb-4" />
+        <ClassMissRecovery examId="dmv" />
 
         {/* Sign-up prompt for guests */}
         {isGuest && (

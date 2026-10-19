@@ -12,6 +12,7 @@ import { ShareButton } from "@/components/ShareButton";
 import { useStore } from "@/store/useStore";
 import { shuffleQuestionOptions } from "@/lib/shuffleOptions";
 import { recordClassAnswer } from "@/lib/classProgress";
+import { useClassMissRecovery } from "@/components/exam/ClassMissRecovery";
 import { getExamTrainingSetQuestions, getNextExamTrainingSetQuestion } from "@/lib/examTestGenerator";
 import { ExamConfig, examSetId, trainingPartName, trainingParts } from "@/lib/exams";
 import { getTigerAsset } from "@/lib/tigerAssets";
@@ -46,6 +47,7 @@ function ExamTrainingContent({ exam: source }: { exam: ExamConfig }) {
   const { user, loading: authLoading } = useAuth();
   // Signed-out visitors get the sign-up prompt in place of a question now and then.
   const guestPrompt = useGuestPrompt(!authLoading && !user, "training");
+  useClassMissRecovery(exam.id);
 
   const training = useStore((state) => state.training);
   const trainingSets = useStore((state) => state.trainingSets);

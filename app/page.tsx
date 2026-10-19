@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
+import { ThemedScreenshot } from "@/components/ThemedScreenshot";
 import { TEST_CATALOG } from "@/lib/testCatalog";
 import { TestCard, TestCatalogGrid } from "@/components/TestCatalogGrid";
 import { CountUp } from "@/components/CountUp";
@@ -221,9 +222,9 @@ export default async function Home() {
               ].map((shot, i) => (
                 <div
                   key={shot.src}
-                  className={`rounded-2xl shadow-xl overflow-hidden border border-gray-200 dark:border-gray-800 bg-white w-[30%] max-w-[180px] ${i === 1 ? "md:-mt-6" : "md:mt-6"}`}
+                  className={`rounded-2xl shadow-xl overflow-hidden border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 w-[30%] max-w-[180px] ${i === 1 ? "md:-mt-6" : "md:mt-6"}`}
                 >
-                  <Image src={shot.src} alt={shot.alt} width={768} height={1280} sizes="(min-width: 768px) 180px, 30vw" className="w-full h-auto" />
+                  <ThemedScreenshot src={shot.src} alt={shot.alt} width={768} height={1280} sizes="(min-width: 768px) 180px, 30vw" className="w-full h-auto" />
                 </div>
               ))}
             </div>
@@ -239,8 +240,8 @@ export default async function Home() {
               </p>
             </div>
             <div className="md:col-span-3 md:order-1">
-              <div className="rounded-2xl shadow-xl overflow-hidden border border-gray-200 dark:border-gray-800 bg-white">
-                <Image src="/landing/sat-desktop.png" alt="Timed SAT practice test on a computer" width={1215} height={790} sizes="(min-width: 1024px) 560px, 100vw" className="w-full h-auto" />
+              <div className="rounded-2xl shadow-xl overflow-hidden border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900">
+                <ThemedScreenshot src="/landing/sat-desktop.png" alt="Timed SAT practice test on a computer" width={1215} height={790} sizes="(min-width: 1024px) 560px, 100vw" className="w-full h-auto" />
               </div>
             </div>
           </div>
@@ -255,8 +256,8 @@ export default async function Home() {
               </p>
             </div>
             <div className="md:col-span-3">
-              <div className="rounded-2xl shadow-xl overflow-hidden border border-gray-200 dark:border-gray-800 bg-white">
-                <Image src="/dashboard.png" alt="TigerTest DMV dashboard with training sets and practice tests" width={955} height={745} sizes="(min-width: 1024px) 560px, 100vw" className="w-full h-auto" />
+              <div className="rounded-2xl shadow-xl overflow-hidden border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900">
+                <ThemedScreenshot src="/dashboard.png" alt="TigerTest DMV dashboard with training sets and practice tests" width={1320} height={1143} sizes="(min-width: 1024px) 560px, 100vw" className="w-full h-auto" />
               </div>
             </div>
           </div>

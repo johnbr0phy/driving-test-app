@@ -44,7 +44,6 @@ function RequestTestContent() {
       <div className="max-w-md w-full">
         {status === "sent" ? (
           <div className="text-center">
-            <div className="text-5xl mb-6">🐯</div>
             <h1 className="text-2xl font-semibold mb-3">Got it. Thank you.</h1>
             <p className="text-gray-600 dark:text-gray-300 mb-8">
               I read every one of these, and the tests people ask for are the ones that get built.
@@ -59,7 +58,6 @@ function RequestTestContent() {
         ) : (
           <form onSubmit={submit}>
             <div className="text-center mb-8">
-              <div className="text-5xl mb-6">🐯</div>
               <h1 className="text-2xl font-semibold mb-3">
                 {arrivedWithPick ? "Noted. Which test exactly?" : "What test should we build next?"}
               </h1>
@@ -117,7 +115,7 @@ function RequestTestContent() {
 
             <p className="mt-6 text-center text-sm text-gray-500 dark:text-gray-400">
               <Link href="/tests" className="underline underline-offset-2 hover:text-gray-600 dark:hover:text-gray-300">
-                See the 30 tests we have today
+                See the tests we have today
               </Link>
             </p>
           </form>

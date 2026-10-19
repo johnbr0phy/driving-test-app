@@ -52,7 +52,7 @@ Copy `app/hesi/` and replace `hesi` with `<id>` in `getExamById`, `examAppMetada
 ## 9. `app/<landing>/page.tsx`
 Model on `app/hesi-a2-practice-test/page.tsx`. Keep the structure: metadata (title with the
 year, description, keywords, canonical, OG image `/og/<id>`), `WebApplication` + `Organization`
-+ `FAQPage` JSON-LD, `<ExamLandingBreadcrumbs examId>`, hero with `shots` at
++ `FAQPage` JSON-LD, hero with `shots` at
 `/landing/<id>-mobile.png` and `/landing/<id>-desktop.png`, How It Works, blueprint list with
 weights (per-test count x 2), `getTigerAsset("<id>", 1)`, We Just Launched, four study tips, five
 FAQs whose JSX text matches the JSON-LD text exactly, `<ExamRelatedTests examId>`, final CTA.

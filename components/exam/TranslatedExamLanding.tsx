@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { ChevronRight, ExternalLink, Monitor, Smartphone } from "lucide-react";
+import { ExternalLink, Monitor, Smartphone } from "lucide-react";
 import type { Language } from "@/i18n";
 import { getTigerAsset } from "@/lib/tigerAssets";
 import { EXAM_FACTS } from "@/lib/examFacts";
@@ -103,14 +103,6 @@ export function TranslatedExamLanding({
         publisher: { "@id": ORGANIZATION_ID },
       },
       {
-        "@type": "BreadcrumbList",
-        itemListElement: [
-          { "@type": "ListItem", position: 1, name: c.breadcrumb.home, item: siteUrl },
-          { "@type": "ListItem", position: 2, name: c.breadcrumb.allTests, item: `${siteUrl}/tests` },
-          { "@type": "ListItem", position: 3, name: c.breadcrumb.current, item: url },
-        ],
-      },
-      {
         "@type": "FAQPage",
         inLanguage,
         mainEntity: c.faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
@@ -125,16 +117,6 @@ export function TranslatedExamLanding({
     <div data-theme={examId} className="flex-1 bg-white dark:bg-gray-900">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      {/* Breadcrumb, painted in the hero tint like ExamLandingBreadcrumbs */}
-      <nav aria-label={c.breadcrumb.current} className="bg-brand-light">
-        <ol className="max-w-4xl mx-auto px-6 pt-4 flex flex-wrap items-center gap-1 text-sm text-gray-500 dark:text-gray-400">
-          <li><Link href="/" className="hover:text-brand">{c.breadcrumb.home}</Link></li>
-          <li aria-hidden="true"><ChevronRight className="h-3 w-3" /></li>
-          <li><Link href="/tests" className="hover:text-brand">{c.breadcrumb.allTests}</Link></li>
-          <li aria-hidden="true"><ChevronRight className="h-3 w-3" /></li>
-          <li aria-current="page" className="text-gray-700 dark:text-gray-200">{c.breadcrumb.current}</li>
-        </ol>
-      </nav>
 
       {/* Hero */}
       <div className="relative overflow-hidden">

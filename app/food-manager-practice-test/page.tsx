@@ -3,7 +3,6 @@ import Image from "next/image";
 import { getTigerAsset } from "@/lib/tigerAssets";
 import { Smartphone, Monitor } from "lucide-react";
 import { ExamLandingHero, ExamLandingCTA } from "@/components/exam/ExamLandingHero";
-import { ExamLandingBreadcrumbs } from "@/components/exam/ExamLandingBreadcrumbs";
 import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 
@@ -127,7 +126,6 @@ export default function FoodmgrLandingPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <ExamLandingBreadcrumbs examId="foodmgr" />
 
       {/* Hero */}
       <div className="relative overflow-hidden">

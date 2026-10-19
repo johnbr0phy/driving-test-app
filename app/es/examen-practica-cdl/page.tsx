@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { ChevronRight, ExternalLink, Monitor, Smartphone } from "lucide-react";
+import { ExternalLink, Monitor, Smartphone } from "lucide-react";
 import { getTigerAsset } from "@/lib/tigerAssets";
 import { ExamLandingHero, ExamLandingCTA } from "@/components/exam/ExamLandingHero";
 import { EXAM_LANDINGS_UPDATED_AT } from "@/lib/seoDates";
@@ -116,14 +116,6 @@ const jsonLd = {
       publisher: { "@id": ORGANIZATION_ID },
     },
     {
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Inicio", item: siteUrl },
-        { "@type": "ListItem", position: 2, name: "Todos los exámenes", item: `${siteUrl}/tests` },
-        { "@type": "ListItem", position: 3, name: "Examen de práctica CDL", item: url },
-      ],
-    },
-    {
       "@type": "FAQPage",
       inLanguage: "es-US",
       mainEntity: faqs.map((f) => ({
@@ -140,16 +132,6 @@ export default function CDLLandingPageEs() {
     <div data-theme="cdl" className="flex-1 bg-white dark:bg-gray-900">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      {/* Breadcrumb, painted in the hero tint like ExamLandingBreadcrumbs */}
-      <nav aria-label="Ruta de navegación" className="bg-brand-light">
-        <ol className="max-w-4xl mx-auto px-6 pt-4 flex flex-wrap items-center gap-1 text-sm text-gray-500 dark:text-gray-400">
-          <li><Link href="/" className="hover:text-brand">Inicio</Link></li>
-          <li aria-hidden="true"><ChevronRight className="h-3 w-3" /></li>
-          <li><Link href="/tests" className="hover:text-brand">Todos los exámenes</Link></li>
-          <li aria-hidden="true"><ChevronRight className="h-3 w-3" /></li>
-          <li aria-current="page" className="text-gray-700 dark:text-gray-200">Examen de práctica CDL</li>
-        </ol>
-      </nav>
 
       {/* Hero */}
       <div className="relative overflow-hidden">

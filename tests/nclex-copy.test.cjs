@@ -34,7 +34,6 @@ const stubs = {
   './V2Paywall': { useV2Paywall: () => ({ modalProps: {} }), V2Paywall: () => null },
   '@/components/dashboard/ProgressCard': { ProgressCard: () => null, Collapse: () => null },
   '@/components/exam/ExamLandingHero': { ExamLandingHero: () => null, ExamLandingCTA: () => null },
-  '@/components/exam/ExamLandingBreadcrumbs': { ExamLandingBreadcrumbs: () => null },
   '@/components/exam/ExamRelatedTests': { ExamRelatedTests: () => null },
 };
 function loadView(relativePath) {

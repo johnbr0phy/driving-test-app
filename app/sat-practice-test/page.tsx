@@ -3,7 +3,6 @@ import Image from "next/image";
 import { getTigerAsset } from "@/lib/tigerAssets";
 import { Smartphone, Monitor } from "lucide-react";
 import { ExamLandingHero, ExamLandingCTA } from "@/components/exam/ExamLandingHero";
-import { ExamLandingBreadcrumbs } from "@/components/exam/ExamLandingBreadcrumbs";
 import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 
@@ -121,7 +120,6 @@ export default function SatLandingPage() {
   return (
     <div data-theme="sat" className="flex-1 bg-white dark:bg-gray-900">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <ExamLandingBreadcrumbs examId="sat" />
 
       {/* Hero */}
       <div className="relative overflow-hidden">

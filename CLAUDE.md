@@ -159,7 +159,7 @@ To add an exam: add an `ExamConfig` to `lib/exams.ts`, a bank module `lib/banks/
 
 These pages are the DMV flow, not the CDL one: `lib/examRoutes.ts` (`DMV_ROUTES` / `getExamRoutes(id)`) parameterises the shared pieces (`hooks/useTestResults.ts`, `components/results/*`, `components/MissDrill.tsx`, `components/dashboard/ProgressCard.tsx`, `lib/missedQuestions.ts`, `components/AttemptChart.tsx`) by route base, test IDs, pass line, and premium gating. Defaults reproduce DMV behaviour exactly; when changing the DMV results/drill/dashboard flow, keep every exam working.
 
-Theme colors come from the `[data-theme="<examId>"]` blocks in `app/globals.css`; `contexts/TestThemeContext.tsx` and `components/HeaderSwitch.tsx` pick the header by path.
+Theme colors come from the `[data-theme="<examId>"]` blocks in `app/globals.css`; `contexts/TestThemeContext.tsx` and `components/HeaderSwitch.tsx` pick the header by path. Every header logo is `components/BrandLockup.tsx`: the exam's tiger, "tigertest" and the test name in `text-brand` (DMV pages name the state). `tools/build_logo_svgs.py` writes the same lockup as standalone SVGs to `public/logos/<id>.svg` and `<id>-dark.svg` (DMV states under `public/logos/dmv/`); re-run it after adding an exam or changing a brand color.
 
 ### Dark mode
 

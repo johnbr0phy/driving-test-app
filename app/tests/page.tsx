@@ -1,6 +1,5 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
 import { TEST_CATALOG } from "@/lib/testCatalog";
 import { TestCatalogGrid } from "@/components/TestCatalogGrid";
 
@@ -45,7 +44,6 @@ export default function TestsHubPage() {
       <div className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 pt-14 pb-12 md:pt-20 md:pb-16 text-center">
-          <Image src="/tiger.png" alt="TigerTest" width={72} height={72} className="mx-auto mb-5 w-16 md:w-[72px]" />
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-gray-50 tracking-tight">Pick Your Practice Test</h1>
         </div>
       </div>

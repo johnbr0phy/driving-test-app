@@ -5,6 +5,7 @@ import { Smartphone, Monitor } from "lucide-react";
 import { ExamLandingHero, ExamLandingCTA } from "@/components/exam/ExamLandingHero";
 import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
+import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
@@ -104,6 +105,7 @@ const jsonLd = {
             text: "Yes. The questions cover material that every major lifeguard training program teaches: scanning, victim recognition, rescue tube skills, spinal injury care, CPR and AED per current guidelines, first aid and facility safety. It is a study tool, not a certificate; you still need to complete an in-person course with a certified instructor to be hired as a lifeguard.",
           },
         },
+        classFaqJsonLd("lifeguard"),
       ],
     },
   ],
@@ -296,6 +298,7 @@ export default function LifeguardLandingPage() {
               Yes. The questions cover material that every major lifeguard training program teaches: scanning, victim recognition, rescue tube skills, spinal injury care, CPR and AED per current guidelines, first aid and facility safety. It is a study tool, not a certificate; you still need to complete an in-person course with a certified instructor to be hired as a lifeguard.
             </p>
           </div>
+          <ExamClassFaq examId="lifeguard" />
         </div>
       </div>
 

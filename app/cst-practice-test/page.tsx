@@ -5,6 +5,7 @@ import { Smartphone, Monitor } from "lucide-react";
 import { ExamLandingHero, ExamLandingCTA } from "@/components/exam/ExamLandingHero";
 import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
+import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
@@ -96,6 +97,7 @@ const jsonLd = {
             text: "Largely, yes. The NCCT Tech in Surgery - Certified (TS-C) exam covers the same perioperative, sterilization, and basic science material, so this bank is useful preparation, though its exact weighting differs.",
           },
         },
+        classFaqJsonLd("cst"),
       ],
     },
   ],
@@ -297,6 +299,7 @@ export default function CSTLandingPage() {
               Create a free account if you want your progress saved across devices.
             </p>
           </div>
+          <ExamClassFaq examId="cst" />
         </div>
       </div>
 

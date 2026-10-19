@@ -5,6 +5,7 @@ import { Smartphone, Monitor } from "lucide-react";
 import { ExamLandingHero, ExamLandingCTA } from "@/components/exam/ExamLandingHero";
 import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
+import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
@@ -96,6 +97,7 @@ const jsonLd = {
             text: "Yes. The CBSPD Certified Sterile Processing and Distribution Technician (CSPDT) exam covers the same decontamination, packaging, sterilization, storage, and equipment material, so this bank prepares you for either credential.",
           },
         },
+        classFaqJsonLd("crcst"),
       ],
     },
   ],
@@ -297,6 +299,7 @@ export default function CRCSTLandingPage() {
               Create a free account if you want your progress saved across devices.
             </p>
           </div>
+          <ExamClassFaq examId="crcst" />
         </div>
       </div>
 

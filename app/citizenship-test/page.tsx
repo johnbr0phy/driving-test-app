@@ -5,6 +5,7 @@ import { Smartphone, Monitor } from "lucide-react";
 import { ExamLandingHero, ExamLandingCTA } from "@/components/exam/ExamLandingHero";
 import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
+import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
@@ -96,6 +97,7 @@ const jsonLd = {
             text: "Some answers depend on who holds office at your interview. Check the President, Vice President, Speaker, Chief Justice, your senator, your U.S. representative, and your governor. Also learn your state capital. TigerTest uses D.C. or territory examples for the four local questions; prepare your own answers using USCIS resources.",
           },
         },
+        classFaqJsonLd("civics"),
       ],
     },
   ],
@@ -306,6 +308,7 @@ export default function CitizenshipLandingPage() {
               Create a free account if you want your progress saved across devices.
             </p>
           </div>
+          <ExamClassFaq examId="civics" />
         </div>
       </div>
 

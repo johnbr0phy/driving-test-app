@@ -146,7 +146,7 @@ export function Footer() {
             {showLanguageToggle && <LanguageSwitcher languages={isAltExam ? examLangs : undefined} />}
             <ThemeToggle className="h-7 w-7" />
             <Link href="/teach" className="hover:text-brand hover:underline">
-              For teachers
+              For Teachers
             </Link>
             <Link href="/privacy" className="hover:text-brand hover:underline">
               Privacy Policy

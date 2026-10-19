@@ -5,6 +5,7 @@ import { Smartphone, Monitor } from "lucide-react";
 import { ExamLandingHero, ExamLandingCTA } from "@/components/exam/ExamLandingHero";
 import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
+import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
@@ -96,6 +97,7 @@ const jsonLd = {
             text: "Yes. All four practice exams and all six training sets are free, with no account required.",
           },
         },
+        classFaqJsonLd("ham"),
       ],
     },
   ],
@@ -303,6 +305,7 @@ export default function HamLandingPage() {
               Create a free account if you want your progress saved across devices.
             </p>
           </div>
+          <ExamClassFaq examId="ham" />
         </div>
       </div>
 

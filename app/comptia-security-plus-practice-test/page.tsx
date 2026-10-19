@@ -5,6 +5,7 @@ import { Smartphone, Monitor } from "lucide-react";
 import { ExamLandingHero, ExamLandingCTA } from "@/components/exam/ExamLandingHero";
 import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
+import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
@@ -105,6 +106,7 @@ const jsonLd = {
             text: "Yes. Both practice tests and all five drills are free, with no account required. Create a free account if you want your progress saved across devices.",
           },
         },
+        classFaqJsonLd("secplus"),
       ],
     },
   ],
@@ -297,6 +299,7 @@ export default function SecplusLandingPage() {
               Yes. Both practice tests and all five drills are free, with no account required. Create a free account if you want your progress saved across devices.
             </p>
           </div>
+          <ExamClassFaq examId="secplus" />
         </div>
       </div>
 

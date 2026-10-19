@@ -8,12 +8,10 @@ import { useAuth } from "@/contexts/AuthContext";
 import { useStore } from "@/store/useStore";
 import { useHydration } from "@/hooks/useHydration";
 import { useTestTheme } from "@/contexts/TestThemeContext";
-import { Truck, Bike, Flag, Plane, Radio, Thermometer, HeartPulse, Pill, Syringe, Stethoscope, Activity, SmilePlus, Siren, Utensils, House, Umbrella, Stamp, GraduationCap, Cloud, Cpu, ChefHat, Sailboat, Target, LockKeyhole, BookOpenCheck, Medal, Bandage, HardHat, Forklift, Wine, PencilLine, BadgeCheck, LifeBuoy, Building2, Microscope, Scissors, ShieldCheck } from "lucide-react";
 import { examLandingPath, examLanguage, examLanguages, getExamById, getExamVariants } from "@/lib/exams";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { createT, type Language } from "@/i18n";
-import Image from "next/image";
 import { TestSwitcher } from "@/components/TestSwitcher";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { AdminLink } from "@/components/AdminLink";
@@ -44,11 +42,6 @@ export function CDLHeader() {
     | undefined;
   const contentLang: Language = landingLang ?? (exam ? examLanguage(exam, language) : "en");
   const t = createT(contentLang);
-  // Before the exam is started the logo goes to the landing in the language
-  // the person is using, so choosing Spanish and then tapping the logo lands
-  // on the Spanish page.
-  const landingHref =
-    (contentLang !== "en" && exam?.translations?.[contentLang as Exclude<Language, "en">]?.landingPath) || theme.logoHome;
   // A translated exam's landings carry the DMV homepage's language switcher:
   // each language is its own URL, so picking one goes there (and sets the app
   // language for the dashboard behind it).
@@ -64,11 +57,7 @@ export function CDLHeader() {
 
   // State variants (/real-estate/ca) run their tests under the family's header.
   const variants = getExamVariants(theme.id);
-  const variant = variants.find((v) => pathname === v.slug || pathname?.startsWith(`${v.slug}/`));
   const bases = [theme.routeBase, ...variants.map((v) => v.slug)];
-  // Once it is started the logo goes back to its dashboard, not the landing
-  // page the person has already been through.
-  const logoHref = started ? (variant ? `${variant.slug}/dashboard` : theme.dashboardPath) : landingHref;
   // The dashboard's own save card (GuestSaveCard) already offers Google, email and
   // sign in to a guest, so the header leaves that ask to it.
   const onDashboard = bases.some((b) => pathname === `${b}/dashboard`);
@@ -81,59 +70,7 @@ export function CDLHeader() {
   return (
     <header className="border-b bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <Link href={logoHref} className="group flex-shrink-0">
-          <BrandLockup
-            subtitle={variant?.name ?? theme.headerTitle}
-            icon={
-              theme.logoIcon ? (
-                <Image src={theme.logoIcon} alt={theme.name} width={40} height={40} className="w-10 h-10" />
-              ) : (
-                <div className="w-10 h-10 bg-brand rounded-lg flex items-center justify-center">
-                  {(() => {
-                    const icon = getExamById(theme.id)?.icon;
-                    if (icon === "bike") return <Bike className="h-6 w-6 text-white" />;
-                    if (icon === "flag") return <Flag className="h-6 w-6 text-white" />;
-                    if (icon === "plane") return <Plane className="h-6 w-6 text-white" />;
-                    if (icon === "radio") return <Radio className="h-6 w-6 text-white" />;
-                    if (icon === "thermometer") return <Thermometer className="h-6 w-6 text-white" />;
-                    if (icon === "heart") return <HeartPulse className="h-6 w-6 text-white" />;
-                    if (icon === "pill") return <Pill className="h-6 w-6 text-white" />;
-                    if (icon === "syringe") return <Syringe className="h-6 w-6 text-white" />;
-                    if (icon === "stethoscope") return <Stethoscope className="h-6 w-6 text-white" />;
-                    if (icon === "activity") return <Activity className="h-6 w-6 text-white" />;
-                    if (icon === "tooth") return <SmilePlus className="h-6 w-6 text-white" />;
-                    if (icon === "siren") return <Siren className="h-6 w-6 text-white" />;
-                    if (icon === "utensils") return <Utensils className="h-6 w-6 text-white" />;
-                    if (icon === "house") return <House className="h-6 w-6 text-white" />;
-                    if (icon === "umbrella") return <Umbrella className="h-6 w-6 text-white" />;
-                    if (icon === "stamp") return <Stamp className="h-6 w-6 text-white" />;
-                    if (icon === "graduation") return <GraduationCap className="h-6 w-6 text-white" />;
-                    if (icon === "cloud") return <Cloud className="h-6 w-6 text-white" />;
-                    if (icon === "cpu") return <Cpu className="h-6 w-6 text-white" />;
-                    if (icon === "chef") return <ChefHat className="h-6 w-6 text-white" />;
-                    if (icon === "sailboat") return <Sailboat className="h-6 w-6 text-white" />;
-                    if (icon === "target") return <Target className="h-6 w-6 text-white" />;
-                    if (icon === "lock") return <LockKeyhole className="h-6 w-6 text-white" />;
-                    if (icon === "book") return <BookOpenCheck className="h-6 w-6 text-white" />;
-                    if (icon === "medal") return <Medal className="h-6 w-6 text-white" />;
-                    if (icon === "bandage") return <Bandage className="h-6 w-6 text-white" />;
-                    if (icon === "hardhat") return <HardHat className="h-6 w-6 text-white" />;
-                    if (icon === "forklift") return <Forklift className="h-6 w-6 text-white" />;
-                    if (icon === "wine") return <Wine className="h-6 w-6 text-white" />;
-                    if (icon === "pencil") return <PencilLine className="h-6 w-6 text-white" />;
-                    if (icon === "badge") return <BadgeCheck className="h-6 w-6 text-white" />;
-                    if (icon === "lifebuoy") return <LifeBuoy className="h-6 w-6 text-white" />;
-                    if (icon === "building") return <Building2 className="h-6 w-6 text-white" />;
-                    if (icon === "microscope") return <Microscope className="h-6 w-6 text-white" />;
-                    if (icon === "scissors") return <Scissors className="h-6 w-6 text-white" />;
-                    if (icon === "shield") return <ShieldCheck className="h-6 w-6 text-white" />;
-                    return <Truck className="h-6 w-6 text-white" />;
-                  })()}
-                </div>
-              )
-            }
-          />
-        </Link>
+        <BrandLockup />
 
         <div className="flex items-center gap-1 sm:gap-2">
           <TestSwitcher />

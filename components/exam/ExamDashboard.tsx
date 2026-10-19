@@ -74,8 +74,8 @@ export function ExamDashboard({ exam: source }: { exam: ExamConfig }) {
     if (hydrated && !authLoading && !user && !isGuest) startGuestSession();
   }, [hydrated, authLoading, user, isGuest, startGuestSession]);
 
-  // This is the exam the person's emails should be about, until they open
-  // another exam's dashboard.
+  // Opening this dashboard makes it the current test (the logo's home and the
+  // emails' subject) until another dashboard is opened.
   const setPrimaryExam = useStore((state) => state.setPrimaryExam);
   const markExamStarted = useStore((state) => state.markExamStarted);
   useEffect(() => {

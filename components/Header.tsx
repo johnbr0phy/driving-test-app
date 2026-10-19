@@ -10,33 +10,13 @@ import { AdminLink } from "@/components/AdminLink";
 import { TeachLink } from "@/components/TeachLink";
 import { useHydration } from "@/hooks/useHydration";
 import { useTranslation } from "@/contexts/LanguageContext";
-import Image from "next/image";
 import { BarChart3 } from "lucide-react";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { TestSwitcher } from "@/components/TestSwitcher";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { EXAMS } from "@/lib/exams";
 import { useExamStarted } from "@/hooks/useExamStarted";
-import { getStateBySlug, states } from "@/data/states";
 import { BrandLockup } from "@/components/BrandLockup";
-
-const DMV_APP_PREFIXES = ["/dmv/", "/dashboard", "/stats", "/drill", "/practice", "/training", "/test/", "/onboarding", "/dmv-practice-test", "/practice-tests-by-state"];
-const DMV_LOCALE_HUBS = ["/es/examenes-practica-por-estado", "/ko/juibyeol-dmv-pilgi-siheom", "/vi/thi-thu-dmv-theo-tieu-bang", "/zh/gezhou-dmv-bishi-lianxi"];
-
-/** DMV pages wear the "DMV Practice Test" title like every exam wears its own;
- *  the hub, settings and sign-in pages keep the tigertest.io wordmark. */
-function isDmvPath(pathname: string | null): boolean {
-  if (!pathname) return false;
-  if (DMV_APP_PREFIXES.some((p) => pathname === p || pathname.startsWith(p.endsWith("/") ? p : `${p}/`))) return true;
-  if (DMV_LOCALE_HUBS.includes(pathname)) return true;
-  return !!dmvLandingState(pathname);
-}
-
-/** The state a DMV state page is about: /california-dmv-practice-test and the es/ko/vi/zh equivalents. */
-function dmvLandingState(pathname: string | null) {
-  const m = pathname?.match(/^\/(?:(?:es|ko|vi|zh)\/)?([a-z-]+?)-(?:dmv-practice-test|examen-practica-dmv|dmv-pilgi-siheom|thi-thu-dmv|dmv-bishi-lianxi)$/);
-  return m ? getStateBySlug(m[1]) : undefined;
-}
 
 export function Header() {
   const { user } = useAuth();
@@ -48,21 +28,10 @@ export function Header() {
   // dashboard or stats yet, so they see "Sign In" here, not "Sign up to save".
   const dmvStarted = useExamStarted("dmv");
   const isGuest = guest && dmvStarted;
-  const subscription = useStore((state) => state.subscription);
-  const isPremium = hydrated && !guest && !!user && subscription?.isPremium === true;
-  const { t, language } = useTranslation();
+  const { t } = useTranslation();
 
   const displayPhotoURL = photoURL || user?.photoURL;
   const selectedState = useStore((state) => state.selectedState);
-
-  // Under the wordmark, DMV pages name the state test: the page's own state, else the
-  // reader's chosen one (English only, other languages keep the plain title).
-  const dmvState = dmvLandingState(pathname) ?? (hydrated ? states.find((s) => s.code === selectedState) : undefined);
-  const dmvSubtitle = !isDmvPath(pathname)
-    ? null
-    : dmvState && language === "en"
-      ? `${dmvState.name} DMV Practice Test`
-      : t("common.dmvHeaderTitle");
 
   // Hide header on test and training pages (DMV and registry exams)
   const hideHeader =
@@ -87,12 +56,7 @@ export function Header() {
   return (
     <header className="border-b bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <Link href={isDmvPath(pathname) && (user || isGuest) ? "/dmv/dashboard" : "/"} className="flex items-center gap-2 group flex-shrink-0">
-            <BrandLockup
-              icon={<Image src={isPremium ? "/tiger_face_01.png" : "/tiger.png"} alt="tigertest.io" width={40} height={40} className="w-10 h-10" />}
-              subtitle={dmvSubtitle}
-            />
-          </Link>
+        <BrandLockup />
 
           <div className="flex items-center gap-1 sm:gap-2">
             <TestSwitcher />

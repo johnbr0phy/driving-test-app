@@ -1,17 +1,19 @@
 "use client";
 
 // A teacher's class: the link to post, class totals, the topics the class
-// misses most, the most-missed questions and one row per student.
+// misses most, the most-missed questions and one row per student; a row
+// opens what that student needs help with.
 
 import { useCallback, useEffect, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
 import Link from "next/link";
 import { QRCodeSVG } from "qrcode.react";
-import { Check, Copy, QrCode, RefreshCw } from "lucide-react";
+import { Check, ChevronRight, Copy, QrCode, RefreshCw } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 import { classLink, classUrl, teachFetch } from "@/lib/teachClient";
-import { normalizeClassCode, type ClassReport } from "@/lib/classes";
+import { normalizeClassCode, type ClassReport, type ClassStudentRow } from "@/lib/classes";
 import { ClassQuestions } from "@/components/teach/ClassQuestions";
+import { StudentDetail } from "@/components/teach/StudentDetail";
 import { scoreBar, scoreChip, scoreLevel, scoreTrack } from "@/components/teach/scoreColors";
 
 function pct(correct: number, answered: number): number {
@@ -26,6 +28,8 @@ function ago(iso: string | null): string {
   return `${days} days ago`;
 }
 
+const studentKey = (s: ClassStudentRow) => `${s.name}|${s.joinedAt}`;
+
 export default function ClassPage() {
   const params = useParams();
   const router = useRouter();
@@ -36,6 +40,8 @@ export default function ClassPage() {
   const [copied, setCopied] = useState(false);
   const [showQr, setShowQr] = useState(false);
   const [refreshing, setRefreshing] = useState(false);
+  // By name and join time, so Refresh shows the open student's new numbers.
+  const [selectedKey, setSelectedKey] = useState<string | null>(null);
 
   const load = useCallback(async () => {
     if (!user) return;
@@ -150,7 +156,10 @@ export default function ClassPage() {
 
             <div className={`${card} overflow-x-auto`}>
               <div className="flex items-center justify-between mb-3">
-                <h2 className="font-semibold text-gray-900 dark:text-gray-50">Students</h2>
+                <div>
+                  <h2 className="font-semibold text-gray-900 dark:text-gray-50">Students</h2>
+                  <p className="text-xs text-gray-500 dark:text-gray-400">Click a student to see what they need help with.</p>
+                </div>
                 <button type="button" onClick={() => void load()} className="inline-flex items-center gap-1.5 text-sm text-gray-600 dark:text-gray-300" disabled={refreshing}>
                   <RefreshCw className={`w-4 h-4 ${refreshing ? "animate-spin" : ""}`} aria-hidden="true" /> Refresh
                 </button>
@@ -163,12 +172,21 @@ export default function ClassPage() {
                     <th className="font-normal">Answered</th>
                     <th className="font-normal">Accuracy</th>
                     <th className="font-normal">Best practice test</th>
+                    <th className="w-6"><span className="sr-only">Open</span></th>
                   </tr>
                 </thead>
                 <tbody>
                   {report.students.map((s, i) => (
-                    <tr key={`${s.name}-${i}`} className="border-t border-gray-100 dark:border-gray-800 text-gray-900 dark:text-gray-50">
-                      <td className="py-2.5 pr-3">{s.name}</td>
+                    <tr
+                      key={`${s.name}-${i}`}
+                      onClick={() => setSelectedKey(studentKey(s))}
+                      className="border-t border-gray-100 dark:border-gray-800 text-gray-900 dark:text-gray-50 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-800/60"
+                    >
+                      <td className="py-2.5 pr-3">
+                        <button type="button" onClick={(e) => { e.stopPropagation(); setSelectedKey(studentKey(s)); }} className="text-left font-medium underline-offset-2 hover:underline">
+                          {s.name}
+                        </button>
+                      </td>
                       <td className="pr-3">{ago(s.lastActive)}</td>
                       <td className="pr-3 tabular-nums">{s.answered}</td>
                       <td className="pr-3 tabular-nums">{s.answered ? `${pct(s.correct, s.answered)}%` : "-"}</td>
@@ -181,11 +199,17 @@ export default function ClassPage() {
                           <span className="text-gray-500 dark:text-gray-400">No test yet</span>
                         )}
                       </td>
+                      <td className="text-gray-400"><ChevronRight className="w-4 h-4" aria-hidden="true" /></td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
+            <StudentDetail
+              student={report.students.find((s) => studentKey(s) === selectedKey) ?? null}
+              report={report}
+              onClose={() => setSelectedKey(null)}
+            />
           </>
         )}
         <p className="text-xs text-gray-500 dark:text-gray-400">

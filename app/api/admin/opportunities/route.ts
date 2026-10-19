@@ -4,6 +4,7 @@ import { isAdminEmail } from '@/lib/admin';
 import { getInternalUids } from '@/lib/server/internalUsers';
 import { buildOpportunities, type OpportunitiesPayload } from '@/lib/server/opportunities';
 import { getStripe } from '@/lib/stripe';
+import { latestBrief } from '@/lib/server/dailyBrief';
 
 // Data for /admin/opportunities (lib/server/opportunities). Read-only; cached
 // in memory for five minutes because each miss lists Stripe checkouts.
@@ -29,8 +30,10 @@ export async function GET(request: NextRequest) {
 
   try {
     const refresh = request.nextUrl.searchParams.get('refresh') === 'true';
+    // The daily update is read fresh every time, so a new one shows at once.
+    const brief = await latestBrief(getAdminDb()).catch(() => null);
     if (!refresh && cached && Date.now() - cached.at < CACHE_TTL_MS) {
-      return NextResponse.json(cached.payload, { headers: { 'Cache-Control': 'no-store', 'X-Cache': 'HIT' } });
+      return NextResponse.json({ ...cached.payload, brief }, { headers: { 'Cache-Control': 'no-store', 'X-Cache': 'HIT' } });
     }
     let stripe = null;
     try {
@@ -40,7 +43,7 @@ export async function GET(request: NextRequest) {
     }
     const payload = await buildOpportunities(getAdminDb(), stripe, await getInternalUids());
     cached = { payload, at: Date.now() };
-    return NextResponse.json(payload, { headers: { 'Cache-Control': 'no-store', 'X-Cache': 'MISS' } });
+    return NextResponse.json({ ...payload, brief }, { headers: { 'Cache-Control': 'no-store', 'X-Cache': 'MISS' } });
   } catch (error) {
     console.error('[admin/opportunities]', error);
     return NextResponse.json(

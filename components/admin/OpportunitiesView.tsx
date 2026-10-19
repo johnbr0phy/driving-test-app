@@ -2,8 +2,9 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { RefreshCw, ExternalLink, CheckCircle2, AlertTriangle, XCircle, DollarSign, TrendingUp, Repeat, Wrench } from "lucide-react";
+import { RefreshCw, ExternalLink, Sparkles, ChevronDown, CheckCircle2, AlertTriangle, XCircle, DollarSign, TrendingUp, Repeat, Wrench } from "lucide-react";
 import type { OpportunitiesPayload } from "@/lib/server/opportunities";
+import type { DailyBrief } from "@/lib/server/dailyBrief";
 
 // The /admin/opportunities page body, given the API payload. Kept apart
 // from the page so it renders without an admin session.
@@ -104,11 +105,64 @@ function RateCell({ value }: { value: number | null }) {
   );
 }
 
-export function OpportunitiesView({ data, onRefresh, refreshing }: {
-  data: OpportunitiesPayload;
+/** Claude's daily update (lib/server/dailyBrief), or how to get the first one. */
+function BriefCard({ brief, onWrite, writing, error }: {
+  brief: DailyBrief | null;
+  onWrite?: () => void;
+  writing: boolean;
+  error: string | null;
+}) {
+  const written = brief
+    ? new Date(brief.generatedAt).toLocaleString("en-US", { weekday: "short", month: "short", day: "numeric", hour: "numeric", minute: "2-digit" })
+    : null;
+  return (
+    <section className="text-gray-900 dark:text-gray-50 bg-white dark:bg-gray-900 rounded-xl border border-gray-200/80 dark:border-gray-800/80 shadow-sm p-5 mb-6">
+      <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
+        <p className="inline-flex items-center gap-1.5 text-xs font-medium text-gray-500 dark:text-gray-400">
+          <Sparkles className="h-3.5 w-3.5" aria-hidden />
+          {written ? `Today's update · written by Claude ${written}` : "Today's update"}
+        </p>
+        {onWrite && (
+          <button
+            onClick={onWrite}
+            disabled={writing}
+            className="text-xs text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-100 underline underline-offset-2 disabled:no-underline"
+          >
+            {writing ? "Writing, about 20 seconds..." : brief ? "Write a fresh one" : "Write one now"}
+          </button>
+        )}
+      </div>
+      {brief ? (
+        <>
+          <p className="text-lg font-semibold leading-snug">{brief.headline}</p>
+          <ul className="mt-3 space-y-2">
+            {brief.bullets.map((b) => (
+              <li key={b} className="flex gap-2 text-sm text-gray-700 dark:text-gray-200 leading-relaxed">
+                <span className="text-gray-400 select-none">•</span>
+                <span>{b}</span>
+              </li>
+            ))}
+          </ul>
+        </>
+      ) : (
+        <p className="text-sm text-gray-600 dark:text-gray-300">
+          No update yet. Claude writes one here every weekday morning once the Claude API key is set up in Vercel.
+        </p>
+      )}
+      {error && <p className="mt-3 text-xs text-red-600 dark:text-red-400">{error}</p>}
+    </section>
+  );
+}
+
+export function OpportunitiesView({ data, onRefresh, refreshing, onWriteBrief, writingBrief = false, briefError = null }: {
+  data: OpportunitiesPayload & { brief?: DailyBrief | null };
   onRefresh: () => void;
   refreshing: boolean;
+  onWriteBrief?: () => void;
+  writingBrief?: boolean;
+  briefError?: string | null;
 }) {
+  const [showNotes, setShowNotes] = useState(false);
   const [showAllExams, setShowAllExams] = useState(false);
   const s = data.scoreboard;
   // Busiest first (the API's order); the long tail is one click away.
@@ -151,8 +205,19 @@ export function OpportunitiesView({ data, onRefresh, refreshing }: {
           </div>
         </div>
 
-        {/* What to do next */}
+        <BriefCard brief={data.brief ?? null} onWrite={onWriteBrief} writing={writingBrief} error={briefError} />
+
+        {/* The fixed notes behind the update, folded away */}
         {data.insights.length > 0 && (
+          <button
+            onClick={() => setShowNotes((v) => !v)}
+            className="inline-flex items-center gap-1 text-xs text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-100 mb-4 -mt-2"
+          >
+            <ChevronDown className={`h-3.5 w-3.5 transition-transform ${showNotes ? "rotate-180" : ""}`} aria-hidden />
+            {showNotes ? "Hide" : "Show"} the {data.insights.length} notes behind it
+          </button>
+        )}
+        {showNotes && data.insights.length > 0 && (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
             {data.insights.map((ins) => {
               const Icon = INSIGHT_ICON[ins.kind];

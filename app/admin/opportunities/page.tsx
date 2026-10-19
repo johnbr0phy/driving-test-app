@@ -6,6 +6,7 @@ import { useAuth } from "@/contexts/AuthContext";
 import { useAdmin } from "@/hooks/useAdmin";
 import { OpportunitiesView } from "@/components/admin/OpportunitiesView";
 import type { OpportunitiesPayload } from "@/lib/server/opportunities";
+import type { DailyBrief } from "@/lib/server/dailyBrief";
 
 // What to do next: where revenue and usage can grow, from
 // /api/admin/opportunities (lib/server/opportunities). /admin/v2 is the
@@ -15,7 +16,9 @@ export default function OpportunitiesPage() {
   const { user, loading: authLoading } = useAuth();
   const isAdmin = useAdmin();
   const router = useRouter();
-  const [data, setData] = useState<OpportunitiesPayload | null>(null);
+  const [data, setData] = useState<(OpportunitiesPayload & { brief?: DailyBrief | null }) | null>(null);
+  const [writingBrief, setWritingBrief] = useState(false);
+  const [briefError, setBriefError] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
@@ -37,6 +40,23 @@ export default function OpportunitiesPage() {
     } finally {
       setLoading(false);
       setRefreshing(false);
+    }
+  };
+
+  const writeBrief = async () => {
+    setWritingBrief(true);
+    setBriefError(null);
+    try {
+      const token = await user?.getIdToken();
+      if (!token) throw new Error("Not authenticated");
+      const res = await fetch("/api/admin/daily-brief", { method: "POST", headers: { Authorization: `Bearer ${token}` } });
+      const body = await res.json().catch(() => ({}));
+      if (!res.ok) throw new Error(body.error || `API error ${res.status}`);
+      setData((d) => (d ? { ...d, brief: body } : d));
+    } catch (err) {
+      setBriefError(err instanceof Error ? err.message : "Could not write the update");
+    } finally {
+      setWritingBrief(false);
     }
   };
 
@@ -67,5 +87,14 @@ export default function OpportunitiesPage() {
     );
   }
 
-  return <OpportunitiesView data={data} onRefresh={() => load(true)} refreshing={refreshing} />;
+  return (
+    <OpportunitiesView
+      data={data}
+      onRefresh={() => load(true)}
+      refreshing={refreshing}
+      onWriteBrief={writeBrief}
+      writingBrief={writingBrief}
+      briefError={briefError}
+    />
+  );
 }

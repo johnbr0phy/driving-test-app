@@ -362,16 +362,16 @@ function DashboardContent() {
 
         <ClassBanner examId="dmv" className="mb-4" />
 
-        {needsState && <DmvStatePrompt />}
-
         {/* Sign-up prompt for guests */}
-        {isGuest && selectedState && (
+        {isGuest && (
           <GuestSaveCard
             className="mb-4"
             signupHref="/signup"
             {...v1GuestCounts(selectedState, completedTests, trainingAnswerHistory)}
           />
         )}
+
+        {needsState && <DmvStatePrompt />}
 
         {/* Hero section - card with progress */}
         <div className="rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 p-4 mb-6">

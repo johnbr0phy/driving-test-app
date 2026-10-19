@@ -14,6 +14,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { useAuth } from "@/contexts/AuthContext";
 import { useStore } from "@/store/useStore";
 import { TestSwitcher } from "@/components/TestSwitcher";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import { AdminLink } from "@/components/AdminLink";
 import { TeachLink } from "@/components/TeachLink";
 import { ExamV2Config } from "@/lib/v2/types";
@@ -45,6 +46,7 @@ export function V2Header({ exam }: { exam: ExamV2Config }) {
         </Link>
         <div className="flex items-center gap-2 sm:gap-4">
           <TestSwitcher />
+          <ThemeToggle />
           {user ? (
             <>
               <TeachLink />

@@ -14,6 +14,7 @@ import Image from "next/image";
 import { BarChart3 } from "lucide-react";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { TestSwitcher } from "@/components/TestSwitcher";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import { EXAMS } from "@/lib/exams";
 import { useExamStarted } from "@/hooks/useExamStarted";
 
@@ -61,6 +62,7 @@ export function Header() {
 
           <div className="flex items-center gap-2 sm:gap-4">
             <TestSwitcher />
+            <ThemeToggle />
 
             {/* Language Toggle - shown only on the homepage; other pages render it in the footer */}
             {isHomepage && <LanguageSwitcher />}

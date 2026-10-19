@@ -68,7 +68,7 @@ export function TestSwitcher({ className = "" }: { className?: string }) {
         aria-label={`Switch practice test, currently ${current.shortName}`}
         className={`relative flex items-center gap-1.5 rounded-full bg-gray-100 dark:bg-gray-800 px-2.5 py-1.5 text-sm text-gray-700 dark:text-gray-200 transition-colors hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-1 ${className}`}
       >
-        <LayoutGrid className="h-4 w-4 text-gray-500 dark:text-gray-400" aria-hidden="true" />
+        <LayoutGrid className="h-4 w-4 text-gray-500 dark:text-gray-400 sm:hidden" aria-hidden="true" />
         <span className="hidden sm:inline font-medium">All tests</span>
         <ChevronDown
           className={`h-3.5 w-3.5 text-gray-500 dark:text-gray-400 transition-transform ${open ? "rotate-180" : ""}`}

@@ -259,6 +259,12 @@ export const ko: TranslationKeys = {
     processing: "처리",
     embeddingMicrotomy: "포매 및 박절",
     staining: "염색",
+    stainRoutine: "염색: H&E, 염료 및 봉입",
+    stainCarbohydrates: "염색: 탄수화물 및 아밀로이드",
+    stainConnective: "염색: 결합조직, 근육 및 신경",
+    stainMicroorganisms: "염색: 미생물",
+    stainPigments: "염색: 색소, 무기질 및 지질",
+    stainImmuno: "염색: IHC, IF 및 ISH",
     laboratoryOperations: "실험실 운영",
     // CST (surgical technologist) categories
     preoperativePreparation: "Preoperative Preparation",

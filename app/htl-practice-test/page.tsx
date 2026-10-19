@@ -11,7 +11,7 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
 const title = "Free HTL Practice Test 2026 - ASCP Histotechnologist Exam Prep";
 const description =
-  "Free ASCP HTL and HT practice tests with 200 questions weighted to the official 2025 content guideline. Fixation, processing, embedding, microtomy, staining, and lab operations with instant feedback.";
+  "Free ASCP HTL and HT practice tests with 214 questions weighted to the official 2025 content guideline. Fixation, processing, embedding, microtomy, staining, and lab operations with instant feedback.";
 
 export const metadata: Metadata = {
   title,
@@ -49,7 +49,7 @@ const jsonLd = {
       operatingSystem: "Any",
       offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
       featureList: [
-        "200 HTL practice questions",
+        "214 HTL practice questions",
         "4 blueprint-weighted practice tests",
         "Training sets for all 5 ASCP content areas",
         "Instant feedback with explanations",
@@ -129,7 +129,7 @@ export default function HTLLandingPage() {
           <ExamLandingHero
             dashboardHref="/htl/dashboard"
             shortName="HTL"
-            subtitle="200 questions weighted to the ASCP content guideline. Tuned for mobile. No account needed."
+            subtitle="214 questions weighted to the ASCP content guideline. Tuned for mobile. No account needed."
             shots={{ mobile: "/landing/htl-mobile.png", desktop: "/landing/htl-desktop.png" }}
           />
         </div>
@@ -239,7 +239,7 @@ export default function HTLLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">2. Weight your study like the exam</h3>
               <p>
-                Staining is the largest area at 30 to 40 percent, so start with the Staining training set.
+                Staining is the largest area at 30 to 40 percent, so start with the six Staining sets, split by what each stain shows: carbohydrates and amyloid, connective tissue and nerve, microorganisms, pigments and minerals, and immunostains.
                 Fixation and Embedding and Microtomy are next at 15 to 25 percent each.
               </p>
             </div>
@@ -307,7 +307,7 @@ export default function HTLLandingPage() {
         <div className="absolute inset-0 bg-gradient-to-t from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">Ready to Pass the HTL Exam?</h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Free to start. No account required. 200 questions across all five content areas.</p>
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Free to start. No account required. 214 questions across all five content areas.</p>
           <ExamLandingCTA dashboardHref="/htl/dashboard" />
         </div>
       </div>

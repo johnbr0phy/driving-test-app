@@ -259,6 +259,12 @@ export const zh: TranslationKeys = {
     processing: "处理",
     embeddingMicrotomy: "包埋与切片",
     staining: "染色",
+    stainRoutine: "染色：H&E、染料与封片",
+    stainCarbohydrates: "染色：碳水化合物与淀粉样蛋白",
+    stainConnective: "染色：结缔组织、肌肉与神经",
+    stainMicroorganisms: "染色：微生物",
+    stainPigments: "染色：色素、矿物质与脂质",
+    stainImmuno: "染色：免疫组化、免疫荧光与原位杂交",
     laboratoryOperations: "实验室运营",
     // CST (surgical technologist) categories
     preoperativePreparation: "Preoperative Preparation",

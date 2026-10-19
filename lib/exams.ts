@@ -4,7 +4,7 @@
  *
  * Each exam is namespaced in the store by an ID range and a pseudo state
  * code so its progress never collides with DMV data:
- *   HTL   200s  (tests 201-204, sets 201-205)
+ *   HTL   200s  (tests 201-204, sets 201-211; 204 retired)
  *   CST   300s  (tests 301-304, sets 301-305)
  *   CRCST 400s  (tests 401-404, sets 401-406)
  *
@@ -2062,7 +2062,13 @@ const htl: ExamConfig = {
   questionsPerTest: 50,
   passPct: 70,
   blueprint: {
-    staining: 18,
+    // Staining (18 of 50, 36%) is split by what the stain demonstrates, Carson-style.
+    stainRoutine: 3,
+    stainCarbohydrates: 3,
+    stainConnective: 3,
+    stainMicroorganisms: 2,
+    stainPigments: 2,
+    stainImmuno: 5,
     fixation: 10,
     embeddingMicrotomy: 10,
     processing: 7,
@@ -2072,13 +2078,25 @@ const htl: ExamConfig = {
     { setNumber: 1, id: 201, name: "Fixation", categories: ["fixation"], size: 40, weightLabel: "15–25% of the exam" },
     { setNumber: 2, id: 202, name: "Processing", categories: ["processing"], size: 28, weightLabel: "10–20% of the exam" },
     { setNumber: 3, id: 203, name: "Embedding & Microtomy", categories: ["embeddingMicrotomy"], size: 40, weightLabel: "15–25% of the exam" },
-    { setNumber: 4, id: 204, name: "Staining", categories: ["staining"], size: 72, weightLabel: "30–40% of the exam", partNames: ["H&E & Special Stains", "Immunostains & Other Methods"] },
-    { setNumber: 5, id: 205, name: "Laboratory Operations", categories: ["laboratoryOperations"], size: 20, weightLabel: "10–15% of the exam" },
+    // Staining was one set (204) until Oct 2026; its progress moves to 206-211 by question id (lib/legacySetSplits.ts).
+    { setNumber: 4, id: 206, name: "H&E, Dyes & Mounting", categories: ["stainRoutine"], size: 16, weightLabel: "Staining, 30–40% of the exam" },
+    { setNumber: 5, id: 207, name: "Carbohydrates & Amyloid", categories: ["stainCarbohydrates"], size: 12, weightLabel: "Staining, 30–40% of the exam" },
+    { setNumber: 6, id: 208, name: "Connective Tissue, Muscle & Nerve", categories: ["stainConnective"], size: 14, weightLabel: "Staining, 30–40% of the exam" },
+    { setNumber: 7, id: 209, name: "Microorganisms", categories: ["stainMicroorganisms"], size: 8, weightLabel: "Staining, 30–40% of the exam" },
+    { setNumber: 8, id: 210, name: "Pigments, Minerals & Lipids", categories: ["stainPigments"], size: 12, weightLabel: "Staining, 30–40% of the exam" },
+    { setNumber: 9, id: 211, name: "IHC, Immunofluorescence & ISH", categories: ["stainImmuno"], size: 24, weightLabel: "Staining, 30–40% of the exam" },
+    { setNumber: 10, id: 205, name: "Laboratory Operations", categories: ["laboratoryOperations"], size: 20, weightLabel: "10–15% of the exam" },
   ],
   categoryLabels: {
     fixation: "Fixation",
     processing: "Processing",
     embeddingMicrotomy: "Embedding & Microtomy",
+    stainRoutine: "Staining: H&E, Dyes & Mounting",
+    stainCarbohydrates: "Staining: Carbohydrates & Amyloid",
+    stainConnective: "Staining: Connective Tissue, Muscle & Nerve",
+    stainMicroorganisms: "Staining: Microorganisms",
+    stainPigments: "Staining: Pigments, Minerals & Lipids",
+    stainImmuno: "Staining: IHC, IF & ISH",
     staining: "Staining",
     laboratoryOperations: "Laboratory Operations",
   },

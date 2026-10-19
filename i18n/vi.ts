@@ -257,6 +257,12 @@ export const vi: TranslationKeys = {
     processing: "Xử lý mô",
     embeddingMicrotomy: "Vùi mô & cắt lát",
     staining: "Nhuộm",
+    stainRoutine: "Nhuộm: H&E, thuốc nhuộm và gắn lam",
+    stainCarbohydrates: "Nhuộm: carbohydrate và amyloid",
+    stainConnective: "Nhuộm: mô liên kết, cơ và thần kinh",
+    stainMicroorganisms: "Nhuộm: vi sinh vật",
+    stainPigments: "Nhuộm: sắc tố, khoáng chất và lipid",
+    stainImmuno: "Nhuộm: IHC, IF và ISH",
     laboratoryOperations: "Vận hành phòng xét nghiệm",
     // CST (surgical technologist) categories
     preoperativePreparation: "Preoperative Preparation",

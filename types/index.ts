@@ -47,6 +47,12 @@ export type QuestionCategory =
   | "processing"
   | "embeddingMicrotomy"
   | "staining"
+  | "stainRoutine"
+  | "stainCarbohydrates"
+  | "stainConnective"
+  | "stainMicroorganisms"
+  | "stainPigments"
+  | "stainImmuno"
   | "laboratoryOperations"
   // NBSTSA CST content areas
   | "preoperativePreparation"

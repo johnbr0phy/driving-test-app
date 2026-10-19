@@ -2,7 +2,8 @@ import { getAdminDb } from "@/lib/firebase-admin";
 import { getCatalogEntry, TestCatalogEntry } from "@/lib/testCatalog";
 
 // The homepage's "Popular this week": catalog tests ranked by questions
-// answered over the last 7 full UTC days, from analytics/questions.byExam
+// answered over the last 7 UTC days, today included so a busy test shows
+// within the hour, from analytics/questions.byExam
 // (internal accounts never send to it). Falls back to a fixed list when
 // Firestore is unreachable, e.g. a local build without credentials.
 
@@ -15,7 +16,7 @@ export interface PopularTest {
 const FALLBACK_IDS = ["dmv", "sat", "act", "teas", "cna", "cdl"];
 
 function lastSevenDays(now = new Date()): string[] {
-  return Array.from({ length: 7 }, (_, i) => new Date(now.getTime() - (i + 1) * 86_400_000).toISOString().slice(0, 10));
+  return Array.from({ length: 7 }, (_, i) => new Date(now.getTime() - i * 86_400_000).toISOString().slice(0, 10));
 }
 
 export async function getPopularTests(limit = 6): Promise<{ tests: PopularTest[]; totalAnswered: number | null }> {

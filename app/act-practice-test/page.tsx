@@ -127,7 +127,7 @@ export default function ActLandingPage() {
             Free ACT Practice Test 2026
           </h1>
           <ExamLandingHero
-            dashboardHref="/act"
+            dashboardHref="/act/dashboard"
             shortName="ACT"
             subtitle="Two full-length enhanced ACTs with real passages, section timing and a 1 to 36 score estimate, plus eleven skill drills built for your phone. Practice Test 1 is free, no account needed."
             shots={{ mobile: "/landing/act-mobile.png", desktop: "/landing/act-desktop.png" }}
@@ -266,7 +266,7 @@ export default function ActLandingPage() {
         <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">Ready to Hit Your ACT Goal?</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Free to start. No account required. A free full-length test and seven free skill drills, with Practice Test 2 and the rest in Premium.</p>
-          <ExamLandingCTA dashboardHref="/act" />
+          <ExamLandingCTA dashboardHref="/act/dashboard" />
         </div>
       </div>
     </div>

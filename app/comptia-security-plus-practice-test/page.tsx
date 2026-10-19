@@ -136,7 +136,7 @@ export default function SecplusLandingPage() {
             Free CompTIA Security+ Practice Test 2026
           </h1>
           <ExamLandingHero
-            dashboardHref="/comptia-security-plus"
+            dashboardHref="/comptia-security-plus/dashboard"
             shortName="Security+"
             subtitle="200 questions weighted to the SY0-701 objectives. Tuned for mobile. No account needed."
             shots={{ mobile: "/landing/secplus-mobile.png", desktop: "/landing/secplus-desktop.png" }}
@@ -310,7 +310,7 @@ export default function SecplusLandingPage() {
         <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">Ready to Pass Security+?</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Free to start. No account required. 200 questions across all five domains.</p>
-          <ExamLandingCTA dashboardHref="/comptia-security-plus" />
+          <ExamLandingCTA dashboardHref="/comptia-security-plus/dashboard" />
         </div>
       </div>
     </div>

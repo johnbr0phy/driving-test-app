@@ -95,7 +95,7 @@ export function TrainingSetCard({ set, locked = false, isPremiumLocked = false, 
   }
 
   return (
-    <Link href={href || `/training?set=${set.id}`} className="block h-full">
+    <Link href={href || `/practice/${set.id}`} className="block h-full">
       {cardContent}
     </Link>
   );

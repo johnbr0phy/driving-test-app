@@ -135,7 +135,7 @@ export default function AwsLandingPage() {
             Free AWS Cloud Practitioner Practice Test 2026
           </h1>
           <ExamLandingHero
-            dashboardHref="/aws-cloud-practitioner"
+            dashboardHref="/aws-cloud-practitioner/dashboard"
             shortName="AWS CCP"
             subtitle="200 questions weighted to the CLF-C02 exam guide. Tuned for mobile. No account needed."
             shots={{ mobile: "/landing/aws-mobile.png", desktop: "/landing/aws-desktop.png" }}
@@ -309,7 +309,7 @@ export default function AwsLandingPage() {
         <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">Ready to Pass the AWS Cloud Practitioner?</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Free to start. No account required. 200 questions across all four domains.</p>
-          <ExamLandingCTA dashboardHref="/aws-cloud-practitioner" />
+          <ExamLandingCTA dashboardHref="/aws-cloud-practitioner/dashboard" />
         </div>
       </div>
     </div>

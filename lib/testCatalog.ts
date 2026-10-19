@@ -118,7 +118,7 @@ const v2Entry = (exam: ExamV2Config): TestCatalogEntry => ({
   org: EXAM_ORG[exam.id] ?? exam.fullName,
   blurb: EXAM_BLURBS[exam.id] ?? exam.tagline,
   href: exam.landingPath,
-  dashboardHref: exam.slug,
+  dashboardHref: `${exam.slug}/dashboard`,
   questions: BANK_SIZES[exam.id] ?? 0,
   icon: exam.icon as TestCatalogEntry["icon"],
   theme: exam.id,

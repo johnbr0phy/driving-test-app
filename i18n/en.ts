@@ -1,6 +1,7 @@
 export const en = {
   // Common
   common: {
+    dmvHeaderTitle: "DMV Practice Test",
     logOut: "Log Out",
     signIn: "Sign In",
     signUp: "Sign up",

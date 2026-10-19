@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, Suspense, useRef } from "react";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { usePathname, useRouter, useSearchParams, useParams } from "next/navigation";
 import { TrainingCard } from "@/components/TrainingCard";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -55,8 +55,16 @@ function ExamTrainingContent({ exam: source }: { exam: ExamConfig }) {
   const resetTrainingSet = useStore((state) => state.resetTrainingSet);
   const isOnboardingComplete = useStore((state) => state.isOnboardingComplete);
 
-  // Get set number from URL if present (1-5, one per ASCP content area)
-  const setParam = searchParams.get('set');
+  // Set number from /<exam>/practice/[n] (1.., one per content area)
+  const params = useParams();
+  const setParam = (params.n as string | undefined) ?? searchParams.get('set');
+  // An old /training?set=n link redirects here with ?set= still on; drop it.
+  useEffect(() => {
+    if (!params.n || !searchParams.has('set')) return;
+    const rest = new URLSearchParams(searchParams.toString());
+    rest.delete('set');
+    router.replace(`${window.location.pathname}${rest.size ? `?${rest}` : ''}`);
+  }, [params.n, searchParams, router]);
   const setNumber = setParam ? parseInt(setParam) : null;
   const isSetMode = setNumber !== null && setNumber >= 1 && setNumber <= exam.trainingSets.length;
   const setDef = isSetMode && setNumber ? exam.trainingSets.find((s) => s.setNumber === setNumber) : undefined;
@@ -108,7 +116,7 @@ function ExamTrainingContent({ exam: source }: { exam: ExamConfig }) {
   // Nothing on registry exams is locked.
   const accessLocked = false;
 
-  // Registry exams only have set mode. The DMV free-practice mode (no ?set=) writes to the
+  // Registry exams only have set mode. The DMV free-practice mode (no set) writes to the
   // shared onboarding counters that DMV Set 1 falls back on, so a visit
   // without a valid set goes back to the dashboard instead of answering there.
   useEffect(() => {
@@ -458,7 +466,7 @@ function ExamTrainingContent({ exam: source }: { exam: ExamConfig }) {
         {/* Question Card */}
         {accessLocked ? null : guestPrompt.showing ? (
           <GuestPromptStep
-            signupHref={`/signup?redirect=${encodeURIComponent(`${pathname}?${searchParams.toString()}`)}`}
+            signupHref={`/signup?redirect=${encodeURIComponent(`${pathname}${searchParams.size ? `?${searchParams.toString()}` : ""}`)}`}
             answered={v1GuestCounts(exam.stateCode, completedTests, trainingAnswerHistory).answered}
             where="training"
             onSkip={handleSkipPrompt}

@@ -131,7 +131,7 @@ export default function SatLandingPage() {
             Free SAT Practice Test 2026
           </h1>
           <ExamLandingHero
-            dashboardHref="/sat"
+            dashboardHref="/sat/dashboard"
             shortName="SAT"
             subtitle="Two full-length digital SATs with timed, adaptive modules and a score estimate, plus eight skill drills built for your phone. Practice Test 1 is free, no account needed."
             shots={{ mobile: "/landing/sat-mobile.png", desktop: "/landing/sat-desktop.png" }}
@@ -270,7 +270,7 @@ export default function SatLandingPage() {
         <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">Ready to Hit Your SAT Goal?</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Free to start. No account required. A free full-length test and six free skill drills, with Practice Test 2 and the rest in Premium.</p>
-          <ExamLandingCTA dashboardHref="/sat" />
+          <ExamLandingCTA dashboardHref="/sat/dashboard" />
         </div>
       </div>
     </div>

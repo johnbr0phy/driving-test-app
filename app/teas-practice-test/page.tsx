@@ -136,7 +136,7 @@ export default function TeasLandingPage() {
             Free TEAS Practice Test 2026
           </h1>
           <ExamLandingHero
-            dashboardHref="/teas"
+            dashboardHref="/teas/dashboard"
             shortName="TEAS"
             subtitle="200 questions across all four ATI TEAS 7 sections. Worked math, anatomy-heavy science. No account needed."
             shots={{ mobile: "/landing/teas-mobile.png", desktop: "/landing/teas-desktop.png" }}
@@ -310,7 +310,7 @@ export default function TeasLandingPage() {
         <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">Ready to Pass the TEAS?</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Free to start. No account required. 200 questions across all four sections.</p>
-          <ExamLandingCTA dashboardHref="/teas" />
+          <ExamLandingCTA dashboardHref="/teas/dashboard" />
         </div>
       </div>
     </div>

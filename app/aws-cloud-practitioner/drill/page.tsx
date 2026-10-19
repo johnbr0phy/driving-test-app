@@ -1,5 +1,5 @@
 import { permanentRedirect } from "next/navigation";
 
 export default function OldDrill() {
-  permanentRedirect("/aws-cloud-practitioner");
+  permanentRedirect("/aws-cloud-practitioner/dashboard");
 }

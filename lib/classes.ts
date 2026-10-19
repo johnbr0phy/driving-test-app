@@ -83,7 +83,7 @@ export function classExamInfo(examId: string, state?: string | null): ClassExamI
   }
   const v2 = EXAMS_V2.find((e) => e.id === examId);
   if (v2) {
-    return { id: examId, kind: "v2", name: v2.name.replace(/ Practice Test$/, ""), home: v2.slug, passPct: 70, topicLabel: (k) => v2.domainLabels[k] ?? k };
+    return { id: examId, kind: "v2", name: v2.name.replace(/ Practice Test$/, ""), home: `${v2.slug}/dashboard`, passPct: 70, topicLabel: (k) => v2.domainLabels[k] ?? k };
   }
   const v1 = getExamById(examId);
   if (v1) {

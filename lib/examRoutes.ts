@@ -49,7 +49,7 @@ export const DMV_ROUTES: ExamRoutes = {
   stats: "/stats",
   test: (id) => `/test/${id}`,
   results: (id) => `/test/${id}/results`,
-  training: (set) => `/training?set=${set}`,
+  training: (set) => `/practice/${set}`,
   drill: (id) => (id ? `/drill?test=${id}` : "/drill"),
   signup: "/signup",
   login: "/login",
@@ -70,10 +70,12 @@ export function routesForExam(exam: ExamConfig, lang: Language = "en"): ExamRout
     id: exam.id,
     dashboard: `${base}/dashboard`,
     stats: `${base}/stats`,
-    test: (id) => `${base}/test/${id}`,
-    results: (id) => `${base}/test/${id}/results`,
-    training: (set, part) => `${base}/training?set=${set}${part ? `&part=${part}` : ""}`,
-    drill: (id) => (id ? `${base}/drill?test=${id}` : `${base}/drill`),
+    // URLs carry the human test number (/cdl/test/1); the store keeps the
+    // namespaced ID (101). testIdFromParam() maps back, old ID URLs included.
+    test: (id) => `${base}/test/${id - exam.idBase}`,
+    results: (id) => `${base}/test/${id - exam.idBase}/results`,
+    training: (set, part) => `${base}/practice/${set}${part ? `?part=${part}` : ""}`,
+    drill: (id) => (id ? `${base}/drill?test=${id - exam.idBase}` : `${base}/drill`),
     signup: `/signup?redirect=${base}/dashboard`,
     login: `/login?redirect=${base}/dashboard`,
     testIds: examTestIds(exam),
@@ -99,6 +101,18 @@ export function routesForExam(exam: ExamConfig, lang: Language = "en"): ExamRout
       };
     },
   };
+}
+
+/**
+ * The store ID for a /test/[n] or ?test=n URL value. Every exam's URLs number
+ * tests from 1; links from before that carried the store ID (/cdl/test/101),
+ * so a value that already is one of the exam's IDs passes through.
+ */
+export function testIdFromParam(routes: ExamRoutes, raw: string | number | null | undefined): number | null {
+  const n = typeof raw === "number" ? raw : parseInt(String(raw ?? ""), 10);
+  if (!Number.isFinite(n)) return null;
+  if (routes.testIds.includes(n)) return n;
+  return routes.testIds[n - 1] ?? null;
 }
 
 const EXAM_ROUTES: Record<string, ExamRoutes> = Object.fromEntries(

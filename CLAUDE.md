@@ -53,12 +53,14 @@ App Router pages in `/app/`. Key routes:
 - `/dashboard` — main hub (4 tests + 4 training sets)
 - `/test/[id]` — practice test (1-4)
 - `/test/[id]/results` — test results with performance breakdown
-- `/training` — mastery-based training with `?set=1-4` for specific sets
+- `/practice/[n]` — mastery-based training set n (1-4); `/training` with no set is free practice
 - `/stats` — per-question performance analytics
 - `/onboarding/select-state` — state selection flow
 - `/admin` — admin dashboard (restricted by email in `/lib/admin.ts`)
 
 Guest mode allows using the app without an account; guest data converts on signup.
+
+**One URL shape for every exam** (v1, state variants, v2): `/<exam>/dashboard`, `/<exam>/practice/<n>` (training set or drill, numbered from 1 in config order; v1 split sets add `?part=`, v2 drills add `?skill=id` or `?level=exam`), `/<exam>/test/<n>` and `/<exam>/test/<n>/results` (numbered from 1, never the store ID), plus `/<exam>/drill` and `/<exam>/stats` on v1. Bare `/<exam>` redirects to its dashboard. DMV is the same at the root (`/dashboard`, `/practice/<n>`, `/test/<n>`). URLs come only from `getExamRoutes()` / `DMV_ROUTES` (`lib/examRoutes.ts`) and `v2Routes()` (`lib/v2/registry.ts`). Old shapes still work: `next.config.ts` maps `/training?set=n`, `/<exam>/training?set=n` and `/<exam>/train?drill=key`; `useExamTestParam` and `testIdFromParam` accept a store ID (`/cdl/test/101`) and swap the address for the numbered one; `drillFromParam` accepts a drill key or `legacyKey`. The DMV header reads "DMV Practice Test" (`common.dmvHeaderTitle`) on DMV pages and keeps the tigertest.io wordmark on the hub, settings and sign-in pages.
 
 Signed-out visitors see `components/GuestSaveCard.tsx` (their own answer count or score, one-tap Google, email) on every dashboard and the v1 results page. In registry-exam training sets and v2 drills (not DMV) `components/GuestPromptStep.tsx` takes the place of the next question when `hooks/useGuestPrompt.ts` says so: after a correct answer that makes two in a row, once 5 are answered, then again only after 12 more (counts in sessionStorage). GA4 event `guest_prompt` records shown, skipped, google and email.
 

@@ -1,5 +1,5 @@
 import { permanentRedirect } from "next/navigation";
 
 export default function OldStats() {
-  permanentRedirect("/aws-cloud-practitioner");
+  permanentRedirect("/aws-cloud-practitioner/dashboard");
 }

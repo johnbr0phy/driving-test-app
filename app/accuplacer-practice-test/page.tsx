@@ -136,7 +136,7 @@ export default function AccuplacerLandingPage() {
             Free ACCUPLACER Practice Test 2026
           </h1>
           <ExamLandingHero
-            dashboardHref="/accuplacer"
+            dashboardHref="/accuplacer/dashboard"
             shortName="ACCUPLACER"
             subtitle="200 questions across reading, writing, arithmetic, quantitative reasoning and algebra, and advanced algebra and functions. Tuned for mobile. No account needed."
             shots={{ mobile: "/landing/accuplacer-mobile.png", desktop: "/landing/accuplacer-desktop.png" }}
@@ -310,7 +310,7 @@ export default function AccuplacerLandingPage() {
         <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">Ready to Place Into College-Level Courses?</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Free to start. No account required. 200 questions across all five ACCUPLACER sections.</p>
-          <ExamLandingCTA dashboardHref="/accuplacer" />
+          <ExamLandingCTA dashboardHref="/accuplacer/dashboard" />
         </div>
       </div>
     </div>

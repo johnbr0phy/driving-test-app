@@ -471,7 +471,7 @@ function DashboardContent() {
                           : undefined
                   }
                   isPremiumLocked={trainingLocked}
-                  href={trainingLocked ? undefined : `/training?set=${id}`}
+                  href={trainingLocked ? undefined : `/practice/${id}`}
                   onClick={
                     trainingLocked
                       ? () => handlePremiumClick("training_set_4", `set_${id}`, `Training Set ${id}`)

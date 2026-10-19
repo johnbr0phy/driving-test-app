@@ -64,6 +64,9 @@ export function CDLHeader() {
   const variants = getExamVariants(theme.id);
   const variant = variants.find((v) => pathname === v.slug || pathname?.startsWith(`${v.slug}/`));
   const bases = [theme.routeBase, ...variants.map((v) => v.slug)];
+  // The dashboard's own save card (GuestSaveCard) already offers Google, email and
+  // sign in to a guest, so the header leaves that ask to it.
+  const onDashboard = bases.some((b) => pathname === `${b}/dashboard`);
   const hideHeader = bases.some((b) => pathname?.startsWith(`${b}/test`) || pathname?.startsWith(`${b}/practice/`));
 
   if (hideHeader) {
@@ -144,7 +147,7 @@ export function CDLHeader() {
                 </Avatar>
               </Link>
             </>
-          ) : isGuest ? (
+          ) : guest && onDashboard ? null : isGuest ? (
             <>
               <Link href={theme.loginPath} className="hidden sm:inline text-sm font-semibold text-gray-700 dark:text-gray-200 hover:underline">
                 {t("common.signIn")}

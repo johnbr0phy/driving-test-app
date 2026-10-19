@@ -38,6 +38,8 @@ export function V2Header({ exam }: { exam: ExamV2Config }) {
     ...v2DarkThemeStyle(exam.theme),
   } as CSSProperties;
   const displayPhotoURL = photoURL || user?.photoURL;
+  // The dashboard's own save card (GuestSaveCard) already offers sign in, so the header leaves it out there.
+  const onDashboard = pathname === `${exam.slug}/dashboard`;
 
   return (
     <header className="border-b bg-white dark:bg-gray-900" style={style}>
@@ -70,7 +72,7 @@ export function V2Header({ exam }: { exam: ExamV2Config }) {
                 </Avatar>
               </Link>
             </>
-          ) : (
+          ) : onDashboard ? null : (
             <Button asChild variant="outline" className="text-gray-700 dark:text-gray-200 border-gray-300 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800">
               <Link href={`/login?redirect=${exam.slug}/dashboard`}>Sign In</Link>
             </Button>

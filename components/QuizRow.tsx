@@ -27,6 +27,7 @@ export function QuizRow({
   renderFooter,
   className,
   initialAnswer,
+  revealAnswer,
   media,
   expanded: controlledExpanded,
   onToggleExpanded,
@@ -44,6 +45,9 @@ export function QuizRow({
   // Pre-seeds the picked option so a review row shows its resolved state
   // immediately on expand, without requiring the user to answer again.
   initialAnswer?: string;
+  // Shows the right answer marked and nothing picked, for review rows where
+  // the viewer did not answer (the teacher's class page).
+  revealAnswer?: boolean;
   // Optional slot (e.g. a road-sign image) rendered next to the question text.
   media?: React.ReactNode;
   // Omit to let the row manage its own open/closed state (daily quiz, stats,
@@ -60,8 +64,8 @@ export function QuizRow({
   );
 
   const hasOptions = options.length > 0;
-  const answered = picked !== null;
-  const pickedCorrect = answered && options[picked] === correctAnswer;
+  const answered = picked !== null || !!revealAnswer;
+  const pickedCorrect = picked !== null && options[picked] === correctAnswer;
 
   const toggle = () => (onToggleExpanded ? onToggleExpanded() : setInternalExpanded((e) => !e));
 
@@ -113,7 +117,7 @@ export function QuizRow({
         />
       </div>
 
-      <div role="status" aria-atomic="true" className="sr-only">{answered ? `${pickedCorrect ? t("trainingCard.correct") : t("trainingCard.incorrect")} ${correctAnswer}` : ""}</div>
+      <div role="status" aria-atomic="true" className="sr-only">{picked !== null ? `${pickedCorrect ? t("trainingCard.correct") : t("trainingCard.incorrect")} ${correctAnswer}` : ""}</div>
       {/* Expanding quiz panel */}
       <div
         inert={!expanded}
@@ -168,7 +172,7 @@ export function QuizRow({
                       {letter}
                     </span>
                     <span className="flex-1 min-w-0">{opt}</span>
-                    {answered && <span className="sr-only">{isCorrect ? t("trainingCard.correct") : isPicked ? t("trainingCard.incorrect") : ""}</span>}
+                    {answered && <span className="sr-only">{isCorrect ? (picked !== null ? t("trainingCard.correct") : "Right answer") : isPicked ? t("trainingCard.incorrect") : ""}</span>}
                     {answered && isCorrect && (
                       <Check className="h-4 w-4 text-green-600 dark:text-green-400 shrink-0 mt-0.5" strokeWidth={3} />
                     )}

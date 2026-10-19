@@ -142,7 +142,7 @@ function Body({ student, report }: { student: ClassStudentRow; report: ClassRepo
                   subtitle={m.q.topic}
                   options={m.q.options}
                   correctAnswer={m.q.answer}
-                  initialAnswer={m.q.answer}
+                  revealAnswer
                   renderFooter={() => (
                     <div className="pt-1 px-1 space-y-1.5">
                       <p className="text-xs text-gray-500 dark:text-gray-400">

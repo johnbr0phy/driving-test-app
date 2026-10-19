@@ -10,7 +10,10 @@ export async function POST() {
     await db.doc('analytics/shares').set(
       {
         total: FieldValue.increment(1),
-        [`daily.${today}`]: FieldValue.increment(1),
+        // A nested map, not a dotted key: set() with merge stores "daily.<date>"
+        // as one literal field name, which is how counts before Oct 2026 were
+        // stored (lib/shareCounts reads both).
+        daily: { [today]: FieldValue.increment(1) },
       },
       { merge: true }
     );
